@@ -1,0 +1,67 @@
+# <a name="chart-setposition"></a>Chart: setPosition
+
+ワークシート上のセルを基準にしてグラフを配置します。
+## <a name="prerequisites"></a>前提条件
+この API を実行するために必要な**スコープ**は、次のとおりです。 
+## <a name="http-request"></a>HTTP 要求
+<!-- { "blockType": "ignored" } -->
+```http
+POST /workbook/worksheets(<id|name>)/charts(<name>)/setPosition
+
+```
+## <a name="request-headers"></a>要求ヘッダー
+| 名前       | 説明|
+|:---------------|:----------|
+| Authorization  | Bearer <code>|
+
+
+## <a name="request-body"></a>要求本文
+要求本文で、次のパラメーターを含む JSON オブジェクトを指定します。
+
+| パラメーター       | 型    |説明|
+|:---------------|:--------|:----------|
+|startCell|string|開始セル。これは、グラフの移動先です。開始セルは、ユーザーの右から左への表示の設定に応じて、左上のセルか、右上のセルとなります。|
+|endCell|string|省略可能。終了セル。指定されている場合、グラフの幅と高さは、このセルまたは範囲を完全にカバーするように設定されます。|
+
+## <a name="response"></a>応答
+成功した場合、このメソッドは `200, OK` 応答コードを返します。応答本文には何も返されません。
+
+## <a name="example"></a>例
+以下は、この API を呼び出す方法の例です。
+##### <a name="request"></a>要求
+以下は、要求の例です。
+<!-- {
+  "blockType": "request",
+  "name": "chart_setposition"
+}-->
+```http
+POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets(<id|name>)/charts(<name>)/setPosition
+Content-type: application/json
+Content-length: 66
+
+{
+  "startCell": "startCell-value",
+  "endCell": "endCell-value"
+}
+```
+
+##### <a name="response"></a>応答
+以下は、応答の例です。 
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.none"
+} -->
+```http
+HTTP/1.1 200 OK
+```
+
+<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
+2015-10-25 14:57:30 UTC -->
+<!-- {
+  "type": "#page.annotation",
+  "description": "Chart: setPosition",
+  "keywords": "",
+  "section": "documentation",
+  "tocPath": ""
+}-->

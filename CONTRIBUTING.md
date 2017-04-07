@@ -1,10 +1,9 @@
 # <a name="contribute-to-microsoft-graph-documentation"></a>Microsoft Graph ドキュメントへの投稿
 
-Microsoft Graph ドキュメントにご関心をお寄せいただき、ありがとうございます。 
+Microsoft Graph ドキュメントにご関心をお寄せいただき、ありがとうございます。
 
 * [投稿する方法](#ways-to-contribute)
 * [プル要求が承諾される前](#before-we-can-accept-your-pull-request)
-* [リポジトリ組織](#repository-organization)
 * [GitHub、Git、およびこのリポジトリを使用する](#use-github-git-and-this-repository)
 * [Markdown を使用してトピックを書式設定する方法](#how-to-use-markdown-to-format-your-topic)
 * [標準の Markdown](#standard-markdown)
@@ -12,9 +11,11 @@ Microsoft Graph ドキュメントにご関心をお寄せいただき、あり�
 
 ## <a name="ways-to-contribute"></a>投稿する方法
 
-[Microsoft Graph ドキュメント](http://developer.microsoft.com/en-us/graph/docs)には、次の方法で投稿できます。
+[Microsoft Graph ドキュメント](http://graph.microsoft.io)には、次の方法で投稿できます。
 
 * [公開されている Microsoft Graph 開発者向けドキュメント リポジトリ](https://github.com/microsoftgraph/microsoft-graph-docs)から記事を投稿する
+    * /beta 分岐か、/v1.0 分岐、またはその両方に個別のプル要求を送信します。この手順は、バージョンの分岐が、常に最後の変更が反映された最新の状態であるようにするために必要です。 
+    * また、/master 分岐に別のプル要求を送信します。これは、Microsoft Graph Web サイトのドキュメント サイトが常に最新の変更で更新されるようにするための手順です。 
 * [GitHub の [問題]](https://github.com/microsoftgraph/microsoft-graph-docs/issues) を使用してドキュメントの不具合を報告する
 * 「[Office Developer Platform UserVoice](http://officespdev.uservoice.com)」サイトにドキュメント要求を追加します。
 
@@ -39,12 +40,6 @@ Microsoft Graph ドキュメントにご関心をお寄せいただき、あり�
 投稿者のライセンス同意書 (CLA) は、[こちら](https://github.com/microsoftgraph/microsoft-graph-docs/raw/master/Contribution%20License%20Agreement.pdf)でダウンロードできます。フォームに記入して、電子メールで [officedev@microsoft.com](mailto:officedev@microsoft.com) に送信してください。
 
 CLA を受領、処理したのち、10 営業日以内にプル要求を確認するよう最善を尽くします。
-
-## <a name="repository-organization"></a>リポジトリ組織
-
-microsoft-graph-docs リポジトリのコンテンツは、まず記事の言語別、次にトピック別にグループ化されています。各トピックのディレクトリのルートにある README.md ファイルは、トピック内の記事の構造を指定します。
-
-各トピック内の記事は、タイトルではなく、MSDN GUID によって名前が付けられています。これは、ドキュメント管理プロセスによる影響であり、現時点では変更できません。各トピックのディレクトリ内の目次を使用して、表示または編集するファイルに移動することを強くお勧めします。詳細については、「[README.md](https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/README.md)」を参照してください。
 
 ## <a name="use-github-git-and-this-repository"></a>GitHub、Git、およびこのリポジトリを使用する
 
@@ -83,7 +78,7 @@ microsoft-graph-docs リポジトリのコンテンツは、まず記事の言�
 #### <a name="create-a-new-branch"></a>新しい分岐を作成する
 
 1.    GitBash を開きます。
-2.    プロンプトで `git pull upstream master:<new branch name>` を入力します。これにより、最新の icrosoftgraph マスター分岐からコピーされた新しい分岐がローカルに作成されます。**注:**内部投稿者の場合は、コマンドの `master` を、対象にしている発行日の分岐に置き換えます。
+2.    プロンプトで `git pull upstream master:<new branch name>` を入力します。これにより、最新の *microsoftgraph* マスター分岐からコピーされた新しい分岐がローカルに作成されます。**注:**内部投稿者の場合は、コマンドの `master` を、対象にしている発行日の分岐に置き換えます。
 3.    プロンプトで `git push origin <new branch name>` を入力します。これにより、新しい分岐に関するアラートが GitHub に送信されます。これで、GitHub 上のリポジトリのフォーク内に新しい分岐が表示されるはずです。
 4.    `git checkout <new branch name>` を入力して、新しい分岐に切り替えます。
 
@@ -141,7 +136,7 @@ microsoft-graph-docs リポジトリのコンテンツは、まず記事の言�
 分岐を削除するには、次の手順を実行します。
 
 1.    GitBash で、コマンド プロンプトに `git checkout master` を入力します。これにより、削除される分岐にいないことが保証されます (削除される分岐にいることは許可されません)。
-2.    次に、コマンド プロンプトで `git branch -d <branch name>` と入力します。これにより、アップストリーム リポジトリに正常にマージ済みの場合にのみ、ローカル コンピューター上の分岐が削除されます。(この動作は `???D` フラグでオーバーライドすることができますが、最初にその必要があるかどうかを確かめてください。)
+2.    次に、コマンド プロンプトで `git branch -d <branch name>` と入力します。これにより、アップストリーム リポジトリに正常にマージ済みの場合にのみ、ローカル コンピューター上の分岐が削除されます。(この動作は `–D` フラグでオーバーライドすることができますが、最初にその必要があるかどうかを確かめてください。)
 3.    最後に、コマンド プロンプトで `git push origin :<branch name>` (コロンの前にはスペースを 1 つ入れ、後にはスペースを入れません) と入力します。これにより、GitHub フォーク上の分岐が削除されます。  
 
 これで、プロジェクトに正しく投稿できました。
