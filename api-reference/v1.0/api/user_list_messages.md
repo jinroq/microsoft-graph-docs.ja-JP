@@ -1,6 +1,9 @@
 # <a name="list-messages"></a>メッセージを一覧表示する
 
 サインイン中のユーザーのメールボックス内のメッセージを取得します (削除済みアイテムと低優先メール フォルダーを含む)。
+
+現在、この操作によって返されるメッセージの本文は HTML 形式のみです。
+
 ## <a name="prerequisites"></a>前提条件
 この API を実行するには、以下のいずれかの**スコープ**が必要です。*Mail.Read、Mail.ReadWrite*
 ## <a name="http-request"></a>HTTP 要求
@@ -27,7 +30,7 @@ GET /users/{id | userPrincipalName}/mailFolders/{id}/messages
 | ヘッダー       | 値 |
 |:---------------|:--------|
 | Authorization  | Bearer <token>. Required.  |
-| Content-Type   | application/json  | 
+ 
 
 ## <a name="request-body"></a>要求本文
 このメソッドには、要求本文を指定しません。

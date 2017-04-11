@@ -11,7 +11,7 @@ PATCH /workbook/names(<name>)
 ## <a name="optional-request-headers"></a>オプションの要求ヘッダー
 | 名前       | 説明|
 |:-----------|:-----------|
-| Authorization  | Bearer <code>|
+| Authorization  | Bearer {code}|
 
 
 ## <a name="request-body"></a>要求本文
@@ -20,6 +20,7 @@ PATCH /workbook/names(<name>)
 | プロパティ       | 型    |説明|
 |:---------------|:--------|:----------|
 |visible|boolean|オブジェクトを表示するかどうかを指定します。|
+|comment|    string    |この名前に関連付けられているコメントを表します。|
 
 ## <a name="response"></a>応答
 成功した場合、このメソッドは `200 OK` 応答コードと、応答本文で更新された [NamedItem](../resources/nameditem.md) オブジェクトを返します。
@@ -38,6 +39,8 @@ Content-length: 87
 {
   "name": "name-value",
   "type": "type-value",
+  "scope": "scope-value",
+  "comment": "comment-value",
   "value": {
   },
   "visible": true

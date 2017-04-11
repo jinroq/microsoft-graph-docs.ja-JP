@@ -32,15 +32,19 @@ GET https://graph.microsoft.com/v1.0/me/messages?$filter=from/emailAddress/addre
 ### <a name="search"></a>$search
 要求の結果を検索条件と一致するものに制限するには、**$search** クエリ パラメーターを使用します。 
 
->  **注**:現在、メッセージを検索できますが、連絡先やイベントは検索できません。**$search** 要求は最大 250 まで結果を返します。検索要求内では **$filter** も **$orderby** も使用できません。
+>  **注**:現在、[message](../api-reference/v1.0/resources/message.md) と [person](../api-reference/beta/resources/person.md) のコレクションに対して **$search** を使用できますが、[contact](../api-reference/v1.0/resources/contact.md) や [event](../api-reference/v1.0/resources/event.md) に対して使用することはできません。**$search** 要求は最大 250 まで結果を返します。**$search** 要求内では **$filter** も **$orderby** も使用できません。
 
-検索条件は、高度な検索テクニック (AQS) を使用して表現されます。結果は、メッセージが送信された日時で並べ替えられます。
+検索条件は、高度な検索テクニック (AQS) を使用して表現されます。 
+
+**メッセージでの $search の適用**
+
+検索結果は、メッセージが送信された日時で並べ替えられます。
 
 **$search** 条件では、**message** のプロパティの **attachments**、**bccRecipients**、**body**、**category**、**ccRecipients**、**content**、**from**、**hasAttachments**、**participants**、**receivedDateTime**、**sender**、**subject**、**toRecipients** を指定できます。
 
 メッセージで検索を行うときに値のみ指定した場合、検索は既定の検索プロパティである **from**、**subject**、および **body** に基づいて行われます。
 
-次の例は、サインイン ユーザーの受信トレイにあるメッセージのうち、既定の 3 つの検索プロパティのいずれかに「pizza」が含まれるメッセージをすべて返します。 
+次の例は、サインイン中のユーザーの受信トレイにあるメッセージのうち、既定の 3 つの検索プロパティのいずれかに "pizza" が含まれるメッセージをすべて返します。 
 
 ```http
 GET https://graph.microsoft.com/v1.0/me/messages?$search="pizza"
