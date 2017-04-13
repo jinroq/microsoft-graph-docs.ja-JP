@@ -1,6 +1,12 @@
 # <a name="get-event"></a>イベントを取得する
 
-指定した[イベント](../resources/event.md) オブジェクトのプロパティと関係を取得します。
+指定した[イベント](../resources/event.md) オブジェクトのプロパティとリレーションシップを取得します。
+
+現在、この操作によって返されるイベントの本文は HTML 形式のみです。
+
+**イベント** リソースは[拡張機能](../../../concepts/extensibility_overview.md)をサポートしているため、`GET` 操作を使用して、**イベント** インスタンスでカスタム プロパティと拡張機能データを取得することもできます。
+
+### <a name="support-various-time-zones"></a>さまざまなタイム ゾーンをサポートします。
 
 イベントを返す GET 操作の場合は、すべての操作で `Prefer: outlook.timezone` ヘッダーを使用して、応答のイベントの開始時刻と終了時刻のタイム ゾーンを指定できます。 
 
@@ -13,7 +19,6 @@ Prefer: outlook.timezone="Eastern Standard Time"
 
 **イベント**リソース上で **OriginalStartTimeZone** プロパティと **OriginalEndTimeZone** プロパティを使用して、イベント作成時に使用されたタイム ゾーンを検索できます。
 
-**イベント** リソースは[拡張機能](../../../concepts/extensibility_overview.md)をサポートしているため、`GET` 操作を使用して、**イベント** インスタンスでカスタム プロパティと拡張機能データを取得することもできます。
 
 ## <a name="prerequisites"></a>前提条件
 この API を実行するには、以下のいずれかの**スコープ**が必要です。*Calendars.Read*
@@ -42,8 +47,8 @@ GET /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{i
 ## <a name="request-headers"></a>要求ヘッダー
 | 名前       | 型 | 説明|
 |:-----------|:------|:----------|
-| Authorization  | string  | Bearer <token>. Required. |
-| Prefer: | outlook.timezone | 応答に対するイベントの既定のタイム ゾーン。 |
+| Authorization  | string  | ベアラー <token>。必須。 |
+| 優先: outlook.timezone | string | 応答内のイベントに対する既定のタイム ゾーン。 |
 
 ## <a name="request-body"></a>要求本文
 このメソッドには、要求本文を指定しません。
@@ -51,16 +56,21 @@ GET /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{i
 成功した場合、このメソッドは `200 OK` 応答コードと、応答本文で[イベント](../resources/event.md) オブジェクトを返します。
 ## <a name="example"></a>例
 ##### <a name="request"></a>要求
-以下は、要求の例です。
+最初の例では、指定されたイベントを取得します。以下のものを指定します。
+
+- 太平洋標準時で返される日時の値を取得するための `Prefer: outlook.timezone` ヘッダー。 
+- 特定のプロパティを返すための `$select` クエリ パラメーター。`$select` パラメーターがない場合には、すべてのイベント プロパティが返されます。
 <!-- {
   "blockType": "request",
   "name": "get_event"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/me/events/{id}
+Prefer: outlook.timezone="Pacific Standard Time"
+
+GET https://graph.microsoft.com/v1.0/me/events('AAMkAGIAAAoZDOFAAA=')?$select=subject,body,bodyPreview,organizer,attendees,start,end,location 
 ```
 ##### <a name="response"></a>応答
-以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。
+以下は、応答の例です。**body** プロパティが HTML の既定の形式で返されます。
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -69,35 +79,60 @@ GET https://graph.microsoft.com/v1.0/me/events/{id}
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 285
+Preference-Applied: outlook.timezone="Pacific Standard Time"
+Content-length: 1928
 
 {
-  "originalStartTimeZone": "originalStartTimeZone-value",
-  "originalEndTimeZone": "originalEndTimeZone-value",
-  "responseStatus": {
-    "response": "",
-    "time": "datetime-value"
-  },
-  "iCalUId": "iCalUId-value",
-  "reminderMinutesBeforeStart": 99,
-  "isReminderOn": true,
-  "start": {
-    "dateTime": "datetime-value",
-    "timeZone": "timezone-value"
-  },
-  "end": {
-    "dateTime": "datetime-value",
-    "timeZone": "timezone-value"
-  },        
-  "location": {
-    "displayName": "displayName-value"
-  },
-  "organizer": {
-    "emailAddress": {
-      "address": "address-value",
-      "name": "name-value"
+    "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#users('cd209b0b-3f83-4c35-82d2-d88a61820480')/events(subject,body,bodyPreview,organizer,attendees,start,end,location)/$entity",
+    "@odata.etag":"W/\"ZlnW4RIAV06KYYwlrfNZvQAAKGWwbw==\"",
+    "id":"AAMkAGIAAAoZDOFAAA=",
+    "subject":"Orientation ",
+    "bodyPreview":"Dana, this is the time you selected for our orientation. Please bring the notes I sent you.",
+    "body":{
+        "contentType":"html",
+        "content":"<html><head></head><body><p>Dana, this is the time you selected for our orientation. Please bring the notes I sent you.</p></body></html>"
+    },
+    "start":{
+        "dateTime":"2017-04-21T10:00:00.0000000",
+        "timeZone":"Pacific Standard Time"
+    },
+    "end":{
+        "dateTime":"2017-04-21T12:00:00.0000000",
+        "timeZone":"Pacific Standard Time"
+    },
+    "location":{
+        "displayName":"Assembly Hall"
+    },
+    "attendees":[
+        {
+            "type":"required",
+            "status":{
+                "response":"none",
+                "time":"0001-01-01T00:00:00Z"
+            },
+            "emailAddress":{
+                "name":"Fanny Downs",
+                "address":"fannyd@a830edad905084922E17020313.onmicrosoft.com"
+            }
+        },
+        {
+            "type":"required",
+            "status":{
+                "response":"none",
+                "time":"0001-01-01T00:00:00Z"
+            },
+            "emailAddress":{
+                "name":"Dana Swope",
+                "address":"danas@a830edad905084922E17020313.onmicrosoft.com"
+            }
+        }
+    ],
+    "organizer":{
+        "emailAddress":{
+            "name":"Fanny Downs",
+            "address":"fannyd@a830edad905084922E17020313.onmicrosoft.com"
+        }
     }
-  }
 }
 ```
 

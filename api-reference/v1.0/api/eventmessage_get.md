@@ -1,6 +1,9 @@
 # <a name="get-eventmessage"></a>eventMessage の取得
 
-eventmessage オブジェクトのプロパティと関係を取得します。
+[eventMessage](../resources/eventmessage.md) オブジェクトのプロパティとリレーションシップを取得します。
+
+現在、この操作によって返されるイベント メッセージの本文は HTML 形式のみです。
+
 ## <a name="prerequisites"></a>前提条件
 この API を実行するには、以下のいずれかの**スコープ**が必要です。*Mail.Read*
 ## <a name="http-request"></a>HTTP 要求
@@ -51,7 +54,7 @@ Content-length: 248
   "hasAttachments": true,
   "subject": "subject-value",
   "body": {
-    "contentType": "",
+    "contentType": "html",
     "content": "content-value"
   },
   "bodyPreview": "bodyPreview-value",

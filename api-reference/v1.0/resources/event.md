@@ -35,8 +35,8 @@
 | プロパティ       | 型    |説明|
 |:---------------|:--------|:----------|
 |attendees|[attendee](attendee.md) コレクション|イベントの出席者のコレクション。|
-|body|[itemBody](itembody.md)|イベントに関連付けられたメッセージの本文。|
-|bodyPreview|String|イベントに関連付けられたメッセージのプレビュー。|
+|body|[itemBody](itembody.md)|イベントに関連付けられたメッセージの本文。HTML 形式またはテキスト形式にできます。|
+|bodyPreview|String|イベントに関連付けられたメッセージのプレビュー。テキスト形式です。|
 |categories|String collection|イベントに関連付けられたカテゴリ。|
 |changeKey|String|イベント オブジェクトのバージョンを識別します。イベントを変更するたびに ChangeKey も変更されます。これにより、Exchange は正しいバージョンのオブジェクトに変更を適用できます。|
 |createdDateTime|DateTimeOffset|Timestamp 型は、ISO 8601 形式を使用して日付と時刻の情報を表し、必ず UTC 時間です。たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、次のようになります。`'2014-01-01T00:00:00Z'`|

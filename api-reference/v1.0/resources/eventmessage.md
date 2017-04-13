@@ -38,8 +38,8 @@
 | プロパティ       | 型    |説明|
 |:---------------|:--------|:----------|
 |bccRecipients|[recipient](recipient.md) collection|メッセージの BCC 受信者。|
-|body|[itemBody](itembody.md)|メッセージの本文。|
-|bodyPreview|String|メッセージ本文の最初の 255 文字。|
+|body|[itemBody](itembody.md)|メッセージの本文。HTML 形式またはテキスト形式にできます。|
+|bodyPreview|String|メッセージ本文の最初の 255 文字。テキスト形式です。|
 |categories|String collection|メッセージに関連付けられたカテゴリ。|
 |ccRecipients|[recipient](recipient.md) collection|メッセージの CC 受信者。|
 |changeKey|String|メッセージのバージョン。|
