@@ -1,6 +1,6 @@
 # <a name="timeconstraint-resource-type"></a>timeConstraint リソースの種類
 
-指定した性質の活動の期間です。
+指定したアクティビティの性質と空き時間帯に従って、会議の日時の候補を、特定の時間と曜日に限定します。
 
 ## <a name="json-representation"></a>JSON 表記
 
@@ -24,7 +24,7 @@
 ## <a name="properties"></a>プロパティ
 | プロパティ       | 型    |説明|
 |:---------------|:--------|:----------|
-|activityDomain|String|活動の性質です (省略可能)。使用可能な値: `unknown`、`work`、`personal`。現在、[findMeetingTimes](../api/user_findmeetingtimes.md) では、この値は常に `work` であると想定し、開催者または出席者の勤務時間中の会議提案のみを返します。|
+|activityDomain|String|アクティビティの性質です (省略可能)。使用可能な値: `work`、`personal`、`unrestricted`、`unknown`。|
 |timeslots|[timeSlot](timeslot.md) コレクション|期間の配列。|
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
