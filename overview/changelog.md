@@ -1,0 +1,824 @@
+# <a name="changelog-for-microsoft-graph"></a>Microsoft Graph の変更ログ
+
+この変更ログでは、Microsoft Graph と、v1.0 およびベータ版のエンドポイント Microsoft Graph API の変更内容について説明します。  
+
+## <a name="april-2017"></a>2017 年 4 月
+
+### <a name="application-and-serviceprincipal-api-changes"></a>application API と servicePrincipal API の変更
+
+|**変更の種類**|**バージョン**|**説明**|
+|:-------------|:-----------|:--------------|
+|変更|ベータ版| [application](https://graph.microsoft.io/en-us/docs/api-reference/beta/resources/application) API と [servicePrincipal](https://graph.microsoft.io/en-us/docs/api-reference/beta/resources/serviceprincipal) API は、プレビュー (ベータ版) で更新されます。最初の一連の変更は、2017 年 5 月 8 日に適用されます。変更には、プロパティの名前変更と再構築が含まれます。一部のプロパティ (appRoles、addIns など) は、変更が完了するまで利用できません。変更は、v1.0 へのリリース前にプレビュー (ベータ版) でリリースされます。 |
+
+### <a name="added-preview-support-for-cloud-solution-provider-developers"></a>クラウド ソリューション プロバイダー開発者向けプレビュー サポートの追加
+
+|**変更の種類**|**バージョン**|**説明**|
+|:-------------|:-----------|:--------------|
+|追加|ベータ版|クラウド ソリューション プロバイダーの事前承認されたアプリケーションが Microsoft Graph を呼び出せるようにする、新しいプレビュー機能を追加し、新しい[承認トピック](https://graph.microsoft.io/en-us/docs/authorization/auth_cloudsolutionprovider)に記載しました。 |
+
+### <a name="added-onpremises-properties-to-user-entity"></a>user エンティティへの onPremises プロパティの追加
+
+|**変更の種類**|**バージョン**|**説明**|
+|:-------------|:-----------|:--------------|
+|追加|ベータ版|[user](https://graph.microsoft.io/en-us/docs/api-reference/beta/resources/user) エンティティに、新しい onPremises プロパティである onPremisesDomainName、OnPremisesSamAccountName、onPremisesUserPrincipalName を追加しました。 |
+
+### <a name="new-planner-apis-and-an-update-to-the-group-visibility-property"></a>新しい Planner API とグループ可視性プロパティに対する更新
+
+|**変更の種類**|**バージョン**|**説明**| 
+|:-------------|:-----------|:--------------|
+|変更|ベータ版|[Group](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/group) エンティティに、可視性プロパティの追加の値として **HiddenMembership** を追加しました |
+|追加|ベータ版|新しい [Planner API](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/planner_overview) を追加しました。<br />新しいリソース:<br />[plannerPlan](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/plannerPlan) <br />[plannerTask](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/plannerTask) <br />[plannerPlanDetails](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/plannerPlanDetails) <br />[plannerTaskDetails](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/plannerTaskDetails) <br />[plannerBucket](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/plannerBucket) <br />[plannerAssignedToTaskBoardTaskFormat](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/plannerassignedtotaskboardtaskformat) <br />[plannerBucketTaskBoardTaskFormat](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/plannerbuckettaskboardtaskformat) <br />[plannerProgressTaskBoardTaskFormat](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/plannerprogresstaskboardtaskformat) | 
+
+### <a name="intune-apis"></a>Intune API
+|**変更の種類**|**バージョン**|**説明**|
+|:---|:---|:---|
+|追加|ベータ版|新しいエンティティを追加しました。<br/>[androidForWorkCompliancePolicy](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_deviceconfig_androidforworkcompliancepolicy)<br/>[deviceComplianceSettingState](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_deviceconfig_devicecompliancesettingstate)<br/>[deviceInstallState](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_books_deviceinstallstate)<br/>[deviceManagementScript](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_devicefe_devicemanagementscript)<br/>[deviceManagementScriptGroupAssignment](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_devicefe_devicemanagementscriptgroupassignment)<br/>[deviceManagementScriptState](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_devicefe_devicemanagementscriptstate)<br/>[eBookGroupAssignment](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_books_ebookgroupassignment)<br/>[iosVppEBook](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_books_iosvppebook)<br/>[managedEBook](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_books_managedebook)<br/>[userInstallStateSummary](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_books_userinstallstatesummary)<br/>[windowsManagementApp](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_devicefe_windowsmanagementapp)<br/>[windowsManagementAppHealthState](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_devicefe_windowsmanagementapphealthstate)<br/>|
+|追加|ベータ版|新しい複合型を追加しました。<br/>[dailySchedule](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_devicefe_dailyschedule)<br/>[hourlySchedule](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_devicefe_hourlyschedule)<br/>[iosBookmark](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_deviceconfig_iosbookmark)<br/>[iosWebContentFilterAutoFilter](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_deviceconfig_ioswebcontentfilterautofilter)<br/>[iosWebContentFilterBase](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_deviceconfig_ioswebcontentfilterbase)<br/>[iosWebContentFilterSpecificWebsitesAccess](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_deviceconfig_ioswebcontentfilterspecificwebsitesaccess)<br/>[runSchedule](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_devicefe_runschedule)<br/>[sharedAppleDeviceUser](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_devicefe_sharedappledeviceuser)<br/>[windows10NetworkProxyServer](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_deviceconfig_windows10networkproxyserver)<br/>|
+|追加|ベータ版|[managedDevice](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_devicefe_manageddevice) に [requestRemoteAssistance](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/intune_devicefe_manageddevice_requestremoteassistance.md) アクションを追加しました |
+|追加|ベータ版|[managedDevice](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_devicefe_manageddevice) に [cleanWindowsDevice](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/intune_devicefe_manageddevice_cleanwindowsdevice.md) アクションを追加しました |
+|追加|ベータ版|[managedDevice](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_devicefe_manageddevice) に [logoutSharedAppleDeviceActiveUser](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/intune_devicefe_manageddevice_logoutsharedappledeviceactiveuser.md) アクションを追加しました |
+|追加|ベータ版|[managedDevice](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_devicefe_manageddevice) に [deleteUserFromSharedAppleDevice](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/intune_devicefe_manageddevice_deleteuserfromsharedappledevice.md) アクションを追加しました |
+|追加|ベータ版|[deviceManagementScript](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_devicefe_devicemanagementscript) に [assign](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/intune_devicefe_devicemanagementscript_assign.md) アクションを追加しました |
+|追加|ベータ版|[appleVolumePurchaseProgramToken](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_apps_applevolumepurchaseprogramtoken) に [syncLicenses](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/intune_onboarding_applevolumepurchaseprogramtoken_synclicenses.md) アクションを追加しました |
+|追加|ベータ版|[mobileApp](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_apps_mobileapp) コレクションに **getMobileAppCount** 関数を追加しました |
+|追加|ベータ版|[mobileApp](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_apps_mobileapp) コレクションに **getTopMobileApps** 関数を追加しました |
+|追加|ベータ版|[applePushNotificationCertificate](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_devicefe_applepushnotificationcertificate) に [downloadApplePushNotificationCertificateSigningRequest](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/intune_devicefe_applepushnotificationcertificate_downloadapplepushnotificationcertificatesigningrequest.md) 関数を追加しました |
+|追加|ベータ版|[deviceManagement](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_androidforwork_devicemanagement) に [getDeviceComplianceSettingStates](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/intune_deviceconfig_devicemanagement_getdevicecompliancesettingstates.md) 関数を追加しました |
+|追加|ベータ版|[reportRoot](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_deviceconfig_reportroot) に [deviceConfigurationUserActivity](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/intune_deviceconfig_reportroot_deviceconfigurationuseractivity.md) 関数を追加しました |
+|追加|ベータ版|[reportRoot](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_deviceconfig_reportroot) に [deviceConfigurationDeviceActivity](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/intune_deviceconfig_reportroot_deviceconfigurationdeviceactivity.md) 関数を追加しました |
+|削除|ベータ版|次の複合型を削除しました。<br/>**enterpriseCloudResource**<br/>**windowsInformationProtectionAppRule**<br/>**windowsInformationProtectionAppRuleAppLockerPolicyFileTemplate**<br/>**windowsInformationProtectionAppRuleDesktopTemplate**<br/>**windowsInformationProtectionAppRuleStoreAppTemplate**<br/>**windowsInformationProtectionAppRuleTemplate**<br/>**windowsInformationProtectionCorporateNetworkLocation**<br/>**windowsInformationProtectionProtectedLocation**<br/>**windowsInformationProtectionProtectedLocationEnterpriseCloudResources**<br/>**windowsInformationProtectionProtectedLocationEnterpriseInternalProxyServers**<br/>**windowsInformationProtectionProtectedLocationEnterpriseIPv4Ranges**<br/>**windowsInformationProtectionProtectedLocationEnterpriseIPv6Ranges**<br/>**windowsInformationProtectionProtectedLocationEnterpriseNetworkDomainNames**<br/>**windowsInformationProtectionProtectedLocationEnterpriseProxyServers**<br/>**windowsInformationProtectionProtectedLocationNeutralResources**<br/>|
+|変更|ベータ版|[androidGeneralDeviceConfiguration](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_deviceconfig_androidgeneraldeviceconfiguration) エンティティに **deviceSharingAllowed** プロパティを追加しました|
+|変更|ベータ版|[androidGeneralDeviceConfiguration](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_deviceconfig_androidgeneraldeviceconfiguration) エンティティから **deviceSharingBlocked** プロパティを削除しました。|
+|変更|ベータ版|[defaultManagedAppProtection](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_mam_defaultmanagedappprotection) エンティティに **minimumRequiredSdkVersion** プロパティを追加しました|
+|変更|ベータ版|[deviceAppManagement](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_apps_deviceappmanagement) エンティティに **windowsManagementAppEnabled** プロパティを追加しました|
+|変更|ベータ版|[deviceComplianceActionItem](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_deviceconfig_devicecomplianceactionitem) エンティティに **notificationTemplateId** プロパティを追加しました|
+|変更|ベータ版|[deviceConfigurationGroupAssignment](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_deviceconfig_deviceconfigurationgroupassignment) エンティティに **excludeGroup** プロパティを追加しました|
+|変更|ベータ版|[iosCustomConfiguration](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_deviceconfig_ioscustomconfiguration) エンティティで次のプロパティを変更しました:<br/>**payloadFileName** を必須から省略可能に変更しました<br/>|
+|変更|ベータ版|[iosDeviceFeaturesConfiguration](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_deviceconfig_iosdevicefeaturesconfiguration) エンティティに **contentFilterSettings** プロパティを追加しました|
+|変更|ベータ版|[iosGeneralDeviceConfiguration](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_deviceconfig_iosgeneraldeviceconfiguration) エンティティに **cellularBlockPersonalHotspot** プロパティと **passcodeBlockFingerprintModification** プロパティを追加しました|
+|変更|ベータ版|[iosManagedAppProtection](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_mam_iosmanagedappprotection) エンティティに **minimumRequiredSdkVersion** プロパティを追加しました|
+|変更|ベータ版|[macOSCustomConfiguration](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_deviceconfig_macoscustomconfiguration) エンティティで次のプロパティを変更しました:<br/>**payloadFileName** を必須から省略可能に変更しました<br/>|
+|変更|ベータ版|[managedAppProtection](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_mam_managedappprotection) エンティティに、**disableAppPinIfDevicePinIsSet**、**minimumRequiredOsVersion**、**minimumWarningOsVersion**、**minimumRequiredAppVersion**、**minimumWarningAppVersion** の各プロパティを追加しました|
+|変更|ベータ版|[managedDevice](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_devicefe_manageddevice) エンティティに、**remoteAssistanceSessionUrl**、**isEncrypted**、**model**、**manufacturer** の各プロパティを追加しました|
+|変更|ベータ版|[mobileAppGroupAssignment](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_apps_mobileappgroupassignment) エンティティに **vpnConfigurationId** プロパティを追加しました|
+|変更|ベータ版|[notificationMessageTemplate](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_deviceconfig_notificationmessagetemplate) エンティティから **fromEmailAddress** プロパティを削除しました|
+|変更|ベータ版|[officeSuiteApp](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_apps_officesuiteapp) エンティティに **excludedApps** プロパティを追加しました|
+|変更|ベータ版|[officeSuiteApp](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_apps_officesuiteapp) エンティティから **excludedOfficeApps** プロパティを削除しました|
+|変更|ベータ版|[sharedPCConfiguration](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_deviceconfig_sharedpcconfiguration) エンティティに **enabled** プロパティを追加しました|
+|変更|ベータ版|[windows10GeneralConfiguration](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_deviceconfig_windows10generalconfiguration) エンティティに、**networkProxyApplySettingsDeviceWide**、**networkProxyDisableAutoDetect**、**networkProxyAutomaticConfigurationUrl**、**networkProxyServer**、**bluetoothDeviceName**、**wiFiScanInterval**、**wirelessDisplayBlockProjectionToThisDevice**、**wirelessDisplayBlockUserInputFromReceiver**、**wirelessDisplayRequirePinForPairing**、**experienceBlockDeviceDiscovery**、**experienceBlockErrorDialogWhenNoSIM**、**experienceBlockTaskSwitcher**、**startMenuPinnedFolderDocuments**、**startMenuPinnedFolderDownloads**、**startMenuPinnedFolderFileExplorer**、**startMenuPinnedFolderHomeGroup**、**startMenuPinnedFolderMusic**、**startMenuPinnedFolderNetwork**、**startMenuPinnedFolderPersonalFolder**、**startMenuPinnedFolderPictures**、**startMenuPinnedFolderSettings**、**startMenuPinnedFolderVideos**、**startMenuAppListVisibility**、**startMenuHideFrequentlyUsedApps**、**startMenuHideRecentJumpLists**、**startMenuHideRecentlyAddedApps**、**startMenuHideRestartOptions**、**startMenuHideUserTile**、**startMenuHidePowerButton**、**startMenuLayoutEdgeAssetsXml**、**personalizationDesktopImageUrl**、**personalizationLockScreenImageUrl** の各プロパティを追加しました|
+|変更|ベータ版|[windowsMobileMSI](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_apps_windowsmobilemsi) エンティティで次のプロパティの型を変更しました:<br/>**productCode** を Guid から String に変更しました<br/>|
+|変更|ベータ版|[windowsPhone81AppX](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_apps_windowsphone81appx) エンティティで次のプロパティを変更しました:<br/>**phoneProductIdentifier** を必須から省略可能に変更しました<br/>**phonePublisherId** を必須から省略可能に変更しました<br/>|
+|変更|ベータ版|[windowsPhone81AppXBundle](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_apps_windowsphone81appxbundle) エンティティで次のプロパティを変更しました:<br/>**appXPackageInformationList** を必須から省略可能に変更しました<br/>|
+|変更|ベータ版|[windowsStoreForBusinessApp](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_apps_windowsstoreforbusinessapp) エンティティに **productKey** プロパティと **licenseType** プロパティを追加しました|
+|変更|ベータ版|[windowsUpdateForBusinessConfiguration](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_deviceconfig_windowsupdateforbusinessconfiguration) エンティティに **previewBuildSetting** プロパティを追加しました|
+|変更|ベータ版|[deviceAppManagement](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_apps_deviceappmanagement) エンティティに **windowsManagementApp** ナビゲーション プロパティと **managedEBooks** ナビゲーション プロパティを追加しました|
+|変更|ベータ版|[deviceManagement](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_androidforwork_devicemanagement) エンティティに **deviceManagementScripts**、**managedDeviceOverview**、**cloudPkiSubscriptions** の各ナビゲーション プロパティを追加しました|
+|変更|ベータ版|[deviceEnrollmentPlatformRestrictions](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_onboarding_deviceenrollmentplatformrestrictions) 複合型に **osMinimumVersion** プロパティと **osMaximumVersion** プロパティを追加しました|
+|変更|ベータ版|[hardwareInformation](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_devicefe_hardwareinformation) 複合型に **isSharedDevice** プロパティと **sharedDeviceCachedUsers** プロパティを追加しました|
+|変更|ベータ版|[omaSettingBase64](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_deviceconfig_omasettingbase64) 複合型で次のプロパティを変更しました:<br/>**fileName** を必須から省略可能に変更しました<br/>|
+|変更|ベータ版|[omaSettingStringXml](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_deviceconfig_omasettingstringxml) 複合型で次のプロパティを変更しました:<br/>**fileName** を必須から省略可能に変更しました<br/>|
+
+## <a name="march-2017"></a>2017 年 3 月
+
+### <a name="intune-apis"></a>Intune API
+
+|変更の種類|バージョン|説明|
+|:---|:---|:---|
+|追加|ベータ版|新しいエンティティを追加しました。<br/>[androidForWorkApp](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_apps_androidforworkapp)<br/>[androidForWorkAppConfigurationSchema](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_androidforwork_androidforworkappconfigurationschema)<br/>[androidForWorkSettings](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_androidforwork_androidforworksettings)<br/>[androidForWorkVpnConfiguration](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_deviceconfig_androidforworkvpnconfiguration)<br/>[applePushNotificationCertificate](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_devicefe_applepushnotificationcertificate)<br/>[complianceSettingStateSummary](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_deviceconfig_compliancesettingstatesummary)<br/>[deviceCompliancePolicyDeviceStateSummary](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_deviceconfig_devicecompliancepolicydevicestatesummary)<br/>[deviceCompliancePolicyState](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_deviceconfig_devicecompliancepolicystate)<br/>[deviceConfigurationDeviceStateSummary](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_deviceconfig_deviceconfigurationdevicestatesummary)<br/>[deviceConfigurationState](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_deviceconfig_deviceconfigurationstate)<br/>[enterpriseCodeSigningCertificate](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_apps_enterprisecodesigningcertificate)<br/>[iosEduDeviceConfiguration](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_deviceconfig_iosedudeviceconfiguration)<br/>[managedDeviceCertificateState](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_devicefe_manageddevicecertificatestate)<br/>[managedDeviceMobileAppConfigurationDeviceSummary](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_apps_manageddevicemobileappconfigurationdevicesummary)<br/>[managedDeviceMobileAppConfigurationUserSummary](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_apps_manageddevicemobileappconfigurationusersummary)<br/>[mdmWindowsInformationProtectionPolicy](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_mam_mdmwindowsinformationprotectionpolicy)<br/>[mobileAppInstallSummary](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_apps_mobileappinstallsummary)<br/>[mobileAppProvisioningConfigGroupAssignment](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_apps_mobileappprovisioningconfiggroupassignment)<br/>[mobileThreatDefenseConnector](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_onboarding_mobilethreatdefenseconnector)<br/>[officeSuiteApp](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_apps_officesuiteapp)<br/>[settingStateDeviceSummary](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_deviceconfig_settingstatedevicesummary)<br/>[softwareUpdateStatusSummary](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_deviceconfig_softwareupdatestatussummary)<br/>[symantecCodeSigningCertificate](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_apps_symanteccodesigningcertificate)<br/>[windowsDefenderAdvancedThreatProtectionConfiguration](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_deviceconfig_windowsdefenderadvancedthreatprotectionconfiguration)<br/>[windowsInformationProtection](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_mam_windowsinformationprotection)<br/>[windowsInformationProtectionAppLockerFile](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_mam_windowsinformationprotectionapplockerfile)<br/>[windowsInformationProtectionPolicy](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_mam_windowsinformationprotectionpolicy)<br/>[windowsMobileMSI](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_apps_windowsmobilemsi)<br/>|
+|追加|ベータ版|新しい複合型を追加しました。<br/>[androidForWorkAppConfigurationExample](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_androidforwork_androidforworkappconfigurationexample)<br/>[androidForWorkAppConfigurationExampleJson](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_androidforwork_androidforworkappconfigurationexamplejson)<br/>[androidForWorkAppConfigurationSchemaItem](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_androidforwork_androidforworkappconfigurationschemaitem)<br/>[deviceCompliancePolicySettingState](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_deviceconfig_devicecompliancepolicysettingstate)<br/>[deviceConfigurationSettingState](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_deviceconfig_deviceconfigurationsettingstate)<br/>[deviceExchangeAccessStateSummary](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_devicefe_deviceexchangeaccessstatesummary)<br/>[edgeSearchEngine](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_deviceconfig_edgesearchengine)<br/>[edgeSearchEngineBase](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_deviceconfig_edgesearchenginebase)<br/>[edgeSearchEngineCustom](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_deviceconfig_edgesearchenginecustom)<br/>[excludedApps](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_apps_excludedapps)<br/>[iosEduCertificateSettings](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_deviceconfig_ioseducertificatesettings)<br/>[ipRange](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_deviceconfig_iprange)<br/>[windowsInformationProtectionApp](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_mam_windowsinformationprotectionapp)<br/>[windowsInformationProtectionCloudResource](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_mam_windowsinformationprotectioncloudresource)<br/>[windowsInformationProtectionCloudResourceCollection](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_mam_windowsinformationprotectioncloudresourcecollection)<br/>[windowsInformationProtectionDesktopApp](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_mam_windowsinformationprotectiondesktopapp)<br/>[windowsInformationProtectionIPRangeCollection](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_mam_windowsinformationprotectioniprangecollection)<br/>[windowsInformationProtectionResourceCollection](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_mam_windowsinformationprotectionresourcecollection)<br/>[windowsInformationProtectionStoreApp](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_mam_windowsinformationprotectionstoreapp)<br/>|
+|追加|ベータ版|[androidForWorkSettings](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_androidforwork_androidforworksettings) に [requestSignupUrl](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/intune_androidforwork_androidforworksettings_requestsignupurl) アクションを追加しました |
+|追加|ベータ版|[androidForWorkSettings](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_androidforwork_androidforworksettings) に [completeSignup](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/intune_androidforwork_androidforworksettings_completesignup) アクションを追加しました |
+|追加|ベータ版|[androidForWorkSettings](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_androidforwork_androidforworksettings) に [syncApps](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/intune_androidforwork_androidforworksettings_syncapps) アクションを追加しました |
+|追加|ベータ版|[androidForWorkSettings](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_androidforwork_androidforworksettings) に [unbind](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/intune_androidforwork_androidforworksettings_unbind) アクションを追加しました |
+|追加|ベータ版|[iosLobAppProvisioningConfiguration](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_apps_ioslobappprovisioningconfiguration) に [assign](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/intune_apps_ioslobappprovisioningconfiguration_assign) アクションを追加しました |
+|追加|ベータ版|[managedDevice](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_devicefe_manageddevice) に [recoverPasscode](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/intune_devicefe_manageddevice_recoverpasscode) アクションを追加しました |
+|追加|ベータ版|[organization](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_onboarding_organization) に [removeApplePushNotificationCertificate](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/intune_onboarding_organization_removeapplepushnotificationcertificate) アクションを追加しました |
+|追加|ベータ版|[iosManagedAppProtection](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_mam_iosmanagedappprotection) に [updateMobileAppIdentifierDeployments](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/intune_mam_iosmanagedappprotection_updatemobileappidentifierdeployments) アクションを追加しました |
+|追加|ベータ版|[androidManagedAppProtection](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_mam_androidmanagedappprotection) に [updateMobileAppIdentifierDeployments](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/intune_mam_androidmanagedappprotection_updatemobileappidentifierdeployments) アクションを追加しました |
+|追加|ベータ版|[targetedManagedAppConfiguration](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_mam_targetedmanagedappconfiguration) に [updateMobileAppIdentifierDeployments](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/intune_mam_targetedmanagedappconfiguration_updatemobileappidentifierdeployments) アクションを追加しました |
+|追加|ベータ版|[iosManagedAppProtection](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_mam_iosmanagedappprotection) に [updateTargetedSecurityGroups](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/intune_mam_iosmanagedappprotection_updatetargetedsecuritygroups) アクションを追加しました |
+|追加|ベータ版|[androidManagedAppProtection](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_mam_androidmanagedappprotection) に [updateTargetedSecurityGroups](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/intune_mam_androidmanagedappprotection_updatetargetedsecuritygroups) アクションを追加しました |
+|追加|ベータ版|[windowsInformationProtection](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_mam_windowsinformationprotection) に [updateTargetedSecurityGroups](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/intune_mam_windowsinformationprotection_updatetargetedsecuritygroups) アクションを追加しました |
+|追加|ベータ版|[windowsInformationProtectionPolicy](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_mam_windowsinformationprotectionpolicy) に [updateTargetedSecurityGroups](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/intune_mam_windowsinformationprotection_updatetargetedsecuritygroups.mdPolicy) アクションを追加しました |
+|追加|ベータ版|[mdmWindowsInformationProtectionPolicy](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_mam_mdmwindowsinformationprotectionpolicy) に [updateTargetedSecurityGroups](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/intune_mam_mdmwindowsinformationprotectionpolicy_updatetargetedsecuritygroups) アクションを追加しました |
+|追加|ベータ版|[user](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_devicefe_user) に [wipeManagedAppRegistrationByDeviceTag](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/intune_mam_user_wipemanagedappregistrationbydevicetag) アクションを追加しました |
+|追加|ベータ版|[mobileApp](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_apps_mobileapp) に [getTopMobileApps](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/intune_apps_mobileapp_gettopmobileapps) 関数を追加しました |
+|追加|ベータ版|[deviceManagement](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_androidforwork_devicemanagement) に [verifyWindowsEnrollmentAutoDiscovery](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/intune_corpenrollment_devicemanagement_verifywindowsenrollmentautodiscovery) 関数を追加しました |
+|削除|ベータ版|次のエンティティを削除しました。<br/>**appProvisioningConfigGroupAssignment**<br/>**defaultManagedAppConfiguration**<br/>**enterpriseCertificate**<br/>**managedDeviceMobileAppProvisioningConfigurationDeviceStatus**<br/>**symantecCertificate**<br/>**windows10WindowsInformationProtectionConfiguration**<br/>|
+|削除|ベータ版|次の複合型を削除しました。<br/>**mobileAppInstallSummary**<br/>**windowsArchitecture**<br/>**windowsDeviceType**<br/>|
+|変更|ベータ版|[androidGeneralDeviceConfiguration](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_deviceconfig_androidgeneraldeviceconfiguration) エンティティに **webBrowserBlockPopups** プロパティを追加しました|
+|変更|ベータ版|[androidGeneralDeviceConfiguration](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_deviceconfig_androidgeneraldeviceconfiguration) エンティティから **webBrowserAllowPopups** プロパティを削除しました|
+|変更|ベータ版|[androidStoreApp](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_apps_androidstoreapp) エンティティに **appIdentifier** プロパティを追加しました|
+|変更|ベータ版|[appReportingOverviewStatus](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/appReportingOverviewStatus) エンティティから **applicationCount**、**failedApplicationCount**、**appInstallFailures** の各プロパティを削除しました|
+|変更|ベータ版|[depEnrollmentProfile](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_corpenrollment_depenrollmentprofile) エンティティに **sharedIPadMaximumUserCount** プロパティと **enableSharedIPad** プロパティを追加しました|
+|変更|ベータ版|[depOnboardingSetting](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_onboarding_deponboardingsetting) エンティティに **shareTokenWithSchoolDataSyncService** プロパティと **lastSyncErrorCode** プロパティを追加しました|
+|変更|ベータ版|[deviceComplianceDeviceOverview](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_deviceconfig_devicecompliancedeviceoverview) エンティティに、**pendingCount**、**successCount**、**errorCount**、**failedCount**、**lastUpdateDateTime**、**configurationVersion** の各プロパティを追加しました|
+|変更|ベータ版|[deviceComplianceDeviceOverview](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_deviceconfig_devicecompliancedeviceoverview) エンティティから、**numberOfPendingDevices**、**numberOfSucceededDevices**、**numberOfErrorDevices**、**numberOfFailedDevices**、**lastUpdateTime**、**policyRevision** の各プロパティを削除しました|
+|変更|ベータ版|[deviceComplianceUserOverview](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_deviceconfig_devicecomplianceuseroverview) エンティティに、**pendingCount**、**successCount**、**errorCount**、**failedCount**、**lastUpdateDateTime**、**configurationVersion** の各プロパティを追加しました|
+|変更|ベータ版|[deviceComplianceUserOverview](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_deviceconfig_devicecomplianceuseroverview) エンティティから、**numberOfPendingUsers**、**numberOfSucceededUsers**、**numberOfErrorUsers**、**numberOfFailedUsers**、**lastUpdateTime**、**policyRevision** の各プロパティを削除しました|
+|変更|ベータ版|[deviceConfigurationDeviceOverview](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_deviceconfig_deviceconfigurationdeviceoverview) エンティティに、**pendingCount**、**successCount**、**errorCount**、**failedCount**、**lastUpdateDateTime**、**configurationVersion** の各プロパティを追加しました|
+|変更|ベータ版|[deviceConfigurationDeviceOverview](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_deviceconfig_deviceconfigurationdeviceoverview) エンティティから、**numberOfPendingDevices**、**numberOfSucceededDevices**、**numberOfErrorDevices**、**numberOfFailedDevices**、**lastUpdateTime**、**policyRevision** の各プロパティを削除しました|
+|変更|ベータ版|[deviceConfigurationUserOverview](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_deviceconfig_deviceconfigurationuseroverview) エンティティに、**pendingCount**、**successCount**、**errorCount**、**failedCount**、**lastUpdateDateTime**、**configurationVersion** の各プロパティを追加しました|
+|変更|ベータ版|[deviceConfigurationUserOverview](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_deviceconfig_deviceconfigurationuseroverview) エンティティから、**numberOfPendingUsers**、**numberOfSucceededUsers**、**numberOfErrorUsers**、**numberOfFailedUsers**、**lastUpdateTime**、**policyRevision** の各プロパティを削除しました|
+|変更|ベータ版|[deviceManagement](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_androidforwork_devicemanagement) エンティティに **subscriptionState** プロパティを追加しました|
+|変更|ベータ版|[iosCompliancePolicy](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_deviceconfig_ioscompliancepolicy) エンティティに **managedEmailProfileRequired** プロパティを追加しました|
+|変更|ベータ版|[iosGeneralDeviceConfiguration](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_deviceconfig_iosgeneraldeviceconfiguration) エンティティに **appsSingleAppModeList** プロパティを追加しました|
+|変更|ベータ版|[iosGeneralDeviceConfiguration](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_deviceconfig_iosgeneraldeviceconfiguration) エンティティから **appsSingleAppModeBundleIds** プロパティを削除しました|
+|変更|ベータ版|[iosLobAppProvisioningConfiguration](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_apps_ioslobappprovisioningconfiguration) エンティティに **expirationDateTime** プロパティを追加しました|
+|変更|ベータ版|[iosLobAppProvisioningConfiguration](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_apps_ioslobappprovisioningconfiguration) エンティティから **expiration** プロパティを削除しました|
+|変更|ベータ版|[macOSCompliancePolicy](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_deviceconfig_macoscompliancepolicy) エンティティに、**passwordMinimumCharacterSetCount**、**osMinimumVersion**、**osMaximumVersion**、**deviceThreatProtectionEnabled**、**deviceThreatProtectionRequiredSecurityLevel**、**storageRequireEncryption** の各プロパティを追加しました|
+|変更|ベータ版|[managedAndroidLobApp](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_apps_managedandroidlobapp) エンティティから **manifest** プロパティを削除しました|
+|変更|ベータ版|[managedDevice](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_devicefe_manageddevice) エンティティに、**isSupervised**、**exchangeLastSuccessfulSyncDateTime**、**exchangeAccessState**、**exchangeAccessStateReason** の各プロパティを追加しました|
+|変更|ベータ版|[managedDeviceOverview](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_devicefe_manageddeviceoverview) エンティティに **deviceExchangeAccessStateSummary** プロパティを追加しました|
+|変更|ベータ版|[managedIOSLobApp](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_apps_managedioslobapp) エンティティから **manifest** プロパティを削除しました|
+|変更|ベータ版|[mobileApp](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_apps_mobileapp) エンティティから **installSummary** プロパティを削除しました|
+|変更|ベータ版|[mobileAppContentFile](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_apps_mobileappcontentfile) エンティティに **uploadState** プロパティを追加しました|
+|変更|ベータ版|[mobileAppContentFile](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_apps_mobileappcontentfile) エンティティで次のプロパティを変更しました:<br/>**azureStorageUriExpirationDateTime** を必須から省略可能に変更しました<br/>|
+|変更|ベータ版|[remoteActionAudit](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_devicefe_remoteactionaudit) エンティティに、**initiatedByUserPrincipalName**、**deviceOwnerUserPrincipalName**、**deviceIMEI**、**actionState** の各プロパティを追加しました|
+|変更|ベータ版|[windows10GeneralConfiguration](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_deviceconfig_windows10generalconfiguration) エンティティに、**oneDriveDisableFileSync**、**safeSearchFilter**、**edgeSearchEngine**、**settingsBlockSettingsApp**、**settingsBlockSystemPage**、**settingsBlockDevicesPage**、**settingsBlockNetworkInternetPage**、**settingsBlockPersonalizationPage**、**settingsBlockAccountsPage**、**settingsBlockTimeLanguagePage**、**settingsBlockEaseOfAccessPage**、**settingsBlockPrivacyPage**、**settingsBlockUpdateSecurityPage**、**experienceBlockWindowsSpotlight**、**experienceBlockWindowsTips**、**experienceBlockConsumerSpecificFeatures**、**startMenuLayoutXml**、**startMenuMode**、**logonBlockFastUserSwitching**、**startBlockUnpinningAppsFromTaskbar** の各プロパティを追加しました|
+|変更|ベータ版|[windows10SecureAssessmentConfiguration](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_deviceconfig_windows10secureassessmentconfiguration) エンティティに、**allowPrinting**、**allowScreenCapture**、**allowTextSuggestion** の各プロパティを追加しました|
+|変更|ベータ版|[windows10SecureAssessmentConfiguration](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_deviceconfig_windows10secureassessmentconfiguration) エンティティから、**blockPrinting**、**blockScreenCapture**、**blockTextSuggestion** の各プロパティを削除しました|
+|変更|ベータ版|[windowsAppX](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_apps_windowsappx) エンティティに **identityName** プロパティを追加しました|
+|変更|ベータ版|[windowsAppX](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_apps_windowsappx) エンティティで次のプロパティの型を変更しました:<br/>**applicableArchitectures** を [windowsArchitecture](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/windowsArchitecture) から String に変更しました<br/>|
+|変更|ベータ版|[windowsPhone81AppX](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_apps_windowsphone81appx) エンティティに **identityName** プロパティを追加しました|
+|変更|ベータ版|[windowsPhone81AppX](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_apps_windowsphone81appx) エンティティで次のプロパティの型を変更しました:<br/>**applicableArchitectures** を [windowsArchitecture](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/windowsArchitecture) から String に変更しました<br/>|
+|変更|ベータ版|[windowsUniversalAppX](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_apps_windowsuniversalappx) エンティティに、**identityName**、**identityPublisherHash**、**identityResourceIdentifier** の各プロパティを追加しました|
+|変更|ベータ版|[windowsUniversalAppX](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_apps_windowsuniversalappx) エンティティで次のプロパティの型を変更しました:<br/>**applicableArchitectures** を [windowsArchitecture](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/windowsArchitecture) から String に変更しました<br/>**applicableDeviceTypes** を [windowsDeviceType](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/windowsDeviceType) から String に変更しました<br/>|
+|変更|ベータ版|[windowsUpdateForBusinessConfiguration](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_deviceconfig_windowsupdateforbusinessconfiguration) エンティティに **restartMode** プロパティを追加しました|
+|変更|ベータ版|[androidForWorkScepCertificateProfile](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_deviceconfig_androidforworkscepcertificateprofile) エンティティに **managedDeviceCertificateStates** ナビゲーション プロパティを追加しました|
+|変更|ベータ版|[androidScepCertificateProfile](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_deviceconfig_androidscepcertificateprofile) エンティティに **managedDeviceCertificateStates** ナビゲーション プロパティを追加しました|
+|変更|ベータ版|[deviceAppManagement](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_apps_deviceappmanagement) エンティティに、**enterpriseCodeSigningCertificates**、**symantecCodeSigningCertificate**、**sideLoadingKeys**、**managedAppPolicies**、**iosManagedAppProtections**、**androidManagedAppProtections**、**defaultManagedAppProtections**、**targetedManagedAppConfigurations**、**mdmWindowsInformationProtectionPolicies**、**windowsInformationProtectionPolicies**、**managedAppRegistrations**、**managedAppStatuses** の各ナビゲーション プロパティを追加しました|
+|変更|ベータ版|[deviceAppManagement](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_apps_deviceappmanagement) エンティティから、**appReportingOverview**、**enterpriseCerts**、**symantecCert** の各ナビゲーション プロパティを削除しました|
+|変更|ベータ版|[deviceCompliancePolicy](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_deviceconfig_devicecompliancepolicy) エンティティに **deviceSettingStateSummaries** ナビゲーション プロパティを追加しました|
+|変更|ベータ版|[deviceConfiguration](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_deviceconfig_deviceconfiguration) エンティティに **deviceSettingStateSummaries** ナビゲーション プロパティを追加しました|
+|変更|ベータ版|[deviceManagement](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_androidforwork_devicemanagement) エンティティに、**termsAndConditions**、**androidForWorkSettings**、**androidForWorkAppConfigurationSchemas**、**applePushNotificationCertificate**、**softwareUpdateStatusSummary**、**deviceCompliancePolicyDeviceStateSummary**、**complianceSettingStateSummaries**、**deviceConfigurationDeviceStateSummaries**、**mobileThreatDefenseConnectors** の各ナビゲーション プロパティを追加しました|
+|変更|ベータ版|[iosEducationDeviceConfiguration](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_deviceconfig_ioseducationdeviceconfiguration) エンティティから、**teacherRootCertificates**、**teacherIdentityCertificate**、**studentRootCertificates**、**studentIdentityCertificate** の各ナビゲーション プロパティを削除しました|
+|変更|ベータ版|[iosLobAppProvisioningConfiguration](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_apps_ioslobappprovisioningconfiguration) エンティティで次のプロパティの型を変更しました:<br/>**deviceStatuses** を [managedDeviceMobileAppProvisioningConfigurationDeviceStatus](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/managedDeviceMobileAppProvisioningConfigurationDeviceStatus) コレクションから [managedDeviceMobileAppConfigurationDeviceStatus](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_apps_manageddevicemobileappconfigurationdevicestatus) コレクションに変更しました<br/>**groupAssignments** を [appProvisioningConfigGroupAssignment](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/appProvisioningConfigGroupAssignment) コレクションから [mobileAppProvisioningConfigGroupAssignment](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_apps_mobileappprovisioningconfiggroupassignment) コレクションに変更しました<br/>|
+|変更|ベータ版|[iosScepCertificateProfile](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_deviceconfig_iosscepcertificateprofile) エンティティに **managedDeviceCertificateStates** ナビゲーション プロパティを追加しました|
+|変更|ベータ版|[macOSScepCertificateProfile](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_deviceconfig_macosscepcertificateprofile) エンティティに **managedDeviceCertificateStates** ナビゲーション プロパティを追加しました|
+|変更|ベータ版|[managedDevice](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_devicefe_manageddevice) エンティティに **deviceConfigurationStates** ナビゲーション プロパティと **deviceCompliancePolicyStates** ナビゲーション プロパティを追加しました|
+|変更|ベータ版|[managedDeviceMobileAppConfiguration](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_apps_manageddevicemobileappconfiguration) エンティティに **deviceStatusSummary** ナビゲーション プロパティと **userStatusSummary** ナビゲーション プロパティを追加しました|
+|変更|ベータ版|[mobileApp](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_apps_mobileapp) エンティティに **installSummary** ナビゲーション プロパティを追加しました|
+|変更|ベータ版|[organization](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_onboarding_organization) エンティティから **sideLoadingKeys** ナビゲーション プロパティを削除しました|
+|変更|ベータ版|[windows81SCEPCertificateProfile](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_deviceconfig_windows81scepcertificateprofile) エンティティに **managedDeviceCertificateStates** ナビゲーション プロパティを追加しました|
+|変更|ベータ版|[windowsPhone81SCEPCertificateProfile](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_deviceconfig_windowsphone81scepcertificateprofile) エンティティに **managedDeviceCertificateStates** ナビゲーション プロパティを追加しました|
+|変更|ベータ版|[appInstallationFailure](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_apps_appinstallationfailure) 複合型から、**applicationId**、**appName**、**platformId**、**userFailures**、**deviceFailures** の各プロパティを削除しました|
+|変更|ベータ版|[iosHomeScreenFolderPage](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_deviceconfig_ioshomescreenfolderpage) 複合型に **displayName** プロパティを追加しました|
+|変更|ベータ版|[iosHomeScreenPage](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_deviceconfig_ioshomescreenpage) 複合型に **displayName** プロパティを追加しました|
+|変更|ベータ版|[windowsInformationProtectionDataRecoveryCertificate](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_mam_windowsinformationprotectiondatarecoverycertificate) 複合型に、**subjectName**、**description**、**expirationDateTime**、**certificate** の各プロパティを追加しました|
+|変更|ベータ版|[windowsInformationProtectionDataRecoveryCertificate](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_mam_windowsinformationprotectiondatarecoverycertificate) 複合型から **dataRecoveryCertificate** プロパティと **certificateFileName** プロパティを削除しました|
+|変更|ベータ版|[windowsPackageInformation](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_apps_windowspackageinformation) 複合型に **displayName** プロパティを追加しました|
+|変更|ベータ版|[windowsPackageInformation](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_apps_windowspackageinformation) 複合型で次のプロパティの型を変更しました:<br/>**applicableArchitecture** を [windowsArchitecture](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/windowsArchitecture) から String に変更しました<br/>|
+|変更|ベータ版|[windowsPackageInformation](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_apps_windowspackageinformation) 複合型で次のプロパティを変更しました:<br/>**applicableArchitecture** を省略可能から必須に変更しました<br/>|
+
+### <a name="add-contracts-to-microsoft-graph"></a>Microsoft Graph へのコントラクトの追加
+
+|**変更の種類**|**バージョン**|**説明**|
+|:-------------|:-----------|:--------------|
+|追加|ベータ版|新しいリソース:</br>[コントラクト](https://graph.microsoft.io/en-us/docs/api-reference/beta/resources/contract) |
+
+### <a name="add-domain-operations-to-microsoft-graph"></a>Microsoft Graph へのドメイン操作の追加
+
+|**変更の種類**|**バージョン**|**説明**|
+|:-------------|:-----------|:--------------|
+|追加|ベータ版|[ドメイン](https://graph.microsoft.io/en-us/docs/api-reference/beta/resources/domain)に関数を追加しました。<br/>新しいエンティティ:</br>[domain](https://graph.microsoft.io/en-us/docs/api-reference/beta/resources/domain)<br/>[domainDnsRecord](https://graph.microsoft.io/en-us/docs/api-reference/beta/resources/domaindnsrecord)<br/>[domainDnsCnameRecord](https://graph.microsoft.io/en-us/docs/api-reference/beta/resources/domainDnsCnameRecord)<br/>[domainDnsMxRecord](https://graph.microsoft.io/en-us/docs/api-reference/beta/resources/domainDnsMxRecord)<br/>[domainDnsSrvRecord](https://graph.microsoft.io/en-us/docs/api-reference/beta/resources/domainDnsSrvRecord)<br/>[domainDnsTxtRecord](https://graph.microsoft.io/en-us/docs/api-reference/beta/resources/domainDnsTxtRecord)<br/>[domainDnsUnavailableRecord](https://graph.microsoft.io/en-us/docs/api-reference/beta/resources/domainDnsUnavailableRecord)<br/>新しいアクション:</br>[forceDelete](https://graph.microsoft.io/en-us/docs/api-reference/beta/api/domain_forcedelete)</br>[verify](https://graph.microsoft.io/en-us/docs/api-reference/beta/api/domain_verify) |
+
+### <a name="add-custom-data-to-microsoft-graph-using-schema-extensions"></a>スキーマ拡張機能を使用して Microsoft Graph にカスタム データを追加する
+
+|**変更の種類**|**バージョン**|**説明**|
+|:-------------|:-----------|:--------------|
+|追加|ベータ版|Microsoft Graph を、[スキーマ拡張機能](https://developer.microsoft.com/en-us/graph/docs/concepts/extensibility_overview#schema-extensions-preview)を使用してアプリケーション データによって拡張します。これは、次のリソースでサポートされています。<br/>管理単位<br/>予定表イベント<br/>デバイス<br/>グループ<br/>メッセージ<br/>組織<br/>個人用連絡先<br/>投稿<br/>ユーザー<br/>次の例を参照してください。<br/>[スキーマ拡張機能を使用したグループへのカスタム データの追加 (プレビュー)](https://developer.microsoft.com/en-us/graph/docs/concepts/extensibility_schema_groups)|
+|追加|ベータ版|検証済みの .com バニティ ドメインを必要とせずに、スキーマ拡張機能の定義を作成する別の方法が提供されました。詳しくは、[スキーマ拡張機能](https://developer.microsoft.com/en-us/graph/docs/concepts/extensibility_overview#schema-extensions-preview)を参照してください。|
+
+### <a name="add-custom-data-to-microsoft-graph-using-open-extensions"></a>オープン拡張機能を使用して Microsoft Graph にカスタム データを追加する
+
+|**変更の種類**|**バージョン**|**説明**|
+|:-------------|:-----------|:--------------|
+|変更| v1.0 およびベータ版 | 「Office 365 のデータ拡張機能」というこれまでの名称が「オープン拡張機能」に変更されました。 |
+|追加|ベータ版|[オープン拡張機能](https://developer.microsoft.com/en-us/graph/docs/concepts/extensibility_overview#open-extensions)をサポートする追加リソース: <br/>管理単位<br/>デバイス<br/>グループ<br/>組織<br/>ユーザー<br/>次の例を参照してください。<br/>[オープン拡張機能を使用したユーザーへのカスタム データの追加 (プレビュー)](https://developer.microsoft.com/en-us/graph/docs/concepts/extensibility_open_users)|
+
+### <a name="directory-apis"></a>ディレクトリ API
+
+|**変更の種類**|**バージョン**|**説明**|
+|:-------------|:-----------|:--------------|
+|追加|ベータ版|[グループの復元と完全削除](https://graph.microsoft.io/en-us/docs/api-reference/beta/resources/directory)に関するサポートが追加されました。<br/>新しいエンティティ: deleteditems ナビゲーション プロパティを持つディレクトリ。 |
+|追加|ベータ版|新しいエンティティ:</br>[Endpoint](https://graph.microsoft.io/en-us/docs/api-reference/beta/resources/endpoint) |
+|変更  |ベータ版|[groups](https://graph.microsoft.io/en-us/docs/api-reference/beta/resources/group) における新たな [endpoints](https://graph.microsoft.io/en-us/docs/api-reference/beta/api/group_list_endpoints) ナビゲーション プロパティ |
+|追加|ベータ版|新しいエンティティ:</br>[licenseDetails](https://graph.microsoft.io/en-us/docs/api-reference/beta/resources/licensedetails) |
+|変更  |ベータ版|[users](https://graph.microsoft.io/en-us/docs/api-reference/beta/resources/user) における新たな [licensedetails](https://graph.microsoft.io/en-us/docs/api-reference/beta/api/user_list_licensedetails) ナビゲーション プロパティ |
+
+### <a name="reports-apis"></a>レポート API
+
+|**変更の種類**|**バージョン**|**説明**|
+|:-------------|:-----------|:--------------|
+|追加|ベータ版|Office 365 レポートの新しいプレビュー API が導入されました。この API を使用すると、対象ビジネスにおけるユーザーの Office 365 サービスの使用法に関する使用状況レポートを取得できます。たとえば、サービスをよく利用してクォータに到達しそうなユーザーや、Office 365 ライセンスを必要としない可能性があるユーザーなどを識別できます。詳しくは、[レポート](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/report)を参照してください。|
+
+### <a name="directory-apis"></a>ディレクトリ API
+
+|**変更の種類**|**バージョン**|**説明**|
+|:-------------|:-----------|:--------------|
+|追加|ベータ版|新しいエンティティ:</br>[コントラクト](https://graph.microsoft.io/en-us/docs/api-reference/beta/resources/contract) |
+
+## <a name="february-2017"></a>2017 年 2 月
+
+### <a name="intune-apis"></a>Intune API
+
+|変更の種類|バージョン|説明|
+|:---|:---|:---|
+|追加|ベータ版|新しいエンティティを追加しました。<br/>[androidForWorkCertificateProfileBase](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_deviceconfig_androidforworkcertificateprofilebase)<br/>[androidForWorkEasEmailProfileBase](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_deviceconfig_androidforworkeasemailprofilebase)<br/>[androidForWorkEnterpriseWiFiConfiguration](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_deviceconfig_androidforworkenterprisewificonfiguration)<br/>[androidForWorkGmailEasConfiguration](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_deviceconfig_androidforworkgmaileasconfiguration)<br/>[androidForWorkNineWorkEasConfiguration](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_deviceconfig_androidforworknineworkeasconfiguration)<br/>[androidForWorkPkcsCertificateProfile](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_deviceconfig_androidforworkpkcscertificateprofile)<br/>[androidForWorkScepCertificateProfile](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_deviceconfig_androidforworkscepcertificateprofile)<br/>[androidForWorkTrustedRootCertificate](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_deviceconfig_androidforworktrustedrootcertificate)<br/>[androidForWorkWiFiConfiguration](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_deviceconfig_androidforworkwificonfiguration)<br/>[appleDeviceFeaturesConfigurationBase](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_deviceconfig_appledevicefeaturesconfigurationbase)<br/>[appProvisioningConfigGroupAssignment](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_apps_appprovisioningconfiggroupassignment)<br/>[deviceComplianceUserOverview](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_deviceconfig_devicecomplianceuseroverview)<br/>[deviceConfigurationUserOverview](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_deviceconfig_deviceconfigurationuseroverview)<br/>[enterpriseCertificate](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_apps_enterprisecertificate)<br/>[iosEducationDeviceConfiguration](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_deviceconfig_ioseducationdeviceconfiguration)<br/>[macOSDeviceFeaturesConfiguration](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_deviceconfig_macosdevicefeaturesconfiguration)<br/>[managedAndroidLobApp](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_apps_managedandroidlobapp)<br/>[managedDeviceMobileAppProvisioningConfigurationDeviceStatus](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_apps_manageddevicemobileappprovisioningconfigurationdevicestatus)<br/>[managedIOSLobApp](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_apps_managedioslobapp)<br/>[managedMobileLobApp](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_apps_managedmobilelobapp)<br/>[symantecCertificate](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_apps_symanteccertificate)<br/>[windowsAppX](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_apps_windowsappx)<br/>[windowsCertificateProfileBase](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_deviceconfig_windowscertificateprofilebase)<br/>[windowsPhone81AppX](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_apps_windowsphone81appx)<br/>[windowsPhone81AppXBundle](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_apps_windowsphone81appxbundle)<br/>[windowsPhoneXAP](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_apps_windowsphonexap)<br/>[windowsUniversalAppX](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_apps_windowsuniversalappx)<br/>|
+|追加|ベータ版|新しい複合型を追加しました。<br/>[airPrintDestination](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_deviceconfig_airprintdestination)<br/>[windowsArchitecture](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_apps_windowsarchitecture)<br/>[windowsDeviceType](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_apps_windowsdevicetype)<br/>[windowsMinimumOperatingSystem](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_apps_windowsminimumoperatingsystem)<br/>[windowsPackageInformation](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_apps_windowspackageinformation)<br/>|
+|追加|ベータ版|
+  [iosLobAppProvisioningConfiguration](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_apps_ioslobappprovisioningconfiguration) エンティティに [assign](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/intune_apps_ioslobappprovisioningconfiguration_assign) アクションを追加しました|
+|追加|ベータ版|
+  [deviceCompliancePolicy](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_deviceconfig_devicecompliancepolicy) エンティティに [scheduleActionsForRules](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/intune_deviceconfig_devicecompliancepolicy_scheduleactionsforrules) アクションを追加しました|
+|追加|ベータ版|
+  [targetedManagedAppConfiguration](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_mam_targetedmanagedappconfiguration) エンティティに [updateTargetedSecurityGroups](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/intune_mam_targetedmanagedappconfiguration_updatetargetedsecuritygroups) アクションを追加しました|
+|追加|ベータ版|
+  [resourceOperation](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_rbac_resourceoperation) エンティティに [getScopesForUser](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/intune_rbac_resourceoperation_getscopesforintune_devices_user) 関数を追加しました|
+|変更|ベータ版|
+  [androidLobApp](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_apps_androidlobapp) エンティティから **manifest** プロパティを削除しました|
+|変更|ベータ版|
+  [iosDeviceFeaturesConfiguration](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_deviceconfig_iosdevicefeaturesconfiguration) エンティティに **assetTagTemplate**、**lockScreenFootnote**、**homeScreenDockIcons**、**homeScreenPages** の各プロパティを追加しました|
+|変更|ベータ版|
+  [iosDeviceFeaturesConfiguration](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_deviceconfig_iosdevicefeaturesconfiguration) エンティティから **deviceSharingAssetTagInformation**、**deviceSharingLockScreenFootnote**、**homeScreenLayoutDockIcons**、**homeScreenLayoutPages** の各プロパティを削除しました|
+|変更|ベータ版|
+  [iosGeneralDeviceConfiguration](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_deviceconfig_iosgeneraldeviceconfiguration) エンティティに **appsSingleAppModeBundleIds** プロパティを追加しました|
+|変更|ベータ版|
+  [iosLobApp](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_apps_ioslobapp) エンティティから **manifest** プロパティを削除しました|
+|変更|ベータ版|
+  [iosLobAppProvisioningConfiguration](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_apps_ioslobappprovisioningconfiguration) エンティティに **createdDateTime**、**description**、**lastModifiedDateTime**、**displayName**、**version** の各プロパティを追加しました|
+|変更|ベータ版|
+  [managedAppPolicy](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_mam_managedapppolicy) エンティティに **createdDateTime** プロパティと **lastModifiedDateTime** プロパティを追加しました|
+|変更|ベータ版|
+  [managedDevice](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_devices_manageddevice) エンティティから **deviceRegistrationState** プロパティを削除しました|
+|変更|ベータ版|
+  [mobileAppContentFile](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_apps_mobileappcontentfile) エンティティに **manifest** プロパティを追加しました|
+|変更|ベータ版|
+  [mobileAppInstallStatus](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_apps_mobileappinstallstatus) エンティティに **osDescription** プロパティと **userName** プロパティを追加しました|
+|変更|ベータ版|
+  [mobileAppInstallStatus](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_apps_mobileappinstallstatus) エンティティから **deviceType** プロパティを削除しました|
+|変更|ベータ版|
+  [mobileAppInstallStatus](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_apps_mobileappinstallstatus) エンティティで次のプロパティの型を変更しました:<br/>**mobileAppInstallStatusValue** を Int32 から文字列に変更しました|
+|変更|ベータ版|
+  [targetedManagedAppConfiguration](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_mam_targetedmanagedappconfiguration) エンティティに **targetedSecurityGroupIds** プロパティと **targetedSecurityGroupsCount** プロパティを追加しました|
+|変更|ベータ版|
+  [targetedManagedAppConfiguration](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_mam_targetedmanagedappconfiguration) エンティティから **numberOfTargetedSecurityGroups** プロパティを削除しました|
+|変更|ベータ版|
+  [user](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_devices_user) エンティティに **id** プロパティを追加しました|
+|変更|ベータ版|
+  [windows10CertificateProfileBase](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_deviceconfig_windows10certificateprofilebase) エンティティから **renewalThresholdPercentage**、**keyStorageProvider**、**subjectNameFormat**、**subjectAlternativeNameType**、**certificateValidityPeriodValue**、**certificateValidityPeriodScale** の各プロパティを削除しました|
+|変更|ベータ版|
+  [windows81CertificateProfileBase](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_deviceconfig_windows81certificateprofilebase) エンティティから **renewalThresholdPercentage**、**keyStorageProvider**、**subjectNameFormat**、**subjectAlternativeNameType**、**certificateValidityPeriodValue**、**certificateValidityPeriodScale** の各プロパティを削除しました|
+|変更|ベータ版|
+  [windowsPhone81GeneralConfiguration](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_deviceconfig_windowsphone81generalconfiguration) エンティティから **applyToWindows10Mobile** プロパティを削除しました|
+|変更|ベータ版|
+  [deviceAppManagement](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_apps_deviceappmanagement) エンティティに **enterpriseCerts**、**iosLobAppProvisioningConfigurations**、**symantecCert** の各ナビゲーション プロパティを追加しました|
+|変更|ベータ版|
+  [deviceCompliancePolicy](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_deviceconfig_devicecompliancepolicy) エンティティに **userStatusOverview** ナビゲーション プロパティを追加しました|
+|変更|ベータ版|
+  [deviceConfiguration](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_deviceconfig_deviceconfiguration) エンティティに **userStatusOverview** ナビゲーション プロパティを追加しました|
+|変更|ベータ版|
+  [iosLobAppProvisioningConfiguration](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_apps_ioslobappprovisioningconfiguration) エンティティに **groupAssignments**、**deviceStatuses**、**userStatuses** の各ナビゲーション プロパティを追加しました|
+|変更|ベータ版|
+  [windows10VpnConfiguration](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_deviceconfig_windows10vpnconfiguration) エンティティで次のプロパティの型を変更しました:<br/>
+  **identityCertificate** を [windows10CertificateProfileBase](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_deviceconfig_windows10certificateprofilebase) から [windowsCertificateProfileBase](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_deviceconfig_windowscertificateprofilebase) に変更しました|
+|変更|ベータ版|
+  [deviceManagementSettings](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_deviceconfig_devicemanagementsettings) 複合型に **deviceComplianceCheckinThresholdDays** プロパティと **isScheduledActionEnabled** プロパティを追加しました|
+|変更|ベータ版|
+  [deviceManagementSettings](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_deviceconfig_devicemanagementsettings) 複合型から **windowsCommercialId** プロパティと **windowsCommercialIdLastModifiedTime** プロパティを削除しました|
+|変更|ベータ版|
+  [iosNotificationSettings](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_deviceconfig_iosnotificationsettings) 複合型に **bundleID**、**appName**、**publisher**、**enabled**、**showOnLockScreen** の各プロパティを追加しました|
+|変更|ベータ版|
+  [iosNotificationSettings](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_deviceconfig_iosnotificationsettings) 複合型から **bundleIdentifier**、**notificationsEnabled**、**showInLockScreen** の各プロパティを削除しました|
+
+
+
+## <a name="january-2017"></a>2017 年 1 月
+
+### <a name="outlook-calendar"></a>Outlook カレンダー
+
+|**変更の種類**|**バージョン**|**説明**|
+|:-------------|:-----------|:--------------|
+|追加|v1.0|
+  [user](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/user) リソースの新しいアクション [findMeetingTimes](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/user_findmeetingtimes)。|
+|追加|v1.0|新しい複合型 [attendeeBase](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/attendeebase)。attendee 型の型プロパティで構成されます。|
+|追加|v1.0|新しい複合型:<br/>[attendeeAvailability](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/attendeeavailability)<br/>[locationConstraint](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/locationconstraint) <br/>[locationConstraintItem](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/locationconstraintitem)<br/>[meetingTimeSuggestion](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/meetingtimesuggestion)<br/>[meetingTimeSuggestionsResult](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/meetingtimesuggestionsresult)<br/>[timeConstraint](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/timeconstraint)<br/>[timeSlot](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/timeslot)|
+|変更|v1.0|
+  [attendee](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/attendee) 複合型は、[recipient](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/recipient) から派生する attendeeBase から派生するようになりました。継承されたプロパティを含めて、以前と同じ **status**、**type**、**emailAddress** プロパティで構成されます。|
+|追加|ベータ版|hexColor が、[calendar](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/calendar) リソースに追加されました。|
+
+### <a name="intune-apis"></a>Intune API
+
+|**変更の種類**|**バージョン**|**説明**|
+|:-------------|:-----------|:--------------|
+|追加|ベータ版|新しいエンティティを追加しました。 <br/>[appReportingOverviewStatus](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_apps_appreportingoverviewstatus)<br/>[deviceComplianceDeviceOverview](https://developer.microsoft.com/en-us/graph/docs//api-reference/beta/resources/intune_deviceconfig_devicecompliancedeviceoverview)<br/>[deviceConfigurationDeviceOverview](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_deviceconfig_deviceconfigurationdeviceoverview)<br/>[deviceManagementExchangeOnpremisesPolicy](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_onboarding_devicemanagementexchangeonpremisespolicy)<br/>[iosDeviceFeaturesConfiguration](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_deviceconfig_iosdevicefeaturesconfiguration)<br/>[iosEducationDeviceConfiguration](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_deviceconfig_ioseducationdeviceconfiguration)<br/>[iosLobAppProvisioningConfiguration](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_apps_ioslobappprovisioningconfiguration)<br/>[onpremisesConditionalAccessSettings](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_onboarding_onpremisesconditionalaccesssettings)<br/>[sharedPCConfiguration](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_deviceconfig_sharedpcconfiguration)<br/>[windows10EnterpriseModernAppManagementConfiguration](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_deviceconfig_windows10enterprisemodernappmanagementconfiguration)<br/>[windows10SecureAssessmentConfiguration](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_deviceconfig_windows10secureassessmentconfiguration)<br/>[windows10WindowsInformationProtectionConfiguration](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_deviceconfig_windows10windowsinformationprotectionconfiguration)|
+|追加|ベータ版|新しい複合型を追加しました。 <br/> [appInstallationFailure](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_apps_appinstallationfailure)<br/>[enterpriseCloudResource](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_deviceconfig_enterprisecloudresource)<br/>[iosHomeScreenApp](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_deviceconfig_ioshomescreenapp)<br/>[iosHomeScreenFolder](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_deviceconfig_ioshomescreenfolder)<br/>[iosHomeScreenFolderPage](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_deviceconfig_ioshomescreenfolderpage)<br/>[iosHomeScreenItem](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_deviceconfig_ioshomescreenitem)<br/>[iosHomeScreenPage](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_deviceconfig_ioshomescreenpage)<br/>[iosNotificationSettings](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_deviceconfig_iosnotificationsettings)<br/>[iPv6Range](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_deviceconfig_ipv6range)<br/>[sharedPCAccountManagerPolicy](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_deviceconfig_sharedpcaccountmanagerpolicy)<br/>[windowsInformationProtectionAppRule](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_deviceconfig_windowsinformationprotectionapprule)<br/>[windowsInformationProtectionAppRuleAppLockerPolicyFileTemplate](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_deviceconfig_windowsinformationprotectionappruleapplockerpolicyfiletemplate)<br/>[windowsInformationProtectionAppRuleDesktopTemplate](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_deviceconfig_windowsinformationprotectionappruledesktoptemplate)<br/>[windowsInformationProtectionAppRuleStoreAppTemplate](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_deviceconfig_windowsinformationprotectionapprulestoreapptemplate)<br/>[windowsInformationProtectionAppRuleTemplate](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_deviceconfig_windowsinformationprotectionappruletemplate)<br/>[windowsInformationProtectionCorporateNetworkLocation](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_deviceconfig_windowsinformationprotectioncorporatenetworklocation)<br/>[windowsInformationProtectionDataRecoveryCertificate](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_deviceconfig_windowsinformationprotectiondatarecoverycertificate)<br/>[windowsInformationProtectionProtectedLocation](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_deviceconfig_windowsinformationprotectionprotectedlocation)<br/>[windowsInformationProtectionProtectedLocationEnterpriseCloudResources](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_deviceconfig_windowsinformationprotectionprotectedlocationenterprisecloudresources)<br/>[windowsInformationProtectionProtectedLocationEnterpriseInternalProxyServers](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_deviceconfig_windowsinformationprotectionprotectedlocationenterpriseinternalproxyservers)<br/>[windowsInformationProtectionProtectedLocationEnterpriseIPv4Ranges](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_deviceconfig_windowsinformationprotectionprotectedlocationenterpriseipv4ranges)<br/>[windowsInformationProtectionProtectedLocationEnterpriseIPv6Ranges](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_deviceconfig_windowsinformationprotectionprotectedlocationenterpriseipv6ranges)<br/>[windowsInformationProtectionProtectedLocationEnterpriseNetworkDomainNames](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_deviceconfig_windowsinformationprotectionprotectedlocationenterprisenetworkdomainnames)<br/>[windowsInformationProtectionProtectedLocationEnterpriseProxyServers](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_deviceconfig_windowsinformationprotectionprotectedlocationenterpriseproxyservers)<br/>[windowsInformationProtectionProtectedLocationNeutralResources](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_deviceconfig_windowsinformationprotectionprotectedlocationneutralresources)
+|削除|ベータ版|次の複合型を削除し、microsoft.graph.Json に置き換えました。<br/>managedAppDeploymentSummary <br/>managedAppSummary<br /> |
+|変更|ベータ版|次のエンティティで、プロパティの種類 appConfigComplianceStatus を complianceStatus に置き換えました。 <br/>[managedDeviceMobileAppConfigurationDeviceStatus](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_apps_manageddevicemobileappconfigurationdevicestatus)<br/>[managedDeviceMobileAppConfigurationUserStatus](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_apps_manageddevicemobileappconfigurationuserstatus)|
+|変更|ベータ版|リソース [managedAppStatusRaw](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_mam_managedappstatusraw) について、プロパティ コンテンツの種類を managedAppSummary から Json に変更しました。|
+|変更|ベータ版|GetUsersWithFlaggedAppRegistration 関数を [managedAppRegistration](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_mam_managedappregistration) コレクションから削除しました。|
+|変更|ベータ版|
+  [iosVppApp](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_apps_iosvppapp) エンティティの **vppToken** ナビゲーション プロパティは、包含されるコレクションではなくなりました。|
+|変更|ベータ版|
+  **deviceStatusOverview** プロパティが、[deviceConfiguration](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_deviceconfig_deviceconfiguration) エンティティと [deviceCompliancePolicy](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_deviceconfig_devicecompliancepolicy) エンティティに追加されました。|
+|変更|ベータ版|
+  **appReportingOverview** プロパティが [deviceAppManagement](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_apps_deviceappmanagement) シングルトンに追加されました。|
+|変更|ベータ版|
+  **deviceDisplayName** および **userPrincipalName** プロパティが、[deviceConfigurationDeviceStatus](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_deviceconfig_deviceconfigurationdevicestatus)、[deviceComplianceDeviceStatus](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_deviceconfig_devicecompliancedevicestatus)、[managedDeviceMobileAppConfigurationDeviceStatus](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_apps_manageddevicemobileappconfigurationdevicestatus) の各エンティティに追加されました。|
+|変更|ベータ版|
+  **ruleName** プロパティが [deviceComplianceScheduledActionForRule](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_deviceconfig_devicecompliancescheduledactionforrule) エンティティに追加されました。|
+|変更|ベータ版|
+  **devicesCount**、**userDisplayName**、**userPrincipalName** の各プロパティが、[deviceConfigurationUserStatus](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_deviceconfig_deviceconfigurationuserstatus)、[deviceComplianceUserStatus](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_deviceconfig_devicecomplianceuserstatus)、[managedDeviceMobileAppConfigurationUserStatus](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_apps_manageddevicemobileappconfigurationuserstatus) の各エンティティに追加されました。|
+|変更|ベータ版|
+  [notificationMessageTemplates](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_notification_notificationmessagetemplate) コレクションが [deviceManagement](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_deviceconfig_devicemanagement) シングルトンに追加されました。|
+|変更|ベータ版|
+  **isDefault**、**lastModifiedDateTime**、**locale**、**messageTemplate**、**subject** の各プロパティが [localizedNotificationMessage](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_deviceconfig_localizednotificationmessage.md ) エンティティに追加されました。|
+|変更|ベータ版|
+  **azureActiveDirectoryDeviceId**、**deviceCategory**、**deviceRegistrationState**、**managementAgent** の各プロパティが [managedDevice](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_onboarding_manageddevice) エンティティに追加されました。|
+|変更|ベータ版|
+  **lastModifiedDateTime** プロパティが [mobileAppCategory](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_apps_mobileappcategory) エンティティに追加されました。|
+|変更|ベータ版|
+  **brandingOptions**、**defaultLocale**、**displayName**、**fromEmailAddress**、**lastModifiedDateTime**、**localizedNotificationMessages** の各プロパティが [notificationMessageTemplate](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_notification_notificationmessagetemplate) エンティティに追加されました。|
+|変更|ベータ版|
+  **appsAllowTrustedAppsSideloading**、**appsBlockWindowsStoreOriginatedApps**、**developerUnlockSetting**、**edgeBlockAccessToAboutFlags**、**edgeBlockDeveloperTools**、**edgeBlockExtensions**、**edgeBlockInPrivateBrowsing**、**edgeFirstRunUrl**、**edgeHomepageUrls**、**gameDvrBlocked**、**settingsBlockAddProvisioningPackage**、**settingsBlockChangeLanguage**、**settingsBlockChangePowerSleep**、**settingsBlockChangeRegion**、**settingsBlockChangeSystemTime**、**settingsBlockEditDeviceName**、**settingsBlockRemoveProvisioningPackage**、**sharedUserAppDataAllowed**、**smartScreenBlockPromptOverride**、**smartScreenBlockPromptOverrideForFiles**、**storageRestrictAppDataToSystemVolume**、**storageRestrictAppInstallToSystemVolume**、**webRtcBlockLocalhostIpAddress**、**windowsStoreBlockAutoUpdate**、**windowsStoreEnablePrivateStoreOnly** の各プロパティが、[windows10GeneralConfiguration](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_deviceconfig_windows10generalconfiguration) エンティティに追加されました。|
+
+## <a name="december-2016"></a>2016 年 12 月
+
+### <a name="delta-query"></a>デルタ クエリ
+
+|**変更の種類**|**バージョン**|**説明**|
+|:-------------|:-----------|:--------------|
+|追加|ベータ版|
+  [デルタ クエリ](https://developer.microsoft.com/en-us/graph/docs/concepts/delta_query_overview)を実行するため、以下のエンティティに新しいデルタ関数が追加されました。<br/>contact<br/>contactFolder<br/>event<br/>group<br/>mailFolder<br/>message<br/>user<br/>例については、以下をご覧ください。<br/>
+  [グループへの増分の変更を取得する (プレビュー)](https://developer.microsoft.com/en-us/graph/docs/concepts/delta_query_groups)<br/>
+  [フォルダー内のメッセージへの増分の変更を取得する (プレビュー)](https://developer.microsoft.com/en-us/graph/docs/concepts/delta_query_message)<br/>
+  [ユーザーへの増分の変更を取得する (プレビュー)](https://developer.microsoft.com/en-us/graph/docs/concepts/delta_query_users)|
+
+### <a name="excel-apis"></a>Excel API
+
+|**変更の種類**|**バージョン**|**説明**|
+|:-------------|:-----------|:--------------|
+|追加|v1.0|workbookPivotTable リソース、pivotTables の refresh および refreshAll アクション、workbookRangeView リソース、フィルターされた範囲に対して実行して workbookRangeView をユーザーに返す visibleView アクション、visibleView からの行コレクションと範囲リソースの取得、範囲リソースからの columnsAfter、columnsBefore、resizedRange、rowsAbove、rowsBelow 関数、および新しいテーブル プロパティが追加されました。|
+
+### <a name="intune-apis"></a>Intune API
+
+|**変更の種類**|**バージョン**|**説明**|
+|:-------------|:-----------|:--------------|
+|追加|ベータ版|Microsoft Intune に、リソースとメソッド API が追加されました。これには、Azure ポータルでの Intune のパブリック プレビューをサポートする多数のリソースとメソッドのセットが含まれます。Intune サービスの詳細については、[Intune のドキュメント](https://go.microsoft.com/fwlink/?linkid=836405) をご覧ください。Intune のリソースと API の詳細については、「[Microsoft Graph での Intune の使用](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_graph_overview)」をご覧ください。|
+
+## <a name="october-2016"></a>2016 年 10 月
+
+### <a name="authorization-provider"></a>認証プロバイダー
+
+|**変更の種類**|**バージョン**|**説明**|
+|:-------------|:-----------|:--------------|
+|追加|v1.0 およびベータ版|v2.0 認証エンドポイントでは、[ビジネス シナリオでのデーモン プロセスおよび長時間実行プロセス](https://azure.microsoft.com/en-us/documentation/articles/active-directory-v2-protocols-oauth-client-creds/)で使える client_credentials OAuth 許可がサポートされるようになりました。|
+|追加|v1.0 およびベータ版|v2.0 認証エンドポイントでは、[管理者の同意エンドポイント](https://azure.microsoft.com/en-us/documentation/articles/active-directory-v2-scopes/#admin-restricted-scopes)経由で、[管理者の同意を必要とするアクセス許可のスコープ](http://developer.microsoft.com/en-us/graph/docs/authorization/permission_scopes#permission-scope-details)がサポートされるようになりました。|
+|追加|v1.0 およびベータ版|v2.0 認証エンドポイントでは、[管理者の同意エンドポイント](https://azure.microsoft.com/en-us/documentation/articles/active-directory-v2-scopes/#admin-restricted-scopes)経由で、テナント内のすべてのユーザーに対する管理者の同意がサポートされるようになりました。|
+
+### <a name="invitation-apis"></a>招待 API
+
+|**変更の種類**|**バージョン**|**説明**|
+|:-------------|:-----------|:--------------|
+|追加|ベータ版|招待エンティティの型に、招待するユーザー (**ゲスト**または**メンバー**) の種類を定義する invitedUserType プロパティが追加されました。|
+|削除|ベータ版|2016 年 11 月 11 日付けで、招待のエンティティ型から invitedToGroups プロパティが削除されます。このため、この API を使用して、招待したユーザーをグループに追加することができなくなります。代わりに、[メンバー追加 API](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/group_post_members) を使ってユーザーをグループに追加することになります。|
+
+## <a name="september-2016"></a>2016 年 9 月
+
+### <a name="azure-ad-application-proxy"></a>Azure AD アプリケーション プロキシ
+
+|**変更の種類**|**バージョン**|**説明**|
+|:--------------|:-----------|:--------------|
+|追加|ベータ版|Azure AD アプリケーション プロキシ API が、Microsoft Graph ベータ エンドポイントで利用可能になりました。これらの API では、アクセスのための共通のコントロール プレーンとして Azure AD を使用し、企業ネットワーク外のユーザーにオンプレミス アプリケーションをセキュアに発行できます。発行された API を使用すると、アプリケーションの _connectors_、_connectorGroups_、_onPremisesPublishing_ の設定など、アプリケーション プロキシのさまざまな側面を取得、更新するアプリケーションを作成できます。|
+
+### <a name="drive"></a>ドライブ
+
+|**変更の種類**|**バージョン**|**説明**|
+|:--------------|:-----------|:--------------|
+|追加|ベータ版|shareId または共有 URL により共有されている driveItems にアクセスできる _shared_ コレクションが追加されました。|
+|追加|ベータ版|ドライブに _search_ 関数が追加され、ドライブのルート フォルダー内の項目だけを検索するよりも多くの項目を検索できるようになりました。|
+
+
+### <a name="driveitem"></a>DriveItem
+
+|**変更の種類**|**バージョン**|**説明**|
+|:--------------|:-----------|:--------------|
+|追加|ベータ版|_createUploadSession_ のサポートが追加され、OneDrive、OneDrive for Business、SharePoint のドキュメント ライブラリに 4 MB を超えるファイルをアップロードできるようになりました。|
+|追加|ベータ版|SharePoint に保存されている driveItems の従来の SharePoint API 識別子を返す、driveItem に _sharepointIds_ プロパティが追加されました。|
+|追加|ベータ版|_remoteItem_ に他のプロパティが追加されました。|
+|追加|ベータ版|OneDrive for Business のファイルに対して _quickXorHash_ 値が追加されました。|
+|追加|ベータ版|_createSharingLink_ にスコープが追加され、会社の共有可能なリンクまたは匿名の共有リンクが作成できるようになりました。|
+
+### <a name="extended-properties"></a>拡張プロパティ
+
+|**変更の種類**|**バージョン**|**説明**|
+|:--------------|:-----------|:--------------|
+|追加|v1.0|
+  [拡張プロパティ](http://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/extended-properties-overview)が、次のリソースでサポートされるようになりました: message, mailFolder, event, calendar, contact, contactFolder, group event, group calendar, group post。|
+
+### <a name="groups"></a>グループ
+
+パブリック プレビューの API により、動的グループ メンバーシップのサポートが追加されました。追加された内容の一部を、次の表に記載します。
+
+|**変更の種類**|**バージョン**|**説明**|
+|:--------------|:-----------|:--------------|
+|追加|ベータ版|グループが動的グループの場合に、このグループのメンバーシップを制御する規則を含む、**membershipRule** プロパティが追加されました。|
+|追加|ベータ版|このグループに対する動的メンバーシップの処理が実行中または一時停止中であるかどうかを制御するための **membershipRuleProcessingState** プロパティが追加されました。|
+|追加|ベータ版|**"DynamicMembership"** を含むように **groupTypes** プロパティを設定して、このグループの動的グループ機能を強化できます。|
+|追加|ベータ版|Office 365 グループの優先言語を示すための **preferredLanguage** プロパティが追加されました。|
+|追加|ベータ版|Office 365 グループの色のテーマを指定するための **theme** プロパティが追加されました。|
+
+### <a name="hybrid-deployment-support"></a>ハイブリッド展開のサポート
+
+|**変更の種類**|**バージョン**|**説明**|
+|:--------------|:-----------|:--------------|
+|追加|v1.0|アプリで v1.0 Outlook メール、カレンダー、連絡先の API を使用して、Exchange 2016 累積的な更新プログラム 3 (CU3) を使用したハイブリッド展開のオンプレミスのメールボックスにアクセスできます。REST API サポートの詳細については、特定の[ハイブリッド展開](https://developer.microsoft.com/en-us/graph/docs/overview/hybrid_rest_support)をご覧ください。**注:**v1.0 のこれらの API セットを使用している場合、特定のハイブリッド展開の要件を満たすオンプレミスのメールボックスで機能する、運用アプリを含むアプリを検出できるようになりました。この機能はプレビューでのみ使用できます。|
+
+### <a name="identityriskevents"></a>IdentityRiskEvents
+
+|**変更の種類**|**バージョン**|**説明**|
+|:--------------|:-----------|:--------------|
+|変更|ベータ版|2 つの場所のプロパティの型が identityRiskEvents エンドポイントの新しい複合型で置き換えられるスキーマ変更の一環として、次のプロパティが identityRiskEvents エンドポイントで変更/追加されました。</br>**location** は Edm.String から ComplexType signInLocation に変更されました。<br/>**previousLocation** は Edm.String から ComplexType signInLocation に変更されました。<br/>**signInLocation** は、city、state、countryOrRegion、geoCoordinates プロパティを含む新しい ComplexType です。<br/>**geoCoordinates** は latitude と longitude プロパティを含む新しい ComplexType です。|
+
+### <a name="invitation-manager"></a>招待マネージャー
+
+|**変更の種類**|**バージョン**|**説明**|
+|:--------------|:-----------|:--------------|
+|追加|ベータ版|招待マネージャー API が、Microsoft Graph ベータ エンドポイントで利用可能になりました。招待マネージャー API を使用して、組織に外部ユーザーを追加するための招待状を作成します。招待の一環として、招待されたユーザーを Office 365 グループに追加することも選択できます。詳細については、[招待マネージャー](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/invitation)をご覧ください。|
+
+### <a name="onedrive"></a>OneDrive
+
+|**変更の種類**|**バージョン**|**説明**|
+|:--------------|:-----------|:--------------|
+|追加|v1.0|**driveItem** の **CreateUploadSession** メソッドが追加され、サイズの大きなファイルの再開可能なアップロードができるようになります。|
+|追加|v1.0|SharePoint から項目の SharePoint ID を追跡する複数のプロパティ (**sharepointIds**) と、ルート フォルダーを識別する 1 つのプロパティ (**root**) が追加されました。|
+|追加|v1.0|**Shares** ルート コレクションが追加されました。shareIds または共有リンクとともに使用して、OneDrive と SharePoint の共有項目にアクセスできます。新しい型 sharedDriveItem を返します。|
+|追加|v1.0|driveItem の **Invite** メソッドが追加されました。項目へのアクセス許可を追加できます。 |
+|追加|v1.0|ドライブの **Search** メソッドが追加されました。ドライブ内の項目と共有された項目を対象とした検索が可能です。 |
+|追加|v1.0|ファイル複合型の **processingMetadata** プロパティ、ハッシュ複合型の quickXorHash プロパティが追加されました。 |
+|追加|v1.0|ハッシュ複合型の **quickXorHash** プロパティが追加されました。 |
+
+### <a name="outlook-calendar"></a>Outlook カレンダー
+
+|**変更の種類**|**バージョン**|**説明**|
+|:--------------|:-----------|:--------------|
+|追加|v1.0|
+  **onlineMeetingUrl** プロパティが、[event](http://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/event) リソースに追加されました。|
+|追加|ベータ版|event リソースに [forward](http://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/event_forward) アクションが追加されました。|
+|追加|ベータ版|カレンダーの共有をサポートする次のプロパティが、[calendar](http://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/calendar) リソースに追加されました: **canEdit**、**canShare**、**canViewPrivateItems**、**isShared**、**isShareWithMe**、**owner**。|
+
+### <a name="outlook-mail"></a>Outlook メール
+
+|**変更の種類**|**バージョン**|**説明**|
+|:--------------|:-----------|:--------------|
+|追加|v1.0|
+  [mailboxSettings](http://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/mailboxsettings) 複合型が追加されました。これには **automaticRepliesSetting**、**timeZone**、**language** プロパティが含まれています。|
+|追加|v1.0|
+  **mailboxSettings** プロパティが [user](http://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/user) リソースに追加されました。|
+|追加|ベータ版|メッセージに含まれる[参照投稿](http://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/mention)の 1 つ以上のインスタンスを作成、一覧表示、取得、削除する機能のサポートが追加されました。参照投稿は、他のユーザーの注意を引きつけるためのメッセージ内のコールアウトをサポートしています。|
+|追加|ベータ版|
+  [getMailTips](http://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/user_getmailtips) アクションのサポートが追加され、特定の受信者のすべてのメール ヒントを取得できるようになりました。次のリソースが追加されました: automaticRepliesMailTips、mailTips、mailTipsError。|
+
+### <a name="query-parameters"></a>クエリ パラメーター
+
+|**変更の種類**|**バージョン**|**説明**|
+|:--------------|:-----------|:--------------|
+|変更|ベータ版|2016 年 9 月 26 日現在、$ プレフィックスなしのクエリ パラメーターがサポートされています。クエリ パラメーターの $ プレフィックスは、省略可能です。詳細については、ブログ投稿「[Microsoft Graph における $ プレフィックスのないクエリ パラメーターのサポート](http://dev.office.com/queryparametersinMicrosoftGraph)」をご覧ください。|
+
+### <a name="sharepoint"></a>SharePoint
+
+|**変更の種類**|**バージョン**|**説明**|
+|:--------------|:-----------|:--------------|
+|追加|ベータ版|SharePoint サイトへのアクセスと、[ID ごとの一覧表示](http://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/list_get) または [パス/URL](http://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/baseitem_getbyurl) ごとの一覧表示が可能になりました。|
+|追加|ベータ版|
+  [listItem のインスタンスを一覧表示、作成、取得、削除](http://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/listitem)できるようになりました。|
+
+### <a name="users"></a>ユーザー
+
+|**変更の種類**|**バージョン**|**説明**|
+|:--------------|:-----------|:--------------|
+|追加|ベータ版|更新トークンまたはセッション トークンの有効期間の開始時期を示す、読み取り専用の **refreshTokensValidFromDateTime** プロパティが追加されました。この日時より前に発行されたすべてのトークンは無効になります。また、これらのトークンを使用しようとすると、ユーザーは新たにサインインを強制されます。|
+|追加|ベータ版|Outlook のグローバル アドレス一覧にこのユーザーを含める必要があるかどうかを制御するための **showInAddressList** プロパティが追加されました。|
+|追加|ベータ版|**invalidateAllRefreshTokens** サービス アクションが追加されました。これを使って **refreshTokensValidFromDateTime** ユーザー プロパティを現在の日時にリセットすることで、アプリケーションに発行されたすべての更新トークンとセッション トークンが無効になります。|
+
+
+### <a name="webhooks"></a>Webhooks
+
+|**変更の種類**|**バージョン**|**説明**|
+|:--------------|:-----------|:--------------|
+|追加|ベータ版|購読可能なリソースとしてドライブのルート項目が Webhooks に追加されました。|
+
+## <a name="august-2016"></a>2016 年 8 月
+
+### <a name="contacts"></a>連絡先
+
+|**変更の種類**|**バージョン**|**説明**|
+|:--------------|:-----------|:--------------|
+|追加|ベータ版|いくつかのプロパティが削除され、対応するコレクションが連絡先エンドポイントに追加されたスキーマ変更の一環として、次のプロパティが連絡先エンドポイントに追加されました。_Websites Collection(ComplexType:Website)_、_Phones Collection (ComplexType:Phone)_、_PostalAddress Collection(ComplexType:PhysicalAddress)_。詳細については、ブログ投稿「[連絡先および People API で今後予定されている変更](https://blogs.msdn.microsoft.com/exchangedev/2016/06/09/upcoming-changes-to-contacts-and-people-apis/)」をご覧ください。|
+|削除|ベータ版|いくつかのプロパティが削除され、対応するコレクションが連絡先エンドポイントに追加されたスキーマ変更の一環として、次のプロパティが連絡先エンドポイントから削除されました。_BusinessHomePage_、_HomePhones_、_MobilePhone1_、_BusinessPhones_、_HomeAddress_、_BusinessAddress_、_OtherAddress_。詳細については、ブログ投稿「[連絡先および People API で今後予定されている変更](https://blogs.msdn.microsoft.com/exchangedev/2016/06/09/upcoming-changes-to-contacts-and-people-apis/)」をご覧ください。|
+
+### <a name="excel-apis"></a>Excel API
+
+|**変更の種類**|**バージョン**|**説明**|
+|:--------------|:-----------|:--------------|
+|追加|v1.0|Microsoft Graph の Excel REST API は一般公開されています。Office 365 の Excel ブックとの充実した高度な統合を構築できるようになりました。詳細については、ブログ投稿「[Microsoft Graph の新しい Excel REST API を使ってアプリをパワーアップする](http://dev.office.com/blogs/power-your-apps-with-the-new-excel-rest-api)」をご覧ください。|
+
+### <a name="people"></a>複数のユーザー
+
+|**変更の種類**|**バージョン**|**説明**|
+|:--------------|:-----------|:--------------|
+|変更|ベータ版|_WebSite_ プロパティの名前が _Websites_ に変更されました。詳細については、「[連絡先および People API で今後予定されている変更](https://blogs.msdn.microsoft.com/exchangedev/2016/06/09/upcoming-changes-to-contacts-and-people-apis/)」をご覧ください。|
+
+### <a name="privileged-identity-management"></a>Privileged Identity Management
+
+|**変更の種類**|**バージョン**|**説明**|
+|:--------------|:-----------|:--------------|
+|追加|ベータ版|Privileged Identity Management (PIM) REST API が Microsoft Graph ベータ エンドポイントで利用可能になりました。[Privileged Identity Management](https://azure.microsoft.com/en-us/documentation/articles/active-directory-privileged-identity-management-configure/) では、グローバル管理者、課金管理者など、Azure AD の組織内でのロールのジャスト イン タイム アクティベーションが提供されます。発行された API を使用すると、特権ロールの割り当てを取得、更新して、ユーザーをロールにアクティブ化するアプリケーションを作成できます。詳細については、「[Microsoft Graph:ベータ版で利用可能な Azure AD Privileged Identity Management Preview API](http://dev.office.com/blogs/microsoft-graph-azure-ad-privileged-identity-management-apis-beta)」と「[Azure AD Privileged Identity Management](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/privilegedidentitymanagement_root)」を参照してください。|
+
+## <a name="july-2016"></a>2016 年 7 月
+
+### <a name="administrative-units"></a>管理単位
+
+|**変更の種類**|**バージョン**|**説明**|
+|:--------------|:-----------|:--------------|
+|追加|ベータ版|新しい管理単位のプレビュー API が導入されました。管理単位を使用すると、組織は Azure Active Directory を分割して、サブ部門に管理職務を委任できます。サブ部門は、地域、部署、コスト センターなどを表すことができます。これを Microsoft Graph API から管理できるようになりました。|
+
+## <a name="june-2016"></a>2016 年 6 月
+
+### <a name="identityriskevents"></a>IdentityRiskEvents
+
+|**変更の種類**|**バージョン**|**説明**|
+|:--------------|:-----------|:--------------|
+|追加|ベータ版|新しい IdentityRiskEvents プレビュー API が導入されました。この API は、Azure Active Directory Identity Protection と連携して動作します。この API を使うと、Identity Protection によって生成されたリスク イベントに対してクエリを実行できます。詳細については、ブログ投稿「[Microsoft Graph の新しいプレビュー API の紹介:IdentityRiskEvents](http://dev.office.com/blogs/identityriskevents-api-preview)」をご覧ください。
+
+### <a name="subscriptions"></a>サブスクリプション
+
+|**変更の種類**|**バージョン**|**説明**|
+|:--------------|:-----------|:--------------|
+|追加|ベータ版|_メール_と_連絡先_のサブスクリプションに対して、アプリ専用スコープがサポートされるようになりました。|
+
+## <a name="may-2016"></a>2016 年 5 月
+
+### <a name="calendar"></a>カレンダー
+
+|**変更の種類**|**バージョン**|**説明**|
+|:--------------|:-----------|:--------------|
+|重大な変更|ベータ版|findMeetingTimes API に対する変更です。詳細については、ブログ投稿「[Microsoft Graph findMeetingTimes API の更新](http://dev.office.com/microsoft-graph-findmeetingtimes-api-update)」をご覧ください。この変更は、2016 年 5 月 19 日に有効になりました。
+
+### <a name="contact"></a>連絡先
+
+|**変更の種類**|**バージョン**|**説明**|
+|:--------------|:-----------|:--------------|
+|追加|v1.0|_extensions_ が追加されました。これは OData v4 のオープン型 openTypeExtension をサポートする抽象型です。|
+
+### <a name="directory"></a>ディレクトリ
+
+|**変更の種類**|**バージョン**|**説明**|
+|:--------------|:-----------|:--------------|
+|重大な変更|ベータ版|_settingTemplateId_ は _templateId_ に名前が変更されます。この変更は、2016 年 5 月 19 日に有効になります。|
+
+### <a name="event"></a>イベント
+
+|**変更の種類**|**バージョン**|**説明**|
+|:--------------|:-----------|:--------------|
+|追加|v1.0|_extensions_ が追加されました。これは OData v4 のオープン型 openTypeExtension をサポートする抽象型です。|
+
+### <a name="eventmessages"></a>EventMessages
+
+|**変更の種類**|**バージョン**|**説明**|
+|:--------------|:-----------|:--------------|
+|追加|v1.0|_inferenceClassification_ と _extensions_ が _eventMessages_ に追加されました。|
+|追加|ベータ版|_responseRequested_ が _eventMessageRequest_ に追加されました。|
+
+### <a name="messages"></a>メッセージ
+
+|**変更の種類**|**バージョン**|**説明**|
+|:--------------|:-----------|:--------------|
+|追加|v1.0|_inferenceClassification_ と _extensions_ が _messages_ に追加されました。|
+|追加|ベータ版|_wellknownname_ が _contactFolder_ に追加されました。|_findMeetingTimes_ API に対する変更です。詳細については、ブログ投稿「[Microsoft Graph findMeetingTimes API の更新](http://dev.office.com/microsoft-graph-findmeetingtimes-api-update)」をご覧ください。この変更は、2016 年 5 月 19 日に有効になります。|
+
+### <a name="post"></a>投稿
+
+|**変更の種類**|**バージョン**|**説明**|
+|:--------------|:-----------|:--------------|
+|追加|v1.0|_extensions_ が追加されました。これは OData v4 のオープン型 openTypeExtension をサポートする抽象型です。|
+
+### <a name="user"></a>ユーザー
+
+|**変更の種類**|**バージョン**|**説明**|
+|:--------------|:-----------|:--------------|
+|追加|v1.0|_inferenceClassification_ リソースの種類が追加されました。|
+|追加|ベータ版|_timeZone_ が _mailboxsettings_ に追加されました。|
+|追加|ベータ版|API _findMeetingTimes_ が _user_ に追加されました。|
+
+## <a name="april-2016"></a>2016 年 4 月
+
+### <a name="general"></a>全般
+
+|**変更の種類**|**バージョン**|**説明**|
+|:--------------|:-----------|:--------------|
+|追加|v1.0 およびベータ版|_Accept-Encoding:gzip_ の使用のサポートが追加されました。|
+|追加|v1.0|拡張パスのキャスト セグメントのサポートが追加されました。例: 'https://graph.microsoft.com/v1.0/me/messages?$expand=microsoft.graph.eventMessage/event'。|
+|追加|ベータ版|構造プロパティに対する PATCH 要求のサポートが追加されました。例:'PATCH /me/mailboxSettings'。|
+|追加|ベータ版|たとえば、ユーザーがメールボックスのライセンスを持っていない場合、またはテナントに Exchange Online のサブスクリプションがない場合など、Outlook が要求を処理できないときに、Azure Active Directory が /beta/users/id/photo 要求のフォールバックとして使用されるようになりました。注: このフォールバックは GET と PATCH の両方に使用できます。|
+|追加|ベータ版|拡張パスのキャスト セグメントのサポートが追加されました。例: 'https://graph.microsoft.com/v1.0/me/messages?$expand=microsoft.graph.eventMessage/event'。|
+
+### <a name="onedrive"></a>OneDrive
+
+|**変更の種類**|**バージョン**|**説明**|
+|:--------------|:-----------|:--------------|
+|修正|v1.0|500 エラーと「拡張プロパティの型がサポートされていません」というエラーで OneDrive の createLink 要求が失敗する問題が修正されました。|
+
+## <a name="march-2016"></a>2016 年 3 月
+
+### <a name="calendar"></a>カレンダー
+
+|**変更の種類**|**バージョン**|**説明**|
+|:--------------|:-----------|:--------------|
+|追加|ベータ版|_singleValueExtendedProperties_ プロパティと _multiValueExtendedProperties_ プロパティが追加されました。|
+|追加|ベータ版|_suggestionHint_ プロパティが _meetingTimeCandidate_ に追加されました。|
+|追加|ベータ版|_locationUri_ プロパティが _location_ に追加されました。|
+|追加|ベータ版|_type_ と _postOfficeBox_ が _physicalAddress_ に追加されました。|
+|変更|ベータ版|_findMeetingTimes_ で新しいパラメーター _ReturnSuggestionHints_ を使用するようになりました。|
+|変更|ベータ版|_findMeetingTimes_ が _meetingTimeCandidate_ のコレクションを返すようになりました。|
+
+### <a name="drive"></a>ドライブ
+
+|**変更の種類**|**バージョン**|**説明**|
+|:--------------|:-----------|:--------------|
+|追加|v1.0 およびベータ版|サインインしたユーザーによって最近使用された項目のセットを一覧表示する _recent_ 関数が追加されました。この一覧には、ユーザーのドライブにある項目と、他のドライブとの間でアクセス可能な項目が含まれています。例: GET /me/drive/recent。|
+|追加|v1.0 およびベータ版|現在のユーザーと共有されている項目のセットを一覧表示する _sharedWithMe_ 関数が追加されました。例: GET /me/drive/sharedWithMe。|
+
+### <a name="driveitem"></a>DriveItem
+
+|**変更の種類**|**バージョン**|**説明**|
+|:--------------|:-----------|:--------------|
+|追加|v1.0 およびベータ版|別のドライブ内の項目へのリンクを提供する _remoteItem_ 型が追加されました。|
+|追加|v1.0 およびベータ版|このアクセス許可に関連付けられた共有の招待に関する詳細情報を提供する _sharingInvitation_ 型が追加されました。|
+|追加|v1.0 およびベータ版|ドライブ内の項目に対する変更を追跡する _delta_ 関数が追加されました。例: GET /me/drive/items/{item-id}/delta|
+|追加|v1.0 およびベータ版|新しい親の下に、または新しい名前を指定して、_driveItem_ (すべての子を含む) のコピーを作成する _copy_ が追加されました。例: POST /me/drive/items/{item-id}/copy。|
+|追加|v1.0 およびベータ版|_conflictBehavior_ インスタンス属性が _driveItem_ に適用されるようになりました。|
+|追加|ベータ版|既存の項目に共有の招待を送信する _invite_ 関数が追加されました。共有の招待では、一意の共有リンクが作成され、共有リンクを記載した電子メールが招待状の受信者に送信されます。例: POST /drive/items/{item-id}/invite。
+
+### <a name="event"></a>イベント
+
+|**変更の種類**|**バージョン**|**説明**|
+|:--------------|:-----------|:--------------|
+|追加|ベータ版|新しいプロパティ _onlineMeetingUrl_ と、新しいメソッド _cancel_ が追加されました。|
+
+### <a name="event-messages"></a>イベント メッセージ
+
+|**変更の種類**|**バージョン**|**説明**|
+|:--------------|:-----------|:--------------|
+|追加|ベータ版|_startDateTime_、_endDateTime_、_location_、_type_、_recurrence_、_isOutOfDate_、_conversationIndex_、_unsubscribe_、_unsubscribeData_、_unsubscribeEnabled_、_flag_ プロパティが、_eventmessage_ オブジェクトに追加されました。|
+|追加|ベータ版|_singleValueExtendedProperties_ プロパティと _multiValueExtendedProperties_ プロパティが追加されました。|
+|追加|ベータ版|新しいメソッド _unsubscribe_ が追加されました。|
+
+### <a name="excel"></a>Excel
+
+|**変更の種類**|**バージョン**|**説明**|
+|:--------------|:-----------|:--------------|
+|追加|ベータ版|現在、Excel ブックのデータの読み取りと変更が可能な新しい Excel REST API を追加しているところです。データへのインサイトを提供することで、ユーザーが Excel ブックに保存されているコンテンツから価値を取得できるスマート アプリを構築できるようになりました。Excel の分析機能の活用、表とグラフの作成、および視覚に訴えるグラフ イメージの抽出などを、アプリ内からすべて実行できます。詳細については、「[Microsoft Graph での Excel の操作](http://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/excel)」をご覧ください。|
+
+### <a name="general"></a>全般
+
+|**変更の種類**|**バージョン**|**説明**|
+|:--------------|:-----------|:--------------|
+|追加|v1.0 およびベータ版|テナント エイリアスと拒否された JWT (AAD) トークンを解決するときのエラー メッセージを改善しました。|
+|追加|v1.0 およびベータ版|空のベアラー トークンで要求を受信した場合に、承認サービス エンドポイントの場所が _www-authenticate_ ヘッダー内に返されるようになりました。|
+|追加|v1.0 およびベータ版|エンティティの ID プロパティでのフィルター機能が修正されました。例:GET https://graph.microsoft.com/v1.0/users?$filter=id+eq+'x'<br/>以前は、サービスのアクションと関数に対する POST 要求で、アクション名または関数名に microsoft.graph のプレフィックスを付ける必要がありました。例:POST https://graph.microsoft.com/v1.0/me/Microsoft.Graph.getMemberGroups。<br/>プレフィックスは不要になりました (ただし、引き続き指定できます)。そのため、次のような指定でも機能するようになりました。POST https://graph.microsoft.com/v1.0/me/getMemberGroups。|
+|変更|ベータ版|サブスクリプションのプロパティ名がクリーンアップされました。|
+|追加|ベータ版|エンティティとその関連機能の既定の動作を (_directorySettingTemplates_ 経由で) 検出し、(テンプレートから _setting_ を作成することにより) 上書きする機能が追加されました。最初に提供されたこの唯一のテンプレートは、Office グループ上での動作を制御するためのものです。|
+
+### <a name="mail-folder"></a>メール フォルダー
+
+|**変更の種類**|**バージョン**|**説明**|
+|:--------------|:-----------|:--------------|
+|追加|ベータ版|_wellKnownName_ プロパティと _userConfigurations_ プロパティが追加されました。|
+|追加|ベータ版|_singleValueExtendedProperties_ プロパティと _multiValueExtendedProperties_ プロパティが追加されました|
+
+### <a name="messages"></a>メッセージ
+
+|**変更の種類**|**バージョン**|**説明**|
+|:--------------|:-----------|:--------------|
+|追加|v1.0|_mobilePhone_ プロパティが追加されました。|
+|追加|v1.0 およびベータ版|_internetMessageId_ プロパティが追加されました。メッセージ ID は、[RFC2822](http://www.ietf.org/rfc/rfc2822.txt) によって指定された形式です。|
+|変更|ベータ版|_mobilePhone1_ プロパティは _mobilePhone_ に名前が変更されました。|
+|変更|ベータ版|_createReply_ と _createReplyAll_ は、新しいパラメーター _Message_ および _comment_ を使用します。|
+|変更|ベータ版|_createForward_ は、新しいパラメーター _Message_、_ToRecipients_、_comment_ を使用します。|
+|変更|ベータ版|_reply_、_replyAll_、_forward_ は、新しいパラメーター _Message_ を使用します。|
+
+### <a name="permission"></a>アクセス許可
+
+|**変更の種類**|**バージョン**|**説明**|
+|:--------------|:-----------|:--------------|
+|追加|v1.0 およびベータ版|このアクセス許可に関連付けられた共有の招待の詳細情報を提供する _sharingInvitation_ プロパティが追加されました。|
+
+### <a name="person"></a>人物
+
+|**変更の種類**|**バージョン**|**説明**|
+|:--------------|:-----------|:--------------|
+|追加|ベータ版|新しいプロパティ _birthday_、_personNotes_、_isFavorite_、_phones_、_permission_、_postalAddresses_、_websites_、_yomiCompany_、_department_、_profession_、_mailboxType_、_personType_ が追加されました。|
+|追加|ベータ版|新しい列挙型 _physicalAddressType_、_webSite_、_phone_、_webSiteType_ が追加されました。|
+
+### <a name="reference-attachment"></a>参照添付ファイル
+
+|**変更の種類**|**バージョン**|**説明**|
+|:--------------|:-----------|:--------------|
+|追加|ベータ版|新しいプロパティ _sourceUrl_、_providerType_、_thumbnailUrl_、_previewUrl_、_permission_、_isFolder_ が追加されました。|
+|追加|ベータ版|_singleValueExtendedProperties_ プロパティと _multiValueExtendedProperties_ プロパティが追加されました。|
+|追加|ベータ版|新しい列挙型 _referenceAttachmentProvider_ と _referenceAttachmentPermission_ が追加されました。|
+
+### <a name="subscriptions"></a>サブスクリプション
+
+|**変更の種類**|**エンドポイント**|**説明**|
+|:--------------|:-----------|:--------------|
+|追加|v1.0|Webhooks が、_/Subscriptions_ リソースから V1.0 エンドポイントで一般公開されるようになりました。Outlook と Office 365 のグループ会話からデータに関する通知を受信するためのサブスクリプションを作成、読み取り、更新、削除します。|
+
+### <a name="user"></a>ユーザー
+
+|**変更の種類**|**バージョン**|**説明**|
+|:--------------|:-----------|:--------------|
+|追加|ベータ版|_mailboxSettings_ プロパティおよび対応する型が追加されました。|
+
+## <a name="february-2016"></a>2016 年 2 月
+
+### <a name="driveitem"></a>DriveItem
+
+|**変更の種類**|**バージョン**|**説明**|
+|:--------------|:-----------|:--------------|
+|追加|v1.0 およびベータ版|Microsoft アカウントに対する driveItem の新しい _remoteItem_ プロパティ。|
+
+### <a name="general"></a>全般
+
+|**変更の種類**|**バージョン**|**説明**|
+|:--------------|:-----------|:--------------|
+|変更|v1.0 およびベータ版|-_/me/drive_ が、Microsoft アカウントおよび職場と学校のアカウントの両方で機能するようになりました。|
+|変更|v1.0 およびベータ版|OneDrive ストレージがオンデマンドでプロビジョニングされたアカウントの Drive 要求は、動作の信頼性がより高くなり、テナントの既定の SharePoint サイトで非標準の名前が使用されるような、より多くのシナリオで動作します。|
+|削除|ベータ版|1.0 スキーマにより厳密に一致するように、実装されていないさまざまな型がベータ スキーマから削除されました。|
+
+### <a name="subscriptions"></a>サブスクリプション
+
+|**変更の種類**|**バージョン**|**説明**|
+|:--------------|:-----------|:--------------|
+|追加|ベータ版|サブスクリプション作成時の notificationUrl 検証。詳細については、「[Microsoft Graph の WebHooks の更新 - 2016 年 1 月](http://dev.office.com/blogs/Microsoft-Graph-WebHooks-Update-January-2016)」をご覧ください。|
+|追加|ベータ版|サブスクリプション エンティティを削除できるようになりました。DELETE https://graph.microsoft.com/beta/subscriptions/|
+
+### <a name="users"></a>ユーザー
+
+|**変更の種類**|**バージョン**|**説明**|
+|:--------------|:-----------|:--------------|
+|変更|v1.0 およびベータ版|Microsoft アカウントに対して _displayName_ が返されるようになりました。|
+
+## <a name="january-2016"></a>2016 年 1 月
+
+### <a name="contacts"></a>連絡先
+
+|**変更の種類**|**バージョン**|**説明**|
+|:--------------|:-----------|:--------------|
+|追加|v1.0|mobilePhone プロパティが個人用連絡先エンティティ セットに追加されました。|
+
+### <a name="directoryobjects"></a>directoryObjects
+
+|**変更の種類**|**バージョン**|**説明**|
+|:--------------|:-----------|:--------------|
+|修正|v1.0 およびベータ版|directoryObjects にバインドされている呼び出しアクションが修正されました。このアクションは次のエラーで失敗していました。操作からの戻り値の型は、指定したエンティティ セットで使用できません。これは、次のアクションに適用されます: _microsoft.graph.checkMemberObjects_、_microsoft.graph.getMemberObjects_、_microsoft.graph.checkMemberGroups_、_microsoft.graph.assignLicense_、_microsoft.graph.changePassword_。|
+
+## <a name="december-2015"></a>2015 年 12 月
+
+### <a name="contacts"></a>連絡先
+
+|**変更の種類**|**バージョン**|**説明**|
+|:--------------|:-----------|:--------------|
+|追加|ベータ版|mobilePhone プロパティが個人用連絡先エンティティ セットに追加されました。|
+
+### <a name="general"></a>全般
+
+|**変更の種類**|**バージョン**|**説明**|
+|:--------------|:-----------|:--------------|
+|修正|v1.0 およびベータ版|同じプロパティを複数回指定した $filter 式を使用する要求が修正されました。この要求は次の 500 エラーで失敗していました。同じキーを持つ項目が既に追加されています。|
+|修正|v1.0 およびベータ版|アクション パラメーターの名前と値で大文字と小文字が区別されない問題を修正しました。|
+|修正|v1.0 およびベータ版|一部の埋め込み複合プロパティに null 値を含むペイロードの要求処理を修正しました。この要求は null 参照の例外で失敗していました。|
+|追加|v1.0 およびベータ版|複合型プロパティの並べ替えとフィルター処理のサポートが追加されました。|
+|追加|v1.0 およびベータ版|401 応答の www-authenticate ヘッダーに authorization_uri プロパティが追加されました。この URI は、トークンの取得フローを開始するために使用できます。|
+|追加|v1.0 およびベータ版|ユーザーとグループ全体でエラー メッセージが改善されました。|
+
+### <a name="groups"></a>グループ
+
+|**変更の種類**|**バージョン**|**説明**|
+|:--------------|:-----------|:--------------|
+|修正|v1.0 およびベータ版|次のグループ アクションの呼び出しを修正しました: _microsoft.graph.addFavorite_、_microsoft.graph.removeFavorite_、_microsoft.graph.resetUnseenCount_。|
+
+### <a name="messages"></a>メッセージ
+
+|**変更の種類**|**バージョン**|**説明**|
+|:--------------|:-----------|:--------------|
+|追加|ベータ版|eventMessage の eventMessageRequest サブタイプと、startDateTime、endDateTime、location、type、recurrence、isOutOfDate プロパティが、eventMessage 型に追加されました。|
+
+### <a name="users"></a>ユーザー
+
+|**変更の種類**|**バージョン**|**説明**|
+|:--------------|:-----------|:--------------|
+|修正|v1.0 およびベータ版|ユーザー プリンシパル名 (UPN) でユーザーを参照する場合に、他のユーザーで特定のユーザー プロパティを選択できてしまう問題を修正しました。例: https://graph.microsoft.com/v1.0/users/anotherUser@contoso.com?$select=aboutMe|
+|修正プログラム|v1.0 およびベータ版|ユーザーにバインドされた _microsoft.graph.reminderView_ 関数の呼び出しを修正しました。この呼び出しは次のエラーで失敗していました。Microsoft.OutlookServices.Reminder 型で businessPhones という名前のプロパティは見つかりませんでした。|
+|修正|v1.0 およびベータ版|400 エラーで失敗していた、ユーザーの作成と更新 (POST/PATCH /v1.0/users) を修正しました。|

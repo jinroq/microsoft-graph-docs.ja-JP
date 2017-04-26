@@ -35,7 +35,7 @@ Microsoft Graph は 2 種類の認証プロバイダーをサポートします�
    </tr>
   <tr>
     <td>サポートされるアプリの種類</td>
-    <td style="vertical-align: text-top;"><p>Web アプリ</p><p>Web API</p><p>モバイル アプリとネイティブ アプリ</p><p>シングル ページ アプリ (SPA)</p><p>スタンドアロン Web API</p><p>デーモン/サーバー側のアプリ</p><p><a href="https://azure.microsoft.com/en-us/documentation/articles/active-directory-authentication-scenarios/" target="_newtab">詳細情報</a></p></td> 
+    <td style="vertical-align: text-top;"><p>Web アプリ</p><p>Web API</p><p>モバイル アプリとネイティブ アプリ</p><p>シングル ページ アプリ (SPA)</p><p>スタンドアロン Web API</p><p>デーモン/サーバー側のアプリ</p><p>クラウド ソリューション プロバイダー アプリ</p><p><a href="https://azure.microsoft.com/en-us/documentation/articles/active-directory-authentication-scenarios/" target="_newtab">詳細情報</a></p></td> 
     <td style="vertical-align: text-top;"><p>Web アプリ</p><p>Web API</p><p>モバイル アプリとネイティブ アプリ</p><p>シングル ページ アプリ (SPA)</p><p>デーモン/サーバー側のアプリ</p><p><a href="https://azure.microsoft.com/en-us/documentation/articles/active-directory-v2-flows/" target="_newtab">詳細情報</a></td>
    </tr>
   <tr>

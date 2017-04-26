@@ -1,7 +1,7 @@
 
 # <a name="microsoft-graph-app-authentication-using-azure-ad"></a>Azure AD による Microsoft Graph アプリの認証
 
-この記事では、Microsoft Graph アプリの認証と承認フローの例を詳しく説明します。この例では Azure Active Directory (Azure AD) および認証プロバイダーを使用し、承認フローとして<a href="https://msdn.microsoft.com/en-us/library/azure/dn645542.aspx" target="_newtab">認証コード付与フロー</a>を使用します。この例では Microsoft Graph アプリで Azure AD を使用してユーザーを認証する方法、アクセス トークンを取得する方法、更新トークンを使用してアクセス トークンを更新する方法について説明します。
+この記事では、Microsoft Graph アプリの認証と承認フローの例を詳しく説明します。この例では Azure Active Directory (Azure AD) を認証プロバイダーとして使用し、承認フローとして<a href="https://msdn.microsoft.com/en-us/library/azure/dn645542.aspx" target="_newtab">認証コード付与フロー</a>を使用します。この例では Microsoft Graph アプリで Azure AD を使用してユーザーを認証する方法、アクセス トークンを取得する方法、更新トークンを使用してアクセス トークンを更新する方法について説明します。
 
 コード付与フローについては、認証プロセスは 2 つの基本的な手順に分割できます。
 

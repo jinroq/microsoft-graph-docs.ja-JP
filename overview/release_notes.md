@@ -33,6 +33,9 @@ Internet Explorer および Microsoft Edge でのサインインが機能して�
 * [ユーザーの予定表の一覧表示](http://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/user_list_calendars)を行うと、ICS ベースの予定表を含む、ユーザーの既定の予定表のグループ、または指定した予定表のグループにある各[予定表](http://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/calendar)の**名前**、**色**、**ID** のプロパティを取得できます。予定表リソースの ICS URL を保存したり、アクセスしたりすることはできません。
 * また、ICS ベースの予定表の[イベントを一覧表示](http://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/calendar_list_events)することもできます。
 
+#### <a name="using-delta-query"></a>デルタ クエリの使用
+デルタ クエリの使用に関する既知の問題については、この記事の[「デルタ クエリ」セクション](#delta-query)を参照してください。
+
 ## <a name="groups"></a>グループ
 #### <a name="policy"></a>ポリシー
 Microsoft Graph を使用して Office 365 グループを作成および名前付けすると、Outlook Web App で構成されたすべての Office 365 のグループ ポリシーがバイパスされます。 
@@ -65,6 +68,8 @@ Microsoft Graph では、グループ API にアクセスするために 2 つ�
 #### <a name="setting-the-allowexternalsenders-property"></a>allowExternalSenders プロパティの設定
 現在、`/v1.0` と `/beta` の両方で、POST または PATCH 操作の際にグループの **allowExternalSenders** プロパティを設定できないという問題が発生しています。
 
+#### <a name="using-delta-query"></a>デルタ クエリの使用
+デルタ クエリの使用に関する既知の問題については、この記事の[「デルタ クエリ」セクション](#delta-query)を参照してください。
 
 ## <a name="contacts"></a>連絡先
 
@@ -161,4 +166,6 @@ Microsoft Graph をサポートするアプリケーションと委任された�
 
   >  お客様からのフィードバックを重視しています。[スタック オーバーフロー](http://stackoverflow.com/questions/tagged/office365)でご連絡いただけます。質問には {MicrosoftGraph} と {office365} でタグ付けしてください。
 
+## <a name="delta-query"></a>デルタ クエリ
 
+ユーザーとグループのリレーションシップへの変更の追跡は、変更が追跡されている特定のリソース クラス内でのみサポートされます。たとえば、クライアントが*グループ*の変更を追跡し、*メンバー*のリレーションシップを選択している場合、クライアントは、それらのメンバーが*グループ*でもある場合、デルタ クエリ応答でメンバーシップの更新のみを受信します。つまり、ユーザーのグループ メンバーシップの追跡はまだサポートされていません。Microsoft Graph チームは、これは優先度の高いシナリオであると理解しておりますので、近日中に更新プログラムの配信を予定しています。
