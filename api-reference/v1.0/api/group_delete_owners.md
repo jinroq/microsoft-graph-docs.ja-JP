@@ -13,7 +13,7 @@ DELETE /groups/{id}/owners/{id}/$ref
 ## <a name="request-headers"></a>要求ヘッダー
 | 名前       | 型 | 説明|
 |:---------------|:--------|:----------|
-| Authorization  | string  | Bearer <token>. Required. |
+| Authorization  | string  | Bearer &lt;token&gt;. Required. |
 
 ## <a name="request-body"></a>要求本文
 このメソッドには、要求本文を指定しません。
@@ -29,7 +29,7 @@ DELETE /groups/{id}/owners/{id}/$ref
   "name": "create_directoryobject_from_group"
 }-->
 ```http
-DELETE https://graph.microsoft.com/v1.0/groups/{id}/owners/$ref/{id}
+DELETE https://graph.microsoft.com/v1.0/groups/{id}/owners/{id}/$ref
 ```
 要求内で、$ref セグメント後に削除したいディレクトリ オブジェクトの `id` を指定します。
 
