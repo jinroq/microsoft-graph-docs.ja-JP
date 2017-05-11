@@ -1,12 +1,12 @@
 # <a name="known-issues-with-microsoft-graph"></a>Microsoft Graph に関する既知の問題
 
-この記事では、Microsoft Graph に関する既知の問題を説明します。最新の更新プログラムについては、「[Microsoft Graph の変更ログ](http://graph.microsoft.io/en-us/changelog)」を参照してください。
+この記事では、Microsoft Graph に関する既知の問題を説明します。最新の更新プログラムについては、「[Microsoft Graph 変更ログ](http://graph.microsoft.io/en-us/changelog)」を参照してください。
 
 ## <a name="graph-quick-start"></a>Graph のクイック スタート
-2017 年 4 月 30 日 - クイック スタート フローにバグがあり、リダイレクト URL が Asp.Net MVC、Node.js、Angular、PHP、Python、Ruby に対して適切に構成されていません。現在、運用環境への修正プログラムの展開に向けて作業が進められています。この問題を回避するには、「[入門のためのチュートリアル](https://developer.microsoft.com/en-us/graph/docs/get-started/get-started)」を参照してください。
+2017 年 4 月 30 日 - クイック スタート フローにバグがあり、リダイレクト URL が Asp.Net MVC、Node.js、Angular、PHP、Python、Ruby に対して適切に構成されていません。現在、運用環境への修正プログラムの展開に向けて作業が進められています。この問題を回避するには、[入門のためのチュートリアル](https://developer.microsoft.com/en-us/graph/docs/get-started/get-started)を参照してください。 これは、5 月 3 日に解決されました。
 
 ## <a name="graph-explorer"></a>Graph エクスプローラー
-サービスに関する問題が発生したため、Graph エクスプローラーへの Microsoft アカウント ログオンは無効になっています。問題の解決に取り組んでいます。準備が整い次第、このテキストは更新されます。  
+サービスに関する問題が発生したため、Graph エクスプローラーへの Microsoft アカウント ログオンは無効になっています。問題の解決に取り組んでいます。準備が整い次第、このテキストは更新されます。更新日 - 5 月 3 日- この問題は解決されています。
 
 Internet Explorer および Microsoft Edge でのサインインが機能していませんでした。この問題は 2017 年 2 月 2 日現在、解決されています。
 

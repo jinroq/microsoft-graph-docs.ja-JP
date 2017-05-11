@@ -16,7 +16,7 @@
 ### <a name="microsoft-graph-explorer"></a>Microsoft Graph エクスプローラー
 | Microsoft Graph エクスプローラー (中国) | Microsoft Graph エクスプローラー|
 |---------------------------|----------------|
-|https://graph.microsoft.io/zh-cn/graph-explorer| https://graph.microsoft.io/en-us/graph-explorer|
+|https://developer.microsoft.com/zh-cn/graph/graph-explorer-china| https://developer.microsoft.com/graph/graph-explorer|
 
 ### <a name="azure-openid-connect-and-oauth20"></a>Azure OpenID Connect と OAuth 2.0
 21Vianet によって運営されている Microsoft Graph へのサインインや呼び出しのためのトークンを取得するのに使用されるエンドポイントは、他の製品のエンドポイントとは異なります。 
