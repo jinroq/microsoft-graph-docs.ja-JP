@@ -1,15 +1,19 @@
 # <a name="list-available-drives"></a>利用可能なドライブの一覧表示
 
 ターゲットとなる[ユーザー](../resources/user.md)または[グループ](../resources/group.md)が利用可能な[ドライブ](../resources/drive.md) リソースの一覧を取得します。SharePoint のルートサイト上のドキュメント ライブラリのセットをアプリで要求することもできます。
+
 ## <a name="prerequisites"></a>前提条件
+
 この API を実行するには、以下のいずれかの**スコープ**が必要です。
 
-  * Files.Read
-  * Files.ReadWrite
-  * Sites.Read.All
+* Files.Read
+* Files.ReadWrite
+* Sites.Read.All
 
 ## <a name="http-request"></a>HTTP 要求
+
 <!-- { "blockType": "ignored" } -->
+
 ```http
 GET /drives
 GET /me/drives
@@ -20,29 +24,34 @@ GET /groups/{id}/drives
 このメソッドは、応答をカスタマイズするための [OData クエリ パラメーター](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters)をサポートします。
 
 ## <a name="request-body"></a>要求本文
+
 このメソッドには、要求本文を指定しません。
 
 ## <a name="response"></a>応答
+
 成功した場合、このメソッドは `200 OK` 応答コードと、応答本文で [Drive](../resources/drive.md) オブジェクトのコレクションを返します。
 
 ## <a name="example"></a>例
 
 ##### <a name="request"></a>要求
+
 以下はユーザーのドライブの要求例です。
 
 <!-- {
   "blockType": "request",
   "name": "get_drives"
 }-->
+
 ```http
 GET https://graph.microsoft.com/v1.0/me/drives
 ```
 
 ##### <a name="response"></a>応答
+
 以下は、応答の例です。
 <!-- {
   "blockType": "response",
-  "truncated": false,
+  "truncated": true,
   "@odata.type": "microsoft.graph.drive",
   "isCollection": true
 } -->
@@ -55,7 +64,7 @@ Content-length: 579
   "value": [
     {
       "id": "b!t18F8ybsHUq1z3LTz8xvZqP8zaSWjkFNhsME-Fepo75dTf9vQKfeRblBZjoSQrd7",
-      "driveType": "business",    
+      "driveType": "business",
       "owner": {
           "user": {
               "id": "efee1b77-fb3b-4f65-99d6-274c11914d12",

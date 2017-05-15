@@ -44,7 +44,7 @@ GET /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events
 ## <a name="request-headers"></a>要求ヘッダー
 | 名前       | 型 | 説明|
 |:-----------|:------|:----------|
-| Authorization  | string  | ベアラー <token>。必須。 |
+| Authorization  | string  | Bearer <token>. Required. |
 | 優先: outlook.timezone | string | 応答内のイベントに対する既定のタイム ゾーン。省略可能。 | 
 
 ## <a name="request-body"></a>要求本文
@@ -63,9 +63,8 @@ GET /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events
   "name": "get_events"
 }-->
 ```http
-Prefer: outlook.timezone="Pacific Standard Time"
-
 GET https://graph.microsoft.com/v1.0/me/events?$select=subject,body,bodyPreview,organizer,attendees,start,end,location
+Prefer: outlook.timezone="Pacific Standard Time"
 ```
 ##### <a name="response"></a>応答
 以下は、応答の例です。**body** プロパティが既定の HTML 形式で返されます。

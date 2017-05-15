@@ -47,7 +47,7 @@ GET /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{i
 ## <a name="request-headers"></a>要求ヘッダー
 | 名前       | 型 | 説明|
 |:-----------|:------|:----------|
-| Authorization  | string  | ベアラー <token>。必須。 |
+| Authorization  | string  | Bearer <token>. Required. |
 | 優先: outlook.timezone | string | 応答内のイベントに対する既定のタイム ゾーン。 |
 
 ## <a name="request-body"></a>要求本文
@@ -60,22 +60,27 @@ GET /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{i
 
 - 太平洋標準時で返される日時の値を取得するための `Prefer: outlook.timezone` ヘッダー。 
 - 特定のプロパティを返すための `$select` クエリ パラメーター。`$select` パラメーターがない場合には、すべてのイベント プロパティが返されます。
+
 <!-- {
   "blockType": "request",
   "name": "get_event"
 }-->
-```http
-Prefer: outlook.timezone="Pacific Standard Time"
 
+```http
 GET https://graph.microsoft.com/v1.0/me/events('AAMkAGIAAAoZDOFAAA=')?$select=subject,body,bodyPreview,organizer,attendees,start,end,location 
+Prefer: outlook.timezone="Pacific Standard Time"
 ```
+
 ##### <a name="response"></a>応答
+
 以下は、応答の例です。**body** プロパティが HTML の既定の形式で返されます。
+
 <!-- {
   "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.event"
 } -->
+
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
