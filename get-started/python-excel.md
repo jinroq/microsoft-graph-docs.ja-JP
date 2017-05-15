@@ -15,9 +15,9 @@ Microsoft Graph API を使用して、OneDrive や SharePoint などのサポー
 
 
 ## <a name="authorization-and-scopes"></a>承認とスコープ
-[Azure AD v.20 エンドポイント](https://graph.microsoft.io/en-us/docs/authorization/converged_auth) を使用して Excel REST API 呼び出しを認証できます。すべての API には、`Authorization: Bearer {access-token}` HTTP ヘッダーが必要です。   
+[Azure AD v.20 エンドポイント](https://graph.microsoft.io/en-us/docs/concepts/converged_auth) を使用して Excel REST API 呼び出しを認証できます。すべての API には、`Authorization: Bearer {access-token}` HTTP ヘッダーが必要です。   
   
-Excel リソースを使用するには、次のいずれかの[アクセス許可のスコープ](https://graph.microsoft.io/en-us/docs/authorization/permission_scopes)が必要です。
+Excel リソースを使用するには、次のいずれかの[アクセス許可のスコープ](https://graph.microsoft.io/en-us/docs/concepts/permission_scopes)が必要です。
 
 * Files.Read 
 * Files.ReadWrite
@@ -49,7 +49,7 @@ Microsoft アプリ登録ポータルでアプリを登録します。これに�
 
 4. アプリケーション ID をコピーします。これは、アプリの一意識別子です。
 
-5. **[アプリケーション シークレット]** で、**[新しいパスワードを生成する]** を選択します。**[新しいパスワードが生成されました]** ダイアログ ボックスからアプリ シークレットをコピーします。
+5. **[アプリケーション シークレット]** で、**[新しいパスワードを生成する]** を選びます。**[新しいパスワードが生成されました]** ダイアログ ボックスからアプリケーション シークレットをコピーします。
 
     アプリを構成するには、アプリケーション ID とアプリ シークレットを使用します。
 

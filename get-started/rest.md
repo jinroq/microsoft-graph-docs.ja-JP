@@ -11,7 +11,7 @@
   - アプリを登録して、個人用 (Microsoft) ID と職場および学校 (Azure AD) アカウントの両方で機能する Azure AD v2.0 エンドポイントを使用する。
   - アプリを登録して、職場および学校アカウントのみをサポートする Azure AD エンドポイントを使用する。
 
-この記事では、v2.0 での登録を前提にしていますので、[アプリケーション登録ポータル](https://apps.dev.microsoft.com/)でアプリを登録します。「[Microsoft Graph アプリケーションを Azure AD v2.0 エンドポイントに登録する](../authorization/auth_register_app_v2.md)」の手順に従って、アプリを登録します。Azure AD エンドポイントの使用に関する詳細は、「[Azure AD を使用して認証する](../authorization/app_authorization.md)」を参照してください。
+この記事では、v2.0 での登録を前提にしていますので、[アプリケーション登録ポータル](https://apps.dev.microsoft.com/)でアプリを登録します。「[Microsoft Graph アプリケーションを Azure AD v2.0 エンドポイントに登録する](../concepts/auth_register_app_v2.md)」の手順に従って、アプリを登録します。Azure AD エンドポイントの使用に関する詳細は、「[Azure AD を使用して認証する](../concepts/auth_overview.md)」を参照してください。
 
 > v2.0 エンドポイントを使用する場合、いくつかの制限が適用されます。制限が適切であるかどうかを判断するには、「[v2.0 エンドポイントを使用する必要がありますか?](https://azure.microsoft.com/en-us/documentation/articles/active-directory-v2-limitations/)」を参照してください。
 
@@ -44,7 +44,7 @@ https://login.microsoftonline.com/{tenant}/oauth2/v2.0/authorize
 | client_id | アプリを登録すると生成されるアプリ ID です。これにより、どのアプリがログオンを要求しているかが Azure AD に通知されます。 |
 | redirect_uri | ユーザーがアプリに同意した後、Azure によってリダイレクトされる場所です。この値は、アプリを登録したときに使用された**リダイレクト URI** の値に対応している必要があります。 |
 | response_type | アプリが想定している応答タイプです。この値は、認証コードの付与フローの `code` です。 |
-| scope | アプリが要求している [Microsoft Graph のアクセス許可スコープ](../authorization/permission_scopes.md)をスペースで区切った一覧です。[シングル サインオン](https://azure.microsoft.com/en-us/documentation/articles/active-directory-v2-protocols-oidc/)に対して [OpenId Connect スコープ](https://azure.microsoft.com/en-us/documentation/articles/active-directory-v2-scopes/#openid-connect-scopes)を指定することもできます。  |
+| scope | アプリが要求している [Microsoft Graph のアクセス許可スコープ](../concepts/permissions_reference.md)をスペースで区切った一覧です。[シングル サインオン](https://azure.microsoft.com/en-us/documentation/articles/active-directory-v2-protocols-oidc/)に対して [OpenId Connect スコープ](https://azure.microsoft.com/en-us/documentation/articles/active-directory-v2-scopes/#openid-connect-scopes)を指定することもできます。  |
 | state | トークン応答でも返され、検証に使用される要求に含まれている値です。 |
 
 たとえば、電子メールへの読み取りアクセスを要求するアプリケーションの要求 URL は次のようになります。
@@ -72,7 +72,7 @@ http://localhost/myapp/?code=AwABAAAA...cZZ6IgAA&state=1234
 | code | 前の手順で取得した認証コードです。 |
 | redirect_uri | この値は、認証コード要求で使用した値と同じである必要があります。 |
 | grant_type | アプリが使用している付与の種類です。この値は、認証コードの付与フローの `code` です。 |
-| scope | アプリが要求している [Microsoft Graph のアクセス許可スコープ](../authorization/permission_scopes.md)をスペースで区切った一覧です。 |
+| scope | アプリが要求している [Microsoft Graph のアクセス許可スコープ](../concepts/permissions_reference.md)をスペースで区切った一覧です。 |
 
 前の手順のコードを使用する、アプリケーションの要求 URL は次のようになります。
 

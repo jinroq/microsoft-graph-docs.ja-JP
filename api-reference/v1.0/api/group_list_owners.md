@@ -2,7 +2,7 @@
 
 グループの所有者の一覧を取得します。所有者は、グループ オブジェクトの変更を許可されている管理者以外のユーザーです。 
 ## <a name="prerequisites"></a>前提条件
-この API を実行するには、以下のいずれかの**スコープ**が必要です。 
+この API を実行するには、以下のいずれかの**スコープ**が必要です。*Group.Read.All* または *Group.ReadWrite.All*
 ## <a name="http-request"></a>HTTP 要求
 <!-- { "blockType": "ignored" } -->
 ```http
