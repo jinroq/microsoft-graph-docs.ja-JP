@@ -1,19 +1,22 @@
-# <a name="tablecolumncollection-itemat"></a>TableColumnCollection:ItemAt
+# <a name="tablecolumncollection-itemat"></a>TableColumnCollection: ItemAt
 
 コレクション内の位置に基づいて列を取得します。
 ## <a name="prerequisites"></a>前提条件
 この API を実行するために必要な**スコープ**は、次のとおりです。 
+
+    * Files.ReadWrite
+
 ## <a name="http-request"></a>HTTP 要求
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/tables(<id|name>)/columns/ItemAt
-POST /workbook/worksheets(<id|name>)/tables(<id|name>)/columns/ItemAt
+POST /workbook/tables/{id|name}/columns/ItemAt
+POST /workbook/worksheets/{id|name}/tables/{id|name}/columns/ItemAt
 
 ```
 ## <a name="request-headers"></a>要求ヘッダー
 | 名前       | 説明|
 |:---------------|:----------|
-| Authorization  | Bearer <code>|
+| Authorization  | Bearer {code}|
 
 
 ## <a name="request-body"></a>要求本文
@@ -35,7 +38,7 @@ POST /workbook/worksheets(<id|name>)/tables(<id|name>)/columns/ItemAt
   "name": "tablecolumncollection_itemat"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/tables(<id|name>)/columns/ItemAt
+POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/tables/{id|name}/columns/ItemAt
 Content-type: application/json
 Content-length: 20
 

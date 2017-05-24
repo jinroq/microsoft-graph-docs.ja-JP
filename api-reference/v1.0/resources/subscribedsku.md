@@ -2,29 +2,27 @@
 
 会社が購読しているサービス SKU に関する情報が含まれています。
 
-購読している SKU では読み取り操作のみがサポートされ、作成、更新、削除はサポートされません。クエリのフィルター式はサポートされていません。
-
-[directoryObject](directoryobject.md) から継承します。
-
+購読している SKU では読み取り操作のみがサポートされ、作成、更新、削除はサポートされません。クエリのフィルター式はサポートされていません。[directoryObject](directoryobject.md) から継承します。
 
 ## <a name="methods"></a>メソッド
 | メソッド           | 戻り値の型    |説明|
 |:---------------|:--------|:----------|
-|[subscribedSku を取得する](../api/subscribedsku_get.md) | [subscribedSku](subscribedsku.md) |subscribedsku オブジェクトのプロパティを読み取ります。|
+|[subscribedSku を取得する](../api/subscribedsku_get.md) | [subscribedSku](subscribedsku.md) |subscribedSku オブジェクトのプロパティとリレーションシップを読み取ります。|
+|[List subscribedsku](../api/subscribedsku_list.md) | [subscribedSku](subscribedsku.md) コレクション |組織で取得した商用サブスクリプションの一覧を取得します。|
 
 ## <a name="properties"></a>プロパティ
 | プロパティ       | 型    |説明|
 |:---------------|:--------|:----------|
-|capabilityStatus|String|"Enabled"、"LockedOut"、"Suspended" など。|
-|consumedUnits|Int32|割り当てられたライセンスの数。|
-|id|String|購読している SKU オブジェクトの一意識別子。キー。読み取り専用です。|
-|prepaidUnits|[licenseUnitsDetail](licenseunitsdetail.md)|プリペイド ライセンスの数と状態に関する情報。|
-|servicePlans|[servicePlanInfo](serviceplaninfo.md) コレクション|SKU と併用できるサービス プランに関する情報。|
-|skuId|Guid|サービス SKU の一意識別子 (GUID)。|
-|skuPartNumber|String|SKU 部品番号。"AAD_PREMIUM" や "RMSBASIC" など。|
-|appliesTo|String|"User" や "Company" など。|
+|appliesTo|String| "User" や "Company" など。 |
+|capabilityStatus|String| 「有効」など。 |
+|consumedUnits|Int32| 割り当てられたライセンスの数。 |
+|id|String| 購読している SKU オブジェクトの一意識別子。キーであり、null 許容ではありません。 |
+|prepaidUnits|[licenseUnitsDetail](licenseunitsdetail.md)| プリペイド ライセンスの数と状態に関する情報。 |
+|servicePlans|[servicePlanInfo](serviceplaninfo.md) コレクション| SKU と併用できるサービス プランに関する情報。null 許容ではありません |
+|skuId|Guid| サービス SKU の一意識別子 (GUID)。 |
+|skuPartNumber|String| SKU 部品番号。"AAD_PREMIUM" や "RMSBASIC" など。 |
 
-## <a name="relationships"></a>関係
+## <a name="relationships"></a>リレーションシップ
 なし
 
 ## <a name="json-representation"></a>JSON 表記

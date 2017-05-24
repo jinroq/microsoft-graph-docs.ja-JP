@@ -4,12 +4,10 @@
 
 ## <a name="properties"></a>プロパティ
 | プロパティ       | 型    |説明|
-|:---------------|:--------|:----------|
-|enabled|Int32|            |
-|suspended|Int32|            |
-|warning|Int32|            |
-
-
+|:-------------|:-----|:----------|
+|enabled|Int32| 有効になっている単位の数です。 |
+|suspended|Int32| 利用停止中の単位の数です。 |
+|warning|Int32| 警告ステータスのユニットの数です。 |
 
 ## <a name="json-representation"></a>JSON 表記
 

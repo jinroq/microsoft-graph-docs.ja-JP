@@ -3,16 +3,19 @@
 table オブジェクトのプロパティを更新します。
 ## <a name="prerequisites"></a>前提条件
 この API を実行するために必要な**スコープ**は、次のとおりです。 
+
+    * Files.ReadWrite
+
 ## <a name="http-request"></a>HTTP 要求
 <!-- { "blockType": "ignored" } -->
 ```http
-PATCH /workbook/tables(<id|name>)
-PATCH /workbook/worksheets(<id|name>)/tables(<id|name>)
+PATCH /workbook/tables/{id|name}
+PATCH /workbook/worksheets/{id|name}/tables/{id|name}
 ```
 ## <a name="optional-request-headers"></a>オプションの要求ヘッダー
 | 名前       | 説明|
 |:-----------|:-----------|
-| Authorization  | Bearer <code>|
+| Authorization  | Bearer {code}|
 
 
 ## <a name="request-body"></a>要求本文
@@ -35,12 +38,11 @@ PATCH /workbook/worksheets(<id|name>)/tables(<id|name>)
   "name": "update_table"
 }-->
 ```http
-PATCH https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/tables(<id|name>)
+PATCH https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/tables/{id|name}
 Content-type: application/json
 Content-length: 109
 
 {
-  "id": "99",
   "name": "name-value",
   "showHeaders": true,
   "showTotals": true,

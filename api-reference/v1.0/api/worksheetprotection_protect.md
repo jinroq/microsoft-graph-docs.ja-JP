@@ -3,16 +3,19 @@
 ワークシートを保護します。ワークシートが保護されている場合はスローします。
 ## <a name="prerequisites"></a>前提条件
 この API を実行するために必要な**スコープ**は、次のとおりです。 
+
+    * Files.ReadWrite
+
 ## <a name="http-request"></a>HTTP 要求
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/worksheets(<id|name>)/protection/protect
+POST /workbook/worksheets/{id|name}/protection/protect
 
 ```
 ## <a name="request-headers"></a>要求ヘッダー
 | 名前       | 説明|
 |:---------------|:----------|
-| Authorization  | Bearer <code>|
+| Authorization  | Bearer {code}|
 
 
 ## <a name="request-body"></a>要求本文
@@ -34,7 +37,7 @@ POST /workbook/worksheets(<id|name>)/protection/protect
   "name": "worksheetprotection_protect"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets(<id|name>)/protection/protect
+POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/{id|name}/protection/protect
 Content-type: application/json
 Content-length: 383
 

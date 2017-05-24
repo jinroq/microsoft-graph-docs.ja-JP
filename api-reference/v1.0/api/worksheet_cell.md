@@ -3,16 +3,19 @@
 行と列の番号に基づいて、1 つのセルを含んだ範囲オブジェクトを取得します。このセルは、ワークシートのグリッド内であれば、親の範囲の境界の外のセルであってもかまいません。
 ## <a name="prerequisites"></a>前提条件
 この API を実行するために必要な**スコープ**は、次のとおりです。 
+
+    * Files.ReadWrite
+
 ## <a name="http-request"></a>HTTP 要求
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /workbook/worksheets(<id|name>)/Cell(row=<row>,column=<column>)
+GET /workbook/worksheets/{id|name}/Cell(row=<row>,column=<column>)
 
 ```
 ## <a name="request-headers"></a>要求ヘッダー
 | 名前       | 説明|
 |:---------------|:----------|
-| Authorization  | Bearer <code>|
+| Authorization  | Bearer {code}|
 
 
 ## <a name="response"></a>応答
@@ -27,7 +30,7 @@ GET /workbook/worksheets(<id|name>)/Cell(row=<row>,column=<column>)
   "name": "worksheet_cell"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets(<id|name>)/Cell(row=<row>,column=<column>)
+GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/{id|name}/Cell(row=<row>,column=<column>)
 ```
 
 ##### <a name="response"></a>応答
