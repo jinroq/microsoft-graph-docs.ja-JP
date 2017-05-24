@@ -10,14 +10,17 @@ Azure Active Directory オブジェクトを表します。**directoryObject** �
 |[directoryObject を削除する](../api/directoryobject_delete.md) | なし |ディレクトリ オブジェクトを削除します。 |
 |[checkMemberGroups](../api/directoryobject_checkmembergroups.md)|String collection|グループの一覧内のメンバーシップを確認します。チェックは推移的です。|
 |[getMemberGroups](../api/directoryobject_getmembergroups.md)|String collection|ユーザー オブジェクト、グループ オブジェクト、またはディレクトリ オブジェクトがメンバーであるすべてのグループを返します。チェックは推移的です。|
-|[getMemberObjects](../api/directoryobject_getmemberobjects.md)|String collection| ユーザー オブジェクト、グループ オブジェクト、またはディレクトリ オブジェクトがメンバーであるすべてのグループとディレクトリ ロールを返します。チェックは推移的です。 |
+|[getMemberObjects](../api/directoryobject_getmemberobjects.md)|String コレクション| ユーザー オブジェクト、グループ オブジェクト、またはディレクトリ オブジェクトがメンバーであるすべてのグループとディレクトリ ロールを返します。チェックは推移的です。 |
+|[getByIds](../api/directoryobject_getbyids.md) | [directoryObject](directoryobject.md) コレクション | 指定された一連の ID に基づいて、一連のディレクトリ オブジェクトを取得します。 |
 
 ## <a name="properties"></a>プロパティ
-| プロパティ       | 型    |説明|
+
+| プロパティ   | 型 |説明|
 |:---------------|:--------|:----------|
 |id|String|オブジェクトの一意識別子である Guid。例: 12345678-9abc-def0-1234-56789abcde。キー。null 許容ではありません。読み取り専用です。|
 
 ## <a name="relationships"></a>リレーションシップ
+
 なし
 
 

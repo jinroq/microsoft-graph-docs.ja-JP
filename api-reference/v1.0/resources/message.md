@@ -2,8 +2,10 @@
 
 mailFolder のメッセージ。
 
-このリソースでは、[拡張機能](../../../concepts/extensibility_overview.md)を使用してカスタム プロパティに独自のデータを追加することができます。
+このリソースは以下をサポートしています。
 
+- [拡張機能](../../../concepts/extensibility_overview.md)を使用して、カスタム プロパティに独自のデータを追加します。
+- [デルタ](../api/message_delta.md)関数を提供することにより、[デルタ クエリ](../../../concepts/delta_query_overview.md)を使用して、増分の追加、削除、更新を追跡します。
 
 ## <a name="methods"></a>メソッド
 
@@ -18,6 +20,7 @@ mailFolder のメッセージ。
 |[createForward](../api/message_createforward.md)|[Message](message.md)|転送メッセージの下書きを作成します。その後、下書きを[更新](../api/message_update.md)または[送信](../api/message_send.md)できます。|
 |[createReply](../api/message_createreply.md)|[Message](message.md)|返信メッセージの下書きを作成します。その後、下書きを[更新](../api/message_update.md)または[送信](../api/message_send.md)できます。|
 |[createReplyAll](../api/message_createreplyall.md)|[Message](message.md)|全員に返信メッセージの下書きを作成します。その後、下書きを[更新](../api/message_update.md)または[送信](../api/message_send.md)できます。|
+|[delta](../api/message_delta.md)|[message](message.md) コレクション| 指定したフォルダーで追加、削除、更新されたメッセージのセットを取得します。|
 |[forward](../api/message_forward.md)|なし|メッセージを転送します。その後、メッセージは送信済みアイテム フォルダーに保存されます。|
 |[移動](../api/message_move.md)|[Message](message.md)|メッセージをフォルダーに移動します。これにより、宛先フォルダーにメッセージの新しいコピーが作成されます。|
 |[返信](../api/message_reply.md)|なし|メッセージの送信者に返信します。その後、メッセージは送信済みアイテム フォルダーに保存されます。|
@@ -28,7 +31,9 @@ mailFolder のメッセージ。
 |[添付ファイルを追加する](../api/message_post_attachments.md) |[Attachment](attachment.md)| 添付ファイル コレクションへの投稿により、メッセージに新しい添付ファイルを追加します。|
 |**オープン拡張機能**| | |
 |[オープン拡張機能を作成する](../api/opentypeextension_post_opentypeextension.md) |[openTypeExtension](opentypeextension.md)| オープン拡張機能を作成し、リソースの新規または既存のインスタンスのカスタム プロパティを追加します。|
-|[オープン拡張機能を取得する](../api/opentypeextension_get.md) |[openTypeExtension](opentypeextension.md) コレクション| 名前や完全修飾名によって識別されたオープン拡張機能オブジェクトを 1 つまたは複数取得します。|
+|[オープン拡張機能を取得する](../api/opentypeextension_get.md) |[openTypeExtension](opentypeextension.md) コレクション| 名前や完全修飾名によって識別されたオープン拡張機能オブジェクトを取得します。|
+|**スキーマ拡張機能**| | |
+|[スキーマ拡張機能の値を追加する](../../../concepts/extensibility_schema_groups.md) || スキーマ拡張機能の定義を作成し、それを使用してカスタマイズされた種類のデータをリソースに追加します。|
 |**拡張プロパティ**| | |
 |[単一値の拡張プロパティを作成する](../api/singlevaluelegacyextendedproperty_post_singlevalueextendedproperties.md) |[message](message.md)  |新規または既存のメッセージに、1 つ以上の単一値の拡張プロパティを作成します。   |
 |[単一値の拡張プロパティを持つメッセージの取得](../api/singlevaluelegacyextendedproperty_get.md)  | [message](message.md) | `$expand` または `$filter` を使用して、単一値の拡張プロパティを含むメッセージを取得します。 |
@@ -82,7 +87,7 @@ Prefer: outlook.allow-unsafe-html
 - **from** プロパティは、Exchange 管理者がメールボックスの **sendAs** 権限を他のユーザーに割り当てた場合に変更できます。管理者は、Azure 管理ポータルでメールボックス所有者の**メールボックスのアクセス許可**を選択するか、Exchange 管理センターまたは Windows PowerShell Add-ADPermission コマンドレットを使用してこれを行えます。その後、プログラムを使用して、**from** プロパティを、対象メールボックスの **sendAs** 権限を持ついずれかのユーザーに自動的に設定できます。
 - **sender** プロパティは、メールボックス所有者が 1 人以上のユーザーにそのメールボックスからメッセージを送信する権限を委任すると、変更できます。メールボックス所有者は、Outlook で委任できます。代理人がメールボックス所有者に代わってメッセージを送信する場合、**sender** プロパティは代理人のアカウントに設定され、**from** プロパティはメールボックス所有者のままになります。プログラムを使用して、**sender** プロパティを、対象メールボックスの委任権限を取得したユーザーに設定できます。
 
-## <a name="relationships"></a>リレーションシップ
+## <a name="relationships"></a>関係
 | リレーションシップ | 型    |説明|
 |:---------------|:--------|:----------|
 |attachments|[attachment](attachment.md) コレクション|メッセージの [fileAttachment](fileattachment.md) 添付ファイルと [itemAttachment](itemattachment.md) 添付ファイル。|
@@ -145,9 +150,11 @@ Prefer: outlook.allow-unsafe-html
 
 - [メールボックス設定を取得する](../api/user_get_mailboxsettings.md) 
 - [メールボックス設定を更新する](../api/user_update_mailboxsettings.md)
+- [デルタ クエリを使用して、Microsoft Graph データの変更を追跡する](../../../concepts/delta_query_overview.md)
+- [フォルダー内のメッセージへの増分変更を取得する](../../../concepts/delta_query_messages.md)
 - [拡張機能を使用してカスタム データをリソースに追加する](../../../concepts/extensibility_overview.md)
-- [オープン拡張機能を使用したユーザーへのカスタム データの追加 (プレビュー)](../../../concepts/extensibility_open_users.md)
-- [スキーマ拡張機能を使用したグループへのカスタム データの追加 (プレビュー)](../../../concepts/extensibility_schema_groups.md)
+- [オープン拡張機能を使用してカスタム データをユーザーに追加する](../../../concepts/extensibility_open_users.md)
+- [スキーマ拡張機能を使用したグループへのカスタム データの追加](../../../concepts/extensibility_schema_groups.md)
 
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

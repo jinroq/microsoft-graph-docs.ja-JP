@@ -11,7 +11,7 @@
 <!-- {
   "blockType": "resource",
   "optionalProperties": [
-
+    "lastAccessedDateTime"
   ],
   "@odata.type": "microsoft.graph.fileSystemInfo"
 }-->
@@ -25,10 +25,11 @@
 
 ## <a name="properties"></a>プロパティ
 
-| プロパティ                 | 型           | 説明                                                   |
-|:-------------------------|:---------------|:--------------------------------------------------------------|
-| **createdDateTime**      | DateTimeOffset | クライアントでのファイルの作成日時 (UTC)。       |
-| **lastModifiedDateTime** | DateTimeOffset | クライアントでファイルを最後に変更した日時 (UTC)。 |
+| プロパティ                 | 型           | 説明                                                                                                          |
+| :----------------------- | :------------- | :------------------------------------------------------------------------------------------------------------------- |
+| **createdDateTime**      | DateTimeOffset | クライアントでのファイルの作成日時 (UTC)。                                                              |
+| **lastAccessedDateTime** | DateTimeOffset | ファイルに最後にアクセスした日時 (UTC)。[最近使用したファイル一覧](../api/drive_recent.md)でのみ使用可能です。 |
+| **lastModifiedDateTime** | DateTimeOffset | クライアントでファイルを最後に変更した日時 (UTC)。                                                        |
 
 ## <a name="notes"></a>メモ
 

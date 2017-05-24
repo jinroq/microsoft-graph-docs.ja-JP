@@ -3,17 +3,20 @@
 formatprotection オブジェクトのプロパティを更新します。
 ## <a name="prerequisites"></a>前提条件
 この API を実行するために必要な**スコープ**は、次のとおりです。 
+
+    * Files.ReadWrite
+
 ## <a name="http-request"></a>HTTP 要求
 <!-- { "blockType": "ignored" } -->
 ```http
 PATCH /workbook/names(<name>)/range/format/protection
-PATCH /workbook/worksheets(<id|name>)/range(<address>)/format/protection
-PATCH /workbook/tables(<id|name>)/columns(<id|name>)/range/format/protection
+PATCH /workbook/worksheets/{id|name}/range(<address>)/format/protection
+PATCH /workbook/tables/{id|name}/columns/{id|name}/range/format/protection
 ```
 ## <a name="optional-request-headers"></a>オプションの要求ヘッダー
 | 名前       | 説明|
 |:-----------|:-----------|
-| Authorization  | Bearer <code>|
+| Authorization  | Bearer {code}|
 
 
 ## <a name="request-body"></a>要求本文

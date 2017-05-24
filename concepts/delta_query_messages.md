@@ -1,6 +1,6 @@
-# <a name="get-incremental-changes-to-messages-in-a-folder-preview"></a>フォルダー内のメッセージへの増分変更を取得する (プレビュー)
+# <a name="get-incremental-changes-to-messages-in-a-folder"></a>フォルダー内のメッセージへの増分の変更を取得する 
 
-デルタ クエリでは、一連の[デルタ](../api-reference/beta/api/message_delta.md)関数呼び出しを使用して、フォルダー内のメッセージへの追加、削除、または更新に対してクエリを実行できます。デルタ データを使用すると、毎回サーバーからユーザーのメッセージのセット全体をフェッチせずに、ユーザーのメッセージのローカル ストアの保守と同期が行えます。
+デルタ クエリでは、一連の[デルタ](../api-reference/v1.0/api/message_delta.md)関数呼び出しを使用して、フォルダー内のメッセージへの追加、削除、または更新に対してクエリを実行できます。デルタ データを使用すると、毎回サーバーからユーザーのメッセージのセット全体をフェッチせずに、ユーザーのメッセージのローカル ストアの保守と同期が行えます。
 
 デルタ クエリでは、フォルダー内 (ユーザーの受信トレイなど) のすべてのメッセージを取得する完全な同期と、最後の同期以降、そのフォルダー内で変更されたすべてのメッセージを取得する増分同期の両方がサポートされています。通常は、フォルダー内のすべてのメッセージの最初の完全同期を実行して、その後、そのフォルダーの増分の変更を定期的に取得します。 
 
@@ -8,10 +8,10 @@
 
 デルタ クエリはフォルダー単位の操作です。フォルダー階層内のメッセージの変更を追跡するには、各フォルダーを個別に追跡する必要があります。 
 
-通常、メール フォルダー内のメッセージ変更の追跡は、**デルタ**関数を使用した、1 つ以上の GET 要求のラウンドです。最初の GET 要求は、**デルタ**関数を含めることを除いて、[メッセージの取得](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/user_list_messages)方法とほぼ同じです。
+通常、メール フォルダー内のメッセージ変更の追跡は、**デルタ**関数を使用した、1 つ以上の GET 要求のラウンドです。最初の GET 要求は、**デルタ**関数を含めることを除いて、[メッセージの取得](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/user_list_messages)方法とほぼ同じです。
 
 ```
-GET https://graph.microsoft.com/beta/me/mailFolders/{id}/messages/delta
+GET https://graph.microsoft.com/v1.0/me/mailFolders/{id}/messages/delta
 ```
 
 **デルタ**関数を使用した GET 要求は、次のいずれかを返します。
@@ -92,7 +92,7 @@ since the completion of the very first round.
   "name": "get_messages_delta_1"
 }-->
 ```
-GET https://graph.microsoft.com/beta/me/mailfolders('AQMkADNkNAAAgEMAAAA')/messages/delta?$select=Subject,Sender HTTP/1.1
+GET https://graph.microsoft.com/v1.0/me/mailfolders('AQMkADNkNAAAgEMAAAA')/messages/delta?$select=Subject,Sender HTTP/1.1
 Prefer: odata.maxpagesize=2
 ```
 
@@ -109,8 +109,8 @@ Prefer: odata.maxpagesize=2
 } -->
 ```
 {
-    "@odata.context":"https://graph.microsoft.com/beta/$metadata#Collection(message)",
-    "@odata.nextLink":"https://graph.microsoft.com/beta/me/mailfolders('AQMkADNkNAAAgEMAAAA')/messages/delta?$skiptoken=GwcBoTmPuoTQWfcsAbkYM",
+    "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#Collection(message)",
+    "@odata.nextLink":"https://graph.microsoft.com/v1.0/me/mailfolders('AQMkADNkNAAAgEMAAAA')/messages/delta?$skiptoken=GwcBoTmPuoTQWfcsAbkYM",
     "value":[
         {
             "@odata.type":"#microsoft.graph.message",
@@ -149,7 +149,7 @@ Prefer: odata.maxpagesize=2
   "name": "get_messages_delta_2"
 }-->
 ```
-GET https://graph.microsoft.com/beta/me/mailfolders('AQMkADNkNAAAgEMAAAA')/messages/delta?$skiptoken=GwcBoTmPuoTQWfcsAbkYM HTTP/1.1
+GET https://graph.microsoft.com/v1.0/me/mailfolders('AQMkADNkNAAAgEMAAAA')/messages/delta?$skiptoken=GwcBoTmPuoTQWfcsAbkYM HTTP/1.1
 Prefer: odata.maxpagesize=2
 ```
 
@@ -165,8 +165,8 @@ Prefer: odata.maxpagesize=2
 } -->
 ```
 {
-    "@odata.context":"https://graph.microsoft.com/beta/$metadata#Collection(message)",
-    "@odata.nextLink":"https://graph.microsoft.com/beta/me/mailfolders('AQMkADNkNAAAgEMAAAA')/messages/delta?$skiptoken=GwcBoTmPKILK4jLH7mAd1lLU",
+    "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#Collection(message)",
+    "@odata.nextLink":"https://graph.microsoft.com/v1.0/me/mailfolders('AQMkADNkNAAAgEMAAAA')/messages/delta?$skiptoken=GwcBoTmPKILK4jLH7mAd1lLU",
     "value":[
         {
             "@odata.type":"#microsoft.graph.message",
@@ -206,7 +206,7 @@ Prefer: odata.maxpagesize=2
   "name": "get_messages_delta_3"
 }-->
 ```
-GET https://graph.microsoft.com/beta/me/mailfolders('AQMkADNkNAAAgEMAAAA')/messages/delta?$skiptoken=GwcBoTmPKILK4jLH7mAd1lLU HTTP/1.1
+GET https://graph.microsoft.com/v1.0/me/mailfolders('AQMkADNkNAAAgEMAAAA')/messages/delta?$skiptoken=GwcBoTmPKILK4jLH7mAd1lLU HTTP/1.1
 Prefer: odata.maxpagesize=2
 ```
 
@@ -222,8 +222,8 @@ Prefer: odata.maxpagesize=2
 } -->
 ```
 {
-    "@odata.context":"https://graph.microsoft.com/beta/$metadata#Collection(message)",
-    "@odata.deltaLink":"https://graph.microsoft.com/beta/me/mailfolders('AQMkADNkNAAAgEMAAAA')/messages/delta?$deltatoken=GwcBoTmPuoGNlgXgF1nyUNMXY",
+    "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#Collection(message)",
+    "@odata.deltaLink":"https://graph.microsoft.com/v1.0/me/mailfolders('AQMkADNkNAAAgEMAAAA')/messages/delta?$deltatoken=GwcBoTmPuoGNlgXgF1nyUNMXY",
     "value":[
         {
             "@odata.type":"#microsoft.graph.message",
@@ -251,7 +251,7 @@ Prefer: odata.maxpagesize=2
   "name": "get_messages_delta_next"
 }-->
 ```
-GET https://graph.microsoft.com/beta/me/mailfolders('AQMkADNkNAAAgEMAAAA')/messages/delta?$deltatoken=GwcBoTmPuoGNlgXgF1nyUNMXY HTTP/1.1
+GET https://graph.microsoft.com/v1.0/me/mailfolders('AQMkADNkNAAAgEMAAAA')/messages/delta?$deltatoken=GwcBoTmPuoGNlgXgF1nyUNMXY HTTP/1.1
 Prefer: odata.maxpagesize=2
 ```
 
@@ -260,6 +260,6 @@ Prefer: odata.maxpagesize=2
 ## <a name="see-also"></a>関連項目
 
 - [Microsoft Graph デルタ クエリ](../Concepts/delta_query_overview.md)
-- [カレンダー ビューのイベントへの増分の変更を取得する (プレビュー)](../Concepts/delta_query_events.md)
-- [グループへの増分の変更を取得する (プレビュー)](../Concepts/delta_query_groups.md)
-- [ユーザーへの増分の変更を取得する (プレビュー)](../Concepts/delta_query_users.md)
+- [カレンダー ビューのイベントへの増分の変更を取得する](../Concepts/delta_query_events.md)
+- [グループに対する増分の変更を取得する](../Concepts/delta_query_groups.md)
+- [ユーザーに対する増分の変更を取得する](../Concepts/delta_query_users.md)

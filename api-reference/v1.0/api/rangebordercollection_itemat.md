@@ -1,20 +1,23 @@
-# <a name="rangebordercollection-itemat"></a>RangeBorderCollection:ItemAt
+# <a name="rangebordercollection-itemat"></a>RangeBorderCollection: ItemAt
 
 オブジェクトのインデックスを使用して、境界線オブジェクトを取得します。
 ## <a name="prerequisites"></a>前提条件
 この API を実行するために必要な**スコープ**は、次のとおりです。 
+
+    * Files.ReadWrite
+
 ## <a name="http-request"></a>HTTP 要求
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /workbook/names(<name>)/range/format/borders/ItemAt
-POST /workbook/worksheets(<id|name>)/range(<address>)/format/borders/ItemAt
-POST /workbook/tables(<id|name>)/columns(<id|name>)/range/format/borders/ItemAt
+POST /workbook/worksheets/{id|name}/range(<address>)/format/borders/ItemAt
+POST /workbook/tables/{id|name}/columns/{id|name}/range/format/borders/ItemAt
 
 ```
 ## <a name="request-headers"></a>要求ヘッダー
 | 名前       | 説明|
 |:---------------|:----------|
-| Authorization  | Bearer <code>|
+| Authorization  | Bearer {code}|
 
 
 ## <a name="request-body"></a>要求本文

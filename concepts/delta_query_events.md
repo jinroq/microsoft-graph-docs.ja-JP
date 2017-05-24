@@ -1,4 +1,4 @@
-# <a name="get-incremental-changes-to-events-in-a-calendar-view-preview"></a>カレンダー ビューのイベントへの増分の変更を取得する (プレビュー)
+# <a name="get-incremental-changes-to-events-in-a-calendar-view"></a>カレンダー ビューのイベントへの増分の変更を取得する 
 
 カレンダー ビューは、既定のカレンダー (../me/calendarview) またはユーザーの他のカレンダーからの日付/時刻範囲内にあるイベントのコレクションです。デルタ クエリを使用すると、カレンダー ビューで新規、更新済み、または削除済みのイベントを取得できます。返されるイベントには、定期的なアイテムの発生と例外、および単一のインスタンスが含まれている場合があります。デルタ データを使用すると、毎回サーバーからユーザーのイベントのセット全体をフェッチせずに、ユーザーのイベントのローカル ストアの保守と同期が行えます。
 
@@ -8,7 +8,7 @@
 
 イベントのデルタ クエリは、指定するカレンダーと日付/時刻範囲 (つまり、カレンダー ビュー) に固有のものです。複数のカレンダー ビューの変更を追跡するには、各カレンダーを個別に追跡する必要があります。 
 
-通常、カレンダー ビュー内のイベント変更の追跡は、[デルタ](../api-reference/beta/api/event_delta.md)関数を使用した、1 つ以上の GET 要求のラウンドです。最初の GET 要求は、**デルタ**関数を含めることを除いて、[calendarView の一覧表示](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/calendar_list_calendarview)方法とほぼ同じです。
+通常、カレンダー ビュー内のイベント変更の追跡は、[デルタ](../api-reference/v1.0/api/event_delta.md)関数を使用した、1 つ以上の GET 要求のラウンドです。最初の GET 要求は、**デルタ**関数を含めることを除いて、[calendarView の一覧表示](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/calendar_list_calendarview)方法とほぼ同じです。
 
 ```
 GET /me/calendarView/delta?startDateTime={start_datetime}&endDateTime={end_datetime}
@@ -63,7 +63,7 @@ GET /me/calendarView/delta?startDateTime={start_datetime}&endDateTime={end_datet
   "name": "get_calendarview_delta_1"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/me/calendarview/delta?startdatetime=2016-12-01T00:00:00Z&enddatetime=2016-12-30T00:00:00Z HTTP/1.1
+GET https://graph.microsoft.com/v1.0/me/calendarview/delta?startdatetime=2016-12-01T00:00:00Z&enddatetime=2016-12-30T00:00:00Z HTTP/1.1
 Prefer: odata.maxpagesize=2
 ```
 
@@ -83,8 +83,8 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-    "@odata.context":"https://graph.microsoft.com/beta/$metadata#Collection(event)",
-    "@odata.nextLink":"https://graph.microsoft.com/beta/me/calendarview/delta?$skiptoken=R0usmcCM996atia_s",
+    "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#Collection(event)",
+    "@odata.nextLink":"https://graph.microsoft.com/v1.0/me/calendarview/delta?$skiptoken=R0usmcCM996atia_s",
     "value":[
         {
             "@odata.type":"#microsoft.graph.event",
@@ -153,7 +153,7 @@ Content-type: application/json
   "name": "get_calendarview_delta_2"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/me/calendarview/delta?$skiptoken=R0usmcCM996atia_s HTTP/1.1
+GET https://graph.microsoft.com/v1.0/me/calendarview/delta?$skiptoken=R0usmcCM996atia_s HTTP/1.1
 Prefer: odata.maxpagesize=2
 ```
 
@@ -172,8 +172,8 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-    "@odata.context":"https://graph.microsoft.com/beta/$metadata#Collection(event)",
-    "@odata.nextLink":"https://graph.microsoft.com/beta/me/calendarview/delta?$skiptoken=R0usmci39OQxqJrxK4",
+    "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#Collection(event)",
+    "@odata.nextLink":"https://graph.microsoft.com/v1.0/me/calendarview/delta?$skiptoken=R0usmci39OQxqJrxK4",
     "value":[
         {
             "@odata.type":"#microsoft.graph.event",
@@ -244,7 +244,7 @@ Content-type: application/json
   "name": "get_calendarview_delta_3"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/me/calendarview/delta?$skiptoken=R0usmci39OQxqJrxK4 HTTP/1.1
+GET https://graph.microsoft.com/v1.0/me/calendarview/delta?$skiptoken=R0usmci39OQxqJrxK4 HTTP/1.1
 Prefer: odata.maxpagesize=2
 ```
 
@@ -264,8 +264,8 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-    "@odata.context":"https://graph.microsoft.com/beta/$metadata#Collection(event)",
-    "@odata.deltaLink":"https://graph.microsoft.com/beta/me/calendarview/delta?$deltatoken=R0usmcMDNGg0J1E",
+    "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#Collection(event)",
+    "@odata.deltaLink":"https://graph.microsoft.com/v1.0/me/calendarview/delta?$deltatoken=R0usmcMDNGg0J1E",
     "value":[
         {
             "@odata.type":"#microsoft.graph.event",
@@ -311,7 +311,7 @@ Content-type: application/json
   "name": "get_calendarview_delta_next"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/me/calendarview/delta?$deltatoken=R0usmcMDNGg0J1E HTTP/1.1
+GET https://graph.microsoft.com/v1.0/me/calendarview/delta?$deltatoken=R0usmcMDNGg0J1E HTTP/1.1
 Prefer: odata.maxpagesize=2
 ```
 
@@ -328,8 +328,8 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-    "@odata.context":"https://graph.microsoft.com/beta/$metadata#Collection(event)",
-    "@odata.deltaLink":"https://graph.microsoft.com/beta/me/calendarview/delta?$deltatoken=R0usmcFuQtZdtpk4",
+    "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#Collection(event)",
+    "@odata.deltaLink":"https://graph.microsoft.com/v1.0/me/calendarview/delta?$deltatoken=R0usmcFuQtZdtpk4",
     "value":[
         {
             "@odata.type":"#microsoft.graph.event",
@@ -380,6 +380,6 @@ Content-type: application/json
 ## <a name="see-also"></a>関連項目
 
 - [Microsoft Graph デルタ クエリ](../Concepts/delta_query_overview.md)
-- [メッセージへの増分の変更を取得する (プレビュー)](../Concepts/delta_query_messages.md)
-- [グループへの増分の変更を取得する (プレビュー)](../Concepts/delta_query_groups.md)
-- [ユーザーへの増分の変更を取得する (プレビュー)](../Concepts/delta_query_users.md)
+- [メッセージへの増分の変更を取得する](../Concepts/delta_query_messages.md)
+- [グループに対する増分の変更を取得する](../Concepts/delta_query_groups.md)
+- [ユーザーに対する増分の変更を取得する](../Concepts/delta_query_users.md)

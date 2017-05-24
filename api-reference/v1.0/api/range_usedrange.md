@@ -3,18 +3,21 @@
 指定した範囲オブジェクトのうち使用されている範囲を返します。
 ## <a name="prerequisites"></a>前提条件
 この API を実行するために必要な**スコープ**は、次のとおりです。 
+
+    * Files.ReadWrite
+
 ## <a name="http-request"></a>HTTP 要求
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/names(<name>)/range/UsedRange
-POST /workbook/worksheets(<id|name>)/range(<address>)/UsedRange
-POST /workbook/tables(<id|name>)/columns(<id|name>)/range/UsedRange
+GET /workbook/names(<name>)/range/UsedRange
+GET /workbook/worksheets/{id|name}/range(<address>)/UsedRange
+GET /workbook/tables/{id|name}/columns/{id|name}/range/UsedRange
 
 ```
 ## <a name="request-headers"></a>要求ヘッダー
 | 名前       | 説明|
 |:---------------|:----------|
-| Authorization  | Bearer <code>|
+| Authorization  | Bearer {code}|
 
 
 ## <a name="request-body"></a>要求本文
@@ -36,7 +39,7 @@ POST /workbook/tables(<id|name>)/columns(<id|name>)/range/UsedRange
   "name": "range_usedrange"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/names(<name>)/range/UsedRange
+GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/names(<name>)/range/UsedRange
 Content-type: application/json
 Content-length: 24
 

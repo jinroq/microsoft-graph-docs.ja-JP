@@ -3,18 +3,21 @@
 範囲に含まれる列を 1 つ取得します。
 ## <a name="prerequisites"></a>前提条件
 この API を実行するために必要な**スコープ**は、次のとおりです。 
+
+    * Files.ReadWrite
+
 ## <a name="http-request"></a>HTTP 要求
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/names(<name>)/range/Column
-POST /workbook/worksheets(<id|name>)/range(<address>)/Column
-POST /workbook/tables(<id|name>)/columns(<id|name>)/range/Column
+GET /workbook/names(<name>)/range/Column
+GET /workbook/worksheets/{id|name}/range(<address>)/Column
+GET /workbook/tables/{id|name}/columns/{id|name}/range/Column
 
 ```
 ## <a name="request-headers"></a>要求ヘッダー
 | 名前       | 説明|
 |:---------------|:----------|
-| Authorization  | Bearer <code>|
+| Authorization  | Bearer {code}|
 
 
 ## <a name="request-body"></a>要求本文
@@ -36,7 +39,7 @@ POST /workbook/tables(<id|name>)/columns(<id|name>)/range/Column
   "name": "range_column"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/names(<name>)/range/Column
+GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/names(<name>)/range/Column
 Content-type: application/json
 Content-length: 21
 

@@ -2,6 +2,8 @@
 
 オープン拡張機能 (旧称は Office 365 のデータ拡張機能) を使用すると、型指定されていないプロパティを Microsoft Graph のリソースに簡単に直接追加できます。オープン拡張機能は、**openTypeExtension** リソースで表されます。リソースに追加されるオープン拡張機能は **extensions** ナビゲーション プロパティに表示されます。このプロパティは、[extension](extension.md) 抽象型から派生します。各拡張機能には **extensionName** プロパティがあります。このプロパティは、すべての拡張機能とカスタム データで唯一定義済みの書き込み可能なプロパティです。拡張機能名が必ず一意であるようにする方法の 1 つは、_独自のドメイン_に依存する逆引きドメイン ネーム システム (DNS) 形式 (例: `Com.Contoso.ContactInfo`) を使用することです。拡張機能名に Microsoft ドメイン (`Com.Microsoft` または `Com.OnMicrosoft`) を使用しないでください。
 
+オープン拡張機能の例:[オープン拡張機能を使用してカスタム データをユーザーに追加する](../../../concepts/extensibility_open_users.md)
+
 オープン拡張機能は、次のリソースの対応するバージョンの一般提供 (GA: /v1.0 および /ベータ) またはプレビュー (/ベータ) でサポートされています。
 
 | リソース | バージョン |
@@ -10,12 +12,12 @@
 | [予定表イベント](event.md) | GA |
 | グループ[予定表イベント](event.md) | GA |
 | グループ会話スレッド[投稿](post.md) | GA |
-| [デバイス](../../beta/resources/device.md) | プレビューのみ |
-| [グループ](../../beta/resources/group.md) | プレビューのみ |
-| [message](message.md) | GA |
-| [組織](../../beta/resources/organization.md) | プレビューのみ |
+| [device](device.md) | GA |
+| [グループ](group.md) | GA |
+| [メッセージ](message.md) | GA |
+| [組織](organization.md) | GA |
 | [個人用連絡先](contact.md) | GA |
-| [ユーザー](../../beta/resources/user.md) | プレビューのみ |
+| [ユーザー](user.md) | GA |
 
 
 ### <a name="use-open-extensions-for-outlook-resources-or-extended-properties"></a>オープン拡張機能 (Outlook リソース用) と拡張プロパティのどちらを使用するか
@@ -56,7 +58,7 @@
 
 | メソッド           | 戻り値の型    |説明|
 |:---------------|:--------|:----------|
-|[Post](../api/opentypeextension_post_opentypeextension.md) | [openTypeExtension](opentypeextension.md)、または openTypeExtension オブジェクトが含まれている [メッセージ](../resources/message.md)、[イベント](../resources/event.md)、あるいは [連絡先](../resources/contact.md)。 | 既存または新規のリソース インスタンス内に openTypeExtension オブジェクトを作成します。| 
+|[Post](../api/opentypeextension_post_opentypeextension.md) | (既存リソースのインスタンス内の) [openTypeExtension](opentypeextension.md)、または、openTypeExtension オブジェクトを含む新しい[contact](../resources/contact.md)、[event](../resources/event.md)、[message](../resources/message.md)。 | 既存または新規のリソース インスタンス内に openTypeExtension オブジェクトを作成します。| 
 |[Get](../api/opentypeextension_get.md) | [openTypeExtension](opentypeextension.md) |openTypeExtension オブジェクトのプロパティと関係を読み取ります。|
 |[更新する](../api/opentypeextension_update.md) | [openTypeExtension](opentypeextension.md)    |openTypeExtension オブジェクトを更新します。 |
 |[削除](../api/opentypeextension_delete.md) | なし |openTypeExtension オブジェクトを削除します。 |

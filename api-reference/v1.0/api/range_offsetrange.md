@@ -3,18 +3,21 @@
 指定した範囲からのオフセットで範囲を表すオブジェクトを取得します。返される範囲のディメンションは、この範囲と一致します。結果の範囲が、ワークシートのグリッドの境界線の外にはみ出る場合は、例外がスローされます。
 ## <a name="prerequisites"></a>前提条件
 この API を実行するために必要な**スコープ**は、次のとおりです。 
+
+    * Files.ReadWrite
+
 ## <a name="http-request"></a>HTTP 要求
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/names(<name>)/range/OffsetRange
-POST /workbook/worksheets(<id|name>)/range(<address>)/OffsetRange
-POST /workbook/tables(<id|name>)/columns(<id|name>)/range/OffsetRange
+GET /workbook/names(<name>)/range/OffsetRange
+GET /workbook/worksheets/{id|name}/range(<address>)/OffsetRange
+GET /workbook/tables/{id|name}/columns/{id|name}/range/OffsetRange
 
 ```
 ## <a name="request-headers"></a>要求ヘッダー
 | 名前       | 説明|
 |:---------------|:----------|
-| Authorization  | Bearer <code>|
+| Authorization  | Bearer {code}|
 
 
 ## <a name="request-body"></a>要求本文
@@ -37,7 +40,7 @@ POST /workbook/tables(<id|name>)/columns(<id|name>)/range/OffsetRange
   "name": "range_offsetrange"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/names(<name>)/range/OffsetRange
+GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/names(<name>)/range/OffsetRange
 Content-type: application/json
 Content-length: 49
 

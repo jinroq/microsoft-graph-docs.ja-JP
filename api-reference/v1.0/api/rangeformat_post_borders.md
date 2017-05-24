@@ -3,18 +3,21 @@
 この API を使用して、新しい RangeBorder を作成します。
 ## <a name="prerequisites"></a>前提条件
 この API を実行するために必要な**スコープ**は、次のとおりです。 
+
+    * Files.ReadWrite
+
 ## <a name="http-request"></a>HTTP 要求
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /workbook/names(<name>)/range/format/borders
-POST /workbook/worksheets(<id|name>)/range(<address>)/format/borders
-POST /workbook/tables(<id|name>)/columns(<id|name>)/range/format/borders
+POST /workbook/worksheets/{id|name}/range(<address>)/format/borders
+POST /workbook/tables/{id|name}/columns/{id|name}/range/format/borders
 
 ```
 ## <a name="request-headers"></a>要求ヘッダー
 | 名前       | 説明|
 |:---------------|:----------|
-| Authorization  | Bearer <code>|
+| Authorization  | Bearer {code}|
 
 
 ## <a name="request-body"></a>要求本文

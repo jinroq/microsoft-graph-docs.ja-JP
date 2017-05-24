@@ -6,9 +6,9 @@
 
 |**GET シナリオ**|**サポートされているリソース**|**応答本文**|
 |:-----|:-----|:-----|
-|既知のリソース インスタンスから特定の拡張機能を取得します。| [contact](../resources/contact.md)、[event](../resources/event.md)、[group event](../resources/event.md)、[group post](../resources/post.md)、[message](../resources/message.md) | オープン拡張機能のみ。|
-|特定の拡張機能で展開された既知のリソース インスタンスを取得します。|連絡先、イベント、グループ イベント、メッセージ|オープン拡張機能で展開されたリソース インスタンス。|
-|特定の拡張機能でリソース インスタンスを検索し、展開します。 |連絡先、イベント、グループ イベント、メッセージ|オープン拡張機能で展開されたリソース インスタンス。|
+|既知のリソース インスタンスから特定の拡張機能を取得します。| [デバイス](../resources/device.md)、[イベント](../resources/event.md)、[グループ](../resources/group.md)、[グループ イベント](../resources/event.md)、[グループの投稿](../resources/post.md)、[メッセージ](../resources/message.md)、[組織](../resources/organization.md)、[個人用連絡先](../resources/contact.md)、[ユーザー](../resources/user.md) | オープン拡張機能のみ。|
+|特定の拡張機能で展開された既知のリソース インスタンスを取得します。|デバイス、イベント、グループ、グループ イベント、グループの投稿、メッセージ、組織、個人用連絡先、ユーザー |オープン拡張機能で展開されたリソース インスタンス。|
+|特定の拡張機能でリソース インスタンスを検索し、展開します。 |イベント、グループ イベント、グループの投稿、メッセージ、個人用連絡先|オープン拡張機能で展開されたリソース インスタンス。|
 
 
 ## <a name="prerequisites"></a>前提条件
@@ -17,10 +17,14 @@
 
 |**サポートされているリソース**|**アクセス許可**|**サポートされているリソース**|**アクセス許可** |
 |:-----|:-----|:-----|:-----|
-| [イベント](../resources/event.md) | _Calendars.Read_ | [グループ イベント](../resources/event.md) | _Calendars.Read_ | 
-| [グループ post](../resources/post.md) | _Group.Read.All_ | [メッセージ](../resources/message.md) | _Mail.Read_ | 
-| [個人用連絡先](../resources/contact.md) | _Contacts.Read_ |
- 
+| [デバイス](../resources/device.md) | _Directory.Read.All_ | [イベント](../resources/event.md) | _Calendars.Read_ | 
+| [グループ](../resources/group.md) | _Group.Read.All_ | [グループ イベント](../resources/event.md) | _Group.Read.All_ | 
+| [グループの投稿](../resources/post.md) | _Group.Read.All_ | [メッセージ](../resources/message.md) | _Mail.Read_ | 
+| [組織](../resources/organization.md) | _Directory.Read.All_ | [個人用連絡先](../resources/contact.md) | _Contacts.Read_ |
+| [ユーザー](../resources/user.md) | _User.Read.All_ | | |
+
+
+
 ## <a name="http-request"></a>HTTP 要求
 
 このセクションでは、前述の 3 つの `GET` シナリオの構文について説明します。
@@ -31,36 +35,53 @@
 
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /users/{Id|userPrincipalName}/messages/{Id}/extensions/{extensionId}
+GET /devices/{Id}/extensions/{extensionId}
 GET /users/{Id|userPrincipalName}/events/{Id}/extensions/{extensionId}
-GET /users/{Id|userPrincipalName}/contacts/{Id}/extensions/{extensionId}
+GET /groups/{Id}/extensions/{extensionId}
 GET /groups/{Id}/events/{Id}/extensions/{extensionId}
 GET /groups/{Id}/threads/{Id}/posts/{Id}/extensions/{extensionId}
+GET /users/{Id|userPrincipalName}/messages/{Id}/extensions/{extensionId}
+GET /organization/{Id}/extensions/{extensionId}
+GET /users/{Id|userPrincipalName}/contacts/{Id}/extensions/{extensionId}
+GET /users/{Id|userPrincipalName}/extensions/{extensionId}
 ```
 
 
 ### <a name="get-a-known-resource-instance-expanded-with-a-matching-extension"></a>一致する拡張機能で展開された既知のリソース インスタンスを取得する 
 
-リソース インスタンスを取得するのと同じ REST 要求を使用して、そのインスタンスの **id** プロパティのフィルターに一致する拡張機能を検索し、拡張機能でインスタンスを展開します。
+イベント、グループ イベント、グループの投稿、メッセージ、個人用連絡先のリソースの種類に関しては、リソース インスタンスを取得するのと同じ REST 要求を使用して、そのインスタンスの **id** プロパティのフィルターに一致する拡張機能を検索し、拡張機能でインスタンスを展開できます。応答には、リソース プロパティのほとんどが含まれています。
 
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /users/{Id|userPrincipalName}/messages/{Id}?$expand=extensions($filter=id eq '{extensionId}')
 GET /users/{Id|userPrincipalName}/events/{Id}?$expand=extensions($filter=id eq '{extensionId}')
-GET /users/{Id|userPrincipalName}/contacts/{Id}?$expand=extensions($filter=id eq '{extensionId}')
 GET /groups/{Id}/events/{Id}?$expand=extensions($filter=id eq '{extensionId}')
+GET /groups/{Id}/threads/{Id}/posts/{Id}?$expand=extensions($filter=id eq '{extensionId}')
+GET /users/{Id|userPrincipalName}/messages/{Id}?$expand=extensions($filter=id eq '{extensionId}')
+GET /users/{Id|userPrincipalName}/contacts/{Id}?$expand=extensions($filter=id eq '{extensionId}')
 ```
 
-### <a name="filter-for-resource-instances-expanded-with-a-matching-extension"></a>一致する拡張機能で展開された既知のリソース インスタンスにフィルターをかける 
+
+デバイス、グループ、組織、ユーザーのリソースの種類に関しては、リソース インスタンスから **id** プロパティやその他のプロパティを含めるために、`$select` パラメーターを使用する必要もあります。
+
+<!-- { "blockType": "ignored" } -->
+```http
+GET /devices/{Id}?$expand=extensions($filter=id eq '{extensionId}')&$select=id,{property_1},{property_n}
+GET /groups/{Id}?$expand=extensions($filter=id eq '{extensionId}')&$select=id,{property_1},{property_n}
+GET /organization/{Id}?$expand=extensions($filter=id eq '{extensionId}')&$select=id,{property_1},{property_n}
+GET /users/{Id|userPrincipalName}?$expand=extensions($filter=id eq '{extensionId}')&$select=id,{property_1},{property_n}
+```
+
+### <a name="filter-for-resource-instances-expanded-with-a-matching-extension"></a>一致する拡張機能で展開されたリソース インスタンスにフィルターをかける 
 
 サポートされているリソースのコレクションを取得するのと同じ REST 要求を使用して、対応する **id** プロパティの拡張機能を含むインスタンスのコレクションにフィルターをかけ、拡張機能でこれらのインスタンスを展開します。
 
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /users/{Id|userPrincipalName}/messages?$filter=Extensions/any(f:f/id eq '{extensionId}')&$expand=Extensions($filter=id eq '{extensionId}')
 GET /users/{Id|userPrincipalName}/events?$filter=Extensions/any(f:f/id eq '{extensionId}')&$expand=Extensions($filter=id eq '{extensionId}')
-GET /users/{Id|userPrincipalName}/contacts?$filter=Extensions/any(f:f/id eq '{extensionId}')&$expand=Extensions($filter=id eq '{extensionId}')
 GET /groups/{Id}/events?$filter=Extensions/any(f:f/id eq '{extensionId}')&$expand=Extensions($filter=id eq '{extensionId}')
+GET /groups/{Id}/threads/{Id}/posts?$filter=Extensions/any(f:f/id eq '{extensionId}')&$expand=Extensions($filter=id eq '{extensionId}')
+GET /users/{Id|userPrincipalName}/messages?$filter=Extensions/any(f:f/id eq '{extensionId}')&$expand=Extensions($filter=id eq '{extensionId}')
+GET /users/{Id|userPrincipalName}/contacts?$filter=Extensions/any(f:f/id eq '{extensionId}')&$expand=Extensions($filter=id eq '{extensionId}')
 ```
 
 >**注:**上記の構文は、拡張機能の取得元となるリソース インスタンスまたはコレクションを特定する一般的な方法を示しています。こうしたリソース インスタンスまたはコレクションを特定するために使用できる他の構文すべても、同様の方法でオープン拡張機能を取得できます。

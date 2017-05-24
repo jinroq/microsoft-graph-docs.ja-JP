@@ -2,6 +2,9 @@
 
 Office 365 グループ、動的なグループ、またはセキュリティ グループのいずれかの Azure Active Directory グループを表します。[directoryObject](directoryobject.md) から継承します。
 
+このリソースは以下をサポートしています。
+- [拡張機能](../../../concepts/extensibility_overview.md)を使用して、カスタム プロパティに独自のデータを追加します。
+- [デルタ](../api/user_delta.md)関数を提供することにより、[デルタ クエリ](../../../concepts/delta_query_overview.md)を使用して、増分の追加、削除、更新を追跡します。
 
 ## <a name="methods"></a>メソッド
 
@@ -39,6 +42,12 @@ Office 365 グループ、動的なグループ、またはセキュリティ �
 |[subscribeByMail](../api/group_subscribebymail.md)|なし|isSubscribedByMail プロパティを **true** に設定します。現在のユーザーが電子メールの会話を受信できるようにします。Office 365 のグループのみをサポートします。|
 |[unsubscribeByMail](../api/group_unsubscribebymail.md)|なし|isSubscribedByMail プロパティを **false** に設定します。現在のユーザーに対して電子メールでの会話の受信を無効にします。Office 365 のグループのみをサポートします。|
 |[resetUnseenCount](../api/group_resetunseencount.md)|なし|現在のユーザーが最後の訪問以降見ていない、すべての投稿の unseenCount を 0 にリセットします。Office 365 のグループのみをサポートします。|
+|[delta](../api/group_delta.md)|group コレクション| グループに対する増分の変更を取得します。 |
+|**オープン拡張機能**| | |
+|[オープン拡張機能を作成する](../api/opentypeextension_post_opentypeextension.md) |[openTypeExtension](opentypeextension.md)| オープン拡張機能を作成し、新規または既存のリソースにカスタム プロパティを追加します。|
+|[オープン拡張機能を取得する](../api/opentypeextension_get.md) |[openTypeExtension](opentypeextension.md) コレクション| 拡張機能の名前で識別されるオープン拡張機能を取得します。|
+|**スキーマ拡張機能**| | |
+|[スキーマ拡張機能の値を追加する](../../../concepts/extensibility_schema_groups.md) || スキーマ拡張機能の定義を作成し、それを使用してカスタマイズされた種類のデータをリソースに追加します。|
 
 
 ## <a name="properties"></a>プロパティ
@@ -46,6 +55,7 @@ Office 365 グループ、動的なグループ、またはセキュリティ �
 |:---------------|:--------|:----------|
 |allowExternalSenders|Boolean|既定値は **false** です。組織外部のユーザーがグループにメッセージを送信できるかどうかを示します。|
 |autoSubscribeNewMembers|Boolean|既定値は **false** です。グループに追加された新しいメンバーが、電子メールの通知を受信するように自動的にサブスクライブされるかどうかを示します。グループの PATCH 要求でこのプロパティを設定できます。グループを作成する最初の POST 要求では設定しないでください。|
+|createdDateTime|DateTimeOffset| グループが作成された日時。 |
 |description|String|グループに関するオプションの説明。 |
 |displayName|String|グループの表示名。このプロパティは、グループの作成時の必須プロパティであり、更新時にクリアすることはできません。$filter および $orderby をサポートします。|
 |groupTypes|String collection| 作成するグループの種類を指定します。使用可能な値は **Unified** (Office 365 のグループを作成する場合) または **DynamicMembership** (動的なグループを作成する場合) です。その他のグループの種類 (セキュリティが有効なグループやメールが有効なセキュリティ グループなど) の場合、このプロパティは設定しないでください。$filter をサポートします。|
@@ -72,12 +82,15 @@ Office 365 グループ、動的なグループ、またはセキュリティ �
 |createdOnBehalfOf|[directoryObject](directoryobject.md)| グループを作成したユーザー (またはアプリケーション)。注: ユーザーが管理者である場合、これは設定されません。読み取り専用です。|
 |ドライブ|[drive](drive.md)|グループのドライブ。読み取り専用です。|
 |events|[event](event.md) コレクション|グループの予定表イベント。|
+|extensions|[extension](extension.md) コレクション|グループに対して定義されているオープン拡張機能のコレクション。読み取り専用です。Null 許容型。|
 |memberOf|[directoryObject](directoryobject.md) コレクション|このグループがメンバーとして含まれているグループ。HTTP メソッド:GET (すべてのグループでサポートされます)。読み取り専用です。Null 許容型。|
 |members|[directoryObject](directoryobject.md) コレクション| このグループのメンバーであるユーザーとグループ。HTTP メソッド:GET (すべてのグループでサポートされます)、POST (Office 365 グループ、セキュリティ グループ、およびメールが有効なセキュリティ グループでサポートされます)、DELETE (Office 365 グループとセキュリティ グループでサポートされます)。Null 許容型。|
+|onenote|[OneNote](onenote.md)| 読み取り専用です。|
 |owners|[directoryObject](directoryobject.md) コレクション|グループの所有者。所有者は、このオブジェクトの変更を許可されている管理者以外のユーザーです。10 人の所有者に制限されます。HTTP メソッド:GET (すべてのグループでサポートされます)、POST (Office 365 グループ、セキュリティ グループ、およびメールが有効なセキュリティ グループでサポートされます)、DELETE (Office 365 グループとセキュリティ グループでサポートされます)。Null 許容型。|
 |写真|[profilePhoto](profilephoto.md)| グループのプロフィール写真 |
 |rejectedSenders|[directoryObject](directoryobject.md) コレクション|このグループで投稿またはカレンダーのイベントを作成することが許可されていないグループの一覧。Null 許容型|
-|スレッド|[conversationThread](conversationthread.md) コレクション| グループの会話スレッド。Null 許容型。|
+|sites|[site](site.md) コレクション|このグループ内の SharePoint サイトの一覧。/sites/root を使用して既定のサイトにアクセスします。
+|threads|[conversationThread](conversationthread.md) コレクション| グループの会話スレッド。Null 許容型。|
 
 
 ## <a name="json-representation"></a>JSON 表記
@@ -95,8 +108,10 @@ Office 365 グループ、動的なグループ、またはセキュリティ �
     "createdOnBehalfOf",
     "drive",
     "events",
+    "extensions",
     "memberOf",
     "members",
+    "onenote",
     "owners",
     "photo",
     "rejectedSenders",
@@ -110,6 +125,7 @@ Office 365 グループ、動的なグループ、またはセキュリティ �
 {
   "allowExternalSenders": false,
   "autoSubscribeNewMembers": true,
+  "createdDateTime": "String (timestamp)",
   "description": "string",
   "displayName": "string",
   "groupTypes": ["string"],
@@ -137,10 +153,17 @@ Office 365 グループ、動的なグループ、またはセキュリティ �
   "owners": [ { "@odata.type": "microsoft.graph.directoryObject" } ],
   "photo": { "@odata.type": "microsoft.graph.profilePhoto" },
   "rejectedSenders": [ { "@odata.type": "microsoft.graph.directoryObject" } ],
+  "sites": [ { "@odata.type": "microsoft.graph.site" } ],
   "threads": [ { "@odata.type": "microsoft.graph.conversationThread" }]
 }
 
 ```
+
+## <a name="see-also"></a>関連項目
+
+- [拡張機能を使用してカスタム データをリソースに追加する](../../../concepts/extensibility_overview.md)
+- [オープン拡張機能を使用してカスタム データをユーザーに追加する](../../../concepts/extensibility_open_users.md)
+- [スキーマ拡張機能を使用したグループへのカスタム データの追加](../../../concepts/extensibility_schema_groups.md)
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

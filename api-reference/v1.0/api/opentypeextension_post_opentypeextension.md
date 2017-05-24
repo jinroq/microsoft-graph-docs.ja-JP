@@ -8,9 +8,12 @@
 
 |**サポートされているリソース**|**アクセス許可**|**サポートされているリソース**|**アクセス許可** |
 |:-----|:-----|:-----|:-----|
-| [イベント](../resources/event.md) | _Calendars.ReadWrite_ | [グループ イベント](../resources/event.md) | _Calendars.ReadWrite_ | 
-| [グループの投稿](../resources/post.md) | _Group.ReadWrite.All_ | [メッセージ](../resources/message.md) | _Mail.ReadWrite_ | 
-| [個人用連絡先](../resources/contact.md) | _Contacts.ReadWrite_ |
+| [device](../resources/device.md) | _Device.ReadWrite.All_ | [イベント](../resources/event.md) | _Calendars.ReadWrite_ |
+| [グループ](../resources/group.md) | _Group.ReadWrite.All_ | [グループ イベント](../resources/event.md) | _Group.ReadWrite.All_ |
+| [グループの投稿](../resources/post.md) | _Group.ReadWrite.All_ | [メッセージ](../resources/message.md) | _Mail.ReadWrite_ |
+| [組織](../resources/organization.md) | _Directory.AccessAsUser.All_ | [個人用連絡先](../resources/contact.md) | _Contacts.ReadWrite_ |
+| [ユーザー](../resources/user.md) | _Directory.AccessAsUser.All_ | | |
+
 
  
 ## <a name="http-request"></a>HTTP 要求
@@ -21,11 +24,11 @@
 
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /users/{id|userPrincipalName}/contacts
 POST /users/{id|userPrincipalName}/events
 POST /users/{id|userPrincipalName}/messages
 POST /groups/{id}/events
 POST /groups/{id}/threads/{id}/posts/{id}/reply
+POST /users/{id|userPrincipalName}/contacts
 ```
 
 >**注:**上記の構文は、サポートされているリソース インスタンスを作成する一般的な方法を示しています。こうしたリソース インスタンスを作成するために使用できる他の POST 構文すべても、同様の方法でオープン拡張機能を作成できます。
@@ -38,11 +41,15 @@ POST /groups/{id}/threads/{id}/posts/{id}/reply
 
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /users/{id|userPrincipalName}/contacts/{id}/extensions
+POST /devices/{id}/extensions
 POST /users/{id|userPrincipalName}/events/{id}/extensions
-POST /users/{id|userPrincipalName}/messages/{id}/extensions
+POST /groups/{id}/extensions
 POST /groups/{id}/events/{id}/extensions
 POST /groups/{id}/threads/{id}/posts/{id}/extensions
+POST /users/{id|userPrincipalName}/messages/{id}/extensions
+POST /organization/{id}/extensions
+POST /users/{id|userPrincipalName}/contacts/{id}/extensions
+POST /users/{id|userPrincipalName}/extensions
 ```
 
 >**注:**上記の構文は、拡張機能をその中に作成するリソース インスタンスを特定する一般的な方法を示しています。こうしたリソース インスタンスを特定するために使用できる他の構文すべても、同様の方法でオープン拡張機能を作成できます。

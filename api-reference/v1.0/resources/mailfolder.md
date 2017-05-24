@@ -2,6 +2,7 @@
 
 受信トレイ、下書き、送信済みアイテムなどのユーザーのメールボックス内の mailFolder です。MailFolders にはメッセージと子 mailFolders を含めることができます。
 
+このリソースでは、[デルタ](../api/mailfolder_delta.md)関数を用意すれば、増分の追加、削除、更新に[デルタ クエリ](../../../concepts/delta_query_overview.md)を使用できます。
 
 ## <a name="methods"></a>メソッド
 
@@ -15,7 +16,8 @@
 |[更新する](../api/mailfolder_update.md) | [mailFolder](mailfolder.md)|指定した mailFolder オブジェクトを更新します。 |
 |[削除](../api/mailfolder_delete.md) | なし |指定した mailFolder オブジェクトを削除します。 |
 |[コピー](../api/mailfolder_copy.md)|[MailFolder](mailfolder.md)|mailFolder とその内容を別の mailFolder にコピーします。|
-|[移動](../api/mailfolder_move.md)|[MailFolder](mailfolder.md)|mailFolder とその内容を別の mailFolder に移動します。|
+|[delta](../api/mailfolder_delta.md)|[mailFolder](mailfolder.md) コレクション|ユーザーのメールボックスで追加または削除された一連のメール フォルダーを取得します。|
+|[move](../api/mailfolder_move.md)|[MailFolder](mailfolder.md)|mailFolder とその内容を別の mailFolder に移動します。|
 |[単一値の拡張プロパティを作成する](../api/singlevaluelegacyextendedproperty_post_singlevalueextendedproperties.md) |[mailFolder](mailFolder.md)  |新規または既存の mailFolder に、1 つ以上の単一値の拡張プロパティを作成します。   |
 |[単一値の拡張プロパティを持つ mailFolder の取得](../api/singlevaluelegacyextendedproperty_get.md)  | [mailFolder](mailFolder.md) | `$expand` または `$filter` を使用して、単一値の拡張プロパティを含む mailFolder を取得します。 |
 |[複数値の拡張プロパティを作成する](../api/multivaluelegacyextendedproperty_post_multivalueextendedproperties.md) | [mailFolder](mailFolder.md) | 新規または既存の mailFolder の 1 つ以上の複数値の拡張プロパティを作成します。  |
@@ -77,6 +79,12 @@ Outlook 内の MailFolder には、複数の種類のアイテムを含めるこ
 }
 
 ```
+
+## <a name="see-also"></a>関連項目
+
+- [デルタ クエリを使用して、Microsoft Graph データの変更を追跡する](../../../concepts/delta_query_overview.md)
+- [フォルダー内のメッセージへの増分変更を取得する](../../../concepts/delta_query_messages.md)
+
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

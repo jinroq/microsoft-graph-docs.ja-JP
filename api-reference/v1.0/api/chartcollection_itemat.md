@@ -1,18 +1,21 @@
-# <a name="chartcollection-itemat"></a>ChartCollection:ItemAt
+# <a name="chartcollection-itemat"></a>ChartCollection: ItemAt
 
 コレクション内での位置を基にグラフを取得します。
 ## <a name="prerequisites"></a>前提条件
 この API を実行するために必要な**スコープ**は、次のとおりです。 
+
+    * Files.ReadWrite
+
 ## <a name="http-request"></a>HTTP 要求
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/worksheets(<id|name>)/charts/ItemAt
+POST /workbook/worksheets/{id|name}/charts/ItemAt
 
 ```
 ## <a name="request-headers"></a>要求ヘッダー
 | 名前       | 説明|
 |:---------------|:----------|
-| Authorization  | Bearer <code>|
+| Authorization  | Bearer {code}|
 
 
 ## <a name="request-body"></a>要求本文
@@ -34,7 +37,7 @@ POST /workbook/worksheets(<id|name>)/charts/ItemAt
   "name": "chartcollection_itemat"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets(<id|name>)/charts/ItemAt
+POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/{id|name}/charts/ItemAt
 Content-type: application/json
 Content-length: 20
 

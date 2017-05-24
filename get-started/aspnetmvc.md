@@ -1,6 +1,6 @@
 # <a name="get-started-with-microsoft-graph-in-an-aspnet-46-mvc-app"></a>ASP.NET 4.6 MVC アプリで Microsoft Graph を使ってみる
 
-この記事では、Azure AD v2.0 エンドポイントからアクセス トークンを取得し、Microsoft Graph を呼び出すために必要なタスクについて説明します。ここでは、[ASP.NET 4.6 用の Microsoft Graph 接続サンプル](https://github.com/microsoftgraph/aspnet-connect-sample)の構築手順と、Microsoft Graph を使用するために実装する主要な概念について説明します。またこの記事では、[Microsoft Graph .NET クライアント ライブラリ](https://github.com/microsoftgraph/msgraph-sdk-dotnet)または未加工の REST 呼び出しを使用して Microsoft Graph にアクセスする方法についても説明します。
+この記事では、Azure AD v2.0 エンドポイントからアクセス トークンを取得し、Microsoft Graph を呼び出すために必要なタスクについて説明します。ここでは、[ASP.NET 4.6 用の Microsoft Graph 接続サンプル](https://github.com/microsoftgraph/aspnet-connect-sample)の構築手順と、Microsoft Graph を使用するために実装する主要な概念について説明します。
 
 次の画像は、作成するアプリを示しています。 
 
@@ -8,12 +8,7 @@
 
 [Azure AD v2.0 エンドポイント](https://azure.microsoft.com/en-us/documentation/articles/active-directory-appmodel-v2-overview) では、ユーザーは Microsoft アカウント (MSA) や、職場または学校のアカウントを使用してサインインします。アプリでは、[ASP.Net OpenID Connect OWIN ミドルウェア](https://www.nuget.org/packages/Microsoft.Owin.Security.OpenIdConnect/) および [.NET 用 Microsoft 認証ライブラリ (MSAL) ](https://www.nuget.org/packages/Microsoft.Identity.Client) を使用して、サインインとトークンの管理を行います。
 
->現在、MSAL はプレリリース段階であるため、運用コードでは使用できません。ここでは、例示目的のみに使用されています。 
-
-**アプリを作成してみたくありませんか。**「[Microsoft Graph クイック スタート](https://graph.microsoft.io/en-us/getting-started)」を使用すれば、すばやく稼働させることができます。
-
-Azure AD のエンドポイントを使用する接続サンプルのバージョンをダウンロードし、REST の呼び出しを使用して Microsoft Graph にアクセスするには、「[Office 365 ASP.NET MVC 接続サンプル](https://github.com/microsoftgraph/aspnet-connect-rest-sample/tree/last_v1_auth)」を参照してください。
-
+**アプリを作成してみたいですか。**「[Microsoft Graph クイック スタート](https://developer.microsoft.com/en-us/graph/quick-start)」を使用すれば、すぐに始めることができます。[REST バージョンのサンプル](https://github.com/microsoftgraph/aspnet-connect-rest-sample)も利用できます。
 
 ## <a name="prerequisites"></a>前提条件
 
@@ -58,7 +53,7 @@ Azure AD のエンドポイントを使用する接続サンプルのバージ�
 
 3. **appSettings** 要素内のアプリの構成キーの位置を確認します。ENTER_YOUR_CLIENT_ID と ENTER_YOUR_SECRET のプレース ホルダー値をコピーした値に置き換えます。
 
-リダイレクト URI は、登録したプロジェクトの URL です。要求される[アクセス許可のスコープ](https://developer.microsoft.com/en-us/graph/docs/authorization/permission_scopes)によって、アプリはユーザー プロファイル情報を取得したり、電子メールを送信したりできます。
+リダイレクト URI は、登録したプロジェクトの URL です。要求される[アクセス許可のスコープ](https://developer.microsoft.com/en-us/graph/docs/concepts/permission_scopes)によって、アプリはユーザー プロファイル情報を取得したり、電子メールを送信したりできます。
 
 
 ## <a name="authenticate-the-user-and-get-an-access-token"></a>ユーザーの認証とアクセス トークンの取得
@@ -81,7 +76,7 @@ Azure AD のエンドポイントを使用する接続サンプルのバージ�
   - Microsoft.Owin.Security.OpenIdConnect
   - Microsoft.Owin.Security.Cookies
   - Microsoft.Owin.Host.SystemWeb
-  - Microsoft.Identity.Client -Pre
+  - Microsoft.Identity.Client
 
 ここでアプリの作成に戻ります。
 
@@ -232,10 +227,7 @@ Azure AD のエンドポイントを使用する接続サンプルのバージ�
 
 ## <a name="call-microsoft-graph"></a>Microsoft Graph を呼び出す
 
-Microsoft Graph ライブラリを使用する場合は読み進んでください。REST を使用する場合は、「[REST API を使用する](#using-the-rest-api)」をご覧ください。
-
-### <a name="using-the-library"></a>ライブラリを使う
-この手順では、**SDKHelper**、**GraphService**、および **HomeController** クラスに注目します。 
+この手順では、**SDKHelper**、**GraphService**、**HomeController** クラスにフォーカスします。 
 
  - **SDKHelper** は、Microsoft Graph を呼び出す前に毎回、ライブラリから **GraphServiceClient** のインスタンスを初期化します。このときに、アクセス トークンが要求に追加されます。 
  - **GraphService** は、ライブラリを使用して Microsoft Graph への要求をビルドして送信し、応答を処理します。
@@ -305,15 +297,39 @@ Microsoft Graph ライブラリを使用する場合は読み進んでくださ�
 
 1. 電子メールをビルドし、送信するために、*//SendEmail* を以下のメソッドに置き換えます。
 
-        // Send an email message from the current user.
-        public async Task SendEmail(GraphServiceClient graphClient, Message message)
+        public async Task<Message> BuildEmailMessage(GraphServiceClient graphClient, string recipients, string subject)
         {
-            await graphClient.Me.SendMail(message, true).Request().PostAsync();
-        }
 
-        // Create the email message.
-        public Message BuildEmailMessage(string recipients, string subject)
-        {
+            // Get current user photo
+            Stream photoStream = await GetCurrentUserPhotoStreamAsync(graphClient);
+
+
+            // If the user doesn't have a photo, or if the user account is MSA, we use a default photo
+
+            if ( photoStream == null)
+            {
+                photoStream = System.IO.File.OpenRead(System.Web.Hosting.HostingEnvironment.MapPath("/Content/test.jpg"));
+            }
+
+            MemoryStream photoStreamMS = new MemoryStream();
+            // Copy stream to MemoryStream object so that it can be converted to byte array.
+            photoStream.CopyTo(photoStreamMS);
+
+            DriveItem photoFile = await UploadFileToOneDrive(graphClient, photoStreamMS.ToArray());
+
+            MessageAttachmentsCollectionPage attachments = new MessageAttachmentsCollectionPage();
+            attachments.Add(new FileAttachment
+            {
+                ODataType = "#microsoft.graph.fileAttachment",
+                ContentBytes = photoStreamMS.ToArray(),
+                ContentType = "image/png",
+                Name = "me.png"
+            });
+
+            Permission sharingLink = await GetSharingLinkAsync(graphClient, photoFile.Id);
+
+            // Add the sharing link to the email body.
+            string bodyContent = string.Format(Resource.Graph_SendMail_Body_Content, sharingLink.Link.WebUrl);
 
             // Prepare the recipient list.
             string[] splitter = { ";" };
@@ -335,13 +351,74 @@ Microsoft Graph ライブラリを使用する場合は読み進んでくださ�
             {
                 Body = new ItemBody
                 {
-                    Content = Resource.Graph_SendMail_Body_Content,
+                    Content = bodyContent,
                     ContentType = BodyType.Html,
                 },
                 Subject = subject,
-                ToRecipients = recipientList
+                ToRecipients = recipientList,
+                Attachments = attachments
             };
             return email;
+        }
+
+        // Gets the stream content of the signed-in user's photo. 
+        // This snippet doesn't work with consumer accounts.
+        public async Task<Stream> GetCurrentUserPhotoStreamAsync(GraphServiceClient graphClient)
+        {
+            Stream currentUserPhotoStream = null;
+
+            try
+            {
+                currentUserPhotoStream = await graphClient.Me.Photo.Content.Request().GetAsync();
+
+            }
+
+            // If the user account is MSA (not work or school), the service will throw an exception.
+            catch (ServiceException)
+            {
+                return null;
+            }
+
+            return currentUserPhotoStream;
+
+        }
+
+        // Uploads the specified file to the user's root OneDrive directory.
+        public async Task<DriveItem> UploadFileToOneDrive(GraphServiceClient graphClient, byte[] file)
+        {
+            DriveItem uploadedFile = null;
+
+            try
+            {
+                MemoryStream fileStream = new MemoryStream(file);
+                uploadedFile = await graphClient.Me.Drive.Root.ItemWithPath("me.png").Content.Request().PutAsync<DriveItem>(fileStream);
+
+            }
+
+
+            catch (ServiceException)
+            {
+                return null;
+            }
+
+            return uploadedFile;
+        }
+
+        public static async Task<Permission> GetSharingLinkAsync(GraphServiceClient graphClient, string Id)
+        {
+            Permission permission = null;
+
+            try
+            {
+                permission = await graphClient.Me.Drive.Items[Id].CreateLink("view").Request().PostAsync();
+            }
+
+            catch (ServiceException)
+            {
+                return null;
+            }
+
+            return permission;
         }
 
 1. **[コントローラー]** フォルダーで、HomeController.cs を開きます。
@@ -384,7 +461,7 @@ Microsoft Graph ライブラリを使用する場合は読み進んでくださ�
             }
 
             // Build the email message.
-            Message message = graphService.BuildEmailMessage(Request.Form["recipients"], Request.Form["subject"]);
+            Message message = await graphService.BuildEmailMessage(graphClient, Request.Form["recipients"], Request.Form["subject"]);
             try
             {
 
@@ -432,218 +509,6 @@ Microsoft Graph ライブラリを使用する場合は読み進んでくださ�
         SDKHelper.SignOutClient();
 
 これで、[アプリを実行する](#run-the-app)準備ができました。
-
-### <a name="using-the-rest-api"></a>REST API を使用する
-この手順では、**GraphService**、**GraphResources**、および **HomeController** クラスについて作業します。 
-
- - **GraphService** は、Microsoft Graph への HTTP 要求をビルドして送信し、応答を処理します。 
- - **GraphResources** は、アプリが Microsoft Graph との間で送受信するデータを表します。 
- - **HomeController** には、UI イベントへの応答として、Microsoft Graph への呼び出しを開始するアクションが含まれています。
-
-まず、データ アクセス層を定義します。
-
-1. **[モデル]** フォルダーで、GraphService.cs を開きます。
-
-1. 次の **using** ステートメントを追加します。
-
-        using Newtonsoft.Json;
-        using Newtonsoft.Json.Linq;
-        using System.Net;
-        using System.Net.Http;
-        using System.Net.Http.Headers;
-        using System.Text;
-
-1. *//GetMyEmailAddress* を次のメソッドに置き換えます。これにより、現在のユーザーの電子メール アドレスを取得します。 
-
-        // Get the current user's email address from their profile.
-        public async Task<string> GetMyEmailAddress(string accessToken)
-        {
-
-            // Get the current user. 
-            // The app only needs the user's email address, so select the mail and userPrincipalName properties.
-            // If the mail property isn't defined, userPrincipalName should map to the email for all account types. 
-            string endpoint = "https://graph.microsoft.com/v1.0/me";
-            string queryParameter = "?$select=mail,userPrincipalName";
-            UserInfo me = new UserInfo();
-
-            using (var client = new HttpClient())
-            {
-                using (var request = new HttpRequestMessage(HttpMethod.Get, endpoint + queryParameter))
-                {
-                    request.Headers.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
-                    request.Headers.Authorization = new AuthenticationHeaderValue("Bearer", accessToken);
-                    using (HttpResponseMessage response = await client.SendAsync(request))
-                    {
-                        if (response.StatusCode == HttpStatusCode.OK)
-                        {
-                            var json = JObject.Parse(await response.Content.ReadAsStringAsync());
-                            me.Address = !string.IsNullOrEmpty(json.GetValue("mail").ToString())?json.GetValue("mail").ToString():json.GetValue("userPrincipalName").ToString();
-                        }
-                        return me.Address?.Trim();
-                    }
-                }
-            }
-        }
-
-1. 電子メールをビルドし、送信するために、*//SendEmail* を以下のメソッドに置き換えます。
-
-        // Send an email message from the current user.
-        public async Task<string> SendEmail(string accessToken, MessageRequest email)
-        {
-            string endpoint = "https://graph.microsoft.com/v1.0/me/sendMail";
-            using (var client = new HttpClient())
-            {
-                using (var request = new HttpRequestMessage(HttpMethod.Post, endpoint))
-                {
-                    request.Headers.Authorization = new AuthenticationHeaderValue("Bearer", accessToken);
-                    request.Content = new StringContent(JsonConvert.SerializeObject(email), Encoding.UTF8, "application/json");
-                    using (HttpResponseMessage response = await client.SendAsync(request))
-                    {
-                        if (response.IsSuccessStatusCode)
-                        {
-                            return Resource.Graph_SendMail_Success_Result;
-                        }
-                        return response.ReasonPhrase;
-                    }
-                }
-            }
-        }
-
-        // Create the email message.
-        public MessageRequest BuildEmailMessage(string recipients, string subject)
-        {
-
-            // Prepare the recipient list.
-            string[] splitter = { ";" };
-            string[] splitRecipientsString = recipients.Split(splitter, StringSplitOptions.RemoveEmptyEntries);
-            List<Recipient> recipientList = new List<Recipient>();
-            foreach (string recipient in splitRecipientsString)
-            {
-                recipientList.Add(new Recipient
-                {
-                    EmailAddress = new UserInfo
-                    {
-                        Address = recipient.Trim()
-                    }
-                });
-            }
-
-            // Build the email message.
-            Message message = new Message
-            {
-                Body = new ItemBody
-                {
-                    Content = Resource.Graph_SendMail_Body_Content,
-                    ContentType = "HTML"
-                },
-                Subject = subject,
-                ToRecipients = recipientList
-            };
-
-            return new MessageRequest
-            {
-                Message = message,
-                SaveToSentItems = true
-            };
-        }
-
-1. **[モデル]** フォルダーを右クリックし、**[追加]** > **[クラス]** の順に選択します。
-
-1. クラスの名前を *GraphResources* にして **[OK]** を選択します。
-
-1. コンテンツを次のコードで置き換えます。
- 
-        using System;
-        using System.Collections.Generic;
-
-        namespace Microsoft_Graph_SDK_ASPNET_Connect.Models
-        {
-            public class UserInfo
-            {
-                public string Address { get; set; }
-            }
-
-            public class Message
-            {
-                public string Subject { get; set; }
-                public ItemBody Body { get; set; }
-                public List<Recipient> ToRecipients { get; set; }
-            }
-
-          public class Recipient
-            {
-                public UserInfo EmailAddress { get; set; }
-            }
-
-            public class ItemBody
-            {
-                public string ContentType { get; set; }
-                public string Content { get; set; }
-            }
-
-            public class MessageRequest
-            {
-                public Message Message { get; set; }
-                public bool SaveToSentItems { get; set; }
-            }
-        }
-
-1. **[コントローラー]** フォルダーで、HomeController.cs を開きます。
-  
-1. *// Controller actions* を、次のアクションに置き換えます。
-
-        [Authorize]
-        // Get the current user's email address from their profile.
-        public async Task<ActionResult> GetMyEmailAddress()
-        {
-            try
-            {
-
-                // Get an access token.
-                string accessToken = await SampleAuthProvider.Instance.GetUserAccessTokenAsync();
-
-                // Get the current user's email address. 
-                ViewBag.Email = await graphService.GetMyEmailAddress(accessToken);
-                return View("Graph");
-            }
-            catch (Exception e)
-            {
-                if (e.Message == Resource.Error_AuthChallengeNeeded) return new EmptyResult();
-                return RedirectToAction("Index", "Error", new { message = Resource.Error_Message + Request.RawUrl + ": " + e.Message });
-            }
-        }
-
-        [Authorize]
-        // Send mail on behalf of the current user.
-        public async Task<ActionResult> SendEmail()
-        {
-            if (string.IsNullOrEmpty(Request.Form["email-address"]))
-            {
-                ViewBag.Message = Resource.Graph_SendMail_Message_GetEmailFirst;
-                return View("Graph");
-            }
-
-            // Build the email message.
-            MessageRequest email = graphService.BuildEmailMessage(Request.Form["recipients"], Request.Form["subject"]);
-            try
-            {
-
-                // Get an access token.
-                string accessToken = await SampleAuthProvider.Instance.GetUserAccessTokenAsync();
-
-                // Send the email.
-                ViewBag.Message = await graphService.SendEmail(accessToken, email);
-
-                // Reset the current user's email address and the status to display when the page reloads.
-                ViewBag.Email = Request.Form["email-address"];
-                return View("Graph");
-            }
-            catch (Exception e)
-            {
-                if (e.Message == Resource.Error_AuthChallengeNeeded) return new EmptyResult();
-                return RedirectToAction("Index", "Error", new { message = Resource.Error_Message + Request.RawUrl + ": " + e.Message });
-            }
-        }
 
 ## <a name="run-the-app"></a>アプリの実行
 1. F5 キーを押して、アプリを構築して実行します。 

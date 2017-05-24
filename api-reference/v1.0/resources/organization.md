@@ -2,12 +2,20 @@
 
 Azure Active Directory テナントを表します。テナントでは読み取りおよび更新操作のみがサポートされ、作成と削除はサポートされません。[directoryObject](directoryobject.md) から継承します。
 
+このリソースでは、[拡張機能](../../../concepts/extensibility_overview.md)を使用してカスタム プロパティに独自のデータを追加することができます。
+
+
 ## <a name="methods"></a>メソッド
 
 | メソッド       | 戻り値の型  |説明|
 |:---------------|:--------|:----------|
 |[組織を取得する](../api/organization_get.md) | [organization](organization.md) |組織オブジェクトのプロパティと関係を読み取ります。|
 |[Update](../api/organization_update.md) | [organization](organization.md)  |組織オブジェクトを更新します。(**marketingNotificationMails** プロパティと **technicalNotificationMails** プロパティのみを更新できます。) |
+|**オープン拡張機能**| | |
+|[オープン拡張機能を作成する](../api/opentypeextension_post_opentypeextension.md) |[openTypeExtension](opentypeextension.md)| オープン拡張機能を作成し、新規または既存のリソースにカスタム プロパティを追加します。|
+|[オープン拡張機能を取得する](../api/opentypeextension_get.md) |[openTypeExtension](opentypeextension.md) コレクション| 拡張機能の名前で識別されるオープン拡張機能を取得します。|
+|**スキーマ拡張機能**| | |
+|[スキーマ拡張機能の値を追加する](../../../concepts/extensibility_schema_groups.md) || スキーマ拡張機能の定義を作成し、それを使用してカスタマイズされた種類のデータをリソースに追加します。|
 
 ## <a name="properties"></a>プロパティ
 
@@ -36,8 +44,11 @@ Azure Active Directory テナントを表します。テナントでは読み取
 | telephoneNumber                      | String                                                            |                                                                                                                                                                                                                                                                                      |
 | verifiedDomains                      | [VerifiedDomain](verifieddomain.md) コレクション                    | このテナントに関連付けられているドメインのコレクション。null 許容ではありません。                                                                                                                                                                                                                 |
 
-## <a name="relationships"></a>リレーションシップ
-なし
+## <a name="relationships"></a>関係
+| リレーションシップ | 型    |説明|
+|:---------------|:--------|:----------|
+|extensions|[extension](extension.md) コレクション|組織に対して定義されているオープン拡張機能のコレクション。読み取り専用です。Null 許容型。|
+
 
 ## <a name="json-representation"></a>JSON 表記
 
@@ -46,7 +57,7 @@ Azure Active Directory テナントを表します。テナントでは読み取
 <!-- {
   "blockType": "resource",
   "optionalProperties": [
-
+    "extensions"
   ],
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.organization"
@@ -76,6 +87,12 @@ Azure Active Directory テナントを表します。テナントでは読み取
 }
 
 ```
+
+## <a name="see-also"></a>関連項目
+
+- [拡張機能を使用してカスタム データをリソースに追加する](../../../concepts/extensibility_overview.md)
+- [オープン拡張機能を使用してカスタム データをユーザーに追加する](../../../concepts/extensibility_open_users.md)
+- [スキーマ拡張機能を使用したグループへのカスタム データの追加](../../../concepts/extensibility_schema_groups.md)
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

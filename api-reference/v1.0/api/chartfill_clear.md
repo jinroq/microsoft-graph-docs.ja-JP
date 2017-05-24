@@ -3,18 +3,21 @@
 グラフ要素の塗りつぶしの色をクリアします。
 ## <a name="prerequisites"></a>前提条件
 この API を実行するために必要な**スコープ**は、次のとおりです。 
+
+    * Files.ReadWrite
+
 ## <a name="http-request"></a>HTTP 要求
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/worksheets(<id|name>)/charts(<name>)/format/fill/clear
-POST /workbook/worksheets(<id|name>)/charts(<name>)/title/format/fill/clear
-POST /workbook/worksheets(<id|name>)/charts(<name>)/legend/format/fill/clear
+POST /workbook/worksheets/{id|name}/charts(<name>)/format/fill/clear
+POST /workbook/worksheets/{id|name}/charts(<name>)/title/format/fill/clear
+POST /workbook/worksheets/{id|name}/charts(<name>)/legend/format/fill/clear
 
 ```
 ## <a name="request-headers"></a>要求ヘッダー
 | 名前       | 説明|
 |:---------------|:----------|
-| Authorization  | Bearer <code>|
+| Authorization  | Bearer {code}|
 
 
 ## <a name="request-body"></a>要求本文
@@ -31,7 +34,7 @@ POST /workbook/worksheets(<id|name>)/charts(<name>)/legend/format/fill/clear
   "name": "chartfill_clear"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets(<id|name>)/charts(<name>)/format/fill/clear
+POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/{id|name}/charts(<name>)/format/fill/clear
 ```
 
 ##### <a name="response"></a>応答

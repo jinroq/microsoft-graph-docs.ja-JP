@@ -1,6 +1,6 @@
 # <a name="create-mailfolder"></a>MailFolder を作成する
 
-この API を使用して、新しいメール フォルダーを作成します。
+この API を使用して、ユーザーのメールボックスのルート フォルダーに新しいメール フォルダーを作成します。
 ## <a name="prerequisites"></a>前提条件
 この API を実行するには、以下のいずれかの**スコープ**が必要です。*Mail.ReadWrite*
 ## <a name="http-request"></a>HTTP 要求
@@ -19,7 +19,6 @@ POST /users/{id | userPrincipalName}/mailFolders
 
 | パラメーター       | 型    |説明|
 |:---------------|:--------|:----------|
-|parentFolderId|String|親フォルダーのフォルダー ID、あるいは `Inbox`、`Drafts`、`SentItems` または `DeletedItems` の既知のフォルダー名です。|
 |displayName|String|新しいフォルダーの表示名です。|
 
 ## <a name="response"></a>応答
@@ -38,8 +37,7 @@ Content-type: application/json
 Content-length: 159
 
 {
-  "displayName": "displayName-value",
-  "parentFolderId": "parentFolderId-value"
+  "displayName": "displayName-value"
 }
 ```
 

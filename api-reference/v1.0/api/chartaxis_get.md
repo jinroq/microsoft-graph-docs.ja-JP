@@ -3,12 +3,15 @@
 chartAxis オブジェクトのプロパティと関係を取得します。
 ## <a name="prerequisites"></a>前提条件
 この API を実行するために必要な**スコープ**は、次のとおりです。 
+
+    * Files.ReadWrite
+
 ## <a name="http-request"></a>HTTP 要求
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /workbook/worksheets(<id|name>)/charts(<name>)/axes/valueaxis
-GET /workbook/worksheets(<id|name>)/charts(<name>)/axes/seriesaxis
-GET /workbook/worksheets(<id|name>)/charts(<name>)/axes/categoryaxis
+GET /workbook/worksheets/{id|name}/charts(<name>)/axes/valueaxis
+GET /workbook/worksheets/{id|name}/charts(<name>)/axes/seriesaxis
+GET /workbook/worksheets/{id|name}/charts(<name>)/axes/categoryaxis
 ```
 ## <a name="optional-query-parameters"></a>オプションのクエリ パラメーター
 このメソッドは、応答をカスタマイズするための [OData クエリ パラメーター](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters)をサポートします。
@@ -16,7 +19,7 @@ GET /workbook/worksheets(<id|name>)/charts(<name>)/axes/categoryaxis
 ## <a name="request-headers"></a>要求ヘッダー
 | 名前      |説明|
 |:----------|:----------|
-| Authorization  | Bearer <code>|
+| Authorization  | Bearer {code}|
 
 
 ## <a name="request-body"></a>要求本文
@@ -31,7 +34,7 @@ GET /workbook/worksheets(<id|name>)/charts(<name>)/axes/categoryaxis
   "name": "get_chartaxis"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets(<id|name>)/charts(<name>)/axes/valueaxis
+GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/{id|name}/charts(<name>)/axes/valueaxis
 ```
 ##### <a name="response"></a>応答
 以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。

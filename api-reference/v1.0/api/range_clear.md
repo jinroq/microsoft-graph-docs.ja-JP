@@ -3,18 +3,21 @@
 範囲の値、書式、塗りつぶし、罫線などをクリアします。
 ## <a name="prerequisites"></a>前提条件
 この API を実行するために必要な**スコープ**は、次のとおりです。 
+
+    * Files.ReadWrite
+
 ## <a name="http-request"></a>HTTP 要求
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/names(<name>)/range/clear
-POST /workbook/worksheets(<id|name>)/range(<address>)/clear
-POST /workbook/tables(<id|name>)/columns(<id|name>)/range/clear
+GET /workbook/names(<name>)/range/clear
+GET /workbook/worksheets/{id|name}/range(<address>)/clear
+GET /workbook/tables/{id|name}/columns/{id|name}/range/clear
 
 ```
 ## <a name="request-headers"></a>要求ヘッダー
 | 名前       | 説明|
 |:---------------|:----------|
-| Authorization  | Bearer <code>|
+| Authorization  | Bearer {code}|
 
 
 ## <a name="request-body"></a>要求本文
@@ -36,7 +39,7 @@ POST /workbook/tables(<id|name>)/columns(<id|name>)/range/clear
   "name": "range_clear"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/names(<name>)/range/clear
+GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/names(<name>)/range/clear
 Content-type: application/json
 Content-length: 32
 

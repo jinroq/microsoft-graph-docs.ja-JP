@@ -3,17 +3,20 @@
 現在テーブルに適用されているすべてのフィルターをクリアします。
 ## <a name="prerequisites"></a>前提条件
 この API を実行するために必要な**スコープ**は、次のとおりです。 
+
+    * Files.ReadWrite
+
 ## <a name="http-request"></a>HTTP 要求
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/tables(<id|name>)/clearFilters
-POST /workbook/worksheets(<id|name>)/tables(<id|name>)/clearFilters
+POST /workbook/tables/{id|name}/clearFilters
+POST /workbook/worksheets/{id|name}/tables/{id|name}/clearFilters
 
 ```
 ## <a name="request-headers"></a>要求ヘッダー
 | 名前       | 説明|
 |:---------------|:----------|
-| Authorization  | Bearer <code>|
+| Authorization  | Bearer {code}|
 
 
 ## <a name="request-body"></a>要求本文
@@ -30,7 +33,7 @@ POST /workbook/worksheets(<id|name>)/tables(<id|name>)/clearFilters
   "name": "table_clearfilters"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/tables(<id|name>)/clearFilters
+POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/tables/{id|name}/clearFilters
 ```
 
 ##### <a name="response"></a>応答

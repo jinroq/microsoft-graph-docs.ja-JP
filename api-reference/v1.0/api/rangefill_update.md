@@ -3,17 +3,20 @@
 rangefill オブジェクトのプロパティを更新します。
 ## <a name="prerequisites"></a>前提条件
 この API を実行するために必要な**スコープ**は、次のとおりです。 
+
+    * Files.ReadWrite
+
 ## <a name="http-request"></a>HTTP 要求
 <!-- { "blockType": "ignored" } -->
 ```http
 PATCH /workbook/names(<name>)/range/format/fill
-PATCH /workbook/worksheets(<id|name>)/range(<address>)/format/fill
-PATCH /workbook/tables(<id|name>)/columns(<id|name>)/range/format/fill
+PATCH /workbook/worksheets/{id|name}/range(<address>)/format/fill
+PATCH /workbook/tables/{id|name}/columns/{id|name}/range/format/fill
 ```
 ## <a name="optional-request-headers"></a>オプションの要求ヘッダー
 | 名前       | 説明|
 |:-----------|:-----------|
-| Authorization  | Bearer <code>|
+| Authorization  | Bearer {code}|
 
 
 ## <a name="request-body"></a>要求本文
@@ -53,9 +56,6 @@ HTTP/1.1 200 OK
 Content-type: application/json
 Content-length: 28
 
-{
-  "color": "color-value"
-}
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

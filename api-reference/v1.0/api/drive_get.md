@@ -3,12 +3,12 @@
 [Drive](../resources/drive.md) リソースのプロパティと関係を取得します。ドライブは、ファイル システムの最上位のコンテナーです。Graph API を使用すると、ユーザーの OneDrive または OneDrive for Business や SharePoint ドキュメント ライブラリのドライブ リソースにアクセスできます。
 
 ## <a name="prerequisites"></a>前提条件
+
 この API を実行するには、以下のいずれかの**スコープ**が必要です。
 
-  * Files.Read
-  * Files.ReadWrite
-  * Sites.Read.All
-
+* Files.Read
+* Files.ReadWrite
+* Sites.Read.All
 
 ## <a name="get-a-users-onedrive"></a>ユーザーの OneDrive を取得する
 
@@ -17,29 +17,35 @@
 ### <a name="http-request"></a>HTTP 要求
 
 <!-- { "blockType": "ignored" } -->
+
 ```http
 GET /me/drive
 GET /users/{idOrUserPrincipalName}/drive
 ```
 
-## <a name="get-the-document-library-assocaited-with-a-group"></a>グループに関連付けられたドキュメント ライブラリを取得する
+## <a name="get-the-document-library-associated-with-a-group"></a>グループに関連付けられたドキュメント ライブラリを取得する
 
 [グループの](../resources/group.md)既定のドキュメント ライブラリにアクセスするには、そのグループについての**ドライブ**関係をアプリが要求する必要があります。
 
 ### <a name="http-request"></a>HTTP 要求
+
 <!-- { "blockType": "ignored" } -->
+
 ```http
 GET /groups/{idOrUserPrincipalName}/drive
 ```
 
 
 ## <a name="optional-query-parameters"></a>オプションのクエリ パラメーター
+
 このメソッドは、応答をカスタマイズするための [OData クエリ パラメーター](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters)をサポートします。
 
 ## <a name="request-body"></a>要求本文
+
 このメソッドには、要求本文を指定しません。
 
 ## <a name="response"></a>応答
+
 成功した場合、このメソッドは `200 OK` 応答コードと、応答本文で [Drive](../resources/drive.md) リソースを返します。
 
 ## <a name="example"></a>例

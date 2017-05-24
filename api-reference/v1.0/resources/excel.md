@@ -6,8 +6,10 @@ Microsoft Graph を使用すると、OneDrive、SharePoint、またはその他�
 `https://graph.microsoft.com/{version}/me/drive/root:/{item-path}:/workbook/`  
 
 ブックに対して作成、読み取り、更新、削除 (CRUD) 操作を実行するための標準 REST API を使用して、一連の Excel オブジェクト (テーブル、範囲、またはグラフなど) にアクセスできます。たとえば、`https://graph.microsoft.com/{version}/me/drive/items/{id}/workbook/` では、  
-ブックの一部であるワークシート オブジェクトのコレクションが返されます。    
+ワークブックの一部であるワークシート オブジェクトのコレクションが返されます。    
 
+
+** 注:Excel の REST API では、Office Open XML ファイル形式のブックのみをサポートしています。`.xls` 拡張子のブックはサポートされていません。 
 
 ## <a name="authorization-and-scopes"></a>承認とスコープ
 
@@ -146,6 +148,34 @@ content-type: application/json;odata.metadata
 }
 ```
 
+#### <a name="get-a-new-worksheet"></a>新しいワークシートの取得 
+ 
+<!-- { "blockType": "ignored" } -->
+```http
+GET /{version}/me/drive/items/01CYZLFJGUJ7JHBSZDFZFL25KSZGQTVAUN/workbook/worksheets/Sheet32243
+content-type: Application/Json 
+authorization: Bearer {access-token} 
+workbook-session-id: {session-id}
+```
+
+応答 
+<!-- { "blockType": "ignored" } -->
+```http
+HTTP code: 200, OK
+content-type: application/json;odata.metadata 
+
+{
+  "@odata.context": "https://graph.microsoft.com/{version}/$metadata#users('f6d92604-4b76-4b70-9a4c-93dfbcc054d5')/drive/items('01CYZLFJGUJ7JHBSZDFZFL25KSZGQTVAUN')/workbook/worksheets/$entity",
+  "@odata.id": "/users('f6d92604-4b76-4b70-9a4c-93dfbcc054d5')/drive/items('01CYZLFJGUJ7JHBSZDFZFL25KSZGQTVAUN')/workbook/worksheets(%27%7B75A18F35-34AA-4F44-97CC-FDC3C05D9F40%7D%27)",
+  "id": "{75A18F35-34AA-4F44-97CC-FDC3C05D9F40}",
+  "name": "Sheet32243",
+  "position": 5,
+  "visibility": "Visible"
+}
+```
+
+** 注:ID を使用してワークシートを取得することもできます。ただし、現在、ID には `{` と '}' 文字が含まれているため、API を実行できるよう、URL エンコードする必要があります。例:`{75A18F35-34AA-4F44-97CC-FDC3C05D9F40}` という ID のワークシートを取得するためには、パスの ID を `/workbook/worksheets/%7B75A18F35-34AA-4F44-97CC-FDC3C05D9F40%7D` として URL エンコードします。 
+
 #### <a name="delete-a-worksheet"></a>ワークシートの削除
 
 要求
@@ -168,7 +198,7 @@ HTTP code: 204, No Content
 要求 
 
 ```
-PATCH /{version}/me/drive/items/01CYZLFJGUJ7JHBSZDFZFL25KSZGQTVAUN/workbook/worksheets('%7B00000000-0001-0000-0100-000000000000%7D')
+PATCH /{version}/me/drive/items/01CYZLFJGUJ7JHBSZDFZFL25KSZGQTVAUN/workbook/worksheets/SheetA
 content-type: Application/Json 
 accept: application/Json 
 authorization: Bearer {access-token} 
@@ -228,6 +258,8 @@ content-type: application/json;odata.metadata
   ]
 }
 ```
+
+** 注:ただし、ID には `{` と `}` 文字が含まれているため (例: `{00000000-0008-0000-0100-000003000000}`)、API を実行できるよう、URL エンコードする必要があります。例:グラフ オブジェクトを取得するためには、パスの ID を `/charts/%7B00000000-0008-0000-0100-000003000000%7D` として URL エンコードします。 
 
 #### <a name="get-chart-image"></a>グラフの画像を取得する
 
@@ -1191,7 +1223,7 @@ PATCH /workbook/worksheets('Sheet1')/range(address="A1:B00")
 ##### <a name="request"></a>要求
 <!-- { "blockType": "ignored" } -->
 ```http
-POST https://graph.microsoft.com/v1.0/me/drive/root:/book1.xlsx:/workbook/functions/pmt
+https://graph.microsoft.com/v1.0/me/drive/root:/book1.xlsx:/workbook/functions/pmt
 content-type: Application/Json 
 authorization: Bearer {access-token} 
 workbook-session-id: {session-id}

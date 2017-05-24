@@ -1,18 +1,21 @@
-# <a name="chartpointscollection-itemat"></a>ChartPointsCollection:ItemAt
+# <a name="chartpointscollection-itemat"></a>ChartPointsCollection: ItemAt
 
 データ系列内の位置に基づくポイントを取得します。
 ## <a name="prerequisites"></a>前提条件
 この API を実行するために必要な**スコープ**は、次のとおりです。 
+
+    * Files.ReadWrite
+
 ## <a name="http-request"></a>HTTP 要求
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/worksheets(<id|name>)/charts(<name>)/series(<undefined>)/points/ItemAt
+POST /workbook/worksheets/{id|name}/charts(<name>)/series(<undefined>)/points/ItemAt
 
 ```
 ## <a name="request-headers"></a>要求ヘッダー
 | 名前       | 説明|
 |:---------------|:----------|
-| Authorization  | Bearer <code>|
+| Authorization  | Bearer {code}|
 
 
 ## <a name="request-body"></a>要求本文
@@ -34,7 +37,7 @@ POST /workbook/worksheets(<id|name>)/charts(<name>)/series(<undefined>)/points/I
   "name": "chartpointscollection_itemat"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets(<id|name>)/charts(<name>)/series(<undefined>)/points/ItemAt
+POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/{id|name}/charts(<name>)/series(<undefined>)/points/ItemAt
 Content-type: application/json
 Content-length: 20
 

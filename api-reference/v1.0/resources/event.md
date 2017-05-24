@@ -2,6 +2,12 @@
 
 予定表内のイベントです。
 
+このリソースは以下をサポートしています。
+
+- [拡張機能](../../../concepts/extensibility_overview.md)を使用して、カスタム プロパティに独自のデータを追加します。
+- [デルタ](../api/event_delta.md)関数を提供することにより、[デルタ クエリ](../../../concepts/delta_query_overview.md)を使用して、増分の追加、削除、更新を追跡します。
+
+
 ## <a name="methods"></a>メソッド
 
 | メソッド       | 戻り値の型  |説明|
@@ -14,6 +20,7 @@
 |[承諾](../api/event_accept.md)|なし|指定したイベントを承諾します。|
 |[tentativelyAccept](../api/event_tentativelyaccept.md)|なし|指定したイベントを仮承諾します。|
 |[辞退](../api/event_decline.md)|なし|指定したイベントへの招待を辞退します。|
+|[delta](../api/event_delta.md)|[event](event.md) コレクション|ユーザーの標準として設定されている予定表の**calendarView** において追加、削除、更新された一連のイベント (さまざまなイベント) を取得します。|
 |[dismissReminder](../api/event_dismissreminder.md)|なし|指定したイベントのアラームを無視します。|
 |[snoozeReminder](../api/event_snoozereminder.md)|なし|指定したイベントのアラームを再通知します。|
 |[インスタンスの一覧表示](../api/event_list_instances.md) |[event](event.md) コレクション| 指定した時間範囲のイベントのインスタンス (発生) を取得します。イベントが `SeriesMaster` タイプである場合、これは指定した時間範囲内のイベントの発生と例外を返します。|
@@ -144,9 +151,11 @@
 
 ## <a name="see-also"></a>関連項目
 
+- [デルタ クエリを使用して、Microsoft Graph データの変更を追跡する](../../../concepts/delta_query_overview.md)
+- [フォルダー内のイベントへの増分の変更を取得する](../../../concepts/delta_query_events.md)
 - [拡張機能を使用してカスタム データをリソースに追加する](../../../concepts/extensibility_overview.md)
-- [オープン拡張機能を使用したユーザーへのカスタム データの追加 (プレビュー)](../../../concepts/extensibility_open_users.md)
-- [スキーマ拡張機能を使用したグループへのカスタム データの追加 (プレビュー)](../../../concepts/extensibility_schema_groups.md)
+- [オープン拡張機能を使用してカスタム データをユーザーに追加する](../../../concepts/extensibility_open_users.md)
+- [スキーマ拡張機能を使用したグループへのカスタム データの追加](../../../concepts/extensibility_schema_groups.md)
 
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

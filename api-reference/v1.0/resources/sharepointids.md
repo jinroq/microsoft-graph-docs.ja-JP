@@ -4,38 +4,41 @@
 
 **注:** 個人用の OneDrive から返されたアイテムには **SharePointIds** ファセットは含まれません。
 
-### <a name="json-representation"></a>JSON 表記
+## <a name="json-representation"></a>JSON 表記
 
 以下は、リソースの JSON 表記です
 
 <!-- {
   "blockType": "resource",
-  "optionalProperties": [  ],
+  "optionalProperties": [ "listId", "listItemId", "listItemUniqueId", "siteId", "siteUrl", "webId" ],
   "@odata.type": "microsoft.graph.sharepointIds"
 }-->
+
 ```json
 {
     "listId": "string",
     "listItemId": "string",
     "listItemUniqueId": "string",
     "siteId": "string",
+    "siteUrl": "url",
     "webId": "string"
 }
 ```
 
-### <a name="properties"></a>プロパティ
+## <a name="properties"></a>プロパティ
 
-| プロパティ          | 型    | 説明                                                          |
-|:------------------|:--------|:---------------------------------------------------------------------|
-| listId            | string  | SharePoint 内にあるアイテムの一覧の一意識別子。                          |
-| listItemId        | string  | 含まれているリスト内にあるアイテムの整数の識別子。                    |
-| listItemUniqueId  | string  | OneDrive for Busienss または SharePoint サイト内にあるアイテムの一意識別子。 |
-| siteId            | string  | アイテムのサイト コレクションの一意識別子。 |
-| webId             | string  | アイテムのサイトの一意識別子。                          |
+| プロパティ         | 型         | 説明                                                                                  |
+| :--------------- | :----------- | :------------------------------------------------------------------------------------------- |
+| listId           | string       | SharePoint 内にあるアイテムの一覧の一意識別子 (guid)。                              |
+| listItemId       | string       | 含まれているリスト内にあるアイテムの整数の識別子。                               |
+| listItemUniqueId | string       | OneDrive for Busienss または SharePoint サイト内にあるアイテムの一意識別子 (guid)。 |
+| siteId           | string       | アイテムのサイト コレクション (SPSite) の一意識別子 (guid)。                        |
+| siteUrl          | string (URL) | アイテムが含まれるサイトの SharePoint URL です。                                      |
+| webId            | string       | アイテムのサイト (SPWeb) の一意識別子 (guid)。                                    |
 
-## <a name="remarks"></a>注釈 
+## <a name="remarks"></a>備考
 
-DriveItem のファセットの詳細については、「[DriveItem](driveitem.md)」を参照してください。
+**driveItem** のファセットに関する詳細については、「[**driveItem**](driveitem.md)」を参照してください。
 
 
 

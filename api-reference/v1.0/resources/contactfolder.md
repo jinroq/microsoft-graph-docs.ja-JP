@@ -2,6 +2,9 @@
 
 連絡先が格納されたフォルダーです。
 
+このリソースでは、[デルタ](../api/contactfolder_delta.md)関数を用意すれば、増分の追加、削除、更新に[デルタ クエリ](../../../concepts/delta_query_overview.md)を使用できます。
+
+
 ## <a name="methods"></a>メソッド
 
 | メソッド       | 戻り値の型  |説明|
@@ -11,6 +14,7 @@
 |[削除](../api/contactfolder_delete.md) | なし |contactFolder オブジェクトを削除します。 |
 |[childFolders を一覧表示する](../api/contactfolder_list_childfolders.md) |[ContactFolder](contactfolder.md) collection| 指定した連絡先フォルダーの下の子フォルダーのコレクションを取得します。|
 |[子 contactFolder を作成する](../api/contactfolder_post_childfolders.md) |[ContactFolder](contactfolder.md)| 指定したフォルダーの子として新しい contactFolder を作成します。|
+|[delta](../api/contact_delta.md)|[contact](contact.md)コレクション| ユーザーのメールボックスで追加または削除された一連の連絡先フォルダーを取得します。|
 |[フォルダー内の連絡先を一覧表示する](../api/contactfolder_list_contacts.md) |[Contact](contact.md) collection| サインイン中のユーザーの既定の連絡先フォルダーから連絡先のコレクションを取得する (`.../me/contacts`) か、指定した連絡先フォルダーから取得します。|
 |[フォルダー内に連絡先を作成する](../api/contactfolder_post_contacts.md) |[Contact](contact.md)| 連絡先をルート連絡先フォルダーまたは別の連絡先フォルダーの `contacts` エンドポイントに追加します。|
 |[単一値の拡張プロパティを作成する](../api/singlevaluelegacyextendedproperty_post_singlevalueextendedproperties.md) |[contactFolder](contactFolder.md)  |新規または既存の contactFolder に、1 つ以上の単一値の拡張プロパティを作成します。   |
@@ -60,6 +64,12 @@
 }
 
 ```
+
+## <a name="see-also"></a>関連項目
+
+- [デルタ クエリを使用して、Microsoft Graph データの変更を追跡する](../../../concepts/delta_query_overview.md)
+- [フォルダー内のメッセージへの増分変更を取得する](../../../concepts/delta_query_messages.md)
+
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

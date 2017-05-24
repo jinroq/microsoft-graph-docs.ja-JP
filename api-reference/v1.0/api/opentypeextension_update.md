@@ -14,20 +14,26 @@
 
 |**サポートされているリソース**|**アクセス許可**|**サポートされているリソース**|**アクセス許可** |
 |:-----|:-----|:-----|:-----|
-| [イベント](../resources/event.md) | _Calendars.ReadWrite_ | [グループ イベント](../resources/event.md) | _Calendars.ReadWrite_ | 
-| [グループの投稿](../resources/post.md) | _Group.ReadWrite.All_ | [メッセージ](../resources/message.md) | _Mail.ReadWrite_ | 
-| [個人用連絡先](../resources/contact.md) | _Contacts.ReadWrite_ |
+| [device](../resources/device.md) | _Device.ReadWrite.All_ | [イベント](../resources/event.md) | _Calendars.ReadWrite_ |
+| [グループ](../resources/group.md) | _Group.ReadWrite.All_ | [グループ イベント](../resources/event.md) | _Group.ReadWrite.All_ |
+| [グループの投稿](../resources/post.md) | _Group.ReadWrite.All_ | [メッセージ](../resources/message.md) | _Mail.ReadWrite_ |
+| [組織](../resources/organization.md) | _Directory.AccessAsUser.All_ | [個人用連絡先](../resources/contact.md) | _Contacts.ReadWrite_ |
+| [ユーザー](../resources/user.md) | _Directory.AccessAsUser.All_ | | |
  
 ## <a name="http-request"></a>HTTP 要求
 要求で、リソース インスタンスを識別し、そのインスタンスの **extensions** ナビゲーション プロパティを使用して拡張機能を識別し、その拡張インスタンスで `PATCH` を行います。
 
 <!-- { "blockType": "ignored" } -->
 ```http
-PATCH /users/{id|userPrincipalName}/messages/{id}/extensions/{extensionId}
+PATCH /devices/{Id}/extensions/{extensionId}
 PATCH /users/{id|userPrincipalName}/events/{id}/extensions/{extensionId}
-PATCH /users/{id|userPrincipalName}/contacts/{id}/extensions/{extensionId}
+PATCH /groups/{id}/extensions/{extensionId}
 PATCH /groups/{id}/events/{id}/extensions/{extensionId}
 PATCH /groups/{id}/threads/{id}/posts/{id}/extensions/{extensionId}
+PATCH /users/{id|userPrincipalName}/messages/{id}/extensions/{extensionId}
+PATCH /organization/{Id}/extensions/{extensionId}
+PATCH /users/{id|userPrincipalName}/contacts/{id}/extensions/{extensionId}
+PATCH /users/{id|userPrincipalName}/extensions/{extensionId}
 ```
 
 >**注:**上記の構文は、含まれる拡張機能を更新するリソース インスタンスを特定する一般的な方法を示しています。こうしたリソース インスタンスを特定するために使用できる他の構文すべても、同様の方法でオープン拡張機能を更新できます。

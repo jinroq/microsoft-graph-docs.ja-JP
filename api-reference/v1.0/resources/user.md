@@ -2,8 +2,12 @@
 
 Azure AD ユーザー アカウントを表します。[directoryObject](directoryobject.md) から継承します。
 
+このリソースは以下をサポートしています。
+- [拡張機能](../../../concepts/extensibility_overview.md)を使用して、カスタム プロパティに独自のデータを追加します。
+- [デルタ](../api/user_delta.md)関数を提供することにより、[デルタ クエリ](../../../concepts/delta_query_overview.md)を使用して、増分の追加、削除、更新を追跡します。
 
 ## <a name="methods"></a>メソッド
+
 | メソッド       | 戻り値の型  |説明|
 |:---------------|:--------|:----------|
 |[Get user](../api/user_get.md) | [user](user.md) |ユーザー オブジェクトのプロパティと関係を読み取ります。|
@@ -32,15 +36,23 @@ Azure AD ユーザー アカウントを表します。[directoryObject](directo
 |[List ownedObjects](../api/user_list_ownedobjects.md) |[directoryObject](directoryobject.md) collection| そのユーザーにより所有されているディレクトリ オブジェクトを、ownedObjects ナビゲーション プロパティから取得します。|
 |[List registeredDevices](../api/user_list_registereddevices.md) |[directoryObject](directoryobject.md) collection| そのユーザーについて登録されているデバイスを、RegisteredDevices ナビゲーション プロパティから取得します。|
 |[List createdObjects](../api/user_list_createdobjects.md) |[directoryObject](directoryobject.md) collection| そのユーザーにより作成されたディレクトリ オブジェクトを、createdObjects ナビゲーション プロパティから取得します。|
-|[assignLicense](../api/user_assignlicense.md)|[user](user.md)|ユーザーのサブスクリプションを追加または削除します。また、サブスクリプションに関連付けられている特定のプランを有効または無効にすることもできます。|
+|[assignLicense](../api/user_assignlicense.md)|[user](user.md)|ユーザーのサブスクリプションを追加または削除します。サブスクリプションに関連付けられている特定のプランを有効または無効にすることもできます。|
+|[licenseDetails を一覧表示する](../api/user_list_licensedetails.md) |[licenseDetails](licensedetails.md) コレクション| licenseDetails オブジェクトのコレクションを取得します。| 
 |[checkMemberGroups](../api/user_checkmembergroups.md)|String collection|グループの一覧内のメンバーシップを確認します。チェックは推移的です。|
 |[getMemberGroups](../api/user_getmembergroups.md)|String collection|ユーザーがメンバーであるすべてのグループを返します。チェックは推移的です。|
 |[getMemberObjects](../api/user_getmemberobjects.md)|String collection| ユーザーがメンバーになっているすべてのグループとディレクトリ ロールを返します。チェックは推移的です。 |
 |[reminderView](../api/user_reminderview.md)|[Reminder](reminder.md) collection|指定した開始時刻と終了時刻内の予定表のアラームの一覧を返します。|
+|[delta](../api/user_delta.md)|user コレクション| ユーザーに対する増分の変更を取得します。 |
+|**オープン拡張機能**| | |
+|[オープン拡張機能を作成する](../api/opentypeextension_post_opentypeextension.md) |[openTypeExtension](opentypeextension.md)| オープン拡張機能を作成し、新規または既存のリソースにカスタム プロパティを追加します。|
+|[オープン拡張機能を取得する](../api/opentypeextension_get.md) |[openTypeExtension](opentypeextension.md) コレクション| 拡張機能の名前で識別されるオープン拡張機能を取得します。|
+|**スキーマ拡張機能**| | |
+|[スキーマ拡張機能の値を追加する](../../../concepts/extensibility_schema_groups.md) || スキーマ拡張機能の定義を作成し、それを使用してカスタマイズされた種類のデータをリソースに追加します。|
 
 
 
 ## <a name="properties"></a>プロパティ
+
 | プロパティ       | 型    |説明|
 |:---------------|:--------|:----------|
 |aboutMe|String|ユーザーが自分自身について記述する、フリー フォームのテキスト入力フィールド。|
@@ -48,6 +60,7 @@ Azure AD ユーザー アカウントを表します。[directoryObject](directo
 |assignedLicenses|[assignedLicense](assignedlicense.md) collection|ユーザーに割り当てられているライセンス。null 許容ではありません。            |
 |assignedPlans|[assignedPlan](assignedplan.md) collection|ユーザーに割り当てられているプラン。読み取り専用です。null 許容ではありません。 |
 |birthday|DateTimeOffset|ユーザーの誕生日。Timestamp 型は、ISO 8601 形式を使用して日付と時刻の情報を表し、必ず UTC 時間です。たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、次のようになります。`'2014-01-01T00:00:00Z'`|
+|businessPhones|String コレクション|ユーザーの電話番号。注:文字列コレクションですが、このプロパティに設定できるのは 1 つの数字のみです。|
 |city|String|ユーザーがいる都市。$filter をサポートします。|
 |country|String|ユーザーがいる国/地域。たとえば、「US (米国)」や「UK (英国)」です。$filter をサポートします。|
 |department|String|ユーザーが働いている部門の名前。$filter をサポートします。|
@@ -55,6 +68,7 @@ Azure AD ユーザー アカウントを表します。[directoryObject](directo
 |givenName|String|ユーザーの名。$filter をサポートします。|
 |hireDate|DateTimeOffset|ユーザーの採用日付。Timestamp 型は、ISO 8601 形式を使用して日付と時刻の情報を表し、必ず UTC 時間です。たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、次のようになります。`'2014-01-01T00:00:00Z'`|
 |id|String|ユーザーの一意の識別子。[directoryObject](directoryobject.md) から継承されます。キー。null 許容ではありません。読み取り専用です。|
+|imAddresses|String コレクション|ユーザーのインスタント メッセージ ボイス オーバー IP (VOIP) セッション開始プロトコル (SIP) のアドレス。読み取り専用です。|
 |interests|String collection|ユーザーが自分の関心事を記述する一覧。|
 |jobTitle|String|ユーザーの役職。$filter をサポートします。|
 |mail|String|ユーザーの SMTP アドレス (たとえば、"jeff@contoso.onmicrosoft.com")。読み取り専用。$filter をサポートします。|
@@ -86,6 +100,7 @@ Azure AD ユーザー アカウントを表します。[directoryObject](directo
 |userType|String|ディレクトリ内のユーザーの種類を分類するために使用する文字列値 (“Member”、“Guest” など)。$filter をサポートします。          |
 
 ## <a name="relationships"></a>リレーションシップ
+
 | リレーションシップ | 型    |説明|
 |:---------------|:--------|:----------|
 |calendar|[Calendar](calendar.md)|ユーザーの標準予定表。読み取り専用です。|
@@ -97,17 +112,20 @@ Azure AD ユーザー アカウントを表します。[directoryObject](directo
 |createdObjects|[directoryObject](directoryobject.md) collection|ユーザーによって作成されたディレクトリ オブジェクト。読み取り専用です。Null 許容型。|
 |directReports|[directoryObject](directoryobject.md) collection|そのユーザーの部下であるユーザーと連絡先。(マネージャー プロパティがこのユーザーに設定されている、ユーザーと連絡先。)読み取り専用です。Null 許容型。 |
 |drive|[drive](drive.md)|ユーザーの OneDrive。読み取り専用です。|
-|events|[Event](event.md) collection|ユーザーのイベント。既定は、既定の予定表でイベントを表示します。読み取り専用です。Null 許容型。|
+|drives|[drive](drive.md) コレクション | このユーザーが使用できるドライブのコレクション。読み取り専用です。 |
+|events|[Event](event.md) コレクション|ユーザーのイベント。既定は、既定の予定表でイベントを表示します。読み取り専用です。Null 許容型。|
+|extensions|[extension](extension.md) コレクション|ユーザーに対して定義されているオープン拡張機能のコレクション。読み取り専用です。Null 許容型。|
 |inferenceClassification | [inferenceClassification](inferenceClassification.md) | 明示的な指定に基づく、ユーザーのメッセージの関連性の分類。明示的な指定は、推定される関連性や重要性より優先されます。 |
 |mailFolders|[MailFolder](mailfolder.md) collection| ユーザーのメール フォルダー。読み取り専用です。Null 許容型。|
 |manager|[directoryObject](directoryobject.md)|このユーザーの上司であるユーザーまたは連絡先。読み取り専用です。(HTTP メソッド:GET、PUT、DELETE)|
 |memberOf|[directoryObject](directoryobject.md) collection|ユーザーがメンバーになっているグループとディレクトリ ロール。読み取り専用です。Null 許容型。|
-|messages|[Message](message.md) collection|メールボックスまたはフォルダー内のメッセージ。読み取り専用です。Null 許容型。|
+|messages|[Message](message.md) コレクション|メールボックスまたはフォルダー内のメッセージ。読み取り専用です。Null 許容型。|
+|onenote|[OneNote](onenote.md)| 読み取り専用です。|
 |ownedDevices|[directoryObject](directoryobject.md) collection|ユーザーが所有しているデバイス。読み取り専用です。Null 許容型。|
 |ownedObjects|[directoryObject](directoryobject.md) collection|ユーザーが所有しているディレクトリ オブジェクト。読み取り専用です。Null 許容型。|
 |photo|[profilePhoto](profilephoto.md)| ユーザーのプロフィール写真。読み取り専用です。|
-|registeredDevices|[directoryObject](directoryobject.md) collection|ユーザーについて登録されているデバイス。読み取り専用です。Null 許容型。|
-
+|registeredDevices|[directoryObject](directoryobject.md) コレクション|ユーザーについて登録されているデバイス。読み取り専用です。Null 許容型。|
+|sites|[site](site.md) コレクション | このユーザーが使用できるサイトのコレクション。読み取り専用です。 |
 
 ## <a name="json-representation"></a>JSON 表記
 
@@ -127,15 +145,18 @@ Azure AD ユーザー アカウントを表します。[directoryObject](directo
     "directReports",
     "drive",
     "events",
+    "extensions",
     "joinedGroups",
     "mailFolders",
     "manager",
     "memberOf",
     "messages",
     "oauth2PermissionGrants",
+    "onenote",
     "ownedDevices",
     "ownedObjects",
     "photo",
+    "sites",
     "registeredDevices"
   ],
   "keyProperty": "id",
@@ -197,6 +218,7 @@ Azure AD ユーザー アカウントを表します。[directoryObject](directo
   "createdObjects": [ { "@odata.type": "microsoft.graph.directoryObject" } ],
   "directReports": [ { "@odata.type": "microsoft.graph.directoryObject" } ],
   "drive": { "@odata.type": "microsoft.graph.drive" },
+  "drives": [ { "@odata.type": "microsoft.graph.drive" } ],
   "events": [ { "@odata.type": "microsoft.graph.event" } ],
   "inferenceClassification": { "@odata.type": "microsoft.graph.inferenceClassification" },
   "mailFolders": [ { "@odata.type": "microsoft.graph.mailFolder" } ],
@@ -205,10 +227,17 @@ Azure AD ユーザー アカウントを表します。[directoryObject](directo
   "messages": [ { "@odata.type": "microsoft.graph.message" } ],
   "ownedDevices": [ { "@odata.type": "microsoft.graph.directoryObject" } ],
   "photo": { "@odata.type": "microsoft.graph.profilePhoto" },
-  "registeredDevices": [ { "@odata.type": "microsoft.graph.directoryObject" } ]
+  "registeredDevices": [ { "@odata.type": "microsoft.graph.directoryObject" } ],
+  "sites": [ {"@odata.type": "microsoft.graph.site" }]
 }
 
 ```
+
+## <a name="see-also"></a>関連項目
+
+- [拡張機能を使用してカスタム データをリソースに追加する](../../../concepts/extensibility_overview.md)
+- [オープン拡張機能を使用してカスタム データをユーザーに追加する](../../../concepts/extensibility_open_users.md)
+- [スキーマ拡張機能を使用したグループへのカスタム データの追加](../../../concepts/extensibility_schema_groups.md)
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

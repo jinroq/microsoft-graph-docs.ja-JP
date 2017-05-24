@@ -3,17 +3,20 @@
 chartaxis オブジェクトのプロパティを更新します。
 ## <a name="prerequisites"></a>前提条件
 この API を実行するために必要な**スコープ**は、次のとおりです。 
+
+    * Files.ReadWrite
+
 ## <a name="http-request"></a>HTTP 要求
 <!-- { "blockType": "ignored" } -->
 ```http
-PATCH /workbook/worksheets(<id|name>)/charts(<name>)/axes/valueaxis
-PATCH /workbook/worksheets(<id|name>)/charts(<name>)/axes/seriesaxis
-PATCH /workbook/worksheets(<id|name>)/charts(<name>)/axes/categoryaxis
+PATCH /workbook/worksheets/{id|name}/charts(<name>)/axes/valueaxis
+PATCH /workbook/worksheets/{id|name}/charts(<name>)/axes/seriesaxis
+PATCH /workbook/worksheets/{id|name}/charts(<name>)/axes/categoryaxis
 ```
 ## <a name="optional-request-headers"></a>オプションの要求ヘッダー
 | 名前       | 説明|
 |:-----------|:-----------|
-| Authorization  | Bearer <code>|
+| Authorization  | Bearer {code}|
 
 
 ## <a name="request-body"></a>要求本文
@@ -21,10 +24,10 @@ PATCH /workbook/worksheets(<id|name>)/charts(<name>)/axes/categoryaxis
 
 | プロパティ       | 型    |説明|
 |:---------------|:--------|:----------|
-|majorUnit|オブジェクト|2 つの大きい目盛の間隔を表します。数値の値または空の文字列を設定できます。戻り値は常に数値です。|
+|majorUnit|object|2 つの大きい目盛の間隔を表します。数値の値または空の文字列を設定できます。戻り値は常に数値です。|
 |maximum|object|数値軸の最大値を表します。数値の値または空の文字列を設定できます (軸の値が自動の場合)。戻り値は常に数値です。|
 |minimum|object|数値軸の最小値を表します。数値の値または空の文字列を設定できます (軸の値が自動の場合)。戻り値は常に数値です。|
-|minorUnit|オブジェクト|2 つの小さい目盛の間隔を表します。"数値の値または空の文字列を設定できます (軸の値が自動の場合)。戻り値は常に数値です。|
+|minorUnit|object|2 つの小さい目盛の間隔を表します。"数値の値または空の文字列を設定できます (軸の値が自動の場合)。戻り値は常に数値です。|
 
 ## <a name="response"></a>応答
 成功した場合、このメソッドは `200 OK` 応答コードと、応答本文で、更新された [ChartAxis](../resources/chartaxis.md) オブジェクトを返します。
@@ -36,7 +39,7 @@ PATCH /workbook/worksheets(<id|name>)/charts(<name>)/axes/categoryaxis
   "name": "update_chartaxis"
 }-->
 ```http
-PATCH https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets(<id|name>)/charts(<name>)/axes/valueaxis
+PATCH https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/{id|name}/charts(<name>)/axes/valueaxis
 Content-type: application/json
 Content-length: 64
 

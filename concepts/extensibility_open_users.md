@@ -1,4 +1,4 @@
-# <a name="add-custom-data-to-users-using-open-extensions-preview"></a>オープン拡張機能を使用したユーザーへのカスタム データの追加 (プレビュー)
+# <a name="add-custom-data-to-users-using-open-extensions"></a>オープン拡張機能を使用してカスタム データをユーザーに追加する
 *オープン拡張機能*の使用方法について、具体例を使ってデモンストレーションします。 
 
 デスクトップやモバイルなど、多種のクライアント プラットフォームで利用できるアプリケーションをビルドしているとします。アプリにサインインするときのデバイスに関係なく一貫性を確保できるように、ユーザー自身で UI エクスペリエンスを構成できるようにしたいと考えています。これは、ほとんどのアプリで一般的な要件です。 
@@ -10,14 +10,15 @@
 3. ユーザーのローミング プロファイル情報 (オープン拡張機能値) を変更します。
 4. ユーザーのローミング プロファイル情報を削除します。
 
->**注:**このトピックでは、*user* リソースにおいてオープン拡張機能を追加、読み取り、更新、削除する方法を示します。これらの方法は、*administrativeUnit*、*contact*、*device*、*event*、*group*、*group event*、*group post*、*organizaton* の各リソース型でもサポートされています。これらのリソース型のいずれかを使用して、次の例の要求を簡単に更新できます。次の例に示されている応答は、わかりやすくするために途中までしか示されていない場合があります。 
+>**注:**このトピックでは、*user* リソースにおいてオープン拡張機能を追加、読み取り、更新、削除する方法を示します。これらの方法は、*administrativeUnit*、*contact*、*device*、*event*、*group*、*group event*、*group post*、*organizaton* の各リソース型でもサポートされています。  
+これらのリソース型のいずれかを使用して、次の例の要求を簡単に更新できます。次の例に示されている応答は、わかりやすくするために途中までしか示されていない場合があります。 
 
 ## <a name="1-add-roaming-profile-information"></a>1.ローミング プロファイル情報を追加する
 ユーザーがアプリにサインインし、アプリの外観を構成します。これらのアプリ設定はローミングされ、アプリにサインインするためにユーザーが使用するデバイスに関わらず同じエクスペリエンスになるようにする必要があります。ここでは、ユーザーのリソースにローミング プロファイル情報を追加する方法を示します。
 
 ##### <a name="request"></a>要求
 ```http
-POST https://graph.microsoft.com/beta/me/extensions
+POST https://graph.microsoft.com/v1.0/me/extensions
 Content-type: application/json
 {
     "@odata.type":"microsoft.graph.openTypeExtension",
@@ -48,7 +49,7 @@ Content-length: 420
 
 ##### <a name="request"></a>要求
 ```http
-GET https://graph.microsoft.com/beta/me?$select=id,displayName,mail,mobilePhone&$expand=extensions
+GET https://graph.microsoft.com/v1.0/me?$select=id,displayName,mail,mobilePhone&$expand=extensions
 ```
 ##### <a name="response"></a>応答
 ```http
@@ -80,7 +81,7 @@ Content-length: 420
 
 ##### <a name="request"></a>要求
 ```http
-PATCH https://graph.microsoft.com/beta/me/extensions/com.contoso.roamingSettings
+PATCH https://graph.microsoft.com/v1.0/me/extensions/com.contoso.roamingSettings
 Content-type: application/json
 {
     "theme":"light",
@@ -99,7 +100,7 @@ HTTP/1.1 204 No content
 
 ##### <a name="request"></a>要求
 ```http
-DELETE https://graph.microsoft.com/beta/me/extensions/com.contoso.roamingSettings
+DELETE https://graph.microsoft.com/v1.0/me/extensions/com.contoso.roamingSettings
 ```
 
 ##### <a name="response"></a>応答
@@ -110,4 +111,9 @@ HTTP/1.1 204 No content
 ## <a name="see-also"></a>関連項目
 
 - [拡張機能を使用してカスタム データをリソースに追加する](extensibility_overview.md)
-- [スキーマ拡張機能を使用したグループへのカスタム データの追加 (プレビュー)](extensibility_schema_groups.md)
+- [スキーマ拡張機能を使用したグループへのカスタム データの追加](extensibility_schema_groups.md)
+- [openTypeExtension リソース タイプ](../api-reference/v1.0/resources/opentypeextension.md)
+- [オープン拡張機能を作成する](../api-reference/v1.0/api/opentypeextension_post_opentypeextension.md)
+- [オープン拡張機能を取得する](../api-reference/v1.0/api/opentypeextension_get.md)
+- [オープン拡張機能を更新する](../api-reference/v1.0/api/opentypeextension_update.md)
+- [オープン拡張機能を削除する](../api-reference/v1.0/api/opentypeextension_delete.md)

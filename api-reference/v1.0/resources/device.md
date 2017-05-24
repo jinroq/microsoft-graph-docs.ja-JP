@@ -2,6 +2,9 @@
 
 組織に登録されているデバイスを表します。デバイスは、Device Registration Service を使用するか、Intune によってクラウドで作成することもできます。これは、多要素認証の条件付きアクセス ポリシーで使用されます。該当するデバイスの範囲は、デスクトップやノート PC から携帯電話やタブレットに及びます。[directoryObject](directoryobject.md) から継承します。
 
+このリソースでは、[拡張機能](../../../concepts/extensibility_overview.md)を使用してカスタム プロパティに独自のデータを追加することができます。
+
+
 ## <a name="methods"></a>メソッド
 
 | メソッド       | 戻り値の型  |説明|
@@ -15,6 +18,11 @@
 |[registeredOwners を一覧表示する](../api/device_list_registeredowners.md) |[directoryObject](directoryobject.md) コレクション| registeredOwners ナビゲーション プロパティから、デバイスの登録済み所有者であるユーザーを取得します。|
 |[registeredUser を作成する](../api/device_post_registeredusers.md) |[directoryObject](directoryobject.md)| registeredUsers ナビゲーション プロパティに投稿することで、デバイスの登録済みユーザーを追加します。|
 |[registeredUsers を一覧表示します](../api/device_list_registeredusers.md) |[directoryObject](directoryobject.md) コレクション| registeredUsers ナビゲーション プロパティから、デバイスの登録済みユーザーを取得します。|
+|**オープン拡張機能**| | |
+|[オープン拡張機能を作成する](../api/opentypeextension_post_opentypeextension.md) |[openTypeExtension](opentypeextension.md)| オープン拡張機能を作成し、新規または既存のリソースにカスタム プロパティを追加します。|
+|[オープン拡張機能を取得する](../api/opentypeextension_get.md) |[openTypeExtension](opentypeextension.md) コレクション| 拡張機能の名前で識別されるオープン拡張機能を取得します。|
+|**スキーマ拡張機能**| | |
+|[スキーマ拡張機能の値を追加する](../../../concepts/extensibility_schema_groups.md) || スキーマ拡張機能の定義を作成し、それを使用してカスタマイズされた種類のデータをリソースに追加します。|
 
 ## <a name="properties"></a>プロパティ
 | プロパティ       | 型    |説明|
@@ -39,6 +47,7 @@
 ## <a name="relationships"></a>リレーションシップ
 | リレーションシップ | 型    |説明|
 |:---------------|:--------|:----------|
+|extensions|[extension](extension.md) コレクション|デバイスに対して定義されているオープン拡張機能のコレクション。読み取り専用です。Null 許容型。|
 |registeredOwners|[directoryObject](directoryobject.md) コレクション|デバイスの登録済み所有者であるユーザー。読み取り専用。Null 許容型。|
 |registeredUsers|[directoryObject](directoryobject.md) コレクション|デバイスの登録済みユーザーであるユーザー。読み取り専用。Null 許容型。|
 
@@ -51,6 +60,7 @@
 <!-- {
   "blockType": "resource",
   "optionalProperties": [
+    "extensions",
     "registeredOwners",
     "registeredUsers"
   ],
@@ -79,6 +89,12 @@
 }
 
 ```
+
+## <a name="see-also"></a>関連項目
+
+- [拡張機能を使用してカスタム データをリソースに追加する](../../../concepts/extensibility_overview.md)
+- [オープン拡張機能を使用してカスタム データをユーザーに追加する](../../../concepts/extensibility_open_users.md)
+- [スキーマ拡張機能を使用したグループへのカスタム データの追加](../../../concepts/extensibility_schema_groups.md)
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

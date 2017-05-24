@@ -2,7 +2,7 @@
 
 **SharingLink** リソースは、リンク関連のデータ項目を 1 つの構造にグループ化します。
 
-[**Permission**](permission.md) リソースが非 null の **sharingLink** ファセットを持つ場合、アクセス許可は (ユーザーやグループに与えられている許可ではなく) sharnig リンクを表します。
+[**Permission**](permission.md) リソースが非 null の **sharingLink** ファセットを持つ場合、アクセス許可は (ユーザーやグループに与えられているアクセス許可ではなく) 共有リンクを表します。
 
 ## <a name="json-representation"></a>JSON 表記
 
