@@ -2,16 +2,11 @@
 
 > **エンタープライズのお客様向けにアプリを作成していますか?**エンタープライズのお客様が、<a href="https://azure.microsoft.com/en-us/documentation/articles/active-directory-conditional-access-device-policies/" target="_newtab">条件付きのデバイスへのアクセス</a>のようなエンタープライズ モビリティ セキュリティの機能をオンにしている場合、アプリが動作しない可能性があります。その場合、気がつかないまま、お客様の側でエラーが発生してしまう可能性があります。 
 
-> **すべてのエンタープライズのお客様**の**すべてのエンタープライズ シナリオ**をサポートするには、Azure AD エンドポイントを使用し、[Azure 管理ポータル](https://aka.ms/aadapplist)でアプリを管理する必要があります。詳細については、「[Azure AD か Azure AD v2.0 エンドポイントかを決定する](../authorization/auth_overview.md#deciding-between-the-azure-ad-and-azure-ad-v20-endpoints)」を参照してください。
+> **すべてのエンタープライズのお客様**の**すべてのエンタープライズ シナリオ**をサポートするには、Azure AD エンドポイントを使用し、[Azure 管理ポータル](https://aka.ms/aadapplist)でアプリを管理する必要があります。詳細については、「[Azure AD か Azure AD v2.0 エンドポイントかを決定する](../concepts/auth_overview.md#deciding-between-the-azure-ad-and-azure-ad-v20-endpoints)」を参照してください。
 
-この記事では、[Azure AD v2.0 エンドポイント](https://developer.microsoft.com/en-us/graph/docs/authorization/converged_auth)からアクセス トークンを取得し、Microsoft Graph を呼び出すために必要なタスクについて説明します。ここでは、[UWP (REST) 用 Microsoft Graph Connect サンプル](https://github.com/microsoftgraph/uwp-csharp-connect-rest-sample)と [UWP (ライブラリ) 用 Microsoft Graph Connect サンプル](https://github.com/microsoftgraph/uwp-csharp-connect-sample)の各サンプル内のコードを説明し、Microsoft Graph を使用するアプリで実装する必要のある主要な概念について説明します。また、この記事では、未加工の REST 呼び出しと [Microsoft Graph クライアント ライブラリ](http://www.nuget.org/packages/Microsoft.Graph/)を使用して Microsoft Graph にアクセスする方法についても説明します。
+この記事では、[Azure AD v2.0 エンドポイント](https://developer.microsoft.com/en-us/graph/docs/concepts/converged_auth)からアクセス トークンを取得し、Microsoft Graph を呼び出すために必要なタスクについて説明します。ここでは、[UWP 用 Microsoft Graph Connect サンプル (ライブラリ)](https://github.com/microsoftgraph/uwp-csharp-connect-sample) のサンプル内のコードを説明し、Microsoft Graph を使用するアプリで実装する必要のある主要な概念について説明します。
 
-これらの GitHub リポジトリのこのチュートリアルで作成するアプリの両方のバージョンをダウンロードすることができます。
-
-* [UWP (REST) 用 Microsoft Graph Connect のサンプル](https://github.com/microsoftgraph/uwp-csharp-connect-rest-sample)
-* [UWP (ライブラリ) 用 Microsoft Graph Connect のサンプル](https://github.com/microsoftgraph/uwp-csharp-connect-sample)
-
-**アプリを作成してみたくありませんか。**「[Microsoft Graph クイック スタート](https://graph.microsoft.io/en-us/getting-started)」を使用すれば、すばやく稼働させることができます。
+**アプリを作成してみたいですか。**[Microsoft Graph クイック スタート](https://developer.microsoft.com/graph/quick-start)を使用してすぐに使い始めるか、またはこの記事で取り扱っている [UWP 用 Microsoft Graph Connect サンプル (ライブラリ)](https://github.com/microsoftgraph/uwp-csharp-connect-sample) をダウンロードしてください。[REST バージョンのサンプル](https://github.com/microsoftgraph/uwp-csharp-connect-rest-sample)も利用できます。
 
 ## <a name="sample-user-interface"></a>サンプル ユーザー インターフェイス
 
@@ -33,7 +28,7 @@
 
 - [Microsoft アカウント](https://www.outlook.com/)か[職場または学校アカウント](http://dev.office.com/devprogram)
 - Visual Studio 2015 
-- [UWP (ライブラリ) 用 Microsoft Graph スターター プロジェクト](https://github.com/microsoftgraph/uwp-csharp-connect-sample/tree/master/starter)または [UWP (REST) 用 Microsoft Graph スターター プロジェクト](https://github.com/microsoftgraph/uwp-csharp-connect-rest-sample/tree/master/starter)のいずれか。両方のテンプレートには、コードを追加する空のクラスが含まれています。また、リソース文字列も含まれています。これらのいずれかまたは両方のプロジェクトを取得するには、[UWP (ライブラリ) 用 Microsoft Graph Connect サンプル](https://github.com/microsoftgraph/uwp-csharp-connect-sample)と [UWP (REST) 用 Microsoft Graph Connect サンプル](https://github.com/microsoftgraph/uwp-csharp-connect-rest-sample)の両方またはいずれかを複製するかダウンロードして、**スターター** フォルダー内でソリューションを開きます。
+- [UWP 用 Microsoft Graph スターター プロジェクト (ライブラリ)](https://github.com/microsoftgraph/uwp-csharp-connect-sample/tree/master/starter)。両方のテンプレートには、コードを追加する空のクラスが含まれています。また、リソース文字列も含まれています。このプロジェクトを取得するには、[UWP 用 Microsoft Graph Connect のサンプル (ライブラリ)](https://github.com/microsoftgraph/uwp-csharp-connect-sample) を複製またはダウンロードして、**starter** フォルダー内のソリューションを開きます。
 
 
 ## <a name="register-the-app"></a>アプリを登録する
@@ -45,7 +40,7 @@
     登録ページが表示され、アプリのプロパティが一覧表示されます。
  
 4. **[プラットフォーム]** で、**[プラットフォームの追加]** を選びます。
-5. **[Mobile プラットフォーム]** を選びます。
+5. **[ネイティブ アプリケーション]** を選択します。
 6. クライアント ID (アプリ ID) とリダイレクト URI の値の両方をクリップボードにコピーします。サンプル アプリにこれらの値を入力する必要があります。
 
     アプリ ID は、アプリの一意識別子です。リダイレクト URI は、各アプリケーションに対して Windows 10 で提供される一意の URI であり、その URI に送信されたメッセージだけがそのアプリケーションに送信されます。 
@@ -77,13 +72,17 @@
 
 ## <a name="install-the-microsoft-graph-client-library"></a>Microsoft Graph クライアント ライブラリをインストールします
 
-> **注**: 未加工の REST 呼び出しを使用して Microsoft Graph にアクセスする場合は、このセクションをスキップできます。
-
 1. ソリューション エクスプローラーで、プロジェクト名を右クリックして、**[NuGet パッケージの管理...]** を選びます。
 2. [参照] をクリックし、Microsoft.Graph を検索します。
 3. Microsoft Graph クライアント ライブラリの最新バージョンを選択して、**[インストール]** をクリックします。
 
-## <a name="create-the-authenticationhelpercs-class"></a>AuthenticationHelper.cs クラスを作成する
+## <a name="install-the-newtonsoftjson-library"></a>Newtonsoft.JSON ライブラリをインストールします。
+
+1. ソリューション エクスプローラーで、**XamarinConnect (ポータブル)** プロジェクトを右クリックして、**[NuGet パッケージの管理...]** を選びます。
+2. [参照] をクリックし、NewtonSoft.JSON を検索します。
+3. NewtonSoft.JSON ライブラリのバージョン 9.0.1 を選択し、**[インストール]** をクリックします。
+
+## <a name="create-the-authenticationhelpercs-class"></a>AuthenticationHelper.cs クラスを作成します。
 
 スターター プロジェクトの AuthenticationHelper.cs ファイルを開きます。このファイルには、ユーザー情報を格納し、アプリからユーザーが切断されたときにのみ認証を強制する追加のロジックとともに、すべての認証コードが含まれます。このクラスには、少なくとも次の 2 つのメソッドが含まれています。`GetTokenForUserAsync` および `Signout`。Microsoft Graph クライアント ライブラリを使用している場合は 3 番目のメソッド `GetAuthenticatedClient` を追加する必要があります。
 
@@ -93,9 +92,9 @@
 
 ***クライアント ライブラリ バージョン***
 
-Microsoft Graph クライアント ライブラリを使用している場合は、これらの宣言が必要です。
+ファイルにこれらの宣言が含まれていることを確認します。
 
-```c#
+```
 using System;
 using System.Diagnostics;
 using System.Net.Http.Headers;
@@ -104,84 +103,28 @@ using Microsoft.Graph;
 using Microsoft.Identity.Client;
 ```
 
-***REST バージョン***
-
-未加工の REST 呼び出しを使用して Microsoft Graph にアクセスしている場合は、AuthenticationHelper クラスのこれらの `using` 宣言が必要です。
-
-```c#
-using System;
-using System.Threading.Tasks;
-using Windows.Storage;
-using Microsoft.Identity.Client;
-```
-
 **クラス フィールド**
 
-AuthenticationHelper クラスの両方のバージョンには、これらのフィールドが必要です。
+AuthenticationHelper クラス内にこれらのフィールドがあることを確認します。
 
-```c#
+```
 // The Client ID is used by the application to uniquely identify itself to the Azure AD v2.0 endpoint.
 static string clientId = App.Current.Resources["ida:ClientID"].ToString();
 public static string[] Scopes = { "User.Read", "Mail.Send" };
 public static PublicClientApplication IdentityClientApp = new PublicClientApplication(clientId);
 public static string TokenForUser = null;
 public static DateTimeOffset Expiration;
-```
-
-両方のバージョンで、ユーザーの認証に MSAL `PublicClientApplication` クラスが使用されることに注意してください。`Scopes` フィールドは、ユーザーが認証を行うときにアプリが要求する必要のある Microsoft Graph のアクセス許可スコープを保存します。 
-
-***クライアント ライブラリ バージョン***
-
-クライアント ライブラリを使用している場合は、1 回作成するだけで済むように `GraphServicesClient` をフィールドとして保存します。
-
-```c#
 private static GraphServiceClient graphClient = null;
 ```
 
-***REST バージョン***
+サンプルでは、`GraphServicesClient` をフィールドに格納し、一度だけの作成で済むようにします。MSAL `PublicClientApplication` クラスを使用してユーザーを認証します。`Scopes` フィールドは、ユーザーが認証を行うときにアプリが要求する必要のある Microsoft Graph のアクセス許可スコープを保存します。 
 
-REST 呼び出しを使用している場合は、ユーザーに関する情報を保存する必要があるため、アプリのローミングの設定で複数の値を保存する必要があります。(クライアント ライブラリは、他のバージョンでこの情報を提供します)。
-
-```c#
-public static ApplicationDataContainer _settings = ApplicationData.Current.RoamingSettings;
-```
 
 **GetTokenForUserAsync**
 
-***クライアント ライブラリ バージョン***
+`GetTokenForUserAsync` メソッドは、PublicClientApplicationClass および ClientId 設定を使用して、ユーザーのアクセス トークンを取得します。ユーザーがまだ認証していない場合、認証 UI を起動します。
 
-`GetTokenForUserAsync` メソッドは、PublicClientApplicationClass および ClientId 設定を使用して、ユーザーのアクセス トークンを取得します。ユーザーがまだ認証していない場合、認証 UI を起動します。これは、クライアント ライブラリを使用している場合に使用するメソッドのバージョンです。
-
-```c#
-        public static async Task<string> GetTokenForUserAsync()
-        {
-            AuthenticationResult authResult;
-            try
-            {
-                authResult = await IdentityClientApp.AcquireTokenSilentAsync(Scopes);
-                TokenForUser = authResult.Token;
-            }
-
-            catch (Exception)
-            {
-                if (TokenForUser == null || Expiration <= DateTimeOffset.UtcNow.AddMinutes(5))
-                {
-                    authResult = await IdentityClientApp.AcquireTokenAsync(Scopes);
-
-                    TokenForUser = authResult.Token;
-                    Expiration = authResult.ExpiresOn;
-                }
-            }
-
-            return TokenForUser;
-        }
 ```
-
-***REST バージョン***
-
-`GetTokenForUserAsync` メソッドの REST バージョンでは、サインインしているユーザーに関する情報も保存する必要があるため、実行する作業がもう少しあります。
-
-```c#
         public static async Task<string> GetTokenForUserAsync()
         {
             AuthenticationResult authResult;
@@ -189,10 +132,6 @@ public static ApplicationDataContainer _settings = ApplicationData.Current.Roami
             {
                 authResult = await IdentityClientApp.AcquireTokenSilentAsync(Scopes);
                 TokenForUser = authResult.Token;
-                // save user ID in local storage
-                _settings.Values["userID"] = authResult.User.UniqueId;
-                _settings.Values["userEmail"] = authResult.User.DisplayableId;
-                _settings.Values["userName"] = authResult.User.Name;
             }
 
             catch (Exception)
@@ -203,11 +142,6 @@ public static ApplicationDataContainer _settings = ApplicationData.Current.Roami
 
                     TokenForUser = authResult.Token;
                     Expiration = authResult.ExpiresOn;
-
-                    // save user ID in local storage
-                    _settings.Values["userID"] = authResult.User.UniqueId;
-                    _settings.Values["userEmail"] = authResult.User.DisplayableId;
-                    _settings.Values["userName"] = authResult.User.Name;
                 }
             }
 
@@ -217,13 +151,11 @@ public static ApplicationDataContainer _settings = ApplicationData.Current.Roami
 
 **サインアウト**
 
-両方のバージョンでの `Signout` メソッドは、`PublicClientApplication` 経由でログインしたすべてのユーザーをサインアウトし (この場合は 1 人のユーザーのみ)、`TokenForUser` 値を無効にします。クライアント ライブラリを使用するバージョンでは、保存した `GraphServicesClient` も無効になり、また REST バージョンではアプリのローミング設定に保存した値が無効になります。
-
-***クライアント ライブラリ バージョン***
+`Signout` メソッドは、`PublicClientApplication` 経由でログインしたすべてのユーザーをサインアウトし (この場合は 1 人のユーザーのみ)、`TokenForUser` 値を無効にします。それは、`GraphServicesClient` 値も無効にします。
 
 これは `Signout` メソッドのクライアント ライブラリ バージョンです。
 
-```c#
+```
         public static void SignOut()
         {
             foreach (var user in IdentityClientApp.Users)
@@ -236,33 +168,11 @@ public static ApplicationDataContainer _settings = ApplicationData.Current.Roami
         }
 ``` 
 
-***REST バージョン***
+**GetAuthenticatedClient**
 
-これは `Signout` メソッドの REST バージョンです。
+最後に、`GraphServicesClient`·を作成するメソッドが必要になります。このメソッドは、Microsoft Graph に対するクライアント経由でのすべての呼び出しに対して `GetTokenForUserAsync` を使用するクライアントを作成します。
 
-```c#
-        public static void SignOut()
-        {
-            foreach (var user in IdentityClientApp.Users)
-            {
-                user.SignOut();
-            }
-
-            TokenForUser = null;
-
-            //Clear stored values from last authentication.
-            _settings.Values["userID"] = null;
-            _settings.Values["userEmail"] = null;
-            _settings.Values["userName"] = null;
-
-        }
 ```
-
-**GetAuthenticatedClient (クライアント ライブラリのみ)**
-
-最後に、クライアント ライブラリを使用している場合は、`GraphServicesClient` を作成するメソッドが必要です。このメソッドは、Microsoft Graph に対するクライアント経由でのすべての呼び出しに対して `GetTokenForUserAsync` を使用するクライアントを作成します。
-
-```c#
         public static GraphServiceClient GetAuthenticatedClient()
         {
             if (graphClient == null)
@@ -297,123 +207,184 @@ public static ApplicationDataContainer _settings = ApplicationData.Current.Roami
 
 ``ComposeAndSendMailAsync`` メソッドは、MainPage.xaml.cs ファイルによって渡される 3 つの文字列値 (``subject``、``bodyContent``、``recipients``) を取得します。``subject`` および ``bodyContent`` の文字列は、その他のすべての UI 文字列とともに Resources.resw ファイルに格納されます。``recipients`` の文字列はアプリのインターフェイスにあるアドレス ボックスのものです。 
 
-**REST バージョン**
+MailHelper.cs ファイルに以下の `using` 宣言があることを確認します。
 
-このファイルの REST バージョンには次の `using` 宣言が必要です。
-
-```c#
+```
 using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.IO;
 using System.Threading.Tasks;
+using Microsoft.Graph;
+using Windows.Storage;
 ```
 
-アドレスは複数渡すことができるため、最初に、要求の POST 本文に入れて渡せるように、``recipients`` 文字列を一連の EmailAddress オブジェクトに分割します。
+``ComposeAndSendMailAsync`` メソッド内の最初のタスクでは、Microsoft Graph から現在のユーザーの写真を取得します。この行は、`GetCurrentUserPhotoStreamAsync` メソッドを呼び出します。
 
-```c#
-            // Prepare the recipient list
-            string[] splitter = { ";" };
-            var splitRecipientsString = recipients.Split(splitter, StringSplitOptions.RemoveEmptyEntries);
-            string recipientsJSON = null;
-
-            int n = 0;
-            foreach (string recipient in splitRecipientsString)
-            {
-                if ( n==0)
-                recipientsJSON += "{'EmailAddress':{'Address':'" + recipient.Trim() + "'}}";
-                else
-                {
-                    recipientsJSON += ", {'EmailAddress':{'Address':'" + recipient.Trim() + "'}}";
-                }
-                n++;
-            }
+```
+            // Get current user photo
+            Stream photoStream = await GetCurrentUserPhotoStreamAsync();
 ```
 
-次に、有効な JSON メッセージ オブジェクトを作成し、HTTP POST 要求を使用して **me/microsoft.graph.SendMail** エンドポイントに送信します。``bodyContent`` の文字列は HTML 文書であるため、要求によって **ContentType** 値が HTML に設定されます。また、``AuthenticationHelper.GetTokenHelperAsync`` への呼び出しにより、要求に渡される新規のアクセス トークンがあることを確認します。
+完全な `GetCurrentUserPhotoStreamAsync` メソッドは、次のようになります。
 
-```c#
-                HttpClient client = new HttpClient();
-                var token = await AuthenticationHelper.GetTokenHelperAsync();
-                client.DefaultRequestHeaders.Add("Authorization", "Bearer " + token);
-
-                // Build contents of post body and convert to StringContent object.
-                // Using line breaks for readability.
-                string postBody = "{'Message':{" 
-                    +  "'Body':{ " 
-                    + "'Content': '" + bodyContent + "'," 
-                    + "'ContentType':'HTML'}," 
-                    + "'Subject':'" + subject + "'," 
-                    + "'ToRecipients':[" + recipientsJSON +  "]}," 
-                    + "'SaveToSentItems':true}";
-
-                var emailBody = new StringContent(postBody, System.Text.Encoding.UTF8, "application/json");
-
-                HttpResponseMessage response = await client.PostAsync(new Uri("https://graph.microsoft.com/v1.0/me/microsoft.graph.SendMail"), emailBody);
-
-                if ( !response.IsSuccessStatusCode)
-                {
-
-                    throw new Exception("We could not send the message: " + response.StatusCode.ToString());
-                }
 ```
-
-完全なクラスは、次のようになります。
-
-```c#
-    class MailHelper
-    {
-        /// <summary>
-        /// Compose and send a new email.
-        /// </summary>
-        /// <param name="subject">The subject line of the email.</param>
-        /// <param name="bodyContent">The body of the email.</param>
-        /// <param name="recipients">A semicolon-separated list of email addresses.</param>
-        /// <returns></returns>
-        internal async Task ComposeAndSendMailAsync(string subject,
-                                                            string bodyContent,
-                                                            string recipients)
+        // Gets the stream content of the signed-in user's photo. 
+        // This snippet doesn't work with consumer accounts.
+        public async Task<Stream> GetCurrentUserPhotoStreamAsync()
         {
-
-            // Prepare the recipient list
-            string[] splitter = { ";" };
-            var splitRecipientsString = recipients.Split(splitter, StringSplitOptions.RemoveEmptyEntries);
-            string recipientsJSON = null;
-
-            int n = 0;
-            foreach (string recipient in splitRecipientsString)
-            {
-                if ( n==0)
-                recipientsJSON += "{'EmailAddress':{'Address':'" + recipient.Trim() + "'}}";
-                else
-                {
-                    recipientsJSON += ", {'EmailAddress':{'Address':'" + recipient.Trim() + "'}}";
-                }
-                n++;
-            }
+            Stream currentUserPhotoStream = null;
 
             try
             {
+                var graphClient = AuthenticationHelper.GetAuthenticatedClient();
+                currentUserPhotoStream = await graphClient.Me.Photo.Content.Request().GetAsync();
 
-                HttpClient client = new HttpClient();
-                var token = await AuthenticationHelper.GetTokenForUserAsync();
-                client.DefaultRequestHeaders.Add("Authorization", "Bearer " + token);
+            }
 
-                // Build contents of post body and convert to StringContent object.
-                // Using line breaks for readability.
-                string postBody = "{'Message':{" 
-                    +  "'Body':{ " 
-                    + "'Content': '" + bodyContent + "'," 
-                    + "'ContentType':'HTML'}," 
-                    + "'Subject':'" + subject + "'," 
-                    + "'ToRecipients':[" + recipientsJSON +  "]}," 
-                    + "'SaveToSentItems':true}";
+            // If the user account is MSA (not work or school), the service will throw an exception.
+            catch (ServiceException)
+            {
+                return null;
+            }
 
-                var emailBody = new StringContent(postBody, System.Text.Encoding.UTF8, "application/json");
+            return currentUserPhotoStream;
 
-                HttpResponseMessage response = await client.PostAsync(new Uri("https://graph.microsoft.com/v1.0/me/microsoft.graph.SendMail"), emailBody);
+        }
+```
 
-                if ( !response.IsSuccessStatusCode)
+ユーザーが写真を持っていない場合、このロジックでは、プロジェクトに含まれている別のイメージ ファイルを取得します。
+
+```
+            // If the user doesn't have a photo, or if the user account is MSA, we use a default photo
+
+            if (photoStream == null)
+            {
+                StorageFile file = await Windows.ApplicationModel.Package.Current.InstalledLocation.GetFileAsync("test.jpg");
+                photoStream = (await file.OpenReadAsync()).AsStreamForRead();
+            }
+```
+
+イメージ ストリームができたため、`UploadFileToOneDriveAsync` メソッドを呼び出してファイルを OneDrive にアップロードできます。
+
+```
+            MemoryStream photoStreamMS = new MemoryStream();
+            // Copy stream to MemoryStream object so that it can be converted to byte array.
+            photoStream.CopyTo(photoStreamMS);
+
+            DriveItem photoFile = await UploadFileToOneDriveAsync(photoStreamMS.ToArray());
+```
+
+完全な `UploadFileToOneDriveAsync` メソッドは、次のようになります。
+
+```
+        // Uploads the specified file to the user's root OneDrive directory.
+        public async Task<DriveItem> UploadFileToOneDriveAsync(byte[] file)
+        {
+            DriveItem uploadedFile = null;
+
+            try
+            {
+                var graphClient = AuthenticationHelper.GetAuthenticatedClient();
+                MemoryStream fileStream = new MemoryStream(file);
+                uploadedFile = await graphClient.Me.Drive.Root.ItemWithPath("me.png").Content.Request().PutAsync<DriveItem>(fileStream);
+
+            }
+
+
+            catch (ServiceException)
+            {
+                return null;
+            }
+
+            return uploadedFile;
+        }
+```
+
+このストリームは、次のメッセージとともに渡すことができる `MessageAttachmentsCollectionPage` オブジェクトの作成にも使用できます。
+
+```
+            MessageAttachmentsCollectionPage attachments = new MessageAttachmentsCollectionPage();
+            attachments.Add(new FileAttachment
+            {
+                ODataType = "#microsoft.graph.fileAttachment",
+                ContentBytes = photoStreamMS.ToArray(),
+                ContentType = "image/png",
+                Name = "me.png"
+            });
+```
+
+`GetSharingLinkAsync` メソッドを呼び出して、新しくアップロードした OneDrive ファイルの共有リンクを取得できます。`bodyContent` 文字列には、共有リンクのプレースホルダーが含まれています。
+
+```
+            // Get the sharing link and insert it into the message body.
+            Permission sharingLink = await GetSharingLinkAsync(photoFile.Id);
+            string bodyContentWithSharingLink = String.Format(bodyContent, sharingLink.Link.WebUrl);
+```
+
+完全な `GetSharingLinkAsync` メソッドは、次のようになります。
+
+```
+        public static async Task<Permission> GetSharingLinkAsync(string Id)
+        {
+            Permission permission = null;
+
+            try
+            {
+                var graphClient = AuthenticationHelper.GetAuthenticatedClient();
+                permission = await graphClient.Me.Drive.Items[Id].CreateLink("view").Request().PostAsync();
+            }
+
+            catch (ServiceException)
+            {
+                return null;
+            }
+
+            return permission;
+        }
+```
+
+アドレスは複数渡すことができるため、次に、``recipients`` 文字列を一連の `EmailAddress` オブジェクトに分割します。それは、`Recipients` オブジェクトのリストを作成するために使用され、そのオブジェクトは要求の POST 本文に入れられて渡されます。
+
+```
+            // Prepare the recipient list
+            string[] splitter = { ";" };
+            var splitRecipientsString = recipients.Split(splitter, StringSplitOptions.RemoveEmptyEntries);
+            List<Recipient> recipientList = new List<Recipient>();
+
+            foreach (string recipient in splitRecipientsString)
+            {
+                recipientList.Add(new Recipient { EmailAddress = new EmailAddress { Address = recipient.Trim() } });
+            }
+```
+
+最後に、`Message` オブジェクトを作成し、`GraphServiceClient` を使用して **me/microsoft.graph.SendMail** エンドポイントに送信します。``bodyContent`` の文字列は HTML 文書であるため、要求によって HTML に **ContentType** 値が設定されます。
+
+```
+            try
+            {
+                var graphClient = AuthenticationHelper.GetAuthenticatedClient();
+
+                var email = new Message
                 {
+                    Body = new ItemBody
+                    {
+                        Content = bodyContentWithSharingLink,
+                        ContentType = BodyType.Html,
+                    },
+                    Subject = subject,
+                    ToRecipients = recipientList,
+                    Attachments = attachments
+                };
 
-                    throw new Exception("We could not send the message: " + response.StatusCode.ToString());
+                try
+                {
+                    await graphClient.Me.SendMail(email, true).Request().PostAsync();
+                }
+                catch (ServiceException exception)
+                {
+                    throw new Exception("We could not send the message: " + exception.Error == null ? "No error message returned." : exception.Error.Message);
                 }
 
 
@@ -423,25 +394,11 @@ using System.Threading.Tasks;
             {
                 throw new Exception("We could not send the message: " + e.Message);
             }
-        }
-    }
 ```
-
-**クライアント ライブラリ バージョン**
-
-このファイルのクライアント バージョンには次の `using` 宣言が必要です。
-
-```c#
-using System;
-using System.Collections.Generic;
-using System.Threading.Tasks;
-```
-
-クライアント ライブラリを使用してメッセージを送信するためのコードは、REST 呼び出しを使用するコードによく似ています。JSON オブジェクトを作成して、HTTP POST 要求の **SendMail** エンドポイントに直接渡す代わりに、クライアント ライブラリで定義される同等のオブジェクトを作成し、結果の `Message` オブジェクトを `GraphServiceClient` の `SendMail` メソッドに渡します。クライアントは、アクセス トークンを取得する作業と、要求を **SendMail** エンドポイントに渡す作業を行います。
 
 完全なクラスは、次のようになります。
 
-```c#
+```
     public class MailHelper
     {
         /// <summary>
@@ -455,6 +412,37 @@ using System.Threading.Tasks;
                                                             string bodyContent,
                                                             string recipients)
         {
+
+            // Get current user photo
+            Stream photoStream = await GetCurrentUserPhotoStreamAsync();
+
+
+            // If the user doesn't have a photo, or if the user account is MSA, we use a default photo
+
+            if (photoStream == null)
+            {
+                StorageFile file = await Windows.ApplicationModel.Package.Current.InstalledLocation.GetFileAsync("test.jpg");
+                photoStream = (await file.OpenReadAsync()).AsStreamForRead();
+            }
+
+            MemoryStream photoStreamMS = new MemoryStream();
+            // Copy stream to MemoryStream object so that it can be converted to byte array.
+            photoStream.CopyTo(photoStreamMS);
+
+            DriveItem photoFile = await UploadFileToOneDriveAsync(photoStreamMS.ToArray());
+
+            MessageAttachmentsCollectionPage attachments = new MessageAttachmentsCollectionPage();
+            attachments.Add(new FileAttachment
+            {
+                ODataType = "#microsoft.graph.fileAttachment",
+                ContentBytes = photoStreamMS.ToArray(),
+                ContentType = "image/png",
+                Name = "me.png"
+            });
+
+            // Get the sharing link and insert it into the message body.
+            Permission sharingLink = await GetSharingLinkAsync(photoFile.Id);
+            string bodyContentWithSharingLink = String.Format(bodyContent, sharingLink.Link.WebUrl);
 
             // Prepare the recipient list
             string[] splitter = { ";" };
@@ -474,11 +462,12 @@ using System.Threading.Tasks;
                 {
                     Body = new ItemBody
                     {
-                        Content = bodyContent,
+                        Content = bodyContentWithSharingLink,
                         ContentType = BodyType.Html,
                     },
                     Subject = subject,
                     ToRecipients = recipientList,
+                    Attachments = attachments
                 };
 
                 try
@@ -498,6 +487,71 @@ using System.Threading.Tasks;
                 throw new Exception("We could not send the message: " + e.Message);
             }
         }
+
+
+        // Gets the stream content of the signed-in user's photo. 
+        // This snippet doesn't work with consumer accounts.
+        public async Task<Stream> GetCurrentUserPhotoStreamAsync()
+        {
+            Stream currentUserPhotoStream = null;
+
+            try
+            {
+                var graphClient = AuthenticationHelper.GetAuthenticatedClient();
+                currentUserPhotoStream = await graphClient.Me.Photo.Content.Request().GetAsync();
+
+            }
+
+            // If the user account is MSA (not work or school), the service will throw an exception.
+            catch (ServiceException)
+            {
+                return null;
+            }
+
+            return currentUserPhotoStream;
+
+        }
+
+        // Uploads the specified file to the user's root OneDrive directory.
+        public async Task<DriveItem> UploadFileToOneDriveAsync(byte[] file)
+        {
+            DriveItem uploadedFile = null;
+
+            try
+            {
+                var graphClient = AuthenticationHelper.GetAuthenticatedClient();
+                MemoryStream fileStream = new MemoryStream(file);
+                uploadedFile = await graphClient.Me.Drive.Root.ItemWithPath("me.png").Content.Request().PutAsync<DriveItem>(fileStream);
+
+            }
+
+
+            catch (ServiceException)
+            {
+                return null;
+            }
+
+            return uploadedFile;
+        }
+
+        public static async Task<Permission> GetSharingLinkAsync(string Id)
+        {
+            Permission permission = null;
+
+            try
+            {
+                var graphClient = AuthenticationHelper.GetAuthenticatedClient();
+                permission = await graphClient.Me.Drive.Items[Id].CreateLink("view").Request().PostAsync();
+            }
+
+            catch (ServiceException)
+            {
+                return null;
+            }
+
+            return permission;
+        }
+
     }
 ``` 
 
@@ -507,15 +561,9 @@ using System.Threading.Tasks;
 
 スターター プロジェクトの MainPage.xaml ファイルには、必要なすべての XAML が既に含まれています。必要な作業は、インターフェイスを機能させるコードを MainPage.xaml.cs ファイルに追加するだけです。スターター プロジェクトでこのファイルを見つけて、開きます。
 
-このファイルには、クライアント ライブラリと REST バージョンの両方のサンプルに必要なすべての `using` 宣言が既に含まれています。
-
-***クライアント ライブラリ バージョン***
-
-クライアント ライブラリ バージョンのアプリは、ユーザーが認証するときに `GraphServiceClient` を作成します。 
-
 名前空間内にこのコードを追加して、MainPage.xaml.cs の MainPage クラスのクライアント ライブラリ バージョンを完了します。
 
-```c#
+```
     public sealed partial class MainPage : Page
     {
         private string _mailAddress;
@@ -593,7 +641,7 @@ using System.Threading.Tasks;
             MailStatus.Text = string.Empty;
             try
             {
-                await _mailHelper.ComposeAndSendMailAsync(ResourceLoader.GetForCurrentView().GetString("MailSubject"), ComposePersonalizedMail(_displayName), _mailAddress);
+                await _mailHelper.ComposeAndSendMailAsync(ResourceLoader.GetForCurrentView().GetString("MailSubject"), ResourceLoader.GetForCurrentView().GetString("MailContents"), _mailAddress);
                 MailStatus.Text = string.Format(ResourceLoader.GetForCurrentView().GetString("SendMailSuccess"), _mailAddress);
             }
             catch (Exception)
@@ -605,135 +653,6 @@ using System.Threading.Tasks;
                 ProgressBar.Visibility = Visibility.Collapsed;
             }
             
-        }
-
-        // <summary>
-        // Personalizes the email.
-        // </summary>
-        public static string ComposePersonalizedMail(string userName)
-        {
-            return String.Format(ResourceLoader.GetForCurrentView().GetString("MailContents"), userName);
-        }
-
-        private void Disconnect_Click(object sender, RoutedEventArgs e)
-        {
-            ProgressBar.Visibility = Visibility.Visible;
-            AuthenticationHelper.SignOut();
-            ProgressBar.Visibility = Visibility.Collapsed;
-            MailButton.IsEnabled = false;
-            EmailAddressBox.IsEnabled = false;
-            ConnectButton.Visibility = Visibility.Visible;
-            InfoText.Text = ResourceLoader.GetForCurrentView().GetString("ConnectPrompt");
-            this._displayName = null;
-            this._mailAddress = null;
-        }
-    }
-```
-
-***REST バージョン***
-
-このクラスの REST バージョンは、ユーザーが認証するときに `GetTokenForUserAsync` メソッドを直接呼び出すことを除いて、クライアント バージョンとよく似ています。また、アプリのローミング設定からユーザーの値も取得します。 
-
-名前空間内にこのコードを追加して、MainPage.xaml.cs ｄの MainPage クラスの REST バージョンを完了します。
-
-```c#
-    public sealed partial class MainPage : Page
-    {
-        private string _mailAddress;
-        private string _displayName = null;
-        private MailHelper _mailHelper = new MailHelper();
-        public static ApplicationDataContainer _settings = ApplicationData.Current.RoamingSettings;
-
-        public MainPage()
-        {
-            this.InitializeComponent();
-        }
-
-        protected override void OnNavigatedTo(NavigationEventArgs e)
-        {
-            // Developer code - if you haven't registered the app yet, we warn you. 
-            if (!App.Current.Resources.ContainsKey("ida:ClientID"))
-            {
-                InfoText.Text = ResourceLoader.GetForCurrentView().GetString("NoClientIdMessage");
-                ConnectButton.IsEnabled = false;
-            }
-            else
-            {
-                InfoText.Text = ResourceLoader.GetForCurrentView().GetString("ConnectPrompt");
-                ConnectButton.IsEnabled = true;
-            }
-        }
-
-        /// <summary>
-        /// Signs in the current user.
-        /// </summary>
-        /// <returns></returns>
-        public async Task<bool> SignInCurrentUserAsync()
-        {
-            var token = await AuthenticationHelper.GetTokenForUserAsync();
-
-            if (token != null)
-            {
-                string userId = (string)_settings.Values["userID"];
-                _mailAddress = (string)_settings.Values["userEmail"];
-                _displayName = (string)_settings.Values["userName"];
-                return true;
-            }
-            else
-            {
-                return false;
-            }
-
-        }
-
-
-        private async void ConnectButton_Click(object sender, RoutedEventArgs e)
-        {
-            ProgressBar.Visibility = Visibility.Visible;
-            if (await SignInCurrentUserAsync())
-            { 
-                InfoText.Text = "Hi " + _displayName + "," + Environment.NewLine + ResourceLoader.GetForCurrentView().GetString("SendMailPrompt");
-                MailButton.IsEnabled = true;
-                EmailAddressBox.IsEnabled = true;
-                ConnectButton.Visibility = Visibility.Collapsed;
-                DisconnectButton.Visibility = Visibility.Visible;
-                EmailAddressBox.Text = _mailAddress;
-            }
-            else
-            {
-                InfoText.Text = ResourceLoader.GetForCurrentView().GetString("AuthenticationErrorMessage");
-            }
-
-            ProgressBar.Visibility = Visibility.Collapsed;
-        }
-
-        private async void MailButton_Click(object sender, RoutedEventArgs e)
-        {
-            _mailAddress = EmailAddressBox.Text;
-            ProgressBar.Visibility = Visibility.Visible;
-            MailStatus.Text = string.Empty;
-            try
-            {
-                await _mailHelper.ComposeAndSendMailAsync(ResourceLoader.GetForCurrentView().GetString("MailSubject"), ComposePersonalizedMail(_displayName), _mailAddress);
-                MailStatus.Text = string.Format(ResourceLoader.GetForCurrentView().GetString("SendMailSuccess"), _mailAddress);
-            }
-            catch (Exception)
-            {
-                MailStatus.Text = ResourceLoader.GetForCurrentView().GetString("MailErrorMessage");
-            }
-            finally
-            {
-                ProgressBar.Visibility = Visibility.Collapsed;
-            }
-            
-        }
-
-        // <summary>
-        // Personalizes the email.
-        // </summary>
-        public static string ComposePersonalizedMail(string userName)
-        {
-            return String.Format(ResourceLoader.GetForCurrentView().GetString("MailContents"), userName);
         }
 
         private void Disconnect_Click(object sender, RoutedEventArgs e)
@@ -758,7 +677,7 @@ using System.Threading.Tasks;
 
 2. 個人用あるいは職場または学校アカウントでサインインし、要求されたアクセス許可を付与します。
 
-3. **[メールの送信]** ボタンを選びます。メールが送信されると、ボタンの下に成功メッセージが表示されます。
+3. **[メールの送信]** ボタンを選びます。メールが送信されると、ボタンの下に成功メッセージが表示されます。このメール メッセージには添付ファイルとして写真が含まれており、OneDrive にアップロードされたファイルへの共有リンクも提示されます。
 
 ## <a name="next-steps"></a>次の手順
 - [Graph エクスプローラー](https://graph.microsoft.io/graph-explorer)を使用して REST API を試してみます。
