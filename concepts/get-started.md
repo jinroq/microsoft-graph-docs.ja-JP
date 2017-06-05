@@ -4,7 +4,7 @@
 
 好みの認証プロバイダーと開発プラットフォームについて説明した記事を選び、Microsoft Graph への接続を開始します。
 
-選んだ開発プラットフォームについての記事に記載されている手順に従うことも、[クイック スタート](http://dev.office.com/getting-started/office365apis)機能を試してみて、動作するソリューションをすばやく稼働させることもできます。
+選んだ開発プラットフォームについての記事に記載されている手順に従うことも、[クイック スタート](https://developer.microsoft.com/graph/quick-start)機能を試してみて、動作するソリューションをすばやく稼働させることもできます。
 
 完成した Connect サンプルを確認するには、GitHub の [Microsoft Graph](https://github.com/microsoftgraph) をご覧ください。次の表は、認証プロバイダーとプラットフォームごとにサンプルをリストにしたもので、REST または Microsoft Graph クライアント ライブラリのどちらを使用して Microsoft Graph に接続するかを示しています。
 
@@ -74,7 +74,7 @@
         <a href="https://github.com/microsoftgraph/php-connect-rest-sample/tree/last_v1_auth">REST サンプル</a>
     </td>     
     <td>
-            <a href="https://github.com/microsoftgraph/php-connect-sample">SDK サンプル</a>または <a href="https://github.com/microsoftgraph/php-connect-rest-sample">REST サンプル</a>
+            <a href="https://github.com/microsoftgraph/php-connect-sample">SDK サンプル</a>または ¶<a href="https://github.com/microsoftgraph/php-connect-rest-sample">REST サンプル</a>
     </td> 
   </tr>
   <tr>
@@ -115,5 +115,5 @@
 
 ## <a name="see-also"></a>関連項目
 - サンプルの REST 呼び出しを [API エクスプローラー](https://graph.microsoft.io/graph-explorer)で試してみてください。
-- [Azure AD エンドポイントのドキュメント](https://azure.microsoft.com/en-us/documentation/services/active-directory/)
-- [Azure AD v2.0 エンドポイントのドキュメント](https://azure.microsoft.com/en-us/documentation/articles/?service=active-directory&term=azure+ad+v2.0)
+- [Azure AD エンドポイントのドキュメント](https://azure.microsoft.com/documentation/services/active-directory/)
+- [Azure AD v2.0 エンドポイントのドキュメント](https://azure.microsoft.com/documentation/articles/?service=active-directory&term=azure+ad+v2.0)

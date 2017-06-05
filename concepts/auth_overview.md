@@ -71,7 +71,7 @@ Microsoft Graph は、次に示す種類のアプリから呼び出せます。
 - **Web API**: クライアント アプリは、ユーザーの代わりに Web API (Azure AD でセキュリティ保護された API) を呼び出して、この API が Microsoft Graph を呼び出すます。Azure AD エンドポイントでサポートされています。Azure AD v2.0 エンドポイントについては、クライアントと Web API が同じアプリケーション ID を持つ場合にのみサポートされます (たとえば、Web API バック エンドを呼び出すネイティブ アプリなど)。 
 
 ## <a name="how-do-i-get-my-app-talking-to-azure-ad-and-microsoft-graph"></a>アプリで Azure AD および Microsoft Graph と対話する方法
-アプリで Azure AD からトークンを取得するには、まず、そのアプリを登録しておく必要があります。Azure AD v2.0 エンドポイントの場合は、アプリの登録に [Microsoft アプリ登録ポータル](https://apps.dev.microsoft.com/)を使用します。Azure AD エンドポイントの場合は、[Azure ポータル](https://azure.portal.com/)を使用します。この登録では、アプリと Azure AD を統合して、アプリがトークンを取得する位置と ID を設定します。その内容は次のとおりです。
+アプリで Azure AD からトークンを取得するには、まず、そのアプリを登録しておく必要があります。Azure AD v2.0 エンドポイントの場合は、アプリの登録に [Microsoft アプリ登録ポータル](https://apps.dev.microsoft.com/)を使用します。Azure AD エンドポイントの場合は、[Azure ポータル](https://portal.azure.com/)を使用します。この登録では、アプリと Azure AD を統合して、アプリがトークンを取得する位置と ID を設定します。その内容は次のとおりです。
 
 - **アプリケーション ID**: Azure AD によって割り当てられる一意識別子。 
 - **リダイレクト URI/URL**: アプリが Azure AD からの応答を受け取る 1 つ以上のエンドポイント (ネイティブ アプリとモバイル アプリの場合は、Azure AD によって割り当てられる URI になります)。
@@ -146,7 +146,7 @@ Azure AD v2.0 エンドポイントと Azure AD エンドポイントの相違�
 アプリの登録が済むと、開始準備は完了です。
 
 - ユーザーの代わりに Microsoft Graph を呼び出すアプリのアクセス トークンを取得する簡単な手順については、「[ユーザーの代わりにアクセスを取得](auth_v2_user.md)」を参照してください。
-- ユーザーなしで Microsoft Graph を呼び出すアプリのアクセス トークンを取得する簡単な手順については、「[ユーザーなしでアクセスを取得](auth_v2_user.md)」を参照してください。
+- ユーザーなしで Microsoft Graph を呼び出すアプリのアクセス トークンを取得する簡単な手順については、「[ユーザーなしでアクセスを取得](auth_v2_service.md)」を参照してください。
 - Microsoft Graph で使用可能なアクセス許可を確認する場合は、「[アクセス許可](permissions_reference.md)」を参照してください。
 - Microsoft Graph によるパートナー管理型顧客データへのアクセスについて Microsoft クラウド ソリューション プロバイダーに興味がある場合は、「[アプリケーション アクセスの管理 (CSP)](auth_cloudsolutionprovider.md)」を参照してください。
 
