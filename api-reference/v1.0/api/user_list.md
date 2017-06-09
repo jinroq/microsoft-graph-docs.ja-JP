@@ -1,8 +1,19 @@
 # <a name="list-users"></a>ユーザーを一覧表示する
 
-ユーザー オブジェクトのリストを取得します。
+ユーザー オブジェクトの一覧を取得します。
 
-> 注:ユーザーの一覧表示では、プロパティの既定セットのみが返されます (*businessPhones、displayName、givenName、id、jobTitle、mail、mobilePhone、officeLocation、preferredLanguage、surname、userPrincipalName*)。`$select` を使用して、[ユーザー](../resources/user.md) オブジェクトの他のプロパティと関係を取得します。
+> 注:ユーザーの一覧表示では、プロパティの既定セットのみが返されます (*businessPhones、displayName、givenName、id、jobTitle、mail、mobilePhone、officeLocation、preferredLanguage、surname、userPrincipalName*)。`$select` を使用して、[ユーザー](../resources/user.md) オブジェクトの他のプロパティと関係を取得します。ただし、ユーザーのコレクション (たとえば /v1.0/users?$select=aboutMe) ではなく、個々のユーザー (たとえば /v1.0/me?$select=aboutMe) に対して選択できるのは、次のプロパティだけです。
+>* aboutMe
+>* birthday
+>* hireDate
+>* interests
+>* mySite
+>* pastProjects
+>* preferredName
+>* responsibilities
+>* schools
+>* skills
+>* mailboxSettings
 
 ## <a name="prerequisites"></a>前提条件
 この API を実行するには、以下のいずれかの**スコープ**が必要です。*User.ReadBasic.All、User.Read.All、User.ReadWrite.All、Directory.Read.All、Directory.ReadWrite.All、Directory.AccessAsUser.All*

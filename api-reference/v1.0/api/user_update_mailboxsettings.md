@@ -7,7 +7,7 @@
 **注** メールボックス設定は作成または削除できません。
 
 ## <a name="prerequisites"></a>前提条件
-この API を実行するには、以下の**スコープ**が必要です。*Mailboxsettings.ReadWrite*  
+この API を実行するには、以下の**スコープ**が必要です。*MailboxSettings.ReadWrite*  
 ## <a name="http-request"></a>HTTP 要求
 <!-- { "blockType": "ignored" } -->
 ```http

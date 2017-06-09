@@ -3,8 +3,11 @@
 Office 365 グループ、動的なグループ、またはセキュリティ グループのいずれかの Azure Active Directory グループを表します。[directoryObject](directoryobject.md) から継承します。
 
 このリソースは以下をサポートしています。
+
 - [拡張機能](../../../concepts/extensibility_overview.md)を使用して、カスタム プロパティに独自のデータを追加します。
 - [デルタ](../api/user_delta.md)関数を提供することにより、[デルタ クエリ](../../../concepts/delta_query_overview.md)を使用して、増分の追加、削除、更新を追跡します。
+
+> **Microsoft Teams は Office 365 のグループをもとに作成されます。**Microsoft Teams では、ほとんどのグループ API を使用できます。[グループの作成](../api/group_post_groups.md)を使用してチームを作成することはできません。詳細については、「[Microsoft Teams リファレンス](teams_api_overview.md)」を参照してください。
 
 ## <a name="methods"></a>メソッド
 
@@ -86,6 +89,7 @@ Office 365 グループ、動的なグループ、またはセキュリティ �
 |memberOf|[directoryObject](directoryobject.md) コレクション|このグループがメンバーとして含まれているグループ。HTTP メソッド:GET (すべてのグループでサポートされます)。読み取り専用です。Null 許容型。|
 |members|[directoryObject](directoryobject.md) コレクション| このグループのメンバーであるユーザーとグループ。HTTP メソッド:GET (すべてのグループでサポートされます)、POST (Office 365 グループ、セキュリティ グループ、およびメールが有効なセキュリティ グループでサポートされます)、DELETE (Office 365 グループとセキュリティ グループでサポートされます)。Null 許容型。|
 |onenote|[OneNote](onenote.md)| 読み取り専用です。|
+|planner|[Planner](planner.md)| 統合グループに存在する可能性がある Planner リソースのエントリ ポイント。|
 |owners|[directoryObject](directoryobject.md) コレクション|グループの所有者。所有者は、このオブジェクトの変更を許可されている管理者以外のユーザーです。10 人の所有者に制限されます。HTTP メソッド:GET (すべてのグループでサポートされます)、POST (Office 365 グループ、セキュリティ グループ、およびメールが有効なセキュリティ グループでサポートされます)、DELETE (Office 365 グループとセキュリティ グループでサポートされます)。Null 許容型。|
 |写真|[profilePhoto](profilephoto.md)| グループのプロフィール写真 |
 |rejectedSenders|[directoryObject](directoryobject.md) コレクション|このグループで投稿またはカレンダーのイベントを作成することが許可されていないグループの一覧。Null 許容型|

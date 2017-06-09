@@ -1,6 +1,6 @@
 # <a name="get-started-with-microsoft-graph-in-a-xamarin-forms-app"></a>Xamarin Forms アプリで Microsoft Graph を使ってみる
 
-> **エンタープライズのお客様向けにアプリを作成していますか?**エンタープライズのお客様が、<a href="https://azure.microsoft.com/en-us/documentation/articles/active-directory-conditional-access-device-policies/" target="_newtab">条件付きのデバイスへのアクセス</a>のようなエンタープライズ モビリティ セキュリティの機能をオンにしている場合、アプリが動作しない可能性があります。その場合、気がつかないまま、お客様の側でエラーが発生してしまう可能性があります。 
+> **エンタープライズのお客様向けにアプリを作成していますか?**エンタープライズのお客様が、<a href="https://azure.microsoft.com/documentation/articles/active-directory-conditional-access-device-policies/" target="_newtab">条件付きのデバイスへのアクセス</a>のようなエンタープライズ モビリティ セキュリティの機能をオンにしている場合、アプリが動作しない可能性があります。その場合、気がつかないまま、お客様の側でエラーが発生してしまう可能性があります。 
 
 この記事では、[Azure AD v2.0 エンドポイント](https://developer.microsoft.com/graph/docs/concepts/converged_auth)からアクセス トークンを取得し、Microsoft Graph を呼び出すために必要なタスクについて説明します。ここでは、[Xamarin Forms 用 Microsoft Graph Connect サンプル](https://github.com/microsoftgraph/xamarin-csharp-connect-sample) のサンプル内のコードを説明し、Microsoft Graph を使用するアプリで実装する必要のある主要な概念について説明します。また、この記事では、[Microsoft Graph クライアント ライブラリ](http://www.nuget.org/packages/Microsoft.Graph/)を使用して Microsoft Graph にアクセスする方法についても説明します。
 
@@ -27,7 +27,7 @@
 - 最新の iOS SDK
 - 最新バージョンの Xcode
 - Mac OS X Sierra(10.12) 以上 
-- [Xamarin.iOS](https://developer.xamarin.com/guides/ios/getting_started/installation/mac/)
+- [Xamarin.iOS](https://docs.microsoft.com/visualstudio/mac/installation)
 - [Visual Studio に接続されている Xamarin Mac エージェント](https://developer.xamarin.com/guides/ios/getting_started/installation/windows/connecting-to-mac/)
 
 
@@ -35,15 +35,15 @@
  
 1. 個人用アカウントか職場または学校アカウントのいずれかを使用して、[アプリ登録ポータル](https://apps.dev.microsoft.com/)にサインインします。
 2. **[アプリの追加]** を選択します。
-3. アプリの名前を入力して、**[アプリケーションの作成]** を選択します。
+3. アプリの名前を入力して、**[作成]** を選択します。
     
     登録ページが表示され、アプリのプロパティが一覧表示されます。
  
-4. **[プラットフォーム]** で、**[プラットフォームの追加]** を選びます。
-5. **[Mobile プラットフォーム]** を選びます。
-6. アプリケーション ID をコピーします。サンプル アプリにこの値を入力する必要があります。
+4. **[プラットフォーム]** で、**[プラットフォームの追加]** を選択します。
+5. **[ネイティブ アプリケーション]** を選択します。
+6. **[ネイティブ アプリケーション]** プラットフォームを追加したときに作成されたアプリケーション ID の値とカスタム リダイレクト URI の値 (**[ネイティブ アプリケーション]** ヘッダーの下) をコピーします。この URI は、お客様のアプリケーション ID の値が含まれており、次の形式である必要があります。`msal[Application Id]://auth` サンプル アプリにこれらの値を入力する必要があります。
 
-    アプリケーション ID は、アプリの一意識別子です。リダイレクト URI は、各アプリケーションに対して Windows 10 で提供される一意の URI であり、その URI に送信されたメッセージだけがそのアプリケーションに送信されます。 
+    アプリ ID は、アプリの一意識別子です。 
 
 7. **[保存]** を選びます。
 
@@ -52,15 +52,24 @@
 1. Visual Studio でスターター プロジェクトのソリューション ファイルを開きます。
 2. **XamarinConnect (ポータブル)** プロジェクト内にある **App.cs** ファイルを開き、`ClientId` フィールドを検索します。アプリケーション ID のプレースホルダーを、登録したアプリのアプリケーション ID と置き換えます。
 
-```
-public static string ClientID = "ENTER_YOUR_CLIENT_ID";
-public static string[] Scopes = { "User.Read", "Mail.Send", "Files.ReadWrite" };
-```
-`Scopes` 値は、ユーザーが認証を行うときにアプリが要求する必要のある Microsoft Graph のアクセス許可スコープを保存します。`App` クラス コンストラクターが、ClientID 値を使用して MSAL `PublicClientApplication` クラスのインスタンスをインスタンス化する点に注意してください。ユーザーを認証するために後でこのクラスを使用します。
+    ```
+    public static string ClientID = "ENTER_YOUR_CLIENT_ID";
+    public static string RedirectUri = "msal" + ClientID + "://auth";
+    public static string[] Scopes = { "User.Read", "Mail.Send", "Files.ReadWrite" };
+    ```
+    `Scopes` 値は、ユーザーが認証を行うときにアプリが要求する必要のある Microsoft Graph のアクセス許可スコープを保存します。`App` クラス コンストラクターが、ClientID 値を使用して MSAL `PublicClientApplication` クラスのインスタンスをインスタンス化する点に注意してください。ユーザーを認証するために後でこのクラスを使用します。
+    
+    ```
+    IdentityClientApp = new PublicClientApplication(ClientID);
+    ```
 
-```
-IdentityClientApp = new PublicClientApplication(ClientID);
-```
+3. UserDetailsClient.iOS\info.plist ファイルをテキスト エディターで開きます。残念ながらこのファイルは Visual Studio では編集できません。`<string>msalENTER_YOUR_CLIENT_ID</string>` 要素を `CFBundleURLSchemes` キーの下に配置します。
+
+4. `ENTER_YOUR_CLIENT_ID` を、アプリの登録時に取得したアプリケーション ID の値と置き換えます。アプリケーション ID の前に `msal` を保持してください。結果の文字列値は、次のようになります: `<string>msal[application id]</string>`。
+
+5. UserDetailsClient.Droid\Properties\AndroidManifest.xml ファイルを開きます。次の要素を検索します: `<data android:scheme="msalENTER_YOUR_CLIENT_ID" android:host="auth" />`。
+
+6. `ENTER_YOUR_CLIENT_ID` を、アプリの登録時に取得したアプリケーション ID の値と置き換えます。アプリケーション ID の前に `msal` を保持してください。結果の文字列値は、次のようになります: `<data android:scheme="msal[application id]" android:host="auth" />`。
 
 ## <a name="send-an-email-with-microsoft-graph"></a>Microsoft Graph を使用して電子メールを送信する
 
@@ -415,7 +424,6 @@ using Microsoft.Graph;
 
 
     }
-}
 ``` 
 
 これで、Microsoft Graph と対話するために必要な、アプリの登録、ユーザーの認証、および要求の作成の 3 つの手順が完了しました。 
@@ -433,10 +441,10 @@ using Microsoft.Graph;
 4. **[メールの送信]** ボタンを選びます。メールが送信されると、成功メッセージが表示されます。このメール メッセージには添付ファイルとして写真が含まれており、OneDrive にアップロードされたファイルへの共有リンクも提供します。
 
 ## <a name="next-steps"></a>次の手順
-- [Graph エクスプローラー](https://graph.microsoft.io/graph-explorer)を使用して REST API を試してみます。
+- [Graph エクスプローラー](https://developer.microsoft.com/graph/graph-explorer)を使用して REST API を試してみます。
 - [Xamarin.Forms 用 Microsoft Graph SDK スニペット ライブラリ](https://github.com/microsoftgraph/xamarin-csharp-snippets-sample) で一般的な操作の例を検索するか、または GitHub 上のその他の [Xamarin サンプル](https://github.com/microsoftgraph?utf8=%E2%9C%93&query=xamarin) を探してください。
 
 ## <a name="see-also"></a>関連項目
 - [Microsoft Graph .NET クライアント ライブラリ](https://github.com/microsoftgraph/msgraph-sdk-dotnet)
-- [Azure AD v2.0 のプロトコル](https://azure.microsoft.com/en-us/documentation/articles/active-directory-v2-protocols/)
-- [Azure AD v2.0 のトークン](https://azure.microsoft.com/en-us/documentation/articles/active-directory-v2-tokens/)
+- [Azure AD v2.0 のプロトコル](https://azure.microsoft.com/documentation/articles/active-directory-v2-protocols/)
+- [Azure AD v2.0 のトークン](https://azure.microsoft.com/documentation/articles/active-directory-v2-tokens/)

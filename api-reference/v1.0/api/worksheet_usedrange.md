@@ -12,18 +12,19 @@
 GET /workbook/worksheets/{id|name}/UsedRange
 
 ```
+
+## <a name="optional-request-parameter"></a>オプションの要求パラメーター
+要求の URL では、オプションのクエリ パラメーターを提供します。
+
+| パラメーター       | 型    |説明|
+|:---------------|:--------|:----------|
+|valuesOnly|Boolean|オプション。値の入っているセルのみを使用セルと見なします (書式設定は無視されます)。|
+
+
 ## <a name="request-headers"></a>要求ヘッダー
 | 名前       | 説明|
 |:---------------|:----------|
 | Authorization  | Bearer {code}|
-
-
-## <a name="request-body"></a>要求本文
-要求本文で、次のパラメーターを含む JSON オブジェクトを指定します。
-
-| パラメーター       | 型    |説明|
-|:---------------|:--------|:----------|
-|valuesOnly|boolean|省略可能。値の入っているセルのみを使用セルと見なします (書式設定は無視されます)。|
 
 ## <a name="response"></a>応答
 成功した場合、このメソッドは `200, OK` 応答コードと、応答本文で [Range](../resources/range.md) オブジェクトを返します。
@@ -37,13 +38,9 @@ GET /workbook/worksheets/{id|name}/UsedRange
   "name": "worksheet_usedrange"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/{id|name}/UsedRange
+GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/{id|name}/UsedRange(valuesOnly=true)
 Content-type: application/json
-Content-length: 24
 
-{
-  "valuesOnly": true
-}
 ```
 
 ##### <a name="response"></a>応答

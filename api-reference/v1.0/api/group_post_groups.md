@@ -1,11 +1,12 @@
-# <a name="create-group"></a>グループの作成
+# <a name="create-group"></a>グループを作成する
 
 この API を使用して、要求本文で指定した新しいグループを作成します。次に示す 3 種類のグループのうちの 1 つを作成できます。
 
-* Office 365 グループ (別名: 統合グループ)
+* Office 365 グループ (統合グループ)
 * 動的グループ
 * セキュリティ グループ
 
+> **注**:Microsoft Teams は Office 365 グループでビルドされますが、この API を使用してチームを作成することは現在できません。Microsoft Teams UI で作成されたチームを管理するには、その他のグループ API を使用できます。
 
 ## <a name="prerequisites"></a>前提条件
 この API を実行するには、以下の**スコープ**が必要です。_Group.ReadWrite.All_ 

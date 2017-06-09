@@ -64,7 +64,7 @@ Content-type: application/json
 
 [**SharedDriveItem**](../resources/shareddriveitem.md) には、いくつかの有用な情報が含まれていますが、ほとんどのアプリは、共有の [DriveItem](../resources/driveitem.md)に直接アクセスする必要があります。**SharedDriveItem** リソースには、共有アイテムのスコープ内でコンテンツにアクセスできる、**root** と **items** のリレーションシップが含まれています。
 
-### <a name="exmaple-single-file"></a>例 (単一ファイル)
+### <a name="example-single-file"></a>例 (単一ファイル)
 
 ##### <a name="request"></a>要求
 
@@ -89,7 +89,7 @@ Content-Type: application/json
 }
 ```
 
-### <a name="exmaple-shared-folder"></a>例 (共有フォルダー)
+### <a name="example-shared-folder"></a>例 (共有フォルダー)
 
 ##### <a name="request"></a>要求
 
@@ -135,7 +135,7 @@ Content-Type: application/json
 URL を共有のトークンに変化するには:
 
 1. 共有の URL を Base64 エンコードします。
-2. 次に示すように、base64 でエンコードしたデータを[パディングされていない base64url 形式に変換](https://en.wikipedia.org/wiki/Base64)します。
+2. 次に示すように、base64 でエンコードしたデータを[パディングされていない base64url 形式](https://en.wikipedia.org/wiki/Base64)に変換します。
   1. 文字列から、末尾の `=` 文字をトリミングします。
   2. 安全でない URL 文字を同等の文字に置き換えます (`/` を `_` に、`+` を `-` に置換します)。
 3. 文字列の先頭に `u!` を追加します。

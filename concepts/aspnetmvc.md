@@ -53,177 +53,7 @@
 
 3. **appSettings** 要素内のアプリの構成キーの位置を確認します。ENTER_YOUR_CLIENT_ID と ENTER_YOUR_SECRET のプレース ホルダー値をコピーした値に置き換えます。
 
-リダイレクト URI は、登録したプロジェクトの URL です。要求される[アクセス許可のスコープ](https://developer.microsoft.com/en-us/graph/docs/concepts/permissions_reference)によって、アプリはユーザー プロファイル情報を取得したり、電子メールを送信したりできます。
-
-
-## <a name="authenticate-the-user-and-get-an-access-token"></a>ユーザーの認証とアクセス トークンの取得
-
-この手順では、サインインとトークンの管理コードを追加します。しかし、まず認証フローをさらに詳しく見てみましょう。
-
-このアプリは、委任されたユーザー ID で認証コードの付与フローを使用します。Web アプリケーションのフローでは、登録したアプリのアプリケーション ID、パスワード、およびリダイレクト URI が必要です。 
-
-認証フローは、以下の基本的な手順に分けることができます。
-
-1. 認証と同意のためにユーザーをリダイレクトする
-2. 認証コードを取得する
-3. 認証コードをアクセス トークンに交換する
-4. アクセス トークンの有効期限が切れたら、更新トークンを使用して新しいアクセス トークンを取得する
-
-アプリでは、[ASP.Net OpenID Connect OWIN ミドルウェア](https://www.nuget.org/packages/Microsoft.Owin.Security.OpenIdConnect/) と [.NET 用 Microsoft 認証ライブラリ (MSAL)](https://www.nuget.org/packages/Microsoft.Identity.Client) を使用して、サインインとトークンの管理を行います。これにより、ほとんどの認証タスクを処理します。
-    
-スターター プロジェクトでは、既に次のミドルウェアと MSAL NuGet の依存関係を宣言しています:
-
-  - Microsoft.Owin.Security.OpenIdConnect
-  - Microsoft.Owin.Security.Cookies
-  - Microsoft.Owin.Host.SystemWeb
-  - Microsoft.Identity.Client
-
-ここでアプリの作成に戻ります。
-
-1. **App_Start** フォルダーで、Startup.Auth.cs を開きます。 
-
-1. **ConfigureAuth** メソッドを次のコードに置き換えます。これにより、Azure AD と通信するための座標を設定し、OpenID Connect ミドルウェアによって使用される Cookie 認証を設定します。
-
-        public void ConfigureAuth(IAppBuilder app)
-        {
-            app.SetDefaultSignInAsAuthenticationType(CookieAuthenticationDefaults.AuthenticationType);
-
-            app.UseCookieAuthentication(new CookieAuthenticationOptions());
-
-            app.UseOpenIdConnectAuthentication(
-                new OpenIdConnectAuthenticationOptions
-                {
-
-                    // The `Authority` represents the Microsoft v2.0 authentication and authorization service.
-                    // The `Scope` describes the permissions that your app will need. See https://azure.microsoft.com/documentation/articles/active-directory-v2-scopes/                    
-                    ClientId = appId,
-                    Authority = "https://login.microsoftonline.com/common/v2.0",
-                    PostLogoutRedirectUri = redirectUri,
-                    RedirectUri = redirectUri,
-                    Scope = "openid email profile offline_access " + graphScopes,
-                    TokenValidationParameters = new TokenValidationParameters
-                    {
-                        ValidateIssuer = false,
-                        // In a real application you would use IssuerValidator for additional checks, 
-                        // like making sure the user's organization has signed up for your app.
-                        //     IssuerValidator = (issuer, token, tvp) =>
-                        //     {
-                        //         if (MyCustomTenantValidation(issuer)) 
-                        //             return issuer;
-                        //         else
-                        //             throw new SecurityTokenInvalidIssuerException("Invalid issuer");
-                        //     },
-                    },
-                    Notifications = new OpenIdConnectAuthenticationNotifications
-                    {
-                        AuthorizationCodeReceived = async (context) =>
-                        {
-                            var code = context.Code;
-                            string signedInUserID = context.AuthenticationTicket.Identity.FindFirst(ClaimTypes.NameIdentifier).Value;
-                            ConfidentialClientApplication cca = new ConfidentialClientApplication(
-                                appId, 
-                                redirectUri,
-                                new ClientCredential(appSecret),
-                                new SessionTokenCache(signedInUserID, context.OwinContext.Environment["System.Web.HttpContextBase"] as HttpContextBase));
-                                string[] scopes = graphScopes.Split(new char[] { ' ' });
-
-                            AuthenticationResult result = await cca.AcquireTokenByAuthorizationCodeAsync(scopes, code);
-                        },
-                        AuthenticationFailed = (context) =>
-                        {
-                            context.HandleResponse();
-                            context.Response.Redirect("/Error?message=" + context.Exception.Message);
-                            return Task.FromResult(0);
-                        }
-                    }
-                });
-        }
-  
-  OWIN Startup クラス (Startup.cs で定義済み) はアプリの起動時に **ConfigureAuth** メソッドを呼び出し、そのメソッドは **app.UseOpenIdConnectAuthentication** を呼び出して、サインインのためのミドルウェアと最初のトークン要求を初期化します。アプリでは、次のアクセス許可スコープを要求します:
-
-  - サインインのための **openid**、**email**、**profile**
-  - トークン取得のための **offline\_access** (更新トークンを取得するために必要)、**User.Read**、**Mail.Send**
-  
-  MSAL **ConfidentialClientApplication** オブジェクトは、アプリを表し、トークンの管理タスクを処理します。それは、**SessionTokenCache** (TokenStorage/SessionTokenCache.cs で定義されるサンプル トークン キャッシュの実装) とともに、トークン情報が保存される場所で、初期化されます。キャッシュは、ユーザー ID に基づいて、現在の HTTP セッションにトークンを保存しますが、運用アプリケーションには、より持続性の高いストレージの使用が適しています。
-
-次に、コードをサンプル認証プロバイダーに追加します。これは独自のカスタム認証プロバイダーと簡単に置き換えられるようにデザインされています。プロジェクトに、インターフェイスおよびプロバイダー クラスが既に追加されているはずです。
-
-1. **[ヘルパー]** フォルダーで、SampleAuthProvider.cs を開きます。
-
-1. **GetUserAccessTokenAsync** メソッドを、MSAL を使用してアクセス トークンを取得する次の実装と置き換えます。
-
-        // Get an access token. First tries to get the token from the token cache.
-        public async Task<string> GetUserAccessTokenAsync()
-        {
-            string signedInUserID = ClaimsPrincipal.Current.FindFirst(ClaimTypes.NameIdentifier).Value;
-            tokenCache = new SessionTokenCache(
-                signedInUserID, 
-                HttpContext.Current.GetOwinContext().Environment["System.Web.HttpContextBase"] as HttpContextBase);
-            //var cachedItems = tokenCache.ReadItems(appId); // see what's in the cache
-
-            ConfidentialClientApplication cca = new ConfidentialClientApplication(
-                appId, 
-                redirectUri,
-                new ClientCredential(appSecret), 
-                tokenCache);
-
-            try
-            {
-                AuthenticationResult result = await cca.AcquireTokenSilentAsync(scopes.Split(new char[] { ' ' }));
-                return result.Token;
-            }
-
-            // Unable to retrieve the access token silently.
-            catch (MsalSilentTokenAcquisitionException)
-            {
-                HttpContext.Current.Request.GetOwinContext().Authentication.Challenge(
-                    new AuthenticationProperties() { RedirectUri = "/" },
-                    OpenIdConnectAuthenticationDefaults.AuthenticationType);
-
-                throw new Exception(Resource.Error_AuthChallengeNeeded);
-            }
-        }
-
-  MSAL は、一致するアクセス トークンの、期限切れや期限切れ間近でないものをキャッシュで確認します。有効なものが見つからない場合は、更新トークンを使って (もし有効なものが存在すれば) 新しいアクセス トークンを取得します。サイレント モードで、新しいアクセス トークンを取得できない場合には、MSAL は **MsalSilentTokenAcquisitionException** をスローして、ユーザー プロンプトの表示が必要であることを示します。 
-
-次に、署名と UI からのサインアウトを処理するコードを追加します。
-
-1. **[コントローラー]** フォルダーで、AccountController.cs を開きます。  
-
-1. 次のメソッドを **AccountController** クラスに追加します。**SignIn** メソッドは、ミドルウェアにシグナルを送って、Azure AD への認証要求を送信させます。
-
-        public void SignIn()
-        {
-            if (!Request.IsAuthenticated)
-            {
-                // Signal OWIN to send an authorization request to Azure.
-                HttpContext.GetOwinContext().Authentication.Challenge(
-                    new AuthenticationProperties { RedirectUri = "/" },
-                    OpenIdConnectAuthenticationDefaults.AuthenticationType);
-            }
-        }
-
-        // Here we just clear the token cache, sign out the GraphServiceClient, and end the session with the web app.  
-        public void SignOut()
-        {
-            if (Request.IsAuthenticated)
-            {
-                // Get the user's token cache and clear it.
-                string userObjectId = ClaimsPrincipal.Current.FindFirst(ClaimTypes.NameIdentifier).Value;
-
-                SessionTokenCache tokenCache = new SessionTokenCache(userObjectId, HttpContext);
-                tokenCache.Clear(userObjectId);
-            }
-
-            //SDKHelper.SignOutClient();
-
-            // Send an OpenID Connect sign-out request. 
-            HttpContext.GetOwinContext().Authentication.SignOut(
-            CookieAuthenticationDefaults.AuthenticationType);
-            Response.Redirect("/");
-        }
-
-これで、Microsoft Graph を呼び出すためのコードを追加する準備が整いました。 
+リダイレクト URI は、登録したプロジェクトの URL です。要求される[アクセス許可のスコープ](https://developer.microsoft.com/en-us/graph/docs/concepts/permission_scopes)によって、アプリはユーザー プロファイル情報を取得したり、電子メールを送信したりできます。
 
 ## <a name="call-microsoft-graph"></a>Microsoft Graph を呼び出す
 
@@ -296,6 +126,12 @@
   **[選択]** セグメントは、**メール** と **userPrinicipalName** が返されるように要求することにご注意ください。**[選択]** と **[フィルター]** を使って、応答データのペイロードのサイズを小さくできます。
 
 1. 電子メールをビルドし、送信するために、*//SendEmail* を以下のメソッドに置き換えます。
+
+        // Send an email message from the current user.
+        public async Task SendEmail(GraphServiceClient graphClient, Message message)
+        {
+            await graphClient.Me.SendMail(message, true).Request().PostAsync();
+        }
 
         public async Task<Message> BuildEmailMessage(GraphServiceClient graphClient, string recipients, string subject)
         {
@@ -460,13 +296,14 @@
                 return View("Graph");
             }
 
-            // Build the email message.
-            Message message = await graphService.BuildEmailMessage(graphClient, Request.Form["recipients"], Request.Form["subject"]);
             try
             {
 
                 // Initialize the GraphServiceClient.
                 GraphServiceClient graphClient = SDKHelper.GetAuthenticatedClient();
+
+                // Build the email message.
+                Message message = await graphService.BuildEmailMessage(graphClient, Request.Form["recipients"], Request.Form["subject"]);
 
                 // Send the email.
                 await graphService.SendEmail(graphClient, message);
@@ -478,35 +315,10 @@
             }
             catch (ServiceException se)
             {
-                if (se.Error.Message == Resource.Error_AuthChallengeNeeded) return new EmptyResult();
+                if (se.Error.Code == Resource.Error_AuthChallengeNeeded) return new EmptyResult();
                 return RedirectToAction("Index", "Error", new { message = Resource.Error_Message + Request.RawUrl + ": " + se.Error.Message });
-           }
+            }
         }
-
-次に、ユーザー プロンプトが必要な場合に認証プロバイダーによりスローされる例外を変更します。
-
-1. **[ヘルパー]** フォルダーで、SampleAuthProvider.cs を開きます。
-
-1. 次の **using** ステートメントを追加します。
-
-        using Microsoft.Graph;
-  
-1. **GetUserAccessTokenAsync** メソッドの **catch** ブロックで、スローされる例外を次のように変更します:
-
-        throw new ServiceException(
-            new Error
-            {
-                Code = GraphErrorCode.AuthenticationFailure.ToString(),
-                Message = Resource.Error_AuthChallengeNeeded,
-            });
-
-最後に、呼び出しを追加して、クライアントをサインアウトさせます。 
-
-1. **[コントローラー]** フォルダーで、AccountController.cs を開きます。 
-
-1. 次の行のコメントを解除します:
-
-        SDKHelper.SignOutClient();
 
 これで、[アプリを実行する](#run-the-app)準備ができました。
 

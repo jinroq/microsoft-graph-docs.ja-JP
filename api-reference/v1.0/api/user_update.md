@@ -1,8 +1,11 @@
+
 # <a name="update-user"></a>ユーザーを更新する
 
 ユーザー オブジェクトのプロパティを更新します。
 ## <a name="prerequisites"></a>前提条件
-この API を実行するには、以下のいずれかの**スコープ**が必要です。*User.ReadWrite、User.ReadWrite.All、Directory.ReadWrite.All*
+この API を実行するには、以下のいずれかの**スコープ**が必要です。*User.ReadWrite; User.ReadWrite.All; Directory.ReadWrite.All*
+
+passwordProfile プロパティを更新するときは、次のスコープが必要です。*Directory.AccessAsUser.All*
 
 ## <a name="http-request"></a>HTTP 要求
 <!-- { "blockType": "ignored" } -->

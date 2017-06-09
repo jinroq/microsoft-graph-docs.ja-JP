@@ -10,6 +10,8 @@ Azure AD ユーザー アカウントを表します。[directoryObject](directo
 
 | メソッド       | 戻り値の型  |説明|
 |:---------------|:--------|:----------|
+|[List users](../api/user_list.md) |[user](user.md) コレクション| ユーザー オブジェクトのリストを取得します。|
+|[ユーザーを作成する](../api/user_post_users.md) |[user](user.md)| 新しいユーザー オブジェクトを作成します。|
 |[Get user](../api/user_get.md) | [user](user.md) |ユーザー オブジェクトのプロパティと関係を読み取ります。|
 |[Update user](../api/user_update.md) | [user](user.md) |ユーザー オブジェクトを更新します。 |
 |[Delete user](../api/user_delete.md) | None |ユーザー オブジェクトを削除します。 |
@@ -36,7 +38,7 @@ Azure AD ユーザー アカウントを表します。[directoryObject](directo
 |[List ownedObjects](../api/user_list_ownedobjects.md) |[directoryObject](directoryobject.md) collection| そのユーザーにより所有されているディレクトリ オブジェクトを、ownedObjects ナビゲーション プロパティから取得します。|
 |[List registeredDevices](../api/user_list_registereddevices.md) |[directoryObject](directoryobject.md) collection| そのユーザーについて登録されているデバイスを、RegisteredDevices ナビゲーション プロパティから取得します。|
 |[List createdObjects](../api/user_list_createdobjects.md) |[directoryObject](directoryobject.md) collection| そのユーザーにより作成されたディレクトリ オブジェクトを、createdObjects ナビゲーション プロパティから取得します。|
-|[assignLicense](../api/user_assignlicense.md)|[user](user.md)|ユーザーのサブスクリプションを追加または削除します。サブスクリプションに関連付けられている特定のプランを有効または無効にすることもできます。|
+|[assignLicense](../api/user_assignlicense.md)|[user](user.md)|ユーザーのサブスクリプションを追加または削除します。また、サブスクリプションに関連付けられている特定のプランを有効または無効にすることもできます。|
 |[licenseDetails を一覧表示する](../api/user_list_licensedetails.md) |[licenseDetails](licensedetails.md) コレクション| licenseDetails オブジェクトのコレクションを取得します。| 
 |[checkMemberGroups](../api/user_checkmembergroups.md)|String collection|グループの一覧内のメンバーシップを確認します。チェックは推移的です。|
 |[getMemberGroups](../api/user_getmembergroups.md)|String collection|ユーザーがメンバーであるすべてのグループを返します。チェックは推移的です。|
@@ -60,15 +62,16 @@ Azure AD ユーザー アカウントを表します。[directoryObject](directo
 |assignedLicenses|[assignedLicense](assignedlicense.md) collection|ユーザーに割り当てられているライセンス。null 許容ではありません。            |
 |assignedPlans|[assignedPlan](assignedplan.md) collection|ユーザーに割り当てられているプラン。読み取り専用です。null 許容ではありません。 |
 |birthday|DateTimeOffset|ユーザーの誕生日。Timestamp 型は、ISO 8601 形式を使用して日付と時刻の情報を表し、必ず UTC 時間です。たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、次のようになります。`'2014-01-01T00:00:00Z'`|
-|businessPhones|String コレクション|ユーザーの電話番号。注:文字列コレクションですが、このプロパティに設定できるのは 1 つの数字のみです。|
+|businessPhones|String collection|ユーザーの電話番号。注:文字列コレクションですが、このプロパティに設定できるのは 1 つの数字のみです。|
 |city|String|ユーザーがいる都市。$filter をサポートします。|
+|companyName|String|ユーザーが関連付けられている会社名。|
 |country|String|ユーザーがいる国/地域。たとえば、「US (米国)」や「UK (英国)」です。$filter をサポートします。|
 |department|String|ユーザーが働いている部門の名前。$filter をサポートします。|
 |displayName|String|アドレス帳に表示されるユーザーの名前。これは通常、ユーザーの名前、ミドルネームのイニシャル、姓の組み合わせです。このプロパティは、ユーザーの作成時に必須になります。更新時にクリアすることはできません。$filter および $orderby をサポートします。|
 |givenName|String|ユーザーの名。$filter をサポートします。|
 |hireDate|DateTimeOffset|ユーザーの採用日付。Timestamp 型は、ISO 8601 形式を使用して日付と時刻の情報を表し、必ず UTC 時間です。たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、次のようになります。`'2014-01-01T00:00:00Z'`|
 |id|String|ユーザーの一意の識別子。[directoryObject](directoryobject.md) から継承されます。キー。null 許容ではありません。読み取り専用です。|
-|imAddresses|String コレクション|ユーザーのインスタント メッセージ ボイス オーバー IP (VOIP) セッション開始プロトコル (SIP) のアドレス。読み取り専用です。|
+|imAddresses|String collection|ユーザーのインスタント メッセージ ボイス オーバー IP (VOIP) セッション開始プロトコル (SIP) のアドレス。読み取り専用です。|
 |interests|String collection|ユーザーが自分の関心事を記述する一覧。|
 |jobTitle|String|ユーザーの役職。$filter をサポートします。|
 |mail|String|ユーザーの SMTP アドレス (たとえば、"jeff@contoso.onmicrosoft.com")。読み取り専用。$filter をサポートします。|
@@ -113,19 +116,18 @@ Azure AD ユーザー アカウントを表します。[directoryObject](directo
 |directReports|[directoryObject](directoryobject.md) collection|そのユーザーの部下であるユーザーと連絡先。(マネージャー プロパティがこのユーザーに設定されている、ユーザーと連絡先。)読み取り専用です。Null 許容型。 |
 |drive|[drive](drive.md)|ユーザーの OneDrive。読み取り専用です。|
 |drives|[drive](drive.md) コレクション | このユーザーが使用できるドライブのコレクション。読み取り専用です。 |
-|events|[Event](event.md) コレクション|ユーザーのイベント。既定は、既定の予定表でイベントを表示します。読み取り専用です。Null 許容型。|
+|events|[Event](event.md) collection|ユーザーのイベント。既定は、既定の予定表でイベントを表示します。読み取り専用です。Null 許容型。|
 |extensions|[extension](extension.md) コレクション|ユーザーに対して定義されているオープン拡張機能のコレクション。読み取り専用です。Null 許容型。|
 |inferenceClassification | [inferenceClassification](inferenceClassification.md) | 明示的な指定に基づく、ユーザーのメッセージの関連性の分類。明示的な指定は、推定される関連性や重要性より優先されます。 |
 |mailFolders|[MailFolder](mailfolder.md) collection| ユーザーのメール フォルダー。読み取り専用です。Null 許容型。|
 |manager|[directoryObject](directoryobject.md)|このユーザーの上司であるユーザーまたは連絡先。読み取り専用です。(HTTP メソッド:GET、PUT、DELETE)|
 |memberOf|[directoryObject](directoryobject.md) collection|ユーザーがメンバーになっているグループとディレクトリ ロール。読み取り専用です。Null 許容型。|
-|messages|[Message](message.md) コレクション|メールボックスまたはフォルダー内のメッセージ。読み取り専用です。Null 許容型。|
+|messages|[Message](message.md) collection|メールボックスまたはフォルダー内のメッセージ。読み取り専用です。Null 許容型。|
 |onenote|[OneNote](onenote.md)| 読み取り専用です。|
 |ownedDevices|[directoryObject](directoryobject.md) collection|ユーザーが所有しているデバイス。読み取り専用です。Null 許容型。|
 |ownedObjects|[directoryObject](directoryobject.md) collection|ユーザーが所有しているディレクトリ オブジェクト。読み取り専用です。Null 許容型。|
 |photo|[profilePhoto](profilephoto.md)| ユーザーのプロフィール写真。読み取り専用です。|
-|registeredDevices|[directoryObject](directoryobject.md) コレクション|ユーザーについて登録されているデバイス。読み取り専用です。Null 許容型。|
-|sites|[site](site.md) コレクション | このユーザーが使用できるサイトのコレクション。読み取り専用です。 |
+|registeredDevices|[directoryObject](directoryobject.md) collection|ユーザーについて登録されているデバイス。読み取り専用です。Null 許容型。|
 
 ## <a name="json-representation"></a>JSON 表記
 
@@ -156,7 +158,6 @@ Azure AD ユーザー アカウントを表します。[directoryObject](directo
     "ownedDevices",
     "ownedObjects",
     "photo",
-    "sites",
     "registeredDevices"
   ],
   "keyProperty": "id",
@@ -226,9 +227,9 @@ Azure AD ユーザー アカウントを表します。[directoryObject](directo
   "memberOf": [ { "@odata.type": "microsoft.graph.directoryObject" } ],
   "messages": [ { "@odata.type": "microsoft.graph.message" } ],
   "ownedDevices": [ { "@odata.type": "microsoft.graph.directoryObject" } ],
+  "ownedObjects": [ { "@odata.type": "microsoft.graph.directoryObject" } ],
   "photo": { "@odata.type": "microsoft.graph.profilePhoto" },
-  "registeredDevices": [ { "@odata.type": "microsoft.graph.directoryObject" } ],
-  "sites": [ {"@odata.type": "microsoft.graph.site" }]
+  "registeredDevices": [ { "@odata.type": "microsoft.graph.directoryObject" } ]
 }
 
 ```

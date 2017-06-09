@@ -1,6 +1,6 @@
-# <a name="create-thread"></a>スレッドを作成する
+# <a name="create-conversation-thread"></a>会話スレッドを作成する
 
-最初にスレッドを作成して、新しい会話を開始します。 
+最初にスレッドを作成して、新しいグループ会話を開始します。 
 
 グループには、新しい会話、会話スレッド、および投稿が作成されます。[スレッドに返信](conversationthread_reply.md) または [投稿に返信](post_reply.md) を使い、そのスレッドへの投稿を続けます。
 

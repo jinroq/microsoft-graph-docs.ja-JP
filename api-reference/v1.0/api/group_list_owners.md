@@ -1,8 +1,10 @@
-# <a name="list-owners"></a>所有者を一覧表示する
+Gr# List owners
 
 グループの所有者の一覧を取得します。所有者は、グループ オブジェクトの変更を許可されている管理者以外のユーザーです。 
+
 ## <a name="prerequisites"></a>前提条件
-この API を実行するには、以下のいずれかの**スコープ**が必要です。*Group.Read.All* または *Group.ReadWrite.All*
+この API を実行するために必要な**スコープ**は、次のとおりです。*Group.Read.All* と、*User.ReadBasic.All*、*User.Read.All* または *User.ReadWrite.All* のいずれか
+
 ## <a name="http-request"></a>HTTP 要求
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -18,7 +20,7 @@ GET /groups/{id}/owners
 ## <a name="request-body"></a>要求本文
 このメソッドには、要求本文を指定しません。
 ## <a name="response"></a>応答
-成功した場合、このメソッドは `200 OK` 応答コードと、応答本文で [directoryObject](../resources/directoryobject.md) オブジェクトのコレクションを返します。
+成功した場合、このメソッドは `200 OK` 応答コードと、応答本文で [user](../resources/user.md) オブジェクトのコレクションを返します。
 ## <a name="example"></a>例
 ##### <a name="request"></a>要求
 以下は、要求の例です。
@@ -45,7 +47,7 @@ Content-length: 55
 {
   "value": [
     {
-      "id": "id-value"
+      "@odata.type": "#microsoft.graph.user"
     }
   ]
 }

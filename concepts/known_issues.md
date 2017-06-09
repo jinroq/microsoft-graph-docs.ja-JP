@@ -21,13 +21,6 @@
     }
 ```
 
-### <a name="adding-and-accessing-ics-based-calendars-in-users-mailbox"></a>ユーザーのメールボックスに ICS ベースの予定表を追加してアクセスする
-
-現在、インターネット予定表購読 (ICS) に基づく予定表の部分的なサポートがあります。
-
-* ユーザー インターフェイスを経由して ICS ベースの予定表をユーザーのメールボックスに追加できますが、Microsoft Graph API を経由してこれを行うことはできません。
-* [ユーザーの予定表の一覧表示](http://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/user_list_calendars)を行うと、ICS ベースの予定表を含む、ユーザーの既定の予定表のグループ、または指定した予定表のグループにある各[予定表](http://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/calendar)の**名前**、**色**、**ID** のプロパティを取得できます。予定表リソースの ICS URL を保存したり、アクセスしたりすることはできません。
-* また、ICS ベースの予定表の[イベントを一覧表示](http://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/calendar_list_events)することもできます。
 
 ### <a name="using-delta-query"></a>デルタ クエリの使用
 
@@ -85,6 +78,42 @@ Microsoft Teams は Office 365 のグループをもとに作成されます。�
 ### <a name="using-delta-query"></a>デルタ クエリの使用
 
 デルタ クエリの使用に関する既知の問題については、この記事の[「デルタ クエリ」セクション](#delta-query)を参照してください。
+
+
+## <a name="calendars"></a>予定表
+
+### <a name="adding-and-accessing-ics-based-calendars-in-users-mailbox"></a>ユーザーのメールボックスに ICS ベースの予定表を追加してアクセスする
+
+現在、インターネット予定表購読 (ICS) に基づく予定表の部分的なサポートがあります。
+
+* ユーザー インターフェイスを経由して ICS ベースの予定表をユーザーのメールボックスに追加できますが、Microsoft Graph API を経由してこれを行うことはできません。
+* [ユーザーの予定表の一覧表示](http://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/user_list_calendars)を行うと、ICS ベースの予定表を含む、ユーザーの既定の予定表のグループ、または指定した予定表のグループにある各[予定表](http://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/calendar)の**名前**、**色**、**ID** のプロパティを取得できます。予定表リソースの ICS URL を保存したり、アクセスしたりすることはできません。
+* また、ICS ベースの予定表の[イベントを一覧表示](http://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/calendar_list_events)することもできます。
+
+### <a name="accessing-a-shared-calendar"></a>共有された予定表にアクセスする
+
+別のユーザーによって共有されている予定表で、次の操作によってイベントにアクセスするとします。
+
+```http
+GET \users('{id}')\calendars('{id}')\events
+```
+
+エラー コード `ErrorInternalServerTransientError` で HTTP 500 を受け取る可能性があります。
+
+従来、予定表共有を実装するための 2 つの方法がありました。それらを区別するために、"古い" 実装と "新しい" 実装と呼びます。エラーが発生する理由は次のとおりです。 
+
+- 現在、Outlook on the web、Outlook on iOS、および Outlook on Android だけが、新しい方法による Office 365 での予定表の共有をサポートしています。
+- 予定表が新しい方法で共有されている場合のみ、予定表 REST API を使用して、共有された予定表を表示または編集できます。 
+- 古い方法で共有された予定表 (またはそのイベント) は、予定表 REST API を使用して表示することも編集することもできません。
+
+この問題を回避するには、予定表の所有者は Outlook on the web、Outlook on iOS、または Outlook on Android で予定表を再共有し、ユーザーは Outlook on the web を使用して予定表に再び同意する必要があります。再び同意した後、共有された予定表が Outlook on iOS か Outlook on Android で正常に表示されれば、予定表が新しいモデルを使用して共有されていることになります。
+
+新しい方法で共有した予定表は、全く別の予定表のようにメールボックスで表示されます。共有された予定表では、予定表 REST API を使用して自分の予定表のようにイベントを表示または編集できます。次に例を示します。
+
+```http
+GET \me\calendars('{id}')\events
+```
+
 
 ## <a name="contacts"></a>連絡先
 
@@ -162,6 +191,29 @@ GET /users/{id | userPrincipalName}/contacts/{id}
 * スキーマ拡張情報 (レガシー) は $select ステートメントをつけては返されず、$select なしで返されます。
 * クライアントはオープン拡張機能または登録済みスキーマ拡張機能の変更を追跡できません。
 
+## <a name="application-and-serviceprincipal-api-changes"></a>application API と servicePrincipal API の変更
+
+現在開発中の [application](../api-reference/beta/resources/application.md) エンティティおよび [servicePrincipal](../api-reference/beta/resources/serviceprincipal.md) エンティティに対して変更点があります。現在の制限事項と開発中の API の機能の概要を次に示します。
+
+現在の制限事項:
+
+* 一部のアプリケーション プロパティ (appRoles、addIns など) は、すべての変更が完了するまで利用できません。
+* 登録できるのは、マルチ テナント アプリだけです。
+* アプリの更新は、初期ベータ更新後に登録されたアプリに限定されます。
+* Azure Active Directory ユーザーは、アプリの登録と所有者の追加を行えます。
+* OpenID Connect と OAuth プロトコルをサポートします。
+* アプリケーションへのポリシーの割り当てが失敗します。 
+* アプリ ID を必要とする ownedObjects に対する操作 (たとえば、users/{id|userPrincipalName}/ownedObjects/{id}/...) が失敗します。
+
+開発中:
+
+* 単一テナント アプリを登録する機能。
+* servicePrincipal に対する更新。
+* 更新されたモデルへの既存の Azure AD アプリへの移行。
+* appRoles、事前承認済みクライアント、オプションのクレーム、グループ メンバーシップのクレーム、ブランド化のサポート。
+* Microsoft アカウント (MSA) ユーザーによるアプリの登録。
+* SAML および WsFed プロトコルのサポート。
+
 ## <a name="extensions"></a>拡張機能
 
 ### <a name="change-tracking-is-not-supported"></a>変更履歴はサポートされていません
@@ -208,14 +260,41 @@ Microsoft Graph は現段階では個々の要求のトランザクション処�
 
 JSON バッチ処理が完成に近づくにつれて、これらの制限は削除されます。
 
-## <a name="cloud-solution-provider-apps-must-use-azure-ad-endpoint"></a>クラウド ソリューション プロバイダー アプリでは Azure AD エンドポイント使用が必須
+## <a name="cloud-solution-provider-apps"></a>クラウド ソリューション プロバイダー アプリ
+
+### <a name="csp-apps-must-use-azure-ad-endpoint"></a>CSP アプリは Azure AD エンドポイントを使用する必要がある
 
 クラウド ソリューション プロバイダー (CSP) のアプリケーションは、パートナー管理の顧客から Microsoft Graph を正常に呼び出すには、Azure AD (v1) のエンドポイントからトークンを取得する必要があります。現時点では、新しい Azure AD バージョン 2.0 エンドポイントからのトークン取得はサポートされていません。
+
+### <a name="pre-consent-for-csp-apps-doesnt-work-in-some-customer-tenants"></a>CSP アプリの事前同意が一部の顧客テナントで機能しない
+
+状況によっては、CSP アプリの事前同意が一部の顧客テナントで機能しない可能性があります。
+
+- 代理アクセス許可を使用するアプリでは、新しい顧客テナントで初めてアプリを使用すると、サインイン後に次のエラーを受け取る可能性があります。`AADSTS50000: There was an error issuing a token`。
+- アプリケーションのアクセス許可を使用するアプリでは、アプリはトークンを取得できますが、Microsoft Graph を呼び出すときに予期せずにアクセス拒否メッセージを受け取ります。
+
+事前同意をすべての顧客テナントで機能させるために、できるだけ早くこの問題を解決するべく取り組んでいます。
+
+それまでの間、開発とテストのブロックを解除するために次の回避策を取ってください。
+
+>**注:**これは永続的なソリューションではなく、開発のブロックを解除するためのものです。前述の問題が解決されたら、この回避策は必要なくなります。解決された後にこの回避策を元に戻す必要はありません。
+
+1. Azure AD v2 PowerShell セッションを開き、サインイン ウィンドウに、管理者資格情報を入力して `customer` テナントに接続します。Azure AD PowerShell V2 は、[ここ](https://www.powershellgallery.com/packages/AzureAD)からダウンロードし、インストールできます。
+
+    ```PowerShell
+    Connect-AzureAd -TenantId {customerTenantIdOrDomainName}
+    ```
+
+2. Microsoft Graph サービス プリンシパルを作成します。
+
+    ```PowerShell
+    New-AzureADServicePrincipal -AppId 00000003-0000-0000-c000-000000000000
+    ```
 
 ## <a name="functionality-available-only-in-office-365-rest-or-azure-ad-graph-apis"></a>Office 365 REST と Azure AD Graph API でのみ使用可能な機能
 
 Microsoft Graph では一部の機能はまだ利用できません。探している機能が表示されない場合は、エンドポイント固有の [Office 365 REST API](https://msdn.microsoft.com/en-us/office/office365/api/api-catalog) を使用することができます。Azure Active Directory において、Azure AD と Graph API を介してのみ使用可能な機能については、[Microsoft Graph または Azure AD Graph](https://dev.office.com/blogs/microsoft-graph-or-azure-ad-graph) のブログの投稿を参照してください。
 
-### <a name="feedback"></a>フィードバック
+## <a name="feedback"></a>フィードバック
 
 > お客様からのフィードバックを重視しています。[スタック オーバーフロー](http://stackoverflow.com/questions/tagged/microsoftgraph)でご連絡いただけます。

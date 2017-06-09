@@ -5,7 +5,7 @@
 すべてのメールボックス設定を表示することも、特定の設定を取得することもできます。
 
 ## <a name="prerequisites"></a>前提条件
-この API を実行するには、以下の**スコープ**が必要です。*Mailboxsettings.ReadWrite*  
+この API を実行するには、以下の**スコープ**が必要です。*MailboxSettings.Read*  
 
 ## <a name="http-request"></a>HTTP 要求
 自動応答設定を含むメールボックスのすべての設定を取得するには:

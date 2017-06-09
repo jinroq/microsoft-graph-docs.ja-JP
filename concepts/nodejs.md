@@ -37,11 +37,11 @@ Microsoft アプリケーション登録ポータルでアプリケーション�
 
     アプリを構成するには、アプリケーション ID とアプリケーション パスワード (シークレット) を使用します。 
 
-6. **[プラットフォーム]** で、**[プラットフォームの追加]** > **[Web]** の順に選びます。
+6. **[プラットフォーム]** で、**[プラットフォームの追加]** > **[Web]** の順に選択します。
 
-7. リダイレクト URI には、*http://localhost:3000/login* と入力します。 
+7. リダイレクト URI には、*http://localhost:3000/token* と入力します。 
 
-8. **[保存]** を選びます。
+8. **[保存]** を選択します。
 
 
 ## <a name="configure-the-project"></a>プロジェクトを構成する
@@ -80,7 +80,7 @@ Microsoft アプリケーション登録ポータルでアプリケーション�
 
 1. utils\graphHelper.js を開きます。
 
-1. **getUserData** 関数を次のコードに置き換えます。これにより、GET 要求を構成して */me* エンドポイントに送信し、応答を処理します。
+1. **getUserData** 関数を、以下のコードに置き換えます。これにより GET 要求を構成して */me* エンドポイントに送信し、応答を処理します。
 
         function getUserData(accessToken, callback) {
           request
@@ -135,7 +135,7 @@ Microsoft アプリケーション登録ポータルでアプリケーション�
            });
         }
 
-1. **postSendMail** 関数を次のコードに置き換えます。これにより、POST 要求を構成して */me/sendMail* エンドポイントに送信し、応答を処理します。
+1. **postSendMail** 関数を次のコードに置き換えます。これにより POST 要求を構成して */me/sendMail* エンドポイントに送信し、応答を処理します。
 
         function postSendMail(accessToken, message, callback) {
           request
