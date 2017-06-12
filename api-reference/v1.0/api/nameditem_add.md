@@ -24,7 +24,7 @@ POST /workbook/worksheets({id|name})/names/add
 ## <a name="request-body"></a>要求本文
 要求本文で、次のパラメーターを含む JSON オブジェクトを指定します。
 
-| パラメーター       | 型    |説明|
+| パラメーター    | 型   |説明|
 |:---------------|:--------|:----------|
 |name|string|名前付きの項目の名前。|
 |reference|string|名前が参照する数式または範囲。|
@@ -33,8 +33,10 @@ POST /workbook/worksheets({id|name})/names/add
 ## <a name="response"></a>応答
 成功した場合、このメソッドは `200, OK` 応答コードと、応答本文で [NamedItem](../resources/NamedItem.md) オブジェクトを返します。
 
+
 ## <a name="example"></a>例
 以下は、この API を呼び出す方法の例です。
+
 ##### <a name="request"></a>要求
 以下は、要求の例です。
 <!-- {
@@ -47,10 +49,12 @@ Content-type: application/json
 Content-length: 54
 
 {
-  "name": "myRange",
-  "reference": "=A10+B10",
+  "name": "test5",
+  "reference": "=Sheet1!$F$15:$N$27",
   "comment": "Comment for the named item"
 }
+
+
 ```
 
 ##### <a name="response"></a>応答
@@ -66,12 +70,15 @@ Content-type: application/json
 Content-length: 109
 
 {
-  "name": "myRange",
-  "comment": "Sample range",
-  "scope": "Workbook",
-  "type": "String",
-  "visible": true,
-  "value": "=A10+B10"
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#workbookNamedItem",
+    "@odata.type": "#microsoft.graph.workbookNamedItem",
+    "@odata.id": "/users('ca41eb6e-5828-486b-ab52-c3bd1f7a4047')/drive/root/workbook/names(%27test5%27)",
+    "comment": "Comment for the named item",
+    "name": "test5",
+    "scope": "Workbook",
+    "type": "Range",
+    "value": "Sheet1!$F$15:$N$27",
+    "visible": true
 }
 ```
 
