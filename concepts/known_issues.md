@@ -1,6 +1,6 @@
 # <a name="known-issues-with-microsoft-graph"></a>Microsoft Graph に関する既知の問題
 
-この記事では、Microsoft Graph に関する既知の問題を説明します。最新の更新プログラムについては、「[Microsoft Graph 変更ログ](changelog.md)」を参照してください。
+この記事では、Microsoft Graph に関する既知の問題について説明します。最新の更新プログラムについては、「[Microsoft Graph の変更ログ](changelog.md)」を参照してください。
 
 ## <a name="users"></a>ユーザー
 
@@ -36,7 +36,7 @@ Microsoft Graph を使用して Office 365 グループを作成および名前�
 
 ### <a name="permissions-for-groups-and-microsoft-teams"></a>グループと Microsoft Teams のアクセス許可 
 
-Microsoft Graph では、グループと Microsoft Teams API にアクセスするために 2 つのアクセス許可 (*Group.Read.All* と *Group.ReadWrite.All*) を公開します。これらのアクセス許可は、管理者による同意が必要です (これがプレビューとの違いです)。将来的には、ユーザーが同意する新しいグループとチームのためのアクセス許可を追加する予定です。
+Microsoft Graph では、グループと Microsoft Teams API にアクセスするために 2 つのアクセス許可 (*Group.Read.All* と *Group.ReadWrite.All*) を公開します。これらのアクセス許可は、管理者による同意が必要です (これがプレビューとの違いです)。将来的には、ユーザーが同意するグループとチームのための新しいアクセス許可を追加する予定です。
 
 また、コア グループの管理とマネージメントのための API だけが、委任されたアクセス許可とアプリ専用のアクセス許可によるアクセスをサポートします。グループ API の他のすべての機能は、委任されたアクセス許可のみサポートします。
 
@@ -56,7 +56,7 @@ Microsoft Graph では、グループと Microsoft Teams API にアクセスす�
 
 ### <a name="teams-in-microsoft-teams-preview"></a>Microsoft Teams のチーム (プレビュー)
 
-Microsoft Teams は Office 365 のグループをもとに作成されます。グループ API はすべてチームでも使用できますが、「Create group」は例外で、現在これを使ってのチーム作成はできません。将来的に、API リリースでこの機能がサポートされます。
+Microsoft Teams と Office 365 グループは、同じような機能を共有します。グループ API はすべてチームで使用できますが、Create group API は例外で、現在これを使ってのチーム作成はできません。将来的に、API リリースでこの機能がサポートされます。
 
 ### <a name="microsoft-teams-channels-preview"></a>Microsoft Teams チャンネル (プレビュー)
 
@@ -64,7 +64,7 @@ Microsoft Teams は Office 365 のグループをもとに作成されます。�
 
 ### <a name="microsoft-teams-chat-threads-and-chat-messages-preview"></a>Microsoft Teams チャット スレッドとチャット メッセージ (プレビュー)
 
-現時点では、チャンネルにチャット スレッドを作成できますが、既存のチャンネル スレッドを読み込む、または返信を付加することができません。同様に、チームまたはチャンネルの範囲外のユーザー間での読み取り、書き込みもできません。将来の API リリースでこの部分の機能がサポートされます。
+現時点では、チャンネルにチャット スレッドを作成できますが、既存のチャンネル スレッドを読み込む、または返信を付加することができません。また、チームまたはチャンネルの範囲外のユーザー間での読み取り、書き込みもできません。将来の API リリースでこの部分の機能がサポートされます。
 
 
 ### <a name="adding-and-getting-attachments-of-group-posts"></a>グループの投稿の添付ファイルの追加と取得
@@ -176,8 +176,8 @@ GET /users/{id | userPrincipalName}/contacts/{id}
 
 * **$expand** の制限:
     * `nextLink` はサポートされていません
-     * 1 レベルを超える展開はサポートされていません
-     * 余分なパラメーターはサポートされていません (**$filter**、**$select**)
+    * 1 レベルを超える展開はサポートされていません
+    * 余分なパラメーターはサポートされていません (**$filter**、**$select**)
 * 複数の名前空間はサポートされていません
 * `$ref` の GET とキャストはユーザー、グループ、デバイス、サービス プリンシパル、アプリケーションではサポートされていません。
 * `@odata.bind` はサポートされていません。つまり、開発者は `Accepted` や `RejectedSenders` を適切にグループに設定することができません。

@@ -11,7 +11,7 @@ Microsoft Graph には、2 種類の拡張機能が備わっています。ご�
 
 ## <a name="supported-resources"></a>サポートされているリソース
 
-次の表に、オープン拡張機能とスキーマ拡張機能に関する現在のサポート情報、および、一般提供可能 (GA、/v1.0 エンドポイントおよび /beta エンドポイント) とプレビューのみ (/beta エンドポイント) のどちらであるかを示します。 
+次の表は、オープン拡張機能とスキーマ拡張機能をサポートするリソースを示し、それらが一般提供 (GA) (v1.0 およびベータ版エンドポイントで提供) されるようになったか、それともプレビュー段階 (ベータ版エンドポイントでのみ提供) かを示します。  
 
 | リソース | オープン拡張機能 | スキーマ拡張機能 |
 |---------------|-------|-------|
@@ -121,6 +121,7 @@ Azure AD は、いくつかの [directoryObject](../api-reference/v1.0/resources
 
 ## <a name="see-also"></a>関連項目
 
-[Office 365 のドメイン](https://technet.microsoft.com/en-us/library/office-365-domains.aspx)
+
+  [Office 365 のドメイン](https://technet.microsoft.com/en-us/library/office-365-domains.aspx)
 
 [Office 365 テナントのドメインの追加および検証](http://office365support.ca/adding-and-verifying-a-domain-for-the-new-office-365/)

@@ -42,7 +42,7 @@ mailFolder のメッセージ。
 
 
 ## <a name="properties"></a>プロパティ
-| プロパティ       | 型    |説明|
+| プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
 |bccRecipients|[recipient](recipient.md) collection|メッセージの BCC 受信者。|
 |body|[itemBody](itembody.md)|メッセージの本文。HTML 形式またはテキスト形式にできます。|
@@ -53,7 +53,7 @@ mailFolder のメッセージ。
 |conversationId|String|電子メールが属している会話の ID。|
 |createdDateTime|DateTimeOffset|メッセージが作成された日時。|
 |from|[recipient](recipient.md)|メッセージのメールボックス所有者と送信者。|
-|hasAttachments|Boolean|メッセージに添付ファイルがあるかどうかを示します。|
+|hasAttachments|Boolean|メッセージに添付ファイルがあるかどうかを示します。このプロパティにはインライン添付ファイルが含まれていません。このためメッセージにインライン添付ファイルのみが含まれている場合、このプロパティは false です。インライン添付ファイルが存在するかどうかを確認するには、**body** プロパティを解析して `<IMG src="cid:image001.jpg@01D26CD8.6C05F070">` などの `src` 属性を探します。|
 |id|String|メッセージの一意識別子 (メッセージが移動または変更された場合、この値は変更される可能性があることに注意)|
 |importance|String| メッセージの重要度: `Low`、`Normal`、`High`。|
 |inferenceClassification | String | 推定される関連性や重要性、または明示的なオーバーライドに基づく、ユーザーのメッセージの分類です。使用可能な値: `focused` または `other`。 |
@@ -88,7 +88,7 @@ Prefer: outlook.allow-unsafe-html
 - **sender** プロパティは、メールボックス所有者が 1 人以上のユーザーにそのメールボックスからメッセージを送信する権限を委任すると、変更できます。メールボックス所有者は、Outlook で委任できます。代理人がメールボックス所有者に代わってメッセージを送信する場合、**sender** プロパティは代理人のアカウントに設定され、**from** プロパティはメールボックス所有者のままになります。プログラムを使用して、**sender** プロパティを、対象メールボックスの委任権限を取得したユーザーに設定できます。
 
 ## <a name="relationships"></a>関係
-| リレーションシップ | 型    |説明|
+| リレーションシップ | 型   |説明|
 |:---------------|:--------|:----------|
 |attachments|[attachment](attachment.md) コレクション|メッセージの [fileAttachment](fileattachment.md) 添付ファイルと [itemAttachment](itemattachment.md) 添付ファイル。|
 |extensions|[extension](extension.md) コレクション|メッセージに対して定義されているオープン拡張機能のコレクション。読み取り専用。Null 許容型。|

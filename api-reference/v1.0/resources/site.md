@@ -11,10 +11,12 @@
 | [ルート サイトを取得する][]    | GET /sites/root                                   |
 | [サイトを取得する][]         | GET /sites/{site-id}                              |
 | [パスを使用してサイトを取得する][] | GET /sites/{hostname}:/{site-path}                |
+| [グループのサイトを取得する][] | GET /groups/{group-id}/sites/root             |
 
 [サイトを取得する]: ../api/site_get.md
 [ルート サイトを取得する]: ../api/site_get.md
 [パスを使用してサイトを取得する]: ../api/site_get.md
+[グループのサイトを取得する]: ../api/site_get.md
 
 ## <a name="json-representation"></a>JSON 表記
 

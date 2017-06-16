@@ -2,6 +2,8 @@
 
 この変更ログでは、Microsoft Graph と、v1.0 およびベータ版のエンドポイント Microsoft Graph API の変更内容について説明します。  
 
+Microsoft Graph API に関する既知の問題の詳細については、「[Microsoft Graph に関する既知の問題](known_issues.md)」を参照してください。
+
 ## <a name="may-2017"></a>2017 年 5 月
 
 ### <a name="application-api-changes"></a>アプリケーション API の変更
@@ -47,14 +49,16 @@
 
 |**変更の種類**|**バージョン**|**説明**|
 |:--------------|:-----------|:--------------|
-| 追加      | ベータ版       | [ユーザーの復元と完全削除](https://graph.microsoft.io/en-us/docs/api-reference/beta/resources/directory)に関するサポートを追加しました。 |
+| 追加      | ベータ版       | 
+  [ユーザーの復元と完全削除](https://graph.microsoft.io/en-us/docs/api-reference/beta/resources/directory)に関するサポートを追加しました。 |
 
 ### <a name="added-onpremisesprovisioningerror"></a>OnPremisesProvisioningError の追加
 
 |**変更の種類**|**バージョン**|**説明**|
 |:--------------|:-----------|:--------------|
 | 追加      | ベータ版       | 新しいエンティティ:[OnPremisesProvisioningError](https://graph.microsoft.io/en-us/docs/api-reference/beta/resources/onpremisesprovisioningerror) |
-| 変更        | ベータ版       | [user](https://graph.microsoft.io/en-us/docs/api-reference/beta/resources/user)、[group](https://graph.microsoft.io/en-us/docs/api-reference/beta/resources/group)、および [orgcontact](https://graph.microsoft.io/en-us/docs/api-reference/beta/resources/orgcontact) への OnPremisesProvisioningError プロパティの追加 |
+| 変更        | ベータ版       | 
+  [user](https://graph.microsoft.io/en-us/docs/api-reference/beta/resources/user)、[group](https://graph.microsoft.io/en-us/docs/api-reference/beta/resources/group)、および [orgcontact](https://graph.microsoft.io/en-us/docs/api-reference/beta/resources/orgcontact) への OnPremisesProvisioningError プロパティの追加 |
 
 ### <a name="added-deleteddatetime-property"></a>deletedDateTime プロパティの追加
 
@@ -68,20 +72,32 @@
 
 |**変更の種類**|**バージョン**|**説明**|
 |:-------------|:-----------|:--------------|
-|追加|V1.0|[ドメイン](https://graph.microsoft.io/en-us/docs/api-reference/v1.0/resources/domain)に操作を追加しました。<br/>新しいエンティティ:</br>[domain](https://graph.microsoft.io/en-us/docs/api-reference/v1.0/resources/domain)<br/>[domainDnsRecord](https://graph.microsoft.io/en-us/docs/api-reference/v1.0/resources/domaindnsrecord)<br/>[domainDnsCnameRecord](https://graph.microsoft.io/en-us/docs/api-reference/v1.0/resources/domainDnsCnameRecord)<br/>[domainDnsMxRecord](https://graph.microsoft.io/en-us/docs/api-reference/v1.0/resources/domainDnsMxRecord)<br/>[domainDnsSrvRecord](https://graph.microsoft.io/en-us/docs/api-reference/v1.0/resources/domainDnsSrvRecord)<br/>[domainDnsTxtRecord](https://graph.microsoft.io/en-us/docs/api-reference/v1.0/resources/domainDnsTxtRecord)<br/>[domainDnsUnavailableRecord](https://graph.microsoft.io/en-us/docs/api-reference/v1.0/resources/domainDnsUnavailableRecord)<br/>新しいアクション:</br>[verify](https://graph.microsoft.io/en-us/docs/api-reference/v1.0/api/domain_verify) |
+|追加|V1.0|
+  [ドメイン](https://graph.microsoft.io/en-us/docs/api-reference/v1.0/resources/domain)に操作を追加しました。<br/>新しいエンティティ:</br>
+  [domain](https://graph.microsoft.io/en-us/docs/api-reference/v1.0/resources/domain)<br/>
+  [domainDnsRecord](https://graph.microsoft.io/en-us/docs/api-reference/v1.0/resources/domaindnsrecord)<br/>
+  [domainDnsCnameRecord](https://graph.microsoft.io/en-us/docs/api-reference/v1.0/resources/domainDnsCnameRecord)<br/>
+  [domainDnsMxRecord](https://graph.microsoft.io/en-us/docs/api-reference/v1.0/resources/domainDnsMxRecord)<br/>
+  [domainDnsSrvRecord](https://graph.microsoft.io/en-us/docs/api-reference/v1.0/resources/domainDnsSrvRecord)<br/>
+  [domainDnsTxtRecord](https://graph.microsoft.io/en-us/docs/api-reference/v1.0/resources/domainDnsTxtRecord)<br/>
+  [domainDnsUnavailableRecord](https://graph.microsoft.io/en-us/docs/api-reference/v1.0/resources/domainDnsUnavailableRecord)<br/>新しいアクション:</br>
+  [verify](https://graph.microsoft.io/en-us/docs/api-reference/v1.0/api/domain_verify) |
 
 ### <a name="added-contracts-to-v10"></a>V1.0 追加されたコントラクト
 
 |**変更の種類**|**バージョン**|**説明**|
 |:-------------|:-----------|:--------------|
-|追加|V1.0|新しいエンティティ:</br>[コントラクト](https://graph.microsoft.io/en-us/docs/api-reference/v1.0/resources/contract) |
+|追加|V1.0|新しいエンティティ:</br>
+  [コントラクト](https://graph.microsoft.io/en-us/docs/api-reference/v1.0/resources/contract) |
 
 ### <a name="added-licensedetails-to-v10"></a>V1.0 に追加された licenseDetails
 
 |**変更の種類**|**バージョン**|**説明**|
 |:-------------|:-----------|:--------------|
-|追加|v1.0|新しいエンティティ:</br>[licenseDetails](https://graph.microsoft.io/en-us/docs/api-reference/v1.0/resources/licensedetails) |
-|変更  |v1.0|[users](https://graph.microsoft.io/en-us/docs/api-reference/v1.0/resources/user) における新しい [licensedetails](https://graph.microsoft.io/en-us/docs/api-reference/v1.0/api/user_list_licensedetails) ナビゲーション プロパティ |
+|追加|v1.0|新しいエンティティ:</br>
+  [licenseDetails](https://graph.microsoft.io/en-us/docs/api-reference/v1.0/resources/licensedetails) |
+|変更  |v1.0|
+  [users](https://graph.microsoft.io/en-us/docs/api-reference/v1.0/resources/user) における新しい [licensedetails](https://graph.microsoft.io/en-us/docs/api-reference/v1.0/api/user_list_licensedetails) ナビゲーション プロパティ |
 
 
 ### <a name="drive-api"></a>ドライブ API
@@ -251,7 +267,8 @@
 
 |**変更の種類**|**バージョン**|**説明**|
 |:-------------|:-----------|:--------------|
-|変更|ベータ版| [application](https://graph.microsoft.io/en-us/docs/api-reference/beta/resources/application) API と [servicePrincipal](https://graph.microsoft.io/en-us/docs/api-reference/beta/resources/serviceprincipal) API は、プレビュー (ベータ版) で更新されます。最初の一連の変更は、2017 年 5 月 15 日に適用されます。変更には、プロパティの名前変更と再構築が含まれます。一部のプロパティ (appRoles、addIns など) は、変更が完了するまで利用できません。変更は、v1.0 へのリリース前にプレビュー (ベータ版) でリリースされます。 |
+|変更|ベータ版| 
+  [application](https://graph.microsoft.io/en-us/docs/api-reference/beta/resources/application) API と [servicePrincipal](https://graph.microsoft.io/en-us/docs/api-reference/beta/resources/serviceprincipal) API は、プレビュー (ベータ版) で更新されます。最初の一連の変更は、2017 年 5 月 15 日に適用されます。変更には、プロパティの名前変更と再構築が含まれます。一部のプロパティ (appRoles、addIns など) は、変更が完了するまで利用できません。変更は、v1.0 へのリリース前にプレビュー (ベータ版) でリリースされます。 |
 
 ### <a name="added-preview-support-for-cloud-solution-provider-developers"></a>クラウド ソリューション プロバイダー開発者向けプレビュー サポートの追加
 
@@ -263,7 +280,8 @@
 
 |**変更の種類**|**バージョン**|**説明**|
 |:-------------|:-----------|:--------------|
-|追加|ベータ版|[user](https://graph.microsoft.io/en-us/docs/api-reference/beta/resources/user) エンティティに、新しい onPremises プロパティである onPremisesDomainName、OnPremisesSamAccountName、onPremisesUserPrincipalName を追加しました。 |
+|追加|ベータ版|
+  [user](https://graph.microsoft.io/en-us/docs/api-reference/beta/resources/user) エンティティに、新しい onPremises プロパティである onPremisesDomainName、OnPremisesSamAccountName、onPremisesUserPrincipalName を追加しました。 |
 
 ### <a name="new-planner-apis-and-an-update-to-the-group-visibility-property"></a>新しい Planner API とグループ可視性プロパティに対する更新
 
@@ -418,13 +436,24 @@
 
 |**変更の種類**|**バージョン**|**説明**|
 |:-------------|:-----------|:--------------|
-|追加|ベータ版|新しいリソース:</br>[コントラクト](https://graph.microsoft.io/en-us/docs/api-reference/beta/resources/contract) |
+|追加|ベータ版|新しいリソース:</br>
+  [コントラクト](https://graph.microsoft.io/en-us/docs/api-reference/beta/resources/contract) |
 
 ### <a name="add-domain-operations-to-microsoft-graph"></a>Microsoft Graph へのドメイン操作の追加
 
 |**変更の種類**|**バージョン**|**説明**|
 |:-------------|:-----------|:--------------|
-|追加|ベータ版|[ドメイン](https://graph.microsoft.io/en-us/docs/api-reference/beta/resources/domain)に関数を追加しました。<br/>新しいエンティティ:</br>[domain](https://graph.microsoft.io/en-us/docs/api-reference/beta/resources/domain)<br/>[domainDnsRecord](https://graph.microsoft.io/en-us/docs/api-reference/beta/resources/domaindnsrecord)<br/>[domainDnsCnameRecord](https://graph.microsoft.io/en-us/docs/api-reference/beta/resources/domainDnsCnameRecord)<br/>[domainDnsMxRecord](https://graph.microsoft.io/en-us/docs/api-reference/beta/resources/domainDnsMxRecord)<br/>[domainDnsSrvRecord](https://graph.microsoft.io/en-us/docs/api-reference/beta/resources/domainDnsSrvRecord)<br/>[domainDnsTxtRecord](https://graph.microsoft.io/en-us/docs/api-reference/beta/resources/domainDnsTxtRecord)<br/>[domainDnsUnavailableRecord](https://graph.microsoft.io/en-us/docs/api-reference/beta/resources/domainDnsUnavailableRecord)<br/>新しいアクション:</br>[forceDelete](https://graph.microsoft.io/en-us/docs/api-reference/beta/api/domain_forcedelete)</br>[verify](https://graph.microsoft.io/en-us/docs/api-reference/beta/api/domain_verify) |
+|追加|ベータ版|
+  [ドメイン](https://graph.microsoft.io/en-us/docs/api-reference/beta/resources/domain)に関数を追加しました。<br/>新しいエンティティ:</br>
+  [domain](https://graph.microsoft.io/en-us/docs/api-reference/beta/resources/domain)<br/>
+  [domainDnsRecord](https://graph.microsoft.io/en-us/docs/api-reference/beta/resources/domaindnsrecord)<br/>
+  [domainDnsCnameRecord](https://graph.microsoft.io/en-us/docs/api-reference/beta/resources/domainDnsCnameRecord)<br/>
+  [domainDnsMxRecord](https://graph.microsoft.io/en-us/docs/api-reference/beta/resources/domainDnsMxRecord)<br/>
+  [domainDnsSrvRecord](https://graph.microsoft.io/en-us/docs/api-reference/beta/resources/domainDnsSrvRecord)<br/>
+  [domainDnsTxtRecord](https://graph.microsoft.io/en-us/docs/api-reference/beta/resources/domainDnsTxtRecord)<br/>
+  [domainDnsUnavailableRecord](https://graph.microsoft.io/en-us/docs/api-reference/beta/resources/domainDnsUnavailableRecord)<br/>新しいアクション:</br>
+  [forceDelete](https://graph.microsoft.io/en-us/docs/api-reference/beta/api/domain_forcedelete)</br>
+  [verify](https://graph.microsoft.io/en-us/docs/api-reference/beta/api/domain_verify) |
 
 ### <a name="add-custom-data-to-microsoft-graph-using-schema-extensions"></a>スキーマ拡張機能を使用して Microsoft Graph にカスタム データを追加する
 
@@ -444,11 +473,16 @@
 
 |**変更の種類**|**バージョン**|**説明**|
 |:-------------|:-----------|:--------------|
-|追加|ベータ版|[グループの復元と完全削除](https://graph.microsoft.io/en-us/docs/api-reference/beta/resources/directory)に関するサポートが追加されました。<br/>新しいエンティティ: deleteditems ナビゲーション プロパティを持つディレクトリ。 |
-|追加|ベータ版|新しいエンティティ:</br>[Endpoint](https://graph.microsoft.io/en-us/docs/api-reference/beta/resources/endpoint) |
-|変更  |ベータ版|[groups](https://graph.microsoft.io/en-us/docs/api-reference/beta/resources/group) における新たな [endpoints](https://graph.microsoft.io/en-us/docs/api-reference/beta/api/group_list_endpoints) ナビゲーション プロパティ |
-|追加|ベータ版|新しいエンティティ:</br>[licenseDetails](https://graph.microsoft.io/en-us/docs/api-reference/beta/resources/licensedetails) |
-|変更  |ベータ版|[users](https://graph.microsoft.io/en-us/docs/api-reference/beta/resources/user) における新たな [licensedetails](https://graph.microsoft.io/en-us/docs/api-reference/beta/api/user_list_licensedetails) ナビゲーション プロパティ |
+|追加|ベータ版|
+  [グループの復元と完全削除](https://graph.microsoft.io/en-us/docs/api-reference/beta/resources/directory)に関するサポートが追加されました。<br/>新しいエンティティ: deleteditems ナビゲーション プロパティを持つディレクトリ。 |
+|追加|ベータ版|新しいエンティティ:</br>
+  [Endpoint](https://graph.microsoft.io/en-us/docs/api-reference/beta/resources/endpoint) |
+|変更  |ベータ版|
+  [groups](https://graph.microsoft.io/en-us/docs/api-reference/beta/resources/group) における新たな [endpoints](https://graph.microsoft.io/en-us/docs/api-reference/beta/api/group_list_endpoints) ナビゲーション プロパティ |
+|追加|ベータ版|新しいエンティティ:</br>
+  [licenseDetails](https://graph.microsoft.io/en-us/docs/api-reference/beta/resources/licensedetails) |
+|変更  |ベータ版|
+  [users](https://graph.microsoft.io/en-us/docs/api-reference/beta/resources/user) における新たな [licensedetails](https://graph.microsoft.io/en-us/docs/api-reference/beta/api/user_list_licensedetails) ナビゲーション プロパティ |
 
 ### <a name="reports-apis"></a>レポート API
 
@@ -460,7 +494,8 @@
 
 |**変更の種類**|**バージョン**|**説明**|
 |:-------------|:-----------|:--------------|
-|追加|ベータ版|新しいエンティティ:</br>[コントラクト](https://graph.microsoft.io/en-us/docs/api-reference/beta/resources/contract) |
+|追加|ベータ版|新しいエンティティ:</br>
+  [コントラクト](https://graph.microsoft.io/en-us/docs/api-reference/beta/resources/contract) |
 
 ## <a name="february-2017"></a>2017 年 2 月
 

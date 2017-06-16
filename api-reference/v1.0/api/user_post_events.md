@@ -1,6 +1,6 @@
 # <a name="create-event"></a>イベントを作成する
 
-ユーザーの既定の予定表で[イベント](../resources/event.md)を作成します。 
+ユーザーの既定の予定表または指定した予定表で[イベント](../resources/event.md)を作成します。
 
 **start** と **end** プロパティの型が [dateTimeTimeZone](../resources/datetimetimezone.md) であるため、これらの値の一部としてイベントの開始時刻と終了時刻のそれぞれにタイム ゾーンを指定できます。 
 

@@ -1,56 +1,62 @@
 # <a name="group-resource-type"></a>group リソース タイプ
 
-Office 365 グループ、動的なグループ、またはセキュリティ グループのいずれかの Azure Active Directory グループを表します。[directoryObject](directoryobject.md) から継承します。
+Office 365 グループ、動的なグループ、セキュリティ グループのいずれかの Azure Active Directory (Azure AD) グループを表します。[directoryObject](directoryobject.md) から継承します。
 
 このリソースは以下をサポートしています。
 
 - [拡張機能](../../../concepts/extensibility_overview.md)を使用して、カスタム プロパティに独自のデータを追加します。
 - [デルタ](../api/user_delta.md)関数を提供することにより、[デルタ クエリ](../../../concepts/delta_query_overview.md)を使用して、増分の追加、削除、更新を追跡します。
 
-> **Microsoft Teams は Office 365 のグループをもとに作成されます。**Microsoft Teams では、ほとんどのグループ API を使用できます。[グループの作成](../api/group_post_groups.md)を使用してチームを作成することはできません。詳細については、「[Microsoft Teams リファレンス](teams_api_overview.md)」を参照してください。
 
 ## <a name="methods"></a>メソッド
 
 | メソッド       | 戻り値の型  |説明|
 |:---------------|:--------|:----------|
+|**グループの管理**| | |
 |[グループを作成する](../api/group_post_groups.md) | [group](group.md) |新しいグループを作成します。Office 365 グループ、動的なグループ、またはセキュリティ グループのいずれにすることができます。|
 |[グループを取得する](../api/group_get.md) | [group](group.md) |グループ オブジェクトのプロパティを読み取ります。|
 |[グループを一覧表示する](../api/group_list.md) |[group](group.md) コレクション |グループ オブジェクトとそのプロパティを一覧表示します。|
 |[グループを更新する](../api/group_update.md) | [group](group.md) |グループ オブジェクトのプロパティを更新します。 |
 |[グループを削除する](../api/group_delete.md) | なし |グループ オブジェクトを削除します。 |
+|[所有者を追加する](../api/group_post_owners.md) |なし| **owners** ナビゲーション プロパティ (セキュリティ グループおよびメールが有効なセキュリティ グループのみをサポート) に投稿することによってグループの新規所有者を追加します。|
+|[所有者を一覧表示する](../api/group_list_owners.md) |[directoryObject](directoryobject.md) コレクション| **owners** ナビゲーション プロパティからグループの所有者を取得します。|
+|[所有者を削除する](../api/group_delete_owners.md) | なし |**owners** ナビゲーション プロパティを使用して Office 365 のグループ、セキュリティ グループ、またはメールが有効なセキュリティ グループから所有者を削除します。|
 |[メンバーを追加する](../api/group_post_members.md) |なし| **members** ナビゲーション プロパティ (セキュリティ グループおよびメールが有効なセキュリティ グループでのみサポートされます) に投稿することによってこのグループにユーザーまたはグループを追加します。|
 |[メンバーを一覧表示する](../api/group_list_members.md) |[directoryObject](directoryobject.md) コレクション| **members** ナビゲーション プロパティからこのグループの直接のメンバーであるユーザーおよびグループを取得します。|
 |[メンバーを削除する](../api/group_delete_members.md) | なし |**members** ナビゲーション プロパティを使用して Office 365 のグループ、セキュリティ グループ、またはメールが有効なセキュリティ グループからメンバーを削除できます。ユーザーや他のグループを削除できます。 |
-|[memberOf を一覧表示する](../api/group_list_memberof.md) |[directoryObject](directoryobject.md) コレクション| **memberOf** ナビゲーション プロパティからこのグループが直接のメンバーであるグループを取得します。|
-|[所有者を追加する](../api/group_post_owners.md) |なし| **members** ナビゲーション プロパティ (セキュリティ グループおよびメールが有効なセキュリティ グループのみをサポート) に投稿することによってグループの新規所有者を追加します。|
-|[所有者を一覧表示する](../api/group_list_owners.md) |[directoryObject](directoryobject.md) コレクション| **owners** ナビゲーション プロパティからグループの所有者を取得します。|
-|[所有者を削除する](../api/group_delete_owners.md) | なし |**owners** ナビゲーション プロパティを使用して Office 365 のグループ、セキュリティ グループ、またはメールが有効なセキュリティ グループから所有者を削除します。|
 |[checkMemberGroups](../api/group_checkmembergroups.md)|String collection|グループの一覧内のメンバーシップについてこのグループを確認します。この関数は、推移的です。|
 |[getMemberGroups](../api/group_getmembergroups.md)|String collection|このグループがメンバーであるすべてのグループを返します。この関数は、推移的です。|
-|[getMemberObjects](../api/group_getmemberobjects.md)|String collection|このグループがメンバーであるすべてのグループを返します。この関数は、推移的です。 |
+|[getMemberObjects](../api/group_getmemberobjects.md)|String コレクション|このグループがメンバーであるすべてのグループを返します。この関数は、推移的です。 |
+|[delta](../api/group_delta.md)|group コレクション| グループに対する増分の変更を取得します。 |
+|**予定表**| | |
 |[イベントを作成する](../api/group_post_events.md) |[Event](event.md)| Event コレクションへの投稿によって、新しいイベントを作成します。|
 |[イベントを一覧表示する](../api/group_list_events.md) |[Event](event.md) コレクション| Event オブジェクトのコレクションを取得します。|
 |[calendarView を一覧表示する](../api/group_list_calendarview.md) |[Event](event.md) コレクション| 指定された時間枠のイベントのコレクションを取得します。|
+|**会話**| | |
 |[会話を作成する](../api/group_post_conversations.md) |[Conversation](conversation.md)| Conversation コレクションに投稿することによって、新しい会話を作成します。|
 |[会話を一覧表示する](../api/group_list_conversations.md) |[Conversation](conversation.md) コレクション| Conversation オブジェクトのコレクションを取得します。|
 |[スレッドを一覧表示する](../api/group_list_threads.md) |[conversationThread](conversationthread.md) コレクション| グループのすべてのスレッドを取得します。|
 |[acceptedSenders を一覧表示する](../api/group_list_acceptedsenders.md) |[directoryObject](directoryobject.md) コレクション| このグループの acceptedSenders リストに含まれるユーザーまたはグループの一覧を取得します。|
 |[acceptedSender を追加する](../api/group_post_acceptedsenders.md) |[directoryObject](directoryobject.md)| acceptSenders コレクションにユーザーまたはグループを追加します。|
 |[acceptedSender を削除する](../api/group_delete_acceptedsenders.md) |[directoryObject](directoryobject.md)| acceptedSenders コレクションからユーザーまたはグループを削除します。|
-|[rejectedSender を追加する](../api/group_post_rejectedsenders.md) |[directoryObject](directoryobject.md)| rejectedSender コレクションに新しいユーザーまたはグループを追加します。|
 |[rejectedSenders を一覧表示する](../api/group_list_rejectedsenders.md) |[directoryObject](directoryobject.md) コレクション| このグループの rejectedSenders リストに含まれるユーザーまたはグループの一覧を取得します。|
+|[rejectedSender を追加する](../api/group_post_rejectedsenders.md) |[directoryObject](directoryobject.md)| rejectedSender コレクションに新しいユーザーまたはグループを追加します。|
 |[rejectedSender を削除する](../api/group_delete_rejectedsenders.md) |[directoryObject](directoryobject.md)| rejectedSender コレクションから新しいユーザーまたはグループを削除します。|
-|[addFavorite](../api/group_addfavorite.md)|なし|現在のユーザーのお気に入りのグループ一覧にグループを追加します。Office 365 のグループのみをサポートします。|
-|[removeFavorite](../api/group_removefavorite.md)|なし|現在のユーザーのお気に入りのグループ一覧からグループを削除します。Office 365 のグループのみをサポートします。|
-|[subscribeByMail](../api/group_subscribebymail.md)|なし|isSubscribedByMail プロパティを **true** に設定します。現在のユーザーが電子メールの会話を受信できるようにします。Office 365 のグループのみをサポートします。|
-|[unsubscribeByMail](../api/group_unsubscribebymail.md)|なし|isSubscribedByMail プロパティを **false** に設定します。現在のユーザーに対して電子メールでの会話の受信を無効にします。Office 365 のグループのみをサポートします。|
-|[resetUnseenCount](../api/group_resetunseencount.md)|なし|現在のユーザーが最後の訪問以降見ていない、すべての投稿の unseenCount を 0 にリセットします。Office 365 のグループのみをサポートします。|
-|[delta](../api/group_delta.md)|group コレクション| グループに対する増分の変更を取得します。 |
 |**オープン拡張機能**| | |
 |[オープン拡張機能を作成する](../api/opentypeextension_post_opentypeextension.md) |[openTypeExtension](opentypeextension.md)| オープン拡張機能を作成し、新規または既存のリソースにカスタム プロパティを追加します。|
 |[オープン拡張機能を取得する](../api/opentypeextension_get.md) |[openTypeExtension](opentypeextension.md) コレクション| 拡張機能の名前で識別されるオープン拡張機能を取得します。|
 |**スキーマ拡張機能**| | |
-|[スキーマ拡張機能の値を追加する](../../../concepts/extensibility_schema_groups.md) || スキーマ拡張機能の定義を作成し、それを使用してカスタマイズされた種類のデータをリソースに追加します。|
+|[スキーマ拡張機能の値を追加する](../../../concepts/extensibility_schema_groups.md) || スキーマ拡張機能の定義を作成し、それを使用してカスタムの型指定されたデータをリソースに追加します。|
+|**その他のグループ リソース**| | |
+|[写真を一覧表示する](../api/group_list_photos.md) |[profilePhoto](photo.md) コレクション| グループのプロファイル写真のコレクションを取得します。|
+|[plannerPlans を一覧表示する](../api/plannergroup_list_plans.md) |[plannerPlan](plannerPlan.md) コレクション| グループが所有しているプランナーの計画を取得します。|
+|**ユーザーの設定**| | |
+|[addFavorite](../api/group_addfavorite.md)|なし|現在のユーザーのお気に入りのグループ一覧にグループを追加します。Office 365 のグループのみをサポートします。|
+|[removeFavorite](../api/group_removefavorite.md)|なし|現在のユーザーのお気に入りのグループ一覧からグループを削除します。Office 365 のグループのみをサポートします。|
+|[memberOf を一覧表示する](../api/group_list_memberof.md) |[directoryObject](directoryobject.md) コレクション| このユーザーが直接のメンバーであるグループおよび管理単位を、**memberOf** ナビゲーション プロパティから取得します。|
+|[subscribeByMail](../api/group_subscribebymail.md)|なし|isSubscribedByMail プロパティを **true** に設定します。現在のユーザーが電子メールの会話を受信できるようにします。Office 365 のグループのみをサポートします。|
+|[unsubscribeByMail](../api/group_unsubscribebymail.md)|なし|isSubscribedByMail プロパティを **false** に設定します。現在のユーザーに対して電子メールでの会話の受信を無効にします。Office 365 のグループのみをサポートします。|
+|[resetUnseenCount](../api/group_resetunseencount.md)|なし|現在のユーザーが最後の訪問以降見ていない、すべての投稿の unseenCount を 0 にリセットします。Office 365 のグループのみをサポートします。|
 
 
 ## <a name="properties"></a>プロパティ
@@ -89,9 +95,10 @@ Office 365 グループ、動的なグループ、またはセキュリティ �
 |memberOf|[directoryObject](directoryobject.md) コレクション|このグループがメンバーとして含まれているグループ。HTTP メソッド:GET (すべてのグループでサポートされます)。読み取り専用です。Null 許容型。|
 |members|[directoryObject](directoryobject.md) コレクション| このグループのメンバーであるユーザーとグループ。HTTP メソッド:GET (すべてのグループでサポートされます)、POST (Office 365 グループ、セキュリティ グループ、およびメールが有効なセキュリティ グループでサポートされます)、DELETE (Office 365 グループとセキュリティ グループでサポートされます)。Null 許容型。|
 |onenote|[OneNote](onenote.md)| 読み取り専用です。|
-|planner|[Planner](planner.md)| 統合グループに存在する可能性がある Planner リソースのエントリ ポイント。|
 |owners|[directoryObject](directoryobject.md) コレクション|グループの所有者。所有者は、このオブジェクトの変更を許可されている管理者以外のユーザーです。10 人の所有者に制限されます。HTTP メソッド:GET (すべてのグループでサポートされます)、POST (Office 365 グループ、セキュリティ グループ、およびメールが有効なセキュリティ グループでサポートされます)、DELETE (Office 365 グループとセキュリティ グループでサポートされます)。Null 許容型。|
-|写真|[profilePhoto](profilephoto.md)| グループのプロフィール写真 |
+|写真|[profilePhoto](profilephoto.md)| グループのプロファイル写真 |
+|photos|[profilePhoto](profilephoto.md) コレクション| グループが所有しているプロファイル写真。読み取り専用です。Null 許容型。|
+|planner|[Planner](planner.md)| 統合グループに存在する可能性がある Planner リソースのエントリ ポイント。|
 |rejectedSenders|[directoryObject](directoryobject.md) コレクション|このグループで投稿またはカレンダーのイベントを作成することが許可されていないグループの一覧。Null 許容型|
 |sites|[site](site.md) コレクション|このグループ内の SharePoint サイトの一覧。/sites/root を使用して既定のサイトにアクセスします。
 |threads|[conversationThread](conversationthread.md) コレクション| グループの会話スレッド。Null 許容型。|

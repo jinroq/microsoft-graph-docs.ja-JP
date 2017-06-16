@@ -12,7 +12,7 @@
 4. スキーマ拡張機能の定義に基づいて既存のグループのカスタム データを追加、更新または削除する
 5. グループと拡張機能データを読み取る
 
->**注:**このトピックでは、**グループ** リソースでスキーマ拡張機能の値を作成し、読み取る方法について説明します (手順 3 から 5)。同じメソッドは、** administrativeUnit**、**デバイス**、**イベント**、**メッセージ**、**組織**、**投稿**、および **ユーザー** リソースの種類でもサポートされています。このため、これらのリソースのいずれかで、下にある要求例と同様の操作を実行できます。注: **administrativeUnit" はベータ版エンドポイントでのみ使用可能です。
+>**注:**このトピックでは、**グループ** リソースでスキーマ拡張機能の値を作成し、読み取る方法について説明します (手順 3 から 5)。同じメソッドは、** administrativeUnit**、**デバイス**、**イベント**、**メッセージ**、**組織**、**投稿**、および **ユーザー** リソースの種類でもサポートされています。このため、これらのリソースのいずれかで、下にある要求例と同様の操作を実行できます。注: **administrativeUnit** はベータ版エンドポイントでのみ使用可能です。
 
 ## <a name="1-view-available-schema-extensions"></a>1.利用可能なスキーマ拡張機能を確認する
 開発者は、まずアプリで再利用できるスキーマ拡張機能の定義が他にないか調べる必要があります。これは **schemaExtension** リソースをクエリすることによって可能です。  
@@ -228,7 +228,8 @@ Content-length: 326
 
 - [拡張機能を使用してカスタム データをリソースに追加する](extensibility_overview.md)
 - [オープン拡張機能を使用したユーザーへのカスタム データの追加 (プレビュー)](extensibility_open_users.md)
-- [Office 365 のドメイン](https://technet.microsoft.com/en-us/library/office-365-domains.aspx)
+- 
+  [Office 365 のドメイン](https://technet.microsoft.com/en-us/library/office-365-domains.aspx)
 - [新しい Office 365 のドメインの追加および検証](http://office365support.ca/adding-and-verifying-a-domain-for-the-new-office-365/)
 - [schemaExtension リソース タイプ](../api-reference/v1.0/resources/schemaextension.md)
 - [schemaExtensions を一覧表示する](../api-reference/v1.0/api/schemaextension_list.md)
