@@ -3,6 +3,7 @@
 Azure AD ユーザー アカウントを表します。[directoryObject](directoryobject.md) から継承します。
 
 このリソースは以下をサポートしています。
+
 - [拡張機能](../../../concepts/extensibility_overview.md)を使用して、カスタム プロパティに独自のデータを追加します。
 - [デルタ](../api/user_delta.md)関数を提供することにより、[デルタ クエリ](../../../concepts/delta_query_overview.md)を使用して、増分の追加、削除、更新を追跡します。
 
@@ -104,7 +105,7 @@ Azure AD ユーザー アカウントを表します。[directoryObject](directo
 
 ## <a name="relationships"></a>リレーションシップ
 
-| リレーションシップ | 型    |説明|
+| リレーションシップ | 型   |説明|
 |:---------------|:--------|:----------|
 |calendar|[Calendar](calendar.md)|ユーザーの標準予定表。読み取り専用です。|
 |calendarGroups|[CalendarGroup](calendargroup.md) collection|ユーザーの予定表グループ。読み取り専用です。Null 許容型。|
