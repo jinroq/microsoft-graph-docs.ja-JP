@@ -9,8 +9,8 @@ GET 操作により、Exchange Online のユーザーのメールボックス内
 ## <a name="prerequisites"></a>前提条件
 この API を実行するには、以下のいずれかの**スコープ**が必要です。
 
-*    サインインしているユーザーを含むテナント内の任意のユーザーのプロファイル写真 - *User.ReadBasic.All; User.Read.All; User.ReadWrite.All*
-*    具体的にサインインしているユーザーのプロファイル写真 - *User.Read, User.ReadWrite; User.ReadBasic.All; User.Read.All; User.ReadWrite.All*
+*   サインインしているユーザーを含むテナント内の任意のユーザーのプロファイル写真 - *User.ReadBasic.All; User.Read.All; User.ReadWrite.All*
+*   具体的にサインインしているユーザーのプロファイル写真 - *User.Read, User.ReadWrite; User.ReadBasic.All; User.Read.All; User.ReadWrite.All*
 * **グループ**のプロファイル写真 - *Group.Read.All; Group.ReadWrite.All*
 * **連絡先**の写真 - *Contacts.Read; Contacts.ReadWrite*
 
@@ -43,7 +43,7 @@ GET /users/{id | userPrincipalName}/contactfolders/{contactFolderId}/contacts/{i
 ## <a name="request-headers"></a>要求ヘッダー
 | 名前       | 型 | 説明|
 |:-----------|:------|:----------|
-| Authorization  | string  | Bearer \<token\>. Required. |
+| Authorization  | string  | ベアラー {トークン}。必須。 |
 
 ## <a name="request-body"></a>要求本文
 このメソッドには、要求本文を指定しません。

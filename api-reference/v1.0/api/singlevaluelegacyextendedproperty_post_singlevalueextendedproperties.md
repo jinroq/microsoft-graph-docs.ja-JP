@@ -109,7 +109,7 @@ PATCH /groups/{id}/events/{id}
 ## <a name="request-headers"></a>要求ヘッダー
 | 名前       | 値 |
 |:---------------|:----------|
-| Authorization | Bearer %token%|
+| Authorization | ベアラー {トークン}。必須。 |
 | Content-Type | application/json |
 
 ## <a name="request-body"></a>要求本文

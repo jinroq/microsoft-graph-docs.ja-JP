@@ -20,7 +20,7 @@ GET /contracts/{id}
 
 | 名前      |説明|
 |:----------|:----------|
-| Authorization  | Bearer &lt;token&gt;*。必須* |
+| Authorization  | ベアラー {トークン}。必須。 |
 
 ### <a name="request-body"></a>要求本文
 

@@ -24,7 +24,7 @@ POST /users/{id | userPrincipalName}/calendars/{id}/events
 ## <a name="request-headers"></a>要求ヘッダー
 | ヘッダー       | 値 |
 |:-----------|:------|
-| Authorization  | Bearer <token>. Required.  |
+| Authorization  | ベアラー {トークン}。必須。  |
 | Content-Type  | application/json. Required.  |
 
 ## <a name="request-body"></a>要求本文

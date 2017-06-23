@@ -17,7 +17,7 @@ GET /users/<id>/mailFolders/{id}/messages/delta
 
 メッセージの変更を追跡すると、1 つ以上の**デルタ**関数呼び出しのラウンドが発生します。任意のクエリ パラメーター (`$deltatoken` と `$skiptoken` 以外) を使用する場合は、最初の**デルタ**要求でこれを指定する必要があります。Microsoft Graph は、応答で提供される `nextLink` や `deltaLink` の URL のトークン部分に指定したパラメーターを自動的にエンコードします。必要なクエリ パラメーターを前もって指定しておくだけで済みます。それ以降の要求では、前の応答で `nextLink` や `deltaLink` の URL に必要なパラメーターが既にエンコードされ、含まれているため、この URL をコピーして適用するだけです。
 
-| クエリ パラメーター       | 種類    |説明|
+| クエリ パラメーター      | 種類   |説明|
 |:---------------|:--------|:----------|
 | $deltatoken | string | 同じメッセージ コレクションの前の**デルタ**関数呼び出しの `deltaLink` URL で[状態トークン](../../../concepts/delta_query_overview.md)が返され、その変更追跡のラウンドが完了したことを示します。このコレクションについて、このトークンを含む、`deltaLink` URL 全体を次の変更追跡のラウンドの最初の要求に保存し、適用します。|
 | $skiptoken | string | 前の**デルタ**関数呼び出しの `nextLink` URL で[状態トークン](../../../concepts/delta_query_overview.md)が返され、同じメッセージ コレクションに追跡すべき変更が他にもあることを示します。 |
@@ -35,9 +35,9 @@ GET /users/<id>/mailFolders/{id}/messages/delta
 ### <a name="request-headers"></a>要求ヘッダー
 | 名前       | 型 | 説明 |
 |:---------------|:----------|:----------|
-| Authorization  | string  | Bearer {code}。必須。|
-| Content-Type  | string  | application/json.必須。 |
-| 優先 | string  | odata.maxpagesize={x}。省略可能です。 |
+| Authorization  | string  | ベアラー {トークン}。必須。 |
+| Content-Type  | string  | application/json. Required. |
+| Prefer | string  | odata.maxpagesize={x}.省略可能。 |
 
 
 ### <a name="response"></a>応答
@@ -61,11 +61,11 @@ Prefer: odata.maxpagesize=2
 
 ##### <a name="response"></a>応答
 要求が成功すると、応答には状態トークンが含まれます。これは、_skipToken_  
-(_@odata.nextLink_ 応答ヘッダーに含まれる) か、_deltaToken_ (_@odata.deltaLink_ 応答ヘッダーに含まれる) のいずれかになります。前者はそのラウンドを続行する必要があることを示し、後者はそのラウンドのすべての変更の取得が完了したことを示します。
+(_@odata.nextLink_ 応答ヘッダーに含まれる) か、_deltaToken_ (_@odata.deltaLink_ 応答ヘッダーに含まれる) のいずれかになります。前者はその回を続行する必要があることを示し、後者はその回のすべての変更の取得が完了したことを示します。
 
 以下の応答は、_@odata.nextLink_ 応答ヘッダーに含まれる _skipToken_ を示しています。
 
-注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。実際の呼び出しではすべてのプロパティが返されます。
+注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -98,7 +98,7 @@ Content-length: 337
 ### <a name="see-also"></a>関連項目
 
 - [デルタ クエリを使用して、Microsoft Graph データの変更を追跡する](../../../concepts/delta_query_overview.md)
-- [フォルダー内のメッセージへの増分変更を取得する](../../../concepts/delta_query_messages.md)
+- [フォルダー内のメッセージへの増分の変更を取得する](../../../concepts/delta_query_messages.md)
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

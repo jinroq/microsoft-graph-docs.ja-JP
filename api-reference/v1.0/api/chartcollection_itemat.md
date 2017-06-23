@@ -15,13 +15,13 @@ POST /workbook/worksheets/{id|name}/charts/ItemAt
 ## <a name="request-headers"></a>要求ヘッダー
 | 名前       | 説明|
 |:---------------|:----------|
-| Authorization  | Bearer {code}|
+| Authorization  | ベアラー {トークン}。必須。 |
 
 
 ## <a name="request-body"></a>要求本文
 要求本文で、次のパラメーターを含む JSON オブジェクトを指定します。
 
-| パラメーター       | 型    |説明|
+| パラメーター    | 型   |説明|
 |:---------------|:--------|:----------|
 |index|number|取得するオブジェクトのインデックス値。0 を起点とする番号になります。|
 

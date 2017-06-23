@@ -16,13 +16,13 @@ POST /workbook/worksheets/{id|name}/tables/{id|name}/rows/add
 ## <a name="request-headers"></a>要求ヘッダー
 | 名前       | 説明|
 |:---------------|:----------|
-| Authorization  | Bearer {code}|
+| Authorization  | ベアラー {トークン}。必須。 |
 
 
 ## <a name="request-body"></a>要求本文
 要求本文で、次のパラメーターを含む JSON オブジェクトを指定します。
 
-| パラメーター       | 型    |説明|
+| パラメーター    | 型   |説明|
 |:---------------|:--------|:----------|
 |index|number|省略可能。新しい行の相対位置を指定します。null の場合、最後に追加が行われます。挿入した行の下のすべての行が下方向にシフトします。0 を起点とする番号になります。|
 |values|(boolean、string、または number)|省略可能。テーブルの行の書式設定されていない値の 2 次元の配列。|

@@ -26,7 +26,7 @@ GET /me/drive/special/{name}
 
 | 名前          | 型   | 説明               |
 |:--------------|:-------|:--------------------------|
-| Authorization | string | Bearer <token>. Required. |
+| Authorization | string | ベアラー {トークン}。必須。 |
 
 
 ## <a name="request-body"></a>要求本文

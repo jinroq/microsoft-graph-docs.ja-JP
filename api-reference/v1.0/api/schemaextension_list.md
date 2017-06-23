@@ -16,7 +16,7 @@ GET /schemaExtensions
 ## <a name="request-headers"></a>要求ヘッダー
 | 名前      |説明|
 |:----------|:----------|
-| Authorization  | Bearer &lt;token&gt;。必須。 |
+| Authorization  | ベアラー {トークン}。必須。 |
 | Content-Type   | application/json | 
 
 ## <a name="request-body"></a>要求本文
@@ -69,7 +69,7 @@ Content-length: 274
 
 ## <a name="see-also"></a>関連項目
 
-- [拡張機能を使用してカスタム データをリソースに追加する](../../../concepts/extensibility_overview.md)
+- [拡張機能を使用したリソースへのカスタム データの追加](../../../concepts/extensibility_overview.md)
 - [スキーマ拡張機能を使用したグループへのカスタム データの追加](../../../concepts/extensibility_schema_groups.md)
 
 

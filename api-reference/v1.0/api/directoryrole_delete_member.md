@@ -18,7 +18,7 @@ DELETE /directoryroles/{id}/members/{id}/$ref
 
 | 名前       | 型 | 説明|
 |:---------------|:--------|:----------|
-| Authorization  | string  | Bearer &lt;token&gt;*。必須* |
+| Authorization  | string  | ベアラー {トークン}。必須。 |
 
 ## <a name="request-body"></a>要求本文
 

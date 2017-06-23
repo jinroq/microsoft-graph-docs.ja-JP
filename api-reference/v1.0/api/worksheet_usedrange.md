@@ -16,15 +16,15 @@ GET /workbook/worksheets/{id|name}/UsedRange
 ## <a name="optional-request-parameter"></a>オプションの要求パラメーター
 要求の URL では、オプションのクエリ パラメーターを提供します。
 
-| パラメーター       | 型    |説明|
+| パラメーター    | 型   |説明|
 |:---------------|:--------|:----------|
-|valuesOnly|Boolean|オプション。値の入っているセルのみを使用セルと見なします (書式設定は無視されます)。|
+|valuesOnly|Boolean|省略可能。値の入っているセルのみを使用セルと見なします (書式設定は無視されます)。|
 
 
 ## <a name="request-headers"></a>要求ヘッダー
 | 名前       | 説明|
 |:---------------|:----------|
-| Authorization  | Bearer {code}|
+| Authorization  | ベアラー {トークン}。必須。 |
 
 ## <a name="response"></a>応答
 成功した場合、このメソッドは `200, OK` 応答コードと、応答本文で [Range](../resources/range.md) オブジェクトを返します。

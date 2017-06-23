@@ -12,7 +12,7 @@ POST /groups/{id}/owners/$ref
 ## <a name="request-headers"></a>要求ヘッダー
 | 名前       | 型 | 説明|
 |:---------------|:--------|:----------|
-| Authorization  | string  | Bearer <token>. Required. |
+| Authorization  | string  | ベアラー {トークン}。必須。 |
 
 ## <a name="request-body"></a>要求本文
 要求本文で、追加する[ユーザー](../resources/user.md) オブジェクトの JSON 表記を指定します。

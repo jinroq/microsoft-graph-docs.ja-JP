@@ -19,7 +19,7 @@ GET /workbook/worksheets/{id|name}/charts(<name>)/axes/categoryaxis/format/font
 ## <a name="request-headers"></a>要求ヘッダー
 | 名前      |説明|
 |:----------|:----------|
-| Authorization  | Bearer {code}|
+| Authorization  | ベアラー {トークン}。必須。 |
 
 
 ## <a name="request-body"></a>要求本文

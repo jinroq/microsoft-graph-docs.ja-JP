@@ -16,7 +16,7 @@ POST /planner/plans
 ### <a name="request-headers"></a>要求ヘッダー
 | 名前       | 説明|
 |:---------------|:----------|
-| Authorization  | Bearer <code>|
+| Authorization  | ベアラー {トークン}。必須。 |
 
 ### <a name="request-body"></a>要求本文
 要求本文で、[plannerPlan](../resources/plannerplan.md) オブジェクトの JSON 表記を指定します。**plannerPlan** 所有者プロパティは、[group](../resources/group.md) オブジェクトの ID に設定する必要があります。

@@ -16,7 +16,7 @@ POST /groups/{id}/conversations/{id}/threads/{id}/posts/{id}/attachments
 ## <a name="request-headers"></a>要求ヘッダー
 | ヘッダー       | 値 |
 |:---------------|:--------|
-| Authorization  | Bearer <token>. Required.  |
+| Authorization  | ベアラー {トークン}。必須。  |
 
 ## <a name="request-body"></a>要求本文
 要求本文で、[Attachment](../resources/attachment.md) オブジェクトの JSON 表記を指定します。

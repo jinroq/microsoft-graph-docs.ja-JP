@@ -17,7 +17,7 @@ DELETE /schemaExtensions/{id}
 ## <a name="request-headers"></a>要求ヘッダー
 | 名前      |説明|
 |:----------|:----------|
-| Authorization  | Bearer &lt;token&gt;。必須。 |
+| Authorization  | ベアラー {トークン}。必須。 |
  
 
 ## <a name="request-body"></a>要求本文
@@ -49,7 +49,7 @@ HTTP/1.1 204 No Content
 
 ## <a name="see-also"></a>関連項目
 
-- [拡張機能を使用してカスタム データをリソースに追加する](../../../concepts/extensibility_overview.md)
+- [拡張機能を使用したリソースへのカスタム データの追加](../../../concepts/extensibility_overview.md)
 - [スキーマ拡張機能を使用したグループへのカスタム データの追加](../../../concepts/extensibility_schema_groups.md)
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

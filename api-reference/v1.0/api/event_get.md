@@ -47,7 +47,7 @@ GET /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{i
 ## <a name="request-headers"></a>要求ヘッダー
 | 名前       | 型 | 説明|
 |:-----------|:------|:----------|
-| Authorization  | string  | Bearer <token>. Required. |
+| Authorization  | string  | ベアラー {トークン}。必須。 |
 | 優先: outlook.timezone | string | 応答内のイベントに対する既定のタイム ゾーン。 |
 
 ## <a name="request-body"></a>要求本文

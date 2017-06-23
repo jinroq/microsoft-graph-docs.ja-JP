@@ -17,12 +17,12 @@ POST /groups/{id}/conversations/{id}/threads/{id}/posts/{id}/forward
 ## <a name="request-headers"></a>要求ヘッダー
 | ヘッダー       | 値 |
 |:---------------|:--------|
-| Authorization  | Bearer <token>. Required.  |
+| Authorization  | ベアラー {トークン}。必須。  |
 
 ## <a name="request-body"></a>要求本文
 要求本文で、次のパラメーターを含む JSON オブジェクトを指定します。
 
-| パラメーター       | 型    |説明|
+| パラメーター    | 型   |説明|
 |:---------------|:--------|:----------|
 |comment|String|投稿と共に転送されるオプションのコメント。|
 |toRecipients|[recipient](../resources/recipient.md) collection|スレッドの転送先となる受信者。|

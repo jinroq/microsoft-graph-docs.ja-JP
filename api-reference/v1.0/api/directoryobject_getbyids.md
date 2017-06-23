@@ -23,7 +23,7 @@ POST /directoryObjects/getById
 
 | 名前       | 型 | 説明|
 |:---------------|:--------|:----------|
-| Authorization  | string  | Bearer &lt;token&gt;。必須。 |
+| Authorization  | string  | ベアラー {トークン}。必須。 |
 | Content-Type  | application/json  |
 
 ## <a name="request-body"></a>要求本文
@@ -32,8 +32,8 @@ POST /directoryObjects/getById
 
 | パラメーター   | 型 |説明|
 |:---------------|:--------|:----------|
-|ids|String コレクション| オブジェクトを戻す ID のコレクション。最大 1000 ID まで指定できます。 |
-|types|String コレクション| 検索する一連のリソース コレクションを指定するリソース型のコレクションです。指定しない場合、既定値は、ディレクトリで定義されているすべてのリソース型を含む [directoryObject](../resources/directoryobject.md) になります。`directoryObject` から派生する任意のオブジェクトをコレクションに指定できます。例: [user](../resources/user.md)、[group](../resources/group.md)、[device](../resources/device.md) など。値では、大文字と小文字は区別されません。|
+|ids|String collection| オブジェクトを戻す ID のコレクション。最大 1000 ID まで指定できます。 |
+|types|String collection| 検索する一連のリソース コレクションを指定するリソース型のコレクションです。指定しない場合、既定値は、ディレクトリで定義されているすべてのリソース型を含む [directoryObject](../resources/directoryobject.md) になります。`directoryObject` から派生する任意のオブジェクトをコレクションに指定できます。例: [user](../resources/user.md)、[group](../resources/group.md)、[device](../resources/device.md) など。値では、大文字と小文字は区別されません。|
 
 ## <a name="response"></a>応答
 

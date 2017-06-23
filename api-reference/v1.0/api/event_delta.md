@@ -20,12 +20,12 @@ GET /users/<id>/calendarView/delta?startDateTime={start_datetime}&endDateTime={e
 イベントの変化を追跡することにより、1 回以上の、一連の**デルタ**関数呼び出しが発生します。任意のクエリ パラメーター (`$deltatoken` と `$skiptoken` 以外) を使用する場合は、最初の**デルタ**要求でこれを指定する必要があります。Microsoft Graph は、応答で提供される `nextLink` または `deltaLink` の URL のトークン部分に指定したパラメーターを自動的にエンコードします。必要なクエリ パラメーターを前もって指定しておくだけで済みます。それ以降の要求では、前の応答で `nextLink` または `deltaLink` の URL に必要なパラメーターが既にエンコードされ、含まれているため、この URL をコピーして適用します。
 
 
-| クエリ パラメーター       | 種類    |説明|
+| クエリ パラメーター      | 種類   |説明|
 |:---------------|:--------|:----------|
 |startDateTime|String|時間範囲の開始日時は、ISO 8601 形式で表されます。例: "2015-11-08T19:00:00.0000000"。|
-|endDateTime|文字列|時間範囲の終了日時は、ISO 8601 形式で表されます。例: "2015-11-08T20:00:00.0000000"。|
+|endDateTime|String|時間範囲の終了日時は、ISO 8601 形式で表されます。例: "2015-11-08T20:00:00.0000000"。|
 | $deltatoken | string | 同じカレンダー ビュー用の前の**デルタ**関数呼び出しの `deltaLink` URL で返された[状態トークン](../../../concepts/delta_query_overview.md)で、その一連の変更追跡が完了したことを示します。このトークンを含む `deltaLink` URL 全体を、該当カレンダー ビュー用の次回の一連の変更追跡の最初の要求内に保存し、適用します。|
-| $skiptoken | string | 前の**デルタ**関数呼び出しの `nextLink` URL 内で返された[状態トークン](../../../concepts/delta_query_overview.md)で、同じカレンダー ビュー内に追跡すべき変更が他にもあることを示しています。 |
+| $skiptoken | string | 前の**デルタ**関数呼び出しの `nextLink` URL 内で返された[状態トークン](../../../concepts/delta_query_overview.md)で、同じカレンダー ビュー内に追跡されるべきさらなる変化があることを示しています。 |
 
 カレンダー ビューでデルタ クエリを実行する場合、`GET /calendarview` 要求で通常得られるプロパティのすべてを得られると予期します。この場合、`$select` はサポートされていません。 
 
@@ -33,9 +33,9 @@ GET /users/<id>/calendarView/delta?startDateTime={start_datetime}&endDateTime={e
 ### <a name="request-headers"></a>要求ヘッダー
 | 名前       | 型 | 説明 |
 |:---------------|:----------|:----------|
-| Authorization  | string  | Bearer {code}。必須。|
-| Content-Type  | string  | application/json.必須。 |
-| 優先 | string  | odata.maxpagesize={x}.省略可能。 |
+| Authorization  | string  | ベアラー {トークン}。必須。 |
+| Content-Type  | string  | application/json. Required. |
+| Prefer | string  | odata.maxpagesize={x}.省略可能。 |
 | Prefer | string | {タイム ゾーン}。省略可能。指定しない場合、UTC が使用されます。|
 
 
@@ -64,7 +64,7 @@ Prefer: odata.maxpagesize=2
 
 以下の応答は、_@odata.nextLink_ 応答ヘッダーに含まれる _skipToken_ を示しています。
 
-注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。実際の呼び出しではすべてのプロパティが返されます。
+注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。
 <!-- {
   "blockType": "response",
   "truncated": true,

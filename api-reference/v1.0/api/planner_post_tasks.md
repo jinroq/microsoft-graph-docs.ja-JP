@@ -15,7 +15,7 @@ POST /planner/tasks
 ### <a name="request-headers"></a>要求ヘッダー
 | 名前       | 説明|
 |:---------------|:----------|
-| Authorization  | Bearer <code>|
+| Authorization  | ベアラー {トークン}。必須。 |
 
 ### <a name="request-body"></a>要求本文
 要求本文で、[plannerTask](../resources/plannertask.md) オブジェクトの JSON 表記を指定します。**plannerTask** planId プロパティは、既存の [plannerPlan](../resources/plannerplan.md) オブジェクトの ID に設定する必要があります。

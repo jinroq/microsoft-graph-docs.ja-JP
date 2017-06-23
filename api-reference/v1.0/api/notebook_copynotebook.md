@@ -18,13 +18,13 @@ POST /groups/{id}/onenote/notebooks/{id}/copyNotebook
 ## <a name="request-headers"></a>要求ヘッダー
 | 名前       | 型 | 説明|
 |:---------------|:--------|:----------|
-| Authorization  | string  | `Bearer <token>` ユーザー資格情報に基づいているアプリと、承認されたアクセス権を持つユーザーに提供される、有効な OAuth トークン。 |
+| Authorization  | string  | ベアラー {トークン}。必須。 |
 | Content-Type | string | `application/json` |
 
 ## <a name="request-body"></a>要求本文
 要求本文では、操作に必要なパラメーターを格納する JSON オブジェクトを指定します。パラメーターが必要ない場合は、空の要求本文を送信してもかまいません。
 
-| パラメーター       | 型    |説明|
+| パラメーター    | 型   |説明|
 |:---------------|:--------|:----------|
 |groupId|String|コピー先グループの ID。Office 365 グループにコピーする場合にのみ使用します。|
 |renameAs|String|コピーの名前。既定値は、既存のアイテムの名前になります。 |

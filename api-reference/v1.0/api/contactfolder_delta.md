@@ -18,7 +18,7 @@ GET /users/<id>/contactFolders/delta
 
 連絡先フォルダーの変更を追跡すると、一連の **デルタ**関数呼び出しが発生します。任意のクエリ パラメーター (`$deltatoken` と `$skiptoken` 以外) を使用する場合は、最初の**デルタ**要求でこれを指定する必要があります。Microsoft Graph は、応答で提供される `nextLink` のトークン部分 (`skiptoken` または `$deltatoken`) または `deltaLink` URL に指定したパラメーターを自動的にエンコードします。必要なクエリ パラメーターを前もって指定しておくだけで済みます。それ以降の要求では、前の応答で `nextLink` または `deltaLink` の URL に必要なパラメーターが既にエンコードされ、含まれているため、この URL をコピーして適用します。
 
-| クエリ パラメーター       | 種類    |説明|
+| クエリ パラメーター      | 種類   |説明|
 |:---------------|:--------|:----------|
 | $deltatoken | string | 同じ連絡先フォルダー コレクションの前の**デルタ**関数呼び出しの `deltaLink` URL で[状態トークン](../../../concepts/delta_query_overview.md)が返され、変更追跡のその回が完了したことを示します。このコレクションについて、このトークンを含む `deltaLink` URL 全体を、変更追跡の次の回の最初の要求に保存し、適用します。|
 | $skiptoken | string | 前の**デルタ**関数呼び出しの `nextLink` URL で[状態トークン](../../../concepts/delta_query_overview.md)が返され、同じ連絡先フォルダー コレクションに追跡すべき変更が他にもあることを示します。 |
@@ -31,9 +31,9 @@ GET /users/<id>/contactFolders/delta
 ### <a name="request-headers"></a>要求ヘッダー
 | 名前       | 型 | 説明 |
 |:---------------|:----------|:----------|
-| Authorization  | string  | Bearer {code}。必須。|
-| Content-Type  | string  | application/json.必須。 |
-| 優先 | string  | odata.maxpagesize={x}.省略可能。 |
+| Authorization  | string  | ベアラー {トークン}。必須。 |
+| Content-Type  | string  | application/json. Required. |
+| Prefer | string  | odata.maxpagesize={x}.省略可能。 |
 
 
 ### <a name="response"></a>応答
@@ -64,7 +64,7 @@ Prefer: odata.maxpagesize=2
 
 以下の応答は、_@odata.nextLink_ 応答ヘッダーに含まれる _skipToken_ を示しています。
 
-注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。実際の呼び出しではすべてのプロパティが返されます。
+注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。
 <!-- {
   "blockType": "response",
   "truncated": true,

@@ -14,7 +14,7 @@ POST /devices
 ## <a name="request-headers"></a>要求ヘッダー
 | 名前       | 型 | 説明|
 |:---------------|:--------|:----------|
-| Authorization  | string  | Bearer <token>. Required. |
+| Authorization  | string  | ベアラー {トークン}。必須。 |
 | Content-type | string | application/json |
 
 ## <a name="request-body"></a>要求本文

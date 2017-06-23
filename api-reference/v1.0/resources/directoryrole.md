@@ -2,14 +2,13 @@
 
 Azure AD ディレクトリ ロールを表します。Azure AD ディレクトリ ロールは、*管理者ロール*と呼ばれることもあります。ディレクトリ (管理者) ロールの詳細については、「[Azure Active Directory での管理者ロールの割り当て](http://azure.microsoft.com/documentation/articles/active-directory-assign-admin-roles/)」を参照してください。Microsoft Graph では、ユーザーにディレクトリ ロールを割り当てることで、ターゲット ロールのアクセス許可をユーザーに付与できます。ディレクトリ ロールを読み取る場合や、そのメンバーを更新する場合は、まず、そのディレクトリ ロールをテナントでアクティブにする必要があります。既定では、会社の管理者 (Company Administrators) ディレクトリ ロールのみがアクティブ化されています。その他の使用可能なディレクトリ ロールをアクティブ化するには、[directoryRoleTemplate](directoryroletemplate.md) の ID を使用して POST 要求を送信します。この ID は、ディレクトリ ロールに基づきます。[directoryObject](directoryobject.md) から継承します。
 
-
-
 ## <a name="methods"></a>メソッド
 
 | メソッド       | 戻り値の型  |説明|
 |:---------------|:--------|:----------|
 |[Get directoryRole](../api/directoryrole_get.md) | [directoryRole](directoryrole.md) | directoryRole オブジェクトのプロパティとリレーションシップを読み取ります。 |
-|[Create member](../api/directoryrole_post_members.md) |[directoryObject](directoryobject.md)| members ナビゲーション プロパティを送信することで、ユーザーをディレクトリ ロールに追加します。|
+|[directoryRoles を一覧表示する](../api/directoryrole_list.md) | [directoryRole](directoryrole.md) コレクション | テナントでアクティブになっているディレクトリ ロールを一覧表示します。 |
+|[メンバーを追加する](../api/directoryrole_post_members.md) |[directoryObject](directoryobject.md)| members ナビゲーション プロパティを送信することで、ユーザーをディレクトリ ロールに追加します。|
 |[List members](../api/directoryrole_list_members.md) |[directoryObject](directoryobject.md) コレクション| members ナビゲーション プロパティから、ディレクトリ ロールのメンバーであるユーザーを取得します。|
 |[メンバーを削除する](../api/directoryrole_delete_member.md) |[directoryObject](directoryobject.md)| ディレクトリ ロールからユーザーを削除します。|
 |[Activate directoryRole](../api/directoryrole_post_directoryroles.md) |[directoryRole](directoryrole.md) | ディレクトリ ロールをアクティブ化します。|

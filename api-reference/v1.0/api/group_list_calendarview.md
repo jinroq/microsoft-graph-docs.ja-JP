@@ -12,7 +12,7 @@ GET /groups/{id}/calendarView?startDateTime={start_datetime}&endDateTime={end_da
 
 要求 URL に、次の必須のクエリ パラメーターを値で指定します。
 
-| パラメーター       | 型    |説明|
+| パラメーター    | 型   |説明|
 |:---------------|:--------|:----------|
 |startDateTime|String|時間範囲の開始日時は、ISO 8601 形式で表されます。例: "2015-11-08T19:00:00.0000000"。|
 |endDateTime|String|時間範囲の終了日時は、ISO 8601 形式で表されます。例: "2015-11-08T20:00:00.0000000"。|
@@ -21,8 +21,8 @@ GET /groups/{id}/calendarView?startDateTime={start_datetime}&endDateTime={end_da
 ## <a name="request-headers"></a>要求ヘッダー
 | ヘッダー       | 値 |
 |:---------------|:--------|
-| Authorization  | Bearer <token>. Required.  |
-| Prefer | string | <Time zone>。省略可能。指定しない場合、UTC が使用されます。|
+| Authorization  | ベアラー {トークン}。必須。  |
+| 優先 | string | <Time zone>。省略可能。指定しない場合、UTC が使用されます。|
 
 ## <a name="request-body"></a>要求本文
 このメソッドには、要求本文を指定しません。

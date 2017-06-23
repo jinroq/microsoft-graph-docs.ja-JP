@@ -15,7 +15,7 @@ GET /domains
 ### <a name="request-headers"></a>要求ヘッダー
 | 名前      |説明|
 |:----------|:----------|
-| Authorization  | Bearer &lt;token&gt;*。必須*|
+| Authorization  | ベアラー {トークン}。必須。|
 | Accept         | application/json; |
 
 ### <a name="request-body"></a>要求本文

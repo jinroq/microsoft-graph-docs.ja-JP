@@ -12,13 +12,13 @@ GET me/drive/root/workbook/worksheets/{id}/range(addres={address})/visibleView/i
 ### <a name="request-headers"></a>要求ヘッダー
 | 名前       | 説明|
 |:---------------|:----------|
-| Authorization  | Bearer {code}|
+| Authorization  | ベアラー {トークン}。必須。 |
 | Workbook-Session-Id  | 変更を保持するかどうかを決定するブック セッション ID。省略可能。|
 
 ### <a name="request-body"></a>要求本文
 要求 URL に、次のクエリ パラメーターを値で指定します。
 
-| パラメーター       | 型    |説明|
+| パラメーター    | 型   |説明|
 |:---------------|:--------|:----------|
 |index|Int32|返される項目のインデックス。|
 

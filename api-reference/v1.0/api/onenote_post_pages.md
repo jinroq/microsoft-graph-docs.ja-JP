@@ -22,7 +22,7 @@ POST /groups/{id}/onenote/pages
 ## <a name="request-headers"></a>要求ヘッダー  
 | 名前       | 型 | 説明|
 |:---------------|:--------|:----------|
-| Authorization  | string  | `Bearer <token>` ユーザー資格情報に基づいているアプリと、承認されたアクセス権を持つユーザーに提供される、有効な OAuth トークン。 |
+| Authorization  | string  | ベアラー {トークン}。必須。 |
 | Content-Type | string | HTML コンテンツを表す `text/html` または `application/xhtml+xml` (マルチパート要求の必須の "Presentation" パートを含む)。マルチパート要求では `multipart/form-data; boundary=your-boundary` コンテンツ タイプを使用します。 |
 
 ## <a name="request-body"></a>要求本文

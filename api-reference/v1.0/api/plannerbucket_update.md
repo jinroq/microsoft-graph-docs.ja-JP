@@ -14,13 +14,13 @@ PATCH /planner/buckets/<id>
 ### <a name="optional-request-headers"></a>オプションの要求ヘッダー
 | 名前       | 説明|
 |:-----------|:-----------|
-| Authorization  | ベアラー <code>|
+| Authorization  | ベアラー {トークン}。必須。 |
 | If-Match  | 更新する **plannerBucket** の最後の既知の ETag 値。必須。|
 
 ### <a name="request-body"></a>要求本文
 要求本文で、更新する関連フィールドの値を指定します。要求本文に含まれない既存のプロパティは、以前の値のままになるか、他のプロパティ値の変化に基づいて再計算されます。最適なパフォーマンスを得るためには、変更されていない既存の値を含めないでください。
 
-| プロパティ       | 型    |説明|
+| プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
 |name|String|バケットの名前。|
 |orderHint|String|リスト ビューでこの種類の項目の順序付けに使用するヒント。形式は[ここ](../resources/planner_order_hint_format.md)の説明に従って定義されます。|

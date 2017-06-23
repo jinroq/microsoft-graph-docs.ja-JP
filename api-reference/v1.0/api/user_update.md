@@ -3,7 +3,7 @@
 
 ユーザー オブジェクトのプロパティを更新します。
 ## <a name="prerequisites"></a>前提条件
-この API を実行するには、以下のいずれかの**スコープ**が必要です。*User.ReadWrite; User.ReadWrite.All; Directory.ReadWrite.All*
+この API を実行するには、以下のいずれかの**スコープ**が必要です。*User.ReadWrite、User.ReadWrite.All、Directory.ReadWrite.All*
 
 passwordProfile プロパティを更新するときは、次のスコープが必要です。*Directory.AccessAsUser.All*
 
@@ -15,13 +15,13 @@ PATCH /users/{id | userPrincipalName}
 ## <a name="request-headers"></a>要求ヘッダー
 | ヘッダー       | 値|
 |:-----------|:------|
-| Authorization  | Bearer <token>. Required.  |
+| Authorization  | ベアラー {トークン}。必須。  |
 | Content-Type  | application/json  |
 
 ## <a name="request-body"></a>要求本文
 要求本文で、更新する関連フィールドの値を指定します。要求本文に含まれない既存のプロパティは、以前の値のままになるか、他のプロパティ値の変化に基づいて再計算されます。最適なパフォーマンスを得るためには、変更されていない既存の値を含めないでください。
 
-| プロパティ       | 型    |説明|
+| プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
 |aboutMe|String|ユーザーが自分自身について記述する、フリー フォームのテキスト入力フィールド。|
 |accountEnabled|Boolean| アカウントが有効な場合は **true**。そうでない場合は **false**。このプロパティは、ユーザーの作成時に必要です。$filter をサポートします。    |

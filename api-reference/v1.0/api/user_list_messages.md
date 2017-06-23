@@ -29,7 +29,7 @@ GET /users/{id | userPrincipalName}/mailFolders/{id}/messages
 ## <a name="request-headers"></a>要求ヘッダー
 | ヘッダー       | 値 |
 |:---------------|:--------|
-| Authorization  | Bearer <token>. Required.  |
+| Authorization  | ベアラー {トークン}。必須。  |
  
 
 ## <a name="request-body"></a>要求本文

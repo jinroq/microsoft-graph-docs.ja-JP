@@ -17,13 +17,13 @@ POST /workbook/tables/{id|name}/columns/{id|name}/range/sort/apply
 ## <a name="request-headers"></a>要求ヘッダー
 | 名前       | 説明|
 |:---------------|:----------|
-| Authorization  | Bearer {code}|
+| Authorization  | ベアラー {トークン}。必須。 |
 
 
 ## <a name="request-body"></a>要求本文
 要求本文で、次のパラメーターを含む JSON オブジェクトを指定します。
 
-| パラメーター       | 型    |説明|
+| パラメーター    | 型   |説明|
 |:---------------|:--------|:----------|
 |fields|SortField|並べ替えに使用する条件の一覧。|
 |matchCase|boolean|省略可能。大文字小文字の区別が文字列の順序に影響を与えるかどうか。|

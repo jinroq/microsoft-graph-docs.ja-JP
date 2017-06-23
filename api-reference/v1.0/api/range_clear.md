@@ -17,13 +17,13 @@ GET /workbook/tables/{id|name}/columns/{id|name}/range/clear
 ## <a name="request-headers"></a>要求ヘッダー
 | 名前       | 説明|
 |:---------------|:----------|
-| Authorization  | Bearer {code}|
+| Authorization  | ベアラー {トークン}。必須。 |
 
 
 ## <a name="request-body"></a>要求本文
 要求本文で、次のパラメーターを含む JSON オブジェクトを指定します。
 
-| パラメーター       | 型    |説明|
+| パラメーター    | 型   |説明|
 |:---------------|:--------|:----------|
 |applyTo|string|省略可能。クリア操作の種類を決定します。可能な値は、`All`、`Formats`、`Contents` です。|
 
