@@ -153,7 +153,7 @@ git checkout X2
 分岐を削除するには、次の手順を実行します。
 
 1. GitBash で、コマンド プロンプトに `git checkout master` を入力します。これにより、削除される分岐にいないことが保証されます (削除される分岐にいることは許可されません)。
-2. 次に、コマンド プロンプトで `git branch -d <branch name>` と入力します。これにより、アップストリーム リポジトリに正常にマージ済みの場合にのみ、ローカル コンピューター上の分岐が削除されます。(この動作は `�D` フラグでオーバーライドすることができますが、最初にその必要があるかどうかを確かめてください。)
+2. 次に、コマンド プロンプトで `git branch -d <branch name>` と入力します。これにより、アップストリーム リポジトリに正常にマージ済みの場合にのみ、ローカル コンピューター上の分岐が削除されます。(この動作は `D` フラグでオーバーライドすることができますが、最初にその必要があるかどうかを確かめてください。)
 3. 最後に、コマンド プロンプトで `git push origin :<branch name>` (コロンの前にはスペースを 1 つ入れ、後にはスペースを入れません) と入力します。これにより、GitHub フォーク上の分岐が削除されます。
 
 これで、プロジェクトに正しく投稿できました。
@@ -213,3 +213,5 @@ The image below is from [Google][googleweb]
 [Markdown ホーム]: http://daringfireball.net/projects/markdown/
 [Markdown Pad]: http://markdownpad.com/
 [microsoftgraph/microsoft-graph-docs issues]: https://github.com/microsoftgraph/microsoft-graph-docs/issues
+
+このプロジェクトでは、[Microsoft Open Source Code of Conduct](https://opensource.microsoft.com/codeofconduct/) が採用されています。詳細については、「[規範に関する FAQ](https://opensource.microsoft.com/codeofconduct/faq/)」を参照してください。または、その他の質問やコメントがあれば、[opencode@microsoft.com](mailto:opencode@microsoft.com) までにお問い合わせください。
