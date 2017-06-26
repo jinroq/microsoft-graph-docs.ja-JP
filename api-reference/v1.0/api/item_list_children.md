@@ -8,8 +8,12 @@ NULL でない **folder** または **package** ファセットがある DriveIt
 ## <a name="prerequisites"></a>前提条件
 この API を実行するには、以下のいずれかの**スコープ**が必要です。
 
-  * Files.Read
-  * Files.ReadWrite
+* Files.Read
+* Files.ReadWrite
+* Files.Read.All
+* Files.ReadWrite.All
+* Sites.Read.All
+* Sites.ReadWrite.All
 
 ## <a name="http-request"></a>HTTP 要求
 ```http
