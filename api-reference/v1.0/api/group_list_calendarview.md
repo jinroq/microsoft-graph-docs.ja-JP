@@ -22,7 +22,7 @@ GET /groups/{id}/calendarView?startDateTime={start_datetime}&endDateTime={end_da
 | ヘッダー       | 値 |
 |:---------------|:--------|
 | Authorization  | ベアラー {トークン}。必須。  |
-| 優先 | string | <Time zone>。省略可能。指定しない場合、UTC が使用されます。|
+| Prefer | string | outlook.timezone="Eastern 標準時"です。省略可能。これを使用して、応答内の開始および終了時刻のタイム ゾーンを指定します。指定されていない場合、応答は UTC で返されます。 |
 
 ## <a name="request-body"></a>要求本文
 このメソッドには、要求本文を指定しません。

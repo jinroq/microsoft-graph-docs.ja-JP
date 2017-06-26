@@ -1,20 +1,25 @@
 # <a name="update-group"></a>グループを更新する
 
 グループ オブジェクトのプロパティを更新します。
+
 ## <a name="prerequisites"></a>前提条件
 この API を実行するには、以下の**スコープ**が必要です。*Group.ReadWrite.All*
 
 ## <a name="http-request"></a>HTTP 要求
+
 <!-- { "blockType": "ignored" } -->
 ```http
 PATCH /groups/{id}
 ```
+
 ## <a name="request-headers"></a>要求ヘッダー
+
 | 名前       | 型 | 説明|
 |:-----------|:------|:----------|
 | Authorization  | string  | ベアラー {トークン}。必須。 |
 
 ## <a name="request-body"></a>要求本文
+
 要求本文で、更新する関連フィールドの値を指定します。要求本文に含まれない既存のプロパティは、以前の値のままになるか、他のプロパティ値の変化に基づいて再計算されます。最適なパフォーマンスを得るためには、変更されていない既存の値を含めないでください。
 
 | プロパティ     | 型   |説明|
@@ -28,18 +33,18 @@ PATCH /groups/{id}
 |securityEnabled|Boolean|グループがセキュリティ グループであるかどうかを指定します。**mailEnabled** プロパティも true の場合、グループはメールが有効なセキュリティ グループになります。それ以外の場合は、セキュリティ グループになります。Office 365 グループの場合、**false** にする必要があります。$filter をサポートします。|
 |visibility|Boolean|Office 365 グループの表示を指定します。使用可能な値は次のとおりです。**Private**、**Public**、または空 (**Public** として解釈されます)。|
 
-
-
 **注**
 
 - **autoSubscribeNewMembers** は、独自の PATCH 要求で指定することによって更新できます。上の表にある他のプロパティは含めません。
 - コア グループの管理とマネージメントに関するグループ API のサブセットのみが、アプリケーションのアクセス許可と委任されたアクセス許可をサポートします。**autoSubscribeNewMembers** の更新を含む他のすべてのグループ API のメンバーは、委任されたアクセス許可のみをサポートします。例については、「[既知の問題](https://developer.microsoft.com/en-us/graph/docs/overview/release_notes#group-permission-scopes)」を参照してください。
 
 ## <a name="response"></a>応答
-成功した場合、このメソッドは `200 OK` 応答コードと、応答本文で、更新された [グループ](../resources/group.md) オブジェクトを返します。
+成功した場合、このメソッドは `204 No Content` 応答コードを返します。
+
 ## <a name="example"></a>例
+
 ##### <a name="request"></a>要求
-以下は、要求の例です。
+
 <!-- {
   "blockType": "request",
   "name": "update_group"
@@ -60,28 +65,16 @@ Content-length: 211
   "mailNickname": "mailNickname-value"
 }
 ```
+
 ##### <a name="response"></a>応答
-以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。
+
 <!-- {
   "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.group"
 } -->
 ```http
-HTTP/1.1 200 OK
-Content-type: application/json
-Content-length: 211
-
-{
-  "description": "description-value",
-  "displayName": "displayName-value",
-  "groupTypes": [
-    "groupTypes-value"
-  ],
-  "mail": "mail-value",
-  "mailEnabled": true,
-  "mailNickname": "mailNickname-value"
-}
+HTTP/1.1 204 No Content
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

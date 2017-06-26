@@ -2,8 +2,7 @@
 
 ユーザーをデバイスの登録済み所有者として追加します。
 ## <a name="prerequisites"></a>前提条件
-この API を実行するには、以下のいずれかの**スコープ**が必要です。  
-*Directory.ReadWrite.All* または *Directory.AccessAsUser.All*
+この API を実行するには、以下のいずれかの**スコープ**が必要です。*Directory.ReadWrite.All* または *Directory.AccessAsUser.All*
 
 ## <a name="http-request"></a>HTTP 要求
 <!-- { "blockType": "ignored" } -->

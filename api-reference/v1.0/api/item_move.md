@@ -7,7 +7,10 @@ DriveItem を新しい親アイテムに移動する場合は、移動する Dri
 ## <a name="prerequisites"></a>前提条件
 この API を実行するには、以下のいずれかの**スコープ**が必要です。
 
-  * Files.ReadWrite
+* Files.ReadWrite
+* Files.ReadWrite.All
+* Sites.ReadWrite.All
+
 
 ## <a name="http-request"></a>HTTP 要求
 

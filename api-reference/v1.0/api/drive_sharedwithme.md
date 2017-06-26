@@ -5,8 +5,11 @@
 ## <a name="prerequisites"></a>前提条件
 この API を実行するには、以下のいずれかの**スコープ**が必要です。
 
-  * Files.Read.All
-  * Files.ReadWrite.All
+* Files.Read.All
+* Files.ReadWrite.All
+* Sites.Read.All
+* Sites.ReadWrite.All
+
 
 **注:** Files.Read または Files.ReadWrite の範囲での /sharedWithMe 要求は成功しますが、いくつかのプロパティが失われている可能性があります。さらに、**すべて**の範囲のうちの一つがなければ、この API から返された共有項目はアクセスできません。
 
