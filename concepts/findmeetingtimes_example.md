@@ -9,7 +9,7 @@ Office 365 では、勤務時間とタイム ゾーンをメールボックス�
 Prefer: outlook.timezone="{time-zone-string}}"
 ```
 
-大規模な会議で特に便利な機能として、クォーラムのパーセンテージ (**minimumAttendeePercentage**) を指定して、最低限の出席者の空き時間を満たす場合にのみ、**findMeetingTimes** が提案を返すようにできます。
+大規模な会議で特に便利な機能として、定足数のパーセンテージ (**minimumAttendeePercentage**) を指定して、最低限の出席者の空き時間を満たす場合にのみ、**findMeetingTimes** が提案を返すようにできます。
 
 **findMeetingTimes** が会議日時をまったく提案できない場合は、開催者や必須出席者が出席できないなどの特定の理由 (**emptySuggestionsReason**) を示します。この値に基づいて、パラメーターをさらに調整して、**findMeetingTimes** をもう一度呼び出すことができます。
 
@@ -30,7 +30,7 @@ Prefer: outlook.timezone="{time-zone-string}}"
 この例では、**findMeetingTimes** の呼び出しを 2 回行います。
 
 1. 最初の呼び出しは、4 月 18 日から 20 日の日付の範囲を検索します。出席者が 4 月 18 日から 19 日は不在であり、4 月 20 日には共通の空き時間がないため、最初の呼び出しは提案を返しません (理由 (**emptySuggestionsReason**): 出席者が参加できない)。
-2. 2 番目の呼び出しは、4 月 21 日の空き時間を検索し、午後 2 時から-4 時の提案を返します。
+2. 2 番目の呼び出しは、4 月 21 日の空き時間を検索し、午後 2 時から 4 時の提案を返します。
 
 **findMeetingTimes** への 2 回の呼び出しには、次のパラメーターが含まれます。**findMeetingTimes** のすべての[パラメーター](../api-reference/v1.0/api/user_findmeetingtimes.md#request-body)は省略可能です。
 
@@ -39,7 +39,7 @@ Prefer: outlook.timezone="{time-zone-string}}"
 - **timeConstraint**: 最初の呼び出しは、4 月 18 日午前 9 時から 4 月 20 日午後 5 時までの日付/時間範囲を検索します。最初の呼び出しが日時を提案することに失敗した後、2 番目の呼び出しは 4 月 21 日の午前 9 時から午後 5 時で検索します。
 - **meetingDuration**: 2 時間
 - **returnSuggestionReasons**: この例では、各提案に対する理由が必要です
-- **minimumAttendeePercentage**:100％ (出席者が提案された時間に出席できる必要があるため)
+- **minimumAttendeePercentage**:100% (出席者が提案された時間に出席できる必要があるため)
 
 ### <a name="first-request"></a>最初の要求
 
@@ -171,7 +171,7 @@ Content-type: application/json
 ```
 
 ### <a name="second-response"></a>2 番目の応答のサンプル
-2 番目の **findMeetingTimes** 要求は、両方のユーザーが会合するために 4 月 21 日午後 2 から 4 時を提案します。
+2 番目の **findMeetingTimes** 要求は、両方のユーザーが会合するために 4 月 21 日午後 2 時から 4 時を提案します。
 <!-- {
   "blockType": "response",
   "truncated": true,

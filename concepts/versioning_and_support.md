@@ -4,9 +4,9 @@
 
 ## <a name="support-policy-and-deprecation-information"></a>サポート ポリシーと廃止の情報
 
-Microsoft Graph は[マイクロソフト ライフ サイクル ポリシー](https://support.microsoft.com/en-us/lifecycle)に従います。 
+Microsoft Graph は [Microsoft ライフ サイクル ポリシー](https://support.microsoft.com/en-us/lifecycle)に従います。 
 
-Microsoft Graph REST API と Microsoft Graph SDK の新しいバージョンがリリースされると、それ以前のバージョンは廃止されます。マイクロソフトは API または SDK が廃止される少なくとも 24 か月前までにかかるバージョンを非推奨に指定します。 
+Microsoft Graph REST API と Microsoft Graph SDK の新しいバージョンがリリースされると、それ以前のバージョンは廃止されます。Microsoft は API または SDK が廃止される少なくとも 24 か月前までにそれ以前のバージョンを非推奨に指定します。 
 
 API のメジャー バージョンを新しくする場合 (たとえば、v1.0 から v2.0 へ)、現在のバージョン (この例では v1.0) が即時に非推奨になり、この発表から 24 か月後以降、サポートが打ち切られます。API が非推奨と指定された場合、悪影響を避けるため、できるだけ早く最新バージョンへ移行することを強くお勧めします。サービスのセキュリティと信頼性向上のためにこのポリシーを変更することがあります。 
 
@@ -41,7 +41,7 @@ Microsoft Graph にはバージョン更新の変更履歴があります。バ�
 ### <a name="beta-version"></a>ベータ版
 Microsoft Graph API ベータ版は `https://graph.microsoft.com/beta` で公開されており、現在プレビュー段階の機能が含まれています。ベータ版 API のドキュメントは「[Microsoft Graph ベータ エンドポイント リファレンス](../api-reference/beta/beta-overview.md)」を参照してください。ベータ版には随時重大な変更が発生することがあります。本番環境が /beta API に依存することのないようにしてください。
 
-ベータ版の機能が現行バージョンに採用される保証はありません。Microsoft Graph API チームの判断でベータ版の機能が一般提供 (GA) に十分なものとなったとき、かかる機能が最新バージョンに追加されます。機能の採用が現行バージョンに重大な変更を招く場合は、バージョン番号が更新され、新規バージョンが現行バージョンに変わります。開発者コミュニティは、新機能、ベータ版機能の現行バージョンでの採用を含む機能の要求を [UserVoice](https://officespdev.uservoice.com/) に投稿できます。 
+ベータ版の機能が現行バージョンに採用される保証はありません。Microsoft Graph API チームの判断でベータ版の機能が一般提供 (GA) に十分なものとなったとき、その機能が最新バージョンに追加されます。機能の採用が現行バージョンに重大な変更を招く場合は、バージョン番号が更新され、新規バージョンが現行バージョンに変わります。開発者コミュニティは、新機能や既存のベータ版 API 機能の現行バージョンでの採用希望などの機能の要望を [UserVoice](https://officespdev.uservoice.com/) に投稿できます。 
 
 ### <a name="current-version"></a>現在のバージョン
 
@@ -53,6 +53,6 @@ Microsoft Graph の現在のバージョンは、v1.0 です。Microsoft Graph A
 
 ## <a name="terms-of-use"></a>利用規約
 
-Microsoft Graph API を使用により、お客様は [利用規約](https://msdn.microsoft.com/en-us/cc300389) に同意したこととなります。 
+Microsoft Graph API を使用すると、お客様は [利用規約](https://msdn.microsoft.com/en-us/cc300389) に同意したこととなります。 
 
 お客様からのフィードバックを重視しています。[スタック オーバーフロー](https://stackoverflow.com/questions/tagged/microsoftgraph?sort=newest)でご連絡いただけます。ご質問には {MicrosoftGraph} のタグを付けてください。
