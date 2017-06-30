@@ -8,7 +8,10 @@
 
 * Files.Read
 * Files.ReadWrite
+* Files.Read.All
+* Files.ReadWrite.All
 * Sites.Read.All
+* Sites.ReadWrite.All
 
 ## <a name="get-a-users-onedrive"></a>ユーザーの OneDrive を取得する
 

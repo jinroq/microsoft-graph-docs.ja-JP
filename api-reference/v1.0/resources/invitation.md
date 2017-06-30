@@ -18,7 +18,7 @@
 |[招待状の作成](../api/invitation_post.md) | invitation | 招待状オブジェクトのプロパティと関係を書き込みます。|
 
 ### <a name="properties"></a>プロパティ
-| プロパティ       | 型    |説明|
+| プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
 |invitedUserDisplayName|String|招待されるユーザーの表示名。|
 |invitedUserEmailAddress|String|招待されるユーザーのメール アドレス。必須。|
@@ -27,10 +27,10 @@
 |inviteRedirectUrl|String|招待状が引き換えられるとにユーザーがリダイレクトされる URL。必須。|
 |inviteRedeemUrl|String|ユーザーが招待状の引き換えに使用できる URL。読み取り専用|
 |invitedUserType|String|招待されるユーザーの userType。既定では Guest です。会社の管理者は、Member として招待できます。 |
-|status|String|招待の状態。可能な値:Completed、InProgress、および Error|
+|status|String|招待の状態。可能な値:PendingAcceptance、Completed、InProgress、および Error|
 
 ### <a name="relationships"></a>リレーションシップ
-| リレーションシップ | 型    |説明|
+| リレーションシップ | 型   |説明|
 |:---------------|:--------|:----------|
 |invitedUser|[User](user.md)|招待状作成の一環として作成されたユーザー。読み取り専用|
 

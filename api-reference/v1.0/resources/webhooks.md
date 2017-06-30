@@ -80,9 +80,9 @@ Content-Type: application/json
 }
 ```
 
-changeType、notificationUrl、resource、および expirationDateTime の各プロパティは必須です。プロパティの定義と値については、「[サブスクリプション リソースの種類](subscription.md)」をご覧ください。clientState は必須ではありませんが、推奨される通知の処理プロセスに準拠するためには含める必要があります。
+プロパティの `changeType`、`notificationUrl`、`resource`、および `expirationDateTime` は必須です。プロパティの定義と値については、「[サブスクリプション リソースの種類](subscription.md)」をご覧ください。`clientState` は必須ではありませんが、推奨される通知の処理プロセスに準拠するには含める必要があります。
 
-処理が正常に終了すると、Microsoft Graph は `200 OK` コードおよび本文内に [サブスクリプション](subscription.md) オブジェクトを返します。
+処理が正常に終了すると、Microsoft Graph は `201 Created` コードおよび本文内に [サブスクリプション](subscription.md) オブジェクトを返します。
 
 # <a name="renewing-a-subscription"></a>サブスクリプションの更新
 
@@ -118,8 +118,8 @@ DELETE https://graph.microsoft.com/v1.0/subscriptions/{id}
 
 通知オブジェクトには、次のプロパティがあります。
 
-* id - この通知が属するサブスクリプションの ID。
-* expirationDateTime - サブスクリプションの有効期限が切れるとき。
+* subscriptionId - この通知が属するサブスクリプションの ID。
+* subscriptionExpirationDateTime - サブスクリプションの有効期限が切れる日時。
 * clientState - サブスクリプション要求で指定された clientState プロパティ。
 * changeType - 通知の原因となったイベントの種類。たとえば、メール受信時は *created*、メッセージの既読マークが付いたときに *updated* などです。
 * resource - `https://graph.microsoft.com` に関連したリソースの URI。 
@@ -127,7 +127,7 @@ DELETE https://graph.microsoft.com/v1.0/subscriptions/{id}
   * @odata.type - 表しているオブジェクトを記述する、Microsoft Graph の OData エンティティ タイプ。
   * @odata.id - オブジェクトの OData 識別子。
   * @odata.etag - オブジェクトのバージョンを表す HTTP エンティティ タグ。
-  * Id - オブジェクトの識別子。
+  * id - オブジェクトの識別子。
 
 
 > 注:resourceData で指定される Id の値は、通知がキューに置かれたときに有効です。メッセージを別のフォルダーに移動するなどの一部のアクションでは、リソースの Id が変更される可能性があります。 
@@ -140,8 +140,8 @@ DELETE https://graph.microsoft.com/v1.0/subscriptions/{id}
 {
   "value":[
   {
-    "id":"<subscription_guid>",
-    "expirationDateTime":"\"2016-03-19T22:11:09.952Z\"",
+    "subscriptionId":"<subscription_guid>",
+    "subscriptionExpirationDateTime":"2016-03-19T22:11:09.952Z",
     "clientState":"SecretClientState",
     "changeType":"Created",
     "resource":"Users/{user_guid}@<tenant_guid>/Messages/{long_id_string}",
@@ -150,7 +150,7 @@ DELETE https://graph.microsoft.com/v1.0/subscriptions/{id}
       "@odata.type":"#Microsoft.Graph.Message",
       "@odata.id":"Users/{user_guid}@<tenant_guid>/Messages/{long_id_string}",
       "@odata.etag":"W/\"CQAAABYAAADkrWGo7bouTKlsgTZMr9KwAAAUWRHf\"",
-      "Id":"<long_id_string>"
+      "id":"<long_id_string>"
     }
   }
   ]

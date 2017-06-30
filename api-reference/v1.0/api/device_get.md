@@ -2,7 +2,7 @@
 
 デバイス オブジェクトのプロパティと関係を取得します。
 ## <a name="prerequisites"></a>前提条件
-この API を実行するには、以下のいずれかの**スコープ**が必要です。*Directory.Read.All* または *Directory.ReadWrite.All* または *Directory.AccessAsUser.All* または *Device.ReadWrite.All*
+この API を実行するには、次のいずれかの**スコープ**が必要です。*Device.ReadWrite.All* または *Directory.Read.All* または *Directory.ReadWrite.All* または *Directory.AccessAsUser.All*
 
 ## <a name="http-request"></a>HTTP 要求
 <!-- { "blockType": "ignored" } -->

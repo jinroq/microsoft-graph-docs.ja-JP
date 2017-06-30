@@ -10,7 +10,11 @@
 ## <a name="prerequisites"></a>前提条件
 この API を実行するには、以下のいずれかの**スコープ**が必要です。
 
-  * Files.ReadWrite
+* Files.ReadWrite
+* Files.ReadWrite.All
+* Sites.ReadWrite.All
+
+> **注**:この API では、Files.ReadWrite.All のアプリケーション アクセス許可は、まだサポートされていません。近日中のフルサポートが予定されています。 
 
 ## <a name="create-an-upload-session"></a>アップロード セッションを作成する
 
