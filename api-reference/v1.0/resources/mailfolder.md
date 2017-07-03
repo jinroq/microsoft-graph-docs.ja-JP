@@ -25,7 +25,7 @@
 
 
 ## <a name="properties"></a>プロパティ
-| プロパティ       | 型    |説明|
+| プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
 |childFolderCount|Int32|現在の mailFolder の直下の子 mailFolder の数。|
 |displayName|String|mailFolder の表示名。|
@@ -44,7 +44,7 @@ Outlook 内の MailFolder には、複数の種類のアイテムを含めるこ
 
 
 ## <a name="relationships"></a>リレーションシップ
-| リレーションシップ | 型    |説明|
+| リレーションシップ | 型   |説明|
 |:---------------|:--------|:----------|
 |childFolders|[MailFolder](mailfolder.md) コレクション|mailFolder 内の子フォルダーのコレクション。|
 |messages|[Message](message.md) コレクション|mailFolder 内のメッセージのコレクション。|
@@ -75,7 +75,12 @@ Outlook 内の MailFolder には、複数の種類のアイテムを含めるこ
   "id": "string (identifier)",
   "parentFolderId": "string",
   "totalItemCount": 1024,
-  "unreadItemCount": 1024
+  "unreadItemCount": 1024,
+
+  "childFolders": [ { "@odata.type": "microsoft.graph.mailFolder" } ],
+  "messages": [ { "@odata.type": "microsoft.graph.message" } ],
+  "multiValueExtendedProperties": [ { "@odata.type": "microsoft.graph.multiValueLegacyExtendedProperty" }],
+  "singleValueExtendedProperties": [ { "@odata.type": "microsoft.graph.singleValueLegacyExtendedProperty" }]
 }
 
 ```
@@ -83,7 +88,7 @@ Outlook 内の MailFolder には、複数の種類のアイテムを含めるこ
 ## <a name="see-also"></a>関連項目
 
 - [デルタ クエリを使用して、Microsoft Graph データの変更を追跡する](../../../concepts/delta_query_overview.md)
-- [フォルダー内のメッセージへの増分変更を取得する](../../../concepts/delta_query_messages.md)
+- [フォルダー内のメッセージへの増分の変更を取得する](../../../concepts/delta_query_messages.md)
 
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

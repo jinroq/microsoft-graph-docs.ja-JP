@@ -39,7 +39,7 @@
 
 
 ## <a name="properties"></a>プロパティ
-| プロパティ       | 型    |説明|
+| プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
 |attendees|[attendee](attendee.md) コレクション|イベントの出席者のコレクション。|
 |body|[itemBody](itembody.md)|イベントに関連付けられたメッセージの本文。HTML 形式またはテキスト形式にできます。|
@@ -76,7 +76,7 @@
 |webLink|String|Outlook Web App でイベントを開く URL。<br/><br/>Outlook Web App のメールボックスにログインしている場合、ブラウザーでイベントが開きます。まだブラウザーでログインしていない場合、ログインするように求められます。<br/><br/>この URL には、iFrame 内からアクセスできます。|
 
 ## <a name="relationships"></a>リレーションシップ
-| リレーションシップ | 型    |説明|
+| リレーションシップ | 型   |説明|
 |:---------------|:--------|:----------|
 |attachments|[attachment](attachment.md) コレクション|イベントの [fileAttachment](fileAttachment.md) 添付ファイルと [itemAttachment](itemAttachment.md) 添付ファイルのコレクション。ナビゲーション プロパティ。読み取り専用。Null 許容型。|
 |予定表|[calendar](calendar.md)|イベントを含む予定表。ナビゲーション プロパティ。読み取り専用。|
@@ -142,7 +142,10 @@
 
   "attachments": [ { "@odata.type": "microsoft.graph.attachment" } ],
   "calendar": { "@odata.type": "microsoft.graph.calendar" },
-  "instances": [ { "@odata.type": "microsoft.graph.event" }]
+  "extensions": [ { "@odata.type": "microsoft.graph.extension" } ],
+  "instances": [ { "@odata.type": "microsoft.graph.event" }],
+  "multiValueExtendedProperties": [ { "@odata.type": "microsoft.graph.multiValueLegacyExtendedProperty" }],
+  "singleValueExtendedProperties": [ { "@odata.type": "microsoft.graph.singleValueLegacyExtendedProperty" }]
 
 }
 
