@@ -10,9 +10,11 @@
 ## <a name="prerequisites"></a>前提条件
 この API を実行するには、以下のいずれかの**スコープ**が必要です。
 
-- サインイン **ユーザー** - *User.ReadWrite* のプロファイル写真
-- **グループ** - *Group.ReadWrite.All* のプロファイル写真
-- **連絡先** - *Contacts.ReadWrite* の写真
+- サインインしている**ユーザー**のプロファイル写真 - *User.ReadWrite*、*User.ReadWrite.All*
+- **グループ**のプロファイル写真 - *Group.ReadWrite.All*
+- **連絡先**の写真 - *Contacts.ReadWrite*
+
+> **注** 組織内のユーザーの写真を更新するには、アプリにはアプリケーションのアクセス許可 User.ReadWrite.All が必要で、ユーザーの代わりではなく、それ自身の ID でこの API を呼び出す必要があります。詳細については、「[ユーザーなしでアクセスを取得する](../../../concepts/auth_v2_service.md)」を参照してください。
 
 ## <a name="http-request-to-update-the-photo"></a>写真を更新するための HTTP 要求
 <!-- { "blockType": "ignored" } -->

@@ -83,8 +83,9 @@ Microsoft Graph API に関する既知の問題の詳細については、「[Mi
 |**変更の種類**|**バージョン**|**説明**|
 |:--------------|:-----------|:-------------|
 |追加|ベータ版|プロジェクト ローマのサポートを追加しました。これには、[デバイスのリストの取得](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/user_list_devices)、[デバイスへのコマンドの送信](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/send_device_command)、および[コマンドのステータスの確認](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/get_device_command_status)が含まれます。|
+|追加|ベータ版|ユーザーの [activities](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/projectrome_activity) と [historyItems](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/projectrome_historyitem) のサポートが追加され、これには[アクティビティの upsert](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/projectrome_put_activity) と[履歴項目の upsert](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/projectrome_put_historyitem) が含まれます。|
 
-### <a name="administrative-units-property-changes"></a>管理単位のプロパティ変更
+### <a name="administrative-units-property-changes"></a>管理単位のプロパティの変更
 
 |**変更の種類**|**バージョン**|**説明**|
 |:--------------|:-----------|:--------------|

@@ -1,9 +1,9 @@
 # <a name="get-access-on-behalf-of-a-user"></a>ユーザーの代わりにアクセスを取得する
-Microsoft Graph を使用してユーザーの代理としてリソースを読み取り/書き込みするには、Azure AD からアクセス トークンを取得し、Microsoft Graph に送信する要求にトークンを添付する必要があります。アクセス トークンの取得に使用する正確な認証フローは、開発しているアプリの種類と、OpenID Connect を使用してユーザーがアプリにサインインするかどうかによって異なります。ネイティブ アプリ、モバイル アプリ、および一部の Web アプリで使用される一般的なフローの 1 つに、OAuth 2.0 認証コード付与フローがあります。このトピックでは、このフローを使用した例について説明します。 
+Microsoft Graph を使用してユーザーの代理としてリソースを読み取り/書き込みするには、Azure AD からアクセス トークンを取得し、Microsoft Graph に送信する要求にトークンを添付する必要があります。アクセス トークンの取得に使用する認証フローは、開発しているアプリの種類と、OpenID Connect を使用してユーザーがアプリにサインインするかどうかによって異なります。ネイティブ アプリ、モバイル アプリ、一部の Web アプリで使用される一般的なフローの 1 つに、OAuth 2.0 認証コードの付与フローがあります。このトピックでは、このフローの使用例について説明します。 
 
 ## <a name="authentication-and-authorization-steps"></a>認証および承認の手順
 
-Azure AD v2.0 エンドポイントからアクセス トークンを取得するために OAuth 2.0 認証コード付与フローを使用するために必要な、基本手順は次のとおりです。
+Azure AD v2.0 エンドポイントからアクセス トークンを取得するために OAuth 2.0 認証コードの付与フローを使用する際に必要な基本手順は次のとおりです。
 
 1. Azure AD にアプリを登録する。 
 2. 承認を取得する。 
@@ -14,9 +14,9 @@ Azure AD v2.0 エンドポイントからアクセス トークンを取得す�
 ## <a name="1-register-your-app"></a>1.アプリを登録する
 Azure v2.0 エンドポイントを使用するには、[Microsoft アプリ登録ポータル](https://apps.dev.microsoft.com/)でアプリを登録する必要があります。アプリを登録するには、Microsoft アカウントのほか、職場または学校のアカウントを使用できます。 
 
-次のスクリーンショットは、Web アプリの登録例を示しています。![パスワードと暗黙的許可による web アプリの登録。](./images/v2-web-registration.png)
+次のスクリーンショットは、Web アプリの登録例を示しています。![パスワードと暗黙的許可による Web アプリの登録。](./images/v2-web-registration.png)
 
-OAuth 2.0 認証コード付与フローを使用するようにアプリを構成するには、アプリの登録時に次の値を保存する必要があります。
+OAuth 2.0 認証コードの付与フローを使用するようにアプリを構成するには、アプリの登録時に次の値を保存する必要があります。
 
 - アプリ登録ポータルによって割り当てられたアプリケーション ID。
 - アプリケーション シークレット。パスワードか、公開鍵/秘密鍵のペア (証明書) のいずれか。ネイティブ アプリの場合、これは必須ではありません。 
@@ -25,7 +25,7 @@ OAuth 2.0 認証コード付与フローを使用するようにアプリを構�
 Microsoft アプリ登録ポータルを使用してアプリを構成する手順については、「[アプリを登録する](./auth_register_app_v2.md)」を参照してください。
 
 ## <a name="2-get-authorization"></a>2.承認を取得する
-多くの OpenID Connect および OAuth 2.0 フローのアクセス トークンを取得するための最初の手順は、ユーザーを Azure AD v2.0 `/authorize` エンドポイントにリダイレクトすることです。Azure AD はユーザーをサインインし、アプリが要求するアクセス許可に同意するようにします。承認コードの許可フローでは、同意が得られた後、Azure AD は authorization_code をアプリに返します。これは、Azure AD v2.0 `/token` エンドポイントでアクセス トークンを交換することができます。
+多くの OpenID Connect および OAuth 2.0 フローのアクセス トークンを取得するための最初の手順は、ユーザーを Azure AD v2.0 `/authorize` エンドポイントにリダイレクトすることです。Azure AD はユーザーをサインインし、アプリの要求するアクセス許可にユーザーが同意していることを確認します。承認コードの付与フローでは、同意が得られた後、Azure AD が authorization_code をアプリに返します。アプリは、このコードを Azure AD v2.0 `/token` エンドポイントでアクセス トークンと引き換えることができます。
 
 ### <a name="authorization-request"></a>承認要求 
 `/authorize` エンドポイントへの要求例を次に示します。 
@@ -45,15 +45,15 @@ client_id=6731de76-14a6-49ae-97bc-6eba6914391e
 ```
 | パラメーター |  | 説明 |
 | --- | --- | --- |
-| tenant |必須 |要求のパスで `{tenant}` 値を使用して、アプリケーションにサインインできるユーザーを制御できます。許可される値は、Microsoft のアカウントと職場または学校のアカウントの両方に `common`、職場または学校のアカウントのみに `organizations`、Microsoft のアカウントのみに `consumers`。また、テナント ID やドメイン名などのテナント識別子が含まれています。詳細については、[プロトコルの基本情報](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-protocols#endpoints)を参照してください。 |
+| tenant |必須出席者 |要求のパスで `{tenant}` 値を使用して、アプリケーションにサインインできるユーザーを制御できます。許可される値は、Microsoft のアカウントと職場または学校のアカウントの両方に `common`、職場または学校のアカウントのみに `organizations`、Microsoft のアカウントのみに `consumers`。また、テナント ID やドメイン名などのテナント識別子が含まれています。詳細については、[プロトコルの基本情報](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-protocols#endpoints)を参照してください。 |
 | client_id |必須 |登録ポータル ([apps.dev.microsoft.com](https://apps.dev.microsoft.com/?referrer=https://azure.microsoft.com/documentation/articles&deeplink=/appList)) でアプリに割り当てられたアプリケーション ID。 |
 | response_type |必須 |認可コードのフローに `code` を含める必要があります。 |
 | redirect_uri |推奨 |アプリの redirect_uri。アプリが認証応答を送受信できる場所。アプリ登録ポータルに登録した redirect_uri のいずれかと正確に一致する必要があります。ただし、URL エンコードされている必要があります。ネイティブとモバイル アプリの場合は、既定値の `https://login.microsoftonline.com/common/oauth2/nativeclient` を使用する必要があります。 |
-| scope |必須 |ユーザーが同意する必要がある Microsoft Graph のアクセス許可のスペースで区切った一覧。これには OpenID スコープも含まれている場合があります。 |
+| スコープ |必須出席者 |ユーザーが同意する必要がある Microsoft Graph のアクセス許可のスペースで区切った一覧。これには OpenID スコープも含まれている場合があります。 |
 | response_mode |推奨 |結果のトークンをアプリに送信するために使用するメソッドを指定します。`query` または `form_post` にできます。 |
 | state |推奨 |トークン応答でも返される要求に含まれている値。任意のコンテンツの文字列にすることができます。ランダムに生成された一意の値は、通常、[クロスサイト リクエスト フォージェリ攻撃を防止する](http://tools.ietf.org/html/rfc6749#section-10.12)ために使用されます。state は、使用していたページまたはビューなど、認証要求が発生する前の、アプリでのユーザーの状態に関する情報をエンコードするためにも使用されます。 |
 
-> **重要**:Microsoft Graph では、次の 2 種類のアクセス許可を公開しています。Application と Delegated です。サインインしたユーザーが実行するアプリの場合は、`scope` パラメーターで Delegated アクセス許可を要求します。これらのアクセス許可は、サインインしたユーザーの権限をアプリに委任し、Microsoft Graph を呼び出し時に、サインインしたユーザーとして動作できるようにします。Microsoft Graph で使用できるアクセス許可の詳細については、「[アクセス許可のリファレンス](./permissions_reference.md)」を参照してください。
+> **重要**:Microsoft Graph では、アプリケーションのアクセス許可と委任されたアクセス許可という 2 種類のアクセス許可を公開しています。サインインしたユーザーが実行するアプリの場合は、`scope` パラメーターで、委任されたアクセス許可を要求します。これらのアクセス許可は、サインインしたユーザーの権限をアプリに委任し、Microsoft Graph を呼び出したときに、サインインしたユーザーとして動作できるようにします。Microsoft Graph で使用できるアクセス許可の詳細については、「[アクセス許可のリファレンス](./permissions_reference.md)」を参照してください。
  
 ### <a name="consent-experience"></a>同意エクスペリエンス
 
@@ -101,10 +101,10 @@ client_id=6731de76-14a6-49ae-97bc-6eba6914391e
 
 | パラメーター |  | 説明 |
 | --- | --- | --- |
-| tenant |必須 |要求のパスで `{tenant}` 値を使用して、アプリケーションにサインインできるユーザーを制御できます。許可される値は、Microsoft のアカウントと職場または学校のアカウントの両方に `common`、職場または学校のアカウントのみに `organizations`、Microsoft のアカウントのみに `consumers`。また、テナント ID やドメイン名などのテナント識別子が含まれています。詳細については、[プロトコルの基本情報](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-protocols#endpoints)を参照してください。 |
+| tenant |必須出席者 |要求のパスで `{tenant}` 値を使用して、アプリケーションにサインインできるユーザーを制御できます。許可される値は、Microsoft のアカウントと職場または学校のアカウントの両方に `common`、職場または学校のアカウントのみに `organizations`、Microsoft のアカウントのみに `consumers`。また、テナント ID やドメイン名などのテナント識別子が含まれています。詳細については、[プロトコルの基本情報](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-protocols#endpoints)を参照してください。 |
 | client_id |必須 |登録ポータル ([apps.dev.microsoft.com](https://apps.dev.microsoft.com/?referrer=https://azure.microsoft.com/documentation/articles&deeplink=/appList)) でアプリに割り当てられたアプリケーション ID。 |
 | grant_type |必須 |認可コードのフローの `authorization_code` になる必要があります。 |
-| scope |必須 |スコープのスペースで区切られた一覧。この区間で要求されたスコープは、最初の (承認) 区間で要求されたスコープと同じか、サブセットである必要があります。この要求で指定されたスコープが複数のリソース サーバーにまたがる場合、v2.0 エンドポイントは最初のスコープで指定されたリソースのトークンを返します。 |
+| scope |必須出席者 |スコープのスペースで区切られた一覧。この区間で要求されたスコープは、最初の (承認) 区間で要求されたスコープと同じか、サブセットである必要があります。この要求で指定されたスコープが複数のリソース サーバーにまたがる場合、v2.0 エンドポイントは最初のスコープで指定されたリソースのトークンを返します。 |
 | code |必須 |フローの最初の区間で取得した authorization_code。 |
 | redirect_uri |必須 |authorization_code の取得に使用されたものと同じ redirect_uri 値。 |
 | client_secret |Web アプリに必須。 |アプリのアプリ登録ポータルで作成したアプリケーション シークレット。client_secrets はデバイスに確実に保存できないため、ネイティブ アプリでは使用しないでください。Web アプリと Web API に必須。これには、サーバー側に client_secret を安全に保存する機能があります。 |
@@ -124,7 +124,7 @@ client_id=6731de76-14a6-49ae-97bc-6eba6914391e
 | パラメーター | 説明 |
 | --- | --- |
 | token_type |トークンの種類の値を示します。Azure AD がサポートしている種類はベアラーのみです。 |
-| scope |access_token が有効な Microsoft Graph のアクセス許可のスペースで区切った一覧。 |
+| スコープ |access_token が有効な Microsoft Graph のアクセス許可のスペースで区切った一覧。 |
 | expires_in |アクセス トークンの有効期間 (秒単位)。 |
 | access_token |要求されたアクセス トークン。アプリはこのトークンを、Microsoft Graph の呼び出しで使用できます。 |
 | refresh_token |OAuth 2.0 の更新トークン。アプリはこのトークンを使用して、現在のアクセス トークンの有効期限が切れた後、追加のアクセス トークンを取得します。更新トークンは有効期限が長く、長期間にわたってリソースへのアクセスを保持するために使用できます。詳細については、「[Azure Active Directory v2.0 トークン リファレンス](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-tokens)」を参照してください。 |
@@ -193,7 +193,7 @@ client_id=6731de76-14a6-49ae-97bc-6eba6914391e
 | --- | --- | --- |
 | client_id |必須 |登録ポータル ([apps.dev.microsoft.com](https://apps.dev.microsoft.com/?referrer=https://azure.microsoft.com/documentation/articles&deeplink=/appList)) でアプリに割り当てられたアプリケーション ID。 |
 | grant_type |必須 |`refresh_token` である必要があります。 |
-| scope |必須 |アクセス許可 (scope) のスペースで区切られた一覧。要求されたアクセス許可は、元の authorization_code 要求で要求されたアクセス許可と同じか、サブセットである必要があります。 |
+| scope |必須出席者 |アクセス許可 (scope) のスペースで区切られた一覧。要求されたアクセス許可は、元の authorization_code 要求で要求されたアクセス許可と同じか、サブセットである必要があります。 |
 | refresh_token |必須 |トークン要求の間に取得した refresh_token。 |
 | redirect_uri |必須 |authorization_code の取得に使用されたものと同じ redirect_uri 値。 |
 | client_secret |Web アプリに必須。 |アプリのアプリ登録ポータルで作成したアプリケーション シークレット。client_secrets はデバイスに確実に保存できないため、ネイティブ アプリでは使用しないでください。Web アプリと Web API に必須。これには、サーバー側に client_secret を安全に保存する機能があります。 |
