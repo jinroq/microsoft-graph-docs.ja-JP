@@ -1,4 +1,5 @@
-# <a name="invitation-manager"></a>招待マネージャー
+<a id="invitation-manager" class="xliff"></a>
+# 招待マネージャー
 
 招待マネージャーを使用して、組織に外部ユーザーを追加するための招待状を作成します。 
 
@@ -12,12 +13,14 @@
 招待状を作成すると、応答で引き換え URL が返されます (*inviteRedeemUrl*)。招待状作成 API では、*sendInvitationMessage* を true に設定することにより、引き換え URL を含むメールが自動的に招待ユーザーに送信されます。招待ユーザーに送信されるメッセージをカスタマイズすることもできます。代わりに、他の手段で引き換え URL を送信したい場合は、*sendInvitationMessage* を false に設定し、応答からの引き換え URL を使用して、独自の通信を作成することもできます。現在、引き換え処理を実行するための API はありません。招待ユーザーは、上記手順の通信で送信された *inviteRedeemUrl* リンクをクリックして、対話型引き換え処理をブラウザーで行う必要があります。完了すると、招待ユーザーは、組織における外部ユーザーになります。
 
 
-### <a name="methods"></a>メソッド
+<a id="methods" class="xliff"></a>
+## メソッド
 | メソッド       | 戻り値の型  |説明|
 |:---------------|:--------|:----------|
 |[招待状の作成](../api/invitation_post.md) | invitation | 招待状オブジェクトのプロパティと関係を書き込みます。|
 
-### <a name="properties"></a>プロパティ
+<a id="properties" class="xliff"></a>
+## プロパティ
 | プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
 |invitedUserDisplayName|String|招待されるユーザーの表示名。|
@@ -29,13 +32,14 @@
 |invitedUserType|String|招待されるユーザーの userType。既定では Guest です。会社の管理者は、Member として招待できます。 |
 |status|String|招待の状態。可能な値:PendingAcceptance、Completed、InProgress、および Error|
 
-### <a name="relationships"></a>リレーションシップ
+<a id="relationships" class="xliff"></a>
+## リレーションシップ
 | リレーションシップ | 型   |説明|
 |:---------------|:--------|:----------|
 |invitedUser|[User](user.md)|招待状作成の一環として作成されたユーザー。読み取り専用|
 
-### <a name="json-representation"></a>JSON 表記
-
+<a id="json-representation" class="xliff"></a>
+## JSON 表記
 以下は、リソースの JSON 表記です
 
 <!-- { "blockType": "resource", "@odata.type": "microsoft.graph.invitations" } -->
