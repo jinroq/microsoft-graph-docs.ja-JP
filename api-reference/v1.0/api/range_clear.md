@@ -1,39 +1,12 @@
-# <a name="range-clear"></a>範囲: クリア
-
-範囲の値、書式、塗りつぶし、罫線などをクリアします。
-## <a name="prerequisites"></a>前提条件
-この API を実行するために必要な**スコープ**は、次のとおりです。 
-
-    * Files.ReadWrite
-
-## <a name="http-request"></a>HTTP 要求
-<!-- { "blockType": "ignored" } -->
-```http
-GET /workbook/names(<name>)/range/clear
-GET /workbook/worksheets/{id|name}/range(<address>)/clear
-GET /workbook/tables/{id|name}/columns/{id|name}/range/clear
-
-```
-## <a name="request-headers"></a>要求ヘッダー
-| 名前       | 説明|
-|:---------------|:----------|
-| Authorization  | ベアラー {トークン}。必須。 |
-
-
-## <a name="request-body"></a>要求本文
-要求本文で、次のパラメーターを含む JSON オブジェクトを指定します。
-
-| パラメーター    | 型   |説明|
-|:---------------|:--------|:----------|
-|applyTo|string|省略可能。クリア操作の種類を決定します。可能な値は、`All`、`Formats`、`Contents` です。|
-
-## <a name="response"></a>応答
+<span data-ttu-id="daad2-p103">成功した場合、このメソッドは `200, OK` 応答コードを返します。応答本文には何も返されません。</span><span class="sxs-lookup"><span data-stu-id="daad2-p103">If successful, this method returns `200, OK` response code. It does not return anything in the response body.</span></span>
 成功した場合、このメソッドは `200, OK` 応答コードを返します。応答本文には何も返されません。
 
-## <a name="example"></a>例
-以下は、この API を呼び出す方法の例です。
-##### <a name="request"></a>要求
-以下は、要求の例です。
+## <span data-ttu-id="daad2-126">例</span><span class="sxs-lookup"><span data-stu-id="daad2-126">Example</span></span>
+<a id="example" class="xliff"></a>
+<span data-ttu-id="daad2-127">以下は、この API を呼び出す方法の例です。</span><span class="sxs-lookup"><span data-stu-id="daad2-127">Here is an example of how to call this API.</span></span>
+##### <span data-ttu-id="daad2-128">要求</span><span class="sxs-lookup"><span data-stu-id="daad2-128">Request</span></span>
+<a id="request" class="xliff"></a>
+<span data-ttu-id="daad2-129">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="daad2-129">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "range_clear"
@@ -48,8 +21,9 @@ Content-length: 32
 }
 ```
 
-##### <a name="response"></a>応答
-以下は、応答の例です。 
+##### <span data-ttu-id="daad2-130">応答</span><span class="sxs-lookup"><span data-stu-id="daad2-130">Response</span></span>
+<a id="response" class="xliff"></a>
+<span data-ttu-id="daad2-131">以下は、応答の例です。</span><span class="sxs-lookup"><span data-stu-id="daad2-131">Here is an example of the response.</span></span> 
 <!-- {
   "blockType": "response",
   "truncated": true,

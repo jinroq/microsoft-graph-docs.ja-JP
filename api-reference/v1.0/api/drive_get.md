@@ -1,23 +1,26 @@
-# <a name="get-drive"></a>ドライブを取得する
+<span data-ttu-id="8597c-p101">[Drive](../resources/drive.md) リソースのプロパティと関係を取得します。ドライブは、ファイル システムの最上位のコンテナーです。Graph API を使用すると、ユーザーの OneDrive または OneDrive for Business や SharePoint ドキュメント ライブラリのドライブ リソースにアクセスできます。</span><span class="sxs-lookup"><span data-stu-id="8597c-p101">Retrieve the properties and relationships of a [Drive](../resources/drive.md) resource. A Drive is the top-level container for a file system. Graph API allows access to the Drive resource for a user's OneDrive or OneDrive for Business, or SharePoint document libraries.</span></span>
 
 [Drive](../resources/drive.md) リソースのプロパティと関係を取得します。ドライブは、ファイル システムの最上位のコンテナーです。Graph API を使用すると、ユーザーの OneDrive または OneDrive for Business や SharePoint ドキュメント ライブラリのドライブ リソースにアクセスできます。
 
-## <a name="prerequisites"></a>前提条件
+## <span data-ttu-id="8597c-105">前提条件</span><span class="sxs-lookup"><span data-stu-id="8597c-105">Prerequisites</span></span>
+<a id="prerequisites" class="xliff"></a>
 
-この API を実行するには、以下のいずれかの**スコープ**が必要です。
+<span data-ttu-id="8597c-106">この API を実行するには、以下のいずれかの**スコープ**が必要です。</span><span class="sxs-lookup"><span data-stu-id="8597c-106">One of the following **scopes** is required to execute this API:</span></span>
 
-* Files.Read
-* Files.ReadWrite
-* Files.Read.All
-* Files.ReadWrite.All
-* Sites.Read.All
-* Sites.ReadWrite.All
+* <span data-ttu-id="8597c-107">Files.Read</span><span class="sxs-lookup"><span data-stu-id="8597c-107">Files.Read</span></span>
+* <span data-ttu-id="8597c-108">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="8597c-108">Files.ReadWrite</span></span>
+* <span data-ttu-id="8597c-109">Files.Read.All</span><span class="sxs-lookup"><span data-stu-id="8597c-109">Files.Read.All</span></span>
+* <span data-ttu-id="8597c-110">Files.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="8597c-110">Files.ReadWrite.All</span></span>
+* <span data-ttu-id="8597c-111">Sites.Read.All</span><span class="sxs-lookup"><span data-stu-id="8597c-111">Sites.Read.All</span></span>
+* <span data-ttu-id="8597c-112">Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="8597c-112">Sites.ReadWrite.All</span></span>
 
-## <a name="get-a-users-onedrive"></a>ユーザーの OneDrive を取得する
+## <span data-ttu-id="8597c-113">ユーザーの OneDrive を取得する</span><span class="sxs-lookup"><span data-stu-id="8597c-113">Get a user's OneDrive</span></span>
+<a id="get-a-users-onedrive" class="xliff"></a>
 
-ユーザーの OneDrive または OneDrive for Business にアクセスするには、[User](../resources/user.md) リソースについての**ドライブ**関係をアプリが要求する必要があります。
+<span data-ttu-id="8597c-114">ユーザーの OneDrive または OneDrive for Business にアクセスするには、[User](../resources/user.md) リソースについての**ドライブ**関係をアプリが要求する必要があります。</span><span class="sxs-lookup"><span data-stu-id="8597c-114">To access a user's OneDrive or OneDrive for Business, your app must request the **drive** relationship on the [User](../resources/user.md) resource.</span></span>
 
-### <a name="http-request"></a>HTTP 要求
+### <span data-ttu-id="8597c-115">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="8597c-115">HTTP request</span></span>
+<a id="http-request" class="xliff"></a>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -26,11 +29,13 @@ GET /me/drive
 GET /users/{idOrUserPrincipalName}/drive
 ```
 
-## <a name="get-the-document-library-associated-with-a-group"></a>グループに関連付けられたドキュメント ライブラリを取得する
+## <span data-ttu-id="8597c-116">グループに関連付けられたドキュメント ライブラリを取得する</span><span class="sxs-lookup"><span data-stu-id="8597c-116">Get the document library associated with a group</span></span>
+<a id="get-the-document-library-associated-with-a-group" class="xliff"></a>
 
-[グループの](../resources/group.md)既定のドキュメント ライブラリにアクセスするには、そのグループについての**ドライブ**関係をアプリが要求する必要があります。
+<span data-ttu-id="8597c-117">[グループの](../resources/group.md)既定のドキュメント ライブラリにアクセスするには、そのグループについての**ドライブ**関係をアプリが要求する必要があります。</span><span class="sxs-lookup"><span data-stu-id="8597c-117">To access a [Group's](../resources/group.md) default document library, your app requests the **drive** relationship on the Group.</span></span>
 
-### <a name="http-request"></a>HTTP 要求
+### <span data-ttu-id="8597c-118">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="8597c-118">HTTP request</span></span>
+<a id="http-request" class="xliff"></a>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -39,23 +44,28 @@ GET /groups/{idOrUserPrincipalName}/drive
 ```
 
 
-## <a name="optional-query-parameters"></a>オプションのクエリ パラメーター
+## <span data-ttu-id="8597c-119">オプションのクエリ パラメーター</span><span class="sxs-lookup"><span data-stu-id="8597c-119">Optional query parameters</span></span>
+<a id="optional-query-parameters" class="xliff"></a>
 
-このメソッドは、応答をカスタマイズするための [OData クエリ パラメーター](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters)をサポートします。
+<span data-ttu-id="8597c-120">このメソッドは、応答をカスタマイズするための [OData クエリ パラメーター](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters)をサポートします。</span><span class="sxs-lookup"><span data-stu-id="8597c-120">This method supports the [OData Query Parameters](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) to help customize the response.</span></span>
 
-## <a name="request-body"></a>要求本文
+## <span data-ttu-id="8597c-121">要求本文</span><span class="sxs-lookup"><span data-stu-id="8597c-121">Request body</span></span>
+<a id="request-body" class="xliff"></a>
 
-このメソッドには、要求本文を指定しません。
+<span data-ttu-id="8597c-122">このメソッドには、要求本文を指定しません。</span><span class="sxs-lookup"><span data-stu-id="8597c-122">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a>応答
+## <span data-ttu-id="8597c-123">応答</span><span class="sxs-lookup"><span data-stu-id="8597c-123">Response</span></span>
+<a id="response" class="xliff"></a>
 
-成功した場合、このメソッドは `200 OK` 応答コードと、応答本文で [Drive](../resources/drive.md) リソースを返します。
+<span data-ttu-id="8597c-124">成功した場合、このメソッドは `200 OK` 応答コードと、応答本文で [Drive](../resources/drive.md) リソースを返します。</span><span class="sxs-lookup"><span data-stu-id="8597c-124">If successful, this method returns a `200 OK` response code and [Drive](../resources/drive.md) resource in the response body.</span></span>
 
-## <a name="example"></a>例
+## <span data-ttu-id="8597c-125">例</span><span class="sxs-lookup"><span data-stu-id="8597c-125">Example</span></span>
+<a id="example" class="xliff"></a>
 
-##### <a name="request"></a>要求
+##### <span data-ttu-id="8597c-126">要求</span><span class="sxs-lookup"><span data-stu-id="8597c-126">Request</span></span>
+<a id="request" class="xliff"></a>
 
-サインインしているユーザーの OneDrive または OneDrive for Business を取得する要求の例を次に示します。
+<span data-ttu-id="8597c-127">サインインしているユーザーの OneDrive または OneDrive for Business を取得する要求の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="8597c-127">Here is an example of the request to get the sign-in user's OneDrive or OneDrive for Business.</span></span>
 
 <!-- {
   "blockType": "request",
@@ -65,9 +75,10 @@ GET /groups/{idOrUserPrincipalName}/drive
 GET https://graph.microsoft.com/v1.0/me/drive
 ```
 
-##### <a name="response"></a>応答
+##### <span data-ttu-id="8597c-128">応答</span><span class="sxs-lookup"><span data-stu-id="8597c-128">Response</span></span>
+<a id="response" class="xliff"></a>
 
-以下は、応答の例です。
+<span data-ttu-id="8597c-129">以下は、応答の例です。</span><span class="sxs-lookup"><span data-stu-id="8597c-129">Here is an example of the response.</span></span>
 
 <!-- {
   "blockType": "response",

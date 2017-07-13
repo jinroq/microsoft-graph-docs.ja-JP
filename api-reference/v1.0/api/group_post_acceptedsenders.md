@@ -1,30 +1,19 @@
-# <a name="create-acceptedsender"></a>AcceptedSender の作成
+<span data-ttu-id="69013-p102">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="69013-p102">Bearer token. Required.</span></span>  | ベアラー {トークン}。必須。  |
 
-AcceptedSender リストに新しいユーザーやグループを追加します。
-
-`@odata.id` 内のユーザーやグループを要求の本文で指定します。承諾済み送信者リスト内のユーザーは、グループに会話を投稿できません。承認送信者と拒否送信者のリストに同一のユーザーやグループを指定すると、エラーになるので注意してください。
-## <a name="prerequisites"></a>前提条件
-この API を実行するには、以下のいずれかの**スコープ**が必要です。*Group.ReadWrite.All*
-## <a name="http-request"></a>HTTP 要求
-<!-- { "blockType": "ignored" } -->
-```http
-POST /groups/{id}/acceptedSenders/$ref
-```
-## <a name="request-headers"></a>要求ヘッダー
-| ヘッダー       | 値 |
-|:---------------|:--------|
-| Authorization  | ベアラー {トークン}。必須。  |
-
-## <a name="request-body"></a>要求本文
-要求の本文で、ユーザーまたはグループのオブジェクトの id を指定します。
+## <span data-ttu-id="69013-115">要求本文</span><span class="sxs-lookup"><span data-stu-id="69013-115">Request body</span></span>
+<a id="request-body" class="xliff"></a>
+<span data-ttu-id="69013-116">要求の本文で、ユーザーまたはグループのオブジェクトの id を指定します。</span><span class="sxs-lookup"><span data-stu-id="69013-116">In the request body, supply the id of a user or group object.</span></span>
 
 
-## <a name="response"></a>応答
-このメソッドは `204, No Content` 応答コードを返し、応答の本文は返しません。
+## <span data-ttu-id="69013-117">応答</span><span class="sxs-lookup"><span data-stu-id="69013-117">Response</span></span>
+<a id="response" class="xliff"></a>
+<span data-ttu-id="69013-118">このメソッドは `204, No Content` 応答コードを返し、応答の本文は返しません。</span><span class="sxs-lookup"><span data-stu-id="69013-118">This method returns `204, No Content` response code and no response body.</span></span>
 
-## <a name="example"></a>例
-##### <a name="request"></a>要求
-以下は、要求の例です。
+## <span data-ttu-id="69013-119">例</span><span class="sxs-lookup"><span data-stu-id="69013-119">Example</span></span>
+<a id="example" class="xliff"></a>
+##### <span data-ttu-id="69013-120">要求</span><span class="sxs-lookup"><span data-stu-id="69013-120">Request</span></span>
+<a id="request" class="xliff"></a>
+<span data-ttu-id="69013-121">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="69013-121">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "create_directoryobject_from_group"
@@ -38,8 +27,9 @@ Content-length: 30
   "@odata.id":"https://graph.microsoft.com/v1.0/users/alexd@contoso.com"
 }
 ```
-##### <a name="response"></a>応答
-以下は、応答の例です。
+##### <span data-ttu-id="69013-122">応答</span><span class="sxs-lookup"><span data-stu-id="69013-122">Response</span></span>
+<a id="response" class="xliff"></a>
+<span data-ttu-id="69013-123">以下は、応答の例です。</span><span class="sxs-lookup"><span data-stu-id="69013-123">Here is an example of the response.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true

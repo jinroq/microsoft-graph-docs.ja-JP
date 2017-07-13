@@ -1,149 +1,4 @@
-# <a name="create-schemaextension"></a>schemaExtension の作成
-
-[サポートするリソースの種類](../../../concepts/extensibility_overview.md#supported-resources)を拡張するために、[schemaExtension](../resources/schemaextension.md) 定義を新規作成します。
-
-スキーマ拡張機能により、厳密に型指定されたカスタム データをリソースに追加することができます。スキーマ拡張機能を作成するアプリは、所有者アプリです。拡張機能の[状態](../../../concepts/extensibility_overview.md#schema-extensions-lifecycle)によっては、拡張機能を更新または削除できるのは、所有者アプリだけです。 
-
-[トレーニング コースを説明するスキーマ拡張機能を定義する](../../../concepts/extensibility_schema_groups.md#2-register-a-schema-extension-definition-that-describes-a-training-course)方法、スキーマ拡張定義を使用して[トレーニング コース データで新規グループを作成する](../../../concepts/extensibility_schema_groups.md#3-create-a-new-group-with-extended-data)方法、[既存グループにトレーニング コース データを追加する](../../../concepts/extensibility_schema_groups.md#4-add-update-or-remove-custom-data-in-an-existing-group)方法については、それぞれの例を参照してください。
-
-## <a name="prerequisites"></a>前提条件
-この API を実行するには、以下の**スコープ**が必要です。*Directory.AccessAsUser.All*
-
-## <a name="http-request"></a>HTTP 要求
-<!-- { "blockType": "ignored" } -->
-```http
-POST /schemaExtensions
-```
-
-## <a name="request-headers"></a>要求ヘッダー
-| 名前       | 説明|
-|:---------------|:----------|
-| Authorization  | ベアラー {トークン}。必須。 |
-| Content-Type  | application/json  |
-
-## <a name="request-body"></a>要求本文
-要求本文では、[schemaExtension](../resources/schemaextension.md) オブジェクトの JSON 表記を指定します。
-
-次の表に、スキーマ拡張機能の作成時に必要なプロパティを示します。
-
-| パラメーター | 型 | 説明|
-|:---------------|:--------|:----------|
-|description|String|スキーマ拡張機能の説明。|
-|id|String|スキーマ拡張機能の定義の一意の識別子。 <br>値の割り当ては、以下の 2 方法のいずれかで行うことができます。 <ul><li>確認されたドメインの内の 1 つの名前とスキーマ拡張機能の名前を連結して、\{_&#65279;domainName_\}\_\{_&#65279;schemaName_\} という形式の一意の文字列を形成します。たとえば、`contoso_mySchema` です。 </li><li>スキーマ名を指定し、Microsoft Graph がそのスキーマ名を使用して **id** 割り当てを完了するには、次の形式を使用します。ext\{_&#65279;8-random-alphanumeric-chars_\}\_\{_&#65279;schema-name_\}。たとえば、`extkvbmkofy_mySchema` です。</li></ul>作成後、このプロパティは変更できません。 |
-|properties|[extensionSchemaProperty](../resources/extensionschemaproperty.md) コレクション|スキーマ拡張機能の定義を構成するプロパティの名前と種類のコレクション。|
-|targetTypes|String collection|このスキーマ拡張機能の定義を適用できる、(スキーマ拡張機能をサポートしている) 一連の Microsoft Graph のリソースの種類。|
-
-## <a name="response"></a>応答
-成功した場合、このメソッドは応答本文で `201, Created` 応答コードと、[schemaExtension](../resources/schemaextension.md) オブジェクトを返します。
-
-## <a name="example"></a>例
-### <a name="request-1"></a>要求 1
-最初の例では、確認済みのドメイン名 `graphlearn` とスキーマ名 `courses` を使用して、スキーマ拡張機能の定義の **id** プロパティの一意の文字列を形成します。一意の文字列は次の形式に基づきます。\{_&#65279;domainName_\}\_\{_&#65279;schemaName_\}。
-
-要求本文では、[schemaExtension](../resources/schemaextension.md) オブジェクトの JSON 表記を指定します。
-<!-- {
-  "blockType": "request",
-  "name": "create_schemaextension_from_schemaextensions_1"
-}-->
-```http
-POST https://graph.microsoft.com/v1.0/schemaExtensions
-Content-type: application/json
-
-{
-    "id":"graphlearn_courses",
-    "description": "Graph Learn training courses extensions",
-    "targetTypes": [
-        "Group"
-    ],
-    "properties": [
-        {
-            "name": "courseId",
-            "type": "Integer"
-        },
-        {
-            "name": "courseName",
-            "type": "String"
-        },
-        {
-            "name": "courseType",
-            "type": "String"
-        }
-    ]
-}
-```
-
-### <a name="response-1"></a>応答 1
-以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。
-<!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.schemaExtension"
-} -->
-```http
-HTTP/1.1 201 Created
-Content-type: application/json
-Content-length: 420
-
-{
-    "id": "graphlearn_courses",
-    "description": "Graph Learn training courses extensions",
-    "targetTypes": [
-        "Group"
-    ],
-    "status": "InDevelopment",
-    "owner": "24d3b144-21ae-4080-943f-7067b395b913",
-    "properties": [
-        {
-            "name": "courseId",
-            "type": "String"
-        },
-        {
-            "name": "courseName",
-            "type": "String"
-        },
-        {
-            "name": "courseType",
-            "type": "String"
-        }
-    ]
-}
-```
-
-### <a name="request-2"></a>要求 2
-2 番目の例では、要求の **id** プロパティ内のスキーマ名 `courses` だけを指定し、[schemaExtension](../resources/schemaextension.md) オブジェクト内の残りのプロパティを JSON 表記で指定しています。Microsoft Graph は一意の文字列値を割り当て、それを応答内で返します。
-
-<!-- {
-  "blockType": "request",
-  "name": "create_schemaextension_from_schemaextensions_2"
-}-->
-```http
-POST https://graph.microsoft.com/v1.0/schemaExtensions
-Content-type: application/json
-
-{
-    "id":"courses",
-    "description": "Graph Learn training courses extensions",
-    "targetTypes": [
-        "Group"
-    ],
-    "properties": [
-        {
-            "name": "courseId",
-            "type": "Integer"
-        },
-        {
-            "name": "courseName",
-            "type": "String"
-        },
-        {
-            "name": "courseType",
-            "type": "String"
-        }
-    ]
-}
-```
-
-### <a name="response-2"></a>応答 2
+<span data-ttu-id="11e3d-p108">応答には、要求の中で提供されているスキーマ名に基づいた一意の文字列がその **id** プロパティ内に含まれ、新規作成したスキーマ定義の残りの部分も応答に含まれています。応答の中の **id** の値は、次の形式に基づきます。ext\{_&#65279;8-random-alphanumeric-chars_\}\_\{_&#65279;schema-name_\}。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。実際の呼び出しではすべてのプロパティが返されます。</span><span class="sxs-lookup"><span data-stu-id="11e3d-p108">The response includes a unique string in the **id** property that is based on the schema name provided in the request, together with the rest of the newly created schema definition. The value in **id** in the response is based on the format, ext\{_&#65279;8-random-alphanumeric-chars_\}\_\{_&#65279;schema-name_\}. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 応答には、要求の中で提供されているスキーマ名に基づいた一意の文字列がその **id** プロパティ内に含まれ、新規作成したスキーマ定義の残りの部分も応答に含まれています。応答の中の **id** の値は、次の形式に基づきます。ext\{_&#65279;8-random-alphanumeric-chars_\}\_\{_&#65279;schema-name_\}。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。実際の呼び出しではすべてのプロパティが返されます。
 <!-- {
   "blockType": "response",
@@ -181,10 +36,11 @@ Content-length: 420
 ```
 
 
-## <a name="see-also"></a>関連項目
+## <span data-ttu-id="11e3d-161">関連項目</span><span class="sxs-lookup"><span data-stu-id="11e3d-161">See also</span></span>
+<a id="see-also" class="xliff"></a>
 
-- [拡張機能を使用したリソースへのカスタム データの追加](../../../concepts/extensibility_overview.md)
-- [スキーマ拡張機能を使用したグループへのカスタム データの追加](../../../concepts/extensibility_schema_groups.md)
+- [<span data-ttu-id="11e3d-162">拡張機能を使用したリソースへのカスタム データの追加</span><span class="sxs-lookup"><span data-stu-id="11e3d-162">Add custom data to resources using extensions</span></span>](../../../concepts/extensibility_overview.md)
+- [<span data-ttu-id="11e3d-163">スキーマ拡張機能を使用したグループへのカスタム データの追加</span><span class="sxs-lookup"><span data-stu-id="11e3d-163">Add custom data to groups using schema extensions</span></span>](../../../concepts/extensibility_schema_groups.md)
 
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

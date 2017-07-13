@@ -1,41 +1,4 @@
-# <a name="list-attachments"></a>添付ファイルを一覧表示する
-
-投稿に添付された [Attachment](../resources/attachment.md) オブジェクトのリストを取得します。
-## <a name="prerequisites"></a>前提条件
-この API を実行するには、以下のいずれかの**スコープ**が必要です。
-
-* Group.Read.All
-* Group.Readwrite.All
-
-## <a name="http-request"></a>HTTP 要求
-<!-- { "blockType": "ignored" } -->
-グループの[会話](../resources/conversation.md)に属する[スレッド](../resources/conversationthread.md)内の[投稿](../resources/post.md)の添付ファイル。
-```http
-GET /groups/{id}/threads/{id}/posts/{id}/attachments
-GET /groups/{id}/conversations/{id}/threads/{id}/posts/{id}/attachments
-```
-## <a name="optional-query-parameters"></a>オプションのクエリ パラメーター
-このメソッドは、応答をカスタマイズするための [OData クエリ パラメーター](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters)をサポートします。
-## <a name="request-headers"></a>要求ヘッダー
-| ヘッダー       | 値 |
-|:---------------|:--------|
-| Authorization  | ベアラー {トークン}。必須。  |
-
-## <a name="request-body"></a>要求本文
-このメソッドには、要求本文を指定しません。
-## <a name="response"></a>応答
-成功した場合、このメソッドは `200 OK` 応答コードと、応答本文で [Attachment](../resources/attachment.md) オブジェクトのコレクションを返します。
-## <a name="example"></a>例
-##### <a name="request"></a>要求
-以下は、要求の例です。
-<!-- {
-  "blockType": "request",
-  "name": "get_attachments"
-}-->
-```http
-GET https://graph.microsoft.com/v1.0/groups/{id}/threads/{id}/posts/{id}/attachments
-```
-##### <a name="response"></a>応答
+<span data-ttu-id="c88dd-p102">以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。</span><span class="sxs-lookup"><span data-stu-id="c88dd-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。
 <!-- {
   "blockType": "response",

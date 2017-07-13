@@ -1,20 +1,8 @@
-# plannerAssignment リソースの種類
-<a id="plannerassignment-resource-type" class="xliff"></a>
+<span data-ttu-id="8076c-p103">タスクの担当者を並べ替えるために使用するヒント。形式は[ここ](planner_order_hint_format.md)の説明に従って定義されます。</span><span class="sxs-lookup"><span data-stu-id="8076c-p103">Hint used to order assignees in a task. The format is defined as outlined [here](planner_order_hint_format.md).</span></span>|タスクの担当者を並べ替えるために使用するヒント。形式は[ここ](planner_order_hint_format.md)の説明に従って定義されます。|
 
-**PlannerAssignment** リソースは、ユーザーに対するタスクの割り当てを表します。この種類は、オープン型の [plannerAssignments](plannerassignments.md) で使用されます。
-
-
-## プロパティ
-<a id="properties" class="xliff"></a>
-| プロパティ     | 型   |説明|
-|:---------------|:--------|:----------|
-|assignedBy|[identitySet](identityset.md)|assignor など、タスクの割り当てを実行したユーザーの ID。|
-|assignedDateTime|DateTimeOffset|タスクが割り当てられた時間。Timestamp 型は、ISO 8601 形式を使用して日付と時刻の情報を表し、必ず UTC 時間です。たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、次のようになります。`'2014-01-01T00:00:00Z'`|
-|orderHint|String|タスクの担当者を並べ替えるために使用するヒント。形式は[ここ](planner_order_hint_format.md)の説明に従って定義されます。|
-
-## JSON 表記
+## <span data-ttu-id="8076c-120">JSON 表記</span><span class="sxs-lookup"><span data-stu-id="8076c-120">JSON representation</span></span>
 <a id="json-representation" class="xliff"></a>
-以下は、リソースの JSON 表記です。
+<span data-ttu-id="8076c-121">以下は、リソースの JSON 表記です。</span><span class="sxs-lookup"><span data-stu-id="8076c-121">Here is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",

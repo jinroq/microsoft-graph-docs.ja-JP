@@ -1,49 +1,17 @@
-# <a name="update-schemaextension"></a>schemaExtension を更新する
+<span data-ttu-id="527a3-p107">スキーマ拡張機能に適用できる (拡張機能をサポートできる) 一連の Microsoft Graph の種類。付加的な変更のみが許可されます。</span><span class="sxs-lookup"><span data-stu-id="527a3-p107">Set of Microsoft Graph types (that can support extensions) that the schema extension can be applied to.  Only additive changes are permitted.</span></span>|スキーマ拡張機能に適用できる (拡張機能をサポートできる) 一連の Microsoft Graph の種類。付加的な変更のみが許可されます。|
 
-指定された [schemaExtension](../resources/schemaextension.md) の定義に含まれるプロパティを更新します。
+## <span data-ttu-id="527a3-142">応答</span><span class="sxs-lookup"><span data-stu-id="527a3-142">Response</span></span>
+<a id="response" class="xliff"></a>
 
-この更新は、拡張機能の **targetTypes** プロパティに含まれるすべてのリソースに適用されます。これらのリソースは、[サポートしているリソースの種類](../../../concepts/extensibility_overview.md#supported-resources)にあります。
+<span data-ttu-id="527a3-143">成功した場合、このメソッドは `204 No Content` 応答コードを返します。</span><span class="sxs-lookup"><span data-stu-id="527a3-143">If successful, this method returns a `204 No Content` response code.</span></span>
 
-スキーマ拡張機能を作成したアプリ (所有者アプリ) に限り、その拡張機能が **InDevelopment** か **Available** の状態である場合、拡張機能に対して付加的な更新を行うことができます。したがって、そのアプリは、定義からカスタム プロパティやターゲット リソースの種類を削除できません。ただし、このアプリで拡張機能の説明を変更することはできます。
+## <span data-ttu-id="527a3-144">例</span><span class="sxs-lookup"><span data-stu-id="527a3-144">Example</span></span>
+<a id="example" class="xliff"></a>
 
-## <a name="prerequisites"></a>前提条件
+##### <span data-ttu-id="527a3-145">要求</span><span class="sxs-lookup"><span data-stu-id="527a3-145">Request</span></span>
+<a id="request" class="xliff"></a>
 
-この API を実行するには、以下の**スコープ**が必要です。*Directory.AccessAsUser.All*
-
-## <a name="http-request"></a>HTTP 要求
-
-<!-- { "blockType": "ignored" } -->
-```http
-PATCH /schemaExtensions/{id}
-```
-
-### <a name="optional-request-headers"></a>オプションの要求ヘッダー
-
-| 名前      |説明|
-|:----------|:----------|
-| Authorization  | ベアラー {トークン}。必須。 |
-| Content-Type   | application/json | 
-
-## <a name="request-body"></a>要求本文
-
-要求本文で、更新する関連フィールドの値を指定します。要求本文に含まれない既存のプロパティは、以前の値のままになるか、他のプロパティ値の変化に基づいて再計算されます。最適なパフォーマンスを得るためには、変更されていない既存の値を含めないでください。
-
-| プロパティ   | 型 |説明|
-|:---------------|:--------|:----------|
-|description|String|スキーマ拡張機能の説明。|
-|properties|[extensionSchemaProperty](../resources/extensionschemaproperty.md) コレクション|スキーマ拡張機能の定義を構成するプロパティの名前と種類のコレクション。付加的な変更のみが許可されます。 |
-|status|String|スキーマ拡張機能のライフサイクル状態。作成時の初期状態は **InDevelopment** です。状態は、**InDevelopment** から **Available**、**Available** から **Deprecated**、**Deprecated** から **Available** のいずれかに切り替わります。|
-|targetTypes|String collection|スキーマ拡張機能に適用できる (拡張機能をサポートできる) 一連の Microsoft Graph の種類。付加的な変更のみが許可されます。|
-
-## <a name="response"></a>応答
-
-成功した場合、このメソッドは `204 No Content` 応答コードを返します。
-
-## <a name="example"></a>例
-
-##### <a name="request"></a>要求
-
-以下は、要求の例です。
+<span data-ttu-id="527a3-146">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="527a3-146">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "update_schemaextension"
@@ -67,7 +35,8 @@ Content-length: 201
 }
 ```
 
-##### <a name="response"></a>応答
+##### <span data-ttu-id="527a3-147">応答</span><span class="sxs-lookup"><span data-stu-id="527a3-147">Response</span></span>
+<a id="response" class="xliff"></a>
 
 <!-- {
   "blockType": "response",
@@ -78,10 +47,11 @@ Content-length: 201
 HTTP/1.1 204 No Content
 ```
 
-## <a name="see-also"></a>関連項目
+## <span data-ttu-id="527a3-148">関連項目</span><span class="sxs-lookup"><span data-stu-id="527a3-148">See also</span></span>
+<a id="see-also" class="xliff"></a>
 
-- [拡張機能を使用したリソースへのカスタム データの追加](../../../concepts/extensibility_overview.md)
-- [スキーマ拡張機能を使用したグループへのカスタム データの追加](../../../concepts/extensibility_schema_groups.md)
+- [<span data-ttu-id="527a3-149">拡張機能を使用したリソースへのカスタム データの追加</span><span class="sxs-lookup"><span data-stu-id="527a3-149">Add custom data to resources using extensions</span></span>](../../../concepts/extensibility_overview.md)
+- [<span data-ttu-id="527a3-150">スキーマ拡張機能を使用したグループへのカスタム データの追加</span><span class="sxs-lookup"><span data-stu-id="527a3-150">Add custom data to groups using schema extensions</span></span>](../../../concepts/extensibility_schema_groups.md)
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

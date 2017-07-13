@@ -1,23 +1,9 @@
-# plannerChecklistItem リソースの種類
-<a id="plannerchecklistitem-resource-type" class="xliff"></a>
+<span data-ttu-id="f5e01-p104">チェックリストでの項目の相対順序を設定するのに使用します。形式は[ここ](planner_order_hint_format.md)の説明に従って定義されます。</span><span class="sxs-lookup"><span data-stu-id="f5e01-p104">Used to set the relative order of items in the checklist. The format is defined as outlined [here](planner_order_hint_format.md).</span></span>|チェックリストでの項目の相対順序を設定するのに使用します。形式は[ここ](planner_order_hint_format.md)の説明に従って定義されます。|
+|<span data-ttu-id="f5e01-125">title</span><span class="sxs-lookup"><span data-stu-id="f5e01-125">title</span></span>|<span data-ttu-id="f5e01-126">String</span><span class="sxs-lookup"><span data-stu-id="f5e01-126">String</span></span>|<span data-ttu-id="f5e01-127">チェックリスト項目のタイトル</span><span class="sxs-lookup"><span data-stu-id="f5e01-127">Title of the checklist item</span></span>|
 
-
-**PlannerChecklistItem**リソースはタスクのチェックリスト内の項目を表します。タスクのチェックリストは、[checklistItems オブジェクト](plannerchecklistitems.md)で表されます。
-
-
-## プロパティ
-<a id="properties" class="xliff"></a>
-| プロパティ     | 型   |説明|
-|:---------------|:--------|:----------|
-|isChecked|Boolean|項目がチェックされた場合は `true`、それ以外の場合は `false` です。|
-|lastModifiedBy|[identitySet](identityset.md)| 読み取り専用です。これを最後に変更したユーザーの ID。|
-|lastModifiedDateTime|DateTimeOffset|読み取り専用です。これを最後に変更した日時。Timestamp 型は、ISO 8601 形式を使用して日付と時刻の情報を表し、必ず UTC 時間です。たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、次のようになります。`'2014-01-01T00:00:00Z'`|
-|orderHint|String|チェックリストでの項目の相対順序を設定するのに使用します。形式は[ここ](planner_order_hint_format.md)の説明に従って定義されます。|
-|title|String|チェックリスト項目のタイトル|
-
-## JSON 表記
+## <span data-ttu-id="f5e01-128">JSON 表記</span><span class="sxs-lookup"><span data-stu-id="f5e01-128">JSON representation</span></span>
 <a id="json-representation" class="xliff"></a>
-以下は、リソースの JSON 表記です。
+<span data-ttu-id="f5e01-129">以下は、リソースの JSON 表記です。</span><span class="sxs-lookup"><span data-stu-id="f5e01-129">Here is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",

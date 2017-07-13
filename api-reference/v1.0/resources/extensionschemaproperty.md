@@ -1,31 +1,9 @@
-# extensionSchemaProperty リソースの種類
-<a id="extensionschemaproperty-resource-type" class="xliff"></a>
+<span data-ttu-id="ff985-p103">32 ビット値です。メッセージ、イベント、投稿ではサポートされていません。</span><span class="sxs-lookup"><span data-stu-id="ff985-p103">32-bit value. Not supported for messages, events and posts.</span></span> | 32 ビット値です。メッセージ、イベント、投稿ではサポートされていません。 |
+| <span data-ttu-id="ff985-129">String</span><span class="sxs-lookup"><span data-stu-id="ff985-129">String</span></span> | <span data-ttu-id="ff985-130">最大 256 文字です。</span><span class="sxs-lookup"><span data-stu-id="ff985-130">256 characters maximum.</span></span> |
 
-**extensionSchemaProperty** リソースを使用して、[schemaExtension](schemaextension.md) 定義の一部としてプロパティの名前とその種類を定義します。
-
-
-## プロパティ
-<a id="properties" class="xliff"></a>
-| プロパティ     | 型   |説明|
-|:---------------|:--------|:----------|
-|name|String| スキーマの拡張機能の一部として定義されている厳密に型指定されたプロパティの名前。|
-|type|String| スキーマの拡張機能の一部として定義されているプロパティの種類。使用可能な値は、*Binary、Boolean、DateTime、Integer**String* です。詳細については、次の表を参照してください。|
-
-#### サポート対象のプロパティ データ型
-<a id="supported-property-data-types" class="xliff"></a> 
-スキーマ拡張機能でプロパティを定義する場合、次のデータ型がサポートされています。
-
-| プロパティの種類 | 注釈 |
-|-------------|------------|
-| Binary | 最大 256 バイトです。 |
-| Boolean | メッセージ、イベント、投稿ではサポートされていません。 |
-| DateTime | ISO 8601 形式で指定する必要があります。UTC で格納されます。 |
-| 整数 | 32 ビット値です。メッセージ、イベント、投稿ではサポートされていません。 |
-| String | 最大 256 文字です。 |
-
-## JSON 表記
+## <span data-ttu-id="ff985-131">JSON 表記</span><span class="sxs-lookup"><span data-stu-id="ff985-131">JSON representation</span></span>
 <a id="json-representation" class="xliff"></a>
-以下は、リソースの JSON 表記です。
+<span data-ttu-id="ff985-132">以下は、リソースの JSON 表記です。</span><span class="sxs-lookup"><span data-stu-id="ff985-132">Here is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",

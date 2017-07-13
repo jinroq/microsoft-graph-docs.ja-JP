@@ -1,32 +1,10 @@
-# <a name="update-page"></a>ページを更新する
-
-OneNote ページの内容を更新します。
-## <a name="prerequisites"></a>前提条件
-この API を実行するには、以下のいずれかの**スコープ**が必要です。   
-
-Notes.ReadWrite または Notes.ReadWrite.All 
-
-## <a name="http-request"></a>HTTP 要求
-<!-- { "blockType": "ignored" } -->
-```http
-PATCH /me/onenote/pages/{id}/content
-PATCH /users/{id | userPrincipalName}/onenote/pages/{id}/content
-PATCH /groups/{id}/onenote/pages/{id}/content
-```
-## <a name="request-headers"></a>要求ヘッダー
-| 名前       | 型 | 説明|
-|:-----------|:------|:----------|
-| Authorization  | string  | ベアラー {トークン}。必須。 |
-| Content-Type | string | `application/json` |
-
-## <a name="request-body"></a>要求本文
-要求本文で、ページの変更内容を表す [patchContentCommand](../resources/patchcontentcommand.md) オブジェクトの配列を指定します。詳細と例については、「<a href="https://msdn.microsoft.com/office/office365/howto/onenote-update-page">OneNote ページ コンテンツを更新する</a>」を参照してください。
-
-## <a name="response"></a>応答
+<span data-ttu-id="8b88b-p103">成功した場合、このメソッドは `204 No Content` 応答コードを返します。PATCH 要求に対して JSON データは返されません。</span><span class="sxs-lookup"><span data-stu-id="8b88b-p103">If successful, this method returns a `204 No Content` response code.  No JSON data is returned for a PATCH request.</span></span>
 成功した場合、このメソッドは `204 No Content` 応答コードを返します。PATCH 要求に対して JSON データは返されません。
-## <a name="example"></a>例
-##### <a name="request"></a>要求
-以下は、要求の例です。
+## <span data-ttu-id="8b88b-123">例</span><span class="sxs-lookup"><span data-stu-id="8b88b-123">Example</span></span>
+<a id="example" class="xliff"></a>
+##### <span data-ttu-id="8b88b-124">要求</span><span class="sxs-lookup"><span data-stu-id="8b88b-124">Request</span></span>
+<a id="request" class="xliff"></a>
+<span data-ttu-id="8b88b-125">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="8b88b-125">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "update_page"
@@ -50,8 +28,9 @@ Content-length: 312
   }
 ]
 ```
-##### <a name="response"></a>応答
-以下は、応答の例です。 
+##### <span data-ttu-id="8b88b-126">応答</span><span class="sxs-lookup"><span data-stu-id="8b88b-126">Response</span></span>
+<a id="response" class="xliff"></a>
+<span data-ttu-id="8b88b-127">以下は、応答の例です。</span><span class="sxs-lookup"><span data-stu-id="8b88b-127">Here is an example of the response.</span></span> 
 <!-- {
   "blockType": "response",
   "truncated": true,

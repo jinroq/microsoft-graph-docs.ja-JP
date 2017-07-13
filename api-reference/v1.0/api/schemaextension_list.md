@@ -1,39 +1,4 @@
-# <a name="list-schemaextensions"></a>schemaExtensions を一覧表示する
-
-現在のテナントで所有するアプリによって作成された [schemaExtension](../resources/schemaextension.md) オブジェクト (**InDevelopment**、**Available**、**Deprecated** のもの) と、他のアプリによって所有されていて、**Available** とマークされている他のすべてのスキーマ拡張機能の一覧を取得します。 
-
-## <a name="prerequisites"></a>前提条件
-この API を実行するには、以下のいずれかの**スコープ**が必要です。*Directory.Read.All* または *Directory.AccessAsUser.All*
-
-## <a name="http-request"></a>HTTP 要求
-<!-- { "blockType": "ignored" } -->
-```http
-GET /schemaExtensions
-```
-## <a name="optional-query-parameters"></a>オプションのクエリ パラメーター
-このメソッドは、応答をカスタマイズするための [OData クエリ パラメーター](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters)をサポートします。
-
-## <a name="request-headers"></a>要求ヘッダー
-| 名前      |説明|
-|:----------|:----------|
-| Authorization  | ベアラー {トークン}。必須。 |
-| Content-Type   | application/json | 
-
-## <a name="request-body"></a>要求本文
-このメソッドには、要求本文を指定しません。
-## <a name="response"></a>応答
-成功した場合、このメソッドは `200 OK` 応答コードと、応答本文で [schemaExtension](../resources/schemaextension.md) オブジェクトのコレクションを返します。
-## <a name="example"></a>例
-##### <a name="request"></a>要求
-以下は、一意の **ID** を使用してフィルタリングを行い、すべてのアクセス可能な拡張機能の中から特定の拡張機能を検索する方法の例です。 
-<!-- {
-  "blockType": "request",
-  "name": "get_schemaextensions"
-}-->
-```http
-GET https://graph.microsoft.com/v1.0/schemaExtensions?$filter=id%20eq%20'graphlearn_test'
-```
-##### <a name="response"></a>応答
+<span data-ttu-id="1e1c9-p102">以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。</span><span class="sxs-lookup"><span data-stu-id="1e1c9-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。
 <!-- {
   "blockType": "response",
@@ -67,10 +32,11 @@ Content-length: 274
 }
 ```
 
-## <a name="see-also"></a>関連項目
+## <span data-ttu-id="1e1c9-127">関連項目</span><span class="sxs-lookup"><span data-stu-id="1e1c9-127">See also</span></span>
+<a id="see-also" class="xliff"></a>
 
-- [拡張機能を使用したリソースへのカスタム データの追加](../../../concepts/extensibility_overview.md)
-- [スキーマ拡張機能を使用したグループへのカスタム データの追加](../../../concepts/extensibility_schema_groups.md)
+- [<span data-ttu-id="1e1c9-128">拡張機能を使用したリソースへのカスタム データの追加</span><span class="sxs-lookup"><span data-stu-id="1e1c9-128">Add custom data to resources using extensions</span></span>](../../../concepts/extensibility_overview.md)
+- [<span data-ttu-id="1e1c9-129">スキーマ拡張機能を使用したグループへのカスタム データの追加</span><span class="sxs-lookup"><span data-stu-id="1e1c9-129">Add custom data to groups using schema extensions</span></span>](../../../concepts/extensibility_schema_groups.md)
 
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

@@ -1,25 +1,19 @@
-# domainDnsUnavailableRecord リソースの種類
-<a id="domaindnsunavailablerecord-resource-type" class="xliff"></a>
-
-[Domain](domain.md) エンティティのナビゲーション プロパティ **serviceConfigurationRecords** に対してクエリを実行すると、[DomainDnsCnameRecord](domaindnscnamerecord.md)、[DomainDnsMxRecord](domaindnsmxrecord.md)、[DomainDnsSrvRecord](domaindnssrvrecord.md)、[DomainDnsTxtRecord](domaindnstxtrecord.md) エンティティのいずれか 1 つ以上が返される場合があります。これらのエンティティは、ドメインを Microsoft オンライン サービスで使用する前に、そのドメインのゾーン ファイルに追加する必要のある DNS レコードを示します。このようなエンティティを生成できない場合、代わりに DomainDnsUnavailableRecord エンティティが返されます。[DomainDnsRecord](domaindnsrecord.md) エンティティから継承されます。
-
-## メソッド
-<a id="methods" class="xliff"></a>
+<span data-ttu-id="47a68-p102">このリソースへの直接クエリはサポートされていません。ドメイン サービス レコードのクエリを実行する方法の詳細については、[ドメイン](domain.md)のトピックを参照してください。</span><span class="sxs-lookup"><span data-stu-id="47a68-p102">Direct queries to this resource are not supported. Please see the [domain](domain.md) topic for information on how to query for domain service records.</span></span>
 このリソースへの直接クエリはサポートされていません。ドメイン サービス レコードのクエリを実行する方法の詳細については、[ドメイン](domain.md)のトピックを参照してください。
 
-## プロパティ
+## <span data-ttu-id="47a68-109">プロパティ</span><span class="sxs-lookup"><span data-stu-id="47a68-109">Properties</span></span>
 <a id="properties" class="xliff"></a>
-| プロパティ     | 型   |説明|
+| <span data-ttu-id="47a68-110">プロパティ</span><span class="sxs-lookup"><span data-stu-id="47a68-110">Property</span></span>     | <span data-ttu-id="47a68-111">型</span><span class="sxs-lookup"><span data-stu-id="47a68-111">Type</span></span>   |<span data-ttu-id="47a68-112">説明</span><span class="sxs-lookup"><span data-stu-id="47a68-112">Description</span></span>|
 |:---------------|:--------|:----------|
-|description|String|**DomainDnsUnavailableRecord** エンティティが返される理由を示します。 |
+|<span data-ttu-id="47a68-113">description</span><span class="sxs-lookup"><span data-stu-id="47a68-113">description</span></span>|<span data-ttu-id="47a68-114">String</span><span class="sxs-lookup"><span data-stu-id="47a68-114">String</span></span>|<span data-ttu-id="47a68-115">**DomainDnsUnavailableRecord** エンティティが返される理由を示します。</span><span class="sxs-lookup"><span data-stu-id="47a68-115">Provides the reason why the **DomainDnsUnavailableRecord** entity is returned.</span></span> |
 
-## リレーションシップ
+## <span data-ttu-id="47a68-116">リレーションシップ</span><span class="sxs-lookup"><span data-stu-id="47a68-116">Relationships</span></span>
 <a id="relationships" class="xliff"></a>
-なし
+<span data-ttu-id="47a68-117">なし</span><span class="sxs-lookup"><span data-stu-id="47a68-117">None</span></span>
 
-## JSON 表記
+## <span data-ttu-id="47a68-118">JSON 表記</span><span class="sxs-lookup"><span data-stu-id="47a68-118">JSON representation</span></span>
 <a id="json-representation" class="xliff"></a>
-以下は、リソースの JSON 表記です。
+<span data-ttu-id="47a68-119">以下は、リソースの JSON 表記です。</span><span class="sxs-lookup"><span data-stu-id="47a68-119">Here is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",

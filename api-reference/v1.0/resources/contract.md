@@ -1,35 +1,13 @@
-# コントラクト リソース型
-<a id="contract-resource-type" class="xliff"></a>
-パートナー テナントがカスタマー テナントとの間で持つ、既存のパートナーシップを表します。
+<span data-ttu-id="88c56-p108">パートナーシップの一意識別子です。キー、読み取り専用</span><span class="sxs-lookup"><span data-stu-id="88c56-p108">The unique identifier for the partnership. Key, read-only</span></span>| パートナーシップの一意識別子です。キー、読み取り専用 |
 
-> **重要:**パートナー テナントにのみ存在します。パートナー テナントとは、[Microsoft クラウド ソリューション プロバイダー](https://partnercenter.microsoft.com/en-us/partner/programs)、Office 365 Syndication、Microsoft Advisor パートナー プログラムのいずれかに含まれている、Microsoft パートナーに所属する Azure AD テナントです。
-
-## メソッド
-<a id="methods" class="xliff"></a>
-
-| メソッド   | 戻り値の型 | 説明 |
-|:---------------|:--------|:----------|
-|[コントラクトを取得する](../api/contract_get.md) | コントラクト |特定のコントラクト オブジェクトのプロパティを参照します。 |
-|[コントラクトを一覧表示する](../api/contract_list.md) | コントラクト コレクション | パートナー テナントのコントラクトの一覧です。 |
-
-## プロパティ
-<a id="properties" class="xliff"></a>
-| プロパティ   | 型 | 説明 |
-|:---------------|:--------|:----------|
-|contractType|String|コントラクトの型。<br><br>使用可能な値は次のとおりです。<br> *SyndicationPartner* - この顧客に対し O365 と Intune を排他的に再販し管理するパートナーです。再販し、顧客をサポートします。<br> *BreadthPartner* - この顧客に対し管理上のサポートを提供する能力を備えたパートナーです。ただし、パートナーが顧客に再販売することは許されていません。<br>*ResellerPartner* - シンジケーション パートナーに類似していますが、テナントへの排他的アクセスを持たないパートナーです。シンジケーションの場合、顧客は Microsoft またはその他のパートナーから直接に追加のサブスクリプションを購入することはできません。|
-|customerId|Guid|このパートナーシップによって参照されるカスタマー テナントの一意識別子です。カスタマー テナントの組織リソースの ID プロパティに対応します。 |
-|defaultDomainName|String|カスタマー テナントの既定のドメイン名のコピーです。顧客とのパートナーシップが確立されるとコピーを作成します。カスタマー テナントの既定のドメイン名が変更された場合は、自動的には更新されません。|
-|displayName|String|カスタマー テナントの表示名のコピーです。顧客とのパートナーシップが確立されるとコピーを作成します。カスタマー テナントの表示名が変更された場合は、自動的には更新されません。|
-|id|String| パートナーシップの一意識別子です。キー、読み取り専用 |
-
-## リレーションシップ
+## <span data-ttu-id="88c56-147">リレーションシップ</span><span class="sxs-lookup"><span data-stu-id="88c56-147">Relationships</span></span>
 <a id="relationships" class="xliff"></a>
-なし
+<span data-ttu-id="88c56-148">なし</span><span class="sxs-lookup"><span data-stu-id="88c56-148">None</span></span>
 
 
-## JSON 表記
+## <span data-ttu-id="88c56-149">JSON 表記</span><span class="sxs-lookup"><span data-stu-id="88c56-149">JSON representation</span></span>
 <a id="json-representation" class="xliff"></a>
-以下は、リソースの JSON 表記です。
+<span data-ttu-id="88c56-150">以下は、リソースの JSON 表記です。</span><span class="sxs-lookup"><span data-stu-id="88c56-150">Here is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",

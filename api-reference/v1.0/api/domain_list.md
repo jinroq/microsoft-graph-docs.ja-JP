@@ -1,39 +1,4 @@
-# <a name="list-domains"></a>ドメインを一覧表示する
-
-ドメイン オブジェクトの一覧を取得します。
-
-### <a name="prerequisites"></a>前提条件
-この API を実行するには、以下のいずれかの**スコープ**が必要です。*Directory.Read.All* または *Domain.ReadWrite.All*
-### <a name="http-request"></a>HTTP 要求
-<!-- { "blockType": "ignored" } -->
-```http
-GET /domains
-```
-### <a name="optional-query-parameters"></a>オプションのクエリ パラメーター
-このメソッドは、応答をカスタマイズするための [OData クエリ パラメーター](http://graph.microsoft.io/docs/overview/query_parameters)をサポートします。
-
-### <a name="request-headers"></a>要求ヘッダー
-| 名前      |説明|
-|:----------|:----------|
-| Authorization  | ベアラー {トークン}。必須。|
-| Accept         | application/json; |
-
-### <a name="request-body"></a>要求本文
-このメソッドには、要求本文を指定しません。
-
-### <a name="response"></a>応答
-成功した場合、このメソッドは `200 OK` 応答コードと、応答本文で [domain](../resources/domain.md) オブジェクトのコレクションを返します。
-### <a name="example"></a>例
-##### <a name="request"></a>要求
-
-<!-- {
-  "blockType": "request",
-  "name": "get_domains"
-}-->
-```http
-GET https://graph.microsoft.com/V1.0/domains
-```
-##### <a name="response"></a>応答
+<span data-ttu-id="97d63-p102">注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。</span><span class="sxs-lookup"><span data-stu-id="97d63-p102">Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。
 <!-- {
   "blockType": "response",

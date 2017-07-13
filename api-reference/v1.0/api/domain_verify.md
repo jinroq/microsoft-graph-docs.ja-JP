@@ -1,45 +1,4 @@
-# <a name="domain-verify"></a>domain: verify
-
-ドメインの所有権を検証します。
-
-> **重要:**未検証のドメインにのみ適用されます。未検証のドメインでは、[domain](../resources/domain.md) の isVerified プロパティは false です。
-
-### <a name="prerequisites"></a>前提条件
-
-この API を実行するには、以下のいずれかの**スコープ**が必要です。*Directory.Read.All* または *Domain.ReadWrite.All*
-
-### <a name="http-request"></a>HTTP 要求
-
-<!-- { "blockType": "ignored" } -->
-```http
-POST /domains/{id}/verify
-```
-
-> {Id} には、ドメインを完全修飾ドメイン名で指定します。
-
-### <a name="request-headers"></a>要求ヘッダー
-
-| 名前       | 説明|
-|:---------------|:----------|
-| Authorization  | ベアラー {トークン}。必須。|
-| Content-Type  | application/json |
-
-### <a name="request-body"></a>要求本文
-
-### <a name="response"></a>応答
-成功した場合、このメソッドは応答本文で `200, OK` 応答コードと [domain](../resources/domain.md) オブジェクトを返します。
-
-### <a name="example"></a>例
-##### <a name="request"></a>要求
-<!-- {
-  "blockType": "request",
-  "name": "domain_verify"
-}-->
-```http
-POST https://graph.microsoft.com/V1.0/domains/contoso.com/verify
-```
-
-##### <a name="response"></a>応答
+<span data-ttu-id="d4100-p103">注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。</span><span class="sxs-lookup"><span data-stu-id="d4100-p103">Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。
 <!-- {
   "blockType": "response",

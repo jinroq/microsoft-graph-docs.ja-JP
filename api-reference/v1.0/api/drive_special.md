@@ -1,49 +1,20 @@
-# <a name="get-a-special-folder-by-name"></a>名前で特殊フォルダーを取得する
-
-特殊なコレクションを使用して、名前で特殊フォルダーにアクセスします。
-
-特殊フォルダーは、フォルダーを (ローカライズが必要となる) パスで探したり、ID を持つフォルダーを参照したりせずに、OneDrive の既知のフォルダーにアクセスするための、単純なエイリアスを提供します。特殊フォルダーの名前が変更されたりドライブ内の別の場所に移動されたりした場合でも、この構文はそのフォルダーを返し続けます。
-
-特殊なフォルダーは、まだ存在していない場合、アプリケーションが最初に書き込みを試行したときに自動的に作成されます。ユーザーが削除した場合は、もう一度書き込まれたときに再作成されます。
-
-**注:**読み取り専用のアクセス許可が付与されているときに、存在していない特殊フォルダーを要求すると、`403 Forbidden` エラーが返されます。
-
-## <a name="prerequisites"></a>前提条件
-この API を実行するには、以下のいずれかの**スコープ**が必要です。
-
-* Files.Read
-* Files.ReadWrite
-* Files.Read.All
-* Files.ReadWrite.All
-* Files.ReadWrite.AppFolder
-* Sites.Read.All
-* Sites.ReadWrite.All
-
-## <a name="http-request"></a>HTTP 要求
-<!-- { "blockType": "ignored" } -->
-```http
-GET /me/drive/special/{name}
-```
-## <a name="optional-query-parameters"></a>オプションのクエリ パラメーター
-このメソッドは、応答をカスタマイズするための [OData クエリ パラメーター](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters)をサポートします。
-
-## <a name="request-headers"></a>要求ヘッダー
-
-| 名前          | 型   | 説明               |
-|:--------------|:-------|:--------------------------|
-| Authorization | string | ベアラー {トークン}。必須。 |
+<span data-ttu-id="78351-p103">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="78351-p103">Bearer {token}. Required.</span></span> | ベアラー {トークン}。必須。 |
 
 
-## <a name="request-body"></a>要求本文
-このメソッドには、要求本文を指定しません。
+## <span data-ttu-id="78351-128">要求本文</span><span class="sxs-lookup"><span data-stu-id="78351-128">Request body</span></span>
+<a id="request-body" class="xliff"></a>
+<span data-ttu-id="78351-129">このメソッドには、要求本文を指定しません。</span><span class="sxs-lookup"><span data-stu-id="78351-129">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a>応答
-成功した場合、このメソッドは `200 OK` 応答コードと、応答本文で [driveItem](../resources/driveitem.md) オブジェクトを返します。
+## <span data-ttu-id="78351-130">応答</span><span class="sxs-lookup"><span data-stu-id="78351-130">Response</span></span>
+<a id="response" class="xliff"></a>
+<span data-ttu-id="78351-131">成功した場合、このメソッドは `200 OK` 応答コードと、応答本文で [driveItem](../resources/driveitem.md) オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="78351-131">If successful, this method returns a `200 OK` response code and a [driveItem](../resources/driveitem.md) object in the response body.</span></span>
 
-## <a name="example"></a>例
+## <span data-ttu-id="78351-132">例</span><span class="sxs-lookup"><span data-stu-id="78351-132">Example</span></span>
+<a id="example" class="xliff"></a>
 
-##### <a name="request"></a>要求
-以下はユーザーのドライブの要求例です。
+##### <span data-ttu-id="78351-133">要求</span><span class="sxs-lookup"><span data-stu-id="78351-133">Request</span></span>
+<a id="request" class="xliff"></a>
+<span data-ttu-id="78351-134">以下はユーザーのドライブの要求例です。</span><span class="sxs-lookup"><span data-stu-id="78351-134">Here is an example of the request for the user's drives.</span></span>
 
 <!-- {
   "blockType": "request",
@@ -53,8 +24,9 @@ GET /me/drive/special/{name}
 GET https://graph.microsoft.com/v1.0/me/drive/special/{name}
 ```
 
-##### <a name="response"></a>応答
-以下は、応答の例です。
+##### <span data-ttu-id="78351-135">応答</span><span class="sxs-lookup"><span data-stu-id="78351-135">Response</span></span>
+<a id="response" class="xliff"></a>
+<span data-ttu-id="78351-136">以下は、応答の例です。</span><span class="sxs-lookup"><span data-stu-id="78351-136">Here is an example of the response.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -73,9 +45,10 @@ Content-type: application/json
 }
 ```
 
-## <a name="remarks"></a>注釈
+## <span data-ttu-id="78351-137">注釈</span><span class="sxs-lookup"><span data-stu-id="78351-137">Remarks</span></span>
+<a id="remarks" class="xliff"></a>
 
-特殊フォルダーの子を要求する場合は、`children` コレクションを要求するか、子コレクションを展開する [expand](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) オプションを使用します。
+<span data-ttu-id="78351-138">特殊フォルダーの子を要求する場合は、`children` コレクションを要求するか、子コレクションを展開する [expand](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) オプションを使用します。</span><span class="sxs-lookup"><span data-stu-id="78351-138">To request the children of a special folder, you can request the `children` collection or use the [expand](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) option to expand the children collection.</span></span>
 
 
 <!-- {

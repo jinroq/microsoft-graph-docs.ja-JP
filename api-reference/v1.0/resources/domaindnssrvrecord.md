@@ -1,37 +1,14 @@
-<a id="domaindnssrvrecord-resource-type" class="xliff"></a>
-# domainDnsSrvRecord リソースの種類
+<span data-ttu-id="834b6-p105">DNS ホストで SRV レコードの *Time to Live (TTL)* のプロパティを構成するときに使用する値です。null 許容ではありません</span><span class="sxs-lookup"><span data-stu-id="834b6-p105">Value to use when configuring the *time-to-live (ttl)* property of the SRV record at the DNS host. Not nullable</span></span>| DNS ホストで SRV レコードの *Time to Live (TTL)* のプロパティを構成するときに使用する値です。null 許容ではありません |
+|<span data-ttu-id="834b6-149">weight</span><span class="sxs-lookup"><span data-stu-id="834b6-149">weight</span></span>|<span data-ttu-id="834b6-150">Int32</span><span class="sxs-lookup"><span data-stu-id="834b6-150">Int32</span></span>| <span data-ttu-id="834b6-151">DNS ホストで SRV レコードの *weight* プロパティを構成する場合に使用する値です。</span><span class="sxs-lookup"><span data-stu-id="834b6-151">Value to use when configuring the *weight* property of the SRV record at the DNS host.</span></span> |
 
-テナント内の特定のドメインの DNS ゾーン ファイルに追加された SRV レコードを表します。[DomainDnsRecord](domaindnsrecord.md) エンティティから継承されます。
-
-<a id="methods" class="xliff"></a>
-## メソッド
-このリソースへの直接クエリはサポートされていません。ドメイン サービス レコードのクエリを実行する方法の詳細については、[ドメイン](domain.md)のトピックを参照してください。
-
-<a id="properties" class="xliff"></a>
-## プロパティ
-| プロパティ     | 型   |説明|
-|:---------------|:--------|:----------|
-|id|String| このエンティティに割り当てられた一意の識別子。null 許容ではありません。読み取り専用です。|
-|isOptional|Boolean| False の場合、SRV レコードは Microsoft オンライン サービスでドメインを正しく操作するために、DNS ホストで顧客によって構成されている必要があります。 |
-|label|String| DNS ホストで SRV レコードの *name* プロパティを構成する場合に使用される値です。 |
-|nameTarget|String| DNS ホストで SRV レコードの *Target* プロパティを構成する場合に使用する値です。 |
-|port|Int32| DNS ホストで SRV レコードの *port* プロパティを構成する場合に使用する値です。 |
-|priority|Int32| DNS ホストで SRV レコードの *priority* プロパティを構成する場合に使用する値です。 |
-|protocol|String| DNS ホストで SRV レコードの *protocol* プロパティを構成する場合に使用する値です。 |
-|recordType|String|  DNS レコードの種類。この値は常に *Srv* です。キー |
-|service|String| DNS ホストで SRV レコードの *service* プロパティを構成する場合に使用する値です。 |
-|supportedService|String| Microsoft オンライン サービスまたはこの SRV レコードに依存している機能。</br></br>次のいずれかの値を指定できます。**null**、*Email*、*Sharepoint*、*EmailInternalRelayOnly*、*OfficeCommunicationsOnline*、*SharePointDefaultDomain*、*FullRedelegation*、*SharePointPublic*、*OrgIdAuthentication*、*Yammer*、*Intune* |
-|ttl|Int32| DNS ホストで SRV レコードの *Time to Live (TTL)* のプロパティを構成するときに使用する値です。null 許容ではありません |
-|weight|Int32| DNS ホストで SRV レコードの *weight* プロパティを構成する場合に使用する値です。 |
-
+## <span data-ttu-id="834b6-152">リレーションシップ</span><span class="sxs-lookup"><span data-stu-id="834b6-152">Relationships</span></span>
 <a id="relationships" class="xliff"></a>
-## リレーションシップ
-なし
+<span data-ttu-id="834b6-153">なし</span><span class="sxs-lookup"><span data-stu-id="834b6-153">None</span></span>
 
 
+## <span data-ttu-id="834b6-154">JSON 表記</span><span class="sxs-lookup"><span data-stu-id="834b6-154">JSON representation</span></span>
 <a id="json-representation" class="xliff"></a>
-## JSON 表記
-以下は、リソースの JSON 表記です。
+<span data-ttu-id="834b6-155">以下は、リソースの JSON 表記です。</span><span class="sxs-lookup"><span data-stu-id="834b6-155">Here is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",

@@ -1,47 +1,4 @@
-# <a name="create-contactfolder"></a>ContactFolder を作成する　
-
-指定したフォルダーの子として新しい contactFolder を作成します。 
-
-[ユーザーの既定の連絡先フォルダーの下に新しい contactFolder を作成する](user_post_contactfolders.md)こともできます。
-## <a name="prerequisites"></a>前提条件
-この API を実行するには、以下のいずれかの**スコープ**が必要です。*Contacts.ReadWrite*
-## <a name="http-request"></a>HTTP 要求
-<!-- { "blockType": "ignored" } -->
-```http
-POST /me/contactFolders/{id}/childFolders
-POST /users/{id | userPrincipalName}/contactFolders/{id}/childFolders
-```
-## <a name="request-headers"></a>要求ヘッダー
-| ヘッダー       | 値 |
-|:---------------|:--------|
-| Authorization  | ベアラー {トークン}。必須。  |
-| Content-Type  | application/json. Required.  |
-
-## <a name="request-body"></a>要求本文
-要求本文で、[ContactFolder](../resources/contactfolder.md) オブジェクトの JSON 表記を指定します。
-
-
-## <a name="response"></a>応答
-成功した場合、このメソッドは `201, Created` 応答コードと、応答本文で [ContactFolder](../resources/contactfolder.md) オブジェクトを返します。
-
-## <a name="example"></a>例
-##### <a name="request"></a>要求
-以下は、要求の例です。
-<!-- {
-  "blockType": "request",
-  "name": "create_contactfolder_from_contactfolder"
-}-->
-```http
-POST https://graph.microsoft.com/v1.0/me/contactFolders/{id}/childFolders
-Content-type: application/json
-Content-length: 84
-
-{
-  "displayName": "displayName-value"
-}
-```
-要求本文で、[contactFolder](../resources/contactfolder.md) オブジェクトの JSON 表記を指定します。
-##### <a name="response"></a>応答
+<span data-ttu-id="27386-p103">以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。</span><span class="sxs-lookup"><span data-stu-id="27386-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。
 <!-- {
   "blockType": "response",

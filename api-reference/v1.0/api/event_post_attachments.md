@@ -1,50 +1,20 @@
-# <a name="add-attachment"></a>添付ファイルを追加する
+<span data-ttu-id="a07ed-p103">エンティティ本文内のデータの性質です。必須。</span><span class="sxs-lookup"><span data-stu-id="a07ed-p103">Nature of the data in the body of an entity. Required.</span></span>  | エンティティ本文内のデータの性質です。必須。 |
 
-[添付ファイル](../resources/attachment.md)をイベントに追加する場合に、この API を使用します。現在、各 REST 要求の合計サイズは 4 MB に制限されているため、追加できる添付ファイルのサイズは 4 MB 未満に制限されます。
-## <a name="prerequisites"></a>前提条件
-この API を実行するには、以下のいずれかの**スコープ**が必要です。*Calendars.ReadWrite*
-## <a name="http-request"></a>HTTP 要求
-<!-- { "blockType": "ignored" } -->
-ユーザーまたはグループの既定の[カレンダー](../resources/calendar.md)内の[イベント](../resources/event.md)の添付ファイル。
-```http
-POST /me/events/{id}/attachments
-POST /users/{id | userPrincipalName}/events/{id}/attachments
-POST /groups/{id}/events/{id}/attachments
-
-POST /me/calendar/events/{id}/attachments
-POST /users/{id | userPrincipalName}/calendar/events/{id}/attachments
-POST /groups/{id}/calendar/events/{id}/attachments
-```
-ユーザーの既定 [calendarGroup](../resources/calendargroup.md) に属する[カレンダー](../resources/calendar.md)内[イベント](../resources/event.md)の添付ファイル。
-```http
-POST /me/calendars/{id}/events/{id}/attachments
-POST /users/{id | userPrincipalName}/calendars/{id}/events/{id}/attachments
-
-POST /me/calendargroup/calendars/{id}/events/{id}/attachments
-POST /users/{id | userPrincipalName}/calendargroup/calendars/{id}/events/{id}/attachments
-```
-ユーザーの [calendarGroup](../resources/calendargroup.md) に属する[カレンダー](../resources/calendar.md)内[イベント](../resources/event.md)の添付ファイル。
-```http
-POST /me/calendargroups/{id}/calendars/{id}/events/{id}/attachments
-POST /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{id}/attachments
-```
-## <a name="request-headers"></a>要求ヘッダー
-| 名前       | 型 | 説明|
-|:---------------|:--------|:----------|
-| Authorization  | string  | ベアラー {トークン}。必須。 |
-| Content-Type | string  | エンティティ本文内のデータの性質です。必須。 |
-
-## <a name="request-body"></a>要求本文
-要求本文で、[attachment](../resources/attachment.md) オブジェクトの JSON 表記を指定します。
+## <span data-ttu-id="a07ed-122">要求本文</span><span class="sxs-lookup"><span data-stu-id="a07ed-122">Request body</span></span>
+<a id="request-body" class="xliff"></a>
+<span data-ttu-id="a07ed-123">要求本文で、[attachment](../resources/attachment.md) オブジェクトの JSON 表記を指定します。</span><span class="sxs-lookup"><span data-stu-id="a07ed-123">In the request body, supply a JSON representation of [attachment](../resources/attachment.md) object.</span></span>
 
 
-## <a name="response"></a>応答
-成功した場合、このメソッドは `201, Created` 応答コードと、応答本文で [attachment](../resources/attachment.md) オブジェクトを返します。
+## <span data-ttu-id="a07ed-124">応答</span><span class="sxs-lookup"><span data-stu-id="a07ed-124">Response</span></span>
+<a id="response" class="xliff"></a>
+<span data-ttu-id="a07ed-125">成功した場合、このメソッドは `201, Created` 応答コードと、応答本文で [attachment](../resources/attachment.md) オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="a07ed-125">If successful, this method returns `201, Created` response code and [attachment](../resources/attachment.md) object in the response body.</span></span>
 
-## <a name="example-file-attachment"></a>例 (添付ファイル)
+## <span data-ttu-id="a07ed-126">例 (添付ファイル)</span><span class="sxs-lookup"><span data-stu-id="a07ed-126">Example (file attachment)</span></span>
+<a id="example-file-attachment" class="xliff"></a>
 
-##### <a name="request"></a>要求
-以下は、要求の例です。
+##### <span data-ttu-id="a07ed-127">要求</span><span class="sxs-lookup"><span data-stu-id="a07ed-127">Request</span></span>
+<a id="request" class="xliff"></a>
+<span data-ttu-id="a07ed-128">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="a07ed-128">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "create_file_attachment_from_event"
@@ -61,10 +31,11 @@ Content-length: 151
 }
 ```
 
-要求本文で、[Attachment](../resources/attachment.md) オブジェクトの JSON 表記を指定します。
+<span data-ttu-id="a07ed-129">要求本文で、[Attachment](../resources/attachment.md) オブジェクトの JSON 表記を指定します。</span><span class="sxs-lookup"><span data-stu-id="a07ed-129">In the request body, supply a JSON representation of [attachment](../resources/attachment.md) object.</span></span>
 
-##### <a name="response"></a>応答
-以下は、応答の例です。
+##### <span data-ttu-id="a07ed-130">応答</span><span class="sxs-lookup"><span data-stu-id="a07ed-130">Response</span></span>
+<a id="response" class="xliff"></a>
+<span data-ttu-id="a07ed-131">以下は、応答の例です。</span><span class="sxs-lookup"><span data-stu-id="a07ed-131">Here is an example of the response.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -89,11 +60,13 @@ Content-Length: 735
 }
 ```
 
-## <a name="example-item-attachment"></a>例 (項目の添付ファイル)
+## <span data-ttu-id="a07ed-132">例 (項目の添付ファイル)</span><span class="sxs-lookup"><span data-stu-id="a07ed-132">Example (item attachment)</span></span>
+<a id="example-item-attachment" class="xliff"></a>
 
-##### <a name="request"></a>要求
+##### <span data-ttu-id="a07ed-133">要求</span><span class="sxs-lookup"><span data-stu-id="a07ed-133">Request</span></span>
+<a id="request" class="xliff"></a>
 
-以下は、アイテムの添付ファイルとしてイベントを別のイベントに添付する例です。
+<span data-ttu-id="a07ed-134">以下は、アイテムの添付ファイルとしてイベントを別のイベントに添付する例です。</span><span class="sxs-lookup"><span data-stu-id="a07ed-134">Here is an example which attaches an event with another event as an item attachment.</span></span>
 
 <!-- {
   "blockType": "request",
@@ -126,8 +99,9 @@ Content-length: 600
 }
 ```
 
-##### <a name="response"></a>応答
-以下は、応答の例です。
+##### <span data-ttu-id="a07ed-135">応答</span><span class="sxs-lookup"><span data-stu-id="a07ed-135">Response</span></span>
+<a id="response" class="xliff"></a>
+<span data-ttu-id="a07ed-136">以下は、応答の例です。</span><span class="sxs-lookup"><span data-stu-id="a07ed-136">Here is an example of the response.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,

@@ -1,29 +1,11 @@
-# <a name="delete-contactfolder"></a>Delete contactFolder
-
-既定の contactFolder 以外の contactFolder を削除します。
-## <a name="prerequisites"></a>前提条件
-この API を実行するには、以下のいずれかの**スコープ**が必要です。*Contacts.ReadWrite*
-## <a name="http-request"></a>HTTP 要求
-<!-- { "blockType": "ignored" } -->
-```http
-DELETE /me/contactFolders/{id}
-DELETE /users/{id | userPrincipalName}/contactFolders/{id}
-```
-## <a name="request-headers"></a>要求ヘッダー
-| 名前       | 型 | 説明|
-|:---------------|:--------|:----------|
-| Authorization  | string  | ベアラー {トークン}。必須。 |
-
-## <a name="request-body"></a>要求本文
-このメソッドには、要求本文を指定しません。
-
-
-## <a name="response"></a>応答
+<span data-ttu-id="30d7d-p102">成功した場合、このメソッドは `204, No Content` 応答コードを返します。応答本文には何も返されません。</span><span class="sxs-lookup"><span data-stu-id="30d7d-p102">If successful, this method returns `204, No Content` response code. It does not return anything in the response body.</span></span>
 成功した場合、このメソッドは `204, No Content` 応答コードを返します。応答本文には何も返されません。
 
-## <a name="example"></a>例
-##### <a name="request"></a>要求
-以下は、要求の例です。
+## <span data-ttu-id="30d7d-119">例</span><span class="sxs-lookup"><span data-stu-id="30d7d-119">Example</span></span>
+<a id="example" class="xliff"></a>
+##### <span data-ttu-id="30d7d-120">要求</span><span class="sxs-lookup"><span data-stu-id="30d7d-120">Request</span></span>
+<a id="request" class="xliff"></a>
+<span data-ttu-id="30d7d-121">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="30d7d-121">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "delete_contactfolder"
@@ -31,8 +13,9 @@ DELETE /users/{id | userPrincipalName}/contactFolders/{id}
 ```http
 DELETE https://graph.microsoft.com/v1.0/me/contactFolders/{id}
 ```
-##### <a name="response"></a>応答
-以下は、応答の例です。 
+##### <span data-ttu-id="30d7d-122">応答</span><span class="sxs-lookup"><span data-stu-id="30d7d-122">Response</span></span>
+<a id="response" class="xliff"></a>
+<span data-ttu-id="30d7d-123">以下は、応答の例です。</span><span class="sxs-lookup"><span data-stu-id="30d7d-123">Here is an example of the response.</span></span> 
 <!-- {
   "blockType": "response",
   "truncated": true

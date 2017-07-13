@@ -1,47 +1,4 @@
-# <a name="message-createreply"></a>メッセージ: createReply
-
-返信メッセージの下書きを作成します。その後、下書きを[更新](../api/message_update.md)または[送信](../api/message_send.md)できます。
-
-## <a name="prerequisites"></a>前提条件
-この API を実行するには、以下のいずれかの**スコープ**が必要です。*Mail.ReadWrite*
-## <a name="http-request"></a>HTTP 要求
-<!-- { "blockType": "ignored" } -->
-```http
-POST /me/messages/{id}/createReply
-POST /users/{id | userPrincipalName}/messages/{id}/createReply
-POST /me/mailFolders/{id}/messages/{id}/createReply
-POST /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/createReply
-```
-## <a name="request-headers"></a>要求ヘッダー
-| 名前       | 型 | 説明|
-|:---------------|:--------|:----------|
-| Authorization  | string  | ベアラー {トークン}。必須。 |
-| Content-Type | string  | エンティティ本文内のデータの性質です。必須。 |
-
-## <a name="request-body"></a>要求本文
-
-## <a name="response"></a>応答
-成功した場合、このメソッドは `201, Created` 応答コードと、応答本文で [Message](../resources/message.md) オブジェクトを返します。
-
-## <a name="example"></a>例
-以下は、この API を呼び出す方法の例です。
-##### <a name="request"></a>要求
-以下は、要求の例です。
-<!-- {
-  "blockType": "request",
-  "name": "message_createreply"
-}-->
-```http
-POST https://graph.microsoft.com/v1.0/me/messages/{id}/createReply
-Content-type: application/json
-Content-length: 248
-
-{
-  "comment": "comment-value"
-}
-```
-
-##### <a name="response"></a>応答
+<span data-ttu-id="b2f30-p104">以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。</span><span class="sxs-lookup"><span data-stu-id="b2f30-p104">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。
 <!-- {
   "blockType": "response",

@@ -1,48 +1,22 @@
-# <a name="update-permission"></a>アクセス許可を更新する
-
-アクセス許可のプロパティを更新するには、リソースの更新プログラムを適用します。
-
-## <a name="prerequisites"></a>前提条件
-
-この API を実行するには、以下のいずれかの**スコープ**が必要です。
-
-* Files.ReadWrite
-* Files.ReadWrite.All
-* Shares.ReadWrite.All
-
-## <a name="http-request"></a>HTTP 要求
-
-<!-- { "blockType": "ignored" } -->
-```http
-PATCH /me/drive/items/{item-id}/permissions/{perm-id}
-PATCH /me/drive/root:/{path}:/permissions/{perm-id}
-PATCH /drives/{drive-id}/items/{item-id}/permissions/{perm-id}
-PATCH /groups/{group-id}/drive/items/{item-id}/permissions/{perm-id}
-```
-
-## <a name="request-headers"></a>要求ヘッダー
-
-| 名前          | 型   | 説明                                                                                                                                                                                       |
-|:--------------|:-------|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| if-match      | string | この要求ヘッダーが含まれていて、指定された eTag (または cTag) が項目の現在のタグに一致しない場合には、`412 Precondition Failed` 応答が返され、項目は削除されません。 |
-
-
-## <a name="request-body"></a>要求本文
+<span data-ttu-id="22b56-p101">要求本文で、更新する関連フィールドの値を指定します。要求本文に含まれない既存のプロパティは、以前の値のままになるか、他のプロパティ値の変化に基づいて再計算されます。最適なパフォーマンスを得るためには、変更されていない既存の値を含めないでください。</span><span class="sxs-lookup"><span data-stu-id="22b56-p101">In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.</span></span>
 要求本文で、更新する関連フィールドの値を指定します。要求本文に含まれない既存のプロパティは、以前の値のままになるか、他のプロパティ値の変化に基づいて再計算されます。最適なパフォーマンスを得るためには、変更されていない既存の値を含めないでください。
 
-| プロパティ     | 型   | 説明                   |
+| <span data-ttu-id="22b56-120">プロパティ</span><span class="sxs-lookup"><span data-stu-id="22b56-120">Property</span></span>     | <span data-ttu-id="22b56-121">型</span><span class="sxs-lookup"><span data-stu-id="22b56-121">Type</span></span>   | <span data-ttu-id="22b56-122">説明</span><span class="sxs-lookup"><span data-stu-id="22b56-122">Description</span></span>                   |
 |:-------------|:-------|:------------------------------|
-| **roles**    | String | アクセス許可の種類の配列。 |
+| <span data-ttu-id="22b56-123">**roles**</span><span class="sxs-lookup"><span data-stu-id="22b56-123">**roles**</span></span>    | <span data-ttu-id="22b56-124">String</span><span class="sxs-lookup"><span data-stu-id="22b56-124">String</span></span> | <span data-ttu-id="22b56-125">アクセス許可の種類の配列。</span><span class="sxs-lookup"><span data-stu-id="22b56-125">An array of permission types.</span></span> |
 
 
-## <a name="response"></a>応答
-成功した場合、このメソッドは `200 OK` 応答コードと、応答本文で、更新された[アクセス許可](../resources/permission.md)オブジェクトを返します。
+## <span data-ttu-id="22b56-126">応答</span><span class="sxs-lookup"><span data-stu-id="22b56-126">Response</span></span>
+<a id="response" class="xliff"></a>
+<span data-ttu-id="22b56-127">成功した場合、このメソッドは `200 OK` 応答コードと、応答本文で、更新された[アクセス許可](../resources/permission.md)オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="22b56-127">If successful, this method returns a `200 OK` response code and updated [permission](../resources/permission.md) object in the response body.</span></span>
 
-## <a name="example"></a>例
+## <span data-ttu-id="22b56-128">例</span><span class="sxs-lookup"><span data-stu-id="22b56-128">Example</span></span>
+<a id="example" class="xliff"></a>
 
-##### <a name="request"></a>要求
+##### <span data-ttu-id="22b56-129">要求</span><span class="sxs-lookup"><span data-stu-id="22b56-129">Request</span></span>
+<a id="request" class="xliff"></a>
 
-以下は、要求の例です。
+<span data-ttu-id="22b56-130">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="22b56-130">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "update_permission"
@@ -55,9 +29,10 @@ Content-type: application/json
   "roles": [ "read" ]
 }
 ```
-##### <a name="response"></a>応答
+##### <span data-ttu-id="22b56-131">応答</span><span class="sxs-lookup"><span data-stu-id="22b56-131">Response</span></span>
+<a id="response" class="xliff"></a>
 
-以下は、応答の例です。
+<span data-ttu-id="22b56-132">以下は、応答の例です。</span><span class="sxs-lookup"><span data-stu-id="22b56-132">Here is an example of the response.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,

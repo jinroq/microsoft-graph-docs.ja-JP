@@ -1,62 +1,11 @@
-# <a name="delete-open-extension"></a>オープン拡張機能を削除する
-
-指定されたリソースのインスタンスからオープン拡張機能 ([openTypeExtension](../resources/openTypeExtension.md) オブジェクト) を削除します。 
-
-## <a name="prerequisites"></a>前提条件
-
-この API を実行するには、拡張機能を削除するリソースに応じて、以下のいずれかの**アクセス許可**が必要です。
-
-|**サポートされているリソース**|**アクセス許可**|**サポートされているリソース**|**アクセス許可** |
-|:-----|:-----|:-----|:-----|
-| [device](../resources/device.md) | _Device.ReadWrite.All_ | [イベント](../resources/event.md) | _Calendars.ReadWrite_ |
-| [グループ](../resources/group.md) | _Group.ReadWrite.All_ | [グループ イベント](../resources/event.md) | _Group.ReadWrite.All_ |
-| [グループの投稿](../resources/post.md) | _Group.ReadWrite.All_ | [メッセージ](../resources/message.md) | _Mail.ReadWrite_ |
-| [組織](../resources/organization.md) | _Directory.AccessAsUser.All_ | [個人用連絡先](../resources/contact.md) | _Contacts.ReadWrite_ |
-| [ユーザー](../resources/user.md) | _Directory.AccessAsUser.All_ | | |
-
- 
-## <a name="http-request"></a>HTTP 要求
-要求で、リソース インスタンスを識別し、そのインスタンスの **extensions** ナビゲーション プロパティを使用して拡張機能を識別し、その拡張インスタンスで `DELETE` を行います。
-
-<!-- { "blockType": "ignored" } -->
-```http
-DELETE /devices/{Id}/extensions/{extensionId}
-DELETE /users/{id|userPrincipalName}/events/{id}/extensions/{extensionId}
-DELETE /groups/{id}/extensions/{extensionId}
-DELETE /groups/{id}/events/{id}/extensions/{extensionId}
-DELETE /groups/{id}/threads/{id}/posts/{id}/extensions/{extensionId}
-DELETE /users/{id|userPrincipalName}/messages/{id}/extensions/{extensionId}
-DELETE /organization/{Id}/extensions/{extensionId}
-DELETE /users/{id|userPrincipalName}/contacts/{id}/extensions/{extensionId}
-DELETE /users/{id|userPrincipalName}/extensions/{extensionId}
-```
-
->**注:**上記の構文は、拡張機能の削除元となるリソース インスタンスを特定する一般的な方法を示しています。こうしたリソース インスタンスを特定するために使用できる他の構文すべても、同様の方法でオープン拡張機能を削除できます。
-
-## <a name="parameters"></a>パラメーター
-|**パラメーター**|**型**|**説明**|
-|:-----|:-----|:-----|
-|_URL parameters_|
-|id|string|対応するコレクションのインスタンスの一意識別子。必須。|
-|extensionId|string|これは、拡張情報の一意のテキスト識別子である拡張情報名、または拡張情報の種類と一意のテキスト識別子を連結した完全修飾名になります。完全修飾名は、拡張情報を作成したときに、`id` プロパティで返されます。必須。|
-
-
-## <a name="request-headers"></a>要求ヘッダー
-| 名前       | 値 |
-|:---------------|:----------|
-| Authorization | ベアラー {トークン}。必須。 |
-
-
-## <a name="request-body"></a>要求本文
-このメソッドには、要求本文を指定しません。
-
-
-## <a name="response"></a>応答
+<span data-ttu-id="2e8cb-p105">成功した場合、このメソッドは `204, No Content` 応答コードを返します。応答本文には何も返されません。</span><span class="sxs-lookup"><span data-stu-id="2e8cb-p105">If successful, this method returns `204, No Content` response code. It does not return anything in the response body.</span></span>
 成功した場合、このメソッドは `204, No Content` 応答コードを返します。応答本文には何も返されません。
 
-## <a name="example"></a>例
-##### <a name="request"></a>要求
-最初の例では、名前で拡張情報を参照し、指定されたメッセージの拡張情報を削除します。
+## <span data-ttu-id="2e8cb-156">例</span><span class="sxs-lookup"><span data-stu-id="2e8cb-156">Example</span></span>
+<a id="example" class="xliff"></a>
+##### <span data-ttu-id="2e8cb-157">要求</span><span class="sxs-lookup"><span data-stu-id="2e8cb-157">Request</span></span>
+<a id="request" class="xliff"></a>
+<span data-ttu-id="2e8cb-158">最初の例では、名前で拡張情報を参照し、指定されたメッセージの拡張情報を削除します。</span><span class="sxs-lookup"><span data-stu-id="2e8cb-158">The first example references an extension by its name and deletes the extension in the specified message.</span></span>
 <!-- {
   "blockType": "request",
   "name": "delete_opentypeextension"
@@ -65,7 +14,7 @@ DELETE /users/{id|userPrincipalName}/extensions/{extensionId}
 DELETE https://graph.microsoft.com/v1.0/me/messages('AAMkAGE1M2IyNGNmLTI5MTktNDUyZi1iOTVl===')/extensions('Com.Contoso.Referral')
 ```
 
-2 番目の例では、指定されたグループ イベントの拡張機能を削除します。
+<span data-ttu-id="2e8cb-159">2 番目の例では、指定されたグループ イベントの拡張機能を削除します。</span><span class="sxs-lookup"><span data-stu-id="2e8cb-159">The second example deletes an extension in the specified group event.</span></span>
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -74,8 +23,9 @@ DELETE https://graph.microsoft.com/v1.0/groups('f5480dfd-7d77-4d0b-ba2e-3391953c
 
  
 
-##### <a name="response"></a>応答
-以下は、応答の例です。
+##### <span data-ttu-id="2e8cb-160">応答</span><span class="sxs-lookup"><span data-stu-id="2e8cb-160">Response</span></span>
+<a id="response" class="xliff"></a>
+<span data-ttu-id="2e8cb-161">以下は、応答の例です。</span><span class="sxs-lookup"><span data-stu-id="2e8cb-161">Here is an example of the response.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": false

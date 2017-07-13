@@ -1,38 +1,12 @@
-# <a name="send-mail"></a>メールを送信する
-
-要求本文に指定されたメッセージを送信します。メッセージは、既定で [送信済みアイテム] フォルダーに保存されます。
-
-[添付ファイル](../resources/fileattachment.md) を同じ **sendMail** アクション呼び出しに含めることができます。
-
-## <a name="prerequisites"></a>前提条件
-この API を実行するには、以下のいずれかの**スコープ**が必要です。*Mail.Send*
-
-## <a name="http-request"></a>HTTP 要求
-<!-- { "blockType": "ignored" } -->
-```http
-POST /users/{id | userPrincipalName}/sendMail
-```
-## <a name="request-headers"></a>要求ヘッダー
-| ヘッダー       | 値 |
-|:---------------|:--------|
-| Authorization  | ベアラー {トークン}。必須。  |
-| Content-Type  | application/json  |
-
-## <a name="request-body"></a>要求本文
-要求本文で、次のパラメーターを含む JSON オブジェクトを指定します。
-
-| パラメーター    | 型   |説明|
-|:---------------|:--------|:----------|
-|Message|[Message](../resources/message.md)|送信するメッセージです。必須。|
-|SaveToSentItems|Boolean|[送信済みアイテム] 内のメッセージを保存するかどうかを示します。パラメーターを false にする場合にのみ指定します。既定では true です。省略可能。 |
-
-## <a name="response"></a>応答
+<span data-ttu-id="1643b-p105">成功した場合、このメソッドは `202, Accepted` 応答コードを返します。応答本文には何も返されません。</span><span class="sxs-lookup"><span data-stu-id="1643b-p105">If successful, this method returns `202, Accepted` response code. It does not return anything in the response body.</span></span>
 成功した場合、このメソッドは `202, Accepted` 応答コードを返します。応答本文には何も返されません。
 
-## <a name="example"></a>例
-以下は、この API を呼び出す方法の例です。
-##### <a name="request"></a>要求
-以下は、要求の例です。
+## <span data-ttu-id="1643b-133">例</span><span class="sxs-lookup"><span data-stu-id="1643b-133">Example</span></span>
+<a id="example" class="xliff"></a>
+<span data-ttu-id="1643b-134">以下は、この API を呼び出す方法の例です。</span><span class="sxs-lookup"><span data-stu-id="1643b-134">Here is an example of how to call this API.</span></span>
+##### <span data-ttu-id="1643b-135">要求</span><span class="sxs-lookup"><span data-stu-id="1643b-135">Request</span></span>
+<a id="request" class="xliff"></a>
+<span data-ttu-id="1643b-136">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="1643b-136">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "user_sendmail"
@@ -68,8 +42,9 @@ Content-length: 512
 }
 ```
 
-##### <a name="response"></a>応答
-以下は、応答の例です。
+##### <span data-ttu-id="1643b-137">応答</span><span class="sxs-lookup"><span data-stu-id="1643b-137">Response</span></span>
+<a id="response" class="xliff"></a>
+<span data-ttu-id="1643b-138">以下は、応答の例です。</span><span class="sxs-lookup"><span data-stu-id="1643b-138">Here is an example of the response.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true

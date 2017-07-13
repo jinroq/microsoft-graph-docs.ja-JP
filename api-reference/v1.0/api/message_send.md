@@ -1,29 +1,12 @@
-# <a name="message-send"></a>メッセージ: send
-
-下書きフォルダー内のメッセージを送信します。新しい下書きメッセージ、返信の下書き、全員へ返信の下書き、あるいは転送の下書きが下書きメッセージとなります。その後、メッセージは [送信済みアイテム] フォルダーに保存されます。
-
-## <a name="prerequisites"></a>前提条件
-この API を実行するには、以下のいずれかの**スコープ**が必要です。*Mail.Send*
-## <a name="http-request"></a>HTTP 要求
-<!-- { "blockType": "ignored" } -->
-```http
-POST /me/messages/{id}/send
-POST /users/{id | userPrincipalName}/messages/{id}/send
-```
-## <a name="request-headers"></a>要求ヘッダー
-| 名前       | 型 | 説明|
-|:---------------|:--------|:----------|
-| Authorization  | string  | ベアラー {トークン}。必須。 |
-
-## <a name="request-body"></a>要求本文
-
-## <a name="response"></a>応答
+<span data-ttu-id="62336-p103">成功した場合、このメソッドは `202, Accepted` 応答コードを返します。応答本文には何も返されません。</span><span class="sxs-lookup"><span data-stu-id="62336-p103">If successful, this method returns `202, Accepted` response code. It does not return anything in the response body.</span></span>
 成功した場合、このメソッドは `202, Accepted` 応答コードを返します。応答本文には何も返されません。
 
-## <a name="example"></a>例
-以下は、この API を呼び出す方法の例です。
-##### <a name="request"></a>要求
-以下は、要求の例です。
+## <span data-ttu-id="62336-120">例</span><span class="sxs-lookup"><span data-stu-id="62336-120">Example</span></span>
+<a id="example" class="xliff"></a>
+<span data-ttu-id="62336-121">以下は、この API を呼び出す方法の例です。</span><span class="sxs-lookup"><span data-stu-id="62336-121">Here is an example of how to call this API.</span></span>
+##### <span data-ttu-id="62336-122">要求</span><span class="sxs-lookup"><span data-stu-id="62336-122">Request</span></span>
+<a id="request" class="xliff"></a>
+<span data-ttu-id="62336-123">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="62336-123">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "message_send"
@@ -32,9 +15,11 @@ POST /users/{id | userPrincipalName}/messages/{id}/send
 POST https://graph.microsoft.com/v1.0/me/messages/{id}/send
 ```
 
-##### <a name="response"></a>応答
-##### <a name="response"></a>応答
-以下は、応答の例です。
+##### <span data-ttu-id="62336-124">応答</span><span class="sxs-lookup"><span data-stu-id="62336-124">Response</span></span>
+<a id="response" class="xliff"></a>
+##### <span data-ttu-id="62336-125">応答</span><span class="sxs-lookup"><span data-stu-id="62336-125">Response</span></span>
+<a id="response" class="xliff"></a>
+<span data-ttu-id="62336-126">以下は、応答の例です。</span><span class="sxs-lookup"><span data-stu-id="62336-126">Here is an example of the response.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true

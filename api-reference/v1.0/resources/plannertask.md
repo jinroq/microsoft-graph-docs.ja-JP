@@ -1,56 +1,8 @@
-# plannerTask のリソースの種類
-<a id="plannertask-resource-type" class="xliff"></a>
+<span data-ttu-id="adf26-p118">読み取り専用。Null 許容型。進捗状態別にグループ化されるときに、タスク ボード ビューにタスクを正しくレンダリングするために使用されます。</span><span class="sxs-lookup"><span data-stu-id="adf26-p118">Read-only. Nullable. Used to render the task correctly in the task board view when grouped by progress.</span></span>| 読み取り専用。Null 許容型。進捗状態別にグループ化されるときに、タスク ボード ビューにタスクを正しくレンダリングするために使用されます。|
 
-**plannerTask** リソースは、Office 365 の Planner のタスクを表します。Planner のタスクは [plan](plannerplan.md) に格納され、また、タスクは計画の中の [bucket](plannerbucket.md) に割り当てることができます。各タスクオブジェクトには、タスクについてのより詳細な情報を保持するための [details](plannertaskdetails.md) オブジェクトがあります。グループ、プラン、タスクの関係についての詳細は「[概要](planner_overview.md)」を参照してください。
-
-
-## メソッド
-<a id="methods" class="xliff"></a>
-
-| メソッド           | 戻り値の型    |説明|
-|:---------------|:--------|:----------|
-|[Get plannerTask](../api/plannertask_get.md) | [plannerTask](plannertask.md) |**plannerTask** オブジェクトのプロパティとリレーションシップを読み取ります。|
-|[Update](../api/plannertask_update.md) | [plannerTask](plannertask.md) |**plannerTask** オブジェクトを更新します。 |
-|[Delete](../api/plannertask_delete.md) | なし |**plannerTask** オブジェクトを削除します。 |
-
-## プロパティ
-<a id="properties" class="xliff"></a>
-| プロパティ     | 型   |説明|
-|:---------------|:--------|:----------|
-|activeChecklistItemCount|Int32|チェックリストの項目数で、値が「false」である場合は、不完全な項目があることを示します。|
-|appliedCategories|[plannerAppliedCategories](plannerappliedcategories.md)|タスクが適用されているカテゴリ。可能な値については、「[適用されるカテゴリ](plannerappliedcategories.md)」を参照してください。|
-|assigneePriority|String|リスト ビューでこの種類の項目の順序付けに使用するヒント。形式は[ここ](planner_order_hint_format.md)の説明に従って定義されます。|
-|assignments|[plannerAssignments](plannerassignments.md)|タスクが割り当てられている一連の担当者。|
-|bucketId|String|タスクが属しているバケット ID。バケットは、タスクが存在している計画に含まれている必要があります。28 文字長で、大文字と小文字の区別があります。[書式検証](planner_identifiers_disclaimer.md)はサービスによって行われます。 |
-|checklistItemCount|Int32|タスクに存在するチェックリストの項目の数です。|
-|completedBy|[identitySet](identityset.md)|タスクを完了したユーザーの ID。|
-|CompletedDateTime|DateTimeOffset|読み取り専用。タスクの `'percentComplete'` が `'100'` にセットされる日時。Timestamp 型は、ISO 8601 形式を使用して日付と時刻の情報を表し、必ず UTC 時間です。たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、次のようになります。`'2014-01-01T00:00:00Z'`|
-|conversationThreadId|String|タスク内の会話のスレッド ID。これは、グループ内に作成された会話スレッド オブジェクトの ID です。|
-|createdBy|[identitySet](identityset.md)|タスクを作成したユーザーの ID。|
-|createdDateTime|DateTimeOffset|読み取り専用。タスクが作成された日時。Timestamp 型は、ISO 8601 形式を使用して日付と時刻の情報を表し、必ず UTC 時間です。たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、次のようになります。`'2014-01-01T00:00:00Z'`|
-|dueDateTime|DateTimeOffset|タスクが期限切れになる日時。Timestamp 型は、ISO 8601 形式を使用して日付と時刻の情報を表し、必ず UTC 時間です。たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、次のようになります。`'2014-01-01T00:00:00Z'`|
-|hasDescription|Boolean|読み取り専用。タスクの details オブジェクトが保持する説明が空でない場合、値は `true` になり、そうでない場合は `false` になります。|
-|id|String|読み取り専用。タスクの ID。28 文字長で、大文字と小文字の区別があります。[書式検証](planner_identifiers_disclaimer.md)はサービスによって行われます。|
-|orderHint|String|リスト ビューでこの種類の項目の順序付けに使用するヒント。形式は[ここ](planner_order_hint_format.md)の説明に従って定義されます。|
-|percentComplete|Int32|タスクの完了の割合。`100` に設定すると、タスクが完了したと見なされます。 |
-|planId|String|タスクが属している計画 ID。|
-|previewType|string|タスクに表示されるプレビューの種類を設定します。使用可能な値: `automatic`、`noPreview`、`checklist`、`description`、`reference`。|
-|referenceCount|Int32|タスクに上に存在している外部への参照の数。|
-|startDateTime|DateTimeOffset|タスクが開始される日時。Timestamp 型は、ISO 8601 形式を使用して日付と時刻の情報を表し、必ず UTC 時間です。たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、次のようになります。`'2014-01-01T00:00:00Z'`|
-|title|String|タスクのタイトル。|
-
-## リレーションシップ
-<a id="relationships" class="xliff"></a>
-| リレーションシップ | 型   |説明|
-|:---------------|:--------|:----------|
-|assignedToTaskBoardFormat|[plannerAssignedToTaskBoardTaskFormat](plannerassignedtotaskboardtaskformat.md)| 読み取り専用。Null 許容型。assignedTo 別にグループ化されるときに、タスク ボード ビューにタスクを正しくレンダリングするために使用されます。|
-|bucketTaskBoardFormat|[plannerBucketTaskBoardTaskFormat](plannerbuckettaskboardtaskformat.md)| 読み取り専用。Null 許容型。バケット別にグループ化されるときに、タスク ボード ビューにタスクを正しくレンダリングするために使用されます。|
-|詳細説明|[plannerTaskDetails](plannertaskdetails.md)| 読み取り専用。Null 許容型。タスクに関する追加の詳細。|
-|progressTaskBoardFormat|[plannerProgressTaskBoardTaskFormat](plannerprogresstaskboardtaskformat.md)| 読み取り専用。Null 許容型。進捗状態別にグループ化されるときに、タスク ボード ビューにタスクを正しくレンダリングするために使用されます。|
-
-## JSON 表記
+## <span data-ttu-id="adf26-233">JSON 表記</span><span class="sxs-lookup"><span data-stu-id="adf26-233">JSON representation</span></span>
 <a id="json-representation" class="xliff"></a>
-以下は、リソースの JSON 表記です。
+<span data-ttu-id="adf26-234">以下は、リソースの JSON 表記です。</span><span class="sxs-lookup"><span data-stu-id="adf26-234">Here is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",

@@ -1,37 +1,4 @@
-# <a name="list-overrides"></a>オーバーライドを一覧表示する
-
-ユーザーが設定したオーバーライドを取得して、特定の送信者からのメッセージを常に一定の方法で分類します。
-
-それぞれのオーバーライドは、送信者の SMTP アドレスに対応します。最初は、ユーザーにはオーバーライドはありません。
-## <a name="prerequisites"></a>前提条件
-この API を実行するために必要な**スコープ**は、次のとおりです。*Mail.Read*
-## <a name="http-request"></a>HTTP 要求
-<!-- { "blockType": "ignored" } -->
-```http
-GET /me/inferenceClassification/overrides
-GET /users/{id}/inferenceClassification/overrides
-```
-
-## <a name="request-headers"></a>要求ヘッダー
-| 名前       | 型 | 説明|
-|:---------------|:--------|:----------|
-| Authorization  | string  | ベアラー {トークン}。必須。 |
-
-## <a name="request-body"></a>要求本文
-このメソッドには、要求本文を指定しません。
-## <a name="response"></a>応答
-成功した場合、このメソッドは `200 OK` 応答コードと、応答本文で [inferenceClassificationOverride](../resources/inferenceclassificationoverride.md) オブジェクトのコレクションを返します。ユーザーがオーバーライドを設定していない場合は、空のコレクションが返されます。
-## <a name="example"></a>例
-##### <a name="request"></a>要求
-以下は、要求の例です。
-<!-- {
-  "blockType": "request",
-  "name": "get_overrides"
-}-->
-```http
-GET https://graph.microsoft.com/v1.0/me/inferenceClassification/overrides
-```
-##### <a name="response"></a>応答
+<span data-ttu-id="646f4-p104">以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。</span><span class="sxs-lookup"><span data-stu-id="646f4-p104">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。
 <!-- {
   "blockType": "response",

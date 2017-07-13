@@ -1,16 +1,19 @@
-# <a name="create-a-new-folder"></a>新しいフォルダーを作成する
+# <span data-ttu-id="d402e-101">新しいフォルダーを作成する</span><span class="sxs-lookup"><span data-stu-id="d402e-101">Create a new folder</span></span>
+<a id="create-a-new-folder" class="xliff"></a>
 
-[ドライブ](../resources/drive.md) 内に、新しいフォルダーまたは [DriveItem](../resources/driveitem.md) を指定された親アイテムやパスと共に作成します。
+<span data-ttu-id="d402e-102">[ドライブ](../resources/drive.md) 内に、新しいフォルダーまたは [DriveItem](../resources/driveitem.md) を指定された親アイテムやパスと共に作成します。</span><span class="sxs-lookup"><span data-stu-id="d402e-102">Create a new folder or [DriveItem](../resources/driveitem.md) in a [Drive](../resources/drive.md) with a specified parent item or path.</span></span>
 
-## <a name="prerequisites"></a>前提条件
-この API を実行するには、以下のいずれかの**スコープ**が必要です。
+## <span data-ttu-id="d402e-103">前提条件</span><span class="sxs-lookup"><span data-stu-id="d402e-103">Prerequisites</span></span>
+<a id="prerequisites" class="xliff"></a>
+<span data-ttu-id="d402e-104">この API を実行するには、以下のいずれかの**スコープ**が必要です。</span><span class="sxs-lookup"><span data-stu-id="d402e-104">One of the following **scopes** is required to execute this API:</span></span>
 
-* Files.ReadWrite
-* Files.ReadWrite.All
-* Sites.ReadWrite.All
+* <span data-ttu-id="d402e-105">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="d402e-105">Files.ReadWrite</span></span>
+* <span data-ttu-id="d402e-106">Files.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="d402e-106">Files.ReadWrite.All</span></span>
+* <span data-ttu-id="d402e-107">Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="d402e-107">Sites.ReadWrite.All</span></span>
 
 
-## <a name="http-request"></a>HTTP 要求
+## <span data-ttu-id="d402e-108">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="d402e-108">HTTP request</span></span>
+<a id="http-request" class="xliff"></a>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /me/drive/root/children
@@ -19,17 +22,21 @@ POST /drives/{drive-id}/items/{parent-item-id}/children
 POST /groups/{group-id}/drive/items/{parent-item-id}/children
 ```
 
-## <a name="request-body"></a>要求本文
-要求本文で、作成する [DriveItem](../resources/driveitem.md) リソースの JSON 表記を指定します。
+## <span data-ttu-id="d402e-109">要求本文</span><span class="sxs-lookup"><span data-stu-id="d402e-109">Request body</span></span>
+<a id="request-body" class="xliff"></a>
+<span data-ttu-id="d402e-110">要求本文で、作成する [DriveItem](../resources/driveitem.md) リソースの JSON 表記を指定します。</span><span class="sxs-lookup"><span data-stu-id="d402e-110">In the request body, supply a JSON representation of the [DriveItem](../resources/driveitem.md) resource to create.</span></span>
 
 
-## <a name="response"></a>応答
-成功した場合、このメソッドは `201 Created` 応答コードと、応答本文で [Driveitem](../resources/driveitem.md) リソースを返します。
+## <span data-ttu-id="d402e-111">応答</span><span class="sxs-lookup"><span data-stu-id="d402e-111">Response</span></span>
+<a id="response" class="xliff"></a>
+<span data-ttu-id="d402e-112">成功した場合、このメソッドは `201 Created` 応答コードと、応答本文で [Driveitem](../resources/driveitem.md) リソースを返します。</span><span class="sxs-lookup"><span data-stu-id="d402e-112">If successful, this method returns `201 Created` response code and a [Driveitem](../resources/driveitem.md) resource in the response body.</span></span>
 
-## <a name="example"></a>例
+## <span data-ttu-id="d402e-113">例</span><span class="sxs-lookup"><span data-stu-id="d402e-113">Example</span></span>
+<a id="example" class="xliff"></a>
 
-##### <a name="request"></a>要求
-以下は、ユーザーの OneDrive のルートに新しいフォルダーを作成する要求の例です。
+##### <span data-ttu-id="d402e-114">要求</span><span class="sxs-lookup"><span data-stu-id="d402e-114">Request</span></span>
+<a id="request" class="xliff"></a>
+<span data-ttu-id="d402e-115">以下は、ユーザーの OneDrive のルートに新しいフォルダーを作成する要求の例です。</span><span class="sxs-lookup"><span data-stu-id="d402e-115">Here is an example of the request to create a new folder in the user's OneDrive root.</span></span>
 
 <!-- {
   "blockType": "request",
@@ -45,9 +52,10 @@ Content-Type: application/json
 }
 ```
 
-##### <a name="response"></a>応答
+##### <span data-ttu-id="d402e-116">応答</span><span class="sxs-lookup"><span data-stu-id="d402e-116">Response</span></span>
+<a id="response" class="xliff"></a>
 
-以下は、応答の例です。
+<span data-ttu-id="d402e-117">以下は、応答の例です。</span><span class="sxs-lookup"><span data-stu-id="d402e-117">Here is an example of the response.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,

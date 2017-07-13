@@ -1,39 +1,12 @@
-# <a name="post-forward"></a>投稿: 転送
-
-受信者に投稿を転送します。要求内で親の会話とスレッドの両方を指定するか、または親の会話を使用せずに親スレッドだけを指定することができます。 
-
-## <a name="prerequisites"></a>前提条件
-この API を実行するには、以下のいずれかの**スコープ**が必要です。
-
-*Group.ReadWrite*, *Group.Readwrite.All*
-
-## <a name="http-request"></a>HTTP 要求
-<!-- { "blockType": "ignored" } -->
-```http
-POST /groups/{id}/threads/{id}/posts/{id}/forward
-POST /groups/{id}/conversations/{id}/threads/{id}/posts/{id}/forward
-
-```
-## <a name="request-headers"></a>要求ヘッダー
-| ヘッダー       | 値 |
-|:---------------|:--------|
-| Authorization  | ベアラー {トークン}。必須。  |
-
-## <a name="request-body"></a>要求本文
-要求本文で、次のパラメーターを含む JSON オブジェクトを指定します。
-
-| パラメーター    | 型   |説明|
-|:---------------|:--------|:----------|
-|comment|String|投稿と共に転送されるオプションのコメント。|
-|toRecipients|[recipient](../resources/recipient.md) collection|スレッドの転送先となる受信者。|
-
-## <a name="response"></a>応答
+<span data-ttu-id="dd296-p103">成功した場合、このメソッドは `200, OK` 応答コードを返します。応答本文には何も返されません。</span><span class="sxs-lookup"><span data-stu-id="dd296-p103">If successful, this method returns `200, OK` response code. It does not return anything in the response body.</span></span>
 成功した場合、このメソッドは `200, OK` 応答コードを返します。応答本文には何も返されません。
 
-## <a name="example"></a>例
-以下は、この API を呼び出す方法の例です。
-##### <a name="request"></a>要求
-以下は、要求の例です。
+## <span data-ttu-id="dd296-128">例</span><span class="sxs-lookup"><span data-stu-id="dd296-128">Example</span></span>
+<a id="example" class="xliff"></a>
+<span data-ttu-id="dd296-129">以下は、この API を呼び出す方法の例です。</span><span class="sxs-lookup"><span data-stu-id="dd296-129">Here is an example of how to call this API.</span></span>
+##### <span data-ttu-id="dd296-130">要求</span><span class="sxs-lookup"><span data-stu-id="dd296-130">Request</span></span>
+<a id="request" class="xliff"></a>
+<span data-ttu-id="dd296-131">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="dd296-131">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "post_forward"
@@ -56,8 +29,9 @@ Content-length: 166
 }
 ```
 
-##### <a name="response"></a>応答
-以下は、応答の例です。
+##### <span data-ttu-id="dd296-132">応答</span><span class="sxs-lookup"><span data-stu-id="dd296-132">Response</span></span>
+<a id="response" class="xliff"></a>
+<span data-ttu-id="dd296-133">以下は、応答の例です。</span><span class="sxs-lookup"><span data-stu-id="dd296-133">Here is an example of the response.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true

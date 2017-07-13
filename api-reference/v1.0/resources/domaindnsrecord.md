@@ -1,30 +1,12 @@
-# domainDnsRecord リソースの種類
-<a id="domaindnsrecord-resource-type" class="xliff"></a>
+<span data-ttu-id="6bf19-p104">DNS ホストの DNS レコードの Time to Live (TTL) のプロパティを構成するときに使用する値です。null 許容ではありません</span><span class="sxs-lookup"><span data-stu-id="6bf19-p104">Value to use when configuring the time-to-live (ttl) property of the DNS record at the DNS host. Not nullable</span></span>| DNS ホストの DNS レコードの Time to Live (TTL) のプロパティを構成するときに使用する値です。null 許容ではありません |
 
-テナント内の各ドメインでは、Microsoft オンライン サービスでドメインを使用できるようにするために、DNS レコードをそのドメインの DNS ゾーン ファイルに追加しなければならない場合があります。**DomainDnsRecord** エンティティはこのような DNS レコードの表示に使用されます。[DomainDnsCnameRecord](domaindnscnamerecord.md)、[DomainDnsMxRecord](domaindnsmxrecord.md)、[DomainDnsSrvRecord](domaindnssrvrecord.md)、[DomainDnsSrvRecord](domaindnssrvrecord.md) エンティティのベース エンティティ。
-
-## メソッド
-<a id="methods" class="xliff"></a>
-このリソースへの直接クエリはサポートされていません。ドメイン サービス レコードのクエリを実行する方法の詳細については、[ドメイン](domain.md)のトピックを参照してください。
-
-## プロパティ
-<a id="properties" class="xliff"></a>
-| プロパティ     | 型   |説明|
-|:---------------|:--------|:----------|
-|id|String| このエンティティに割り当てられた一意の識別子。null 許容ではありません。読み取り専用です。|
-|isOptional|Boolean| False の場合、このレコードは Microsoft オンライン サービスでドメインを正しく操作するために、DNS ホストで顧客によって構成されている必要があります。 |
-|label|String| DNS ホストで DNS レコードの名前を設定するときに使用する値。 |
-|recordType|String| このエンティティが表す DNS レコードの種類を示します。</br></br>値は次のいずれかを指定できます。*CName*、*Mx*、*Srv*、*Txt*</br></br>キー |
-|supportedService|String| Microsoft オンライン サービスまたはこの DNS レコードに依存している機能。</br></br>次のいずれかの値を指定できます。**null**、*Email*、*Sharepoint*、*EmailInternalRelayOnly*、*OfficeCommunicationsOnline*、*SharePointDefaultDomain*、*FullRedelegation*、*SharePointPublic*、*OrgIdAuthentication*、*Yammer*、*Intune*|
-|ttl|Int32| DNS ホストの DNS レコードの Time to Live (TTL) のプロパティを構成するときに使用する値です。null 許容ではありません |
-
-## リレーションシップ
+## <span data-ttu-id="6bf19-135">リレーションシップ</span><span class="sxs-lookup"><span data-stu-id="6bf19-135">Relationships</span></span>
 <a id="relationships" class="xliff"></a>
-なし
+<span data-ttu-id="6bf19-136">なし</span><span class="sxs-lookup"><span data-stu-id="6bf19-136">None</span></span>
 
-## JSON 表記
+## <span data-ttu-id="6bf19-137">JSON 表記</span><span class="sxs-lookup"><span data-stu-id="6bf19-137">JSON representation</span></span>
 <a id="json-representation" class="xliff"></a>
-以下は、リソースの JSON 表記です。
+<span data-ttu-id="6bf19-138">以下は、リソースの JSON 表記です。</span><span class="sxs-lookup"><span data-stu-id="6bf19-138">Here is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",

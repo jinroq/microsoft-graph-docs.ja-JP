@@ -1,39 +1,12 @@
-# <a name="range-merge"></a>範囲: マージ
-
-範囲内のセルをワークシートの 1 つの領域にマージします。
-## <a name="prerequisites"></a>前提条件
-この API を実行するために必要な**スコープ**は、次のとおりです。 
-
-    * Files.ReadWrite
-
-## <a name="http-request"></a>HTTP 要求
-<!-- { "blockType": "ignored" } -->
-```http
-POST /workbook/names(<name>)/range/merge
-POST /workbook/worksheets/{id|name}/range(<address>)/merge
-POST /workbook/tables/{id|name}/columns/{id|name}/range/merge
-
-```
-## <a name="request-headers"></a>要求ヘッダー
-| 名前       | 説明|
-|:---------------|:----------|
-| Authorization  | ベアラー {トークン}。必須。 |
-
-
-## <a name="request-body"></a>要求本文
-要求本文で、次のパラメーターを含む JSON オブジェクトを指定します。
-
-| パラメーター    | 型   |説明|
-|:---------------|:--------|:----------|
-|across|boolean|省略可能。指定した範囲のセルを行ごとに結合して、行ごとに別のセルを作成する場合は True に設定します。既定値は False です。|
-
-## <a name="response"></a>応答
+<span data-ttu-id="d0c59-p103">成功した場合、このメソッドは `200, OK` 応答コードを返します。応答本文には何も返されません。</span><span class="sxs-lookup"><span data-stu-id="d0c59-p103">If successful, this method returns `200, OK` response code. It does not return anything in the response body.</span></span>
 成功した場合、このメソッドは `200, OK` 応答コードを返します。応答本文には何も返されません。
 
-## <a name="example"></a>例
-以下は、この API を呼び出す方法の例です。
-##### <a name="request"></a>要求
-以下は、要求の例です。
+## <span data-ttu-id="d0c59-126">例</span><span class="sxs-lookup"><span data-stu-id="d0c59-126">Example</span></span>
+<a id="example" class="xliff"></a>
+<span data-ttu-id="d0c59-127">以下は、この API を呼び出す方法の例です。</span><span class="sxs-lookup"><span data-stu-id="d0c59-127">Here is an example of how to call this API.</span></span>
+##### <span data-ttu-id="d0c59-128">要求</span><span class="sxs-lookup"><span data-stu-id="d0c59-128">Request</span></span>
+<a id="request" class="xliff"></a>
+<span data-ttu-id="d0c59-129">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="d0c59-129">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "range_merge"
@@ -48,8 +21,9 @@ Content-length: 20
 }
 ```
 
-##### <a name="response"></a>応答
-以下は、応答の例です。 
+##### <span data-ttu-id="d0c59-130">応答</span><span class="sxs-lookup"><span data-stu-id="d0c59-130">Response</span></span>
+<a id="response" class="xliff"></a>
+<span data-ttu-id="d0c59-131">以下は、応答の例です。</span><span class="sxs-lookup"><span data-stu-id="d0c59-131">Here is an example of the response.</span></span> 
 <!-- {
   "blockType": "response",
   "truncated": true,

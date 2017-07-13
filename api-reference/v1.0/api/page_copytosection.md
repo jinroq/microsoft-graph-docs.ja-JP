@@ -1,42 +1,12 @@
-# <a name="page-copytosection"></a>page: copyToSection
-特定のセクションにページをコピーします。
-
-Copy 操作では、非同期の呼び出しパターンに従います。まず Copy 操作を呼び出し、次いで結果の操作エンドポイントをポーリングします。
-
-## <a name="prerequisites"></a>前提条件
-この API を実行するには、以下のいずれかの**スコープ**が必要です。   
-
-Notes.Create、Notes.ReadWrite、Notes.ReadWrite.All  
-
-## <a name="http-request"></a>HTTP 要求
-<!-- { "blockType": "ignored" } -->
-```http
-POST /me/onenote/pages/{id}/copyToSection
-POST /users/{id | userPrincipalName}/onenote/pages/{id}/copyToSection
-POST /groups/{id}/onenote/pages/{id}/copyToSection
-```
-## <a name="request-headers"></a>要求ヘッダー
-| 名前       | 型 | 説明|
-|:---------------|:--------|:----------|
-| Authorization  | string  | ベアラー {トークン}。必須。 |
-| Content-Type | string | `application/json` |
-
-## <a name="request-body"></a>要求本文
-要求本文では、操作に必要なパラメーターを格納する JSON オブジェクトを指定します。
-
-| パラメーター    | 型   |説明|
-|:---------------|:--------|:----------|
-|groupId|String|コピー先グループの ID。Office 365 グループにコピーする場合にのみ使用します。|
-|id|String|必須。コピー先セクションの ID です。|
-
-
-## <a name="response"></a>応答
+<span data-ttu-id="5d8b7-p104">成功した場合、このメソッドは `202 Accepted` 応答コードと `Operation-Location` ヘッダーを返します。Operation-Location エンドポイントをポーリングして、[コピー操作の状態を取得します](onenoteoperation_get.md)。</span><span class="sxs-lookup"><span data-stu-id="5d8b7-p104">If successful, this method returns a `202 Accepted` response code and an `Operation-Location` header. Poll the Operation-Location endpoint to [get the status of the copy operation](onenoteoperation_get.md).</span></span>
 成功した場合、このメソッドは `202 Accepted` 応答コードと `Operation-Location` ヘッダーを返します。Operation-Location エンドポイントをポーリングして、[コピー操作の状態を取得します](onenoteoperation_get.md)。
 
-## <a name="example"></a>例
-以下は、この API を呼び出す方法の例です。
-##### <a name="request"></a>要求
-以下は、要求の例です。
+## <span data-ttu-id="5d8b7-134">例</span><span class="sxs-lookup"><span data-stu-id="5d8b7-134">Example</span></span>
+<a id="example" class="xliff"></a>
+<span data-ttu-id="5d8b7-135">以下は、この API を呼び出す方法の例です。</span><span class="sxs-lookup"><span data-stu-id="5d8b7-135">Here is an example of how to call this API.</span></span>
+##### <span data-ttu-id="5d8b7-136">要求</span><span class="sxs-lookup"><span data-stu-id="5d8b7-136">Request</span></span>
+<a id="request" class="xliff"></a>
+<span data-ttu-id="5d8b7-137">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="5d8b7-137">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "page_copytosection"
@@ -52,8 +22,9 @@ Content-length: 52
 }
 ```
 
-##### <a name="response"></a>応答
-以下は、応答の例です。
+##### <span data-ttu-id="5d8b7-138">応答</span><span class="sxs-lookup"><span data-stu-id="5d8b7-138">Response</span></span>
+<a id="response" class="xliff"></a>
+<span data-ttu-id="5d8b7-139">以下は、応答の例です。</span><span class="sxs-lookup"><span data-stu-id="5d8b7-139">Here is an example of the response.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,

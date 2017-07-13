@@ -1,33 +1,8 @@
-<a id="planneruser-resource-type" class="xliff"></a>
-# plannerUser リソースの種類
+<span data-ttu-id="b866c-p104">読み取り専用です。Null 許容型。ユーザーと共有している [plannerPlans](plannerplan.md) を返します。</span><span class="sxs-lookup"><span data-stu-id="b866c-p104">Read-only. Nullable. Returns the [plannerPlans](plannerplan.md) shared with the user.</span></span>| 読み取り専用です。Null 許容型。ユーザーと共有している [plannerPlans](plannerplan.md) を返します。|
 
-**plannerUser** リソースは、[user](user.md) のプランナー リソースへのアクセスを提供します。使用可能なプロパティは含まれていません。
-
-
-<a id="methods" class="xliff"></a>
-## メソッド
-
-| メソッド           | 戻り値の型    |説明|
-|:---------------|:--------|:----------|
-|[plans を一覧表示する](../api/planneruser_list_plans.md) |[plannerPlan](plannerplan.md) コレクション| **plannerPlan** オブジェクト コレクションを取得します。|
-|[List tasks](../api/planneruser_list_tasks.md) |[plannerTask](plannertask.md) コレクション| **plannerTask** オブジェクト コレクションを取得します。|
-
-<a id="properties" class="xliff"></a>
-## プロパティ
-| プロパティ     | 型   |説明|
-|:---------------|:--------|:----------|
-|id|String| 読み取り専用です。planenrUser の識別子|
-
-<a id="relationships" class="xliff"></a>
-## リレーションシップ
-| リレーションシップ | 型   |説明|
-|:---------------|:--------|:----------|
-|plans|[plannerPlan](plannerplan.md) コレクション| 読み取り専用です。Null 許容型。ユーザーに割り当てられている [plannerTasks](plannertask.md) を返します。|
-|tasks|[plannerTask](plannertask.md) コレクション| 読み取り専用です。Null 許容型。ユーザーと共有している [plannerPlans](plannerplan.md) を返します。|
-
+## <span data-ttu-id="b866c-136">JSON 表記</span><span class="sxs-lookup"><span data-stu-id="b866c-136">JSON representation</span></span>
 <a id="json-representation" class="xliff"></a>
-## JSON 表記
-以下は、リソースの JSON 表記です。
+<span data-ttu-id="b866c-137">以下は、リソースの JSON 表記です。</span><span class="sxs-lookup"><span data-stu-id="b866c-137">Here is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",

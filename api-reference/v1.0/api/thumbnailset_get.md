@@ -1,37 +1,17 @@
-# <a name="get-thumbnailset"></a>thumbnailSet を取得する　
-
-[thumbnailSet](../resources/thumbnailset.md) オブジェクトのプロパティと関係を取得します。
-
-詳細については、「[サムネイルを一覧表示する](item_list_thumbnails.md)」を参照してください。
-
-## <a name="prerequisites"></a>前提条件
-この API を実行するには、以下のいずれかの**スコープ**が必要です。
-
-  * Files.Read
-
-## <a name="http-request"></a>HTTP 要求
-<!-- { "blockType": "ignored" } -->
-```http
-GET /drive/root/thumbnails/{id}
-GET /drive/items/{id}/thumbnails/{id}
-GET /drives/{id}/root/thumbnails/{id}
-```
-## <a name="optional-query-parameters"></a>オプションのクエリ パラメーター
-このメソッドは、応答をカスタマイズするための [OData クエリ パラメーター](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters)をサポートします。
-
-## <a name="request-headers"></a>要求ヘッダー
-| 名前       | 型 | 説明|
-|:-----------|:------|:----------|
-| Authorization  | string  | ベアラー {トークン}。必須。 |
+<span data-ttu-id="7151c-p101">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="7151c-p101">Bearer token. Required.</span></span>  | ベアラー {トークン}。必須。 |
 
 
-## <a name="request-body"></a>要求本文
-このメソッドには、要求本文を指定しません。
-## <a name="response"></a>応答
-成功した場合、このメソッドは `200 OK` 応答コードと、応答本文で [thumbnailSet](../resources/thumbnailset.md) オブジェクトを返します。
-## <a name="example"></a>例
-##### <a name="request"></a>要求
-以下は、要求の例です。
+## <span data-ttu-id="7151c-118">要求本文</span><span class="sxs-lookup"><span data-stu-id="7151c-118">Request body</span></span>
+<a id="request-body" class="xliff"></a>
+<span data-ttu-id="7151c-119">このメソッドには、要求本文を指定しません。</span><span class="sxs-lookup"><span data-stu-id="7151c-119">Do not supply a request body for this method.</span></span>
+## <span data-ttu-id="7151c-120">応答</span><span class="sxs-lookup"><span data-stu-id="7151c-120">Response</span></span>
+<a id="response" class="xliff"></a>
+<span data-ttu-id="7151c-121">成功した場合、このメソッドは `200 OK` 応答コードと、応答本文で [thumbnailSet](../resources/thumbnailset.md) オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="7151c-121">If successful, this method returns a `200 OK` response code and [thumbnailSet](../resources/thumbnailset.md) object in the response body.</span></span>
+## <span data-ttu-id="7151c-122">例</span><span class="sxs-lookup"><span data-stu-id="7151c-122">Example</span></span>
+<a id="example" class="xliff"></a>
+##### <span data-ttu-id="7151c-123">要求</span><span class="sxs-lookup"><span data-stu-id="7151c-123">Request</span></span>
+<a id="request" class="xliff"></a>
+<span data-ttu-id="7151c-124">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="7151c-124">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "get_thumbnailset"
@@ -39,8 +19,9 @@ GET /drives/{id}/root/thumbnails/{id}
 ```http
 GET https://graph.microsoft.com/v1.0/drive/root/thumbnails/{id}
 ```
-##### <a name="response"></a>応答
-以下は、応答の例です。
+##### <span data-ttu-id="7151c-125">応答</span><span class="sxs-lookup"><span data-stu-id="7151c-125">Response</span></span>
+<a id="response" class="xliff"></a>
+<span data-ttu-id="7151c-126">以下は、応答の例です。</span><span class="sxs-lookup"><span data-stu-id="7151c-126">Here is an example of the response.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": false,

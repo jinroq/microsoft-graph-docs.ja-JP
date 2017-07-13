@@ -1,38 +1,16 @@
-# <a name="update-domain"></a>ドメインを更新する
-
-ドメイン オブジェクトのプロパティを更新します。
-
-> **重要:**検証済みのドメインのみを更新できます。
-
-### <a name="prerequisites"></a>前提条件
-
-この API を実行するには、以下のいずれかの**スコープ**が必要です。*Domain.ReadWrite.All* または *Directory.AccessAsUser.All*
-
-### <a name="http-request"></a>HTTP 要求
-<!-- { "blockType": "ignored" } -->
-```http
-PATCH /domains/{id}
-```
-
-> {Id} には、ドメインを完全修飾ドメイン名で指定します。
-
-### <a name="request-headers"></a>要求ヘッダー
-
-| 名前       | 説明|
-|:-----------|:-----------|
-| Authorization  | ベアラー {トークン}。必須。 |
-| Content-Type  | application/json |
-
-### <a name="request-body"></a>要求本文
+<span data-ttu-id="0105b-p102">要求本文で、更新する関連フィールドの値を指定します。要求本文に含まれない既存のプロパティは、以前の値のままになるか、他のプロパティ値の変化に基づいて再計算されます。最適なパフォーマンスを得るには、変更する値のみを含めます。</span><span class="sxs-lookup"><span data-stu-id="0105b-p102">In the request body, supply the values for relevant fields to be updated. Existing properties not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance, only include changed values.</span></span>
 
 要求本文で、更新する関連フィールドの値を指定します。要求本文に含まれない既存のプロパティは、以前の値のままになるか、他のプロパティ値の変化に基づいて再計算されます。最適なパフォーマンスを得るには、変更する値のみを含めます。
 
-### <a name="response"></a>応答
+### <span data-ttu-id="0105b-120">応答</span><span class="sxs-lookup"><span data-stu-id="0105b-120">Response</span></span>
+<a id="response" class="xliff"></a>
 
-成功した場合、このメソッドは `204 No Content` 応答コードを返しますが、応答本文は返しません。
+<span data-ttu-id="0105b-121">成功した場合、このメソッドは `204 No Content` 応答コードを返しますが、応答本文は返しません。</span><span class="sxs-lookup"><span data-stu-id="0105b-121">If successful, this method returns a `204 No Content` response code and no response body.</span></span>
 
-### <a name="example"></a>例
-##### <a name="request"></a>要求
+### <span data-ttu-id="0105b-122">例</span><span class="sxs-lookup"><span data-stu-id="0105b-122">Example</span></span>
+<a id="example" class="xliff"></a>
+##### <span data-ttu-id="0105b-123">要求</span><span class="sxs-lookup"><span data-stu-id="0105b-123">Request</span></span>
+<a id="request" class="xliff"></a>
 
 <!-- {
   "blockType": "request",
@@ -51,7 +29,8 @@ Content-type: application/json
 }
 ```
 
-##### <a name="response"></a>応答
+##### <span data-ttu-id="0105b-124">応答</span><span class="sxs-lookup"><span data-stu-id="0105b-124">Response</span></span>
+<a id="response" class="xliff"></a>
 
 <!-- {
   "blockType": "response",

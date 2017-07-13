@@ -1,18 +1,11 @@
-# plannerUserIds リソースの種類
-<a id="planneruserids-resource-type" class="xliff"></a>
-
-**PlannerUserIds**リソースは、[plan](plannerplan.md) を共有するユーザー ID のリストを表します。これはオープン型です。Office 365 グループを活用している場合は、グループの API を使用してグループのメンバーシップを管理し、[グループの](group.md)計画を共有します。グループの既存のメンバーもこのコレクションに追加できますが、このグループが所有する計画へのアクセスは必要とされません。
-
-
-## プロパティ
-<a id="properties" class="xliff"></a>
+<span data-ttu-id="68c6d-p102">クライアントは、オープン型のプロパティを定義できます。この例では、クライアントは、値が `true` ブール値となるプロパティとしてユーザー ID を指定する必要があります。ユーザー ID が共有されなくなると、プロパティはその値が `false` ブール値に設定され、自動的に削除されます。</span><span class="sxs-lookup"><span data-stu-id="68c6d-p102">Properties of an Open Type can be defined by the client. In this case, the client should provide user ids as properties with their values being the `true` boolean. When user ids are no longer shared with, properties are automatically removed by setting their values to the `false` boolean.</span></span>
 クライアントは、オープン型のプロパティを定義できます。この例では、クライアントは、値が `true` ブール値となるプロパティとしてユーザー ID を指定する必要があります。ユーザー ID が共有されなくなると、プロパティはその値が `false` ブール値に設定され、自動的に削除されます。
 
 
-## JSON 表記
+## <span data-ttu-id="68c6d-110">JSON 表記</span><span class="sxs-lookup"><span data-stu-id="68c6d-110">JSON representation</span></span>
 <a id="json-representation" class="xliff"></a>
 
-以下は、リソースの JSON 表記です
+<span data-ttu-id="68c6d-111">以下は、リソースの JSON 表記です</span><span class="sxs-lookup"><span data-stu-id="68c6d-111">Here is a JSON representation of the resource</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -28,7 +21,7 @@
 }
 ```
 
-// 例
+<span data-ttu-id="68c6d-112">// 例</span><span class="sxs-lookup"><span data-stu-id="68c6d-112">// Example</span></span>
 ```json
 {
   "400723e1-102b-43aa-aba9-f35524827084": true, // property name is user id

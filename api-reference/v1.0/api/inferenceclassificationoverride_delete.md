@@ -1,37 +1,4 @@
-# <a name="delete-inferenceclassificationoverride"></a>inferenceClassificationOverride を削除する
-
-その ID で指定されたオーバーライドを削除します。
-## <a name="prerequisites"></a>前提条件
-この API を実行するために必要な**スコープ**は、次のとおりです。*Mail.ReadWrite*
-## <a name="http-request"></a>HTTP 要求
-<!-- { "blockType": "ignored" } -->
-```http
-DELETE /me/inferenceClassification/overrides/{id}
-DELETE /users/{id}/inferenceClassification/overrides/{id}
-```
-## <a name="request-headers"></a>要求ヘッダー
-| 名前       | 型 | 説明|
-|:---------------|:--------|:----------|
-| Authorization  | string  | ベアラー {トークン}。必須。 |
-
-## <a name="request-body"></a>要求本文
-このメソッドには、要求本文を指定しません。
-
-
-## <a name="response"></a>応答
-成功した場合、このメソッドは `204, No Content` 応答コードを返します。応答本文には何も返されません。
-
-## <a name="example"></a>例
-##### <a name="request"></a>要求
-以下は、要求の例です。
-<!-- {
-  "blockType": "request",
-  "name": "delete_inferenceclassificationoverride"
-}-->
-```http
-DELETE https://graph.microsoft.com/v1.0/me/inferenceClassification/overrides/98f5bdef-576a-404d-a2ea-07a3cf34af4r
-```
-##### <a name="response"></a>応答
+<span data-ttu-id="56320-p103">以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。</span><span class="sxs-lookup"><span data-stu-id="56320-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。
 <!-- {
   "blockType": "response",

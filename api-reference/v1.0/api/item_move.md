@@ -1,43 +1,14 @@
-# <a name="move-a-driveitem"></a>DriveItem を移動する
-
-DriveItem を新しい親アイテムに移動する場合は、移動する DriveItem の **parentReference** をアプリで更新します。これは、[更新](item_update.md)メソッドの特殊なケースです。アプリでは、新しいコンテナーへのアイテムの移動と、アイテムの別のプロパティの更新を単一の要求に組み合わせることができます。
-
-この要求を使用して、アイテムを[ドライブ](../resources/drive.md)間で移動することはできません。
-
-## <a name="prerequisites"></a>前提条件
-この API を実行するには、以下のいずれかの**スコープ**が必要です。
-
-* Files.ReadWrite
-* Files.ReadWrite.All
-* Sites.ReadWrite.All
-
-
-## <a name="http-request"></a>HTTP 要求
-
-```http
-PATCH /me/drive/items/{item-id}
-PATCH /me/drive/root:/{item-path}
-PATCH /drives/{drive-id}/items/{item-id}
-PATCH /groups/{group-id}/drive/{item-id}
-```
-
-## <a name="request-headers"></a>要求ヘッダー
-
-| 名前          | 型   | 説明                                                                                                                                                         |
-|:--------------|:-------|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| if-match      | String | この要求ヘッダーが含まれていて、指定された eTag (または cTag) がフォルダーの現在の eTag に一致しない場合には、`412 Precondition Failed` 応答が返されます。 |
-
-
-## <a name="request-body"></a>要求本文
-要求の本文内に、**parentReference** プロパティの新しい値を指定します。要求本文に含まれない既存のプロパティは、以前の値のままになるか、他のプロパティ値の変化に基づいて再計算されます。最適なパフォーマンスを得るためには、変更されていない既存の値を含めないでください。
+<span data-ttu-id="bb478-p103">**注:**OneDrive のルートにアイテムを移動するときには、`"id:" "root"` 構文は使用できません。ルート フォルダーの実際の ID を使用するか、親参照の `{"path": "/drive/root"}` を使用する必要があります。</span><span class="sxs-lookup"><span data-stu-id="bb478-p103">**Note:** When moving items to the root of a OneDrive you cannot use the `"id:" "root"` syntax. You either need to use the real ID of the root folder, or use `{"path": "/drive/root"}` for the parent reference.</span></span>
 
 **注:**OneDrive のルートにアイテムを移動するときには、`"id:" "root"` 構文は使用できません。ルート フォルダーの実際の ID を使用するか、親参照の `{"path": "/drive/root"}` を使用する必要があります。
 
-## <a name="response"></a>応答
-成功した場合、このメソッドは `200 OK` 応答コードと、応答本文で、更新された [DriveItem](../resources/driveitem.md) リソースを返します。
+## <span data-ttu-id="bb478-125">応答</span><span class="sxs-lookup"><span data-stu-id="bb478-125">Response</span></span>
+<a id="response" class="xliff"></a>
+<span data-ttu-id="bb478-126">成功した場合、このメソッドは `200 OK` 応答コードと、応答本文で、更新された [DriveItem](../resources/driveitem.md) リソースを返します。</span><span class="sxs-lookup"><span data-stu-id="bb478-126">If successful, this method returns a `200 OK` response code and updated [DriveItem](../resources/driveitem.md) resource in the response body.</span></span>
 
-## <a name="example"></a>例
-この例では、{item-id} で指定したアイテムを、ユーザーの OneDrive の **Documents** フォルダーに移動します
+## <span data-ttu-id="bb478-127">例</span><span class="sxs-lookup"><span data-stu-id="bb478-127">Example</span></span>
+<a id="example" class="xliff"></a>
+<span data-ttu-id="bb478-128">この例では、{item-id} で指定したアイテムを、ユーザーの OneDrive の **Documents** フォルダーに移動します</span><span class="sxs-lookup"><span data-stu-id="bb478-128">This example moves an item specified by {item-id} into the **Documents** folder in the user's OneDrive.</span></span>
 
 <!-- {
   "blockType": "request",
@@ -53,8 +24,9 @@ Content-type: application/json
 }
 ```
 
-## <a name="response"></a>応答
-以下は、応答の例です。
+## <span data-ttu-id="bb478-129">応答</span><span class="sxs-lookup"><span data-stu-id="bb478-129">Response</span></span>
+<a id="response" class="xliff"></a>
+<span data-ttu-id="bb478-130">以下は、応答の例です。</span><span class="sxs-lookup"><span data-stu-id="bb478-130">Here is an example of the response.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,

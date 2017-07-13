@@ -1,43 +1,4 @@
-# <a name="update-device"></a>デバイスを更新する
-
-登録済みデバイスのプロパティを更新します。
-
-## <a name="prerequisites"></a>前提条件
-この API を実行するには、次のいずれかの**スコープ**が必要です。*Device.ReadWrite.All* または *Directory.AccessAsUser.All* 
-
-## <a name="http-request"></a>HTTP 要求
-<!-- { "blockType": "ignored" } -->
-```http
-PATCH /devices/{id}
-```
-> 注:要求内の"id"は、"deviceId"プロパティではなく、デバイスの id プロパティです。
-
-## <a name="request-headers"></a>要求ヘッダー
-| 名前       | 型 | 説明|
-|:-----------|:------|:----------|
-| Authorization  | string  | ベアラー {トークン}。必須。 |
-
-## <a name="request-body"></a>要求本文
-要求本文で、更新する[デバイス](../resources/device.md) プロパティの値を指定します。
-## <a name="response"></a>応答
-成功した場合、このメソッドは `204 No Content` 応答コードを返します。
-
-## <a name="example"></a>例
-##### <a name="request"></a>要求
-以下は、要求の例です。
-<!-- {
-  "blockType": "request",
-  "name": "update_device"
-}-->
-```http
-PATCH https://graph.microsoft.com/v1.0/devices/{id}
-Content-type: application/json
-
-{
-  "accountEnabled": true
-}
-```
-##### <a name="response"></a>応答
+<span data-ttu-id="6551c-p102">以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。</span><span class="sxs-lookup"><span data-stu-id="6551c-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。
 <!-- {
   "blockType": "response",

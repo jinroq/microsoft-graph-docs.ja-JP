@@ -1,43 +1,4 @@
-# <a name="create-calendar"></a>予定表を作成する
-
-この API を使用して、新しい予定表を作成します。
-## <a name="prerequisites"></a>前提条件
-この API を実行するには、以下のいずれかの**スコープ**が必要です。*Calendars.ReadWrite*
-## <a name="http-request"></a>HTTP 要求
-<!-- { "blockType": "ignored" } -->
-```http
-POST /users/{id | userPrincipalName}/calendars
-```
-## <a name="request-headers"></a>要求ヘッダー
-| ヘッダー       | 値 |
-|:---------------|:--------|
-| Authorization  | ベアラー {トークン}。必須。  |
-| Content-Type  | application/json  |
-
-## <a name="request-body"></a>要求本文
-要求本文で、[予定表](../resources/calendar.md) オブジェクトの JSON 表記を指定します。
-
-
-## <a name="response"></a>応答
-成功した場合、このメソッドは応答本文で `201, Created` 応答コードと [予定表](../resources/calendar.md)オブジェクトを返します。
-
-## <a name="example"></a>例
-##### <a name="request"></a>要求
-以下は、要求の例です。
-<!-- {
-  "blockType": "request",
-  "name": "create_calendar_from_user"
-}-->
-```http
-POST https://graph.microsoft.com/v1.0/me/calendars
-Content-type: application/json
-
-{
-  "name": "Volunteer"
-}
-```
-要求本文で、[予定表](../resources/calendar.md) オブジェクトの JSON 表記を指定します。
-##### <a name="response"></a>応答
+<span data-ttu-id="6b284-p102">以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。</span><span class="sxs-lookup"><span data-stu-id="6b284-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。
 <!-- {
   "blockType": "response",

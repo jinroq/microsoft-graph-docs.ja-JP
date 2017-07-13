@@ -1,77 +1,4 @@
-# <a name="get-event"></a>イベントを取得する
-
-指定した[イベント](../resources/event.md) オブジェクトのプロパティとリレーションシップを取得します。
-
-現在、この操作によって返されるイベントの本文は HTML 形式のみです。
-
-**イベント** リソースは[拡張機能](../../../concepts/extensibility_overview.md)をサポートしているため、`GET` 操作を使用して、**イベント** インスタンスでカスタム プロパティと拡張機能データを取得することもできます。
-
-### <a name="support-various-time-zones"></a>さまざまなタイム ゾーンをサポートします。
-
-イベントを返す GET 操作の場合は、すべての操作で `Prefer: outlook.timezone` ヘッダーを使用して、応答のイベントの開始時刻と終了時刻のタイム ゾーンを指定できます。 
-
-たとえば、次の `Prefer: outlook.timezone` ヘッダーは、応答の開始時刻と終了時刻を東部標準時に設定します。
-```http
-Prefer: outlook.timezone="Eastern Standard Time"
-```
-
-イベントが別のタイム ゾーンで作成された場合は、開始時刻と終了時刻は `Prefer` ヘッダーで指定したタイム ゾーンに合わせて調整されます。サポートされているタイム ゾーン名については、この[一覧](../resources/datetimetimezone.md)を参照してください。`Prefer: outlook.timezone` ヘッダーを指定しない場合、開始時刻と終了時刻は UTC で返されます。
-
-**イベント**リソース上で **OriginalStartTimeZone** プロパティと **OriginalEndTimeZone** プロパティを使用して、イベント作成時に使用されたタイム ゾーンを検索できます。
-
-
-## <a name="prerequisites"></a>前提条件
-この API を実行するには、以下のいずれかの**スコープ**が必要です。*Calendars.Read*
-## <a name="http-request"></a>HTTP 要求
-<!-- { "blockType": "ignored" } -->
-```http
-GET /me/events/{id}
-GET /users/{id | userPrincipalName}/events/{id}
-GET /groups/{id}/events/{id}
-
-GET /me/calendar/events/{id}
-GET /users/{id | userPrincipalName}/calendar/events/{id}
-GET /groups/{id}/calendar/events/{id}
-
-GET /me/calendars/{id}/events/{id}
-GET /users/{id | userPrincipalName}/calendars/{id}/events/{id}
-
-GET /me/calendargroup/calendars/{id}/events/{id}
-GET /users/{id | userPrincipalName}/calendargroup/calendars/{id}/events/{id}
-
-GET /me/calendargroups/{id}/calendars/{id}/events/{id}
-GET /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{id}
-```
-## <a name="optional-query-parameters"></a>オプションのクエリ パラメーター
-このメソッドは、応答をカスタマイズするための [OData クエリ パラメーター](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters)をサポートします。
-## <a name="request-headers"></a>要求ヘッダー
-| 名前       | 型 | 説明|
-|:-----------|:------|:----------|
-| Authorization  | string  | ベアラー {トークン}。必須。 |
-| 優先: outlook.timezone | string | 応答内のイベントに対する既定のタイム ゾーン。 |
-
-## <a name="request-body"></a>要求本文
-このメソッドには、要求本文を指定しません。
-## <a name="response"></a>応答
-成功した場合、このメソッドは `200 OK` 応答コードと、応答本文で[イベント](../resources/event.md) オブジェクトを返します。
-## <a name="example"></a>例
-##### <a name="request"></a>要求
-最初の例では、指定されたイベントを取得します。以下のものを指定します。
-
-- 太平洋標準時で返される日時の値を取得するための `Prefer: outlook.timezone` ヘッダー。 
-- 特定のプロパティを返すための `$select` クエリ パラメーター。`$select` パラメーターがない場合には、すべてのイベント プロパティが返されます。
-
-<!-- {
-  "blockType": "request",
-  "name": "get_event"
-}-->
-
-```http
-GET https://graph.microsoft.com/v1.0/me/events('AAMkAGIAAAoZDOFAAA=')?$select=subject,body,bodyPreview,organizer,attendees,start,end,location 
-Prefer: outlook.timezone="Pacific Standard Time"
-```
-
-##### <a name="response"></a>応答
+<span data-ttu-id="92dea-p105">以下は、応答の例です。**body** プロパティが HTML の既定の形式で返されます。</span><span class="sxs-lookup"><span data-stu-id="92dea-p105">Here is an example of the response. The **body** property is returned in the default format of HTML.</span></span>
 
 以下は、応答の例です。**body** プロパティが HTML の既定の形式で返されます。
 
@@ -141,10 +68,11 @@ Content-length: 1928
 }
 ```
 
-## <a name="see-also"></a>関連項目
+## <span data-ttu-id="92dea-142">関連項目</span><span class="sxs-lookup"><span data-stu-id="92dea-142">See also</span></span>
+<a id="see-also" class="xliff"></a>
 
-- [拡張機能を使用してカスタム データをリソースに追加する](../../../concepts/extensibility_overview.md)
-- [オープン拡張機能を使用したユーザーへのカスタム データの追加 (プレビュー)](../../../concepts/extensibility_open_users.md)
+- [<span data-ttu-id="92dea-143">拡張機能を使用してカスタム データをリソースに追加する</span><span class="sxs-lookup"><span data-stu-id="92dea-143">Add custom data to resources using extensions</span></span>](../../../concepts/extensibility_overview.md)
+- [<span data-ttu-id="92dea-144">オープン拡張機能を使用したユーザーへのカスタム データの追加 (プレビュー)</span><span class="sxs-lookup"><span data-stu-id="92dea-144">Add custom data to users using open extensions (preview)</span></span>](../../../concepts/extensibility_open_users.md)
 <!--
 - [Add custom data to groups using schema extensions (preview)](../../../concepts/extensibility_schema_groups.md)
 -->

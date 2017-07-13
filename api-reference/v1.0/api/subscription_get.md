@@ -1,28 +1,16 @@
-# <a name="get-subscription"></a>サブスクリプションを取得する
+<span data-ttu-id="82e1e-p101">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="82e1e-p101">Bearer token. Required.</span></span>  | ベアラー {トークン}。必須。 |
 
-サブスクリプションのプロパティと関係を取得します。
-## <a name="prerequisites"></a>前提条件
-対象のリソースによっては、この API を実行するために次のいずれかの**スコープ**が必要になります。*Mail.Read*、*Calendars.Read*、*Contacts.Read*、*Group.Read.All*、*Files.ReadWrite*、または *Files.ReadWrite.All*
-## <a name="http-request"></a>HTTP 要求
-<!-- { "blockType": "ignored" } -->
-```http
-GET /subscriptions/{subscriptionId}
-```
-## <a name="optional-query-parameters"></a>オプションのクエリ パラメーター
-このメソッドは、応答をカスタマイズするための [OData クエリ パラメーター](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters)をサポートします。
-
-## <a name="request-headers"></a>要求ヘッダー
-| 名前       | 型 | 説明|
-|:-----------|:------|:----------|
-| Authorization  | string  | ベアラー {トークン}。必須。 |
-
-## <a name="request-body"></a>要求本文
-このメソッドには、要求本文を指定しません。
-## <a name="response"></a>応答
-成功した場合、このメソッドは `200 OK` 応答コードと、応答本文で [subscription](../resources/subscription.md) オブジェクトを返します。
-## <a name="example"></a>例
-##### <a name="request"></a>要求
-以下は、要求の例です。
+## <span data-ttu-id="82e1e-116">要求本文</span><span class="sxs-lookup"><span data-stu-id="82e1e-116">Request body</span></span>
+<a id="request-body" class="xliff"></a>
+<span data-ttu-id="82e1e-117">このメソッドには、要求本文を指定しません。</span><span class="sxs-lookup"><span data-stu-id="82e1e-117">Do not supply a request body for this method.</span></span>
+## <span data-ttu-id="82e1e-118">応答</span><span class="sxs-lookup"><span data-stu-id="82e1e-118">Response</span></span>
+<a id="response" class="xliff"></a>
+<span data-ttu-id="82e1e-119">成功した場合、このメソッドは `200 OK` 応答コードと、応答本文で [subscription](../resources/subscription.md) オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="82e1e-119">If successful, this method returns a `200 OK` response code and [subscription](../resources/subscription.md) object in the response body.</span></span>
+## <span data-ttu-id="82e1e-120">例</span><span class="sxs-lookup"><span data-stu-id="82e1e-120">Example</span></span>
+<a id="example" class="xliff"></a>
+##### <span data-ttu-id="82e1e-121">要求</span><span class="sxs-lookup"><span data-stu-id="82e1e-121">Request</span></span>
+<a id="request" class="xliff"></a>
+<span data-ttu-id="82e1e-122">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="82e1e-122">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "get_subscription"
@@ -30,8 +18,9 @@ GET /subscriptions/{subscriptionId}
 ```http
 GET https://graph.microsoft.com/v1.0/subscriptions/{subscriptionId}
 ```
-##### <a name="response"></a>応答
-以下は、応答の例です。
+##### <span data-ttu-id="82e1e-123">応答</span><span class="sxs-lookup"><span data-stu-id="82e1e-123">Response</span></span>
+<a id="response" class="xliff"></a>
+<span data-ttu-id="82e1e-124">以下は、応答の例です。</span><span class="sxs-lookup"><span data-stu-id="82e1e-124">Here is an example of the response.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": false,

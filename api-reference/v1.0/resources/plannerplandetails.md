@@ -1,35 +1,13 @@
-# plannerPlanDetails リソースの種類
-<a id="plannerplandetails-resource-type" class="xliff"></a>
+<span data-ttu-id="41eb0-p103">この計画を共有するユーザー ID を設定します。Office 365 グループを活用している場合は、グループの API を使用してグループのメンバーシップを管理し、[グループの](group.md)計画を共有します。グループの既存のメンバーもこのコレクションに追加できますが、このグループが所有する計画へのアクセスは必要とされません。</span><span class="sxs-lookup"><span data-stu-id="41eb0-p103">Set of user ids that this plan is shared with. If you are leveraging Office 365 Groups, use the Groups API to manage group membership to share the [group's](group.md) plan. You can also add existing members of the group to this collection though it is not required for them to access the plan owned by the group.</span></span>|この計画を共有するユーザー ID を設定します。Office 365 グループを活用している場合は、グループの API を使用してグループのメンバーシップを管理し、[グループの](group.md)計画を共有します。グループの既存のメンバーもこのコレクションに追加できますが、このグループが所有する計画へのアクセスは必要とされません。 |
 
-
-**plannerPlanDetails** リソースは、計画に関する追加情報を表します。各 [plan](plannerplan.md) オブジェクトには詳細オブジェクトがあります。
-
-
-## メソッド
-<a id="methods" class="xliff"></a>
-
-| メソッド           | 戻り値の型    |説明|
-|:---------------|:--------|:----------|
-|[Get plannerPlanDetails](../api/plannerplandetails_get.md) | [plannerPlanDetails](plannerplandetails.md) |**plannerPlanDetails** オブジェクトのプロパティとリレーションシップを読み取ります。|
-|[Update](../api/plannerplandetails_update.md) | [plannerPlanDetails](plannerplandetails.md)    |**plannerPlanDetails** オブジェクトを更新します。 |
-
-
-## プロパティ
-<a id="properties" class="xliff"></a>
-| プロパティ     | 型   |説明|
-|:---------------|:--------|:----------|
-|categoryDescriptions|[plannerCategoryDescriptions](plannercategorydescriptions.md)|計画内のタスクに関連付けられる 6 つのカテゴリの説明を指定するオブジェクト|
-|id|String| 読み取り専用です。計画の詳細の ID。28 文字長で、大文字と小文字の区別があります。[書式検証](planner_identifiers_disclaimer.md)はサービスによって行われます。|
-|sharedWith|[plannerUserIds](planneruserids.md)|この計画を共有するユーザー ID を設定します。Office 365 グループを活用している場合は、グループの API を使用してグループのメンバーシップを管理し、[グループの](group.md)計画を共有します。グループの既存のメンバーもこのコレクションに追加できますが、このグループが所有する計画へのアクセスは必要とされません。 |
-
-## リレーションシップ
+## <span data-ttu-id="41eb0-132">リレーションシップ</span><span class="sxs-lookup"><span data-stu-id="41eb0-132">Relationships</span></span>
 <a id="relationships" class="xliff"></a>
-なし
+<span data-ttu-id="41eb0-133">なし</span><span class="sxs-lookup"><span data-stu-id="41eb0-133">None</span></span>
 
 
-## JSON 表記
+## <span data-ttu-id="41eb0-134">JSON 表記</span><span class="sxs-lookup"><span data-stu-id="41eb0-134">JSON representation</span></span>
 <a id="json-representation" class="xliff"></a>
-以下は、リソースの JSON 表記です。
+<span data-ttu-id="41eb0-135">以下は、リソースの JSON 表記です。</span><span class="sxs-lookup"><span data-stu-id="41eb0-135">Here is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",

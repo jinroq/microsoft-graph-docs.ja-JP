@@ -1,33 +1,16 @@
-# <a name="get-photo"></a>写真を取得する
+<span data-ttu-id="53569-p101">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="53569-p101">Bearer token. Required.</span></span>  | ベアラー {トークン}。必須。 |
 
-写真オブジェクトのプロパティと関係を取得します。
-## <a name="prerequisites"></a>前提条件
-この API を実行するには、以下のいずれかの**スコープ**が必要です。
-
-  * Files.Read
-
-## <a name="http-request"></a>HTTP 要求
-<!-- { "blockType": "ignored" } -->
-```http
-GET /users/{id | userPrincipalName}/photo
-GET /groups/{id}/photo
-GET /drive/root/createdByUser/photo
-```
-## <a name="optional-query-parameters"></a>オプションのクエリ パラメーター
-このメソッドは、応答をカスタマイズするための [OData クエリ パラメーター](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters)をサポートします。
-
-## <a name="request-headers"></a>要求ヘッダー
-| 名前       | 型 | 説明|
-|:-----------|:------|:----------|
-| Authorization  | string  | ベアラー {トークン}。必須。 |
-
-## <a name="request-body"></a>要求本文
-このメソッドには、要求本文を指定しません。
-## <a name="response"></a>応答
-成功した場合、このメソッドは `200 OK` 応答コードと、応答本文で[写真](../resources/photo.md)オブジェクトを返します。
-## <a name="example"></a>例
-##### <a name="request"></a>要求
-以下は、要求の例です。
+## <span data-ttu-id="53569-117">要求本文</span><span class="sxs-lookup"><span data-stu-id="53569-117">Request body</span></span>
+<a id="request-body" class="xliff"></a>
+<span data-ttu-id="53569-118">このメソッドには、要求本文を指定しません。</span><span class="sxs-lookup"><span data-stu-id="53569-118">Do not supply a request body for this method.</span></span>
+## <span data-ttu-id="53569-119">応答</span><span class="sxs-lookup"><span data-stu-id="53569-119">Response</span></span>
+<a id="response" class="xliff"></a>
+<span data-ttu-id="53569-120">成功した場合、このメソッドは `200 OK` 応答コードと、応答本文で[写真](../resources/photo.md)オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="53569-120">If successful, this method returns a `200 OK` response code and [photo](../resources/photo.md) object in the response body.</span></span>
+## <span data-ttu-id="53569-121">例</span><span class="sxs-lookup"><span data-stu-id="53569-121">Example</span></span>
+<a id="example" class="xliff"></a>
+##### <span data-ttu-id="53569-122">要求</span><span class="sxs-lookup"><span data-stu-id="53569-122">Request</span></span>
+<a id="request" class="xliff"></a>
+<span data-ttu-id="53569-123">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="53569-123">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "get_photo"
@@ -35,8 +18,9 @@ GET /drive/root/createdByUser/photo
 ```http
 GET https://graph.microsoft.com/v1.0/users/{id|userPrincipalName}/photo
 ```
-##### <a name="response"></a>応答
-以下は、応答の例です。
+##### <span data-ttu-id="53569-124">応答</span><span class="sxs-lookup"><span data-stu-id="53569-124">Response</span></span>
+<a id="response" class="xliff"></a>
+<span data-ttu-id="53569-125">以下は、応答の例です。</span><span class="sxs-lookup"><span data-stu-id="53569-125">Here is an example of the response.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": false,

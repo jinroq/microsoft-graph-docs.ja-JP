@@ -1,17 +1,10 @@
-# plannerAppliedCategories リソースの種類
-<a id="plannerappliedcategories-resource-type" class="xliff"></a>
-
-
-**AppliedCategoriesCollection** リソースは、タスクに適用されているカテゴリ (またはラベル) のコレクションを表します。これは [plannerTask](plannertask.md) オブジェクトの一部です。最大 6 つのカテゴリをタスクに適用できます。カテゴリの説明 (`category1`、`category2` など) は、[計画の詳細](plannerplandetails.md)オブジェクトの一部です。これはオープン型です。
-
-## プロパティ
-<a id="properties" class="xliff"></a>
+<span data-ttu-id="f69a6-p102">クライアントは、オープン型のプロパティを定義できます。ただし、この場合クライアントは、対応するカテゴリがタスクに適用される際に、`category1`、`category2`、`category3`、`category4`、`category5` および/または `category6` を、`true` ブール値が設定されたプロパティとして指定する必要があります。以下に例を示します。これらが適用されなくなると、プロパティはその値が `false` ブール値に設定され、自動的に削除されます。</span><span class="sxs-lookup"><span data-stu-id="f69a6-p102">Properties of an Open Type can be defined by the client. In this case though, the client must provide `category1`, `category2`, `category3`, `category4`, `category5` and/or `category6` as properties with their values being the `true` boolean when the corresponding categories are applied on the task. Example is shown below. When they do not apply, properties are automatically removed by setting their values to the `false` boolean.</span></span>
 クライアントは、オープン型のプロパティを定義できます。ただし、この場合クライアントは、対応するカテゴリがタスクに適用される際に、`category1`、`category2`、`category3`、`category4`、`category5` および/または `category6` を、`true` ブール値が設定されたプロパティとして指定する必要があります。以下に例を示します。これらが適用されなくなると、プロパティはその値が `false` ブール値に設定され、自動的に削除されます。 
 
-## JSON 表記
+## <span data-ttu-id="f69a6-112">JSON 表記</span><span class="sxs-lookup"><span data-stu-id="f69a6-112">JSON representation</span></span>
 <a id="json-representation" class="xliff"></a>
 
-以下は、リソースの JSON 表記です
+<span data-ttu-id="f69a6-113">以下は、リソースの JSON 表記です</span><span class="sxs-lookup"><span data-stu-id="f69a6-113">Here is a JSON representation of the resource</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -27,7 +20,7 @@
 }
 ```
 
-例: 
+<span data-ttu-id="f69a6-114">例:</span><span class="sxs-lookup"><span data-stu-id="f69a6-114">Example:</span></span> 
 
 ```json
 {

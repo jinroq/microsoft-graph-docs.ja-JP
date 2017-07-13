@@ -1,79 +1,8 @@
-# <a name="get-permission"></a>アクセス許可を取得する
-
-アクセス許可オブジェクトのプロパティと関係を取得します。
-
-## <a name="prerequisites"></a>前提条件
-この API を実行するには、以下のいずれかの**スコープ**が必要です。
-
-* Files.Read
-* Files.ReadWrite
-* Files.Read.All
-* Files.ReadWrite.All
-* Shares.Read.All
-* Shares.ReadWrite.All
-
-## <a name="http-request"></a>HTTP 要求
-
-<!-- { "blockType": "ignored" } -->
-```http
-GET /me/drive/items/{item-id}/permissions/{perm-id}
-GET /me/drive/root:/{path}:/permissions/{perm-id}
-GET /drives/{drive-id}/items/{item-id}/permissions/{perm-id}
-GET /groups/{group-id}/drive/items/{item-id}/permissions/{perm-id}
-```
-## <a name="optional-query-parameters"></a>オプションのクエリ パラメーター
-このメソッドは、応答をカスタマイズするための [OData クエリ パラメーター](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters)をサポートします。
-
-## <a name="request-body"></a>要求本文
-このメソッドには、要求本文を指定しません。
-
-## <a name="response"></a>応答
-成功した場合、このメソッドは `200 OK` 応答コードと、応答本文で [Permission](../resources/permission.md) リソースを返します。
-
-## <a name="example"></a>例
-
-##### <a name="request"></a>要求
-
-以下は、ルート フォルダーのアクセス許可にアクセスするための要求の例です。
-
-<!-- {
-  "blockType": "request",
-  "name": "get_permission"
-}-->
-```http
-GET https://graph.microsoft.com/v1.0/me/drive/items/{item-id}/permissions/{perm-id}
-```
-##### <a name="response"></a>応答
-以下は、応答の例です。
-<!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.permission"
-} -->
-```http
-HTTP/1.1 200 OK
-Content-type: application/json
-Content-length: 762
-
-{
-  "grantedTo": {
-    "user": {
-      "displayName": "Ryan Gregg",
-      "id": "efee1b77-fb3b-4f65-99d6-274c11914d12"
-    }
-  },
-  "id": "1",
-  "roles": [ "write" ]
-}
-```
-
-## <a name="remarks"></a>備考
-
-[アクセス権](../resources/permission.md)リソースは、_ファセット_を使用してリソースによって表されるアクセス許可の種類に関する情報を提供します。
+<span data-ttu-id="1a5ce-p101">[**リンク**](../resources/sharinglink.md) ファセットのあるアクセス許可は、項目上に作成された共有するリンクを表します。共有リンクは、リンクを持つすべてのユーザーのアイテムへのアクセス許可を提供する固有のトークンを含みます。</span><span class="sxs-lookup"><span data-stu-id="1a5ce-p101">Permissions with a [**link**](../resources/sharinglink.md) facet represent sharing links created on the item. Sharing links contain a unique token that provides access to the item for anyone with the link.</span></span>
 
 [**リンク**](../resources/sharinglink.md) ファセットのあるアクセス許可は、項目上に作成された共有するリンクを表します。共有リンクは、リンクを持つすべてのユーザーのアイテムへのアクセス許可を提供する固有のトークンを含みます。
 
-[**招待**](../resources/sharinginvitation.md) ファセットを持つアクセス許可は、指定のユーザーやグループをファイルへのアクセスへ招待することで追加されたアクセス許可を表します。
+<span data-ttu-id="1a5ce-127">[**招待**](../resources/sharinginvitation.md) ファセットを持つアクセス許可は、指定のユーザーやグループをファイルへのアクセスへ招待することで追加されたアクセス許可を表します。</span><span class="sxs-lookup"><span data-stu-id="1a5ce-127">Permissions with a [**invitation**](../resources/sharinginvitation.md) facet represent permissions added by inviting specific users or groups to have access to the file.</span></span>
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

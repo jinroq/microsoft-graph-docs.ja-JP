@@ -1,26 +1,13 @@
-# <a name="update-subscription"></a>サブスクリプションを更新する
+<span data-ttu-id="f3030-p102">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="f3030-p102">Bearer token. Required.</span></span>  | ベアラー {トークン}。必須。 |
 
-サブスクリプションを更新するには、サブスクリプションの有効期限を延長します。
-
-リソースのサブスクリプションは、個々のリソースの種類で規定された日付になると有効期限が切れます。通知を見逃さないようにするため、有効期限よりも前にサブスクリプションを更新する必要があります。個々の有効期限の日付については、[サブスクリプション](../resources/subscription.md)を参照してください。
-## <a name="prerequisites"></a>前提条件
-対象のリソースによっては、この API を実行するために次のいずれかの**スコープ**が必要になります。*Mail.Read*、*Calendars.Read*、*Contacts.Read*、*Group.Read.All*、*Files.ReadWrite*、または *Files.ReadWrite.All*
-## <a name="http-request"></a>HTTP 要求
-<!-- { "blockType": "ignored" } -->
-```http
-PATCH /subscriptions/{subscriptionId}
-```
-
-## <a name="request-headers"></a>要求ヘッダー
-| 名前       | 型 | 説明|
-|:-----------|:------|:----------|
-| Authorization  | string  | ベアラー {トークン}。必須。 |
-
-## <a name="response"></a>応答
-成功した場合、このメソッドは `200 OK` 応答コードと、応答本文で [subscription](../resources/subscription.md) オブジェクトを返します。
-## <a name="example"></a>例
-##### <a name="request"></a>要求
-以下は、要求の例です。
+## <span data-ttu-id="f3030-117">応答</span><span class="sxs-lookup"><span data-stu-id="f3030-117">Response</span></span>
+<a id="response" class="xliff"></a>
+<span data-ttu-id="f3030-118">成功した場合、このメソッドは `200 OK` 応答コードと、応答本文で [subscription](../resources/subscription.md) オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="f3030-118">If successful, this method returns a `200 OK` response code and [subscription](../resources/subscription.md) object in the response body.</span></span>
+## <span data-ttu-id="f3030-119">例</span><span class="sxs-lookup"><span data-stu-id="f3030-119">Example</span></span>
+<a id="example" class="xliff"></a>
+##### <span data-ttu-id="f3030-120">要求</span><span class="sxs-lookup"><span data-stu-id="f3030-120">Request</span></span>
+<a id="request" class="xliff"></a>
+<span data-ttu-id="f3030-121">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="f3030-121">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "update_subscription"
@@ -34,8 +21,9 @@ Content-type: application/json
 }
 ```
 
-##### <a name="response"></a>応答
-以下は、応答の例です。
+##### <span data-ttu-id="f3030-122">応答</span><span class="sxs-lookup"><span data-stu-id="f3030-122">Response</span></span>
+<a id="response" class="xliff"></a>
+<span data-ttu-id="f3030-123">以下は、応答の例です。</span><span class="sxs-lookup"><span data-stu-id="f3030-123">Here is an example of the response.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": false,

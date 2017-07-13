@@ -1,32 +1,13 @@
-# plannerBucketTaskBoardTaskFormat リソースの種類
-<a id="plannerbuckettaskboardtaskformat-resource-type" class="xliff"></a>
+<span data-ttu-id="0bbb1-p103">タスク ボードのバケット ビューでタスクの順序付けに使用するヒント。形式は[ここ](planner_order_hint_format.md)の説明に従って定義されます。</span><span class="sxs-lookup"><span data-stu-id="0bbb1-p103">Hint used to order tasks in the Bucket view of the Task Board. The format is defined as outlined [here](planner_order_hint_format.md).</span></span>|タスク ボードのバケット ビューでタスクの順序付けに使用するヒント。形式は[ここ](planner_order_hint_format.md)の説明に従って定義されます。|
 
-**plannerBucketTaskBoardTaskFormat** リソースは、タスク ボードのバケット ビューでタスクを正しく表示するための情報を示します (ビューは割り当てられているバケット内のタスクごとに整理されます)。各 [task](plannertask.md) にはそれぞれ **plannerBucketTaskBoardTaskFormat** オブジェクトが 1 つ関連付けられています。
-
-
-## メソッド
-<a id="methods" class="xliff"></a>
-
-| メソッド           | 戻り値の型    |説明|
-|:---------------|:--------|:----------|
-|[plannerBucketTaskBoardTaskFormat の取得](../api/plannerbuckettaskboardtaskformat_get.md) | [plannerBucketTaskBoardTaskFormat](plannerbuckettaskboardtaskformat.md) |**plannerBucketTaskBoardTaskFormat** オブジェクトのプロパティとリレーションシップを読み取ります。|
-|[Update](../api/plannerbuckettaskboardtaskformat_update.md) | [plannerBucketTaskBoardTaskFormat](plannerbuckettaskboardtaskformat.md)  |**plannerBucketTaskBoardTaskFormat** オブジェクトを更新します。 |
-
-## プロパティ
-<a id="properties" class="xliff"></a>
-| プロパティ     | 型   |説明|
-|:---------------|:--------|:----------|
-|id|String| 読み取り専用です。リソースの ID。28 文字長で、大文字と小文字の区別があります。[書式検証](planner_identifiers_disclaimer.md)はサービスによって行われます。|
-|orderHint|String|タスク ボードのバケット ビューでタスクの順序付けに使用するヒント。形式は[ここ](planner_order_hint_format.md)の説明に従って定義されます。|
-
-## リレーションシップ
+## <span data-ttu-id="0bbb1-128">リレーションシップ</span><span class="sxs-lookup"><span data-stu-id="0bbb1-128">Relationships</span></span>
 <a id="relationships" class="xliff"></a>
-なし
+<span data-ttu-id="0bbb1-129">なし</span><span class="sxs-lookup"><span data-stu-id="0bbb1-129">None</span></span>
 
 
-## JSON 表記
+## <span data-ttu-id="0bbb1-130">JSON 表記</span><span class="sxs-lookup"><span data-stu-id="0bbb1-130">JSON representation</span></span>
 <a id="json-representation" class="xliff"></a>
-以下は、リソースの JSON 表記です。
+<span data-ttu-id="0bbb1-131">以下は、リソースの JSON 表記です。</span><span class="sxs-lookup"><span data-stu-id="0bbb1-131">Here is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
