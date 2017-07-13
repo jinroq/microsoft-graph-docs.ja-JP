@@ -1,4 +1,5 @@
-# <a name="customize-responses-optional-query-parameters"></a>応答のカスタマイズ: オプションのクエリ パラメーター
+# クエリ パラメーターを使用して応答をカスタマイズする
+<a id="use-query-parameters-to-customize-responses" class="xliff"></a>
 
 Microsoft Graph にはオプションのクエリ パラメーターがあり、応答で返されるデータの量を指定したり制御するために使用できます。次のクエリ パラメーターがサポートされています。
 
@@ -35,7 +36,8 @@ GET https://graph.microsoft.com/v1.0/users?$filter=startswith(givenName, 'J')
 GET https://graph.microsoft.com/v1.0/users?$filter=startswith(givenName%2C+'J')
 ```
 
-## <a name="filter"></a>filter
+## filter
+<a id="filter" class="xliff"></a>
 
 `$filter` は、コレクションのサブセットのみを取得するために使用できます。たとえば、表示名が `J` で始まるユーザーを検索するには、`startswith` を使用します。
 
@@ -91,7 +93,8 @@ GET https://graph.microsoft.com/v1.0/users?$filter=startswith(displayName,'J')
 `$filter` の構文は非常に豊富かつ多彩であり、多くの演算子が組み込まれています。論理演算子には、等号 (`eq`)、不等号 (`ne`)、より大 (`gt`)、以上 (`gte`)、AND (`and`)、OR (`or`)、NOT (`not`) などが含まれます。算術演算子には、加算 (`add`)、減算 (`sub`) などが含まれます。文字列演算子には、次の値を含む (`contains`)、次の文字列で始まる (`startswith`) などが含まれます。ラムダ演算子には、一部 (`any`)、すべて (`all`).が含まれます。`$filter` 構文の詳細については、「[OData プロトコル][odata-filter]」を参照してください。
 
 
-## <a name="select"></a>select
+## select
+<a id="select" class="xliff"></a>
 
 コレクションまたは個別のエンティティで既定のセットの代わりに返される別のプロパティのセットを指定するには、`$select` クエリ パラメーターを使用します。`$select` パラメーターにより、返される既定のセットのサブセットまたはスーパーセットを選択できます。たとえば、メッセージを取得する場合、メッセージの `from` と `subject` プロパティだけが返されるように選択することができます。
 
@@ -125,7 +128,8 @@ in the response will only have those property values included.
 }
 ```-->
 
-## <a name="expand"></a>expand
+## expand
+<a id="expand" class="xliff"></a>
 
 Microsoft Graph API 要求では、参照されている項目のオブジェクトまたはコレクションへのナビゲーションは自動的には展開されません。これは仕様です。サービスからの応答を生成するためのネットワーク トラフィックと時間を減らすためです。しかし、応答にそれらの結果を含めることが必要な場合があります。
 
@@ -145,7 +149,8 @@ GET https://graph.microsoft.com/v1.0/users?$expand=directReports
 
 他のいくつかのリソースにも制限がある場合があるため、潜在的なエラーを常にチェックします。
 
-## <a name="orderby"></a>orderby
+## orderby
+<a id="orderby" class="xliff"></a>
 
 Microsof Graph API から返される項目の並べ替え順序を指定するには、`$orderby` クエリ パラメーターを使用します。
 
@@ -165,7 +170,8 @@ GET https://graph.microsoft.com/v1.0/me/messages?$orderby=from/emailAddress/addr
 
  > **注:**[`user`](../api-reference/v1.0/resources/user.md) リソースでクエリを実行する場合、`$orderby` は filter 式と組み合わせることはできません。
 
-## <a name="top"></a>top
+## top
+<a id="top" class="xliff"></a>
 
 結果セットに返す項目の最大数を指定するには、`$top` クエリ オプションを使用します。`$top` クエリ パラメーターは、コレクションのサブセットを指定します。このサブセットは、最初の N 項目のみが選択されて形成されます。ここで、N はこのクエリ パラメーターで指定される正の整数です。たとえば、ユーザーのメールボックスの最初の 5 つのメッセージを返す構文は、次のとおりです。
 
@@ -173,7 +179,8 @@ GET https://graph.microsoft.com/v1.0/me/messages?$orderby=from/emailAddress/addr
 GET https://graph.microsoft.com/v1.0/me/messages?$top=5
 ```
 
-## <a name="skip"></a>skip
+## skip
+<a id="skip" class="xliff"></a>
 
 コレクション内の項目を取得する前にスキップする項目数を設定するには、`$skip` クエリ パラメーターを使用します。たとえば、作成日付順に並べ替えたイベントを 21 番目から戻す構文は、次のとおりです。
 
@@ -181,7 +188,8 @@ GET https://graph.microsoft.com/v1.0/me/messages?$top=5
 GET  https://graph.microsoft.com/v1.0/me/events?$orderby=createdDateTime&$skip=20
 ```
 
-## <a name="skiptoken"></a>skipToken
+## skipToken
+<a id="skiptoken" class="xliff"></a>
 
 Graph データの 2 番目およびそれ以降のページを要求するには、`$skipToken` クエリ パラメーターを使用します。(通常はサーバー サイドのページングによって) Graph が結果の一部のサブセットを返したときに、`$skipToken` クエリ パラメーターは Graph から返される URL で提供されます。それはコレクション内の、サーバーが結果の送信を終了したポイントを指定し、それから Graph に返され、結果の送信をどこから再開する必要があるかを指定します。たとえば、`$skipToken` クエリ パラメーターの値によって、コレクションの 10 番目の項目を指定したり、50 個の項目を含むコレクション内の 20 番目の項目やコレクション内の他の任意の位置の項目を指定できます。
 
@@ -197,7 +205,8 @@ Graph データの 2 番目およびそれ以降のページを要求するに�
 GET  https://graph.microsoft.com/v1.0/users?$orderby=displayName&$skiptoken=X%2783630372100000000000000000000%27
 ```
 
-## <a name="count"></a>count
+## count
+<a id="count" class="xliff"></a>
 
 クエリ パラメーターとして `$count` を使用し、次の例のように、Graph から返されるデータ値のページにコレクション内の項目数の合計を含めます。
 
@@ -209,7 +218,8 @@ GET  https://graph.microsoft.com/v1.0/me/contacts?$count=true
 
 >**注:**これは、[`directoryObject`](http://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/directoryobject) コレクションではサポートされていません。
 
-## <a name="search"></a>search
+## search
+<a id="search" class="xliff"></a>
 
 要求の結果を検索条件と一致するものに制限するには、`$search` クエリ パラメーターを使用します。
 

@@ -1,10 +1,12 @@
-# <a name="plannerplandetails-resource-type"></a>plannerPlanDetails リソースの種類
+# plannerPlanDetails リソースの種類
+<a id="plannerplandetails-resource-type" class="xliff"></a>
 
 
 **plannerPlanDetails** リソースは、計画に関する追加情報を表します。各 [plan](plannerplan.md) オブジェクトには詳細オブジェクトがあります。
 
 
-### <a name="methods"></a>メソッド
+## メソッド
+<a id="methods" class="xliff"></a>
 
 | メソッド           | 戻り値の型    |説明|
 |:---------------|:--------|:----------|
@@ -12,19 +14,21 @@
 |[Update](../api/plannerplandetails_update.md) | [plannerPlanDetails](plannerplandetails.md)    |**plannerPlanDetails** オブジェクトを更新します。 |
 
 
-### <a name="properties"></a>プロパティ
-| プロパティ       | 型    |説明|
+## プロパティ
+<a id="properties" class="xliff"></a>
+| プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
 |categoryDescriptions|[plannerCategoryDescriptions](plannercategorydescriptions.md)|計画内のタスクに関連付けられる 6 つのカテゴリの説明を指定するオブジェクト|
 |id|String| 読み取り専用です。計画の詳細の ID。28 文字長で、大文字と小文字の区別があります。[書式検証](planner_identifiers_disclaimer.md)はサービスによって行われます。|
 |sharedWith|[plannerUserIds](planneruserids.md)|この計画を共有するユーザー ID を設定します。Office 365 グループを活用している場合は、グループの API を使用してグループのメンバーシップを管理し、[グループの](group.md)計画を共有します。グループの既存のメンバーもこのコレクションに追加できますが、このグループが所有する計画へのアクセスは必要とされません。 |
 
-### <a name="relationships"></a>リレーションシップ
+## リレーションシップ
+<a id="relationships" class="xliff"></a>
 なし
 
 
-### <a name="json-representation"></a>JSON 表記
-
+## JSON 表記
+<a id="json-representation" class="xliff"></a>
 以下は、リソースの JSON 表記です。
 
 <!-- {

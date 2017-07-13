@@ -1,4 +1,5 @@
-# <a name="domain-resource-type"></a>ドメイン リソースの種類
+# ドメイン リソースの種類
+<a id="domain-resource-type" class="xliff"></a>
 
 テナントに関連付けられているドメインを表します。
 
@@ -16,7 +17,8 @@
 
 5. ドメイン向けのサービスを有効にするのに必要なレコードの一覧を取得して、サポートされているサービスを[構成する](../api/domain_list_serviceconfigurationrecords.md)。ドメイン レジストラーまたは DNS サーバー構成を使用して、構成レコードの詳細情報をドメインのゾーン ファイルに追加します。
 
-### <a name="methods"></a>メソッド
+## メソッド
+<a id="methods" class="xliff"></a>
 
 | メソッド   | 戻り値の型 |説明|
 |:---------------|:--------|:----------|
@@ -29,7 +31,8 @@
 |[Delete domain](../api/domain_delete.md) | なし |ドメインを削除します。|
 |[Verify domain](../api/domain_verify.md)|[domain](domain.md)|ドメインの所有権を検証します。|
 
-### <a name="properties"></a>プロパティ
+## プロパティ
+<a id="properties" class="xliff"></a>
 
 | プロパティ   | 型 | 説明 |
 |:---------------|:--------|:----------|
@@ -44,7 +47,8 @@
 |supportedServices|String collection| ドメインに割り当てられている機能です。<br><br>0、1 または次の値を含めることができます。*Email*、*Sharepoint*、*EmailInternalRelayOnly*、*OfficeCommunicationsOnline*、*SharePointDefaultDomain*、*FullRedelegation*、*SharePointPublic*、*OrgIdAuthentication*、*Yammer*、*Intune*<br><br> Graph API を使用して追加または削除できる値は次のとおりです。*Email*、*OfficeCommunicationsOnline*、*Yammer*<br>null 許容ではありません|
 |state|[domainState](domainstate.md)| ドメインのためにスケジュールされている非同期操作の状態です。 |
 
-### <a name="relationships"></a>リレーションシップ
+## リレーションシップ
+<a id="relationships" class="xliff"></a>
 
 検証レコードやサービス構成のレコードなど、ディレクトリ内のドメインと他のオブジェクト間のリレーションシップは、ナビゲーション プロパティを介して公開されます。要求でこれらのナビゲーション プロパティを対象にすれば、そのリレーションシップを読み取ることができます。
 
@@ -54,8 +58,8 @@
 |serviceConfigurationRecords|[domainDnsRecord](domaindnsrecord.md) collection| ドメインを Microsoft Online Services で使用する前に、顧客がそのドメインの DNS ゾーン ファイルに追加する DNS レコードです。<br>読み取り専用、Null 許容型 |
 |verificationDnsRecords|[domainDnsRecord](domaindnsrecord.md) collection| 顧客が Azure AD のドメイン所有権の確認を完了する前に、顧客がそのドメインの DNS ゾーン ファイルに追加する DNS レコード。<br>読み取り専用、Null 許容型|
 
-### <a name="json-representation"></a>JSON 表記
-
+## JSON 表記
+<a id="json-representation" class="xliff"></a>
 以下は、リソースの JSON 表記です。
 
 <!-- {
