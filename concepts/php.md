@@ -120,7 +120,7 @@ if (!$request->has('code')) {
 }
 ```
     
-この行 `exit($accessToken->getToken());` にアクセス トークンがあることにご注意ください。これで、Microsoft Graph を呼び出すためのコードを追加する準備が整いました。 
+この行 `exit($accessToken->getToken());` にアクセス トークンがあることに注意してください。これで、Microsoft Graph を呼び出すためのコードを追加する準備が整いました。 
 
 ## <a name="call-microsoft-graph-using-rest"></a>REST を使用して Microsoft Graph を呼び出す
 REST を使用して Microsoft Graph を呼び出すことができます。行 `exit($accessToken->getToken());` を次のコードに置き換えます。**\<YOUR_EMAIL_ADDRESS\>** とマークされているプレースホルダーに電子メール アドレスを挿入します。
@@ -177,5 +177,7 @@ PHP アプリを試す準備ができました。
 
 
 ## <a name="see-also"></a>関連項目
-* [Azure AD v2.0 のプロトコル](https://azure.microsoft.com/en-us/documentation/articles/active-directory-v2-protocols/)
-* [Azure AD v2.0 のトークン](https://azure.microsoft.com/en-us/documentation/articles/active-directory-v2-tokens/)
+- サンプルの REST 呼び出しを [API エクスプローラー](https://graph.microsoft.io/graph-explorer)で試す
+- [Microsoft Graph を呼び出すためのトークンの取得](https://developer.microsoft.com/en-us/graph/docs/concepts/auth_overview)
+- [ユーザーの代わりにアクセスを取得](https://developer.microsoft.com/en-us/graph/docs/concepts/auth_v2_user)
+- [ユーザーなしでアクセスを取得](https://developer.microsoft.com/en-us/graph/docs/concepts/auth_v2_service)

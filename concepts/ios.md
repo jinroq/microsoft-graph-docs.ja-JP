@@ -73,16 +73,16 @@ UI のワークフローを見直すため、アプリはユーザーに認証�
 
 1. **starter-project** フォルダー内の Xcode プロジェクト ワークスペース (**O365-iOS-Microsoft-Graph-SDK.xcworkspace**) を開き、**Authentication** フォルダーに移動して、ファイル **AuthenticationProvider.m** を開きます。そのクラスに次のコードを追加します。
 
-        -(void) connectToGraphWithClientId:(NSString *)clientId scopes:(NSArray *)scopes completion:(void (^)    (NSError *))completion{
+        -(void) connectToGraphWithClientId:(NSString *)clientId scopes:(NSArray *)scopes completion:(void (^)   (NSError *))completion{
             [NXOAuth2AuthenticationProvider setClientId:kClientId
                                               scopes:scopes];
     
     
             /**
-             Obtains access token by performing login with UI, where viewController specifies the parent view controller.
-             @param viewController The view controller to present the UI on.
+            Obtains access token by performing login with UI, where viewController specifies the parent view controller.
+            @param viewController The view controller to present the UI on.
              @param completionHandler The completion handler to be called when the authentication has completed.
-             error should be non nil if there was no error, and should contain any error(s) that occurred.
+            error should be non nil if there was no error, and should contain any error(s) that occurred.
              */
 
                 if ([[NXOAuth2AuthenticationProvider sharedAuthProvider] loginSilent]) {
@@ -94,11 +94,11 @@ UI のワークフローを見直すため、アプリはユーザーに認証�
                     NSLog(@"Authentication successful.");
                     completion(nil);
                     }
-                    else {
-                        NSLog(@"Authentication failed - %@", error.localizedDescription);
+                 else {
+                     NSLog(@"Authentication failed - %@", error.localizedDescription);
                     completion(error);
                     }
-                    }];
+                }];
             }
     
         }
@@ -183,7 +183,7 @@ UI のワークフローを見直すため、アプリはユーザーに認証�
             }
             else {
                 NSLog(NSLocalizedString(@"ERROR", ""), error.localizedDescription);
-                    self.statusTextView.text = NSLocalizedString(@"SEND_FAILURE", comment: "");
+                self.statusTextView.text = NSLocalizedString(@"SEND_FAILURE", comment: "");
                 }
             }];
     
@@ -210,5 +210,6 @@ UI のワークフローを見直すため、アプリはユーザーに認証�
 
 ## <a name="see-also"></a>関連項目
 - [iOS 用 Microsoft Graph SDK](https://github.com/microsoftgraph/msgraph-sdk-ios)
-- [Azure AD v2.0 のプロトコル](https://azure.microsoft.com/en-us/documentation/articles/active-directory-v2-protocols/)
-- [Azure AD v2.0 のトークン](https://azure.microsoft.com/en-us/documentation/articles/active-directory-v2-tokens/)
+- [Microsoft Graph を呼び出すためのトークンの取得](https://developer.microsoft.com/en-us/graph/docs/concepts/auth_overview)
+- [ユーザーの代わりにアクセスを取得](https://developer.microsoft.com/en-us/graph/docs/concepts/auth_v2_user)
+- [ユーザーなしでアクセスを取得](https://developer.microsoft.com/en-us/graph/docs/concepts/auth_v2_service)

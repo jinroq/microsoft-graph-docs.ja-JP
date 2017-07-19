@@ -20,7 +20,7 @@ Azure AD エンドポイントを使用するバージョンの Connect サン�
 - Bundler 依存関係マネージャー。
 - Ruby 用の Rack Web サーバー インターフェイス。
 - [Microsoft アカウント](https://www.outlook.com/)か[職場または学校アカウント](http://dev.office.com/devprogram)
-- Ruby on Rails 用の Microsoft Graph Connect スターター プロジェクト。[Microsoft Graph Ruby on Rails Connect サンプル](https://github.com/microsoftgraph/ruby-connect-rest-sample)をダウンロードします。スタート プロジェクトはスターター フォルダー内にあります。
+- Ruby on Rails 用の Microsoft Graph Connect スターター プロジェクト。[Microsoft Graph Ruby on Rails Connect サンプル](https://github.com/microsoftgraph/ruby-connect-rest-sample)をダウンロードします。スタート プロジェクトは_スターター_ フォルダー内にあります。
 
 
 ## <a name="register-the-application"></a>アプリケーションの登録
@@ -53,7 +53,7 @@ Microsoft アプリケーション登録ポータルでアプリケーション�
 
 ## <a name="configure-the-project"></a>プロジェクトを構成する
 
-1. [Microsoft Graph Ruby on Rails Connect サンプル](https://github.com/microsoftgraph/ruby-connect-rest-sample)をダウンロードするか、複製を作成します。任意のエディターで、スターター フォルダーを開きます。
+1. [Microsoft Graph Ruby on Rails Connect サンプル](https://github.com/microsoftgraph/ruby-connect-rest-sample)をダウンロードするか、複製を作成します。任意のエディターで、_スターター_ フォルダーを開きます。
 1. Bundler と Rack がない場合は、次のコマンドでインストールできます。
 
     ```
@@ -125,7 +125,7 @@ Gemfile では、次の gem のコメントを解除して、依存関係とし�
 
     def login
         redirect_to '/auth/microsoft_v2_auth'
-      end
+    end
 
 次に、認証が実行されたときに OmniAuth がリダイレクトするアプリ内の場所を指定する必要があります。次のルートのコメントを解除します。
 
@@ -150,7 +150,7 @@ OmniAuth がユーザーの認証を完了すると、アプリ登録で指定�
 `app/controllers/pages_controller.rb` で、空の `callback` メソッドを次のコードに置き換えます。
 
     ```
-      def callback
+    def callback
         # Access the authentication hash for omniauth
         # and extract the auth token, user name, and email
         data = request.env['omniauth.auth']
@@ -286,6 +286,9 @@ OmniAuth がユーザーの認証を完了すると、アプリ登録で指定�
 
 ## <a name="see-also"></a>関連項目
 - [Graph エクスプローラー](https://graph.microsoft.io/graph-explorer)を使用して REST API を試してみます。
-- GitHub の他の [Microsoft Graph サンプル](https://github.com/microsoftgraph)を探索します。
+- GitHub の他の [Microsoft Graph サンプル](https://github.com/microsoftgraph)を探す。
+- [Microsoft Graph を呼び出すためのトークンの取得](https://developer.microsoft.com/en-us/graph/docs/concepts/auth_overview)
+- [ユーザーの代わりにアクセスを取得](https://developer.microsoft.com/en-us/graph/docs/concepts/auth_v2_user)
+- [ユーザーなしでアクセスを取得](https://developer.microsoft.com/en-us/graph/docs/concepts/auth_v2_service)
 
 

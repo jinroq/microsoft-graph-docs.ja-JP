@@ -34,7 +34,7 @@ Microsoft アプリケーション登録ポータルでアプリケーション�
 
 4. アプリケーション ID をコピーします。これは、アプリの構成に使用するアプリの一意識別子です。
 
-5. **[プラットフォーム]** で、**[プラットフォームの追加]** > **[Web]** の順に選びます。
+5. **[プラットフォーム]** で、**[プラットフォームの追加]** > **[Web]** の順に選択します。
 
 6. **[暗黙的フローを許可する]** のチェック ボックスが選択されていることを確認して、リダイレクト URI として *http://localhost:8080* を入力します。 
 
@@ -48,7 +48,7 @@ Microsoft アプリケーション登録ポータルでアプリケーション�
         npm install  
         bower install
     
-3. スターター プロジェクトのファイル内の **public/scripts** フォルダーにある、config.js を開きます。
+3. スターター プロジェクトのファイル内の、**public/scripts** フォルダーにある config.js を開きます。
 4. **clientID** フィールド内の **ENTER_YOUR_CLIENT_ID** プレースホルダーの値を、前の手順でコピーしたアプリケーション ID に置き換えます。
 
 ## <a name="call-microsoft-graph-with-the-sdk"></a>SDK を使用して Microsoft Graph を呼び出す
@@ -172,5 +172,7 @@ app.js を開いて、ファイルの末尾に次に示すコードを追加し�
 
 
 ## <a name="see-also"></a>関連項目
-- [Azure AD v2.0 のプロトコル](https://azure.microsoft.com/en-us/documentation/articles/active-directory-v2-protocols/)
-- [Azure AD v2.0 のトークン](https://azure.microsoft.com/en-us/documentation/articles/active-directory-v2-tokens/)
+- サンプルの REST 呼び出しを [API エクスプローラー](https://graph.microsoft.io/graph-explorer)で試す
+- [Microsoft Graph を呼び出すためのトークンの取得](https://developer.microsoft.com/en-us/graph/docs/concepts/auth_overview)
+- [ユーザーの代わりにアクセスを取得](https://developer.microsoft.com/en-us/graph/docs/concepts/auth_v2_user)
+- [ユーザーなしでアクセスを取得](https://developer.microsoft.com/en-us/graph/docs/concepts/auth_v2_service)

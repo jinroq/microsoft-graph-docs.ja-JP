@@ -1,4 +1,4 @@
-# <a name="add-custom-data-to-users-using-open-extensions"></a>オープン拡張機能を使用してカスタム データをユーザーに追加する
+# <a name="add-custom-data-to-users-using-open-extensions-example"></a>オープン拡張機能を使用したユーザーへのカスタム データの追加 (例)
 *オープン拡張機能*の使用方法について、具体例を使ってデモンストレーションします。 
 
 デスクトップやモバイルなど、多種のクライアント プラットフォームで利用できるアプリケーションをビルドしているとします。アプリにサインインするときのデバイスに関係なく一貫性を確保できるように、ユーザー自身で UI エクスペリエンスを構成できるようにしたいと考えています。これは、ほとんどのアプリで一般的な要件です。 
@@ -111,7 +111,7 @@ HTTP/1.1 204 No content
 ## <a name="see-also"></a>関連項目
 
 - [拡張機能を使用してカスタム データをリソースに追加する](extensibility_overview.md)
-- [スキーマ拡張機能を使用したグループへのカスタム データの追加](extensibility_schema_groups.md)
+- [スキーマ拡張機能を使用したグループへのカスタム データの追加 (例)](extensibility_schema_groups.md)
 - [openTypeExtension リソース タイプ](../api-reference/v1.0/resources/opentypeextension.md)
 - [オープン拡張機能を作成する](../api-reference/v1.0/api/opentypeextension_post_opentypeextension.md)
 - [オープン拡張機能を取得する](../api-reference/v1.0/api/opentypeextension_get.md)

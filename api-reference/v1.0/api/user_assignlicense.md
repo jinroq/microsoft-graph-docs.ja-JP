@@ -2,7 +2,7 @@
 ユーザーのサブスクリプションを追加または削除します。また、サブスクリプションに関連付けられている特定のプランを有効または無効にすることもできます。
 
 ## <a name="prerequisites"></a>前提条件
-この API を実行するには、以下のいずれかの**スコープ**が必要です。*User.ReadWrite.All、Directory.ReadWrite.All*
+この API を実行するには、以下のいずれかの**スコープ**が必要です。*Directory.ReadWrite.All、Directory.AccessAsUser.All*
 ## <a name="http-request"></a>HTTP 要求
 <!-- { "blockType": "ignored" } -->
 ```http

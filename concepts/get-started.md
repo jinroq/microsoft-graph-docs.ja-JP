@@ -46,7 +46,7 @@
     <td>
         <a href="https://github.com/microsoftgraph/ios-objectivec-connect-rest-sample">REST サンプル</a>
     </td>     
-     <td>
+    <td>
         <a href="https://github.com/microsoftgraph/ios-objectivec-connect-sample">SDK サンプル</a>
     </td> 
   </tr>
@@ -65,7 +65,7 @@
         <a href="https://github.com/microsoftgraph/nodejs-connect-rest-sample/tree/last_v1_auth">REST サンプル</a>
     </td>     
     <td>    
-        <a href="https://github.com/microsoftgraph/nodejs-connect-sample">SDK サンプル</a>または ¶<a href="https://github.com/microsoftgraph/nodejs-connect-rest-sample">REST サンプル</a>
+        <a href="https://github.com/microsoftgraph/nodejs-connect-sample">SDK サンプル</a>または <a href="https://github.com/microsoftgraph/nodejs-connect-rest-sample">REST サンプル</a>
     </td> 
   </tr>
   <tr>
@@ -114,6 +114,7 @@
 </table>
 
 ## <a name="see-also"></a>関連項目
-- サンプルの REST 呼び出しを [API エクスプローラー](https://graph.microsoft.io/graph-explorer)で試してみてください。
-- [Azure AD エンドポイントのドキュメント](https://azure.microsoft.com/documentation/services/active-directory/)
-- [Azure AD v2.0 エンドポイントのドキュメント](https://azure.microsoft.com/documentation/articles/?service=active-directory&term=azure+ad+v2.0)
+- サンプルの REST 呼び出しを [API エクスプローラー](https://graph.microsoft.io/graph-explorer)で試す
+- [Microsoft Graph を呼び出すためのトークンの取得](https://developer.microsoft.com/en-us/graph/docs/concepts/auth_overview)
+- [ユーザーの代わりにアクセスを取得](https://developer.microsoft.com/en-us/graph/docs/concepts/auth_v2_user)
+- [ユーザーなしでアクセスを取得](https://developer.microsoft.com/en-us/graph/docs/concepts/auth_v2_service)
