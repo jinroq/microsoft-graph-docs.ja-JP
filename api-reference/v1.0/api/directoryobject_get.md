@@ -3,11 +3,10 @@
 directoryobject オブジェクトのプロパティと関係を取得します。
 ## <a name="prerequisites"></a>前提条件
 この API を実行するには、以下のいずれかの**スコープ**が必要です。 
-
 - _Directory.Read.All_ 
 - _Directory.AccessAsUser.All_
 
-> **注:**アクセス許可のスコープは、必要な特権のほとんどが最小限の順に一覧表示されます。
+> 注:アクセス許可のスコープは、必要な特権が最小限の順に一覧表示されます。
 
 ## <a name="http-request"></a>HTTP 要求
 <!-- { "blockType": "ignored" } -->

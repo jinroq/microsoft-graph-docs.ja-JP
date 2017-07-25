@@ -36,7 +36,7 @@ Microsoft Graph には、2 種類の拡張機能が備わっています。ご�
 
 リソース インスタンスに[オープン拡張機能を作成](../api-reference/v1.0/api/opentypeextension_post_opentypeextension.md)し、すべてのカスタム データを同じ操作で保存することができます (サポートされているリソースの一部については、[以下の既知の制限](known_issues.md#extensions)を参照してください)。その後、拡張機能とそのデータの[読み取り](../api-reference/v1.0/api/opentypeextension_get.md)、[更新](../api-reference/v1.0/api/opentypeextension_update.md)、または[削除](../api-reference/v1.0/api/opentypeextension_delete.md)を行うことができます。
 
-オープン拡張機能の例を参照してください。[オープン拡張機能を使用したユーザーへのカスタム データの追加](extensibility_open_users.md)
+オープン拡張機能の例:[オープン拡張機能を使用したユーザーへのカスタム データの追加](extensibility_open_users.md)
 
 ## <a name="schema-extensions"></a>スキーマ拡張機能
 
@@ -58,7 +58,7 @@ Microsoft Graph には、2 種類の拡張機能が備わっています。ご�
 - リソース `PATCH` メソッドを使用して、既存のリソース インスタンスでカスタム データを追加または更新できます。
 - リソース `PATCH` メソッドを使用して、複合型を null に設定し、リソース インスタンスのカスタム データを削除できます。 
 
-スキーマ拡張機能の例を参照してください。[スキーマ拡張機能を使用したグループへのカスタム データの追加](extensibility_schema_groups.md)
+スキーマ拡張機能の例:[スキーマ拡張機能を使用したグループへのカスタム データの追加](extensibility_schema_groups.md)
 
 
 ### <a name="schema-extensions-lifecycle"></a>スキーマ拡張機能のライフサイクル
@@ -113,20 +113,15 @@ Azure AD は、いくつかの [directoryObject](../api-reference/v1.0/resources
 
 拡張機能の使用に関する既知の制限については、既知の問題に関する記事の[「拡張機能」セクション](known_issues.md#extensions)を参照してください。
 
-## <a name="see-also"></a>関連項目
-
-[Office 365 のドメイン](https://technet.microsoft.com/en-us/library/office-365-domains.aspx)
-
-[Office 365 テナントのドメインの追加および検証](http://office365support.ca/adding-and-verifying-a-domain-for-the-new-office-365/)
-
-
-## <a name="next-steps"></a>次の手順
-
-オープン拡張機能を使用して、**user** リソースをカスタムのローミング プロファイルのデータで拡張する例を参照してください。
+## <a name="extension-examples"></a>拡張機能の例
 
 [オープン拡張機能を使用したユーザーへのカスタム データの追加](extensibility_open_users.md)
 
-スキーマ拡張機能を使用して、**group** リソースをトレーニング コースのデータで拡張する例を参照してください。
-
 [スキーマ拡張機能を使用したグループへのカスタム データの追加](extensibility_schema_groups.md)
 
+## <a name="see-also"></a>関連項目
+
+
+  [Office 365 のドメイン](https://technet.microsoft.com/en-us/library/office-365-domains.aspx)
+
+[Office 365 テナントのドメインの追加および検証](http://office365support.ca/adding-and-verifying-a-domain-for-the-new-office-365/)

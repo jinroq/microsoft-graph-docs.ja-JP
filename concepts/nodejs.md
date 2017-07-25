@@ -80,7 +80,7 @@ Microsoft アプリケーション登録ポータルでアプリケーション�
 
 1. utils\graphHelper.js を開きます。
 
-1. **getUserData** 関数を次のコードに置き換えます。これにより、GET 要求を構成して */me* エンドポイントに送信し、応答を処理します。
+1. **getUserData** 関数を、以下のコードに置き換えます。これにより GET 要求を構成して */me* エンドポイントに送信し、応答を処理します。
 
         function getUserData(accessToken, callback) {
           request
@@ -135,7 +135,7 @@ Microsoft アプリケーション登録ポータルでアプリケーション�
            });
         }
 
-1. **postSendMail** 関数を次のコードに置き換えます。これにより、POST 要求を構成して */me/sendMail* エンドポイントに送信し、応答を処理します。
+1. **postSendMail** 関数を次のコードに置き換えます。これにより POST 要求を構成して */me/sendMail* エンドポイントに送信し、応答を処理します。
 
         function postSendMail(accessToken, message, callback) {
           request
@@ -205,7 +205,5 @@ Microsoft アプリケーション登録ポータルでアプリケーション�
 
 
 ## <a name="see-also"></a>関連項目
-- サンプルの REST 呼び出しを [API エクスプローラー](https://graph.microsoft.io/graph-explorer)で試す
-- [Microsoft Graph を呼び出すためのトークンの取得](https://developer.microsoft.com/en-us/graph/docs/concepts/auth_overview)
-- [ユーザーの代わりにアクセスを取得](https://developer.microsoft.com/en-us/graph/docs/concepts/auth_v2_user)
-- [ユーザーなしでアクセスを取得](https://developer.microsoft.com/en-us/graph/docs/concepts/auth_v2_service)
+- [Azure AD v2.0 のプロトコル](https://azure.microsoft.com/en-us/documentation/articles/active-directory-v2-protocols/)
+- [Azure AD v2.0 のトークン](https://azure.microsoft.com/en-us/documentation/articles/active-directory-v2-tokens/)
