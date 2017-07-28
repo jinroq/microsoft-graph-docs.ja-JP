@@ -21,27 +21,9 @@ Android 用アプリで Microsoft Graph を使用するには、以下のスク�
 - Android Studio 2.0 以降のバージョン
 
 
-## <a name="register-the-application"></a>アプリケーションの登録
-Microsoft アプリケーション登録ポータルでアプリケーションを登録します。これにより、アプリの構成に使用するアプリ ID とパスワードが生成されます。
+## <a name="configure-a-new-project"></a>新規プロジェクトを構成する
 
-1. 個人用アカウント、あるいは職場または学校アカウントのいずれかを使用して、[Microsoft アプリ登録ポータル](https://apps.dev.microsoft.com/)にサインインします。
-
-2. **[アプリの追加]** を選択します。
-
-3. アプリの名前を入力して、**[アプリケーションの作成]** を選択します。 
-    
-    登録ページが表示され、アプリのプロパティが一覧表示されます。
-
-4. アプリケーション ID をコピーします。これは、アプリの一意識別子です。 
-
-5. **[プラットフォームの追加]** および **[モバイル アプリケーション]** を選択します。
-
-    > **注:**アプリケーション登録ポータルでは、値 *urn: ietf:wg:oauth:2.0:oob* のリダイレクト URI が表示されます。ただし、リダイレクト URI の既定値 *https://login.microsoftonline.com/common/oauth2/nativeclient* を使用します。
-
-6. **[保存]** を選択します。
-
-
-## <a name="configure-the-project"></a>プロジェクトを構成する
+[Android 用接続サンプル](https://github.com/microsoftgraph/android-java-connect-sample)をダウンロードしている場合は、この手順をスキップしてください。 
 
 Android Studio で新しいプロジェクトを開始します。ほとんどのウィザードで既定値のままにしておきますが、次のオプションを選択するようにしてください。
 
@@ -51,113 +33,292 @@ Android Studio で新しいプロジェクトを開始します。ほとんど�
  
 これにより、Android プロジェクトにアクティビティとユーザーの認証に使用できるボタンが追加されます。
 
-> 注:このチュートリアルのコーディング セクションに集中できるように、プロジェクト構成をサポートする[スターター プロジェクト](https://github.com/microsoftgraph/android-java-connect-sample/tree/master/starter-project)も使用できます。
+
+## <a name="register-the-application"></a>アプリケーションを登録する
+
+接続サンプルをダウンロードした場合でも、新しいプロジェクトを作成した場合でも、[Microsoft アプリ登録ポータル](https://apps.dev.microsoft.com/)でアプリを登録する必要があります。
+
+Microsoft アプリ登録ポータルでアプリを登録します。これにより、アプリの構成に使用するアプリ ID が生成されます。
+
+1. 個人用アカウント、あるいは職場または学校アカウントのいずれかを使用して、[Microsoft アプリ登録ポータル](https://apps.dev.microsoft.com/)にサインインします。
+
+2. **[アプリの追加]** を選択します。
+
+>ヒント: [Android 用接続サンプル](https://github.com/microsoftgraph/android-java-connect-sample)をダウンロードし、その登録のみを行う場合は、**[作成]** ボタンを押す前に**[ガイド付きセットアップ]** のチェックを外してください。
+
+3. アプリの名前を入力して、**[作成]** を選択します。 
+    
+    **ガイド付きセットアップ** のフローは次のようになります。
+ 
+    a.**[モバイルおよびデスクトップ アプリ]** を選択して、作成するアプリの種類を定義します。
+
+    b.**[Android]** を選択して、使用しているモバイル テクノロジを定義します。
+
+    c.最初のトピックを確認し、終了したら、ページの最後にある**[セットアップ]** ボタンをクリックします。
+
+    d.**[セットアップ]** の手順の説明に従って、MSAL ライブラリをアプリの build.gradle に追加します。
+
+    e.**[ユーザー]** の手順の指示に従って、MSAL ロジックを新しいプロジェクトに追加します。
+
+    f.**[構成]**ページで、ポータルによって独自のアプリケーション ID が作成されています。これを使用してアプリを構成します。
+
+    ガイドなしのフローは次のようになります。
+
+    登録ページが表示され、アプリのプロパティが一覧表示されます。
+
+    a.アプリケーション ID をコピーします。これは、アプリの一意識別子です。 
+
+    b.**[プラットフォームの追加]** および **[ネイティブ アプリケーション]** を選択します。
+
+    > **注:**アプリケーション登録ポータルでは、値 *msalYOUR NEW APP ID://auth* のリダイレクト URI が表示されます。組み込みリダイレクト URI は使用しないでください。[Android 用接続サンプル](https://github.com/microsoftgraph/android-java-connect-sample)には、このリダイレクト URI を必要とする MSAL 認証ライブラリが実装されています。[サポートされているサード パーティ製ライブラリ](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-v2-libraries#compatible-client-libraries)または **ADAL** ライブラリを使用している場合は、組み込みのリダイレクト URI を使用する必要があります。
+
+    ガイド付きセットアップのフローとガイドなしのフロー
+
+    a.委任されたアクセス許可を追加します。**profile**、**Mail.ReadWrite**、**Mail.Send**、**Files.ReadWrite**、**User.ReadBasic.All** が必要になります。 
+   
+    b.**[保存]** を選択します。
+
 
 ## <a name="authenticate-the-user-and-get-an-access-token"></a>ユーザーの認証とアクセス トークンの取得
-OAuth ライブラリを使用して、認証プロセスを簡素化します。[OpenID](http://openid.net) により、このプロジェクトで使用できるライブラリである [Android の AppAuth](https://github.com/openid/AppAuth-Android) が提供されます。
 
-### <a name="add-the-dependency-to-appbuildgradle"></a>app/build.gradle に依存関係を追加します。
+> **注:**アプリケーション登録ポータルから **[ガイド付きセットアップ]** のフローの指示に従って新しいアプリケーションを作成した場合は、これらの手順をスキップできます。Graph API の詳細については、「[Microsoft Graph SDK を使用して Microsoft Graph を呼び出す](#call-microsoft-graph-using-the-microsoft-graph-sdk)」に移動してください。
 
-アプリのモジュールで `build.gradle` ファイルを開き、次の依存関係を組み込みます。
+追加した MSAL と Microsoft Graph コードについては、「[Android 用接続サンプル](https://github.com/microsoftgraph/android-java-connect-sample)」で説明します。
+
+### <a name="add-the-dependency-to-appbuildgradle"></a>app/build.gradle に依存関係を追加する
+
+アプリのモジュールで `build.gradle` ファイルを開き、次の依存関係を検索します。
 
 ```gradle
-compile 'net.openid:appauth:0.3.0'
+    compile ('com.microsoft.identity.client:msal:0.1.+') {
+        exclude group: 'com.android.support', module: 'appcompat-v7'
+    }
+    compile 'com.android.volley:volley:1.0.0'
+
 ```
 
 ### <a name="start-the-authentication-flow"></a>認証フローの開始
 
-1. **MainActivity** ファイルを開き、**onCreate** メソッドで **AuthorizationService** オブジェクトを宣言します。
-    ```java
-    final AuthorizationService authorizationService =
-        new AuthorizationService(this);
-    ```
-    
-2. *FloatingActionButton* のクリック イベントのイベント ハンドラーを配置します。**onClick** メソッドを次のコードに置き換えます。アプリの **アプリケーション ID** を、**\<YOUR_APPLICATION_ID\>** とマークされているプレースホルダーに挿入します。
-    ```java
+1. **AuthenticationManager** ファイルを開きます。**PublicClientApplication** オブジェクトの宣言を検索し、次に **getInstance** メソッドでインスタンスを検索します。
+
+   ```java
+    private static PublicClientApplication mPublicClientApplication;
+    ....
+
+    public static synchronized AuthenticationManager getInstance() {
+        if (INSTANCE == null) {
+            INSTANCE = new AuthenticationManager();
+            if (mPublicClientApplication == null) {
+                mPublicClientApplication = new PublicClientApplication(Connect.getInstance());
+            }
+        }
+        return INSTANCE;
+    }
+
+   ```
+
+
+2. **ConnectActivity** クラスで、**mConnectButton** のクリック イベントのイベント ハンドラーを検索します。**onClick** メソッドを検索して、関連するコードを確認します。
+  
+    **connect** メソッドは個人情報 (PII) のログ収集を有効にし、サンプルのヘルパー クラス **AuthenticationManager** のインスタンスを取得し、MSAL プラットフォームのオブジェクトのユーザー コレクションを取得します。ユーザーが存在しない場合、新しいユーザーは Azure AD の認証と承認フローに移動されます。それ以外の場合は、メッセージなしで認証トークンを取得します。
+
+   ```java
     @Override
     public void onClick(View view) {
-        Uri authorizationEndpoint =
-            Uri.parse("https://login.microsoftonline.com/common/oauth2/v2.0/authorize");
-        Uri tokenEndpoint =
-            Uri.parse("https://login.microsoftonline.com/common/oauth2/v2.0/token");
-        AuthorizationServiceConfiguration config =
-            new AuthorizationServiceConfiguration(
-                    authorizationEndpoint,
-                    tokenEndpoint,null);
-
-        List<String> scopes = new ArrayList<>(
-            Arrays.asList("openid mail.send".split(" ")));
-
-        AuthorizationRequest authorizationRequest = new AuthorizationRequest.Builder(
-            config,
-            "<YOUR_APPLICATION_ID>",
-            ResponseTypeValues.CODE,
-            Uri.parse("https://login.microsoftonline.com/common/oauth2/nativeclient"))
-            .setScopes(scopes)
-            .build();
-
-        Intent intent = new Intent(view.getContext(), MainActivity.class);
-
-        PendingIntent redirectIntent =
-            PendingIntent.getActivity(
-                    view.getContext(),
-                    authorizationRequest.hashCode(),
-                    intent, 0);
-
-        authorizationService.performAuthorizationRequest(
-            authorizationRequest,
-            redirectIntent);
+        ....
+        connect();
     }
-    ```
+
+        private void connect() {
+
+        if (mEnablePiiLogging) {
+            Logger.getInstance().setEnablePII(true);
+        } else {
+            Logger.getInstance().setEnablePII(false);
+        }
+
+        AuthenticationManager mgr = AuthenticationManager.getInstance();
+
+        List<User> users = null;
+
+        try {
+            users = mgr.getPublicClient().getUsers();
+
+            if (users != null && users.size() == 1) {
+                mUser = users.get(0);
+                mgr.callAcquireTokenSilent(mUser, true, this);
+            } else {
+                mgr.callAcquireToken(
+                        this,
+                        this);
+            }
+        } catch (MsalClientException e) {
+            Log.d(TAG, "MSAL Exception Generated while getting users: " + e.toString());
+
+        } catch (IndexOutOfBoundsException e) {
+            Log.d(TAG, "User at this position does not exist: " + e.toString());
+        }
+    }
+
+   ```
+3. ユーザーが認証ダイアログを閉じたときに Azure AD によって生成された Azure AD のリダイレクト応答を処理するイベント ハンドラーを検索します。このハンドラーは、**ConnectActivity** クラスにあります。
+
+   ```java
+       /**
+     * Handles redirect response from https://login.microsoftonline.com/common and
+     * notifies the MSAL library that the user has completed the authentication
+     * dialog
+     * @param requestCode
+     * @param resultCode
+     * @param data
+     */
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+        if (AuthenticationManager
+                .getInstance()
+                .getPublicClient() != null) {
+            AuthenticationManager
+                    .getInstance()
+                    .getPublicClient()
+                    .handleInteractiveRequestRedirect(requestCode, resultCode, data);
+        }
+    }
+
+   ```    
+3. Graph API の呼び出しで使用される認証トークンをキャッシュする、認証コールバック メソッドを検索します。
+
+ 
+
+```java
+    /* Callback used for interactive request.  If succeeds we use the access
+         * token to call the Microsoft Graph. Does not check cache
+         */
+    private AuthenticationCallback getAuthInteractiveCallback() {
+        return new AuthenticationCallback() {
+            @Override
+            public void onSuccess(AuthenticationResult authenticationResult) {
+            /* Successfully got a token, call graph now */
+                Log.d(TAG, "Successfully authenticated");
+                Log.d(TAG, "ID Token: " + authenticationResult.getIdToken());
+
+            /* Store the auth result */
+                mAuthResult = authenticationResult;
+                if (mActivityCallback != null)
+                    mActivityCallback.onSuccess(mAuthResult);
+            }
+
+            @Override
+            public void onError(MsalException exception) {
+            /* Failed to acquireToken */
+                Log.d(TAG, "Authentication failed: " + exception.toString());
+                if (mActivityCallback != null)
+                    mActivityCallback.onError(exception);
+            }
+
+            @Override
+            public void onCancel() {
+            /* User canceled the authentication */
+                Log.d(TAG, "User cancelled login.");
+            }
+        };
+    }
+
+```
     
-この時点で、ボタンの付いた Android アプリができているはずです。ボタンを押すと、デバイスのブラウザーを使用した認証ページがアプリに表示されます。次の手順は、認証サーバーがリダイレクト URI にコードを送信してアクセス トークンと交換する作業です。
+接続サンプルのアプリでは、メインのアクティビティに **[接続]** ボタンがあります。初回使用時にボタンを押すと、デバイスのブラウザーを使用した認証ページがアプリに表示されます。次の手順は、認証サーバーがリダイレクト URI にコードを送信してアクセス トークンと交換する作業です。
 
 ### <a name="exchange-the-authorization-code-for-an-access-token"></a>認証コードとアクセス トークンの交換
 
 アクセス トークンと交換できるコードが含まれている認証サーバーの応答をアプリが処理できるようにする必要があります。
 
-1. **MainActivity**が *https://login.microsoftonline.com/common/oauth2/nativeclient* への要求を処理できるということを、Android システムに認識させる必要があります。これを行うには、**AndroidManifest** ファイルを開き、次の子を MainActivity の **intent-filter** 要素に追加します。
+1. Connect アプリがアプリケーション登録で構成されたリダイレクト URL への要求を処理できることを、Android システムに告げる必要があります。これを行うには、**AndroidManifest** ファイルを開き、次の子をプロジェクトの **\<application/\>** 要素に追加します。
     ```xml
-    <action android:name="android.intent.action.VIEW"/>
-    <category android:name="android.intent.category.DEFAULT"/>
-    <category android:name="android.intent.category.BROWSABLE"/>
-    <data android:scheme="https"/>
-    <data android:host="login.microsoftonline.com"/>
-    <data android:path="/common/oauth2/nativeclient"/>
+        <uses-sdk tools:overrideLibrary="com.microsoft.identity.msal" />
+        <application ...>
+            ...
+            <activity
+                android:name="com.microsoft.identity.client.BrowserTabActivity">
+                <intent-filter>
+                    <action android:name="android.intent.action.VIEW" />
+                    <category android:name="android.intent.category.DEFAULT" />
+                    <category android:name="android.intent.category.BROWSABLE" />
+                    <data android:scheme="msalENTER_YOUR_CLIENT_ID"
+                        android:host="auth" />
+                </intent-filter>
+            </activity>
+            <meta-data
+                android:name="https://login.microsoftonline.com/common"
+                android:value="authority string"/>
+            <meta-data
+                android:name="com.microsoft.identity.client.ClientId"
+                android:value="ENTER_YOUR_CLIENT_ID"/>
+        </application>
     ```
+2. **MSAL**ライブラリは、登録ポータルによって割り当てられたアプリケーション ID にアクセスする必要があります。**MSAL ライブラリは、アプリケーション ID を「クライアント ID」として参照します**。これは、ライブラリのコンストラクターで渡したアプリケーション コンテキストからアプリケーション ID (クライアント ID) を取得します。 
 
-2. 認証サーバーが応答を送信すると、アクティビティが呼び出されます。認証サーバーからの応答で、アクセス トークンを要求できます。**MainActivity** に戻り、**onCreate** メソッドに次のコードを追加します。
-    ```java
-    Bundle extras = getIntent().getExtras();
-    if (extras != null) {
-        AuthorizationResponse authorizationResponse = AuthorizationResponse.fromIntent(getIntent());
-        AuthorizationException authorizationException = AuthorizationException.fromIntent(getIntent());
-        final AuthState authState = new AuthState(authorizationResponse, authorizationException);
+   >注:コンストラクターに文字列パラメーターを渡すことにより、実行時にクライアント ID を提供することもできます。 
 
-        if (authorizationResponse != null) {
-            HashMap<String, String> additionalParams = new HashMap<>();
-            TokenRequest tokenRequest = authorizationResponse.createTokenExchangeRequest(additionalParams);
+3. 認証サーバーが応答を送信すると、アクティビティが呼び出されます。認証サーバーからの応答で、アクセス トークンを要求します。**AuthenticationManager** に移動し、クラス内で次のコードを検索します。
 
-            authorizationService.performTokenRequest(
-                tokenRequest,
-                new AuthorizationService.TokenResponseCallback() {
-                    @Override
-                    public void onTokenRequestCompleted(
-                            @Nullable TokenResponse tokenResponse,
-                            @Nullable AuthorizationException ex) {
-                        authState.update(tokenResponse, ex);
-                        if (tokenResponse != null) {
-                            String accessToken = tokenResponse.accessToken;
-                        }
-                    }
-                });
-        } else {
-            Log.i("MainActivity", "Authorization failed: " + authorizationException);
-        }
+   ```java
+    /**
+     * Authenticates the user and lets the user authorize the app for the requested permissions.
+     * An authentication token is returned via the getAuthInteractiveCalback method
+     * @param activity
+     * @param authenticationCallback
+     */
+    public void connect(Activity activity, final MSALAuthenticationCallback authenticationCallback){
+        mActivityCallback = authenticationCallback;
+        mPublicClientApplication.acquireToken(
+                activity, Constants.SCOPES, getAuthInteractiveCallback());
     }
-    ```
 
-この行 `String accessToken = tokenResponse.accessToken;` にアクセス トークンがあることにご注意ください。これで、Microsoft Graph を呼び出すためのコードを追加する準備が整いました。 
+
+     /* Callback used for interactive request.  If succeeds we use the access
+         * token to call the Microsoft Graph. Does not check cache
+         */
+    private AuthenticationCallback getAuthInteractiveCallback() {
+        return new AuthenticationCallback() {
+            @Override
+            public void onSuccess(AuthenticationResult authenticationResult) {
+            /* Successfully got a token, call graph now */
+                Log.d(TAG, "Successfully authenticated");
+                Log.d(TAG, "ID Token: " + authenticationResult.getIdToken());
+
+            /* Store the auth result */
+                mAuthResult = authenticationResult;
+                if (mActivityCallback != null)
+                    mActivityCallback.onSuccess(mAuthResult);
+            }
+
+            @Override
+            public void onError(MsalException exception) {
+            /* Failed to acquireToken */
+                Log.d(TAG, "Authentication failed: " + exception.toString());
+                if (mActivityCallback != null)
+                    mActivityCallback.onError(exception);
+            }
+
+            @Override
+            public void onCancel() {
+            /* User canceled the authentication */
+                Log.d(TAG, "User cancelled login.");
+            }
+        };
+    }
+
+     /**
+     * Returns the access token obtained in authentication
+     *
+     * @return mAccessToken
+     */
+    public String getAccessToken() throws AuthenticatorException, IOException, OperationCanceledException {
+        return  mAuthResult.getAccessToken();
+    }
+
+   ```
+
 
 ## <a name="call-microsoft-graph"></a>Microsoft Graph を呼び出す
 [Microsoft Graph SDK](#call-microsoft-graph-using-the-microsoft-graph-sdk) または [Microsoft Graph REST API](#call-microsoft-graph-using-the-microsoft-graph-rest-api) を使用して、Microsoft Graph を呼び出すことができます。
@@ -168,54 +329,137 @@ compile 'net.openid:appauth:0.3.0'
 1. アプリにインターネット アクセス許可を付与します。**AndroidManifest** ファイルを開き、マニフェスト要素に次の子を追加します。
     ```xml
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
     ```
 
 2. Microsoft Graph SDK および GSON に依存関係を追加します。
-    ```gradle
-    compile 'com.microsoft.graph:msgraph-sdk-android:1.0.0'
+   ```gradle
+    compile 'com.microsoft.graph:msgraph-sdk-android:1.3.2'
     compile 'com.google.code.gson:gson:2.7'
-    ```
-   
-3. 行 `String accessToken = tokenResponse.accessToken;` を次のコードに置き換えます。**\<YOUR_EMAIL_ADDRESS\>** とマークされているプレースホルダーに電子メール アドレスを挿入します。
-    ```java
-    final String accessToken = tokenResponse.accessToken;
-    final IClientConfig clientConfig = 
-            DefaultClientConfig.createWithAuthenticationProvider(new IAuthenticationProvider() {
-        @Override
-        public void authenticateRequest(IHttpRequest request) {
-            request.addHeader("Authorization", "Bearer " + accessToken);
+   ```
+
+
+3. **uthenticateRequest** ヘルパー メソッドを使用して、新しい要求に認証トークンを追加します。このメソッドは同じメソッドを Microsoft Graph 認証の **IAuthenticationProvider** インターフェイスから実装します
+    
+   ```java
+    /**
+     * Appends an access token obtained from the {@link AuthenticationManager} class to the
+     * Authorization header of the request.
+     * @param request
+     */
+    @Override
+    public void authenticateRequest(IHttpRequest request)  {
+        try {
+            request.addHeader("Authorization", "Bearer "
+                    + AuthenticationManager.getInstance()
+                    .getAccessToken());
+            // This header has been added to identify this sample in the Microsoft Graph service.
+            // If you're using this code for your project please remove the following line.
+            request.addHeader("SampleID", "android-java-connect-sample");
+        } catch (AuthenticatorException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }  catch (OperationCanceledException e) {
+            e.printStackTrace();
+        } catch (NullPointerException e) {
+            e.printStackTrace();
         }
-    });
+    }
+   ```
 
-    final IGraphServiceClient graphServiceClient = new GraphServiceClient
-        .Builder()
-        .fromConfig(clientConfig)
-        .buildClient();
+4. 下書き電子メールを作成し、**GraphServiceController** ヘルパー クラスから次のヘルパー メソッドを使用して送信します。
 
-    final Message message = new Message();
-    EmailAddress emailAddress = new EmailAddress();
-    emailAddress.address = "<YOUR_EMAIL_ADDRESS>";
-    Recipient recipient = new Recipient();
-    recipient.emailAddress = emailAddress;
-    message.toRecipients = Collections.singletonList(recipient);
-    ItemBody itemBody = new ItemBody();
-    itemBody.content = "This is the email body";
-    itemBody.contentType = BodyType.text;
-    message.body = itemBody;
-    message.subject = "Sent using the Microsoft Graph SDK";
+   ```java
+    /**
+     * Creates a draft email message using the Microsoft Graph API on Office 365. The mail is sent
+     * from the address of the signed in user.
+     *
+     * @param senderPreferredName The mail senders principal user name (email addr)
+     * @param emailAddress        The recipient email address.
+     * @param subject             The subject to use in the mail message.
+     * @param body                The body of the message.
+     * @param callback            The callback method to invoke on completion of the POST request
+     */
+    public void createDraftMail(
+            final String senderPreferredName,
+            final String emailAddress,
+            final String subject,
+            final String body,
+            ICallback<Message> callback
+    ) {
+        try {
+            // create the email message
+            Message message = createMessage(subject, body, emailAddress);
+            mGraphServiceClient
+                    .getMe()
+                    .getMessages()
+                    .buildRequest()
+                    .post(message, callback);
 
-    AsyncTask.execute(new Runnable() {
-        @Override
-        public void run() {
-            graphServiceClient
-                .getMe()
-                .getSendMail(message, false)
-                .buildRequest()
-                .post();
+        } catch (Exception ex) {
+            showException(ex, "exception on send mail","Send mail failed", "The send mail method failed");
         }
-    });
-    ```
+    }
 
+        /**
+     * Creates a new Message object 
+     */
+    Message createMessage(
+            String subject,
+            String body,
+            String address) {
+
+        if (address == null || address.isEmpty()) {
+            throw new IllegalArgumentException("The address parameter can't be null or empty.");
+        } else {
+            // perform a simple validation of the email address
+            String addressParts[] = address.split("@");
+            if (addressParts.length != 2 || addressParts[0].length() == 0 || addressParts[1].indexOf('.') == -1) {
+                throw new IllegalArgumentException(
+                        String.format("The address parameter must be a valid email address {0}", address)
+                );
+            }
+        }
+        Message message = new Message();
+        EmailAddress emailAddress = new EmailAddress();
+        emailAddress.address = address;
+        Recipient recipient = new Recipient();
+        recipient.emailAddress = emailAddress;
+        message.toRecipients = Collections.singletonList(recipient);
+        ItemBody itemBody = new ItemBody();
+        itemBody.content = body;
+        itemBody.contentType = BodyType.html;
+        message.body = itemBody;
+        message.subject = subject;
+        return message;
+    }
+    /**
+     * Sends a draft message to the specified recipients
+     *
+     * @param messageId String. The id of the message to send
+     * @param callback
+     */
+    public void sendDraftMessage(String messageId,
+                                 ICallback<Void> callback) {
+        try {
+
+            mGraphServiceClient
+                    .getMe()
+                    .getMessages(messageId)
+                    .getSend()
+                    .buildRequest()
+                    .post(callback);
+
+        } catch (Exception ex) {
+            showException(ex, "exception on send draft message ","Send draft mail failed", "The send draft mail method failed");
+        }
+    }
+
+   ```
 ### <a name="call-microsoft-graph-using-the-microsoft-graph-rest-api"></a>Microsoft Graph REST API を使用して Microsoft Graph を呼び出す
 [Microsoft Graph REST API](http://developer.microsoft.com/en-us/graph/docs) は 1 つの REST API エンドポイントを介して複数の API を Microsoft クラウド サービスから公開するものです。以下の手順に従って、REST API を使用します。
 
@@ -231,7 +475,7 @@ compile 'net.openid:appauth:0.3.0'
     ```
    
 3. 行 `String accessToken = tokenResponse.accessToken;` を次のコードに置き換えます。**\<YOUR_EMAIL_ADDRESS\>** とマークされているプレースホルダーに電子メール アドレスを挿入します。
-    ```java
+   ```java
     final String accessToken = tokenResponse.accessToken;
 
     final RequestQueue queue = Volley.newRequestQueue(getApplicationContext());
@@ -289,7 +533,7 @@ compile 'net.openid:appauth:0.3.0'
             queue.add(stringRequest);
         }
     });
-    ```
+   ```
 
 ## <a name="run-the-app"></a>アプリの実行
 Android アプリを試す準備ができました。
@@ -309,6 +553,7 @@ Android アプリを試す準備ができました。
 
 
 ## <a name="see-also"></a>関連項目
-* [Android 用 Microsoft Graph SDK](https://github.com/microsoftgraph/msgraph-sdk-android) 
-* [Azure AD v2.0 のプロトコル](https://azure.microsoft.com/en-us/documentation/articles/active-directory-v2-protocols/)
-* [Azure AD v2.0 のトークン](https://azure.microsoft.com/en-us/documentation/articles/active-directory-v2-tokens/)
+- [Android 用 Microsoft Graph SDK](https://github.com/microsoftgraph/msgraph-sdk-android) 
+- [Microsoft Graph を呼び出すためのトークンの取得](https://developer.microsoft.com/en-us/graph/docs/concepts/auth_overview)
+- [ユーザーの代わりにアクセスを取得](https://developer.microsoft.com/en-us/graph/docs/concepts/auth_v2_user)
+- [ユーザーなしでアクセスを取得](https://developer.microsoft.com/en-us/graph/docs/concepts/auth_v2_service)

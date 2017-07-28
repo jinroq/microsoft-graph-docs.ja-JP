@@ -1,4 +1,4 @@
-# <a name="get-access-on-behalf-of-a-user"></a>ユーザーの代わりにアクセスを取得する
+# <a name="get-access-on-behalf-of-a-user"></a>ユーザーの代わりにアクセスを取得
 Microsoft Graph を使用してユーザーの代理としてリソースを読み取り/書き込みするには、Azure AD からアクセス トークンを取得し、Microsoft Graph に送信する要求にトークンを添付する必要があります。アクセス トークンの取得に使用する認証フローは、開発しているアプリの種類と、OpenID Connect を使用してユーザーがアプリにサインインするかどうかによって異なります。ネイティブ アプリ、モバイル アプリ、一部の Web アプリで使用される一般的なフローの 1 つに、OAuth 2.0 認証コードの付与フローがあります。このトピックでは、このフローの使用例について説明します。 
 
 ## <a name="authentication-and-authorization-steps"></a>認証および承認の手順
@@ -240,7 +240,7 @@ Azure AD v2.0 エンドポイントからユーザーに代わって Microsoft G
 Azure AD エンドポイントと Azure AD v2.0 エンドポイントの使用には、いくつかの違いがあります。次に例を示します。
 
 - アプリは [Azure ポータル](https://portal.azure.com)を使用して構成します。Azure ポータルでアプリを構成する方法の詳細については、「[Azure Active Directory とアプリケーションの統合：アプリケーションの追加](https://docs.microsoft.com/azure/active-directory/develop/active-directory-integrating-applications#adding-an-application)」を参照してください。
-- アプリには、プラットフォームごとのアプリケーション ID (クライアント Id) が必要です。
+- アプリには、プラットフォームごとのアプリケーション ID (クライアント ID) が必要です。
 - アプリがマルチ テナント アプリの場合は、[Azure ポータル](https://portal.azure.com)でマルチ テナントとなるよう明示的に設定する必要があります。
 - Azure AD エンドポイントでは、アプリに必要なすべてのアクセス許可を開発者が構成する必要があります。Azure AD エンドポイントは、動的 (増分) の同意をサポートしていません。
 - Azure AD エンドポイントは、承認とトークンの要求に `resource` パラメーターを使用して、アクセス許可が必要な Microsoft Graph などのリソースを指定します。エンドポイントは `scope` パラメーターをサポートしていません。 

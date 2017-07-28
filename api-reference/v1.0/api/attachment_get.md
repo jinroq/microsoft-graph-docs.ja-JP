@@ -4,11 +4,12 @@
 
 添付ファイルには、次の種類のいずれかを指定できます。
 
-* ファイル ([fileAttachment](../resources/fileattachment.md) リソース)
-* 項目 ([itemAttachment](../resources/itemattachment.md) リソースで表される連絡先、イベント、またはメッセージ)
-* ファイルへのリンク ([referenceAttachment](../resources/referenceAttachment.md) リソース)
+* ファイル ([fileAttachment](../resources/fileattachment.md) リソース)。
+* 項目 ([itemAttachment](../resources/itemattachment.md) リソースで表される連絡先、イベント、またはメッセージ)。`$expand` を使用すると、その項目のプロパティをさらに取得できます。次の[例](#request-2)を参照してください。
+* ファイルへのリンク ([referenceAttachment](../resources/referenceAttachment.md) リソース)。
 
 これらの添付ファイル リソースのすべての種類は、[attachment](../resources/attachment.md) リソースから派生します。 
+
 
 ## <a name="prerequisites"></a>前提条件
 この API を実行するには、以下のいずれかの**スコープ**が必要です。
@@ -72,7 +73,7 @@ GET /groups/{id}/conversations/{id}/threads/{id}/posts/{id}/attachments/{id}
 ## <a name="request-body"></a>要求本文
 このメソッドには、要求本文を指定しません。
 ## <a name="response"></a>応答
-成功した場合、このメソッドは `200 OK` 応答コードと、応答本文で [Attachment](../resources/attachment.md) オブジェクトを返します。
+成功した場合、このメソッドは `200 OK` 応答コードと応答本文で **Attachment** オブジェクトを返します。その種類の添付ファイル ([fileAttachment](../resources/fileattachment.md)、[itemAttachment](../resources/itemattachment.md)、または [referenceAttachment](../resources/referenceAttachment.md)) のプロパティが返されます。
 
 ## <a name="example-file-attachment"></a>例 (添付ファイル)
 
@@ -113,17 +114,17 @@ Content-length: 199
 ```
 ## <a name="example-item-attachment"></a>例 (項目の添付ファイル)
 
-##### <a name="request"></a>要求
-以下は、イベントの項目の添付ファイルを取得する要求の例です。
+##### <a name="request-1"></a>要求 1
+最初の例は、メッセージの項目の添付ファイルを取得する方法を示しています。**itemAttachment** のプロパティが返されます。
 <!-- {
   "blockType": "request",
   "name": "get_item_attachment"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/me/events/{id}/attachments/{id}
+GET https://graph.microsoft.com/v1.0/me/messages('AAMkADA1M-zAAA=')/attachments('AAMkADA1M-CJKtzmnlcqVgqI=')
 ```
 
-##### <a name="response"></a>応答
+##### <a name="response-1"></a>応答 1
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -134,15 +135,100 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "@odata.type": "#microsoft.graph.itemAttachment",
-  "lastModifiedDateTime": "datetime-value",
-  "name": "name-value",
-  "contentType": "contentType-value",
-  "size": 99,
-  "isInline": true,
-  "id": "id-value"
+  "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#users('d1a2fae9-db66-4cc9-8133-2184c77af1b8')/messages('AAMkADA1M-zAAA%3D')/attachments/$entity",
+  "@odata.type":"#microsoft.graph.itemAttachment",
+  "id":"AAMkADA1MCJKtzmnlcqVgqI=",
+  "lastModifiedDateTime":"2017-07-21T00:20:34Z",
+  "name":"Reminder - please bring laptop",
+  "contentType":null,
+  "size":32005,
+  "isInline":false
 }
 ```
+
+##### <a name="request-2"></a>要求 2
+次の例は、`$expand` を使用してメッセージに添付されている項目のプロパティを取得する方法を示しています。この例では、項目はメッセージであり、添付メッセージのプロパティも返されます。
+<!-- {
+  "blockType": "request",
+  "name": "get_and_expand_item_attachment"
+}-->
+```http
+GET https://graph.microsoft.com/v1.0/me/messages('AAMkADA1M-zAAA=')/attachments('AAMkADA1M-CJKtzmnlcqVgqI=')/?$expand=microsoft.graph.itemattachment/item 
+```
+
+##### <a name="response-2"></a>応答 2
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.itemAttachment"
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+  "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#users('d1a2fae9-db66-4cc9-8133-2184c77af1b8')/messages('AAMkADA1M-zAAA%3D')/attachments/$entity",
+  "@odata.type":"#microsoft.graph.itemAttachment",
+  "id":"AAMkADA1MCJKtzmnlcqVgqI=",
+  "lastModifiedDateTime":"2017-07-21T00:20:34Z",
+  "name":"Reminder - please bring laptop",
+  "contentType":null,
+  "size":32005,
+  "isInline":false,
+  "item@odata.context":"https://graph.microsoft.com/v1.0/$metadata#users('d1a2fae9-db66-4cc9-8133-2184c77af1b8')/messages('AAMkADA1M-zAAA%3D')/attachments('AAMkADA1M-CJKtzmnlcqVgqI%3D')/microsoft.graph.itemAttachment/item/$entity",
+  "item":{
+    "@odata.type":"#microsoft.graph.message",
+    "id":"",
+    "createdDateTime":"2017-07-21T00:20:41Z",
+    "lastModifiedDateTime":"2017-07-21T00:20:34Z",
+    "receivedDateTime":"2017-07-21T00:19:55Z",
+    "sentDateTime":"2017-07-21T00:19:52Z",
+    "hasAttachments":false,
+    "internetMessageId":"<BY2PR15MB05189A084C01F466709E414F9CA40@BY2PR15MB0518.namprd15.prod.outlook.com>",
+    "subject":"Reminder - please bring laptop",
+    "importance":"normal",
+    "conversationId":"AAQkADA1MzMyOGI4LTlkZDctNDkzYy05M2RiLTdiN2E1NDE3MTRkOQAQAMG_NSCMBqdKrLa2EmR-lO0=",
+    "isDeliveryReceiptRequested":false,
+    "isReadReceiptRequested":false,
+    "isRead":false,
+    "isDraft":false,
+    "webLink":"https://outlook.office365.com/owa/?ItemID=AAMkADA1M3MTRkOQAAAA%3D%3D&exvsurl=1&viewmodel=ReadMessageItem",
+    "body":{
+      "contentType":"html",
+      "content":"<html><head>\r\n</head>\r\n<body>\r\n</body>\r\n</html>"
+    },
+    "sender":{
+      "emailAddress":{
+        "name":"Adele Vance",
+        "address":"AdeleV@contoso.onmicrosoft.com"
+      }
+    },
+    "from":{
+      "emailAddress":{
+        "name":"Adele Vance",
+        "address":"AdeleV@contoso.onmicrosoft.com"
+      }
+    },
+    "toRecipients":[
+      {
+        "emailAddress":{
+          "name":"Alex Wilbur",
+          "address":"AlexW@contoso.onmicrosoft.com"
+        }
+      }
+    ],
+    "ccRecipients":[
+      {
+        "emailAddress":{
+          "name":"Adele Vance",
+          "address":"AdeleV@contoso.onmicrosoft.com"
+        }
+      }
+    ]
+  }
+}
+```
+
 
 
 ## <a name="example-reference-attachment"></a>例 (添付ファイルの参照)

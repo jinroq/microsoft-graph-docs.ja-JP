@@ -73,7 +73,7 @@ Microsoft Graph は、次に示す種類のアプリから呼び出せます。
 ## <a name="how-do-i-get-my-app-talking-to-azure-ad-and-microsoft-graph"></a>アプリで Azure AD および Microsoft Graph と対話する方法
 アプリで Azure AD からトークンを取得するには、まず、そのアプリを登録しておく必要があります。Azure AD v2.0 エンドポイントの場合は、アプリの登録に [Microsoft アプリ登録ポータル](https://apps.dev.microsoft.com/)を使用します。Azure AD エンドポイントの場合は、[Azure ポータル](https://portal.azure.com/)を使用します。この登録では、アプリと Azure AD を統合して、アプリがトークンを取得する位置と ID を設定します。その内容は次のとおりです。
 
-- **アプリケーション ID**: Azure AD によって割り当てられる一意識別子。 
+- **アプリケーション ID**:Azure AD によって割り当てられる一意識別子。 
 - **リダイレクト URI/URL**: アプリが Azure AD からの応答を受け取る 1 つ以上のエンドポイント (ネイティブ アプリとモバイル アプリの場合は、Azure AD によって割り当てられる URI になります)。
 - **アプリケーション シークレット**: アプリが Azure AD での認証に使用するパスワードまたは公開鍵/秘密鍵のペア (ネイティブ アプリまたはモバイル アプリの場合は不要です)。
 
