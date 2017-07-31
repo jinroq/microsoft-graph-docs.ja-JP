@@ -125,7 +125,7 @@ Gemfile では、次の gem のコメントを解除して、依存関係とし�
 
     def login
         redirect_to '/auth/microsoft_v2_auth'
-      end
+    end
 
 次に、認証が実行されたときに OmniAuth がリダイレクトするアプリ内の場所を指定する必要があります。次のルートのコメントを解除します。
 
@@ -150,7 +150,7 @@ OmniAuth がユーザーの認証を完了すると、アプリ登録で指定�
 `app/controllers/pages_controller.rb` で、空の `callback` メソッドを次のコードに置き換えます。
 
     ```
-      def callback
+    def callback
         # Access the authentication hash for omniauth
         # and extract the auth token, user name, and email
         data = request.env['omniauth.auth']

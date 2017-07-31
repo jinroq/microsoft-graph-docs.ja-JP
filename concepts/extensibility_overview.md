@@ -121,7 +121,6 @@ Azure AD は、いくつかの [directoryObject](../api-reference/v1.0/resources
 
 ## <a name="see-also"></a>関連項目
 
-
-  [Office 365 のドメイン](https://technet.microsoft.com/en-us/library/office-365-domains.aspx)
+[Office 365 のドメイン](https://technet.microsoft.com/en-us/library/office-365-domains.aspx)
 
 [Office 365 テナントのドメインの追加および検証](http://office365support.ca/adding-and-verifying-a-domain-for-the-new-office-365/)

@@ -228,8 +228,7 @@ Content-length: 326
 
 - [拡張機能を使用してカスタム データをリソースに追加する](extensibility_overview.md)
 - [オープン拡張機能を使用したユーザーへのカスタム データの追加 (プレビュー)](extensibility_open_users.md)
-- 
-  [Office 365 のドメイン](https://technet.microsoft.com/en-us/library/office-365-domains.aspx)
+- [Office 365 のドメイン](https://technet.microsoft.com/en-us/library/office-365-domains.aspx)
 - [新しい Office 365 のドメインの追加および検証](http://office365support.ca/adding-and-verifying-a-domain-for-the-new-office-365/)
 - [schemaExtension リソース タイプ](../api-reference/v1.0/resources/schemaextension.md)
 - [schemaExtensions を一覧表示する](../api-reference/v1.0/api/schemaextension_list.md)
