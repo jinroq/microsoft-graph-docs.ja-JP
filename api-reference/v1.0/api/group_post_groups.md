@@ -1,7 +1,5 @@
-<span data-ttu-id="42975-p108">以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。実際の呼び出しでは、さらに多くのプロパティが返されます。</span><span class="sxs-lookup"><span data-stu-id="42975-p108">Here is an example of the response. Note: The response object shown here may be truncated for brevity. More properties will be returned from an actual call.</span></span>
-
+<span data-ttu-id="ba298-p107">以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。実際の呼び出しでは、さらに多くのプロパティが返されます。</span><span class="sxs-lookup"><span data-stu-id="ba298-p107">Here is an example of the response. Note: The response object shown here may be truncated for brevity. More properties will be returned from an actual call.</span></span>
 以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。実際の呼び出しでは、さらに多くのプロパティが返されます。
-
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -13,15 +11,15 @@ Content-type: application/json
 Content-length: 244
 
 {
-    "description": "Self help community for library",
-    "displayName": "Library Assist",
-    "groupTypes": [
-        "Unified"
-    ],
-    "mail": "library@contoso.onmicrosoft.com",
-    "mailEnabled": true,
-    "mailNickname": "library",
-    "securityEnabled": false
+  "description": "Self help community for library",
+  "displayName": "Library Assist",
+  "groupTypes": [
+    "Unified"
+  ],
+  "mail": "library@contoso.onmicrosoft.com",
+  "mailEnabled": true,
+  "mailNickname": "library",
+  "securityEnabled": false
 }
 ```
 
