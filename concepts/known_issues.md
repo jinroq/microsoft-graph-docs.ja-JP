@@ -1,18 +1,14 @@
-# Microsoft Graph に関する既知の問題
-<a id="known-issues-with-microsoft-graph" class="xliff"></a>
+# <a name="known-issues-with-microsoft-graph"></a>Microsoft Graph に関する既知の問題
 
 この記事では、Microsoft Graph に関する既知の問題について説明します。最新の更新プログラムについては、「[Microsoft Graph の変更ログ](changelog.md)」を参照してください。
 
-## ユーザー
-<a id="users" class="xliff"></a>
+## <a name="users"></a>ユーザー
 
-### 作成後にすぐにアクセスできない
-<a id="no-instant-access-after-creation" class="xliff"></a>
+### <a name="no-instant-access-after-creation"></a>作成後にすぐにアクセスできない
 
 ユーザーは、ユーザー エンティティの POST ですぐに作成できます。Office 365 サービスにアクセスするには、まず Office 365 ライセンスをユーザーに割り当てる必要があります。それでも、サービスが分散しているという性質上、Microsoft Graph API を介してこのユーザーがファイル、メッセージ、イベント エンティティを使用できるようになるまで 15 分かかる場合があります。この間、アプリには HTTP 404 エラー応答が送られてきます。
 
-### 写真の制限
-<a id="photo-restrictions" class="xliff"></a>
+### <a name="photo-restrictions"></a>写真の制限
 
 ユーザーのプロフィール写真の読み取りと更新は、ユーザーがメールボックスを持っている場合にのみ使用できます。さらに、以前 **thumbnailPhoto** プロパティを使用して (Office 365 統合 API のプレビュー、または Azure AD Graph、AD 接続同期を使用して) 保存*された*いかなる写真も[ユーザー](../api-reference/v1.0/resources/user.md) リソースの Microsoft Graph の**写真**プロパティを使用してアクセスできなくなります。写真の読み取りまたは更新が失敗すると、この例では次のエラーが発生します。
 
@@ -26,23 +22,19 @@
 ```
 
 
-### デルタ クエリの使用
-<a id="using-delta-query" class="xliff"></a>
+### <a name="using-delta-query"></a>デルタ クエリの使用
 
 デルタ クエリの使用に関する既知の問題については、この記事の[「デルタ クエリ」セクション](#delta-query)を参照してください。
 
-## グループと Microsoft Teams
-<a id="groups-and-microsoft-teams" class="xliff"></a>
+## <a name="groups-and-microsoft-teams"></a>グループと Microsoft Teams
 
 >**注**: Microsoft Teams は現在プレビュー段階で、Microsoft Graph ベータ版のエンドポイントでのみ利用可能です。
 
-### ポリシー
-<a id="policy" class="xliff"></a>
+### <a name="policy"></a>ポリシー
 
 Microsoft Graph を使用して Office 365 グループを作成および名前付けすると、Outlook Web App で構成されたすべての Office 365 のグループ ポリシーがバイパスされます。 
 
-### グループと Microsoft Teams のアクセス許可
-<a id="permissions-for-groups-and-microsoft-teams" class="xliff"></a>
+### <a name="permissions-for-groups-and-microsoft-teams"></a>グループと Microsoft Teams のアクセス許可
 
 Microsoft Graph では、グループと Microsoft Teams API にアクセスするために 2 つのアクセス許可 (*Group.Read.All* と *Group.ReadWrite.All*) を公開します。これらのアクセス許可は、管理者による同意が必要です (これがプレビューとの違いです)。将来的には、ユーザーが同意するグループとチームのための新しいアクセス許可を追加する予定です。
 
@@ -61,44 +53,40 @@ Microsoft Graph では、グループと Microsoft Teams API にアクセスす�
 * グループの会話、イベント、写真
 * 外部の送信者、承認済みまたは拒否された送信者、グループのサブスクリプション
 * ユーザーのお気に入り、見えないカウント
+* Microsoft Teams チャンネルおよびチャット。
 
-### Microsoft Teams のチーム (プレビュー)
-<a id="teams-in-microsoft-teams-preview" class="xliff"></a>
+### <a name="teams-in-microsoft-teams-preview"></a>Microsoft Teams のチーム (プレビュー)
 
-Microsoft Teams と Office 365 グループは、同じような機能を共有します。グループ API はすべてチームで使用できますが、Create group API は例外で、現在これを使ってのチーム作成はできません。将来的に、API リリースでこの機能がサポートされます。
+Microsoft Teams と Office 365 グループは、[同じような機能を共有します](../api-reference/beta/resources/teams_api_overview.md)。グループ API はすべてチームで使用できますが、グループの作成 API は例外で、現在これを使ってのチーム作成はできません。将来的に、API リリースでこの機能がサポートされます。
 
-### Microsoft Teams チャンネル (プレビュー)
-<a id="microsoft-teams-channels-preview" class="xliff"></a>
+### <a name="microsoft-teams-channels-preview"></a>Microsoft Teams チャンネル (プレビュー)
 
 現在のところ、チャンネルの読み込みと作成が可能ですが、更新と削除はできません。将来的に、API リリースでこの機能がサポートされます。
 
-### Microsoft Teams チャット スレッドとチャット メッセージ (プレビュー)
-<a id="microsoft-teams-chat-threads-and-chat-messages-preview" class="xliff"></a>
+### <a name="microsoft-teams-chat-threads-and-chat-messages-preview"></a>Microsoft Teams チャット スレッドとチャット メッセージ (プレビュー)
 
 現時点では、チャンネルにチャット スレッドを作成できますが、既存のチャンネル スレッドを読み込む、または返信を付加することができません。また、チームまたはチャンネルの範囲外のユーザー間での読み取り、書き込みもできません。将来の API リリースでこの部分の機能がサポートされます。
 
+### <a name="microsoft-teams-users-list-of-joined-teams-preview"></a>Microsoft Teams ユーザーが参加しているチームのリスト (プレビュー)
 
-### グループの投稿の添付ファイルの追加と取得
-<a id="adding-and-getting-attachments-of-group-posts" class="xliff"></a>
+現在、[ユーザーが参加しているチームの一覧表示](../api-reference/beta/api/user_list_joinedteams.md)は、呼び出し元に[代理人アクセス許可](permissions_reference.md)がある 'me' (自分) ユーザーでのみ機能します。今後のリリースでは、指定した任意のユーザー ID に対してこの操作がサポートされます。
+
+### <a name="adding-and-getting-attachments-of-group-posts"></a>グループの投稿の添付ファイルの追加と取得
 
 現在のところ、グループの投稿への添付ファイルの[追加](http://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/post_post_attachments)、グループの投稿の添付ファイルの[一覧表示](http://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/post_list_attachments)と取得を行うと、"OData 要求がサポートされていません" というエラー メッセージが返されます。`/v1.0` と `/beta` の両方のバージョンに対する修正プログラムが準備されており、2016 年 1 月の終わりまでには一般に利用可能になると予測されます。
 
-### allowExternalSenders プロパティの設定
-<a id="setting-the-allowexternalsenders-property" class="xliff"></a>
+### <a name="setting-the-allowexternalsenders-property"></a>allowExternalSenders プロパティの設定
 
 現在、`/v1.0` と `/beta` の両方で、POST または PATCH 操作の際にグループの **allowExternalSenders** プロパティを設定できないという問題が発生しています。
 
-### デルタ クエリの使用
-<a id="using-delta-query" class="xliff"></a>
+### <a name="using-delta-query"></a>デルタ クエリの使用
 
 デルタ クエリの使用に関する既知の問題については、この記事の[「デルタ クエリ」セクション](#delta-query)を参照してください。
 
 
-## 予定表
-<a id="calendars" class="xliff"></a>
+## <a name="calendars"></a>予定表
 
-### ユーザーのメールボックスに ICS ベースの予定表を追加してアクセスする
-<a id="adding-and-accessing-ics-based-calendars-in-users-mailbox" class="xliff"></a>
+### <a name="adding-and-accessing-ics-based-calendars-in-users-mailbox"></a>ユーザーのメールボックスに ICS ベースの予定表を追加してアクセスする
 
 現在、インターネット予定表購読 (ICS) に基づく予定表の部分的なサポートがあります。
 
@@ -106,8 +94,7 @@ Microsoft Teams と Office 365 グループは、同じような機能を共有�
 * [ユーザーの予定表の一覧表示](http://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/user_list_calendars)を行うと、ICS ベースの予定表を含む、ユーザーの既定の予定表のグループ、または指定した予定表のグループにある各[予定表](http://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/calendar)の**名前**、**色**、**ID** のプロパティを取得できます。予定表リソースの ICS URL を保存したり、アクセスしたりすることはできません。
 * また、ICS ベースの予定表の[イベントを一覧表示](http://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/calendar_list_events)することもできます。
 
-### 共有された予定表にアクセスする
-<a id="accessing-a-shared-calendar" class="xliff"></a>
+### <a name="accessing-a-shared-calendar"></a>共有された予定表にアクセスする
 
 別のユーザーによって共有されている予定表で、次の操作によってイベントにアクセスするとします。
 
@@ -138,16 +125,13 @@ GET \me\calendars('{id}')\events
 ```
 
 
-## 連絡先
-<a id="contacts" class="xliff"></a>
+## <a name="contacts"></a>連絡先
 
-### ベータ版でのみ利用可能な組織の連絡先
-<a id="organization-contacts-available-in-only-beta" class="xliff"></a>
+### <a name="organization-contacts-available-in-only-beta"></a>ベータ版でのみ利用可能な組織の連絡先
 
 現在、個人用連絡先しかサポートされていません。組織の連絡先は現在 `/v1.0` でサポートされていませんが、`/beta` で参照できます。
 
-### 既定の連絡先フォルダー
-<a id="default-contacts-folder" class="xliff"></a>
+### <a name="default-contacts-folder"></a>既定の連絡先フォルダー
 
 `/v1.0` バージョンでは、`GET /me/contactFolders` にユーザーの既定の連絡先フォルダーは含まれません。 
 
@@ -163,8 +147,7 @@ GET https://graph.microsoft.com/v1.0/me/contacts?$top=1&$select=parentFolderId
 2. `&$select=parentFolderId` を追加すると、連絡先の **parentFolderId** プロパティ (既定の連絡先フォルダーの ID) のみが返されます。
 
 
-### ベータ版の連絡先フォルダーから連絡先にアクセスする
-<a id="accessing-contacts-via-a-contact-folder-in-beta" class="xliff"></a>
+### <a name="accessing-contacts-via-a-contact-folder-in-beta"></a>ベータ版の連絡先フォルダーから連絡先にアクセスする
 
 以下の 2 つのシナリオで示されているように、`/beta` バージョンでは、REST 要求 URL で親フォルダーを指定して[連絡先](../api-reference/beta/resources/contact.md)にアクセスすることができないという問題が発生しています。
 
@@ -189,21 +172,17 @@ GET /me/contacts/{id}
 GET /users/{id | userPrincipalName}/contacts/{id}
 ```
 
-## メッセージ
-<a id="messages" class="xliff"></a>
+## <a name="messages"></a>メッセージ
 
-### 下書きを作成するためのコメント パラメーター
-<a id="the-comment-parameter-for-creating-a-draft" class="xliff"></a>
+### <a name="the-comment-parameter-for-creating-a-draft"></a>下書きを作成するためのコメント パラメーター
 
 返信または転送用の下書きを作成するための**コメント** パラメーター ([createReply](../api-reference/v1.0/api/message_createreply.md)、[createReplyAll](../api-reference/v1.0/api/message_createreplyall.md)、[createForward](../api-reference/v1.0/api/message_createforward.md)) は、結果メッセージの下書き本文の一部にはなりません。  
 
-## ドライブ、ファイルおよびコンテンツのストリーミング
-<a id="drives-files-and-content-streaming" class="xliff"></a>
+## <a name="drives-files-and-content-streaming"></a>ドライブ、ファイルおよびコンテンツのストリーミング
 
 * ユーザーが自分の個人用サイトにブラウザーでアクセスする前に、Microsoft Graph でユーザーの個人ドライブに初めてアクセスした場合、401 応答になります。
 
-## クエリ パラメーターの制限事項
-<a id="query-parameter-limitations" class="xliff"></a>
+## <a name="query-parameter-limitations"></a>クエリ パラメーターの制限事項
 
 * **$expand** の制限:
     * `nextLink` はサポートされていません
@@ -216,15 +195,13 @@ GET /users/{id | userPrincipalName}/contacts/{id}
 * ワークロード間でのフィルター/検索は利用できません。 
 * フルテキスト検索 (**$search** を使用した検索) はメッセージなどのいくつかのエンティティに対してのみ使用できます。
 
-## デルタ クエリ
-<a id="delta-query" class="xliff"></a>
+## <a name="delta-query"></a>デルタ クエリ
 
 * リレーションシップの追跡では、誤った OData コンテキストが返されることがあります。
 * スキーマ拡張情報 (レガシー) は $select ステートメントをつけては返されず、$select なしで返されます。
 * クライアントはオープン拡張機能または登録済みスキーマ拡張機能の変更を追跡できません。
 
-## application API と servicePrincipal API の変更
-<a id="application-and-serviceprincipal-api-changes" class="xliff"></a>
+## <a name="application-and-serviceprincipal-api-changes"></a>application API と servicePrincipal API の変更
 
 現在開発中の [application](../api-reference/beta/resources/application.md) エンティティおよび [servicePrincipal](../api-reference/beta/resources/serviceprincipal.md) エンティティに対して変更点があります。現在の制限事項と開発中の API の機能の概要を次に示します。
 
@@ -247,54 +224,43 @@ GET /users/{id | userPrincipalName}/contacts/{id}
 * Microsoft アカウント (MSA) ユーザーによるアプリの登録。
 * SAML および WsFed プロトコルのサポート。
 
-## 拡張機能
-<a id="extensions" class="xliff"></a>
+## <a name="extensions"></a>拡張機能
 
-### 変更履歴はサポートされていません
-<a id="change-tracking-is-not-supported" class="xliff"></a>
+### <a name="change-tracking-is-not-supported"></a>変更履歴はサポートされていません
 
 変更の追跡 (デルタ クエリ) はオープン拡張機能またはスキーマ拡張機能のプロパティではサポートされていません。
 
-### リソースとオープン拡張機能の同時作成
-<a id="creating-a-resource-and-open-extension-at-the-same-time" class="xliff"></a>
+### <a name="creating-a-resource-and-open-extension-at-the-same-time"></a>リソースとオープン拡張機能の同時作成
 
 **管理単位**、**デバイス**、**グループ**、**組織**、または**ユーザー**のインスタンスを作成するのと同時に、オープン拡張機能を指定することはできません。最初にインスタンスを作成し、次にそのインスタンスの後続の ``POST`` 要求でオープン拡張機能データを指定する必要があります。
 
-### スキーマ拡張機能のプロパティ値はリソースのインスタンスごとに 100 に制限されています。
-<a id="limit-of-100-schema-extension-property-values-allowed-per-resource-instance" class="xliff"></a>
+### <a name="limit-of-100-schema-extension-property-values-allowed-per-resource-instance"></a>スキーマ拡張機能のプロパティ値はリソースのインスタンスごとに 100 に制限されています。
 
 現在、**デバイス**、**グループ**、**ユーザー**などのディレクトリ リソースでは、1 つのリソース インスタンスで設定可能なスキーマ拡張機能のプロパティ値の合計数が 100 に制限されています。
 
-## JSON バッチ処理
-<a id="json-batching" class="xliff"></a>
+## <a name="json-batching"></a>JSON バッチ処理
 
-### 入れ子状のバッチ不可
-<a id="no-nested-batch" class="xliff"></a>
+### <a name="no-nested-batch"></a>入れ子状のバッチ不可
 
 JSON のバッチ要求には、入れ子になったバッチは一切含めることはできません。
 
-### 個々の要求はすべて同期要求とします。
-<a id="all-individual-requests-must-be-synchronous" class="xliff"></a>
+### <a name="all-individual-requests-must-be-synchronous"></a>個々の要求はすべて同期要求とします。
 
 バッチ要求に含まれるすべての要求は同期して実行する必要があります。存在する場合、`respond-async` の設定は無視されます。
 
-### トランザクション未対応
-<a id="no-transactions" class="xliff"></a>
+### <a name="no-transactions"></a>トランザクション未対応
 
 Microsoft Graph は現段階では個々の要求のトランザクション処理をサポートしていません。個々の要求で `atomicityGroup` プロパティを指定しても無視されます。
 
-### URI は相対 URI である必要があります。
-<a id="uris-must-be-relative" class="xliff"></a>
+### <a name="uris-must-be-relative"></a>URI は相対 URI である必要があります。
 
 バッチ要求では、必ず相対 URI を指定してください。Microsoft Graph はバッチ要求の URL に含まれているバージョン エンドポイントを使い、これらを絶対 URL に変換します。
 
-### バッチ サイズの制限
-<a id="limit-on-batch-size" class="xliff"></a>
+### <a name="limit-on-batch-size"></a>バッチ サイズの制限
 
 現段階では、JSON バッチ要求は 5 つまでの個別要求に限られています。JSON バッチ処理が完成に近づくにつれて、この制限を緩和します。
 
-### 簡略化された依存関係
-<a id="simplified-dependencies" class="xliff"></a>
+### <a name="simplified-dependencies"></a>簡略化された依存関係
 
 個々の要求は、他の個々の要求に依存することがあります。現在、各要求は他の要求一つだけに依存でき、以下のパターンのどれかにあてはまることが必要です。
 
@@ -304,16 +270,13 @@ Microsoft Graph は現段階では個々の要求のトランザクション処�
 
 JSON バッチ処理が完成に近づくにつれて、これらの制限は削除されます。
 
-## クラウド ソリューション プロバイダー アプリ
-<a id="cloud-solution-provider-apps" class="xliff"></a>
+## <a name="cloud-solution-provider-apps"></a>クラウド ソリューション プロバイダー アプリ
 
-### CSP アプリは Azure AD エンドポイントを使用する必要がある
-<a id="csp-apps-must-use-azure-ad-endpoint" class="xliff"></a>
+### <a name="csp-apps-must-use-azure-ad-endpoint"></a>CSP アプリは Azure AD エンドポイントを使用する必要がある
 
 クラウド ソリューション プロバイダー (CSP) のアプリケーションは、パートナー管理の顧客から Microsoft Graph を正常に呼び出すには、Azure AD (v1) のエンドポイントからトークンを取得する必要があります。現時点では、新しい Azure AD バージョン 2.0 エンドポイントからのトークン取得はサポートされていません。
 
-### CSP アプリの事前同意が一部の顧客テナントで機能しない
-<a id="pre-consent-for-csp-apps-doesnt-work-in-some-customer-tenants" class="xliff"></a>
+### <a name="pre-consent-for-csp-apps-doesnt-work-in-some-customer-tenants"></a>CSP アプリの事前同意が一部の顧客テナントで機能しない
 
 状況によっては、CSP アプリの事前同意が一部の顧客テナントで機能しない可能性があります。
 
@@ -338,12 +301,10 @@ JSON バッチ処理が完成に近づくにつれて、これらの制限は削
     New-AzureADServicePrincipal -AppId 00000003-0000-0000-c000-000000000000
     ```
 
-## Office 365 REST と Azure AD Graph API でのみ使用可能な機能
-<a id="functionality-available-only-in-office-365-rest-or-azure-ad-graph-apis" class="xliff"></a>
+## <a name="functionality-available-only-in-office-365-rest-or-azure-ad-graph-apis"></a>Office 365 REST と Azure AD Graph API でのみ使用可能な機能
 
 Microsoft Graph では一部の機能はまだ利用できません。探している機能が表示されない場合は、エンドポイント固有の [Office 365 REST API](https://msdn.microsoft.com/en-us/office/office365/api/api-catalog) を使用することができます。Azure Active Directory において、Azure AD と Graph API を介してのみ使用可能な機能については、[Microsoft Graph または Azure AD Graph](https://dev.office.com/blogs/microsoft-graph-or-azure-ad-graph) のブログの投稿を参照してください。
 
-## フィードバック
-<a id="feedback" class="xliff"></a>
+## <a name="feedback"></a>フィードバック
 
 > お客様からのフィードバックを重視しています。[スタック オーバーフロー](http://stackoverflow.com/questions/tagged/microsoftgraph)でご連絡いただけます。

@@ -1,30 +1,57 @@
-# Microsoft Graph の変更ログ
-<a id="changelog-for-microsoft-graph" class="xliff"></a>
+# <a name="changelog-for-microsoft-graph"></a>Microsoft Graph の変更ログ
 
 この変更ログでは、Microsoft Graph と、v1.0 およびベータ版のエンドポイント Microsoft Graph API の変更内容について説明します。  
 
 Microsoft Graph API に関する既知の問題の詳細については、「[Microsoft Graph に関する既知の問題](known_issues.md)」を参照してください。
 
-## 2017 年 6 月
-<a id="june-2017" class="xliff"></a>
+## <a name="july-2017"></a>2017 年 7 月
 
-### Project Rome
-<a id="project-rome" class="xliff"></a>
+### <a name="intune-apis"></a>Intune API
+
+|変更の種類&nbsp;|バージョン|説明|
+|:---|:---|:---|
+|追加|ベータ版|[assign](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/intune_apps_iosmobileappconfiguration_assign.md) アクションを [iosMobileAppConfiguration](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_apps_iosmobileappconfiguration) に追加しました |
+|追加|ベータ版|[syncDevice](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/intune_devices_manageddevice_syncdevice.md) アクションを [managedDevice](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_deviceconfig_manageddevice) に追加しました |
+|変更|ベータ版|**appsInstallAllowList**、**appsLaunchBlockList**、**appsHideList** プロパティを [androidGeneralDeviceConfiguration](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_deviceconfig_androidgeneraldeviceconfiguration) エンティティに追加しました|
+|変更|ベータ版|**disableAppEncryptionIfDeviceEncryptionIsEnabled** プロパティを [androidManagedAppProtection](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_mam_androidmanagedappprotection) エンティティに追加しました|
+|変更|ベータ版|**disableAppEncryptionIfDeviceEncryptionIsEnabled** プロパティを [defaultManagedAppProtection](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_mam_defaultmanagedappprotection) エンティティに追加しました|
+|変更|ベータ版|**complianceGracePeriodExpirationDateTime** プロパティを [deviceComplianceDeviceStatus](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_deviceconfig_devicecompliancedevicestatus) エンティティに追加しました|
+|変更|ベータ版|**complianceGracePeriodExpirationDateTime** プロパティを [deviceComplianceSettingState](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_deviceconfig_devicecompliancesettingstate) エンティティに追加しました|
+|変更|ベータ版|**complianceGracePeriodExpirationDateTime** プロパティを [deviceConfigurationDeviceStatus](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_deviceconfig_deviceconfigurationdevicestatus) エンティティに追加しました|
+|変更|ベータ版|**subscriptions** プロパティを [deviceManagement](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_androidforwork_devicemanagement) エンティティに追加しました|
+|変更|ベータ版|**version** プロパティを [deviceManagementExchangeConnector](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_onboarding_devicemanagementexchangeconnector) エンティティに追加しました|
+|変更|ベータ版|**utcTimeOffsetInMinutes** プロパティを [iosUpdateConfiguration](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_deviceconfig_iosupdateconfiguration) エンティティに追加しました|
+|変更|ベータ版|**complianceGracePeriodExpirationDateTime** プロパティを [iosUpdateDeviceStatus](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_deviceconfig_iosupdatedevicestatus) エンティティに追加しました|
+|変更|ベータ版|**preSharedKey** プロパティを [macOSWiFiConfiguration](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_deviceconfig_macoswificonfiguration) エンティティに追加しました|
+|変更|ベータ版|**phoneNumber**、**androidSecurityPatchLevel**、**userDisplayName** プロパティを [managedDevice](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_deviceconfig_manageddevice) エンティティに追加しました|
+|変更|ベータ版|**userName**、**deviceModel**、**platform**、**complianceGracePeriodExpirationDateTime** プロパティを [managedDeviceMobileAppConfigurationDeviceStatus](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_apps_manageddevicemobileappconfigurationdevicestatus) エンティティに追加しました|
+|変更|ベータ版|**userPrincipalName** プロパティを [mobileAppInstallStatus](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_apps_mobileappinstallstatus) エンティティに追加しました|
+|変更|ベータ版|**overrideDefaultRule** プロパティを [onPremisesConditionalAccessSettings](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_onboarding_onpremisesconditionalaccesssettings) エンティティに追加しました|
+|変更|ベータ版|**userPrincipalName** プロパティを [userAppInstallStatus](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_apps_userappinstallstatus) エンティティに追加しました|
+|変更|ベータ版|**connectAppBlockAutoLaunch**、**deviceAccountBlockExchangeServices**、**deviceAccountEmailAddress**、**deviceAccountExchangeServerAddress**、**deviceAccountRequirePasswordRotation**、**deviceAccountSessionInitiationProtocolAddress**、**settingsBlockMyMeetingsAndFiles**、**settingsBlockSessionResume**、**settingsBlockSigninSuggestions**、**settingsDefaultVolume**、**settingsScreenTimeoutInMinutes**、**settingsSessionTimeoutInMinutes**、**settingsSleepTimeoutInMinutes** プロパティを [windows10TeamGeneralConfiguration](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_deviceconfig_windows10teamgeneralconfiguration) エンティティに追加しました|
+|変更|ベータ版|**deploymentSummary** ナビゲーション プロパティを [defaultManagedAppProtection](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_mam_defaultmanagedappprotection) エンティティに追加しました|
+|変更|ベータ版|**settingName**、**userId**、**userName**、**userEmail**、**currentValue** プロパティを[deviceCompliancePolicySettingState](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_deviceconfig_devicecompliancepolicysettingstate) 複合型に追加しました|
+|変更|ベータ版|[deviceConfigurationSettingState](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_deviceconfig_deviceconfigurationsettingstate) 複合型に、**settingName**、**userId**、**userName**、**userEmail**、**currentValue** の各プロパティを追加しました|
+|変更|ベータ版|**unknownCount** プロパティを[deviceOperatingSystemSummary](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_devices_deviceoperatingsystemsummary) 複合型に追加しました|
+
+
+
+## <a name="june-2017"></a>2017 年 6 月
+
+### <a name="project-rome"></a>Project Rome
 
 |**変更の種類**|**バージョン**|**説明**|
 |:-------------|:-----------|:--------------|
 |追加|ベータ版|以下のリソースと API が追加されています。<br/>[アクティビティ](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/projectrome_activity)<br/>[アクティビティを作成または置換する](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/projectrome_put_activity)<br/>[アクティビティを削除する](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/projectrome_delete_activity)<br/>[履歴項目](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/projectrome_historyitem)<br/>[履歴項目を作成または置換する](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/projectrome_put_historyitem)<br/>[履歴項目を削除する](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/projectrome_delete_historyitem)|
 
-### Outlook カレンダー
-<a id="outlook-calendar" class="xliff"></a>
+### <a name="outlook-calendar"></a>Outlook カレンダー
 
 |**変更の種類**|**バージョン**|**説明**|
 |:-------------|:-----------|:--------------|
 |追加|v1.0|[calendar](https://graph.microsoft.io/en-us/docs/api-reference/v1.0/resources/calendar) の 4 つのプロパティ **canEdit**、**canShare**、**canViewPrivateItems**、および **owner** を v1.0 に昇格しました。|
 
 
-### Intune API
-<a id="intune-apis" class="xliff"></a>
+### <a name="intune-apis"></a>Intune API
 
 |変更の種類|バージョン|説明|
 |:---|:---|:---|
@@ -77,32 +104,27 @@ Microsoft Graph API に関する既知の問題の詳細については、「[Mi
 |変更|ベータ版|[vpnServer](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_deviceconfig_vpnserver) 複合型に、プロパティ **address** を追加しました|
 
 
-## 2017 年 5 月
-<a id="may-2017" class="xliff"></a>
+## <a name="may-2017"></a>2017 年 5 月
 
-### アプリケーション API の変更
-<a id="application-api-changes" class="xliff"></a>
+### <a name="application-api-changes"></a>アプリケーション API の変更
 
 |**変更の種類**|**バージョン**|**説明**|
 |:-------------|:-----------|:--------------|
 |変更|ベータ版| アプリケーション API の更新。これはプロパティの名前変更と[アプリケーション](https://graph.microsoft.io/en-us/docs/api-reference/beta/resources/application) エンティティの再構築を含む最初の変更のセットです。<br/>**新しいエンティティ:** [api](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/api])、[informationalUrl](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/informationalUrl)、[installedClient](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/installedclient)[permissionScope](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/permissionscope)、[preauthorizedApplication](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/preauthorizedapplication)、[web](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/web)。<br/>**削除されたプロパティ:** addIns、appRoles、availableToOtherOrganizations、knownClientApplications、oauth2AllowUrlPathMatching、recordConsentConditions。<br/>**名前が変更されたプロパティ:** appId から id、identifierUris から applicationAliases、availableToOtherTenants から orgRestrictions、mainLogo から logo、oauth2Permissions から publishedPermissionsScopes、publicClient は allowPublicClient、replyUrls から redirectUrls。<br/>**新しいプロパティ:** タグ。 |
 
-### 使用されていない Planner API の削除
-<a id="remove-deprecated-planner-api" class="xliff"></a>
+### <a name="remove-deprecated-planner-api"></a>使用されていない Planner API の削除
 |**変更の種類**|**バージョン**|**説明**|
 |:--------------|:-----------|:-------------|
 |削除|ベータ版|次のエンティティを削除しました:<br/>**task**<br/>**plan**<br/>**bucket**<br/>**taskDetails**<br/>**planDetails**<br/>**taskBoardTaskFormat**<br/>**planTaskBoard**|
 
-### Project Rome
-<a id="project-rome" class="xliff"></a>
+### <a name="project-rome"></a>Project Rome
 
 |**変更の種類**|**バージョン**|**説明**|
 |:--------------|:-----------|:-------------|
 |追加|ベータ版|プロジェクト ローマのサポートを追加しました。これには、[デバイスのリストの取得](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/user_list_devices)、[デバイスへのコマンドの送信](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/send_device_command)、および[コマンドのステータスの確認](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/get_device_command_status)が含まれます。|
 |追加|ベータ版|ユーザーの [activities](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/projectrome_activity) と [historyItems](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/projectrome_historyitem) のサポートが追加され、これには[アクティビティの upsert](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/projectrome_put_activity) と[履歴項目の upsert](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/projectrome_put_historyitem) が含まれます。|
 
-### 管理単位のプロパティの変更
-<a id="administrative-units-property-changes" class="xliff"></a>
+### <a name="administrative-units-property-changes"></a>管理単位のプロパティの変更
 
 |**変更の種類**|**バージョン**|**説明**|
 |:--------------|:-----------|:--------------|
@@ -111,38 +133,33 @@ Microsoft Graph API に関する既知の問題の詳細については、「[Mi
 | 変更        | ベータ版       | [administrativeUnit](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/administrativeunit) エンティティのナビゲーション プロパティ scopedAdministrators を scopedRoleMembers に変更しました |
 | 変更        | ベータ版       | [directoryRole](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/directoryrole) エンティティのナビゲーション プロパティ scopedAdministrators を scopedMembers に変更しました |
 
-### プレビューでのユーザーとグループの Webhook サポートの追加
-<a id="add-users-and-groups-webhook-support-in-preview" class="xliff"></a>
+### <a name="add-users-and-groups-webhook-support-in-preview"></a>プレビューでのユーザーとグループの Webhook サポートの追加
 
 |**変更の種類**|**バージョン**|**説明**|
 |:--------------|:-----------|:--------------|
 | 変更        | ベータ版       | ユーザーとグループの [Webhook](https://developer.microsoft.com/graph/docs/api-reference/beta/resources/webhooks) に対するサポートを追加しました。
 
-### デルタ クエリの v1.0 への追加
-<a id="add-delta-query-to-v10" class="xliff"></a>
+### <a name="add-delta-query-to-v10"></a>デルタ クエリの v1.0 への追加
 
 |**変更の種類**|**バージョン**|**説明**|
 |:--------------|:-----------|:--------------|
 | 追加      | v1.0       | V1.0 にデルタ関数のサポートを追加します次のエンティティに追加して、[デルタ クエリ](https://developer.microsoft.com/en-us/graph/docs/concepts/delta_query_overview)を実行します。<br/>contact<br/>contactFolder<br/>event<br/>group<br/>mailFolder<br/>message<br/>user<br/>例については、以下を参照してください。<br/>[グループへの増分の変更を取得する](https://developer.microsoft.com/en-us/graph/docs/concepts/delta_query_groups)<br/>[フォルダー内のメッセージへの増分の変更を取得する](https://developer.microsoft.com/en-us/graph/docs/concepts/delta_query_messages)<br/>[ユーザーへの増分の変更を取得する](https://developer.microsoft.com/en-us/graph/docs/concepts/delta_query_users)|
 | 変更        | ベータ版       | [users](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/user_delta) と [groups](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/group_delta) に、オプションのクエリ フィルタリング機能 (ID 別) を追加します。 |
 
-### 削除されたアイテムをサポートするユーザー リソースの追加
-<a id="added-user-resource-support-for-deleted-items" class="xliff"></a>
+### <a name="added-user-resource-support-for-deleted-items"></a>削除されたアイテムをサポートするユーザー リソースの追加
 
 |**変更の種類**|**バージョン**|**説明**|
 |:--------------|:-----------|:--------------|
 | 追加      | ベータ版       | [ユーザーの復元と完全削除](https://graph.microsoft.io/en-us/docs/api-reference/beta/resources/directory)に関するサポートを追加しました。 |
 
-### OnPremisesProvisioningError の追加
-<a id="added-onpremisesprovisioningerror" class="xliff"></a>
+### <a name="added-onpremisesprovisioningerror"></a>OnPremisesProvisioningError の追加
 
 |**変更の種類**|**バージョン**|**説明**|
 |:--------------|:-----------|:--------------|
 | 追加      | ベータ版       | 新しいエンティティ:[OnPremisesProvisioningError](https://graph.microsoft.io/en-us/docs/api-reference/beta/resources/onpremisesprovisioningerror) |
 | 変更        | ベータ版       | [user](https://graph.microsoft.io/en-us/docs/api-reference/beta/resources/user)、[group](https://graph.microsoft.io/en-us/docs/api-reference/beta/resources/group)、および [orgcontact](https://graph.microsoft.io/en-us/docs/api-reference/beta/resources/orgcontact) への OnPremisesProvisioningError プロパティの追加 |
 
-### deletedDateTime プロパティの追加
-<a id="added-deleteddatetime-property" class="xliff"></a>
+### <a name="added-deleteddatetime-property"></a>deletedDateTime プロパティの追加
 
 |**変更の種類**|**バージョン**|**説明**|
 |:-------------|:-----------|:--------------|
@@ -150,22 +167,19 @@ Microsoft Graph API に関する既知の問題の詳細については、「[Mi
 |変更|ベータ版|deletedDateTime プロパティを [group](https://graph.microsoft.io/en-us/docs/api-reference/beta/resources/group) エンティティに追加しました。
 |変更|ベータ版|deletedDateTime プロパティを [application](https://graph.microsoft.io/en-us/docs/api-reference/beta/resources/application) エンティティに追加しました。
 
-### V1.0 に追加されたドメイン操作
-<a id="added-domain-operations-to-v10" class="xliff"></a>
+### <a name="added-domain-operations-to-v10"></a>V1.0 に追加されたドメイン操作
 
 |**変更の種類**|**バージョン**|**説明**|
 |:-------------|:-----------|:--------------|
 |追加|V1.0|[ドメイン](https://graph.microsoft.io/en-us/docs/api-reference/v1.0/resources/domain)に操作を追加しました。<br/>新しいエンティティ:</br>[domain](https://graph.microsoft.io/en-us/docs/api-reference/v1.0/resources/domain)<br/>[domainDnsRecord](https://graph.microsoft.io/en-us/docs/api-reference/v1.0/resources/domaindnsrecord)<br/>[domainDnsCnameRecord](https://graph.microsoft.io/en-us/docs/api-reference/v1.0/resources/domainDnsCnameRecord)<br/>[domainDnsMxRecord](https://graph.microsoft.io/en-us/docs/api-reference/v1.0/resources/domainDnsMxRecord)<br/>[domainDnsSrvRecord](https://graph.microsoft.io/en-us/docs/api-reference/v1.0/resources/domainDnsSrvRecord)<br/>[domainDnsTxtRecord](https://graph.microsoft.io/en-us/docs/api-reference/v1.0/resources/domainDnsTxtRecord)<br/>[domainDnsUnavailableRecord](https://graph.microsoft.io/en-us/docs/api-reference/v1.0/resources/domainDnsUnavailableRecord)<br/>新しいアクション:</br>[verify](https://graph.microsoft.io/en-us/docs/api-reference/v1.0/api/domain_verify) |
 
-### V1.0 追加されたコントラクト
-<a id="added-contracts-to-v10" class="xliff"></a>
+### <a name="added-contracts-to-v10"></a>V1.0 追加されたコントラクト
 
 |**変更の種類**|**バージョン**|**説明**|
 |:-------------|:-----------|:--------------|
 |追加|V1.0|新しいエンティティ:</br>[コントラクト](https://graph.microsoft.io/en-us/docs/api-reference/v1.0/resources/contract) |
 
-### V1.0 に追加された licenseDetails
-<a id="added-licensedetails-to-v10" class="xliff"></a>
+### <a name="added-licensedetails-to-v10"></a>V1.0 に追加された licenseDetails
 
 |**変更の種類**|**バージョン**|**説明**|
 |:-------------|:-----------|:--------------|
@@ -173,8 +187,7 @@ Microsoft Graph API に関する既知の問題の詳細については、「[Mi
 |変更  |v1.0|[users](https://graph.microsoft.io/en-us/docs/api-reference/v1.0/resources/user) における新しい [licensedetails](https://graph.microsoft.io/en-us/docs/api-reference/v1.0/api/user_list_licensedetails) ナビゲーション プロパティ |
 
 
-### ドライブ API
-<a id="drive-api" class="xliff"></a>
+### <a name="drive-api"></a>ドライブ API
 
 |**変更の種類**|**バージョン**|**説明**|
 |:--------------|:----------|:--------------|
@@ -184,8 +197,7 @@ Microsoft Graph API に関する既知の問題の詳細については、「[Mi
 | 変更 | ベータ版 | **configuratorUrl** と **webHtml** プロパティを **sharingLink** に追加しました。 <br/> **folderView** リソース タイプと **view** プロパティを **folder** リソース タイプに追加しました。 <br/> **listItem** ナビゲーション プロパティを **driveItem** に追加しました。 <br/> **list** ナビゲーション プロパティを **drive** に追加しました。
 
 
-### 拡張機能 (オープン拡張機能)
-<a id="extensions-open-extensions" class="xliff"></a>
+### <a name="extensions-open-extensions"></a>拡張機能 (オープン拡張機能)
 
 |**変更の種類**|**バージョン**|**説明**|
 |:-------------|:-----------|:--------------|
@@ -195,8 +207,7 @@ Microsoft Graph API に関する既知の問題の詳細については、「[Mi
 |追加|ベータ版|`$expand` をサポートしました。[administrativeUnit](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/administrativeunit) で[オープン拡張機能が利用できます](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/opentypeextension_get)。|
 
 
-### 拡張機能 (スキーマ拡張機能)
-<a id="extensions-schema-extensions" class="xliff"></a> 
+### <a name="extensions-schema-extensions"></a>拡張機能 (スキーマ拡張機能) 
 
 |**変更の種類**|**バージョン**|**説明**|
 |:-------------|:-----------|:--------------|
@@ -207,15 +218,13 @@ Microsoft Graph API に関する既知の問題の詳細については、「[Mi
 |変更|v1.0 およびベータ版| スキーマ拡張機能の複合型を null に設定して、リソース・インスタンスからスキーマ拡張機能を削除できるようになりました。 |
 
 
-### グループ
-<a id="group" class="xliff"></a>
+### <a name="group"></a>グループ
 
 |**変更の種類**|**バージョン**|**説明**|
 |:--------------|:----------|:--------------|
 | 追加 | v1.0 およびベータ版 | **drives** および **sites** ナビゲーション プロパティを **group** に追加しました。
 
-### Insights API
-<a id="insights-apis" class="xliff"></a>
+### <a name="insights-apis"></a>Insights API
 
 |**変更の種類**|**バージョン**|**説明**| 
 |:-------------|:-----------|:--------------|
@@ -224,8 +233,7 @@ Microsoft Graph API に関する既知の問題の詳細については、「[Mi
 |変更|ベータ版|次のリソースの新しい**タイプ** プロパティ:<br />[resourceVisualization](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/insights_resourcevisualization) リソース。 <br />
 |削除|ベータ版|次のエンティティを削除しました。<br/>**workingWith**<br/>**trendingAround**<br/>|
 
-### Intune API
-<a id="intune-apis" class="xliff"></a>
+### <a name="intune-apis"></a>Intune API
 
 |変更の種類|バージョン|説明|
 |:---|:---|:---|
@@ -287,24 +295,21 @@ Microsoft Graph API に関する既知の問題の詳細については、「[Mi
 |変更|ベータ版|[mailboxSettings](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/mailboxSettings) 複合型から **archiveFolder** プロパティを削除しました|
 
 
-### Outlook カレンダー
-<a id="outlook-calendar" class="xliff"></a>
+### <a name="outlook-calendar"></a>Outlook カレンダー
 
 |**変更の種類**|**バージョン**|**説明**|
 |:-------------|:-----------|:--------------|
 |追加|v1.0 およびベータ版|**findMeetingTimes**に対して、列挙型の値 **unrestricted** を追加しました。これは、**timeConstraint** パラメーターの一部である **activityDomain** プロパティとして指定します。これにより、**findMeetingTimes**はスケジュールを設定しているアクティビティの種類に適した時間を検索します。詳細については、[要求の本文](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/user_findmeetingtimes#request-body)セクションを参照してください。|
 |追加|ベータ版|**イベント**の本文を、既定の HTML 形式の代わりにプレーン テキストで取得することをサポートします。詳細については、[get](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/event_get) および [list](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/user_list_events) イベントを参照してください。|
 
-### Outlook メール
-<a id="outlook-mail" class="xliff"></a>
+### <a name="outlook-mail"></a>Outlook メール
 
 |**変更の種類**|**バージョン**|**説明**|
 |:-------------|:-----------|:--------------|
 |変更|ベータ版|**メッセージ**の本文を、既定の HTML 形式の代わりにプレーン テキストで取得することをサポートします。詳細については、[get](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/message_get) および [list](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/user_list_messages) イベントを参照してください。|
 
 
-### Outlook のタスク
-<a id="outlook-tasks" class="xliff"></a>
+### <a name="outlook-tasks"></a>Outlook のタスク
 
 |**変更の種類**|**バージョン**|**説明**|
 |:-------------|:-----------|:--------------|
@@ -313,15 +318,13 @@ Microsoft Graph API に関する既知の問題の詳細については、「[Mi
 |追加|ベータ版|Outlook タスクで添付ファイルをサポートします ([attachment](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/attachment)、[fileAttachment](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/fileattachment)、[itemAttachment](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/itemattachment)、および [referenceAttachment](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/referenceattachment) リソース)。 |
 |追加|ベータ版|Outlook タスクで[拡張プロパティ](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/extended-properties-overview)をサポートします ([singleValueLegacyExtendedProperty](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/singlevaluelegacyextendedproperty) および [multiValueLegacyExtendedProperty](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/multivaluelegacyextendedproperty) リソース)。 |
 
-### Planner API
-<a id="planner-apis" class="xliff"></a>
+### <a name="planner-apis"></a>Planner API
 
 |**変更の種類**|**バージョン**|**説明**| 
 |:-------------|:-----------|:--------------|
 |追加|v1.0|[Planner API](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/planner_overview) を追加しました。<br />新しいリソース:<br />[plannerPlan](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/plannerPlan) <br />[plannerTask](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/plannerTask) <br />[plannerPlanDetails](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/plannerPlanDetails) <br />[plannerTaskDetails](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/plannerTaskDetails) <br />[plannerBucket](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/plannerBucket) <br />[plannerAssignedToTaskBoardTaskFormat](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/plannerassignedtotaskboardtaskformat) <br />[plannerBucketTaskBoardTaskFormat](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/plannerbuckettaskboardtaskformat) <br />[plannerProgressTaskBoardTaskFormat](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/plannerprogresstaskboardtaskformat) | 
 
-### SharePoint サイト
-<a id="sharepoint-sites" class="xliff"></a>
+### <a name="sharepoint-sites"></a>SharePoint サイト
 
 |**変更の種類**|**バージョン**|**説明**|
 |:--------------|:----------|:--------------|
@@ -329,8 +332,7 @@ Microsoft Graph API に関する既知の問題の詳細については、「[Mi
 | 変更        | ベータ版      | **site** リソースの ID の形式を変更しました。これはベータ版 API の大きな変更点です。
 | 削除       | ベータ版      | **sharePoint** エンティティをベータ版 API から削除しました。この機能は、現在 **sites**コレクションから使用できます。
 
-### SharePoint リスト
-<a id="sharepoint-lists" class="xliff"></a>
+### <a name="sharepoint-lists"></a>SharePoint リスト
 
 |**変更の種類**|**バージョン**|**説明**|
 |:--------------|:----------|:--------------|
@@ -340,47 +342,40 @@ Microsoft Graph API に関する既知の問題の詳細については、「[Mi
 
 
 
-## 2017 年 4 月
-<a id="april-2017" class="xliff"></a>
+## <a name="april-2017"></a>2017 年 4 月
 
-### 管理単位のプロパティ変更
-<a id="administrative-units-property-changes" class="xliff"></a>
+### <a name="administrative-units-property-changes"></a>管理単位のプロパティ変更
 
 |**変更の種類**|**バージョン**|**説明**|
 |:-------------|:-----------|:--------------|
 |変更|ベータ版| 管理単位の API がプレビュー (ベータ版) で更新されます。最初の一連の変更は、2017 年 5 月 3 日に適用されます。これには、次のプロパティ名の変更が含まれます。<br />scopedRoleMembership エンティティの - **roleMemberInfo** 複合型が **ID** 複合型に変更されます<br />user エンティティの - **scopedAdministratorOf** ナビゲーション プロパティが **scopedRoleMemberOf** に変更されます<br />administrativeUnit エンティティの - **scopedAdministrators** ナビゲーション プロパティが **scopedRoleMembers** に変更されます<br />directoryRole エンティティの - **scopedAdministrators** ナビゲーション プロパティが **scopedMembers** に変更されます |
 
-### application API と servicePrincipal API の変更
-<a id="application-and-serviceprincipal-api-changes" class="xliff"></a>
+### <a name="application-and-serviceprincipal-api-changes"></a>application API と servicePrincipal API の変更
 
 |**変更の種類**|**バージョン**|**説明**|
 |:-------------|:-----------|:--------------|
 |変更|ベータ版| [application](https://graph.microsoft.io/en-us/docs/api-reference/beta/resources/application) API と [servicePrincipal](https://graph.microsoft.io/en-us/docs/api-reference/beta/resources/serviceprincipal) API は、プレビュー (ベータ版) で更新されます。最初の一連の変更は、2017 年 5 月 15 日に適用されます。変更には、プロパティの名前変更と再構築が含まれます。一部のプロパティ (appRoles、addIns など) は、変更が完了するまで利用できません。変更は、v1.0 へのリリース前にプレビュー (ベータ版) でリリースされます。 |
 
-### クラウド ソリューション プロバイダー開発者向けプレビュー サポートの追加
-<a id="added-preview-support-for-cloud-solution-provider-developers" class="xliff"></a>
+### <a name="added-preview-support-for-cloud-solution-provider-developers"></a>クラウド ソリューション プロバイダー開発者向けプレビュー サポートの追加
 
 |**変更の種類**|**バージョン**|**説明**|
 |:-------------|:-----------|:--------------|
 |追加|ベータ版|クラウド ソリューション プロバイダーの事前承認されたアプリケーションが Microsoft Graph を呼び出せるようにする、新しいプレビュー機能を追加し、新しい[承認トピック](https://graph.microsoft.io/en-us/docs/concepts/auth_cloudsolutionprovider)に記載しました。 |
 
-### user エンティティへの onPremises プロパティの追加
-<a id="added-onpremises-properties-to-user-entity" class="xliff"></a>
+### <a name="added-onpremises-properties-to-user-entity"></a>user エンティティへの onPremises プロパティの追加
 
 |**変更の種類**|**バージョン**|**説明**|
 |:-------------|:-----------|:--------------|
 |追加|ベータ版|[user](https://graph.microsoft.io/en-us/docs/api-reference/beta/resources/user) エンティティに、新しい onPremises プロパティである onPremisesDomainName、OnPremisesSamAccountName、onPremisesUserPrincipalName を追加しました。 |
 
-### 新しい Planner API とグループ可視性プロパティに対する更新
-<a id="new-planner-apis-and-an-update-to-the-group-visibility-property" class="xliff"></a>
+### <a name="new-planner-apis-and-an-update-to-the-group-visibility-property"></a>新しい Planner API とグループ可視性プロパティに対する更新
 
 |**変更の種類**|**バージョン**|**説明**|
 |:-------------|:-----------|:--------------|
 |変更|ベータ版|[Group](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/group) エンティティに、可視性プロパティの追加の値として **HiddenMembership** を追加しました |
 |追加|ベータ版|新しい [Planner API](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/planner_overview) を追加しました。<br />新しいリソース:<br />[plannerPlan](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/plannerPlan) <br />[plannerTask](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/plannerTask) <br />[plannerPlanDetails](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/plannerPlanDetails) <br />[plannerTaskDetails](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/plannerTaskDetails) <br />[plannerBucket](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/plannerBucket) <br />[plannerAssignedToTaskBoardTaskFormat](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/plannerassignedtotaskboardtaskformat) <br />[plannerBucketTaskBoardTaskFormat](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/plannerbuckettaskboardtaskformat) <br />[plannerProgressTaskBoardTaskFormat](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/plannerprogresstaskboardtaskformat) | 
 
-### Intune API
-<a id="intune-apis" class="xliff"></a>
+### <a name="intune-apis"></a>Intune API
 |**変更の種類**|**バージョン**|**説明**|
 |:---|:---|:---|
 |追加|ベータ版|新しいエンティティを追加しました。<br/>[androidForWorkCompliancePolicy](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_deviceconfig_androidforworkcompliancepolicy)<br/>[deviceComplianceSettingState](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_deviceconfig_devicecompliancesettingstate)<br/>[deviceInstallState](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_books_deviceinstallstate)<br/>[deviceManagementScript](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_deviceconfig_devicemanagementscript)<br/>[deviceManagementScriptGroupAssignment](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_deviceconfig_devicemanagementscriptgroupassignment)<br/>[deviceManagementScriptState](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_deviceconfig_devicemanagementscriptstate)<br/>[eBookGroupAssignment](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_books_ebookgroupassignment)<br/>[iosVppEBook](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_books_iosvppebook)<br/>[managedEBook](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_books_managedebook)<br/>[userInstallStateSummary](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_books_userinstallstatesummary)<br/>[windowsManagementApp](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_deviceconfig_windowsmanagementapp)<br/>[windowsManagementAppHealthState](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_deviceconfig_windowsmanagementapphealthstate)<br/>|
@@ -429,11 +424,9 @@ Microsoft Graph API に関する既知の問題の詳細については、「[Mi
 |変更|ベータ版|[omaSettingBase64](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_deviceconfig_omasettingbase64) 複合型で次のプロパティを変更しました:<br/>**fileName** を必須から省略可能に変更しました<br/>|
 |変更|ベータ版|[omaSettingStringXml](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_deviceconfig_omasettingstringxml) 複合型で次のプロパティを変更しました:<br/>**fileName** を必須から省略可能に変更しました<br/>|
 
-## 2017 年 3 月
-<a id="march-2017" class="xliff"></a>
+## <a name="march-2017"></a>2017 年 3 月
 
-### Intune API
-<a id="intune-apis" class="xliff"></a>
+### <a name="intune-apis"></a>Intune API
 
 |変更の種類|バージョン|説明|
 |:---|:---|:---|
@@ -524,38 +517,33 @@ Microsoft Graph API に関する既知の問題の詳細については、「[Mi
 |変更|ベータ版|[windowsPackageInformation](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_apps_windowspackageinformation) 複合型で次のプロパティの型を変更しました:<br/>**applicableArchitecture** を [windowsArchitecture](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/windowsArchitecture) から String に変更しました<br/>|
 |変更|ベータ版|[windowsPackageInformation](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_apps_windowspackageinformation) 複合型で次のプロパティを変更しました:<br/>**applicableArchitecture** を省略可能から必須に変更しました<br/>|
 
-### Microsoft Graph へのコントラクトの追加
-<a id="add-contracts-to-microsoft-graph" class="xliff"></a>
+### <a name="add-contracts-to-microsoft-graph"></a>Microsoft Graph へのコントラクトの追加
 
 |**変更の種類**|**バージョン**|**説明**|
 |:-------------|:-----------|:--------------|
 |追加|ベータ版|新しいリソース:</br>[コントラクト](https://graph.microsoft.io/en-us/docs/api-reference/beta/resources/contract) |
 
-### Microsoft Graph へのドメイン操作の追加
-<a id="add-domain-operations-to-microsoft-graph" class="xliff"></a>
+### <a name="add-domain-operations-to-microsoft-graph"></a>Microsoft Graph へのドメイン操作の追加
 
 |**変更の種類**|**バージョン**|**説明**|
 |:-------------|:-----------|:--------------|
 |追加|ベータ版|[ドメイン](https://graph.microsoft.io/en-us/docs/api-reference/beta/resources/domain)に関数を追加しました。<br/>新しいエンティティ:</br>[domain](https://graph.microsoft.io/en-us/docs/api-reference/beta/resources/domain)<br/>[domainDnsRecord](https://graph.microsoft.io/en-us/docs/api-reference/beta/resources/domaindnsrecord)<br/>[domainDnsCnameRecord](https://graph.microsoft.io/en-us/docs/api-reference/beta/resources/domainDnsCnameRecord)<br/>[domainDnsMxRecord](https://graph.microsoft.io/en-us/docs/api-reference/beta/resources/domainDnsMxRecord)<br/>[domainDnsSrvRecord](https://graph.microsoft.io/en-us/docs/api-reference/beta/resources/domainDnsSrvRecord)<br/>[domainDnsTxtRecord](https://graph.microsoft.io/en-us/docs/api-reference/beta/resources/domainDnsTxtRecord)<br/>[domainDnsUnavailableRecord](https://graph.microsoft.io/en-us/docs/api-reference/beta/resources/domainDnsUnavailableRecord)<br/>新しいアクション:</br>[forceDelete](https://graph.microsoft.io/en-us/docs/api-reference/beta/api/domain_forcedelete)</br>[verify](https://graph.microsoft.io/en-us/docs/api-reference/beta/api/domain_verify) |
 
-### スキーマ拡張機能を使用して Microsoft Graph にカスタム データを追加する
-<a id="add-custom-data-to-microsoft-graph-using-schema-extensions" class="xliff"></a>
+### <a name="add-custom-data-to-microsoft-graph-using-schema-extensions"></a>スキーマ拡張機能を使用して Microsoft Graph にカスタム データを追加する
 
 |**変更の種類**|**バージョン**|**説明**|
 |:-------------|:-----------|:--------------|
 |追加|ベータ版|Microsoft Graph を、[スキーマ拡張機能](https://developer.microsoft.com/en-us/graph/docs/concepts/extensibility_overview#schema-extensions-preview)を使用してアプリケーション データによって拡張します。これは、次のリソースでサポートされています。<br/>管理単位<br/>予定表イベント<br/>デバイス<br/>グループ<br/>メッセージ<br/>組織<br/>個人用連絡先<br/>投稿<br/>ユーザー<br/>次の例を参照してください。<br/>[スキーマ拡張機能を使用したグループへのカスタム データの追加 (プレビュー)](https://developer.microsoft.com/en-us/graph/docs/concepts/extensibility_schema_groups)|
 |追加|ベータ版|検証済みの .com バニティ ドメインを必要とせずに、スキーマ拡張機能の定義を作成する別の方法が提供されました。詳しくは、[スキーマ拡張機能](https://developer.microsoft.com/en-us/graph/docs/concepts/extensibility_overview#schema-extensions-preview)を参照してください。|
 
-### オープン拡張機能を使用して Microsoft Graph にカスタム データを追加する
-<a id="add-custom-data-to-microsoft-graph-using-open-extensions" class="xliff"></a>
+### <a name="add-custom-data-to-microsoft-graph-using-open-extensions"></a>オープン拡張機能を使用して Microsoft Graph にカスタム データを追加する
 
 |**変更の種類**|**バージョン**|**説明**|
 |:-------------|:-----------|:--------------|
 |変更| v1.0 およびベータ版 | 「Office 365 のデータ拡張機能」というこれまでの名称が「オープン拡張機能」に変更されました。 |
 |追加|ベータ版|[オープン拡張機能](https://developer.microsoft.com/en-us/graph/docs/concepts/extensibility_overview#open-extensions)をサポートする追加リソース: <br/>管理単位<br/>デバイス<br/>グループ<br/>組織<br/>ユーザー<br/>次の例を参照してください。<br/>[オープン拡張機能を使用したユーザーへのカスタム データの追加 (プレビュー)](https://developer.microsoft.com/en-us/graph/docs/concepts/extensibility_open_users)|
 
-### ディレクトリ API
-<a id="directory-apis" class="xliff"></a>
+### <a name="directory-apis"></a>ディレクトリ API
 
 |**変更の種類**|**バージョン**|**説明**|
 |:-------------|:-----------|:--------------|
@@ -565,25 +553,21 @@ Microsoft Graph API に関する既知の問題の詳細については、「[Mi
 |追加|ベータ版|新しいエンティティ:</br>[licenseDetails](https://graph.microsoft.io/en-us/docs/api-reference/beta/resources/licensedetails) |
 |変更  |ベータ版|[users](https://graph.microsoft.io/en-us/docs/api-reference/beta/resources/user) における新たな [licensedetails](https://graph.microsoft.io/en-us/docs/api-reference/beta/api/user_list_licensedetails) ナビゲーション プロパティ |
 
-### レポート API
-<a id="reports-apis" class="xliff"></a>
+### <a name="reports-apis"></a>レポート API
 
 |**変更の種類**|**バージョン**|**説明**|
 |:-------------|:-----------|:--------------|
 |追加|ベータ版|Office 365 レポートの新しいプレビュー API が導入されました。この API を使用すると、対象ビジネスにおけるユーザーの Office 365 サービスの使用法に関する使用状況レポートを取得できます。たとえば、サービスをよく利用してクォータに到達しそうなユーザーや、Office 365 ライセンスを必要としない可能性があるユーザーなどを識別できます。詳しくは、[レポート](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/report)を参照してください。|
 
-### ディレクトリ API
-<a id="directory-apis" class="xliff"></a>
+### <a name="directory-apis"></a>ディレクトリ API
 
 |**変更の種類**|**バージョン**|**説明**|
 |:-------------|:-----------|:--------------|
 |追加|ベータ版|新しいエンティティ:</br>[コントラクト](https://graph.microsoft.io/en-us/docs/api-reference/beta/resources/contract) |
 
-## 2017 年 2 月
-<a id="february-2017" class="xliff"></a>
+## <a name="february-2017"></a>2017 年 2 月
 
-### Intune API
-<a id="intune-apis" class="xliff"></a>
+### <a name="intune-apis"></a>Intune API
 
 |変更の種類|バージョン|説明|
 |:---|:---|:---|
@@ -655,11 +639,9 @@ Microsoft Graph API に関する既知の問題の詳細については、「[Mi
 
 
 
-## 2017 年 1 月
-<a id="january-2017" class="xliff"></a>
+## <a name="january-2017"></a>2017 年 1 月
 
-### Outlook カレンダー
-<a id="outlook-calendar" class="xliff"></a>
+### <a name="outlook-calendar"></a>Outlook カレンダー
 
 |**変更の種類**|**バージョン**|**説明**|
 |:-------------|:-----------|:--------------|
@@ -671,8 +653,7 @@ Microsoft Graph API に関する既知の問題の詳細については、「[Mi
   [attendee](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/attendee) 複合型は、[recipient](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/recipient) から派生する attendeeBase から派生するようになりました。継承されたプロパティを含めて、以前と同じ **status**、**type**、**emailAddress** プロパティで構成されます。|
 |追加|ベータ版|hexColor が、[calendar](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/calendar) リソースに追加されました。|
 
-### Intune API
-<a id="intune-apis" class="xliff"></a>
+### <a name="intune-apis"></a>Intune API
 
 |**変更の種類**|**バージョン**|**説明**|
 |:-------------|:-----------|:--------------|
@@ -707,11 +688,9 @@ Microsoft Graph API に関する既知の問題の詳細については、「[Mi
 |変更|ベータ版|
   **appsAllowTrustedAppsSideloading**、**appsBlockWindowsStoreOriginatedApps**、**developerUnlockSetting**、**edgeBlockAccessToAboutFlags**、**edgeBlockDeveloperTools**、**edgeBlockExtensions**、**edgeBlockInPrivateBrowsing**、**edgeFirstRunUrl**、**edgeHomepageUrls**、**gameDvrBlocked**、**settingsBlockAddProvisioningPackage**、**settingsBlockChangeLanguage**、**settingsBlockChangePowerSleep**、**settingsBlockChangeRegion**、**settingsBlockChangeSystemTime**、**settingsBlockEditDeviceName**、**settingsBlockRemoveProvisioningPackage**、**sharedUserAppDataAllowed**、**smartScreenBlockPromptOverride**、**smartScreenBlockPromptOverrideForFiles**、**storageRestrictAppDataToSystemVolume**、**storageRestrictAppInstallToSystemVolume**、**webRtcBlockLocalhostIpAddress**、**windowsStoreBlockAutoUpdate**、**windowsStoreEnablePrivateStoreOnly** の各プロパティが、[windows10GeneralConfiguration](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_deviceconfig_windows10generalconfiguration) エンティティに追加されました。|
 
-## 2016 年 12 月
-<a id="december-2016" class="xliff"></a>
+## <a name="december-2016"></a>2016 年 12 月
 
-### デルタ クエリ
-<a id="delta-query" class="xliff"></a>
+### <a name="delta-query"></a>デルタ クエリ
 
 |**変更の種類**|**バージョン**|**説明**|
 |:-------------|:-----------|:--------------|
@@ -721,25 +700,21 @@ Microsoft Graph API に関する既知の問題の詳細については、「[Mi
   [フォルダー内のメッセージへの増分の変更を取得する (プレビュー)](https://developer.microsoft.com/en-us/graph/docs/concepts/delta_query_messages)<br/>
   [ユーザーへの増分の変更を取得する (プレビュー)](https://developer.microsoft.com/en-us/graph/docs/concepts/delta_query_users)|
 
-### Excel API
-<a id="excel-apis" class="xliff"></a>
+### <a name="excel-apis"></a>Excel API
 
 |**変更の種類**|**バージョン**|**説明**|
 |:-------------|:-----------|:--------------|
 |追加|v1.0|workbookPivotTable リソース、pivotTables の refresh および refreshAll アクション、workbookRangeView リソース、フィルターされた範囲に対して実行して workbookRangeView をユーザーに返す visibleView アクション、visibleView からの行コレクションと範囲リソースの取得、範囲リソースからの columnsAfter、columnsBefore、resizedRange、rowsAbove、rowsBelow 関数、および新しいテーブル プロパティが追加されました。|
 
-### Intune API
-<a id="intune-apis" class="xliff"></a>
+### <a name="intune-apis"></a>Intune API
 
 |**変更の種類**|**バージョン**|**説明**|
 |:-------------|:-----------|:--------------|
 |追加|ベータ版|Microsoft Intune に、リソースとメソッド API が追加されました。これには、Azure ポータルでの Intune のパブリック プレビューをサポートする多数のリソースとメソッドのセットが含まれます。Intune サービスの詳細については、[Intune のドキュメント](https://go.microsoft.com/fwlink/?linkid=836405) をご覧ください。Intune のリソースと API の詳細については、「[Microsoft Graph での Intune の使用](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_graph_overview)」をご覧ください。|
 
-## 2016 年 10 月
-<a id="october-2016" class="xliff"></a>
+## <a name="october-2016"></a>2016 年 10 月
 
-### 認証プロバイダー
-<a id="authorization-provider" class="xliff"></a>
+### <a name="authorization-provider"></a>認証プロバイダー
 
 |**変更の種類**|**バージョン**|**説明**|
 |:-------------|:-----------|:--------------|
@@ -747,26 +722,22 @@ Microsoft Graph API に関する既知の問題の詳細については、「[Mi
 |追加|v1.0 およびベータ版|v2.0 認証エンドポイントでは、[管理者の同意エンドポイント](https://azure.microsoft.com/en-us/documentation/articles/active-directory-v2-scopes/#admin-restricted-scopes)経由で、[管理者の同意を必要とするアクセス許可のスコープ](http://developer.microsoft.com/en-us/graph/docs/concepts/permissions_reference)がサポートされるようになりました。|
 |追加|v1.0 およびベータ版|v2.0 認証エンドポイントでは、[管理者の同意エンドポイント](https://azure.microsoft.com/en-us/documentation/articles/active-directory-v2-scopes/#admin-restricted-scopes)経由で、テナント内のすべてのユーザーに対する管理者の同意がサポートされるようになりました。|
 
-### 招待 API
-<a id="invitation-apis" class="xliff"></a>
+### <a name="invitation-apis"></a>招待 API
 
 |**変更の種類**|**バージョン**|**説明**|
 |:-------------|:-----------|:--------------|
 |追加|ベータ版|招待エンティティの型に、招待するユーザー (**ゲスト**または**メンバー**) の種類を定義する invitedUserType プロパティが追加されました。|
 |削除|ベータ版|2016 年 11 月 11 日付けで、招待のエンティティ型から invitedToGroups プロパティが削除されます。このため、この API を使用して、招待したユーザーをグループに追加することができなくなります。代わりに、[メンバー追加 API](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/group_post_members) を使ってユーザーをグループに追加することになります。|
 
-## 2016 年 9 月
-<a id="september-2016" class="xliff"></a>
+## <a name="september-2016"></a>2016 年 9 月
 
-### Azure AD アプリケーション プロキシ
-<a id="azure-ad-application-proxy" class="xliff"></a>
+### <a name="azure-ad-application-proxy"></a>Azure AD アプリケーション プロキシ
 
 |**変更の種類**|**バージョン**|**説明**|
 |:--------------|:-----------|:--------------|
 |追加|ベータ版|Azure AD アプリケーション プロキシ API が、Microsoft Graph ベータ エンドポイントで利用可能になりました。これらの API では、アクセスのための共通のコントロール プレーンとして Azure AD を使用し、企業ネットワーク外のユーザーにオンプレミス アプリケーションをセキュアに発行できます。発行された API を使用すると、アプリケーションの _connectors_、_connectorGroups_、_onPremisesPublishing_ の設定など、アプリケーション プロキシのさまざまな側面を取得、更新するアプリケーションを作成できます。|
 
-### ドライブ
-<a id="drive" class="xliff"></a>
+### <a name="drive"></a>ドライブ
 
 |**変更の種類**|**バージョン**|**説明**|
 |:--------------|:-----------|:--------------|
@@ -774,8 +745,7 @@ Microsoft Graph API に関する既知の問題の詳細については、「[Mi
 |追加|ベータ版|ドライブに _search_ 関数が追加され、ドライブのルート フォルダー内の項目だけを検索するよりも多くの項目を検索できるようになりました。|
 
 
-### DriveItem
-<a id="driveitem" class="xliff"></a>
+### <a name="driveitem"></a>DriveItem
 
 |**変更の種類**|**バージョン**|**説明**|
 |:--------------|:-----------|:--------------|
@@ -785,16 +755,14 @@ Microsoft Graph API に関する既知の問題の詳細については、「[Mi
 |追加|ベータ版|OneDrive for Business のファイルに対して _quickXorHash_ 値が追加されました。|
 |追加|ベータ版|_createSharingLink_ にスコープが追加され、会社の共有可能なリンクまたは匿名の共有リンクが作成できるようになりました。|
 
-### 拡張プロパティ
-<a id="extended-properties" class="xliff"></a>
+### <a name="extended-properties"></a>拡張プロパティ
 
 |**変更の種類**|**バージョン**|**説明**|
 |:--------------|:-----------|:--------------|
 |追加|v1.0|
   [拡張プロパティ](http://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/extended-properties-overview)が、次のリソースでサポートされるようになりました: message, mailFolder, event, calendar, contact, contactFolder, group event, group calendar, group post。|
 
-### グループ
-<a id="groups" class="xliff"></a>
+### <a name="groups"></a>グループ
 
 パブリック プレビューの API により、動的グループ メンバーシップのサポートが追加されました。追加された内容の一部を、次の表に記載します。
 
@@ -806,29 +774,25 @@ Microsoft Graph API に関する既知の問題の詳細については、「[Mi
 |追加|ベータ版|Office 365 グループの優先言語を示すための **preferredLanguage** プロパティが追加されました。|
 |追加|ベータ版|Office 365 グループの色のテーマを指定するための **theme** プロパティが追加されました。|
 
-### ハイブリッド展開のサポート
-<a id="hybrid-deployment-support" class="xliff"></a>
+### <a name="hybrid-deployment-support"></a>ハイブリッド展開のサポート
 
 |**変更の種類**|**バージョン**|**説明**|
 |:--------------|:-----------|:--------------|
 |追加|v1.0|アプリで v1.0 Outlook メール、カレンダー、連絡先の API を使用して、Exchange 2016 累積的な更新プログラム 3 (CU3) を使用したハイブリッド展開のオンプレミスのメールボックスにアクセスできます。REST API サポートの詳細については、特定の[ハイブリッド展開](https://developer.microsoft.com/en-us/graph/docs/overview/hybrid_rest_support)をご覧ください。**注:**v1.0 のこれらの API セットを使用している場合、特定のハイブリッド展開の要件を満たすオンプレミスのメールボックスで機能する、運用アプリを含むアプリを検出できるようになりました。この機能はプレビューでのみ使用できます。|
 
-### IdentityRiskEvents
-<a id="identityriskevents" class="xliff"></a>
+### <a name="identityriskevents"></a>IdentityRiskEvents
 
 |**変更の種類**|**バージョン**|**説明**|
 |:--------------|:-----------|:--------------|
 |変更|ベータ版|2 つの場所のプロパティの型が identityRiskEvents エンドポイントの新しい複合型で置き換えられるスキーマ変更の一環として、次のプロパティが identityRiskEvents エンドポイントで変更/追加されました。</br>**location** は Edm.String から ComplexType signInLocation に変更されました。<br/>**previousLocation** は Edm.String から ComplexType signInLocation に変更されました。<br/>**signInLocation** は、city、state、countryOrRegion、geoCoordinates プロパティを含む新しい ComplexType です。<br/>**geoCoordinates** は latitude と longitude プロパティを含む新しい ComplexType です。|
 
-### 招待マネージャー
-<a id="invitation-manager" class="xliff"></a>
+### <a name="invitation-manager"></a>招待マネージャー
 
 |**変更の種類**|**バージョン**|**説明**|
 |:--------------|:-----------|:--------------|
 |追加|ベータ版|招待マネージャー API が、Microsoft Graph ベータ エンドポイントで利用可能になりました。招待マネージャー API を使用して、組織に外部ユーザーを追加するための招待状を作成します。招待の一環として、招待されたユーザーを Office 365 グループに追加することも選択できます。詳細については、[招待マネージャー](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/invitation)をご覧ください。|
 
-### OneDrive
-<a id="onedrive" class="xliff"></a>
+### <a name="onedrive"></a>OneDrive
 
 |**変更の種類**|**バージョン**|**説明**|
 |:--------------|:-----------|:--------------|
@@ -840,8 +804,7 @@ Microsoft Graph API に関する既知の問題の詳細については、「[Mi
 |追加|v1.0|ファイル複合型の **processingMetadata** プロパティ、ハッシュ複合型の quickXorHash プロパティが追加されました。 |
 |追加|v1.0|ハッシュ複合型の **quickXorHash** プロパティが追加されました。 |
 
-### Outlook カレンダー
-<a id="outlook-calendar" class="xliff"></a>
+### <a name="outlook-calendar"></a>Outlook カレンダー
 
 |**変更の種類**|**バージョン**|**説明**|
 |:--------------|:-----------|:--------------|
@@ -850,8 +813,7 @@ Microsoft Graph API に関する既知の問題の詳細については、「[Mi
 |追加|ベータ版|event リソースに [forward](http://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/event_forward) アクションが追加されました。|
 |追加|ベータ版|カレンダーの共有をサポートする次のプロパティが、[calendar](http://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/calendar) リソースに追加されました: **canEdit**、**canShare**、**canViewPrivateItems**、**isShared**、**isShareWithMe**、**owner**。|
 
-### Outlook メール
-<a id="outlook-mail" class="xliff"></a>
+### <a name="outlook-mail"></a>Outlook メール
 
 |**変更の種類**|**バージョン**|**説明**|
 |:--------------|:-----------|:--------------|
@@ -860,17 +822,16 @@ Microsoft Graph API に関する既知の問題の詳細については、「[Mi
 |追加|v1.0|
   **mailboxSettings** プロパティが [user](http://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/user) リソースに追加されました。|
 |追加|ベータ版|メッセージに含まれる[参照投稿](http://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/mention)の 1 つ以上のインスタンスを作成、一覧表示、取得、削除する機能のサポートが追加されました。参照投稿は、他のユーザーの注意を引きつけるためのメッセージ内のコールアウトをサポートしています。|
-|追加|ベータ版|[getMailTips](http://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/user_getmailtips) アクションのサポートが追加され、特定の受信者のすべてのメール ヒントを取得できるようになりました。次のリソースが追加されました: automaticRepliesMailTips、mailTips、mailTipsError。|
+|追加|ベータ版|
+  [getMailTips](http://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/user_getmailtips) アクションのサポートが追加され、特定の受信者のすべてのメール ヒントを取得できるようになりました。次のリソースが追加されました: automaticRepliesMailTips、mailTips、mailTipsError。|
 
-### クエリ パラメーター
-<a id="query-parameters" class="xliff"></a>
+### <a name="query-parameters"></a>クエリ パラメーター
 
 |**変更の種類**|**バージョン**|**説明**|
 |:--------------|:-----------|:--------------|
 |変更|ベータ版|2016 年 9 月 26 日現在、$ プレフィックスなしのクエリ パラメーターがサポートされています。クエリ パラメーターの $ プレフィックスは、省略可能です。詳細については、ブログ投稿「[Microsoft Graph における $ プレフィックスのないクエリ パラメーターのサポート](http://dev.office.com/queryparametersinMicrosoftGraph)」をご覧ください。|
 
-### SharePoint
-<a id="sharepoint" class="xliff"></a>
+### <a name="sharepoint"></a>SharePoint
 
 |**変更の種類**|**バージョン**|**説明**|
 |:--------------|:-----------|:--------------|
@@ -878,8 +839,7 @@ Microsoft Graph API に関する既知の問題の詳細については、「[Mi
 |追加|ベータ版|
   [listItem のインスタンスを一覧表示、作成、取得、削除](http://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/listitem)できるようになりました。|
 
-### ユーザー
-<a id="users" class="xliff"></a>
+### <a name="users"></a>ユーザー
 
 |**変更の種類**|**バージョン**|**説明**|
 |:--------------|:-----------|:--------------|
@@ -888,128 +848,108 @@ Microsoft Graph API に関する既知の問題の詳細については、「[Mi
 |追加|ベータ版|**invalidateAllRefreshTokens** サービス アクションが追加されました。これを使って **refreshTokensValidFromDateTime** ユーザー プロパティを現在の日時にリセットすることで、アプリケーションに発行されたすべての更新トークンとセッション トークンが無効になります。|
 
 
-### Webhooks
-<a id="webhooks" class="xliff"></a>
+### <a name="webhooks"></a>Webhooks
 
 |**変更の種類**|**バージョン**|**説明**|
 |:--------------|:-----------|:--------------|
 |追加|ベータ版|購読可能なリソースとしてドライブのルート項目が Webhooks に追加されました。|
 
-## 2016 年 8 月
-<a id="august-2016" class="xliff"></a>
+## <a name="august-2016"></a>2016 年 8 月
 
-### 連絡先
-<a id="contacts" class="xliff"></a>
+### <a name="contacts"></a>連絡先
 
 |**変更の種類**|**バージョン**|**説明**|
 |:--------------|:-----------|:--------------|
 |追加|ベータ版|いくつかのプロパティが削除され、対応するコレクションが連絡先エンドポイントに追加されたスキーマ変更の一環として、次のプロパティが連絡先エンドポイントに追加されました。_Websites Collection(ComplexType:Website)_、_Phones Collection (ComplexType:Phone)_、_PostalAddress Collection(ComplexType:PhysicalAddress)_。詳細については、ブログ投稿「[連絡先および People API で今後予定されている変更](https://blogs.msdn.microsoft.com/exchangedev/2016/06/09/upcoming-changes-to-contacts-and-people-apis/)」をご覧ください。|
 |削除|ベータ版|いくつかのプロパティが削除され、対応するコレクションが連絡先エンドポイントに追加されたスキーマ変更の一環として、次のプロパティが連絡先エンドポイントから削除されました。_BusinessHomePage_、_HomePhones_、_MobilePhone1_、_BusinessPhones_、_HomeAddress_、_BusinessAddress_、_OtherAddress_。詳細については、ブログ投稿「[連絡先および People API で今後予定されている変更](https://blogs.msdn.microsoft.com/exchangedev/2016/06/09/upcoming-changes-to-contacts-and-people-apis/)」をご覧ください。|
 
-### Excel API
-<a id="excel-apis" class="xliff"></a>
+### <a name="excel-apis"></a>Excel API
 
 |**変更の種類**|**バージョン**|**説明**|
 |:--------------|:-----------|:--------------|
 |追加|v1.0|Microsoft Graph の Excel REST API は一般公開されています。Office 365 の Excel ブックとの充実した高度な統合を構築できるようになりました。詳細については、ブログ投稿「[Microsoft Graph の新しい Excel REST API を使ってアプリをパワーアップする](http://dev.office.com/blogs/power-your-apps-with-the-new-excel-rest-api)」をご覧ください。|
 
-### 複数のユーザー
-<a id="people" class="xliff"></a>
+### <a name="people"></a>複数のユーザー
 
 |**変更の種類**|**バージョン**|**説明**|
 |:--------------|:-----------|:--------------|
 |変更|ベータ版|_WebSite_ プロパティの名前が _Websites_ に変更されました。詳細については、「[連絡先および People API で今後予定されている変更](https://blogs.msdn.microsoft.com/exchangedev/2016/06/09/upcoming-changes-to-contacts-and-people-apis/)」をご覧ください。|
 
-### Privileged Identity Management
-<a id="privileged-identity-management" class="xliff"></a>
+### <a name="privileged-identity-management"></a>Privileged Identity Management
 
 |**変更の種類**|**バージョン**|**説明**|
 |:--------------|:-----------|:--------------|
 |追加|ベータ版|Privileged Identity Management (PIM) REST API が Microsoft Graph ベータ エンドポイントで利用可能になりました。[Privileged Identity Management](https://azure.microsoft.com/en-us/documentation/articles/active-directory-privileged-identity-management-configure/) では、グローバル管理者、課金管理者など、Azure AD の組織内でのロールのジャスト イン タイム アクティベーションが提供されます。発行された API を使用すると、特権ロールの割り当てを取得、更新して、ユーザーをロールにアクティブ化するアプリケーションを作成できます。詳細については、「[Microsoft Graph:ベータ版で利用可能な Azure AD Privileged Identity Management Preview API](http://dev.office.com/blogs/microsoft-graph-azure-ad-privileged-identity-management-apis-beta)」と「[Azure AD Privileged Identity Management](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/privilegedidentitymanagement_root)」を参照してください。|
 
-## 2016 年 7 月
-<a id="july-2016" class="xliff"></a>
+## <a name="july-2016"></a>2016 年 7 月
 
-### 管理単位
-<a id="administrative-units" class="xliff"></a>
+### <a name="administrative-units"></a>管理単位
 
 |**変更の種類**|**バージョン**|**説明**|
 |:--------------|:-----------|:--------------|
 |追加|ベータ版|新しい管理単位のプレビュー API が導入されました。管理単位を使用すると、組織は Azure Active Directory を分割して、サブ部門に管理職務を委任できます。サブ部門は、地域、部署、コスト センターなどを表すことができます。これを Microsoft Graph API から管理できるようになりました。|
 
-## 2016 年 6 月
-<a id="june-2016" class="xliff"></a>
+## <a name="june-2016"></a>2016 年 6 月
 
-### IdentityRiskEvents
-<a id="identityriskevents" class="xliff"></a>
+### <a name="identityriskevents"></a>IdentityRiskEvents
 
 |**変更の種類**|**バージョン**|**説明**|
 |:--------------|:-----------|:--------------|
 |追加|ベータ版|新しい IdentityRiskEvents プレビュー API が導入されました。この API は、Azure Active Directory Identity Protection と連携して動作します。この API を使うと、Identity Protection によって生成されたリスク イベントに対してクエリを実行できます。詳細については、ブログ投稿「[Microsoft Graph の新しいプレビュー API の紹介:IdentityRiskEvents](http://dev.office.com/blogs/identityriskevents-api-preview)」をご覧ください。
 
-### サブスクリプション
-<a id="subscriptions" class="xliff"></a>
+### <a name="subscriptions"></a>サブスクリプション
 
 |**変更の種類**|**バージョン**|**説明**|
 |:--------------|:-----------|:--------------|
 |追加|ベータ版|_メール_と_連絡先_のサブスクリプションに対して、アプリ専用スコープがサポートされるようになりました。|
 
-## 2016 年 5 月
-<a id="may-2016" class="xliff"></a>
+## <a name="may-2016"></a>2016 年 5 月
 
-### カレンダー
-<a id="calendar" class="xliff"></a>
+### <a name="calendar"></a>カレンダー
 
 |**変更の種類**|**バージョン**|**説明**|
 |:--------------|:-----------|:--------------|
 |重大な変更|ベータ版|findMeetingTimes API に対する変更です。詳細については、ブログ投稿「[Microsoft Graph findMeetingTimes API の更新](http://dev.office.com/microsoft-graph-findmeetingtimes-api-update)」をご覧ください。この変更は、2016 年 5 月 19 日に有効になりました。
 
-### 連絡先
-<a id="contact" class="xliff"></a>
+### <a name="contact"></a>連絡先
 
 |**変更の種類**|**バージョン**|**説明**|
 |:--------------|:-----------|:--------------|
 |追加|v1.0|_extensions_ が追加されました。これは OData v4 のオープン型 openTypeExtension をサポートする抽象型です。|
 
-### ディレクトリ
-<a id="directory" class="xliff"></a>
+### <a name="directory"></a>ディレクトリ
 
 |**変更の種類**|**バージョン**|**説明**|
 |:--------------|:-----------|:--------------|
 |重大な変更|ベータ版|_settingTemplateId_ は _templateId_ に名前が変更されます。この変更は、2016 年 5 月 19 日に有効になります。|
 
-### イベント
-<a id="event" class="xliff"></a>
+### <a name="event"></a>イベント
 
 |**変更の種類**|**バージョン**|**説明**|
 |:--------------|:-----------|:--------------|
 |追加|v1.0|_extensions_ が追加されました。これは OData v4 のオープン型 openTypeExtension をサポートする抽象型です。|
 
-### EventMessages
-<a id="eventmessages" class="xliff"></a>
+### <a name="eventmessages"></a>EventMessages
 
 |**変更の種類**|**バージョン**|**説明**|
 |:--------------|:-----------|:--------------|
 |追加|v1.0|_inferenceClassification_ と _extensions_ が _eventMessages_ に追加されました。|
 |追加|ベータ版|_responseRequested_ が _eventMessageRequest_ に追加されました。|
 
-### メッセージ
-<a id="messages" class="xliff"></a>
+### <a name="messages"></a>メッセージ
 
 |**変更の種類**|**バージョン**|**説明**|
 |:--------------|:-----------|:--------------|
 |追加|v1.0|_inferenceClassification_ と _extensions_ が _messages_ に追加されました。|
 |追加|ベータ版|_wellknownname_ が _contactFolder_ に追加されました。|_findMeetingTimes_ API に対する変更です。詳細については、ブログ投稿「[Microsoft Graph findMeetingTimes API の更新](http://dev.office.com/microsoft-graph-findmeetingtimes-api-update)」をご覧ください。この変更は、2016 年 5 月 19 日に有効になります。|
 
-### 投稿
-<a id="post" class="xliff"></a>
+### <a name="post"></a>投稿
 
 |**変更の種類**|**バージョン**|**説明**|
 |:--------------|:-----------|:--------------|
 |追加|v1.0|_extensions_ が追加されました。これは OData v4 のオープン型 openTypeExtension をサポートする抽象型です。|
 
-### ユーザー
-<a id="user" class="xliff"></a>
+### <a name="user"></a>ユーザー
 
 |**変更の種類**|**バージョン**|**説明**|
 |:--------------|:-----------|:--------------|
@@ -1017,11 +957,9 @@ Microsoft Graph API に関する既知の問題の詳細については、「[Mi
 |追加|ベータ版|_timeZone_ が _mailboxsettings_ に追加されました。|
 |追加|ベータ版|API _findMeetingTimes_ が _user_ に追加されました。|
 
-## 2016 年 4 月
-<a id="april-2016" class="xliff"></a>
+## <a name="april-2016"></a>2016 年 4 月
 
-### 全般
-<a id="general" class="xliff"></a>
+### <a name="general"></a>全般
 
 |**変更の種類**|**バージョン**|**説明**|
 |:--------------|:-----------|:--------------|
@@ -1031,18 +969,15 @@ Microsoft Graph API に関する既知の問題の詳細については、「[Mi
 |追加|ベータ版|たとえば、ユーザーがメールボックスのライセンスを持っていない場合、またはテナントに Exchange Online のサブスクリプションがない場合など、Outlook が要求を処理できないときに、Azure Active Directory が /beta/users/id/photo 要求のフォールバックとして使用されるようになりました。注: このフォールバックは GET と PATCH の両方に使用できます。|
 |追加|ベータ版|拡張パスのキャスト セグメントのサポートが追加されました。例: 'https://graph.microsoft.com/v1.0/me/messages?$expand=microsoft.graph.eventMessage/event'。|
 
-### OneDrive
-<a id="onedrive" class="xliff"></a>
+### <a name="onedrive"></a>OneDrive
 
 |**変更の種類**|**バージョン**|**説明**|
 |:--------------|:-----------|:--------------|
 |修正|v1.0|500 エラーと「拡張プロパティの型がサポートされていません」というエラーで OneDrive の createLink 要求が失敗する問題が修正されました。|
 
-## 2016 年 3 月
-<a id="march-2016" class="xliff"></a>
+## <a name="march-2016"></a>2016 年 3 月
 
-### カレンダー
-<a id="calendar" class="xliff"></a>
+### <a name="calendar"></a>カレンダー
 
 |**変更の種類**|**バージョン**|**説明**|
 |:--------------|:-----------|:--------------|
@@ -1053,16 +988,14 @@ Microsoft Graph API に関する既知の問題の詳細については、「[Mi
 |変更|ベータ版|_findMeetingTimes_ で新しいパラメーター _ReturnSuggestionHints_ を使用するようになりました。|
 |変更|ベータ版|_findMeetingTimes_ が _meetingTimeCandidate_ のコレクションを返すようになりました。|
 
-### ドライブ
-<a id="drive" class="xliff"></a>
+### <a name="drive"></a>ドライブ
 
 |**変更の種類**|**バージョン**|**説明**|
 |:--------------|:-----------|:--------------|
 |追加|v1.0 およびベータ版|サインインしたユーザーによって最近使用された項目のセットを一覧表示する _recent_ 関数が追加されました。この一覧には、ユーザーのドライブにある項目と、他のドライブとの間でアクセス可能な項目が含まれています。例: GET /me/drive/recent。|
 |追加|v1.0 およびベータ版|現在のユーザーと共有されている項目のセットを一覧表示する _sharedWithMe_ 関数が追加されました。例: GET /me/drive/sharedWithMe。|
 
-### DriveItem
-<a id="driveitem" class="xliff"></a>
+### <a name="driveitem"></a>DriveItem
 
 |**変更の種類**|**バージョン**|**説明**|
 |:--------------|:-----------|:--------------|
@@ -1073,15 +1006,13 @@ Microsoft Graph API に関する既知の問題の詳細については、「[Mi
 |追加|v1.0 およびベータ版|_conflictBehavior_ インスタンス属性が _driveItem_ に適用されるようになりました。|
 |追加|ベータ版|既存の項目に共有の招待を送信する _invite_ 関数が追加されました。共有の招待では、一意の共有リンクが作成され、共有リンクを記載した電子メールが招待状の受信者に送信されます。例: POST /drive/items/{item-id}/invite。
 
-### イベント
-<a id="event" class="xliff"></a>
+### <a name="event"></a>イベント
 
 |**変更の種類**|**バージョン**|**説明**|
 |:--------------|:-----------|:--------------|
 |追加|ベータ版|新しいプロパティ _onlineMeetingUrl_ と、新しいメソッド _cancel_ が追加されました。|
 
-### イベント メッセージ
-<a id="event-messages" class="xliff"></a>
+### <a name="event-messages"></a>イベント メッセージ
 
 |**変更の種類**|**バージョン**|**説明**|
 |:--------------|:-----------|:--------------|
@@ -1089,15 +1020,13 @@ Microsoft Graph API に関する既知の問題の詳細については、「[Mi
 |追加|ベータ版|_singleValueExtendedProperties_ プロパティと _multiValueExtendedProperties_ プロパティが追加されました。|
 |追加|ベータ版|新しいメソッド _unsubscribe_ が追加されました。|
 
-### Excel
-<a id="excel" class="xliff"></a>
+### <a name="excel"></a>Excel
 
 |**変更の種類**|**バージョン**|**説明**|
 |:--------------|:-----------|:--------------|
 |追加|ベータ版|現在、Excel ブックのデータの読み取りと変更が可能な新しい Excel REST API を追加しているところです。データへのインサイトを提供することで、ユーザーが Excel ブックに保存されているコンテンツから価値を取得できるスマート アプリを構築できるようになりました。Excel の分析機能の活用、表とグラフの作成、および視覚に訴えるグラフ イメージの抽出などを、アプリ内からすべて実行できます。詳細については、「[Microsoft Graph での Excel の操作](http://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/excel)」をご覧ください。|
 
-### 全般
-<a id="general" class="xliff"></a>
+### <a name="general"></a>全般
 
 |**変更の種類**|**バージョン**|**説明**|
 |:--------------|:-----------|:--------------|
@@ -1107,16 +1036,14 @@ Microsoft Graph API に関する既知の問題の詳細については、「[Mi
 |変更|ベータ版|サブスクリプションのプロパティ名がクリーンアップされました。|
 |追加|ベータ版|エンティティとその関連機能の既定の動作を (_directorySettingTemplates_ 経由で) 検出し、(テンプレートから _setting_ を作成することにより) 上書きする機能が追加されました。最初に提供されたこの唯一のテンプレートは、Office グループ上での動作を制御するためのものです。|
 
-### メール フォルダー
-<a id="mail-folder" class="xliff"></a>
+### <a name="mail-folder"></a>メール フォルダー
 
 |**変更の種類**|**バージョン**|**説明**|
 |:--------------|:-----------|:--------------|
 |追加|ベータ版|_wellKnownName_ プロパティと _userConfigurations_ プロパティが追加されました。|
 |追加|ベータ版|_singleValueExtendedProperties_ プロパティと _multiValueExtendedProperties_ プロパティが追加されました|
 
-### メッセージ
-<a id="messages" class="xliff"></a>
+### <a name="messages"></a>メッセージ
 
 |**変更の種類**|**バージョン**|**説明**|
 |:--------------|:-----------|:--------------|
@@ -1127,23 +1054,20 @@ Microsoft Graph API に関する既知の問題の詳細については、「[Mi
 |変更|ベータ版|_createForward_ は、新しいパラメーター _Message_、_ToRecipients_、_comment_ を使用します。|
 |変更|ベータ版|_reply_、_replyAll_、_forward_ は、新しいパラメーター _Message_ を使用します。|
 
-### アクセス許可
-<a id="permission" class="xliff"></a>
+### <a name="permission"></a>アクセス許可
 
 |**変更の種類**|**バージョン**|**説明**|
 |:--------------|:-----------|:--------------|
 |追加|v1.0 およびベータ版|このアクセス許可に関連付けられた共有の招待の詳細情報を提供する _sharingInvitation_ プロパティが追加されました。|
 
-### 人物
-<a id="person" class="xliff"></a>
+### <a name="person"></a>人物
 
 |**変更の種類**|**バージョン**|**説明**|
 |:--------------|:-----------|:--------------|
 |追加|ベータ版|新しいプロパティ _birthday_、_personNotes_、_isFavorite_、_phones_、_permission_、_postalAddresses_、_websites_、_yomiCompany_、_department_、_profession_、_mailboxType_、_personType_ が追加されました。|
 |追加|ベータ版|新しい列挙型 _physicalAddressType_、_webSite_、_phone_、_webSiteType_ が追加されました。|
 
-### 参照添付ファイル
-<a id="reference-attachment" class="xliff"></a>
+### <a name="reference-attachment"></a>参照添付ファイル
 
 |**変更の種類**|**バージョン**|**説明**|
 |:--------------|:-----------|:--------------|
@@ -1151,32 +1075,27 @@ Microsoft Graph API に関する既知の問題の詳細については、「[Mi
 |追加|ベータ版|_singleValueExtendedProperties_ プロパティと _multiValueExtendedProperties_ プロパティが追加されました。|
 |追加|ベータ版|新しい列挙型 _referenceAttachmentProvider_ と _referenceAttachmentPermission_ が追加されました。|
 
-### サブスクリプション
-<a id="subscriptions" class="xliff"></a>
+### <a name="subscriptions"></a>サブスクリプション
 
 |**変更の種類**|**エンドポイント**|**説明**|
 |:--------------|:-----------|:--------------|
 |追加|v1.0|Webhooks が、_/Subscriptions_ リソースから V1.0 エンドポイントで一般公開されるようになりました。Outlook と Office 365 のグループ会話からデータに関する通知を受信するためのサブスクリプションを作成、読み取り、更新、削除します。|
 
-### ユーザー
-<a id="user" class="xliff"></a>
+### <a name="user"></a>ユーザー
 
 |**変更の種類**|**バージョン**|**説明**|
 |:--------------|:-----------|:--------------|
 |追加|ベータ版|_mailboxSettings_ プロパティおよび対応する型が追加されました。|
 
-## 2016 年 2 月
-<a id="february-2016" class="xliff"></a>
+## <a name="february-2016"></a>2016 年 2 月
 
-### DriveItem
-<a id="driveitem" class="xliff"></a>
+### <a name="driveitem"></a>DriveItem
 
 |**変更の種類**|**バージョン**|**説明**|
 |:--------------|:-----------|:--------------|
 |追加|v1.0 およびベータ版|Microsoft アカウントに対する driveItem の新しい _remoteItem_ プロパティ。|
 
-### 全般
-<a id="general" class="xliff"></a>
+### <a name="general"></a>全般
 
 |**変更の種類**|**バージョン**|**説明**|
 |:--------------|:-----------|:--------------|
@@ -1184,50 +1103,42 @@ Microsoft Graph API に関する既知の問題の詳細については、「[Mi
 |変更|v1.0 およびベータ版|OneDrive ストレージがオンデマンドでプロビジョニングされたアカウントの Drive 要求は、動作の信頼性がより高くなり、テナントの既定の SharePoint サイトで非標準の名前が使用されるような、より多くのシナリオで動作します。|
 |削除|ベータ版|1.0 スキーマにより厳密に一致するように、実装されていないさまざまな型がベータ スキーマから削除されました。|
 
-### サブスクリプション
-<a id="subscriptions" class="xliff"></a>
+### <a name="subscriptions"></a>サブスクリプション
 
 |**変更の種類**|**バージョン**|**説明**|
 |:--------------|:-----------|:--------------|
 |追加|ベータ版|サブスクリプション作成時の notificationUrl 検証。詳細については、「[Microsoft Graph の WebHooks の更新 - 2016 年 1 月](http://dev.office.com/blogs/Microsoft-Graph-WebHooks-Update-January-2016)」をご覧ください。|
 |追加|ベータ版|サブスクリプション エンティティを削除できるようになりました。DELETE https://graph.microsoft.com/beta/subscriptions/|
 
-### ユーザー
-<a id="users" class="xliff"></a>
+### <a name="users"></a>ユーザー
 
 |**変更の種類**|**バージョン**|**説明**|
 |:--------------|:-----------|:--------------|
 |変更|v1.0 およびベータ版|Microsoft アカウントに対して _displayName_ が返されるようになりました。|
 
-## 2016 年 1 月
-<a id="january-2016" class="xliff"></a>
+## <a name="january-2016"></a>2016 年 1 月
 
-### 連絡先
-<a id="contacts" class="xliff"></a>
+### <a name="contacts"></a>連絡先
 
 |**変更の種類**|**バージョン**|**説明**|
 |:--------------|:-----------|:--------------|
 |追加|v1.0|mobilePhone プロパティが個人用連絡先エンティティ セットに追加されました。|
 
-### directoryObjects
-<a id="directoryobjects" class="xliff"></a>
+### <a name="directoryobjects"></a>directoryObjects
 
 |**変更の種類**|**バージョン**|**説明**|
 |:--------------|:-----------|:--------------|
 |修正|v1.0 およびベータ版|directoryObjects にバインドされている呼び出しアクションが修正されました。このアクションは次のエラーで失敗していました。操作からの戻り値の型は、指定したエンティティ セットで使用できません。これは、次のアクションに適用されます: _microsoft.graph.checkMemberObjects_、_microsoft.graph.getMemberObjects_、_microsoft.graph.checkMemberGroups_、_microsoft.graph.assignLicense_、_microsoft.graph.changePassword_。|
 
-## 2015 年 12 月
-<a id="december-2015" class="xliff"></a>
+## <a name="december-2015"></a>2015 年 12 月
 
-### 連絡先
-<a id="contacts" class="xliff"></a>
+### <a name="contacts"></a>連絡先
 
 |**変更の種類**|**バージョン**|**説明**|
 |:--------------|:-----------|:--------------|
 |追加|ベータ版|mobilePhone プロパティが個人用連絡先エンティティ セットに追加されました。|
 
-### 全般
-<a id="general" class="xliff"></a>
+### <a name="general"></a>全般
 
 |**変更の種類**|**バージョン**|**説明**|
 |:--------------|:-----------|:--------------|
@@ -1238,22 +1149,19 @@ Microsoft Graph API に関する既知の問題の詳細については、「[Mi
 |追加|v1.0 およびベータ版|401 応答の www-authenticate ヘッダーに authorization_uri プロパティが追加されました。この URI は、トークンの取得フローを開始するために使用できます。|
 |追加|v1.0 およびベータ版|ユーザーとグループ全体でエラー メッセージが改善されました。|
 
-### グループ
-<a id="groups" class="xliff"></a>
+### <a name="groups"></a>グループ
 
 |**変更の種類**|**バージョン**|**説明**|
 |:--------------|:-----------|:--------------|
 |修正|v1.0 およびベータ版|次のグループ アクションの呼び出しを修正しました: _microsoft.graph.addFavorite_、_microsoft.graph.removeFavorite_、_microsoft.graph.resetUnseenCount_。|
 
-### メッセージ
-<a id="messages" class="xliff"></a>
+### <a name="messages"></a>メッセージ
 
 |**変更の種類**|**バージョン**|**説明**|
 |:--------------|:-----------|:--------------|
 |追加|ベータ版|eventMessage の eventMessageRequest サブタイプと、startDateTime、endDateTime、location、type、recurrence、isOutOfDate プロパティが、eventMessage 型に追加されました。|
 
-### ユーザー
-<a id="users" class="xliff"></a>
+### <a name="users"></a>ユーザー
 
 |**変更の種類**|**バージョン**|**説明**|
 |:--------------|:-----------|:--------------|

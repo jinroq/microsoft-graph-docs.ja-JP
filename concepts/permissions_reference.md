@@ -1,9 +1,7 @@
-# Microsoft Graph のアクセス許可のリファレンス
-<a id="microsoft-graph-permissions-reference" class="xliff"></a> 
+# <a name="microsoft-graph-permissions-reference"></a>Microsoft Graph のアクセス許可のリファレンス 
 Microsoft Graph は、アプリがアクセスするリソース (ユーザー、グループ、メールなど) を制御する詳細なアクセス許可を公開しています。開発者は、アプリが要求する Microsoft Graph のアクセス許可を決定します。そのアクセス許可に同意するかどうかは、アプリにサインインするときに、ユーザー (場合によっては管理者) が決定します。ユーザーが同意すると、アプリは、そのアプリが必要としているリソースと API にアクセスできるようになります。サインインしているユーザーを必要としないアプリの場合、アクセス許可は、アプリのインストール時またはサインアップ時に管理者が事前に同意できます。 
 
-## 委任されたアクセス許可、アプリケーションのアクセス許可、有効なアクセス許可
-<a id="delegated-permissions-application-permissions-and-effective-permissions" class="xliff"></a>
+## <a name="delegated-permissions-application-permissions-and-effective-permissions"></a>委任されたアクセス許可、アプリケーションのアクセス許可、有効なアクセス許可
 Microsoft Graph には、「**委任されたアクセス許可**」と「**アプリケーションのアクセス許可**」という 2 種類のアクセス許可があります。 
 
 - **委任されたアクセス許可**は、サインインしているユーザーが存在するアプリで使用します。これに該当するアプリの場合は、ユーザーまたは管理者がアプリの要求するアクセス許可に同意します。アプリには、Microsoft Graph の呼び出し時に、サインインしているユーザーとして動作するためのアクセス許可が委任されます。一部の委任されたアクセス許可は非管理ユーザーの同意によって付与されますが、高度な特権が付与されるアクセス許可には管理者の同意が必要になります。  
@@ -16,8 +14,7 @@ _有効なアクセス許可_は、アプリが Microsoft Graph に要求を出�
   
 - アプリケーションのアクセス許可の場合、アプリの_有効なアクセス許可_は、そのアクセス許可が暗示する完全なレベルの権限になります。たとえば、アプリケーションのアクセス許可として _User.ReadWrite.All_ が付与されているアプリは、組織内のすべてのユーザーのプロファイルを更新できます。 
 
-### Microsoft Graph のアクセス許可名
-<a id="microsoft-graph-permission-names" class="xliff"></a>
+### <a name="microsoft-graph-permission-names"></a>Microsoft Graph のアクセス許可名
 Microsoft Graph のアクセス許可名は、「_リソース.操作.制約_」という簡単なパターンに従います。たとえば、_User.Read_ ではサインインしているユーザーのプロファイルを読み取るためのアクセス許可を付与し、_User.ReadWrite_ ではサインインしているユーザーのプロファイルを読み取りおよび変更するためのアクセス許可を付与します。また、_Mail.Send_ ではサインインしているユーザーの代わりにメールを送信するためのアクセス許可を付与します。 
 
 名前の_制約_要素は、ディレクトリ内でアプリがアクセスする可能性のある範囲を決定します。現在、Microsoft Graph は次に示す制約をサポートしています。 
@@ -30,23 +27,19 @@ Microsoft Graph のアクセス許可名は、「_リソース.操作.制約_」
 > **注**:委任されたシナリオでは、アプリに付与される有効なアクセス許可が、組織内のサインインしているユーザーの特権によって制限されることがあります。
 > 
 
-### Microsoft アカウントと職場または学校アカウント
-<a id="microsoft-accounts-and-work-or-school-accounts" class="xliff"></a>
+### <a name="microsoft-accounts-and-work-or-school-accounts"></a>Microsoft アカウントと職場または学校アカウント
 
 すべてのアクセス許可が、Microsoft アカウントと職場または学校アカウントの両方で有効になるわけではない点に注意してください。それぞれのアクセス許可グループの「**備考**」を確認して、特定のアクセス許可が Microsoft アカウントと職場または学校アカウントのどちらで有効になるか、または両方で有効になるかを判断してください。 
 
-### 組織のゲスト ユーザーに対するユーザーとグループの検索の制限事項
-<a id="user-and-group-search-limitations-for-guest-users-in-organizations" class="xliff"></a>
+### <a name="user-and-group-search-limitations-for-guest-users-in-organizations"></a>組織のゲスト ユーザーに対するユーザーとグループの検索の制限事項
 
 ユーザーとグループの検索機能を使用すると、`/users` または `/groups` リソース セットに対するクエリ (例: `https://graph.microsoft.com/v1.0/users`) を実行して、アプリで組織のディレクトリ内のユーザーまたはグループを検索できるようになります管理者とユーザーは、どちらもこの機能を使用でますが、ゲスト ユーザーは使用できません。サインインしているユーザーがゲスト ユーザーの場合、アプリに付与されたアクセス許可に応じて、特定のユーザーまたはグループのプロファイルを読み取ることはできますが (例: `https://graph.microsoft.com/v1.0/users/241f22af-f634-44c0-9a15-c8cd2cea5531`)、複数のリソースを返す可能性のある `/users` または `/groups` リソース セットに対するクエリは実行できません。適切なアクセス許可があるアプリは、ナビゲーション プロパティのリンク (たとえば、`/users/{id}/directReports` や `/groups/{id}/members`) に従って取得するユーザーまたはグループのプロファイルの読み取りが可能になります。
 
 ---
 
-## カレンダーのアクセス許可
-<a id="calendars-permissions" class="xliff"></a>
+## <a name="calendars-permissions"></a>カレンダーのアクセス許可
 
-#### 委任されたアクセス許可
-<a id="delegated-permissions" class="xliff"></a>
+#### <a name="delegated-permissions"></a>委任されたアクセス許可
 
 |   アクセス許可    |  表示文字列   |  説明 | 管理者の同意の要不要 |
 |:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
@@ -55,31 +48,26 @@ Microsoft Graph のアクセス許可名は、「_リソース.操作.制約_」
 | _Calendars.ReadWrite_ |    ユーザーのカレンダーへのフル アクセス  | ユーザーのカレンダー内のイベントをアプリで作成、読み取り、更新、削除できるようにします。 | 不要 |
 | _Calendars.ReadWrite.Shared_ |    ユーザーのカレンダーと共有のカレンダーの読み取りと書き込み | アプリで、ユーザーがアクセス許可を得ているすべてのカレンダー内のイベントを作成、読み取り、更新、および削除できるようにします。これには、委任されたカレンダーと共有のカレンダーが含まれます。| 不要 |
 
-#### アプリケーションのアクセス許可
-<a id="application-permissions" class="xliff"></a>
+#### <a name="application-permissions"></a>アプリケーションのアクセス許可
 
 |   アクセス許可    |  表示文字列   |  説明 | 管理者の同意の要不要 |
 |:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
 | _Calendars.Read_ |    すべてのメールボックスにあるカレンダーの読み取り  | サインインしているユーザーなしで、すべてのカレンダーのイベントをアプリで読み取れるようにします。| 必要 |
 | _Calendars.ReadWrite_ |    すべてのメールボックスにあるカレンダーの読み取りと書き込み | サインインしているユーザーなしで、すべての予定表のイベントをアプリで作成、読み取り、更新、および削除できるようにします。| 必要 |
 
-### 注釈
-<a id="remarks" class="xliff"></a>
+### <a name="remarks"></a>注釈
 
 _Calendars.Read.Shared_ および _Calendars.ReadWrite.Shared_ は、職場または学校アカウントでのみ有効です。その他すべてのアクセス許可は、Microsoft アカウントと職場または学校アカウントのどちらでも有効です。
 
-### 使用例
-<a id="example-usage" class="xliff"></a>
+### <a name="example-usage"></a>使用例
 
-#### 委任
-<a id="delegated" class="xliff"></a>
+#### <a name="delegated"></a>委任
 
 * _Calendars.Read_: ユーザーのカレンダーについて、2017 年 4 月 23 日から 2017 年 4 月 29 日までのイベントを取得します (`GET /me/calendarView?startDateTime=2017-04-23T00:00:00&endDateTime=2017-04-29T00:00:00`)。
 * _Calendars.Read.Shared_: すべての出席者が出席可能な会議の日時を検索します (`POST /users/{id|userPrincipalName}/findMeetingTimes`)。
 * _Calendars.ReadWrite_: ユーザーの予定表にイベントを追加します (`POST /me/events`)。
 
-#### アプリケーション
-<a id="application" class="xliff"></a>
+#### <a name="application"></a>アプリケーション
 
 * _Calendars.Read_: bob@contoso.com が編成した会議室のカレンダーのイベントを検索します (`GET /users/{id | userPrincipalName}/events?$filter=organizer/emailAddress/address eq 'bob@contoso.com'`)。
 * _Calendars.Read_: ユーザーのカレンダーにある 5 月のイベントをすべてリストします (`GET /users/{id | userPrincipalName}/calendarView?startDateTime=2017-05-01T00:00:00&endDateTime=2017-06-01T00:00:00`)
@@ -91,11 +79,9 @@ _Calendars.Read.Shared_ および _Calendars.ReadWrite.Shared_ は、職場ま�
 
 ---
 
-## 連絡先のアクセス許可
-<a id="contacts-permissions" class="xliff"></a>
+## <a name="contacts-permissions"></a>連絡先のアクセス許可
 
-#### 委任されたアクセス許可
-<a id="delegated-permissions" class="xliff"></a>
+#### <a name="delegated-permissions"></a>委任されたアクセス許可
 
 |   アクセス許可    |  表示文字列   |  説明 | 管理者の同意の要不要 |
 |:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
@@ -104,29 +90,24 @@ _Calendars.Read.Shared_ および _Calendars.ReadWrite.Shared_ は、職場ま�
 | _Contacts.ReadWrite_ |    ユーザーの連絡先へのフル アクセス  | アプリで、ユーザーの連絡先の作成、読み取り、更新、削除を行えるようにします。 | 不要 |
 | _Contacts.ReadWrite.Shared_ |    ユーザーの連絡先と共有の連絡先の読み取りと書き込み | アプリで、ユーザー自身の連絡先と共有の連絡先を含むユーザーがアクセス許可を得ている連絡先の作成、読み取り、更新、削除を行えるようにします。| 不要 |
 
-#### アプリケーションのアクセス許可
-<a id="application-permissions" class="xliff"></a>
+#### <a name="application-permissions"></a>アプリケーションのアクセス許可
 
 |   アクセス許可    |  表示文字列   |  説明 | 管理者の同意の要不要 |
 |:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
 | _Contacts.Read_ |    すべてのメールボックスにある連絡先の読み取り | サインインしているユーザーなしで、すべてのメールボックス内のすべての連絡先をアプリで読み取りできるようにします。 | 必要 |
 | _Contacts.ReadWrite_ |    すべてのメールボックスにある連絡先の読み取りと書き込み  |サインインしているユーザーなしで、すべてのメールボックス内のすべての連絡先をアプリで作成、読み取り、更新、および削除できるようにします。| 必要 |
 
-### 備考
-<a id="remarks" class="xliff"></a>
+### <a name="remarks"></a>備考
 Microsoft アカウントでは、委任されたアクセス許可の _Contacts.Read_ および _Contacts.ReadWrite_ のみが有効です。 
 
-### 使用例
-<a id="example-usage" class="xliff"></a>
-#### 委任
-<a id="delegated" class="xliff"></a>
+### <a name="example-usage"></a>使用例
+#### <a name="delegated"></a>委任
 
 * _Contacts.Read_: サインインしているユーザーの最上位レベルの連絡先フォルダーの 1 つから連絡先を読み取ります (`GET /me/contactfolders/{Id}/contacts/{id}`)。
 * _Contacts.ReadWrite_: サインインしているユーザーの連絡先のうち、1 つの連絡先の写真を更新します (`PUT /me/contactfolders/{contactFolderId}/contacts/{id}/photo/$value`)。 
 * _Contacts.ReadWrite_: サインインしているユーザーのルート フォルダーに連絡先を追加します (`POST /me/contacts`)。
 
-#### アプリケーション
-<a id="application" class="xliff"></a>
+#### <a name="application"></a>アプリケーション
 
 * _Contacts.Read_: 組織内の任意のユーザーの最上位レベルの 1 つのフォルダーから連絡先を読み取ります (`GET /users/{id | userPrincipalName}/contactfolders/{Id}/contacts/{id}`)。 
 * _Contacts.ReadWrite_: 組織内の任意のユーザーの連絡先の写真を更新します (`PUT /user/{id | userPrincipalName}/contactfolders/{contactFolderId}/contacts/{id}/photo/$value`)。 
@@ -136,11 +117,9 @@ Microsoft アカウントでは、委任されたアクセス許可の _Contacts
 
 ---
 
-## デバイス アクセス許可
-<a id="device-permissions" class="xliff"></a>
+## <a name="device-permissions"></a>デバイス アクセス許可
 
-#### 委任されたアクセス許可
-<a id="delegated-permissions" class="xliff"></a>
+#### <a name="delegated-permissions"></a>委任されたアクセス許可
 
 |   アクセス許可    |  表示文字列   |  説明 | 管理者の同意が必要 |
 |:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
@@ -148,22 +127,18 @@ Microsoft アカウントでは、委任されたアクセス許可の _Contacts
 | _Device.Command_ | ユーザーのデバイスとの通信 | サインインしているユーザーの代わりに、アプリで、別のアプリを起動するか、ユーザーのデバイス上にある別のアプリと通信できるようにします。 | いいえ |
 
 
-#### アプリケーションのアクセス許可
-<a id="application-permissions" class="xliff"></a>
+#### <a name="application-permissions"></a>アプリケーションのアクセス許可
 
 |   アクセス許可    |  表示文字列   |  説明 | 管理者の同意の要不要 |
 |:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
 | _Device.ReadWrite.All_ | デバイスの読み取りと書き込み | アプリで、サインインしているユーザーなしで、すべてのデバイス プロパティの読み取りと書き込みができるようにします。デバイスの作成、デバイスの削除、デバイスの代替セキュリティ識別子の更新はできません。 | 必要 |
 
-### 備考
-<a id="remarks" class="xliff"></a>
+### <a name="remarks"></a>備考
 
 委任されたアクセス許可の _Device.Read_ と _Device.Command_ は、個人用の Microsoft アカウントに対してのみ有効です。
 
-### 使用例
-<a id="example-usage" class="xliff"></a>
-#### アプリケーション
-<a id="application" class="xliff"></a>
+### <a name="example-usage"></a>使用例
+#### <a name="application"></a>アプリケーション
 
 * _Device.ReadWrite.All_: 組織内のすべての登録済デバイスを読み取ります (`GET /devices`)。
 
@@ -171,16 +146,13 @@ Microsoft アカウントでは、委任されたアクセス許可の _Contacts
 
 ---
 
-## Microsoft Intune デバイス管理のアクセス許可
-<a id="microsoft-intune-device-management-permissions" class="xliff"></a>
+## <a name="microsoft-intune-device-management-permissions"></a>Microsoft Intune デバイス管理のアクセス許可
 
-#### 委任されたアクセス許可
-<a id="delegated-permissions" class="xliff"></a>
+#### <a name="delegated-permissions"></a>委任されたアクセス許可
 
 なし。
 
-#### アプリケーションのアクセス許可
-<a id="application-permissions" class="xliff"></a>
+#### <a name="application-permissions"></a>アプリケーションのアクセス許可
 
 |   アクセス許可    |  表示文字列   |  説明 | 管理者の同意の要不要 |
 |:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
@@ -196,16 +168,13 @@ Microsoft アカウントでは、委任されたアクセス許可の _Contacts
 | _DeviceManagementManagedDevices.ReadWrite.All_ | Microsoft Intune デバイスの読み取りおよび書き込み (プレビュー) | アプリで、Microsoft Intune で管理されるデバイスのプロパティを読み書きできるようにします。リモート ワイプやデバイスの所有者のパスワードのリセットなど、影響の大きい操作は許可されません。 | 必要 |
 | _DeviceManagementManagedDevices.PrivilegedOperations.All_ | Microsoft Intune デバイスでユーザーに影響を与えるリモート操作を実行する (プレビュー) | アプリで、デバイスのワイプや Microsoft Intune で管理されるデバイスのパスコードのリセットなど、影響の大きいリモート操作を実行できるようにします。 | 必要 |
 
-### 注釈
-<a id="remarks" class="xliff"></a>
+### <a name="remarks"></a>注釈
 > **注:**Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
 
 これらのアクセス許可は、職場または学校アカウントでのみ有効です。
 
-### 使用例
-<a id="example-usage" class="xliff"></a>
-#### アプリケーション
-<a id="application" class="xliff"></a>
+### <a name="example-usage"></a>使用例
+#### <a name="application"></a>アプリケーション
 
 * _DeviceManagementServiceConfiguration.Read.All_: Intune サブスクリプションの現在の状態を確認します (`GET /deviceManagement/subscriptionState`)。
 * _DeviceManagementServiceConfiguration.ReadWrite.All_: 新しい条項および条件を作成します (`POST /deviceManagement/termsAndConditions`)
@@ -223,11 +192,9 @@ Microsoft アカウントでは、委任されたアクセス許可の _Contacts
 
 ---
 
-## ディレクトリのアクセス許可
-<a id="directory-permissions" class="xliff"></a>
+## <a name="directory-permissions"></a>ディレクトリのアクセス許可
 
-#### 委任されたアクセス許可
-<a id="delegated-permissions" class="xliff"></a>
+#### <a name="delegated-permissions"></a>委任されたアクセス許可
 
 |   アクセス許可    |  表示文字列   |  説明 | 管理者の同意の要不要 |
 |:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
@@ -235,16 +202,14 @@ Microsoft アカウントでは、委任されたアクセス許可の _Contacts
 | _Directory.ReadWrite.All_      |     ディレクトリ データの読み取りおよび書き込み           | アプリで、ユーザーやグループなどの組織のディレクトリ内のデータを読み書きできるようにします。アプリでユーザーまたはグループの削除や、ユーザー パスワードのリセットはできません。 | はい |
 | _Directory.AccessAsUser.All_   |     ディレクトリに対するサインインしたユーザーと同じアクセス  | サインインしているユーザーと同じように、アプリでディレクトリ内の情報にアクセスできるようにします。| 必要 |
 
-#### アプリケーションのアクセス許可
-<a id="application-permissions" class="xliff"></a>
+#### <a name="application-permissions"></a>アプリケーションのアクセス許可
 
 |   アクセス許可    |  表示文字列   |  説明 | 管理者の同意の要不要 |
 |:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
 | _Directory.Read.All_ | ディレクトリ データの読み取り | サインインしているユーザーなしで、ユーザー、グループ、アプリなどの組織のディレクトリ内のデータをアプリで読み取りできるようにします。 | 必要 |
 | _Directory.ReadWrite.All_ | ディレクトリ データの読み取りおよび書き込み | アプリで、サインインしているユーザーなしで、ユーザー、グループなどの組織のディレクトリ内のデータを読み取りと書き込みができるようにします。ユーザーまたはグループの削除はできません。 | 必要 |
 
-### 備考
-<a id="remarks" class="xliff"></a>
+### <a name="remarks"></a>備考
 ディレクトリのアクセス許可は、Microsoft アカウントではサポートされていません。 
 
  ディレクトリのアクセス許可は、組織内のディレクトリ リソース ([ユーザー](../api-reference/v1.0/resources/user.md)、[グループ](../api-reference/v1.0/resources/group.md)、[デバイス](../api-reference/v1.0/resources/device.md)など) に対する最上位レベルの特権を提供します。また、その他のディレクトリ ソースへのアクセスを排他的に制御します。このリソースには、[組織の連絡先](../api-reference/beta/resources/orgcontact.md)、[スキーマ拡張 API](../api-reference/beta/resources/schemaextension.md)、[Privileged Identity Management (PIM) API](../api-reference/beta/resources/privilegedidentitymanagement_root.md) などに加え、v1.0 およびベータの API リファレンス ドキュメントの **Azure Active Directory** ノードにリストされる多数のリソースや API があります。これには、管理単位、ディレクトリ ロール、ディレクトリ設定など多くのものが含まれます。 
@@ -265,15 +230,12 @@ _Directory.ReadWrite.All_ アクセス許可は、次に示す特権を付与し
 - **注**:具体的には、上記の一覧に示されていないリソースの作成と更新が除外されます。これには、application、oAauth2Permissiongrant、appRoleAssignment、device、servicePrincipal、organization、domains などが含まれます。
  
 
-### 使用例
-<a id="example-usage" class="xliff"></a>
-#### 委任
-<a id="delegated" class="xliff"></a>
+### <a name="example-usage"></a>使用例
+#### <a name="delegated"></a>委任
 * _Directory.Read.All_: 組織内のすべての管理単位をリストします (`GET /beta/administrativeUnits`)
 * _Directory.ReadWrite.All_: ディレクトリ ロールにメンバーを追加します (`POST /directoryRoles/{id}/members/$ref`)
 
-#### アプリケーション
-<a id="application" class="xliff"></a>
+#### <a name="application"></a>アプリケーション
 * _Directory.Read.All_: ディレクトリ ロールと管理単位を含むユーザーのメンバーシップをすべてリストします (`GET /beta/users/{id}/memberOf`)
 * _Directory.Read.All_: サービス プリンシパルを含むグループ メンバーをすべてリストします (`GET /beta/groups/{id}/members`)
 * _Directory.ReadWrite.All_: グループに所有者を追加します (`POST /groups/{id}/owners/$ref`)
@@ -283,11 +245,9 @@ _Directory.ReadWrite.All_ アクセス許可は、次に示す特権を付与し
 
 ---
 
-## ファイルのアクセス許可
-<a id="files-permissions" class="xliff"></a>
+## <a name="files-permissions"></a>ファイルのアクセス許可
 
-#### 委任されたアクセス許可
-<a id="delegated-permissions" class="xliff"></a>
+#### <a name="delegated-permissions"></a>委任されたアクセス許可
 
 |   アクセス許可    |  表示文字列   |  説明 | 管理者の同意の要不要 |
 |:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
@@ -299,16 +259,14 @@ _Directory.ReadWrite.All_ アクセス許可は、次に示す特権を付与し
 | _Files.Read.Selected_ |    ユーザーが選んだファイルの読み取り (プレビュー) | **Microsoft Graph の限定的なサポート (「備考」を参照)** <br/> (プレビュー) ユーザーが選んだファイルをアプリで読み取りできるようにします。アプリは、ユーザーがファイルを選んでから数時間後までアクセス許可を持ちます。 | いいえ |
 | _Files.ReadWrite.Selected_ |    ユーザーが選んだファイルの読み取りと書き込み (プレビュー) | **Microsoft Graph の限定的なサポート (「備考」を参照)** <br/> (プレビュー) ユーザーが選んだファイルをアプリで読み書きできるようにします。アプリは、ユーザーがファイルを選んでから数時間後までアクセス許可を持ちます。 | いいえ |
 
-#### アプリケーションのアクセス許可
-<a id="application-permissions" class="xliff"></a>
+#### <a name="application-permissions"></a>アプリケーションのアクセス許可
 
 |   アクセス許可    |  表示文字列   |  説明 | 管理者の同意の要不要 |
 |:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
 | _Files.Read.All_ | すべてのサイト コレクションにおけるファイルの読み取り (プレビュー) | (プレビュー) サインインしているユーザーなしで、すべてのサイト コレクション内のすべてのファイルをアプリで読み取れるようにします。 | 必要 |
 | _Files.ReadWrite.All_ | すべてのサイト コレクションにおけるファイルの読み取りと書き込み (プレビュー) | **Microsoft Graph の限定的なサポート** <br/> (プレビュー) サインインしているユーザーなしで、すべてのサイトコレクション内のすべてのファイルをアプリで読み取り、作成、更新、および削除できるようにします。 | 必要 |
 
-### 注釈
-<a id="remarks" class="xliff"></a>
+### <a name="remarks"></a>注釈
 
 委任されたアクセス許可の Files.Read、Files.ReadWrite、Files.Read.All、および Files.ReadWrite.All は、個人用の Microsoft アカウントと職場または学校アカウントの両方で有効です。個人用アカウントの場合、Files.Read および Files.ReadWrite はサインインしているユーザーと共有しているファイルへのアクセスも許可される点に注意してください。 
 
@@ -318,10 +276,8 @@ _Directory.ReadWrite.All_ アクセス許可は、次に示す特権を付与し
 
 アプリケーションアクセス許可の Files.ReadWrite.All は、OneDrive の[再開可能なアップロード セッションを作成する ](../api-reference/v1.0/api/item_createuploadsession.md) Microsoft Graph API では、まだサポートされていません。近日中にフル サポートされる予定です。 
 
-### 使用例
-<a id="example-usage" class="xliff"></a>
-#### 委任
-<a id="delegated" class="xliff"></a>
+### <a name="example-usage"></a>使用例
+#### <a name="delegated"></a>委任
 
 * _Files.Read_: サインインしているユーザーの OneDrive に保存されているファイルを読み取ります (`GET /me/drive/root/children`)
 * _Files.Read.All_: サインインしているユーザーと共有しているファイルを読み取ります (`GET /me/drive/root/sharedWithMe`)
@@ -333,19 +289,16 @@ _Directory.ReadWrite.All_ アクセス許可は、次に示す特権を付与し
 
 ---
 
-## グループのアクセス許可
-<a id="group-permissions" class="xliff"></a>
+## <a name="group-permissions"></a>グループのアクセス許可
 
-#### 委任されたアクセス許可
-<a id="delegated-permissions" class="xliff"></a>
+#### <a name="delegated-permissions"></a>委任されたアクセス許可
 
 |   アクセス許可    |  表示文字列   |  説明 | 管理者の同意の要不要 |
 |:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
 | _Group.Read.All_ |    すべてのグループの読み取り | アプリで、サインインしているユーザーの代わりに、グループを一覧表示し、グループのプロパティとすべてのグループ メンバーシップを読み取ることができるようにします。アプリで、サインインしているユーザーがアクセスできるすべてのグループの予定表、会話、ファイル、およびその他のグループのコンテンツを読み取ることができるようにします。 | 必要 |
 | _Group.ReadWrite.All_ |    すべてのグループの読み取りと書き込み| アプリで、サインインしているユーザーの代わりに、グループを作成したり、すべてのグループのプロパティとメンバーシップを読み取ったりできるようにします。さらに、グループの所有者が自身のグループを管理できるよう、またグループ メンバーがグループのコンテンツを更新できるようにします。 | 必要 |
 
-#### アプリケーションのアクセス許可
-<a id="application-permissions" class="xliff"></a>
+#### <a name="application-permissions"></a>アプリケーションのアクセス許可
 
 |   アクセス許可    |  表示文字列   |  説明 | 管理者の同意の要不要 |
 |:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
@@ -353,8 +306,7 @@ _Directory.ReadWrite.All_ アクセス許可は、次に示す特権を付与し
 | _Group.ReadWrite.All_ | すべてのグループの読み取りと書き込み | アプリで、グループの作成、グループ メンバーシップの読み取りと更新、グループの削除ができるようにします。これらの操作はすべて、サインインしているユーザーなしで、アプリで実行できます。すべてのグループ API が、アプリ専用のアクセス許可を使用したアクセスをサポートするわけではないことに注意してください。例については、「[既知の問題](../concepts/known_issues.md)」を参照してください。| 必要 |
 
 
-### 備考
-<a id="remarks" class="xliff"></a>
+### <a name="remarks"></a>備考
 
 グループ機能は、Microsoft アカウントではサポートされません。 
 
@@ -364,18 +316,15 @@ Office 365 グループの場合は、グループのアクセス許可により
 
 場合によっては、アプリは一部のグループ プロパティ (`member` や `memberOf` など) の読み取りに[ディレクトリのアクセス許可](#directory-permissions)を必要とすることがあります。たとえば、グループにメンバーとして 1 つ以上の [servicePrincipals](../api-reference/beta/resources/serviceprincipal.md) が含まれている場合、アプリは _Directory.\*_ アクセス許可のいずれかによって付与されるサービス プリンシパルを読み取るための有効なアクセス許可が必要になります。このアクセス許可がない場合、Microsoft Graph はエラーを返します (委任されたアクセス許可の場合、サインインしているユーザーも、サービス プリンシパルを読み取るために、組織内の十分な権限が必要です)。同様のガイダンスは、[administrativeUnits](../api-reference/beta/resources/administrativeunit.md) を返す `memberOf` プロパティにも当てはまります。
 
-### 使用例
-<a id="example-usage" class="xliff"></a>
-#### 委任
-<a id="delegated" class="xliff"></a>
+### <a name="example-usage"></a>使用例
+#### <a name="delegated"></a>委任
 
 * _Group.Read.All_: サインインしているユーザーがメンバーになっているすべての Office 365 グループを読み取ります (`GET /me/memberOf/$/microsoft.graph.group?$filter=groupTypes/any(a:a%20eq%20'unified')`)。
 * _Group.Read.All_: すべての Office 365 グループ コンテンツ (会話など) を読み取ります (`GET /groups/{id}/conversations`)。
 * _Group.ReadWrite.All_: グループ プロパティ (photo など) を更新します (`PUT /groups/{id}/photo/$value`)。
 * _Group.ReadWrite.All_: グループ メンバーを更新します (`POST /groups/{id}/members/$ref`)。注:これには、メンバーとして追加するユーザーを読み取るための _User.ReadBasic.All_ も必要になります。
 
-#### アプリケーション
-<a id="application" class="xliff"></a>
+#### <a name="application"></a>アプリケーション
 
 * _Group.Read.All_: 名前が 'Sales' で始まるグループをすべて検索します (`GET /groups?$filter=startswith(displayName,'Sales')`)。
 * _Group.ReadWrite.All_: デーモン サービスにより、Office 365 グループの予定表に新しいイベントを作成します (`POST /groups/{id}/events`)。
@@ -384,33 +333,27 @@ Office 365 グループの場合は、グループのアクセス許可により
 
 ---
 
-## ID リスク イベントのアクセス許可
-<a id="identity-risk-event-permissions" class="xliff"></a>
+## <a name="identity-risk-event-permissions"></a>ID リスク イベントのアクセス許可
 
-#### 委任されたアクセス許可
-<a id="delegated-permissions" class="xliff"></a>
+#### <a name="delegated-permissions"></a>委任されたアクセス許可
 
 |   アクセス許可    |  表示文字列   |  説明 | 管理者の同意の要不要 |
 |:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
 | _IdentityRiskEvent.Read.All_ |   ID リスク イベント情報の読み取り  | アプリで、サインインしているユーザーの代わりに、組織内のすべてのユーザーの ID リスク イベント情報を読み取れるようにします。 | 必要 |
 
-#### アプリケーションのアクセス許可
-<a id="application-permissions" class="xliff"></a>
+#### <a name="application-permissions"></a>アプリケーションのアクセス許可
 
 |   アクセス許可    |  表示文字列   |  説明 | 管理者の同意の要不要 |
 |:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
 | _IdentityRiskEvent.Read.All_ |   ID リスク イベント情報の読み取り | サインインしているユーザーなしで、組織内のすべてのユーザーの ID リスク イベント情報をアプリで読み取れるようにします。 | 必要 |
 
 
-### 注釈
-<a id="remarks" class="xliff"></a>
+### <a name="remarks"></a>注釈
 
 _IdentityRiskEvent.Read.All_ は、職場または学校アカウントでのみ有効です。委任されたアクセス許可があるアプリの場合、ID リスク情報を読み取るには、サインインしているユーザーが「全体管理者」、「セキュリティ管理者」、または「セキュリティ閲覧者」のいずれかの管理者ロールのメンバーになっている必要があります。管理者ロールの詳細については、「[Azure Active Directory での管理者ロールの割り当て](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles)」を参照してください。
 
-### 使用例
-<a id="example-usage" class="xliff"></a>
-#### 委任およびアプリケーション
-<a id="delegated-and-application" class="xliff"></a>
+### <a name="example-usage"></a>使用例
+#### <a name="delegated-and-application"></a>委任およびアプリケーション
 次に示す使用法は、委任されたアクセス許可とアプリケーションのアクセス許可のどちらでも有効です。
 
 * テナント内のすべてのユーザーに対して生成されたすべてのリスク イベントを読み取ります (`GET /beta/identityRiskEvents`)
@@ -421,11 +364,9 @@ _IdentityRiskEvent.Read.All_ は、職場または学校アカウントでのみ
 
 ---
 
-## メールのアクセス許可
-<a id="mail-permissions" class="xliff"></a>
+## <a name="mail-permissions"></a>メールのアクセス許可
 
-#### 委任されたアクセス許可
-<a id="delegated-permissions" class="xliff"></a>
+#### <a name="delegated-permissions"></a>委任されたアクセス許可
 
 |   アクセス許可    |  表示文字列   |  説明 | 管理者の同意の要不要 |
 |:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
@@ -438,8 +379,7 @@ _IdentityRiskEvent.Read.All_ は、職場または学校アカウントでのみ
 | _MailboxSettings.Read_ |  ユーザーのメールボックス設定の読み取り | ユーザーのメールボックス設定をアプリで読み取れるようにします。メールを送信するためのアクセス許可は含まれません。 | いいえ |
 | _MailboxSettings.ReadWrite_ |  ユーザーのメールボックス設定の読み取りと書き込み | アプリで、ユーザーのメールボックス設定の作成、読み取り、更新、削除を行えるようにします。メールを送信するためのアクセス許可は含まれません。 | いいえ |
 
-#### アプリケーションのアクセス許可
-<a id="application-permissions" class="xliff"></a>
+#### <a name="application-permissions"></a>アプリケーションのアクセス許可
 
 |   アクセス許可    |  表示文字列   |  説明 | 管理者の同意の要不要 |
 |:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
@@ -449,18 +389,15 @@ _IdentityRiskEvent.Read.All_ は、職場または学校アカウントでのみ
 | _MailboxSettings.Read_ |  すべてのユーザーのメールボックス設定の読み取り | サインインしているユーザーなしで、ユーザーのメールボックス設定をアプリで読み取れるようにします。メールを送信するためのアクセス許可は含まれません。 | いいえ |
 | _MailboxSettings.ReadWrite_ | ユーザーのすべてのメールボックス設定の読み取りと書き込み  | サインインしているユーザーなしで、アプリでユーザーのメールボックス設定の作成、読み取り、更新、削除を行えるようにします。メールを送信するためのアクセス許可は含まれません。 | はい |
 
-### 注釈
-<a id="remarks" class="xliff"></a>
+### <a name="remarks"></a>注釈
 
 _Mail.Read.Shared_、_Mail.ReadWrite.Shared_、および _Mail.Send.Shared_ は、職場または学校アカウントでのみ有効です。その他すべてのアクセス許可は、Microsoft アカウントと職場または学校アカウントのどちらでも有効です。
 
 アクセス許可の _Mail.Send_ または _Mail.Send.Shared_ があるアプリは、対応するアクセス許可の _Mail.ReadWrite_ または _Mail.ReadWrite.Shared_ を使用しない場合でも、メールの送信とユーザーの [送信済みアイテム] フォルダーへのコピーが可能になります。
 
-### 使用例
-<a id="example-usage" class="xliff"></a>
+### <a name="example-usage"></a>使用例
 
-#### 委任
-<a id="delegated" class="xliff"></a>
+#### <a name="delegated"></a>委任
 
 * _Mail.Read_: ユーザーのメールボックス内のメッセージを `receivedDateTime` で並べ替えてリストします (`GET /me/mailfolders/inbox/messages?$orderby=receivedDateTime DESC`)。
 * _Mail.Read.Shared_: サインインしているユーザーと受信トレイを共有しているユーザーのメールボックス内にある添付ファイル付きのメッセージをすべて検索します (`GET /users{id | userPrincipalName}/mailfolders/inbox/messages?$filter=hasAttachments eq true`)。
@@ -468,8 +405,7 @@ _Mail.Read.Shared_、_Mail.ReadWrite.Shared_、および _Mail.Send.Shared_ は�
 * _Mail.Send_: メッセージを送信します (`POST /me/sendmail`)。
 * _MailboxSettings.ReadWrite_: ユーザーの自動応答を更新します (`PATCH /me/mailboxSettings`)。
 
-#### アプリケーション
-<a id="application" class="xliff"></a>
+#### <a name="application"></a>アプリケーション
 
 * _Mail.Read_: bob@contoso.com からメッセージを検索します (`GET /users/{id | userPrincipalName}/messages?$filter=from/emailAddress/address eq 'bob@contoso.com'`)。
 * _Mail.ReadWrite_: `Expense Reports` という名前の受信トレイに新しいフォルダーを作成します (`POST /users/{id | userPrincipalName}/mailfolders`)。
@@ -481,30 +417,24 @@ _Mail.Read.Shared_、_Mail.ReadWrite.Shared_、および _Mail.Send.Shared_ は�
 
 ---
 
-## メンバーのアクセス許可
-<a id="member-permissions" class="xliff"></a>
+## <a name="member-permissions"></a>メンバーのアクセス許可
 
-#### 委任されたアクセス許可
-<a id="delegated-permissions" class="xliff"></a>
+#### <a name="delegated-permissions"></a>委任されたアクセス許可
 
 なし。
 
-#### アプリケーションのアクセス許可
-<a id="application-permissions" class="xliff"></a>
+#### <a name="application-permissions"></a>アプリケーションのアクセス許可
 
 |   アクセス許可    |  表示文字列   |  説明 | 管理者の同意の要不要 |
 |:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
 | _Member.Read.Hidden_ | すべての非表示のメンバーシップの読み取り | サインインしているユーザーなしで、非表示のグループのメンバーシップと管理単位をアプリで読み取れるようにします。 | 必要 |
 
-### 注釈
-<a id="remarks" class="xliff"></a>
+### <a name="remarks"></a>注釈
 一部の Office 365 グループのメンバーシップは非表示にできます。これは、そのメンバーを表示できるのは、そのグループのメンバーのみになるということです。この機能は、部外者にはグループのメンバーシップを隠すことを要求する組織の規制に従う際に役立ちます (たとえば、クラスに登録した学生を表す Office 365 グループなど)。
 
-### 使用例
-<a id="example-usage" class="xliff"></a>
+### <a name="example-usage"></a>使用例
 
-#### アプリケーション
-<a id="application" class="xliff"></a>
+#### <a name="application"></a>アプリケーション
 
 * _Member.Read.Hidden_: メンバーシップが非表示になっている管理単位のメンバーを読み取ります (`GET /administrativeUnits/{id}/members`)。
 * _Member.Read.Hidden_: メンバーシップが非表示になっているグループのメンバーを読み取ります (`GET /groups/{id}/members`)。
@@ -513,10 +443,8 @@ _Mail.Read.Shared_、_Mail.ReadWrite.Shared_、および _Mail.Send.Shared_ は�
 
 ---
 
-## メモのアクセス許可
-<a id="notes-permissions" class="xliff"></a>
-#### 委任されたアクセス許可
-<a id="delegated-permissions" class="xliff"></a>
+## <a name="notes-permissions"></a>メモのアクセス許可
+#### <a name="delegated-permissions"></a>委任されたアクセス許可
 
 |   アクセス許可    |  表示文字列   |  説明 | 管理者の同意の要不要 |
 |:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
@@ -525,10 +453,9 @@ _Mail.Read.Shared_、_Mail.ReadWrite.Shared_、および _Mail.Send.Shared_ は�
 | _Notes.ReadWrite_ |    ユーザーの OneNote ノートブックの読み取りと書き込み | サインインしているユーザーの代わりに、アプリで OneNote ノートブックの読み取り、共有、および変更を実行できるようにします。 | 不要 |
 | _Notes.Read.All_ |    ユーザーがアクセスできるすべての OneNote ノートブックの読み取り | サインインしているユーザーがアクセスできる組織内の OneNote ノートブックをアプリで読み取れるようにします。 | 不要 |
 | _Notes.ReadWrite.All_ |    ユーザーがアクセスできるすべての OneNote ノートブックの読み取りと書き込み | サインインしているユーザーがアクセスできる組織内の OneNote ノートブックの読み取り、共有、および変更をアプリで実行できるようにします。| 不要 |
-| _Notes.ReadWrite.CreatedByApp_ |    ノートブックへの限定的なアクセス (非推奨) | **非推奨** <br/>使用しないでください。このアクセス許可によって付与される特権はありません。 | 不要 |
+| _Notes.ReadWrite.CreatedByApp_ |    ノートブックへの限定的なアクセス (非推奨) | **非推奨** <br/>使用しないでください。このアクセス許可によって付与される特権はありません。 | なし |
 
-#### アプリケーションのアクセス許可
-<a id="application-permissions" class="xliff"></a>
+#### <a name="application-permissions"></a>アプリケーションのアクセス許可
 
 |   アクセス許可    |  表示文字列   |  説明 | 管理者の同意の要不要 |
 |:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
@@ -536,8 +463,7 @@ _Mail.Read.Shared_、_Mail.ReadWrite.Shared_、および _Mail.Send.Shared_ は�
 | _Notes.ReadWrite.All_ |    すべての OneNote ノートブックの読み取りと書き込み | サインインしているユーザーなしで、組織内のすべての OneNote ノートブックをアプリで読み取り、共有、および変更できるようにします。| 必要 |
 
 
-### 注釈
-<a id="remarks" class="xliff"></a>
+### <a name="remarks"></a>注釈
 _Notes.Read.All_ および _Notes.ReadWrite.All_ は、職場または学校アカウントでのみ有効です。その他すべてのアクセス許可は、Microsoft アカウントと職場または学校アカウントのどちらでも有効です。
 
 _Notes.Create_ のアクセス許可があるアプリは、サインインしているユーザーの OneNote ノートブック階層の表示と、OneNote コンテンツ (ノートブック、セクション グループ、セクション、ページなど) の作成を実行できます。
@@ -546,10 +472,8 @@ _Notes.Create_ のアクセス許可があるアプリは、サインインし�
 
 職場または学校アカウントの場合、_Notes.Read.All_ および _Notes.ReadWrite.All_ により、アプリは、サインインしているユーザーが組織内でアクセス許可を持つ別のユーザーの OneNote コンテンツにアクセスできるようになります。
 
-### 使用例
-<a id="example-usage" class="xliff"></a>
-#### 委任
-<a id="delegated" class="xliff"></a>
+### <a name="example-usage"></a>使用例
+#### <a name="delegated"></a>委任
 
 * _Notes.Create_: サインインしているユーザー用に新しいノートブックを作成します (`POST /me/onenote/notebooks`)。
 * _Notes.Read_: サインインしているユーザーのノートブックを読み取ります (`GET /me/onenote/notebooks`)。
@@ -557,8 +481,7 @@ _Notes.Create_ のアクセス許可があるアプリは、サインインし�
 * _Notes.ReadWrite_: サインインしているユーザーのページを更新します (`PATCH /me/onenote/pages/{id}/$value`)。
 * _Notes.ReadWrite.All_: サインインしているユーザーが組織内でアクセス可能な別のユーザーのノートブックにページを作成します (`POST /users/{id}/onenote/pages`)。
 
-#### アプリケーション
-<a id="application" class="xliff"></a>
+#### <a name="application"></a>アプリケーション
 
 * _Notes.Read.All_: グループ内のすべてのユーザーのノートブックを読み取ります (`GET /groups/{id}/onenote/notebooks`)。
 * _Notes.ReadWrite.All_: 組織内の任意のユーザーのノートブックのページを更新します (`PATCH /users/{id}/onenote/pages/{id}/$value`)。
@@ -567,11 +490,9 @@ _Notes.Create_ のアクセス許可があるアプリは、サインインし�
 
 ---
 
-## OpenID のアクセス許可
-<a id="openid-permissions" class="xliff"></a>
+## <a name="openid-permissions"></a>OpenID のアクセス許可
 
-#### 委任されたアクセス許可
-<a id="delegated-permissions" class="xliff"></a>
+#### <a name="delegated-permissions"></a>委任されたアクセス許可
 
 |   アクセス許可    |  表示文字列   |  説明 | 管理者の同意の要不要 |
 |:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
@@ -580,13 +501,11 @@ _Notes.Create_ のアクセス許可があるアプリは、サインインし�
 | _openid_ |    ユーザーのサインイン | ユーザーが職場または学校アカウントでアプリにサインインできるようにします。またアプリで、ユーザーの基本的なプロファイル情報を読み取れるようにします。| 不要 |
 | _profile_ |    ユーザーの基本プロファイルの表示 | ユーザーの基本プロファイル (名前、写真、ユーザー名) をアプリで確認できるようにします。| 不要 |
 
-#### アプリケーションのアクセス許可
-<a id="application-permissions" class="xliff"></a>
+#### <a name="application-permissions"></a>アプリケーションのアクセス許可
 
 なし。
 
-### 注釈
-<a id="remarks" class="xliff"></a>
+### <a name="remarks"></a>注釈
 これらのアクセス許可を使用すると、Azure AD の承認とトークン要求で返される成果物を指定できます。これらは Azure AD v1.0 エンドポイントと v2.0 エンドポイントでは異なる方法でサポートされます。
 
 Azure AD (v1.0) エンドポイントでは、_openid_ アクセス許可のみが使用されます。これを承認要求で *scope* パラメーターに指定して、ユーザーがアプリにサインインするときに OpenID Connect プロトコルを使用する場合に ID トークンが返されるようにします。詳細については、「[OpenID Connect と Azure Active Directory を使用する Web アプリケーションへのアクセスの承認](https://docs.microsoft.com/azure/active-directory/develop/active-directory-protocols-openid-connect-code)」を参照してください。ID トークンが正常に返されるようにするには、アプリを登録するときに _User.Read_ アクセス許可も必ず構成します。 
@@ -598,59 +517,47 @@ Azure AD v2.0 エンドポイントでは、_scope_ パラメーターで_offlin
 
 ---
 
-## People のアクセス許可
-<a id="people-permissions" class="xliff"></a>
+## <a name="people-permissions"></a>People のアクセス許可
 
-#### 委任されたアクセス許可
-<a id="delegated-permissions" class="xliff"></a>
+#### <a name="delegated-permissions"></a>委任されたアクセス許可
 
 |   アクセス許可    |  表示文字列   |  説明 | 管理者の同意の要不要 |
 |:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
 | _People.Read_ |    ユーザーに関係する連絡先リストの読み取り (プレビュー) | アプリで、サインインしているユーザーの関連する人に関するランク付けされたリストを読み取れるようにします。リストには、個人の連絡先、ソーシャル ネットワーキングの連絡先、組織のディレクトリ、最近 (メール、Skype などで) 通信した人が含まれます。| 不要 |
 
-#### アプリケーションのアクセス許可
-<a id="application-permissions" class="xliff"></a>
+#### <a name="application-permissions"></a>アプリケーションのアクセス許可
 
 なし。
 
-### 備考
-<a id="remarks" class="xliff"></a>
+### <a name="remarks"></a>備考
 
 
-### 使用例
-<a id="example-usage" class="xliff"></a>
-#### 委任
-<a id="delegated" class="xliff"></a>
+### <a name="example-usage"></a>使用例
+#### <a name="delegated"></a>委任
 
 
 より複雑な複数のアクセス許可を伴うシナリオについては、「[アクセス許可のシナリオ](#permission-scenarios)」を参照してください。
 
 ---
 
-## レポートのアクセス許可
-<a id="reports-permissions" class="xliff"></a>
+## <a name="reports-permissions"></a>レポートのアクセス許可
 
-#### 委任されたアクセス許可
-<a id="delegated-permissions" class="xliff"></a>
+#### <a name="delegated-permissions"></a>委任されたアクセス許可
 
 なし。
 
-#### アプリケーションのアクセス許可
-<a id="application-permissions" class="xliff"></a>
+#### <a name="application-permissions"></a>アプリケーションのアクセス許可
 
 |   アクセス許可    |  表示文字列   |  説明 | 管理者の同意の要不要 |
 |:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
 | _Reports.Read.All_ | すべての利用状況レポートの読み取り | アプリで、サインインしているユーザーなしで、すべてのサービス利用状況レポートの読み取りができるようにします。利用状況レポートを提供するサービスには、Office 365 と Azure Active Directory が含まれます。 | 必要 |
 
-### 備考
-<a id="remarks" class="xliff"></a>
+### <a name="remarks"></a>備考
 レポートのアクセス許可は、職場または学校アカウントでのみ有効です。 
 
-### 使用例
-<a id="example-usage" class="xliff"></a>
+### <a name="example-usage"></a>使用例
 
-#### アプリケーション
-<a id="application" class="xliff"></a>
+#### <a name="application"></a>アプリケーション
 
 * _Reports.Read.All_: 7 日間の期間で電子メール アプリの利用状況詳細レポートを読み取ります (`GET /reports/EmailAppUsage(view='Detail',period='D7')/content`)
 * _Reports.Read.All_: '2017-01-01' の日付で電子メールのアクティビティ詳細レポートを読み取ります (`GET /reports/EmailActivity(view='Detail',data='2017-01-01')/content`)。
@@ -660,30 +567,24 @@ Azure AD v2.0 エンドポイントでは、_scope_ パラメーターで_offlin
 
 ---
 
-## サイトのアクセス許可
-<a id="sites-permissions" class="xliff"></a>
+## <a name="sites-permissions"></a>サイトのアクセス許可
 
-#### 委任されたアクセス許可
-<a id="delegated-permissions" class="xliff"></a>
+#### <a name="delegated-permissions"></a>委任されたアクセス許可
 
 |   アクセス許可    |  表示文字列   |  説明 | 管理者の同意の要不要 |
 |:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
 | _Sites.Read.All_ |    すべてのサイト コレクションに含まれる項目の読み取り | サインインしているユーザーの代わりに、すべてのサイト コレクションに含まれるドキュメントおよびリスト アイテムをアプリケーションで読み取りできるようにします。 | 不要 |
 | _Sites.ReadWrite.All_ |    すべてのサイト コレクション内のアイテムの読み取りおよび書き込み | サインインしているユーザーの代わりに、すべてのサイト コレクションに含まれるドキュメントとリスト アイテムをアプリケーションで編集または削除できるようにします。 | 不要 |
 
-#### アプリケーションのアクセス許可
-<a id="application-permissions" class="xliff"></a>
+#### <a name="application-permissions"></a>アプリケーションのアクセス許可
 
 なし。
 
-### 備考
-<a id="remarks" class="xliff"></a>
+### <a name="remarks"></a>備考
 サイトのアクセス許可は、職場または学校アカウントでのみ有効です。
 
-### 使用例
-<a id="example-usage" class="xliff"></a>
-#### 委任
-<a id="delegated" class="xliff"></a>
+### <a name="example-usage"></a>使用例
+#### <a name="delegated"></a>委任
 
 * _Sites.Read.All_: SharePoint ルート サイトのリストを読み取ります (`GET /beta/sharePoint/site/lists`)
 * _Sites.ReadWrite.All_: SharePoint リストに新しいリスト アイテムを作成します (`POST /beta/sharePoint/site/lists/123/items`)
@@ -693,11 +594,9 @@ Azure AD v2.0 エンドポイントでは、_scope_ パラメーターで_offlin
 
 ---
 
-## タスクのアクセス許可
-<a id="tasks-permissions" class="xliff"></a>
+## <a name="tasks-permissions"></a>タスクのアクセス許可
 
-#### 委任されたアクセス許可
-<a id="delegated-permissions" class="xliff"></a>
+#### <a name="delegated-permissions"></a>委任されたアクセス許可
 
 |   アクセス許可    |  表示文字列   |  説明 | 管理者の同意の要不要 |
 |:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
@@ -706,21 +605,17 @@ Azure AD v2.0 エンドポイントでは、_scope_ パラメーターで_offlin
 | _Tasks.ReadWrite_ |    ユーザーのタスクとコンテナーの作成、読み取り、更新および削除 | タスクとコンテナー (およびコンテナー内のタスク) のうち、サインインしているユーザーに割り当てられたもの、またはサインインしているユーザーと共有するものをアプリで作成、読み取り、更新および削除できるようにします。| 不要 |
 | _Tasks.ReadWrite.Shared_ | ユーザー タスクと共有のタスクの読み取りと書き込み | アプリで、ユーザー自身のタスクと共有のタスクを含むユーザーがアクセス許可を得ているタスクの作成、読み取り、更新、削除を行えるようにします。 | 不要 |
 
-#### アプリケーションのアクセス許可
-<a id="application-permissions" class="xliff"></a>
+#### <a name="application-permissions"></a>アプリケーションのアクセス許可
 
 なし。
 
-### 備考
-<a id="remarks" class="xliff"></a>
-_タスク_のアクセス許可は、Outlook タスクのアクセスを制御するために使用します。Microsoft Planner のタスクへのアクセスは、[_グループ_のアクセス許可](#group-permissions)で制御します。
+### <a name="remarks"></a>注釈
+_タスク_のアクセス許可は、Outlook タスクのアクセスを制御するために使用します。Microsoft Planner のタスクは、[_グループ_のアクセス許可](#group-permissions)で制御します。
 
 _共有_のアクセス許可は、現時点では職場または学校アカウントでのみサポートされます。_共有_のアクセス許可がある場合でも、共有コンテンツを所有するユーザーが、そのコンテンツにアクセスするユーザーに、フォルダー内のコンテンツを変更するアクセス許可を付与していないと、読み取りと書き込みが失敗することがあります。
 
-### 使用例
-<a id="example-usage" class="xliff"></a>
-#### 委任
-<a id="delegated" class="xliff"></a>
+### <a name="example-usage"></a>使用例
+#### <a name="delegated"></a>委任
 
 * _Tasks.Read_: ユーザーのメールボックス内のすべてのタスクを取得します (`GET /me/outlook/tasks`)。
 * _Tasks.Read.Shared_: 組織内の別のユーザーによって共有されているフォルダー内のタスクにアクセスします (`Get /users{id|userPrincipalName}/outlook/taskfolders/{id}/tasks`)。
@@ -733,11 +628,9 @@ _共有_のアクセス許可は、現時点では職場または学校アカウ
 
 ---
 
-## ユーザーのアクセス許可
-<a id="user-permissions" class="xliff"></a>
+## <a name="user-permissions"></a>ユーザーのアクセス許可
 
-#### 委任されたアクセス許可
-<a id="delegated-permissions" class="xliff"></a>
+#### <a name="delegated-permissions"></a>委任されたアクセス許可
 
 |   アクセス許可    |  表示文字列   |  説明 | 管理者の同意の要不要 |
 |:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
@@ -749,8 +642,7 @@ _共有_のアクセス許可は、現時点では職場または学校アカウ
 | _User.Invite.All_  |     組織へのゲスト ユーザーの招待 | サインインしているユーザーの代わりに、アプリで組織にゲスト ユーザーを招待できるようにします。 | はい |
 | _UserTimelineActivity.Write.CreatedByApp_  |     ユーザーのタイムラインにアプリのアクティビティを書き込む | アプリがサインイン ユーザーのアプリ アクティビティ情報を Microsoft タイムラインに報告することを許可します。 | いいえ |
 
-#### アプリケーションのアクセス許可
-<a id="application-permissions" class="xliff"></a>
+#### <a name="application-permissions"></a>アプリケーションのアクセス許可
 
 |   アクセス許可    |  表示文字列   |  説明 | 管理者の同意の要不要 |
 |:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
@@ -758,8 +650,7 @@ _共有_のアクセス許可は、現時点では職場または学校アカウ
 | _User.ReadWrite.All_ |   すべてのユーザーの完全なプロファイルの読み取りと書き込み | サインインしているユーザーなしで、組織内の別のユーザーのプロファイル プロパティ、グループ メンバーシップ、部下、上司の完全なセットをアプリで読み書きできるようにします。また、アプリで非管理ユーザーの作成と削除もできるようにします。ユーザーのパスワードのリセットはできません。 | はい |
 | _User.Invite.All_  |     組織へのゲスト ユーザーの招待 | サインインしているユーザーなしで、ゲスト ユーザーをアプリで組織に招待できるようにします。 | 必要 |
 
-### 備考
-<a id="remarks" class="xliff"></a>
+### <a name="remarks"></a>注釈
 
 Microsoft アカウントで有効なアクセス許可は、_User.Read_、_User.ReadWrite_、および _UserTimelineActivity.Write.CreatedByApp_ のみです。職場または学校アカウントについては、_UserTimelineActivity.Write.CreatedByApp_ を除くすべてのアクセス許可が有効です。
 
@@ -807,10 +698,8 @@ _User.ReadBasic.All_ アクセス許可では、基本プロファイルと呼�
 
 ユーザーのグループ メンバーシップ (`memberOf`) を読み取るには、アプリに [_Group.Read.All_](#group-permissions) または [_Group.ReadWrite.All_](#group-permissions) のどちらかが付与されている必要があります。ただし、ユーザーに [directoryRole](../api-reference/v1.0/resources/directoryrole.md) または [administrativeUnit](../api-reference/beta/resources/administrativeunit.md) のメンバーシップもある場合、アプリにはそれらのリソースを読み取るための有効なアクセス許可も必要になります。このアクセス許可がない場合、Microsoft Graph はエラーを返します。つまり、アプリは[ディレクトリのアクセス許可](#directory-permissions)も必要とし、委任されたアクセス許可の場合は、サインインしているユーザーにも組織内でディレクトリ ロールと管理単位にアクセスするための十分な特権も必要とするということです。 
 
-### 使用例
-<a id="example-usage" class="xliff"></a>
-#### 委任
-<a id="delegated" class="xliff"></a>
+### <a name="example-usage"></a>使用例
+#### <a name="delegated"></a>委任
 
 * _User.Read_: サインインしているユーザーの完全なプロファイルを読み取ります (`GET /me`)。
 * _User.ReadWrite_: サインインしているユーザーの写真を更新します (`PUT /me/photo/$value`)。
@@ -818,8 +707,7 @@ _User.ReadBasic.All_ アクセス許可では、基本プロファイルと呼�
 * _User.Read.All_: ユーザーの上司を読み取ります (`GET /user/{id | userPrincipalName}/manager`)。
 
 
-#### アプリケーション
-<a id="application" class="xliff"></a>
+#### <a name="application"></a>アプリケーション
 
 * _User.Read.All_: デルタ クエリによってすべてのユーザーとリレーションシップを読み取ります (`GET /beta/users/delta?$select=displayName,givenName,surname`)。
 * _User.ReadWrite.All_: 組織内の任意のユーザーの写真を更新します (`PUT /user/{id | userPrincipalName}/photo/$value`)。
@@ -828,13 +716,11 @@ _User.ReadBasic.All_ アクセス許可では、基本プロファイルと呼�
 
 ---
 
-## アクセス許可のシナリオ
-<a id="permission-scenarios" class="xliff"></a>
+## <a name="permission-scenarios"></a>アクセス許可のシナリオ
 
 ここでは、組織内の[ユーザー](../api-reference/v1.0/resources/user.md) リソースと[グループ](../api-reference/v1.0/resources/group.md) リソースを対象とした、いくつかの一般的なシナリオを示します。この表には、シナリオごとに必要になる特定の操作を実行するために、アプリが必要とするアクセス許可を示しています。場合によっては、特定の操作をアプリが実行できるかどうかは、アクセス許可が、アプリケーションのアクセス許可か、委任されたアクセス許可かによって決まります。委任されたアクセス許可の場合、アプリの有効なアクセス許可は、サインインしているユーザーの組織内の特権にも依存します。詳細については、「[委任されたアクセス許可、アプリケーションのアクセス許可、有効なアクセス許可](#delegated-permissions-application-permissions-and-effective-permissions)」を参照してください。
 
-### ユーザー リソースに対するアクセスのシナリオ
-<a id="access-scenarios-on-the-user-resource" class="xliff"></a>
+### <a name="access-scenarios-on-the-user-resource"></a>ユーザー リソースに対するアクセスのシナリオ
 
 | **ユーザーが関与するアプリ タスク**   |  **必要なアクセス許可** | **アクセス許可文字列** |
 |:-------------------------------|:---------------------|:---------------|
@@ -848,13 +734,12 @@ _User.ReadBasic.All_ アクセス許可では、基本プロファイルと呼�
 | アプリの目的は、サインインしているユーザーのファイル、メール、カレンダー情報を読み書きすること    | _User.ReadWrite_, _Files.ReadWrite_, _Mail.ReadWrite_, _Calendars.ReadWrite_  |  ユーザーのプロファイルの読み取りおよび書き込みアクセス許可、ユーザーのプロファイルの読み取りおよび書き込みアクセス許可、ユーザーのメールの読み取りおよび書き込みアクセス許可、ユーザーのカレンダーへのフル アクセス |
    
 
-### グループ リソースに対するアクセスのシナリオ
-<a id="access-scenarios-on-the-group-resource" class="xliff"></a>
+### <a name="access-scenarios-on-the-group-resource"></a>グループ リソースに対するアクセスのシナリオ
     
 | **グループが関与するアプリ タスク**  |  **必要なアクセス許可** |  **アクセス許可文字列** |
 |:-------------------------------|:---------------------|:---------------|
-| アプリの目的は、グループ選択画面への表示などのために、基本グループ情報 (表示名と写真のみ) を読み取ること  | _Group.Read.All_  | すべてのグループの読み取り|
-| アプリの目的は、ファイルや会話を含むすべての Office 365 グループ内のすべてのコンテンツを読み取ることです。グループ メンバーシップを表示したり、グループ メンバーシップを更新できたり (所有者の場合) する必要もあります。  |  _Group.Read.All_ | すべてのサイト コレクションにあるアイテムの読み取り、すべてのグループの読み取り|
-| アプリの目的は、ファイルや会話を含むすべての Office 365 グループ内のすべてのコンテンツを読み書きすることです。グループ メンバーシップを表示したり、グループ メンバーシップを更新できたり (所有者の場合) する必要もあります。  |   _Group.ReadWrite.All_, _Sites.ReadWrite.All_ |  すべてのグループの読み取りと書き込み、すべてのサイト コレクション内のアイテムの編集または削除 |
-| アプリの目的は、Office 365 グループを検出 (検索) することです。ユーザーが、特定のグループから検索し、一覧表から選択して、グループに参加できるようにします。     | _Group.ReadWrite.All_ | すべてのグループの読み取りと書き込み|
-| アプリの目的は、AAD グラフを経由してグループを作成すること |   _Group.ReadWrite.All_ | すべてのグループの読み取りと書き込み|
+| アプリの目的は、グループ選択画面への表示などのために、基本グループ情報 (表示名と写真など) を読み取ることです。  | _Group.Read.All_  | すべてのグループの読み取り|
+| アプリの目的は、ファイルや会話を含むすべての公開の Office 365 グループ内のすべてのコンテンツを読み取ることです。グループ メンバーを表示することも必要です。  |  _Group.Read.All_、_User.ReadBasic.All_ | すべてのグループの読み取り、すべてのユーザーの基本プロファイルの読み取り |
+| アプリの目的は、ファイルや会話を含むすべての公開の Office 365 グループ内のすべてのコンテンツを読み書きすることです。グループ メンバーを表示し、グループ メンバーを更新できる必要もあります (サインイン ユーザーがグループの所有者である場合)。  |     _Group.ReadWrite.All_、_User.ReadBasic.All_ |  すべてのグループの読み取りと書き込み、すべてのユーザーの基本プロファイルの読み取り |
+| アプリの目的は、ユーザーが公開の Office 365 グループに参加できるようにすることです。ユーザーが、特定のグループを検索し、一覧表から選択できるようにします。ユーザーは選択した任意のグループに追加されます。    |   _Group.ReadWrite.All_、_User.Read_ | すべてのグループの読み取りと書き込み、サインインとユーザー プロファイルの読み取り |
+| アプリの目的は、Microsoft Graph を使用してグループを作成することです。 |    _Group.ReadWrite.All_ | すべてのグループの読み取りと書き込み|
