@@ -1,17 +1,17 @@
-# <a name="enumerate-subsites-of-a-site"></a>サイトのサブサイトを列挙する
+# <a name="enumerate-subsites-of-a-site"></a><span data-ttu-id="50f59-101">サイトのサブサイトを列挙する</span><span class="sxs-lookup"><span data-stu-id="50f59-101">Enumerate subsites of a site</span></span>
 
-[site][] に定義されているサブサイトのコレクションを取得します。
+<span data-ttu-id="50f59-102">[site][] に定義されているサブサイトのコレクションを取得します。</span><span class="sxs-lookup"><span data-stu-id="50f59-102">Get a collection of subsites defined for a [site][].</span></span>
 
-[site]: ../resources/site.md
+<span data-ttu-id="50f59-103">[site]: ../resources/site.md</span><span class="sxs-lookup"><span data-stu-id="50f59-103">[site]: ../resources/site.md</span></span>
 
-## <a name="prerequisites"></a>前提条件
+## <a name="prerequisites"></a><span data-ttu-id="50f59-104">前提条件</span><span class="sxs-lookup"><span data-stu-id="50f59-104">Prerequisites</span></span>
 
-この要求を実行するには、以下のいずれかのスコープが必要です。
+<span data-ttu-id="50f59-105">この要求を実行するには、以下のいずれかのスコープが必要です。</span><span class="sxs-lookup"><span data-stu-id="50f59-105">One of the following scopes is required to execute this request:</span></span>
 
-* Sites.Read.All
-* Sites.ReadWrite.All
+* <span data-ttu-id="50f59-106">Sites.Read.All</span><span class="sxs-lookup"><span data-stu-id="50f59-106">Sites.Read.All</span></span>
+* <span data-ttu-id="50f59-107">Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="50f59-107">Sites.ReadWrite.All</span></span>
 
-## <a name="http-request"></a>HTTP 要求
+## <a name="http-request"></a><span data-ttu-id="50f59-108">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="50f59-108">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -19,9 +19,9 @@
 GET /sites/{site-id}/sites
 ```
 
-### <a name="example"></a>例
+## <a name="example"></a><span data-ttu-id="50f59-109">例</span><span class="sxs-lookup"><span data-stu-id="50f59-109">Example</span></span>
 
-#### <a name="request"></a>要求
+#### <a name="request"></a><span data-ttu-id="50f59-110">要求</span><span class="sxs-lookup"><span data-stu-id="50f59-110">Request</span></span>
 
 <!-- { "blockType": "request", "name": "list-subsites" } -->
 
@@ -29,7 +29,7 @@ GET /sites/{site-id}/sites
 GET /sites/{site-id}/sites
 ```
 
-#### <a name="response"></a>応答
+#### <a name="response"></a><span data-ttu-id="50f59-111">応答</span><span class="sxs-lookup"><span data-stu-id="50f59-111">Response</span></span>
 
 <!-- { "blockType": "response", "@type": "microsoft.graph.site", "isCollection": true, "truncated": true } -->
 

@@ -1,21 +1,18 @@
-<span data-ttu-id="a1ece-p101">[**SharedDriveItem**](../resources/shareddriveitem.md) には、いくつかの有用な情報が含まれていますが、ほとんどのアプリは、共有の [DriveItem](../resources/driveitem.md)に直接アクセスする必要があります。**SharedDriveItem** リソースには、共有アイテムのスコープ内でコンテンツにアクセスできる、**root** と **items** のリレーションシップが含まれています。</span><span class="sxs-lookup"><span data-stu-id="a1ece-p101">While the [**SharedDriveItem**](../resources/shareddriveitem.md) contains some useful information, most apps will want to directly access the shared [DriveItem](../resources/driveitem.md). The **SharedDriveItem** resource includes a **root** and **items** relationships which can access content within the scope of the shared item.</span></span>
+<span data-ttu-id="66451-p101">[**SharedDriveItem**](../resources/shareddriveitem.md) には、いくつかの有用な情報が含まれていますが、ほとんどのアプリは、共有の [DriveItem](../resources/driveitem.md)に直接アクセスする必要があります。**SharedDriveItem** リソースには、共有アイテムのスコープ内でコンテンツにアクセスできる、**root** と **items** のリレーションシップが含まれています。</span><span class="sxs-lookup"><span data-stu-id="66451-p101">While the [**SharedDriveItem**](../resources/shareddriveitem.md) contains some useful information, most apps will want to directly access the shared [DriveItem](../resources/driveitem.md). The **SharedDriveItem** resource includes a **root** and **items** relationships which can access content within the scope of the shared item.</span></span>
 
 [**SharedDriveItem**](../resources/shareddriveitem.md) には、いくつかの有用な情報が含まれていますが、ほとんどのアプリは、共有の [DriveItem](../resources/driveitem.md)に直接アクセスする必要があります。**SharedDriveItem** リソースには、共有アイテムのスコープ内でコンテンツにアクセスできる、**root** と **items** のリレーションシップが含まれています。
 
-### <span data-ttu-id="a1ece-122">例 (単一ファイル)</span><span class="sxs-lookup"><span data-stu-id="a1ece-122">Example (single file)</span></span>
-<a id="example-single-file" class="xliff"></a>
+## <a name="example-single-file"></a><span data-ttu-id="66451-122">例 (単一ファイル)</span><span class="sxs-lookup"><span data-stu-id="66451-122">Example (single file)</span></span>
 
-##### <span data-ttu-id="a1ece-123">要求</span><span class="sxs-lookup"><span data-stu-id="a1ece-123">Request</span></span>
-<a id="request" class="xliff"></a>
+##### <a name="request"></a><span data-ttu-id="66451-123">要求</span><span class="sxs-lookup"><span data-stu-id="66451-123">Request</span></span>
 
-<span data-ttu-id="a1ece-124">**root** リレーションシップを要求することで、共有された **DriveItem** が返されます。</span><span class="sxs-lookup"><span data-stu-id="a1ece-124">By requesting the **root** relationship, the **DriveItem** that was shared will be returned.</span></span>
+<span data-ttu-id="66451-124">**root** リレーションシップを要求することで、共有された **DriveItem** が返されます。</span><span class="sxs-lookup"><span data-stu-id="66451-124">By requesting the **root** relationship, the **DriveItem** that was shared will be returned.</span></span>
 
 ```http
 GET https://graph.microsoft.com/v1.0/shares/{shareIdOrUrl}/root
 ```
 
-##### <span data-ttu-id="a1ece-125">応答</span><span class="sxs-lookup"><span data-stu-id="a1ece-125">Response</span></span>
-<a id="response" class="xliff"></a>
+##### <a name="response"></a><span data-ttu-id="66451-125">応答</span><span class="sxs-lookup"><span data-stu-id="66451-125">Response</span></span>
 
 ```http
 HTTP/1.1 200 OK
@@ -30,20 +27,17 @@ Content-Type: application/json
 }
 ```
 
-### <span data-ttu-id="a1ece-126">例 (共有フォルダー)</span><span class="sxs-lookup"><span data-stu-id="a1ece-126">Example (shared folder)</span></span>
-<a id="example-shared-folder" class="xliff"></a>
+## <a name="example-shared-folder"></a><span data-ttu-id="66451-126">例 (共有フォルダー)</span><span class="sxs-lookup"><span data-stu-id="66451-126">Example (shared folder)</span></span>
 
-##### <span data-ttu-id="a1ece-127">要求</span><span class="sxs-lookup"><span data-stu-id="a1ece-127">Request</span></span>
-<a id="request" class="xliff"></a>
+##### <a name="request"></a><span data-ttu-id="66451-127">要求</span><span class="sxs-lookup"><span data-stu-id="66451-127">Request</span></span>
 
-<span data-ttu-id="a1ece-128">**root** リレーションシップを要求して、**children** コレクションを展開することで、共有されている **DriveItem** が共有フォルダー内のファイルとともに返されます。</span><span class="sxs-lookup"><span data-stu-id="a1ece-128">By requesting the **root** relationship and expanding the **children** collection, the **DriveItem** that was shared will be returned along with the files within the shared folder.</span></span>
+<span data-ttu-id="66451-128">**root** リレーションシップを要求して、**children** コレクションを展開することで、共有されている **DriveItem** が共有フォルダー内のファイルとともに返されます。</span><span class="sxs-lookup"><span data-stu-id="66451-128">By requesting the **root** relationship and expanding the **children** collection, the **DriveItem** that was shared will be returned along with the files within the shared folder.</span></span>
 
 ```http
 GET https://graph.microsoft.com/v1.0/shares/{shareIdOrUrl}/root?$expand=children
 ```
 
-##### <span data-ttu-id="a1ece-129">応答</span><span class="sxs-lookup"><span data-stu-id="a1ece-129">Response</span></span>
-<a id="response" class="xliff"></a>
+##### <a name="response"></a><span data-ttu-id="66451-129">応答</span><span class="sxs-lookup"><span data-stu-id="66451-129">Response</span></span>
 
 ```http
 HTTP/1.1 200 OK
@@ -72,20 +66,19 @@ Content-Type: application/json
 }
 ```
 
-## <span data-ttu-id="a1ece-130">共有の URL を変換する</span><span class="sxs-lookup"><span data-stu-id="a1ece-130">Transform a sharing URL</span></span>
-<a id="transform-a-sharing-url" class="xliff"></a>
+## <a name="transform-a-sharing-url"></a><span data-ttu-id="66451-130">共有の URL を変換する</span><span class="sxs-lookup"><span data-stu-id="66451-130">Transform a sharing URL</span></span>
 
-<span data-ttu-id="a1ece-131">**shares** API を使用して共有の URL にアクセスするには、URL を共有のトークンに変換する必要があります。</span><span class="sxs-lookup"><span data-stu-id="a1ece-131">To access a sharing URL using the **shares** API, the URL needs to be transformed into a sharing token.</span></span>
+<span data-ttu-id="66451-131">**shares** API を使用して共有の URL にアクセスするには、URL を共有のトークンに変換する必要があります。</span><span class="sxs-lookup"><span data-stu-id="66451-131">To access a sharing URL using the **shares** API, the URL needs to be transformed into a sharing token.</span></span>
 
-<span data-ttu-id="a1ece-132">URL を共有のトークンに変化するには:</span><span class="sxs-lookup"><span data-stu-id="a1ece-132">To transform a URL into a sharing token:</span></span>
+<span data-ttu-id="66451-132">URL を共有のトークンに変化するには:</span><span class="sxs-lookup"><span data-stu-id="66451-132">To transform a URL into a sharing token:</span></span>
 
-1. <span data-ttu-id="a1ece-133">共有の URL を Base64 エンコードします。</span><span class="sxs-lookup"><span data-stu-id="a1ece-133">Base64 encode the sharing URL.</span></span>
-2. <span data-ttu-id="a1ece-134">次に示すように、base64 でエンコードしたデータを[パディングされていない base64url 形式](https://en.wikipedia.org/wiki/Base64)に変換します。</span><span class="sxs-lookup"><span data-stu-id="a1ece-134">Convert the base64 encoded data to [unpadded base64url format](https://en.wikipedia.org/wiki/Base64) by:</span></span>
-  1. <span data-ttu-id="a1ece-135">文字列から、末尾の `=` 文字をトリミングします。</span><span class="sxs-lookup"><span data-stu-id="a1ece-135">Trim trailing `=` characters from the string</span></span>
-  2. <span data-ttu-id="a1ece-136">安全でない URL 文字を同等の文字に置き換えます (`/` を `_` に、`+` を `-` に置換します)。</span><span class="sxs-lookup"><span data-stu-id="a1ece-136">Replace unsafe URL characters with an equivalent character; replace `/` with `_` and `+` with `-`.</span></span>
-3. <span data-ttu-id="a1ece-137">文字列の先頭に `u!` を追加します。</span><span class="sxs-lookup"><span data-stu-id="a1ece-137">Append `u!` to the beginning of the string.</span></span>
+1. <span data-ttu-id="66451-133">共有の URL を Base64 エンコードします。</span><span class="sxs-lookup"><span data-stu-id="66451-133">Base64 encode the sharing URL.</span></span>
+2. <span data-ttu-id="66451-134">次に示すように、base64 でエンコードしたデータを[パディングされていない base64url 形式](https://en.wikipedia.org/wiki/Base64)に変換します。</span><span class="sxs-lookup"><span data-stu-id="66451-134">Convert the base64 encoded data to [unpadded base64url format](https://en.wikipedia.org/wiki/Base64) by:</span></span>
+  1. <span data-ttu-id="66451-135">文字列から、末尾の `=` 文字をトリミングします。</span><span class="sxs-lookup"><span data-stu-id="66451-135">Trim trailing `=` characters from the string</span></span>
+  2. <span data-ttu-id="66451-136">安全でない URL 文字を同等の文字に置き換えます (`/` を `_` に、`+` を `-` に置換します)。</span><span class="sxs-lookup"><span data-stu-id="66451-136">Replace unsafe URL characters with an equivalent character; replace `/` with `_` and `+` with `-`.</span></span>
+3. <span data-ttu-id="66451-137">文字列の先頭に `u!` を追加します。</span><span class="sxs-lookup"><span data-stu-id="66451-137">Append `u!` to the beginning of the string.</span></span>
 
-<span data-ttu-id="a1ece-138">たとえば、次に示す C# メソッドにより、入力文字列を共有のトークンに変換します。</span><span class="sxs-lookup"><span data-stu-id="a1ece-138">For example, the following C# method transforms an input string into a sharing token:</span></span>
+<span data-ttu-id="66451-138">たとえば、次に示す C# メソッドにより、入力文字列を共有のトークンに変換します。</span><span class="sxs-lookup"><span data-stu-id="66451-138">For example, the following C# method transforms an input string into a sharing token:</span></span>
 
 ```csharp
 string UrlToSharingToken(string inputUrl) {
