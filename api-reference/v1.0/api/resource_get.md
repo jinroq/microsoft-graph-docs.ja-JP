@@ -12,6 +12,7 @@ Notes.Read、Notes.ReadWrite、Notes.Read.All、Notes.ReadWrite.All
 GET /me/onenote/resources/{id}/content
 GET /users/{id | userPrincipalName}/onenote/resources/{id}/content
 GET /groups/{id}/onenote/resources/{id}/content
+GET /sites/{id}/onenote/resources/{id}/content
 ```
 
 ## <a name="request-headers"></a>要求ヘッダー

@@ -19,6 +19,7 @@ Notes.Create、Notes.Read、Notes.ReadWrite、Notes.Read.All、Notes.ReadWrite.A
 GET /me/onenote/operations/{id}
 GET /users/{id | userPrincipalName}/onenote/operations/{id}
 GET /groups/{id}/onenote/operations/{id}
+GET /sites/{id}/onenote/operations/{id}
 ```
 ## <a name="optional-query-parameters"></a>オプションのクエリ パラメーター
 なし。
@@ -27,7 +28,7 @@ GET /groups/{id}/onenote/operations/{id}
 | 名前       | 型 | 説明|
 |:-----------|:------|:----------|
 | Authorization  | string  | ベアラー {トークン}。必須。 |
-| Accept | string | `application/json` | 
+| 承諾 | string | `application/json` | 
 
 ## <a name="request-body"></a>要求本文
 このメソッドには、要求本文を指定しません。

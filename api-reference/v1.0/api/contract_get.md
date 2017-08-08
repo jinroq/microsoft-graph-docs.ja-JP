@@ -2,27 +2,27 @@
 
 [contract](../resources/contract.md) オブジェクトのプロパティとリレーションシップを取得します。
 
-### <a name="prerequisites"></a>前提条件
+## <a name="prerequisites"></a>前提条件
 
 この API を実行するには、以下のいずれかの**スコープ**が必要です。*Directory.Read.All*、*Directory.ReadWrite.All*、*Directory.AccessAsUser.All*
 
-### <a name="http-request"></a>HTTP 要求
+## <a name="http-request"></a>HTTP 要求
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /contracts/{id}
 ```
 
-### <a name="optional-query-parameters"></a>オプションのクエリ パラメーター
+## <a name="optional-query-parameters"></a>オプションのクエリ パラメーター
 
 このメソッドは、応答をカスタマイズするための [OData クエリ パラメーター](http://graph.microsoft.io/docs/overview/query_parameters)をサポートします。
 
-### <a name="request-headers"></a>要求ヘッダー
+## <a name="request-headers"></a>要求ヘッダー
 
 | 名前      |説明|
 |:----------|:----------|
 | Authorization  | ベアラー {トークン}。必須。 |
 
-### <a name="request-body"></a>要求本文
+## <a name="request-body"></a>要求本文
 
 このメソッドには、要求本文を指定しません。
 
@@ -30,7 +30,7 @@ GET /contracts/{id}
 
 成功した場合、このメソッドは応答本文で `200 OK` 応答コードと [Contract](../resources/contract.md) オブジェクトを返します。
 
-### <a name="example"></a>例
+## <a name="example"></a>例
 ##### <a name="request"></a>要求
 
 <!-- {

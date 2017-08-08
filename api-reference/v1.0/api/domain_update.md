@@ -4,11 +4,11 @@
 
 > **重要:**検証済みのドメインのみを更新できます。
 
-### <a name="prerequisites"></a>前提条件
+## <a name="prerequisites"></a>前提条件
 
 この API を実行するには、以下のいずれかの**スコープ**が必要です。*Domain.ReadWrite.All* または *Directory.AccessAsUser.All*
 
-### <a name="http-request"></a>HTTP 要求
+## <a name="http-request"></a>HTTP 要求
 <!-- { "blockType": "ignored" } -->
 ```http
 PATCH /domains/{id}
@@ -16,14 +16,14 @@ PATCH /domains/{id}
 
 > {Id} には、ドメインを完全修飾ドメイン名で指定します。
 
-### <a name="request-headers"></a>要求ヘッダー
+## <a name="request-headers"></a>要求ヘッダー
 
 | 名前       | 説明|
 |:-----------|:-----------|
 | Authorization  | ベアラー {トークン}。必須。 |
 | Content-Type  | application/json |
 
-### <a name="request-body"></a>要求本文
+## <a name="request-body"></a>要求本文
 
 要求本文で、更新する関連フィールドの値を指定します。要求本文に含まれない既存のプロパティは、以前の値のままになるか、他のプロパティ値の変化に基づいて再計算されます。最適なパフォーマンスを得るには、変更する値のみを含めます。
 
@@ -31,7 +31,7 @@ PATCH /domains/{id}
 
 成功した場合、このメソッドは `204 No Content` 応答コードを返しますが、応答本文は返しません。
 
-### <a name="example"></a>例
+## <a name="example"></a>例
 ##### <a name="request"></a>要求
 
 <!-- {

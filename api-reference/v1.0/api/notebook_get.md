@@ -12,6 +12,7 @@ Notes.Create、Notes.Read、Notes.ReadWrite、Notes.Read.All、Notes.ReadWrite.A
 GET /me/onenote/notebooks/{id}
 GET /users/{id | userPrincipalName}/onenote/notebooks/{id}
 GET /groups/{id}/onenote/notebooks/{id}
+GET /sites/{id}/onenote/notebooks/{id}
 ```
 ## <a name="optional-query-parameters"></a>オプションのクエリ パラメーター
 このメソッドは、応答をカスタマイズするための `select` および `expand` [OData クエリ パラメーター](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters)をサポートします。
@@ -22,7 +23,7 @@ GET /groups/{id}/onenote/notebooks/{id}
 | 名前       | 型 | 説明|
 |:-----------|:------|:----------|
 | Authorization  | string  | ベアラー {トークン}。必須。 |
-| Accept | string | `application/json` | 
+| 承諾 | string | `application/json` | 
 
 ## <a name="request-body"></a>要求本文
 このメソッドには、要求本文を指定しません。
