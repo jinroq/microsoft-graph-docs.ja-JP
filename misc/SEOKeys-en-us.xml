@@ -260,14 +260,25 @@
       <Item text="directoryRoleTemplate を取得する" url="/en-us/api-reference/v1.0/api/directoryroletemplate_get" SEOKeyword="directoryRoleTemplate を取得する、Microsoft Graph API、Directory API" SEODescription="directoryroletemplate オブジェクトのプロパティと関係を取得します。" />
     </Item>
     <Item text="ドメイン" url="/en-us/api-reference/v1.0/resources/domain">
-      <Item text="ドメインを一覧表示する" url="/en-us/api-reference/v1.0/api/domain_list" />
+	  <Item text="ドメインを一覧表示する" url="/en-us/api-reference/v1.0/api/domain_list" />
       <Item text="ドメインを作成する" url="/en-us/api-reference/v1.0/api/domain_post_domains" />
       <Item text="ドメインを削除する" url="/en-us/api-reference/v1.0/api/domain_delete" />
       <Item text="ドメインを取得する" url="/en-us/api-reference/v1.0/api/domain_get" />
       <Item text="ドメインを更新する" url="/en-us/api-reference/v1.0/api/domain_update" />
       <Item text="ドメインを確認する" url="/en-us/api-reference/v1.0/api/domain_verify" />
 	  </Item>
-    <Item text="招待マネージャー" url="/en-us/api-reference/v1.0/resources/invitation" SEODescription="招待マネージャーを使用して、組織のディレクトリに外部ユーザーを追加するための招待状を作成します。">
+    <Item text="グループ設定" url="/en-us/api-reference/v1.0/resources/groupsetting">
+	  <Item text="設定を作成する" url="/en-us/api-reference/v1.0/api/groupsetting_post_groupsettings" />
+	  <Item text="設定を取得する" url="/en-us/api-reference/v1.0/api/groupsetting_get" />
+	  <Item text="設定をリストする" url="/en-us/api-reference/v1.0/api/groupsetting_list" />
+	  <Item text="設定を更新する" url="/en-us/api-reference/v1.0/api/groupsetting_update" />
+	  <Item text="設定を削除する" url="/en-us/api-reference/v1.0/api/groupsetting_delete" />
+	</Item>
+	<Item text="グループ設定テンプレート" url="/en-us/api-reference/v1.0/resources/groupsettingtemplate">
+	  <Item text="グループ設定テンプレートをリストする" url="/en-us/api-reference/v1.0/api/groupsettingtemplate_list" />
+	  <Item text="グループ設定テンプレートを取得する" url="/en-us/api-reference/v1.0/api/groupsettingtemplate_get" />
+	</Item>
+	<Item text="招待マネージャー" url="/en-us/api-reference/v1.0/resources/invitation" SEODescription="招待マネージャーを使用して、組織のディレクトリに外部ユーザーを追加するための招待状を作成します。">
       <Item text="招待状の作成" url="/en-us/api-reference/v1.0/api/invitation_post" SEODescription="組織のディレクトリに外部ユーザーを追加するための招待状を新規作成します。" />
     </Item>
     <Item text="組織" url="/en-us/api-reference/v1.0/resources/organization" SEOKeyword="ユーザーの組織構造, Microsoft Graph API, ユーザー API" SEODescription="">
@@ -910,7 +921,7 @@
       <Item text="ディレクトリ設定" url="/en-us/api-reference/beta/resources/directorysetting" SEOKeyword="directorySetting API, Microsoft Graph API, directorysetting API" SEODescription="テナント全体のレベルで、または特定のエンティティのレベルで、エンティティまたは機能の動作を管理します。">
         <Item text="設定を作成する" url="/en-us/api-reference/beta/api/directorysetting_post_settings" SEOKeyword="directorySetting を作成する、Microsoft Graph API、Directory API" SEODescription="directoryrole オブジェクトのリストを取得します。" />
         <Item text="設定を取得する" url="/en-us/api-reference/beta/api/directorysetting_get" SEOKeyword="directorySetting を取得する、Microsoft Graph API、Directory API" SEODescription="この API を使用して、新しい DirectoryRole を作成します。" />
-        <Item text="設定を一覧表示する" url="/en-us/api-reference/beta/api/directorysetting_list" SEOKeyword="directorySetting を一覧表示する、Microsoft Graph API、Directory API" SEODescription="directoryrole オブジェクトのプロパティと関係を取得します。" />
+        <Item text="設定をリストする" url="/en-us/api-reference/beta/api/directorysetting_list" SEOKeyword="directorySetting をリストする, Microsoft Graph API, ディレクトリ API" SEODescription="directoryrole オブジェクトのプロパティと関係を取得します。" />
         <Item text="設定を更新する" url="/en-us/api-reference/beta/api/directorysetting_update" SEOKeyword="directorySetting を更新する、Microsoft Graph API、Directory API" SEODescription="directoryrole オブジェクトのプロパティを更新します。" />
         <Item text="設定を削除する" url="/en-us/api-reference/beta/api/directorysetting_delete" SEOKeyword="directorySetting を削除する、Microsoft Graph API、Directory API" SEODescription="directoryRole を削除します。" />
       </Item>
