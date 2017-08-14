@@ -3,6 +3,7 @@
   <Item text="概要" url="/en-us/concepts/overview" SEOKeyword="概要、Microsoft Graph API、概要" SEODescription="Microsoft Graph により、インテリジェントな Microsoft クラウド経由でデジタル作業とデジタル ライフのデータにアクセスするアプリケーションを使用できます。開発者にとっての大きな利点:Microsoft クラウドからのデータ、インテリジェンス、インサイトにアクセスするための統合 Microsoft API エンドポイント。" />    
   <Item text="おすすめのシナリオ" url="/en-us/concepts/featured_scenarios"> 
 	  <Item text="会議の日時を検索する" url="/en-us/concepts/findmeetingtimes_example" />
+	  <Item text="関係する人の情報を取得する" url="/en-us/concepts/people_example" SEODescription="People API を使用して、ユーザーに最も関連性が高い連絡先を取得します。" />
   </Item>
   <Item text="初めてのアプリをビルドする" url="/en-us/concepts/get-started">
     <Item text="Android" url="/en-us/concepts/android" SEOKeyword="Android, Microsoft Graph API, チュートリアル" SEODescription="Microsoft Graph で、Android アプリの Microsoft クラウド データにアクセスする" />
@@ -547,6 +548,12 @@
       </Item>
     </Item>
   </Item>
+  <Item text="連絡先" url="/en-us/api-reference/v1.0/resources/social_overview">
+	<Item text="人物" url="/en-us/api-reference/v1.0/resources/person">
+		<Item text="ユーザーを一覧表示する" url="/en-us/api-reference/v1.0/api/user_list_people" />
+		<Item text="連絡先を取得する" url="/en-us/api-reference/v1.0/api/person_get" />
+	</Item>
+  </Item>
   <Item text="個人用連絡先" url="/en-us/api-reference/v1.0/resources/contact" SEOKeyword="ユーザーの連絡先、Microsoft Graph API、ユーザー API" SEODescription="個人用連絡先 API">
     <Item text="連絡先" url="/en-us/api-reference/v1.0/resources/contact" SEOKeyword="ユーザーの連絡先, Microsoft Graph API, ユーザー API" SEODescription="連絡先">
       <Item text="連絡先を一覧表示する" url="/en-us/api-reference/v1.0/api/user_list_contacts" SEOKeyword="連絡先を一覧表示する、Microsoft Graph API、Users API" SEODescription="連絡先オブジェクトのリストを取得します。" />
@@ -751,7 +758,8 @@
         <Item text="削除されたグループを一覧表示する" url="/en-us/api-reference/beta/api/directory_deleteditems_list" />
         <Item text="グループを一覧表示する" url="/en-us/api-reference/beta/api/group_list" SEOKeyword="グループを一覧表示する、Microsoft Graph API、Groups API" SEODescription="グループ オブジェクトのリストを取得します。" />
         <Item text="結合されたチームを一覧表示する" url="/en-us/api-reference/beta/api/user_list_joinedteams" SEOKeyword="joinedTeams を一覧表示する、Microsoft Graph API、ユーザー API" SEODescription="ユーザーが属している Microsoft Teams のリストを取得します。" />
-        <Item text="memberOf を一覧表示する" url="/en-us/api-reference/beta/api/group_list_memberof" SEOKeyword="memberOf を一覧表示する、Microsoft Graph API、Groups API" SEODescription="directoryobject オブジェクトのリストを取得します。" />
+        <Item text="ライフサイクル ポリシーを一覧表示する" url="/en-us/api-reference/beta/api/group_list_grouplifecyclepolicies" />
+		<Item text="メンバーを一覧表示する" url="/en-us/api-reference/beta/api/group_list_memberof" SEOKeyword="memberOf を一覧表示する、Microsoft Graph API、Groups API" SEODescription="directoryobject オブジェクトのリストを取得します。" />
         <Item text="メンバーを一覧表示する" url="/en-us/api-reference/beta/api/group_list_members" SEOKeyword="メンバーを一覧表示する、Microsoft Graph API、Groups API" SEODescription="directoryobject オブジェクトのリストを取得します。" />
         <Item text="所有者を一覧表示する" url="/en-us/api-reference/beta/api/group_list_owners" SEOKeyword="所有者を一覧表示する、Microsoft Graph API、Groups API" SEODescription="directoryobject オブジェクトのリストを取得します。" />
         <Item text="グループを完全に削除する" url="/en-us/api-reference/beta/api/directory_deleteditems_delete" />
@@ -814,7 +822,17 @@
           <Item text="複数値のプロパティを取得する" url="/en-us/api-reference/beta/api/multivaluelegacyextendedproperty_get" SEODescription="" />
         </Item>
       </Item>
-      <Item text="メモ" url="/en-us/api-reference/beta/resources/onenote" SEOKeyword="ユーザーのメモ, Microsoft Graph API, ユーザー API" SEODescription="">
+      <Item text="ライフサイクル ポリシー" url="/en-us/api-reference/beta/resources/grouplifecyclepolicy">
+		<Item text="ポリシーを作成する" url="/en-us/api-reference/beta/api/grouplifecyclepolicy_post_grouplifecyclepolicies" />
+		<Item text="ポリシーを一覧表示する" url="/en-us/api-reference/beta/api/grouplifecyclepolicy_list" />
+		<Item text="ポリシーを取得する" url="/en-us/api-reference/beta/api/grouplifecyclepolicy_get" />
+		<Item text="ポリシーを更新する" url="/en-us/api-reference/beta/api/grouplifecyclepolicy_update" />
+		<Item text="ポリシーを削除する" url="/en-us/api-reference/beta/api/grouplifecyclepolicy_delete" />
+		<Item text="グループを追加する" url="/en-us/api-reference/beta/api/grouplifecyclepolicy_addgroup" />
+		<Item text="グループを削除する" url="/en-us/api-reference/beta/api/grouplifecyclepolicy_removegroup" />
+		<Item text="グループを更新する" url="/en-us/api-reference/beta/api/grouplifecyclepolicy_renewgroup" />	  
+	  </Item>
+	  <Item text="メモ" url="/en-us/api-reference/beta/resources/onenote" SEOKeyword="ユーザーのメモ, Microsoft Graph API, ユーザー API" SEODescription="">
         <Item text="ノートブックを一覧表示する" url="/en-us/api-reference/beta/api/onenote_list_notebooks" SEOKeyword="ノートブックを一覧表示する、Microsoft Graph API、ノーツ API" SEODescription="notebook(../resources/notebook.md) オブジェクトのリストを取得します。" />
         <Item text="ノートブックを作成する" url="/en-us/api-reference/beta/api/onenote_post_notebooks" SEOKeyword="ノートブックを作成する、Microsoft Graph API、ノーツ API" SEODescription="新しい OneNote ノートブックを作成します (../resources/notebook.md)。" />
       </Item>
