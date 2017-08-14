@@ -36,7 +36,9 @@ GET /users/{id|userPrincipalName}/mailboxSettings/timeZone
 
 ## <a name="request-body"></a>要求本文
 このメソッドには、要求本文を指定しません。
+
 ## <a name="response"></a>応答
+
 成功した場合、このメソッドは `200 OK` 応答コードと、次に示す要求されたオブジェクトのいずれかを応答本文で返します。
 
 - [mailboxSettings](../resources/mailboxsettings.md) オブジェクト

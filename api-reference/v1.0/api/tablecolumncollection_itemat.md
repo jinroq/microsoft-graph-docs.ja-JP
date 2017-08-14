@@ -27,6 +27,7 @@ POST /workbook/worksheets/{id|name}/tables/{id|name}/columns/ItemAt
 |index|number|取得するオブジェクトのインデックス値。0 を起点とする番号になります。|
 
 ## <a name="response"></a>応答
+
 成功した場合、このメソッドは `200, OK` 応答コードと、応答本文で [TableColumn](../resources/tablecolumn.md) オブジェクトを返します。
 
 ## <a name="example"></a>例

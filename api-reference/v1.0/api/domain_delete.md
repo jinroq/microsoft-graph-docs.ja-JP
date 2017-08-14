@@ -29,7 +29,7 @@ DELETE /domains/{id}
 
 このメソッドには、要求本文を指定しません。
 
-### <a name="response"></a>応答
+## <a name="response"></a>応答
 
 成功した場合、このメソッドは `204, No Content` 応答コードを返します。応答本文は返されません。
 

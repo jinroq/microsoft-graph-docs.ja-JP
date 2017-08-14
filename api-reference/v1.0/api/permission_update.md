@@ -8,7 +8,7 @@
 
 * Files.ReadWrite
 * Files.ReadWrite.All
-* Shares.ReadWrite.All
+* Sites.ReadWrite.All
 
 ## <a name="http-request"></a>HTTP 要求
 
@@ -34,8 +34,8 @@ PATCH /groups/{group-id}/drive/items/{item-id}/permissions/{perm-id}
 |:-------------|:-------|:------------------------------|
 | **roles**    | String | アクセス許可の種類の配列。 |
 
-
 ## <a name="response"></a>応答
+
 成功した場合、このメソッドは `200 OK` 応答コードと、応答本文で、更新された[アクセス許可](../resources/permission.md)オブジェクトを返します。
 
 ## <a name="example"></a>例

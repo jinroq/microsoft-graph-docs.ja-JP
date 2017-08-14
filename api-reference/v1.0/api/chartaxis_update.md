@@ -30,6 +30,7 @@ PATCH /workbook/worksheets/{id|name}/charts(<name>)/axes/categoryaxis
 |minorUnit|object|2 つの小さい目盛の間隔を表します。"数値の値または空の文字列を設定できます (軸の値が自動の場合)。戻り値は常に数値です。|
 
 ## <a name="response"></a>応答
+
 成功した場合、このメソッドは `200 OK` 応答コードと、応答本文で、更新された [ChartAxis](../resources/chartaxis.md) オブジェクトを返します。
 ## <a name="example"></a>例
 ##### <a name="request"></a>要求

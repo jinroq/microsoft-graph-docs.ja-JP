@@ -26,7 +26,8 @@ POST /domains/{id}/verify
 
 ## <a name="request-body"></a>要求本文
 
-### <a name="response"></a>応答
+## <a name="response"></a>応答
+
 成功した場合、このメソッドは応答本文で `200, OK` 応答コードと [domain](../resources/domain.md) オブジェクトを返します。
 
 ## <a name="example"></a>例

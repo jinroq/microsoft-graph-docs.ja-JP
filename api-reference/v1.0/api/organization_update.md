@@ -28,7 +28,7 @@ PATCH /organization
 |dirSyncEnabled|Boolean|このオブジェクトがオンプレミスのディレクトリから同期される場合は **true**。このオブジェクトが最初にオンプレミスのディレクトリから同期されていて、今後は同期されない場合は **false**。このオブジェクトがオンプレミスのディレクトリから一度も同期されたことがない場合は **null** (既定値)。|
 |displayName|String|テナントの表示名。|
 |marketingNotificationEmails|String|                                        **注**: Null は許容されません。            |
-|objectType|String|オブジェクトの種類を識別する文字列です。テナントの場合、値は常に「Company」です。[directoryObject](../resources/directoryobject.md) から継承されます。|
+|objectType|文字列|オブジェクトの種類を識別する文字列です。テナントの場合、値は常に「Company」です。[directoryObject](../resources/directoryobject.md) から継承されます。|
 |postalCode|String|            |
 |preferredLanguage|String|            |
 |provisionedPlans|ProvisionedPlan|                                        **注**: Null は許容されません。            |
@@ -42,6 +42,7 @@ PATCH /organization
 |verifiedDomains|VerifiedDomain|このテナントに関連付けられているドメインのコレクション。                          **注**: Null は許容されません。            |
 
 ## <a name="response"></a>応答
+
 成功した場合、このメソッドは `200 OK` 応答コードと、応答本文で更新された [organization](../resources/organization.md) オブジェクトを返します。
 ## <a name="example"></a>例
 ##### <a name="request"></a>要求

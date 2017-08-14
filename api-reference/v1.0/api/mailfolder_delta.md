@@ -35,8 +35,8 @@ GET /users/<id>/mailFolders/delta
 | Content-Type  | string  | application/json. Required. |
 | Prefer | string  | odata.maxpagesize={x}.省略可能。 |
 
+## <a name="response"></a>応答
 
-### <a name="response"></a>応答
 成功した場合、このメソッドは `200, OK` 応答コードと、応答本文で [mailFolder](../resources/mailfolder.md) コレクション オブジェクトを返します。
 
 ## <a name="example"></a>例

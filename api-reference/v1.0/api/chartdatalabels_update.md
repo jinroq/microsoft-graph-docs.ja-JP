@@ -32,6 +32,7 @@ PATCH /workbook/worksheets/{id|name}/charts(<name>)/datalabels
 |showValue|boolean|データ ラベルの値を表示するか非表示にするかを表すブール型の値。|
 
 ## <a name="response"></a>応答
+
 成功した場合、このメソッドは `200 OK` 応答コードと、応答本文で、更新された [ChartDataLabels](../resources/chartdatalabels.md) オブジェクトを返します。
 ## <a name="example"></a>例
 ##### <a name="request"></a>要求

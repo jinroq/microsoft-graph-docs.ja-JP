@@ -21,7 +21,8 @@ GET /domains
 ## <a name="request-body"></a>要求本文
 このメソッドには、要求本文を指定しません。
 
-### <a name="response"></a>応答
+## <a name="response"></a>応答
+
 成功した場合、このメソッドは `200 OK` 応答コードと、応答本文で [domain](../resources/domain.md) オブジェクトのコレクションを返します。
 ## <a name="example"></a>例
 ##### <a name="request"></a>要求

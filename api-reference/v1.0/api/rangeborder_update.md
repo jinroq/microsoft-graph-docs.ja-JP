@@ -29,6 +29,7 @@ PATCH /workbook/tables/{id|name}/columns/{id|name}/range/format/borders(<sideInd
 |weight|string|範囲を取り囲む罫線の太さを指定します。可能な値は、`Hairline`、`Thin`、`Medium`、`Thick` です。|
 
 ## <a name="response"></a>応答
+
 成功した場合、このメソッドは `200 OK` 応答コードと、応答本文で、更新された [RangeBorder](../resources/rangeborder.md) オブジェクトを返します。
 ## <a name="example"></a>例
 ##### <a name="request"></a>要求

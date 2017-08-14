@@ -24,7 +24,8 @@ PATCH /planner/plans/<id>
 |owner|String|計画を所有する [グループ](../resources/group.md) `id`。このフィールドを設定するためには、有効なグループが存在していなければなりません。一度設定したら、所有者のみが更新できます。|
 |title|String|計画のタイトル。|
 
-### <a name="response"></a>応答
+## <a name="response"></a>応答
+
 成功した場合、このメソッドは `200 OK` 応答コードと、応答本文で更新された [plannerPlan](../resources/plannerplan.md) オブジェクトを返します。
 
 このメソッドは、いずれかの [HTTP 状態コード](../../../concepts/errors.md)を返します。このメソッドでアプリが処理する最も一般的なエラーは、400、403、404、409、412 応答です。これらのエラーの詳細については、「[一般的なプランナーのエラー条件](../resources/planner_overview.md#common-planner-error-conditions)」を参照してください。

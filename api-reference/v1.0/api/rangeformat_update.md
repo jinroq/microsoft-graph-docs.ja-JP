@@ -31,6 +31,7 @@ PATCH /workbook/tables/{id|name}/columns/{id|name}/range/format
 |wrapText|boolean|オブジェクト内のテキストを Excel でラップするかどうかを表します。null 値は、範囲全体に一様なラップ設定がないことを表します。|
 
 ## <a name="response"></a>応答
+
 成功した場合、このメソッドは `200 OK` 応答コードと、応答本文で、更新された [RangeFormat](../resources/rangeformat.md) オブジェクトを返します。
 ## <a name="example"></a>例
 ##### <a name="request"></a>要求

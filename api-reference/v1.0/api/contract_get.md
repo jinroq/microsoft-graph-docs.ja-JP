@@ -26,7 +26,7 @@ GET /contracts/{id}
 
 このメソッドには、要求本文を指定しません。
 
-### <a name="response"></a>応答
+## <a name="response"></a>応答
 
 成功した場合、このメソッドは応答本文で `200 OK` 応答コードと [Contract](../resources/contract.md) オブジェクトを返します。
 

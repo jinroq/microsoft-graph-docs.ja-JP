@@ -20,8 +20,8 @@ DELETE /planner/buckets/<id>
 ## <a name="request-body"></a>要求本文
 このメソッドには、要求本文を指定しません。
 
+## <a name="response"></a>応答
 
-### <a name="response"></a>応答
 成功した場合、このメソッドは `204, No Content` 応答コードを返します。応答本文には何も返されません。
 
 このメソッドは、いずれかの [HTTP 状態コード](../../../concepts/errors.md)を返します。このメソッドでアプリが処理する最も一般的なエラーは、400、403、404、409、412 応答です。これらのエラーの詳細については、「[一般的なプランナーのエラー条件](../resources/planner_overview.md#common-planner-error-conditions)」を参照してください。

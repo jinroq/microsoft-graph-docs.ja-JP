@@ -9,8 +9,8 @@
 * Files.ReadWrite
 * Files.Read.All
 * Files.ReadWrite.All
-* Shares.Read.All
-* Shares.ReadWrite.All
+* Sites.Read.All
+* Sites.ReadWrite.All
 
 ## <a name="http-request"></a>HTTP 要求
 
@@ -28,6 +28,7 @@ GET /groups/{group-id}/drive/items/{item-id}/permissions/{perm-id}
 このメソッドには、要求本文を指定しません。
 
 ## <a name="response"></a>応答
+
 成功した場合、このメソッドは `200 OK` 応答コードと、応答本文で [Permission](../resources/permission.md) リソースを返します。
 
 ## <a name="example"></a>例

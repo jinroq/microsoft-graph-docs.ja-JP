@@ -24,6 +24,7 @@ PATCH /sites/{id}/onenote/pages/{id}/content
 要求本文で、ページの変更内容を表す [patchContentCommand](../resources/patchcontentcommand.md) オブジェクトの配列を指定します。詳細と例については、「<a href="https://msdn.microsoft.com/office/office365/howto/onenote-update-page">OneNote ページ コンテンツを更新する</a>」を参照してください。
 
 ## <a name="response"></a>応答
+
 成功した場合、このメソッドは `204 No Content` 応答コードを返します。PATCH 要求に対して JSON データは返されません。
 ## <a name="example"></a>例
 ##### <a name="request"></a>要求

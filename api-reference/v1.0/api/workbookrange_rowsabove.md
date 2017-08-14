@@ -24,7 +24,8 @@ POST /me/drive/root/workbook/worksheets/{id}/range/rowsAbove(count=n)
 
 ## <a name="request-body"></a>要求本文
 
-### <a name="response"></a>応答
+## <a name="response"></a>応答
+
 成功した場合、このメソッドは `200, OK` 応答コードと、応答本文で [workbookRange](../resources/range.md) オブジェクトを返します。
 
 ## <a name="example"></a>例

@@ -28,6 +28,7 @@ POST /workbook/worksheets/{id|name}/charts/add
 |seriesBy|string|省略可能。列や行がグラフのデータ系列として使用される方法を指定します。可能な値は、`Auto`、`Columns`、`Rows` です。|
 
 ## <a name="response"></a>応答
+
 成功した場合、このメソッドは `200, OK` 応答コードと、応答本文で[グラフ](../resources/chart.md) オブジェクトを返します。
 
 ## <a name="example"></a>例

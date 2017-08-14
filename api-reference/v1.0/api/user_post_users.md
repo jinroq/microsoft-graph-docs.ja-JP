@@ -29,6 +29,7 @@ POST /users
 |userPrincipalName |string |ユーザー プリンシパル名 (someuser@contoso.com)。|
 
 ## <a name="response"></a>応答
+
 成功した場合、このメソッドは `201, Created` 応答コードと、応答本文で[ユーザー](../resources/user.md) オブジェクトを返します。
 
 ## <a name="example"></a>例

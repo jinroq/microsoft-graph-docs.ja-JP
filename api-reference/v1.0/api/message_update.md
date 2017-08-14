@@ -40,6 +40,7 @@ PATCH /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}
 **メッセージ** リソースは[拡張機能](../../../concepts/extensibility_overview.md)をサポートしているため、`PATCH` 操作を使用して、既存の**メッセージ** インスタンスで拡張機能のカスタム プロパティにあるアプリ固有のデータを追加、更新、または削除することができます。
 
 ## <a name="response"></a>応答
+
 成功した場合、このメソッドは `200 OK` 応答コードと、応答本文で更新された [message](../resources/message.md) オブジェクトを返します。
 ## <a name="example"></a>例
 ##### <a name="request"></a>要求

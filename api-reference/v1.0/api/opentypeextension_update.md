@@ -64,7 +64,6 @@ PATCH /users/{id|userPrincipalName}/extensions/{extensionId}
 | @odata.type | Microsoft.Graph.OpenTypeExtension |
 | extensionName | %unique_string% |
 
-
 ## <a name="response"></a>応答
 
 成功した場合、このメソッドは `200 OK` 応答コードと、更新した [openTypeExtension](../resources/openTypeExtension.md) オブジェクトを返します。

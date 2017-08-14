@@ -28,6 +28,7 @@ POST /workbook/tables/{id|name}/columns/{id|name}/range/Row
 |row|number|取得する範囲の行番号。0 を起点とする番号になります。|
 
 ## <a name="response"></a>応答
+
 成功した場合、このメソッドは `200, OK` 応答コードと、応答本文で [Range](../resources/range.md) オブジェクトを返します。
 
 ## <a name="example"></a>例

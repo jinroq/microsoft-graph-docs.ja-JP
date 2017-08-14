@@ -26,6 +26,7 @@ POST /workbook/worksheets/
 |name|string|省略可能。追加するワークシートの名前。指定する場合、名前は一意である必要があります。指定されていない場合は、Excel が新しいワークシートの名前を決定します。|
 
 ## <a name="response"></a>応答
+
 成功した場合、このメソッドは `200, OK` 応答コードと、応答本文で[ワークシート](../resources/worksheet.md) オブジェクトを返します。
 
 ## <a name="example"></a>例

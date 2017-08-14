@@ -26,6 +26,7 @@ POST /workbook/worksheets/{id|name}/Range
 |address|string|省略可能。範囲のアドレスまたは名前。指定されていない場合は、ワークシート全体の範囲が返されます。|
 
 ## <a name="response"></a>応答
+
 成功した場合、このメソッドは `200, OK` 応答コードと、応答本文で [Range](../resources/range.md) オブジェクトを返します。
 
 ## <a name="example"></a>例

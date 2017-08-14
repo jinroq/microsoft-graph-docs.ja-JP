@@ -152,7 +152,7 @@ GET /groups/{id}/conversations/{id}/threads/{id}/posts?$filter=singleValueExtend
 |:-----|:-----|:-----|
 |_URL parameters_|
 |id_value|String|照合する拡張プロパティの ID。サポートされている形式のいずれかに従う必要があります。詳しくは、「[Outlook の拡張プロパティの概要](../resources/extended-properties-overview.md)」を参照してください。必須。|
-|property_value|String|照合する拡張プロパティの値。前述の「**HTTP 要求**」セクションに示した一覧で必要になります。|
+|property_value|文字列|照合する拡張プロパティの値。前述の「**HTTP 要求**」セクションに示した一覧で必要になります。|
 
 ## <a name="request-headers"></a>要求ヘッダー
 | 名前      |説明|
@@ -162,7 +162,9 @@ GET /groups/{id}/conversations/{id}/threads/{id}/posts?$filter=singleValueExtend
 
 ## <a name="request-body"></a>要求本文
 このメソッドには、要求本文を指定しません。
+
 ## <a name="response"></a>応答
+
 成功した場合、このメソッドは `200 OK` 応答コードを返します。
 
 #### <a name="get-resource-instance-using-expand"></a>`$expand` を使用してリソース インスタンスを取得する

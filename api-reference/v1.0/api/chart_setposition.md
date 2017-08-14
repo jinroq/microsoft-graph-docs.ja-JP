@@ -27,6 +27,7 @@ POST /workbook/worksheets/{id|name}/charts(<name>)/setPosition
 |endCell|string|省略可能。終了セル。指定されている場合、グラフの幅と高さは、このセルまたは範囲を完全にカバーするように設定されます。|
 
 ## <a name="response"></a>応答
+
 成功した場合、このメソッドは `200, OK` 応答コードを返します。応答本文には何も返されません。
 
 ## <a name="example"></a>例

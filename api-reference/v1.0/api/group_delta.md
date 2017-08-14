@@ -42,7 +42,7 @@ GET /groups/delta
 ## <a name="request-body"></a>要求本文
 このメソッドには、要求本文を指定しません。
 
-### <a name="response"></a>応答
+## <a name="response"></a>応答
 
 成功した場合、このメソッドは `200, OK` 応答コードと、応答本文で [group](../resources/group.md) コレクション オブジェクトを返します。応答には、状態トークン (nextLink URL や deltaLink URL) も含まれます。
 

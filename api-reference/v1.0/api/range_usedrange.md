@@ -28,6 +28,7 @@ GET /workbook/tables/{id|name}/columns/{id|name}/range/UsedRange
 |valuesOnly|boolean|省略可能。値の入っているセルのみを使用セルと見なします。|
 
 ## <a name="response"></a>応答
+
 成功した場合、このメソッドは `200, OK` 応答コードと、応答本文で [Range](../resources/range.md) オブジェクトを返します。
 
 ## <a name="example"></a>例

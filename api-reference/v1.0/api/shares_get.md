@@ -10,7 +10,7 @@
 
 * Files.ReadWrite
 * Files.ReadWrite.All
-* Shares.ReadWrite.All
+* Sites.ReadWrite.All
 
 ## <a name="http-request"></a>HTTP 要求
 
@@ -23,6 +23,7 @@ GET /shares/{sharingIdOrUrl}
 このメソッドには、要求本文を指定しません。
 
 ## <a name="response"></a>応答
+
 成功した場合、このメソッドは `200 OK` 応答コードと、応答本文で [sharedDriveItem](../resources/shareddriveitem.md) リソースを返します。
 
 ## <a name="example"></a>例

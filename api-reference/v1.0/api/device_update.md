@@ -19,7 +19,9 @@ PATCH /devices/{id}
 
 ## <a name="request-body"></a>要求本文
 要求本文で、更新する[デバイス](../resources/device.md) プロパティの値を指定します。
+
 ## <a name="response"></a>応答
+
 成功した場合、このメソッドは `204 No Content` 応答コードを返します。
 
 ## <a name="example"></a>例

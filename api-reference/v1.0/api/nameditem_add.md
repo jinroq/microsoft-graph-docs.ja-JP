@@ -31,6 +31,7 @@ POST /workbook/worksheets({id|name})/names/add
 |comment|string|名前付きアイテムに関連付けられているコメント。|
 
 ## <a name="response"></a>応答
+
 成功した場合、このメソッドは `200, OK` 応答コードと、応答本文で [NamedItem](../resources/NamedItem.md) オブジェクトを返します。
 
 

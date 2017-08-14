@@ -25,8 +25,8 @@ POST /users/{id}/inferenceClassification/overrides
 ## <a name="request-body"></a>要求本文
 要求の本文に、[inferenceClassificationOverride](../resources/inferenceclassificationoverride.md) オブジェクトの JSON 表記を指定します。
 
-
 ## <a name="response"></a>応答
+
 成功した場合、このメソッドは `201, Created` 応答コードと、応答本文で [inferenceClassificationOverride](../resources/inferenceclassificationoverride.md) オブジェクトを返します。
 
 ## <a name="example"></a>例

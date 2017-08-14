@@ -27,6 +27,7 @@ PATCH /workbook/worksheets/{id|name}
 |visibility|string|ワークシートの可視性。可能な値は、`Visible`、`Hidden`、`VeryHidden` です。|
 
 ## <a name="response"></a>応答
+
 成功した場合、このメソッドは `200 OK` 応答コードと、応答本文で、更新された[ワークシート](../resources/worksheet.md) オブジェクトを返します。
 ## <a name="example"></a>例
 ##### <a name="request"></a>要求

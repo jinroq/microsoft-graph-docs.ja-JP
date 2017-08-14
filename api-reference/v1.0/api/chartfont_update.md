@@ -29,9 +29,10 @@ PATCH /workbook/worksheets/{id|name}/charts(<name>)/axes/categoryaxis/format/fon
 |italic|boolean|フォントの斜体の状態を表します。|
 |name|string|フォント名 (例: "Calibri")|
 |size|double|フォント サイズ (例: 11)|
-|underline|string|フォントに適用する下線の種類。可能な値は、`None`、`Single` です。|
+|underline|文字列|フォントに適用する下線の種類。可能な値は、`None`、`Single` です。|
 
 ## <a name="response"></a>応答
+
 成功した場合、このメソッドは `200 OK` 応答コードと、応答本文で、更新された [ChartFont](../resources/chartfont.md) オブジェクトを返します。
 ## <a name="example"></a>例
 ##### <a name="request"></a>要求

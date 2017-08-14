@@ -33,6 +33,7 @@ PATCH /workbook/tables/{id|name}/columns/{id|name}/range
 |values|json|指定した範囲の Raw 値を表します。返されるデータの型は、文字列、数値、またはブール値のいずれかになります。エラーが含まれているセルは、エラー文字列を返します。|
 
 ## <a name="response"></a>応答
+
 成功した場合、このメソッドは `200 OK` 応答コードと、応答本文で、更新された [Range](../resources/range.md) オブジェクトを返します。
 ## <a name="example"></a>例
 ##### <a name="request"></a>要求

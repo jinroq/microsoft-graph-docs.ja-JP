@@ -22,8 +22,8 @@ POST /groups/{group-id}/drive/items/{parent-item-id}/children
 ## <a name="request-body"></a>要求本文
 要求本文で、作成する [DriveItem](../resources/driveitem.md) リソースの JSON 表記を指定します。
 
-
 ## <a name="response"></a>応答
+
 成功した場合、このメソッドは `201 Created` 応答コードと、応答本文で [Driveitem](../resources/driveitem.md) リソースを返します。
 
 ## <a name="example"></a>例

@@ -28,6 +28,7 @@ POST /workbook/worksheets/{id|name}/tables/add
 |hasHeaders|boolean|インポートされたデータに列ラベルがあるかどうかを示すブール値。ソースにヘッダーが含まれていない場合 (このプロパティが false に設定されている場合)、Excel はデータを下方向に 1 行シフトして、自動的にヘッダーを生成します。|
 
 ## <a name="response"></a>応答
+
 成功した場合、このメソッドは `200, OK` 応答コードと、応答本文で[テーブル](../resources/table.md) オブジェクトを返します。
 
 ## <a name="example"></a>例

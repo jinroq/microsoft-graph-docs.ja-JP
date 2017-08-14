@@ -25,7 +25,8 @@ POST /domains
 
 > 要求本文には、新しいドメインの id プロパティが含まれます。id は指定できる唯一のプロパティで、必須です。id プロパティ値は、作成する完全修飾ドメイン名です。
 
-### <a name="response"></a>応答
+## <a name="response"></a>応答
+
 成功した場合、このメソッドは応答本文で `201, Created` 応答コードと [domain](../resources/domain.md) オブジェクトを返します。
 
 ## <a name="example"></a>例

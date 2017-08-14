@@ -26,6 +26,7 @@ PATCH /workbook/names(<name>)
 |comment|   string  |この名前に関連付けられているコメントを表します。|
 
 ## <a name="response"></a>応答
+
 成功した場合、このメソッドは `200 OK` 応答コードと、応答本文で更新された [NamedItem](../resources/nameditem.md) オブジェクトを返します。
 ## <a name="example"></a>例
 ##### <a name="request"></a>要求

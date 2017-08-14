@@ -24,6 +24,7 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/copy
 |destinationId|String|フォルダー ID、または *Inbox*、*Drafts*、*SentItems*、または *DeletedItems* よく知られているフォルダー名。|
 
 ## <a name="response"></a>応答
+
 成功した場合、このメソッドは `200, OK` 応答コードと、応答本文で [MailFolder](../resources/mailfolder.md) オブジェクトを返します。
 
 ## <a name="example"></a>例

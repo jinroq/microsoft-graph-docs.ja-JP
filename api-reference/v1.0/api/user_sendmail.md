@@ -23,10 +23,11 @@ POST /users/{id | userPrincipalName}/sendMail
 
 | パラメーター    | 型   |説明|
 |:---------------|:--------|:----------|
-|Message|[Message](../resources/message.md)|送信するメッセージです。必須。|
+|Message|[メッセージ](../resources/message.md)|送信するメッセージです。必須。|
 |SaveToSentItems|Boolean|[送信済みアイテム] 内のメッセージを保存するかどうかを示します。パラメーターを false にする場合にのみ指定します。既定では true です。省略可能。 |
 
 ## <a name="response"></a>応答
+
 成功した場合、このメソッドは `202, Accepted` 応答コードを返します。応答本文には何も返されません。
 
 ## <a name="example"></a>例

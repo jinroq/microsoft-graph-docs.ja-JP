@@ -26,6 +26,7 @@ POST /sites/{id}/onenote/sectionGroups/{id}/sectionGroups
 同じ階層レベルのセクション グループには一意の名前が必要です。名前は 50 文字以内で、次の文字は使用できません: ?*\/:<>|&#''%~
 
 ## <a name="response"></a>応答
+
 成功した場合、このメソッドは `201 Created` 応答コードと、応答本文で [sectionGroup](../resources/sectiongroup.md) オブジェクトを返します。
 
 ## <a name="example"></a>例

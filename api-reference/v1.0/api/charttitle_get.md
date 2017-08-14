@@ -22,7 +22,9 @@ GET /workbook/worksheets/{id|name}/charts(<name>)/title
 
 ## <a name="request-body"></a>要求本文
 このメソッドには、要求本文を指定しません。
+
 ## <a name="response"></a>応答
+
 成功した場合、このメソッドは `200 OK` 応答コードと、応答本文で [ChartTitle](../resources/charttitle.md) オブジェクトを返します。
 ## <a name="example"></a>例
 ##### <a name="request"></a>要求

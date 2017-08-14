@@ -27,6 +27,7 @@ PATCH /workbook/worksheets/{id|name}/charts(<name>)/axes/seriesaxis/majorgridlin
 |color|string|グラフの線の色を表す HTML カラー コード。|
 
 ## <a name="response"></a>応答
+
 成功した場合、このメソッドは `200 OK` 応答コードと、応答本文で、更新された [ChartLineFormat](../resources/chartlineformat.md) オブジェクトを返します。
 ## <a name="example"></a>例
 ##### <a name="request"></a>要求

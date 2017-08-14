@@ -33,6 +33,7 @@ POST /users/{id | userPrincipalName}/calendars/{id}/events
 **イベント** リソースは[拡張機能](../../../concepts/extensibility_overview.md)をサポートしているため、`POST` 操作を使用して、リソースの作成時にカスタム プロパティを独自のデータとともにイベントに追加することができます。
 
 ## <a name="response"></a>応答
+
 成功した場合、このメソッドは `201, Created` 応答コードと、応答本文で[イベント](../resources/event.md) オブジェクトを返します。
 
 ## <a name="example"></a>例

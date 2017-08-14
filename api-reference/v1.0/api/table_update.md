@@ -29,6 +29,7 @@ PATCH /workbook/worksheets/{id|name}/tables/{id|name}
 |style|string|テーブル スタイルを表す定数値。使用可能な値は次のとおりです。TableStyleLight1 から TableStyleLight21、TableStyleMedium1 から TableStyleMedium28、TableStyleStyleDark1 から TableStyleStyleDark11。ブックに存在するカスタムのユーザー定義スタイルも指定できます。|
 
 ## <a name="response"></a>応答
+
 成功した場合、このメソッドは `200 OK` 応答コードと、応答本文で、更新された [Table](../resources/table.md) オブジェクトを返します。
 ## <a name="example"></a>例
 ##### <a name="request"></a>要求

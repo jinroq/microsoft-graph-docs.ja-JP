@@ -27,6 +27,7 @@ PATCH /workbook/worksheets/{id|name}/charts(<name>)/title
 |visible|boolean|ChartTitle オブジェクトを表示または非表示にするかを表すブール型の値。|
 
 ## <a name="response"></a>応答
+
 成功した場合、このメソッドは `200 OK` 応答コードと、応答本文で、更新された [ChartTitle](../resources/charttitle.md) オブジェクトを返します。
 ## <a name="example"></a>例
 ##### <a name="request"></a>要求

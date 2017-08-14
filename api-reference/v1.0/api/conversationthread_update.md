@@ -25,6 +25,7 @@ PATCH /groups/{id}/conversations/{id}/threads/{id}
 |isLocked|Boolean|スレッドがロックされているかどうかを示します。転記を禁止するために `true` に設定します。|
 
 ## <a name="response"></a>応答
+
 成功した場合、このメソッドは `200 OK` 応答コードと、応答本文で、更新された [conversationThread](../resources/conversationthread.md) オブジェクトを返します。
 ## <a name="example"></a>例
 ##### <a name="request"></a>要求

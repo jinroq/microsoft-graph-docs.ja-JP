@@ -38,8 +38,8 @@ GET /users/<id>/calendarView/delta?startDateTime={start_datetime}&endDateTime={e
 | Prefer | string  | odata.maxpagesize={x}.省略可能。 |
 | Prefer | string | {タイム ゾーン}。省略可能。指定しない場合、UTC が使用されます。|
 
+## <a name="response"></a>応答
 
-### <a name="response"></a>応答
 成功した場合、このメソッドは `200, OK` の応答コードと、応答本文で [イベント](../resources/event.md) コレクション オブジェクトを返します。
 
 ## <a name="example"></a>例

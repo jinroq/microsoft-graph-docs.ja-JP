@@ -38,6 +38,7 @@ GET /me/drive/special/{name}
 このメソッドには、要求本文を指定しません。
 
 ## <a name="response"></a>応答
+
 成功した場合、このメソッドは `200 OK` 応答コードと、応答本文で [driveItem](../resources/driveitem.md) オブジェクトを返します。
 
 ## <a name="example"></a>例

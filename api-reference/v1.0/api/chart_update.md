@@ -29,6 +29,7 @@ PATCH /workbook/worksheets/{id|name}/charts(<name>)
 |width|double|グラフ オブジェクトの幅をポイント単位で表します。|
 
 ## <a name="response"></a>応答
+
 成功した場合、このメソッドは `200 OK` 応答コードと、応答本文で、更新された[グラフ](../resources/chart.md) オブジェクトを返します。
 ## <a name="example"></a>例
 ##### <a name="request"></a>要求

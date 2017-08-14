@@ -23,6 +23,7 @@ GET /workbook/tables/{id|name}/columns/{id|name}/range/EntireColumn
 ## <a name="request-body"></a>要求本文
 
 ## <a name="response"></a>応答
+
 成功した場合、このメソッドは `200, OK` 応答コードと、応答本文で [Range](../resources/range.md) オブジェクトを返します。
 
 ## <a name="example"></a>例

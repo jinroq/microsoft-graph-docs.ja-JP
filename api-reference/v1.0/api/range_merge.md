@@ -28,6 +28,7 @@ POST /workbook/tables/{id|name}/columns/{id|name}/range/merge
 |across|boolean|省略可能。指定した範囲のセルを行ごとに結合して、行ごとに別のセルを作成する場合は True に設定します。既定値は False です。|
 
 ## <a name="response"></a>応答
+
 成功した場合、このメソッドは `200, OK` 応答コードを返します。応答本文には何も返されません。
 
 ## <a name="example"></a>例

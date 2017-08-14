@@ -45,6 +45,7 @@ GET /groups/{group-id}/drive/items/{item-id}/permissions
 このメソッドには、要求本文を指定しません。
 
 ## <a name="response"></a>応答
+
 成功した場合、このメソッドは応答本文で `200 OK` 応答コードと、[Permission](../resources/permission.md) リソースのコレクションを返します。
 
 アイテムの有効なアクセス許可は、次の 2 つのソースが元になります。

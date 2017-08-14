@@ -22,6 +22,7 @@ GET /schemaExtensions/{id}
 このメソッドには、要求本文を指定しません。
 
 ## <a name="response"></a>応答
+
 成功した場合、このメソッドは応答本文で `200 OK` 応答コードと [schemaExtension](../resources/schemaextension.md) オブジェクトを返します。
 ## <a name="example"></a>例
 ##### <a name="request"></a>要求

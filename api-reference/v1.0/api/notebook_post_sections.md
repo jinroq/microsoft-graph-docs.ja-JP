@@ -26,6 +26,7 @@ POST /sites/{id}/onenote/notebooks/{id}/sections
 同じ階層レベルでは、セクションの名前を一意にする必要があります。名前は 50 文字以内で、次の文字は使用できません: ?*\/:<>|&#''%~
 
 ## <a name="response"></a>応答
+
 成功した場合、このメソッドは `201 Created` 応答コードと、応答本文で [section](../resources/section.md) オブジェクトを返します。
 
 ## <a name="example"></a>例

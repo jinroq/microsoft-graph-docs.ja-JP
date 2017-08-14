@@ -24,8 +24,8 @@ POST /users/{id | userPrincipalName}/calendarGroups/{id}/calendars
 ## <a name="request-body"></a>要求本文
 要求本文で、[予定表](../resources/calendar.md)オブジェクトの JSON 表記を指定します。
 
-
 ## <a name="response"></a>応答
+
 成功した場合、このメソッドは `201, Created` 応答コードと、応答本文で[予定表](../resources/calendar.md)オブジェクトを返します。
 
 ## <a name="example"></a>例

@@ -28,6 +28,7 @@ POST /workbook/tables/{id|name}/columns/{id|name}/range/insert
 |<legacyBold>Shift</legacyBold>|string|セルをシフトする方向を指定します。可能な値は、`Down`、`Right` です。|
 
 ## <a name="response"></a>応答
+
 成功した場合、このメソッドは `200, OK` 応答コードと、応答本文で [Range](../resources/range.md) オブジェクトを返します。
 
 ## <a name="example"></a>例

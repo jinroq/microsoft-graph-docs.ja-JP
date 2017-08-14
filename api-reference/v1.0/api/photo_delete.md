@@ -4,7 +4,7 @@
 ## <a name="prerequisites"></a>前提条件
 この API を実行するには、以下のいずれかの**スコープ**が必要です。
 
-  * File.ReadWrite
+  * Files.ReadWrite
 
 ## <a name="http-request"></a>HTTP 要求
 <!-- { "blockType": "ignored" } -->
@@ -24,8 +24,8 @@ DELETE /drive/root/createdByUser/photo
 ## <a name="request-body"></a>要求本文
 このメソッドには、要求本文を指定しません。
 
-
 ## <a name="response"></a>応答
+
 成功した場合、このメソッドは `204, No Content` 応答コードを返します。応答本文には何も返されません。
 
 ## <a name="example"></a>例

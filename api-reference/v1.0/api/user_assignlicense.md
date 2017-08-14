@@ -23,6 +23,7 @@ POST /users/{id | userPrincipalName}/assignLicense
 |removeLicenses|Guid|削除するライセンスを識別する GUID のコレクションです。|
 
 ## <a name="response"></a>応答
+
 成功した場合、このメソッドは `200, OK` 応答コードと、応答本文で[ユーザー](../resources/user.md) オブジェクトを返します。
 
 ## <a name="example"></a>例
