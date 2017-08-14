@@ -6,11 +6,11 @@
 > - 削除されたドメインは回復できません。<br />
 > - ドメインにまだ依存しているリソースまたはオブジェクトがある場合、削除の試行は失敗します。[List domainNameReferences](domain_list_domainnamereferences.md) API を使用して、すべての依存リソースを探すことができます。
 
-### <a name="prerequisites"></a>前提条件
+## <a name="prerequisites"></a>前提条件
 
 この API を実行するには、以下のいずれかの**スコープ**が必要です。*Domain.ReadWrite.All* または *Directory.AccessAsUser.All*
 
-### <a name="http-request"></a>HTTP 要求
+## <a name="http-request"></a>HTTP 要求
 <!-- { "blockType": "ignored" } -->
 ```http
 DELETE /domains/{id}
@@ -18,14 +18,14 @@ DELETE /domains/{id}
 
 > {Id} には、ドメインを完全修飾ドメイン名で指定します。
 
-### <a name="request-headers"></a>要求ヘッダー
+## <a name="request-headers"></a>要求ヘッダー
 
 | 名前       | 説明|
 |:---------------|:----------|
 | Authorization  | ベアラー {トークン}。必須。 |
 | Content-Type  | application/json |
 
-### <a name="request-body"></a>要求本文
+## <a name="request-body"></a>要求本文
 
 このメソッドには、要求本文を指定しません。
 
@@ -33,7 +33,7 @@ DELETE /domains/{id}
 
 成功した場合、このメソッドは `204, No Content` 応答コードを返します。応答本文は返されません。
 
-### <a name="example"></a>例
+## <a name="example"></a>例
 ##### <a name="request"></a>要求
 
 <!-- {

@@ -6,7 +6,7 @@
 
 この API を実行するには、以下のいずれかの**スコープ**が必要です。*User.Read、User.ReadWrite、User.ReadBasic.All、User.Read.All、User.ReadWrite.All、Directory.Read.All、Directory.ReadWrite.All、Directory.AccessAsUser.All*
 
-### <a name="http-request"></a>HTTP 要求
+## <a name="http-request"></a>HTTP 要求
 
 変更の追跡を開始するには、ユーザー リソースにデルタ関数を含む要求を実行します。 
 
@@ -19,12 +19,12 @@ GET /users/delta
 
 ユーザーの変更を追跡すると、一連の **デルタ**関数呼び出しが発生します。任意のクエリ パラメーター (`$deltatoken` と `$skiptoken` 以外) を使用する場合は、最初の**デルタ**要求でこれを指定する必要があります。Microsoft Graph は、応答で提供される `nextLink` や `deltaLink` の URL のトークン部分に指定したパラメーターを自動的にエンコードします。必要なクエリ パラメーターを前もって指定しておくだけで済みます。それ以降の要求では、前の応答で `nextLink` や `deltaLink` の URL に必要なパラメーターが既にエンコードされ、含まれているため、この URL をコピーして適用します。
 
-| クエリ パラメーター       | 種類    |説明|
+| クエリ パラメーター      | 種類   |説明|
 |:---------------|:--------|:----------|
 | $deltatoken | string | 同じユーザー コレクションの前の**デルタ**関数の `deltaLink` URL で[状態トークン](../../../concepts/delta_query_overview.md)が返され、変更追跡のその回が完了したことを示します。このコレクションについて、このトークンを含む、`deltaLink` URL 全体を次の変更追跡のラウンドの最初の要求に保存し、適用します。|
 | $skiptoken | string | 前の**デルタ**関数の `nextLink` URL で[状態トークン](../../../concepts/delta_query_overview.md)が返され、同じユーザー コレクションで追跡されるその他の変更があることを示します。 |
 
-### <a name="optional-query-parameters"></a>オプションのクエリ パラメーター
+## <a name="optional-query-parameters"></a>オプションのクエリ パラメーター
 
 このメソッドは、応答をカスタマイズするための OData クエリ パラメーターをサポートします。
 
@@ -33,13 +33,13 @@ GET /users/delta
 - `$orderby` に対するサポートには制限があります。サポートされている唯一の `$orderby` 式は、`$orderby=receivedDateTime+desc` です。`$orderby` 式を含めない場合、戻り値の順序は保証されません。 
 - `$search` はサポートされていません。
 
-### <a name="request-headers"></a>要求ヘッダー
+## <a name="request-headers"></a>要求ヘッダー
 | 名前       | 説明|
 |:---------------|:----------|
 | Authorization  | Bearer &lt;token&gt;|
 | Content-Type  | application/json |
 
-### <a name="request-body"></a>要求本文
+## <a name="request-body"></a>要求本文
 このメソッドには、要求本文を指定しません。
 
 ### <a name="response"></a>応答
@@ -54,7 +54,7 @@ GET /users/delta
 - 詳細については、「[デルタ クエリの使用](../../../concepts/delta_query_overview.md)」をご覧ください</br>
 - 要求の例については、「[ユーザーに対する増分の変更の取得](../../../concepts/delta_query_users.md)」をご覧ください。</br>
 
-### <a name="example"></a>例
+## <a name="example"></a>例
 ##### <a name="request"></a>要求
 <!-- {
   "blockType": "request",

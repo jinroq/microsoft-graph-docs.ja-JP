@@ -42,6 +42,7 @@
   "drives": [ { "@odata.type": "microsoft.graph.drive" }],
   "items": [ { "@odata.type": "microsoft.graph.baseItem" }],
   "sites": [ { "@odata.type": "microsoft.graph.site"} ],
+  "onenote": [ { "@odata.type": "microsoft.graph.onenote"} ],
 
   /* inherited from baseItem */
   "name": "string",
@@ -76,11 +77,13 @@
 | **ドライブ**        | Collection([drive][])    | このサイトの下のドライブ (ドキュメント ライブラリ) のコレクション。
 | **アイテム**         | Collection([baseItem][]) | このサイトに含まれるすべてのアイテムを処理するために使用されました。このコレクションを列挙することはできません。
 | **サイト**         | Collection([site][])     | このサイトの下のサブサイトのコレクション。
+| **onenote**       | [onenote][]              | ノートブック関連の操作のために OneNote サービスを呼び出します。
 
 [baseItem]: baseitem.md
 [drive]: drive.md
 [identitySet]: identityset.md
 [site]: site.md
+[onenote]: onenote.md
 
 <!-- {
   "type": "#page.annotation",

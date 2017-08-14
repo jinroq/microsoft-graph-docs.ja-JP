@@ -4,23 +4,23 @@
 
 **重要**:所有権を検証しないと、関連するドメインを Azure AD テナントで使用することはできません。詳細については、「[verificationDnsRecords の一覧](domain_list_verificationdnsrecords.md)」を参照してください。ルート ドメインには検証が必要です。たとえば、contoso.com には検証が必要です。ルート ドメインが検証されると、ルート ドメインのサブドメインが自動的に検証されます。たとえば、contoso.com が検証されると、subdomain.contoso.com が自動的に検証されます。
 
-### <a name="prerequisites"></a>前提条件
+## <a name="prerequisites"></a>前提条件
 
 この API を実行するには、以下のいずれかの**スコープ**が必要です。*Domain.ReadWrite.All* または *Directory.AccessAsUser.All*
 
-### <a name="http-request"></a>HTTP 要求
+## <a name="http-request"></a>HTTP 要求
 
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /domains
 ```
-### <a name="request-headers"></a>要求ヘッダー
+## <a name="request-headers"></a>要求ヘッダー
 | 名前       | 説明|
 |:---------------|:----------|
 | Authorization  | ベアラー {トークン}。必須。|
 | Content-Type  | application/json |
 
-### <a name="request-body"></a>要求本文
+## <a name="request-body"></a>要求本文
 要求本文で、[domain](../resources/domain.md) オブジェクトの JSON 表記を指定します。
 
 > 要求本文には、新しいドメインの id プロパティが含まれます。id は指定できる唯一のプロパティで、必須です。id プロパティ値は、作成する完全修飾ドメイン名です。
@@ -28,7 +28,7 @@ POST /domains
 ### <a name="response"></a>応答
 成功した場合、このメソッドは応答本文で `201, Created` 応答コードと [domain](../resources/domain.md) オブジェクトを返します。
 
-### <a name="example"></a>例
+## <a name="example"></a>例
 ##### <a name="request"></a>要求
 
 要求本文で、[domain](../resources/domain.md) オブジェクトの JSON 表記を指定します。

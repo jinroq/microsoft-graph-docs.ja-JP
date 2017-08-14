@@ -5,7 +5,7 @@ Microsoft Graph を使用すると、[Azure Active Directory (Azure AD)](https:/
 > **注**:Azure AD リソースの一部については、API リファレンスの他のセクションに記載されています。詳細については、「[ユーザー](users.md)」と「[グループ](group.md)」を参照してください。
 
 
-## <a name="authorization"></a>承認
+## <a name="authorization"></a>Authorization
  
 Azure AD リソースに Microsoft Graph API を呼び出すには、アプリに適切なアクセス許可が必要です。Azure AD リソース上で公開されている API の多くには、[_ディレクトリ_ アクセス許可](../../../concepts/permissions_reference.md#directory-permissions)が必要です。ディレクトリ アクセス許可は高い権限が与えられており、常に管理者の同意を必要とします。 
 
@@ -23,6 +23,7 @@ Azure AD リソースに Microsoft Graph API を呼び出すには、アプリ�
 | `directoryObject` は、ユーザーやグループなどの多数のディレクトリ リソースの継承元となる基底クラスです。Microsoft Graph では、ユーザーやグループなどのディレクトリ オブジェクトに関する情報の検出に使用できる複数のメソッドを公開しています。たとえば、グループのリストに推移的なメンバーシップが含まれていないか確認すること、ディレクトリ オブジェクトが推移的なメンバーとなっているすべての所属先グループとディレクトリ ロールを返すこと、汎用リソース ID のリストから指定された種類のリソース (ユーザーまたはグループなど) をすべて返すことができます。 | [directoryObject](../resources/directoryobject.md) | N/A |
 | **ディレクトリ (管理者) ロールを管理する** | | |
 | Azure AD テナント内のディレクトリ ロールをアクティブにし、ディレクトリ ロール内のユーザー メンバーシップを管理します。ディレクトリ ロールは、管理者ロールとも呼ばれます。 | [directoryRole](../resources/directoryrole.md) <br/>[directoryRoleTemplate](../resources/directoryroletemplate.md) | [Azure Active Directory での管理者ロールの割り当て](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles) |
+| テナント全体または個々のリソースのインスタンスに、定義済みのグループ設定を適用します。グループ設定は、グループ表示名でブロックする単語の一覧や、ゲスト ユーザーがグループの所有者になることを許可するか、といった動作を制御します。 | [groupSetting](../resources/groupsetting.md) <br/>[groupSettingTemplate](../resources/groupsettingtemplate.md)| [グループ設定を構成するための Azure Active Directory コマンドレット](https://docs.microsoft.com/azure/active-directory/active-directory-accessmanagement-groups-settings-cmdlets)|
 | **デバイスを管理する** | | |
 | 組織に登録されているデバイスを管理します。デバイスはユーザーに登録されており、ノート PC、デスクトップ、タブレット、携帯電話などのアイテムを含みます。デバイスは通常、Device Registration Service を使用するか、Microsoft Intune によって、クラウドで作成されます。これは、多要素認証の条件付きアクセス ポリシーで使用されます。 | [device](../resources/device.md) | [Azure Active Directory デバイス登録の使用](https://docs.microsoft.com/azure/active-directory/active-directory-device-registration-overview)。<br/><br/>[InTune とは](https://docs.microsoft.com/intune-classic/understand-explore/introduction-to-microsoft-intune)<br/><br/>[Intune における管理用にデバイスを登録する](https://docs.microsoft.com/intune-classic/deploy-use/enroll-devices-in-microsoft-intune) |
 | **パートナー テナント管理** | | |

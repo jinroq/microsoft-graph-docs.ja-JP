@@ -60,7 +60,7 @@ POST /me/drive/items/{parent-item-id}:/{filename}:/createUploadSession
 POST https://graph.microsoft.com/v1.0/me/drive/root:/{item-path}:/createUploadSession
 ```
 
-### <a name="response"></a>応答
+#### <a name="response-example"></a>応答の例
 以下は、応答の例です。
 
 <!-- {
@@ -100,7 +100,7 @@ Content-Range: bytes 0-25/128
 
 **重要:****Content-Range** ヘッダーで指定されたファイル サイズの合計は、すべての要求で同じである必要があります。異なるファイル サイズのフラグメントがあった場合、要求は失敗します。
 
-### <a name="response"></a>応答
+#### <a name="response-example"></a>応答の例
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.uploadSession", "truncated": true } -->
 ```http
 HTTP/1.1 202 Accepted
@@ -159,14 +159,14 @@ Content-Type: application/json
 
 ### <a name="example"></a>例
 
-DELETE 要求は即時にアップロード セッションを終了し、それ以前にアップロードされたすべてのデータを削除します。
+DELETE 要求は即時にアップロード セッションを終了し、それ以前にアップロードされたすべてのバイトを削除します。
 
 <!-- { "blockType": "request", "name": "upload-fragment-cancel", "scopes": "files.readwrite" } -->
 ```http
 DELETE https://tenant-my.sharepoint.com/alkjl1kjklna
 ```
 
-### <a name="response"></a>応答
+#### <a name="response-example"></a>応答の例
 
 <!-- { "blockType": "response" } -->
 ```http

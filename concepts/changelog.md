@@ -2,9 +2,26 @@
 
 この変更ログでは、Microsoft Graph と、v1.0 およびベータ版のエンドポイント Microsoft Graph API の変更内容について説明します。  
 
-Microsoft Graph API に関する既知の問題の詳細については、「[Microsoft Graph に関する既知の問題](known_issues.md)」を参照してください。
+Microsoft Graph API に関する既知の問題の詳細については、「[既知の問題](known_issues.md)」を参照してください。
+
+## <a name="august-2017"></a>2017 年 8 月
+
+### <a name="onenote"></a>OneNote
+
+|**変更の種類**|**バージョン**|**説明**|
+|:-------------|:-----------|:--------------|
+| 追加 | v1.0 およびベータ版 | [onenote](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/onenote.md) ナビゲーション プロパティを **site** に追加しました。  |
+| 追加 | ベータ版 | コピー操作用にターゲット *siteCollectionId* とターゲット *siteId* パラメーターを追加しました。次に例を示します。[CopyNotebook](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/notebook_copynotebook.md)。 |
+
 
 ## <a name="july-2017"></a>2017 年 7 月
+
+### <a name="group-settings"></a>グループ設定
+
+|**変更の種類**|**バージョン**|**説明**|
+|:-------------|:-----------|:--------------|
+| 追加     | v1.0       | グループ設定のサポートを追加しました。<br/>新しいリソースの種類: [groupSetting](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/groupsetting.md)、[groupSettingTemplate](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/groupsettingtemplate.md)、[settingValue](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/settingvalue.md)、および [settingTemplateValue](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/settingtemplatevalue.md) |
+| 変更       | v1.0       | プロパティ **classification** とナビゲーション プロパティ **settings** を [group](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/group.md) に追加しました |
 
 ### <a name="intune-apis"></a>Intune API
 

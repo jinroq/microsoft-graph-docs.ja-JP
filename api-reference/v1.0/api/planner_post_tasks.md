@@ -1,23 +1,23 @@
 # <a name="create-plannertask"></a>Create plannerTask
 
 この API を使用して、新しい **plannerTask** を作成します。
-### <a name="prerequisites"></a>前提条件
+## <a name="prerequisites"></a>前提条件
 この API を実行するために必要な**スコープ**は、次のとおりです。 
 
 *Group.ReadWrite.All*
 
-### <a name="http-request"></a>HTTP 要求
+## <a name="http-request"></a>HTTP 要求
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /planner/tasks
 
 ```
-### <a name="request-headers"></a>要求ヘッダー
+## <a name="request-headers"></a>要求ヘッダー
 | 名前       | 説明|
 |:---------------|:----------|
 | Authorization  | ベアラー {トークン}。必須。 |
 
-### <a name="request-body"></a>要求本文
+## <a name="request-body"></a>要求本文
 要求本文で、[plannerTask](../resources/plannertask.md) オブジェクトの JSON 表記を指定します。**plannerTask** planId プロパティは、既存の [plannerPlan](../resources/plannerplan.md) オブジェクトの ID に設定する必要があります。
 
 ### <a name="response"></a>応答
@@ -25,7 +25,7 @@ POST /planner/tasks
 
 このメソッドは、いずれかの [HTTP 状態コード](../../../concepts/errors.md)を返します。このメソッドでアプリが処理する最も一般的なエラーは、400、403 および 404 応答です。これらのエラーの詳細については、「[一般的なプランナーのエラー条件](../resources/planner_overview.md#common-planner-error-conditions)」を参照してください。
 
-### <a name="example"></a>例
+## <a name="example"></a>例
 ##### <a name="request"></a>要求
 以下は、要求の例です。
 <!-- {

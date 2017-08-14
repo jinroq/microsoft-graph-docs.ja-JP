@@ -12,6 +12,7 @@ Notes.Read、Notes.ReadWrite、Notes.Read.All、Notes.ReadWrite.All
 GET /me/onenote/pages
 GET /users/{id | userPrincipalName}/onenote/pages
 GET /groups/{id}/onenote/pages
+GET /sites/{id}/onenote/pages
 ```
 ## <a name="optional-query-parameters"></a>オプションのクエリ パラメーター
 このメソッドは、応答をカスタマイズするための [OData クエリ パラメーター](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters)をサポートします。
@@ -24,7 +25,7 @@ GET /groups/{id}/onenote/pages
 | 名前       | 型 | 説明|
 |:-----------|:------|:----------|
 | Authorization  | string  | ベアラー {トークン}。必須。 |
-| Accept | string | `application/json` |
+| 承諾 | string | `application/json` |
 
 ## <a name="request-body"></a>要求本文
 このメソッドには、要求本文を指定しません。

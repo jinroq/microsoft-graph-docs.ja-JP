@@ -2,28 +2,28 @@
 
 licenseDetails オブジェクトの一覧を取得します。
 
-### <a name="prerequisites"></a>前提条件
+## <a name="prerequisites"></a>前提条件
 この API を実行するには、以下のいずれかの**スコープ**が必要です。*User.Read*、*User.Read.All、User.ReadWrite.All、Directory.Read.All、Directory.ReadWrite.All、Directory.AccessAsUser.All*
 
-### <a name="http-request"></a>HTTP 要求
+## <a name="http-request"></a>HTTP 要求
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/licenseDetails
 GET /users/{id}/licenseDetails
 ```
-### <a name="optional-query-parameters"></a>オプションのクエリ パラメーター
+## <a name="optional-query-parameters"></a>オプションのクエリ パラメーター
 このメソッドは [OData クエリ パラメーター](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters)をサポートして**いません**。
 
-### <a name="request-headers"></a>要求ヘッダー
+## <a name="request-headers"></a>要求ヘッダー
 | 名前      |説明|
 |:----------|:----------|
 | Authorization  | Bearer &lt;code&gt;|
 
-### <a name="request-body"></a>要求本文
+## <a name="request-body"></a>要求本文
 このメソッドには、要求本文を指定しません。
 ### <a name="response"></a>応答
 成功した場合、このメソッドは `200 OK` 応答コードと、応答本文で [licenseDetails](../resources/licensedetails.md) オブジェクトのコレクションを返します。
-### <a name="example"></a>例
+## <a name="example"></a>例
 ##### <a name="request"></a>要求
 
 <!-- {

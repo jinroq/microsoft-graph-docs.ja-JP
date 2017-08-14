@@ -17,7 +17,7 @@
 PATCH /schemaExtensions/{id}
 ```
 
-### <a name="optional-request-headers"></a>オプションの要求ヘッダー
+## <a name="optional-request-headers"></a>オプションの要求ヘッダー
 
 | 名前      |説明|
 |:----------|:----------|

@@ -7,21 +7,21 @@
 1. 招待状の作成に際して、Microsoft Graph は自動的に招待メールを招待ユーザーに直接送信できます。作成応答で返された *inviteRedeemUrl* をアプリが使用して、招待ユーザーへの (任意の通信メカニズムによる) 独自の招待状を作成することもできます。Microsoft Graph によって招待メールが自動的に送信されるようにする場合は、[*invitedUserMessageInfo*](../resources/invitedusermessageinfo.md) を使用してメールの内容と言語を制御できます。
 2. ユーザーが招待されると、(userType Guest) のユーザー エンティティが作成され、リソースへのアクセスの制御に使用できるようになります。招待ユーザーは、招待されたリソースにアクセスするためには、引き換え処理を行う必要があります。
 
-### <a name="prerequisites"></a>前提条件
+## <a name="prerequisites"></a>前提条件
 この API を実行するには、以下のいずれかのスコープが必要です。*User.Invite.All*、*User.ReadWrite.All*、*Directory.ReadWrite.All*
 
-### <a name="http-request"></a>HTTP 要求
+## <a name="http-request"></a>HTTP 要求
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /invitations
 ```
-### <a name="request-headers"></a>要求ヘッダー
+## <a name="request-headers"></a>要求ヘッダー
 | ヘッダー       | 値 |
 |:---------------|:--------|
 | Authorization  | ベアラー {トークン}。必須。  |
 | Content-Type  | application/json  |
 
-### <a name="request-body"></a>要求本文
+## <a name="request-body"></a>要求本文
 要求本文で、[invitation](../resources/invitation.md) オブジェクトの JSON 表記を指定します。
 
 次の表に、招待状の作成時に必要になるプロパティを示します。
@@ -35,7 +35,7 @@ POST /invitations
 ### <a name="response"></a>応答
 成功した場合、このメソッドは `201, Created` 応答コードと、応答本文で [invitation](../resources/invitation.md) オブジェクトを返します。
 
-### <a name="example"></a>例
+## <a name="example"></a>例
 ##### <a name="request"></a>要求
 以下は、要求の例です。
 <!-- {

@@ -26,11 +26,11 @@ Microsoft Graph API を使用すると、これ以上のことができます。
 
 ## <a name="next-steps"></a>次の手順
 
-- [おすすめのシナリオ](featured_scenarios.md)を確認します。
+- [おすすめのシナリオ](../concepts/featured_scenarios.md)を確認します。
 - [Graph エクスプローラー](https://developer.microsoft.com/graph/graph-explorer)でサンプルの要求を試します。
 - [クイック スタート](https://developer.microsoft.com/graph/quick-start)を使用して、すぐに実行できるサンプル アプリをセットアップします。
-- アプリで[認証トークン](auth_overview.md)を取得する方法を検索します。
-- [API の使用](use_the_api.md)を開始します。
+- アプリで[認証トークンを取得する](../concepts/auth_overview.md)方法を検索します。
+- [API の使用](../concepts/use_the_api.md)を開始します。
 
 ## <a name="feedback"></a>フィードバック
 

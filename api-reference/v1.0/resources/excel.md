@@ -9,11 +9,11 @@ Microsoft Graph を使用すると、OneDrive、SharePoint、またはその他�
 ワークブックの一部であるワークシート オブジェクトのコレクションが返されます。    
 
 
-** 注:Excel の REST API では、Office Open XML ファイル形式のブックのみをサポートしています。`.xls` 拡張子のブックはサポートされていません。 
+**注:**Excel の REST API では、Office Open XML ファイル形式のブックのみをサポートしています。`.xls` 拡張子のブックはサポートされていません。 
 
 ## <a name="authorization-and-scopes"></a>承認とスコープ
 
-[Azure AD v.20 エンドポイント](https://developer.microsoft.com/en-us/graph/docs/authorization/converged_auth) を使用して Excel API を認証できます。すべての API には、`Authorization: Bearer {access-token}` HTTP ヘッダーが必要です。   
+[Azure AD v.20 エンドポイント](https://developer.microsoft.com/en-us/graph/docs/authorization/converged_auth)を使用して Excel API を認証できます。すべての API には、`Authorization: Bearer {access-token}` HTTP ヘッダーが必要です。   
   
 Excel リソースを使用するには、次のいずれかの[アクセス許可のスコープ](https://developer.microsoft.com/en-us/graph/docs/authorization/permission_scopes)が必要です。
 
