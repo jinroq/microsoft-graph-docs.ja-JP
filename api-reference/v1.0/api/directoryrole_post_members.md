@@ -1,18 +1,15 @@
-<span data-ttu-id="3eecd-p101">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="3eecd-p101">Bearer token. Required.</span></span>  | ベアラー {トークン}。必須。 |
-| <span data-ttu-id="3eecd-114">Content-Type</span><span class="sxs-lookup"><span data-stu-id="3eecd-114">Content-Type</span></span>  | <span data-ttu-id="3eecd-115">application/json</span><span class="sxs-lookup"><span data-stu-id="3eecd-115">application/json</span></span>  |
+<span data-ttu-id="7199b-p101">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="7199b-p101">Bearer {token}. Required.</span></span>  | ベアラー {トークン}。必須。 |
+| <span data-ttu-id="7199b-114">Content-Type</span><span class="sxs-lookup"><span data-stu-id="7199b-114">Content-Type</span></span>  | <span data-ttu-id="7199b-115">application/json</span><span class="sxs-lookup"><span data-stu-id="7199b-115">application/json</span></span>  |
 
-## <span data-ttu-id="3eecd-116">要求本文</span><span class="sxs-lookup"><span data-stu-id="3eecd-116">Request body</span></span>
-<a id="request-body" class="xliff"></a>
-<span data-ttu-id="3eecd-117">要求本文で、追加する [directoryObject](../resources/directoryobject.md) または[ユーザー](../resources/user.md) オブジェクトの JSON 表記を指定します。</span><span class="sxs-lookup"><span data-stu-id="3eecd-117">In the request body, supply a JSON representation of a [directoryObject](../resources/directoryobject.md) or [user](../resources/user.md) object to be added.</span></span>
+## <a name="request-body"></a><span data-ttu-id="7199b-116">要求本文</span><span class="sxs-lookup"><span data-stu-id="7199b-116">Request body</span></span>
+<span data-ttu-id="7199b-117">要求本文で、追加する [directoryObject](../resources/directoryobject.md) または[ユーザー](../resources/user.md) オブジェクトの JSON 表記を指定します。</span><span class="sxs-lookup"><span data-stu-id="7199b-117">In the request body, supply a JSON representation of a [directoryObject](../resources/directoryobject.md) or [user](../resources/user.md) object to be added.</span></span>
 
-## <span data-ttu-id="3eecd-118">応答</span><span class="sxs-lookup"><span data-stu-id="3eecd-118">Response</span></span>
-<a id="response" class="xliff"></a>
-<span data-ttu-id="3eecd-119">成功した場合、このメソッドは `204, No Content` 応答コードを返します。</span><span class="sxs-lookup"><span data-stu-id="3eecd-119">If successful, this method returns `204, No Content` response code.</span></span>
+## <a name="response"></a><span data-ttu-id="7199b-118">応答</span><span class="sxs-lookup"><span data-stu-id="7199b-118">Response</span></span>
 
-## <span data-ttu-id="3eecd-120">例</span><span class="sxs-lookup"><span data-stu-id="3eecd-120">Example</span></span>
-<a id="example" class="xliff"></a>
-##### <span data-ttu-id="3eecd-121">要求</span><span class="sxs-lookup"><span data-stu-id="3eecd-121">Request</span></span>
-<a id="request" class="xliff"></a>
+<span data-ttu-id="7199b-119">成功した場合、このメソッドは `204, No Content` 応答コードを返します。</span><span class="sxs-lookup"><span data-stu-id="7199b-119">If successful, this method returns `204, No Content` response code.</span></span>
+
+## <a name="example"></a><span data-ttu-id="7199b-120">例</span><span class="sxs-lookup"><span data-stu-id="7199b-120">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="7199b-121">要求</span><span class="sxs-lookup"><span data-stu-id="7199b-121">Request</span></span>
 
 <!-- {
   "blockType": "request",
@@ -27,9 +24,8 @@ Content-type: application/json
 }
 ```
 
-##### <span data-ttu-id="3eecd-122">応答</span><span class="sxs-lookup"><span data-stu-id="3eecd-122">Response</span></span>
-<a id="response" class="xliff"></a>
-<span data-ttu-id="3eecd-123">注: 簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。</span><span class="sxs-lookup"><span data-stu-id="3eecd-123">Note: The response object shown here may be truncated for brevity.</span></span> 
+##### <a name="response"></a><span data-ttu-id="7199b-122">応答</span><span class="sxs-lookup"><span data-stu-id="7199b-122">Response</span></span>
+<span data-ttu-id="7199b-123">注: 簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。</span><span class="sxs-lookup"><span data-stu-id="7199b-123">Note: The response object shown here may be truncated for brevity.</span></span> 
 <!-- {
   "blockType": "response",
   "truncated": true,

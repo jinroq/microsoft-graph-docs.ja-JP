@@ -1,4 +1,4 @@
-<span data-ttu-id="34532-p107">以下は、応答の例です。**body** プロパティが既定の HTML 形式で返されます。</span><span class="sxs-lookup"><span data-stu-id="34532-p107">Here is an example of the response. The **body** property is returned in the default HTML format.</span></span>
+<span data-ttu-id="06558-p107">以下は、応答の例です。**body** プロパティが既定の HTML 形式で返されます。</span><span class="sxs-lookup"><span data-stu-id="06558-p107">Here is an example of the response. The **body** property is returned in the default HTML format.</span></span>
 以下は、応答の例です。**body** プロパティが既定の HTML 形式で返されます。
 <!-- {
   "blockType": "response",

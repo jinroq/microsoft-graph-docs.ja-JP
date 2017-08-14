@@ -1,13 +1,11 @@
-<span data-ttu-id="81236-p123">ディレクトリ内のユーザーの種類を分類するために使用する文字列値 (“Member”、“Guest” など)。$filter をサポートします。</span><span class="sxs-lookup"><span data-stu-id="81236-p123">A string value that can be used to classify user types in your directory, such as “Member” and “Guest”. Supports $filter.</span></span>|ディレクトリ内のユーザーの種類を分類するために使用する文字列値 (“Member”、“Guest” など)。$filter をサポートします。          |
+<span data-ttu-id="7a07f-p123">ディレクトリ内のユーザーの種類を分類するために使用する文字列値 (“Member”、“Guest” など)。$filter をサポートします。</span><span class="sxs-lookup"><span data-stu-id="7a07f-p123">A string value that can be used to classify user types in your directory, such as “Member” and “Guest”. Supports $filter.</span></span>|ディレクトリ内のユーザーの種類を分類するために使用する文字列値 (“Member”、“Guest” など)。$filter をサポートします。          |
 
-## <span data-ttu-id="81236-261">応答</span><span class="sxs-lookup"><span data-stu-id="81236-261">Response</span></span>
-<a id="response" class="xliff"></a>
-<span data-ttu-id="81236-262">成功した場合、このメソッドは `204 No Content` 応答コードを返します。</span><span class="sxs-lookup"><span data-stu-id="81236-262">If successful, this method returns a `204 No Content` response code.</span></span>
-## <span data-ttu-id="81236-263">例</span><span class="sxs-lookup"><span data-stu-id="81236-263">Example</span></span>
-<a id="example" class="xliff"></a>
-##### <span data-ttu-id="81236-264">要求</span><span class="sxs-lookup"><span data-stu-id="81236-264">Request</span></span>
-<a id="request" class="xliff"></a>
-<span data-ttu-id="81236-265">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="81236-265">Here is an example of the request.</span></span>
+## <a name="response"></a><span data-ttu-id="7a07f-261">応答</span><span class="sxs-lookup"><span data-stu-id="7a07f-261">Response</span></span>
+
+<span data-ttu-id="7a07f-262">成功した場合、このメソッドは `204 No Content` 応答コードを返します。</span><span class="sxs-lookup"><span data-stu-id="7a07f-262">If successful, this method returns a `204 No Content` response code.</span></span>
+## <a name="example"></a><span data-ttu-id="7a07f-263">例</span><span class="sxs-lookup"><span data-stu-id="7a07f-263">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="7a07f-264">要求</span><span class="sxs-lookup"><span data-stu-id="7a07f-264">Request</span></span>
+<span data-ttu-id="7a07f-265">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="7a07f-265">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "update_user"
@@ -40,9 +38,8 @@ Content-length: 491
   "companyName": "companyName-value"
 }
 ```
-##### <span data-ttu-id="81236-266">応答</span><span class="sxs-lookup"><span data-stu-id="81236-266">Response</span></span>
-<a id="response" class="xliff"></a>
-<span data-ttu-id="81236-267">以下は、応答の例です。</span><span class="sxs-lookup"><span data-stu-id="81236-267">Here is an example of the response.</span></span>
+##### <a name="response"></a><span data-ttu-id="7a07f-266">応答</span><span class="sxs-lookup"><span data-stu-id="7a07f-266">Response</span></span>
+<span data-ttu-id="7a07f-267">以下は、応答の例です。</span><span class="sxs-lookup"><span data-stu-id="7a07f-267">Here is an example of the response.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,

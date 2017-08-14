@@ -1,11 +1,10 @@
-<span data-ttu-id="42063-p102">成功した場合、このメソッドは `204, No Content` 応答コードを返します。応答本文には何も返されません。</span><span class="sxs-lookup"><span data-stu-id="42063-p102">If successful, this method returns `204, No Content` response code. It does not return anything in the response body.</span></span>
+<span data-ttu-id="05f75-p102">成功した場合、このメソッドは `204, No Content` 応答コードを返します。応答本文には何も返されません。</span><span class="sxs-lookup"><span data-stu-id="05f75-p102">If successful, this method returns `204, No Content` response code. It does not return anything in the response body.</span></span>
+
 成功した場合、このメソッドは `204, No Content` 応答コードを返します。応答本文には何も返されません。
 
-## <span data-ttu-id="42063-119">例</span><span class="sxs-lookup"><span data-stu-id="42063-119">Example</span></span>
-<a id="example" class="xliff"></a>
-##### <span data-ttu-id="42063-120">要求</span><span class="sxs-lookup"><span data-stu-id="42063-120">Request</span></span>
-<a id="request" class="xliff"></a>
-<span data-ttu-id="42063-121">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="42063-121">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="05f75-119">例</span><span class="sxs-lookup"><span data-stu-id="05f75-119">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="05f75-120">要求</span><span class="sxs-lookup"><span data-stu-id="05f75-120">Request</span></span>
+<span data-ttu-id="05f75-121">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="05f75-121">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "delete_message"
@@ -13,9 +12,8 @@
 ```http
 DELETE https://graph.microsoft.com/v1.0/me/messages/{id}
 ```
-##### <span data-ttu-id="42063-122">応答</span><span class="sxs-lookup"><span data-stu-id="42063-122">Response</span></span>
-<a id="response" class="xliff"></a>
-<span data-ttu-id="42063-123">以下は、応答の例です。</span><span class="sxs-lookup"><span data-stu-id="42063-123">Here is an example of the response.</span></span> 
+##### <a name="response"></a><span data-ttu-id="05f75-122">応答</span><span class="sxs-lookup"><span data-stu-id="05f75-122">Response</span></span>
+<span data-ttu-id="05f75-123">以下は、応答の例です。</span><span class="sxs-lookup"><span data-stu-id="05f75-123">Here is an example of the response.</span></span> 
 <!-- {
   "blockType": "response",
   "truncated": true

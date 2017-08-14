@@ -1,8 +1,9 @@
-<span data-ttu-id="05d88-p103">成功した場合、このメソッドは `204 No Content` 応答コードを返します。PATCH 要求に対して JSON データは返されません。</span><span class="sxs-lookup"><span data-stu-id="05d88-p103">If successful, this method returns a `204 No Content` response code.  No JSON data is returned for a PATCH request.</span></span>
+<span data-ttu-id="902e3-p103">成功した場合、このメソッドは `204 No Content` 応答コードを返します。PATCH 要求に対して JSON データは返されません。</span><span class="sxs-lookup"><span data-stu-id="902e3-p103">If successful, this method returns a `204 No Content` response code.  No JSON data is returned for a PATCH request.</span></span>
+
 成功した場合、このメソッドは `204 No Content` 応答コードを返します。PATCH 要求に対して JSON データは返されません。
-## <a name="example"></a><span data-ttu-id="05d88-123">例</span><span class="sxs-lookup"><span data-stu-id="05d88-123">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="05d88-124">要求</span><span class="sxs-lookup"><span data-stu-id="05d88-124">Request</span></span>
-<span data-ttu-id="05d88-125">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="05d88-125">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="902e3-123">例</span><span class="sxs-lookup"><span data-stu-id="902e3-123">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="902e3-124">要求</span><span class="sxs-lookup"><span data-stu-id="902e3-124">Request</span></span>
+<span data-ttu-id="902e3-125">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="902e3-125">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "update_page"
@@ -26,8 +27,8 @@ Content-length: 312
   }
 ]
 ```
-##### <a name="response"></a><span data-ttu-id="05d88-126">応答</span><span class="sxs-lookup"><span data-stu-id="05d88-126">Response</span></span>
-<span data-ttu-id="05d88-127">以下は、応答の例です。</span><span class="sxs-lookup"><span data-stu-id="05d88-127">Here is an example of the response.</span></span> 
+##### <a name="response"></a><span data-ttu-id="902e3-126">応答</span><span class="sxs-lookup"><span data-stu-id="902e3-126">Response</span></span>
+<span data-ttu-id="902e3-127">以下は、応答の例です。</span><span class="sxs-lookup"><span data-stu-id="902e3-127">Here is an example of the response.</span></span> 
 <!-- {
   "blockType": "response",
   "truncated": true,

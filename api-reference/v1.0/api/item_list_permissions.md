@@ -1,12 +1,10 @@
-<span data-ttu-id="3952d-p103">呼び出し元は、**inheritedFrom** プロパティを確認して、アクセス許可が継承されているかどうかによって区別できます。このプロパティは、アクセス許可が継承された先祖を参照する [**itemReference**](../resources/itemreference.md) リソースです。</span><span class="sxs-lookup"><span data-stu-id="3952d-p103">Callers can differentiate if the permission is inherited or not by checking the **inheritedFrom** property. This property is an [**itemReference**](../resources/itemreference.md) resource referencing the ancestor that the permission is inherited from.</span></span>
+<span data-ttu-id="1fae8-p103">呼び出し元は、**inheritedFrom** プロパティを確認して、アクセス許可が継承されているかどうかによって区別できます。このプロパティは、アクセス許可が継承された先祖を参照する [**itemReference**](../resources/itemreference.md) リソースです。</span><span class="sxs-lookup"><span data-stu-id="1fae8-p103">Callers can differentiate if the permission is inherited or not by checking the **inheritedFrom** property. This property is an [**itemReference**](../resources/itemreference.md) resource referencing the ancestor that the permission is inherited from.</span></span>
 
 呼び出し元は、**inheritedFrom** プロパティを確認して、アクセス許可が継承されているかどうかによって区別できます。このプロパティは、アクセス許可が継承された先祖を参照する [**itemReference**](../resources/itemreference.md) リソースです。
 
-## <span data-ttu-id="3952d-138">例</span><span class="sxs-lookup"><span data-stu-id="3952d-138">Example</span></span>
-<a id="example" class="xliff"></a>
-##### <span data-ttu-id="3952d-139">要求</span><span class="sxs-lookup"><span data-stu-id="3952d-139">Request</span></span>
-<a id="request" class="xliff"></a>
-<span data-ttu-id="3952d-140">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="3952d-140">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="1fae8-138">例</span><span class="sxs-lookup"><span data-stu-id="1fae8-138">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="1fae8-139">要求</span><span class="sxs-lookup"><span data-stu-id="1fae8-139">Request</span></span>
+<span data-ttu-id="1fae8-140">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="1fae8-140">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "get_permissions"
@@ -16,9 +14,8 @@ GET https://graph.microsoft.com/v1.0/me/drive/items/{item-id}/permissions
 ```
 
 
-##### <span data-ttu-id="3952d-141">応答</span><span class="sxs-lookup"><span data-stu-id="3952d-141">Response</span></span>
-<a id="response" class="xliff"></a>
-<span data-ttu-id="3952d-142">以下は、応答の例です。</span><span class="sxs-lookup"><span data-stu-id="3952d-142">Here is an example of the response.</span></span>
+##### <a name="response"></a><span data-ttu-id="1fae8-141">応答</span><span class="sxs-lookup"><span data-stu-id="1fae8-141">Response</span></span>
+<span data-ttu-id="1fae8-142">以下は、応答の例です。</span><span class="sxs-lookup"><span data-stu-id="1fae8-142">Here is an example of the response.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -69,7 +66,7 @@ Content-Type: application/json
 }
 ```
 
-<span data-ttu-id="3952d-143">単一のアクセス許可リソースの取得の詳細については、「[アクセス許可を取得する](permission_get.md)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="3952d-143">See [Get permission](permission_get.md) for more details on retrieving a single permission resource.</span></span>
+<span data-ttu-id="1fae8-143">単一のアクセス許可リソースの取得の詳細については、「[アクセス許可を取得する](permission_get.md)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="1fae8-143">See [Get permission](permission_get.md) for more details on retrieving a single permission resource.</span></span>
 
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

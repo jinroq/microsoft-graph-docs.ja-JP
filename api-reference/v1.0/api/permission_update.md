@@ -1,22 +1,19 @@
-<span data-ttu-id="22b56-p101">要求本文で、更新する関連フィールドの値を指定します。要求本文に含まれない既存のプロパティは、以前の値のままになるか、他のプロパティ値の変化に基づいて再計算されます。最適なパフォーマンスを得るためには、変更されていない既存の値を含めないでください。</span><span class="sxs-lookup"><span data-stu-id="22b56-p101">In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.</span></span>
+<span data-ttu-id="4e888-p101">要求本文で、更新する関連フィールドの値を指定します。要求本文に含まれない既存のプロパティは、以前の値のままになるか、他のプロパティ値の変化に基づいて再計算されます。最適なパフォーマンスを得るためには、変更されていない既存の値を含めないでください。</span><span class="sxs-lookup"><span data-stu-id="4e888-p101">In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.</span></span>
 要求本文で、更新する関連フィールドの値を指定します。要求本文に含まれない既存のプロパティは、以前の値のままになるか、他のプロパティ値の変化に基づいて再計算されます。最適なパフォーマンスを得るためには、変更されていない既存の値を含めないでください。
 
-| <span data-ttu-id="22b56-120">プロパティ</span><span class="sxs-lookup"><span data-stu-id="22b56-120">Property</span></span>     | <span data-ttu-id="22b56-121">型</span><span class="sxs-lookup"><span data-stu-id="22b56-121">Type</span></span>   | <span data-ttu-id="22b56-122">説明</span><span class="sxs-lookup"><span data-stu-id="22b56-122">Description</span></span>                   |
+| <span data-ttu-id="4e888-120">プロパティ</span><span class="sxs-lookup"><span data-stu-id="4e888-120">Property</span></span>     | <span data-ttu-id="4e888-121">型</span><span class="sxs-lookup"><span data-stu-id="4e888-121">Type</span></span>   | <span data-ttu-id="4e888-122">説明</span><span class="sxs-lookup"><span data-stu-id="4e888-122">Description</span></span>                   |
 |:-------------|:-------|:------------------------------|
-| <span data-ttu-id="22b56-123">**roles**</span><span class="sxs-lookup"><span data-stu-id="22b56-123">**roles**</span></span>    | <span data-ttu-id="22b56-124">String</span><span class="sxs-lookup"><span data-stu-id="22b56-124">String</span></span> | <span data-ttu-id="22b56-125">アクセス許可の種類の配列。</span><span class="sxs-lookup"><span data-stu-id="22b56-125">An array of permission types.</span></span> |
+| <span data-ttu-id="4e888-123">**roles**</span><span class="sxs-lookup"><span data-stu-id="4e888-123">**roles**</span></span>    | <span data-ttu-id="4e888-124">String</span><span class="sxs-lookup"><span data-stu-id="4e888-124">String</span></span> | <span data-ttu-id="4e888-125">アクセス許可の種類の配列。</span><span class="sxs-lookup"><span data-stu-id="4e888-125">An array of permission types.</span></span> |
 
+## <a name="response"></a><span data-ttu-id="4e888-126">応答</span><span class="sxs-lookup"><span data-stu-id="4e888-126">Response</span></span>
 
-## <span data-ttu-id="22b56-126">応答</span><span class="sxs-lookup"><span data-stu-id="22b56-126">Response</span></span>
-<a id="response" class="xliff"></a>
-<span data-ttu-id="22b56-127">成功した場合、このメソッドは `200 OK` 応答コードと、応答本文で、更新された[アクセス許可](../resources/permission.md)オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="22b56-127">If successful, this method returns a `200 OK` response code and updated [permission](../resources/permission.md) object in the response body.</span></span>
+<span data-ttu-id="4e888-127">成功した場合、このメソッドは `200 OK` 応答コードと、応答本文で、更新された[アクセス許可](../resources/permission.md)オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="4e888-127">If successful, this method returns a `200 OK` response code and updated [permission](../resources/permission.md) object in the response body.</span></span>
 
-## <span data-ttu-id="22b56-128">例</span><span class="sxs-lookup"><span data-stu-id="22b56-128">Example</span></span>
-<a id="example" class="xliff"></a>
+## <a name="example"></a><span data-ttu-id="4e888-128">例</span><span class="sxs-lookup"><span data-stu-id="4e888-128">Example</span></span>
 
-##### <span data-ttu-id="22b56-129">要求</span><span class="sxs-lookup"><span data-stu-id="22b56-129">Request</span></span>
-<a id="request" class="xliff"></a>
+##### <a name="request"></a><span data-ttu-id="4e888-129">要求</span><span class="sxs-lookup"><span data-stu-id="4e888-129">Request</span></span>
 
-<span data-ttu-id="22b56-130">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="22b56-130">Here is an example of the request.</span></span>
+<span data-ttu-id="4e888-130">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="4e888-130">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "update_permission"
@@ -29,10 +26,9 @@ Content-type: application/json
   "roles": [ "read" ]
 }
 ```
-##### <span data-ttu-id="22b56-131">応答</span><span class="sxs-lookup"><span data-stu-id="22b56-131">Response</span></span>
-<a id="response" class="xliff"></a>
+##### <a name="response"></a><span data-ttu-id="4e888-131">応答</span><span class="sxs-lookup"><span data-stu-id="4e888-131">Response</span></span>
 
-<span data-ttu-id="22b56-132">以下は、応答の例です。</span><span class="sxs-lookup"><span data-stu-id="22b56-132">Here is an example of the response.</span></span>
+<span data-ttu-id="4e888-132">以下は、応答の例です。</span><span class="sxs-lookup"><span data-stu-id="4e888-132">Here is an example of the response.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
