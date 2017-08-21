@@ -1,17 +1,31 @@
-<span data-ttu-id="607fb-p102">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="607fb-p102">Bearer token. Required.</span></span>  | ベアラー {トークン}。必須。  |
-| <span data-ttu-id="607fb-115">Content-Type</span><span class="sxs-lookup"><span data-stu-id="607fb-115">Content-Type</span></span>   | <span data-ttu-id="607fb-116">application/json</span><span class="sxs-lookup"><span data-stu-id="607fb-116">application/json</span></span>  | 
+# <a name="list-manager"></a><span data-ttu-id="b0fd5-101">上司を一覧表示する</span><span class="sxs-lookup"><span data-stu-id="b0fd5-101">List manager</span></span>
 
-## <span data-ttu-id="607fb-117">要求本文</span><span class="sxs-lookup"><span data-stu-id="607fb-117">Request body</span></span>
-<a id="request-body" class="xliff"></a>
-<span data-ttu-id="607fb-118">このメソッドには、要求本文を指定しません。</span><span class="sxs-lookup"><span data-stu-id="607fb-118">Do not supply a request body for this method.</span></span>
-## <span data-ttu-id="607fb-119">応答</span><span class="sxs-lookup"><span data-stu-id="607fb-119">Response</span></span>
-<a id="response" class="xliff"></a>
-<span data-ttu-id="607fb-120">成功した場合、このメソッドは `200 OK` 応答コードと、応答本文で [directoryObject](../resources/directoryobject.md) オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="607fb-120">If successful, this method returns a `200 OK` response code and a [directoryObject](../resources/directoryobject.md) object in the response body.</span></span>
-## <span data-ttu-id="607fb-121">例</span><span class="sxs-lookup"><span data-stu-id="607fb-121">Example</span></span>
-<a id="example" class="xliff"></a>
-##### <span data-ttu-id="607fb-122">要求</span><span class="sxs-lookup"><span data-stu-id="607fb-122">Request</span></span>
-<a id="request" class="xliff"></a>
-<span data-ttu-id="607fb-123">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="607fb-123">Here is an example of the request.</span></span>
+<span data-ttu-id="b0fd5-p101">ユーザーの上司を取得します。ユーザーの上司として割り当てられているユーザーまたは連絡先を返します。</span><span class="sxs-lookup"><span data-stu-id="b0fd5-p101">Get user's manager. Returns the user or contact assigned as the user's manager.</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="b0fd5-104">前提条件</span><span class="sxs-lookup"><span data-stu-id="b0fd5-104">Prerequisites</span></span>
+<span data-ttu-id="b0fd5-105">この API を実行するには、以下のいずれかの**スコープ**が必要です。*User.Read.All、User.ReadWrite.All、Directory.Read.All、Directory.ReadWrite.All、Directory.AccessAsUser.All*</span><span class="sxs-lookup"><span data-stu-id="b0fd5-105">One of the following **scopes** is required to execute this API: *User.Read.All; User.ReadWrite.All; Directory.Read.All; Directory.ReadWrite.All; Directory.AccessAsUser.All*</span></span>
+
+## <a name="http-request"></a><span data-ttu-id="b0fd5-106">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="b0fd5-106">HTTP request</span></span>
+<!-- { "blockType": "ignored" } -->
+```http
+GET /users/{id | userPrincipalName}/manager
+```
+## <a name="optional-query-parameters"></a><span data-ttu-id="b0fd5-107">オプションのクエリ パラメーター</span><span class="sxs-lookup"><span data-stu-id="b0fd5-107">Optional query parameters</span></span>
+<span data-ttu-id="b0fd5-108">このメソッドは、応答をカスタマイズするための [OData クエリ パラメーター](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters)をサポートします。</span><span class="sxs-lookup"><span data-stu-id="b0fd5-108">This method supports the [OData Query Parameters](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) to help customize the response.</span></span>
+## <a name="request-headers"></a><span data-ttu-id="b0fd5-109">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="b0fd5-109">Request headers</span></span>
+| <span data-ttu-id="b0fd5-110">ヘッダー</span><span class="sxs-lookup"><span data-stu-id="b0fd5-110">Header</span></span>       | <span data-ttu-id="b0fd5-111">値</span><span class="sxs-lookup"><span data-stu-id="b0fd5-111">Value</span></span>|
+|:-----------|:------|
+| <span data-ttu-id="b0fd5-112">Authorization</span><span class="sxs-lookup"><span data-stu-id="b0fd5-112">Authorization</span></span>  | <span data-ttu-id="b0fd5-p102">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="b0fd5-p102">Bearer {token}. Required.</span></span>  |
+| <span data-ttu-id="b0fd5-115">Content-Type</span><span class="sxs-lookup"><span data-stu-id="b0fd5-115">Content-Type</span></span>   | <span data-ttu-id="b0fd5-116">application/json</span><span class="sxs-lookup"><span data-stu-id="b0fd5-116">application/json</span></span>  | 
+
+## <a name="request-body"></a><span data-ttu-id="b0fd5-117">要求本文</span><span class="sxs-lookup"><span data-stu-id="b0fd5-117">Request body</span></span>
+<span data-ttu-id="b0fd5-118">このメソッドには、要求本文を指定しません。</span><span class="sxs-lookup"><span data-stu-id="b0fd5-118">Do not supply a request body for this method.</span></span>
+
+## <a name="response"></a><span data-ttu-id="b0fd5-119">応答</span><span class="sxs-lookup"><span data-stu-id="b0fd5-119">Response</span></span>
+
+<span data-ttu-id="b0fd5-120">成功した場合、このメソッドは `200 OK` 応答コードと、応答本文で [directoryObject](../resources/directoryobject.md) オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="b0fd5-120">If successful, this method returns a `200 OK` response code and a [directoryObject](../resources/directoryobject.md) object in the response body.</span></span>
+## <a name="example"></a><span data-ttu-id="b0fd5-121">例</span><span class="sxs-lookup"><span data-stu-id="b0fd5-121">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="b0fd5-122">要求</span><span class="sxs-lookup"><span data-stu-id="b0fd5-122">Request</span></span>
+<span data-ttu-id="b0fd5-123">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="b0fd5-123">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "get_manager"
@@ -19,9 +33,8 @@
 ```http
 GET https://graph.microsoft.com/v1.0/users/{id|userPrincipalName}/manager
 ```
-##### <span data-ttu-id="607fb-124">応答</span><span class="sxs-lookup"><span data-stu-id="607fb-124">Response</span></span>
-<a id="response" class="xliff"></a>
-<span data-ttu-id="607fb-125">以下は、応答の例です。</span><span class="sxs-lookup"><span data-stu-id="607fb-125">Here is an example of the response.</span></span>
+##### <a name="response"></a><span data-ttu-id="b0fd5-124">応答</span><span class="sxs-lookup"><span data-stu-id="b0fd5-124">Response</span></span>
+<span data-ttu-id="b0fd5-125">以下は、応答の例です。</span><span class="sxs-lookup"><span data-stu-id="b0fd5-125">Here is an example of the response.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": false,

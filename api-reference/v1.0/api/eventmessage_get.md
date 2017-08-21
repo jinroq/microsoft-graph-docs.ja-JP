@@ -1,5 +1,45 @@
-<span data-ttu-id="c8aa0-p102">以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。</span><span class="sxs-lookup"><span data-stu-id="c8aa0-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
-以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。
+# <a name="get-eventmessage"></a><span data-ttu-id="560f9-101">eventMessage の取得</span><span class="sxs-lookup"><span data-stu-id="560f9-101">Get eventMessage</span></span>
+
+<span data-ttu-id="560f9-102">[eventMessage](../resources/eventmessage.md) オブジェクトのプロパティとリレーションシップを取得します。</span><span class="sxs-lookup"><span data-stu-id="560f9-102">Retrieve the properties and relationships of [eventMessage](../resources/eventmessage.md) object.</span></span>
+
+<span data-ttu-id="560f9-103">現在、この操作によって返されるイベント メッセージの本文は HTML 形式のみです。</span><span class="sxs-lookup"><span data-stu-id="560f9-103">Currently, this operation returns event message bodies in only HTML format.</span></span>
+
+## <a name="prerequisites"></a><span data-ttu-id="560f9-104">前提条件</span><span class="sxs-lookup"><span data-stu-id="560f9-104">Prerequisites</span></span>
+<span data-ttu-id="560f9-105">この API を実行するには、以下のいずれかの**スコープ**が必要です。*Mail.Read*</span><span class="sxs-lookup"><span data-stu-id="560f9-105">One of the following **scopes** is required to execute this API: *Mail.Read*</span></span>
+## <a name="http-request"></a><span data-ttu-id="560f9-106">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="560f9-106">HTTP request</span></span>
+<!-- { "blockType": "ignored" } -->
+```http
+GET /me/messages/{id}
+GET /users/{id | userPrincipalName}/messages/{id}
+
+GET /me/mailFolders/{id}/messages/{id}
+GET /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}
+```
+## <a name="optional-query-parameters"></a><span data-ttu-id="560f9-107">オプションのクエリ パラメーター</span><span class="sxs-lookup"><span data-stu-id="560f9-107">Optional query parameters</span></span>
+<span data-ttu-id="560f9-108">このメソッドは、応答をカスタマイズするための [OData クエリ パラメーター](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters)をサポートします。</span><span class="sxs-lookup"><span data-stu-id="560f9-108">This method supports the [OData Query Parameters](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) to help customize the response.</span></span>
+## <a name="request-headers"></a><span data-ttu-id="560f9-109">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="560f9-109">Request headers</span></span>
+| <span data-ttu-id="560f9-110">名前</span><span class="sxs-lookup"><span data-stu-id="560f9-110">Name</span></span>       | <span data-ttu-id="560f9-111">型</span><span class="sxs-lookup"><span data-stu-id="560f9-111">Type</span></span> | <span data-ttu-id="560f9-112">説明</span><span class="sxs-lookup"><span data-stu-id="560f9-112">Description</span></span>|
+|:-----------|:------|:----------|
+| <span data-ttu-id="560f9-113">Authorization</span><span class="sxs-lookup"><span data-stu-id="560f9-113">Authorization</span></span>  | <span data-ttu-id="560f9-114">string</span><span class="sxs-lookup"><span data-stu-id="560f9-114">string</span></span>  | <span data-ttu-id="560f9-p101">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="560f9-p101">Bearer {token}. Required.</span></span> |
+
+## <a name="request-body"></a><span data-ttu-id="560f9-117">要求本文</span><span class="sxs-lookup"><span data-stu-id="560f9-117">Request body</span></span>
+<span data-ttu-id="560f9-118">このメソッドには、要求本文を指定しません。</span><span class="sxs-lookup"><span data-stu-id="560f9-118">Do not supply a request body for this method.</span></span>
+
+## <a name="response"></a><span data-ttu-id="560f9-119">応答</span><span class="sxs-lookup"><span data-stu-id="560f9-119">Response</span></span>
+
+<span data-ttu-id="560f9-120">成功した場合、このメソッドは `200 OK` 応答コードと、応答本文で [eventMessage](../resources/eventmessage.md) オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="560f9-120">If successful, this method returns a `200 OK` response code and [eventMessage](../resources/eventmessage.md) object in the response body.</span></span>
+## <a name="example"></a><span data-ttu-id="560f9-121">例</span><span class="sxs-lookup"><span data-stu-id="560f9-121">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="560f9-122">要求</span><span class="sxs-lookup"><span data-stu-id="560f9-122">Request</span></span>
+<span data-ttu-id="560f9-123">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="560f9-123">Here is an example of the request.</span></span>
+<!-- {
+  "blockType": "request",
+  "name": "get_eventmessage"
+}-->
+```http
+GET https://graph.microsoft.com/v1.0/me/messages/{id}
+```
+##### <a name="response"></a><span data-ttu-id="560f9-124">応答</span><span class="sxs-lookup"><span data-stu-id="560f9-124">Response</span></span>
+<span data-ttu-id="560f9-p102">以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。</span><span class="sxs-lookup"><span data-stu-id="560f9-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
