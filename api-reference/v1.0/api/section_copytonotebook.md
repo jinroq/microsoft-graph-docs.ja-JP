@@ -30,6 +30,7 @@ POST /groups/{id}/onenote/sections/{id}/copyToNotebook
 |renameAs|String|コピーの名前。既定値は、既存のアイテムの名前になります。 |
 
 ## <a name="response"></a>応答
+
 成功した場合、このメソッドは `202 Accepted` 応答コードと `Operation-Location` ヘッダーを返します。Operation-Location エンドポイントをポーリングして、[コピー操作の状態を取得します](onenoteoperation_get.md)。
 
 ## <a name="example"></a>例

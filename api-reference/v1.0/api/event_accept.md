@@ -36,9 +36,10 @@ POST /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{
 | パラメーター    | 型   |説明|
 |:---------------|:--------|:----------|
 |comment|String|応答に含まれるテキスト。省略可。|
-|sendResponse|ブール型|応答が開催者に送信される場合は、`true`。それ以外の場合は、`false`。省略可。既定値は `true` です。|
+|sendResponse|ブール値|応答が開催者に送信される場合は、`true`。それ以外の場合は、`false`。省略可。既定値は `true` です。|
 
 ## <a name="response"></a>応答
+
 成功した場合、このメソッドは `202, Accepted` 応答コードを返します。応答本文には何も返されません。
 
 ## <a name="example"></a>例

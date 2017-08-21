@@ -25,6 +25,7 @@ PUT /groups/{id}/drive/items/{parent-id}/children/{filename}/content
 要求の本文の内容は、アップロードするファイルのバイナリ ストリームである必要があります。
 
 ## <a name="response"></a>応答
+
 成功した場合、このメソッドは新しく作成されたファイルの応答本文で [driveItem](../resources/driveitem.md) オブジェクトを返します。
 
 ## <a name="example"></a>例
@@ -41,8 +42,10 @@ Content-type: text/plain
 The contents of the file goes here.
 ```
 
-## <a name="response"></a>応答
-以下は、応答の例です。
+##### <a name="response"></a>応答
+
+次の例は応答を示しています。
+
 <!-- {
   "blockType": "response",
   "truncated": true,

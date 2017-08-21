@@ -30,6 +30,7 @@ PATCH /groups/{group-id}/drive/items/{item-id}
 要求本文で、更新すべきプロパティの値を指定します。要求本文に含まれない既存のプロパティは、以前の値のままになるか、他のプロパティ値の変化に基づいて再計算されます。最高のパフォーマンスのためには、変更されていないプロパティをアプリケーションに含めないでください。
 
 ## <a name="response"></a>応答
+
 成功した場合、このメソッドは `200 OK` 応答コードと、応答本文で、更新された [DriveItem](../resources/driveitem.md) リソースを返します。
 
 ## <a name="example"></a>例
@@ -48,8 +49,9 @@ Content-type: application/json
 }
 ```
 
-## <a name="response"></a>応答
-以下は、応答の例です。この応答は、読みやすさのために切り詰められています。
+##### <a name="response"></a>応答
+
+次の例は応答を示しています。この応答は、読みやすさのために切り詰められています。
 
 <!-- {
   "blockType": "response",

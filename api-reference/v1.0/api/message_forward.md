@@ -27,6 +27,7 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/forward
 |toRecipients|[Recipient](../resources/recipient.md) collection|受信者の一覧です。|
 
 ## <a name="response"></a>応答
+
 成功した場合、このメソッドは `202, Accepted` 応答コードを返します。応答本文には何も返されません。
 
 ## <a name="example"></a>例

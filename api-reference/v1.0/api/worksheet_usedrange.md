@@ -27,6 +27,7 @@ GET /workbook/worksheets/{id|name}/UsedRange
 | Authorization  | ベアラー {トークン}。必須。 |
 
 ## <a name="response"></a>応答
+
 成功した場合、このメソッドは `200, OK` 応答コードと、応答本文で [Range](../resources/range.md) オブジェクトを返します。
 
 ## <a name="example"></a>例

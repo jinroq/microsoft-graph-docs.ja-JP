@@ -29,8 +29,8 @@ POST /groups/{id}/onenote/pages/{id}/copyToSection
 |groupId|String|コピー先グループの ID。Office 365 グループにコピーする場合にのみ使用します。|
 |id|String|必須。コピー先セクションの ID です。|
 
-
 ## <a name="response"></a>応答
+
 成功した場合、このメソッドは `202 Accepted` 応答コードと `Operation-Location` ヘッダーを返します。Operation-Location エンドポイントをポーリングして、[コピー操作の状態を取得します](onenoteoperation_get.md)。
 
 ## <a name="example"></a>例

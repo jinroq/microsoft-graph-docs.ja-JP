@@ -22,6 +22,7 @@ POST /users/{id | userPrincipalName}/mailFolders
 |displayName|String|新しいフォルダーの表示名です。|
 
 ## <a name="response"></a>応答
+
 成功した場合、このメソッドは `201, Created` 応答コードと、応答本文で [MailFolder](../resources/mailfolder.md) オブジェクトを返します。
 
 ## <a name="example"></a>例

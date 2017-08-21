@@ -25,8 +25,8 @@ POST /directoryRoles
 |:---------|:---------|:---------|
 |roleTemplateId | string | このロールが基づいている [directoryRoleTemplate](../resources/directoryroletemplate.md) の ID。これは要求で指定できる唯一のプロパティです。|
 
-
 ## <a name="response"></a>応答
+
 成功した場合、このメソッドは `201, Created` 応答コードと、応答本文で [directoryRole](../resources/directoryrole.md) オブジェクトを返します。
 
 ## <a name="example"></a>例

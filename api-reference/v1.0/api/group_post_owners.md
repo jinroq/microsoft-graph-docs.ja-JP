@@ -17,8 +17,8 @@ POST /groups/{id}/owners/$ref
 ## <a name="request-body"></a>要求本文
 要求本文で、追加する[ユーザー](../resources/user.md) オブジェクトの JSON 表記を指定します。
 
-
 ## <a name="response"></a>応答
+
 成功した場合、このメソッドは `204, No Content` 応答コードを返します。応答本文には何も返されません。
 
 ## <a name="example"></a>例

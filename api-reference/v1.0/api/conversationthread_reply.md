@@ -25,6 +25,7 @@ POST /groups/{id}/conversations/{id}/threads/{id}/reply
 |post|[post](../resources/post.md)|返信中の新規の投稿。|
 
 ## <a name="response"></a>応答
+
 成功した場合、このメソッドは `202, Accepted` 応答コードを返します。応答本文には何も返されません。
 
 ## <a name="example"></a>例

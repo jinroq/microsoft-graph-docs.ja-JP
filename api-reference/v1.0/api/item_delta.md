@@ -35,6 +35,7 @@ GET /groups/{group-id}/drive/root/delta
 このメソッドには、要求本文を指定しません。
 
 ## <a name="response"></a>応答
+
 成功した場合、このメソッドは応答本文で `200 OK` 応答コードと、[DriveItem](../resources/driveitem.md) リソースのコレクションを返します。
 
 DriveItem のコレクションのほか、応答には次のプロパティのいずれかも含まれます。

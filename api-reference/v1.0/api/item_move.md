@@ -34,6 +34,7 @@ PATCH /groups/{group-id}/drive/{item-id}
 **注:**OneDrive のルートにアイテムを移動するときには、`"id:" "root"` 構文は使用できません。ルート フォルダーの実際の ID を使用するか、親参照の `{"path": "/drive/root"}` を使用する必要があります。
 
 ## <a name="response"></a>応答
+
 成功した場合、このメソッドは `200 OK` 応答コードと、応答本文で、更新された [DriveItem](../resources/driveitem.md) リソースを返します。
 
 ## <a name="example"></a>例
@@ -53,8 +54,10 @@ Content-type: application/json
 }
 ```
 
-## <a name="response"></a>応答
-以下は、応答の例です。
+##### <a name="response"></a>応答
+
+次の例は応答を示しています。
+
 <!-- {
   "blockType": "response",
   "truncated": true,

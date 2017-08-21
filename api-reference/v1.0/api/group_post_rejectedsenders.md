@@ -18,8 +18,8 @@ POST /groups/{id}/rejectedSenders/$ref
 ## <a name="request-body"></a>要求本文
 要求の本文で、ユーザーまたはグループのオブジェクトの id を指定します。
 
-
 ## <a name="response"></a>応答
+
 このメソッドは `204, No Content` 応答コードを返し、応答の本文は返しません。
 
 ## <a name="example"></a>例

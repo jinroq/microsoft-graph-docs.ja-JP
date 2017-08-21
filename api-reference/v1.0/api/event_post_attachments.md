@@ -37,8 +37,8 @@ POST /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{
 ## <a name="request-body"></a>要求本文
 要求本文で、[attachment](../resources/attachment.md) オブジェクトの JSON 表記を指定します。
 
-
 ## <a name="response"></a>応答
+
 成功した場合、このメソッドは `201, Created` 応答コードと、応答本文で [attachment](../resources/attachment.md) オブジェクトを返します。
 
 ## <a name="example-file-attachment"></a>例 (添付ファイル)

@@ -10,7 +10,7 @@
 * サイト コレクションの一意 ID (guid)
 * サイトの一意 ID (guid)
 
-予約済みのサイト識別子 `root` もあり、これは次のように、ターゲットのルート サイトを常に参照します。
+予約済みのサイト識別子 `root` もあります。これは次に示すように、常にターゲットのルート サイトを参照します。
 
 * `/sites/root`:テナントのルート サイト。
 * `/groups/{group-id}/sites/root`:グループのチーム サイト。
@@ -49,7 +49,7 @@ GET /groups/{group-id}/sites/root
 
 ## <a name="example"></a>例
 
-### <a name="request"></a>要求
+##### <a name="request"></a>要求
 
 <!-- { "blockType": "request", "name": "get-site", "scopes": "sites.read.all service.sharepoint" } -->
 
@@ -57,7 +57,7 @@ GET /groups/{group-id}/sites/root
 GET https://graph.microsoft.com/v1.0/sites/{site-id}
 ```
 
-### <a name="response"></a>応答
+##### <a name="response"></a>応答
 
 <!-- { "blockType": "response", "@type": "microsoft.graph.site", "truncated": true } -->
 

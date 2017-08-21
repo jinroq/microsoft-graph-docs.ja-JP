@@ -4,7 +4,7 @@
 
 グループには、新しい会話、会話スレッド、および投稿が作成されます。[スレッドに返信](conversationthread_reply.md) または [投稿に返信](post_reply.md) を使い、そのスレッドへの投稿を続けます。
 
-注:[既存の会話内に新しいスレッドを開始する](conversation_post_threads.md) こともできます。 
+メモ:[既存の会話内に新しいスレッドを開始する](conversation_post_threads.md) こともできます。 
 
 ## <a name="prerequisites"></a>前提条件
 この API を実行するには、以下のいずれかの**スコープ**が必要です。*Group.ReadWrite.All*
@@ -22,8 +22,8 @@ POST /groups/{id}/threads
 ## <a name="request-body"></a>要求本文
 要求の本文に、[投稿](../resources/post.md) を含む[conversationThread](../resources/conversationthread.md) オブジェクトの JSON 表記を指定します。
 
-
 ## <a name="response"></a>応答
+
 成功した場合、このメソッドは `201, Created` 応答コードと、応答本文で [conversationThread](../resources/conversationthread.md) オブジェクトを返します。
 
 ## <a name="example"></a>例

@@ -21,8 +21,8 @@ POST /workbook/worksheets/{id|name}/charts(<name>)/series(<undefined>)/points
 ## <a name="request-body"></a>要求本文
 要求本文で、[ChartPoints](../resources/chartpoint.md) オブジェクトの JSON 表記を指定します。
 
-
 ## <a name="response"></a>応答
+
 成功した場合、このメソッドは `201, Created` 応答コードと、応答本文で [ChartPoints](../resources/chartpoint.md) オブジェクトを返します。
 
 ## <a name="example"></a>例

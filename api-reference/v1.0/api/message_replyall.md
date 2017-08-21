@@ -26,6 +26,7 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/replyAll
 |comment|String|含めるコメントです。空の文字列にすることができます。|
 
 ## <a name="response"></a>応答
+
 成功した場合、このメソッドは `202, Accepted` 応答コードを返します。応答本文には何も返されません。
 
 ## <a name="example"></a>例

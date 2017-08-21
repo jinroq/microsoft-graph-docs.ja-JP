@@ -30,8 +30,8 @@ PATCH /users/{id}/inferenceClassification/overrides/{id}
 |:---------------|:--------|:----------|
 |classifyAs|string| 特定の差出人からの着信メッセージを常時分類する方法を指定します。可能な値は、`focused`、`other` です。|
 
-
 ## <a name="response"></a>応答
+
 成功した場合、このメソッドは `200 OK` 応答コードと、応答本文で、更新された [inferenceClassificationOverride](../resources/inferenceclassificationoverride.md) オブジェクトを返します。
 ## <a name="example"></a>例
 ##### <a name="request"></a>要求
