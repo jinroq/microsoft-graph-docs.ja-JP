@@ -3,8 +3,20 @@
 サブスクリプションを更新するには、サブスクリプションの有効期限を延長します。
 
 リソースのサブスクリプションは、個々のリソースの種類で規定された日付になると有効期限が切れます。通知を見逃さないようにするため、有効期限よりも前にサブスクリプションを更新する必要があります。個々の有効期限の日付については、[サブスクリプション](../resources/subscription.md)を参照してください。
+
 ## <a name="prerequisites"></a>前提条件
-対象のリソースによっては、この API を実行するために次のいずれかの**スコープ**が必要になります。*Mail.Read*、*Calendars.Read*、*Contacts.Read*、*Group.Read.All*、*Files.ReadWrite*、または *Files.ReadWrite.All*
+
+次の表に、各リソースに必要な、推奨されるアクセス許可を示します。
+
+| リソースの種類/項目        | 範囲               |
+|-----------------------------|---------------------|
+| 連絡先                    | Contacts.Read       |
+| スレッド               | Group.Read.All      |
+| イベント                      | Calendars.Read      |
+| メッセージ                    | Mail.Read           |
+| ドライブ (ユーザーの OneDrive)    | Files.ReadWrite     |
+| ドライブ (Sharepoint の共有コンテンツとドライブ) | Files.ReadWrite.All |
+
 ## <a name="http-request"></a>HTTP 要求
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -17,6 +29,7 @@ PATCH /subscriptions/{subscriptionId}
 | Authorization  | string  | ベアラー {トークン}。必須。 |
 
 ## <a name="response"></a>応答
+
 成功した場合、このメソッドは `200 OK` 応答コードと、応答本文で [subscription](../resources/subscription.md) オブジェクトを返します。
 ## <a name="example"></a>例
 ##### <a name="request"></a>要求

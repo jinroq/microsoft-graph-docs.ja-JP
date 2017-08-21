@@ -8,18 +8,38 @@ Microsoft Graph の REST API を使用すると、アプリは次のリソース
 * イベント
 * 連絡先
 * グループ会話
-* ドライブ ルート項目
+* SharePoint サイトに関連付けられたドライブを含む、OneDrive で共有されるコンテンツ
+* ユーザーの個人用 OneDrive フォルダー
+
+たとえば、特定のフォルダーへのサブスクリプションを作成できます。`me/mailfolders('inbox')/messages`
+
+最上位レベルのリソースへの場合は次のようになります。`me/messages`、`me/contacts`、`me/events`
+
+Sharepoint/OneDrive for Business ドライブの場合は次のようになります。`/drive/root`
+
+ユーザーの個人用 OneDrive の場合は次のようになります。`/drives/{id}/root`
+`/drives/{id}/root/subfolder`
 
 Microsoft Graph はサブスクリプション要求を受け入れると、サブスクリプションで指定された URL に通知をプッシュします。アプリはその後、そのビジネス ロジックに従ってアクションを実行します。たとえば、詳細データのフェッチ、キャッシュやビューの更新などです。
 
-アプリは、期限が切れる前にサブスクリプションを更新する必要があります。また、いつでも登録を解除して、通知の受信を停止できます。
+アプリは、期限が切れる前にサブスクリプションを更新する必要があります。現在の最長有効期限は、作成時から 3 日間マイナス 90 分です。アプリは、有効期限が切れる前にサブスクリプションを更新する必要があります。そうしないと、新しいサブスクリプションを作成する必要があります。
 
-GitHub の次のコード サンプルを参照してください。
+また、アプリはいつでも登録を解除して、通知の受信を停止できます。
+
+一般に、サブスクリプション操作にはリソースへの読み取りアクセス許可が必要です。たとえば、メッセージの通知を受信するには、アプリに `Mail.Read` アクセス許可が必要です。記事「[サブスクリプションを作成する](../api/subscription_post_subscriptions.md)」では、リソースの種類ごとに必要なアクセス許可がリストされています。次の表に、アプリが特定のリソースの種類に対して Webhook を使用するために要求できるアクセス許可の種類を示します。 
+
+| アクセス許可の種類 | v1.0 でサポートされているリソース |
+|:----------------|:---------------------------------|
+| 委任 - 職場または学校アカウント | [連絡先](contact.md)、[スレッド](conversation.md)、[ドライブ](drive.md)、[イベント](event.md)、[メッセージ](message.md) |
+| 委任 - 個人用の Microsoft アカウント | なし |
+| アプリケーション | [連絡先](contact.md)、[スレッド](conversation.md)、[イベント](event.md)、[メッセージ](message.md) |
+
+## <a name="code-samples"></a>コード サンプル
+
+GitHub では、次のコード サンプルを利用できます。
 
 * [Node.js 用 Microsoft Graph Webhooks のサンプル](https://github.com/OfficeDev/Microsoft-Graph-Nodejs-Webhooks)
 * [ASP.NET 用 Microsoft Graph Webhooks のサンプル](https://github.com/OfficeDev/Microsoft-Graph-ASPNET-Webhooks)
-
-サブスクリプション プロセスを見てみましょう。
 
 # <a name="creating-a-subscription"></a>サブスクリプションの作成
 
@@ -32,20 +52,6 @@ GitHub の次のコード サンプルを参照してください。
 3. クライアントは、Microsoft Graph に検証トークンを返送します。
 
 クライアントは、対応するサブスクリプションに通知を関連付けるために、サブスクリプション ID を格納する必要があります。
-
-## <a name="characteristics-of-subscriptions"></a>サブスクリプションの特性
-
-メッセージ、イベント、連絡先、ドライブ ルート項目などのリソースについて、サブスクリプションを作成できます。
-
-特定のフォルダーへのサブスクリプションを作成できます。`https://graph.microsoft.com/v1.0/me/mailfolders('inbox')/messages`
-
-または最上位レベルのリソースへのサブスクリプションを作成できます。`https://graph.microsoft.com/v1.0/me/messages`
-
-または、ドライブ ルート項目のサブスクリプションを作成できます。`https://graph.microsoft.com/v1.0/me/drive/root`
-
-ほとんどの場合、サブスクリプションを作成するにはリソースへの読み取りスコープが必要です。たとえば、通知メッセージを受信するには、アプリに `mail.read` アクセス許可が必要です。現在、OneDrive のドライブ ルート項目には `Files.ReadWrite` アクセス許可が必要であり、SharePoint サイトに関連付けられたドライブには `Files.ReadWrite.All` が必要であることに注意してください。
-
-サブスクリプションには有効期限があります。現在の最長有効期限は、作成時から 3 日間から 90 分を引いた期間です (合計 4230 分)。アプリは、有効期限が切れる前にサブスクリプションを更新する必要があります。そうしない場合、新しいサブスクリプションを作成する必要があります。
 
 ## <a name="notification-url-validation"></a>通知 URL の検証
 
@@ -60,7 +66,7 @@ Microsoft Graph は、サブスクリプションを作成する前にサブス�
  
 2. クライアントは 10 秒以内に次の特性を持つ応答を提供する必要があります。
 
-  * 200 (OK) ステータス コード。
+  * 200 (OK) 状態コード。
   * コンテンツ タイプはテキスト/書式なしである必要があります。 
   * 本文には Microsoft Graph が提供した検証トークンを含める必要があります。
 

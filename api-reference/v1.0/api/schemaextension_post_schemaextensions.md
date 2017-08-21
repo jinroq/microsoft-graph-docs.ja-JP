@@ -34,10 +34,13 @@ POST /schemaExtensions
 |targetTypes|String collection|このスキーマ拡張機能の定義を適用できる、(スキーマ拡張機能をサポートしている) 一連の Microsoft Graph のリソースの種類。|
 
 ## <a name="response"></a>応答
+
 成功した場合、このメソッドは応答本文で `201, Created` 応答コードと、[schemaExtension](../resources/schemaextension.md) オブジェクトを返します。
 
 ## <a name="example"></a>例
-### <a name="request-1"></a>要求 1
+
+##### <a name="request-1"></a>要求 1
+
 最初の例では、確認済みのドメイン名 `graphlearn` とスキーマ名 `courses` を使用して、スキーマ拡張機能の定義の **id** プロパティの一意の文字列を形成します。一意の文字列は次の形式に基づきます。\{_&#65279;domainName_\}\_\{_&#65279;schemaName_\}。
 
 要求本文では、[schemaExtension](../resources/schemaextension.md) オブジェクトの JSON 表記を指定します。
@@ -72,7 +75,8 @@ Content-type: application/json
 }
 ```
 
-### <a name="response-1"></a>応答 1
+##### <a name="response-1"></a>応答 1
+
 以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。
 <!-- {
   "blockType": "response",
@@ -109,7 +113,8 @@ Content-length: 420
 }
 ```
 
-### <a name="request-2"></a>要求 2
+##### <a name="request-2"></a>要求 2
+
 2 番目の例では、要求の **id** プロパティ内のスキーマ名 `courses` だけを指定し、[schemaExtension](../resources/schemaextension.md) オブジェクト内の残りのプロパティを JSON 表記で指定しています。Microsoft Graph は一意の文字列値を割り当て、それを応答内で返します。
 
 <!-- {
@@ -143,7 +148,8 @@ Content-type: application/json
 }
 ```
 
-### <a name="response-2"></a>応答 2
+##### <a name="response-2"></a>応答 2
+
 応答には、要求の中で提供されているスキーマ名に基づいた一意の文字列がその **id** プロパティ内に含まれ、新規作成したスキーマ定義の残りの部分も応答に含まれています。応答の中の **id** の値は、次の形式に基づきます。ext\{_&#65279;8-random-alphanumeric-chars_\}\_\{_&#65279;schema-name_\}。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。実際の呼び出しではすべてのプロパティが返されます。
 <!-- {
   "blockType": "response",

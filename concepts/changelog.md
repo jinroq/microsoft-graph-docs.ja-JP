@@ -6,12 +6,26 @@ Microsoft Graph API に関する既知の問題の詳細については、「[�
 
 ## <a name="august-2017"></a>2017 年 8 月
 
+### <a name="people"></a>複数のユーザー 
+
+|**変更の種類**|**バージョン**|**説明**|
+|:-------------|:-----------|:--------------|
+| 追加 | v1.0 | v1.0 に [People API](../api-reference/v1.0/resources/person.md) を追加しました。People API の詳細については、「[People の関連情報を取得する](people_example.md)」を参照してください。|
+
+### <a name="group-lifecycle-policy"></a>グループのライフサイクル ポリシー
+
+|**変更の種類**|**バージョン**|**説明**|
+|:-------------|:-----------|:--------------|
+| 追加 | ベータ版 | [groupLifecyclePolicy](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/grouplifecyclepolicy) エンティティを追加しました。 |
+| 追加 | ベータ版 | グループのライフサイクル ポリシーに、次の API を追加しました。[create](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/grouplifecyclepolicy_post_grouplifecyclepolicies)、[list](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/grouplifecyclepolicy_list)、[get](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/grouplifecyclepolicy_get)、[update](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/grouplifecyclepolicy_update)、[delete](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/grouplifecyclepolicy_delete)、[add group](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/grouplifecyclepolicy_addgroup)、[remove group](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/grouplifecyclepolicy_removegroup)、および [renew a group](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/grouplifecyclepolicy_renewgroup)。 |
+| 追加 | ベータ版 | [group](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/group) エンティティに [List groupLifecylePolicies](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/group_list_grouplifecyclepolicies.md) 関数を追加しました。 |
+
 ### <a name="onenote"></a>OneNote
 
 |**変更の種類**|**バージョン**|**説明**|
 |:-------------|:-----------|:--------------|
-| 追加 | v1.0 およびベータ版 | [onenote](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/onenote.md) ナビゲーション プロパティを **site** に追加しました。  |
-| 追加 | ベータ版 | コピー操作用にターゲット *siteCollectionId* とターゲット *siteId* パラメーターを追加しました。次に例を示します。[CopyNotebook](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/notebook_copynotebook.md)。 |
+| 追加 | v1.0 およびベータ版 | [onenote](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/onenote) ナビゲーション プロパティを **site** に追加しました。  |
+| 追加 | ベータ版 | コピー操作用にターゲット *siteCollectionId* とターゲット *siteId* パラメーターを追加しました。次に例を示します。[CopyNotebook](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/notebook_copynotebook)。 |
 
 
 ## <a name="july-2017"></a>2017 年 7 月

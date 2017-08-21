@@ -45,6 +45,7 @@ PUT /users/{id | userPrincipalName}/contactfolders/{contactFolderId}/contacts/{i
 要求本文に、写真のバイナリ データを含めます。
 
 ## <a name="response"></a>応答
+
 成功した場合、このメソッドは `200 OK` 応答コードを返します。
 ## <a name="example"></a>例
 ##### <a name="request"></a>要求

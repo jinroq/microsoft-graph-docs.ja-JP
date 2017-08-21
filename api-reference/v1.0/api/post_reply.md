@@ -5,7 +5,7 @@
 ## <a name="prerequisites"></a>前提条件
 この API を実行するには、以下のいずれかの**スコープ**が必要です。
 
-*Group.Readwrite.All*
+*Group.ReadWrite.All*
 
 ## <a name="http-request"></a>HTTP 要求
 <!-- { "blockType": "ignored" } -->
@@ -27,6 +27,7 @@ POST /groups/{id}/conversations/{id}/threads/{id}/posts/{id}/reply
 |post|[post](../resources/post.md)|返信中の新規の投稿。|
 
 ## <a name="response"></a>応答
+
 成功した場合、このメソッドは `200, OK` 応答コードを返します。応答本文には何も返されません。
 
 ## <a name="example"></a>例

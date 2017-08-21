@@ -2,7 +2,18 @@
 
 Microsoft Graph のデータが変更されたときに通知を受信するため、リスナー アプリケーションに登録します。
 ## <a name="prerequisites"></a>前提条件
-この API を実行するためには、対象のリソースに応じた、次のいずれかの**スコープ**が必要です。*Mail.Read*、*Calendars.Read*、*Contacts.Read*、*Group.Read.All*、*Files.ReadWrite*、または *Files.ReadWrite.All*。***注:***/V1.0 エンドポイントでは、リソースのほとんどに対してアプリケーションのアクセス許可があります。グループ内の会話と OneDrive のドライブのルート項目は、アプリケーションのアクセス許可ではサポートされていません。
+サブスクリプションを作成するにはリソースへの読み取りスコープが必要です。たとえば、通知メッセージを受信するには、アプリに `Mail.Read` アクセス許可が必要です。次の表に、各リソースに必要な、推奨されるアクセス許可を示します。
+
+| リソースの種類/項目        | 範囲               |
+|-----------------------------|---------------------|
+| 連絡先                    | Contacts.Read       |
+| スレッド               | Group.Read.All      |
+| イベント                      | Calendars.Read      |
+| メッセージ                    | Mail.Read           |
+| ドライブ (ユーザーの OneDrive)    | Files.ReadWrite     |
+| ドライブ (Sharepoint の共有コンテンツとドライブ) | Files.ReadWrite.All |
+
+ ***メモ:***/V1.0 エンドポイントでは、リソースのほとんどに対してアプリケーションのアクセス許可があります。グループ内の会話と OneDrive のドライブのルート項目は、アプリケーションのアクセス許可ではサポートされていません。
 
 ## <a name="http-request"></a>HTTP 要求
 <!-- { "blockType": "ignored" } -->
@@ -17,8 +28,8 @@ POST /subscriptions
 |:-----------|:------|:----------|
 | Authorization  | string  | ベアラー {トークン}。必須。 |
 
-
 ## <a name="response"></a>応答
+
 成功した場合、このメソッドは `201, Created` 応答コードと、応答本文に入った [subscription](../resources/subscription.md) オブジェクトを返します。
 
 ## <a name="example"></a>例
@@ -84,7 +95,7 @@ Content-type: text/plain
 Content-length: 7
 <token>
 ```
-##### <a name="notification-payload"></a>通知のペイロード
+## <a name="notification-payload"></a>通知のペイロード
 登録されたリソースが変更されると、webhook 機能が、次のペイロードで通知 URL に通知を送信します。通知エンドポイントは、30 秒以内に 200 または 204 の応答を応答本文なしで送信する必要があります。さもないと、指数関数的に増加する間隔で通知が再試行されます。いつも 30 秒以上かかるサービスの場合は、調整されて、より広い間隔で一連の通知を受け取ることがあります。
 
 サービスは通知から 422 の応答を返すこともできます。この場合、サブスクリプションは自動的に削除され、通知のストリームが停止します。

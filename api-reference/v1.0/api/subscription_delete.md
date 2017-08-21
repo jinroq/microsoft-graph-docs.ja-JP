@@ -1,8 +1,20 @@
 # <a name="delete-subscription"></a>サブスクリプションを削除する
 
 サブスクリプションを削除します。
+
 ## <a name="prerequisites"></a>前提条件
-対象のリソースによっては、この API を実行するために次のいずれかの**スコープ**が必要になります。*Mail.Read*、*Calendars.Read*、*Contacts.Read*、*Group.Read.All*、*Files.ReadWrite*、または *Files.ReadWrite.All*
+
+次の表に、各リソースに必要な、推奨されるアクセス許可を示します。
+
+| リソースの種類/項目        | 範囲               |
+|-----------------------------|---------------------|
+| 連絡先                    | Contacts.Read       |
+| スレッド               | Group.Read.All      |
+| イベント                      | Calendars.Read      |
+| メッセージ                    | Mail.Read           |
+| ドライブ (ユーザーの OneDrive)    | Files.ReadWrite     |
+| ドライブ (Sharepoint の共有コンテンツとドライブ) | Files.ReadWrite.All |
+
 ## <a name="http-request"></a>HTTP 要求
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -15,7 +27,9 @@ DELETE /subscriptions/{subscriptionId}
 
 ## <a name="request-body"></a>要求本文
 このメソッドには、要求本文を指定しません。
+
 ## <a name="response"></a>応答
+
 成功した場合、このメソッドは `204 No Content` 応答コードを返します。
 ## <a name="example"></a>例
 ##### <a name="request"></a>要求

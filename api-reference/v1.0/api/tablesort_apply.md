@@ -29,6 +29,7 @@ POST /workbook/worksheets/{id|name}/tables/{id|name}/sort/apply
 |method|string|省略可能。中国語文字に使用される順序付けの方法です。可能な値は、`PinYin`、`StrokeCount` です。|
 
 ## <a name="response"></a>応答
+
 成功した場合、このメソッドは `200, OK` 応答コードを返します。応答本文には何も返されません。
 
 ## <a name="example"></a>例
