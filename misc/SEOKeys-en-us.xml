@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Menu>
   <Item text="概要" url="/en-us/concepts/overview" SEOKeyword="概要、Microsoft Graph API、概要" SEODescription="Microsoft Graph により、インテリジェントな Microsoft クラウド経由でデジタル作業とデジタル ライフのデータにアクセスするアプリケーションを使用できます。開発者にとっての大きな利点:Microsoft クラウドからのデータ、インテリジェンス、インサイトにアクセスするための統合 Microsoft API エンドポイント。" />    
   <Item text="おすすめのシナリオ" url="/en-us/concepts/featured_scenarios"> 
@@ -2120,11 +2120,9 @@
         <Item text="デバイス構成" url="/en-us/api-reference/beta/resources/intune_deviceconfig_deviceconfiguration">
           <Item text="割り当て" url="/en-us/api-reference/beta/api/intune_deviceconfig_deviceconfiguration_assign" />
           <Item text="取得" url="/en-us/api-reference/beta/api/intune_deviceconfig_deviceconfiguration_get" />
-          <Item text="デバイス構成の概要の取得" url="/en-us/api-reference/beta/api/intune_deviceconfig_deviceconfiguration_get_deviceconfigurationdeviceoverview" />
-          <Item text="リスト" url="/en-us/api-reference/beta/api/intune_deviceconfig_deviceconfiguration_list" />
-          <Item text="デバイス構成のデバイス状態の一覧表示" url="/en-us/api-reference/beta/api/intune_deviceconfig_deviceconfiguration_list_deviceconfigurationdevicestatus" />
-          <Item text="デバイス構成のグループ割り当ての一覧表示" url="/en-us/api-reference/beta/api/intune_deviceconfig_deviceconfiguration_list_deviceconfigurationgroupassignment" />
-          <Item text="デバイス構成のユーザー状態の一覧表示" url="/en-us/api-reference/beta/api/intune_deviceconfig_deviceconfiguration_list_deviceconfigurationuserstatus" />
+          <Item text="一覧表示" url="/en-us/api-reference/beta/api/intune_deviceconfig_deviceconfiguration_list" />
+
+          <Item text="windowsPrivacyAccessControls" url="https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/api/intune_deviceconfig_deviceconfiguration_windowsprivacyaccesscontrols" />
         </Item>
         <Item text="デバイス構成の割り当て" url="/en-us/api-reference/beta/resources/intune_deviceconfig_deviceconfigurationassignment">
           <Item text="取得" url="/en-us/api-reference/beta/api/intune_deviceconfig_deviceconfigurationassignment_get" />
@@ -2511,6 +2509,8 @@
           <Item text="作成" url="/en-us/api-reference/beta/api/intune_deviceconfig_manageddevicecertificatestate_create" />
           <Item text="削除" url="/en-us/api-reference/beta/api/intune_deviceconfig_manageddevicecertificatestate_delete" />
           <Item text="更新" url="/en-us/api-reference/beta/api/intune_deviceconfig_manageddevicecertificatestate_update" />
+          <Item text="windowsDefenderScan アクション" url="/en-us/graph/docs/api-reference/beta/api/api/intune_devices_manageddevice_windowsdefenderscan" />
+          <Item text="windowsDefenderUpdateSignatures" url="/en-us/graph/docs/api-reference/beta/api/api/intune_devices_manageddevice_windowsdefenderupdatesignatures" />
         </Item>
         <Item text="メディア コンテンツのレーティング、オーストラリア" url="/en-us/api-reference/beta/resources/intune_deviceconfig_mediacontentratingaustralia" />
         <Item text="メディア コンテンツのレーティング、カナダ" url="/en-us/api-reference/beta/resources/intune_deviceconfig_mediacontentratingcanada" />
@@ -2549,16 +2549,7 @@
           <Item text="削除" url="/en-us/api-reference/beta/api/intune_endpointprotection_windowsdevicemalwarestate_delete" />
           <Item text="更新" url="/en-us/api-reference/beta/api/intune_endpointprotection_windowsdevicemalwarestate_update" />
         </Item>
-        <Item text="Windows 10 関連アプリ" url="/en-us/api-reference/beta/resources/intune_deviceconfig_windows10associatedapps" />
-        <Item text="Windows 10 証明書のプロファイル ベース" url="/en-us/api-reference/beta/resources/intune_deviceconfig_windows10certificateprofilebase">
-          <Item text="取得" url="/en-us/api-reference/beta/api/intune_deviceconfig_windows10certificateprofilebase_get" />
-          <Item text="デバイス構成の概要の取得" url="/en-us/api-reference/beta/api/intune_deviceconfig_windows10certificateprofilebase_get_deviceconfigurationdeviceoverview" />
-          <Item text="リスト" url="/en-us/api-reference/beta/api/intune_deviceconfig_windows10certificateprofilebase_list" />
-          <Item text="デバイス構成のデバイス状態の一覧表示" url="/en-us/api-reference/beta/api/intune_deviceconfig_windows10certificateprofilebase_list_deviceconfigurationdevicestatus" />
-          <Item text="デバイス構成のグループ割り当ての一覧表示" url="/en-us/api-reference/beta/api/intune_deviceconfig_windows10certificateprofilebase_list_deviceconfigurationgroupassignment" />
-          <Item text="デバイス構成のユーザー状態の一覧表示" url="/en-us/api-reference/beta/api/intune_deviceconfig_windows10certificateprofilebase_list_deviceconfigurationuserstatus" />
-        </Item>
-        <Item text="状態のデバイス設定の要約" url="/en-us/api-reference/beta/resources/intune_deviceconfig_settingstatedevicesummary">
+        <Item text="状態デバイス設定要約" url="/en-us/api-reference/beta/resources/intune_deviceconfig_settingstatedevicesummary">
           <Item text="一覧表示" url="/en-us/api-reference/beta/api/intune_deviceconfig_settingstatedevicesummary_list" />
           <Item text="取得" url="/en-us/api-reference/beta/api/intune_deviceconfig_settingstatedevicesummary_get" />
           <Item text="作成" url="/en-us/api-reference/beta/api/intune_deviceconfig_settingstatedevicesummary_create" />
@@ -2579,6 +2570,15 @@
         <Item text="ソフトウェア更新ステータス要約" url="/en-us/api-reference/beta/resources/intune_deviceconfig_softwareupdatestatussummary">
           <Item text="取得" url="/en-us/api-reference/beta/api/intune_deviceconfig_softwareupdatestatussummary_get" />
           <Item text="更新" url="/en-us/api-reference/beta/api/intune_deviceconfig_softwareupdatestatussummary_update" />
+        </Item>
+        <Item text="Windows 10 関連アプリ" url="/en-us/api-reference/beta/resources/intune_deviceconfig_windows10associatedapps" />
+        <Item text="Windows 10 証明書のプロファイル ベース" url="/en-us/api-reference/beta/resources/intune_deviceconfig_windows10certificateprofilebase">
+          <Item text="取得" url="/en-us/api-reference/beta/api/intune_deviceconfig_windows10certificateprofilebase_get" />
+          <Item text="デバイス構成の概要の取得" url="/en-us/api-reference/beta/api/intune_deviceconfig_windows10certificateprofilebase_get_deviceconfigurationdeviceoverview" />
+          <Item text="リスト" url="/en-us/api-reference/beta/api/intune_deviceconfig_windows10certificateprofilebase_list" />
+          <Item text="デバイス構成のデバイス状態の一覧表示" url="/en-us/api-reference/beta/api/intune_deviceconfig_windows10certificateprofilebase_list_deviceconfigurationdevicestatus" />
+          <Item text="デバイス構成のグループ割り当ての一覧表示" url="/en-us/api-reference/beta/api/intune_deviceconfig_windows10certificateprofilebase_list_deviceconfigurationgroupassignment" />
+          <Item text="デバイス構成のユーザー状態の一覧表示" url="/en-us/api-reference/beta/api/intune_deviceconfig_windows10certificateprofilebase_list_deviceconfigurationuserstatus" />
         </Item>
         <Item text="Windows 10 コンプライアンス ポリシー" url="/en-us/api-reference/beta/resources/intune_deviceconfig_windows10compliancepolicy">
           <Item text="作成" url="/en-us/api-reference/beta/api/intune_deviceconfig_windows10compliancepolicy_create" />
@@ -2902,6 +2902,13 @@
           <Item text="デバイス構成のユーザー状態の一覧表示" url="/en-us/api-reference/beta/api/intune_deviceconfig_windowsphoneeasemailprofileconfiguration_list_deviceconfigurationuserstatus" />
           <Item text="更新" url="/en-us/api-reference/beta/api/intune_deviceconfig_windowsphoneeasemailprofileconfiguration_update" />
         </Item>
+      <Item text="Windows プライバシー データのアクセス制御の項目" url="en-us/graph/docs/api-reference/beta/api/resources/intune_deviceconfig_windowsprivacydataaccesscontrolitem">
+        <Item text="一覧表示" url="/en-us/api-reference/beta/api/intune_deviceconfig_windowsprivacydataaccesscontrolitem_list" />
+        <Item text="取得" url="/en-us/api-reference/beta/api/api/intune_deviceconfig_windowsprivacydataaccesscontrolitem_get" />
+        <Item text="作成" url="/en-us/api-reference/beta/api/intune_deviceconfig_windowsprivacydataaccesscontrolitem_create" />
+        <Item text="削除" url="/en-us/api-reference/beta/api/intune_deviceconfig_windowsprivacydataaccesscontrolitem_delete" />
+        <Item text="更新" url="/en-us/api-reference/beta/api/intune_deviceconfig_windowsprivacydataaccesscontrolitem_update" />
+      </Item>
         <Item text="Windows 保護の状態" url="/en-us/api-reference/beta/resources/intune_endpointprotection_windowsprotectionstate">
           <Item text="リスト" url="/en-us/api-reference/beta/api/intune_endpointprotection_windowsprotectionstate_list" />
           <Item text="取得" url="/en-us/api-reference/beta" />
@@ -3880,6 +3887,7 @@
 		  <Item text="SharePoint サイト使用状況レポートを取得する" url="/en-us/api-reference/beta/api/reportroot_sharepointsiteusage" SEOKeyword="SharePoint サイト使用状況レポートを取得する, Microsoft Graph API, Report API" SEODescription="SharePoint サイト使用状況レポートを取得します。応答は、バイナリ ストリームの CSV ファイルになります。" />
 		  <Item text="Yammer アクティビティ レポートを取得する" url="/en-us/api-reference/beta/api/reportroot_yammeractivity" SEOKeyword="Yammer アクティビティ レポートを取得する, Microsoft Graph API, Report API" SEODescription="Yammer アクティビティ レポートを取得します。応答は、バイナリ ストリームの CSV ファイルになります。" />
 		  <Item text="Yammer デバイス使用状況レポートを取得する" url="/en-us/api-reference/beta/api/reportroot_yammerdeviceusage" SEOKeyword="Yammer デバイス使用状況レポートを取得する, Microsoft Graph API, Report API" SEODescription="Yammer デバイス使用状況レポートを取得します。応答は、バイナリ ストリームの CSV ファイルになります。" />
+		  <Item text="Yammer グループ アクティビティ レポートを取得する" url="/en-us/api-reference/beta/api/reportroot_yammergroupsactivity" SEODescription="Yammer グループ アクティビティ レポートを取得します。" />
 		</Item>
 	</Item>
     <Item text="スキーマ拡張機能" url="/en-us/api-reference/beta/resources/schemaextension" SEOKeyword="拡張 API、Microsoft Graph API、スキーマ拡張 API、スキーマ拡張機能" SEODescription="Microsoft Graph 内のリソースにカスタム データを追加するための API。">
