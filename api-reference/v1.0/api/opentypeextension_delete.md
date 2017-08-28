@@ -39,12 +39,10 @@ DELETE /users/{id|userPrincipalName}/extensions/{extensionId}
 |id|string|対応するコレクションのインスタンスの一意識別子。必須。|
 |extensionId|string|これは、拡張情報の一意のテキスト識別子である拡張情報名、または拡張情報の種類と一意のテキスト識別子を連結した完全修飾名になります。完全修飾名は、拡張情報を作成したときに、`id` プロパティで返されます。必須。|
 
-
 ## <a name="request-headers"></a>要求ヘッダー
 | 名前       | 値 |
 |:---------------|:----------|
 | Authorization | ベアラー {トークン}。必須。 |
-
 
 ## <a name="request-body"></a>要求本文
 このメソッドには、要求本文を指定しません。

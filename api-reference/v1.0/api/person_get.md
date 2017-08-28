@@ -8,11 +8,11 @@
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](../../../concepts/permissions_reference.md)」を参照してください。
  
 
-|アクセス許可の種類      | アクセス許可 (特権の小さいものから大きいものへ)              | 
-|:--------------------|:---------------------------------------------------------| 
-|委任 (職場または学校のアカウント) | People.Read、People.Read.All    | 
-|委任 (個人用 Microsoft アカウント) | People.Read    | 
-|アプリケーション | People.Read.All | 
+|アクセス許可の種類      | アクセス許可 (特権の小さいものから大きいものへ)              |
+|:--------------------|:---------------------------------------------------------|
+|委任 (職場または学校のアカウント) | People.Read、People.Read.All    |
+|委任 (個人用 Microsoft アカウント) | People.Read    |
+|アプリケーション | People.Read.All |
 
 ## <a name="http-request"></a>HTTP 要求
 <!-- { "blockType": "ignored" } -->
@@ -35,7 +35,7 @@ GET /me/people/?$filter={person_property} eq '{property_value}'
 ## <a name="parameters"></a>パラメーター
 | パラメーター |型       |説明|
 |:----------|:----------|:----------|
-|property_value|文字列     |照合する拡張プロパティの値。「**HTTP 要求**」セクションに示した一覧で必要になります。|
+|property_value|String     |照合する拡張プロパティの値。「**HTTP 要求**」セクションに示した一覧で必要になります。|
 |person_property|String    |一致させるユーザーのプロパティ。「**HTTP 要求**」セクションに示した一覧で必要になります。|
 
 ## <a name="request-headers"></a>要求ヘッダー

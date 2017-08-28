@@ -8,11 +8,11 @@
 
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](../../../concepts/permissions_reference.md)」を参照してください。
 
-|アクセス許可の種類      | アクセス許可 (特権の小さいものから大きいものへ)              | 
-|:--------------------|:---------------------------------------------------------| 
-|委任 (職場または学校のアカウント) | Files.ReadWrite、Files.ReadWrite.All、Sites.ReadWrite.All    | 
-|委任 (個人用 Microsoft アカウント) | Files.ReadWrite、Files.ReadWrite.All    | 
-|アプリケーション | Files.ReadWrite.All、Sites.ReadWrite.All | 
+|アクセス許可の種類      | アクセス許可 (特権の小さいものから大きいものへ)              |
+|:--------------------|:---------------------------------------------------------|
+|委任 (職場または学校のアカウント) | Files.ReadWrite、Files.ReadWrite.All、Sites.ReadWrite.All    |
+|委任 (個人用 Microsoft アカウント) | Files.ReadWrite、Files.ReadWrite.All    |
+|アプリケーション | Files.ReadWrite.All、Sites.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 要求
 

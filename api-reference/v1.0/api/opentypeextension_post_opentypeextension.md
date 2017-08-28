@@ -13,7 +13,7 @@
 | [グループの投稿](../resources/post.md) | Group.ReadWrite.All | [メッセージ](../resources/message.md) | Mail.ReadWrite |
 | [組織](../resources/organization.md) | Directory.AccessAsUser.All | [個人用連絡先](../resources/contact.md) | Contacts.ReadWrite |
 | [ユーザー](../resources/user.md) | Directory.AccessAsUser.All | | |
- 
+
 ## <a name="http-request"></a>HTTP 要求
 
 ### <a name="create-an-extension-in-a-new-resource-instance"></a>新規のリソース インスタンスに拡張機能を作成する
@@ -60,7 +60,6 @@ POST /users/{id|userPrincipalName}/extensions
 |_URL parameters_|
 |id|string|該当するコレクション内のオブジェクトの一意識別子。必須。|
 
-
 ## <a name="request-headers"></a>要求ヘッダー
 | 名前       | 値 |
 |:---------------|:----------|
@@ -91,8 +90,6 @@ _新しい_リソース インスタンスに拡張機能を作成するとき�
 | _新しい_リソース インスタンスを明示的に作成しながら、拡張機能を作成する | [連絡先](../resources/contact.md)、[イベント](../resources/event.md)、[メッセージ](../resources/message.md) | [openTypeExtension](../resources/openTypeExtension.md) オブジェクトで展開した新しいインスタンスを含みます。 |
 | 新しいリソース インスタンスを暗示的に作成しながら、拡張機能を作成する | [post](../resources/post.md) | 応答には、応答コードだけが含まれ、応答本体は含まれません。 |
 | _既存_のリソース インスタンスに拡張機能を作成する | サポートされているすべてのリソース | **openTypeExtension** オブジェクトが含まれます。 |
- 
-
 
 ## <a name="example"></a>例
 ##### <a name="request-1"></a>要求 1

@@ -4,11 +4,11 @@
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](../../../concepts/permissions_reference.md)」を参照してください。
 
-|アクセス許可の種類      | アクセス許可 (特権の小さいものから大きいものへ)              | 
-|:--------------------|:---------------------------------------------------------| 
-|委任 (職場または学校のアカウント) | User.Read、User.ReadWrite、User.Read.All、User.ReadWrite.All、Directory.Read.All、Directory.ReadWrite.All、Directory.AccessAsUser.All    | 
-|委任 (個人用 Microsoft アカウント) | User.Read、User.ReadWrite    | 
-|アプリケーション | User.Read.All、User.ReadWrite.All、Directory.Read.All、Directory.ReadWrite.All | 
+|アクセス許可の種類      | アクセス許可 (特権の小さいものから大きいものへ)              |
+|:--------------------|:---------------------------------------------------------|
+|委任 (職場または学校のアカウント) | User.Read、User.ReadWrite、User.Read.All、User.ReadWrite.All、Directory.Read.All、Directory.ReadWrite.All、Directory.AccessAsUser.All    |
+|委任 (個人用 Microsoft アカウント) | User.Read、User.ReadWrite    |
+|アプリケーション | User.Read.All、User.ReadWrite.All、Directory.Read.All、Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 要求
 <!-- { "blockType": "ignored" } -->
@@ -21,7 +21,7 @@ GET /users/{id | userPrincipalName}/directReports
 | ヘッダー       | 値|
 |:-----------|:------|
 | Authorization  | ベアラー {トークン}。必須。  |
-| Content-Type   | application/json  | 
+| Content-Type   | application/json  |
 
 ## <a name="request-body"></a>要求本文
 このメソッドには、要求本文を指定しません。

@@ -7,11 +7,11 @@
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](../../../concepts/permissions_reference.md)」を参照してください。
 
-|アクセス許可の種類      | アクセス許可 (特権の小さいものから大きいものへ)              | 
-|:--------------------|:---------------------------------------------------------| 
-|委任 (職場または学校のアカウント) | Mail.Read、Mail.ReadWrite    | 
-|委任 (個人用 Microsoft アカウント) | Mail.Read、Mail.ReadWrite    | 
-|アプリケーション | Mail.Read、Mail.ReadWrite | 
+|アクセス許可の種類      | アクセス許可 (特権の小さいものから大きいものへ)              |
+|:--------------------|:---------------------------------------------------------|
+|委任 (職場または学校のアカウント) | Mail.Read、Mail.ReadWrite    |
+|委任 (個人用 Microsoft アカウント) | Mail.Read、Mail.ReadWrite    |
+|アプリケーション | Mail.Read、Mail.ReadWrite |
 
 ## <a name="http-request"></a>HTTP 要求
 
@@ -37,7 +37,6 @@ GET /users/{id | userPrincipalName}/mailFolders/{id}/messages
 | ヘッダー       | 値 |
 |:---------------|:--------|
 | Authorization  | ベアラー {トークン}。必須。  |
- 
 
 ## <a name="request-body"></a>要求本文
 このメソッドには、要求本文を指定しません。
