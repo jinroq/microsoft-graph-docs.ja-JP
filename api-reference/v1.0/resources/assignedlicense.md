@@ -3,11 +3,10 @@
 ユーザーに割り当てられているライセンスを表します。[ユーザー](user.md) エンティティの **assignedLicenses** プロパティは、**assignedLicense** のコレクションです。
 
 ## <a name="properties"></a>プロパティ
-| プロパティ       | 型    |説明|
+| プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
 |disabledPlans|Guid コレクション|無効になっているプランの一意識別子のコレクション。|
 |skuId|Guid|SKU の一意識別子。|
-
 
 ## <a name="json-representation"></a>JSON 表記
 

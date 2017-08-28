@@ -1,12 +1,12 @@
 # <a name="delete-attachment"></a>添付ファイルを削除する
 
 予定表イベント、メール メッセージ、またはグループ投稿から添付ファイルを削除します。
-## <a name="prerequisites"></a>前提条件
-この API を実行するには、以下のいずれかの**スコープ**が必要です。
+## <a name="permissions"></a>アクセス許可
+この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](../../../concepts/permissions_reference.md)」を参照してください。
 
-* メッセージの添付ファイルにアクセスする場合:*Mail.ReadWrite*
-* イベントの添付ファイルにアクセスする場合:*Calendars.ReadWrite*
-* グループ イベントおよび投稿の添付ファイルにアクセスする場合:*Group.ReadWrite.All*
+* メッセージの添付ファイルにアクセスする場合:Mail.ReadWrite。
+* イベントの添付ファイルにアクセスする場合:Calendars.ReadWrite。
+* グループ イベントおよび投稿の添付ファイルにアクセスする場合:Group.ReadWrite.All。
 
 ## <a name="http-request"></a>HTTP 要求
 <!-- { "blockType": "ignored" } -->

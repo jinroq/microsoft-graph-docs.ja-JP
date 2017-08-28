@@ -10,13 +10,12 @@
 |[追加](../api/nameditem_add.md)|[NamedItem](nameditem.md)|新しい名前を指定したスコープのコレクションに追加します。|
 |[AddFormulaLocal](../api/nameditem_addformulalocal.md)|[NamedItem](nameditem.md)|ユーザーのロケールを数式に使用して、新しい名前を指定したスコープのコレクションに追加します。|
 |[NamedItem を取得する](../api/nameditem_get.md) | [NamedItem](nameditem.md) |namedItem オブジェクトのプロパティと関係を読み取ります。|
-|[Update](../api/nameditem_update.md) | [NamedItem](nameditem.md)    |NamedItem オブジェクトを更新します。 |
+|[Update](../api/nameditem_update.md) | [NamedItem](nameditem.md)   |NamedItem オブジェクトを更新します。 |
 |[Range](../api/nameditem_range.md)|[Range](range.md)|名前に関連付けられている範囲オブジェクトを返します。名前付き項目の型が範囲でない場合、例外をスローします。|
 |[List](../api/nameditem_list.md) | [NamedItem](nameditem.md) コレクション |namedItem オブジェクトのコレクションを取得します。 |
 
-
 ## <a name="properties"></a>プロパティ
-| プロパティ       | 型    |説明|
+| プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
 |name|string|オブジェクトの名前。読み取り専用です。|
 |comment|string|この名前に関連付けられているコメントを表します。|
@@ -26,7 +25,7 @@
 |visible|boolean|オブジェクトを表示するかどうかを指定します。|
 
 ## <a name="relationships"></a>リレーションシップ
-| リレーションシップ       | 型    |説明|
+| リレーションシップ     | 型   |説明|
 |:---------------|:--------|:----------|
 |ワークシート|[worksheet](worksheet.md)|名前付きのアイテムの対象になるワークシートを返します。アイテムの対象がワークシートの場合にのみ使用できます。読み取り専用です。|
 

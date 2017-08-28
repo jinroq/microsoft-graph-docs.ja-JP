@@ -2,9 +2,16 @@
 
 [デルタ クエリ](../../../concepts/delta_query_overview.md)を使用すると、アプリケーションは、要求ごとにターゲット リソースをすべて読み取ることなく、新しく作成、更新、削除されたエンティティを検出できます。ユーザーへの変更を検出するには、*デルタ*関数を使用して要求を実行します。詳細については、「[デルタ クエリの使用](../../../concepts/delta_query_overview.md)」をご覧ください。
 
-## <a name="prerequisites"></a>前提条件
+## <a name="permissions"></a>アクセス許可
 
-この API を実行するには、以下のいずれかの**スコープ**が必要です。*User.Read、User.ReadWrite、User.ReadBasic.All、User.Read.All、User.ReadWrite.All、Directory.Read.All、Directory.ReadWrite.All、Directory.AccessAsUser.All*
+この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](../../../concepts/permissions_reference.md)」を参照してください。
+
+
+|アクセス許可の種類      | アクセス許可 (特権の小さいものから大きいものへ)              | 
+|:--------------------|:---------------------------------------------------------| 
+|委任 (職場または学校のアカウント) | User.Read、User.ReadWrite、User.ReadBasic.All、User.Read.All、User.ReadWrite.All、Directory.Read.All、Directory.ReadWrite.All、Directory.AccessAsUser.All    | 
+|委任 (個人用 Microsoft アカウント) | User.Read、User.ReadWrite    | 
+|アプリケーション | User.Read.All、User.ReadWrite.All、Directory.Read.All、Directory.ReadWrite.All | 
 
 ## <a name="http-request"></a>HTTP 要求
 
@@ -30,7 +37,8 @@ GET /users/delta
 
 - 任意の GET リクエストと同様に `$select` クエリ パラメーターを使用して、最善のパフォーマンスを得るために必要なプロパティのみを指定することができます。_Id_ プロパティは常に返されます。 
 - デルタ クエリは、メッセージの `$select`、`$top`、および `$expand` をサポートします。 
-- `$orderby` に対するサポートには制限があります。サポートされている唯一の `$orderby` 式は、`$orderby=receivedDateTime+desc` です。`$orderby` 式を含めない場合、戻り値の順序は保証されません。 
+- 
+            `$orderby` に対するサポートには制限があります。サポートされている唯一の `$orderby` 式は、`$orderby=receivedDateTime+desc` です。`$orderby` 式を含めない場合、戻り値の順序は保証されません。 
 - `$search` はサポートされていません。
 
 ## <a name="request-headers"></a>要求ヘッダー

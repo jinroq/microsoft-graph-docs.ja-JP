@@ -8,8 +8,15 @@
 
 > **注**:Microsoft Teams は Office 365 グループでビルドされますが、この API を使用してチームを作成することは現在できません。Microsoft Teams UI で作成されたチームを管理するには、その他のグループ API を使用できます。
 
-## <a name="prerequisites"></a>前提条件
-この API を実行するには、以下の**スコープ**が必要です。_Group.ReadWrite.All_ 
+## <a name="permissions"></a>アクセス許可
+この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](../../../concepts/permissions_reference.md)」を参照してください。
+
+|アクセス許可の種類      | アクセス許可 (特権の小さいものから大きいものへ)              |
+|:--------------------|:---------------------------------------------------------|
+|委任 (職場または学校のアカウント) | Group.ReadWrite.All    |
+|委任 (個人用 Microsoft アカウント) | サポートされていません。    |
+|アプリケーション | Group.ReadWrite.All |
+
 ## <a name="http-request"></a>HTTP 要求
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -34,9 +41,9 @@ Office 365 グループまたは動的グループを作成している場合は
 
 | グループの種類 | **groupTypes** プロパティ |
 |:--------------|:------------------------|
-| Office 365 (統合グループともいいます)| "Unified" | 
-| Dynamic | "DynamicMembership" | 
-| Security | 設定しない。 | 
+| Office 365 (統合グループともいいます)| "Unified" |
+| Dynamic | "DynamicMembership" |
+| Security | 設定しない。 |
 
 グループの必要に応じて他の書き込み可能なプロパティを指定します。詳細については、[group](../resources/group.md) リソースのプロパティをご覧ください。
 

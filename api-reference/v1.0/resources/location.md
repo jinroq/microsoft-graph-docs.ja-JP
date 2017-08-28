@@ -10,8 +10,6 @@
 | displayName  | String | 場所に関連付けられた名前。                       |
 | locationEmailAddress | String | 場所の電子メール アドレス (省略可能)。              |
 
-
-
 ## <a name="json-representation"></a>JSON 表記
 
 <!-- {

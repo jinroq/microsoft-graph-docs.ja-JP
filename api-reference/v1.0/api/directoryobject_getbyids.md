@@ -7,9 +7,16 @@ ID のリストで指定されたディレクトリ オブジェクトを返し�
 * [getMemberObjects](directoryobject_getmemberobjects.md) または [getMemberGroups](directoryobject_getmembergroups.md) などの (ID のコレクションを返す) 関数から返された ID を、バッキング ディレクトリ オブジェクトに解決する。
 * アプリケーションによって外部記憶装置に保存されている ID をバッキング ディレクトリ オブジェクトに解決する。
 
-## <a name="prerequisites"></a>前提条件
+## <a name="permissions"></a>アクセス許可
 
-この API を実行するには、以下のいずれかの**スコープ**が必要です。_Directory.Read.All_、_Directory.AccessAsUser.All_
+この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](../../../concepts/permissions_reference.md)」を参照してください。
+
+
+|アクセス許可の種類      | アクセス許可 (特権の小さいものから大きいものへ)              | 
+|:--------------------|:---------------------------------------------------------| 
+|委任 (職場または学校のアカウント) | Directory.Read.All、Directory.AccessAsUser.All    | 
+|委任 (個人用 Microsoft アカウント) | サポートされていません。    | 
+|アプリケーション | Directory.Read.All | 
 
 ## <a name="http-request"></a>HTTP 要求
 

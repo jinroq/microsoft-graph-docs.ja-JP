@@ -2,8 +2,15 @@
 
 グループ オブジェクトのプロパティを更新します。
 
-## <a name="prerequisites"></a>前提条件
-この API を実行するには、以下の**スコープ**が必要です。*Group.ReadWrite.All*
+## <a name="permissions"></a>アクセス許可
+この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](../../../concepts/permissions_reference.md)」を参照してください。
+
+
+|アクセス許可の種類      | アクセス許可 (特権の小さいものから大きいものへ)              |
+|:--------------------|:---------------------------------------------------------|
+|委任 (職場または学校のアカウント) | Group.ReadWrite.All    |
+|委任 (個人用 Microsoft アカウント) | サポートされていません。    |
+|アプリケーション | Group.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 要求
 
@@ -24,16 +31,16 @@ PATCH /groups/{id}
 
 | プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
-|autoSubscribeNewMembers|ブール値|既定値は **false** です。グループに追加された新しいメンバーが、電子メールの通知を受信するように自動的にサブスクライブされるかどうかを示します。|
+|autoSubscribeNewMembers|Boolean|既定値は **false** です。グループに追加された新しいメンバーが、電子メールの通知を受信するように自動的にサブスクライブされるかどうかを示します。|
 |description|String|グループに関するオプションの説明。 |
 |displayName|String|グループの表示名。このプロパティは、グループの作成時の必須プロパティであり、更新時にクリアすることはできません。$filter および $orderby をサポートします。|
 |groupTypes|String collection|作成するグループの種類を指定します。使用可能な値は **Unified** (Office 365 のグループを作成する場合) または **DynamicMembership** (動的なグループを作成する場合) です。その他のグループの種類 (セキュリティが有効なグループやメールが有効なセキュリティ グループなど) の場合、このプロパティは設定しないでください。|
 |mailEnabled|Boolean|メールが有効なグループであるかどうかを指定します。**securityEnabled** プロパティも **true** の場合、グループはメールが有効なセキュリティ グループになります。それ以外の場合は、Microsoft Exchange 配布グループになります。|
 |mailNickname|String|グループの電子メール エイリアス。このプロパティは、グループの作成時に指定する必要があります。$filter をサポートします。|
 |securityEnabled|Boolean|グループがセキュリティ グループであるかどうかを指定します。**mailEnabled** プロパティも true の場合、グループはメールが有効なセキュリティ グループになります。それ以外の場合は、セキュリティ グループになります。Office 365 グループの場合、**false** にする必要があります。$filter をサポートします。|
-|visibility|ブール値|Office 365 グループの表示を指定します。使用可能な値は次のとおりです。**Private**、**Public**、または空 (**Public** として解釈されます)。|
+|visibility|Boolean|Office 365 グループの表示を指定します。使用可能な値は次のとおりです。**Private**、**Public**、または空 (**Public** として解釈されます)。|
 
-**メモ**
+**注**
 
 - **autoSubscribeNewMembers** は、独自の PATCH 要求で指定することによって更新できます。上の表にある他のプロパティは含めません。
 - コア グループの管理とマネージメントに関するグループ API のサブセットのみが、アプリケーションのアクセス許可と委任されたアクセス許可をサポートします。**autoSubscribeNewMembers** の更新を含む他のすべてのグループ API のメンバーは、委任されたアクセス許可のみをサポートします。例については、「[既知の問題](https://developer.microsoft.com/en-us/graph/docs/overview/release_notes#group-permission-scopes)」を参照してください。

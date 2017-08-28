@@ -3,11 +3,10 @@
 繰り返しのパターンと範囲です。
 
 ## <a name="properties"></a>プロパティ
-| プロパティ       | 型    |説明|
+| プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
 |pattern|[RecurrencePattern](recurrencepattern.md)|イベントの頻度。|
 |range|[RecurrenceRange](recurrencerange.md)|イベントの期間。|
-
 
 ## <a name="json-representation"></a>JSON 表記
 

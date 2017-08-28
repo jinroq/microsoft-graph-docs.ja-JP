@@ -4,8 +4,14 @@
 
 すべてのメールボックス設定を表示することも、特定の設定を取得することもできます。
 
-## <a name="prerequisites"></a>前提条件
-この API を実行するには、以下の**スコープ**が必要です。*MailboxSettings.Read*  
+## <a name="permissions"></a>アクセス許可
+この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](../../../concepts/permissions_reference.md)」を参照してください。
+
+|アクセス許可の種類      | アクセス許可 (特権の小さいものから大きいものへ)              |
+|:--------------------|:---------------------------------------------------------|
+|委任 (職場または学校のアカウント) | MailboxSettings.Read、MailboxSettings.ReadWrite    |
+|委任 (個人用 Microsoft アカウント) | MailboxSettings.Read、MailboxSettings.ReadWrite    |
+|アプリケーション | MailboxSettings.Read、MailboxSettings.ReadWrite |
 
 ## <a name="http-request"></a>HTTP 要求
 自動応答設定を含むメールボックスのすべての設定を取得するには:

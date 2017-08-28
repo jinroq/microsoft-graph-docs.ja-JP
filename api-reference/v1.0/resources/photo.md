@@ -34,7 +34,6 @@
 | **focalLength**         | Double                    | カメラの焦点距離。読み取り専用です。                               |
 | **iso**                 | Int32                     | カメラの ISO 値。読み取り専用です。                                  |
 
-
 ## <a name="remarks"></a>注釈
 OneDrive for Business と SharePoint は、**takenDateTime** プロパティのみを返します。
 

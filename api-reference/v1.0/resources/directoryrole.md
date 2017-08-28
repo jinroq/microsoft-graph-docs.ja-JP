@@ -18,14 +18,13 @@ Azure AD ディレクトリ ロールを表します。Azure AD ディレクト�
 |:---------------|:--------|:----------|
 |description|String|ディレクトリ ロールの説明。読み取り専用。 |
 |displayName|String|ディレクトリ ロールの表示名。読み取り専用。 |
-|id|String|ディレクトリ ロールの一意識別子。[directoryObject](directoryobject.md) から継承されます。キーであり、Null は許容されません。読み取り専用です。|
+|id|文字列|ディレクトリ ロールの一意識別子。[directoryObject](directoryobject.md) から継承されます。キーであり、Null は許容されません。読み取り専用です。|
 |roleTemplateId|String| このロールが基づいている [directoryRoleTemplate](directoryroletemplate.md) の **id**。このプロパティは、POST 操作でテナント内のディレクトリ ロールをアクティブ化するときに指定する必要があります。そのディレクトリ ロールがアクティブ化されると、このプロパティは読み取り専用になります。 |
 
 ## <a name="relationships"></a>リレーションシップ
 | リレーションシップ | 型 |説明|
 |:---------------|:--------|:----------|
 |members|[directoryObject](directoryobject.md) コレクション|このディレクトリ ロールのメンバーであるユーザー。HTTP メソッド: GET、POST、DELETE。読み取り専用。Null 許容型。|
-
 
 ## <a name="json-representation"></a>JSON 表記
 

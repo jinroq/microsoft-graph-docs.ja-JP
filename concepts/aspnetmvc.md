@@ -333,7 +333,7 @@
 
 
 ## <a name="next-steps"></a>次の手順
-- [Graph エクスプローラー](https://graph.microsoft.io/graph-explorer)を使用して REST API を試してみましょう。
+- [Graph エクスプローラー](https://developer.microsoft.com/graph/graph-explorer)を使用して REST API を試してみます。
 - [ASP.NET 4.6 用の Microsoft Graph スニペットのサンプル](https://github.com/microsoftgraph/aspnet-snippets-sample)で一般的な操作の例を見つけるか、GitHub で別の [ASP.NET サンプル](http://aka.ms/aspnetgraphsamples)を探します。
 
 ## <a name="see-also"></a>関連項目

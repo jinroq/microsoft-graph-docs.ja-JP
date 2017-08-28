@@ -2,8 +2,15 @@
 
 directoryRoleTemplate オブジェクトのリストを取得します。
 
-## <a name="prerequisites"></a>前提条件
-この API を実行するには、以下のいずれかの**スコープ**が必要です。*Directory.Read.All* または *Directory.ReadWrite.All* または *Directory.AccessAsUser.All*
+## <a name="permissions"></a>アクセス許可
+この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](../../../concepts/permissions_reference.md)」を参照してください。
+
+
+|アクセス許可の種類      | アクセス許可 (特権の小さいものから大きいものへ)              | 
+|:--------------------|:---------------------------------------------------------| 
+|委任 (職場または学校のアカウント) | Directory.Read.All、Directory.ReadWrite.All、Directory.AccessAsUser.All    | 
+|委任 (個人用 Microsoft アカウント) | サポートされていません。    | 
+|アプリケーション | Directory.Read.All、Directory.ReadWrite.All | 
 
 ## <a name="http-request"></a>HTTP 要求
 <!-- { "blockType": "ignored" } -->

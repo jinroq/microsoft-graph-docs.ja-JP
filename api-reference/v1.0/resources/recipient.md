@@ -3,10 +3,9 @@
 イベント、メッセージ、またはグループ投稿の送信側または受信側のユーザーに関する情報を表します。 
 
 ## <a name="properties"></a>プロパティ
-| プロパティ       | 型    |説明|
+| プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
 |emailAddress|[EmailAddress](emailaddress.md)|受信者の電子メール アドレス。|
-
 
 ## <a name="json-representation"></a>JSON 表記
 

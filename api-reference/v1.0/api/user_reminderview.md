@@ -1,8 +1,15 @@
 # <a name="user-reminderview"></a>user: reminderView
 指定した開始時刻と終了時刻内の予定表のアラームの一覧を返します。 
 
-## <a name="prerequisites"></a>前提条件
-この API を実行するには、以下のいずれかの**スコープ**が必要です。*Calendars.Read、Calendars.ReadWrite*
+## <a name="permissions"></a>アクセス許可
+この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](../../../concepts/permissions_reference.md)」を参照してください。
+
+|アクセス許可の種類      | アクセス許可 (特権の小さいものから大きいものへ)              |
+|:--------------------|:---------------------------------------------------------|
+|委任 (職場または学校のアカウント) | Calendars.Read、Calendars.ReadWrite    |
+|委任 (個人用 Microsoft アカウント) | Calendars.Read、Calendars.ReadWrite    |
+|アプリケーション | Calendars.Read、Calendars.ReadWrite |
+
 ## <a name="http-request"></a>HTTP 要求
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -17,13 +24,12 @@ GET /users/{id | userPrincipalName}/reminderView(startDateTime=startDateTime-val
 |startDateTime|String|アラームを設定するイベントの開始日時です。値は ISO 8601 形式で表されます。例: "2015-11-08T19:00:00.0000000"。|
 |endDateTime|String|アラームを設定するイベントの終了日時です。値は ISO 8601 形式で表されます。例: "2015-11-08T20:00:00.0000000"。|
 
-
 ## <a name="request-headers"></a>要求ヘッダー
 | ヘッダー       | 値|
 |:-----------|:------|
 | Authorization  | ベアラー {トークン}。必須。  |
 | Content-Type   | application/json |
-| Prefer | {Time-zone}。省略可能。指定しない場合、UTC が使用されます。| 
+| Prefer | {Time-zone}。省略可能。指定しない場合、UTC が使用されます。|
 
 ## <a name="request-body"></a>要求本文
 このメソッドには、要求本文を指定しません。

@@ -4,8 +4,15 @@
 
 フォルダー内のメッセージに対する**デルタ**関数呼び出しと GET 要求とは似ていますが、[状態トークン](../../../concepts/delta_query_overview.md)をこれらの 1 つ以上の呼び出しに適切に適用することにより、[そのフォルダーのメッセージの増分の変更をクエリできる](../../../concepts/delta_query_messages.md)点が異なります。これにより、ユーザーのメッセージのローカル ストアの保守と同期を行う際に、メッセージのセット全体を毎回サーバーからフェッチする必要がなくなります。  
 
-## <a name="prerequisites"></a>前提条件
-この API を実行するには、以下のいずれかの**スコープ**が必要です。_Mail.Read_、_Mail.ReadWrite_
+## <a name="permissions"></a>アクセス許可
+この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](../../../concepts/permissions_reference.md)」を参照してください。
+
+|アクセス許可の種類      | アクセス許可 (特権の小さいものから大きいものへ)              |
+|:--------------------|:---------------------------------------------------------|
+|委任 (職場または学校のアカウント) | Mail.Read、Mail.ReadWrite    |
+|委任 (個人用 Microsoft アカウント) | Mail.Read、Mail.ReadWrite    |
+|アプリケーション | Mail.Read、Mail.ReadWrite |
+
 ## <a name="http-request"></a>HTTP 要求
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -21,7 +28,6 @@ GET /users/<id>/mailFolders/{id}/messages/delta
 |:---------------|:--------|:----------|
 | $deltatoken | string | 同じメッセージ コレクションの前の**デルタ**関数呼び出しの `deltaLink` URL で[状態トークン](../../../concepts/delta_query_overview.md)が返され、その変更追跡のラウンドが完了したことを示します。このコレクションについて、このトークンを含む、`deltaLink` URL 全体を次の変更追跡のラウンドの最初の要求に保存し、適用します。|
 | $skiptoken | string | 前の**デルタ**関数呼び出しの `nextLink` URL で[状態トークン](../../../concepts/delta_query_overview.md)が返され、同じメッセージ コレクションに追跡すべき変更が他にもあることを示します。 |
-
 
 #### <a name="odata-query-parameters"></a>OData クエリ パラメーター
 
@@ -65,7 +71,7 @@ Prefer: odata.maxpagesize=2
 
 以下の応答は、_@odata.nextLink_ 応答ヘッダーに含まれる _skipToken_ を示しています。
 
-注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。実際の呼び出しではすべてのプロパティが返されます。
+注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。
 <!-- {
   "blockType": "response",
   "truncated": true,

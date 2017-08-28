@@ -7,19 +7,18 @@
 
 拡張機能内のデータは、プリミティブ型、またはプリミティブ型の配列にすることができます。
 
+## <a name="permissions"></a>アクセス許可
 
-## <a name="prerequisites"></a>前提条件
-
-この API を実行するには、拡張機能が作成されたリソースに応じて、以下のいずれかの**アクセス許可**が必要です。
+この API を呼び出すには、拡張機能が作成されたリソースに応じて、以下のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](../../../concepts/permissions_reference.md)」を参照してください。
 
 |**サポートされているリソース**|**アクセス許可**|**サポートされているリソース**|**アクセス許可** |
 |:-----|:-----|:-----|:-----|
-| [device](../resources/device.md) | _Device.ReadWrite.All_ | [イベント](../resources/event.md) | _Calendars.ReadWrite_ |
-| [グループ](../resources/group.md) | _Group.ReadWrite.All_ | [グループ イベント](../resources/event.md) | _Group.ReadWrite.All_ |
-| [グループの投稿](../resources/post.md) | _Group.ReadWrite.All_ | [メッセージ](../resources/message.md) | _Mail.ReadWrite_ |
-| [組織](../resources/organization.md) | _Directory.AccessAsUser.All_ | [個人用連絡先](../resources/contact.md) | _Contacts.ReadWrite_ |
-| [ユーザー](../resources/user.md) | _Directory.AccessAsUser.All_ | | |
- 
+| [デバイス](../resources/device.md) | Device.ReadWrite.All | [イベント](../resources/event.md) | Calendars.ReadWrite |
+| [グループ](../resources/group.md) | Group.ReadWrite.All | [グループ イベント](../resources/event.md) | Group.ReadWrite.All |
+| [グループの投稿](../resources/post.md) | Group.ReadWrite.All | [メッセージ](../resources/message.md) | Mail.ReadWrite |
+| [組織](../resources/organization.md) | Directory.AccessAsUser.All | [個人用連絡先](../resources/contact.md) | Contacts.ReadWrite |
+| [ユーザー](../resources/user.md) | Directory.AccessAsUser.All | | |
+
 ## <a name="http-request"></a>HTTP 要求
 要求で、リソース インスタンスを識別し、そのインスタンスの **extensions** ナビゲーション プロパティを使用して拡張機能を識別し、その拡張インスタンスで `PATCH` を行います。
 
@@ -47,7 +46,6 @@ PATCH /users/{id|userPrincipalName}/extensions/{extensionId}
 |_URL parameters_|
 |id|string|対応するコレクションのインスタンスの一意識別子。必須。|
 |extensionId|string|これは、拡張情報の一意のテキスト識別子である拡張情報名、または拡張情報の種類と一意のテキスト識別子を連結した完全修飾名になります。完全修飾名は、拡張情報を作成したときに、`id` プロパティで返されます。必須。|
-
 
 ## <a name="request-headers"></a>要求ヘッダー
 | 名前       | 値 |

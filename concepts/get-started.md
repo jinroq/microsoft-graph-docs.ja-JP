@@ -114,6 +114,6 @@
 </table>
 
 ## <a name="see-also"></a>関連項目
-- サンプルの REST 呼び出しを [API エクスプローラー](https://graph.microsoft.io/graph-explorer)で試してみてください。
+- サンプルの REST 呼び出しを [API エクスプローラー](https://developer.microsoft.com/graph/graph-explorer)で試してみてください。
 - [Azure AD エンドポイントのドキュメント](https://azure.microsoft.com/documentation/services/active-directory/)
 - [Azure AD v2.0 エンドポイントのドキュメント](https://azure.microsoft.com/documentation/articles/?service=active-directory&term=azure+ad+v2.0)

@@ -2,19 +2,17 @@
 
 オープン拡張機能 ([openTypeExtension](../resources/openTypeExtension.md) オブジェクト) を作成し、リソースの新規または既存のインスタンスのカスタム プロパティを追加します。 
 
-## <a name="prerequisites"></a>前提条件
+## <a name="permissions"></a>アクセス許可
 
-この API を実行するには、拡張機能を作成するリソースに応じて、以下のいずれかの**アクセス許可**が必要です。
+この API を呼び出すには、拡張機能を作成するリソースに応じて、以下のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](../../../concepts/permissions_reference.md)」を参照してください。
 
 |**サポートされているリソース**|**アクセス許可**|**サポートされているリソース**|**アクセス許可** |
 |:-----|:-----|:-----|:-----|
-| [device](../resources/device.md) | _Device.ReadWrite.All_ | [イベント](../resources/event.md) | _Calendars.ReadWrite_ |
-| [グループ](../resources/group.md) | _Group.ReadWrite.All_ | [グループ イベント](../resources/event.md) | _Group.ReadWrite.All_ |
-| [グループの投稿](../resources/post.md) | _Group.ReadWrite.All_ | [メッセージ](../resources/message.md) | _Mail.ReadWrite_ |
-| [組織](../resources/organization.md) | _Directory.AccessAsUser.All_ | [個人用連絡先](../resources/contact.md) | _Contacts.ReadWrite_ |
-| [ユーザー](../resources/user.md) | _Directory.AccessAsUser.All_ | | |
-
-
+| [デバイス](../resources/device.md) | Device.ReadWrite.All | [イベント](../resources/event.md) | Calendars.ReadWrite |
+| [グループ](../resources/group.md) | Group.ReadWrite.All | [グループ イベント](../resources/event.md) | Group.ReadWrite.All |
+| [グループの投稿](../resources/post.md) | Group.ReadWrite.All | [メッセージ](../resources/message.md) | Mail.ReadWrite |
+| [組織](../resources/organization.md) | Directory.AccessAsUser.All | [個人用連絡先](../resources/contact.md) | Contacts.ReadWrite |
+| [ユーザー](../resources/user.md) | Directory.AccessAsUser.All | | |
  
 ## <a name="http-request"></a>HTTP 要求
 

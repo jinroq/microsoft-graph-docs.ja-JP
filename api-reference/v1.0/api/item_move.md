@@ -4,13 +4,14 @@ DriveItem を新しい親アイテムに移動する場合は、移動する Dri
 
 この要求を使用して、アイテムを[ドライブ](../resources/drive.md)間で移動することはできません。
 
-## <a name="prerequisites"></a>前提条件
-この API を実行するには、以下のいずれかの**スコープ**が必要です。
+## <a name="permissions"></a>アクセス許可
+この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](../../../concepts/permissions_reference.md)」を参照してください。
 
-* Files.ReadWrite
-* Files.ReadWrite.All
-* Sites.ReadWrite.All
-
+|アクセス許可の種類      | アクセス許可 (特権の小さいものから大きいものへ)              |
+|:--------------------|:---------------------------------------------------------|
+|委任 (職場または学校のアカウント) | Files.ReadWrite、Files.ReadWrite.All、Sites.ReadWrite.All    |
+|委任 (個人用 Microsoft アカウント) | Files.ReadWrite、Files.ReadWrite.All    |
+|アプリケーション | Files.ReadWrite.All、Sites.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 要求
 
@@ -26,7 +27,6 @@ PATCH /groups/{group-id}/drive/{item-id}
 | 名前          | 型   | 説明                                                                                                                                                         |
 |:--------------|:-------|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | if-match      | String | この要求ヘッダーが含まれていて、指定された eTag (または cTag) がフォルダーの現在の eTag に一致しない場合には、`412 Precondition Failed` 応答が返されます。 |
-
 
 ## <a name="request-body"></a>要求本文
 要求の本文内に、**parentReference** プロパティの新しい値を指定します。要求本文に含まれない既存のプロパティは、以前の値のままになるか、他のプロパティ値の変化に基づいて再計算されます。最適なパフォーマンスを得るためには、変更されていない既存の値を含めないでください。

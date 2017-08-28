@@ -19,7 +19,6 @@
 | [個人用連絡先](contact.md) | GA |
 | [ユーザー](user.md) | GA |
 
-
 ### <a name="use-open-extensions-for-outlook-resources-or-extended-properties"></a>オープン拡張機能 (Outlook リソース用) と拡張プロパティのどちらを使用するか
 
 オープン拡張機能は、カスタム データの格納およびカスタムデータへのアクセスを必要とするほとんどのシナリオに対して推奨されるソリューションです。ただし、[拡張プロパティとこの REST API](extended-properties-overview.md) は、[Microsoft Graph API のメタデータ](http://developer.microsoft.com/en-us/graph/docs/overview/call_api)を通じてまだ公開されていない Outlook MAPI プロパティのカスタム データにアクセスする必要がある場合に使用できます。メタデータが公開するプロパティは、https://graph.microsoft.com/v1.0/$metadata で確認できます。
@@ -45,12 +44,12 @@
 
 ```
 ## <a name="properties"></a>プロパティ
-| プロパティ       | 型    |説明|
+| プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
 |extensionName|String|オープン型のオープン拡張機能の一意のテキスト識別子。必須。|
-|id|String| **extensionName** と拡張子タイプを連結する完全修飾識別子。読み取り専用。|
+|id|文字列| **extensionName** と拡張子タイプを連結する完全修飾識別子。読み取り専用。|
 
-## <a name="relationships"></a>リレーションシップ
+## <a name="relationships"></a>関係
 なし
 
 
@@ -58,9 +57,9 @@
 
 | メソッド           | 戻り値の型    |説明|
 |:---------------|:--------|:----------|
-|[Post](../api/opentypeextension_post_opentypeextension.md) | (既存リソースのインスタンス内の) [openTypeExtension](opentypeextension.md)、または、openTypeExtension オブジェクトを含む新しい[contact](../resources/contact.md)、[event](../resources/event.md)、[message](../resources/message.md)。 | 既存または新規のリソース インスタンス内に openTypeExtension オブジェクトを作成します。| 
+|[Post](../api/opentypeextension_post_opentypeextension.md) | (既存リソースのインスタンス内の) [openTypeExtension](opentypeextension.md)、または、openTypeExtension オブジェクトを含む新しい[contact](../resources/contact.md)、[event](../resources/event.md)、[message](../resources/message.md)。 | 既存または新規のリソース インスタンス内に openTypeExtension オブジェクトを作成します。|
 |[Get](../api/opentypeextension_get.md) | [openTypeExtension](opentypeextension.md) |openTypeExtension オブジェクトのプロパティと関係を読み取ります。|
-|[更新する](../api/opentypeextension_update.md) | [openTypeExtension](opentypeextension.md)    |openTypeExtension オブジェクトを更新します。 |
+|[更新する](../api/opentypeextension_update.md) | [openTypeExtension](opentypeextension.md)   |openTypeExtension オブジェクトを更新します。 |
 |[削除](../api/opentypeextension_delete.md) | なし |openTypeExtension オブジェクトを削除します。 |
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

@@ -3,12 +3,11 @@
 デバイスに関連付けられている代替のセキュリティ ID が含まれています。[デバイス](device.md) エンティティの **alternativeSecurityIds** プロパティは、**alternativeSecurityId** のコレクションです。
 
 ## <a name="properties"></a>プロパティ
-| プロパティ       | 型    |説明|
+| プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
 |identityProvider|String|            |
 |key|Binary|            |
 |type|Int32|            |
-
 
 ## <a name="json-representation"></a>JSON 表記
 

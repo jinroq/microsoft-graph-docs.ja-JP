@@ -24,9 +24,9 @@ Office 365 グループ、動的なグループ、セキュリティ グルー�
 |[メンバーを追加する](../api/group_post_members.md) |なし| **members** ナビゲーション プロパティ (セキュリティ グループおよびメールが有効なセキュリティ グループでのみサポートされます) に投稿することによってこのグループにユーザーまたはグループを追加します。|
 |[メンバーを一覧表示する](../api/group_list_members.md) |[directoryObject](directoryobject.md) コレクション| **members** ナビゲーション プロパティからこのグループの直接のメンバーであるユーザーおよびグループを取得します。|
 |[メンバーを削除する](../api/group_delete_members.md) | なし |**members** ナビゲーション プロパティを使用して Office 365 のグループ、セキュリティ グループ、またはメールが有効なセキュリティ グループからメンバーを削除できます。ユーザーや他のグループを削除できます。 |
-|[checkMemberGroups](../api/group_checkmembergroups.md)|String コレクション|グループの一覧内のメンバーシップについてこのグループを確認します。この関数は、推移的です。|
-|[getMemberGroups](../api/group_getmembergroups.md)|String コレクション|このグループがメンバーであるすべてのグループを返します。この関数は、推移的です。|
-|[getMemberObjects](../api/group_getmemberobjects.md)|String コレクション|このグループがメンバーであるすべてのグループを返します。この関数は、推移的です。 |
+|[checkMemberGroups](../api/group_checkmembergroups.md)|String collection|グループの一覧内のメンバーシップについてこのグループを確認します。この関数は、推移的です。|
+|[getMemberGroups](../api/group_getmembergroups.md)|String collection|このグループがメンバーであるすべてのグループを返します。この関数は、推移的です。|
+|[getMemberObjects](../api/group_getmemberobjects.md)|String collection|このグループがメンバーであるすべてのグループを返します。この関数は、推移的です。 |
 |[delta](../api/group_delta.md)|group コレクション| グループに対する増分の変更を取得します。 |
 |**予定表**| | |
 |[イベントを作成する](../api/group_post_events.md) |[Event](event.md)| Event コレクションへの投稿によって、新しいイベントを作成します。|
@@ -63,26 +63,25 @@ Office 365 グループ、動的なグループ、セキュリティ グルー�
 |[unsubscribeByMail](../api/group_unsubscribebymail.md)|なし|isSubscribedByMail プロパティを **false** に設定します。現在のユーザーに対して電子メールでの会話の受信を無効にします。Office 365 のグループのみをサポートします。|
 |[resetUnseenCount](../api/group_resetunseencount.md)|なし|現在のユーザーが最後の訪問以降見ていない、すべての投稿の unseenCount を 0 にリセットします。Office 365 のグループのみをサポートします。|
 
-
 ## <a name="properties"></a>プロパティ
 | プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
-|allowExternalSenders|ブール値|既定値は **false** です。組織外部のユーザーがグループにメッセージを送信できるかどうかを示します。|
+|allowExternalSenders|Boolean|既定値は **false** です。組織外部のユーザーがグループにメッセージを送信できるかどうかを示します。|
 |autoSubscribeNewMembers|Boolean|既定値は **false** です。グループに追加された新しいメンバーが、電子メールの通知を受信するように自動的にサブスクライブされるかどうかを示します。グループの PATCH 要求でこのプロパティを設定できます。グループを作成する最初の POST 要求では設定しないでください。|
-|分類|文字列|グループの分類 (低、中、高程度の企業への影響など) を説明します。このプロパティの有効な値は、[テンプレート定義](groupsettingtemplate.md)に基づいて ClassificationList [設定](groupsetting.md)値を作成することによって定義されます。|
+|分類|String|グループの分類 (低、中、高程度の企業への影響など) を説明します。このプロパティの有効な値は、[テンプレート定義](groupsettingtemplate.md)に基づいて ClassificationList [設定](groupsetting.md)値を作成することによって定義されます。|
 |createdDateTime|DateTimeOffset| グループが作成された日時。 |
 |description|String|グループに関するオプションの説明。 |
 |displayName|String|グループの表示名。このプロパティは、グループの作成時の必須プロパティであり、更新時にクリアすることはできません。$filter および $orderby をサポートします。|
 |groupTypes|String collection| 作成するグループの種類を指定します。使用可能な値は **Unified** (Office 365 のグループを作成する場合) または **DynamicMembership** (動的なグループを作成する場合) です。その他のグループの種類 (セキュリティが有効なグループやメールが有効なセキュリティ グループなど) の場合、このプロパティは設定しないでください。$filter をサポートします。|
 |id|String|グループの一意の識別子。[directoryObject](directoryobject.md) から継承されます。キー。null 許容ではありません。読み取り専用です。|
 |isSubscribedByMail|Boolean|既定値は **true** です。現在のユーザーが電子メールの会話を受信するように登録されているかどうかを示します。|
-|mail|String|グループの SMTP アドレス (たとえば、"Serviceadmins@contoso.onmicrosoft.com")。読み取り専用です。$filter をサポートします。|
+|メール|String|グループの SMTP アドレス (たとえば、"Serviceadmins@contoso.onmicrosoft.com")。読み取り専用です。$filter をサポートします。|
 |mailEnabled|Boolean|メールが有効なグループであるかどうかを指定します。**securityEnabled** プロパティも **true** の場合、グループはメールが有効なセキュリティ グループになります。それ以外の場合は、Microsoft Exchange 配布グループになります。|
 |mailNickname|String|グループの電子メール エイリアス。このプロパティは、グループの作成時に指定する必要があります。$filter をサポートします。|
 |onPremisesLastSyncDateTime|DateTimeOffset|グループがオンプレミスのディレクトリと最後に同期した日時を示します。Timestamp 型は、ISO 8601 形式を使用して日付と時刻の情報を表し、必ず UTC 時間です。たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、次のようになります。`'2014-01-01T00:00:00Z'`読み取り専用です。$filter をサポートします。|
 |onPremisesSecurityIdentifier|String|オンプレミスからクラウドに同期されたグループのオンプレミスのセキュリティ識別子 (SID) が含まれます。読み取り専用です。 |
 |onPremisesSyncEnabled|Boolean|このグループがオンプレミスのディレクトリから同期される場合は **true**、このグループが最初にオンプレミスのディレクトリから同期されていて、今後は同期しない場合は **false**、このオブジェクトがオンプレミスのディレクトリから一度も同期されたことがない場合は **null**。読み取り専用です。$filter をサポートします。|
-|proxyAddresses|String コレクション| 複数値プロパティのフィルター式には **any** 演算子が必要です。読み取り専用です。null 許容ではありません。$filter をサポートします。 |
+|proxyAddresses|String collection| 複数値プロパティのフィルター式には **any** 演算子が必要です。読み取り専用です。null 許容ではありません。$filter をサポートします。 |
 |securityEnabled|Boolean|グループがセキュリティ グループであるかどうかを指定します。**mailEnabled** プロパティも true の場合、グループはメールが有効なセキュリティ グループになります。それ以外の場合は、セキュリティ グループになります。Office 365 グループの場合、**false** にする必要があります。$filter をサポートします。|
 |unseenCount|Int32|現在のユーザーの最後のアクセス以降の投稿の非表示カウントです。|
 |visibility|String| Office 365 グループの表示を指定します。使用可能な値は次のとおりです。**Private**、**Public**、または空 (**Public** として解釈されます)。|
@@ -95,7 +94,7 @@ Office 365 グループ、動的なグループ、セキュリティ グルー�
 |calendarView|[event](event.md) コレクション|予定表のカレンダー ビュー。読み取り専用です。|
 |conversations|[conversation](conversation.md) コレクション|グループの会話。|
 |createdOnBehalfOf|[directoryObject](directoryobject.md)| グループを作成したユーザー (またはアプリケーション)。注: ユーザーが管理者である場合、これは設定されません。読み取り専用です。|
-|drive|[drive](drive.md)|グループのドライブ。読み取り専用です。|
+|ドライブ|[drive](drive.md)|グループのドライブ。読み取り専用です。|
 |events|[event](event.md) コレクション|グループの予定表イベント。|
 |extensions|[extension](extension.md) コレクション|グループに対して定義されているオープン拡張機能のコレクション。読み取り専用です。Null 許容型。|
 |memberOf|[directoryObject](directoryobject.md) コレクション|このグループがメンバーとして含まれているグループ。HTTP メソッド:GET (すべてのグループでサポートされます)。読み取り専用です。Null 許容型。|
@@ -106,10 +105,9 @@ Office 365 グループ、動的なグループ、セキュリティ グルー�
 |photos|[profilePhoto](profilephoto.md) コレクション| グループが所有しているプロファイル写真。読み取り専用です。Null 許容型。|
 |planner|[Planner](planner.md)| 統合グループに存在する可能性がある Planner リソースのエントリ ポイント。|
 |rejectedSenders|[directoryObject](directoryobject.md) コレクション|このグループで投稿またはカレンダーのイベントを作成することが許可されていないグループの一覧。Null 許容型|
-|設定|[groupSetting](groupsetting.md) コレクション| 読み取り専用です。Null 許容型。|
+|設定|[groupSetting](groupsetting.md) コレクション| 読み取り専用。Null 許容型。|
 |sites|[site](site.md) コレクション|このグループ内の SharePoint サイトの一覧。/sites/root を使用して既定のサイトにアクセスします。
 |threads|[conversationThread](conversationthread.md) コレクション| グループの会話スレッド。Null 許容型。|
-
 
 ## <a name="json-representation"></a>JSON 表記
 

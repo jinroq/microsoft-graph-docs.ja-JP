@@ -548,7 +548,7 @@ Android アプリを試す準備ができました。
 ["Microsoft Graph を呼び出す"](#call-microsoft-graph)で構成した電子メール アドレスの受信トレイを確認します。アプリへのサインインに使用したアカウントからのメールを受信しているはずです。
 
 ## <a name="next-steps"></a>次の手順
-- [Microsoft Graph エクスプローラー](https://graph.microsoft.io/graph-explorer)を試してみましょう。
+- [Microsoft Graph エクスプローラー](https://developer.microsoft.com/graph/graph-explorer)を試してみましょう。
 - [Android 用のスニペットのサンプル](https://github.com/microsoftgraph/android-java-snippets-sample)で一般的な操作の例を見つけるか、GitHub で別の [Android サンプル](https://github.com/microsoftgraph?utf8=%E2%9C%93&query=android)を探します。
 
 

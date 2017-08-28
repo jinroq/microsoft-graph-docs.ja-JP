@@ -13,9 +13,8 @@
 |[会話スレッドを一覧表示する](../api/conversation_list_threads.md) |[conversationThread](conversationthread.md) コレクション| グループの会話のすべてのスレッドを取得します。|
 |[会話スレッドを作成する](../api/conversation_post_threads.md) |[conversationThread](conversationthread.md) コレクション| 指定した会話にスレッドを作成します。|
 
-
 ## <a name="properties"></a>プロパティ
-| プロパティ       | 型    |説明|
+| プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
 |hasAttachments|Boolean|この会話内のいずれかの投稿に添付ファイルが 1 つ以上あるかどうかを示します。|
 |id|String|会話の一意識別子。読み取り専用です。|
@@ -25,10 +24,9 @@
 |uniqueSenders|String collection|この会話にメッセージを送信したすべてのユーザーです。|
 
 ## <a name="relationships"></a>関係
-| リレーションシップ | 型    |説明|
+| リレーションシップ | 型   |説明|
 |:---------------|:--------|:----------|
 |スレッド|[conversationThread](conversationthread.md) コレクション|会話内のすべての会話スレッドのコレクションです。ナビゲーションのプロパティです。読み取り専用です。Null 許容型。|
-
 
 ## <a name="json-representation"></a>JSON 表記
 

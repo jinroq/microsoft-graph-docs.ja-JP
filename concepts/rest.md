@@ -133,7 +133,7 @@ Authorization: Bearer eyJ0eXAi...b66LoPVA
 これで、Microsoft Graph を呼び出す方法が理解できたため、API リファレンスを使用して、アプリで必要なその他の呼び出しを作成することができます。ただしアプリでは、呼び出しを行うための適切なアクセス許可をアプリ登録で設定する必要がある点に注意してください。
 
 ## <a name="next-steps"></a>次の手順
-- [Graph エクスプローラー](https://graph.microsoft.io/graph-explorer)を使用してさらに REST API を試してみる。
+- [Graph エクスプローラー](https://developer.microsoft.com/graph/graph-explorer)を使用してさらに REST API を試してみる。
 
 ## <a name="see-also"></a>関連項目
 - [Azure AD v2.0 のプロトコル](https://azure.microsoft.com/en-us/documentation/articles/active-directory-v2-protocols/)

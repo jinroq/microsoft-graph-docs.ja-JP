@@ -22,23 +22,20 @@
 |[複数値の拡張プロパティを作成する](../api/multivaluelegacyextendedproperty_post_multivalueextendedproperties.md) | [contactFolder](contactFolder.md) | 新規または既存の contactFolder に、1 つ以上の複数値の拡張プロパティを作成します。  |
 |[複数値の拡張プロパティを持つ contactFolder を取得する](../api/multivaluelegacyextendedproperty_get.md)  | [contactFolder](contactFolder.md) | `$expand` を使用して、複数値の拡張プロパティを含む contactFolder を取得します。 |
 
-
-
 ## <a name="properties"></a>プロパティ
-| プロパティ       | 型    |説明|
+| プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
 |displayName|String|フォルダーの表示名。|
 |id|String|連絡先フォルダーの一意識別子。読み取り専用。|
 |parentFolderId|String|フォルダーの親フォルダーの ID。|
 
 ## <a name="relationships"></a>リレーションシップ
-| リレーションシップ | 型    |説明|
+| リレーションシップ | 型   |説明|
 |:---------------|:--------|:----------|
-|childFolders|[ContactFolder](contactfolder.md) collection|フォルダー内の子フォルダーのコレクション。ナビゲーション プロパティ。読み取り専用。Null 許容型。|
-|連絡先|[Contact](contact.md) collection|フォルダー内の連絡先。ナビゲーション プロパティ。読み取り専用。Null 許容型。|
-|multiValueExtendedProperties|[multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md) collection| contactFolder に定義された、複数値の拡張プロパティのコレクションです。読み取り専用。Null 許容型。|
-|singleValueExtendedProperties|[singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md) collection| contactFolder に定義された、単一値の拡張プロパティのコレクションです。読み取り専用。Null 許容型。|
-
+|childFolders|[ContactFolder](contactfolder.md) コレクション|フォルダー内の子フォルダーのコレクション。ナビゲーション プロパティ。読み取り専用。Null 許容型。|
+|contacts|[Contact](contact.md) コレクション|フォルダー内の連絡先。ナビゲーション プロパティ。読み取り専用。Null 許容型。|
+|multiValueExtendedProperties|[multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md) コレクション| contactFolder に定義された、複数値の拡張プロパティのコレクションです。読み取り専用。Null 許容型。|
+|singleValueExtendedProperties|[singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md) コレクション| contactFolder に定義された、単一値の拡張プロパティのコレクションです。読み取り専用。Null 許容型。|
 
 ## <a name="json-representation"></a>JSON 表記
 
@@ -68,7 +65,7 @@
 ## <a name="see-also"></a>関連項目
 
 - [デルタ クエリを使用して、Microsoft Graph データの変更を追跡する](../../../concepts/delta_query_overview.md)
-- [フォルダー内のメッセージへの増分変更を取得する](../../../concepts/delta_query_messages.md)
+- [フォルダー内のメッセージへの増分の変更を取得する](../../../concepts/delta_query_messages.md)
 
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

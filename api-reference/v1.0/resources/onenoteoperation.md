@@ -28,7 +28,7 @@ OneNote の特定の長時間操作の状態。
 
 ```
 ## <a name="properties"></a>プロパティ
-| プロパティ       | 型    |説明|
+| プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
 |createdDateTime| DateTimeOffset |操作の開始時刻です。|
 |error|[onenoteOperationError](onenoteoperationerror.md)|操作によって返されるエラーです。|
@@ -48,7 +48,6 @@ OneNote の特定の長時間操作の状態。
 | メソッド           | 戻り値の型    |説明|
 |:---------------|:--------|:----------|
 |[操作の取得](../api/onenoteoperation_get.md) | [onenoteOperation](onenoteoperation.md) |操作の現在の状態を取得します。 |
-
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

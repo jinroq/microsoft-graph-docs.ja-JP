@@ -173,7 +173,7 @@ PHP アプリを試す準備ができました。
 ["REST を使用して Microsoft Graph を呼び出す"](#call-microsoft-graph-using-rest) で構成した電子メール アドレスの受信トレイを確認します。アプリへのサインインに使用したアカウントからのメールを受信しているはずです。
 
 ## <a name="next-steps"></a>次の手順
-- [Microsoft Graph エクスプローラー](https://graph.microsoft.io/graph-explorer)を試してみる。
+- [Microsoft Graph エクスプローラー](https://developer.microsoft.com/graph/graph-explorer)を試してみる。
 
 
 ## <a name="see-also"></a>関連項目

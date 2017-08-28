@@ -2,9 +2,16 @@
 
 [デルタ クエリ](../../../concepts/delta_query_overview.md)を使用すると、アプリケーションは、要求ごとにターゲット リソースをすべて読み取ることなく、新しく作成、更新、削除されたエンティティを検出できます。グループへの変更を検出するには、*デルタ*関数を使用して要求を実行します。詳細については、「[デルタ クエリの使用](../../../concepts/delta_query_overview.md)」をご覧ください。
 
-## <a name="prerequisites"></a>前提条件
+## <a name="permissions"></a>アクセス許可
 
-この API を実行するには、以下のいずれかの**スコープ**が必要です。*Group.Read.All* または *Group.ReadWrite.All*
+この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](../../../concepts/permissions_reference.md)」を参照してください。
+
+
+|アクセス許可の種類      | アクセス許可 (特権の小さいものから大きいものへ)              | 
+|:--------------------|:---------------------------------------------------------| 
+|委任 (職場または学校のアカウント) | Group.Read.All、Group.ReadWrite.All    | 
+|委任 (個人用 Microsoft アカウント) | サポートされていません。    | 
+|アプリケーション | Group.Read.All、Group.ReadWrite.All | 
 
 ## <a name="http-request"></a>HTTP 要求
 

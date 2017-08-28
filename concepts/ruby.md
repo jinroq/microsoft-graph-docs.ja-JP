@@ -285,7 +285,7 @@ OmniAuth がユーザーの認証を完了すると、アプリ登録で指定�
 3. Web ブラウザーで `http://localhost:3000` にアクセスします。
 
 ## <a name="see-also"></a>関連項目
-- [Graph エクスプローラー](https://graph.microsoft.io/graph-explorer)を使用して REST API を試してみます。
+- [Graph エクスプローラー](https://developer.microsoft.com/graph/graph-explorer)を使用して REST API を試してみます。
 - GitHub の他の [Microsoft Graph サンプル](https://github.com/microsoftgraph)を探索します。
 
 

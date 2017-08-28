@@ -5,12 +5,11 @@
 [attendeeBase](attendeebase.md) から派生します。
 
 ## <a name="properties"></a>プロパティ
-| プロパティ       | 型    |説明|
+| プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
 |status|[ResponseStatus](responsestatus.md)|イベントに対する参加者からの応答 (なし、承諾、辞退など) と応答が送信された日時。|
 |type|String|参加者のタイプは、`Required`、`Optional`、`Resource` です。|
 |emailAddress|[emailAddress](emailAddress.md)|参加者の名前と SMTP アドレスが含まれます。|
-
 
 ## <a name="json-representation"></a>JSON 表記
 

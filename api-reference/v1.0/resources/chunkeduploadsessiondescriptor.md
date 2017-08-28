@@ -2,11 +2,9 @@
 
 
 ## <a name="properties"></a>プロパティ
-| プロパティ       | 型    |説明|
+| プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
 |name|String||
-
-
 
 ## <a name="json-representation"></a>JSON 表記
 

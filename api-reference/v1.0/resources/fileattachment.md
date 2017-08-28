@@ -16,9 +16,8 @@
 |[取得](../api/attachment_get.md) | [fileAttachment](fileattachment.md) |fileattachment オブジェクトのプロパティと関係を読み取ります。|
 |[Delete](../api/attachment_delete.md) | なし |fileAttachment オブジェクトを削除します。 |
 
-
 ## <a name="properties"></a>プロパティ
-| プロパティ       | 型    |説明|
+| プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
 |contentBytes|Binary|ファイルのバイナリ コンテンツです。|
 |contentId|String|Exchange ストア内の添付ファイルの ID。|

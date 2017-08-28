@@ -16,9 +16,8 @@
 |[予定表を一覧表示する](../api/calendargroup_list_calendars.md) |[Calendar](calendar.md) collection| 予定表グループ内の予定表を一覧表示する|
 |[予定表を作成する](../api/calendargroup_post_calendars.md) |[Calendar](calendar.md)| 予定表グループに新しい予定表を作成します。|
 
-
 ## <a name="properties"></a>プロパティ
-| プロパティ       | 型    |説明|
+| プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
 |name|String|グループの名前。|
 |changeKey|String|予定表グループのバージョンを識別します。予定表グループを変更するたびに ChangeKey も変更されます。これにより、Exchange は正しいバージョンのオブジェクトに変更を適用できます。読み取り専用です。|
@@ -26,10 +25,9 @@
 |id|String|グループの一意識別子。読み取り専用です。|
 
 ## <a name="relationships"></a>リレーションシップ
-| リレーションシップ | 型    |説明|
+| リレーションシップ | 型   |説明|
 |:---------------|:--------|:----------|
-|予定表|[Calendar](calendar.md) collection|予定表グループ内の予定表。ナビゲーション プロパティ。読み取り専用です。Null 許容型。|
-
+|予定表|[Calendar](calendar.md) コレクション|予定表グループ内の予定表。ナビゲーション プロパティ。読み取り専用。Null 許容型。|
 
 ## <a name="json-representation"></a>JSON 表記
 

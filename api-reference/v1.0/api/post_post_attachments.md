@@ -1,10 +1,14 @@
 # <a name="add-attachment"></a>添付ファイルを追加する
 
 [添付ファイル](../resources/attachment.md)を投稿に追加する場合に、この API を使用します。現在、各 REST 要求の合計サイズは 4 MB に制限されているため、追加できる添付ファイルのサイズは 4 MB 未満に制限されます。
-## <a name="prerequisites"></a>前提条件
-この API を実行するには、以下のいずれかの**スコープ**が必要です。
+## <a name="permissions"></a>アクセス許可
+この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](../../../concepts/permissions_reference.md)」を参照してください。
 
-* Group.ReadWrite.All
+|アクセス許可の種類      | アクセス許可 (特権の小さいものから大きいものへ)              | 
+|:--------------------|:---------------------------------------------------------| 
+|委任 (職場または学校のアカウント) | Group.ReadWrite.All    | 
+|委任 (個人用 Microsoft アカウント) | サポートされていません。    | 
+|アプリケーション | Group.ReadWrite.All | 
 
 ## <a name="http-request"></a>HTTP 要求
 <!-- { "blockType": "ignored" } -->

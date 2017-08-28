@@ -4,12 +4,11 @@
 
 
 ## <a name="properties"></a>プロパティ
-| プロパティ       | 型    |説明|
+| プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
 |capabilityStatus|String|「有効」など。|
 |provisioningStatus|String|「成功」など。|
 |service|String|サービスの名前。「AccessControlS2S」など。|
-
 
 ## <a name="json-representation"></a>JSON 表記
 

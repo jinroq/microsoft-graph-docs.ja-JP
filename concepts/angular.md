@@ -167,7 +167,7 @@ app.js を開いて、ファイルの末尾に次に示すコードを追加し�
 4. 必要に応じて、受信者のメール アドレスを編集してから、**[メールの送信]** ボタンを選びます。メールが送信されると、ボタンの下に成功メッセージが表示されます。 
 
 ## <a name="next-steps"></a>次の手順
-- [Graph エクスプローラー](https://graph.microsoft.io/graph-explorer)を使用して REST API を試してみます。
+- [Graph エクスプローラー](https://developer.microsoft.com/graph/graph-explorer)を使用して REST API を試してみます。
 - GitHub で他の [AngularJS サンプル](https://github.com/search?utf8=%E2%9C%93&q=angular+sample+user%3Amicrosoftgraph&type=Repositories&ref=searchresults)を探します。
 
 

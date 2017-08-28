@@ -13,7 +13,7 @@
 | メソッド       | 戻り値の型  |説明|
 |:---------------|:--------|:----------|
 |[イベントを一覧表示する](../api/user_list_events.md)|[event](event.md) コレクション |ユーザーのメールボックス内の[イベント](../resources/event.md) オブジェクトの一覧を取得します。一覧には、単一インスタンスの会議と定期的なマスターが含まれています。|
-|[イベントを作成する](../api/user_post_events.md) |[event](event.md)| インスタンス コレクションへの投稿により、新しいイベントを作成します。|
+|[イベントの作成](../api/user_post_events.md) |[event](event.md)| インスタンス コレクションへの投稿により、新しいイベントを作成します。|
 |[イベントの取得](../api/event_get.md) | [event](event.md) |event オブジェクトのプロパティとリレーションシップを読み取ります。|
 |[更新する](../api/event_update.md) | [event](event.md) |イベント オブジェクトを更新します。 |
 |[削除](../api/event_delete.md) | なし |イベント オブジェクトを削除します。 |
@@ -35,8 +35,6 @@
 |[単一値の拡張プロパティを持つイベントの取得](../api/singlevaluelegacyextendedproperty_get.md)  | [event](event.md) | `$expand` または `$filter` を使用して、単一値の拡張プロパティを含むイベントを取得します。 |
 |[複数値の拡張プロパティを作成する](../api/multivaluelegacyextendedproperty_post_multivalueextendedproperties.md) | [event](event.md) | 新規または既存のイベントに、1 つ以上の複数値の拡張プロパティを作成します。  |
 |[複数値の拡張プロパティを持つイベントの取得](../api/multivaluelegacyextendedproperty_get.md)  | [event](event.md) | `$expand` を使用して、複数値の拡張プロパティを含むイベントを取得します。 |
-
-
 
 ## <a name="properties"></a>プロパティ
 | プロパティ     | 型   |説明|
@@ -72,7 +70,7 @@
 |showAs|String|表示されるステータス:予定なし = 0、仮の予定 = 1、予定あり = 2、休暇 = 3、離席 = 4、不明 = -1。使用可能な値: `Free`、`Tentative`、`Busy`、`Oof`、`WorkingElsewhere`、`Unknown`。|
 |start|[dateTimeTimeZone](datetimetimezone.md)|イベントが開始する日付、時刻、タイムゾーン。|
 |subject|String|イベントの件名行のテキスト。|
-|type|String|イベントの種類:SingleInstance = 0、発生 = 1、例外 = 2、SeriesMaster = 3。使用可能な値: `SingleInstance`、`Occurrence`、`Exception`、`SeriesMaster`。|
+|type|文字列|イベントの種類:SingleInstance = 0、発生 = 1、例外 = 2、SeriesMaster = 3。使用可能な値: `SingleInstance`、`Occurrence`、`Exception`、`SeriesMaster`。|
 |webLink|String|Outlook Web App でイベントを開く URL。<br/><br/>Outlook Web App のメールボックスにログインしている場合、ブラウザーでイベントが開きます。まだブラウザーでログインしていない場合、ログインするように求められます。<br/><br/>この URL には、iFrame 内からアクセスできます。|
 
 ## <a name="relationships"></a>リレーションシップ
@@ -82,9 +80,8 @@
 |予定表|[calendar](calendar.md)|イベントを含む予定表。ナビゲーション プロパティ。読み取り専用。|
 |extensions|[Extension](extension.md) コレクション|イベントに対して定義されているオープン拡張機能のコレクション。読み取り専用。Null 許容型。|
 |インスタンス|[event](event.md) コレクション|イベントのインスタンス。ナビゲーション プロパティ。読み取り専用。Null 許容型。|
-|multiValueExtendedProperties|[multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md) collection| イベントに対して定義された、複数値の拡張プロパティのコレクション。読み取り専用。Null 許容型。|
-|singleValueExtendedProperties|[singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md) collection| イベントに対して定義された、単一値の拡張プロパティのコレクションです。読み取り専用。Null 許容型。|
-
+|multiValueExtendedProperties|[multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md) コレクション| イベントに対して定義された、複数値の拡張プロパティのコレクション。読み取り専用。Null 許容型。|
+|singleValueExtendedProperties|[singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md) コレクション| イベントに対して定義された、単一値の拡張プロパティのコレクションです。読み取り専用。Null 許容型。|
 
 ## <a name="json-representation"></a>JSON 表記
 

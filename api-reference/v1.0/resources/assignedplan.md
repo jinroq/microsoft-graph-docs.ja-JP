@@ -4,13 +4,12 @@
 
 
 ## <a name="properties"></a>プロパティ
-| プロパティ       | 型    |説明|
+| プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
 |assignedDateTime|DateTimeOffset|プランが割り当てられた日時です。例:2013-01-02T19:32:30Z。Timestamp 型は、ISO 8601 形式を使用して日付と時刻の情報を表し、必ず UTC 時間です。たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、次のようになります。`'2014-01-01T00:00:00Z'`|
 |capabilityStatus|String|「有効」など。|
 |service|String|サービスの名前。「Exchange」など。|
 |servicePlanId|Guid|サービス プランを識別する GUID。|
-
 
 ## <a name="json-representation"></a>JSON 表記
 

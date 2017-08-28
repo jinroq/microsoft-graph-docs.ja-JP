@@ -1,8 +1,15 @@
 # <a name="update-organization"></a>組織を更新する
 
 現在認証されている組織のプロパティを更新します。
-## <a name="prerequisites"></a>前提条件
-この API を実行するには、以下のいずれかの**スコープ**が必要です。
+## <a name="permissions"></a>アクセス許可
+この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](../../../concepts/permissions_reference.md)」を参照してください。
+
+|アクセス許可の種類      | アクセス許可 (特権の小さいものから大きいものへ)              | 
+|:--------------------|:---------------------------------------------------------| 
+|委任 (職場または学校のアカウント) | サポートされていません。    | 
+|委任 (個人用 Microsoft アカウント) | サポートされていません。    | 
+|アプリケーション | サポートされていません。 | 
+
 ## <a name="http-request"></a>HTTP 要求
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -28,7 +35,7 @@ PATCH /organization
 |dirSyncEnabled|Boolean|このオブジェクトがオンプレミスのディレクトリから同期される場合は **true**。このオブジェクトが最初にオンプレミスのディレクトリから同期されていて、今後は同期されない場合は **false**。このオブジェクトがオンプレミスのディレクトリから一度も同期されたことがない場合は **null** (既定値)。|
 |displayName|String|テナントの表示名。|
 |marketingNotificationEmails|String|                                        **注**: Null は許容されません。            |
-|objectType|文字列|オブジェクトの種類を識別する文字列です。テナントの場合、値は常に「Company」です。[directoryObject](../resources/directoryobject.md) から継承されます。|
+|objectType|String|オブジェクトの種類を識別する文字列です。テナントの場合、値は常に「Company」です。[directoryObject](../resources/directoryobject.md) から継承されます。|
 |postalCode|String|            |
 |preferredLanguage|String|            |
 |provisionedPlans|ProvisionedPlan|                                        **注**: Null は許容されません。            |

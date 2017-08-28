@@ -6,13 +6,12 @@
 
 > **注** バージョン 1.0 のこの操作では、ユーザーの職場用または学校用メールボックスのみがサポートされ、個人用メールボックスはサポートされていません。
 
+## <a name="permissions"></a>アクセス許可
+この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](../../../concepts/permissions_reference.md)」を参照してください。
 
-## <a name="prerequisites"></a>前提条件
-この API を実行するには、以下のいずれかの**スコープ**が必要です。
-
-- サインインしている**ユーザー**のプロファイル写真 - *User.ReadWrite*、*User.ReadWrite.All*
-- **グループ**のプロファイル写真 - *Group.ReadWrite.All*
-- **連絡先**の写真 - *Contacts.ReadWrite*
+- サインインしている**ユーザー**のプロファイル写真 - User.ReadWrite、User.ReadWrite.All
+- **グループ**のプロファイル写真 - Group.ReadWrite.All
+- **連絡先**の写真 - Contacts.ReadWrite
 
 > **注** 組織内のユーザーの写真を更新するには、アプリにはアプリケーションのアクセス許可 User.ReadWrite.All が必要で、ユーザーの代わりではなく、それ自身の ID でこの API を呼び出す必要があります。詳細については、「[ユーザーなしでアクセスを取得する](../../../concepts/auth_v2_service.md)」を参照してください。
 

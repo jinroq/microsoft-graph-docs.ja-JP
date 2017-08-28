@@ -4,8 +4,15 @@
 
 フォルダー内の連絡先に対する **デルタ** 関数呼び出しと GET 要求とは似ていますが、[状態トークン](../../../concepts/delta_query_overview.md)をこれらの呼び出しに適切に適用することにより、そのフォルダーの連絡先の増分変更をクエリできる点が異なります。これにより、ユーザーの連絡先のローカル ストアの保守と同期を行う際に、連絡先のセット全体を毎回サーバーからフェッチする必要がなくなります。  
 
-## <a name="prerequisites"></a>前提条件
-この API を実行するには、以下のいずれかの**スコープ**が必要です。_Contacts.Read_; _Contacts.ReadWrite_
+## <a name="permissions"></a>アクセス許可
+この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](../../../concepts/permissions_reference.md)」を参照してください。
+
+|アクセス許可の種類      | アクセス許可 (特権の小さいものから大きいものへ)              |
+|:--------------------|:---------------------------------------------------------|
+|委任 (職場または学校のアカウント) | Contacts.Read、Contacts.ReadWrite    |
+|委任 (個人用 Microsoft アカウント) | Contacts.Read、Contacts.ReadWrite    |
+|アプリケーション | Contacts.Read、Contacts.ReadWrite |
+
 ## <a name="http-request"></a>HTTP 要求
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -21,7 +28,6 @@ GET /users/<id>/contactFolders/{id}/contacts/delta
 |:---------------|:--------|:----------|
 | $deltatoken | string | 同じ連絡先コレクションの前の**デルタ**関数呼び出しの `deltaLink` URL で[状態トークン](../../../concepts/delta_query_overview.md)が返され、変更追跡のその回が完了したことを示します。このコレクションについて、このトークンを含む `deltaLink` URL 全体を、変更追跡の次の回の最初の要求に保存し、適用します。|
 | $skiptoken | string | 前の**デルタ**関数呼び出しの `nextLink` URL で[状態トークン](../../../concepts/delta_query_overview.md)が返され、同じ連絡先コレクションに追跡すべき変更が他にもあることを示します。 |
-
 
 #### <a name="odata-query-parameters"></a>OData クエリ パラメーター
 
@@ -63,7 +69,7 @@ Prefer: odata.maxpagesize=2
 
 以下の応答は、_@odata.nextLink_ 応答ヘッダーに含まれる _skipToken_ を示しています。
 
-注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。実際の呼び出しではすべてのプロパティが返されます。
+注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。
 <!-- {
   "blockType": "response",
   "truncated": true,

@@ -20,7 +20,6 @@ GET /workbook/worksheets/{id|name}/tables/{id|name}/sort/fields/icon
 |:----------|:----------|
 | Authorization  | ベアラー {トークン}。必須。 |
 
-
 ## <a name="request-body"></a>要求本文
 このメソッドには、要求本文を指定しません。
 

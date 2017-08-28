@@ -4,14 +4,13 @@
 
 
 ## <a name="properties"></a>プロパティ
-| プロパティ       | 型    |説明|
+| プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
 |capabilities|String|「電子メール」、「OfficeCommunicationsOnline」など。|
 |isDefault|Boolean|                これがテナントに関連付けられている既定のドメインの場合は **true**、それ以外の場合は **false**。            |
 |isInitial|Boolean|これがテナントに関連付けられている初期ドメインの場合は **true**、それ以外の場合は **false**。|
 |name|String|ドメイン名。「contoso.onmicrosoft.com」など。|
 |type|String|「管理対象」など。|
-
 
 ## <a name="json-representation"></a>JSON 表記
 

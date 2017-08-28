@@ -16,7 +16,7 @@ onversationThread は、[投稿](post.md)のコレクションです。
 |[投稿を一覧表示する](../api/conversationthread_list_posts.md) |[post](post.md) コレクション| 指定したスレッドの投稿を取得します。 |
 
 ## <a name="properties"></a>プロパティ
-| プロパティ       | 型    |説明|
+| プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
 |id|String| 読み取り専用です。|
 |toRecipients|[recipient](recipient.md) collection|スレッドの宛先の受信者。|
@@ -29,10 +29,9 @@ onversationThread は、[投稿](post.md)のコレクションです。
 |isLocked|Boolean|スレッドがロックされているかどうかを示します。|
 
 ## <a name="relationships"></a>関係
-| リレーションシップ | 型    |説明|
+| リレーションシップ | 型   |説明|
 |:---------------|:--------|:----------|
-|投稿|[post](post.md) collection| 読み取り専用です。Null 許容型。|
-
+|投稿|[post](post.md) コレクション| 読み取り専用です。Null 許容型。|
 
 ## <a name="json-representation"></a>JSON 表記
 

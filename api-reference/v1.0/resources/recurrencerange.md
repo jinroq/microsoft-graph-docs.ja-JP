@@ -4,14 +4,13 @@
 
 ## <a name="properties"></a>プロパティ
 
-| プロパティ       | 型    |説明|
+| プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
 |endDate|Date|繰り返しの終了日です。|
 |numberOfOccurrences|Int32|イベントを繰り返す回数。|
 |recurrenceTimeZone|String |**startDate** プロパティと **endDate** プロパティのタイム ゾーン。 |
 |startDate|Date|繰り返しの開始日です。|
 |type|String|次のような繰り返し範囲があります。終了日 = 0、無制限 = 1、番号順 = 2。可能な値は、`EndDate`、`NoEnd`、`Numbered` です。||
-
 
 ## <a name="json-representation"></a>JSON 表記
 

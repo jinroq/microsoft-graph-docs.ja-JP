@@ -6,13 +6,13 @@ GET 操作により、Exchange Online のユーザーのメールボックス内
 
 > **注** バージョン 1.0 のこの操作では、ユーザーの職場用または学校用メールボックスのみがサポートされ、個人用メールボックスはサポートされていません。
 
-## <a name="prerequisites"></a>前提条件
-この API を実行するには、以下のいずれかの**スコープ**が必要です。
+## <a name="permissions"></a>アクセス許可
+この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](../../../concepts/permissions_reference.md)」を参照してください。
 
-*   サインインしているユーザーを含むテナント内の任意のユーザーのプロファイル写真 - *User.ReadBasic.All; User.Read.All; User.ReadWrite.All*
-*   具体的にサインインしているユーザーのプロファイル写真 - *User.Read, User.ReadWrite; User.ReadBasic.All; User.Read.All; User.ReadWrite.All*
-* **グループ**のプロファイル写真 - *Group.Read.All; Group.ReadWrite.All*
-* **連絡先**の写真 - *Contacts.Read; Contacts.ReadWrite*
+*   サインインしているユーザーを含むテナント内の任意のユーザーのプロファイル写真 - User.ReadBasic.All、User.Read.All、User.ReadWrite.All
+*   明確にサインインしているユーザーのプロファイル写真 - User.Read、User.ReadWrite、User.ReadBasic.All、User.Read.All、User.ReadWrite.All
+* **グループ**のプロファイル写真 - Group.Read.All、Group.ReadWrite.All
+* **連絡先**の写真 - Contacts.Read、Contacts.ReadWrite
 
 ## <a name="http-request-to-get-the-photo"></a>写真を取得する HTTP 要求
 <!-- { "blockType": "ignored" } -->

@@ -2,11 +2,18 @@
 
 [ユーザー](../resources/user.md)との関連 (ユーザーのコミュニケーションとコラボレーション パターン、およびビジネスのリレーションシップによって決まる) によって配列された[人物](../resources/person.md)オブジェクトのコレクションを取得します。
 
-この情報は、People API 経由で取得できます。例については、「[例](#examples)」セクションと記事「[関係する人の情報を取得する](../../../concepts/people_example.md)」を参照してください。
+この情報は、People API 経由で取得できます。例については、「[例](#examples)」セクションと記事「[人の関連情報を取得する](../../../concepts/people_example.md)」を参照してください。
 
-## <a name="prerequisites"></a>前提条件
-この API を実行するために必要な**スコープ**は、次のとおりです。*People.Read* *People.Read.All*
+## <a name="permissions"></a>アクセス許可
+この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](../../../concepts/permissions_reference.md)」を参照してください。
  
+
+|アクセス許可の種類      | アクセス許可 (特権の小さいものから大きいものへ)              |
+|:--------------------|:---------------------------------------------------------|
+|委任 (職場または学校のアカウント) | People.Read、People.Read.All    |
+|委任 (個人用 Microsoft アカウント) | People.Read    |
+|アプリケーション | People.Read.All |
+
 ## <a name="http-request"></a>HTTP 要求
 <!-- { "blockType": "ignored" } -->
 ```http

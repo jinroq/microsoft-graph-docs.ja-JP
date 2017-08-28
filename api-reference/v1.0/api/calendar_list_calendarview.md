@@ -2,11 +2,11 @@
 
 ユーザーまたはグループの既定の予定表 `(../me/calendarview)` またはユーザーが所有する他の予定表から、時間範囲で定義した予定表ビューのイベントの発生、例外、および単一インスタンスを取得します。
 
-## <a name="prerequisites"></a>前提条件
-この API を実行するには、以下のいずれかの**スコープ**が必要です。
+## <a name="permissions"></a>アクセス許可
+この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](../../../concepts/permissions_reference.md)」を参照してください。
 
-* ユーザーの予定表のイベント:_Calendars.Read_ または _Calendars.ReadWrite_
-* グループの予定表のイベント:_Group.Read.All_ または _Group.ReadWrite.All_
+* ユーザーの予定表のイベント:Calendars.Read または Calendars.ReadWrite
+* グループの予定表のイベント:Group.Read.All または Group.ReadWrite.All
 
 ## <a name="http-request"></a>HTTP 要求
 

@@ -1,8 +1,15 @@
 # <a name="get-contactfolder"></a>Get contactFolder
 
 連絡先フォルダー ID を使用して連絡先フォルダーを取得します。
-## <a name="prerequisites"></a>前提条件
-この API を実行するには、以下のいずれかの**スコープ**が必要です。*Contacts.ReadWrite、Contacts.Read*
+## <a name="permissions"></a>アクセス許可
+この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](../../../concepts/permissions_reference.md)」を参照してください。
+
+|アクセス許可の種類      | アクセス許可 (特権の小さいものから大きいものへ)              |
+|:--------------------|:---------------------------------------------------------|
+|委任 (職場または学校のアカウント) | Contacts.Read、Contacts.ReadWrite    |
+|委任 (個人用 Microsoft アカウント) | Contacts.Read、Contacts.ReadWrite    |
+|アプリケーション | Contacts.Read、Contacts.ReadWrite |
+
 ## <a name="http-request"></a>HTTP 要求
 <!-- { "blockType": "ignored" } -->
 ```http

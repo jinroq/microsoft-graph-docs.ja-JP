@@ -44,11 +44,10 @@ Azure Active Directory テナントを表します。テナントでは読み取
 | telephoneNumber                      | String                                                            |                                                                                                                                                                                                                                                                                      |
 | verifiedDomains                      | [VerifiedDomain](verifieddomain.md) コレクション                    | このテナントに関連付けられているドメインのコレクション。null 許容ではありません。                                                                                                                                                                                                                 |
 
-## <a name="relationships"></a>関係
-| リレーションシップ | 型    |説明|
+## <a name="relationships"></a>リレーションシップ
+| リレーションシップ | 型   |説明|
 |:---------------|:--------|:----------|
 |extensions|[extension](extension.md) コレクション|組織に対して定義されているオープン拡張機能のコレクション。読み取り専用です。Null 許容型。|
-
 
 ## <a name="json-representation"></a>JSON 表記
 

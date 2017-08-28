@@ -1,20 +1,16 @@
-<a id="plannertaskdetails-resource-type" class="xliff"></a>
-# plannerTaskDetails リソースの種類
+# <a name="plannertaskdetails-resource-type"></a>plannerTaskDetails リソースの種類
 
 **plannerTaskDetails** リソースは、タスクに関する追加情報を表します。各 [task](plannertask.md) オブジェクトには詳細オブジェクトがあります。
 
 
-<a id="methods" class="xliff"></a>
-## メソッド
+## <a name="methods"></a>メソッド
 
 | メソッド           | 戻り値の型    |説明|
 |:---------------|:--------|:----------|
 |[Get plannerTaskDetails](../api/plannertaskdetails_get.md) | [plannerTaskDetails](plannertaskdetails.md) |**plannerTaskDetails** オブジェクトのプロパティとリレーションシップを読み取ります。|
 |[Update](../api/plannertaskdetails_update.md) | [plannerTaskDetails](plannertaskdetails.md)    |**plannerTaskDetails** オブジェクトを更新します。 |
 
-
-<a id="properties" class="xliff"></a>
-## プロパティ
+## <a name="properties"></a>プロパティ
 | プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
 |checklist|[plannerChecklistItems](plannerchecklistitems.md)|タスク上のチェックリスト項目のコレクション。|
@@ -23,13 +19,11 @@
 |previewType|string|タスクに表示されるプレビューの種類を設定します。使用可能な値: `automatic`、`noPreview`、`checklist`、`description`、`reference`。`automatic` に設定すると、タスクを表示しているアプリによって表示するプレビューが選択されます。|
 |references|[plannerExternalReferences](plannerexternalreferences.md)|タスク上の参照のコレクションです。|
 
-<a id="relationships" class="xliff"></a>
-## リレーションシップ
+## <a name="relationships"></a>リレーションシップ
 なし
 
 
-<a id="json-representation" class="xliff"></a>
-## JSON 表記
+## <a name="json-representation"></a>JSON 表記
 以下は、リソースの JSON 表記です。
 
 <!-- {

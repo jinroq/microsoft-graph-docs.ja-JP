@@ -30,7 +30,6 @@
 | latitude  | Double | 省略可能。アイテムの緯度 (10 進数)。読み取り専用です。   |
 | longitude | Double | 省略可能。アイテムの経度 (10 進数)。読み取り専用です。  |
 
-
 ## <a name="remarks"></a>注釈
 
 DriveItem のファセットの詳細については、「[DriveItem](driveitem.md)」を参照してください。

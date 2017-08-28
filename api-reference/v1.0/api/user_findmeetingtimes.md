@@ -4,8 +4,15 @@
 **findMeetingTimes** が会議提案を返すことができない場合は、応答で、**emptySuggestionsReason** プロパティに理由が示されます。この値に基づいて、パラメーターをさらに調整して、**findMeetingTimes** を再度呼び出すことができます。
 
 
-## <a name="prerequisites"></a>前提条件
-この API を実行するには、以下のいずれかの**スコープ**が必要です。*Calendars.Read.Shared* または *Calendars.ReadWrite.Shared*
+## <a name="permissions"></a>アクセス許可
+この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](../../../concepts/permissions_reference.md)」を参照してください。
+
+|アクセス許可の種類      | アクセス許可 (特権の小さいものから大きいものへ)              |
+|:--------------------|:---------------------------------------------------------|
+|委任 (職場または学校のアカウント) | Calendars.Read.Shared、Calendars.ReadWrite.Shared    |
+|委任 (個人用 Microsoft アカウント) | サポートされていません。    |
+|アプリケーション | サポートされていません。 |
+
 ## <a name="http-request"></a>HTTP 要求
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -17,7 +24,6 @@ POST /users/{id|userPrincipalName}/findMeetingTimes
 |:---------------|:----------|
 | Authorization  | ベアラー {トークン}。必須。 |
 | 優先: outlook.timezone | 応答として "太平洋標準時" などの特定のタイム ゾーンを表す文字列です。省略可能。このヘッダーが指定されていない場合は、UTC が使用されます。|
-
 
 ## <a name="request-body"></a>要求本文
 サポートされているすべてのパラメーターは以下のとおりです。シナリオに応じて、要求本文で必要な各パラメーターの JSON オブジェクトを指定します。 

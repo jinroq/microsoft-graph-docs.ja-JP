@@ -1,8 +1,15 @@
 # <a name="get-calendar"></a>Get calendar
 
-予定表オブジェクトのプロパティと関係を取得します。
-## <a name="prerequisites"></a>前提条件
-この API を実行するには、以下のいずれかの**スコープ**が必要です。*Calendars.Read*
+予定表オブジェクトのプロパティとリレーションシップを取得します。
+## <a name="permissions"></a>アクセス許可
+この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](../../../concepts/permissions_reference.md)」を参照してください。
+
+|アクセス許可の種類      | アクセス許可 (特権の小さいものから大きいものへ)              | 
+|:--------------------|:---------------------------------------------------------| 
+|委任 (職場または学校のアカウント) | Calendars.Read    | 
+|委任 (個人用 Microsoft アカウント) | Calendars.Read    | 
+|アプリケーション | Calendars.Read | 
+
 ## <a name="http-request"></a>HTTP 要求
 <!-- { "blockType": "ignored" } -->
 ユーザーまたはグループの既定の[予定表](../resources/calendar.md)。

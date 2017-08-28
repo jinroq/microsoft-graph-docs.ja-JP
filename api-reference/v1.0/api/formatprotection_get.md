@@ -21,7 +21,6 @@ GET /workbook/tables/{id|name}/columns/{id|name}/range/format/protection
 |:----------|:----------|
 | Authorization  | ベアラー {トークン}。必須。 |
 
-
 ## <a name="request-body"></a>要求本文
 このメソッドには、要求本文を指定しません。
 

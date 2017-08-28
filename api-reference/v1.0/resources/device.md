@@ -25,16 +25,16 @@
 |[スキーマ拡張機能の値を追加する](../../../concepts/extensibility_schema_groups.md) || スキーマ拡張機能の定義を作成し、それを使用してカスタマイズされた種類のデータをリソースに追加します。|
 
 ## <a name="properties"></a>プロパティ
-| プロパティ       | 型    |説明|
+| プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
-|accountEnabled|Boolean| アカウントが有効な場合は **true**。それ以外の場合は **false**。必須。|
+|accountEnabled|ブール値| アカウントが有効な場合は **true**。それ以外の場合は **false**。必須。|
 |alternativeSecurityIds|[alternativeSecurityId](alternativesecurityid.md) コレクション| 複数値を持つプロパティのフィルター式には **any** 演算子が必要です。null 許容ではありません。必須。 |
 |approximateLastSignInDateTime|DateTimeOffset| Timestamp 型は、ISO 8601 形式を使用して日付と時刻の情報を表し、必ず UTC 時間です。たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、次のようになります。`'2014-01-01T00:00:00Z'`|
 |deviceId|Guid| デバイスを表す一意のクライアント固有の GUID。必須。 |
 |deviceMetadata|String|    |
 |deviceVersion|Int32|            |
 |displayName|String|デバイスの表示名。必須。 |
-|id|String|デバイスの一意識別子。[directoryObject](directoryobject.md) から継承されます。キーであり、Null は許容されません。読み取り専用。|
+|id|文字列|デバイスの一意識別子。[directoryObject](directoryobject.md) から継承されます。キーであり、Null は許容されません。読み取り専用。|
 |isCompliant|Boolean|デバイスがモバイル デバイス管理 (MDM) ポリシーに準拠している場合は **true**。それ以外の場合は **false**。|
 |isManaged|Boolean|デバイスが Intune などのモバイル デバイス管理 (MDM) アプリで管理されている場合は **true**。それ以外の場合は **false**。|
 |onPremisesLastSyncDateTime|DateTimeOffset|オブジェクトがオンプレミスのディレクトリと最後に同期された日時を示します。Timestamp 型は、ISO 8601 形式を使用して、常に UTC 時間での日付と時刻の情報を表します。たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、次のようになります。`'2014-01-01T00:00:00Z'`|
@@ -45,13 +45,11 @@
 |trustType|String|    ||
 
 ## <a name="relationships"></a>リレーションシップ
-| リレーションシップ | 型    |説明|
+| リレーションシップ | 型   |説明|
 |:---------------|:--------|:----------|
 |extensions|[extension](extension.md) コレクション|デバイスに対して定義されているオープン拡張機能のコレクション。読み取り専用です。Null 許容型。|
 |registeredOwners|[directoryObject](directoryobject.md) コレクション|デバイスの登録済み所有者であるユーザー。読み取り専用。Null 許容型。|
 |registeredUsers|[directoryObject](directoryobject.md) コレクション|デバイスの登録済みユーザーであるユーザー。読み取り専用。Null 許容型。|
-
-
 
 ## <a name="json-representation"></a>JSON 表記
 

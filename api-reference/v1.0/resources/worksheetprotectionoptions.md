@@ -3,7 +3,7 @@
 シート保護のオプションを表します。
 
 ## <a name="properties"></a>プロパティ
-| プロパティ       | 型    |説明|
+| プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
 |allowAutoFilter|boolean|自動フィルター機能の使用を可能にするワークシート保護オプションを表します。|
 |allowDeleteColumns|boolean|列の削除を可能にするワークシート保護オプションを表します。|
@@ -16,7 +16,6 @@
 |allowInsertRows|boolean|行の挿入を可能にするワークシート保護オプションを表します。|
 |allowPivotTables|boolean|ピボット テーブル機能の使用を可能にするワークシート保護オプションを表します。|
 |allowSort|boolean|並ベ替え機能の使用を可能にするワークシート保護オプションを表します。|
-
 
 ## <a name="json-representation"></a>JSON 表記
 

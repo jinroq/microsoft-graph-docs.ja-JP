@@ -11,17 +11,17 @@
 |特定の拡張機能でリソース インスタンスを検索し、展開します。 |イベント、グループ イベント、グループの投稿、メッセージ、個人用連絡先|オープン拡張機能で展開されたリソース インスタンス。|
 
 
-## <a name="prerequisites"></a>前提条件
+## <a name="permissions"></a>アクセス許可
 
-この API を実行するには、拡張機能が含まれているリソースに応じて、以下のいずれかの**アクセス許可**が必要です。
+この API を呼び出すには、拡張機能が含まれているリソースに応じて、以下のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](../../../concepts/permissions_reference.md)」を参照してください。
 
 |**サポートされているリソース**|**アクセス許可**|**サポートされているリソース**|**アクセス許可** |
 |:-----|:-----|:-----|:-----|
-| [デバイス](../resources/device.md) | _Directory.Read.All_ | [イベント](../resources/event.md) | _Calendars.Read_ | 
-| [グループ](../resources/group.md) | _Group.Read.All_ | [グループ イベント](../resources/event.md) | _Group.Read.All_ | 
-| [グループの投稿](../resources/post.md) | _Group.Read.All_ | [メッセージ](../resources/message.md) | _Mail.Read_ | 
-| [組織](../resources/organization.md) | _Directory.Read.All_ | [個人用連絡先](../resources/contact.md) | _Contacts.Read_ |
-| [ユーザー](../resources/user.md) | _User.Read.All_ | | |
+| [デバイス](../resources/device.md) | Directory.Read.All | [イベント](../resources/event.md) | Calendars.Read | 
+| [グループ](../resources/group.md) | Group.Read.All | [グループ イベント](../resources/event.md) | Group.Read.All | 
+| [グループの投稿](../resources/post.md) | Group.Read.All | [メッセージ](../resources/message.md) | Mail.Read | 
+| [組織](../resources/organization.md) | Directory.Read.All | [個人用連絡先](../resources/contact.md) | Contacts.Read |
+| [ユーザー](../resources/user.md) | User.Read.All | | |
 
 
 

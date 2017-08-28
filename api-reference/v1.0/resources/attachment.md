@@ -24,12 +24,11 @@
 |[投稿の添付ファイルを一覧表示する](../api/post_list_attachments.md) | [attachment](attachment.md) コレクション | 投稿の添付ファイルの一覧を取得します。 |
 |[削除](../api/attachment_delete.md) | None |イベント、メッセージ、または投稿の添付ファイルを削除します。 |
 
-
 ## <a name="properties"></a>プロパティ
 
 次に、添付ファイル リソースの基本プロパティを示します。他のプロパティについては、特定の種類の添付ファイル ([fileAttachment](../resources/fileattachment.md)、[itemAttachment](../resources/itemattachment.md)、または [referenceAttachment](../resources/referenceAttachment.md)) を参照してください。
 
-| プロパティ       | 型    |説明|
+| プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
 |contentType|String|MIME タイプ。|
 |id|String| 読み取り専用。|

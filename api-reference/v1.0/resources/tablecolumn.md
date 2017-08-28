@@ -8,7 +8,7 @@
 | メソッド           | 戻り値の型    |説明|
 |:---------------|:--------|:----------|
 |[TableColumn を取得する](../api/tablecolumn_get.md) | [TableColumn](tablecolumn.md) |tableColumn オブジェクトのプロパティと関係を読み取ります。|
-|[Update](../api/tablecolumn_update.md) | [TableColumn](tablecolumn.md)    |TableColumn オブジェクトを更新します。 |
+|[Update](../api/tablecolumn_update.md) | [TableColumn](tablecolumn.md) |TableColumn オブジェクトを更新します。 |
 |[Databodyrange](../api/tablecolumn_databodyrange.md)|[Range](range.md)|列のデータ本体に関連付けられた範囲オブジェクトを取得します。|
 |[Headerrowrange](../api/tablecolumn_headerrowrange.md)|[Range](range.md)|列のヘッダー行に関連付けられた範囲オブジェクトを取得します。|
 |[Range](../api/tablecolumn_range.md)|[Range](range.md)|列全体に関連付けられた範囲オブジェクトを取得します。|
@@ -18,9 +18,8 @@
 |[Itemat](../api/tablecolumncollection_itemat.md)|[TableColumn](tablecolumn.md)|コレクション内の位置に基づいて列を取得します。|
 |[Add](../api/tablecolumncollection_add.md)|[TableColumn](tablecolumn.md)|テーブルに新しい列を追加します。|
 
-
 ## <a name="properties"></a>プロパティ
-| プロパティ       | 型    |説明|
+| プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
 |id|int|テーブル内の列を識別する一意のキーを返します。読み取り専用です。|
 |index|int|テーブルの列コレクション内の列のインデックス番号を返します。0 を起点とする番号になります。読み取り専用です。|
@@ -28,7 +27,7 @@
 |values|json|指定した範囲の Raw 値を表します。返されるデータの型は、文字列、数値、またはブール値のいずれかになります。エラーが含まれているセルは、エラー文字列を返します。|
 
 ## <a name="relationships"></a>関係
-| リレーションシップ | 型    |説明|
+| リレーションシップ | 型   |説明|
 |:---------------|:--------|:----------|
 |filter|[Filter](filter.md)|列に適用されるフィルターを取得します。読み取り専用です。|
 

@@ -1,9 +1,7 @@
-<a id="rangeview-resource-type" class="xliff"></a>
-# rangeView リソースの種類
+# <a name="rangeview-resource-type"></a>rangeView リソースの種類
 RangeView は、親の範囲の表示されているセルのセットを表します。
 
-<a id="methods" class="xliff"></a>
-## メソッド
+## <a name="methods"></a>メソッド
 
 | メソッド           | 戻り値の型    |説明|
 |:---------------|:--------|:----------|
@@ -11,9 +9,7 @@ RangeView は、親の範囲の表示されているセルのセットを表し�
 |[Itemat](../api/workbookrangeview_itemat.md)|[workbookRangeView](workbookrangeview.md)|インデックスに基づいて範囲ビューの項目を取得します。|
 |[Range](../api/workbookrangeview_range.md)|[workbookRange](range.md)|範囲ビューに関連付けられた範囲オブジェクトを返します。|
 
-
-<a id="properties" class="xliff"></a>
-## プロパティ
+## <a name="properties"></a>プロパティ
 | プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
 |columnCount|Int32|表示されている列の数を返します。読み取り専用。|
@@ -27,14 +23,12 @@ RangeView は、親の範囲の表示されているセルのセットを表し�
 |valueTypes|Json|各セルのデータの種類を表します。読み取り専用です。使用可能な値は次のとおりです。Unknown、Empty、String、Integer、Double、Boolean、Error。 |
 |values|Json|指定した範囲ビューの Raw 値を表します。返されるデータの型は、文字列、数値、ブール値のいずれかになります。エラーが含まれているセルは、エラー文字列を返します。   |
 
-<a id="relationships" class="xliff"></a>
-## リレーションシップ
+## <a name="relationships"></a>リレーションシップ
 | リレーションシップ | 型   |説明|
 |:---------------|:--------|:----------|
 |rows|[workbookRangeView](workbookrangeview.md) コレクション| 範囲に関連付けられている範囲ビューのコレクションを表します。読み取り専用です。  読み取り専用です。|
 
-<a id="json-representation" class="xliff"></a>
-## JSON 表記
+## <a name="json-representation"></a>JSON 表記
 以下は、リソースの JSON 表記です。
 <!-- {
   "blockType": "resource",

@@ -2,10 +2,16 @@
 # <a name="update-user"></a>ユーザーを更新する
 
 ユーザー オブジェクトのプロパティを更新します。
-## <a name="prerequisites"></a>前提条件
-この API を実行するには、以下のいずれかの**スコープ**が必要です。*User.ReadWrite; User.ReadWrite.All; Directory.ReadWrite.All*
+## <a name="permissions"></a>アクセス許可
+この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](../../../concepts/permissions_reference.md)」を参照してください。
 
-passwordProfile プロパティを更新するときは、次のスコープが必要です。*Directory.AccessAsUser.All*
+|アクセス許可の種類      | アクセス許可 (特権の小さいものから大きいものへ)              |
+|:--------------------|:---------------------------------------------------------|
+|委任 (職場または学校のアカウント) | User.ReadWrite、User.ReadWrite.All、Directory.ReadWrite.All、Directory.AccessAsUser.All    |
+|委任 (個人用 Microsoft アカウント) | User.ReadWrite    |
+|アプリケーション | User.ReadWrite.All、Directory.ReadWrite.All |
+
+passwordProfile プロパティを更新するときは、次のスコープが必要です。Directory.AccessAsUser.All。
 
 ## <a name="http-request"></a>HTTP 要求
 <!-- { "blockType": "ignored" } -->
@@ -24,8 +30,8 @@ PATCH /users/{id | userPrincipalName}
 | プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
 |aboutMe|String|ユーザーが自分自身について記述する、フリー フォームのテキスト入力フィールド。|
-|accountEnabled|ブール値| アカウントが有効な場合は **true**。そうでない場合は **false**。このプロパティは、ユーザーの作成時に必要です。$filter をサポートします。    |
-|assignedLicenses|[assignedLicense](../resources/assignedlicense.md) コレクション|ユーザーに割り当てられているライセンス。null 許容ではありません。            |
+|accountEnabled|Boolean| アカウントが有効な場合は **true**。そうでない場合は **false**。このプロパティは、ユーザーの作成時に必要です。$filter をサポートします。    |
+|assignedLicenses|[assignedLicense](../resources/assignedlicense.md) collection|ユーザーに割り当てられているライセンス。null 許容ではありません。            |
 |birthday|DateTimeOffset|ユーザーの誕生日。Timestamp 型は、ISO 8601 形式を使用して日付と時刻の情報を表し、必ず UTC 時間です。たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、次のようになります。`'2014-01-01T00:00:00Z'`|
 |city|String|ユーザーがいる都市。$filter をサポートします。|
 |country|String|ユーザーがいる国/地域。たとえば、「US (米国)」や「UK (英国)」です。$filter をサポートします。|

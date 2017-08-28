@@ -9,7 +9,6 @@
 |[ユーザーを一覧表示する](../api/user_list_people.md) | **人物** |[ユーザー](../resources/user.md)への関連性によって順序付けられた person オブジェクトの集合を取得します。|
 |[人物を取得する](../api/person_get.md) | **人物** |person オブジェクトのプロパティと関係を取得します。|
 
-
 ## <a name="properties"></a>プロパティ
 | プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
@@ -20,7 +19,7 @@
 |scoredEmailAddresses|[scoredEmailAddress](scoredemailaddress.md) コレクション|人物の電子メール アドレス。|
 |givenName|String|人物に指定された名前。|
 |id|String|人物の一意の識別子。読み取り専用です。|
-|imAddress|String コレクション|ユーザーのインスタント メッセージ ボイス オーバー IP (VOIP) セッション開始プロトコル (SIP) のアドレス。読み取り専用です。|
+|imAddress|String collection|ユーザーのインスタント メッセージ ボイス オーバー IP (VOIP) セッション開始プロトコル (SIP) のアドレス。読み取り専用です。|
 |isFavorite|Boolean|ユーザーがこの人物をお気に入りとしてフラグを設定した場合は `true`。|
 |jobTitle|String|人物の役職。|
 |officeLocation|String|人物のオフィスの所在地。|

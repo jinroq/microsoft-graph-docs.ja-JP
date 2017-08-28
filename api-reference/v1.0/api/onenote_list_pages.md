@@ -1,10 +1,14 @@
 # <a name="list-pages"></a>pages を一覧表示する
 
-[page](../resources/page.md) オブジェクトの一覧を取得します。
-## <a name="prerequisites"></a>前提条件
-この API を実行するには、以下のいずれかの**スコープ**が必要です。  
+[ページ](../resources/page.md) オブジェクトの一覧を取得します。
+## <a name="permissions"></a>アクセス許可
+この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](../../../concepts/permissions_reference.md)」を参照してください。
 
-Notes.Read、Notes.ReadWrite、Notes.Read.All、Notes.ReadWrite.All
+|アクセス許可の種類      | アクセス許可 (特権の小さいものから大きいものへ)              |
+|:--------------------|:---------------------------------------------------------|
+|委任 (職場または学校のアカウント) | Notes.Read、Notes.ReadWrite、Notes.Read.All、Notes.ReadWrite.All    |
+|委任 (個人用 Microsoft アカウント) | Notes.Read、Notes.ReadWrite    |
+|アプリケーション | Notes.Read.All、Notes.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 要求
 <!-- { "blockType": "ignored" } -->

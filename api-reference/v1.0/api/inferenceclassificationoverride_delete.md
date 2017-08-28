@@ -1,8 +1,15 @@
 # <a name="delete-inferenceclassificationoverride"></a>inferenceClassificationOverride を削除する
 
-その ID で指定されたオーバーライドを削除します。
-## <a name="prerequisites"></a>前提条件
-この API を実行するために必要な**スコープ**は、次のとおりです。*Mail.ReadWrite*
+その ID で指定された上書きを削除します。
+## <a name="permissions"></a>アクセス許可
+この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](../../../concepts/permissions_reference.md)」を参照してください。
+
+|アクセス許可の種類      | アクセス許可 (特権の小さいものから大きいものへ)              | 
+|:--------------------|:---------------------------------------------------------| 
+|委任 (職場または学校のアカウント) | Mail.ReadWrite    | 
+|委任 (個人用 Microsoft アカウント) | Mail.ReadWrite    | 
+|アプリケーション | Mail.ReadWrite | 
+
 ## <a name="http-request"></a>HTTP 要求
 <!-- { "blockType": "ignored" } -->
 ```http

@@ -1,9 +1,16 @@
 # <a name="add-directory-role-member"></a>ディレクトリ ロールのメンバーを追加する
 
-この API を使用して、新しい DirectoryRole のメンバーを作成します。
+この API を使用して、新しいディレクトリ ロールのメンバーを作成します。
 
-## <a name="prerequisites"></a>前提条件
-この API を実行するには、以下の**スコープ**が必要です。*Directory.AccessAsUser.All*
+## <a name="permissions"></a>アクセス許可
+この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](../../../concepts/permissions_reference.md)」を参照してください。
+
+|アクセス許可の種類      | アクセス許可 (特権の小さいものから大きいものへ)              |
+|:--------------------|:---------------------------------------------------------|
+|委任 (職場または学校のアカウント) | Directory.AccessAsUser.All    |
+|委任 (個人用 Microsoft アカウント) | サポートされていません。    |
+|アプリケーション | サポートされていません。 |
+
 ## <a name="http-request"></a>HTTP 要求
 <!-- { "blockType": "ignored" } -->
 ```http

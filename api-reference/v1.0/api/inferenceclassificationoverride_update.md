@@ -8,8 +8,15 @@
 
 送信者にオーバーライドがあり、その送信者が SMTP アドレスを変更すると、既存のオーバーライドを[削除](inferenceclassificationoverride_delete.md)して、新しい SMTP アドレスで新しくオーバーライドを[作成](inferenceclassification_post_overrides.md)することが、この送信者のオーバーライドを「更新」する唯一の方法になります。
 
-## <a name="prerequisites"></a>前提条件
-この API を実行するために必要な**スコープ**は、次のとおりです。*Mail.ReadWrite*
+## <a name="permissions"></a>アクセス許可
+この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](../../../concepts/permissions_reference.md)」を参照してください。
+
+|アクセス許可の種類      | アクセス許可 (特権の小さいものから大きいものへ)              | 
+|:--------------------|:---------------------------------------------------------| 
+|委任 (職場または学校のアカウント) | Mail.ReadWrite    | 
+|委任 (個人用 Microsoft アカウント) | Mail.ReadWrite    | 
+|アプリケーション | Mail.ReadWrite | 
+
 ## <a name="http-request"></a>HTTP 要求
 <!-- { "blockType": "ignored" } -->
 ```http

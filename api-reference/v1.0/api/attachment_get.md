@@ -11,12 +11,12 @@
 これらの添付ファイル リソースのすべての種類は、[attachment](../resources/attachment.md) リソースから派生します。 
 
 
-## <a name="prerequisites"></a>前提条件
-この API を実行するには、以下のいずれかの**スコープ**が必要です。
+## <a name="permissions"></a>アクセス許可
+この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](../../../concepts/permissions_reference.md)」を参照してください。
 
-* メッセージの添付ファイルにアクセスする場合:*Mail.Read*
-* イベントの添付ファイルにアクセスする場合:*Calendars.Read*
-* グループ イベントおよび投稿の添付ファイルにアクセスする場合:*Group.Read.All*
+* メッセージの添付ファイルにアクセスする場合:Mail.Read。
+* イベントの添付ファイルにアクセスする場合:Calendars.Read。
+* グループ イベントおよび投稿の添付ファイルにアクセスする場合:Group.Read.All。
 
 ## <a name="http-request"></a>HTTP 要求
 <!-- { "blockType": "ignored" } -->

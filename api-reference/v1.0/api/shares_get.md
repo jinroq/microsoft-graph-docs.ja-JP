@@ -2,15 +2,17 @@
 
 **shareId** または共有の URL を使用して、共有 [DriveItem](../resources/driveitem.md) または共有アイテムのコレクションにアクセスします。
 
-この API で共有の URL を使用するには、[URL を共有のトークンに変換する](#transform-a-sharing-url)必要があります。
+この API で共有の URL を使用するには、アプリで [URL を共有のトークンに変換する](#transform-a-sharing-url)必要があります。
 
-## <a name="prerequisites"></a>前提条件
+## <a name="permissions"></a>アクセス許可
 
-この API を実行するには、以下のいずれかの**スコープ**が必要です。
+この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](../../../concepts/permissions_reference.md)」を参照してください。
 
-* Files.ReadWrite
-* Files.ReadWrite.All
-* Sites.ReadWrite.All
+|アクセス許可の種類      | アクセス許可 (特権の小さいものから大きいものへ)              | 
+|:--------------------|:---------------------------------------------------------| 
+|委任 (職場または学校のアカウント) | Files.ReadWrite、Files.ReadWrite.All、Sites.ReadWrite.All    | 
+|委任 (個人用 Microsoft アカウント) | Files.ReadWrite、Files.ReadWrite.All    | 
+|アプリケーション | Files.ReadWrite.All、Sites.ReadWrite.All | 
 
 ## <a name="http-request"></a>HTTP 要求
 

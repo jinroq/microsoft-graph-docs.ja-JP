@@ -19,14 +19,13 @@
 
 オープン拡張機能または拡張プロパティを使用するのに適した状況と、拡張プロパティを指定する方法の詳細については、「[拡張プロパティの概要](../resources/extended-properties-overview.md)」を参照してください。
 
-## <a name="prerequisites"></a>前提条件
+## <a name="permissions"></a>アクセス許可
+この API を呼び出すには、拡張プロパティを作成するリソースに応じて、以下のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](../../../concepts/permissions_reference.md)」を参照してください。
 
-この API を実行するには、拡張プロパティを作成する次のリソースの種類に応じて、以下の**スコープ**のいずれかが必要です。
-
-- _Mail.ReadWrite_
-- _Calendars.ReadWrite_
-- _Contacts.ReadWrite_
-- _Group.ReadWrite.All_
+- Mail.ReadWrite
+- Calendars.ReadWrite
+- Contacts.ReadWrite
+- Group.ReadWrite.All
  
 ## <a name="http-request"></a>HTTP 要求
 新規または既存のリソースのインスタンスに、拡張プロパティを作成できます。
@@ -100,7 +99,7 @@ PATCH /groups/{id}/events/{id}
 |:-----|:-----|:-----|
 |_URL parameters_|
 |id|string|該当するコレクション内のオブジェクトの一意識別子。必須。|
-|_Body parameters_|
+|_本文のパラメーター_|
 |multiValueExtendedProperties|[multiValueLegacyExtendedProperty](../resources/multiValueLegacyExtendedProperty.md) collection| 1 つ以上の複数値を持つ拡張プロパティの配列。 |
 |id|String|**multiValueExtendedProperties** コレクションの各プロパティに対してこれを指定し、プロパティを特定します。サポートされている形式のいずれかに従う必要があります。詳しくは、[「Outlook の拡張プロパティの概要」](../resources/extended-properties-overview.md)をご覧ください。必須。|
 |value|string|**multiValueExtendedProperties** コレクションの各プロパティに対し、プロパティの値を特定します。必須。|
