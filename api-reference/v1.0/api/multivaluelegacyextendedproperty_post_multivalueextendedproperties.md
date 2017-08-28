@@ -1,8 +1,226 @@
-<span data-ttu-id="ddb73-p111">[メッセージの更新](../api/message_update.md)からの応答と同様に、`HTTP 200 OK` 応答コードによって正常な応答が示され、応答の本文に指定したメッセージが含まれています。応答には、新しく作成された拡張プロパティは含まれません。</span><span class="sxs-lookup"><span data-stu-id="ddb73-p111">A successful response is indicated by an `HTTP 200 OK` response code, and includes the specified message in the response body, similar to the response from [updating a message](../api/message_update.md). The response does not include the newly created extended property.</span></span>
+# <a name="create-multi-value-extended-property"></a><span data-ttu-id="ac514-101">複数値の拡張プロパティを作成する</span><span class="sxs-lookup"><span data-stu-id="ac514-101">Create multi-value extended property</span></span>
 
-[メッセージの更新](../api/message_update.md)からの応答と同様に、`HTTP 200 OK` 応答コードによって正常な応答が示され、応答の本文に指定したメッセージが含まれています。応答には、新しく作成された拡張プロパティは含まれません。
+<span data-ttu-id="ac514-102">リソースの新規または既存のインスタンスに、1 つ以上の複数値の拡張プロパティを作成します。</span><span class="sxs-lookup"><span data-stu-id="ac514-102">Create one or more multi-value extended properties in a new or existing instance of a resource.</span></span> 
 
-<span data-ttu-id="ddb73-192">新しく作成された拡張プロパティを表示するには、[拡張プロパティを使用して展開されているメッセージを取得](../api/multivaluelegacyextendedproperty_get.md)します。</span><span class="sxs-lookup"><span data-stu-id="ddb73-192">To see the newly created extended property, [get the message expanded with the extended property](../api/multivaluelegacyextendedproperty_get.md).</span></span>
+<span data-ttu-id="ac514-103">次のユーザー リソースがサポートされます。</span><span class="sxs-lookup"><span data-stu-id="ac514-103">The following user resources are supported:</span></span>
+
+- [<span data-ttu-id="ac514-104">message</span><span class="sxs-lookup"><span data-stu-id="ac514-104">message</span></span>](../resources/message.md)
+- [<span data-ttu-id="ac514-105">mailFolder</span><span class="sxs-lookup"><span data-stu-id="ac514-105">mailFolder</span></span>](../resources/mailfolder.md)
+- [<span data-ttu-id="ac514-106">event</span><span class="sxs-lookup"><span data-stu-id="ac514-106">event</span></span>](../resources/event.md)
+- [<span data-ttu-id="ac514-107">calendar</span><span class="sxs-lookup"><span data-stu-id="ac514-107">calendar</span></span>](../resources/calendar.md)
+- [<span data-ttu-id="ac514-108">contact</span><span class="sxs-lookup"><span data-stu-id="ac514-108">contact</span></span>](../resources/contact.md)
+- [<span data-ttu-id="ac514-109">contactFolder</span><span class="sxs-lookup"><span data-stu-id="ac514-109">contactFolder</span></span>](../resources/contactfolder.md) 
+
+<span data-ttu-id="ac514-110">次のグループ リソースもサポートされます。</span><span class="sxs-lookup"><span data-stu-id="ac514-110">As well as the following group resources:</span></span>
+
+- <span data-ttu-id="ac514-111">グループ [event](../resources/event.md)</span><span class="sxs-lookup"><span data-stu-id="ac514-111">group [event](../resources/event.md)</span></span>
+- <span data-ttu-id="ac514-112">グループ [calendar](../resources/calendar.md)</span><span class="sxs-lookup"><span data-stu-id="ac514-112">group [calendar](../resources/calendar.md)</span></span>
+- <span data-ttu-id="ac514-113">グループ [post](../resources/post.md)</span><span class="sxs-lookup"><span data-stu-id="ac514-113">group [post](../resources/post.md)</span></span> 
+
+<span data-ttu-id="ac514-114">オープン拡張機能または拡張プロパティを使用するのに適した状況と、拡張プロパティを指定する方法の詳細については、「[拡張プロパティの概要](../resources/extended-properties-overview.md)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="ac514-114">See [Extended properties overview](../resources/extended-properties-overview.md) for more information about when to use open extensions or extended properties, and how to specify extended properties.</span></span>
+
+## <a name="permissions"></a><span data-ttu-id="ac514-115">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="ac514-115">Permissions</span></span>
+<span data-ttu-id="ac514-p101">この API を呼び出すには、拡張プロパティを作成するリソースに応じて、以下のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](../../../concepts/permissions_reference.md)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="ac514-p101">One of the following permissions is required to call this API, depending on the resource you're creating the extended property in. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).</span></span>
+
+- <span data-ttu-id="ac514-118">Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="ac514-118">Mail.ReadWrite</span></span>
+- <span data-ttu-id="ac514-119">Calendars.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="ac514-119">Calendars.ReadWrite</span></span>
+- <span data-ttu-id="ac514-120">Contacts.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="ac514-120">Contacts.ReadWrite</span></span>
+- <span data-ttu-id="ac514-121">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="ac514-121">Group.ReadWrite.All</span></span>
+ 
+## <a name="http-request"></a><span data-ttu-id="ac514-122">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="ac514-122">HTTP request</span></span>
+<span data-ttu-id="ac514-123">新規または既存のリソースのインスタンスに、拡張プロパティを作成できます。</span><span class="sxs-lookup"><span data-stu-id="ac514-123">You can create extended properties in a new or existing resource instance.</span></span>
+
+<span data-ttu-id="ac514-p102">1 つ以上の拡張プロパティを_新しい_リソースのインスタンスに作成するには、インスタンスの作成と同じ REST 要求を使用し、新しいリソース インスタンスのプロパティ_と拡張プロパティを_要求の本文に含めます。一部のリソースでは複数の作成方法がサポートされていますので、注意してください。これらのリソース インスタンスの作成に関して詳しくは、[メッセージ](../resources/message.md)、[mailFolder](../api/user_post_mailfolders.md)、[イベント](../api/user_post_events.md)、[予定表](../api/user_post_calendars.md)、[連絡先](../api/user_post_contacts.md)、[contactFolder](../api/user_post_contactfolders.md)、[グループ イベント](../api/group_post_events.md)、および [グループ投稿](../resources/post.md)作成の該当する各トピックをご覧ください。</span><span class="sxs-lookup"><span data-stu-id="ac514-p102">To create one or more extended properties in a _new_ resource instance, use the same REST request as creating the instance, and include the properties of the new resource instance _and extended property_ in the request body. Note that some resources support creation in more than one way. For more information on creating these resource instances, see the corresponding topics for creating a [message](../resources/message.md), [mailFolder](../api/user_post_mailfolders.md), [event](../api/user_post_events.md), [calendar](../api/user_post_calendars.md), [contact](../api/user_post_contacts.md), [contactFolder](../api/user_post_contactfolders.md), [group event](../api/group_post_events.md), and [group post](../resources/post.md).</span></span> 
+ 
+<span data-ttu-id="ac514-127">以下に要求の構文を示します。</span><span class="sxs-lookup"><span data-stu-id="ac514-127">The following is the syntax of the requests.</span></span> 
+
+<!-- { "blockType": "ignored" } -->
+```http
+POST /me/messages
+POST /users/{id|userPrincipalName}/messages
+POST /me/mailFolders/{id}/messages
+
+POST /me/mailFolders
+POST /users/{id|userPrincipalName}/mailFolders
+
+POST /me/events
+POST /users/{id|userPrincipalName}/events
+
+POST /me/calendars
+POST /users/{id|userPrincipalName}/calendars
+
+POST /me/contacts
+POST /users/{id|userPrincipalName}/contacts
+
+POST /me/contactFolders
+POST /users/{id|userPrincipalName}/contactFolders
+
+POST /groups/{id}/events
+
+POST /groups/{id}/threads/{id}/posts/{id}/reply
+POST /groups/{id}/conversations/{id}/threads/{id}/posts/{id}/reply
+POST /groups/{id}/threads/{id}/reply
+POST /groups/{id}/conversations/{id}/threads/{id}/reply
+POST /groups/{id}/threads
+POST /groups/{id}/conversations
+```
+
+<span data-ttu-id="ac514-128">既存のリソースのインスタンスで 1 つ以上の拡張プロパティを作成するには、要求でインスタンスを指定し、要求本文に拡張プロパティを含めます。</span><span class="sxs-lookup"><span data-stu-id="ac514-128">To create one or more extended properties in an existing resource instance, specify the instance in the request, and include the extended property in the request body.</span></span>
+
+<span data-ttu-id="ac514-129">**注** 既存のグループ投稿には拡張プロパティを作成できません。</span><span class="sxs-lookup"><span data-stu-id="ac514-129">**Note** You cannot create an extended property in an existing group post.</span></span>
+
+<!-- { "blockType": "ignored" } -->
+```http
+PATCH /me/messages/{id}
+PATCH /users/{id|userPrincipalName}/messages/{id}
+PATCH /me/mailFolders/{id}/messages/{id}
+
+PATCH /me/mailFolders/{id}
+PATCH /users/{id|userPrincipalName}/mailFolders/{id}
+
+PATCH /me/events/{id}
+PATCH /users/{id|userPrincipalName}/events/{id}
+
+PATCH /me/calendars/{id}
+PATCH /users/{id|userPrincipalName}/calendars/{id}
+
+PATCH /me/contacts/{id}
+PATCH /users/{id|userPrincipalName}/contacts/{id}
+
+PATCH /me/contactFolders/{id}
+PATCH /users/{id|userPrincipalName}/contactFolders/{id}
+
+PATCH /groups/{id}/events/{id}
+```
+
+
+## <a name="parameters"></a><span data-ttu-id="ac514-130">パラメーター</span><span class="sxs-lookup"><span data-stu-id="ac514-130">Parameters</span></span>
+|<span data-ttu-id="ac514-131">**パラメーター**</span><span class="sxs-lookup"><span data-stu-id="ac514-131">**Parameter**</span></span>|<span data-ttu-id="ac514-132">**型**</span><span class="sxs-lookup"><span data-stu-id="ac514-132">**Type**</span></span>|<span data-ttu-id="ac514-133">**説明**</span><span class="sxs-lookup"><span data-stu-id="ac514-133">**Description**</span></span>|
+|:-----|:-----|:-----|
+|<span data-ttu-id="ac514-134">_URL parameters_</span><span class="sxs-lookup"><span data-stu-id="ac514-134">_URL parameters_</span></span>|
+|<span data-ttu-id="ac514-135">id</span><span class="sxs-lookup"><span data-stu-id="ac514-135">id</span></span>|<span data-ttu-id="ac514-136">string</span><span class="sxs-lookup"><span data-stu-id="ac514-136">string</span></span>|<span data-ttu-id="ac514-p103">該当するコレクション内のオブジェクトの一意識別子。必須。</span><span class="sxs-lookup"><span data-stu-id="ac514-p103">A unique identifier for an object in the corresponding collection. Required.</span></span>|
+|<span data-ttu-id="ac514-139">_本文のパラメーター_</span><span class="sxs-lookup"><span data-stu-id="ac514-139">_Body parameters_</span></span>|
+|<span data-ttu-id="ac514-140">multiValueExtendedProperties</span><span class="sxs-lookup"><span data-stu-id="ac514-140">multiValueExtendedProperties</span></span>|<span data-ttu-id="ac514-141">[multiValueLegacyExtendedProperty](../resources/multiValueLegacyExtendedProperty.md) collection</span><span class="sxs-lookup"><span data-stu-id="ac514-141">[multiValueLegacyExtendedProperty](../resources/multiValueLegacyExtendedProperty.md) collection</span></span>| <span data-ttu-id="ac514-142">1 つ以上の複数値を持つ拡張プロパティの配列。</span><span class="sxs-lookup"><span data-stu-id="ac514-142">An array of one or more multi-valued extended properties.</span></span> |
+|<span data-ttu-id="ac514-143">id</span><span class="sxs-lookup"><span data-stu-id="ac514-143">id</span></span>|<span data-ttu-id="ac514-144">String</span><span class="sxs-lookup"><span data-stu-id="ac514-144">String</span></span>|<span data-ttu-id="ac514-p104">**multiValueExtendedProperties** コレクションの各プロパティに対してこれを指定し、プロパティを特定します。サポートされている形式のいずれかに従う必要があります。詳しくは、[「Outlook の拡張プロパティの概要」](../resources/extended-properties-overview.md)をご覧ください。必須。</span><span class="sxs-lookup"><span data-stu-id="ac514-p104">For each property in the **multiValueExtendedProperties** collection, specify this to identify the property. It must follow one of the supported formats. See [Outlook extended properties overview](../resources/extended-properties-overview.md) for more information. Required.</span></span>|
+|<span data-ttu-id="ac514-149">value</span><span class="sxs-lookup"><span data-stu-id="ac514-149">value</span></span>|<span data-ttu-id="ac514-150">string</span><span class="sxs-lookup"><span data-stu-id="ac514-150">string</span></span>|<span data-ttu-id="ac514-p105">**multiValueExtendedProperties** コレクションの各プロパティに対し、プロパティの値を特定します。必須。</span><span class="sxs-lookup"><span data-stu-id="ac514-p105">For each property in the **multiValueExtendedProperties** collection, specify the property value. Required.</span></span>|
+
+## <a name="request-headers"></a><span data-ttu-id="ac514-153">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="ac514-153">Request headers</span></span>
+| <span data-ttu-id="ac514-154">名前</span><span class="sxs-lookup"><span data-stu-id="ac514-154">Name</span></span>       | <span data-ttu-id="ac514-155">値</span><span class="sxs-lookup"><span data-stu-id="ac514-155">Value</span></span> |
+|:---------------|:----------|
+| <span data-ttu-id="ac514-156">Authorization</span><span class="sxs-lookup"><span data-stu-id="ac514-156">Authorization</span></span> | <span data-ttu-id="ac514-p106">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="ac514-p106">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="ac514-159">Content-Type</span><span class="sxs-lookup"><span data-stu-id="ac514-159">Content-Type</span></span> | <span data-ttu-id="ac514-160">application/json</span><span class="sxs-lookup"><span data-stu-id="ac514-160">application/json</span></span> |
+
+## <a name="request-body"></a><span data-ttu-id="ac514-161">要求本文</span><span class="sxs-lookup"><span data-stu-id="ac514-161">Request body</span></span>
+
+<span data-ttu-id="ac514-162">リソース インスタンスの **multiValueExtendedProperties** コレクション プロパティに、各 [multiValueLegacyExtendedProperty](../resources/multiValueLegacyExtendedProperty.md) オブジェクトの JSON 本文を指定します。</span><span class="sxs-lookup"><span data-stu-id="ac514-162">Provide a JSON body of each [multiValueLegacyExtendedProperty](../resources/multiValueLegacyExtendedProperty.md) object in the **multiValueExtendedProperties** collection property of the resource instance.</span></span>
+
+<span data-ttu-id="ac514-163">_新しい_リソース インスタンスに拡張プロパティを作成する場合は、新しい **multiValueExtendedProperties** コレクションのほか、そのリソース インスタンスの JSON 表現を指定します ([message](../resources/message.md)、[mailFolder](../resources/mailfolder.md)、[event](../resources/event.md) など)。</span><span class="sxs-lookup"><span data-stu-id="ac514-163">When creating an extended property in a _new_ resource instance, in addition to the new **multiValueExtendedProperties** collection, provide a JSON representation of that resource instance (that is, a [message](../resources/message.md), [mailFolder](../resources/mailfolder.md), [event](../resources/event.md), etc.)</span></span>
+
+## <a name="response"></a><span data-ttu-id="ac514-164">応答</span><span class="sxs-lookup"><span data-stu-id="ac514-164">Response</span></span>
+
+#### <a name="response-code"></a><span data-ttu-id="ac514-165">応答コード</span><span class="sxs-lookup"><span data-stu-id="ac514-165">Response code</span></span>
+<span data-ttu-id="ac514-166">新しいリソース インスタンスに拡張プロパティが正常に作成されると、`201 Created` が返されます。ただし新しいグループ投稿の場合は別で、使用するメソッドに応じて、`200 OK` または `202 Accepted` が返されます。</span><span class="sxs-lookup"><span data-stu-id="ac514-166">An operation successful in creating an extended property in a new resource instance returns `201 Created`, except in a new group post, depending on the method used, the operation can return `200 OK` or `202 Accepted`.</span></span>
+
+<span data-ttu-id="ac514-167">既存のリソース インスタンスに拡張プロパティが正常に作成されると、`200 OK` が返されます。</span><span class="sxs-lookup"><span data-stu-id="ac514-167">In an existing resource instance, a successful create operation returns `200 OK`.</span></span> 
+
+
+#### <a name="response-body"></a><span data-ttu-id="ac514-168">応答本文</span><span class="sxs-lookup"><span data-stu-id="ac514-168">Response body</span></span>
+
+<span data-ttu-id="ac514-p107">[グループ投稿](../resources/post.md)以外のサポートされているリソースで拡張プロパティを作成する場合、応答には新規または既存のインスタンスだけが含まれ、新しい拡張プロパティは含まれません。新しく作成された拡張プロパティを表示するには、[拡張プロパティを使用して展開されているインスタンスを取得](../api/multivaluelegacyextendedproperty_get.md)します。</span><span class="sxs-lookup"><span data-stu-id="ac514-p107">When creating an extended property in a supported resource other than [group post](../resources/post.md), the response includes only the new or existing instance but not the new extended property. To see the newly created extended property, [get the instance expanded with the extended property](../api/multivaluelegacyextendedproperty_get.md).</span></span>
+
+<span data-ttu-id="ac514-p108">_新しい_グループ投稿に拡張プロパティを作成する場合、応答には応答コードだけが含まれ、新しい投稿や拡張プロパティは含まれません。既存のグループ投稿には拡張プロパティを作成できません。</span><span class="sxs-lookup"><span data-stu-id="ac514-p108">When creating an extended property in a _new_ group post, the response includes only a response code but not the new post nor the extended property. You cannot create an extended property in an existing group post.</span></span>
+
+
+## <a name="example"></a><span data-ttu-id="ac514-173">例</span><span class="sxs-lookup"><span data-stu-id="ac514-173">Example</span></span>
+##### <a name="request-1"></a><span data-ttu-id="ac514-174">要求 1</span><span class="sxs-lookup"><span data-stu-id="ac514-174">Request 1</span></span>
+
+<span data-ttu-id="ac514-p109">最初の例では、すべて同じ POST 操作の新しいイベントで複数値の拡張プロパティを作成します。新しいイベントに通常含まれるプロパティとは別に、要求の本文に 1 つの拡張プロパティを含む **multiValueExtendedProperties** コレクションが含まれます。要求本文には、その複数値の拡張プロパティに関する次のものが含まれています。</span><span class="sxs-lookup"><span data-stu-id="ac514-p109">The first example creates a multi-value extended property in a new event all in the same POST operation. Apart from the properties you'd normally include for a new event, the request body includes the **multiValueExtendedProperties** collection which contains one extended property. The request body includes the following for that multi-value extended property:</span></span>
+
+- <span data-ttu-id="ac514-178">**id** 指定された GUID と名前 `Recreation` の文字列の配列としてプロパティを指定します。</span><span class="sxs-lookup"><span data-stu-id="ac514-178">**id** which specifies the property as an array of strings with the specified GUID and the name `Recreation`.</span></span> 
+- <span data-ttu-id="ac514-179">**value** は、3 つの文字列値 `["Food", "Hiking", "Swimming"]` の配列として `Recreation` を指定します。</span><span class="sxs-lookup"><span data-stu-id="ac514-179">**value** which specifies `Recreation` as an array of 3 string values, `["Food", "Hiking", "Swimming"]`.</span></span>
+ 
+
+<!-- { "blockType": "ignored" } -->
+```http
+POST https://graph.microsoft.com/v1.0/me/events
+Content-Type: application/json
+
+{
+  "subject": "Family reunion",
+  "body": {
+    "contentType": "HTML",
+    "content": "Let's get together this Thanksgiving!"
+  },
+  "start": {
+      "dateTime": "2015-11-26T09:00:00",
+      "timeZone": "Pacific Standard Time"
+  },
+  "end": {
+      "dateTime": "2015-11-29T21:00:00",
+      "timeZone": "Pacific Standard Time"
+  },
+  "attendees": [
+    {
+      "emailAddress": {
+        "address": "Terrie@contoso.com",
+        "name": "Terrie Barrera"
+      },
+      "type": "Required"
+    },
+    {
+      "emailAddress": {
+        "address": "Lauren@contoso.com",
+        "name": "Lauren Solis"
+      },
+      "type": "Required"
+    }
+  ],
+  "multiValueExtendedProperties": [
+     {
+           "id":"StringArray {66f5a359-4659-4830-9070-00050ec6ac6e} Name Recreation",
+           "value": ["Food", "Hiking", "Swimming"]
+     }
+  ]
+}
+```
+
+##### <a name="response-1"></a><span data-ttu-id="ac514-180">応答 1</span><span class="sxs-lookup"><span data-stu-id="ac514-180">Response 1</span></span>
+
+<span data-ttu-id="ac514-p110">[イベントのみの作成](../api/user_post_events.md)からの応答と同様に、`HTTP 201 Created` 応答コードによって正常な応答が示され、応答の本文に新しいイベントが含まれます。応答には、新しく作成された拡張プロパティは含まれません。</span><span class="sxs-lookup"><span data-stu-id="ac514-p110">A successful response is indicated by an `HTTP 201 Created` response code, and includes the new event in the response body, similar to the response from [creating just an event](../api/user_post_events.md). The response does not include any newly created extended properties.</span></span>
+
+<span data-ttu-id="ac514-183">新しく作成された拡張プロパティを表示するには、[拡張プロパティを使用して展開されているイベントを取得](../api/multivaluelegacyextendedproperty_get.md)します。</span><span class="sxs-lookup"><span data-stu-id="ac514-183">To see the newly created extended property, [get the event expanded with the extended property](../api/multivaluelegacyextendedproperty_get.md).</span></span>
+
+
+****
+
+##### <a name="request-2"></a><span data-ttu-id="ac514-184">要求 2</span><span class="sxs-lookup"><span data-stu-id="ac514-184">Request 2</span></span>
+
+<span data-ttu-id="ac514-p111">2 番目の例では、指定したメッセージに対して 1 つの複数値の拡張プロパティを作成します。拡張プロパティは、**multiValueExtendedProperties** コレクションの唯一の要素です。要求本文には、拡張プロパティに関する次のものが含まれています。</span><span class="sxs-lookup"><span data-stu-id="ac514-p111">The second example creates one multi-value extended property for the specified message. That extended property is the only element in the **multiValueExtendedProperties** collection. The request body includes the following for the extended property:</span></span>
+
+- <span data-ttu-id="ac514-188">**id** 指定された GUID と名前 `Palette` を使って、文字列の配列としてプロパティを指定します。</span><span class="sxs-lookup"><span data-stu-id="ac514-188">**id** specifies the property as an array of strings with the specified GUID and the name `Palette`.</span></span>
+- <span data-ttu-id="ac514-189">**value** 3 つの文字列値 `["Green", "Aqua", "Blue"]` の配列として `Palette` を指定します。</span><span class="sxs-lookup"><span data-stu-id="ac514-189">**value** specifies `Palette` as an array of 3 string values, `["Green", "Aqua", "Blue"]`.</span></span>
+
+<!-- { "blockType": "ignored" } -->
+```http
+PATCH https://graph.microsoft.com/v1.0/me/messages('AAMkAGE1M2_as77AACHsLrBBBA=')
+
+Content-Type: application/json
+
+{
+  "multiValueExtendedProperties": [
+      {
+         "id":"StringArray {66f5a359-4659-4830-9070-00049ec6ac6e} Name Palette",
+         "value":["Green", "Aqua", "Blue"]
+      }
+    ]
+}
+```
+
+##### <a name="response-2"></a><span data-ttu-id="ac514-190">応答 2</span><span class="sxs-lookup"><span data-stu-id="ac514-190">Response 2</span></span>
+
+<span data-ttu-id="ac514-p112">[メッセージの更新](../api/message_update.md)からの応答と同様に、`HTTP 200 OK` 応答コードによって正常な応答が示され、応答の本文に指定したメッセージが含まれています。応答には、新しく作成された拡張プロパティは含まれません。</span><span class="sxs-lookup"><span data-stu-id="ac514-p112">A successful response is indicated by an `HTTP 200 OK` response code, and includes the specified message in the response body, similar to the response from [updating a message](../api/message_update.md). The response does not include the newly created extended property.</span></span>
+
+<span data-ttu-id="ac514-193">新しく作成された拡張プロパティを表示するには、[拡張プロパティを使用して展開されているメッセージを取得](../api/multivaluelegacyextendedproperty_get.md)します。</span><span class="sxs-lookup"><span data-stu-id="ac514-193">To see the newly created extended property, [get the message expanded with the extended property](../api/multivaluelegacyextendedproperty_get.md).</span></span>
 
 
 <!-- This page was manually created. -->

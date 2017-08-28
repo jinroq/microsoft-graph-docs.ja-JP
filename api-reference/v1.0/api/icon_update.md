@@ -1,5 +1,52 @@
-<span data-ttu-id="fe9ec-p104">以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。</span><span class="sxs-lookup"><span data-stu-id="fe9ec-p104">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
-以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。
+# <a name="update-icon"></a><span data-ttu-id="2e1ad-101">アイコンを更新する</span><span class="sxs-lookup"><span data-stu-id="2e1ad-101">Update icon</span></span>
+
+<span data-ttu-id="2e1ad-102">アイコン オブジェクトのプロパティを更新します。</span><span class="sxs-lookup"><span data-stu-id="2e1ad-102">Update the properties of icon object.</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="2e1ad-103">前提条件</span><span class="sxs-lookup"><span data-stu-id="2e1ad-103">Prerequisites</span></span>
+<span data-ttu-id="2e1ad-104">この API を実行するために必要な**スコープ**は、次のとおりです。</span><span class="sxs-lookup"><span data-stu-id="2e1ad-104">The following **scopes** are required to execute this API:</span></span> 
+
+    * <span data-ttu-id="2e1ad-105">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="2e1ad-105">Files.ReadWrite</span></span>
+
+## <a name="http-request"></a><span data-ttu-id="2e1ad-106">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="2e1ad-106">HTTP request</span></span>
+<!-- { "blockType": "ignored" } -->
+```http
+PATCH /workbook/tables/{id|name}/sort/fields/icon
+PATCH /workbook/worksheets/{id|name}/tables/{id|name}/sort/fields/icon
+```
+## <a name="optional-request-headers"></a><span data-ttu-id="2e1ad-107">オプションの要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="2e1ad-107">Optional request headers</span></span>
+| <span data-ttu-id="2e1ad-108">名前</span><span class="sxs-lookup"><span data-stu-id="2e1ad-108">Name</span></span>       | <span data-ttu-id="2e1ad-109">説明</span><span class="sxs-lookup"><span data-stu-id="2e1ad-109">Description</span></span>|
+|:-----------|:-----------|
+| <span data-ttu-id="2e1ad-110">Authorization</span><span class="sxs-lookup"><span data-stu-id="2e1ad-110">Authorization</span></span>  | <span data-ttu-id="2e1ad-p101">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="2e1ad-p101">Bearer {token}. Required.</span></span> |
+
+## <a name="request-body"></a><span data-ttu-id="2e1ad-113">要求本文</span><span class="sxs-lookup"><span data-stu-id="2e1ad-113">Request body</span></span>
+<span data-ttu-id="2e1ad-p102">要求本文で、更新する関連フィールドの値を指定します。要求本文に含まれない既存のプロパティは、以前の値のままになるか、他のプロパティ値の変化に基づいて再計算されます。最適なパフォーマンスを得るためには、変更されていない既存の値を含めないでください。</span><span class="sxs-lookup"><span data-stu-id="2e1ad-p102">In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.</span></span>
+
+| <span data-ttu-id="2e1ad-117">プロパティ</span><span class="sxs-lookup"><span data-stu-id="2e1ad-117">Property</span></span>     | <span data-ttu-id="2e1ad-118">型</span><span class="sxs-lookup"><span data-stu-id="2e1ad-118">Type</span></span>   |<span data-ttu-id="2e1ad-119">説明</span><span class="sxs-lookup"><span data-stu-id="2e1ad-119">Description</span></span>|
+|:---------------|:--------|:----------|
+|<span data-ttu-id="2e1ad-120">index</span><span class="sxs-lookup"><span data-stu-id="2e1ad-120">index</span></span>|<span data-ttu-id="2e1ad-121">int</span><span class="sxs-lookup"><span data-stu-id="2e1ad-121">int</span></span>|<span data-ttu-id="2e1ad-122">指定したセット内のアイコンのインデックスを表します。</span><span class="sxs-lookup"><span data-stu-id="2e1ad-122">Represents the index of the icon in the given set.</span></span>|
+|<span data-ttu-id="2e1ad-123">set</span><span class="sxs-lookup"><span data-stu-id="2e1ad-123">set</span></span>|<span data-ttu-id="2e1ad-124">string</span><span class="sxs-lookup"><span data-stu-id="2e1ad-124">string</span></span>|<span data-ttu-id="2e1ad-p103">アイコンがその一部であるセットを表します。可能な値は、`Invalid`、`ThreeArrows`、`ThreeArrowsGray`、`ThreeFlags`、`ThreeTrafficLights1`、`ThreeTrafficLights2`、`ThreeSigns`、`ThreeSymbols`、`ThreeSymbols2`、`FourArrows`、`FourArrowsGray`、`FourRedToBlack`、`FourRating`、`FourTrafficLights`、`FiveArrows`、`FiveArrowsGray`、`FiveRating`、`FiveQuarters`、`ThreeStars`、`ThreeTriangles`、`FiveBoxes` です。</span><span class="sxs-lookup"><span data-stu-id="2e1ad-p103">Represents the set that the icon is part of. Possible values are: `Invalid`, `ThreeArrows`, `ThreeArrowsGray`, `ThreeFlags`, `ThreeTrafficLights1`, `ThreeTrafficLights2`, `ThreeSigns`, `ThreeSymbols`, `ThreeSymbols2`, `FourArrows`, `FourArrowsGray`, `FourRedToBlack`, `FourRating`, `FourTrafficLights`, `FiveArrows`, `FiveArrowsGray`, `FiveRating`, `FiveQuarters`, `ThreeStars`, `ThreeTriangles`, `FiveBoxes`.</span></span>|
+
+## <a name="response"></a><span data-ttu-id="2e1ad-127">応答</span><span class="sxs-lookup"><span data-stu-id="2e1ad-127">Response</span></span>
+
+<span data-ttu-id="2e1ad-128">成功した場合、このメソッドは `200 OK` 応答コードと、応答本文で、更新された[アイコン](../resources/icon.md) オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="2e1ad-128">If successful, this method returns a `200 OK` response code and updated [Icon](../resources/icon.md) object in the response body.</span></span>
+## <a name="example"></a><span data-ttu-id="2e1ad-129">例</span><span class="sxs-lookup"><span data-stu-id="2e1ad-129">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="2e1ad-130">要求</span><span class="sxs-lookup"><span data-stu-id="2e1ad-130">Request</span></span>
+<span data-ttu-id="2e1ad-131">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="2e1ad-131">Here is an example of the request.</span></span>
+<!-- {
+  "blockType": "request",
+  "name": "update_icon"
+}-->
+```http
+PATCH https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/tables/{id|name}/sort/fields/icon
+Content-type: application/json
+Content-length: 39
+
+{
+  "set": "set-value",
+  "index": 99
+}
+```
+##### <a name="response"></a><span data-ttu-id="2e1ad-132">応答</span><span class="sxs-lookup"><span data-stu-id="2e1ad-132">Response</span></span>
+<span data-ttu-id="2e1ad-p104">以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。</span><span class="sxs-lookup"><span data-stu-id="2e1ad-p104">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,

@@ -1,31 +1,37 @@
-# <a name="delete-directoryobject"></a><span data-ttu-id="53119-101">directoryObject を削除する</span><span class="sxs-lookup"><span data-stu-id="53119-101">Delete directoryObject</span></span>
+# <a name="delete-directoryobject"></a><span data-ttu-id="7f5d6-101">directoryObject を削除する</span><span class="sxs-lookup"><span data-stu-id="7f5d6-101">Delete directoryObject</span></span>
 
-<span data-ttu-id="53119-102">directoryObject を削除します。</span><span class="sxs-lookup"><span data-stu-id="53119-102">Deletes a directoryObject.</span></span>
+<span data-ttu-id="7f5d6-102">directoryObject を削除します。</span><span class="sxs-lookup"><span data-stu-id="7f5d6-102">Deletes a directoryObject.</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="53119-103">前提条件</span><span class="sxs-lookup"><span data-stu-id="53119-103">Prerequisites</span></span>
-<span data-ttu-id="53119-104">この API を実行するには、以下の**スコープ**が必要です。_Directory.AccessAsUser.All_</span><span class="sxs-lookup"><span data-stu-id="53119-104">The following **scopes** is required to execute this API: _Directory.AccessAsUser.All_</span></span>
+## <a name="permissions"></a><span data-ttu-id="7f5d6-103">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="7f5d6-103">Permissions</span></span>
+<span data-ttu-id="7f5d6-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](../../../concepts/permissions_reference.md)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="7f5d6-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).</span></span>
 
-<span data-ttu-id="53119-p101">**注:**ユーザー、グループ、および連絡先は、ディレクトリ オブジェクトの種類です。結果としてユーザーを削除する必要がある場合、次の**スコープ**を使用する必要があります。_User.ReadWrite.All_</span><span class="sxs-lookup"><span data-stu-id="53119-p101">**NOTE:** Users, groups, and contacts are types of directory object. As a result,if you need to delete users, the following **scope** can and should be used: _User.ReadWrite.All_</span></span>
-## <a name="http-request"></a><span data-ttu-id="53119-107">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="53119-107">HTTP request</span></span>
+
+|<span data-ttu-id="7f5d6-106">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="7f5d6-106">Permission type</span></span>      | <span data-ttu-id="7f5d6-107">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="7f5d6-107">Permissions (from least to most privileged)</span></span>              |
+|:--------------------|:---------------------------------------------------------|
+|<span data-ttu-id="7f5d6-108">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="7f5d6-108">Delegated (work or school account)</span></span> | <span data-ttu-id="7f5d6-109">Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="7f5d6-109">Directory.AccessAsUser.All</span></span>    |
+|<span data-ttu-id="7f5d6-110">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="7f5d6-110">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="7f5d6-111">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="7f5d6-111">Not supported.</span></span>    |
+|<span data-ttu-id="7f5d6-112">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="7f5d6-112">Application</span></span> | <span data-ttu-id="7f5d6-113">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="7f5d6-113">Not supported.</span></span> |
+
+## <a name="http-request"></a><span data-ttu-id="7f5d6-114">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="7f5d6-114">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 DELETE /directoryObjects/{id}
 
 ```
-## <a name="request-headers"></a><span data-ttu-id="53119-108">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="53119-108">Request headers</span></span>
-| <span data-ttu-id="53119-109">名前</span><span class="sxs-lookup"><span data-stu-id="53119-109">Name</span></span>       | <span data-ttu-id="53119-110">型</span><span class="sxs-lookup"><span data-stu-id="53119-110">Type</span></span> | <span data-ttu-id="53119-111">説明</span><span class="sxs-lookup"><span data-stu-id="53119-111">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="7f5d6-115">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="7f5d6-115">Request headers</span></span>
+| <span data-ttu-id="7f5d6-116">名前</span><span class="sxs-lookup"><span data-stu-id="7f5d6-116">Name</span></span>       | <span data-ttu-id="7f5d6-117">型</span><span class="sxs-lookup"><span data-stu-id="7f5d6-117">Type</span></span> | <span data-ttu-id="7f5d6-118">説明</span><span class="sxs-lookup"><span data-stu-id="7f5d6-118">Description</span></span>|
 |:---------------|:--------|:----------|
-| <span data-ttu-id="53119-112">Authorization</span><span class="sxs-lookup"><span data-stu-id="53119-112">Authorization</span></span>  | <span data-ttu-id="53119-113">string</span><span class="sxs-lookup"><span data-stu-id="53119-113">string</span></span>  | <span data-ttu-id="53119-p102">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="53119-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="7f5d6-119">Authorization</span><span class="sxs-lookup"><span data-stu-id="7f5d6-119">Authorization</span></span>  | <span data-ttu-id="7f5d6-120">string</span><span class="sxs-lookup"><span data-stu-id="7f5d6-120">string</span></span>  | <span data-ttu-id="7f5d6-p102">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="7f5d6-p102">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="53119-116">要求本文</span><span class="sxs-lookup"><span data-stu-id="53119-116">Request body</span></span>
-<span data-ttu-id="53119-117">このメソッドには、要求本文を指定しません。</span><span class="sxs-lookup"><span data-stu-id="53119-117">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="7f5d6-123">要求本文</span><span class="sxs-lookup"><span data-stu-id="7f5d6-123">Request body</span></span>
+<span data-ttu-id="7f5d6-124">このメソッドには、要求本文を指定しません。</span><span class="sxs-lookup"><span data-stu-id="7f5d6-124">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="53119-118">応答</span><span class="sxs-lookup"><span data-stu-id="53119-118">Response</span></span>
+## <a name="response"></a><span data-ttu-id="7f5d6-125">応答</span><span class="sxs-lookup"><span data-stu-id="7f5d6-125">Response</span></span>
 
-<span data-ttu-id="53119-p103">成功した場合、このメソッドは `204, No Content` 応答コードを返します。応答本文には何も返されません。</span><span class="sxs-lookup"><span data-stu-id="53119-p103">If successful, this method returns `204, No Content` response code. It does not return anything in the response body.</span></span>
+<span data-ttu-id="7f5d6-p103">成功した場合、このメソッドは `204, No Content` 応答コードを返します。応答本文には何も返されません。</span><span class="sxs-lookup"><span data-stu-id="7f5d6-p103">If successful, this method returns `204, No Content` response code. It does not return anything in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="53119-121">例</span><span class="sxs-lookup"><span data-stu-id="53119-121">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="53119-122">要求</span><span class="sxs-lookup"><span data-stu-id="53119-122">Request</span></span>
+## <a name="example"></a><span data-ttu-id="7f5d6-128">例</span><span class="sxs-lookup"><span data-stu-id="7f5d6-128">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="7f5d6-129">要求</span><span class="sxs-lookup"><span data-stu-id="7f5d6-129">Request</span></span>
 
 <!-- {
   "blockType": "request",
@@ -34,7 +40,7 @@ DELETE /directoryObjects/{id}
 ```http
 DELETE https://graph.microsoft.com/v1.0/directoryObject/{id}
 ```
-##### <a name="response"></a><span data-ttu-id="53119-123">応答</span><span class="sxs-lookup"><span data-stu-id="53119-123">Response</span></span>
+##### <a name="response"></a><span data-ttu-id="7f5d6-130">応答</span><span class="sxs-lookup"><span data-stu-id="7f5d6-130">Response</span></span>
 
 <!-- {
   "blockType": "response",

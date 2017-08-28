@@ -1,12 +1,214 @@
-<span data-ttu-id="90907-p122">**[メールの送信]** ボタンを選びます。メールが送信されると、ボタンの下に成功メッセージが表示されます。</span><span class="sxs-lookup"><span data-stu-id="90907-p122">Choose the **Send email** button. When the mail is sent, a success message is displayed below the button.</span></span>
+# <a name="get-started-with-microsoft-graph-in-an-ios-app"></a><span data-ttu-id="68f7c-101">iOS アプリで Microsoft Graph を使ってみる</span><span class="sxs-lookup"><span data-stu-id="68f7c-101">Get started with Microsoft Graph in an iOS App</span></span>
 
-3. **[メールの送信]** ボタンを選びます。メールが送信されると、ボタンの下に成功メッセージが表示されます。
+> <span data-ttu-id="68f7c-p101">**エンタープライズのお客様向けにアプリを作成していますか?**エンタープライズのお客様が、<a href="https://azure.microsoft.com/en-us/documentation/articles/active-directory-conditional-access-device-policies/" target="_newtab">条件付きのデバイスへのアクセス</a>のようなエンタープライズ モビリティ セキュリティの機能をオンにしている場合、アプリが動作しない可能性があります。その場合、気がつかないまま、お客様の側でエラーが発生してしまう可能性があります。</span><span class="sxs-lookup"><span data-stu-id="68f7c-p101">**Building apps for enterprise customers?** Your app may not work if your enterprise customer turns on enterprise mobility security features like <a href="https://azure.microsoft.com/en-us/documentation/articles/active-directory-conditional-access-device-policies/" target="_newtab">conditional device access</a>. In this case, you may not know and your customers may experience errors.</span></span> 
 
-## <a name="next-steps"></a><span data-ttu-id="90907-187">次の手順</span><span class="sxs-lookup"><span data-stu-id="90907-187">Next steps</span></span>
-- <span data-ttu-id="90907-188">[Graph エクスプローラー](https://graph.microsoft.io/graph-explorer)を使用して REST API を試してみます。</span><span class="sxs-lookup"><span data-stu-id="90907-188">Try out the REST API using the [Graph explorer](https://graph.microsoft.io/graph-explorer).</span></span>
-- <span data-ttu-id="90907-189">[Microsoft Graph iOS オブジェクティブ C スニペット サンプル](https://github.com/microsoftgraph/ios-objectiveC-snippets-sample)に、REST 操作と SDK 操作の両方に共通する操作の例があります。</span><span class="sxs-lookup"><span data-stu-id="90907-189">Find examples of common operations for both REST and SDK operations in the [Microsoft Graph iOS Objective C Snippets Sample](https://github.com/microsoftgraph/ios-objectiveC-snippets-sample).</span></span>
+> <span data-ttu-id="68f7c-p102">**すべてのエンタープライズのお客様**の**すべてのエンタープライズ シナリオ**をサポートするには、Azure AD エンドポイントを使用し、[Azure 管理ポータル](https://aka.ms/aadapplist)でアプリを管理する必要があります。詳細については、「[Azure AD か Azure AD v2.0 エンドポイントかを決定する](../concepts/auth_overview.md#deciding-between-the-azure-ad-and-azure-ad-v20-endpoints)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="68f7c-p102">To support **all enterprise customers** across **all enterprise scenarios**, you must use the Azure AD endpoint and manage your apps using the [Azure Management Portal](https://aka.ms/aadapplist). For more information, see [Deciding between the Azure AD and Azure AD v2.0 endpoints](../concepts/auth_overview.md#deciding-between-the-azure-ad-and-azure-ad-v20-endpoints).</span></span>
 
-## <a name="see-also"></a><span data-ttu-id="90907-190">関連項目</span><span class="sxs-lookup"><span data-stu-id="90907-190">See also</span></span>
-- [<span data-ttu-id="90907-191">iOS 用 Microsoft Graph SDK</span><span class="sxs-lookup"><span data-stu-id="90907-191">Microsoft Graph SDK for iOS</span></span>](https://github.com/microsoftgraph/msgraph-sdk-ios)
-- [<span data-ttu-id="90907-192">Azure AD v2.0 のプロトコル</span><span class="sxs-lookup"><span data-stu-id="90907-192">Azure AD v2.0 protocols</span></span>](https://azure.microsoft.com/en-us/documentation/articles/active-directory-v2-protocols/)
-- [<span data-ttu-id="90907-193">Azure AD v2.0 のトークン</span><span class="sxs-lookup"><span data-stu-id="90907-193">Azure AD v2.0 tokens</span></span>](https://azure.microsoft.com/en-us/documentation/articles/active-directory-v2-tokens/)
+<span data-ttu-id="68f7c-p103">この記事では、[Azure AD v2.0 エンドポイント](https://developer.microsoft.com/en-us/graph/docs/concepts/converged_auth)からアクセス トークンを取得し、Microsoft Graph を呼び出すために必要なタスクについて説明します。ここでは、[iOS (SDK) 用 Office 365 Connect サンプル](https://github.com/microsoftgraph/ios-objectivec-connect-sample)内のコードを説明し、Microsoft Graph を使用するアプリで実装する必要のある主要な概念について説明します。[iOS 用 Microsoft Graph SDK](https://github.com/microsoftgraph/msgraph-sdk-ios) を使用して Microsoft Graph にアクセスする方法を説明します。</span><span class="sxs-lookup"><span data-stu-id="68f7c-p103">This article describes the tasks required to get an access token from the [Azure AD v2.0 endpoint](https://developer.microsoft.com/en-us/graph/docs/concepts/converged_auth) and call Microsoft Graph. It walks you through the code inside the [Office 365 Connect Sample for iOS (SDK)](https://github.com/microsoftgraph/ios-objectivec-connect-sample) to explain the main concepts that you have to implement in an app that uses Microsoft Graph. It describes how to access Microsoft Graph by using the [Microsoft Graph SDK for iOS](https://github.com/microsoftgraph/msgraph-sdk-ios).</span></span>
+
+<span data-ttu-id="68f7c-110">作成するアプリのバージョンを、この GitHub リポジトリからダウンロードすることができます。</span><span class="sxs-lookup"><span data-stu-id="68f7c-110">You can download the version of the app that you'll create from this GitHub repo:</span></span>
+
+* [<span data-ttu-id="68f7c-111">Microsoft Graph SDK を使用した iOS 用 Office 365 Connect サンプル</span><span class="sxs-lookup"><span data-stu-id="68f7c-111">Office 365 Connect Sample for iOS Using the Microsoft Graph SDK</span></span>](https://github.com/microsoftgraph/ios-objectivec-connect-sample)
+
+<span data-ttu-id="68f7c-112">次の画像は、作成するアプリを示しています。</span><span class="sxs-lookup"><span data-stu-id="68f7c-112">The following image shows the app you'll create.</span></span>
+
+![Connect のサンプル チュートリアル。アプリにおける接続とメールの送信を示します](./images/iOSConnectWalkthrough.png)
+
+
+<span data-ttu-id="68f7c-114">ワークフローは、Microsoft Graph への接続/認証を行い、職場または個人用アカウントでサインインし、最後に受信者に向けてメールを送信する、というものです。</span><span class="sxs-lookup"><span data-stu-id="68f7c-114">The workflow will be to connect/authenticate to Microsoft Graph, sign in with your work or personal account, and finally send a mail to a recipient.</span></span>
+
+<span data-ttu-id="68f7c-p104">**アプリを作成してみたくありませんか。**「[Microsoft Graph クイック スタート](https://graph.microsoft.io/en-us/getting-started)」を使用すれば、すばやく稼働させることができます。</span><span class="sxs-lookup"><span data-stu-id="68f7c-p104">**Don't feel like building an app?** Use the [Microsoft Graph quick start](https://graph.microsoft.io/en-us/getting-started) to get up and running fast.</span></span>
+
+## <a name="prerequisites"></a><span data-ttu-id="68f7c-117">前提条件</span><span class="sxs-lookup"><span data-stu-id="68f7c-117">Prerequisites</span></span>
+
+<span data-ttu-id="68f7c-118">開始するには、次のものが必要です。</span><span class="sxs-lookup"><span data-stu-id="68f7c-118">To get started, you'll need:</span></span> 
+
+* <span data-ttu-id="68f7c-119">Apple 社の [Xcode](https://developer.apple.com/xcode/downloads/)</span><span class="sxs-lookup"><span data-stu-id="68f7c-119">[Xcode](https://developer.apple.com/xcode/downloads/) from Apple</span></span>
+* <span data-ttu-id="68f7c-120">依存関係マネージャーとしての [CocoaPods](https://guides.cocoapods.org/using/using-cocoapods.html) のインストール。</span><span class="sxs-lookup"><span data-stu-id="68f7c-120">Installation of [CocoaPods](https://guides.cocoapods.org/using/using-cocoapods.html) as a dependency manager</span></span>
+* <span data-ttu-id="68f7c-121">[Microsoft アカウント](https://www.outlook.com/)か[職場または学校アカウント](http://dev.office.com/devprogram)</span><span class="sxs-lookup"><span data-stu-id="68f7c-121">A [Microsoft account](https://www.outlook.com/) or a [work or school account](http://dev.office.com/devprogram)</span></span>
+* <span data-ttu-id="68f7c-p105">[iOS 用 Microsoft Graph スターター プロジェクト](https://github.com/microsoftgraph/ios-objectivec-connect-sample)。このテンプレートには、コードを追加する必要のあるクラスが含まれています。このプロジェクトを取得するには、この場所からサンプル プロジェクトを複製するかダウンロードして、**starter-project** フォルダー内のワークスペース (**O365-iOS-Microsoft-Graph-SDK.xcworkspace**) で作業します。</span><span class="sxs-lookup"><span data-stu-id="68f7c-p105">The [Microsoft Graph Starter Project for iOS](https://github.com/microsoftgraph/ios-objectivec-connect-sample). This template contains classes that you'll add code to. To get this project, clone or download the sample project from this location, and you'll work with the workspace inside the **starter-project** folder (**O365-iOS-Microsoft-Graph-SDK.xcworkspace**).</span></span>
+
+## <a name="register-the-app"></a><span data-ttu-id="68f7c-125">アプリを登録する</span><span class="sxs-lookup"><span data-stu-id="68f7c-125">Register the app</span></span>
+ 
+1. <span data-ttu-id="68f7c-126">個人用アカウントか職場または学校アカウントのいずれかを使用して、[アプリ登録ポータル](https://apps.dev.microsoft.com/)にサインインします。</span><span class="sxs-lookup"><span data-stu-id="68f7c-126">Sign into the [App Registration Portal](https://apps.dev.microsoft.com/) using either your personal or work or school account.</span></span>
+2. <span data-ttu-id="68f7c-127">**[アプリの追加]** を選択します。</span><span class="sxs-lookup"><span data-stu-id="68f7c-127">Select **Add an app**.</span></span>
+3. <span data-ttu-id="68f7c-128">アプリの名前を入力して、**[アプリケーションの作成]** を選択します。</span><span class="sxs-lookup"><span data-stu-id="68f7c-128">Enter a name for the app, and select **Create application**.</span></span>
+    
+    <span data-ttu-id="68f7c-129">登録ページが表示され、アプリのプロパティが一覧表示されます。</span><span class="sxs-lookup"><span data-stu-id="68f7c-129">The registration page displays, listing the properties of your app.</span></span>
+ 
+4. <span data-ttu-id="68f7c-130">**[プラットフォーム]** で、**[プラットフォームの追加]** を選びます。</span><span class="sxs-lookup"><span data-stu-id="68f7c-130">Under **Platforms**, select **Add platform**.</span></span>
+5. <span data-ttu-id="68f7c-131">**[Mobile プラットフォーム]** を選びます。</span><span class="sxs-lookup"><span data-stu-id="68f7c-131">Select **Mobile platform**.</span></span>
+6. <span data-ttu-id="68f7c-p106">クライアント ID をクリップボードにコピーします。サンプル アプリにこの値を入力する必要があります。</span><span class="sxs-lookup"><span data-stu-id="68f7c-p106">Copy the Client Id to the clipboard. You'll need to enter this value into the sample app.</span></span>
+
+    <span data-ttu-id="68f7c-134">アプリ ID は、アプリの一意識別子です。</span><span class="sxs-lookup"><span data-stu-id="68f7c-134">The app id is a unique identifier for your app.</span></span> 
+
+7. <span data-ttu-id="68f7c-135">**[保存]** を選びます。</span><span class="sxs-lookup"><span data-stu-id="68f7c-135">Select **Save**.</span></span>
+
+## <a name="importing-the-project-dependencies"></a><span data-ttu-id="68f7c-136">プロジェクトの依存関係のインポート</span><span class="sxs-lookup"><span data-stu-id="68f7c-136">Importing the project dependencies</span></span>
+
+1. <span data-ttu-id="68f7c-p107">このリポジトリ ([Microsoft Graph SDK を使用した iOS 用 Office 365 Connect サンプル](https://github.com/microsoftgraph/ios-objectivec-connect-sample)) を複製します。**プロジェクトのルートにあるサンプルではなく、starter-project フォルダーのサンプルを使用することにご注意ください。**</span><span class="sxs-lookup"><span data-stu-id="68f7c-p107">Clone this repository, [Office 365 Connect Sample for iOS Using the Microsoft Graph SDK](https://github.com/microsoftgraph/ios-objectivec-connect-sample). **Remember you will use the sample in the starter-project folder and not the sample at the root of the project.**</span></span>
+2. <span data-ttu-id="68f7c-p108">CocoaPods を使用して、Microsoft Graph SDK と認証の依存関係をインポートします。このサンプル アプリには、プロジェクトに pod を取り込む podfile が既に含まれています。**ターミナル** アプリでフォルダー **starter-project** に移動し、**ターミナル**から以下を実行します。</span><span class="sxs-lookup"><span data-stu-id="68f7c-p108">Use CocoaPods to import the Microsoft Graph SDK and authentication dependencies. This sample app already contains a podfile that will get the pods into the project. Navigate to the folder **starter-project** in the **Terminal** app, and from **Terminal** run:</span></span>
+
+        pod install
+
+   <span data-ttu-id="68f7c-p109">pod がプロジェクトにインポートされたことの確認が表示されます。詳細については、「[CocoaPods](https://guides.cocoapods.org/using/using-cocoapods.html)」をご覧ください。</span><span class="sxs-lookup"><span data-stu-id="68f7c-p109">You will receive confirmation that the pods have been imported into the project. For more information, see [CocoaPods](https://guides.cocoapods.org/using/using-cocoapods.html)</span></span>
+
+
+## <a name="enable-keychain-sharing"></a><span data-ttu-id="68f7c-144">キーチェーンの共有の有効化</span><span class="sxs-lookup"><span data-stu-id="68f7c-144">Enable keychain sharing</span></span>
+ 
+<span data-ttu-id="68f7c-p110">Xcode8 には、キーチェーンのグループを追加する必要があります。これを行わないと、アプリがキーチェーンにアクセスできなくなります。キーチェーン グループを追加するには:</span><span class="sxs-lookup"><span data-stu-id="68f7c-p110">For Xcode8, you need to add the keychain group or your app will fail to access keychain. To add the keychain group:</span></span>
+ 
+1. <span data-ttu-id="68f7c-p111">Xcode のプロジェクト マネージャーのパネルで、プロジェクトを選びます (⌘ + 1)。</span><span class="sxs-lookup"><span data-stu-id="68f7c-p111">Select the project on the project manager panel in Xcode. (⌘ + 1).</span></span>
+ 
+2. <span data-ttu-id="68f7c-149">**O365-iOS-Microsoft-Graph-SDK** を選びます。</span><span class="sxs-lookup"><span data-stu-id="68f7c-149">Select **O365-iOS-Microsoft-Graph-SDK**.</span></span>
+ 
+3. <span data-ttu-id="68f7c-150">[Capabilities] タブで **[Keychain Sharing]** を有効にします。</span><span class="sxs-lookup"><span data-stu-id="68f7c-150">On the Capabilities tab, enable **Keychain Sharing**.</span></span>
+ 
+4. <span data-ttu-id="68f7c-151">**com.microsoft.O365-iOS-Microsoft-Graph-SDK** をキーチェーンのグループに追加します。</span><span class="sxs-lookup"><span data-stu-id="68f7c-151">Add **com.microsoft.O365-iOS-Microsoft-Graph-SDK** to the Keychain Groups.</span></span>
+ 
+
+## <a name="authenticating-with-microsoft-graph"></a><span data-ttu-id="68f7c-152">Microsoft Graph での認証</span><span class="sxs-lookup"><span data-stu-id="68f7c-152">Authenticating with Microsoft Graph</span></span>
+
+<span data-ttu-id="68f7c-p112">UI のワークフローを見直すため、アプリはユーザーに認証を実行させます。こうすると指定されたユーザーにメールを送信できるようになります。Microsoft Graph サービスに対して要求を実行するには、適切な OAuth 2.0 ベアラー トークンを使用して HTTPS 要求を認証できる認証プロバイダーを指定する必要があります。サンプル プロジェクトには、既にスタブ アウトされていた **AuthenticationProvider.m** という認証クラスがあります。Microsoft Graph API を呼び出すためのアクセス トークンを要求および取得する関数を追加します。</span><span class="sxs-lookup"><span data-stu-id="68f7c-p112">To revisit the UI workflow, the app is going to have the user authenticate, and then they'll have the ability to send a mail to a specified user. To make requests against the Microsoft Graph service, an authentication provider must be supplied which is capable of authenticating HTTPS requests with an appropriate OAuth 2.0 bearer token. In the sample project there's an authentication class already stubbed out called **AuthenticationProvider.m.** We will add a function to request, and acquire, an access token for calling the Microsoft Graph API.</span></span> 
+
+1. <span data-ttu-id="68f7c-p113">**starter-project** フォルダー内の Xcode プロジェクト ワークスペース (**O365-iOS-Microsoft-Graph-SDK.xcworkspace**) を開き、**Authentication** フォルダーに移動して、ファイル **AuthenticationProvider.m** を開きます。そのクラスに次のコードを追加します。</span><span class="sxs-lookup"><span data-stu-id="68f7c-p113">Open the Xcode project workspace (**O365-iOS-Microsoft-Graph-SDK.xcworkspace**) in the **starter-project** folder, and navigate to the **Authentication** folder and open the file **AuthenticationProvider.m.** Add the following code to that class.</span></span>
+
+        -(void) connectToGraphWithClientId:(NSString *)clientId scopes:(NSArray *)scopes completion:(void (^)   (NSError *))completion{
+            [NXOAuth2AuthenticationProvider setClientId:kClientId
+                                              scopes:scopes];
+    
+    
+            /**
+            Obtains access token by performing login with UI, where viewController specifies the parent view controller.
+            @param viewController The view controller to present the UI on.
+             @param completionHandler The completion handler to be called when the authentication has completed.
+            error should be non nil if there was no error, and should contain any error(s) that occurred.
+             */
+
+                if ([[NXOAuth2AuthenticationProvider sharedAuthProvider] loginSilent]) {
+                completion(nil);
+                }
+                else {
+                    [[NXOAuth2AuthenticationProvider sharedAuthProvider] loginWithViewController:nil completion:^(NSError *error) {
+                    if (!error) {
+                    NSLog(@"Authentication successful.");
+                    completion(nil);
+                    }
+                 else {
+                     NSLog(@"Authentication failed - %@", error.localizedDescription);
+                    completion(error);
+                    }
+                }];
+            }
+    
+        }
+
+2. <span data-ttu-id="68f7c-p114">次にヘッダー ファイルにメソッドを追加します。ファイル **AuthenticationProvider.h** を開き、このクラスに次のコードを追加します。</span><span class="sxs-lookup"><span data-stu-id="68f7c-p114">Next add the method to the header file. Open the file **AuthenticationProvider.h** and add the following code to this class.</span></span>
+
+        -(void) connectToGraphWithClientId:(NSString *)clientId
+                            scopes:(NSArray *)scopes
+                        completion:(void (^)(NSError *error))completion;
+
+
+
+2. <span data-ttu-id="68f7c-p115">最後に、**ConnectViewController.m** からこのメソッドを呼び出します。このコントローラーはアプリが読み込む既定のビューであり、**[Connect]** という 1 つのボタンがあり、ユーザーがこれをタップすると認証プロセスが開始します。このメソッドには **Client ID** と **scopes** という 2 つのパラメーターを指定します。これらについては以下の部分で詳しく説明します。次の処理を **ConnectViewController.m** に追加します。</span><span class="sxs-lookup"><span data-stu-id="68f7c-p115">Finally we'll call this method from **ConnectViewController.m**. This controller is the default view that the app loads, and there is a single button named **Connect** that the user will tap that will initiate the authentication process. This method takes in two parameters, the **Client ID** and **scopes**, we'll discuss these in more detail below. Add the following action to **ConnectViewController.m**.</span></span>
+
+        - (IBAction)connectTapped:(id)sender {
+            [self showLoadingUI:YES];   
+            NSArray *scopes = [kScopes componentsSeparatedByString:@","];
+            [self.authProvider connectToGraphWithClientId:kClientId scopes:scopes completion:^(NSError *error) {
+                if (!error) {
+                    [self performSegueWithIdentifier:@"showSendMail" sender:nil];
+                    [self showLoadingUI:NO];
+                    NSLog(@"Authentication successful.");
+                    }
+                else{
+                    NSLog(NSLocalizedString(@"CHECK_LOG_ERROR", error.localizedDescription));
+                    [self showLoadingUI:NO];
+                    };
+                }];
+        }
+
+## <a name="send-an-email-with-microsoft-graph"></a><span data-ttu-id="68f7c-165">Microsoft Graph を使用して電子メールを送信する</span><span class="sxs-lookup"><span data-stu-id="68f7c-165">Send an email with Microsoft Graph</span></span>
+
+<span data-ttu-id="68f7c-p116">認証できるようにプロジェクトを構成したら、次のタスクは、Microsoft Graph API を使用してユーザーにメールを送信することです。既定では、ログインしているユーザーが受信者ですが、他の任意の受信者に変更することができます。ここで操作するコードは **Controllers** フォルダーと **SendMailViewController.m** クラスにあります。ここには、UI を表す他のコードや、Microsoft Graph サービスからユーザー プロファイル情報を取得するヘルパー メソッドも入っています。メール メッセージの作成とそのメッセージの送信を行うメソッドに焦点を当てます。</span><span class="sxs-lookup"><span data-stu-id="68f7c-p116">After configuring the project to be able to authenticate, the next tasks are sending a mail to a user using the Microsoft Graph API. By default the logged in user will be the recipient, but you have the ability to change it to any other recipient. The code we'll work with here is located in the **Controllers** folder and in the class **SendMailViewController.m.** You'll see that there is other code represented here for the UI, and a helper method to retrieve user profile information from the Microsoft Graph service. We'll concentrate on the methods for creating a mail message and sending that message.</span></span>
+
+1. <span data-ttu-id="68f7c-p117">Controllers フォルダー内の **SendMailViewController.m** を開いて、クラスに次のヘルパー メソッドを追加します。</span><span class="sxs-lookup"><span data-stu-id="68f7c-p117">Open **SendMailViewController.m.** in the Controllers folder and add the following helper method to the class:</span></span>
+
+        // Create a sample test message to send to specified user account
+        -(MSGraphMessage*) getSampleMessage{
+            MSGraphMessage *message = [[MSGraphMessage alloc]init];
+            MSGraphRecipient *toRecipient = [[MSGraphRecipient alloc]init];
+            MSGraphEmailAddress *email = [[MSGraphEmailAddress alloc]init];
+    
+            email.address = self.emailAddress;
+            toRecipient.emailAddress = email;
+    
+            NSMutableArray *toRecipients = [[NSMutableArray alloc]init];
+            [toRecipients addObject:toRecipient];
+    
+            message.subject = NSLocalizedString(@"MAIL_SUBJECT", comment: "");
+    
+            MSGraphItemBody *emailBody = [[MSGraphItemBody alloc]init];
+            NSString *htmlContentPath = [[NSBundle mainBundle] pathForResource:@"EmailBody" ofType:@"html"];
+            NSString *htmlContentString = [NSString stringWithContentsOfFile:htmlContentPath encoding:NSUTF8StringEncoding error:nil];
+    
+            emailBody.content = htmlContentString;
+            emailBody.contentType = [MSGraphBodyType html];
+            message.body = emailBody;
+    
+            message.toRecipients = toRecipients;
+    
+            return message;
+    
+        }
+
+
+2. <span data-ttu-id="68f7c-p118">**SendMailViewController.m** を開きます。次の送信メール メソッドをクラスに追加します。</span><span class="sxs-lookup"><span data-stu-id="68f7c-p118">Open **SendMailViewController.m.** Add the following send mail method to the class.</span></span>  
+
+        //Send mail to the specified user in the email text field
+        -(void) sendMail {   
+            MSGraphMessage *message = [self getSampleMessage];
+            MSGraphUserSendMailRequestBuilder *requestBuilder = [[self.graphClient me]sendMailWithMessage:message saveToSentItems:true];
+            NSLog(@"%@", requestBuilder);
+            MSGraphUserSendMailRequest *mailRequest = [requestBuilder request];
+            [mailRequest executeWithCompletion:^(NSDictionary *response, NSError *error) {
+                if(!error){
+                    NSLog(@"response %@", response);
+                    NSLog(NSLocalizedString(@"ERROR", ""), error.localizedDescription);
+            
+                    dispatch_async(dispatch_get_main_queue(), ^{
+                        self.statusTextView.text = NSLocalizedString(@"SEND_SUCCESS", comment: "");
+                });
+            }
+            else {
+                NSLog(NSLocalizedString(@"ERROR", ""), error.localizedDescription);
+                self.statusTextView.text = NSLocalizedString(@"SEND_FAILURE", comment: "");
+                }
+            }];
+    
+        }
+
+<span data-ttu-id="68f7c-p119">そうすると **getSampleMessage** はデモ目的に使用する HTML 形式のサンプル メールの下書きを作成します。すると、次のメソッド (**sendMail**) がそのメッセージを受け取り、それを送信するための要求を実行します。この場合も、既定の受信者はサインインしているユーザーです。</span><span class="sxs-lookup"><span data-stu-id="68f7c-p119">So **getSampleMessage** creates a draft HTML sample mail to use for demo purposes. The next method, **sendMail**, then takes that message and executes the request to send it. Again the default recipient is the signed-in user.</span></span>
+
+
+## <a name="run-the-app"></a><span data-ttu-id="68f7c-178">アプリの実行</span><span class="sxs-lookup"><span data-stu-id="68f7c-178">Run the app</span></span>
+1. <span data-ttu-id="68f7c-p120">サンプルを実行する前に、セクション「**アプリの登録**」で登録プロセスから受け取ったクライアント ID を指定する必要があります。**Application** フォルダー内の **AuthenticationConstants.m** を開きます。登録プロセスから受け取った ClientID をファイルの最上部に追加できることがわかります。</span><span class="sxs-lookup"><span data-stu-id="68f7c-p120">Before running the sample you'll need to supply the client ID you received from the registration process in the section **Register the app.** Open **AuthenticationConstants.m** under the **Application** folder. You'll see that the ClientID from the registration process can be added to the top of the file.:</span></span>  
+
+        // You will set your application's clientId
+        NSString * const kClientId    = @"ENTER_CLIENT_ID_HERE";
+        NSString * const kScopes = @"https://graph.microsoft.com/Mail.Send, https://graph.microsoft.com/User.Read, offline_access";
+<span data-ttu-id="68f7c-p121">注:次のアクセス許可の適用範囲がこのプロジェクトに対して構成されていることが分かります。: **"https://graph.microsoft.com/Mail.Send"、 "https://graph.microsoft.com/User.Read"、 "offline_access"**。このプロジェクトで使用されるサービス呼び出し、メール アカウントへのメールの送信、および一部のプロファイル情報 (表示名、メール アドレス) の取得では、アプリが適切に実行するためにこれらのアクセス許可が必要です。</span><span class="sxs-lookup"><span data-stu-id="68f7c-p121">Note: You'll notice that the following permission scopes have been configured for this project: **"https://graph.microsoft.com/Mail.Send", "https://graph.microsoft.com/User.Read", "offline_access"**. The service calls used in this project, sending a mail to your mail account and retrieving some profile information (Display Name, Email Address) require these permissions for the app to run properly.</span></span>
+
+2. <span data-ttu-id="68f7c-184">サンプルを実行し、**[Connect]**をタップして、個人用あるいは職場または学校アカウントでサインインし、要求されたアクセス許可を付与します。</span><span class="sxs-lookup"><span data-stu-id="68f7c-184">Run the sample, tap **Connect,** sign in with your personal or work or school account, and grant the requested permissions.</span></span>
+
+3. <span data-ttu-id="68f7c-p122">**[メールの送信]** ボタンを選びます。メールが送信されると、ボタンの下に成功メッセージが表示されます。</span><span class="sxs-lookup"><span data-stu-id="68f7c-p122">Choose the **Send email** button. When the mail is sent, a success message is displayed below the button.</span></span>
+
+## <a name="next-steps"></a><span data-ttu-id="68f7c-187">次の手順</span><span class="sxs-lookup"><span data-stu-id="68f7c-187">Next steps</span></span>
+- <span data-ttu-id="68f7c-188">[Graph エクスプローラー](https://developer.microsoft.com/graph/graph-explorer)を使用して REST API を試してみます。</span><span class="sxs-lookup"><span data-stu-id="68f7c-188">Try out the REST API using the [Graph explorer](https://developer.microsoft.com/graph/graph-explorer).</span></span>
+- <span data-ttu-id="68f7c-189">[Microsoft Graph iOS オブジェクティブ C スニペット サンプル](https://github.com/microsoftgraph/ios-objectiveC-snippets-sample)に、REST 操作と SDK 操作の両方に共通する操作の例があります。</span><span class="sxs-lookup"><span data-stu-id="68f7c-189">Find examples of common operations for both REST and SDK operations in the [Microsoft Graph iOS Objective C Snippets Sample](https://github.com/microsoftgraph/ios-objectiveC-snippets-sample).</span></span>
+
+## <a name="see-also"></a><span data-ttu-id="68f7c-190">関連項目</span><span class="sxs-lookup"><span data-stu-id="68f7c-190">See also</span></span>
+- [<span data-ttu-id="68f7c-191">iOS 用 Microsoft Graph SDK</span><span class="sxs-lookup"><span data-stu-id="68f7c-191">Microsoft Graph SDK for iOS</span></span>](https://github.com/microsoftgraph/msgraph-sdk-ios)
+- [<span data-ttu-id="68f7c-192">Azure AD v2.0 のプロトコル</span><span class="sxs-lookup"><span data-stu-id="68f7c-192">Azure AD v2.0 protocols</span></span>](https://azure.microsoft.com/en-us/documentation/articles/active-directory-v2-protocols/)
+- [<span data-ttu-id="68f7c-193">Azure AD v2.0 のトークン</span><span class="sxs-lookup"><span data-stu-id="68f7c-193">Azure AD v2.0 tokens</span></span>](https://azure.microsoft.com/en-us/documentation/articles/active-directory-v2-tokens/)

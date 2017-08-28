@@ -1,15 +1,37 @@
-<span data-ttu-id="7199b-p101">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="7199b-p101">Bearer {token}. Required.</span></span>  | ベアラー {トークン}。必須。 |
-| <span data-ttu-id="7199b-114">Content-Type</span><span class="sxs-lookup"><span data-stu-id="7199b-114">Content-Type</span></span>  | <span data-ttu-id="7199b-115">application/json</span><span class="sxs-lookup"><span data-stu-id="7199b-115">application/json</span></span>  |
+# <a name="add-directory-role-member"></a><span data-ttu-id="919f9-101">ディレクトリ ロールのメンバーを追加する</span><span class="sxs-lookup"><span data-stu-id="919f9-101">Add directory role member</span></span>
 
-## <a name="request-body"></a><span data-ttu-id="7199b-116">要求本文</span><span class="sxs-lookup"><span data-stu-id="7199b-116">Request body</span></span>
-<span data-ttu-id="7199b-117">要求本文で、追加する [directoryObject](../resources/directoryobject.md) または[ユーザー](../resources/user.md) オブジェクトの JSON 表記を指定します。</span><span class="sxs-lookup"><span data-stu-id="7199b-117">In the request body, supply a JSON representation of a [directoryObject](../resources/directoryobject.md) or [user](../resources/user.md) object to be added.</span></span>
+<span data-ttu-id="919f9-102">この API を使用して、新しいディレクトリ ロールのメンバーを作成します。</span><span class="sxs-lookup"><span data-stu-id="919f9-102">Use this API to create a new directory role member.</span></span>
 
-## <a name="response"></a><span data-ttu-id="7199b-118">応答</span><span class="sxs-lookup"><span data-stu-id="7199b-118">Response</span></span>
+## <a name="permissions"></a><span data-ttu-id="919f9-103">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="919f9-103">Permissions</span></span>
+<span data-ttu-id="919f9-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](../../../concepts/permissions_reference.md)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="919f9-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).</span></span>
 
-<span data-ttu-id="7199b-119">成功した場合、このメソッドは `204, No Content` 応答コードを返します。</span><span class="sxs-lookup"><span data-stu-id="7199b-119">If successful, this method returns `204, No Content` response code.</span></span>
+|<span data-ttu-id="919f9-106">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="919f9-106">Permission type</span></span>      | <span data-ttu-id="919f9-107">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="919f9-107">Permissions (from least to most privileged)</span></span>              |
+|:--------------------|:---------------------------------------------------------|
+|<span data-ttu-id="919f9-108">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="919f9-108">Delegated (work or school account)</span></span> | <span data-ttu-id="919f9-109">Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="919f9-109">Directory.AccessAsUser.All</span></span>    |
+|<span data-ttu-id="919f9-110">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="919f9-110">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="919f9-111">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="919f9-111">Not supported.</span></span>    |
+|<span data-ttu-id="919f9-112">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="919f9-112">Application</span></span> | <span data-ttu-id="919f9-113">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="919f9-113">Not supported.</span></span> |
 
-## <a name="example"></a><span data-ttu-id="7199b-120">例</span><span class="sxs-lookup"><span data-stu-id="7199b-120">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="7199b-121">要求</span><span class="sxs-lookup"><span data-stu-id="7199b-121">Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="919f9-114">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="919f9-114">HTTP request</span></span>
+<!-- { "blockType": "ignored" } -->
+```http
+POST /directoryRoles/{id}/members/$ref
+
+```
+## <a name="request-headers"></a><span data-ttu-id="919f9-115">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="919f9-115">Request headers</span></span>
+| <span data-ttu-id="919f9-116">名前</span><span class="sxs-lookup"><span data-stu-id="919f9-116">Name</span></span>       | <span data-ttu-id="919f9-117">型</span><span class="sxs-lookup"><span data-stu-id="919f9-117">Type</span></span> | <span data-ttu-id="919f9-118">説明</span><span class="sxs-lookup"><span data-stu-id="919f9-118">Description</span></span>|
+|:---------------|:--------|:----------|
+| <span data-ttu-id="919f9-119">Authorization</span><span class="sxs-lookup"><span data-stu-id="919f9-119">Authorization</span></span>  | <span data-ttu-id="919f9-120">string</span><span class="sxs-lookup"><span data-stu-id="919f9-120">string</span></span>  | <span data-ttu-id="919f9-p102">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="919f9-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="919f9-123">Content-Type</span><span class="sxs-lookup"><span data-stu-id="919f9-123">Content-Type</span></span>  | <span data-ttu-id="919f9-124">application/json</span><span class="sxs-lookup"><span data-stu-id="919f9-124">application/json</span></span>  |
+
+## <a name="request-body"></a><span data-ttu-id="919f9-125">要求本文</span><span class="sxs-lookup"><span data-stu-id="919f9-125">Request body</span></span>
+<span data-ttu-id="919f9-126">要求本文で、追加する [directoryObject](../resources/directoryobject.md) または[ユーザー](../resources/user.md) オブジェクトの JSON 表記を指定します。</span><span class="sxs-lookup"><span data-stu-id="919f9-126">In the request body, supply a JSON representation of a [directoryObject](../resources/directoryobject.md) or [user](../resources/user.md) object to be added.</span></span>
+
+## <a name="response"></a><span data-ttu-id="919f9-127">応答</span><span class="sxs-lookup"><span data-stu-id="919f9-127">Response</span></span>
+
+<span data-ttu-id="919f9-128">成功した場合、このメソッドは `204, No Content` 応答コードを返します。</span><span class="sxs-lookup"><span data-stu-id="919f9-128">If successful, this method returns `204, No Content` response code.</span></span>
+
+## <a name="example"></a><span data-ttu-id="919f9-129">例</span><span class="sxs-lookup"><span data-stu-id="919f9-129">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="919f9-130">要求</span><span class="sxs-lookup"><span data-stu-id="919f9-130">Request</span></span>
 
 <!-- {
   "blockType": "request",
@@ -24,8 +46,8 @@ Content-type: application/json
 }
 ```
 
-##### <a name="response"></a><span data-ttu-id="7199b-122">応答</span><span class="sxs-lookup"><span data-stu-id="7199b-122">Response</span></span>
-<span data-ttu-id="7199b-123">注: 簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。</span><span class="sxs-lookup"><span data-stu-id="7199b-123">Note: The response object shown here may be truncated for brevity.</span></span> 
+##### <a name="response"></a><span data-ttu-id="919f9-131">応答</span><span class="sxs-lookup"><span data-stu-id="919f9-131">Response</span></span>
+<span data-ttu-id="919f9-132">注: 簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。</span><span class="sxs-lookup"><span data-stu-id="919f9-132">Note: The response object shown here may be truncated for brevity.</span></span> 
 <!-- {
   "blockType": "response",
   "truncated": true,

@@ -1,67 +1,66 @@
-# <a name="post-resource-type"></a>post リソース タイプ
-[conversationThread](conversationthread.md) エンティティ内の個々の投稿アイテムを表します。
+# <a name="post-resource-type"></a><span data-ttu-id="c53df-101">post リソース タイプ</span><span class="sxs-lookup"><span data-stu-id="c53df-101">post resource type</span></span>
+<span data-ttu-id="c53df-102">[conversationThread](conversationthread.md) エンティティ内の個々の投稿アイテムを表します。</span><span class="sxs-lookup"><span data-stu-id="c53df-102">Represents an individual Post item within a [conversationThread](conversationthread.md) entity.</span></span>
 
-投稿を明示的に作成できなくても、次のいずれかの方法で投稿を作成できます。
+<span data-ttu-id="c53df-103">投稿を明示的に作成できなくても、次のいずれかの方法で投稿を作成できます。</span><span class="sxs-lookup"><span data-stu-id="c53df-103">Even though you cannot explicitly create a post, doing any of the following would create a post:</span></span>
 
-- [既存の投稿に返信する](../api/post_reply.md) 
-- [既存のスレッドに返信する](../api/conversationthread_reply.md) 
-- [新しい会話にスレッドを作成する](../api/group_post_threads.md)
-- [新しい会話を作成する](../api/group_post_conversations.md)
+- [<span data-ttu-id="c53df-104">既存の投稿に返信する</span><span class="sxs-lookup"><span data-stu-id="c53df-104">Reply to an existing post</span></span>](../api/post_reply.md) 
+- [<span data-ttu-id="c53df-105">既存のスレッドに返信する</span><span class="sxs-lookup"><span data-stu-id="c53df-105">Reply to an existing thread</span></span>](../api/conversationthread_reply.md) 
+- [<span data-ttu-id="c53df-106">新しい会話にスレッドを作成する</span><span class="sxs-lookup"><span data-stu-id="c53df-106">Create a thread in a new conversation</span></span>](../api/group_post_threads.md)
+- [<span data-ttu-id="c53df-107">新しい会話を作成する</span><span class="sxs-lookup"><span data-stu-id="c53df-107">Create a new conversation</span></span>](../api/group_post_conversations.md)
 
-このリソースでは、[拡張機能](../../../concepts/extensibility_overview.md)を使用してカスタム プロパティに独自のデータを追加することができます。
+<span data-ttu-id="c53df-108">このリソースでは、[拡張機能](../../../concepts/extensibility_overview.md)を使用してカスタム プロパティに独自のデータを追加することができます。</span><span class="sxs-lookup"><span data-stu-id="c53df-108">This resource lets you add your own data to custom properties using [extensions](../../../concepts/extensibility_overview.md).</span></span>
 
-## <a name="methods"></a>メソッド
+## <a name="methods"></a><span data-ttu-id="c53df-109">メソッド</span><span class="sxs-lookup"><span data-stu-id="c53df-109">Methods</span></span>
 
-| メソッド       | 戻り値の型  |説明|
+| <span data-ttu-id="c53df-110">メソッド</span><span class="sxs-lookup"><span data-stu-id="c53df-110">Method</span></span>       | <span data-ttu-id="c53df-111">戻り値の型</span><span class="sxs-lookup"><span data-stu-id="c53df-111">Return Type</span></span>  |<span data-ttu-id="c53df-112">説明</span><span class="sxs-lookup"><span data-stu-id="c53df-112">Description</span></span>|
 |:---------------|:--------|:----------|
-|[List posts](../api/conversationthread_list_posts.md) | [post](post.md) |指定したスレッドの投稿を取得します。 |
-|[Get post](../api/post_get.md) | [post](post.md) |指定したスレッド内の投稿のプロパティと関係を取得します。|
-|[Reply](../api/post_reply.md)|なし|グループ会話の投稿に返信して、指定されたスレッドに新しい投稿を追加します。|
-|[Forward](../api/post_forward.md)|なし|受信者に投稿を転送します。|
-|**添付ファイル**| | |
-|[添付ファイルを一覧表示する](../api/post_list_attachments.md) |[attachment](attachment.md) コレクション| 投稿のすべての添付ファイルを取得します。|
-|[添付ファイルを追加する](../api/post_post_attachments.md) |[attachment](attachment.md)| 投稿に添付ファイルを追加します。 |
-|**オープン拡張機能**| | |
-|[オープン拡張機能を作成する](../api/opentypeextension_post_opentypeextension.md) |[openTypeExtension](opentypeextension.md)| オープン拡張機能を作成し、リソースの新規または既存のインスタンスのカスタム プロパティを追加します。|
-|[オープン拡張機能を取得する](../api/opentypeextension_get.md) |[openTypeExtension](opentypeextension.md) コレクション| 名前や完全修飾名によって識別されたオープン拡張機能オブジェクトを取得します。|
-|**スキーマ拡張機能**| | |
-|[スキーマ拡張機能の値を追加する](../../../concepts/extensibility_schema_groups.md) || スキーマ拡張機能の定義を作成し、それを使用してカスタマイズされた種類のデータをリソースに追加します。|
-|**拡張プロパティ**| | |
-|[単一値の拡張プロパティを作成する](../api/singlevaluelegacyextendedproperty_post_singlevalueextendedproperties.md) |[post](post.md)  |新規または既存の投稿に、ひとつまたは複数の単一値の拡張プロパティを作成します。   |
-|[Get post with single-value extended property](../api/singlevaluelegacyextendedproperty_get.md)  | [post](post.md) | `$expand` または `$filter` を使用して、単一値の拡張プロパティを含む投稿を取得します。 |
-|[複数値の拡張プロパティを作成する](../api/multivaluelegacyextendedproperty_post_multivalueextendedproperties.md) | [post](post.md) | 新規または既存の投稿に、ひとつまたは複数の複数値の拡張プロパティを作成します。  |
-|[Get post with multi-value extended property](../api/multivaluelegacyextendedproperty_get.md)  | [post](post.md) | `$expand` を使用して、複数値の拡張プロパティを含む投稿を取得します。 |
+|[<span data-ttu-id="c53df-113">List posts</span><span class="sxs-lookup"><span data-stu-id="c53df-113">List posts</span></span>](../api/conversationthread_list_posts.md) | [<span data-ttu-id="c53df-114">post</span><span class="sxs-lookup"><span data-stu-id="c53df-114">post</span></span>](post.md) |<span data-ttu-id="c53df-115">指定したスレッドの投稿を取得します。</span><span class="sxs-lookup"><span data-stu-id="c53df-115">Get the posts of the specified thread.</span></span> |
+|[<span data-ttu-id="c53df-116">Get post</span><span class="sxs-lookup"><span data-stu-id="c53df-116">Get post</span></span>](../api/post_get.md) | [<span data-ttu-id="c53df-117">post</span><span class="sxs-lookup"><span data-stu-id="c53df-117">post</span></span>](post.md) |<span data-ttu-id="c53df-118">指定したスレッド内の投稿のプロパティと関係を取得します。</span><span class="sxs-lookup"><span data-stu-id="c53df-118">Get the properties and relationships of a post in a specified thread.</span></span>|
+|[<span data-ttu-id="c53df-119">Reply</span><span class="sxs-lookup"><span data-stu-id="c53df-119">Reply</span></span>](../api/post_reply.md)|<span data-ttu-id="c53df-120">なし</span><span class="sxs-lookup"><span data-stu-id="c53df-120">None</span></span>|<span data-ttu-id="c53df-121">グループ会話の投稿に返信して、指定されたスレッドに新しい投稿を追加します。</span><span class="sxs-lookup"><span data-stu-id="c53df-121">Reply to a post and add a new post to the specified thread in a group conversation.</span></span>|
+|[<span data-ttu-id="c53df-122">Forward</span><span class="sxs-lookup"><span data-stu-id="c53df-122">Forward</span></span>](../api/post_forward.md)|<span data-ttu-id="c53df-123">なし</span><span class="sxs-lookup"><span data-stu-id="c53df-123">None</span></span>|<span data-ttu-id="c53df-124">受信者に投稿を転送します。</span><span class="sxs-lookup"><span data-stu-id="c53df-124">Forward a post to a recipient.</span></span>|
+|<span data-ttu-id="c53df-125">**添付ファイル**</span><span class="sxs-lookup"><span data-stu-id="c53df-125">**Attachments**</span></span>| | |
+|[<span data-ttu-id="c53df-126">添付ファイルを一覧表示する</span><span class="sxs-lookup"><span data-stu-id="c53df-126">List attachments</span></span>](../api/post_list_attachments.md) |<span data-ttu-id="c53df-127">[attachment](attachment.md) コレクション</span><span class="sxs-lookup"><span data-stu-id="c53df-127">[attachment](attachment.md) collection</span></span>| <span data-ttu-id="c53df-128">投稿のすべての添付ファイルを取得します。</span><span class="sxs-lookup"><span data-stu-id="c53df-128">Get all attachments on a post.</span></span>|
+|[<span data-ttu-id="c53df-129">添付ファイルを追加する</span><span class="sxs-lookup"><span data-stu-id="c53df-129">Add attachment</span></span>](../api/post_post_attachments.md) |[<span data-ttu-id="c53df-130">attachment</span><span class="sxs-lookup"><span data-stu-id="c53df-130">attachment</span></span>](attachment.md)| <span data-ttu-id="c53df-131">投稿に添付ファイルを追加します。</span><span class="sxs-lookup"><span data-stu-id="c53df-131">Add an attachment to a post.</span></span> |
+|<span data-ttu-id="c53df-132">**オープン拡張機能**</span><span class="sxs-lookup"><span data-stu-id="c53df-132">**Open extensions**</span></span>| | |
+|[<span data-ttu-id="c53df-133">オープン拡張機能を作成する</span><span class="sxs-lookup"><span data-stu-id="c53df-133">Create open extension</span></span>](../api/opentypeextension_post_opentypeextension.md) |[<span data-ttu-id="c53df-134">openTypeExtension</span><span class="sxs-lookup"><span data-stu-id="c53df-134">openTypeExtension</span></span>](opentypeextension.md)| <span data-ttu-id="c53df-135">オープン拡張機能を作成し、リソースの新規または既存のインスタンスのカスタム プロパティを追加します。</span><span class="sxs-lookup"><span data-stu-id="c53df-135">Create an open extension and add custom properties in a new or existing instance of a resource.</span></span>|
+|[<span data-ttu-id="c53df-136">オープン拡張機能を取得する</span><span class="sxs-lookup"><span data-stu-id="c53df-136">Get open extension</span></span>](../api/opentypeextension_get.md) |<span data-ttu-id="c53df-137">[openTypeExtension](opentypeextension.md) コレクション</span><span class="sxs-lookup"><span data-stu-id="c53df-137">[openTypeExtension](opentypeextension.md) collection</span></span>| <span data-ttu-id="c53df-138">名前や完全修飾名によって識別されたオープン拡張機能オブジェクトを取得します。</span><span class="sxs-lookup"><span data-stu-id="c53df-138">Get an open extension object or objects identified by name or fully qualified name.</span></span>|
+|<span data-ttu-id="c53df-139">**スキーマ拡張機能**</span><span class="sxs-lookup"><span data-stu-id="c53df-139">**Schema extensions**</span></span>| | |
+|[<span data-ttu-id="c53df-140">スキーマ拡張機能の値を追加する</span><span class="sxs-lookup"><span data-stu-id="c53df-140">Add schema extension values</span></span>](../../../concepts/extensibility_schema_groups.md) || <span data-ttu-id="c53df-141">スキーマ拡張機能の定義を作成し、それを使用してカスタマイズされた種類のデータをリソースに追加します。</span><span class="sxs-lookup"><span data-stu-id="c53df-141">Create a schema extension definition and then use it to add custom typed data to a resource.</span></span>|
+|<span data-ttu-id="c53df-142">**拡張プロパティ**</span><span class="sxs-lookup"><span data-stu-id="c53df-142">**Extended properties**</span></span>| | |
+|[<span data-ttu-id="c53df-143">単一値の拡張プロパティを作成する</span><span class="sxs-lookup"><span data-stu-id="c53df-143">Create single-value extended property</span></span>](../api/singlevaluelegacyextendedproperty_post_singlevalueextendedproperties.md) |[<span data-ttu-id="c53df-144">post</span><span class="sxs-lookup"><span data-stu-id="c53df-144">post</span></span>](post.md)  |<span data-ttu-id="c53df-145">新規または既存の投稿に、ひとつまたは複数の単一値の拡張プロパティを作成します。</span><span class="sxs-lookup"><span data-stu-id="c53df-145">Create one or more single-value extended properties in a new or existing post.</span></span>   |
+|[<span data-ttu-id="c53df-146">Get post with single-value extended property</span><span class="sxs-lookup"><span data-stu-id="c53df-146">Get post with single-value extended property</span></span>](../api/singlevaluelegacyextendedproperty_get.md)  | [<span data-ttu-id="c53df-147">post</span><span class="sxs-lookup"><span data-stu-id="c53df-147">post</span></span>](post.md) | <span data-ttu-id="c53df-148">`$expand` または `$filter` を使用して、単一値の拡張プロパティを含む投稿を取得します。</span><span class="sxs-lookup"><span data-stu-id="c53df-148">Get posts that contain a single-value extended property by using `$expand` or `$filter`.</span></span> |
+|[<span data-ttu-id="c53df-149">複数値の拡張プロパティを作成する</span><span class="sxs-lookup"><span data-stu-id="c53df-149">Create multi-value extended property</span></span>](../api/multivaluelegacyextendedproperty_post_multivalueextendedproperties.md) | [<span data-ttu-id="c53df-150">post</span><span class="sxs-lookup"><span data-stu-id="c53df-150">post</span></span>](post.md) | <span data-ttu-id="c53df-151">新規または既存の投稿に、ひとつまたは複数の複数値の拡張プロパティを作成します。</span><span class="sxs-lookup"><span data-stu-id="c53df-151">Create one or more multi-value extended properties in a new or existing post.</span></span>  |
+|[<span data-ttu-id="c53df-152">Get post with multi-value extended property</span><span class="sxs-lookup"><span data-stu-id="c53df-152">Get post with multi-value extended property</span></span>](../api/multivaluelegacyextendedproperty_get.md)  | [<span data-ttu-id="c53df-153">post</span><span class="sxs-lookup"><span data-stu-id="c53df-153">post</span></span>](post.md) | <span data-ttu-id="c53df-154">`$expand` を使用して、複数値の拡張プロパティを含む投稿を取得します。</span><span class="sxs-lookup"><span data-stu-id="c53df-154">Get a post that contains a multi-value extended property by using `$expand`.</span></span> |
 
-## <a name="properties"></a>プロパティ
-| プロパティ       | 型    |説明|
+## <a name="properties"></a><span data-ttu-id="c53df-155">プロパティ</span><span class="sxs-lookup"><span data-stu-id="c53df-155">Properties</span></span>
+| <span data-ttu-id="c53df-156">プロパティ</span><span class="sxs-lookup"><span data-stu-id="c53df-156">Property</span></span>     | <span data-ttu-id="c53df-157">型</span><span class="sxs-lookup"><span data-stu-id="c53df-157">Type</span></span>   |<span data-ttu-id="c53df-158">説明</span><span class="sxs-lookup"><span data-stu-id="c53df-158">Description</span></span>|
 |:---------------|:--------|:----------|
-|body|[itemBody](itembody.md)|投稿の内容です。これが既定のプロパティです。このプロパティを null にすることができます。|
-|categories|String collection|投稿に関連付けられたカテゴリ。|
-|changeKey|String|投稿のバージョンを識別します。投稿を変更するたびに ChangeKey も変更されます。これにより、Exchange は正しいバージョンのオブジェクトに変更を適用できます。|
-|conversationId|String|会話の固有 ID です。読み取り専用。|
-|conversationThreadId|String|会話スレッドの固有 ID です。読み取り専用。|
-|createdDateTime|DateTimeOffset|投稿の作成時刻を示します。DateTimeOffset 型は、ISO 8601 形式を使用して日付と時刻の情報を表し、常に UTC 時間です。たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、次のようになります。`'2014-01-01T00:00:00Z'`|
-|from|[recipient](recipient.md)|代理人アクセスのシナリオで使用されます。他のユーザーの代わりにメッセージを投稿したユーザーを示します。これが既定のプロパティです。|
-|hasAttachments|Boolean|投稿の添付ファイルが 1 つ以上あるかどうかを示します。これが既定のプロパティです。|
-|id|String| 読み取り専用。|
-|lastModifiedDateTime|DateTimeOffset|投稿が最後に修正された日時を指定します。DateTimeOffset 型は、ISO 8601 形式を使用して日付と時刻の情報を表し、常に UTC 時間です。たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、次のようになります。`'2014-01-01T00:00:00Z'`|
-|newParticipants|[recipient](recipient.md) collection|この投稿の一部としてスレッドに追加された会話の参加者です。|
-|receivedDateTime|DateTimeOffset|投稿の受信時刻を示します。DateTimeOffset 型は、ISO 8601 形式を使用して日付と時刻の情報を表し、常に UTC 時間です。たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、次のようになります。`'2014-01-01T00:00:00Z'`|
-|sender|[recipient](recipient.md)|送信者のアドレスが含まれます。送信者が指定されていない場合、送信者の値は認証済みユーザーのアドレスと見なされます。これが既定のプロパティです。|
+|<span data-ttu-id="c53df-159">body</span><span class="sxs-lookup"><span data-stu-id="c53df-159">body</span></span>|[<span data-ttu-id="c53df-160">itemBody</span><span class="sxs-lookup"><span data-stu-id="c53df-160">itemBody</span></span>](itembody.md)|<span data-ttu-id="c53df-p101">投稿の内容です。これが既定のプロパティです。このプロパティを null にすることができます。</span><span class="sxs-lookup"><span data-stu-id="c53df-p101">The contents of the post. This is a default property. This property can be null.</span></span>|
+|<span data-ttu-id="c53df-164">categories</span><span class="sxs-lookup"><span data-stu-id="c53df-164">categories</span></span>|<span data-ttu-id="c53df-165">String collection</span><span class="sxs-lookup"><span data-stu-id="c53df-165">String collection</span></span>|<span data-ttu-id="c53df-166">投稿に関連付けられたカテゴリ。</span><span class="sxs-lookup"><span data-stu-id="c53df-166">The categories associated with the post.</span></span>|
+|<span data-ttu-id="c53df-167">changeKey</span><span class="sxs-lookup"><span data-stu-id="c53df-167">changeKey</span></span>|<span data-ttu-id="c53df-168">String</span><span class="sxs-lookup"><span data-stu-id="c53df-168">String</span></span>|<span data-ttu-id="c53df-p102">投稿のバージョンを識別します。投稿を変更するたびに ChangeKey も変更されます。これにより、Exchange は正しいバージョンのオブジェクトに変更を適用できます。</span><span class="sxs-lookup"><span data-stu-id="c53df-p102">Identifies the version of the post. Every time the post is changed, ChangeKey changes as well. This allows Exchange to apply changes to the correct version of the object.</span></span>|
+|<span data-ttu-id="c53df-172">conversationId</span><span class="sxs-lookup"><span data-stu-id="c53df-172">conversationId</span></span>|<span data-ttu-id="c53df-173">String</span><span class="sxs-lookup"><span data-stu-id="c53df-173">String</span></span>|<span data-ttu-id="c53df-p103">会話の固有 ID です。読み取り専用。</span><span class="sxs-lookup"><span data-stu-id="c53df-p103">Unique ID of the conversation. Read-only.</span></span>|
+|<span data-ttu-id="c53df-176">conversationThreadId</span><span class="sxs-lookup"><span data-stu-id="c53df-176">conversationThreadId</span></span>|<span data-ttu-id="c53df-177">String</span><span class="sxs-lookup"><span data-stu-id="c53df-177">String</span></span>|<span data-ttu-id="c53df-p104">会話スレッドの固有 ID です。読み取り専用。</span><span class="sxs-lookup"><span data-stu-id="c53df-p104">Unique ID of the conversation thread. Read-only.</span></span>|
+|<span data-ttu-id="c53df-180">createdDateTime</span><span class="sxs-lookup"><span data-stu-id="c53df-180">createdDateTime</span></span>|<span data-ttu-id="c53df-181">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="c53df-181">DateTimeOffset</span></span>|<span data-ttu-id="c53df-p105">投稿の作成時刻を示します。DateTimeOffset 型は、ISO 8601 形式を使用して日付と時刻の情報を表し、常に UTC 時間です。たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、次のようになります。`'2014-01-01T00:00:00Z'`</span><span class="sxs-lookup"><span data-stu-id="c53df-p105">Specifies when the post was created. The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`</span></span>|
+|<span data-ttu-id="c53df-185">from</span><span class="sxs-lookup"><span data-stu-id="c53df-185">from</span></span>|[<span data-ttu-id="c53df-186">recipient</span><span class="sxs-lookup"><span data-stu-id="c53df-186">recipient</span></span>](recipient.md)|<span data-ttu-id="c53df-p106">代理人アクセスのシナリオで使用されます。他のユーザーの代わりにメッセージを投稿したユーザーを示します。これが既定のプロパティです。</span><span class="sxs-lookup"><span data-stu-id="c53df-p106">Used in delegate access scenarios. Indicates who posted the message on behalf of another user. This is a default property.</span></span>|
+|<span data-ttu-id="c53df-190">hasAttachments</span><span class="sxs-lookup"><span data-stu-id="c53df-190">hasAttachments</span></span>|<span data-ttu-id="c53df-191">Boolean</span><span class="sxs-lookup"><span data-stu-id="c53df-191">Boolean</span></span>|<span data-ttu-id="c53df-p107">投稿の添付ファイルが 1 つ以上あるかどうかを示します。これが既定のプロパティです。</span><span class="sxs-lookup"><span data-stu-id="c53df-p107">Indicates whether the post has at least one attachment. This is a default property.</span></span>|
+|<span data-ttu-id="c53df-194">id</span><span class="sxs-lookup"><span data-stu-id="c53df-194">id</span></span>|<span data-ttu-id="c53df-195">String</span><span class="sxs-lookup"><span data-stu-id="c53df-195">String</span></span>| <span data-ttu-id="c53df-196">読み取り専用。</span><span class="sxs-lookup"><span data-stu-id="c53df-196">Read-only.</span></span>|
+|<span data-ttu-id="c53df-197">lastModifiedDateTime</span><span class="sxs-lookup"><span data-stu-id="c53df-197">lastModifiedDateTime</span></span>|<span data-ttu-id="c53df-198">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="c53df-198">DateTimeOffset</span></span>|<span data-ttu-id="c53df-p108">投稿が最後に修正された日時を指定します。DateTimeOffset 型は、ISO 8601 形式を使用して日付と時刻の情報を表し、常に UTC 時間です。たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、次のようになります。`'2014-01-01T00:00:00Z'`</span><span class="sxs-lookup"><span data-stu-id="c53df-p108">Specifies when the post was last modified. The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`</span></span>|
+|<span data-ttu-id="c53df-202">newParticipants</span><span class="sxs-lookup"><span data-stu-id="c53df-202">newParticipants</span></span>|<span data-ttu-id="c53df-203">[recipient](recipient.md) collection</span><span class="sxs-lookup"><span data-stu-id="c53df-203">[recipient](recipient.md) collection</span></span>|<span data-ttu-id="c53df-204">この投稿の一部としてスレッドに追加された会話の参加者です。</span><span class="sxs-lookup"><span data-stu-id="c53df-204">Conversation participants that were added to the thread as part of this post.</span></span>|
+|<span data-ttu-id="c53df-205">receivedDateTime</span><span class="sxs-lookup"><span data-stu-id="c53df-205">receivedDateTime</span></span>|<span data-ttu-id="c53df-206">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="c53df-206">DateTimeOffset</span></span>|<span data-ttu-id="c53df-p109">投稿の受信時刻を示します。DateTimeOffset 型は、ISO 8601 形式を使用して日付と時刻の情報を表し、常に UTC 時間です。たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、次のようになります。`'2014-01-01T00:00:00Z'`</span><span class="sxs-lookup"><span data-stu-id="c53df-p109">Specifies when the post was received. The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`</span></span>|
+|<span data-ttu-id="c53df-210">sender</span><span class="sxs-lookup"><span data-stu-id="c53df-210">sender</span></span>|[<span data-ttu-id="c53df-211">recipient</span><span class="sxs-lookup"><span data-stu-id="c53df-211">recipient</span></span>](recipient.md)|<span data-ttu-id="c53df-p110">送信者のアドレスが含まれます。送信者が指定されていない場合、送信者の値は認証済みユーザーのアドレスと見なされます。これが既定のプロパティです。</span><span class="sxs-lookup"><span data-stu-id="c53df-p110">Contains the address of the sender. The value of Sender is assumed to be the address of the authenticated user in the case when Sender is not specified. This is a default property.</span></span>|
 
-## <a name="relationships"></a>リレーションシップ
-| リレーションシップ | 型    |説明|
+## <a name="relationships"></a><span data-ttu-id="c53df-215">リレーションシップ</span><span class="sxs-lookup"><span data-stu-id="c53df-215">Relationships</span></span>
+| <span data-ttu-id="c53df-216">リレーションシップ</span><span class="sxs-lookup"><span data-stu-id="c53df-216">Relationship</span></span> | <span data-ttu-id="c53df-217">型</span><span class="sxs-lookup"><span data-stu-id="c53df-217">Type</span></span>   |<span data-ttu-id="c53df-218">説明</span><span class="sxs-lookup"><span data-stu-id="c53df-218">Description</span></span>|
 |:---------------|:--------|:----------|
-|attachments|[Attachment](attachment.md) コレクション| 読み取り専用。Null 許容型。|
-|extensions|[Extension](extension.md) コレクション|投稿に対して定義されているオープン拡張機能のコレクション。読み取り専用。Null 許容型。|
-|inReplyTo|[post](post.md)| 読み取り専用。|
-|multiValueExtendedProperties|[multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md) collection| その投稿用に定義された、複数値拡張プロパティのコレクションです。読み取り専用。Null 許容型。|
-|singleValueExtendedProperties|[singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md) collection| その投稿用に定義された、単一値拡張プロパティのコレクションです。読み取り専用。Null 許容型。|
+|<span data-ttu-id="c53df-219">attachments</span><span class="sxs-lookup"><span data-stu-id="c53df-219">attachments</span></span>|<span data-ttu-id="c53df-220">[Attachment](attachment.md) コレクション</span><span class="sxs-lookup"><span data-stu-id="c53df-220">[Attachment](attachment.md) collection</span></span>| <span data-ttu-id="c53df-p111">読み取り専用。Null 許容型。</span><span class="sxs-lookup"><span data-stu-id="c53df-p111">Read-only. Nullable.</span></span>|
+|<span data-ttu-id="c53df-223">extensions</span><span class="sxs-lookup"><span data-stu-id="c53df-223">extensions</span></span>|<span data-ttu-id="c53df-224">[Extension](extension.md) コレクション</span><span class="sxs-lookup"><span data-stu-id="c53df-224">[Extension](extension.md) collection</span></span>|<span data-ttu-id="c53df-p112">投稿に対して定義されているオープン拡張機能のコレクション。読み取り専用。Null 許容型。</span><span class="sxs-lookup"><span data-stu-id="c53df-p112">The collection of open extensions defined for the post. Read-only. Nullable.</span></span>|
+|<span data-ttu-id="c53df-228">inReplyTo</span><span class="sxs-lookup"><span data-stu-id="c53df-228">inReplyTo</span></span>|[<span data-ttu-id="c53df-229">post</span><span class="sxs-lookup"><span data-stu-id="c53df-229">post</span></span>](post.md)| <span data-ttu-id="c53df-230">読み取り専用。</span><span class="sxs-lookup"><span data-stu-id="c53df-230">Read-only.</span></span>|
+|<span data-ttu-id="c53df-231">multiValueExtendedProperties</span><span class="sxs-lookup"><span data-stu-id="c53df-231">multiValueExtendedProperties</span></span>|<span data-ttu-id="c53df-232">[multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md) コレクション</span><span class="sxs-lookup"><span data-stu-id="c53df-232">[multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md) collection</span></span>| <span data-ttu-id="c53df-p113">その投稿用に定義された、複数値拡張プロパティのコレクションです。読み取り専用。Null 許容型。</span><span class="sxs-lookup"><span data-stu-id="c53df-p113">The collection of multi-value extended properties defined for the post. Read-only. Nullable.</span></span>|
+|<span data-ttu-id="c53df-236">singleValueExtendedProperties</span><span class="sxs-lookup"><span data-stu-id="c53df-236">singleValueExtendedProperties</span></span>|<span data-ttu-id="c53df-237">[singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md) コレクション</span><span class="sxs-lookup"><span data-stu-id="c53df-237">[singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md) collection</span></span>| <span data-ttu-id="c53df-p114">その投稿用に定義された、単一値拡張プロパティのコレクションです。読み取り専用。Null 許容型。</span><span class="sxs-lookup"><span data-stu-id="c53df-p114">The collection of single-value extended properties defined for the post. Read-only. Nullable.</span></span>|
 
+## <a name="json-representation"></a><span data-ttu-id="c53df-241">JSON 表記</span><span class="sxs-lookup"><span data-stu-id="c53df-241">JSON representation</span></span>
 
-## <a name="json-representation"></a>JSON 表記
-
-以下は、リソースの JSON 表記です
+<span data-ttu-id="c53df-242">以下は、リソースの JSON 表記です</span><span class="sxs-lookup"><span data-stu-id="c53df-242">Here is a JSON representation of the resource</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -93,11 +92,11 @@
 
 ```
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a><span data-ttu-id="c53df-243">関連項目</span><span class="sxs-lookup"><span data-stu-id="c53df-243">See also</span></span>
 
-- [拡張機能を使用してカスタム データをリソースに追加する](../../../concepts/extensibility_overview.md)
-- [オープン拡張機能を使用してカスタム データをユーザーに追加する](../../../concepts/extensibility_open_users.md)
-- [スキーマ拡張機能を使用したグループへのカスタム データの追加](../../../concepts/extensibility_schema_groups.md)
+- [<span data-ttu-id="c53df-244">拡張機能を使用してカスタム データをリソースに追加する</span><span class="sxs-lookup"><span data-stu-id="c53df-244">Add custom data to resources using extensions</span></span>](../../../concepts/extensibility_overview.md)
+- [<span data-ttu-id="c53df-245">オープン拡張機能を使用してカスタム データをユーザーに追加する</span><span class="sxs-lookup"><span data-stu-id="c53df-245">Add custom data to users using open extensions</span></span>](../../../concepts/extensibility_open_users.md)
+- [<span data-ttu-id="c53df-246">スキーマ拡張機能を使用したグループへのカスタム データの追加</span><span class="sxs-lookup"><span data-stu-id="c53df-246">Add custom data to groups using schema extensions</span></span>](../../../concepts/extensibility_schema_groups.md)
 
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

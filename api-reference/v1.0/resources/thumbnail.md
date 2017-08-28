@@ -1,10 +1,10 @@
-# <a name="thumbnail-resource-type"></a>サムネイル リソースの種類
+# <a name="thumbnail-resource-type"></a><span data-ttu-id="a3ca0-101">サムネイル リソースの種類</span><span class="sxs-lookup"><span data-stu-id="a3ca0-101">Thumbnail resource type</span></span>
 
-**サムネイル** リソースの種類は、ビットマップ表示を含む画像、ビデオ、ドキュメント、任意のアイテムのサムネイルを表します。
+<span data-ttu-id="a3ca0-102">**サムネイル** リソースの種類は、ビットマップ表示を含む画像、ビデオ、ドキュメント、任意のアイテムのサムネイルを表します。</span><span class="sxs-lookup"><span data-stu-id="a3ca0-102">The **thumbnail** resource type represents a thumbnail for an image, video, document, or any item that has a bitmap representation.</span></span>
 
-## <a name="json-representation"></a>JSON 表記
+## <a name="json-representation"></a><span data-ttu-id="a3ca0-103">JSON 表記</span><span class="sxs-lookup"><span data-stu-id="a3ca0-103">JSON representation</span></span>
 
-以下は、**サムネイル** リソースの JSON 表記です。
+<span data-ttu-id="a3ca0-104">以下は、**サムネイル** リソースの JSON 表記です。</span><span class="sxs-lookup"><span data-stu-id="a3ca0-104">Here is a JSON representation of the **thumbnail** resource.</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -24,24 +24,20 @@
 }
 ```
 
-## <a name="properties"></a>プロパティ
+## <a name="properties"></a><span data-ttu-id="a3ca0-105">プロパティ</span><span class="sxs-lookup"><span data-stu-id="a3ca0-105">Properties</span></span>
 
-| プロパティ     | 型   | 説明                                                                                                                 |
+| <span data-ttu-id="a3ca0-106">プロパティ</span><span class="sxs-lookup"><span data-stu-id="a3ca0-106">Property</span></span>     | <span data-ttu-id="a3ca0-107">型</span><span class="sxs-lookup"><span data-stu-id="a3ca0-107">Type</span></span>   | <span data-ttu-id="a3ca0-108">説明</span><span class="sxs-lookup"><span data-stu-id="a3ca0-108">Description</span></span>                                                                                                                 |
 | :----------- | :----- | :-------------------------------------------------------------------------------------------------------------------------- |
-| height       | Int32  | サムネイルの高さ (ピクセル単位)。                                                                                     |
-| sourceItemId | String | サムネイルを提供したアイテムの一意識別子。フォルダーのサムネイルが要求された場合にのみ利用可能です。 |
-| URL          | String | サムネイルのコンテンツをフェッチするために使用する URL。                                                                                |
-| width        | Int32  | サムネイルの幅 (ピクセル単位)。                                                                                      |
+| <span data-ttu-id="a3ca0-109">height</span><span class="sxs-lookup"><span data-stu-id="a3ca0-109">height</span></span>       | <span data-ttu-id="a3ca0-110">Int32</span><span class="sxs-lookup"><span data-stu-id="a3ca0-110">Int32</span></span>  | <span data-ttu-id="a3ca0-111">サムネイルの高さ (ピクセル単位)。</span><span class="sxs-lookup"><span data-stu-id="a3ca0-111">The height of the thumbnail, in pixels.</span></span>                                                                                     |
+| <span data-ttu-id="a3ca0-112">sourceItemId</span><span class="sxs-lookup"><span data-stu-id="a3ca0-112">sourceItemId</span></span> | <span data-ttu-id="a3ca0-113">String</span><span class="sxs-lookup"><span data-stu-id="a3ca0-113">String</span></span> | <span data-ttu-id="a3ca0-p101">サムネイルを提供したアイテムの一意識別子。フォルダーのサムネイルが要求された場合にのみ利用可能です。</span><span class="sxs-lookup"><span data-stu-id="a3ca0-p101">The unique identifier of the item that provided the thumbnail. This is only available when a folder thumbnail is requested.</span></span> |
+| <span data-ttu-id="a3ca0-116">url</span><span class="sxs-lookup"><span data-stu-id="a3ca0-116">url</span></span>          | <span data-ttu-id="a3ca0-117">String</span><span class="sxs-lookup"><span data-stu-id="a3ca0-117">String</span></span> | <span data-ttu-id="a3ca0-118">サムネイルのコンテンツをフェッチするために使用する URL。</span><span class="sxs-lookup"><span data-stu-id="a3ca0-118">The URL used to fetch the thumbnail content.</span></span>                                                                                |
+| <span data-ttu-id="a3ca0-119">width</span><span class="sxs-lookup"><span data-stu-id="a3ca0-119">width</span></span>        | <span data-ttu-id="a3ca0-120">Int32</span><span class="sxs-lookup"><span data-stu-id="a3ca0-120">Int32</span></span>  | <span data-ttu-id="a3ca0-121">サムネイルの幅 (ピクセル単位)。</span><span class="sxs-lookup"><span data-stu-id="a3ca0-121">The width of the thumbnail, in pixels.</span></span>                                                                                      |
 
+## <a name="relationships"></a><span data-ttu-id="a3ca0-122">関係</span><span class="sxs-lookup"><span data-stu-id="a3ca0-122">Relationships</span></span>
 
-## <a name="relationships"></a>関係
-
-| 名前    | 型   | 説明                           |
+| <span data-ttu-id="a3ca0-123">名前</span><span class="sxs-lookup"><span data-stu-id="a3ca0-123">Name</span></span>    | <span data-ttu-id="a3ca0-124">型</span><span class="sxs-lookup"><span data-stu-id="a3ca0-124">Type</span></span>   | <span data-ttu-id="a3ca0-125">説明</span><span class="sxs-lookup"><span data-stu-id="a3ca0-125">Description</span></span>                           |
 | :------ | :----- | :------------------------------------ |
-| content | Stream | サムネイルのコンテンツ ストリーム。 |
-
-
-
+| <span data-ttu-id="a3ca0-126">content</span><span class="sxs-lookup"><span data-stu-id="a3ca0-126">content</span></span> | <span data-ttu-id="a3ca0-127">Stream</span><span class="sxs-lookup"><span data-stu-id="a3ca0-127">Stream</span></span> | <span data-ttu-id="a3ca0-128">サムネイルのコンテンツ ストリーム。</span><span class="sxs-lookup"><span data-stu-id="a3ca0-128">The content stream for the thumbnail.</span></span> |
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

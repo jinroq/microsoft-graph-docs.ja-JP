@@ -1,17 +1,20 @@
-# <a name="enumerate-subsites-of-a-site"></a><span data-ttu-id="50f59-101">サイトのサブサイトを列挙する</span><span class="sxs-lookup"><span data-stu-id="50f59-101">Enumerate subsites of a site</span></span>
+# <a name="enumerate-subsites-of-a-site"></a><span data-ttu-id="8dc21-101">サイトのサブサイトを列挙する</span><span class="sxs-lookup"><span data-stu-id="8dc21-101">Enumerate subsites of a site</span></span>
 
-<span data-ttu-id="50f59-102">[site][] に定義されているサブサイトのコレクションを取得します。</span><span class="sxs-lookup"><span data-stu-id="50f59-102">Get a collection of subsites defined for a [site][].</span></span>
+<span data-ttu-id="8dc21-102">[site][] に定義されているサブサイトのコレクションを取得します。</span><span class="sxs-lookup"><span data-stu-id="8dc21-102">Get a collection of subsites defined for a [site][].</span></span>
 
-<span data-ttu-id="50f59-103">[site]: ../resources/site.md</span><span class="sxs-lookup"><span data-stu-id="50f59-103">[site]: ../resources/site.md</span></span>
+<span data-ttu-id="8dc21-103">[サイト]: ../resources/site.md</span><span class="sxs-lookup"><span data-stu-id="8dc21-103">[site]: ../resources/site.md</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="50f59-104">前提条件</span><span class="sxs-lookup"><span data-stu-id="50f59-104">Prerequisites</span></span>
+## <a name="permissions"></a><span data-ttu-id="8dc21-104">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="8dc21-104">Permissions</span></span>
 
-<span data-ttu-id="50f59-105">この要求を実行するには、以下のいずれかのスコープが必要です。</span><span class="sxs-lookup"><span data-stu-id="50f59-105">One of the following scopes is required to execute this request:</span></span>
+<span data-ttu-id="8dc21-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](../../../concepts/permissions_reference.md)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="8dc21-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).</span></span>
 
-* <span data-ttu-id="50f59-106">Sites.Read.All</span><span class="sxs-lookup"><span data-stu-id="50f59-106">Sites.Read.All</span></span>
-* <span data-ttu-id="50f59-107">Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="50f59-107">Sites.ReadWrite.All</span></span>
+|<span data-ttu-id="8dc21-107">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="8dc21-107">Permission type</span></span>      | <span data-ttu-id="8dc21-108">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="8dc21-108">Permissions (from least to most privileged)</span></span>              |
+|:--------------------|:---------------------------------------------------------|
+|<span data-ttu-id="8dc21-109">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="8dc21-109">Delegated (work or school account)</span></span> | <span data-ttu-id="8dc21-110">Sites.Read.All、Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="8dc21-110">Sites.Read.All, Sites.ReadWrite.All</span></span>    |
+|<span data-ttu-id="8dc21-111">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="8dc21-111">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="8dc21-112">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="8dc21-112">Not supported.</span></span>    |
+|<span data-ttu-id="8dc21-113">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="8dc21-113">Application</span></span> | <span data-ttu-id="8dc21-114">Sites.Read.All、Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="8dc21-114">Sites.Read.All, Sites.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="50f59-108">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="50f59-108">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="8dc21-115">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="8dc21-115">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -19,9 +22,9 @@
 GET /sites/{site-id}/sites
 ```
 
-## <a name="example"></a><span data-ttu-id="50f59-109">例</span><span class="sxs-lookup"><span data-stu-id="50f59-109">Example</span></span>
+## <a name="example"></a><span data-ttu-id="8dc21-116">例</span><span class="sxs-lookup"><span data-stu-id="8dc21-116">Example</span></span>
 
-#### <a name="request"></a><span data-ttu-id="50f59-110">要求</span><span class="sxs-lookup"><span data-stu-id="50f59-110">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="8dc21-117">要求</span><span class="sxs-lookup"><span data-stu-id="8dc21-117">Request</span></span>
 
 <!-- { "blockType": "request", "name": "list-subsites" } -->
 
@@ -29,7 +32,7 @@ GET /sites/{site-id}/sites
 GET /sites/{site-id}/sites
 ```
 
-#### <a name="response"></a><span data-ttu-id="50f59-111">応答</span><span class="sxs-lookup"><span data-stu-id="50f59-111">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="8dc21-118">応答</span><span class="sxs-lookup"><span data-stu-id="8dc21-118">Response</span></span>
 
 <!-- { "blockType": "response", "@type": "microsoft.graph.site", "isCollection": true, "truncated": true } -->
 

@@ -1,26 +1,25 @@
-# <a name="track-changes-for-a-drive"></a><span data-ttu-id="71361-101">ドライブの変更履歴を記録する</span><span class="sxs-lookup"><span data-stu-id="71361-101">Track changes for a Drive</span></span>
+# <a name="track-changes-for-a-drive"></a><span data-ttu-id="2fdd0-101">ドライブの変更履歴を記録する</span><span class="sxs-lookup"><span data-stu-id="2fdd0-101">Track changes for a Drive</span></span>
 
-<span data-ttu-id="71361-102">このメソッドでは、アプリがドライブおよびその子への変更履歴を時間の経過とともに記録できます。</span><span class="sxs-lookup"><span data-stu-id="71361-102">This method allows your app to track changes to a drive and its children over time.</span></span>
+<span data-ttu-id="2fdd0-102">このメソッドでは、アプリがドライブおよびその子への変更履歴を時間の経過とともに記録できます。</span><span class="sxs-lookup"><span data-stu-id="2fdd0-102">This method allows your app to track changes to a drive and its children over time.</span></span>
 
-<span data-ttu-id="71361-p101">アプリはまず、パラメーターを指定せずに `delta` を呼び出します。サービスはドライブの階層の列挙を開始し、次に説明するように、アイテムのページと `@odata.nextLink` または `@odata.deltaLink` のいずれかを返します。`@odata.nextLink` が返されなくなるまで、または変更の空のセットが応答で返されるまで、アプリは `@odata.nextLink` を使って呼び出しを続けます。</span><span class="sxs-lookup"><span data-stu-id="71361-p101">Your app begins by calling `delta` without any parameters. The service starts enumerating the drive's hierarchy, returning pages of items and either an `@odata.nextLink` or an `@odata.deltaLink`, as described below. Your app should continue calling with the `@odata.nextLink` until you no longer see an `@odata.nextLink` returned, or you see a response with an empty set of changes.</span></span>
+<span data-ttu-id="2fdd0-p101">アプリはまず、パラメーターを指定せずに `delta` を呼び出します。サービスはドライブの階層の列挙を開始し、次に説明するように、アイテムのページと `@odata.nextLink` または `@odata.deltaLink` のいずれかを返します。`@odata.nextLink` が返されなくなるまで、または変更の空のセットが応答で返されるまで、アプリは `@odata.nextLink` を使って呼び出しを続けます。</span><span class="sxs-lookup"><span data-stu-id="2fdd0-p101">Your app begins by calling `delta` without any parameters. The service starts enumerating the drive's hierarchy, returning pages of items and either an `@odata.nextLink` or an `@odata.deltaLink`, as described below. Your app should continue calling with the `@odata.nextLink` until you no longer see an `@odata.nextLink` returned, or you see a response with an empty set of changes.</span></span>
 
-<span data-ttu-id="71361-p102">すべての変更を受信したら、それをローカルの状態に適用できます。今後の変更を確認するには、前回の応答の `@odata.deltaLink` を使ってもう一度 `delta` を呼び出します。</span><span class="sxs-lookup"><span data-stu-id="71361-p102">After you have finished receiving all the changes, you may apply them to your local state. To check for changes in the future, call `delta` again with the `@odata.deltaLink` from the previous response.</span></span>
+<span data-ttu-id="2fdd0-p102">すべての変更を受信したら、それをローカルの状態に適用できます。今後の変更を確認するには、前回の応答の `@odata.deltaLink` を使ってもう一度 `delta` を呼び出します。</span><span class="sxs-lookup"><span data-stu-id="2fdd0-p102">After you have finished receiving all the changes, you may apply them to your local state. To check for changes in the future, call `delta` again with the `@odata.deltaLink` from the previous response.</span></span>
 
-<span data-ttu-id="71361-p103">削除されたアイテムは [`deleted` ファセット](../resources/deleted.md)付きで返されます。このプロパティ セットを持つアイテムは、ローカル状態から削除する必要があります。</span><span class="sxs-lookup"><span data-stu-id="71361-p103">Deleted items are returned with the [`deleted` facet](../resources/deleted.md). Items with this property set should be removed from your local state.</span></span> 
+<span data-ttu-id="2fdd0-p103">削除されたアイテムは [`deleted` ファセット](../resources/deleted.md)付きで返されます。このプロパティ セットを持つアイテムは、ローカル状態から削除する必要があります。</span><span class="sxs-lookup"><span data-stu-id="2fdd0-p103">Deleted items are returned with the [`deleted` facet](../resources/deleted.md). Items with this property set should be removed from your local state.</span></span> 
 
-<span data-ttu-id="71361-110">**注:** すべての変更を同期した後にフォルダーが空の場合にのみ、ローカルでそのフォルダーを削除する必要があります。</span><span class="sxs-lookup"><span data-stu-id="71361-110">**Note:** you should only delete a folder locally if it is empty after syncing all the changes.</span></span>
+<span data-ttu-id="2fdd0-110">**注:** すべての変更を同期した後にフォルダーが空の場合にのみ、ローカルでそのフォルダーを削除する必要があります。</span><span class="sxs-lookup"><span data-stu-id="2fdd0-110">Note: you should only delete a folder locally if it is empty after syncing all the changes.</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="71361-111">前提条件</span><span class="sxs-lookup"><span data-stu-id="71361-111">Prerequisites</span></span>
-<span data-ttu-id="71361-112">この API を実行するには、以下のいずれかの**スコープ**が必要です。</span><span class="sxs-lookup"><span data-stu-id="71361-112">One of the following **scopes** is required to execute this API:</span></span>
+## <a name="permissions"></a><span data-ttu-id="2fdd0-111">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="2fdd0-111">Permissions</span></span>
+<span data-ttu-id="2fdd0-p104">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](../../../concepts/permissions_reference.md)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="2fdd0-p104">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).</span></span>
 
-* <span data-ttu-id="71361-113">Files.Read</span><span class="sxs-lookup"><span data-stu-id="71361-113">Files.Read</span></span>
-* <span data-ttu-id="71361-114">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="71361-114">Files.ReadWrite</span></span>
-* <span data-ttu-id="71361-115">Files.Read.All</span><span class="sxs-lookup"><span data-stu-id="71361-115">Files.Read.All</span></span>
-* <span data-ttu-id="71361-116">Files.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="71361-116">Files.ReadWrite.All</span></span>
-* <span data-ttu-id="71361-117">Sites.Read.All</span><span class="sxs-lookup"><span data-stu-id="71361-117">Sites.Read.All</span></span>
-* <span data-ttu-id="71361-118">Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="71361-118">Sites.ReadWrite.All</span></span>
+|<span data-ttu-id="2fdd0-114">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="2fdd0-114">Permission type</span></span>      | <span data-ttu-id="2fdd0-115">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="2fdd0-115">Permissions (from least to most privileged)</span></span>              | 
+|:--------------------|:---------------------------------------------------------| 
+|<span data-ttu-id="2fdd0-116">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="2fdd0-116">Delegated (work or school account)</span></span> | <span data-ttu-id="2fdd0-117">Files.Read、Files.ReadWrite、Files.Read.All、Files.ReadWrite.All、Sites.Read.All、Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="2fdd0-117">Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span></span>    | 
+|<span data-ttu-id="2fdd0-118">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="2fdd0-118">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="2fdd0-119">Files.Read、Files.ReadWrite、Files.Read.All、Files.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="2fdd0-119">Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All</span></span>    | 
+|<span data-ttu-id="2fdd0-120">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="2fdd0-120">Application</span></span> | <span data-ttu-id="2fdd0-121">Files.Read.All、Files.ReadWrite.All、Sites.Read.All、Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="2fdd0-121">Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span></span> | 
 
-## <a name="http-request"></a><span data-ttu-id="71361-119">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="71361-119">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="2fdd0-122">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="2fdd0-122">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/drive/root/delta
@@ -28,29 +27,29 @@ GET /drives/{drive-id}/root/delta
 GET /groups/{group-id}/drive/root/delta
 ```
 
-## <a name="optional-query-parameters"></a><span data-ttu-id="71361-120">オプションのクエリ パラメーター</span><span class="sxs-lookup"><span data-stu-id="71361-120">Optional query parameters</span></span>
-<span data-ttu-id="71361-121">このメソッドは、応答をカスタマイズするための `$select`、`$expand` および `$top` [OData クエリ パラメーター](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters)をサポートします。</span><span class="sxs-lookup"><span data-stu-id="71361-121">This method supports `$select`, `$expand`, and `$top` [OData Query Parameters](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) to customize the response.</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="2fdd0-123">オプションのクエリ パラメーター</span><span class="sxs-lookup"><span data-stu-id="2fdd0-123">Optional query parameters</span></span>
+<span data-ttu-id="2fdd0-124">このメソッドは、応答をカスタマイズするための `$select`、`$expand` および `$top` [OData クエリ パラメーター](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters)をサポートします。</span><span class="sxs-lookup"><span data-stu-id="2fdd0-124">This method supports `$select`, `$expand`, and `$top` [OData Query Parameters](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) to customize the response.</span></span>
 
-## <a name="request-body"></a><span data-ttu-id="71361-122">要求本文</span><span class="sxs-lookup"><span data-stu-id="71361-122">Request body</span></span>
-<span data-ttu-id="71361-123">このメソッドには、要求本文を指定しません。</span><span class="sxs-lookup"><span data-stu-id="71361-123">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="2fdd0-125">要求本文</span><span class="sxs-lookup"><span data-stu-id="2fdd0-125">Request body</span></span>
+<span data-ttu-id="2fdd0-126">このメソッドには、要求本文を指定しません。</span><span class="sxs-lookup"><span data-stu-id="2fdd0-126">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="71361-124">応答</span><span class="sxs-lookup"><span data-stu-id="71361-124">Response</span></span>
+## <a name="response"></a><span data-ttu-id="2fdd0-127">応答</span><span class="sxs-lookup"><span data-stu-id="2fdd0-127">Response</span></span>
 
-<span data-ttu-id="71361-125">成功した場合、このメソッドは応答本文で `200 OK` 応答コードと、[DriveItem](../resources/driveitem.md) リソースのコレクションを返します。</span><span class="sxs-lookup"><span data-stu-id="71361-125">If successful, this method returns a `200 OK` response code and a collection of [DriveItem](../resources/driveitem.md) resources in the response body.</span></span>
+<span data-ttu-id="2fdd0-128">成功した場合、このメソッドは応答本文で `200 OK` 応答コードと、[DriveItem](../resources/driveitem.md) リソースのコレクションを返します。</span><span class="sxs-lookup"><span data-stu-id="2fdd0-128">If successful, this method returns a `200 OK` response code and a collection of [DriveItem](../resources/driveitem.md) resources in the response body.</span></span>
 
-<span data-ttu-id="71361-126">DriveItem のコレクションのほか、応答には次のプロパティのいずれかも含まれます。</span><span class="sxs-lookup"><span data-stu-id="71361-126">In addition to the collection of DriveItems, the response will also include one of the following properties:</span></span>
+<span data-ttu-id="2fdd0-129">DriveItem のコレクションのほか、応答には次のプロパティのいずれかも含まれます。</span><span class="sxs-lookup"><span data-stu-id="2fdd0-129">In addition to the collection of DriveItems, the response will also include one of the following properties:</span></span>
 
-| <span data-ttu-id="71361-127">名前</span><span class="sxs-lookup"><span data-stu-id="71361-127">Name</span></span>                 | <span data-ttu-id="71361-128">値</span><span class="sxs-lookup"><span data-stu-id="71361-128">Value</span></span>  | <span data-ttu-id="71361-129">説明</span><span class="sxs-lookup"><span data-stu-id="71361-129">Description</span></span>                                                                                                                                      |
+| <span data-ttu-id="2fdd0-130">名前</span><span class="sxs-lookup"><span data-stu-id="2fdd0-130">Name</span></span>                 | <span data-ttu-id="2fdd0-131">値</span><span class="sxs-lookup"><span data-stu-id="2fdd0-131">Value</span></span>  | <span data-ttu-id="2fdd0-132">説明</span><span class="sxs-lookup"><span data-stu-id="2fdd0-132">Description</span></span>                                                                                                                                      |
 |:---------------------|:-------|:-------------------------------------------------------------------------------------------------------------------------------------------------|
-| <span data-ttu-id="71361-130">**@odata.nextLink**</span><span class="sxs-lookup"><span data-stu-id="71361-130">**@odata.nextLink**</span></span>  | <span data-ttu-id="71361-131">url</span><span class="sxs-lookup"><span data-stu-id="71361-131">url</span></span>    | <span data-ttu-id="71361-132">現在のセットに追加の変更がある場合に、次の使用可能な変更ページを取得するための URL です。</span><span class="sxs-lookup"><span data-stu-id="71361-132">A URL to retrieve the next available page of changes, if there are additional changes in the current set.</span></span>                                        |
-| <span data-ttu-id="71361-133">**@odata.deltaLink**</span><span class="sxs-lookup"><span data-stu-id="71361-133">**@odata.deltaLink**</span></span> | <span data-ttu-id="71361-134">url</span><span class="sxs-lookup"><span data-stu-id="71361-134">url</span></span>    | <span data-ttu-id="71361-p104">現在のすべての変更が返された後に、**@odata.nextLink** の代わりに返される URL です。今後の次の一連の変更を読み取るために使用されます。</span><span class="sxs-lookup"><span data-stu-id="71361-p104">A URL returned instead of **@odata.nextLink** after all current changes have been returned. Used to read the next set of changes in the future.</span></span>  |
+| <span data-ttu-id="2fdd0-133">**@odata.nextLink**</span><span class="sxs-lookup"><span data-stu-id="2fdd0-133">**@odata.nextLink**</span></span>  | <span data-ttu-id="2fdd0-134">url</span><span class="sxs-lookup"><span data-stu-id="2fdd0-134">url</span></span>    | <span data-ttu-id="2fdd0-135">現在のセットに追加の変更がある場合に、次の使用可能な変更ページを取得するための URL です。</span><span class="sxs-lookup"><span data-stu-id="2fdd0-135">A URL to retrieve the next available page of changes, if there are additional changes in the current set.</span></span>                                        |
+| <span data-ttu-id="2fdd0-136">**@odata.deltaLink**</span><span class="sxs-lookup"><span data-stu-id="2fdd0-136">**@odata.deltaLink**</span></span> | <span data-ttu-id="2fdd0-137">url</span><span class="sxs-lookup"><span data-stu-id="2fdd0-137">url</span></span>    | <span data-ttu-id="2fdd0-p105">現在のすべての変更が返された後に、**@odata.nextLink** の代わりに返される URL です。今後の次の一連の変更を読み取るために使用されます。</span><span class="sxs-lookup"><span data-stu-id="2fdd0-p105">A URL returned instead of **@odata.nextLink** after all current changes have been returned. Used to read the next set of changes in the future.</span></span>  |
 
 
-## <a name="example-initial-request"></a><span data-ttu-id="71361-137">例 (最初の要求)</span><span class="sxs-lookup"><span data-stu-id="71361-137">Example (Initial Request)</span></span>
-<span data-ttu-id="71361-138">ここでは、ローカルの状態を確立するために、この API を呼び出す方法の例です。</span><span class="sxs-lookup"><span data-stu-id="71361-138">Here is an example of how to call this API to establish your local state.</span></span>
+## <a name="example-initial-request"></a><span data-ttu-id="2fdd0-140">例 (最初の要求)</span><span class="sxs-lookup"><span data-stu-id="2fdd0-140">Example (Initial Request)</span></span>
+<span data-ttu-id="2fdd0-141">ここでは、ローカルの状態を確立するために、この API を呼び出す方法の例です。</span><span class="sxs-lookup"><span data-stu-id="2fdd0-141">Here is an example of how to call this API to establish your local state.</span></span>
 
-##### <a name="request"></a><span data-ttu-id="71361-139">要求</span><span class="sxs-lookup"><span data-stu-id="71361-139">Request</span></span>
-<span data-ttu-id="71361-140">以下は最初の要求の例です。</span><span class="sxs-lookup"><span data-stu-id="71361-140">Here is an example of the initial request.</span></span>
+##### <a name="request"></a><span data-ttu-id="2fdd0-142">要求</span><span class="sxs-lookup"><span data-stu-id="2fdd0-142">Request</span></span>
+<span data-ttu-id="2fdd0-143">以下は最初の要求の例です。</span><span class="sxs-lookup"><span data-stu-id="2fdd0-143">Here is an example of the initial request.</span></span>
 
 <!-- {
   "blockType": "request",
@@ -60,8 +59,8 @@ GET /groups/{group-id}/drive/root/delta
 GET https://graph.microsoft.com/v1.0/me/drive/root/delta
 ```
 
-##### <a name="response"></a><span data-ttu-id="71361-141">応答</span><span class="sxs-lookup"><span data-stu-id="71361-141">Response</span></span>
-<span data-ttu-id="71361-142">以下は、応答の例です。</span><span class="sxs-lookup"><span data-stu-id="71361-142">Here is an example of the response.</span></span>
+##### <a name="response"></a><span data-ttu-id="2fdd0-144">応答</span><span class="sxs-lookup"><span data-stu-id="2fdd0-144">Response</span></span>
+<span data-ttu-id="2fdd0-145">以下は、応答の例です。</span><span class="sxs-lookup"><span data-stu-id="2fdd0-145">Here is an example of the response.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -95,13 +94,13 @@ Content-type: application/json
 }
 ```
 
-<span data-ttu-id="71361-p105">この応答には変更の最初のページが含まれており、**@odata.nextLink** プロパティは、現在のアイテムのセットで使用可能なアイテムがさらにあることを示しています。アプリは、アイテムのすべてのページが取得されるまで、**@odata.nextLink** の URL の値を要求し続ける必要があります。</span><span class="sxs-lookup"><span data-stu-id="71361-p105">This response includes the first page of changes, and the **@odata.nextLink** property indicates that there are more items available in the current set of items. Your app should continue to request the URL value of **@odata.nextLink** until all pages of items have been retrieved.</span></span>
+<span data-ttu-id="2fdd0-p106">この応答には変更の最初のページが含まれており、**@odata.nextLink** プロパティは、現在のアイテムのセットで使用可能なアイテムがさらにあることを示しています。アプリは、アイテムのすべてのページが取得されるまで、**@odata.nextLink** の URL の値を要求し続ける必要があります。</span><span class="sxs-lookup"><span data-stu-id="2fdd0-p106">This response includes the first page of changes, and the **@odata.nextLink** property indicates that there are more items available in the current set of items. Your app should continue to request the URL value of **@odata.nextLink** until all pages of items have been retrieved.</span></span>
 
-## <a name="example-last-page-in-a-set"></a><span data-ttu-id="71361-145">例 (セットの最後のページ)</span><span class="sxs-lookup"><span data-stu-id="71361-145">Example (Last page in a set)</span></span>
-<span data-ttu-id="71361-146">以下に、ローカルの状態を更新するためにこの API を呼び出す方法の例を示します。</span><span class="sxs-lookup"><span data-stu-id="71361-146">Here is an example of how to call this API to update your local state.</span></span>
+## <a name="example-last-page-in-a-set"></a><span data-ttu-id="2fdd0-148">例 (セットの最後のページ)</span><span class="sxs-lookup"><span data-stu-id="2fdd0-148">Example (Last page in a set)</span></span>
+<span data-ttu-id="2fdd0-149">以下に、ローカルの状態を更新するためにこの API を呼び出す方法の例を示します。</span><span class="sxs-lookup"><span data-stu-id="2fdd0-149">Here is an example of how to call this API to update your local state.</span></span>
 
-##### <a name="request"></a><span data-ttu-id="71361-147">要求</span><span class="sxs-lookup"><span data-stu-id="71361-147">Request</span></span>
-<span data-ttu-id="71361-148">以下は最初の要求後の要求の例です。</span><span class="sxs-lookup"><span data-stu-id="71361-148">Here is an example request after the initial request.</span></span>
+##### <a name="request"></a><span data-ttu-id="2fdd0-150">要求</span><span class="sxs-lookup"><span data-stu-id="2fdd0-150">Request</span></span>
+<span data-ttu-id="2fdd0-151">以下は最初の要求後の要求の例です。</span><span class="sxs-lookup"><span data-stu-id="2fdd0-151">Here is an example request after the initial request.</span></span>
 
 <!-- {
   "blockType": "request",
@@ -111,8 +110,8 @@ Content-type: application/json
 GET https://graph.microsoft.com/v1.0/me/drive/root/delta(token='1230919asd190410jlka')
 ```
 
-##### <a name="response"></a><span data-ttu-id="71361-149">応答</span><span class="sxs-lookup"><span data-stu-id="71361-149">Response</span></span>
-<span data-ttu-id="71361-150">以下は、応答の例です。</span><span class="sxs-lookup"><span data-stu-id="71361-150">Here is an example of the response.</span></span>
+##### <a name="response"></a><span data-ttu-id="2fdd0-152">応答</span><span class="sxs-lookup"><span data-stu-id="2fdd0-152">Response</span></span>
+<span data-ttu-id="2fdd0-153">以下は、応答の例です。</span><span class="sxs-lookup"><span data-stu-id="2fdd0-153">Here is an example of the response.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -142,33 +141,33 @@ Content-type: application/json
 }
 ```
 
-<span data-ttu-id="71361-151">この応答は、`folder2` という名前のアイテムが削除され、アイテム `file.txt` は最初の要求とローカルの状態を更新する今回の要求の間で追加または変更されたことを示しています。</span><span class="sxs-lookup"><span data-stu-id="71361-151">This response indicates that the item named `folder2` was deleted and the item `file.txt` was either added or modified between the initial request and this request to update the local state.</span></span>
+<span data-ttu-id="2fdd0-154">この応答は、`folder2` という名前のアイテムが削除され、アイテム `file.txt` は最初の要求とローカルの状態を更新する今回の要求の間で追加または変更されたことを示しています。</span><span class="sxs-lookup"><span data-stu-id="2fdd0-154">This response indicates that the item named `folder2` was deleted and the item `file.txt` was either added or modified between the initial request and this request to update the local state.</span></span>
 
-<span data-ttu-id="71361-152">アイテムの最後のページには **@odata.deltaLink** プロパティが含まれます。このプロパティは現在のアイテム セット以降の変更を後で取得するために使用される URL を提供します。</span><span class="sxs-lookup"><span data-stu-id="71361-152">The final page of items will include the **@odata.deltaLink** property, which provides the URL that can be used later to retrieve changes since the current set of items.</span></span>
+<span data-ttu-id="2fdd0-155">アイテムの最後のページには **@odata.deltaLink** プロパティが含まれます。このプロパティは現在のアイテム セット以降の変更を後で取得するために使用される URL を提供します。</span><span class="sxs-lookup"><span data-stu-id="2fdd0-155">The final page of items will include the **@odata.deltaLink** property, which provides the URL that can be used later to retrieve changes since the current set of items.</span></span>
 
-## <a name="remarks"></a><span data-ttu-id="71361-153">注釈</span><span class="sxs-lookup"><span data-stu-id="71361-153">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="2fdd0-156">注釈</span><span class="sxs-lookup"><span data-stu-id="2fdd0-156">Remarks</span></span>
 
-* <span data-ttu-id="71361-p106">差分フィードは各変更を示すのではなく、各アイテムの最新の状態を示すものです。アイテムの名前が 2 回変更された場合、最新の名前で 1 回だけ表示されます。</span><span class="sxs-lookup"><span data-stu-id="71361-p106">The delta feed shows the latest state for each item, not each change. If an item were renamed twice, it would only show up once, with its latest name.</span></span>
-* <span data-ttu-id="71361-p107">差分フィードには、さまざまな理由から同じアイテムが複数回表示される場合があります。その場合は最後に出現したものを使用する必要があります。</span><span class="sxs-lookup"><span data-stu-id="71361-p107">The same item may appear more than once in a delta feed, for various reasons. You should use the last occurrence you see.</span></span>
-* <span data-ttu-id="71361-p108">アイテムの `parentReference` プロパティには**パス**の値は含まれません。これは、フォルダー名を変更しても**デルタ**からそのフォルダーの子孫が返されることはないためです。**差分を使用する場合、アイテムは必ず ID で追跡する必要があります**。</span><span class="sxs-lookup"><span data-stu-id="71361-p108">The `parentReference` property on items will not include a value for **path**. This occurs because renaming a folder does not result in any descendants of the folder being returned from **delta**. **When using delta you should always track items by id**.</span></span>
+* <span data-ttu-id="2fdd0-p107">差分フィードは各変更を示すのではなく、各アイテムの最新の状態を示すものです。アイテムの名前が 2 回変更された場合、最新の名前で 1 回だけ表示されます。</span><span class="sxs-lookup"><span data-stu-id="2fdd0-p107">The delta feed shows the latest state for each item, not each change. If an item were renamed twice, it would only show up once, with its latest name.</span></span>
+* <span data-ttu-id="2fdd0-p108">差分フィードには、さまざまな理由から同じアイテムが複数回表示される場合があります。その場合は最後に出現したものを使用する必要があります。</span><span class="sxs-lookup"><span data-stu-id="2fdd0-p108">The same item may appear more than once in a delta feed, for various reasons. You should use the last occurrence you see.</span></span>
+* <span data-ttu-id="2fdd0-p109">アイテムの `parentReference` プロパティには**パス**の値は含まれません。これは、フォルダー名を変更しても**デルタ**からそのフォルダーの子孫が返されることはないためです。**差分を使用する場合、アイテムは必ず ID で追跡する必要があります**。</span><span class="sxs-lookup"><span data-stu-id="2fdd0-p109">The `parentReference` property on items will not include a value for **path**. This occurs because renaming a folder does not result in any descendants of the folder being returned from **delta**. **When using delta you should always track items by id**.</span></span>
 
-<span data-ttu-id="71361-p109">指定したトークンの変更リストを、サービスが提供できない場合があります (長時間にわたって切断された後に、クライアントが古いトークンを再利用する場合や、サーバーの状態が変更され、新しいトークンが必要な場合など)。このような場合、サービスは次のエラー コードのいずれかを含むエラー応答で `HTTP 410 Gone` エラーを返し、また、新しい差分の列挙を最初から開始する新しい nextLink を含む `Location` ヘッダーを返します。完全な列挙処理が終了したら、返されたアイテムとローカルの状態を比較して、次の指示に従います。</span><span class="sxs-lookup"><span data-stu-id="71361-p109">There may be cases when the service can't provide a list of changes for a given token (for example, if a client tries to reuse an old token after being disconnected for a long time, or if server state has changed and a new token is required). In these cases the service will return an `HTTP 410 Gone` error with an error response containing one of the error codes below, and a `Location` header containing a new nextLink that starts a fresh delta enumeration from scratch. After finishing the full enumeration, compare the returned items with your local state and follow these instructions.</span></span>
+<span data-ttu-id="2fdd0-p110">指定したトークンの変更リストを、サービスが提供できない場合があります (長時間にわたって切断された後に、クライアントが古いトークンを再利用する場合や、サーバーの状態が変更され、新しいトークンが必要な場合など)。このような場合、サービスは次のエラー コードのいずれかを含むエラー応答で `HTTP 410 Gone` エラーを返し、また、新しい差分の列挙を最初から開始する新しい nextLink を含む `Location` ヘッダーを返します。完全な列挙処理が終了したら、返されたアイテムとローカルの状態を比較して、次の指示に従います。</span><span class="sxs-lookup"><span data-stu-id="2fdd0-p110">There may be cases when the service can't provide a list of changes for a given token (for example, if a client tries to reuse an old token after being disconnected for a long time, or if server state has changed and a new token is required). In these cases the service will return an `HTTP 410 Gone` error with an error response containing one of the error codes below, and a `Location` header containing a new nextLink that starts a fresh delta enumeration from scratch. After finishing the full enumeration, compare the returned items with your local state and follow these instructions.</span></span>
 
-| <span data-ttu-id="71361-164">エラーの種類</span><span class="sxs-lookup"><span data-stu-id="71361-164">Error Type</span></span>                       | <span data-ttu-id="71361-165">手順</span><span class="sxs-lookup"><span data-stu-id="71361-165">Instructions</span></span>                                                                                                                                                                                                                    |
+| <span data-ttu-id="2fdd0-167">エラーの種類</span><span class="sxs-lookup"><span data-stu-id="2fdd0-167">Error Type</span></span>                       | <span data-ttu-id="2fdd0-168">手順</span><span class="sxs-lookup"><span data-stu-id="2fdd0-168">Instructions</span></span>                                                                                                                                                                                                                    |
 |:---------------------------------|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `resyncChangesApplyDifferences`  | <span data-ttu-id="71361-p110">最後に同期したときに、サービスがローカルの変更に対して最新の状態であったことが確実な場合、すべてのローカル アイテムをサーバーのバージョンと置き換えます (削除を含む)。サーバーが把握していないすべてのローカル変更をアップロードします。</span><span class="sxs-lookup"><span data-stu-id="71361-p110">Replace any local items with the server's version (including deletes) if you're sure that the service was up to date with your local changes when you last sync'd. Upload any local changes that the server doesn't know about.</span></span> |
-| `resyncChangesUploadDifferences` | <span data-ttu-id="71361-168">サービスが返さないすべてのローカル アイテムをアップロードして、サーバーのバージョンと異なるすべてのファイルをアップロードします (どちらがより最新の状態であるかわからない場合は、両方のコピーを保持する)。</span><span class="sxs-lookup"><span data-stu-id="71361-168">Upload any local items that the service did not return, and upload any files that differ from the server's version (keeping both copies if you're not sure which one is more up-to-date).</span></span>                                       |
+| `resyncChangesApplyDifferences`  | <span data-ttu-id="2fdd0-p111">最後に同期したときに、サービスがローカルの変更に対して最新の状態であったことが確実な場合、すべてのローカル アイテムをサーバーのバージョンと置き換えます (削除を含む)。サーバーが把握していないすべてのローカル変更をアップロードします。</span><span class="sxs-lookup"><span data-stu-id="2fdd0-p111">Replace any local items with the server's version (including deletes) if you're sure that the service was up to date with your local changes when you last sync'd. Upload any local changes that the server doesn't know about.</span></span> |
+| `resyncChangesUploadDifferences` | <span data-ttu-id="2fdd0-171">サービスが返さないすべてのローカル アイテムをアップロードして、サーバーのバージョンと異なるすべてのファイルをアップロードします (どちらがより最新の状態であるかわからない場合は、両方のコピーを保持する)。</span><span class="sxs-lookup"><span data-stu-id="2fdd0-171">Upload any local items that the service did not return, and upload any files that differ from the server's version (keeping both copies if you're not sure which one is more up-to-date).</span></span>                                       |
 
 
-<span data-ttu-id="71361-p111">OneDrive for Business および SharePoint では、`delta` は `root` フォルダーでのみサポートされ、他のフォルダーではサポートされません。また、DriveItem の次のプロパティも返しません。</span><span class="sxs-lookup"><span data-stu-id="71361-p111">In OneDrive for Business and SharePoint, `delta` is only supported on the `root` folder, not on other folders. It also will not return the following DriveItem properties:</span></span>
+<span data-ttu-id="2fdd0-p112">OneDrive for Business および SharePoint では、`delta` は `root` フォルダーでのみサポートされ、他のフォルダーではサポートされません。また、DriveItem の次のプロパティも返しません。</span><span class="sxs-lookup"><span data-stu-id="2fdd0-p112">In OneDrive for Business and SharePoint, `delta` is only supported on the `root` folder, not on other folders. It also will not return the following DriveItem properties:</span></span>
 
-* <span data-ttu-id="71361-171">**createdBy**</span><span class="sxs-lookup"><span data-stu-id="71361-171">**CreatedBy**</span></span>
-* <span data-ttu-id="71361-172">**cTag**</span><span class="sxs-lookup"><span data-stu-id="71361-172">**cTag**</span></span>
-* <span data-ttu-id="71361-173">**eTag**</span><span class="sxs-lookup"><span data-stu-id="71361-173">**etag**</span></span>
-* <span data-ttu-id="71361-174">**fileSystemInfo**</span><span class="sxs-lookup"><span data-stu-id="71361-174">**fileSystemInfo**</span></span>
-* <span data-ttu-id="71361-175">**lastModifiedBy**</span><span class="sxs-lookup"><span data-stu-id="71361-175">**lastModifiedBy**</span></span>
-* <span data-ttu-id="71361-176">**parentReference**</span><span class="sxs-lookup"><span data-stu-id="71361-176">**parentReference**</span></span>
-* <span data-ttu-id="71361-177">**size**</span><span class="sxs-lookup"><span data-stu-id="71361-177">**size**</span></span>
+* <span data-ttu-id="2fdd0-174">**createdBy**</span><span class="sxs-lookup"><span data-stu-id="2fdd0-174">**CreatedBy**</span></span>
+* <span data-ttu-id="2fdd0-175">**cTag**</span><span class="sxs-lookup"><span data-stu-id="2fdd0-175">**cTag**</span></span>
+* <span data-ttu-id="2fdd0-176">**eTag**</span><span class="sxs-lookup"><span data-stu-id="2fdd0-176">**etag**</span></span>
+* <span data-ttu-id="2fdd0-177">**fileSystemInfo**</span><span class="sxs-lookup"><span data-stu-id="2fdd0-177">**fileSystemInfo**</span></span>
+* <span data-ttu-id="2fdd0-178">**lastModifiedBy**</span><span class="sxs-lookup"><span data-stu-id="2fdd0-178">**lastModifiedBy**</span></span>
+* <span data-ttu-id="2fdd0-179">**parentReference**</span><span class="sxs-lookup"><span data-stu-id="2fdd0-179">**parentReference**</span></span>
+* <span data-ttu-id="2fdd0-180">**size**</span><span class="sxs-lookup"><span data-stu-id="2fdd0-180">**size**</span></span>
 
 
 <!-- {
