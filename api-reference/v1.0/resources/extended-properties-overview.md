@@ -44,14 +44,12 @@
 | "*{type} {guid} **Name** {name}*" | ```"String {8ECCC264-6880-4EBE-992F-8888D2EEAA1D} Name TestProperty"``` | 属している名前空間 (GUID) と名前で、プロパティを識別します。         |
 | "*{type} {guid} **Id** {id}*"     | ```"Integer {8ECCC264-6880-4EBE-992F-8888D2EEAA1D} Id 0x8012"```        | 属している名前空間 (GUID) と識別子で、プロパティを識別します。  |
 
-
 **複数値の拡張プロパティに有効な id の形式**
 
 |**形式**|**例**|**説明**|
 |:---------|:----------|:--------------|
 | "*{type} {guid} **Name** {name}*" | ```"StringArray {8ECCC264-6880-4EBE-992F-8888D2EEAA1D} Name TestProperty"``` | 名前空間 (GUID) と名前でプロパティを識別します。         |
 | "*{type} {guid} **Id** {id}*"     | ```"IntegerArray {8ECCC264-6880-4EBE-992F-8888D2EEAA1D} Id 0x8013"```        | 名前空間 (GUID) と識別子でプロパティを識別します。   |
-
 
 ### <a name="rest-api-operations"></a>REST API の操作
  

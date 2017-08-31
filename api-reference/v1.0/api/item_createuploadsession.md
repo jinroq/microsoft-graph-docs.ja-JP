@@ -7,12 +7,14 @@
 1. [アップロード セッションを作成する](#create-an-upload-session)
 2. [アップロード セッションにバイトをアップロードする](#upload-bytes-to-the-upload-session)
 
-## <a name="prerequisites"></a>前提条件
-この API を実行するには、以下のいずれかの**スコープ**が必要です。
+## <a name="permissions"></a>アクセス許可
+この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](../../../concepts/permissions_reference.md)」を参照してください。
 
-* Files.ReadWrite
-* Files.ReadWrite.All
-* Sites.ReadWrite.All
+|アクセス許可の種類      | アクセス許可 (特権の小さいものから大きいものへ)              |
+|:--------------------|:---------------------------------------------------------|
+|委任 (職場または学校のアカウント) | Files.ReadWrite、Files.ReadWrite.All、Sites.ReadWrite.All    |
+|委任 (個人用 Microsoft アカウント) | Files.ReadWrite、Files.ReadWrite.All    |
+|アプリケーション | Sites.ReadWrite.All |
 
 > **注**:この API では、Files.ReadWrite.All のアプリケーション アクセス許可は、まだサポートされていません。近日中のフルサポートが予定されています。 
 
@@ -45,7 +47,6 @@ POST /me/drive/items/{parent-item-id}:/{filename}:/createUploadSession
 | 名前       | 値 | 説明                                                                                                                                                            |
 |:-----------|:------|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | *if-match* | etag  | この要求ヘッダーが含まれていて、指定された eTag (または cTag) がアイテムの現在の etag に一致しない場合には、`412 Precondition Failed` エラー応答が返されます。 |
-
 
 ### <a name="response"></a>応答
 この要求への応答により、新たに作成された [uploadSession](../resources/uploadsession.md) の詳細 (ファイルの各部分をアップロードするために使用される URL など) が指定されます。 

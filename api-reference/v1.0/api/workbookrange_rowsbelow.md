@@ -2,8 +2,15 @@
 
 指定した範囲の下にある特定の行数を取得します。
 
-## <a name="prerequisites"></a>前提条件
-この API を実行するために必要な**スコープ**は、次のとおりです。_Files.Read、Files.ReadWrite_
+## <a name="permissions"></a>アクセス許可
+この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](../../../concepts/permissions_reference.md)」を参照してください。
+
+|アクセス許可の種類      | アクセス許可 (特権の小さいものから大きいものへ)              |
+|:--------------------|:---------------------------------------------------------|
+|委任 (職場または学校のアカウント) | Files.ReadWrite    |
+|委任 (個人用 Microsoft アカウント) | サポートされていません。    |
+|アプリケーション | サポートされていません。 |
+
 ## <a name="http-request"></a>HTTP 要求
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -24,8 +31,7 @@ POST /me/drive/root/workbook/worksheets/{id}/range/rowsBelow(count=n)
 
 ## <a name="request-body"></a>要求本文
 
-## <a name="response"></a>応答
-
+### <a name="response"></a>応答
 成功した場合、このメソッドは `200, OK` 応答コードと、応答本文で [workbookRange](../resources/range.md) オブジェクトを返します。
 
 ## <a name="example"></a>例

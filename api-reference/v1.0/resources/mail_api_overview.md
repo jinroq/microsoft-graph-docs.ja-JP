@@ -22,7 +22,7 @@ GET /me/mailFolders('SentItems')/messages?$select=sender,subject
 
 Microsoft Graph API には、メッセージの一般的なユース ケースをサポートするメソッドとアクションも用意されています。
 
-| ユース ケース           | REST リソース    | 関連項目 |
+| ユース ケース        | REST リソース | 関連項目 |
 |:---------------|:--------|:----------|
 | **ユーザー指向のアクション** | | |
 | メッセージを下書き、読み取り、返信、転送、送信、更新、削除する | [message](../resources/message.md) | [message のメソッド](../resources/message.md#methods) |
@@ -38,9 +38,6 @@ Microsoft Graph API には、メッセージの一般的なユース ケース�
 | **アプリ開発** | | |
 | 拡張機能を使用してカスタム アプリ データをメッセージに追加する | [openTypeExtension](../resources/opentypeextension.md)、 <br>[schemaExtension](../resources/schemaextension.md) | [拡張機能を使用してカスタム データをリソースに追加する](../../../concepts/extensibility_overview.md) |
 | 公開の度合いが不十分の Outlook MAPI プロパティのカスタム データにアクセスする | [singleValueLegacyExtendedProperty](../resources/singlevaluelegacyextendedproperty.md)、 <br> [multiValueLegacyExtendedProperty](../resources/multivaluelegacyextendedproperty.md) | [Outlook の拡張プロパティの概要](../resources/extended-properties-overview.md) |
-
-
-
 
 ## <a name="next-steps"></a>次の手順
 メール API は、ユーザーと連携するための新しい方法を開発することができます。 

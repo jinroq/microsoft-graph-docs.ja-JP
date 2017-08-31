@@ -6,24 +6,27 @@
 
 特殊なフォルダーは、まだ存在していない場合、アプリケーションが最初に書き込みを試行したときに自動的に作成されます。ユーザーが削除した場合は、もう一度書き込まれたときに再作成されます。
 
-**注:**読み取り専用のアクセス許可が付与されているときに、存在していない特殊フォルダーを要求すると、`403 Forbidden` エラーが返されます。
+>**注:**読み取り専用のアクセス許可が付与されているときに、存在していない特殊フォルダーを要求すると、`403 Forbidden` エラーが返されます。
 
 ## <a name="permissions"></a>アクセス許可
+
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](../../../concepts/permissions_reference.md)」を参照してください。
 
-|アクセス許可の種類      | アクセス許可 (特権の小さいものから大きいものへ)              | 
-|:--------------------|:---------------------------------------------------------| 
-|委任 (職場または学校のアカウント) | Files.Read、Files.ReadWrite、Files.Read.All、Files.ReadWrite.All、Sites.Read.All、Sites.ReadWrite.All    | 
-|委任 (個人用 Microsoft アカウント) | Files.Read、Files.ReadWrite、Files.Read.All、Files.ReadWrite.All、Files.ReadWrite.AppFolder    | 
-|アプリケーション | Files.Read.All、Files.ReadWrite.All、Sites.Read.All、Sites.ReadWrite.All | 
+|アクセス許可の種類                        | アクセス許可 (特権の小さいものから大きいものへ)                                                           |
+|:--------------------------------------|:------------------------------------------------------------------------------------------------------|
+|委任 (職場または学校のアカウント)     | Files.Read、Files.ReadWrite、Files.Read.All、Files.ReadWrite.All、Sites.Read.All、Sites.ReadWrite.All |
+|委任 (個人用 Microsoft アカウント) | Files.Read、Files.ReadWrite、Files.Read.All、Files.ReadWrite.All、Files.ReadWrite.AppFolder           |
+|アプリケーション                            | Files.Read.All、Files.ReadWrite.All、Sites.Read.All、Sites.ReadWrite.All                              |
 
 ## <a name="http-request"></a>HTTP 要求
+
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/drive/special/{name}
 ```
 ## <a name="optional-query-parameters"></a>オプションのクエリ パラメーター
-このメソッドは、応答をカスタマイズするための [OData クエリ パラメーター](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters)をサポートします。
+
+このメソッドは、応答をカスタマイズするための `$expand` および `$select` [OData クエリ パラメーター](../../../concepts/query_parameters.md)をサポートします。
 
 ## <a name="request-headers"></a>要求ヘッダー
 
@@ -31,8 +34,8 @@ GET /me/drive/special/{name}
 |:--------------|:-------|:--------------------------|
 | Authorization | string | ベアラー {トークン}。必須。 |
 
-
 ## <a name="request-body"></a>要求本文
+
 このメソッドには、要求本文を指定しません。
 
 ## <a name="response"></a>応答
@@ -42,6 +45,7 @@ GET /me/drive/special/{name}
 ## <a name="example"></a>例
 
 ##### <a name="request"></a>要求
+
 以下はユーザーのドライブの要求例です。
 
 <!-- {
@@ -74,7 +78,7 @@ Content-type: application/json
 
 ## <a name="remarks"></a>注釈
 
-特殊フォルダーの子を要求する場合は、`children` コレクションを要求するか、子コレクションを展開する [expand](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) オプションを使用します。
+特殊フォルダーの子を要求する場合は、`children` コレクションを要求するか、子コレクションを展開する [$expand](../../../concepts/query_parameters.md) オプションを使用します。
 
 
 <!-- {

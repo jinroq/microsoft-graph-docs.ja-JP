@@ -1,10 +1,14 @@
 # <a name="range-lastcell"></a>範囲:LastCell
 
 範囲内の最後のセルを取得します。たとえば、"B2:D5" の最後のセルは "D5" になります。
-## <a name="prerequisites"></a>前提条件
-この API を実行するために必要な**スコープ**は、次のとおりです。 
+## <a name="permissions"></a>アクセス許可
+この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](../../../concepts/permissions_reference.md)」を参照してください。
 
-    * Files.ReadWrite
+|アクセス許可の種類      | アクセス許可 (特権の小さいものから大きいものへ)              |
+|:--------------------|:---------------------------------------------------------|
+|委任 (職場または学校のアカウント) | Files.ReadWrite    |
+|委任 (個人用 Microsoft アカウント) | サポートされていません。    |
+|アプリケーション | サポートされていません。 |
 
 ## <a name="http-request"></a>HTTP 要求
 <!-- { "blockType": "ignored" } -->
@@ -19,10 +23,10 @@ GET /workbook/tables/{id|name}/columns/{id|name}/range/LastCell
 |:---------------|:----------|
 | Authorization  | ベアラー {トークン}。必須。 |
 
-
 ## <a name="request-body"></a>要求本文
 
 ## <a name="response"></a>応答
+
 成功した場合、このメソッドは `200, OK` 応答コードと、応答本文で [Range](../resources/range.md) オブジェクトを返します。
 
 ## <a name="example"></a>例

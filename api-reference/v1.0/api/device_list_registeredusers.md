@@ -1,8 +1,8 @@
 # <a name="list-registeredusers"></a>registeredUsers を一覧表示する
 
 デバイスの登録ユーザーの一覧を取得します。
-## <a name="prerequisites"></a>前提条件
-この API を実行するには、以下のいずれかの**スコープ**が必要です。 
+## <a name="permissions"></a>アクセス許可
+この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](../../../concepts/permissions_reference.md)」を参照してください。
 - *Device.ReadWrite.All* と *User.ReadBasic.All*
 - *Directory.Read.All*
 - *Directory.ReadWrite.All* 

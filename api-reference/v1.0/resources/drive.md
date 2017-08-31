@@ -45,17 +45,17 @@ OneDrive のユーザーは、少なくとも 1 つのドライブ (そのユー
 
 | プロパティ             | 型                          | 説明                                                                                                                                                                                                                      |
 | :------------------- | :---------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| id                   | 文字列                        | ドライブの一意識別子。読み取り専用です。                                                                                                                                                                                   |
+| id                   | String                        | ドライブの一意識別子。読み取り専用。                                                                                                                                                                                   |
 | createdBy            | [identitySet][]               | アイテムを作成したユーザーの ID、デバイス、アプリケーション。読み取り専用です。                                                                                                                                                  |
 | createdDateTime      | dateTimeOffset                | アイテム作成の日時。読み取り専用です。                                                                                                                                                                                       |
 | driveType            | String                        | このリソースで表されるドライブの種類についての説明。OneDrive 個人用のドライブは `personal` を返します。OneDrive for Business は `business` を返します。SharePoint ドキュメント ライブラリは `documentLibrary` を返します。読み取り専用。 |
 | lastModifiedBy       | [identitySet][]               | アイテムを最終更新したユーザーの ID、デバイス、アプリケーション。読み取り専用です。                                                                                                                                           |
-| lastModifiedDateTime | dateTimeOffset                | アイテムが最後に変更された日時。読み取り専用。                                                                                                                                                                             |
+| lastModifiedDateTime | dateTimeOffset                | アイテムが最後に変更された日時。読み取り専用です。                                                                                                                                                                             |
 | name                 | string                        | アイテムの名前。読み取り/書き込み。                                                                                                                                                                                                |
-| 所有者                | [identitySet](identityset.md) | 省略可能。ドライブを所有しているユーザー アカウント。読み取り専用です。                                                                                                                                                                       |
+| owner                | [identitySet](identityset.md) | 省略可能。ドライブを所有しているユーザー アカウント。読み取り専用です。                                                                                                                                                                       |
 | クォータ                | [quota](quota.md)             | 省略可能。ドライブの記憶領域クォータに関する情報。読み取り専用です。                                                                                                                                                          |
 | sharepointIds        | [sharepointIds][]             | SharePoint REST 互換性に役立つ識別子を返します。読み取り専用です。                                                                                                                                                         |
-| webUrl               | string (URL)                  | ブラウザーでリソースを表示する URL。読み取り専用です。                                                                                                                                                                        |
+| webUrl               | string (URL)                  | ブラウザーでリソースを表示するための URL。読み取り専用です。                                                                                                                                                                        |
 
 [identitySet]: identityset.md
 [sharepointIds]: sharepointids.md
@@ -67,7 +67,6 @@ OneDrive のユーザーは、少なくとも 1 つのドライブ (そのユー
 | items        | [driveitem](driveitem.md) コレクション | ドライブに含まれているすべてのアイテム。読み取り専用。Null 許容型。                   |
 | root         | [driveitem](driveitem.md)            | ドライブのルート フォルダー。読み取り専用。                                 |
 | special      | [driveitem](driveitem.md) コレクション | OneDrive で使用可能な共通フォルダーのコレクション。読み取り専用。Null 許容型。 |
-
 
 ## <a name="methods"></a>メソッド
 

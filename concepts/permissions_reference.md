@@ -146,27 +146,27 @@ Microsoft アカウントでは、委任されたアクセス許可の _Contacts
 
 ---
 
-## <a name="microsoft-intune-device-management-permissions"></a>Microsoft Intune デバイス管理のアクセス許可
+## <a name="intune-device-management-permissions"></a>Intune デバイス管理のアクセス許可
 
 #### <a name="delegated-permissions"></a>委任されたアクセス許可
 
-なし。
+|   アクセス許可    |  表示文字列   |  説明 | 管理者の同意が必要 |
+|:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
+| _DeviceManagementApps.Read.All_ | Microsoft Intune アプリの読み取り | アプリで、Microsoft Intune で管理されるアプリ、アプリの構成、アプリ保護ポリシーについて、プロパティ、グループの割り当て、状態を読み取れるようにします。 | 必要 |
+| _DeviceManagementApps.ReadWrite.All_ | Microsoft Intune アプリの読み取りおよび書き込み | アプリで、Microsoft Intune で管理されるアプリ、アプリの構成、アプリ保護ポリシーについて、プロパティ、グループの割り当て、状態を読み書きできるようにします。 | はい |
+| _DeviceManagementConfiguration.Read.All_ | Microsoft Intune のデバイスの構成とポリシーの読み取り | アプリで、Microsoft Intune で管理されるデバイス構成のプロパティおよびデバイスのコンプライアンス ポリシーとそのポリシーのグループへの割り当てを読み取れるようにします。 | 必要 |
+| _DeviceManagementConfiguration.ReadWrite.All_ | Microsoft Intune のデバイスの構成とポリシーの読み取りおよび書き込み  | アプリで、Microsoft Intune で管理されるデバイスの構成のプロパティおよびデバイスのコンプライアンス ポリシーとそのポリシーのグループへの割り当てを読み書きできるようにします。 | はい |
+| _DeviceManagementManagedDevices.PrivilegedOperations.All_ | Microsoft Intune デバイスでユーザーに影響を与えるリモート操作を実行する | アプリで、デバイスのワイプや Microsoft Intune で管理されるデバイスのパスコードのリセットなど、影響の大きいリモート操作を実行できるようにします。 | はい |
+| _DeviceManagementManagedDevices.Read.All_ | Microsoft Intune デバイスの読み取り | アプリで、Microsoft Intune で管理されるデバイスのプロパティを読み取れるようにします。 | 必要 |
+| _DeviceManagementManagedDevices.ReadWrite.All_ | Microsoft Intune デバイスの読み取りおよび書き込み | アプリで、Microsoft Intune で管理されるデバイスのプロパティを読み書きできるようにします。リモート ワイプやデバイスの所有者のパスワードのリセットなど、影響の大きい操作は許可されません。 | はい |
+| _DeviceManagementRBAC.Read.All_ | Microsoft Intune RBAC の設定の読み取り | アプリで、Microsoft Intune のロール ベースのアクセス制御 (RBAC) の設定に関連するプロパティを読み取れるようにします。 | 必要 |
+| _DeviceManagementRBAC.ReadWrite.All_ | Microsoft Intune RBAC の設定の読み取りおよび書き込み | アプリで、Microsoft Intune のロール ベースのアクセス制御 (RBAC) の設定に関連するプロパティを読み書きできるようにします。 | はい |
+| _DeviceManagementServiceConfig.Read.All_ | Microsoft Intune 構成の読み取り | アプリで、デバイスの登録やサード パーティのサービスの接続構成を含む Intune サービスのプロパティを読み取れるようにします。 | はい |
+| _DeviceManagementServiceConfig.ReadWrite.All_ | Microsoft Intune 構成の読み取りおよび書き込み | アプリで、デバイスの登録やサード パーティのサービスの接続構成を含む Microsoft Intune サービスのプロパティを読み書きできるようにします。 | はい |
 
 #### <a name="application-permissions"></a>アプリケーションのアクセス許可
 
-|   アクセス許可    |  表示文字列   |  説明 | 管理者の同意の要不要 |
-|:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
-| _DeviceManagementServiceConfig.Read.All_ | Microsoft Intune 構成の読み取り (プレビュー) | アプリで、デバイスの登録やサード パーティのサービスの接続構成を含む Microsoft Intune サービスのプロパティを読み取れるようにします。 | 必要 |
-| _DeviceManagementServiceConfig.ReadWrite.All_ | Microsoft Intune 構成の読み取りおよび書き込み (プレビュー) | アプリで、デバイスの登録やサード パーティのサービスの接続構成を含む Microsoft Intune サービスのプロパティを読み書きできるようにします。 | 必要 |
-| _DeviceManagementConfiguration.Read.All_ | Microsoft Intune のデバイスの構成とポリシーの読み取り (プレビュー) | アプリで、Microsoft Intune で管理されるデバイス構成のプロパティおよびデバイスのコンプライアンス ポリシーとそのポリシーのグループへの割り当てを読み取れるようにします。 | 必要 |
-| _DeviceManagementConfiguration.ReadWrite.All_ | Microsoft Intune のデバイスの構成とポリシーの読み取りおよび書き込み (プレビュー) | アプリで、Microsoft Intune で管理されるデバイスの構成のプロパティおよびデバイスのコンプライアンス ポリシーとそのポリシーのグループへの割り当てを読み書きできるようにします。 | 必要 |
-| _DeviceManagementApps.Read.All_ | Microsoft Intune アプリの読み取り (プレビュー) | アプリで、Microsoft Intune で管理されるアプリ、アプリの構成、アプリ保護ポリシーについて、プロパティ、グループの割り当て、状態を読み取れるようにします。 | 必要 |
-| _DeviceManagementApps.ReadWrite.All_ | Microsoft Intune アプリの読み取りおよび書き込み (プレビュー) | アプリで、Microsoft Intune で管理されるアプリ、アプリの構成、アプリ保護ポリシーについて、プロパティ、グループの割り当て、状態を読み書きできるようにします。 | 必要 |
-| _DeviceManagementRBAC.Read.All_ | Microsoft Intune RBAC の設定の読み取り (プレビュー) | アプリで、Microsoft Intune のロール ベースのアクセス制御 (RBAC) の設定に関連するプロパティを読み取れるようにします。 | 必要 |
-| _DeviceManagementRBAC.ReadWrite.All_ | Microsoft Intune RBAC の設定の読み取りおよび書き込み (プレビュー) | アプリで、Microsoft Intune のロール ベースのアクセス制御 (RBAC) の設定に関連するプロパティを読み書きできるようにします。 | 必要 |
-| _DeviceManagementManagedDevices.Read.All_ | Microsoft Intune デバイスの読み取り (プレビュー) | アプリで、Microsoft Intune で管理されるデバイスのプロパティを読み取れるようにします。 | 必要 |
-| _DeviceManagementManagedDevices.ReadWrite.All_ | Microsoft Intune デバイスの読み取りおよび書き込み (プレビュー) | アプリで、Microsoft Intune で管理されるデバイスのプロパティを読み書きできるようにします。リモート ワイプやデバイスの所有者のパスワードのリセットなど、影響の大きい操作は許可されません。 | 必要 |
-| _DeviceManagementManagedDevices.PrivilegedOperations.All_ | Microsoft Intune デバイスでユーザーに影響を与えるリモート操作を実行する (プレビュー) | アプリで、デバイスのワイプや Microsoft Intune で管理されるデバイスのパスコードのリセットなど、影響の大きいリモート操作を実行できるようにします。 | 必要 |
+なし。
 
 ### <a name="remarks"></a>注釈
 > **注:**Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
@@ -306,15 +306,18 @@ _Directory.ReadWrite.All_ アクセス許可は、次に示す特権を付与し
 | _Group.ReadWrite.All_ | すべてのグループの読み取りと書き込み | アプリで、グループの作成、グループ メンバーシップの読み取りと更新、グループの削除ができるようにします。これらの操作はすべて、サインインしているユーザーなしで、アプリで実行できます。すべてのグループ API が、アプリ専用のアクセス許可を使用したアクセスをサポートするわけではないことに注意してください。例については、「[既知の問題](../concepts/known_issues.md)」を参照してください。| 必要 |
 
 
-### <a name="remarks"></a>備考
+### <a name="remarks"></a>注釈
 
-グループ機能は、Microsoft アカウントではサポートされません。 
+グループ機能は、個人用 Microsoft アカウントではサポートされません。 
 
-Office 365 グループの場合は、グループのアクセス許可により、グループのコンテンツ (会話、ファイル、メモなど) へのアクセスがアプリに許可されます。また、グループのアクセス許可は、[Microsoft Planner](../api-reference/beta/resources/planner_overview.md) のリソースと API へのアクセスを制御するためにも使用されます。
+Office 365 グループの場合は、グループのアクセス許可により、グループのコンテンツ (会話、ファイル、メモなど) へのアクセスがアプリに許可されます。 
 
 アプリケーションのアクセス許可については、サポートされる API についていくつかの制限があります。詳細については、「[既知の問題](../concepts/known_issues.md)」を参照してください。
 
 場合によっては、アプリは一部のグループ プロパティ (`member` や `memberOf` など) の読み取りに[ディレクトリのアクセス許可](#directory-permissions)を必要とすることがあります。たとえば、グループにメンバーとして 1 つ以上の [servicePrincipals](../api-reference/beta/resources/serviceprincipal.md) が含まれている場合、アプリは _Directory.\*_ アクセス許可のいずれかによって付与されるサービス プリンシパルを読み取るための有効なアクセス許可が必要になります。このアクセス許可がない場合、Microsoft Graph はエラーを返します (委任されたアクセス許可の場合、サインインしているユーザーも、サービス プリンシパルを読み取るために、組織内の十分な権限が必要です)。同様のガイダンスは、[administrativeUnits](../api-reference/beta/resources/administrativeunit.md) を返す `memberOf` プロパティにも当てはまります。
+
+また、グループのアクセス許可は、[Microsoft Planner](../api-reference/beta/resources/planner_overview.md) のリソースと API へのアクセスを制御するためにも使用されます。Microsoft Planner API では委任されたアクセス許可のみがサポートされます。アプリケーション アクセス許可はサポートされません。個人用 Microsoft アカウントはサポートされません。
+
 
 ### <a name="example-usage"></a>使用例
 #### <a name="delegated"></a>委任
@@ -532,14 +535,14 @@ Azure AD v2.0 エンドポイントでは、_scope_ パラメーターで_offlin
 
 |   アクセス許可    |  表示文字列   |  説明 | 管理者の同意の要不要 |
 |:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
-| _People.Read_ |    ユーザーに関係する連絡先リストの読み取り | アプリで、サインインしているユーザーに関連する人物のスコアの付いたリストを読み取れるようにします。リストには、個人の連絡先、ソーシャル ネットワーキングまたは組織のディレクトリからの連絡先、最近 (電子メール、Skype などで) 連絡した人を含めることができます。 | 不要 |
-| _People.Read.All_ | すべてのユーザーに関係する連絡先リストの読み取り | サインインしたユーザー、またはサインインしているユーザーの組織内の他のユーザーに関連する、ユーザーのスコアの付いたリストを、アプリで読み取れるようにします。リストには、個人の連絡先、ソーシャル ネットワーキングまたは組織のディレクトリからの連絡先、最近 (電子メール、Skype などで) 連絡した人を含めることができます。また、サインインしているユーザーの組織のディレクトリ全体を、アプリで検索することもできます。 | 必要 |
+| _People.Read_ |    ユーザーに関係する連絡先リストの読み取り | アプリで、サインインしているユーザーに関連する人物のスコアの付いたリストを読み取れるようにします。リストには、個人の連絡先、ソーシャル ネットワーキングまたは組織のディレクトリからの連絡先、最近 (電子メール、Skype などで) 連絡した人を含めることができます。 | いいえ |
+| _People.Read.All_ | すべてのユーザーに関係する連絡先リストの読み取り | サインインしたユーザー、またはサインインしているユーザーの組織内の他のユーザーに関連する、ユーザーのスコアの付いたリストを、アプリで読み取れるようにします。リストには、個人の連絡先、ソーシャル ネットワーキングまたは組織のディレクトリからの連絡先、最近 (電子メール、Skype などで) 連絡した人を含めることができます。また、サインインしているユーザーの組織のディレクトリ全体を、アプリで検索することもできます。 | はい |
 
 #### <a name="application-permissions"></a>アプリケーションのアクセス許可
 
 |   アクセス許可    |  表示文字列   |  説明 | 管理者の同意の要不要 |
 |:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
-| _People.Read.All_ | すべてのユーザーに関係する連絡先リストの読み取り | サインインしたユーザー、またはサインインしているユーザーの組織内の他のユーザーに関連する、ユーザーのスコアの付いたリストを、アプリで読み取れるようにします。リストには、個人の連絡先、ソーシャル ネットワーキングまたは組織のディレクトリからの連絡先、最近 (電子メール、Skype などで) 連絡した人を含めることができます。また、サインインしているユーザーの組織のディレクトリ全体を、アプリで検索することもできます。 | 必要 |
+| _People.Read.All_ | すべてのユーザーに関係する連絡先リストの読み取り | サインインしたユーザー、またはサインインしているユーザーの組織内の他のユーザーに関連する、ユーザーのスコアの付いたリストを、アプリで読み取れるようにします。リストには、個人の連絡先、ソーシャル ネットワーキングまたは組織のディレクトリからの連絡先、最近 (電子メール、Skype などで) 連絡した人を含めることができます。また、サインインしているユーザーの組織のディレクトリ全体を、アプリで検索することもできます。 | はい |
 
 ### <a name="remarks"></a>注釈
 
@@ -592,9 +595,12 @@ People.Read.All アクセス許可は会社用および学校用のアカウン�
 
 #### <a name="application-permissions"></a>アプリケーションのアクセス許可
 
-なし。
+|   アクセス許可    |  表示文字列   |  説明 | 管理者の同意の要不要 |
+|:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
+| _Sites.Read.All_ |    すべてのサイト コレクションにおけるアイテムの読み取り (プレビュー) | アプリは、サインインしているユーザーなしで、すべてのサイト コレクション内のドキュメントを読み取り、アイテムを一覧表示できます。 | はい |
+| _Sites.ReadWrite.All_ |    すべてのサイト コレクション内のアイテムの読み取りおよび書き込み (プレビュー) | アプリは、サインインしているユーザーなしで、すべてのサイト コレクション内のドキュメントの作成、読み取り、更新、削除と、アイテムの一覧表示を行うことができます。 | はい |
 
-### <a name="remarks"></a>備考
+### <a name="remarks"></a>注釈
 サイトのアクセス許可は、職場または学校アカウントでのみ有効です。
 
 ### <a name="example-usage"></a>使用例
@@ -602,7 +608,6 @@ People.Read.All アクセス許可は会社用および学校用のアカウン�
 
 * _Sites.Read.All_: SharePoint ルート サイトのリストを読み取ります (`GET /beta/sharePoint/site/lists`)
 * _Sites.ReadWrite.All_: SharePoint リストに新しいリスト アイテムを作成します (`POST /beta/sharePoint/site/lists/123/items`)
-
 
 より複雑な複数のアクセス許可を伴うシナリオについては、「[アクセス許可のシナリオ](#permission-scenarios)」を参照してください。
 
@@ -663,7 +668,7 @@ _共有_のアクセス許可は、現時点では職場または学校アカウ
 | _User.ReadWrite.All_ |   すべてのユーザーの完全なプロファイルの読み取りと書き込み | サインインしているユーザーなしで、組織内の別のユーザーのプロファイル プロパティ、グループ メンバーシップ、部下、上司の完全なセットをアプリで読み書きできるようにします。また、アプリで非管理ユーザーの作成と削除もできるようにします。ユーザーのパスワードのリセットはできません。 | はい |
 | _User.Invite.All_  |     組織へのゲスト ユーザーの招待 | サインインしているユーザーなしで、ゲスト ユーザーをアプリで組織に招待できるようにします。 | 必要 |
 
-### <a name="remarks"></a>備考
+### <a name="remarks"></a>注釈
 
 Microsoft アカウントで有効なアクセス許可は、_User.Read_ および _User.ReadWrite_ のみです。職場または学校アカウントの場合は、すべてのアクセス許可が有効になります。
 

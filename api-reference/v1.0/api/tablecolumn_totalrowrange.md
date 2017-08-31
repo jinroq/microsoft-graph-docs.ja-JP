@@ -1,10 +1,14 @@
 # <a name="tablecolumn-totalrowrange"></a>TableColumn: TotalRowRange
 
 列の集計行に関連付けられた範囲オブジェクトを取得します。
-## <a name="prerequisites"></a>前提条件
-この API を実行するために必要な**スコープ**は、次のとおりです。 
+## <a name="permissions"></a>アクセス許可
+この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](../../../concepts/permissions_reference.md)」を参照してください。
 
-    * Files.ReadWrite
+|アクセス許可の種類      | アクセス許可 (特権の小さいものから大きいものへ)              |
+|:--------------------|:---------------------------------------------------------|
+|委任 (職場または学校のアカウント) | Files.ReadWrite    |
+|委任 (個人用 Microsoft アカウント) | サポートされていません。    |
+|アプリケーション | サポートされていません。 |
 
 ## <a name="http-request"></a>HTTP 要求
 <!-- { "blockType": "ignored" } -->
@@ -17,7 +21,6 @@ POST /workbook/worksheets/{id|name}/tables/{id|name}/columns/{id|name}/TotalRowR
 | 名前       | 説明|
 |:---------------|:----------|
 | Authorization  | ベアラー {トークン}。必須。 |
-
 
 ## <a name="request-body"></a>要求本文
 

@@ -84,7 +84,7 @@
 | プロパティ             | 型                                | 説明                                                                                                                                                               |
 | :------------------- | :---------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | audio                | [audio](audio.md)                   | オーディオのメタデータ (アイテムがオーディオ ファイルである場合)。読み取り専用です。                                                                                                                  |
-| createdBy            | [identitySet](identityset.md)       | そのアイテムを作成したユーザーの ID、デバイス、アプリケーション。読み取り専用です。                                                                                          |
+| createdBy            | [identitySet](identityset.md)       | そのアイテムを作成したユーザーの ID、デバイス、アプリケーション。読み取り専用。                                                                                          |
 | createdDateTime      | DateTimeOffset                      | アイテム作成の日時。読み取り専用です。                                                                                                                                |
 | cTag                 | String                              | アイテムのコンテンツの eTag。メタデータのみが変更された場合、この eTag は変更されません。**注:** アイテムがフォルダーである場合、このプロパティは返されません。読み取り専用です。 |
 | deleted              | [deleted](deleted.md)               | アイテムの削除状態に関する情報。読み取り専用です。                                                                                                               |
@@ -105,7 +105,7 @@
 | remoteItem           | [remoteItem](remoteitem.md)         | リモート アイテムのデータ (現在アクセス中のドライブ以外のドライブから共有されているアイテムの場合)。読み取り専用です。                                                                        |
 | root                 | [root](root.md)                     | このプロパティが null ではない場合は、driveItem がドライブで最上位の driveItem であることを示します。                                                                     |
 | searchResult         | [searchResult](searchresult.md)     | 検索のメタデータ (検索結果に由来するアイテムの場合)。読み取り専用です。                                                                                                          |
-| 共有               | [shared](shared.md)                 | アイテムが他のユーザーと共有されていることを示し、アイテムの共有状態に関する情報を提供します。読み取り専用です。                                               |
+| shared               | [shared](shared.md)                 | アイテムが他のユーザーと共有されていることを示し、アイテムの共有状態に関する情報を提供します。読み取り専用です。                                               |
 | sharepointIds        | [sharepointIds](sharepointids.md)   | SharePoint REST 互換性に役立つ識別子を返します。読み取り専用です。                                                                                                  |
 | size                 | Int64                               | アイテムのサイズ (バイト単位)。読み取り専用です。                                                                                                                                     |
 | specialFolder        | [specialFolder](specialfolder.md)   | 現在のアイテムが特別なフォルダーとしても使用可能な場合は、このファセットが返されます。読み取り専用です。                                                                             |
@@ -123,9 +123,8 @@
 | children           | [driveitem](driveitem.md) コレクション       | アイテムの直接の子のアイテム オブジェクトを格納するコレクション。子が含まれるのは、フォルダーを表すアイテムのみです。読み取り専用です。Null 許容型。                                        |
 | createdByUser      | [user](user.md)                            | そのアイテムを作成したユーザーの ID、デバイス、アプリケーション。読み取り専用です。                                                                                                  |
 | lastModifiedByUser | [user](user.md)                            | アイテムを最終更新したユーザーの ID、デバイス、アプリケーション。読み取り専用です。                                                                                            |
-| アクセス許可        | [permission](permission.md) コレクション     | アイテムのアクセス許可のセット。読み取り専用です。Null 許容型。                                                                                                                         |
+| permissions        | [permission](permission.md) コレクション     | アイテムのアクセス許可のセット。読み取り専用です。Null 許容型。                                                                                                                         |
 | thumbnails         | [thumbnailSet](thumbnailset.md) コレクション | アイテムに関連付けられた [ThumbnailSet](thumbnailSet.md) オブジェクトを格納するコレクション。詳細については、[サムネイルの取得](../api/thumbnailset_get.md)についてのページをご覧ください。読み取り専用です。Null 許容型。 |
-
 
 ## <a name="instance-attributes"></a>インスタンスの属性
 
@@ -160,7 +159,6 @@
 | [アクセス許可を追加する](../api/item_invite.md)               | `POST /drive/items/{item-id}/invite`     |
 | [アクセス許可を一覧表示する](../api/item_list_permissions.md)    | `GET /drive/items/{item-id}/permissions` |
 | [アクセス許可を削除する](../api/permission_delete.md)       | `DELETE /drive/items/{item-id}/permissions/{perm-id}` |
-
 
 ## <a name="remarks"></a>備考
 

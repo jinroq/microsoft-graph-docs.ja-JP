@@ -32,7 +32,7 @@ OneNote ノートブックのページです。
 
 ```
 ## <a name="properties"></a>プロパティ
-| プロパティ       | 型    |説明|
+| プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
 |content|Stream|ページの HTML コンテンツ。|
 |contentUrl|String|ページの HTML コンテンツの URL。読み取り専用です。|
@@ -47,7 +47,7 @@ OneNote ノートブックのページです。
 |title|String|ページのタイトル。 |
 
 ## <a name="relationships"></a>リレーションシップ
-| リレーションシップ | 型    |説明|
+| リレーションシップ | 型   |説明|
 |:---------------|:--------|:----------|
 |parentNotebook|[Notebook](notebook.md)|ページを含むノートブック。読み取り専用です。|
 |parentSection|[Section](section.md)|ページを含むセクション。読み取り専用です。|
@@ -60,7 +60,6 @@ OneNote ノートブックのページです。
 |[Update page content](../api/page_update.md) | なし |ページの HTML コンテンツを更新します。 |
 |[Delete page](../api/page_delete.md) | なし |ページを削除します。 |
 |[copyToSection](../api/page_copytosection.md)| なし |特定のセクションにページをコピーします。|
-
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

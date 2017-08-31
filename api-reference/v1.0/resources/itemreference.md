@@ -34,8 +34,7 @@
 | shareId       | String                            | [共有](../api/shares_get.md) API 経由でアクセスできる共有リソースの一意識別子。 |
 | sharepointIds | [sharepointIds](sharepointids.md) | SharePoint REST 互換性に役立つ識別子を返します。読み取り専用です。                                   |
 
-
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 **itemReference** リソースからの **driveItem** を処理するには、次の形式の URL を構築します。
 

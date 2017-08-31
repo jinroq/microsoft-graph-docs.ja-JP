@@ -1,10 +1,14 @@
 # <a name="update-chartfont"></a>Update chartfont
 
 chartfont オブジェクトのプロパティを更新します。
-## <a name="prerequisites"></a>前提条件
-この API を実行するために必要な**スコープ**は、次のとおりです。 
+## <a name="permissions"></a>アクセス許可
+この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](../../../concepts/permissions_reference.md)」を参照してください。
 
-    * Files.ReadWrite
+|アクセス許可の種類      | アクセス許可 (特権の小さいものから大きいものへ)              |
+|:--------------------|:---------------------------------------------------------|
+|委任 (職場または学校のアカウント) | Files.ReadWrite    |
+|委任 (個人用 Microsoft アカウント) | サポートされていません。    |
+|アプリケーション | サポートされていません。 |
 
 ## <a name="http-request"></a>HTTP 要求
 <!-- { "blockType": "ignored" } -->
@@ -18,7 +22,6 @@ PATCH /workbook/worksheets/{id|name}/charts(<name>)/axes/categoryaxis/format/fon
 |:-----------|:-----------|
 | Authorization  | ベアラー {トークン}。必須。 |
 
-
 ## <a name="request-body"></a>要求本文
 要求本文で、更新する関連フィールドの値を指定します。要求本文に含まれない既存のプロパティは、以前の値のままになるか、他のプロパティ値の変化に基づいて再計算されます。最適なパフォーマンスを得るためには、変更されていない既存の値を含めないでください。
 
@@ -29,7 +32,7 @@ PATCH /workbook/worksheets/{id|name}/charts(<name>)/axes/categoryaxis/format/fon
 |italic|boolean|フォントの斜体の状態を表します。|
 |name|string|フォント名 (例: "Calibri")|
 |size|double|フォント サイズ (例: 11)|
-|underline|文字列|フォントに適用する下線の種類。可能な値は、`None`、`Single` です。|
+|underline|string|フォントに適用する下線の種類。可能な値は、`None`、`Single` です。|
 
 ## <a name="response"></a>応答
 

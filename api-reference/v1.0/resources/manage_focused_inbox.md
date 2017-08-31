@@ -17,5 +17,6 @@
 
 **オーバーライドを使用した、送信者ごとに一貫した分類**
 
-[送信者に対するオーバーライドの作成](../api/inferenceclassification_post_overrides.md) | [すべてのユーザーのオーバーライドの一覧表示](../api/inferenceclassification_list_overrides.md) | 
-[送信者に対するオーバーライドの更新](../api/inferenceclassificationoverride_update.md) | [送信者のオーバーライドの削除](../api/inferenceclassificationoverride_delete.md) 
+[送信者のオーバーライドを作成する](../api/inferenceclassification_post_overrides.md) | [ユーザーのすべてのオーバーライドを一覧表示する](../api/inferenceclassification_list_overrides.md) |
+
+[送信者のオーバーライドを更新する](../api/inferenceclassificationoverride_update.md) | [送信者のオーバーライドを削除する](../api/inferenceclassificationoverride_delete.md) 
