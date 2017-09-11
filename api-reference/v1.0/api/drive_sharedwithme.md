@@ -11,7 +11,7 @@
 |委任 (個人用 Microsoft アカウント) | Files.Read.All、Files.ReadWrite.All    |
 |アプリケーション | Files.Read.All、Files.ReadWrite.All、Sites.Read.All、Sites.ReadWrite.All |
 
-さらに、**すべて**の範囲のうちの一つがなければ、この API から返された共有項目はアクセスできません。
+さらに、**すべて**のアクセス許可のうちの一つがなければ、この API から返された共有項目はアクセスできません。
 
 ## <a name="http-request"></a>HTTP 要求
 

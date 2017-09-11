@@ -11,7 +11,7 @@
 |委任 (個人用 Microsoft アカウント) | User.ReadWrite    |
 |アプリケーション | User.ReadWrite.All、Directory.ReadWrite.All |
 
-passwordProfile プロパティを更新するときは、次のスコープが必要です。Directory.AccessAsUser.All。
+passwordProfile プロパティを更新するときは、次のアクセス許可が必要です。Directory.AccessAsUser.All。
 
 ## <a name="http-request"></a>HTTP 要求
 <!-- { "blockType": "ignored" } -->

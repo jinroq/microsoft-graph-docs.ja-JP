@@ -3,10 +3,11 @@
 デバイスの登録ユーザーの一覧を取得します。
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](../../../concepts/permissions_reference.md)」を参照してください。
-- *Device.ReadWrite.All* と *User.ReadBasic.All*
-- *Directory.Read.All*
-- *Directory.ReadWrite.All* 
-- *Directory.AccessAsUser.All*
+
+- Device.ReadWrite.All と User.ReadBasic.All
+- Directory.Read.All
+- Directory.ReadWrite.All 
+- Directory.AccessAsUser.All
 
 ## <a name="http-request"></a>HTTP 要求
 <!-- { "blockType": "ignored" } -->
