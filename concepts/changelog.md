@@ -4,7 +4,44 @@
 
 Microsoft Graph API に関する既知の問題の詳細については、「[既知の問題](known_issues.md)」を参照してください。
 
+## <a name="september-2017"></a>2017 年 9 月
+
+### <a name="outlook-calendar"></a>Outlook カレンダー
+
+|**変更の種類**|**バージョン**|**説明**|
+|:-------------|:-----------|:--------------|
+| 追加 | ベータ版 | **locations** プロパティが [event](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/event) リソースに追加され、出席者が複数の場所から出席できるイベントを編成できるようになりました。 |
+| 追加 | ベータ版 | **locationType** プロパティが [location](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/location) 複合型に追加されました。|
+| 追加 | ベータ版 | **uniqueId** および **uniqueIdType** プロパティが [location](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/location) 複合型に追加されました。 これらのプロパティは、現時点では内部使用に限られます。|
+
+
+### <a name="outlook-inbox-message-rules"></a>Outlook 受信トレイのメッセージ ルール
+
+|**変更の種類**|**バージョン**|**説明**|
+|:-------------|:-----------|:--------------|
+| 追加 | ベータ版 | **messageRules** ナビゲーション プロパティが [mailFolder](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/mailfolder) リソースに追加されました。 **messageRules** は [messageRule](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/messagerule) インスタンスのコレクションです。 |
+| 追加 | ベータ版 | [messageRule](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/messagerule) エンティティと、[messageRuleActions](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/messageruleactions)、[messageRulePredicates](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/messagerulepredicates)、[sizeRange](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/sizerange) 複合型が追加されました。  |
+| 追加 | ベータ版 | メッセージ ルールに次の CRUD 操作が追加されました: [create](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/mailfolder_post_messagerules)、[list](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/mailfolder_list_messagerules)、[get](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/messagerule_get)、[update](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/messagerule_update)、[delete](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/messagerule_delete)。 |
+
+
+### <a name="outlook-user-choices"></a>Outlook のユーザーの選択
+
+|**変更の種類**|**バージョン**|**説明**|
+|:-------------|:-----------|:--------------|
+| 追加 | ベータ版 | 新しい **masterCategories** ナビゲーション プロパティが [outlookUser](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/outlookuser) エンティティに追加されました。  |
+| 追加 | ベータ版 | 新しい [supportedLanguages](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/outlookuser_supportedlanguages) 関数が [outlookUser](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/outlookuser) エンティティに追加されました。  |
+| 追加 | ベータ版 | 新しい [supportedTimeZones](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/outlookuser_supportedtimezones) 関数が [outlookUser](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/outlookuser) エンティティに追加されました。  |
+
+
 ## <a name="august-2017"></a>2017 年 8 月
+
+### <a name="group-lifecycle-policy"></a>グループのライフサイクル ポリシー
+
+|**変更の種類**|**バージョン**|**説明**|
+|:-------------|:-----------|:--------------|
+| 追加 | ベータ版 | [groupLifecyclePolicy](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/grouplifecyclepolicy) エンティティを追加しました。 |
+| 追加 | ベータ版 | グループのライフサイクル ポリシーに、次の API を追加しました。[create](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/grouplifecyclepolicy_post_grouplifecyclepolicies)、[list](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/grouplifecyclepolicy_list)、[get](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/grouplifecyclepolicy_get)、[update](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/grouplifecyclepolicy_update)、[delete](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/grouplifecyclepolicy_delete)、[add group](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/grouplifecyclepolicy_addgroup)、[remove group](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/grouplifecyclepolicy_removegroup)、および [renew a group](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/grouplifecyclepolicy_renewgroup)。 |
+| 追加 | ベータ版 | [group](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/group) エンティティに [List groupLifecylePolicies](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/group_list_grouplifecyclepolicies.md) 関数を追加しました。 |
 
 ### <a name="intune-apis"></a>Intune API
 |変更の種類|バージョン|説明|
@@ -32,27 +69,20 @@ Microsoft Graph API に関する既知の問題の詳細については、「[�
 |変更|ベータ版|[deviceManagementSettings](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_deviceconfig_devicemanagementsettings) 複合型に **secureByDefault** プロパティを追加しました|
 |変更|ベータ版|[windowsUpdateScheduledInstall](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_deviceconfig_windowsupdatescheduledinstall) 複合型に **restartMode** プロパティを追加しました|
 
-
-### <a name="people"></a>People 
-
-|**変更の種類**|**バージョン**|**説明**|
-|:-------------|:-----------|:--------------|
-| 追加 | v1.0 | v1.0 に [People API](../api-reference/v1.0/resources/person.md) を追加しました。People API の詳細については、「[People の関連情報を取得する](people_example.md)」を参照してください。|
-
-### <a name="group-lifecycle-policy"></a>グループのライフサイクル ポリシー
-
-|**変更の種類**|**バージョン**|**説明**|
-|:-------------|:-----------|:--------------|
-| 追加 | ベータ版 | [groupLifecyclePolicy](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/grouplifecyclepolicy) エンティティを追加しました。 |
-| 追加 | ベータ版 | グループのライフサイクル ポリシーに、次の API を追加しました。[create](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/grouplifecyclepolicy_post_grouplifecyclepolicies)、[list](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/grouplifecyclepolicy_list)、[get](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/grouplifecyclepolicy_get)、[update](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/grouplifecyclepolicy_update)、[delete](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/grouplifecyclepolicy_delete)、[add group](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/grouplifecyclepolicy_addgroup)、[remove group](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/grouplifecyclepolicy_removegroup)、および [renew a group](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/grouplifecyclepolicy_renewgroup)。 |
-| 追加 | ベータ版 | [group](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/group) エンティティに [List groupLifecylePolicies](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/group_list_grouplifecyclepolicies.md) 関数を追加しました。 |
-
 ### <a name="onenote"></a>OneNote
 
 |**変更の種類**|**バージョン**|**説明**|
 |:-------------|:-----------|:--------------|
 | 追加 | v1.0 およびベータ版 | [onenote](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/onenote) ナビゲーション プロパティを **site** に追加しました。  |
 | 追加 | ベータ版 | コピー操作用にターゲット *siteCollectionId* とターゲット *siteId* パラメーターを追加しました。次に例を示します。[CopyNotebook](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/notebook_copynotebook)。 |
+
+### <a name="people"></a>複数のユーザー 
+
+|**変更の種類**|**バージョン**|**説明**|
+|:-------------|:-----------|:--------------|
+| 追加 | v1.0 | v1.0 に [People API](../api-reference/v1.0/resources/person.md) を追加しました。People API の詳細については、「[People の関連情報を取得する](people_example.md)」を参照してください。|
+
+
 
 
 ## <a name="july-2017"></a>2017 年 7 月

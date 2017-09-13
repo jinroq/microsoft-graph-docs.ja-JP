@@ -70,9 +70,8 @@ Microsoft アプリ登録ポータルでアプリを登録します。これに�
 
     b.**[プラットフォームの追加]** および **[ネイティブ アプリケーション]** を選択します。
 
-    > **注:**アプリケーション登録ポータルでは、値 *msalYOUR NEW APP ID://auth* のリダイレクト URI が表示されます。組み込みリダイレクト URI は使用しないでください。[Android 用接続サンプル](https://github.com/microsoftgraph/android-java-connect-sample)には、このリダイレクト URI を必要とする MSAL 認証ライブラリが実装されています。[サポートされているサード パーティ製ライブラリ](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-v2-libraries#compatible-client-libraries)または **ADAL** ライブラリを使用している場合は、組み込みのリダイレクト URI を使用する必要があります。
+    > **注:** アプリケーション登録ポータルでは、値 *msalENTER_YOUR_CLIENT_ID://auth* のリダイレクト URI が表示されます。組み込みリダイレクト URI は使用しないでください。[Android 用接続サンプル](https://github.com/microsoftgraph/android-java-connect-sample)には、このリダイレクト URI を必要とする MSAL 認証ライブラリが実装されています。[サポートされているサード パーティ製ライブラリ](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-v2-libraries#compatible-client-libraries)または **ADAL** ライブラリを使用している場合は、組み込みのリダイレクト URI を使用する必要があります。
 
-    ガイド付きセットアップのフローとガイドなしのフロー
 
     a.委任されたアクセス許可を追加します。**profile**、**Mail.ReadWrite**、**Mail.Send**、**Files.ReadWrite**、**User.ReadBasic.All** が必要になります。 
    
@@ -232,27 +231,40 @@ Microsoft アプリ登録ポータルでアプリを登録します。これに�
 
 アクセス トークンと交換できるコードが含まれている認証サーバーの応答をアプリが処理できるようにする必要があります。
 
-1. Connect アプリがアプリケーション登録で構成されたリダイレクト URL への要求を処理できることを、Android システムに告げる必要があります。これを行うには、**AndroidManifest** ファイルを開き、次の子をプロジェクトの **\<application/\>** 要素に追加します。
+1. Connect アプリがアプリケーション登録で構成されたリダイレクト URL への要求を処理できることを、Android システムに知らせる必要があります。これを行うには、**strings.xml** 文字列リソース ファイルを開き、次の子をプロジェクトの **\<application/\>** 要素に追加します。
+   ```xml
+   <!DOCTYPE resources [
+       <!ENTITY clientId "ENTER_YOUR_CLIENT_ID">
+       ]>
+
+    ...
+    <string name="client_Id">&clientId;</string>
+    <string name="msalPrefix">msal&clientId;</string>
+
+   ```
+
+   文字列リソースは、**AndroidManifest.xml** ファイルで使用されます。 **MSAL** ライブラリは、実行時にクライアント ID を読み込み、REST 応答を **BrowserTabActivity** に定義されているリダイレクト URL に返します。
+
     ```xml
         <uses-sdk tools:overrideLibrary="com.microsoft.identity.msal" />
         <application ...>
             ...
-            <activity
-                android:name="com.microsoft.identity.client.BrowserTabActivity">
-                <intent-filter>
-                    <action android:name="android.intent.action.VIEW" />
-                    <category android:name="android.intent.category.DEFAULT" />
-                    <category android:name="android.intent.category.BROWSABLE" />
-                    <data android:scheme="msalENTER_YOUR_CLIENT_ID"
-                        android:host="auth" />
-                </intent-filter>
-            </activity>
-            <meta-data
-                android:name="https://login.microsoftonline.com/common"
-                android:value="authority string"/>
-            <meta-data
-                android:name="com.microsoft.identity.client.ClientId"
-                android:value="ENTER_YOUR_CLIENT_ID"/>
+           <activity
+               android:name="com.microsoft.identity.client.BrowserTabActivity">
+               <intent-filter>
+                   <action android:name="android.intent.action.VIEW" />
+                   <category android:name="android.intent.category.DEFAULT" />
+                   <category android:name="android.intent.category.BROWSABLE" />
+                   <data android:scheme="@string/msalPrefix"
+                       android:host="auth" />
+               </intent-filter>
+           </activity>
+           <meta-data
+               android:name="https://login.microsoftonline.com/common"
+               android:value="authority string"/>
+           <meta-data
+               android:name="com.microsoft.identity.client.ClientId"
+               android:value="@string/client_Id"/>
         </application>
     ```
 2. **MSAL**ライブラリは、登録ポータルによって割り当てられたアプリケーション ID にアクセスする必要があります。**MSAL ライブラリは、アプリケーション ID を「クライアント ID」として参照します**。これは、ライブラリのコンストラクターで渡したアプリケーション コンテキストからアプリケーション ID (クライアント ID) を取得します。 

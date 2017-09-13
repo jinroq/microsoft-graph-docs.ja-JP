@@ -2,7 +2,7 @@
 
 このセクションの記事では、Microsoft Graph に接続するアプリをさまざまな言語および開発プラットフォームで構築する方法を詳しく説明します。各記事では、まず該当するプラットフォームのサンプル スターター プロジェクトを説明し、次いでユーザー認証の機能を追加する手順を説明し、そのアカウントから Microsoft Graph でメールを送信するためのサンプル要求を作成します。完成したプロジェクトは、そのプラットフォーム用の [Microsoft Graph リポジトリの Connect サンプル](https://github.com/microsoftgraph?utf8=%E2%9C%93&query=connect)とまったく同じものです。
 
-好みの認証プロバイダーと開発プラットフォームについて説明した記事を選び、Microsoft Graph への接続を開始します。
+好みの認証プロバイダーと開発プラットフォームについて説明した記事を選び、Microsoft Graph への接続を開始します。 詳細については、「[v2.0 エンドポイントの相違点](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-v2-compare)」を参照してください。
 
 選んだ開発プラットフォームについての記事に記載されている手順に従うことも、[クイック スタート](https://developer.microsoft.com/graph/quick-start)機能を試してみて、動作するソリューションをすばやく稼働させることもできます。
 
@@ -114,6 +114,7 @@
 </table>
 
 ## <a name="see-also"></a>関連項目
-- サンプルの REST 呼び出しを [API エクスプローラー](https://developer.microsoft.com/graph/graph-explorer)で試してみてください。
-- [Azure AD エンドポイントのドキュメント](https://azure.microsoft.com/documentation/services/active-directory/)
-- [Azure AD v2.0 エンドポイントのドキュメント](https://azure.microsoft.com/documentation/articles/?service=active-directory&term=azure+ad+v2.0)
+
+- サンプルの REST 呼び出しを [API エクスプローラー](https://graph.microsoft.io/graph-explorer)で試してみてください。
+- [Azure AD エンドポイントのドキュメント](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-developers-guide)
+- [Azure AD v2.0 エンドポイントのドキュメント](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-appmodel-v2-overview)

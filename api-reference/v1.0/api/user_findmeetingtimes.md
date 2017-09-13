@@ -77,7 +77,7 @@ POST /users/{id|userPrincipalName}/findMeetingTimes
 |:-----|:-----|:-----|
 |Dana | 空き | 100% |
 |John | 不明 | 49% |
-|Fanny | 多忙 | 0% |
+|Samantha | 多忙 | 0% |
 
 この場合、出席の平均見込みである会議時間の提案の信頼度は、(100% + 49% + 0%)/3 = 49.66% です。
 
@@ -114,8 +114,8 @@ Content-Type: application/json
     { 
       "type": "required",  
       "emailAddress": { 
-        "name": "Fanny Downs",
-        "address": "fannyd@contoso.onmicrosoft.com" 
+        "name": "Samantha Booth",
+        "address": "samanthab@contoso.onmicrosoft.com" 
       } 
     }
   ],  
@@ -188,7 +188,7 @@ Content-Length: 976
                     "attendee":{
                         "type":"required",
                         "emailAddress":{
-                            "address":"fannyd@contoso.onmicrosoft.com"
+                            "address":"samanthab@contoso.onmicrosoft.com"
                         }
                     }
                 }
@@ -219,7 +219,7 @@ Content-Length: 976
                     "attendee":{
                         "type":"required",
                         "emailAddress":{
-                            "address":"fannyd@contoso.onmicrosoft.com"
+                            "address":"samanthab@contoso.onmicrosoft.com"
                         }
                     }
                 }

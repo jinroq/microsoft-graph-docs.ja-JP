@@ -34,7 +34,7 @@ Prefer: outlook.timezone="{time-zone-string}}"
 
 **findMeetingTimes** への 2 回の呼び出しには、次のパラメーターが含まれます。**findMeetingTimes** のすべての[パラメーター](../api-reference/v1.0/api/user_findmeetingtimes.md#request-body)は省略可能です。
 
-- **attendees**: 1 人の出席者、Fanny Downs を **type** プロパティの `required` として設定します
+- **attendees**: 1 人の出席者、Samantha Booth を **type** プロパティの `required` として設定します
 - **locationConstraint**: 場所の提案は必要ありません
 - **timeConstraint**: 最初の呼び出しは、4 月 18 日午前 9 時から 4 月 20 日午後 5 時までの日付/時間範囲を検索します。最初の呼び出しが日時を提案することに失敗した後、2 番目の呼び出しは 4 月 21 日の午前 9 時から午後 5 時で検索します。
 - **meetingDuration**: 2 時間
@@ -59,8 +59,8 @@ Content-type: application/json
     { 
       "type": "required",  
       "emailAddress": { 
-        "name": "Fanny Downs",
-        "address": "fannyd@contoso.onmicrosoft.com" 
+        "name": "Samantha Booth",
+        "address": "samanthab@contoso.onmicrosoft.com" 
       } 
     }
   ],  
@@ -134,8 +134,8 @@ Content-type: application/json
     { 
       "type": "required",  
       "emailAddress": { 
-        "name": "Fanny Downs",
-        "address": "fannyd@contoso.onmicrosoft.com" 
+        "name": "Samantha Booth",
+        "address": "samanthab@contoso.onmicrosoft.com" 
       } 
     }
   ],  
@@ -208,7 +208,7 @@ Content-Length: 714
                     "attendee":{
                         "type":"required",
                         "emailAddress":{
-                            "address":"fannyd@contoso.onmicrosoft.com"
+                            "address":"samanthab@contoso.onmicrosoft.com"
                         }
                     }
                 }

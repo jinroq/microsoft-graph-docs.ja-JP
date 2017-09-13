@@ -78,7 +78,7 @@
 
 ## <a name="delta-query-request-examples"></a>デルタ クエリ要求の例 
 
-- [カレンダー ビューのイベントへの増分の変更を取得する](../Concepts/delta_query_events.md)
+- [カレンダー ビューのイベントへの増分の変更を取得する](../concepts/delta_query_events.md)
 - [フォルダー内のメッセージへの増分の変更を取得する](./delta_query_messages.md)
 - [グループへの増分の変更を取得する](./delta_query_groups.md)
 - [ユーザーへの増分の変更を取得する](./delta_query_users.md)
