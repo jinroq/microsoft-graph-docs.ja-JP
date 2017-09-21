@@ -2,7 +2,9 @@
 
 Microsoft Graph にはオプションのクエリ パラメーターがあり、応答で返されるデータの量を指定したり制御したりするために使用できます。次のクエリ パラメーターがサポートされています。
 
-|名前|説明|例 (例をクリックして [Graph エクスプローラー][graph-explorer]で試行します)
+>**注:**例をクリックして [Graph エクスプローラー][graph-explorer]で試行します。
+
+|名前|説明|例|
 |:---------------|:--------|:-------|
 |[$count](#count)|一致するリソースの総数を取得します。|[`/me/messages?$top=2&$count=true`](https://developer.microsoft.com/graph/graph-explorer?request=me/messages?$top=2%26$count=true&method=GET&version=v1.0)
 |[$expand](#expand)|関連リソースを取得します。|[`/groups?$expand=members`](https://developer.microsoft.com/graph/graph-explorer?request=groups$expand=members&method=GET&version=v1.0)
@@ -14,13 +16,13 @@ Microsoft Graph にはオプションのクエリ パラメーターがあり、
 |[$skipToken](#skiptoken)|複数ページにわたる結果セットから、結果の次のページを取得します。(一部の API では代わりに `$skip` を使用します。) | `https://graph.microsoft.com/v1.0/users?$skiptoken=X%274453707402000100000017 ... 65612D643839392D343230372D613033662D306332623836633432363932B900000000000000000000%27`
 |[$top](#top)|結果のページ サイズを設定します。 |[`/users?$top=2`](https://developer.microsoft.com/graph/graph-explorer?request=users?$top=2&method=GET&version=v1.0)
 
-これらのパラメーターは、[OData V4 クエリ言語][odata-query]と互換性があります。すべての Microsoft Graph API で全部のパラメーターがサポートされているわけではなく、`v1.0` エンドポイントと `beta` エンドポイントの間でサポートが大幅に異なる場合があります。 
+これらのパラメーターは、[OData V4 クエリ言語][odata-query]と互換性があります。 すべての Microsoft Graph API で全部のパラメーターがサポートされているわけではなく、`v1.0` エンドポイントと `beta` エンドポイントの間でサポートが大幅に異なる場合があります。 
 
 > **注:**`beta` エンドポイントでは、`$` プレフィックスはオプションです。たとえば、`$filter` の代わりに、`filter` を使用しても同じです。詳細および例については、「[Microsoft Graph における $ プレフィックスのないクエリ パラメーターのサポート](http://dev.office.com/queryparametersinMicrosoftGraph)」を参照してください。
 
-**クエリ パラメーターのエンコード:**
+## <a name="encoding-query-parameters"></a>クエリ パラメーターのエンコード
 
-クエリ パラメーターの値はパーセント エンコードされる必要があります。これを行ううえで役立つ HTTP クライアント、ブラウザー、およびツールが多くあります (たとえば [Graph エクスプローラー][graph-explorer])。クエリが失敗する場合、クエリ パラメーターの値が適切にエンコードされていないことがその理由の 1 つとして考えられます。
+クエリ パラメーターの値はパーセント エンコードされる必要があります。 これを行ううえで役立つ HTTP クライアント、ブラウザー、およびツールが多くあります ([Graph エクスプローラー][graph-explorer]など)。 クエリが失敗する場合、クエリ パラメーターの値が適切にエンコードされていないことがその原因の 1 つとして考えられます。
 
 エンコードされていない URL は、次のようになります。
 
@@ -51,7 +53,7 @@ GET  https://graph.microsoft.com/v1.0/me/contacts?$count=true
 
 ## <a name="expand"></a>expand
 
-Microsoft Graph リソースの多くは、宣言されているリソースのプロパティと、他のリソースとのリレーションシップの両方を公開します。これらのリレーションシップは、参照プロパティまたはナビゲーション プロパティとも呼ばれ、1 つのリソースまたはリソースのコレクションのいずれかを参照することができます。たとえば、ユーザーのメール フォルダー、マネージャー、直属の部下は、すべてリレーションシップとして公開されます。 
+Microsoft Graph リソースの多くは、宣言されているリソースのプロパティと、他のリソースとのリレーションシップの両方を公開します。 これらのリレーションシップは、参照プロパティまたはナビゲーション プロパティとも呼ばれ、1 つのリソースまたはリソースのコレクションのいずれかを参照することができます。 たとえば、ユーザーのメール フォルダー、マネージャー、直属の部下は、すべてリレーションシップとして公開されます。 
 
 通常、単一の要求では、リソースの複数のプロパティ、またはリソースのリレーションシップの 1 つのいずれかに対してクエリを実行できますが、両方は行えません。`$expand` クエリ文字列パラメーターを使用して、展開されているリソース、または単一のリレーションシップ (ナビゲーション プロパティ) で参照されているコレクションを結果に含めることができます。
 
@@ -87,11 +89,24 @@ GET https://graph.microsoft.com/v1.0/users?$filter=startswith(displayName,'J')
 
 [Graph エクスプローラーで試す](https://developer.microsoft.com/graph/graph-explorer?request=users?$filter=startswith(givenName,'J')&method=GET&version=v1.0)
 
-`$filter` 演算子へのサポートは、お使いの Microsoft Graph API によって異なります。通常、次の論理演算子はサポートされています。等しい (`eq`)、等しくない (`ne`)、より大きい (`gt`)、以上 (`ge`)、より小さい (`lt`)、以下 (`le`)、かつ (`and`)、または (`or`)、否定 (`not`)。`startswith` 文字列の演算子はたいていサポートされています。`any` ラムダ演算子は、一部の API でサポートされています。いくつかの使用例について、下の表を参照してください。`$filter` 構文の詳細については、「[OData プロトコル][odata-filter]」を参照してください。  
+`$filter` 演算子へのサポートは、お使いの Microsoft Graph API によって異なります。 通常、次の論理演算子がサポートされています。 
+
+- 等しい (`eq`)
+- 等しくない (`ne`)
+- より大きい (`gt`)
+- 以上 (`ge`)
+- より小さい (`lt`)、以下 (`le`)
+- AND (`and`)
+- OR (`or`)
+- NOT (`not`)
+ 
+`startswith` 文字列の演算子はたいていサポートされています。 `any` ラムダ演算子は、一部の API でサポートされています。 いくつかの使用例について、次の表を参照してください。 `$filter` 構文の詳細については、「[OData プロトコル][odata-filter]」を参照してください。  
 
 次の表では、`$filter` クエリ パラメーター使用例を示します。
 
-|説明|例 (例をクリックして [Graph エクスプローラー][graph-explorer]で試行します)|
+>**注:**例をクリックして [Graph エクスプローラー][graph-explorer]で試行します。
+
+|説明|例|
 |:--------|:-------|
 |  複数のプロパティ間で Mary という名前を持つユーザーを検索します。 | [`https://graph.microsoft.com/v1.0/users?$filter=startswith(displayName,'mary') or startswith(givenName,'mary') or startswith(surname,'mary') or startswith(mail,'mary') or startswith(userPrincipalName,'mary')`](https://developer.microsoft.com/graph/graph-explorer?request=users?$filter=startswith(displayName,'mary')+or+startswith(givenName,'mary')+or+startswith(surname,'mary')+or+startswith(mail,'mary')+or+startswith(userPrincipalName,'mary')&method=GET&version=v1.0) |
 | 2017 年 7 月 1 日以降に開始する、サインイン ユーザーのイベントすべてを取得します。 | [`https://graph.microsoft.com/v1.0/me/events?$filter=start/dateTime ge '2017-07-01T08:00'`](https://developer.microsoft.com/graph/graph-explorer?request=me/events?$filter=start/dateTime+ge+'2017-07-01T08:00'&method=GET&version=v1.0) |
@@ -122,7 +137,7 @@ GET https://graph.microsoft.com/v1.0/me/messages?$orderby=from/emailAddress/addr
 
 昇順または降順で結果を並べ替えるには、`asc` または `desc` のいずれかをスペースで区切ってフィールド名の後に追加します。たとえば `?$orderby=name%20desc` のようにします。
 
-一部の API では、複数のプロパティの結果を並べ替えることができます。たとえば、次のような要求ではユーザーの受信トレイ内のメッセージを、最初は送信者の名前で降順に並べ替え (Z から A)、次に件名で昇順 (既定) に並べ替えます。
+一部の API では、複数のプロパティの結果を並べ替えることができます。 たとえば、次のような要求ではユーザーの受信トレイ内のメッセージを、最初は送信者の名前で降順に並べ替え (Z から A)、次に件名で昇順 (既定) に並べ替えます。
 
 ```http
 GET https://graph.microsoft.com/v1.0/me/mailFolders/Inbox/messages?$orderby=from/emailAddress/name desc,subject
@@ -132,7 +147,7 @@ GET https://graph.microsoft.com/v1.0/me/mailFolders/Inbox/messages?$orderby=from
 
  > **注:** [ユーザー](../api-reference/v1.0/resources/user.md)や[グループ](../api-reference/v1.0/resources/group.md)のような、[directoryObject](../api-reference/v1.0/resources/directoryobject.md) から派生した Azure AD リソースの場合、`$orderby` 式と `$filter` 式を結合することはできません。 
 
-## <a name="search"></a>search
+## <a name="search"></a>検索
 
 `$search` クエリ パラメーターを使用して、要求の結果を検索条件と一致するものに制限します。
 
@@ -142,7 +157,21 @@ GET https://graph.microsoft.com/v1.0/me/mailFolders/Inbox/messages?$orderby=from
 
 メッセージの検索条件は、[高度な検索テクニック (AQS)](https://support.office.com/article/Search-Mail-and-People-in-Outlook-com-and-Outlook-on-the-web-for-business-88108edf-028e-4306-b87e-7400bbb40aa7) を使用して表現されます。結果は、メッセージが送信された日時で並べ替えられます。
 
-`$search` で `message` に対する次のプロパティを指定できます: `attachments`、`bccRecipients`、`body`、`category`、`ccRecipients`、`content`、`from`、`hasAttachments`、`participants`、`receivedDateTime`、`sender`、`subject`、`toRecipients`
+`$search` で `message` に対する次のプロパティを指定できます:
+
+- `attachments`
+- `bccRecipients`
+- `body`
+- `category`
+- `ccRecipients`
+- `content`
+- `from`
+- `hasAttachments`
+- `participants`
+- `receivedDateTime`
+- `sender`
+- `subject`
+- `toRecipients`
 
 メッセージで検索を行うときに値のみ指定した場合、検索は既定の検索プロパティである `from`、`subject` および `body` に基づいて行われます。
 
@@ -183,13 +212,13 @@ GET https://graph.microsoft.com/v1.0/me/people/?$search="topic:pizza"
 ```http
 GET https://graph.microsoft.com/v1.0/me/people/?$search="tyl topic:pizza"                
 ```
-この要求は本質的には 2 つの検索を行います。サインイン ユーザーに関連する人物の `displayName` プロパティと `emailAddress` プロパティに対するあいまい検索、そしてユーザーに関連する人物に対する「ピザ」というトピックの検索です。次いで結果をランク付けし、並べ替え、返します。この検索は制限的ではありません。「tyl」とあいまい一致する人物、「ピザ」に関心を示す人物、または両方の結果を取得する可能性があります。
+この要求は本質的には 2 つの検索を行います。サインイン ユーザーに関連する人物の `displayName` プロパティと `emailAddress` プロパティに対するあいまい検索、そしてユーザーに関連する人物に対する「ピザ」というトピックの検索です。 次いで結果をランク付けし、並べ替え、返します。 この検索は制限的ではありません。「tyl」とあいまい一致する人物、「ピザ」に関心を示す人物、または両方の結果を取得する可能性があります。
 
 People API についてもっと知るには、「[関係する人の情報を取得する](./people_example.md)」を参照してください。  
 
 ## <a name="select"></a>select
 
-`$select` クエリ パラメーターを使用して、個別リソースまたはリソースのコレクションの既定値とは異なるプロパティのセットを返します。$Select で、既定のプロパティのサブセットまたはスーパー セットを指定できます。
+`$select` クエリ パラメーターを使用して、個別リソースまたはリソースのコレクションの既定値とは異なるプロパティのセットを返します。 $Select で、既定のプロパティのサブセットまたはスーパー セットを指定できます。
 
 たとえば、サインイン ユーザーのメッセージを取得するとき、`from` プロパティと `subject` プロパティだけを返すよう指定できます。
 
@@ -199,7 +228,7 @@ GET https://graph.microsoft.com/v1.0/me/messages?$select=from,subject
 
 [Graph エクスプローラーで試す](https://developer.microsoft.com/graph/graph-explorer?request=me/messages?$select=from,subject&method=GET&version=v1.0)
 
-> **重要:**通常は、`$select` を使用して、クエリから返されるプロパティをお使いのアプリで必要なものだけに制限することをお勧めします。これは特に、クエリが大きな結果セットを返す可能性がある場合に該当します。行ごとに返されるプロパティを制限すれば、ネットワークの負荷を軽減し、アプリのパフォーマンスを向上させることができます。
+> **重要:**通常は、`$select` を使用して、クエリから返されるプロパティをお使いのアプリで必要なものだけに制限することをお勧めします。 これは特に、クエリが大きな結果セットを返す可能性がある場合に該当します。 行ごとに返されるプロパティを制限すれば、ネットワークの負荷を軽減し、アプリのパフォーマンスを向上させることができます。
 >
 > `v1.0`では、[ユーザー](../api-reference/v1.0/resources/user.md)と[グループ](../api-reference/v1.0/resources/group.md)のような、[directoryObject](../api-reference/v1.0/resources/directoryobject.md) から派生した一部の Azure AD リソースは、読み取り時に制限された既定値のプロパティ サブセットを返します。既定のセット以外のプロパティを返すには、これらのリソースに対して `$select` を使用する必要があります。  
 
@@ -212,7 +241,7 @@ GET  https://graph.microsoft.com/v1.0/me/events?$orderby=createdDateTime&$skip=2
 ```
 [Graph エクスプローラーで試す](https://developer.microsoft.com/graph/graph-explorer?request=me/events?$orderby=createdDateTime&$skip=20&method=GET&version=v1.0)
 
-> **注:** Outlook メール/カレンダーなどいくつかの Microsoft Graph API (`message`、`event`、`calendar`) は、`$skip` を使用してページングを実装します。クエリの結果が複数ページにまたがる場合、これらの API は`@odata:nextLink` プロパティと共に `$skip` パラメーターが含まれる URL を返します。この URL を使用して、結果の次のページに戻れます。詳細については、「[ページング](./paging.md)」を参照してください。
+> **注:**Outlook メール/カレンダーなどいくつかの Microsoft Graph API (`message`、`event`、`calendar`) は、`$skip` を使用してページングを実装します。 クエリの結果が複数ページにまたがる場合、これらの API は `@odata:nextLink` プロパティと共に `$skip` パラメーターが含まれる URL を返します。 この URL を使用して、結果の次のページに戻れます。 詳細については、「[ページング](./paging.md)」を参照してください。
 
 ## <a name="skiptoken"></a>skipToken
 
@@ -223,7 +252,7 @@ GET  https://graph.microsoft.com/v1.0/me/events?$orderby=createdDateTime&$skip=2
 
 `$top` クエリ パラメーターを使用して、結果セットのページ サイズを指定します。 
 
-残りの結果セットにさらに項目がある場合、応答本文に `@odata.nextLink` パラメーターが含まれます。このパラメーターには、結果の次のページを取得するために使用できる URL が含まれています。詳細については、「[ページング](./paging.md)」を参照してください。 
+結果セットにさらに項目が残っている場合、応答本文に `@odata.nextLink` パラメーターが含まれます。 このパラメーターには、結果の次のページを取得するために使用できる URL が含まれています。 詳細については、「[ページング](./paging.md)」を参照してください。 
 
 たとえば、次の要求はユーザーのメールボックスの最初の 5 つのメッセージを返します。
 
@@ -255,7 +284,7 @@ https://graph.microsoft.com/beta/me?$expand=photo
 }
 ```
 
-ただし、要求で指定されたクエリ パラメーターが警告なしで失敗する可能性があるため、注意が必要です。これは、クエリ パラメーターがサポートされていない場合や、クエリ パラメーターの組み合わせがサポートされていない場合に起こり得ます。その場合、要求によって返されたデータを調べ、指定したクエリ パラメーターに期待どおりの効果があったかどうかを確認する必要があります。 
+ただし、要求で指定されたクエリ パラメーターが警告なしで失敗する可能性があるため、注意が必要です。 これは、クエリ パラメーターがサポートされていない場合や、クエリ パラメーターの組み合わせがサポートされていない場合に起こり得ます。 その場合、要求によって返されたデータを調べ、指定したクエリ パラメーターに期待どおりの効果があったかどうかを確認する必要があります。 
 
 [graph-explorer]: https://developer.microsoft.com/graph/graph-explorer
 [odata-filter]: http://docs.oasis-open.org/odata/odata/v4.0/errata03/os/complete/part2-url-conventions/odata-v4.0-errata03-os-part2-url-conventions-complete.html#_Toc453752358
