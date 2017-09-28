@@ -22,6 +22,7 @@ POST /groups/{id}/unsubscribeByMail
 | Authorization  | ベアラー {トークン}。必須。  |
 
 ## <a name="request-body"></a>要求本文
+このメソッドには、要求本文を指定しません。
 
 ## <a name="response"></a>応答
 成功した場合、このメソッドは `200, OK` 応答コードを返します。応答本文には何も返されません。
