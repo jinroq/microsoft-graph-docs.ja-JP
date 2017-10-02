@@ -67,7 +67,7 @@
 | 個人用連絡先フォルダー | [contactFolder](../api-reference/v1.0/resources/contactfolder.md) リソースの[デルタ](../api-reference/v1.0/api/contactfolder_delta.md)関数 |
 | フォルダー内の個人用連絡先 | [連絡先](../api-reference/v1.0/resources/contact.md)リソースの[デルタ](../api-reference/v1.0/api/contact_delta.md)関数 |
 | ユーザー | [ユーザー](../api-reference/v1.0/resources/user.md)リソースの[デルタ](../api-reference/v1.0/api/user_delta.md)関数 | 
-| ドライブの項目\* | [driveItem](../api-reference/v1.0/resources/driveItem.md) リソースの[デルタ](../api-reference/v1.0/api/item_delta.md)関数 |
+| ドライブの項目\* | [driveItem](../api-reference/v1.0/resources/driveitem.md) リソースの[デルタ](../api-reference/v1.0/api/driveitem_delta.md)関数 |
 
 
 > \* OneDrive リソースの使用パターンは、他のサポートされているリソースと似ていますが、構文には若干の違いがあります。ドライブのデルタ クエリは、他のリソースの種類との一貫性を保つために将来更新されます。現在の構文の詳細については、<https://developer.microsoft.com/ja-jp/graph/docs/api-reference/v1.0/api/item_delta> を参照してください。

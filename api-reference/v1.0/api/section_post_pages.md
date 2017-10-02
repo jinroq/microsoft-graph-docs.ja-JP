@@ -1,6 +1,7 @@
 # <a name="create-page"></a>page を作成する
 
 指定されたセクションに新しい[ページ](../resources/page.md)を作成します。
+
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](../../../concepts/permissions_reference.md)」を参照してください。
 

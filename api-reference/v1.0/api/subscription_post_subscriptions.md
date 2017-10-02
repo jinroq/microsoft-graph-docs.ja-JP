@@ -121,7 +121,7 @@ Content-length: 7
    ]
 }
 ```
-ドライブ サブスクリプションから通知を受信した場合は、resourceData が null になるため、[差分](item_delta.md) API を呼び出して、発生した変更を判別しなければなりません。ドライブ通知の例を次に示します。
+ドライブ サブスクリプションから通知を受信した場合は、resourceData が null になるため、[差分](driveitem_delta.md) API を呼び出して、発生した変更を判別しなければなりません。ドライブ通知の例を次に示します。
 ```http
 {
   "subscriptionId": "aa269f87-2a92-4cff-a43e-2771878c3727",
