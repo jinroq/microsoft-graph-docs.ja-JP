@@ -1,6 +1,6 @@
 # <a name="message-createforward"></a>メッセージ: createForward
 
-転送メッセージの下書きを作成します。その後、下書きを[更新](../api/message_update.md)または[送信](../api/message_send.md)できます。
+指定した[メッセージ](../resources/message.md)を転送するための下書きを作成します。 下書きを[更新](../api/message_update.md)して**本文**にコンテンツを追加したり、その他のメッセージのプロパティを変更することも、下書きをそのまま[送信](../api/message_send.md)することもできます。
 
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](../../../concepts/permissions_reference.md)」を参照してください。
@@ -26,6 +26,7 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/createForwar
 | Content-Type | string  | エンティティ本文内のデータの性質です。必須。 |
 
 ## <a name="request-body"></a>要求本文
+このメソッドには、要求本文を指定しません。
 
 ## <a name="response"></a>応答
 
@@ -41,24 +42,6 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/createForwar
 }-->
 ```http
 POST https://graph.microsoft.com/v1.0/me/messages/{id}/createForward
-Content-type: application/json
-Content-length: 248
-
-{
-  "comment": "Comment-value",
-  "toRecipients": [
-    {
-      "emailAddress": {
-        "address": "address-value"
-      }
-    },
-    {
-      "emailAddress": {
-        "address": "address-value"
-      }
-    }
-  ]
-}
 ```
 
 ##### <a name="response"></a>応答

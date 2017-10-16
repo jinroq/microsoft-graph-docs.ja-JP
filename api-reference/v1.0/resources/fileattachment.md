@@ -19,7 +19,7 @@
 ## <a name="properties"></a>プロパティ
 | プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
-|contentBytes|Binary|ファイルのバイナリ コンテンツです。|
+|contentBytes|Binary|base64 でエンコードされたファイルの内容。|
 |contentId|String|Exchange ストア内の添付ファイルの ID。|
 |contentLocation|String|添付ファイルのコンテンツの場所に対応する Uniform Resource Identifier (URI)。|
 |contentType|String|添付ファイルのコンテンツ タイプ。|

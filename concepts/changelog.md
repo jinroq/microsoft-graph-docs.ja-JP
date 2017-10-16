@@ -6,20 +6,128 @@ Microsoft Graph API に関する既知の問題の詳細については、「[�
 
 ## <a name="september-2017"></a>2017 年 9 月
 
+### <a name="intune-apis"></a>Intune API
+
+|変更の種類|バージョン|説明|
+|:---|:---|:---|
+|追加|ベータ版|新しいエンティティを追加しました。<br/>[activeDirectoryWindowsAutopilotDeploymentProfile](../api-reference/beta/resources/intune_enrollment_activedirectorywindowsautopilotdeploymentprofile.md)<br/>[azureADWindowsAutopilotDeploymentProfile](../api-reference/beta/resources/intune_enrollment_azureadwindowsautopilotdeploymentprofile.md)<br/>[deviceEnrollmentConfiguration](../api-reference/beta/resources/intune_onboarding_deviceenrollmentconfiguration.md)<br/>[deviceEnrollmentLimitConfiguration](../api-reference/beta/resources/intune_onboarding_deviceenrollmentlimitconfiguration.md)<br/>[deviceEnrollmentPlatformRestrictionsConfiguration](../api-reference/beta/resources/intune_onboarding_deviceenrollmentplatformrestrictionsconfiguration.md)<br/>[deviceEnrollmentWindowsHelloForBusinessConfiguration](../api-reference/beta/resources/intune_onboarding_deviceenrollmentwindowshelloforbusinessconfiguration.md)<br/>[deviceManagementPartner](../api-reference/beta/resources/intune_onboarding_devicemanagementpartner.md)<br/>[enrollmentConfigurationAssignment](../api-reference/beta/resources/intune_onboarding_enrollmentconfigurationassignment.md)<br/>[windows10EnrollmentCompletionPageConfiguration](../api-reference/beta/resources/intune_onboarding_windows10enrollmentcompletionpageconfiguration.md)<br/>[windows10NetworkBoundaryConfiguration](../api-reference/beta/resources/intune_deviceconfig_windows10networkboundaryconfiguration.md)<br/>[windowsAutopilotDeploymentProfile](../api-reference/beta/resources/intune_enrollment_windowsautopilotdeploymentprofile.md)<br/>[windowsAutopilotDeviceIdentity](../api-reference/beta/resources/intune_enrollment_windowsautopilotdeviceidentity.md)<br/>[windowsAutopilotSettings](../api-reference/beta/resources/intune_enrollment_windowsautopilotsettings.md)<br/>|
+|追加|ベータ版|新しい複合型を追加しました。<br/>[adminConsent](../api-reference/beta/resources/intune_devices_adminconsent.md)<br/>[allDevicesAssignmentTarget](../api-reference/beta/resources/intune_onboarding_alldevicesassignmenttarget.md)<br/>[allLicensedUsersAssignmentTarget](../api-reference/beta/resources/intune_onboarding_alllicensedusersassignmenttarget.md)<br/>[deviceAndAppManagementAssignmentTarget](../api-reference/beta/resources/intune_onboarding_deviceandappmanagementassignmenttarget.md)<br/>[deviceEnrollmentPlatformRestriction](../api-reference/beta/resources/intune_onboarding_deviceenrollmentplatformrestriction.md)<br/>[deviceHealthAttestationState](../api-reference/beta/resources/intune_devices_devicehealthattestationstate.md)<br/>[exclusionGroupAssignmentTarget](../api-reference/beta/resources/intune_onboarding_exclusiongroupassignmenttarget.md)<br/>[groupAssignmentTarget](../api-reference/beta/resources/intune_onboarding_groupassignmenttarget.md)<br/>[outOfBoxExperienceSettings](../api-reference/beta/resources/intune_enrollment_outofboxexperiencesettings.md)<br/>[windowsFirewallNetworkProfile](../api-reference/beta/resources/intune_deviceconfig_windowsfirewallnetworkprofile.md)<br/>[windowsNetworkIsolationCloudResource](../api-reference/beta/resources/intune_deviceconfig_windowsnetworkisolationcloudresource.md)<br/>[windowsNetworkIsolationCloudResourceCollection](../api-reference/beta/resources/intune_deviceconfig_windowsnetworkisolationcloudresourcecollection.md)<br/>[windowsNetworkIsolationIPRangeCollection](../api-reference/beta/resources/intune_deviceconfig_windowsnetworkisolationiprangecollection.md)<br/>[windowsNetworkIsolationPolicy](../api-reference/beta/resources/intune_deviceconfig_windowsnetworkisolationpolicy.md)<br/>[windowsNetworkIsolationResourceCollection](../api-reference/beta/resources/intune_deviceconfig_windowsnetworkisolationresourcecollection.md)<br/>|
+|追加|ベータ版|[windowsAutopilotSettings](../api-reference/beta/resources/intune_enrollment_windowsautopilotsettings.md) に [sync](../api-reference/beta/api/intune_enrollment_windowsautopilotsettings_sync.md) アクションを追加しました |
+|追加|ベータ版|[windowsAutopilotDeploymentProfile](../api-reference/beta/resources/intune_enrollment_windowsautopilotdeploymentprofile.md) に [assign](../api-reference/beta/api/intune_enrollment_windowsautopilotdeploymentprofile_assign.md) アクションを追加しました |
+|追加|ベータ版|[deviceCompliancePolicy](../api-reference/beta/resources/intune_deviceconfig_devicecompliancepolicy.md) に [localActions](../api-reference/beta/api/intune_deviceconfig_devicecompliancepolicy_localactions.md) アクションを追加しました |
+|追加|ベータ版|[deviceEnrollmentConfiguration](../api-reference/beta/resources/intune_onboarding_deviceenrollmentconfiguration.md) に [setPriority](../api-reference/beta/api/intune_onboarding_deviceenrollmentconfiguration_setpriority.md) アクションを追加しました |
+|追加|ベータ版|[deviceEnrollmentConfiguration](../api-reference/beta/resources/intune_onboarding_deviceenrollmentconfiguration.md) に [assign](../api-reference/beta/api/intune_onboarding_deviceenrollmentconfiguration_assign.md) アクションを追加しました |
+|追加|ベータ版|[depOnboardingSetting](../api-reference/beta/resources/intune_onboarding_deponboardingsetting.md) コレクションに uploadDepToken アクションを追加しました |
+|追加|ベータ版|[depOnboardingSetting](../api-reference/beta/resources/intune_onboarding_deponboardingsetting.md) コレクションに syncWithAppleDeviceEnrollmentProgram アクションを追加しました |
+|追加|ベータ版|[managedAppProtection](../api-reference/beta/resources/intune_mam_managedappprotection.md) に updateMobileAppIdentifierDeployments アクションを追加しました |
+|追加|ベータ版|[targetedManagedAppProtection](../api-reference/beta/resources/intune_mam_targetedmanagedappprotection.md) に assign アクションを追加しました |
+|追加|ベータ版|[targetedManagedAppConfiguration](../api-reference/beta/resources/intune_mam_targetedmanagedappconfiguration.md) に assign アクションを追加しました |
+|追加|ベータ版|[windowsInformationProtection](../api-reference/beta/resources/intune_mam_windowsinformationprotection.md) に assign アクションを追加しました |
+|追加|ベータ版|[depOnboardingSetting](../api-reference/beta/resources/intune_onboarding_deponboardingsetting.md) コレクションに getEncryptionPublicKey 関数を追加しました |
+|変更|ベータ版|[androidCompliancePolicy](../api-reference/beta/resources/intune_deviceconfig_androidcompliancepolicy.md) エンティティに、プロパティ **requireSafetyNetAttestationBasicIntegrity**、**requireSafetyNetAttestationCertifiedDevice**、**requireGooglePlayServices**、**requireUpToDateSecurityProviders**、**requireCompanyPortalAppIntegrity**、**conditionStatementId** を追加しました|
+|変更|ベータ版|[androidForWorkCompliancePolicy](../api-reference/beta/resources/intune_deviceconfig_androidforworkcompliancepolicy.md) エンティティに、プロパティ **requireAppVerify**、**requireSafetyNetAttestationBasicIntegrity**、**requireSafetyNetAttestationCertifiedDevice**、**requireGooglePlayServices**、**requireUpToDateSecurityProviders**、**requireCompanyPortalAppIntegrity** を追加しました|
+|変更|ベータ版|[androidForWorkGeneralDeviceConfiguration](../api-reference/beta/resources/intune_deviceconfig_androidforworkgeneraldeviceconfiguration.md) エンティティに、プロパティ **blockCrossProfileCopyPaste** と **requireAppVerify** を追加しました|
+|変更|ベータ版|[androidGeneralDeviceConfiguration](../api-reference/beta/resources/intune_deviceconfig_androidgeneraldeviceconfiguration.md) エンティティに、プロパティ **kioskModeApps** と **requireAppVerify** を追加しました|
+|変更|ベータ版|[androidGeneralDeviceConfiguration](../api-reference/beta/resources/intune_deviceconfig_androidgeneraldeviceconfiguration.md) エンティティから、プロパティ **kioskModeManagedApps** を削除しました|
+|変更|ベータ版|[cloudPkiSubscription](../api-reference/beta/resources/intune_deviceconfig_cloudpkisubscription.md) エンティティから、プロパティ **cloudPkiProvider**、**createdDateTime**、**description**、**lastModifiedDateTime**、**displayName**、**syncStatus**、**lastSyncError**、**lastSyncDateTime**、**credentials**、**trustedRootCertificate**、**version** を削除しました|
+|変更|ベータ版|[deviceConfiguration](../api-reference/beta/resources/intune_deviceconfig_deviceconfiguration.md) エンティティから、プロパティ **assignmentStatus**、**assignmentProgress**、**assignmentErrorMessage** を削除しました|
+|変更|ベータ版|[deviceManagement](../api-reference/beta/resources/intune_androidforwork_devicemanagement.md) エンティティに、**adminConsent** プロパティを追加しました|
+|変更|ベータ版|[iosVppApp](../api-reference/beta/resources/intune_apps_iosvppapp.md) エンティティに、プロパティ **vppTokenOrganizationName**、**vppTokenAccountType**、**vppTokenAppleId** を追加しました|
+|変更|ベータ版|[managedDevice](../api-reference/beta/resources/intune_deviceconfig_manageddevice.md) エンティティに、プロパティ **deviceEnrollmentType**、**wiFiMacAddress**、**deviceHealthAttestationState** を追加しました|
+|変更|ベータ版|[managedDeviceMobileAppConfiguration](../api-reference/beta/resources/intune_apps_manageddevicemobileappconfiguration.md) エンティティに、プロパティ **legacyAppConfiguration** を追加しました|
+|変更|ベータ版|[managedDeviceMobileAppConfigurationDeviceSummary](../api-reference/beta/resources/intune_apps_manageddevicemobileappconfigurationdevicesummary.md) エンティティに、プロパティ **notApplicableCount** を追加しました|
+|変更|ベータ版|[managedDeviceMobileAppConfigurationUserSummary](../api-reference/beta/resources/intune_apps_manageddevicemobileappconfigurationusersummary.md) エンティティに、プロパティ **notApplicableCount** を追加しました|
+|変更|ベータ版|[windows10EndpointProtectionConfiguration](../api-reference/beta/resources/intune_deviceconfig_windows10endpointprotectionconfiguration.md) エンティティに、プロパティ **firewallBlockStatefulFTP**、**firewallIdleTimeoutForSecurityAssociationInSeconds**、**firewallPreSharedKeyEncodingMethod**、**firewallIPSecExemptionsAllowNeighborDiscovery**、**firewallIPSecExemptionsAllowICMP**、**firewallIPSecExemptionsAllowRouterDiscovery**、**firewallIPSecExemptionsAllowDHCP**、**firewallCertificateRevocationListCheckMethod**、**firewallMergeKeyingModuleSettings**、**firewallPacketQueueingMethod**、**firewallProfileDomain**、**firewallProfilePublic**、**firewallProfilePrivate**、**defenderAttackSurfaceReductionExcludedPaths**、**defenderOfficeAppsOtherProcessInjectionType**、**defenderOfficeAppsExecutableContentCreationOrLaunchType**、**defenderOfficeAppsLaunchChildProcessType**、**defenderOfficeMacroCodeAllowWin32ImportsType**、**defenderScriptObfuscatedMacroCodeType**、**defenderScriptDownloadedPayloadExecutionType**、**defenderEmailContentExecutionType**、**defenderGuardMyFoldersType**、**defenderGuardedFoldersAllowedAppPaths**、**defenderAdditionalGuardedFolders**、**defenderNetworkProtectionType**、**defenderExploitProtectionXml**、**defenderExploitProtectionXmlFileName**、**defenderSecurityCenterBlockExploitProtectionOverride**、**appLockerApplicationControl**、**applicationGuardBlockClipboardSharing**、**applicationGuardAllowPrintToPDF**、**applicationGuardAllowPrintToXPS**、**applicationGuardAllowPrintToLocalPrinters**、**applicationGuardAllowPrintToNetworkPrinters**、**bitLockerDisableWarningForOtherDiskEncryption** を追加しました|
+|変更|ベータ版|[windows10GeneralConfiguration](../api-reference/beta/resources/intune_deviceconfig_windows10generalconfiguration.md) エンティティに、プロパティ **displayAppListWithGdiDPIScalingTurnedOn**、**displayAppListWithGdiDPIScalingTurnedOff**、**messagingBlockSync**、**messagingBlockMMS**、**messagingBlockRichCommunicationServices** を追加しました|
+|変更|ベータ版|[windows10GeneralConfiguration](../api-reference/beta/resources/intune_deviceconfig_windows10generalconfiguration.md) エンティティから、プロパティ **bluetoothDeviceName** を削除しました|
+|変更|ベータ版|[windows10TeamGeneralConfiguration](../api-reference/beta/resources/intune_deviceconfig_windows10teamgeneralconfiguration.md) エンティティから、プロパティ **deviceAccountBlockExchangeServices**、**deviceAccountEmailAddress**、**deviceAccountExchangeServerAddress**、**deviceAccountRequirePasswordRotation**、**deviceAccountSessionInitiationProtocolAddress** を削除しました|
+|変更|ベータ版|[androidCompliancePolicy](../api-reference/beta/resources/intune_deviceconfig_androidcompliancepolicy.md) エンティティに、ナビゲーション プロパティ **localActions** を追加しました|
+|変更|ベータ版|[deviceManagement](../api-reference/beta/resources/intune_androidforwork_devicemanagement.md) エンティティに、ナビゲーション プロパティ **windowsAutopilotSettings**、**windowsAutopilotDeviceIdentities**、**windowsAutopilotDeploymentProfiles**、**deviceEnrollmentConfigurations**、**deviceManagementPartners**、**depOnboardingSettings** を追加しました|
+|変更|ベータ版|[deviceManagement](../api-reference/beta/resources/intune_androidforwork_devicemanagement.md) エンティティから、ナビゲーション プロパティ **cloudPkiSubscriptions** を削除しました|
+|変更|ベータ版|[targetedManagedAppConfiguration](../api-reference/beta/resources/intune_mam_targetedmanagedappconfiguration.md) エンティティに、ナビゲーション プロパティ **assignments** を追加しました|
+|変更|ベータ版|[targetedManagedAppProtection](../api-reference/beta/resources/intune_mam_targetedmanagedappprotection.md) エンティティに、ナビゲーション プロパティ **assignments** を追加しました|
+|変更|ベータ版|[windowsInformationProtection](../api-reference/beta/resources/intune_mam_windowsinformationprotection.md) エンティティに、ナビゲーション プロパティ **assignments** を追加しました|
+
+### <a name="onedrive"></a>OneDrive
+
+|**変更の種類**|**バージョン**|**説明**|
+|:-------------|:-----------|:--------------|
+| 追加 | v1.0 | [Drive][] リソースに、プロパティ **system** を追加しました。  |
+| 追加 | v1.0 | [Drive][] リソースに、リレーションシップ **list** を追加しました。 |
+| 追加 | v1.0 | [DriveItem][] リソースに、リレーションシップ **listItem** を追加しました。 |
+| 追加 | v1.0 | [SharedDriveItem][] リソースに、リレーションシップ **list** と **listItem** を追加しました。 |
+| 追加 | v1.0 | 新しい複合型を追加しました。[FolderView][] |
+| 追加 | v1.0 | [Folder][] 複合型に、プロパティ **view** を追加しました。 |
+| 追加 | v1.0 | [ItemReference][] 複合型に、プロパティ **driveType**を追加しました。 |
+| 追加 | v1.0 | [Video][] 複合型に、プロパティ **audioBitsPerSample**、**audioChannels**、**audioFormat**、**audioSamplesPerSecond**、**fourCC**、**frameRate** を追加しました。 |
+| 追加 | ベータ版 | [Drive][Drive-beta] リソースに、プロパティ **system** を追加しました。  |
+| 追加 | ベータ版 | [Drive][Drive-beta] リソースに、リレーションシップ **activities** を追加しました。 |
+| 追加 | ベータ版 | [DriveItem][DriveItem-beta] リソースに、プロパティ **publication** を追加しました。 |
+| 追加 | ベータ版 | [DriveItem][DriveItem-beta] リソースに、リレーションシップ **activities** と **versions** を追加しました。 |
+| 追加 | ベータ版 | 新しいエンティティを追加しました。[DriveItemVersion][DriveItemVersion-beta]、[ItemActivity][ItemActivity-beta]。 |
+| 追加 | ベータ版 | 新しい複合型を追加しました。[CommentAction][CommentAction-beta]、[CreateAction][CreateAction-beta]、[DeleteAction][DeleteAction-beta]、[EditAction][EditAction-beta]、[ItemActionSet][ItemActionSet-beta]、[ItemActivityTimeSet][ItemActivityTimeSet-beta]、[MentionAction][MentionAction-beta]、[MoveAction][MoveAction-beta]、[PublicationFacet][PublicationFacet-beta]、[RenameAction][RenameAction-beta]、[RestoreAction][RestoreAction-beta]、[ShareAction][ShareAction-beta]、[VersionAction][VersionAction-beta]。 |
+| 追加 | ベータ版 | [ItemReference][ItemReference-beta] 複合型に、プロパティ **driveType** を追加しました。 |
+| 削除 | ベータ版 | [SharepointIds][SharepointIds-beta] 複合型から、プロパティ **tenantId** を削除しました。 |
+| 追加 | v1.0 | [Video][Video-beta] 複合型に、プロパティ **audioBitsPerSample**、**audioChannels**、**audioFormat**、**audioSamplesPerSecond**、**fourCC**、**frameRate** を追加しました。 |
+| 追加 | ベータ版 | [DriveItem][DriveItem-beta] リソースに、アクション [CheckIn][CheckIn-beta] と [CheckOut][CheckOut-beta] を追加しました。 |
+| 追加 | ベータ版 | [DriveItem][DriveItem-beta] リソースのアクション [CreateLink][CreateLink-beta] に、プロパティ **expirationDateTime**、**password**、**message**、**recipients** を追加しました。 |
+
+[Drive]: ../api-reference/v1.0/resources/drive.md
+[DriveItem]: ../api-reference/v1.0/resources/driveitem.md
+[SharedDriveItem]: ../api-reference/v1.0/resources/shareddriveitem.md
+[FolderView]: ../api-reference/v1.0/resources/folderview.md
+[Folder]: ../api-reference/v1.0/resources/folder.md
+[ItemReference]: ../api-reference/v1.0/resources/itemreference.md
+[Video]: ../api-reference/v1.0/resources/video.md
+[Drive-beta]: ../api-reference/beta/resources/drive.md
+[DriveItem-beta]: ../api-reference/beta/resources/driveitem.md
+[DriveItemVersion-beta]: ../api-reference/beta/resources/driveitemversion.md
+[ItemActivity-beta]: ../api-reference/beta/resources/itemactivity.md
+[CommentAction-beta]: ../api-reference/beta/resources/commentaction.md
+[CreateAction-beta]: ../api-reference/beta/resources/createaction.md
+[DeleteAction-beta]: ../api-reference/beta/resources/deleteaction.md
+[EditAction-beta]: ../api-reference/beta/resources/editaction.md
+[ItemActionSet-beta]: ../api-reference/beta/resources/itemactionset.md
+[ItemActivityTimeSet-beta]: ../api-reference/beta/resources/itemactivitytimeset.md
+[MentionAction-beta]: ../api-reference/beta/resources/mentionaction.md
+[MoveAction-beta]: ../api-reference/beta/resources/moveaction.md
+[PublicationFacet-beta]: ../api-reference/beta/resources/publicationfacet.md
+[RenameAction-beta]: ../api-reference/beta/resources/renameaction.md
+[RestoreAction-beta]: ../api-reference/beta/resources/restoreaction.md
+[ShareAction-beta]: ../api-reference/beta/resources/shareaction.md
+[VersionAction-beta]: ../api-reference/beta/resources/versionaction.md
+[ItemReference-beta]: ../api-reference/beta/resources/itemreference.md
+[SharepointIds-beta]: ../api-reference/beta/resources/sharepointids.md
+[Video-beta]: ../api-reference/beta/resources/video.md
+[CheckIn-beta]: ../api-reference/beta/api/driveitem_checkin.md
+[CheckOut-beta]: ../api-reference/beta/api/driveitem_checkout.md
+[CreateLink-beta]: ../api-reference/beta/api/driveitem_createlink.md
+
+
 ### <a name="outlook-calendar"></a>Outlook カレンダー
 
 |**変更の種類**|**バージョン**|**説明**|
 |:-------------|:-----------|:--------------|
-| 追加 | ベータ版 | **locations** プロパティが [event](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/event) リソースに追加され、出席者が複数の場所から出席できるイベントを編成できるようになりました。 |
+| 追加 | ベータ版 | [user](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/user) エンティティに、関数 [findRoomLists](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/user_findroomlists) と [findRooms](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/user_findrooms) を追加しました。 |
+| 追加 | ベータ版 | **locations** プロパティが [event](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/event) エンティティに追加され、出席者が複数の場所から出席できるイベントを編成できるようになりました。 |
 | 追加 | ベータ版 | **locationType** プロパティが [location](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/location) 複合型に追加されました。|
 | 追加 | ベータ版 | **uniqueId** および **uniqueIdType** プロパティが [location](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/location) 複合型に追加されました。 これらのプロパティは、現時点では内部使用に限られます。|
+| 変更 | v1.0 およびベータ版 | サインインしているユーザーから委任された適切なアクセス許可がある場合、別のユーザーの ID またはユーザー プリンシパル名を指定して、[カレンダーの取得](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/calendar_get)、または[カレンダー内のイベントの取得](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/user_list_events)を行うことができます (そのユーザーがサインインしているユーザーとそのカレンダーを共有しているか、そのユーザーがサインインしているユーザーにメールボックスを委任している場合)。 |
 
-
-### <a name="outlook-inbox-message-rules"></a>Outlook 受信トレイのメッセージ ルール
+### <a name="outlook-contacts"></a>Outlook の連絡先
 
 |**変更の種類**|**バージョン**|**説明**|
 |:-------------|:-----------|:--------------|
-| 追加 | ベータ版 | **messageRules** ナビゲーション プロパティが [mailFolder](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/mailfolder) リソースに追加されました。 **messageRules** は [messageRule](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/messagerule) インスタンスのコレクションです。 |
+| 変更 | v1.0 およびベータ版 | サインインしているユーザーから委任された適切なアクセス許可がある場合、別のユーザーの ID またはユーザー プリンシパル名を指定して、[連絡先フォルダーの取得](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/contactfolder_get)、または[フォルダー内の連絡先の取得](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/user_list_contacts)を行うことができます (そのユーザーがサインインしているユーザーとそのフォルダーを共有しているか、そのユーザーがサインインしているユーザーにメールボックスを委任している場合)。 |
+
+
+### <a name="outlook-mail"></a>Outlook メール
+
+|**変更の種類**|**バージョン**|**説明**|
+|:-------------|:-----------|:--------------|
+| 追加 | ベータ版 | [message](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/message) エンティティに、プロパティ **internetMessageHeaders** を追加しました。 |
+| 追加 | ベータ版 | [internetMessageHeader](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/internetmessageheader) 複合型を追加しました。|
+| 追加 | ベータ版 | [mailFolder](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/mailfolder) エンティティに、ナビゲーション プロパティ **messageRules** を追加しました。 **messageRules** は [messageRule](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/messagerule) インスタンスのコレクションです。 |
 | 追加 | ベータ版 | [messageRule](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/messagerule) エンティティと、[messageRuleActions](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/messageruleactions)、[messageRulePredicates](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/messagerulepredicates)、[sizeRange](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/sizerange) 複合型が追加されました。  |
 | 追加 | ベータ版 | メッセージ ルールに次の CRUD 操作が追加されました: [create](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/mailfolder_post_messagerules)、[list](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/mailfolder_list_messagerules)、[get](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/messagerule_get)、[update](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/messagerule_update)、[delete](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/messagerule_delete)。 |
 
@@ -28,9 +136,82 @@ Microsoft Graph API に関する既知の問題の詳細については、「[�
 
 |**変更の種類**|**バージョン**|**説明**|
 |:-------------|:-----------|:--------------|
-| 追加 | ベータ版 | 新しい **masterCategories** ナビゲーション プロパティが [outlookUser](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/outlookuser) エンティティに追加されました。  |
+| 追加 | ベータ版 | [outlookUser](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/outlookuser) エンティティに、新しい **masterCategories** ナビゲーション プロパティを追加しました。 **masterCategories** は [outlookCategory](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/outlookCategory) オブジェクトのコレクションです。 |
+| 追加 | ベータ版 | [outlookCategory](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/outlookCategory) エンティティを追加しました。 |
+| 追加 | ベータ版 | [outlookCategory](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/outlookCategory) に次の CRUD 操作を追加しました: [create](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/outlookuser_post_mastercategories)、[get](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/outlookcategory_get)、[update](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/outlookcategory_update)、[delete](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/outlookcategory_delete)。 |
 | 追加 | ベータ版 | 新しい [supportedLanguages](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/outlookuser_supportedlanguages) 関数が [outlookUser](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/outlookuser) エンティティに追加されました。  |
-| 追加 | ベータ版 | 新しい [supportedTimeZones](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/outlookuser_supportedtimezones) 関数が [outlookUser](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/outlookuser) エンティティに追加されました。  |
+| 追加 | ベータ版 | [outlookUser](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/outlookuser) エンティティに、新しい [supportedTimeZones](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/outlookuser_supportedtimezones) 関数を追加しました。  |
+
+
+### <a name="sharepoint-lists"></a>SharePoint リスト
+
+|**変更の種類**|**バージョン**|**説明**|
+|:-------------|:-----------|:--------------|
+| 追加 | v1.0 | 新しいエンティティを追加しました。[ColumnDefinition][]、[ColumnLink][]、[ContentType][]、[List][]、[ListItem][]。 |
+| 追加 | v1.0 | [Site][] リソースに、リレーションシップ **columns**、**contentTypes**、**items**、**lists** を追加しました。 |
+| 追加 | v1.0 | 新しい複合型を追加しました。[BooleanColumn][]、[CalculatedColumn][]、[ChoiceColumn][]、[ContentTypeInfo][]、[ContentTypeOrder][]、[CurrencyColumn][]、[DateTimeColumn][]、[DefaultColumnValue][]、[ListInfo][]、[LookupColumn][]、[NumberColumn][]、[PersonOrGroupColumn][]、[SystemFacet][]、[TextColumn][]。 |
+| 追加 | ベータ版 | 新しいエンティティを追加しました。[BaseItemVersion][BaseItemVersion-beta]、[ColumnLink][ColumnLink-beta]、[ContentType][ContentType-beta]、[ListItemVersion][ListItemVersion-beta]、 |
+| 追加 | ベータ版 | [ColumnDefinition][ColumnDefinition-beta] に、プロパティ **columnGroup**、**currency**、**defaultValue**、**displayName** を追加しました。 |
+| 追加 | ベータ版 | [List][List-beta] リソースに、プロパティ **displayName** と **system** を追加しました。 |
+| 追加 | ベータ版 | [List][List-beta] リソースに、リレーションシップ **activities** と **contentTypes** を追加しました。 |
+| 追加 | ベータ版 | [ListItem][ListItem-beta] リソースに、プロパティ **contentType** を追加しました。 |
+| 追加 | ベータ版 | [ListItem][ListItem-beta] リソースに、リレーションシップ **activities** と **versions** を追加しました。 |
+| 追加 | ベータ版 | [Site][Site-beta] リソースに、リレーションシップ **contentTypes** を追加しました。 |
+| 追加 | ベータ版 | [BooleanColumn][BooleanColumn-beta] 型に、プロパティ **outputType** を追加しました。 |
+| 追加 | ベータ版 | 新しい複合型を追加しました。[ContentTypeInfo][ContentTypeInfo-beta]、[ContentTypeOrder][ContentTypeOrder-beta]、[CurrencyColumn][CurrencyColumn-beta]、[SystemFacet][SystemFacet-beta]。 |
+| 追加 | ベータ版 | [ListInfo][ListInfo-beta] 複合型に、プロパティ **contentTypesEnabled** を追加しました。 |
+| 追加 | ベータ版 | [LookupColumn][LookupColumn-beta] 複合型に、プロパティ **allowUnlimitedLength** を追加しました。 |
+| 変更   | ベータ版 | [LookupColumn][LookupColumn-beta] 複合型のプロパティ **allowMultipleValue** の名前を **allowMultipleValues** に変更しました。 |
+| 変更   | ベータ版 | [PersonOrGroupColumn][PersonOrGroupColumn-beta] 複合型のプロパティ **chooseFrom** の名前を **chooseFromType** に変更しました。 |
+| 削除 | ベータ版 | [NumberColumn][NumberColumn-beta] 複合型から、プロパティ **locale** を削除しました。 |
+| 削除 | ベータ版 | [PersonOrGroupColumn][PersonOrGroupColumn-beta] 複合型から、プロパティ **enforceUniqueValues** を削除しました。 |
+
+[BaseItemVersion-beta]: ../api-reference/beta/resources/baseitemversion.md
+[BooleanColumn-beta]:  ../api-reference/beta/resources/booleanColumn.md
+[BooleanColumn]: ../api-reference/v1.0/resources/booleancolumn.md
+[CalculatedColumn]: ../api-reference/v1.0/resources/calculatedcolumn.md
+[ChoiceColumn]: ../api-reference/v1.0/resources/choicecolumn.md
+[ColumnDefinition-beta]: ../api-reference/beta/resources/columndefinition.md
+[ColumnDefinition]: ../api-reference/v1.0/resources/columndefinition.md
+[ColumnLink-beta]: ../api-reference/beta/resources/columnLink.md
+[ColumnLink]: ../api-reference/v1.0/resources/columnLink.md
+[ContentType-beta]: ../api-reference/beta/resources/contentType.md
+[ContentType]: ../api-reference/v1.0/resources/contentType.md
+[ContentTypeInfo-beta]: ../api-reference/beta/resources/contentTypeInfo.md
+[ContentTypeInfo]: ../api-reference/v1.0/resources/contentTypeInfo.md
+[ContentTypeOrder-beta]: ../api-reference/beta/resources/contentTypeOrder.md
+[ContentTypeOrder]: ../api-reference/v1.0/resources/contentTypeOrder.md
+[CurrencyColumn-beta]: ../api-reference/beta/resources/currencycolumn.md
+[CurrencyColumn]: ../api-reference/v1.0/resources/currencycolumn.md
+[DateTimeColumn]: ../api-reference/v1.0/resources/datetimecolumn.md
+[DefaultColumnValue]: ../api-reference/v1.0/resources/defaultColumnValue.md
+[List-beta]: ../api-reference/beta/resources/list.md
+[List]: ../api-reference/v1.0/resources/list.md
+[ListInfo-beta]: ../api-reference/beta/resources/listinfo.md
+[ListInfo]: ../api-reference/v1.0/resources/listinfo.md
+[ListItem-beta]: ../api-reference/beta/resources/listitem.md
+[ListItem]: ../api-reference/v1.0/resources/listitem.md
+[ListItemVersion-beta]: ../api-reference/beta/resources/listitemversion.md
+[LookupColumn-beta]: ../api-reference/beta/resources/lookupColumn.md
+[LookupColumn]: ../api-reference/v1.0/resources/lookupcolumn.md
+[NumberColumn-beta]: ../api-reference/beta/resources/numberColumn.md
+[NumberColumn]: ../api-reference/v1.0/resources/numbercolumn.md
+[PersonOrGroupColumn-beta]: ../api-reference/beta/resources/personOrGroupColumn.md
+[PersonOrGroupColumn]: ../api-reference/v1.0/resources/personorgroupcolumn.md
+[Site-beta]: ../api-reference/beta/resources/site.md
+[Site]: ../api-reference/v1.0/resources/site.md
+[SystemFacet-beta]: ../api-reference/beta/resources/systemfacet.md
+[SystemFacet]: ../api-reference/v1.0/resources/systemFacet.md
+[TextColumn]: ../api-reference/v1.0/resources/textcolumn.md
+
+
+### <a name="sharepoint-sites"></a>SharePoint サイト
+
+|**変更の種類**|**バージョン**|**説明**|
+|:-------------|:-----------|:--------------|
+| 追加 | ベータ版 | [SiteCollection][SiteCollection-beta] 複合型に、プロパティ **dataLocationCode** と **root** を追加しました。 |
+
+[SiteCollection-beta]: ../api-reference/beta/resources/sitecollection.md
 
 
 ## <a name="august-2017"></a>2017 年 8 月

@@ -1,6 +1,6 @@
 # <a name="message-createreply"></a>メッセージ: createReply
 
-返信メッセージの下書きを作成します。その後、下書きを[更新](../api/message_update.md)または[送信](../api/message_send.md)できます。
+指定した[メッセージ](../resources/message.md)に対する返信の下書きを作成します。 下書きを[更新](../api/message_update.md)して**本文**に返信のコンテンツを追加したり、その他のメッセージのプロパティを変更したりすることも、下書きをそのまま[送信](../api/message_send.md)することもできます。
 
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](../../../concepts/permissions_reference.md)」を参照してください。
@@ -26,6 +26,7 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/createReply
 | Content-Type | string  | エンティティ本文内のデータの性質です。必須。 |
 
 ## <a name="request-body"></a>要求本文
+このメソッドには、要求本文を指定しません。
 
 ## <a name="response"></a>応答
 
@@ -41,12 +42,6 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/createReply
 }-->
 ```http
 POST https://graph.microsoft.com/v1.0/me/messages/{id}/createReply
-Content-type: application/json
-Content-length: 248
-
-{
-  "comment": "comment-value"
-}
 ```
 
 ##### <a name="response"></a>応答

@@ -1,6 +1,15 @@
 # <a name="add-attachment"></a>添付ファイルを追加する
 
 この API を使用して、新しい添付ファイルを作成します。
+
+添付ファイルは、次の種類のいずれかにできます。
+
+* ファイル ([fileAttachment](../resources/fileattachment.md) リソース)。
+* 項目 ([itemAttachment](../resources/itemattachment.md) リソースで表される連絡先、イベント、メッセージ)。
+* ファイルへのリンク ([referenceAttachment](../resources/referenceAttachment.md) リソース)。
+
+これらの添付ファイル リソースのすべての種類は、[attachment](../resources/attachment.md) リソースから派生します。 
+
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](../../../concepts/permissions_reference.md)」を参照してください。
 

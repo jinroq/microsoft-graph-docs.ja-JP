@@ -1,6 +1,15 @@
 # <a name="add-attachment"></a>添付ファイルを追加する
 
 [添付ファイル](../resources/attachment.md)を投稿に追加する場合に、この API を使用します。現在、各 REST 要求の合計サイズは 4 MB に制限されているため、追加できる添付ファイルのサイズは 4 MB 未満に制限されます。
+
+添付ファイルは、次の種類のいずれかにできます。
+
+* ファイル ([fileAttachment](../resources/fileattachment.md) リソース)。
+* 項目 ([itemAttachment](../resources/itemattachment.md) リソースで表される連絡先、イベント、メッセージ)。
+* ファイルへのリンク ([referenceAttachment](../resources/referenceAttachment.md) リソース)。
+
+これらの添付ファイル リソースのすべての種類は、[attachment](../resources/attachment.md) リソースから派生します。 
+
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](../../../concepts/permissions_reference.md)」を参照してください。
 

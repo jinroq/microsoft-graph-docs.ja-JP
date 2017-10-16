@@ -2,6 +2,14 @@
 
 [添付ファイル](../resources/attachment.md)をメッセージに追加する場合に、この API を使用します。 
 
+添付ファイルは、次の種類のいずれかにできます。
+
+* ファイル ([fileAttachment](../resources/fileattachment.md) リソース)。
+* 項目 ([itemAttachment](../resources/itemattachment.md) リソースで表される連絡先、イベント、メッセージ)。
+* ファイルへのリンク ([referenceAttachment](../resources/referenceAttachment.md) リソース)。
+
+これらの添付ファイル リソースのすべての種類は、[attachment](../resources/attachment.md) リソースから派生します。 
+
 既存のメッセージの添付ファイルのコレクションに投稿してそのメッセージに添付ファイルを追加したり、[作成してすぐ送信される](../api/user_sendmail.md)メッセージに添付ファイルを追加したりすることができます。
 
 現在、各 REST 要求の合計サイズは 4 MB に制限されているため、追加できる添付ファイルのサイズは 4 MB 未満に制限されます。
