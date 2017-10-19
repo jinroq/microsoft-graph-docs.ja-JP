@@ -1,59 +1,75 @@
-# <a name="get-permission"></a><span data-ttu-id="57274-101">アクセス許可を取得する</span><span class="sxs-lookup"><span data-stu-id="57274-101">Get permission</span></span>
+---
+author: rgregg
+ms.author: rgregg
+ms.date: 09/10/2017
+title: "アクセス許可の取得"
+ms.openlocfilehash: 34171ca2c862857069f904103681ecc9b1646fc7
+ms.sourcegitcommit: 7aea7a97e36e6d146214de3a90fdbc71628aadba
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 09/28/2017
+---
+# <a name="get-sharing-permission-for-a-file-or-folder"></a><span data-ttu-id="a8ee0-102">ファイルまたはフォルダーの共有アクセス許可を取得する</span><span class="sxs-lookup"><span data-stu-id="a8ee0-102">Get sharing permission for a file or folder</span></span>
 
-<span data-ttu-id="57274-102">アクセス許可オブジェクトのプロパティとリレーションシップを取得します。</span><span class="sxs-lookup"><span data-stu-id="57274-102">Retrieve the properties and relationships of permission object.</span></span>
+<span data-ttu-id="a8ee0-103">特定のアクセス許可リソースに対する、有効な共有アクセス許可を返します。</span><span class="sxs-lookup"><span data-stu-id="a8ee0-103">Return the effective sharing permission for a particular permission resource.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="57274-103">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="57274-103">Permissions</span></span>
-<span data-ttu-id="57274-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](../../../concepts/permissions_reference.md)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="57274-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).</span></span>
+<span data-ttu-id="a8ee0-104">アイテムの有効なアクセス許可は、アイテム自体に直接設定されたアクセス許可、またはアイテムの先祖から継承したアクセス許可の 2 つのソースから取得できます。</span><span class="sxs-lookup"><span data-stu-id="a8ee0-104">Effective permissions of an item can come from two sources: permissions set directly on the item itself or permissions that are inherited from the item's ancestors.</span></span>
 
-|<span data-ttu-id="57274-106">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="57274-106">Permission type</span></span>      | <span data-ttu-id="57274-107">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="57274-107">Permissions (from least to most privileged)</span></span>              |
+<span data-ttu-id="a8ee0-p101">呼び出し元は、`inheritedFrom` プロパティを確認することで、アクセス許可が継承されたものかどうかを区別できます。このプロパティは、アクセス許可の継承元になる先祖を参照する [ItemReference](../resources/itemReference.md) リソースです。</span><span class="sxs-lookup"><span data-stu-id="a8ee0-p101">Callers can differentiate if the permission is inherited or not by checking the `inheritedFrom` property. This property is an [ItemReference](../resources/itemReference.md) resource referencing the ancestor that the permission is inherited from.</span></span>
+
+<span data-ttu-id="a8ee0-107">アイテムに設定された SharePoint アクセス許可レベルは、'SP' というプレフィックス付きで返されます。</span><span class="sxs-lookup"><span data-stu-id="a8ee0-107">SharePoint permission levels set on an item are returned with an 'SP' prefix.</span></span> <span data-ttu-id="a8ee0-108">たとえば、SP.View Only、SP.Limited Access、SP.View Web Analytics Data などです。</span><span class="sxs-lookup"><span data-stu-id="a8ee0-108">For example, SP.View Only, SP.Limited Access, SP.View Web Analytics Data.</span></span> <span data-ttu-id="a8ee0-109">「[SharePoint ロールの完全なリスト](https://technet.microsoft.com/en-us/library/cc721640.aspx#section1)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="a8ee0-109">See [Full list of SharePoint roles](https://technet.microsoft.com/en-us/library/cc721640.aspx#section1).</span></span>
+
+## <a name="permissions"></a><span data-ttu-id="a8ee0-110">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="a8ee0-110">Permissions</span></span>
+
+<span data-ttu-id="a8ee0-p103">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](../../../concepts/permissions_reference.md)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="a8ee0-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).</span></span>
+
+|<span data-ttu-id="a8ee0-113">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="a8ee0-113">Permission type</span></span>      | <span data-ttu-id="a8ee0-114">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="a8ee0-114">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="57274-108">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="57274-108">Delegated (work or school account)</span></span> | <span data-ttu-id="57274-109">Files.Read、Files.ReadWrite、Files.Read.All、Files.ReadWrite.All、Sites.Read.All、Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="57274-109">Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span></span>    |
-|<span data-ttu-id="57274-110">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="57274-110">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="57274-111">Files.Read、Files.ReadWrite、Files.Read.All、Files.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="57274-111">Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All</span></span>    |
-|<span data-ttu-id="57274-112">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="57274-112">Application</span></span> | <span data-ttu-id="57274-113">Files.Read.All、Files.ReadWrite.All、Sites.Read.All、Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="57274-113">Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span></span> |
+|<span data-ttu-id="a8ee0-115">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="a8ee0-115">Delegated (work or school account)</span></span> | <span data-ttu-id="a8ee0-116">Files.Read、Files.ReadWrite、Files.Read.All、Files.ReadWrite.All、Sites.Read.All、Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="a8ee0-116">Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span></span>    |
+|<span data-ttu-id="a8ee0-117">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="a8ee0-117">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="a8ee0-118">Files.Read、Files.ReadWrite、Files.Read.All、Files.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="a8ee0-118">Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All</span></span>    |
+|<span data-ttu-id="a8ee0-119">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="a8ee0-119">Application</span></span> | <span data-ttu-id="a8ee0-120">Files.Read.All、Files.ReadWrite.All、Sites.Read.All、Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="a8ee0-120">Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="57274-114">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="57274-114">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="a8ee0-121">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="a8ee0-121">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
+
 ```http
-GET /me/drive/items/{item-id}/permissions/{perm-id}
-GET /me/drive/root:/{path}:/permissions/{perm-id}
 GET /drives/{drive-id}/items/{item-id}/permissions/{perm-id}
 GET /groups/{group-id}/drive/items/{item-id}/permissions/{perm-id}
+GET /me/drive/items/{item-id}/permissions/{perm-id}
+GET /sites/{site-id}/drive/items/{item-id}/permissions/{perm-id}
+GET /users/{user-id}/drive/items/{item-id}/permissions/{perm-id}
 ```
-## <a name="optional-query-parameters"></a><span data-ttu-id="57274-115">オプションのクエリ パラメーター</span><span class="sxs-lookup"><span data-stu-id="57274-115">Optional query parameters</span></span>
-<span data-ttu-id="57274-116">このメソッドは、応答をカスタマイズするための [OData クエリ パラメーター](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters)をサポートします。</span><span class="sxs-lookup"><span data-stu-id="57274-116">This method supports the [OData Query Parameters](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) to help customize the response.</span></span>
 
-## <a name="request-body"></a><span data-ttu-id="57274-117">要求本文</span><span class="sxs-lookup"><span data-stu-id="57274-117">Request body</span></span>
-<span data-ttu-id="57274-118">このメソッドには、要求本文を指定しません。</span><span class="sxs-lookup"><span data-stu-id="57274-118">Do not supply a request body for this method.</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="a8ee0-122">オプションのクエリ パラメーター</span><span class="sxs-lookup"><span data-stu-id="a8ee0-122">Optional query parameters</span></span>
 
-## <a name="response"></a><span data-ttu-id="57274-119">応答</span><span class="sxs-lookup"><span data-stu-id="57274-119">Response</span></span>
+<span data-ttu-id="a8ee0-123">応答を形成するため、このメソッドは、[$select クエリ パラメーター](../../../concepts/query_parameters.md)をサポートしています。</span><span class="sxs-lookup"><span data-stu-id="a8ee0-123">This method support the [$select query parameter](../../../concepts/query_parameters.md) to shape the response.</span></span>
 
-<span data-ttu-id="57274-120">成功した場合、このメソッドは `200 OK` 応答コードと、応答本文で [Permission](../resources/permission.md) リソースを返します。</span><span class="sxs-lookup"><span data-stu-id="57274-120">If successful, this method returns a `200 OK` response code and [Permission](../resources/permission.md) resource in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="a8ee0-124">応答</span><span class="sxs-lookup"><span data-stu-id="a8ee0-124">Response</span></span>
 
-## <a name="example"></a><span data-ttu-id="57274-121">例</span><span class="sxs-lookup"><span data-stu-id="57274-121">Example</span></span>
+<span data-ttu-id="a8ee0-125">成功した場合、このメソッドは `200 OK` 応答コードと、応答本文で [Permission](../resources/permission.md) リソースを返します。</span><span class="sxs-lookup"><span data-stu-id="a8ee0-125">If successful, this method returns a `200 OK` response code and [Permission](../resources/permission.md) resource in the response body.</span></span>
 
-##### <a name="request"></a><span data-ttu-id="57274-122">要求</span><span class="sxs-lookup"><span data-stu-id="57274-122">Request</span></span>
+## <a name="example"></a><span data-ttu-id="a8ee0-126">例</span><span class="sxs-lookup"><span data-stu-id="a8ee0-126">Example</span></span>
 
-<span data-ttu-id="57274-123">以下は、ルート フォルダーのアクセス許可にアクセスするための要求の例です。</span><span class="sxs-lookup"><span data-stu-id="57274-123">Here is an example of the request to access a permission on the root folder.</span></span>
+### <a name="request"></a><span data-ttu-id="a8ee0-127">要求</span><span class="sxs-lookup"><span data-stu-id="a8ee0-127">Request</span></span>
 
-<!-- {
-  "blockType": "request",
-  "name": "get_permission"
-}-->
+<span data-ttu-id="a8ee0-128">以下は、フォルダーのアクセス許可にアクセスするための要求の例です。</span><span class="sxs-lookup"><span data-stu-id="a8ee0-128">Here is an example of the request to access a permission on the root folder.</span></span>
+
+<!-- { "blockType": "request", "name": "get-item-permission", "scopes": "files.read" } -->
+
 ```http
-GET https://graph.microsoft.com/v1.0/me/drive/items/{item-id}/permissions/{perm-id}
+GET /me/drive/items/{item-id}/permissions/{perm-id}
 ```
-##### <a name="response"></a><span data-ttu-id="57274-124">応答</span><span class="sxs-lookup"><span data-stu-id="57274-124">Response</span></span>
-<span data-ttu-id="57274-125">以下は、応答の例です。</span><span class="sxs-lookup"><span data-stu-id="57274-125">Here is an example of the response.</span></span>
-<!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.permission"
-} -->
+
+### <a name="response"></a><span data-ttu-id="a8ee0-129">応答</span><span class="sxs-lookup"><span data-stu-id="a8ee0-129">Response</span></span>
+
+<span data-ttu-id="a8ee0-130">成功した場合、このメソッドは、指定された ID の [Permission](../resources/permission.md) リソースを返します。</span><span class="sxs-lookup"><span data-stu-id="a8ee0-130">If successful, this method returns a [Permission](../resources/permission.md) resource for the specified ID.</span></span> 
+
+<!-- {"blockType": "response", "@odata.type": "microsoft.graph.permission", "truncated": true} -->
+
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 762
 
 {
   "grantedTo": {
@@ -67,20 +83,24 @@ Content-length: 762
 }
 ```
 
-## <a name="remarks"></a><span data-ttu-id="57274-126">備考</span><span class="sxs-lookup"><span data-stu-id="57274-126">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="a8ee0-131">備考</span><span class="sxs-lookup"><span data-stu-id="a8ee0-131">Remarks</span></span>
 
-<span data-ttu-id="57274-127">[アクセス権](../resources/permission.md)リソースは、_ファセット_を使用してリソースによって表されるアクセス許可の種類に関する情報を提供します。</span><span class="sxs-lookup"><span data-stu-id="57274-127">The [Permission](../resources/permission.md) resource uses _facets_ to provide information about the kind of permission represented by the resource.</span></span>
+<span data-ttu-id="a8ee0-132">[アクセス権](../resources/permission.md)リソースは、_ファセット_を使用してリソースによって表されるアクセス許可の種類に関する情報を提供します。</span><span class="sxs-lookup"><span data-stu-id="a8ee0-132">The [Permission](../resources/permission.md) resource uses _facets_ to provide information about the kind of permission represented by the resource.</span></span>
 
-<span data-ttu-id="57274-p102">[**リンク**](../resources/sharinglink.md) ファセットのあるアクセス許可は、項目上に作成された共有するリンクを表します。共有リンクは、リンクを持つすべてのユーザーのアイテムへのアクセス許可を提供する固有のトークンを含みます。</span><span class="sxs-lookup"><span data-stu-id="57274-p102">Permissions with a [**link**](../resources/sharinglink.md) facet represent sharing links created on the item. Sharing links contain a unique token that provides access to the item for anyone with the link.</span></span>
+<span data-ttu-id="a8ee0-p104">[**リンク**](../resources/sharinglink.md) ファセットのあるアクセス許可は、項目上に作成された共有するリンクを表します。共有リンクは、リンクを持つすべてのユーザーのアイテムへのアクセス許可を提供する固有のトークンを含みます。</span><span class="sxs-lookup"><span data-stu-id="a8ee0-p104">Permissions with a [**link**](../resources/sharinglink.md) facet represent sharing links created on the item. Sharing links contain a unique token that provides access to the item for anyone with the link.</span></span>
 
-<span data-ttu-id="57274-130">[**招待**](../resources/sharinginvitation.md) ファセットを持つアクセス許可は、指定のユーザーやグループをファイルへのアクセスへ招待することで追加されたアクセス許可を表します。</span><span class="sxs-lookup"><span data-stu-id="57274-130">Permissions with a [**invitation**](../resources/sharinginvitation.md) facet represent permissions added by inviting specific users or groups to have access to the file.</span></span>
+<span data-ttu-id="a8ee0-135">[**invitation**](../resources/sharinginvitation.md) ファセットを持つアクセス許可は、指定のユーザーやグループをファイルへのアクセスへ招待することで追加されたアクセス許可を表します。</span><span class="sxs-lookup"><span data-stu-id="a8ee0-135">Permissions with a [**invitation**](../resources/sharinginvitation.md) facet represent permissions added by inviting specific users or groups to have access to the file.</span></span>
 
-<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
-2015-10-25 14:57:30 UTC -->
+### <a name="error-responses"></a><span data-ttu-id="a8ee0-136">エラー応答</span><span class="sxs-lookup"><span data-stu-id="a8ee0-136">Error responses</span></span>
+
+<span data-ttu-id="a8ee0-137">エラーがどのような形で返されるかについては、「[エラー応答][error-response]」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="a8ee0-137">Read the [Error Responses][error-response] topic for more information about how errors are returned.</span></span>
+
+[error-response]: ../../../concepts/errors.md
+
 <!-- {
   "type": "#page.annotation",
-  "description": "Get permission",
-  "keywords": "",
+  "description": "Get a DriveItem's sharing permissions",
+  "keywords": "permission, permissions, sharing",
   "section": "documentation",
-  "tocPath": "OneDrive/Item/Get permission"
-}-->
+  "tocPath": "Sharing/Permissions"
+} -->

@@ -1,99 +1,127 @@
-# <a name="list-available-drives"></a><span data-ttu-id="eaa6b-101">利用可能なドライブの一覧表示</span><span class="sxs-lookup"><span data-stu-id="eaa6b-101">List available drives</span></span>
+---
+author: rgregg
+ms.author: rgregg
+ms.date: 09/10/2017
+title: "ドライブを一覧表示する"
+ms.openlocfilehash: 84771e589a65d11fc06707eb01b6211cf90a8581
+ms.sourcegitcommit: 7aea7a97e36e6d146214de3a90fdbc71628aadba
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 09/28/2017
+---
+# <a name="list-available-drives"></a><span data-ttu-id="afd53-102">利用可能なドライブの一覧表示</span><span class="sxs-lookup"><span data-stu-id="afd53-102">List available drives</span></span>
 
-<span data-ttu-id="eaa6b-p101">ターゲットとなる[ユーザー](../resources/user.md)または[グループ](../resources/group.md)が利用可能な[ドライブ](../resources/drive.md) リソースの一覧を取得します。SharePoint のルートサイト上のドキュメント ライブラリのセットをアプリで要求することもできます。</span><span class="sxs-lookup"><span data-stu-id="eaa6b-p101">Retrieve the list of [Drive](../resources/drive.md) resources available for a target [User](../resources/user.md) or [Group](../resources/group.md). Your app can also request the set of document libraries on the SharePoint root site.</span></span>
+<span data-ttu-id="afd53-103">ターゲットとなる User、Group、または [Site](../resources/site.md) が利用可能な [Drive](../resources/drive.md) リソースの一覧を取得します。</span><span class="sxs-lookup"><span data-stu-id="afd53-103">Retrieve the list of [Drive](../resources/drive.md) resources available for a target User, Group, or [Site](../resources/site.md).</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="eaa6b-104">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="eaa6b-104">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="afd53-104">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="afd53-104">Permissions</span></span>
 
-<span data-ttu-id="eaa6b-p102">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](../../../concepts/permissions_reference.md)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="eaa6b-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).</span></span>
+<span data-ttu-id="afd53-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](../../../concepts/permissions_reference.md)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="afd53-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).</span></span>
 
-|<span data-ttu-id="eaa6b-107">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="eaa6b-107">Permission type</span></span>      | <span data-ttu-id="eaa6b-108">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="eaa6b-108">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="afd53-107">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="afd53-107">Permission type</span></span>      | <span data-ttu-id="afd53-108">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="afd53-108">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="eaa6b-109">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="eaa6b-109">Delegated (work or school account)</span></span> | <span data-ttu-id="eaa6b-110">Files.Read、Files.ReadWrite、Files.Read.All、Files.ReadWrite.All、Sites.Read.All、Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="eaa6b-110">Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span></span>    |
-|<span data-ttu-id="eaa6b-111">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="eaa6b-111">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="eaa6b-112">Files.Read、Files.ReadWrite、Files.Read.All、Files.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="eaa6b-112">Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All</span></span>    |
-|<span data-ttu-id="eaa6b-113">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="eaa6b-113">Application</span></span> | <span data-ttu-id="eaa6b-114">Files.Read.All、Files.ReadWrite.All、Sites.Read.All、Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="eaa6b-114">Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span></span> |
+|<span data-ttu-id="afd53-109">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="afd53-109">Delegated (work or school account)</span></span> | <span data-ttu-id="afd53-110">Files.Read、Files.ReadWrite、Files.Read.All、Files.ReadWrite.All、Sites.Read.All、Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="afd53-110">Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span></span>    |
+|<span data-ttu-id="afd53-111">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="afd53-111">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="afd53-112">Files.Read、Files.ReadWrite、Files.Read.All、Files.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="afd53-112">Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All</span></span>    |
+|<span data-ttu-id="afd53-113">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="afd53-113">Application</span></span> | <span data-ttu-id="afd53-114">Files.Read.All、Files.ReadWrite.All、Sites.Read.All、Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="afd53-114">Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="eaa6b-115">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="eaa6b-115">HTTP request</span></span>
+## <a name="list-a-groups-drives"></a><span data-ttu-id="afd53-115">グループのドライブを一覧表示する</span><span class="sxs-lookup"><span data-stu-id="afd53-115">List a group's drives</span></span>
 
-<!-- { "blockType": "ignored" } -->
+<span data-ttu-id="afd53-116">グループのドキュメント ライブラリを一覧表示するために、アプリが Group の **drives** リレーションシップを要求します。</span><span class="sxs-lookup"><span data-stu-id="afd53-116">To list the document libraries for a group, your app requests the **drives** relationship on the Group.</span></span>
+
+### <a name="http-request"></a><span data-ttu-id="afd53-117">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="afd53-117">HTTP request</span></span>
+
+<!-- {"blockType": "request", "name": "group-list-drives", "scopes": "groups.read.all" } -->
 
 ```http
-GET /drives
+GET /groups/{groupId}/drives
+```
+
+## <a name="list-a-sites-drives"></a><span data-ttu-id="afd53-118">サイトのドライブを一覧表示する</span><span class="sxs-lookup"><span data-stu-id="afd53-118">List a site's drives</span></span>
+
+<span data-ttu-id="afd53-119">サイトのドキュメント ライブラリを一覧表示するために、アプリは Site の **drives** リレーションシップを要求します。</span><span class="sxs-lookup"><span data-stu-id="afd53-119">To list the document libraries for a site, your app requests the **drives** relationship on the Site.</span></span>
+
+<!-- {"blockType": "request", "name": "site-list-drives", "scopes": "sites.read.all" } -->
+
+```http
+GET /sites/{siteId}/drives
+```
+
+## <a name="list-a-users-drives"></a><span data-ttu-id="afd53-120">ユーザーのドライブを一覧表示する</span><span class="sxs-lookup"><span data-stu-id="afd53-120">List a user's drives</span></span>
+
+<!-- {"blockType": "request", "name": "user-list-drives", "scopes": "files.read.all" } -->
+
+```http
+GET /users/{userId}/drives
+```
+
+## <a name="list-the-current-users-drives"></a><span data-ttu-id="afd53-121">現在のユーザーのドライブを一覧表示する</span><span class="sxs-lookup"><span data-stu-id="afd53-121">List the current user's drives</span></span>
+
+<!-- {"blockType": "request", "name": "enum-drives", "scopes": "files.read" } -->
+
+```http
 GET /me/drives
-GET /sites/{site-id}/drives
 ```
 
-## <a name="optional-query-parameters"></a><span data-ttu-id="eaa6b-116">オプションのクエリ パラメーター</span><span class="sxs-lookup"><span data-stu-id="eaa6b-116">Optional query parameters</span></span>
-<span data-ttu-id="eaa6b-117">このメソッドは、応答をカスタマイズするための `$expand``$select`、`$skipToken`、`$top`、および `$orderby` [OData クエリ パラメーター](../../../concepts/query_parameters.md)をサポートします。</span><span class="sxs-lookup"><span data-stu-id="eaa6b-117">This method supports the `$expand` and `$orderby` [OData Query Parameters](../../../concepts/query_parameters.md) to help customize the response.</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="afd53-122">オプションのクエリ パラメーター</span><span class="sxs-lookup"><span data-stu-id="afd53-122">Optional query parameters</span></span>
 
-## <a name="request-body"></a><span data-ttu-id="eaa6b-118">要求本文</span><span class="sxs-lookup"><span data-stu-id="eaa6b-118">Request body</span></span>
+<span data-ttu-id="afd53-123">このメソッドは、応答をカスタマイズするための `$expand`、`$select`、`$skipToken`、`$top`、`$orderby` の [OData クエリ パラメーター](../../../concepts/query_parameters.md)をサポートします。</span><span class="sxs-lookup"><span data-stu-id="afd53-123">This method supports the `$expand`, `$select`, `$skipToken`, `$top`, and `$orderby` [OData query parameters](../../../concepts/query_parameters.md) to customize the response.</span></span>
 
-<span data-ttu-id="eaa6b-119">このメソッドには、要求本文を指定しません。</span><span class="sxs-lookup"><span data-stu-id="eaa6b-119">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="eaa6b-120">応答</span><span class="sxs-lookup"><span data-stu-id="eaa6b-120">Response</span></span>
+## <a name="response"></a><span data-ttu-id="afd53-124">応答</span><span class="sxs-lookup"><span data-stu-id="afd53-124">Response</span></span>
 
-<span data-ttu-id="eaa6b-121">成功した場合、このメソッドは `200 OK` 応答コードと、応答本文で [Drive](../resources/drive.md) オブジェクトのコレクションを返します。</span><span class="sxs-lookup"><span data-stu-id="eaa6b-121">If successful, this method returns a `200 OK` response code and collection of [Drive](../resources/drive.md) objects in the response body.</span></span>
+<span data-ttu-id="afd53-125">成功した場合、このメソッドは `200 OK` 応答コードと、応答本文で [Drive](../resources/drive.md) オブジェクトのコレクションを返します。</span><span class="sxs-lookup"><span data-stu-id="afd53-125">If successful, this method returns a `200 OK` response code and collection of [Drive](../resources/drive.md) objects in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="eaa6b-122">例</span><span class="sxs-lookup"><span data-stu-id="eaa6b-122">Example</span></span>
+<!-- { "blockType": "response", 
+       "@odata.type": "Collection(microsoft.graph.drive)",
+       "name": ["group-list-drives", "site-list-drives", "user-list-drives", "enum-drives"],
+       "truncated": true } -->
 
-##### <a name="request"></a><span data-ttu-id="eaa6b-123">要求</span><span class="sxs-lookup"><span data-stu-id="eaa6b-123">Request</span></span>
-
-<span data-ttu-id="eaa6b-124">以下はユーザーのドライブの要求例です。</span><span class="sxs-lookup"><span data-stu-id="eaa6b-124">Here is an example of the request for the user's drives.</span></span>
-
-<!-- {
-  "blockType": "request",
-  "name": "get_drives"
-}-->
-
-```http
-GET https://graph.microsoft.com/v1.0/me/drives
-```
-
-##### <a name="response"></a><span data-ttu-id="eaa6b-125">応答</span><span class="sxs-lookup"><span data-stu-id="eaa6b-125">Response</span></span>
-
-<span data-ttu-id="eaa6b-126">以下は、応答の例です。</span><span class="sxs-lookup"><span data-stu-id="eaa6b-126">Here is an example of the response.</span></span>
-<!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.drive",
-  "isCollection": true
-} -->
 ```http
 HTTP/1.1 200 OK
-Content-type: application/json
-Content-length: 579
+Content-Type: application/json
 
 {
   "value": [
     {
-      "id": "b!t18F8ybsHUq1z3LTz8xvZqP8zaSWjkFNhsME-Fepo75dTf9vQKfeRblBZjoSQrd7",
-      "driveType": "business",
+      "id": "942CAEB0-13AE-491B-85E4-7557CDC0F25F",
+      "driveType": "documentLibrary",
+      "name": "Shared Documents",
       "owner": {
-          "user": {
-              "id": "efee1b77-fb3b-4f65-99d6-274c11914d12",
-              "displayName": "Ryan Gregg"
-          }
-      },
-      "quota": {
-          "deleted": 256938,
-          "remaining": 1099447353539,
-          "state": "normal",
-          "total": 1099511627776
+        "user": {
+          "id": "AE2A1EE9-81A7-423C-ABE4-B945F47509BB",
+          "displayName": "Ryan Gregg"
+        }
+      }
+    },
+    {
+      "id": "C1CD3ED9-0E98-4B0B-82D3-C8FB784B9DCC",
+      "driveType": "documentLibrary",
+      "name": "Contoso Project Files",
+      "owner": {
+        "user": {
+          "id": "406B2281-18E8-4416-9857-38C531B904F1",
+          "displayName": "Daron Spektor"
+        }
       }
     }
   ]
 }
 ```
 
-## <a name="remarks"></a><span data-ttu-id="eaa6b-127">注釈</span><span class="sxs-lookup"><span data-stu-id="eaa6b-127">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="afd53-126">備考</span><span class="sxs-lookup"><span data-stu-id="afd53-126">Remarks</span></span>
 
-<span data-ttu-id="eaa6b-p103">ほとんどのユーザーには、ドライブ リソースが 1 つしかありません。複数のドライブが利用可能なグループとユーザーもあります。</span><span class="sxs-lookup"><span data-stu-id="eaa6b-p103">Most users will only have a single Drive resource. Groups and some users may have multiple drive available.</span></span>
+<span data-ttu-id="afd53-127">ほとんどのユーザーには、ドライブ リソースが 1 つしかありません。</span><span class="sxs-lookup"><span data-stu-id="afd53-127">Most users will only have a single Drive resource. Groups and some users may have multiple drive available.</span></span>
 
-<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
-2015-10-25 14:57:30 UTC -->
+<span data-ttu-id="afd53-128">Group と Site には、複数の Drive リソースが利用可能である場合があります。</span><span class="sxs-lookup"><span data-stu-id="afd53-128">Groups and Sites may have multiple Drive resources available.</span></span>
+
+<span data-ttu-id="afd53-129">[system][] ファセットのあるドライブは既定では非表示です。</span><span class="sxs-lookup"><span data-stu-id="afd53-129">Drives with the [system][] facet are hidden by default.</span></span>
+<span data-ttu-id="afd53-130">それらを一覧表示するには、`$select` ステートメントに `system` を含めます。</span><span class="sxs-lookup"><span data-stu-id="afd53-130">To list them, include `system` in your `$select` statement.</span></span>
+
+[system]: ../resources/systemFacet.md
+
 <!-- {
   "type": "#page.annotation",
-  "description": "List drives",
-  "keywords": "",
+  "description": "List the available drives for a user, group, or site.",
+  "keywords": "drive,onedrive.drive,list drives",
   "section": "documentation",
-  "tocPath": "OneDrive/Drive/List Drives"
-}-->
+  "tocPath": "Drives/List drives"
+} -->

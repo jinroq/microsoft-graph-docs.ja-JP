@@ -1,72 +1,76 @@
-# <a name="audio-resource-type"></a>オーディオ リソース型
+---
+author: rgregg
+ms.author: rgregg
+ms.date: 09/10/2017
+title: Audio
+ms.openlocfilehash: 43b9999ecfb472a82e00a12ca820fdf8548eec64
+ms.sourcegitcommit: 7aea7a97e36e6d146214de3a90fdbc71628aadba
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 09/28/2017
+---
+# <a name="audio-facet"></a><span data-ttu-id="a5a88-102">Audio ファセット</span><span class="sxs-lookup"><span data-stu-id="a5a88-102">Audio facet</span></span>
 
-**オーティオ** リソースは、アイテムのオーディオ関連のプロパティを単一の構造にグループ化します。
+<span data-ttu-id="a5a88-103">**Audio** リソースは、アイテムのオーディオ関連のプロパティを単一の構造にグループ化します。</span><span class="sxs-lookup"><span data-stu-id="a5a88-103">The **Audio** resource groups audio-related properties on an item into a single structure.</span></span>
 
-[**DriveItem**](driveitem.md) に null 以外の**オーディオ** ファセットがある場合、そのアイテムはオーディオ ファイルを表します。**オーディオ** リソースのプロパティは、ファイルからメタデータを抽出することで設定されます。 
+<span data-ttu-id="a5a88-104">[**DriveItem**](driveitem.md) に null 以外の**オーディオ** ファセットがある場合、そのアイテムはオーディオ ファイルを表します。</span><span class="sxs-lookup"><span data-stu-id="a5a88-104">If a [**DriveItem**](driveitem.md) has a non-null **audio** facet, the item represents an audio file. The properties of the Audio resource are populated by extracting metadata from the file.</span></span>
+<span data-ttu-id="a5a88-105">**Audio** リソースのプロパティは、ファイルからメタデータを抽出することで設定されます。</span><span class="sxs-lookup"><span data-stu-id="a5a88-105">If a DriveItem has a non-null audio facet, the item represents an audio file. The properties of the **Audio** resource are populated by extracting metadata from the file.</span></span> 
 
-## <a name="json-representation"></a>JSON 表記
+## <a name="json-representation"></a><span data-ttu-id="a5a88-106">JSON 表記</span><span class="sxs-lookup"><span data-stu-id="a5a88-106">JSON representation</span></span>
 
-以下は、リソースの JSON 表記です。
-
-<!-- {
-  "blockType": "resource",
-  "optionalProperties": [ ],
-  "@odata.type": "microsoft.graph.audio"
-}-->
+<!-- { "blockType": "resource", "@odata.type": "microsoft.graph.audio" } -->
 ```json
 {
   "album": "string",
   "albumArtist": "string",
   "artist": "string",
-  "bitrate": 1024,
+  "bitrate": 128,
   "composers": "string",
   "copyright": "string",
-  "disc": 1024,
-  "discCount": 1024,
-  "duration": 1024,
+  "disc": 0,
+  "discCount": 0,
+  "duration": 567,
   "genre": "string",
-  "hasDrm": true,
-  "isVariableBitrate": true,
+  "hasDrm": false,
+  "isVariableBitrate": false,
   "title": "string",
-  "track": 1024,
-  "trackCount": 1024,
-  "year": 1024
+  "track": 1,
+  "trackCount": 16,
+  "year": 2014
 }
 ```
 
-## <a name="properties"></a>プロパティ
+## <a name="properties"></a><span data-ttu-id="a5a88-107">プロパティ</span><span class="sxs-lookup"><span data-stu-id="a5a88-107">Properties</span></span>
 
-| プロパティ          | 型    | 説明                                                          |
-|:------------------|:--------|:---------------------------------------------------------------------|
-| album             | string  | オーディオ ファイルのアルバムのタイトル。                          |
-| albumArtist       | string  | オーディオ ファイルのアルバムに付けられたアーチスト名。                    |
-| artist            | string  | オーディオ ファイルの歌手や奏者。                            |
-| bitrate           | string  | kbps 単位で表されるビットレート。                                           |
-| composers         | string  | オーディオ ファイルの作曲者の名前。                          |
-| copyright         | string  | オーディオ ファイルの著作権情報。                            |
-| disc              | number  | このオーディオ ファイルの元のディスクの番号。                    |
-| discCount         | number  | このアルバムの合計ディスク数。                             |
-| duration          | number  | オーディオ ファイルの継続時間。ミリ秒単位で表されます。                |
-| genre             | string  | このオーディオ ファイルのジャンル。                                        |
-| hasDrm            | boolean | ファイルがデジタル著作権管理で保護されているかどうかを示します。   |
-| isVariableBitrate | boolean | ファイルが可変ビットレートでエンコードされているかどうかを示します。            |
-| title             | string  | オーディオ ファイルのタイトル。                                         |
-| track             | number  | このオーディオ ファイルの元のディスクでのトラック番号。    |
-| trackCount        | number  | このオーディオ ファイルの元のディスクの合計トラック数。 |
-| year              | number  | オーディオ ファイルが録音された年。                                |
+| <span data-ttu-id="a5a88-108">プロパティ名</span><span class="sxs-lookup"><span data-stu-id="a5a88-108">Property name</span></span>         | <span data-ttu-id="a5a88-109">種類</span><span class="sxs-lookup"><span data-stu-id="a5a88-109">Type</span></span>    | <span data-ttu-id="a5a88-110">説明</span><span class="sxs-lookup"><span data-stu-id="a5a88-110">Description</span></span>                                                          |
+|:----------------------|:--------|:---------------------------------------------------------------------|
+| <span data-ttu-id="a5a88-111">**album**</span><span class="sxs-lookup"><span data-stu-id="a5a88-111">**album**</span></span>             | <span data-ttu-id="a5a88-112">string</span><span class="sxs-lookup"><span data-stu-id="a5a88-112">string</span></span>  | <span data-ttu-id="a5a88-113">このオーディオ ファイルのアルバムのタイトル。</span><span class="sxs-lookup"><span data-stu-id="a5a88-113">The title of the album for this audio file.</span></span>                          |
+| <span data-ttu-id="a5a88-114">**albumArtist**</span><span class="sxs-lookup"><span data-stu-id="a5a88-114">**albumArtist**</span></span>       | <span data-ttu-id="a5a88-115">string</span><span class="sxs-lookup"><span data-stu-id="a5a88-115">string</span></span>  | <span data-ttu-id="a5a88-116">オーディオ ファイルのアルバムに付けられたアーチスト名。</span><span class="sxs-lookup"><span data-stu-id="a5a88-116">The artist named on the album for the audio file.</span></span>                    |
+| <span data-ttu-id="a5a88-117">**artist**</span><span class="sxs-lookup"><span data-stu-id="a5a88-117">**artist**</span></span>            | <span data-ttu-id="a5a88-118">string</span><span class="sxs-lookup"><span data-stu-id="a5a88-118">string</span></span>  | <span data-ttu-id="a5a88-119">オーディオ ファイルの歌手や奏者。</span><span class="sxs-lookup"><span data-stu-id="a5a88-119">The performing artist for the audio file.</span></span>                            |
+| <span data-ttu-id="a5a88-120">**bitrate**</span><span class="sxs-lookup"><span data-stu-id="a5a88-120">**bitrate**</span></span>           | <span data-ttu-id="a5a88-121">Int32</span><span class="sxs-lookup"><span data-stu-id="a5a88-121">Int32</span></span>   | <span data-ttu-id="a5a88-122">kbps 単位で表されるビットレート。</span><span class="sxs-lookup"><span data-stu-id="a5a88-122">Bitrate expressed in kbps.</span></span>                                           |
+| <span data-ttu-id="a5a88-123">**composers**</span><span class="sxs-lookup"><span data-stu-id="a5a88-123">**composers**</span></span>         | <span data-ttu-id="a5a88-124">string</span><span class="sxs-lookup"><span data-stu-id="a5a88-124">string</span></span>  | <span data-ttu-id="a5a88-125">オーディオ ファイルの作曲者の名前。</span><span class="sxs-lookup"><span data-stu-id="a5a88-125">The name of the composer of the audio file.</span></span>                          |
+| <span data-ttu-id="a5a88-126">**copyright**</span><span class="sxs-lookup"><span data-stu-id="a5a88-126">**copyright**</span></span>         | <span data-ttu-id="a5a88-127">string</span><span class="sxs-lookup"><span data-stu-id="a5a88-127">string</span></span>  | <span data-ttu-id="a5a88-128">オーディオ ファイルの著作権情報。</span><span class="sxs-lookup"><span data-stu-id="a5a88-128">Copyright information for the audio file.</span></span>                            |
+| <span data-ttu-id="a5a88-129">**disc**</span><span class="sxs-lookup"><span data-stu-id="a5a88-129">**disc**</span></span>              | <span data-ttu-id="a5a88-130">Int32</span><span class="sxs-lookup"><span data-stu-id="a5a88-130">Int32</span></span>   | <span data-ttu-id="a5a88-131">このオーディオ ファイルの元のディスクの番号。</span><span class="sxs-lookup"><span data-stu-id="a5a88-131">The number of the disc this audio file came from.</span></span>                    |
+| <span data-ttu-id="a5a88-132">**discCount**</span><span class="sxs-lookup"><span data-stu-id="a5a88-132">**discCount**</span></span>         | <span data-ttu-id="a5a88-133">Int32</span><span class="sxs-lookup"><span data-stu-id="a5a88-133">Int32</span></span>   | <span data-ttu-id="a5a88-134">このアルバムの合計ディスク数。</span><span class="sxs-lookup"><span data-stu-id="a5a88-134">The total number of discs in this album.</span></span>                             |
+| <span data-ttu-id="a5a88-135">**duration**</span><span class="sxs-lookup"><span data-stu-id="a5a88-135">**duration**</span></span>          | <span data-ttu-id="a5a88-136">Int64</span><span class="sxs-lookup"><span data-stu-id="a5a88-136">Int64</span></span>   | <span data-ttu-id="a5a88-137">オーディオ ファイルの継続時間。ミリ秒単位で表されます。</span><span class="sxs-lookup"><span data-stu-id="a5a88-137">Duration of the audio file, expressed in milliseconds</span></span>                |
+| <span data-ttu-id="a5a88-138">**genre**</span><span class="sxs-lookup"><span data-stu-id="a5a88-138">**genre**</span></span>             | <span data-ttu-id="a5a88-139">string</span><span class="sxs-lookup"><span data-stu-id="a5a88-139">string</span></span>  | <span data-ttu-id="a5a88-140">このオーディオ ファイルのジャンル。</span><span class="sxs-lookup"><span data-stu-id="a5a88-140">The genre of this audio file.</span></span>                                        |
+| <span data-ttu-id="a5a88-141">**hasDrm**</span><span class="sxs-lookup"><span data-stu-id="a5a88-141">**hasDrm**</span></span>            | <span data-ttu-id="a5a88-142">boolean</span><span class="sxs-lookup"><span data-stu-id="a5a88-142">boolean</span></span> | <span data-ttu-id="a5a88-143">ファイルがデジタル著作権管理で保護されているかどうかを示します。</span><span class="sxs-lookup"><span data-stu-id="a5a88-143">Indicates if the file is protected with digital rights management.</span></span>   |
+| <span data-ttu-id="a5a88-144">**isVariableBitrate**</span><span class="sxs-lookup"><span data-stu-id="a5a88-144">**isVariableBitrate**</span></span> | <span data-ttu-id="a5a88-145">boolean</span><span class="sxs-lookup"><span data-stu-id="a5a88-145">boolean</span></span> | <span data-ttu-id="a5a88-146">ファイルが可変ビットレートでエンコードされているかどうかを示します。</span><span class="sxs-lookup"><span data-stu-id="a5a88-146">Indicates if the file is encoded with a variable bitrate.</span></span>            |
+| <span data-ttu-id="a5a88-147">**title**</span><span class="sxs-lookup"><span data-stu-id="a5a88-147">**title**</span></span>             | <span data-ttu-id="a5a88-148">string</span><span class="sxs-lookup"><span data-stu-id="a5a88-148">string</span></span>  | <span data-ttu-id="a5a88-149">オーディオ ファイルのタイトル。</span><span class="sxs-lookup"><span data-stu-id="a5a88-149">The title of the audio file.</span></span>                                         |
+| <span data-ttu-id="a5a88-150">**track**</span><span class="sxs-lookup"><span data-stu-id="a5a88-150">**track**</span></span>             | <span data-ttu-id="a5a88-151">Int32</span><span class="sxs-lookup"><span data-stu-id="a5a88-151">Int32</span></span>   | <span data-ttu-id="a5a88-152">このオーディオ ファイルの元のディスクでのトラック番号。</span><span class="sxs-lookup"><span data-stu-id="a5a88-152">The number of the track on the original disc for this audio file.</span></span>    |
+| <span data-ttu-id="a5a88-153">**trackCount**</span><span class="sxs-lookup"><span data-stu-id="a5a88-153">**trackCount**</span></span>        | <span data-ttu-id="a5a88-154">Int32</span><span class="sxs-lookup"><span data-stu-id="a5a88-154">Int32</span></span>   | <span data-ttu-id="a5a88-155">このオーディオ ファイルの元のディスクの合計トラック数。</span><span class="sxs-lookup"><span data-stu-id="a5a88-155">The total number of tracks on the original disc for this audio file.</span></span> |
+| <span data-ttu-id="a5a88-156">**year**</span><span class="sxs-lookup"><span data-stu-id="a5a88-156">**year**</span></span>              | <span data-ttu-id="a5a88-157">Int32</span><span class="sxs-lookup"><span data-stu-id="a5a88-157">Int32</span></span>   | <span data-ttu-id="a5a88-158">オーディオ ファイルが録音された年。</span><span class="sxs-lookup"><span data-stu-id="a5a88-158">The year the audio file was recorded.</span></span>                                |
 
-## <a name="remarks"></a>備考 
+[item-resource]: ../resources/driveitem.md
 
-DriveItem のファセットの詳細については、「[DriveItem](driveitem.md)」を参照してください。
+## <a name="remarks"></a><span data-ttu-id="a5a88-159">備考</span><span class="sxs-lookup"><span data-stu-id="a5a88-159">Remarks</span></span>
 
+<span data-ttu-id="a5a88-160">DriveItem のファセットの詳細については、「[DriveItem](driveitem.md)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="a5a88-160">For more information about the facets on a DriveItem, see [DriveItem](driveitem.md).</span></span>
 
-
-<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
-2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "audio resource",
-  "keywords": "",
+  "description": "The audio facet provides information about music or audio metadata.",
+  "keywords": "music,audio,metadata,onedrive",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "Facets/Audio"
+} -->

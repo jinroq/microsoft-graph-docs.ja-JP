@@ -1,92 +1,110 @@
-# <a name="drive-resource-type"></a><span data-ttu-id="4895f-101">ドライブ リソースの種類</span><span class="sxs-lookup"><span data-stu-id="4895f-101">Drive resource type</span></span>
+---
+author: rgregg
+ms.author: rgregg
+ms.date: 09/10/2017
+title: Drive
+ms.openlocfilehash: 0b178967f7eb8da8bdf8584bb13a7d4f9950392b
+ms.sourcegitcommit: 7aea7a97e36e6d146214de3a90fdbc71628aadba
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 09/28/2017
+---
+# <a name="drive-resource-type"></a><span data-ttu-id="fab8c-102">Drive リソース型</span><span class="sxs-lookup"><span data-stu-id="fab8c-102">Drive resource type</span></span>
 
-<span data-ttu-id="4895f-102">ドライブ リソースは、ユーザーの OneDrive または SharePoint のドキュメント ライブラリを表す、最上位のオブジェクトです。</span><span class="sxs-lookup"><span data-stu-id="4895f-102">The drive resource is the top level object representing a user's OneDrive or a document library in SharePoint.</span></span>
+<span data-ttu-id="fab8c-103">ドライブ リソースは、ユーザーの OneDrive または SharePoint のドキュメント ライブラリを表す、最上位のオブジェクトです。</span><span class="sxs-lookup"><span data-stu-id="fab8c-103">The drive resource is the top level object representing a user's OneDrive or a document library in SharePoint.</span></span>
 
-<span data-ttu-id="4895f-p101">OneDrive のユーザーは、少なくとも 1 つのドライブ (そのユーザーの既定のドライブ) を常に使用できます。OneDrive のライセンスが付与されていないユーザーには、使用可能な既定のドライブがないことがあります。</span><span class="sxs-lookup"><span data-stu-id="4895f-p101">OneDrive users will always have at least one drive available, their default drive. Users without a OneDrive license may not have a default drive available.</span></span>
+<span data-ttu-id="fab8c-p101">OneDrive のユーザーは、少なくとも 1 つのドライブ (そのユーザーの既定のドライブ) を常に使用できます。OneDrive のライセンスが付与されていないユーザーには、使用可能な既定のドライブがないことがあります。</span><span class="sxs-lookup"><span data-stu-id="fab8c-p101">OneDrive users will always have at least one drive available, their default drive. Users without a OneDrive license may not have a default drive available.</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="4895f-105">JSON 表記</span><span class="sxs-lookup"><span data-stu-id="4895f-105">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="fab8c-106">JSON 表記</span><span class="sxs-lookup"><span data-stu-id="fab8c-106">JSON representation</span></span>
 
-<span data-ttu-id="4895f-106">以下は、**ドライブ** リソースの JSON 表記です。</span><span class="sxs-lookup"><span data-stu-id="4895f-106">Here is a JSON representation of a Drive resource.</span></span>
+<span data-ttu-id="fab8c-107">Drive リソースの JSON 表記を以下に示します。</span><span class="sxs-lookup"><span data-stu-id="fab8c-107">Here is a JSON representation of a Drive resource.</span></span>
 
-<span data-ttu-id="4895f-107">**drive** リソースは [**baseItem**](baseitem.md) から派生し、そのリソースからプロパティを継承します。</span><span class="sxs-lookup"><span data-stu-id="4895f-107">The **drive** resource is derived from [**baseItem**](baseitem.md) and inherits properties from that resource.</span></span>
+<span data-ttu-id="fab8c-108">**drive** リソースは [**baseItem**](baseitem.md) から派生しており、そのリソースからプロパティを継承しています。</span><span class="sxs-lookup"><span data-stu-id="fab8c-108">The **drive** resource is derived from [**baseItem**](baseitem.md) and inherits properties from that resource.</span></span>
 
-<!-- {
-  "blockType": "resource",
-  "optionalProperties": [ "items", "root", "special", "owner", "description" ],
-  "keyProperty": "id",
-  "@odata.type": "microsoft.graph.drive"
-}-->
+<!-- { "blockType": "resource", 
+       "@odata.type": "microsoft.graph.drive",
+       "keyProperty": "id", 
+       "optionalProperties": [ "activities", "createdBy", "createdDateTime", "description", "lastModifiedBy", "lastModifiedDateTime", "name", "webUrl", "items", "root", "special", "system"] } -->
 
 ```json
 {
-  "id": "string (identifier)",
-  "driveType": "string",
-  "owner": {"@odata.type": "microsoft.graph.identitySet"},
-  "quota": {"@odata.type": "microsoft.graph.quota"},
-  "sharepointIds": { "@odata.type": "microsoft.graph.sharepointIds" },
-
-  /* relationships */
-  "root": {"@odata.type": "microsoft.graph.driveItem" },
-  "items": [ {"@odata.type": "microsoft.graph.driveItem" }],
-  "special": [ {"@odata.type": "microsoft.graph.driveItem" }],
-
-  /* inherited from baseItem */
+  "id": "string",
   "createdBy": { "@odata.type": "microsoft.graph.identitySet" },
-  "createdDateTime": "datetime",
+  "createdDateTime": "string (timestamp)",
   "description": "string",
+  "driveType": "personal | business | documentLibrary",
+  "items": [ { "@odata.type": "microsoft.graph.driveItem" } ],
   "lastModifiedBy": { "@odata.type": "microsoft.graph.identitySet" },
-  "lastModifiedDateTime": "datetime",
+  "lastModifiedDateTime": "string (timestamp)",
   "name": "string",
+  "owner": { "@odata.type": "microsoft.graph.identitySet" },
+  "quota": { "@odata.type": "microsoft.graph.quota" },
+  "root": { "@odata.type": "microsoft.graph.driveItem" },
+  "special": [ { "@odata.type": "microsoft.graph.driveItem" }],
+  "system": { "@odata.type": "microsoft.graph.systemFacet" },
   "webUrl": "url"
 }
 ```
 
-## <a name="properties"></a><span data-ttu-id="4895f-108">プロパティ</span><span class="sxs-lookup"><span data-stu-id="4895f-108">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="fab8c-109">プロパティ</span><span class="sxs-lookup"><span data-stu-id="fab8c-109">Properties</span></span>
 
-| <span data-ttu-id="4895f-109">プロパティ</span><span class="sxs-lookup"><span data-stu-id="4895f-109">Property</span></span>             | <span data-ttu-id="4895f-110">型</span><span class="sxs-lookup"><span data-stu-id="4895f-110">Type</span></span>                          | <span data-ttu-id="4895f-111">説明</span><span class="sxs-lookup"><span data-stu-id="4895f-111">Description</span></span>                                                                                                                                                                                                                      |
+| <span data-ttu-id="fab8c-110">プロパティ</span><span class="sxs-lookup"><span data-stu-id="fab8c-110">Property</span></span>             | <span data-ttu-id="fab8c-111">型</span><span class="sxs-lookup"><span data-stu-id="fab8c-111">Type</span></span>                          | <span data-ttu-id="fab8c-112">説明</span><span class="sxs-lookup"><span data-stu-id="fab8c-112">Description</span></span>                                                                                                                                                                                                                      |
 | :------------------- | :---------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| <span data-ttu-id="4895f-112">id</span><span class="sxs-lookup"><span data-stu-id="4895f-112">id</span></span>                   | <span data-ttu-id="4895f-113">String</span><span class="sxs-lookup"><span data-stu-id="4895f-113">String</span></span>                        | <span data-ttu-id="4895f-p102">ドライブの一意識別子。読み取り専用。</span><span class="sxs-lookup"><span data-stu-id="4895f-p102">The unique identifier of the drive. Read-only.</span></span>                                                                                                                                                                                   |
-| <span data-ttu-id="4895f-116">createdBy</span><span class="sxs-lookup"><span data-stu-id="4895f-116">createdBy</span></span>            | <span data-ttu-id="4895f-117">[identitySet][]</span><span class="sxs-lookup"><span data-stu-id="4895f-117">[identitySet][]</span></span>               | <span data-ttu-id="4895f-p103">アイテムを作成したユーザーの ID、デバイス、アプリケーション。読み取り専用です。</span><span class="sxs-lookup"><span data-stu-id="4895f-p103">Identity of the user, device, or application which created the item. Read-only.</span></span>                                                                                                                                                  |
-| <span data-ttu-id="4895f-120">createdDateTime</span><span class="sxs-lookup"><span data-stu-id="4895f-120">createdDateTime</span></span>      | <span data-ttu-id="4895f-121">dateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="4895f-121">dateTimeOffset</span></span>                | <span data-ttu-id="4895f-p104">アイテム作成の日時。読み取り専用です。</span><span class="sxs-lookup"><span data-stu-id="4895f-p104">Date and time of item creation. Read-only.</span></span>                                                                                                                                                                                       |
-| <span data-ttu-id="4895f-124">driveType</span><span class="sxs-lookup"><span data-stu-id="4895f-124">driveType</span></span>            | <span data-ttu-id="4895f-125">String</span><span class="sxs-lookup"><span data-stu-id="4895f-125">String</span></span>                        | <span data-ttu-id="4895f-p105">このリソースで表されるドライブの種類についての説明。OneDrive 個人用のドライブは `personal` を返します。OneDrive for Business は `business` を返します。SharePoint ドキュメント ライブラリは `documentLibrary` を返します。読み取り専用。</span><span class="sxs-lookup"><span data-stu-id="4895f-p105">Describes the type of drive represented by this resource. OneDrive personal drives will return `personal`. OneDrive for Business will return `business`. SharePoint document libraries will return `documentLibrary`. Read-only.</span></span> |
-| <span data-ttu-id="4895f-131">lastModifiedBy</span><span class="sxs-lookup"><span data-stu-id="4895f-131">lastModifiedBy</span></span>       | <span data-ttu-id="4895f-132">[identitySet][]</span><span class="sxs-lookup"><span data-stu-id="4895f-132">[identitySet][]</span></span>               | <span data-ttu-id="4895f-p106">アイテムを最終更新したユーザーの ID、デバイス、アプリケーション。読み取り専用です。</span><span class="sxs-lookup"><span data-stu-id="4895f-p106">Identity of the user, device, and application which last modified the item. Read-only.</span></span>                                                                                                                                           |
-| <span data-ttu-id="4895f-135">lastModifiedDateTime</span><span class="sxs-lookup"><span data-stu-id="4895f-135">lastModifiedDateTime</span></span> | <span data-ttu-id="4895f-136">dateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="4895f-136">dateTimeOffset</span></span>                | <span data-ttu-id="4895f-p107">アイテムが最後に変更された日時。読み取り専用です。</span><span class="sxs-lookup"><span data-stu-id="4895f-p107">Date and time the item was last modified. Read-only.</span></span>                                                                                                                                                                             |
-| <span data-ttu-id="4895f-139">name</span><span class="sxs-lookup"><span data-stu-id="4895f-139">name</span></span>                 | <span data-ttu-id="4895f-140">string</span><span class="sxs-lookup"><span data-stu-id="4895f-140">string</span></span>                        | <span data-ttu-id="4895f-p108">アイテムの名前。読み取り/書き込み。</span><span class="sxs-lookup"><span data-stu-id="4895f-p108">The name of the item. Read-write.</span></span>                                                                                                                                                                                                |
-| <span data-ttu-id="4895f-143">owner</span><span class="sxs-lookup"><span data-stu-id="4895f-143">owner</span></span>                | [<span data-ttu-id="4895f-144">identitySet</span><span class="sxs-lookup"><span data-stu-id="4895f-144">identitySet</span></span>](identityset.md) | <span data-ttu-id="4895f-p109">省略可能。ドライブを所有しているユーザー アカウント。読み取り専用です。</span><span class="sxs-lookup"><span data-stu-id="4895f-p109">Optional. The user account that owns the drive. Read-only.</span></span>                                                                                                                                                                       |
-| <span data-ttu-id="4895f-148">クォータ</span><span class="sxs-lookup"><span data-stu-id="4895f-148">quota</span></span>                | [<span data-ttu-id="4895f-149">quota</span><span class="sxs-lookup"><span data-stu-id="4895f-149">quota</span></span>](quota.md)             | <span data-ttu-id="4895f-p110">省略可能。ドライブの記憶領域クォータに関する情報。読み取り専用です。</span><span class="sxs-lookup"><span data-stu-id="4895f-p110">Optional. Information about the drive's storage space quota. Read-only.</span></span>                                                                                                                                                          |
-| <span data-ttu-id="4895f-153">sharepointIds</span><span class="sxs-lookup"><span data-stu-id="4895f-153">sharepointIds</span></span>        | <span data-ttu-id="4895f-154">[sharepointIds][]</span><span class="sxs-lookup"><span data-stu-id="4895f-154">[sharepointIds][]</span></span>             | <span data-ttu-id="4895f-p111">SharePoint REST 互換性に役立つ識別子を返します。読み取り専用です。</span><span class="sxs-lookup"><span data-stu-id="4895f-p111">Returns identifiers useful for SharePoint REST compatibility. Read-only.</span></span>                                                                                                                                                         |
-| <span data-ttu-id="4895f-157">webUrl</span><span class="sxs-lookup"><span data-stu-id="4895f-157">webUrl</span></span>               | <span data-ttu-id="4895f-158">string (URL)</span><span class="sxs-lookup"><span data-stu-id="4895f-158">string (url)</span></span>                  | <span data-ttu-id="4895f-p112">ブラウザーでリソースを表示するための URL。読み取り専用です。</span><span class="sxs-lookup"><span data-stu-id="4895f-p112">URL that displays the resource in the browser. Read-only.</span></span>                                                                                                                                                                        |
+| <span data-ttu-id="fab8c-113">createdBy</span><span class="sxs-lookup"><span data-stu-id="fab8c-113">createdBy</span></span>            | <span data-ttu-id="fab8c-114">[identitySet][]</span><span class="sxs-lookup"><span data-stu-id="fab8c-114">[identitySet][]</span></span>               | <span data-ttu-id="fab8c-p102">アイテムを作成したユーザーの ID、デバイス、アプリケーション。読み取り専用です。</span><span class="sxs-lookup"><span data-stu-id="fab8c-p102">Identity of the user, device, or application which created the item. Read-only.</span></span>                                                                                                                                                  |
+| <span data-ttu-id="fab8c-117">createdDateTime</span><span class="sxs-lookup"><span data-stu-id="fab8c-117">createdDateTime</span></span>      | <span data-ttu-id="fab8c-118">dateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="fab8c-118">dateTimeOffset</span></span>                | <span data-ttu-id="fab8c-p103">アイテム作成の日時。読み取り専用です。</span><span class="sxs-lookup"><span data-stu-id="fab8c-p103">Date and time of item creation. Read-only.</span></span>                                                                                                                                                                                       |
+| <span data-ttu-id="fab8c-121">説明</span><span class="sxs-lookup"><span data-stu-id="fab8c-121">description</span></span>          | <span data-ttu-id="fab8c-122">String</span><span class="sxs-lookup"><span data-stu-id="fab8c-122">String</span></span>                        | <span data-ttu-id="fab8c-123">ユーザーに表示されるドライブの説明を提供します。</span><span class="sxs-lookup"><span data-stu-id="fab8c-123">Provide a user-visible description of the drive.</span></span> <span data-ttu-id="fab8c-124">読み取り/書き込み。</span><span class="sxs-lookup"><span data-stu-id="fab8c-124">Read-write.</span></span>
+| <span data-ttu-id="fab8c-125">driveType</span><span class="sxs-lookup"><span data-stu-id="fab8c-125">driveType</span></span>            | <span data-ttu-id="fab8c-126">String</span><span class="sxs-lookup"><span data-stu-id="fab8c-126">String</span></span>                        | <span data-ttu-id="fab8c-p105">このリソースで表されるドライブの種類についての説明。OneDrive 個人用のドライブは `personal` を返します。OneDrive for Business は `business` を返します。SharePoint ドキュメント ライブラリは `documentLibrary` を返します。読み取り専用。</span><span class="sxs-lookup"><span data-stu-id="fab8c-p105">Describes the type of drive represented by this resource. OneDrive personal drives will return `personal`. OneDrive for Business will return `business`. SharePoint document libraries will return `documentLibrary`. Read-only.</span></span> |
+| <span data-ttu-id="fab8c-132">id</span><span class="sxs-lookup"><span data-stu-id="fab8c-132">id</span></span>                   | <span data-ttu-id="fab8c-133">文字列</span><span class="sxs-lookup"><span data-stu-id="fab8c-133">String</span></span>                        | <span data-ttu-id="fab8c-p106">ドライブの一意識別子。読み取り専用です。</span><span class="sxs-lookup"><span data-stu-id="fab8c-p106">The unique identifier of the drive. Read-only.</span></span>                                                                                                                                                                                   |
+| <span data-ttu-id="fab8c-136">lastModifiedBy</span><span class="sxs-lookup"><span data-stu-id="fab8c-136">lastModifiedBy</span></span>       | <span data-ttu-id="fab8c-137">[identitySet][]</span><span class="sxs-lookup"><span data-stu-id="fab8c-137">[identitySet][]</span></span>               | <span data-ttu-id="fab8c-p107">アイテムを最終更新したユーザーの ID、デバイス、アプリケーション。読み取り専用です。</span><span class="sxs-lookup"><span data-stu-id="fab8c-p107">Identity of the user, device, and application which last modified the item. Read-only.</span></span>                                                                                                                                           |
+| <span data-ttu-id="fab8c-140">lastModifiedDateTime</span><span class="sxs-lookup"><span data-stu-id="fab8c-140">lastModifiedDateTime</span></span> | <span data-ttu-id="fab8c-141">dateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="fab8c-141">dateTimeOffset</span></span>                | <span data-ttu-id="fab8c-p108">アイテムが最後に変更された日時。読み取り専用です。</span><span class="sxs-lookup"><span data-stu-id="fab8c-p108">Date and time the item was last modified. Read-only.</span></span>                                                                                                                                                                             |
+| <span data-ttu-id="fab8c-144">name</span><span class="sxs-lookup"><span data-stu-id="fab8c-144">name</span></span>                 | <span data-ttu-id="fab8c-145">string</span><span class="sxs-lookup"><span data-stu-id="fab8c-145">string</span></span>                        | <span data-ttu-id="fab8c-p109">アイテムの名前。読み取り/書き込み。</span><span class="sxs-lookup"><span data-stu-id="fab8c-p109">The name of the item. Read-write.</span></span>                                                                                                                                                                                                |
+| <span data-ttu-id="fab8c-148">owner</span><span class="sxs-lookup"><span data-stu-id="fab8c-148">owner</span></span>                | [<span data-ttu-id="fab8c-149">identitySet</span><span class="sxs-lookup"><span data-stu-id="fab8c-149">identitySet</span></span>](identityset.md) | <span data-ttu-id="fab8c-p110">省略可能。ドライブを所有しているユーザー アカウント。読み取り専用です。</span><span class="sxs-lookup"><span data-stu-id="fab8c-p110">Optional. The user account that owns the drive. Read-only.</span></span>                                                                                                                                                                       |
+| <span data-ttu-id="fab8c-153">quota</span><span class="sxs-lookup"><span data-stu-id="fab8c-153">quota</span></span>                | [<span data-ttu-id="fab8c-154">quota</span><span class="sxs-lookup"><span data-stu-id="fab8c-154">quota</span></span>](quota.md)             | <span data-ttu-id="fab8c-p111">省略可能。ドライブの記憶領域クォータに関する情報。読み取り専用です。</span><span class="sxs-lookup"><span data-stu-id="fab8c-p111">Optional. Information about the drive's storage space quota. Read-only.</span></span>                                                                                                                                                          |
+| <span data-ttu-id="fab8c-158">sharepointIds</span><span class="sxs-lookup"><span data-stu-id="fab8c-158">sharepointIds</span></span>        | <span data-ttu-id="fab8c-159">[sharepointIds][]</span><span class="sxs-lookup"><span data-stu-id="fab8c-159">[sharepointIds][]</span></span>             | <span data-ttu-id="fab8c-p112">SharePoint REST 互換性に役立つ識別子を返します。読み取り専用です。</span><span class="sxs-lookup"><span data-stu-id="fab8c-p112">Returns identifiers useful for SharePoint REST compatibility. Read-only.</span></span>                                                                                                                                                         |
+| <span data-ttu-id="fab8c-162">system</span><span class="sxs-lookup"><span data-stu-id="fab8c-162">System</span></span>               | <span data-ttu-id="fab8c-163">[systemFacet][]</span><span class="sxs-lookup"><span data-stu-id="fab8c-163">[systemFacet][]</span></span>               | <span data-ttu-id="fab8c-164">存在する場合は、これがシステム管理のドライブであることを示しています。</span><span class="sxs-lookup"><span data-stu-id="fab8c-164">If present, indicates that this is a system-managed drive.</span></span> <span data-ttu-id="fab8c-165">読み取り専用です。</span><span class="sxs-lookup"><span data-stu-id="fab8c-165">Read-only.</span></span>
+| <span data-ttu-id="fab8c-166">webUrl</span><span class="sxs-lookup"><span data-stu-id="fab8c-166">webUrl</span></span>               | <span data-ttu-id="fab8c-167">string (URL)</span><span class="sxs-lookup"><span data-stu-id="fab8c-167">string (url)</span></span>                  | <span data-ttu-id="fab8c-p114">ブラウザーでリソースを表示するための URL。読み取り専用です。</span><span class="sxs-lookup"><span data-stu-id="fab8c-p114">URL that displays the resource in the browser. Read-only.</span></span>                                                                                                                                                                        |
 
-<span data-ttu-id="4895f-161">[identitySet]: identityset.md</span><span class="sxs-lookup"><span data-stu-id="4895f-161">[identitySet]: identityset.md</span></span>
-<span data-ttu-id="4895f-162">[sharepointIds]: sharepointids.md</span><span class="sxs-lookup"><span data-stu-id="4895f-162">[sharepointIds]: sharepointids.md</span></span>
+[identitySet]: identityset.md
+[sharepointIds]: sharepointids.md
+[systemFacet]: systemfacet.md
 
-## <a name="relationships"></a><span data-ttu-id="4895f-163">リレーションシップ</span><span class="sxs-lookup"><span data-stu-id="4895f-163">Relationships</span></span>
+## <a name="relationships"></a><span data-ttu-id="fab8c-173">リレーションシップ</span><span class="sxs-lookup"><span data-stu-id="fab8c-173">Relationships</span></span>
 
-| <span data-ttu-id="4895f-164">リレーションシップ</span><span class="sxs-lookup"><span data-stu-id="4895f-164">Relationship</span></span> | <span data-ttu-id="4895f-165">型</span><span class="sxs-lookup"><span data-stu-id="4895f-165">Type</span></span>                                 | <span data-ttu-id="4895f-166">説明</span><span class="sxs-lookup"><span data-stu-id="4895f-166">Description</span></span>                                                              |
-| :----------- | :----------------------------------- | :----------------------------------------------------------------------- |
-| <span data-ttu-id="4895f-167">items</span><span class="sxs-lookup"><span data-stu-id="4895f-167">items</span></span>        | <span data-ttu-id="4895f-168">[driveitem](driveitem.md) コレクション</span><span class="sxs-lookup"><span data-stu-id="4895f-168">[driveitem](driveitem.md) collection</span></span> | <span data-ttu-id="4895f-p113">ドライブに含まれているすべてのアイテム。読み取り専用。Null 許容型。</span><span class="sxs-lookup"><span data-stu-id="4895f-p113">All items contained in the drive. Read-only. Nullable.</span></span>                   |
-| <span data-ttu-id="4895f-172">root</span><span class="sxs-lookup"><span data-stu-id="4895f-172">root</span></span>         | [<span data-ttu-id="4895f-173">driveitem</span><span class="sxs-lookup"><span data-stu-id="4895f-173">driveitem</span></span>](driveitem.md)            | <span data-ttu-id="4895f-p114">ドライブのルート フォルダー。読み取り専用。</span><span class="sxs-lookup"><span data-stu-id="4895f-p114">The root folder of the drive. Read-only.</span></span>                                 |
-| <span data-ttu-id="4895f-176">special</span><span class="sxs-lookup"><span data-stu-id="4895f-176">special</span></span>      | <span data-ttu-id="4895f-177">[driveitem](driveitem.md) コレクション</span><span class="sxs-lookup"><span data-stu-id="4895f-177">[driveitem](driveitem.md) collection</span></span> | <span data-ttu-id="4895f-p115">OneDrive で使用可能な共通フォルダーのコレクション。読み取り専用。Null 許容型。</span><span class="sxs-lookup"><span data-stu-id="4895f-p115">Collection of common folders available in OneDrive. Read-only. Nullable.</span></span> |
+| <span data-ttu-id="fab8c-174">リレーションシップ</span><span class="sxs-lookup"><span data-stu-id="fab8c-174">Relationship</span></span> | <span data-ttu-id="fab8c-175">型</span><span class="sxs-lookup"><span data-stu-id="fab8c-175">Type</span></span>                                 | <span data-ttu-id="fab8c-176">説明</span><span class="sxs-lookup"><span data-stu-id="fab8c-176">Description</span></span>
+|:-------------|:-------------------------------------|:-----------------------
+| <span data-ttu-id="fab8c-177">items</span><span class="sxs-lookup"><span data-stu-id="fab8c-177">items</span></span>        | <span data-ttu-id="fab8c-178">[driveitem](driveitem.md) コレクション</span><span class="sxs-lookup"><span data-stu-id="fab8c-178">[driveitem](driveitem.md) collection</span></span> | <span data-ttu-id="fab8c-p115">ドライブに含まれているすべてのアイテム。読み取り専用。Null 許容型。</span><span class="sxs-lookup"><span data-stu-id="fab8c-p115">All items contained in the drive. Read-only. Nullable.</span></span>
+| <span data-ttu-id="fab8c-182">root</span><span class="sxs-lookup"><span data-stu-id="fab8c-182">root</span></span>         | [<span data-ttu-id="fab8c-183">driveitem</span><span class="sxs-lookup"><span data-stu-id="fab8c-183">driveitem</span></span>](driveitem.md)            | <span data-ttu-id="fab8c-p116">ドライブのルート フォルダー。読み取り専用。</span><span class="sxs-lookup"><span data-stu-id="fab8c-p116">The root folder of the drive. Read-only.</span></span>
+| <span data-ttu-id="fab8c-186">special</span><span class="sxs-lookup"><span data-stu-id="fab8c-186">special</span></span>      | <span data-ttu-id="fab8c-187">[driveitem](driveitem.md) コレクション</span><span class="sxs-lookup"><span data-stu-id="fab8c-187">[driveitem](driveitem.md) collection</span></span> | <span data-ttu-id="fab8c-p117">OneDrive で使用可能な共通フォルダーのコレクション。読み取り専用。Null 許容型。</span><span class="sxs-lookup"><span data-stu-id="fab8c-p117">Collection of common folders available in OneDrive. Read-only. Nullable.</span></span>
 
-## <a name="methods"></a><span data-ttu-id="4895f-181">メソッド</span><span class="sxs-lookup"><span data-stu-id="4895f-181">Methods</span></span>
+## <a name="methods"></a><span data-ttu-id="fab8c-191">メソッド</span><span class="sxs-lookup"><span data-stu-id="fab8c-191">Methods</span></span>
 
-<span data-ttu-id="4895f-182">次に、ドライブ リソースで使用可能なメソッドを示します。</span><span class="sxs-lookup"><span data-stu-id="4895f-182">The following methods are available for drive resources.</span></span>
+|                        <span data-ttu-id="fab8c-192">共通タスク</span><span class="sxs-lookup"><span data-stu-id="fab8c-192">Common task</span></span>                         |         <span data-ttu-id="fab8c-193">HTTP メソッド</span><span class="sxs-lookup"><span data-stu-id="fab8c-193">HTTP method</span></span>         |
+| :--------------------------------------------------------- | :-------------------------- |
+| <span data-ttu-id="fab8c-194">[別の Drive の Drive メタデータを取得する][drive-get]</span><span class="sxs-lookup"><span data-stu-id="fab8c-194">[Get Drive metadata of another Drive][drive-get]</span></span>           | `GET /drives/{drive-id}`    |
+| <span data-ttu-id="fab8c-195">[ユーザーの既定のドライブのルート フォルダーを取得する][item-get]</span><span class="sxs-lookup"><span data-stu-id="fab8c-195">[Get root folder for user's default Drive][item-get]</span></span>       | `GET /drive/root`           |
+| <span data-ttu-id="fab8c-196">[ドライブの子を一覧表示する][item-children]</span><span class="sxs-lookup"><span data-stu-id="fab8c-196">[List children under the Drive][item-children]</span></span>             | `GET /drive/root/children`  |
+| <span data-ttu-id="fab8c-197">[ドライブ内のすべてのアイテムの変更を一覧表示する][item-changes]</span><span class="sxs-lookup"><span data-stu-id="fab8c-197">[List changes for all Items in the Drive][item-changes]</span></span>    | `GET /drive/root/delta`     |
+| <span data-ttu-id="fab8c-198">[ドライブ内のアイテムを検索する][item-search]</span><span class="sxs-lookup"><span data-stu-id="fab8c-198">[Search for Items in the Drive][item-search]</span></span>               | `GET /drive/root/search`    |
+| [<span data-ttu-id="fab8c-199">特殊フォルダーにアクセスする</span><span class="sxs-lookup"><span data-stu-id="fab8c-199">Access special folder</span></span>](../api/drive_get_specialfolder.md) | `GET /drive/special/{name}` |
 
-| <span data-ttu-id="4895f-183">メソッド</span><span class="sxs-lookup"><span data-stu-id="4895f-183">Method</span></span>                                                | <span data-ttu-id="4895f-184">REST パス</span><span class="sxs-lookup"><span data-stu-id="4895f-184">REST Path</span></span>                        |
-| :---------------------------------------------------- | :------------------------------- |
-| [<span data-ttu-id="4895f-185">ユーザーの既定のドライブの取得</span><span class="sxs-lookup"><span data-stu-id="4895f-185">Get user's default drive</span></span>](../api/drive_get.md)       | `GET /me/drive`                  |
-| [<span data-ttu-id="4895f-186">別のユーザーのドライブの取得</span><span class="sxs-lookup"><span data-stu-id="4895f-186">Get another user's drive</span></span>](../api/drive_get.md)       | `GET /users/{user-id}/drive`     |
-| [<span data-ttu-id="4895f-187">ドライブのルート フォルダーの取得</span><span class="sxs-lookup"><span data-stu-id="4895f-187">Get root folder for a drive</span></span>](../api/item_get.md)     | `GET /drives/{drive-id}/root`    |
-| [<span data-ttu-id="4895f-188">ドライブ内のアイテムの一覧</span><span class="sxs-lookup"><span data-stu-id="4895f-188">List items in a drive</span></span>](../api/item_list_children.md) | `GET /me/drive/root/children`    |
-| [<span data-ttu-id="4895f-189">ドライブ内の変更内容の一覧</span><span class="sxs-lookup"><span data-stu-id="4895f-189">List changes in a drive</span></span>](../api/item_delta.md)       | `GET /me/drive/root/delta`       |
-| [<span data-ttu-id="4895f-190">ドライブ内のアイテムの検索</span><span class="sxs-lookup"><span data-stu-id="4895f-190">Search items in a drive</span></span>](../api/item_search.md)      | `GET /me/drive/search(q='text')` |
+<span data-ttu-id="fab8c-200">前の表では例に `/drive` を使用していますが、他のパスも有効です。</span><span class="sxs-lookup"><span data-stu-id="fab8c-200">In the previous table, the examples use , but  is valid too.</span></span>
 
-<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
-2015-10-25 14:57:30 UTC -->
+[item-resource]: driveitem.md
+[identity-set]: identityset.md
+[quota-facet]: quota.md
+[drive-resource]: drive.md
+[drive-get]: ../api/drive_get.md
+[item-get]: ../api/driveitem_get.md
+[item-changes]: ../api/driveitem_delta.md
+[item-search]: ../api/driveitem_search.md
+[item-children]: ../api/driveitem_list_children.md
+
+
 <!-- {
   "type": "#page.annotation",
-  "description": "drive resource",
-  "keywords": "",
+  "description": "Drive is a top level object for OneDrive API that provides access to the contents of a drive. ",
+  "keywords": "drive,objects,resources",
   "section": "documentation",
-  "tocPath": "OneDrive/Drive"
-}-->
+  "tocPath": "Drives",
+  "tocBookmarks": { "Resources/Drive": "#" }
+} -->
