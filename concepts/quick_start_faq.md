@@ -2,56 +2,125 @@
 
 この「よくあるご質問」では、[Microsoft Graph のクイック スタート](https://developer.microsoft.com/en-us/graph/quick-start)のいずれかを実行する際に発生する可能性がある質問や問題について扱います。
 
-## <a name="what-do-the-quick-starts-do"></a>クイック スタートでは何ができますか。
+## <a name="what-do-the-quick-starts-do"></a>クイック スタートでは何を行うでのすか。
 
-選択したプラットフォームに関係なく、各クイック スタートでは次の処理が行われます。
+クイック スタートのサンプルでは、Microsoft Graph の機能にアクセスする方法を示します。 
 
-- [アプリケーション登録ポータル](https://apps.dev.microsoft.com)で新規アプリケーションを登録します。 このため、**アプリケーション ID を取得**する際に Microsoft アカウントでサインインする必要があります。 アプリケーションでアプリ シークレットが必要な場合、クイック スタートで作成されます。 
-- GitHub リポジトリに格納されているサンプル コードのコピーをダウンロードします。 これらのリポジトリは、GitHub の [MicrosoftGraph 組織](https://github.com/microsoftgraph?utf8=%E2%9C%93&q=connect)にあります。
-- 新しいアプリ ID と、必要に応じてアプリ シークレットを GitHub リポジトリに格納されているサンプル コード内の構成ファイルに挿入します。 HTTP 要求内の機密情報が送信されることを避けるため、新しいアプリケーションを作成した後にアプリ シークレットをコピーし、サンプルのコピーをダウンロードする前にそれをクイック スタートのフォームにコピーしてください。
-- 完全に構成されたサンプルをダウンロードするようにダイアログが表示されます。 サンプル コードをダウンロードして解凍すると、稼働するはずのクライアントまたは Web のアプリケーションが出現します。これは、指定された前提条件 (IDE、Web フレームワークなど) が開発環境にインストールされていることを前提としています。
+以前の Microsoft REST API では、呼び出すサービスごとに認証を受ける必要がありました。 Microsoft Graph では、認証を統合し、すべての API のエントリ ポイントを 1 つの Graph API のエントリ ポイントに結合することで、開発者にとってのこのような複雑さを無くしました。 一度認証を受けさえすれば、複数のアプリケーションとサービスに及ぶ情報にアクセスできるようになりました。 
+
+この認証方式を示すために、Microsoft Graph のクイック スタートの例では、1 回の認証で 3 つの異なるサービス Microsoft アカウント、OneDrive、Outlook にアクセスします。 各クイック スタートでは、Microsoft アカウントのユーザーのプロファイルから情報を取得し、その情報を OneDrive (写真) へのデータの書き込みに組み合わせてから、Outlook を使用して電子メールを (その写真へのリンクを含めて) 生成します。 
+
+各クイック スタートには、すぐに実行できるアプリの例を入手するために、
+- プラットフォームを選択する、 
+- アプリ ID (別名: クライアント ID) を取得する、
+- サンプルをビルドする、
+- サインインして電子メールでプロフィール写真を送信する、という 4 つのステップがあります。
+
+>注: これらのアプリの例は、実稼働対応コードになるようには設計されていません。つまり、これらのアプリは、同じシナリオを異なる各種プログラミング言語とプラットフォームにわたって、どのように実行できるかを簡単に示すためのものにすぎません。 クイック スタートを実行したら、[認証について十分に理解した上で](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-authentication-scenarios)、実稼働対応アプリを作成することをお勧めします。
 
 
-## <a name="why-wont-my--aspnet-uwp-or-xamarin-project-build"></a>ASP.NET、UWP、または Xamarin プロジェクトがビルドされないのはなぜですか。
+## <a name="general-quick-start-sample-questions"></a>クイック スタートのサンプルに関する一般的な質問
+クイック スタートのサンプル一式の編成と内容に関する質問。
 
-.NET ライブラリを使用するサンプルが Visual Studio でのビルドに失敗した場合、1 つまたは複数のプロジェクトで、Windows の 260 文字のパス長の制限に引っかかることがあります。 特に、Xamarin ソリューションの場合、Xamarin ソリューション内の Android プロジェクトがこの影響を受けやすくなります。 ソリューションをルート ディレクトリまたはそれに近い場所に移動してみてください。 
+### <a name="why-does-my-quick-start-contain-a-readme-file"></a>クイック スタートに Readme ファイルが含まれているのはなぜですか。
 
-## <a name="if-a-web-platform-quick-start-provides-rest-and-sdk-samples-can-i-run-them-both-at-the-same-time"></a>Web プラットフォームのクイック スタートで REST および SDK のサンプルが提供されている場合、それらを同時に実行できますか。
+各クイック スタートでは、新しいアプリケーションを登録し、GitHub リポジトリの内容が含まれた zip ファイルを作成します。 さらに、リポジトリ内のサンプル アプリケーションを構成しなくてもよいように、リポジトリ内のファイルを更新します。 これらのリポジトリは、GitHub の [MicrosoftGraph 組織](https://github.com/microsoftgraph?utf8=%E2%9C%93&q=connect)にあります。
 
-はい、同時に両方のサンプルを実行できます。 ただし、既定のポートでいずれかが実行されていないことを確認してください。 つまり、Web サーバーのテストを開始するとき、サンプルの少なくとも 1 つのバージョンに対してポート番号を指定する必要があります。
+各クイック スタートに関連付けられているリポジトリを自由に参照して、そこで問題をファイリングし、Readme にある手順に従ってご自身のアプリケーションを登録してください。 関連付けられているリポジトリにアクセスするには、各クイック スタートのステップ 2 の下にあるリンクの「**サンプル コードのみを入手する**」をクリックしてください。
 
-## <a name="i-didnt-get-an-email-and-i-see-no-errors-or-exceptions-why-didnt-this-work"></a>電子メールを受信できません。エラーまたは例外は表示されていません。 なぜ正しく動作しないのですか。
+### <a name="which-microsoft-api-features-do-the-quick-start-samples-show"></a>クイック スタートのサンプルで示すのは、Microsoft API のどの機能ですか。
+
+サンプル一式は継続的に改良されています。 関心のあるサンプル リポジトリにご注目ください。 お客様のお気に入りのサンプルに機能を追加したときは、この追加をサンプルの Readme を通じてお知らせします。 次の表に各サンプルの現在の機能を示します。
+
+|サンプル|認証|プロフィール画像の取得|OneDrive への画像のアップロード|電子メールでの共有リンク|電子メールへの画像の添付|電子メールの送信|
+|-----:|-----:|-----:|------:|------:|------:|-----:|
+|[Android 用の接続](https://github.com/microsoftgraph/android-java-connect-sample)|![](./images/Check.PNG)|![](./images/Check.PNG)|![](./images/Check.PNG)|![](./images/Check.PNG)|![](./images/Check.PNG)|![](./images/Check.PNG)|
+|[Angular 2 用の接続](https://github.com/microsoftgraph/angular-connect-sample)|![](./images/Check.PNG)| | | | |![](./images/Check.PNG)|
+|[Angular 2 用の接続 REST](https://github.com/microsoftgraph/angular2-connect-rest-sample)|![](./images/Check.PNG)| | | | |![](./images/Check.PNG)|
+|[ASP.NET 用の接続](https://github.com/microsoftgraph/aspnet-connect-sample)|![](./images/Check.PNG)|![](./images/Check.PNG)|![](./images/Check.PNG)|![](./images/Check.PNG)|![](./images/Check.PNG)|![](./images/Check.PNG)|
+|[iOS 用の接続 - Swift](https://github.com/microsoftgraph/ios-swift-connect-sample)|![](./images/Check.PNG)|![](./images/Check.PNG)|![](./images/Check.PNG)|![](./images/Check.PNG)|![](./images/Check.PNG)|![](./images/Check.PNG)|
+|[iOS 用の接続 REST - Objective C](https://github.com/microsoftgraph/ios-objectivec-connect-rest-sample)|![](./images/Check.PNG)| | | | |![](./images/Check.PNG)|[](./images/Check.PNG)|
+|[Node.js 用の接続 REST](https://github.com/microsoftgraph/nodejs-connect-rest-sample)|![](./images/Check.PNG)|![](./images/Check.PNG)|![](./images/Check.PNG)|![](./images/Check.PNG)| |![](./images/Check.PNG)|
+|[php 用の接続 REST](https://github.com/microsoftgraph/php-connect-rest-sample)|![](./images/Check.PNG)| | | | |![](./images/Check.PNG)|
+|[php 用の接続](https://github.com/microsoftgraph/php-connect-sample)|![](./images/Check.PNG)| | | | |![](./images/Check.PNG)|
+|[Ruby 用の接続 REST](https://github.com/microsoftgraph/ruby-connect-rest-sample)|![](./images/Check.PNG)| | | | |![](./images/Check.PNG)|
+|[UWP 用の接続](https://github.com/microsoftgraph/uwp-csharp-connect-sample) |![](./images/Check.PNG)|![](./images/Check.PNG)|![](./images/Check.PNG)|![](./images/Check.PNG)|![](./images/Check.PNG)|![](./images/Check.PNG)|
+|[Xamarin 用の接続](https://github.com/microsoftgraph/uwp-csharp-connect-sample)|![](./images/Check.PNG)|![](./images/Check.PNG)|![](./images/Check.PNG)|![](./images/Check.PNG)|![](./images/Check.PNG)|![](./images/Check.PNG)|
+
+## <a name="authentication-and-authorization"></a>認証と承認
+認証と承認の問題に関連する質問。 
+
+### <a name="why-dont-any-of-the-quick-start-samples-show-advanced-authentication-use-cases"></a>どのクイック スタートのサンプルも、高度な認証のユース ケースを示していないのはなぜですか。
+
+クイック スタートのサンプルでは、認証と Microsoft Graph API 呼び出しの概要を示しています。 認証と Graph API 呼び出しを実稼働アプリケーションに追加する場合、セキュリティや条件付きアクセスの問題に関わる高度な認証シナリオを設計する方法を認識している必要があります。
+
+使用する認証ライブラリに対する高度な認証シナリオの詳細を、以下の認証ライブラリの発行元のページにアクセスして確認できます。
+
+- [Android と iOS 用の OAuth2Client](https://github.com/nxtbgthng/OAuth2Client)
+- [Node 用の Passport](http://passportjs.org/)
+- [PHP 用の Illuminate Auth](https://github.com/illuminate/auth)
+- [Python 3 用の Flask](https://pypi.python.org/pypi/Flask-OAuth2-Provider/0.2.1)
+- [Ruby 用の OmniAuth](https://github.com/omniauth/omniauth)
+- [.NET 用の Microsoft Authentication Library (MSAL)](https://github.com/AzureAD/microsoft-authentication-library-for-dotnet)
+- [Android 用の Microsoft Authentication Library](https://github.com/AzureAD/microsoft-authentication-library-for-android)
+- [JavaScript 用の Microsoft Authentication Library](https://github.com/AzureAD/microsoft-authentication-library-for-js)
+
+## <a name="microsoft-graph-api"></a>Microsoft Graph API
+Microsoft Graph API のコーディングに関する質問
+
+### <a name="i-didnt-get-an-email-and-i-see-no-errors-or-exceptions-why-didnt-this-work"></a>電子メールを受信できません。エラーも例外も表示されていません。 なぜ正しく動作しないのですか。
 
 電子メールを送信するサンプルが表示されるものの、受信トレイに表示されない場合は、迷惑メール フォルダーを確認してください。 テスト テナントからメッセージを送信する場合、メッセージにスパムのフラグが付く場合があります。
 
-## <a name="i-get-an-error-when-i-try-to-sign-in-and-authorize-the-sample-app-what-steps-can-i-take-to-fix-this"></a>サインインして、サンプル アプリを承認しようとするとエラーが発生します。 この問題を解決するにはどのような手順を実行したらよいですか。 
+### <a name="why-doesnt-the-email-sent-by-the-sample-have-my-profile-picture"></a>サンプルによって送信された電子メールに自分のプロフィール画像が添付されないのはなぜですか。
 
-最初に、InPrivate または Incognito ウィンドウでサンプル アプリを実行します。 特に、複数の Microsoft アカウントでサインインした場合、Web ブラウザーのキャッシュ設定が原因で承認の手順が失敗することがあります。 これが機能しない場合は、[スタック オーバーフロー](https://stackoverflow.com/questions/tagged/microsoft-graph)でフォローアップしてください。 Microsoft graph を使用して質問にタグを付け、エラー情報を質問にコピーしてください。
+- これは通常、プロフィールがユーザーのプロフィール画像を使って設定されていないためです。 Microsoft サービス アカウント (MSA) を使用してサインインした場合、プロフィール画像がある場合でも、その画像は電子メールに表示されません。 Microsoft Graph API では、MSA アカウントからのユーザーのプロフィール画像を現在サポートしていません。 <br/>クイック スタートで提供されるサンプルのほとんどは、プロファイル画像を取得し、それを OneDrive アカウントのルート ディレクトリにアップロードします。 Microsoft アカウント (live.com、hotmail.com) でサインインしている場合、Microsoft Graph は現時点ではプロファイル画像をフェッチできないため、考えを示す吹き出しの画像に戻されます。
 
-## <a name="why-do-some-quick-starts-include-an-app-secret-and-others-dont"></a>一部のクイック スタートにアプリ シークレットが含まれ、他のクイック スタートにはそれが含まれないのはなぜですか。
+- Node のサンプルと iOS の Objective C のサンプルでは、ユーザーのプロフィール画像が電子メール メッセージに添付されません。 
+
+## <a name="asp-net"></a>ASP .NET
+ASP.NET クイック スタートのサンプルのコーディング、ビルド、または実行に関連する質問。
+
+## <a name="universal-windows-platform-uwp"></a>ユニバーサル Windows プラットフォーム (UWP)
+UWP クイック スタートのサンプルのコーディング、ビルド、または実行に関連する質問。
+
+## <a name="xamarin"></a>Xamarin
+Xamarin クイック スタートのサンプルのコーディング、ビルド、または実行に関連する質問。
+
+### <a name="why-wont-my--aspnet-uwp-or-xamarin-project-build"></a>ASP.NET、UWP、または Xamarin プロジェクトがビルドされないのはなぜですか。
+
+.NET ライブラリを使用するサンプルが Visual Studio でのビルドに失敗した場合、1 つまたは複数のプロジェクトで、Windows の 260 文字のパス長の制限に引っかかることがあります。 特に、Xamarin ソリューションの場合、Xamarin ソリューション内の Android プロジェクトがこの影響を受けやすくなります。 ソリューションをルート ディレクトリまたはそれに近い場所に移動してみてください。 
+
+## <a name="web-stack-samples"></a>Web スタックのサンプル
+Web テクノロジを使って構築されたクイック スタートのサンプルのコーディング、ビルド、または実行に関連する質問。
+
+### <a name="how-do-i-know-if-my-local-computer-supports-a-local-web-server"></a>ローカル コンピューターでローカル Web サーバーをサポートしているかどうかどうすればわかりますか。
+Web テクノロジに基づくクイック スタートのサンプルでは、ローカル Web サーバーの起動とホストに必要なロジックが用意されています。 たとえば、php 5.4.0 以上のランタイムに基づく php のサンプルには、開発のために使用する[組み込みの Web サーバー](http://php.net/manual/en/features.commandline.webserver.php)が含まれています。 これは、実稼働環境での使用が想定されていません。 
+
+Node.js のサンプルをダウンロードした場合は、この「[Node.js ファースト ステップ ガイド](https://nodejs.org/en/docs/guides/getting-started-guide/)」を確認して、Node Web サーバーの起動について学習してください。 
+
+ASP.NET のサンプルの場合、Visual Studio 2015 以降のバージョンには、このサンプルを実行すると自動的に起動される開発用 Web サーバーが含まれています。 この Web サーバーを使用するためのサンプル プロジェクトを構成する必要はありません。 
+
+Ruby 用接続のサンプルの [Readme](https://github.com/microsoftgraph/ruby-connect-rest-sample/blob/master/README.md) には、Ruby のローカル Web サーバーを起動するために必要な手順が記載されています。 
+
+### <a name="if-a-web-platform-quick-start-provides-rest-and-sdk-samples-can-i-run-them-both-at-the-same-time"></a>Web プラットフォームのクイック スタートで REST および SDK のサンプルが提供されている場合、それらを同時に実行できますか。
+
+はい、同時に両方のサンプルを実行できます。 ただし、既定のポートでいずれかが実行されていないことを確認してください。 つまり、Web サーバーのテストを開始するとき、サンプルの少なくとも 1 つのバージョンに対してポート番号を指定する必要があります。
+
+### <a name="why-do-some-quick-starts-include-an-app-secret-and-others-dont"></a>一部のクイック スタートにアプリ シークレットが含まれ、他のクイック スタートにはそれが含まれないのはなぜですか。
 
 Microsoft Graph API のセキュリティで保護された呼び出しを行う必要があるサーバー側の Web アプリケーションには、アプリ シークレットが必要です。 このため、ASP.NET MVC、Node.js、PHP、および Ruby のクイック スタートではアプリ シークレットが提供されます。
 
-## <a name="why-doesnt-the-angular-quick-start-give-me-an-app-secret-when-all-the-other-web-platform-quick-starts-do"></a>他のすべての Web プラットフォームのクイック スタートではアプリ シークレットが提供されるのに、Angular クイック スタートでは提供されないのはなぜですか。
+### <a name="why-doesnt-the-angular-quick-start-give-me-an-app-secret-when-all-the-other-web-platform-quick-starts-do"></a>他のすべての Web プラットフォームのクイック スタートではアプリ シークレットが提供されるのに、Angular クイック スタートでは提供されないのはなぜですか。
 
 アプリ シークレットを必要とするのは、サーバー側の Web アプリケーションのみです。
 
-## <a name="why-does-my-quick-start-contain-a-readme-file"></a>クイック スタートに Readme ファイルが含まれているのはなぜですか。
+### <a name="i-get-an-error-when-i-try-to-sign-in-and-authorize-the-sample-app-what-steps-can-i-take-to-fix-this"></a>サインインして、サンプル アプリを承認しようとするとエラーが発生します。 この問題を解決するにはどのような手順を実行したらよいですか。 
 
-各クイック スタートは、新しいアプリケーションを登録し、GitHub リポジトリの内容が含まれた zip ファイルを作成します。 さらに、リポジトリ内のサンプル アプリケーションを構成しなくてもよいように、リポジトリ内のファイルを更新します。 これらのリポジトリは、GitHub の [MicrosoftGraph 組織](https://github.com/microsoftgraph?utf8=%E2%9C%93&q=connect)にあります。
-
-各クイック スタートに関連付けられているリポジトリを自由に参照して、そこで問題をファイリングし、Readme にある指示に従って自身のアプリケーションを登録してください。 関連付けられているリポジトリにアクセスするには、各クイック スタートのステップ 2 の下にある「**サンプル コードのみを入手する**」リンクに従ってください。
-
-## <a name="why-did-the-sample-give-me-an-image-containing-a-thought-bubble"></a>サンプルの画像に考えを示す吹き出しが含まれているのはなぜですか。
-
-クイック スタートで提供されるサンプルのほとんどは、プロファイル画像を取得し、それを OneDrive アカウントのルート ディレクトリにアップロードします。 Microsoft アカウント (live.com、hotmail.com) でサインインしている場合、Microsoft Graph は現時点ではプロファイル画像をフェッチできないため、考えを示す吹き出しの画像に戻されます。 アカウントにプロファイル画像が存在しない場合、サンプルもこの画像を使用します。
-
-## <a name="why-do-you-provide-a-manage-your-apphttpsappsdevmicrosoftcom-link-after-i-get-an-app-id"></a>アプリ ID を取得した後に**[アプリの管理](https://apps.dev.microsoft.com)** リンクが表示されるのはなぜですか。
-
-このリンクが表示されるのは、アプリ ID の手順で[アプリケーション登録ポータル](https://apps.dev.microsoft.com)に新規アプリケーションを登録するためです。 このリンクを使用して、このアプリケーションの設定を表示したり、アプリケーションを削除したり、サンプルを実行した後にアプリケーションの設定を更新したりすることもできます。 
+最初に、InPrivate または Incognito ウィンドウでサンプル アプリを実行します。 特に、複数の Microsoft アカウントでサインインした場合、Web ブラウザーのキャッシュ設定が原因で承認の手順が失敗することがあります。 これが機能しない場合は、[スタック オーバーフロー](https://stackoverflow.com/questions/tagged/microsoft-graph)でフォローアップしてください。 必ず Microsoft Graph を使用して質問にタグを付け、エラー情報を質問にコピーしてください。
 
 ## <a name="didnt-find-what-you-need"></a>必要な情報が見つかりませんか。
 
 お尋ねになりたい質問や、1 つまたは複数のクイック スタートで発生した問題が、この「よくあるご質問」に記載されていない場合は、[スタック オーバーフロー](https://stackoverflow.com/questions/tagged/microsoft-graph)でお知らせください。 
 
-クイック スタートに付属のコード サンプルに関連した問題については、GitHub サンプル リポジトリで問題をファイリングすることもできます。 リポジトリを検索するには、各クイック スタートのステップ 2 の下にある「**サンプル コードのみを入手する**」リンクにアクセスします。
+クイック スタートに付属のコード サンプルに関連した問題については、GitHub サンプル リポジトリで問題をファイリングすることもできます。 リポジトリを検索するには、各クイック スタートのステップ 2 の下にあるリンクの「**サンプル コードのみを入手する**」をクリックします。

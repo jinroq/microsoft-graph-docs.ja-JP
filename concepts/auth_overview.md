@@ -4,6 +4,8 @@ Microsoft Graph を呼び出すために、アプリは Microsoft のクラウ�
 
 ここでは、アクセス トークンと Azure AD の概要、およびアプリでアクセス トークンを取得する方法について説明します。トークンを取得するためのアプリと Azure AD との統合について既に詳しく理解している場合は、「[次の手順](#next-steps)」までスキップして、Microsoft Graph に固有の情報とサンプルを参照してください。 
 
+> **重要:**条件付きアクセス ポリシーの Microsoft Graph への適用方法は変更されています。 条件付きアクセス ポリシーが構成されるシナリオを処理するよう、アプリケーションを更新する必要があります。 詳細およびガイダンスについては、「[Azure Active Directory の条件付きアクセスについての開発者ガイド](https://docs.microsoft.com/azure/active-directory/develop/active-directory-conditional-access-developer)」を参照してください。
+
 ## <a name="what-is-an-access-token-and-how-do-i-use-it"></a>アクセス トークンの内容と使用方法について
 
 Azure AD から発行されるアクセス トークンは、Base 64 でエンコードされた JSON Web トークン (JWT) です。これに含まれている情報 (要求) は、呼び出し元の検証と、呼び出し元が要求している操作を実行するための適切なアクセス許可が付与されていることの確認のために、Azure AD によって保護されている Web API (Microsoft Graph など) が使用します。Microsoft Graph の呼び出し時には、アクセス トークンを不透明なものとして扱うことができます。アクセス トークンは、常にトランスポート層セキュリティ (HTTPS) などのセキュリティで保護されたチャネルを通じて送信する必要があります。

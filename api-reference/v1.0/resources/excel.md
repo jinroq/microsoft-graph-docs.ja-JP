@@ -5,7 +5,7 @@ Microsoft Graph を使用すると、OneDrive、SharePoint、またはその他�
 `https://graph.microsoft.com/{version}/me/drive/items/{id}/workbook/`  
 `https://graph.microsoft.com/{version}/me/drive/root:/{item-path}:/workbook/`  
 
-ブックに対して作成、読み取り、更新、削除 (CRUD) 操作を実行するための標準 REST API を使用して、一連の Excel オブジェクト (テーブル、範囲、またはグラフなど) にアクセスできます。たとえば、`https://graph.microsoft.com/{version}/me/drive/items/{id}/workbook/` では、  
+ブックに対して作成、読み取り、更新、削除 (CRUD) 操作を実行するための標準 REST API を使用して、一連の Excel オブジェクト (テーブル、範囲、またはグラフなど) にアクセスできます。たとえば、`GET https://graph.microsoft.com/{version}/me/drive/items/{id}/workbook/worksheets` では、  
 ワークブックの一部であるワークシート オブジェクトのコレクションが返されます。    
 
 
@@ -13,20 +13,21 @@ Microsoft Graph を使用すると、OneDrive、SharePoint、またはその他�
 
 ## <a name="authorization-and-scopes"></a>承認とスコープ
 
-[Azure AD v.20 エンドポイント](https://developer.microsoft.com/en-us/graph/docs/authorization/converged_auth)を使用して Excel API を認証できます。すべての API には、`Authorization: Bearer {access-token}` HTTP ヘッダーが必要です。   
+[Azure AD v.2 エンドポイント](https://developer.microsoft.com/en-us/graph/docs/authorization/converged_auth)を使用して Excel API を認証できます。 すべての API には、`Authorization: Bearer {access-token}` HTTP ヘッダーが必要です。   
   
-Excel リソースを使用するには、次のいずれかの[アクセス許可のスコープ](https://developer.microsoft.com/en-us/graph/docs/authorization/permission_scopes)が必要です。
+Excel リソースを使用するには、以下のいずれかの[アクセス許可のスコープ](https://developer.microsoft.com/en-us/graph/docs/authorization/permission_scopes)が必要です。
 
-* Files.Read 
-* Files.ReadWrite
+* Files.Read (読み取りアクション用)
+* Files.ReadWrite (読み取りおよび書き込みアクション用)
 
 
 ## <a name="sessions-and-persistence"></a>セッションと永続化
 
-2 つのモードのいずれかで、Excel API を呼び出すことができます。 
+次の 3 つのモードのいずれかで、Excel API を呼び出すことができます。 
 
-1. 永続セッション - ブックに加えられたすべての変更は永続化 (保存) されます。これは通常の操作モードです。 
-2. 非永続セッション - API によって加えられた変更は元の場所に保存されません。代わりに、その特定の API セッション中に加えられた変更を反映するファイルの一時コピーが Excel のバックエンド サーバーに保持されます。Excel のセッションの有効期限が切れると、変更は失われます。分析を行ったり、計算の結果やグラフのイメージを取得したりする必要があるものの、ドキュメントの状態には影響を与えないアプリには、このモードが便利です。   
+1. 永続セッション - ブックに加えられたすべての変更は永続化 (保存) されます。 これは、最も効率的でパフォーマンスの高い操作のモードです。 
+2. 非永続セッション - API によって加えられた変更は元の場所に保存されません。代わりに、その特定の API セッション中に加えられた変更を反映するファイルの一時コピーが Excel のバックエンド サーバーに保持されます。Excel のセッションの有効期限が切れると、変更は失われます。分析を行ったり、計算の結果やグラフのイメージを取得したりする必要があるものの、ドキュメントの状態には影響を与えないアプリには、このモードが便利です。 
+3. セッションレス - セッション情報を伴わずに API 呼び出しが行われます。 Excel サーバーは、操作を実行するたびにサーバーにあるブックのコピーを検索する必要があるので、これは Excel API を呼び出す上で効率的な方法とは言えません。 この方法は 1 回限りの要求を出すのには適しています。 
 
 API でセッションを表すには、`workbook-session-id: {session-id}` ヘッダーを使用します。 
 
@@ -67,7 +68,7 @@ content-type: application/json;odata.metadata
 #### <a name="usage"></a>使用方法 
 
 以前の呼び出しから返されたセッション ID は、後続の API 要求のヘッダーとして渡されます  
-`workbook-session-id` HTTP ヘッダー 
+`workbook-session-id` HTTP ヘッダー。 
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -75,6 +76,8 @@ GET /{version}/me/drive/items/01CYZLFJGUJ7JHBSZDFZFL25KSZGQTVAUN/workbook/worksh
 authorization: Bearer {access-token} 
 workbook-session-id: {session-id}
 ```
+
+>注: セッション ID の有効期限が切れていた場合、そのセッションで `404` HTTP エラー コードが返されます。 このようなシナリオでは、新しいセッションを作成して続行できます。 または、定期的にセッションを更新して維持するという方法もあります。 通常、永続セッションの有効期限は、非アクティブ状態が約 7 分間経過した後に切れます。 非永続セッションの有効期限は、非アクティブ状態が約 5 分間経過した後に切れます。 
 
 ## <a name="common-excel-scenarios"></a>一般的な Excel のシナリオ
 
@@ -149,7 +152,9 @@ content-type: application/json;odata.metadata
 ```
 
 #### <a name="get-a-new-worksheet"></a>新しいワークシートの取得 
- 
+
+名前に基づいてワークシートを取得します。 
+
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /{version}/me/drive/items/01CYZLFJGUJ7JHBSZDFZFL25KSZGQTVAUN/workbook/worksheets/Sheet32243

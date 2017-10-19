@@ -1,8 +1,19 @@
+---
+author: rgregg
+ms.author: rgregg
+ms.date: 09/10/2017
+title: "共有アイテムへのアクセス"
+ms.openlocfilehash: d396e7bb79f3c2bbc9c824d48b6fa3df4a5ef26c
+ms.sourcegitcommit: 7aea7a97e36e6d146214de3a90fdbc71628aadba
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 09/28/2017
+---
 # <a name="accessing-shared-driveitems"></a>共有 DriveItems へのアクセス
 
 **shareId** または共有の URL を使用して、共有 [DriveItem](../resources/driveitem.md) または共有アイテムのコレクションにアクセスします。
 
-この API で共有の URL を使用するには、アプリで [URL を共有のトークンに変換する](#transform-a-sharing-url)必要があります。
+この API で共有の URL を使用するには、アプリで [URL を共有のトークンに変換する](#encoding-sharing-urls)必要があります。
 
 ## <a name="permissions"></a>アクセス許可
 
@@ -17,12 +28,32 @@
 ## <a name="http-request"></a>HTTP 要求
 
 <!-- { "blockType": "ignored" } -->
+
 ```http
-GET /shares/{sharingIdOrUrl}
+GET /shares/{shareIdOrEncodedSharingUrl}
 ```
 
-## <a name="request-body"></a>要求本文
-このメソッドには、要求本文を指定しません。
+### <a name="path-parameters"></a>パス パラメーター
+
+| パラメーター名        | 値    | 説明                                                                         |
+|:----------------------|:---------|:------------------------------------------------------------------------------------|
+| **sharingTokenOrUrl** | `string` | 必須。 API によって返される共有トークン、または適切にエンコードされた共有 URL。 |
+
+### <a name="encoding-sharing-urls"></a>共有 URL をエンコードする
+
+共有 URL をエンコードするには、次のロジックを使用します。
+
+1. まず、base64 を使用して URL をエンコードします。
+2. base64 でエンコードされた結果を [unpadded base64url 形式](https://en.wikipedia.org/wiki/Base64)に変換します (値の末尾から `=` 文字を削除し、`/` を `_`、`+` を `-` に置き換える)。
+3. 文字列の先頭に `u!` を追加します。
+
+C# で URL をエンコードする例を以下に示します。
+
+```csharp
+string sharingUrl = "https://onedrive.live.com/redir?resid=1231244193912!12&authKey=1201919!12921!1";
+string base64Value = System.Convert.ToBase64String(System.Text.Encoding.UTF8.GetBytes(sharingUrl));
+string encodedUrl = "u!" + base64Value.TrimEnd('=').Replace('/','_').Replace('+','-');
+```
 
 ## <a name="response"></a>応答
 
@@ -30,25 +61,22 @@ GET /shares/{sharingIdOrUrl}
 
 ## <a name="example"></a>例
 
-##### <a name="request"></a>要求
+### <a name="request"></a>要求
 
 以下は、共有アイテムを取得する要求の例です。
 
-<!-- {
-  "blockType": "request",
-  "name": "get_shares_by_url"
-}-->
+<!-- { "blockType": "request", "name": "get-shared-root" } -->
+
 ```http
-GET https://graph.microsoft.com/v1.0/shares/{shareIdOrUrl}
+GET /shares/{shareIdOrEncodedSharingUrl}
 ```
-##### <a name="response"></a>応答
+
+### <a name="response"></a>応答
 
 以下は、応答の例です。
-<!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.sharedDriveItem"
-} -->
+
+<!-- { "blockType": "response", "truncated": true, "@odata.type": "microsoft.graph.sharedDriveItem" } -->
+
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
@@ -61,6 +89,10 @@ Content-type: application/json
       "id": "98E88F1C-F8DC-47CC-A406-C090248B30E5",
       "displayName": "Ryan Gregg"
     }
+  },
+  "remoteItem": { 
+    "driveId": "",
+    "id": ""
   }
 }
 ```
@@ -71,15 +103,19 @@ Content-type: application/json
 
 ## <a name="example-single-file"></a>例 (単一ファイル)
 
-##### <a name="request"></a>要求
+### <a name="request"></a>要求
 
-**root** リレーションシップを要求することで、共有された **DriveItem** が返されます。
+**driveItem** リレーションシップを要求することで、共有されている **DriveItem** が返されます。
+
+<!-- { "blockType": "request", "name": "get-shared-driveitem" } -->
 
 ```http
-GET https://graph.microsoft.com/v1.0/shares/{shareIdOrUrl}/root
+GET /shares/{shareIdOrUrl}/driveItem
 ```
 
-##### <a name="response"></a>応答
+### <a name="response"></a>応答
+
+<!-- { "blockType": "response", "truncated": true, "@odata.type": "microsoft.graph.driveItem" } -->
 
 ```http
 HTTP/1.1 200 OK
@@ -96,15 +132,19 @@ Content-Type: application/json
 
 ## <a name="example-shared-folder"></a>例 (共有フォルダー)
 
-##### <a name="request"></a>要求
+### <a name="request"></a>要求
 
-**root** リレーションシップを要求して、**children** コレクションを展開することで、共有されている **DriveItem** が共有フォルダー内のファイルとともに返されます。
+**driveItem** リレーションシップを要求して、**children** コレクションを展開することで、共有されている **DriveItem** が共有フォルダー内のファイルとともに返されます。
+
+<!-- { "blockType": "request", "name": "get-shared-driveitem-expand-children" } -->
 
 ```http
-GET https://graph.microsoft.com/v1.0/shares/{shareIdOrUrl}/root?$expand=children
+GET /shares/{shareIdOrUrl}/driveItem?$expand=children
 ```
 
-##### <a name="response"></a>応答
+### <a name="response"></a>応答
+
+<!-- { "blockType": "response", "truncated": true, "@odata.type": "microsoft.graph.driveItem" } -->
 
 ```http
 HTTP/1.1 200 OK
@@ -114,7 +154,7 @@ Content-Type: application/json
   "id": "9FFFDB3C-5B87-4062-9606-1B008CA88E44",
   "name": "Contoso Project",
   "eTag": "2246BD2D-7811-4660-BD0F-1CF36133677B,1",
-  "folder": {}
+  "folder": {},
   "size": 10911212,
   "children": [
     {
@@ -133,33 +173,20 @@ Content-Type: application/json
 }
 ```
 
-## <a name="transform-a-sharing-url"></a>共有の URL を変換する
+## <a name="error-responses"></a>エラー応答
 
-**shares** API を使用して共有の URL にアクセスするには、URL を共有のトークンに変換する必要があります。
+エラーがどのような形で返されるかについては、「[エラー応答][error-response]」を参照してください。
 
-URL を共有のトークンに変化するには:
+## <a name="remarks"></a>備考
 
-1. 共有の URL を Base64 エンコードします。
-2. 次に示すように、base64 でエンコードしたデータを[パディングされていない base64url 形式](https://en.wikipedia.org/wiki/Base64)に変換します。
-  1. 文字列から、末尾の `=` 文字をトリミングします。
-  2. 安全でない URL 文字を同等の文字に置き換えます (`/` を `_` に、`+` を `-` に置換します)。
-3. 文字列の先頭に `u!` を追加します。
+* OneDrive for Business と SharePoint の場合、Shares API には常に認証が必要です。また、ユーザー コンテキストを使用せずに、匿名で共有コンテンツにアクセスするためには使用できません。
 
-たとえば、次に示す C# メソッドにより、入力文字列を共有のトークンに変換します。
+[error-response]: ../../../concepts/errors.md
 
-```csharp
-string UrlToSharingToken(string inputUrl) {
-  var base64Value = System.Convert.ToBase64String(System.Text.Encoding.UTF8.GetBytes(inputUrl));
-  return "u!" + base64Value.TrimEnd('=').Replace('/','_').Replace('+','-');
-}
-```
-
-<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
-2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "Update permission",
-  "keywords": "",
+  "description": "Access the contents of a sharing link with the OneDrive API.",
+  "keywords": "shares,shared,sharing,share link, sharing link, share id, share token",
   "section": "documentation",
-  "tocPath": "OneDrive/Item/Update permission"
-}-->
+  "tocPath": "Sharing/Use a link"
+} -->

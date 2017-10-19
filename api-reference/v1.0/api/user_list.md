@@ -24,7 +24,7 @@ GET /users
 
 既定では、限定的なプロパティのセットのみが返されます (_businessPhones、displayName、givenName、id、jobTitle、mail、mobilePhone、officeLocation、preferredLanguage、surname、userPrincipalName_)。 
 
-別のプロパティ セットを返すには、ODATA `$select` クエリ パラメーターを使用して、目的の[ユーザー](../resources/user.md) プロパティのセットを指定する必要があります。たとえば、_displayName_、_givenName_、_id_ および _postalCode_ を返すには、クエリに `$select=displayName,givenName,postalCode` を追加します。
+別のプロパティ セットを返すには、OData `$select` クエリ パラメーターを使用して、目的の [user](../resources/user.md) プロパティのセットを指定する必要があります。 たとえば、_displayName_、_givenName_、_postalCode_ を返すには、クエリに `$select=displayName,givenName,postalCode` を追加します。
 
 > 注意: 特定のプロパティは、ユーザー コレクションでは返すことができません。[単一のユーザーを取得する](./user_get.md)場合にのみ、_aboutMe、birthday、hireDate、interests、mySite、pastProjects, preferredName、responsibilities、schools、skills、mailboxSettings_ の各プロパティがサポートされます。
 
@@ -43,11 +43,14 @@ GET /users
 
 成功した場合、このメソッドは `200 OK` 応答コードと、応答本文で [user](../resources/user.md) オブジェクトのコレクションを返します。
 
-## <a name="example"></a>例
+## <a name="examples"></a>例
+
+### <a name="example-1-standard-users-request"></a>例 1:標準的なユーザーの要求
+
+既定では、限定的なプロパティのセットのみが返されます (_businessPhones、displayName、givenName、id、jobTitle、mail、mobilePhone、officeLocation、preferredLanguage、surname、userPrincipalName_)。 この例では、既定の要求と応答を示します。 
 
 ##### <a name="request"></a>要求
 
-以下は、要求の例です。
 <!-- {
   "blockType": "request",
   "name": "get_users"
@@ -58,7 +61,6 @@ GET https://graph.microsoft.com/v1.0/users
 
 ##### <a name="response"></a>応答
 
-以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -86,6 +88,45 @@ Content-length: 608
       "surname": "surname-value",
       "userPrincipalName": "userPrincipalName-value",
       "id": "id-value"
+    }
+  ]
+}
+```
+
+### <a name="example-2-users-request-using-select"></a>例 2:$select を使用したユーザーの要求
+
+別のプロパティ セットを必要とする場合、OData `$select` クエリ パラメーターを使用することができます。 たとえば、_displayName_、_givenName_、_postalCode_ を返すには、クエリに `$select=displayName,givenName,postalCode` を追加します。
+
+##### <a name="request"></a>要求
+
+<!-- {
+  "blockType": "request",
+  "name": "get_users"
+}-->
+```http
+GET https://graph.microsoft.com/v1.0/users?$select=displayName,givenName,postalCode
+```
+
+##### <a name="response"></a>応答
+
+注: 簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.user",
+  "isCollection": true
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+Content-length: 159
+
+{
+  "value": [
+    {
+      "displayName": "displayName-value",
+      "givenName": "givenName-value",
+      "postalCode": "postalCode-value"
     }
   ]
 }

@@ -1,6 +1,18 @@
-# <a name="remoteitem-resource-type"></a>RemoteItem リソースの種類
+---
+author: rgregg
+ms.author: rgregg
+ms.date: 09/10/2017
+title: RemoteItem
+ms.openlocfilehash: fd324460b3486f90c342feb1c782c0cf74d77416
+ms.sourcegitcommit: 7aea7a97e36e6d146214de3a90fdbc71628aadba
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 09/28/2017
+---
+# <a name="remoteitem-resource-type"></a>RemoteItem リソース型
 
-**remoteItem** リソースは、[**driveItem**](driveitem.md) が別のドライブに存在するアイテムを参照することを示します。このリソースは、ソース ドライブとターゲット項目の固有 ID を提供します。
+**remoteItem** リソースは、[**driveItem**](driveitem.md) が別のドライブに存在するアイテムを参照することを示します。
+このリソースは、ソース ドライブとターゲット項目の固有 ID を提供します。
 
 非 null の **remoteItem** ファセットを持つ [**DriveItems**](driveitem.md)は、共有された、ユーザーの OneDrive に追加された、あるいは異質な項目のコレクション (検索結果など) から返される項目上にあるリソースです。
 
@@ -28,7 +40,6 @@
   "shared": { "@odata.type": "microsoft.graph.shared" },
   "sharepointIds": { "@odata.type": "microsoft.graph.sharepointIds" },
   "size": 1024,
-  "specialFolder": { "@odata.type": "microsoft.graph.specialFolder" },
   "webDavUrl": "url",
   "webUrl": "url"
 }
@@ -51,8 +62,7 @@
 | parentReference      | [ItemReference](itemreference.md)   | リモート項目の親のプロパティです。読み取り専用です。                                                                                                           |
 | shared               | [shared](shared.md)                 | アイテムが他のユーザーと共有されていることを示し、アイテムの共有状態に関する情報を提供します。読み取り専用です。                                       |
 | sharepointIds        | [SharepointIds](sharepointids.md)   | OneDrive for Business と SharePoint 間の相互運用を、項目識別子の完全なセットと共に提供します。読み取り専用。                                          |
-| size                 | Int64                               | リモート項目のサイズです。読み取り専用。                                                                                                                               |
-| specialFolder        | [SpecialFolder](specialfolder.md)   | 現在のアイテムも特別なフォルダーとして使用可能な場合は、このファセットが返されます。読み取り専用。                                                                     |
+| size                 | Int64                               | リモート項目のサイズです。読み取り専用です。                                                                                                                               |
 | webDavUrl            | Url                                 | 項目の、DAV 互換性のある URL です。                                                                                                                                  |
 | webUrl               | URL                                 | ブラウザーでリソースを表示するための URL。読み取り専用。                                                                                                         |
 
@@ -60,10 +70,10 @@
 
 **driveItem** のファセットに関する詳細については、「[driveItem](driveitem.md)」を参照してください。
 
-
 <!-- {
   "type": "#page.annotation",
-  "description": "remoteItem resource type provides a link to an item in another drive.",
-  "keywords": "remoteitem symlink remote drive shared with me add to onedrive",
-  "section": "documentation"
+  "description": "The quota facet provides information about how much space the OneDrive has available.",
+  "keywords": "quota,available,remaining,used",
+  "section": "documentation",
+  "tocPath": "Facets/RemoteItem"
 } -->

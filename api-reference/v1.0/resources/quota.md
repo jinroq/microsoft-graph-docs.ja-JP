@@ -1,4 +1,15 @@
-# <a name="quota-resource-type"></a>クォータ リソースの種類
+---
+author: rgregg
+ms.author: rgregg
+ms.date: 09/10/2017
+title: Quota
+ms.openlocfilehash: f786a2cf84b9553d2f36d0355a9c34a541243d81
+ms.sourcegitcommit: 7aea7a97e36e6d146214de3a90fdbc71628aadba
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 09/28/2017
+---
+# <a name="quota-resource-type"></a>Quota リソース型
 
 **クォータ** リソースは、[ドライブ](drive.md) リソースの領域の制約に関する詳細を提供します。
 
@@ -41,12 +52,10 @@
 | `critical` | 残りのクォータは、クォータ領域の合計の 1% 未満です。                                                                                                                       |
 | `exceeded` | クォータ使用量が、クォータの合計を超えています。クォータの合計を下回るか、追加の記憶領域を購入するまで、新しいファイルまたはフォルダーをドライブに追加することはできません。 |
 
-<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
-2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "quota resource",
-  "keywords": "",
+  "description": "The quota facet provides information about how much space the OneDrive has available.",
+  "keywords": "quota,available,remaining,used",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "Facets/Quota"
+} -->

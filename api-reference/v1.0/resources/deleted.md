@@ -1,8 +1,21 @@
-# <a name="deleted-resource-type"></a>削除済みリソースの種類
+---
+author: rgregg
+ms.author: rgregg
+ms.date: 09/10/2017
+title: Deleted
+ms.openlocfilehash: 1d45219b2ef26bdc96c46e386d66d91874f9bc0b
+ms.sourcegitcommit: 7aea7a97e36e6d146214de3a90fdbc71628aadba
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 09/28/2017
+---
+# <a name="deleted-facet"></a>Deleted ファセット
 
-**削除済み**リソースは、アイテムが削除されたことを示します。このバージョンの API では、リソースの値が存在する (null 以外である) ことは、ファイルが削除されたことを示します。null (または存在しない) 値は、ファイルが削除されていないことを示します。
+**Deleted** リソースは、アイテムが削除されたことを示します。
+このバージョンの API では、リソースの値が存在する (null 以外である) ことは、ファイルが削除されたことを示します。
+null (または存在しない) 値は、ファイルが削除されていないことを示します。
 
-変更の追跡と削除済みアイテムの検出の詳細については、「[アイテムの変更を表示する](../api/item_delta.md)」を参照してください。
+変更の追跡と削除済みアイテムの検出の詳細については、「[アイテムの変更を表示する](../api/driveitem_delta.md)」を参照してください。
 
 ## <a name="json-representation"></a>JSON 表記
 
@@ -20,7 +33,6 @@
   "state": "string"
 }
 ```
-
 ## <a name="properties"></a>プロパティ
 
 | プロパティ | 型   | 説明                               |
@@ -31,13 +43,10 @@
 
 DriveItem のファセットの詳細については、「[DriveItem](driveitem.md)」を参照してください。
 
-
-<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
-2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "deleted resource",
-  "keywords": "",
+  "description": "The deleted facet providers properties about deleted items",
+  "keywords": "deleted,delete,item,facet",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "Facets/Deleted"
+} -->

@@ -1,4 +1,15 @@
-# <a name="shareddriveitem-resource-type"></a>SharedDriveItem リソースの種類
+---
+author: rgregg
+ms.author: rgregg
+ms.date: 09/10/2017
+title: SharedDriveItem
+ms.openlocfilehash: 3b4497c1a15704388dbb4bb4ba181d3985d65a69
+ms.sourcegitcommit: 7aea7a97e36e6d146214de3a90fdbc71628aadba
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 09/28/2017
+---
+# <a name="shareddriveitem-resource-type"></a>SharedDriveItem リソース型
 
 **sharedDriveItem** リソースは、[Shares](../api/shares_get.md) API を使用して共有 [driveItem](driveitem.md) にアクセスする場合に返されます。
 
@@ -16,15 +27,16 @@
 
 ```json
 {
-    "id": "string",
-    "name": "string",
-    "owner": { "@odata.type": "microsoft.graph.identitySet" },
+  "id": "string",
+  "name": "string",
+  "owner": { "@odata.type": "microsoft.graph.identitySet" },
 
-    /* relationships*/
-    "items": [ { "@odata.type": "microsoft.graph.driveItem" }],
-    "root": { "@odata.type": "microsoft.graph.driveItem" },
-    "driveItem": { "@odata.type": "microsoft.graph.driveItem" },
-    "site": { "@odata.type": "microsoft.graph.site" }
+  "driveItem": [ { "@odata.type": "microsoft.graph.driveItem" }],
+  "items": [ { "@odata.type": "microsoft.graph.driveItem" }],
+  "list": { "@odata.type": "microsoft.graph.list" },
+  "listItem": { "@odata.type": "microsoft.graph.listItem" },
+  "root": { "@odata.type": "microsoft.graph.driveItem" },
+  "site": { "@odata.type": "microsoft.graph.site" }
 }
 ```
 
@@ -38,12 +50,25 @@
 
 ## <a name="relationships"></a>リレーションシップ
 
-| リレーションシップ | 型                                  | 説明                                                                                                                                                                                                |
-| :----------- | :------------------------------------ | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| items        | Collection([DriveItem](driveitem.md)) | 共有 **driveItem** リソースのコレクション。このコレクションは列挙することはできませんが、アイテムには固有の ID でアクセスできます。                                                                        |
-| root         | [DriveItem](driveitem.md)             | 最上位の共有 **driveItem**。単一のファイルが共有されている場合、このアイテムがファイルになります。フォルダーが共有されている場合は、この項目はフォルダーになります。アイテムのファセットを使用して、どちらのケースが適用されるか判断します。 |
-| driveItem    | [driveItem](driveitem.md)             | 共有されたリソースの **driveItem**。これは、**root** プロパティと一致します。                                                                                                             |
-| site         | [site](site.md)                       | 共有されたアイテムを含む **サイト** リソース。                                                                                                                                                |
+| リレーションシップ名 | 種類                | 説明
+| ------------------|:--------------------|:-----------------------------------
+| **driveItem**     | [**driveItem**][driveItem]   | 基になる **driveItem** にアクセスするために使用
+| **list**          | [**list**][list]        | 基になる **list** にアクセスするために使用
+| **listItem**      | [**listItem**][listItem]    | 基になる **listItem** にアクセスするために使用
+| **site**          | [**site**][site]        | 基になる **site** にアクセスするために使用
+
+
+または、個人用の OneDrive アカウントから共有される **driveItem** には、次のリレーションシップも使用できます。
+
+| リレーションシップ名 | 種類                         | 説明
+| ------------------|:-----------------------------|:-----------------------------------
+| **items**         | [**driveItem**][driveItem] コレクション | 共有ルートに含まれているすべての driveItem。 このコレクションを列挙することはできません。
+| **driveItem**     | [**driveItem**][driveItem]            | 基になる **driveItem** にアクセスするために使用
+
+[driveItem]: driveItem.md
+[list]: list.md
+[listItem]: listItem.md
+[site]: site.md
 
 ## <a name="methods"></a>メソッド
 
@@ -55,12 +80,10 @@
 
 DriveItem のファセットの詳細については、「[DriveItem](driveitem.md)」を参照してください。
 
-<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
-2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "sharepointIds resource",
-  "keywords": "",
+  "description": "Share resource returns information about a shared item or collection of items.",
+  "keywords": "share,shared,sharing root,shared files, shared items",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "Resources/Share"
+} -->

@@ -1,8 +1,20 @@
-# <a name="file-resource-type"></a>ファイル リソースの種類
+---
+author: rgregg
+ms.author: rgregg
+ms.date: 09/10/2017
+title: File
+ms.openlocfilehash: fd1aa4628fb4f3ba58474028c46840e7c1e2d53c
+ms.sourcegitcommit: 7aea7a97e36e6d146214de3a90fdbc71628aadba
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 09/28/2017
+---
+# <a name="file-resource-type"></a>File リソース型
 
 **ファイル** リソースは、ファイル関連のデータ項目を 1 つの構造にグループ化します。
 
-[**DriveItem**](driveitem.md) に null 以外の**ファイル** ファセットがある場合は、項目はファイルを表します。他のプロパティに加えて、ファイルにはファイルのバイト ストリームを含む**コンテンツ**関係があります。
+[**DriveItem**](driveitem.md) に null 以外の**file** ファセットがある場合は、項目はファイルを表します。
+他のプロパティに加えて、ファイルにはファイルのバイト ストリームを含む **content** のリレーションシップがあります。
 
 ## <a name="json-representation"></a>JSON 表記
 
@@ -32,14 +44,10 @@
 
 DriveItem のファセットの詳細については、「[DriveItem](driveitem.md)」を参照してください。
 
-
-
-<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
-2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "file resource",
-  "keywords": "",
+  "description": "The file facet describes properties of a file",
+  "keywords": "file,item,facet",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "Facets/File"
+} -->

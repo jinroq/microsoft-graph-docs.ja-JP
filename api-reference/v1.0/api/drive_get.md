@@ -1,6 +1,19 @@
+---
+author: rgregg
+ms.author: rgregg
+ms.date: 09/10/2017
+title: "ドライブを取得する"
+ms.openlocfilehash: 91a140dbcb1550bc850656452a6fa24a84dd5500
+ms.sourcegitcommit: 7aea7a97e36e6d146214de3a90fdbc71628aadba
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 09/28/2017
+---
 # <a name="get-drive"></a>ドライブを取得する
 
-[Drive](../resources/drive.md) リソースのプロパティと関係を取得します。ドライブは、ファイル システムの最上位のコンテナーです。Graph API を使用すると、ユーザーの OneDrive または OneDrive for Business や SharePoint ドキュメント ライブラリのドライブ リソースにアクセスできます。
+[Drive](../resources/drive.md) リソースのプロパティと関係を取得します。
+
+ドライブとは、OneDrive または SharePoint のドキュメント ライブラリなど、ファイル システムの最上位コンテナーです。
 
 ## <a name="permissions"></a>アクセス許可
 
@@ -12,74 +25,109 @@
 |委任 (個人用 Microsoft アカウント) | Files.Read、Files.ReadWrite、Files.Read.All、Files.ReadWrite.All    |
 |アプリケーション | Files.Read.All、Files.ReadWrite.All、Sites.Read.All、Sites.ReadWrite.All |
 
-## <a name="get-a-users-onedrive"></a>ユーザーの OneDrive を取得する
+## <a name="get-current-users-onedrive"></a>現在のユーザーの OneDrive を取得する
 
-ユーザーの OneDrive または OneDrive for Business にアクセスするには、[User](../resources/user.md) リソースについての**ドライブ**関係をアプリが要求する必要があります。
+(委任された認証を使用する場合) `me` シングルトンから、サインイン ユーザーのドライブにアクセスできます。
 
-## <a name="http-request"></a>HTTP 要求
+ユーザーの OneDrive はプロビジョニングされていないものの、ユーザーが OneDrive を使用するライセンスを持っている場合、委任された認証を使用するときに、この要求によりユーザーのドライブは自動的にプロビジョニングされます。
 
-<!-- { "blockType": "ignored" } -->
+### <a name="http-request"></a>HTTP 要求
+
+<!-- { "blockType": "request", "name": "get-drive-default", "scopes": "files.read" } -->
 
 ```http
 GET /me/drive
+```
+
+## <a name="get-a-users-onedrive"></a>ユーザーの OneDrive を取得する
+
+ユーザーの OneDrive または OneDrive for Business にアクセスするには、User リソースについての**ドライブ** リレーションシップをアプリが要求する必要があります。
+
+ユーザーの OneDrive はプロビジョニングされていないものの、ユーザーが OneDrive を使用するライセンスを持っている場合、委任された認証を使用するときに、この要求によりユーザーのドライブは自動的にプロビジョニングされます。
+
+### <a name="http-request"></a>HTTP 要求
+
+<!-- { "blockType": "request", "name": "get-drive-by-user", "scopes": "files.read.all" } -->
+
+```http
 GET /users/{idOrUserPrincipalName}/drive
 ```
 
+### <a name="path-parameters"></a>パス パラメーター
+
+| パラメーター名 | 値  | 説明                                       |
+|:---------------|:-------|:--------------------------------------------------|
+| _idOrUserPrincipalName_     | string | 必須。 OneDrive を所有するユーザー オブジェクトの識別子。 |
+
 ## <a name="get-the-document-library-associated-with-a-group"></a>グループに関連付けられたドキュメント ライブラリを取得する
 
-[グループの](../resources/group.md)既定のドキュメント ライブラリにアクセスするには、そのグループについての**ドライブ**関係をアプリが要求する必要があります。
+グループの既定のドキュメント ライブラリにアクセスするには、そのグループについての**ドライブ** リレーションシップをアプリが要求する必要があります。
 
-## <a name="http-request"></a>HTTP 要求
+### <a name="http-request"></a>HTTP 要求
 
-<!-- { "blockType": "ignored" } -->
+<!-- { "blockType": "request", "name": "get-drive-by-group", "scopes": "group.read.all" } -->
 
 ```http
-GET /groups/{idOrUserPrincipalName}/drive
+GET /groups/{groupId}/drive
 ```
 
+### <a name="path-parameters"></a>パス パラメーター
+
+| パラメーター名 | 値  | 説明                                       |
+|:---------------|:-------|:--------------------------------------------------|
+| _groupId_      | string | 必須。 ドキュメント ライブラリを所有するグループの識別子。 |
+
+## <a name="get-the-document-library-for-a-site"></a>サイトのドキュメント ライブラリを取得する
+
+[サイトの](../resources/site.md)既定のドキュメント ライブラリにアクセスするには、そのサイトについての**ドライブ** リレーションシップをアプリが要求する必要があります。
+
+### <a name="http-request"></a>HTTP 要求
+
+```http
+GET /sites/{siteId}/drive
+```
+
+### <a name="path-parameters"></a>パス パラメーター
+
+| パラメーター名 | 値  | 説明                                       |
+|:---------------|:-------|:--------------------------------------------------|
+| _siteId_       | string | 必須。 ドキュメント ライブラリを含むサイトの識別子。 |
+
+## <a name="get-a-drive-by-id"></a>ID によりドライブを取得する
+
+ドライブの一意の識別子を持っている場合、最上位ドライブのコレクションから直接アクセスできます。
+
+### <a name="http-request"></a>HTTP 要求
+
+<!-- { "blockType": "request", "name": "get-drive-by-id", "scopes": "files.read" } -->
+
+```http
+GET /drives/{driveId}
+```
+
+### <a name="path-parameters"></a>パス パラメーター
+
+| パラメーター名 | 値  | 説明                                       |
+|:---------------|:-------|:--------------------------------------------------|
+| _driveId_      | string | 必須。 要求されるドライブの識別子。 |
 
 ## <a name="optional-query-parameters"></a>オプションのクエリ パラメーター
 
-このメソッドは、応答をカスタマイズするための `$expand` および `$select` [OData クエリ パラメーター](../../../concepts/query_parameters.md)をサポートします。
+応答を形成するため、これらのメソッドは [$select クエリ パラメーター][odata-query-parameters]をサポートしています。
 
-## <a name="request-body"></a>要求本文
+## <a name="http-response"></a>HTTP 応答
 
-このメソッドには、要求本文を指定しません。
+各メソッドは、一致するドライブに応じた [Drive リソース][drive-resource]を応答本文で返します。
 
-## <a name="response"></a>応答
+<!-- { "blockType": "response", "@odata.type": "microsoft.graph.drive", "truncated": true, "name": ["get-drive-by-id", "get-drive-by-group", "get-drive-by-user", "get-drive-default"] } -->
 
-成功した場合、このメソッドは `200 OK` 応答コードと、応答本文で [Drive](../resources/drive.md) リソースを返します。
-
-## <a name="example"></a>例
-
-##### <a name="request"></a>要求
-
-サインインしているユーザーの OneDrive または OneDrive for Business を取得する要求の例を次に示します。
-
-<!-- {
-  "blockType": "request",
-  "name": "get_drive"
-}-->
-```http
-GET https://graph.microsoft.com/v1.0/me/drive
-```
-
-##### <a name="response"></a>応答
-
-以下は、応答の例です。
-
-<!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.drive"
-} -->
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
 
 {
     "id": "b!t18F8ybsHUq1z3LTz8xvZqP8zaSWjkFNhsME-Fepo75dTf9vQKfeRblBZjoSQrd7",
-    "driveType": "business",    
+    "driveType": "business",
     "owner": {
         "user": {
             "id": "efee1b77-fb3b-4f65-99d6-274c11914d12",
@@ -95,12 +143,17 @@ Content-type: application/json
 }
 ```
 
-<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
-2015-10-25 14:57:30 UTC -->
+### <a name="error-response-codes"></a>エラー応答コード
+
+(委任された認証を使用する場合) ドライブが存在しないために自動的にプロビジョニングできないなら、`HTTP 404` 応答が返されます。
+
+[drive-resource]: ../resources/drive.md
+[odata-query-parameters]: ../../../concepts/query_parameters.md
+
 <!-- {
   "type": "#page.annotation",
   "description": "Get metadata for a OneDrive, OneDrive for Business, or Office 365 group drive",
   "keywords": "drive,onedrive,default drive,group drive",
   "section": "documentation",
-  "tocPath": "OneDrive/Drive/Get Drive"
-}-->
+  "tocPath": "Drives/Get drive"
+} -->

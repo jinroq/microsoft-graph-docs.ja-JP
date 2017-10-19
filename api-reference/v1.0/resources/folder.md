@@ -1,6 +1,18 @@
-# <a name="folder-resource-type"></a>フォルダー リソースの種類
+---
+author: rgregg
+ms.author: rgregg
+ms.date: 09/10/2017
+title: Folder
+ms.openlocfilehash: 664597297700f7af096ef30cfbd5342a45a6c157
+ms.sourcegitcommit: 7aea7a97e36e6d146214de3a90fdbc71628aadba
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 09/28/2017
+---
+# <a name="folder-resource-type"></a>Folder リソース型
 
-**フォルダー**リソースは、アイテム上のフォルダー関連のデータを 1 つの構造にグループ化します。**フォルダー**ファセットが null 以外の [**DriveItems**](driveitem.md) は、他の DriveItems のコンテナーです。
+**Folder** リソースは、アイテム上のフォルダー関連のデータを 1 つの構造にグループ化します。 
+null でない **folder** ファセットを持つ [**DriveItem**](driveitem.md) は、他の DriveItem のコンテナーです。
 
 ## <a name="json-representation"></a>JSON 表記
 
@@ -16,26 +28,29 @@
 
 ```json
 {
-  "childCount": 1024
+  "childCount": 1024,
+  "view": { "@odata.type": "microsoft.graph.folderView" }
 }
 ```
 
 ## <a name="properties"></a>プロパティ
 
-| プロパティ       | 型  | 説明                                                     |
-|:---------------|:------|:----------------------------------------------------------------|
-| **childCount** | Int64 | このコンテナーの中に含まれる子の数。 |
+| プロパティ       | 型           | 説明
+|:---------------|:---------------|:-------------------------------------------
+| **childCount** | Int64          | このコンテナーの中に含まれる子の数。
+| **view**       | [folderView][] | フォルダーに推奨されるビューを定義するプロパティのコレクション。
 
-## <a name="remarks"></a>注釈 
+## <a name="remarks"></a>備考 
 
-DriveItem のファセットの詳細については、「[DriveItem](driveitem.md)」を参照してください。
+DriveItem のファセットの詳細については、「[DriveItem][]」を参照してください。
 
-<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
-2015-10-25 14:57:30 UTC -->
+[folderView]: folderView.md
+[DriveItem]: driveItem.md
+
 <!-- {
   "type": "#page.annotation",
-  "description": "folder resource",
-  "keywords": "",
+  "description": "The Folder facet describes properties of a folder",
+  "keywords": "folder,item,facet",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "Facets/Folder"
+} -->

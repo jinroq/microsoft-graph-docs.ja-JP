@@ -1,4 +1,15 @@
-# <a name="image-resource-type"></a>イメージ リソースの種類
+---
+author: rgregg
+ms.author: rgregg
+ms.date: 09/10/2017
+title: Image
+ms.openlocfilehash: 4488aedaf5c71f6484a0ccf33949fac2569d7af1
+ms.sourcegitcommit: 7aea7a97e36e6d146214de3a90fdbc71628aadba
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 09/28/2017
+---
+# <a name="image-resource-type"></a>Image リソース型
 
 **イメージ** リソースは、イメージ関連のプロパティを 1 つの構造にグループ化します。[**DriveItem**](driveitem.md) に null 以外の**イメージ** ファセットがある場合は、アイテムはビットマップ イメージを表します。
 
@@ -6,18 +17,11 @@
 
 ## <a name="json-representation"></a>JSON 表記
 
-以下は、リソースの JSON 表記です。
-
-<!-- {
-  "blockType": "resource",
-  "optionalProperties": [ ],
-  "@odata.type": "microsoft.graph.image"
-}-->
-
+<!-- { "blockType": "resource", "@odata.type": "microsoft.graph.image" } -->
 ```json
 {
-  "height": 1024,
-  "width": 1024
+  "width": 100,
+  "height": 200
 }
 ```
 
@@ -30,17 +34,15 @@
 
 ## <a name="remarks"></a>注釈
 
-OneDrive for Business では、このリソースは、ファイル拡張子に基づいてイメージであると予期されるアイテム上に返されます。OneDrive for Business では、このリソースはいずれのプロパティも返しません。
+OneDrive for Business では、このリソースは、ファイル拡張子に基づいてイメージであると予期されるアイテム上に返されます。
 
 DriveItem のファセットの詳細については、「[DriveItem](driveitem.md)」を参照してください。
 
 
-<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
-2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "image resource",
-  "keywords": "",
+  "description": "The image facet describes properties of an image like width and height",
+  "keywords": "image,width,height,item,facet",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "Facets/Image"
+} -->
