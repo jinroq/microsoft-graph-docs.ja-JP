@@ -27,7 +27,7 @@ POST /groups/{id}/members/$ref
 
 ## <a name="response"></a>応答
 
-成功した場合、このメソッドは `204, No Content` 応答コードを返します。応答本文には何も返されません。
+成功した場合、このメソッドは `204 No Content` 応答コードを返します。応答本文には何も返されません。
 
 ## <a name="example"></a>例
 ##### <a name="request"></a>要求

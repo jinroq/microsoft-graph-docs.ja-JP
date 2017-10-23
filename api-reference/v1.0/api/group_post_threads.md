@@ -4,7 +4,7 @@
 
 グループには、新しい会話、会話スレッド、および投稿が作成されます。[スレッドに返信](conversationthread_reply.md) または [投稿に返信](post_reply.md) を使い、そのスレッドへの投稿を続けます。
 
-メモ:[既存の会話内に新しいスレッドを開始する](conversation_post_threads.md)こともできます。 
+注:[既存の会話内に新しいスレッドを開始する](conversation_post_threads.md) こともできます。 
 
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](../../../concepts/permissions_reference.md)」を参照してください。
@@ -31,7 +31,7 @@ POST /groups/{id}/threads
 
 ## <a name="response"></a>応答
 
-成功した場合、このメソッドは `201, Created` 応答コードと、応答本文で [conversationThread](../resources/conversationthread.md) オブジェクトを返します。
+成功した場合、このメソッドは `201 Created` 応答コードと、応答本文で [conversationThread](../resources/conversationthread.md) オブジェクトを返します。
 
 ## <a name="example"></a>例
 ##### <a name="request"></a>要求

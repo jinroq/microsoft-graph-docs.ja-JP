@@ -36,7 +36,7 @@ POST /users/{id | userPrincipalName}/messages/{id}/attachments
 
 ## <a name="response"></a>応答
 
-成功した場合、このメソッドは `201, Created` 応答コードと、応答本文で [Attachment](../resources/attachment.md) オブジェクトを返します。
+成功した場合、このメソッドは `201 Created` 応答コードと、応答本文で [Attachment](../resources/attachment.md) オブジェクトを返します。
 
 ## <a name="example-file-attachment"></a>例 (添付ファイル)
 ##### <a name="request"></a>要求

@@ -47,7 +47,7 @@ GET /users/<id>/mailFolders/{id}/messages/delta
 
 ## <a name="response"></a>応答
 
-成功した場合、このメソッドは `200, OK` 応答コードと、応答本文で [message](../resources/message.md) コレクション オブジェクトを返します。
+成功した場合、このメソッドは `200 OK` 応答コードと、応答本文で [message](../resources/message.md) コレクション オブジェクトを返します。
 
 ## <a name="example"></a>例
 ##### <a name="request"></a>要求

@@ -31,7 +31,7 @@ POST /workbook/worksheets/{id|name}/tables/{id|name}/columns/{id|name}/filter/ap
 
 ## <a name="response"></a>応答
 
-成功した場合、このメソッドは `200, OK` 応答コードを返します。応答本文には何も返されません。
+成功した場合、このメソッドは `200 OK` 応答コードを返します。応答本文には何も返されません。
 
 ## <a name="example"></a>例
 以下は、この API を呼び出す方法の例です。

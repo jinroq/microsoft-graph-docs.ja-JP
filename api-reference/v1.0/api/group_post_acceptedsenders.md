@@ -27,7 +27,7 @@ POST /groups/{id}/acceptedSenders/$ref
 
 ## <a name="response"></a>応答
 
-このメソッドは `204, No Content` 応答コードを返し、応答の本文は返しません。
+このメソッドは `204 No Content` 応答コードを返し、応答の本文は返しません。
 
 ## <a name="example"></a>例
 ##### <a name="request"></a>要求

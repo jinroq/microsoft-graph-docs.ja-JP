@@ -43,7 +43,7 @@ POST /schemaExtensions
 
 ## <a name="response"></a>応答
 
-成功した場合、このメソッドは応答本文で `201, Created` 応答コードと、[schemaExtension](../resources/schemaextension.md) オブジェクトを返します。
+成功した場合、このメソッドは応答本文で `201 Created` 応答コードと、[schemaExtension](../resources/schemaextension.md) オブジェクトを返します。
 
 ## <a name="example"></a>例
 

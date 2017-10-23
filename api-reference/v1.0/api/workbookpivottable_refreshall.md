@@ -26,7 +26,7 @@ POST /me/drive/root/workbook/worksheets/{id}/pivotTables/refreshAll
 ## <a name="request-body"></a>要求本文
 
 ### <a name="response"></a>応答
-成功した場合、このメソッドは `200, OK` 応答コードを返します。応答本文には何も返されません。
+成功した場合、このメソッドは `200 OK` 応答コードを返します。応答本文には何も返されません。
 
 ## <a name="example"></a>例
 以下は、この API を呼び出す方法の例です。

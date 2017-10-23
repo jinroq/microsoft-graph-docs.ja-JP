@@ -54,7 +54,7 @@ POST /users/{id|userPrincipalName}/findMeetingTimes
 
 ## <a name="response"></a>応答
 
-成功した場合、このメソッドは `200, OK` 応答コードと、応答本文に入った [meetingTimeSuggestionsResult](../resources/meetingTimeSuggestionsResult.md) を返します。 
+成功した場合、このメソッドは `200 OK` 応答コードと、応答本文に入った [meetingTimeSuggestionsResult](../resources/meetingTimeSuggestionsResult.md) を返します。 
 
 **meetingTimeSuggestionsResult** には、会議提案のコレクションと **emptySuggestionsReason** プロパティが含まれます。各提案は、[meetingTimeSuggestion](../resources/meetingTimeSuggestion.md) として定義され、出席者の参加の確度について、平均で 50% または**minimumAttendeePercentage** パラメーターで指定した特定の割合 (%) が付されます。 
 

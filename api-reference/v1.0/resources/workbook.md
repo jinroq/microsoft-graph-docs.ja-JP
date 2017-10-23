@@ -17,8 +17,8 @@ Workbook は、ワークシート、テーブル、範囲などの関連する�
 ## <a name="relationships"></a>リレーションシップ
 | リレーションシップ | 型   |説明|
 |:---------------|:--------|:----------|
-|names|[NamedItem](nameditem.md) コレクション|ワークブックのスコープにある名前付き項目 (名前付き範囲と名前付き定数) のコレクションを表します。読み取り専用。|
-|tables|[Table](table.md) コレクション|ブックに関連付けられているテーブルのコレクションを表します。読み取り専用。|
+|names|[NamedItem](nameditem.md) コレクション|ブック スコープの名前付き項目 (名前付き範囲と名前付き定数) のコレクションを表します。読み取り専用。|
+|テーブル|[Table](table.md) コレクション|ブックに関連付けられているテーブルのコレクションを表します。読み取り専用。|
 |worksheets|[Worksheet](worksheet.md) コレクション|ブックに関連付けられているワークシートのコレクションを表します。読み取り専用。|
 
 ## <a name="functions"></a>関数
@@ -54,7 +54,7 @@ workbook-session-id: {session-id}
 応答:
 
 ```http
-HTTP code: 200, OK
+HTTP code: 200 OK
 content-type: application/json;odata.metadata 
 
 {
@@ -89,7 +89,7 @@ workbook-session-id: {session-id}
 応答:
 
 ```http
-HTTP code: 200, OK
+HTTP code: 200 OK
 content-type: application/json;odata.metadata 
 
 {

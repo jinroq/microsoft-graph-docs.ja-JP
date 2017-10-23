@@ -4,7 +4,7 @@
 
 指定したとおりにスレッドと投稿を作成します。[スレッドに返信](conversationthread_reply.md) を使用して、そのスレッドへの投稿を続けます。また、投稿 ID を取得している場合は、そのスレッドのその投稿にも[返信](post_reply.md)できます。
 
-メモ:[最初にスレッドを作成して、新しい会話を開始](group_post_threads.md)することもできます。
+注:[最初にスレッドを作成して、新しい会話を開始](group_post_threads.md)することもできます。
 
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](../../../concepts/permissions_reference.md)」を参照してください。
@@ -30,7 +30,7 @@ POST /groups/{id}/conversations/{id}/threads
 
 ## <a name="response"></a>応答
 
-成功した場合、このメソッドは `201, Created` 応答コードと、応答本文で [conversationThread](../resources/conversationthread.md) オブジェクトを返します。
+成功した場合、このメソッドは `201 Created` 応答コードと、応答本文で [conversationThread](../resources/conversationthread.md) オブジェクトを返します。
 
 ## <a name="example"></a>例
 ##### <a name="request"></a>要求
@@ -56,7 +56,7 @@ Content-type: application/json
 要求の本文に、[conversationThread](../resources/conversationthread.md) オブジェクトの JSON 表記を指定します。
 ##### <a name="response"></a>応答
 
-成功した場合、このメソッドは `201, Created` 応答コードと、応答本文で新しいスレッドの `id` を返します。以下は、応答の例です。 
+成功した場合、このメソッドは `201 Created` 応答コードと、応答本文で新しいスレッドの `id` を返します。以下は、応答の例です。 
 <!-- {
   "blockType": "response",
   "truncated": true,

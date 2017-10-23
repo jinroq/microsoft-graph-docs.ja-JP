@@ -33,7 +33,7 @@ POST /workbook/worksheets({id|name})/names/add
 
 ## <a name="response"></a>応答
 
-成功した場合、このメソッドは `200, OK` 応答コードと、応答本文で [NamedItem](../resources/NamedItem.md) オブジェクトを返します。
+成功した場合、このメソッドは `200 OK` 応答コードと、応答本文で [NamedItem](../resources/NamedItem.md) オブジェクトを返します。
 
 ## <a name="example"></a>例
 以下は、この API を呼び出す方法の例です。
@@ -76,7 +76,7 @@ Content-length: 109
     "comment": "Comment for the named item",
     "name": "test7",
     "scope": "Workbook",
-    "type": "Double",
+    "type": "String",
     "value": "0",
     "visible": true
 }

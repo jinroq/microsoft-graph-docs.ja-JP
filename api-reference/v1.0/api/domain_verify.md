@@ -2,7 +2,7 @@
 
 ドメインの所有権を検証します。
 
-> **重要:**未検証のドメインにのみ適用されます。未検証のドメインでは、[ドメイン](../resources/domain.md)の isVerified プロパティは false です。
+> **重要:**未検証のドメインにのみ適用されます。未検証のドメインでは、[domain](../resources/domain.md) の isVerified プロパティは false です。
 
 ## <a name="permissions"></a>アクセス許可
 
@@ -35,7 +35,7 @@ POST /domains/{id}/verify
 
 ## <a name="response"></a>応答
 
-成功した場合、このメソッドは応答本文で `200, OK` 応答コードと [domain](../resources/domain.md) オブジェクトを返します。
+成功した場合、このメソッドは応答本文で `200 OK` 応答コードと [domain](../resources/domain.md) オブジェクトを返します。
 
 ## <a name="example"></a>例
 ##### <a name="request"></a>要求

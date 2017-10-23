@@ -34,7 +34,7 @@ POST /directoryObjects/{id}/checkMemberGroups
 
 ## <a name="response"></a>応答
 
-成功した場合、このメソッドは `200, OK` 応答コードと、応答本文で文字列コレクション オブジェクトを返します。
+成功した場合、このメソッドは `200 OK` 応答コードと、応答本文で文字列コレクション オブジェクトを返します。
 
 ## <a name="example"></a>例
 
