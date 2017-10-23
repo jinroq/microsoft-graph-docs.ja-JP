@@ -1,47 +1,47 @@
-# <a name="delete-contact"></a><span data-ttu-id="ab5de-101">連絡先を削除する</span><span class="sxs-lookup"><span data-stu-id="ab5de-101">Delete contact</span></span>
+# <a name="delete-contact"></a><span data-ttu-id="eae4a-101">連絡先を削除する</span><span class="sxs-lookup"><span data-stu-id="eae4a-101">Delete contact</span></span>
 
-<span data-ttu-id="ab5de-102">連絡先を削除します。</span><span class="sxs-lookup"><span data-stu-id="ab5de-102">Delete a contact.</span></span>
-## <a name="permissions"></a><span data-ttu-id="ab5de-103">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="ab5de-103">Permissions</span></span>
-<span data-ttu-id="ab5de-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](../../../concepts/permissions_reference.md)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="ab5de-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).</span></span>
+<span data-ttu-id="eae4a-102">連絡先を削除します。</span><span class="sxs-lookup"><span data-stu-id="eae4a-102">Delete a contact.</span></span>
+## <a name="permissions"></a><span data-ttu-id="eae4a-103">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="eae4a-103">Permissions</span></span>
+<span data-ttu-id="eae4a-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](../../../concepts/permissions_reference.md)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="eae4a-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).</span></span>
 
-|<span data-ttu-id="ab5de-106">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="ab5de-106">Permission type</span></span>      | <span data-ttu-id="ab5de-107">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="ab5de-107">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="eae4a-106">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="eae4a-106">Permission type</span></span>      | <span data-ttu-id="eae4a-107">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="eae4a-107">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="ab5de-108">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="ab5de-108">Delegated (work or school account)</span></span> | <span data-ttu-id="ab5de-109">Contacts.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="ab5de-109">Contacts.ReadWrite</span></span>    |
-|<span data-ttu-id="ab5de-110">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="ab5de-110">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="ab5de-111">Contacts.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="ab5de-111">Contacts.ReadWrite</span></span>    |
-|<span data-ttu-id="ab5de-112">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="ab5de-112">Application</span></span> | <span data-ttu-id="ab5de-113">Contacts.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="ab5de-113">Contacts.ReadWrite</span></span> |
+|<span data-ttu-id="eae4a-108">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="eae4a-108">Delegated (work or school account)</span></span> | <span data-ttu-id="eae4a-109">Contacts.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="eae4a-109">Contacts.ReadWrite</span></span>    |
+|<span data-ttu-id="eae4a-110">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="eae4a-110">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="eae4a-111">Contacts.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="eae4a-111">Contacts.ReadWrite</span></span>    |
+|<span data-ttu-id="eae4a-112">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="eae4a-112">Application</span></span> | <span data-ttu-id="eae4a-113">Contacts.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="eae4a-113">Contacts.ReadWrite</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="ab5de-114">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="ab5de-114">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="eae4a-114">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="eae4a-114">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
-<span data-ttu-id="ab5de-115">ユーザーの既定 [contactFolder](../resources/contactfolder.md) からの [連絡先](../resources/contact.md)。</span><span class="sxs-lookup"><span data-stu-id="ab5de-115">A [contact](../resources/contact.md) from a user's default [contactFolder](../resources/contactfolder.md).</span></span>
+<span data-ttu-id="eae4a-115">ユーザーの既定 [contactFolder](../resources/contactfolder.md) からの [連絡先](../resources/contact.md)。</span><span class="sxs-lookup"><span data-stu-id="eae4a-115">A [contact](../resources/contact.md) from a user's default [contactFolder](../resources/contactfolder.md).</span></span>
 ```http
 DELETE /me/contacts/{id}
 DELETE /users/{id | userPrincipalName}/contacts/{id}
 ```
-<span data-ttu-id="ab5de-116">ユーザーの最上位レベル [contactFolder](../resources/contactfolder.md) からの [連絡先](../resources/contact.md)。</span><span class="sxs-lookup"><span data-stu-id="ab5de-116">A [contact](../resources/contact.md) from a user's top level [contactFolder](../resources/contactfolder.md).</span></span>
+<span data-ttu-id="eae4a-116">ユーザーの最上位レベル [contactFolder](../resources/contactfolder.md) からの [連絡先](../resources/contact.md)。</span><span class="sxs-lookup"><span data-stu-id="eae4a-116">A [contact](../resources/contact.md) from a user's top level [contactFolder](../resources/contactfolder.md).</span></span>
 ```http
 DELETE /me/contactFolders/{id}/contacts/{id}
 DELETE /users/{id | userPrincipalName}/contactFolders/{id}/contacts/{id}
 ```
-<span data-ttu-id="ab5de-p102">[contactFolder](../resources/mailfolder.md) の子フォルダー内に含まれる [連絡先](../resources/contact.md)。次の例は、入れ子のレベルの 1 つを示していますが、連絡先は子の子などに入れることができます。</span><span class="sxs-lookup"><span data-stu-id="ab5de-p102">A [contact](../resources/contact.md) contained in a child folder of a [contactFolder](../resources/mailfolder.md). The example below shows one level of nesting, but a contact can be located in a child of a child and so on.</span></span>
+<span data-ttu-id="eae4a-p102">[contactFolder](../resources/mailfolder.md) の子フォルダー内に含まれる [連絡先](../resources/contact.md)。次の例は、入れ子のレベルの 1 つを示していますが、連絡先は子の子などに入れることができます。</span><span class="sxs-lookup"><span data-stu-id="eae4a-p102">A [contact](../resources/contact.md) contained in a child folder of a [contactFolder](../resources/mailfolder.md). The example below shows one level of nesting, but a contact can be located in a child of a child and so on.</span></span>
 ```http
 DELETE /me/contactFolder/{id}/childFolders/{id}/.../contacts/{id}
 DELETE /users/{id | userPrincipalName}/contactFolders/{id}/childFolders/{id}/contacts/{id}
 ```
-## <a name="request-headers"></a><span data-ttu-id="ab5de-119">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="ab5de-119">Request headers</span></span>
-| <span data-ttu-id="ab5de-120">ヘッダー</span><span class="sxs-lookup"><span data-stu-id="ab5de-120">Header</span></span>       | <span data-ttu-id="ab5de-121">値</span><span class="sxs-lookup"><span data-stu-id="ab5de-121">Value</span></span> |
+## <a name="request-headers"></a><span data-ttu-id="eae4a-119">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="eae4a-119">Request headers</span></span>
+| <span data-ttu-id="eae4a-120">ヘッダー</span><span class="sxs-lookup"><span data-stu-id="eae4a-120">Header</span></span>       | <span data-ttu-id="eae4a-121">値</span><span class="sxs-lookup"><span data-stu-id="eae4a-121">Value</span></span> |
 |:---------------|:--------|
-| <span data-ttu-id="ab5de-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="ab5de-122">Authorization</span></span>  | <span data-ttu-id="ab5de-p103">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="ab5de-p103">Bearer {token}. Required.</span></span>  |
+| <span data-ttu-id="eae4a-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="eae4a-122">Authorization</span></span>  | <span data-ttu-id="eae4a-p103">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="eae4a-p103">Bearer {token}. Required.</span></span>  |
 
-## <a name="request-body"></a><span data-ttu-id="ab5de-125">要求本文</span><span class="sxs-lookup"><span data-stu-id="ab5de-125">Request body</span></span>
-<span data-ttu-id="ab5de-126">このメソッドには、要求本文を指定しません。</span><span class="sxs-lookup"><span data-stu-id="ab5de-126">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="eae4a-125">要求本文</span><span class="sxs-lookup"><span data-stu-id="eae4a-125">Request body</span></span>
+<span data-ttu-id="eae4a-126">このメソッドには、要求本文を指定しません。</span><span class="sxs-lookup"><span data-stu-id="eae4a-126">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="ab5de-127">応答</span><span class="sxs-lookup"><span data-stu-id="ab5de-127">Response</span></span>
+## <a name="response"></a><span data-ttu-id="eae4a-127">応答</span><span class="sxs-lookup"><span data-stu-id="eae4a-127">Response</span></span>
 
-<span data-ttu-id="ab5de-p104">成功した場合、このメソッドは `204, No Content` 応答コードを返します。応答本文には何も返されません。</span><span class="sxs-lookup"><span data-stu-id="ab5de-p104">If successful, this method returns `204, No Content` response code. It does not return anything in the response body.</span></span>
+<span data-ttu-id="eae4a-p104">成功した場合、このメソッドは `204 No Content` 応答コードを返します。応答本文には何も返されません。</span><span class="sxs-lookup"><span data-stu-id="eae4a-p104">If successful, this method returns `204 No Content` response code. It does not return anything in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="ab5de-130">例</span><span class="sxs-lookup"><span data-stu-id="ab5de-130">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="ab5de-131">要求</span><span class="sxs-lookup"><span data-stu-id="ab5de-131">Request</span></span>
-<span data-ttu-id="ab5de-132">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="ab5de-132">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="eae4a-130">例</span><span class="sxs-lookup"><span data-stu-id="eae4a-130">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="eae4a-131">要求</span><span class="sxs-lookup"><span data-stu-id="eae4a-131">Request</span></span>
+<span data-ttu-id="eae4a-132">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="eae4a-132">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "delete_contact"
@@ -49,8 +49,8 @@ DELETE /users/{id | userPrincipalName}/contactFolders/{id}/childFolders/{id}/con
 ```http
 DELETE https://graph.microsoft.com/v1.0/me/contacts/{id}
 ```
-##### <a name="response"></a><span data-ttu-id="ab5de-133">応答</span><span class="sxs-lookup"><span data-stu-id="ab5de-133">Response</span></span>
-<span data-ttu-id="ab5de-p105">以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。</span><span class="sxs-lookup"><span data-stu-id="ab5de-p105">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="eae4a-133">応答</span><span class="sxs-lookup"><span data-stu-id="eae4a-133">Response</span></span>
+<span data-ttu-id="eae4a-p105">以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。</span><span class="sxs-lookup"><span data-stu-id="eae4a-p105">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true

@@ -1,37 +1,37 @@
-# <a name="create-registeredowner"></a><span data-ttu-id="634cf-101">RegisteredOwner を作成する</span><span class="sxs-lookup"><span data-stu-id="634cf-101">Create registeredOwner</span></span>
+# <a name="create-registeredowner"></a><span data-ttu-id="d4c66-101">RegisteredOwner を作成する</span><span class="sxs-lookup"><span data-stu-id="d4c66-101">Create registeredOwner</span></span>
 
-<span data-ttu-id="634cf-102">ユーザーをデバイスの登録済み所有者として追加します。</span><span class="sxs-lookup"><span data-stu-id="634cf-102">Add a user as a registered owner of the device.</span></span>
-## <a name="permissions"></a><span data-ttu-id="634cf-103">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="634cf-103">Permissions</span></span>
-<span data-ttu-id="634cf-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](../../../concepts/permissions_reference.md)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="634cf-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).</span></span>
+<span data-ttu-id="d4c66-102">ユーザーをデバイスの登録済み所有者として追加します。</span><span class="sxs-lookup"><span data-stu-id="d4c66-102">Add a user as a registered owner of the device.</span></span>
+## <a name="permissions"></a><span data-ttu-id="d4c66-103">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="d4c66-103">Permissions</span></span>
+<span data-ttu-id="d4c66-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](../../../concepts/permissions_reference.md)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="d4c66-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).</span></span>
 
 
-|<span data-ttu-id="634cf-106">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="634cf-106">Permission type</span></span>      | <span data-ttu-id="634cf-107">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="634cf-107">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="d4c66-106">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="d4c66-106">Permission type</span></span>      | <span data-ttu-id="d4c66-107">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="d4c66-107">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="634cf-108">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="634cf-108">Delegated (work or school account)</span></span> | <span data-ttu-id="634cf-109">Directory.ReadWrite.All、Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="634cf-109">Directory.ReadWrite.All or Directory.AccessAsUser.All</span></span>    |
-|<span data-ttu-id="634cf-110">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="634cf-110">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="634cf-111">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="634cf-111">Not supported.</span></span>    |
-|<span data-ttu-id="634cf-112">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="634cf-112">Application</span></span> | <span data-ttu-id="634cf-113">Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="634cf-113">Directory.ReadWrite.All</span></span> |
+|<span data-ttu-id="d4c66-108">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="d4c66-108">Delegated (work or school account)</span></span> | <span data-ttu-id="d4c66-109">Directory.ReadWrite.All、Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="d4c66-109">Directory.ReadWrite.All, Directory.AccessAsUser.All</span></span>    |
+|<span data-ttu-id="d4c66-110">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="d4c66-110">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="d4c66-111">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="d4c66-111">Not supported.</span></span>    |
+|<span data-ttu-id="d4c66-112">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="d4c66-112">Application</span></span> | <span data-ttu-id="d4c66-113">Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="d4c66-113">Directory.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="634cf-114">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="634cf-114">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="d4c66-114">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="d4c66-114">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /devices/{id}/registeredOwners
 
 ```
-## <a name="request-headers"></a><span data-ttu-id="634cf-115">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="634cf-115">Request headers</span></span>
-| <span data-ttu-id="634cf-116">名前</span><span class="sxs-lookup"><span data-stu-id="634cf-116">Name</span></span>       | <span data-ttu-id="634cf-117">型</span><span class="sxs-lookup"><span data-stu-id="634cf-117">Type</span></span> | <span data-ttu-id="634cf-118">説明</span><span class="sxs-lookup"><span data-stu-id="634cf-118">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="d4c66-115">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="d4c66-115">Request headers</span></span>
+| <span data-ttu-id="d4c66-116">名前</span><span class="sxs-lookup"><span data-stu-id="d4c66-116">Name</span></span>       | <span data-ttu-id="d4c66-117">型</span><span class="sxs-lookup"><span data-stu-id="d4c66-117">Type</span></span> | <span data-ttu-id="d4c66-118">説明</span><span class="sxs-lookup"><span data-stu-id="d4c66-118">Description</span></span>|
 |:---------------|:--------|:----------|
-| <span data-ttu-id="634cf-119">Authorization</span><span class="sxs-lookup"><span data-stu-id="634cf-119">Authorization</span></span>  | <span data-ttu-id="634cf-120">string</span><span class="sxs-lookup"><span data-stu-id="634cf-120">string</span></span>  | <span data-ttu-id="634cf-p102">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="634cf-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="d4c66-119">Authorization</span><span class="sxs-lookup"><span data-stu-id="d4c66-119">Authorization</span></span>  | <span data-ttu-id="d4c66-120">string</span><span class="sxs-lookup"><span data-stu-id="d4c66-120">string</span></span>  | <span data-ttu-id="d4c66-p102">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="d4c66-p102">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="634cf-123">要求本文</span><span class="sxs-lookup"><span data-stu-id="634cf-123">Request body</span></span>
-<span data-ttu-id="634cf-124">要求本文で、[directoryObject](../resources/directoryobject.md)オブジェクトの JSON 表記を指定します。</span><span class="sxs-lookup"><span data-stu-id="634cf-124">In the request body, supply a JSON representation of [directoryObject](../resources/directoryobject.md) object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="d4c66-123">要求本文</span><span class="sxs-lookup"><span data-stu-id="d4c66-123">Request body</span></span>
+<span data-ttu-id="d4c66-124">要求本文で、[directoryObject](../resources/directoryobject.md)オブジェクトの JSON 表記を指定します。</span><span class="sxs-lookup"><span data-stu-id="d4c66-124">In the request body, supply a JSON representation of [directoryObject](../resources/directoryobject.md) object.</span></span>
 
-## <a name="response"></a><span data-ttu-id="634cf-125">応答</span><span class="sxs-lookup"><span data-stu-id="634cf-125">Response</span></span>
+## <a name="response"></a><span data-ttu-id="d4c66-125">応答</span><span class="sxs-lookup"><span data-stu-id="d4c66-125">Response</span></span>
 
-<span data-ttu-id="634cf-126">成功した場合、このメソッドは `201, Created` 応答コードと、応答本文で [directoryObject](../resources/directoryobject.md) オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="634cf-126">If successful, this method returns `201, Created` response code and [directoryObject](../resources/directoryobject.md) object in the response body.</span></span>
+<span data-ttu-id="d4c66-126">成功した場合、このメソッドは `201 Created` 応答コードと、応答本文で [directoryObject](../resources/directoryobject.md) オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="d4c66-126">If successful, this method returns `201 Created` response code and [directoryObject](../resources/directoryobject.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="634cf-127">例</span><span class="sxs-lookup"><span data-stu-id="634cf-127">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="634cf-128">要求</span><span class="sxs-lookup"><span data-stu-id="634cf-128">Request</span></span>
-<span data-ttu-id="634cf-129">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="634cf-129">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="d4c66-127">例</span><span class="sxs-lookup"><span data-stu-id="d4c66-127">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="d4c66-128">要求</span><span class="sxs-lookup"><span data-stu-id="d4c66-128">Request</span></span>
+<span data-ttu-id="d4c66-129">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="d4c66-129">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "create_directoryobject_from_device"
@@ -46,9 +46,9 @@ Content-length: 30
   }
 }
 ```
-<span data-ttu-id="634cf-130">要求本文で、[directoryObject](../resources/directoryobject.md)オブジェクトの JSON 表記を指定します。</span><span class="sxs-lookup"><span data-stu-id="634cf-130">In the request body, supply a JSON representation of [directoryObject](../resources/directoryobject.md) object.</span></span>
-##### <a name="response"></a><span data-ttu-id="634cf-131">応答</span><span class="sxs-lookup"><span data-stu-id="634cf-131">Response</span></span>
-<span data-ttu-id="634cf-p103">以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。</span><span class="sxs-lookup"><span data-stu-id="634cf-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+<span data-ttu-id="d4c66-130">要求本文で、[directoryObject](../resources/directoryobject.md)オブジェクトの JSON 表記を指定します。</span><span class="sxs-lookup"><span data-stu-id="d4c66-130">In the request body, supply a JSON representation of [directoryObject](../resources/directoryobject.md) object.</span></span>
+##### <a name="response"></a><span data-ttu-id="d4c66-131">応答</span><span class="sxs-lookup"><span data-stu-id="d4c66-131">Response</span></span>
+<span data-ttu-id="d4c66-p103">以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。</span><span class="sxs-lookup"><span data-stu-id="d4c66-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,

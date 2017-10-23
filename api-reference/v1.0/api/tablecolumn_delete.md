@@ -1,37 +1,37 @@
-# <a name="tablecolumn-delete"></a><span data-ttu-id="7b288-101">TableColumn: 削除</span><span class="sxs-lookup"><span data-stu-id="7b288-101">TableColumn: delete</span></span>
+# <a name="tablecolumn-delete"></a><span data-ttu-id="ed840-101">TableColumn: 削除</span><span class="sxs-lookup"><span data-stu-id="ed840-101">TableColumn: delete</span></span>
 
-<span data-ttu-id="7b288-102">テーブルから列を削除します。</span><span class="sxs-lookup"><span data-stu-id="7b288-102">Deletes the column from the table.</span></span>
-## <a name="permissions"></a><span data-ttu-id="7b288-103">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="7b288-103">Permissions</span></span>
-<span data-ttu-id="7b288-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](../../../concepts/permissions_reference.md)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="7b288-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).</span></span>
+<span data-ttu-id="ed840-102">テーブルから列を削除します。</span><span class="sxs-lookup"><span data-stu-id="ed840-102">Deletes the column from the table.</span></span>
+## <a name="permissions"></a><span data-ttu-id="ed840-103">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="ed840-103">Permissions</span></span>
+<span data-ttu-id="ed840-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](../../../concepts/permissions_reference.md)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="ed840-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).</span></span>
 
-|<span data-ttu-id="7b288-106">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="7b288-106">Permission type</span></span>      | <span data-ttu-id="7b288-107">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="7b288-107">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="ed840-106">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="ed840-106">Permission type</span></span>      | <span data-ttu-id="ed840-107">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="ed840-107">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="7b288-108">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="7b288-108">Delegated (work or school account)</span></span> | <span data-ttu-id="7b288-109">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="7b288-109">Files.ReadWrite</span></span>    |
-|<span data-ttu-id="7b288-110">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="7b288-110">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="7b288-111">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="7b288-111">Not supported.</span></span>    |
-|<span data-ttu-id="7b288-112">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="7b288-112">Application</span></span> | <span data-ttu-id="7b288-113">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="7b288-113">Not supported.</span></span> |
+|<span data-ttu-id="ed840-108">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="ed840-108">Delegated (work or school account)</span></span> | <span data-ttu-id="ed840-109">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="ed840-109">Files.ReadWrite</span></span>    |
+|<span data-ttu-id="ed840-110">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="ed840-110">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="ed840-111">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="ed840-111">Not supported.</span></span>    |
+|<span data-ttu-id="ed840-112">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="ed840-112">Application</span></span> | <span data-ttu-id="ed840-113">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="ed840-113">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="7b288-114">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="7b288-114">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="ed840-114">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="ed840-114">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /workbook/tables/{id|name}/columns/{id|name}/delete
 POST /workbook/worksheets/{id|name}/tables/{id|name}/columns/{id|name}/delete
 
 ```
-## <a name="request-headers"></a><span data-ttu-id="7b288-115">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="7b288-115">Request headers</span></span>
-| <span data-ttu-id="7b288-116">名前</span><span class="sxs-lookup"><span data-stu-id="7b288-116">Name</span></span>       | <span data-ttu-id="7b288-117">説明</span><span class="sxs-lookup"><span data-stu-id="7b288-117">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="ed840-115">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="ed840-115">Request headers</span></span>
+| <span data-ttu-id="ed840-116">名前</span><span class="sxs-lookup"><span data-stu-id="ed840-116">Name</span></span>       | <span data-ttu-id="ed840-117">説明</span><span class="sxs-lookup"><span data-stu-id="ed840-117">Description</span></span>|
 |:---------------|:----------|
-| <span data-ttu-id="7b288-118">Authorization</span><span class="sxs-lookup"><span data-stu-id="7b288-118">Authorization</span></span>  | <span data-ttu-id="7b288-p102">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="7b288-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="ed840-118">Authorization</span><span class="sxs-lookup"><span data-stu-id="ed840-118">Authorization</span></span>  | <span data-ttu-id="ed840-p102">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="ed840-p102">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="7b288-121">要求本文</span><span class="sxs-lookup"><span data-stu-id="7b288-121">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="ed840-121">要求本文</span><span class="sxs-lookup"><span data-stu-id="ed840-121">Request body</span></span>
 
-## <a name="response"></a><span data-ttu-id="7b288-122">応答</span><span class="sxs-lookup"><span data-stu-id="7b288-122">Response</span></span>
+## <a name="response"></a><span data-ttu-id="ed840-122">応答</span><span class="sxs-lookup"><span data-stu-id="ed840-122">Response</span></span>
 
-<span data-ttu-id="7b288-p103">成功した場合、このメソッドは `200, OK` 応答コードを返します。応答本文には何も返されません。</span><span class="sxs-lookup"><span data-stu-id="7b288-p103">If successful, this method returns `200, OK` response code. It does not return anything in the response body.</span></span>
+<span data-ttu-id="ed840-p103">成功した場合、このメソッドは `200 OK` 応答コードを返します。応答本文には何も返されません。</span><span class="sxs-lookup"><span data-stu-id="ed840-p103">If successful, this method returns `200 OK` response code. It does not return anything in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="7b288-125">例</span><span class="sxs-lookup"><span data-stu-id="7b288-125">Example</span></span>
-<span data-ttu-id="7b288-126">以下は、この API を呼び出す方法の例です。</span><span class="sxs-lookup"><span data-stu-id="7b288-126">Here is an example of how to call this API.</span></span>
-##### <a name="request"></a><span data-ttu-id="7b288-127">要求</span><span class="sxs-lookup"><span data-stu-id="7b288-127">Request</span></span>
-<span data-ttu-id="7b288-128">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="7b288-128">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="ed840-125">例</span><span class="sxs-lookup"><span data-stu-id="ed840-125">Example</span></span>
+<span data-ttu-id="ed840-126">以下は、この API を呼び出す方法の例です。</span><span class="sxs-lookup"><span data-stu-id="ed840-126">Here is an example of how to call this API.</span></span>
+##### <a name="request"></a><span data-ttu-id="ed840-127">要求</span><span class="sxs-lookup"><span data-stu-id="ed840-127">Request</span></span>
+<span data-ttu-id="ed840-128">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="ed840-128">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "tablecolumn_delete"
@@ -40,8 +40,8 @@ POST /workbook/worksheets/{id|name}/tables/{id|name}/columns/{id|name}/delete
 POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/tables/{id|name}/columns/{id|name}/delete
 ```
 
-##### <a name="response"></a><span data-ttu-id="7b288-129">応答</span><span class="sxs-lookup"><span data-stu-id="7b288-129">Response</span></span>
-<span data-ttu-id="7b288-130">以下は、応答の例です。</span><span class="sxs-lookup"><span data-stu-id="7b288-130">Here is an example of the response.</span></span> 
+##### <a name="response"></a><span data-ttu-id="ed840-129">応答</span><span class="sxs-lookup"><span data-stu-id="ed840-129">Response</span></span>
+<span data-ttu-id="ed840-130">以下は、応答の例です。</span><span class="sxs-lookup"><span data-stu-id="ed840-130">Here is an example of the response.</span></span> 
 <!-- {
   "blockType": "response",
   "truncated": true,

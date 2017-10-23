@@ -3,46 +3,46 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/11/2017
 title: "サイト内の SharePoint リストを一覧表示する"
-ms.openlocfilehash: 4be4c4aefc29cdcd684bc11ad086b5c0572dbe2b
-ms.sourcegitcommit: 7aea7a97e36e6d146214de3a90fdbc71628aadba
+ms.openlocfilehash: 8c3d8da3e8dc4ab3aa2f399eb09d916ea602e1c5
+ms.sourcegitcommit: 339070a20730bc4d363da7eb346d5f3c1e1d6c3e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 10/18/2017
 ---
-# <a name="enumerate-lists-in-a-site"></a><span data-ttu-id="5f5c2-102">サイト内のリストを列挙する</span><span class="sxs-lookup"><span data-stu-id="5f5c2-102">Enumerate lists in a site</span></span>
+# <a name="enumerate-lists-in-a-site"></a><span data-ttu-id="1ac0b-102">サイト内のリストを列挙する</span><span class="sxs-lookup"><span data-stu-id="1ac0b-102">Enumerate lists in a site</span></span>
 
-<span data-ttu-id="5f5c2-103">[サイト][]の[リスト][]のコレクションを取得します。</span><span class="sxs-lookup"><span data-stu-id="5f5c2-103">Get the collection of [lists][] for a [site][].</span></span>
+<span data-ttu-id="1ac0b-103">[サイト][]の[リスト][]のコレクションを取得します。</span><span class="sxs-lookup"><span data-stu-id="1ac0b-103">Get the collection of [lists][] for a [site][].</span></span>
 
 [lists]: ../resources/list.md
 [site]: ../resources/site.md
 
-## <a name="permissions"></a><span data-ttu-id="5f5c2-106">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="5f5c2-106">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="1ac0b-106">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="1ac0b-106">Permissions</span></span>
 
-<span data-ttu-id="5f5c2-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](../../../concepts/permissions_reference.md)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="5f5c2-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).</span></span>
+<span data-ttu-id="1ac0b-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](../../../concepts/permissions_reference.md)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="1ac0b-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).</span></span>
 
-|<span data-ttu-id="5f5c2-109">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="5f5c2-109">Permission type</span></span>      | <span data-ttu-id="5f5c2-110">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="5f5c2-110">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="1ac0b-109">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="1ac0b-109">Permission type</span></span>      | <span data-ttu-id="1ac0b-110">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="1ac0b-110">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="5f5c2-111">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="5f5c2-111">Delegated (work or school account)</span></span> | <span data-ttu-id="5f5c2-112">Sites.Read.All、Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="5f5c2-112">Sites.Read.All, Sites.ReadWrite.All</span></span>    |
-|<span data-ttu-id="5f5c2-113">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="5f5c2-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="5f5c2-114">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="5f5c2-114">Not supported.</span></span>    |
-|<span data-ttu-id="5f5c2-115">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="5f5c2-115">Application</span></span> | <span data-ttu-id="5f5c2-116">Sites.Read.All、Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="5f5c2-116">Sites.Read.All, Sites.ReadWrite.All</span></span> |
+|<span data-ttu-id="1ac0b-111">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="1ac0b-111">Delegated (work or school account)</span></span> | <span data-ttu-id="1ac0b-112">Sites.Read.All、Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="1ac0b-112">Sites.Read.All, Sites.ReadWrite.All</span></span>    |
+|<span data-ttu-id="1ac0b-113">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="1ac0b-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="1ac0b-114">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="1ac0b-114">Not supported.</span></span>    |
+|<span data-ttu-id="1ac0b-115">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="1ac0b-115">Application</span></span> | <span data-ttu-id="1ac0b-116">Sites.Read.All、Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="1ac0b-116">Sites.Read.All, Sites.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="5f5c2-117">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="5f5c2-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="1ac0b-117">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="1ac0b-117">HTTP request</span></span>
 
 ```http
-GET https://graph.microsoft.com/beta/sites/{site-id}/lists
+GET https://graph.microsoft.com/v1.0/sites/{site-id}/lists
 ```
 
-## <a name="example"></a><span data-ttu-id="5f5c2-118">例</span><span class="sxs-lookup"><span data-stu-id="5f5c2-118">Example</span></span>
+## <a name="example"></a><span data-ttu-id="1ac0b-118">例</span><span class="sxs-lookup"><span data-stu-id="1ac0b-118">Example</span></span>
 
-#### <a name="request"></a><span data-ttu-id="5f5c2-119">要求</span><span class="sxs-lookup"><span data-stu-id="5f5c2-119">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="1ac0b-119">要求</span><span class="sxs-lookup"><span data-stu-id="1ac0b-119">Request</span></span>
 
 <!-- { "blockType": "request", "name": "enum-lists", "scopes": "sites.read.all service.sharepoint" } -->
 
 ```http
-GET https://graph.microsoft.com/beta/sites/{site-id}/lists
+GET https://graph.microsoft.com/v1.0/sites/{site-id}/lists
 ```
 
-##### <a name="response"></a><span data-ttu-id="5f5c2-120">応答</span><span class="sxs-lookup"><span data-stu-id="5f5c2-120">Response</span></span>
+##### <a name="response"></a><span data-ttu-id="1ac0b-120">応答</span><span class="sxs-lookup"><span data-stu-id="1ac0b-120">Response</span></span>
 
 <!-- { "blockType": "response", "@type": "microsoft.graph.list", "isCollection": true, "truncated": true } -->
 

@@ -1,16 +1,16 @@
-# <a name="delete-message"></a><span data-ttu-id="64752-101">メッセージを削除する</span><span class="sxs-lookup"><span data-stu-id="64752-101">Delete message</span></span>
+# <a name="delete-message"></a><span data-ttu-id="e5a4c-101">メッセージを削除する</span><span class="sxs-lookup"><span data-stu-id="e5a4c-101">Delete message</span></span>
 
-<span data-ttu-id="64752-102">メッセージを削除します。</span><span class="sxs-lookup"><span data-stu-id="64752-102">Delete message.</span></span>
-## <a name="permissions"></a><span data-ttu-id="64752-103">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="64752-103">Permissions</span></span>
-<span data-ttu-id="64752-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](../../../concepts/permissions_reference.md)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="64752-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).</span></span>
+<span data-ttu-id="e5a4c-102">メッセージを削除します。</span><span class="sxs-lookup"><span data-stu-id="e5a4c-102">Delete message.</span></span>
+## <a name="permissions"></a><span data-ttu-id="e5a4c-103">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="e5a4c-103">Permissions</span></span>
+<span data-ttu-id="e5a4c-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](../../../concepts/permissions_reference.md)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="e5a4c-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).</span></span>
 
-|<span data-ttu-id="64752-106">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="64752-106">Permission type</span></span>      | <span data-ttu-id="64752-107">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="64752-107">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="e5a4c-106">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="e5a4c-106">Permission type</span></span>      | <span data-ttu-id="e5a4c-107">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="e5a4c-107">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="64752-108">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="64752-108">Delegated (work or school account)</span></span> | <span data-ttu-id="64752-109">Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="64752-109">Mail.ReadWrite</span></span>    |
-|<span data-ttu-id="64752-110">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="64752-110">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="64752-111">Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="64752-111">Mail.ReadWrite</span></span>    |
-|<span data-ttu-id="64752-112">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="64752-112">Application</span></span> | <span data-ttu-id="64752-113">Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="64752-113">Mail.ReadWrite</span></span> |
+|<span data-ttu-id="e5a4c-108">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="e5a4c-108">Delegated (work or school account)</span></span> | <span data-ttu-id="e5a4c-109">Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="e5a4c-109">Mail.ReadWrite</span></span>    |
+|<span data-ttu-id="e5a4c-110">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="e5a4c-110">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="e5a4c-111">Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="e5a4c-111">Mail.ReadWrite</span></span>    |
+|<span data-ttu-id="e5a4c-112">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="e5a4c-112">Application</span></span> | <span data-ttu-id="e5a4c-113">Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="e5a4c-113">Mail.ReadWrite</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="64752-114">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="64752-114">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="e5a4c-114">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="e5a4c-114">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 DELETE /me/messages/{id}
@@ -18,21 +18,21 @@ DELETE /users/{id | userPrincipalName}/messages/{id}
 DELETE /me/mailFolders/{id}/messages/{id}
 DELETE /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}
 ```
-## <a name="request-headers"></a><span data-ttu-id="64752-115">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="64752-115">Request headers</span></span>
-| <span data-ttu-id="64752-116">名前</span><span class="sxs-lookup"><span data-stu-id="64752-116">Name</span></span>       | <span data-ttu-id="64752-117">型</span><span class="sxs-lookup"><span data-stu-id="64752-117">Type</span></span> | <span data-ttu-id="64752-118">説明</span><span class="sxs-lookup"><span data-stu-id="64752-118">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="e5a4c-115">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="e5a4c-115">Request headers</span></span>
+| <span data-ttu-id="e5a4c-116">名前</span><span class="sxs-lookup"><span data-stu-id="e5a4c-116">Name</span></span>       | <span data-ttu-id="e5a4c-117">型</span><span class="sxs-lookup"><span data-stu-id="e5a4c-117">Type</span></span> | <span data-ttu-id="e5a4c-118">説明</span><span class="sxs-lookup"><span data-stu-id="e5a4c-118">Description</span></span>|
 |:---------------|:--------|:----------|
-| <span data-ttu-id="64752-119">Authorization</span><span class="sxs-lookup"><span data-stu-id="64752-119">Authorization</span></span>  | <span data-ttu-id="64752-120">string</span><span class="sxs-lookup"><span data-stu-id="64752-120">string</span></span>  | <span data-ttu-id="64752-p102">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="64752-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="e5a4c-119">Authorization</span><span class="sxs-lookup"><span data-stu-id="e5a4c-119">Authorization</span></span>  | <span data-ttu-id="e5a4c-120">string</span><span class="sxs-lookup"><span data-stu-id="e5a4c-120">string</span></span>  | <span data-ttu-id="e5a4c-p102">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="e5a4c-p102">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="64752-123">要求本文</span><span class="sxs-lookup"><span data-stu-id="64752-123">Request body</span></span>
-<span data-ttu-id="64752-124">このメソッドには、要求本文を指定しません。</span><span class="sxs-lookup"><span data-stu-id="64752-124">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="e5a4c-123">要求本文</span><span class="sxs-lookup"><span data-stu-id="e5a4c-123">Request body</span></span>
+<span data-ttu-id="e5a4c-124">このメソッドには、要求本文を指定しません。</span><span class="sxs-lookup"><span data-stu-id="e5a4c-124">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="64752-125">応答</span><span class="sxs-lookup"><span data-stu-id="64752-125">Response</span></span>
+## <a name="response"></a><span data-ttu-id="e5a4c-125">応答</span><span class="sxs-lookup"><span data-stu-id="e5a4c-125">Response</span></span>
 
-<span data-ttu-id="64752-p103">成功した場合、このメソッドは `204, No Content` 応答コードを返します。応答本文には何も返されません。</span><span class="sxs-lookup"><span data-stu-id="64752-p103">If successful, this method returns `204, No Content` response code. It does not return anything in the response body.</span></span>
+<span data-ttu-id="e5a4c-p103">成功した場合、このメソッドは `204 No Content` 応答コードを返します。応答本文には何も返されません。</span><span class="sxs-lookup"><span data-stu-id="e5a4c-p103">If successful, this method returns `204 No Content` response code. It does not return anything in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="64752-128">例</span><span class="sxs-lookup"><span data-stu-id="64752-128">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="64752-129">要求</span><span class="sxs-lookup"><span data-stu-id="64752-129">Request</span></span>
-<span data-ttu-id="64752-130">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="64752-130">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="e5a4c-128">例</span><span class="sxs-lookup"><span data-stu-id="e5a4c-128">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="e5a4c-129">要求</span><span class="sxs-lookup"><span data-stu-id="e5a4c-129">Request</span></span>
+<span data-ttu-id="e5a4c-130">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="e5a4c-130">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "delete_message"
@@ -40,8 +40,8 @@ DELETE /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}
 ```http
 DELETE https://graph.microsoft.com/v1.0/me/messages/{id}
 ```
-##### <a name="response"></a><span data-ttu-id="64752-131">応答</span><span class="sxs-lookup"><span data-stu-id="64752-131">Response</span></span>
-<span data-ttu-id="64752-132">以下は、応答の例です。</span><span class="sxs-lookup"><span data-stu-id="64752-132">Here is an example of the response.</span></span> 
+##### <a name="response"></a><span data-ttu-id="e5a4c-131">応答</span><span class="sxs-lookup"><span data-stu-id="e5a4c-131">Response</span></span>
+<span data-ttu-id="e5a4c-132">以下は、応答の例です。</span><span class="sxs-lookup"><span data-stu-id="e5a4c-132">Here is an example of the response.</span></span> 
 <!-- {
   "blockType": "response",
   "truncated": true
