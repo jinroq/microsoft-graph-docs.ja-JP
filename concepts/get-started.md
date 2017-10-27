@@ -6,115 +6,27 @@
 
 選んだ開発プラットフォームについての記事に記載されている手順に従うことも、[クイック スタート](https://developer.microsoft.com/graph/quick-start)機能を試してみて、動作するソリューションをすばやく稼働させることもできます。
 
-完成した Connect サンプルを確認するには、GitHub の [Microsoft Graph](https://github.com/microsoftgraph) をご覧ください。次の表は、認証プロバイダーとプラットフォームごとにサンプルをリストにしたもので、REST または Microsoft Graph クライアント ライブラリのどちらを使用して Microsoft Graph に接続するかを示しています。
+完成した Connect サンプルを確認するには、GitHub の「[Microsoft Graph](https://github.com/microsoftgraph)」を参照してください。 次の表は、認証プロバイダーとプラットフォームごとにサンプルをリストにしたもので、REST または Microsoft Graph クライアント ライブラリのどちらを使用して Microsoft Graph に接続するかを示しています。
 
-<table>
-  <tr>
-    <th>プラットフォーム</th>
-    <th>Azure AD エンドポイント</th> 
-    <th>Azure AD v2.0 エンドポイント</th>
-  </tr>
-  <tr>
-    <td>Android</td>
-    <td>
-        <a href="https://github.com/microsoftgraph/android-java-connect-sample/tree/last_v1_auth">SDK サンプル</a>
-    </td> 
-        <td>
-                <a href="https://github.com/microsoftgraph/android-java-connect-sample">SDK サンプル</a>または ¶<a href="https://github.com/microsoftgraph/android-java-connect-rest-sample">REST サンプル</a>
-    </td> 
-  </tr>
-  <tr>
-    <td>AngularJS</td>
-    <td>
-        <a href="https://github.com/microsoftgraph/angular-connect-rest-sample/tree/last_v1_auth">REST サンプル</a>
-    </td> 
-        <td>
-        <a href="https://github.com/microsoftgraph/angular-connect-sample">SDK サンプル</a>または ¶<a href="https://github.com/microsoftgraph/angular-connect-rest-sample">REST サンプル</a>
-    </td> 
-  </tr>
-  <tr>
-    <td>ASP.NET</td>
-    <td>
-        <a href="https://github.com/microsoftgraph/aspnet-connect-rest-sample/tree/last_v1_auth">REST サンプル</a>
-    </td>     
-    <td>
-        <a href="https://github.com/microsoftgraph/aspnet-connect-sample">SDK サンプル</a>または <a href="https://github.com/microsoftgraph/aspnet-connect-rest-sample">REST サンプル</a>
-    </td> 
-  </tr>
-  <tr>
-    <td>iOS (Obj-C)</td>
-    <td>
-        <a href="https://github.com/microsoftgraph/ios-objectivec-connect-rest-sample">REST サンプル</a>
-    </td>     
-    <td>
-        <a href="https://github.com/microsoftgraph/ios-objectivec-connect-sample">SDK サンプル</a>
-    </td> 
-  </tr>
-  <tr>
-    <td>iOS (Swift)</td>
-    <td>
-        <a href="https://github.com/microsoftgraph/ios-swift-connect-rest-sample">REST サンプル</a>
-    </td>     
-    <td>
-        <a href="https://github.com/microsoftgraph/ios-swift-connect-sample">SDK サンプル</a>
-    </td> 
-  </tr>
-  <tr>
-    <td>NodeJS</td>
-    <td>
-        <a href="https://github.com/microsoftgraph/nodejs-connect-rest-sample/tree/last_v1_auth">REST サンプル</a>
-    </td>     
-    <td>    
-        <a href="https://github.com/microsoftgraph/nodejs-connect-sample">SDK サンプル</a>または <a href="https://github.com/microsoftgraph/nodejs-connect-rest-sample">REST サンプル</a>
-    </td> 
-  </tr>
-  <tr>
-    <td>PHP</td>
-    <td>
-        <a href="https://github.com/microsoftgraph/php-connect-rest-sample/tree/last_v1_auth">REST サンプル</a>
-    </td>     
-    <td>
-            <a href="https://github.com/microsoftgraph/php-connect-sample">SDK サンプル</a>または ¶<a href="https://github.com/microsoftgraph/php-connect-rest-sample">REST サンプル</a>
-    </td> 
-  </tr>
-  <tr>
-    <td>Python</td>
-    <td>
-        <a href="https://github.com/microsoftgraph/python3-connect-rest-sample">REST サンプル</a>
-    </td>     
-    <td>
-    </td> 
-  </tr>
-  <tr>
-    <td>Ruby</td>
-    <td>
-        <a href="https://github.com/microsoftgraph/ruby-connect-rest-sample/tree/last_v1_auth">REST サンプル</a>
-    </td>     
-    <td>
-        <a href="https://github.com/microsoftgraph/ruby-connect-rest-sample">REST サンプル</a>
-    </td> 
-  </tr>
-  <tr>
-    <td>UWP</td>
-    <td>
-        <a href="https://github.com/microsoftgraph/uwp-csharp-connect-rest-sample/tree/last_v1_auth">REST サンプル</a>
-    </td>     
-    <td>
-        <a href="https://github.com/microsoftgraph/uwp-csharp-connect-sample">SDK サンプル</a>または ¶<a href="https://github.com/microsoftgraph/uwp-csharp-connect-rest-sample">REST サンプル</a>
-    </td> 
-  </tr>
-  <tr>
-    <td>Xamarin</td>
-    <td>
-    </td>     
-    <td>
-        <a href="https://github.com/microsoftgraph/xamarin-csharp-connect-sample">SDK サンプル</a>
-    </td> 
-  </tr>
-</table>
+
+|プラットフォーム |Azure AD エンドポイント |Azure AD v2.0 エンドポイント |
+|:--- |:--- |:---|
+|Android |<a href="https://github.com/microsoftgraph/android-java-connect-sample/tree/last_v1_auth">SDK サンプル</a> |<a href="https://github.com/microsoftgraph/android-java-connect-sample">SDK サンプル</a> または <a href="https://github.com/microsoftgraph/android-java-connect-rest-sample">REST サンプル</a> |
+|AngularJS |<a href="https://github.com/microsoftgraph/angular-connect-rest-sample/tree/last_v1_auth">REST サンプル</a> |<a href="https://github.com/microsoftgraph/angular-connect-sample">SDK サンプル</a> または <a href="https://github.com/microsoftgraph/angular-connect-rest-sample">REST サンプル</a> |
+|ASP.NET |<a href="https://github.com/microsoftgraph/aspnet-connect-rest-sample/tree/last_v1_auth">REST サンプル</a> |<a href="https://github.com/microsoftgraph/aspnet-connect-sample">SDK サンプル</a> または <a href="https://github.com/microsoftgraph/aspnet-connect-rest-sample">REST サンプル</a> |
+|iOS (Obj-C) |<a href="https://github.com/microsoftgraph/ios-objectivec-connect-rest-sample">REST サンプル</a> |<a href="https://github.com/microsoftgraph/ios-objectivec-connect-sample">SDK サンプル</a> |
+|iOS (Swift) |<a href="https://github.com/microsoftgraph/ios-swift-connect-rest-sample">REST サンプル</a> |<a href="https://github.com/microsoftgraph/ios-swift-connect-sample">SDK サンプル</a> |
+|NodeJS |<a href="https://github.com/microsoftgraph/nodejs-connect-rest-sample/tree/last_v1_auth">REST サンプル</a> |<a href="https://github.com/microsoftgraph/nodejs-connect-sample">SDK サンプル</a> または <a href="https://github.com/microsoftgraph/nodejs-connect-rest-sample">REST サンプル</a> |
+|PHP |<a href="https://github.com/microsoftgraph/php-connect-rest-sample/tree/last_v1_auth">REST サンプル</a> |<a href="https://github.com/microsoftgraph/php-connect-sample">SDK サンプル</a> または <a href="https://github.com/microsoftgraph/php-connect-rest-sample">REST サンプル</a> |
+|Python |<a href="https://github.com/microsoftgraph/python3-connect-rest-sample">REST サンプル</a> |
+|Ruby |<a href="https://github.com/microsoftgraph/ruby-connect-rest-sample/tree/last_v1_auth">REST サンプル</a> |<a href="https://github.com/microsoftgraph/ruby-connect-rest-sample">REST サンプル</a> |
+|UWP |<a href="https://github.com/microsoftgraph/uwp-csharp-connect-rest-sample/tree/last_v1_auth">REST サンプル</a> |<a href="https://github.com/microsoftgraph/uwp-csharp-connect-sample">SDK サンプル</a> または <a href="https://github.com/microsoftgraph/uwp-csharp-connect-rest-sample">REST サンプル</a> |
+|Xamarin | |<a href="https://github.com/microsoftgraph/xamarin-csharp-connect-sample">SDK サンプル</a> |
+
+<br/>
 
 ## <a name="see-also"></a>関連項目
 
-- サンプルの REST 呼び出しを [Graph エクスプローラー](https://developer.microsoft.com/en-us/graph/graph-explorer)で試してみてください。
+- [サンプルの REST 呼び出しを Graph エクスプローラーでお試しください](https://developer.microsoft.com/en-us/graph/graph-explorer)
 - [Azure AD エンドポイントのドキュメント](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-developers-guide)
 - [Azure AD v2.0 エンドポイントのドキュメント](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-appmodel-v2-overview)
