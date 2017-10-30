@@ -14,7 +14,7 @@ rangefill オブジェクトのプロパティと関係を取得します。
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /workbook/names(<name>)/range/format/fill
-GET /workbook/worksheets/{id|name}/range(<address>)/format/fill
+GET /workbook/worksheets/{id|name}/range(address='<address>')/format/fill
 GET /workbook/tables/{id|name}/columns/{id|name}/range/format/fill
 ```
 ## <a name="optional-query-parameters"></a>オプションのクエリ パラメーター
