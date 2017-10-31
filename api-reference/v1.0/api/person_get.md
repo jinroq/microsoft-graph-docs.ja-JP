@@ -64,8 +64,10 @@ GET https://graph.microsoft.com/v1.0/me/people/?$search="Irene McGowan"
 
 <!-- {
   "blockType": "response",
+  "name": "get_person",
   "truncated": true,
-  "@odata.type": "microsoft.graph.person"
+  "@odata.type": "microsoft.graph.person",
+  "isCollection": true
 } -->
 
 ```http
@@ -104,10 +106,12 @@ Content-type: application/json
            ],
            "postalAddresses": [],
            "websites": [],
-           "personType": {
-               "class": "Person",
-               "subclass": "OrganizationUser"
-           }
+           "personType": [
+               {
+                    "class": "Person",
+                    "subclass": "OrganizationUser"
+                }
+            ]
        }
    ]
 }
@@ -115,23 +119,33 @@ Content-type: application/json
 ### <a name="select-the-fields-to-return-in-a-filtered-response"></a>フィルター処理された応答で返されるフィールドを選択する 
 *$select* パラメーターと *$filter* パラメーターを組み合わせることで、ユーザーに関連のある人物のカスタム リストを作成し、アプリケーションで必要になるフィールドのみを取得できます。 
 
-次の例では、指定した名前と等しい表示名を持つ人物の **displayName** と **scoredEmailAddresses** を取得します。この例では、表示名が "Lorrie Frye" と等しい人物のみが返されます。 
+次の例では、指定した名前と等しい表示名を持つ人物の **displayName** と **scoredEmailAddresses** を取得します。この例では、表示名が "Lorrie Frye" と等しい人物のみが返されます。
 
-<!-- {
-  "blockType": "request",
-  "name": "get_person"
-}-->
+<!-- { "blockType": "ignored" } -->
 
 ```http
 GET https://graph.microsoft.com/v1.0/me/people/?$select=displayName,scoredEmailAddresses&$filter=displayName eq 'Lorrie Frye'
+```
+
+要求の例に対して適切にエンコードされた URL を次に示します。
+
+<!-- {
+  "blockType": "request",
+  "name": "get_person_select_and_filter"
+}-->
+
+```http
+GET https://graph.microsoft.com/v1.0/me/people/?$select=displayName,scoredEmailAddresses&$filter=displayName%20eq%20'Lorrie Frye'
 ```
 
 次の例は応答を示しています。 
 
 <!-- {
   "blockType": "response",
+  "name": "get_person_select_and_filter",
   "truncated": true,
-  "@odata.type": "microsoft.graph.person"
+  "@odata.type": "microsoft.graph.person",
+  "isCollection": true
 } -->
 
 ```http
@@ -146,7 +160,7 @@ Content-type: application/json
             "scoredEmailAddresses": [
                 {
                     "address": "Lorrief@contoso.onmicrosoft.com",
-                    "relevanceScore": 8
+                    "relevanceScore": 8.0
                 }
             ]
         }

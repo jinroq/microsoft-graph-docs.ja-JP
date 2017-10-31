@@ -1,13 +1,17 @@
 # <a name="opentypeextension-resource-type-open-extensions"></a>openTypeExtension リソース タイプ (オープン拡張機能)
 
-オープン拡張機能 (旧称は Office 365 のデータ拡張機能) を使用すると、型指定されていないプロパティを Microsoft Graph のリソースに簡単に直接追加できます。オープン拡張機能は、**openTypeExtension** リソースで表されます。リソースに追加されるオープン拡張機能は **extensions** ナビゲーション プロパティに表示されます。このプロパティは、[extension](extension.md) 抽象型から派生します。各拡張機能には **extensionName** プロパティがあります。このプロパティは、すべての拡張機能とカスタム データで唯一定義済みの書き込み可能なプロパティです。拡張機能名が必ず一意であるようにする方法の 1 つは、_独自のドメイン_に依存する逆引きドメイン ネーム システム (DNS) 形式 (例: `Com.Contoso.ContactInfo`) を使用することです。拡張機能名に Microsoft ドメイン (`Com.Microsoft` または `Com.OnMicrosoft`) を使用しないでください。
+オープン拡張機能 (旧称は Office 365 のデータ拡張機能) を使用すると、型指定されていないプロパティを Microsoft Graph のリソースに簡単に直接追加できます。 
+
+オープン拡張機能は、**openTypeExtension** リソースで表されます。 リソースに追加されるオープン拡張機能は **extensions** ナビゲーション プロパティに表示されます。このプロパティは、[extension](extension.md) 抽象型から派生します。 各拡張機能には **extensionName** プロパティがあります。このプロパティは、すべての拡張機能とカスタム データで唯一定義済みの書き込み可能なプロパティです。 
+
+拡張機能名が必ず一意であるようにする方法の 1 つは、_独自のドメイン_に依存する逆引きドメイン ネーム システム (DNS) 形式 (例: `Com.Contoso.ContactInfo`) を使用することです。 拡張機能名に Microsoft ドメイン (`Com.Microsoft` または `Com.OnMicrosoft`) を使用しないでください。
 
 オープン拡張機能の例:[オープン拡張機能を使用してカスタム データをユーザーに追加する](../../../concepts/extensibility_open_users.md)
 
 オープン拡張機能は、次のリソースの対応するバージョンの一般提供 (GA: /v1.0 および /ベータ) またはプレビュー (/ベータ) でサポートされています。
 
-| リソース | バージョン |
-|---------------|-------|
+|リソース |バージョン |
+|:---------------|:-------|
 | [管理単位](../../beta/resources/administrativeunit.md)  | プレビューのみ |
 | [予定表イベント](event.md) | GA |
 | グループ[予定表イベント](event.md) | GA |
@@ -26,7 +30,7 @@
 
 ## <a name="json-representation"></a>JSON 表記
 
-以下は、リソースの JSON 表記です
+以下は、リソースの JSON 表記です。
 
 <!-- {
   "blockType": "resource",
@@ -43,19 +47,24 @@
 }
 
 ```
+
+<br/>
+
 ## <a name="properties"></a>プロパティ
-| プロパティ     | 型   |説明|
+
+|プロパティ      |型    |説明 |
 |:---------------|:--------|:----------|
 |extensionName|String|オープン型のオープン拡張機能の一意のテキスト識別子。必須。|
-|id|文字列| **extensionName** と拡張子タイプを連結する完全修飾識別子。読み取り専用。|
+|id|String| **extensionName** と拡張子タイプを連結する完全修飾識別子。読み取り専用。|
 
-## <a name="relationships"></a>関係
+## <a name="relationships"></a>リレーションシップ
+
 なし
 
 
 ## <a name="methods"></a>メソッド
 
-| メソッド           | 戻り値の型    |説明|
+|メソッド        |戻り値の型 |説明 |
 |:---------------|:--------|:----------|
 |[Post](../api/opentypeextension_post_opentypeextension.md) | (既存リソースのインスタンス内の) [openTypeExtension](opentypeextension.md)、または、openTypeExtension オブジェクトを含む新しい[contact](../resources/contact.md)、[event](../resources/event.md)、[message](../resources/message.md)。 | 既存または新規のリソース インスタンス内に openTypeExtension オブジェクトを作成します。|
 |[Get](../api/opentypeextension_get.md) | [openTypeExtension](opentypeextension.md) |openTypeExtension オブジェクトのプロパティと関係を読み取ります。|

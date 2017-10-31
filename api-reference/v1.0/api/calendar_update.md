@@ -1,6 +1,6 @@
-# <a name="update-calendar"></a>Update calendar
+# <a name="update-calendar"></a>予定表を更新する
 
-予定表オブジェクトのプロパティを更新します。
+[予定表](../resources/calendar.md)オブジェクトのプロパティを更新します。 [ユーザー](../resources/user.md)の予定表、または Office 365 [グループ](../resources/group.md)の既定の予定表のいずれかを指定できます。
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](../../../concepts/permissions_reference.md)」を参照してください。
 

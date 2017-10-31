@@ -52,11 +52,11 @@
 - *Changed* は、項目は削除されたものの、[deletedItems](../api-reference/beta/resources/directory.md) から復元できることを表します。
 - *Deleted* は、項目は削除され、復元できないことを表します。
 
-@removed オブジェクトは最初のデルタ クエリ応答と追跡された (deltaLink) 応答で返されます。デルタ クエリ要求を使用するクライアントは、応答に含まれるこれらのオブジェクトを処理できるよう設計する必要があります。
+`@removed` オブジェクトは最初のデルタ クエリ応答と追跡された (deltaLink) 応答で返されます。デルタ クエリ要求を使用するクライアントは、応答に含まれるこれらのオブジェクトを処理できるよう設計する必要があります。
 
 ## <a name="supported-resources"></a>サポートされているリソース
 
-デルタ クエリは、現在、次のリソースでサポートされています。
+デルタ クエリは現在、次のリソースでサポートされています。
 
 | **リソース コレクション** | **API** |
 |:------ | :------ |
@@ -70,7 +70,7 @@
 | ドライブの項目\* | [driveItem](../api-reference/v1.0/resources/driveitem.md) リソースの[デルタ](../api-reference/v1.0/api/driveitem_delta.md)関数 |
 
 
-> \* OneDrive リソースの使用パターンは、他のサポートされているリソースと似ていますが、構文には若干の違いがあります。ドライブのデルタ クエリは、他のリソースの種類との一貫性を保つために将来更新されます。現在の構文の詳細については、<https://developer.microsoft.com/ja-jp/graph/docs/api-reference/v1.0/api/item_delta> を参照してください。
+> \* OneDrive リソースの使用パターンは、他のサポートされているリソースと似ていますが、構文には若干の違いがあります。ドライブのデルタ クエリは、他のリソースの種類との一貫性を保つために将来更新されます。現在の構文の詳細については、「[ドライブの変更履歴を記録する](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/item_delta)」を参照してください。
 
 ## <a name="prerequisites"></a>前提条件
 

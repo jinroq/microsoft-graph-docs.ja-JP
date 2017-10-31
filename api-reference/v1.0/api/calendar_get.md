@@ -1,6 +1,6 @@
-# <a name="get-calendar"></a>Get calendar
+# <a name="get-calendar"></a>予定表を取得する
 
-予定表オブジェクトのプロパティと関係を取得します。
+[予定表](../resources/calendar.md)オブジェクトのプロパティと関係を取得します。 [ユーザー](../resources/user.md)の予定表、または Office 365 [グループ](../resources/group.md)の既定の予定表のいずれかを指定できます。
 
 
 ### <a name="get-another-users-calendar"></a>別のユーザーの予定表の取得

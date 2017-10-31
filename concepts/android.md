@@ -10,6 +10,8 @@ Android 用アプリで Microsoft Graph を使用するには、以下のスク�
 
 ![Android 上の Microsoft アカウントのサインイン ページ](images/AndroidConnect.png)
 
+<br/>
+
 **アプリを作成してみたくありませんか。**この記事の基になっている [Android 用接続サンプル](https://github.com/microsoftgraph/android-java-connect-sample)をダウンロードすれば、すぐに始めることができます。
 
 
@@ -23,13 +25,13 @@ Android 用アプリで Microsoft Graph を使用するには、以下のスク�
 
 ## <a name="configure-a-new-project"></a>新規プロジェクトを構成する
 
-[Android 用接続サンプル](https://github.com/microsoftgraph/android-java-connect-sample)をダウンロードしている場合は、この手順をスキップしてください。 
+[Android 用接続サンプル](https://github.com/microsoftgraph/android-java-connect-sample)がダウンロードしてある場合は、この手順をスキップしてください。 
 
-Android Studio で新しいプロジェクトを開始します。ほとんどのウィザードで既定値のままにしておきますが、次のオプションを選択するようにしてください。
+Android Studio で新しいプロジェクトを開始します。 ほとんどのウィザードで既定値のままにしておきますが、次のオプションを選択するようにしてください。
 
-* ターゲット Android デバイス - **携帯電話とタブレット**
-    * 最小 SDK - **API 16:Android 4.1 (Jelly Bean)**
-* モバイルにアクティビティを追加 - **基本的なアクティビティ**
+- 対象となる Android デバイス:**電話とタブレット**
+- 最小 SDK:**API 16:Android 4.1 (Jelly Bean)**
+- モバイルにアクティビティを追加：**基本的なアクティビティ**
  
 これにより、Android プロジェクトにアクティビティとユーザーの認証に使用できるボタンが追加されます。
 
@@ -40,47 +42,48 @@ Android Studio で新しいプロジェクトを開始します。ほとんど�
 
 Microsoft アプリ登録ポータルでアプリを登録します。これにより、アプリの構成に使用するアプリ ID が生成されます。
 
-1. 個人用アカウント、あるいは職場または学校アカウントのいずれかを使用して、[Microsoft アプリ登録ポータル](https://apps.dev.microsoft.com/)にサインインします。
+1. 個人用アカウントか、職場または学校アカウントのいずれかを使用して、[Microsoft アプリ登録ポータル](https://apps.dev.microsoft.com/)にサインインします。
 
 2. **[アプリの追加]** を選択します。
 
->ヒント: [Android 用接続サンプル](https://github.com/microsoftgraph/android-java-connect-sample)をダウンロードし、その登録のみを行う場合は、**[作成]** ボタンを押す前に**[ガイド付きセットアップ]** のチェックを外してください。
+    > **ヒント:**[Android 用接続サンプル](https://github.com/microsoftgraph/android-java-connect-sample)がダウンロード済みで、その登録のみを行う場合は、**[作成]** ボタンを押す前に **[ガイド付きセットアップ]** チェック ボックスをオフにしてください。
 
-3. アプリの名前を入力して、**[作成]** を選択します。 
+3. アプリの名前を入力し、次に **[作成]** を選択します。 
     
-    **ガイド付きセットアップ** のフローは次のようになります。
+    **[ガイド付きセットアップ]** のフローは次のようになります。
  
-    a.**[モバイルおよびデスクトップ アプリ]** を選択して、作成するアプリの種類を定義します。
+    a. **[モバイルおよびデスクトップ アプリ]** を選択して、作成するアプリの種類を定義します。
 
-    b.**[Android]** を選択して、使用しているモバイル テクノロジを定義します。
+    b. **[Android]** を選択して、使用しているモバイル テクノロジを定義します。
 
-    c.最初のトピックを確認し、終了したら、ページの最後にある**[セットアップ]** ボタンをクリックします。
+    c. 最初のトピックを確認し、終了したら、ページの最後にある **[セットアップ]** ボタンを選択します。
 
     d.**[セットアップ]** の手順の説明に従って、MSAL ライブラリをアプリの build.gradle に追加します。
 
-    e.**[ユーザー]** の手順の指示に従って、MSAL ロジックを新しいプロジェクトに追加します。
+    e. **[ユーザー]** の手順の指示に従って、MSAL ロジックを新しいプロジェクトに追加します。
 
     f.**[構成]**ページで、ポータルによって独自のアプリケーション ID が作成されています。これを使用してアプリを構成します。
 
+    <br/>
+    
     ガイドなしのフローは次のようになります。
 
     登録ページが表示され、アプリのプロパティが一覧表示されます。
 
     a.アプリケーション ID をコピーします。これは、アプリの一意識別子です。 
 
-    b.**[プラットフォームの追加]** および **[ネイティブ アプリケーション]** を選択します。
+    b. **[プラットフォームの追加]** および **[ネイティブ アプリケーション]** を選択します。
 
-    > **注:** アプリケーション登録ポータルでは、値 *msalENTER_YOUR_CLIENT_ID://auth* のリダイレクト URI が表示されます。組み込みリダイレクト URI は使用しないでください。[Android 用接続サンプル](https://github.com/microsoftgraph/android-java-connect-sample)には、このリダイレクト URI を必要とする MSAL 認証ライブラリが実装されています。[サポートされているサード パーティ製ライブラリ](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-v2-libraries#compatible-client-libraries)または **ADAL** ライブラリを使用している場合は、組み込みのリダイレクト URI を使用する必要があります。
+      > **注:**アプリケーション登録ポータルでは、値 `msalENTER_YOUR_CLIENT_ID://auth` のリダイレクト URI が表示されます。 組み込みリダイレクト URI は使用しないでください。 [Android 用接続サンプル](https://github.com/microsoftgraph/android-java-connect-sample)には、このリダイレクト URI を必要とする MSAL 認証ライブラリが実装されています。 [サポートされているサード パーティ製ライブラリ](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-v2-libraries#compatible-client-libraries)または **ADAL** ライブラリを使用している場合は、組み込みのリダイレクト URI を使用する必要があります。
+      
+      c. 委任されたアクセス許可を追加します。 **profile**、**Mail.ReadWrite**、**Mail.Send**、**Files.ReadWrite**、**User.ReadBasic.All** が必要になります。 
 
-
-    a.委任されたアクセス許可を追加します。**profile**、**Mail.ReadWrite**、**Mail.Send**、**Files.ReadWrite**、**User.ReadBasic.All** が必要になります。 
-   
-    b.**[保存]** を選択します。
+      d. **[保存]** を選択します。
 
 
 ## <a name="authenticate-the-user-and-get-an-access-token"></a>ユーザーの認証とアクセス トークンの取得
 
-> **注:**アプリケーション登録ポータルから **[ガイド付きセットアップ]** のフローの指示に従って新しいアプリケーションを作成した場合は、これらの手順をスキップできます。Graph API の詳細については、「[Microsoft Graph SDK を使用して Microsoft Graph を呼び出す](#call-microsoft-graph-using-the-microsoft-graph-sdk)」に移動してください。
+> **注:**アプリケーション登録ポータルから **[ガイド付きセットアップ]** のフローの指示に従って新しいアプリケーションを作成した場合は、これらの手順をスキップできます。 Graph API の詳細については、「[Microsoft Graph SDK を使用して Microsoft Graph を呼び出す](#call-microsoft-graph-using-the-microsoft-graph-sdk)」を参照してください。
 
 追加した MSAL と Microsoft Graph コードについては、「[Android 用接続サンプル](https://github.com/microsoftgraph/android-java-connect-sample)」で説明します。
 
@@ -93,8 +96,9 @@ Microsoft アプリ登録ポータルでアプリを登録します。これに�
         exclude group: 'com.android.support', module: 'appcompat-v7'
     }
     compile 'com.android.volley:volley:1.0.0'
-
 ```
+
+<br/>
 
 ### <a name="start-the-authentication-flow"></a>認証フローの開始
 
@@ -116,10 +120,11 @@ Microsoft アプリ登録ポータルでアプリを登録します。これに�
 
    ```
 
+<br/>
 
 2. **ConnectActivity** クラスで、**mConnectButton** のクリック イベントのイベント ハンドラーを検索します。**onClick** メソッドを検索して、関連するコードを確認します。
   
-    **connect** メソッドは個人情報 (PII) のログ収集を有効にし、サンプルのヘルパー クラス **AuthenticationManager** のインスタンスを取得し、MSAL プラットフォームのオブジェクトのユーザー コレクションを取得します。ユーザーが存在しない場合、新しいユーザーは Azure AD の認証と承認フローに移動されます。それ以外の場合は、メッセージなしで認証トークンを取得します。
+    **connect** メソッドは個人を特定できる情報 (PII) のログ作成を有効にし、サンプルのヘルパー クラス **AuthenticationManager** のインスタンスを取得し、MSAL プラットフォームのオブジェクトのユーザー コレクションを取得します。 ユーザーが存在しない場合、新しいユーザーは Azure AD の認証と承認フローに移動されます。 それ以外の場合は、メッセージなしで認証トークンを取得します。
 
    ```java
     @Override
@@ -160,7 +165,10 @@ Microsoft アプリ登録ポータルでアプリを登録します。これに�
     }
 
    ```
-3. ユーザーが認証ダイアログを閉じたときに Azure AD によって生成された Azure AD のリダイレクト応答を処理するイベント ハンドラーを検索します。このハンドラーは、**ConnectActivity** クラスにあります。
+   
+<br/>
+
+3. ユーザーが認証ダイアログを閉じたときに Azure AD によって生成された Azure AD のリダイレクト応答を処理するイベント ハンドラーを検索します。 このハンドラーは、**ConnectActivity** クラスにあります。
 
    ```java
        /**
@@ -184,10 +192,12 @@ Microsoft アプリ登録ポータルでアプリを登録します。これに�
         }
     }
 
-   ```    
-3. Graph API の呼び出しで使用される認証トークンをキャッシュする、認証コールバック メソッドを検索します。
+   ```  
+   
+   <br/>
 
- 
+4. Graph API の呼び出しで使用される認証トークンをキャッシュする、認証コールバック メソッドを検索します。
+
 
 ```java
     /* Callback used for interactive request.  If succeeds we use the access
@@ -224,14 +234,17 @@ Microsoft アプリ登録ポータルでアプリを登録します。これに�
     }
 
 ```
-    
-接続サンプルのアプリでは、メインのアクティビティに **[接続]** ボタンがあります。初回使用時にボタンを押すと、デバイスのブラウザーを使用した認証ページがアプリに表示されます。次の手順は、認証サーバーがリダイレクト URI にコードを送信してアクセス トークンと交換する作業です。
+
+<br/>
+   
+接続サンプルのアプリでは、メインのアクティビティに **[接続]** ボタンがあります。 初回使用時にボタンを選択すると、デバイスのブラウザーを使用した認証ページがアプリに表示されます。 次の手順は、認証サーバーがリダイレクト URI にコードを送信してアクセス トークンと交換する作業です。
 
 ### <a name="exchange-the-authorization-code-for-an-access-token"></a>認証コードとアクセス トークンの交換
 
 アクセス トークンと交換できるコードが含まれている認証サーバーの応答をアプリが処理できるようにする必要があります。
 
 1. Connect アプリがアプリケーション登録で構成されたリダイレクト URL への要求を処理できることを、Android システムに知らせる必要があります。これを行うには、**strings.xml** 文字列リソース ファイルを開き、次の子をプロジェクトの **\<application/\>** 要素に追加します。
+
    ```xml
    <!DOCTYPE resources [
        <!ENTITY clientId "ENTER_YOUR_CLIENT_ID">
@@ -240,8 +253,9 @@ Microsoft アプリ登録ポータルでアプリを登録します。これに�
     ...
     <string name="client_Id">&clientId;</string>
     <string name="msalPrefix">msal&clientId;</string>
-
    ```
+
+   <br/>
 
    文字列リソースは、**AndroidManifest.xml** ファイルで使用されます。 **MSAL** ライブラリは、実行時にクライアント ID を読み込み、REST 応答を **BrowserTabActivity** に定義されているリダイレクト URL に返します。
 
@@ -267,9 +281,11 @@ Microsoft アプリ登録ポータルでアプリを登録します。これに�
                android:value="@string/client_Id"/>
         </application>
     ```
+
+
 2. **MSAL**ライブラリは、登録ポータルによって割り当てられたアプリケーション ID にアクセスする必要があります。**MSAL ライブラリは、アプリケーション ID を「クライアント ID」として参照します**。これは、ライブラリのコンストラクターで渡したアプリケーション コンテキストからアプリケーション ID (クライアント ID) を取得します。 
 
-   >注:コンストラクターに文字列パラメーターを渡すことにより、実行時にクライアント ID を提供することもできます。 
+   > **注:**コンストラクターに文字列パラメーターを渡すことにより、実行時にクライアント ID を提供することもできます。 
 
 3. 認証サーバーが応答を送信すると、アクティビティが呼び出されます。認証サーバーからの応答で、アクセス トークンを要求します。**AuthenticationManager** に移動し、クラス内で次のコードを検索します。
 
@@ -331,30 +347,35 @@ Microsoft アプリ登録ポータルでアプリを登録します。これに�
 
    ```
 
+<br/>
 
 ## <a name="call-microsoft-graph"></a>Microsoft Graph を呼び出す
+
 [Microsoft Graph SDK](#call-microsoft-graph-using-the-microsoft-graph-sdk) または [Microsoft Graph REST API](#call-microsoft-graph-using-the-microsoft-graph-rest-api) を使用して、Microsoft Graph を呼び出すことができます。
 
 ### <a name="call-microsoft-graph-using-the-microsoft-graph-sdk"></a>Microsoft Graph SDK を使用して Microsoft Graph を呼び出す
+
 [Microsoft Graph SDK for Android](https://github.com/microsoftgraph/msgraph-sdk-android) では、要求をビルドして Microsoft Graph からの結果を処理するクラスを作成できます。以下の手順に従って Microsoft Graph SDK を使用します。
 
 1. アプリにインターネット アクセス許可を付与します。**AndroidManifest** ファイルを開き、マニフェスト要素に次の子を追加します。
+    
     ```xml
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-
     ```
 
+
 2. Microsoft Graph SDK および GSON に依存関係を追加します。
+   
    ```gradle
     compile 'com.microsoft.graph:msgraph-sdk-android:1.3.2'
     compile 'com.google.code.gson:gson:2.7'
    ```
 
 
-3. **uthenticateRequest** ヘルパー メソッドを使用して、新しい要求に認証トークンを追加します。このメソッドは同じメソッドを Microsoft Graph 認証の **IAuthenticationProvider** インターフェイスから実装します
+3. **AuthenticateRequest** ヘルパー メソッドを使用して、新しい要求に認証トークンを追加します。 このメソッドは同じメソッドを Microsoft Graph 認証の **IAuthenticationProvider** インターフェイスから実装します。
     
    ```java
     /**
@@ -382,6 +403,7 @@ Microsoft アプリ登録ポータルでアプリを登録します。これに�
         }
     }
    ```
+
 
 4. 下書き電子メールを作成し、**GraphServiceController** ヘルパー クラスから次のヘルパー メソッドを使用して送信します。
 
@@ -472,13 +494,18 @@ Microsoft アプリ登録ポータルでアプリを登録します。これに�
     }
 
    ```
+  
+
 ### <a name="call-microsoft-graph-using-the-microsoft-graph-rest-api"></a>Microsoft Graph REST API を使用して Microsoft Graph を呼び出す
+
 [Microsoft Graph REST API](http://developer.microsoft.com/en-us/graph/docs) は 1 つの REST API エンドポイントを介して複数の API を Microsoft クラウド サービスから公開するものです。以下の手順に従って、REST API を使用します。
 
 1. アプリにインターネット アクセス許可を付与します。**AndroidManifest** ファイルを開き、マニフェスト要素に次の子を追加します。
+    
     ```xml
     <uses-permission android:name="android.permission.INTERNET" />
     ```
+
 
 2. Volley HTTP ライブラリへの依存関係を追加します。
 
@@ -486,7 +513,9 @@ Microsoft アプリ登録ポータルでアプリを登録します。これに�
     compile 'com.android.volley:volley:1.0.0'
     ```
    
+
 3. 行 `String accessToken = tokenResponse.accessToken;` を次のコードに置き換えます。**\<YOUR_EMAIL_ADDRESS\>** とマークされているプレースホルダーに電子メール アドレスを挿入します。
+   
    ```java
     final String accessToken = tokenResponse.accessToken;
 
@@ -547,24 +576,27 @@ Microsoft アプリ登録ポータルでアプリを登録します。これに�
     });
    ```
 
+
 ## <a name="run-the-app"></a>アプリの実行
 Android アプリを試す準備ができました。
 
 1. Android エミュレーターを起動するか、物理デバイスをコンピューターに接続します。
 2. Android Studio で、Shift キーを押しながら F10 キーを押してアプリを実行します。
 3. 配置ダイアログ ボックスから、Android のエミュレーターまたはデバイスを選択します。
-4. メインのアクティビティ内のフローティング アクション ボタンをタップします。
-5. 個人用あるいは職場または学校アカウントでサインインし、要求されたアクセス許可を付与します。
+4. メインのアクティビティ内の **[フローティング アクション]** ボタンをタップします。
+5. 個人用アカウントか、職場または学校アカウントのいずれかでサインインし、要求されたアクセス許可を付与します。
 6. アプリの選択ダイアログで、アプリをタップして続行します。
 
-["Microsoft Graph を呼び出す"](#call-microsoft-graph)で構成した電子メール アドレスの受信トレイを確認します。アプリへのサインインに使用したアカウントからのメールを受信しているはずです。
+「[Microsoft Graph を呼び出す](#call-microsoft-graph)」で構成した電子メール アドレスの受信トレイを確認します。 アプリへのサインインに使用したアカウントからのメールを受信しているはずです。
 
 ## <a name="next-steps"></a>次の手順
+
 - [Microsoft Graph エクスプローラー](https://developer.microsoft.com/graph/graph-explorer)を試してみましょう。
 - [Android 用のスニペットのサンプル](https://github.com/microsoftgraph/android-java-snippets-sample)で一般的な操作の例を見つけるか、GitHub で別の [Android サンプル](https://github.com/microsoftgraph?utf8=%E2%9C%93&query=android)を探します。
 
 
 ## <a name="see-also"></a>関連項目
+
 - [Android 用 Microsoft Graph SDK](https://github.com/microsoftgraph/msgraph-sdk-android) 
 - [Microsoft Graph を呼び出すためのトークンの取得](https://developer.microsoft.com/en-us/graph/docs/concepts/auth_overview)
 - [ユーザーの代わりにアクセスを取得](https://developer.microsoft.com/en-us/graph/docs/concepts/auth_v2_user)

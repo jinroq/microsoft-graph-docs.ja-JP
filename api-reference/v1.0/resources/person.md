@@ -19,7 +19,7 @@
 |scoredEmailAddresses|[scoredEmailAddress](scoredemailaddress.md) コレクション|人物の電子メール アドレス。|
 |givenName|String|人物に指定された名前。|
 |id|String|人物の一意の識別子。読み取り専用です。|
-|imAddress|String collection|ユーザーのインスタント メッセージ ボイス オーバー IP (VOIP) セッション開始プロトコル (SIP) のアドレス。読み取り専用です。|
+|imAddress|String|ユーザーのインスタント メッセージ ボイス オーバー IP (VOIP) セッション開始プロトコル (SIP) のアドレス。読み取り専用です。|
 |isFavorite|Boolean|ユーザーがこの人物をお気に入りとしてフラグを設定した場合は `true`。|
 |jobTitle|String|人物の役職。|
 |officeLocation|String|人物のオフィスの所在地。|
@@ -55,14 +55,15 @@
   "companyName": "string",
   "department": "string",
   "displayName": "string",
-  "scoredEmailAddresses": [{"@odata.type": "microsoft.graph.scoredemailaddress"}],
+  "scoredEmailAddresses": [{"@odata.type": "microsoft.graph.scoredEmailAddress"}],
   "givenName": "string",
   "id": "string (identifier)",
+  "imAddress": "string",
   "isFavorite": true,
   "jobTitle": "string",
   "officeLocation": "string",
   "personNotes": "string",
-  "personType": [{"@odata.type": "microsoft.graph.persontype"}],
+  "personType": [{"@odata.type": "microsoft.graph.personType"}],
   "phones": [{"@odata.type": "microsoft.graph.phone"}],
   "postalAddresses": [{"@odata.type": "microsoft.graph.location"}],
   "profession": "string",

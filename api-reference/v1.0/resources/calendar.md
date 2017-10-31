@@ -1,16 +1,16 @@
 # <a name="calendar-resource-type"></a>calendar リソース型
 
-イベントのコンテナーである予定表です。
+イベントのコンテナーである予定表です。 [ユーザー](user.md)の予定表、または Office 365 [グループ](group.md)の既定の予定表のいずれかを指定できます。
 
 ## <a name="methods"></a>メソッド
 
 | メソッド       | 戻り値の型  |説明|
 |:---------------|:--------|:----------|
 |[予定表を一覧表示する](../api/user_list_calendars.md)|[calendar](calendar.md) collection|ユーザーのすべての予定表を取得するか、既定またはその他の特定の予定表グループの予定表を取得します。|
-|[予定表を作成する](../api/user_post_calendars.md) |[calendar](calendar.md)| 既定の予定表グループまたは特定の予定表グループに予定表を作成します。|
-|[予定表を取得する](../api/calendar_get.md) | [calendar](calendar.md) |予定表オブジェクトのプロパティとリレーションシップを読み取ります。|
-|[更新する](../api/calendar_update.md) | [calendar](calendar.md)  |予定表オブジェクトを更新します。 |
-|[削除](../api/calendar_delete.md) | なし |予定表オブジェクトを削除します。 |
+|[予定表を作成する](../api/user_post_calendars.md) |[calendar](calendar.md)| 既定の予定表グループまたはユーザーの特定の予定表グループに予定表を作成します。|
+|[予定表を取得する](../api/calendar_get.md) | [calendar](calendar.md) |**予定表**オブジェクトのプロパティと関係を取得します。 ユーザーの予定表、または Office 365 のグループの既定の予定表のいずれかを指定できます。 |
+|[更新する](../api/calendar_update.md) | [calendar](calendar.md)  |**予定表**オブジェクトのプロパティを更新します。 ユーザーの予定表、または Office 365 のグループの既定の予定表のいずれかを指定できます。 |
+|[削除する](../api/calendar_delete.md) | なし |予定表オブジェクトを削除します。 |
 |[calendarView を一覧表示する](../api/calendar_list_calendarview.md) |[event](event.md) コレクション| ユーザーの標準として設定されている予定表 `(../me/calendarview)` または特定の予定表から、時間範囲で定義したカレンダー ビューのイベントの発生、例外、および単一インスタンスを取得します。|
 |[イベントを一覧表示する](../api/calendar_list_events.md) |[event](event.md) コレクション| 予定表のイベント一覧を取得します。一覧には、単一インスタンスの会議と定期的なマスターが含まれています。|
 |[イベントを作成する](../api/calendar_post_events.md) |[event](event.md)| 既定または指定の予定表に新しいイベントを作成します。|
@@ -34,10 +34,10 @@
 ## <a name="relationships"></a>関係
 | リレーションシップ | 型   |説明|
 |:---------------|:--------|:----------|
-|calendarView|[Event](event.md) コレクション|予定表のカレンダー ビュー。ナビゲーション プロパティ。読み取り専用。|
-|events|[Event](event.md) コレクション|予定表内のイベント。ナビゲーション プロパティ。読み取り専用。|
-|multiValueExtendedProperties|[multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md) コレクション| 予定表に定義された、複数値の拡張プロパティのコレクション。読み取り専用。Null 許容型。|
-|singleValueExtendedProperties|[singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md) コレクション| 予定表に定義された、単一値の拡張プロパティのコレクション。読み取り専用。Null 許容型。|
+|calendarView|[Event](event.md) collection|予定表のカレンダー ビュー。ナビゲーション プロパティ。読み取り専用。|
+|events|[Event](event.md) collection|予定表内のイベント。ナビゲーション プロパティ。読み取り専用。|
+|multiValueExtendedProperties|[multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md) collection| 予定表に定義された、複数値の拡張プロパティのコレクション。読み取り専用。Null 許容型。|
+|singleValueExtendedProperties|[singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md) collection| 予定表に定義された、単一値の拡張プロパティのコレクション。読み取り専用。Null 許容型。|
 
 ## <a name="json-representation"></a>JSON 表記
 
