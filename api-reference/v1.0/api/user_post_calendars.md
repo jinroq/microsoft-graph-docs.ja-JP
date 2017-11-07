@@ -1,6 +1,6 @@
 # <a name="create-calendar"></a>予定表を作成する
 
-この API を使用して、新しい予定表を作成します。
+この API を使用して、[ユーザー](../resources/user.md)用の新しい予定表を作成します。
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](../../../concepts/permissions_reference.md)」を参照してください。
 
@@ -26,7 +26,7 @@ POST /users/{id | userPrincipalName}/calendars
 
 ## <a name="response"></a>応答
 
-成功した場合、このメソッドは応答本文で `201, Created` 応答コードと [予定表](../resources/calendar.md)オブジェクトを返します。
+成功した場合、このメソッドは応答本文で `201 Created` 応答コードと [予定表](../resources/calendar.md)オブジェクトを返します。
 
 ## <a name="example"></a>例
 ##### <a name="request"></a>要求

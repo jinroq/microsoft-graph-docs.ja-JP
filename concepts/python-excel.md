@@ -1,8 +1,8 @@
 # <a name="use-microsoft-graph-to-access-excel-in-a-python-app"></a>Microsoft Graph を使用して、Python アプリの Excel にアクセスする
 
-Microsoft Graph API を使用して、OneDrive や SharePoint などのサポートされているオンライン ストレージ プラットフォームに格納されているブックの読み取りと更新を実行できます。`Workbook` (または Excel ファイル) リソースには、他の Excel リソースがすべて含まれおり、アプリはこれらに単純なナビゲーションを使用してアクセスできます。 
+Microsoft Graph API を使用して、OneDrive や SharePoint などのサポートされているオンライン ストレージ プラットフォームに格納されているブックの読み取りと更新を実行できます。 `Workbook` (または Excel ファイル) リソースには、他の Excel リソースがすべて含まれおり、アプリはこれらに単純なナビゲーションを使用してアクセスできます。 
 
-ブックに対して作成、読み取り、更新、削除 (CRUD) 操作を実行するための標準 REST API を使用して、一連の Excel オブジェクト (テーブル、範囲、グラフなど) にアクセスできます。たとえば、`https://graph.microsoft.com/{version}/me/drive/items/{id}/workbook/` では、  
+ブックに対して作成、読み取り、更新、削除 (CRUD) 操作を実行するための標準 REST API を使用して、一連の Excel オブジェクト (テーブル、範囲、グラフなど) にアクセスできます。 たとえば、`https://graph.microsoft.com/{version}/me/drive/items/{id}/workbook/` では、  
 ブックの一部であるワークシート オブジェクトのコレクションが返されます。    
 
 このチュートリアルでは、Python Web アプリから Excel REST API への要求を実行する方法について説明します。 
@@ -15,7 +15,7 @@ Microsoft Graph API を使用して、OneDrive や SharePoint などのサポー
 
 
 ## <a name="authorization-and-scopes"></a>承認とスコープ
-[Azure AD v.20 エンドポイント](https://graph.microsoft.io/en-us/docs/concepts/converged_auth) を使用して Excel REST API 呼び出しを認証できます。すべての API には、`Authorization: Bearer {access-token}` HTTP ヘッダーが必要です。   
+[Azure AD v2.0 エンドポイント](https://graph.microsoft.io/en-us/docs/concepts/converged_auth) を使用して Excel REST API 呼び出しを認証できます。 すべての API には、`Authorization: Bearer {access-token}` HTTP ヘッダーが必要です。   
   
 Excel リソースを使用するには、次のいずれかの[アクセス許可のスコープ](https://graph.microsoft.io/en-us/docs/concepts/permissions_reference)が必要です。
 
@@ -49,7 +49,7 @@ Microsoft アプリ登録ポータルでアプリを登録します。これに�
 
 4. アプリケーション ID をコピーします。これは、アプリの一意識別子です。
 
-5. **[アプリケーション シークレット]** で、**[新しいパスワードを生成する]** を選びます。**[新しいパスワードが生成されました]** ダイアログ ボックスからアプリケーション シークレットをコピーします。
+5. **[アプリケーション シークレット]** で、**[新しいパスワードを生成する]** を選択します。**[新しいパスワードが生成されました]** ダイアログ ボックスからアプリ シークレットをコピーします。
 
     アプリを構成するには、アプリケーション ID とアプリ シークレットを使用します。
 
@@ -57,13 +57,13 @@ Microsoft アプリ登録ポータルでアプリを登録します。これに�
 
 7. **[暗黙的フローを許可する]** のチェック ボックスが選択されていることを確認して、アプリのリダイレクト URI を入力します。
 
-    **[暗黙的フローを許可する]** オプションにより、OpenID Connect ハイブリッド フローが有効になります。これにより、認証時にアプリはサインイン情報 (**id_token**) と成果物 (この場合は認証コード) の両方を受け取れるようになり、アプリはアクセス トークンを取得するときにこれらを使用できます。
+    **[暗黙的フローを許可する]** オプションにより、OpenID Connect ハイブリッド フローが有効になります。 これにより、認証時にアプリはサインイン情報 (**id_token**) と成果物 (この場合は認証コード) の両方を受け取れるようになり、アプリはアクセス トークンを取得するときにこれらを使用できます。
 
 8. **[保存]** を選択します。
 
 ### <a name="create-oauth-client"></a>OAuth クライアントを作成する
 
-OAuth フローを開始し、アクセス トークンを取得するために使用する Flask-OAuth クライアントのインスタンスをアプリに登録する必要があります。永続化された変更をサポートする Excel セッションを取得するには、*Files.ReadWrite* スコープが必要であることに注意してください。
+OAuth フローを開始し、アクセス トークンを取得するために使用する Flask-OAuth クライアントのインスタンスをアプリに登録する必要があります。 永続化された変更をサポートする Excel セッションを取得するには、*Files.ReadWrite* スコープが必要であることに注意してください。
 
 ```python
     # Put your consumer key and consumer secret into a config file
@@ -118,8 +118,8 @@ OAuth フローを開始し、アクセス トークンを取得するために�
     headers = { 
         'User-Agent' : 'python_tutorial/1.0',
         'Authorization' : 'Bearer {0}'.format(access_token),
-         'Accept' : 'application/json',
-         'Content-Type' : 'application/json'
+        'Accept' : 'application/json',
+        'Content-Type' : 'application/json'
     }
 ```
 > **注**: 要求は **Content-Type** ヘッダーに `application/json` など、Graph API に受け入れられる値も指定して送信します。
@@ -127,10 +127,10 @@ OAuth フローを開始し、アクセス トークンを取得するために�
 ### <a name="getting-an-excel-session"></a>Excel セッションの取得
 #### <a name="request"></a>要求 
 
-`persistChanges` 値を `true` または `false` に設定して JSON オブジェクトを渡します。`persistChanges` の値が `false` に設定された場合に、非永続セッション ID が返されます。この例では、[要求](http://docs.python-requests.org/en/latest/user/quickstart) HTTP ライブラリを使用します。 
+`persistChanges` 値を `true` または `false` に設定して JSON オブジェクトを渡します。 `persistChanges` の値が `false` に設定された場合に、非永続セッション ID が返されます。 この例では、[要求](http://docs.python-requests.org/en/latest/user/quickstart) HTTP ライブラリを使用します。 
 
 ```python
-     # Replace the id with your Excel workbook's drive id
+    # Replace the id with your Excel workbook's drive id
     url = 'https://graph.microsoft.com/v1.0/me/drive/items/01TBZDUE23F3CNYSIEGNBZV2LZGWHMC7TE/workbook/createSession'
     # Set request headers
     headers = { 
@@ -151,7 +151,7 @@ OAuth フローを開始し、アクセス トークンを取得するために�
 
 <!-- { "blockType": "ignored" } -->
 ```http
-HTTP code: 201, Created
+HTTP code: 201 Created
 content-type: application/json;odata.metadata 
 
 {
@@ -163,7 +163,7 @@ content-type: application/json;odata.metadata
 
 #### <a name="usage"></a>使用方法 
 
-以前の呼び出しから返されたセッション ID は、後続の API 要求で **Workbook-Session-Id** HTTP ヘッダーに入れてヘッダーとして渡します。たとえば、その Excel ブックのワークシートを一覧表示します。
+以前の呼び出しから返されたセッション ID は、後続の API 要求で **Workbook-Session-Id** HTTP ヘッダーに入れてヘッダーとして渡します。 たとえば、その Excel ブックのワークシートを一覧表示します。
 
 ```python
     # Replace the id with your Excel workbook's drive id
@@ -183,7 +183,7 @@ content-type: application/json;odata.metadata
 
 <!-- { "blockType": "ignored" } -->
 ```http
-HTTP code: 200, OK
+HTTP code: 200 OK
 content-type: application/json;odata.metadata 
 
 {

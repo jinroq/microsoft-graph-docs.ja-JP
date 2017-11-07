@@ -1,14 +1,14 @@
 # <a name="create-calendar"></a>予定表を作成する
 
-この API を使って、予定表グループに新しい予定表を作成します。
+この API を使って、[ユーザー](../resources/user.md)用の予定表グループに新しい予定表を作成します。 
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](../../../concepts/permissions_reference.md)」を参照してください。
 
-|アクセス許可の種類      | アクセス許可 (特権の小さいものから大きいものへ)              | 
-|:--------------------|:---------------------------------------------------------| 
-|委任 (職場または学校のアカウント) | Calendars.ReadWrite    | 
-|委任 (個人用 Microsoft アカウント) | Calendars.ReadWrite    | 
-|アプリケーション | Calendars.ReadWrite | 
+|アクセス許可の種類      | アクセス許可 (特権の小さいものから大きいものへ)              |
+|:--------------------|:---------------------------------------------------------|
+|委任 (職場または学校のアカウント) | Calendars.ReadWrite    |
+|委任 (個人用 Microsoft アカウント) | Calendars.ReadWrite    |
+|アプリケーション | Calendars.ReadWrite |
 
 ## <a name="http-request"></a>HTTP 要求
 <!-- { "blockType": "ignored" } -->
@@ -29,11 +29,11 @@ POST /users/{id | userPrincipalName}/calendarGroups/{id}/calendars
 | Content-Type  | application/json. Required.  |
 
 ## <a name="request-body"></a>要求本文
-要求本文で、[予定表](../resources/calendar.md)オブジェクトの JSON 表記を指定します。
+要求本文で、[予定表](../resources/calendar.md) オブジェクトの JSON 表記を指定します。
 
 ## <a name="response"></a>応答
 
-成功した場合、このメソッドは `201, Created` 応答コードと、応答本文で[予定表](../resources/calendar.md)オブジェクトを返します。
+成功した場合、このメソッドは応答本文で `201 Created` 応答コードと [予定表](../resources/calendar.md)オブジェクトを返します。
 
 ## <a name="example"></a>例
 ##### <a name="request"></a>要求

@@ -35,7 +35,7 @@ GET https://graph.microsoft.com/v1.0/me/mailFolders/{id}/messages/delta
 
 ### <a name="optional-request-header"></a>オプションの要求ヘッダー
 
-各デルタ クエリの GET 要求は、応答で 1 つ以上のメッセージのコレクションを返します。必要に応じて、要求ヘッダー _Prefer: odata.maxpagesize={x}_ を指定して、応答内の最大メッセージ数を設定できます。
+各デルタ クエリの GET 要求は、応答で 1 つ以上のメッセージのコレクションを返します。 必要に応じて、要求ヘッダー `Prefer: odata.maxpagesize={x}` を指定して、応答内の最大メッセージ数を設定できます。
 
 <!--
 ### Iterative process 
