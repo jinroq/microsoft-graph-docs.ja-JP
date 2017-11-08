@@ -66,8 +66,8 @@ PATCH /users/{id | userPrincipalName}/contactFolders/{id}/childFolders/{id}/cont
 |parentFolderId|String|連絡先の親フォルダーの ID。|
 |personalNotes|String|連絡先に関するユーザーのメモ。|
 |profession|String|連絡先の専門的職業。|
-|spouseName|String|連絡先の配偶者の名前。|
-|surname|String|連絡先の姓。|
+|spouseName|String|連絡先の配偶者/パートナーの名前。|
+|姓|String|連絡先の姓。|
 |title|String|連絡先の肩書。|
 |yomiCompanyName|String|連絡先の会社名の読み仮名。このプロパティは省略可能です。|
 |yomiGivenName|String|連絡先の名 (ファースト ネーム) の読み仮名。このプロパティは省略可能です。|

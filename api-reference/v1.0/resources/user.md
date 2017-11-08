@@ -21,8 +21,8 @@ Azure AD ユーザー アカウントを表します。[directoryObject](directo
 |[List mailFolders](../api/user_list_mailfolders.md) |[MailFolder](mailfolder.md) collection| サインイン中のユーザーのルート フォルダーからメール フォルダー コレクションを取得します。 |
 |[Create mailFolder](../api/user_post_mailfolders.md) |[MailFolder](mailfolder.md)| mailFolder コレクションへの投稿により、新しい MailFolder を作成します。|
 |[sendMail](../api/user_sendmail.md)|None|要求本文に指定されたメッセージを送信します。|
-|[List events](../api/user_list_events.md) |[Event](event.md) コレクション| ユーザーのメールボックス内のイベント オブジェクトの一覧を取得します。一覧には、単一インスタンスの会議と定期的なマスターが含まれています。|
-|[イベントを作成する](../api/user_post_events.md) |[Event](event.md)| Event コレクションへの投稿によって、新しいイベントを作成します。|
+|[List events](../api/user_list_events.md) |[Event](event.md) collection| ユーザーのメールボックス内のイベント オブジェクトの一覧を取得します。一覧には、単一インスタンスの会議と定期的なマスターが含まれています。|
+|[Create event](../api/user_post_events.md) |[Event](event.md)| Event コレクションへの投稿によって、新しいイベントを作成します。|
 |[List calendars](../api/user_list_calendars.md) |[Calendar](calendar.md) collection| 予定表オブジェクトのコレクションを取得します。|
 |[Create calendar](../api/user_post_calendars.md) |[Calendar](calendar.md)| 予定表コレクションへの投稿により、新しい予定表を作成します。|
 |[List calendarGroups](../api/user_list_calendargroups.md) |[CalendarGroup](calendargroup.md) collection| CalendarGroup オブジェクトのコレクションを取得します。|
@@ -39,11 +39,11 @@ Azure AD ユーザー アカウントを表します。[directoryObject](directo
 |[List ownedObjects](../api/user_list_ownedobjects.md) |[directoryObject](directoryobject.md) collection| そのユーザーにより所有されているディレクトリ オブジェクトを、ownedObjects ナビゲーション プロパティから取得します。|
 |[List registeredDevices](../api/user_list_registereddevices.md) |[directoryObject](directoryobject.md) collection| そのユーザーについて登録されているデバイスを、RegisteredDevices ナビゲーション プロパティから取得します。|
 |[List createdObjects](../api/user_list_createdobjects.md) |[directoryObject](directoryobject.md) collection| そのユーザーにより作成されたディレクトリ オブジェクトを、createdObjects ナビゲーション プロパティから取得します。|
-|[assignLicense](../api/user_assignlicense.md)|[user](user.md)|ユーザーのサブスクリプションを追加または削除します。サブスクリプションに関連付けられている特定のプランを有効または無効にすることもできます。|
+|[assignLicense](../api/user_assignlicense.md)|[user](user.md)|ユーザーのサブスクリプションを追加または削除します。また、サブスクリプションに関連付けられている特定のプランを有効または無効にすることもできます。|
 |[licenseDetails を一覧表示する](../api/user_list_licensedetails.md) |[licenseDetails](licensedetails.md) コレクション| licenseDetails オブジェクトのコレクションを取得します。|
-|[checkMemberGroups](../api/user_checkmembergroups.md)|String コレクション|グループの一覧内のメンバーシップを確認します。チェックは推移的です。|
-|[getMemberGroups](../api/user_getmembergroups.md)|String コレクション|ユーザーがメンバーであるすべてのグループを返します。チェックは推移的です。|
-|[getMemberObjects](../api/user_getmemberobjects.md)|String コレクション| ユーザーがメンバーになっているすべてのグループとディレクトリ ロールを返します。チェックは推移的です。 |
+|[checkMemberGroups](../api/user_checkmembergroups.md)|String collection|グループの一覧内のメンバーシップを確認します。チェックは推移的です。|
+|[getMemberGroups](../api/user_getmembergroups.md)|String collection|ユーザーがメンバーであるすべてのグループを返します。チェックは推移的です。|
+|[getMemberObjects](../api/user_getmemberobjects.md)|String collection| ユーザーがメンバーになっているすべてのグループとディレクトリ ロールを返します。チェックは推移的です。 |
 |[reminderView](../api/user_reminderview.md)|[Reminder](reminder.md) collection|指定した開始時刻と終了時刻内の予定表のアラームの一覧を返します。|
 |[delta](../api/user_delta.md)|user コレクション| ユーザーに対する増分の変更を取得します。 |
 |**オープン拡張機能**| | |
@@ -59,11 +59,11 @@ Azure AD ユーザー アカウントを表します。[directoryObject](directo
 |aboutMe|String|ユーザーが自分自身について記述する、フリー フォームのテキスト入力フィールド。|
 |accountEnabled|Boolean| アカウントが有効な場合は **true**。そうでない場合は **false**。このプロパティは、ユーザーの作成時に必要です。$filter をサポートします。    |
 |assignedLicenses|[assignedLicense](assignedlicense.md) collection|ユーザーに割り当てられているライセンス。null 許容ではありません。            |
-|assignedPlans|[assignedPlan](assignedplan.md) コレクション|ユーザーに割り当てられているプラン。読み取り専用です。null 許容ではありません。 |
+|assignedPlans|[assignedPlan](assignedplan.md) collection|ユーザーに割り当てられているプラン。読み取り専用です。null 許容ではありません。 |
 |birthday|DateTimeOffset|ユーザーの誕生日。Timestamp 型は、ISO 8601 形式を使用して日付と時刻の情報を表し、必ず UTC 時間です。たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、次のようになります。`'2014-01-01T00:00:00Z'`|
 |businessPhones|String collection|ユーザーの電話番号。注:文字列コレクションですが、このプロパティに設定できるのは 1 つの数字のみです。|
 |city|String|ユーザーがいる都市。$filter をサポートします。|
-|companyName|String|ユーザーが関連付けられている会社名。|
+| companyName | String | ユーザーが関連付けられている会社名。 読み取り専用です。
 |country|String|ユーザーがいる国/地域。たとえば、「US (米国)」や「UK (英国)」です。$filter をサポートします。|
 |department|String|ユーザーが働いている部門の名前。$filter をサポートします。|
 |displayName|String|アドレス帳に表示されるユーザーの名前。これは通常、ユーザーの名前、ミドルネームのイニシャル、姓の組み合わせです。このプロパティは、ユーザーの作成時に必須になります。更新時にクリアすることはできません。$filter および $orderby をサポートします。|
@@ -89,8 +89,8 @@ Azure AD ユーザー アカウントを表します。[directoryObject](directo
 |postalCode|String|ユーザーの住所の郵便番号。郵便番号は、ユーザーの国/地域に固有です。アメリカ合衆国では、この属性には、ZIP コードが含まれます。|
 |preferredLanguage|String|ユーザーが設定する言語。ISO 639-1 コードに従う必要があります。たとえば "en-US" です。|
 |preferredName|String|ユーザーが設定する名前。|
-|provisionedPlans|[ProvisionedPlan](provisionedplan.md) コレクション|ユーザーのために用意されたプラン。読み取り専用です。null 許容ではありません。 |
-|proxyAddresses|String コレクション|例:`["SMTP: bob@contoso.com", "smtp: bob@sales.contoso.com"]` 複数値プロパティのフィルター式には、**任意の**演算子が必要です。読み取り専用。null 許容ではありません。$filter をサポートします。          |
+|provisionedPlans|[ProvisionedPlan](provisionedplan.md) collection|ユーザーのために用意されたプラン。読み取り専用です。null 許容ではありません。 |
+|proxyAddresses|String collection|例:`["SMTP: bob@contoso.com", "smtp: bob@sales.contoso.com"]` 複数値プロパティのフィルター式には、**任意の**演算子が必要です。読み取り専用。null 許容ではありません。$filter をサポートします。          |
 |responsibilities|String collection|ユーザーが自分の責任の範囲を列挙する一覧。|
 |schools|String collection|ユーザーが在籍した学校を列挙する一覧。|
 |skills|String collection|ユーザーが自分のスキルを列挙する一覧。|
@@ -106,27 +106,27 @@ Azure AD ユーザー アカウントを表します。[directoryObject](directo
 | リレーションシップ | 型   |説明|
 |:---------------|:--------|:----------|
 |calendar|[Calendar](calendar.md)|ユーザーの標準予定表。読み取り専用です。|
-|calendarGroups|[CalendarGroup](calendargroup.md) コレクション|ユーザーの予定表グループ。読み取り専用です。Null 許容型。|
-|calendarView|[Event](event.md) コレクション|予定表のカレンダー ビュー。読み取り専用です。Null 許容型。|
-|calendars|[Calendar](calendar.md) コレクション|ユーザーの予定表。読み取り専用です。Null 許容型。|
-|contactFolders|[ContactFolder](contactfolder.md) コレクション|ユーザーの連絡先フォルダー。読み取り専用です。Null 許容型。|
-|contacts|[Contact](contact.md) コレクション|ユーザーの連絡先。読み取り専用です。Null 許容型。|
-|createdObjects|[directoryObject](directoryobject.md) コレクション|ユーザーによって作成されたディレクトリ オブジェクト。読み取り専用です。Null 許容型。|
+|calendarGroups|[CalendarGroup](calendargroup.md) collection|ユーザーの予定表グループ。読み取り専用です。Null 許容型。|
+|calendarView|[Event](event.md) collection|予定表のカレンダー ビュー。読み取り専用です。Null 許容型。|
+|calendars|[Calendar](calendar.md) collection|ユーザーの予定表。読み取り専用です。Null 許容型。|
+|contactFolders|[ContactFolder](contactfolder.md) collection|ユーザーの連絡先フォルダー。読み取り専用です。Null 許容型。|
+|contacts|[Contact](contact.md) collection|ユーザーの連絡先。読み取り専用です。Null 許容型。|
+|createdObjects|[directoryObject](directoryobject.md) collection|ユーザーによって作成されたディレクトリ オブジェクト。読み取り専用です。Null 許容型。|
 |directReports|[directoryObject](directoryobject.md) collection|そのユーザーの部下であるユーザーと連絡先。(マネージャー プロパティがこのユーザーに設定されている、ユーザーと連絡先。)読み取り専用です。Null 許容型。 |
 |drive|[drive](drive.md)|ユーザーの OneDrive。読み取り専用です。|
 |drives|[drive](drive.md) コレクション | このユーザーが使用できるドライブのコレクション。読み取り専用です。 |
-|events|[Event](event.md) コレクション|ユーザーのイベント。既定は、既定の予定表でイベントを表示します。読み取り専用です。Null 許容型。|
+|events|[Event](event.md) collection|ユーザーのイベント。既定は、既定の予定表でイベントを表示します。読み取り専用です。Null 許容型。|
 |extensions|[extension](extension.md) コレクション|ユーザーに対して定義されているオープン拡張機能のコレクション。読み取り専用です。Null 許容型。|
 |inferenceClassification | [inferenceClassification](inferenceClassification.md) | 明示的な指定に基づく、ユーザーのメッセージの関連性の分類。明示的な指定は、推定される関連性や重要性より優先されます。 |
-|mailFolders|[MailFolder](mailfolder.md) コレクション| ユーザーのメール フォルダー。読み取り専用です。Null 許容型。|
+|mailFolders|[MailFolder](mailfolder.md) collection| ユーザーのメール フォルダー。読み取り専用です。Null 許容型。|
 |manager|[directoryObject](directoryobject.md)|このユーザーの上司であるユーザーまたは連絡先。読み取り専用です。(HTTP メソッド:GET、PUT、DELETE)|
-|memberOf|[directoryObject](directoryobject.md) コレクション|ユーザーがメンバーになっているグループとディレクトリ ロール。読み取り専用です。Null 許容型。|
-|messages|[Message](message.md) コレクション|メールボックスまたはフォルダー内のメッセージ。読み取り専用です。Null 許容型。|
+|memberOf|[directoryObject](directoryobject.md) collection|ユーザーがメンバーになっているグループとディレクトリ ロール。読み取り専用です。Null 許容型。|
+|messages|[Message](message.md) collection|メールボックスまたはフォルダー内のメッセージ。読み取り専用です。Null 許容型。|
 |onenote|[OneNote](onenote.md)| 読み取り専用です。|
-|ownedDevices|[directoryObject](directoryobject.md) コレクション|ユーザーが所有しているデバイス。読み取り専用です。Null 許容型。|
-|ownedObjects|[directoryObject](directoryobject.md) コレクション|ユーザーが所有しているディレクトリ オブジェクト。読み取り専用です。Null 許容型。|
+|ownedDevices|[directoryObject](directoryobject.md) collection|ユーザーが所有しているデバイス。読み取り専用です。Null 許容型。|
+|ownedObjects|[directoryObject](directoryobject.md) collection|ユーザーが所有しているディレクトリ オブジェクト。読み取り専用です。Null 許容型。|
 |photo|[profilePhoto](profilephoto.md)| ユーザーのプロフィール写真。読み取り専用です。|
-|registeredDevices|[directoryObject](directoryobject.md) コレクション|ユーザーについて登録されているデバイス。読み取り専用です。Null 許容型。|
+|registeredDevices|[directoryObject](directoryobject.md) collection|ユーザーについて登録されているデバイス。読み取り専用です。Null 許容型。|
 
 ## <a name="json-representation"></a>JSON 表記
 

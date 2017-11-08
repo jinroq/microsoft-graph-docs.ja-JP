@@ -8,8 +8,8 @@
 
 - [Objective-C iOS アプリで Microsoft Graph を使ってみる](ios_objectivec.md)
 
-## <a name="ios-swift-sonnect-sample"></a>iOS Swift Sonnect のサンプル
-このサンプルでは、Objective-C 向けの Microsoft Graph クライアント ライブラリを使用して Microsoft Graph エンドポイントにアクセスします。 ユーザー認証はサードパーティの [NXOAuth2Client](https://github.com/nxtbgthng/OAuth2Client) ライブラリで処理されます。 このライブラリでは、アプリがオンプレミスの Azure Active Directory インスタンスからのユーザーを認証しますが、MSA ユーザーは認証しません。
+## <a name="ios-swift-connect-sample"></a>iOS Swift Connect のサンプル
+このサンプルでは、Objective C 向けの Microsoft Graph クライアント ライブラリを使用して Microsoft Graph エンドポイントにアクセスします。 ユーザー認証はサードパーティの [NXOAuth2Client](https://github.com/nxtbgthng/OAuth2Client) ライブラリで処理されます。 このライブラリでは、アプリがオンプレミスの Azure Active Directory インスタンスからのユーザーを認証しますが、MSA ユーザーは認証しません。
 
 サンプルでは、Graph を介してどのようにユーザーの Azure プロファイルにアクセスするかを示しています。 ユーザーのプロファイル写真を取得する方法、その写真をユーザーの OneDrive ストレージにアップロードする方法、およびその写真を Outlook 電子メール メッセージの本文に埋め込む方法についても説明します。
 

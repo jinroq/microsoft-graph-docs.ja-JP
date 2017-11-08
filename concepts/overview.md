@@ -24,6 +24,8 @@ Microsoft Graph を使用すると、ユーザーの固有のコンテキスト�
 
 Microsoft Graph API を使用すると、これ以上のことができます。
 
+>**注:** Microsoft Graph API を使用する場合、[Microsoft Graph の使用条件](../misc/terms-of-use.md)と[Microsoft プライバシーに関する声明](https://go.microsoft.com/fwlink/?LinkId=521839)に同意することになります。
+
 ## <a name="next-steps"></a>次の手順
 
 - [おすすめのシナリオ](../concepts/featured_scenarios.md)を確認します。

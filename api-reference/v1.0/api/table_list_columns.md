@@ -65,6 +65,13 @@ Content-length: 126
 }
 ```
 
+> **注:** [$top](https://developer.microsoft.com/en-us/graph/docs/concepts/query_parameters#top) クエリ パラメーターと [$skip](https://developer.microsoft.com/en-us/graph/docs/concepts/query_parameters#top) を使用して、多数の列をページングします。
+
+例: 
+
+`https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/tables/{id|name}/columns?$top=5`
+`https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/tables/{id|name}/columns?$top=5&$skip=5`
+
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
 <!-- {

@@ -28,7 +28,7 @@ GET /workbook/worksheets/{id|name}/charts(<name>)/Image(width=0,height=0,fitting
 |:---------------|:--------|:----------|
 |height|number|省略可能。結果の画像の希望する高さ。|
 |width|number|省略可能。結果の画像の希望する幅。|
-|fittingMode|string|省略可能。指定したディメンションに合わせてグラフを拡大または縮小するために使用するメソッド (高さと幅の両方が設定されている場合)。可能な値は、`Fit`、`FitAndCenter`、`Fill` です。|
+|fittingMode|string|省略可能。指定したディメンションに合わせてグラフを拡大または縮小するために使用するメソッド (高さと幅の両方が設定されている場合)。使用可能な値: `Fit`、`FitAndCenter`、`Fill`。|
 
 ## <a name="response"></a>応答
 
@@ -41,16 +41,6 @@ GET /workbook/worksheets/{id|name}/charts(<name>)/Image(width=0,height=0,fitting
 <!-- { "blockType": "ignored" } -->
 ```http
 GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/{id|name}/charts(<name>)/Image(width=0,height=0,fittingMode='fit')
-Content-type: application/json
-Content-length: 77
-
-{
-  "height": {
-  },
-  "width": {
-  },
-  "fittingMode": "fittingMode-value"
-}
 ```
 
 ##### <a name="response"></a>応答
@@ -58,13 +48,24 @@ Content-length: 77
 <!-- { "blockType": "ignored" } -->
 ```http
 HTTP/1.1 200 OK
-Content-type: application/json
-Content-length: 3
+Content-type: application/json;odata.metadata=minimal;odata.streaming=true
 
 {
 "value" : "base-64 chart image string"
 }
 ```
+
+## <a name="usage"></a>使用方法
+
+HTML イメージ タグ: `<img src="data:image/png;base64,{base-64 chart image string}/>` 内の Base-64 文字列を表示できます。
+
+既定の動作には、`Image(width=0,height=0,fittingMode='fit')` を使用します。 既定のパラメーターで返されるグラフ イメージの例を次に示します。
+
+![既定値の高さと幅の Excel グラフのイメージです。](https://cdn.graph.office.net/prod/GraphDocuments/en-us/concepts/images/GetChart-default.png)
+
+イメージの表示をカスタマイズする場合は、高さ、幅、自動調整モードを指定します。 これらのパラメーターを使用してグラフ イメージを取得する場合、どのように表示されるかを次に示します。`Image(width=500,height=500,fittingMode='Fill')`。
+
+![既定値の高さと幅の Excel グラフのイメージです。](https://cdn.graph.office.net/prod/GraphDocuments/en-us/concepts/images/GetChart-fill.png)
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

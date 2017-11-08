@@ -49,12 +49,12 @@ PATCH /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/
 |isReminderOn|Boolean|ユーザーにイベントを通知するアラートを設定する場合は、true に設定します。|
 |location|[Location](../resources/location.md)|イベントの場所。|
 |onlineMeetingUrl|String|オンライン会議の URL。|
-|recurrence|[PatternedRecurrence](../resources/patternedrecurrence.md)|イベントの繰り返しパターンです。|
+|recurrence|[PatternedRecurrence](../resources/patternedrecurrence.md)|イベントの繰り返しパターン。|
 |reminderMinutesBeforeStart|Int32|アラーム通知を行う、イベント開始時間前の分数。|
 |responseRequested|Boolean|イベントが承諾または辞退されたときに、送信者が応答を要求する場合に、true に設定します。|
 |sensitivity|String| 可能な値は、`Normal`、`Personal`、`Private`、`Confidential` です。|
-|showAs|String|表示されるステータス:予定なし = 0、仮の予定 = 1、予定あり = 2、休暇 = 3、離席 = 4、不明 = -1。使用可能な値: `Free`、`Tentative`、`Busy`、`Oof`、`WorkingElsewhere`、`Unknown`。|
-|start|[DateTimeTimeZone](../resources/datetimetimezone.md)|イベントの開始時刻です。 <br/><br/>既定で、開始時刻は UTC 単位です。EndTimeZone でオプションのタイム ゾーンを指定して、そのタイム ゾーンで開始時刻を表現し、UTC からの時間オフセットを含めることができます。StartTimeZone を使用する場合、EndTimeZone の値も指定する必要があります。<br/><br/>この例では、太平洋標準時で 2015 年 2 月 25 日午後 7:34 を指定します "2015-02-25T19:34:00-08:00".  |
+|showAs|String|表示するステータス。 使用可能な値: `Free`、`Tentative`、`Busy`、`Oof`、`WorkingElsewhere`、`Unknown`。|
+|開始|[DateTimeTimeZone](../resources/datetimetimezone.md)|イベントの開始時刻です。 <br/><br/>既定で、開始時刻は UTC 単位です。EndTimeZone でオプションのタイム ゾーンを指定して、そのタイム ゾーンで開始時刻を表現し、UTC からの時間オフセットを含めることができます。StartTimeZone を使用する場合、EndTimeZone の値も指定する必要があります。<br/><br/>この例では、太平洋標準時で 2015 年 2 月 25 日午後 7:34 を指定します "2015-02-25T19:34:00-08:00".  |
 |subject|String|イベントの件名行のテキスト。|
 
 **イベント** リソースは[拡張機能](../../../concepts/extensibility_overview.md)をサポートしているため、`PATCH` 操作を使用して、既存の**イベント** インスタンスで拡張機能のカスタム プロパティにあるアプリ固有のデータを追加、更新、または削除することができます。
@@ -62,8 +62,11 @@ PATCH /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/
 ## <a name="response"></a>応答
 
 成功した場合、このメソッドは `200 OK` 応答コードと、応答本文で、更新された [event](../resources/event.md) オブジェクトを返します。
+
 ## <a name="example"></a>例
+
 ##### <a name="request"></a>要求
+
 以下は、要求の例です。
 <!-- {
   "blockType": "request",
@@ -81,12 +84,15 @@ Content-length: 285
     "response": "",
     "time": "datetime-value"
   },
+  "recurrence": null,
   "iCalUId": "iCalUId-value",
   "reminderMinutesBeforeStart": 99,
   "isReminderOn": true
 }
 ```
+
 ##### <a name="response"></a>応答
+
 以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。
 <!-- {
   "blockType": "response",
@@ -105,6 +111,7 @@ Content-length: 285
     "response": "",
     "time": "datetime-value"
   },
+  "recurrence": null,  
   "iCalUId": "iCalUId-value",
   "reminderMinutesBeforeStart": 99,
   "isReminderOn": true

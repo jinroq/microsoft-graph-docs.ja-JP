@@ -63,8 +63,8 @@
 |parentFolderId|String|連絡先の親フォルダーの ID。|
 |personalNotes|String|連絡先に関するユーザーのメモ。|
 |profession|String|連絡先の専門的職業。|
-|spouseName|String|連絡先の配偶者の名前。|
-|surname|String|連絡先の姓。|
+|spouseName|String|連絡先の配偶者/パートナーの名前。|
+|姓|String|連絡先の姓。|
 |title|String|連絡先の肩書。|
 |yomiCompanyName|String|連絡先の会社名の読み仮名。|
 |yomiGivenName|String|連絡先の名 (ファースト ネーム) の読み仮名。|
@@ -74,9 +74,9 @@
 | リレーションシップ | 型   |説明|
 |:---------------|:--------|:----------|
 |extensions|[extension](extension.md) コレクション|連絡先に対して定義されているオープン拡張機能のコレクション。読み取り専用。Null 許容型。|
-|multiValueExtendedProperties|[multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md) コレクション| 連絡先に定義された、複数値の拡張プロパティのコレクション。読み取り専用。Null 許容型。|
-|photo|[profilePhoto](profilephoto.md)| 連絡先の写真 (オプション)。連絡先の写真を取得また設定することができます。|
-|singleValueExtendedProperties|[singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md) コレクション| 連絡先に定義された、単一値の拡張プロパティのコレクション。読み取り専用。Null 許容型。|
+|multiValueExtendedProperties|[multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md) collection| 連絡先に定義された、複数値の拡張プロパティのコレクション。読み取り専用。Null 許容型。|
+|写真|[profilePhoto](profilephoto.md)| 連絡先の写真 (オプション)。連絡先の写真を取得また設定することができます。|
+|singleValueExtendedProperties|[singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md) collection| 連絡先に定義された、単一値の拡張プロパティのコレクション。読み取り専用。Null 許容型。|
 
 ## <a name="json-representation"></a>JSON 表記
 
