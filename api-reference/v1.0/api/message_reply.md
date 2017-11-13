@@ -1,6 +1,6 @@
 # <a name="message-reply"></a>メッセージ: reply
 
-メッセージの送信者に返信します。その後、メッセージは [送信済みアイテム] フォルダーに保存されます。
+メッセージの送信者に返信します。その後、メッセージは送信済みアイテム フォルダーに保存されます。
 
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](../../../concepts/permissions_reference.md)」を参照してください。
@@ -34,7 +34,7 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/reply
 
 ## <a name="response"></a>応答
 
-成功した場合、このメソッドは `202, Accepted` 応答コードを返します。応答本文には何も返されません。
+成功した場合、このメソッドは `202 Accepted` 応答コードを返します。応答本文には何も返されません。
 
 ## <a name="example"></a>例
 以下は、この API を呼び出す方法の例です。

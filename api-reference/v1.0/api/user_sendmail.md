@@ -2,10 +2,17 @@
 
 要求本文に指定されたメッセージを送信します。メッセージは、既定で [送信済みアイテム] フォルダーに保存されます。
 
-[添付ファイル](../resources/fileattachment.md) を同じ **sendMail** アクション呼び出しに含めることができます。
+[添付ファイル](../resources/fileattachment.md)を同じ **sendMail** アクション呼び出しに含めることができます。
 
-## <a name="prerequisites"></a>前提条件
-この API を実行するには、以下のいずれかの**スコープ**が必要です。*Mail.Send*
+## <a name="permissions"></a>アクセス許可
+この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](../../../concepts/permissions_reference.md)」を参照してください。
+
+
+|アクセス許可の種類      | アクセス許可 (特権の小さいものから大きいものへ)              |
+|:--------------------|:---------------------------------------------------------|
+|委任 (職場または学校のアカウント) | Mail.Send    |
+|委任 (個人用 Microsoft アカウント) | Mail.Send    |
+|アプリケーション | Mail.Send |
 
 ## <a name="http-request"></a>HTTP 要求
 <!-- { "blockType": "ignored" } -->
@@ -23,12 +30,12 @@ POST /users/{id | userPrincipalName}/sendMail
 
 | パラメーター    | 型   |説明|
 |:---------------|:--------|:----------|
-|Message|[メッセージ](../resources/message.md)|送信するメッセージです。必須。|
+|Message|[Message](../resources/message.md)|送信するメッセージです。必須。|
 |SaveToSentItems|Boolean|[送信済みアイテム] 内のメッセージを保存するかどうかを示します。パラメーターを false にする場合にのみ指定します。既定では true です。省略可能。 |
 
 ## <a name="response"></a>応答
 
-成功した場合、このメソッドは `202, Accepted` 応答コードを返します。応答本文には何も返されません。
+成功した場合、このメソッドは `202 Accepted` 応答コードを返します。応答本文には何も返されません。
 
 ## <a name="example"></a>例
 以下は、この API を呼び出す方法の例です。
