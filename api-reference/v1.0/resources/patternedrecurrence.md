@@ -1,23 +1,23 @@
-# <a name="patternedrecurrence-resource-type"></a><span data-ttu-id="de72d-101">patternedRecurrence リソースの種類</span><span class="sxs-lookup"><span data-stu-id="de72d-101">patternedRecurrence resource type</span></span>
+# <a name="patternedrecurrence-resource-type"></a><span data-ttu-id="a6f44-101">patternedRecurrence リソースの種類</span><span class="sxs-lookup"><span data-stu-id="a6f44-101">patternedRecurrence resource type</span></span>
 
-<span data-ttu-id="de72d-102">繰り返しのパターンと範囲です。</span><span class="sxs-lookup"><span data-stu-id="de72d-102">The recurrence pattern and range.</span></span>
+<span data-ttu-id="a6f44-102">繰り返しのパターンと範囲です。</span><span class="sxs-lookup"><span data-stu-id="a6f44-102">The recurrence pattern and range.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="de72d-103">プロパティ</span><span class="sxs-lookup"><span data-stu-id="de72d-103">Properties</span></span>
-| <span data-ttu-id="de72d-104">プロパティ</span><span class="sxs-lookup"><span data-stu-id="de72d-104">Property</span></span>     | <span data-ttu-id="de72d-105">型</span><span class="sxs-lookup"><span data-stu-id="de72d-105">Type</span></span>   |<span data-ttu-id="de72d-106">説明</span><span class="sxs-lookup"><span data-stu-id="de72d-106">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="a6f44-103">プロパティ</span><span class="sxs-lookup"><span data-stu-id="a6f44-103">Properties</span></span>
+| <span data-ttu-id="a6f44-104">プロパティ</span><span class="sxs-lookup"><span data-stu-id="a6f44-104">Property</span></span>     | <span data-ttu-id="a6f44-105">型</span><span class="sxs-lookup"><span data-stu-id="a6f44-105">Type</span></span>   |<span data-ttu-id="a6f44-106">説明</span><span class="sxs-lookup"><span data-stu-id="a6f44-106">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="de72d-107">pattern</span><span class="sxs-lookup"><span data-stu-id="de72d-107">pattern</span></span>|[<span data-ttu-id="de72d-108">RecurrencePattern</span><span class="sxs-lookup"><span data-stu-id="de72d-108">RecurrencePattern</span></span>](recurrencepattern.md)|<span data-ttu-id="de72d-109">イベントの頻度。</span><span class="sxs-lookup"><span data-stu-id="de72d-109">The frequency of an event.</span></span>|
-|<span data-ttu-id="de72d-110">range</span><span class="sxs-lookup"><span data-stu-id="de72d-110">range</span></span>|[<span data-ttu-id="de72d-111">RecurrenceRange</span><span class="sxs-lookup"><span data-stu-id="de72d-111">RecurrenceRange</span></span>](recurrencerange.md)|<span data-ttu-id="de72d-112">イベントの期間。</span><span class="sxs-lookup"><span data-stu-id="de72d-112">The duration of an event.</span></span>|
+|<span data-ttu-id="a6f44-107">pattern</span><span class="sxs-lookup"><span data-stu-id="a6f44-107">pattern</span></span>|[<span data-ttu-id="a6f44-108">RecurrencePattern</span><span class="sxs-lookup"><span data-stu-id="a6f44-108">RecurrencePattern</span></span>](recurrencepattern.md)|<span data-ttu-id="a6f44-109">イベントの頻度。</span><span class="sxs-lookup"><span data-stu-id="a6f44-109">The frequency of an event.</span></span>|
+|<span data-ttu-id="a6f44-110">range</span><span class="sxs-lookup"><span data-stu-id="a6f44-110">range</span></span>|[<span data-ttu-id="a6f44-111">RecurrenceRange</span><span class="sxs-lookup"><span data-stu-id="a6f44-111">RecurrenceRange</span></span>](recurrencerange.md)|<span data-ttu-id="a6f44-112">イベントの期間。</span><span class="sxs-lookup"><span data-stu-id="a6f44-112">The duration of an event.</span></span>|
 
-## <a name="json-representation"></a><span data-ttu-id="de72d-113">JSON 表記</span><span class="sxs-lookup"><span data-stu-id="de72d-113">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="a6f44-113">JSON 表記</span><span class="sxs-lookup"><span data-stu-id="a6f44-113">JSON representation</span></span>
 
-<span data-ttu-id="de72d-114">以下は、リソースの JSON 表記です</span><span class="sxs-lookup"><span data-stu-id="de72d-114">Here is a JSON representation of the resource</span></span>
+<span data-ttu-id="a6f44-114">以下は、リソースの JSON 表記です</span><span class="sxs-lookup"><span data-stu-id="a6f44-114">Here is a JSON representation of the resource</span></span>
 
 <!-- {
   "blockType": "resource",
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.patternedrecurrence"
+  "@odata.type": "microsoft.graph.patternedRecurrence"
 }-->
 
 ```json
