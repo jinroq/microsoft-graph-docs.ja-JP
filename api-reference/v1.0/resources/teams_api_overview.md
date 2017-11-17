@@ -1,0 +1,7 @@
+<span data-ttu-id="25a18-p101">Microsoft Teams は Office 365 のグループをもとに作成されます。[グループ API](group.md) を使用してチームで作業できます。ただし、次の例外があります。</span><span class="sxs-lookup"><span data-stu-id="25a18-p101">Microsoft Teams is built on Office 365 groups. You can use the [group APIs](group.md) with teams, with the following exception:</span></span>
+
+Microsoft Teams は Office 365 のグループをもとに作成されます。[グループ API](group.md) を使用してチームで作業できます。ただし、次の例外があります。 
+
+- <span data-ttu-id="25a18-104">現在、[グループの作成](../api/group_post_groups.md)を使用してチームを作成することはできません。</span><span class="sxs-lookup"><span data-stu-id="25a18-104">Currently, you can't use [Create group](../api/group_post_groups.md) to create a team.</span></span>  
+
+><span data-ttu-id="25a18-105">**注:**(たとえば、Microsoft Teams で実行されるタブまたはボットの一部として) スタンドアロン アプリではなく [Microsoft Teams アプリ](https://msdn.microsoft.com/en-us/microsoft-teams)のグループ API を使用する場合、記事「[Microsoft Teams ページで Microsoft Graph を使用する](https://msdn.microsoft.com/en-us/microsoft-teams/graph)」のガイダンスに従ってください。</span><span class="sxs-lookup"><span data-stu-id="25a18-105">**Note:** If you use the group APIs in a [Microsoft Teams app](https://msdn.microsoft.com/en-us/microsoft-teams), rather than in a standalone app - for example as part of a tab or bot running in Microsoft Teams - follow the guidance in the article [Using Microsoft Graph in your Microsoft Teams pages](https://msdn.microsoft.com/en-us/microsoft-teams/graph).</span></span>

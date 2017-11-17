@@ -1,0 +1,13 @@
+<span data-ttu-id="8afaa-p114">**[メールの送信]** ボタンを選びます。メールが送信されると、ボタンの下に成功メッセージが表示されます。このメール メッセージには添付ファイルとして写真が含まれており、OneDrive にアップロードされたファイルへの共有リンクも提示されます。</span><span class="sxs-lookup"><span data-stu-id="8afaa-p114">Choose the **Send email** button. When the mail is sent, a Success message is displayed below the button. the mail message includes the photo as an attachment and also provides a sharing link to the uploaded file in OneDrive.</span></span>
+
+3. **[メールの送信]** ボタンを選びます。メールが送信されると、ボタンの下に成功メッセージが表示されます。このメール メッセージには添付ファイルとして写真が含まれており、OneDrive にアップロードされたファイルへの共有リンクも提示されます。
+
+## <a name="next-steps"></a><span data-ttu-id="8afaa-171">次の手順</span><span class="sxs-lookup"><span data-stu-id="8afaa-171">Next steps</span></span>
+- <span data-ttu-id="8afaa-172">[Graph エクスプローラー](https://developer.microsoft.com/en-us/graph/graph-explorer)を使用して REST API を試してみます。</span><span class="sxs-lookup"><span data-stu-id="8afaa-172">Try out the REST API using the [Graph explorer](https://developer.microsoft.com/en-us/graph/graph-explorer).</span></span>
+- <span data-ttu-id="8afaa-173">[Microsoft Graph UWP スニペット サンプル (SDK)](https://github.com/microsoftgraph/uwp-csharp-snippets-sample) と [Microsoft Graph UWP スニペット サンプル (REST)](https://github.com/microsoftgraph/uwp-csharp-snippets-rest-sample) での REST と SDK の両方の操作に共通する操作の例を検索するか、GitHub で他の [UWP サンプル](https://github.com/microsoftgraph?utf8=%E2%9C%93&query=uwp)を探索します。</span><span class="sxs-lookup"><span data-stu-id="8afaa-173">Find examples of common operations for both REST and SDK operations in the [Microsoft Graph UWP Snippets Sample (SDK)](https://github.com/microsoftgraph/uwp-csharp-snippets-sample) and the [Microsoft Graph UWP Snippets Sample (REST)](https://github.com/microsoftgraph/uwp-csharp-snippets-rest-sample), or explore our other [UWP samples](https://github.com/microsoftgraph?utf8=%E2%9C%93&query=uwp) on GitHub.</span></span>
+
+## <a name="see-also"></a><span data-ttu-id="8afaa-174">関連項目</span><span class="sxs-lookup"><span data-stu-id="8afaa-174">See also</span></span>
+- [<span data-ttu-id="8afaa-175">Microsoft Graph .NET クライアント ライブラリ</span><span class="sxs-lookup"><span data-stu-id="8afaa-175">Microsoft Graph .NET Client Library</span></span>](https://github.com/microsoftgraph/msgraph-sdk-dotnet)
+- [<span data-ttu-id="8afaa-176">Azure AD v2.0 のプロトコル</span><span class="sxs-lookup"><span data-stu-id="8afaa-176">Azure AD v2.0 protocols</span></span>](https://azure.microsoft.com/en-us/documentation/articles/active-directory-v2-protocols/)
+- [<span data-ttu-id="8afaa-177">Azure AD v2.0 のトークン</span><span class="sxs-lookup"><span data-stu-id="8afaa-177">Azure AD v2.0 tokens</span></span>](https://azure.microsoft.com/en-us/documentation/articles/active-directory-v2-tokens/)
+

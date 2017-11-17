@@ -1,0 +1,3 @@
+<span data-ttu-id="42388-p108">お客様からのフィードバックを重視しています。[スタック オーバーフロー](https://stackoverflow.com/questions/tagged/microsoftgraph?sort=newest)でご連絡いただけます。ご質問には {MicrosoftGraph} のタグを付けてください。</span><span class="sxs-lookup"><span data-stu-id="42388-p108">Your feedback is important to us. Connect with us on [Stack Overflow](https://stackoverflow.com/questions/tagged/microsoftgraph?sort=newest). Tag your questions with {MicrosoftGraph} and {office365}.</span></span> 
+
+お客様からのフィードバックを重視しています。[スタック オーバーフロー](https://stackoverflow.com/questions/tagged/microsoftgraph?sort=newest)でご連絡いただけます。ご質問には {MicrosoftGraph} のタグを付けてください。

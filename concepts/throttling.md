@@ -1,0 +1,4 @@
+<span data-ttu-id="5ff1c-p105">要求が再度エラーコード 429 で失敗した場合は、依然として調整を受けています。Retry-After で推奨された遅延に引き続き従い、成功するまで再試行してください。</span><span class="sxs-lookup"><span data-stu-id="5ff1c-p105">If the request fails again with a 429 error code, you are still being throttled. Continue to use the recommended Retry-After delay and retry the request until it succeeds.</span></span>
+3. 要求が再度エラーコード 429 で失敗した場合は、依然として調整を受けています。Retry-After で推奨された遅延に引き続き従い、成功するまで再試行してください。
+
+<span data-ttu-id="5ff1c-131">Microsoft Cloud における調整についてのより幅広い議論については「[調整パターン](https://msdn.microsoft.com/en-us/library/office/dn589798.aspx)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="5ff1c-131">For a broader discussion of throttling on the Microsoft Cloud, see [Throttling Pattern](https://msdn.microsoft.com/en-us/library/office/dn589798.aspx).</span></span>

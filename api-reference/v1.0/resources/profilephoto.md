@@ -1,0 +1,53 @@
+# <a name="profilephoto-resource-type"></a><span data-ttu-id="1464d-101">profilePhoto リソースの種類</span><span class="sxs-lookup"><span data-stu-id="1464d-101">profilePhoto resource type</span></span>
+<span data-ttu-id="1464d-p101">Exchange Online からアクセスされるユーザー、グループ、または Outlook の連絡先のプロフィール写真。base 64 でエンコードされていないバイナリ データです。</span><span class="sxs-lookup"><span data-stu-id="1464d-p101">A profile photo of a user, group or an Outlook contact accessed from Exchange Online. It's binary data not encoded in base-64.</span></span>
+
+<span data-ttu-id="1464d-104">Exchange Online 上でサポートされている HD Photo のサイズは次のとおりです。'48x48'、'64x64'、'96x96'、'120x120'、'240x240'、'360x360'、'432x432'、'504x504'、'648x648'。</span><span class="sxs-lookup"><span data-stu-id="1464d-104">The supported sizes of HD photos on Exchange Online are as follows: '48x48', '64x64', '96x96', '120x120', '240x240', '360x360','432x432', '504x504', and '648x648'.</span></span> 
+
+## <a name="methods"></a><span data-ttu-id="1464d-105">メソッド</span><span class="sxs-lookup"><span data-stu-id="1464d-105">Methods</span></span>
+
+| <span data-ttu-id="1464d-106">メソッド</span><span class="sxs-lookup"><span data-stu-id="1464d-106">Method</span></span>       | <span data-ttu-id="1464d-107">戻り値の型</span><span class="sxs-lookup"><span data-stu-id="1464d-107">Return Type</span></span>  |<span data-ttu-id="1464d-108">説明</span><span class="sxs-lookup"><span data-stu-id="1464d-108">Description</span></span>|
+|:---------------|:--------|:----------|
+|[<span data-ttu-id="1464d-109">ProfilePhoto を取得する</span><span class="sxs-lookup"><span data-stu-id="1464d-109">Get profilePhoto</span></span>](../api/profilephoto_get.md) | [<span data-ttu-id="1464d-110">profilePhoto</span><span class="sxs-lookup"><span data-stu-id="1464d-110">profilePhoto</span></span>](profilephoto.md) |<span data-ttu-id="1464d-111">指定した **profilePhoto** またはそのメタデータ (profilePhoto プロパティ) を取得します。</span><span class="sxs-lookup"><span data-stu-id="1464d-111">Get the specified **profilePhoto** or its metadata (profilePhoto properties).</span></span>|
+|[<span data-ttu-id="1464d-112">Update</span><span class="sxs-lookup"><span data-stu-id="1464d-112">Update</span></span>](../api/profilephoto_update.md) | [<span data-ttu-id="1464d-113">profilePhoto</span><span class="sxs-lookup"><span data-stu-id="1464d-113">profilePhoto</span></span>](profilephoto.md)  |<span data-ttu-id="1464d-p102">指定されたユーザー、グループ、または連絡先に写真を割り当てます。写真はバイナリ形式にする必要があります。既存の写真が置き換えられます (存在する場合)。</span><span class="sxs-lookup"><span data-stu-id="1464d-p102">Assign a photo to the specified user, group, or contact. The photo should be in binary. It replaces the existing photo, if any.</span></span>|
+
+## <a name="properties"></a><span data-ttu-id="1464d-117">プロパティ</span><span class="sxs-lookup"><span data-stu-id="1464d-117">Properties</span></span>
+| <span data-ttu-id="1464d-118">プロパティ</span><span class="sxs-lookup"><span data-stu-id="1464d-118">Property</span></span>     | <span data-ttu-id="1464d-119">型</span><span class="sxs-lookup"><span data-stu-id="1464d-119">Type</span></span>   |<span data-ttu-id="1464d-120">説明</span><span class="sxs-lookup"><span data-stu-id="1464d-120">Description</span></span>|
+|:---------------|:--------|:----------|
+|<span data-ttu-id="1464d-121">id</span><span class="sxs-lookup"><span data-stu-id="1464d-121">id</span></span>|<span data-ttu-id="1464d-122">string</span><span class="sxs-lookup"><span data-stu-id="1464d-122">string</span></span>|<span data-ttu-id="1464d-123">読み取り専用です。</span><span class="sxs-lookup"><span data-stu-id="1464d-123">Read-only.</span></span>|
+|<span data-ttu-id="1464d-124">height</span><span class="sxs-lookup"><span data-stu-id="1464d-124">height</span></span>|<span data-ttu-id="1464d-125">int32</span><span class="sxs-lookup"><span data-stu-id="1464d-125">int32</span></span>|<span data-ttu-id="1464d-p103">写真の高さ。読み取り専用です。</span><span class="sxs-lookup"><span data-stu-id="1464d-p103">The height of the photo. Read-only.</span></span>|
+|<span data-ttu-id="1464d-128">width</span><span class="sxs-lookup"><span data-stu-id="1464d-128">width</span></span>|<span data-ttu-id="1464d-129">int32</span><span class="sxs-lookup"><span data-stu-id="1464d-129">int32</span></span>|<span data-ttu-id="1464d-p104">写真の幅。読み取り専用です。</span><span class="sxs-lookup"><span data-stu-id="1464d-p104">The width of the photo. Read-only.</span></span>|
+
+## <a name="relationships"></a><span data-ttu-id="1464d-132">リレーションシップ</span><span class="sxs-lookup"><span data-stu-id="1464d-132">Relationships</span></span>
+<span data-ttu-id="1464d-133">なし</span><span class="sxs-lookup"><span data-stu-id="1464d-133">None</span></span>
+
+
+## <a name="json-representation"></a><span data-ttu-id="1464d-134">JSON 表記</span><span class="sxs-lookup"><span data-stu-id="1464d-134">JSON representation</span></span>
+
+<span data-ttu-id="1464d-135">以下は、リソースの JSON 表記です。</span><span class="sxs-lookup"><span data-stu-id="1464d-135">Here is a JSON representation of the resource.</span></span>
+
+<!-- {
+  "blockType": "resource",
+  "optionalProperties": [
+
+  ],
+  "keyProperty": "id",
+  "@odata.type": "microsoft.graph.profilePhoto"
+}-->
+
+```json
+{
+  "id": "240X240",
+  "height": 240,
+  "width": 240
+}
+
+```
+<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
+2015-10-25 14:57:30 UTC -->
+<!-- {
+  "type": "#page.annotation",
+  "description": "profilePhoto resource",
+  "keywords": "",
+  "section": "documentation",
+  "tocPath": ""
+}-->

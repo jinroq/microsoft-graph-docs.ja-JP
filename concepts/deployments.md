@@ -1,0 +1,72 @@
+# <a name="national-cloud-deployments"></a><span data-ttu-id="d7d96-101">国内クラウドの展開</span><span class="sxs-lookup"><span data-stu-id="d7d96-101">National cloud deployments</span></span>
+
+
+<span data-ttu-id="d7d96-p101">Microsoft クラウド サービスは、3 つの独立した国内クラウドで利用できます。これらの国内クラウド バージョンは、Microsoft エンタープライズ クラウド サービスの物理的および論理的ネットワークの独立したインスタンスで、特定の国の地理的な境界内に限定され、ローカル スタッフによって運営されます。詳細については、「[Microsoft の国内クラウド](https://www.microsoft.com/en-us/TrustCenter/CloudServices/NationalCloud)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="d7d96-p101">Microsoft cloud services are available in three separate national clouds. These national cloud versions are physical and logical network-isolated instances of Microsoft enterprise cloud services, which are confined within the geographic borders of specific countries and operated by local personnel. To learn more, see [Microsoft National Clouds](https://www.microsoft.com/en-us/TrustCenter/CloudServices/NationalCloud).</span></span>
+
+<span data-ttu-id="d7d96-105">現在の国内クラウドは、次のとおりです。</span><span class="sxs-lookup"><span data-stu-id="d7d96-105">Current national clouds include:</span></span>
+
+- <span data-ttu-id="d7d96-106">Microsoft Cloud for US Government</span><span class="sxs-lookup"><span data-stu-id="d7d96-106">Microsoft Cloud for US Government</span></span>
+- <span data-ttu-id="d7d96-107">Microsoft Cloud Germany</span><span class="sxs-lookup"><span data-stu-id="d7d96-107">Microsoft Cloud Germany</span></span>
+- <span data-ttu-id="d7d96-108">21Vianet が中国で運用している Azure と Office 365</span><span class="sxs-lookup"><span data-stu-id="d7d96-108">Submit apps for Office 365 operated by 21Vianet in China</span></span>
+
+<span data-ttu-id="d7d96-109">この記事では、Microsoft Graph のさまざまな国内クラウドの展開と、各展開において開発者が利用できる機能について示します。</span><span class="sxs-lookup"><span data-stu-id="d7d96-109">This article provides information about the different sovereign cloud instances of Microsoft Graph and the capabilities that are available to developers.</span></span> 
+
+## <a name="microsoft-graph-and-microsoft-graph-explorer-service-root-endpoints"></a><span data-ttu-id="d7d96-110">Microsoft Graph と Microsoft Graph Explorer のサービス ルート エンドポイント</span><span class="sxs-lookup"><span data-stu-id="d7d96-110">Microsoft Graph and Microsoft Graph Explorer service root endpoints</span></span>
+
+<span data-ttu-id="d7d96-111">次の表に、各国内クラウドの Microsoft Graph と Microsoft Graph Explorer のサービス ルート エンドポイントを示します。</span><span class="sxs-lookup"><span data-stu-id="d7d96-111">The following table shows the service root endpoints for Microsoft Graph and Microsoft Graph Explorer for each National cloud.</span></span> 
+
+| <span data-ttu-id="d7d96-112">国内クラウド</span><span class="sxs-lookup"><span data-stu-id="d7d96-112">National Cloud</span></span> | <span data-ttu-id="d7d96-113">Microsoft Graph</span><span class="sxs-lookup"><span data-stu-id="d7d96-113">Microsoft Graph</span></span> | <span data-ttu-id="d7d96-114">Microsoft Graph Explorer</span><span class="sxs-lookup"><span data-stu-id="d7d96-114">Microsoft Graph Explorer</span></span>
+|---------------------------|----------------|----------------|
+| <span data-ttu-id="d7d96-115">21Vianet によって運営されている Microsoft Graph</span><span class="sxs-lookup"><span data-stu-id="d7d96-115">Microsoft Graph operated by 21Vianet</span></span> | <span data-ttu-id="d7d96-116">https://microsoftgraph.chinacloudapi.cn</span><span class="sxs-lookup"><span data-stu-id="d7d96-116">https://microsoftgraph.chinacloudapi.cn</span></span> | <span data-ttu-id="d7d96-117">https://developer.microsoft.com/zh-cn/graph/graph-explorer-china</span><span class="sxs-lookup"><span data-stu-id="d7d96-117">https://developer.microsoft.com/zh-cn/graph/graph-explorer-china</span></span> |
+| <span data-ttu-id="d7d96-118">Microsoft Graph Germany</span><span class="sxs-lookup"><span data-stu-id="d7d96-118">Microsoft Graph Germany</span></span> | <span data-ttu-id="d7d96-119">https://graph.microsoft.de</span><span class="sxs-lookup"><span data-stu-id="d7d96-119">https://graph.microsoft.de</span></span> | <span data-ttu-id="d7d96-120">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="d7d96-120">Not supported.</span></span> |
+| <span data-ttu-id="d7d96-121">Microsoft Graph for US Government</span><span class="sxs-lookup"><span data-stu-id="d7d96-121">Microsoft Graph for US Government</span></span> | <span data-ttu-id="d7d96-122">https://graph.microsoft.com</span><span class="sxs-lookup"><span data-stu-id="d7d96-122">https://graph.microsoft.com</span></span> | <span data-ttu-id="d7d96-123">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="d7d96-123">Not supported.</span></span> |
+| <span data-ttu-id="d7d96-124">Microsoft Graph グローバル サービス</span><span class="sxs-lookup"><span data-stu-id="d7d96-124">Microsoft Graph global service</span></span> | <span data-ttu-id="d7d96-125">https://graph.microsoft.com</span><span class="sxs-lookup"><span data-stu-id="d7d96-125">https://graph.microsoft.com</span></span> | <span data-ttu-id="d7d96-126">https://developer.microsoft.com/graph/graph-explorer</span><span class="sxs-lookup"><span data-stu-id="d7d96-126">https://developer.microsoft.com/graph/graph-explorer</span></span> |
+
+> <span data-ttu-id="d7d96-p102">**メモ**:アプリは組織のデータに対して、国内クラウド エンドポイント経由でのみアクセスできます。つまり、特定の国内クラウドに登録されたテナント内のデータにのみアクセスできます。Microsoft Graph を介して、個人の Microsoft アカウントに関連付けられているコンシューマー データにアクセスを試みるアプリの場合には、グローバル サービス (https://graph.microsoft.com) を使用する必要があります。国内クラウドの展開用に獲得したアクセス トークンを、グローバル サイト用に獲得したアクセス トークンと交換して使用することはできません。</span><span class="sxs-lookup"><span data-stu-id="d7d96-p102">**Note**: Apps can only access organizational data through the national cloud endpoints. This means that only data in tenants registered in the specific national cloud can be accessed. Apps that are trying to access consumer data associated with personal Microsoft accounts through Microsoft Graph should use the global service (https://graph.microsoft.com). Access tokens acquired for a national cloud deployment are not interchangeable with those acquired for the global service.</span></span>
+
+## <a name="azure-ad-openid-connect-and-oauth20-endpoints"></a><span data-ttu-id="d7d96-131">Azure AD の OpenID Connect と OAuth2.0 のエンドポイント</span><span class="sxs-lookup"><span data-stu-id="d7d96-131">Azure OpenID Connect and OAuth2.0</span></span>
+
+<span data-ttu-id="d7d96-132">次の表に、国内クラウドごとに Microsoft Graph を呼び出すためのトークンを獲得するときに使用される Azure Active Directory (Azure AD) エンドポイントのベース URL をまとめます。</span><span class="sxs-lookup"><span data-stu-id="d7d96-132">The following table lists the base URLs for the Azure Active Directory (Azure AD) endpoints used to acquire tokens to call Microsoft Graph for each national cloud.</span></span> 
+
+| <span data-ttu-id="d7d96-133">国内クラウド</span><span class="sxs-lookup"><span data-stu-id="d7d96-133">National Cloud</span></span> | <span data-ttu-id="d7d96-134">Azure AD ルート エンドポイント</span><span class="sxs-lookup"><span data-stu-id="d7d96-134">Azure AD endpoint</span></span> |
+|---------------------------|----------------|
+| <span data-ttu-id="d7d96-135">21Vianet によって運営されている Microsoft Graph</span><span class="sxs-lookup"><span data-stu-id="d7d96-135">Microsoft Graph operated by 21Vianet</span></span> |<span data-ttu-id="d7d96-136">https://login.chinacloudapi.cn</span><span class="sxs-lookup"><span data-stu-id="d7d96-136">https://login.chinacloudapi.cn</span></span> | 
+| <span data-ttu-id="d7d96-137">Microsoft Graph Germany</span><span class="sxs-lookup"><span data-stu-id="d7d96-137">Microsoft Graph Germany</span></span> | <span data-ttu-id="d7d96-138">https://login.microsoftonline.de</span><span class="sxs-lookup"><span data-stu-id="d7d96-138">https://login.microsoftonline.com</span></span> | 
+| <span data-ttu-id="d7d96-139">Microsoft Graph for US Government</span><span class="sxs-lookup"><span data-stu-id="d7d96-139">Microsoft Graph for US Government</span></span> | <span data-ttu-id="d7d96-140">https://login-us.microsoftonline.com</span><span class="sxs-lookup"><span data-stu-id="d7d96-140">https://login-us.microsoftonline.com</span></span> | 
+| <span data-ttu-id="d7d96-141">Microsoft Graph (グローバル サービス)</span><span class="sxs-lookup"><span data-stu-id="d7d96-141">Microsoft Graph (global service)</span></span> | <span data-ttu-id="d7d96-142">https://login.microsoftonline.com</span><span class="sxs-lookup"><span data-stu-id="d7d96-142">https://login.microsoftonline.com</span></span> | 
+
+<span data-ttu-id="d7d96-p103">Azure AD 認証またはトークン エンドポイントへの要求は、該当する地域特有のベース URL を使用して構成できます。たとえば、ドイツの場合:</span><span class="sxs-lookup"><span data-stu-id="d7d96-p103">Requests to the Azure AD authorization or token endpoints can be formed using the appropriate region-specific base URL. For example, for Germany:</span></span>
+
+- <span data-ttu-id="d7d96-145">認証の共通エンドポイント: https://login.microsoftonline.de/common/oauth2/authorize</span><span class="sxs-lookup"><span data-stu-id="d7d96-145">The authorization common endpoint is https://login.microsoftonline.de/common/oauth2/authorize.</span></span>
+- <span data-ttu-id="d7d96-146">トークンの共通エンドポイント: https://login.microsoftonline.de/common/oauth2/token</span><span class="sxs-lookup"><span data-stu-id="d7d96-146">The token common endpoint is https://login.microsoftonline.de/common/oauth2/token.</span></span>
+
+<span data-ttu-id="d7d96-p104">テナント特有のエンドポイントは、前述の URL の「common」の部分を、テナント ID またはテナントの検証済みドメインに置き換えて構成できます。共通エンドポイントまたはテナント特有のエンドポイントのどちらを使用するかは、アプリの要件と、トークンを取得するために使用している認証フローによって異なります。Azure AD のアクセス トークンと Microsoft Graph について詳しくは、「[認証トークンの取得](./auth_overview.md)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="d7d96-p104">Tenant-specific endpoints can be formed by replacing "common" in the URLs above with either the tenant ID or a verified domain for the tenant. Whether you use the common or tenant-specific endpoints will depend upon the requirements of your app and the authentication flow you are using to get tokens. To learn more about Azure AD access tokens and Microsoft Graph, see [Get auth tokens](./auth_overview.md).</span></span>
+
+> <span data-ttu-id="d7d96-150">**注:** [Azure AD v2.0 認証エンドポイントとトークン エンドポイント](https://azure.microsoft.com/en-us/documentation/articles/active-directory-appmodel-v2-overview/)はグローバル サービスでのみ使用できます。国内クラウド展開での使用はまだサポートされていません。</span><span class="sxs-lookup"><span data-stu-id="d7d96-150">**Note:** The [Azure AD v2.0 authorization and token endpoints](https://azure.microsoft.com/en-us/documentation/articles/active-directory-appmodel-v2-overview/) are available on the global service only; they are not yet supported for use with national cloud deployments.</span></span> 
+
+## <a name="supported-features"></a><span data-ttu-id="d7d96-151">サポートされている機能</span><span class="sxs-lookup"><span data-stu-id="d7d96-151">Supported API features</span></span>
+
+<span data-ttu-id="d7d96-152">次の Microsoft Graph 機能が、注記されている場所を除くすべての国内クラウド展開で (`/v1.0` エンドポイント上で) 通常利用できます。</span><span class="sxs-lookup"><span data-stu-id="d7d96-152">The following Microsoft Graph features are generally available (on the `/v1.0` endpoint) across all national cloud deployments, except where noted:</span></span>
+
+* <span data-ttu-id="d7d96-153">ユーザー</span><span class="sxs-lookup"><span data-stu-id="d7d96-153">Users</span></span>
+* <span data-ttu-id="d7d96-154">グループ</span><span class="sxs-lookup"><span data-stu-id="d7d96-154">Groups</span></span>
+* <span data-ttu-id="d7d96-155">Excel (中国で 21Vianet によって運営されている Microsoft Graph に限定してサポート)</span><span class="sxs-lookup"><span data-stu-id="d7d96-155">Excel (Support is limited on Microsoft Graph operated by 21Vianet in China.)</span></span>
+* <span data-ttu-id="d7d96-156">OneDrive (中国で 21Vianet によって運営されている Microsoft Graph に限定してサポート)</span><span class="sxs-lookup"><span data-stu-id="d7d96-156">OneDrive (Support is limited on Microsoft Graph operated by 21Vianet in China.)</span></span>
+* <span data-ttu-id="d7d96-157">Outlook メール</span><span class="sxs-lookup"><span data-stu-id="d7d96-157">Outlook mail</span></span>
+* <span data-ttu-id="d7d96-158">Outlook カレンダー</span><span class="sxs-lookup"><span data-stu-id="d7d96-158">Outlook Calendar</span></span>
+* <span data-ttu-id="d7d96-159">個人用連絡先</span><span class="sxs-lookup"><span data-stu-id="d7d96-159">Personal Contacts</span></span> 
+* <span data-ttu-id="d7d96-160">SharePointl (中国で 21Vianet によって運営されている Microsoft Graph に限定してサポート)</span><span class="sxs-lookup"><span data-stu-id="d7d96-160">SharePoint (Support is limited on Microsoft Graph operated by 21Vianet in China.)</span></span>
+* <span data-ttu-id="d7d96-161">デルタ クエリ (各国内クラウド展開のさまざまなリソースにおいてサポートが異なります)。</span><span class="sxs-lookup"><span data-stu-id="d7d96-161">Delta query (Support varies across different resources on each national cloud deployment.)</span></span>
+* <span data-ttu-id="d7d96-162">Webhook (各国内クラウド展開のさまざまなリソースにおいてサポートが異なります)。</span><span class="sxs-lookup"><span data-stu-id="d7d96-162">Webhooks (Support varies across different resources on each national cloud deployment.)</span></span>
+
+<span data-ttu-id="d7d96-163">次の Microsoft Graph 追加機能が、注記されている場所を除くすべての国内クラウド展開で通常、プレビュー段階として (`/beta` エンドポイント上で) 利用できます。</span><span class="sxs-lookup"><span data-stu-id="d7d96-163">The following addtional Microsoft Graph features are available in preview (on the `/beta` endpoint) across all national cloud deployments, except where noted:</span></span>
+
+* <span data-ttu-id="d7d96-164">組織の連絡先</span><span class="sxs-lookup"><span data-stu-id="d7d96-164">Organizational Contacts</span></span>
+* <span data-ttu-id="d7d96-165">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="d7d96-165">Applications</span></span>
+* <span data-ttu-id="d7d96-166">サービス プリンシパル</span><span class="sxs-lookup"><span data-stu-id="d7d96-166">Service Principals</span></span>
+
+<span data-ttu-id="d7d96-167">次の Microsoft Graph 機能に関しては、国内クラウド展開ではまだサポートされていません。</span><span class="sxs-lookup"><span data-stu-id="d7d96-167">The following Microsoft Graph features are not yet supported on national cloud deployments:</span></span>
+
+* <span data-ttu-id="d7d96-168">Microsoft Planner</span><span class="sxs-lookup"><span data-stu-id="d7d96-168">Microsoft Planner</span></span>
+* <span data-ttu-id="d7d96-169">ディレクトリ スキーマの拡張</span><span class="sxs-lookup"><span data-stu-id="d7d96-169">Directory schema extensions</span></span>
+* <span data-ttu-id="d7d96-170">オープン型の拡張機能</span><span class="sxs-lookup"><span data-stu-id="d7d96-170">Open type extensions</span></span>
