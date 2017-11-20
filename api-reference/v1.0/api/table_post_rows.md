@@ -1,37 +1,38 @@
-# <a name="create-tablerow"></a><span data-ttu-id="33ebc-101">TableRow を作成する</span><span class="sxs-lookup"><span data-stu-id="33ebc-101">Create TableRow</span></span>
+# <a name="create-tablerow"></a><span data-ttu-id="fccb3-101">TableRow を作成する</span><span class="sxs-lookup"><span data-stu-id="fccb3-101">Create TableRow</span></span>
 
-<span data-ttu-id="33ebc-102">この API を使用して、新しい TableRow を作成します。</span><span class="sxs-lookup"><span data-stu-id="33ebc-102">Use this API to create a new TableRow.</span></span>
-## <a name="permissions"></a><span data-ttu-id="33ebc-103">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="33ebc-103">Permissions</span></span>
-<span data-ttu-id="33ebc-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](../../../concepts/permissions_reference.md)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="33ebc-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).</span></span>
+<span data-ttu-id="fccb3-102">この API を使用して、新しい TableRow を作成します。</span><span class="sxs-lookup"><span data-stu-id="fccb3-102">Use this API to create a new TableRow.</span></span>
+## <a name="permissions"></a><span data-ttu-id="fccb3-103">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="fccb3-103">Permissions</span></span>
+<span data-ttu-id="fccb3-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](../../../concepts/permissions_reference.md)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="fccb3-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).</span></span>
 
-|<span data-ttu-id="33ebc-106">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="33ebc-106">Permission type</span></span>      | <span data-ttu-id="33ebc-107">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="33ebc-107">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="fccb3-106">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="fccb3-106">Permission type</span></span>      | <span data-ttu-id="fccb3-107">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="fccb3-107">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="33ebc-108">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="33ebc-108">Delegated (work or school account)</span></span> | <span data-ttu-id="33ebc-109">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="33ebc-109">Files.ReadWrite</span></span>    |
-|<span data-ttu-id="33ebc-110">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="33ebc-110">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="33ebc-111">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="33ebc-111">Not supported.</span></span>    |
-|<span data-ttu-id="33ebc-112">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="33ebc-112">Application</span></span> | <span data-ttu-id="33ebc-113">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="33ebc-113">Not supported.</span></span> |
+|<span data-ttu-id="fccb3-108">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="fccb3-108">Delegated (work or school account)</span></span> | <span data-ttu-id="fccb3-109">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="fccb3-109">Files.ReadWrite</span></span>    |
+|<span data-ttu-id="fccb3-110">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="fccb3-110">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="fccb3-111">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="fccb3-111">Not supported.</span></span>    |
+|<span data-ttu-id="fccb3-112">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="fccb3-112">Application</span></span> | <span data-ttu-id="fccb3-113">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="fccb3-113">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="33ebc-114">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="33ebc-114">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="fccb3-114">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="fccb3-114">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /workbook/tables/{id|name}/rows
 POST /workbook/worksheets/{id|name}/tables/{id|name}/rows
 
 ```
-## <a name="request-headers"></a><span data-ttu-id="33ebc-115">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="33ebc-115">Request headers</span></span>
-| <span data-ttu-id="33ebc-116">名前</span><span class="sxs-lookup"><span data-stu-id="33ebc-116">Name</span></span>       | <span data-ttu-id="33ebc-117">説明</span><span class="sxs-lookup"><span data-stu-id="33ebc-117">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="fccb3-115">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="fccb3-115">Request headers</span></span>
+| <span data-ttu-id="fccb3-116">名前</span><span class="sxs-lookup"><span data-stu-id="fccb3-116">Name</span></span>       | <span data-ttu-id="fccb3-117">説明</span><span class="sxs-lookup"><span data-stu-id="fccb3-117">Description</span></span>|
 |:---------------|:----------|
-| <span data-ttu-id="33ebc-118">Authorization</span><span class="sxs-lookup"><span data-stu-id="33ebc-118">Authorization</span></span>  | <span data-ttu-id="33ebc-p102">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="33ebc-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="fccb3-118">Authorization</span><span class="sxs-lookup"><span data-stu-id="fccb3-118">Authorization</span></span>  | <span data-ttu-id="fccb3-p102">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="fccb3-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="fccb3-121">Workbook-Session-Id</span><span class="sxs-lookup"><span data-stu-id="fccb3-121">Workbook-Session-Id</span></span>  | <span data-ttu-id="fccb3-p103">変更を保持するかどうかを決定するブック セッション ID。省略可能。</span><span class="sxs-lookup"><span data-stu-id="fccb3-p103">Workbook session Id that determines if changes are persisted or not. Optional.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="33ebc-121">要求本文</span><span class="sxs-lookup"><span data-stu-id="33ebc-121">Request body</span></span>
-<span data-ttu-id="33ebc-122">要求本文で、[TableRow](../resources/tablerow.md) オブジェクトの JSON 表記を指定します。</span><span class="sxs-lookup"><span data-stu-id="33ebc-122">In the request body, supply a JSON representation of [TableRow](../resources/tablerow.md) object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="fccb3-124">要求本文</span><span class="sxs-lookup"><span data-stu-id="fccb3-124">Request body</span></span>
+<span data-ttu-id="fccb3-125">要求本文で、[TableRow](../resources/tablerow.md) オブジェクトの JSON 表記を指定します。</span><span class="sxs-lookup"><span data-stu-id="fccb3-125">In the request body, supply a JSON representation of [TableRow](../resources/tablerow.md) object.</span></span>
 
-## <a name="response"></a><span data-ttu-id="33ebc-123">応答</span><span class="sxs-lookup"><span data-stu-id="33ebc-123">Response</span></span>
+## <a name="response"></a><span data-ttu-id="fccb3-126">応答</span><span class="sxs-lookup"><span data-stu-id="fccb3-126">Response</span></span>
 
-<span data-ttu-id="33ebc-124">成功した場合、このメソッドは `201 Created` 応答コードと、応答本文で [TableRow](../resources/tablerow.md) オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="33ebc-124">If successful, this method returns `201 Created` response code and [TableRow](../resources/tablerow.md) object in the response body.</span></span>
+<span data-ttu-id="fccb3-127">成功した場合、このメソッドは `201 Created` 応答コードと、応答本文で [TableRow](../resources/tablerow.md) オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="fccb3-127">If successful, this method returns `201 Created` response code and [TableRow](../resources/tablerow.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="33ebc-125">例</span><span class="sxs-lookup"><span data-stu-id="33ebc-125">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="33ebc-126">要求</span><span class="sxs-lookup"><span data-stu-id="33ebc-126">Request</span></span>
-<span data-ttu-id="33ebc-127">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="33ebc-127">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="fccb3-128">例</span><span class="sxs-lookup"><span data-stu-id="fccb3-128">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="fccb3-129">要求</span><span class="sxs-lookup"><span data-stu-id="fccb3-129">Request</span></span>
+<span data-ttu-id="fccb3-130">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="fccb3-130">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "create_tablerow_from_table"
@@ -46,9 +47,9 @@ Content-length: 45
   "values": "values-value"
 }
 ```
-<span data-ttu-id="33ebc-128">要求本文で、[TableRow](../resources/tablerow.md) オブジェクトの JSON 表記を指定します。</span><span class="sxs-lookup"><span data-stu-id="33ebc-128">In the request body, supply a JSON representation of [TableRow](../resources/tablerow.md) object.</span></span>
-##### <a name="response"></a><span data-ttu-id="33ebc-129">応答</span><span class="sxs-lookup"><span data-stu-id="33ebc-129">Response</span></span>
-<span data-ttu-id="33ebc-p103">以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。</span><span class="sxs-lookup"><span data-stu-id="33ebc-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+<span data-ttu-id="fccb3-131">要求本文で、[TableRow](../resources/tablerow.md) オブジェクトの JSON 表記を指定します。</span><span class="sxs-lookup"><span data-stu-id="fccb3-131">In the request body, supply a JSON representation of [TableRow](../resources/tablerow.md) object.</span></span>
+##### <a name="response"></a><span data-ttu-id="fccb3-132">応答</span><span class="sxs-lookup"><span data-stu-id="fccb3-132">Response</span></span>
+<span data-ttu-id="fccb3-p104">以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。</span><span class="sxs-lookup"><span data-stu-id="fccb3-p104">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
