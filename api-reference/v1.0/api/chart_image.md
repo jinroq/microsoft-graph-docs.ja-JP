@@ -20,11 +20,12 @@ GET /workbook/worksheets/{id|name}/charts(<name>)/Image(width=0,height=0,fitting
 | 名前       | 説明|
 |:---------------|:----------|
 | Authorization  | ベアラー {トークン}。必須。 |
+| Workbook-Session-Id  | 変更を保持するかどうかを決定するブック セッション ID。省略可能。|
 
 ## <a name="request-body"></a>要求本文
 要求本文で、次のパラメーターを含む JSON オブジェクトを指定します。
 
-| パラメーター    | 型   |説明|
+| パラメーター    | Type   |説明|
 |:---------------|:--------|:----------|
 |height|number|省略可能。結果の画像の希望する高さ。|
 |width|number|省略可能。結果の画像の希望する幅。|

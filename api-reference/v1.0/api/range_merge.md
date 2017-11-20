@@ -22,11 +22,12 @@ POST /workbook/tables/{id|name}/columns/{id|name}/range/merge
 | 名前       | 説明|
 |:---------------|:----------|
 | Authorization  | ベアラー {トークン}。必須。 |
+| Workbook-Session-Id  | 変更を保持するかどうかを決定するブック セッション ID。省略可能。|
 
 ## <a name="request-body"></a>要求本文
 要求本文で、次のパラメーターを含む JSON オブジェクトを指定します。
 
-| パラメーター    | 型   |説明|
+| パラメーター    | Type   |説明|
 |:---------------|:--------|:----------|
 |across|boolean|省略可能。指定した範囲のセルを行ごとに結合して、行ごとに別のセルを作成する場合は True に設定します。既定値は False です。|
 

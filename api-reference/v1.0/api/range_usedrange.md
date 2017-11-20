@@ -22,11 +22,12 @@ GET /workbook/tables/{id|name}/columns/{id|name}/range/UsedRange
 | 名前       | 説明|
 |:---------------|:----------|
 | Authorization  | ベアラー {トークン}。必須。 |
+| Workbook-Session-Id  | 変更を保持するかどうかを決定するブック セッション ID。省略可能。|
 
 ## <a name="request-body"></a>要求本文
 要求本文で、次のパラメーターを含む JSON オブジェクトを指定します。
 
-| パラメーター    | 型   |説明|
+| パラメーター    | Type   |説明|
 |:---------------|:--------|:----------|
 |valuesOnly|boolean|省略可能。値の入っているセルのみを使用セルと見なします。|
 

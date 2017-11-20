@@ -21,6 +21,7 @@ POST /workbook/worksheets/{id|name}/tables/{id|name}/columns
 | 名前       | 説明|
 |:---------------|:----------|
 | Authorization  | ベアラー {トークン}。必須。 |
+| Workbook-Session-Id  | 変更を保持するかどうかを決定するブック セッション ID。省略可能。|
 
 ## <a name="request-body"></a>要求本文
 要求本文で、[TableColumn](../resources/tablecolumn.md) オブジェクトの JSON 表記を指定します。
