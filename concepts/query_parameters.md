@@ -4,18 +4,20 @@ Microsoft Graph にはオプションのクエリ パラメーターがあり、
 
 >**注:**例をクリックして [Graph エクスプローラー][graph-explorer]で試行します。
 
-|名前|説明|例|
-|:---------------|:--------|:-------|
-|[$count](#count)|一致するリソースの総数を取得します。|[`/me/messages?$top=2&$count=true`](https://developer.microsoft.com/graph/graph-explorer?request=me/messages?$top=2%26$count=true&method=GET&version=v1.0)|
-|[$expand](#expand)|関連リソースを取得します。|[`/groups?$expand=members`](https://developer.microsoft.com/graph/graph-explorer?request=groups$expand=members&method=GET&version=v1.0)|
-|[$filter](#filter)|結果 (行) をフィルターします。|[`/users?$filter=startswith(givenName,'J')`](https://developer.microsoft.com/graph/graph-explorer?request=users?$filter=startswith(givenName,'J')&method=GET&version=v1.0)|
-|[$format](#format)|指定したメディア形式で結果を返します。|[`/users?$format=json`](https://developer.microsoft.com/graph/graph-explorer?request=users?$format=json&method=GET&version=v1.0)|
-|[$orderby](#orderby)|結果を並べます。|[`/users?$orderby=displayName desc`](https://developer.microsoft.com/graph/graph-explorer?request=users?$orderby=displayName%20DESC&method=GET&version=v1.0)|
-|[$search](#search)| 検索条件に基づいて結果を返します。現在、`messages` と `person` のコレクションでサポートされています。|[`/me/messages?$search=pizza`](https://developer.microsoft.com/graph/graph-explorer?request=me/messages?$search=pizza&method=GET&version=v1.0)|
-|[$select](#select)|プロパティ (列) をフィルターします。|[`/users?$select=givenName,surname`](https://developer.microsoft.com/graph/graph-explorer?request=users?$select=givenName,surname&method=GET&version=v1.0)|
-|[$skip](#skip)|結果セットにインデックスを作成します。また一部の API でページングを実装するために使用されており、`$top` と組み合わせて結果を手動でページングすることもできます。  | [`/me/messages?$skip=11`](https://developer.microsoft.com/graph/graph-explorer?request=me/messages?$skip=11&method=GET&version=v1.0)|
-|[$skipToken](#skiptoken)|複数ページにわたる結果セットから、結果の次のページを取得します。(一部の API では代わりに `$skip` を使用します。) | `https://graph.microsoft.com/v1.0/users?$skiptoken=X%274453707402000100000017 ... 65612D643839392D343230372D613033662D306332623836633432363932B900000000000000000000%27`|
-|[$top](#top)|結果のページ サイズを設定します。 |[`/users?$top=2`](https://developer.microsoft.com/graph/graph-explorer?request=users?$top=2&method=GET&version=v1.0)|
+| 名前                     | 説明 | 例
+|:-------------------------|:------------|:---------|
+| [$count](#count)         | 一致するリソースの総数を取得します。 | [`/me/messages?$top=2&$count=true`][count-example]
+| [$expand](#expand)       | 関連リソースを取得します。|[`/groups?$expand=members`][expand-example]
+| [$filter](#filter)       | 結果 (行) をフィルターします。|[`/users?$filter=startswith(givenName,'J')`][filter-example]
+| [$format](#format)       | 指定したメディア形式で結果を返します。|[`/users?$format=json`][format-example]
+| [$orderby](#orderby)     | 結果を並べます。|[`/users?$orderby=displayName desc`][orderby-example]
+| [$search](#search)       | 検索条件に基づいて結果を返します。現在、`messages` と `person` のコレクションでサポートされています。|[`/me/messages?$search=pizza`][search-example]
+| [$select](#select)       | プロパティ (列) をフィルターします。|[`/users?$select=givenName,surname`][select-example]
+| [$skip](#skip)           | 結果セットにインデックスを作成します。また一部の API でページングを実装するために使用されており、`$top` と組み合わせて結果を手動でページングすることもできます。 | [`/me/messages?$skip=11`][skip-example]
+| [$skipToken](#skiptoken) | 複数ページにわたる結果セットから、結果の次のページを取得します。(一部の API では代わりに `$skip` を使用します。) | `/users?$skiptoken=X%274453707402000100000017...`|
+| [$top](#top)             | 結果のページ サイズを設定します。 |[`/users?$top=2`][top-example]
+
+
 
 これらのパラメーターは、[OData V4 クエリ言語][odata-query]と互換性があります。 すべての Microsoft Graph API で全部のパラメーターがサポートされているわけではなく、`v1.0` エンドポイントと `beta` エンドポイントの間でサポートが大幅に異なる場合があります。 
 
@@ -72,7 +74,7 @@ GET https://graph.microsoft.com/v1.0/me/drive/root?$expand=children
 GET https://graph.microsoft.com/v1.0/me/drive/root?$expand=children($select=id,name)
 ```
 
-[Graph エクスプローラーで試す](https://developer.microsoft.com/graph/graph-explorer?request=me/drive/root?$expand=children($select=id,name)&method=GET&version=v1.0)
+[Graph エクスプローラーで試す][expand-example]
 
 > **注:** すべてのリレーションシップとリソースで、`$expand` クエリ パラメーターがサポートされているわけではありません。たとえば、ユーザーの `directReports`、`manager`、`memberOf` の各リレーションシップを展開できますが、その `events`、`messages`、`photo` のリレーションシップは展開できません。すべてのリソースまたはリレーションシップで、`$select` を使用して展開されたアイテムがサポートされているわけではありません。 
 > 
@@ -88,9 +90,9 @@ GET https://graph.microsoft.com/v1.0/me/drive/root?$expand=children($select=id,n
 GET https://graph.microsoft.com/v1.0/users?$filter=startswith(displayName,'J')
 ```
 
-[Graph エクスプローラーで試す](https://developer.microsoft.com/graph/graph-explorer?request=users?$filter=startswith(givenName,'J')&method=GET&version=v1.0)
+[Graph エクスプローラーで試す][filter-example]
 
-`$filter` 演算子へのサポートは、お使いの Microsoft Graph API によって異なります。 通常、次の論理演算子がサポートされています。 
+`$filter` 演算子のサポートは、お使いの Microsoft Graph API によって異なります。 通常、次の論理演算子がサポートされています。 
 
 - 等しい (`eq`)
 - 等しくない (`ne`)
@@ -105,16 +107,16 @@ GET https://graph.microsoft.com/v1.0/users?$filter=startswith(displayName,'J')
 
 次の表では、`$filter` クエリ パラメーター使用例を示します。
 
->**注:**例をクリックして [Graph エクスプローラー][graph-explorer]で試行します。
+> **注:**例をクリックして [Graph エクスプローラー][graph-explorer]で試行します。
 
-|説明|例|
-|:--------|:-------|
-|  複数のプロパティ間で Mary という名前を持つユーザーを検索します。 | [`https://graph.microsoft.com/v1.0/users?$filter=startswith(displayName,'mary') or startswith(givenName,'mary') or startswith(surname,'mary') or startswith(mail,'mary') or startswith(userPrincipalName,'mary')`](https://developer.microsoft.com/graph/graph-explorer?request=users?$filter=startswith(displayName,'mary')+or+startswith(givenName,'mary')+or+startswith(surname,'mary')+or+startswith(mail,'mary')+or+startswith(userPrincipalName,'mary')&method=GET&version=v1.0) |
-| 2017 年 7 月 1 日以降に開始する、サインイン ユーザーのイベントすべてを取得します。 | [`https://graph.microsoft.com/v1.0/me/events?$filter=start/dateTime ge '2017-07-01T08:00'`](https://developer.microsoft.com/graph/graph-explorer?request=me/events?$filter=start/dateTime+ge+'2017-07-01T08:00'&method=GET&version=v1.0) |
-| サインイン ユーザーが受信した特定のアドレスからの電子メールすべてを取得します。 | [`https://graph.microsoft.com/v1.0/me/messages?$filter=from/emailAddress/address eq 'someuser@example.com'`](https://developer.microsoft.com/graph/graph-explorer?request=me/messages?$filter=from/emailAddress/address+eq+'someuser@.com'&method=GET&version=v1.0) |
-| 2017 年 4 月にサインイン ユーザーが受信した電子メールすべてを取得します。 | [`https://graph.microsoft.com/v1.0/me/mailFolders/inbox/messages?$filter=ReceivedDateTime ge 2017-04-01 and receivedDateTime lt 2017-05-01`](https://developer.microsoft.com/graph/graph-explorer?request=me/mailFolders/inbox/messages?$filter=ReceivedDateTime+ge+2017-04-01+and+receivedDateTime+lt+2017-05-01&method=GET&version=v1.0) |
-| サインイン ユーザーの受信トレイから未読メールをすべて取得します。 | [`https://graph.microsoft.com/v1.0/me/mailFolders/inbox/messages?$filter=isRead eq false`](https://developer.microsoft.com/graph/graph-explorer?request=me/mailFolders/inbox/messages?$filter=isRead+eq+false&method=GET&version=v1.0) |
-| 組織内のすべての Office 365 グループの一覧 | [`https://graph.microsoft.com/v1.0/groups?$filter=groupTypes/any(c:c+eq+'Unified')`](https://developer.microsoft.com/graph/graph-explorer?request=groups?$filter=groupTypes/any(c:c+eq+'Unified')&method=GET&version=v1.0) |
+| 説明 | 例
+|:------------|:--------|
+| 複数のプロパティ間で Mary という名前を持つユーザーを検索します。 | [`https://graph.microsoft.com/v1.0/users?$filter=startswith(displayName,'mary') or startswith(givenName,'mary') or startswith(surname,'mary') or startswith(mail,'mary') or startswith(userPrincipalName,'mary')`](https://developer.microsoft.com/graph/graph-explorer?request=users?$filter=startswith(displayName,'mary')+or+startswith(givenName,'mary')+or+startswith(surname,'mary')+or+startswith(mail,'mary')+or+startswith(userPrincipalName,'mary')&method=GET&version=v1.0) 
+| 2017 年 7 月 1 日以降に開始する、サインイン ユーザーのイベントすべてを取得します。 | [`https://graph.microsoft.com/v1.0/me/events?$filter=start/dateTime ge '2017-07-01T08:00'`](https://developer.microsoft.com/graph/graph-explorer?request=me/events?$filter=start/dateTime+ge+'2017-07-01T08:00'&method=GET&version=v1.0) 
+| サインイン ユーザーが受信した特定のアドレスからの電子メールすべてを取得します。 | [`https://graph.microsoft.com/v1.0/me/messages?$filter=from/emailAddress/address eq 'someuser@example.com'`](https://developer.microsoft.com/graph/graph-explorer?request=me/messages?$filter=from/emailAddress/address+eq+'someuser@.com'&method=GET&version=v1.0) 
+| 2017 年 4 月にサインイン ユーザーが受信した電子メールすべてを取得します。 | [`https://graph.microsoft.com/v1.0/me/mailFolders/inbox/messages?$filter=ReceivedDateTime ge 2017-04-01 and receivedDateTime lt 2017-05-01`](https://developer.microsoft.com/graph/graph-explorer?request=me/mailFolders/inbox/messages?$filter=ReceivedDateTime+ge+2017-04-01+and+receivedDateTime+lt+2017-05-01&method=GET&version=v1.0) 
+| サインイン ユーザーの受信トレイから未読メールをすべて取得します。 | [`https://graph.microsoft.com/v1.0/me/mailFolders/inbox/messages?$filter=isRead eq false`](https://developer.microsoft.com/graph/graph-explorer?request=me/mailFolders/inbox/messages?$filter=isRead+eq+false&method=GET&version=v1.0) 
+| 組織内のすべての Office 365 グループの一覧 | [`https://graph.microsoft.com/v1.0/groups?$filter=groupTypes/any(c:c+eq+'Unified')`](https://developer.microsoft.com/graph/graph-explorer?request=groups?$filter=groupTypes/any(c:c+eq+'Unified')&method=GET&version=v1.0) 
 
 > **注:** Azure AD リソースでは、次の `$filter` 演算子はサポートされていません: `ne`、`gt`、`ge`、`lt`、`le`、`not`。Microsoft Graph リソースでは現在、`contains` 文字列の演算子はサポートされていません。
 
@@ -128,7 +130,7 @@ GET https://graph.microsoft.com/v1.0/users?$filter=startswith(displayName,'J')
 GET https://graph.microsoft.com/v1.0/users?$format=json
 ```
 
-[Graph エクスプローラーで試す](https://developer.microsoft.com/graph/graph-explorer?request=users?$format=json&method=GET&version=v1.0)
+[Graph エクスプローラーで試す][format-example]
 
 > **注:**`$format` クエリ パラメーターは、さまざまな形式 (atom、xml、json など) をサポートしていますが、結果がすべての形式で返されるわけではありません。
 
@@ -141,7 +143,7 @@ GET https://graph.microsoft.com/v1.0/users?$format=json
 ```http
 GET https://graph.microsoft.com/v1.0/users?$orderby=displayName
 ```
-[Graph エクスプローラーで試す](https://developer.microsoft.com/graph/graph-explorer?request=users?$orderby=displayName&method=GET&version=v1.0)
+[Graph エクスプローラーで試す][orderby-example]
 
 複合型のエンティティでも並べ替えが可能です。次の要求では、メッセージを取得し、それらを `emailAddress` という複合型である `from` プロパティの `address` フィールドで並べ替えます。
 
@@ -157,12 +159,13 @@ GET https://graph.microsoft.com/v1.0/me/messages?$orderby=from/emailAddress/addr
 ```http
 GET https://graph.microsoft.com/v1.0/me/mailFolders/Inbox/messages?$orderby=from/emailAddress/name desc,subject
 ```
+
 [Graph エクスプローラーで試す](https://developer.microsoft.com/graph/graph-explorer?request=me/messages?$orderby=from/emailAddress/name%20desc,subject&method=GET&version=v1.0)
 
 
  > **注:** [ユーザー](../api-reference/v1.0/resources/user.md)や[グループ](../api-reference/v1.0/resources/group.md)のような、[directoryObject](../api-reference/v1.0/resources/directoryobject.md) から派生した Azure AD リソースの場合、`$orderby` 式と `$filter` 式を結合することはできません。 
 
-## <a name="search"></a>検索
+## <a name="search"></a>検索 
 
 `$search` クエリ パラメーターを使用して、要求の結果を検索条件と一致するものに制限します。
 
@@ -196,6 +199,8 @@ GET https://graph.microsoft.com/v1.0/me/mailFolders/Inbox/messages?$orderby=from
 GET https://graph.microsoft.com/v1.0/me/messages?$search="pizza"
 ```
 
+[Graph エクスプローラーで試す][search-example]
+
 次の例は、ユーザーの受信トレイにあるメッセージのうち、特定のメール アドレスから送信されたメッセージをすべて検索します。
 
 ```http
@@ -227,6 +232,7 @@ GET https://graph.microsoft.com/v1.0/me/people/?$search="topic:pizza"
 ```http
 GET https://graph.microsoft.com/v1.0/me/people/?$search="tyl topic:pizza"                
 ```
+
 この要求は本質的には 2 つの検索を行います。サインイン ユーザーに関連する人物の `displayName` プロパティと `emailAddress` プロパティに対するあいまい検索、そしてユーザーに関連する人物に対する「ピザ」というトピックの検索です。 次いで結果をランク付けし、並べ替え、返します。 この検索は制限的ではありません。「tyl」とあいまい一致する人物、「ピザ」に関心を示す人物、または両方の結果を取得する可能性があります。
 
 People API についてもっと知るには、「[関係する人の情報を取得する](./people_example.md)」を参照してください。  
@@ -241,7 +247,7 @@ People API についてもっと知るには、「[関係する人の情報を�
 GET https://graph.microsoft.com/v1.0/me/messages?$select=from,subject
 ```
 
-[Graph エクスプローラーで試す](https://developer.microsoft.com/graph/graph-explorer?request=me/messages?$select=from,subject&method=GET&version=v1.0)
+[Graph エクスプローラーで試す][select-example]
 
 > **重要:**通常は、`$select` を使用して、クエリから返されるプロパティをお使いのアプリで必要なものだけに制限することをお勧めします。 これは特に、クエリが大きな結果セットを返す可能性がある場合に該当します。 行ごとに返されるプロパティを制限すれば、ネットワークの負荷を軽減し、アプリのパフォーマンスを向上させることができます。
 >
@@ -254,9 +260,9 @@ GET https://graph.microsoft.com/v1.0/me/messages?$select=from,subject
 ```http
 GET  https://graph.microsoft.com/v1.0/me/events?$orderby=createdDateTime&$skip=20
 ```
-[Graph エクスプローラーで試す](https://developer.microsoft.com/graph/graph-explorer?request=me/events?$orderby=createdDateTime&$skip=20&method=GET&version=v1.0)
+[Graph エクスプローラーで試す][skip-example]
 
-> **注:**Outlook メール/カレンダーなどいくつかの Microsoft Graph API (`message`、`event`、`calendar`) は、`$skip` を使用してページングを実装します。 クエリの結果が複数ページにまたがる場合、これらの API は `@odata:nextLink` プロパティと共に `$skip` パラメーターが含まれる URL を返します。 この URL を使用して、結果の次のページに戻れます。 詳細については、「[ページング](./paging.md)」を参照してください。
+> **注:** Outlook メール/カレンダーなどいくつかの Microsoft Graph API (`message`、`event`、`calendar`) は、`$skip` を使用してページングを実装します。 クエリの結果が複数ページにまたがる場合、これらの API は `@odata:nextLink` プロパティと共に `$skip` パラメーターが含まれる URL を返します。 この URL を使用して、結果の次のページに戻れます。 詳細については、「[ページング](./paging.md)」を参照してください。
 
 ## <a name="skiptoken"></a>skipToken
 
@@ -275,7 +281,7 @@ GET  https://graph.microsoft.com/v1.0/me/events?$orderby=createdDateTime&$skip=2
 GET https://graph.microsoft.com/v1.0/me/messages?$top=5
 ```
 
-[Graph エクスプローラーで試す](https://developer.microsoft.com/graph/graph-explorer?request=me/messages?$top=5&method=GET&version=v1.0)
+[Graph エクスプローラーで試す][top-example]
 
 
 ## <a name="error-handling-for-query-parameters"></a>クエリ パラメーターのエラー処理
@@ -304,3 +310,14 @@ https://graph.microsoft.com/beta/me?$expand=photo
 [graph-explorer]: https://developer.microsoft.com/graph/graph-explorer
 [odata-filter]: http://docs.oasis-open.org/odata/odata/v4.0/errata03/os/complete/part2-url-conventions/odata-v4.0-errata03-os-part2-url-conventions-complete.html#_Toc453752358
 [odata-query]: http://docs.oasis-open.org/odata/odata/v4.0/errata03/os/complete/part2-url-conventions/odata-v4.0-errata03-os-part2-url-conventions-complete.html#_Toc453752356
+[count-example]: https://developer.microsoft.com/graph/graph-explorer?request=me/messages?$top=2%26$count=true&method=GET&version=v1.0
+[expand-example]: https://developer.microsoft.com/graph/graph-explorer?request=groups$expand=members&method=GET&version=v1.0
+[filter-example]: https://developer.microsoft.com/graph/graph-explorer?request=users?$filter=startswith(givenName,'J')&method=GET&version=v1.0
+[format-example]: https://developer.microsoft.com/graph/graph-explorer?request=users?$format=json&method=GET&version=v1.0
+[orderby-example]: https://developer.microsoft.com/graph/graph-explorer?request=users?$orderby=displayName%20DESC&method=GET&version=v1.0
+[search-example]: https://developer.microsoft.com/graph/graph-explorer?request=me/messages?$search=pizza&method=GET&version=v1.0
+[select-example]: https://developer.microsoft.com/graph/graph-explorer?request=users?$select=givenName,surname&method=GET&version=v1.0
+[skip-example]: https://developer.microsoft.com/graph/graph-explorer?request=me/messages?$skip=11&method=GET&version=v1.0
+[top-example]: https://developer.microsoft.com/graph/graph-explorer?request=users?$top=2&method=GET&version=v1.0
+
+

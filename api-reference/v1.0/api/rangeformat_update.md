@@ -37,21 +37,31 @@ PATCH /workbook/tables/{id|name}/columns/{id|name}/range/format
 
 成功した場合、このメソッドは `200 OK` 応答コードと、応答本文で、更新された [RangeFormat](../resources/rangeformat.md) オブジェクトを返します。
 ## <a name="example"></a>例
+
+### <a name="update-the-format-fill-and-font-properties-in-three-table-cells"></a>表の 3 つのセルで書式設定、塗りつぶし、フォントのプロパティを更新する
+
+次の例は、指定された範囲の[RangeFormat](../resources/rangeformat.md)、[RangeFill](../resources/rangefill.md)、[RangeFont](../resources/rangefont.md) の各プロパティを更新する方法を示します。
+
+この一連の要求の結果は、以下の画像の一番上にある 3 つのセルのように書式設定された 3 つのセルを含む表です。
+
+![3 つのセルの書式設定、塗りつぶし、フォントのプロパティが更新された Excel のグラフ テーブル。](https://cdn.graph.office.net/prod/GraphDocuments/en-us/concepts/images/ExcelRangeFormatting.png)
+
 ##### <a name="request"></a>要求
-以下は、要求の例です。
+この要求は、最初のセルの垂直方向の配置、行の高さ、列の高さを更新します。 
+
 <!-- {
   "blockType": "request",
   "name": "update_rangeformat"
 }-->
 ```http
-PATCH https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/names(<name>)/range/format
+PATCH https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/Sheet1/range(address='$A$1')/format
 Content-type: application/json
-Content-length: 96
 
 {
-  "columnWidth": 99,
-  "horizontalAlignment": "horizontalAlignment-value",
-  "rowHeight": 99
+  "columnWidth": 135,
+  "verticalAlignment": "Top",
+  "rowHeight": 49,
+  "wrapText": false
 }
 ```
 ##### <a name="response"></a>応答
@@ -64,12 +74,296 @@ Content-length: 96
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 96
 
 {
-  "columnWidth": 99,
-  "horizontalAlignment": "horizontalAlignment-value",
-  "rowHeight": 99
+    "columnWidth": 135,
+    "horizontalAlignment": "General",
+    "rowHeight": 49,
+    "verticalAlignment": "Top",
+    "wrapText": false
+}
+```
+
+##### <a name="request"></a>要求
+この要求は、最初のセルのフォント スタイル、サイズ、色を更新します。 
+
+<!-- {
+  "blockType": "request",
+  "name": "update_rangeformat_font"
+}-->
+```http
+PATCH https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/Sheet1/range(address='$A$1')/format/font
+Content-type: application/json
+
+{
+  "bold": true,
+  "color": "#4B180E",
+  "size": 26
+}
+```
+##### <a name="response"></a>応答
+以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.rangeFont"
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+    "bold": true,
+    "color": "#4B180E",
+    "italic": false,
+    "name": "Calibri",
+    "size": 26,
+    "underline": "None"
+}
+```
+
+##### <a name="request"></a>要求
+この要求は、最初のセルの背景色を更新します。 
+
+<!-- {
+  "blockType": "request",
+  "name": "update_rangeformat_fill"
+}-->
+```http
+PATCH https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/Sheet1/range(address='$A$1')/format/fill
+Content-type: application/json
+
+{
+  "color": "#FF0000"
+}
+```
+##### <a name="response"></a>応答
+以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.rangeFill"
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+    "color": "#FF0000"
+}
+```
+##### <a name="request"></a>要求
+この要求は、2 番目のセルの垂直方向の配置、水平方向の配置、行の高さ、列の高さを更新します。 
+
+<!-- {
+  "blockType": "request",
+  "name": "update_rangeformat_two"
+}-->
+```http
+PATCH https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/Sheet1/range(address='$B$1')/format
+Content-type: application/json
+
+{
+  "columnWidth": 135,
+  "horizontalAlignment": "Center",
+  "verticalAlignment": "Center",
+  "rowHeight": 49,
+  "wrapText": false
+}
+```
+##### <a name="response"></a>応答
+以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.rangeFormat"
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+    "columnWidth": 135,
+    "horizontalAlignment": "Center",
+    "rowHeight": 49,
+    "verticalAlignment": "Center",
+    "wrapText": false
+}
+```
+
+##### <a name="request"></a>要求
+この要求は、2 番目のセルのフォント スタイルとサイズを更新します。 
+
+<!-- {
+  "blockType": "request",
+  "name": "update_rangeformat_font_two"
+}-->
+```http
+PATCH https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/Sheet1/range(address='$B$1')/format/font
+Content-type: application/json
+
+{
+  "italic": true,
+  "size": 26
+}
+```
+##### <a name="response"></a>応答
+以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.rangeFont"
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+    "bold": false,
+    "color": "#000000",
+    "italic": true,
+    "name": "Calibri",
+    "size": 26,
+    "underline": "None"
+}
+```
+
+##### <a name="request"></a>要求
+この要求は、2 番目のセルの背景色を更新します。 
+
+<!-- {
+  "blockType": "request",
+  "name": "update_rangeformat_fill_two"
+}-->
+```http
+PATCH https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/Sheet1/range(address='$B$1')/format/fill
+Content-type: application/json
+
+{
+  "color": "#00FF00"
+}
+```
+##### <a name="response"></a>応答
+以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.rangeFill"
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+    "color": "#00FF00"
+}
+```
+
+##### <a name="request"></a>要求
+この要求は、3 番目のセルの水平方向の配置、垂直方向の配置、行の高さ、列の高さを更新します。 
+
+<!-- {
+  "blockType": "request",
+  "name": "update_rangeformat_three"
+}-->
+```http
+PATCH https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/Sheet1/range(address='$C$1')/format
+Content-type: application/json
+
+{
+  "columnWidth": 135,
+  "horizontalAlignment": "Right",
+  "verticalAlignment": "Top",
+  "rowHeight": 49,
+  "wrapText": false
+}
+```
+##### <a name="response"></a>応答
+以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.rangeFormat"
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+    "columnWidth": 135,
+    "horizontalAlignment": "Right",
+    "rowHeight": 49,
+    "verticalAlignment": "Top",
+    "wrapText": false
+}
+```
+
+##### <a name="request"></a>要求
+この要求は、3 番目のセルのフォント スタイル、サイズ、色を更新します。 underline プロパティは値として **Single** または **Double** を取ることに注意してください。
+
+<!-- {
+  "blockType": "request",
+  "name": "update_rangeformat_font_three"
+}-->
+```http
+PATCH https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/Sheet1/range(address='$C$1')/format/font
+Content-type: application/json
+
+{
+  "underline": "Single",
+  "color": "#FFFFFF",
+  "size": 26
+}
+```
+##### <a name="response"></a>応答
+以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.rangeFont"
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+    "bold": false,
+    "color": "#FFFFFF",
+    "italic": false,
+    "name": "Calibri",
+    "size": 26,
+    "underline": "Single"
+}
+```
+
+##### <a name="request"></a>要求
+この要求は、3 番目のセルの背景色を更新します。 
+
+<!-- {
+  "blockType": "request",
+  "name": "update_rangeformat_fill_three"
+}-->
+```http
+PATCH https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/Sheet1/range(address='$C$1')/format/fill
+Content-type: application/json
+
+{
+  "color": "#0000FF"
+}
+```
+##### <a name="response"></a>応答
+以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.rangeFill"
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+    "color": "#0000FF"
 }
 ```
 
