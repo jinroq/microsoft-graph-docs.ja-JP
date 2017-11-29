@@ -20,7 +20,7 @@ workbook-session-id: {session-id}
 ## <a name="request-headers"></a>要求ヘッダー
 | 名前       | 説明|
 |:---------------|:----------|
-| Authorization  | ベアラー {トークン}。必須。 |
+| Authorization  | ベアラー {トークン}。必須。 | | Workbook-Session-Id  | 変更を保持するかどうかを決定するブック セッション ID。省略可能。|
 | workbook-session-id | 閉じるブック セッションの ID |
 
 ## <a name="request-body"></a>要求本文

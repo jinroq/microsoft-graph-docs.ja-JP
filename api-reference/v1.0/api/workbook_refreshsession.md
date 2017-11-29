@@ -21,7 +21,7 @@ workbook-session-id: {session-id}
 | 名前       | 説明|
 |:---------------|:----------|
 | Authorization  | ベアラー {トークン}。必須。 |
-| workbook-session-id | 更新される Workbook セッション ID |
+| workbook-session-id | 更新するブック セッションの ID |
 
 ## <a name="request-body"></a>要求本文
 この API は、要求本文を必要としません。
