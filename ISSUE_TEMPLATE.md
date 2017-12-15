@@ -1,12 +1,12 @@
-Microsoft Graph のドキュメントの改善にご協力いただき、ありがとうございます。
+<!---
+Thank you for helping us to improve the Microsoft Graph documentation.
 
-より良いサポートをご提供するために、以下の点にご留意ください。
-- 質問がある、ヘルプが必要、コードに問題が発生したなどの場合は、**Stack Overflow** で質問や問題を投稿してください。ご質問には "[microsoftgraph](http://stackoverflow.com/questions/tagged/microsoftgraph)" または "[Office 365](http://stackoverflow.com/questions/tagged/microsoftgraph)" のタグを付けてください。
-- 機能に関して提案があれば、[**User Voice**](https://officespdev.uservoice.com/) ページでアイデアを投稿してから、その提案に投票してください。
-- ドキュメントに関する問題があれば、ここで情報を提供するか、提案する変更内容とともにプル要求をご提出ください。お客様からの投稿を参考に、必要に応じて、ドキュメントが更新されます。
+So that we can better assist you, please note the following:
+- If you have a question, need help, or are experiencing an issue with your code, we encourage you to post your question or issue on **Stack Overflow**. Tag your question with [microsoftgraph](http://stackoverflow.com/questions/tagged/microsoftgraph) or [Office 365](http://stackoverflow.com/questions/tagged/microsoftgraph).
+- If you have a feature suggestion, please post your idea on our [**User Voice**](https://officespdev.uservoice.com/) page, and vote for your suggestions there.
+- If you have an issue with the documentation, please provide the information here, or feel free to submit a pull request with your suggested changes. We will review your contributions and update our documentation accordingly.
+-->
 
-------------
- 
-問題: 
+<span data-ttu-id="dfe53-101">問題:</span><span class="sxs-lookup"><span data-stu-id="dfe53-101">Issue:</span></span> 
 
-記事:
+<span data-ttu-id="dfe53-102">記事:</span><span class="sxs-lookup"><span data-stu-id="dfe53-102">Article:</span></span>
