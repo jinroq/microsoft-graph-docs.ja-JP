@@ -1,6 +1,6 @@
 # <a name="microsoft-graph-quick-start-faq"></a>Microsoft Graph のクイック スタートのよくあるご質問
 
-この FAQ は、[Microsoft Graph Quick Starts](https://developer.microsoft.com/en-us/graph/quick-start) に関連する質問に回答します。
+この FAQ は、[Microsoft Graph Quick Starts](https://developer.microsoft.com/ja-JP/graph/quick-start) に関連する質問に回答します。
 
 ## <a name="what-do-the-quick-starts-do"></a>クイック スタートでは何を行うでのすか。
 
@@ -11,8 +11,9 @@ Office 365 の REST API を使用する場合は、呼び出したいサービ�
 Microsoft Graph のクイック スタートでは、1 回の認証で 3 つのサービスにアクセスします。Microsoft アカウント、OneDrive、Outlook です。 各クイック スタートでは、Microsoft アカウントのユーザー プロファイル情報にアクセスし、データを OneDrive (写真) へ書き込み、Outlook を使用して電子メールを (その写真へのリンクを含めて) 生成します。 
 
 クイック スタートには、次の 4 つのステップがあります。
+
 - プラットフォームを選択する、 
-- アプリ ID (別名: クライアント ID) を取得する、
+- アプリ ID (クライアント ID) を取得する、
 - サンプルをビルドする、
 - サインインして電子メールでプロフィール写真を送信する、という 4 つのステップがあります。
 

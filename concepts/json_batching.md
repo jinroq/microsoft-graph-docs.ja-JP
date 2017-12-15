@@ -35,6 +35,17 @@ Content-Type: application/json
       "id": "3",
       "method": "GET",
       "url": "/groups/{id}/events"
+    },
+    {
+      "id": "4",
+      "url": "/me",
+      "method": "PATCH",
+      "body": {
+        "city" : "Redmond"
+      },
+      "headers": {
+        "Content-Type": "application/json"
+      }
     }
   ]
 }
@@ -74,6 +85,11 @@ Content-Type: application/json
         "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(microsoft.graph.plannerTask)",
         "value": []
       }
+    },
+    {
+      "id": "4",
+      "status": 204,
+      "body": null
     }
   ]
 }
@@ -89,7 +105,7 @@ JSON バッチ要求本文は必須のプロパティ `requests` をもつ単一
 
 `method` および `url` プロパティは、指定した任意の HTTP 要求の先頭と同一のものです。 メソッドは HTTP であり、URL は各要求が通常送信される宛先のリソースの URL です。
 
-個々の要求は、任意で、`headers` プロパティと `body` プロパティを含むこともできます。 これら両方のプロパティは、通常 JSON オブジェクトです。 一部の場合、`body` は JSON オブジェクトではなく、Base64 で URL エンコードされた値となることがあります。たとえば、本文が画像である場合などです。 要求に `body` が含まれている場合、`headers` オブジェクトには `content-type` の値が含まれている必要があります。
+個々の要求は、任意で、`headers` プロパティと `body` プロパティを含むこともできます。 これら両方のプロパティは、前の例のように、通常 JSON オブジェクトです。 場合によっては、`body` は JSON オブジェクトではなく、Base64 で URL エンコードされた値となることがあります。たとえば、本文が画像である場合などです。 要求に `body` が含まれている場合、`headers` オブジェクトには `Content-Type` の値が含まれている必要があります。
 
 ## <a name="response-format"></a>応答の形式
 
