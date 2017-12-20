@@ -1,6 +1,6 @@
 # <a name="create-event"></a>イベントを作成する
-
 この API を使用して、新しい[イベント](../resources/event.md)を作成します。
+
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](../../../concepts/permissions_reference.md)」を参照してください。
 
@@ -8,7 +8,7 @@
 |:--------------------|:---------------------------------------------------------|
 |委任 (職場または学校のアカウント) | Group.ReadWrite.All    |
 |委任 (個人用 Microsoft アカウント) | サポートされていません。    |
-|アプリケーション | Group.ReadWrite.All |
+|アプリケーション | サポートされていません。 |
 
 ## <a name="http-request"></a>HTTP 要求
 <!-- { "blockType": "ignored" } -->
@@ -16,6 +16,7 @@
 POST /groups/{id}/events
 POST /groups/{id}/calendar/events
 ```
+
 ## <a name="request-headers"></a>要求ヘッダー
 | ヘッダー       | 値 |
 |:---------------|:--------|
@@ -25,12 +26,11 @@ POST /groups/{id}/calendar/events
 要求本文で、[イベント](../resources/event.md) オブジェクトの JSON 表記を指定します。
 
 ## <a name="response"></a>応答
-
 成功した場合、このメソッドは `201 Created` 応答コードと、応答本文で[イベント](../resources/event.md) オブジェクトを返します。
 
 ## <a name="example"></a>例
-##### <a name="request"></a>要求
-以下は、要求の例です。
+#### <a name="request"></a>要求
+要求の例を次に示します。
 <!-- {
   "blockType": "request",
   "name": "create_event_from_group"
@@ -53,8 +53,11 @@ Content-length: 285
 }
 ```
 要求本文で、[イベント](../resources/event.md) オブジェクトの JSON 表記を指定します。
-##### <a name="response"></a>応答
-以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。
+
+#### <a name="response"></a>応答
+応答の例を次に示します。
+>**注:** ここに示す応答オブジェクトは、読みやすさのために短縮されている場合があります。 実際の呼び出しではすべてのプロパティが返されます。
+
 <!-- {
   "blockType": "response",
   "truncated": true,

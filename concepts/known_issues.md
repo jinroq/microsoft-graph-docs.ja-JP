@@ -47,13 +47,12 @@ Microsoft Graph では、グループと Microsoft Teams API にアクセスす�
 * グループの[ディレクトリ設定](../api-reference/v1.0/resources/directoryobject.md)、型、同期
 * グループの所有者とメンバーシップ
 
-
 委任されたアクセス許可だけをサポートするグループ機能の例:
 
 * グループの会話、イベント、写真
 * 外部の送信者、承認済みまたは拒否された送信者、グループのサブスクリプション
 * ユーザーのお気に入り、見えないカウント
-* Microsoft Teams チャンネルおよびチャット。
+* Microsoft Teams チャンネルおよびチャット
 
 ### <a name="teams-in-microsoft-teams-preview"></a>Microsoft Teams のチーム (プレビュー)
 
@@ -73,7 +72,7 @@ Microsoft Teams と Office 365 グループは、[同じような機能を共有
 
 ### <a name="adding-and-getting-attachments-of-group-posts"></a>グループの投稿の添付ファイルの追加と取得
 
-現在のところ、グループの投稿への添付ファイルの[追加](http://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/post_post_attachments)、グループの投稿の添付ファイルの[一覧表示](http://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/post_list_attachments)と取得を行うと、"OData 要求がサポートされていません" というエラー メッセージが返されます。`/v1.0` と `/beta` の両方のバージョンに対する修正プログラムが準備されており、2016 年 1 月の終わりまでには一般に利用可能になると予測されます。
+現在のところ、グループの投稿への添付ファイルの[追加](http://developer.microsoft.com/ja-JP/graph/docs/api-reference/v1.0/api/post_post_attachments)、グループの投稿の添付ファイルの[一覧表示](http://developer.microsoft.com/ja-JP/graph/docs/api-reference/v1.0/api/post_list_attachments)と取得を行うと、"OData 要求がサポートされていません" というエラー メッセージが返されます。`/v1.0` と `/beta` の両方のバージョンに対する修正プログラムが準備されており、2016 年 1 月の終わりまでには一般に利用可能になると予測されます。
 
 ### <a name="setting-the-allowexternalsenders-property"></a>allowExternalSenders プロパティの設定
 
@@ -91,8 +90,8 @@ Microsoft Teams と Office 365 グループは、[同じような機能を共有
 現在、インターネット予定表購読 (ICS) に基づく予定表の部分的なサポートがあります。
 
 * ユーザー インターフェイスを経由して ICS ベースの予定表をユーザーのメールボックスに追加できますが、Microsoft Graph API を経由してこれを行うことはできません。
-* [ユーザーの予定表の一覧表示](http://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/user_list_calendars)を行うと、ICS ベースの予定表を含む、ユーザーの既定の予定表のグループ、または指定した予定表のグループにある各[予定表](http://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/calendar)の**名前**、**色**、**ID** のプロパティを取得できます。予定表リソースの ICS URL を保存したり、アクセスしたりすることはできません。
-* また、ICS ベースの予定表の[イベントを一覧表示](http://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/calendar_list_events)することもできます。
+* [ユーザーの予定表の一覧表示](http://developer.microsoft.com/ja-JP/graph/docs/api-reference/v1.0/api/user_list_calendars)を行うと、ICS ベースの予定表を含む、ユーザーの既定の予定表のグループ、または指定した予定表のグループにある各[予定表](http://developer.microsoft.com/ja-JP/graph/docs/api-reference/v1.0/resources/calendar)の**名前**、**色**、**ID** のプロパティを取得できます。予定表リソースの ICS URL を保存したり、アクセスしたりすることはできません。
+* また、ICS ベースの予定表の[イベントを一覧表示](http://developer.microsoft.com/ja-JP/graph/docs/api-reference/v1.0/api/calendar_list_events)することもできます。
 
 ### <a name="accessing-a-shared-calendar"></a>共有された予定表にアクセスする
 
@@ -135,7 +134,7 @@ GET \me\calendars('{id}')\events
 
 `/v1.0` バージョンでは、`GET /me/contactFolders` にユーザーの既定の連絡先フォルダーは含まれません。 
 
-修正プログラムが用意される予定です。それまでは、回避策として次の[連絡先一覧表示](http://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/user_list_contacts)クエリと **parentFolderId** プロパティを使用して、既定の連絡先フォルダーのフォルダー ID を取得できます。
+修正プログラムが用意される予定です。それまでは、回避策として次の[連絡先一覧表示](http://developer.microsoft.com/ja-JP/graph/docs/api-reference/v1.0/api/user_list_contacts)クエリと **parentFolderId** プロパティを使用して、既定の連絡先フォルダーのフォルダー ID を取得できます。
 
 ```http
 GET https://graph.microsoft.com/v1.0/me/contacts?$top=1&$select=parentFolderId
@@ -143,7 +142,7 @@ GET https://graph.microsoft.com/v1.0/me/contacts?$top=1&$select=parentFolderId
 
 上記のクエリで、
 
-1. `/me/contacts?$top=1` は既定の連絡先フォルダーの[連絡先](http://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/contact)のプロパティを取得します。
+1. `/me/contacts?$top=1` は既定の連絡先フォルダーの[連絡先](http://developer.microsoft.com/ja-JP/graph/docs/api-reference/v1.0/resources/contact)のプロパティを取得します。
 2. `&$select=parentFolderId` を追加すると、連絡先の **parentFolderId** プロパティ (既定の連絡先フォルダーの ID) のみが返されます。
 
 
@@ -307,7 +306,7 @@ JSON バッチ処理が完成に近づくにつれて、これらの制限は削
 
 ## <a name="functionality-available-only-in-office-365-rest-or-azure-ad-graph-apis"></a>Office 365 REST と Azure AD Graph API でのみ使用可能な機能
 
-Microsoft Graph では一部の機能はまだ利用できません。探している機能が表示されない場合は、エンドポイント固有の [Office 365 REST API](https://msdn.microsoft.com/en-us/office/office365/api/api-catalog) を使用することができます。Azure Active Directory において、Azure AD と Graph API を介してのみ使用可能な機能については、[Microsoft Graph または Azure AD Graph](https://dev.office.com/blogs/microsoft-graph-or-azure-ad-graph) のブログの投稿を参照してください。
+Microsoft Graph では一部の機能はまだ利用できません。探している機能が表示されない場合は、エンドポイント固有の [Office 365 REST API](https://msdn.microsoft.com/ja-JP/office/office365/api/api-catalog) を使用することができます。Azure Active Directory において、Azure AD と Graph API を介してのみ使用可能な機能については、[Microsoft Graph または Azure AD Graph](https://dev.office.com/blogs/microsoft-graph-or-azure-ad-graph) のブログの投稿を参照してください。
 
 ## <a name="feedback"></a>フィードバック
 

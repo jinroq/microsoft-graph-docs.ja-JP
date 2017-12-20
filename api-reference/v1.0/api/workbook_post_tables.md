@@ -22,8 +22,11 @@ POST /workbook/tables/$/add
 | Authorization  | ベアラー {トークン}。必須。 |
 | Workbook-Session-Id  | 変更を保持するかどうかを決定するブック セッション ID。省略可能。|
 
-## <a name="request-body"></a>要求本文
-要求本文で、[テーブル](../resources/table.md) オブジェクトの JSON 表記を指定します。
+### <a name="request-parameters"></a>要求パラメーター
+| 名前           | 型      |説明|
+|:---------------|:----------|:----------|
+| Address  | string| 範囲のアドレスです。この API を `worksheets/{id or name}/tables/add` パスから呼び出す場合、アドレスにシート名のプレフィックスを指定する必要はありません。ただし、これを `workbook/tables/add` パスから呼び出す場合は、テーブルを作成する必要のあるシート名を指定する必要があります (例: `sheet1!A1:D4`)。|
+| hasHeaders  | boolean|範囲に列ラベルがあるかどうかを示すブール値。ソースにヘッダーが含まれていない場合 (このプロパティが false に設定されている場合)、Excel はデータを下方向に 1 行シフトして、自動的にヘッダーを生成します。|
 
 ## <a name="response"></a>応答
 
@@ -42,14 +45,10 @@ Content-type: application/json
 Content-length: 109
 
 {
-  "id": 99,
-  "name": "name-value",
-  "showHeaders": true,
-  "showTotals": true,
-  "style": "style-value"
+  "address": "A1:D8",
+  "hasHeaders": false
 }
 ```
-要求本文で、[テーブル](../resources/table.md) オブジェクトの JSON 表記を指定します。
 ##### <a name="response"></a>応答
 以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。
 <!-- {
