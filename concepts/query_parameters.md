@@ -6,16 +6,16 @@ Microsoft Graph にはオプションのクエリ パラメーターがあり、
 
 | 名前                     | 説明 | 例
 |:-------------------------|:------------|:---------|
-| [$count](#count)         | 一致するリソースの総数を取得します。 | [`/me/messages?$top=2&$count=true`][count-example]
-| [$expand](#expand)       | 関連リソースを取得します。|[`/groups?$expand=members`][expand-example]
-| [$filter](#filter)       | 結果 (行) をフィルターします。|[`/users?$filter=startswith(givenName,'J')`][filter-example]
-| [$format](#format)       | 指定したメディア形式で結果を返します。|[`/users?$format=json`][format-example]
-| [$orderby](#orderby)     | 結果を並べます。|[`/users?$orderby=displayName desc`][orderby-example]
-| [$search](#search)       | 検索条件に基づいて結果を返します。現在、`messages` と `person` のコレクションでサポートされています。|[`/me/messages?$search=pizza`][search-example]
-| [$select](#select)       | プロパティ (列) をフィルターします。|[`/users?$select=givenName,surname`][select-example]
-| [$skip](#skip)           | 結果セットにインデックスを作成します。また一部の API でページングを実装するために使用されており、`$top` と組み合わせて結果を手動でページングすることもできます。 | [`/me/messages?$skip=11`][skip-example]
-| [$skipToken](#skiptoken) | 複数ページにわたる結果セットから、結果の次のページを取得します。(一部の API では代わりに `$skip` を使用します。) | `/users?$skiptoken=X%274453707402000100000017...`|
-| [$top](#top)             | 結果のページ サイズを設定します。 |[`/users?$top=2`][top-example]
+| [$count](#count-parameter)         | 一致するリソースの総数を取得します。 | [`/me/messages?$top=2&$count=true`][count-example]
+| [$expand](#expand-parameter)       | 関連リソースを取得します。|[`/groups?$expand=members`][expand-example]
+| [$filter](#filter-parameter)       | 結果 (行) をフィルターします。|[`/users?$filter=startswith(givenName,'J')`][filter-example]
+| [$format](#format-parameter)       | 指定したメディア形式で結果を返します。|[`/users?$format=json`][format-example]
+| [$orderby](#orderby-parameter)     | 結果を並べます。|[`/users?$orderby=displayName desc`][orderby-example]
+| [$search](#search-parameter)       | 検索条件に基づいて結果を返します。現在、`messages` と `person` のコレクションでサポートされています。|[`/me/messages?$search=pizza`][search-example]
+| [$select](#select-parameter)       | プロパティ (列) をフィルターします。|[`/users?$select=givenName,surname`][select-example]
+| [$skip](#skip-parameter)           | 結果セットにインデックスを作成します。また一部の API でページングを実装するために使用されており、`$top` と組み合わせて結果を手動でページングすることもできます。 | [`/me/messages?$skip=11`][skip-example]
+| [$skipToken](#skiptoken-parameter) | 複数ページにわたる結果セットから、結果の次のページを取得します。(一部の API では代わりに `$skip` を使用します。) | `/users?$skiptoken=X%274453707402000100000017...`|
+| [$top](#top-parameter)             | 結果のページ サイズを設定します。 |[`/users?$top=2`][top-example]
 
 
 
@@ -39,7 +39,7 @@ GET https://graph.microsoft.com/v1.0/users?$filter=startswith(givenName, 'J')
 GET https://graph.microsoft.com/v1.0/users?$filter=startswith(givenName%2C+'J')
 ```
 
-## <a name="count"></a>count
+## <a name="count-parameter"></a>count パラメーター
 
 `$count` クエリ パラメーターを使用し、Microsoft Graph から返されるデータ値のページにコレクション内の項目数の合計を含めます。 
 
@@ -54,7 +54,7 @@ GET  https://graph.microsoft.com/v1.0/me/contacts?$count=true
 
 >**注:** `$count` は、[ユーザー](../api-reference/v1.0/resources/user.md)や[グループ](../api-reference/v1.0/resources/group.md)のコレクションのような、[`directoryObject`](../api-reference/v1.0/resources/directoryobject.md) から派生したリソースのコレクションに対してはサポートされていません。
 
-## <a name="expand"></a>expand
+## <a name="expand-parameter"></a>expand パラメーター
 
 Microsoft Graph リソースの多くは、宣言されているリソースのプロパティと、他のリソースとのリレーションシップの両方を公開します。 これらのリレーションシップは、参照プロパティまたはナビゲーション プロパティとも呼ばれ、1 つのリソースまたはリソースのコレクションのいずれかを参照することができます。 たとえば、ユーザーのメール フォルダー、マネージャー、直属の部下は、すべてリレーションシップとして公開されます。 
 
@@ -68,7 +68,7 @@ GET https://graph.microsoft.com/v1.0/me/drive/root?$expand=children
 
 [Graph エクスプローラーで試す](https://developer.microsoft.com/graph/graph-explorer?request=me/drive/root?$expand=children&method=GET&version=v1.0)
 
-いくつかのリソース コレクションで、`$select` パラメーターを追加すれば、展開されたリソースで返されるプロパティを指定することもできます。次の使用例は前の例と同じクエリを実行しますが、[`$select`](#select) ステートメントを使用して、展開されている子項目に返されるプロパティを `id` プロパティと `name` プロパティに限定します。
+いくつかのリソース コレクションで、`$select` パラメーターを追加すれば、展開されたリソースで返されるプロパティを指定することもできます。次の使用例は前の例と同じクエリを実行しますが、[`$select`](#select-parameter) ステートメントを使用して、展開されている子項目に返されるプロパティを `id` プロパティと `name` プロパティに限定します。
 
 ```http
 GET https://graph.microsoft.com/v1.0/me/drive/root?$expand=children($select=id,name)
@@ -80,7 +80,7 @@ GET https://graph.microsoft.com/v1.0/me/drive/root?$expand=children($select=id,n
 > 
 > [ユーザー](../api-reference/v1.0/resources/user.md)や[グループ](../api-reference/v1.0/resources/group.md)のような、[directoryObject](../api-reference/v1.0/resources/directoryobject.md) から派生した Azure AD リソースの場合、`$expand` は `beta` でのみサポートされており、通常は展開されているリレーションシップに対し最大 20 個のアイテムを返すことができます。
 
-## <a name="filter"></a>filter
+## <a name="filter-parameter"></a>filter パラメーター
 
 `$filter` クエリ パラメーターを使用して、コレクションのサブセットのみを取得します。 
 
@@ -120,7 +120,7 @@ GET https://graph.microsoft.com/v1.0/users?$filter=startswith(displayName,'J')
 
 > **注:** Azure AD リソースでは、次の `$filter` 演算子はサポートされていません: `ne`、`gt`、`ge`、`lt`、`le`、`not`。Microsoft Graph リソースでは現在、`contains` 文字列の演算子はサポートされていません。
 
-## <a name="format"></a>format
+## <a name="format-parameter"></a>format パラメーター
 
 `$format` クエリ パラメーターを使用して、Microsoft Graph から返される項目のメディア形式を指定します。
 
@@ -134,7 +134,7 @@ GET https://graph.microsoft.com/v1.0/users?$format=json
 
 > **注:**`$format` クエリ パラメーターは、さまざまな形式 (atom、xml、json など) をサポートしていますが、結果がすべての形式で返されるわけではありません。
 
-## <a name="orderby"></a>orderby
+## <a name="orderby-parameter"></a>orderby パラメーター
 
 `$orderby` クエリ パラメーターを使用して、Microsof Graph から返される項目の並べ替え順序を指定します。
 
@@ -165,11 +165,11 @@ GET https://graph.microsoft.com/v1.0/me/mailFolders/Inbox/messages?$orderby=from
 
  > **注:** [ユーザー](../api-reference/v1.0/resources/user.md)や[グループ](../api-reference/v1.0/resources/group.md)のような、[directoryObject](../api-reference/v1.0/resources/directoryobject.md) から派生した Azure AD リソースの場合、`$orderby` 式と `$filter` 式を結合することはできません。 
 
-## <a name="search"></a>検索 
+## <a name="search-parameter"></a>search パラメーター
 
 `$search` クエリ パラメーターを使用して、要求の結果を検索条件と一致するものに制限します。
 
-> **注:** 現在の検索対象は、[メッセージ](../api-reference/v1.0/resources/message.md) コレクションと[人物](../api-reference/v1.0/resources/person.md)コレクション**だけ**です。`$search` 要求は最大 250 まで結果を返します。検索要求では [`$filter`](#filter) も [`$orderby`](#orderby) も使用できません。
+> **注:** 現在の検索対象は、[メッセージ](../api-reference/v1.0/resources/message.md) コレクションと[人物](../api-reference/v1.0/resources/person.md)コレクション**だけ**です。`$search` 要求は最大 250 まで結果を返します。検索要求では [`$filter`](#filter-parameter) も [`$orderby`](#orderby-parameter) も使用できません。
 
 ### <a name="using-search-on-message-collections"></a>`message` コレクションで $Search を使用する
 
@@ -237,7 +237,7 @@ GET https://graph.microsoft.com/v1.0/me/people/?$search="tyl topic:pizza"
 
 People API についてもっと知るには、「[関係する人の情報を取得する](./people_example.md)」を参照してください。  
 
-## <a name="select"></a>select
+## <a name="select-parameter"></a>select パラメーター
 
 `$select` クエリ パラメーターを使用して、個別リソースまたはリソースのコレクションの既定値とは異なるプロパティのセットを返します。 $Select で、既定のプロパティのサブセットまたはスーパー セットを指定できます。
 
@@ -253,7 +253,7 @@ GET https://graph.microsoft.com/v1.0/me/messages?$select=from,subject
 >
 > `v1.0`では、[ユーザー](../api-reference/v1.0/resources/user.md)と[グループ](../api-reference/v1.0/resources/group.md)のような、[directoryObject](../api-reference/v1.0/resources/directoryobject.md) から派生した一部の Azure AD リソースは、読み取り時に制限された既定値のプロパティ サブセットを返します。既定のセット以外のプロパティを返すには、これらのリソースに対して `$select` を使用する必要があります。  
 
-## <a name="skip"></a>skip
+## <a name="skip-parameter"></a>skip パラメーター
 
 コレクションを開始するときにスキップする項目数を設定するには、`$skip` クエリ パラメーターを使用します。たとえば、次の要求はユーザーのイベントを、コレクション内の 21 番目以降のイベントから作成日順で返します。
 
@@ -262,14 +262,14 @@ GET  https://graph.microsoft.com/v1.0/me/events?$orderby=createdDateTime&$skip=2
 ```
 [Graph エクスプローラーで試す][skip-example]
 
-> **注:** Outlook メール/カレンダーなどいくつかの Microsoft Graph API (`message`、`event`、`calendar`) は、`$skip` を使用してページングを実装します。 クエリの結果が複数ページにまたがる場合、これらの API は `@odata:nextLink` プロパティと共に `$skip` パラメーターが含まれる URL を返します。 この URL を使用して、結果の次のページに戻れます。 詳細については、「[ページング](./paging.md)」を参照してください。
+> **注:**Outlook メール/カレンダーなどいくつかの Microsoft Graph API (`message`、`event`、`calendar`) は、`$skip` を使用してページングを実装します。 クエリの結果が複数ページにまたがる場合、これらの API は `@odata:nextLink` プロパティと共に `$skip` パラメーターが含まれる URL を返します。 この URL を使用して、結果の次のページに戻れます。 詳細については、「[ページング](./paging.md)」を参照してください。
 
-## <a name="skiptoken"></a>skipToken
+## <a name="skiptoken-parameter"></a>skipToken パラメーター
 
-要求の中には、サーバー側のページングを使用したり、応答におけるページ サイズを限定するために [`$top`](#top) パラメーターを使用したりすることによって、複数のデータ ページを返すものがあります。Microsoft Graph API の多くは、`skipToken` クエリ パラメーターを使用して、結果の後続のページを参照します。`$skiptoken` パラメーターは、結果の次のページを参照する不透明トークンを含んでおり、応答の `@odata.nextLink` プロパティで指定される URL で返されます。詳細については、「[ページング](./paging.md)」を参照してください。
+要求の中には、サーバー側のページングを使用したり、応答におけるページ サイズを限定するために [`$top`](#top-parameter) パラメーターを使用したりすることによって、複数のデータ ページを返すものがあります。Microsoft Graph API の多くは、`skipToken` クエリ パラメーターを使用して、結果の後続のページを参照します。`$skiptoken` パラメーターは、結果の次のページを参照する不透明トークンを含んでおり、応答の `@odata.nextLink` プロパティで指定される URL で返されます。詳細については、「[ページング](./paging.md)」を参照してください。
 
 
-## <a name="top"></a>top
+## <a name="top-parameter"></a>top パラメーター
 
 `$top` クエリ パラメーターを使用して、結果セットのページ サイズを指定します。 
 
