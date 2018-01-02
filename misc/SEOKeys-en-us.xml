@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Menu>
   <Item text="概要" url="/en-us/concepts/overview" SEOKeyword="概要、Microsoft Graph API、概要" SEODescription="Microsoft Graph により、インテリジェントな Microsoft クラウド経由でデジタル作業とデジタル ライフのデータにアクセスするアプリケーションを使用できます。開発者にとっての大きな利点:Microsoft クラウドからのデータ、インテリジェンス、インサイトにアクセスするための統合 Microsoft API エンドポイント。" />    
   <Item text="おすすめのシナリオ" url="/en-us/concepts/featured_scenarios"> 
@@ -9,8 +9,9 @@
     <Item text="Android" url="/en-us/concepts/android" SEOKeyword="Android, Microsoft Graph API, チュートリアル" SEODescription="Microsoft Graph で、Android アプリの Microsoft クラウド データにアクセスする" />
     <Item text="Angular" url="/en-us/concepts/angular" SEOKeyword="Angular, Microsoft Graph API, チュートリアル" SEODescription="Microsoft Graph で、Angular アプリの Microsoft クラウド データにアクセスする" />
     <Item text="ASP.NET MVC" url="/en-us/concepts/aspnetmvc" SEOKeyword=".NET, ASP.NET MVC, Microsoft Graph API, チュートリアル" SEODescription="Microsoft Graph で、ASP.NET MVC アプリの Microsoft クラウド データにアクセスする" />
-    <Item text="iOS" url="/en-us/concepts/ios" SEOKeyword="iOS, Microsoft Graph API, チュートリアル" SEODescription="Microsoft Graph で、iOS アプリの Microsoft クラウド データにアクセスする" />
-    <Item text="Node.js" url="/en-us/concepts/nodejs" SEOKeyword="Node.js, Microsoft Graph API, チュートリアル" SEODescription="Microsoft Graph で、Node.js アプリの Microsoft クラウド データにアクセスする" />
+    <Item text="iOS (Objective-C)" url="/en-us/concepts/ios_objectivec" SEOKeyword="iOS, Microsoft Graph API, チュートリアル" SEODescription="Microsoft Graph で、Objective-C iOS アプリの Microsoft クラウド データにアクセスする" />
+    <Item text="iOS (Swift)" url="/en-us/concepts/ios_swift" SEOKeyword="iOS, Microsoft Graph API, チュートリアル" SEODescription="Microsoft Graph で、Swift iOS アプリの Microsoft クラウド データにアクセスする" />
+	<Item text="Node.js" url="/en-us/concepts/nodejs" SEOKeyword="Node.js, Microsoft Graph API, チュートリアル" SEODescription="Microsoft Graph で、Node.js アプリの Microsoft クラウド データにアクセスする" />
     <Item text="PHP" url="/en-us/concepts/php" SEOKeyword="PHP, Microsoft Graph API, チュートリアル" SEODescription="Microsoft Graph で、PHP アプリの Microsoft クラウド データにアクセスする" />
     <Item text="Python" url="/en-us/concepts/python" SEOKeyword="Python, Microsoft Graph API, チュートリアル" SEODescription="Microsoft Graph で、Python アプリの Microsoft クラウド データにアクセスする" />
     <Item text="Ruby" url="/en-us/concepts/ruby" SEOKeyword="Ruby, Microsoft Graph API, チュートリアル" SEODescription="Microsoft Graph で、Ruby アプリの Microsoft クラウド データにアクセスする" />
@@ -91,7 +92,7 @@
     </Item>
     <Item text="ドライブ" url="/en-us/api-reference/v1.0/resources/drive" SEOKeyword="ユーザーのドライブ, Microsoft Graph API, ユーザー API" SEODescription="ドライブ API">
       <Item text="ドライブを取得する" url="/en-us/api-reference/v1.0/api/drive_get" SEOKeyword="ドライブを取得する、Microsoft Graph API、ドライブ API" SEODescription="ドライブ オブジェクトのプロパティと関係を取得します。" />
-      <Item text="子を一覧表示する" url="/en-us/api-reference/v1.0/api/item_list_children" SEOKeyword="項目を一覧表示する、Microsoft Graph API、ドライブ API" SEODescription="項目オブジェクトのリストを取得します。" />
+      <Item text="子を一覧表示する" url="/en-us/api-reference/v1.0/api/driveitem_list_children" SEOKeyword="項目を一覧表示する、Microsoft Graph API、ドライブ API" SEODescription="項目オブジェクトのリストを取得します。" />
     </Item>
     <Item text="グループ" url="/en-us/api-reference/v1.0/resources/group" SEOKeyword="ユーザー グループ、Microsoft Graph API、ユーザー API" SEODescription="Groups API">
       <Item text="memberOf を一覧表示する" url="/en-us/api-reference/v1.0/api/user_list_memberof" SEOKeyword="memberOf を一覧表示する、Microsoft Graph API、Users API" SEODescription="directoryobject オブジェクトのリストを取得します。" />
@@ -157,9 +158,9 @@
 	<Item text="カレンダー" url="/en-us/api-reference/v1.0/resources/event" SEOKeyword="ユーザーの予定表, Microsoft Graph API, ユーザー API" SEODescription="予定表">
       <Item text="イベントを一覧表示する" url="/en-us/api-reference/v1.0/api/group_list_events" SEOKeyword="イベントを一覧表示する、Microsoft Graph API、Groups API" SEODescription="イベント オブジェクトのリストを取得します。" />
       <Item text="イベントを作成する" url="/en-us/api-reference/v1.0/api/group_post_events" SEOKeyword="イベントを作成する、Microsoft Graph API、グループ API" SEODescription="この API を使用して、新しいイベントを作成します。" />
-      <Item text="イベントを取得する" url="/en-us/api-reference/v1.0/api/event_get" />
-      <Item text="イベントを更新する" url="/en-us/api-reference/v1.0/api/event_update" />
-      <Item text="イベントを削除する" url="/en-us/api-reference/v1.0/api/event_delete" />
+      <Item text="イベントを取得する" url="/en-us/api-reference/v1.0/api/group_get_event" />
+      <Item text="イベントを更新する" url="/en-us/api-reference/v1.0/api/group_update_event" />
+      <Item text="イベントを削除する" url="/en-us/api-reference/v1.0/api/group_delete_event" />
       <Item text="予定表ビューを一覧表示する" url="/en-us/api-reference/v1.0/api/group_list_calendarview" SEOKeyword="calendarView を一覧表示する、Microsoft Graph API、Groups API" SEODescription="イベント オブジェクトのリストを取得します。" />
       <Item text="添付ファイルを一覧表示する" url="/en-us/api-reference/v1.0/api/event_list_attachments" SEOKeyword="添付ファイルを一覧表示する、Microsoft Graph API、Outlook Calendar API" SEODescription="添付ファイル オブジェクトのリストを取得します。" />
       <Item text="添付ファイルを追加する" url="/en-us/api-reference/v1.0/api/event_post_attachments" SEOKeyword="添付ファイルを作成する, Microsoft Graph API, Outlook Calendar API" SEODescription="この API を使用して、新しい添付ファイルを作成します。" />
@@ -169,28 +170,28 @@
     <Item text="会話" url="/en-us/api-reference/v1.0/resources/conversation" SEOKeyword="グループ会話, Microsoft Graph API, グループ API" SEODescription="会話">
       <Item text="会話を一覧表示する" url="/en-us/api-reference/v1.0/api/group_list_conversations" SEOKeyword="会話を一覧表示する、Microsoft Graph API、Groups API" SEODescription="会話オブジェクトのリストを取得します。" />
       <Item text="会話を作成する" url="/en-us/api-reference/v1.0/api/group_post_conversations" SEOKeyword="会話を作成する、Microsoft Graph API、Groups API" SEODescription="この API を使用して、新しい会話を作成します。" />
-      <Item text="グループ会話を取得する" url="/en-us/api-reference/v1.0/api/conversation_get" SEOKeyword="グループ会話を取得する、Microsoft Graph API、Outlook 会話 API" SEODescription="会話オブジェクトのプロパティと関係を取得します。" />
-      <Item text="グループ会話を削除する" url="/en-us/api-reference/v1.0/api/conversation_delete" SEOKeyword="グループ会話を削除する、Microsoft Graph API、Outlook 会話 API" SEODescription="会話を削除します。" />
+      <Item text="グループ会話を取得する" url="/en-us/api-reference/v1.0/api/group_get_conversation" SEOKeyword="グループ会話を取得する、Microsoft Graph API、Outlook 会話 API" SEODescription="会話オブジェクトのプロパティと関係を取得します。" />
+      <Item text="グループ会話を削除する" url="/en-us/api-reference/v1.0/api/group_delete_conversation" SEOKeyword="グループ会話を削除する、Microsoft Graph API、Outlook 会話 API" SEODescription="会話を削除します。" />
       <Item text="会話スレッドを一覧表示する" url="/en-us/api-reference/v1.0/api/conversation_list_threads" SEOKeyword="スレッドを一覧表示する、Microsoft Graph API、Groups API" SEODescription="conversationthread オブジェクトのリストを取得します。" />
       <Item text="会話スレッドを作成する" url="/en-us/api-reference/v1.0/api/conversation_post_threads" SEOKeyword="スレッドを作成する、Microsoft Graph API、Groups API" SEODescription="この API を使用して、新しいスレッドを作成します。" />
       <Item text="承認済み送信者を一覧表示する" url="/en-us/api-reference/v1.0/api/group_list_acceptedsenders" SEOKeyword="acceptedSenders を一覧表示する、Microsoft Graph API、Groups API" SEODescription="directoryobject オブジェクトのリストを取得します。" />
       <Item text="承認済み送信者を作成する" url="/en-us/api-reference/v1.0/api/group_post_acceptedsenders" SEOKeyword="acceptedSender を作成する、Microsoft Graph API、Groups API" SEODescription="この API を使用して、新しい acceptedSender を作成します。" />
-      <Item text="承認済み送信者を削除する" url="/en-us/api-reference/v1.0/api/group_delete_acceptedsenders" SEOKeyword="acceptedSender を削除する、Microsoft Graph API、Groups API" SEODescription="この API を使用して、新しい acceptedSender を削除します。" />
+      <Item text="承認済み送信者を削除する" url="/en-us/api-reference/v1.0/api/group_delete_acceptedsenders" SEOKeyword="acceptedSender を削除する, Microsoft Graph API, Groups API" SEODescription="この API を使用して、新しい acceptedSender を削除します。" />
       <Item text="拒否する送信者を一覧表示する" url="/en-us/api-reference/v1.0/api/group_list_rejectedsenders" SEOKeyword="rejectedSenders を一覧表示する、Microsoft Graph API、Groups API" SEODescription="rejectedSenders のリストを取得します。" />
       <Item text="拒否する送信元を作成する" url="/en-us/api-reference/v1.0/api/group_post_rejectedsenders" SEOKeyword="rejectedSender を作成する、Microsoft Graph API、Groups API" SEODescription="この API を使用して、新しい rejectedSender を作成します。" />
-      <Item text="拒否する送信元を削除する" url="/en-us/api-reference/v1.0/api/group_delete_rejectedsenders" SEOKeyword="rejectedSender を削除する、Microsoft Graph API、Groups API" SEODescription="この API を使用して、rejectedSender を削除します。" />
+      <Item text="拒否済みの送信者を削除する" url="/en-us/api-reference/v1.0/api/group_delete_rejectedsenders" SEOKeyword="rejectedSender を削除する, Microsoft Graph API, Groups API" SEODescription="この API を使用して、rejectedSender を削除します。" />
     </Item>
     <Item text="会話スレッド" url="/en-us/api-reference/v1.0/resources/conversationthread" SEOKeyword="conversationthread API, Microsoft Graph API, conversationthread API" SEODescription="会話スレッド">
       <Item text="スレッドを一覧表示する" url="/en-us/api-reference/v1.0/api/group_list_threads" SEOKeyword="スレッドを一覧表示する、Microsoft Graph API、Outlook 会話 API" SEODescription="conversationthread オブジェクトのリストを取得します。" />
       <Item text="スレッドを作成する" url="/en-us/api-reference/v1.0/api/group_post_threads" SEOKeyword="スレッドを作成する、Microsoft Graph API、Outlook 会話 API" SEODescription="この API を使用して、新しいスレッドを作成します。" />
-      <Item text="会話スレッドを取得する" url="/en-us/api-reference/v1.0/api/conversationthread_get" SEOKeyword="conversationThread を取得する、Microsoft Graph API、Outlook 会話 API" SEODescription="conversationthread オブジェクトのプロパティと関係を取得します。" />
-      <Item text="会話スレッドを更新する" url="/en-us/api-reference/v1.0/api/conversationthread_update" SEOKeyword="conversationthread を更新する、Microsoft Graph API、Outlook 会話 API" SEODescription="conversationthread オブジェクトのプロパティを更新します。" />
-      <Item text="会話スレッドを削除する" url="/en-us/api-reference/v1.0/api/conversationthread_delete" SEOKeyword="conversationThread を削除する、Microsoft Graph API、Outlook 会話 API" SEODescription="conversationThread を削除します。" />
+      <Item text="会話スレッドを取得する" url="/en-us/api-reference/v1.0/api/group_get_thread" SEOKeyword="conversationThread を取得する、Microsoft Graph API、Outlook 会話 API" SEODescription="conversationthread オブジェクトのプロパティと関係を取得します。" />
+      <Item text="会話スレッドを更新する" url="/en-us/api-reference/v1.0/api/group_update_thread" SEOKeyword="conversationthread を更新する、Microsoft Graph API、Outlook 会話 API" SEODescription="conversationthread オブジェクトのプロパティを更新します。" />
+      <Item text="会話スレッドを削除する" url="/en-us/api-reference/v1.0/api/group_delete_thread" SEOKeyword="conversationThread を削除する、Microsoft Graph API、Outlook 会話 API" SEODescription="conversationThread を削除します。" />
       <Item text="会話のスレッドに返信する" url="/en-us/api-reference/v1.0/api/conversationthread_reply" SEOKeyword="conversationThread: 返信、Microsoft Graph API、conversationthread API" SEODescription="" />
     </Item>
     <Item text="ドライブ" url="/en-us/api-reference/v1.0/resources/drive" SEOKeyword="ユーザーのドライブ, Microsoft Graph API, ユーザー API" SEODescription="ドライブ">
       <Item text="ドライブを取得する" url="/en-us/api-reference/v1.0/api/drive_get" SEOKeyword="ドライブを取得する、Microsoft Graph API、ドライブ API" SEODescription="ドライブ オブジェクトのプロパティと関係を取得します。" />
-      <Item text="子を一覧表示する" url="/en-us/api-reference/v1.0/api/item_list_children" SEOKeyword="項目を一覧表示する、Microsoft Graph API、ドライブ API" SEODescription="項目オブジェクトのリストを取得します。" />
+      <Item text="子を一覧表示する" url="/en-us/api-reference/v1.0/api/driveitem_list_children" SEOKeyword="項目を一覧表示する、Microsoft Graph API、ドライブ API" SEODescription="項目オブジェクトのリストを取得します。" />
     </Item>
     <Item text="拡張プロパティ" url="/en-us/api-reference/v1.0/resources/extended-properties-overview" SEODescription="">
       <Item text="単一値の拡張プロパティ" url="/en-us/api-reference/v1.0/resources/singlevaluelegacyextendedproperty" SEODescription="">
@@ -293,7 +294,10 @@
   </Item>
   <Item text="Excel" url="/en-us/api-reference/v1.0/resources/excel" SEOKeyword="Excel API, Microsoft Graph API, Excel API" SEODescription="">
     <Item text="ブック" url="/en-us/api-reference/v1.0/resources/workbook" SEOKeyword="Excel API, Microsoft Graph API, Excel API" SEODescription="">
-      <Item text="テーブルを一覧表示する" url="/en-us/api-reference/v1.0/api/workbook_list_tables" SEOKeyword="" SEODescription="" />
+      <Item text="セッションを作成する" url="/en-us/api-reference/v1.0/api/workbook_createsession" />
+	  <Item text="セッションを更新する" url="/en-us/api-reference/v1.0/api/workbook_refreshsession" />
+	  <Item text="セッションを閉じる" url="/en-us/api-reference/v1.0/api/workbook_closesession" />
+	  <Item text="テーブルを一覧表示する" url="/en-us/api-reference/v1.0/api/workbook_list_tables" SEOKeyword="" SEODescription="" />
       <Item text="ワークシートを一覧表示する" url="/en-us/api-reference/v1.0/api/workbook_list_worksheets" SEOKeyword="" SEODescription="" />
       <Item text="名前を一覧表示する" url="/en-us/api-reference/v1.0/api/workbook_list_names" SEOKeyword="" SEODescription="" />
     </Item>
@@ -311,7 +315,11 @@
     </Item>
     <Item text="範囲" url="/en-us/api-reference/v1.0/resources/range" SEOKeyword="Excel API, Microsoft Graph API, Excel API" SEODescription="">
       <Item text="範囲を取得する" url="/en-us/api-reference/v1.0/api/range_get" SEOKeyword="" SEODescription="" />
-      <Item text="結合する" url="/en-us/api-reference/v1.0/api/range_merge" SEOKeyword="" SEODescription="" />
+	  <Item text="範囲を更新する" url="/en-us/api-reference/v1.0/api/range_update" />
+	  <Item text="範囲を挿入する" url="/en-us/api-reference/v1.0/api/range_insert" />
+	  <Item text="範囲の書式を取得する" url="/en-us/api-reference/v1.0/api/rangeformat_get" />
+	  <Item text="範囲の書式を更新する" url="/en-us/api-reference/v1.0/api/rangeformat_update" />
+	  <Item text="結合する" url="/en-us/api-reference/v1.0/api/range_merge" SEOKeyword="" SEODescription="" />
       <Item text="結合を解除する" url="/en-us/api-reference/v1.0/api/range_unmerge" SEOKeyword="" SEODescription="" />
       <Item text="解除する" url="/en-us/api-reference/v1.0/api/range_clear" SEOKeyword="" SEODescription="" />
       <Item text="削除する" url="/en-us/api-reference/v1.0/api/range_delete" SEOKeyword="" SEODescription="" />
@@ -320,58 +328,72 @@
       <Item text="テーブルの追加" url="/en-us/api-reference/v1.0/api/tablecollection_add" SEOKeyword="" SEODescription="" />
       <Item text="テーブルを取得する" url="/en-us/api-reference/v1.0/api/table_get" SEOKeyword="" SEODescription="" />
       <Item text="テーブルを更新する" url="/en-us/api-reference/v1.0/api/table_update" SEOKeyword="" SEODescription="" />
-      <Item text="範囲を取得する" url="/en-us/api-reference/v1.0/api/table_range" SEOKeyword="" SEODescription="" />
+	  <Item text="テーブルを削除する" url="/en-us/api-reference/v1.0/api/table_delete" />
       <Item text="行を一覧表示する" url="/en-us/api-reference/v1.0/api/table_list_rows" SEOKeyword="" SEODescription="" />
+	  <Item text="行を作成する" url="/en-us/api-reference/v1.0/api/table_post_rows" />
       <Item text="列を一覧表示する" url="/en-us/api-reference/v1.0/api/table_list_columns" SEOKeyword="" SEODescription="" />
+	  <Item text="列を作成する" url="/en-us/api-reference/v1.0/api/table_post_columns" />
+	  <Item text="範囲を取得する" url="/en-us/api-reference/v1.0/api/table_range" SEOKeyword="" SEODescription="" />
     </Item>
     <Item text="グラフ" url="/en-us/api-reference/v1.0/resources/chart" SEOKeyword="Excel API, Microsoft Graph API, Excel API" SEODescription="">
-      <Item text="グラフを取得する" url="/en-us/api-reference/v1.0/api/chart_get" SEOKeyword="" SEODescription="" />
+      <Item text="グラフを一覧表示する" url="/en-us/api-reference/v1.0/api/chart_list" />
+	  <Item text="グラフを取得する" url="/en-us/api-reference/v1.0/api/chart_get" SEOKeyword="" SEODescription="" />
+	  <Item text="グラフを更新する" url="/en-us/api-reference/v1.0/api/chart_update" SEOKeyword="" SEODescription="" />
+	  <Item text="グラフを削除する" url="/en-us/api-reference/v1.0/api/chart_delete" />
+	  <Item text="グラフを追加する" url="/en-us/api-reference/v1.0/api/chartcollection_add" />
       <Item text="グラフの画像を取得する" url="/en-us/api-reference/v1.0/api/chart_image" SEOKeyword="" SEODescription="" />
       <Item text="データをリセットする" url="/en-us/api-reference/v1.0/api/chart_setdata" SEOKeyword="" SEODescription="" />
       <Item text="位置データを設定する" url="/en-us/api-reference/v1.0/api/chart_setposition" SEOKeyword="" SEODescription="" />
-      <Item text="グラフを更新する" url="/en-us/api-reference/v1.0/api/chart_update" SEOKeyword="" SEODescription="" />
     </Item>
-    <Item text="Nameditem" url="/en-us/api-reference/v1.0/resources/nameditem" SEOKeyword="Excel API, Microsoft Graph API, Excel API" SEODescription="">
-      <Item text="Nameditem を一覧表示する" url="/en-us/api-reference/v1.0/api/nameditem_get" SEOKeyword="" SEODescription="" />
-      <Item text="リストの範囲" url="/en-us/api-reference/v1.0/api/nameditem_range" SEOKeyword="" SEODescription="" />
+    <Item text="名前付きアイテム" url="/en-us/api-reference/v1.0/resources/nameditem" SEOKeyword="Excel API, Microsoft Graph API, Excel API" SEODescription="">
+      <Item text="名前付きアイテムを一覧表示する" url="/en-us/api-reference/v1.0/api/nameditem_list" SEOKeyword="" SEODescription="" />
+      <Item text="名前付きアイテムを取得する" url="/en-us/api-reference/v1.0/api/nameditem_get" />
+	  <Item text="名前付きアイテムを更新する" url="/en-us/api-reference/v1.0/api/nameditem_update" />
+	  <Item text="名前付きアイテムを追加する" url="/en-us/api-reference/v1.0/api/nameditem_add" />
+	  <Item text="範囲を一覧表示する" url="/en-us/api-reference/v1.0/api/nameditem_range" SEOKeyword="" SEODescription="" />
     </Item>
   </Item>
   <Item text="OneDrive" url="/en-us/api-reference/v1.0/resources/onedrive" SEOKeyword="ユーザーのドライブ、Microsoft Graph API、ユーザー API" SEODescription="OneDrive API">
     <Item text="ドライブ" url="/en-us/api-reference/v1.0/resources/drive" SEOKeyword="ユーザーのドライブ, Microsoft Graph API, ユーザー API" SEODescription="ドライブ API">
       <Item text="ドライブを取得する" url="/en-us/api-reference/v1.0/api/drive_get" SEOKeyword="ドライブを取得する、Microsoft Graph API、ドライブ API" SEODescription="ドライブ オブジェクトのプロパティと関係を取得します。" />
       <Item text="ドライブを一覧表示する" url="/en-us/api-reference/v1.0/api/drive_list" SEOKeyword="ドライブを一覧表示する, Microsoft Graph API, ドライブ API, OneDrive ドライブ API" SEODescription="" />
-      <Item text="子を一覧表示する" url="/en-us/api-reference/v1.0/api/item_list_children" SEOKeyword="項目を一覧表示する、Microsoft Graph API、ドライブ API" SEODescription="項目オブジェクトのリストを取得します。" />
+      <Item text="子を一覧表示する" url="/en-us/api-reference/v1.0/api/driveitem_list_children" SEOKeyword="項目を一覧表示する、Microsoft Graph API、ドライブ API" SEODescription="項目オブジェクトのリストを取得します。" />
       <Item text="最近使ったファイル" url="/en-us/api-reference/v1.0/api/drive_recent" SEOKeyword="最近使ったファイル、Microsoft Graph API、ドライブ API" SEODescription="最近使ったファイルを取得します。" />
       <Item text="共有ファイル" url="/en-us/api-reference/v1.0/api/drive_sharedwithme" SEOKeyword="共有アイテムのファイル, Microsoft Graph API, ドライブ API" SEODescription="共有アイテムのファイルを取得します。" />
-      <Item text="特殊なフォルダーを取得する" url="/en-us/api-reference/v1.0/api/drive_special" SEOKeyword="特殊なフォルダー, Microsoft Graph API, ドライブ API" SEODescription="特殊なフォルダーを取得します。" />
+      <Item text="特殊なフォルダーを取得する" url="/en-us/api-reference/v1.0/api/drive_get_specialfolder" SEOKeyword="特殊なフォルダー, Microsoft Graph API, ドライブ API" SEODescription="特殊なフォルダーを取得します。" />
     </Item>
     <Item text="DriveItems" url="/en-us/api-reference/v1.0/resources/driveitem" SEOKeyword="項目 API, Microsoft Graph API, 項目 API" SEODescription="項目リソースは、ファイルやフォルダーと同様に、ドライブに含まれる項目を表します。">
-      <Item text="子を一覧表示する" url="/en-us/api-reference/v1.0/api/item_list_children" SEOKeyword="項目を一覧表示する、Microsoft Graph API、ドライブ API" SEODescription="項目オブジェクトのリストを取得します。" />
-      <Item text="項目を取得する" url="/en-us/api-reference/v1.0/api/item_get" SEOKeyword="項目を取得する、Microsoft Graph API、OneDrive Drive API" SEODescription="項目オブジェクトのプロパティと関係を取得します。" />
-      <Item text="サムネイルを取得する" url="/en-us/api-reference/v1.0/api/item_list_thumbnails" SEOKeyword="サムネイルを取得する, Microsoft Graph API, thumbnailset API" SEODescription="" />
-      <Item text="フォルダーを作成する" url="/en-us/api-reference/v1.0/api/item_post_children" SEOKeyword="子を作成する, Microsoft Graph API, OneDrive Drive API" SEODescription="この API を使用して、新しい子を作成します。" />
-      <Item text="項目を更新する" url="/en-us/api-reference/v1.0/api/item_update" SEOKeyword="項目を更新する、Microsoft Graph API、OneDrive Drive API" SEODescription="項目オブジェクトのプロパティを更新します。" />
-      <Item text="項目を削除する" url="/en-us/api-reference/v1.0/api/item_delete" SEOKeyword="項目を削除する、Microsoft Graph API、OneDrive Drive API" SEODescription="項目を削除します。" />
-      <Item text="項目を移動する" url="/en-us/api-reference/v1.0/api/item_move" SEOKeyword="項目を移動する、Microsoft Graph API、OneDrive Drive API" SEODescription="" />
-      <Item text="項目をコピーする" url="/en-us/api-reference/v1.0/api/item_copy" SEOKeyword="項目をコピーする, Microsoft Graph API, OneDrive Drive API" SEODescription="" />
-      <Item text="ダウンロード" url="/en-us/api-reference/v1.0/api/item_downloadcontent" SEOKeyword="項目をダウンロードする, Microsoft Graph API, OneDrive Drive API" SEODescription="" />
-      <Item text="アップロード" url="/en-us/api-reference/v1.0/api/item_uploadcontent" SEOKeyword="項目をアップロードする, Microsoft Graph API, OneDrive Drive API" SEODescription="" />
-      <Item text="再開可能なアップロード" url="/en-us/api-reference/v1.0/api/item_createuploadsession" SEOKeyword="大きなファイルのアップロード, 再開可能なアップロード, Microsoft Graph API, OneDrive ドライブ API, フラグメント, ファイル" />
-      <Item text="項目を検索する" url="/en-us/api-reference/v1.0/api/item_search" SEOKeyword="項目を検索する, Microsoft Graph API, OneDrive Drive API" SEODescription="" />
-      <Item text="変更履歴の記録" url="/en-us/api-reference/v1.0/api/item_delta" SEOKeyword="変更履歴の記録, Microsoft Graph API" SEODescription="" />
+      <Item text="子を一覧表示する" url="/en-us/api-reference/v1.0/api/driveitem_list_children" SEOKeyword="項目を一覧表示する、Microsoft Graph API、ドライブ API" SEODescription="項目オブジェクトのリストを取得します。" />
+      <Item text="項目を取得する" url="/en-us/api-reference/v1.0/api/driveitem_get" SEOKeyword="項目を取得する、Microsoft Graph API、OneDrive Drive API" SEODescription="項目オブジェクトのプロパティと関係を取得します。" />
+      <Item text="サムネイルを取得する" url="/en-us/api-reference/v1.0/api/driveitem_list_thumbnails" SEOKeyword="サムネイルを取得する, Microsoft Graph API, thumbnailset API" SEODescription="" />
+      <Item text="フォルダーを作成する" url="/en-us/api-reference/v1.0/api/driveitem_post_children" SEOKeyword="子を作成する, Microsoft Graph API, OneDrive Drive API" SEODescription="この API を使用して、新しい子を作成します。" />
+      <Item text="項目を更新する" url="/en-us/api-reference/v1.0/api/driveitem_update" SEOKeyword="項目を更新する、Microsoft Graph API、OneDrive Drive API" SEODescription="項目オブジェクトのプロパティを更新します。" />
+      <Item text="項目を削除する" url="/en-us/api-reference/v1.0/api/driveitem_delete" SEOKeyword="項目を削除する、Microsoft Graph API、OneDrive Drive API" SEODescription="項目を削除します。" />
+      <Item text="項目を移動する" url="/en-us/api-reference/v1.0/api/driveitem_move" SEOKeyword="項目を移動する、Microsoft Graph API、OneDrive Drive API" SEODescription="" />
+      <Item text="項目をコピーする" url="/en-us/api-reference/v1.0/api/driveitem_copy" SEOKeyword="項目をコピーする、Microsoft Graph API、OneDrive Drive API" SEODescription="" />
+      <Item text="ファイルをダウンロードする" url="/en-us/api-reference/v1.0/api/driveitem_get_content" SEOKeyword="項目をダウンロードする、Microsoft Graph API、OneDrive Drive API" SEODescription="" />
+      <Item text="コンテンツを変換する" url="/en-us/api-reference/v1.0/api/driveitem_get_content_format" SEOKeyword="項目をダウンロードする、Microsoft Graph API、OneDrive Drive API" SEODescription="" />
+	  <Item text="アップロード" url="/en-us/api-reference/v1.0/api/driveitem_put_content" SEOKeyword="項目をアップロードする, Microsoft Graph API, OneDrive Drive API" SEODescription="" />
+      <Item text="再開可能なアップロード" url="/en-us/api-reference/v1.0/api/driveitem_createuploadsession" SEOKeyword="大きなファイルのアップロード, 再開可能なアップロード, Microsoft Graph API, OneDrive ドライブ API, フラグメント, ファイル" />
+      <Item text="項目を検索する" url="/en-us/api-reference/v1.0/api/driveitem_search" SEOKeyword="項目を検索する, Microsoft Graph API, OneDrive Drive API" SEODescription="" />
+      <Item text="変更履歴の記録" url="/en-us/api-reference/v1.0/api/driveitem_delta" SEOKeyword="変更履歴の記録, Microsoft Graph API" SEODescription="" />
     </Item>
     <Item text="アクセス許可" url="/en-us/api-reference/v1.0/resources/permission" SEOKeyword="リンク項目を作成する, Microsoft Graph API, OneDrive Drive API" SEODescription="">
-      <Item text="共有リンクを作成する" url="/en-us/api-reference/v1.0/api/item_createlink" SEOKeyword="リンク項目を作成する, Microsoft Graph API, OneDrive Drive API" SEODescription="" />
+      <Item text="共有リンクを作成する" url="/en-us/api-reference/v1.0/api/driveitem_createlink" SEOKeyword="リンク項目を作成する, Microsoft Graph API, OneDrive Drive API" SEODescription="" />
       <Item text="共有リンクを使用する" url="/en-us/api-reference/v1.0/api/shares_get" SEOKeyword="共有リンクを使用する, Microsoft Graph API, Onedrive ドライブ API, 共有, 共有中" SEODescription="" />
-      <Item text="アクセス許可を一覧表示する" url="/en-us/api-reference/v1.0/api/item_list_permissions" SEOKeyword="一覧, アイテムのアクセス許可を列挙, 招待, 共有, Microsoft Graph API" SEODescription="" />
-      <Item text="アクセス許可を追加する" url="/en-us/api-reference/v1.0/api/item_invite" SEOKeyword="アクセス許可を追加する, 招待, 共有, Microsoft Graph API" SEODescription="" />
+      <Item text="アクセス許可を一覧表示する" url="/en-us/api-reference/v1.0/api/driveitem_list_permissions" SEOKeyword="一覧, アイテムのアクセス許可を列挙, 招待, 共有, Microsoft Graph API" SEODescription="" />
+      <Item text="アクセス許可を追加する" url="/en-us/api-reference/v1.0/api/driveitem_invite" SEOKeyword="アクセス許可を追加する, 招待, 共有, Microsoft Graph API" SEODescription="" />
       <Item text="アクセス許可を取得する" url="/en-us/api-reference/v1.0/api/permission_get" SEOKeyword="アクセス許可を取得する、Microsoft Graph API、アクセス許可 API" SEODescription="アクセス許可オブジェクトのプロパティと関係を取得します。" />
       <Item text="アクセス許可を更新する" url="/en-us/api-reference/v1.0/api/permission_update" SEOKeyword="アクセス許可を更新する、Microsoft Graph API、アクセス許可 API" SEODescription="アクセス許可オブジェクトのプロパティを更新します。" />
       <Item text="アクセス許可を削除する" url="/en-us/api-reference/v1.0/api/permission_delete" SEOKeyword="アクセス許可を削除する、Microsoft Graph API、permission API" SEODescription="アクセス許可を削除します。" />
     </Item>
   </Item>
-  <Item text="OneNote" url="/en-us/api-reference/v1.0/resources/onenote" SEOKeyword="OneNote API, Microsoft Graph API" SEODescription="">
-      <Item text="メモ" url="/en-us/api-reference/v1.0/resources/onenote" SEOKeyword="ノーツ API, Microsoft Graph API, ノーツ API" SEODescription="">
+  <Item text="OneNote" url="/en-us/concepts/integrate_with_onenote" SEODescription="Microsoft Graph を使用してアプリを OneNote に統合します。">
+      <Item text="入力 HTML と出力 HTML" url="/en-us/concepts/onenote_input_output_html" SEODescription="OneNote ページ コンテンツを作成、更新、または返されたコンテンツを解析する場合の入力 HTML と出力 HTML について説明します。" />
+	  <Item text="OneNote クライアントを開く" url="/en-us/concepts/open_onenote_client" SEODescription="OneNote アプリケーションを特定のページまたはノートブックで開きます。" />
+      <Item text="エラー コード" url="/en-us/concepts/onenote_error_codes" SEODescription="Microsoft Graph で OneNote API によって返されるエラー コードを検索します。" />
+      <Item text="ベスト プラクティス" url="/en-us/concepts/onenote_best_practices" SEODescription="Microsoft Graph で OneNote API を使用する場合のベスト プラクティスを使用します。" />  
+	  <Item text="ノート" url="/en-us/api-reference/v1.0/resources/onenote" SEOKeyword="ノーツ API, Microsoft Graph API, ノーツ API" SEODescription="">
         <Item text="ノートブックを一覧表示する" url="/en-us/api-reference/v1.0/api/onenote_list_notebooks" SEOKeyword="ノートブックを一覧表示する、Microsoft Graph API、ノーツ API" SEODescription="notebook(../resources/notebook.md) オブジェクトのリストを取得します。" />
         <Item text="ノートブックを作成する" url="/en-us/api-reference/v1.0/api/onenote_post_notebooks" SEOKeyword="ノートブックを作成する、Microsoft Graph API、ノーツ API" SEODescription="新しい OneNote ノートブックを作成します (../resources/notebook.md)。" />
         <Item text="セクションを一覧表示する" url="/en-us/api-reference/v1.0/api/onenote_list_sections" SEOKeyword="セクションを一覧表示する、Microsoft Graph API、ノーツ API" SEODescription="section(../resources/section.md) オブジェクトのリストを取得します。" />
@@ -644,6 +666,106 @@
       <Item text="進行タスクのタスク ボード形式を更新する" url="/en-us/api-reference/v1.0/api/plannerprogresstaskboardtaskformat_update" />
 	  </Item>
   </Item>
+  <Item text="レポート" url="/en-us/api-reference/v1.0/resources/report">
+	  <Item text="Outlook アクティビティ" url="/en-us/api-reference/v1.0/resources/email_activity_reports">
+		<Item text="ユーザーの詳細を取得する" url="/en-us/api-reference/v1.0/api/reportroot_getemailactivityuserdetail" />
+		<Item text="アクティビティの数を取得する" url="/en-us/api-reference/v1.0/api/reportroot_getemailactivitycounts" />
+		<Item text="ユーザーの数を取得する" url="/en-us/api-reference/v1.0/api/reportroot_getemailactivityusercounts" />
+	  </Item>
+	  <Item text="Outlook アプリの使用状況" url="/en-us/api-reference/v1.0/resources/email_app_usage_reports">
+		<Item text="ユーザーの詳細を取得する" url="/en-us/api-reference/v1.0/api/reportroot_getemailappusageuserdetail" />
+		<Item text="アプリのユーザーの数を取得する" url="/en-us/api-reference/v1.0/api/reportroot_getemailappusageappsusercounts" />
+		<Item text="ユーザーの数を取得する" url="/en-us/api-reference/v1.0/api/reportroot_getemailappusageusercounts" />
+		<Item text="バージョンのユーザーの数を取得する" url="/en-us/api-reference/v1.0/api/reportroot_getemailappusageversionsusercounts" />
+	  </Item>
+	  <Item text="Outlook メールボックスの使用状況" url="/en-us/api-reference/v1.0/resources/mailbox_usage_reports">
+		<Item text="メールボックスの詳細を取得する" url="/en-us/api-reference/v1.0/api/reportroot_getmailboxusagedetail" />
+		<Item text="メールボックスの数を取得する" url="/en-us/api-reference/v1.0/api/reportroot_getmailboxusagemailboxcounts" />
+		<Item text="クォータ状態のメールボックスの数を取得する" url="/en-us/api-reference/v1.0/api/reportroot_getmailboxusagequotastatusmailboxcounts" />
+		<Item text="ストレージを取得する" url="/en-us/api-reference/v1.0/api/reportroot_getmailboxusagestorage" />
+	  </Item>
+	  <Item text="Office 365 のライセンス認証" url="/en-us/api-reference/v1.0/resources/office_365_activations_reports">
+		<Item text="ユーザーの詳細を取得する" url="/en-us/api-reference/v1.0/api/reportroot_getoffice365activationsuserdetail" />
+		<Item text="ライセンス認証の数を取得する" url="/en-us/api-reference/v1.0/api/reportroot_getoffice365activationcounts" />
+		<Item text="ユーザーの数を取得する" url="/en-us/api-reference/v1.0/api/reportroot_getoffice365activationsusercounts" />
+	  </Item>
+	  <Item text="Office 365 のアクティブなユーザー" url="/en-us/api-reference/v1.0/resources/office_365_active_users_reports">
+		<Item text="ユーザーの詳細を取得する" url="/en-us/api-reference/v1.0/api/reportroot_getoffice365activeuserdetail" />
+		<Item text="ユーザーの数を取得する" url="/en-us/api-reference/v1.0/api/reportroot_getoffice365activeusercounts" />
+		<Item text="サービスのユーザーの数を取得する" url="/en-us/api-reference/v1.0/api/reportroot_getoffice365servicesusercounts" />
+	  </Item>
+	  <Item text="Office 365 グループ アクティビティ" url="/en-us/api-reference/v1.0/resources/office_365_groups_activity_reports">
+		<Item text="グループの詳細を取得する" url="/en-us/api-reference/v1.0/api/reportroot_getoffice365groupsactivitydetail" />
+		<Item text="アクティビティの数を取得する" url="/en-us/api-reference/v1.0/api/reportroot_getoffice365groupsactivitycounts" />
+		<Item text="グループの数を取得する" url="/en-us/api-reference/v1.0/api/reportroot_getoffice365groupsactivitygroupcounts" />
+		<Item text="ストレージを取得する" url="/en-us/api-reference/v1.0/api/reportroot_getoffice365groupsactivitystorage" />
+		<Item text="ファイルの数を取得する" url="/en-us/api-reference/v1.0/api/reportroot_getoffice365groupsactivityfilecounts" />
+	  </Item>
+	  <Item text="OneDrive アクティビティ" url="/en-us/api-reference/v1.0/resources/onedrive_activity_reports">
+		<Item text="ユーザーの詳細を取得する" url="/en-us/api-reference/v1.0/api/reportroot_getonedriveactivityuserdetail" />
+		<Item text="ユーザーの数を取得する" url="/en-us/api-reference/v1.0/api/reportroot_getonedriveactivityusercounts" />
+		<Item text="ファイルの数を取得する" url="/en-us/api-reference/v1.0/api/reportroot_getonedriveactivityfilecounts" />
+	  </Item>
+	  <Item text="OneDrive の使用状況" url="/en-us/api-reference/v1.0/resources/onedrive_usage_reports">
+		<Item text="アカウントの詳細を取得する" url="/en-us/api-reference/v1.0/api/reportroot_getonedriveusageaccountdetail" />
+		<Item text="アカウントの数を取得する" url="/en-us/api-reference/v1.0/api/reportroot_getonedriveusageaccountcounts" />
+		<Item text="ファイルの数を取得する" url="/en-us/api-reference/v1.0/api/reportroot_getonedriveusagefilecounts" />
+		<Item text="ストレージを取得する" url="/en-us/api-reference/v1.0/api/reportroot_getonedriveusagestorage" />
+	  </Item>
+	  <Item text="SharePoint アクティビティ" url="/en-us/api-reference/v1.0/resources/sharepoint_activity_reports">
+		<Item text="ユーザーの詳細を取得する" url="/en-us/api-reference/v1.0/api/reportroot_getsharepointactivityuserdetail" />
+		<Item text="ファイルの数を取得する" url="/en-us/api-reference/v1.0/api/reportroot_getsharepointactivityfilecounts" />
+		<Item text="ユーザーの数を取得する" url="/en-us/api-reference/v1.0/api/reportroot_getsharepointactivityusercounts" />
+		<Item text="ページを取得する" url="/en-us/api-reference/v1.0/api/reportroot_getsharepointactivitypages" />
+	  </Item>
+	  <Item text="SharePoint サイトの使用状況" url="/en-us/api-reference/v1.0/resources/sharepoint_site_usage_reports">
+		<Item text="サイトの詳細を取得する" url="/en-us/api-reference/v1.0/api/reportroot_getsharepointsiteusagedetail" />
+		<Item text="ファイルの数を取得する" url="/en-us/api-reference/v1.0/api/reportroot_getsharepointsiteusagefilecounts" />
+		<Item text="サイトの数を取得する" url="/en-us/api-reference/v1.0/api/reportroot_getsharepointsiteusagesitecounts" />
+		<Item text="ストレージを取得する" url="/en-us/api-reference/v1.0/api/reportroot_getsharepointsiteusagestorage" />
+		<Item text="ページを取得する" url="/en-us/api-reference/v1.0/api/reportroot_getsharepointsiteusagepages" />
+	  </Item>
+	  <Item text="Skype for Business アクティビティ" url="/en-us/api-reference/v1.0/resources/skype_for_business_activity_reports">
+		<Item text="ユーザーの詳細を取得する" url="/en-us/api-reference/v1.0/api/reportroot_getskypeforbusinessactivityuserdetail" />
+		<Item text="アクティビティの数を取得する" url="/en-us/api-reference/v1.0/api/reportroot_getskypeforbusinessactivitycounts" />
+		<Item text="ユーザーの数を取得する" url="/en-us/api-reference/v1.0/api/reportroot_getskypeforbusinessactivityusercounts" />
+	  </Item>
+	  <Item text="Skype for Business デバイスの使用状況" url="/en-us/api-reference/v1.0/resources/skype_for_business_device_usage_reports">
+		<Item text="ユーザーの詳細を取得する" url="/en-us/api-reference/v1.0/api/reportroot_getskypeforbusinessdeviceusageuserdetail" />
+		<Item text="配布のユーザーの数を取得する" url="/en-us/api-reference/v1.0/api/reportroot_getskypeforbusinessdeviceusagedistributionusercounts" />
+		<Item text="ユーザーの数を取得する" url="/en-us/api-reference/v1.0/api/reportroot_getskypeforbusinessdeviceusageusercounts" />
+	  </Item>
+	  <Item text="Skype for Business 開催者アクティビティ" url="/en-us/api-reference/v1.0/resources/skype_for_business_organizer_activity_reports">
+		<Item text="アクティビティの数を取得する" url="/en-us/api-reference/v1.0/api/reportroot_getskypeforbusinessorganizeractivitycounts" />
+		<Item text="ユーザーの数を取得する" url="/en-us/api-reference/v1.0/api/reportroot_getskypeforbusinessorganizeractivityusercounts" />
+		<Item text="分の数を取得する" url="/en-us/api-reference/v1.0/api/reportroot_getskypeforbusinessorganizeractivityminutecounts" />
+	  </Item>
+	  <Item text="Skype for Business 参加者アクティビティ" url="/en-us/api-reference/v1.0/resources/skype_for_business_participant_activity_reports">
+		<Item text="アクティビティの数を取得する" url="/en-us/api-reference/v1.0/api/reportroot_getskypeforbusinessparticipantactivitycounts" />
+		<Item text="ユーザーの数を取得する" url="/en-us/api-reference/v1.0/api/reportroot_getskypeforbusinessparticipantactivityusercounts" />
+		<Item text="分の数を取得する" url="/en-us/api-reference/v1.0/api/reportroot_getskypeforbusinessparticipantactivityminutecounts" />
+	  </Item>
+	  <Item text="Skype for Business ピアツーピア アクティビティ" url="/en-us/api-reference/v1.0/resources/skype_for_business_peer_to_peer_activity">
+		<Item text="アクティビティの数を取得する" url="/en-us/api-reference/v1.0/api/reportroot_getskypeforbusinesspeertopeeractivitycounts" />
+		<Item text="ユーザーの数を取得する" url="/en-us/api-reference/v1.0/api/reportroot_getskypeforbusinesspeertopeeractivityusercounts" />
+		<Item text="分の数を取得する" url="/en-us/api-reference/v1.0/api/reportroot_getskypeforbusinesspeertopeeractivityminutecounts" />
+	  </Item>
+	  <Item text="Yammer アクティビティ" url="/en-us/api-reference/v1.0/resources/yammer_activity_reports">
+		<Item text="ユーザーの詳細を取得する" url="/en-us/api-reference/v1.0/api/reportroot_getyammeractivityuserdetail" />
+		<Item text="アクティビティの数を取得する" url="/en-us/api-reference/v1.0/api/reportroot_getyammeractivitycounts" />
+		<Item text="ユーザーの数を取得する" url="/en-us/api-reference/v1.0/api/reportroot_getyammeractivityusercounts" />
+	  </Item>
+	  <Item text="Yammer デバイスの使用状況" url="/en-us/api-reference/v1.0/resources/yammer_device_usage_reports">
+		<Item text="ユーザーの詳細を取得する" url="/en-us/api-reference/v1.0/api/reportroot_getyammerdeviceusageuserdetail" />
+		<Item text="配布のユーザーの数を取得する" url="/en-us/api-reference/v1.0/api/reportroot_getyammerdeviceusagedistributionusercounts" />
+		<Item text="ユーザーの数を取得する" url="/en-us/api-reference/v1.0/api/reportroot_getyammerdeviceusageusercounts" />
+	  </Item>
+	  <Item text="Yammer グループ アクティビティ" url="/en-us/api-reference/v1.0/resources/yammer_groups_activity_reports">
+		<Item text="グループの詳細を取得する" url="/en-us/api-reference/v1.0/api/reportroot_getyammergroupsactivitydetail" />
+		<Item text="グループの数を取得する" url="/en-us/api-reference/v1.0/api/reportroot_getyammergroupsactivitygroupcounts" />
+		<Item text="アクティビティの数を取得する" url="/en-us/api-reference/v1.0/api/reportroot_getyammergroupsactivitycounts" />
+	  </Item>
+	</Item>
   <Item text="スキーマ拡張機能" url="/en-us/api-reference/v1.0/resources/schemaextension" SEOKeyword="拡張 API、Microsoft Graph API、スキーマ拡張 API、スキーマ拡張機能" SEODescription="Microsoft Graph 内のリソースにカスタム データを追加するための API。">
       <Item text="スキーマ拡張機能を一覧表示する" url="/en-us/api-reference/v1.0/api/schemaextension_list" SEOKeyword="スキーマ拡張機能を一覧表示する、Microsoft Graph API" SEODescription="スキーマ拡張機能の定義とそのプロパティのコレクションを取得します。" />
       <Item text="スキーマ拡張機能を作成する" url="/en-us/api-reference/v1.0/api/schemaextension_post_schemaextensions" SEOKeyword="スキーマ拡張機能を作成する、Microsoft Graph API" SEODescription="スキーマ拡張機能の定義を作成する API。" />
@@ -654,8 +776,20 @@
   <Item text="SharePoint" url="/en-us/api-reference/v1.0/resources/sharepoint" SEOKeyword="SharePoint, サイト, リスト, ドライブ, Microsoft Graph API, SharePoint API">
     <Item text="サイト" url="/en-us/api-reference/v1.0/resources/site" SEOKeyword="SharePoint, サイト, Microsoft Graph API, SharePoint サイト API">
       <Item text="サイトを取得する" url="/en-us/api-reference/v1.0/api/site_get" SEOKeyword="SharePoint, サイト, サイトを取得する" SEODescription="" />&gt;
-      <Item text="サブサイトを一覧表示する" url="/en-us/api-reference/v1.0/api/subsites_list" SEOKeyword="SharePoint、サブサイトを一覧表示する" SEODescription="" />
+      <Item text="リストを取得する" url="/en-us/api-reference/v1.0/api/list_list" SEOKeyword="" SEODescription="" />&gt;
+      <Item text="サブサイトを一覧表示する" url="/en-us/api-reference/v1.0/api/subsites_list" SEOKeyword="SharePoint, サブサイトを一覧表示する" SEODescription="" />
     </Item>
+    <Item text="リスト" url="/en-us/api-reference/v1.0/resources/list" SEOKeyword="" SEODescription="">
+      <Item text="リストを取得する" url="/en-us/api-reference/v1.0/api/list_get" SEOKeyword="" SEODescription="" />&gt;
+      <Item text="項目を取得する" url="/en-us/api-reference/v1.0/api/listitem_list" SEOKeyword="SharePoint, 項目を一覧表示する, 項目を取得する, ListItems を取得する" SEODescription="" />
+      <Item text="リストを作成する" url="/en-us/api-reference/v1.0/api/list_create" SEOKeyword="" SEODescription="" />&gt;
+    </Item>
+    <Item text="ListItems" url="/en-us/api-reference/v1.0/resources/listitem" SEOKeyword="SharePoint, ListItems, Microsoft Graph API, SharePoint リスト API" SEODescription="">
+        <Item text="項目を取得する" url="/en-us/api-reference/v1.0/api/listitem_get" SEOKeyword="SharePoint, 項目を取得する, Microsoft Graph API, SharePoint リスト API" SEODescription="" />
+        <Item text="項目を作成する" url="/en-us/api-reference/v1.0/api/listitem_create" SEOKeyword="SharePoint, 項目を作成する, 作成, Microsoft Graph API, SharePoint リスト API" SEODescription="" />
+        <Item text="項目を更新する" url="/en-us/api-reference/v1.0/api/listitem_update" SEOKeyword="SharePoint, 項目を更新する, 更新, Microsoft Graph API, SharePoint リスト API" SEODescription="" />
+        <Item text="項目を削除する" url="/en-us/api-reference/v1.0/api/listitem_delete" SEOKeyword="SharePoint、項目を削除する、削除、Microsoft Graph API、SharePoint リスト API" SEODescription="" />
+      </Item>
   </Item>
   <Item text="Webhook" url="/en-us/api-reference/v1.0/resources/webhooks" SEOKeyword="洞察、Microsoft Graph API、ユーザー API" SEODescription="">
     <Item text="サブスクリプション" url="/en-us/api-reference/v1.0/resources/subscription" SEOKeyword="洞察、Microsoft Graph API、ユーザー API" SEODescription="">
@@ -688,6 +822,8 @@
         <Item text="予定表ビューを一覧表示する" url="/en-us/api-reference/beta/api/calendar_list_calendarview" SEOKeyword="calendarView を一覧表示する、Microsoft Graph API、Users API" SEODescription="イベント オブジェクトのリストを取得します。" />
         <Item text="通知ビュー" url="/en-us/api-reference/beta/api/user_reminderview" SEOKeyword="ユーザー: reminderView、Microsoft Graph API、ユーザー API" SEODescription="" />
         <Item text="会議の日時を検索する" url="/en-us/api-reference/beta/api/user_findmeetingtimes" SEOKeyword="ユーザー: 会議の日時, Microsoft Graph API, ユーザー API" SEODescription="" />
+		<Item text="会議室一覧を検索する" url="/en-us/api-reference/beta/api/user_findroomlists" />
+		<Item text="会議室を検索する" url="/en-us/api-reference/beta/api/user_findrooms" />
       </Item>
       <Item text="連絡先" url="/en-us/api-reference/beta/resources/contact" SEOKeyword="ユーザーの連絡先, Microsoft Graph API, ユーザー API" SEODescription="">
         <Item text="連絡先を一覧表示する" url="/en-us/api-reference/beta/api/user_list_contacts" SEOKeyword="連絡先を一覧表示する、Microsoft Graph API、Users API" SEODescription="連絡先オブジェクトのリストを取得します。" />
@@ -709,7 +845,7 @@
       </Item>
       <Item text="ドライブ" url="/en-us/api-reference/beta/resources/drive" SEOKeyword="ユーザーのドライブ, Microsoft Graph API, ユーザー API" SEODescription="">
         <Item text="ドライブを取得する" url="/en-us/api-reference/beta/api/drive_get" SEOKeyword="ドライブを取得する、Microsoft Graph API、ドライブ API" SEODescription="ドライブ オブジェクトのプロパティと関係を取得します。" />
-        <Item text="子を一覧表示する" url="/en-us/api-reference/beta/api/item_list_children" SEOKeyword="項目を一覧表示する、Microsoft Graph API、ドライブ API" SEODescription="項目オブジェクトのリストを取得します。" />
+        <Item text="子を一覧表示する" url="/en-us/api-reference/beta/api/driveitem_list_children" SEOKeyword="項目を一覧表示する、Microsoft Graph API、ドライブ API" SEODescription="項目オブジェクトのリストを取得します。" />
       </Item>
       <Item text="グループ" url="/en-us/api-reference/beta/resources/group" SEOKeyword="グループ、Microsoft Graph API、ユーザー API" SEODescription="">
         <Item text="結合されたチームを一覧表示する" url="/en-us/api-reference/beta/api/user_list_joinedteams" SEOKeyword="joinedTeams を一覧表示する、Microsoft Graph API、ユーザー API" SEODescription="ユーザーが属している Microsoft Teams のリストを取得します。" />
@@ -803,9 +939,9 @@
 	  <Item text="カレンダー" url="/en-us/api-reference/beta/resources/event" SEOKeyword="ユーザーの予定表, Microsoft Graph API, ユーザー API" SEODescription="">
         <Item text="イベントを一覧表示する" url="/en-us/api-reference/beta/api/group_list_events" SEOKeyword="イベントを一覧表示する、Microsoft Graph API、Groups API" SEODescription="イベント オブジェクトのリストを取得します。" />
         <Item text="イベントを作成する" url="/en-us/api-reference/beta/api/group_post_events" SEOKeyword="イベントを作成する、Microsoft Graph API、グループ API" SEODescription="この API を使用して、新しいイベントを作成します。" />
-        <Item text="イベントを取得する" url="/en-us/api-reference/beta/api/event_get" />
-        <Item text="イベントを更新する" url="/en-us/api-reference/beta/api/event_update" />
-        <Item text="イベントを削除する" url="/en-us/api-reference/beta/api/event_delete" />
+        <Item text="イベントを取得する" url="/en-us/api-reference/beta/api/group_get_event" />
+        <Item text="イベントを更新する" url="/en-us/api-reference/beta/api/group_update_event" />
+        <Item text="イベントを削除する" url="/en-us/api-reference/beta/api/group_delete_event" />
         <Item text="予定表ビューを一覧表示する" url="/en-us/api-reference/beta/api/group_list_calendarview" SEOKeyword="calendarView を一覧表示する、Microsoft Graph API、Groups API" SEODescription="イベント オブジェクトのリストを取得します。" />
         <Item text="添付ファイルを一覧表示する" url="/en-us/api-reference/beta/api/event_list_attachments" SEOKeyword="添付ファイルを一覧表示する、Microsoft Graph API、Outlook Calendar API" SEODescription="添付ファイル オブジェクトのリストを取得します。" />
         <Item text="添付ファイルを追加する" url="/en-us/api-reference/beta/api/event_post_attachments" SEOKeyword="添付ファイルを作成する, Microsoft Graph API, Outlook Calendar API" SEODescription="この API を使用して、新しい添付ファイルを作成します。" />
@@ -815,30 +951,30 @@
       <Item text="会話" url="/en-us/api-reference/beta/resources/conversation" SEOKeyword="会話 API, Microsoft Graph API, 会話 API" SEODescription="">
         <Item text="会話を一覧表示する" url="/en-us/api-reference/beta/api/group_list_conversations" SEOKeyword="会話を一覧表示する、Microsoft Graph API、Groups API" SEODescription="会話オブジェクトのリストを取得します。" />
         <Item text="会話を作成する" url="/en-us/api-reference/beta/api/group_post_conversations" SEOKeyword="会話を作成する、Microsoft Graph API、Groups API" SEODescription="この API を使用して、新しい会話を作成します。" />
-        <Item text="グループ会話を取得する" url="/en-us/api-reference/beta/api/conversation_get" SEOKeyword="グループ会話を取得する、Microsoft Graph API、Outlook 会話 API" SEODescription="会話オブジェクトのプロパティと関係を取得します。" />
-        <Item text="グループ会話を削除する" url="/en-us/api-reference/beta/api/conversation_delete" SEOKeyword="グループ会話を削除する、Microsoft Graph API、Outlook 会話 API" SEODescription="会話を削除します。" />
+        <Item text="グループ会話を取得する" url="/en-us/api-reference/beta/api/group_get_conversation" SEOKeyword="グループ会話を取得する、Microsoft Graph API、Outlook 会話 API" SEODescription="会話オブジェクトのプロパティと関係を取得します。" />
+        <Item text="グループ会話を削除する" url="/en-us/api-reference/beta/api/group_delete_conversation" SEOKeyword="グループ会話を削除する、Microsoft Graph API、Outlook 会話 API" SEODescription="会話を削除します。" />
         <Item text="会話スレッドを一覧表示する" url="/en-us/api-reference/beta/api/conversation_list_threads" SEOKeyword="スレッドを一覧表示する、Microsoft Graph API、Groups API" SEODescription="conversationthread オブジェクトのリストを取得します。" />
         <Item text="会話スレッドを作成する" url="/en-us/api-reference/beta/api/conversation_post_threads" SEOKeyword="スレッドを作成する、Microsoft Graph API、Groups API" SEODescription="この API を使用して、新しいスレッドを作成します。" />
         <Item text="承認済み送信者を一覧表示する" url="/en-us/api-reference/beta/api/group_list_acceptedsenders" SEOKeyword="acceptedSenders を一覧表示する、Microsoft Graph API、Groups API" SEODescription="directoryobject オブジェクトのリストを取得します。" />
         <Item text="承認済み送信者を作成する" url="/en-us/api-reference/beta/api/group_post_acceptedsenders" SEOKeyword="acceptedSender を作成する、Microsoft Graph API、Groups API" SEODescription="この API を使用して、新しい acceptedSender を作成します。" />
-        <Item text="承認済み送信者を削除する" url="/en-us/api-reference/beta/api/group_delete_acceptedsenders" SEOKeyword="acceptedSender を削除する、Microsoft Graph API、Groups API" SEODescription="この API を使用して、新しい acceptedSender を削除します。" />
+        <Item text="承認済み送信者を削除する" url="/en-us/api-reference/beta/api/group_delete_acceptedsenders" SEOKeyword="acceptedSender を削除する, Microsoft Graph API, Groups API" SEODescription="この API を使用して、新しい acceptedSender を削除します。" />
         <Item text="拒否する送信者を一覧表示する" url="/en-us/api-reference/beta/api/group_list_rejectedsenders" SEOKeyword="rejectedSenders を一覧表示する、Microsoft Graph API、Groups API" SEODescription="rejectedSenders のリストを取得します。" />
         <Item text="拒否する送信元を作成する" url="/en-us/api-reference/beta/api/group_post_rejectedsenders" SEOKeyword="rejectedSender を作成する、Microsoft Graph API、Groups API" SEODescription="この API を使用して、新しい rejectedSender を作成します。" />
-        <Item text="拒否する送信元を削除する" url="/en-us/api-reference/beta/api/group_delete_rejectedsenders" SEOKeyword="rejectedSender を削除する、Microsoft Graph API、Groups API" SEODescription="この API を使用して、rejectedSender を削除します。" />
+        <Item text="拒否済みの送信者を削除する" url="/en-us/api-reference/beta/api/group_delete_rejectedsenders" SEOKeyword="rejectedSender を削除する, Microsoft Graph API, Groups API" SEODescription="この API を使用して、rejectedSender を削除します。" />
       </Item>
       <Item text="会話スレッド" url="/en-us/api-reference/beta/resources/conversationthread" SEOKeyword="conversationthread API, Microsoft Graph API, conversationthread API" SEODescription="">
         <Item text="スレッドを一覧表示する" url="/en-us/api-reference/beta/api/group_list_threads" SEOKeyword="スレッドを一覧表示する、Microsoft Graph API、Outlook 会話 API" SEODescription="conversationthread オブジェクトのリストを取得します。" />
         <Item text="スレッドを作成する" url="/en-us/api-reference/beta/api/group_post_threads" SEOKeyword="スレッドを作成する、Microsoft Graph API、Outlook 会話 API" SEODescription="この API を使用して、新しいスレッドを作成します。" />
-        <Item text="会話スレッドを取得する" url="/en-us/api-reference/beta/api/conversationthread_get" SEOKeyword="conversationThread を取得する、Microsoft Graph API、Outlook 会話 API" SEODescription="conversationthread オブジェクトのプロパティと関係を取得します。" />
-        <Item text="会話スレッドを更新する" url="/en-us/api-reference/beta/api/conversationthread_update" SEOKeyword="conversationthread を更新する、Microsoft Graph API、Outlook 会話 API" SEODescription="conversationthread オブジェクトのプロパティを更新します。" />
-        <Item text="会話スレッドを削除する" url="/en-us/api-reference/beta/api/conversationthread_delete" SEOKeyword="conversationThread を削除する、Microsoft Graph API、Outlook 会話 API" SEODescription="conversationThread を削除します。" />
+        <Item text="会話スレッドを取得する" url="/en-us/api-reference/beta/api/group_get_thread" SEOKeyword="conversationThread を取得する、Microsoft Graph API、Outlook 会話 API" SEODescription="conversationthread オブジェクトのプロパティと関係を取得します。" />
+        <Item text="会話スレッドを更新する" url="/en-us/api-reference/beta/api/group_update_thread" SEOKeyword="conversationthread を更新する、Microsoft Graph API、Outlook 会話 API" SEODescription="conversationthread オブジェクトのプロパティを更新します。" />
+        <Item text="会話スレッドを削除する" url="/en-us/api-reference/beta/api/group_delete_thread" SEOKeyword="conversationThread を削除する、Microsoft Graph API、Outlook 会話 API" SEODescription="conversationThread を削除します。" />
         <Item text="会話のスレッドに返信する" url="/en-us/api-reference/beta/api/conversationthread_reply" SEOKeyword="conversationThread: 返信、Microsoft Graph API、conversationthread API" SEODescription="" />
       </Item>
       <Item text="ディレクトリ オブジェクト" url="/en-us/api-reference/beta/resources/directoryobject" SEOKeyword="ディレクトリ オブジェクト、Microsoft Graph API、ユーザー API" SEODescription="">
       </Item>
       <Item text="ドライブ" url="/en-us/api-reference/beta/resources/drive" SEOKeyword="ユーザーのドライブ, Microsoft Graph API, ユーザー API" SEODescription="">
         <Item text="ドライブを取得する" url="/en-us/api-reference/beta/api/drive_get" SEOKeyword="ドライブを取得する、Microsoft Graph API、ドライブ API" SEODescription="ドライブ オブジェクトのプロパティと関係を取得します。" />
-        <Item text="子を一覧表示する" url="/en-us/api-reference/beta/api/item_list_children" SEOKeyword="項目を一覧表示する、Microsoft Graph API、ドライブ API" SEODescription="項目オブジェクトのリストを取得します。" />
+        <Item text="子を一覧表示する" url="/en-us/api-reference/beta/api/driveitem_list_children" SEOKeyword="項目を一覧表示する、Microsoft Graph API、ドライブ API" SEODescription="項目オブジェクトのリストを取得します。" />
       </Item>
       <Item text="拡張プロパティ" url="/en-us/api-reference/beta/resources/extended-properties-overview" SEODescription="">
         <Item text="単一値の拡張プロパティ" url="/en-us/api-reference/beta/resources/singlevaluelegacyextendedproperty" SEODescription="">
@@ -999,6 +1135,13 @@
         <Item text="unfamiliarLocationRiskEvent を取得する" url="/en-us/api-reference/beta/api/unfamiliarlocationriskevent_get" SEOKeyword="Microsoft Graph API、Identity Protection API、Azure AD、AADIP、Identity Protection、イベント リスク、unfamiliarLocationRiskEvent API" SEODescription="unfamiliarLocationRiskEvent オブジェクトを取得します。" />
       </Item>
     </Item>
+      <Item text="ID プロバイダー" url="/en-us/api-reference/beta/resources/identityprovider" SEOKeyword="Azure AD、B2C、B2B、MSA、LinkedIn、Facebook、Google" SEODescription="Azure Active Directory と Azure Active Directory B2C で ID プロバイダーを構成します。">
+        <Item text="ID プロバイダーを一覧表示する" url="/en-us/api-reference/beta/api/identityprovider_list" SEODescription="ディレクトリ内で構成されているすべての identityProviders を一覧表示します。" />
+        <Item text="ID プロバイダーを作成する" url="/en-us/api-reference/beta/api/identityprovider_post_identityproviders" SEODescription="新しい identityProvider を作成します。" />
+        <Item text="ID プロバイダーを取得する" url="/en-us/api-reference/beta/api/identityprovider_get" SEODescription="ID で identityProvider を取得します。" />
+        <Item text="ID プロバイダーを更新する" url="/en-us/api-reference/beta/api/identityprovider_update" SEODescription="identityProvider のプロパティを更新します。" />
+        <Item text="ID プロバイダーを削除する" url="/en-us/api-reference/beta/api/identityprovider_delete" SEODescription="既存の identityProvider を削除します。" />
+      </Item>
       <Item text="招待マネージャー" url="/en-us/api-reference/beta/resources/invitation" SEODescription="招待マネージャーを使用して、組織のディレクトリに外部ユーザーを追加するための招待状を作成します。">
         <Item text="招待状の作成" url="/en-us/api-reference/beta/api/invitation_post" SEODescription="組織のディレクトリに外部ユーザーを追加するための招待状を新規作成します。" />
       </Item>
@@ -1047,7 +1190,7 @@
     </Item>
       <Item text="サービス プリンシパル" url="/en-us/api-reference/beta/resources/serviceprincipal">
         <Item text="サービス プリンシパルを一覧表示する" url="/en-us/api-reference/beta/api/serviceprincipal_list" />
-		<Item text="サービス プリンシパルを取得する" url="/en-us/api-reference/beta/api/serviceprincipal_get" />
+		    <Item text="サービス プリンシパルを取得する" url="/en-us/api-reference/beta/api/serviceprincipal_get" />
         <Item text="サービス プリンシパルを更新する" url="/en-us/api-reference/beta/api/serviceprincipal_update" />
         <Item text="サービス プリンシパルを削除する" url="/en-us/api-reference/beta/api/serviceprincipal_delete" />
       </Item>
@@ -1055,10 +1198,117 @@
         <Item text="subscribedSkus を一覧表示する" url="/en-us/api-reference/beta/api/subscribedsku_list" SEOKeyword="subscribedSkus を一覧表示する、Microsoft Graph API、subscribedsku API" SEODescription="subscribedsku オブジェクトのリストを取得します。" />
         <Item text="subscribedSku を取得する" url="/en-us/api-reference/beta/api/subscribedsku_get" SEOKeyword="subscribedSku を取得する、Microsoft Graph API、subscribedsku API" SEODescription="subscribedsku オブジェクトのプロパティとリレーションシップを取得します。" />
       </Item>
+      <Item text="同期" url="/en-us/api-reference/beta/resources/synchronization-overview" SEOKeyword="同期 API, プロビジョニング API, Azure Active Directory, プロビジョニング">
+        <Item text="カスタム ターゲット属性を同期する" url="/en-us/api-reference/beta/resources/synchronization-configure-with-custom-target-attributes" />
+        <Item text="ディレクトリ拡張機能の属性を同期する" url="/en-us/api-reference/beta/resources/synchronization-configure-with-directory-extension-attributes" />
+        <Item text="ジョブ" url="/en-us/api-reference/beta/resources/synchronization_synchronizationjob" SEOKeyword="同期ジョブ, 同期 API, プロビジョニング API, Azure Active Directory, プロビジョニング">
+          <Item text="ジョブを一覧表示する" url="/en-us/api-reference/beta/api/synchronization_synchronizationjob_list" />
+          <Item text="ジョブを作成する" url="/en-us/api-reference/beta/api/synchronization_synchronizationjob_post" />
+		  <Item text="ジョブを取得する" url="/en-us/api-reference/beta/api/synchronization_synchronizationjob_get" />
+          <Item text="ジョブを開始する" url="/en-us/api-reference/beta/api/synchronization_synchronizationjob_start" />
+          <Item text="ジョブを一時停止する" url="/en-us/api-reference/beta/api/synchronization_synchronizationjob_pause" />
+          <Item text="ジョブを再起動する" url="/en-us/api-reference/beta/api/synchronization_synchronizationjob_restart" />
+          <Item text="ジョブを削除する" url="/en-us/api-reference/beta/api/synchronization_synchronizationjob_delete" />
+        </Item>
+        <Item text="スキーマ" url="/en-us/api-reference/beta/resources/synchronization_synchronizationschema" SEOKeyword="同期スキーマ, 同期 API, プロビジョニング API, Azure Active Directory, プロビジョニング">
+            <Item text="スキーマを取得する" url="/en-us/api-reference/beta/api/synchronization_synchronizationschema_get" />
+            <Item text="スキーマ機能を取得する" url="/en-us/api-reference/beta/api/synchronization_synchronizationschema_functions" />
+            <Item text="スキーマ フィルター演算子を取得する" url="/en-us/api-reference/beta/api/synchronization_synchronizationschema_filteroperators" />
+            <Item text="スキーマを更新する" url="/en-us/api-reference/beta/api/synchronization_synchronizationschema_update" />
+            <Item text="スキーマをリセットする" url="/en-us/api-reference/beta/api/synchronization_synchronizationschema_delete" />
+        </Item>
+        <Item text="テンプレート" url="/en-us/api-reference/beta/resources/synchronization_synchronizationtemplate" SEOKeyword="同期テンプレート, 同期 API, プロビジョニング API, Azure Active Directory, プロビジョニング">/&gt;<Item text="テンプレートを一覧表示する" url="/en-us/api-reference/beta/api/synchronization_synchronizationtemplate_list" />
+            <Item text="テンプレートを取得する" url="/en-us/api-reference/beta/api/synchronization_synchronizationtemplate_get" />
+        </Item>
+      </Item>
     </Item>
-    <Item text="Excel" url="/en-us/api-reference/beta/resources/excel" SEOKeyword="Excel API, Microsoft Graph API, Excel API" SEODescription="">
+    <Item text="教育" url="/en-us/api-reference/beta/resources/education-overview">
+		<Item text="学校" url="/en-us/api-reference/beta/resources/educationschool">
+			<Item text="学校を一覧表示する" url="/en-us/api-reference/beta/api/educationroot_list_schools" />
+			<Item text="学校を作成する" url="/en-us/api-reference/beta/api/educationroot_post_schools" />
+			<Item text="学校を取得する" url="/en-us/api-reference/beta/api/educationschool_get" />
+			<Item text="学校を更新する" url="/en-us/api-reference/beta/api/educationschool_update" />
+			<Item text="学校を削除する" url="/en-us/api-reference/beta/api/educationschool_delete" />
+			<Item text="クラスを一覧表示する" url="/en-us/api-reference/beta/api/educationschool_list_classes" />
+			<Item text="クラスを作成する" url="/en-us/api-reference/beta/api/educationschool_post_classes" />
+			<Item text="クラスを削除する" url="/en-us/api-reference/beta/api/educationschool_delete_classes" />
+			<Item text="ユーザーを一覧表示する" url="/en-us/api-reference/beta/api/educationschool_list_users" />
+			<Item text="ユーザーを追加する" url="/en-us/api-reference/beta/api/educationschool_post_users" />
+			<Item text="ユーザーを削除する" url="/en-us/api-reference/beta/api/educationschool_delete_users" />
+		</Item>
+		<Item text="クラス" url="/en-us/api-reference/beta/resources/educationclass">
+			<Item text="学校を一覧表示する" url="/en-us/api-reference/beta/api/educationclass_list_schools" />
+			<Item text="クラスを一覧表示する" url="/en-us/api-reference/beta/api/educationroot_list_classes" />
+			<Item text="クラスを作成する" url="/en-us/api-reference/beta/api/educationroot_post_classes" />
+			<Item text="クラスを取得する" url="/en-us/api-reference/beta/api/educationclass_get" />
+			<Item text="クラスを更新する" url="/en-us/api-reference/beta/api/educationclass_update" />
+			<Item text="クラスを削除する" url="/en-us/api-reference/beta/api/educationclass_delete" />
+			<Item text="教師を一覧表示する" url="/en-us/api-reference/beta/api/educationclass_list_teachers" />
+			<Item text="教師を追加する" url="/en-us/api-reference/beta/api/educationclass_post_teachers" />
+			<Item text="教師を削除する" url="/en-us/api-reference/beta/api/educationclass_delete_teachers" />
+			<Item text="メンバーを一覧表示する" url="/en-us/api-reference/beta/api/educationclass_list_members" />
+			<Item text="メンバーを追加する" url="/en-us/api-reference/beta/api/educationclass_post_members" />
+			<Item text="メンバーを削除する" url="/en-us/api-reference/beta/api/educationclass_delete_members" />
+			<Item text="割り当てを一覧表示する" url="/en-us/api-reference/beta/api/educationclass_list_assignments" />
+			<Item text="割り当てを作成する" url="/en-us/api-reference/beta/api/educationclass_post_assignments" />	
+		</Item>
+		<Item text="ユーザー" url="/en-us/api-reference/beta/resources/educationuser">
+			<Item text="学校を一覧表示する" url="/en-us/api-reference/beta/api/educationuser_list_schools" />
+			<Item text="クラスを一覧表示する" url="/en-us/api-reference/beta/api/educationuser_list_classes" />
+			<Item text="ユーザーを取得する" url="/en-us/api-reference/beta/api/educationuser_get" />
+			<Item text="ユーザーを削除する" url="/en-us/api-reference/beta/api/educationuser_delete" />
+		</Item>
+		<Item text="割り当て" url="/en-us/api-reference/beta/resources/educationassignment">
+			<Item text="割り当てを作成する" url="/en-us/api-reference/beta/api/educationclass_post_assignments" />
+			<Item text="割り当てを取得する" url="/en-us/api-reference/beta/api/educationassignment_get" />
+			<Item text="割り当てを更新する" url="/en-us/api-reference/beta/api/educationassignment_update" />
+			<Item text="割り当てを削除する" url="/en-us/api-reference/beta/api/educationassignment_delete" />
+			<Item text="割り当てリソースを一覧表示する" url="/en-us/api-reference/beta/api/educationassignment_list_resources" />
+			<Item text="割り当てリソースを作成する" url="/en-us/api-reference/beta/api/educationassignment_post_resources" />
+			<Item text="割り当てリソースを取得する" url="/en-us/api-reference/beta/api/educationassignmentresource_get" />
+			<Item text="割り当てリソースを更新する" url="/en-us/api-reference/beta/api/educationassignmentresource_update" />
+			<Item text="割り当てからリソースを削除する" url="/en-us/api-reference/beta/api/educationassignmentresource_delete" />
+			<Item text="割り当てを発行する" url="/en-us/api-reference/beta/api/educationassignment_publish" />
+			<Item text="割り当ての申請を一覧表示する" url="/en-us/api-reference/beta/api/educationassignment_list_submissions" />
+			<Item text="リソース フォルダーの URL を取得する" url="/en-us/api-reference/beta/api/educationassignment_getresourcesfolderurl" />
+		</Item>
+		<Item text="申請" url="/en-us/api-reference/beta/resources/educationsubmission">
+			<Item text="申請リソースを一覧表示する" url="/en-us/api-reference/beta/api/educationsubmission_list_resources" />
+			<Item text="申請リソースを追加する" url="/en-us/api-reference/beta/api/educationsubmission_post_resources" />
+			<Item text="申請リソースを取得する" url="/en-us/api-reference/beta/api/educationsubmissionresource_get" />
+			<Item text="申請リソースを削除する" url="/en-us/api-reference/beta/api/educationsubmissionresource_delete" />
+			<Item text="申請を取得する" url="/en-us/api-reference/beta/api/educationsubmission_get" />
+			<Item text="申請を提出する" url="/en-us/api-reference/beta/api/educationsubmission_submit" />
+			<Item text="申請を取り消す" url="/en-us/api-reference/beta/api/educationsubmission_recall" />
+			<Item text="申請したリソースを一覧表示する" url="/en-us/api-reference/beta/api/educationsubmission_list_submittedresources" />
+			<Item text="申請したリソースを取得する" url="/en-us/api-reference/beta/api/educationsubmittedsubmissionresource_get" />
+			<Item text="申請を評価する" url="/en-us/api-reference/beta/api/educationsubmission_update" />
+			<Item text="申請をリリースする" url="/en-us/api-reference/beta/api/educationsubmission_release" />
+		</Item>
+		<Item text="同期プロファイル" url="/en-us/api-reference/beta/resources/educationsynchronizationprofile">
+			<Item text="プロファイルを一覧表示する" url="/en-us/api-reference/beta/api/educationsynchronizationprofile_list" />
+			<Item text="プロファイルを作成する" url="/en-us/api-reference/beta/api/educationsynchronizationprofile_post" />
+			<Item text="プロファイルを取得する" url="/en-us/api-reference/beta/api/educationsynchronizationprofile_get" />
+			<Item text="プロファイルを削除する" url="/en-us/api-reference/beta/api/educationsynchronizationprofile_delete" />
+			<Item text="同期を開始する" url="/en-us/api-reference/beta/api/educationsynchronizationprofile_start" />
+			<Item text="同期を一時停止する" url="/en-us/api-reference/beta/api/educationsynchronizationprofile_pause" />
+			<Item text="同期を再開する" url="/en-us/api-reference/beta/api/educationsynchronizationprofile_resume" />
+			<Item text="同期をリセットする" url="/en-us/api-reference/beta/api/educationsynchronizationprofile_resume" />
+			<Item text="アップロード URL を取得する" url="/en-us/api-reference/beta/api/educationsynchronizationprofile_uploadurl" />
+		</Item>
+		<Item text="同期プロファイルの状態" url="/en-us/api-reference/beta/resources/educationsynchronizationprofilestatus">
+			<Item text="同期状態を取得する" url="/en-us/api-reference/beta/api/educationsynchronizationprofilestatus_get" />
+		</Item>
+		<Item text="同期エラー" url="/en-us/api-reference/beta/resources/educationsynchronizationerror">
+			<Item text="同期エラーを取得する" url="/en-us/api-reference/beta/api/educationsynchronizationerrors_get" />
+		</Item>
+		</Item>
+	<Item text="Excel" url="/en-us/api-reference/beta/resources/excel" SEOKeyword="Excel API, Microsoft Graph API, Excel API" SEODescription="">
       <Item text="ブック" url="/en-us/api-reference/beta/resources/workbook" SEOKeyword="Excel API, Microsoft Graph API, Excel API" SEODescription="">
-        <Item text="テーブルを一覧表示する" url="/en-us/api-reference/beta/api/workbook_list_tables" SEOKeyword="" SEODescription="" />
+        <Item text="セッションを作成する" url="/en-us/api-reference/beta/api/workbook_createsession" />
+	    <Item text="セッションを更新する" url="/en-us/api-reference/beta/api/workbook_refreshsession" />
+	    <Item text="セッションを閉じる" url="/en-us/api-reference/beta/api/workbook_closesession" />
+		<Item text="テーブルを一覧表示する" url="/en-us/api-reference/beta/api/workbook_list_tables" SEOKeyword="" SEODescription="" />
         <Item text="ワークシートを一覧表示する" url="/en-us/api-reference/beta/api/workbook_list_worksheets" SEOKeyword="" SEODescription="" />
         <Item text="名前を一覧表示する" url="/en-us/api-reference/beta/api/workbook_list_names" SEOKeyword="" SEODescription="" />
       </Item>
@@ -1076,7 +1326,11 @@
       </Item>
       <Item text="範囲" url="/en-us/api-reference/beta/resources/range" SEOKeyword="Excel API, Microsoft Graph API, Excel API" SEODescription="">
         <Item text="範囲を取得する" url="/en-us/api-reference/beta/api/range_get" SEOKeyword="" SEODescription="" />
-        <Item text="結合する" url="/en-us/api-reference/beta/api/range_merge" SEOKeyword="" SEODescription="" />
+        <Item text="範囲を更新する" url="/en-us/api-reference/beta/api/range_update" />
+	    <Item text="範囲を挿入する" url="/en-us/api-reference/beta/api/range_insert" />
+	    <Item text="範囲の書式を取得する" url="/en-us/api-reference/beta/api/rangeformat_get" />
+	    <Item text="範囲の書式を更新する" url="/en-us/api-reference/beta/api/rangeformat_update" />
+		<Item text="結合する" url="/en-us/api-reference/beta/api/range_merge" SEOKeyword="" SEODescription="" />
         <Item text="結合を解除する" url="/en-us/api-reference/beta/api/range_unmerge" SEOKeyword="" SEODescription="" />
         <Item text="解除する" url="/en-us/api-reference/beta/api/range_clear" SEOKeyword="" SEODescription="" />
         <Item text="削除する" url="/en-us/api-reference/beta/api/range_delete" SEOKeyword="" SEODescription="" />
@@ -1085,20 +1339,29 @@
         <Item text="テーブルの追加" url="/en-us/api-reference/beta/api/tablecollection_add" SEOKeyword="" SEODescription="" />
         <Item text="テーブルを取得する" url="/en-us/api-reference/beta/api/table_get" SEOKeyword="" SEODescription="" />
         <Item text="テーブルを更新する" url="/en-us/api-reference/beta/api/table_update" SEOKeyword="" SEODescription="" />
-        <Item text="範囲を取得する" url="/en-us/api-reference/beta/api/table_range" SEOKeyword="" SEODescription="" />
+        <Item text="テーブルを削除する" url="/en-us/api-reference/beta/api/table_delete" />
         <Item text="行を一覧表示する" url="/en-us/api-reference/beta/api/table_list_rows" SEOKeyword="" SEODescription="" />
-        <Item text="列を一覧表示する" url="/en-us/api-reference/beta/api/table_list_columns" SEOKeyword="" SEODescription="" />
+        <Item text="行を作成する" url="/en-us/api-reference/beta/api/table_post_rows" />
+		<Item text="列を一覧表示する" url="/en-us/api-reference/beta/api/table_list_columns" SEOKeyword="" SEODescription="" />
+		<Item text="列を作成する" url="/en-us/api-reference/beta/api/table_post_columns" />
+		<Item text="範囲を取得する" url="/en-us/api-reference/beta/api/table_range" SEOKeyword="" SEODescription="" />
       </Item>
       <Item text="グラフ" url="/en-us/api-reference/beta/resources/chart" SEOKeyword="Excel API, Microsoft Graph API, Excel API" SEODescription="">
-        <Item text="グラフを取得する" url="/en-us/api-reference/beta/api/chart_get" SEOKeyword="" SEODescription="" />
-        <Item text="グラフの画像を取得する" url="/en-us/api-reference/beta/api/chart_image" SEOKeyword="" SEODescription="" />
+        <Item text="グラフを一覧表示する" url="/en-us/api-reference/beta/api/chart_list" />
+		<Item text="グラフを取得する" url="/en-us/api-reference/beta/api/chart_get" SEOKeyword="" SEODescription="" />
+        <Item text="グラフを更新する" url="/en-us/api-reference/beta/api/chart_update" SEOKeyword="" SEODescription="" />
+		<Item text="グラフを削除する" url="/en-us/api-reference/beta/api/chart_delete" />
+		<Item text="グラフを追加する" url="/en-us/api-reference/beta/api/chartcollection_add" />
+		<Item text="グラフの画像を取得する" url="/en-us/api-reference/beta/api/chart_image" SEOKeyword="" SEODescription="" />
         <Item text="データをリセットする" url="/en-us/api-reference/beta/api/chart_setdata" SEOKeyword="" SEODescription="" />
         <Item text="位置データを設定する" url="/en-us/api-reference/beta/api/chart_setposition" SEOKeyword="" SEODescription="" />
-        <Item text="グラフを更新する" url="/en-us/api-reference/beta/api/chart_update" SEOKeyword="" SEODescription="" />
       </Item>
-      <Item text="Nameditem" url="/en-us/api-reference/beta/resources/nameditem" SEOKeyword="Excel API, Microsoft Graph API, Excel API" SEODescription="">
-        <Item text="Nameditem を一覧表示する" url="/en-us/api-reference/beta/api/nameditem_get" SEOKeyword="" SEODescription="" />
-        <Item text="リストの範囲" url="/en-us/api-reference/beta/api/nameditem_range" SEOKeyword="" SEODescription="" />
+      <Item text="名前付きアイテム" url="/en-us/api-reference/beta/resources/nameditem" SEOKeyword="Excel API, Microsoft Graph API, Excel API" SEODescription="">
+        <Item text="名前付きアイテムを一覧表示する" url="/en-us/api-reference/beta/api/nameditem_get" SEOKeyword="" SEODescription="" />
+        <Item text="名前付きアイテムを取得する" url="/en-us/api-reference/beta/api/nameditem_get" />
+	    <Item text="名前付きアイテムを更新する" url="/en-us/api-reference/beta/api/nameditem_update" />
+	    <Item text="名前付きアイテムを追加する" url="/en-us/api-reference/beta/api/nameditem_add" />
+		<Item text="範囲を一覧表示する" url="/en-us/api-reference/beta/api/nameditem_range" SEOKeyword="" SEODescription="" />
       </Item>
     </Item>
     <Item text="Intune" url="/en-us/api-reference/beta/resources/intune_graph_overview">
@@ -1239,6 +1502,14 @@
         </Item>
         <Item text="ファイル暗号化情報" url="/en-us/api-reference/beta/resources/intune_apps_fileencryptioninfo" />
         <Item text="iOS デバイスの種類" url="/en-us/api-reference/beta/resources/intune_apps_iosdevicetype" />
+        <Item text="iOS LOB アプリのプロビジョニング構成の割り当て" url="https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_apps_ioslobappprovisioningconfigurationassignment">
+          <Item text="一覧表示" url="/en-us/api-reference/beta/api/intune_apps_ioslobappprovisioningconfigurationassignment_list" />
+          <Item text="取得" url="/en-us/api-reference/beta/api/intune_apps_ioslobappprovisioningconfigurationassignment_get" />
+          <Item text="作成" url="/en-us/api-reference/beta/api/intune_apps_ioslobappprovisioningconfigurationassignment_create" />
+          <Item text="削除" url="/en-us/api-reference/beta/api/intune_apps_ioslobappprovisioningconfigurationassignment_delete" />
+          <Item text="更新" url="/en-us/api-reference/beta/api/intune_apps_ioslobappprovisioningconfigurationassignment_update" />
+          <Item text="アクションの割り当て" url="/en-us/graph/docs/api-reference/beta/api/intune_apps_ioslobappprovisioningconfiguration_assign" />
+        </Item>
         <Item text="iOS LOB アプリケーション" url="/en-us/api-reference/beta/resources/intune_apps_ioslobapp">
           <Item text="作成" url="/en-us/api-reference/beta/api/intune_apps_ioslobapp_create" />
           <Item text="削除" url="/en-us/api-reference/beta/api/intune_apps_ioslobapp_delete" />
@@ -1305,7 +1576,36 @@
           <Item text="デバイスのインストール状態の一覧表示" url="/en-us/api-reference/beta/api/intune_books_iosvppebook_list_deviceinstallstate" />
           <Item text="ユーザーのインストール状態の概要の一覧表示" url="/en-us/api-reference/beta/api/intune_books_iosvppebook_list_userinstallstatesummary" />
         </Item>
-        <Item text="管理対象デバイスのモバイル アプリ構成のデバイス要約" url="/en-us/api-reference/beta/resources/intune_apps_manageddevicemobileappconfigurationdevicesummary">
+        <Item text="iOS VPP 電子ブックの割り当て" url="https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_books_iosvppebookassignment">
+          <Item text="一覧表示" url="/en-us/api-reference/beta/api/intune_books_iosvppebookassignment_list" />
+          <Item text="取得" url="/en-us/api-reference/beta/api/intune_books_iosvppebookassignment_get" />
+          <Item text="作成" url="/en-us/api-reference/beta/api/intune_books_iosvppebookassignment_create" />
+          <Item text="削除" url="/en-us/api-reference/beta/api/intune_books_iosvppebookassignment_delete" />
+          <Item text="更新" url="/en-us/api-reference/beta/api/intune_books_iosvppebookassignment_update" />
+        </Item>
+        <Item text="macOS LOB アプリ" url="en-us/api-reference/beta/resources/intune_apps_macoslobapp">
+          <Item text="一覧表示" url="/en-us/api-reference/beta/api/intune_apps_macoslobapp_list" />
+          <Item text="取得" url="/en-us/api-reference/beta/api/intune_apps_macoslobapp_get" />
+          <Item text="作成" url="/en-us/api-reference/beta/api/intune_apps_macoslobapp_create" />
+          <Item text="削除" url="/en-us/api-reference/beta/api/intune_apps_macoslobapp_delete" />
+          <Item text="更新" url="/en-us/api-reference/beta/api/intune_apps_macoslobapp_update" />
+        </Item>
+        <Item text="macOS Office スイート アプリ" url="en-us/api-reference/beta/resources/intune_apps_macosofficesuiteapp">
+          <Item text="一覧表示" url="/en-us/api-reference/beta/api/intune_apps_macosofficesuiteapp_list" />
+          <Item text="取得" url="/en-us/api-reference/beta/api/intune_apps_macosofficesuiteapp_get" />
+          <Item text="作成" url="/en-us/api-reference/beta/api/intune_apps_macosofficesuiteapp_create" />
+          <Item text="削除" url="/en-us/api-reference/beta/api/intune_apps_macosofficesuiteapp_delete" />
+          <Item text="更新" url="/en-us/api-reference/beta/api/intune_apps_macosofficesuiteapp_update" />
+        </Item>
+        <Item text="管理対象デバイスのモバイル アプリ構成の割り当て" url="https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_apps_manageddevicemobileappconfigurationassignment">
+          <Item text="一覧表示" url="/en-us/api-reference/beta/api/intune_apps_manageddevicemobileappconfigurationassignment_list" />
+          <Item text="取得" url="/en-us/api-reference/beta/api/intune_apps_manageddevicemobileappconfigurationassignment_get" />
+          <Item text="作成" url="/en-us/api-reference/beta/api/intune_apps_manageddevicemobileappconfigurationassignment_create" />
+          <Item text="削除" url="/en-us/api-reference/beta/api/intune_apps_manageddevicemobileappconfigurationassignment_delete" />
+          <Item text="更新" url="/en-us/api-reference/beta/api/intune_apps_manageddevicemobileappconfigurationassignment_update" />
+          <Item text="アクションの割り当て" url="/en-us/graph/docs/api-reference/beta/api/intune_apps_manageddevicemobileappconfiguration_assign" />
+        </Item>
+        <Item text="管理対象デバイスのモバイル アプリ構成のデバイスの要約" url="/en-us/api-reference/beta/resources/intune_apps_manageddevicemobileappconfigurationdevicesummary">
           <Item text="取得" url="/en-us/api-reference/beta/api/intune_apps_manageddevicemobileappconfigurationdevicesummary_get" />
           <Item text="更新" url="/en-us/api-reference/beta/api/intune_apps_manageddevicemobileappconfigurationdevicesummary_update" />
         </Item>
@@ -1319,9 +1619,31 @@
           <Item text="電子書籍グループの割り当ての一覧表示" url="/en-us/api-reference/beta/api/intune_books_managedebook_list_ebookgroupassignment" />
           <Item text="デバイスのインストール状態の一覧表示" url="/en-us/api-reference/beta/api/intune_books_managedebook_list_deviceinstallstate" />
           <Item text="ユーザーのインストール状態の概要の一覧表示" url="/en-us/api-reference/beta/api/intune_books_managedebook_list_userinstallstatesummary" />
-          <Item text="割り当て" url="/en-us/graph/docs/api-reference/beta/api/intune_books_managedebook_assign" />
+          <Item text="アクションの割り当て" url="/en-us/graph/docs/api-reference/beta/api/intune_books_managedebook_assign" />
         </Item>
-        <Item text="モバイル アプリ構成" url="/en-us/api-reference/beta/resources/intune_apps_manageddevicemobileappconfiguration">
+        <Item text="管理対象電子ブックの割り当て" url="https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_books_managedebookassignment">
+          <Item text="一覧表示" url="/en-us/api-reference/beta/api/intune_books_managedebookassignment_list" />
+          <Item text="取得" url="/en-us/api-reference/beta/api/intune_books_managedebookassignment_get" />
+          <Item text="作成" url="/en-us/api-reference/beta/api/intune_books_managedebookassignment_create" />
+          <Item text="削除" url="/en-us/api-reference/beta/api/intune_books_managedebookassignment_delete" />
+          <Item text="更新" url="/en-us/api-reference/beta/api/intune_books_managedebookassignment_update" />
+        </Item>
+        <Item text="ビジネス向け Microsoft Store のアプリ" url="en-us/api-reference/beta/resources/intune_apps_microsoftstoreforbusinessapp">
+          <Item text="一覧表示" url="/en-us/api-reference/beta/api/intune_apps_microsoftstoreforbusinessapp_list" />
+          <Item text="取得" url="/en-us/api-reference/beta/api/intune_apps_microsoftstoreforbusinessapp_get" />
+          <Item text="作成" url="/en-us/api-reference/beta/api/intune_apps_microsoftstoreforbusinessapp_create" />
+          <Item text="削除" url="/en-us/api-reference/beta/api/intune_apps_microsoftstoreforbusinessapp_delete" />
+          <Item text="更新" url="/en-us/api-reference/beta/api/intune_apps_microsoftstoreforbusinessapp_update" />
+        </Item>
+        <Item text="モバイル アプリの割り当て" url="https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_apps_mobileappassignment">
+          <Item text="一覧表示" url="/en-us/api-reference/beta/api/intune_apps_mobileappassignment_list" />
+          <Item text="取得" url="/en-us/api-reference/beta/api/intune_apps_mobileappassignment_get" />
+          <Item text="作成" url="/en-us/api-reference/beta/api/intune_apps_mobileappassignment_create" />
+          <Item text="削除" url="/en-us/api-reference/beta/api/intune_apps_mobileappassignment_delete" />
+          <Item text="更新" url="/en-us/api-reference/beta/api/intune_apps_mobileappassignment_update" />
+          <Item text="アクションの割り当て" url="/en-us/graph/docs/api-reference/beta/api/intune_apps_mobileapp_assign" />
+        </Item>
+        <Item text="モバイル アプリの構成" url="/en-us/api-reference/beta/resources/intune_apps_manageddevicemobileappconfiguration">
           <Item text="割り当て" url="/en-us/api-reference/beta/api/intune_apps_manageddevicemobileappconfiguration_assign" />
           <Item text="作成" url="/en-us/api-reference/beta/api/intune_apps_manageddevicemobileappconfiguration_create" />
           <Item text="削除" url="/en-us/api-reference/beta/api/intune_apps_manageddevicemobileappconfiguration_delete" />
@@ -1643,6 +1965,13 @@
           <Item text="リスト" url="/en-us/api-reference/beta/api/intune_companyterms_termsandconditionsacceptancestatus_list" />
           <Item text="更新" url="/en-us/api-reference/beta/api/intune_companyterms_termsandconditionsacceptancestatus_update" />
         </Item>
+        <Item text="条項および条件の割り当て" url="https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_companyterms_termsandconditionsassignment">
+          <Item text="一覧表示" url="/en-us/api-reference/beta/api/intune_companyterms_termsandconditionsassignment_list" />
+          <Item text="取得" url="/en-us/api-reference/beta/api/intune_companyterms_termsandconditionsassignment_get" />
+          <Item text="作成" url="/en-us/api-reference/beta/api/intune_companyterms_termsandconditionsassignment_create" />
+          <Item text="削除" url="/en-us/api-reference/beta/api/intune_companyterms_termsandconditionsassignment_delete" />
+          <Item text="更新" url="/en-us/api-reference/beta/api/intune_companyterms_termsandconditionsassignment_update" />
+        </Item>
         <Item text="条項および条件のグループの割り当て" url="/en-us/api-reference/beta/resources/intune_companyterms_termsandconditionsgroupassignment">
           <Item text="削除" url="/en-us/api-reference/beta/api/intune_companyterms_termsandconditionsgroupassignment_delete" />
           <Item text="取得" url="/en-us/api-reference/beta/api/intune_companyterms_termsandconditionsgroupassignment_get" />
@@ -1652,6 +1981,20 @@
         </Item>
       </Item>
       <Item text="企業の登録" url="/en-us/api-reference/beta/resources/intune_corporate_enrollment_conceptual">
+        <Item text="Active Directory Windows Autopilot 展開プロファイル" url="en-us/graph/docs/api-reference/beta/api/resources/intune_enrollment_activedirectorywindowsautopilotdeploymentprofile">
+          <Item text="一覧表示" url="/en-us/api-reference/beta/api/intune_enrollment_activedirectorywindowsautopilotdeploymentprofile_list" />
+          <Item text="取得" url="/en-us/api-reference/beta/api/intune_enrollment_activedirectorywindowsautopilotdeploymentprofile_get" />
+          <Item text="作成" url="/en-us/api-reference/beta/api/intune_enrollment_activedirectorywindowsautopilotdeploymentprofile_create" />
+          <Item text="削除" url="/en-us/api-reference/beta/api/intune_enrollment_activedirectorywindowsautopilotdeploymentprofile_delete" />
+          <Item text="更新" url="/en-us/api-reference/beta/api/intune_enrollment_activedirectorywindowsautopilotdeploymentprofile_update" />
+        </Item>
+        <Item text="Azure AD Windows Autopilot 展開プロファイル" url="en-us/graph/docs/api-reference/beta/api/resources/intune_enrollment_azureadwindowsautopilotdeploymentprofile">
+          <Item text="一覧表示" url="/en-us/api-reference/beta/api/intune_enrollment_azureadwindowsautopilotdeploymentprofile_list" />
+          <Item text="取得" url="/en-us/api-reference/beta/api/intune_enrollment_azureadwindowsautopilotdeploymentprofile_get" />
+          <Item text="作成" url="/en-us/api-reference/beta/api/intune_enrollment_azureadwindowsautopilotdeploymentprofile_create" />
+          <Item text="削除" url="/en-us/api-reference/beta/api/intune_enrollment_azureadwindowsautopilotdeploymentprofile_delete" />
+          <Item text="更新" url="/en-us/api-reference/beta/api/intune_enrollment_azureadwindowsautopilotdeploymentprofile_update" />
+        </Item>
         <Item text="DEP 登録プロファイル" url="/en-us/api-reference/beta/resources/intune_corpenrollment_depenrollmentprofile">
           <Item text="作成" url="/en-us/api-reference/beta/api/intune_corpenrollment_depenrollmentprofile_create" />
           <Item text="削除" url="/en-us/api-reference/beta/api/intune_corpenrollment_depenrollmentprofile_delete" />
@@ -1743,6 +2086,13 @@
           <Item text="デバイス構成のユーザー状態の一覧表示" url="/en-us/api-reference/beta/api/intune_deviceconfig_androidcustomconfiguration_list_deviceconfigurationuserstatus" />
           <Item text="更新" url="/en-us/api-reference/beta/api/intune_deviceconfig_androidcustomconfiguration_update" />
         </Item>
+        <Item text="パスコードによる、Android デバイス コンプライアンス ローカル アクション ロック デバイス" url="https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_deviceconfig_androiddevicecompliancelocalactionlockdevicewithpasscode">
+          <Item text="一覧表示" url="/en-us/api-reference/beta/api/intune_deviceconfig_androiddevicecompliancelocalactionlockdevicewithpasscode_list" />
+          <Item text="取得" url="/en-us/api-reference/beta/api/intune_deviceconfig_androiddevicecompliancelocalactionlockdevicewithpasscode_get" />
+          <Item text="作成" url="/en-us/api-reference/beta/api/intune_deviceconfig_androiddevicecompliancelocalactionlockdevicewithpasscode_create" />
+          <Item text="削除" url="/en-us/api-reference/beta/api/intune_deviceconfig_androiddevicecompliancelocalactionlockdevicewithpasscode_delete" />
+          <Item text="更新" url="/en-us/api-reference/beta/api/intune_deviceconfig_androiddevicecompliancelocalactionlockdevicewithpasscode_update" />
+        </Item>
         <Item text="Android EAS 電子メール プロファイルの構成" url="/en-us/api-reference/beta/resources/intune_deviceconfig_androideasemailprofileconfiguration">
           <Item text="作成" url="/en-us/api-reference/beta/api/intune_deviceconfig_androideasemailprofileconfiguration_create" />
           <Item text="削除" url="/en-us/api-reference/beta/api/intune_deviceconfig_androideasemailprofileconfiguration_delete" />
@@ -1812,6 +2162,15 @@
           <Item text="デバイス構成のデバイス概要の取得" url="/en-us/api-reference/beta/api/intune_deviceconfig_androidforworkeasemailprofilebase_get_deviceconfigurationdeviceoverview" />
           <Item text="デバイス構成のユーザー概要の取得" url="/en-us/api-reference/beta/api/intune_deviceconfig_androidforworkeasemailprofilebase_get_deviceconfigurationuseroverview" />
           <Item text="Android for Work 証明書プロファイル ベースの取得" url="/en-us/api-reference/beta/api/intune_deviceconfig_androidforworkeasemailprofilebase_get_androidforworkcertificateprofilebase" />
+        </Item>
+        <Item text="Android for Work 登録プロファイル" url="/en-us/graph/docs/api-reference/beta/resources/intune_androidforwork_androidforworkenrollmentprofile">
+          <Item text="一覧表示" url="/en-us/api-reference/beta/api/intune_androidforwork_androidforworkenrollmentprofile_list" />
+          <Item text="取得" url="/en-us/api-reference/beta/api/intune_androidforwork_androidforworkenrollmentprofile_get" />
+          <Item text="作成" url="/en-us/api-reference/beta/api/intune_androidforwork_androidforworkenrollmentprofile_create" />
+          <Item text="削除" url="/en-us/api-reference/beta/api/intune_androidforwork_androidforworkenrollmentprofile_delete" />
+          <Item text="更新" url="/en-us/api-reference/beta/api/intune_androidforwork_androidforworkenrollmentprofile_update" />
+          <Item text="トークン アクションを作成する" url="/en-us/api-reference/beta/api/intune_androidforwork_androidforworkenrollmentprofile_createtoken" />
+          <Item text="トークン アクションを取り消す" url="/en-us/api-reference/beta/api/intune_androidforwork_androidforworkenrollmentprofile_revoketokens" />
         </Item>
         <Item text="Android for Work Enterprise Wi-Fi 構成" url="/en-us/api-reference/beta/resources/intune_deviceconfig_androidforworkenterprisewificonfiguration">
           <Item text="リスト" url="/en-us/api-reference/beta/api/intune_deviceconfig_androidforworkenterprisewificonfiguration_list" />
@@ -2017,6 +2376,13 @@
         </Item>
         <Item text="アプリ リストの項目" url="/en-us/api-reference/beta/resources/intune_deviceconfig_applistitem" />
         <Item text="アプリ コンプライアンス リストの項目" url="/en-us/api-reference/beta/resources/intune_deviceconfig_appscompliancelistitem" />
+        <Item text="監査イベント" url="en-us/api-reference/beta/resources/intune_auditing_auditevent">
+          <Item text="一覧表示" url="/en-us/api-reference/beta/api/intune_auditing_auditevent_list" />
+          <Item text="取得" url="/en-us/api-reference/beta/api/intune_auditing_auditevent_get" />
+          <Item text="作成" url="/en-us/api-reference/beta/api/intune_auditing_auditevent_create" />
+          <Item text="削除" url="/en-us/api-reference/beta/api/intune_auditing_auditevent_delete" />
+          <Item text="更新" url="/en-us/api-reference/beta/api/intune_auditing_auditevent_update" />
+        </Item>
         <Item text="クラウド PKI 管理者の資格情報" url="/en-us/api-reference/beta/resources/intune_deviceconfig_cloudpkiadministratorcredentials" />
         <Item text="クラウド PKI のサブスクリプション" url="/en-us/api-reference/beta/resources/intune_deviceconfig_cloudpkisubscription">
           <Item text="作成" url="/en-us/api-reference/beta/api/intune_deviceconfig_cloudpkisubscription_create" />
@@ -2076,7 +2442,8 @@
           <Item text="割り当て" url="/en-us/api-reference/beta/api/intune_deviceconfig_devicecompliancepolicy_assign" />
           <Item text="取得" url="/en-us/api-reference/beta/api/intune_deviceconfig_devicecompliancepolicy_get" />
           <Item text="デバイス コンプライアンスの概要の取得" url="/en-us/api-reference/beta/api/intune_deviceconfig_devicecompliancepolicy_get_devicecompliancedeviceoverview" />
-          <Item text="リスト" url="/en-us/api-reference/beta/api/intune_deviceconfig_devicecompliancepolicy_list" />
+          <Item text="一覧表示" url="/en-us/api-reference/beta/api/intune_deviceconfig_devicecompliancepolicy_list" />
+          <Item text="アクションの割り当て" url="/en-us/graph/docs/api-reference/beta/api/intune_deviceconfig_devicecompliancepolicy_assign" />
           <Item text="デバイス コンプライアンスの状態の一覧表示" url="/en-us/api-reference/beta/api/intune_deviceconfig_devicecompliancepolicy_list_devicecompliancedevicestatus" />
           <Item text="デバイス コンプライアンス ポリシー グループ割り当ての一覧表示" url="/en-us/api-reference/beta/api/intune_deviceconfig_devicecompliancepolicy_list_devicecompliancepolicygroupassignment" />
           <Item text="デバイス コンプライアンスのルールに対するスケジュール済みアクションの一覧表示" url="/en-us/api-reference/beta/api/intune_deviceconfig_devicecompliancepolicy_list_devicecompliancescheduledactionforrule" />
@@ -2142,7 +2509,7 @@
           <Item text="割り当て" url="/en-us/api-reference/beta/api/intune_deviceconfig_deviceconfiguration_assign" />
           <Item text="取得" url="/en-us/api-reference/beta/api/intune_deviceconfig_deviceconfiguration_get" />
           <Item text="一覧表示" url="/en-us/api-reference/beta/api/intune_deviceconfig_deviceconfiguration_list" />
-
+          <Item text="assignedAccessMultiModeProfiles" url="/en-us/graph/docs/api-reference/beta/api/intune_deviceconfig_deviceconfiguration_assignedaccessmultimodeprofiles" />
           <Item text="windowsPrivacyAccessControls" url="https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/api/intune_deviceconfig_deviceconfiguration_windowsprivacyaccesscontrols" />
         </Item>
         <Item text="デバイス構成の割り当て" url="/en-us/api-reference/beta/resources/intune_deviceconfig_deviceconfigurationassignment">
@@ -2215,6 +2582,24 @@
           <Item text="デバイス構成のグループ割り当ての一覧表示" url="/en-us/api-reference/beta/api/intune_deviceconfig_editionupgradeconfiguration_list_deviceconfigurationgroupassignment" />
           <Item text="デバイス構成のユーザー状態の一覧表示" url="/en-us/api-reference/beta/api/intune_deviceconfig_editionupgradeconfiguration_list_deviceconfigurationuserstatus" />
           <Item text="更新" url="/en-us/api-reference/beta/api/intune_deviceconfig_editionupgradeconfiguration_update" />
+        </Item>
+        <Item text="デバイス管理のトラブルシューティング イベント" url="en-us/api-reference/beta/resources/intune_troubleshooting_devicemanagementtroubleshootingevent">
+          <Item text="一覧表示" url="/en-us/api-reference/beta/api/intune_troubleshooting_devicemanagementtroubleshootingevent_list" />
+          <Item text="取得" url="/en-us/api-reference/beta/api/intune_troubleshooting_devicemanagementtroubleshootingevent_get" />
+          <Item text="作成" url="/en-us/api-reference/beta/api/intune_troubleshooting_devicemanagementtroubleshootingevent_create" />
+          <Item text="削除" url="/en-us/api-reference/beta/api/intune_troubleshooting_devicemanagementtroubleshootingevent_delete" />
+          <Item text="更新" url="/en-us/api-reference/beta/api/intune_troubleshooting_devicemanagementtroubleshootingevent_update" />
+        </Item>
+        <Item text="デバイス セットアップ構成" url="en-us/api-reference/beta/resources/intune_deviceconfig_devicesetupconfiguration">
+          <Item text="一覧表示" url="/en-us/api-reference/beta/api/intune_deviceconfig_devicesetupconfiguration_list" />
+          <Item text="取得" url="/en-us/api-reference/beta/api/intune_deviceconfig_devicesetupconfiguration_get" />
+        </Item>
+        <Item text="登録のトラブルシューティング イベント" url="en-us/api-reference/beta/resources/intune_troubleshooting_enrollmenttroubleshootingevent">
+          <Item text="一覧表示" url="/en-us/api-reference/beta/api/intune_troubleshooting_enrollmenttroubleshootingevent_list" />
+          <Item text="取得" url="/en-us/api-reference/beta/api/intune_troubleshooting_enrollmenttroubleshootingevent_get" />
+          <Item text="作成" url="/en-us/api-reference/beta/api/intune_troubleshooting_enrollmenttroubleshootingevent_create" />
+          <Item text="削除" url="/en-us/api-reference/beta/api/intune_troubleshooting_enrollmenttroubleshootingevent_delete" />
+          <Item text="更新" url="/en-us/api-reference/beta/api/intune_troubleshooting_enrollmenttroubleshootingevent_update" />
         </Item>
         <Item text="拡張キーの使用" url="/en-us/api-reference/beta/resources/intune_deviceconfig_extendedkeyusage" />
         <Item text="iOS 証明書のプロファイル ベース" url="/en-us/api-reference/beta/resources/intune_deviceconfig_ioscertificateprofilebase">
@@ -2411,7 +2796,7 @@
           <Item text="リスト" url="/en-us/api-reference/beta/api/intune_deviceconfig_localizednotificationmessage_list" />
           <Item text="更新" url="/en-us/api-reference/beta/api/intune_deviceconfig_localizednotificationmessage_update" />
         </Item>
-        <Item text="MacOS 証明書のプロファイル ベース" url="/en-us/api-reference/beta/resources/intune_deviceconfig_macoscertificateprofilebase">
+        <Item text="macOS 証明書のプロファイル ベース" url="/en-us/api-reference/beta/resources/intune_deviceconfig_macoscertificateprofilebase">
           <Item text="取得" url="/en-us/api-reference/beta/api/intune_deviceconfig_macoscertificateprofilebase_get" />
           <Item text="デバイス構成の概要の取得" url="/en-us/api-reference/beta/api/intune_deviceconfig_macoscertificateprofilebase_get_deviceconfigurationdeviceoverview" />
           <Item text="リスト" url="/en-us/api-reference/beta/api/intune_deviceconfig_macoscertificateprofilebase_list" />
@@ -2419,7 +2804,7 @@
           <Item text="デバイス構成のグループ割り当ての一覧表示" url="/en-us/api-reference/beta/api/intune_deviceconfig_macoscertificateprofilebase_list_deviceconfigurationgroupassignment" />
           <Item text="デバイス構成のユーザー状態の一覧表示" url="/en-us/api-reference/beta/api/intune_deviceconfig_macoscertificateprofilebase_list_deviceconfigurationuserstatus" />
         </Item>
-        <Item text="MacOS コンプライアンス ポリシー" url="/en-us/api-reference/beta/resources/intune_deviceconfig_macoscompliancepolicy">
+        <Item text="macOS コンプライアンス ポリシー" url="/en-us/api-reference/beta/resources/intune_deviceconfig_macoscompliancepolicy">
           <Item text="作成" url="/en-us/api-reference/beta/api/intune_deviceconfig_macoscompliancepolicy_create" />
           <Item text="削除" url="/en-us/api-reference/beta/api/intune_deviceconfig_macoscompliancepolicy_delete" />
           <Item text="取得" url="/en-us/api-reference/beta/api/intune_deviceconfig_macoscompliancepolicy_get" />
@@ -2431,7 +2816,7 @@
           <Item text="デバイス コンプライアンスのユーザー状態の一覧表示" url="/en-us/api-reference/beta/api/intune_deviceconfig_macoscompliancepolicy_list_devicecomplianceuserstatus" />
           <Item text="更新" url="/en-us/api-reference/beta/api/intune_deviceconfig_macoscompliancepolicy_update" />
         </Item>
-        <Item text="MacOS カスタム構成" url="/en-us/api-reference/beta/resources/intune_deviceconfig_macoscustomconfiguration">
+        <Item text="macOS カスタム構成" url="/en-us/api-reference/beta/resources/intune_deviceconfig_macoscustomconfiguration">
           <Item text="作成" url="/en-us/api-reference/beta/api/intune_deviceconfig_macoscustomconfiguration_create" />
           <Item text="削除" url="/en-us/api-reference/beta/api/intune_deviceconfig_macoscustomconfiguration_delete" />
           <Item text="取得" url="/en-us/api-reference/beta/api/intune_deviceconfig_macoscustomconfiguration_get" />
@@ -2454,7 +2839,7 @@
           <Item text="デバイス構成のデバイス概要の取得" url="/en-us/api-reference/beta/api/intune_deviceconfig_macosdevicefeaturesconfiguration_get_deviceconfigurationdeviceoverview" />
           <Item text="デバイス構成のユーザー概要の取得" url="/en-us/api-reference/beta/api/intune_deviceconfig_macosdevicefeaturesconfiguration_get_deviceconfigurationuseroverview" />
         </Item>
-        <Item text="MacOS Enterprise Wi-Fi 構成" url="/en-us/api-reference/beta/resources/intune_deviceconfig_macosenterprisewificonfiguration">
+        <Item text="macOS enterprise Wi-Fi 構成" url="/en-us/api-reference/beta/resources/intune_deviceconfig_macosenterprisewificonfiguration">
           <Item text="作成" url="/en-us/api-reference/beta/api/intune_deviceconfig_macosenterprisewificonfiguration_create" />
           <Item text="削除" url="/en-us/api-reference/beta/api/intune_deviceconfig_macosenterprisewificonfiguration_delete" />
           <Item text="取得" url="/en-us/api-reference/beta/api/intune_deviceconfig_macosenterprisewificonfiguration_get" />
@@ -2467,7 +2852,7 @@
           <Item text="デバイス構成のユーザー状態の一覧表示" url="/en-us/api-reference/beta/api/intune_deviceconfig_macosenterprisewificonfiguration_list_deviceconfigurationuserstatus" />
           <Item text="更新" url="/en-us/api-reference/beta/api/intune_deviceconfig_macosenterprisewificonfiguration_update" />
         </Item>
-        <Item text="MacOS 一般デバイス構成" url="/en-us/api-reference/beta/resources/intune_deviceconfig_macosgeneraldeviceconfiguration">
+        <Item text="macOS 一般デバイス構成" url="/en-us/api-reference/beta/resources/intune_deviceconfig_macosgeneraldeviceconfiguration">
           <Item text="作成" url="/en-us/api-reference/beta/api/intune_deviceconfig_macosgeneraldeviceconfiguration_create" />
           <Item text="削除" url="/en-us/api-reference/beta/api/intune_deviceconfig_macosgeneraldeviceconfiguration_delete" />
           <Item text="取得" url="/en-us/api-reference/beta/api/intune_deviceconfig_macosgeneraldeviceconfiguration_get" />
@@ -2478,7 +2863,7 @@
           <Item text="デバイス構成のユーザー状態の一覧表示" url="/en-us/api-reference/beta/api/intune_deviceconfig_macosgeneraldeviceconfiguration_list_deviceconfigurationuserstatus" />
           <Item text="更新" url="/en-us/api-reference/beta/api/intune_deviceconfig_macosgeneraldeviceconfiguration_update" />
         </Item>
-        <Item text="MacOS 証明書のプロファイル" url="/en-us/api-reference/beta/resources/intune_deviceconfig_macosscepcertificateprofile">
+        <Item text="macOS 証明書のプロファイル" url="/en-us/api-reference/beta/resources/intune_deviceconfig_macosscepcertificateprofile">
           <Item text="作成" url="/en-us/api-reference/beta/api/intune_deviceconfig_macosscepcertificateprofile_create" />
           <Item text="削除" url="/en-us/api-reference/beta/api/intune_deviceconfig_macosscepcertificateprofile_delete" />
           <Item text="取得" url="/en-us/api-reference/beta/api/intune_deviceconfig_macosscepcertificateprofile_get" />
@@ -2490,7 +2875,7 @@
           <Item text="デバイス構成のユーザー状態の一覧表示" url="/en-us/api-reference/beta/api/intune_deviceconfig_macosscepcertificateprofile_list_deviceconfigurationuserstatus" />
           <Item text="更新" url="/en-us/api-reference/beta/api/intune_deviceconfig_macosscepcertificateprofile_update" />
         </Item>
-        <Item text="MacOS 信頼済みルート証明書" url="/en-us/api-reference/beta/resources/intune_deviceconfig_macostrustedrootcertificate">
+        <Item text="macOS 信頼済みルート証明書" url="/en-us/api-reference/beta/resources/intune_deviceconfig_macostrustedrootcertificate">
           <Item text="作成" url="/en-us/api-reference/beta/api/intune_deviceconfig_macostrustedrootcertificate_create" />
           <Item text="削除" url="/en-us/api-reference/beta/api/intune_deviceconfig_macostrustedrootcertificate_delete" />
           <Item text="取得" url="/en-us/api-reference/beta/api/intune_deviceconfig_macostrustedrootcertificate_get" />
@@ -2501,7 +2886,7 @@
           <Item text="デバイス構成のユーザー状態の一覧表示" url="/en-us/api-reference/beta/api/intune_deviceconfig_macostrustedrootcertificate_list_deviceconfigurationuserstatus" />
           <Item text="更新" url="/en-us/api-reference/beta/api/intune_deviceconfig_macostrustedrootcertificate_update" />
         </Item>
-        <Item text="MacOS VPN 構成" url="/en-us/api-reference/beta/resources/intune_deviceconfig_macosvpnconfiguration">
+        <Item text="macOS VPN 構成" url="/en-us/api-reference/beta/resources/intune_deviceconfig_macosvpnconfiguration">
           <Item text="作成" url="/en-us/api-reference/beta/api/intune_deviceconfig_macosvpnconfiguration_create" />
           <Item text="削除" url="/en-us/api-reference/beta/api/intune_deviceconfig_macosvpnconfiguration_delete" />
           <Item text="取得" url="/en-us/api-reference/beta/api/intune_deviceconfig_macosvpnconfiguration_get" />
@@ -2513,7 +2898,7 @@
           <Item text="デバイス構成のユーザー状態の一覧表示" url="/en-us/api-reference/beta/api/intune_deviceconfig_macosvpnconfiguration_list_deviceconfigurationuserstatus" />
           <Item text="更新" url="/en-us/api-reference/beta/api/intune_deviceconfig_macosvpnconfiguration_update" />
         </Item>
-        <Item text="MacOS Wi-Fi 構成" url="/en-us/api-reference/beta/resources/intune_deviceconfig_macoswificonfiguration">
+        <Item text="macOS Wi-Fi 構成" url="/en-us/api-reference/beta/resources/intune_deviceconfig_macoswificonfiguration">
           <Item text="作成" url="/en-us/api-reference/beta/api/intune_deviceconfig_macoswificonfiguration_create" />
           <Item text="削除" url="/en-us/api-reference/beta/api/intune_deviceconfig_macoswificonfiguration_delete" />
           <Item text="取得" url="/en-us/api-reference/beta/api/intune_deviceconfig_macoswificonfiguration_get" />
@@ -2530,6 +2915,7 @@
           <Item text="作成" url="/en-us/api-reference/beta/api/intune_deviceconfig_manageddevicecertificatestate_create" />
           <Item text="削除" url="/en-us/api-reference/beta/api/intune_deviceconfig_manageddevicecertificatestate_delete" />
           <Item text="更新" url="/en-us/api-reference/beta/api/intune_deviceconfig_manageddevicecertificatestate_update" />
+          <Item text="updateWindowsDeviceAccount" url="/en-us/api-reference/beta/api/intune_devices_manageddevice_updatewindowsdeviceaccount" />
           <Item text="windowsDefenderScan アクション" url="/en-us/graph/docs/api-reference/beta/api/api/intune_devices_manageddevice_windowsdefenderscan" />
           <Item text="windowsDefenderUpdateSignatures" url="/en-us/graph/docs/api-reference/beta/api/api/intune_devices_manageddevice_windowsdefenderupdatesignatures" />
         </Item>
@@ -2542,6 +2928,13 @@
         <Item text="メディア コンテンツのレーティング、ニュージーランド" url="/en-us/api-reference/beta/resources/intune_deviceconfig_mediacontentratingnewzealand" />
         <Item text="メディア コンテンツのレーティング、英国" url="/en-us/api-reference/beta/resources/intune_deviceconfig_mediacontentratingunitedkingdom" />
         <Item text="メディア コンテンツのレーティング、米国" url="/en-us/api-reference/beta/resources/intune_deviceconfig_mediacontentratingunitedstates" />
+        <Item text="NDES コネクタ" url="https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_deviceconfig_ndesconnector">
+          <Item text="一覧表示" url="/en-us/api-reference/beta/api/intune_deviceconfig_ndesconnector_list" />
+          <Item text="取得" url="/en-us/api-reference/beta/api/intune_deviceconfig_ndesconnector_get" />
+          <Item text="作成" url="/en-us/api-reference/beta/api/intune_deviceconfig_ndesconnector_create" />
+          <Item text="削除" url="/en-us/api-reference/beta/api/intune_deviceconfig_ndesconnector_delete" />
+          <Item text="更新" url="/en-us/api-reference/beta/api/intune_deviceconfig_ndesconnector_update" />
+        </Item>
         <Item text="通知メッセージ テンプレート" url="/en-us/api-reference/beta/resources/intune_deviceconfig_notificationmessagetemplate">
           <Item text="取得" url="/en-us/api-reference/beta/api/intune_deviceconfig_notificationmessagetemplate_get" />
           <Item text="ローカライズ済み通知メッセージの一覧表示" url="/en-us/api-reference/beta/api/intune_deviceconfig_notificationmessagetemplate_list_localizednotificationmessage" />
@@ -2682,6 +3075,13 @@
           <Item text="デバイス コンプライアンスのユーザー状態の一覧表示" url="/en-us/api-reference/beta/api/intune_deviceconfig_windows10mobilecompliancepolicy_list_devicecomplianceuserstatus" />
           <Item text="更新" url="/en-us/api-reference/beta/api/intune_deviceconfig_windows10mobilecompliancepolicy_update" />
         </Item>
+        <Item text="Windows 10 PFX インポート証明書のプロファイル" url="https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_deviceconfig_windows10pfximportcertificateprofile">
+          <Item text="一覧表示" url="/en-us/api-reference/beta/api/intune_deviceconfig_windows10pfximportcertificateprofile_list" />
+          <Item text="取得" url="/en-us/api-reference/beta/api/intune_deviceconfig_windows10pfximportcertificateprofile_get" />
+          <Item text="作成" url="/en-us/api-reference/beta/api/intune_deviceconfig_windows10pfximportcertificateprofile_create" />
+          <Item text="削除" url="/en-us/api-reference/beta/api/intune_deviceconfig_windows10pfximportcertificateprofile_delete" />
+          <Item text="更新" url="/en-us/api-reference/beta/api/intune_deviceconfig_windows10pfximportcertificateprofile_update" />
+        </Item>
         <Item text="Windows 10 PKCS 証明書のプロファイル" url="/en-us/api-reference/beta/resources/intune_deviceconfig_windows10pkcscertificateprofile">
           <Item text="作成" url="/en-us/api-reference/beta/api/intune_deviceconfig_windows10pkcscertificateprofile_create" />
           <Item text="削除" url="/en-us/api-reference/beta/api/intune_deviceconfig_windows10pkcscertificateprofile_delete" />
@@ -2693,7 +3093,8 @@
           <Item text="デバイス構成のユーザー状態の一覧表示" url="/en-us/api-reference/beta/api/intune_deviceconfig_windows10pkcscertificateprofile_list_deviceconfigurationuserstatus" />
           <Item text="更新" url="/en-us/api-reference/beta/api/intune_deviceconfig_windows10pkcscertificateprofile_update" />
         </Item>
-        <Item text="Windows 10 の安全な評価構成" url="/en-us/api-reference/beta/resources/intune_deviceconfig_windows10secureassessmentconfiguration">
+        <Item text="Windows 10 プロキシ サーバー" url="/en-us/api-reference/beta/resources/intune_deviceconfig_windows10vpnproxyserver" />
+        <Item text="Windows 10 の安全評価の構成" url="/en-us/api-reference/beta/resources/intune_deviceconfig_windows10secureassessmentconfiguration">
           <Item text="作成" url="/en-us/api-reference/beta/api/intune_deviceconfig_windows10secureassessmentconfiguration_create" />
           <Item text="削除" url="/en-us/api-reference/beta/api/intune_deviceconfig_windows10secureassessmentconfiguration_delete" />
           <Item text="取得" url="/en-us/api-reference/beta/api/intune_deviceconfig_windows10secureassessmentconfiguration_get" />
@@ -2727,7 +3128,6 @@
           <Item text="デバイス構成のユーザー状態の一覧表示" url="/en-us/api-reference/beta/api/intune_deviceconfig_windows10vpnconfiguration_list_deviceconfigurationuserstatus" />
           <Item text="更新" url="/en-us/api-reference/beta/api/intune_deviceconfig_windows10vpnconfiguration_update" />
         </Item>
-        <Item text="Windows 10 プロキシ サーバー" url="/en-us/api-reference/beta/resources/intune_deviceconfig_windows10vpnproxyserver" />
         <Item text="Windows 8.1 証明書プロファイル ベース" url="/en-us/api-reference/beta/resources/intune_deviceconfig_windows81certificateprofilebase">
           <Item text="取得" url="/en-us/api-reference/beta/api/intune_deviceconfig_windows81certificateprofilebase_get" />
           <Item text="デバイス構成の概要の取得" url="/en-us/api-reference/beta/api/intune_deviceconfig_windows81certificateprofilebase_get_deviceconfigurationdeviceoverview" />
@@ -2805,6 +3205,13 @@
           <Item text="デバイス構成のユーザー状態の一覧表示" url="/en-us/api-reference/beta/api/intune_deviceconfig_windows81wifiimportconfiguration_list_deviceconfigurationuserstatus" />
           <Item text="更新" url="/en-us/api-reference/beta/api/intune_deviceconfig_windows81wifiimportconfiguration_update" />
         </Item>
+        <Item text="Windows の割り当て済みアクセス プロファイル" url="https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_deviceconfig_windowsassignedaccessprofile">
+          <Item text="一覧表示" url="/en-us/api-reference/beta/api/intune_deviceconfig_windowsassignedaccessprofile_list" />
+          <Item text="取得" url="/en-us/api-reference/beta/api/intune_deviceconfig_windowsassignedaccessprofile_get" />
+          <Item text="作成" url="/en-us/api-reference/beta/api/intune_deviceconfig_windowsassignedaccessprofile_create" />
+          <Item text="削除" url="/en-us/api-reference/beta/api/intune_deviceconfig_windowsassignedaccessprofile_delete" />
+          <Item text="更新" url="/en-us/api-reference/beta/api/intune_deviceconfig_windowsassignedaccessprofile_update" />
+        </Item>
         <Item text="Windows 証明書のプロファイル ベース" url="/en-us/api-reference/beta/resources/intune_deviceconfig_windowscertificateprofilebase">
           <Item text="リスト" url="/en-us/api-reference/beta/api/intune_deviceconfig_windowscertificateprofilebase_list" />
           <Item text="取得" url="/en-us/api-reference/beta/api/intune_deviceconfig_windowscertificateprofilebase_get" />
@@ -2814,6 +3221,13 @@
           <Item text="デバイス構成のデバイス概要の取得" url="/en-us/api-reference/beta/api/intune_deviceconfig_windowscertificateprofilebase_get_deviceconfigurationdeviceoverview" />
           <Item text="デバイス構成のユーザー概要の取得" url="/en-us/api-reference/beta/api/intune_deviceconfig_windowscertificateprofilebase_get_deviceconfigurationuseroverview" />
         </Item>
+        <Item text="Windows ドメイン参加の構成" url="https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_deviceconfig_windowsdomainjoinconfiguration">
+          <Item text="一覧表示" url="/en-us/api-reference/beta/api/intune_deviceconfig_windowsdomainjoinconfiguration_list" />
+          <Item text="取得" url="/en-us/api-reference/beta/api/intune_deviceconfig_windowsdomainjoinconfiguration_get" />
+          <Item text="作成" url="/en-us/api-reference/beta/api/intune_deviceconfig_windowsdomainjoinconfiguration_create" />
+          <Item text="削除" url="/en-us/api-reference/beta/api/intune_deviceconfig_windowsdomainjoinconfiguration_delete" />
+          <Item text="更新" url="/en-us/api-reference/beta/api/intune_deviceconfig_windowsdomainjoinconfiguration_update" />
+        </Item>
         <Item text="Windows マルウェア情報" url="/en-us/api-reference/beta/resources/intune_endpointprotection_windowsmalwareinformation">
           <Item text="リスト" url="/en-us/api-reference/beta/api/intune_endpointprotection_windowsmalwareinformation_list" />
           <Item text="取得" url="/en-us/api-reference/beta/api/intune_endpointprotection_windowsmalwareinformation_get" />
@@ -2821,6 +3235,20 @@
           <Item text="削除" url="/en-us/api-reference/beta/api/intune_endpointprotection_windowsmalwareinformation_delete" />
           <Item text="更新" url="/en-us/api-reference/beta/api/intune_endpointprotection_windowsmalwareinformation_update" />
           <Item text="Windows 保護の状態の一覧表示" url="/en-us/api-reference/beta/api/intune_endpointprotection_windowsmalwareinformation_list_windowsprotectionstate" />
+        </Item>
+        <Item text="Windows Defender Advanced Threat Protection 構成" url="/en-us/api-reference/beta/resources/intune_deviceconfig_windowsdefenderadvancedthreatprotectionconfiguration">
+            <Item text="一覧表示" url="/en-us/api-reference/beta/api/intune_deviceconfig_windowsdefenderadvancedthreatprotectionconfiguration_list" />
+          <Item text="取得" url="/en-us/api-reference/beta/api/intune_deviceconfig_windowsdefenderadvancedthreatprotectionconfiguration_get" />
+          <Item text="作成" url="/en-us/api-reference/beta/api/intune_deviceconfig_windowsdefenderadvancedthreatprotectionconfiguration_create" />
+          <Item text="削除" url="/en-us/api-reference/beta/api/intune_deviceconfig_windowsdefenderadvancedthreatprotectionconfiguration_delete" />
+          <Item text="更新" url="/en-us/api-reference/beta/api/intune_deviceconfig_windowsdefenderadvancedthreatprotectionconfiguration_update" />
+          <Item text="デバイス構成のグループ割り当ての一覧表示" url="/en-us/api-reference/beta/api/intune_deviceconfig_windowsdefenderadvancedthreatprotectionconfiguration_list_deviceconfigurationgroupassignment" />
+          <Item text="デバイス構成のデバイス状態の一覧表示" url="/en-us/api-reference/beta/api/intune_deviceconfig_windowsdefenderadvancedthreatprotectionconfiguration_list_deviceconfigurationdevicestatus" />
+          <Item text="デバイス構成のユーザー状態の一覧表示" url="/en-us/api-reference/beta/api/intune_deviceconfig_windowsdefenderadvancedthreatprotectionconfiguration_list_deviceconfigurationuserstatus" />
+          <Item text="デバイス構成のデバイス概要の取得" url="/en-us/api-reference/beta/api/intune_deviceconfig_windowsdefenderadvancedthreatprotectionconfiguration_get_deviceconfigurationdeviceoverview" />
+          <Item text="デバイス構成のユーザー概要の取得" url="/en-us/api-reference/beta/api/intune_deviceconfig_windowsdefenderadvancedthreatprotectionconfiguration_get_deviceconfigurationuseroverview" />
+          <Item text="状態デバイス設定要約の一覧表示" url="/en-us/api-reference/beta/api/intune_deviceconfig_windowsdefenderadvancedthreatprotectionconfiguration_list_settingstatedevicesummary" />
+          <Item text="デバイス構成のデバイス状態の要約の取得" url="/en-us/api-reference/beta/api/intune_deviceconfig_windowsdefenderadvancedthreatprotectionconfiguration_get_deviceconfigurationdevicestatesummary" />
         </Item>
         <Item text="Windows Phone 8.1 証明書のプロファイル ベース" url="/en-us/api-reference/beta/resources/intune_deviceconfig_windowsphone81certificateprofilebase">
           <Item text="取得" url="/en-us/api-reference/beta/api/intune_deviceconfig_windowsphone81certificateprofilebase_get" />
@@ -2841,20 +3269,6 @@
           <Item text="デバイス コンプライアンスのルールごとのスケジュール済みアクションの一覧表示" url="/en-us/api-reference/beta/api/intune_deviceconfig_windowsphone81compliancepolicy_list_devicecompliancescheduledactionforrule" />
           <Item text="デバイス コンプライアンスのユーザー状態の一覧表示" url="/en-us/api-reference/beta/api/intune_deviceconfig_windowsphone81compliancepolicy_list_devicecomplianceuserstatus" />
           <Item text="更新" url="/en-us/api-reference/beta/api/intune_deviceconfig_windowsphone81compliancepolicy_update" />
-        </Item>
-        <Item text="Windows Defender Advanced Threat Protection 構成" url="/en-us/api-reference/beta/resources/intune_deviceconfig_windowsdefenderadvancedthreatprotectionconfiguration">
-            <Item text="一覧表示" url="/en-us/api-reference/beta/api/intune_deviceconfig_windowsdefenderadvancedthreatprotectionconfiguration_list" />
-          <Item text="取得" url="/en-us/api-reference/beta/api/intune_deviceconfig_windowsdefenderadvancedthreatprotectionconfiguration_get" />
-          <Item text="作成" url="/en-us/api-reference/beta/api/intune_deviceconfig_windowsdefenderadvancedthreatprotectionconfiguration_create" />
-          <Item text="削除" url="/en-us/api-reference/beta/api/intune_deviceconfig_windowsdefenderadvancedthreatprotectionconfiguration_delete" />
-          <Item text="更新" url="/en-us/api-reference/beta/api/intune_deviceconfig_windowsdefenderadvancedthreatprotectionconfiguration_update" />
-          <Item text="デバイス構成のグループ割り当ての一覧表示" url="/en-us/api-reference/beta/api/intune_deviceconfig_windowsdefenderadvancedthreatprotectionconfiguration_list_deviceconfigurationgroupassignment" />
-          <Item text="デバイス構成のデバイス状態の一覧表示" url="/en-us/api-reference/beta/api/intune_deviceconfig_windowsdefenderadvancedthreatprotectionconfiguration_list_deviceconfigurationdevicestatus" />
-          <Item text="デバイス構成のユーザー状態の一覧表示" url="/en-us/api-reference/beta/api/intune_deviceconfig_windowsdefenderadvancedthreatprotectionconfiguration_list_deviceconfigurationuserstatus" />
-          <Item text="デバイス構成のデバイス概要の取得" url="/en-us/api-reference/beta/api/intune_deviceconfig_windowsdefenderadvancedthreatprotectionconfiguration_get_deviceconfigurationdeviceoverview" />
-          <Item text="デバイス構成のユーザー概要の取得" url="/en-us/api-reference/beta/api/intune_deviceconfig_windowsdefenderadvancedthreatprotectionconfiguration_get_deviceconfigurationuseroverview" />
-          <Item text="状態デバイス設定要約の一覧表示" url="/en-us/api-reference/beta/api/intune_deviceconfig_windowsdefenderadvancedthreatprotectionconfiguration_list_settingstatedevicesummary" />
-          <Item text="デバイス構成のデバイス状態要約の取得" url="/en-us/api-reference/beta/api/intune_deviceconfig_windowsdefenderadvancedthreatprotectionconfiguration_get_deviceconfigurationdevicestatesummary" />
         </Item>
         <Item text="Windows Phone 8.1 カスタム構成" url="/en-us/api-reference/beta/resources/intune_deviceconfig_windowsphone81customconfiguration">
           <Item text="作成" url="/en-us/api-reference/beta/api/intune_deviceconfig_windowsphone81customconfiguration_create" />
@@ -3084,7 +3498,7 @@
           <Item text="更新" url="/en-us/api-reference/beta/api/intune_devicefe_windowsmanagementapp_update" />
         </Item>
         <Item text="Windows 管理アプリの正常性状態" url="/en-us/api-reference/beta/resources/intune_devicefe_windowsmanagementapphealthstate">
-          <Item text="リスト" url="/en-us/api-reference/beta/api/intune_devicefe_windowsmanagementapphealthstate_list" />
+          <Item text="一覧表示" url="/en-us/api-reference/beta/api/intune_devicefe_windowsmanagementapphealthstate_list" />
           <Item text="取得" url="/en-us/api-reference/beta/api/intune_devicefe_windowsmanagementapphealthstate_get" />
           <Item text="作成" url="/en-us/api-reference/beta/api/intune_devicefe_windowsmanagementapphealthstate_create" />
           <Item text="削除" url="/en-us/api-reference/beta/api/intune_devicefe_windowsmanagementapphealthstate_delete" />
@@ -3173,10 +3587,8 @@
         </Item>
         <Item text="管理対象アプリ ポリシー" url="/en-us/api-reference/beta/resources/intune_mam_managedapppolicy">
           <Item text="取得" url="/en-us/api-reference/beta/api/intune_mam_managedapppolicy_get" />
-          <Item text="管理対象アプリ ポリシーの展開の概要の取得" url="/en-us/api-reference/beta/api/intune_mam_managedapppolicy_get_managedapppolicydeploymentsummary" />
-          <Item text="リスト" url="/en-us/api-reference/beta/api/intune_mam_managedapppolicy_list" />
-          <Item text="モバイル アプリ ID の展開の一覧表示" url="/en-us/api-reference/beta/api/intune_mam_managedapppolicy_list_mobileappidentifierdeployment" />
-          <Item text="モバイル アプリ ID の展開の更新" url="/en-us/api-reference/beta/api/intune_mam_managedapppolicy_updatemobileappidentifierdeployments" />
+          <Item text="一覧表示" url="/en-us/api-reference/beta/api/intune_mam_managedapppolicy_list" />
+          <Item text="targetApps アクション" url="/en-us/graph/docs/api-reference/beta/api/intune_mam_managedapppolicy_targetapps" />
         </Item>
         <Item text="管理対象アプリ ポリシーの展開の概要" url="/en-us/api-reference/beta/resources/intune_mam_managedapppolicydeploymentsummary">
           <Item text="取得" url="/en-us/api-reference/beta/api/intune_mam_managedapppolicydeploymentsummary_get" />
@@ -3188,6 +3600,7 @@
           <Item text="管理対象アプリ ポリシーの展開の概要の取得" url="/en-us/api-reference/beta/api/intune_mam_managedappprotection_get_managedapppolicydeploymentsummary" />
           <Item text="リスト" url="/en-us/api-reference/beta/api/intune_mam_managedappprotection_list" />
           <Item text="モバイル アプリ ID の展開の一覧表示" url="/en-us/api-reference/beta/api/intune_mam_managedappprotection_list_mobileappidentifierdeployment" />
+          <Item text="targetApps アクション" url="/en-us/graph/docs/api-reference/beta/api/intune_mam_managedappprotection_targetapps" />
         </Item>
         <Item text="管理対象アプリの登録" url="/en-us/api-reference/beta/resources/intune_mam_managedappregistration">
           <Item text="取得" url="/en-us/api-reference/beta/api/intune_mam_managedappregistration_get" />
@@ -3215,6 +3628,13 @@
           <Item text="リスト" url="/en-us/api-reference/beta/api/intune_mam_mobileappidentifierdeployment_list" />
           <Item text="更新" url="/en-us/api-reference/beta/api/intune_mam_mobileappidentifierdeployment_update" />
         </Item>
+        <Item text="管理対象モバイル アプリ" url="https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_mam_managedmobileapp">
+          <Item text="一覧表示" url="/en-us/api-reference/beta/api/intune_mam_managedmobileapp_list" />
+          <Item text="取得" url="/en-us/api-reference/beta/api/intune_mam_managedmobileapp_get" />
+          <Item text="作成" url="/en-us/api-reference/beta/api/intune_mam_managedmobileapp_create" />
+          <Item text="削除" url="/en-us/api-reference/beta/api/intune_mam_managedmobileapp_delete" />
+          <Item text="更新" url="/en-us/api-reference/beta/api/intune_mam_managedmobileapp_update" />
+        </Item>
         <Item text="MDM Windows Information Protection のポリシー" url="/en-us/api-reference/beta/resources/intune_mam_mdmwindowsinformationprotectionpolicy">
           <Item text="一覧表示" url="/en-us/api-reference/beta/api/intune_mam_mdmwindowsinformationprotectionpolicy_list" />
           <Item text="取得" url="/en-us/api-reference/beta/api/intune_mam_mdmwindowsinformationprotectionpolicy_get" />
@@ -3231,13 +3651,9 @@
           <Item text="作成" url="/en-us/api-reference/beta/api/intune_mam_targetedmanagedappconfiguration_create" />
           <Item text="削除" url="/en-us/api-reference/beta/api/intune_mam_targetedmanagedappconfiguration_delete" />
           <Item text="取得" url="/en-us/api-reference/beta/api/intune_mam_targetedmanagedappconfiguration_get" />
-          <Item text="管理対象アプリ ポリシーの展開の概要の取得" url="/en-us/api-reference/beta/api/intune_mam_targetedmanagedappconfiguration_get_managedapppolicydeploymentsummary" />
           <Item text="リスト" url="/en-us/api-reference/beta/api/intune_mam_targetedmanagedappconfiguration_list" />
-          <Item text="ディレクトリ オブジェクトの一覧表示" url="/en-us/api-reference/beta/api/intune_mam_targetedmanagedappconfiguration_list_directoryobject" />
-          <Item text="モバイル アプリ ID の展開の一覧表示" url="/en-us/api-reference/beta/api/intune_mam_targetedmanagedappconfiguration_list_mobileappidentifierdeployment" />
           <Item text="更新" url="/en-us/api-reference/beta/api/intune_mam_targetedmanagedappconfiguration_update" />
-          <Item text="モバイル アプリ ID の展開の更新" url="/en-us/api-reference/beta/api/intune_mam_targetedManagedAppConfiguration_updatemobileappidentifierdeployments" />
-          <Item text="対象となるセキュリティ グループの更新" url="/en-us/api-reference/beta/api/intune_mam_targetedmanagedappconfiguration_updatetargetedsecuritygroups" />
+          <Item text="targetApps アクション" url="en-us/graph/docs/api-reference/beta/api/intune_mam_targetedmanagedappconfiguration_targetapps" />
         </Item>
         <Item text="対象となる管理対象アプリの保護" url="/en-us/api-reference/beta/resources/intune_mam_targetedmanagedappprotection">
           <Item text="取得" url="/en-us/api-reference/beta/api/intune_mam_targetedmanagedappprotection_get" />
@@ -3327,6 +3743,19 @@
             <Item text="リスト" url="/en-us/api-reference/beta/api/intune_onboarding_devicecategory_list" />
             <Item text="更新" url="/en-us/api-reference/beta/api/intune_onboarding_devicecategory_update" />
         </Item>
+        <Item text="デバイス登録の構成" url="en-us/graph/docs/api-reference/beta/api/resources/intune_onboarding_deviceenrollmentconfiguration">
+          <Item text="一覧表示" url="/en-us/api-reference/beta/api/intune_onboarding_deviceenrollmentconfiguration_list" />
+          <Item text="取得" url="/en-us/api-reference/beta/api/intune_onboarding_deviceenrollmentconfiguration_get" />
+          <Item text="アクションの割り当て" url="/en-us/api-reference/beta/api/intune_onboarding_deviceenrollmentconfiguration_assign" />
+          <Item text="setPriority アクション" url="/en-us/api-reference/beta/api/intune_onboarding_deviceenrollmentconfiguration_setpriority" />
+        </Item>
+        <Item text="デバイス登録限界の構成" url="en-us/graph/docs/api-reference/beta/api/resources/intune_onboarding_deviceenrollmentlimitconfiguration">
+          <Item text="一覧表示" url="/en-us/api-reference/beta/api/intune_onboarding_deviceenrollmentlimitconfiguration_list" />
+          <Item text="取得" url="/en-us/api-reference/beta/api/intune_onboarding_deviceenrollmentlimitconfiguration_get" />
+          <Item text="作成" url="/en-us/api-reference/beta/api/intune_onboarding_deviceenrollmentlimitconfiguration_create" />
+          <Item text="削除" url="/en-us/api-reference/beta/api/intune_onboarding_deviceenrollmentlimitconfiguration_delete" />
+          <Item text="更新" url="/en-us/api-reference/beta" />
+        </Item>
         <Item text="デバイス登録プラットフォームの制限" url="/en-us/api-reference/beta/resources/intune_onboarding_deviceenrollmentplatformrestrictions" />
         <Item text="デバイスの位置情報" url="/en-us/api-reference/beta/resources/intune_onboarding_devicegeolocation" />
         <Item text="デバイス管理 Exchnage コネクタ" url="/en-us/api-reference/beta/resources/intune_onboarding_devicemanagementexchangeconnector">
@@ -3337,12 +3766,34 @@
           <Item text="同期" url="/en-us/api-reference/beta/api/intune_onboarding_devicemanagementexchangeconnector_sync" />
           <Item text="更新" url="/en-us/api-reference/beta/api/intune_onboarding_devicemanagementexchangeconnector_update" />
         </Item>
+        <Item text="デバイス登録プラットフォームの制限の構成" url="en-us/graph/docs/api-reference/beta/api/resources/intune_onboarding_deviceenrollmentplatformrestrictionsconfiguration">
+          <Item text="一覧表示" url="/en-us/api-reference/beta/api/intune_onboarding_deviceenrollmentplatformrestrictionsconfiguration_list" />
+          <Item text="取得" url="/en-us/api-reference/beta/api/intune_onboarding_deviceenrollmentplatformrestrictionsconfiguration_get" />
+          <Item text="作成" url="/en-us/api-reference/beta/api/intune_onboarding_deviceenrollmentplatformrestrictionsconfiguration_create" />
+          <Item text="削除" url="/en-us/api-reference/beta/api/intune_onboarding_deviceenrollmentplatformrestrictionsconfiguration_delete" />
+          <Item text="更新" url="/en-us/api-reference/beta/api/intune_onboarding_deviceenrollmentplatformrestrictionsconfiguration_update" />
+        </Item>
+        <Item text="デバイス登録 Windows Hello for Business の構成" url="en-us/graph/docs/api-reference/beta/api/resources/intune_onboarding_deviceenrollmentwindowshelloforbusinessconfiguration">
+          <Item text="一覧表示" url="/en-us/api-reference/beta/api/intune_onboarding_deviceenrollmentwindowshelloforbusinessconfiguration_list" />
+          <Item text="取得" url="/en-us/api-reference/beta/api/intune_onboarding_deviceenrollmentwindowshelloforbusinessconfiguration_get" />
+          <Item text="作成" url="/en-us/api-reference/beta/api/intune_onboarding_deviceenrollmentwindowshelloforbusinessconfiguration_create" />
+          <Item text="削除" url="/en-us/api-reference/beta/api/intune_onboarding_deviceenrollmentwindowshelloforbusinessconfiguration_delete" />
+          <Item text="更新" url="/en-us/api-reference/beta/api/intune_onboarding_deviceenrollmentwindowshelloforbusinessconfiguration_update" />
+        </Item>
         <Item text="デバイス管理 Exchange On-Premises ポリシー" url="/en-us/api-reference/beta/resources/intune_onboarding_devicemanagementexchangeonpremisespolicy">
           <Item text="取得" url="/en-us/api-reference/beta/api/intune_onboarding_devicemanagementexchangeonpremisespolicy_get" />
           <Item text="オンプレミスの条件付きアクセス設定の取得" url="/en-us/api-reference/beta/api/intune_onboarding_devicemanagementexchangeonpremisespolicy_get_onpremisesconditionalaccesssettings" />
           <Item text="更新" url="/en-us/api-reference/beta/api/intune_onboarding_devicemanagementexchangeonpremisespolicy_update" />
         </Item>
+        <Item text="デバイス管理パートナー" url="en-us/graph/docs/api-reference/beta/api/resources/intune_onboarding_devicemanagementpartner">
+          <Item text="一覧表示" url="/en-us/api-reference/beta/api/intune_onboarding_devicemanagementpartner_list" />
+          <Item text="取得" url="/en-us/api-reference/beta/api/intune_onboarding_devicemanagementpartner_get" />
+          <Item text="作成" url="/en-us/api-reference/beta/api/intune_onboarding_devicemanagementpartner_create" />
+          <Item text="削除" url="/en-us/api-reference/beta/api/intune_onboarding_devicemanagementpartner_delete" />
+          <Item text="更新" url="/en-us/api-reference/beta/api/intune_onboarding_devicemanagementpartner_update" />
+        </Item>
         <Item text="デバイスのオペレーティング システムの概要" url="/en-us/api-reference/beta/resources/intune_onboarding_deviceoperatingsystemsummary" />
+        <Item text="登録構成の割り当て" url="en-us/graph/docs/api-reference/beta/api/resources/intune_onboarding_enrollmentconfigurationassignment">
         <Item text="ハードウェア情報" url="/en-us/api-reference/beta/resources/intune_onboarding_hardwareinformation" />
         <Item text="Intune ブランド" url="/en-us/api-reference/beta/resources/intune_onboarding_intunebrand" />
         <Item text="見つかったデバイスのアクションの結果" url="/en-us/api-reference/beta/resources/intune_onboarding_locatedeviceactionresult" />
@@ -3381,6 +3832,45 @@
           <Item text="取得" url="/en-us/api-reference/beta/api/intune_onboarding_sideloadingkey_get" />
           <Item text="リスト" url="/en-us/api-reference/beta/api/intune_onboarding_sideloadingkey_list" />
           <Item text="更新" url="/en-us/api-reference/beta/api/intune_onboarding_sideloadingkey_update" />
+        </Item>
+      <Item text="VPP トークン" url="https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_onboarding_vpptoken">
+        <Item text="一覧表示" url="/en-us/api-reference/beta/api/intune_onboarding_vpptoken_list" />
+        <Item text="取得" url="/en-us/api-reference/beta/api/intune_onboarding_vpptoken_get" />
+        <Item text="作成" url="/en-us/api-reference/beta/api/intune_onboarding_vpptoken_create" />
+        <Item text="削除" url="/en-us/api-reference/beta/api/intune_onboarding_vpptoken_delete" />
+        <Item text="更新" url="/en-us/api-reference/beta/api/intune_onboarding_vpptoken_update" />
+        <Item text="revokeLicenses アクション" url="/en-us/api-reference/beta/api/intune_onboarding_vpptoken_revokelicenses" />
+        <Item text="syncLicenses アクション" url="/en-us/api-reference/beta/api/intune_onboarding_vpptoken_synclicenses" />
+      </Item>
+        <Item text="Windows 10 登録完了ページの構成" url="en-us/graph/docs/api-reference/beta/api/resources/intune_onboarding_windows10enrollmentcompletionpageconfiguration">
+          <Item text="一覧表示" url="/en-us/api-reference/beta/api/intune_onboarding_windows10enrollmentcompletionpageconfiguration_list" />
+          <Item text="取得" url="/en-us/api-reference/beta/api/intune_onboarding_windows10enrollmentcompletionpageconfiguration_get" />
+          <Item text="作成" url="/en-us/api-reference/beta/api/intune_onboarding_windows10enrollmentcompletionpageconfiguration_create" />
+          <Item text="削除" url="/en-us/api-reference/beta/api/intune_onboarding_windows10enrollmentcompletionpageconfiguration_delete" />
+          <Item text="更新" url="/en-us/api-reference/beta/api/intune_onboarding_windows10enrollmentcompletionpageconfiguration_update" />
+        </Item>
+        <Item text="Windows 10 ネットワーク境界の構成" url="en-us/graph/docs/api-reference/beta/api/resources/intune_deviceconfig_windows10networkboundaryconfiguration">
+          <Item text="一覧表示" url="/en-us/api-reference/beta/api/intune_deviceconfig_windows10networkboundaryconfiguration_list" />
+          <Item text="取得" url="/en-us/api-reference/beta/api/intune_deviceconfig_windows10networkboundaryconfiguration_get" />
+          <Item text="作成" url="/en-us/api-reference/beta/api/intune_deviceconfig_windows10networkboundaryconfiguration_create" />
+          <Item text="削除" url="/en-us/api-reference/beta/api/intune_deviceconfig_windows10networkboundaryconfiguration_delete" />
+          <Item text="更新" url="/en-us/api-reference/beta/api/intune_deviceconfig_windows10networkboundaryconfiguration_update" />
+        </Item>
+        <Item text="Windows Autopilot 展開プロファイル" url="en-us/graph/docs/api-reference/beta/api/resources/intune_enrollment_windowsautopilotdeploymentprofile">
+          <Item text="取得" url="/en-us/api-reference/beta/api/intune_enrollment_windowsautopilotdeploymentprofile_get" />
+          <Item text="アクションの割り当て" url="/en-us/api-reference/beta/api/intune_enrollment_windowsautopilotdeploymentprofile_assign" />
+        </Item>
+        <Item text="Windows Autopilot デバイス ID" url="en-us/graph/docs/api-reference/beta/api/resources/intune_enrollment_windowsautopilotdeviceidentity">
+          <Item text="一覧表示" url="/en-us/api-reference/beta/api/intune_enrollment_windowsautopilotdeviceidentity_list" />
+          <Item text="取得" url="/en-us/api-reference/beta/api/intune_enrollment_windowsautopilotdeviceidentity_get" />
+          <Item text="作成" url="/en-us/api-reference/beta/api/intune_enrollment_windowsautopilotdeviceidentity_create" />
+          <Item text="削除" url="/en-us/api-reference/beta/api/intune_enrollment_windowsautopilotdeviceidentity_delete" />
+          <Item text="更新" url="/en-us/api-reference/beta/api/intune_enrollment_windowsautopilotdeviceidentity_update" />
+        </Item>
+        <Item text="Windows Autopilot の設定" url="en-us/graph/docs/api-reference/beta/api/resources/intune_enrollment_windowsautopilotsettings">
+          <Item text="取得" url="/en-us/api-reference/beta/api/intune_enrollment_windowsautopilotsettings_get" />
+          <Item text="更新" url="/en-us/api-reference/beta/api/intune_enrollment_windowsautopilotsettings_update" />
+          <Item text="同期アクション" url="/en-us/api-reference/beta/api/intune_enrollment_windowsautopilotsettings_sync" />
         </Item>
       </Item>
       <Item text="ロール ベースのアクセス制御" url="/en-us/api-reference/beta/resources/intune_rbac_conceptual">
@@ -3422,6 +3912,20 @@
           <Item text="ロールの割り当ての一覧表示" url="/en-us/api-reference/beta/api/intune_rbac_roledefinition_list_roleassignment" />
           <Item text="更新" url="/en-us/api-reference/beta/api/intune_rbac_roledefinition_update" />
         </Item>
+        <Item text="デバイスおよびアプリ管理役割の割り当て" url="/en-us/api-reference/beta/resources/intune_rbac_deviceandappmanagementroleassignment">
+          <Item text="一覧表示" url="/en-us/api-reference/beta/api/intune_rbac_deviceandappmanagementroleassignment_list" />
+          <Item text="取得" url="/en-us/api-reference/beta/api/intune_rbac_deviceandappmanagementroleassignment_get" />
+          <Item text="作成" url="/en-us/api-reference/beta/api/intune_rbac_deviceandappmanagementroleassignment_create" />
+          <Item text="削除" url="/en-us/api-reference/beta/api/intune_rbac_deviceandappmanagementroleassignment_delete" />
+          <Item text="更新" url="/en-us/api-reference/beta/api/intune_rbac_deviceandappmanagementroleassignment_update" />
+        </Item>
+        <Item text="デバイスおよびアプリ管理役割の定義" url="/en-us/api-reference/beta/resources/intune_rbac_deviceandappmanagementroledefinition">
+          <Item text="一覧表示" url="/en-us/api-reference/beta/api/intune_rbac_deviceandappmanagementroledefinition_list" />
+          <Item text="取得" url="/en-us/api-reference/beta/api/intune_rbac_deviceandappmanagementroledefinition_get" />
+          <Item text="作成" url="/en-us/api-reference/beta/api/intune_rbac_deviceandappmanagementroledefinition_create" />
+          <Item text="削除" url="/en-us/api-reference/beta/api/intune_rbac_deviceandappmanagementroledefinition_delete" />
+          <Item text="更新" url="/en-us/api-reference/beta/api/intune_rbac_deviceandappmanagementroledefinition_update" />
+        </Item>
       </Item>
       <Item text="通信経費の管理" url="/en-us/api-reference/beta/resources/intune_tem_conceptual">
         <Item text="デバイスの管理" url="/en-us/api-reference/beta/resources/intune_tem_devicemanagement">
@@ -3439,7 +3943,8 @@
         </Item>
       </Item>
     </Item>
-    <Item text="Microsoft Teams" url="/en-us/api-reference/beta/resources/teams_api_overview" SEOKeyword="Teams API、Microsoft Graph API、Microsoft Teams API" SEODescription="Azure Active Directory グループを表します。DirectoryObject から継承されます。">
+    </Item>
+	<Item text="Microsoft Teams" url="/en-us/api-reference/beta/resources/teams_api_overview" SEOKeyword="Teams API、Microsoft Graph API、Microsoft Teams API" SEODescription="Azure Active Directory グループを表します。DirectoryObject から継承されます。">
       <Item text="グループ (チーム)" url="/en-us/api-reference/beta/resources/group" SEOKeyword="Groups API、Microsoft Graph API、Groups API、Microsoft Teams API、Teams API" SEODescription="Azure Active Directory グループを表します。DirectoryObject から継承されます。">
         <Item text="グループを取得する" url="/en-us/api-reference/beta/api/group_get" SEOKeyword="グループを取得する、Microsoft Graph API、Groups API" SEODescription="グループ オブジェクトのプロパティとリレーションシップを取得します。" />
         <Item text="グループを一覧表示する" url="/en-us/api-reference/beta/api/group_list" SEOKeyword="グループを一覧表示する、Microsoft Graph API、Groups API" SEODescription="グループ オブジェクトのリストを取得します。" />
@@ -3461,9 +3966,14 @@
         <Item text="グループを完全に削除する" url="/en-us/api-reference/beta/api/directory_deleteditems_delete" />
         <Item text="削除されたグループを復元する" url="/en-us/api-reference/beta/api/directory_deleteditems_restore" />
       </Item>
-      <Item text="写真" url="/en-us/api-reference/beta/resources/profilephoto" SEOKeyword="複数のユーザー, Microsoft Graph API, ユーザー API" SEODescription="">
-        <Item text="写真を取得する" url="/en-us/api-reference/v1.0/api/profilephoto_get" />
-        <Item text="写真を更新する" url="/en-us/api-reference/v1.0/api/profilephoto_update" />
+      <Item text="チーム" url="/en-us/api-reference/beta/resources/team">
+		<Item text="チームを作成する" url="/en-us/api-reference/beta/api/team_put_teams" />
+		<Item text="チームを取得する" url="/en-us/api-reference/beta/api/team_get" />
+		<Item text="チームを更新する" url="/en-us/api-reference/beta/api/team_update" />
+	  </Item>
+	  <Item text="写真" url="/en-us/api-reference/beta/resources/profilephoto" SEOKeyword="複数のユーザー, Microsoft Graph API, ユーザー API" SEODescription="">
+        <Item text="写真を取得する" url="/en-us/api-reference/beta/api/profilephoto_get" />
+        <Item text="写真を更新する" url="/en-us/api-reference/beta/api/profilephoto_update" />
       </Item>
       <Item text="チャネル" url="/en-us/api-reference/beta/resources/channel" SEOKeyword="チャネル API, Microsoft Graph API, チャネル API" SEODescription="">
         <Item text="チャネルを一覧表示する" url="/en-us/api-reference/beta/api/group_list_channels" SEOKeyword="チャネルを一覧表示する, Microsoft Graph API, Groups API" SEODescription="チャネル オブジェクトのリストを取得します。" />
@@ -3489,7 +3999,7 @@
       </Item>
       <Item text="ドライブ" url="/en-us/api-reference/beta/resources/drive" SEOKeyword="ユーザーのドライブ, Microsoft Graph API, ユーザー API" SEODescription="">
         <Item text="ドライブを取得する" url="/en-us/api-reference/beta/api/drive_get" SEOKeyword="ドライブを取得する、Microsoft Graph API、ドライブ API" SEODescription="ドライブ オブジェクトのプロパティと関係を取得します。" />
-        <Item text="子を一覧表示する" url="/en-us/api-reference/beta/api/item_list_children" SEOKeyword="項目を一覧表示する、Microsoft Graph API、ドライブ API" SEODescription="項目オブジェクトのリストを取得します。" />
+        <Item text="子を一覧表示する" url="/en-us/api-reference/beta/api/driveitem_list_children" SEOKeyword="項目を一覧表示する、Microsoft Graph API、ドライブ API" SEODescription="項目オブジェクトのリストを取得します。" />
       </Item>
       <Item text="計画" url="/en-us/api-reference/beta/resources/plannerplan" SEOKeyword="グループ予定表, Microsoft Graph API, グループ API" SEODescription="">
         <Item text="計画を一覧表示する" url="/en-us/api-reference/beta/api/plannergroup_list_plans" SEOKeyword="計画を一覧表示する、Microsoft Graph API、グループ API" SEODescription="計画オブジェクトのリストを取得します。" />
@@ -3513,38 +4023,43 @@
       <Item text="ドライブ" url="/en-us/api-reference/beta/resources/drive" SEOKeyword="ユーザーのドライブ, Microsoft Graph API, ユーザー API" SEODescription="ドライブ API">
         <Item text="ドライブを取得する" url="/en-us/api-reference/beta/api/drive_get" SEOKeyword="ドライブを取得する、Microsoft Graph API、ドライブ API" SEODescription="ドライブ オブジェクトのプロパティと関係を取得します。" />
         <Item text="ドライブを一覧表示する" url="/en-us/api-reference/beta/api/drive_list" SEOKeyword="ドライブを一覧表示する, Microsoft Graph API, ドライブ API, OneDrive ドライブ API" SEODescription="" />
-        <Item text="子を一覧表示する" url="/en-us/api-reference/beta/api/item_list_children" SEOKeyword="項目を一覧表示する、Microsoft Graph API、ドライブ API" SEODescription="項目オブジェクトのリストを取得します。" />
+        <Item text="子を一覧表示する" url="/en-us/api-reference/beta/api/driveitem_list_children" SEOKeyword="項目を一覧表示する、Microsoft Graph API、ドライブ API" SEODescription="項目オブジェクトのリストを取得します。" />
         <Item text="最近使ったファイル" url="/en-us/api-reference/beta/api/drive_recent" SEOKeyword="最近使ったファイル、Microsoft Graph API、ドライブ API" SEODescription="最近使ったファイルを取得します。" />
         <Item text="共有ファイル" url="/en-us/api-reference/beta/api/drive_sharedwithme" SEOKeyword="共有アイテムのファイル, Microsoft Graph API, ドライブ API" SEODescription="共有アイテムのファイルを取得します。" />
-        <Item text="特殊なフォルダーを取得する" url="/en-us/api-reference/beta/api/drive_special" SEOKeyword="特殊なフォルダー, Microsoft Graph API, ドライブ API" SEODescription="特殊なフォルダーを取得します。" />
+        <Item text="特殊なフォルダーを取得する" url="/en-us/api-reference/beta/api/drive_get_specialfolder" SEOKeyword="特殊なフォルダー, Microsoft Graph API, ドライブ API" SEODescription="特殊なフォルダーを取得します。" />
       </Item>
       <Item text="DriveItems" url="/en-us/api-reference/beta/resources/driveitem" SEOKeyword="項目 API, Microsoft Graph API, 項目 API" SEODescription="項目リソースは、ファイルやフォルダーと同様に、ドライブに含まれる項目を表します。">
-        <Item text="子を一覧表示する" url="/en-us/api-reference/beta/api/item_list_children" SEOKeyword="項目を一覧表示する、Microsoft Graph API、ドライブ API" SEODescription="項目オブジェクトのリストを取得します。" />
-        <Item text="項目を取得する" url="/en-us/api-reference/beta/api/item_get" SEOKeyword="項目を取得する、Microsoft Graph API、OneDrive Drive API" SEODescription="項目オブジェクトのプロパティと関係を取得します。" />
-        <Item text="サムネイルを取得する" url="/en-us/api-reference/beta/api/item_list_thumbnails" SEOKeyword="サムネイルを取得する, Microsoft Graph API, thumbnailset API" SEODescription="" />
-        <Item text="フォルダーを作成する" url="/en-us/api-reference/beta/api/item_post_children" SEOKeyword="子を作成する, Microsoft Graph API, OneDrive Drive API" SEODescription="この API を使用して、新しい子を作成します。" />
-        <Item text="項目を更新する" url="/en-us/api-reference/beta/api/item_update" SEOKeyword="項目を更新する、Microsoft Graph API、OneDrive Drive API" SEODescription="項目オブジェクトのプロパティを更新します。" />
-        <Item text="項目を削除する" url="/en-us/api-reference/beta/api/item_delete" SEOKeyword="項目を削除する、Microsoft Graph API、OneDrive Drive API" SEODescription="項目を削除します。" />
-        <Item text="項目を移動する" url="/en-us/api-reference/beta/api/item_move" SEOKeyword="項目を移動する、Microsoft Graph API、OneDrive Drive API" SEODescription="" />
-        <Item text="項目をコピーする" url="/en-us/api-reference/beta/api/item_copy" SEOKeyword="項目をコピーする, Microsoft Graph API, OneDrive Drive API" SEODescription="" />
-        <Item text="ダウンロード" url="/en-us/api-reference/beta/api/item_downloadcontent" SEOKeyword="項目をダウンロードする, Microsoft Graph API, OneDrive Drive API" SEODescription="" />
-        <Item text="アップロード" url="/en-us/api-reference/beta/api/item_uploadcontent" SEOKeyword="項目をアップロードする, Microsoft Graph API, OneDrive Drive API" SEODescription="" />
-        <Item text="再開可能なアップロード" url="/en-us/api-reference/beta/api/item_createuploadsession" SEOKeyword="大きなファイルのアップロード, 再開可能なアップロード, Microsoft Graph API, OneDrive ドライブ API, フラグメント, ファイル" />
-        <Item text="項目を検索する" url="/en-us/api-reference/beta/api/item_search" SEOKeyword="項目を検索する, Microsoft Graph API, OneDrive Drive API" SEODescription="" />
-        <Item text="変更履歴の記録" url="/en-us/api-reference/beta/api/item_delta" SEOKeyword="変更履歴の記録, Microsoft Graph API" SEODescription="" />
+        <Item text="子を一覧表示する" url="/en-us/api-reference/beta/api/driveitem_list_children" SEOKeyword="項目を一覧表示する、Microsoft Graph API、ドライブ API" SEODescription="項目オブジェクトのリストを取得します。" />
+        <Item text="項目を取得する" url="/en-us/api-reference/beta/api/driveitem_get" SEOKeyword="項目を取得する、Microsoft Graph API、OneDrive Drive API" SEODescription="項目オブジェクトのプロパティと関係を取得します。" />
+        <Item text="サムネイルを取得する" url="/en-us/api-reference/beta/api/driveitem_list_thumbnails" SEOKeyword="サムネイルを取得する, Microsoft Graph API, thumbnailset API" SEODescription="" />
+        <Item text="フォルダーを作成する" url="/en-us/api-reference/beta/api/driveitem_post_children" SEOKeyword="子を作成する, Microsoft Graph API, OneDrive Drive API" SEODescription="この API を使用して、新しい子を作成します。" />
+        <Item text="項目を更新する" url="/en-us/api-reference/beta/api/driveitem_update" SEOKeyword="項目を更新する、Microsoft Graph API、OneDrive Drive API" SEODescription="項目オブジェクトのプロパティを更新します。" />
+        <Item text="項目を削除する" url="/en-us/api-reference/beta/api/driveitem_delete" SEOKeyword="項目を削除する、Microsoft Graph API、OneDrive Drive API" SEODescription="項目を削除します。" />
+        <Item text="項目を移動する" url="/en-us/api-reference/beta/api/driveitem_move" SEOKeyword="項目を移動する、Microsoft Graph API、OneDrive Drive API" SEODescription="" />
+        <Item text="項目をコピーする" url="/en-us/api-reference/beta/api/driveitem_copy" SEOKeyword="項目をコピーする、Microsoft Graph API、OneDrive Drive API" SEODescription="" />
+        <Item text="ファイルをダウンロードする" url="/en-us/api-reference/beta/api/driveitem_get_content" SEOKeyword="項目をダウンロードする、Microsoft Graph API、OneDrive Drive API" SEODescription="" />
+		<Item text="ファイルを変換する" url="/en-us/api-reference/beta/api/driveitem_get_content_format" SEOKeyword="項目をダウンロードする、Microsoft Graph API、OneDrive Drive API" SEODescription="" />
+        <Item text="アップロード" url="/en-us/api-reference/beta/api/driveitem_put_content" SEOKeyword="項目をアップロードする, Microsoft Graph API, OneDrive Drive API" SEODescription="" />
+        <Item text="再開可能なアップロード" url="/en-us/api-reference/beta/api/driveitem_createuploadsession" SEOKeyword="大きなファイルのアップロード, 再開可能なアップロード, Microsoft Graph API, OneDrive ドライブ API, フラグメント, ファイル" />
+        <Item text="項目を検索する" url="/en-us/api-reference/beta/api/driveitem_search" SEOKeyword="項目を検索する, Microsoft Graph API, OneDrive Drive API" SEODescription="" />
+        <Item text="変更履歴の記録" url="/en-us/api-reference/beta/api/driveitem_delta" SEOKeyword="変更履歴の記録, Microsoft Graph API" SEODescription="" />
       </Item>
       <Item text="アクセス許可" url="/en-us/api-reference/beta/resources/permission" SEOKeyword="リンク項目を作成する, Microsoft Graph API, OneDrive Drive API" SEODescription="">
-        <Item text="共有リンクを作成する" url="/en-us/api-reference/beta/api/item_createlink" SEOKeyword="リンク項目を作成する, Microsoft Graph API, OneDrive Drive API" SEODescription="" />
+        <Item text="共有リンクを作成する" url="/en-us/api-reference/beta/api/driveitem_createlink" SEOKeyword="リンク項目を作成する, Microsoft Graph API, OneDrive Drive API" SEODescription="" />
         <Item text="共有リンクを使用する" url="/en-us/api-reference/beta/api/shares_get" SEOKeyword="共有リンクを使用する, Microsoft Graph API, Onedrive ドライブ API, 共有, 共有中" SEODescription="" />
-        <Item text="アクセス許可を一覧表示する" url="/en-us/api-reference/beta/api/item_list_permissions" SEOKeyword="一覧, アイテムのアクセス許可を列挙, 招待, 共有, Microsoft Graph API" SEODescription="" />
-        <Item text="アクセス許可を追加する" url="/en-us/api-reference/beta/api/item_invite" SEOKeyword="アクセス許可を追加する, 招待, 共有, Microsoft Graph API" SEODescription="" />
+        <Item text="アクセス許可を一覧表示する" url="/en-us/api-reference/beta/api/driveitem_list_permissions" SEOKeyword="一覧, アイテムのアクセス許可を列挙, 招待, 共有, Microsoft Graph API" SEODescription="" />
+        <Item text="アクセス許可を追加する" url="/en-us/api-reference/beta/api/driveitem_invite" SEOKeyword="アクセス許可を追加する, 招待, 共有, Microsoft Graph API" SEODescription="" />
         <Item text="アクセス許可を取得する" url="/en-us/api-reference/beta/api/permission_get" SEOKeyword="アクセス許可を取得する、Microsoft Graph API、アクセス許可 API" SEODescription="アクセス許可オブジェクトのプロパティと関係を取得します。" />
         <Item text="アクセス許可を更新する" url="/en-us/api-reference/beta/api/permission_update" SEOKeyword="アクセス許可を更新する、Microsoft Graph API、アクセス許可 API" SEODescription="アクセス許可オブジェクトのプロパティを更新します。" />
         <Item text="アクセス許可を削除する" url="/en-us/api-reference/beta/api/permission_delete" SEOKeyword="アクセス許可を削除する、Microsoft Graph API、permission API" SEODescription="アクセス許可を削除します。" />
       </Item>
     </Item>
-    <Item text="OneNote" url="/en-us/api-reference/beta/resources/onenote" SEOKeyword="OneNote API, Microsoft Graph API" SEODescription="">
-      <Item text="メモ" url="/en-us/api-reference/beta/resources/onenote" SEOKeyword="ノーツ API, Microsoft Graph API, ノーツ API" SEODescription="">
+    <Item text="OneNote" url="/en-us/concepts/integrate_with_onenote" SEODescription="Microsoft Graph を使用してアプリを OneNote に統合します。">
+      <Item text="入力 HTML と出力 HTML" url="/en-us/concepts/onenote_input_output_html" SEODescription="OneNote ページ コンテンツを作成、更新、または返されたコンテンツを解析する場合の入力 HTML と出力 HTML について説明します。" />
+	  <Item text="OneNote クライアントを開く" url="/en-us/concepts/open_onenote_client" SEODescription="OneNote アプリケーションを特定のページまたはノートブックで開きます。" />
+      <Item text="エラー コード" url="/en-us/concepts/onenote_error_codes" SEODescription="Microsoft Graph で OneNote API によって返されるエラー コードを検索します。" />
+      <Item text="ベスト プラクティス" url="/en-us/concepts/onenote_best_practices" SEODescription="Microsoft Graph で OneNote API を使用する場合のベスト プラクティスを使用します。" />  
+      <Item text="ノート" url="/en-us/api-reference/beta/resources/onenote" SEOKeyword="ノーツ API, Microsoft Graph API, ノーツ API" SEODescription="">
         <Item text="ノートブックを一覧表示する" url="/en-us/api-reference/beta/api/onenote_list_notebooks" SEOKeyword="ノートブックを一覧表示する、Microsoft Graph API、ノーツ API" SEODescription="notebook(../resources/notebook.md) オブジェクトのリストを取得します。" />
         <Item text="ノートブックを作成する" url="/en-us/api-reference/beta/api/onenote_post_notebooks" SEOKeyword="ノートブックを作成する、Microsoft Graph API、ノーツ API" SEODescription="新しい OneNote ノートブックを作成します (../resources/notebook.md)。" />
         <Item text="セクションを一覧表示する" url="/en-us/api-reference/beta/api/onenote_list_sections" SEOKeyword="セクションを一覧表示する、Microsoft Graph API、ノーツ API" SEODescription="section(../resources/section.md) オブジェクトのリストを取得します。" />
@@ -3668,10 +4183,12 @@
         <Item text="予定表を更新する" url="/en-us/api-reference/beta/api/calendar_update" SEOKeyword="予定表を更新する、Microsoft Graph API、Outlook Calendar API" SEODescription="予定表オブジェクトのプロパティを更新します。" />
         <Item text="予定表を削除する" url="/en-us/api-reference/beta/api/calendar_delete" SEOKeyword="予定表を削除する、Microsoft Graph API、Outlook Calendar API" SEODescription="予定表を削除します。" />
         <Item text="予定表ビューを一覧表示する" url="/en-us/api-reference/beta/api/calendar_list_calendarview" SEOKeyword="予定表ビューを一覧表示する、Microsoft Graph API、Outlook Calendar API" SEODescription="イベント オブジェクトのリストを取得します。" />
-        <Item text="イベントを一覧表示する" url="/en-us/api-reference/beta/api/calendar_list_events" SEOKeyword="イベントを一覧表示する、Microsoft Graph API、Outlook Calendar API" SEODescription="イベント オブジェクトのリストを取得します。" />
-        <Item text="会議の日時を検索する" url="/en-us/api-reference/beta/api/user_findmeetingtimes" SEOKeyword="会議の日時、Microsoft Graph API、Outlook Calendar API" SEODescription="イベント オブジェクトのリストを取得します。" />
-        <Item text="イベントを作成する" url="/en-us/api-reference/beta/api/calendar_post_events" SEOKeyword="イベントを作成する、Microsoft Graph API、予定表 API" SEODescription="この API を使用して、新しいイベントを作成します。" />
         <Item text="通知ビュー" url="/en-us/api-reference/beta/api/user_reminderview" SEOKeyword="ユーザー: reminderView, Microsoft Graph API, ユーザー API" SEODescription="" />
+		<Item text="イベントを一覧表示する" url="/en-us/api-reference/beta/api/calendar_list_events" SEOKeyword="イベントを一覧表示する、Microsoft Graph API、Outlook Calendar API" SEODescription="イベント オブジェクトのリストを取得します。" />
+         <Item text="イベントを作成する" url="/en-us/api-reference/beta/api/calendar_post_events" SEOKeyword="イベントを作成する、Microsoft Graph API、予定表 API" SEODescription="この API を使用して、新しいイベントを作成します。" />
+		<Item text="会議の日時を検索する" url="/en-us/api-reference/beta/api/user_findmeetingtimes" SEOKeyword="会議の日時、Microsoft Graph API、Outlook Calendar API" SEODescription="イベント オブジェクトのリストを取得します。" />
+		<Item text="会議室一覧を検索する" url="/en-us/api-reference/beta/api/user_findroomlists" />
+		<Item text="会議室を検索する" url="/en-us/api-reference/beta/api/user_findrooms" />
       </Item>  
 	  <Item text="予定表グループ" url="/en-us/api-reference/beta/resources/calendargroup" SEOKeyword="calendargroup API, Microsoft Graph API, calendargroup API" SEODescription="予定表のグループです。">
         <Item text="予定表グループを一覧表示する" url="/en-us/api-reference/beta/api/user_list_calendargroups" SEOKeyword="calendarGroups を一覧表示する、Microsoft Graph API、Users API" SEODescription="calendargroup オブジェクトのリストを取得します。" />
@@ -3720,8 +4237,9 @@
         <Item text="メッセージを全員に返信する" url="/en-us/api-reference/beta/api/message_replyall" SEOKeyword="メッセージを全員に返信する、Microsoft Graph API、Outlook Mail API" SEODescription="" />
         <Item text="転送メッセージを作成する" url="/en-us/api-reference/beta/api/message_createforward" SEOKeyword="転送メッセージを作成する、Microsoft Graph API、Outlook Mail API" SEODescription="" />
         <Item text="メッセージを転送する" url="/en-us/api-reference/beta/api/message_forward" SEOKeyword="メッセージを転送する、Microsoft Graph API、Outlook Mail API" SEODescription="" />
-        <Item text="メールを送信する" url="/en-us/api-reference/beta/api/user_sendmail" SEOKeyword="ユーザー: sendMail、Microsoft Graph API、ユーザー API" SEODescription="" />
-        <Item text="メール ヒントを取得する" url="/en-us/api-reference/beta/api/user_getmailtips" SEODescription="" />
+        <Item text="メールを送信する" url="/en-us/api-reference/beta/api/user_sendmail" SEOKeyword="ユーザー: sendMail, Microsoft Graph API, ユーザー API" SEODescription="" />
+        <Item text="登録を解除する" url="/en-us/api-reference/beta/api/message_unsubscribe" />
+		<Item text="メール ヒントを取得する" url="/en-us/api-reference/beta/api/user_getmailtips" SEODescription="" />
         <Item text="添付ファイルを一覧表示する" url="/en-us/api-reference/beta/api/message_list_attachments" SEOKeyword="添付ファイルを一覧表示する、Microsoft Graph API、Outlook Mail API" SEODescription="添付ファイル オブジェクトのリストを取得します。" />
         <Item text="添付ファイルを追加する" url="/en-us/api-reference/beta/api/message_post_attachments" SEOKeyword="添付ファイルを作成する, Microsoft Graph API, メッセージ API" SEODescription="この API を使用して、新しい添付ファイルを作成します。" />
         <Item text="オープン拡張機能を作成する" url="/en-us/api-reference/beta/api/opentypeextension_post_opentypeextension" SEOKeyword="オープン拡張機能を作成する、Microsoft Graph API、メッセージ API" SEODescription="この API を使用して、オープン拡張機能を作成します。" />
@@ -3947,26 +4465,114 @@
 		</Item>
 	</Item>
 	<Item text="レポート" url="/en-us/api-reference/beta/resources/report">
-      <Item text="Office 365 使用状況レポート" url="/en-us/api-reference/beta/resources/report">
-		  <Item text="電子メール アクティビティ レポートを取得する" url="/en-us/api-reference/beta/api/reportroot_emailactivity" SEOKeyword="電子メール アクティビティ レポートを取得する, Microsoft Graph API, Report API" SEODescription="Exchange 電子メール アクティビティ レポートを取得します。応答は、バイナリ ストリームの CSV ファイルになります。" />
-		  <Item text="電子メール アプリ使用状況レポートを取得する" url="/en-us/api-reference/beta/api/reportroot_emailappusage" SEOKeyword="電子メール アプリ使用状況レポートを取得する, Microsoft Graph API, Report API" SEODescription="電子メール アプリ使用状況レポートを取得します。応答は、バイナリ ストリームの CSV ファイルになります。" />
-		  <Item text="メールボックス使用状況レポートを取得する" url="/en-us/api-reference/beta/api/reportroot_mailboxusage" SEOKeyword="メールボックス使用状況レポートを取得する, Microsoft Graph API, Report API" SEODescription="メールボックス使用状況レポートを取得します。応答は、バイナリ ストリームの CSV ファイルになります。" />
-		  <Item text="Office 365 アクティブ化レポートを取得する" url="/en-us/api-reference/beta/api/reportroot_office365activations" SEOKeyword="Office 365 アクティブ化レポートを取得する, Microsoft Graph API, Report API" SEODescription="Office 365 アクティブ化レポートを取得します。応答は、バイナリ ストリームの CSV ファイルになります。" />
-		  <Item text="Office 365 アクティブ ユーザー レポートを取得する" url="/en-us/api-reference/beta/api/reportroot_office365activeusers" SEOKeyword="Office 365 アクティブ ユーザー レポートを取得する, Microsoft Graph API, Report API" SEODescription="Office 365 アクティブ ユーザー レポートを取得します。応答は、バイナリ ストリームの CSV ファイルになります。" />
-		  <Item text="Office 365 グループ アクティビティ レポートを取得する" url="/en-us/api-reference/beta/api/reportroot_office365groupsactivity" SEOKeyword="Office 365 グループ アクティビティ レポートを取得する, Microsoft Graph API, Report API" SEODescription="Office 365 グループ アクティビティ レポートを取得します。応答は、バイナリ ストリームの CSV ファイルになります。" />
-		  <Item text="OneDrive アクティビティ レポートを取得する" url="/en-us/api-reference/beta/api/reportroot_onedriveactivity" SEOKeyword="OneDrive アクティビティ レポートを取得する, Microsoft Graph API, Report API" SEODescription="OneDrive アクティビティ レポートを取得します。応答は、バイナリ ストリームの CSV ファイルになります。" />
-		  <Item text="OneDrive 使用状況レポートを取得する" url="/en-us/api-reference/beta/api/reportroot_onedriveusage" SEOKeyword="OneDrive 使用状況レポートを取得する, Microsoft Graph API, Report API" SEODescription="OneDrive 使用状況レポートを取得します。応答は、バイナリ ストリームの CSV ファイルになります。" />
-		  <Item text="Skype for Business アクティビティ レポートを取得する" url="/en-us/api-reference/beta/api/reportroot_sfbactivity" SEOKeyword="Skype for Business ユーザー アクティビティ レポートを取得する, Microsoft Graph API, Report API" SEODescription="Skype for Business ユーザー アクティビティ レポートを取得します。応答は、バイナリ ストリームの CSV ファイルになります。" />
-		  <Item text="Skype for Business デバイス使用状況レポートを取得する" url="/en-us/api-reference/beta/api/reportroot_sfbdeviceusage" SEOKeyword="Skype for Business デバイス使用状況レポートを取得する, Microsoft Graph API, Report API" SEODescription="Skype for Business デバイス使用状況レポートを取得します。応答は、バイナリ ストリームの CSV ファイルになります。" />
-		  <Item text="Skype for Business 開催者アクティビティ レポートを取得する" url="/en-us/api-reference/beta/api/reportroot_sfborganizeractivity" SEOKeyword="Skype for Business 開催者アクティビティ レポートを取得する, Microsoft Graph API, Report API" SEODescription="Skype for Business 開催者アクティビティ レポートを取得します。応答は、バイナリ ストリームの CSV ファイルになります。" />
-		  <Item text="Skype for Business 参加者アクティビティ レポートを取得する" url="/en-us/api-reference/beta/api/reportroot_sfbparticipantactivity" SEOKeyword="Skype for Business 参加者アクティビティ レポートを取得する, Microsoft Graph API, Report API" SEODescription="Skype for Business 参加者アクティビティ レポートを取得します。応答は、バイナリ ストリームの CSV ファイルになります。" />
-		  <Item text="Skype for Business ピア ツー ピア アクティビティ レポートを取得する" url="/en-us/api-reference/beta/api/reportroot_sfbp2pactivity" SEOKeyword="Skype for Business ピア ツー ピア アクティビティ レポートを取得する, Microsoft Graph API, Report API" SEODescription="Skype for Business ピア ツー ピア アクティビティ レポートを取得します。応答は、バイナリ ストリームの CSV ファイルになります。" />
-		  <Item text="SharePoint アクティビティ レポートを取得する" url="/en-us/api-reference/beta/api/reportroot_sharepointactivity" SEOKeyword="SharePoint アクティビティ レポートを取得する, Microsoft Graph API, Report API" SEODescription="SharePoint アクティビティ レポートを取得します。応答は、バイナリ ストリームの CSV ファイルになります。" />
-		  <Item text="SharePoint サイト使用状況レポートを取得する" url="/en-us/api-reference/beta/api/reportroot_sharepointsiteusage" SEOKeyword="SharePoint サイト使用状況レポートを取得する, Microsoft Graph API, Report API" SEODescription="SharePoint サイト使用状況レポートを取得します。応答は、バイナリ ストリームの CSV ファイルになります。" />
-		  <Item text="Yammer アクティビティ レポートを取得する" url="/en-us/api-reference/beta/api/reportroot_yammeractivity" SEOKeyword="Yammer アクティビティ レポートを取得する, Microsoft Graph API, Report API" SEODescription="Yammer アクティビティ レポートを取得します。応答は、バイナリ ストリームの CSV ファイルになります。" />
-		  <Item text="Yammer デバイス使用状況レポートを取得する" url="/en-us/api-reference/beta/api/reportroot_yammerdeviceusage" SEOKeyword="Yammer デバイス使用状況レポートを取得する, Microsoft Graph API, Report API" SEODescription="Yammer デバイス使用状況レポートを取得します。応答は、バイナリ ストリームの CSV ファイルになります。" />
-		  <Item text="Yammer グループ アクティビティ レポートを取得する" url="/en-us/api-reference/beta/api/reportroot_yammergroupsactivity" SEODescription="Yammer グループ アクティビティ レポートを取得します。" />
-		</Item>
+	  <Item text="Microsoft Teams デバイスの使用状況" url="/en-us/api-reference/beta/resources/microsoft_teams_device_usage_reports">
+		<Item text="ユーザーの詳細を取得する" url="/en-us/api-reference/beta/api/reportroot_getteamsdeviceusageuserdetail" />
+		<Item text="ユーザーの数を取得する" url="/en-us/api-reference/beta/api/reportroot_getteamsdeviceusageusercounts" />
+		<Item text="配布のユーザーの数を取得する" url="/en-us/api-reference/beta/api/reportroot_getteamsdeviceusagedistributionusercounts" />
+	  </Item>
+	  <Item text="Microsoft Teams ユーザー アクティビティ" url="/en-us/api-reference/beta/resources/microsoft_teams_user_activity_reports">
+		<Item text="ユーザーの詳細を取得する" url="/en-us/api-reference/beta/api/reportroot_getteamsuseractivityuserdetail" />
+		<Item text="アクティビティの数を取得する" url="/en-us/api-reference/beta/api/reportroot_getteamsuseractivitycounts" />
+		<Item text="ユーザーの数を取得する" url="/en-us/api-reference/beta/api/reportroot_getteamsuseractivityusercounts" />
+	  </Item>
+	  <Item text="Outlook アクティビティ" url="/en-us/api-reference/beta/resources/email_activity_reports">
+		<Item text="ユーザーの詳細を取得する" url="/en-us/api-reference/beta/api/reportroot_getemailactivityuserdetail" />
+		<Item text="アクティビティの数を取得する" url="/en-us/api-reference/beta/api/reportroot_getemailactivitycounts" />
+		<Item text="ユーザーの数を取得する" url="/en-us/api-reference/beta/api/reportroot_getemailactivityusercounts" />
+	  </Item>
+	  <Item text="Outlook アプリの使用状況" url="/en-us/api-reference/beta/resources/email_app_usage_reports">
+		<Item text="ユーザーの詳細を取得する" url="/en-us/api-reference/beta/api/reportroot_getemailappusageuserdetail" />
+		<Item text="アプリのユーザーの数を取得する" url="/en-us/api-reference/beta/api/reportroot_getemailappusageappsusercounts" />
+		<Item text="ユーザーの数を取得する" url="/en-us/api-reference/beta/api/reportroot_getemailappusageusercounts" />
+		<Item text="バージョンのユーザーの数を取得する" url="/en-us/api-reference/beta/api/reportroot_getemailappusageversionsusercounts" />
+	  </Item>
+	  <Item text="Outlook メールボックスの使用状況" url="/en-us/api-reference/beta/resources/mailbox_usage_reports">
+		<Item text="メールボックスの詳細を取得する" url="/en-us/api-reference/beta/api/reportroot_getmailboxusagedetail" />
+		<Item text="メールボックスの数を取得する" url="/en-us/api-reference/beta/api/reportroot_getmailboxusagemailboxcounts" />
+		<Item text="クォータ状態のメールボックスの数を取得する" url="/en-us/api-reference/beta/api/reportroot_getmailboxusagequotastatusmailboxcounts" />
+		<Item text="ストレージを取得する" url="/en-us/api-reference/beta/api/reportroot_getmailboxusagestorage" />
+	  </Item>
+	  <Item text="Office 365 のライセンス認証" url="/en-us/api-reference/beta/resources/office_365_activations_reports">
+		<Item text="ユーザーの詳細を取得する" url="/en-us/api-reference/beta/api/reportroot_getoffice365activationsuserdetail" />
+		<Item text="ライセンス認証の数を取得する" url="/en-us/api-reference/beta/api/reportroot_getoffice365activationcounts" />
+		<Item text="ユーザーの数を取得する" url="/en-us/api-reference/beta/api/reportroot_getoffice365activationsusercounts" />
+	  </Item>
+	  <Item text="Office 365 のアクティブなユーザー" url="/en-us/api-reference/beta/resources/office_365_active_users_reports">
+		<Item text="ユーザーの詳細を取得する" url="/en-us/api-reference/beta/api/reportroot_getoffice365activeuserdetail" />
+		<Item text="ユーザーの数を取得する" url="/en-us/api-reference/beta/api/reportroot_getoffice365activeusercounts" />
+		<Item text="サービスのユーザーの数を取得する" url="/en-us/api-reference/beta/api/reportroot_getoffice365servicesusercounts" />
+	  </Item>
+	  <Item text="Office 365 グループ アクティビティ" url="/en-us/api-reference/beta/resources/office_365_groups_activity_reports">
+		<Item text="グループの詳細を取得する" url="/en-us/api-reference/beta/api/reportroot_getoffice365groupsactivitydetail" />
+		<Item text="アクティビティの数を取得する" url="/en-us/api-reference/beta/api/reportroot_getoffice365groupsactivitycounts" />
+		<Item text="グループの数を取得する" url="/en-us/api-reference/beta/api/reportroot_getoffice365groupsactivitygroupcounts" />
+		<Item text="ストレージを取得する" url="/en-us/api-reference/beta/api/reportroot_getoffice365groupsactivitystorage" />
+		<Item text="ファイルの数を取得する" url="/en-us/api-reference/beta/api/reportroot_getoffice365groupsactivityfilecounts" />
+	  </Item>
+	  <Item text="OneDrive アクティビティ" url="/en-us/api-reference/beta/resources/onedrive_activity_reports">
+		<Item text="ユーザーの詳細を取得する" url="/en-us/api-reference/beta/api/reportroot_getonedriveactivityuserdetail" />
+		<Item text="ユーザーの数を取得する" url="/en-us/api-reference/beta/api/reportroot_getonedriveactivityusercounts" />
+		<Item text="ファイルの数を取得する" url="/en-us/api-reference/beta/api/reportroot_getonedriveactivityfilecounts" />
+	  </Item>
+	  <Item text="OneDrive の使用状況" url="/en-us/api-reference/beta/resources/onedrive_usage_reports">
+		<Item text="アカウントの詳細を取得する" url="/en-us/api-reference/beta/api/reportroot_getonedriveusageaccountdetail" />
+		<Item text="アカウントの数を取得する" url="/en-us/api-reference/beta/api/reportroot_getonedriveusageaccountcounts" />
+		<Item text="ファイルの数を取得する" url="/en-us/api-reference/beta/api/reportroot_getonedriveusagefilecounts" />
+		<Item text="ストレージを取得する" url="/en-us/api-reference/beta/api/reportroot_getonedriveusagestorage" />
+	  </Item>
+	  <Item text="SharePoint アクティビティ" url="/en-us/api-reference/beta/resources/sharepoint_activity_reports">
+		<Item text="ユーザーの詳細を取得する" url="/en-us/api-reference/beta/api/reportroot_getsharepointactivityuserdetail" />
+		<Item text="ファイルの数を取得する" url="/en-us/api-reference/beta/api/reportroot_getsharepointactivityfilecounts" />
+		<Item text="ユーザーの数を取得する" url="/en-us/api-reference/beta/api/reportroot_getsharepointactivityusercounts" />
+		<Item text="ページを取得する" url="/en-us/api-reference/beta/api/reportroot_getsharepointactivitypages" />
+	  </Item>
+	  <Item text="SharePoint サイトの使用状況" url="/en-us/api-reference/beta/resources/sharepoint_site_usage_reports">
+		<Item text="サイトの詳細を取得する" url="/en-us/api-reference/beta/api/reportroot_getsharepointsiteusagedetail" />
+		<Item text="ファイルの数を取得する" url="/en-us/api-reference/beta/api/reportroot_getsharepointsiteusagefilecounts" />
+		<Item text="サイトの数を取得する" url="/en-us/api-reference/beta/api/reportroot_getsharepointsiteusagesitecounts" />
+		<Item text="ストレージを取得する" url="/en-us/api-reference/beta/api/reportroot_getsharepointsiteusagestorage" />
+		<Item text="ページを取得する" url="/en-us/api-reference/beta/api/reportroot_getsharepointsiteusagepages" />
+	  </Item>
+	  <Item text="Skype for Business アクティビティ" url="/en-us/api-reference/beta/resources/skype_for_business_activity_reports">
+		<Item text="ユーザーの詳細を取得する" url="/en-us/api-reference/beta/api/reportroot_getskypeforbusinessactivityuserdetail" />
+		<Item text="アクティビティの数を取得する" url="/en-us/api-reference/beta/api/reportroot_getskypeforbusinessactivitycounts" />
+		<Item text="ユーザーの数を取得する" url="/en-us/api-reference/beta/api/reportroot_getskypeforbusinessactivityusercounts" />
+	  </Item>
+	  <Item text="Skype for Business デバイスの使用状況" url="/en-us/api-reference/beta/resources/skype_for_business_device_usage_reports">
+		<Item text="ユーザーの詳細を取得する" url="/en-us/api-reference/beta/api/reportroot_getskypeforbusinessdeviceusageuserdetail" />
+		<Item text="配布のユーザーの数を取得する" url="/en-us/api-reference/beta/api/reportroot_getskypeforbusinessdeviceusagedistributionusercounts" />
+		<Item text="ユーザーの数を取得する" url="/en-us/api-reference/beta/api/reportroot_getskypeforbusinessdeviceusageusercounts" />
+	  </Item>
+	  <Item text="Skype for Business 開催者アクティビティ" url="/en-us/api-reference/beta/resources/skype_for_business_organizer_activity_reports">
+		<Item text="アクティビティの数を取得する" url="/en-us/api-reference/beta/api/reportroot_getskypeforbusinessorganizeractivitycounts" />
+		<Item text="ユーザーの数を取得する" url="/en-us/api-reference/beta/api/reportroot_getskypeforbusinessorganizeractivityusercounts" />
+		<Item text="分の数を取得する" url="/en-us/api-reference/beta/api/reportroot_getskypeforbusinessorganizeractivityminutecounts" />
+	  </Item>
+	  <Item text="Skype for Business 参加者アクティビティ" url="/en-us/api-reference/beta/resources/skype_for_business_participant_activity_reports">
+		<Item text="アクティビティの数を取得する" url="/en-us/api-reference/beta/api/reportroot_getskypeforbusinessparticipantactivitycounts" />
+		<Item text="ユーザーの数を取得する" url="/en-us/api-reference/beta/api/reportroot_getskypeforbusinessparticipantactivityusercounts" />
+		<Item text="分の数を取得する" url="/en-us/api-reference/beta/api/reportroot_getskypeforbusinessparticipantactivityminutecounts" />
+	  </Item>
+	  <Item text="Skype for Business ピアツーピア アクティビティ" url="/en-us/api-reference/beta/resources/skype_for_business_peer_to_peer_activity">
+		<Item text="アクティビティの数を取得する" url="/en-us/api-reference/beta/api/reportroot_getskypeforbusinesspeertopeeractivitycounts" />
+		<Item text="ユーザーの数を取得する" url="/en-us/api-reference/beta/api/reportroot_getskypeforbusinesspeertopeeractivityusercounts" />
+		<Item text="分の数を取得する" url="/en-us/api-reference/beta/api/reportroot_getskypeforbusinesspeertopeeractivityminutecounts" />
+	  </Item>
+	  <Item text="Yammer アクティビティ" url="/en-us/api-reference/beta/resources/yammer_activity_reports">
+		<Item text="ユーザーの詳細を取得する" url="/en-us/api-reference/beta/api/reportroot_getyammeractivityuserdetail" />
+		<Item text="アクティビティの数を取得する" url="/en-us/api-reference/beta/api/reportroot_getyammeractivitycounts" />
+		<Item text="ユーザーの数を取得する" url="/en-us/api-reference/beta/api/reportroot_getyammeractivityusercounts" />
+	  </Item>
+	  <Item text="Yammer デバイスの使用状況" url="/en-us/api-reference/beta/resources/yammer_device_usage_reports">
+		<Item text="ユーザーの詳細を取得する" url="/en-us/api-reference/beta/api/reportroot_getyammerdeviceusageuserdetail" />
+		<Item text="配布のユーザーの数を取得する" url="/en-us/api-reference/beta/api/reportroot_getyammerdeviceusagedistributionusercounts" />
+		<Item text="ユーザーの数を取得する" url="/en-us/api-reference/beta/api/reportroot_getyammerdeviceusageusercounts" />
+	  </Item>
+	  <Item text="Yammer グループ アクティビティ" url="/en-us/api-reference/beta/resources/yammer_groups_activity_reports">
+		<Item text="グループの詳細を取得する" url="/en-us/api-reference/beta/api/reportroot_getyammergroupsactivitydetail" />
+		<Item text="グループの数を取得する" url="/en-us/api-reference/beta/api/reportroot_getyammergroupsactivitygroupcounts" />
+		<Item text="アクティビティの数を取得する" url="/en-us/api-reference/beta/api/reportroot_getyammergroupsactivitycounts" />
+	  </Item>
 	</Item>
     <Item text="スキーマ拡張機能" url="/en-us/api-reference/beta/resources/schemaextension" SEOKeyword="拡張 API、Microsoft Graph API、スキーマ拡張 API、スキーマ拡張機能" SEODescription="Microsoft Graph 内のリソースにカスタム データを追加するための API。">
       <Item text="スキーマ拡張機能を一覧表示する" url="/en-us/api-reference/beta/api/schemaextension_list" SEOKeyword="スキーマ拡張機能を一覧表示する、Microsoft Graph API" SEODescription="スキーマ拡張機能の定義とそのプロパティのコレクションを取得します。" />
@@ -3983,8 +4589,9 @@
       </Item>
       <Item text="リスト" url="/en-us/api-reference/beta/resources/list" SEOKeyword="SharePoint, リストを一覧表示する, Microsoft Graph API, SharePoint リスト API">
         <Item text="リストを取得する" url="/en-us/api-reference/beta/api/list_get" SEOKeyword="SharePoint, サイト, サイトを取得する" SEODescription="" />
-        <Item text="項目を取得する" url="/en-us/api-reference/beta/api/listitems_list" SEOKeyword="SharePoint, 項目を一覧表示する, 項目を取得する, ListItems を取得する" SEODescription="" />
+        <Item text="項目を取得する" url="/en-us/api-reference/beta/api/listitem_list" SEOKeyword="SharePoint, 項目を一覧表示する, 項目を取得する, ListItems を取得する" SEODescription="" />
         <Item text="リストを作成する" url="/en-us/api-reference/beta/api/list_create" SEOKeyword="SharePoint, リストを作成する, 作成, Microsoft Graph API, SharePoint リスト API" SEODescription="" />
+
       </Item>
       <Item text="ListItems" url="/en-us/api-reference/beta/resources/listitem" SEOKeyword="SharePoint, ListItems, Microsoft Graph API, SharePoint リスト API" SEODescription="">
         <Item text="項目を取得する" url="/en-us/api-reference/beta/api/listitem_get" SEOKeyword="SharePoint, 項目を取得する, Microsoft Graph API, SharePoint リスト API" SEODescription="" />
