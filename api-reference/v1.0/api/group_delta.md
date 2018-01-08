@@ -1,11 +1,8 @@
 # <a name="group-delta"></a>group: delta
-
 [デルタ クエリ](../../../concepts/delta_query_overview.md)を使用すると、アプリケーションは、要求ごとにターゲット リソースをすべて読み取ることなく、新しく作成、更新、削除されたエンティティを検出できます。グループへの変更を検出するには、*デルタ*関数を使用して要求を実行します。詳細については、「[デルタ クエリの使用](../../../concepts/delta_query_overview.md)」をご覧ください。
 
 ## <a name="permissions"></a>アクセス許可
-
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](../../../concepts/permissions_reference.md)」を参照してください。
-
 
 |アクセス許可の種類      | アクセス許可 (特権の小さいものから大きいものへ)              |
 |:--------------------|:---------------------------------------------------------|
@@ -14,7 +11,6 @@
 |アプリケーション | Group.Read.All、Group.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 要求
-
 変更の追跡を開始するには、グループ リソースにデルタ関数を含む要求を実行します。 
 
 <!-- { "blockType": "ignored" } -->
@@ -23,7 +19,6 @@ GET /groups/delta
 ```
 
 ### <a name="query-parameters"></a>クエリ パラメーター
-
 グループの変更を追跡すると、1 つ以上の **デルタ**関数呼び出しのラウンドが発生します。任意のクエリ パラメーター (`$deltatoken` と `$skiptoken` 以外) を使用する場合は、最初の**デルタ**要求でこれを指定する必要があります。Microsoft Graph は、応答で提供される `nextLink` や `deltaLink` の URL のトークン部分に指定したパラメーターを自動的にエンコードします。必要なクエリ パラメーターを前もって指定しておくだけで済みます。それ以降の要求では、前の応答で `nextLink` や `deltaLink` の URL に必要なパラメーターが既にエンコードされ、含まれているため、この URL をコピーして適用します。
 
 | クエリ パラメーター      | 種類   |説明|
@@ -32,7 +27,6 @@ GET /groups/delta
 | $skiptoken | string | 前の**デルタ**関数呼び出しの `nextLink` URL で[状態トークン](../../../concepts/delta_query_overview.md)が返され、同じグループ コレクションに追跡すべき変更が他にもあることを示します。 |
 
 ## <a name="optional-query-parameters"></a>オプションのクエリ パラメーター
-
 このメソッドは、応答をカスタマイズするための OData クエリ パラメーターをサポートします。
 
 - 任意の GET リクエストと同様に `$select` クエリ パラメーターを使用して、最善のパフォーマンスを得るために必要なプロパティのみを指定することができます。_Id_ プロパティは常に返されます。 
@@ -50,7 +44,6 @@ GET /groups/delta
 このメソッドには、要求本文を指定しません。
 
 ## <a name="response"></a>応答
-
 成功した場合、このメソッドは `200 OK` 応答コードと、応答本文で [group](../resources/group.md) コレクション オブジェクトを返します。応答には、状態トークン (nextLink URL や deltaLink URL) も含まれます。
 
 - nextLink URL が返される場合は、セッションに取得するデータの追加ページがあります。deltaLink URL が応答で返されるまで、アプリケーションは nextLink URL を使用して要求を実行し続けます。
@@ -62,7 +55,7 @@ GET /groups/delta
 - 要求の例については、「[グループに対する増分の変更を取得する](../../../concepts/delta_query_groups.md)」をご覧ください。</br>
     
 ## <a name="example"></a>例
-##### <a name="request"></a>要求
+#### <a name="request"></a>要求
 <!-- {
   "blockType": "request",
   "name": "group_delta"
@@ -71,8 +64,8 @@ GET /groups/delta
 GET https://graph.microsoft.com/v1.0/groups/delta
 ```
 
-##### <a name="response"></a>応答
-注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。
+#### <a name="response"></a>応答
+>**注:** 読みやすくするために、ここに示す応答オブジェクトは短くされている場合があります。実際の呼び出しからは、すべてのプロパティが返されます。
 
 <!-- {
   "blockType": "response",

@@ -1,6 +1,6 @@
 # <a name="list-calendarview"></a>calendarView を一覧表示する
-
 グループの既定の予定表から、時間範囲で定義した予定表ビューのイベントの発生、例外、および単一インスタンスを取得します。
+
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](../../../concepts/permissions_reference.md)」を参照してください。
 
@@ -8,15 +8,15 @@
 |:--------------------|:---------------------------------------------------------|
 |委任 (職場または学校のアカウント) | Group.Read.All、Group.ReadWrite.All    |
 |委任 (個人用 Microsoft アカウント) | サポートされていません。    |
-|アプリケーション | Group.Read.All、Group.ReadWrite.All |
+|アプリケーション | サポートされていません。 |
 
 ## <a name="http-request"></a>HTTP 要求
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /groups/{id}/calendarView?startDateTime={start_datetime}&endDateTime={end_datetime}
 ```
-## <a name="query-parameters"></a>クエリ パラメーター
 
+## <a name="query-parameters"></a>クエリ パラメーター
 要求 URL に、次の必須のクエリ パラメーターを値で指定します。
 
 | パラメーター    | 型   |説明|
@@ -24,7 +24,8 @@ GET /groups/{id}/calendarView?startDateTime={start_datetime}&endDateTime={end_da
 |startDateTime|String|時間範囲の開始日時は、ISO 8601 形式で表されます。例: "2015-11-08T19:00:00.0000000"。|
 |endDateTime|String|時間範囲の終了日時は、ISO 8601 形式で表されます。例: "2015-11-08T20:00:00.0000000"。|
 
-また、このメソッドは応答をカスタマイズするための [OData クエリ パラメーター](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters)もサポートします。
+また、このメソッドは応答をカスタマイズするための [OData クエリ パラメーター](../../../concepts/query_parameters.md)もサポートします。
+
 ## <a name="request-headers"></a>要求ヘッダー
 | ヘッダー       | 値 |
 |:---------------|:--------|
@@ -35,11 +36,11 @@ GET /groups/{id}/calendarView?startDateTime={start_datetime}&endDateTime={end_da
 このメソッドには、要求本文を指定しません。
 
 ## <a name="response"></a>応答
-
 成功した場合、このメソッドは `200 OK` 応答コードと、応答本文で [event](../resources/event.md) オブジェクトのコレクションを返します。
+
 ## <a name="example"></a>例
-##### <a name="request"></a>要求
-以下は、要求の例です。
+#### <a name="request"></a>要求
+要求の例を次に示します。
 <!-- {
   "blockType": "request",
   "name": "get_calendarview"
@@ -47,8 +48,10 @@ GET /groups/{id}/calendarView?startDateTime={start_datetime}&endDateTime={end_da
 ```http
 GET https://graph.microsoft.com/v1.0/groups/{id}/calendarView
 ```
-##### <a name="response"></a>応答
-以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。
+
+#### <a name="response"></a>応答
+応答の例を次に示します。
+>**注:** ここに示す応答オブジェクトは、読みやすさのために短縮されている場合があります。 実際の呼び出しではすべてのプロパティが返されます。
 <!-- {
   "blockType": "response",
   "truncated": true,

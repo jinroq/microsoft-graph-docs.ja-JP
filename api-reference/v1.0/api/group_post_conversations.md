@@ -1,5 +1,5 @@
 # <a name="create-conversation"></a>会話を作成する
-スレッドと投稿を含めて、新しい会話を作成します。 
+スレッドと投稿を含めて、新しい[会話](../resources/conversation.md)を作成します。 
 
 [スレッドに返信](conversationthread_reply.md)または[投稿に返信](post_reply.md)を使い、その会話への投稿を続けます。
 

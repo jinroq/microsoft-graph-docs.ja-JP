@@ -9,7 +9,7 @@
 |:--------------------|:---------------------------------------------------------|
 |委任 (職場または学校のアカウント) | Group.ReadWrite.All    |
 |委任 (個人用 Microsoft アカウント) | サポートされていません。    |
-|アプリケーション | Group.ReadWrite.All |
+|アプリケーション | サポートされていません。 |
 
 ## <a name="http-request"></a>HTTP 要求
 <!-- { "blockType": "ignored" } -->
@@ -26,12 +26,13 @@ POST /groups/{id}/resetUnseenCount
 
 ## <a name="response"></a>応答
 
-成功した場合、このメソッドは `200 OK` 応答コードを返します。応答本文には何も返されません。
+成功した場合、このメソッドは `204 No Content` 応答コードを返します。応答本文には何も返されません。
 
 ## <a name="example"></a>例
-以下は、この API を呼び出す方法の例です。
-##### <a name="request"></a>要求
-以下は、要求の例です。
+次に、この API を呼び出す方法の例を示します。
+
+#### <a name="request"></a>要求
+要求の例を次に示します。
 <!-- {
   "blockType": "request",
   "name": "group_resetunseencount"
@@ -40,14 +41,14 @@ POST /groups/{id}/resetUnseenCount
 POST https://graph.microsoft.com/v1.0/groups/{id}/resetUnseenCount
 ```
 
-##### <a name="response"></a>応答
-以下は、応答の例です。 
+#### <a name="response"></a>応答
+応答の例を次に示します。 
 <!-- {
   "blockType": "response",
   "truncated": true
 } -->
 ```http
-HTTP/1.1 200 OK
+HTTP/1.1 204 No Content
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

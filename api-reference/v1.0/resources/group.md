@@ -13,10 +13,10 @@ Office 365 グループ、動的なグループ、セキュリティ グルー�
 | メソッド       | 戻り値の型  |説明|
 |:---------------|:--------|:----------|
 |**グループの管理**| | |
-|[グループを作成する](../api/group_post_groups.md) | [group](group.md) |新しいグループを作成します。Office 365 グループ、動的なグループ、またはセキュリティ グループのいずれにすることができます。|
+|[グループを作成する](../api/group_post_groups.md) | [group](group.md) |新しいグループを作成します。 Office 365 グループ、動的なグループ、またはセキュリティ グループのいずれかにできます。|
 |[グループを取得する](../api/group_get.md) | [group](group.md) |グループ オブジェクトのプロパティを読み取ります。|
 |[グループを一覧表示する](../api/group_list.md) |[group](group.md) コレクション |グループ オブジェクトとそのプロパティを一覧表示します。|
-|[グループを更新する](../api/group_update.md) | [group](group.md) |グループ オブジェクトのプロパティを更新します。 |
+|[グループを更新する](../api/group_update.md) | なし |グループ オブジェクトのプロパティを更新します。 |
 |[グループを削除する](../api/group_delete.md) | なし |グループ オブジェクトを削除します。 |
 |[所有者を追加する](../api/group_post_owners.md) |なし| **owners** ナビゲーション プロパティ (セキュリティ グループおよびメールが有効なセキュリティ グループのみをサポート) に投稿することによってグループの新規所有者を追加します。|
 |[所有者を一覧表示する](../api/group_list_owners.md) |[directoryObject](directoryobject.md) コレクション| **owners** ナビゲーション プロパティからグループの所有者を取得します。|
@@ -29,13 +29,21 @@ Office 365 グループ、動的なグループ、セキュリティ グルー�
 |[getMemberObjects](../api/group_getmemberobjects.md)|String collection|このグループがメンバーであるすべてのグループを返します。この関数は、推移的です。 |
 |[delta](../api/group_delta.md)|group コレクション| グループに対する増分の変更を取得します。 |
 |**予定表**| | |
-|[イベントを作成する](../api/group_post_events.md) |[Event](event.md)| Event コレクションへの投稿によって、新しいイベントを作成します。|
-|[イベントを一覧表示する](../api/group_list_events.md) |[Event](event.md) コレクション| Event オブジェクトのコレクションを取得します。|
-|[calendarView を一覧表示する](../api/group_list_calendarview.md) |[Event](event.md) コレクション| 指定された時間枠のイベントのコレクションを取得します。|
+|[イベントを作成する](../api/group_post_events.md) |[event](event.md)| event コレクションへの投稿によって、新しいイベントを作成します。|
+|[イベントを取得する](../api/group_get_event.md) |[event](event.md)|event オブジェクトのプロパティを読み取ります。|
+|[イベントを一覧表示する](../api/group_list_events.md) |[event](event.md) コレクション| event オブジェクトのコレクションを取得します。|
+|[イベントを更新する](../api/group_update_event.md) |なし|event オブジェクトのプロパティを更新します。|
+|[イベントを削除する](../api/group_delete_event.md) |なし|event オブジェクトを削除します。|
+|[calendarView を一覧表示する](../api/group_list_calendarview.md) |[event](event.md) コレクション| 指定された時間枠のイベントのコレクションを取得します。|
 |**会話**| | |
-|[会話を作成する](../api/group_post_conversations.md) |[Conversation](conversation.md)| Conversation コレクションに投稿することによって、新しい会話を作成します。|
-|[会話を一覧表示する](../api/group_list_conversations.md) |[Conversation](conversation.md) コレクション| Conversation オブジェクトのコレクションを取得します。|
+|[会話を作成する](../api/group_post_conversations.md) |[conversation](conversation.md)| Conversation コレクションに投稿することによって、新しい会話を作成します。|
+|[会話を取得する](../api/group_get_conversation.md) |[conversation](conversation.md)| conversation オブジェクトのプロパティを読み取ります。|
+|[会話を一覧表示する](../api/group_list_conversations.md) |[conversation](conversation.md) コレクション| conversation オブジェクトのコレクションを取得します。|
+|[会話を削除する](../api/group_delete_conversation.md) |なし|conversation オブジェクトを削除します。|
+|[スレッドを取得する](../api/group_get_thread.md) |[conversationThread](conversationthread.md)| thread オブジェクトのプロパティを読み取ります。|
 |[スレッドを一覧表示する](../api/group_list_threads.md) |[conversationThread](conversationthread.md) コレクション| グループのすべてのスレッドを取得します。|
+|[スレッドを更新する](../api/group_update_thread.md) |なし| thread オブジェクトのプロパティを更新します。|
+|[スレッドを削除する](../api/group_delete_thread.md) |なし| thread オブジェクトを削除します。|
 |[acceptedSenders を一覧表示する](../api/group_list_acceptedsenders.md) |[directoryObject](directoryobject.md) コレクション| このグループの acceptedSenders リストに含まれるユーザーまたはグループの一覧を取得します。|
 |[acceptedSender を追加する](../api/group_post_acceptedsenders.md) |[directoryObject](directoryobject.md)| acceptSenders コレクションにユーザーまたはグループを追加します。|
 |[acceptedSender を削除する](../api/group_delete_acceptedsenders.md) |[directoryObject](directoryobject.md)| acceptedSenders コレクションからユーザーまたはグループを削除します。|
@@ -45,7 +53,7 @@ Office 365 グループ、動的なグループ、セキュリティ グルー�
 |[設定を作成する](../api/groupsetting_post_groupsettings.md) | [groupSetting](groupsetting.md) |groupSettingTemplate に基づいて、設定オブジェクトを作成します。POST 要求は、テンプレートに定義されているすべての設定の settingValues を提供する必要があります。グループ固有のテンプレートにのみ、この操作を使用します。|
 |[設定を取得する](../api/groupsetting_get.md) | [groupSetting](groupsetting.md) | 特定の設定オブジェクトのプロパティを参照します。 |
 |[設定を一覧表示する](../api/groupsetting_list.md) | [groupSetting](groupsetting.md) コレクション | すべての設定オブジェクトのプロパティを一覧表示します。 |
-|[設定を更新する](../api/groupsetting_update.md) | [groupSetting](groupsetting.md) | 設定オブジェクトを更新します。 |
+|[設定を更新する](../api/groupsetting_update.md) | なし | 設定オブジェクトを更新します。 |
 |[設定を削除する](../api/groupsetting_delete.md) | なし | 設定オブジェクトを削除します。 |
 |**オープン拡張機能**| | |
 |[オープン拡張機能を作成する](../api/opentypeextension_post_opentypeextension.md) |[openTypeExtension](opentypeextension.md)| オープン拡張機能を作成し、新規または既存のリソースにカスタム プロパティを追加します。|
@@ -103,15 +111,15 @@ Office 365 グループ、動的なグループ、セキュリティ グルー�
 |owners|[directoryObject](directoryobject.md) コレクション|グループの所有者。所有者は、このオブジェクトの変更を許可されている管理者以外のユーザーです。10 人の所有者に制限されます。HTTP メソッド:GET (すべてのグループでサポートされます)、POST (Office 365 グループ、セキュリティ グループ、およびメールが有効なセキュリティ グループでサポートされます)、DELETE (Office 365 グループとセキュリティ グループでサポートされます)。Null 許容型。|
 |写真|[profilePhoto](profilephoto.md)| グループのプロファイル写真 |
 |photos|[profilePhoto](profilephoto.md) コレクション| グループが所有しているプロファイル写真。読み取り専用です。Null 許容型。|
-|planner|[Planner](planner.md)| 統合グループに存在する可能性がある Planner リソースのエントリ ポイント。|
+|プランナー|[planner](planner.md)| 統合グループに存在する可能性がある Planner リソースのエントリ ポイント。|
 |rejectedSenders|[directoryObject](directoryobject.md) コレクション|このグループで投稿またはカレンダーのイベントを作成することが許可されていないグループの一覧。Null 許容型|
 |設定|[groupSetting](groupsetting.md) コレクション| 読み取り専用。Null 許容型。|
-|sites|[site](site.md) コレクション|このグループ内の SharePoint サイトの一覧。/sites/root を使用して既定のサイトにアクセスします。
+|sites|[site](site.md) コレクション|このグループ内の SharePoint サイトの一覧。/sites/root を使用して既定のサイトにアクセスします。|
 |threads|[conversationThread](conversationthread.md) コレクション| グループの会話スレッド。Null 許容型。|
 
 ## <a name="json-representation"></a>JSON 表記
 
-以下は、リソースの JSON 表記です
+リソースの JSON 表記を次に示します。
 
 <!-- {
   "blockType": "resource",

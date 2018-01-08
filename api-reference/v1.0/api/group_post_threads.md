@@ -1,5 +1,4 @@
 # <a name="create-conversation-thread"></a>会話スレッドを作成する
-
 最初にスレッドを作成して、新しいグループ会話を開始します。 
 
 グループには、新しい会話、会話スレッド、および投稿が作成されます。[スレッドに返信](conversationthread_reply.md) または [投稿に返信](post_reply.md) を使い、そのスレッドへの投稿を続けます。
@@ -13,7 +12,7 @@
 |:--------------------|:---------------------------------------------------------|
 |委任 (職場または学校のアカウント) | Group.ReadWrite.All    |
 |委任 (個人用 Microsoft アカウント) | サポートされていません。    |
-|アプリケーション | Group.ReadWrite.All |
+|アプリケーション | サポートされていません。 |
 
 ## <a name="http-request"></a>HTTP 要求
 <!-- { "blockType": "ignored" } -->
@@ -30,12 +29,11 @@ POST /groups/{id}/threads
 要求の本文に、[投稿](../resources/post.md) を含む[conversationThread](../resources/conversationthread.md) オブジェクトの JSON 表記を指定します。
 
 ## <a name="response"></a>応答
-
 成功した場合、このメソッドは `201 Created` 応答コードと、応答本文で [conversationThread](../resources/conversationthread.md) オブジェクトを返します。
 
 ## <a name="example"></a>例
-##### <a name="request"></a>要求
-以下は、要求の例です。
+#### <a name="request"></a>要求
+要求の例を次に示します。
 <!-- {
   "blockType": "request",
   "name": "create_conversationthread_from_group"
@@ -60,8 +58,9 @@ Content-type: application/json
   }]
 }
 ```
-##### <a name="response"></a>応答
-以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。
+#### <a name="response"></a>応答
+応答の例を次に示します。
+>**注:** ここに示す応答オブジェクトは、読みやすさのために短縮されている場合があります。 実際の呼び出しではすべてのプロパティが返されます。
 <!-- {
   "blockType": "response",
   "truncated": true,

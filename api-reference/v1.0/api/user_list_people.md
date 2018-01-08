@@ -21,7 +21,7 @@ GET /users/{id | userPrincipalName}/people
 ```
 
 ## <a name="optional-query-parameters"></a>オプションのクエリ パラメーター
-このメソッドは、応答をカスタマイズするための [OData クエリ パラメーター](../../../concepts/people_example.md)をサポートします。
+このメソッドでは、「[ユーザーの関連情報を取得する](../../../concepts/people_example.md)」の記事に示す例のように、[OData クエリ パラメーター](../../../concepts/query_parameters.md)を使用して応答をカスタマイズすることができます。
 
 |名前|値|説明| 
 |:---------------|:--------|:-------| 

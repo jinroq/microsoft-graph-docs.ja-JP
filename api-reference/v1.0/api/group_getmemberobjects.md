@@ -15,6 +15,7 @@
 ```http
 POST /groups/{id}/getMemberObjects
 ```
+
 ## <a name="request-headers"></a>要求ヘッダー
 | 名前       | 型 | 説明|
 |:---------------|:--------|:----------|
@@ -31,9 +32,8 @@ POST /groups/{id}/getMemberObjects
 成功した場合、このメソッドはグループがメンバーであるグループの ID を含んだ応答本文で `200 OK` 応答コードと文字列コレクションを返します。
 
 ## <a name="example"></a>例
-以下は、この API を呼び出す方法の例です。
-##### <a name="request"></a>要求
-以下は、要求の例です。
+#### <a name="request"></a>要求
+要求の例を次に示します。
 <!-- {
   "blockType": "request",
   "name": "group_getmemberobjects"
@@ -48,8 +48,9 @@ Content-length: 33
 }
 ```
 
-##### <a name="response"></a>応答
-以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。
+#### <a name="response"></a>応答
+応答の例を次に示します。
+>**注:** ここに示す応答オブジェクトは、読みやすさのために短縮されている場合があります。 実際の呼び出しではすべてのプロパティが返されます。
 <!-- {
   "blockType": "response",
   "truncated": true,

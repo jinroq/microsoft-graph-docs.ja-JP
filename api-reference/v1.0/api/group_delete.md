@@ -1,6 +1,6 @@
 # <a name="delete-group"></a>グループの削除
-
 グループを削除します。
+
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](../../../concepts/permissions_reference.md)」を参照してください。
 
@@ -8,13 +8,14 @@
 |:--------------------|:---------------------------------------------------------|
 |委任 (職場または学校のアカウント) | Group.ReadWrite.All    |
 |委任 (個人用 Microsoft アカウント) | サポートされていません。    |
-|アプリケーション | Group.ReadWrite.All |
+|アプリケーション | サポートされていません。 |
 
 ## <a name="http-request"></a>HTTP 要求
 <!-- { "blockType": "ignored" } -->
 ```http
 DELETE /groups/{id}
 ```
+
 ## <a name="request-headers"></a>要求ヘッダー
 | 名前       | 型 | 説明|
 |:---------------|:--------|:----------|
@@ -24,12 +25,11 @@ DELETE /groups/{id}
 このメソッドには、要求本文を指定しません。
 
 ## <a name="response"></a>応答
-
 成功した場合、このメソッドは `204 No Content` 応答コードを返します。応答本文には何も返されません。
 
 ## <a name="example"></a>例
-##### <a name="request"></a>要求
-以下は、要求の例です。
+#### <a name="request"></a>要求
+要求の例を次に示します。
 <!-- {
   "blockType": "request",
   "name": "delete_group"
@@ -37,8 +37,9 @@ DELETE /groups/{id}
 ```http
 DELETE https://graph.microsoft.com/v1.0/groups/{id}
 ```
-##### <a name="response"></a>応答
-以下は、応答の例です。 
+
+#### <a name="response"></a>応答
+応答の例を次に示します。 
 <!-- {
   "blockType": "response",
   "truncated": true

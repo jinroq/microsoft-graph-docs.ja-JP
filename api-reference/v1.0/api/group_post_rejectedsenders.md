@@ -1,8 +1,8 @@
 # <a name="create-rejectedsender"></a>rejectedSender の作成
-
 rejectedSender リストに新しいユーザーやグループを追加します。
 
 `@odata.id` 内のユーザーやグループを要求の本文で指定します。拒否送信者リスト内のユーザーは、グループの会話に投稿できません (POST 要求 URL で識別)。拒否送信者と承認送信者のリストに同一のユーザーやグループを指定すると、エラーになるので注意してください。
+
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](../../../concepts/permissions_reference.md)」を参照してください。
 
@@ -10,7 +10,7 @@ rejectedSender リストに新しいユーザーやグループを追加しま�
 |:--------------------|:---------------------------------------------------------|
 |委任 (職場または学校のアカウント) | Group.ReadWrite.All    |
 |委任 (個人用 Microsoft アカウント) | サポートされていません。    |
-|アプリケーション | Group.ReadWrite.All |
+|アプリケーション | サポートされていません。 |
 
 ## <a name="http-request"></a>HTTP 要求
 <!-- { "blockType": "ignored" } -->
@@ -26,12 +26,11 @@ POST /groups/{id}/rejectedSenders/$ref
 要求の本文で、ユーザーまたはグループのオブジェクトの id を指定します。
 
 ## <a name="response"></a>応答
-
 このメソッドは `204 No Content` 応答コードを返し、応答の本文は返しません。
 
 ## <a name="example"></a>例
-##### <a name="request"></a>要求
-以下は、要求の例です。
+#### <a name="request"></a>要求
+要求の例を次に示します。
 <!-- {
   "blockType": "request",
   "name": "create_directoryobject_from_group"
@@ -45,8 +44,8 @@ Content-length: 30
   "@odata.id":"https://graph.microsoft.com/v1.0/users/alexd@contoso.com"
 }
 ```
-##### <a name="response"></a>応答
-以下は、応答の例です。
+#### <a name="response"></a>応答
+応答の例を次に示します。
 <!-- {
   "blockType": "response",
   "truncated": true
