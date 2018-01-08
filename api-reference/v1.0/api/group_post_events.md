@@ -1,36 +1,36 @@
-# <a name="create-event"></a><span data-ttu-id="576c9-101">イベントを作成する</span><span class="sxs-lookup"><span data-stu-id="576c9-101">Create Event</span></span>
-<span data-ttu-id="576c9-102">この API を使用して、新しい[イベント](../resources/event.md)を作成します。</span><span class="sxs-lookup"><span data-stu-id="576c9-102">Use this API to create a new [event](../resources/event.md).</span></span>
+# <a name="create-event"></a><span data-ttu-id="904cc-101">イベントを作成する</span><span class="sxs-lookup"><span data-stu-id="904cc-101">Create Event</span></span>
+<span data-ttu-id="904cc-102">この API を使用して、新しい[イベント](../resources/event.md)を作成します。</span><span class="sxs-lookup"><span data-stu-id="904cc-102">Use this API to create a new [event](../resources/event.md).</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="576c9-103">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="576c9-103">Permissions</span></span>
-<span data-ttu-id="576c9-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](../../../concepts/permissions_reference.md)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="576c9-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).</span></span>
+## <a name="permissions"></a><span data-ttu-id="904cc-103">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="904cc-103">Permissions</span></span>
+<span data-ttu-id="904cc-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](../../../concepts/permissions_reference.md)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="904cc-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).</span></span>
 
-|<span data-ttu-id="576c9-106">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="576c9-106">Permission type</span></span>      | <span data-ttu-id="576c9-107">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="576c9-107">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="904cc-106">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="904cc-106">Permission type</span></span>      | <span data-ttu-id="904cc-107">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="904cc-107">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="576c9-108">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="576c9-108">Delegated (work or school account)</span></span> | <span data-ttu-id="576c9-109">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="576c9-109">Group.ReadWrite.All</span></span>    |
-|<span data-ttu-id="576c9-110">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="576c9-110">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="576c9-111">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="576c9-111">Not supported.</span></span>    |
-|<span data-ttu-id="576c9-112">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="576c9-112">Application</span></span> | <span data-ttu-id="576c9-113">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="576c9-113">Not supported.</span></span> |
+|<span data-ttu-id="904cc-108">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="904cc-108">Delegated (work or school account)</span></span> | <span data-ttu-id="904cc-109">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="904cc-109">Group.ReadWrite.All</span></span>    |
+|<span data-ttu-id="904cc-110">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="904cc-110">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="904cc-111">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="904cc-111">Not supported.</span></span>    |
+|<span data-ttu-id="904cc-112">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="904cc-112">Application</span></span> | <span data-ttu-id="904cc-113">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="904cc-113">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="576c9-114">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="576c9-114">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="904cc-114">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="904cc-114">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /groups/{id}/events
 POST /groups/{id}/calendar/events
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="576c9-115">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="576c9-115">Request headers</span></span>
-| <span data-ttu-id="576c9-116">ヘッダー</span><span class="sxs-lookup"><span data-stu-id="576c9-116">Header</span></span>       | <span data-ttu-id="576c9-117">値</span><span class="sxs-lookup"><span data-stu-id="576c9-117">Value</span></span> |
+## <a name="request-headers"></a><span data-ttu-id="904cc-115">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="904cc-115">Request headers</span></span>
+| <span data-ttu-id="904cc-116">ヘッダー</span><span class="sxs-lookup"><span data-stu-id="904cc-116">Header</span></span>       | <span data-ttu-id="904cc-117">値</span><span class="sxs-lookup"><span data-stu-id="904cc-117">Value</span></span> |
 |:---------------|:--------|
-| <span data-ttu-id="576c9-118">Authorization</span><span class="sxs-lookup"><span data-stu-id="576c9-118">Authorization</span></span>  | <span data-ttu-id="576c9-p102">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="576c9-p102">Bearer {token}. Required.</span></span>  |
+| <span data-ttu-id="904cc-118">Authorization</span><span class="sxs-lookup"><span data-stu-id="904cc-118">Authorization</span></span>  | <span data-ttu-id="904cc-p102">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="904cc-p102">Bearer {token}. Required.</span></span>  |
 
-## <a name="request-body"></a><span data-ttu-id="576c9-121">要求本文</span><span class="sxs-lookup"><span data-stu-id="576c9-121">Request body</span></span>
-<span data-ttu-id="576c9-122">要求本文で、[イベント](../resources/event.md) オブジェクトの JSON 表記を指定します。</span><span class="sxs-lookup"><span data-stu-id="576c9-122">In the request body, supply a JSON representation of [Event](../resources/event.md) object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="904cc-121">要求本文</span><span class="sxs-lookup"><span data-stu-id="904cc-121">Request body</span></span>
+<span data-ttu-id="904cc-122">要求本文で、[イベント](../resources/event.md) オブジェクトの JSON 表記を指定します。</span><span class="sxs-lookup"><span data-stu-id="904cc-122">In the request body, supply a JSON representation of [event](../resources/event.md) object.</span></span>
 
-## <a name="response"></a><span data-ttu-id="576c9-123">応答</span><span class="sxs-lookup"><span data-stu-id="576c9-123">Response</span></span>
-<span data-ttu-id="576c9-124">成功した場合、このメソッドは `201 Created` 応答コードと、応答本文で[イベント](../resources/event.md) オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="576c9-124">If successful, this method returns `201 Created` response code and [Event](../resources/event.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="904cc-123">応答</span><span class="sxs-lookup"><span data-stu-id="904cc-123">Response</span></span>
+<span data-ttu-id="904cc-124">成功した場合、このメソッドは `201 Created` 応答コードと、応答本文で[イベント](../resources/event.md) オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="904cc-124">If successful, this method returns `201 Created` response code and [event](../resources/event.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="576c9-125">例</span><span class="sxs-lookup"><span data-stu-id="576c9-125">Example</span></span>
-#### <a name="request"></a><span data-ttu-id="576c9-126">要求</span><span class="sxs-lookup"><span data-stu-id="576c9-126">Request</span></span>
-<span data-ttu-id="576c9-127">要求の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="576c9-127">The following is an example of the request body.</span></span>
+## <a name="example"></a><span data-ttu-id="904cc-125">例</span><span class="sxs-lookup"><span data-stu-id="904cc-125">Example</span></span>
+#### <a name="request"></a><span data-ttu-id="904cc-126">要求</span><span class="sxs-lookup"><span data-stu-id="904cc-126">Request</span></span>
+<span data-ttu-id="904cc-127">要求の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="904cc-127">The following is an example of the request body.</span></span>
 <!-- {
   "blockType": "request",
   "name": "create_event_from_group"
@@ -52,11 +52,11 @@ Content-length: 285
   "isReminderOn": true
 }
 ```
-<span data-ttu-id="576c9-128">要求本文で、[イベント](../resources/event.md) オブジェクトの JSON 表記を指定します。</span><span class="sxs-lookup"><span data-stu-id="576c9-128">In the request body, supply a JSON representation of [event](../resources/event.md) object.</span></span>
+<span data-ttu-id="904cc-128">要求本文で、[イベント](../resources/event.md) オブジェクトの JSON 表記を指定します。</span><span class="sxs-lookup"><span data-stu-id="904cc-128">In the request body, supply a JSON representation of [event](../resources/event.md) object.</span></span>
 
-#### <a name="response"></a><span data-ttu-id="576c9-129">応答</span><span class="sxs-lookup"><span data-stu-id="576c9-129">Response</span></span>
-<span data-ttu-id="576c9-130">応答の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="576c9-130">The following is an example of a response.</span></span>
-><span data-ttu-id="576c9-131">**注:** ここに示す応答オブジェクトは、読みやすさのために短縮されている場合があります。</span><span class="sxs-lookup"><span data-stu-id="576c9-131">**Note:** The response object shown here might be shortened for readability.</span></span> <span data-ttu-id="576c9-132">実際の呼び出しではすべてのプロパティが返されます。</span><span class="sxs-lookup"><span data-stu-id="576c9-132">All the properties will be returned from an actual call.</span></span>
+#### <a name="response"></a><span data-ttu-id="904cc-129">応答</span><span class="sxs-lookup"><span data-stu-id="904cc-129">Response</span></span>
+<span data-ttu-id="904cc-130">応答の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="904cc-130">The following is an example of a response.</span></span>
+><span data-ttu-id="904cc-131">**注:** ここに示す応答オブジェクトは、読みやすさのために短縮されている場合があります。</span><span class="sxs-lookup"><span data-stu-id="904cc-131">**Note:** The response object shown here might be shortened for readability.</span></span> <span data-ttu-id="904cc-132">実際の呼び出しではすべてのプロパティが返されます。</span><span class="sxs-lookup"><span data-stu-id="904cc-132">All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",
