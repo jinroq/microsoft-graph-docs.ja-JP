@@ -11,7 +11,7 @@ Microsoft Graph にはオプションのクエリ パラメーターがあり、
 | [$filter](#filter-parameter)       | 結果 (行) をフィルターします。|[`/users?$filter=startswith(givenName,'J')`][filter-example]
 | [$format](#format-parameter)       | 指定したメディア形式で結果を返します。|[`/users?$format=json`][format-example]
 | [$orderby](#orderby-parameter)     | 結果を並べます。|[`/users?$orderby=displayName desc`][orderby-example]
-| [$search](#search-parameter)       | 検索条件に基づいて結果を返します。現在、`messages` と `person` のコレクションでサポートされています。|[`/me/messages?$search=pizza`][search-example]
+| [$search](#search-parameter)       | 検索条件に基づいて結果を返します。現在、**messages** と **person** のコレクションでサポートされています。|[`/me/messages?$search=pizza`][search-example]
 | [$select](#select-parameter)       | プロパティ (列) をフィルターします。|[`/users?$select=givenName,surname`][select-example]
 | [$skip](#skip-parameter)           | 結果セットにインデックスを作成します。また一部の API でページングを実装するために使用されており、`$top` と組み合わせて結果を手動でページングすることもできます。 | [`/me/messages?$skip=11`][skip-example]
 | [$skipToken](#skiptoken-parameter) | 複数ページにわたる結果セットから、結果の次のページを取得します。(一部の API では代わりに `$skip` を使用します。) | `/users?$skiptoken=X%274453707402000100000017...`|
@@ -21,7 +21,7 @@ Microsoft Graph にはオプションのクエリ パラメーターがあり、
 
 これらのパラメーターは、[OData V4 クエリ言語][odata-query]と互換性があります。 すべての Microsoft Graph API で全部のパラメーターがサポートされているわけではなく、`v1.0` エンドポイントと `beta` エンドポイントの間でサポートが大幅に異なる場合があります。 
 
-> **注:**`beta` エンドポイントでは、`$` プレフィックスはオプションです。たとえば、`$filter` の代わりに、`filter` を使用しても同じです。詳細および例については、「[Microsoft Graph における $ プレフィックスのないクエリ パラメーターのサポート](http://dev.office.com/queryparametersinMicrosoftGraph)」を参照してください。
+> **注:**`beta` エンドポイントでは、`$` プレフィックスはオプションです。たとえば、`$filter` の代わりに、`filter` を使用しても同じです。詳細および例については、「[Microsoft Graph における $ プレフィックスのないクエリ パラメーターのサポート]((http://dev.office.com/queryparametersinMicrosoftGraph))」を参照してください。
 
 ## <a name="encoding-query-parameters"></a>クエリ パラメーターのエンコード
 
@@ -43,7 +43,7 @@ GET https://graph.microsoft.com/v1.0/users?$filter=startswith(givenName%2C+'J')
 
 `$count` クエリ パラメーターを使用し、Microsoft Graph から返されるデータ値のページにコレクション内の項目数の合計を含めます。 
 
-たとえば、次のような要求によって、現在のユーザーの `contacts` コレクションと、`@odata.count` プロパティ内の `contacts` コレクションのアイテム数の両方が返されます。
+たとえば、次のような要求では、現在のユーザーの **contact** コレクションと、`@odata.count` プロパティ内の **contact** コレクションのアイテム数の両方が返されます。
 
 ```http
 GET  https://graph.microsoft.com/v1.0/me/contacts?$count=true
@@ -52,7 +52,7 @@ GET  https://graph.microsoft.com/v1.0/me/contacts?$count=true
 [Graph エクスプローラーで試す](https://developer.microsoft.com/graph/graph-explorer?request=me/contacts?$count=true&method=GET&version=v1.0)
 
 
->**注:** `$count` は、[ユーザー](../api-reference/v1.0/resources/user.md)や[グループ](../api-reference/v1.0/resources/group.md)のコレクションのような、[`directoryObject`](../api-reference/v1.0/resources/directoryobject.md) から派生したリソースのコレクションに対してはサポートされていません。
+>**注:** `$count` は、[user](../api-reference/v1.0/resources/user.md) や [group](../api-reference/v1.0/resources/group.md) のコレクションのような、[directoryObject](../api-reference/v1.0/resources/directoryobject.md) から派生したリソースのコレクションに対してはサポートされていません。
 
 ## <a name="expand-parameter"></a>expand パラメーター
 
@@ -68,7 +68,7 @@ GET https://graph.microsoft.com/v1.0/me/drive/root?$expand=children
 
 [Graph エクスプローラーで試す](https://developer.microsoft.com/graph/graph-explorer?request=me/drive/root?$expand=children&method=GET&version=v1.0)
 
-いくつかのリソース コレクションで、`$select` パラメーターを追加すれば、展開されたリソースで返されるプロパティを指定することもできます。次の使用例は前の例と同じクエリを実行しますが、[`$select`](#select-parameter) ステートメントを使用して、展開されている子項目に返されるプロパティを `id` プロパティと `name` プロパティに限定します。
+いくつかのリソース コレクションで、`$select` パラメーターを追加すれば、展開されたリソースで返されるプロパティを指定することもできます。次の使用例は前の例と同じクエリを実行しますが、[`$select`](#select-parameter) ステートメントを使用して、展開されている子項目に返されるプロパティを **id** プロパティと **name** プロパティに限定します。
 
 ```http
 GET https://graph.microsoft.com/v1.0/me/drive/root?$expand=children($select=id,name)
@@ -76,7 +76,7 @@ GET https://graph.microsoft.com/v1.0/me/drive/root?$expand=children($select=id,n
 
 [Graph エクスプローラーで試す][expand-example]
 
-> **注:** すべてのリレーションシップとリソースで、`$expand` クエリ パラメーターがサポートされているわけではありません。たとえば、ユーザーの `directReports`、`manager`、`memberOf` の各リレーションシップを展開できますが、その `events`、`messages`、`photo` のリレーションシップは展開できません。すべてのリソースまたはリレーションシップで、`$select` を使用して展開されたアイテムがサポートされているわけではありません。 
+> **注:** すべてのリレーションシップとリソースで、`$expand` クエリ パラメーターがサポートされているわけではありません。たとえば、ユーザーの **directReports**、**manager**、**memberOf** の各リレーションシップを展開できますが、その **events**、**messages**、**photo** のリレーションシップは展開できません。すべてのリソースまたはリレーションシップで、`$select` を使用して展開されたアイテムがサポートされているわけではありません。 
 > 
 > [ユーザー](../api-reference/v1.0/resources/user.md)や[グループ](../api-reference/v1.0/resources/group.md)のような、[directoryObject](../api-reference/v1.0/resources/directoryobject.md) から派生した Azure AD リソースの場合、`$expand` は `beta` でのみサポートされており、通常は展開されているリレーションシップに対し最大 20 個のアイテムを返すことができます。
 
@@ -145,7 +145,7 @@ GET https://graph.microsoft.com/v1.0/users?$orderby=displayName
 ```
 [Graph エクスプローラーで試す][orderby-example]
 
-複合型のエンティティでも並べ替えが可能です。次の要求では、メッセージを取得し、それらを `emailAddress` という複合型である `from` プロパティの `address` フィールドで並べ替えます。
+複合型のエンティティでも並べ替えができます。次の要求では、メッセージを取得し、それらを **emailAddress** という複合型である **from** プロパティの **address** フィールドで並べ替えます。
 
 ```http
 GET https://graph.microsoft.com/v1.0/me/messages?$orderby=from/emailAddress/address
@@ -171,27 +171,29 @@ GET https://graph.microsoft.com/v1.0/me/mailFolders/Inbox/messages?$orderby=from
 
 > **注:** 現在の検索対象は、[メッセージ](../api-reference/v1.0/resources/message.md) コレクションと[人物](../api-reference/v1.0/resources/person.md)コレクション**だけ**です。`$search` 要求は最大 250 まで結果を返します。検索要求では [`$filter`](#filter-parameter) も [`$orderby`](#orderby-parameter) も使用できません。
 
-### <a name="using-search-on-message-collections"></a>`message` コレクションで $Search を使用する
+### <a name="using-search-on-message-collections"></a>メッセージ コレクションで $search を使用する
 
-メッセージの検索条件は、[高度な検索テクニック (AQS)](https://support.office.com/article/Search-Mail-and-People-in-Outlook-com-and-Outlook-on-the-web-for-business-88108edf-028e-4306-b87e-7400bbb40aa7) を使用して表現されます。結果は、メッセージが送信された日時で並べ替えられます。
+Outlook や SharePoint などの Office 365 アプリケーションは、キーワード クエリ言語 (KQL) 構文で検索を実行することをサポートしています。 そのため、複数のデータ ストアで 1 つの共通の探索ドメインを使用できる利便性が得られます。 
 
-`$search` で `message` に対する次のプロパティを指定できます:
+メッセージ コレクションを検索すると、結果はメッセージが送信された日時で並べ替えられます。 
 
-- `attachments`
-- `bccRecipients`
-- `body`
-- `category`
-- `ccRecipients`
-- `content`
-- `from`
-- `hasAttachments`
-- `participants`
-- `receivedDateTime`
-- `sender`
-- `subject`
-- `toRecipients`
+`$search` 条件で **message** に対する次のプロパティを指定できます:
 
-メッセージで検索を行うときに値のみ指定した場合、検索は既定の検索プロパティである `from`、`subject` および `body` に基づいて行われます。
+- **attachments**
+- **bccRecipients**
+- **body**
+- **category**
+- **ccRecipients**
+- **content**
+- **from**
+- **hasAttachments**
+- **participants**
+- **receivedDateTime**
+- **sender**
+- **subject**
+- **toRecipients**
+
+メッセージで検索を行うときに値のみ指定した場合、検索は既定の検索プロパティである **from**、**subject**、**body** に基づいて行われます。
 
 次の例は、サインイン中のユーザーの受信トレイにあるメッセージのうち、既定の 3 つの検索プロパティのいずれかに "pizza" が含まれるメッセージをすべて返します。
 
@@ -206,12 +208,18 @@ GET https://graph.microsoft.com/v1.0/me/messages?$search="pizza"
 ```http
 GET https://graph.microsoft.com/v1.0/me/messages?$search="from:help@contoso.com"
 ```
+KQL の構文、サポートされている演算子、検索のヒントなどの詳細については、次の記事を参照してください。
 
-### <a name="using-search-on-person-collections"></a>`person` コレクションで $Search を使用する
+- [キーワード クエリ言語 (KQL) 構文のリファレンス]((https://docs.microsoft.com/ja-JP/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference))
+
+- 
+  [Exchange 2016 におけるインプレースの電子情報開示のためのメッセージ プロパティと検索演算子](https://technet.microsoft.com/en-us/library/dn774955(v=exchg.160).aspx)
+
+### <a name="using-search-on-person-collections"></a>人物コレクションで $search を使用する
 
 Microsoft Graph People API を使用してユーザーに最も関連のある人物を取得できます。関連性は、ユーザーのコミュニケーションとコラボレーション パターン、およびビジネスのリレーションシップによって決定されます。People API では、`$search` クエリ パラメーターがサポートされています。
 
-[人物](../api-reference/v1.0/resources/person.md)リソースの `displayName` プロパティと `emailAddress` プロパティの両方で人物の検索を行います。検索は、あいまい一致のアルゴリズムを実装します。これにより、完全に一致する項目と、検索目的の推論に基づく結果が返されます。たとえば、サインイン ユーザーの `people` コレクション内で、"Tyler Lee" の表示名および tylerle@example.com というメール アドレスを持つユーザーを想定してください。次の検索はすべて、Tyler を含む検索結果を返します。
+[person](../api-reference/v1.0/resources/person.md) リソースの **displayName** プロパティと **emailAddress** プロパティの両方で人物の検索を行います。 検索は、あいまい一致のアルゴリズムを実装します。 これにより、完全に一致する項目と、検索目的の推論に基づく結果が返されます。 たとえば、サインイン ユーザーの **people** コレクションに、表示名が "Tyler Lee" で tylerle@example.com というメール アドレスを持つユーザーがいるとします。 次の検索はすべて、Tyler を含む検索結果を返します。
 
 ```http
 GET https://graph.microsoft.com/v1.0/me/people?$search=tyler                //matches both Tyler's name and email
@@ -233,15 +241,15 @@ GET https://graph.microsoft.com/v1.0/me/people/?$search="topic:pizza"
 GET https://graph.microsoft.com/v1.0/me/people/?$search="tyl topic:pizza"                
 ```
 
-この要求は本質的には 2 つの検索を行います。サインイン ユーザーに関連する人物の `displayName` プロパティと `emailAddress` プロパティに対するあいまい検索、そしてユーザーに関連する人物に対する「ピザ」というトピックの検索です。 次いで結果をランク付けし、並べ替え、返します。 この検索は制限的ではありません。「tyl」とあいまい一致する人物、「ピザ」に関心を示す人物、または両方の結果を取得する可能性があります。
+この要求は本質的には 2 つの検索を行います。サインイン ユーザーに関連する人物の **displayName** プロパティと **emailAddress** プロパティに対するあいまい検索、そしてユーザーに関連する人物に対する「ピザ」というトピックの検索です。 次いで結果をランク付けし、並べ替え、返します。 この検索は制限的ではありません。「tyl」とあいまい一致する人物、「ピザ」に関心を示す人物、または両方の結果を取得する可能性があります。
 
 People API についてもっと知るには、「[関係する人の情報を取得する](./people_example.md)」を参照してください。  
 
 ## <a name="select-parameter"></a>select パラメーター
 
-`$select` クエリ パラメーターを使用して、個別リソースまたはリソースのコレクションの既定値とは異なるプロパティのセットを返します。 $Select で、既定のプロパティのサブセットまたはスーパー セットを指定できます。
+`$select` クエリ パラメーターを使用して、個別リソースまたはリソースのコレクションの既定値とは異なるプロパティのセットを返します。 $Select で、既定のプロパティのサブセットまたはスーパーセットを指定できます。
 
-たとえば、サインイン ユーザーのメッセージを取得するとき、`from` プロパティと `subject` プロパティだけを返すよう指定できます。
+たとえば、サインイン ユーザーのメッセージを取得するとき、**from** プロパティと **subject** プロパティだけを返すよう指定できます。
 
 ```http
 GET https://graph.microsoft.com/v1.0/me/messages?$select=from,subject
@@ -262,7 +270,7 @@ GET  https://graph.microsoft.com/v1.0/me/events?$orderby=createdDateTime&$skip=2
 ```
 [Graph エクスプローラーで試す][skip-example]
 
-> **注:**Outlook メール/カレンダーなどいくつかの Microsoft Graph API (`message`、`event`、`calendar`) は、`$skip` を使用してページングを実装します。 クエリの結果が複数ページにまたがる場合、これらの API は `@odata:nextLink` プロパティと共に `$skip` パラメーターが含まれる URL を返します。 この URL を使用して、結果の次のページに戻れます。 詳細については、「[ページング](./paging.md)」を参照してください。
+> **注:**Outlook のメールやカレンダーなど、いくつかの Microsoft Graph API (**message**、**event**、**calendar**) は、`$skip` を使用してページングを実装します。 クエリの結果が複数ページにまたがる場合、これらの API は `@odata:nextLink` プロパティと共に `$skip` パラメーターが含まれる URL を返します。 この URL を使用して、結果の次のページに戻れます。 詳細については、「[ページング](./paging.md)」を参照してください。
 
 ## <a name="skiptoken-parameter"></a>skipToken パラメーター
 
