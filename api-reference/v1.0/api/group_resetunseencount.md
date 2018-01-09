@@ -1,5 +1,4 @@
 # <a name="group-resetunseencount"></a>グループ: resetUnseenCount
-
 現在のユーザーが最後の訪問以降見ていない、すべての投稿の unseenCount をリセットします。Office 365 のグループのみをサポートします。
 
 ## <a name="permissions"></a>アクセス許可
@@ -20,17 +19,15 @@ POST /groups/{id}/resetUnseenCount
 | ヘッダー       | 値 |
 |:---------------|:--------|
 | Authorization  | ベアラー {トークン}。必須。  |
+| Prefer | return=minimal. 最小応答ヘッダーが要求ヘッダーに含まれている場合、正常な応答で `204 No Content` コードが返されます。 省略可能。  | 
 
 ## <a name="request-body"></a>要求本文
 このメソッドには、要求本文を指定しません。
 
 ## <a name="response"></a>応答
-
-成功した場合、このメソッドは `204 No Content` 応答コードを返します。応答本文には何も返されません。
+成功した場合、このメソッドは `200 OK` 応答コードを返します。応答本文には何も返されません。
 
 ## <a name="example"></a>例
-次に、この API を呼び出す方法の例を示します。
-
 #### <a name="request"></a>要求
 要求の例を次に示します。
 <!-- {
@@ -48,7 +45,7 @@ POST https://graph.microsoft.com/v1.0/groups/{id}/resetUnseenCount
   "truncated": true
 } -->
 ```http
-HTTP/1.1 204 No Content
+HTTP/1.1 200 OK
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
