@@ -2,7 +2,7 @@
 
 メール アプリごとの、それぞれ別個のユーザーの数を取得します。
 
-> **注:** 別のレポートのビューとレポート名についての詳細は、「[Office 365 レポート: メール アプリの使用状況]((https://support.office.com/client/Email-apps-usage-c2ce12a2-934f-4dd4-ba65-49b02be4703d))」を参照してください。
+> **注:** 別のレポートのビューとレポート名についての詳細は、「[Office 365 レポート: メール アプリの使用状況](https://support.office.com/client/Email-apps-usage-c2ce12a2-934f-4dd4-ba65-49b02be4703d)」を参照してください。
 
 ## <a name="permissions"></a>アクセス許可
 

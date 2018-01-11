@@ -10,7 +10,7 @@ Microsoft Graph には、「**委任されたアクセス許可**」と「**ア�
 
 _有効なアクセス許可_は、アプリが Microsoft Graph に要求を出すときに付与されるアクセス許可です。アプリに付与される委任されたアクセス許可とアプリケーションのアクセス許可の相違点について理解することに加えて、Microsoft Graph の呼び出し時の有効なアクセス許可についても理解することが重要です。
 
-- 委任されたアクセス許可の場合、アプリの_有効なアクセス許可_は、アプリに付与されている委任されたアクセス許可 (同意によって付与) と現在サインインしているユーザーの特権が重なる範囲に収まる最小権限になります。サインインしているユーザーよりも高い特権がアプリに付与されることはありません。組織では、サインインしているユーザーの特権は、ポリシーで決まることもあれば、1 つ以上の管理者ロールに含まれるメンバーシップで決まることもあります。管理者ロールの詳細については、「[Azure Active Directory での管理者ロールの割り当て]((https://docs.microsoft.com/ja-JP/azure/active-directory/active-directory-assign-admin-roles))」を参照してください。<br/><br/>たとえば、委任されたアクセス許可として _User.ReadWrite.All_ がアプリに付与されているとします。通常、このアクセス許可は、組織内のすべてのユーザーのプロファイルを読み取り、更新するためのアクセス許可をアプリに付与します。サインインしているユーザーが全体管理者の場合、アプリは、組織内のすべてのユーザーのプロファイルを更新できるようになります。ただし、サインインしているユーザーが管理者ロールに含まれていない場合、アプリは、そのサインインしているユーザーのプロファイルのみを更新できるようになります。組織内の他のユーザーのプロファイルは更新できません。これは、アプリが代理するアクセス許可を持つユーザーに、そのような権限が付与されていないためです。
+- 委任されたアクセス許可の場合、アプリの_有効なアクセス許可_は、アプリに付与されている委任されたアクセス許可 (同意によって付与) と現在サインインしているユーザーの特権が重なる範囲に収まる最小権限になります。サインインしているユーザーよりも高い特権がアプリに付与されることはありません。組織では、サインインしているユーザーの特権は、ポリシーで決まることもあれば、1 つ以上の管理者ロールに含まれるメンバーシップで決まることもあります。管理者ロールの詳細については、「[Azure Active Directory での管理者ロールの割り当て](https://docs.microsoft.com/ja-JP/azure/active-directory/active-directory-assign-admin-roles)」を参照してください。<br/><br/>たとえば、委任されたアクセス許可として _User.ReadWrite.All_ がアプリに付与されているとします。通常、このアクセス許可は、組織内のすべてのユーザーのプロファイルを読み取り、更新するためのアクセス許可をアプリに付与します。サインインしているユーザーが全体管理者の場合、アプリは、組織内のすべてのユーザーのプロファイルを更新できるようになります。ただし、サインインしているユーザーが管理者ロールに含まれていない場合、アプリは、そのサインインしているユーザーのプロファイルのみを更新できるようになります。組織内の他のユーザーのプロファイルは更新できません。これは、アプリが代理するアクセス許可を持つユーザーに、そのような権限が付与されていないためです。
   
 - アプリケーションのアクセス許可の場合、アプリの_有効なアクセス許可_は、そのアクセス許可が暗示する完全なレベルの権限になります。たとえば、アプリケーションのアクセス許可として _User.ReadWrite.All_ が付与されているアプリは、組織内のすべてのユーザーのプロファイルを更新できます。 
 
@@ -317,9 +317,9 @@ _Directory.ReadWrite.All_ アクセス許可は、次に示す特権を付与し
 
 委任されたアクセス許可の Files.Read、Files.ReadWrite、Files.Read.All、および Files.ReadWrite.All は、個人用の Microsoft アカウントと職場または学校アカウントの両方で有効です。個人用アカウントの場合、Files.Read および Files.ReadWrite はサインインしているユーザーと共有しているファイルへのアクセスも許可される点に注意してください。 
 
-委任されたアクセス許可の Files.Read.Selected および Files.ReadWrite.Selected は、職場または学校アカウントでのみ有効です。また、[Office 365 ファイル ハンドラー (v1.0)]((https://msdn.microsoft.com/office/office365/howto/using-cross-suite-apps)) を使用している場合にのみ公開されます。これらは、Microsoft Graph API を直接呼び出すために使用しないでください。 
+委任されたアクセス許可の Files.Read.Selected および Files.ReadWrite.Selected は、職場または学校アカウントでのみ有効です。また、[Office 365 ファイル ハンドラー (v1.0)](https://msdn.microsoft.com/office/office365/howto/using-cross-suite-apps) を使用している場合にのみ公開されます。これらは、Microsoft Graph API を直接呼び出すために使用しないでください。 
 
-委任されたアクセス許可の Files.ReadWrite.AppFolder は、個人用アカウントでのみ有効です。また、OneDrive の[特殊フォルダーを取得する](../api-reference/v1.0/api/drive_get_specialfolder.md) Microsoft Graph API で [App Root 特殊フォルダー]((https://dev.onedrive.com/misc/appfolder.htm))にアクセスする場合に使用します。
+委任されたアクセス許可の Files.ReadWrite.AppFolder は、個人用アカウントでのみ有効です。また、OneDrive の[特殊フォルダーを取得する](../api-reference/v1.0/api/drive_get_specialfolder.md) Microsoft Graph API で [App Root 特殊フォルダー](https://dev.onedrive.com/misc/appfolder.htm)にアクセスする場合に使用します。
 
 
 ### <a name="example-usage"></a>使用例
@@ -399,7 +399,7 @@ Office 365 グループの場合は、グループのアクセス許可により
 
 ### <a name="remarks"></a>注釈
 
-_IdentityRiskEvent.Read.All_ は、職場または学校アカウントでのみ有効です。委任されたアクセス許可があるアプリの場合、ID リスク情報を読み取るには、サインインしているユーザーが「全体管理者」、「セキュリティ管理者」、または「セキュリティ閲覧者」のいずれかの管理者ロールのメンバーになっている必要があります。管理者ロールの詳細については、「[Azure Active Directory での管理者ロールの割り当て]((https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles))」を参照してください。
+_IdentityRiskEvent.Read.All_ は、職場または学校アカウントでのみ有効です。委任されたアクセス許可があるアプリの場合、ID リスク情報を読み取るには、サインインしているユーザーが「全体管理者」、「セキュリティ管理者」、または「セキュリティ閲覧者」のいずれかの管理者ロールのメンバーになっている必要があります。管理者ロールの詳細については、「[Azure Active Directory での管理者ロールの割り当て](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles)」を参照してください。
 
 ### <a name="example-usage"></a>使用例
 
@@ -425,7 +425,7 @@ _IdentityRiskEvent.Read.All_ は、職場または学校アカウントでのみ
 
 ### <a name="remarks"></a>注釈
 
-_IdentityProvider.Read.All_ と _IdentityProvider.ReadWrite.All_ は、職場または学校アカウントに対してのみ有効です。 アプリが委任されたアクセス許可で ID プロバイダーを読み取りおよび書き込みするには、サインインしているユーザーにグローバル管理者ロールを割り当てる必要があります。 管理者ロールの詳細については、「[Azure Active Directory での管理者ロールの割り当て]((https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles))」を参照してください。
+_IdentityProvider.Read.All_ と _IdentityProvider.ReadWrite.All_ は、職場または学校アカウントに対してのみ有効です。 アプリが委任されたアクセス許可で ID プロバイダーを読み取りおよび書き込みするには、サインインしているユーザーにグローバル管理者ロールを割り当てる必要があります。 管理者ロールの詳細については、「[Azure Active Directory での管理者ロールの割り当て](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles)」を参照してください。
 
 ### <a name="example-usage"></a>使用例
 
@@ -593,7 +593,7 @@ _Notes.Create_ のアクセス許可があるアプリは、サインインし�
 ### <a name="remarks"></a>注釈
 これらのアクセス許可を使用すると、Azure AD の承認とトークン要求で返される成果物を指定できます。これらは Azure AD v1.0 エンドポイントと v2.0 エンドポイントでは異なる方法でサポートされます。
 
-Azure AD (v1.0) エンドポイントでは、_openid_ アクセス許可のみが使用されます。これを承認要求で *scope* パラメーターに指定して、ユーザーがアプリにサインインするときに OpenID Connect プロトコルを使用する場合に ID トークンが返されるようにします。詳細については、「[OpenID Connect と Azure Active Directory を使用する Web アプリケーションへのアクセスの承認]((https://docs.microsoft.com/azure/active-directory/develop/active-directory-protocols-openid-connect-code))」を参照してください。ID トークンが正常に返されるようにするには、アプリを登録するときに _User.Read_ アクセス許可も必ず構成します。 
+Azure AD (v1.0) エンドポイントでは、_openid_ アクセス許可のみが使用されます。これを承認要求で *scope* パラメーターに指定して、ユーザーがアプリにサインインするときに OpenID Connect プロトコルを使用する場合に ID トークンが返されるようにします。詳細については、「[OpenID Connect と Azure Active Directory を使用する Web アプリケーションへのアクセスの承認](https://docs.microsoft.com/azure/active-directory/develop/active-directory-protocols-openid-connect-code)」を参照してください。ID トークンが正常に返されるようにするには、アプリを登録するときに _User.Read_ アクセス許可も必ず構成します。 
 
 Azure AD v2.0 エンドポイントでは、_scope_ パラメーターで_offline\_access_ アクセス許可を指定して、OAuth 2.0 または OpenID Connect プロトコルを使用するときに明示的に更新トークンを要求します。OpenID Connect では、_openid_ アクセス許可を指定して ID トークンを要求します。_email_ アクセス許可、_profile_ アクセス許可、あるいはその両方で ID トークンに追加の要求が返されるように指定できます。v2.0 エンドポイントでは、ID トークンを返すよう _User.Read_ を指定する必要はありません。詳細については、「[OpenID Connect のスコープ](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-scopes#openid-connect-scopes)」を参照してください。
 

@@ -1,14 +1,14 @@
 # <a name="get-started-with-microsoft-graph-in-a-python-app"></a>Python アプリで Microsoft Graph を使ってみる 
 
-この記事では、Azure AD からアクセス トークンを取得し、Microsoft Graph を呼び出すために必要なタスクについて説明します。 ここでは、[Python から Microsoft Graph を介してメールを送信する]((https://github.com/microsoftgraph/python-sample-send-mail))ためのチュートリアルと、Microsoft Graph API を使用するために実装する主要な概念について説明します。 直接 REST 呼び出しを使用して Microsoft Graph にアクセスする方法について説明します。
+この記事では、Azure AD からアクセス トークンを取得し、Microsoft Graph を呼び出すために必要なタスクについて説明します。 ここでは、[Python から Microsoft Graph を介してメールを送信する](https://github.com/microsoftgraph/python-sample-send-mail)ためのチュートリアルと、Microsoft Graph API を使用するために実装する主要な概念について説明します。 直接 REST 呼び出しを使用して Microsoft Graph にアクセスする方法について説明します。
 
 ![[メールの送信] フォーム](https://raw.githubusercontent.com/microsoftgraph/python-sample-send-mail/master/static/images/sendmail.png)
 
 ## <a name="choosing-an-authentication-library"></a>認証ライブラリの選択
 
-Microsoft Graph を呼び出すには、Microsoft クラウドの ID サービスである Azure Active Directory (Azure AD) から有効なアクセス トークンをアプリが取得し、そのトークンが Microsoft Graph REST API に対する各呼び出しの HTTP ヘッダーに渡される必要があります。 Graph での認証方法は OAuth 2.0 と Open ID Connect 標準に基づいているため、アプリケーションで認証を実装するために選択可能な[認証ライブラリ]((https://docs.microsoft.com/ja-JP/azure/active-directory/develop/active-directory-v2-libraries))が多数存在します。
+Microsoft Graph を呼び出すには、Microsoft クラウドの ID サービスである Azure Active Directory (Azure AD) から有効なアクセス トークンをアプリが取得し、そのトークンが Microsoft Graph REST API に対する各呼び出しの HTTP ヘッダーに渡される必要があります。 Graph での認証方法は OAuth 2.0 と Open ID Connect 標準に基づいているため、アプリケーションで認証を実装するために選択可能な[認証ライブラリ](https://docs.microsoft.com/ja-JP/azure/active-directory/develop/active-directory-v2-libraries)が多数存在します。
 
-以下に取り上げられているサンプルでは、[Flask-OAuthlib]((https://flask-oauthlib.readthedocs.io/en/latest/)) ライブラリを使用して OAuth 2.0 [認証コードの付与](https://tools.ietf.org/html/rfc6749#section-4.1)ワークフローを実装しています。これは、Python で書かれた Web アプリケーションで推奨されている認証ワークフローです。 その他の認証オプションについては、「[Microsoft Graph 用の Python 認証サンプル]((https://github.com/microsoftgraph/python-sample-auth))」を参照してください。
+以下に取り上げられているサンプルでは、[Flask-OAuthlib](https://flask-oauthlib.readthedocs.io/en/latest/) ライブラリを使用して OAuth 2.0 [認証コードの付与](https://tools.ietf.org/html/rfc6749#section-4.1)ワークフローを実装しています。これは、Python で書かれた Web アプリケーションで推奨されている認証ワークフローです。 その他の認証オプションについては、「[Microsoft Graph 用の Python 認証サンプル](https://github.com/microsoftgraph/python-sample-auth)」を参照してください。
 
 ## <a name="installing-and-running-the-send-mail-sample"></a>メールの送信サンプルのインストールと実行
 
@@ -67,10 +67,10 @@ response = sendmail(client=MSGRAPH,
 
 Microsoft Graph のさまざまな側面の使用方法について、その他の Python サンプルで紹介します。
 
-* [Microsoft Graph 用の Python 認証サンプル]((https://github.com/microsoftgraph/python-sample-auth))
-* [Python で改ページされた Microsoft Graph 応答を処理する]((https://github.com/microsoftgraph/python-sample-pagination))
-* [Python で Graph オープン拡張機能を処理する]((https://github.com/microsoftgraph/python-sample-open-extensions))
+* [Microsoft Graph 用の Python 認証サンプル](https://github.com/microsoftgraph/python-sample-auth)
+* [Python で改ページされた Microsoft Graph 応答を処理する](https://github.com/microsoftgraph/python-sample-pagination)
+* [Python で Graph オープン拡張機能を処理する](https://github.com/microsoftgraph/python-sample-open-extensions)
 
 表示したい特定のサンプルがある場合、[懸案事項を送信]((https://github.com/microsoftgraph/python-sample-auth)/issues)してお知らせください。 Python で構築する Microsoft Graph シナリオに対するお客様のフィードバックを大いに歓迎いたします。
 
-Microsoft Graph API は、あらゆる種類の Microsoft データとの対話に使用できる、非常に強力な統合 API です。 [開発者ドキュメント]((https://developer.microsoft.com/ja-JP/graph/docs/concepts/overview))または [Graph Explorer]((https://developer.microsoft.com/ja-JP/graph/graph-explorer)) で、Microsoft Graph によってさらに行える事柄について確認してください。
+Microsoft Graph API は、あらゆる種類の Microsoft データとの対話に使用できる、非常に強力な統合 API です。 [開発者ドキュメント](https://developer.microsoft.com/ja-JP/graph/docs/concepts/overview)または [Graph Explorer](https://developer.microsoft.com/ja-JP/graph/graph-explorer) で、Microsoft Graph によってさらに行える事柄について確認してください。

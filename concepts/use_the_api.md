@@ -2,7 +2,7 @@
 
 Microsoft Graph は、Microsoft Cloud サービス リソースへのアクセスを可能にする RESTful Web API です。 [アプリを登録](auth_register_app_v2.md) して、[サービス](auth_v2_service.md) または [ユーザーの認証トークンを取得する](auth_v2_user.md) と、Microsoft Graph API に対して要求を行うことができます。
 
-> **重要:**条件付きアクセス ポリシーの Microsoft Graph への適用方法は変更されています。 条件付きアクセス ポリシーが構成されるシナリオを処理するよう、アプリケーションを更新する必要があります。 詳細およびガイダンスについては、「[Azure Active Directory の条件付きアクセスについての開発者ガイド]((https://docs.microsoft.com/azure/active-directory/develop/active-directory-conditional-access-developer))」を参照してください。
+> **重要:**条件付きアクセス ポリシーの Microsoft Graph への適用方法は変更されています。 条件付きアクセス ポリシーが構成されるシナリオを処理するよう、アプリケーションを更新する必要があります。 詳細およびガイダンスについては、「[Azure Active Directory の条件付きアクセスについての開発者ガイド](https://docs.microsoft.com/azure/active-directory/develop/active-directory-conditional-access-developer)」を参照してください。
 
 ユーザーや電子メール メッセージなど、リソースの読み取りや書き込みを行うには、次のような要求を構築します。
 
@@ -46,7 +46,7 @@ Microsoft Graph は、現在 `v1.0` と `beta` の 2 つのバージョンをサ
 * `v1.0` には、一般公開されている API が含まれます。 すべての運用アプリで、v1.0 バージョンを使用します。
 * `beta` には、現在プレビュー段階の API が含まれます。 ベータ版 API に重大な変更を導入する可能性があるため、開発中のアプリのテストにのみ、ベータ版を使用することをお勧めします。運用アプリでは、ベータ版 API を使用しないでください。
 
-ベータ版 API のフィードバックを常に募集しています。 フィードバックの提供または機能のご要望は、「[UserVoice]((https://officespdev.uservoice.com/))」ページを参照してください。
+ベータ版 API のフィードバックを常に募集しています。 フィードバックの提供または機能のご要望は、「[UserVoice](https://officespdev.uservoice.com/)」ページを参照してください。
 
 API のバージョンに関する詳細については、「[バージョン管理とサポート](versioning_and_support.md)」を参照してください。
 
@@ -74,4 +74,4 @@ https://graph.microsoft.com/v1.0/me/messages?filter=emailAddress eq 'jon@contoso
 
 ## <a name="next-steps"></a>次の手順
 
-Microsoft Graph を使用して、起動および実行する準備ができました。 詳細について知るには、[Graph エクスプローラー]((https://developer.microsoft.com/ja-JP/graph/graph-explorer))に移動して、いくつかの要求や[クイック スタート]((https://developer.microsoft.com/ja-JP/graph/quick-start))を試したり、「[SDK とコード サンプル]((https://developer.microsoft.com/ja-JP/graph/code-samples-and-sdks))」のいずれかを使用して開始したりします。
+Microsoft Graph を使用して、起動および実行する準備ができました。 詳細について知るには、[Graph エクスプローラー](https://developer.microsoft.com/ja-JP/graph/graph-explorer)に移動して、いくつかの要求や[クイック スタート](https://developer.microsoft.com/ja-JP/graph/quick-start)を試したり、「[SDK とコード サンプル](https://developer.microsoft.com/ja-JP/graph/code-samples-and-sdks)」のいずれかを使用して開始したりします。
