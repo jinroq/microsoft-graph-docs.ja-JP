@@ -2,11 +2,11 @@
 
 > **エンタープライズのお客様向けにアプリを作成していますか?**エンタープライズのお客様が、<a href="https://azure.microsoft.com/en-us/documentation/articles/active-directory-conditional-access-device-policies/" target="_newtab">条件付きのデバイスへのアクセス</a>のようなエンタープライズ モビリティ セキュリティの機能をオンにしている場合、アプリが動作しない可能性があります。その場合、気がつかないまま、お客様の側でエラーが発生してしまう可能性があります。 
 
-> **すべてのエンタープライズのお客様**の**すべてのエンタープライズ シナリオ**をサポートするには、Azure AD エンドポイントを使用し、[Azure 管理ポータル](https://aka.ms/aadapplist)でアプリを管理する必要があります。詳細については、「[Azure AD か Azure AD v2.0 エンドポイントかを決定する](../concepts/auth_overview.md#deciding-between-the-azure-ad-and-azure-ad-v20-endpoints)」を参照してください。
+> **すべてのエンタープライズのお客様**の**すべてのエンタープライズ シナリオ**をサポートするには、Azure AD エンドポイントを使用し、[Azure 管理ポータル]((https://aka.ms/aadapplist))でアプリを管理する必要があります。詳細については、「[Azure AD か Azure AD v2.0 エンドポイントかを決定する](../concepts/auth_overview.md#deciding-between-the-azure-ad-and-azure-ad-v20-endpoints)」を参照してください。
 
-この記事では、[Azure AD v2.0 エンドポイント](https://developer.microsoft.com/en-us/graph/docs/concepts/converged_auth)からアクセス トークンを取得し、Microsoft Graph を呼び出すために必要なタスクについて説明します。ここでは、[UWP 用 Microsoft Graph Connect サンプル (ライブラリ)](https://github.com/microsoftgraph/uwp-csharp-connect-sample) のサンプル内のコードを説明し、Microsoft Graph を使用するアプリで実装する必要のある主要な概念について説明します。
+この記事では、[Azure AD v2.0 エンドポイント]((https://developer.microsoft.com/ja-JP/graph/docs/concepts/converged_auth))からアクセス トークンを取得し、Microsoft Graph を呼び出すために必要なタスクについて説明します。ここでは、[UWP 用 Microsoft Graph Connect サンプル (ライブラリ)]((https://github.com/microsoftgraph/uwp-csharp-connect-sample)) のサンプル内のコードを説明し、Microsoft Graph を使用するアプリで実装する必要のある主要な概念について説明します。
 
-**アプリを作成してみたいですか。**[Microsoft Graph クイック スタート](https://developer.microsoft.com/graph/quick-start)を使用してすぐに使い始めるか、またはこの記事で取り扱っている [UWP 用 Microsoft Graph Connect サンプル (ライブラリ)](https://github.com/microsoftgraph/uwp-csharp-connect-sample) をダウンロードしてください。[REST バージョンのサンプル](https://github.com/microsoftgraph/uwp-csharp-connect-rest-sample)も利用できます。
+**アプリを作成してみたいですか。**[Microsoft Graph クイック スタート]((https://developer.microsoft.com/graph/quick-start))を使用してすぐに使い始めるか、またはこの記事で取り扱っている [UWP 用 Microsoft Graph Connect サンプル (ライブラリ)]((https://github.com/microsoftgraph/uwp-csharp-connect-sample)) をダウンロードしてください。[REST バージョンのサンプル]((https://github.com/microsoftgraph/uwp-csharp-connect-rest-sample))も利用できます。
 
 ## <a name="sample-user-interface"></a>サンプル ユーザー インターフェイス
 
@@ -26,14 +26,14 @@
 
 開始するには、次のものが必要です。 
 
-- [Microsoft アカウント](https://www.outlook.com/)か[職場または学校アカウント](http://dev.office.com/devprogram)
-- Visual Studio 2015 
-- [UWP 用 Microsoft Graph スターター プロジェクト (ライブラリ)](https://github.com/microsoftgraph/uwp-csharp-connect-sample/tree/master/starter)。両方のテンプレートには、コードを追加する空のクラスが含まれています。また、リソース文字列も含まれています。このプロジェクトを取得するには、[UWP 用 Microsoft Graph Connect のサンプル (ライブラリ)](https://github.com/microsoftgraph/uwp-csharp-connect-sample) を複製またはダウンロードして、**starter** フォルダー内のソリューションを開きます。
+- [Microsoft アカウント]((https://www.outlook.com/))か[職場または学校アカウント]((http://dev.office.com/devprogram))
+- Visual Studio 2017 
+- [UWP 用 Microsoft Graph スターター プロジェクト (ライブラリ)]((https://github.com/microsoftgraph/uwp-csharp-connect-sample)/tree/master/starter)。両方のテンプレートには、コードを追加する空のクラスが含まれています。また、リソース文字列も含まれています。このプロジェクトを取得するには、[UWP 用 Microsoft Graph Connect のサンプル (ライブラリ)]((https://github.com/microsoftgraph/uwp-csharp-connect-sample)) を複製またはダウンロードして、**starter** フォルダー内のソリューションを開きます。
 
 
 ## <a name="register-the-app"></a>アプリを登録する
  
-1. 個人用アカウントか職場または学校アカウントのいずれかを使用して、[アプリ登録ポータル](https://apps.dev.microsoft.com/)にサインインします。
+1. 個人用アカウントか職場または学校アカウントのいずれかを使用して、[アプリ登録ポータル]((https://apps.dev.microsoft.com/))にサインインします。
 2. **[アプリの追加]** を選択します。
 3. アプリの名前を入力して、**[アプリケーションの作成]** を選択します。
     
@@ -414,11 +414,11 @@
 3. **[メールの送信]** ボタンを選びます。メールが送信されると、ボタンの下に成功メッセージが表示されます。このメール メッセージには添付ファイルとして写真が含まれており、OneDrive にアップロードされたファイルへの共有リンクも提示されます。
 
 ## <a name="next-steps"></a>次の手順
-- [Graph エクスプローラー](https://developer.microsoft.com/en-us/graph/graph-explorer)を使用して REST API を試してみます。
-- [Microsoft Graph UWP スニペット サンプル (SDK)](https://github.com/microsoftgraph/uwp-csharp-snippets-sample) と [Microsoft Graph UWP スニペット サンプル (REST)](https://github.com/microsoftgraph/uwp-csharp-snippets-rest-sample) での REST と SDK の両方の操作に共通する操作の例を検索するか、GitHub で他の [UWP サンプル](https://github.com/microsoftgraph?utf8=%E2%9C%93&query=uwp)を探索します。
+- [Graph エクスプローラー]((https://developer.microsoft.com/ja-JP/graph/graph-explorer))を使用して REST API を試してみます。
+- [Microsoft Graph UWP スニペット サンプル (SDK)]((https://github.com/microsoftgraph/uwp-csharp-snippets-sample)) と [Microsoft Graph UWP スニペット サンプル (REST)]((https://github.com/microsoftgraph/uwp-csharp-snippets-rest-sample)) での REST と SDK の両方の操作に共通する操作の例を検索するか、GitHub で他の [UWP サンプル](https://github.com/microsoftgraph?utf8=%E2%9C%93&query=uwp)を探索します。
 
 ## <a name="see-also"></a>関連項目
-- [Microsoft Graph .NET クライアント ライブラリ](https://github.com/microsoftgraph/msgraph-sdk-dotnet)
-- [Azure AD v2.0 のプロトコル](https://azure.microsoft.com/en-us/documentation/articles/active-directory-v2-protocols/)
-- [Azure AD v2.0 のトークン](https://azure.microsoft.com/en-us/documentation/articles/active-directory-v2-tokens/)
+- [Microsoft Graph .NET クライアント ライブラリ]((https://github.com/microsoftgraph/msgraph-sdk-dotnet))
+- [Azure AD v2.0 のプロトコル]((https://azure.microsoft.com/ja-JP/documentation/articles/active-directory-v2-protocols/))
+- [Azure AD v2.0 のトークン]((https://azure.microsoft.com/ja-JP/documentation/articles/active-directory-v2-tokens/))
 

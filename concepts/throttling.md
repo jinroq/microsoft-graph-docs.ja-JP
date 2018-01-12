@@ -24,10 +24,21 @@
 * 呼び出しの頻度を減らす。
 * すべての要求が使用量の制限に計上されるため、即時の再試行を避ける。
 
-エラー処理を実装する場合は、HTTP エラー コード 429 を使用して調整の発生を検出します。失敗した要求への応答ヘッダーには、*Retry-After* フィールドが含まれています。Microsoft Graph はクライアントが調整による制限を受けている間でもリソースの使用量を記録しています。そのため、*Retry-After* の指示に従って要求を遅延させることが最も迅速に調整を解消できる方法です。
+エラー処理を実装する場合は、HTTP エラー コード 429 を使用して調整の発生を検出します。 失敗した応答の応答ヘッダーには、*Retry-After* フィールドが含まれています。 Microsoft Graph はクライアントが調整による制限を受けている間でもリソースの使用量を記録しています。そのため、*Retry-After* の指示に従って要求を遅延させることが最も迅速に調整を解消できる方法です。
 
 1. *Retry-After* フィールドに指定された秒数だけ待機してください。
 2. 要求を再試行してください。
 3. 要求が再度エラーコード 429 で失敗した場合は、依然として調整を受けています。Retry-After で推奨された遅延に引き続き従い、成功するまで再試行してください。
 
-Microsoft Cloud における調整についてのより幅広い議論については「[調整パターン](https://msdn.microsoft.com/en-us/library/office/dn589798.aspx)」を参照してください。
+現在、次のリソースで Retry-After ヘッダーが提供されています。
+- [ユーザー](../api-reference/v1.0/resources/user.md)
+- [写真](../api-reference/v1.0/resources/profilephoto.md)
+- [メール](../api-reference/v1.0/resources/message.md)
+- [カレンダー (ユーザーおよびグループ)](../api-reference/v1.0/resources/event.md)
+- [連絡先](../api-reference/v1.0/resources/contact.md)
+- [添付ファイル](../api-reference/v1.0/resources/attachment.md)
+- [グループ会話](../api-reference/v1.0/resources/conversation.md)
+- [ユーザーとソーシャル](../api-reference/beta/resources/social_overview.md)
+- [ドライブ (OneDrive)](../api-reference/v1.0/resources/drive.md)
+
+Microsoft Cloud における調整についてのより幅広い議論については「[調整パターン]((https://msdn.microsoft.com/ja-JP/library/office/dn589798.aspx))」を参照してください。

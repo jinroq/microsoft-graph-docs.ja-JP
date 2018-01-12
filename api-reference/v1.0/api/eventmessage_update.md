@@ -1,6 +1,6 @@
 # <a name="update-eventmessage"></a>eventMessage の更新
 
-eventmessage オブジェクトのプロパティを更新します。
+[eventMessage](../resources/eventmessage.md) オブジェクトのプロパティを更新します。
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](../../../concepts/permissions_reference.md)」を参照してください。
 
@@ -59,7 +59,7 @@ Content-length: 248
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.eventmessage"
+  "@odata.type": "microsoft.graph.eventMessage"
 } -->
 ```http
 HTTP/1.1 200 OK

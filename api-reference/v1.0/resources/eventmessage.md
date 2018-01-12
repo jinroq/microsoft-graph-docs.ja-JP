@@ -1,9 +1,14 @@
 # <a name="eventmessage-resource-type"></a>eventMessage リソースの種類
 
-会議出席依頼、会議中止メッセージ、会議承諾メッセージ、会議仮承諾メッセージ、または会議辞退メッセージを表すメッセージです。
+メッセージは会議出席依頼、キャンセル、応答 (承諾、仮受諾、辞退のいずれか) を表します。
 
-通常、EventMessage は、イベント開催者が会議を作成した結果、または参加者が会議出席依頼に応答した結果として、受信トレイ フォルダーに届けられます。イベント メッセージには Message と同様の方法で対処しますが、次の表に示すようなわずかな違いがあります。
+**eventMessage** エンティティは [message](message.md) から派生したものです。 **meetingMessageType** プロパティはイベント メッセージの種類を特定します。
 
+開催者またはアプリが会議出席依頼を送信すると、その会議出席依頼が出席者の受信ボックスに **meetingMessageType** が **meetingRequest** の **eventMessage** インスタンスとして届きます。 また、Outlook では出席者の予定表に **event** インスタンスが自動的に作成され、**showAs** プロパティは **tentative** になります。 
+
+出席者のメールボックスで関連付けられているイベントのプロパティを取得するために、[イベント メッセージ取得の例](../api/eventmessage_get.md#request-2)で示されているように、アプリで **eventMessage** の **event** ナビゲーション プロパティを使用できます。 アプリはイベントを[承諾](../api/event_accept.md)、[仮受諾](../api/event_tentativelyaccept.md)、[拒否](../api/event_decline.md)することによって、出席者の代わりにプログラムでイベントに応答することもできます。
+
+会議出席依頼のほかにも、**eventMessage** インスタンスが、イベント開催者が会議をキャンセルしたために出席者の受信ボックス フォルダーにあったり、出席者が会議出席依頼に応答したために開催者の受信ボックスにあったりする場合があります。 アプリはメッセージ上と同様にイベント メッセージ上でも動作しますが、わずかな違いがあります。
 
 ## <a name="methods"></a>メソッド
 
@@ -12,18 +17,18 @@
 |[eventMessage の取得](../api/eventmessage_get.md) | [eventMessage](eventmessage.md) |eventMessage オブジェクトのプロパティとリレーションシップを読み取ります。|
 |[更新する](../api/eventmessage_update.md) | [eventMessage](eventmessage.md)  |eventMessage オブジェクトを更新します。 |
 |[削除](../api/message_delete.md) | なし |eventMessage オブジェクトを削除します。 |
-|[コピー](../api/message_copy.md)|[Message](message.md)|メッセージをフォルダーにコピーします。|
-|[createForward](../api/message_createforward.md)|[Message](message.md)|転送メッセージの下書きを作成します。その後、下書きを[更新](../api/message_update.md)または[送信](../api/message_send.md)できます。|
-|[createReply](../api/message_createreply.md)|[Message](message.md)|返信メッセージの下書きを作成します。その後、下書きを[更新](../api/message_update.md)または[送信](../api/message_send.md)できます。|
-|[createReplyAll](../api/message_createreplyall.md)|[Message](message.md)|全員に返信メッセージの下書きを作成します。その後、下書きを[更新](../api/message_update.md)または[送信](../api/message_send.md)できます。|
+|[copy](../api/message_copy.md)|[message](message.md)|メッセージをフォルダーにコピーします。|
+|[createForward](../api/message_createforward.md)|[message](message.md)|転送メッセージの下書きを作成します。その後、下書きを[更新](../api/message_update.md)または[送信](../api/message_send.md)できます。|
+|[createReply](../api/message_createreply.md)|[message](message.md)|返信メッセージの下書きを作成します。その後、下書きを[更新](../api/message_update.md)または[送信](../api/message_send.md)できます。|
+|[createReplyAll](../api/message_createreplyall.md)|[message](message.md)|全員に返信メッセージの下書きを作成します。その後、下書きを[更新](../api/message_update.md)または[送信](../api/message_send.md)できます。|
 |[forward](../api/message_forward.md)|なし|メッセージを転送します。その後、メッセージは送信済みアイテム フォルダーに保存されます。|
-|[移動](../api/message_move.md)|[Message](message.md)|メッセージをフォルダーに移動します。これにより、宛先フォルダーにメッセージの新しいコピーが作成されます。|
+|[move](../api/message_move.md)|[message](message.md)|メッセージをフォルダーに移動します。これにより、宛先フォルダーにメッセージの新しいコピーが作成されます。|
 |[返信](../api/message_reply.md)|なし|メッセージの送信者に返信します。その後、メッセージは送信済みアイテム フォルダーに保存されます。|
 |[replyAll](../api/message_replyall.md)|なし|メッセージの受信者すべてに返信します。その後、メッセージは送信済みアイテム フォルダーに保存されます。|
 |[送信](../api/message_send.md)|なし|以前に作成したメッセージの下書きを送信します。その後、メッセージは送信済みアイテム フォルダーに保存されます。|
 |**添付ファイル**| | |
-|[添付ファイルを一覧表示する](../api/eventmessage_list_attachments.md) |[Attachment](attachment.md) コレクション| eventMessage のすべての添付ファイルを取得します。|
-|[添付ファイルを追加する](../api/eventmessage_post_attachments.md) |[Attachment](attachment.md)| 添付ファイル コレクションへの投稿により、eventMessage に新しい添付ファイルを追加します。|
+|[添付ファイルを一覧表示する](../api/eventmessage_list_attachments.md) |[attachment](attachment.md) コレクション| eventMessage のすべての添付ファイルを取得します。|
+|[添付ファイルを追加する](../api/eventmessage_post_attachments.md) |[attachment](attachment.md)| 添付ファイル コレクションへの投稿により、eventMessage に新しい添付ファイルを追加します。|
 |**オープン拡張機能**| | |
 |[オープン拡張機能を作成する](../api/opentypeextension_post_opentypeextension.md) |[openTypeExtension](opentypeextension.md)| オープン拡張機能を作成し、リソースの新規または既存のインスタンスのカスタム プロパティを追加します。|
 |[オープン拡張機能を取得する](../api/opentypeextension_get.md) |[openTypeExtension](opentypeextension.md) コレクション| 名前や完全修飾名によって識別されたオープン拡張機能オブジェクトを 1 つまたは複数取得します。|
@@ -47,14 +52,15 @@
 |from|[recipient](recipient.md)|メッセージのメールボックス所有者と送信者。|
 |hasAttachments|Boolean|メッセージに添付ファイルがあるかどうかを示します。|
 |id|String||
-|importance|String| メッセージの重要度: `Low`、`Normal`、`High`。|
-|internetMessageId |String |[RFC2822](http://www.ietf.org/rfc/rfc2822.txt) によって指定された形式のメッセージ ID。 |
+|importance|String| メッセージの重要度: `low`、`normal`、`high`。|
+|inferenceClassification|String| 使用可能な値は、`focused`、`other` です。|
+|internetMessageId |String |[RFC2822]((http://www.ietf.org/rfc/rfc2822.txt)) によって指定された形式のメッセージ ID。 |
 |isDeliveryReceiptRequested|Boolean|メッセージの開封確認メッセージが要求されているかどうかを示します。|
 |isDraft|Boolean|メッセージが下書きかどうかを示します。メッセージがまだ送信されていなければ下書きです。|
 |isRead|Boolean|メッセージが開封されたかどうかを示します。|
 |isReadReceiptRequested|Boolean|メッセージの開封確認メッセージが要求されているかどうかを示します。|
 |lastModifiedDateTime|DateTimeOffset|メッセージが最後に変更された日時。|
-|meetingMessageType|String| イベント メッセージの種類: `None`、`MeetingRequest`、`MeetingCancelled``MeetingAccepted``MeetingTenativelyAccepted``MeetingDeclined`。|
+|meetingMessageType|String| イベント メッセージの種類: `none`、`meetingRequest`、`meetingCancelled``meetingAccepted``meetingTenativelyAccepted``meetingDeclined`。|
 |parentFolderId|String|メッセージの親 mailFolder の一意識別子。|
 |receivedDateTime|DateTimeOffset|メッセージが受信された日時です。|
 |replyTo|[recipient](recipient.md) collection|返信時に使用される電子メール アドレス。|
@@ -68,11 +74,11 @@
 ## <a name="relationships"></a>リレーションシップ
 | リレーションシップ | 型   |説明|
 |:---------------|:--------|:----------|
-|attachments|[Attachment](attachment.md) コレクション| 読み取り専用。Null 許容型。|
-|イベント|[Event](event.md)| イベント メッセージに関連付けられたイベント。参加者または部屋リソースの前提は、会議出席依頼イベント メッセージが届いたときにイベントを含む予定表を自動的に更新するようにカレンダー アテンダントが設定されていることです。ナビゲーション プロパティ。読み取り専用。|
-|extensions|[Extension](extension.md) コレクション|eventMessage に対して定義されているオープン拡張機能のコレクション。読み取り専用。Null 許容型。|
-|multiValueExtendedProperties|[multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md) コレクション| eventMessage に対して定義された、複数値の拡張プロパティのコレクション。読み取り専用。Null 許容型。|
-|singleValueExtendedProperties|[singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md) コレクション| eventMessage に対して定義された、単一値の拡張プロパティのコレクション。読み取り専用。Null 許容型。|
+|attachments|[attachment](attachment.md) コレクション| 読み取り専用。Null 許容型。|
+|event|[event](event.md)| イベント メッセージに関連付けられたイベント。参加者または部屋リソースの前提は、会議出席依頼イベント メッセージが届いたときにイベントを含む予定表を自動的に更新するようにカレンダー アテンダントが設定されていることです。ナビゲーション プロパティ。読み取り専用。|
+|extensions|[extension](extension.md) コレクション|eventMessage に対して定義されているオープン拡張機能のコレクション。読み取り専用。Null 許容型。|
+|multiValueExtendedProperties|[multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md) collection| eventMessage に対して定義された、複数値の拡張プロパティのコレクション。読み取り専用。Null 許容型。|
+|singleValueExtendedProperties|[singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md) collection| eventMessage に対して定義された、単一値の拡張プロパティのコレクション。読み取り専用。Null 許容型。|
 
 ## <a name="json-representation"></a>JSON 表記
 
@@ -87,7 +93,7 @@
     "multiValueExtendedProperties",
     "singleValueExtendedProperties"
   ],
-  "@odata.type": "microsoft.graph.eventmessage"
+  "@odata.type": "microsoft.graph.eventMessage"
 }-->
 
 ```json
@@ -99,23 +105,24 @@
   "ccRecipients": [{"@odata.type": "microsoft.graph.recipient"}],
   "changeKey": "string",
   "conversationId": "string",
-  "createdDateTime": "String (timestamp)",
+  "createdDateTime": "DateTimeOffset",
   "from": {"@odata.type": "microsoft.graph.recipient"},
   "hasAttachments": true,
   "id": "string (identifier)",
   "importance": "String",
+  "inferenceClassification": "String",
   "internetMessageId": "String",
   "isDeliveryReceiptRequested": true,
   "isDraft": true,
   "isRead": true,
   "isReadReceiptRequested": true,
-  "lastModifiedDateTime": "String (timestamp)",
+  "lastModifiedDateTime": "DateTimeOffset",
   "meetingMessageType": "String",
   "parentFolderId": "string",
-  "receivedDateTime": "String (timestamp)",
+  "receivedDateTime": "DateTimeOffset",
   "replyTo": [{"@odata.type": "microsoft.graph.recipient"}],
   "sender": {"@odata.type": "microsoft.graph.recipient"},
-  "sentDateTime": "String (timestamp)",
+  "sentDateTime": "DateTimeOffset",
   "subject": "string",
   "toRecipients": [{"@odata.type": "microsoft.graph.recipient"}],
   "uniqueBody": {"@odata.type": "microsoft.graph.itemBody"},
