@@ -8,9 +8,9 @@
 
 |アクセス許可の種類      | アクセス許可 (特権の小さいものから大きいものへ)              |
 |:--------------------|:---------------------------------------------------------|
-|委任 (職場または学校のアカウント) | Directory.AccessAsUser.All    |
+|委任 (職場または学校のアカウント) | Directory.AccessAsUser.All |
 |委任 (個人用 Microsoft アカウント) | サポートされていません。    |
-|アプリケーション | Device.ReadWrite.All |
+|アプリケーション | サポートされていません。 |
 
 ## <a name="http-request"></a>HTTP 要求
 <!-- { "blockType": "ignored" } -->
@@ -33,7 +33,7 @@ DELETE /devices/{id}
 
 ## <a name="example"></a>例
 ##### <a name="request"></a>要求
-以下は、要求の例です。
+
 <!-- {
   "blockType": "request",
   "name": "delete_device"
@@ -42,7 +42,7 @@ DELETE /devices/{id}
 DELETE https://graph.microsoft.com/v1.0/devices/{id}
 ```
 ##### <a name="response"></a>応答
-以下は、応答の例です。
+
 <!-- {
   "blockType": "response",
   "truncated": true
