@@ -36,7 +36,7 @@ Office 365 グループ、動的なグループ、セキュリティ グルー�
 |[イベントを削除する](../api/group_delete_event.md) |なし|event オブジェクトを削除します。|
 |[calendarView を一覧表示する](../api/group_list_calendarview.md) |[event](event.md) コレクション| 指定された時間枠のイベントのコレクションを取得します。|
 |**会話**| | |
-|[会話を作成する](../api/group_post_conversations.md) |[conversation](conversation.md)| Conversation コレクションに投稿することによって、新しい会話を作成します。|
+|[会話を作成する](../api/group_post_conversations.md) |[conversation](conversation.md)| conversation コレクションに投稿して、新しい会話を作成します。|
 |[会話を取得する](../api/group_get_conversation.md) |[conversation](conversation.md)| conversation オブジェクトのプロパティを読み取ります。|
 |[会話を一覧表示する](../api/group_list_conversations.md) |[conversation](conversation.md) コレクション| conversation オブジェクトのコレクションを取得します。|
 |[会話を削除する](../api/group_delete_conversation.md) |なし|conversation オブジェクトを削除します。|

@@ -5,7 +5,7 @@
 * 動的グループ
 * セキュリティ グループ
 
-> **注**:Microsoft Teams は Office 365 グループでビルドされますが、この API を使用してチームを作成することは現在できません。Microsoft Teams UI で作成されたチームを管理するには、その他のグループ API を使用できます。
+> **注**:Microsoft Teams は Office 365 グループに基づいていますが、現在、この API を使用してチームを作成することはできません。Microsoft Teams UI で作成されたチームを管理するには、その他のグループ API を使用できます。
 
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](../../../concepts/permissions_reference.md)」を参照してください。
@@ -33,7 +33,7 @@ POST /groups
 | プロパティ | 型 | 説明|
 |:---------------|:--------|:----------|
 | displayName | string | アドレス帳に表示するグループの名前。 |
-| mailEnabled | boolean | メールが有効なグループの場合は、**true** に設定します。Office 365 グループを作成する場合は、これを **true** に設定します。動的グループまたはセキュリティ グループを作成する場合は、これを **false** に設定します。|
+| mailEnabled | boolean | メールが有効なグループの場合は、**true** に設定します。Office 365 グループを作成する場合は、このプロパティを **true** に設定します。動的グループまたはセキュリティ グループを作成する場合は、このプロパティを **false** に設定します。|
 | mailNickname | string | グループの電子メール エイリアス。 |
 | securityEnabled | boolean | セキュリティが有効なグループの場合は、**true** に設定します。動的グループまたはセキュリティ グループを作成する場合は、これを **true** に設定します。Office 365 グループを作成する場合は、これを **false** に設定します。 |
 
@@ -55,7 +55,7 @@ Office 365 グループまたは動的グループを作成している場合は
 Office 365 グループを作成する要求の例を次に示します。
 <!-- {
   "blockType": "request",
-  "name": "create_group_from_groups"
+  "name": "create_group"
 }-->
 ```http
 POST https://graph.microsoft.com/v1.0/groups
