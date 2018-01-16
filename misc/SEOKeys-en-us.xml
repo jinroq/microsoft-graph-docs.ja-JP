@@ -125,7 +125,7 @@
         <Item text="タスクを一覧表示する" url="/en-us/api-reference/v1.0/api/planneruser_list_tasks" SEOKeyword="計画を一覧表示する、Microsoft Graph API、ユーザー API" SEODescription="計画オブジェクトのリストを取得します。" />
     </Item>  
   </Item>
-  <Item text="グループ" url="/en-us/api-reference/v1.0/resources/group" SEOKeyword="ユーザー グループ、Microsoft Graph API、ユーザー API" SEODescription="Groups API">
+  <Item text="グループ" url="/en-us/api-reference/v1.0/resources/groups-overview" SEOKeyword="ユーザー グループ、Microsoft Graph API、ユーザー API" SEODescription="Groups API">
     <Item text="グループ" url="/en-us/api-reference/v1.0/resources/group" SEOKeyword="ユーザー グループ, Microsoft Graph API, ユーザー API" SEODescription="Groups API">
       <Item text="お気に入りに追加する" url="/en-us/api-reference/v1.0/api/group_addfavorite" />
       <Item text="メンバーを追加する" url="/en-us/api-reference/v1.0/api/group_post_members" SEOKeyword="メンバーを作成する、Microsoft Graph API、Groups API" SEODescription="この API を使用して、新しいメンバーを作成します。" />
@@ -900,7 +900,7 @@
         <Item text="タスクを一覧表示する" url="/en-us/api-reference/beta/api/planneruser_list_tasks" SEOKeyword="計画を一覧表示する、Microsoft Graph API、ユーザー API" SEODescription="計画オブジェクトのリストを取得します。" />
       </Item>
     </Item>
-    <Item text="グループ" url="/en-us/api-reference/beta/resources/group" SEOKeyword="Groups API、Microsoft Graph API、Groups API、Microsoft Teams API、Teams API" SEODescription="Azure Active Directory グループを表します。DirectoryObject から継承されます。">
+    <Item text="グループ" url="/en-us/api-reference/beta/resources/groups-overview" SEOKeyword="Groups API、Microsoft Graph API、Groups API、Microsoft Teams API、Teams API" SEODescription="Azure Active Directory グループを表します。DirectoryObject から継承されます。">
       <Item text="グループ" url="/en-us/api-reference/beta/resources/group" SEOKeyword="Groups API、Microsoft Graph API、Groups API、Microsoft Teams API、Teams API" SEODescription="Azure Active Directory グループを表します。DirectoryObject から継承されます。">
         <Item text="お気に入りに追加する" url="/en-us/api-reference/beta/api/group_addfavorite" SEOKeyword="グループ: addFavorite、Microsoft Graph API、グループ API" SEODescription="" />
         <Item text="メンバーを追加する" url="/en-us/api-reference/beta/api/group_post_members" SEOKeyword="メンバーを作成する、Microsoft Graph API、Groups API" SEODescription="この API を使用して、新しいメンバーを作成します。" />
