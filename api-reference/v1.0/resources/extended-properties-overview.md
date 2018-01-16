@@ -17,7 +17,7 @@
 
 ## <a name="use-extended-properties-or-open-extensions"></a>拡張プロパティとオープン拡張機能のどちらを使用するか
 
-最も一般的なシナリオとして、オープン拡張機能 ([openTypeExtension](../resources/opentypeextension.md) で表される。旧称は Office 365 のデータ拡張機能) を使用して、リソース インスタンスのカスタム データをユーザーのメールボックスに格納したり、それらにアクセスしたりできます。拡張プロパティは、[Microsoft Graph API のメタデータ]((http://developer.microsoft.com/ja-JP/graph/docs/overview/call_api))でまだ公開されていない Outlook MAPI プロパティのカスタム データにアクセスする必要がある場合にのみ使用します。 
+最も一般的なシナリオとして、オープン拡張機能 ([openTypeExtension](../resources/opentypeextension.md) で表される。旧称は Office 365 のデータ拡張機能) を使用して、リソース インスタンスのカスタム データをユーザーのメールボックスに格納したり、それらにアクセスしたりできます。拡張プロパティは、[Microsoft Graph API のメタデータ](http://developer.microsoft.com/ja-JP/graph/docs/overview/call_api)でまだ公開されていない Outlook MAPI プロパティのカスタム データにアクセスする必要がある場合にのみ使用します。 
 
 ## <a name="types-of-extended-properties"></a>拡張プロパティのタイプ
 
@@ -34,7 +34,7 @@
 
 単一値または複数値の拡張プロパティを作成する場合、文字列の名前 (**Name**) または数値識別子 (**Id**) のいずれか、および値の実際の型またはプロパティの値に基づき、2 つの形式のいずれかで **id** プロパティを指定できます。 以下に示す 2 つの表では、単一値または複数値の拡張プロパティを指定するためにサポートされている形式について説明します。 {_type_} はプロパティ値の種類を表します。 この例では、文字列、整数、およびこれらの種類の配列を示しています。
 
-拡張プロパティはほとんどの場合、Microsoft Graph API メタデータで公開されていない定義済みの MAPI プロパティと相互運用します。したがって、簡略化のため、選択する形式は、対応する MAPI プロパティが [MAPI プロパティの識別子]((https://msdn.microsoft.com/ja-JP/library/office/cc815528.aspx))で文字列を使用しているか、数値を使用しているかを反映する必要があります。
+拡張プロパティはほとんどの場合、Microsoft Graph API メタデータで公開されていない定義済みの MAPI プロパティと相互運用します。したがって、簡略化のため、選択する形式は、対応する MAPI プロパティが [MAPI プロパティの識別子](https://msdn.microsoft.com/ja-JP/library/office/cc815528.aspx)で文字列を使用しているか、数値を使用しているかを反映する必要があります。
 
   \[MS-OXPROPS\] Microsoft Corporation の[「Exchange Server プロトコルのマスター プロパティ リスト」](https://msdn.microsoft.com/en-us/library/cc433490%28v=exchg.80%29.aspx)では、既存の MAPI プロパティへの拡張プロパティのマッピングに関する情報 (プロパティ識別子や GUID など) を検索できます。
 

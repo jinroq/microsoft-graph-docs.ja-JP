@@ -12,19 +12,19 @@ Microsoft Graph を呼び出すには、Microsoft クラウドの ID サービ�
 
 ## <a name="installing-and-running-the-send-mail-sample"></a>メールの送信サンプルのインストールと実行
 
-サンプル アプリをインストールして構成するには、「[Python REST サンプルのインストール]((https://github.com/microsoftgraph/python-sample-auth)/blob/master/installation.md)」に記されている説明に従います。 以下で取り上げられているメールの送信サンプル用に、次のコマンドを使用してリポジトリを複製します。
+サンプル アプリをインストールして構成するには、「[Python REST サンプルのインストール](https://github.com/microsoftgraph/python-sample-auth/blob/master/installation.md)」に記されている説明に従います。 以下で取り上げられているメールの送信サンプル用に、次のコマンドを使用してリポジトリを複製します。
 
 ```git clone https://github.com/microsoftgraph/python-sample-send-mail.git```
 
-[インストール手順]((https://github.com/microsoftgraph/python-sample-auth)/blob/master/installation.md)に記されているように、アプリケーションを登録する際、このサンプルに必要な **User.Read** アクセス許可と **Mail.Send** アクセス許可を必ず含めてください。
+[インストール手順](https://github.com/microsoftgraph/python-sample-auth/blob/master/installation.md)に記されているように、アプリケーションを登録する際、このサンプルに必要な **User.Read** アクセス許可と **Mail.Send** アクセス許可を必ず含めてください。
 
-インストールと構成の完了後、[サンプルの実行]((https://github.com/microsoftgraph/python-sample-send-mail)#running-the-sample)に関する説明に従ってサンプル アプリを実行できます。
+インストールと構成の完了後、[サンプルの実行](https://github.com/microsoftgraph/python-sample-send-mail#running-the-sample)に関する説明に従ってサンプル アプリを実行できます。
 
 ## <a name="code-walkthrough"></a>コードのチュートリアル
 
-サンプル アプリの[ソース コード]((https://github.com/microsoftgraph/python-sample-send-mail)/blob/master/sample.py)に関する概要を以下に示します。
+サンプル アプリの[ソース コード](https://github.com/microsoftgraph/python-sample-send-mail/blob/master/sample.py)に関する概要を以下に示します。
 
-コードの最初の数行は、サンプルで使用される Python のモジュールとパッケージの[インポート]((https://github.com/microsoftgraph/python-sample-send-mail)/blob/master/sample.py#L4-L32)です。
+コードの最初の数行は、サンプルで使用される Python のモジュールとパッケージの[インポート](https://github.com/microsoftgraph/python-sample-send-mail/blob/master/sample.py#L4-L32)です。
 
 * 標準ライブラリからの **base64** モジュールは、電子メール添付ファイルのエンコードに使用します。
 * **mimetypes** モジュールを使用して添付ファイルの MIME の種類を決定します。
@@ -35,13 +35,13 @@ Microsoft Graph を呼び出すには、Microsoft クラウドの ID サービ�
 * **flask_oauthlib.client** の **OAuth** クラスは、OAuth 2.0 認証ワークフローを実装する Flask アプリを包含するラッパーです。
 * **config** モジュールには、アプリケーション登録設定 (前述のインストール プロセスで構成した設定など) が含まれます。
 
-次に、[Flask アプリを作成]((https://github.com/microsoftgraph/python-sample-send-mail)/blob/master/sample.py#L15-L17)してから、**MSGRAPH** という名前の [Graph クライアント オブジェクト]((https://github.com/microsoftgraph/python-sample-send-mail)/blob/master/sample.py#L19-L28)を作成します。
+次に、[Flask アプリを作成](https://github.com/microsoftgraph/python-sample-send-mail/blob/master/sample.py#L15-L17)してから、**MSGRAPH** という名前の [Graph クライアント オブジェクト](https://github.com/microsoftgraph/python-sample-send-mail/blob/master/sample.py#L19-L28)を作成します。
 
-これらの初期セットアップ手順によって、認証ワークフローを実装する 3 つの Flask ルート ハンドラー関数 [homepage()]((https://github.com/microsoftgraph/python-sample-send-mail)/blob/master/sample.py#L30-L33)、[login()]((https://github.com/microsoftgraph/python-sample-send-mail)/blob/master/sample.py#L35-L39)、[authorized()]((https://github.com/microsoftgraph/python-sample-send-mail)/blob/master/sample.py#L41-L48) が生成されます。 この認証ワークフローの詳細については、Python 認証サンプル リポジトリの「[サンプル アーキテクチャ]((https://github.com/microsoftgraph/python-sample-auth)#sample-architecture)」セクションをご覧ください。
+これらの初期セットアップ手順によって、認証ワークフローを実装する 3 つの Flask ルート ハンドラー関数 [homepage()](https://github.com/microsoftgraph/python-sample-send-mail/blob/master/sample.py#L30-L33)、[login()](https://github.com/microsoftgraph/python-sample-send-mail/blob/master/sample.py#L35-L39)、[authorized()](https://github.com/microsoftgraph/python-sample-send-mail/blob/master/sample.py#L41-L48) が生成されます。 この認証ワークフローの詳細については、Python 認証サンプル リポジトリの「[サンプル アーキテクチャ](https://github.com/microsoftgraph/python-sample-auth#sample-architecture)」セクションをご覧ください。
 
-次のルート ハンドラー [mailform()]((https://github.com/microsoftgraph/python-sample-send-mail)/blob/master/sample.py#L50-L83) は、電子メールの受信者、件名、本文を指定するフォームです。 なお、この関数にはユーザー プロファイルとプロファイル写真の取得、OneDrive への写真のアップロード、共有リンクの作成など、Graph への最初の呼び出しも含まれます。 データは [mailform.html テンプレート]((https://github.com/microsoftgraph/python-sample-send-mail)/blob/master/sample.py#L77-L83)に渡され、そこでメッセージを送信する前に受信者、件名、本文を編集することができます。 
+次のルート ハンドラー [mailform()](https://github.com/microsoftgraph/python-sample-send-mail/blob/master/sample.py#L50-L83) は、電子メールの受信者、件名、本文を指定するフォームです。 なお、この関数にはユーザー プロファイルとプロファイル写真の取得、OneDrive への写真のアップロード、共有リンクの作成など、Graph への最初の呼び出しも含まれます。 データは [mailform.html テンプレート](https://github.com/microsoftgraph/python-sample-send-mail/blob/master/sample.py#L77-L83)に渡され、そこでメッセージを送信する前に受信者、件名、本文を編集することができます。 
 
-次は [send_mail()]((https://github.com/microsoftgraph/python-sample-send-mail)/blob/master/sample.py#L85-L107) 関数です。この関数は、電子メールを送信し、Graph API からの応答を表示します。 それは sendmail() ヘルパー関数を使用します。この関数には、フォームに入力されたクエリ文字列パラメーターが渡されます。
+次は [send_mail()](https://github.com/microsoftgraph/python-sample-send-mail/blob/master/sample.py#L85-L107) 関数です。この関数は、電子メールを送信し、Graph API からの応答を表示します。 それは sendmail() ヘルパー関数を使用します。この関数には、フォームに入力されたクエリ文字列パラメーターが渡されます。
 
 ```python
 response = sendmail(client=MSGRAPH,
@@ -51,15 +51,15 @@ response = sendmail(client=MSGRAPH,
                     attachments=[profile_pic])
 ```
 
-[get_token()]((https://github.com/microsoftgraph/python-sample-send-mail)/blob/master/sample.py#L109-L123) 関数が Flask-OAuthlib クライアント インスタンス (```MSGRAPH```) で使用され、Graph に対する呼び出しが行われるたびにアクセス トークンを取得します。 アクセス トークンは **Authorization** という名前の HTTP ヘッダーで渡されますが、コードでこれを処理する必要はありません。 Graph への呼び出しはクライアントの HTTP verb メソッド (get()、post() など) を介して簡単に行えます。クライアント インスタンスは、トークンを取得するための ```get_token()``` の呼び出しを認識します。この関数が、```tokengetter``` で[修飾]((https://github.com/microsoftgraph/python-sample-send-mail)/blob/master/sample.py#L109-L109)されているためです。
+[get_token()](https://github.com/microsoftgraph/python-sample-send-mail/blob/master/sample.py#L109-L123) 関数が Flask-OAuthlib クライアント インスタンス (```MSGRAPH```) で使用され、Graph に対する呼び出しが行われるたびにアクセス トークンを取得します。 アクセス トークンは **Authorization** という名前の HTTP ヘッダーで渡されますが、コードでこれを処理する必要はありません。 Graph への呼び出しはクライアントの HTTP verb メソッド (get()、post() など) を介して簡単に行えます。クライアント インスタンスは、トークンを取得するための ```get_token()``` の呼び出しを認識します。この関数が、```tokengetter``` で[修飾](https://github.com/microsoftgraph/python-sample-send-mail/blob/master/sample.py#L109-L109)されているためです。
 
 サンプルの他の部分はヘルパー関数であり、一般的な Graph アクティビティを簡素化するものです。
 
-* [request_headers()]((https://github.com/microsoftgraph/python-sample-send-mail)/blob/master/sample.py#L114-L123) は Graph への各呼び出しによって送信される HTTP ヘッダーのディクショナリを返します。
-* [profile_photo()]((https://github.com/microsoftgraph/python-sample-send-mail)/blob/master/sample.py#L125-L154) はユーザーのプロファイル写真を返し、そのコピーをローカル ファイルに保存します。
-* [sendmail()]((https://github.com/microsoftgraph/python-sample-send-mail)/blob/master/sample.py#L156-L202) は ```me/microsoft.graph.sendMail``` エンドポイントを使用してメッセージを送信します。
-* [sharing_link()]((https://github.com/microsoftgraph/python-sample-send-mail)/blob/master/sample.py#L204-L221) は OneDrive で指定されたアイテムの共有リンクを作成します。
-* [upload_file()]((https://github.com/microsoftgraph/python-sample-send-mail)/blob/master/sample.py#L223-L255) は OneDrive にファイルをアップロードします。
+* [request_headers()](https://github.com/microsoftgraph/python-sample-send-mail/blob/master/sample.py#L114-L123) は Graph への各呼び出しによって送信される HTTP ヘッダーのディクショナリを返します。
+* [profile_photo()](https://github.com/microsoftgraph/python-sample-send-mail/blob/master/sample.py#L125-L154) はユーザーのプロファイル写真を返し、そのコピーをローカル ファイルに保存します。
+* [sendmail()](https://github.com/microsoftgraph/python-sample-send-mail/blob/master/sample.py#L156-L202) は ```me/microsoft.graph.sendMail``` エンドポイントを使用してメッセージを送信します。
+* [sharing_link()](https://github.com/microsoftgraph/python-sample-send-mail/blob/master/sample.py#L204-L221) は OneDrive で指定されたアイテムの共有リンクを作成します。
+* [upload_file()](https://github.com/microsoftgraph/python-sample-send-mail/blob/master/sample.py#L223-L255) は OneDrive にファイルをアップロードします。
 
 これらのヘルパー関数は他のアプリケーションで役立つ場合があります。
 
@@ -71,6 +71,6 @@ Microsoft Graph のさまざまな側面の使用方法について、その他�
 * [Python で改ページされた Microsoft Graph 応答を処理する](https://github.com/microsoftgraph/python-sample-pagination)
 * [Python で Graph オープン拡張機能を処理する](https://github.com/microsoftgraph/python-sample-open-extensions)
 
-表示したい特定のサンプルがある場合、[懸案事項を送信]((https://github.com/microsoftgraph/python-sample-auth)/issues)してお知らせください。 Python で構築する Microsoft Graph シナリオに対するお客様のフィードバックを大いに歓迎いたします。
+表示したい特定のサンプルがある場合、[懸案事項を送信](https://github.com/microsoftgraph/python-sample-auth/issues)してお知らせください。 Python で構築する Microsoft Graph シナリオに対するお客様のフィードバックを大いに歓迎いたします。
 
 Microsoft Graph API は、あらゆる種類の Microsoft データとの対話に使用できる、非常に強力な統合 API です。 [開発者ドキュメント](https://developer.microsoft.com/ja-JP/graph/docs/concepts/overview)または [Graph Explorer](https://developer.microsoft.com/ja-JP/graph/graph-explorer) で、Microsoft Graph によってさらに行える事柄について確認してください。

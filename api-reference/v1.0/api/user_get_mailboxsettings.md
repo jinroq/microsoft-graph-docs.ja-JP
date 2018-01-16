@@ -4,7 +4,7 @@
 
 すべてのメールボックス設定を表示することも、特定の設定を取得することもできます。
 
-タイム ゾーンは、ユーザーが自分のメールボックスに設定できる優先設定のうちの 1 つです。 有効なタイム ゾーンの形式には、Windows タイム ゾーン形式および [Internet Assigned Numbers Authority (IANA) タイム ゾーン]((http://www.iana.org/time-zones)) (Olson タイム ゾーンとも呼ばれる) 形式があります。 既定値は Windows 形式です。 
+タイム ゾーンは、ユーザーが自分のメールボックスに設定できる優先設定のうちの 1 つです。 有効なタイム ゾーンの形式には、Windows タイム ゾーン形式および [Internet Assigned Numbers Authority (IANA) タイム ゾーン](http://www.iana.org/time-zones) (Olson タイム ゾーンとも呼ばれる) 形式があります。 既定値は Windows 形式です。 
 
 ユーザーの優先タイム ゾーンを取得するとき、そのタイム ゾーンは設定された形式で返されます。 タイム ゾーンを特定の形式 (Windows または IANA) にする場合は、最初に[メールボックス設定としてその形式の優先タイム ゾーンを更新](user_update_mailboxsettings.md)します。 その後は、その形式でタイム ゾーンを取得できるようになります。 または、アプリ内で形式変換を個別に管理することもできます。
 
@@ -38,7 +38,7 @@ GET /me/mailboxSettings/timeZone
 GET /users/{id|userPrincipalName}/mailboxSettings/timeZone
 ```
 ## <a name="optional-query-parameters"></a>オプションのクエリ パラメーター
-このメソッドは、応答をカスタマイズするための [OData クエリ パラメーター]((http://developer.microsoft.com/ja-JP/graph/docs/overview/query_parameters))をサポートします。
+このメソッドは、応答をカスタマイズするための [OData クエリ パラメーター](http://developer.microsoft.com/ja-JP/graph/docs/overview/query_parameters)をサポートします。
 ## <a name="request-headers"></a>要求ヘッダー
 | 名前       | 型 | 説明|
 |:-----------|:------|:----------|

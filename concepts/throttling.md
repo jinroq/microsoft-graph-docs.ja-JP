@@ -41,4 +41,4 @@
 - [ユーザーとソーシャル](../api-reference/beta/resources/social_overview.md)
 - [ドライブ (OneDrive)](../api-reference/v1.0/resources/drive.md)
 
-Microsoft Cloud における調整についてのより幅広い議論については「[調整パターン]((https://msdn.microsoft.com/ja-JP/library/office/dn589798.aspx))」を参照してください。
+Microsoft Cloud における調整についてのより幅広い議論については「[調整パターン](https://msdn.microsoft.com/ja-JP/library/office/dn589798.aspx)」を参照してください。

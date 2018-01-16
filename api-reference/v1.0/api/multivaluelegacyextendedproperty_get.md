@@ -31,7 +31,7 @@
  
 ## <a name="http-request"></a>HTTP 要求
 
-**id** プロパティに対するフィルターと一致する拡張プロパティで展開された、リソース インスタンスを取得します。フィルター文字列内のスペース文字に [URL エンコード]((http://www.w3schools.com/tags/ref_urlencode.asp))を適用していることを確認してください。
+**id** プロパティに対するフィルターと一致する拡張プロパティで展開された、リソース インスタンスを取得します。フィルター文字列内のスペース文字に [URL エンコード](http://www.w3schools.com/tags/ref_urlencode.asp)を適用していることを確認してください。
 
 **message** インスタンスの取得:
 <!-- { "blockType": "ignored" } -->

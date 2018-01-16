@@ -54,7 +54,7 @@
 |id|String||
 |importance|String| メッセージの重要度: `low`、`normal`、`high`。|
 |inferenceClassification|String| 使用可能な値は、`focused`、`other` です。|
-|internetMessageId |String |[RFC2822]((http://www.ietf.org/rfc/rfc2822.txt)) によって指定された形式のメッセージ ID。 |
+|internetMessageId |String |[RFC2822](http://www.ietf.org/rfc/rfc2822.txt) によって指定された形式のメッセージ ID。 |
 |isDeliveryReceiptRequested|Boolean|メッセージの開封確認メッセージが要求されているかどうかを示します。|
 |isDraft|Boolean|メッセージが下書きかどうかを示します。メッセージがまだ送信されていなければ下書きです。|
 |isRead|Boolean|メッセージが開封されたかどうかを示します。|

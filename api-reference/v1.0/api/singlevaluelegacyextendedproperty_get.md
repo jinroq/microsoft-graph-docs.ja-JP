@@ -34,7 +34,7 @@
 ## <a name="http-request"></a>HTTP 要求
 
 #### <a name="get-a-resource-instance-using-expand"></a>`$expand` を使用してリソース インスタンスを取得する
-**id** プロパティに対するフィルターと一致する拡張プロパティで展開された、リソース インスタンスを取得します。フィルター文字列内のスペース文字に [URL エンコード]((http://www.w3schools.com/tags/ref_urlencode.asp))を適用していることを確認してください。
+**id** プロパティに対するフィルターと一致する拡張プロパティで展開された、リソース インスタンスを取得します。フィルター文字列内のスペース文字に [URL エンコード](http://www.w3schools.com/tags/ref_urlencode.asp)を適用していることを確認してください。
 
 **message** インスタンスの取得:
 <!-- { "blockType": "ignored" } -->
@@ -91,7 +91,7 @@ GET /groups/{id}/conversations/{id}/threads/{id}/posts/{id}?$expand=singleValueE
 
 #### <a name="get-resource-instances-using-filter"></a>`$filter` を使用してリソース インスタンスを取得する
 
-**id** プロパティと **value** プロパティに対するフィルターと一致する拡張プロパティを持つサポート対象リソースのインスタンスを取得します。 フィルター文字列内のコロン、スラッシュ、スペースに [URL エンコード]((http://www.w3schools.com/tags/ref_urlencode.asp))を適用していることをご確認ください。
+**id** プロパティと **value** プロパティに対するフィルターと一致する拡張プロパティを持つサポート対象リソースのインスタンスを取得します。 フィルター文字列内のコロン、スラッシュ、スペースに [URL エンコード](http://www.w3schools.com/tags/ref_urlencode.asp)を適用していることをご確認ください。
 
 
 **message** インスタンスの取得:
