@@ -30,6 +30,8 @@ POST /groups/{id}/conversations
 ## <a name="response"></a>応答
 成功した場合、このメソッドは `201 Created` 応答コードと、応答本文で[会話](../resources/conversation.md)オブジェクトを返します。
 
+応答には、新しい会話とスレッドの ID が含まれます。これらの ID は、[投稿の一覧表示](conversationthread_list_posts.md)の操作時の新しい投稿の取得に使用することもできます。
+
 ## <a name="example"></a>例
 #### <a name="request"></a>要求
 要求の例を次に示します。
@@ -38,25 +40,31 @@ POST /groups/{id}/conversations
   "name": "create_conversation_from_group"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/groups/{id}/conversations
+POST https://graph.microsoft.com/v1.0/groups('29981b6a-0e57-42dc-94c9-cd24f5306196')/conversations
 Content-type: application/json
 
 {
-  "topic": "New Conversation Topic",
-  "threads": [{
-    "posts": [{
-      "body": {
-        "contentType": "html",
-        "content": "this is body content"
-      },
-      "newParticipants": [{
-        "emailAddress": {
-          "name": "Alex Darrow",
-          "address": "alexd@contoso.com"
+    "topic":"New locations for this quarter",
+    "threads":[
+        {
+            "posts":[
+                {
+                    "body":{
+                        "contentType":"html",
+                        "content":"What do we know so far?"
+                    },
+                    "newParticipants":[
+                        {
+                            "emailAddress":{
+                                "name":"Adele Vance",
+                                "address":"AdeleV@contoso.onmicrosoft.com"
+                            }
+                        }
+                    ]
+                }
+            ]
         }
-      }]
-    }]
-  }]
+    ]
 }
 ```
 
@@ -72,17 +80,16 @@ Content-type: application/json
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 201
 
 {
-  "topic": "topic-value",
-  "hasAttachments": true,
-  "lastDeliveredDateTime": "datetime-value",
-  "uniqueSenders": [
-    "uniqueSenders-value"
-  ],
-  "preview": "preview-value",
-  "id": "id-value"
+    "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#groups('29981b6a-0e57-42dc-94c9-cd24f5306196')/conversations/$entity",
+    "id":"AAQkADDVKtMlRp4Txc6k=",
+    "threads@odata.context":"https://graph.microsoft.com/v1.0/$metadata#groups('29981b6a-0e57-42dc-94c9-cd24f5306196')/conversations('AAQkADDVKtMlRp4Txc6k%3D')/threads",
+    "threads":[
+        {
+            "id":"AAQkADQDarUNUq0yVGnhPFzqQ=="
+        }
+    ]
 }
 ```
 
