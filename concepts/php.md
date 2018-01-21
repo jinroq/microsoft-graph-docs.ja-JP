@@ -6,7 +6,7 @@ PHP アプリで Microsoft Graph を使用するには、ユーザーに Microso
 
 ![Microsoft アカウントのサインイン ページ](images/MicrosoftSignIn.png)
 
-**アプリを作成してみたいですか。**この記事で取り扱っている [PHP 用接続サンプル (REST)](https://github.com/microsoftgraph/php-connect-rest-sample) をダウンロードすれば、簡単に開始できます。または [PHP 用 Microsoft Graph ライブラリ](https://github.com/microsoftgraph/msgraph-sdk-php) (プレビュー) を使用する [PHP 用接続サンプル (SDK)](https://github.com/microsoftgraph/php-connect-sample) バージョンをお試しください。
+**アプリを作成してみたくありませんか?** この記事で取り扱っている [PHP 用接続サンプル (REST)](https://github.com/microsoftgraph/php-connect-rest-sample) をダウンロードすれば、簡単に開始できます。 または [PHP 用 Microsoft Graph ライブラリ](https://github.com/microsoftgraph/php-connect-sample) を使用する [PHP 用接続サンプル (SDK)](https://github.com/microsoftgraph/msgraph-sdk-php) バージョンをお試しください。
 
 
 ## <a name="prerequisites"></a>前提条件
@@ -177,5 +177,5 @@ PHP アプリを試す準備ができました。
 
 
 ## <a name="see-also"></a>関連項目
-* [Azure AD v2.0 のプロトコル](https://azure.microsoft.com/en-us/documentation/articles/active-directory-v2-protocols/)
-* [Azure AD v2.0 のトークン](https://azure.microsoft.com/en-us/documentation/articles/active-directory-v2-tokens/)
+* [Azure AD v2.0 のプロトコル](https://azure.microsoft.com/ja-JP/documentation/articles/active-directory-v2-protocols/)
+* [Azure AD v2.0 のトークン](https://azure.microsoft.com/ja-JP/documentation/articles/active-directory-v2-tokens/)

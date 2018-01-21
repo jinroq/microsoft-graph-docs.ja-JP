@@ -2,9 +2,9 @@
 
 > **エンタープライズのお客様向けにアプリを作成していますか?**エンタープライズのお客様が、<a href="https://azure.microsoft.com/en-us/documentation/articles/active-directory-conditional-access-device-policies/" target="_newtab">条件付きのデバイスへのアクセス</a>のようなエンタープライズ モビリティ セキュリティの機能をオンにしている場合、アプリが動作しない可能性があります。その場合、気がつかないまま、お客様の側でエラーが発生してしまう可能性があります。 
 
-> **すべてのエンタープライズのお客様**の**すべてのエンタープライズ シナリオ**をサポートするには、Azure AD エンドポイントを使用し、[Azure 管理ポータル](https://aka.ms/aadapplist)でアプリを管理する必要があります。詳細については、「[Azure AD か Azure AD v2.0 エンドポイントかを決定する](../concepts/auth_overview.md#deciding-between-the-azure-ad-and-azure-ad-v20-endpoints)」を参照してください。
+> **すべてのエンタープライズのお客様**の**すべてのエンタープライズ シナリオ**をサポートするには、Azure AD エンドポイントを使用し、[Azure ポータル](https://aka.ms/aadapplist)でアプリを管理する必要があります。詳細については、「[Azure AD か Azure AD v2.0 エンドポイントかを決定する](../concepts/auth_overview.md#deciding-between-the-azure-ad-and-azure-ad-v20-endpoints)」を参照してください。
 
-この記事では、[Azure AD v2.0 エンドポイント](https://developer.microsoft.com/en-us/graph/docs/concepts/converged_auth)からアクセス トークンを取得し、Microsoft Graph を呼び出すために必要なタスクについて説明します。ここでは、[iOS (SDK) 用 Office 365 Connect サンプル](https://github.com/microsoftgraph/ios-objectivec-connect-sample)内のコードを説明し、Microsoft Graph を使用するアプリで実装する必要のある主要な概念について説明します。[iOS 用 Microsoft Graph SDK](https://github.com/microsoftgraph/msgraph-sdk-ios) を使用して Microsoft Graph にアクセスする方法を説明します。
+この記事では、[Azure AD v2.0 エンドポイント](https://developer.microsoft.com/ja-JP/graph/docs/concepts/converged_auth)からアクセス トークンを取得し、Microsoft Graph を呼び出すために必要なタスクについて説明します。ここでは、[iOS (SDK) 用 Office 365 Connect サンプル](https://github.com/microsoftgraph/ios-objectivec-connect-sample)内のコードを説明し、Microsoft Graph を使用するアプリで実装する必要のある主要な概念について説明します。[iOS 用 Microsoft Graph SDK](https://github.com/microsoftgraph/msgraph-sdk-ios) を使用して Microsoft Graph にアクセスする方法を説明します。
 
 作成するアプリのバージョンを、この GitHub リポジトリからダウンロードすることができます。
 
@@ -17,7 +17,7 @@
 
 ワークフローは、Microsoft Graph への接続/認証を行い、職場または個人用アカウントでサインインし、最後に受信者に向けてメールを送信する、というものです。
 
-**アプリを作成してみたくありませんか。**「[Microsoft Graph クイック スタート](https://graph.microsoft.io/en-us/getting-started)」を使用すれば、すばやく稼働させることができます。
+**アプリを作成してみたくありませんか。**「[Microsoft Graph クイック スタート](https://graph.microsoft.io/ja-JP/getting-started)」を使用すれば、すばやく稼働させることができます。
 
 ## <a name="prerequisites"></a>前提条件
 
@@ -208,7 +208,7 @@ UI のワークフローを見直すため、アプリはユーザーに認証�
     }
 ```
 3. **SendMailViewController.m** を開きます。このクラスに次のメソッドを追加します。
-**uploadPictureToOneDrive** によって、[user](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/user) の情報からの [user](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/user) のプロフィール画像がアップロードされ、サンプルによって送信される電子メールの本文に埋め込まれる Web 共有 URL が返されます。
+**uploadPictureToOneDrive** によって、[user](https://developer.microsoft.com/ja-JP/graph/docs/api-reference/v1.0/resources/user) の情報からの [user](https://developer.microsoft.com/ja-JP/graph/docs/api-reference/v1.0/resources/user) のプロフィール画像がアップロードされ、サンプルによって送信される電子メールの本文に埋め込まれる Web 共有 URL が返されます。
 
   ```objectivec
   -(void) uploadPictureToOneDrive: (UIImage *) image completion:(void(^) (NSString*, NSError*))completionBlock{
@@ -235,7 +235,7 @@ UI のワークフローを見直すため、アプリはユーザーに認証�
     }
   ```
 4. **SendMailViewController.m** を開き、このクラスに次のメソッドを追加します。 
-[user](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/user) のプロフィール画像がある場合、**getUserPicture** によってその画像が返されます。
+[user](https://developer.microsoft.com/ja-JP/graph/docs/api-reference/v1.0/resources/user) のプロフィール画像がある場合、**getUserPicture** によってその画像が返されます。
    ```objectivec
    -(void) getUserPicture: (NSString *)url completion:(void(^) (UIImage*, NSError*))completionBlock {
     
@@ -254,7 +254,7 @@ UI のワークフローを見直すため、アプリはユーザーに認証�
 
    ```
 3. **SendMailViewcontroller.m** を開き、このクラスに次のメソッドを追加します。
-このメソッドでは、認証されたユーザーを示す [user](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/user) リソースを取得し、ユーザーのプロフィール画像を取得して電子メールを送信するために必要なフィールドをキャッシュします。
+このメソッドでは、認証されたユーザーを示す [user](https://developer.microsoft.com/ja-JP/graph/docs/api-reference/v1.0/resources/user) リソースを取得し、ユーザーのプロフィール画像を取得して電子メールを送信するために必要なフィールドをキャッシュします。
    ```objectivec
    //Retrieve the logged in user's display name and email address
    -(void) getUserInfo: (NSString *)url completion:(void(^) ( NSError*))completionBlock{
@@ -333,5 +333,5 @@ UI のワークフローを見直すため、アプリはユーザーに認証�
 
 ## <a name="see-also"></a>関連項目
 - [iOS 用 Microsoft Graph SDK](https://github.com/microsoftgraph/msgraph-sdk-ios)
-- [Azure AD v2.0 のプロトコル](https://azure.microsoft.com/en-us/documentation/articles/active-directory-v2-protocols/)
-- [Azure AD v2.0 のトークン](https://azure.microsoft.com/en-us/documentation/articles/active-directory-v2-tokens/)
+- [Azure AD v2.0 のプロトコル](https://azure.microsoft.com/ja-JP/documentation/articles/active-directory-v2-protocols/)
+- [Azure AD v2.0 のトークン](https://azure.microsoft.com/ja-JP/documentation/articles/active-directory-v2-tokens/)

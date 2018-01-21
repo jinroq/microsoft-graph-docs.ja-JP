@@ -2,15 +2,16 @@
 
 登録済みデバイスのプロパティを更新します。
 
+承認済みモバイル デバイス管理 (MDM) アプリによって、デバイスの特定のプロパティのみを更新できます。
+
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](../../../concepts/permissions_reference.md)」を参照してください。
 
-
 |アクセス許可の種類      | アクセス許可 (特権の小さいものから大きいものへ)              |
 |:--------------------|:---------------------------------------------------------|
-|委任 (職場または学校のアカウント) | Directory.AccessAsUser.All    |
-|委任 (個人用 Microsoft アカウント) | サポートされていません。    |
-|アプリケーション | Device.ReadWrite.All |
+|委任 (職場または学校のアカウント) | Directory.ReadWrite.All、Directory.AccessAsUser.All |
+|委任 (個人用 Microsoft アカウント) | サポートされていません。 |
+|アプリケーション | 非サポート |
 
 ## <a name="http-request"></a>HTTP 要求
 <!-- { "blockType": "ignored" } -->
@@ -25,7 +26,17 @@ PATCH /devices/{id}
 | Authorization  | string  | ベアラー {トークン}。必須。 |
 
 ## <a name="request-body"></a>要求本文
-要求本文で、更新する[デバイス](../resources/device.md) プロパティの値を指定します。
+
+要求本文で、更新する[デバイス](../resources/device.md) プロパティの値を指定します。 要求本文に含まれない既存のプロパティは、以前の値のままになるか、他のプロパティ値の変更に基づいて再計算されます。 最適なパフォーマンスを得るためには、変更されていない既存の値を含めないでください。
+
+| プロパティ     | 型   |説明|
+|:---------------|:--------|:----------|
+|accountEnabled|ブール値| アカウントが有効な場合は **true**。それ以外の場合は **false**。 |
+|operatingSystem|文字列|デバイス上のオペレーティング システムの種類。|
+|operatingSystemVersion|String|デバイス上のオペレーティング システムのバージョン|
+|displayName|文字列|デバイスの表示名。|
+|isCompliant|Boolean|デバイスがモバイル デバイス管理 (MDM) ポリシーに準拠している場合は **true**。それ以外の場合は **false**。 これは承認済みの MDM アプリでのみ更新できます。 |
+|isManaged|Boolean|デバイスがモバイル デバイス管理 (MDM) アプリで管理されている場合は **true**。それ以外の場合は **false**。 これは承認済みの MDM アプリでのみ更新できます。 |
 
 ## <a name="response"></a>応答
 
@@ -33,7 +44,7 @@ PATCH /devices/{id}
 
 ## <a name="example"></a>例
 ##### <a name="request"></a>要求
-以下は、要求の例です。
+
 <!-- {
   "blockType": "request",
   "name": "update_device"
@@ -41,13 +52,14 @@ PATCH /devices/{id}
 ```http
 PATCH https://graph.microsoft.com/v1.0/devices/{id}
 Content-type: application/json
+Content-length: 31
 
 {
-  "accountEnabled": true
+  "accountEnabled": false
 }
 ```
 ##### <a name="response"></a>応答
-以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。
+
 <!-- {
   "blockType": "response",
   "truncated": true,

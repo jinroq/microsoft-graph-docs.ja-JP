@@ -1,13 +1,13 @@
 # <a name="get-started-with-microsoft-graph-in-a-nodejs-app"></a>Node.js アプリで Microsoft Graph を使ってみる
 
-この記事では、Azure AD v2.0 エンドポイントからアクセス トークンを取得し、Microsoft Graph を呼び出すために必要なタスクについて説明します。ここでは、[Node.js 用の Microsoft Connect サンプル](https://github.com/microsoftgraph/nodejs-connect-rest-sample)の構築手順と、Microsoft Graph を使用するために実装する主要な概念について説明します。この記事では、生の REST 呼び出しを使用して Microsoft Graph API にアクセスする方法について説明します。
+この記事では、Azure AD v2.0 エンドポイントからアクセス トークンを取得し、Microsoft Graph を呼び出すために必要なタスクについて説明します。 ここでは、[Node.js 用の Microsoft Connect サンプル](https://github.com/microsoftgraph/nodejs-connect-rest-sample)の構築手順と、Microsoft Graph を使用するために実装する主要な概念について説明します。 この記事では、生の REST 呼び出しを使用して Microsoft Graph API にアクセスする方法について説明します。 JavaScript SDK を使用して Microsoft Graph に接続する Node.js アプリを構築することに関心があれば、「[Microsoft Graph SDK ベースの Node.js の Connect サンプル](https://github.com/microsoftgraph/nodejs-connect-sample)」をご覧ください。
 
 次の画像は、作成するアプリを示しています。 
 
 ![ログイン後に [メールの送信] ボタンを表示する Web アプリ](./images/web-screenshot.png)
 
 
-**アプリを作成してみたくありませんか。**「[Microsoft Graph クイック スタート](https://graph.microsoft.io/en-us/getting-started)」を使用すれば、すばやく稼働させることができます。
+**アプリを作成してみたくありませんか。**「[Microsoft Graph クイック スタート](https://graph.microsoft.io/ja-JP/getting-started)」を使用すれば、すばやく稼働させることができます。
 
 Azure AD エンドポイントを使用するバージョンの Connect サンプルをダウンロードするには、「[Node.js 用の Microsoft Graph Connect サンプル](https://github.com/microsoftgraph/nodejs-connect-rest-sample/releases/tag/last_v1_auth)」をご覧ください。
 
@@ -18,9 +18,9 @@ Azure AD エンドポイントを使用するバージョンの Connect サン�
 
 - [Microsoft アカウント](https://www.outlook.com/)か[職場または学校アカウント](http://dev.office.com/devprogram)
 - [npm 付きの Node.js](https://nodejs.org/en/download/) 
-- [Node.js 用 Microsoft Connect のサンプル](https://github.com/microsoftgraph/nodejs-connect-rest-sample)このチュートリアルには、サンプル ファイル内の **starter-project** フォルダーを使用します。
+- [Node.js 用 Microsoft Connect サンプル](https://github.com/microsoftgraph/nodejs-connect-rest-sample)。 このチュートリアルには、サンプル ファイル内の **starter-project** フォルダーを使用します。
 
-## <a name="register-the-application"></a>アプリケーションの登録
+## <a name="register-the-application"></a>アプリケーションを登録する
 Microsoft アプリケーション登録ポータルでアプリケーションを登録します。これにより、アプリを Visual Studio で構成する際に使用するアプリ ID とパスワードが生成されます。
 
 1. 個人用アカウント、あるいは職場または学校アカウントのいずれかを使用して、[Microsoft アプリ登録ポータル](https://apps.dev.microsoft.com/)にサインインします。
@@ -202,8 +202,10 @@ Microsoft アプリケーション登録ポータルでアプリケーション�
 ## <a name="next-steps"></a>次の手順
 - [Graph エクスプローラー](https://developer.microsoft.com/graph/graph-explorer)を使用して REST API を試してみます。
 - GitHub で他の [Node.js サンプル](https://github.com/search?utf8=%E2%9C%93&q=node+sample+user%3Amicrosoftgraph&type=Repositories&ref=searchresults)を探します。
-
+- [Microsoft Graph TypeScript 型](https://github.com/microsoftgraph/msgraph-typescript-typings) を使用する
+- [Microsoft Graph JavaScript SDK](https://github.com/microsoftgraph/msgraph-sdk-javascript) を試す
 
 ## <a name="see-also"></a>関連項目
-- [Azure AD v2.0 のプロトコル](https://azure.microsoft.com/en-us/documentation/articles/active-directory-v2-protocols/)
-- [Azure AD v2.0 のトークン](https://azure.microsoft.com/en-us/documentation/articles/active-directory-v2-tokens/)
+- [Azure AD v2.0 のプロトコル](https://azure.microsoft.com/ja-JP/documentation/articles/active-directory-v2-protocols/)
+- [Azure AD v2.0 のトークン](https://azure.microsoft.com/ja-JP/documentation/articles/active-directory-v2-tokens/)
+- [Microsoft Graph JavaScript SDK Node.js の Connect サンプル](https://github.com/microsoftgraph/nodejs-connect-sample)

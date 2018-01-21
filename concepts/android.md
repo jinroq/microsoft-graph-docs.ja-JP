@@ -2,7 +2,7 @@
 
 > **エンタープライズのお客様向けにアプリを作成していますか?**エンタープライズのお客様が、<a href="https://azure.microsoft.com/en-us/documentation/articles/active-directory-conditional-access-device-policies/" target="_newtab">条件付きのデバイスへのアクセス</a>のようなエンタープライズ モビリティ セキュリティの機能をオンにしている場合、アプリが動作しない可能性があります。その場合、気がつかないまま、お客様の側でエラーが発生してしまう可能性があります。 
 
-> **すべてのエンタープライズのお客様**の**すべてのエンタープライズ シナリオ**をサポートするには、Azure AD エンドポイントを使用し、[Azure 管理ポータル](https://aka.ms/aadapplist)でアプリを管理する必要があります。詳細については、「[Azure AD か Azure AD v2.0 エンドポイントかを決定する](../concepts/auth_overview.md#deciding-between-the-azure-ad-and-azure-ad-v20-endpoints)」を参照してください。
+> **すべてのエンタープライズのお客様**の**すべてのエンタープライズ シナリオ**をサポートするには、Azure AD エンドポイントを使用し、[Azure ポータル](https://aka.ms/aadapplist)でアプリを管理する必要があります。詳細については、「[Azure AD か Azure AD v2.0 エンドポイントかを決定する](../concepts/auth_overview.md#deciding-between-the-azure-ad-and-azure-ad-v20-endpoints)」を参照してください。
 
 この記事では、Azure AD v2.0 エンドポイントからアクセス トークンを取得し、Microsoft Graph を呼び出すために必要なタスクについて説明します。ここでは、[Android 用接続サンプル](https://github.com/microsoftgraph/android-java-connect-sample)のビルドの手順と、Android 用アプリで Microsoft Graph を使用するために実施する主要な概念について説明します。またこの記事では、[Microsoft Graph SDK for Android](https://github.com/microsoftgraph/msgraph-sdk-android) または未加工の REST 呼び出しを使用して Microsoft Graph にアクセスする方法についても説明します。
 
@@ -74,7 +74,7 @@ Microsoft アプリ登録ポータルでアプリを登録します。これに�
 
     b. **[プラットフォームの追加]** および **[ネイティブ アプリケーション]** を選択します。
 
-      > **注:**アプリケーション登録ポータルでは、値 `msalENTER_YOUR_CLIENT_ID://auth` のリダイレクト URI が表示されます。 組み込みリダイレクト URI は使用しないでください。 [Android 用接続サンプル](https://github.com/microsoftgraph/android-java-connect-sample)には、このリダイレクト URI を必要とする MSAL 認証ライブラリが実装されています。 [サポートされているサード パーティ製ライブラリ](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-v2-libraries#compatible-client-libraries)または **ADAL** ライブラリを使用している場合は、組み込みのリダイレクト URI を使用する必要があります。
+      > **注:**アプリケーション登録ポータルでは、値 `msalENTER_YOUR_CLIENT_ID://auth` のリダイレクト URI が表示されます。 組み込みリダイレクト URI は使用しないでください。 [Android 用接続サンプル](https://github.com/microsoftgraph/android-java-connect-sample)には、このリダイレクト URI を必要とする MSAL 認証ライブラリが実装されています。 [サポートされているサード パーティ製ライブラリ](https://docs.microsoft.com/ja-JP/azure/active-directory/develop/active-directory-v2-libraries#compatible-client-libraries)または **ADAL** ライブラリを使用している場合は、組み込みのリダイレクト URI を使用する必要があります。
       
       c. 委任されたアクセス許可を追加します。 **profile**、**Mail.ReadWrite**、**Mail.Send**、**Files.ReadWrite**、**User.ReadBasic.All** が必要になります。 
 
@@ -498,7 +498,7 @@ Microsoft アプリ登録ポータルでアプリを登録します。これに�
 
 ### <a name="call-microsoft-graph-using-the-microsoft-graph-rest-api"></a>Microsoft Graph REST API を使用して Microsoft Graph を呼び出す
 
-[Microsoft Graph REST API](http://developer.microsoft.com/en-us/graph/docs) は 1 つの REST API エンドポイントを介して複数の API を Microsoft クラウド サービスから公開するものです。以下の手順に従って、REST API を使用します。
+[Microsoft Graph REST API](http://developer.microsoft.com/ja-JP/graph/docs) は 1 つの REST API エンドポイントを介して複数の API を Microsoft クラウド サービスから公開するものです。以下の手順に従って、REST API を使用します。
 
 1. アプリにインターネット アクセス許可を付与します。**AndroidManifest** ファイルを開き、マニフェスト要素に次の子を追加します。
     
@@ -598,6 +598,6 @@ Android アプリを試す準備ができました。
 ## <a name="see-also"></a>関連項目
 
 - [Android 用 Microsoft Graph SDK](https://github.com/microsoftgraph/msgraph-sdk-android) 
-- [Microsoft Graph を呼び出すためのトークンの取得](https://developer.microsoft.com/en-us/graph/docs/concepts/auth_overview)
-- [ユーザーの代わりにアクセスを取得](https://developer.microsoft.com/en-us/graph/docs/concepts/auth_v2_user)
-- [ユーザーなしでアクセスを取得](https://developer.microsoft.com/en-us/graph/docs/concepts/auth_v2_service)
+- [Microsoft Graph を呼び出すためのトークンの取得](https://developer.microsoft.com/ja-JP/graph/docs/concepts/auth_overview)
+- [ユーザーの代わりにアクセスを取得](https://developer.microsoft.com/ja-JP/graph/docs/concepts/auth_v2_user)
+- [ユーザーなしでアクセスを取得](https://developer.microsoft.com/ja-JP/graph/docs/concepts/auth_v2_service)

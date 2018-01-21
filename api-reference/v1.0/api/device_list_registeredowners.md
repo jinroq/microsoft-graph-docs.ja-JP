@@ -1,13 +1,16 @@
 # <a name="list-registeredowners"></a>registeredOwners を一覧表示する
 
-デバイスの登録所有者の一覧を取得します。
+デバイスの登録済み所有者の一覧を取得します。 登録済み所有者は、デバイスがクラウドに参加済みか、または個人用デバイスが登録済みのユーザーです。 登録済み所有者は、登録時に設定されます。 現在、所有者は 1 人しかいることができません。
+
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](../../../concepts/permissions_reference.md)」を参照してください。
 
-- Device.ReadWrite.All と User.ReadBasic.All
-- Directory.Read.All
-- Directory.ReadWrite.All 
-- Directory.AccessAsUser.All
+
+|アクセス許可の種類      | アクセス許可 (特権の小さいものから大きいものへ)              |
+|:--------------------|:---------------------------------------------------------|
+|委任 (職場または学校のアカウント) | Directory.Read.All、Directory.ReadWrite.All、Directory.AccessAsUser.All    |
+|委任 (個人用 Microsoft アカウント) | サポートされていません。    |
+|アプリケーション | Device.ReadWrite.All および User.ReadBasic.All または Directory.Read.All または Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 要求
 <!-- { "blockType": "ignored" } -->
@@ -15,7 +18,7 @@
 GET /devices/{id}/registeredOwners
 ```
 ## <a name="optional-query-parameters"></a>オプションのクエリ パラメーター
-このメソッドは、応答をカスタマイズするための [OData クエリ パラメーター](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters)をサポートします。
+このメソッドは、応答をカスタマイズするための [OData クエリ パラメーター](http://developer.microsoft.com/ja-JP/graph/docs/overview/query_parameters)をサポートします。
 ## <a name="request-headers"></a>要求ヘッダー
 | 名前       | 型 | 説明|
 |:-----------|:------|:----------|
