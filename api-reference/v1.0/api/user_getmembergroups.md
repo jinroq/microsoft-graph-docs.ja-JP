@@ -9,7 +9,7 @@
 |:--------------------|:---------------------------------------------------------|
 |委任 (職場または学校のアカウント) | User.Read および Group.Read.All、User.ReadBasic.All および Group.Read.All、Directory.Read.All、Directory.ReadWrite.All、Directory.AccessAsUser.All    |
 |委任 (個人用 Microsoft アカウント) | サポートされていません。    |
-|アプリケーション | User.ReadBasic.All および Group.Read.All、Directory.Read.All、Directory.ReadWrite.All |
+|アプリケーション | Group.Read.All、Directory.Read.All、Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 要求
 <!-- { "blockType": "ignored" } -->
