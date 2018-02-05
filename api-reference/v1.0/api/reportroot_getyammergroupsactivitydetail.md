@@ -25,7 +25,7 @@ GET /reports/getYammerGroupsActivityDetail(date={date_value})
 
 ## <a name="request-parameters"></a>要求パラメーター
 
-要求 URL に、選択したクエリ パラメーターと有効な値を指定します。
+要求 URL に、次のうちの 1 つのパラメーターと有効な値を指定します。
 
 | パラメーター | 型   | 説明                              |
 | :-------- | :----- | :--------------------------------------- |

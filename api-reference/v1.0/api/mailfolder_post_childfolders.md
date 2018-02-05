@@ -18,7 +18,7 @@ POST /me/mailFolders/{id}/childFolders
 POST /users/{id | userPrincipalName}/mailFolders/{id}/childFolders
 ```
 
-クエリの URL 内の親フォルダーをフォルダー ID、または `Inbox`、`Drafts`、`SentItems`、や `DeletedItems` のよく知られているフォルダー名として指定します。
+クエリの URL 内の親フォルダーをフォルダー ID、または *Inbox*、*Drafts*、*SentItems*、*DeletedItems* などの、既知のフォルダー名として指定します。 サポートされている既知のフォルダー名の一覧については、「[mailFolder リソースの種類](../resources/mailfolder.md)」を参照してください。
 
 ## <a name="request-headers"></a>要求ヘッダー
 | ヘッダー       | 値 |

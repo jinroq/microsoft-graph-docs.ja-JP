@@ -30,7 +30,7 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/move
 
 | パラメーター    | 型   |説明|
 |:---------------|:--------|:----------|
-|DestinationId|String|宛先フォルダーの ID、あるいは `Inbox`、`Drafts`、`SentItems` または `DeletedItems` の既知のフォルダー名です。|
+|DestinationId|String|宛先フォルダー ID、または *Inbox*、*Drafts*、*SentItems*、*DeletedItems* などの、既知のフォルダー名。 サポートされている既知のフォルダー名の一覧については、「[mailFolder リソースの種類](../resources/mailfolder.md)」を参照してください。|
 
 ## <a name="response"></a>応答
 

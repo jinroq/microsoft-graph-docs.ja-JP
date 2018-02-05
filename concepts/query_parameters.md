@@ -228,31 +228,62 @@ KQL の構文、サポートされている演算子、検索のヒントなど�
 
 Microsoft Graph People API を使用してユーザーに最も関連のある人物を取得できます。関連性は、ユーザーのコミュニケーションとコラボレーション パターン、およびビジネスのリレーションシップによって決定されます。People API では、`$search` クエリ パラメーターがサポートされています。
 
-[person](../api-reference/v1.0/resources/person.md) リソースの **displayName** プロパティと **emailAddress** プロパティの両方で人物の検索を行います。 検索は、あいまい一致のアルゴリズムを実装します。 これにより、完全に一致する項目と、検索目的の推論に基づく結果が返されます。 たとえば、サインイン ユーザーの **people** コレクションに、表示名が "Tyler Lee" で tylerle@example.com というメール アドレスを持つユーザーがいるとします。 次の検索はすべて、Tyler を含む検索結果を返します。
+[person](../api-reference/v1.0/resources/person.md) リソースの **displayName** プロパティと **emailAddress** プロパティの両方で人物の検索を行います。
+
+次の要求は、サインイン ユーザーの **people** コレクションに含まれる各ユーザーの **displayName** プロパティと **emailAddress** プロパティで、「Irene McGowen」という名前の人物を検索します。 「Irene McGowan」という名前の人物がサインインしているユーザーに関連するため、「Irene McGowan」の情報が返されます。
 
 ```http
-GET https://graph.microsoft.com/v1.0/me/people?$search=tyler                //matches both Tyler's name and email
-GET https://graph.microsoft.com/v1.0/me/people?$search=tylerle              //matches Tyler's email
-GET https://graph.microsoft.com/v1.0/me/people?$search="tylerle@example.com"  //matches Tyler's email. Note the quotes to enclose '@'.
-GET https://graph.microsoft.com/v1.0/me/people?$search=tiler                //fuzzy match with Tyler's name 
-GET https://graph.microsoft.com/v1.0/me/people?$search="tyler lee"          //matches Tyler's name. Note the quotes to enclose the space.
+GET https://graph.microsoft.com/v1.0/me/people/?$search="Irene McGowen"
 ```
 
-特定のトピックに興味のある人物の検索を実行することもできます。ユーザーのメールのスレッドから引き出した推測に基づいて検索を実行します。たとえば、次の検索は、サインイン ユーザーに関連のある人物のうち、そのユーザーとの通信の中でピザに興味を示した人のコレクションを返します。検索語句を引用符で囲んでいることに注目してください。
+次の例は応答を示しています。 
 
 ```http
-GET https://graph.microsoft.com/v1.0/me/people/?$search="topic:pizza"                
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+    "value": [
+       {
+           "id": "C0BD1BA1-A84E-4796-9C65-F8A0293741D1",
+           "displayName": "Irene McGowan",
+           "givenName": "Irene",
+           "surname": "McGowan",
+           "birthday": "",
+           "personNotes": "",
+           "isFavorite": false,
+           "jobTitle": "Auditor",
+           "companyName": null,
+           "yomiCompany": "",
+           "department": "Finance",
+           "officeLocation": "12/1110",
+           "profession": "",
+           "userPrincipalName": "irenem@contoso.onmicrosoft.com",
+           "imAddress": "sip:irenem@contoso.onmicrosoft.com",
+           "scoredEmailAddresses": [
+               {
+                   "address": "irenem@contoso.onmicrosoft.com",
+                   "relevanceScore": -16.446060612802224
+               }
+           ],
+           "phones": [
+               {
+                   "type": "Business",
+                   "number": "+1 412 555 0109"
+               }
+           ],
+           "postalAddresses": [],
+           "websites": [],
+           "personType": {
+               "class": "Person",
+               "subclass": "OrganizationUser"
+           }
+       }
+   ]
+}
 ```
 
-最後に、2 種類の検索式を組み合わせることによって、同じ要求内に人の検索とトピックの検索の両方をまとめることができます。
-
-```http
-GET https://graph.microsoft.com/v1.0/me/people/?$search="tyl topic:pizza"                
-```
-
-この要求は本質的には 2 つの検索を行います。サインイン ユーザーに関連する人物の **displayName** プロパティと **emailAddress** プロパティに対するあいまい検索、そしてユーザーに関連する人物に対する「ピザ」というトピックの検索です。 次いで結果をランク付けし、並べ替え、返します。 この検索は制限的ではありません。「tyl」とあいまい一致する人物、「ピザ」に関心を示す人物、または両方の結果を取得する可能性があります。
-
-People API についてもっと知るには、「[関係する人の情報を取得する](./people_example.md)」を参照してください。  
+People API の詳細については、「[関係する人の情報を取得する](./people_example.md#search-people)」を参照してください。  
 
 ## <a name="select-parameter"></a>select パラメーター
 

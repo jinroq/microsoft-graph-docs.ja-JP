@@ -28,7 +28,7 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/copy
 
 | パラメーター    | 型   |説明|
 |:---------------|:--------|:----------|
-|destinationId|String|フォルダー ID、または *Inbox*、*Drafts*、*SentItems*、または *DeletedItems* よく知られているフォルダー名。|
+|destinationId|String|フォルダー ID、または *Inbox*、*Drafts*、*SentItems*、*DeletedItems* などの、既知のフォルダー名。 サポートされている既知のフォルダー名の一覧については、「[mailFolder リソースの種類](../resources/mailfolder.md)」を参照してください。|
 
 ## <a name="response"></a>応答
 

@@ -1,6 +1,8 @@
 # <a name="mailfolder-resource-type"></a>mailFolder リソースの種類
 
-受信トレイ、下書き、送信済みアイテムなどのユーザーのメールボックス内の mailFolder です。MailFolders にはメッセージと子 mailFolders を含めることができます。
+受信トレイや下書きなどの、ユーザーのメールボックス内のメール フォルダーです。 メール フォルダーには、メッセージ、他の Outlook アイテム、子メール フォルダーを含めることができます。
+
+Outlook では、既定でユーザー用の特定のフォルダーを作成します。 対応するフォルダーの **id** 値の代わりに、便宜のために、既知のフォルダー名 (`ArchiveRoot`、`ConversationHistory`、`DeletedItems`、`Drafts`、`Inbox`、`JunkEmail`、`Outbox`、`SentItems`) を使用して、**mailFolder** コレクションのフォルダーにアクセスすることができます。
 
 このリソースでは、[デルタ](../api/mailfolder_delta.md)関数を用意すれば、増分の追加、削除、更新に[デルタ クエリ](../../../concepts/delta_query_overview.md)を使用できます。
 
@@ -47,8 +49,8 @@ Outlook 内の MailFolder には、複数の種類のアイテムを含めるこ
 |:---------------|:--------|:----------|
 |childFolders|[MailFolder](mailfolder.md) コレクション|mailFolder 内の子フォルダーのコレクション。|
 |messages|[Message](message.md) コレクション|mailFolder 内のメッセージのコレクション。|
-|multiValueExtendedProperties|[multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md) コレクション| mailFolder に対して定義された、複数値の拡張プロパティのコレクション。読み取り専用。Null 許容型。|
-|singleValueExtendedProperties|[singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md) コレクション| mailFolder に対して定義された、単一値の拡張プロパティのコレクションです。読み取り専用。Null 許容型。|
+|multiValueExtendedProperties|[multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md) collection| mailFolder に対して定義された、複数値の拡張プロパティのコレクション。読み取り専用。Null 許容型。|
+|singleValueExtendedProperties|[singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md) collection| mailFolder に対して定義された、単一値の拡張プロパティのコレクションです。読み取り専用。Null 許容型。|
 
 ## <a name="json-representation"></a>JSON 表記
 

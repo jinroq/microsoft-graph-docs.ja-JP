@@ -24,7 +24,7 @@ GET /reports/getYammerGroupsActivityGroupCounts(period='{period_value}')
 
 ## <a name="request-parameters"></a>要求パラメーター
 
-要求 URL に、次のクエリ パラメーターと有効な値を指定します。
+要求 URL に、次のパラメーターと有効な値を指定します。
 
 | パラメーター | 型   | 説明                              |
 | :-------- | :----- | :--------------------------------------- |

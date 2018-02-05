@@ -1,7 +1,7 @@
 # <a name="use-the-people-api-in-microsoft-graph-to-get-information-about-the-people-most-relevant-to-you"></a>Microsoft Graph の People API を使用した最も関連のある人物に関する情報の取得
 Microsoft Graph では、People API を使用してユーザーに最も関連のある人物を取得できます。関連性は、ユーザーのコミュニケーションとコラボレーション パターン、およびビジネスのリレーションシップによって決定されます。人物は、個人の連絡先、ソーシャル ネットワーキングの連絡先、組織のディレクトリ、最近 (メール、Skype などで) 連絡した人などになります。この情報を生成するとともに、People API は、ファジー マッチ検索のサポートと、サインインしているユーザーの組織内の別のユーザーに関連するユーザーのリストを取得する機能も提供します。People API は、電子メールの作成や会議の作成などのシナリオを選択するユーザーに特に便利です。たとえば、電子メール作成のシナリオで People API を使用できます。
  
-## <a name="authorization"></a>承認
+## <a name="authorization"></a>Authorization
 Microsoft Graph で People API を呼び出すには、アプリに適切なアクセス許可が必要になります。 
 
 * People.Read - 一般的な People API の呼び出し (例: https://graph.microsoft.com/v1.0/me/people/) の作成に使用します。People.Read には、エンド ユーザーの同意が必要です。
@@ -624,7 +624,7 @@ Content-type: application/json
     ]
 }
 ```
-### <a name="select-the-fields-to-return-in-a-filtered-response"></a>フィルター処理された応答で返されるフィールドの選択 
+### <a name="select-the-fields-to-return-in-a-filtered-response"></a>フィルター処理された応答で返されるフィールドを選択する 
 *$select* パラメーターと *$filter* パラメーターを組み合わせることで、ユーザーに関連のある人物のカスタム リストを作成し、アプリケーションで必要になるフィールドのみを取得できます。 
 
 次の例では、指定した名前と等しい表示名を持つ人物の **displayName** と **scoredEmailAddresses** を取得します。この例では、表示名が "Lorrie Frye" と等しい人物のみが返されます。 
@@ -659,7 +659,7 @@ Content-type: application/json
 ### <a name="use-search-to-select-people"></a>検索による人物の選択 
 *$search* パラメーターを使用して、特定の条件セットを満たす人物を選びます。 
 
-次の検索クエリは、**displayName** に文字「j」で始まる単語がある、`/me` に関連する人物を返します。
+次の検索クエリは、**displayName** または *emailAddress" に文字「j」で始まる単語がある、`/me` に関連する人物を返します。
 
 ```http
 GET https://graph.microsoft.com/v1.0/me/people/?$search=j
@@ -772,58 +772,40 @@ Content-type: application/json
 }
 ```
 ### <a name="perform-a-fuzzy-search"></a>あいまい検索の実行 
-次に示す要求では、「Irene McGowen」という名前の人物について検索を実行します。「Irene McGowan」という名前の人物がサインインしているユーザーに関連するため、「Irene McGowan」の情報が返されます。
+
+検索は、あいまい一致のアルゴリズムを実装します。 これにより、完全に一致する項目と、検索目的の推論に基づく結果が返されます。 たとえば、サインイン ユーザーの **people** コレクションに、表示名が "Tyler Lee" で tylerle@example.com というメール アドレスを持つユーザーがいるとします。 次の検索ではすべて、このユーザー Tyler が検索結果として返されます。
 
 ```http
-GET https://graph.microsoft.com/v1.0/me/people/?$search="Irene McGowen"
+GET https://graph.microsoft.com/v1.0/me/people?$search=tyler                //matches both Tyler's name and email
+GET https://graph.microsoft.com/v1.0/me/people?$search=tylerle              //matches Tyler's email
+GET https://graph.microsoft.com/v1.0/me/people?$search="tylerle@example.com"  //matches Tyler's email. Note the quotes to enclose '@'.
+GET https://graph.microsoft.com/v1.0/me/people?$search=tiler                //fuzzy match with Tyler's name 
+GET https://graph.microsoft.com/v1.0/me/people?$search="tyler lee"          //matches Tyler's name. Note the quotes to enclose the space.
 ```
 
-次の例は応答を示しています。 
+サインイン ユーザーに関連するユーザーを検索することもできます。また、そのユーザーとピザについてやり取りをしたいことを、次の例のように示すこともできます。
 
 ```http
-HTTP/1.1 200 OK
-Content-type: application/json
-
-{
-    "value": [
-       {
-           "id": "C0BD1BA1-A84E-4796-9C65-F8A0293741D1",
-           "displayName": "Irene McGowan",
-           "givenName": "Irene",
-           "surname": "McGowan",
-           "birthday": "",
-           "personNotes": "",
-           "isFavorite": false,
-           "jobTitle": "Auditor",
-           "companyName": null,
-           "yomiCompany": "",
-           "department": "Finance",
-           "officeLocation": "12/1110",
-           "profession": "",
-           "userPrincipalName": "irenem@contoso.onmicrosoft.com",
-           "imAddress": "sip:irenem@contoso.onmicrosoft.com",
-           "scoredEmailAddresses": [
-               {
-                   "address": "irenem@contoso.onmicrosoft.com",
-                   "relevanceScore": -16.446060612802224
-               }
-           ],
-           "phones": [
-               {
-                   "type": "Business",
-                   "number": "+1 412 555 0109"
-               }
-           ],
-           "postalAddresses": [],
-           "websites": [],
-           "personType": {
-               "class": "Person",
-               "subclass": "OrganizationUser"
-           }
-       }
-   ]
-}
+GET https://graph.microsoft.com/v1.0/me/people/?$search="topic:pizza"                
 ```
+
+このコンテキストのトピックは、電子メールのやり取りにおいてユーザーが最もよく使用した語になります。 Microsoft はそのような単語を抽出し、そのデータのインデックスを作成してあいまい検索を容易にします。 
+
+なお、検索語句は引用符で囲まれており、そのデータのトピックはそのコンテキストから無制限に抽出されます。 たとえば、次のクエリで "windows" を検索すると、
+
+```http
+GET https://graph.microsoft.com/v1.0/me/people/?$search="topic:windows" 
+```
+トピック データ インデックスでのあいまい検索になり、結果には、Windows オペレーティング システム、建物の壁の開口部、または他の定義を意味するインスタンスが含まれます。
+
+最後に、2 種類の検索式を組み合わせることによって、同じ要求内に人の検索とトピックの検索の両方をまとめることができます。
+
+```http
+GET https://graph.microsoft.com/v1.0/me/people/?$search="tyl topic:pizza"                
+```
+
+この要求は本質的には 2 つの検索を行います。サインイン ユーザーに関連する人物の **displayName** プロパティと **emailAddress** プロパティに対するあいまい検索、そしてユーザーに関連する人物に対する「ピザ」というトピックの検索です。 次いで結果をランク付けし、並べ替え、返します。 この検索は制限的ではありません。「tyl」とあいまい一致する人物、「ピザ」に関心を示す人物、または両方の結果を取得する可能性があります。
+
 ### <a name="search-other-users-relevant-people"></a>他のユーザーの関連する人物の検索
 次の要求は、サインインしているユーザーの組織内の他の人物と最も関連のある人物を取得します。この要求には People.Read.All アクセス許可が必要です。この例では、Roscoe Seidel の関連する人物が表示されます。
 

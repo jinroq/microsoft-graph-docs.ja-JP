@@ -15,6 +15,7 @@ Microsoft Graph では、個人または組織のアカウントにあるユー�
 ```
 GET /me/mailFolders('SentItems')/messages?$select=sender,subject
 ```
+サポートされている既知のフォルダー名の一覧については、「[mailFolder リソースの種類](../resources/mailfolder.md)」を参照してください。
 
 ## <a name="common-use-cases"></a>一般的なユース ケース 
 
@@ -43,8 +44,8 @@ Microsoft Graph API には、メッセージの一般的なユース ケース�
 メール API は、ユーザーと連携するための新しい方法を開発することができます。 
 
 - [message](../resources/message.md) リソースと [mailFolder](../resources/mailfolder.md) リソースの[メソッド](../resources/message.md#methods)、[プロパティ](../resources/message.md#properties)、[リレーションシップ](../resources/message.md#relationships)について詳しく説明します。
-- [Graph エクスプローラー](https://developer.microsoft.com/en-us/graph/graph-explorer)で API をお試しください。
+- [Graph エクスプローラー](https://developer.microsoft.com/ja-JP/graph/graph-explorer)で API をお試しください。
 
-さらに情報が必要な場合「[パートナーによる Microsoft Graph の活用方法](https://developer.microsoft.com/en-us/graph/graph/examples#partners)」を参照してください。
+さらに情報が必要な場合「[パートナーによる Microsoft Graph の活用方法](https://developer.microsoft.com/ja-JP/graph/graph/examples#partners)」を参照してください。
 
 
