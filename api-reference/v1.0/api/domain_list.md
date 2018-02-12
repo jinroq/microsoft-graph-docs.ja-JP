@@ -39,7 +39,7 @@ GET /domains
   "name": "get_domains"
 }-->
 ```http
-GET https://graph.microsoft.com/V1.0/domains
+GET https://graph.microsoft.com/v1.0/domains
 ```
 ##### <a name="response"></a>応答
 注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。
