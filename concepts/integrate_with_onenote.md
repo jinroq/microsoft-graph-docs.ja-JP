@@ -26,12 +26,12 @@ OneNote のリソースの操作で最もよく使用される要求の一部を
 
 |操作|URL|
 |:--------|:--|
-|自分のノートブックを取得する|[https://graph.microsoft.com/v1.0/me/onenote/notebooks](https://developer.microsoft.com/en-us/graph/graph-explorer?request=me/onenote/notebooks&version=1.0)|
-|自分のセクションを取得する|[https://graph.microsoft.com/v1.0/me/onenote/sections](https://developer.microsoft.com/en-us/graph/graph-explorer?request=me/onenote/sections&version=1.0)|
-|自分のページを取得する|[https://graph.microsoft.com/v1.0/me/onenote/pages](https://developer.microsoft.com/en-us/graph/graph-explorer?request=me/onenote/pages&version=1.0)|
+|自分のノートブックを取得する|[https://graph.microsoft.com/v1.0/me/onenote/notebooks](https://developer.microsoft.com/ja-JP/graph/graph-explorer?request=me/onenote/notebooks&version=1.0)|
+|自分のセクションを取得する|[https://graph.microsoft.com/v1.0/me/onenote/sections](https://developer.microsoft.com/ja-JP/graph/graph-explorer?request=me/onenote/sections&version=1.0)|
+|自分のページを取得する|[https://graph.microsoft.com/v1.0/me/onenote/pages](https://developer.microsoft.com/ja-JP/graph/graph-explorer?request=me/onenote/pages&version=1.0)|
 
 ## <a name="explore-the-onenote-apis"></a>OneNote API を使ってみる
-[Microsoft Graph Explorer](https://developer.microsoft.com/en-us/graph/graph-explorer) を使用して、自分の OneNote ノートブックで OneNote API を試してみます。
+[Microsoft Graph Explorer](https://developer.microsoft.com/ja-JP/graph/graph-explorer) を使用して、自分の OneNote ノートブックで OneNote API を試してみます。
 
 Graph Explorer から OneNote API 呼び出しを行うには、左側の列にある **[その他のサンプルを表示]** を選択します。 メニューを使用して、OneNote を **[オン]** に切り替えます。 また、適切なアクセス許可を有効にする必要があります。 左側のメニューのアカウント名の下で、**[アクセス許可の修正]** を選択します。 OneNote のアクセス許可の詳細については、「[メモのアクセス許可](permissions_reference.md#notes-permissions)」を参照してください。
 
@@ -39,10 +39,10 @@ Microsoft Graph の OneNote API を使い始めるには、[OneNote 参照コン
 
 ## <a name="see-also"></a>関連項目
 
-* [ブランドのガイドライン](https://msdn.microsoft.com/en-us/office/office365/howto/onenote-branding)
-* [OneNote コンテンツと構造を取得する](https://msdn.microsoft.com/en-us/office/office365/howto/onenote-get-content)
-* [画像、ビデオ、ファイルを追加する](https://msdn.microsoft.com/en-us/office/office365/howto/onenote-images-files)
-* [絶対配置要素を作成する](https://msdn.microsoft.com/en-us/office/office365/howto/onenote-abs-pos)
-* [データを抽出する](https://msdn.microsoft.com/en-us/office/office365/howto/onenote-extract-data)
-* [ノート シールを使用する](https://msdn.microsoft.com/en-us/office/office365/howto/onenote-note-tags)
+* [ブランドのガイドライン](https://msdn.microsoft.com/ja-JP/office/office365/howto/onenote-branding)
+* [OneNote コンテンツと構造を取得する](https://msdn.microsoft.com/ja-JP/office/office365/howto/onenote-get-content)
+* [画像、ビデオ、ファイルを追加する](https://msdn.microsoft.com/ja-JP/office/office365/howto/onenote-images-files)
+* [絶対配置要素を作成する](https://msdn.microsoft.com/ja-JP/office/office365/howto/onenote-abs-pos)
+* [データを抽出する](https://msdn.microsoft.com/ja-JP/office/office365/howto/onenote-extract-data)
+* [ノート シールを使用する](https://msdn.microsoft.com/ja-JP/office/office365/howto/onenote-note-tags)
 

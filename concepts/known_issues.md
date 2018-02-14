@@ -261,7 +261,7 @@ Microsoft Graph は現段階では個々の要求のトランザクション処�
 
 ### <a name="limit-on-batch-size"></a>バッチ サイズの制限
 
-現段階では、JSON バッチ要求は 5 つまでの個別要求に限られています。JSON バッチ処理が完成に近づくにつれて、この制限を緩和します。
+現段階では、JSON バッチ要求は 20 個までの個別要求に限られています。
 
 ### <a name="simplified-dependencies"></a>簡略化された依存関係
 
