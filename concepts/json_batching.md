@@ -1,4 +1,4 @@
-# <a name="combine-multiple-requests-in-one-http-call-using-json-batching-preview"></a>JSON バッチ処理を使用した複数要求の単一 HTTP 呼び出しへの統合 (プレビュー)
+# <a name="combine-multiple-requests-in-one-http-call-using-json-batching"></a>JSON バッチ処理を使用した複数要求の単一 HTTP 呼び出しへの統合
 
 JSON のバッチ処理を使用すると、複数の要求を単一の JSON オブジェクトに統合することにより、アプリケーションを最適化することができます。たとえば、次のような互いに無関係なデータからビューを作成する場合、
 
@@ -13,7 +13,7 @@ JSON のバッチ処理を使用すると、複数の要求を単一の JSON オ
 まず、前の例の JSON バッチ要求を作成します。このシナリオでは、各要求に相互の依存関係はありません。よって、バッチ要求には、各要求を任意の順序で配置できます。
 
 ```http
-POST https://graph.microsoft.com/beta/$batch
+POST https://graph.microsoft.com/v1.0/$batch
 Accept: application/json
 Content-Type: application/json
 ```
@@ -82,7 +82,7 @@ Content-Type: application/json
       "id": "2",
       "status": 200,
       "body": {
-        "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(microsoft.graph.plannerTask)",
+        "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#Collection(microsoft.graph.plannerTask)",
         "value": []
       }
     },
