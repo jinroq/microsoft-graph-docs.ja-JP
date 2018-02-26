@@ -13,7 +13,13 @@ Microsoft Graph API に関する既知の問題の詳細については、「[�
 |追加|ベータ版|`favoritePlanReferences` と `recentPlanReferences` プロパティを [plannerUser](https://developer.microsoft.com/ja-JP/graph/docs/api-reference/beta/resources/plannerUser) エンティティに追加しました。 |
 |追加|ベータ版|`favoritePlans` と `recentPlans` ナビゲーション プロパティを [plannerUser](https://developer.microsoft.com/ja-JP/graph/docs/api-reference/beta/resources/plannerUser) エンティティに追加しました。 |
 |追加|ベータ版|`contexts` プロパティを [plannerPlan](https://developer.microsoft.com/ja-JP/graph/docs/api-reference/beta/resources/plannerPlan) エンティティに追加しました。 |
-|追加|ベータ版|`contextDetails` プロパティを [plannerPlanDetails](https://developer.microsoft.com/ja-JP/graph/docs/api-reference/beta/resources/plannerPlanDetails) エンティティに追加しました。 |## 2018 年 1 月
+|追加|ベータ版|`contextDetails` プロパティを [plannerPlanDetails](https://developer.microsoft.com/ja-JP/graph/docs/api-reference/beta/resources/plannerPlanDetails) エンティティに追加しました。 |
+
+### <a name="reports-apis"></a>レポート API
+| 変更の種類 | バージョン | 説明                              |
+|:------------|:--------|:-----------------------------------------|
+| 追加    | ベータ版    | **activatedOnSharedComputer** プロパティを [userActivationCounts](../api-reference/beta/resources/useractivationcounts.md) エンティティに追加しました。|
+| 追加    | ベータ版    | **sharedComputerActivation** プロパティを [office365ActivationsUserCounts](../api-reference/beta/resources/office365activationsusercounts.md) エンティティに追加しました。|
 
 ## <a name="january-2018"></a>2018 年 1 月
 
@@ -164,15 +170,18 @@ Microsoft Graph API に関する既知の問題の詳細については、「[�
 |変更|ベータ版|[vppLicensingType](https://developer.microsoft.com/ja-JP/graph/docs/api-reference/beta/resources/intune_apps_vpplicensingtype) 複合型に **supportsUserLicensing** と **supportsDeviceLicensing** プロパティを追加しました|
 |変更|ベータ版|[vppTokenActionResult](https://developer.microsoft.com/ja-JP/graph/docs/api-reference/beta/resources/intune_onboarding_vpptokenactionresult) 複合型から **actionMessage** プロパティを削除しました|
 
-## <a name="january-2018"></a>2018 年 1 月
-
 ### <a name="reports-apis"></a>レポート API
 | 変更の種類 | バージョン | 説明                              |
 |:------------|:--------|:-----------------------------------------|
 | 追加    | v1.0    | 以下の API を追加しました。<br>[getTeamsUserActivityUserDetail](../api-reference/v1.0/api/reportroot_getteamsuseractivityuserdetail.md)<br>[getTeamsUserActivityCounts](../api-reference/v1.0/api/reportroot_getteamsuseractivitycounts.md)<br>[getTeamsUserActivityUserCounts](../api-reference/v1.0/api/reportroot_getteamsuseractivityusercounts.md)<br>[getTeamsDeviceUsageUserDetail](../api-reference/v1.0/api/reportroot_getteamsdeviceusageuserdetail.md)<br>[getTeamsDeviceUsageUserCounts](../api-reference/v1.0/api/reportroot_getteamsdeviceusageusercounts.md)<br>[getTeamsDeviceUsageDistributionUserCounts](../api-reference/v1.0/api/reportroot_getteamsdeviceusagedistributionusercounts.md) |
 
-
 ## <a name="december-2017"></a>2017 年 12 月
+
+### <a name="delta-query"></a>デルタ クエリ
+
+| 変更の種類 | バージョン | 説明                              |
+|:------------|:--------|:-----------------------------------------|
+| 変更      | v1.0    | [users](https://developer.microsoft.com/ja-JP/graph/docs/api-reference/v1.0/api/user_delta) と [groups](https://developer.microsoft.com/ja-JP/graph/docs/api-reference/v1.0/api/group_delta) に、オプションのクエリ フィルタリング機能を追加します。 |
 
 ### <a name="microsoft-intune-apis"></a>Microsoft Intune API
 
@@ -822,7 +831,7 @@ Microsoft Graph API に関する既知の問題の詳細については、「[�
 
 | **変更の種類** | **バージョン** | **説明**                          |
 | :-------------- | :---------- | :--------------------------------------- |
-| 追加        | v1.0        | V1.0 にデルタ関数のサポートを追加します次のエンティティに追加して、[デルタ クエリ](https://developer.microsoft.com/ja-JP/graph/docs/concepts/delta_query_overview)を実行します。<br/>contact<br/>contactFolder<br/>event<br/>group<br/>mailFolder<br/>message<br/>user<br/>例については、以下を参照してください。<br/>[グループへの増分の変更を取得する](https://developer.microsoft.com/ja-JP/graph/docs/concepts/delta_query_groups)<br/>[フォルダー内のメッセージへの増分の変更を取得する](https://developer.microsoft.com/ja-JP/graph/docs/concepts/delta_query_messages)<br/>[ユーザーへの増分の変更を取得する](https://developer.microsoft.com/ja-JP/graph/docs/concepts/delta_query_users) |
+| 追加        | v1.0        | v1.0 にデルタ関数のサポートを追加します。 [デルタ クエリ](https://developer.microsoft.com/ja-JP/graph/docs/concepts/delta_query_overview)を実行するために、次のエンティティに追加します。<br/>contact<br/>contactFolder<br/>event<br/>group<br/>mailFolder<br/>message<br/>user<br/>例については、以下を参照してください。<br/>[グループへの増分の変更を取得する](https://developer.microsoft.com/ja-JP/graph/docs/concepts/delta_query_groups)<br/>[フォルダー内のメッセージへの増分の変更を取得する](https://developer.microsoft.com/ja-JP/graph/docs/concepts/delta_query_messages)<br/>[ユーザーへの増分の変更を取得する](https://developer.microsoft.com/ja-JP/graph/docs/concepts/delta_query_users) |
 | 変更          | ベータ版        | [users](https://developer.microsoft.com/ja-JP/graph/docs/api-reference/beta/api/user_delta) と [groups](https://developer.microsoft.com/ja-JP/graph/docs/api-reference/beta/api/group_delta) に、オプションのクエリ フィルタリング機能 (ID 別) を追加します。 |
 
 ### <a name="added-user-resource-support-for-deleted-items"></a>削除されたアイテムをサポートするユーザー リソースの追加
@@ -850,13 +859,13 @@ Microsoft Graph API に関する既知の問題の詳細については、「[�
 
 | **変更の種類** | **バージョン** | **説明**                          |
 | :-------------- | :---------- | :--------------------------------------- |
-| 追加        | V1.0        | [ドメイン](https://graph.microsoft.io/ja-JP/docs/api-reference/v1.0/resources/domain)に操作を追加しました。<br/>新しいエンティティ:</br>[domain](https://graph.microsoft.io/ja-JP/docs/api-reference/v1.0/resources/domain)<br/>[domainDnsRecord](https://graph.microsoft.io/ja-JP/docs/api-reference/v1.0/resources/domaindnsrecord)<br/>[domainDnsCnameRecord](https://graph.microsoft.io/ja-JP/docs/api-reference/v1.0/resources/domainDnsCnameRecord)<br/>[domainDnsMxRecord](https://graph.microsoft.io/ja-JP/docs/api-reference/v1.0/resources/domainDnsMxRecord)<br/>[domainDnsSrvRecord](https://graph.microsoft.io/ja-JP/docs/api-reference/v1.0/resources/domainDnsSrvRecord)<br/>[domainDnsTxtRecord](https://graph.microsoft.io/ja-JP/docs/api-reference/v1.0/resources/domainDnsTxtRecord)<br/>[domainDnsUnavailableRecord](https://graph.microsoft.io/ja-JP/docs/api-reference/v1.0/resources/domainDnsUnavailableRecord)<br/>新しいアクション:</br>[verify](https://graph.microsoft.io/ja-JP/docs/api-reference/v1.0/api/domain_verify) |
+| 追加        | v1.0        | [ドメイン](https://graph.microsoft.io/ja-JP/docs/api-reference/v1.0/resources/domain)に操作を追加しました。<br/>新しいエンティティ:</br>[domain](https://graph.microsoft.io/ja-JP/docs/api-reference/v1.0/resources/domain)<br/>[domainDnsRecord](https://graph.microsoft.io/ja-JP/docs/api-reference/v1.0/resources/domaindnsrecord)<br/>[domainDnsCnameRecord](https://graph.microsoft.io/ja-JP/docs/api-reference/v1.0/resources/domainDnsCnameRecord)<br/>[domainDnsMxRecord](https://graph.microsoft.io/ja-JP/docs/api-reference/v1.0/resources/domainDnsMxRecord)<br/>[domainDnsSrvRecord](https://graph.microsoft.io/ja-JP/docs/api-reference/v1.0/resources/domainDnsSrvRecord)<br/>[domainDnsTxtRecord](https://graph.microsoft.io/ja-JP/docs/api-reference/v1.0/resources/domainDnsTxtRecord)<br/>[domainDnsUnavailableRecord](https://graph.microsoft.io/ja-JP/docs/api-reference/v1.0/resources/domainDnsUnavailableRecord)<br/>新しいアクション:</br>[verify](https://graph.microsoft.io/ja-JP/docs/api-reference/v1.0/api/domain_verify) |
 
 ### <a name="added-contracts-to-v10"></a>V1.0 追加されたコントラクト
 
 | **変更の種類** | **バージョン** | **説明**                          |
 | :-------------- | :---------- | :--------------------------------------- |
-| 追加        | V1.0        | 新しいエンティティ:</br>[コントラクト](https://graph.microsoft.io/ja-JP/docs/api-reference/v1.0/resources/contract) |
+| 追加        | v1.0        | 新しいエンティティ:</br>[コントラクト](https://graph.microsoft.io/ja-JP/docs/api-reference/v1.0/resources/contract) |
 
 ### <a name="added-licensedetails-to-v10"></a>V1.0 に追加された licenseDetails
 
@@ -1758,7 +1767,7 @@ Microsoft Graph API に関する既知の問題の詳細については、「[�
 
 | **変更の種類** | **エンドポイント** | **説明**                          |
 | :-------------- | :----------- | :--------------------------------------- |
-| 追加        | v1.0         | Webhooks が、_/Subscriptions_ リソースから V1.0 エンドポイントで一般公開されるようになりました。Outlook と Office 365 のグループ会話からデータに関する通知を受信するためのサブスクリプションを作成、読み取り、更新、削除します。 |
+| 追加        | v1.0         | Webhook が、_/Subscriptions_ リソースから v1.0 エンドポイントで一般公開されるようになりました。 Outlook と Office 365 のグループ会話からデータに関する通知を受信するためのサブスクリプションを作成、読み取り、更新、削除します。 |
 
 ### <a name="user"></a>ユーザー
 
