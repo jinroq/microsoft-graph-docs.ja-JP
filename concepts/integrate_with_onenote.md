@@ -1,6 +1,7 @@
 # <a name="use-microsoft-graph-to-integrate-with-onenote"></a>Microsoft Graph を使用して OneNote に統合する
 
-アプリを OneNote に統合することで、世界中の数百万人のユーザーに到達する複数のプラットフォーム間で、強化されたエクスペリエンスを作成できます。 Microsoft Graph を使用して OneNote のノートブック、セクション、ページにアクセスし、ユーザーによるアイデアや情報の計画や整理を支援するソリューションを作成することができます。
+アプリを OneNote に統合すると、複数のプラットフォームで利用できる便利な機能を作成し、世界中の数百万人のユーザーに届けることができます。
+ Microsoft Graph を使用して OneNote のノートブック、セクション、ページにアクセスし、ユーザーによるアイデアや情報の計画や整理を支援するソリューションを作成することができます。
 
 ## <a name="why-create-onenote-apps"></a>OneNote アプリを作成する理由
 
@@ -15,7 +16,8 @@ HTML、埋め込み画像 (ローカルやパブリック URL にある)、ビ�
 ### <a name="use-the-onenote-ecosystem-to-enhance-your-core-scenarios"></a>OneNote エコシステムを使用して、コア シナリオを強化する
 その他の強力な OneNote の機能を利用できます。 この Microsoft Graph の OneNote API では、イメージに対する OCR の実行、フルテキスト検索のサポート、クライアントの自動同期、イメージの処理、名刺キャプチャ、オンライン製品一覧やレシピ一覧の抽出などを実行できます。 メモや軽量メディアのクラウドでのデジタル メモリ ストアとして、またはドメイン固有データのデータ フィードとして OneNote を使用します。 
 
-### <a name="reach-millions-of-onenote-users-on-all-major-platforms"></a>すべての主要プラットフォームの数百万人に上る OneNote ユーザーに到達する
+### <a name="reach-millions-of-onenote-users-on-all-major-platforms"></a>すべての主要プラットフォームの数百万人に上る OneNote ユーザーが利用できる
+
 OneNote を使用すると、アプリの使用量が増加します。 OneNote は新しい Windows デバイスにプレインストールされており、ほとんどのプラットフォームでオンライン、および Office 365 の一部として利用可能です。 機能の豊富な OneNote 環境を利用するアプリを公開すると、広範なクロスプラットフォーム市場の潜在的な可能性にアクセスできるようになります。
 
 <!-- Might be good to show a few examples of Microsoft Graph API calls here, similar to what we have in the featured scenarios topic: https://developer.microsoft.com/en-us/graph/docs/concepts/featured_scenarios. You could have an H2 section called "What can I do with OneNote APIs in Microsoft Graph?"-->

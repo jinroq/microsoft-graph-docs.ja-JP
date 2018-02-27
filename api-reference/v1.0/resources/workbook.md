@@ -44,7 +44,7 @@ Excel スプレッドシートで、`vlookup` 関数は次の引数を取りま�
 
 =VLOOKUP(<参照値>, <参照値を含む範囲>, <戻り値を含む範囲内の列番号>, <近似一致には TRUE、完全一致には FALSE をオプションで指定>)
 
-([VLOOKUP Excel 関数](https://support.office.com/ja-JP/article/VLOOKUP-function-0bbc8083-26fe-4963-8ab8-93a18ad188a1)については、ドキュメントを参照してください。)
+([VLOOKUP Excel 関数](https://support.office.com/ja-JP/article/VLOOKUP-function-0bbc8083-26fe-4963-8ab8-93a18ad188a1)についてのドキュメントを参照してください。)
 
 次の例では、Excel REST API で `vlookup` 関数を呼び出し、これらのパラメーターを渡す方法を示しています。
 
