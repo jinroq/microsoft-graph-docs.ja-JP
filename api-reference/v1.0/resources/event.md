@@ -49,7 +49,7 @@
 |hasAttachments|Boolean|イベントに添付ファイルが含まれている場合、true に設定します。|
 |iCalUId|String|複数の予定表で 1 つのイベントのすべてのインスタンスによって共有される一意識別子。|
 |id|String| 読み取り専用。|
-|importance|String|イベントの重要度:低 = 0、標準 = 1、高 = 2。使用可能な値: `Low`、`Normal`、`High`。|
+|importance|String|イベントの重要度。 可能な値は `Low`、`Normal`、`High` です。|
 |isAllDay|Boolean|イベントが一日中続く場合に、true に設定します。|
 |isCancelled|Boolean|イベントがキャンセルされた場合に、true に設定します。|
 |isOrganizer|Boolean|メッセージの送信者が開催者でもある場合に、true に設定します。|

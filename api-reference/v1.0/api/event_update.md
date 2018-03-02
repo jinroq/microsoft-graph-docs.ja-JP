@@ -44,7 +44,7 @@ PATCH /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/
 |body|[ItemBody](../resources/itembody.md)|イベントに関連付けられたメッセージの本文。|
 |categories|String|イベントに関連付けられたカテゴリ。|
 |end|[DateTimeTimeZone](../resources/datetimetimezone.md)|イベントが終了する日時。<br/><br/>既定で、終了時刻は UTC 単位です。EndTimeZone でオプションのタイム ゾーンを指定して、そのタイム ゾーンで終了時刻を表現し、UTC からの時間オフセットを含めることができます。EndTimeZone を使用する場合、StartTimeZone の値も指定する必要があります。<br/><br/>この例では、太平洋標準時で 2015 年 2 月 25 日午後 9:34 を指定します ("2015-02-25T21:34:00-08:00")。 |
-|importance|String|イベントの重要度:低 = 0、標準 = 1、高 = 2。使用可能な値: `Low`、`Normal`、`High`。|
+|importance|String|イベントの重要度。 可能な値は `Low`、`Normal`、`High` です。|
 |isAllDay|Boolean|イベントが一日中続く場合に、true に設定します。|
 |isReminderOn|Boolean|ユーザーにイベントを通知するアラートを設定する場合は、true に設定します。|
 |location|[Location](../resources/location.md)|イベントの場所。|
