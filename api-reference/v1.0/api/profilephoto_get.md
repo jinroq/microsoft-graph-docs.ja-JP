@@ -38,7 +38,7 @@ GET /users/{id | userPrincipalName}/contactfolders/{contactFolderId}/contacts/{i
 ```
 
 ## <a name="optional-query-parameters"></a>オプションのクエリ パラメーター
-このメソッドは、応答をカスタマイズするための [OData クエリ パラメーター](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters)をサポートします。
+このメソッドは、応答をカスタマイズするための [OData クエリ パラメーター](http://developer.microsoft.com/ja-JP/graph/docs/overview/query_parameters)をサポートします。
 
 ## <a name="request-headers"></a>要求ヘッダー
 | 名前       | 型 | 説明|
@@ -113,6 +113,23 @@ Content-type: application/json
     "height": 1
 }
 ```
+## <a name="using-the-binary-data-of-the-requested-photo"></a>要求した写真のバイナリ データを使用する
+
+`/photo/$value` エンドポイントを使用してプロフィール写真のバイナリ データを取得するときに、そのデータを電子メールの添付ファイルとして追加するには、ベース 64 の文字列に変換する必要があります。 JavaScript で [Outlook メッセージ](user_post_messages.md)の `Attachments` パラメーターの値として渡すことができる配列を作成する方法の例を次に示します。
+
+      const attachments = [{
+        '@odata.type': '#microsoft.graph.fileAttachment',
+        ContentBytes: file.toString('base64'),
+        Name: 'mypic.jpg'
+      }];
+
+この例の実装については、「[Node.js 用の Microsoft Graph Connect サンプル](https://github.com/microsoftgraph/nodejs-connect-rest-sample)」を参照してください。
+
+Web ページにイメージを表示する場合は、イメージからメモリ内オブジェクトを作成し、そのオブジェクトをイメージ要素のソースにします。 この操作の JavaScript の例を次に示します。
+
+    const url = window.URL || window.webkitURL;
+    const blobUrl = url.createObjectURL(image.data);
+    document.getElementById(imageElement).setAttribute("src", blobUrl);
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
