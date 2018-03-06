@@ -37,8 +37,9 @@ GET /users/delta
 
 - 任意の GET リクエストと同様に `$select` クエリ パラメーターを使用して、最善のパフォーマンスを得るために必要なプロパティのみを指定することができます。_Id_ プロパティは常に返されます。 
 - デルタ クエリは、メッセージの `$select`、`$top`、および `$expand` をサポートします。 
-- 
-            `$orderby` に対するサポートには制限があります。サポートされている唯一の `$orderby` 式は、`$orderby=receivedDateTime+desc` です。`$orderby` 式を含めない場合、戻り値の順序は保証されません。 
+- `$filter` と `$orderby` に対するサポートには制限があります。
+  * サポートされている唯一の`$filter` 式は、一人または二人の特定ユーザーでの変更を追跡する `$filter=id+eq+{value}` あるいは `$filter=id+eq+{value1}+or+id+eq+{value2}` です。 
+  * サポートされている唯一の `$orderby` 式は、`$orderby=receivedDateTime+desc` です。 `$orderby` 式を含めない場合、戻り値の順序は保証されません。 
 - `$search` はサポートされていません。
 
 ## <a name="request-headers"></a>要求ヘッダー

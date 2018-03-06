@@ -36,7 +36,7 @@
 -   `$select` クエリ パラメーターが使用されている場合、パラメーターは、`$select` ステートメントで指定したプロパティまたはリレーションシップに関する変更のみを追跡することを、クライアントが優先していることを示します。選択されていないプロパティに変更が加えられた場合、そのプロパティが変更されたリソースは、後続の要求後のデルタ応答には表示されなくなります。
 -   `$expand` はサポートされていません。
 
-ユーザーとグループのベータ版 (プレビュー) API については、スコープフィルターで、objectID を使って 1 つまたは複数の特定のユーザーまたはグループに加えられた変更を追跡できます。たとえば、次の要求: https://graph.microsoft.com/beta/groups/delta/?$filter= id eq '477e9fc6-5de7-4406-bb2a-7e5c83c9ae5f' または id eq '004d6a07-fe70-4b92-add5-e6e37b8acd8e' では、クエリ フィルターで指定された ID と一致するグループに加えられた変更が返されます。 
+ユーザーとグループの API については、スコープフィルターで、objectID を使って 1 つまたは複数の特定のユーザーまたはグループに加えられた変更を追跡できます。たとえば、https://graph.microsoft.com/beta/groups/delta/?$filter= id eq '477e9fc6-5de7-4406-bb2a-7e5c83c9ae5f' or id eq '004d6a07-fe70-4b92-add5-e6e37b8acd8e' の要求では、クエリ フィルターで指定された ID に一致するグループに加えられた変更が返されます。 
 
 ## <a name="resource-representation-in-the-delta-query-response"></a>デルタ クエリ応答でのリソース表記
 
@@ -70,7 +70,7 @@
 | ドライブの項目\* | [driveItem](../api-reference/v1.0/resources/driveitem.md) リソースの[デルタ](../api-reference/v1.0/api/driveitem_delta.md)関数 |
 
 
-> \* OneDrive リソースの使用パターンは、他のサポートされているリソースと似ていますが、構文には若干の違いがあります。ドライブのデルタ クエリは、他のリソースの種類との一貫性を保つために将来更新されます。現在の構文の詳細については、「[ドライブの変更履歴を記録する](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/item_delta)」を参照してください。
+> \* OneDrive リソースの使用パターンは、他のサポートされているリソースと似ていますが、構文には若干の違いがあります。ドライブのデルタ クエリは、他のリソースの種類との一貫性を保つために将来更新されます。現在の構文の詳細については、「[ドライブの変更履歴を記録する](https://developer.microsoft.com/ja-JP/graph/docs/api-reference/v1.0/api/item_delta)」を参照してください。
 
 ## <a name="prerequisites"></a>前提条件
 

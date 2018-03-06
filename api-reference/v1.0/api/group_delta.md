@@ -35,7 +35,8 @@ GET /groups/delta
 
 - 任意の GET リクエストと同様に `$select` クエリ パラメーターを使用して、最善のパフォーマンスを得るために必要なプロパティのみを指定することができます。_Id_ プロパティは常に返されます。 
 - デルタ クエリは、グループの `$select`、`$top`、`$expand` をサポートします。 
-- `$orderby` に対するサポートには制限があります。サポートされている唯一の `$orderby` 式は、`$orderby=receivedDateTime+desc` です。`$orderby` 式を含めない場合、戻り値の順序は保証されません。 
+- `$filter` と `$orderby` に対するサポートには制限があります。
+  * サポートされている唯一の `$filter` 式は、特定のオブジェクトでの変更を追跡する `$filter=id+eq+{value}` です。 複数のオブジェクトをフィルター処理することができます。 たとえば、`https://graph.microsoft.com/v1.0/groups/delta/?$filter= id eq '477e9fc6-5de7-4406-bb2a-7e5c83c9ffff' or id eq '004d6a07-fe70-4b92-add5-e6e37b8affff` などです。 フィルター処理されるオブジェクトには 50 の数量制限があります。
 - `$search` はサポートされていません。
 
 ## <a name="request-headers"></a>要求ヘッダー
@@ -71,7 +72,7 @@ GET https://graph.microsoft.com/v1.0/groups/delta
 
 #### <a name="response"></a>応答
 応答の例を次に示します。
->**注:** ここに示す応答オブジェクトは、読みやすさのために短縮されている場合があります。 実際の呼び出しではすべてのプロパティが返されます。
+>**注:** 読みやすくするために、ここに示す応答オブジェクトは短くされている場合があります。実際の呼び出しからは、すべてのプロパティが返されます。
 
 <!-- {
   "blockType": "response",
