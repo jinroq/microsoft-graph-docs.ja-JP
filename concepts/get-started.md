@@ -1,12 +1,21 @@
 # <a name="getting-started-building-microsoft-graph-apps"></a>Microsoft Graph アプリの構築を開始する
 
-このセクションの記事では、Microsoft Graph に接続するアプリをさまざまな言語および開発プラットフォームで構築する方法を詳しく説明します。各記事では、まず該当するプラットフォームのサンプル スターター プロジェクトを説明し、次いでユーザー認証の機能を追加する手順を説明し、そのアカウントから Microsoft Graph でメールを送信するためのサンプル要求を作成します。完成したプロジェクトは、そのプラットフォーム用の [Microsoft Graph リポジトリの Connect サンプル](https://github.com/microsoftgraph?utf8=%E2%9C%93&query=connect)とまったく同じものです。
+このセクションの記事では、Microsoft Graph に接続するアプリをさまざまな言語および開発プラットフォームで構築する方法を詳しく説明します。 各記事で、スタート プロジェクトをはじめ、Microsoft Graph への接続の基本ステップをたどりながら解説します。
 
-好みの認証プロバイダーと開発プラットフォームについて説明した記事を選び、Microsoft Graph への接続を開始します。 詳細については、「[v2.0 エンドポイントの相違点](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-v2-compare)」を参照してください。
+ 1. アプリケーションを登録する
+ 2. アプリケーションで、ユーザーを認証し、アクセス トークンを取得する
+ 3. アプリケーションから Microsoft Graph を呼び出す
+ 4. アプリケーションを実行する
 
-選んだ開発プラットフォームについての記事に記載されている手順に従うことも、[クイック スタート](https://developer.microsoft.com/graph/quick-start)機能を試してみて、動作するソリューションをすばやく稼働させることもできます。
+ソリューションを起動し、より素早く実行したい場合は、[クイック スタート](https://developer.microsoft.com/graph/quick-start)をお試しください。
 
-完成した Connect サンプルを確認するには、GitHub の「[Microsoft Graph](https://github.com/microsoftgraph)」を参照してください。 次の表は、認証プロバイダーとプラットフォームごとにサンプルをリストにしたもので、REST または Microsoft Graph クライアント ライブラリのどちらを使用して Microsoft Graph に接続するかを示しています。
+完成した各プロジェクトは、そのプラットフォーム用の [Microsoft Graph リポジトリの Connect サンプル](https://github.com/microsoftgraph?utf8=%E2%9C%93&query=connect)とまったく同じものです。
+
+さらにコードをご覧になりますか?
+
+GitHub の [Microsoft Graph サンプル](https://github.com/microsoftgraph) をすべて調べることができます。 次の表は、このセクションで取り上げているサンプルの追加バージョンの一覧です。 両方の ADAL エンドポイント (v1.0 と v2.0) でユーザーを認証し、未加工の REST 呼び出しまたは Microsoft Graph クライアント ライブラリ (SDK) を使って Microsoft Graph に接続する方法を示します。
+
+(好みの認証プロバイダーと開発プラットフォームについて説明した記事を選び、Microsoft Graph への接続を開始します。 詳細については、「[v2.0 エンドポイントの相違点](https://docs.microsoft.com/ja-JP/azure/active-directory/develop/active-directory-v2-compare)」を参照してください。)
 
 
 |プラットフォーム |Azure AD エンドポイント |Azure AD v2.0 エンドポイント |
@@ -27,6 +36,6 @@
 
 ## <a name="see-also"></a>関連項目
 
-- [サンプルの REST 呼び出しを Graph エクスプローラーでお試しください](https://developer.microsoft.com/en-us/graph/graph-explorer)
-- [Azure AD エンドポイントのドキュメント](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-developers-guide)
-- [Azure AD v2.0 エンドポイントのドキュメント](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-appmodel-v2-overview)
+- [サンプルの REST 呼び出しを Graph エクスプローラーでお試しください](https://developer.microsoft.com/ja-JP/graph/graph-explorer)
+- [Azure AD エンドポイントのドキュメント](https://docs.microsoft.com/ja-JP/azure/active-directory/develop/active-directory-developers-guide)
+- [Azure AD v2.0 エンドポイントのドキュメント](https://docs.microsoft.com/ja-JP/azure/active-directory/develop/active-directory-appmodel-v2-overview)

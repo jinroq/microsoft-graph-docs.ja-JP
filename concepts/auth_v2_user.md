@@ -127,7 +127,7 @@ client_id=6731de76-14a6-49ae-97bc-6eba6914391e
 | スコープ |access_token が有効な Microsoft Graph のアクセス許可のスペースで区切った一覧。 |
 | expires_in |アクセス トークンの有効期間 (秒単位)。 |
 | access_token |要求されたアクセス トークン。アプリはこのトークンを、Microsoft Graph の呼び出しで使用できます。 |
-| refresh_token |OAuth 2.0 の更新トークン。アプリはこのトークンを使用して、現在のアクセス トークンの有効期限が切れた後、追加のアクセス トークンを取得します。更新トークンは有効期限が長く、長期間にわたってリソースへのアクセスを保持するために使用できます。詳細については、「[Azure Active Directory v2.0 トークン リファレンス](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-tokens)」を参照してください。 |
+| refresh_token |OAuth 2.0 の更新トークン。 アプリはこのトークンを使用して、現在のアクセス トークンの有効期限が切れた後、追加のアクセス トークンを取得します。  更新トークンは有効期限が長く、長期間にわたってリソースへのアクセスを保持するために使用できます。  詳細については、「[Azure Active Directory v2.0 トークン リファレンス](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-tokens)」を参照してください。 |
 
 ## <a name="4-use-the-access-token-to-call-microsoft-graph"></a>4.アクセス トークンを使用して、Microsoft Graph を呼び出す
 
@@ -251,5 +251,3 @@ Azure AD エンドポイントからユーザーに代わって Microsoft Graph 
 - さまざまな種類のアプリで Azure AD エンドポイントを使用する方法の詳細については、「[開発者のための Azure Active Directory](https://docs.microsoft.com/azure/active-directory/develop/active-directory-developers-guide)」の**作業開始**リンクを参照してください。このガイドには、Azure AD エンドポイントでサポートされている、さまざまな種類のアプリの概要トピック、コードのチュートリアル、およびプロトコルのドキュメントへのリンクが含まれています。
 - Azure AD エンドポイントで使用可能な Active Directory 認証ライブラリ (ADAL) とサーバー ミドルウェアの詳細については、「[Azure Active Directory 認証ライブラリ](https://docs.microsoft.com/azure/active-directory/develop/active-directory-authentication-libraries)」を参照してください。
 
-
- 
