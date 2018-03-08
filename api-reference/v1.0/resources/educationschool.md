@@ -1,14 +1,6 @@
-# <a name="educationschool-resource-type"></a>educationSchool リソース タイプ
+# <a name="educationschool-resource-type"></a>educationSchool リソースの種類
 
-学校。 現時点で、**educationSchool** リソースは [administrativeUnit](../../beta/resources/administrativeunit.md) リソースと一致していて、同じ ID を共有しています。  
-
->**注:** 現在の **administrativeUnit** リソースと **educationOrganization** リソースはベータ版です。 これらのリソースを使用する場合は、定期的に[変更ログ](../../../concepts/changelog.md)を確認してください。 Microsoft Graph API リソースが v1.0 エンドポイントにリリースされるときに、これについて変更ログに記載する予定です。 アプリで **administrativeUnit** リソースまたは **educationOrganization** リソースを使用する場合は、次のコード ブロックに示すように、ベース要求 URL を宣言する必要があります。  
-  ```JavaScript
-  var v1BaseUrl = “https://graph.microsoft.com/v1.0/education”;
-  var betaBaseUrl = “https://graph.microsoft.com/beta/education”;  // for administrativeUnit and educationOrganization
-  ```
-
-このリソースは、[educationOrganization](../../beta/resources/educationorganization.md) のサブタイプです。
+学校を表すリソースで、その学校のクラス、教師、学生を管理するために使用します。  
 
 
 ## <a name="methods"></a>メソッド
@@ -22,7 +14,6 @@
 |[Add user](../api/educationschool_post_users.md) |[educationUser](educationuser.md)| **users** ナビゲーション プロパティを投稿することで、学校の新しい **educationUser** を追加します。|
 |[List users](../api/educationschool_list_users.md) |[educationUser](educationuser.md) コレクション| **educationUser** オブジェクト コレクションを取得します。|
 |[Remove user](../api/educationschool_delete_users.md) |[educationUser](educationuser.md)| **users** ナビゲーション プロパティによって、学校から **educationUser** を削除します。|
-|[Get administrativeUnit](../api/educationschool_get_administrativeunit.md) |[administrativeUnit](../../beta/resources/administrativeunit.md)| この **educationSchool** に対応する **administrativeUnit** を取得します。|
 |[Update](../api/educationschool_update.md) | [educationSchool](educationschool.md) |**educationSchool** オブジェクトを更新します。 |
 |[Delete](../api/educationschool_delete.md) | なし |**educationSchool** オブジェクトを削除します。 |
 
