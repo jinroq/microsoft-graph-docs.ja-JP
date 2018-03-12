@@ -6,7 +6,7 @@
 ## <a name="properties"></a>プロパティ
 | プロパティ  | 型   | 説明                                                     |
 |:----------|:-------|:----------------------------------------------------------------|
-| address | [physicalAddress](physicalAddress.md) |場所の番地。 |
+| address | [physicalAddress](physicaladdress.md) |場所の番地。 |
 | displayName  | String | 場所に関連付けられた名前。                       |
 | locationEmailAddress | String | 場所の電子メール アドレス (省略可能)。              |
 
