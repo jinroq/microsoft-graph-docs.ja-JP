@@ -1,20 +1,28 @@
-# <a name="get-photo"></a><span data-ttu-id="6da7b-101">写真を取得する</span><span class="sxs-lookup"><span data-stu-id="6da7b-101">Get photo</span></span>
+# <a name="get-photo"></a><span data-ttu-id="6bbcf-101">写真を取得する</span><span class="sxs-lookup"><span data-stu-id="6bbcf-101">Get photo</span></span>
 
-<span data-ttu-id="6da7b-102">指定した [profilePhoto](../resources/profilephoto.md) またはそのメタデータ (profilePhoto プロパティ) を取得します。</span><span class="sxs-lookup"><span data-stu-id="6da7b-102">Get the specified [profilePhoto](../resources/profilephoto.md) or its metadata (profilePhoto properties).</span></span>
+<span data-ttu-id="6bbcf-102">指定した [profilePhoto](../resources/profilephoto.md) またはそのメタデータ (profilePhoto プロパティ) を取得します。</span><span class="sxs-lookup"><span data-stu-id="6bbcf-102">Get the specified [profilePhoto](../resources/profilephoto.md) or its metadata (profilePhoto properties).</span></span>
 
-<span data-ttu-id="6da7b-103">GET 操作により、Exchange Online のユーザーのメールボックス内で、指定された写真が検索されます。</span><span class="sxs-lookup"><span data-stu-id="6da7b-103">A GET operation looks for the specified photo in the user's mailbox on Exchange Online.</span></span>
+> <span data-ttu-id="6bbcf-103">**注**: バージョン 1.0 のこの操作では、ユーザーの職場用または学校用メールボックスのみがサポートされ、個人用メールボックスはサポートされていません。</span><span class="sxs-lookup"><span data-stu-id="6bbcf-103">**Note** This operation in version 1.0 supports only a user's work or school mailboxes and not personal mailboxes.</span></span>
 
-> <span data-ttu-id="6da7b-104">**注** バージョン 1.0 のこの操作では、ユーザーの職場用または学校用メールボックスのみがサポートされ、個人用メールボックスはサポートされていません。</span><span class="sxs-lookup"><span data-stu-id="6da7b-104">**Note** This operation in version 1.0 supports only a user's work or school mailboxes and not personal mailboxes.</span></span>
+<span data-ttu-id="6bbcf-104">Office 365 上でサポートされている HD Photo のサイズは次のとおりです: '48x48'、'64x64'、'96x96'、'120x120'、'240x240'、'360x360'、'432x432'、'504x504'、'648x648'。</span><span class="sxs-lookup"><span data-stu-id="6bbcf-104">The supported sizes of HD photos on Exchange Online are as follows: '48x48', '64x64', '96x96', '120x120', '240x240', '360x360','432x432', '504x504', and '648x648'.</span></span> <span data-ttu-id="6bbcf-105">写真が Azure Active Directory に格納されている場合は、サイズに関する制限はありません。</span><span class="sxs-lookup"><span data-stu-id="6bbcf-105">Photos can by any dimension if they are stored in Active Directory.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="6da7b-105">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="6da7b-105">Permissions</span></span>
-<span data-ttu-id="6da7b-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](../../../concepts/permissions_reference.md)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="6da7b-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).</span></span>
+<span data-ttu-id="6bbcf-106">使用可能な最大の写真のメタデータを取得したり、サイズを指定してその写真サイズのメタデータを取得したりできます。</span><span class="sxs-lookup"><span data-stu-id="6bbcf-106">You can get the metadata of the largest available photo, or specify a size to get the metadata for that photo size.</span></span>
+<span data-ttu-id="6bbcf-107">要求したサイズが使用できない場合でも、アップロードされて使用可能になっている、より小さいサイズを取得できます。</span><span class="sxs-lookup"><span data-stu-id="6bbcf-107">If the size you request is not available, you can still get a smaller size that the user has uploaded and made available.</span></span>
+<span data-ttu-id="6bbcf-108">たとえば、アップロードした写真が 504x504 ピクセルの場合は、648×648 を除くすべてのサイズの写真がダウンロード可能になります。</span><span class="sxs-lookup"><span data-stu-id="6bbcf-108">For example, if the user uploads a photo that is 504x504 pixels, then all but the 648x648 size of photo will be available for download.</span></span>
+<span data-ttu-id="6bbcf-109">指定したサイズがユーザーのメールボックスにも Azure Active Directory にもない場合は、'1x1' のサイズがメタデータの残りの部分とともに返されます。</span><span class="sxs-lookup"><span data-stu-id="6bbcf-109">If the specified size is not available in the user's mailbox or in Azure Active Directory, the size of '1x1' is returned with the rest of metadata.</span></span>
 
-*   <span data-ttu-id="6da7b-108">サインインしているユーザーを含むテナント内の任意のユーザーのプロファイル写真 - User.ReadBasic.All、User.Read.All、User.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="6da7b-108">Profile photo of any user in the tenant including the signed-in user - User.ReadBasic.All, User.Read.All, User.ReadWrite.All</span></span>
-*   <span data-ttu-id="6da7b-109">明確にサインインしているユーザーのプロファイル写真 - User.Read、User.ReadWrite、User.ReadBasic.All、User.Read.All、User.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="6da7b-109">Profile photo of specifically the signed-in user - User.Read, User.ReadWrite, User.ReadBasic.All, User.Read.All, User.ReadWrite.All</span></span>
-* <span data-ttu-id="6da7b-110">**グループ**のプロファイル写真 - Group.Read.All、Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="6da7b-110">Profile photo of a **group** - Group.Read.All, Group.ReadWrite.All</span></span>
-* <span data-ttu-id="6da7b-111">**連絡先**の写真 - Contacts.Read、Contacts.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="6da7b-111">Photo of a **contact** - Contacts.Read, Contacts.ReadWrite</span></span>
+## <a name="permissions"></a><span data-ttu-id="6bbcf-110">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="6bbcf-110">Permissions</span></span>
 
-## <a name="http-request-to-get-the-photo"></a><span data-ttu-id="6da7b-112">写真を取得する HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="6da7b-112">HTTP request to get the photo</span></span>
+<span data-ttu-id="6bbcf-p103">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](../../../concepts/permissions_reference.md)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="6bbcf-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).</span></span>
+
+|<span data-ttu-id="6bbcf-113">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="6bbcf-113">Permission type</span></span>      | <span data-ttu-id="6bbcf-114">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="6bbcf-114">Permissions (from least to most privileged)</span></span>              |
+|:--------------------|:---------------------------------------------------------|
+|<span data-ttu-id="6bbcf-115">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="6bbcf-115">Delegated (work or school account)</span></span> | <span data-ttu-id="6bbcf-116">**user** リソースの場合:</span><span class="sxs-lookup"><span data-stu-id="6bbcf-116">For **user** resource:</span></span><br/><span data-ttu-id="6bbcf-117">User.Read、User.ReadBasic.All、User.Read.All、User.ReadWrite、User.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="6bbcf-117">Profile photo of specifically the signed-in user - User.Read, User.ReadWrite, User.ReadBasic.All, User.Read.All, User.ReadWrite.All</span></span><br /><br /><span data-ttu-id="6bbcf-118">**group** リソースの場合:</span><span class="sxs-lookup"><span data-stu-id="6bbcf-118">For **group** resource:</span></span><br /><span data-ttu-id="6bbcf-119">Group.Read.All、Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="6bbcf-119">Group.Read.All, Group.ReadWrite.All</span></span><br /><br /><span data-ttu-id="6bbcf-120">**contact** リソースの場合:</span><span class="sxs-lookup"><span data-stu-id="6bbcf-120">For **contact** resource:</span></span><br /><span data-ttu-id="6bbcf-121">Contacts.Read、Contacts.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="6bbcf-121">Contacts.Read, Contacts.ReadWrite</span></span> |
+|<span data-ttu-id="6bbcf-122">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="6bbcf-122">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="6bbcf-123">サポートされていません</span><span class="sxs-lookup"><span data-stu-id="6bbcf-123">Not supported</span></span> |
+|<span data-ttu-id="6bbcf-124">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="6bbcf-124">Application</span></span>                        | <span data-ttu-id="6bbcf-125">**user** リソースの場合:</span><span class="sxs-lookup"><span data-stu-id="6bbcf-125">For **user** resource:</span></span><br/><span data-ttu-id="6bbcf-126">User.Read.All、User.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="6bbcf-126">User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All</span></span><br /><br /><span data-ttu-id="6bbcf-127">**group** リソースの場合:</span><span class="sxs-lookup"><span data-stu-id="6bbcf-127">For **group** resource:</span></span><br /><span data-ttu-id="6bbcf-128">Group.Read.All、Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="6bbcf-128">Group.Read.All, Group.ReadWrite.All</span></span><br /><br /><span data-ttu-id="6bbcf-129">**contact** リソースの場合:</span><span class="sxs-lookup"><span data-stu-id="6bbcf-129">For **contact** resource:</span></span><br /><span data-ttu-id="6bbcf-130">Contacts.Read、Contacts.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="6bbcf-130">Contacts.Read, Contacts.ReadWrite</span></span> |
+
+
+## <a name="http-request-to-get-the-photo"></a><span data-ttu-id="6bbcf-131">写真を取得する HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="6bbcf-131">HTTP request to get the photo</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/photo/$value
@@ -25,7 +33,7 @@ GET /users/{id | userPrincipalName}/contacts/{id}/photo/$value
 GET /me/contactfolders/{contactFolderId}/contacts/{id}/photo/$value
 GET /users/{id | userPrincipalName}/contactfolders/{contactFolderId}/contacts/{id}/photo/$value
 ```
-## <a name="http-request-to-get-the-metadata-of-the-photo"></a><span data-ttu-id="6da7b-113">写真のメタデータを取得する HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="6da7b-113">HTTP request to get the metadata of the photo</span></span>
+## <a name="http-request-to-get-the-metadata-of-the-photo"></a><span data-ttu-id="6bbcf-132">写真のメタデータを取得する HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="6bbcf-132">HTTP request to get the metadata of the photo</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/photo
@@ -37,23 +45,31 @@ GET /me/contactfolders/{contactFolderId}/contacts/{id}/photo
 GET /users/{id | userPrincipalName}/contactfolders/{contactFolderId}/contacts/{id}/photo
 ```
 
-## <a name="optional-query-parameters"></a><span data-ttu-id="6da7b-114">オプションのクエリ パラメーター</span><span class="sxs-lookup"><span data-stu-id="6da7b-114">Optional query parameters</span></span>
-<span data-ttu-id="6da7b-115">このメソッドは、応答をカスタマイズするための [OData クエリ パラメーター](http://developer.microsoft.com/ja-JP/graph/docs/overview/query_parameters)をサポートします。</span><span class="sxs-lookup"><span data-stu-id="6da7b-115">This method supports the [OData Query Parameters](http://developer.microsoft.com/ja-JP/graph/docs/overview/query_parameters) to help customize the response.</span></span>
+## <a name="parameters"></a><span data-ttu-id="6bbcf-133">Parameters</span><span class="sxs-lookup"><span data-stu-id="6bbcf-133">Parameters</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="6da7b-116">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="6da7b-116">Request headers</span></span>
-| <span data-ttu-id="6da7b-117">名前</span><span class="sxs-lookup"><span data-stu-id="6da7b-117">Name</span></span>       | <span data-ttu-id="6da7b-118">型</span><span class="sxs-lookup"><span data-stu-id="6da7b-118">Type</span></span> | <span data-ttu-id="6da7b-119">説明</span><span class="sxs-lookup"><span data-stu-id="6da7b-119">Description</span></span>|
+|<span data-ttu-id="6bbcf-134">**パラメーター**</span><span class="sxs-lookup"><span data-stu-id="6bbcf-134">**Parameter**</span></span>|<span data-ttu-id="6bbcf-135">**型**</span><span class="sxs-lookup"><span data-stu-id="6bbcf-135">**Type**</span></span>|<span data-ttu-id="6bbcf-136">**説明**</span><span class="sxs-lookup"><span data-stu-id="6bbcf-136">**Description**</span></span>|
+|:-----|:-----|:-----|
+|<span data-ttu-id="6bbcf-137">_URL パラメーター_</span><span class="sxs-lookup"><span data-stu-id="6bbcf-137">_URL parameters_</span></span>|
+|<span data-ttu-id="6bbcf-138">size</span><span class="sxs-lookup"><span data-stu-id="6bbcf-138">size</span></span>  |<span data-ttu-id="6bbcf-139">String</span><span class="sxs-lookup"><span data-stu-id="6bbcf-139">String</span></span>  | <span data-ttu-id="6bbcf-140">写真のサイズ。</span><span class="sxs-lookup"><span data-stu-id="6bbcf-140">A photo size.</span></span> <span data-ttu-id="6bbcf-141">Office 365 上でサポートされている HD Photo のサイズは次のとおりです: '48x48'、'64x64'、'96x96'、'120x120'、'240x240'、</span><span class="sxs-lookup"><span data-stu-id="6bbcf-141">The supported sizes of HD photos on Exchange Online are as follows: '48x48', '64x64', '96x96', '120x120', '240x240', '360x360','432x432', '504x504', and '648x648'.</span></span> 
+<span data-ttu-id="6bbcf-142">'360 360 x'、'432 x 432'、'504 504 x'、および '648x648'。</span><span class="sxs-lookup"><span data-stu-id="6bbcf-142">'360x360','432x432', '504x504', and '648x648'.</span></span> <span data-ttu-id="6bbcf-143">写真が Azure Active Directory に格納されている場合は、サイズに関する制限はありません。</span><span class="sxs-lookup"><span data-stu-id="6bbcf-143">Photos can by any dimension if they are stored in Active Directory.</span></span> |
+
+## <a name="optional-query-parameters"></a><span data-ttu-id="6bbcf-144">オプションのクエリ パラメーター</span><span class="sxs-lookup"><span data-stu-id="6bbcf-144">Optional query parameters</span></span>
+<span data-ttu-id="6bbcf-145">このメソッドは、応答をカスタマイズするための [OData クエリ パラメーター](http://developer.microsoft.com/ja-JP/graph/docs/overview/query_parameters)をサポートします。</span><span class="sxs-lookup"><span data-stu-id="6bbcf-145">This method supports the [OData Query Parameters](http://developer.microsoft.com/ja-JP/graph/docs/overview/query_parameters) to help customize the response.</span></span>
+
+## <a name="request-headers"></a><span data-ttu-id="6bbcf-146">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="6bbcf-146">Request headers</span></span>
+| <span data-ttu-id="6bbcf-147">名前</span><span class="sxs-lookup"><span data-stu-id="6bbcf-147">Name</span></span>       | <span data-ttu-id="6bbcf-148">型</span><span class="sxs-lookup"><span data-stu-id="6bbcf-148">Type</span></span> | <span data-ttu-id="6bbcf-149">説明</span><span class="sxs-lookup"><span data-stu-id="6bbcf-149">Description</span></span>|
 |:-----------|:------|:----------|
-| <span data-ttu-id="6da7b-120">Authorization</span><span class="sxs-lookup"><span data-stu-id="6da7b-120">Authorization</span></span>  | <span data-ttu-id="6da7b-121">string</span><span class="sxs-lookup"><span data-stu-id="6da7b-121">string</span></span>  | <span data-ttu-id="6da7b-p102">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="6da7b-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="6bbcf-150">Authorization</span><span class="sxs-lookup"><span data-stu-id="6bbcf-150">Authorization</span></span>  | <span data-ttu-id="6bbcf-151">string</span><span class="sxs-lookup"><span data-stu-id="6bbcf-151">string</span></span>  | <span data-ttu-id="6bbcf-p106">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="6bbcf-p106">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="6da7b-124">要求本文</span><span class="sxs-lookup"><span data-stu-id="6da7b-124">Request body</span></span>
-<span data-ttu-id="6da7b-125">このメソッドには、要求本文を指定しません。</span><span class="sxs-lookup"><span data-stu-id="6da7b-125">Do not supply a request body for this method.</span></span>
-## <a name="response-for-getting-the-photo"></a><span data-ttu-id="6da7b-126">写真の取得に対する応答</span><span class="sxs-lookup"><span data-stu-id="6da7b-126">Response for getting the photo</span></span>
-<span data-ttu-id="6da7b-p103">成功した場合、このメソッドは `200 OK` 応答コードと、要求した写真のバイナリ データを応答本文で返します。写真が存在しない場合、この操作により `404 Not Found` が返されます。</span><span class="sxs-lookup"><span data-stu-id="6da7b-p103">If successful, this method returns a `200 OK` response code and binary data of the requested photo.  If no photo exists, the operation returns `404 Not Found`.</span></span>
-## <a name="response-for-getting-the-metadata-of-the-photo"></a><span data-ttu-id="6da7b-129">写真のメタデータの取得に対する応答</span><span class="sxs-lookup"><span data-stu-id="6da7b-129">Response for getting the metadata of the photo</span></span>
-<span data-ttu-id="6da7b-130">成功した場合、このメソッドは `200 OK` 応答コードと、応答本文で [profilePhoto](../resources/profilePhoto.md) オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="6da7b-130">If successful, this method returns a `200 OK` response code and [profilePhoto](../resources/profilePhoto.md) object in the response body.</span></span>
-## <a name="example"></a><span data-ttu-id="6da7b-131">例</span><span class="sxs-lookup"><span data-stu-id="6da7b-131">Example</span></span>
-##### <a name="request-1"></a><span data-ttu-id="6da7b-132">要求 1</span><span class="sxs-lookup"><span data-stu-id="6da7b-132">Request 1</span></span>
-<span data-ttu-id="6da7b-133">この要求では、サインインしているユーザーの写真を利用可能な最大のサイズで取得します。</span><span class="sxs-lookup"><span data-stu-id="6da7b-133">This request gets the photo for the signed-in user, in the largest available size.</span></span>
+## <a name="request-body"></a><span data-ttu-id="6bbcf-154">要求本文</span><span class="sxs-lookup"><span data-stu-id="6bbcf-154">Request body</span></span>
+<span data-ttu-id="6bbcf-155">このメソッドには、要求本文を指定しません。</span><span class="sxs-lookup"><span data-stu-id="6bbcf-155">Do not supply a request body for this method.</span></span>
+## <a name="response-for-getting-the-photo"></a><span data-ttu-id="6bbcf-156">写真の取得に対する応答</span><span class="sxs-lookup"><span data-stu-id="6bbcf-156">Response for getting the photo</span></span>
+<span data-ttu-id="6bbcf-p107">成功した場合、このメソッドは `200 OK` 応答コードと、要求した写真のバイナリ データを応答本文で返します。写真が存在しない場合、この操作により `404 Not Found` が返されます。</span><span class="sxs-lookup"><span data-stu-id="6bbcf-p107">If successful, this method returns a `200 OK` response code and binary data of the requested photo.  If no photo exists, the operation returns `404 Not Found`.</span></span>
+## <a name="response-for-getting-the-metadata-of-the-photo"></a><span data-ttu-id="6bbcf-159">写真のメタデータの取得に対する応答</span><span class="sxs-lookup"><span data-stu-id="6bbcf-159">Response for getting the metadata of the photo</span></span>
+<span data-ttu-id="6bbcf-160">成功した場合、このメソッドは `200 OK` 応答コードと、応答本文で [profilePhoto](../resources/profilePhoto.md) オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="6bbcf-160">If successful, this method returns a `200 OK` response code and [profilePhoto](../resources/profilePhoto.md) object in the response body.</span></span>
+## <a name="example"></a><span data-ttu-id="6bbcf-161">例</span><span class="sxs-lookup"><span data-stu-id="6bbcf-161">Example</span></span>
+##### <a name="request-1"></a><span data-ttu-id="6bbcf-162">要求 1</span><span class="sxs-lookup"><span data-stu-id="6bbcf-162">Request 1</span></span>
+<span data-ttu-id="6bbcf-163">この要求では、サインインしているユーザーの写真を利用可能な最大のサイズで取得します。</span><span class="sxs-lookup"><span data-stu-id="6bbcf-163">This request gets the photo for the signed-in user, in the largest available size.</span></span>
 <!-- {
   "blockType": "ignored"
 }-->
@@ -61,11 +77,25 @@ GET /users/{id | userPrincipalName}/contactfolders/{contactFolderId}/contacts/{i
 GET https://graph.microsoft.com/v1.0/me/photo/$value
 ```
 
-##### <a name="response-1"></a><span data-ttu-id="6da7b-134">応答 1</span><span class="sxs-lookup"><span data-stu-id="6da7b-134">Response 1</span></span>
-<span data-ttu-id="6da7b-p104">要求した写真のバイナリ データが含まれています。HTTP 応答コードは 200 です。</span><span class="sxs-lookup"><span data-stu-id="6da7b-p104">Contains the binary data of the requested photo. The HTTP response code is 200.</span></span>
+##### <a name="response-1"></a><span data-ttu-id="6bbcf-164">応答 1</span><span class="sxs-lookup"><span data-stu-id="6bbcf-164">Response 1</span></span>
+<span data-ttu-id="6bbcf-p108">要求した写真のバイナリ データが含まれています。HTTP 応答コードは 200 です。</span><span class="sxs-lookup"><span data-stu-id="6bbcf-p108">Contains the binary data of the requested photo. The HTTP response code is 200.</span></span>
 
-##### <a name="request-2"></a><span data-ttu-id="6da7b-137">要求 2</span><span class="sxs-lookup"><span data-stu-id="6da7b-137">Request 2</span></span>
-<span data-ttu-id="6da7b-138">この要求は、サインインしているユーザーのユーザー写真のメタデータを取得します。</span><span class="sxs-lookup"><span data-stu-id="6da7b-138">This request gets the metadata of the user photo of the signed-in user.</span></span>
+##### <a name="request-2"></a><span data-ttu-id="6bbcf-167">要求 2</span><span class="sxs-lookup"><span data-stu-id="6bbcf-167">Request 2</span></span>
+<span data-ttu-id="6bbcf-168">この要求は、サインインしているユーザーの 48x48 の写真を取得します。</span><span class="sxs-lookup"><span data-stu-id="6bbcf-168">This request gets the 48x48 photo for the signed-in user.</span></span>
+
+<!-- {
+  "blockType": "ignored"
+}-->
+```http
+GET https://graph.microsoft.com/v1.0/me/photos/48x48/$value
+Content-Type: image/jpg
+```
+
+##### <a name="response-2"></a><span data-ttu-id="6bbcf-169">応答 2</span><span class="sxs-lookup"><span data-stu-id="6bbcf-169">Response 2</span></span>
+<span data-ttu-id="6bbcf-p109">要求した 48x48 の写真のバイナリ データが含まれています。HTTP 応答コードは 200 です。</span><span class="sxs-lookup"><span data-stu-id="6bbcf-p109">Contains the binary data of the requested 48x48 photo. The HTTP response code is 200.</span></span>
+
+##### <a name="request-3"></a><span data-ttu-id="6bbcf-172">要求 3</span><span class="sxs-lookup"><span data-stu-id="6bbcf-172">Request 3</span></span>
+<span data-ttu-id="6bbcf-173">この要求は、サインインしているユーザーのユーザー写真のメタデータを取得します。</span><span class="sxs-lookup"><span data-stu-id="6bbcf-173">This request gets the metadata of the user photo of the signed-in user.</span></span>
 <!-- {
   "blockType": "ignored"
 }-->
@@ -73,9 +103,9 @@ GET https://graph.microsoft.com/v1.0/me/photo/$value
 GET https://graph.microsoft.com/v1.0/me/photo
 ```
 
-##### <a name="response-2"></a><span data-ttu-id="6da7b-139">応答 2</span><span class="sxs-lookup"><span data-stu-id="6da7b-139">Response 2</span></span>
+##### <a name="response-3"></a><span data-ttu-id="6bbcf-174">応答 3</span><span class="sxs-lookup"><span data-stu-id="6bbcf-174">Response 3</span></span>
 
-<span data-ttu-id="6da7b-p105">次の応答データは、写真のメタデータを示しています。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。</span><span class="sxs-lookup"><span data-stu-id="6da7b-p105">The following response data shows the photo metadata. Note: The response object shown here may be truncated for brevity.</span></span>
+<span data-ttu-id="6bbcf-p110">次の応答データは、写真のメタデータを示しています。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。</span><span class="sxs-lookup"><span data-stu-id="6bbcf-p110">The following response data shows the photo metadata. Note: The response object shown here may be truncated for brevity.</span></span>
 <!-- {
   "blockType": "ignored"
 }-->
@@ -94,7 +124,7 @@ Content-type: application/json
 }
 ```
 
-<span data-ttu-id="6da7b-p106">次の応答データは、そのユーザーの写真がまだアップロードされていないときの応答の内容を示しています。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。</span><span class="sxs-lookup"><span data-stu-id="6da7b-p106">The following response data shows the contents of a response when a photo hasn't already been uploaded for the user. Note: The response object shown here may be truncated for brevity.</span></span>
+<span data-ttu-id="6bbcf-p111">次の応答データは、そのユーザーの写真がまだアップロードされていないときの応答の内容を示しています。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。</span><span class="sxs-lookup"><span data-stu-id="6bbcf-p111">The following response data shows the contents of a response when a photo hasn't already been uploaded for the user. Note: The response object shown here may be truncated for brevity.</span></span>
 
 <!-- {
   "blockType": "ignored"
@@ -113,9 +143,9 @@ Content-type: application/json
     "height": 1
 }
 ```
-## <a name="using-the-binary-data-of-the-requested-photo"></a><span data-ttu-id="6da7b-144">要求した写真のバイナリ データを使用する</span><span class="sxs-lookup"><span data-stu-id="6da7b-144">Contains the binary data of the requested photo.</span></span>
+## <a name="using-the-binary-data-of-the-requested-photo"></a><span data-ttu-id="6bbcf-179">要求した写真のバイナリ データを使用する</span><span class="sxs-lookup"><span data-stu-id="6bbcf-179">Using the binary data of the requested photo</span></span>
 
-<span data-ttu-id="6da7b-145">`/photo/$value` エンドポイントを使用してプロフィール写真のバイナリ データを取得するときに、そのデータを電子メールの添付ファイルとして追加するには、ベース 64 の文字列に変換する必要があります。</span><span class="sxs-lookup"><span data-stu-id="6da7b-145">When you use the `/photo/$value` endpoint to get the binary data for a profile photo, you'll need to convert the data into a base-64 string in order to add it as an email attachment.</span></span> <span data-ttu-id="6da7b-146">JavaScript で [Outlook メッセージ](user_post_messages.md)の `Attachments` パラメーターの値として渡すことができる配列を作成する方法の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="6da7b-146">Here is an example in JavaScript of how to create an array that you can pass as the value of the `Attachments` parameter of an [Outlook Message](user_post_messages.md).</span></span>
+<span data-ttu-id="6bbcf-180">`/photo/$value` エンドポイントを使用してプロフィール写真のバイナリ データを取得するときに、そのデータを電子メールの添付ファイルとして追加するには、ベース 64 の文字列に変換する必要があります。</span><span class="sxs-lookup"><span data-stu-id="6bbcf-180">When you use the `/photo/$value` endpoint to get the binary data for a profile photo, you'll need to convert the data into a base-64 string in order to add it as an email attachment.</span></span> <span data-ttu-id="6bbcf-181">JavaScript で [Outlook メッセージ](user_post_messages.md)の `Attachments` パラメーターの値として渡すことができる配列を作成する方法の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="6bbcf-181">Here is an example in JavaScript of how to create an array that you can pass as the value of the `Attachments` parameter of an [Outlook Message](user_post_messages.md).</span></span>
 
       const attachments = [{
         '@odata.type': '#microsoft.graph.fileAttachment',
@@ -123,9 +153,9 @@ Content-type: application/json
         Name: 'mypic.jpg'
       }];
 
-<span data-ttu-id="6da7b-147">この例の実装については、「[Node.js 用の Microsoft Graph Connect サンプル](https://github.com/microsoftgraph/nodejs-connect-rest-sample)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="6da7b-147">See the [Microsoft Graph Connect Sample for Node.js](https://github.com/microsoftgraph/nodejs-connect-rest-sample) for an implementation of this example.</span></span>
+<span data-ttu-id="6bbcf-182">この例の実装については、「[Node.js 用の Microsoft Graph Connect サンプル](https://github.com/microsoftgraph/nodejs-connect-rest-sample)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="6bbcf-182">See the [Microsoft Graph Connect Sample for Node.js](https://github.com/microsoftgraph/nodejs-connect-rest-sample) for an implementation of this example.</span></span>
 
-<span data-ttu-id="6da7b-148">Web ページにイメージを表示する場合は、イメージからメモリ内オブジェクトを作成し、そのオブジェクトをイメージ要素のソースにします。</span><span class="sxs-lookup"><span data-stu-id="6da7b-148">If you want to display the image on a web page, create an in-memory object from the image and make that object the source of an image element.</span></span> <span data-ttu-id="6da7b-149">この操作の JavaScript の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="6da7b-149">Here is an example in JavaScript of this operation.</span></span>
+<span data-ttu-id="6bbcf-183">Web ページにイメージを表示する場合は、イメージからメモリ内オブジェクトを作成し、そのオブジェクトをイメージ要素のソースにします。</span><span class="sxs-lookup"><span data-stu-id="6bbcf-183">If you want to display the image on a web page, create an in-memory object from the image and make that object the source of an image element.</span></span> <span data-ttu-id="6bbcf-184">この操作の JavaScript の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="6bbcf-184">Here is an example in JavaScript of this operation.</span></span>
 
     const url = window.URL || window.webkitURL;
     const blobUrl = url.createObjectURL(image.data);

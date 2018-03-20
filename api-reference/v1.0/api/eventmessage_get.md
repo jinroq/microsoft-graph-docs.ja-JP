@@ -1,19 +1,19 @@
-# <a name="get-eventmessage"></a><span data-ttu-id="1270e-101">eventMessage の取得</span><span class="sxs-lookup"><span data-stu-id="1270e-101">Get eventMessage</span></span>
+# <a name="get-eventmessage"></a><span data-ttu-id="9845e-101">eventMessage の取得</span><span class="sxs-lookup"><span data-stu-id="9845e-101">Get eventMessage</span></span>
 
-<span data-ttu-id="1270e-102">[eventMessage](../resources/eventmessage.md) オブジェクトのプロパティとリレーションシップを取得します。</span><span class="sxs-lookup"><span data-stu-id="1270e-102">Retrieve the properties and relationships of [eventMessage](../resources/eventmessage.md) object.</span></span> <span data-ttu-id="1270e-103">$expand パラメーターを **event** ナビゲーション プロパティに適用して、出席者の予定表で関連付けられている[イベント](../resources/event.md)を取得します。</span><span class="sxs-lookup"><span data-stu-id="1270e-103">Apply the $expand parameter on the **event** navigation property to get the associated [event](../resources/event.md) in an attendee's calendar.</span></span>
+<span data-ttu-id="9845e-102">[eventMessage](../resources/eventmessage.md) オブジェクトのプロパティとリレーションシップを取得します。</span><span class="sxs-lookup"><span data-stu-id="9845e-102">Get the properties and relationships of the [eventMessage](../resources/eventmessage.md) object.</span></span> <span data-ttu-id="9845e-103">$expand パラメーターを **event** ナビゲーション プロパティに適用して、出席者の予定表で関連付けられている[イベント](../resources/event.md)を取得します。</span><span class="sxs-lookup"><span data-stu-id="9845e-103">Apply the $expand parameter on the **event** navigation property to get the associated [event](../resources/event.md) in an attendee's calendar.</span></span>
 
-<span data-ttu-id="1270e-104">現在、この操作によって返されるイベント メッセージの本文は HTML 形式のみです。</span><span class="sxs-lookup"><span data-stu-id="1270e-104">Currently, this operation returns event message bodies in only HTML format.</span></span>
+<span data-ttu-id="9845e-104">現在、この操作によって返されるイベント メッセージの本文は HTML 形式のみです。</span><span class="sxs-lookup"><span data-stu-id="9845e-104">Currently, this operation returns event message bodies in only HTML format.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="1270e-105">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="1270e-105">Permissions</span></span>
-<span data-ttu-id="1270e-p102">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](../../../concepts/permissions_reference.md)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="1270e-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).</span></span>
+## <a name="permissions"></a><span data-ttu-id="9845e-105">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="9845e-105">Permissions</span></span>
+<span data-ttu-id="9845e-p102">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](../../../concepts/permissions_reference.md)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="9845e-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).</span></span>
 
-|<span data-ttu-id="1270e-108">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="1270e-108">Permission type</span></span>      | <span data-ttu-id="1270e-109">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="1270e-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="9845e-108">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="9845e-108">Permission type</span></span>      | <span data-ttu-id="9845e-109">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="9845e-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="1270e-110">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="1270e-110">Delegated (work or school account)</span></span> | <span data-ttu-id="1270e-111">Mail.Read</span><span class="sxs-lookup"><span data-stu-id="1270e-111">Mail.Read</span></span>    |
-|<span data-ttu-id="1270e-112">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="1270e-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="1270e-113">Mail.Read</span><span class="sxs-lookup"><span data-stu-id="1270e-113">Mail.Read</span></span>    |
-|<span data-ttu-id="1270e-114">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="1270e-114">Application</span></span> | <span data-ttu-id="1270e-115">Mail.Read</span><span class="sxs-lookup"><span data-stu-id="1270e-115">Mail.Read</span></span> |
+|<span data-ttu-id="9845e-110">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="9845e-110">Delegated (work or school account)</span></span> | <span data-ttu-id="9845e-111">Mail.Read</span><span class="sxs-lookup"><span data-stu-id="9845e-111">Mail.Read</span></span>    |
+|<span data-ttu-id="9845e-112">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="9845e-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="9845e-113">Mail.Read</span><span class="sxs-lookup"><span data-stu-id="9845e-113">Mail.Read</span></span>    |
+|<span data-ttu-id="9845e-114">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="9845e-114">Application</span></span> | <span data-ttu-id="9845e-115">Mail.Read</span><span class="sxs-lookup"><span data-stu-id="9845e-115">Mail.Read</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="1270e-116">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="1270e-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="9845e-116">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="9845e-116">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/messages/{id}
@@ -22,22 +22,22 @@ GET /users/{id | userPrincipalName}/messages/{id}
 GET /me/mailFolders/{id}/messages/{id}
 GET /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}
 ```
-## <a name="optional-query-parameters"></a><span data-ttu-id="1270e-117">オプションのクエリ パラメーター</span><span class="sxs-lookup"><span data-stu-id="1270e-117">Optional query parameters</span></span>
-<span data-ttu-id="1270e-118">このメソッドは、応答をカスタマイズするための [OData クエリ パラメーター]((http://developer.microsoft.com/ja-JP/graph/docs/overview/query_parameters))をサポートします。</span><span class="sxs-lookup"><span data-stu-id="1270e-118">This method supports the [OData Query Parameters]((http://developer.microsoft.com/ja-JP/graph/docs/overview/query_parameters)) to help customize the response.</span></span>
-## <a name="request-headers"></a><span data-ttu-id="1270e-119">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="1270e-119">Request headers</span></span>
-| <span data-ttu-id="1270e-120">名前</span><span class="sxs-lookup"><span data-stu-id="1270e-120">Name</span></span>       | <span data-ttu-id="1270e-121">型</span><span class="sxs-lookup"><span data-stu-id="1270e-121">Type</span></span> | <span data-ttu-id="1270e-122">説明</span><span class="sxs-lookup"><span data-stu-id="1270e-122">Description</span></span>|
+## <a name="optional-query-parameters"></a><span data-ttu-id="9845e-117">オプションのクエリ パラメーター</span><span class="sxs-lookup"><span data-stu-id="9845e-117">Optional query parameters</span></span>
+<span data-ttu-id="9845e-118">このメソッドは、応答をカスタマイズするための [OData クエリ パラメーター](http://developer.microsoft.com/ja-JP/graph/docs/overview/query_parameters)をサポートします。</span><span class="sxs-lookup"><span data-stu-id="9845e-118">This method supports the [OData Query Parameters](http://developer.microsoft.com/ja-JP/graph/docs/overview/query_parameters) to help customize the response.</span></span>
+## <a name="request-headers"></a><span data-ttu-id="9845e-119">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="9845e-119">Request headers</span></span>
+| <span data-ttu-id="9845e-120">名前</span><span class="sxs-lookup"><span data-stu-id="9845e-120">Name</span></span>       | <span data-ttu-id="9845e-121">型</span><span class="sxs-lookup"><span data-stu-id="9845e-121">Type</span></span> | <span data-ttu-id="9845e-122">説明</span><span class="sxs-lookup"><span data-stu-id="9845e-122">Description</span></span>|
 |:-----------|:------|:----------|
-| <span data-ttu-id="1270e-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="1270e-123">Authorization</span></span>  | <span data-ttu-id="1270e-124">string</span><span class="sxs-lookup"><span data-stu-id="1270e-124">string</span></span>  | <span data-ttu-id="1270e-p103">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="1270e-p103">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="9845e-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="9845e-123">Authorization</span></span>  | <span data-ttu-id="9845e-124">string</span><span class="sxs-lookup"><span data-stu-id="9845e-124">string</span></span>  | <span data-ttu-id="9845e-p103">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="9845e-p103">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="1270e-127">要求本文</span><span class="sxs-lookup"><span data-stu-id="1270e-127">Request body</span></span>
-<span data-ttu-id="1270e-128">このメソッドには、要求本文を指定しません。</span><span class="sxs-lookup"><span data-stu-id="1270e-128">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="9845e-127">要求本文</span><span class="sxs-lookup"><span data-stu-id="9845e-127">Request body</span></span>
+<span data-ttu-id="9845e-128">このメソッドには、要求本文を指定しません。</span><span class="sxs-lookup"><span data-stu-id="9845e-128">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="1270e-129">応答</span><span class="sxs-lookup"><span data-stu-id="1270e-129">Response</span></span>
+## <a name="response"></a><span data-ttu-id="9845e-129">応答</span><span class="sxs-lookup"><span data-stu-id="9845e-129">Response</span></span>
 
-<span data-ttu-id="1270e-130">成功した場合、このメソッドは `200 OK` 応答コードと、応答本文で [eventMessage](../resources/eventmessage.md) オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="1270e-130">If successful, this method returns a `200 OK` response code and [eventMessage](../resources/eventmessage.md) object in the response body.</span></span>
-## <a name="example"></a><span data-ttu-id="1270e-131">例</span><span class="sxs-lookup"><span data-stu-id="1270e-131">Example</span></span>
-##### <a name="request-1"></a><span data-ttu-id="1270e-132">要求 1</span><span class="sxs-lookup"><span data-stu-id="1270e-132">Request 1</span></span>
-<span data-ttu-id="1270e-133">最初の例では、イベント メッセージ ID に基づいてイベント メッセージのプロパティを取得する方法を示します。</span><span class="sxs-lookup"><span data-stu-id="1270e-133">The first example shows how to get the properties of an event message based on the event message ID.</span></span>
+<span data-ttu-id="9845e-130">成功した場合、このメソッドは `200 OK` 応答コードと、応答本文で [eventMessage](../resources/eventmessage.md) オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="9845e-130">If successful, this method returns a `200 OK` response code and [eventMessage](../resources/eventmessage.md) object in the response body.</span></span>
+## <a name="example"></a><span data-ttu-id="9845e-131">例</span><span class="sxs-lookup"><span data-stu-id="9845e-131">Example</span></span>
+##### <a name="request-1"></a><span data-ttu-id="9845e-132">要求 1</span><span class="sxs-lookup"><span data-stu-id="9845e-132">Request 1</span></span>
+<span data-ttu-id="9845e-133">最初の例では、イベント メッセージ ID に基づいてイベント メッセージのプロパティを取得する方法を示します。</span><span class="sxs-lookup"><span data-stu-id="9845e-133">The first example shows how to get the properties of an event message based on the event message ID.</span></span>
 <!-- {
   "blockType": "request",
   "name": "get_eventmessage"
@@ -45,8 +45,8 @@ GET /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}
 ```http
 GET https://graph.microsoft.com/v1.0/me/messages('AAMkADYAAAImV_lAAA=')
 ```
-##### <a name="response-1"></a><span data-ttu-id="1270e-134">応答 1</span><span class="sxs-lookup"><span data-stu-id="1270e-134">Response 1</span></span>
-<span data-ttu-id="1270e-p104">以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。</span><span class="sxs-lookup"><span data-stu-id="1270e-p104">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response-1"></a><span data-ttu-id="9845e-134">応答 1</span><span class="sxs-lookup"><span data-stu-id="9845e-134">Response 1</span></span>
+<span data-ttu-id="9845e-p104">以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。</span><span class="sxs-lookup"><span data-stu-id="9845e-p104">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "name": "get_eventmessage",
@@ -120,8 +120,8 @@ Content-type: application/json
 }
 ```
 
-##### <a name="request-2"></a><span data-ttu-id="1270e-138">要求 2</span><span class="sxs-lookup"><span data-stu-id="1270e-138">Request 2</span></span>
-<span data-ttu-id="1270e-139">2 番目の例では、イベント メッセージに関連付けられているイベントを取得する方法を示します。</span><span class="sxs-lookup"><span data-stu-id="1270e-139">The second example shows how to get the event associated with an event message.</span></span> <span data-ttu-id="1270e-140">イベント メッセージ ID を使用してイベントのメッセージを取得し、イベント メッセージ上に明示的にキャストを提供してその **event** ナビゲーション プロパティにアクセスし、$expand パラメーターを適用してそのイベントのプロパティを取得します。</span><span class="sxs-lookup"><span data-stu-id="1270e-140">It uses the event message ID to get the event message, explicitly provides a cast on the event message to access its **event** navigation property, and apply an $expand parameter to get the the properties of the event.</span></span>
+##### <a name="request-2"></a><span data-ttu-id="9845e-138">要求 2</span><span class="sxs-lookup"><span data-stu-id="9845e-138">Request 2</span></span>
+<span data-ttu-id="9845e-139">2 番目の例では、イベント メッセージに関連付けられているイベントを取得する方法を示します。</span><span class="sxs-lookup"><span data-stu-id="9845e-139">The second example shows how to get the event associated with an event message.</span></span> <span data-ttu-id="9845e-140">イベント メッセージ ID を使用してイベントのメッセージを取得し、イベント メッセージ上に明示的にキャストを提供してその **event** ナビゲーション プロパティにアクセスし、$expand パラメーターを適用してそのイベントのプロパティを取得します。</span><span class="sxs-lookup"><span data-stu-id="9845e-140">It uses the event message ID to get the event message, explicitly provides a cast on the event message to access its **event** navigation property, and apply an $expand parameter to get the the properties of the event.</span></span>
 <!-- {
   "blockType": "request",
   "name": "get_event_based_on_eventmessage"
@@ -129,8 +129,8 @@ Content-type: application/json
 ```http
 GET https://graph.microsoft.com/v1.0/me/messages('AAMkADYAAAImV_jAAA=')?$expand=microsoft.graph.eventMessage/event
 ```
-##### <a name="response-2"></a><span data-ttu-id="1270e-141">応答 2</span><span class="sxs-lookup"><span data-stu-id="1270e-141">Response 2</span></span>
-<span data-ttu-id="1270e-142">以下は、応答の例です。</span><span class="sxs-lookup"><span data-stu-id="1270e-142">Here is an example of the response.</span></span> <span data-ttu-id="1270e-143">関連付けられているイベントのプロパティは、応答で返されます。</span><span class="sxs-lookup"><span data-stu-id="1270e-143">The properties of the associated event are returned in the response.</span></span> <span data-ttu-id="1270e-144">注: 簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。</span><span class="sxs-lookup"><span data-stu-id="1270e-144">Note: The response object shown here may be truncated for brevity.</span></span> <span data-ttu-id="1270e-145">実際の呼び出しではすべてのプロパティが返されます。</span><span class="sxs-lookup"><span data-stu-id="1270e-145">All of the properties will be returned from an actual call.</span></span>
+##### <a name="response-2"></a><span data-ttu-id="9845e-141">応答 2</span><span class="sxs-lookup"><span data-stu-id="9845e-141">Response 2</span></span>
+<span data-ttu-id="9845e-142">以下は、応答の例です。</span><span class="sxs-lookup"><span data-stu-id="9845e-142">Here is an example of the response.</span></span> <span data-ttu-id="9845e-143">関連付けられているイベントのプロパティは、応答で返されます。</span><span class="sxs-lookup"><span data-stu-id="9845e-143">The properties of the associated event are returned in the response.</span></span> <span data-ttu-id="9845e-144">注: 簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。</span><span class="sxs-lookup"><span data-stu-id="9845e-144">Note: The response object shown here may be truncated for brevity.</span></span> <span data-ttu-id="9845e-145">実際の呼び出しではすべてのプロパティが返されます。</span><span class="sxs-lookup"><span data-stu-id="9845e-145">All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "name": "get_event_based_on_eventmessage",
