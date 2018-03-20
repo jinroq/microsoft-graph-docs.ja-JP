@@ -1,8 +1,8 @@
-# <a name="assign-action"></a>assign アクション
+# <a name="update-deviceappmanagement"></a>deviceAppManagement の更新
 
 > **注:**Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
 
-まだ文書化されていません
+[deviceAppManagement](../resources/intune_books_deviceappmanagement.md) オブジェクトのプロパティを更新します。
 ## <a name="prerequisites"></a>前提条件
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](../../../concepts/permissions_reference.md)」を参照してください。
 
@@ -18,9 +18,7 @@
 }
 -->
 ``` http
-POST /deviceAppManagement/managedAppPolicies/{managedAppPolicyId}/assign
-POST /deviceAppManagement/managedAppRegistrations/{managedAppRegistrationId}/appliedPolicies/{managedAppPolicyId}/assign
-POST /deviceAppManagement/managedAppRegistrations/{managedAppRegistrationId}/intendedPolicies/{managedAppPolicyId}/assign
+PATCH /deviceAppManagement
 ```
 
 ## <a name="request-headers"></a>要求ヘッダー
@@ -30,45 +28,41 @@ POST /deviceAppManagement/managedAppRegistrations/{managedAppRegistrationId}/int
 |Accept|application/json|
 
 ## <a name="request-body"></a>要求本文
-要求本文で、パラメーターの JSON 表記を指定します。
+要求本文で、[deviceAppManagement](../resources/intune_books_deviceappmanagement.md) オブジェクトの JSON 表記を指定します。
 
-次の表に、このアクションで使用できるパラメーターを示します。
+次の表に、[deviceAppManagement](../resources/intune_books_deviceappmanagement.md) の作成時に必要なプロパティを示します。
 
 |プロパティ|型|説明|
 |:---|:---|:---|
-|assignments|[targetedManagedAppPolicyAssignment](../resources/intune_mam_targetedmanagedapppolicyassignment.md) コレクション|まだ文書化されていません|
+|id|String|エンティティのキー。|
 
 
 
 ## <a name="response"></a>応答
-成功した場合、このアクションは `204 No Content` 応答コードを返します。
+成功した場合、このメソッドは `200 OK` 応答コードと、応答本文で更新された [deviceAppManagement](../resources/intune_books_deviceappmanagement.md) オブジェクトを返します。
 
 ## <a name="example"></a>例
 ### <a name="request"></a>要求
 以下は、要求の例です。
 ``` http
-POST https://graph.microsoft.com/v1.0/deviceAppManagement/managedAppPolicies/{managedAppPolicyId}/assign
-
+PATCH https://graph.microsoft.com/v1.0/deviceAppManagement
 Content-type: application/json
-Content-length: 282
+Content-length: 2
 
-{
-  "assignments": [
-    {
-      "@odata.type": "#microsoft.graph.targetedManagedAppPolicyAssignment",
-      "id": "8b68c4a6-c4a6-8b68-a6c4-688ba6c4688b",
-      "target": {
-        "@odata.type": "microsoft.graph.deviceAndAppManagementAssignmentTarget"
-      }
-    }
-  ]
-}
+{}
 ```
 
 ### <a name="response"></a>応答
 以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。
 ``` http
-HTTP/1.1 204 No Content
+HTTP/1.1 200 OK
+Content-Type: application/json
+Content-Length: 110
+
+{
+  "@odata.type": "#microsoft.graph.deviceAppManagement",
+  "id": "bbb801a3-01a3-bbb8-a301-b8bba301b8bb"
+}
 ```
 
 

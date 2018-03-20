@@ -1,14 +1,14 @@
-# <a name="assign-action"></a>assign アクション
+# <a name="get-telecomexpensemanagementpartner"></a>telecomExpenseManagementPartner の取得
 
 > **注:**Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
 
-まだ文書化されていません
+[telecomExpenseManagementPartner](../resources/intune_tem_telecomexpensemanagementpartner.md) オブジェクトのプロパティとリレーションシップを読み取ります。
 ## <a name="prerequisites"></a>前提条件
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](../../../concepts/permissions_reference.md)」を参照してください。
 
 |アクセス許可の種類|アクセス許可 (特権の大きいものから小さいものへ)|
 |:---|:---|
-|委任 (職場または学校のアカウント)|DeviceManagementApps.ReadWrite.All|
+|委任 (職場または学校のアカウント)|DeviceManagementServiceConfig.ReadWrite.All、DeviceManagementServiceConfig.Read.All|
 |委任 (個人用 Microsoft アカウント)|サポートされていません。|
 |アプリケーション|サポートされていません。|
 
@@ -18,11 +18,11 @@
 }
 -->
 ``` http
-POST /deviceAppManagement/managedAppPolicies/{managedAppPolicyId}/assign
-POST /deviceAppManagement/managedAppRegistrations/{managedAppRegistrationId}/appliedPolicies/{managedAppPolicyId}/assign
-POST /deviceAppManagement/managedAppRegistrations/{managedAppRegistrationId}/intendedPolicies/{managedAppPolicyId}/assign
+GET /deviceManagement/telecomExpenseManagementPartners/{telecomExpenseManagementPartnerId}
 ```
 
+## <a name="optional-query-parameters"></a>オプションのクエリ パラメーター
+このメソッドは、応答をカスタマイズするための [OData クエリ パラメーター](https://developer.microsoft.com/ja-JP/graph/docs/overview/query_parameters)をサポートします。
 ## <a name="request-headers"></a>要求ヘッダー
 |ヘッダー|値|
 |:---|:---|
@@ -30,45 +30,36 @@ POST /deviceAppManagement/managedAppRegistrations/{managedAppRegistrationId}/int
 |Accept|application/json|
 
 ## <a name="request-body"></a>要求本文
-要求本文で、パラメーターの JSON 表記を指定します。
-
-次の表に、このアクションで使用できるパラメーターを示します。
-
-|プロパティ|型|説明|
-|:---|:---|:---|
-|assignments|[targetedManagedAppPolicyAssignment](../resources/intune_mam_targetedmanagedapppolicyassignment.md) コレクション|まだ文書化されていません|
-
-
+このメソッドには、要求本文を指定しません。
 
 ## <a name="response"></a>応答
-成功した場合、このアクションは `204 No Content` 応答コードを返します。
+成功した場合、このメソッドは `200 OK` 応答コードと、応答本文で [telecomExpenseManagementPartner](../resources/intune_tem_telecomexpensemanagementpartner.md) オブジェクトを返します。
 
 ## <a name="example"></a>例
 ### <a name="request"></a>要求
 以下は、要求の例です。
 ``` http
-POST https://graph.microsoft.com/v1.0/deviceAppManagement/managedAppPolicies/{managedAppPolicyId}/assign
-
-Content-type: application/json
-Content-length: 282
-
-{
-  "assignments": [
-    {
-      "@odata.type": "#microsoft.graph.targetedManagedAppPolicyAssignment",
-      "id": "8b68c4a6-c4a6-8b68-a6c4-688ba6c4688b",
-      "target": {
-        "@odata.type": "microsoft.graph.deviceAndAppManagementAssignmentTarget"
-      }
-    }
-  ]
-}
+GET https://graph.microsoft.com/v1.0/deviceManagement/telecomExpenseManagementPartners/{telecomExpenseManagementPartnerId}
 ```
 
 ### <a name="response"></a>応答
 以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。
 ``` http
-HTTP/1.1 204 No Content
+HTTP/1.1 200 OK
+Content-Type: application/json
+Content-Length: 330
+
+{
+  "value": {
+    "@odata.type": "#microsoft.graph.telecomExpenseManagementPartner",
+    "id": "47a3b399-b399-47a3-99b3-a34799b3a347",
+    "displayName": "Display Name value",
+    "url": "Url value",
+    "appAuthorized": true,
+    "enabled": true,
+    "lastConnectionDateTime": "2016-12-31T23:58:36.6670033-08:00"
+  }
+}
 ```
 
 

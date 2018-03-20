@@ -1,8 +1,8 @@
-# <a name="assign-action"></a>assign アクション
+# <a name="commit-action"></a>commit アクション
 
 > **注:**Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
 
-まだ文書化されていません
+特定のアプリのファイルをコミットします。
 ## <a name="prerequisites"></a>前提条件
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](../../../concepts/permissions_reference.md)」を参照してください。
 
@@ -18,9 +18,7 @@
 }
 -->
 ``` http
-POST /deviceAppManagement/managedAppPolicies/{managedAppPolicyId}/assign
-POST /deviceAppManagement/managedAppRegistrations/{managedAppRegistrationId}/appliedPolicies/{managedAppPolicyId}/assign
-POST /deviceAppManagement/managedAppRegistrations/{managedAppRegistrationId}/intendedPolicies/{managedAppPolicyId}/assign
+POST /deviceAppManagement/mobileApps/{mobileAppId}/contentVersions/{mobileAppContentId}/files/{mobileAppContentFileId}/commit
 ```
 
 ## <a name="request-headers"></a>要求ヘッダー
@@ -36,7 +34,7 @@ POST /deviceAppManagement/managedAppRegistrations/{managedAppRegistrationId}/int
 
 |プロパティ|型|説明|
 |:---|:---|:---|
-|assignments|[targetedManagedAppPolicyAssignment](../resources/intune_mam_targetedmanagedapppolicyassignment.md) コレクション|まだ文書化されていません|
+|fileEncryptionInfo|[fileEncryptionInfo](../resources/intune_apps_fileencryptioninfo.md)|ファイル暗号化情報のパラメーター キーです。|
 
 
 
@@ -47,21 +45,22 @@ POST /deviceAppManagement/managedAppRegistrations/{managedAppRegistrationId}/int
 ### <a name="request"></a>要求
 以下は、要求の例です。
 ``` http
-POST https://graph.microsoft.com/v1.0/deviceAppManagement/managedAppPolicies/{managedAppPolicyId}/assign
+POST https://graph.microsoft.com/v1.0/deviceAppManagement/mobileApps/{mobileAppId}/contentVersions/{mobileAppContentId}/files/{mobileAppContentFileId}/commit
 
 Content-type: application/json
-Content-length: 282
+Content-length: 399
 
 {
-  "assignments": [
-    {
-      "@odata.type": "#microsoft.graph.targetedManagedAppPolicyAssignment",
-      "id": "8b68c4a6-c4a6-8b68-a6c4-688ba6c4688b",
-      "target": {
-        "@odata.type": "microsoft.graph.deviceAndAppManagementAssignmentTarget"
-      }
-    }
-  ]
+  "fileEncryptionInfo": {
+    "@odata.type": "microsoft.graph.fileEncryptionInfo",
+    "encryptionKey": "ZW5jcnlwdGlvbktleQ==",
+    "initializationVector": "aW5pdGlhbGl6YXRpb25WZWN0b3I=",
+    "mac": "bWFj",
+    "macKey": "bWFjS2V5",
+    "profileIdentifier": "Profile Identifier value",
+    "fileDigest": "ZmlsZURpZ2VzdA==",
+    "fileDigestAlgorithm": "File Digest Algorithm value"
+  }
 }
 ```
 
