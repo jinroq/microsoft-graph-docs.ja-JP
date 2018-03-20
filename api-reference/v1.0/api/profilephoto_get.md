@@ -2,17 +2,25 @@
 
 指定した [profilePhoto](../resources/profilephoto.md) またはそのメタデータ (profilePhoto プロパティ) を取得します。
 
-GET 操作により、Exchange Online のユーザーのメールボックス内で、指定された写真が検索されます。
+> **注**: バージョン 1.0 のこの操作では、ユーザーの職場用または学校用メールボックスのみがサポートされ、個人用メールボックスはサポートされていません。
 
-> **注** バージョン 1.0 のこの操作では、ユーザーの職場用または学校用メールボックスのみがサポートされ、個人用メールボックスはサポートされていません。
+Office 365 上でサポートされている HD Photo のサイズは次のとおりです: '48x48'、'64x64'、'96x96'、'120x120'、'240x240'、'360x360'、'432x432'、'504x504'、'648x648'。 写真が Azure Active Directory に格納されている場合は、サイズに関する制限はありません。
+
+使用可能な最大の写真のメタデータを取得したり、サイズを指定してその写真サイズのメタデータを取得したりできます。
+要求したサイズが使用できない場合でも、アップロードされて使用可能になっている、より小さいサイズを取得できます。
+たとえば、アップロードした写真が 504x504 ピクセルの場合は、648×648 を除くすべてのサイズの写真がダウンロード可能になります。
+指定したサイズがユーザーのメールボックスにも Azure Active Directory にもない場合は、'1x1' のサイズがメタデータの残りの部分とともに返されます。
 
 ## <a name="permissions"></a>アクセス許可
+
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](../../../concepts/permissions_reference.md)」を参照してください。
 
-*   サインインしているユーザーを含むテナント内の任意のユーザーのプロファイル写真 - User.ReadBasic.All、User.Read.All、User.ReadWrite.All
-*   明確にサインインしているユーザーのプロファイル写真 - User.Read、User.ReadWrite、User.ReadBasic.All、User.Read.All、User.ReadWrite.All
-* **グループ**のプロファイル写真 - Group.Read.All、Group.ReadWrite.All
-* **連絡先**の写真 - Contacts.Read、Contacts.ReadWrite
+|アクセス許可の種類      | アクセス許可 (特権の小さいものから大きいものへ)              |
+|:--------------------|:---------------------------------------------------------|
+|委任 (職場または学校のアカウント) | **user** リソースの場合:<br/>User.Read、User.ReadBasic.All、User.Read.All、User.ReadWrite、User.ReadWrite.All<br /><br />**group** リソースの場合:<br />Group.Read.All、Group.ReadWrite.All<br /><br />**contact** リソースの場合:<br />Contacts.Read、Contacts.ReadWrite |
+|委任 (個人用 Microsoft アカウント) | サポートされていません |
+|アプリケーション                        | **user** リソースの場合:<br/>User.Read.All、User.ReadWrite.All<br /><br />**group** リソースの場合:<br />Group.Read.All、Group.ReadWrite.All<br /><br />**contact** リソースの場合:<br />Contacts.Read、Contacts.ReadWrite |
+
 
 ## <a name="http-request-to-get-the-photo"></a>写真を取得する HTTP 要求
 <!-- { "blockType": "ignored" } -->
@@ -36,6 +44,14 @@ GET /users/{id | userPrincipalName}/contacts/{id}/photo
 GET /me/contactfolders/{contactFolderId}/contacts/{id}/photo
 GET /users/{id | userPrincipalName}/contactfolders/{contactFolderId}/contacts/{id}/photo
 ```
+
+## <a name="parameters"></a>Parameters
+
+|**パラメーター**|**型**|**説明**|
+|:-----|:-----|:-----|
+|_URL パラメーター_|
+|size  |String  | 写真のサイズ。 Office 365 上でサポートされている HD Photo のサイズは次のとおりです: '48x48'、'64x64'、'96x96'、'120x120'、'240x240'、 
+'360 360 x'、'432 x 432'、'504 504 x'、および '648x648'。 写真が Azure Active Directory に格納されている場合は、サイズに関する制限はありません。 |
 
 ## <a name="optional-query-parameters"></a>オプションのクエリ パラメーター
 このメソッドは、応答をカスタマイズするための [OData クエリ パラメーター](http://developer.microsoft.com/ja-JP/graph/docs/overview/query_parameters)をサポートします。
@@ -65,6 +81,20 @@ GET https://graph.microsoft.com/v1.0/me/photo/$value
 要求した写真のバイナリ データが含まれています。HTTP 応答コードは 200 です。
 
 ##### <a name="request-2"></a>要求 2
+この要求は、サインインしているユーザーの 48x48 の写真を取得します。
+
+<!-- {
+  "blockType": "ignored"
+}-->
+```http
+GET https://graph.microsoft.com/v1.0/me/photos/48x48/$value
+Content-Type: image/jpg
+```
+
+##### <a name="response-2"></a>応答 2
+要求した 48x48 の写真のバイナリ データが含まれています。HTTP 応答コードは 200 です。
+
+##### <a name="request-3"></a>要求 3
 この要求は、サインインしているユーザーのユーザー写真のメタデータを取得します。
 <!-- {
   "blockType": "ignored"
@@ -73,7 +103,7 @@ GET https://graph.microsoft.com/v1.0/me/photo/$value
 GET https://graph.microsoft.com/v1.0/me/photo
 ```
 
-##### <a name="response-2"></a>応答 2
+##### <a name="response-3"></a>応答 3
 
 次の応答データは、写真のメタデータを示しています。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。
 <!-- {

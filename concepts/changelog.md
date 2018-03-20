@@ -3,6 +3,18 @@
 この変更ログでは、Microsoft Graph と、v1.0 およびベータ版のエンドポイント Microsoft Graph API の変更内容について説明します。  
 
 Microsoft Graph API に関する既知の問題の詳細については、「[既知の問題](known_issues.md)」を参照してください。
+
+## <a name="march-2018"></a>2018 年 3 月
+
+### <a name="group-lifecycle-policy"></a>グループのライフサイクル ポリシー
+
+| **変更の種類** | **バージョン** | **説明**                          |
+| :-------------- | :---------- | :--------------------------------------- |
+| 追加        | v1.0        | [groupLifecyclePolicy](https://developer.microsoft.com/ja-JP/graph/docs/api-reference/v1.0/resources/grouplifecyclepolicy) を追加しました |
+| 追加        | v1.0        | グループのライフサイクル ポリシーに、次の API を追加しました: [Create](https://developer.microsoft.com/ja-JP/graph/docs/api-reference/v1.0/api/grouplifecyclepolicy_post_grouplifecyclepolicies)、[List](https://developer.microsoft.com/ja-JP/graph/docs/api-reference/v1.0/api/grouplifecyclepolicy_list)、[Get](https://developer.microsoft.com/ja-JP/graph/docs/api-reference/v1.0/api/grouplifecyclepolicy_get)、[Update](https://developer.microsoft.com/ja-JP/graph/docs/api-reference/v1.0/api/grouplifecyclepolicy_update)、[Delete](https://developer.microsoft.com/ja-JP/graph/docs/api-reference/v1.0/api/grouplifecyclepolicy_delete)、[Add group](https://developer.microsoft.com/ja-JP/graph/docs/api-reference/v1.0/api/grouplifecyclepolicy_addgroup)、[Remove group](https://developer.microsoft.com/ja-JP/graph/docs/api-reference/v1.0/api/grouplifecyclepolicy_removegroup) |
+| 追加        | v1.0        | [group](https://developer.microsoft.com/ja-JP/graph/docs/api-reference/v1.0/resources/group) に [List groupLifecylePolicies](https://developer.microsoft.com/ja-JP/graph/docs/api-reference/v1.0/api/group_list_grouplifecyclepolicies.md) 関数を追加しました。 |
+| 変更 | V1.0 | renewedDateTime プロパティと [renew](https://developer.microsoft.com/ja-JP/graph/docs/api-reference/v1.0/api/group_renew) を [group](../api-reference/v1.0/resources/group.md) に追加しました | 
+
 ## <a name="february-2018"></a>2018 年 2 月
 
 ### <a name="microsoft-intune-apis"></a>Microsoft Intune API
@@ -251,7 +263,6 @@ Microsoft Graph API に関する既知の問題の詳細については、「[�
 |変更|ベータ版|[hardwareInformation](https://developer.microsoft.com/ja-JP/graph/docs/api-reference/beta/resources/intune_devices_hardwareinformation) 複合型に **tpmSpecificationVersion** プロパティ、**operatingSystemEdition** プロパティ、**deviceFullQualifiedDomainName** プロパティ、**deviceGuardVirtualizationBasedSecurityHardwareRequirementState** プロパティ、**deviceGuardVirtualizationBasedSecurityState** プロパティ、**deviceGuardLocalSystemAuthorityCredentialGuardState** プロパティを追加しました|
 |変更|ベータ版|[iosVppAppAssignmentSettings](https://developer.microsoft.com/ja-JP/graph/docs/api-reference/beta/resources/intune_apps_iosvppappassignmentsettings) 複合型に **vpnConfigurationId** プロパティを追加しました|
 |変更|ベータ版|[rolePermission](https://developer.microsoft.com/ja-JP/graph/docs/api-reference/beta/resources/intune_rbac_rolepermission) 複合型に **resourceActions** プロパティを追加しました|
-
 
 ### <a name="reports-apis"></a>レポート API
 | 変更の種類 | バージョン | 説明                              |
