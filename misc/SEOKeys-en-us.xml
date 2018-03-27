@@ -137,17 +137,27 @@
       <Item text="メンバー グループを取得する" url="/en-us/api-reference/v1.0/api/group_getmembergroups" SEOKeyword="グループ: getMemberGroups、Microsoft Graph API、グループ API" SEODescription="" />
       <Item text="メンバー オブジェクトを取得する" url="/en-us/api-reference/v1.0/api/group_getmemberobjects" SEOKeyword="グループ: getMemberObjects、Microsoft Graph API、グループ API" SEODescription="" />
       <Item text="グループを一覧表示する" url="/en-us/api-reference/v1.0/api/group_list" SEOKeyword="グループを一覧表示する、Microsoft Graph API、Groups API" SEODescription="グループ オブジェクトのリストを取得します。" />
-      <Item text="メンバーを一覧表示する" url="/en-us/api-reference/v1.0/api/group_list_memberof" SEOKeyword="memberOf を一覧表示する、Microsoft Graph API、Groups API" SEODescription="directoryobject オブジェクトのリストを取得します。" />
+      <Item text="ライフサイクル ポリシーを一覧表示する" url="/en-us/api-reference/v1.0/api/group_list_grouplifecyclepolicies" />
+	  <Item text="メンバーを一覧表示する" url="/en-us/api-reference/v1.0/api/group_list_memberof" SEOKeyword="memberOf を一覧表示する、Microsoft Graph API、Groups API" SEODescription="directoryobject オブジェクトのリストを取得します。" />
       <Item text="メンバーを一覧表示する" url="/en-us/api-reference/v1.0/api/group_list_members" SEOKeyword="メンバーを一覧表示する、Microsoft Graph API、Groups API" SEODescription="directoryobject オブジェクトのリストを取得します。" /><Item text="所有者を一覧表示する" url="/en-us/api-reference/v1.0/api/group_list_owners" SEOKeyword="所有者を一覧表示する、Microsoft Graph API、Groups API" SEODescription="directoryobject オブジェクトのリストを取得します。" />
       <Item text="グループを更新する" url="/en-us/api-reference/v1.0/api/group_update" SEOKeyword="グループを更新する、Microsoft Graph API、Groups API" SEODescription="グループ オブジェクトのプロパティを更新します。" />
       <Item text="お気に入りを削除する" url="/en-us/api-reference/v1.0/api/group_removefavorite" />
       <Item text="メンバーを削除する" url="/en-us/api-reference/v1.0/api/group_delete_members" SEOKeyword="メンバーを削除する、Microsoft Graph API、Groups API" SEODescription="この API を使用して、メンバーを削除します。" />
-      
       <Item text="所有者を削除する" url="/en-us/api-reference/v1.0/api/group_delete_owners" />
-      <Item text="見えないカウントをリセットする" url="/en-us/api-reference/v1.0/api/group_resetunseencount" SEOKeyword="グループ: resetUnseenCount, Microsoft Graph API, グループ API" SEODescription="" />
+      <Item text="グループを更新する" url="/en-us/api-reference/v1.0/api/group_renew" />
+	  <Item text="見えないカウントをリセットする" url="/en-us/api-reference/v1.0/api/group_resetunseencount" SEOKeyword="グループ: resetUnseenCount, Microsoft Graph API, グループ API" SEODescription="" />
       <Item text="メールで購読する" url="/en-us/api-reference/v1.0/api/group_subscribebymail" SEOKeyword="グループ: subscribeByMail、Microsoft Graph API、グループ API" SEODescription="" />
       <Item text="メールでの購読を中止する" url="/en-us/api-reference/v1.0/api/group_unsubscribebymail" SEOKeyword="グループ: unsubscribeByMail、Microsoft Graph API、グループ API" SEODescription="" />
-    </Item>
+      <Item text="ライフサイクル ポリシー" url="/en-us/api-reference/v1.0/resources/grouplifecyclepolicy">
+		<Item text="ポリシーを一覧表示する" url="/en-us/api-reference/v1.0/api/grouplifecyclepolicy_list" />
+		<Item text="ポリシーを作成する" url="/en-us/api-reference/v1.0/api/grouplifecyclepolicy_post_grouplifecyclepolicies" />
+		<Item text="ポリシーを取得する" url="/en-us/api-reference/v1.0/api/grouplifecyclepolicy_get" />
+		<Item text="ポリシーを更新する" url="/en-us/api-reference/v1.0/api/grouplifecyclepolicy_update" />
+		<Item text="ポリシーを削除する" url="/en-us/api-reference/v1.0/api/grouplifecyclepolicy_delete" />
+		<Item text="グループを追加する" url="/en-us/api-reference/v1.0/api/grouplifecyclepolicy_addgroup" />
+		<Item text="グループを削除する" url="/en-us/api-reference/v1.0/api/grouplifecyclepolicy_removegroup" />
+	  </Item>
+	</Item>
     <Item text="添付ファイル" url="/en-us/api-reference/v1.0/resources/attachment">
 		<Item text="添付ファイルのリソース" url="/en-us/api-reference/v1.0/resources/fileattachment" />
 		<Item text="項目の添付ファイルのリソース" url="/en-us/api-reference/v1.0/resources/itemattachment" />
@@ -291,6 +301,41 @@
       <Item text="subscribedSkus を一覧表示する" url="/en-us/api-reference/v1.0/api/subscribedsku_list" SEOKeyword="subscribedSkus を一覧表示する、Microsoft Graph API、subscribedsku API" SEODescription="subscribedsku オブジェクトのリストを取得します。" />
       <Item text="subscribedSku を取得する" url="/en-us/api-reference/v1.0/api/subscribedsku_get" SEOKeyword="subscribedSku を取得する、Microsoft Graph API、subscribedsku API" SEODescription="subscribedsku オブジェクトのプロパティとリレーションシップを取得します。" />
     </Item>
+  </Item>
+  <Item text="教育" url="/en-us/api-reference/v1.0/resources/education-overview">
+		<Item text="学校" url="/en-us/api-reference/v1.0/resources/educationschool">
+			<Item text="学校を一覧表示する" url="/en-us/api-reference/v1.0/api/educationroot_list_schools" />
+			<Item text="学校を作成する" url="/en-us/api-reference/v1.0/api/educationroot_post_schools" />
+			<Item text="学校を取得する" url="/en-us/api-reference/v1.0/api/educationschool_get" />
+			<Item text="学校を更新する" url="/en-us/api-reference/v1.0/api/educationschool_update" />
+			<Item text="学校を削除する" url="/en-us/api-reference/v1.0/api/educationschool_delete" />
+			<Item text="クラスを一覧表示する" url="/en-us/api-reference/v1.0/api/educationschool_list_classes" />
+			<Item text="クラスを作成する" url="/en-us/api-reference/v1.0/api/educationschool_post_classes" />
+			<Item text="クラスを削除する" url="/en-us/api-reference/v1.0/api/educationschool_delete_classes" />
+			<Item text="ユーザーを一覧表示する" url="/en-us/api-reference/v1.0/api/educationschool_list_users" />
+			<Item text="ユーザーを追加する" url="/en-us/api-reference/v1.0/api/educationschool_post_users" />
+			<Item text="ユーザーを削除する" url="/en-us/api-reference/v1.0/api/educationschool_delete_users" />
+		</Item>
+		<Item text="クラス" url="/en-us/api-reference/v1.0/resources/educationclass">
+			<Item text="学校を一覧表示する" url="/en-us/api-reference/v1.0/api/educationclass_list_schools" />
+			<Item text="クラスを一覧表示する" url="/en-us/api-reference/v1.0/api/educationroot_list_classes" />
+			<Item text="クラスを作成する" url="/en-us/api-reference/v1.0/api/educationroot_post_classes" />
+			<Item text="クラスを取得する" url="/en-us/api-reference/v1.0/api/educationclass_get" />
+			<Item text="クラスを更新する" url="/en-us/api-reference/v1.0/api/educationclass_update" />
+			<Item text="クラスを削除する" url="/en-us/api-reference/v1.0/api/educationclass_delete" />
+			<Item text="教師を一覧表示する" url="/en-us/api-reference/v1.0/api/educationclass_list_teachers" />
+			<Item text="教師を追加する" url="/en-us/api-reference/v1.0/api/educationclass_post_teachers" />
+			<Item text="教師を削除する" url="/en-us/api-reference/v1.0/api/educationclass_delete_teachers" />
+			<Item text="メンバーを一覧表示する" url="/en-us/api-reference/v1.0/api/educationclass_list_members" />
+			<Item text="メンバーを追加する" url="/en-us/api-reference/v1.0/api/educationclass_post_members" />
+			<Item text="メンバーを削除する" url="/en-us/api-reference/v1.0/api/educationclass_delete_members" />
+		</Item>
+		<Item text="ユーザー" url="/en-us/api-reference/v1.0/resources/educationuser">
+			<Item text="学校を一覧表示する" url="/en-us/api-reference/v1.0/api/educationuser_list_schools" />
+			<Item text="クラスを一覧表示する" url="/en-us/api-reference/v1.0/api/educationuser_list_classes" />
+			<Item text="ユーザーを取得する" url="/en-us/api-reference/v1.0/api/educationuser_get" />
+			<Item text="ユーザーを削除する" url="/en-us/api-reference/v1.0/api/educationuser_delete" />
+		</Item>
   </Item>
   <Item text="Excel" url="/en-us/api-reference/v1.0/resources/excel" SEOKeyword="Excel API, Microsoft Graph API, Excel API" SEODescription="">
     <Item text="ブック" url="/en-us/api-reference/v1.0/resources/workbook" SEOKeyword="Excel API, Microsoft Graph API, Excel API" SEODescription="">
@@ -1887,6 +1932,16 @@
 	  </Item>
   </Item>
   <Item text="レポート" url="/en-us/api-reference/v1.0/resources/report">
+	  <Item text="Microsoft Teams デバイスの使用状況" url="/en-us/api-reference/v1.0/resources/microsoft_teams_device_usage_reports">
+		<Item text="ユーザーの詳細を取得する" url="/en-us/api-reference/v1.0/api/reportroot_getteamsdeviceusageuserdetail" />
+		<Item text="ユーザーの数を取得する" url="/en-us/api-reference/v1.0/api/reportroot_getteamsdeviceusageusercounts" />
+		<Item text="配布のユーザーの数を取得する" url="/en-us/api-reference/v1.0/api/reportroot_getteamsdeviceusagedistributionusercounts" />
+	  </Item>
+	  <Item text="Microsoft Teams ユーザー アクティビティ" url="/en-us/api-reference/v1.0/resources/microsoft_teams_user_activity_reports">
+		<Item text="ユーザーの詳細を取得する" url="/en-us/api-reference/v1.0/api/reportroot_getteamsuseractivityuserdetail" />
+		<Item text="アクティビティの数を取得する" url="/en-us/api-reference/v1.0/api/reportroot_getteamsuseractivitycounts" />
+		<Item text="ユーザーの数を取得する" url="/en-us/api-reference/v1.0/api/reportroot_getteamsuseractivityusercounts" />
+	  </Item>
 	  <Item text="Outlook アクティビティ" url="/en-us/api-reference/v1.0/resources/email_activity_reports">
 		<Item text="ユーザーの詳細を取得する" url="/en-us/api-reference/v1.0/api/reportroot_getemailactivityuserdetail" />
 		<Item text="アクティビティの数を取得する" url="/en-us/api-reference/v1.0/api/reportroot_getemailactivitycounts" />
@@ -2029,7 +2084,7 @@
         <Item text="ユーザーを作成する" url="/en-us/api-reference/beta/api/user_post_users" SEOKeyword="ユーザーを作成する、Microsoft Graph API、ユーザー API" SEODescription="この API を使用して、新しいユーザーを作成します。" />
         <Item text="ユーザーを削除する" url="/en-us/api-reference/beta/api/user_delete" SEOKeyword="ユーザーを削除する、Microsoft Graph API、ユーザー API" SEODescription="ユーザーを削除します。" />
         <Item text="ユーザーを取得する" url="/en-us/api-reference/beta/api/user_get" SEOKeyword="ユーザーを取得する、Microsoft Graph API、ユーザー API" SEODescription="ユーザー オブジェクトのプロパティとリレーションシップを取得します。" />
-        <Item text="ユーザーを一覧表示する" url="/en-us/api-reference/beta/api/user_list" SEOKeyword="ユーザーを一覧表示する、Microsoft Graph API、ユーザー API" SEODescription="ユーザー オブジェクトの一覧を取得します。" />
+        <Item text="ユーザーを一覧表示する" url="/en-us/api-reference/beta/api/user_list" SEOKeyword="ユーザーを一覧表示する、Microsoft Graph API、ユーザー API" SEODescription="ユーザー オブジェクトのリストを取得します。" />
         <Item text="ユーザーを更新する" url="/en-us/api-reference/beta/api/user_update" SEOKeyword="ユーザーを更新する、Microsoft Graph API、ユーザー API" SEODescription="ユーザー オブジェクトのプロパティを更新します。" />
       </Item>
       <Item text="予定表" url="/en-us/api-reference/beta/resources/event" SEOKeyword="ユーザーの予定表, Microsoft Graph API, ユーザー API" SEODescription="">
@@ -2116,8 +2171,12 @@
         <Item text="写真を取得する" url="/en-us/api-reference/beta/api/profilephoto_get" />
         <Item text="写真を更新する" url="/en-us/api-reference/beta/api/profilephoto_update" />
       </Item>
-      <Item text="プランナー タスク" url="/en-us/api-reference/beta/resources/plannertask" SEOKeyword="ユーザー タスク, Microsoft Graph API, ユーザー API" SEODescription="">
-        <Item text="タスクを一覧表示する" url="/en-us/api-reference/beta/api/planneruser_list_tasks" SEOKeyword="計画を一覧表示する、Microsoft Graph API、ユーザー API" SEODescription="計画オブジェクトのリストを取得します。" />
+      <Item text="Planner" url="/en-us/api-reference/beta/resources/planneruser" SEOKeyword="ユーザー タスク、Microsoft Graph API、ユーザー API" SEODescription="Planner 内のユーザー固有の設定を表します。">
+        <Item text="ユーザーの設定を取得する" url="/en-us/api-reference/beta/api/planneruser_get" SEOKeyword="設定を取得する、Microsoft Graph API, ユーザー API" SEODescription="ユーザーの Planner 設定を取得します。" />
+        <Item text="ユーザーの設定を更新する" url="/en-us/api-reference/beta/api/planneruser_update" SEOKeyword="設定を更新する、Microsoft Graph API, ユーザー API" SEODescription="ユーザーの Planner 設定を更新します。" />
+        <Item text="ユーザーのお気に入りの計画を一覧表示します。" url="/en-us/api-reference/beta/api/planneruser_list_favoriteplans" SEOKeyword="お気に入りの計画を一覧表示する、Microsoft Graph API、ユーザー API" SEODescription="ユーザーのお気に入りの Planner の計画を取得します。" />
+        <Item text="ユーザーの最近の計画を一覧表示する" url="/en-us/api-reference/beta/api/planneruser_list_recentplans" SEOKeyword="最近の計画を一覧表示する、Microsoft Graph API、ユーザー API" SEODescription="ユーザーが最近表示した Planner の計画を取得します。" />
+        <Item text="ユーザーの割り当てられているタスクを一覧表示する" url="/en-us/api-reference/beta/api/planneruser_list_tasks" SEOKeyword="計画を一覧表示する、Microsoft Graph API、ユーザー API" SEODescription="ユーザーに割り当てられている Planner のタスクを取得します。" />
       </Item>
     </Item>
     <Item text="グループ" url="/en-us/api-reference/beta/resources/groups-overview" SEOKeyword="Groups API、Microsoft Graph API、Groups API、Microsoft Teams API、Teams API" SEODescription="Azure Active Directory グループを表します。DirectoryObject から継承されます。">
@@ -2171,8 +2230,8 @@
       <Item text="会話" url="/en-us/api-reference/beta/resources/conversation" SEOKeyword="会話 API, Microsoft Graph API, 会話 API" SEODescription="">
         <Item text="会話を一覧表示する" url="/en-us/api-reference/beta/api/group_list_conversations" SEOKeyword="会話を一覧表示する、Microsoft Graph API、Groups API" SEODescription="会話オブジェクトのリストを取得します。" />
         <Item text="会話を作成する" url="/en-us/api-reference/beta/api/group_post_conversations" SEOKeyword="会話を作成する、Microsoft Graph API、Groups API" SEODescription="この API を使用して、新しい会話を作成します。" />
-        <Item text="グループ会話を取得する" url="/en-us/api-reference/beta/api/group_get_conversation" SEOKeyword="グループ会話を取得する、Microsoft Graph API、Outlook 会話 API" SEODescription="会話オブジェクトのプロパティと関係を取得します。" />
-        <Item text="グループ会話を削除する" url="/en-us/api-reference/beta/api/group_delete_conversation" SEOKeyword="グループ会話を削除する、Microsoft Graph API、Outlook 会話 API" SEODescription="会話を削除します。" />
+        <Item text="会話を取得する" url="/en-us/api-reference/beta/api/group_get_conversation" SEOKeyword="グループ会話を取得する、Microsoft Graph API、Outlook 会話 API" SEODescription="会話オブジェクトのプロパティと関係を取得します。" />
+        <Item text="会話を削除する" url="/en-us/api-reference/beta/api/group_delete_conversation" SEOKeyword="グループ会話を削除する、Microsoft Graph API、Outlook 会話 API" SEODescription="会話を削除します。" />
         <Item text="会話スレッドを一覧表示する" url="/en-us/api-reference/beta/api/conversation_list_threads" SEOKeyword="スレッドを一覧表示する、Microsoft Graph API、Groups API" SEODescription="conversationthread オブジェクトのリストを取得します。" />
         <Item text="会話スレッドを作成する" url="/en-us/api-reference/beta/api/conversation_post_threads" SEOKeyword="スレッドを作成する、Microsoft Graph API、Groups API" SEODescription="この API を使用して、新しいスレッドを作成します。" />
         <Item text="承認済み送信者を一覧表示する" url="/en-us/api-reference/beta/api/group_list_acceptedsenders" SEOKeyword="acceptedSenders を一覧表示する、Microsoft Graph API、Groups API" SEODescription="directoryobject オブジェクトのリストを取得します。" />
@@ -2585,7 +2644,7 @@
       </Item>
     </Item>
     <Item text="Intune" url="/en-us/api-reference/beta/resources/intune_graph_overview">
-      <Item text="アプリの管理" url="/en-us/api-reference/beta/resources/intune_apps_app_conceptual">
+      <Item text="App Management" url="/en-us/api-reference/beta/resources/intune_apps_app_conceptual">
         <Item text="すべてのデバイスの割り当て先" url="/en-us/api-reference/beta/resources/intune_apps_alldevicesassignmenttarget" />
         <Item text="すべてのライセンス ユーザーの割り当て先" url="/en-us/api-reference/beta/resources/intune_books_alllicensedusersassignmenttarget" />
         <Item text="すべてのライセンス ユーザーの割り当て先" url="/en-us/api-reference/beta/resources/intune_apps_alllicensedusersassignmenttarget" />
@@ -3111,6 +3170,14 @@
           <Item text="更新" url="/en-us/api-reference/beta/api/intune_corpenrollment_importeddeviceidentity_update" />
           <Item text="importDeviceIdentityList アクション" url="/en-us/api-reference/beta/api/intune_corpenrollment_importeddeviceidentity_importdeviceidentitylist" />
         </Item>
+        <Item text="インポートした Windows Autopilot デバイス ID の状態" url="/en-us/api-reference/beta/resources/intune_enrollment_importedwindowsautopilotdeviceidentitystate" />
+        <Item text="インポートした Windows Autopilot デバイス ID" url="/en-us/api-reference/beta/resources/intune_enrollment_importedwindowsautopilotdeviceidentity">
+          <Item text="リスト" url="/en-us/api-reference/beta/api/intune_enrollment_importedwindowsautopilotdeviceidentity_list" />
+          <Item text="取得" url="/en-us/api-reference/beta/api/intune_enrollment_importedwindowsautopilotdeviceidentity_get" />
+          <Item text="作成" url="/en-us/api-reference/beta/api/intune_enrollment_importedwindowsautopilotdeviceidentity_create" />
+          <Item text="削除" url="/en-us/api-reference/beta/api/intune_enrollment_importedwindowsautopilotdeviceidentity_delete" />
+          <Item text="更新" url="/en-us/api-reference/beta/api/intune_enrollment_importedwindowsautopilotdeviceidentity_update" />
+        </Item>
         <Item text="拇印を含む証明書の管理" url="/en-us/api-reference/beta/resources/intune_corpenrollment_managementcertificatewiththumbprint" />
         <Item text="Out Of Box Experience の設定" url="/en-us/api-reference/beta/resources/intune_enrollment_outofboxexperiencesettings" />
         <Item text="Windows Autopilot 展開プロファイル" url="/en-us/api-reference/beta/resources/intune_enrollment_windowsautopilotdeploymentprofile">
@@ -3135,11 +3202,8 @@
         </Item>
       </Item>
       <Item text="デバイス構成" url="/en-us/api-reference/beta/resources/intune_device_configuration_conceptual">
-        <Item text="管理者の許諾" url="/en-us/api-reference/beta/resources/intune_devices_adminconsent" />
         <Item text="AirPrint 先" url="/en-us/api-reference/beta/resources/intune_deviceconfig_airprintdestination" />
-        <Item text="すべてのデバイスの割り当て先" url="/en-us/api-reference/beta/resources/intune_devices_alldevicesassignmenttarget" />
         <Item text="すべてのデバイスの割り当て先" url="/en-us/api-reference/beta/resources/intune_deviceconfig_alldevicesassignmenttarget" />
-        <Item text="すべてのライセンス ユーザーの割り当て先" url="/en-us/api-reference/beta/resources/intune_devices_alllicensedusersassignmenttarget" />
         <Item text="すべてのライセンス ユーザーの割り当て先" url="/en-us/api-reference/beta/resources/intune_deviceconfig_alllicensedusersassignmenttarget" />
         <Item text="Android 証明書のプロファイル ベース" url="/en-us/api-reference/beta/resources/intune_deviceconfig_androidcertificateprofilebase">
           <Item text="リスト" url="/en-us/api-reference/beta/api/intune_deviceconfig_androidcertificateprofilebase_list" />
@@ -3234,6 +3298,13 @@
           <Item text="削除" url="/en-us/api-reference/beta/api/intune_deviceconfig_androidforworkgmaileasconfiguration_delete" />
           <Item text="更新" url="/en-us/api-reference/beta/api/intune_deviceconfig_androidforworkgmaileasconfiguration_update" />
         </Item>
+        <Item text="Android for Work のインポートした PFX 証明書のプロファイル" url="/en-us/api-reference/beta/resources/intune_deviceconfig_androidforworkimportedpfxcertificateprofile">
+          <Item text="リスト" url="/en-us/api-reference/beta/api/intune_deviceconfig_androidforworkimportedpfxcertificateprofile_list" />
+          <Item text="取得" url="/en-us/api-reference/beta/api/intune_deviceconfig_androidforworkimportedpfxcertificateprofile_get" />
+          <Item text="作成" url="/en-us/api-reference/beta/api/intune_deviceconfig_androidforworkimportedpfxcertificateprofile_create" />
+          <Item text="削除" url="/en-us/api-reference/beta/api/intune_deviceconfig_androidforworkimportedpfxcertificateprofile_delete" />
+          <Item text="更新" url="/en-us/api-reference/beta/api/intune_deviceconfig_androidforworkimportedpfxcertificateprofile_update" />
+        </Item>
         <Item text="Android for Work の Nine Work EAS 構成" url="/en-us/api-reference/beta/resources/intune_deviceconfig_androidforworknineworkeasconfiguration">
           <Item text="リスト" url="/en-us/api-reference/beta/api/intune_deviceconfig_androidforworknineworkeasconfiguration_list" />
           <Item text="取得" url="/en-us/api-reference/beta/api/intune_deviceconfig_androidforworknineworkeasconfiguration_get" />
@@ -3283,6 +3354,13 @@
           <Item text="削除" url="/en-us/api-reference/beta/api/intune_deviceconfig_androidgeneraldeviceconfiguration_delete" />
           <Item text="更新" url="/en-us/api-reference/beta/api/intune_deviceconfig_androidgeneraldeviceconfiguration_update" />
         </Item>
+        <Item text="Android のインポートした PFX 証明書のプロファイル" url="/en-us/api-reference/beta/resources/intune_deviceconfig_androidimportedpfxcertificateprofile">
+          <Item text="リスト" url="/en-us/api-reference/beta/api/intune_deviceconfig_androidimportedpfxcertificateprofile_list" />
+          <Item text="取得" url="/en-us/api-reference/beta/api/intune_deviceconfig_androidimportedpfxcertificateprofile_get" />
+          <Item text="作成" url="/en-us/api-reference/beta/api/intune_deviceconfig_androidimportedpfxcertificateprofile_create" />
+          <Item text="削除" url="/en-us/api-reference/beta/api/intune_deviceconfig_androidimportedpfxcertificateprofile_delete" />
+          <Item text="更新" url="/en-us/api-reference/beta/api/intune_deviceconfig_androidimportedpfxcertificateprofile_update" />
+        </Item>
         <Item text="Android PKCS 証明書のプロファイル" url="/en-us/api-reference/beta/resources/intune_deviceconfig_androidpkcscertificateprofile">
           <Item text="リスト" url="/en-us/api-reference/beta/api/intune_deviceconfig_androidpkcscertificateprofile_list" />
           <Item text="取得" url="/en-us/api-reference/beta/api/intune_deviceconfig_androidpkcscertificateprofile_get" />
@@ -3323,29 +3401,14 @@
           <Item text="リスト" url="/en-us/api-reference/beta/api/intune_deviceconfig_appledevicefeaturesconfigurationbase_list" />
           <Item text="取得" url="/en-us/api-reference/beta/api/intune_deviceconfig_appledevicefeaturesconfigurationbase_get" />
         </Item>
-        <Item text="Apple プッシュ通知証明書" url="/en-us/api-reference/beta/resources/intune_devices_applepushnotificationcertificate">
-          <Item text="取得" url="/en-us/api-reference/beta/api/intune_devices_applepushnotificationcertificate_get" />
-          <Item text="更新" url="/en-us/api-reference/beta/api/intune_devices_applepushnotificationcertificate_update" />
-        </Item>
         <Item text="Apple VPN 構成" url="/en-us/api-reference/beta/resources/intune_deviceconfig_applevpnconfiguration">
           <Item text="リスト" url="/en-us/api-reference/beta/api/intune_deviceconfig_applevpnconfiguration_list" />
           <Item text="取得" url="/en-us/api-reference/beta/api/intune_deviceconfig_applevpnconfiguration_get" />
         </Item>
-        <Item text="監査アクター" url="/en-us/api-reference/beta/resources/intune_auditing_auditactor" />
-        <Item text="監査イベント" url="/en-us/api-reference/beta/resources/intune_auditing_auditevent">
-          <Item text="一覧表示" url="/en-us/api-reference/beta/api/intune_auditing_auditevent_list" />
-          <Item text="取得" url="/en-us/api-reference/beta/api/intune_auditing_auditevent_get" />
-          <Item text="作成" url="/en-us/api-reference/beta/api/intune_auditing_auditevent_create" />
-          <Item text="削除" url="/en-us/api-reference/beta/api/intune_auditing_auditevent_delete" />
-          <Item text="更新" url="/en-us/api-reference/beta/api/intune_auditing_auditevent_update" />
-        </Item>
-        <Item text="監査のプロパティ" url="/en-us/api-reference/beta/resources/intune_auditing_auditproperty" />
-        <Item text="監査のリソース" url="/en-us/api-reference/beta/resources/intune_auditing_auditresource" />
         <Item text="BitLocker 固定ドライブ ポリシー" url="/en-us/api-reference/beta/resources/intune_deviceconfig_bitlockerfixeddrivepolicy" />
         <Item text="BitLocker 回復オプション" url="/en-us/api-reference/beta/resources/intune_deviceconfig_bitlockerrecoveryoptions" />
         <Item text="BitLocker リムーバブル ドライブ ポリシー" url="/en-us/api-reference/beta/resources/intune_deviceconfig_bitlockerremovabledrivepolicy" />
         <Item text="BitLocker システム ドライブ ポリシー" url="/en-us/api-reference/beta/resources/intune_deviceconfig_bitlockersystemdrivepolicy" />
-        <Item text="管理対象デバイスのアクションの一括結果" url="/en-us/api-reference/beta/resources/intune_devices_bulkmanageddeviceactionresult" />
         <Item text="クラスの関連付けのカート" url="/en-us/api-reference/beta/resources/intune_deviceconfig_carttoclassassociation">
           <Item text="リスト" url="/en-us/api-reference/beta/api/intune_deviceconfig_carttoclassassociation_list" />
           <Item text="取得" url="/en-us/api-reference/beta/api/intune_deviceconfig_carttoclassassociation_get" />
@@ -3353,8 +3416,6 @@
           <Item text="削除" url="/en-us/api-reference/beta/api/intune_deviceconfig_carttoclassassociation_delete" />
           <Item text="更新" url="/en-us/api-reference/beta/api/intune_deviceconfig_carttoclassassociation_update" />
         </Item>
-        <Item text="構成マネージャーのクライアントに対応した機能" url="/en-us/api-reference/beta/resources/intune_devices_configurationmanagerclientenabledfeatures" />
-        <Item text="日単位のスケジュール" url="/en-us/api-reference/beta/resources/intune_devices_dailyschedule" />
         <Item text="既定のデバイス コンプライアンス ポリシー" url="/en-us/api-reference/beta/resources/intune_deviceconfig_defaultdevicecompliancepolicy">
           <Item text="一覧表示" url="/en-us/api-reference/beta/api/intune_deviceconfig_defaultdevicecompliancepolicy_list" />
           <Item text="取得" url="/en-us/api-reference/beta/api/intune_deviceconfig_defaultdevicecompliancepolicy_get" />
@@ -3363,25 +3424,7 @@
           <Item text="更新" url="/en-us/api-reference/beta/api/intune_deviceconfig_defaultdevicecompliancepolicy_update" />
         </Item>
         <Item text="Defender によって検出されたマルウェア アクション" url="/en-us/api-reference/beta/resources/intune_deviceconfig_defenderdetectedmalwareactions" />
-        <Item text="共有の Apple デバイスのアクションの結果からユーザーを削除する" url="/en-us/api-reference/beta/resources/intune_devices_deleteuserfromsharedappledeviceactionresult" />
-        <Item text="検出されたアプリ" url="/en-us/api-reference/beta/resources/intune_devices_detectedapp">
-          <Item text="一覧表示" url="/en-us/api-reference/beta/api/intune_devices_detectedapp_list" />
-          <Item text="取得" url="/en-us/api-reference/beta/api/intune_devices_detectedapp_get" />
-          <Item text="作成" url="/en-us/api-reference/beta/api/intune_devices_detectedapp_create" />
-          <Item text="削除" url="/en-us/api-reference/beta/api/intune_devices_detectedapp_delete" />
-          <Item text="更新" url="/en-us/api-reference/beta/api/intune_devices_detectedapp_update" />
-        </Item>
-        <Item text="デバイスのアクションの結果" url="/en-us/api-reference/beta/resources/intune_devices_deviceactionresult" />
-        <Item text="デバイスおよびアプリ管理の割り当て先" url="/en-us/api-reference/beta/resources/intune_devices_deviceandappmanagementassignmenttarget" />
         <Item text="デバイスおよびアプリ管理の割り当て先" url="/en-us/api-reference/beta/resources/intune_deviceconfig_deviceandappmanagementassignmenttarget" />
-        <Item text="デバイス アプリの管理" url="/en-us/api-reference/beta/resources/intune_devices_deviceappmanagement">
-          <Item text="取得" url="/en-us/api-reference/beta/api/intune_devices_deviceappmanagement_get" />
-          <Item text="更新" url="/en-us/api-reference/beta/api/intune_devices_deviceappmanagement_update" />
-        </Item>
-        <Item text="デバイス カテゴリ" url="/en-us/api-reference/beta/resources/intune_devices_devicecategory">
-          <Item text="取得" url="/en-us/api-reference/beta/api/intune_devices_devicecategory_get" />
-          <Item text="更新" url="/en-us/api-reference/beta/api/intune_devices_devicecategory_update" />
-        </Item>
         <Item text="デバイス コンプライアンス アクションの項目" url="/en-us/api-reference/beta/resources/intune_deviceconfig_devicecomplianceactionitem">
           <Item text="リスト" url="/en-us/api-reference/beta/api/intune_deviceconfig_devicecomplianceactionitem_list" />
           <Item text="取得" url="/en-us/api-reference/beta/api/intune_deviceconfig_devicecomplianceactionitem_get" />
@@ -3419,13 +3462,6 @@
           <Item text="更新" url="/en-us/api-reference/beta/api/intune_deviceconfig_devicecompliancepolicysettingstatesummary_update" />
         </Item>
         <Item text="デバイス コンプライアンス ポリシー設定の状態" url="/en-us/api-reference/beta/resources/intune_deviceconfig_devicecompliancepolicysettingstate" />
-        <Item text="デバイス コンプライアンス ポリシーの状態" url="/en-us/api-reference/beta/resources/intune_deviceconfig_devicecompliancepolicystate">
-          <Item text="一覧表示" url="/en-us/api-reference/beta/api/intune_deviceconfig_devicecompliancepolicystate_list" />
-          <Item text="取得" url="/en-us/api-reference/beta/api/intune_deviceconfig_devicecompliancepolicystate_get" />
-          <Item text="作成" url="/en-us/api-reference/beta/api/intune_deviceconfig_devicecompliancepolicystate_create" />
-          <Item text="削除" url="/en-us/api-reference/beta/api/intune_deviceconfig_devicecompliancepolicystate_delete" />
-          <Item text="更新" url="/en-us/api-reference/beta/api/intune_deviceconfig_devicecompliancepolicystate_update" />
-        </Item>
         <Item text="デバイス コンプライアンス ポリシー" url="/en-us/api-reference/beta/resources/intune_deviceconfig_devicecompliancepolicy">
           <Item text="リスト" url="/en-us/api-reference/beta/api/intune_deviceconfig_devicecompliancepolicy_list" />
           <Item text="取得" url="/en-us/api-reference/beta/api/intune_deviceconfig_devicecompliancepolicy_get" />
@@ -3487,14 +3523,7 @@
           <Item text="更新" url="/en-us/api-reference/beta/api/intune_deviceconfig_deviceconfigurationgroupassignment_update" />
         </Item>
         <Item text="デバイス構成の設定状態" url="/en-us/api-reference/beta/resources/intune_deviceconfig_deviceconfigurationsettingstate" />
-        <Item text="デバイス構成" url="/en-us/api-reference/beta/resources/intune_deviceconfig_deviceconfigurationstate">
-          <Item text="一覧表示" url="/en-us/api-reference/beta/api/intune_deviceconfig_deviceconfigurationstate_list" />
-          <Item text="取得" url="/en-us/api-reference/beta/api/intune_deviceconfig_deviceconfigurationstate_get" />
-          <Item text="作成" url="/en-us/api-reference/beta/api/intune_deviceconfig_deviceconfigurationstate_create" />
-          <Item text="削除" url="/en-us/api-reference/beta/api/intune_deviceconfig_deviceconfigurationstate_delete" />
-          <Item text="更新" url="/en-us/api-reference/beta/api/intune_deviceconfig_deviceconfigurationstate_update" />
-        </Item>
-        <Item text="デバイス構成のユーザー概要" url="/en-us/api-reference/beta/resources/intune_deviceconfig_deviceconfigurationuseroverview">
+        <Item text="デバイス構成のユーザーの概要" url="/en-us/api-reference/beta/resources/intune_deviceconfig_deviceconfigurationuseroverview">
           <Item text="取得" url="/en-us/api-reference/beta/api/intune_deviceconfig_deviceconfigurationuseroverview_get" />
           <Item text="更新" url="/en-us/api-reference/beta/api/intune_deviceconfig_deviceconfigurationuseroverview_update" />
         </Item>
@@ -3512,79 +3541,11 @@
           <Item text="windowsPrivacyAccessControls アクション" url="/en-us/api-reference/beta/api/intune_deviceconfig_deviceconfiguration_windowsprivacyaccesscontrols" />
           <Item text="assignedAccessMultiModeProfiles アクション" url="/en-us/api-reference/beta/api/intune_deviceconfig_deviceconfiguration_assignedaccessmultimodeprofiles" />
         </Item>
-        <Item text="デバイスの Exchange アクセス状態の要約" url="/en-us/api-reference/beta/resources/intune_devices_deviceexchangeaccessstatesummary" />
-        <Item text="デバイスの位置情報" url="/en-us/api-reference/beta/resources/intune_devices_devicegeolocation" />
-        <Item text="デバイスの正常性構成証明の状態" url="/en-us/api-reference/beta/resources/intune_devices_devicehealthattestationstate" />
-        <Item text="デバイス管理スクリプトの割り当て" url="/en-us/api-reference/beta/resources/intune_devices_devicemanagementscriptassignment">
-          <Item text="リスト" url="/en-us/api-reference/beta/api/intune_devices_devicemanagementscriptassignment_list" />
-          <Item text="取得" url="/en-us/api-reference/beta/api/intune_devices_devicemanagementscriptassignment_get" />
-          <Item text="作成" url="/en-us/api-reference/beta/api/intune_devices_devicemanagementscriptassignment_create" />
-          <Item text="削除" url="/en-us/api-reference/beta/api/intune_devices_devicemanagementscriptassignment_delete" />
-          <Item text="更新" url="/en-us/api-reference/beta/api/intune_devices_devicemanagementscriptassignment_update" />
-        </Item>
-        <Item text="デバイス管理スクリプト デバイスの状態" url="/en-us/api-reference/beta/resources/intune_devices_devicemanagementscriptdevicestate">
-          <Item text="一覧表示" url="/en-us/api-reference/beta/api/intune_devices_devicemanagementscriptdevicestate_list" />
-          <Item text="取得" url="/en-us/api-reference/beta/api/intune_devices_devicemanagementscriptdevicestate_get" />
-          <Item text="作成" url="/en-us/api-reference/beta/api/intune_devices_devicemanagementscriptdevicestate_create" />
-          <Item text="削除" url="/en-us/api-reference/beta/api/intune_devices_devicemanagementscriptdevicestate_delete" />
-          <Item text="更新" url="/en-us/api-reference/beta/api/intune_devices_devicemanagementscriptdevicestate_update" />
-        </Item>
-        <Item text="デバイス管理スクリプトのグループの割り当て" url="/en-us/api-reference/beta/resources/intune_devices_devicemanagementscriptgroupassignment">
-          <Item text="リスト" url="/en-us/api-reference/beta/api/intune_devices_devicemanagementscriptgroupassignment_list" />
-          <Item text="取得" url="/en-us/api-reference/beta/api/intune_devices_devicemanagementscriptgroupassignment_get" />
-          <Item text="作成" url="/en-us/api-reference/beta/api/intune_devices_devicemanagementscriptgroupassignment_create" />
-          <Item text="削除" url="/en-us/api-reference/beta/api/intune_devices_devicemanagementscriptgroupassignment_delete" />
-          <Item text="更新" url="/en-us/api-reference/beta/api/intune_devices_devicemanagementscriptgroupassignment_update" />
-        </Item>
-        <Item text="デバイス管理スクリプトの実行の要約" url="/en-us/api-reference/beta/resources/intune_devices_devicemanagementscriptrunsummary">
-          <Item text="取得" url="/en-us/api-reference/beta/api/intune_devices_devicemanagementscriptrunsummary_get" />
-          <Item text="更新" url="/en-us/api-reference/beta/api/intune_devices_devicemanagementscriptrunsummary_update" />
-        </Item>
-        <Item text="デバイス管理スクリプト ユーザーの状態" url="/en-us/api-reference/beta/resources/intune_devices_devicemanagementscriptuserstate">
-          <Item text="一覧表示" url="/en-us/api-reference/beta/api/intune_devices_devicemanagementscriptuserstate_list" />
-          <Item text="取得" url="/en-us/api-reference/beta/api/intune_devices_devicemanagementscriptuserstate_get" />
-          <Item text="作成" url="/en-us/api-reference/beta/api/intune_devices_devicemanagementscriptuserstate_create" />
-          <Item text="削除" url="/en-us/api-reference/beta/api/intune_devices_devicemanagementscriptuserstate_delete" />
-          <Item text="更新" url="/en-us/api-reference/beta/api/intune_devices_devicemanagementscriptuserstate_update" />
-        </Item>
-        <Item text="デバイスの管理スクリプト" url="/en-us/api-reference/beta/resources/intune_devices_devicemanagementscript">
-          <Item text="リスト" url="/en-us/api-reference/beta/api/intune_devices_devicemanagementscript_list" />
-          <Item text="取得" url="/en-us/api-reference/beta/api/intune_devices_devicemanagementscript_get" />
-          <Item text="作成" url="/en-us/api-reference/beta/api/intune_devices_devicemanagementscript_create" />
-          <Item text="削除" url="/en-us/api-reference/beta/api/intune_devices_devicemanagementscript_delete" />
-          <Item text="更新" url="/en-us/api-reference/beta/api/intune_devices_devicemanagementscript_update" />
-          <Item text="アクションの割り当て" url="/en-us/api-reference/beta/api/intune_devices_devicemanagementscript_assign" />
-        </Item>
         <Item text="デバイス管理構成" url="/en-us/api-reference/beta/resources/intune_deviceconfig_devicemanagementsettings" />
-        <Item text="デバイス管理のトラブルシューティング イベント" url="/en-us/api-reference/beta/resources/intune_troubleshooting_devicemanagementtroubleshootingevent">
-          <Item text="一覧表示" url="/en-us/api-reference/beta/api/intune_troubleshooting_devicemanagementtroubleshootingevent_list" />
-          <Item text="取得" url="/en-us/api-reference/beta/api/intune_troubleshooting_devicemanagementtroubleshootingevent_get" />
-          <Item text="作成" url="/en-us/api-reference/beta/api/intune_troubleshooting_devicemanagementtroubleshootingevent_create" />
-          <Item text="削除" url="/en-us/api-reference/beta/api/intune_troubleshooting_devicemanagementtroubleshootingevent_delete" />
-          <Item text="更新" url="/en-us/api-reference/beta/api/intune_troubleshooting_devicemanagementtroubleshootingevent_update" />
-        </Item>
-        <Item text="デバイスの管理" url="/en-us/api-reference/beta/resources/intune_devices_devicemanagement">
-          <Item text="取得" url="/en-us/api-reference/beta/api/intune_devices_devicemanagement_get" />
-          <Item text="更新" url="/en-us/api-reference/beta/api/intune_devices_devicemanagement_update" />
-        </Item>
-        <Item text="デバイスの管理" url="/en-us/api-reference/beta/resources/intune_endpointprotection_devicemanagement">
-          <Item text="取得" url="/en-us/api-reference/beta/api/intune_endpointprotection_devicemanagement_get" />
-          <Item text="更新" url="/en-us/api-reference/beta/api/intune_endpointprotection_devicemanagement_update" />
-        </Item>
-        <Item text="デバイスの管理" url="/en-us/api-reference/beta/resources/intune_troubleshooting_devicemanagement">
-          <Item text="取得" url="/en-us/api-reference/beta/api/intune_troubleshooting_devicemanagement_get" />
-          <Item text="更新" url="/en-us/api-reference/beta/api/intune_troubleshooting_devicemanagement_update" />
-        </Item>
-        <Item text="デバイスの管理" url="/en-us/api-reference/beta/resources/intune_auditing_devicemanagement">
-          <Item text="取得" url="/en-us/api-reference/beta/api/intune_auditing_devicemanagement_get" />
-          <Item text="更新" url="/en-us/api-reference/beta/api/intune_auditing_devicemanagement_update" />
-        </Item>
         <Item text="デバイスの管理" url="/en-us/api-reference/beta/resources/intune_deviceconfig_devicemanagement">
           <Item text="取得" url="/en-us/api-reference/beta/api/intune_deviceconfig_devicemanagement_get" />
           <Item text="更新" url="/en-us/api-reference/beta/api/intune_deviceconfig_devicemanagement_update" />
         </Item>
-        <Item text="デバイスのオペレーティング システムの概要" url="/en-us/api-reference/beta/resources/intune_devices_deviceoperatingsystemsummary" />
-        <Item text="デバイス保護の概要" url="/en-us/api-reference/beta/resources/intune_devices_deviceprotectionoverview" />
         <Item text="デバイス セットアップ構成" url="/en-us/api-reference/beta/resources/intune_deviceconfig_devicesetupconfiguration">
           <Item text="一覧表示" url="/en-us/api-reference/beta/api/intune_deviceconfig_devicesetupconfiguration_list" />
           <Item text="取得" url="/en-us/api-reference/beta/api/intune_deviceconfig_devicesetupconfiguration_get" />
@@ -3599,20 +3560,9 @@
           <Item text="削除" url="/en-us/api-reference/beta/api/intune_deviceconfig_editionupgradeconfiguration_delete" />
           <Item text="更新" url="/en-us/api-reference/beta/api/intune_deviceconfig_editionupgradeconfiguration_update" />
         </Item>
-        <Item text="登録のトラブルシューティング イベント" url="/en-us/api-reference/beta/resources/intune_troubleshooting_enrollmenttroubleshootingevent">
-          <Item text="一覧表示" url="/en-us/api-reference/beta/api/intune_troubleshooting_enrollmenttroubleshootingevent_list" />
-          <Item text="取得" url="/en-us/api-reference/beta/api/intune_troubleshooting_enrollmenttroubleshootingevent_get" />
-          <Item text="作成" url="/en-us/api-reference/beta/api/intune_troubleshooting_enrollmenttroubleshootingevent_create" />
-          <Item text="削除" url="/en-us/api-reference/beta/api/intune_troubleshooting_enrollmenttroubleshootingevent_delete" />
-          <Item text="更新" url="/en-us/api-reference/beta/api/intune_troubleshooting_enrollmenttroubleshootingevent_update" />
-        </Item>
-        <Item text="除外グループの割り当て先" url="/en-us/api-reference/beta/resources/intune_devices_exclusiongroupassignmenttarget" />
         <Item text="除外グループの割り当て先" url="/en-us/api-reference/beta/resources/intune_deviceconfig_exclusiongroupassignmenttarget" />
         <Item text="拡張キーの使用" url="/en-us/api-reference/beta/resources/intune_deviceconfig_extendedkeyusage" />
-        <Item text="グループの割り当て先" url="/en-us/api-reference/beta/resources/intune_devices_groupassignmenttarget" />
         <Item text="グループの割り当て先" url="/en-us/api-reference/beta/resources/intune_deviceconfig_groupassignmenttarget" />
-        <Item text="ハードウェア情報" url="/en-us/api-reference/beta/resources/intune_devices_hardwareinformation" />
-        <Item text="1 時間ごとのスケジュール" url="/en-us/api-reference/beta/resources/intune_devices_hourlyschedule" />
         <Item text="iOS のブックマーク" url="/en-us/api-reference/beta/resources/intune_deviceconfig_iosbookmark" />
         <Item text="iOS 証明書のプロファイル ベース" url="/en-us/api-reference/beta/resources/intune_deviceconfig_ioscertificateprofilebase">
           <Item text="リスト" url="/en-us/api-reference/beta/api/intune_deviceconfig_ioscertificateprofilebase_list" />
@@ -3684,6 +3634,13 @@
         <Item text="iOS ホーム画面のフォルダー" url="/en-us/api-reference/beta/resources/intune_deviceconfig_ioshomescreenfolder" />
         <Item text="iOS ホーム画面のアイテム" url="/en-us/api-reference/beta/resources/intune_deviceconfig_ioshomescreenitem" />
         <Item text="iOS ホーム画面のページ" url="/en-us/api-reference/beta/resources/intune_deviceconfig_ioshomescreenpage" />
+        <Item text="iOS のインポートした PFX 証明書のプロファイル" url="/en-us/api-reference/beta/resources/intune_deviceconfig_iosimportedpfxcertificateprofile">
+          <Item text="リスト" url="/en-us/api-reference/beta/api/intune_deviceconfig_iosimportedpfxcertificateprofile_list" />
+          <Item text="取得" url="/en-us/api-reference/beta/api/intune_deviceconfig_iosimportedpfxcertificateprofile_get" />
+          <Item text="作成" url="/en-us/api-reference/beta/api/intune_deviceconfig_iosimportedpfxcertificateprofile_create" />
+          <Item text="削除" url="/en-us/api-reference/beta/api/intune_deviceconfig_iosimportedpfxcertificateprofile_delete" />
+          <Item text="更新" url="/en-us/api-reference/beta/api/intune_deviceconfig_iosimportedpfxcertificateprofile_update" />
+        </Item>
         <Item text="iOS ネットワークの使用規則" url="/en-us/api-reference/beta/resources/intune_deviceconfig_iosnetworkusagerule" />
         <Item text="iOS の通知設定" url="/en-us/api-reference/beta/resources/intune_deviceconfig_iosnotificationsettings" />
         <Item text="iOS PKCS 証明書のプロファイル" url="/en-us/api-reference/beta/resources/intune_deviceconfig_iospkcscertificateprofile">
@@ -3743,7 +3700,6 @@
         <Item text="IPv4 の範囲" url="/en-us/api-reference/beta/resources/intune_deviceconfig_ipv4range" />
         <Item text="IPv6 の範囲" url="/en-us/api-reference/beta/resources/intune_deviceconfig_ipv6range" />
         <Item text="キーの値" url="/en-us/api-reference/beta/resources/intune_deviceconfig_keyvalue" />
-        <Item text="デバイスの検索アクションの結果" url="/en-us/api-reference/beta/resources/intune_devices_locatedeviceactionresult" />
         <Item text="macOS 証明書のプロファイル ベース" url="/en-us/api-reference/beta/resources/intune_deviceconfig_macoscertificateprofilebase">
           <Item text="リスト" url="/en-us/api-reference/beta/api/intune_deviceconfig_macoscertificateprofilebase_list" />
           <Item text="取得" url="/en-us/api-reference/beta/api/intune_deviceconfig_macoscertificateprofilebase_get" />
@@ -3818,39 +3774,6 @@
           <Item text="削除" url="/en-us/api-reference/beta/api/intune_deviceconfig_manageddevicecertificatestate_delete" />
           <Item text="更新" url="/en-us/api-reference/beta/api/intune_deviceconfig_manageddevicecertificatestate_update" />
         </Item>
-        <Item text="管理対象デバイスの概要" url="/en-us/api-reference/beta/resources/intune_devices_manageddeviceoverview">
-          <Item text="取得" url="/en-us/api-reference/beta/api/intune_devices_manageddeviceoverview_get" />
-          <Item text="更新" url="/en-us/api-reference/beta/api/intune_devices_manageddeviceoverview_update" />
-        </Item>
-        <Item text="管理対象デバイス" url="/en-us/api-reference/beta/resources/intune_deviceconfig_manageddevice">
-          <Item text="一覧表示" url="/en-us/api-reference/beta/api/intune_deviceconfig_manageddevice_list" />
-          <Item text="取得" url="/en-us/api-reference/beta/api/intune_deviceconfig_manageddevice_get" />
-        </Item>
-        <Item text="管理対象デバイス" url="/en-us/api-reference/beta/resources/intune_devices_manageddevice">
-          <Item text="取得" url="/en-us/api-reference/beta/api/intune_devices_manageddevice_get" />
-          <Item text="更新" url="/en-us/api-reference/beta/api/intune_devices_manageddevice_update" />
-          <Item text="executeAction アクション" url="/en-us/api-reference/beta/api/intune_devices_manageddevice_executeaction" />
-          <Item text="enableLostMode アクション" url="/en-us/api-reference/beta/api/intune_devices_manageddevice_enablelostmode" />
-          <Item text="アクションの破棄" url="/en-us/api-reference/beta/api/intune_devices_manageddevice_retire" />
-          <Item text="ワイプ アクション" url="/en-us/api-reference/beta/api/intune_devices_manageddevice_wipe" />
-          <Item text="resetPasscode アクション" url="/en-us/api-reference/beta/api/intune_devices_manageddevice_resetpasscode" />
-          <Item text="remoteLock アクション" url="/en-us/api-reference/beta/api/intune_devices_manageddevice_remotelock" />
-          <Item text="requestRemoteAssistance アクション" url="/en-us/api-reference/beta/api/intune_devices_manageddevice_requestremoteassistance" />
-          <Item text="disableLostMode アクション" url="/en-us/api-reference/beta/api/intune_devices_manageddevice_disablelostmode" />
-          <Item text="locateDevice アクション" url="/en-us/api-reference/beta/api/intune_devices_manageddevice_locatedevice" />
-          <Item text="bypassActivationLock アクション" url="/en-us/api-reference/beta/api/intune_devices_manageddevice_bypassactivationlock" />
-          <Item text="rebootNow アクション" url="/en-us/api-reference/beta/api/intune_devices_manageddevice_rebootnow" />
-          <Item text="shutDown action アクション" url="/en-us/api-reference/beta/api/intune_devices_manageddevice_shutdown" />
-          <Item text="recoverPasscode アクション" url="/en-us/api-reference/beta/api/intune_devices_manageddevice_recoverpasscode" />
-          <Item text="cleanWindowsDevice アクション" url="/en-us/api-reference/beta/api/intune_devices_manageddevice_cleanwindowsdevice" />
-          <Item text="logoutSharedAppleDeviceActiveUser アクション" url="/en-us/api-reference/beta/api/intune_devices_manageddevice_logoutsharedappledeviceactiveuser" />
-          <Item text="deleteUserFromSharedAppleDevice アクション" url="/en-us/api-reference/beta/api/intune_devices_manageddevice_deleteuserfromsharedappledevice" />
-          <Item text="syncDevice アクション" url="/en-us/api-reference/beta/api/intune_devices_manageddevice_syncdevice" />
-          <Item text="windowsDefenderScan アクション" url="/en-us/api-reference/beta/api/intune_devices_manageddevice_windowsdefenderscan" />
-          <Item text="windowsDefenderUpdateSignatures アクション" url="/en-us/api-reference/beta/api/intune_devices_manageddevice_windowsdefenderupdatesignatures" />
-          <Item text="updateWindowsDeviceAccount アクション" url="/en-us/api-reference/beta/api/intune_devices_manageddevice_updatewindowsdeviceaccount" />
-          <Item text="revokeAppleVppLicenses アクション" url="/en-us/api-reference/beta/api/intune_devices_manageddevice_revokeapplevpplicenses" />
-        </Item>
         <Item text="メディア コンテンツのレーティング、オーストラリア" url="/en-us/api-reference/beta/resources/intune_deviceconfig_mediacontentratingaustralia" />
         <Item text="メディア コンテンツのレーティング、カナダ" url="/en-us/api-reference/beta/resources/intune_deviceconfig_mediacontentratingcanada" />
         <Item text="メディア コンテンツのレーティング、フランス" url="/en-us/api-reference/beta/resources/intune_deviceconfig_mediacontentratingfrance" />
@@ -3878,22 +3801,11 @@
         <Item text="OMA 設定" url="/en-us/api-reference/beta/resources/intune_deviceconfig_omasetting" />
         <Item text="オペレーティング システムのバージョンの範囲" url="/en-us/api-reference/beta/resources/intune_deviceconfig_operatingsystemversionrange" />
         <Item text="プロキシ化されたドメイン" url="/en-us/api-reference/beta/resources/intune_deviceconfig_proxieddomain" />
-        <Item text="リモート アクションの監査" url="/en-us/api-reference/beta/resources/intune_devices_remoteactionaudit">
-          <Item text="一覧表示" url="/en-us/api-reference/beta/api/intune_devices_remoteactionaudit_list" />
-          <Item text="取得" url="/en-us/api-reference/beta/api/intune_devices_remoteactionaudit_get" />
-          <Item text="作成" url="/en-us/api-reference/beta/api/intune_devices_remoteactionaudit_create" />
-          <Item text="削除" url="/en-us/api-reference/beta/api/intune_devices_remoteactionaudit_delete" />
-          <Item text="更新" url="/en-us/api-reference/beta/api/intune_devices_remoteactionaudit_update" />
-        </Item>
-        <Item text="リモート ロック アクションの結果" url="/en-us/api-reference/beta/resources/intune_devices_remotelockactionresult" />
         <Item text="レポートのルート" url="/en-us/api-reference/beta/resources/intune_deviceconfig_reportroot">
           <Item text="取得" url="/en-us/api-reference/beta/api/intune_deviceconfig_reportroot_get" />
           <Item text="更新" url="/en-us/api-reference/beta/api/intune_deviceconfig_reportroot_update" />
         </Item>
         <Item text="レポート" url="/en-us/api-reference/beta/resources/intune_deviceconfig_report" />
-        <Item text="パスコードのリセット アクションの結果" url="/en-us/api-reference/beta/resources/intune_devices_resetpasscodeactionresult" />
-        <Item text="Apple VPP ライセンスのアクションの結果の取り消し" url="/en-us/api-reference/beta/resources/intune_devices_revokeapplevpplicensesactionresult" />
-        <Item text="実行スケジュール" url="/en-us/api-reference/beta/resources/intune_devices_runschedule" />
         <Item text="ソースの設定" url="/en-us/api-reference/beta/resources/intune_deviceconfig_settingsource" />
         <Item text="状態デバイス設定要約" url="/en-us/api-reference/beta/resources/intune_deviceconfig_settingstatedevicesummary">
           <Item text="一覧表示" url="/en-us/api-reference/beta/api/intune_deviceconfig_settingstatedevicesummary_list" />
@@ -3902,7 +3814,6 @@
           <Item text="削除" url="/en-us/api-reference/beta/api/intune_deviceconfig_settingstatedevicesummary_delete" />
           <Item text="更新" url="/en-us/api-reference/beta/api/intune_deviceconfig_settingstatedevicesummary_update" />
         </Item>
-        <Item text="共有 Apple デバイス ユーザー" url="/en-us/api-reference/beta/resources/intune_devices_sharedappledeviceuser" />
         <Item text="共有 PC アカウント マネージャー ポリシー" url="/en-us/api-reference/beta/resources/intune_deviceconfig_sharedpcaccountmanagerpolicy" />
         <Item text="共有 PC 構成" url="/en-us/api-reference/beta/resources/intune_deviceconfig_sharedpcconfiguration">
           <Item text="リスト" url="/en-us/api-reference/beta/api/intune_deviceconfig_sharedpcconfiguration_list" />
@@ -3915,23 +3826,7 @@
           <Item text="取得" url="/en-us/api-reference/beta/api/intune_deviceconfig_softwareupdatestatussummary_get" />
           <Item text="更新" url="/en-us/api-reference/beta/api/intune_deviceconfig_softwareupdatestatussummary_update" />
         </Item>
-        <Item text="Windows のデバイス アカウントのアクション パラメーターの更新" url="/en-us/api-reference/beta/resources/intune_devices_updatewindowsdeviceaccountactionparameter" />
         <Item text="URI" url="/en-us/api-reference/beta/resources/intune_deviceconfig_uri" />
-        <Item text="ユーザー" url="/en-us/api-reference/beta/resources/intune_devices_user">
-          <Item text="一覧表示" url="/en-us/api-reference/beta/api/intune_devices_user_list" />
-          <Item text="取得" url="/en-us/api-reference/beta/api/intune_devices_user_get" />
-          <Item text="作成" url="/en-us/api-reference/beta/api/intune_devices_user_create" />
-          <Item text="削除" url="/en-us/api-reference/beta/api/intune_devices_user_delete" />
-          <Item text="更新" url="/en-us/api-reference/beta/api/intune_devices_user_update" />
-          <Item text="removeAllDevicesFromManagement アクション" url="/en-us/api-reference/beta/api/intune_devices_user_removealldevicesfrommanagement" />
-        </Item>
-        <Item text="ユーザー" url="/en-us/api-reference/beta/resources/intune_troubleshooting_user">
-          <Item text="一覧表示" url="/en-us/api-reference/beta/api/intune_troubleshooting_user_list" />
-          <Item text="取得" url="/en-us/api-reference/beta/api/intune_troubleshooting_user_get" />
-          <Item text="作成" url="/en-us/api-reference/beta/api/intune_troubleshooting_user_create" />
-          <Item text="削除" url="/en-us/api-reference/beta/api/intune_troubleshooting_user_delete" />
-          <Item text="更新" url="/en-us/api-reference/beta/api/intune_troubleshooting_user_update" />
-        </Item>
         <Item text="VPN DNS 規則" url="/en-us/api-reference/beta/resources/intune_deviceconfig_vpndnsrule" />
         <Item text="VPN オンデマンド規則" url="/en-us/api-reference/beta/resources/intune_deviceconfig_vpnondemandrule" />
         <Item text="VPN プロキシ サーバー" url="/en-us/api-reference/beta/resources/intune_deviceconfig_vpnproxyserver" />
@@ -3984,6 +3879,20 @@
           <Item text="作成" url="/en-us/api-reference/beta/api/intune_deviceconfig_windows10generalconfiguration_create" />
           <Item text="削除" url="/en-us/api-reference/beta/api/intune_deviceconfig_windows10generalconfiguration_delete" />
           <Item text="更新" url="/en-us/api-reference/beta/api/intune_deviceconfig_windows10generalconfiguration_update" />
+        </Item>
+        <Item text="Windows 10 のインポートした PFX 証明書のプロファイル" url="/en-us/api-reference/beta/resources/intune_deviceconfig_windows10importedpfxcertificateprofile">
+          <Item text="リスト" url="/en-us/api-reference/beta/api/intune_deviceconfig_windows10importedpfxcertificateprofile_list" />
+          <Item text="取得" url="/en-us/api-reference/beta/api/intune_deviceconfig_windows10importedpfxcertificateprofile_get" />
+          <Item text="作成" url="/en-us/api-reference/beta/api/intune_deviceconfig_windows10importedpfxcertificateprofile_create" />
+          <Item text="削除" url="/en-us/api-reference/beta/api/intune_deviceconfig_windows10importedpfxcertificateprofile_delete" />
+          <Item text="更新" url="/en-us/api-reference/beta/api/intune_deviceconfig_windows10importedpfxcertificateprofile_update" />
+        </Item>
+        <Item text="Windows 10 のキオスク構成" url="/en-us/api-reference/beta/resources/intune_deviceconfig_windows10kioskconfiguration">
+          <Item text="リスト" url="/en-us/api-reference/beta/api/intune_deviceconfig_windows10kioskconfiguration_list" />
+          <Item text="取得" url="/en-us/api-reference/beta/api/intune_deviceconfig_windows10kioskconfiguration_get" />
+          <Item text="作成" url="/en-us/api-reference/beta/api/intune_deviceconfig_windows10kioskconfiguration_create" />
+          <Item text="削除" url="/en-us/api-reference/beta/api/intune_deviceconfig_windows10kioskconfiguration_delete" />
+          <Item text="更新" url="/en-us/api-reference/beta/api/intune_deviceconfig_windows10kioskconfiguration_update" />
         </Item>
         <Item text="Windows 10 モバイル コンプライアンス ポリシー" url="/en-us/api-reference/beta/resources/intune_deviceconfig_windows10mobilecompliancepolicy">
           <Item text="リスト" url="/en-us/api-reference/beta/api/intune_deviceconfig_windows10mobilecompliancepolicy_list" />
@@ -4101,17 +4010,6 @@
           <Item text="削除" url="/en-us/api-reference/beta/api/intune_deviceconfig_windowsdefenderadvancedthreatprotectionconfiguration_delete" />
           <Item text="更新" url="/en-us/api-reference/beta/api/intune_deviceconfig_windowsdefenderadvancedthreatprotectionconfiguration_update" />
         </Item>
-        <Item text="Windows defender のスキャン アクションの結果" url="/en-us/api-reference/beta/resources/intune_devices_windowsdefenderscanactionresult" />
-        <Item text="Windows のデバイス アカウント" url="/en-us/api-reference/beta/resources/intune_devices_windowsdeviceaccount" />
-        <Item text="Windows のデバイス AD アカウント" url="/en-us/api-reference/beta/resources/intune_devices_windowsdeviceadaccount" />
-        <Item text="Windows のデバイス Azure AD アカウント" url="/en-us/api-reference/beta/resources/intune_devices_windowsdeviceazureadaccount" />
-        <Item text="Windows デバイス マルウェアの状態" url="/en-us/api-reference/beta/resources/intune_devices_windowsdevicemalwarestate">
-          <Item text="リスト" url="/en-us/api-reference/beta/api/intune_devices_windowsdevicemalwarestate_list" />
-          <Item text="取得" url="/en-us/api-reference/beta/api/intune_devices_windowsdevicemalwarestate_get" />
-          <Item text="作成" url="/en-us/api-reference/beta/api/intune_devices_windowsdevicemalwarestate_create" />
-          <Item text="削除" url="/en-us/api-reference/beta/api/intune_devices_windowsdevicemalwarestate_delete" />
-          <Item text="更新" url="/en-us/api-reference/beta/api/intune_devices_windowsdevicemalwarestate_update" />
-        </Item>
         <Item text="Windows ドメイン参加の構成" url="/en-us/api-reference/beta/resources/intune_deviceconfig_windowsdomainjoinconfiguration">
           <Item text="一覧表示" url="/en-us/api-reference/beta/api/intune_deviceconfig_windowsdomainjoinconfiguration_list" />
           <Item text="取得" url="/en-us/api-reference/beta/api/intune_deviceconfig_windowsdomainjoinconfiguration_get" />
@@ -4120,35 +4018,6 @@
           <Item text="更新" url="/en-us/api-reference/beta/api/intune_deviceconfig_windowsdomainjoinconfiguration_update" />
         </Item>
         <Item text="Windows ファイアウォール ネットワーク プロファイル" url="/en-us/api-reference/beta/resources/intune_deviceconfig_windowsfirewallnetworkprofile" />
-        <Item text="Windows マルウェア情報" url="/en-us/api-reference/beta/resources/intune_devices_windowsmalwareinformation">
-          <Item text="リスト" url="/en-us/api-reference/beta/api/intune_devices_windowsmalwareinformation_list" />
-          <Item text="取得" url="/en-us/api-reference/beta/api/intune_devices_windowsmalwareinformation_get" />
-          <Item text="作成" url="/en-us/api-reference/beta/api/intune_devices_windowsmalwareinformation_create" />
-          <Item text="削除" url="/en-us/api-reference/beta/api/intune_devices_windowsmalwareinformation_delete" />
-          <Item text="更新" url="/en-us/api-reference/beta/api/intune_devices_windowsmalwareinformation_update" />
-        </Item>
-        <Item text="Windows 管理対象デバイス" url="/en-us/api-reference/beta/resources/intune_devices_windowsmanageddevice">
-          <Item text="一覧表示" url="/en-us/api-reference/beta/api/intune_devices_windowsmanageddevice_list" />
-          <Item text="取得" url="/en-us/api-reference/beta/api/intune_devices_windowsmanageddevice_get" />
-          <Item text="作成" url="/en-us/api-reference/beta/api/intune_devices_windowsmanageddevice_create" />
-          <Item text="削除" url="/en-us/api-reference/beta/api/intune_devices_windowsmanageddevice_delete" />
-          <Item text="更新" url="/en-us/api-reference/beta/api/intune_devices_windowsmanageddevice_update" />
-        </Item>
-        <Item text="Windows 管理アプリの正常性状態" url="/en-us/api-reference/beta/resources/intune_devices_windowsmanagementapphealthstate">
-          <Item text="一覧表示" url="/en-us/api-reference/beta/api/intune_devices_windowsmanagementapphealthstate_list" />
-          <Item text="取得" url="/en-us/api-reference/beta/api/intune_devices_windowsmanagementapphealthstate_get" />
-          <Item text="作成" url="/en-us/api-reference/beta/api/intune_devices_windowsmanagementapphealthstate_create" />
-          <Item text="削除" url="/en-us/api-reference/beta/api/intune_devices_windowsmanagementapphealthstate_delete" />
-          <Item text="更新" url="/en-us/api-reference/beta/api/intune_devices_windowsmanagementapphealthstate_update" />
-        </Item>
-        <Item text="Windows 管理アプリの正常性の要約" url="/en-us/api-reference/beta/resources/intune_devices_windowsmanagementapphealthsummary">
-          <Item text="取得" url="/en-us/api-reference/beta/api/intune_devices_windowsmanagementapphealthsummary_get" />
-          <Item text="更新" url="/en-us/api-reference/beta/api/intune_devices_windowsmanagementapphealthsummary_update" />
-        </Item>
-        <Item text="Windows 管理アプリ" url="/en-us/api-reference/beta/resources/intune_devices_windowsmanagementapp">
-          <Item text="取得" url="/en-us/api-reference/beta/api/intune_devices_windowsmanagementapp_get" />
-          <Item text="更新" url="/en-us/api-reference/beta/api/intune_devices_windowsmanagementapp_update" />
-        </Item>
         <Item text="Windows のネットワークの分離のポリシー" url="/en-us/api-reference/beta/resources/intune_deviceconfig_windowsnetworkisolationpolicy" />
         <Item text="Windows Phone 8.1 証明書のプロファイル ベース" url="/en-us/api-reference/beta/resources/intune_deviceconfig_windowsphone81certificateprofilebase">
           <Item text="リスト" url="/en-us/api-reference/beta/api/intune_deviceconfig_windowsphone81certificateprofilebase_list" />
@@ -4174,6 +4043,13 @@
           <Item text="作成" url="/en-us/api-reference/beta/api/intune_deviceconfig_windowsphone81generalconfiguration_create" />
           <Item text="削除" url="/en-us/api-reference/beta/api/intune_deviceconfig_windowsphone81generalconfiguration_delete" />
           <Item text="更新" url="/en-us/api-reference/beta/api/intune_deviceconfig_windowsphone81generalconfiguration_update" />
+        </Item>
+        <Item text="Windows Phone 8.1 のインポートした PFX 証明書のプロファイル" url="/en-us/api-reference/beta/resources/intune_deviceconfig_windowsphone81importedpfxcertificateprofile">
+          <Item text="リスト" url="/en-us/api-reference/beta/api/intune_deviceconfig_windowsphone81importedpfxcertificateprofile_list" />
+          <Item text="取得" url="/en-us/api-reference/beta/api/intune_deviceconfig_windowsphone81importedpfxcertificateprofile_get" />
+          <Item text="作成" url="/en-us/api-reference/beta/api/intune_deviceconfig_windowsphone81importedpfxcertificateprofile_create" />
+          <Item text="削除" url="/en-us/api-reference/beta/api/intune_deviceconfig_windowsphone81importedpfxcertificateprofile_delete" />
+          <Item text="更新" url="/en-us/api-reference/beta/api/intune_deviceconfig_windowsphone81importedpfxcertificateprofile_update" />
         </Item>
         <Item text="Windows Phone 8.1 SCEP 証明書のプロファイル" url="/en-us/api-reference/beta/resources/intune_deviceconfig_windowsphone81scepcertificateprofile">
           <Item text="リスト" url="/en-us/api-reference/beta/api/intune_deviceconfig_windowsphone81scepcertificateprofile_list" />
@@ -4210,10 +4086,6 @@
           <Item text="削除" url="/en-us/api-reference/beta/api/intune_deviceconfig_windowsprivacydataaccesscontrolitem_delete" />
           <Item text="更新" url="/en-us/api-reference/beta/api/intune_deviceconfig_windowsprivacydataaccesscontrolitem_update" />
         </Item>
-        <Item text="Windows 保護の状態" url="/en-us/api-reference/beta/resources/intune_devices_windowsprotectionstate">
-          <Item text="取得" url="/en-us/api-reference/beta/api/intune_devices_windowsprotectionstate_get" />
-          <Item text="更新" url="/en-us/api-reference/beta/api/intune_devices_windowsprotectionstate_update" />
-        </Item>
         <Item text="Windows Update アクティブ期間インストール" url="/en-us/api-reference/beta/resources/intune_deviceconfig_windowsupdateactivehoursinstall" />
         <Item text="Windows Update for Business 構成" url="/en-us/api-reference/beta/resources/intune_deviceconfig_windowsupdateforbusinessconfiguration">
           <Item text="リスト" url="/en-us/api-reference/beta/api/intune_deviceconfig_windowsupdateforbusinessconfiguration_list" />
@@ -4230,6 +4102,106 @@
         </Item>
       </Item>
       <Item text="デバイスの管理" url="/en-us/api-reference/beta/resources/intune_corpenrollment_devicemanagement">
+        <Item text="管理者の同意" url="/en-us/api-reference/beta/resources/intune_devices_adminconsent" />
+        <Item text="すべてのデバイスの割り当て先" url="/en-us/api-reference/beta/resources/intune_devices_alldevicesassignmenttarget" />
+        <Item text="すべてのライセンス ユーザーの割り当て先" url="/en-us/api-reference/beta/resources/intune_devices_alllicensedusersassignmenttarget" />
+        <Item text="Apple プッシュ通知証明書" url="/en-us/api-reference/beta/resources/intune_devices_applepushnotificationcertificate">
+          <Item text="取得" url="/en-us/api-reference/beta/api/intune_devices_applepushnotificationcertificate_get" />
+          <Item text="更新" url="/en-us/api-reference/beta/api/intune_devices_applepushnotificationcertificate_update" />
+        </Item>
+        <Item text="監査アクター" url="/en-us/api-reference/beta/resources/intune_auditing_auditactor" />
+        <Item text="監査イベント" url="/en-us/api-reference/beta/resources/intune_auditing_auditevent">
+          <Item text="一覧表示" url="/en-us/api-reference/beta/api/intune_auditing_auditevent_list" />
+          <Item text="取得" url="/en-us/api-reference/beta/api/intune_auditing_auditevent_get" />
+          <Item text="作成" url="/en-us/api-reference/beta/api/intune_auditing_auditevent_create" />
+          <Item text="削除" url="/en-us/api-reference/beta/api/intune_auditing_auditevent_delete" />
+          <Item text="更新" url="/en-us/api-reference/beta/api/intune_auditing_auditevent_update" />
+        </Item>
+        <Item text="監査のプロパティ" url="/en-us/api-reference/beta/resources/intune_auditing_auditproperty" />
+        <Item text="監査のリソース" url="/en-us/api-reference/beta/resources/intune_auditing_auditresource" />
+        <Item text="管理対象デバイスのアクションの一括結果" url="/en-us/api-reference/beta/resources/intune_devices_bulkmanageddeviceactionresult" />
+        <Item text="構成マネージャーのクライアントに対応した機能" url="/en-us/api-reference/beta/resources/intune_devices_configurationmanagerclientenabledfeatures" />
+        <Item text="日単位のスケジュール" url="/en-us/api-reference/beta/resources/intune_devices_dailyschedule" />
+        <Item text="共有の Apple デバイスのアクションの結果からユーザーを削除する" url="/en-us/api-reference/beta/resources/intune_devices_deleteuserfromsharedappledeviceactionresult" />
+        <Item text="検出されたアプリ" url="/en-us/api-reference/beta/resources/intune_devices_detectedapp">
+          <Item text="一覧表示" url="/en-us/api-reference/beta/api/intune_devices_detectedapp_list" />
+          <Item text="取得" url="/en-us/api-reference/beta/api/intune_devices_detectedapp_get" />
+          <Item text="作成" url="/en-us/api-reference/beta/api/intune_devices_detectedapp_create" />
+          <Item text="削除" url="/en-us/api-reference/beta/api/intune_devices_detectedapp_delete" />
+          <Item text="更新" url="/en-us/api-reference/beta/api/intune_devices_detectedapp_update" />
+        </Item>
+        <Item text="デバイスのアクションの結果" url="/en-us/api-reference/beta/resources/intune_devices_deviceactionresult" />
+        <Item text="デバイスおよびアプリ管理の割り当て先" url="/en-us/api-reference/beta/resources/intune_devices_deviceandappmanagementassignmenttarget" />
+        <Item text="デバイス アプリの管理" url="/en-us/api-reference/beta/resources/intune_devices_deviceappmanagement">
+          <Item text="取得" url="/en-us/api-reference/beta/api/intune_devices_deviceappmanagement_get" />
+          <Item text="更新" url="/en-us/api-reference/beta/api/intune_devices_deviceappmanagement_update" />
+        </Item>
+        <Item text="デバイス カテゴリ" url="/en-us/api-reference/beta/resources/intune_devices_devicecategory">
+          <Item text="取得" url="/en-us/api-reference/beta/api/intune_devices_devicecategory_get" />
+          <Item text="更新" url="/en-us/api-reference/beta/api/intune_devices_devicecategory_update" />
+        </Item>
+        <Item text="デバイスの Exchange アクセス状態の要約" url="/en-us/api-reference/beta/resources/intune_devices_deviceexchangeaccessstatesummary" />
+        <Item text="デバイスの位置情報" url="/en-us/api-reference/beta/resources/intune_devices_devicegeolocation" />
+        <Item text="デバイスの正常性構成証明の状態" url="/en-us/api-reference/beta/resources/intune_devices_devicehealthattestationstate" />
+        <Item text="デバイス管理スクリプトの割り当て" url="/en-us/api-reference/beta/resources/intune_devices_devicemanagementscriptassignment">
+          <Item text="リスト" url="/en-us/api-reference/beta/api/intune_devices_devicemanagementscriptassignment_list" />
+          <Item text="取得" url="/en-us/api-reference/beta/api/intune_devices_devicemanagementscriptassignment_get" />
+          <Item text="作成" url="/en-us/api-reference/beta/api/intune_devices_devicemanagementscriptassignment_create" />
+          <Item text="削除" url="/en-us/api-reference/beta/api/intune_devices_devicemanagementscriptassignment_delete" />
+          <Item text="更新" url="/en-us/api-reference/beta/api/intune_devices_devicemanagementscriptassignment_update" />
+        </Item>
+        <Item text="デバイス管理スクリプト デバイスの状態" url="/en-us/api-reference/beta/resources/intune_devices_devicemanagementscriptdevicestate">
+          <Item text="一覧表示" url="/en-us/api-reference/beta/api/intune_devices_devicemanagementscriptdevicestate_list" />
+          <Item text="取得" url="/en-us/api-reference/beta/api/intune_devices_devicemanagementscriptdevicestate_get" />
+          <Item text="作成" url="/en-us/api-reference/beta/api/intune_devices_devicemanagementscriptdevicestate_create" />
+          <Item text="削除" url="/en-us/api-reference/beta/api/intune_devices_devicemanagementscriptdevicestate_delete" />
+          <Item text="更新" url="/en-us/api-reference/beta/api/intune_devices_devicemanagementscriptdevicestate_update" />
+        </Item>
+        <Item text="デバイス管理スクリプトのグループの割り当て" url="/en-us/api-reference/beta/resources/intune_devices_devicemanagementscriptgroupassignment">
+          <Item text="リスト" url="/en-us/api-reference/beta/api/intune_devices_devicemanagementscriptgroupassignment_list" />
+          <Item text="取得" url="/en-us/api-reference/beta/api/intune_devices_devicemanagementscriptgroupassignment_get" />
+          <Item text="作成" url="/en-us/api-reference/beta/api/intune_devices_devicemanagementscriptgroupassignment_create" />
+          <Item text="削除" url="/en-us/api-reference/beta/api/intune_devices_devicemanagementscriptgroupassignment_delete" />
+          <Item text="更新" url="/en-us/api-reference/beta/api/intune_devices_devicemanagementscriptgroupassignment_update" />
+        </Item>
+        <Item text="デバイス管理スクリプトの実行の要約" url="/en-us/api-reference/beta/resources/intune_devices_devicemanagementscriptrunsummary">
+          <Item text="取得" url="/en-us/api-reference/beta/api/intune_devices_devicemanagementscriptrunsummary_get" />
+          <Item text="更新" url="/en-us/api-reference/beta/api/intune_devices_devicemanagementscriptrunsummary_update" />
+        </Item>
+        <Item text="デバイス管理スクリプト ユーザーの状態" url="/en-us/api-reference/beta/resources/intune_devices_devicemanagementscriptuserstate">
+          <Item text="一覧表示" url="/en-us/api-reference/beta/api/intune_devices_devicemanagementscriptuserstate_list" />
+          <Item text="取得" url="/en-us/api-reference/beta/api/intune_devices_devicemanagementscriptuserstate_get" />
+          <Item text="作成" url="/en-us/api-reference/beta/api/intune_devices_devicemanagementscriptuserstate_create" />
+          <Item text="削除" url="/en-us/api-reference/beta/api/intune_devices_devicemanagementscriptuserstate_delete" />
+          <Item text="更新" url="/en-us/api-reference/beta/api/intune_devices_devicemanagementscriptuserstate_update" />
+        </Item>
+        <Item text="デバイスの管理スクリプト" url="/en-us/api-reference/beta/resources/intune_devices_devicemanagementscript">
+          <Item text="リスト" url="/en-us/api-reference/beta/api/intune_devices_devicemanagementscript_list" />
+          <Item text="取得" url="/en-us/api-reference/beta/api/intune_devices_devicemanagementscript_get" />
+          <Item text="作成" url="/en-us/api-reference/beta/api/intune_devices_devicemanagementscript_create" />
+          <Item text="削除" url="/en-us/api-reference/beta/api/intune_devices_devicemanagementscript_delete" />
+          <Item text="更新" url="/en-us/api-reference/beta/api/intune_devices_devicemanagementscript_update" />
+          <Item text="アクションの割り当て" url="/en-us/api-reference/beta/api/intune_devices_devicemanagementscript_assign" />
+        </Item>
+        <Item text="デバイス管理のトラブルシューティング イベント" url="/en-us/api-reference/beta/resources/intune_troubleshooting_devicemanagementtroubleshootingevent">
+          <Item text="一覧表示" url="/en-us/api-reference/beta/api/intune_troubleshooting_devicemanagementtroubleshootingevent_list" />
+          <Item text="取得" url="/en-us/api-reference/beta/api/intune_troubleshooting_devicemanagementtroubleshootingevent_get" />
+          <Item text="作成" url="/en-us/api-reference/beta/api/intune_troubleshooting_devicemanagementtroubleshootingevent_create" />
+          <Item text="削除" url="/en-us/api-reference/beta/api/intune_troubleshooting_devicemanagementtroubleshootingevent_delete" />
+          <Item text="更新" url="/en-us/api-reference/beta/api/intune_troubleshooting_devicemanagementtroubleshootingevent_update" />
+        </Item>
+        <Item text="デバイスの管理" url="/en-us/api-reference/beta/resources/intune_devices_devicemanagement">
+          <Item text="取得" url="/en-us/api-reference/beta/api/intune_devices_devicemanagement_get" />
+          <Item text="更新" url="/en-us/api-reference/beta/api/intune_devices_devicemanagement_update" />
+        </Item>
+        <Item text="デバイスの管理" url="/en-us/api-reference/beta/resources/intune_auditing_devicemanagement">
+          <Item text="取得" url="/en-us/api-reference/beta/api/intune_auditing_devicemanagement_get" />
+          <Item text="更新" url="/en-us/api-reference/beta/api/intune_auditing_devicemanagement_update" />
+        </Item>
+        <Item text="デバイスの管理" url="/en-us/api-reference/beta/resources/intune_endpointprotection_devicemanagement">
+          <Item text="取得" url="/en-us/api-reference/beta/api/intune_endpointprotection_devicemanagement_get" />
+          <Item text="更新" url="/en-us/api-reference/beta/api/intune_endpointprotection_devicemanagement_update" />
+        </Item>
         <Item text="デバイスの管理" url="/en-us/api-reference/beta/resources/intune_notification_devicemanagement">
           <Item text="取得" url="/en-us/api-reference/beta/api/intune_notification_devicemanagement_get" />
           <Item text="更新" url="/en-us/api-reference/beta/api/intune_notification_devicemanagement_update" />
@@ -4238,12 +4210,59 @@
           <Item text="取得" url="/en-us/api-reference/beta/api/intune_remoteassistance_devicemanagement_get" />
           <Item text="更新" url="/en-us/api-reference/beta/api/intune_remoteassistance_devicemanagement_update" />
         </Item>
+        <Item text="デバイスの管理" url="/en-us/api-reference/beta/resources/intune_troubleshooting_devicemanagement">
+          <Item text="取得" url="/en-us/api-reference/beta/api/intune_troubleshooting_devicemanagement_get" />
+          <Item text="更新" url="/en-us/api-reference/beta/api/intune_troubleshooting_devicemanagement_update" />
+        </Item>
+        <Item text="デバイスのオペレーティング システムの概要" url="/en-us/api-reference/beta/resources/intune_devices_deviceoperatingsystemsummary" />
+        <Item text="デバイス保護の概要" url="/en-us/api-reference/beta/resources/intune_devices_deviceprotectionoverview" />
+        <Item text="登録のトラブルシューティング イベント" url="/en-us/api-reference/beta/resources/intune_troubleshooting_enrollmenttroubleshootingevent">
+          <Item text="一覧表示" url="/en-us/api-reference/beta/api/intune_troubleshooting_enrollmenttroubleshootingevent_list" />
+          <Item text="取得" url="/en-us/api-reference/beta/api/intune_troubleshooting_enrollmenttroubleshootingevent_get" />
+          <Item text="作成" url="/en-us/api-reference/beta/api/intune_troubleshooting_enrollmenttroubleshootingevent_create" />
+          <Item text="削除" url="/en-us/api-reference/beta/api/intune_troubleshooting_enrollmenttroubleshootingevent_delete" />
+          <Item text="更新" url="/en-us/api-reference/beta/api/intune_troubleshooting_enrollmenttroubleshootingevent_update" />
+        </Item>
+        <Item text="除外グループの割り当て先" url="/en-us/api-reference/beta/resources/intune_devices_exclusiongroupassignmenttarget" />
+        <Item text="グループの割り当て先" url="/en-us/api-reference/beta/resources/intune_devices_groupassignmenttarget" />
+        <Item text="ハードウェア情報" url="/en-us/api-reference/beta/resources/intune_devices_hardwareinformation" />
+        <Item text="1 時間ごとのスケジュール" url="/en-us/api-reference/beta/resources/intune_devices_hourlyschedule" />
         <Item text="ローカライズ済み通知メッセージ" url="/en-us/api-reference/beta/resources/intune_notification_localizednotificationmessage">
           <Item text="リスト" url="/en-us/api-reference/beta/api/intune_notification_localizednotificationmessage_list" />
           <Item text="取得" url="/en-us/api-reference/beta/api/intune_notification_localizednotificationmessage_get" />
           <Item text="作成" url="/en-us/api-reference/beta/api/intune_notification_localizednotificationmessage_create" />
           <Item text="削除" url="/en-us/api-reference/beta/api/intune_notification_localizednotificationmessage_delete" />
           <Item text="更新" url="/en-us/api-reference/beta/api/intune_notification_localizednotificationmessage_update" />
+        </Item>
+        <Item text="デバイスの検索アクションの結果" url="/en-us/api-reference/beta/resources/intune_devices_locatedeviceactionresult" />
+        <Item text="管理対象デバイスの概要" url="/en-us/api-reference/beta/resources/intune_devices_manageddeviceoverview">
+          <Item text="取得" url="/en-us/api-reference/beta/api/intune_devices_manageddeviceoverview_get" />
+          <Item text="更新" url="/en-us/api-reference/beta/api/intune_devices_manageddeviceoverview_update" />
+        </Item>
+        <Item text="管理対象デバイス" url="/en-us/api-reference/beta/resources/intune_devices_manageddevice">
+          <Item text="取得" url="/en-us/api-reference/beta/api/intune_devices_manageddevice_get" />
+          <Item text="更新" url="/en-us/api-reference/beta/api/intune_devices_manageddevice_update" />
+          <Item text="executeAction アクション" url="/en-us/api-reference/beta/api/intune_devices_manageddevice_executeaction" />
+          <Item text="enableLostMode アクション" url="/en-us/api-reference/beta/api/intune_devices_manageddevice_enablelostmode" />
+          <Item text="アクションの破棄" url="/en-us/api-reference/beta/api/intune_devices_manageddevice_retire" />
+          <Item text="ワイプ アクション" url="/en-us/api-reference/beta/api/intune_devices_manageddevice_wipe" />
+          <Item text="resetPasscode アクション" url="/en-us/api-reference/beta/api/intune_devices_manageddevice_resetpasscode" />
+          <Item text="remoteLock アクション" url="/en-us/api-reference/beta/api/intune_devices_manageddevice_remotelock" />
+          <Item text="requestRemoteAssistance アクション" url="/en-us/api-reference/beta/api/intune_devices_manageddevice_requestremoteassistance" />
+          <Item text="disableLostMode アクション" url="/en-us/api-reference/beta/api/intune_devices_manageddevice_disablelostmode" />
+          <Item text="locateDevice アクション" url="/en-us/api-reference/beta/api/intune_devices_manageddevice_locatedevice" />
+          <Item text="bypassActivationLock アクション" url="/en-us/api-reference/beta/api/intune_devices_manageddevice_bypassactivationlock" />
+          <Item text="rebootNow アクション" url="/en-us/api-reference/beta/api/intune_devices_manageddevice_rebootnow" />
+          <Item text="shutDown action アクション" url="/en-us/api-reference/beta/api/intune_devices_manageddevice_shutdown" />
+          <Item text="recoverPasscode アクション" url="/en-us/api-reference/beta/api/intune_devices_manageddevice_recoverpasscode" />
+          <Item text="cleanWindowsDevice アクション" url="/en-us/api-reference/beta/api/intune_devices_manageddevice_cleanwindowsdevice" />
+          <Item text="logoutSharedAppleDeviceActiveUser アクション" url="/en-us/api-reference/beta/api/intune_devices_manageddevice_logoutsharedappledeviceactiveuser" />
+          <Item text="deleteUserFromSharedAppleDevice アクション" url="/en-us/api-reference/beta/api/intune_devices_manageddevice_deleteuserfromsharedappledevice" />
+          <Item text="syncDevice アクション" url="/en-us/api-reference/beta/api/intune_devices_manageddevice_syncdevice" />
+          <Item text="windowsDefenderScan アクション" url="/en-us/api-reference/beta/api/intune_devices_manageddevice_windowsdefenderscan" />
+          <Item text="windowsDefenderUpdateSignatures アクション" url="/en-us/api-reference/beta/api/intune_devices_manageddevice_windowsdefenderupdatesignatures" />
+          <Item text="updateWindowsDeviceAccount アクション" url="/en-us/api-reference/beta/api/intune_devices_manageddevice_updatewindowsdeviceaccount" />
+          <Item text="revokeAppleVppLicenses アクション" url="/en-us/api-reference/beta/api/intune_devices_manageddevice_revokeapplevpplicenses" />
         </Item>
         <Item text="通知メッセージ テンプレート" url="/en-us/api-reference/beta/resources/intune_notification_notificationmessagetemplate">
           <Item text="リスト" url="/en-us/api-reference/beta/api/intune_notification_notificationmessagetemplate_list" />
@@ -4253,6 +4272,13 @@
           <Item text="更新" url="/en-us/api-reference/beta/api/intune_notification_notificationmessagetemplate_update" />
           <Item text="sendTestMessage アクション" url="/en-us/api-reference/beta/api/intune_notification_notificationmessagetemplate_sendtestmessage" />
         </Item>
+        <Item text="リモート アクションの監査" url="/en-us/api-reference/beta/resources/intune_devices_remoteactionaudit">
+          <Item text="一覧表示" url="/en-us/api-reference/beta/api/intune_devices_remoteactionaudit_list" />
+          <Item text="取得" url="/en-us/api-reference/beta/api/intune_devices_remoteactionaudit_get" />
+          <Item text="作成" url="/en-us/api-reference/beta/api/intune_devices_remoteactionaudit_create" />
+          <Item text="削除" url="/en-us/api-reference/beta/api/intune_devices_remoteactionaudit_delete" />
+          <Item text="更新" url="/en-us/api-reference/beta/api/intune_devices_remoteactionaudit_update" />
+        </Item>
         <Item text="リモート アシスタンス パートナー" url="/en-us/api-reference/beta/resources/intune_remoteassistance_remoteassistancepartner">
           <Item text="リスト" url="/en-us/api-reference/beta/api/intune_remoteassistance_remoteassistancepartner_list" />
           <Item text="取得" url="/en-us/api-reference/beta/api/intune_remoteassistance_remoteassistancepartner_get" />
@@ -4261,6 +4287,76 @@
           <Item text="更新" url="/en-us/api-reference/beta/api/intune_remoteassistance_remoteassistancepartner_update" />
           <Item text="beginOnboarding アクション" url="/en-us/api-reference/beta/api/intune_remoteassistance_remoteassistancepartner_beginonboarding" />
           <Item text="切断アクション" url="/en-us/api-reference/beta/api/intune_remoteassistance_remoteassistancepartner_disconnect" />
+        </Item>
+        <Item text="リモート ロック アクションの結果" url="/en-us/api-reference/beta/resources/intune_devices_remotelockactionresult" />
+        <Item text="レポートのルート" url="/en-us/api-reference/beta/resources/intune_troubleshooting_reportroot">
+          <Item text="取得" url="/en-us/api-reference/beta/api/intune_troubleshooting_reportroot_get" />
+          <Item text="更新" url="/en-us/api-reference/beta/api/intune_troubleshooting_reportroot_update" />
+        </Item>
+        <Item text="レポート" url="/en-us/api-reference/beta/resources/intune_troubleshooting_report" />
+        <Item text="パスコードのリセット アクションの結果" url="/en-us/api-reference/beta/resources/intune_devices_resetpasscodeactionresult" />
+        <Item text="Apple VPP ライセンスのアクションの結果の取り消し" url="/en-us/api-reference/beta/resources/intune_devices_revokeapplevpplicensesactionresult" />
+        <Item text="実行スケジュール" url="/en-us/api-reference/beta/resources/intune_devices_runschedule" />
+        <Item text="共有 Apple デバイス ユーザー" url="/en-us/api-reference/beta/resources/intune_devices_sharedappledeviceuser" />
+        <Item text="Windows のデバイス アカウントのアクション パラメーターの更新" url="/en-us/api-reference/beta/resources/intune_devices_updatewindowsdeviceaccountactionparameter" />
+        <Item text="ユーザー" url="/en-us/api-reference/beta/resources/intune_devices_user">
+          <Item text="一覧表示" url="/en-us/api-reference/beta/api/intune_devices_user_list" />
+          <Item text="取得" url="/en-us/api-reference/beta/api/intune_devices_user_get" />
+          <Item text="作成" url="/en-us/api-reference/beta/api/intune_devices_user_create" />
+          <Item text="削除" url="/en-us/api-reference/beta/api/intune_devices_user_delete" />
+          <Item text="更新" url="/en-us/api-reference/beta/api/intune_devices_user_update" />
+          <Item text="removeAllDevicesFromManagement アクション" url="/en-us/api-reference/beta/api/intune_devices_user_removealldevicesfrommanagement" />
+        </Item>
+        <Item text="ユーザー" url="/en-us/api-reference/beta/resources/intune_troubleshooting_user">
+          <Item text="一覧表示" url="/en-us/api-reference/beta/api/intune_troubleshooting_user_list" />
+          <Item text="取得" url="/en-us/api-reference/beta/api/intune_troubleshooting_user_get" />
+          <Item text="作成" url="/en-us/api-reference/beta/api/intune_troubleshooting_user_create" />
+          <Item text="削除" url="/en-us/api-reference/beta/api/intune_troubleshooting_user_delete" />
+          <Item text="更新" url="/en-us/api-reference/beta/api/intune_troubleshooting_user_update" />
+        </Item>
+        <Item text="Windows defender のスキャン アクションの結果" url="/en-us/api-reference/beta/resources/intune_devices_windowsdefenderscanactionresult" />
+        <Item text="Windows のデバイス アカウント" url="/en-us/api-reference/beta/resources/intune_devices_windowsdeviceaccount" />
+        <Item text="Windows のデバイス AD アカウント" url="/en-us/api-reference/beta/resources/intune_devices_windowsdeviceadaccount" />
+        <Item text="Windows のデバイス Azure AD アカウント" url="/en-us/api-reference/beta/resources/intune_devices_windowsdeviceazureadaccount" />
+        <Item text="Windows デバイス マルウェアの状態" url="/en-us/api-reference/beta/resources/intune_devices_windowsdevicemalwarestate">
+          <Item text="リスト" url="/en-us/api-reference/beta/api/intune_devices_windowsdevicemalwarestate_list" />
+          <Item text="取得" url="/en-us/api-reference/beta/api/intune_devices_windowsdevicemalwarestate_get" />
+          <Item text="作成" url="/en-us/api-reference/beta/api/intune_devices_windowsdevicemalwarestate_create" />
+          <Item text="削除" url="/en-us/api-reference/beta/api/intune_devices_windowsdevicemalwarestate_delete" />
+          <Item text="更新" url="/en-us/api-reference/beta/api/intune_devices_windowsdevicemalwarestate_update" />
+        </Item>
+        <Item text="Windows マルウェア情報" url="/en-us/api-reference/beta/resources/intune_devices_windowsmalwareinformation">
+          <Item text="リスト" url="/en-us/api-reference/beta/api/intune_devices_windowsmalwareinformation_list" />
+          <Item text="取得" url="/en-us/api-reference/beta/api/intune_devices_windowsmalwareinformation_get" />
+          <Item text="作成" url="/en-us/api-reference/beta/api/intune_devices_windowsmalwareinformation_create" />
+          <Item text="削除" url="/en-us/api-reference/beta/api/intune_devices_windowsmalwareinformation_delete" />
+          <Item text="更新" url="/en-us/api-reference/beta/api/intune_devices_windowsmalwareinformation_update" />
+        </Item>
+        <Item text="Windows 管理対象デバイス" url="/en-us/api-reference/beta/resources/intune_devices_windowsmanageddevice">
+          <Item text="一覧表示" url="/en-us/api-reference/beta/api/intune_devices_windowsmanageddevice_list" />
+          <Item text="取得" url="/en-us/api-reference/beta/api/intune_devices_windowsmanageddevice_get" />
+          <Item text="作成" url="/en-us/api-reference/beta/api/intune_devices_windowsmanageddevice_create" />
+          <Item text="削除" url="/en-us/api-reference/beta/api/intune_devices_windowsmanageddevice_delete" />
+          <Item text="更新" url="/en-us/api-reference/beta/api/intune_devices_windowsmanageddevice_update" />
+        </Item>
+        <Item text="Windows 管理アプリの正常性状態" url="/en-us/api-reference/beta/resources/intune_devices_windowsmanagementapphealthstate">
+          <Item text="一覧表示" url="/en-us/api-reference/beta/api/intune_devices_windowsmanagementapphealthstate_list" />
+          <Item text="取得" url="/en-us/api-reference/beta/api/intune_devices_windowsmanagementapphealthstate_get" />
+          <Item text="作成" url="/en-us/api-reference/beta/api/intune_devices_windowsmanagementapphealthstate_create" />
+          <Item text="削除" url="/en-us/api-reference/beta/api/intune_devices_windowsmanagementapphealthstate_delete" />
+          <Item text="更新" url="/en-us/api-reference/beta/api/intune_devices_windowsmanagementapphealthstate_update" />
+        </Item>
+        <Item text="Windows 管理アプリの正常性の要約" url="/en-us/api-reference/beta/resources/intune_devices_windowsmanagementapphealthsummary">
+          <Item text="取得" url="/en-us/api-reference/beta/api/intune_devices_windowsmanagementapphealthsummary_get" />
+          <Item text="更新" url="/en-us/api-reference/beta/api/intune_devices_windowsmanagementapphealthsummary_update" />
+        </Item>
+        <Item text="Windows 管理アプリ" url="/en-us/api-reference/beta/resources/intune_devices_windowsmanagementapp">
+          <Item text="取得" url="/en-us/api-reference/beta/api/intune_devices_windowsmanagementapp_get" />
+          <Item text="更新" url="/en-us/api-reference/beta/api/intune_devices_windowsmanagementapp_update" />
+        </Item>
+        <Item text="Windows 保護の状態" url="/en-us/api-reference/beta/resources/intune_devices_windowsprotectionstate">
+          <Item text="取得" url="/en-us/api-reference/beta/api/intune_devices_windowsprotectionstate_get" />
+          <Item text="更新" url="/en-us/api-reference/beta/api/intune_devices_windowsprotectionstate_update" />
         </Item>
       </Item>
       <Item text="アプリ保護" url="/en-us/api-reference/beta/resources/intune_app_protection_conceptual">
@@ -4777,7 +4873,7 @@
         <Item text="ノートブックを取得する" url="/en-us/api-reference/beta/api/notebook_get" SEOKeyword="ノートブックを取得する、Microsoft Graph API、ノートブック API" SEODescription="ノートブック(../resources/notebook.md) オブジェクトのプロパティと関係を取得します。" />
         <Item text="ノートブックをコピーする" url="/en-us/api-reference/beta/api/notebook_copynotebook" SEOKeyword="ノートブック: copyNotebook、Microsoft Graph API、ノートブック API" SEODescription="" />
 		<Item text="最新のノートブックを取得する" url="/en-us/api-reference/beta/api/notebook_getrecentnotebooks" />
-        <Item text="セクションを一覧表示する" url="/en-us/api-reference/beta/api/notebook_list_sections" SEOKeyword="sections を一覧表示する、Microsoft Graph API、ノートブック API" SEODescription="section(../resources/section.md) オブジェクトのリストを取得します。" />
+        <Item text="セクションを一覧表示する" url="/en-us/api-reference/beta/api/notebook_list_sections" SEOKeyword="セクションを一覧表示する、Microsoft Graph API、ノートブック API" SEODescription="section(../resources/section.md) オブジェクトのリストを取得します。" />
         <Item text="セクションを作成する" url="/en-us/api-reference/beta/api/notebook_post_sections" SEOKeyword="セクションを作成する、Microsoft Graph API、ノートブック API" SEODescription="指定されたノートブックに新しい section(../resources/section.md) を作成します。" />
         <Item text="セクション グループを一覧表示する" url="/en-us/api-reference/beta/api/notebook_list_sectiongroups" SEOKeyword="sectionGroups を一覧表示する、Microsoft Graph API、ノートブック API" SEODescription="指定されたノートブックから section groups(../resources/sectiongroup.md) のリストを取得します。" />
         <Item text="セクション グループを作成する" url="/en-us/api-reference/beta/api/notebook_post_sectiongroups" SEOKeyword="sectionGroup を作成する、Microsoft Graph API、ノートブック API" SEODescription="指定されたノートブックで新しい section group(../resources/sectiongroup.md) を作成します。" />
@@ -5113,24 +5209,26 @@
     </Item>
     <Item text="Planner" url="/en-us/api-reference/beta/resources/planner_overview" SEOKeyword="ユーザー タスク、Microsoft Graph API、ユーザー API" SEODescription="">
       <Item text="計画" url="/en-us/api-reference/beta/resources/plannerplan">
+        <Item text="グループの計画を一覧表示する" url="/en-us/api-reference/beta/api/plannergroup_list_plans" />
         <Item text="計画を作成する" url="/en-us/api-reference/beta/api/planner_post_plans" />
-        <Item text="グループ計画を一覧表示する" url="/en-us/api-reference/beta/api/plannergroup_list_plans" />
         <Item text="計画を取得する" url="/en-us/api-reference/beta/api/plannerplan_get" />
+        <Item text="計画を更新する" url="/en-us/api-reference/beta/api/plannerplan_update" />
         <Item text="計画タスクを一覧表示する" url="/en-us/api-reference/beta/api/plannerplan_list_tasks" />
         <Item text="計画バケットを一覧表示する" url="/en-us/api-reference/beta/api/plannerplan_list_buckets" />
-        <Item text="計画を更新する" url="/en-us/api-reference/beta/api/plannerplan_update" />
-	    </Item>
-        <Item text="タスク" url="/en-us/api-reference/beta/resources/plannertask">
+        <Item text="ユーザーのお気に入りの計画を一覧表示します。" url="/en-us/api-reference/beta/api/planneruser_list_favoriteplans" SEOKeyword="お気に入りの計画を一覧表示する、Microsoft Graph API、ユーザー API" SEODescription="ユーザーのお気に入りの Planner の計画を取得します。" />
+        <Item text="ユーザーの最近の計画を一覧表示する" url="/en-us/api-reference/beta/api/planneruser_list_recentplans" SEOKeyword="最近の計画を一覧表示する、Microsoft Graph API、ユーザー API" SEODescription="ユーザーが最近表示した Planner の計画を取得します。" />
+      </Item>
+      <Item text="タスク" url="/en-us/api-reference/beta/resources/plannertask">
         <Item text="タスクを作成する" url="/en-us/api-reference/beta/api/planner_post_tasks" />
-        <Item text="ユーザーのタスクを取得する" url="/en-us/api-reference/beta/api/planneruser_list_tasks" />
         <Item text="タスクを取得する" url="/en-us/api-reference/beta/api/plannertask_get" />
         <Item text="タスクを更新する" url="/en-us/api-reference/beta/api/plannertask_update" />
-        <Item text="タスクを削除する" url="/en-us/api-reference/beta/api/plannertask_delete" />	  
-	    </Item>
-	    <Item text="タスクの詳細" url="/en-us/api-reference/beta/resources/plannertaskdetails">
+        <Item text="タスクを削除する" url="/en-us/api-reference/beta/api/plannertask_delete" />
+        <Item text="ユーザーのタスクを一覧表示する" url="/en-us/api-reference/beta/api/planneruser_list_tasks" />
+      </Item>
+      <Item text="タスクの詳細" url="/en-us/api-reference/beta/resources/plannertaskdetails">
         <Item text="タスクの詳細を取得する" url="/en-us/api-reference/beta/api/plannertaskdetails_get" />
         <Item text="タスクの詳細を更新する" url="/en-us/api-reference/beta/api/plannertaskdetails_update" />	  
-	    </Item>
+      </Item>
       <Item text="計画の詳細" url="/en-us/api-reference/beta/resources/plannerplandetails">
         <Item text="計画の詳細を取得する" url="/en-us/api-reference/beta/api/plannerplandetails_get" />
         <Item text="計画の詳細を更新する" url="/en-us/api-reference/beta/api/plannerplandetails_update" />	  
