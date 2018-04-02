@@ -88,22 +88,22 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}
 |hostPairingBlocked|Boolean|iOS デバイスが監視モードのときに、iOS デバイスがペアリングできるデバイスをホスト ペアリングで制御できるようにするかどうかを示します。|
 |iBooksStoreBlocked|Boolean|デバイスが監視モードのときに、ユーザーによる iBooks Store の使用を禁止するかどうかを示します。|
 |iBooksStoreBlockErotica|Boolean|アダルトのフラグが付いている iBookstore からのメディアのダウンロードをブロックするかどうかを示します。|
-|iCloudBlockActivityContinuation|Boolean|iOS デバイスで起動した作業の、別の iOS デバイスまたは macOS デバイスでの継続実施をブロックするかどうかを示します。|
+|iCloudBlockActivityContinuation|ブール型|iOS デバイスで起動した作業の、別の iOS デバイスまたは macOS デバイスでの継続実施をブロックするかどうかを示します。|
 |iCloudBlockBackup|Boolean|iCloud バックアップを禁止するかどうかを示します。|
 |iCloudBlockDocumentSync|Boolean|iCloud のドキュメントの同期を禁止するかどうかを示します。|
 |iCloudBlockManagedAppsSync|Boolean|管理対象アプリのクラウドの同期を禁止するかどうかを示します。|
 |iCloudBlockPhotoLibrary|Boolean|iCloud フォト ライブラリを禁止するかどうかを示します。|
 |iCloudBlockPhotoStreamSync|Boolean|iCloud フォトのストリームの同期を禁止するかどうかを示します。|
-|iCloudBlockSharedPhotoStream|Boolean|共有フォト ストリームを禁止するかどうかを示します。|
+|iCloudBlockSharedPhotoStream|Boolean|共有フォト ストリームの同期を禁止するかどうかを示します。|
 |iCloudRequireEncryptedBackup|Boolean|iCloud のバックアップを暗号化する必要があるかどうかを示します。|
 |iTunesBlockExplicitContent|Boolean|ユーザーによる iTunes および App Store の過激な描写のコンテンツへのアクセスをブロックするかどうかを指定します。|
 |iTunesBlockMusicService|Boolean|デバイスが監視モードのときに、Music サービスをブロックして Music アプリをクラシック モードに戻すかどうかを示します (iOS 9.3 以降および macOS 10.12 以降)。|
 |iTunesBlockRadio|Boolean|デバイスが監視モードのときに、ユーザーによる iTunes Radio の使用を禁止するかどうかを示します (iOS 9.3 以降)。|
-|keyboardBlockAutoCorrect|Boolean|デバイスが監視モードのときに、キーボードの自動修正を禁止するかどうかを示します (iOS 8.1.3 以降)。|
+|keyboardBlockAutoCorrect|Boolean|デバイスが監視モードのときに、キーボードの自動修正を禁止するかどうかを示します (iOS 8.13 以降)。|
 |keyboardBlockDictation|Boolean|デバイスが監視モードのときに、ユーザーによるディクテーション入力の使用を禁止するかどうかを示します。|
 |keyboardBlockPredictive|Boolean|デバイスが監視モードのときに、予測キーボードを禁止するかどうかを示します (iOS 8.1.3 以降)。|
 |keyboardBlockShortcuts|Boolean|デバイスが監視モードのときに、キーボード ショートカットを禁止するかどうかを示します (iOS 9.0 以降)。|
-|keyboardBlockSpellCheck|Boolean|デバイスが監視モードのときに、キーボードのスペル チェックを禁止するかどうかを示します (iOS 8.1.3 以降)。|
+|keyboardBlockSpellCheck|Boolean|デバイスが監視モードのときに、キーボードのスペル チェックを禁止するかどうかを示します (iOS 8.13 以降)。|
 |kioskModeAllowAssistiveSpeak|Boolean|キオスク モード時の補助音声を許可するかどうかを示します。|
 |kioskModeAllowAssistiveTouchSettings|Boolean|キオスク モード時の Assistive Touch の設定へのアクセスを許可するかどうかを示します。|
 |kioskModeAllowAutoLock|Boolean|キオスク モード時のデバイスの自動ロックを許可するかどうかを示します。|
