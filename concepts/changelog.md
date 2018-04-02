@@ -6,6 +6,11 @@ Microsoft Graph API に関する既知の問題の詳細については、「[�
 
 ## <a name="march-2018"></a>2018 年 3 月
 
+### <a name="reports-apis"></a>レポート API
+|変更の種類|バージョン|説明|
+|:---|:---|:---|
+|追加|ベータ版|[sharePointSiteUsageDetail](../api-reference/beta/resources/sharepointsiteusagedetail.md) エンティティに **siteId** プロパティが追加されました。|
+
 ### <a name="group-lifecycle-policy"></a>グループのライフサイクル ポリシー
 
 | **変更の種類** | **バージョン** | **説明**                          |
@@ -1696,10 +1701,10 @@ Microsoft Graph API に関する既知の問題の詳細については、「[�
 | **変更の種類** | **バージョン**   | **説明**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 | 追加        | v1.0 およびベータ版 | _Accept-Encoding:gzip_ の使用のサポートが追加されました。 |
-| 追加        | v1.0          | 拡張パスのキャスト セグメントのサポートが追加されました。例: 'https://graph.microsoft.com/v1.0/me/messages?$expand=microsoft.graph.eventMessage/event'。 |
+| 追加        | v1.0          | 拡張パスのキャスト セグメントのサポートが追加されました。 たとえば、'https://graph.microsoft.com/v1.0/me/messages?$expand=microsoft.graph.eventMessage/event' です。 |
 | 追加        | ベータ版          | 構造プロパティに対する PATCH 要求のサポートが追加されました。例:'PATCH /me/mailboxSettings'。 |
 | 追加        | ベータ版          | たとえば、ユーザーがメールボックスのライセンスを持っていない場合、またはテナントに Exchange Online のサブスクリプションがない場合など、Outlook が要求を処理できないときに、Azure Active Directory が /beta/users/id/photo 要求のフォールバックとして使用されるようになりました。注: このフォールバックは GET と PATCH の両方に使用できます。 |
-| 追加        | ベータ版          | 拡張パスのキャスト セグメントのサポートが追加されました。例: 'https://graph.microsoft.com/v1.0/me/messages?$expand=microsoft.graph.eventMessage/event'。 |
+| 追加        | ベータ版          | 拡張パスのキャスト セグメントのサポートが追加されました。 たとえば、'https://graph.microsoft.com/v1.0/me/messages?$expand=microsoft.graph.eventMessage/event' です。 |
 
 ### <a name="onedrive"></a>OneDrive
 
@@ -1764,7 +1769,7 @@ Microsoft Graph API に関する既知の問題の詳細については、「[�
 | :-------------- | :------------ | :--------------------------------------- |
 | 追加        | v1.0 およびベータ版 | テナント エイリアスと拒否された JWT (AAD) トークンを解決するときのエラー メッセージを改善しました。 |
 | 追加        | v1.0 およびベータ版 | 空のベアラー トークンで要求を受信した場合に、承認サービス エンドポイントの場所が _www-authenticate_ ヘッダー内に返されるようになりました。 |
-| 追加        | v1.0 およびベータ版 | エンティティの ID プロパティでのフィルター機能が修正されました。例:GET https://graph.microsoft.com/v1.0/users?$filter=id+eq+'x'<br/>以前は、サービスのアクションと関数に対する POST 要求で、アクション名または関数名に microsoft.graph のプレフィックスを付ける必要がありました。例:POST https://graph.microsoft.com/v1.0/me/Microsoft.Graph.getMemberGroups。<br/>プレフィックスは不要になりました (ただし、引き続き指定できます)。そのため、次のような指定でも機能するようになりました。POST https://graph.microsoft.com/v1.0/me/getMemberGroups。 |
+| 追加        | v1.0 およびベータ版 | エンティティの ID プロパティでのフィルター機能が修正されました。 例: GET https://graph.microsoft.com/v1.0/users?$filter=id+eq+'x'<br/>以前は、サービスのアクションと関数に対する POST 要求で、アクション名または関数名に microsoft.graph のプレフィックスを付ける必要がありました。 例: POST https://graph.microsoft.com/v1.0/me/Microsoft.Graph.getMemberGroups<br/>プレフィックスは不要になりました (ただし、引き続き指定できます)。 そのため、次のような指定でも機能するようになりました。POST https://graph.microsoft.com/v1.0/me/getMemberGroups |
 | 変更          | ベータ版          | サブスクリプションのプロパティ名がクリーンアップされました。  |
 | 追加        | ベータ版          | エンティティとその関連機能の既定の動作を (_directorySettingTemplates_ 経由で) 検出し、(テンプレートから _setting_ を作成することにより) 上書きする機能が追加されました。最初に提供されたこの唯一のテンプレートは、Office グループ上での動作を制御するためのものです。 |
 
@@ -1897,6 +1902,6 @@ Microsoft Graph API に関する既知の問題の詳細については、「[�
 
 | **変更の種類** | **バージョン**   | **説明**                          |
 | :-------------- | :------------ | :--------------------------------------- |
-| 修正             | v1.0 およびベータ版 | ユーザー プリンシパル名 (UPN) でユーザーを参照する場合に、他のユーザーで特定のユーザー プロパティを選択できてしまう問題を修正しました。例: https://graph.microsoft.com/v1.0/users/anotherUser@contoso.com?$select=aboutMe |
-| 修正プログラム             | v1.0 およびベータ版 | ユーザーにバインドされた _microsoft.graph.reminderView_ 関数の呼び出しを修正しました。この呼び出しは次のエラーで失敗していました。Microsoft.OutlookServices.Reminder 型で businessPhones という名前のプロパティは見つかりませんでした。 |
+| 修正             | v1.0 およびベータ版 | ユーザー プリンシパル名 (UPN) でユーザーを参照する場合に、他のユーザーで特定のユーザー プロパティを選択できてしまう問題を修正しました。 例: https://graph.microsoft.com/v1.0/users/anotherUser@contoso.com?$select=aboutMe |
+| 修正             | v1.0 およびベータ版 | ユーザーにバインドされた _microsoft.graph.reminderView_ 関数の呼び出しを修正しました。この呼び出しは次のエラーで失敗していました。Microsoft.OutlookServices.Reminder 型で businessPhones という名前のプロパティは見つかりませんでした。 |
 | 修正プログラム             | v1.0 およびベータ版 | 400 エラーで失敗していた、ユーザーの作成と更新 (POST/PATCH /v1.0/users) を修正しました。 |
