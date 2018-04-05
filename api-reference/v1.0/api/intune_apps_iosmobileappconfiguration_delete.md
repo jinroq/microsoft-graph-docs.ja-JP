@@ -1,16 +1,14 @@
-# <a name="list-users"></a>ユーザーを一覧表示する
-
-> **重要:**Microsoft Graph のベータ版 (/beta) の API はプレビュー中で、変更されることがあります。 実稼働アプリケーションでは、これらの API の使用はサポートされていません。
+# <a name="delete-iosmobileappconfiguration"></a>iosMobileAppConfiguration の削除
 
 > **注:**Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
 
-[user](../resources/intune_troubleshooting_user.md) オブジェクトのプロパティとリレーションシップをリストします。
+[iosMobileAppConfiguration](../resources/intune_apps_iosmobileappconfiguration.md) を削除します。
 ## <a name="prerequisites"></a>前提条件
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](../../../concepts/permissions_reference.md)」を参照してください。
 
 |アクセス許可の種類|アクセス許可 (特権の大きいものから小さいものへ)|
 |:---|:---|
-|委任 (職場または学校のアカウント)|DeviceManagementManagedDevices.ReadWrite.All、DeviceManagementManagedDevices.Read.All|
+|委任 (職場または学校アカウント)|DeviceManagementApps.ReadWrite.All|
 |委任 (個人用 Microsoft アカウント)|サポートされていません。|
 |アプリケーション|サポートされていません。|
 
@@ -20,7 +18,7 @@
 }
 -->
 ``` http
-GET /users
+DELETE /deviceAppManagement/mobileAppConfigurations/{managedDeviceMobileAppConfigurationId}
 ```
 
 ## <a name="request-headers"></a>要求ヘッダー
@@ -33,30 +31,19 @@ GET /users
 このメソッドには、要求本文を指定しません。
 
 ## <a name="response"></a>応答
-成功した場合、このメソッドは `200 OK` 応答コードと、応答本文で [user](../resources/intune_troubleshooting_user.md) オブジェクトのコレクションを返します。
+成功した場合、このメソッドは `204 No Content` 応答コードを返します。
 
 ## <a name="example"></a>例
 ### <a name="request"></a>要求
 以下は、要求の例です。
 ``` http
-GET https://graph.microsoft.com/beta/users
+DELETE https://graph.microsoft.com/v1.0/deviceAppManagement/mobileAppConfigurations/{managedDeviceMobileAppConfigurationId}
 ```
 
 ### <a name="response"></a>応答
 以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。
 ``` http
-HTTP/1.1 200 OK
-Content-Type: application/json
-Content-Length: 136
-
-{
-  "value": [
-    {
-      "@odata.type": "#microsoft.graph.user",
-      "id": "d36894ae-94ae-d368-ae94-68d3ae9468d3"
-    }
-  ]
-}
+HTTP/1.1 204 No Content
 ```
 
 

@@ -1,16 +1,14 @@
-# <a name="get-devicemanagementtroubleshootingevent"></a>Get deviceManagementTroubleshootingEvent
-
-> **重要:**Microsoft Graph のベータ版 (/beta) の API はプレビュー中で、変更されることがあります。 実稼働アプリケーションでは、これらの API の使用はサポートされていません。
+# <a name="get-vpptoken"></a>Get vppToken
 
 > **注:**Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
 
-[deviceManagementTroubleshootingEvent](../resources/intune_troubleshooting_devicemanagementtroubleshootingevent.md) オブジェクトのプロパティとリレーションシップを読み取ります。
+[vppToken](../resources/intune_onboarding_vpptoken.md) オブジェクトのプロパティとリレーションシップを読み取ります。
 ## <a name="prerequisites"></a>前提条件
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](../../../concepts/permissions_reference.md)」を参照してください。
 
 |アクセス許可の種類|アクセス許可 (特権の大きいものから小さいものへ)|
 |:---|:---|
-|委任 (職場または学校のアカウント)|DeviceManagementManagedDevices.ReadWrite.All、DeviceManagementManagedDevices.Read.All|
+|委任 (職場または学校のアカウント)|DeviceManagementServiceConfig.ReadWrite.All、DeviceManagementServiceConfig.Read.All|
 |委任 (個人用 Microsoft アカウント)|サポートされていません。|
 |アプリケーション|サポートされていません。|
 
@@ -20,7 +18,7 @@
 }
 -->
 ``` http
-GET /deviceManagement/troubleshootingEvents/{deviceManagementTroubleshootingEventId}
+GET /deviceAppManagement/vppTokens/{vppTokenId}
 ```
 
 ## <a name="optional-query-parameters"></a>オプションのクエリ パラメーター
@@ -35,13 +33,13 @@ GET /deviceManagement/troubleshootingEvents/{deviceManagementTroubleshootingEven
 このメソッドには、要求本文を指定しません。
 
 ## <a name="response"></a>応答
-成功した場合、このメソッドは `200 OK` 応答コードと、応答本文で [deviceManagementTroubleshootingEvent](../resources/intune_troubleshooting_devicemanagementtroubleshootingevent.md) オブジェクトを返します。
+成功した場合、このメソッドは `200 OK` 応答コードと、応答本文で [vppToken](../resources/intune_onboarding_vpptoken.md) オブジェクトを返します。
 
 ## <a name="example"></a>例
 ### <a name="request"></a>要求
 以下は、要求の例です。
 ``` http
-GET https://graph.microsoft.com/beta/deviceManagement/troubleshootingEvents/{deviceManagementTroubleshootingEventId}
+GET https://graph.microsoft.com/v1.0/deviceAppManagement/vppTokens/{vppTokenId}
 ```
 
 ### <a name="response"></a>応答
@@ -49,14 +47,23 @@ GET https://graph.microsoft.com/beta/deviceManagement/troubleshootingEvents/{dev
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 255
+Content-Length: 619
 
 {
   "value": {
-    "@odata.type": "#microsoft.graph.deviceManagementTroubleshootingEvent",
-    "id": "fb26dcee-dcee-fb26-eedc-26fbeedc26fb",
-    "eventDateTime": "2016-12-31T23:59:23.3984029-08:00",
-    "correlationId": "Correlation Id value"
+    "@odata.type": "#microsoft.graph.vppToken",
+    "id": "9ceb2f92-2f92-9ceb-922f-eb9c922feb9c",
+    "organizationName": "Organization Name value",
+    "vppTokenAccountType": "education",
+    "appleId": "Apple Id value",
+    "expirationDateTime": "2016-12-31T23:57:57.2481234-08:00",
+    "lastSyncDateTime": "2017-01-01T00:02:49.3205976-08:00",
+    "token": "Token value",
+    "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
+    "state": "valid",
+    "lastSyncStatus": "inProgress",
+    "automaticallyUpdateApps": true,
+    "countryOrRegion": "Country Or Region value"
   }
 }
 ```
