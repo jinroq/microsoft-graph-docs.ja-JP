@@ -1,4 +1,4 @@
-# <a name="devicemanagement-resource-type"></a>deviceManagement リソースの種類
+# <a name="devicemanagement-resource-type"></a>deviceManagement リソース タイプ
 
 > **注:**Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
 
@@ -12,10 +12,13 @@ deviceManagement リソースは、Intune で事前設定されたテナント�
 ## <a name="properties"></a>プロパティ
 |プロパティ|型|説明|
 |:---|:---|:---|
-|id|文字列|オブジェクトの GUID です。|
+|id|String|オブジェクトの GUID。|
 
-## <a name="relationships"></a>関係
-なし
+## <a name="relationships"></a>リレーションシップ
+|リレーションシップ|型|説明|
+|:---|:---|:---|
+|importedWindowsAutopilotDeviceIdentities|[importedWindowsAutopilotDeviceIdentity](../resources/intune_enrollment_importedwindowsautopilotdeviceidentity.md)コレクション|インポートされたWindows Autopilot デバイスのコレクション。|
+
 ## <a name="json-representation"></a>JSON 表記
 以下は、リソースの JSON 表記です。
 <!-- {

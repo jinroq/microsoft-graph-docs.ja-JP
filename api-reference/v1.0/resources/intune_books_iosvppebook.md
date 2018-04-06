@@ -21,11 +21,11 @@ iOS Vpp eBook のプロパティを含むクラスです。
 |id|String|エンティティのキー。 [managedEBook](../resources/intune_books_managedebook.md) から継承します|
 |displayName|String|電子ブックの名前。 [managedEBook](../resources/intune_books_managedebook.md) から継承します|
 |description|String|説明。 [managedEBook](../resources/intune_books_managedebook.md) から継承します|
-|publisher|String|発行元です。 [managedEBook](../resources/intune_books_managedebook.md) から継承します|
+|publisher|String|発行元。 [managedEBook](../resources/intune_books_managedebook.md) から継承します|
 |publishedDateTime|DateTimeOffset|電子ブックが発行された日時。 [managedEBook](../resources/intune_books_managedebook.md) から継承します|
 |largeCover|[mimeContent](../resources/intune_books_mimecontent.md)|ブック カバー。 [managedEBook](../resources/intune_books_managedebook.md) から継承します|
-|createdDateTime|DateTimeOffset|電子ブック ファイルが作成された日時です。 [managedEBook](../resources/intune_books_managedebook.md) から継承します|
-|lastModifiedDateTime|DateTimeOffset|電子ブックが最後に変更された日時です。 [managedEBook](../resources/intune_books_managedebook.md) から継承します|
+|createdDateTime|DateTimeOffset|電子ブック ファイルが作成された日時。 [managedEBook](../resources/intune_books_managedebook.md) から継承します|
+|lastModifiedDateTime|DateTimeOffset|電子ブックが最後に変更された日時。 [managedEBook](../resources/intune_books_managedebook.md) から継承します|
 |informationUrl|String|詳細情報の URL。 [managedEBook](../resources/intune_books_managedebook.md) から継承します|
 |privacyInformationUrl|String|プライバシーに関する声明の URL。 [managedEBook](../resources/intune_books_managedebook.md) から継承します|
 |vppTokenId|Guid|Vpp トークン ID。|
