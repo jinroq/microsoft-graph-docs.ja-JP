@@ -37,8 +37,9 @@ Excel の表を表します。
 |showBandedColumns|Boolean|テーブルを見やすくするため、奇数列を偶数列とは異なる方法で強調表示する書式設定にして、列を縞模様で表示するかどうかを示します。   |
 |showBandedRows|Boolean|テーブルを見やすくするため、奇数行を偶数行とは異なる方法で強調表示する書式設定にして、行を縞模様で表示するかどうかを示します。    |
 |showFilterButton|Boolean|フィルター ボタンを各列のヘッダーの上部に表示するかどうかを示します。これは、テーブルにヘッダー行が含まれている場合のみ設定できます。   |
+|legacyId|String|以前の Excle クライアントで使用されていたレガシ Id です。 識別子の値は、テーブルの名前が変更された場合も変わりません。 このプロパティは符号化文字列値として解釈し、その他の型に解析すべきではありません。 読み取り専用。   |
 
-## <a name="relationships"></a>リレーションシップ
+## <a name="relationships"></a>関係
 | リレーションシップ | 型   |説明|
 |:---------------|:--------|:----------|
 |columns|[TableColumn](tablecolumn.md) コレクション|テーブルに含まれるすべての列のコレクションを表します。読み取り専用です。|
@@ -53,7 +54,7 @@ Excel の表を表します。
 <!-- {
   "blockType": "resource",
   "optionalProperties": [
-
+     "legacyId"
   ],
   "@odata.type": "microsoft.graph.table"
 }-->
@@ -69,7 +70,8 @@ Excel の表を表します。
   "showFilterButton": true,
   "showHeaders": true,
   "showTotals": true,
-  "style": "String"
+  "style": "String",
+  "legacyId": "String"
 }
 
 ```

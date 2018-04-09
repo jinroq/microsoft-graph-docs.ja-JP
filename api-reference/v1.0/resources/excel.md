@@ -1,6 +1,6 @@
 # <a name="working-with-excel-in-microsoft-graph"></a>Microsoft Graph での Excel の操作
 
-Microsoft Graph を使用すると、OneDrive、SharePoint、またはその他のサポートされているストレージ プラットフォームに格納されている Excel ブックを、Web アプリケーションやモバイル アプリケーションで読み取ったり変更したりすることができます。`Workbook` (つまり Excel ファイル) リソースには、リレーションシップを介するその他のすべての Excel リソースが含まれています。ファイルの場所を URL で指定すれば、[ドライブ API](drive.md) でブックにアクセスできます。例:
+Microsoft Graph を使用すると、OneDrive for Business、SharePoint サイト、またはグループ ドライブに保存されている Excel ブックを、Web アプリケーションやモバイル アプリケーションで読み取ったり変更したりすることができます。`Workbook` (つまり Excel ファイル) リソースには、リレーションシップを介するその他のすべての Excel リソースが含まれています。ファイルの場所を URL で指定すれば、[ドライブ API](drive.md) でブックにアクセスできます。例:
 
 `https://graph.microsoft.com/{version}/me/drive/items/{id}/workbook/`  
 `https://graph.microsoft.com/{version}/me/drive/root:/{item-path}:/workbook/`  
@@ -9,7 +9,9 @@ Microsoft Graph を使用すると、OneDrive、SharePoint、またはその他�
 ワークブックの一部であるワークシート オブジェクトのコレクションが返されます。    
 
 
-**注:**Excel の REST API では、Office Open XML ファイル形式のブックのみをサポートしています。`.xls` 拡張子のブックはサポートされていません。 
+Excel の REST API では、Office Open XML ファイル形式のブックのみをサポートしています。`.xls` 拡張子のブックはサポートされていません。 
+
+**注**: OneDrive のコンシューマー向けのプラットフォームに保存されたブックは、サポートされていません。 現時点では、Excel の REST API は、ビジネス プラットフォームに保存されたファイルのみをサポートしています。 
 
 ## <a name="authorization-and-scopes"></a>承認とスコープ
 
