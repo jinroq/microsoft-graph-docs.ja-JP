@@ -77,7 +77,7 @@ GET /me/calendargroups/{id}/calendars/{id}/events
 GET /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events
 ```
 ## <a name="optional-query-parameters"></a>オプションのクエリ パラメーター
-このメソッドは、応答をカスタマイズするための [OData クエリ パラメーター](http://developer.microsoft.com/ja-JP/graph/docs/overview/query_parameters)をサポートします。
+このメソッドは、応答をカスタマイズするための [OData クエリ パラメーター](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters)をサポートします。
 ## <a name="request-headers"></a>要求ヘッダー
 | 名前       | 型 | 説明 |
 |:---------------|:--------|:--------|
@@ -140,9 +140,19 @@ Content-length: 1932
                 "dateTime":"2017-04-21T12:00:00.0000000",
                 "timeZone":"Pacific Standard Time"
             },
-            "location":{
-                "displayName":"Assembly Hall"
+            "location": {
+                "displayName": "Assembly Hall",
+                "locationType": "default",
+                "uniqueId": "Assembly Hall",
+                "uniqueIdType": "private"
             },
+            "locations": [
+                {
+                    "displayName": "Assembly Hall",
+                    "locationType": "default",
+                    "uniqueIdType": "unknown"
+                }
+            ],
             "attendees":[
                 {
                     "type":"required",
