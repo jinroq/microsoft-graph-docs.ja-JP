@@ -16,13 +16,13 @@ Mobile Threat Defense パートナーとの接続を表すエンティティで�
 |プロパティ|型|説明|
 |:---|:---|:---|
 |id|String|まだ文書化されていません|
-|lastHeartbeatDateTime|DateTimeOffset|管理者が MTP への接続オプションを有効にした後の、最後のハートビートのタイムスタンプ|
-|partnerState|String|このテナントのパートナーの状態です。可能な値は、`unavailable`、`available`、`enabled`、`unresponsive` です。|
-|androidEnabled|Boolean|Android のオンまたはオフの切り替え|
-|androidDeviceBlockedOnMissingPartnerData|Boolean|Android の場合、準拠していると判断される前にデータ同期のパートナーからデータを受信する必要がある旨、管理者が構成できるようにします|
-|iosDeviceBlockedOnMissingPartnerData|Boolean|iOS の場合、準拠していると判断される前にデータ同期のパートナーからデータを受信する必要がある旨、管理者が構成できるようにします|
-|partnerUnsupportedOsVersionBlocked|Boolean|最小バージョンの要件を満たさない、有効なプラットフォーム上のデバイスを、管理者がブロックできるようにします|
-|iosEnabled|Boolean|iOS のオンまたはオフの切り替え|
+|lastHeartbeatDateTime|DateTimeOffset|データ同期パートナーから受信した最後のハートビートの日時|
+|partnerState|String|このアカウントのデータ同期パートナーの状態です。使用可能な値は、`unavailable`、 `available`、 `enabled`、`unresponsive`です。|
+|androidEnabled|ブール型|Android において、準拠評価時にデータ同期パートナーからのデータを使用するかどうかを設定します|
+|iosEnabled|ブール型|IOS において、準拠評価時にデータ同期パートナーからのデータを使用するかどうかを取得または設定します|
+|androidDeviceBlockedOnMissingPartnerData|ブール型|Android において、デバイスを準拠させる前に Intune がデータ同期パートナーからデータを受信する必要があるかどうかを設定します|
+|iosDeviceBlockedOnMissingPartnerData|ブール型|IOS において、デバイスを準拠させる前に Intune がデータ同期パートナーからデータを受信する必要があるかどうかを設定します|
+|partnerUnsupportedOsVersionBlocked|ブール型|データ同期パートナーの最小バージョンの要件を満たさない、有効なプラットフォーム上のデバイスをブロックするかどうかを取得または設定します|
 |partnerUnresponsivenessThresholdInDays|Int32|このパートナー統合に関する、テナントごとの無応答への許容日数の取得または設定を行います|
 
 ## <a name="relationships"></a>リレーションシップ
@@ -42,10 +42,10 @@ Mobile Threat Defense パートナーとの接続を表すエンティティで�
   "lastHeartbeatDateTime": "String (timestamp)",
   "partnerState": "String",
   "androidEnabled": true,
+  "iosEnabled": true,
   "androidDeviceBlockedOnMissingPartnerData": true,
   "iosDeviceBlockedOnMissingPartnerData": true,
   "partnerUnsupportedOsVersionBlocked": true,
-  "iosEnabled": true,
   "partnerUnresponsivenessThresholdInDays": 1024
 }
 ```

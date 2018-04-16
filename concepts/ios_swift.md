@@ -8,7 +8,7 @@
 
 作成するアプリのバージョンを、この GitHub リポジトリからダウンロードすることができます。
 
-* [Microsoft Graph SDK を使用した iOS 用 Office 365 Connect サンプル](https://github.com/microsoftgraph/ios-objectivec-connect-sample)
+* [Microsoft Graph SDK を使用した iOS 用 Office 365 Connect サンプル](https://github.com/microsoftgraph/ios-swift-connect-sample)
 
 次の画像は、作成するアプリを示しています。
 
@@ -353,7 +353,7 @@ struct ApplicationConstants {
 
   ```
 
-> 注:次のアクセス許可の適用範囲がこのプロジェクトに対して構成されていることが分かります。: **"https://graph.microsoft.com/Mail.Send"、 "https://graph.microsoft.com/User.Read"、 "offline_access"**。このプロジェクトで使用されるサービス呼び出し、メール アカウントへのメールの送信、および一部のプロファイル情報 (表示名、メール アドレス) の取得では、アプリが適切に実行するためにこれらのアクセス許可が必要です。
+> 注: 次のアクセス許可の適用範囲がこのプロジェクトに対して構成されていることがわかります: **"https://graph.microsoft.com/Mail.Send"、"https://graph.microsoft.com/User.Read"、"offline_access"**。このプロジェクトで使用されるサービス呼び出し、メール アカウントへのメールの送信、および一部のプロファイル情報 (表示名、メール アドレス) の取得では、アプリが適切に実行するためにこれらのアクセス許可が必要です。
 
 2. サンプルを実行し、**[Connect]**をタップして、個人用あるいは職場または学校アカウントでサインインし、要求されたアクセス許可を付与します。
 

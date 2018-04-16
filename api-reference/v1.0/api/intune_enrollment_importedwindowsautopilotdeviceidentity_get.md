@@ -1,16 +1,14 @@
-# <a name="get-user"></a>ユーザーを取得する
-
-> **重要:**Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでは、これらの API の使用はサポートされていません。
+# <a name="get-importedwindowsautopilotdeviceidentity"></a>importedWindowsAutopilotDeviceIdentity の取得
 
 > **注:**Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
 
-[user](../resources/intune_troubleshooting_user.md) オブジェクトのプロパティとリレーションシップを読み取ります。
+[importedWindowsAutopilotDeviceIdentity](../resources/intune_enrollment_importedwindowsautopilotdeviceidentity.md) オブジェクトのプロパティとリレーションシップを読み取ります。
 ## <a name="prerequisites"></a>前提条件
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](../../../concepts/permissions_reference.md)」を参照してください。
 
 |アクセス許可の種類|アクセス許可 (特権の大きいものから小さいものへ)|
 |:---|:---|
-|委任 (職場または学校のアカウント)|DeviceManagementManagedDevices.ReadWrite.All、DeviceManagementManagedDevices.Read.All|
+|委任 (職場または学校のアカウント)|DeviceManagementServiceConfig.ReadWrite.All、DeviceManagementServiceConfig.Read.All|
 |委任 (個人用 Microsoft アカウント)|サポートされていません。|
 |アプリケーション|サポートされていません。|
 
@@ -20,7 +18,7 @@
 }
 -->
 ``` http
-GET /users/{usersId}
+GET /deviceManagement/importedWindowsAutopilotDeviceIdentities/{importedWindowsAutopilotDeviceIdentityId}
 ```
 
 ## <a name="optional-query-parameters"></a>オプションのクエリ パラメーター
@@ -35,13 +33,13 @@ GET /users/{usersId}
 このメソッドには、要求本文を指定しません。
 
 ## <a name="response"></a>応答
-成功した場合、このメソッドは `200 OK` 応答コードと、応答本文で[ユーザー](../resources/intune_troubleshooting_user.md) オブジェクトを返します。
+成功した場合、このメソッドは `200 OK` 応答コードと、応答本文で [importedWindowsAutopilotDeviceIdentity](../resources/intune_enrollment_importedwindowsautopilotdeviceidentity.md) オブジェクトを返します。
 
 ## <a name="example"></a>例
 ### <a name="request"></a>要求
 以下は、要求の例です。
 ``` http
-GET https://graph.microsoft.com/beta/users/{usersId}
+GET https://graph.microsoft.com/v1.0/deviceManagement/importedWindowsAutopilotDeviceIdentities/{importedWindowsAutopilotDeviceIdentityId}
 ```
 
 ### <a name="response"></a>応答
@@ -49,12 +47,23 @@ GET https://graph.microsoft.com/beta/users/{usersId}
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 118
+Content-Length: 635
 
 {
   "value": {
-    "@odata.type": "#microsoft.graph.user",
-    "id": "d36894ae-94ae-d368-ae94-68d3ae9468d3"
+    "@odata.type": "#microsoft.graph.importedWindowsAutopilotDeviceIdentity",
+    "id": "985b4f49-4f49-985b-494f-5b98494f5b98",
+    "orderIdentifier": "Order Identifier value",
+    "serialNumber": "Serial Number value",
+    "productKey": "Product Key value",
+    "hardwareIdentifier": "aGFyZHdhcmVJZGVudGlmaWVy",
+    "state": {
+      "@odata.type": "microsoft.graph.importedWindowsAutopilotDeviceIdentityState",
+      "deviceImportStatus": "pending",
+      "deviceRegistrationId": "Device Registration Id value",
+      "deviceErrorCode": 15,
+      "deviceErrorName": "Device Error Name value"
+    }
   }
 }
 ```
