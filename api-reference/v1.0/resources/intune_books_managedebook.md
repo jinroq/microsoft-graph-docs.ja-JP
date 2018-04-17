@@ -6,7 +6,7 @@
 ## <a name="methods"></a>メソッド
 |メソッド|戻り値の型|説明|
 |:---|:---|:---|
-|[managedEBooks のリスト](../api/intune_books_managedebook_list.md)|[managedEBook](../resources/intune_books_managedebook.md) コレクション|[managedEBook](../resources/intune_books_managedebook.md) オブジェクトのプロパティとリレーションシップをリストします。|
+|[managedEBook のリスト](../api/intune_books_managedebook_list.md)|[managedEBook](../resources/intune_books_managedebook.md) コレクション|[managedEBook](../resources/intune_books_managedebook.md) オブジェクトのプロパティとリレーションシップをリストします。|
 |[managedEBook の取得](../api/intune_books_managedebook_get.md)|[managedEBook](../resources/intune_books_managedebook.md)|[managedEBook](../resources/intune_books_managedebook.md) オブジェクトのプロパティとリレーションシップを読み取ります。|
 |[アクションの割り当て](../api/intune_books_managedebook_assign.md)|なし|まだ文書化されていません|
 
@@ -19,8 +19,8 @@
 |publisher|String|発行元です。|
 |publishedDateTime|DateTimeOffset|電子ブックが発行された日時。|
 |largeCover|[mimeContent](../resources/intune_books_mimecontent.md)|ブック カバー。|
-|createdDateTime|DateTimeOffset|電子ブック ファイルが作成された日時です。|
-|lastModifiedDateTime|DateTimeOffset|電子ブックが最後に変更された日時です。|
+|createdDateTime|DateTimeOffset|電子ブック ファイルが作成された日時。|
+|lastModifiedDateTime|DateTimeOffset|電子ブックが最後に変更された日時。|
 |informationUrl|String|詳細情報の URL。|
 |privacyInformationUrl|String|プライバシーに関する声明の URL。|
 

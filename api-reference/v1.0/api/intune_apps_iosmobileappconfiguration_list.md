@@ -1,16 +1,14 @@
-# <a name="update-devicemanagement"></a>deviceManagement の更新
-
-> **重要:**Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでは、これらの API の使用はサポートされていません。
+# <a name="list-iosmobileappconfigurations"></a>iosMobileAppConfiguration のリスト
 
 > **注:**Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
 
-[deviceManagement](../resources/intune_troubleshooting_devicemanagement.md) オブジェクトのプロパティを更新します。
+[iosMobileAppConfiguration](../resources/intune_apps_iosmobileappconfiguration.md) オブジェクトのプロパティとリレーションシップのリストを作成します。
 ## <a name="prerequisites"></a>前提条件
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](../../../concepts/permissions_reference.md)」を参照してください。
 
 |アクセス許可の種類|アクセス許可 (特権の大きいものから小さいものへ)|
 |:---|:---|
-|委任 (職場または学校アカウント)|DeviceManagementManagedDevices.ReadWrite.All|
+|委任 (職場または学校のアカウント)|DeviceManagementApps.ReadWrite.All、DeviceManagementApps.Read.All|
 |委任 (個人用 Microsoft アカウント)|サポートされていません。|
 |アプリケーション|サポートされていません。|
 
@@ -20,7 +18,7 @@
 }
 -->
 ``` http
-PATCH /deviceManagement
+GET /deviceAppManagement/mobileAppConfigurations
 ```
 
 ## <a name="request-headers"></a>要求ヘッダー
@@ -30,28 +28,16 @@ PATCH /deviceManagement
 |Accept|application/json|
 
 ## <a name="request-body"></a>要求本文
-要求本文で、[deviceManagement](../resources/intune_troubleshooting_devicemanagement.md) オブジェクトの JSON 表記を指定します。
-
-次の表に、[deviceManagement](../resources/intune_troubleshooting_devicemanagement.md) の作成時に必要なプロパティを示します。
-
-|プロパティ|型|説明|
-|:---|:---|:---|
-|id|String|まだ文書化されていません|
-
-
+このメソッドには、要求本文を指定しません。
 
 ## <a name="response"></a>応答
-成功した場合、このメソッドは `200 OK` 応答コードと、応答本文で更新された [deviceManagement](../resources/intune_troubleshooting_devicemanagement.md) オブジェクトを返します。
+成功した場合、このメソッドは `200 OK` 応答コードと、応答本文で [iosMobileAppConfiguration](../resources/intune_apps_iosmobileappconfiguration.md) オブジェクトのコレクションを返します。
 
 ## <a name="example"></a>例
 ### <a name="request"></a>要求
 以下は、要求の例です。
 ``` http
-PATCH https://graph.microsoft.com/beta/deviceManagement
-Content-type: application/json
-Content-length: 2
-
-{}
+GET https://graph.microsoft.com/v1.0/deviceAppManagement/mobileAppConfigurations
 ```
 
 ### <a name="response"></a>応答
@@ -59,11 +45,32 @@ Content-length: 2
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 107
+Content-Length: 815
 
 {
-  "@odata.type": "#microsoft.graph.deviceManagement",
-  "id": "0b283420-3420-0b28-2034-280b2034280b"
+  "value": [
+    {
+      "@odata.type": "#microsoft.graph.iosMobileAppConfiguration",
+      "id": "b2c33191-3191-b2c3-9131-c3b29131c3b2",
+      "targetedMobileApps": [
+        "Targeted Mobile Apps value"
+      ],
+      "createdDateTime": "2017-01-01T00:02:43.5775965-08:00",
+      "description": "Description value",
+      "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
+      "displayName": "Display Name value",
+      "version": 7,
+      "encodedSettingXml": "ZW5jb2RlZFNldHRpbmdYbWw=",
+      "settings": [
+        {
+          "@odata.type": "microsoft.graph.appConfigurationSettingItem",
+          "appConfigKey": "App Config Key value",
+          "appConfigKeyType": "integerType",
+          "appConfigKeyValue": "App Config Key Value value"
+        }
+      ]
+    }
+  ]
 }
 ```
 
