@@ -44,6 +44,7 @@
 |department|String|連絡先の部署。|
 |displayName|String|連絡先の表示名。|
 |emailAddresses|[EmailAddress](emailaddress.md) collection|連絡先のメール アドレス。|
+|flag|[followUpFlag](followupflag.md)|メッセージのステータス、開始日、期限、または完了日を示すフラグ値。|
 |fileAs|String|連絡先がファイルされる名前。|
 |generation|String|連絡先の世代。|
 |givenName|String|連絡先の名。|
@@ -109,6 +110,7 @@
   "department": "string",
   "displayName": "string",
   "emailAddresses": [{"@odata.type": "microsoft.graph.emailAddress"}],
+  "flag": {"@odata.type": "microsoft.graph.followupFlag"},
   "fileAs": "string",
   "generation": "string",
   "givenName": "string",

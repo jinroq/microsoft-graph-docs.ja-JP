@@ -7,7 +7,7 @@ Microsoft Graph では、個人または組織のアカウントにあるユー�
 
 電子メール メッセージは、[message](../resources/message.md) リソースによって表され、[mailFolder](../resources/mailfolder.md) で構成されています。メッセージとメール フォルダーは、`GET` 操作から取得できる **id** プロパティによって識別されます。 
 
->**注:**一般的に、メールボックス内で **message** と **mailfolder** ID が一意で不変であるとは想定しないでください。これは、コピー、移動、送信などの特定の操作の後に変更される可能性があります。 
+>**注:** 一般的に、メールボックス内で **message** と **mailfolder** ID が一意で不変であるとは想定しないでください。これは、コピー、移動、送信などの特定の操作の後に変更される可能性があります。 
 
 メッセージ本文は、HTML 形式またはテキスト形式にできます。
 
@@ -30,7 +30,7 @@ Microsoft Graph API には、メッセージの一般的なユース ケース�
 | メールボックス所有者の代理としてメッセージを送信するように別のユーザーに委任する | [message](../resources/message.md) | [メッセージ](../resources/message.md)の **from** プロパティと **sender** プロパティの設定 |
 | ユーザーがより重要なメッセージを最初に表示できるようにする | [inferenceClassificationOverride](../resources/inferenceClassificationOverride.md) | [優先受信トレイ](../resources/manage_focused_inbox.md) |
 | メッセージの添付ファイルを追加、取得、削除する | [attachment](../resources/attachment.md)、 <br> [fileAttachment](../resources/fileattachment.md)、 <br> [itemAttachment](../resources/itemattachment.md)、 <br> [referenceAttachment](../resources/referenceattachment.md)、 <br> [message](../resources/message.md) | [添付ファイルのメソッド](../resources/attachment.md#methods) |
-| ユーザーの自動応答、ロケール、タイム ゾーンを取得または更新する | [mailboxSettings](../resources/mailboxsettings.md)、 <br> [automaticRepliesSetting](../resources/automaticrepliessetting.md)、 <br> [localeInfo](../resources/localeinfo.md) | [ユーザーのメールボックスの設定を取得する](../api/user_get_mailboxsettings.md)、 <br> [ユーザーのメールボックスの設定を更新する](../api/user_update_mailboxsettings.md) |
+| ユーザーの自動応答、ロケール、タイム ゾーン、就業時間を取得または更新する | [mailboxSettings](../resources/mailboxsettings.md)、 <br> [automaticRepliesSetting](../resources/automaticrepliessetting.md)、 <br> [localeInfo](../resources/localeinfo.md)、 <br> [workingHours](../resources/workinghours.md) | [ユーザーのメールボックスの設定を取得する](../api/user_get_mailboxsettings.md)、 <br> [ユーザーのメールボックスの設定を更新する](../api/user_update_mailboxsettings.md) |
 | **メールとフォルダーの管理** | | |
 | メール フォルダー階層内のメッセージを整理する | [mailFolder](../resources/mailfolder.md)  | [mailFolder のメソッド](../resources/mailfolder.md#methods) |
 | メッセージの検索とフィルター処理 | [message](../resources/message.md) | [クエリ パラメーター](../../../concepts/query_parameters.md)  |

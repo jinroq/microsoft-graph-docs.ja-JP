@@ -174,7 +174,7 @@ Microsoft アカウントでは、委任されたアクセス許可の _Contacts
 
 ### <a name="remarks"></a>注釈
 
-> **注:**Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
+> **注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
 
 これらのアクセス許可は、職場または学校アカウントでのみ有効です。
 
@@ -634,7 +634,9 @@ People.Read.All アクセス許可は会社用および学校用のアカウン�
 
 #### <a name="delegated-permissions"></a>委任されたアクセス許可
 
-なし。
+|   アクセス許可    |  表示文字列   |  説明 | 管理者の同意の要不要 |
+|:----------------|:------------------|:-------------|:-----------------------|
+| _Reports.Read.All_ | すべての利用状況レポートの読み取り | アプリで、サインインしているユーザーなしで、すべてのサービス利用状況レポートの読み取りができるようにします。利用状況レポートを提供するサービスには、Office 365 と Azure Active Directory が含まれます。 | はい |
 
 #### <a name="application-permissions"></a>アプリケーションのアクセス許可
 
@@ -722,6 +724,36 @@ _共有_のアクセス許可は、現時点では職場または学校アカウ
 * _Tasks.Read_:ユーザーのメールボックス内にある未完了のタスクをすべて取得します (`GET /users/{id | userPrincipalName}/outlook/tasks?$filter=status ne 'completed'`)。
 * _Tasks.ReadWrite_:ユーザーのメールボックス内のタスクを更新します (`PATCH /users/{id | userPrincipalName}/outlook/tasks/id`)。
 * _Tasks.ReadWrite.Shared_:別のユーザーの代わりにタスクを完了します (`POST /users/{id | userPrincipalName}/outlook/tasks/id/complete`)。
+
+より複雑な複数のアクセス許可を伴うシナリオについては、「[アクセス許可のシナリオ](#permission-scenarios)」を参照してください。
+
+---
+
+## <a name="terms-of-use-permissions"></a>アクセス許可の使用条件
+
+#### <a name="delegated-permissions"></a>委任されたアクセス許可
+
+|   アクセス許可    |  表示文字列   |  説明 | 管理者の同意の要不要 |
+|:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
+| _Agreement.Read.All_ | すべての利用規約の読み取り | サインインしているユーザーの代わりに、アプリで利用規約を読み取ることができるようにします。 | 要 |
+| _Agreement.ReadWrite.All_ | すべての利用規約の読み取りと書き込み | サインインしているユーザーの代わりに、アプリで利用規約の読み取りと書き込みを行えるようにします。 | 要 |
+| _AgreementAcceptance.Read_ | 利用規約に対するユーザー承認状態の読み取り | サインインしているユーザーの代わりに、アプリで利用規約に対するユーザー承認状態を読み取ることができるようにします。 | 要 |
+| _AgreementAcceptance.Read.All_ | ユーザーがアクセスできる、利用規約に対するユーザー承認状態の読み取り | サインインしているユーザーの代わりに、アプリで利用規約に対するユーザー承認状態を読み取ることができるようにします。 | 要 |
+
+### <a name="remarks"></a>注釈
+
+上記のすべてのアクセス許可は、職場または学校のアカウントでのみ有効です。
+
+アクセス許可を委任したアプリですべての利用規約または利用規約に対する承認状態の読み取りまたは書き込みを行うには、サインインしているユーザーにグローバル管理者、条件付きアクセス管理者、またはセキュリティ管理者のロールが割り当てられていなければなりません。 管理者ロールの詳細については、「[Azure Active Directory での管理者ロールの割り当て](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles)」を参照してください。
+
+### <a name="example-usage"></a>使用例
+
+#### <a name="delegated"></a>委任
+次に示す使用法は、両方の委任されたアクセス許可に対して有効です。
+
+* _Agreement.Read.All_: すべての利用規約の読み取り (`GET /beta/agreements`)
+* _Agreement.ReadWrite.All_: すべての利用規約の読み取りと書き込み (`POST /beta/agreements`)
+* _AgreementAcceptance.Read_: 利用規約に対するユーザー承認状態の読み取り (`GET /beta/me/agreementAcceptances`)
 
 より複雑な複数のアクセス許可を伴うシナリオについては、「[アクセス許可のシナリオ](#permission-scenarios)」を参照してください。
 

@@ -1,6 +1,7 @@
-# <a name="update-androidmanagedappprotection"></a>Update androidManagedAppProtection
+# <a name="update-androidmanagedappprotection"></a>androidManagedAppProtection の更新
 
-> **注:**Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
+
+> **注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
 
 [androidManagedAppProtection](../resources/intune_mam_androidmanagedappprotection.md) オブジェクトのプロパティを更新します。
 ## <a name="prerequisites"></a>前提条件

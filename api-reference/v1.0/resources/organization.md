@@ -10,8 +10,8 @@ Azure Active Directory テナントを表します。テナントでは読み取
 | メソッド       | 戻り値の型  |説明|
 |:---------------|:--------|:----------|
 |[組織を取得する](../api/organization_get.md) | [organization](organization.md) |組織オブジェクトのプロパティと関係を読み取ります。|
-|[Update](../api/organization_update.md) | [organization](organization.md)  |組織オブジェクトを更新します。(**marketingNotificationMails** プロパティと **technicalNotificationMails** プロパティのみを更新できます。) |
-|**オープン拡張機能**| | |
+|[Update](../api/organization_update.md) | [organization](organization.md)  |organization オブジェクトを更新します。 更新できるプロパティは、**marketingNotificationMails**、**technicalNotificationMails**、**securityComplianceNotificationMails**、**securityComplianceNotificationPhones**、**privacyProfile** のみです。 |
+|**オープン拡張機能**| | ||**オープン拡張機能**| | |
 |[オープン拡張機能を作成する](../api/opentypeextension_post_opentypeextension.md) |[openTypeExtension](opentypeextension.md)| オープン拡張機能を作成し、新規または既存のリソースにカスタム プロパティを追加します。|
 |[オープン拡張機能を取得する](../api/opentypeextension_get.md) |[openTypeExtension](opentypeextension.md) コレクション| 拡張機能の名前で識別されるオープン拡張機能を取得します。|
 |**スキーマ拡張機能**| | |
@@ -33,7 +33,8 @@ Azure Active Directory テナントを表します。テナントでは読み取
 | marketingNotificationEmails          | String collection                                                 | null 許容ではありません。                                                                                                                                                                                                                                                                        |
 | objectType                           | String                                                            | オブジェクトの種類を識別する文字列です。テナントの場合、値は常に「会社」です。                                                                                                                                                                                                 |
 | postalCode                           | String                                                            | 組織の住所の郵便番号                                                                                                                                                                                                                                      |
-| preferredLanguage                    | String                                                            | 組織の優先言語。 ISO 639-1 コードに従う必要があります。たとえば "en" です。                                                                                                                                                                                         |
+| preferredLanguage                    | String                                                            | 組織の優先言語。 ISO 639-1 コードに従う必要があります (例: "en")。                                                                                                                                                                                         |
+| privacyProfile                       | [privacyProfile](privacyprofile.md)                               | 組織のプライバシー プロファイル。                                                                                                                                                                                                                                              |
 | provisionedPlans                     | [ProvisionedPlan](provisionedplan.md) コレクション                  | null 許容ではありません。                                                                                                                                                                                                                                                                        |
 | provisioningErrors                   | ProvisioningError コレクション                                      | null 許容ではありません。                                                                                                                                                                                                                                                                        |
 | securityComplianceNotificationMails  | String collection                                                 |                                                                                                                                                                                                                                                                                      |
@@ -76,6 +77,7 @@ Azure Active Directory テナントを表します。テナントでは読み取
   "onPremisesSyncEnabled": true,
   "postalCode": "string",
   "preferredLanguage": "string",
+  "privacyProfile": {"@odata.type": "microsoft.graph.privacyProfile"},
   "provisionedPlans": [{"@odata.type": "microsoft.graph.provisionedPlan"}],
   "securityComplianceNotificationMails": ["string"],
   "securityComplianceNotificationPhones": ["string"],

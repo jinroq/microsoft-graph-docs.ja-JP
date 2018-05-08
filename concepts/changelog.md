@@ -4,6 +4,60 @@
 
 Microsoft Graph API に関する既知の問題の詳細については、「[既知の問題](known_issues.md)」を参照してください。
 
+## <a name="april-2018"></a>2018 年 4 月
+
+### <a name="reports-apis"></a>レポート API
+|変更の種類|バージョン|説明|
+|:---|:---|:---|
+|追加|ベータ版| 委任アクセスのサポートを追加しました。 |
+|追加|v1.0| 委任アクセスのサポートを追加しました。 |
+
+### <a name="directory-apis"></a>ディレクトリ API
+
+| **変更の種類** | **バージョン** | **説明**                          |
+| :-------------- | :---------- | :--------------------------------------- |
+| 追加        | V1.0        | **privacyProfile** 複合型を [organization](../api-reference/v1.0/resources/organization.md) エンティティに追加しました。 |
+
+### <a name="outlook-calendar"></a>Outlook カレンダー
+
+| **変更の種類** | **バージョン**   | **説明**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| 追加        | v1.0          | **locations** プロパティを [event](https://developer.microsoft.com/ja-JP/graph/docs/api-reference/v1.0/resources/event) エンティティに追加しました。これにより、出席者が複数の場所から出席できるイベントを開催できるようになりました。 |
+| 追加        | v1.0          | **locationType** プロパティを [location](https://developer.microsoft.com/ja-JP/graph/docs/api-reference/v1.0/resources/location) 複合型に追加しました。 |
+| 追加        | v1.0          | **uniqueId** および **uniqueIdType** プロパティを [location](https://developer.microsoft.com/ja-JP/graph/docs/api-reference/v1.0/resources/location) 複合型に追加しました。 これらのプロパティは、現時点では内部使用に限られます。 |
+
+
+### <a name="outlook-contacts"></a>Outlook の連絡先
+
+| **変更の種類** | **バージョン** | **説明**                          |
+| :-------------- | :---------- | :--------------------------------------- |
+| 追加        | v1.0          | **flag** プロパティを [contact](https://developer.microsoft.com/ja-JP/graph/docs/api-reference/v1.0/resources/contact) エンティティに追加しました。 共有 [followupFlag](https://developer.microsoft.com/ja-JP/graph/docs/api-reference/v1.0/resources/followupflag) 複合型を追加しました。|
+
+
+### <a name="outlook-mail"></a>Outlook メール
+
+| **変更の種類** | **バージョン** | **説明**                          |
+| :-------------- | :---------- | :--------------------------------------- |
+| 追加        | v1.0          | **flag** プロパティを [message](https://developer.microsoft.com/ja-JP/graph/docs/api-reference/v1.0/resources/message) エンティティに追加しました。 共有 [followupFlag](https://developer.microsoft.com/ja-JP/graph/docs/api-reference/v1.0/resources/followupflag) 複合型を追加しました。|
+| 追加        | v1.0        | **internetMessageHeaders** プロパティを [message](https://developer.microsoft.com/ja-JP/graph/docs/api-reference/v1.0/resources/message) エンティティに追加しました。 |
+| 追加        | v1.0        | [internetMessageHeader](https://developer.microsoft.com/ja-JP/graph/docs/api-reference/v1.0/resources/internetmessageheader) 複合型を追加しました。 |
+| 追加        | v1.0        | **messageRules** ナビゲーション プロパティを [mailFolder](https://developer.microsoft.com/ja-JP/graph/docs/api-reference/v1.0/resources/mailfolder) エンティティに追加しました。 **messageRules** は [messageRule](https://developer.microsoft.com/ja-JP/graph/docs/api-reference/v1.0/resources/messagerule) インスタンスのコレクションです。 |
+| 追加        | v1.0        | [messageRule](https://developer.microsoft.com/ja-JP/graph/docs/api-reference/v1.0/resources/messagerule) エンティティと、[messageRuleActions](https://developer.microsoft.com/ja-JP/graph/docs/api-reference/v1.0/resources/messageruleactions)、[messageRulePredicates](https://developer.microsoft.com/ja-JP/graph/docs/api-reference/v1.0/resources/messagerulepredicates)、[sizeRange](https://developer.microsoft.com/ja-JP/graph/docs/api-reference/v1.0/resources/sizerange) 複合型を追加しました。 |
+| 追加        | v1.0        | メッセージ ルールに CRUD 操作 [create](https://developer.microsoft.com/ja-JP/graph/docs/api-reference/v1.0/api/mailfolder_post_messagerules)、[list](https://developer.microsoft.com/ja-JP/graph/docs/api-reference/v1.0/api/mailfolder_list_messagerules)、[get](https://developer.microsoft.com/ja-JP/graph/docs/api-reference/v1.0/api/messagerule_get)、[update](https://developer.microsoft.com/ja-JP/graph/docs/api-reference/v1.0/api/messagerule_update)、[delete](https://developer.microsoft.com/ja-JP/graph/docs/api-reference/v1.0/api/messagerule_delete) を追加しました。 |
+
+
+### <a name="outlook-user-choices"></a>Outlook のユーザーの選択
+
+| **変更の種類** | **バージョン** | **説明**                          |
+| :-------------- | :---------- | :--------------------------------------- |
+| 追加        | v1.0        | 新しい **masterCategories** ナビゲーション プロパティを [outlookUser](https://developer.microsoft.com/ja-JP/graph/docs/api-reference/v1.0/resources/outlookuser) エンティティに追加しました。 **masterCategories** は [outlookCategory](https://developer.microsoft.com/ja-JP/graph/docs/api-reference/v1.0/resources/outlookCategory) オブジェクトのコレクションです。 |
+| 追加        | v1.0        | [outlookCategory](https://developer.microsoft.com/ja-JP/graph/docs/api-reference/v1.0/resources/outlookCategory) エンティティを追加しました。 |
+| 追加        | v1.0        | [outlookCategory](https://developer.microsoft.com/ja-JP/graph/docs/api-reference/v1.0/resources/outlookCategory) に CRUD 操作 [create](https://developer.microsoft.com/ja-JP/graph/docs/api-reference/v1.0/api/outlookuser_post_mastercategories)、[get](https://developer.microsoft.com/ja-JP/graph/docs/api-reference/v1.0/api/outlookcategory_get)、[update](https://developer.microsoft.com/ja-JP/graph/docs/api-reference/v1.0/api/outlookcategory_update)、[delete](https://developer.microsoft.com/ja-JP/graph/docs/api-reference/v1.0/api/outlookcategory_delete) を追加しました。 |
+| 追加        | v1.0        | 新しい [supportedLanguages](https://developer.microsoft.com/ja-JP/graph/docs/api-reference/v1.0/api/outlookuser_supportedlanguages) 関数を [outlookUser](https://developer.microsoft.com/ja-JP/graph/docs/api-reference/v1.0/resources/outlookuser) エンティティに追加しました。 |
+| 追加        | v1.0        | 新しい [supportedTimeZones](https://developer.microsoft.com/ja-JP/graph/docs/api-reference/v1.0/api/outlookuser_supportedtimezones) 関数を [outlookUser](https://developer.microsoft.com/ja-JP/graph/docs/api-reference/v1.0/resources/outlookuser) エンティティに追加しました。 |
+|追加 | v1.0 | 新しい **workingHours** プロパティを [mailboxSettings](../api-reference/v1.0/resources/mailboxsettings.md) に追加しました。 サポートされるユース ケースについては、「[workingHours リソース タイプ](../api-reference/v1.0/resources/workinghours.md)」を参照してください。|
+|追加 | v1.0 | 次の新しい複合型を追加しました。 <br> [workingHours](../api-reference/v1.0/resources/workinghours.md) <br> [timeZoneBase](../api-reference/v1.0/resources/timezonebase.md) <br> [customTimeZone](../api-reference/v1.0/resources/customtimezone.md) <br> [standardTimeZoneOffset](../api-reference/v1.0/resources/standardtimezoneoffset.md) <br> [daylightTimeZoneOffset](../api-reference/v1.0/resources/daylighttimezoneoffset.md)|
+
 ## <a name="march-2018"></a>2018 年 3 月
 
 ### <a name="activityfeedservice-apis"></a>ActivityFeedService API
@@ -24,16 +78,20 @@ Microsoft Graph API に関する既知の問題の詳細については、「[�
 
 | **変更の種類** | **バージョン** | **説明**                          |
 | :-------------- | :---------- | :--------------------------------------- |
-| 追加        | ベータ版        | [user](../api-reference/beta/resources/user.md) エンティティに **onPremisesExtensionAttributes** 複合型を追加しました。 これにはオンプレミスの拡張属性 1 ~ 15 が含まれています。 |
+| 追加        | ベータ版        | **onPremisesExtensionAttributes** 複合型を [user](../api-reference/beta/resources/user.md) エンティティに追加しました。 これにはオンプレミス AD の拡張属性 1 - 15 が含まれています。 |
+| 追加        | ベータ版        | **privacyProfile** 複合型を [organization](../api-reference/beta/resources/organization.md) エンティティに追加しました。 |
+| 追加        | V1.0        | [ユーザーとグループの復元と完全削除](https://developer.microsoft.com/ja-JP/graph/docs/api-reference/v1.0/resources/directory)に関するサポートを追加しました。 |
 
 ### <a name="excel-apis"></a>Excel API
-|変更の種類|バージョン|説明|
-|:---|:---|:---|
+
+| **変更の種類** | **バージョン** | **説明**                          |
+| :-------------- | :---------- | :--------------------------------------- |
 |変更|v1.0|[Excel Table](../api-reference/v1.0/resources/table.md) エンティティに **legacyId** プロパティを追加しました。 これには任意の Excel テーブルに対して定数となる数値識別子（文字列データ型）が含まれています。 これは、アプリケーションが古いバージョンの Excel クライアント アプリケーションで使用している従来の識別子に依存していた場合は、追加のメタデータとして提供されます。 注: `id` と `legacyId` プロパティはアプリケーションで符号化文字列値として処理し、その他の型に解析すべきではありません。 |
 
 ### <a name="reports-apis"></a>レポート API
-|変更の種類|バージョン|説明|
-|:---|:---|:---|
+
+| **変更の種類** | **バージョン** | **説明**                          |
+| :-------------- | :---------- | :--------------------------------------- |
 |追加|ベータ版|[sharePointSiteUsageDetail](../api-reference/beta/resources/sharepointsiteusagedetail.md) エンティティに **siteId** プロパティが追加されました。|
 
 ### <a name="group-lifecycle-policy"></a>グループのライフサイクル ポリシー
@@ -1604,7 +1662,7 @@ Microsoft Graph API に関する既知の問題の詳細については、「[�
 
 | **変更の種類** | **バージョン** | **説明**                          |
 | :-------------- | :---------- | :--------------------------------------- |
-| 追加        | v1.0        | アプリで v1.0 Outlook メール、カレンダー、連絡先の API を使用して、Exchange 2016 累積的な更新プログラム 3 (CU3) を使用したハイブリッド展開のオンプレミスのメールボックスにアクセスできます。REST API サポートの詳細については、特定の[ハイブリッド展開](https://developer.microsoft.com/ja-JP/graph/docs/overview/hybrid_rest_support)をご覧ください。**注:**v1.0 のこれらの API セットを使用している場合、特定のハイブリッド展開の要件を満たすオンプレミスのメールボックスで機能する、運用アプリを含むアプリを検出できるようになりました。この機能はプレビューでのみ使用できます。 |
+| 追加        | v1.0        | アプリで v1.0 Outlook メール、カレンダー、連絡先の API を使用して、Exchange 2016 累積的な更新プログラム 3 (CU3) を使用したハイブリッド展開のオンプレミスのメールボックスにアクセスできます。REST API サポートの詳細については、特定の[ハイブリッド展開](https://developer.microsoft.com/ja-JP/graph/docs/overview/hybrid_rest_support)をご覧ください。**注:** v1.0 のこれらの API セットを使用している場合、特定のハイブリッド展開の要件を満たすオンプレミスのメールボックスで機能する、運用アプリを含むアプリを検出できるようになりました。この機能はプレビューでのみ使用できます。 |
 
 ### <a name="identityriskevents"></a>IdentityRiskEvents
 

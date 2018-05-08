@@ -6,10 +6,10 @@
 
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](../../../concepts/permissions_reference.md)」を参照してください。
 
-|アクセス許可の種類      | アクセス許可 (特権の小さいものから大きいものへ)              |
+|アクセス許可の種類 | アクセス許可 (特権の小さいものから大きいものへ) |
 |:--------------------|:---------------------------------------------------------|
-|委任 (職場または学校のアカウント) | サポートされていません。    |
-|委任 (個人用 Microsoft アカウント) | サポートされていません。    |
+|委任 (職場または学校のアカウント) | Directory.AccessAsUser.All |
+|委任 (個人用 Microsoft アカウント) | サポートされていません。 |
 |アプリケーション | サポートされていません。 |
 
 ## <a name="http-request"></a>HTTP 要求
@@ -32,31 +32,15 @@ PATCH /organization
 
 | プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
-|assignedPlans|AssignedPlan|テナントに関連付けられているサービス プランのコレクション。 **注**: Null は許容されません。            |
-|city|String|            |
-|companyLastDirSyncTime|DateTimeOffset|前回テナントがオンプレミスのディレクトリと同期した日付と時刻。|
-|country|String|            |
-|countryLetterCode|String|            |
-|deletionTimestamp|DateTimeOffset||
-|dirSyncEnabled|Boolean|このオブジェクトがオンプレミスのディレクトリから同期される場合は **true**。このオブジェクトが最初にオンプレミスのディレクトリから同期されていて、今後は同期されない場合は **false**。このオブジェクトがオンプレミスのディレクトリから一度も同期されたことがない場合は **null** (既定値)。|
-|displayName|String|テナントの表示名。|
-|marketingNotificationEmails|String|                                        **注**: Null は許容されません。            |
-|objectType|文字列|オブジェクトの種類を識別する文字列です。 テナントの場合、値は常に “Company” です。 [directoryObject](../resources/directoryobject.md) から継承されます。|
-|postalCode|String|            |
-|preferredLanguage|String|            |
-|provisionedPlans|ProvisionedPlan|                                        **注**: Null は許容されません。            |
-|provisioningErrors|ProvisioningError|                                        **注**: Null は許容されません。            |
-|securityComplianceNotificationMails|String||
-|securityComplianceNotificationPhones|String||
-|state|String|            |
-|street|String|            |
-|technicalNotificationMails|String|                                        **注**: Null は許容されません。            |
-|telephoneNumber|String|            |
-|verifiedDomains|VerifiedDomain|このテナントに関連付けられているドメインのコレクション。 **注**: Null は許容されません。            |
+|marketingNotificationEmails|String コレクション|                                        **注**: Null は許容されません。            |
+|privacyProfile|[privacyProfile](../resources/privacyprofile.md)|組織のプライバシー プロファイル (statementUrl と contactEmail を設定します)。            |
+|securityComplianceNotificationMails|String collection||
+|securityComplianceNotificationPhones|String コレクション||
+|technicalNotificationMails|String コレクション| 
 
 ## <a name="response"></a>応答
 
-成功した場合、このメソッドは `200 OK` 応答コードと、応答本文で更新された [organization](../resources/organization.md) オブジェクトを返します。
+成功した場合、このメソッドは `204 No Content` 応答コードを返します。応答本文には何も返されません。
 
 ## <a name="example"></a>例
 
@@ -75,21 +59,15 @@ Content-type: application/json
 Content-length: 411
 
 {
-  "assignedPlans": [
+  "marketingNotificationEmails" : ["marketing@contoso.com"],
+  "privacyProfile" :
     {
-      "assignedDateTime": "datetime-value",
-      "capabilityStatus": "capabilityStatus-value",
-      "service": "service-value",
-      "servicePlanId": "servicePlanId-value"
-    }
-  ],
-  "businessPhones": [
-    "businessPhones-value"
-  ],
-  "city": "city-value",
-  "country": "country-value",
-  "countryLetterCode": "countryLetterCode-value",
-  "displayName": "displayName-value"
+      "contactEmail":"alice@contoso.com",
+      "statementUrl":"https://contoso.com/privacyStatement"
+    },
+  "securityComplianceNotificationMails" : ["security@contoso.com"],
+  "securityComplianceNotificationPhones" : ["(123) 456-7890"],
+  "technicalNotificationMails" : ["tech@contoso.com"]
 }
 ```
 
@@ -106,27 +84,7 @@ Content-length: 411
 } -->
 
 ```http
-HTTP/1.1 200 OK
-Content-type: application/json
-Content-length: 411
-
-{
-  "assignedPlans": [
-    {
-      "assignedDateTime": "datetime-value",
-      "capabilityStatus": "capabilityStatus-value",
-      "service": "service-value",
-      "servicePlanId": "servicePlanId-value"
-    }
-  ],
-  "businessPhones": [
-    "businessPhones-value"
-  ],
-  "city": "city-value",
-  "country": "country-value",
-  "countryLetterCode": "countryLetterCode-value",
-  "displayName": "displayName-value"
-}
+HTTP/1.1 204 No Content
 ```
 
 <br/>

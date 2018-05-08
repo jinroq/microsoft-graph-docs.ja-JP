@@ -49,28 +49,29 @@
 |hasAttachments|Boolean|イベントに添付ファイルが含まれている場合、true に設定します。|
 |iCalUId|String|複数の予定表で 1 つのイベントのすべてのインスタンスによって共有される一意識別子。|
 |id|String| 読み取り専用。|
-|importance|String|イベントの重要度。 可能な値は `Low`、`Normal`、`High` です。|
+|importance|String|イベントの重要度。 可能な値は `low`、`normal`、`high` です。|
 |isAllDay|Boolean|イベントが一日中続く場合に、true に設定します。|
 |isCancelled|Boolean|イベントがキャンセルされた場合に、true に設定します。|
 |isOrganizer|Boolean|メッセージの送信者が開催者でもある場合に、true に設定します。|
 |isReminderOn|Boolean|ユーザーにイベントを通知するアラートを設定する場合は、true に設定します。|
 |lastModifiedDateTime|DateTimeOffset|Timestamp 型は、ISO 8601 形式を使用して日付と時刻の情報を表し、必ず UTC 時間です。たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、次のようになります。`'2014-01-01T00:00:00Z'`|
 |location|[location](location.md)|イベントの場所。|
+|locations|[location](location.md) コレクション|イベントを開催する場所、または参加者がいる場所。 **location** プロパティと **locations** プロパティは常に互いに一致します。 **location** プロパティを更新すると、**locations** コレクションに含まれる既存のすべての場所が削除されて、**location** の新しい値に置き換えられます。 |
 |onlineMeetingUrl|String|オンライン会議の URL。|
 |organizer|[recipient](recipient.md)|イベントの開催者。|
-|originalEndTimeZone|String|イベントが作成されたときに設定された終了タイム ゾーン。値 `tzone://Microsoft/Custom` は、デスクトップの Outlook で、従来のカスタム タイム ゾーンが設定されていることを示します。|
+|originalEndTimeZone|String|イベントの作成時に設定された終了タイム ゾーン。 値 `tzone://Microsoft/Custom` は、デスクトップの Outlook で、従来のカスタム タイム ゾーンが設定されていることを示します。|
 |originalStart|DateTimeOffset|Timestamp 型は、ISO 8601 形式を使用して日付と時刻の情報を表し、必ず UTC 時間です。たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、次のようになります。`'2014-01-01T00:00:00Z'`|
 |originalStartTimeZone|String|イベントが作成されたときに設定された開始タイム ゾーン。値 `tzone://Microsoft/Custom` は、デスクトップの Outlook で、従来のカスタム タイム ゾーンが設定されていることを示します。 |
 |recurrence|[patternedRecurrence](patternedrecurrence.md)|イベントの繰り返しパターン。|
 |reminderMinutesBeforeStart|Int32|アラーム通知を行う、イベント開始時間前の分数。|
 |responseRequested|Boolean|イベントが承諾または辞退されたときに、送信者が応答を希望する場合に、true に設定します。|
 |responseStatus|[responseStatus](responsestatus.md)|イベント メッセージへの応答で送信される応答のタイプを識別します。|
-|sensitivity|String| 使用可能な値: `Normal`、`Personal`、`Private`、`Confidential`。|
+|sensitivity|String| 使用可能な値: `normal`、`personal`、`private`、`confidential`。|
 |seriesMasterId|String|アイテムに割り当てられたカテゴリ。|
-|showAs|String|表示するステータス。 使用可能な値: `Free`、`Tentative`、`Busy`、`Oof`、`WorkingElsewhere`、`Unknown`。|
+|showAs|String|表示するステータス。 使用可能な値: `free`、`tentative`、`busy`、`oof`、`workingElsewhere`、`unknown`。|
 |start|[dateTimeTimeZone](datetimetimezone.md)|イベントが開始する日付、時刻、タイムゾーン。|
 |subject|String|イベントの件名行のテキスト。|
-|type|String|イベントの種類。 使用可能な値: `SingleInstance`、`Occurrence`、`Exception`、`SeriesMaster`。 読み取り専用です。|
+|type|String|イベントの種類。 使用可能な値: `singleInstance`、`occurrence`、`exception`、`seriesMaster`。 読み取り専用です。|
 |webLink|String|Outlook Web App でイベントを開く URL。<br/><br/>Outlook Web App のメールボックスにログインしている場合、ブラウザーでイベントが開きます。まだブラウザーでログインしていない場合、ログインするように求められます。<br/><br/>この URL には、iFrame 内からアクセスできます。|
 
 ## <a name="relationships"></a>リレーションシップ
@@ -120,6 +121,7 @@
   "isReminderOn": true,
   "lastModifiedDateTime": "String (timestamp)",
   "location": {"@odata.type": "microsoft.graph.location"},
+  "locations": [{"@odata.type": "microsoft.graph.location"}],
   "onlineMeetingUrl": "string",
   "organizer": {"@odata.type": "microsoft.graph.recipient"},
   "originalEndTimeZone": "string",

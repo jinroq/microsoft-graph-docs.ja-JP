@@ -1,6 +1,6 @@
 # <a name="get-user-mailbox-settings"></a>ユーザーのメールボックスの設定を取得する
 
-ユーザーの [mailboxSettings](../resources/mailboxsettings.md) を取得します。これには、自動応答 (ユーザーが電子メールを受信したときに自動的にユーザーに通知)、ロケール (言語と国/地域)、およびタイム ゾーンの設定が含まれます。
+ユーザーの [mailboxSettings](../resources/mailboxsettings.md) を取得します。これには、自動応答 (ユーザーが電子メールを受信したときに自動的にユーザーに通知)、ロケール (言語と国/地域)、タイム ゾーン、就業時間の設定が含まれます。
 
 すべてのメールボックス設定を表示することも、特定の設定を取得することもできます。
 
@@ -18,14 +18,14 @@
 |アプリケーション | MailboxSettings.Read、MailboxSettings.ReadWrite |
 
 ## <a name="http-request"></a>HTTP 要求
-自動応答設定を含むメールボックスのすべての設定を取得するには:
+ユーザーのすべてのメールボックス設定を取得する場合:
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/mailboxSettings
 GET /users/{id|userPrincipalName}/mailboxSettings
 ```
 
-特定の設定 (たとえば、自動応答の設定、ロケール、またはタイム ゾーンのみ) を取得するには:
+特定の設定 (たとえば、自動応答の設定、ロケール、タイム ゾーン、または就業時間のみ) を取得する場合:
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/mailboxSettings/automaticRepliesSetting
@@ -36,6 +36,9 @@ GET /users/{id|userPrincipalName}/mailboxSettings/language
 
 GET /me/mailboxSettings/timeZone
 GET /users/{id|userPrincipalName}/mailboxSettings/timeZone
+
+GET /me/mailboxSettings/workingHours
+GET /users/{id|userPrincipalName}/mailboxSettings/workingHours
 ```
 ## <a name="optional-query-parameters"></a>オプションのクエリ パラメーター
 このメソッドは、応答をカスタマイズするための [OData クエリ パラメーター](http://developer.microsoft.com/ja-JP/graph/docs/overview/query_parameters)をサポートします。
@@ -55,10 +58,11 @@ GET /users/{id|userPrincipalName}/mailboxSettings/timeZone
 - [automaticRepliesSetting](../resources/automaticRepliesSetting.md) オブジェクト
 - [localeInfo](../resources/localeinfo.md) オブジェクト
 - string (**timeZone** の場合)
+- [workingHours](../resources/workinghours.md)
 
 ## <a name="example"></a>例
 ##### <a name="request-1"></a>要求 1
-最初の例では、サインインしているユーザーのメールボックスのメールボックス設定をすべて取得します。取得する設定には、自動応答の設定、タイム ゾーン、言語設定が含まれます。
+最初の例では、サインインしているユーザーのメールボックスのすべてのメールボックス設定を取得します。取得される設定には、自動応答、ロケール (言語と国/地域)、タイム ゾーン、就業時間の設定が含まれます。
 <!-- {
   "blockType": "request",
   "name": "get_mailboxsettings_1"
@@ -98,6 +102,20 @@ Content-type: application/json
     "language":{
       "locale":"en-US",
       "displayName":"English (United States)"
+    },
+    "workingHours":{
+        "daysOfWeek":[
+            "monday",
+            "tuesday",
+            "wednesday",
+            "thursday",
+            "friday"
+        ],
+        "startTime":"08:00:00.0000000",
+        "endTime":"17:00:00.0000000",
+        "timeZone":{
+            "name":"Pacific Standard Time"
+        }
     }
 }
 ```
@@ -137,6 +155,64 @@ Content-type: application/json
     },
     "internalReplyMessage": "<html>\n<body>\n<p>I'm at our company's worldwide reunion and will respond to your message as soon as I return.<br>\n</p></body>\n</html>\n",
     "externalReplyMessage": "<html>\n<body>\n<p>I'm at the Contoso worldwide reunion and will respond to your message as soon as I return.<br>\n</p></body>\n</html>\n"
+}
+```
+
+
+##### <a name="request-3"></a>要求 3
+3 番目の例では、サインインしているユーザーのメールボックスの自動応答の設定を具体的に指定して取得します。
+<!-- {
+  "blockType": "ignored",
+  "name": "get_mailboxsettings_3"
+}-->
+```http
+GET https://graph.microsoft.com/v1.0/me/mailboxSettings/workingHours
+```
+##### <a name="response-3"></a>応答 3
+この応答には、自動応答の設定のみが含まれます。 ユーザーの就業時間には、[カスタム タイム ゾーン](../resources/customtimezone.md)が適用されていることに注意してください。 注: 簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。 実際の呼び出しではすべてのプロパティが返されます。
+<!-- {
+  "blockType": "ignored",
+  "name": "get_mailboxsettings_3",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.workingHours"
+} -->
+
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+    "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#users('94447c6e-ea4c-494c-a9ed-d905e366c5cb')/mailboxSettings/workingHours",
+    "daysOfWeek":[
+        "monday",
+        "tuesday",
+        "wednesday",
+        "thursday",
+        "friday",
+        "saturday"
+    ],
+    "startTime":"09:00:00.0000000",
+    "endTime":"18:30:00.0000000",
+    "timeZone":{
+        "@odata.type":"#microsoft.graph.customTimeZone",
+        "bias":-200,
+        "name":"Customized Time Zone",
+        "standardOffset":{
+            "time":"02:00:00.0000000",
+            "dayOccurrence":4,
+            "dayOfWeek":"sunday",
+            "month":5,
+            "year":0
+        },
+        "daylightOffset":{
+            "daylightBias":-100,
+            "time":"02:00:00.0000000",
+            "dayOccurrence":2,
+            "dayOfWeek":"sunday",
+            "month":10,
+            "year":0
+        }
+    }
 }
 ```
 
