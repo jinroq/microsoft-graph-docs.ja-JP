@@ -1,6 +1,6 @@
 # <a name="managedappstatusraw-resource-type"></a>managedAppStatusRaw リソースの種類
 
-> **注:**Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
+> **注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
 
 組織アプリの保護と構成についての型指定されていない進捗レポートを表します。
 
@@ -11,9 +11,6 @@
 |:---|:---|:---|
 |[managedAppStatusRaws のリスト](../api/intune_mam_managedappstatusraw_list.md)|[managedAppStatusRaw](../resources/intune_mam_managedappstatusraw.md) コレクション|[managedAppStatusRaw](../resources/intune_mam_managedappstatusraw.md) オブジェクトのプロパティとリレーションシップをリストします。|
 |[managedAppStatusRaw の取得](../api/intune_mam_managedappstatusraw_get.md)|[managedAppStatusRaw](../resources/intune_mam_managedappstatusraw.md)|[managedAppStatusRaw](../resources/intune_mam_managedappstatusraw.md) オブジェクトのプロパティとリレーションシップを読み取ります。|
-|[ManagedAppStatusRaw の作成](../api/intune_mam_managedappstatusraw_create.md)|[managedAppStatusRaw](../resources/intune_mam_managedappstatusraw.md)|新しい [managedAppStatusRaw](../resources/intune_mam_managedappstatusraw.md) オブジェクトを作成します。|
-|[managedAppStatusRaw の削除](../api/intune_mam_managedappstatusraw_delete.md)|なし|[managedAppStatusRaw](../resources/intune_mam_managedappstatusraw.md) を削除します。|
-|[managedAppStatusRaw の更新](../api/intune_mam_managedappstatusraw_update.md)|[managedAppStatusRaw](../resources/intune_mam_managedappstatusraw.md)|[managedAppStatusRaw](../resources/intune_mam_managedappstatusraw.md) オブジェクトのプロパティを更新します。|
 
 ## <a name="properties"></a>プロパティ
 |プロパティ|型|説明|

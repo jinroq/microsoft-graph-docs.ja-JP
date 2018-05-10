@@ -6,9 +6,11 @@
 
 |アクセス許可の種類      | アクセス許可 (特権の小さいものから大きいものへ)              |
 |:--------------------|:---------------------------------------------------------|
-|委任 (職場または学校アカウント) | User.Read、Directory.Read.All    |
+|委任 (職場または学校アカウント) | User.Read、Directory.Read.All、Directory.ReadWrite.All   |
 |委任 (個人用 Microsoft アカウント) | サポートされていません。    |
-|アプリケーション | Directory.Read.All |
+|アプリケーション | Directory.Read.All、Directory.ReadWrite.All |
+
+> 注: User.Read アクセス許可を付与されたアプリケーションは、組織の *id*、*displayName*、および *verifiedDomains* プロパティのみを読み取ることができます。  他のすべてのプロパティは `null` 値を返します。 すべてのプロパティを読み取るには、Directory.Read.All を使用します。
 
 ## <a name="http-request"></a>HTTP 要求
 <!-- { "blockType": "ignored" } -->

@@ -1,6 +1,6 @@
 # <a name="how-to-protect-your-company-app-data-with-microsoft-intune"></a>Microsoft Intune で会社のアプリ データを保護する方法
 
-> **注:**Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://www.microsoft.com/ja-JP/cloud-platform/microsoft-intune-pricing)を持っている必要があります。
+> **注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://www.microsoft.com/ja-JP/cloud-platform/microsoft-intune-pricing)を持っている必要があります。
 
 Microsoft Intune のアプリ保護ポリシーは、会社のデータを保護し、データの損失を防ぐのに役立ちます。
 
@@ -42,7 +42,6 @@ Intune のアプリ保護ポリシーを使用して、会社のデータを保�
 - [モバイル アプリ ID](intune_mam_mobileappidentifier.md)
 - [プロキシ化されたドメイン](intune_mam_proxieddomain.md)
 - [対象となる管理対象アプリの構成](intune_mam_targetedmanagedappconfiguration.md)
-- [対象となる管理対象アプリ ポリシーの割り当て](intune_mam_targetedmanagedapppolicyassignment.md)
 - [対象となる管理対象アプリの保護](intune_mam_targetedmanagedappprotection.md)
 - [ユーザー](intune_mam_user.md)
 - [Windows 情報保護アプリの学習概要](intune_wip_windowsinformationprotectionapplearningsummary.md)

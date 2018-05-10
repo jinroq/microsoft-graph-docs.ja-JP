@@ -16,7 +16,7 @@
 |[ドライブを取得する](../api/drive_get.md) | [drive](drive.md)  |ドライブ オブジェクトのプロパティを取得します。 |
 |[グループを作成する](../api/group_post_groups.md) |[group](group.md)| グループ コレクションに投稿して、新しいグループを作成します。|
 |[グループを一覧表示する](../api/group_list.md) | [group](group.md) コレクション |グループ オブジェクトのコレクションを取得します。 |
-|[組織を一覧表示する](../api/organization_list.md) | [organization](organization.md) コレクション |組織オブジェクトのコレクションを取得します。 |
+|[組織を一覧表示する](../api/organization_get.md) | [organization](organization.md) コレクション |組織オブジェクトのコレクションを取得します。 |
 |[subscribedSku を一覧表示する](../api/subscribedsku_list.md) | [subscribedSku](subscribedsku.md) コレクション |SubscribedSku オブジェクトのコレクションを取得します。 |
 |[ユーザーを作成する](../api/user_post_users.md) |[user](user.md)| ユーザー コレクションに投稿して、新しいグループを作成します。|
 |[ユーザーを一覧表示する](../api/user_list.md) | [user](user.md) コレクション |ユーザー オブジェクトのコレクションを取得します。 |
