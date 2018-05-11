@@ -1,37 +1,39 @@
-# <a name="get-organization"></a><span data-ttu-id="1efba-101">組織を取得する</span><span class="sxs-lookup"><span data-stu-id="1efba-101">Get organization</span></span>
+# <a name="get-organization"></a><span data-ttu-id="98ad6-101">組織を取得する</span><span class="sxs-lookup"><span data-stu-id="98ad6-101">Get organization</span></span>
 
-<span data-ttu-id="1efba-102">現在認証されている組織のプロパティとリレーションシップを取得します。</span><span class="sxs-lookup"><span data-stu-id="1efba-102">Retrieve the properties and relationships of currently authenticated organization.</span></span>
-## <a name="permissions"></a><span data-ttu-id="1efba-103">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="1efba-103">Permissions</span></span>
-<span data-ttu-id="1efba-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](../../../concepts/permissions_reference.md)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="1efba-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).</span></span>
+<span data-ttu-id="98ad6-102">現在認証されている組織のプロパティとリレーションシップを取得します。</span><span class="sxs-lookup"><span data-stu-id="98ad6-102">Retrieve the properties and relationships of currently authenticated organization.</span></span>
+## <a name="permissions"></a><span data-ttu-id="98ad6-103">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="98ad6-103">Permissions</span></span>
+<span data-ttu-id="98ad6-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](../../../concepts/permissions_reference.md)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="98ad6-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).</span></span>
 
-|<span data-ttu-id="1efba-106">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="1efba-106">Permission type</span></span>      | <span data-ttu-id="1efba-107">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="1efba-107">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="98ad6-106">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="98ad6-106">Permission type</span></span>      | <span data-ttu-id="98ad6-107">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="98ad6-107">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="1efba-108">委任 (職場または学校アカウント)</span><span class="sxs-lookup"><span data-stu-id="1efba-108">Delegated (work or school account)</span></span> | <span data-ttu-id="1efba-109">User.Read、Directory.Read.All</span><span class="sxs-lookup"><span data-stu-id="1efba-109">User.Read, Directory.Read.All</span></span>    |
-|<span data-ttu-id="1efba-110">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="1efba-110">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="1efba-111">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="1efba-111">Not supported.</span></span>    |
-|<span data-ttu-id="1efba-112">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="1efba-112">Application</span></span> | <span data-ttu-id="1efba-113">Directory.Read.All</span><span class="sxs-lookup"><span data-stu-id="1efba-113">Directory.Read.All</span></span> |
+|<span data-ttu-id="98ad6-108">委任 (職場または学校アカウント)</span><span class="sxs-lookup"><span data-stu-id="98ad6-108">Delegated (work or school account)</span></span> | <span data-ttu-id="98ad6-109">User.Read、Directory.Read.All、Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="98ad6-109">User.Read, User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All</span></span>   |
+|<span data-ttu-id="98ad6-110">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="98ad6-110">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="98ad6-111">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="98ad6-111">Not supported.</span></span>    |
+|<span data-ttu-id="98ad6-112">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="98ad6-112">Application</span></span> | <span data-ttu-id="98ad6-113">Directory.Read.All、Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="98ad6-113">Directory.Read.All, Directory.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="1efba-114">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="1efba-114">HTTP request</span></span>
+> <span data-ttu-id="98ad6-114">注: User.Read アクセス許可を付与されたアプリケーションは、組織の *id*、*displayName*、および *verifiedDomains* プロパティのみを読み取ることができます。</span><span class="sxs-lookup"><span data-stu-id="98ad6-114">Note: Applications granted the User.Read permission are able to read only the *id*, *displayName*, and *verifiedDomains* properties of the organization.</span></span>  <span data-ttu-id="98ad6-115">他のすべてのプロパティは `null` 値を返します。</span><span class="sxs-lookup"><span data-stu-id="98ad6-115">All other properties will return with `null` values.</span></span> <span data-ttu-id="98ad6-116">すべてのプロパティを読み取るには、Directory.Read.All を使用します。</span><span class="sxs-lookup"><span data-stu-id="98ad6-116">To read all properties, use Directory.Read.All.</span></span>
+
+## <a name="http-request"></a><span data-ttu-id="98ad6-117">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="98ad6-117">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /organization
 
 ```
-## <a name="optional-query-parameters"></a><span data-ttu-id="1efba-115">オプションのクエリ パラメーター</span><span class="sxs-lookup"><span data-stu-id="1efba-115">Optional query parameters</span></span>
-<span data-ttu-id="1efba-116">このメソッドは、応答をカスタマイズするための [OData クエリ パラメーター](http://developer.microsoft.com/ja-JP/graph/docs/overview/query_parameters)をサポートします。</span><span class="sxs-lookup"><span data-stu-id="1efba-116">This method supports the [OData Query Parameters](http://developer.microsoft.com/ja-JP/graph/docs/overview/query_parameters) to help customize the response.</span></span>
-## <a name="request-headers"></a><span data-ttu-id="1efba-117">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="1efba-117">Request headers</span></span>
-| <span data-ttu-id="1efba-118">名前</span><span class="sxs-lookup"><span data-stu-id="1efba-118">Name</span></span>       | <span data-ttu-id="1efba-119">型</span><span class="sxs-lookup"><span data-stu-id="1efba-119">Type</span></span> | <span data-ttu-id="1efba-120">説明</span><span class="sxs-lookup"><span data-stu-id="1efba-120">Description</span></span>|
+## <a name="optional-query-parameters"></a><span data-ttu-id="98ad6-118">オプションのクエリ パラメーター</span><span class="sxs-lookup"><span data-stu-id="98ad6-118">Optional query parameters</span></span>
+<span data-ttu-id="98ad6-119">このメソッドは、応答をカスタマイズするための [OData クエリ パラメーター](http://developer.microsoft.com/ja-JP/graph/docs/overview/query_parameters)をサポートします。</span><span class="sxs-lookup"><span data-stu-id="98ad6-119">This method supports the [OData Query Parameters](http://developer.microsoft.com/ja-JP/graph/docs/overview/query_parameters) to help customize the response.</span></span>
+## <a name="request-headers"></a><span data-ttu-id="98ad6-120">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="98ad6-120">Request headers</span></span>
+| <span data-ttu-id="98ad6-121">名前</span><span class="sxs-lookup"><span data-stu-id="98ad6-121">Name</span></span>       | <span data-ttu-id="98ad6-122">型</span><span class="sxs-lookup"><span data-stu-id="98ad6-122">Type</span></span> | <span data-ttu-id="98ad6-123">説明</span><span class="sxs-lookup"><span data-stu-id="98ad6-123">Description</span></span>|
 |:-----------|:------|:----------|
-| <span data-ttu-id="1efba-121">Authorization</span><span class="sxs-lookup"><span data-stu-id="1efba-121">Authorization</span></span>  | <span data-ttu-id="1efba-122">string</span><span class="sxs-lookup"><span data-stu-id="1efba-122">string</span></span>  | <span data-ttu-id="1efba-p102">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="1efba-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="98ad6-124">Authorization</span><span class="sxs-lookup"><span data-stu-id="98ad6-124">Authorization</span></span>  | <span data-ttu-id="98ad6-125">string</span><span class="sxs-lookup"><span data-stu-id="98ad6-125">string</span></span>  | <span data-ttu-id="98ad6-p103">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="98ad6-p103">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="1efba-125">要求本文</span><span class="sxs-lookup"><span data-stu-id="1efba-125">Request body</span></span>
-<span data-ttu-id="1efba-126">このメソッドには、要求本文を指定しません。</span><span class="sxs-lookup"><span data-stu-id="1efba-126">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="98ad6-128">要求本文</span><span class="sxs-lookup"><span data-stu-id="98ad6-128">Request body</span></span>
+<span data-ttu-id="98ad6-129">このメソッドには、要求本文を指定しません。</span><span class="sxs-lookup"><span data-stu-id="98ad6-129">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="1efba-127">応答</span><span class="sxs-lookup"><span data-stu-id="1efba-127">Response</span></span>
+## <a name="response"></a><span data-ttu-id="98ad6-130">応答</span><span class="sxs-lookup"><span data-stu-id="98ad6-130">Response</span></span>
 
-<span data-ttu-id="1efba-128">成功した場合、このメソッドは `200 OK` 応答コードと、応答本文で [organization](../resources/organization.md) オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="1efba-128">If successful, this method returns a `200 OK` response code and [organization](../resources/organization.md) object in the response body.</span></span>
-## <a name="example"></a><span data-ttu-id="1efba-129">例</span><span class="sxs-lookup"><span data-stu-id="1efba-129">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="1efba-130">要求</span><span class="sxs-lookup"><span data-stu-id="1efba-130">Request</span></span>
-<span data-ttu-id="1efba-131">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="1efba-131">Here is an example of the request.</span></span>
+<span data-ttu-id="98ad6-131">成功した場合、このメソッドは `200 OK` 応答コードと、応答本文で [organization](../resources/organization.md) オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="98ad6-131">If successful, this method returns a `200 OK` response code and [organization](../resources/organization.md) object in the response body.</span></span>
+## <a name="example"></a><span data-ttu-id="98ad6-132">例</span><span class="sxs-lookup"><span data-stu-id="98ad6-132">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="98ad6-133">要求</span><span class="sxs-lookup"><span data-stu-id="98ad6-133">Request</span></span>
+<span data-ttu-id="98ad6-134">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="98ad6-134">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "get_organization"
@@ -39,8 +41,8 @@ GET /organization
 ```http
 GET https://graph.microsoft.com/v1.0/organization
 ```
-##### <a name="response"></a><span data-ttu-id="1efba-132">応答</span><span class="sxs-lookup"><span data-stu-id="1efba-132">Response</span></span>
-<span data-ttu-id="1efba-p103">以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。</span><span class="sxs-lookup"><span data-stu-id="1efba-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="98ad6-135">応答</span><span class="sxs-lookup"><span data-stu-id="98ad6-135">Response</span></span>
+<span data-ttu-id="98ad6-p104">以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。</span><span class="sxs-lookup"><span data-stu-id="98ad6-p104">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
