@@ -1,6 +1,6 @@
 # <a name="get-auditevent"></a>Get auditEvent
 
-> **注:**Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
+> **注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
 
 [auditEvent](../resources/intune_auditing_auditevent.md) オブジェクトのプロパティとリレーションシップを読み取ります。
 ## <a name="prerequisites"></a>前提条件
@@ -22,7 +22,7 @@ GET /deviceManagement/auditEvents/{auditEventId}
 ```
 
 ## <a name="optional-query-parameters"></a>オプションのクエリ パラメーター
-このメソッドは、応答をカスタマイズするための [OData クエリ パラメーター](https://developer.microsoft.com/ja-JP/graph/docs/overview/query_parameters)をサポートします。
+このメソッドは、応答をカスタマイズするための [OData クエリ パラメーター](https://developer.microsoft.com/en-us/graph/docs/overview/query_parameters)をサポートします。
 ## <a name="request-headers"></a>要求ヘッダー
 |ヘッダー|値|
 |:---|:---|
@@ -47,7 +47,7 @@ GET https://graph.microsoft.com/v1.0/deviceManagement/auditEvents/{auditEventId}
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1598
+Content-Length: 1535
 
 {
   "value": {
@@ -58,9 +58,6 @@ Content-Length: 1598
     "actor": {
       "@odata.type": "microsoft.graph.auditActor",
       "type": "Type value",
-      "permissions": [
-        "Permissions value"
-      ],
       "userPermissions": [
         "User Permissions value"
       ],

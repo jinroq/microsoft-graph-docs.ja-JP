@@ -39,7 +39,7 @@ PATCH /deviceAppManagement/mdmWindowsInformationProtectionPolicies/{mdmWindowsIn
 |プロパティ|型|説明|
 |:---|:---|:---|
 |id|String|ID|
-|target|[deviceAndAppManagementAssignmentTarget](../resources/intune_mam_deviceandappmanagementassignmenttarget.md)|グループまたはアプリの展開の識別子|
+|target|[deviceAndAppManagementAssignmentTarget](../resources/intune_shared_deviceandappmanagementassignmenttarget.md)|グループまたはアプリの展開の識別子|
 
 
 

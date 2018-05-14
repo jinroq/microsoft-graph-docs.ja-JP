@@ -1,6 +1,6 @@
 # <a name="deviceconfigurationassignment-resource-type"></a>deviceConfigurationAssignment リソースの種類
 
-> **注:**Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
+> **注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
 
 デバイス構成の割り当てエンティティは、特定のデバイス構成に AAD グループを割り当てます。
 ## <a name="methods"></a>メソッド
@@ -16,7 +16,7 @@
 |プロパティ|型|説明|
 |:---|:---|:---|
 |id|String|割り当てのキーです。|
-|target|[deviceAndAppManagementAssignmentTarget](../resources/intune_deviceconfig_deviceandappmanagementassignmenttarget.md)|デバイス構成の割り当て先です。|
+|target|[deviceAndAppManagementAssignmentTarget](../resources/intune_shared_deviceandappmanagementassignmenttarget.md)|デバイス構成の割り当て先です。|
 
 ## <a name="relationships"></a>リレーションシップ
 なし

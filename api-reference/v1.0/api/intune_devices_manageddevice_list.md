@@ -1,6 +1,6 @@
 # <a name="list-manageddevices"></a>managedDevices のリスト
 
-> **注:**Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
+> **注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
 
 [managedDevice](../resources/intune_devices_manageddevice.md) オブジェクトのプロパティとリレーションシップをリストします。
 ## <a name="prerequisites"></a>前提条件
@@ -47,7 +47,7 @@ GET https://graph.microsoft.com/v1.0/users/{usersId}/managedDevices
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 5086
+Content-Length: 5130
 
 {
   "value": [
@@ -56,6 +56,7 @@ Content-Length: 5086
       "id": "705c034c-034c-705c-4c03-5c704c035c70",
       "userId": "User Id value",
       "deviceName": "Device Name value",
+      "managedDeviceOwnerType": "company",
       "deviceActionResults": [
         {
           "@odata.type": "microsoft.graph.deviceActionResult",

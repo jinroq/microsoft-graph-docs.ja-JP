@@ -1,6 +1,6 @@
 # <a name="auditevent-resource-type"></a>auditEvent リソース タイプ
 
-> **注:**Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
+> **注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
 
 監査イベントのプロパティが含まれるクラス。
 ## <a name="methods"></a>メソッド
@@ -49,9 +49,6 @@
   "actor": {
     "@odata.type": "microsoft.graph.auditActor",
     "type": "String",
-    "permissions": [
-      "String"
-    ],
     "userPermissions": [
       "String"
     ],

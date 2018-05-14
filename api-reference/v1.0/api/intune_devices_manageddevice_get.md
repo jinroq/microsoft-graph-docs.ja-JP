@@ -1,6 +1,6 @@
 # <a name="get-manageddevice"></a>Get managedDevice
 
-> **注:**Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
+> **注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
 
 [managedDevice](../resources/intune_devices_manageddevice.md) オブジェクトのプロパティとリレーションシップを読み取ります。
 ## <a name="prerequisites"></a>前提条件
@@ -24,7 +24,7 @@ GET /deviceManagement/detectedApps/{detectedAppId}/managedDevices/{managedDevice
 ```
 
 ## <a name="optional-query-parameters"></a>オプションのクエリ パラメーター
-このメソッドは、応答をカスタマイズするための [OData クエリ パラメーター](https://developer.microsoft.com/ja-JP/graph/docs/overview/query_parameters)をサポートします。
+このメソッドは、応答をカスタマイズするための [OData クエリ パラメーター](https://developer.microsoft.com/en-us/graph/docs/overview/query_parameters)をサポートします。
 ## <a name="request-headers"></a>要求ヘッダー
 |ヘッダー|値|
 |:---|:---|
@@ -49,7 +49,7 @@ GET https://graph.microsoft.com/v1.0/users/{usersId}/managedDevices/{managedDevi
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 4878
+Content-Length: 4920
 
 {
   "value": {
@@ -57,6 +57,7 @@ Content-Length: 4878
     "id": "705c034c-034c-705c-4c03-5c704c035c70",
     "userId": "User Id value",
     "deviceName": "Device Name value",
+    "managedDeviceOwnerType": "company",
     "deviceActionResults": [
       {
         "@odata.type": "microsoft.graph.deviceActionResult",

@@ -1,6 +1,6 @@
 # <a name="update-auditevent"></a>auditEvent の更新
 
-> **注:**Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
+> **注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
 
 [auditEvent](../resources/intune_auditing_auditevent.md) オブジェクトのプロパティを更新します。
 ## <a name="prerequisites"></a>前提条件
@@ -58,7 +58,7 @@ PATCH /deviceManagement/auditEvents/{auditEventId}
 ``` http
 PATCH https://graph.microsoft.com/v1.0/deviceManagement/auditEvents/{auditEventId}
 Content-type: application/json
-Content-length: 1395
+Content-length: 1338
 
 {
   "displayName": "Display Name value",
@@ -66,9 +66,6 @@ Content-length: 1395
   "actor": {
     "@odata.type": "microsoft.graph.auditActor",
     "type": "Type value",
-    "permissions": [
-      "Permissions value"
-    ],
     "userPermissions": [
       "User Permissions value"
     ],
@@ -110,7 +107,7 @@ Content-length: 1395
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1493
+Content-Length: 1436
 
 {
   "@odata.type": "#microsoft.graph.auditEvent",
@@ -120,9 +117,6 @@ Content-Length: 1493
   "actor": {
     "@odata.type": "microsoft.graph.auditActor",
     "type": "Type value",
-    "permissions": [
-      "Permissions value"
-    ],
     "userPermissions": [
       "User Permissions value"
     ],
