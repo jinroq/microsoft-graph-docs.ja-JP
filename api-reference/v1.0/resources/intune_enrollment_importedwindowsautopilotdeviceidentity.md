@@ -1,6 +1,6 @@
 # <a name="importedwindowsautopilotdeviceidentity-resource-type"></a><span data-ttu-id="e85f0-101">importedWindowsAutopilotDeviceIdentity リソースの種類</span><span class="sxs-lookup"><span data-stu-id="e85f0-101">importedWindowsAutopilotDeviceIdentity resource type</span></span>
 
-> <span data-ttu-id="e85f0-102">**注:**Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。</span><span class="sxs-lookup"><span data-stu-id="e85f0-102">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
+> <span data-ttu-id="e85f0-102">**注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。</span><span class="sxs-lookup"><span data-stu-id="e85f0-102">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
 
 <span data-ttu-id="e85f0-103">インポートした Windows Autopilot デバイス。</span><span class="sxs-lookup"><span data-stu-id="e85f0-103">Imported windows autopilot devices.</span></span>
 ## <a name="methods"></a><span data-ttu-id="e85f0-104">メソッド</span><span class="sxs-lookup"><span data-stu-id="e85f0-104">Methods</span></span>
