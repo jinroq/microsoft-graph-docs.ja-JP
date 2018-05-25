@@ -8,6 +8,7 @@
 		<Item text="ハイブリッド展開 (プレビュー)" url="/en-us/concepts/hybrid_rest_support" SEODescription="" />
 	</Item>
 	<Item text="バージョン管理とサポート" url="/en-us/concepts/versioning_and_support" />
+	<Item text="利用規約" url="/en-us/misc/terms-of-use" />
   </Item>
   <Item text="クイック スタート" url="/en-us/concepts/get-started">
     <Item text="Android" url="/en-us/concepts/android" SEOKeyword="Android, Microsoft Graph API, チュートリアル" SEODescription="Microsoft Graph で、Android アプリの Microsoft クラウド データにアクセスする" />
@@ -35,6 +36,7 @@
   <Item text="クロスデバイス エクスペリエンス" ProdTag="Project Rome" url="/en-us/concepts/cross-device-concept-overview">
     <Item text="アクティビティ フィード" url="/en-us/concepts/activity-feed-concept-overview" />
     <Item text="デバイスのリレー (プレビュー)" url="/en-us/concepts/device-relay-concept-overview" />
+	<Item text="クロス デバイス アプリを構築する" url="/en-us/concepts/cross-device-app-configuration" />
   </Item>
   <Item text="顧客の予約 (プレビュー)" ProdTag="Microsoft Bookings" url="/en-us/concepts/booking-concept-overview" />
   <Item text="デバイスとアプリ" ProdTag="Intune" url="/en-us/concepts/intune-concept-overview" />
@@ -64,6 +66,7 @@
   <Item text="レポート" url="/en-us/concepts/reportroot-concept-overview" />
   <Item text="セキュリティ (プレビュー)" url="/en-us/concepts/security-concept-overview">
 	<Item text="SIEM との統合" url="/en-us/concepts/security_siemintegration" />
+	<Item text="認証" url="/en-us/concepts/security-authorization" />
   </Item>
   <Item text="サイトとリスト" ProdTag="SharePoint" url="/en-us/concepts/sharepoint-concept-overview" />
   <Item text="ソーシャル インテリジェンス" url="/en-us/concepts/social-intel-concept-overview">
@@ -1317,7 +1320,7 @@
           <Item text="リスト" url="/en-us/api-reference/v1.0/api/intune_mam_iosmanagedappprotection_list" />
           <Item text="取得" url="/en-us/api-reference/v1.0/api/intune_mam_iosmanagedappprotection_get" />
           <Item text="作成" url="/en-us/api-reference/v1.0/api/intune_mam_iosmanagedappprotection_create" />
-          <Item text="削除する" url="/en-us/api-reference/v1.0/api/intune_mam_iosmanagedappprotection_delete" />
+          <Item text="削除" url="/en-us/api-reference/v1.0/api/intune_mam_iosmanagedappprotection_delete" />
           <Item text="更新" url="/en-us/api-reference/v1.0/api/intune_mam_iosmanagedappprotection_update" />
         </Item>
         <Item text="iOS 管理対象アプリの登録" url="/en-us/api-reference/v1.0/resources/intune_mam_iosmanagedappregistration">
@@ -5572,7 +5575,6 @@
 			<Item text="アラートを更新する" url="/en-us/api-reference/beta/api/alert_update" />
 		</Item>
 		<Item text="エラー" url="/en-us/api-reference/beta/resources/security-error-codes" />
-	    <Item text="SIEM との統合" url="/en-us/concepts/security_siemintegration" />
 	</Item>
 	<Item text="サイトとリスト" ProdTag="SharePoint" url="/en-us/api-reference/beta/resources/sharepoint" SEOKeyword="SharePoint, サイト, リスト, ドライブ, Microsoft Graph API, SharePoint API">
       <Item text="サイト" url="/en-us/api-reference/beta/resources/site" SEOKeyword="SharePoint, サイト, Microsoft Graph API, SharePoint サイト API">
