@@ -1,6 +1,6 @@
 # <a name="best-practices-for-working-with-the-onenote-api-in-microsoft-graph"></a>Microsoft Graph で OneNote API を使用する場合のベスト プラクティス
 
-この記事では、Microsoft Graph で OneNote API を使用するための推奨事項を提供します。 これらの推奨事項は、StackOverflow と Twitter でよく寄せられる質問への回答に基づいています。
+この記事では、Microsoft Graph で OneNote API を使用するための推奨事項を提供します。 これらの推奨事項は、Stack Overflow と Twitter でよく寄せられる質問への回答に基づいています。
 
 ## <a name="use-select-to-select-the-minimum-set-of-properties-you-need"></a>$Select を使用して、必要なプロパティの最小限のセットを選択する
 リソース (たとえば、ノートブック内のセクション) のクエリを実行するときには、次のような要求を行います。

@@ -34,14 +34,14 @@ Microsoft Graph にはバージョン更新の変更履歴があります。 バ
  - プロパティの順序の変更
  - リソース ID のような不透明な文字列の長さまたは形式の変更
 
->**注:**下位互換性のある変更の一覧は適時変更されます。 独自のクライアント プロクシ (WCF クライアントなど) を作成する場合、ガイドラインとしては Microsoft Graph API サービスにあらかじめ定義されていないプロパティや派生型をクライアント アプリケーションが受け入れることができるように準備してください。 Microsoft Graph API は「[Microsoft REST API ガイドライン](https://github.com/microsoft/api-guidelines/)」の「[バージョン管理のモデル](https://github.com/microsoft/api-guidelines/blob/master/Guidelines.md#12-versioning)」セクションの説明に従っています。 
+>**注:** 下位互換性のある変更の一覧は適時変更されます。 独自のクライアント プロクシ (WCF クライアントなど) を作成する場合、ガイドラインとしては Microsoft Graph API サービスにあらかじめ定義されていないプロパティや派生型をクライアント アプリケーションが受け入れることができるように準備してください。 Microsoft Graph API は「[Microsoft REST API ガイドライン](https://github.com/microsoft/api-guidelines/)」の「[バージョン管理のモデル](https://github.com/microsoft/api-guidelines/blob/master/Guidelines.md#12-versioning)」セクションの説明に従っています。 
 
 ## <a name="versions"></a>バージョン
 
 現在、以下のバージョンの Microsoft Graph API が使用できます。
 
 ### <a name="beta-version"></a>ベータ版
-Microsoft Graph API ベータ版は `https://graph.microsoft.com/beta` で公開されており、現在プレビュー段階の機能が含まれています。 ベータ版 API のドキュメントは「[Microsoft Graph ベータ エンドポイント リファレンス](../api-reference/beta/beta-overview.md)」を参照してください。 ベータ版には随時重大な変更が発生することがあります。 本番環境が /beta API に依存することのないようにしてください。
+Microsoft Graph API のベータ版は、`https://graph.microsoft.com/beta`で公開されており、現在_**プレビュー段階**_ の機能が含まれています。 ベータ版 API のドキュメントは、「[Microsoft Graph ベータ エンドポイント リファレンス](../api-reference/beta/beta-overview.md)」を参照してください。 ベータ版には随時重大な変更が発生することがあります。 本番環境が /beta API に依存することのないようにしてください。
 
 ベータ版の機能が現行バージョンに採用される保証はありません。 Microsoft Graph API チームの判断でベータ版の機能が一般提供 (GA) に十分なものとなったとき、その機能が最新バージョンに追加されます。 機能の採用が現行バージョンに重大な変更を招く場合は、バージョン番号が更新され、新規バージョンが現行バージョンに変わります。
 開発者コミュニティは、新機能や既存のベータ版 API 機能の現行バージョンでの採用希望などの機能の要望を [UserVoice](https://officespdev.uservoice.com/) に投稿できます。 
@@ -56,6 +56,6 @@ Microsoft Graph の現在のバージョンは、v1.0 です。 Microsoft Graph 
 
 ## <a name="terms-of-use"></a>利用規約
 
-Microsoft Graph API を使用すると、お客様は [利用規約](https://msdn.microsoft.com/ja-JP/cc300389) に同意したこととなります。 
+Microsoft Graph API を使用すると、お客様は [利用規約](../misc/terms-of-use.md) に同意したこととなります。 
 
 お客様からのフィードバックを重視しています。 [スタック オーバーフロー](https://stackoverflow.com/questions/tagged/microsoftgraph?sort=newest)でご連絡いただけます。 ご質問には {MicrosoftGraph} のタグを付けてください。
