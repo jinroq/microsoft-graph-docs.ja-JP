@@ -1,6 +1,6 @@
 # <a name="get-started-with-microsoft-graph-in-a-universal-windows-10-app"></a>ユニバーサル Windows 10 アプリで Microsoft Graph を使ってみる
 
-> **エンタープライズのお客様向けにアプリを作成していますか?**エンタープライズのお客様が、<a href="https://azure.microsoft.com/en-us/documentation/articles/active-directory-conditional-access-device-policies/" target="_newtab">条件付きのデバイスへのアクセス</a>のようなエンタープライズ モビリティ セキュリティの機能をオンにしている場合、アプリが動作しない可能性があります。その場合、気がつかないまま、お客様の側でエラーが発生してしまう可能性があります。 
+> **エンタープライズのお客様向けにアプリを作成していますか?** エンタープライズのお客様が、<a href="https://azure.microsoft.com/en-us/documentation/articles/active-directory-conditional-access-device-policies/" target="_newtab">条件付きのデバイスへのアクセス</a>のようなエンタープライズ モビリティ セキュリティの機能をオンにしている場合、アプリが動作しない可能性があります。その場合、気がつかないまま、お客様の側でエラーが発生してしまう可能性があります。 
 
 > **すべてのエンタープライズのお客様**の**すべてのエンタープライズ シナリオ**をサポートするには、Azure AD エンドポイントを使用し、[Azure ポータル](https://aka.ms/aadapplist)でアプリを管理する必要があります。詳細については、「[Azure AD か Azure AD v2.0 エンドポイントかを決定する](../concepts/auth_overview.md#deciding-between-the-azure-ad-and-azure-ad-v20-endpoints)」を参照してください。
 
@@ -26,7 +26,7 @@
 
 開始するには、次のものが必要です。 
 
-- [Microsoft アカウント](https://www.outlook.com/)か[職場または学校アカウント](http://dev.office.com/devprogram)
+- [Microsoft アカウント](https://www.outlook.com/)か[職場または学校アカウント](https://docs.microsoft.com/ja-JP/office/developer-program/office-365-developer-program-faq#account-types)
 - Visual Studio 2017 
 - [UWP 用 Microsoft Graph スターター プロジェクト (ライブラリ)](https://github.com/microsoftgraph/uwp-csharp-connect-sample/tree/master/starter)。両方のテンプレートには、コードを追加する空のクラスが含まれています。また、リソース文字列も含まれています。このプロジェクトを取得するには、[UWP 用 Microsoft Graph Connect のサンプル (ライブラリ)](https://github.com/microsoftgraph/uwp-csharp-connect-sample) を複製またはダウンロードして、**starter** フォルダー内のソリューションを開きます。
 
@@ -62,7 +62,7 @@
     </Application.Resources>
 ```
 
-## <a name="send-an-email-with-microsoft-graph"></a>Microsoft Graph を使用して電子メールを送信する
+## <a name="send-an-email-with-microsoft-graph"></a>Microsoft Graph を使用してメールを送信する
 
 スターター プロジェクトの MailHelper.cs ファイルを開きます。このファイルには、電子メールを作成して送信するコードが含まれています。それは、POST 要求を作成して **https://graph.microsoft.com/v1.0/me/microsoft.graph.SendMail** エンドポイントに送信する単一のメソッド (``ComposeAndSendMailAsync``) で構成されています。 
 

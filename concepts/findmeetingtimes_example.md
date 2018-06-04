@@ -231,5 +231,7 @@ Content-Length: 714
 
 会議日時の提案を取得した後、次のことを行うことができます。
 
-1. [イベントを作成し、会議出席依頼として送信する](../api-reference/v1.0/api/user_post_events.md) 
+1. [イベントを作成し、会議出席依頼として送信する](../api-reference/v1.0/api/user_post_events.md)
 2. イベントに[添付ファイルを追加する](../api-reference/v1.0/api/event_post_attachments.md)
+
+詳細については、「[Outlook カレンダーとの統合](outlook-calendar-concept-overview.md)」を参照してください。

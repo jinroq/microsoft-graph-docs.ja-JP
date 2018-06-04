@@ -70,7 +70,8 @@ Microsoft Graph のさまざまな側面の使用方法について、その他�
 * [Microsoft Graph 用の Python 認証サンプル](https://github.com/microsoftgraph/python-sample-auth)
 * [Python で改ページされた Microsoft Graph 応答を処理する](https://github.com/microsoftgraph/python-sample-pagination)
 * [Python で Graph オープン拡張機能を処理する](https://github.com/microsoftgraph/python-sample-open-extensions)
+* [Python Web アプリをセキュリティ API に接続する](https://github.com/microsoftgraph/python-security-rest-sample)
 
-表示したい特定のサンプルがある場合、[懸案事項を送信](https://github.com/microsoftgraph/python-sample-auth/issues)してお知らせください。 Python で構築する Microsoft Graph シナリオに対するお客様のフィードバックを大いに歓迎いたします。
+ご覧になりたい特定のサンプルがある場合、[懸案事項を送信](https://github.com/microsoftgraph/python-sample-auth/issues)してお知らせください。 Python で構築する Microsoft Graph シナリオに対するお客様のフィードバックを大いに歓迎いたします。
 
 Microsoft Graph API は、あらゆる種類の Microsoft データとの対話に使用できる、非常に強力な統合 API です。 [開発者ドキュメント](https://developer.microsoft.com/ja-JP/graph/docs/concepts/overview)または [Graph Explorer](https://developer.microsoft.com/ja-JP/graph/graph-explorer) で、Microsoft Graph によってさらに行える事柄について確認してください。

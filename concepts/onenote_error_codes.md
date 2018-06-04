@@ -36,7 +36,7 @@ Microsoft Graph エラーの詳細については、「[Microsoft Graph エラ�
 サービスは要求されたセクション内にページを作成できません。そのセクションはパスワードで保護されています。
 
 ### <a name="10005"></a>10005
-要求内で、**data-render-src** 属性に PDF が含まれる画像タグが最大数を超えました。 「[画像とファイルを追加する](https://msdn.microsoft.com/en-us/office/office365/howto/onenote-images-files)」を参照してください。
+要求内で、**data-render-src** 属性に PDF が含まれる画像タグが最大数を超えました。 「[画像とファイルを追加する](https://msdn.microsoft.com/ja-JP/office/office365/howto/onenote-images-files)」を参照してください。
 
 ### <a name="10006"></a>10006
 OneNote API は、指定されたセクション内にページを作成できませんでした。そのセクションは破損しています。
@@ -48,7 +48,7 @@ OneNote API は、指定されたセクション内にページを作成でき�
 ユーザーまたはグループの OneDrive にある 1 つ以上のドキュメント ライブラリに 5000 を超える OneNote のアイテム (ノートブック、セクション、セクション グループ) が含まれており、API を使用してクエリを実行することができません。 ユーザーまたはグループのどのドキュメント ライブラリについても、その中の OneNote アイテム数が 5000 を超えることがないようにしてください。 軽減の手順については「[OneNote 開発者ブログ](https://blogs.msdn.microsoft.com/onenotedev/2016/09/11/onenote-api-calls-fail-with-a-large-number-of-items-in-a-sharepoint-document-library/)」を参照してください。
 
 ### <a name="10012"></a>10012
-エンティティを作成または更新できません。ノートブックが含まれるライブラリの場合、アイテムを編集する前にチェックアウトする必要があるためです。 詳細については、https://support.office.com/ja-jp/article/Configure-a-site-library-to-require-check-out-of-files-f63fcbdc-1db6-4eb7-a3eb-dd815500c9e7 を参照してください。
+エンティティを作成または更新できません。ノートブックが含まれるライブラリの場合、アイテムを編集する前にチェックアウトする必要があるためです。 詳細については、「https://support.office.com/en-us/article/Configure-a-site-library-to-require-check-out-of-files-f63fcbdc-1db6-4eb7-a3eb-dd815500c9e7」をご覧ください。
 
 ライブラリからチェックアウト要件を削除するか、ノートブックを移動します。
 
@@ -87,7 +87,7 @@ SharePoint は現在利用できません。 後でもう一度お試しくだ�
 "Presentation" パートの HTML に、**src** プロパティと **data-render-src** プロパティの両方が設定されている画像タグが含まれています。 API は **src** プロパティを無視し、**data-render-src** プロパティを使用します。 
 
 ### <a name="20005"></a>20005
-要求の URI が長すぎます。URI の最大サイズ (すべてのパラメーターとデータを含む) は 16 KB (16,384 文字) です。
+要求 URI が長すぎます。URI の最大サイズ (すべてのパラメーターとデータを含む) は 16 KB (16,384 文字) です。
 
 ### <a name="20006"></a>20006
 "Presentation" パートの HTML に、src プロパティと **data-render-src** プロパティのいずれかが設定されている画像タグが含まれています。 API は **image** タグを無視します。 
@@ -142,7 +142,7 @@ ICal は見つかりませんでした。
 存在しないリソースが要求されました。
 
 ### <a name="20103"></a>20103
-**expand** クエリはこの要求ではサポートされません。 「[サポートされる OData クエリ文字列オプション](https://msdn.microsoft.com/en-us/office/office365/howto/onenote-get-content#query-options)」を参照してください。
+**expand** クエリはこの要求ではサポートされません。 「[サポートされる OData クエリ文字列オプション](https://msdn.microsoft.com/ja-JP/office/office365/howto/onenote-get-content#query-options)」を参照してください。
 
 ### <a name="20104"></a>20104
 **pagelevel** クエリ オプションは、セクションにあるページ コレクションまたは特定のページに対してクエリを行うときだけサポートされます。 たとえば次のようにします。  
@@ -231,7 +231,7 @@ PATCH 要求にアクションが含まれていません。 「[ページ コ�
 要求に指定されたエンティティの種類は、PATCH 操作に対してはサポートされていません。 「[ページ コンテンツの更新](../api-reference/v1.0/api/page_update.md)」を参照してください。
 
 ### <a name="20136"></a>20136
-要求に無効または不足している **data-render-src** または **data-render-method** 属性が含まれます。 「[キャプチャからのデータの抽出](https://msdn.microsoft.com/en-us/office/office365/howto/onenote-extract-data)」を参照してください。
+要求に無効または不足している **data-render-src** または **data-render-method** 属性が含まれます。 「[キャプチャからのデータの抽出](https://msdn.microsoft.com/ja-JP/office/office365/howto/onenote-extract-data)」を参照してください。
 
 ### <a name="20137"></a>20137
 このターゲット ページにおいて、PATCH 要求はサポートされていません。
@@ -240,20 +240,20 @@ PATCH 要求にアクションが含まれていません。 「[ページ コ�
 PATCH 要求のターゲット要素の種類では、**append** 操作はサポートされていません。 「[ページ コンテンツの更新](../api-reference/v1.0/api/page_update.md)」を参照してください。
 
 ### <a name="20139"></a>20139
-要求に、無効な **data-tag** 属性値が含まれています。 「[ノート シールを使用する](https://msdn.microsoft.com/en-us/office/office365/howto/onenote-note-tags)」を参照してください。
+要求に、無効な **data-tag** 属性値が含まれています。 「[ノート シールを使用する](https://msdn.microsoft.com/ja-JP/office/office365/howto/onenote-note-tags)」を参照してください。
 
 ### <a name="20140"></a>20140
 要求に、無効な **data-tag** ステータス値が含まれています。 チェック ボックスのノート シールには、**completed** ステータスを指定できます。 例:
 ```html
     <p data-tag="to-do:completed">To-do note tag in completed state (checked box in the UI)</p>
 ```
-「[ノート シールを使用する](https://msdn.microsoft.com/en-us/office/office365/howto/onenote-note-tags)」を参照してください。
+「[ノート シールを使用する](https://msdn.microsoft.com/ja-JP/office/office365/howto/onenote-note-tags)」を参照してください。
 
 ### <a name="20141"></a>20141
 PATCH 要求のターゲット要素の種類では、指定の操作はサポートされていません。 「[ページ コンテンツの更新](../api-reference/v1.0/api/page_update.md)」を参照してください。
 
 ### <a name="20142"></a>20142
-要求に、子エンティティの親、または親エンティティの子に対する **expand** 式が含まれていますが、それはサポートされていません。 「[サポートされる OData クエリ文字列オプション](https://msdn.microsoft.com/en-us/office/office365/howto/onenote-get-content#query-options)」を参照してください。
+要求に、子エンティティの親、または親エンティティの子に対する **expand** 式が含まれていますが、それはサポートされていません。 「[サポートされる OData クエリ文字列オプション](https://msdn.microsoft.com/ja-JP/office/office365/howto/onenote-get-content#query-options)」を参照してください。
 
 ### <a name="20143"></a>20143
 OData クエリが無効です。
@@ -265,13 +265,13 @@ OData クエリが無効です。
 要求の **select** 式または **expand** 式に、無効な用語が含まれています。
 
 ### <a name="20146"></a>20146
-要素で `style="position:absolute"` 属性が指定されていますが、**body** 要素で `data-absolute-enabled="true"` が指定されていません。この指定は、配置をサポートするためには必須です。 すべての位置設定が無視されます。 「[絶対位置で配置された要素の作成](https://msdn.microsoft.com/en-us/office/office365/howto/onenote-abs-pos)」を参照してください。
+要素で `style="position:absolute"` 属性が指定されていますが、**body** 要素で `data-absolute-enabled="true"` が指定されていません。この指定は、配置をサポートするためには必須です。 すべての位置設定が無視されます。 「[絶対位置で配置された要素の作成](onenote-abs-pos.md)」を参照してください。
 
 ### <a name="20147"></a>20147
-サポートされていない **body** 要素の直接の子ではない要素で `style="position:absolute"` 属性が指定されています。 要素が **div**、**img**、**object** の場合、それを body の直接の子にします。直接の子にしない場合、位置設定が無視され、絶対位置で配置された div の中でそのコンテンツがレンダリングされます。 「[絶対位置で配置された要素の作成](https://msdn.microsoft.com/en-us/office/office365/howto/onenote-abs-pos)」を参照してください。
+サポートされていない **body** 要素の直接の子ではない要素で `style="position:absolute"` 属性が指定されています。 要素が **div**、**img**、**object** の場合、それを body の直接の子にします。直接の子にしない場合、位置設定が無視され、絶対位置で配置された div の中でそのコンテンツがレンダリングされます。 「[絶対位置で配置された要素の作成](onenote-abs-pos.md)」を参照してください。
 
 ### <a name="20148"></a>20148
-`style="position:absolute"` 属性がそれをサポートしない種類の要素で指定されています。 ページ本文の直接の子である **div**、**img**、**object** 要素だけが位置設定をサポートします。 「[絶対位置で配置された要素の作成](https://msdn.microsoft.com/en-us/office/office365/howto/onenote-abs-pos)」を参照してください。
+`style="position:absolute"` 属性がそれをサポートしない種類の要素で指定されています。 ページ本文の直接の子である **div**、**img**、**object** 要素だけが位置設定をサポートします。 「[絶対位置で配置された要素の作成](onenote-abs-pos.md)」を参照してください。
 
 ### <a name="20149"></a>20149
 要求が指定しているターゲット要素が見つかりません。
@@ -283,7 +283,7 @@ OData クエリが無効です。
 この認証の種類には、この要求は無効です。 `../me/onenote/section/{id}/pages` エンドポイントを使用し、特定のセクションにページを作成します。
 
 ### <a name="20152"></a>20152
-エンティティに指定されている名前値がありません。この名前を定義する必要があります。空白のみを含めることはできません。
+エンティティに name 値が指定されていません。名前を定義する必要があり、その場合、名前が空白だけであってはなりません。
 
 ### <a name="20153"></a>20153
 エンティティ名に使用できない文字が含まれています。 名前には、以下の文字を含めることはできません: `? * \ / : < > | & # " % ~`
@@ -292,7 +292,7 @@ OData クエリが無効です。
 エンティティ名を空白で始めることはできません。
 
 ### <a name="20155"></a>20155
-エンティティ名が長すぎます。ノートブック名には 128 文字の制限があります。他のエンティティ名には 50 文字の制限があります。
+エンティティ名が長すぎます。ノートブック名には 128 文字までの制限があります。他のエンティティ名には 50 文字までの制限があります。
 
 ### <a name="20156"></a>20156
 宛先リソースの指定された ID が存在しません。
@@ -315,14 +315,14 @@ OData クエリが無効です。
 詳細については、「[OneNote API の調整とその回避方法](http://blogs.msdn.com/b/onenotedev/archive/2016/01/13/onenote-api-throttling-and-best-practices.aspx)」を参照してください。
 
 ### <a name="20168"></a>20168
-要求に指定されているビデオ ソースはサポートされていません。 現行の一覧については、「[サポートされているビデオ サイト](https://msdn.microsoft.com/en-us/office/office365/howto/onenote-images-files#videos)」を参照してください。
+要求に指定されているビデオ ソースはサポートされていません。 現行の一覧については、「[サポートされているビデオ サイト](https://msdn.microsoft.com/ja-JP/office/office365/howto/onenote-images-files#videos)」を参照してください。
 
 
 ## <a name="codes-from-30001-to-39999"></a>30001 から 39999 のコード
 ユーザーのアカウントに問題があります。
 
 ### <a name="30101"></a>30101
-ユーザー アカウントは、その OneDrive のクォータを超えています。 「[OneDrive](https://onedrive.live.com/about/en-us/)」を参照してください。
+ユーザー アカウントは、その OneDrive のクォータを超えています。 「[OneDrive](https://onedrive.live.com/about/ja-JP/)」を参照してください。
 
 ### <a name="30102"></a>30102
 要求されたセクションは、最大サイズに達したため、これ以上追加できません。

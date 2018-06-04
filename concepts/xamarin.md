@@ -1,6 +1,6 @@
 # <a name="get-started-with-microsoft-graph-in-a-xamarin-forms-app"></a>Xamarin Forms アプリで Microsoft Graph を使ってみる
 
-> **エンタープライズのお客様向けにアプリを作成していますか?**エンタープライズのお客様が、<a href="https://azure.microsoft.com/documentation/articles/active-directory-conditional-access-device-policies/" target="_newtab">条件付きのデバイスへのアクセス</a>のようなエンタープライズ モビリティ セキュリティの機能をオンにしている場合、アプリが動作しない可能性があります。その場合、気がつかないまま、お客様の側でエラーが発生してしまう可能性があります。 
+> **エンタープライズのお客様向けにアプリを作成していますか?** エンタープライズのお客様が、<a href="https://azure.microsoft.com/documentation/articles/active-directory-conditional-access-device-policies/" target="_newtab">条件付きのデバイスへのアクセス</a>のようなエンタープライズ モビリティ セキュリティの機能をオンにしている場合、アプリが動作しない可能性があります。その場合、気がつかないまま、お客様の側でエラーが発生してしまう可能性があります。 
 
 この記事では、[Azure AD v2.0 エンドポイント](https://developer.microsoft.com/graph/docs/concepts/converged_auth)からアクセス トークンを取得し、Microsoft Graph を呼び出すために必要なタスクについて説明します。ここでは、[Xamarin Forms 用 Microsoft Graph Connect サンプル](https://github.com/microsoftgraph/xamarin-csharp-connect-sample) のサンプル内のコードを説明し、Microsoft Graph を使用するアプリで実装する必要のある主要な概念について説明します。また、この記事では、[Microsoft Graph クライアント ライブラリ](http://www.nuget.org/packages/Microsoft.Graph/)を使用して Microsoft Graph にアクセスする方法についても説明します。
 
@@ -16,7 +16,7 @@
 
 開始するには、次のものが必要です。 
 
-- [Microsoft アカウント](https://www.outlook.com/)か[職場または学校アカウント](http://dev.office.com/devprogram)
+- [Microsoft アカウント](https://www.outlook.com/)か[職場または学校アカウント](https://docs.microsoft.com/ja-JP/office/developer-program/office-365-developer-program-faq#account-types)
 - Visual Studio 2015 
 - [Xamarin for Visual Studio](https://www.xamarin.com/visual-studio)
 - Windows 10 ([開発モードが有効](https://msdn.microsoft.com/library/windows/apps/xaml/dn706236.aspx))
@@ -71,9 +71,9 @@
 
 6. `ENTER_YOUR_CLIENT_ID` を、アプリの登録時に取得したアプリケーション ID の値と置き換えます。アプリケーション ID の前に `msal` を保持してください。結果の文字列値は、次のようになります: `<data android:scheme="msal[application id]" android:host="auth" />`。
 
-## <a name="send-an-email-with-microsoft-graph"></a>Microsoft Graph を使用して電子メールを送信する
+## <a name="send-an-email-with-microsoft-graph"></a>Microsoft Graph を使用してメールを送信する
 
-スターター プロジェクトの MailHelper.cs ファイルを開きます。このファイルには、電子メールを作成して送信するコードが含まれています。それは、POST 要求を作成して **https://graph.microsoft.com/v1.0/me/microsoft.graph.SendMail** エンドポイントに送信する単一のメソッド (``ComposeAndSendMailAsync``) で構成されています。 
+スターター プロジェクトの MailHelper.cs ファイルを開きます。 このファイルには、電子メールを作成して送信するコードが含まれています。 これは単一のメソッド (``ComposeAndSendMailAsync``) で構成されており、POST 要求を作成し、**https://graph.microsoft.com/v1.0/me/microsoft.graph.SendMail** エンドポイントに送信します。 
 
 ``ComposeAndSendMailAsync`` メソッドは、MainPage.xaml.cs ファイルによって渡される``subject``、``bodyContent``、および``recipients`` の 3 つの文字列の値を取ります。``subject`` および ``bodyContent`` の文字列は、その他のすべての UI 文字列とともに AppResources.resx ファイルに格納されます。``recipients`` の文字列はアプリのインターフェイスにあるアドレス ボックスのものです。 
 
@@ -431,9 +431,9 @@ using Microsoft.Graph;
 ## <a name="run-the-app"></a>アプリの実行
 1. 実行するプロジェクトを選びます。ユニバーサル Windows プラットフォームのオプションを選択すると、ローカル コンピューターでサンプルを実行できます。iOS プロジェクトを実行する場合は、[Xamarin ツールがインストールされた Mac](https://developer.xamarin.com/guides/ios/getting_started/installation/windows/connecting-to-mac/) に接続する必要があります。(また、このソリューションを Mac 上の Xamarin Studio で開いて、そこからサンプルを直接実行することもできます。)Android プロジェクトを実行する場合は、[Visual Studio Emulator for Android](https://www.visualstudio.com/features/msft-android-emulator-vs.aspx) を使用できます。 
 
-    ![](images/SelectProject.png "Select project in Visual Studio")
+    ![](images/SelectProject.png "Visual Studio でプロジェクトを選択する")
 
-2. F5 キーを押して、ビルドとデバッグを実行します。　ソリューションを実行し、個人用アカウント、あるいは職場または学校のアカウントのいずれかでサインインします。
+2. F5 キーを押して、ビルドとデバッグを実行します。ソリューションを実行し、個人用アカウント、あるいは職場または学校のアカウントのいずれかでサインインします。
     > **注** ビルド構成マネージャーを開いて、ビルドと展開の手順が UWP プロジェクトに対して選択されていることを確認することが必要な場合があります。 
 
 3. 個人用あるいは職場または学校アカウントでサインインし、要求されたアクセス許可を付与します。

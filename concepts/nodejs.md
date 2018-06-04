@@ -16,7 +16,7 @@ Azure AD エンドポイントを使用するバージョンの Connect サン�
 
 開始するには、次のものが必要です。 
 
-- [Microsoft アカウント](https://www.outlook.com/)か[職場または学校アカウント](http://dev.office.com/devprogram)
+- [Microsoft アカウント](https://www.outlook.com/)か[職場または学校アカウント](https://docs.microsoft.com/ja-JP/office/developer-program/office-365-developer-program-faq#account-types)
 - [npm 付きの Node.js](https://nodejs.org/en/download/) 
 - [Node.js 用 Microsoft Connect サンプル](https://github.com/microsoftgraph/nodejs-connect-rest-sample)。 このチュートリアルには、サンプル ファイル内の **starter-project** フォルダーを使用します。
 
@@ -193,7 +193,7 @@ Microsoft アプリケーション登録ポータルでアプリケーション�
 
         npm start
 
-1. ブラウザーで *http://localhost:3000* にナビゲートし、**[Office 365 に接続する]** ボタンを選びます。
+1. ブラウザーで *http://localhost:3000* にナビゲートし **[Office 365 に接続する]** ボタンを選択します。
 
 1. サインインして要求されたアクセス許可を付与します。 
 

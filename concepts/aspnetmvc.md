@@ -6,15 +6,15 @@
 
 ![[メール アドレスの取得] および [メールの送信] ボタンを持つ Web アプリケーション](images/aspnet-connect-sample.png "[メール アドレスの取得] と [メールの送信] ボタンを持つ Web アプリケーション")
 
-[Azure AD v2.0 エンドポイント](https://azure.microsoft.com/en-us/documentation/articles/active-directory-appmodel-v2-overview) では、ユーザーは Microsoft アカウント (MSA) や、職場または学校のアカウントを使用してサインインします。アプリでは、[ASP.Net OpenID Connect OWIN ミドルウェア](https://www.nuget.org/packages/Microsoft.Owin.Security.OpenIdConnect/) および [.NET 用 Microsoft 認証ライブラリ (MSAL) ](https://www.nuget.org/packages/Microsoft.Identity.Client) を使用して、サインインとトークンの管理を行います。
+[Azure AD v2.0 エンドポイント](https://azure.microsoft.com/ja-JP/documentation/articles/active-directory-appmodel-v2-overview) では、ユーザーは Microsoft アカウント (MSA) や、職場または学校のアカウントを使用してサインインします。アプリでは、[ASP.Net OpenID Connect OWIN ミドルウェア](https://www.nuget.org/packages/Microsoft.Owin.Security.OpenIdConnect/) および [.NET 用 Microsoft 認証ライブラリ (MSAL) ](https://www.nuget.org/packages/Microsoft.Identity.Client) を使用して、サインインとトークンの管理を行います。
 
-**アプリを作成してみたいですか。**「[Microsoft Graph クイック スタート](https://developer.microsoft.com/en-us/graph/quick-start)」を使用すれば、すぐに始めることができます。[REST バージョンのサンプル](https://github.com/microsoftgraph/aspnet-connect-rest-sample)も利用できます。
+**アプリを作成してみたいですか。**「[Microsoft Graph クイック スタート](https://developer.microsoft.com/ja-JP/graph/quick-start)」を使用すれば、すぐに始めることができます。[REST バージョンのサンプル](https://github.com/microsoftgraph/aspnet-connect-rest-sample)も利用できます。
 
 ## <a name="prerequisites"></a>前提条件
 
 開始するには、次のものが必要です。 
 
-- [Microsoft アカウント](https://www.outlook.com/)か[職場または学校アカウント](http://dev.office.com/devprogram)
+- [Microsoft アカウント](https://www.outlook.com/)か[職場または学校アカウント](https://docs.microsoft.com/ja-JP/office/developer-program/office-365-developer-program-faq#account-types)
 - Visual Studio 2015 
 - [ASP.NET 4.6 用 Microsoft Graph 接続サンプル](https://github.com/microsoftgraph/aspnet-connect-sample)。サンプル ファイルの **starter-project** フォルダーを開きます。
 
@@ -53,7 +53,7 @@
 
 3. **appSettings** 要素内のアプリの構成キーの位置を確認します。ENTER_YOUR_CLIENT_ID と ENTER_YOUR_SECRET のプレース ホルダー値をコピーした値に置き換えます。
 
-リダイレクト URI は、登録したプロジェクトの URL です。要求される[アクセス許可のスコープ](https://developer.microsoft.com/en-us/graph/docs/concepts/permission_scopes)によって、アプリはユーザー プロファイル情報を取得したり、電子メールを送信したりできます。
+リダイレクト URI は、登録したプロジェクトの URL です。要求される[アクセス許可のスコープ](https://developer.microsoft.com/ja-JP/graph/docs/concepts/permission_scopes)によって、アプリはユーザー プロファイル情報を取得したり、電子メールを送信したりできます。
 
 ## <a name="call-microsoft-graph"></a>Microsoft Graph を呼び出す
 
@@ -338,7 +338,7 @@
 
 ## <a name="see-also"></a>関連項目
 - [Microsoft Graph .NET クライアント ライブラリ](https://github.com/microsoftgraph/msgraph-sdk-dotnet)
-- [Web アプリケーションから Web への API 認証シナリオ](https://azure.microsoft.com/en-us/documentation/articles/active-directory-authentication-scenarios/#web-application-to-web-api)
-- [OpenID Connect を使用して、Microsoft Identity と Microsoft Graph を Web アプリケーションに統合する](https://azure.microsoft.com/en-us/documentation/samples/active-directory-dotnet-webapp-openidconnect-v2/)
-- [Azure AD v2.0 のプロトコル](https://azure.microsoft.com/en-us/documentation/articles/active-directory-v2-protocols/)
-- [Azure AD v2.0 のトークン](https://azure.microsoft.com/en-us/documentation/articles/active-directory-v2-tokens/)
+- [Web アプリケーションから Web への API 認証シナリオ](https://azure.microsoft.com/ja-JP/documentation/articles/active-directory-authentication-scenarios/#web-application-to-web-api)
+- [OpenID Connect を使用して、Microsoft Identity と Microsoft Graph を Web アプリケーションに統合する](https://azure.microsoft.com/ja-JP/documentation/samples/active-directory-dotnet-webapp-openidconnect-v2/)
+- [Azure AD v2.0 のプロトコル](https://azure.microsoft.com/ja-JP/documentation/articles/active-directory-v2-protocols/)
+- [Azure AD v2.0 のトークン](https://azure.microsoft.com/ja-JP/documentation/articles/active-directory-v2-tokens/)

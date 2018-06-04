@@ -68,9 +68,11 @@
 | フォルダー内の個人用連絡先 | [連絡先](../api-reference/v1.0/resources/contact.md)リソースの[デルタ](../api-reference/v1.0/api/contact_delta.md)関数 |
 | ユーザー | [ユーザー](../api-reference/v1.0/resources/user.md)リソースの[デルタ](../api-reference/v1.0/api/user_delta.md)関数 | 
 | ドライブの項目\* | [driveItem](../api-reference/v1.0/resources/driveitem.md) リソースの[デルタ](../api-reference/v1.0/api/driveitem_delta.md)関数 |
-
+| Planner の項目\*\* | [plannerUser](../api-reference/beta/resources/planneruser.md) リソースのすべてのセグメントの[デルタ](../api-reference/beta/api/planneruser_list_delta.md)関数 (プレビュー) |
 
 > \* OneDrive リソースの使用パターンは、他のサポートされているリソースと似ていますが、構文には若干の違いがあります。ドライブのデルタ クエリは、他のリソースの種類との一貫性を保つために将来更新されます。現在の構文の詳細については、「[ドライブの変更履歴を記録する](https://developer.microsoft.com/ja-JP/graph/docs/api-reference/v1.0/api/item_delta)」を参照してください。
+
+> \*\* Planner リソースの使用パターンは、他のサポートされているリソースと似ていますが、若干の違いがあります。  詳細については、「[Planner の変更履歴を記録する](../api-reference/beta/api/planneruser_list_delta.md)」を参照してください。
 
 ## <a name="prerequisites"></a>前提条件
 

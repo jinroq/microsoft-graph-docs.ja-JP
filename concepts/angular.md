@@ -7,7 +7,7 @@
 ![ログイン後に [メールの送信] ボタンを表示する Web アプリ](./images/angular-connect-sample.png)
 
 
-**アプリを作成してみたくありませんか。**「[Microsoft Graph クイック スタート](https://graph.microsoft.io/en-us/getting-started)」を使用すれば、すばやく稼働させることができます。
+**アプリを作成してみたくありませんか。**「[Microsoft Graph クイック スタート](https://graph.microsoft.io/ja-JP/getting-started)」を使用すれば、すばやく稼働させることができます。
 
 Azure AD エンドポイントを使用するバージョンの Connect サンプルをダウンロードするには、「[AngularJS 用の Microsoft Graph Connect サンプル](https://github.com/microsoftgraph/angular-connect-rest-sample/releases/tag/last_v1_auth)」をご覧ください。
 
@@ -16,7 +16,7 @@ Azure AD エンドポイントを使用するバージョンの Connect サン�
 
 開始するには、次のものが必要です。 
 
-- [Microsoft アカウント](https://www.outlook.com/)か[職場または学校アカウント](http://dev.office.com/devprogram)
+- [Microsoft アカウント](https://www.outlook.com/)か[職場または学校アカウント](https://docs.microsoft.com/ja-JP/office/developer-program/office-365-developer-program-faq#account-types)
 - [npm 付きの Node.js](https://nodejs.org/en/download/)
 - [Bower](https://bower.io)
 - [AngularJS 用 Microsoft Connect のサンプル](https://github.com/microsoftgraph/angular-connect-sample)このチュートリアルには、サンプル ファイル内の **starter-project** フォルダーを使用します。
@@ -34,7 +34,7 @@ Microsoft アプリケーション登録ポータルでアプリケーション�
 
 4. アプリケーション ID をコピーします。これは、アプリの構成に使用するアプリの一意識別子です。
 
-5. **[プラットフォーム]** で、**[プラットフォームの追加]** > **[Web]** の順に選びます。
+5. **[プラットフォーム]** で、**[プラットフォームの追加]** > **[Web]** の順に選択します。
 
 6. **[暗黙的フローを許可する]** のチェック ボックスが選択されていることを確認して、リダイレクト URI として *http://localhost:8080* を入力します。 
 
@@ -160,7 +160,7 @@ app.js を開いて、ファイルの末尾に次に示すコードを追加し�
 
         npm start
 
-2. ブラウザーで *http://localhost:8080* にナビゲートし **[Connect]** ボタンを選びます。
+2. ブラウザーで *http://localhost:8080* にナビゲートし **[Connect]** ボタンを選択します。
 
 3. サインインして要求されたアクセス許可を付与します。 
 
@@ -172,5 +172,5 @@ app.js を開いて、ファイルの末尾に次に示すコードを追加し�
 
 
 ## <a name="see-also"></a>関連項目
-- [Azure AD v2.0 のプロトコル](https://azure.microsoft.com/en-us/documentation/articles/active-directory-v2-protocols/)
-- [Azure AD v2.0 のトークン](https://azure.microsoft.com/en-us/documentation/articles/active-directory-v2-tokens/)
+- [Azure AD v2.0 のプロトコル](https://azure.microsoft.com/ja-JP/documentation/articles/active-directory-v2-protocols/)
+- [Azure AD v2.0 のトークン](https://azure.microsoft.com/ja-JP/documentation/articles/active-directory-v2-tokens/)

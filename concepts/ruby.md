@@ -8,7 +8,7 @@ Azure AD エンドポイントを使用するバージョンの Connect サン�
 
 ![Microsoft Ruby on Rails Connect サンプルのスクリーンショット](./images/Microsoft-Graph-Ruby-Connect-UI.png)
 
-**アプリを作成してみたくありませんか。**[Microsoft Graph クイック スタート](https://graph.microsoft.io/en-us/getting-started)を使用してすぐに使い始めるか、またはこの記事で取り扱っている [Ruby REST Connect サンプル](https://github.com/microsoftgraph/ruby-connect-rest-sample)をダウンロードしてください。
+**アプリを作成してみたくありませんか。**[Microsoft Graph クイック スタート](https://graph.microsoft.io/ja-JP/getting-started)を使用してすぐに使い始めるか、またはこの記事で取り扱っている [Ruby REST Connect サンプル](https://github.com/microsoftgraph/ruby-connect-rest-sample)をダウンロードしてください。
 
 
 ## <a name="prerequisites"></a>前提条件
@@ -19,7 +19,7 @@ Azure AD エンドポイントを使用するバージョンの Connect サン�
 - Rails フレームワーク (このサンプルは Rails 4.2 でテストされています)。
 - Bundler 依存関係マネージャー。
 - Ruby 用の Rack Web サーバー インターフェイス。
-- [Microsoft アカウント](https://www.outlook.com/)か[職場または学校アカウント](http://dev.office.com/devprogram)
+- [Microsoft アカウント](https://www.outlook.com/)か[職場または学校アカウント](https://docs.microsoft.com/ja-JP/office/developer-program/office-365-developer-program-faq#account-types)
 - Ruby on Rails 用の Microsoft Graph Connect スターター プロジェクト。[Microsoft Graph Ruby on Rails Connect サンプル](https://github.com/microsoftgraph/ruby-connect-rest-sample)をダウンロードします。スタート プロジェクトはスターター フォルダー内にあります。
 
 
@@ -43,13 +43,13 @@ Microsoft アプリケーション登録ポータルでアプリケーション�
 
 6. **[プラットフォーム]** で、**[プラットフォームの追加]** > **[Web]** の順に選択します。
 
-7. **[暗黙的フローを許可する]** のチェック ボックスが選択されていることを確認して、リダイレクト URI として「*http://localhost:3000/auth/microsoft_v2_auth/callback*」と入力します。
+7. **[暗黙的フローを許可する]** のチェック ボックスが選択されていることを確認して、リダイレクト URI として *http://localhost:3000/auth/microsoft_v2_auth/callback* を入力します。
 
     [暗黙的フローを許可する] オプションにより、OpenID Connect ハイブリッド フローが有効になります。これにより、認証時にアプリはサインイン情報 (id_token) と成果物 (この場合は認証コード) の両方を受け取れるようになり、アプリはアクセス トークンを取得するときにこれらを使用できます。
 
     リダイレクト URI *http://localhost:3000/auth/microsoft_v2_auth/callback* は、認証要求が処理されたときに OmniAuth ミドルウェアが使用するように構成される値です。
 
-8. **[保存]** を選びます。
+8. **[保存]** を選択します。
 
 ## <a name="configure-the-project"></a>プロジェクトを構成する
 
@@ -79,7 +79,7 @@ Microsoft アプリケーション登録ポータルでアプリケーション�
 2. 認証コードを取得する
 3. 認証コードをアクセス トークンに交換する
 
->この認証フローの詳細については、Azure AD のドキュメントにある「[Web アプリケーション対 Web API](https://azure.microsoft.com/en-us/documentation/articles/active-directory-authentication-scenarios/#web-application-to-web-api)」および「[OpenID Connect を使用した Microsoft ID と Microsoft Graph の Web アプリケーションへの統合](https://azure.microsoft.com/en-us/documentation/samples/active-directory-dotnet-webapp-openidconnect-v2/)」を参照してください。
+>この認証フローの詳細については、Azure AD のドキュメントにある「[Web アプリケーション対 Web API](https://azure.microsoft.com/ja-JP/documentation/articles/active-directory-authentication-scenarios/#web-application-to-web-api)」および「[OpenID Connect を使用した Microsoft ID と Microsoft Graph の Web アプリケーションへの統合](https://azure.microsoft.com/ja-JP/documentation/samples/active-directory-dotnet-webapp-openidconnect-v2/)」を参照してください。
 
 [Rack](http://rack.github.io/) ミドルウェアの積み重ねられた 3 つのピースを使用して、アプリが Microsoft Graph に対して認証できるようにします。
 
@@ -131,7 +131,7 @@ Gemfile では、次の gem のコメントを解除して、依存関係とし�
 
     match '/auth/:provider/callback', to: 'pages#callback', via: [:get, :post]
 
-OmniAuth がユーザーの認証を完了すると、アプリ登録で指定したダイレクト URL を呼び出します。この例では、*http://localhost:3000/auth/microsoft_v2_auth/callback* です。上記のルート パターンはその URL に一致するので、要求はページ コントローラーの `callback` メソッドにルーティングされます。
+OmniAuth がユーザーの認証を完了すると、アプリ登録で指定したダイレクト URL を呼び出します。この例では、*http://localhost:3000/auth/microsoft_v2_auth/callback* です。 上記のルート パターンはその URL に一致するので、要求はページ コントローラーの `callback` メソッドにルーティングされます。
 
 ### <a name="get-an-access-token"></a>アクセス トークンを取得する
 
@@ -173,7 +173,7 @@ OmniAuth がユーザーの認証を完了すると、アプリ登録で指定�
 
 このメソッドは認証ハッシュを取得し、現在のセッションのアクセス トークン、ユーザー名、および電子メールを保存します。
 
-> **注:**このプロジェクトでの簡易認証とトークンの処理は例示のみを目的として示されています。運用アプリでは、セキュリティで保護されたトークンの処理およびトークンの更新など、認証を処理するためのより信頼性の高い方法を構築する可能性があります。
+> **注:** このプロジェクトでの簡易認証とトークンの処理は例示のみを目的として示されています。運用アプリでは、セキュリティで保護されたトークンの処理およびトークンの更新など、認証を処理するためのより信頼性の高い方法を構築する可能性があります。
 
 ## <a name="call-microsoft-graph"></a>Microsoft Graph を呼び出す
 
