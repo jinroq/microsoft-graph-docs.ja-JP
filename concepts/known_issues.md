@@ -32,7 +32,7 @@
 
 ### <a name="policy"></a>ポリシー
 
-Microsoft Graph を使用して Office 365 グループを作成および名前付けすると、Outlook Web App で構成されたすべての Office 365 のグループ ポリシーがバイパスされます。 
+Microsoft Graph を使用して Office 365 グループを作成および名前付けすると、Outlook Web App で構成されたすべての Office 365 のグループ ポリシーがバイパスされます。
 
 ### <a name="permissions-for-groups-and-microsoft-teams"></a>グループと Microsoft Teams のアクセス許可
 
@@ -104,12 +104,13 @@ GET \users('{id}')\calendars('{id}')\events
 エラー コード `ErrorInternalServerTransientError` で HTTP 500 を受け取る可能性があります。エラーが発生する理由は次のとおりです。
 
 - 従来、予定表共有を実装するための 2 つの方法がありました。それらを区別するために、"古い" アプローチと "新しい" アプローチと呼びます。
-- 新しいアプローチは、表示または編集のアクセス許可による予定表の共有に使用できますが、委任のアクセス許可には使用できません。 
-- 予定表が**新しい**アプローチによって共有されている場合のみ、予定表 REST API を使用して、共有された予定表を表示または編集できます。 
+- 新しいアプローチは、表示または編集のアクセス許可による予定表の共有に使用できますが、委任のアクセス許可には使用できません。
+- 予定表が**新しい**アプローチによって共有されている場合のみ、予定表 REST API を使用して、共有された予定表を表示または編集できます。
 - 予定表が**古い**アプローチによって共有されている場合、予定表 REST API を使用して、このような予定表を表示または編集することはできません。
 
 
-予定表が表示または編集のアクセス許可で共有されていても、古いアプローチを使用している場合、エラーを回避して手動で予定表共有をアップグレードし、新しいアプローチを使用することができます。 時間の経過とともに、Outlook では共有されているすべての予定表が、委任アクセス許可で共有されている予定表を含め、新しいアプローチを使用できるように自動的にアップグレードされます。 
+予定表が表示または編集のアクセス許可で共有されていても、古いアプローチを使用している場合、エラーを回避して手動で予定表共有をアップグレードし、新しいアプローチを使用することができます。
+時間の経過とともに、Outlook では共有されているすべての予定表が、委任アクセス許可で共有されている予定表を含め、新しいアプローチを使用できるように自動的にアップグレードされます。
 
 新しいアプローチを使用できるように共有されている予定表を手動でアップグレードするには、以下の手順を実行します。
 1.  受信者は、それまで共有されていた予定表を削除します。
@@ -132,7 +133,7 @@ GET \me\calendars('{id}')\events
 
 ### <a name="default-contacts-folder"></a>既定の連絡先フォルダー
 
-`/v1.0` バージョンでは、`GET /me/contactFolders` にユーザーの既定の連絡先フォルダーは含まれません。 
+`/v1.0` バージョンでは、`GET /me/contactFolders` にユーザーの既定の連絡先フォルダーは含まれません。
 
 修正プログラムが用意される予定です。それまでは、回避策として次の[連絡先一覧表示](http://developer.microsoft.com/ja-JP/graph/docs/api-reference/v1.0/api/user_list_contacts)クエリと **parentFolderId** プロパティを使用して、既定の連絡先フォルダーのフォルダー ID を取得できます。
 
@@ -175,7 +176,7 @@ GET /users/{id | userPrincipalName}/contacts/{id}
 
 ### <a name="the-comment-parameter-for-creating-a-draft"></a>下書きを作成するためのコメント パラメーター
 
-返信または転送用の下書きを作成するための**コメント** パラメーター ([createReply](../api-reference/v1.0/api/message_createreply.md)、[createReplyAll](../api-reference/v1.0/api/message_createreplyall.md)、[createForward](../api-reference/v1.0/api/message_createforward.md)) は、結果メッセージの下書き本文の一部にはなりません。  
+返信または転送用の下書きを作成するための**コメント** パラメーター ([createReply](../api-reference/v1.0/api/message_createreply.md)、[createReplyAll](../api-reference/v1.0/api/message_createreplyall.md)、[createForward](../api-reference/v1.0/api/message_createforward.md)) は、結果メッセージの下書き本文の一部にはなりません。
 
 ## <a name="drives-files-and-content-streaming"></a>ドライブ、ファイルおよびコンテンツのストリーミング
 
@@ -183,16 +184,20 @@ GET /users/{id | userPrincipalName}/contacts/{id}
 
 ## <a name="query-parameter-limitations"></a>クエリ パラメーターの制限事項
 
-* **$expand** の制限:
-    * `nextLink` はサポートされていません
-    * 1 レベルを超える展開はサポートされていません
-    * 余分なパラメーターはサポートされていません (**$filter**、**$select**)
-* 複数の名前空間はサポートされていません
+* 複数の名前空間はサポートされていません。
 * `$ref` の GET とキャストはユーザー、グループ、デバイス、サービス プリンシパル、アプリケーションではサポートされていません。
 * `@odata.bind` はサポートされていません。つまり、開発者は `Accepted` や `RejectedSenders` を適切にグループに設定することができません。
-* `@odata.id` は最低限のメタデータを使用する場合、非包含構造のナビゲーション (メッセージなど) には存在しません
-* ワークロード間でのフィルター/検索は利用できません。 
-* フルテキスト検索 (**$search** を使用した検索) はメッセージなどのいくつかのエンティティに対してのみ使用できます。
+* `@odata.id` は最低限のメタデータを使用する場合、非包含構造のナビゲーション (メッセージなど) には存在しません。
+* `$expand`:
+  * `nextLink` はサポートされていません
+  * 1 レベルを超える展開はサポートされていません
+  * 余分なパラメーターはサポートされていません (`$filter`、`$select`)
+* `$filter`:
+  * `/attachments` エンドポイントは、フィルターをサポートしていません。 存在する場合、`$filter` パラメーターは無視されます。
+  * ワークロード間でのフィルターはサポートされていません。
+* `$search`:
+  * フルテキスト検索はメッセージなどのエンティティのサブセットに対してのみ使用できます。
+  * ワークロード間での検索はサポートされていません。
 
 ## <a name="delta-query"></a>デルタ クエリ
 
@@ -211,7 +216,7 @@ GET /users/{id | userPrincipalName}/contacts/{id}
 * アプリの更新は、初期ベータ更新後に登録されたアプリに限定されます。
 * Azure Active Directory ユーザーは、アプリの登録と所有者の追加を行えます。
 * OpenID Connect と OAuth プロトコルをサポートします。
-* アプリケーションへのポリシーの割り当てが失敗します。 
+* アプリケーションへのポリシーの割り当てが失敗します。
 * アプリ ID を必要とする ownedObjects に対する操作 (たとえば、users/{id|userPrincipalName}/ownedObjects/{id}/...) が失敗します。
 
 開発中:
@@ -235,7 +240,8 @@ GET /users/{id | userPrincipalName}/contacts/{id}
 
 ### <a name="creating-a-resource-instance-and-adding-schema-extension-data-at-the-same-time"></a>リソースのインスタンスを作成し、同時にスキーマ拡張機能データを追加します。
 
-**連絡先**、**イベント**、**メッセージ**、**投稿**のインスタンスを作成する場合と同じ操作では、スキーマ拡張機能を指定できません。 リソースのインスタンスを作成してから、そのインスタンスに`PATCH` 操作を行い、スキーマ拡張機能とカスタム データを追加する必要があります。 
+**連絡先**、**イベント**、**メッセージ**、**投稿**のインスタンスを作成する場合と同じ操作では、スキーマ拡張機能を指定できません。
+リソースのインスタンスを作成してから、そのインスタンスに`PATCH` 操作を行い、スキーマ拡張機能とカスタム データを追加する必要があります。
 
 ### <a name="limit-of-100-schema-extension-property-values-allowed-per-resource-instance"></a>スキーマ拡張機能のプロパティ値はリソースのインスタンスごとに 100 に制限されています。
 
@@ -290,7 +296,7 @@ JSON バッチ処理が完成に近づくにつれて、これらの制限は削
 
 それまでの間、開発とテストのブロックを解除するために次の回避策を取ってください。
 
->**注:**これは永続的なソリューションではなく、開発のブロックを解除するためのものです。前述の問題が解決されたら、この回避策は必要なくなります。解決された後にこの回避策を元に戻す必要はありません。
+>**注:** これは永続的なソリューションではなく、開発のブロックを解除するためのものです。前述の問題が解決されたら、この回避策は必要なくなります。解決された後にこの回避策を元に戻す必要はありません。
 
 1. Azure AD v2 PowerShell セッションを開き、サインイン ウィンドウに、管理者資格情報を入力して `customer` テナントに接続します。Azure AD PowerShell V2 は、[ここ](https://www.powershellgallery.com/packages/AzureAD)からダウンロードし、インストールできます。
 

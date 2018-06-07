@@ -3,15 +3,16 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
 ms.topic: conceptual
-ms.openlocfilehash: 963d2b71b879c285a43378d07c1bfd755f150b9f
-ms.sourcegitcommit: 7aea7a97e36e6d146214de3a90fdbc71628aadba
+ms.openlocfilehash: 30f98afa7b75784b0ee2b9ec446c6389cc876949
+ms.sourcegitcommit: af8fdd5ea762fb54b7fbebb9a70bd942a56c6b7a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 05/25/2018
+ms.locfileid: "19473154"
 ---
 # <a name="working-with-long-running-actions-beta"></a>長時間実行アクションの処理 (ベータ版)
 
-> **重要:**Microsoft Graph のベータ版 (/beta) の API はプレビュー中で、変更されることがあります。 実稼働アプリケーションでは、これらの API の使用はサポートされていません。
+> **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。
 
 一部の API 応答では、完了までに要する時間が不明です。
 アクションが完了するまで待機してから応答を返す代わりに、Microsoft Graph では長時間実行アクションのパターンを使用できます。
