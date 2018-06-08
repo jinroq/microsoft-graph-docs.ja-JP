@@ -2,6 +2,8 @@
 
 OneNote は、顧客が Web、電話、タブレット、またはデスクトップ上で文字、スケッチ、音声を入力することで、家庭、学校、または職場用のアイデアやメモを追跡できるデジタル ノートブックです。 自由にメモを整理し、デバイスを切り替え、作業の中断箇所を選び、他のユーザーとリアルタイムでメモの共同作業を行うことができます。
 
+![OneNote ノートブックとセクションとページ](images/onenote-page.png)
+
 ## <a name="why-integrate-with-onenote"></a>OneNote と統合する理由
 
 アプリを OneNote に統合すると、複数のプラットフォームで利用できる便利な機能を作成し、世界中の数百万人のユーザーに届けることができます。 Microsoft Graph を使用して OneNote のノートブック、セクション、ページにアクセスし、ユーザーによるアイデアや情報の計画や整理を支援するソリューションを作成することができます。
@@ -65,4 +67,4 @@ OneNote のコンテンツ更新機能については、Microsoft Graph API の�
 
 Graph Explorer から OneNote API 呼び出しを行うには、左側の列にある **[その他のサンプルを表示]** を選択します。 メニューを使用して、OneNote を **[オン]** に切り替えます。 また、適切なアクセス許可を有効にする必要があります。 左側のメニューのアカウント名の下で、**[アクセス許可の修正]** を選択します。 OneNote のアクセス許可の詳細については、「[メモのアクセス許可](permissions_reference.md#notes-permissions)」を参照してください。
 
-Microsoft Graph の OneNote API を使い始めるには、[OneNote 参照コンテンツ](../api-reference/v1.0/resources/onenote.md)に関する記事をご覧ください。
+Microsoft Graph の OneNote API を使い始めるには、[OneNote 参照コンテンツ](../api-reference/v1.0/resources/onenote-api-overview.md)に関する記事をご覧ください。
