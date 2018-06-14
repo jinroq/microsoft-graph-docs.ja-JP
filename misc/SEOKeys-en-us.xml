@@ -5110,7 +5110,7 @@
           <Item text="所有者を割り当てる" url="/en-us/api-reference/beta/api/application_post_owners" SEOKeyword="所有者を作成する、Microsoft Graph API、アプリケーション API" SEODescription="この API を使用して、新しい所有者を作成します。" />
           <Item text="拡張機能プロパティを一覧表示する" url="/en-us/api-reference/beta/api/application_list_extensionproperties" SEOKeyword="extensionProperties を一覧表示する、Microsoft Graph API、アプリケーション API" SEODescription="extensionproperty オブジェクトのリストを取得します。" />
         </Item>
-	  <Item text="監査ログ" url="/en-us/api-reference/beta/resources/directoryaudit">
+	  <Item text="監査ログ" url="/en-us/api-reference/beta/resources/azure_ad_auditlog_overview">
 			<Item text="ディレクトリ監査" url="/en-us/api-reference/beta/resources/directoryaudit" SEOKeyword="directoryAudit オブジェクト, Microsoft Graph API, Azure AD, 監査ログ" SEODescription="">
 			<Item text="ディレクトリ監査を一覧表示する" url="/en-us/api-reference/beta/api/directoryaudit_list" SEOKeyword="監査ログ API, Microsoft Graph API, Azure AD, 監査ログ" SEODescription="directoryAudit オブジェクトの一覧を返す API です。" />
 			<Item text="ディレクトリ監査を取得する" url="/en-us/api-reference/beta/api/directoryaudit_get" SEOKeyword="監査ログ API, Microsoft Graph API, Azure AD, 監査ログ" SEODescription="directoryAudit オブジェクトを返す API です。" />
