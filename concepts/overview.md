@@ -35,11 +35,11 @@ Microsoft Graph を使用すると、ユーザーの固有のコンテキスト�
 
 Microsoft Graph API を使用すると、これ以上のことができます。
 
->**注:** Microsoft Graph API を使用する場合、「[Microsoft Graph 使用条件](../misc/terms-of-use.md)」と「[Microsoft のプライバシーに関する声明](https://go.microsoft.com/fwlink/?LinkId=521839)」に同意することになります。
+>**注:** Microsoft Graph API を使用する場合、「[Microsoft Graph 使用条件](https://developer.microsoft.com/en-us/graph/docs/misc/terms-of-use)」と「[Microsoft のプライバシーに関する声明](https://go.microsoft.com/fwlink/?LinkId=521839)」に同意することになります。
 
 ### <a name="popular-requests"></a>一般的な要求
 
-Microsoft Graph API を使用するための一般的なシナリオをいくつか確認します。 リンクから [Graph エクスプローラー](https://developer.microsoft.com/ja-JP/graph/graph-explorer)に移動できます。
+Microsoft Graph API を使用するための一般的なシナリオをいくつか確認します。 リンクから [Graph エクスプローラー](https://developer.microsoft.com/en-us/graph/graph-explorer)に移動できます。
 
 | **操作** | **URL** |
 |:--------------------------|:----------------------------------------|

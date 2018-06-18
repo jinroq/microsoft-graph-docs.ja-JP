@@ -4,7 +4,7 @@
 
 ## <a name="support-policy-and-deprecation-information"></a>サポート ポリシーと廃止の情報
 
-Microsoft Graph は [Microsoft ライフサイクル ポリシー](https://support.microsoft.com/ja-JP/lifecycle)に従います。 
+Microsoft Graph は [Microsoft ライフサイクル ポリシー](https://support.microsoft.com/en-us/lifecycle)に従います。 
 
 Microsoft Graph REST API と Microsoft Graph SDK の新しいバージョンがリリースされると、それ以前のバージョンは廃止されます。Microsoft は API または SDK が廃止される少なくとも 24 か月前までにそれ以前のバージョンを非推奨に指定します。 
 
@@ -34,7 +34,7 @@ Microsoft Graph にはバージョン更新の変更履歴があります。 バ
  - プロパティの順序の変更
  - リソース ID のような不透明な文字列の長さまたは形式の変更
 
->**注:** 下位互換性のある変更の一覧は適時変更されます。 独自のクライアント プロクシ (WCF クライアントなど) を作成する場合、ガイドラインとしては Microsoft Graph API サービスにあらかじめ定義されていないプロパティや派生型をクライアント アプリケーションが受け入れることができるように準備してください。 Microsoft Graph API は「[Microsoft REST API ガイドライン](https://github.com/microsoft/api-guidelines/)」の「[バージョン管理のモデル](https://github.com/microsoft/api-guidelines/blob/master/Guidelines.md#12-versioning)」セクションの説明に従っています。 
+>**注:** 下位互換性のある変更の一覧は適時変更されます。 独自のクライアント プロクシ (WCF クライアントなど) を作成する場合、ガイドラインとしては Microsoft Graph API サービスにあらかじめ定義されていないプロパティや派生型をクライアント アプリケーションが受け入れることができるように準備してください。 Microsoft Graph API は「[Microsoft REST API ガイドライン](https://github.com/microsoft/api-guidelines/)」の「[バージョン管理のモデル](https://github.com/Microsoft/api-guidelines/blob/master/Guidelines.md#12-versioning)」セクションの説明に従っています。 
 
 ## <a name="versions"></a>バージョン
 
@@ -56,6 +56,6 @@ Microsoft Graph の現在のバージョンは、v1.0 です。 Microsoft Graph 
 
 ## <a name="terms-of-use"></a>利用規約
 
-Microsoft Graph API を使用すると、お客様は [利用規約](../misc/terms-of-use.md) に同意したこととなります。 
+Microsoft Graph API を使用すると、お客様は [利用規約](https://developer.microsoft.com/en-us/graph/docs/misc/terms-of-use) に同意したこととなります。 
 
 お客様からのフィードバックを重視しています。 [スタック オーバーフロー](https://stackoverflow.com/questions/tagged/microsoftgraph?sort=newest)でご連絡いただけます。 ご質問には {MicrosoftGraph} のタグを付けてください。
