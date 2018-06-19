@@ -5132,7 +5132,6 @@
         <Item text="削除済みアイテムを復元する" url="/en-us/api-reference/beta/api/directory_deleteditems_restore" />
         <Item text="ユーザーによって所有されている削除済みアイテムを一覧表示する" url="/en-us/api-reference/beta/api/directory_deleteditems_user_owned" />
        </Item>
-
       <Item text="デバイス" url="/en-us/api-reference/beta/resources/device" SEOKeyword="デバイス API, Microsoft Graph API, デバイス API" SEODescription="ディレクトリに登録されているデバイスを表します。DirectoryObject から継承します。">
         <Item text="デバイスを一覧表示する" url="/en-us/api-reference/beta/api/device_list" SEOKeyword="デバイスを一覧表示する、Microsoft Graph API、Device API" SEODescription="デバイス オブジェクトのリストを取得します。" />
         <Item text="デバイスを作成する" url="/en-us/api-reference/beta/api/device_post_devices" SEOKeyword="デバイスを作成する, Microsoft Graph API, Device API" SEODescription="この API を使用して、新しいデバイスを作成します。" />
@@ -5260,6 +5259,31 @@
       <Item text="監査イベント" url="/en-us/api-reference/beta/resources/privilegedoperationevent" SEOKeyword="Privileged Identity Management API, Azure AD, AADPIM, PIM, Microsoft Graph API, 監査" SEODescription="Privileged Identity Management からの監査イベント">
         <Item text="監査イベントを一覧表示する" url="/en-us/api-reference/beta/api/privilegedoperationevent_list" SEOKeyword="Privileged Identity Management API, Azure AD, AADPIM, PIM, Microsoft Graph API, 監査" SEODescription="監査イベントのリストを取得します。" />
       </Item>
+	  <Item text="管理対象リソース" url="/en-us/api-reference/beta/resources/governanceresource">
+		<Item text="リスト" url="/en-us/api-reference/beta/api/governanceresource_list" />
+		<Item text="取得" url="/en-us/api-reference/beta/api/governanceresource_get" />
+	  </Item>
+	  <Item text="ロールの定義" url="/en-us/api-reference/beta/resources/governanceroledefinition">
+		<Item text="リスト" url="/en-us/api-reference/beta/api/governanceroledefinition_list" />
+		<Item text="取得" url="/en-us/api-reference/beta/api/governanceroledefinition_get" />
+	  </Item>
+	  <Item text="ロールの設定" url="/en-us/api-reference/beta/resources/governancerolesetting">
+		<Item text="リスト" url="/en-us/api-reference/beta/api/governancerolesetting_list" />
+		<Item text="取得" url="/en-us/api-reference/beta/api/governancerolesetting_get" />
+		<Item text="更新" url="/en-us/api-reference/beta/api/governancerolesetting_update" />
+	  </Item>
+	  <Item text="ロールの割り当て" url="/en-us/api-reference/beta/resources/governanceroleassignment">
+		<Item text="リスト" url="/en-us/api-reference/beta/api/governanceroleassignment_list" />
+		<Item text="取得" url="/en-us/api-reference/beta/api/governanceroleassignment_get" />
+		<Item text="エクスポート" url="/en-us/api-reference/beta/api/governanceroleassignment_export" />
+	  </Item>
+	  <Item text="ロールの割り当て要求" url="/en-us/api-reference/beta/resources/governanceroleassignmentrequest">
+		<Item text="リスト" url="/en-us/api-reference/beta/api/governanceroleassignmentrequest_list" />
+		<Item text="作成" url="/en-us/api-reference/beta/api/governanceroleassignmentrequest_post" />
+		<Item text="取得" url="/en-us/api-reference/beta/api/governanceroleassignmentrequest_get" />
+		<Item text="更新" url="/en-us/api-reference/beta/api/governanceroleassignmentrequest_update" />
+		<Item text="キャンセル" url="/en-us/api-reference/beta/api/governanceroleassignmentrequest_cancel" />
+	  </Item>
     </Item>
       <Item text="サービス プリンシパル" url="/en-us/api-reference/beta/resources/serviceprincipal">
         <Item text="サービス プリンシパルを一覧表示する" url="/en-us/api-reference/beta/api/serviceprincipal_list" />
