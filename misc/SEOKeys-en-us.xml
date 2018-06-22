@@ -5719,8 +5719,17 @@
       </Item>
     </Item>
     <Item text="チームワーク" ProdTag="Microsoft Teams" url="/en-us/api-reference/beta/resources/teams_api_overview" SEOKeyword="Teams API, Microsoft Graph API, Microsoft Teams API" SEODescription="Azure Active Directory グループを表します。DirectoryObject から継承されます。">
-      <Item text="グループ (チーム)" url="/en-us/api-reference/beta/resources/group" SEOKeyword="Groups API、Microsoft Graph API、Groups API、Microsoft Teams API、Teams API" SEODescription="Azure Active Directory グループを表します。DirectoryObject から継承されます。">
-        <Item text="グループを取得する" url="/en-us/api-reference/beta/api/group_get" SEOKeyword="グループを取得する、Microsoft Graph API、Groups API" SEODescription="グループ オブジェクトのプロパティとリレーションシップを取得します。" />
+      <Item text="チーム" url="/en-us/api-reference/beta/resources/team">
+		<Item text="チームを作成する" url="/en-us/api-reference/beta/api/team_put_teams" />
+		<Item text="チームを取得する" url="/en-us/api-reference/beta/api/team_get" />
+		<Item text="チームを更新する" url="/en-us/api-reference/beta/api/team_update" />
+		<Item text="チームをアーカイブする" url="/en-us/api-reference/beta/api/team_archive" />
+		<Item text="チームを展開する" url="/en-us/api-reference/beta/api/team_unarchive" />
+		<Item text="チームを複製する" url="/en-us/api-reference/beta/api/team_clone" />
+	  </Item>
+	  <Item text="グループ (チーム)" url="/en-us/api-reference/beta/resources/group" SEOKeyword="Groups API、Microsoft Graph API、Groups API、Microsoft Teams API、Teams API" SEODescription="Azure Active Directory グループを表します。DirectoryObject から継承されます。">
+        <Item text="グループを作成する" url="/en-us/api-reference/beta/api/group_post_groups" />
+		<Item text="グループを取得する" url="/en-us/api-reference/beta/api/group_get" SEOKeyword="グループを取得する、Microsoft Graph API、Groups API" SEODescription="グループ オブジェクトのプロパティとリレーションシップを取得します。" />
         <Item text="グループを一覧表示する" url="/en-us/api-reference/beta/api/group_list" SEOKeyword="グループを一覧表示する、Microsoft Graph API、Groups API" SEODescription="グループ オブジェクトのリストを取得します。" />
         <Item text="グループを更新する" url="/en-us/api-reference/beta/api/group_update" SEOKeyword="グループを更新する、Microsoft Graph API、Groups API" SEODescription="グループ オブジェクトのプロパティを更新します。" />
         <Item text="グループを削除する" url="/en-us/api-reference/beta/api/group_delete" SEOKeyword="グループを削除する、Microsoft Graph API、Groups API" SEODescription="グループを削除します。" />
@@ -5728,7 +5737,7 @@
         <Item text="メンバーを一覧表示する" url="/en-us/api-reference/beta/api/group_list_members" SEOKeyword="メンバーを一覧表示する、Microsoft Graph API、Groups API" SEODescription="directoryobject オブジェクトのリストを取得します。" />
         <Item text="メンバーを追加する" url="/en-us/api-reference/beta/api/group_post_members" SEOKeyword="メンバーを作成する、Microsoft Graph API、Groups API" SEODescription="この API を使用して、新しいメンバーを作成します。" />
         <Item text="メンバーを削除する" url="/en-us/api-reference/beta/api/group_delete_members" SEOKeyword="メンバーを削除する、Microsoft Graph API、Groups API" SEODescription="この API を使用して、メンバーを削除します。" />
-        <Item text="所有者を一覧表示する" url="/en-us/api-reference/beta/api/group_list_owners" SEOKeyword="所有者を一覧表示する、Microsoft Graph API、Groups API" SEODescription="directoryobject オブジェクトのリストを取得します。" />
+        <Item text="所有者を一覧表示する" url="/en-us/api-reference/beta/api/group_list_owners" SEOKeyword="所有者を一覧表示する、Microsoft Graph API、Groups API" SEODescription="DirectoryObject オブジェクトのリストを取得します。" />
         <Item text="所有者を追加する" url="/en-us/api-reference/beta/api/group_post_owners" SEOKeyword="所有者を作成する、Microsoft Graph API、Groups API" SEODescription="この API を使用して、新しい所有者を作成します。" />
         <Item text="所有者を削除する" url="/en-us/api-reference/beta/api/group_delete_owners" SEOKeyword="所有者を削除する、Microsoft Graph API、Groups API" SEODescription="この API を使用して、グループの所有者を削除します。" />
         <Item text="メンバー グループを取得する" url="/en-us/api-reference/beta/api/group_getmembergroups" SEOKeyword="グループ: getMemberGroups、Microsoft Graph API、グループ API" SEODescription="" />
@@ -5740,15 +5749,6 @@
         <Item text="グループを完全に削除する" url="/en-us/api-reference/beta/api/directory_deleteditems_delete" />
         <Item text="削除されたグループを復元する" url="/en-us/api-reference/beta/api/directory_deleteditems_restore" />
       </Item>
-      <Item text="チーム" url="/en-us/api-reference/beta/resources/team">
-		<Item text="チームを作成する" url="/en-us/api-reference/beta/api/team_put_teams" />
-		<Item text="チームを取得する" url="/en-us/api-reference/beta/api/team_get" />
-		<Item text="チームを更新する" url="/en-us/api-reference/beta/api/team_update" />
-	  </Item>
-	  <Item text="写真" url="/en-us/api-reference/beta/resources/profilephoto" SEOKeyword="複数のユーザー, Microsoft Graph API, ユーザー API" SEODescription="">
-        <Item text="写真を取得する" url="/en-us/api-reference/beta/api/profilephoto_get" />
-        <Item text="写真を更新する" url="/en-us/api-reference/beta/api/profilephoto_update" />
-      </Item>
       <Item text="チャネル" url="/en-us/api-reference/beta/resources/channel" SEOKeyword="チャネル API、Microsoft Graph API、チャネル API" SEODescription="">
         <Item text="チャネルを一覧表示する" url="/en-us/api-reference/beta/api/group_list_channels" SEOKeyword="チャネルを一覧表示する, Microsoft Graph API, Groups API" SEODescription="チャネル オブジェクトのリストを取得します。" />
         <Item text="チャネルを作成する" url="/en-us/api-reference/beta/api/group_post_channels" SEOKeyword="会話を作成する, Microsoft Graph API, Groups API" SEODescription="この API を使用して、新しいチャネルを作成します。" />
@@ -5757,7 +5757,12 @@
       <Item text="チャット スレッド" url="/en-us/api-reference/beta/resources/chatthread" SEOKeyword="チャット スレッド API, Microsoft Graph API, チャット スレッド API" SEODescription="">
         <Item text="チャット スレッドを作成する" url="/en-us/api-reference/beta/api/channel_post_chatthreads" SEOKeyword="チャット スレッドを作成する, Microsoft Graph API, Microsoft Teams チャット API" SEODescription="この API を使用して、新しいチャット スレッドを作成します。" />
       </Item>
-      <Item text="チャット メッセージ" url="/en-us/api-reference/beta/resources/chatmessage" SEOKeyword="チャット メッセージ API、Microsoft Graph API、チャット メッセージ API" SEODescription="">
+      <Item text="アプリ" url="/en-us/api-reference/beta/resources/teamsapp">
+		<Item text="アプリを一覧表示する" url="/en-us/api-reference/beta/api/teams_apps_list" />
+		<Item text="アプリを追加する" url="/en-us/api-reference/beta/api/teams_apps_add" />
+		<Item text="アプリを削除する" url="/en-us/api-reference/beta/api/teams_apps_delete" />
+	  </Item>
+	  <Item text="チャット メッセージ" url="/en-us/api-reference/beta/resources/chatmessage" SEOKeyword="チャット メッセージ API、Microsoft Graph API、チャット メッセージ API" SEODescription="">
       </Item>
       <Item text="予定表" url="/en-us/api-reference/beta/resources/event" SEOKeyword="ユーザーの予定表, Microsoft Graph API, ユーザー API" SEODescription="">
         <Item text="イベントを一覧表示する" url="/en-us/api-reference/beta/api/group_list_events" SEOKeyword="イベントを一覧表示する、Microsoft Graph API、Groups API" SEODescription="イベント オブジェクトのリストを取得します。" />
@@ -5782,15 +5787,9 @@
         <Item text="ノートブックを一覧表示する" url="/en-us/api-reference/beta/api/onenote_list_notebooks" SEOKeyword="ノートブックを一覧表示する、Microsoft Graph API、ノーツ API" SEODescription="notebook(../resources/notebook.md) オブジェクトのリストを取得します。" />
         <Item text="ノートブックを作成する" url="/en-us/api-reference/beta/api/onenote_post_notebooks" SEOKeyword="ノートブックを作成する、Microsoft Graph API、ノーツ API" SEODescription="新しい OneNote ノートブックを作成します (../resources/notebook.md)。" />
       </Item>
-      <Item text="拡張プロパティ" url="/en-us/api-reference/beta/resources/extended-properties-overview" SEODescription="">
-        <Item text="単一値の拡張プロパティ" url="/en-us/api-reference/beta/resources/singlevaluelegacyextendedproperty" SEODescription="">
-          <Item text="単一値のプロパティを作成する" url="/en-us/api-reference/beta/api/singlevaluelegacyextendedproperty_post_singlevalueextendedproperties" SEODescription="" />
-          <Item text="単一値のプロパティを取得する" url="/en-us/api-reference/beta/api/singlevaluelegacyextendedproperty_get" SEODescription="" />
-        </Item>
-        <Item text="複数値の拡張プロパティ" url="/en-us/api-reference/beta/resources/multivaluelegacyextendedproperty" SEODescription="">
-          <Item text="複数値のプロパティを作成する" url="/en-us/api-reference/beta/api/multivaluelegacyextendedproperty_post_multivalueextendedproperties" SEODescription="" />
-          <Item text="複数値のプロパティを取得する" url="/en-us/api-reference/beta/api/multivaluelegacyextendedproperty_get" SEODescription="" />
-        </Item>
+	   <Item text="写真" url="/en-us/api-reference/beta/resources/profilephoto" SEOKeyword="複数のユーザー, Microsoft Graph API, ユーザー API" SEODescription="">
+        <Item text="写真を取得する" url="/en-us/api-reference/beta/api/profilephoto_get" />
+        <Item text="写真を更新する" url="/en-us/api-reference/beta/api/profilephoto_update" />
       </Item>
     </Item>
     <Item text="To-do タスク" ProdTag="Outlook" url="/en-us/api-reference/beta/resources/outlooktask">
