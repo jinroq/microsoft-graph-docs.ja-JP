@@ -178,6 +178,28 @@ GET /users/{id | userPrincipalName}/contacts/{id}
 
 返信または転送用の下書きを作成するための**コメント** パラメーター ([createReply](../api-reference/v1.0/api/message_createreply.md)、[createReplyAll](../api-reference/v1.0/api/message_createreplyall.md)、[createForward](../api-reference/v1.0/api/message_createforward.md)) は、結果メッセージの下書き本文の一部にはなりません。
 
+## <a name="bookings"></a>Bookings
+
+### <a name="errorexceededfindcountlimit-when-querying-bookingbusinesses"></a>bookingBusinesses のクエリ時の ErrorExceededFindCountLimit
+
+組織に複数の予約可能なビジネスがあり、要求を発行するアカウントが管理者でない場合に、`bookingBusinesses` のリストを取得しようとすると、次のエラー コードのエラーになります:
+
+```json
+{
+  "error": {
+    "code": "ErrorExceededFindCountLimit",
+    "message":
+      "The GetBookingMailboxes request returned too many results. Please specify a query to limit the results.",
+  }
+}
+```
+
+要求から返されるビジネスのセットは、クエリ パラメーターを含めることによって制限できます。たとえば:
+
+```
+GET https://graph.microsoft.com/beta/bookingBusinesses?query=Fabrikam
+```
+
 ## <a name="drives-files-and-content-streaming"></a>ドライブ、ファイルおよびコンテンツのストリーミング
 
 * ユーザーが自分の個人用サイトにブラウザーでアクセスする前に、Microsoft Graph でユーザーの個人ドライブに初めてアクセスした場合、401 応答になります。
@@ -246,6 +268,10 @@ GET /users/{id | userPrincipalName}/contacts/{id}
 ### <a name="limit-of-100-schema-extension-property-values-allowed-per-resource-instance"></a>スキーマ拡張機能のプロパティ値はリソースのインスタンスごとに 100 に制限されています。
 
 現在、**デバイス**、**グループ**、**ユーザー**などのディレクトリ リソースでは、1 つのリソース インスタンスで設定可能なスキーマ拡張機能のプロパティ値の合計数が 100 に制限されています。
+
+### <a name="filtering-on-schema-extension-properties-not-supported-on-all-entity-types"></a>スキーマ拡張プロパティによるフィルター処理はすべてのエンティティ タイプでサポートされているわけではありません
+
+スキーマ拡張プロパティによるフィルター処理 (`$filter` 式を使用する) は、Outlook エンティティ タイプ - **contact**、**event**、**message**、または **post** ではサポートされません。
 
 ## <a name="json-batching"></a>JSON バッチ処理
 

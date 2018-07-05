@@ -15,6 +15,7 @@ _有効なアクセス許可_は、アプリが Microsoft Graph に要求を出�
 - アプリケーションのアクセス許可の場合、アプリの_有効なアクセス許可_は、そのアクセス許可が暗示する完全なレベルの権限になります。たとえば、アプリケーションのアクセス許可として _User.ReadWrite.All_ が付与されているアプリは、組織内のすべてのユーザーのプロファイルを更新できます。 
 
 ### <a name="microsoft-graph-permission-names"></a>Microsoft Graph のアクセス許可名
+
 Microsoft Graph のアクセス許可名は、「_リソース.操作.制約_」という簡単なパターンに従います。たとえば、_User.Read_ ではサインインしているユーザーのプロファイルを読み取るためのアクセス許可を付与し、_User.ReadWrite_ ではサインインしているユーザーのプロファイルを読み取りおよび変更するためのアクセス許可を付与します。また、_Mail.Send_ ではサインインしているユーザーの代わりにメールを送信するためのアクセス許可を付与します。 
 
 名前の_制約_要素は、ディレクトリ内でアプリがアクセスする可能性のある範囲を決定します。現在、Microsoft Graph は次に示す制約をサポートしています。 
@@ -38,6 +39,41 @@ Microsoft Graph のアクセス許可名は、「_リソース.操作.制約_」
 
 適切なアクセス許可があるアプリは、ナビゲーション プロパティのリンク (たとえば、`/users/{id}/directReports` や `/groups/{id}/members`) に従って取得するユーザーまたはグループのプロファイルの読み取りが可能になります。
 
+---
+
+## <a name="application-resource-permissions"></a>アプリケーション リソース アクセス許可
+
+#### <a name="delegated-permissions"></a>委任されたアクセス許可
+
+なし。
+
+#### <a name="application-permissions"></a>アプリケーションのアクセス許可
+
+|   アクセス許可    |  表示文字列   |  説明 | 管理者の同意の要不要 |
+|:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
+| _Application.ReadWrite.All_ | 全アプリの読み取りと書き込み | 呼び出し元アプリが、ユーザーのサインインなしでアプリケーションおよびサービス プリンシパルの作成と管理 (読み取り、更新、アプリケーション シークレットの更新、および削除) をすることを可能にします。  同意付与管理やユーザーやグループへのアプリケーション割り当ては許可されません。 | はい |
+| _Application.ReadWrite.OwnedBy_ | このアプリの作成または所有するアプリを管理 | 呼び出し元アプリが、ユーザー サインインなしで他のアプリケーションおよびサービス プリンシパルを作成したり、それらのアプリケーションおよびサービス プリンシパルをあらゆる方法で管理 (読み取り、更新、アプリケーション シークレットの更新、および削除) したりできるようにします。  所有者として所有していないアプリケーションの更新はできません。 同意付与管理やユーザーやグループへのアプリケーション割り当ては許可されません。 | はい |
+
+### <a name="remarks"></a>解説
+
+_Application.ReadWrite.OwnedBy_ アクセス許可は、_Application.ReadWrite.All_ と同じ操作を許可しますが、前者の場合、それらの操作は呼び出し元アプリが所有者となっているアプリケーションおよびサービス プリンシパルに対してのみ可能です。 所有権は、ターゲットの[アプリケーション](../api-reference/beta/api/application_list_owners.md)または[サービス プリンシパル](../api-reference/beta/api/serviceprincipal_list_owners.md) リソースの `owners` ナビゲーション プロパティによって示されます。
+> 注: _Application.ReadWrite.OwnedBy_ アクセス許可を使用することにより、`GET /applications` を呼び出してアプリケーションのリストを取得しようとすると、403 のエラーになります。  呼び出し元アプリケーションの所有するアプリケーションのリストを取得するには、`GET servicePrincipals/{id}/ownedObjects` を使用してください。
+
+### <a name="example-usage"></a>使用例
+
+#### <a name="delegated"></a>委任
+
+なし。
+
+#### <a name="application"></a>アプリケーション
+
+* _Application.ReadWrite.All_: 全アプリケーションのリストを取得する (`GET /beta/applications`)
+* _Application.ReadWrite.All_: サービス プリンシパルを削除する (`DELETE /beta/servicePrincipals/{id}`)
+* _Application.ReadWrite.OwnedBy_: アプリケーションを作成する (`POST /beta/applications`)
+* _Application.ReadWrite.OwnedBy_: 呼び出し元アプリケーションによって所有されている全アプリケーションのリストを取得する (`GET /beta/servicePrincipals/{id}/ownedObjects`)
+* _Application.ReadWrite.OwnedBy_: 所有されているアプリケーションに別の所有者を追加する (`POST /applications/{id}/owners/$ref`)。  注: これにはさらに追加のアクセス許可が必要になる場合があります。
+
+---
 
 ## <a name="bookings-permissions"></a>予約のアクセス許可
 
@@ -62,8 +98,6 @@ Microsoft Graph のアクセス許可名は、「_リソース.操作.制約_」
 * _Bookings.ReadWrite.Appointments_: ある予約業務のサービスの予定を作成します (`POST /bookingBusinesses/{id}/appointments`)。
 * _Bookings.ReadWrite.All_: 指定した予約業務の新しいサービスを作成します (`POST /bookingBusinesses/{id}/services`)。
 * _Bookings.Manage_: この業務のスケジュール設定ページを外部の顧客が使用できるようにします (`POST /bookingBusinesses/{id}/publish`)。
-
----
 
 ## <a name="calendars-permissions"></a>カレンダーのアクセス許可
 
@@ -175,53 +209,7 @@ Microsoft アカウントでは、委任されたアクセス許可の _Contacts
 
 より複雑な複数のアクセス許可を伴うシナリオについては、「[アクセス許可のシナリオ](#permission-scenarios)」を参照してください。
 
-
-## <a name="intune-device-management-permissions"></a>Intune デバイス管理のアクセス許可
-
-#### <a name="delegated-permissions"></a>委任されたアクセス許可
-
-|アクセス許可    |表示文字列   |説明 |管理者の同意が必要 |
-|:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
-|_DeviceManagementApps.Read.All_ | Microsoft Intune アプリの読み取り | アプリで、Microsoft Intune で管理されるアプリ、アプリの構成、アプリ保護ポリシーについて、プロパティ、グループの割り当て、状態を読み取れるようにします。 | 必要 |
-|_DeviceManagementApps.ReadWrite.All_ | Microsoft Intune アプリの読み取りおよび書き込み | アプリで、Microsoft Intune で管理されるアプリ、アプリの構成、アプリ保護ポリシーについて、プロパティ、グループの割り当て、状態を読み書きできるようにします。 | はい |
-|_DeviceManagementConfiguration.Read.All_ | Microsoft Intune のデバイスの構成とポリシーの読み取り | アプリで、Microsoft Intune で管理されるデバイス構成のプロパティおよびデバイスのコンプライアンス ポリシーとそのポリシーのグループへの割り当てを読み取れるようにします。 | 必要 |
-|_DeviceManagementConfiguration.ReadWrite.All_ | Microsoft Intune のデバイスの構成とポリシーの読み取りおよび書き込み  | アプリで、Microsoft Intune で管理されるデバイスの構成のプロパティおよびデバイスのコンプライアンス ポリシーとそのポリシーのグループへの割り当てを読み書きできるようにします。 | はい |
-|_DeviceManagementManagedDevices.PrivilegedOperations.All_ | Microsoft Intune デバイスでユーザーに影響を与えるリモート操作を実行する | アプリで、デバイスのワイプや Microsoft Intune で管理されるデバイスのパスコードのリセットなど、影響の大きいリモート操作を実行できるようにします。 | はい |
-|_DeviceManagementManagedDevices.Read.All_ | Microsoft Intune デバイスの読み取り | アプリで、Microsoft Intune で管理されるデバイスのプロパティを読み取れるようにします。 | 必要 |
-|_DeviceManagementManagedDevices.ReadWrite.All_ | Microsoft Intune デバイスの読み取りおよび書き込み | アプリで、Microsoft Intune で管理されるデバイスのプロパティを読み書きできるようにします。リモート ワイプやデバイスの所有者のパスワードのリセットなど、影響の大きい操作は許可されません。 | はい |
-|_DeviceManagementRBAC.Read.All_ | Microsoft Intune RBAC の設定の読み取り | アプリで、Microsoft Intune のロール ベースのアクセス制御 (RBAC) の設定に関連するプロパティを読み取れるようにします。 | 必要 |
-|_DeviceManagementRBAC.ReadWrite.All_ | Microsoft Intune RBAC の設定の読み取りおよび書き込み | アプリで、Microsoft Intune のロール ベースのアクセス制御 (RBAC) の設定に関連するプロパティを読み書きできるようにします。 | はい |
-|_DeviceManagementServiceConfig.Read.All_ | Microsoft Intune 構成の読み取り | アプリで、デバイスの登録やサード パーティのサービスの接続構成を含む Intune サービスのプロパティを読み取れるようにします。 | はい |
-|_DeviceManagementServiceConfig.ReadWrite.All_ | Microsoft Intune 構成の読み取りおよび書き込み | アプリで、デバイスの登録やサード パーティのサービスの接続構成を含む Microsoft Intune サービスのプロパティを読み書きできるようにします。 | はい |
-
-#### <a name="application-permissions"></a>アプリケーションのアクセス許可
-
-なし。
-
-### <a name="remarks"></a>注釈
-
-> **注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
-
-これらのアクセス許可は、職場または学校アカウントでのみ有効です。
-
-### <a name="example-usage"></a>使用例
-
-#### <a name="application"></a>Application
-
-* _DeviceManagementServiceConfiguration.Read.All_:Intune サブスクリプションの現在の状態を確認します (`GET /deviceManagement/subscriptionState`)。
-* _DeviceManagementServiceConfiguration.ReadWrite.All_:新しい条項および条件を作成します (`POST /deviceManagement/termsAndConditions`)。
-* _DeviceManagementConfiguration.Read.All_:デバイス構成の状態を検索します (`GET /deviceManagement/deviceConfigurations/{id}/deviceStatuses`)。
-* _DeviceManagementConfiguration.ReadWrite.All_:デバイス コンプライアンス ポリシーをグループに割り当てます (`POST deviceCompliancePolicies/{id}/assign`)。
-* _DeviceManagementApps.Read.All_:Intune に公開したすべての Windows ストア アプリを検索します (`GET /deviceAppManagement/mobileApps?$filter=isOf('microsoft.graph.windowsStoreApp')`)。
-* _DeviceManagementApps.ReadWrite.All_:新しいアプリケーションを公開します (`POST /deviceAppManagement/mobileApps`)。
-* _DeviceManagementRBAC.Read.All_:ロールの割り当てを名前で検索します (`GET /deviceManagement/roleAssignments?$filter=displayName eq 'My Role Assignment'`)。
-* _DeviceManagementRBAC.ReadWrite.All_:新しいカスタム ロールを作成します (`POST /deviceManagement/roleDefinitions`)。
-* _DeviceManagementManagedDevices.Read.All_:管理対象デバイスを名前で検索します (`GET /managedDevices/?$filter=deviceName eq 'My Device'`)。
-* _DeviceManagementManagedDevices.ReadWrite.All_:管理対象デバイスを削除します (`DELETE /managedDevices/{id}`)。
-* _DeviceManagementManagedDevices.PrivilegedOperations.All_:ユーザーの管理対象デバイスのパスコードをリセットします (`POST /managedDevices/{id}/resetPasscode`)。
-
-より複雑な複数のアクセス許可を伴うシナリオについては、「[アクセス許可のシナリオ](#permission-scenarios)」を参照してください。
-
+---
 
 ## <a name="directory-permissions"></a>ディレクトリのアクセス許可
 
@@ -318,6 +306,8 @@ _Directory.ReadWrite.All_ アクセス許可は、次に示す特権を付与し
 
 より複雑な複数のアクセス許可を伴うシナリオについては、「[アクセス許可のシナリオ](#permission-scenarios)」を参照してください。
 
+---
+
 ## <a name="files-permissions"></a>ファイルのアクセス許可
 
 #### <a name="delegated-permissions"></a>委任されたアクセス許可
@@ -360,6 +350,7 @@ _Directory.ReadWrite.All_ アクセス許可は、次に示す特権を付与し
 
 より複雑な複数のアクセス許可を伴うシナリオについては、「[アクセス許可のシナリオ](#permission-scenarios)」を参照してください。
 
+---
 
 ## <a name="group-permissions"></a>グループのアクセス許可
 
@@ -439,6 +430,7 @@ _IdentityRiskEvent.Read.All_ は、職場または学校アカウントでのみ
  
 より複雑な複数のアクセス許可を伴うシナリオについては、「[アクセス許可のシナリオ](#permission-scenarios)」を参照してください。
 
+---
 
 ## <a name="identity-provider-permissions"></a>ID プロバイダーのアクセス許可
 
@@ -467,6 +459,55 @@ _IdentityProvider.Read.All_ と _IdentityProvider.ReadWrite.All_ は、職場ま
 より複雑な複数のアクセス許可を伴うシナリオについては、「[アクセス許可のシナリオ](#permission-scenarios)」を参照してください。
 
 ---
+
+## <a name="intune-device-management-permissions"></a>Intune デバイス管理のアクセス許可
+
+#### <a name="delegated-permissions"></a>委任されたアクセス許可
+
+|アクセス許可    |表示文字列   |説明 |管理者の同意が必要 |
+|:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
+|_DeviceManagementApps.Read.All_ | Microsoft Intune アプリの読み取り | アプリで、Microsoft Intune で管理されるアプリ、アプリの構成、アプリ保護ポリシーについて、プロパティ、グループの割り当て、状態を読み取れるようにします。 | 必要 |
+|_DeviceManagementApps.ReadWrite.All_ | Microsoft Intune アプリの読み取りおよび書き込み | アプリで、Microsoft Intune で管理されるアプリ、アプリの構成、アプリ保護ポリシーについて、プロパティ、グループの割り当て、状態を読み書きできるようにします。 | はい |
+|_DeviceManagementConfiguration.Read.All_ | Microsoft Intune のデバイスの構成とポリシーの読み取り | アプリで、Microsoft Intune で管理されるデバイス構成のプロパティおよびデバイスのコンプライアンス ポリシーとそのポリシーのグループへの割り当てを読み取れるようにします。 | 必要 |
+|_DeviceManagementConfiguration.ReadWrite.All_ | Microsoft Intune のデバイスの構成とポリシーの読み取りおよび書き込み  | アプリで、Microsoft Intune で管理されるデバイスの構成のプロパティおよびデバイスのコンプライアンス ポリシーとそのポリシーのグループへの割り当てを読み書きできるようにします。 | はい |
+|_DeviceManagementManagedDevices.PrivilegedOperations.All_ | Microsoft Intune デバイスでユーザーに影響を与えるリモート操作を実行する | アプリで、デバイスのワイプや Microsoft Intune で管理されるデバイスのパスコードのリセットなど、影響の大きいリモート操作を実行できるようにします。 | はい |
+|_DeviceManagementManagedDevices.Read.All_ | Microsoft Intune デバイスの読み取り | アプリで、Microsoft Intune で管理されるデバイスのプロパティを読み取れるようにします。 | 必要 |
+|_DeviceManagementManagedDevices.ReadWrite.All_ | Microsoft Intune デバイスの読み取りおよび書き込み | アプリで、Microsoft Intune で管理されるデバイスのプロパティを読み書きできるようにします。リモート ワイプやデバイスの所有者のパスワードのリセットなど、影響の大きい操作は許可されません。 | はい |
+|_DeviceManagementRBAC.Read.All_ | Microsoft Intune RBAC の設定の読み取り | アプリで、Microsoft Intune のロール ベースのアクセス制御 (RBAC) の設定に関連するプロパティを読み取れるようにします。 | 必要 |
+|_DeviceManagementRBAC.ReadWrite.All_ | Microsoft Intune RBAC の設定の読み取りおよび書き込み | アプリで、Microsoft Intune のロール ベースのアクセス制御 (RBAC) の設定に関連するプロパティを読み書きできるようにします。 | はい |
+|_DeviceManagementServiceConfig.Read.All_ | Microsoft Intune 構成の読み取り | アプリで、デバイスの登録やサード パーティのサービスの接続構成を含む Intune サービスのプロパティを読み取れるようにします。 | はい |
+|_DeviceManagementServiceConfig.ReadWrite.All_ | Microsoft Intune 構成の読み取りおよび書き込み | アプリで、デバイスの登録やサード パーティのサービスの接続構成を含む Microsoft Intune サービスのプロパティを読み書きできるようにします。 | はい |
+
+#### <a name="application-permissions"></a>アプリケーションのアクセス許可
+
+なし。
+
+### <a name="remarks"></a>注釈
+
+> **注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
+
+これらのアクセス許可は、職場または学校アカウントでのみ有効です。
+
+### <a name="example-usage"></a>使用例
+
+#### <a name="delegated"></a>委任
+
+* _DeviceManagementServiceConfiguration.Read.All_:Intune サブスクリプションの現在の状態を確認します (`GET /deviceManagement/subscriptionState`)。
+* _DeviceManagementServiceConfiguration.ReadWrite.All_:新しい条項および条件を作成します (`POST /deviceManagement/termsAndConditions`)。
+* _DeviceManagementConfiguration.Read.All_:デバイス構成の状態を検索します (`GET /deviceManagement/deviceConfigurations/{id}/deviceStatuses`)。
+* _DeviceManagementConfiguration.ReadWrite.All_:デバイス コンプライアンス ポリシーをグループに割り当てます (`POST deviceCompliancePolicies/{id}/assign`)。
+* _DeviceManagementApps.Read.All_:Intune に公開したすべての Windows ストア アプリを検索します (`GET /deviceAppManagement/mobileApps?$filter=isOf('microsoft.graph.windowsStoreApp')`)。
+* _DeviceManagementApps.ReadWrite.All_:新しいアプリケーションを公開します (`POST /deviceAppManagement/mobileApps`)。
+* _DeviceManagementRBAC.Read.All_:ロールの割り当てを名前で検索します (`GET /deviceManagement/roleAssignments?$filter=displayName eq 'My Role Assignment'`)。
+* _DeviceManagementRBAC.ReadWrite.All_:新しいカスタム ロールを作成します (`POST /deviceManagement/roleDefinitions`)。
+* _DeviceManagementManagedDevices.Read.All_:管理対象デバイスを名前で検索します (`GET /managedDevices/?$filter=deviceName eq 'My Device'`)。
+* _DeviceManagementManagedDevices.ReadWrite.All_:管理対象デバイスを削除します (`DELETE /managedDevices/{id}`)。
+* _DeviceManagementManagedDevices.PrivilegedOperations.All_:ユーザーの管理対象デバイスのパスコードをリセットします (`POST /managedDevices/{id}/resetPasscode`)。
+
+より複雑な複数のアクセス許可を伴うシナリオについては、「[アクセス許可のシナリオ](#permission-scenarios)」を参照してください。
+
+---
+
 ## <a name="mail-permissions"></a>メールのアクセス許可
 
 #### <a name="delegated-permissions"></a>委任されたアクセス許可
