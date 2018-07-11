@@ -83,6 +83,29 @@ Microsoft Teams と Office 365 グループは、[同じような機能を共有
 デルタ クエリの使用に関する既知の問題については、この記事の[「デルタ クエリ」セクション](#delta-query)を参照してください。
 
 
+## <a name="bookings"></a>予約
+
+### <a name="errorexceededfindcountlimit-when-querying-bookingbusinesses"></a>bookingBusinesses のクエリ時の ErrorExceededFindCountLimit
+
+組織が複数のビジネスを予約しており、要求を発行するアカウントが管理者でない場合に、`bookingBusinesses` のリストを取得しようとすると、次のエラー コードのエラーになります:
+
+```json
+{
+  "error": {
+    "code": "ErrorExceededFindCountLimit",
+    "message":
+      "The GetBookingMailboxes request returned too many results. Please specify a query to limit the results.",
+  }
+}
+```
+
+回避策としては、`query` パラメーターを含めることによって、要求から返されるビジネスのセットを制限できます。たとえば:
+
+```
+GET https://graph.microsoft.com/beta/bookingBusinesses?query=Fabrikam
+```
+
+
 ## <a name="calendars"></a>予定表
 
 ### <a name="adding-and-accessing-ics-based-calendars-in-users-mailbox"></a>ユーザーのメールボックスに ICS ベースの予定表を追加してアクセスする
@@ -178,27 +201,6 @@ GET /users/{id | userPrincipalName}/contacts/{id}
 
 返信または転送用の下書きを作成するための**コメント** パラメーター ([createReply](../api-reference/v1.0/api/message_createreply.md)、[createReplyAll](../api-reference/v1.0/api/message_createreplyall.md)、[createForward](../api-reference/v1.0/api/message_createforward.md)) は、結果メッセージの下書き本文の一部にはなりません。
 
-## <a name="bookings"></a>Bookings
-
-### <a name="errorexceededfindcountlimit-when-querying-bookingbusinesses"></a>bookingBusinesses のクエリ時の ErrorExceededFindCountLimit
-
-組織に複数の予約可能なビジネスがあり、要求を発行するアカウントが管理者でない場合に、`bookingBusinesses` のリストを取得しようとすると、次のエラー コードのエラーになります:
-
-```json
-{
-  "error": {
-    "code": "ErrorExceededFindCountLimit",
-    "message":
-      "The GetBookingMailboxes request returned too many results. Please specify a query to limit the results.",
-  }
-}
-```
-
-要求から返されるビジネスのセットは、クエリ パラメーターを含めることによって制限できます。たとえば:
-
-```
-GET https://graph.microsoft.com/beta/bookingBusinesses?query=Fabrikam
-```
 
 ## <a name="drives-files-and-content-streaming"></a>ドライブ、ファイルおよびコンテンツのストリーミング
 

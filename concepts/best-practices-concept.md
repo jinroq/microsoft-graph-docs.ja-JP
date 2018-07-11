@@ -15,7 +15,7 @@ Microsoft Graph のデータにアクセスするには、アプリケーショ�
 - HTTP *Authorization* 要求ヘッダー (*Bearer* トークンとして)
 - グラフ クライアント コンストラクター (Microsoft Graph クライアント ライブラリを使用する場合)
 
-Microsoft Authentication Library API ([MSAL](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-v2-libraries)) を使用して、Microsoft Graph へのアクセス トークンを取得します。
+Microsoft Authentication Library API ([MSAL](https://docs.microsoft.com/ja-JP/azure/active-directory/develop/active-directory-v2-libraries)) を使用して、Microsoft Graph へのアクセス トークンを取得します。
 
 ## <a name="consent-and-authorization"></a>同意と承認
 
@@ -30,8 +30,8 @@ Microsoft Authentication Library API ([MSAL](https://docs.microsoft.com/en-us/az
 - **慎重にアプリを構成する**。 これは、エンドユーザーや管理者のエクスペリエンス、およびアプリケーションの導入とセキュリティに直接影響します。 例:
 
     - アプリケーションのプライバシーに関する声明、使用条件、名前、ロゴ、ドメインは、同意その他の操作で表示されるので、エンドユーザーが理解できるように慎重に構成する必要があります。
-    - アプリケーションに同意するのがどのようなユーザーなのか (エンドユーザーか管理者か) を考慮した上で、アプリケーションが[適切なアクセス許可を要求する](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-v2-scopes)ように構成します。
-    - [静的、動的、増分同意](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-v2-compare#incremental-and-dynamic-consent)の違いを確実に理解している必要があります。
+    - アプリケーションに同意するのがどのようなユーザーなのか (エンドユーザーか管理者か) を考慮した上で、アプリケーションが[適切なアクセス許可を要求する](https://docs.microsoft.com/ja-JP/azure/active-directory/develop/active-directory-v2-scopes)ように構成します。
+    - [静的、動的、増分同意](https://docs.microsoft.com/ja-JP/azure/active-directory/develop/active-directory-v2-compare#incremental-and-dynamic-consent)の違いを確実に理解している必要があります。
 
 - **マルチテナント アプリケーションを考慮する**。 ユーザーによって、アプリケーションや同意のコントロールはまちまちで、その状態もさまざまであることを想定します。 例:
 
@@ -80,9 +80,10 @@ GET https://graph.microsoft.com/v1.0/me/messages
 
 >**注:** アプリケーションが不明なメンバーを処理できるようになっている場合、次のように HTTP *prefer* 要求ヘッダーを使用してオプトインする必要があります。`Prefer: include-unknown-enum-members`。
 
+
 ## <a name="storing-data-locally"></a>ローカルにデータを保存する
 
-アプリケーションは、Microsoft Graph に対して呼び出しを実行し、必要に応じてリアルタイムでデータを取得するのが理想的です。 特定のシナリオに必要な場合に限って、データをローカルにキャッシュし保存するようにします。そのようなユース ケースが使用条件やプライバシー ポリシーの対象となっている場合は、[Microsoft Graph の利用規約](https://developer.microsoft.com/en-us/graph/docs/misc/terms-of-use)に違反しないようにする必要があります。 適切な保持ポリシーと削除ポリシーをアプリケーションに実装する必要もあります。
+アプリケーションは、Microsoft Graph に対して呼び出しを実行し、必要に応じてリアルタイムでデータを取得するのが理想的です。 特定のシナリオに必要な場合に限って、データをローカルにキャッシュし保存するようにします。そのようなユース ケースが使用条件やプライバシー ポリシーの対象となっている場合は、[Microsoft Graph の利用規約](https://developer.microsoft.com/ja-JP/graph/docs/misc/terms-of-use)に違反しないようにする必要があります。 適切な保持ポリシーと削除ポリシーをアプリケーションに実装する必要もあります。
 
 ## <a name="optimizations"></a>最適化
 
@@ -133,4 +134,6 @@ JSON のバッチ処理を使用すると、複数の要求を単一の JSON オ
 
 - DNS TTL を優先し、接続 TTL をそれに合わせて設定します。 これにより、フェールオーバーの際の可用性を確保できます。
 - アドバタイズされたすべての DNS 応答に対して接続を開きます。
-- HTTP 応答ヘッダーの *request-id* と *timestamp* は常にログします。 これは、Stack Overflow や Microsoft カスタマー サポートで問題をエスカレーションしたりレポートしたりする際に必要になります。
+- 一意の GUID を生成し、Microsoft Graph Rest 要求ごとに送信します。 ユーザーが Microsoft Graph に関する問題を報告する必要がある場合、このようにすると、Microsoft はエラーを容易に調査できるようになります。
+  - Microsoft Graph への要求ごとに一意の GUID が生成され、その GUID は `client-request-id` HTTP 要求ヘッダー内に送信され、アプリケーションのログにも記録されます。
+  - HTTP 応答ヘッダーからの `request-id`、`timestamp`、および `x-ms-ags-diagnostic` は、常に記録されます。 これらは、`client-request-id` と共に、[Stack Overflow](https://stackoverflow.com/questions/tagged/microsoft-graph) または Microsoft サポートに問題を報告する際に必要です。

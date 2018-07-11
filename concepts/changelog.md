@@ -12,6 +12,24 @@ Microsoft Graph API に関する既知の問題の詳細については、「[�
 | :-------------- | :---------- | :--------------------------------------- |
 | 変更          | ベータ版        | [application](https://graph.microsoft.io/ja-JP/docs/api-reference/beta/resources/application) API と [servicePrincipal](https://graph.microsoft.io/ja-JP/docs/api-reference/beta/resources/serviceprincipal) API は、プレビュー (ベータ版) で更新されます。 最初の一連の変更は、2018 年 7 月 16 日に適用されます。 変更には、プロパティの名前変更と再構築が含まれます。 既存のプロパティのほとんどは、変更が完了するまで使用可能になりません。 新しいプロパティがいくつか追加される予定です。 変更は、v1.0 へのリリース前にプレビュー (ベータ版) でリリースされます。 |
 
+### <a name="microsoft-teams-apis"></a>Microsoft Teams API
+| **変更の種類** | **バージョン**   | **説明**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+|削除|ベータ版|DELETE /groups/{id}/team/channels/{id} は削除されました。代わりに DELETE /teams/{id}/channels/{id} を使用してください。 |
+|削除|ベータ版|GET /groups/{id}/team/channels/{id} は削除されました。代わりに　GET /teams/{id}/channels/{id} を使用してください。 |
+|削除|ベータ版|PATCH /groups/{id}/team/channels/{id} は削除されました。代わりに PATCH /teams/{id}/channels/{id} を使用してください。 |
+|削除|ベータ版|POST /groups/{id}/team/channels/{id}/chatthreads は削除されました。代わりに POST /teams/{id}/channels/{id}/chatthreads を使用してください。 |
+|削除|ベータ版|GET /groups/{id}/team/channels は削除されました。代わりに GET /teams/{id}/channels を使用してください。 |
+|削除|ベータ版|DELETE /groups/{id}/channels/{id} は削除されました。代わりに DELETE /teams/{id}/channels/{id} を使用してください。 |
+|削除|ベータ版|GET /groups/{id}/channels/{id} は削除されました。代わりに GET /teams/{id}/channels/{id} を使用してください。 |
+|削除|ベータ版|PATCH /groups/{id}/channels/{id} は削除されました。代わりに PATCH /teams/{id}/channels/{id} を使用してください。 |
+|削除|ベータ版|POST /groups/{id}/channels/{id}/chatthreads は削除されました。代わりに POST /teams/{id}/channels/{id}/chatthreads を使用してください。 |
+|削除|ベータ版|GET /groups/{id}/channels は削除されました。代わりに GET /teams/{id}/channels を使用してください。 |
+|削除|ベータ版|POST /groups/{id}/team/channels は削除されました。代わりに POST /teams/{id}/channels を使用してください。 |
+|削除|ベータ版|GET /groups/{id}/team は削除されました。代わりに GET /teams/{id} を使用してください。 |
+|削除|ベータ版|PATCH /groups/{id}/team は削除されました。代わりに PATCH /teams/{id} を使用してください。 |
+
+
 ## <a name="june-2018"></a>2018 年 6 月
 
 ### <a name="directory-apis"></a>ディレクトリ API
