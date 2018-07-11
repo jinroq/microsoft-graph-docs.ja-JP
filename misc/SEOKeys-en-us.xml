@@ -404,36 +404,8 @@
 			</Item>
 		</Item>
 	</Item>
-   <Item text="デバイスとアプリ" ProdTag="Intune" url="/en-us/api-reference/v1.0/resources/intune_graph_overview">
+    <Item text="デバイスとアプリ" ProdTag="Intune" url="/en-us/api-reference/v1.0/resources/intune_graph_overview">
       <Item text="アプリ管理" url="/en-us/api-reference/v1.0/resources/intune_apps_app_conceptual">
-        <Item text="すべてのデバイスの割り当て先" url="/en-us/api-reference/v1.0/resources/intune_apps_alldevicesassignmenttarget" />
-        <Item text="すべてのライセンス ユーザーの割り当て先" url="/en-us/api-reference/v1.0/resources/intune_books_alllicensedusersassignmenttarget" />
-        <Item text="すべてのライセンス ユーザーの割り当て先" url="/en-us/api-reference/v1.0/resources/intune_apps_alllicensedusersassignmenttarget" />
-        <Item text="Android for Work アプリの構成スキーマ アイテム" url="/en-us/api-reference/v1.0/resources/intune_androidforwork_androidforworkappconfigurationschemaitem" />
-        <Item text="Android for Work アプリの構成スキーマ" url="/en-us/api-reference/v1.0/resources/intune_androidforwork_androidforworkappconfigurationschema">
-          <Item text="リスト" url="/en-us/api-reference/v1.0/api/intune_androidforwork_androidforworkappconfigurationschema_list" />
-          <Item text="取得" url="/en-us/api-reference/v1.0/api/intune_androidforwork_androidforworkappconfigurationschema_get" />
-          <Item text="作成" url="/en-us/api-reference/v1.0/api/intune_androidforwork_androidforworkappconfigurationschema_create" />
-          <Item text="削除" url="/en-us/api-reference/v1.0/api/intune_androidforwork_androidforworkappconfigurationschema_delete" />
-          <Item text="更新" url="/en-us/api-reference/v1.0/api/intune_androidforwork_androidforworkappconfigurationschema_update" />
-        </Item>
-        <Item text="Android for Work 登録プロファイル" url="/en-us/api-reference/v1.0/resources/intune_androidforwork_androidforworkenrollmentprofile">
-          <Item text="一覧表示" url="/en-us/api-reference/v1.0/api/intune_androidforwork_androidforworkenrollmentprofile_list" />
-          <Item text="取得" url="/en-us/api-reference/v1.0/api/intune_androidforwork_androidforworkenrollmentprofile_get" />
-          <Item text="作成" url="/en-us/api-reference/v1.0/api/intune_androidforwork_androidforworkenrollmentprofile_create" />
-          <Item text="削除" url="/en-us/api-reference/v1.0/api/intune_androidforwork_androidforworkenrollmentprofile_delete" />
-          <Item text="更新" url="/en-us/api-reference/v1.0/api/intune_androidforwork_androidforworkenrollmentprofile_update" />
-          <Item text="revokeToken アクション" url="/en-us/api-reference/v1.0/api/intune_androidforwork_androidforworkenrollmentprofile_revoketoken" />
-          <Item text="createToken アクション" url="/en-us/api-reference/v1.0/api/intune_androidforwork_androidforworkenrollmentprofile_createtoken" />
-        </Item>
-        <Item text="Android for Work の設定" url="/en-us/api-reference/v1.0/resources/intune_androidforwork_androidforworksettings">
-          <Item text="取得" url="/en-us/api-reference/v1.0/api/intune_androidforwork_androidforworksettings_get" />
-          <Item text="更新" url="/en-us/api-reference/v1.0/api/intune_androidforwork_androidforworksettings_update" />
-          <Item text="requestSignupUrl アクション" url="/en-us/api-reference/v1.0/api/intune_androidforwork_androidforworksettings_requestsignupurl" />
-          <Item text="completeSignup アクション" url="/en-us/api-reference/v1.0/api/intune_androidforwork_androidforworksettings_completesignup" />
-          <Item text="syncApps アクション" url="/en-us/api-reference/v1.0/api/intune_androidforwork_androidforworksettings_syncapps" />
-          <Item text="アクションのバインドの解除" url="/en-us/api-reference/v1.0/api/intune_androidforwork_androidforworksettings_unbind" />
-        </Item>
         <Item text="Android LOB アプリ" url="/en-us/api-reference/v1.0/resources/intune_apps_androidlobapp">
           <Item text="リスト" url="/en-us/api-reference/v1.0/api/intune_apps_androidlobapp_list" />
           <Item text="取得" url="/en-us/api-reference/v1.0/api/intune_apps_androidlobapp_get" />
@@ -449,38 +421,21 @@
           <Item text="削除" url="/en-us/api-reference/v1.0/api/intune_apps_androidstoreapp_delete" />
           <Item text="更新" url="/en-us/api-reference/v1.0/api/intune_apps_androidstoreapp_update" />
         </Item>
-        <Item text="デバイスおよびアプリ管理の割り当て先" url="/en-us/api-reference/v1.0/resources/intune_apps_deviceandappmanagementassignmenttarget" />
-        <Item text="デバイスおよびアプリ管理の割り当て先" url="/en-us/api-reference/v1.0/resources/intune_books_deviceandappmanagementassignmenttarget" />
-        <Item text="デバイス アプリの管理" url="/en-us/api-reference/v1.0/resources/intune_apps_deviceappmanagement">
-          <Item text="取得" url="/en-us/api-reference/v1.0/api/intune_apps_deviceappmanagement_get" />
-          <Item text="更新" url="/en-us/api-reference/v1.0/api/intune_apps_deviceappmanagement_update" />
-        </Item>
-        <Item text="デバイス アプリの管理" url="/en-us/api-reference/v1.0/resources/intune_books_deviceappmanagement">
-          <Item text="取得" url="/en-us/api-reference/v1.0/api/intune_books_deviceappmanagement_get" />
-          <Item text="更新" url="/en-us/api-reference/v1.0/api/intune_books_deviceappmanagement_update" />
-        </Item>
-        <Item text="デバイスのインストール状態" url="/en-us/api-reference/v1.0/resources/intune_books_deviceinstallstate">
+        <Item text="アプリの構成設定アイテム" url="/en-us/api-reference/v1.0/resources/intune_apps_appconfigurationsettingitem" />
+        <Item text="デバイスのインストール状況" url="/en-us/api-reference/v1.0/resources/intune_books_deviceinstallstate">
           <Item text="リスト" url="/en-us/api-reference/v1.0/api/intune_books_deviceinstallstate_list" />
           <Item text="取得" url="/en-us/api-reference/v1.0/api/intune_books_deviceinstallstate_get" />
           <Item text="作成" url="/en-us/api-reference/v1.0/api/intune_books_deviceinstallstate_create" />
           <Item text="削除" url="/en-us/api-reference/v1.0/api/intune_books_deviceinstallstate_delete" />
           <Item text="更新" url="/en-us/api-reference/v1.0/api/intune_books_deviceinstallstate_update" />
         </Item>
-        <Item text="デバイスの管理" url="/en-us/api-reference/v1.0/resources/intune_androidforwork_devicemanagement">
-          <Item text="取得" url="/en-us/api-reference/v1.0/api/intune_androidforwork_devicemanagement_get" />
-          <Item text="更新" url="/en-us/api-reference/v1.0/api/intune_androidforwork_devicemanagement_update" />
-        </Item>
         <Item text="電子書籍のインストールの概要" url="/en-us/api-reference/v1.0/resources/intune_books_ebookinstallsummary">
           <Item text="取得" url="/en-us/api-reference/v1.0/api/intune_books_ebookinstallsummary_get" />
           <Item text="更新" url="/en-us/api-reference/v1.0/api/intune_books_ebookinstallsummary_update" />
         </Item>
-        <Item text="除外グループの割り当て先" url="/en-us/api-reference/v1.0/resources/intune_apps_exclusiongroupassignmenttarget" />
-        <Item text="除外グループの割り当て先" url="/en-us/api-reference/v1.0/resources/intune_books_exclusiongroupassignmenttarget" />
         <Item text="ファイル暗号化情報" url="/en-us/api-reference/v1.0/resources/intune_apps_fileencryptioninfo" />
-        <Item text="グループの割り当て先" url="/en-us/api-reference/v1.0/resources/intune_apps_groupassignmenttarget" />
-        <Item text="グループの割り当て先" url="/en-us/api-reference/v1.0/resources/intune_books_groupassignmenttarget" />
+        <Item text="インストール状況" url="/en-us/api-reference/v1.0/resources/intune_books_installstate" />
         <Item text="iOS デバイスの種類" url="/en-us/api-reference/v1.0/resources/intune_apps_iosdevicetype" />
-        <Item text="iOS LOB アプリの割り当ての設定" url="/en-us/api-reference/v1.0/resources/intune_apps_ioslobappassignmentsettings" />
         <Item text="iOS LOB アプリ" url="/en-us/api-reference/v1.0/resources/intune_apps_ioslobapp">
           <Item text="リスト" url="/en-us/api-reference/v1.0/api/intune_apps_ioslobapp_list" />
           <Item text="取得" url="/en-us/api-reference/v1.0/api/intune_apps_ioslobapp_get" />
@@ -488,8 +443,15 @@
           <Item text="削除" url="/en-us/api-reference/v1.0/api/intune_apps_ioslobapp_delete" />
           <Item text="更新" url="/en-us/api-reference/v1.0/api/intune_apps_ioslobapp_update" />
         </Item>
+        <Item text="iOS LOB アプリの割り当ての設定" url="/en-us/api-reference/v1.0/resources/intune_apps_ioslobappassignmentsettings" />
         <Item text="最小構成の iOS オペレーティング システム" url="/en-us/api-reference/v1.0/resources/intune_apps_iosminimumoperatingsystem" />
-        <Item text="iOS ストア アプリの割り当ての設定" url="/en-us/api-reference/v1.0/resources/intune_apps_iosstoreappassignmentsettings" />
+        <Item text="iOS モバイル アプリの構成" url="/en-us/api-reference/v1.0/resources/intune_apps_iosmobileappconfiguration">
+          <Item text="リスト" url="/en-us/api-reference/v1.0/api/intune_apps_iosmobileappconfiguration_list" />
+          <Item text="取得" url="/en-us/api-reference/v1.0/api/intune_apps_iosmobileappconfiguration_get" />
+          <Item text="作成" url="/en-us/api-reference/v1.0/api/intune_apps_iosmobileappconfiguration_create" />
+          <Item text="削除" url="/en-us/api-reference/v1.0/api/intune_apps_iosmobileappconfiguration_delete" />
+          <Item text="更新" url="/en-us/api-reference/v1.0/api/intune_apps_iosmobileappconfiguration_update" />
+        </Item>
         <Item text="iOS ストア アプリ" url="/en-us/api-reference/v1.0/resources/intune_apps_iosstoreapp">
           <Item text="リスト" url="/en-us/api-reference/v1.0/api/intune_apps_iosstoreapp_list" />
           <Item text="取得" url="/en-us/api-reference/v1.0/api/intune_apps_iosstoreapp_get" />
@@ -497,13 +459,21 @@
           <Item text="削除" url="/en-us/api-reference/v1.0/api/intune_apps_iosstoreapp_delete" />
           <Item text="更新" url="/en-us/api-reference/v1.0/api/intune_apps_iosstoreapp_update" />
         </Item>
-        <Item text="iOS VPP アプリの割り当ての設定" url="/en-us/api-reference/v1.0/resources/intune_apps_iosvppappassignmentsettings" />
+        <Item text="iOS ストア アプリの割り当ての設定" url="/en-us/api-reference/v1.0/resources/intune_apps_iosstoreappassignmentsettings" />
         <Item text="iOS VPP アプリ" url="/en-us/api-reference/v1.0/resources/intune_apps_iosvppapp">
           <Item text="リスト" url="/en-us/api-reference/v1.0/api/intune_apps_iosvppapp_list" />
           <Item text="取得" url="/en-us/api-reference/v1.0/api/intune_apps_iosvppapp_get" />
           <Item text="作成" url="/en-us/api-reference/v1.0/api/intune_apps_iosvppapp_create" />
           <Item text="削除" url="/en-us/api-reference/v1.0/api/intune_apps_iosvppapp_delete" />
           <Item text="更新" url="/en-us/api-reference/v1.0/api/intune_apps_iosvppapp_update" />
+        </Item>
+        <Item text="iOS VPP アプリの割り当ての設定" url="/en-us/api-reference/v1.0/resources/intune_apps_iosvppappassignmentsettings" />
+        <Item text="iOS VPP の電子書籍" url="/en-us/api-reference/v1.0/resources/intune_books_iosvppebook">
+          <Item text="リスト" url="/en-us/api-reference/v1.0/api/intune_books_iosvppebook_list" />
+          <Item text="取得" url="/en-us/api-reference/v1.0/api/intune_books_iosvppebook_get" />
+          <Item text="作成" url="/en-us/api-reference/v1.0/api/intune_books_iosvppebook_create" />
+          <Item text="削除" url="/en-us/api-reference/v1.0/api/intune_books_iosvppebook_delete" />
+          <Item text="更新" url="/en-us/api-reference/v1.0/api/intune_books_iosvppebook_update" />
         </Item>
         <Item text="iOS VPP 電子ブックの割り当て" url="/en-us/api-reference/v1.0/resources/intune_books_iosvppebookassignment">
           <Item text="一覧表示" url="/en-us/api-reference/v1.0/api/intune_books_iosvppebookassignment_list" />
@@ -512,14 +482,6 @@
           <Item text="削除" url="/en-us/api-reference/v1.0/api/intune_books_iosvppebookassignment_delete" />
           <Item text="更新" url="/en-us/api-reference/v1.0/api/intune_books_iosvppebookassignment_update" />
         </Item>
-        <Item text="iOS VPP の電子書籍" url="/en-us/api-reference/v1.0/resources/intune_books_iosvppebook">
-          <Item text="リスト" url="/en-us/api-reference/v1.0/api/intune_books_iosvppebook_list" />
-          <Item text="取得" url="/en-us/api-reference/v1.0/api/intune_books_iosvppebook_get" />
-          <Item text="作成" url="/en-us/api-reference/v1.0/api/intune_books_iosvppebook_create" />
-          <Item text="削除" url="/en-us/api-reference/v1.0/api/intune_books_iosvppebook_delete" />
-          <Item text="更新" url="/en-us/api-reference/v1.0/api/intune_books_iosvppebook_update" />
-        </Item>
-        <Item text="キー/値のペア" url="/en-us/api-reference/v1.0/resources/intune_androidforwork_keyvaluepair" />
         <Item text="macOS Office スイート アプリ" url="/en-us/api-reference/v1.0/resources/intune_apps_macosofficesuiteapp">
           <Item text="一覧表示" url="/en-us/api-reference/v1.0/api/intune_apps_macosofficesuiteapp_list" />
           <Item text="取得" url="/en-us/api-reference/v1.0/api/intune_apps_macosofficesuiteapp_get" />
@@ -545,12 +507,24 @@
           <Item text="リスト" url="/en-us/api-reference/v1.0/api/intune_apps_managedapp_list" />
           <Item text="取得" url="/en-us/api-reference/v1.0/api/intune_apps_managedapp_get" />
         </Item>
+        <Item text="管理対象アプリの可用性" url="/en-us/api-reference/v1.0/resources/intune_apps_managedappavailability" />
+        <Item text="管理対象デバイスのモバイル アプリ構成" url="/en-us/api-reference/v1.0/resources/intune_apps_manageddevicemobileappconfiguration">
+          <Item text="リスト" url="/en-us/api-reference/v1.0/api/intune_apps_manageddevicemobileappconfiguration_list" />
+          <Item text="取得" url="/en-us/api-reference/v1.0/api/intune_apps_manageddevicemobileappconfiguration_get" />
+        </Item>
         <Item text="管理対象デバイスのモバイル アプリ構成の割り当て" url="/en-us/api-reference/v1.0/resources/intune_apps_manageddevicemobileappconfigurationassignment">
           <Item text="一覧表示" url="/en-us/api-reference/v1.0/api/intune_apps_manageddevicemobileappconfigurationassignment_list" />
           <Item text="取得" url="/en-us/api-reference/v1.0/api/intune_apps_manageddevicemobileappconfigurationassignment_get" />
           <Item text="作成" url="/en-us/api-reference/v1.0/api/intune_apps_manageddevicemobileappconfigurationassignment_create" />
           <Item text="削除" url="/en-us/api-reference/v1.0/api/intune_apps_manageddevicemobileappconfigurationassignment_delete" />
           <Item text="更新" url="/en-us/api-reference/v1.0/api/intune_apps_manageddevicemobileappconfigurationassignment_update" />
+        </Item>
+        <Item text="管理対象デバイスのモバイル アプリ構成のデバイス状態" url="/en-us/api-reference/v1.0/resources/intune_apps_manageddevicemobileappconfigurationdevicestatus">
+          <Item text="リスト" url="/en-us/api-reference/v1.0/api/intune_apps_manageddevicemobileappconfigurationdevicestatus_list" />
+          <Item text="取得" url="/en-us/api-reference/v1.0/api/intune_apps_manageddevicemobileappconfigurationdevicestatus_get" />
+          <Item text="作成" url="/en-us/api-reference/v1.0/api/intune_apps_manageddevicemobileappconfigurationdevicestatus_create" />
+          <Item text="削除" url="/en-us/api-reference/v1.0/api/intune_apps_manageddevicemobileappconfigurationdevicestatus_delete" />
+          <Item text="更新" url="/en-us/api-reference/v1.0/api/intune_apps_manageddevicemobileappconfigurationdevicestatus_update" />
         </Item>
         <Item text="管理対象デバイスのモバイル アプリ構成のデバイスの要約" url="/en-us/api-reference/v1.0/resources/intune_apps_manageddevicemobileappconfigurationdevicesummary">
           <Item text="取得" url="/en-us/api-reference/v1.0/api/intune_apps_manageddevicemobileappconfigurationdevicesummary_get" />
@@ -567,9 +541,10 @@
           <Item text="取得" url="/en-us/api-reference/v1.0/api/intune_apps_manageddevicemobileappconfigurationusersummary_get" />
           <Item text="更新" url="/en-us/api-reference/v1.0/api/intune_apps_manageddevicemobileappconfigurationusersummary_update" />
         </Item>
-        <Item text="管理対象デバイスのモバイル アプリ構成" url="/en-us/api-reference/v1.0/resources/intune_apps_manageddevicemobileappconfiguration">
-          <Item text="リスト" url="/en-us/api-reference/v1.0/api/intune_apps_manageddevicemobileappconfiguration_list" />
-          <Item text="取得" url="/en-us/api-reference/v1.0/api/intune_apps_manageddevicemobileappconfiguration_get" />
+        <Item text="管理対象の電子書籍" url="/en-us/api-reference/v1.0/resources/intune_books_managedebook">
+          <Item text="リスト" url="/en-us/api-reference/v1.0/api/intune_books_managedebook_list" />
+          <Item text="取得" url="/en-us/api-reference/v1.0/api/intune_books_managedebook_get" />
+          <Item text="アクションの割り当て" url="/en-us/api-reference/v1.0/api/intune_books_managedebook_assign" />
         </Item>
         <Item text="管理対象電子ブックの割り当て" url="/en-us/api-reference/v1.0/resources/intune_books_managedebookassignment">
           <Item text="一覧表示" url="/en-us/api-reference/v1.0/api/intune_books_managedebookassignment_list" />
@@ -577,11 +552,6 @@
           <Item text="作成" url="/en-us/api-reference/v1.0/api/intune_books_managedebookassignment_create" />
           <Item text="削除" url="/en-us/api-reference/v1.0/api/intune_books_managedebookassignment_delete" />
           <Item text="更新" url="/en-us/api-reference/v1.0/api/intune_books_managedebookassignment_update" />
-        </Item>
-        <Item text="管理対象の電子書籍" url="/en-us/api-reference/v1.0/resources/intune_books_managedebook">
-          <Item text="リスト" url="/en-us/api-reference/v1.0/api/intune_books_managedebook_list" />
-          <Item text="取得" url="/en-us/api-reference/v1.0/api/intune_books_managedebook_get" />
-          <Item text="アクションの割り当て" url="/en-us/api-reference/v1.0/api/intune_books_managedebook_assign" />
         </Item>
         <Item text="管理対象 iOS LOB アプリ" url="/en-us/api-reference/v1.0/resources/intune_apps_managedioslobapp">
           <Item text="リスト" url="/en-us/api-reference/v1.0/api/intune_apps_managedioslobapp_list" />
@@ -601,7 +571,7 @@
           <Item text="リスト" url="/en-us/api-reference/v1.0/api/intune_apps_managedmobilelobapp_list" />
           <Item text="取得" url="/en-us/api-reference/v1.0/api/intune_apps_managedmobilelobapp_get" />
         </Item>
-        <Item text="ビジネス向け Microsoft Store のアプリの割り当ての設定" url="/en-us/api-reference/v1.0/resources/intune_apps_microsoftstoreforbusinessappassignmentsettings" />
+        <Item text="MDM アプリ設定キー タイプ" url="/en-us/api-reference/v1.0/resources/intune_apps_mdmappconfigkeytype" />
         <Item text="ビジネス向け Microsoft Store のアプリ" url="/en-us/api-reference/v1.0/resources/intune_apps_microsoftstoreforbusinessapp">
           <Item text="リスト" url="/en-us/api-reference/v1.0/api/intune_apps_microsoftstoreforbusinessapp_list" />
           <Item text="取得" url="/en-us/api-reference/v1.0/api/intune_apps_microsoftstoreforbusinessapp_get" />
@@ -609,10 +579,13 @@
           <Item text="削除" url="/en-us/api-reference/v1.0/api/intune_apps_microsoftstoreforbusinessapp_delete" />
           <Item text="更新" url="/en-us/api-reference/v1.0/api/intune_apps_microsoftstoreforbusinessapp_update" />
         </Item>
-        <Item text="MIME コンテンツ" url="/en-us/api-reference/v1.0/resources/intune_apps_mimecontent" />
-        <Item text="MIME コンテンツ" url="/en-us/api-reference/v1.0/resources/intune_androidforwork_mimecontent" />
-        <Item text="MIME コンテンツ" url="/en-us/api-reference/v1.0/resources/intune_books_mimecontent" />
-        <Item text="モバイル アプリの割り当ての設定" url="/en-us/api-reference/v1.0/resources/intune_apps_mobileappassignmentsettings" />
+        <Item text="ビジネス向け Microsoft Store のアプリの割り当ての設定" url="/en-us/api-reference/v1.0/resources/intune_apps_microsoftstoreforbusinessappassignmentsettings" />
+        <Item text="ビジネス向け Microsoft Store のライセンスの種類" url="/en-us/api-reference/v1.0/resources/intune_apps_microsoftstoreforbusinesslicensetype" />
+        <Item text="モバイル アプリ" url="/en-us/api-reference/v1.0/resources/intune_apps_mobileapp">
+          <Item text="リスト" url="/en-us/api-reference/v1.0/api/intune_apps_mobileapp_list" />
+          <Item text="取得" url="/en-us/api-reference/v1.0/api/intune_apps_mobileapp_get" />
+          <Item text="アクションの割り当て" url="/en-us/api-reference/v1.0/api/intune_apps_mobileapp_assign" />
+        </Item>
         <Item text="モバイル アプリの割り当て" url="/en-us/api-reference/v1.0/resources/intune_apps_mobileappassignment">
           <Item text="一覧表示" url="/en-us/api-reference/v1.0/api/intune_apps_mobileappassignment_list" />
           <Item text="取得" url="/en-us/api-reference/v1.0/api/intune_apps_mobileappassignment_get" />
@@ -620,12 +593,20 @@
           <Item text="削除" url="/en-us/api-reference/v1.0/api/intune_apps_mobileappassignment_delete" />
           <Item text="更新" url="/en-us/api-reference/v1.0/api/intune_apps_mobileappassignment_update" />
         </Item>
+        <Item text="モバイル アプリの割り当ての設定" url="/en-us/api-reference/v1.0/resources/intune_apps_mobileappassignmentsettings" />
         <Item text="モバイル アプリのカテゴリ" url="/en-us/api-reference/v1.0/resources/intune_apps_mobileappcategory">
           <Item text="リスト" url="/en-us/api-reference/v1.0/api/intune_apps_mobileappcategory_list" />
           <Item text="取得" url="/en-us/api-reference/v1.0/api/intune_apps_mobileappcategory_get" />
           <Item text="作成" url="/en-us/api-reference/v1.0/api/intune_apps_mobileappcategory_create" />
           <Item text="削除" url="/en-us/api-reference/v1.0/api/intune_apps_mobileappcategory_delete" />
           <Item text="更新" url="/en-us/api-reference/v1.0/api/intune_apps_mobileappcategory_update" />
+        </Item>
+        <Item text="モバイル アプリ コンテンツ" url="/en-us/api-reference/v1.0/resources/intune_apps_mobileappcontent">
+          <Item text="リスト" url="/en-us/api-reference/v1.0/api/intune_apps_mobileappcontent_list" />
+          <Item text="取得" url="/en-us/api-reference/v1.0/api/intune_apps_mobileappcontent_get" />
+          <Item text="作成" url="/en-us/api-reference/v1.0/api/intune_apps_mobileappcontent_create" />
+          <Item text="削除" url="/en-us/api-reference/v1.0/api/intune_apps_mobileappcontent_delete" />
+          <Item text="更新" url="/en-us/api-reference/v1.0/api/intune_apps_mobileappcontent_update" />
         </Item>
         <Item text="モバイル アプリ コンテンツ ファイル" url="/en-us/api-reference/v1.0/resources/intune_apps_mobileappcontentfile">
           <Item text="リスト" url="/en-us/api-reference/v1.0/api/intune_apps_mobileappcontentfile_list" />
@@ -636,18 +617,8 @@
           <Item text="コミット アクション" url="/en-us/api-reference/v1.0/api/intune_apps_mobileappcontentfile_commit" />
           <Item text="renewUpload アクション" url="/en-us/api-reference/v1.0/api/intune_apps_mobileappcontentfile_renewupload" />
         </Item>
-        <Item text="モバイル アプリ コンテンツ" url="/en-us/api-reference/v1.0/resources/intune_apps_mobileappcontent">
-          <Item text="リスト" url="/en-us/api-reference/v1.0/api/intune_apps_mobileappcontent_list" />
-          <Item text="取得" url="/en-us/api-reference/v1.0/api/intune_apps_mobileappcontent_get" />
-          <Item text="作成" url="/en-us/api-reference/v1.0/api/intune_apps_mobileappcontent_create" />
-          <Item text="削除" url="/en-us/api-reference/v1.0/api/intune_apps_mobileappcontent_delete" />
-          <Item text="更新" url="/en-us/api-reference/v1.0/api/intune_apps_mobileappcontent_update" />
-        </Item>
-        <Item text="モバイル アプリ" url="/en-us/api-reference/v1.0/resources/intune_apps_mobileapp">
-          <Item text="リスト" url="/en-us/api-reference/v1.0/api/intune_apps_mobileapp_list" />
-          <Item text="取得" url="/en-us/api-reference/v1.0/api/intune_apps_mobileapp_get" />
-          <Item text="アクションの割り当て" url="/en-us/api-reference/v1.0/api/intune_apps_mobileapp_assign" />
-        </Item>
+        <Item text="モバイル アプリ コンテンツ ファイルのアップロード状態" url="/en-us/api-reference/v1.0/resources/intune_apps_mobileappcontentfileuploadstate" />
+        <Item text="モバイル アプリの公開状態" url="/en-us/api-reference/v1.0/resources/intune_apps_mobileapppublishingstate" />
         <Item text="モバイル LOB アプリ" url="/en-us/api-reference/v1.0/resources/intune_apps_mobilelobapp">
           <Item text="リスト" url="/en-us/api-reference/v1.0/api/intune_apps_mobilelobapp_list" />
           <Item text="取得" url="/en-us/api-reference/v1.0/api/intune_apps_mobilelobapp_get" />
@@ -667,6 +638,8 @@
           <Item text="削除" url="/en-us/api-reference/v1.0/api/intune_apps_webapp_delete" />
           <Item text="更新" url="/en-us/api-reference/v1.0/api/intune_apps_webapp_update" />
         </Item>
+        <Item text="Windows アーキテクチャ" url="/en-us/api-reference/v1.0/resources/intune_apps_windowsarchitecture" />
+        <Item text="Windows デバイスの種類" url="/en-us/api-reference/v1.0/resources/intune_apps_windowsdevicetype" />
         <Item text="最小構成の Windows オペレーティング システム" url="/en-us/api-reference/v1.0/resources/intune_apps_windowsminimumoperatingsystem" />
         <Item text="Windows Mobile MSI" url="/en-us/api-reference/v1.0/resources/intune_apps_windowsmobilemsi">
           <Item text="リスト" url="/en-us/api-reference/v1.0/api/intune_apps_windowsmobilemsi_list" />
@@ -684,16 +657,14 @@
         </Item>
       </Item>
       <Item text="会社の用語" url="/en-us/api-reference/v1.0/resources/intune_company_conceptual">
-        <Item text="すべてのデバイスの割り当て先" url="/en-us/api-reference/v1.0/resources/intune_companyterms_alldevicesassignmenttarget" />
-        <Item text="すべてのライセンス ユーザーの割り当て先" url="/en-us/api-reference/v1.0/resources/intune_companyterms_alllicensedusersassignmenttarget" />
-        <Item text="デバイスおよびアプリ管理の割り当て先" url="/en-us/api-reference/v1.0/resources/intune_companyterms_deviceandappmanagementassignmenttarget" />
-        <Item text="デバイスの管理" url="/en-us/api-reference/v1.0/resources/intune_companyterms_devicemanagement">
-          <Item text="取得" url="/en-us/api-reference/v1.0/api/intune_companyterms_devicemanagement_get" />
-          <Item text="更新" url="/en-us/api-reference/v1.0/api/intune_companyterms_devicemanagement_update" />
+        <Item text="使用条件" url="/en-us/api-reference/v1.0/resources/intune_companyterms_termsandconditions">
+          <Item text="リスト" url="/en-us/api-reference/v1.0/api/intune_companyterms_termsandconditions_list" />
+          <Item text="取得" url="/en-us/api-reference/v1.0/api/intune_companyterms_termsandconditions_get" />
+          <Item text="作成" url="/en-us/api-reference/v1.0/api/intune_companyterms_termsandconditions_create" />
+          <Item text="削除" url="/en-us/api-reference/v1.0/api/intune_companyterms_termsandconditions_delete" />
+          <Item text="更新" url="/en-us/api-reference/v1.0/api/intune_companyterms_termsandconditions_update" />
         </Item>
-        <Item text="除外グループの割り当て先" url="/en-us/api-reference/v1.0/resources/intune_companyterms_exclusiongroupassignmenttarget" />
-        <Item text="グループの割り当て先" url="/en-us/api-reference/v1.0/resources/intune_companyterms_groupassignmenttarget" />
-        <Item text="条項および条件の承認状態" url="/en-us/api-reference/v1.0/resources/intune_companyterms_termsandconditionsacceptancestatus">
+        <Item text="使用条件の承認状態" url="/en-us/api-reference/v1.0/resources/intune_companyterms_termsandconditionsacceptancestatus">
           <Item text="リスト" url="/en-us/api-reference/v1.0/api/intune_companyterms_termsandconditionsacceptancestatus_list" />
           <Item text="取得" url="/en-us/api-reference/v1.0/api/intune_companyterms_termsandconditionsacceptancestatus_get" />
           <Item text="作成" url="/en-us/api-reference/v1.0/api/intune_companyterms_termsandconditionsacceptancestatus_create" />
@@ -707,27 +678,19 @@
           <Item text="削除" url="/en-us/api-reference/v1.0/api/intune_companyterms_termsandconditionsassignment_delete" />
           <Item text="更新" url="/en-us/api-reference/v1.0/api/intune_companyterms_termsandconditionsassignment_update" />
         </Item>
-        <Item text="条項および条件" url="/en-us/api-reference/v1.0/resources/intune_companyterms_termsandconditions">
-          <Item text="リスト" url="/en-us/api-reference/v1.0/api/intune_companyterms_termsandconditions_list" />
-          <Item text="取得" url="/en-us/api-reference/v1.0/api/intune_companyterms_termsandconditions_get" />
-          <Item text="作成" url="/en-us/api-reference/v1.0/api/intune_companyterms_termsandconditions_create" />
-          <Item text="削除" url="/en-us/api-reference/v1.0/api/intune_companyterms_termsandconditions_delete" />
-          <Item text="更新" url="/en-us/api-reference/v1.0/api/intune_companyterms_termsandconditions_update" />
-        </Item>
       </Item>
       <Item text="企業の登録" url="/en-us/api-reference/v1.0/resources/intune_corporate_enrollment_conceptual">
-        <Item text="デバイスの管理" url="/en-us/api-reference/v1.0/resources/intune_corpenrollment_devicemanagement">
-          <Item text="取得" url="/en-us/api-reference/v1.0/api/intune_corpenrollment_devicemanagement_get" />
-          <Item text="更新" url="/en-us/api-reference/v1.0/api/intune_corpenrollment_devicemanagement_update" />
+        <Item text="インポートした Windows AutoPilot デバイス ID" url="/en-us/api-reference/v1.0/resources/intune_enrollment_importedwindowsautopilotdeviceidentity">
+          <Item text="リスト" url="/en-us/api-reference/v1.0/api/intune_enrollment_importedwindowsautopilotdeviceidentity_list" />
+          <Item text="取得" url="/en-us/api-reference/v1.0/api/intune_enrollment_importedwindowsautopilotdeviceidentity_get" />
+          <Item text="作成" url="/en-us/api-reference/v1.0/api/intune_enrollment_importedwindowsautopilotdeviceidentity_create" />
+          <Item text="削除" url="/en-us/api-reference/v1.0/api/intune_enrollment_importedwindowsautopilotdeviceidentity_delete" />
+          <Item text="更新" url="/en-us/api-reference/v1.0/api/intune_enrollment_importedwindowsautopilotdeviceidentity_update" />
         </Item>
-        <Item text="デバイスの管理" url="/en-us/api-reference/v1.0/resources/intune_enrollment_devicemanagement">
-          <Item text="取得" url="/en-us/api-reference/v1.0/api/intune_enrollment_devicemanagement_get" />
-          <Item text="更新" url="/en-us/api-reference/v1.0/api/intune_enrollment_devicemanagement_update" />
-        </Item>
+        <Item text="インポートした Windows AutoPilot デバイス ID のインポート状態" url="/en-us/api-reference/v1.0/resources/intune_enrollment_importedwindowsautopilotdeviceidentityimportstatus" />
+        <Item text="インポートした Windows AutoPilot デバイス ID の状態" url="/en-us/api-reference/v1.0/resources/intune_enrollment_importedwindowsautopilotdeviceidentitystate" />
       </Item>
       <Item text="デバイス構成" url="/en-us/api-reference/v1.0/resources/intune_device_configuration_conceptual">
-        <Item text="すべてのデバイスの割り当て先" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_alldevicesassignmenttarget" />
-        <Item text="すべてのライセンス ユーザーの割り当て先" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_alllicensedusersassignmenttarget" />
         <Item text="Android コンプライアンス ポリシー" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_androidcompliancepolicy">
           <Item text="リスト" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_androidcompliancepolicy_list" />
           <Item text="取得" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_androidcompliancepolicy_get" />
@@ -749,14 +712,26 @@
           <Item text="削除" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_androidgeneraldeviceconfiguration_delete" />
           <Item text="更新" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_androidgeneraldeviceconfiguration_update" />
         </Item>
+        <Item text="Android に必要なパスワードの種類" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_androidrequiredpasswordtype" />
         <Item text="アプリ リストの項目" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_applistitem" />
+        <Item text="アプリ リストの種類" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_applisttype" />
+        <Item text="App locker アプリケーションのコントロールの種類" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_applockerapplicationcontroltype" />
         <Item text="Apple デバイス機能構成ベース" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_appledevicefeaturesconfigurationbase">
           <Item text="リスト" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_appledevicefeaturesconfigurationbase_list" />
           <Item text="取得" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_appledevicefeaturesconfigurationbase_get" />
         </Item>
+        <Item text="アプリケーション ガード ブロックのクリップボード共有タイプ" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_applicationguardblockclipboardsharingtype" />
+        <Item text="アプリケーション ガード ブロックのファイル転送タイプ" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_applicationguardblockfiletransfertype" />
+        <Item text="自動更新モード" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_automaticupdatemode" />
+        <Item text="BitLocker 暗号化方法" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_bitlockerencryptionmethod" />
         <Item text="BitLocker リムーバブル ドライブ ポリシー" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_bitlockerremovabledrivepolicy" />
+        <Item text="曜日" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_dayofweek" />
+        <Item text="Defender クラウド ブロックレベルの種類" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_defendercloudblockleveltype" />
         <Item text="Defender によって検出されたマルウェア アクション" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_defenderdetectedmalwareactions" />
-        <Item text="デバイスおよびアプリ管理の割り当て先" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_deviceandappmanagementassignmenttarget" />
+        <Item text="Defender ファイル アクティビティの監視" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_defendermonitorfileactivity" />
+        <Item text="Defender サンプルの送信を促す" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_defenderpromptforsamplesubmission" />
+        <Item text="Defender スキャンの種類" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_defenderscantype" />
+        <Item text="Defender 脅威アクション" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_defenderthreataction" />
         <Item text="デバイス コンプライアンス アクションの項目" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_devicecomplianceactionitem">
           <Item text="リスト" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_devicecomplianceactionitem_list" />
           <Item text="取得" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_devicecomplianceactionitem_get" />
@@ -764,6 +739,7 @@
           <Item text="削除" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_devicecomplianceactionitem_delete" />
           <Item text="更新" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_devicecomplianceactionitem_update" />
         </Item>
+        <Item text="デバイス コンプライアンス アクションの種類" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_devicecomplianceactiontype" />
         <Item text="デバイス コンプライアンスのデバイス概要" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_devicecompliancedeviceoverview">
           <Item text="取得" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_devicecompliancedeviceoverview_get" />
           <Item text="更新" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_devicecompliancedeviceoverview_update" />
@@ -774,6 +750,12 @@
           <Item text="作成" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_devicecompliancedevicestatus_create" />
           <Item text="削除" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_devicecompliancedevicestatus_delete" />
           <Item text="更新" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_devicecompliancedevicestatus_update" />
+        </Item>
+        <Item text="デバイス コンプライアンス ポリシー" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_devicecompliancepolicy">
+          <Item text="リスト" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_devicecompliancepolicy_list" />
+          <Item text="取得" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_devicecompliancepolicy_get" />
+          <Item text="アクションの割り当て" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_devicecompliancepolicy_assign" />
+          <Item text="scheduleActionsForRules アクション" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_devicecompliancepolicy_scheduleactionsforrules" />
         </Item>
         <Item text="デバイス コンプライアンス ポリシーの割り当て" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_devicecompliancepolicyassignment">
           <Item text="リスト" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_devicecompliancepolicyassignment_list" />
@@ -786,26 +768,13 @@
           <Item text="取得" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_devicecompliancepolicydevicestatesummary_get" />
           <Item text="更新" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_devicecompliancepolicydevicestatesummary_update" />
         </Item>
+        <Item text="デバイス コンプライアンス ポリシー設定の状態" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_devicecompliancepolicysettingstate" />
         <Item text="デバイス コンプライアンス ポリシー設定の状態の要約" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_devicecompliancepolicysettingstatesummary">
           <Item text="リスト" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_devicecompliancepolicysettingstatesummary_list" />
           <Item text="取得" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_devicecompliancepolicysettingstatesummary_get" />
           <Item text="作成" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_devicecompliancepolicysettingstatesummary_create" />
           <Item text="削除" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_devicecompliancepolicysettingstatesummary_delete" />
           <Item text="更新" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_devicecompliancepolicysettingstatesummary_update" />
-        </Item>
-        <Item text="デバイス コンプライアンス ポリシー設定の状態" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_devicecompliancepolicysettingstate" />
-        <Item text="デバイス コンプライアンス ポリシーの状態" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_devicecompliancepolicystate">
-          <Item text="一覧表示" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_devicecompliancepolicystate_list" />
-          <Item text="取得" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_devicecompliancepolicystate_get" />
-          <Item text="作成" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_devicecompliancepolicystate_create" />
-          <Item text="削除" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_devicecompliancepolicystate_delete" />
-          <Item text="更新" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_devicecompliancepolicystate_update" />
-        </Item>
-        <Item text="デバイス コンプライアンス ポリシー" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_devicecompliancepolicy">
-          <Item text="リスト" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_devicecompliancepolicy_list" />
-          <Item text="取得" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_devicecompliancepolicy_get" />
-          <Item text="アクションの割り当て" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_devicecompliancepolicy_assign" />
-          <Item text="scheduleActionsForRules アクション" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_devicecompliancepolicy_scheduleactionsforrules" />
         </Item>
         <Item text="デバイス コンプライアンスのルールごとのスケジュール済みアクション" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_devicecompliancescheduledactionforrule">
           <Item text="リスト" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_devicecompliancescheduledactionforrule_list" />
@@ -832,6 +801,11 @@
           <Item text="削除" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_devicecomplianceuserstatus_delete" />
           <Item text="更新" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_devicecomplianceuserstatus_update" />
         </Item>
+        <Item text="デバイス構成" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_deviceconfiguration">
+          <Item text="リスト" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_deviceconfiguration_list" />
+          <Item text="取得" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_deviceconfiguration_get" />
+          <Item text="アクションの割り当て" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_deviceconfiguration_assign" />
+        </Item>
         <Item text="デバイス構成の割り当て" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_deviceconfigurationassignment">
           <Item text="リスト" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_deviceconfigurationassignment_list" />
           <Item text="取得" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_deviceconfigurationassignment_get" />
@@ -855,14 +829,7 @@
           <Item text="更新" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_deviceconfigurationdevicestatus_update" />
         </Item>
         <Item text="デバイス構成の設定状態" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_deviceconfigurationsettingstate" />
-        <Item text="デバイス構成" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_deviceconfigurationstate">
-          <Item text="一覧表示" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_deviceconfigurationstate_list" />
-          <Item text="取得" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_deviceconfigurationstate_get" />
-          <Item text="作成" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_deviceconfigurationstate_create" />
-          <Item text="削除" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_deviceconfigurationstate_delete" />
-          <Item text="更新" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_deviceconfigurationstate_update" />
-        </Item>
-        <Item text="デバイス構成のユーザー概要" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_deviceconfigurationuseroverview">
+        <Item text="デバイス構成のユーザーの概要" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_deviceconfigurationuseroverview">
           <Item text="取得" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_deviceconfigurationuseroverview_get" />
           <Item text="更新" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_deviceconfigurationuseroverview_update" />
         </Item>
@@ -873,19 +840,14 @@
           <Item text="削除" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_deviceconfigurationuserstatus_delete" />
           <Item text="更新" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_deviceconfigurationuserstatus_update" />
         </Item>
-        <Item text="デバイス構成" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_deviceconfiguration">
-          <Item text="リスト" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_deviceconfiguration_list" />
-          <Item text="取得" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_deviceconfiguration_get" />
-          <Item text="アクションの割り当て" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_deviceconfiguration_assign" />
-        </Item>
         <Item text="デバイス管理構成" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_devicemanagementsettings" />
-        <Item text="デバイスの管理" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_devicemanagement">
-          <Item text="取得" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_devicemanagement_get" />
-          <Item text="更新" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_devicemanagement_update" />
-        </Item>
+        <Item text="デバイスの脅威保護レベル" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_devicethreatprotectionlevel" />
+        <Item text="診断データの送信モード" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_diagnosticdatasubmissionmode" />
+        <Item text="Edge の Cookie ポリシー" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_edgecookiepolicy" />
+        <Item text="Edge の検索エンジン" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_edgesearchengine" />
         <Item text="Edge の検索エンジン ベース" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_edgesearchenginebase" />
         <Item text="Edge の検索エンジンのユーザー設定" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_edgesearchenginecustom" />
-        <Item text="Edge の検索エンジン" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_edgesearchengine" />
+        <Item text="Edge の検索エンジンの種類" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_edgesearchenginetype" />
         <Item text="エディション アップグレード構成" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_editionupgradeconfiguration">
           <Item text="リスト" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_editionupgradeconfiguration_list" />
           <Item text="取得" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_editionupgradeconfiguration_get" />
@@ -893,8 +855,11 @@
           <Item text="削除" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_editionupgradeconfiguration_delete" />
           <Item text="更新" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_editionupgradeconfiguration_update" />
         </Item>
-        <Item text="除外グループの割り当て先" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_exclusiongroupassignmenttarget" />
-        <Item text="グループの割り当て先" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_groupassignmenttarget" />
+        <Item text="エディション アップグレード ライセンスの種類" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_editionupgradelicensetype" />
+        <Item text="ファイアウォール証明書失効リスト確認方法の種類" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_firewallcertificaterevocationlistcheckmethodtype" />
+        <Item text="ファイアウォール パケット キュー メソッドの種類" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_firewallpacketqueueingmethodtype" />
+        <Item text="ファイアウォール事前共有キー エンコーディング方法の種類" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_firewallpresharedkeyencodingmethodtype" />
+        <Item text="インターネット サイトのセキュリティ レベル" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_internetsitesecuritylevel" />
         <Item text="iOS 証明書のプロファイル" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_ioscertificateprofile">
           <Item text="リスト" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_ioscertificateprofile_list" />
           <Item text="取得" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_ioscertificateprofile_get" />
@@ -928,11 +893,12 @@
           <Item text="更新" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_iosgeneraldeviceconfiguration_update" />
         </Item>
         <Item text="iOS ホーム画面のアプリ" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_ioshomescreenapp" />
-        <Item text="iOS ホーム画面のフォルダーのページ" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_ioshomescreenfolderpage" />
         <Item text="iOS ホーム画面のフォルダー" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_ioshomescreenfolder" />
+        <Item text="iOS ホーム画面のフォルダーのページ" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_ioshomescreenfolderpage" />
         <Item text="iOS ホーム画面のアイテム" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_ioshomescreenitem" />
         <Item text="iOS ホーム画面のページ" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_ioshomescreenpage" />
         <Item text="iOS ネットワークの使用規則" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_iosnetworkusagerule" />
+        <Item text="iOS の通知アラートの種類" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_iosnotificationalerttype" />
         <Item text="iOS の通知設定" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_iosnotificationsettings" />
         <Item text="iOS 更新構成" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_iosupdateconfiguration">
           <Item text="リスト" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_iosupdateconfiguration_list" />
@@ -948,6 +914,7 @@
           <Item text="削除" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_iosupdatedevicestatus_delete" />
           <Item text="更新" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_iosupdatedevicestatus_update" />
         </Item>
+        <Item text="iOS の更新プログラムのインストール状態" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_iosupdatesinstallstatus" />
         <Item text="macOS コンプライアンス ポリシー" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_macoscompliancepolicy">
           <Item text="リスト" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_macoscompliancepolicy_list" />
           <Item text="取得" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_macoscompliancepolicy_get" />
@@ -976,10 +943,6 @@
           <Item text="削除" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_macosgeneraldeviceconfiguration_delete" />
           <Item text="更新" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_macosgeneraldeviceconfiguration_update" />
         </Item>
-        <Item text="管理対象デバイス" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_manageddevice">
-          <Item text="一覧表示" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_manageddevice_list" />
-          <Item text="取得" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_manageddevice_get" />
-        </Item>
         <Item text="メディア コンテンツのレーティング、オーストラリア" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_mediacontentratingaustralia" />
         <Item text="メディア コンテンツのレーティング、カナダ" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_mediacontentratingcanada" />
         <Item text="メディア コンテンツのレーティング、フランス" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_mediacontentratingfrance" />
@@ -989,19 +952,43 @@
         <Item text="メディア コンテンツのレーティング、ニュージーランド" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_mediacontentratingnewzealand" />
         <Item text="メディア コンテンツのレーティング、英国" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_mediacontentratingunitedkingdom" />
         <Item text="メディア コンテンツのレーティング、米国" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_mediacontentratingunitedstates" />
+        <Item text="Miracast チャネル" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_miracastchannel" />
+        <Item text="OMA 設定" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_omasetting" />
         <Item text="OMA 設定、base 64" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_omasettingbase64" />
         <Item text="OMA 設定、ブール型 (Boolean)" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_omasettingboolean" />
         <Item text="OMA 設定、日時" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_omasettingdatetime" />
         <Item text="OMA 設定、浮動小数点数" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_omasettingfloatingpoint" />
         <Item text="OMA 設定、整数" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_omasettinginteger" />
-        <Item text="OMA 設定、xml 文字列" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_omasettingstringxml" />
         <Item text="OMA 設定、文字列" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_omasettingstring" />
-        <Item text="OMA 設定" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_omasetting" />
+        <Item text="OMA 設定、xml 文字列" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_omasettingstringxml" />
+        <Item text="ポリシー プラットフォームの種類" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_policyplatformtype" />
+        <Item text="プレリリース機能" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_prereleasefeatures" />
+        <Item text="アプリの種類の評価" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_ratingappstype" />
+        <Item text="オーストラリアの映画の種類の評価" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_ratingaustraliamoviestype" />
+        <Item text="オーストラリアのテレビの種類の評価" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_ratingaustraliatelevisiontype" />
+        <Item text="カナダの映画の種類の評価" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_ratingcanadamoviestype" />
+        <Item text="カナダのテレビの種類の評価" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_ratingcanadatelevisiontype" />
+        <Item text="フランスの映画の種類の評価" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_ratingfrancemoviestype" />
+        <Item text="フランスのテレビの種類の評価" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_ratingfrancetelevisiontype" />
+        <Item text="ドイツの映画の種類の評価" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_ratinggermanymoviestype" />
+        <Item text="ドイツのテレビの種類の評価" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_ratinggermanytelevisiontype" />
+        <Item text="アイルランドの映画の種類の評価" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_ratingirelandmoviestype" />
+        <Item text="アイルランドのテレビの種類の評価" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_ratingirelandtelevisiontype" />
+        <Item text="日本の映画の種類の評価" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_ratingjapanmoviestype" />
+        <Item text="日本のテレビの種類の評価" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_ratingjapantelevisiontype" />
+        <Item text="ニュージーランド ムービーの種類の評価" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_ratingnewzealandmoviestype" />
+        <Item text="ニュージーランド テレビの種類の評価" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_ratingnewzealandtelevisiontype" />
+        <Item text="英国ムービーの種類の評価" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_ratingunitedkingdommoviestype" />
+        <Item text="英国のテレビの種類の評価" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_ratingunitedkingdomtelevisiontype" />
+        <Item text="アメリカ合衆国ムービーの種類の評価" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_ratingunitedstatesmoviestype" />
+        <Item text="アメリカ合衆国テレビの種類の評価" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_ratingunitedstatestelevisiontype" />
+        <Item text="レポート" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_report" />
         <Item text="レポートのルート" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_reportroot">
           <Item text="取得" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_reportroot_get" />
           <Item text="更新" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_reportroot_update" />
         </Item>
-        <Item text="レポート" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_report" />
+        <Item text="必要なパスワードの種類" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_requiredpasswordtype" />
+        <Item text="セーフ サーチのフィルターのタイプ" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_safesearchfiltertype" />
         <Item text="ソースの設定" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_settingsource" />
         <Item text="状態デバイス設定要約" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_settingstatedevicesummary">
           <Item text="一覧表示" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_settingstatedevicesummary_list" />
@@ -1010,7 +997,9 @@
           <Item text="削除" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_settingstatedevicesummary_delete" />
           <Item text="更新" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_settingstatedevicesummary_update" />
         </Item>
+        <Item text="共有 PC アカウントの削除ポリシーの種類" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_sharedpcaccountdeletionpolicytype" />
         <Item text="共有 PC アカウント マネージャー ポリシー" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_sharedpcaccountmanagerpolicy" />
+        <Item text="共有 PC が許可するアカウント タイプ" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_sharedpcallowedaccounttype" />
         <Item text="共有 PC 構成" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_sharedpcconfiguration">
           <Item text="リスト" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_sharedpcconfiguration_list" />
           <Item text="取得" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_sharedpcconfiguration_get" />
@@ -1018,11 +1007,16 @@
           <Item text="削除" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_sharedpcconfiguration_delete" />
           <Item text="更新" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_sharedpcconfiguration_update" />
         </Item>
+        <Item text="サイトのセキュリティ レベル" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_sitesecuritylevel" />
         <Item text="ソフトウェア更新ステータス要約" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_softwareupdatestatussummary">
           <Item text="取得" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_softwareupdatestatussummary_get" />
           <Item text="更新" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_softwareupdatestatussummary_update" />
         </Item>
-        <Item text="URI" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_uri" />
+        <Item text="状態管理の設定" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_statemanagementsetting" />
+        <Item text="表示設定" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_visibilitysetting" />
+        <Item text="Web ブラウザーの Cookie の設定" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_webbrowsercookiesettings" />
+        <Item text="週単位のスケジュール" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_weeklyschedule" />
+        <Item text="ようこそ画面の会議情報" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_welcomescreenmeetinginformation" />
         <Item text="Windows 10 コンプライアンス ポリシー" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_windows10compliancepolicy">
           <Item text="リスト" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_windows10compliancepolicy_list" />
           <Item text="取得" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_windows10compliancepolicy_get" />
@@ -1037,6 +1031,7 @@
           <Item text="削除" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_windows10customconfiguration_delete" />
           <Item text="更新" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_windows10customconfiguration_update" />
         </Item>
+        <Item text="Windows 10 エディションの種類" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_windows10editiontype" />
         <Item text="Windows 10 Endpoint Protection の構成" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_windows10endpointprotectionconfiguration">
           <Item text="リスト" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_windows10endpointprotectionconfiguration_list" />
           <Item text="取得" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_windows10endpointprotectionconfiguration_get" />
@@ -1101,6 +1096,7 @@
           <Item text="削除" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_windowsdefenderadvancedthreatprotectionconfiguration_delete" />
           <Item text="更新" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_windowsdefenderadvancedthreatprotectionconfiguration_update" />
         </Item>
+        <Item text="Windows 配信最適化モード" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_windowsdeliveryoptimizationmode" />
         <Item text="Windows ファイアウォール ネットワーク プロファイル" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_windowsfirewallnetworkprofile" />
         <Item text="Windows Phone 8.1 コンプライアンス ポリシー" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_windowsphone81compliancepolicy">
           <Item text="リスト" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_windowsphone81compliancepolicy_list" />
@@ -1123,6 +1119,9 @@
           <Item text="削除" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_windowsphone81generalconfiguration_delete" />
           <Item text="更新" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_windowsphone81generalconfiguration_update" />
         </Item>
+        <Item text="Windows スポットライト有効化設定" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_windowsspotlightenablementsettings" />
+        <Item text="Windows スタート メニュー アプリ リストの表示タイプ" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_windowsstartmenuapplistvisibilitytype" />
+        <Item text="Windows スタート メニューのモード タイプ" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_windowsstartmenumodetype" />
         <Item text="Windows Update アクティブ期間インストール" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_windowsupdateactivehoursinstall" />
         <Item text="Windows Update for Business 構成" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_windowsupdateforbusinessconfiguration">
           <Item text="リスト" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_windowsupdateforbusinessconfiguration_list" />
@@ -1132,9 +1131,12 @@
           <Item text="更新" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_windowsupdateforbusinessconfiguration_update" />
         </Item>
         <Item text="Windows update インストールスケジュールのタイプ" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_windowsupdateinstallscheduletype" />
-        <Item text="Windows update のスケジュール済みインストール" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_windowsupdatescheduledinstall" />
+        <Item text="Windows Update のスケジュール済みインストール" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_windowsupdatescheduledinstall" />
+        <Item text="Windows Update の種類" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_windowsupdatetype" />
+        <Item text="Windows ユーザー アカウント制御の設定" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_windowsuseraccountcontrolsettings" />
       </Item>
-      <Item text="デバイスの管理" url="/en-us/api-reference/v1.0/resources/intune_corpenrollment_devicemanagement">
+      <Item text="デバイスの管理" url="/en-us/api-reference/v1.0/resources/intune_devices_conceptual">
+        <Item text="アクションの状態" url="/en-us/api-reference/v1.0/resources/intune_devices_actionstate" />
         <Item text="Apple プッシュ通知証明書" url="/en-us/api-reference/v1.0/resources/intune_devices_applepushnotificationcertificate">
           <Item text="取得" url="/en-us/api-reference/v1.0/api/intune_devices_applepushnotificationcertificate_get" />
           <Item text="更新" url="/en-us/api-reference/v1.0/api/intune_devices_applepushnotificationcertificate_update" />
@@ -1149,6 +1151,7 @@
         </Item>
         <Item text="監査のプロパティ" url="/en-us/api-reference/v1.0/resources/intune_auditing_auditproperty" />
         <Item text="監査のリソース" url="/en-us/api-reference/v1.0/resources/intune_auditing_auditresource" />
+        <Item text="コンプライアンスのステータス" url="/en-us/api-reference/v1.0/resources/intune_devices_compliancestate" />
         <Item text="構成マネージャーのクライアントに対応した機能" url="/en-us/api-reference/v1.0/resources/intune_devices_configurationmanagerclientenabledfeatures" />
         <Item text="共有の Apple デバイスのアクションの結果からユーザーを削除する" url="/en-us/api-reference/v1.0/resources/intune_devices_deleteuserfromsharedappledeviceactionresult" />
         <Item text="検出されたアプリ" url="/en-us/api-reference/v1.0/resources/intune_devices_detectedapp">
@@ -1159,13 +1162,13 @@
           <Item text="更新" url="/en-us/api-reference/v1.0/api/intune_devices_detectedapp_update" />
         </Item>
         <Item text="デバイスのアクションの結果" url="/en-us/api-reference/v1.0/resources/intune_devices_deviceactionresult" />
-        <Item text="デバイス カテゴリ" url="/en-us/api-reference/v1.0/resources/intune_devices_devicecategory">
-          <Item text="取得" url="/en-us/api-reference/v1.0/api/intune_devices_devicecategory_get" />
-          <Item text="更新" url="/en-us/api-reference/v1.0/api/intune_devices_devicecategory_update" />
-        </Item>
+        <Item text="デバイスの登録失敗の理由" url="/en-us/api-reference/v1.0/resources/intune_troubleshooting_deviceenrollmentfailurereason" />
         <Item text="デバイスの Exchange アクセス状態の要約" url="/en-us/api-reference/v1.0/resources/intune_devices_deviceexchangeaccessstatesummary" />
         <Item text="デバイスの位置情報" url="/en-us/api-reference/v1.0/resources/intune_devices_devicegeolocation" />
         <Item text="デバイスの正常性構成証明の状態" url="/en-us/api-reference/v1.0/resources/intune_devices_devicehealthattestationstate" />
+        <Item text="デバイスの管理 Exchange アクセス状態" url="/en-us/api-reference/v1.0/resources/intune_devices_devicemanagementexchangeaccessstate" />
+        <Item text="デバイスの管理 Exchange アクセス状態理由" url="/en-us/api-reference/v1.0/resources/intune_devices_devicemanagementexchangeaccessstatereason" />
+        <Item text="デバイス管理サブスクリプションの状態" url="/en-us/api-reference/v1.0/resources/intune_devices_devicemanagementsubscriptionstate" />
         <Item text="デバイス管理のトラブルシューティング イベント" url="/en-us/api-reference/v1.0/resources/intune_troubleshooting_devicemanagementtroubleshootingevent">
           <Item text="一覧表示" url="/en-us/api-reference/v1.0/api/intune_troubleshooting_devicemanagementtroubleshootingevent_list" />
           <Item text="取得" url="/en-us/api-reference/v1.0/api/intune_troubleshooting_devicemanagementtroubleshootingevent_get" />
@@ -1173,31 +1176,8 @@
           <Item text="削除" url="/en-us/api-reference/v1.0/api/intune_troubleshooting_devicemanagementtroubleshootingevent_delete" />
           <Item text="更新" url="/en-us/api-reference/v1.0/api/intune_troubleshooting_devicemanagementtroubleshootingevent_update" />
         </Item>
-        <Item text="デバイスの管理" url="/en-us/api-reference/v1.0/resources/intune_devices_devicemanagement">
-          <Item text="取得" url="/en-us/api-reference/v1.0/api/intune_devices_devicemanagement_get" />
-          <Item text="更新" url="/en-us/api-reference/v1.0/api/intune_devices_devicemanagement_update" />
-        </Item>
-        <Item text="デバイスの管理" url="/en-us/api-reference/v1.0/resources/intune_endpointprotection_devicemanagement">
-          <Item text="取得" url="/en-us/api-reference/v1.0/api/intune_endpointprotection_devicemanagement_get" />
-          <Item text="更新" url="/en-us/api-reference/v1.0/api/intune_endpointprotection_devicemanagement_update" />
-        </Item>
-        <Item text="デバイスの管理" url="/en-us/api-reference/v1.0/resources/intune_notification_devicemanagement">
-          <Item text="取得" url="/en-us/api-reference/v1.0/api/intune_notification_devicemanagement_get" />
-          <Item text="更新" url="/en-us/api-reference/v1.0/api/intune_notification_devicemanagement_update" />
-        </Item>
-        <Item text="デバイスの管理" url="/en-us/api-reference/v1.0/resources/intune_remoteassistance_devicemanagement">
-          <Item text="取得" url="/en-us/api-reference/v1.0/api/intune_remoteassistance_devicemanagement_get" />
-          <Item text="更新" url="/en-us/api-reference/v1.0/api/intune_remoteassistance_devicemanagement_update" />
-        </Item>
-        <Item text="デバイスの管理" url="/en-us/api-reference/v1.0/resources/intune_troubleshooting_devicemanagement">
-          <Item text="取得" url="/en-us/api-reference/v1.0/api/intune_troubleshooting_devicemanagement_get" />
-          <Item text="更新" url="/en-us/api-reference/v1.0/api/intune_troubleshooting_devicemanagement_update" />
-        </Item>
-        <Item text="デバイスの管理" url="/en-us/api-reference/v1.0/resources/intune_auditing_devicemanagement">
-          <Item text="取得" url="/en-us/api-reference/v1.0/api/intune_auditing_devicemanagement_get" />
-          <Item text="更新" url="/en-us/api-reference/v1.0/api/intune_auditing_devicemanagement_update" />
-        </Item>
         <Item text="デバイスのオペレーティング システムの概要" url="/en-us/api-reference/v1.0/resources/intune_devices_deviceoperatingsystemsummary" />
+        <Item text="デバイスの登録状態" url="/en-us/api-reference/v1.0/resources/intune_devices_deviceregistrationstate" />
         <Item text="登録のトラブルシューティング イベント" url="/en-us/api-reference/v1.0/resources/intune_troubleshooting_enrollmenttroubleshootingevent">
           <Item text="一覧表示" url="/en-us/api-reference/v1.0/api/intune_troubleshooting_enrollmenttroubleshootingevent_list" />
           <Item text="取得" url="/en-us/api-reference/v1.0/api/intune_troubleshooting_enrollmenttroubleshootingevent_get" />
@@ -1213,10 +1193,6 @@
           <Item text="更新" url="/en-us/api-reference/v1.0/api/intune_notification_localizednotificationmessage_update" />
         </Item>
         <Item text="デバイスの検索アクションの結果" url="/en-us/api-reference/v1.0/resources/intune_devices_locatedeviceactionresult" />
-        <Item text="管理対象デバイスの概要" url="/en-us/api-reference/v1.0/resources/intune_devices_manageddeviceoverview">
-          <Item text="取得" url="/en-us/api-reference/v1.0/api/intune_devices_manageddeviceoverview_get" />
-          <Item text="更新" url="/en-us/api-reference/v1.0/api/intune_devices_manageddeviceoverview_update" />
-        </Item>
         <Item text="管理対象デバイス" url="/en-us/api-reference/v1.0/resources/intune_devices_manageddevice">
           <Item text="一覧表示" url="/en-us/api-reference/v1.0/api/intune_devices_manageddevice_list" />
           <Item text="取得" url="/en-us/api-reference/v1.0/api/intune_devices_manageddevice_get" />
@@ -1242,6 +1218,22 @@
           <Item text="windowsDefenderUpdateSignatures アクション" url="/en-us/api-reference/v1.0/api/intune_devices_manageddevice_windowsdefenderupdatesignatures" />
           <Item text="updateWindowsDeviceAccount アクション" url="/en-us/api-reference/v1.0/api/intune_devices_manageddevice_updatewindowsdeviceaccount" />
         </Item>
+        <Item text="管理対象デバイスの概要" url="/en-us/api-reference/v1.0/resources/intune_devices_manageddeviceoverview">
+          <Item text="取得" url="/en-us/api-reference/v1.0/api/intune_devices_manageddeviceoverview_get" />
+          <Item text="更新" url="/en-us/api-reference/v1.0/api/intune_devices_manageddeviceoverview_update" />
+        </Item>
+        <Item text="管理対象デバイスの所有者の種類" url="/en-us/api-reference/v1.0/resources/intune_devices_manageddeviceownertype" />
+        <Item text="管理対象デバイスのパートナー正常性状態の報告" url="/en-us/api-reference/v1.0/resources/intune_devices_manageddevicepartnerreportedhealthstate" />
+        <Item text="管理エージェントの種類" url="/en-us/api-reference/v1.0/resources/intune_devices_managementagenttype" />
+        <Item text="モバイル アプリのアクションの種類" url="/en-us/api-reference/v1.0/resources/intune_troubleshooting_mobileappactiontype" />
+        <Item text="モバイル アプリの目的" url="/en-us/api-reference/v1.0/resources/intune_troubleshooting_mobileappintent" />
+        <Item text="モバイル アプリの目的と状態の詳細" url="/en-us/api-reference/v1.0/resources/intune_troubleshooting_mobileappintentandstatedetail" />
+        <Item text="モバイル アプリのトラブルシューティング　 アプリのポリシー作成履歴" url="/en-us/api-reference/v1.0/resources/intune_troubleshooting_mobileapptroubleshootingapppolicycreationhistory" />
+        <Item text="モバイル アプリのトラブルシューティング　 アプリの状態履歴" url="/en-us/api-reference/v1.0/resources/intune_troubleshooting_mobileapptroubleshootingappstatehistory" />
+        <Item text="モバイル アプリのトラブルシューティング　 アプリの対象履歴" url="/en-us/api-reference/v1.0/resources/intune_troubleshooting_mobileapptroubleshootingapptargethistory" />
+        <Item text="モバイル アプリのトラブルシューティング　 アプリの更新履歴" url="/en-us/api-reference/v1.0/resources/intune_troubleshooting_mobileapptroubleshootingappupdatehistory" />
+        <Item text="モバイル アプリのトラブルシューティング デバイスのチェックイン履歴" url="/en-us/api-reference/v1.0/resources/intune_troubleshooting_mobileapptroubleshootingdevicecheckinhistory" />
+        <Item text="モバイル アプリのトラブルシューティング履歴項目" url="/en-us/api-reference/v1.0/resources/intune_troubleshooting_mobileapptroubleshootinghistoryitem" />
         <Item text="通知メッセージ テンプレート" url="/en-us/api-reference/v1.0/resources/intune_notification_notificationmessagetemplate">
           <Item text="リスト" url="/en-us/api-reference/v1.0/api/intune_notification_notificationmessagetemplate_list" />
           <Item text="取得" url="/en-us/api-reference/v1.0/api/intune_notification_notificationmessagetemplate_get" />
@@ -1250,6 +1242,8 @@
           <Item text="更新" url="/en-us/api-reference/v1.0/api/intune_notification_notificationmessagetemplate_update" />
           <Item text="sendTestMessage アクション" url="/en-us/api-reference/v1.0/api/intune_notification_notificationmessagetemplate_sendtestmessage" />
         </Item>
+        <Item text="通知テンプレートのブランド化オプション" url="/en-us/api-reference/v1.0/resources/intune_notification_notificationtemplatebrandingoptions" />
+        <Item text="リモート アシスタンス オンボード状態" url="/en-us/api-reference/v1.0/resources/intune_remoteassistance_remoteassistanceonboardingstatus" />
         <Item text="リモート アシスタンス パートナー" url="/en-us/api-reference/v1.0/resources/intune_remoteassistance_remoteassistancepartner">
           <Item text="リスト" url="/en-us/api-reference/v1.0/api/intune_remoteassistance_remoteassistancepartner_list" />
           <Item text="取得" url="/en-us/api-reference/v1.0/api/intune_remoteassistance_remoteassistancepartner_get" />
@@ -1261,30 +1255,15 @@
         </Item>
         <Item text="リモート ロック アクションの結果" url="/en-us/api-reference/v1.0/resources/intune_devices_remotelockactionresult" />
         <Item text="パスコードのリセット アクションの結果" url="/en-us/api-reference/v1.0/resources/intune_devices_resetpasscodeactionresult" />
-        <Item text="Windows のデバイス アカウントのアクション パラメーターの更新" url="/en-us/api-reference/v1.0/resources/intune_devices_updatewindowsdeviceaccountactionparameter" />
-        <Item text="ユーザー" url="/en-us/api-reference/v1.0/resources/intune_devices_user">
-          <Item text="一覧表示" url="/en-us/api-reference/v1.0/api/intune_devices_user_list" />
-          <Item text="取得" url="/en-us/api-reference/v1.0/api/intune_devices_user_get" />
-          <Item text="作成" url="/en-us/api-reference/v1.0/api/intune_devices_user_create" />
-          <Item text="削除" url="/en-us/api-reference/v1.0/api/intune_devices_user_delete" />
-          <Item text="更新" url="/en-us/api-reference/v1.0/api/intune_devices_user_update" />
-          <Item text="removeAllDevicesFromManagement アクション" url="/en-us/api-reference/v1.0/api/intune_devices_user_removealldevicesfrommanagement" />
-        </Item>
-        <Item text="ユーザー" url="/en-us/api-reference/v1.0/resources/intune_troubleshooting_user">
-          <Item text="一覧表示" url="/en-us/api-reference/v1.0/api/intune_troubleshooting_user_list" />
-          <Item text="取得" url="/en-us/api-reference/v1.0/api/intune_troubleshooting_user_get" />
-          <Item text="作成" url="/en-us/api-reference/v1.0/api/intune_troubleshooting_user_create" />
-          <Item text="削除" url="/en-us/api-reference/v1.0/api/intune_troubleshooting_user_delete" />
-          <Item text="更新" url="/en-us/api-reference/v1.0/api/intune_troubleshooting_user_update" />
-        </Item>
+        <Item text="アプリの状態の結果" url="/en-us/api-reference/v1.0/resources/intune_troubleshooting_resultantappstate" />
+        <Item text="実行状態" url="/en-us/api-reference/v1.0/resources/intune_troubleshooting_runstate" />
+        <Item text="Windows デバイス アカウントのアクション パラメーターの更新" url="/en-us/api-reference/v1.0/resources/intune_devices_updatewindowsdeviceaccountactionparameter" />
         <Item text="Windows defender のスキャン アクションの結果" url="/en-us/api-reference/v1.0/resources/intune_devices_windowsdefenderscanactionresult" />
         <Item text="Windows のデバイス アカウント" url="/en-us/api-reference/v1.0/resources/intune_devices_windowsdeviceaccount" />
         <Item text="Windows のデバイス AD アカウント" url="/en-us/api-reference/v1.0/resources/intune_devices_windowsdeviceadaccount" />
         <Item text="Windows のデバイス Azure AD アカウント" url="/en-us/api-reference/v1.0/resources/intune_devices_windowsdeviceazureadaccount" />
       </Item>
-      <Item text="アプリ保護" url="/en-us/api-reference/v1.0/resources/intune_app_protection_conceptual">
-        <Item text="すべてのデバイスの割り当て先" url="/en-us/api-reference/v1.0/resources/intune_mam_alldevicesassignmenttarget" />
-        <Item text="すべてのライセンス ユーザーの割り当て先" url="/en-us/api-reference/v1.0/resources/intune_mam_alllicensedusersassignmenttarget" />
+      <Item text="モバイル アプリの保護" url="/en-us/api-reference/v1.0/resources/intune_app_protection_conceptual">
         <Item text="Android 管理対象アプリの保護" url="/en-us/api-reference/v1.0/resources/intune_mam_androidmanagedappprotection">
           <Item text="リスト" url="/en-us/api-reference/v1.0/api/intune_mam_androidmanagedappprotection_list" />
           <Item text="取得" url="/en-us/api-reference/v1.0/api/intune_mam_androidmanagedappprotection_get" />
@@ -1295,8 +1274,10 @@
         <Item text="Android 管理対象アプリの登録" url="/en-us/api-reference/v1.0/resources/intune_mam_androidmanagedappregistration">
           <Item text="リスト" url="/en-us/api-reference/v1.0/api/intune_mam_androidmanagedappregistration_list" />
           <Item text="取得" url="/en-us/api-reference/v1.0/api/intune_mam_androidmanagedappregistration_get" />
+          <Item text="作成" url="/en-us/api-reference/v1.0/api/intune_mam_androidmanagedappregistration_create" />
         </Item>
         <Item text="Android モバイル アプリ ID" url="/en-us/api-reference/v1.0/resources/intune_mam_androidmobileappidentifier" />
+        <Item text="アプリケーションの種類" url="/en-us/api-reference/v1.0/resources/intune_wip_applicationtype" />
         <Item text="既定の管理対象アプリ保護" url="/en-us/api-reference/v1.0/resources/intune_mam_defaultmanagedappprotection">
           <Item text="リスト" url="/en-us/api-reference/v1.0/api/intune_mam_defaultmanagedappprotection_list" />
           <Item text="取得" url="/en-us/api-reference/v1.0/api/intune_mam_defaultmanagedappprotection_get" />
@@ -1304,17 +1285,6 @@
           <Item text="削除" url="/en-us/api-reference/v1.0/api/intune_mam_defaultmanagedappprotection_delete" />
           <Item text="更新" url="/en-us/api-reference/v1.0/api/intune_mam_defaultmanagedappprotection_update" />
         </Item>
-        <Item text="デバイスおよびアプリ管理の割り当て先" url="/en-us/api-reference/v1.0/resources/intune_mam_deviceandappmanagementassignmenttarget" />
-        <Item text="デバイス アプリの管理" url="/en-us/api-reference/v1.0/resources/intune_mam_deviceappmanagement">
-          <Item text="取得" url="/en-us/api-reference/v1.0/api/intune_mam_deviceappmanagement_get" />
-          <Item text="更新" url="/en-us/api-reference/v1.0/api/intune_mam_deviceappmanagement_update" />
-        </Item>
-        <Item text="デバイスの管理" url="/en-us/api-reference/v1.0/resources/intune_wip_devicemanagement">
-          <Item text="取得" url="/en-us/api-reference/v1.0/api/intune_wip_devicemanagement_get" />
-          <Item text="更新" url="/en-us/api-reference/v1.0/api/intune_wip_devicemanagement_update" />
-        </Item>
-        <Item text="除外グループの割り当て先" url="/en-us/api-reference/v1.0/resources/intune_mam_exclusiongroupassignmenttarget" />
-        <Item text="グループの割り当て先" url="/en-us/api-reference/v1.0/resources/intune_mam_groupassignmenttarget" />
         <Item text="iOS 管理対象アプリ保護" url="/en-us/api-reference/v1.0/resources/intune_mam_iosmanagedappprotection">
           <Item text="リスト" url="/en-us/api-reference/v1.0/api/intune_mam_iosmanagedappprotection_list" />
           <Item text="取得" url="/en-us/api-reference/v1.0/api/intune_mam_iosmanagedappprotection_get" />
@@ -1332,11 +1302,16 @@
         <Item text="IPv6 の範囲" url="/en-us/api-reference/v1.0/resources/intune_mam_ipv6range" />
         <Item text="JSON" url="/en-us/api-reference/v1.0/resources/intune_mam_json" />
         <Item text="キー/値のペア" url="/en-us/api-reference/v1.0/resources/intune_mam_keyvaluepair" />
+        <Item text="管理対象アプリのクリップボード共有レベル" url="/en-us/api-reference/v1.0/resources/intune_mam_managedappclipboardsharinglevel" />
         <Item text="管理対象アプリの構成" url="/en-us/api-reference/v1.0/resources/intune_mam_managedappconfiguration">
           <Item text="リスト" url="/en-us/api-reference/v1.0/api/intune_mam_managedappconfiguration_list" />
           <Item text="取得" url="/en-us/api-reference/v1.0/api/intune_mam_managedappconfiguration_get" />
         </Item>
+        <Item text="管理対象アプリのデータの暗号化種類" url="/en-us/api-reference/v1.0/resources/intune_mam_managedappdataencryptiontype" />
+        <Item text="管理対象アプリのデータの保存場所" url="/en-us/api-reference/v1.0/resources/intune_mam_managedappdatastoragelocation" />
+        <Item text="管理対象アプリのデータ転送レベル" url="/en-us/api-reference/v1.0/resources/intune_mam_managedappdatatransferlevel" />
         <Item text="管理対象アプリの診断状態" url="/en-us/api-reference/v1.0/resources/intune_mam_managedappdiagnosticstatus" />
+        <Item text="管理対象アプリのフラグ付き理由" url="/en-us/api-reference/v1.0/resources/intune_mam_managedappflaggedreason" />
         <Item text="管理対象アプリの操作" url="/en-us/api-reference/v1.0/resources/intune_mam_managedappoperation">
           <Item text="リスト" url="/en-us/api-reference/v1.0/api/intune_mam_managedappoperation_list" />
           <Item text="取得" url="/en-us/api-reference/v1.0/api/intune_mam_managedappoperation_get" />
@@ -1344,16 +1319,17 @@
           <Item text="削除" url="/en-us/api-reference/v1.0/api/intune_mam_managedappoperation_delete" />
           <Item text="更新" url="/en-us/api-reference/v1.0/api/intune_mam_managedappoperation_update" />
         </Item>
-        <Item text="アプリごとの管理対象アプリ ポリシーの展開の概要" url="/en-us/api-reference/v1.0/resources/intune_mam_managedapppolicydeploymentsummaryperapp" />
-        <Item text="管理対象アプリ ポリシーの展開の概要" url="/en-us/api-reference/v1.0/resources/intune_mam_managedapppolicydeploymentsummary">
-          <Item text="取得" url="/en-us/api-reference/v1.0/api/intune_mam_managedapppolicydeploymentsummary_get" />
-          <Item text="更新" url="/en-us/api-reference/v1.0/api/intune_mam_managedapppolicydeploymentsummary_update" />
-        </Item>
+        <Item text="管理対象アプリの暗証番号 (PIN) 文字セット" url="/en-us/api-reference/v1.0/resources/intune_mam_managedapppincharacterset" />
         <Item text="管理対象アプリ ポリシー" url="/en-us/api-reference/v1.0/resources/intune_mam_managedapppolicy">
           <Item text="リスト" url="/en-us/api-reference/v1.0/api/intune_mam_managedapppolicy_list" />
           <Item text="取得" url="/en-us/api-reference/v1.0/api/intune_mam_managedapppolicy_get" />
           <Item text="targetApps アクション" url="/en-us/api-reference/v1.0/api/intune_mam_managedapppolicy_targetapps" />
         </Item>
+        <Item text="管理対象アプリ ポリシーの展開の概要" url="/en-us/api-reference/v1.0/resources/intune_mam_managedapppolicydeploymentsummary">
+          <Item text="取得" url="/en-us/api-reference/v1.0/api/intune_mam_managedapppolicydeploymentsummary_get" />
+          <Item text="更新" url="/en-us/api-reference/v1.0/api/intune_mam_managedapppolicydeploymentsummary_update" />
+        </Item>
+        <Item text="アプリごとの管理対象アプリ ポリシーの展開の概要" url="/en-us/api-reference/v1.0/resources/intune_mam_managedapppolicydeploymentsummaryperapp" />
         <Item text="管理対象アプリ保護" url="/en-us/api-reference/v1.0/resources/intune_mam_managedappprotection">
           <Item text="リスト" url="/en-us/api-reference/v1.0/api/intune_mam_managedappprotection_list" />
           <Item text="取得" url="/en-us/api-reference/v1.0/api/intune_mam_managedappprotection_get" />
@@ -1363,13 +1339,13 @@
           <Item text="リスト" url="/en-us/api-reference/v1.0/api/intune_mam_managedappregistration_list" />
           <Item text="取得" url="/en-us/api-reference/v1.0/api/intune_mam_managedappregistration_get" />
         </Item>
-        <Item text="管理対象アプリの Raw 状態" url="/en-us/api-reference/v1.0/resources/intune_mam_managedappstatusraw">
-          <Item text="リスト" url="/en-us/api-reference/v1.0/api/intune_mam_managedappstatusraw_list" />
-          <Item text="取得" url="/en-us/api-reference/v1.0/api/intune_mam_managedappstatusraw_get" />
-        </Item>
         <Item text="管理対象アプリの状態" url="/en-us/api-reference/v1.0/resources/intune_mam_managedappstatus">
           <Item text="リスト" url="/en-us/api-reference/v1.0/api/intune_mam_managedappstatus_list" />
           <Item text="取得" url="/en-us/api-reference/v1.0/api/intune_mam_managedappstatus_get" />
+        </Item>
+        <Item text="管理対象アプリの Raw 状態" url="/en-us/api-reference/v1.0/resources/intune_mam_managedappstatusraw">
+          <Item text="リスト" url="/en-us/api-reference/v1.0/api/intune_mam_managedappstatusraw_list" />
+          <Item text="取得" url="/en-us/api-reference/v1.0/api/intune_mam_managedappstatusraw_get" />
         </Item>
         <Item text="管理対象モバイル アプリ" url="/en-us/api-reference/v1.0/resources/intune_mam_managedmobileapp">
           <Item text="一覧表示" url="/en-us/api-reference/v1.0/api/intune_mam_managedmobileapp_list" />
@@ -1396,19 +1372,23 @@
           <Item text="アクションの割り当て" url="/en-us/api-reference/v1.0/api/intune_mam_targetedmanagedappconfiguration_assign" />
           <Item text="targetApps アクション" url="/en-us/api-reference/v1.0/api/intune_mam_targetedmanagedappconfiguration_targetapps" />
         </Item>
+        <Item text="対象となる管理対象アプリ ポリシーの割り当て" url="/en-us/api-reference/v1.0/resources/intune_mam_targetedmanagedapppolicyassignment">
+          <Item text="リスト" url="/en-us/api-reference/v1.0/api/intune_mam_targetedmanagedapppolicyassignment_list" />
+          <Item text="取得" url="/en-us/api-reference/v1.0/api/intune_mam_targetedmanagedapppolicyassignment_get" />
+          <Item text="削除" url="/en-us/api-reference/v1.0/api/intune_mam_targetedmanagedapppolicyassignment_delete" />
+          <Item text="更新" url="/en-us/api-reference/v1.0/api/intune_mam_targetedmanagedapppolicyassignment_update" />
+        </Item>
         <Item text="対象となる管理対象アプリの保護" url="/en-us/api-reference/v1.0/resources/intune_mam_targetedmanagedappprotection">
           <Item text="リスト" url="/en-us/api-reference/v1.0/api/intune_mam_targetedmanagedappprotection_list" />
           <Item text="取得" url="/en-us/api-reference/v1.0/api/intune_mam_targetedmanagedappprotection_get" />
-          <Item text="アクションの割り当て" url="/en-us/api-reference/v1.0/api/intune_mam_targetedmanagedappprotection_assign" />
+          <Item text="割り当てのアクション" url="/en-us/api-reference/v1.0/api/intune_mam_targetedmanagedappprotection_assign" />
         </Item>
-        <Item text="ユーザー" url="/en-us/api-reference/v1.0/resources/intune_mam_user">
-          <Item text="一覧表示" url="/en-us/api-reference/v1.0/api/intune_mam_user_list" />
-          <Item text="取得" url="/en-us/api-reference/v1.0/api/intune_mam_user_get" />
-          <Item text="作成" url="/en-us/api-reference/v1.0/api/intune_mam_user_create" />
-          <Item text="削除" url="/en-us/api-reference/v1.0/api/intune_mam_user_delete" />
-          <Item text="更新" url="/en-us/api-reference/v1.0/api/intune_mam_user_update" />
-          <Item text="wipeManagedAppRegistrationsByDeviceTag アクション" url="/en-us/api-reference/v1.0/api/intune_mam_user_wipemanagedappregistrationsbydevicetag" />
+        <Item text="Windows 情報保護" url="/en-us/api-reference/v1.0/resources/intune_mam_windowsinformationprotection">
+          <Item text="リスト" url="/en-us/api-reference/v1.0/api/intune_mam_windowsinformationprotection_list" />
+          <Item text="取得" url="/en-us/api-reference/v1.0/api/intune_mam_windowsinformationprotection_get" />
+          <Item text="割り当てのアクション" url="/en-us/api-reference/v1.0/api/intune_mam_windowsinformationprotection_assign" />
         </Item>
+        <Item text="Windows 情報保護アプリ" url="/en-us/api-reference/v1.0/resources/intune_mam_windowsinformationprotectionapp" />
         <Item text="Windows 情報保護アプリの学習概要" url="/en-us/api-reference/v1.0/resources/intune_wip_windowsinformationprotectionapplearningsummary">
           <Item text="リスト" url="/en-us/api-reference/v1.0/api/intune_wip_windowsinformationprotectionapplearningsummary_list" />
           <Item text="取得" url="/en-us/api-reference/v1.0/api/intune_wip_windowsinformationprotectionapplearningsummary_get" />
@@ -1423,9 +1403,9 @@
           <Item text="削除" url="/en-us/api-reference/v1.0/api/intune_mam_windowsinformationprotectionapplockerfile_delete" />
           <Item text="更新" url="/en-us/api-reference/v1.0/api/intune_mam_windowsinformationprotectionapplockerfile_update" />
         </Item>
-        <Item text="Windows 情報保護アプリ" url="/en-us/api-reference/v1.0/resources/intune_mam_windowsinformationprotectionapp" />
         <Item text="Windows 情報保護のデータ回復証明書" url="/en-us/api-reference/v1.0/resources/intune_mam_windowsinformationprotectiondatarecoverycertificate" />
         <Item text="Windows 情報保護のデスクトップ アプリ" url="/en-us/api-reference/v1.0/resources/intune_mam_windowsinformationprotectiondesktopapp" />
+        <Item text="Windows 情報保護の実施レベル" url="/en-us/api-reference/v1.0/resources/intune_mam_windowsinformationprotectionenforcementlevel" />
         <Item text="Windows 情報保護の IP 範囲のコレクション" url="/en-us/api-reference/v1.0/resources/intune_mam_windowsinformationprotectioniprangecollection" />
         <Item text="Windows 情報保護のネットワークの学習概要" url="/en-us/api-reference/v1.0/resources/intune_wip_windowsinformationprotectionnetworklearningsummary">
           <Item text="リスト" url="/en-us/api-reference/v1.0/api/intune_wip_windowsinformationprotectionnetworklearningsummary_list" />
@@ -1434,6 +1414,7 @@
           <Item text="削除" url="/en-us/api-reference/v1.0/api/intune_wip_windowsinformationprotectionnetworklearningsummary_delete" />
           <Item text="更新" url="/en-us/api-reference/v1.0/api/intune_wip_windowsinformationprotectionnetworklearningsummary_update" />
         </Item>
+        <Item text="Windows 情報保護暗証番号 (PIN) の文字の要件" url="/en-us/api-reference/v1.0/resources/intune_mam_windowsinformationprotectionpincharacterrequirements" />
         <Item text="Windows 情報保護ポリシー" url="/en-us/api-reference/v1.0/resources/intune_mam_windowsinformationprotectionpolicy">
           <Item text="リスト" url="/en-us/api-reference/v1.0/api/intune_mam_windowsinformationprotectionpolicy_list" />
           <Item text="取得" url="/en-us/api-reference/v1.0/api/intune_mam_windowsinformationprotectionpolicy_get" />
@@ -1444,28 +1425,8 @@
         <Item text="Windows 情報保護のプロキシ化されたドメイン コレクション" url="/en-us/api-reference/v1.0/resources/intune_mam_windowsinformationprotectionproxieddomaincollection" />
         <Item text="Windows 情報保護のリソース コレクション" url="/en-us/api-reference/v1.0/resources/intune_mam_windowsinformationprotectionresourcecollection" />
         <Item text="Windows 情報保護ストア アプリ" url="/en-us/api-reference/v1.0/resources/intune_mam_windowsinformationprotectionstoreapp" />
-        <Item text="Windows 情報保護" url="/en-us/api-reference/v1.0/resources/intune_mam_windowsinformationprotection">
-          <Item text="リスト" url="/en-us/api-reference/v1.0/api/intune_mam_windowsinformationprotection_list" />
-          <Item text="取得" url="/en-us/api-reference/v1.0/api/intune_mam_windowsinformationprotection_get" />
-          <Item text="アクションの割り当て" url="/en-us/api-reference/v1.0/api/intune_mam_windowsinformationprotection_assign" />
-        </Item>
       </Item>
-      <Item text="オンボーディング" url="/en-us/api-reference/v1.0/resources/intune_onboarding_conceptual">
-        <Item text="すべてのデバイスの割り当て先" url="/en-us/api-reference/v1.0/resources/intune_onboarding_alldevicesassignmenttarget" />
-        <Item text="すべてのライセンス ユーザーの割り当て先" url="/en-us/api-reference/v1.0/resources/intune_onboarding_alllicensedusersassignmenttarget" />
-        <Item text="デバイスおよびアプリ管理の割り当て先" url="/en-us/api-reference/v1.0/resources/intune_onboarding_deviceandappmanagementassignmenttarget" />
-        <Item text="デバイス アプリの管理" url="/en-us/api-reference/v1.0/resources/intune_onboarding_deviceappmanagement">
-          <Item text="取得" url="/en-us/api-reference/v1.0/api/intune_onboarding_deviceappmanagement_get" />
-          <Item text="更新" url="/en-us/api-reference/v1.0/api/intune_onboarding_deviceappmanagement_update" />
-          <Item text="syncMicrosoftStoreForBusinessApps アクション" url="/en-us/api-reference/v1.0/api/intune_onboarding_deviceappmanagement_syncmicrosoftstoreforbusinessapps" />
-        </Item>
-        <Item text="デバイス カテゴリ" url="/en-us/api-reference/v1.0/resources/intune_onboarding_devicecategory">
-          <Item text="リスト" url="/en-us/api-reference/v1.0/api/intune_onboarding_devicecategory_list" />
-          <Item text="取得" url="/en-us/api-reference/v1.0/api/intune_onboarding_devicecategory_get" />
-          <Item text="作成" url="/en-us/api-reference/v1.0/api/intune_onboarding_devicecategory_create" />
-          <Item text="削除" url="/en-us/api-reference/v1.0/api/intune_onboarding_devicecategory_delete" />
-          <Item text="更新" url="/en-us/api-reference/v1.0/api/intune_onboarding_devicecategory_update" />
-        </Item>
+      <Item text="オンボード" url="/en-us/api-reference/v1.0/resources/intune_onboarding_conceptual">
         <Item text="デバイス登録の構成" url="/en-us/api-reference/v1.0/resources/intune_onboarding_deviceenrollmentconfiguration">
           <Item text="一覧表示" url="/en-us/api-reference/v1.0/api/intune_onboarding_deviceenrollmentconfiguration_list" />
           <Item text="取得" url="/en-us/api-reference/v1.0/api/intune_onboarding_deviceenrollmentconfiguration_get" />
@@ -1502,6 +1463,9 @@
           <Item text="更新" url="/en-us/api-reference/v1.0/api/intune_onboarding_devicemanagementexchangeconnector_update" />
           <Item text="同期アクション" url="/en-us/api-reference/v1.0/api/intune_onboarding_devicemanagementexchangeconnector_sync" />
         </Item>
+        <Item text="デバイスの管理 Exchange コネクタの状態" url="/en-us/api-reference/v1.0/resources/intune_onboarding_devicemanagementexchangeconnectorstatus" />
+        <Item text="デバイスの管理 Exchange コネクタの同期タイプ" url="/en-us/api-reference/v1.0/resources/intune_onboarding_devicemanagementexchangeconnectorsynctype" />
+        <Item text="デバイスの管理 Exchange コネクタのタイプ" url="/en-us/api-reference/v1.0/resources/intune_onboarding_devicemanagementexchangeconnectortype" />
         <Item text="デバイス管理パートナー" url="/en-us/api-reference/v1.0/resources/intune_onboarding_devicemanagementpartner">
           <Item text="一覧表示" url="/en-us/api-reference/v1.0/api/intune_onboarding_devicemanagementpartner_list" />
           <Item text="取得" url="/en-us/api-reference/v1.0/api/intune_onboarding_devicemanagementpartner_get" />
@@ -1509,10 +1473,9 @@
           <Item text="削除" url="/en-us/api-reference/v1.0/api/intune_onboarding_devicemanagementpartner_delete" />
           <Item text="更新" url="/en-us/api-reference/v1.0/api/intune_onboarding_devicemanagementpartner_update" />
         </Item>
-        <Item text="デバイスの管理" url="/en-us/api-reference/v1.0/resources/intune_onboarding_devicemanagement">
-          <Item text="取得" url="/en-us/api-reference/v1.0/api/intune_onboarding_devicemanagement_get" />
-          <Item text="更新" url="/en-us/api-reference/v1.0/api/intune_onboarding_devicemanagement_update" />
-        </Item>
+        <Item text="デバイス管理パートナー アプリの種類" url="/en-us/api-reference/v1.0/resources/intune_onboarding_devicemanagementpartnerapptype" />
+        <Item text="デバイス管理パートナー テナントの状態" url="/en-us/api-reference/v1.0/resources/intune_onboarding_devicemanagementpartnertenantstate" />
+        <Item text="有効化" url="/en-us/api-reference/v1.0/resources/intune_onboarding_enablement" />
         <Item text="登録構成の割り当て" url="/en-us/api-reference/v1.0/resources/intune_onboarding_enrollmentconfigurationassignment">
           <Item text="リスト" url="/en-us/api-reference/v1.0/api/intune_onboarding_enrollmentconfigurationassignment_list" />
           <Item text="取得" url="/en-us/api-reference/v1.0/api/intune_onboarding_enrollmentconfigurationassignment_get" />
@@ -1520,10 +1483,8 @@
           <Item text="削除" url="/en-us/api-reference/v1.0/api/intune_onboarding_enrollmentconfigurationassignment_delete" />
           <Item text="更新" url="/en-us/api-reference/v1.0/api/intune_onboarding_enrollmentconfigurationassignment_update" />
         </Item>
-        <Item text="除外グループの割り当て先" url="/en-us/api-reference/v1.0/resources/intune_onboarding_exclusiongroupassignmenttarget" />
-        <Item text="グループの割り当て先" url="/en-us/api-reference/v1.0/resources/intune_onboarding_groupassignmenttarget" />
         <Item text="Intune ブランド" url="/en-us/api-reference/v1.0/resources/intune_onboarding_intunebrand" />
-        <Item text="MIME コンテンツ" url="/en-us/api-reference/v1.0/resources/intune_onboarding_mimecontent" />
+        <Item text="MDM 機関" url="/en-us/api-reference/v1.0/resources/intune_onboarding_mdmauthority" />
         <Item text="モバイルの脅威保護コネクタ" url="/en-us/api-reference/v1.0/resources/intune_onboarding_mobilethreatdefenseconnector">
           <Item text="一覧表示" url="/en-us/api-reference/v1.0/api/intune_onboarding_mobilethreatdefenseconnector_list" />
           <Item text="取得" url="/en-us/api-reference/v1.0/api/intune_onboarding_mobilethreatdefenseconnector_get" />
@@ -1531,6 +1492,7 @@
           <Item text="削除" url="/en-us/api-reference/v1.0/api/intune_onboarding_mobilethreatdefenseconnector_delete" />
           <Item text="更新" url="/en-us/api-reference/v1.0/api/intune_onboarding_mobilethreatdefenseconnector_update" />
         </Item>
+        <Item text="モバイル脅威パートナーのテナント状態" url="/en-us/api-reference/v1.0/resources/intune_onboarding_mobilethreatpartnertenantstate" />
         <Item text="オンプレミスの条件付きアクセス設定" url="/en-us/api-reference/v1.0/resources/intune_onboarding_onpremisesconditionalaccesssettings">
           <Item text="取得" url="/en-us/api-reference/v1.0/api/intune_onboarding_onpremisesconditionalaccesssettings_get" />
           <Item text="更新" url="/en-us/api-reference/v1.0/api/intune_onboarding_onpremisesconditionalaccesssettings_update" />
@@ -1542,13 +1504,18 @@
           <Item text="setMobileDeviceManagementAuthority アクション" url="/en-us/api-reference/v1.0/api/intune_onboarding_organization_setmobiledevicemanagementauthority" />
         </Item>
         <Item text="RGB カラー" url="/en-us/api-reference/v1.0/resources/intune_onboarding_rgbcolor" />
-        <Item text="ユーザー" url="/en-us/api-reference/v1.0/resources/intune_onboarding_user">
-          <Item text="一覧表示" url="/en-us/api-reference/v1.0/api/intune_onboarding_user_list" />
-          <Item text="取得" url="/en-us/api-reference/v1.0/api/intune_onboarding_user_get" />
-          <Item text="作成" url="/en-us/api-reference/v1.0/api/intune_onboarding_user_create" />
-          <Item text="削除" url="/en-us/api-reference/v1.0/api/intune_onboarding_user_delete" />
-          <Item text="更新" url="/en-us/api-reference/v1.0/api/intune_onboarding_user_update" />
+        <Item text="VPP トークン" url="/en-us/api-reference/v1.0/resources/intune_onboarding_vpptoken">
+          <Item text="一覧表示" url="/en-us/api-reference/v1.0/api/intune_onboarding_vpptoken_list" />
+          <Item text="取得" url="/en-us/api-reference/v1.0/api/intune_onboarding_vpptoken_get" />
+          <Item text="作成" url="/en-us/api-reference/v1.0/api/intune_onboarding_vpptoken_create" />
+          <Item text="削除" url="/en-us/api-reference/v1.0/api/intune_onboarding_vpptoken_delete" />
+          <Item text="更新" url="/en-us/api-reference/v1.0/api/intune_onboarding_vpptoken_update" />
+          <Item text="syncLicenses アクション" url="/en-us/api-reference/v1.0/api/intune_onboarding_vpptoken_synclicenses" />
+          <Item text="syncLicenses アクション" url="/en-us/api-reference/v1.0/api/intune_onboarding_vpptoken_synclicenses" />
         </Item>
+        <Item text="VPP トークンの状態" url="/en-us/api-reference/v1.0/resources/intune_onboarding_vpptokenstate" />
+        <Item text="VPP トークンの同期状態" url="/en-us/api-reference/v1.0/resources/intune_onboarding_vpptokensyncstatus" />
+        <Item text="ビジネス向け Windows Hello 暗証番号 (PIN) の使用" url="/en-us/api-reference/v1.0/resources/intune_onboarding_windowshelloforbusinesspinusage" />
       </Item>
       <Item text="ロール ベースのアクセス制御" url="/en-us/api-reference/v1.0/resources/intune_rbac_conceptual">
         <Item text="デバイスおよびアプリ管理役割の割り当て" url="/en-us/api-reference/v1.0/resources/intune_rbac_deviceandappmanagementroleassignment">
@@ -1564,10 +1531,6 @@
           <Item text="作成" url="/en-us/api-reference/v1.0/api/intune_rbac_deviceandappmanagementroledefinition_create" />
           <Item text="削除" url="/en-us/api-reference/v1.0/api/intune_rbac_deviceandappmanagementroledefinition_delete" />
           <Item text="更新" url="/en-us/api-reference/v1.0/api/intune_rbac_deviceandappmanagementroledefinition_update" />
-        </Item>
-        <Item text="デバイスの管理" url="/en-us/api-reference/v1.0/resources/intune_rbac_devicemanagement">
-          <Item text="取得" url="/en-us/api-reference/v1.0/api/intune_rbac_devicemanagement_get" />
-          <Item text="更新" url="/en-us/api-reference/v1.0/api/intune_rbac_devicemanagement_update" />
         </Item>
         <Item text="リソース アクション" url="/en-us/api-reference/v1.0/resources/intune_rbac_resourceaction" />
         <Item text="リソース操作" url="/en-us/api-reference/v1.0/resources/intune_rbac_resourceoperation">
@@ -1592,13 +1555,46 @@
           <Item text="更新" url="/en-us/api-reference/v1.0/api/intune_rbac_roledefinition_update" />
         </Item>
         <Item text="ロールのアクセス許可" url="/en-us/api-reference/v1.0/resources/intune_rbac_rolepermission" />
-        <Item text="URI" url="/en-us/api-reference/v1.0/resources/intune_rbac_uri" />
       </Item>
-      <Item text="通信費" url="/en-us/api-reference/v1.0/resources/intune_tem_conceptual">
-        <Item text="デバイスの管理" url="/en-us/api-reference/v1.0/resources/intune_tem_devicemanagement">
-          <Item text="取得" url="/en-us/api-reference/v1.0/api/intune_tem_devicemanagement_get" />
-          <Item text="更新" url="/en-us/api-reference/v1.0/api/intune_tem_devicemanagement_update" />
+      <Item text="共有リソース" url="/en-us/api-reference/v1.0/resources/intune_shared_conceptual">
+        <Item text="すべてのデバイスの割り当て先" url="/en-us/api-reference/v1.0/resources/intune_shared_alldevicesassignmenttarget" />
+        <Item text="すべてのライセンス ユーザーの割り当て先" url="/en-us/api-reference/v1.0/resources/intune_shared_alllicensedusersassignmenttarget" />
+        <Item text="コンプライアンスのステータス" url="/en-us/api-reference/v1.0/resources/intune_shared_compliancestatus" />
+        <Item text="デバイスおよびアプリ管理の割り当て先" url="/en-us/api-reference/v1.0/resources/intune_shared_deviceandappmanagementassignmenttarget" />
+        <Item text="デバイス アプリの管理" url="/en-us/api-reference/v1.0/resources/intune_shared_deviceappmanagement">
+          <Item text="取得" url="/en-us/api-reference/v1.0/api/intune_shared_deviceappmanagement" />
+          <Item text="更新" url="/en-us/api-reference/v1.0/api/intune_shared_deviceappmanagement" />
+          <Item text="syncMicrosoftStoreForBusinessApps アクション" url="/en-us/api-reference/v1.0/api/intune_shared_deviceappmanagement_syncmicrosoftstoreforbusinessapps" />
         </Item>
+        <Item text="デバイス カテゴリ" url="/en-us/api-reference/v1.0/resources/intune_shared_devicecategory">
+          <Item text="リスト" url="/en-us/api-reference/v1.0/api/intune_shared_devicecategory" />
+          <Item text="取得" url="/en-us/api-reference/v1.0/api/intune_shared_devicecategory" />
+          <Item text="作成" url="/en-us/api-reference/v1.0/api/intune_shared_devicecategory" />
+          <Item text="削除" url="/en-us/api-reference/v1.0/api/intune_shared_devicecategory" />
+          <Item text="更新" url="/en-us/api-reference/v1.0/api/intune_shared_devicecategory" />
+        </Item>
+        <Item text="デバイスの登録のタイプ" url="/en-us/api-reference/v1.0/resources/intune_shared_deviceenrollmenttype" />
+        <Item text="デバイスの管理" url="/en-us/api-reference/v1.0/resources/intune_shared_devicemanagement">
+          <Item text="取得" url="/en-us/api-reference/v1.0/api/intune_shared_devicemanagement_get" />
+          <Item text="更新" url="/en-us/api-reference/v1.0/api/intune_shared_devicemanagement_update" />
+        </Item>
+        <Item text="除外グループの割り当て先" url="/en-us/api-reference/v1.0/resources/intune_shared_exclusiongroupassignmenttarget" />
+        <Item text="グループの割り当て先" url="/en-us/api-reference/v1.0/resources/intune_shared_groupassignmenttarget" />
+        <Item text="インストール目的" url="/en-us/api-reference/v1.0/resources/intune_shared_installintent" />
+        <Item text="MIME コンテンツ" url="/en-us/api-reference/v1.0/resources/intune_shared_mimecontent" />
+        <Item text="保存 UI 状態生成オプション" url="/en-us/api-reference/v1.0/resources/intune_shared_saveduistategenerationoptions" />
+        <Item text="URI" url="/en-us/api-reference/v1.0/resources/intune_shared_uri" />
+        <Item text="ユーザー" url="/en-us/api-reference/v1.0/resources/intune_shared_user">
+          <Item text="取得" url="/en-us/api-reference/v1.0/api/intune_shared_user" />
+          <Item text="作成" url="/en-us/api-reference/v1.0/api/intune_shared_user" />
+          <Item text="削除" url="/en-us/api-reference/v1.0/api/intune_shared_user_delete" />
+          <Item text="更新" url="/en-us/api-reference/v1.0/api/intune_shared_user" />
+          <Item text="removeAllDevicesFromManagement アクション" url="/en-us/api-reference/v1.0/api/intune_shared_user_removealldevicesfrommanagement" />
+          <Item text="wipeManagedAppRegistrationsByDeviceTag アクション" url="/en-us/api-reference/v1.0/api/intune_shared_user_wipemanagedappregistrationsbydevicetag" />
+        </Item>
+        <Item text="VPP トークン アカウントのタイプ" url="/en-us/api-reference/v1.0/resources/intune_shared_vpptokenaccounttype" />
+      </Item>
+      <Item text="通信経費" url="/en-us/api-reference/v1.0/resources/intune_tem_conceptual">
         <Item text="通信経費の管理パートナー" url="/en-us/api-reference/v1.0/resources/intune_tem_telecomexpensemanagementpartner">
           <Item text="リスト" url="/en-us/api-reference/v1.0/api/intune_tem_telecomexpensemanagementpartner_list" />
           <Item text="取得" url="/en-us/api-reference/v1.0/api/intune_tem_telecomexpensemanagementpartner_get" />
