@@ -58,10 +58,6 @@ Microsoft Graph では、グループと Microsoft Teams API にアクセスす�
 
 Microsoft Teams と Office 365 グループは、[同じような機能を共有します](../api-reference/beta/resources/teams_api_overview.md)。グループ API はすべてチームで使用できますが、グループの作成 API は例外で、現在これを使ってのチーム作成はできません。将来的に、API リリースでこの機能がサポートされます。
 
-### <a name="microsoft-teams-channels-preview"></a>Microsoft Teams チャンネル (プレビュー)
-
-現在のところ、チャンネルの読み込みと作成が可能ですが、更新と削除はできません。将来的に、API リリースでこの機能がサポートされます。
-
 ### <a name="microsoft-teams-chat-threads-and-chat-messages-preview"></a>Microsoft Teams チャット スレッドとチャット メッセージ (プレビュー)
 
 現時点では、チャンネルにチャット スレッドを作成できますが、既存のチャンネル スレッドを読み込む、または返信を付加することができません。また、チームまたはチャンネルの範囲外のユーザー間での読み取り、書き込みもできません。将来の API リリースでこの部分の機能がサポートされます。

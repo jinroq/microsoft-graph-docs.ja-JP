@@ -68,3 +68,10 @@ OneNote のコンテンツ更新機能については、Microsoft Graph API の�
 Graph Explorer から OneNote API 呼び出しを行うには、左側の列にある **[その他のサンプルを表示]** を選択します。 メニューを使用して、OneNote を **[オン]** に切り替えます。 また、適切なアクセス許可を有効にする必要があります。 左側のメニューのアカウント名の下で、**[アクセス許可の修正]** を選択します。 OneNote のアクセス許可の詳細については、「[メモのアクセス許可](permissions_reference.md#notes-permissions)」を参照してください。
 
 Microsoft Graph の OneNote API を使い始めるには、[OneNote 参照コンテンツ](../api-reference/v1.0/resources/onenote-api-overview.md)に関する記事をご覧ください。
+
+## <a name="see-also"></a>関連項目
+
+- [OneNote の開発](https://docs.microsoft.com/ja-JP/previous-versions/office/office-365-api/how-to/onenote-landing)
+- [クラス ノートブックの操作](https://docs.microsoft.com/ja-JP/previous-versions/office/office-365-api/how-to/onenote-classnotebook)
+- [スタッフ ノートブックの操作](https://docs.microsoft.com/ja-JP/previous-versions/office/office-365-api/how-to/onenote-staffnotebook)
+- [Webhooks の購読](https://docs.microsoft.com/ja-JP/previous-versions/office/office-365-api/how-to/onenote-sync)
