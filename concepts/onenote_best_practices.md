@@ -3,6 +3,7 @@
 この記事では、Microsoft Graph で OneNote API を使用するための推奨事項を提供します。 これらの推奨事項は、Stack Overflow と Twitter でよく寄せられる質問への回答に基づいています。
 
 ## <a name="use-select-to-select-the-minimum-set-of-properties-you-need"></a>$Select を使用して、必要なプロパティの最小限のセットを選択する
+
 リソース (たとえば、ノートブック内のセクション) のクエリを実行するときには、次のような要求を行います。
 
 ```http
@@ -18,11 +19,15 @@ GET ~/notebooks/{id}/sections?$select=id,displayName
 同じアプローチは、他の OneNote API に適用されます。
 
 ## <a name="use-expand-instead-of-making-multiple-api-calls"></a>複数の API 呼び出しを実行するのではなく、$expand を使用します。
+
 ユーザーのノートブック、セクション、およびセクション グループのすべてを階層的なビューで取得します。 次の方法でこれを行います。
 
 * `GET ~/notebooks` を呼び出して、ノートブックの一覧を取得します。
+
 * 取得したすべてのノートブックについて、`GET ~/notebooks/{notebookId}/sections` を呼び出してセクションの一覧を取得します。
+
 * 取得したすべてのノートブックについて、`GET ~/notebooks/{notebookId}/sectionGroups` を呼び出してセクション グループの一覧を取得します。
+
 * 必要に応じて、セクション グループを再帰的に反復処理できます。
 
 この方法 (サービスへ何回かの連続した余分なラウンドトリップを実行) でも可能ですが、より優れたアプローチは、`$expand` クエリ パラメーターを使用することです。 

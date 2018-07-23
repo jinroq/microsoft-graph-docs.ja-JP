@@ -8,7 +8,7 @@
 
 Microsoft Graph を使用して、サインインしているユーザーと文脈上関連性のあるリレーションシップ、ドキュメント、連絡先、およびユーザー設定にアクセスできます。 **user** リソースを使用すると、追加の呼び出しを実行せずにユーザー リソースにアクセスして操作したり、特定の認証情報を調べたり、他の Microsoft Graph リソースに対して直接クエリを発行したりできます。
 
-ユーザーの情報やデータにアクセスするには、[ユーザーの代わりにアクセスを取得する](https://developer.microsoft.com/graph/docs/concepts/auth_v2_user)必要があります。 [管理者の同意](https://developer.microsoft.com/ja-JP/graph/docs/concepts/permissions_reference)を得てアプリケーションを認証することにより、ユーザーに関連する幅広いエンティティを操作および更新できます。
+ユーザーの情報やデータにアクセスするには、[ユーザーの代わりにアクセスを取得する](https://developer.microsoft.com/graph/docs/concepts/auth_v2_user)必要があります。 [管理者の同意](https://developer.microsoft.com/en-us/graph/docs/concepts/permissions_reference)を得てアプリケーションを認証することにより、ユーザーに関連する幅広いエンティティを操作および更新できます。
 
 ### <a name="manage-your-organization"></a>組織の管理
 
@@ -52,5 +52,5 @@ Microsoft Graph を使用して、サインインしているユーザーと文�
 - [Azure AD API](../api-reference/v1.0/resources/azure_ad_overview.md) を使用してユーザーのアクセス制御とポリシーを設定する
 - アプリからユーザー データにアクセスするために必要な[権限](permissions_reference.md)を確認する 
 <!-- This isn't really a next step; let's remove to keep the list of links concise.>
-- Stay up to date with the Microsoft Graph [changelog](https://developer.microsoft.com/graph/docs/concepts/changelog).
+- Stay up to date with Microsoft Graph [changelog](https://developer.microsoft.com/graph/docs/concepts/changelog).
 -->
