@@ -2490,7 +2490,6 @@
 		<Item text="アクティビティ フィード" url="/en-us/api-reference/beta/resources/activity-feed-api-overview">
 			<Item text="アクティビティ" url="/en-us/api-reference/beta/resources/projectrome_activity">
 				<Item text="アクティビティを作成または置換する" url="/en-us/api-reference/beta/api/projectrome_put_activity" />
-				<Item text="アクティビティを作成または置換する" url="/en-us/api-reference/beta/api/projectrome_put_activity" />
 				<Item text="アクティビティを削除する" url="/en-us/api-reference/beta/api/projectrome_delete_activity" />
 				<Item text="アクティビティを取得する" url="/en-us/api-reference/beta/api/projectrome_get_activities" />
 				<Item text="最近のアクティビティを取得する" url="/en-us/api-reference/beta/api/projectrome_get_recent_activities" />
@@ -2513,12 +2512,13 @@
 			<Item text="発行の取り消し" url="/en-us/api-reference/beta/api/bookingbusiness_unpublish" />
 		</Item>
 		<Item text="予約可能な予定" url="/en-us/api-reference/beta/resources/bookingappointment">
-			<Item text="リスト" url="/en-us/api-reference/beta/api/bookingbusiness_list_appointments" />
-			<Item text="作成" url="/en-us/api-reference/beta/api/bookingbusiness_post_appointments" />
-			<Item text="取得" url="/en-us/api-reference/beta/api/bookingappointment_get" />
-			<Item text="更新" url="/en-us/api-reference/beta/api/bookingappointment_update" />
-			<Item text="削除" url="/en-us/api-reference/beta/api/bookingappointment_delete" />
-			<Item text="キャンセル" url="/en-us/api-reference/beta/api/bookingappointment_cancel" />
+			<Item text="予定表ビューを一覧表示する" url="/en-us/api-reference/beta/api/bookingbusiness_list_calendarview" />
+			<Item text="予定を一覧表示する" url="/en-us/api-reference/beta/api/bookingbusiness_list_appointments" />
+			<Item text="予定の作成" url="/en-us/api-reference/beta/api/bookingbusiness_post_appointments" />
+			<Item text="予定の取得" url="/en-us/api-reference/beta/api/bookingappointment_get" />
+			<Item text="予定の更新" url="/en-us/api-reference/beta/api/bookingappointment_update" />
+			<Item text="予定の削除" url="/en-us/api-reference/beta/api/bookingappointment_delete" />
+			<Item text="予定のキャンセル" url="/en-us/api-reference/beta/api/bookingappointment_cancel" />
 		</Item>
 		<Item text="予約可能な通貨" url="/en-us/api-reference/beta/resources/bookingcurrency">
 			<Item text="リスト" url="/en-us/api-reference/beta/api/bookingcurrency_list" />
@@ -5174,7 +5174,6 @@
           <Item text="アプリケーションを削除する" url="/en-us/api-reference/beta/api/application_delete" SEOKeyword="アプリケーションを削除する、Microsoft Graph API、アプリケーション API" SEODescription="アプリケーションを削除します。" />
           <Item text="所有者を一覧表示する" url="/en-us/api-reference/beta/api/application_list_owners" SEOKeyword="所有者を一覧表示する、Microsoft Graph API、アプリケーション API" SEODescription="directoryobject オブジェクトのリストを取得します。" />
           <Item text="所有者を割り当てる" url="/en-us/api-reference/beta/api/application_post_owners" SEOKeyword="所有者を作成する、Microsoft Graph API、アプリケーション API" SEODescription="この API を使用して、新しい所有者を作成します。" />
-          <Item text="拡張機能プロパティを一覧表示する" url="/en-us/api-reference/beta/api/application_list_extensionproperties" SEOKeyword="extensionProperties を一覧表示する、Microsoft Graph API、アプリケーション API" SEODescription="extensionproperty オブジェクトのリストを取得します。" />
         </Item>
 	  <Item text="監査ログ" url="/en-us/api-reference/beta/resources/azure_ad_auditlog_overview">
 			<Item text="ディレクトリ監査" url="/en-us/api-reference/beta/resources/directoryaudit" SEOKeyword="directoryAudit オブジェクト, Microsoft Graph API, Azure AD, 監査ログ" SEODescription="">
@@ -5248,11 +5247,6 @@
         <Item text="ドメインを取得する" url="/en-us/api-reference/beta/api/domain_get" />
         <Item text="ドメインを更新する" url="/en-us/api-reference/beta/api/domain_update" />
         <Item text="ドメインを確認する" url="/en-us/api-reference/beta/api/domain_verify" />
-      </Item>
-      <Item text="拡張プロパティ" url="/en-us/api-reference/beta/resources/extensionproperty" SEOKeyword="extensionproperty API, Microsoft Graph API, extensionproperty API" SEODescription="アプリケーションが外部データ ストアを必要とすることなく、ディレクトリのオブジェクト (ユーザー、グループ、テナントの詳細情報、デバイス、アプリケーション、サービス プリンシパル) に追加できるその他のプロパティのセットを定義して使用することを、アプリケーションに許可します。拡張プロパティの詳細については、「Azure AD Graph API ディレクトリ スキーマ拡張機能」(https://msdn.microsoft.com/ja-jp/library/azure/dn720459.aspx) を参照してください。DirectoryObject から継承します。">
-        <Item text="extensionProperty を取得する" url="/en-us/api-reference/beta/api/extensionproperty_get" SEOKeyword="extensionProperty を取得する、Microsoft Graph API、extensionproperty API" SEODescription="extensionproperty オブジェクトのプロパティと関係を取得します。" />
-        <Item text="Extensionproperty を更新する" url="/en-us/api-reference/beta/api/extensionproperty_update" SEOKeyword="extensionproperty を更新する、Microsoft Graph API、extensionproperty API" SEODescription="extensionproperty オブジェクトのプロパティを更新します。" />
-        <Item text="extensionProperty を削除する" url="/en-us/api-reference/beta/api/extensionproperty_delete" SEOKeyword="extensionProperty を削除する、Microsoft Graph API、extensionproperty API" SEODescription="extensionProperty を削除します。" />
       </Item>
     <Item text="Identity Protection" url="/en-us/api-reference/beta/resources/identityprotection_root" SEOKeyword="Identity Protection API、Azure AD、AADIP、Microsoft Graph API、Identity Protection" SEODescription="Azure Active Directory Identity Protection を使用して、そのデータに対してクエリを実行する API">
       <Item text="ID リスク イベント" url="/en-us/api-reference/beta/resources/identityriskevent" SEOKeyword="Identity Protection API、Azure AD、AADIP、Microsoft Graph API、Identity Protection、イベント リスク、ID リスク" SEODescription="Azure AD Identity Protection のリスク イベント データに対してクエリを実行する">
