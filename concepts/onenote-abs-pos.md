@@ -4,30 +4,31 @@
 OneNote ページの本文には、直接の子要素 `div`、`img`、`object` を複数含めることができます。これらの要素はページ上に独立して配置できます。
 
 <a name="attributes"></a>
+
 ## <a name="attributes-and-positioning-behavior"></a>属性と配置動作
 
 次に示すように、`data-absolute-enabled` 属性および [`style`](#supported-css-style-attributes) 属性を使用して、ページ上に絶対配置要素を作成します。
 
-- body 要素は、`data-absolute-enabled="true"` を指定する必要があります。 省略したり `false` に設定したりすると、API によって作成される `_default` 絶対配置 div の内側にすべての本文のコンテンツが表示され、すべての位置設定が無視されます。
+- body 要素は、`data-absolute-enabled="true"` を指定する必要があります。省略したり `false` に設定したりすると、API によって作成される `_default` 絶対配置 div の内側にすべての本文のコンテンツが表示され、すべての位置設定が無視されます。
 
 - `div`、`img`、および `object` 要素のみが絶対配置要素になります。 
 
 - 絶対配置要素は、`style="position:absolute"` を指定する必要があります。
 
-- 絶対配置要素は、`body` 要素の直接の子にする必要があります。 body の直接の子要素が絶対配置でない `div`、`img`、または `object` 要素の場合は、絶対配置の `_default` div の内側に静的コンテンツとして表示されます。
+- 絶対配置要素は、`body` 要素の直接の子にする必要があります。body の直接の子要素が絶対配置でない `div`、`img`、または `object` 要素の場合は、絶対配置の `_default` div の内側に静的コンテンツとして表示されます。
 
 - 絶対配置要素は、指定された上と左の座標 (開始位置 0:0 を基準とした、タイトル領域の上部でページの左隅) に配置されます。
 
-- 絶対配置要素が top または left の座標を省略していると、不足している座標には既定値の `top:120px` または `left:48px` が設定されます。 これらの既定の座標は、title エリアの直下の位置を指定します。 座標を省略すると、複数の要素の上部が重なり合うことがある点に注意してください。
+- 絶対配置要素が top または left の座標を省略していると、不足している座標には既定値の `top:120px` または `left:48px` が設定されます。これらの既定の座標は、title エリアの直下の位置を指定します。座標を省略すると、複数の要素の上部が積み重なることがある点に注意してください。
 
-- 絶対配置要素は、入れ子状態にしたり、定位置要素を含めたりすることはできません。 API は、絶対配置の div 内の入れ子型の要素で指定された位置設定をすべて無視し、絶対配置の親 div 内の入れ子型のコンテンツを表示するとともに、応答の **api.diagnostics** プロパティで警告を返します。
+- 絶対配置要素は、入れ子状態にしたり、定位置要素を含めたりすることはできません。API は、絶対配置の div 内の入れ子型の要素で指定された位置設定をすべて無視し、絶対配置の親 div 内の入れ子型のコンテンツを表示するとともに、応答の **api.diagnostics** プロパティで警告を返します。
 
 
-# <a name="example"></a>例
+### <a name="example"></a>例
 
- 次の例には、`p` の直接の子、絶対配置 div、非絶対配置 div が含まれています。
+次の例には、`p` の直接の子、絶対配置 div、非絶対配置 div が含まれています。
 
-## <a name="input-html"></a>入力 HTML  
+#### <a name="input-html"></a>入力 HTML  
 
    ```html 
    <body data-absolute-enabled="true">
@@ -43,7 +44,7 @@ OneNote ページの本文には、直接の子要素 `div`、`img`、`object` �
 
 API は既定の div に非絶対配置 div を表示します。 入れ子になった `<div>` タグは意味情報 (`data-id` など) を定義しないため、破棄されます。
 
-## <a name="output-html"></a>出力 HTML 
+#### <a name="output-html"></a>出力 HTML 
 
    ```html 
    <body data-absolute-enabled="true" style="font-family:Calibri;font-size:11pt">
@@ -57,12 +58,12 @@ API は既定の div に非絶対配置 div を表示します。 入れ子に�
    </body>
    ```
 
-## <a name="example"></a>例
+### <a name="example"></a>例
 
- 次の例では、絶対配置の div と絶対配置のイメージを 1 つずつ含むページを作成します。
+次の例では、絶対配置の div と絶対配置のイメージを 1 つずつ含むページを作成します。
 
 
-### <a name="input-html"></a>入力 HTML  
+#### <a name="input-html"></a>入力 HTML  
 
 ```html 
 <html>
@@ -86,12 +87,13 @@ OneNote API は入力 HTML を評価し、OneNote によりサポートされる
 
 ![絶対配置の div とイメージのある結果のページ](images/abs-pos.PNG)
 
-入力 HTML から変更された、作用していない入れ子になった div に注意してください。 API は div のコンテンツを保持しますが、`<div>` タグは破棄します。これは、div は意味情報 (`data-id` など) を定義しないためです。
+入力 HTML から変更された、作用していない入れ子になった div に注意してください。API は div のコンテンツを保持しますが、`<div>` タグは破棄します。これは、div は意味情報 (`data-id` など) を定義しないためです。
 
 OneNote API が入力 HTML と出力 HTML を処理する方法の詳細については、「[OneNote ページの入力 HTML と出力 HTML](onenote_input_output_html.md)」を参照してください。
 
 <a name="style-attributes"></a>
-### <a name="supported-css-style-attributes"></a>サポートされている CSS スタイルの属性
+
+## <a name="supported-css-style-attributes"></a>サポートされている CSS スタイルの属性
 
 絶対配置要素は、上と左の座標を指定できます。div とイメージでは幅を指定でき、イメージでは高さも指定できます。たとえば、次のようになります。
 
@@ -101,16 +103,18 @@ OneNote API が入力 HTML と出力 HTML を処理する方法の詳細につ�
 
 | 属性 | サポートされる要素 | 説明 |  
 |:------|:------|:------|  
-| top | div、img、object | 要素の上部境界線の Y 軸座標 (ピクセル単位のみ)。既定は 120 ピクセル。<p>例: `top:140px`</p> |  
-| left |  div、img、object  | 要素の左境界線の X 軸座標 (ピクセル単位のみ)。既定は 48 ピクセル。<p>例: `left:95px`</p> |  
-| width |  div、img  | 要素の幅 (ピクセル単位のみ)。<p>例: `width:480px`</p> |  
-| height | img | 要素の高さ (ピクセル単位のみ)div の場合、高さは実行時に計算されるため、指定された高さの値は無視されます。<p>例: `height:665px`</p> |  
+| top | div、img、object | 要素の上部境界線の Y 軸座標 (ピクセル単位のみ)。既定は 120 ピクセル。<br/><br/>例: `top:140px` |  
+| left |  div、img、object  | 要素の左境界線の X 軸座標 (ピクセル単位のみ)。既定は 48 ピクセル。<br/><br/>例: `left:95px` |  
+| width |  div、img  | 要素の幅 (ピクセル単位のみ)。<br/><br/>例: `width:480px` |  
+| height | img | 要素の高さ (ピクセル単位のみ)div の場合、高さは実行時に計算されるため、指定された高さの値は無視されます。<br/><br/>例: `height:665px` |  
  
-その他の位置属性 (`z-index` など) は無視されます。 絶対配置のイメージは、`data-render-src` または `src` のいずれかを使用できます。
+その他の位置属性、たとえば `z-index` などは無視されます。絶対配置の画像には、`data-render-src` または `src` のいずれかを使用できます。
 
 
 <a name="request-response-info"></a>
+
 ## <a name="response-information"></a>応答情報
+
 OneNote API は、次の情報を応答で返します。
 
 | 応答データ | 説明 |  
@@ -121,28 +125,31 @@ OneNote API は、次の情報を応答で返します。
 
 
 <a name="permissions"></a>
+
 ## <a name="permissions"></a>アクセス許可
 
 OneNote ページを作成または更新するには、適切なアクセス許可を要求する必要があります。アプリの動作に必要な最低限のアクセス許可を選択してください。
 
-### <a name="permissions-for-post-pages"></a>_POST pages_ のアクセス許可 
+#### <a name="permissions-for-post-pages"></a>POST ページのアクセス許可 
+
 - Notes.Create
 - Notes.ReadWrite
 - Notes.ReadWrite.All  
 
 
-### <a name="permissions-for-patch-pages"></a>_PATCH pages_ のアクセス許可 
+#### <a name="permissions-for-patch-pages"></a>PATCH ページのアクセス許可 
 
 - Notes.ReadWrite
 - Notes.ReadWrite.All
 
-アクセス許可のスコープと動作のしくみの詳細については、「[OneNote のアクセス許可のスコープ](permissions_reference.md#notes-permissions)」を参照してください。
+アクセス許可のスコープと動作のしくみの詳細については、「[OneNote のアクセス許可のスコープ](permissions_reference.md#notes-permissions)」をご覧ください。
 
 
 <a name="see-also"></a>
-## <a name="additional-resources"></a>その他のリソース
 
-- [OneNote ページの作成](onenote-create-page.md)
+## <a name="see-also"></a>関連項目
+
+- [OneNote ページを作成する](onenote-create-page.md)
 - [OneNote ページ コンテンツを更新する](onenote_update_page.md)
 - [OneNote との統合](integrate_with_onenote.md)
 - [OneNote の開発者ブログ](http://go.microsoft.com/fwlink/?LinkID=390183)

@@ -2,7 +2,7 @@
 
 Microsoft Graph にはオプションのクエリ パラメーターがあり、応答で返されるデータの量を指定したり制御したりするために使用できます。次のクエリ パラメーターがサポートされています。
 
->**注:**例をクリックして [Graph エクスプローラー][graph-explorer]で試行します。
+>**注:** 例をクリックして [Graph エクスプローラー][graph-explorer]で試行します。
 
 | 名前                     | 説明 | 例
 |:-------------------------|:------------|:---------|
@@ -107,7 +107,7 @@ GET https://graph.microsoft.com/v1.0/users?$filter=startswith(displayName,'J')
 
 次の表では、`$filter` クエリ パラメーター使用例を示します。
 
-> **注:**例をクリックして [Graph エクスプローラー][graph-explorer]で試行します。
+> **注:** 例をクリックして [Graph エクスプローラー][graph-explorer]で試行します。
 
 | 説明 | 例
 |:------------|:--------|
@@ -167,10 +167,10 @@ $filter を指定した場合は、サーバーで結果の並べ替え順序が
 次の例は、**Subject** と **Importance** の両方のプロパティでフィルター処理されてから、**Subject**、**Importance**、**receivedDateTime** の各プロパティで降順で並べ替えられたクエリを示しています。
 
 ```http
-GET https://graph.microsoft.com/v1.0/me/messages?$filter=Subject eq 'welcome to exchange unified messaging' and importance eq 'normal'&$orderby=subject,importance,receivedDateTime desc
+GET https://graph.microsoft.com/v1.0/me/messages?$filter=Subject eq 'welcome' and importance eq 'normal'&$orderby=subject,importance,receivedDateTime desc
 ```
 
-[Graph エクスプローラーで試す](https://developer.microsoft.com/graph/graph-explorer?request=me/messages?$filter=subject%20eq%20%27welcome to exchange unified messaging%27%20and%20importance%20eq%20%27normal%27%20&$orderby=subject,importance,receivedDateTime%20desc&method=GET&version=v1.0)
+[Graph エクスプローラーで試す](https://developer.microsoft.com/graph/graph-explorer?request=me/messages?$filter=subject%20eq%20%27welcome%27%20and%20importance%20eq%20%27normal%27%20&$orderby=subject,importance,receivedDateTime%20desc&method=GET&version=v1.0)
 
  > **注:** [ユーザー](../api-reference/v1.0/resources/user.md)や[グループ](../api-reference/v1.0/resources/group.md)のような、[directoryObject](../api-reference/v1.0/resources/directoryobject.md) から派生した Azure AD リソースの場合、`$orderby` 式と `$filter` 式を結合することはできません。 
 
@@ -184,25 +184,26 @@ GET https://graph.microsoft.com/v1.0/me/messages?$filter=Subject eq 'welcome to 
 
 Outlook や SharePoint などの Office 365 アプリケーションは、キーワード クエリ言語 (KQL) 構文で検索を実行することをサポートしています。 そのため、複数のデータ ストアで 1 つの共通の探索ドメインを使用できる利便性が得られます。 
 
-メッセージ コレクションを検索すると、結果はメッセージが送信された日時で並べ替えられます。 
+$search クエリ文字列の中で KQL が認識する次のプロパティ名を指定できます。 これらのプロパティ名は **message** エンティティの中で定義されているプロパティではありませんが、内部では **message** エンティティの中のプロパティに対応付けられています。 詳細な情報と例については、「[Exchange の検索可能なプロパティ](https://docs.microsoft.com/ja-JP/Exchange/policy-and-compliance/ediscovery/message-properties-and-search-operators#searchable-properties-in-exchange)」を参照してください。
 
-`$search` 条件で **message** に対する次のプロパティを指定できます:
-
-- **attachments**
-- **bccRecipients**
+- **attachment**
+- **bcc**
 - **body**
 - **category**
-- **ccRecipients**
+- **cc**
 - **content**
 - **from**
-- **hasAttachments**
+- **has**
+- **importance**
 - **participants**
-- **receivedDateTime**
+- **received**
 - **sender**
 - **subject**
-- **toRecipients**
+- **to**
 
 メッセージで検索を行うときに値のみ指定した場合、検索は既定の検索プロパティである **from**、**subject**、**body** に基づいて行われます。
+
+メッセージ コレクションでの検索結果は、メッセージが送信された日時で並べ替えられます。
 
 次の例は、サインイン中のユーザーの受信トレイにあるメッセージのうち、既定の 3 つの検索プロパティのいずれかに "pizza" が含まれるメッセージをすべて返します。
 
@@ -297,7 +298,7 @@ GET https://graph.microsoft.com/v1.0/me/messages?$select=from,subject
 
 [Graph エクスプローラーで試す][select-example]
 
-> **重要:**通常は、`$select` を使用して、クエリから返されるプロパティをお使いのアプリで必要なものだけに制限することをお勧めします。 これは特に、クエリが大きな結果セットを返す可能性がある場合に該当します。 行ごとに返されるプロパティを制限すれば、ネットワークの負荷を軽減し、アプリのパフォーマンスを向上させることができます。
+> **重要:** 通常は、`$select` を使用して、クエリから返されるプロパティをお使いのアプリで必要なものだけに制限することをお勧めします。 これは特に、クエリが大きな結果セットを返す可能性がある場合に該当します。 行ごとに返されるプロパティを制限すれば、ネットワークの負荷を軽減し、アプリのパフォーマンスを向上させることができます。
 >
 > `v1.0`では、[ユーザー](../api-reference/v1.0/resources/user.md)と[グループ](../api-reference/v1.0/resources/group.md)のような、[directoryObject](../api-reference/v1.0/resources/directoryobject.md) から派生した一部の Azure AD リソースは、読み取り時に制限された既定値のプロパティ サブセットを返します。既定のセット以外のプロパティを返すには、これらのリソースに対して `$select` を使用する必要があります。  
 
@@ -310,7 +311,7 @@ GET  https://graph.microsoft.com/v1.0/me/events?$orderby=createdDateTime&$skip=2
 ```
 [Graph エクスプローラーで試す][skip-example]
 
-> **注:**Outlook のメールやカレンダーなど、いくつかの Microsoft Graph API (**message**、**event**、**calendar**) は、`$skip` を使用してページングを実装します。 クエリの結果が複数ページにまたがる場合、これらの API は `@odata:nextLink` プロパティと共に `$skip` パラメーターが含まれる URL を返します。 この URL を使用して、結果の次のページに戻れます。 詳細については、「[ページング](./paging.md)」を参照してください。
+> **注:** Outlook のメールやカレンダーなど、いくつかの Microsoft Graph API (**message**、**event**、**calendar**) は、`$skip` を使用してページングを実装します。 クエリの結果が複数ページにまたがる場合、これらの API は `@odata:nextLink` プロパティと共に `$skip` パラメーターが含まれる URL を返します。 この URL を使用して、結果の次のページに戻れます。 詳細については、「[ページング](./paging.md)」を参照してください。
 
 ## <a name="skiptoken-parameter"></a>skipToken パラメーター
 

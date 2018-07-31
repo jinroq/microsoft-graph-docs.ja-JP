@@ -4,20 +4,22 @@ Outlook を利用することによりユーザーは、自分の好みの方法
 
 ## <a name="accessing-mail-folders"></a>メール フォルダーへのアクセス
 
-プログラム的には、メッセージ フォルダーは [mailFolder](../api-reference/v1.0/resources/mailfolder.md) リソースによって表されており、受信トレイはフォルダー構造のルートにあるフォルダーの 1 つに含まれています。 `/users/{id}/mailfolders` ショートカットは、ルートを表します。 
+プログラム的には、メッセージ フォルダーは [mailFolder](../api-reference/v1.0/resources/mailfolder.md) リソースによって表されており、受信トレイはフォルダー構造のルートにあるフォルダーの 1 つに含まれています。
 
-各 **mailFolder** は、そのフォルダー ID によって識別され、書き込み可能な **displayName** プロパティがあります。 既定では、それ以外にいくつかのフォルダーが、Outlook によりユーザーのために作成されます。 それらの既定フォルダーは、フォルダー ID により参照するか、または既知の名前 `ArchiveRoot`、`ConversationHistory`、`DeletedItems`、`Drafts`、`Inbox`、`JunkEmail`、`Outbox`、および `SentItems` によって参照できます。 
+各 **mailFolder** は、そのフォルダー ID によって識別され、書き込み可能な **displayName** プロパティがあります。 既定では、それ以外にいくつかのフォルダーが、Outlook によりユーザーのために作成されます。 それらの既定フォルダーは、フォルダー ID により参照するか、または既知の名前によって参照できます。 使用可能な既知のフォルダー名の一覧については、「[mailFolder リソースの種類](../api-reference/v1.0/resources/mailfolder.md#well-known-folder-names)」を参照してください。
 
 既定以外のカスタム フォルダーの場合、そのフォルダー パスがわかっている場合は、まず `/users/{id}/mailfolders` ショートカットを使用してルート レベルを取得したり最上位レベルのすべてのフォルダーを取得したりして、フォルダーにアクセスできます:
 
 ```http
 GET https://graph.microsoft.com/v1.0/users/{id}/mailFolders
 ```
+
 その後、フォルダー ツリーの各レベルに移動する際に、該当するフォルダー ID (`{folder_id}`) を指定します:
 
-```
+```http
 GET https://graph.microsoft.com/v1.0/users/{id}/mailFolders/{folder_id}/childfolders
 ```
+
 最終的にツリー内のカスタム フォルダーに達するまで繰り返します。
 
 ## <a name="creating-and-organizing-the-folder-tree"></a>フォルダー ツリーの作成と整理
@@ -25,17 +27,17 @@ GET https://graph.microsoft.com/v1.0/users/{id}/mailFolders/{folder_id}/childfol
 [受信トレイの下にメール フォルダーを作成](../api-reference/v1.0/api/user_post_mailfolders.md)したり、[他のフォルダーの子フォルダーとして](../api-reference/v1.0/api/mailfolder_post_childfolders.md)作成したりすることができます。 フォルダーとその内容を作成、[コピー](../api-reference/v1.0/api/mailfolder_copy.md)、または[移動](../api-reference/v1.0/api/mailfolder_move.md)する際、Outlook は、関係するフォルダーの読み取り専用の **parentFolderId** および **childFolderCount** のプロパティを更新します。 フォルダーの内容が別のフォルダーにコピーされたり移動したりする際には、既定ではその内容である個々のエントリ ID も変化します。
 
 内容のレベルで、**totalItemCount** および **unreadItemCount** は、メール フォルダー内のアイテム数と未読アイテム数をそれぞれ示します。
-子フォルダーのレベルでは、受信トレイまたは他のフォルダーの下の[子フォルダーのリスト](../api-reference/v1.0/api/user_list_mailfolders.md)を取得することができます。 **childFolderCount** プロパティは、直下の子フォルダーの数を表します。
+子フォルダーのレベルでは、受信トレイまたは他のフォルダーの下の[子フォルダーのリスト](../api-reference/v1.0/api/user_list_mailfolders.md)を取得することができます。
+**childFolderCount** プロパティは、直下の子フォルダーの数を表します。
 
 Outlook メール フォルダーには、メッセージと共に、イベントや連絡先などのメッセージ以外のアイテムも含めることができることに注意してください。 一般に Outlook フォルダーでは、異なるアイテムが混在可能です。
 
 ## <a name="using-rules-to-automate-copying-or-moving-messages"></a>メッセージのコピーまたは移動を自動化するためのルールの使用
 
-<!-- Change links for rules API to v1 once it GAs in Feb. -->
+Outlook を使用することによりユーザーは、事前に決められた条件が満たされた時点で、受信メッセージに対して特定のアクションを自動化するためのルールを設定できます。 特定の条件が満たされた場合に、メッセージを特定のフォルダーにコピーまたは移動するには、[messageRule](../api-reference/v1.0/resources/messagerule.md) として受信トレイの[ルールを作成](../api-reference/v1.0/api/mailfolder_post_messagerules.md)することができます。
+条件は、[messageRulePredicates](../api-reference/v1.0/resources/messagerulepredicates.md) です。 それには、特定のテキストが含まれるメッセージの件名または本文、特定のメール アドレスから送信されたメッセージ、重要マークが付けられたメッセージなどがあります。
 
-Outlook を使用することによりユーザーは、事前に決められた条件が満たされた時点で、受信メッセージに対して特定のアクションを自動化するためのルールを設定できます。 特定の条件が満たされた場合に、メッセージを特定のフォルダーにコピーまたは移動するには、[messageRule](../api-reference/beta/resources/messagerule.md) として受信トレイの[ルールを作成](../api-reference/beta/api/mailfolder_post_messagerules.md)することができます。 条件は、[messageRulePredicates](../api-reference/beta/resources/messagerulepredicates.md) です。 それには、特定のテキストが含まれるメッセージの件名または本文、特定のメール アドレスから送信されたメッセージ、重要マークが付けられたメッセージなどがあります。 
-
-## <a name="directing-only-the-messages-you-care-for-to-the-focused-inbox"></a>気になるメッセージだけを優先受信トレイに入れる 
+## <a name="directing-only-the-messages-you-care-for-to-the-focused-inbox"></a>気になるメッセージだけを優先受信トレイに入れる
 
 優先受信トレイを使用すると、ユーザーは、**[優先]** タブで指定する送信元からの受信メッセージのみを表示し、**[その他]** タブで指定するものを残りのメッセージとするように Outlook に指示することができます。最初、Outlook の分類システムでは、既定の方法で受信トレイのメッセージが整理されます。 時間が経過するにつれて、ユーザー インターフェイスまたはプログラムを介して、システムを修正し、学習させることができます。 優先受信トレイを使用すればするほど、どの受信メッセージを **[優先]** タブに表示することが望ましいかに関する分類システムの推論が向上していきます。
 
@@ -49,8 +51,7 @@ Outlook を使用することによりユーザーは、事前に決められた
 
 ユーザーのメールボックスの初期同期を実行するには、まず [メール フォルダーの差分クエリをルート レベルで実行する](../api-reference/v1.0/api/mailfolder_delta.md)ことにより、すべてのメール フォルダーを同期し、次いで[各フォルダー内のメッセージについての差分クエリ](../api-reference/v1.0/api/message_delta.md)を実行して、個々のメッセージを同期します。
 
-通知ごとにリソース全体を読むことなく、変更のあったエンティティを正確に検出するには、[差分クエリ](delta_query_overview.md)を使用して、自分にとって気になる変更を追跡し、それらの変更内容によりローカル ストアを同期することができます。 [特定のフォルダー内のメッセージへの変更内容を追跡する](delta_query_messages.md)ことができます。 また、ルート レベル (`/me/mailfolders`) にあるメール フォルダーに対する変更内容を追跡することもできます。 
-
+通知ごとにリソース全体を読むことなく、変更のあったエンティティを正確に検出するには、[差分クエリ](delta_query_overview.md)を使用して、自分にとって気になる変更を追跡し、それらの変更内容によりローカル ストアを同期することができます。 [特定のフォルダー内のメッセージへの変更内容を追跡する](delta_query_messages.md)ことができます。 また、ルート レベル (`/me/mailfolders`) にあるメール フォルダーに対する変更内容を追跡することもできます。
 
 ## <a name="next-steps"></a>次の手順
 

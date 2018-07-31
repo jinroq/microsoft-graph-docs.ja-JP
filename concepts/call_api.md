@@ -39,9 +39,11 @@ Microsoft Graph API `beta` メタデータ。
     https://graph.microsoft.com/beta/$metadata
 ```
 
-メタデータにより、エンティティの種類およびセット、複合型、ならびに Microsoft Graph が送受信する要求および応答パケットを構成する列挙型を含む、Microsoft Graph のデータ モデルを参照し、理解することができます。メタデータを使用して、Microsoft Graph のエンティティ間のリレーションシップを理解することができ、また、エンティティ間を移動する URL を確立することができます。このナビゲーション ベースの相互関連性は、Microsoft Graph 固有の特徴となっています。
+メタデータにより、Microsoft Graph が送受信する要求および応答パケットを構成するエンティティの種類およびセット、複合型、列挙型などの、Microsoft Graph のデータ モデルを参照し、理解することができます。
+メタデータを使用して、Microsoft Graph のエンティティ間のリレーションシップを理解することができ、また、エンティティ間を移動する URL を確立することができます。
+このナビゲーション ベースの相互関連性は、Microsoft Graph 固有の特徴となっています。
 
-パス URL リソース名、クエリ パラメーター、アクション パラメーターと値は、大文字と小文字が区別されません。ただし、割り当てた値、エンティティ ID、その他の base64 でエンコードされた値では大文字と小文字を区別します。
+パス URL リソース名、クエリ パラメーター、アクション パラメーターと値は、大文字と小文字が区別されません。 ただし、割り当てる値、エンティティ ID、その他の base64 でエンコードされた値では大文字と小文字が区別されます。
 
 次のセクションでは、Microsoft Graph API を呼び出す基本的なプログラミング パターンをいくつか示します。
 
@@ -254,7 +256,7 @@ content-length: 986
 ```
 
 ## <a name="call-actions-or-functions"></a>アクションまたは関数を呼び出す
-Microsoft Graph は、アクションおよび関数もサポートし、標準の HTTP メソッドとは単純に一致しない方法でリソースを操作します。たとえば、次の HTTPS POST 要求は、サインインしているユーザー (`me`) に電子メール メッセージを送信させます。
+Microsoft Graph は、_アクション_および_関数_もサポートし、標準の HTTP メソッドとは単純に一致しない方法でリソースを操作します。 たとえば、次の HTTPS POST 要求は、サインインしているユーザー (`me`) に電子メール メッセージを送信させます。
 ```no-highlight 
 POST https://graph.microsoft.com/v1.0/me/sendMail HTTP/1.1
 authorization: bearer <access_token>
@@ -292,4 +294,4 @@ content-length: 96
 ## <a name="use-microsoft-graph-client-libraries"></a>Microsoft Graph クライアント ライブラリを使う
 SDK のパワーと使いやすさは気に入っていただけましたか?REST API を使用していつでも Microsoft Graph を呼び出すことができますが、多数の一般的なプラットフォームのための SDK も用意されています。
 
-[SDK](https://graph.microsoft.io/en-us/code-samples-and-sdks) を探す。
+[SDK](https://graph.microsoft.io/ja-JP/code-samples-and-sdks) を探す。

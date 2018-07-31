@@ -12,17 +12,17 @@
      a. `nextLink` URL が返される場合は、セッションに取得するデータの追加ページがあります。`deltaLink` URL が応答で返されるまで、アプリケーションは `nextLink` URL を使用してデータのすべてのページを取得する要求を実行し続けます。
 
      b.`deltaLink` URL が返される場合、返されるリソースの既存の状態に関するデータはありません。以降の要求では、アプリケーションは `deltaLink` URL を使用して、リソースへの変更点を確認します。
-     
+
 3.  アプリケーションがリソースの変更を把握する必要がある場合、アプリケーションは手順 2 で受け取った `deltaLink` URL を使用して、新しい要求を実行します。この要求は、手順 2 が完了した直後、またはアプリケーションが変更を確認する際に実行できる*場合があります*。
 4.  Microsoft Graph は、前の要求以降のリソースへの変更を説明する応答と、`nextLink` URL または `deltaLink` URL のいずれかを返します。
 
 ### <a name="state-tokens"></a>状態トークン
 
-デルタ クエリの GET 応答には、`nextLink` または `deltaLink` の応答ヘッダーに指定された URL が常に含まれています。`nextLink` URL には _skipToken_、`deltaLink` URL には _deltaToken_ が含まれています。 
+デルタ クエリの GET 応答には、`nextLink` または `deltaLink` の応答ヘッダーに指定された URL が常に含まれています。`nextLink` URL には _skipToken_、`deltaLink` URL には _deltaToken_ が含まれています。
 
 これらのトークンは、クライアントに対して不透明です。理解しておく必要のある事項の詳細を、以下に示します。
 
-- 各トークンは状態を反映し、そのラウンドの変更追跡におけるリソースのスナップショットを表します。 
+- 各トークンは状態を反映し、そのラウンドの変更追跡におけるリソースのスナップショットを表します。
 - 状態トークンは、初期デルタ クエリ要求で指定された他のクエリ パラメーター (`$select` など) もエンコードして含めます。したがって、後続のデルタ クエリ要求でそれらを繰り返す必要はありません。
 - デルタ クエリを実行するときは、状態トークンなど、URL の内容を調べることなく、`nextLink` または `deltaLink` の URL を次の**デルタ**関数呼び出しにコピーして適用できます。
 
@@ -34,9 +34,9 @@
 ユーザーとグループには、いくつかのクエリ パラメーターの使用に関する制限があります。
 
 -   `$select` クエリ パラメーターが使用されている場合、パラメーターは、`$select` ステートメントで指定したプロパティまたはリレーションシップに関する変更のみを追跡することを、クライアントが優先していることを示します。選択されていないプロパティに変更が加えられた場合、そのプロパティが変更されたリソースは、後続の要求後のデルタ応答には表示されなくなります。
--   `$expand` はサポートされていません。
+-   `$expand` は、ユーザーとグループのナビゲーション プロパティである `manager` および `members` についてのみサポートされます。
 
-ユーザーとグループの API については、スコープフィルターで、objectID を使って 1 つまたは複数の特定のユーザーまたはグループに加えられた変更を追跡できます。たとえば、https://graph.microsoft.com/beta/groups/delta/?$filter= id eq '477e9fc6-5de7-4406-bb2a-7e5c83c9ae5f' or id eq '004d6a07-fe70-4b92-add5-e6e37b8acd8e' の要求では、クエリ フィルターで指定された ID に一致するグループに加えられた変更が返されます。 
+ユーザーとグループの API については、スコープフィルターで、objectID を使って 1 つまたは複数の特定のユーザーまたはグループに加えられた変更を追跡できます。たとえば、https://graph.microsoft.com/beta/groups/delta/?$filter= id eq '477e9fc6-5de7-4406-bb2a-7e5c83c9ae5f' or id eq '004d6a07-fe70-4b92-add5-e6e37b8acd8e' の要求では、クエリ フィルターで指定された ID に一致するグループに加えられた変更が返されます。
 
 ## <a name="resource-representation-in-the-delta-query-response"></a>デルタ クエリ応答でのリソース表記
 
@@ -63,10 +63,10 @@
 | 標準として設定されている予定表の予定表ビュー (期間) 内のイベント | [イベント](../api-reference/v1.0/resources/event.md)リソースの[デルタ](../api-reference/v1.0/api/event_delta.md)関数 |
 | グループ | [グループ](../api-reference/v1.0/resources/group.md)リソースの[デルタ](../api-reference/v1.0/api/group_delta.md)関数 |
 | メール フォルダー | [mailFolder](../api-reference/v1.0/resources/mailFolder.md) リソースの[デルタ](../api-reference/v1.0/api/mailfolder_delta.md)関数 |
-| フォルダー内のメッセージ | [メッセージ](../api-reference/v1.0/resources/message.md)リソースの[デルタ](../api-reference/v1.0/api/message_delta.md)関数 | 
+| フォルダー内のメッセージ | [メッセージ](../api-reference/v1.0/resources/message.md)リソースの[デルタ](../api-reference/v1.0/api/message_delta.md)関数 |
 | 個人用連絡先フォルダー | [contactFolder](../api-reference/v1.0/resources/contactfolder.md) リソースの[デルタ](../api-reference/v1.0/api/contactfolder_delta.md)関数 |
 | フォルダー内の個人用連絡先 | [連絡先](../api-reference/v1.0/resources/contact.md)リソースの[デルタ](../api-reference/v1.0/api/contact_delta.md)関数 |
-| ユーザー | [ユーザー](../api-reference/v1.0/resources/user.md)リソースの[デルタ](../api-reference/v1.0/api/user_delta.md)関数 | 
+| ユーザー | [ユーザー](../api-reference/v1.0/resources/user.md)リソースの[デルタ](../api-reference/v1.0/api/user_delta.md)関数 |
 | ドライブの項目\* | [driveItem](../api-reference/v1.0/resources/driveitem.md) リソースの[デルタ](../api-reference/v1.0/api/driveitem_delta.md)関数 |
 | Planner の項目\*\* | [plannerUser](../api-reference/beta/resources/planneruser.md) リソースのすべてのセグメントの[デルタ](../api-reference/beta/api/planneruser_list_delta.md)関数 (プレビュー) |
 
@@ -78,7 +78,7 @@
 
 特定のリソースを読み取るために必要な[アクセス許可](./permissions_reference.md)と同じアクセス許可も、そのリソースでデルタ クエリを実行するために必要です。
 
-## <a name="delta-query-request-examples"></a>デルタ クエリ要求の例 
+## <a name="delta-query-request-examples"></a>デルタ クエリ要求の例
 
 - [カレンダー ビューのイベントへの増分の変更を取得する](../concepts/delta_query_events.md)
 - [フォルダー内のメッセージへの増分の変更を取得する](./delta_query_messages.md)

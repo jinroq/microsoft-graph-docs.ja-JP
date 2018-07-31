@@ -17,25 +17,34 @@
 }
 ```
 
-- **oneNoteClientUrl** - デバイスに既にインストールされている場合は、OneNote クライアントを開きます。 この URL には、*onenote* プレフィックスが含まれています。
-言語固有のバージョンがデバイスにインストールされている場合は、そのバージョンを開きます。 それ以外の場合は、プラットフォームの言語設定を使用します。
-- **oneNoteWebUrl** - デバイスの既定のブラウザーが OneNote Online をサポートしている場合は、OneNote Online を開きます。 ブラウザーの言語設定を使用します。
+- **oneNoteClientUrl** 
+
+    - OneNote クライアントがデバイスにインストールされている場合は、そのクライアントを開きます。 この URL には、*onenote* プレフィックスが含まれています。
+    - 言語固有のバージョンがデバイスにインストールされている場合は、そのバージョンを開きます。 それ以外の場合は、プラットフォームの言語の設定を使用します。
+
+- **oneNoteWebUrl** 
+
+    - デバイスの既定のブラウザーが OneNote Online をサポートしている場合は、OneNote Online を開きます。 
+    - ブラウザーの言語設定を使用します。
 
 
 OneNote API は、次の操作の HTTP 応答で **links** プロパティを返します。
 
-- [`POST pages`](../api-reference/v1.0/api/section_post_pages.md) 要求を送信してページを作成する
-- [`POST notebooks`](../api-reference/v1.0/api/onenote_post_notebooks.md) 要求を送信してノートブックを作成する
-- [`GET pages`](../api-reference/v1.0/api/page_get.md) または [`GET pages/{id}`](../api-reference/v1.0/api/page_get.md) 要求を送信してページ メタデータを取得する
-- [`GET notebooks`](../api-reference/v1.0/api/notebook_get.md) または [`GET notebooks/{id}`](../api-reference/v1.0/api/notebook_get.md) 要求を送信してノートブック メタデータを取得する
+- [`POST pages`](../api-reference/v1.0/api/section_post_pages.md) 要求を送信してページを作成する。
+
+- [`POST notebooks`](../api-reference/v1.0/api/onenote_post_notebooks.md) 要求を送信してノートブックを作成する。
+
+- [`GET pages`](../api-reference/v1.0/api/page_get.md) または [`GET pages/{id}`](../api-reference/v1.0/api/page_get.md) 要求を送信してページ メタデータを取得する。
+
+- [`GET notebooks`](../api-reference/v1.0/api/notebook_get.md) または [`GET notebooks/{id}`](../api-reference/v1.0/api/notebook_get.md) 要求を送信してノートブック メタデータを取得する。
 
 次の例では、応答の状態コードを確認し、JSON を解析して URL を抽出し、OneNote クライアントを開く方法を示しています。
 
 ## <a name="ios-example"></a>iOS の例
 
-次の例では、JSON 応答から OneNote クライアントの URL を取得します。 AFNetworking ライブラリ (http://afnetworking.com/) を使用して 2 つの URL を抽出します。 この例では、`created` は、応答値を格納するために使用される ONSCPSStandardResponse オブジェクトへのポインターであり、`responseObject` は解析された JSON を保持します。
+次の例では、JSON 応答から OneNote クライアントの URL を取得します。 AFNetworking ライブラリ (http://afnetworking.com/)) を使用して、2 つの URL を抽出します。 この例では、`created` は、応答値を格納するために使用される **ONSCPSStandardResponse** オブジェクトへのポインターであり、`responseObject` は解析された JSON を保持します。
 
-```objectivec
+```objc
     /* Import the JSON library */
     #import "AFURLRequestSerialization.h"
 
@@ -73,9 +82,11 @@ OneNote API は、次の操作の HTTP 応答で **links** プロパティを返
       }
 ``` 
 
+<br/>
+
 応答から URL を解析した後は、次のコードを使用して OneNote を開くことができるようになります。 インストール済みの OneNote クライアントを開くには `oneNoteClientUrl`、OneNote Online を開くには `oneNoteWebURL` を使用します。
 
-```objectivec
+```objc
 NSURL *url = [NSURL URLWithString:standardResponse.oneNoteWebUrl];
 [[UIApplication sharedApplication] openURL:url];
 ```
@@ -139,6 +150,8 @@ public ApiResponse getResponse() throws Exception {
 }
 ```
 
+<br/>
+
 次の例に示すように、応答プロパティを使用すると、アプリで OneNote Online を開くことができます。
 
 ```java 
@@ -148,7 +161,9 @@ if (response.getResponseCode() == 201) {
     startActivity(launchBrowser);
 }
 ```
- 
+
+<br/>
+
 または、アプリで Android デバイスの OneNote クライアントを開くことができます。 `oneNoteClientUrl` プロパティを使用するときには、Intent を開始する前に、中かっこ `{ }` で GUID 文字列を囲む必要があります。 次の例に方法を示します。
 
 ```java 
@@ -170,5 +185,5 @@ if (response.getResponseCode() == 201) {
 
 ## <a name="see-also"></a>関連項目
 
-- [OneNote コンテンツと構造を取得する](https://msdn.microsoft.com/en-us/office/office365/howto/onenote-get-content)
-- [OneNote ページの作成](../api-reference/v1.0/api/section_post_pages.md)
+- [OneNote コンテンツと構造を取得する](onenote-get-content.md)
+- [OneNote ページを作成する](onenote-create-page.md)

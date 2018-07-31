@@ -3,6 +3,7 @@
 この記事では、API を通して送信した要求が失敗した場合に、Microsoft Graph の OneNote API から返されるエラー コードについて説明します。
 
 ## <a name="error-response-example"></a>エラー応答例
+
 送信した要求でエラーが発生すると、OneNote API はその要求の実行を停止し、エラー応答を JSON オブジェクトとして返します。エラー応答には、関連付けられているエラー コード、メッセージ、およびこの記事の該当するセクションへのリンクが含まれます。次の例は、エラー応答の様子を示しています。
 
 ```json
@@ -21,6 +22,7 @@
 Microsoft Graph エラーの詳細については、「[Microsoft Graph エラー応答およびリソースの種類](errors.md)」を参照してください。
 
 ## <a name="codes-from-10001-to-19999"></a>10001 から 19999 のコード
+
 サービスで問題が発生したか、サービスからアプリケーションに情報が送られました。
 
 ### <a name="10001"></a>10001
@@ -36,7 +38,7 @@ Microsoft Graph エラーの詳細については、「[Microsoft Graph エラ�
 サービスは要求されたセクション内にページを作成できません。そのセクションはパスワードで保護されています。
 
 ### <a name="10005"></a>10005
-要求内で、**data-render-src** 属性に PDF が含まれる画像タグが最大数を超えました。 「[画像とファイルを追加する](https://msdn.microsoft.com/ja-JP/office/office365/howto/onenote-images-files)」を参照してください。
+要求内で、**data-render-src** 属性に PDF が含まれる イメージ タグが最大数を超えました。詳細については、「[イメージおよびファイルの追加](onenote_images_files.md)」を参照してください。
 
 ### <a name="10006"></a>10006
 OneNote API は、指定されたセクション内にページを作成できませんでした。そのセクションは破損しています。
@@ -48,7 +50,7 @@ OneNote API は、指定されたセクション内にページを作成でき�
 ユーザーまたはグループの OneDrive にある 1 つ以上のドキュメント ライブラリに 5000 を超える OneNote のアイテム (ノートブック、セクション、セクション グループ) が含まれており、API を使用してクエリを実行することができません。 ユーザーまたはグループのどのドキュメント ライブラリについても、その中の OneNote アイテム数が 5000 を超えることがないようにしてください。 軽減の手順については「[OneNote 開発者ブログ](https://blogs.msdn.microsoft.com/onenotedev/2016/09/11/onenote-api-calls-fail-with-a-large-number-of-items-in-a-sharepoint-document-library/)」を参照してください。
 
 ### <a name="10012"></a>10012
-エンティティを作成または更新できません。ノートブックが含まれるライブラリの場合、アイテムを編集する前にチェックアウトする必要があるためです。 詳細については、「https://support.office.com/en-us/article/Configure-a-site-library-to-require-check-out-of-files-f63fcbdc-1db6-4eb7-a3eb-dd815500c9e7」をご覧ください。
+エンティティを作成または更新できません。ノートブックが含まれるライブラリの場合、アイテムを編集する前にチェックアウトする必要があるためです。 詳細については、「[ファイルのチェックアウトを必須にするようにライブラリを設定する](https://support.office.com/ja-JP/article/Configure-a-site-library-to-require-check-out-of-files-f63fcbdc-1db6-4eb7-a3eb-dd815500c9e7)」を参照してください。
 
 ライブラリからチェックアウト要件を削除するか、ノートブックを移動します。
 
@@ -71,6 +73,7 @@ SharePoint は現在利用できません。 後でもう一度お試しくだ�
 未定義のエラーが発生したため、要求は失敗しました。
 
 ## <a name="codes-from-20001-to-29999"></a>20001 から 29999 のコード
+
 アプリケーション コードが間違った処理を実行しました。
 
 ### <a name="20001"></a>20001
@@ -109,6 +112,7 @@ SharePoint は現在利用できません。 後でもう一度お試しくだ�
 
 ### <a name="20012"></a>20012
 この要求は、指定のパートにコンテンツ タイプを指定しません。 
+
 ### <a name="20013"></a>20013
 要求の中で、指定したパートの Content-Type ヘッダーおよび Content-Disposition ヘッダーが提供されていません。 
 
@@ -135,6 +139,7 @@ ICal は見つかりませんでした。
 
 ### <a name="20100"></a>20100
 要求の構文に誤りがあります。 
+
 ### <a name="20101"></a>20101
 要求したプロパティは存在しません。
 
@@ -142,10 +147,10 @@ ICal は見つかりませんでした。
 存在しないリソースが要求されました。
 
 ### <a name="20103"></a>20103
-**expand** クエリはこの要求ではサポートされません。 「[サポートされる OData クエリ文字列オプション](https://msdn.microsoft.com/ja-JP/office/office365/howto/onenote-get-content#query-options)」を参照してください。
+**expand** クエリはこの要求ではサポートされません。「[サポートされている OData クエリ文字列オプション](onenote-get-content.md#supported-odata-query-string-options)」を参照してください。
 
 ### <a name="20104"></a>20104
-**pagelevel** クエリ オプションは、セクションにあるページ コレクションまたは特定のページに対してクエリを行うときだけサポートされます。 たとえば次のようにします。  
+**pagelevel** クエリ オプションは、セクションにあるページ コレクションまたは特定のページに対してクエリを行うときだけサポートされます。例:  
 
 ```http
 GET ../sections/{id}/pages?pagelevel=true
@@ -186,19 +191,19 @@ PATCH 要求内のペイロードの構成が正しくありません。
 要求で指定された PATCH ターゲットが見つかりません。
 
 ### <a name="20121"></a>20121
-要求に含まれている PATCH 引数が無効です。 「[ページ コンテンツの更新](../api-reference/v1.0/api/page_update.md)」を参照してください。
+要求に含まれている PATCH 引数が無効です。「[ページ コンテンツの更新](onenote_update_page.md)」を参照してください。
 
 ### <a name="20122"></a>20122
-要求で指定されている PATCH アクションはサポートされていません。 「[ページ コンテンツの更新](../api-reference/v1.0/api/page_update.md)」を参照してください。
+要求で指定されている PATCH action はサポートされていません。「[ページ コンテンツの更新](onenote_update_page.md)」を参照してください。
 
 ### <a name="20123"></a>20123
 PATCH 要求は、指定されたページを変更できません。
 
 ### <a name="20124"></a>20124
-マルチパートの PATCH 要求に、PATCH アクションの JSON 構造を指定した "commands" パートが含まれていません。 「[ページ コンテンツの更新](../api-reference/v1.0/api/page_update.md)」を参照してください。
+マルチパートの PATCH 要求に、PATCH アクションの JSON 構造を指定した "commands" パートが含まれていません。 「[ページ コンテンツの更新](onenote_update_page.md)」を参照してください。
 
 ### <a name="20125"></a>20125
-PATCH 要求にアクションが含まれていません。 「[ページ コンテンツの更新](../api-reference/v1.0/api/page_update.md)」を参照してください。
+PATCH 要求に action が含まれていません。「[ページ コンテンツの更新](onenote_update_page.md)」を参照してください。
 
 ### <a name="20126"></a>20126
 メッセージ本文に、不正な書式設定の JSON またはこの操作に対してはサポートされていないフィールドが含まれています。
@@ -210,7 +215,7 @@ PATCH 要求にアクションが含まれていません。 「[ページ コ�
 要求に含まれている OData で、メッセージに示されている位置に構文エラーがあります。
 
 ### <a name="20129"></a>20129
-要求に、値が大きすぎる **top** クエリ文字列オプションが含まれます。 ページのクエリの場合、最大値は 100 で、既定値は 20 です。
+要求に、値が大きすぎる**上位**のクエリ文字列オプションが含まれます。ページのクエリの場合、最大値は 100 で、既定値は 20 です。
 
 ### <a name="20130"></a>20130
 要求に含まれている URI が指している HTTP リソースが見つかりません。
@@ -222,38 +227,41 @@ PATCH 要求にアクションが含まれていません。 「[ページ コ�
 要求に無効なコンテンツが含まれています。 このエラーのよくある原因は、Content-Type 要求ヘッダーの欠落や、要求の本文にコンテンツが含まれていないことです。 
 
 ### <a name="20133"></a>20133
-要求で指定された PATCH ターゲットはサポートされていません。 「[ページ コンテンツの更新](../api-reference/v1.0/api/page_update.md)」を参照してください。
+要求で指定された PATCH ターゲットはサポートされていません。 「[ページ コンテンツの更新](onenote_update_page.md)」を参照してください。
 
 ### <a name="20134"></a>20134
-要求に、PATCH アクションのターゲットとして無効な要素が指定されています。 ターゲットで **data-id** 識別子が使用されている場合は、プレフィックスとして # 記号が付いていることを確認してください。 「[ページ コンテンツの更新](../api-reference/v1.0/api/page_update.md)」を参照してください。
+要求に、PATCH アクションのターゲットとして無効な要素が指定されています。ターゲットで **data-id** 識別子が使用されている場合は、プレフィックスとして # 記号が付いていることを確認してください。「[ページ コンテンツの更新](onenote_update_page.md)」を参照してください。
 
 ### <a name="20135"></a>20135
-要求に指定されたエンティティの種類は、PATCH 操作に対してはサポートされていません。 「[ページ コンテンツの更新](../api-reference/v1.0/api/page_update.md)」を参照してください。
+要求に指定されたエンティティの種類は、PATCH 操作に対してはサポートされていません。「[ページ コンテンツの更新](onenote_update_page.md)」を参照してください。
 
 ### <a name="20136"></a>20136
-要求に無効または不足している **data-render-src** または **data-render-method** 属性が含まれます。 「[キャプチャからのデータの抽出](https://msdn.microsoft.com/ja-JP/office/office365/howto/onenote-extract-data)」を参照してください。
+要求に含まれている **data-render-src** または **data-render-method** 属性が無効であるか、または不足しています。「[キャプチャからデータを抽出する](onenote-extract-data.md)」を参照してください。
 
 ### <a name="20137"></a>20137
 このターゲット ページにおいて、PATCH 要求はサポートされていません。
 
 ### <a name="20138"></a>20138
-PATCH 要求のターゲット要素の種類では、**append** 操作はサポートされていません。 「[ページ コンテンツの更新](../api-reference/v1.0/api/page_update.md)」を参照してください。
+PATCH 要求のターゲット要素の種類では、**append** 操作はサポートされていません。「[ページ コンテンツの更新](onenote_update_page.md)」を参照してください。
 
 ### <a name="20139"></a>20139
-要求に、無効な **data-tag** 属性値が含まれています。 「[ノート シールを使用する](https://msdn.microsoft.com/ja-JP/office/office365/howto/onenote-note-tags)」を参照してください。
+要求に、無効な **data-tag** 属性値が含まれています。「[ノート シールを使用する](onenote-note-tags.md)」を参照してください。
 
 ### <a name="20140"></a>20140
-要求に、無効な **data-tag** ステータス値が含まれています。 チェック ボックスのノート シールには、**completed** ステータスを指定できます。 例:
+要求に、無効な **data-tag** ステータス値が含まれています。 チェック ボックスのノート シールには、**completed** ステータスを指定できます。 
+
+例:
+
 ```html
     <p data-tag="to-do:completed">To-do note tag in completed state (checked box in the UI)</p>
 ```
-「[ノート シールを使用する](https://msdn.microsoft.com/ja-JP/office/office365/howto/onenote-note-tags)」を参照してください。
+「[ノート シールを使用する](onenote-note-tags.md)」を参照してください。
 
 ### <a name="20141"></a>20141
-PATCH 要求のターゲット要素の種類では、指定の操作はサポートされていません。 「[ページ コンテンツの更新](../api-reference/v1.0/api/page_update.md)」を参照してください。
+PATCH 要求のターゲット要素の種類では、指定の操作はサポートされていません。 「[ページ コンテンツの更新](onenote_update_page.md)」を参照してください。
 
 ### <a name="20142"></a>20142
-要求に、子エンティティの親、または親エンティティの子に対する **expand** 式が含まれていますが、それはサポートされていません。 「[サポートされる OData クエリ文字列オプション](https://msdn.microsoft.com/ja-JP/office/office365/howto/onenote-get-content#query-options)」を参照してください。
+要求に、子エンティティの親、または親エンティティの子に対する **expand** 式が含まれていますが、それはサポートされていません。「[サポートされる OData のクエリ文字列オプション](onenote-get-content.md#supported-odata-query-string-options)」をご覧ください。
 
 ### <a name="20143"></a>20143
 OData クエリが無効です。
@@ -315,14 +323,14 @@ OData クエリが無効です。
 詳細については、「[OneNote API の調整とその回避方法](http://blogs.msdn.com/b/onenotedev/archive/2016/01/13/onenote-api-throttling-and-best-practices.aspx)」を参照してください。
 
 ### <a name="20168"></a>20168
-要求に指定されているビデオ ソースはサポートされていません。 現行の一覧については、「[サポートされているビデオ サイト](https://msdn.microsoft.com/ja-JP/office/office365/howto/onenote-images-files#videos)」を参照してください。
+要求に指定されているビデオ ソースはサポートされていません。 現行の一覧については、「[サポートされているビデオ サイト](onenote_images_files.md#adding-videos)」を参照してください。
 
 
 ## <a name="codes-from-30001-to-39999"></a>30001 から 39999 のコード
 ユーザーのアカウントに問題があります。
 
 ### <a name="30101"></a>30101
-ユーザー アカウントは、その OneDrive のクォータを超えています。 「[OneDrive](https://onedrive.live.com/about/ja-JP/)」を参照してください。
+ユーザー アカウントの OneDrive のクォータを超えています。「[OneDrive](https://onedrive.live.com/about/ja-JP/)」を参照してください。
 
 ### <a name="30102"></a>30102
 要求されたセクションは、最大サイズに達したため、これ以上追加できません。
