@@ -2208,7 +2208,7 @@
         <Item text="所有されているデバイスを一覧表示する" url="/en-us/api-reference/beta/api/user_list_owneddevices" SEOKeyword="ownedDevices を一覧表示する、Microsoft Graph API、Users API" SEODescription="directoryobject オブジェクトのリストを取得します。" />
             <Item text="登録されているデバイスを一覧表示する" url="/en-us/api-reference/beta/api/user_list_registereddevices" SEOKeyword="registeredDevices を一覧表示する、Microsoft Graph API、Users API" SEODescription="directoryobject オブジェクトのリストを取得します。" />
             <Item text="所有されているオブジェクトを一覧表示する" url="/en-us/api-reference/beta/api/user_list_ownedobjects" SEOKeyword="ownedObjects を一覧表示する、Microsoft Graph API、Users API" SEODescription="directoryobject オブジェクトのリストを取得します。" />
-            <Item text="スコープが限定された管理者メンバーシップを一覧表示する" url="/en-us/api-reference/beta/api/user_list_scopedadministratorof" SEOKeyword="対象の管理者メンバーシップを一覧表示する、Microsoft Graph API、Users API" SEODescription="対象の管理者メンバーシップ オブジェクトの一覧を取得します。" />
+            <Item text="スコープが限定された管理者メンバーシップを一覧表示する" url="/en-us/api-reference/beta/api/user_list_scopedmemberof" SEOKeyword="対象の管理者メンバーシップを一覧表示する、Microsoft Graph API、Users API" SEODescription="対象の管理者メンバーシップ オブジェクトの一覧を取得します。" />
             <Item text="作成されたオブジェクトを一覧表示する" url="/en-us/api-reference/beta/api/user_list_createdobjects" SEOKeyword="createdObjects を一覧表示する、Microsoft Graph API、Users API" SEODescription="directoryobject オブジェクトのリストを取得します。" />
             <Item text="ライセンスを割り当てる" url="/en-us/api-reference/beta/api/user_assignlicense" SEOKeyword="ユーザー: assignLicense、Microsoft Graph API、ユーザー API" SEODescription="" />
             <Item text="メンバー オブジェクトを取得する" url="/en-us/api-reference/beta/api/user_getmemberobjects" SEOKeyword="ユーザー: getMemberObjects、Microsoft Graph API、ユーザー API" SEODescription="" />
@@ -5156,10 +5156,10 @@
         <Item text="メンバーを一覧表示する" url="/en-us/api-reference/beta/api/administrativeunit_list_members" SEOKeyword="管理単位 API、Microsoft Graph API" SEODescription="administrativeUnit オブジェクトからメンバーを一覧表示するための API。" />
         <Item text="メンバーを取得する" url="/en-us/api-reference/beta/api/administrativeunit_get_members" SEOKeyword="管理単位 API、Microsoft Graph API" SEODescription="administrativeUnit オブジェクトからメンバーを取得するための API。" />
         <Item text="メンバーを削除する" url="/en-us/api-reference/beta/api/administrativeunit_delete_members" SEOKeyword="管理単位 API、Microsoft Graph API" SEODescription="administrativeUnit オブジェクトからメンバーを削除するための API。" />
-        <Item text="対象のロールの管理者を追加する" url="/en-us/api-reference/beta/api/administrativeunit_post_scopedadministrators" SEOKeyword="管理単位 API、Microsoft Graph API" SEODescription="administrativeUnit オブジェクトに、対象のロールの管理者を追加するための API" />
-        <Item text="対象のロールの管理者を一覧表示する" url="/en-us/api-reference/beta/api/administrativeunit_list_scopedadministrators" SEOKeyword="管理単位 API、Microsoft Graph API" SEODescription="administrativeUnit オブジェクトから、対象のロールの管理者を一覧表示するための API。" />
-        <Item text="対象のロールの管理者を取得する" url="/en-us/api-reference/beta/api/administrativeunit_get_scopedadministrators" SEOKeyword="管理単位 API、Microsoft Graph API" SEODescription="administrativeUnit オブジェクトから、対象のロールの管理者を取得するための API。" />
-        <Item text="対象のロールの管理者を削除する" url="/en-us/api-reference/beta/api/administrativeunit_delete_scopedadministrators" SEOKeyword="管理単位 API、Microsoft Graph API" SEODescription="administrativeUnit オブジェクトから、対象のロールの管理者を削除するための API。" />
+        <Item text="対象のロールの管理者を追加する" url="/en-us/api-reference/beta/api/administrativeunit_post_scopedrolemembers" SEOKeyword="管理単位 API、Microsoft Graph API" SEODescription="administrativeUnit オブジェクトに、対象のロールの管理者を追加するための API" />
+        <Item text="対象のロールの管理者を一覧表示する" url="/en-us/api-reference/beta/api/administrativeunit_list_scopedrolemembers" SEOKeyword="管理単位 API、Microsoft Graph API" SEODescription="administrativeUnit オブジェクトから、対象のロールの管理者を一覧表示するための API。" />
+        <Item text="対象のロールの管理者を取得する" url="/en-us/api-reference/beta/api/administrativeunit_get_scopedrolemembers" SEOKeyword="管理単位 API、Microsoft Graph API" SEODescription="administrativeUnit オブジェクトから、対象のロールの管理者を取得するための API。" />
+        <Item text="対象のロールの管理者を削除する" url="/en-us/api-reference/beta/api/administrativeunit_delete_scopedrolemembers" SEOKeyword="管理単位 API、Microsoft Graph API" SEODescription="administrativeUnit オブジェクトから、対象のロールの管理者を削除するための API。" />
       </Item>
       <Item text="アプリ ロールの割り当て" url="/en-us/api-reference/beta/resources/approleassignment" SEOKeyword="approleassignment API, Microsoft Graph API, approleassignment API" SEODescription="ユーザーまたはグループがアプリケーションに割り当てられるときの記録に使用します。この例では、ロールの割り当てにより、アプリケーション タイルが、ユーザー アプリケーションのアクセス パネル上に表示されます。特定のロールで、リソース アプリケーションに別の (サービス プリンシパルとしてモデル化された) アプリケーションのアクセス権を付与する場合にも、このエンティティを使用できます。ロールの割り当ての作成、読み取り、更新、および削除ができます。DirectoryObject から継承します。">
           <Item text="appRoleAssignment を取得する" url="/en-us/api-reference/beta/api/approleassignment_get" SEOKeyword="appRoleAssignment を取得する、Microsoft Graph API、approleassignment API" SEODescription="approleassignment オブジェクトのプロパティと関係を取得します。" />
@@ -5811,7 +5811,11 @@
       <Item text="チャネル" url="/en-us/api-reference/beta/resources/channel" SEOKeyword="チャネル API、Microsoft Graph API、チャネル API" SEODescription="">
         <Item text="チャネルを一覧表示する" url="/en-us/api-reference/beta/api/group_list_channels" SEOKeyword="チャネルを一覧表示する, Microsoft Graph API, Groups API" SEODescription="チャネル オブジェクトのリストを取得します。" />
         <Item text="チャネルを作成する" url="/en-us/api-reference/beta/api/group_post_channels" SEOKeyword="会話を作成する, Microsoft Graph API, Groups API" SEODescription="この API を使用して、新しいチャネルを作成します。" />
-        <Item text="チーム チャネルを取得する" url="/en-us/api-reference/beta/api/channel_get" SEOKeyword="チーム チャネル, Microsoft Graph API, Microsoft Teams チャネル API を取得する" SEODescription="チャネル オブジェクトのプロパティと関係を取得します。" />
+        <Item text="チャネルを取得する" url="/en-us/api-reference/beta/api/channel_get" SEOKeyword="チーム チャネル、Microsoft Graph API、Microsoft Teams チャネル API を取得する" SEODescription="チャネル オブジェクトのプロパティと関係を取得します。" />
+		<Item text="チャネル メッセージを一覧表示する" url="/en-us/api-reference/beta/api/channel_list_messages" />
+		<Item text="チャネル メッセージを取得する" url="/en-us/api-reference/beta/api/channel_get_message" />
+		<Item text="メッセージの返信を一覧表示する" url="/en-us/api-reference/beta/api/channel_list_messagereplies" />
+		<Item text="メッセージの返信を取得する" url="/en-us/api-reference/beta/api/channel_get_messagereply" />
       </Item>
       <Item text="チャット スレッド" url="/en-us/api-reference/beta/resources/chatthread" SEOKeyword="チャット スレッド API, Microsoft Graph API, チャット スレッド API" SEODescription="">
         <Item text="チャット スレッドを作成する" url="/en-us/api-reference/beta/api/channel_post_chatthreads" SEOKeyword="チャット スレッドを作成する, Microsoft Graph API, Microsoft Teams チャット API" SEODescription="この API を使用して、新しいチャット スレッドを作成します。" />
