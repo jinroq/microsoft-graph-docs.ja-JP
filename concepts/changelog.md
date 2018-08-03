@@ -6,6 +6,25 @@ Microsoft Graph API に関する既知の問題の詳細については、「[�
 
 ## <a name="july-2018"></a>2018 年 7 月
 
+### <a name="directory-apis"></a>ディレクトリ API
+
+| **変更の種類** | **バージョン**   | **説明**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| 追加 | ベータ版 | テナントで複数地域機能が有効かどうかをアプリが検証できるようにする、IsMultipleDataLocationsForServicesEnabled プロパティが [Organization](../api-reference/beta/resources/organization.md) リソースに追加されました。 ユーザーとグループのために優先されるデータの場所を設定できるようにする、preferredDataLocation プロパティが [user](../api-reference/beta/resources/user.md) および [group](../api-reference/beta/resources/group.md) リソースに追加されました。|
+
+### <a name="microsoft-teams-apis"></a>Microsoft Teams API
+| **変更の種類** | **バージョン**   | **説明**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+|変更|ベータ版|[chatmessage](../api-reference/beta/resources/chatmessage.md)) リソースが更新されました|
+|追加|ベータ版|[Chat attachment](../api-reference/beta/resources/chatattachment.md) というリソースの種類が追加されました|
+|追加|ベータ版|[Chat mention](../api-reference/beta/resources/chatattachment.md) というリソースの種類が追加されました|
+|追加|ベータ版|[Chat reaction](../api-reference/beta/resources/chatattachment.md) というリソースの種類が追加されました|
+|追加|ベータ版|[全チャネル メッセージ取得 API](../api-reference/beta/api/channel_list_messages.md) が追加されました |
+|追加|ベータ版|[チャネル メッセージ取得 API](../api-reference/beta/api/channel_get_message.md) が追加されました |
+|追加|ベータ版|[全メッセージ返信取得 API](../api-reference/beta/api/channel_list_messagereplies.md) が追加されました |
+|追加|ベータ版|[メッセージへの返信取得 API](../api-reference/beta/api/channel_get_messagereply.md) が追加されました |
+
+
 ### <a name="application-and-serviceprincipal-api-changes"></a>application API と servicePrincipal API の変更
 
 | **変更の種類** | **バージョン** | **説明**                          |
@@ -15,6 +34,7 @@ Microsoft Graph API に関する既知の問題の詳細については、「[�
 ### <a name="microsoft-teams-apis"></a>Microsoft Teams API
 | **変更の種類** | **バージョン**   | **説明**                          |
 | :-------------- | :------------ | :--------------------------------------- |
+|追加|ベータ版| [/users/{id}/joinedTeams](../api-reference/beta/api/user_list_joinedteams.md) にアプリケーション アクセス許可のサポートが追加されました |
 |削除|ベータ版|DELETE /groups/{id}/team/channels/{id} は削除されました。代わりに DELETE /teams/{id}/channels/{id} を使用してください。 |
 |削除|ベータ版|GET /groups/{id}/team/channels/{id} は削除されました。代わりに　GET /teams/{id}/channels/{id} を使用してください。 |
 |削除|ベータ版|PATCH /groups/{id}/team/channels/{id} は削除されました。代わりに PATCH /teams/{id}/channels/{id} を使用してください。 |
@@ -28,6 +48,7 @@ Microsoft Graph API に関する既知の問題の詳細については、「[�
 |削除|ベータ版|POST /groups/{id}/team/channels は削除されました。代わりに POST /teams/{id}/channels を使用してください。 |
 |削除|ベータ版|GET /groups/{id}/team は削除されました。代わりに GET /teams/{id} を使用してください。 |
 |削除|ベータ版|PATCH /groups/{id}/team は削除されました。代わりに PATCH /teams/{id} を使用してください。 |
+|追加|ベータ版|[組織内のすべてのチームをリスト](../api-reference/beta/api/team_list_all_teams.md)する API が追加されました。 |
 
 ### <a name="webhooks"></a>Webhooks
 | 変更の種類 | バージョン | 説明                              |
@@ -40,7 +61,7 @@ Microsoft Graph API に関する既知の問題の詳細については、「[�
 
 | **変更の種類** | **バージョン**   | **説明**                          |
 | :-------------- | :------------ | :--------------------------------------- |
-| 追加 | すべて | クライアント アプリがアプリケーションおよびサービス プリンシパルを作成、読み取り、更新、および削除することを許可する新しいアプリケーション アクセス許可 _Application.ReadWrite.All_ および _Application.ReadWrite.OwnedBy ([アクセス許可のトピック](permissions_reference.md#application-resource-permissions)を参照)。 |
+| 追加 | すべて | クライアント アプリによるアプリケーションおよびサービス プリンシパルの作成、読み取り、更新、削除を許可する新しいアプリケーション アクセス許可 _Application.ReadWrite.All_ および _Application.ReadWrite.OwnedBy_ ([アクセス許可のトピック](permissions_reference.md#application-resource-permissions)を参照)。 |
 
 ### <a name="microsoft-intune-apis"></a>Microsoft Intune API
 
@@ -85,7 +106,7 @@ Microsoft Graph API に関する既知の問題の詳細については、「[�
 |追加|ベータ版|[editionUpgradeLicenseType](../api-reference/beta/resources/intune_deviceconfig_editionupgradelicensetype.md) 列挙型に **notConfigured** メンバーが追加されました|
 |追加|ベータ版|[iosUpdatesInstallStatus](../api-reference/beta/resources/intune_deviceconfig_iosupdatesinstallstatus.md) 列挙型に **unknown** メンバーが追加されました|
 |追加|ベータ版|[mobileAppActionType](../api-reference/beta/resources/intune_troubleshooting_mobileappactiontype.md) 列挙型に **userRequestedInstall** メンバーが追加されました|
-|追加|ベータ版|[windows10EditionType](../api-reference/beta/resources/intune_deviceconfig_windows10editiontype.md) 列挙型に **notConfigured** メンバーが追加されました|
+|追加|ベータ版|[windows10EditionType](../api-reference/beta/resources/intune_deviceconfig_windows10editiontype.md) 列挙型に **notConfigured** メンバーが追加されました
 
 ### <a name="microsoft-teams-apis"></a>Microsoft Teams API
 | **変更の種類** | **バージョン**   | **説明**                          |

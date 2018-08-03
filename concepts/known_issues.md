@@ -197,6 +197,10 @@ GET /users/{id | userPrincipalName}/contacts/{id}
 
 返信または転送用の下書きを作成するための**コメント** パラメーター ([createReply](../api-reference/v1.0/api/message_createreply.md)、[createReplyAll](../api-reference/v1.0/api/message_createreplyall.md)、[createForward](../api-reference/v1.0/api/message_createforward.md)) は、結果メッセージの下書き本文の一部にはなりません。
 
+### <a name="get-messages-returns-chats-in-microsoft-teams"></a>Microsoft Teams でのメッセージ返信チャットの GET
+
+V1 とベータ版の両方のエンドポイントで、`GET /users/id/messages` の応答には、チームまたはチャネルの範囲外で行われたユーザーの Microsoft Teams チャットが含まれています。 これらのチャット メッセージの件名は「IM」です。
+
 
 ## <a name="drives-files-and-content-streaming"></a>ドライブ、ファイルおよびコンテンツのストリーミング
 
