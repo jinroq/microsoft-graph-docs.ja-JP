@@ -12,7 +12,7 @@ Outlook では、同じ [sendMail](../api-reference/v1.0/api/user_sendmail.md) �
 
 下書きと送信済みメッセージをプログラムで区別するには、**isDraft** プロパティを確認します。
 
-既定では、下書きメッセージは `Drafts` フォルダーに保存され、送信済みメッセージは `Sent Items` フォルダーに保存されます。 利便性のため、Drafts フォルダーと SentItems フォルダーを、それぞれに対応する[わかりやすいフォルダー名](../api-reference/v1.0/resources/mailfolder.md#well-known-folder-names)で指定することもできます。 たとえば、次のようにして Drafts フォルダー内の[メッセージを取得](../api-reference/v1.0/api/user_list_messages.md)できます。
+既定では、下書きメッセージは `Drafts` フォルダーに保存され、送信済みメッセージは `Sent Items` フォルダーに保存されます。 利便性のため、Drafts フォルダーと SentItems フォルダーを、それぞれに対応する[わかりやすいフォルダー名](../api-reference/v1.0/resources/mailfolder.md)で指定することもできます。 たとえば、次のようにして Drafts フォルダー内の[メッセージを取得](../api-reference/v1.0/api/user_list_messages.md)できます。
 
 ```http
 GET /me/mailfolders('Drafts')
