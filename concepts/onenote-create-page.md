@@ -8,10 +8,10 @@ OneNote ページを作成する場合は、POST 要求を *pages* エンドポ�
 
 <br/>
 
-ページを定義する HTML をメッセージ本文で送信します。 要求が成功すると、Microsoft Graph は 201 HTTP 状態コードを返します。
+メッセージ本文でページを定義する HTML を送信します。 要求が成功すると、Microsoft Graph は 201 HTTP 状態コードを返します。
 
 
-> **注:** セクション、セクション グループ、ノートブックを作成するために送信できる POST 要求の詳細については、[対話型 REST リファレンス](http://dev.onenote.com/docs)をご覧ください。
+> **注:** セクション、セクション グループ、ノートブックを作成するために送信できる POST 要求の詳細については、[対話型 REST リファレンス](http://dev.onenote.com/docs)
 
 
 <a name="request-uri"></a>
@@ -41,7 +41,7 @@ POST 要求 URI を構築するには、サービス ルート URL から開始�
 - `https://graph.microsoft.com/v1.0/me/onenote/sections/{id}/pages`
 - `https://graph.microsoft.com/v1.0/me/onenote/pages?sectionName=Homework`
 
-[サービス ルート URL](../api-reference/v1.0/resources/onenote-api-overview.md#root-url) の詳細についてはリンク先をご覧ください。
+[サービス ルート URL](../api-reference/v1.0/resources/onenote-api-overview.md#root-url) の詳細についてはリンク先を参照してください。
 
 <a name="post-pages-section-name"></a>
 
@@ -113,14 +113,14 @@ Content-Type: application/xhtml+xml
 
 - Microsoft Graph は [HTML 要素のサブセット](#supported-html-and-css-for-onenote-pages)をサポートします。 
 
-- Microsoft Graph は一般的な HTML 属性のサブセットとカスタム属性のセットをサポートします (ページの更新に使用される **data-id** 属性など)。 サポートされる属性については、「[入出力 HTML](onenote_input_output_html.md)」をご覧ください。
+- Microsoft Graph は一般的な HTML 属性のサブセットとカスタム属性のセットをサポートします (ページの更新に使用される **data-id** 属性など)。 サポートされる属性については、「[入出力 HTML](onenote_input_output_html.md)
 
 
 <a name="supported-html"></a>
 
 ### <a name="supported-html-and-css-for-onenote-pages"></a>OneNote ページでサポートされる HTML と CSS
 
-すべての要素、属性、およびプロパティがサポートされるわけではありません (HTML4、XHTML、CSS、HTML5 などについて)。 Microsoft Graph は、ユーザーの OneNote の使用方法に適した、限定的な HTML のセットを受け入れます。 詳細については、「[ページでサポートされる HTML タグ](http://dev.onenote.com/docs#/introduction/html-tag-support-for-pages)」をご覧ください。 この参照先に示されていないタグは、無視されることがあります。
+すべての要素、属性、およびプロパティがサポートされるわけではありません (HTML4、XHTML、CSS、HTML5 などについて)。 Microsoft Graph は、ユーザーの OneNote の使用方法に適した、限定的な HTML のセットを受け入れます。 詳細については、「[ページでサポートされる HTML タグ](http://dev.onenote.com/docs#/introduction/html-tag-support-for-pages)」を参照してください。 この参照先に示されていないタグは、無視されることがあります。
 
 <!--Microsoft Graph only accepts UTF-8 data. Be sure that all requests are encoded that way, and your content-type headers indicate that as well. xx our examples don't show this-->
 
@@ -184,13 +184,13 @@ Content-Type:application/pdf
 --MyPartBoundary198374--
 ```
 
-複数イメージやその他のファイルを含むページを作成する方法示す例については、「[画像とファイルを追加する](onenote_images_files.md)」、および[チュートリアル](https://docs.microsoft.com/ja-JP/previous-versions/office/office-365-api/how-to/onenote-tutorial)と[サンプル](https://github.com/onenotedev)を参照してください。また、[絶対配置要素の作成](onenote-abs-pos.md)方法、[ノート シールの使用](onenote-note-tags.md)方法と、名刺キャプチャ、オンラインのレシピ一覧およびオンラインの製品一覧の[データ抽出](onenote-extract-data.md)方法について調べてください。
+複数イメージやその他のファイルを含むページの作成方法を示す例については、「[画像とファイルを追加する](onenote_images_files.md)」、および[チュートリアル](https://docs.microsoft.com/ja-JP/previous-versions/office/office-365-api/how-to/onenote-tutorial)と[サンプル](https://github.com/onenotedev)を参照してください。また、[絶対配置要素の作成](onenote-abs-pos.md)方法、[ノート シールの使用](onenote-note-tags.md)方法と、名刺キャプチャ、オンラインのレシピ一覧およびオンラインの製品一覧の[データ抽出](onenote-extract-data.md)方法について調べてください。
 
 Microsoft Graph は、マルチパート メッセージ本文の CRLF 改行など、一部の書式設定については厳密です。 無効な形式のペイロードを作成してしまう危険性を少なくするために、マルチパート メッセージはライブラリを使用して作成してください。 
 
 無効な形式のペイロードに関する 400 状態を受信した場合は、改行と空白の書式を確認し、エンコーディングの問題について調べます。 たとえば、`charset=utf-8` を使用してみてください (例: `Content-Type: text/html; charset=utf-8`)。
 
-[入力 HTML に対する要件と制限事項](#requirements-and-limitations-for-input-html-in-post-pages-requests) および [POST 要求のサイズ制限](onenote_images_files.md#size-limitations-for-post-pages-requests)をご覧ください。
+[入力 HTML に対する要件と制限事項](#requirements-and-limitations-for-input-html-in-post-pages-requests) および [POST 要求のサイズ制限](onenote_images_files.md#size-limitations-for-post-pages-requests)を参照してください。
 
 
 <a name="request-response-info"></a>
@@ -240,7 +240,7 @@ OneNote ページを作成するには、適切なアクセス許可を要求す
 - Notes.ReadWrite
 - Notes.ReadWrite.All
 
-アクセス許可の範囲とその動作方法の詳細については、「[Microsoft Graph のアクセス許可のリファレンス](permissions_reference.md)」をご覧ください。
+アクセス許可の範囲とその動作方法の詳細については、「[Microsoft Graph のアクセス許可のリファレンス](permissions_reference.md)」を参照してください。
 
 
 

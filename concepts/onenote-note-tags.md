@@ -293,7 +293,7 @@ Microsoft Graph は、次の情報を応答で返します。
 | 応答データ | 説明 |  
 |------|------|  
 | 成功コード | 成功した POST 要求に対しては 201 HTTP ステータス コード、成功した PATCH 要求に対しては 204 HTTP ステータス コードが戻ります。 |  
-| エラー | Microsoft Graph から返されることのある OneNote エラーに関する詳細については、「[Microsoft Graph の OneNote API のエラー コード](onenote_error_codes.md)」をご覧ください。 |  
+| エラー | Microsoft Graph から返されることのある OneNote エラーに関する詳細については、「[Microsoft Graph の OneNote API のエラー コード](onenote_error_codes.md)」を参照してください。 |  
 
 
 <a name="permissions"></a>
@@ -313,7 +313,7 @@ OneNote ページを作成または更新するには、適切なアクセス許
 - Notes.ReadWrite
 - Notes.ReadWrite.All  
 
-アクセス許可のスコープと動作のしくみの詳細については、「[OneNote のアクセス許可のスコープ](permissions_reference.md)」をご覧ください。
+アクセス許可のスコープと動作のしくみの詳細については、「[OneNote のアクセス許可のスコープ](permissions_reference.md)」を参照してください。
 
 
 <a name="see-also"></a>
