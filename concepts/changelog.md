@@ -50,10 +50,17 @@ Microsoft Graph API に関する既知の問題の詳細については、「[�
 |削除|ベータ版|PATCH /groups/{id}/team は削除されました。代わりに PATCH /teams/{id} を使用してください。 |
 |追加|ベータ版|[組織内のすべてのチームをリスト](../api-reference/beta/api/team_list_all_teams.md)する API が追加されました。 |
 
+### <a name="outlook-contacts"></a>Outlook の連絡先
+| **変更の種類** | **バージョン**   | **説明**                          |
+|:--------------- |:------------- |:---------------------------------------- |
+|追加 |ベータ版 | 複合型 [typedEmailAddress](../api-reference/beta/resources/typedemailaddress.md) が追加されました。 |
+|変更 | ベータ版 | [contact](../api-reference/beta/resources/contact.md) の **emailAddresses** プロパティの型を **typedEmailAddress** インスタンスのコレクションに変更しました。|
+
 ### <a name="webhooks"></a>Webhooks
 | 変更の種類 | バージョン | 説明                              |
 |:------------|:--------|:-----------------------------------------|
 | 重大な変更 | ベータ版および v1.0 | ドライブ ルート項目の [webhooks](../api-reference/v1.0/resources/webhooks.md) [サブスクリプション有効期限の最大長](../api-reference/v1.0/resources/subscription.md#maximum-length-of-subscription-per-resource-type) を 3 日に短縮。 | 
+
 
 ## <a name="june-2018"></a>2018 年 6 月
 

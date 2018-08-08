@@ -104,14 +104,6 @@ GET https://graph.microsoft.com/beta/bookingBusinesses?query=Fabrikam
 
 ## <a name="calendars"></a>予定表
 
-### <a name="adding-and-accessing-ics-based-calendars-in-users-mailbox"></a>ユーザーのメールボックスに ICS ベースの予定表を追加してアクセスする
-
-現在、インターネット予定表購読 (ICS) に基づく予定表の部分的なサポートがあります。
-
-* ユーザー インターフェイスを経由して ICS ベースの予定表をユーザーのメールボックスに追加できますが、Microsoft Graph API を経由してこれを行うことはできません。
-* [ユーザーの予定表の一覧表示](http://developer.microsoft.com/ja-JP/graph/docs/api-reference/v1.0/api/user_list_calendars)を行うと、ICS ベースの予定表を含む、ユーザーの既定の予定表のグループ、または指定した予定表のグループにある各[予定表](http://developer.microsoft.com/ja-JP/graph/docs/api-reference/v1.0/resources/calendar)の**名前**、**色**、**ID** のプロパティを取得できます。予定表リソースの ICS URL を保存したり、アクセスしたりすることはできません。
-* また、ICS ベースの予定表の[イベントを一覧表示](http://developer.microsoft.com/ja-JP/graph/docs/api-reference/v1.0/api/calendar_list_events)することもできます。
-
 ### <a name="accessing-a-shared-calendar"></a>共有された予定表にアクセスする
 
 別のユーザーによって共有されている予定表で、次の操作によってイベントにアクセスするとします。
@@ -143,6 +135,17 @@ GET \users('{id}')\calendars('{id}')\events
 GET \me\calendars('{id}')\events
 ```
 
+### <a name="adding-and-accessing-ics-based-calendars-in-users-mailbox"></a>ユーザーのメールボックスに ICS ベースの予定表を追加してアクセスする
+
+現在、インターネット予定表購読 (ICS) に基づく予定表の部分的なサポートがあります。
+
+* ユーザー インターフェイスを経由して ICS ベースの予定表をユーザーのメールボックスに追加できますが、Microsoft Graph API を経由してこれを行うことはできません。
+* [ユーザーの予定表の一覧表示](http://developer.microsoft.com/ja-JP/graph/docs/api-reference/v1.0/api/user_list_calendars)を行うと、ICS ベースの予定表を含む、ユーザーの既定の予定表のグループ、または指定した予定表のグループにある各[予定表](http://developer.microsoft.com/ja-JP/graph/docs/api-reference/v1.0/resources/calendar)の**名前**、**色**、**ID** のプロパティを取得できます。予定表リソースの ICS URL を保存したり、アクセスしたりすることはできません。
+* また、ICS ベースの予定表の[イベントを一覧表示](http://developer.microsoft.com/ja-JP/graph/docs/api-reference/v1.0/api/calendar_list_events)することもできます。
+
+### <a name="onlinemeetingurl-property-support-for-microsoft-teams"></a>Microsoft Teams 向けの onlineMeetingUrl プロパティのサポート
+
+現時点では、Skype 会議 [event](../api-reference/v1.0/resources/event.md) の **onlineMeetingUrl** プロパティは、オンライン会議の URL を示します。 ただし、Microsoft Teams の会議イベントの onlineMeetingUrl プロパティは Null に設定します。
 
 ## <a name="contacts"></a>連絡先
 

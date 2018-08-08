@@ -182,28 +182,9 @@ GET https://graph.microsoft.com/v1.0/me/messages?$filter=Subject eq 'welcome' an
 
 ### <a name="using-search-on-message-collections"></a>メッセージ コレクションで $search を使用する
 
-Outlook や SharePoint などの Office 365 アプリケーションは、キーワード クエリ言語 (KQL) 構文で検索を実行することをサポートしています。 そのため、複数のデータ ストアで 1 つの共通の探索ドメインを使用できる利便性が得られます。 
+特定のメッセージ プロパティの値に基づいてメッセージを検索することができます。 検索結果は、メッセージが送信された日時で並べ替えられます。
 
-$search クエリ文字列の中で KQL が認識する次のプロパティ名を指定できます。 これらのプロパティ名は **message** エンティティの中で定義されているプロパティではありませんが、内部では **message** エンティティの中のプロパティに対応付けられています。 詳細な情報と例については、「[Exchange の検索可能なプロパティ](https://docs.microsoft.com/ja-JP/Exchange/policy-and-compliance/ediscovery/message-properties-and-search-operators#searchable-properties-in-exchange)」を参照してください。
-
-- **attachment**
-- **bcc**
-- **body**
-- **category**
-- **cc**
-- **content**
-- **from**
-- **has**
-- **importance**
-- **participants**
-- **received**
-- **sender**
-- **subject**
-- **to**
-
-メッセージで検索を行うときに値のみ指定した場合、検索は既定の検索プロパティである **from**、**subject**、**body** に基づいて行われます。
-
-メッセージ コレクションでの検索結果は、メッセージが送信された日時で並べ替えられます。
+メッセージで検索を行うときに、特定のメッセージ プロパティを指定せずに値のみを指定した場合、検索は既定の検索プロパティである **from**、**subject**、**body** に基づいて行われます。
 
 次の例は、サインイン中のユーザーの受信トレイにあるメッセージのうち、既定の 3 つの検索プロパティのいずれかに "pizza" が含まれるメッセージをすべて返します。
 
@@ -213,12 +194,31 @@ GET https://graph.microsoft.com/v1.0/me/messages?$search="pizza"
 
 [Graph エクスプローラーで試す][search-example]
 
-次の例は、ユーザーの受信トレイにあるメッセージのうち、特定のメール アドレスから送信されたメッセージをすべて検索します。
+また、キーワード クエリ言語 (KQL) 構文で認識される、以下の表のメッセージ プロパティ名を指定して、メッセージの検索をすることもできます。 これらのプロパティ名は Microsoft Graph の **message** エンティティで定義したプロパティです。 Outlook や他の Office 365 アプリケーション (SharePoint など) では KQL 構文をサポートしており、データ ストアの共通探索ドメインの利便性が向上します。
 
-```http
-GET https://graph.microsoft.com/v1.0/me/messages?$search="from:help@contoso.com"
-```
-KQL の構文、サポートされている演算子、検索のヒントなどの詳細については、次の記事を参照してください。
+
+| 検索可能な電子メール プロパティ                | 説明 | 例 
+|:-------------------------|:------------|:---------|
+| **attachment**           | 電子メール メッセージに添付されているファイルの名前。|[`me/messages?$search="attachment:api-catalog.md"`][search-att-example]
+| **bcc**           | SMTP アドレス、表示名、エイリアスとして指定されている、電子メール メッセージの **bcc** フィールド。|[`me/messages?$search="bcc:samanthab@contoso.com"&$select=subject,bccRecipients`][search-bcc-example]
+| **body**           | 電子メール メッセージの本文。|[`me/messages?$search="body:excitement"`][search-body-example]
+| **cc**           | SMTP アドレス、表示名、エイリアスとして指定されている、電子メール メッセージの **cc** フィールド。|[`me/messages?$search="cc:danas"&$select=subject,ccRecipients`][search-cc-example]
+| **from**           | SMTP アドレス、表示名、エイリアスとして指定されている、電子メール メッセージの送信者。|[`me/messages?$search="from:randiw"&$select=subject,from`][search-from-example]
+| **hasAttachment** | 電子メール メッセージに添付ファイルがあり、そのファイルがインラインの添付ファイルでない場合は true、そうでない場合は false。 |[`me/messages?$search="hasAttachments=true"`][search-from-example]
+| **importance**           | 送信者がメッセージを送信するときに指定できる電子メール メッセージの重要度。 使用可能な値: `low`、`medium`、`high`。|[`me/messages?$search="importance:high"&$select=subject,importance`][search-imp-example]
+| **kind**           | メッセージの種類。 使用可能な値: `contacts`、`docs`、`email`、`faxes`、`im`、`journals`、`meetings`、`notes`、`posts`、`rssfeeds`、`tasks`、`voicemail`。|[`me/messages?$search="kind:voicemail"`][search-kind-example]
+| **participants**           | SMTP アドレス、表示名、エイリアスとして指定されている、電子メール メッセージの **from**、**to**、**cc**、**bcc** フィールド。|[`me/messages?$search="participants:danas"`][search-part-example]
+| **received**           | 電子メール メッセージが受信者によって受信された日付。|[`me/messages?$search="received:07/23/2018"&$select=subject,receivedDateTime`][search-rcvd-example]
+| **recipients**           | SMTP アドレス、表示名、エイリアスとして指定されている、電子メール メッセージの **to**、**cc**、**bcc** フィールド。|[`me/messages?$search="recipients:randiq"&$select=subject,toRecipients,ccRecipients,bccRecipients`][search-rcpts-example]
+| **sent**           | 送信者によって電子メール メッセージが送信された日付。|[`me/messages?$search="sent:07/23/2018"&$select=subject,sentDateTime`][search-sent-example]
+| **size**           | アイテムのサイズ (バイト数)。|[`me/messages?$search="size:1..500000"`][search-size-example]
+| **subject**           | 電子メール メッセージの件名行に含まれるテキスト。 .|[`me/messages?$search="subject:has"&$select=subject`][search-sbj-example]
+| **to**           | SMTP アドレス、表示名、エイリアスとして指定されている、電子メール メッセージの **to** フィールド。|[`me/messages?$search="to:randiw"&$select=subject,toRecipients`][search-to-example]
+
+
+検索可能な電子メール プロパティ、KQL 構文、サポートされている演算子、検索のヒントなどの詳細については、次の記事を参照してください。
+
+- [Exchange の検索可能なプロパティ](https://docs.microsoft.com/ja-JP/Exchange/policy-and-compliance/ediscovery/message-properties-and-search-operators#searchable-properties-in-exchange)。
 
 - [キーワード クエリ言語 (KQL) 構文のリファレンス](https://docs.microsoft.com/ja-JP/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference)
 
@@ -369,4 +369,22 @@ https://graph.microsoft.com/beta/me?$expand=photo
 [skip-example]: https://developer.microsoft.com/graph/graph-explorer?request=me/messages?$skip=11&method=GET&version=v1.0
 [top-example]: https://developer.microsoft.com/graph/graph-explorer?request=users?$top=2&method=GET&version=v1.0
 
+[search-att-example]: https://developer.microsoft.com/graph/graph-explorer?request=me/messages?$search=%22attachment%3Aapi-catalog%2Emd%22&method=GET&version=v1.0
+[search-bcc-example]: https://developer.microsoft.com/graph/graph-explorer?request=me/messages?$search=%22bcc%3Asamanthab%40contoso%2Ecom%22%26$select=subject,bccRecipients&method=GET&version=v1.0
+[search-body-example]: https://developer.microsoft.com/graph/graph-explorer?request=me/messages?$search=%22body%3Aexcitement%22&method=GET&version=v1.0
+[search-cc-example]: https://developer.microsoft.com/graph/graph-explorer?request=me/messages?$search=%22cc%3Adanas%22%26$select=subject,ccRecipients&method=GET&version=v1.0
+[search-from-example]: https://developer.microsoft.com/graph/graph-explorer?request=me/messages?$search=%22from%3Arandiw%22%26$select=subject,from&method=GET&version=v1.0
+[search-hasatt-example]: https://developer.microsoft.com/graph/graph-explorer?request=me/messages?$search=%22hasAttachments=true%22&method=GET&version=v1.0
+[search-imp-example]: https://developer.microsoft.com/graph/graph-explorer?request=me/messages?$search=%22importance%3Ahigh%22%26$select=subject,importance&method=GET&version=v1.0
+[search-kind-example]: https://developer.microsoft.com/graph/graph-explorer?request=me/messages?$search=%22kind%3Avoicemail%22&method=GET&version=v1.0
+[search-part-example]: https://developer.microsoft.com/graph/graph-explorer?request=me/messages?$search=%22participants%3Adanas%22&method=GET&version=v1.0
+
+[search-rcvd-example]: https://developer.microsoft.com/graph/graph-explorer?request=me/messages?$search=%22received%3A07/23/2018%22%26$select=subject,receivedDateTime&method=GET&version=v1.0
+
+[search-rcpts-example]: https://developer.microsoft.com/graph/graph-explorer?request=me/messages?$search=%22recipients%3Arandiw%22%26$select=subject,toRecipients,ccRecipients,bccRecipients&method=GET&version=v1.0
+[search-sent-example]: https://developer.microsoft.com/graph/graph-explorer?request=me/messages?$search=%22sent%3A07/23/2018%22%26$select=subject,sentDateTime&method=GET&version=v1.0
+[search-size-example]: https://developer.microsoft.com/graph/graph-explorer?request=me/messages?$search=%22size%3A1%2E%2E500000%22&method=GET&version=v1.0
+
+[search-sbj-example]: https://developer.microsoft.com/graph/graph-explorer?request=me/messages?$search=%22subject%3Ahas%22%26$select=subject&method=GET&version=v1.
+[search-to-example]: https://developer.microsoft.com/graph/graph-explorer?request=me/messages?$search=%22to%3Arandiw%22%26$select=subject,toRecipients&method=GET&version=v1.0
 
