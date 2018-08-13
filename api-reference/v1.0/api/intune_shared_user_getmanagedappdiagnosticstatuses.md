@@ -34,14 +34,17 @@ GET /users/{usersId}/getManagedAppDiagnosticStatuses
 成功した場合、この関数は `200 OK` 応答コードと、応答本文で [managedAppDiagnosticStatus](../resources/intune_mam_managedappdiagnosticstatus.md) コレクションを返します。
 
 ## <a name="example"></a>例
+
 ### <a name="request"></a>要求
 以下は、要求の例です。
+
 ``` http
 GET https://graph.microsoft.com/v1.0/users/{usersId}/getManagedAppDiagnosticStatuses
 ```
 
 ### <a name="response"></a>応答
 以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。
+
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json

@@ -4,13 +4,13 @@
 
 ## <a name="methods"></a>メソッド
 
-| メソッド           | 戻り値の型    |説明|
+| メソッド | 戻り値の型 | 説明 |
 |:---------------|:--------|:----------|
 |[ユーザーを一覧表示する](../api/user_list_people.md) | **人物** |[ユーザー](../resources/user.md)への関連性によって順序付けられた person オブジェクトの集合を取得します。|
-|[人物を取得する](../api/person_get.md) | **人物** |person オブジェクトのプロパティと関係を取得します。|
 
 ## <a name="properties"></a>プロパティ
-| プロパティ     | 型   |説明|
+
+| プロパティ | 型 | 説明 |
 |:---------------|:--------|:----------|
 |birthday|String|人物の誕生日。|
 |companyName|String|人物の会社名。|
@@ -34,8 +34,8 @@
 |yomiCompany|String|人物の会社の日本名の読み仮名。|
 
 ## <a name="relationships"></a>リレーションシップ
-なし。
 
+なし。
 
 ## <a name="json-representation"></a>JSON 表記
 

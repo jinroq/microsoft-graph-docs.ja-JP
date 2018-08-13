@@ -10,7 +10,7 @@
 |:--------------------|:---------------------------------------------------------|
 |委任 (職場または学校のアカウント) | Directory.Read.All、Directory.ReadWrite.All、Directory.AccessAsUser.All    |
 |委任 (個人用 Microsoft アカウント) | サポートされていません。    |
-|アプリケーション | Device.ReadWrite.All および User.ReadBasic.All または Directory.Read.All または Directory.ReadWrite.All |
+|アプリケーション | Directory.Read.All、Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 要求
 <!-- { "blockType": "ignored" } -->

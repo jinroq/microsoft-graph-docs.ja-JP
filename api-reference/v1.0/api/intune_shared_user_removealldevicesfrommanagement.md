@@ -35,14 +35,17 @@ POST /users/{usersId}/removeAllDevicesFromManagement
 成功した場合、このアクションは `204 No Content` 応答コードを返します。
 
 ## <a name="example"></a>例
+
 ### <a name="request"></a>要求
 以下は、要求の例です。
+
 ``` http
 POST https://graph.microsoft.com/v1.0/users/{usersId}/removeAllDevicesFromManagement
 ```
 
 ### <a name="response"></a>応答
 以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。
+
 ``` http
 HTTP/1.1 204 No Content
 ```

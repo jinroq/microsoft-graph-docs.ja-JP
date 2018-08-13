@@ -9,7 +9,6 @@ Office 365 上でサポートされている HD Photo のサイズは次のと�
 使用可能な最大の写真のメタデータを取得したり、サイズを指定してその写真サイズのメタデータを取得したりできます。
 要求したサイズが使用できない場合でも、アップロードされて使用可能になっている、より小さいサイズを取得できます。
 たとえば、アップロードした写真が 504x504 ピクセルの場合は、648×648 を除くすべてのサイズの写真がダウンロード可能になります。
-指定したサイズがユーザーのメールボックスにも Azure Active Directory にもない場合は、'1x1' のサイズがメタデータの残りの部分とともに返されます。
 
 ## <a name="permissions"></a>アクセス許可
 
@@ -37,6 +36,7 @@ GET /users/{id | userPrincipalName}/contactfolders/{contactFolderId}/contacts/{i
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/photo
+GET /me/photos
 GET /users/{id | userPrincipalName}/photo
 GET /groups/{id}/photo
 GET /me/contacts/{id}/photo
@@ -45,7 +45,19 @@ GET /me/contactfolders/{contactFolderId}/contacts/{id}/photo
 GET /users/{id | userPrincipalName}/contactfolders/{contactFolderId}/contacts/{id}/photo
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="http-request-to-get-the-metadata-for-a-specific-photo-size"></a>特定の写真サイズのメタデータを取得する HTTP 要求
+<!-- { "blockType": "ignored" } -->
+```http
+GET /me/photos/{size}
+GET /users/{id | userPrincipalName}/photos/{size}
+GET /groups/{id}/photos/{size}
+GET /me/contacts/{id}/photos/{size}
+GET /users/{id | userPrincipalName}/contacts/{id}/photos/{size}
+GET /me/contactfolders/{contactFolderId}/contacts/{id}/photos/{size}
+GET /users/{id | userPrincipalName}/contactfolders/{contactFolderId}/contacts/{id}/photos/{size}
+```
+
+## <a name="parameters"></a>パラメーター
 
 |**パラメーター**|**型**|**説明**|
 |:-----|:-----|:-----|

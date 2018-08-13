@@ -2,12 +2,13 @@
 author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
-title: "ファイルをリンクで共有する"
-ms.openlocfilehash: 342e6ce403225a5d4b8b555a79355a721055e465
-ms.sourcegitcommit: 7aea7a97e36e6d146214de3a90fdbc71628aadba
+title: ファイルをリンクで共有する
+ms.openlocfilehash: 2a1471cf08545bb24b8da47ce1792f85860d07ca
+ms.sourcegitcommit: 9f78a3506e1c1ad0733264ce21a1f8acfeadb90a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 08/09/2018
+ms.locfileid: "22223476"
 ---
 # <a name="create-a-sharing-link-for-a-driveitem"></a>DriveItem の共有リンクを作成する
 
@@ -47,7 +48,7 @@ POST /users/{userId}/drive/items/{itemId}/createLink
 |   名前    |  型  |                                 説明                                  |
 | :-------- | :----- | :--------------------------------------------------------------------------- |
 | **type**  | string | 作成する共有リンクの種類。`view`、`edit`、または `embed` です。       |
-| **scope** | string | 省略可能。 作成するリンクのスコープ。 `anonymous` または `organization` です。 |
+| **scope** | string | 省略可能。 作成するリンクのスコープ。 `anonymous` または `organization` のどちらかです。 |
 
 
 ### <a name="link-types"></a>リンクの種類
@@ -197,7 +198,7 @@ Content-Type: application/json
   "link": {
     "type": "embed",
     "webHtml": "<IFRAME src=\"https://onedrive.live.com/...\"></IFRAME>",
-    "webUrl": "https://onedive.live.com/...",
+    "webUrl": "https://onedrive.live.com/...",
     "application": {
       "id": "1234",
       "displayName": "Sample Application"

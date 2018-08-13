@@ -1,6 +1,6 @@
 # <a name="get-devicemanagementexchangeconnector"></a>Get deviceManagementExchangeConnector
 
-> **注:**Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
+> **注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
 
 [deviceManagementExchangeConnector](../resources/intune_onboarding_devicemanagementexchangeconnector.md) オブジェクトのプロパティとリレーションシップを読み取ります。
 ## <a name="prerequisites"></a>前提条件
@@ -26,8 +26,8 @@ GET /deviceManagement/exchangeConnectors/{deviceManagementExchangeConnectorId}
 ## <a name="request-headers"></a>要求ヘッダー
 |ヘッダー|値|
 |:---|:---|
-|承認|ベアラー &lt;トークン&gt;が必須。|
-|承諾|application/json|
+|Authorization|ベアラー &lt;トークン&gt; が必須。|
+|Accept|application/json|
 
 ## <a name="request-body"></a>要求本文
 このメソッドには、要求本文を指定しません。
@@ -47,7 +47,7 @@ GET https://graph.microsoft.com/v1.0/deviceManagement/exchangeConnectors/{device
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 521
+Content-Length: 580
 
 {
   "value": {
@@ -57,6 +57,7 @@ Content-Length: 521
     "status": "connectionPending",
     "primarySmtpAddress": "Primary Smtp Address value",
     "serverName": "Server Name value",
+    "connectorServerName": "Connector Server Name value",
     "exchangeConnectorType": "hosted",
     "version": "Version value",
     "exchangeAlias": "Exchange Alias value",

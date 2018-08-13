@@ -15,7 +15,7 @@
 | プロパティ  | 型   | 説明                                                     |
 |:----------|:-------|:----------------------------------------------------------------|
 | address | [physicalAddress](physicaladdress.md) |場所の番地。 |
-| coordinates | [outlookGeoCoordinates](outlookGeoCoordinates.md) | 場所の地理的座標と標高。 |
+| coordinates | [outlookGeoCoordinates](outlookgeocoordinates.md) | 場所の地理的座標と標高。 |
 | displayName  | String | 場所に関連付けられた名前。                       |
 | locationEmailAddress | String | 場所のメール アドレス (省略可能)。              |
 | locationUri | String | 場所を表す URI (省略可能)。 |

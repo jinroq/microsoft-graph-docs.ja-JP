@@ -2,12 +2,13 @@
 author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
-title: "ファイルをダウンロードする"
-ms.openlocfilehash: 39a1b5ac3168decb0b559679b0e8a3ae7a80f970
-ms.sourcegitcommit: 7aea7a97e36e6d146214de3a90fdbc71628aadba
+title: ファイルをダウンロードする
+ms.openlocfilehash: b5456acc6661fdc7a9682bf2b0ff70a2e5e38a3e
+ms.sourcegitcommit: 9f5a17e9978197ab47b460c53f7fe2cec180d4a2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 08/10/2018
+ms.locfileid: "19492733"
 ---
 # <a name="download-the-contents-of-a-driveitem"></a>DriveItem のコンテンツをダウンロードする
 
@@ -28,7 +29,7 @@ DriveItem のプライマリ ストリーム (ファイル) のコンテンツ�
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET /drives/items/{item-id}/content
+GET /drives/{drive-id}/items/{item-id}/content
 GET /groups/{group-id}/drive/items/{item-id}/content
 GET /me/drive/root:/{item-path}:/content
 GET /me/drive/items/{item-id}/content

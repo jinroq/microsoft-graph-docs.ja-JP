@@ -1,6 +1,6 @@
 # <a name="get-macoscompliancepolicy"></a>Get macOSCompliancePolicy
 
-> **注:**Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
+> **注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
 
 [macOSCompliancePolicy](../resources/intune_deviceconfig_macoscompliancepolicy.md) オブジェクトのプロパティとリレーションシップを読み取ります。
 ## <a name="prerequisites"></a>前提条件
@@ -26,8 +26,8 @@ GET /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}
 ## <a name="request-headers"></a>要求ヘッダー
 |ヘッダー|値|
 |:---|:---|
-|承認|ベアラー &lt;トークン&gt;が必須。|
-|承諾|application/json|
+|Authorization|ベアラー &lt;トークン&gt; が必須。|
+|Accept|application/json|
 
 ## <a name="request-body"></a>要求本文
 このメソッドには、要求本文を指定しません。
@@ -47,7 +47,7 @@ GET https://graph.microsoft.com/v1.0/deviceManagement/deviceCompliancePolicies/{
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 979
+Content-Length: 1088
 
 {
   "value": {
@@ -71,7 +71,10 @@ Content-Length: 979
     "systemIntegrityProtectionEnabled": true,
     "deviceThreatProtectionEnabled": true,
     "deviceThreatProtectionRequiredSecurityLevel": "secured",
-    "storageRequireEncryption": true
+    "storageRequireEncryption": true,
+    "firewallEnabled": true,
+    "firewallBlockAllIncoming": true,
+    "firewallEnableStealthMode": true
   }
 }
 ```
