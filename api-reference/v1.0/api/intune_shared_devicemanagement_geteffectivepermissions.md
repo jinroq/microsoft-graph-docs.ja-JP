@@ -31,7 +31,7 @@ GET /deviceManagement/getEffectivePermissions
 要求 URL で、次のクエリ パラメーターに値を指定します。
 次の表に、この関数で使用できるパラメーターを示します。
 
-|プロパティ|型|説明|
+|プロパティ|Type|説明|
 |:---|:---|:---|
 |scope|String|まだ文書化されていません|
 
