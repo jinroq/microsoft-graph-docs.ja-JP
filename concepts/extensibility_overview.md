@@ -4,7 +4,7 @@ Microsoft Graph は、[ユーザー](../api-reference/v1.0/resources/user.md)や
 
 たとえば、**ユーザー** リソースを拡張することによって、アプリを軽量に保ちながら、アプリ固有のユーザー プロファイル データを Microsoft Graph に格納できます。 または、アプリの既存のユーザー プロファイル ストアを保持し、**ユーザー** リソースにアプリ固有のストア識別子を追加することもできます。
 
-Microsoft Graph には、2 種類の拡張機能が備わっています。ご自分のアプリケーションの必要に最適な拡張機能の種類を選択してください。
+Microsoft Graph は、2 種類の拡張機能を提供します。アプリケーションに最適な拡張機能の種類を選択してください。
 
 - **オープン拡張機能**:開発者が使用するのに適しています。
 - **スキーマ拡張機能**:型指定されたデータを格納すること、スキーマの検出と共有を容易にすること、フィルターを可能にすること、将来、入力データの検証と承認を可能にすることに関心のある開発者にとって、用途のより広いメカニズムとなります。
@@ -53,8 +53,8 @@ Microsoft Graph には、2 種類の拡張機能が備わっています。ご�
 
 スキーマ拡張機能定義を作成する場合、その **id** の一意の名前を指定する必要があります。次の 2 つの名前付けオプションがあります。
 
-- ご使用のテナントで検証済みのバニティ `.com`、`.net`、`.gov`、`.edu`、`.org` ドメインのいずれかが既にある場合、ドメイン名とスキーマ名を一緒に使用して一意の名前を定義できます (形式: \{_&#65279;domainName_\}\_\{_&#65279;schemaName_\})。 たとえば、バニティ ドメインが contoso.com の場合、**id** を `contoso_mySchema` と定義できます。 これは優先オプションです。
-- 検証済みバニティ ドメインがない場合、**id** をスキーマ名 (ドメイン名のプレフィックスなし) に設定できます (例: `mySchema`)。Microsoft Graph によって、指定した名前に基づいて文字列 ID が割り当てられます (形式: ext\{_&#65279;8-random-alphanumeric-chars_\}\_\{_&#65279;schema-name_\})。例: `extkvbmkofy_mySchema`。
+- ご使用のテナントで検証済みのバニティ `.com`、`.net`、`.gov`、`.edu`、`.org` ドメインのいずれかが既にある場合、ドメイン名とスキーマ名を一緒に使用して一意の名前を定義できます (形式: \{_﻿domainName_\}\_\{_﻿schemaName_\})。 たとえば、バニティ ドメインが contoso.com の場合、**id** を `contoso_mySchema` と定義できます。 これは優先オプションです。
+- 検証済みバニティ ドメインがない場合、**id** をスキーマ名 (ドメイン名のプレフィックスなし) に設定できます (例: `mySchema`)。Microsoft Graph によって、指定した名前に基づいて文字列 ID が割り当てられます (形式: ext\{_﻿8-random-alphanumeric-chars_\}\_\{_﻿schema-name_\})。例: `extkvbmkofy_mySchema`。
 
 この一意の名前は、拡張リソース インスタンスにカスタム データを格納する複合型の名前として使用される **id** に示されます。
 
@@ -75,7 +75,7 @@ Microsoft Graph には、2 種類の拡張機能が備わっています。ご�
 
 所有者アプリは、**ステータス** プロパティで PATCH 操作を使用して、拡張機能をさまざまな状態のライフサイクル間で移動できます。所有者アプリは現在の状態に応じて、拡張機能を更新または削除することができます。スキーマ拡張機能の更新は常に、付加的で中断を必要としない更新でなければなりません。
 
-|State |ライフ サイクル状態の動作 |
+|状態 |ライフ サイクル状態の動作 |
 |:-------------|:------------|
 | InDevelopment | <ul><li>作成後の初期状態です。所有者アプリは引き続きスキーマ拡張機能を開発しています。 </li><li>この状態で、所有者のアプリが登録されているディレクトリと同じディレクトリにあるアプリは、このスキーマの定義を持つリソース インスタンスを拡張することができます (アプリにそのリソースへのアクセス許可がある限り)。 </li><li>所有者アプリのみで、拡張機能の定義に追加の変更を加えて更新したり、削除したりできます。 </li><li>所有者アプリは拡張機能を**InDevelopment** から **Available** の状態に移行できます。</li></ul> |
 | Available | <ul><li>スキーマ拡張機能は、テナント内のすべてのアプリで利用できます。 </li><li>所有者アプリで拡張機能を **Available** に設定した後、どのアプリでも拡張機能で指定されているこれらのリソースの種類のインスタンスにカスタム データを追加できます (アプリにそのリソースへのアクセス許可がある場合)。 アプリは、新しいインスタンスの作成時または既存のインスタンスの更新時にカスタム データを割り当てることができます。 </li><li>所有者アプリのみで、拡張機能の定義に追加の変更を加えて更新することができます。 この状態では、どのアプリでも拡張機能の定義を削除することはできません。 </li><li>所有者アプリは、スキーマ拡張機能を **Available** から **Deprecated** 状態に移行できます。</li></ul> |
@@ -90,14 +90,14 @@ Microsoft Graph には、2 種類の拡張機能が備わっています。ご�
 | Binary | 最大 256 バイトです。 |
 | Boolean | メッセージ、イベント、投稿ではサポートされていません。 |
 | DateTime | ISO 8601 形式で指定する必要があります。UTC で格納されます。 |
-| 整数 | 32 ビット値です。メッセージ、イベント、投稿ではサポートされていません。 |
+| Integer | 32 ビット値です。メッセージ、イベント、投稿ではサポートされていません。 |
 | String | 最大 256 文字です。 |
 
 > **注:** 複数値プロパティはサポートされていません。
 
 ### <a name="azure-ad-directory-schema-extensions"></a>Azure AD ディレクトリのスキーマ拡張機能
 
-Azure AD は、いくつかの [directoryObject](../api-reference/v1.0/resources/directoryObject.md) リソースで、[ディレクトリ スキーマ機能拡張](https://msdn.microsoft.com/ja-JP/library/azure/ad/graph/howto/azure-ad-graph-api-directory-schema-extensions)と呼ばれる、同様の拡張機能をサポートしています。[Azure AD Graph API ](https://msdn.microsoft.com/library/azure/ad/graph/api/api-catalog) を作成して、ディレクトリ スキーマ拡張機能の定義を作成および管理する必要がある場合でも、Microsoft Graph API を使用して、これらの機能拡張プロパティの_データ_を追加、取得、更新、削除することができます。
+Azure AD は、いくつかの [directoryObject](../api-reference/v1.0/resources/directoryObject.md) リソースで、[ディレクトリ スキーマ機能拡張](https://msdn.microsoft.com/en-us/library/azure/ad/graph/howto/azure-ad-graph-api-directory-schema-extensions)と呼ばれる、同様の拡張機能をサポートしています。[Azure AD Graph API ](https://msdn.microsoft.com/library/azure/ad/graph/api/api-catalog) を作成して、ディレクトリ スキーマ拡張機能の定義を作成および管理する必要がある場合でも、Microsoft Graph API を使用して、これらの機能拡張プロパティの_データ_を追加、取得、更新、削除することができます。
 
 ## <a name="permissions"></a>アクセス許可
 
@@ -134,6 +134,6 @@ Azure AD は、いくつかの [directoryObject](../api-reference/v1.0/resources
 
 ## <a name="see-also"></a>関連項目
 
-- [Office 365 のドメイン](https://technet.microsoft.com/ja-JP/library/office-365-domains.aspx)
+- [Office 365 のドメイン](https://technet.microsoft.com/en-us/library/office-365-domains.aspx)
 
 - [Office 365 テナントのドメインの追加および検証](http://office365support.ca/adding-and-verifying-a-domain-for-the-new-office-365/)
