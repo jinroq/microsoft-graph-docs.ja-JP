@@ -65,7 +65,7 @@ OneNote のコンテンツと構造を取得するには、ターゲット エ�
 
 <br/>
  
-`search`クエリ文字列オプションは、コンシューマー ノートパソコンでのみ使用できます。
+クエリ文字列オプションは、コンシューマー ノートパソコンでのみ使用できます。`search`
 
 ページの既定の並べ替え順序は `lastModifiedTime desc` です。
 
@@ -438,7 +438,7 @@ OneNote のエンティティおよび検索ページ コンテンツを照会�
 
 ### <a name="filter--expand"></a>filter & expand  
 
-特定のノートブックに含まれるすべてのページを取得します。既定では、この API は 20 エントリを戻します。
+特定のノートブックに含まれるすべてのページを取得します。既定値では、 API は 20 エントリを戻します。
 
 ```
 [GET] ../pages?filter=parentNotebook/id eq '{notebook-id}'&expand=parentNotebook
@@ -548,10 +548,10 @@ Microsoft Graph に GET 要求を送信する場合、OData クエリ文字列�
 | クエリ オプション | 例と説明 |  
 |------|------|  
 | count | <p>`count=true`</p><p>コレクション内のエンティティのカウントです。この値は、応答の **@odata.count** プロパティで戻ります。</p> |  
-| expand | <p>`expand=sections,sectionGroups`</p><p>応答でインラインを返すナビゲーション プロパティ。**expand** 式には次のプロパティがサポートされています。<br /> - ページ: **parentNotebook**、**parentSection**<br /> - セクション: **parentNotebook**、**parentSectionGroup**<br /> - セクション グループ: **sections**、**sectionGroups**、**parentNotebook**、**parentSectionGroup**<br /> - ノートブック: **sections**、**sectionGroups**</p><p>既定では、ページの GET 要求は **parentSection** を展開し、セクションの **id**、**name**、**self** の各プロパティを選択します。セクションとセクションのグループの既定の GET 要求は **parentNotebook** と **parentSectionGroup** の両方を展開し、親の **id**、**name**、**self** の各プロパティを選択します。</p><p>1 つのエンティティまたはコレクションに使用できます。<br />コンマを使用して複数のプロパティを区切ります。<br />プロパティ名では、大文字と小文字を区別します。</p> |   
+| expand | <p>`expand=sections,sectionGroups`</p><p>応答でインラインを返すナビゲーション プロパティ。**expand** 式には次のプロパティがサポートされています。<br /> - ページ: **parentNotebook**、**parentSection**<br /> - セクション: **parentNotebook**、**parentSectionGroup**<br /> - セクション グループ: **sections**、**sectionGroups**、**parentNotebook**、**parentSectionGroup**<br /> - ノートブック: **sections**、**sectionGroups**</p><p>既定では、ページの GET 要求は **parentSection** を展開し、セクションの **id**、**name**、**self** の各プロパティを選択します。セクションとセクションのグループの既定の GET 要求は **parentNotebook** と **parentSectionGroup** の両方を展開し、親の **id**、**name**、**self** の各プロパティを選択します。 </p><p>1 つのエンティティまたはコレクションに使用できます。<br />コンマを使用して複数のプロパティを区切ります。<br />プロパティ名では、大文字と小文字を区別します。</p> |   
 | filter | <p>`filter=isDefault eq true`</p><p>結果セットの入力に含めるかどうかを決めるブール式。サポートされている OData 演算子と関数:<br /> - 比較演算子: **eq**、**ne**、**gt**、**ge**、**lt**、**le**<br /> - 論理演算子: **and**、**or**、**not**<br /> - 文字列関数: **contains**、**endswith**、**startswith**、**length**、**indexof**、**substring**、**tolower**、**toupper**、**trim**、**concat**</p><p>[プロパティ](#onenote-entity-properties)名と OData 文字列比較では大文字と小文字が区別されます。 文字列比較には OData **tolower** 関数を使用することをお勧めします。<br /><br />**例**: `filter=tolower(name) eq 'spring'`</p> |  
 | orderby | <p>`orderby=title,createdTime desc`</p><p>並べ替え基準を示す[プロパティ](#onenote-entity-properties)です。オプションで、**asc** (既定) または **desc** 並べ替え順序を指定します。要求対象コレクション内のエンティティの任意のプロパティで並べ替えが可能です。</p><p>ノートブック、セクション グループ、セクションの既定の並べ替え順序は `name asc` で、ページの場合には `lastModifiedTime desc` (最新の変更ページが先頭になります)。</p><p>複数のプロパティはコンマで区切り、任意の順序で一覧表示します。 プロパティ名では、大文字と小文字を区別します。</p> |  
-| search | <p>`search=cell div`</p><p>コンシューマー ノートパソコンでのみ使用可能。</p><p>ページ タイトル、ページ本文、画像の代替テキスト、画像の OCR テキストで検索する用語または語句です。既定では、検索クエリは関連度で並べ替えて結果を返します。</p><p>OneNote は、Bing のフルテキスト検索を使用して、語句の検索、語形変化、スペルの曖昧さ、関連性とランキング、単語分割、複数の言語、他のフルテキスト検索機能をサポートします。 検索文字列では、大文字と小文字が区別されません。</p><p>ユーザーが所有しているノートブック内のページにのみ適用されます。 インデックス付けされたコンテンツは非公開であり、所有者のみがアクセスできます。 パスワードで保護されたページにはインデックスは付けられません。 `pages` エンドポイントにのみ適用されます。</p> |  
+| search | <p>`search=cell div`</p><p>コンシューマー ノートパソコンでのみ使用可能。</p><p>ページ タイトル、ページ本文、画像の代替テキスト、画像の OCR テキストで検索する用語または語句です。既定では、検索クエリは関連度で並べ替えて結果を返します。</p><p>OneNote は、Bing のフルテキスト検索を使用して、語句の検索、語形変化、スペルの曖昧さ、関連性とランキング、単語分割、複数の言語、他のフルテキスト検索機能をサポートします。 検索文字列では、大文字と小文字が区別されません。</p><p>ユーザーが所有しているノートブック内のページにのみ適用されます。 インデックス付けされたコンテンツは非公開であり、所有者のみがアクセスできます。 パスワードで保護されたページにはインデックスは付けられません。 エンドポイントにのみ適用されます。`pages`</p> |  
 | select | <p>`select=id,title`</p><p>返す[プロパティ](#onenote-entity-properties)。 1 つのエンティティまたはコレクションに使用できます。 コンマを使用して複数のプロパティを区切ります。 プロパティ名では、大文字と小文字を区別します。</p> |  
 | skip | <p>`skip=10`</p><p>結果セットでスキップするエントリの数。通常、結果のページングに使用されます。</p> |  
 | top | <p>`top=50`</p><p>結果セット内で返すエントリ数で、最大数は 100 です。既定値は 20 です。</p> |  
@@ -586,7 +586,7 @@ Microsoft Graph は、**フィルター**式で次の OData 演算子および�
 | 論理演算子 | 例 |  
 |------|------|  
 | and | `createdTime le 2014-01-30 and createdTime gt 2014-01-23` |  
-| or | `createdByAppId eq '{app-id}' or createdByAppId eq '{app-id}'` |  
+| または | `createdByAppId eq '{app-id}' or createdByAppId eq '{app-id}'` |  
 | not | `not contains(tolower(title),'school')` |  
 
 <br/>
@@ -642,7 +642,7 @@ Microsoft Graph は、**フィルター**式で次の OData 演算子および�
 |------|------|  
 | プロトコル | すべての要求は SSL/TLS HTTPS プロトコルを使用します。 |  
 | 承認ヘッダー | <p>`Bearer {token}`。`{token}` は、登録済みアプリの有効な OAuth 2.0 アクセス トークンです。</p><p>これがないか、無効の場合、401 ステータス コードで要求は失敗します。「[認証とアクセス許可](permissions_reference.md)」を参照してください。</p> |  
-| Accept ヘッダー | <p> OneNote エンティティとエンティティ セットの場合、`application/json`</p><p> ページ コンテンツの場合、`text/html`</p> | 
+| Accept ヘッダー | <p> `application/json` OneNote エンティティとエンティティ セットの場合、</p><p> `text/html` ページ コンテンツの場合、</p> | 
 
 <br/>
 
@@ -681,7 +681,7 @@ OneNote のコンテンツまたは構造を取得するには、適切なアク
 - Notes.ReadWrite
 - Notes.ReadWrite.All
 
-アクセス許可の範囲とその動作方法の詳細については、「[Microsoft Graph のアクセス許可のリファレンス](permissions_reference.md)」をご覧ください。
+アクセス許可の範囲とその動作方法の詳細については、「[Microsoft Graph のアクセス許可のリファレンス](permissions_reference.md)」を参照してください。
 
 <a name="see-also"></a>
 

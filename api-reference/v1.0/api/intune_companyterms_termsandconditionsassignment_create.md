@@ -24,8 +24,8 @@ POST /deviceManagement/termsAndConditions/{termsAndConditionsId}/assignments
 ## <a name="request-headers"></a>要求ヘッダー
 |ヘッダー|値|
 |:---|:---|
-|Authorization|ベアラー &lt;トークン&gt; が必要です。|
-|Accept|application/json|
+|Authorization|ベアラー &lt;トークン&gt; が必須。|
+|Accept|アプリケーション /json|
 
 ## <a name="request-body"></a>要求本文
 要求本文で、termsAndConditionsAssignment オブジェクトの JSON 表記を指定します。

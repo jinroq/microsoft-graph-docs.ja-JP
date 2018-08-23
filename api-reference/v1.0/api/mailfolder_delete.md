@@ -1,6 +1,11 @@
 # <a name="delete-mailfolder"></a>mailFolder を削除する
 
-mailFolder を削除します。
+指定した [mailFolder](../resources/mailfolder.md) を削除します。
+
+いずれかが存在する場合は、フォルダー ID または [既知のフォルダー名](../resources/mailfolder.md) のいずれかによりメール フォルダーを指定できます。 
+
+>**注** 回復可能なアイテムの削除フォルダー (既知フォルダー名 `recoverableitemsdeletions` で表される) 内のアイテムを削除できない場合があります。 詳細については、 [削除済みアイテムの保存期間](https://docs.microsoft.com/en-us/exchange/policy-and-compliance/recoverable-items-folder/recoverable-items-folder#deleted-item-retention) と [削除済みアイテムのクリーンアップ](https://docs.microsoft.com/en-us/exchange/policy-and-compliance/recoverable-items-folder/clean-up-deleted-items) を参照してください。
+
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](../../../concepts/permissions_reference.md)」を参照してください。
 
@@ -19,7 +24,7 @@ DELETE /users/{id | userPrincipalName}/mailFolders/{id}
 ## <a name="request-headers"></a>要求ヘッダー
 | 名前       | 型 | 説明|
 |:---------------|:--------|:----------|
-| Authorization  | string  | ベアラー {トークン}。必須。 |
+| 承認  | 文字列  | ベアラー {トークン}。必須。 |
 
 ## <a name="request-body"></a>要求本文
 このメソッドには、要求本文を指定しません。
