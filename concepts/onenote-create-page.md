@@ -51,7 +51,7 @@ POST 要求 URI を構築するには、サービス ルート URL から開始�
 
 - 最上位のセクションのみを参照できます (セクション グループ内のセクションは参照できません)。
 
-- 指定した名前のセクションが既定のノートブックに存在しない場合、そのセクションは API によって作成されます。 セクション名に使用できない文字は、「`? * \ / : < > | & # " % ~`」です。
+- 指定した名前のセクションが既定のノートブックに存在しない場合、そのセクションは API によって作成されます。 セクション名に使用できない文字は、「`? * \ / : < > | & # " % ~`」です。 `? * \ / : < > | & # " % ~`
 
 - セクション名の照合では、大文字と小文字が区別されませんが、セクションが作成されるときには大文字と小文字が維持されます。そのため、"My New Section" はこのとおりに表示されますが、これ以降の POST では "my new section" も一致します。
 
@@ -105,7 +105,7 @@ Content-Type: application/xhtml+xml
 
 入力 HTML を送信するときには、次に示す一般的な要件と制限事項に注意してください。  
 
-- 入力 HTML は、UTF-8 でエンコードされた整形式の XHTML である必要があります。すべてのコンテナーの開始タグは、終了タグと一致する必要があります。すべての属性値は、二重引用符または一重引用符で囲む必要があります。<!--docs say MUST be encoded-->
+- 入力 HTML は、UTF-8 でエンコードされた整形式の XHTML である必要があります。すべてのコンテナーの開始タグは、終了タグと一致する必要があります。すべての属性値は、二重引用符または一重引用符で囲む必要があります。  <!--docs say MUST be encoded-->
 
 - JavaScript コード (ファイルを含む) および CSS は削除されます。 
 
@@ -184,7 +184,7 @@ Content-Type:application/pdf
 --MyPartBoundary198374--
 ```
 
-複数イメージやその他のファイルを含むページの作成方法を示す例については、「[画像とファイルを追加する](onenote_images_files.md)」、および[チュートリアル](https://docs.microsoft.com/ja-JP/previous-versions/office/office-365-api/how-to/onenote-tutorial)と[サンプル](https://github.com/onenotedev)を参照してください。また、[絶対配置要素の作成](onenote-abs-pos.md)方法、[ノート シールの使用](onenote-note-tags.md)方法と、名刺キャプチャ、オンラインのレシピ一覧およびオンラインの製品一覧の[データ抽出](onenote-extract-data.md)方法について調べてください。
+複数イメージやその他のファイルを含むページの作成方法を示す例については、「[画像とファイルを追加する](onenote_images_files.md)」、および[チュートリアル](https://docs.microsoft.com/en-us/previous-versions/office/office-365-api/how-to/onenote-tutorial)と[サンプル](https://github.com/onenotedev)を参照してください。また、[絶対配置要素の作成](onenote-abs-pos.md)方法、[ノート シールの使用](onenote-note-tags.md)方法と、名刺キャプチャ、オンラインのレシピ一覧およびオンラインの製品一覧の[データ抽出](onenote-extract-data.md)方法について調べてください。
 
 Microsoft Graph は、マルチパート メッセージ本文の CRLF 改行など、一部の書式設定については厳密です。 無効な形式のペイロードを作成してしまう危険性を少なくするために、マルチパート メッセージはライブラリを使用して作成してください。 
 
@@ -201,7 +201,7 @@ Microsoft Graph は、マルチパート メッセージ本文の CRLF 改行な
 |------|------|  
 | プロトコル | すべての要求は SSL/TLS HTTPS プロトコルを使用します。 |  
 | 承認ヘッダー | <p>`Bearer {token}`。`{token}` は、登録済みアプリの有効な OAuth 2.0 アクセス トークンです。</p><p>これがないか、無効の場合、401 ステータス コードで要求は失敗します。「[認証とアクセス許可](permissions_reference.md)」を参照してください。</p> |  
-| Content-Type ヘッダー | <p>HTML コンテンツの `text/html` または `application/xhtml+xml`。メッセージ本文またはマルチパート要求の必須の "Presentation" パートで直接送信します。</p><p>マルチパート要求はバイナリ データを送信するときに必須であり、コンテンツ タイプとして `multipart/form-data; boundary=part-boundary` を使用します。`{part-boundary}` は、各データ パートの開始と終了を伝える文字列です。</p> |  
+| Content-Type ヘッダー | <p>`text/html` HTML コンテンツの `text/html` または `application/xhtml+xml`。メッセージ本文またはマルチパート要求の必須の "Presentation" パートで直接送信します。</p><p>マルチパート要求はバイナリ データを送信するときに必須であり、コンテンツ タイプとして `multipart/form-data; boundary=part-boundary` を使用します。`{part-boundary}` は、各データ パートの開始と終了を伝える文字列です。</p> |  
 | Accept ヘッダー | `application/json` | 
 
 <br/>
