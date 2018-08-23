@@ -1,81 +1,91 @@
-# <a name="planner"></a>Planner
-Office 365 Planner API を使用すると、タスクを作成して Office 365 のグループ内のユーザーに割り当てることができます。
+# <a name="use-the-planner-rest-api"></a><span data-ttu-id="def5a-101">Planner REST API を使用する</span><span class="sxs-lookup"><span data-stu-id="def5a-101">Use the Planner API</span></span>
 
-Planner API を試用する前に、Planner API の各主要オブジェクトの関係や、Office 365 のグループとの関係について理解することが重要です。
+<span data-ttu-id="def5a-102">Microsoft Graph の Planner API を使用して、タスクを作成して Office 365 のグループ内のユーザーに割り当てることができます。</span><span class="sxs-lookup"><span data-stu-id="def5a-102">You can use the Planner API in Microsoft Graph to create tasks and assign them to users in a group in Office 365.</span></span>
 
-## <a name="groups"></a>グループ
-Office 365 のグループは、Planner API のプランの所有者です。[グループが所有するプランを取得する](../api/plannergroup_list_plans.md)には、次に示す HTTP 要求を行います。
+<span data-ttu-id="def5a-103">Planner API の使用を開始する前に、主要なオブジェクトの Office 365 のグループとの関係と同様に、それらの相互関係を理解しておくとよいでしょう。</span><span class="sxs-lookup"><span data-stu-id="def5a-103">Before you get started with trying out the Planner API, it is worth understanding how the main objects in Planner API relate to each other as well as Office 365 groups.</span></span>
 
-```http
+## <a name="groups"></a><span data-ttu-id="def5a-104">グループ</span><span class="sxs-lookup"><span data-stu-id="def5a-104">Groups</span></span>
+
+<span data-ttu-id="def5a-105">Office 365 のグループは、Planner API のプランの所有者です。</span><span class="sxs-lookup"><span data-stu-id="def5a-105">Office 365 groups are the owners of the plans in the Planner API. To get the plans owned by a group, make the HTTP request below.</span></span>
+<span data-ttu-id="def5a-106"> [グループが所有しているプランを取得する](../api/plannergroup_list_plans.md) には、次の HTTP 要求を行います。</span><span class="sxs-lookup"><span data-stu-id="def5a-106">To [get the plans owned by a group](../api/plannergroup_list_plans.md), make the following HTTP request.</span></span>
+
+``` http
 GET /groups/{id}/planner/plans
 ```
 
-[新しいプランを作成する](../api/planner_post_plans.md)場合は、プラン オブジェクトに `owner` プロパティを設定するだけで、グループを所有者にできます。プランはグループによって所有される必要があります。
+<span data-ttu-id="def5a-107">[新しいプランを作成する](../api/planner_post_plans.md) 場合は、プランのオブジェクトの `owner` プロパティを設定してグループを所有者にしてください。</span><span class="sxs-lookup"><span data-stu-id="def5a-107">When [creating a new plan](../api/planner_post_plans.md), make a group its owner by simply setting the `owner` property on a plan object. Plans must be owned by groups.</span></span> <span data-ttu-id="def5a-108">プランは、グループが所有する必要があります。</span><span class="sxs-lookup"><span data-stu-id="def5a-108">Plans must be owned by groups.</span></span>
 
->**注:**プランを作成するユーザーは、グループのメンバーである必要があります。ユーザーが API を使用して新しいグループを作成しても、そのユーザーが自動的にメンバーとしてグループに追加されることはありません。これは、個別の API 呼び出しを使用して実行する必要があります。
+><span data-ttu-id="def5a-109">**注意:** プランを作成しているユーザーは、プランを所有するグループのメンバーである必要があります。</span><span class="sxs-lookup"><span data-stu-id="def5a-109">**Note:** The user who is creating the plan must be a member of the group that will own the plan.</span></span> <span data-ttu-id="def5a-110">[グループの作成](../api/group_post_groups.md) を使用して新しいグループを作成する場合は、メンバーとしてグループに追加されません。</span><span class="sxs-lookup"><span data-stu-id="def5a-110">When you create a new group by using [Create group](../api/group_post_groups.md), you are not added to the group as a member.</span></span> <span data-ttu-id="def5a-111">グループが作成されたら、[グループ ポスト メンバー](../api/group_post_members.md) を使用してご自分をメンバーとして追加します。</span><span class="sxs-lookup"><span data-stu-id="def5a-111">After the group is created, add yourself as a member by using [group post members](../api/group_post_members.md).</span></span>
 
-## <a name="plans"></a>プラン
-[プラン](plannerplan.md)は[タスク](plannertask.md)のコンテナーです。[プランのタスクを作成する](../api/planner_post_tasks.md)には、タスクの作成時にタスク オブジェクトの `planId` プロパティをプランの ID に設定します。現在、プランなしでタスクを作成することはできません。[プランのタスクを取得する](../api/plannerplan_list_tasks.md)には、次に示す HTTP 要求を行います。
+## <a name="plans"></a><span data-ttu-id="def5a-112">プラン</span><span class="sxs-lookup"><span data-stu-id="def5a-112">Plans</span></span>
 
-```http
+<span data-ttu-id="def5a-113">[プラン](plannerplan.md) は、[タスク](plannertask.md) のコンテナーです。</span><span class="sxs-lookup"><span data-stu-id="def5a-113">[Plans](plannerplan.md) are the containers of [tasks](plannertask.md).</span></span> <span data-ttu-id="def5a-114"> [プランにタスクを作成](../api/planner_post_tasks.md) するには、タスクの作成中にタスク オブジェクトの `planId` プロパティをプランの ID に設定します。</span><span class="sxs-lookup"><span data-stu-id="def5a-114">Plans are the containers of tasks. To [create a task in a plan](../api/planner_post_tasks.md), set the `planId` property on the task object to the ID of the plan while creating the task. Tasks currently cannot be created without plans. To retrieve the tasks in a plan, make the HTTP request below.</span></span>
+<span data-ttu-id="def5a-115">現在、タスクはプランなしでは作成できません。</span><span class="sxs-lookup"><span data-stu-id="def5a-115">Tasks currently cannot be created without plans.</span></span>
+<span data-ttu-id="def5a-116"> [プラン内のタスクを取得](../api/plannerplan_list_tasks.md)するには、次の HTTP 要求を確認します。</span><span class="sxs-lookup"><span data-stu-id="def5a-116">To [retrieve the tasks in a plan](../api/plannerplan_list_tasks.md), make the following HTTP request.</span></span>
+
+``` http
 GET /planner/plans/{id}/tasks
 ```
 
-## <a name="tasks"></a>タスク
-各タスクは、タスク オブジェクトの [assignments](plannerassignments.md) プロパティに [assignment](plannerassignment.md) を追加することにより、ユーザーに割り当てることができます。タスクを割り当てるユーザーの ID は `assignments` の open プロパティの名前であり、assignment の `orderHint` プロパティを指定する必要があります。
+## <a name="tasks"></a><span data-ttu-id="def5a-117">タスク</span><span class="sxs-lookup"><span data-stu-id="def5a-117">Tasks</span></span>
 
-## <a name="task-and-plan-details"></a>タスクとプランの詳細 
-Planner のリソースは、基本オブジェクトと詳細オブジェクトに配置されます。基本オブジェクトは、リスト ビューに適したリソースの共通プロパティへのアクセスを提供し、詳細オブジェクトは、ドリル ダウン ビューに適したリソースの大規模なプロパティへのアクセスを提供します。
+<span data-ttu-id="def5a-p105">各タスクは、タスク オブジェクトの [assignments](plannerassignments.md) プロパティに [assignment](plannerassignment.md) を追加することにより、ユーザーに割り当てることができます。タスクを割り当てるユーザーの ID は `assignments` の open プロパティの名前であり、assignment の `orderHint` プロパティを指定する必要があります。</span><span class="sxs-lookup"><span data-stu-id="def5a-p105">Each task can be assigned to a user by adding an [assignment](plannerassignment.md) in the [assignments](plannerassignments.md) property on the task object. The ID of the user to assign the task is the name of the open property on `assignments`, and the `orderHint` property on the assignment must be specified.</span></span>
 
-## <a name="visualization"></a>視覚化
-Planner API は、タスクとプランのデータのほかに、データの共通した視覚化をクライアント全体に提供するためのリソースも提供します。タスクには、いくつかの種類のデータの視覚化が利用できます。
+## <a name="task-and-plan-details"></a><span data-ttu-id="def5a-120">タスクとプランの詳細</span><span class="sxs-lookup"><span data-stu-id="def5a-120">Task and plan details</span></span> 
 
-| タスクの表示      | タスクを順序付ける情報の情報源|
-|:------------------|:----------|
-|フラット リスト (プラン内のタスク)| タスクの `orderHint` プロパティ|
-|フラット リスト (ユーザーに割り当てられたタスク)| タスクの `assigneePriority` プロパティ|
-|割り当て先の列を含むボード ビュー (タスク ボードに割り当て)| [assignedToTaskBoardTaskFormat](plannerassignedToTaskBoardTaskFormat.md) オブジェクト|
-|タスクの進行状況を示す列を含むボード ビュー (進行状況タスク ボード)| [progressTaskBoardTaskFormat](plannerprogressTaskBoardTaskFormat.md)オブジェクト|
-|タスクのカスタム列を含むボード ビュー (バケット タスク ボード)|[bucketTaskBoardTaskFormat](plannerbucketTaskBoardTaskFormat.md) オブジェクト|
+<span data-ttu-id="def5a-p106">Planner のリソースは、基本オブジェクトと詳細オブジェクトに配置されます。基本オブジェクトは、リスト ビューに適したリソースの共通プロパティへのアクセスを提供し、詳細オブジェクトは、ドリル ダウン ビューに適したリソースの大規模なプロパティへのアクセスを提供します。</span><span class="sxs-lookup"><span data-stu-id="def5a-p106">Planner resources are arranged into basic objects and detail objects. Basic objects provide access to common properties of the resources, suitable for list views, while the detail objects provide access to large properties of the resources suitable for drill down views.</span></span>
 
-バケット タスク ボードのカスタム列は [bucket](plannerbucket.md) オブジェクトで表され、その順序はオブジェクトの `orderHint` プロパティによって表されます。
+## <a name="visualization"></a><span data-ttu-id="def5a-123">視覚化</span><span class="sxs-lookup"><span data-stu-id="def5a-123">Visualization</span></span>
 
-すべての順序は、[Planner の順序のヒント](planner_order_hint_format.md)で特定された原則によって制御されます。
+<span data-ttu-id="def5a-p107">Planner API は、タスクとプランのデータのほかに、データの共通した視覚化をクライアント全体に提供するためのリソースも提供します。タスクには、いくつかの種類のデータの視覚化が利用できます。</span><span class="sxs-lookup"><span data-stu-id="def5a-p107">Aside from task and plan data, the Planner API also provides resources to provide common visualization of data across clients. Several types of visualization data are available for tasks:</span></span>
 
-## <a name="planner-resource-versioning"></a>Planner のリソースのバージョン管理
+| <span data-ttu-id="def5a-126">タスクの表示</span><span class="sxs-lookup"><span data-stu-id="def5a-126">Tasks are shown as</span></span>                                                                        | <span data-ttu-id="def5a-127">タスクを順序付ける情報の情報源</span><span class="sxs-lookup"><span data-stu-id="def5a-127">Tasks are ordered with information from</span></span>                                         |
+| :---------------------------------------------------------------------------------------- | :------------------------------------------------------------------------------ |
+| <span data-ttu-id="def5a-128">フラット リスト (プラン内のタスク)</span><span class="sxs-lookup"><span data-stu-id="def5a-128">Flat list (tasks in a plan)</span></span>                                                               | <span data-ttu-id="def5a-129">`orderHint` タスクのプロパティ</span><span class="sxs-lookup"><span data-stu-id="def5a-129">`orderHint` property on tasks</span></span>                                                   |
+| <span data-ttu-id="def5a-130">フラット リスト (ユーザーに割り当てられたタスク)</span><span class="sxs-lookup"><span data-stu-id="def5a-130">Flat list (tasks assigned to a user)</span></span>                                                      | <span data-ttu-id="def5a-131">`assigneePriority` タスクのプロパティ</span><span class="sxs-lookup"><span data-stu-id="def5a-131">`assigneePriority` property on tasks</span></span>                                            |
+| <span data-ttu-id="def5a-132">割り当て先の列を含むボード ビュー (タスク ボードに割り当て)</span><span class="sxs-lookup"><span data-stu-id="def5a-132">Board view with columns for assignees (assigned to task board)</span></span>                            | <span data-ttu-id="def5a-133">[assignedToTaskBoardTaskFormat](plannerassignedToTaskBoardTaskFormat.md) オブジェクト</span><span class="sxs-lookup"><span data-stu-id="def5a-133">[assignedToTaskBoardTaskFormat](plannerassignedToTaskBoardTaskFormat.md) object</span></span> |
+| <span data-ttu-id="def5a-134">タスク完了までの進行状況を示す列を含むボード ビュー (進行状況タスク ボード)</span><span class="sxs-lookup"><span data-stu-id="def5a-134">Board view with columns for progress of the task towards completion (progress task board)</span></span> | <span data-ttu-id="def5a-135">[progressTaskBoardTaskFormat](plannerprogressTaskBoardTaskFormat.md) オブジェクト</span><span class="sxs-lookup"><span data-stu-id="def5a-135">[progressTaskBoardTaskFormat](plannerprogressTaskBoardTaskFormat.md) object</span></span>     |
+| <span data-ttu-id="def5a-136">タスクのカスタム列を含むボード ビュー (バケット タスク ボード)</span><span class="sxs-lookup"><span data-stu-id="def5a-136">Board view with custom columns of tasks (bucket task board):</span></span>                              | <span data-ttu-id="def5a-137">[bucketTaskBoardTaskFormat](plannerbucketTaskBoardTaskFormat.md) オブジェクト</span><span class="sxs-lookup"><span data-stu-id="def5a-137">[bucketTaskBoardTaskFormat](plannerbucketTaskBoardTaskFormat.md) object</span></span>         |
 
-Planner は Etag を使ってすべてのリソースをバージョン管理します。これらの Etag は各リソースで `@odata.etag` プロパティを指定して返されます。`PATCH` および `DELETE` 要求では、クライアントが知っている最新の Etag を `If-Match` ヘッダーで指定する必要があります。目的の変更が同じリソース上の Planner サービスによって受け入れられた新しい変更と競合しない場合、Planner は古いバージョンのリソースに変更を加えることができます。クライアントは、どの Etag 値が大きいかを序数の文字列比較で計算することによって、同じリソースで新しい Etag を識別できます。各リソースには個別の Etag があります。異なるリソースの Etag 値は比較できません (包含関係のあるものを含む)。クライアント アプリケーションは、アイテムの最新バージョンを読み取り、競合する変更を解決することにより、2 つのバージョン管理に関連するエラー ステータス コード 409 と 412 を処理することが予想されます。
+<span data-ttu-id="def5a-138">|||UNTRANSLATED_CONTENT_START|||The custom columns in the bucket task board are represented by [bucket](plannerbucket.md) objects, and their order by `orderHint` property on the object.|||UNTRANSLATED_CONTENT_END|||</span><span class="sxs-lookup"><span data-stu-id="def5a-138">The custom columns in the bucket task board are represented by [bucket](plannerbucket.md) objects, and their order by `orderHint` property on the object.</span></span>
 
-## <a name="common-planner-error-conditions"></a>一般的な Planner のエラー条件
+<span data-ttu-id="def5a-139">すべての順序は、[Planner の順序のヒント](planner_order_hint_format.md) に定められた原則によって制御されます。</span><span class="sxs-lookup"><span data-stu-id="def5a-139">All the ordering is controlled by the principles identified in [Planner order hints](planner_order_hint_format.md).</span></span>
 
-Microsoft Graph に適用される[一般的なエラー](../../../concepts/errors.md)のほかに、Planner API に固有のエラー条件もあります。
+## <a name="planner-resource-versioning"></a><span data-ttu-id="def5a-140">Planner のリソース バージョン管理</span><span class="sxs-lookup"><span data-stu-id="def5a-140">Planner resource versioning</span></span>
 
-### <a name="400-bad-request"></a>400 要求が正しくありません
+<span data-ttu-id="def5a-p108">Planner は Etag を使ってすべてのリソースをバージョン管理します。これらの Etag は各リソースで `@odata.etag` プロパティを指定して返されます。`PATCH` および `DELETE` 要求では、クライアントが知っている最新の Etag を `If-Match` ヘッダーで指定する必要があります。目的の変更が同じリソース上の Planner サービスによって受け入れられた新しい変更と競合しない場合、Planner は古いバージョンのリソースに変更を加えることができます。クライアントは、どの Etag 値が大きいかを序数の文字列比較で計算することによって、同じリソースで新しい Etag を識別できます。各リソースには個別の Etag があります。異なるリソースの Etag 値は比較できません (包含関係のあるものを含む)。クライアント アプリケーションは、アイテムの最新バージョンを読み取り、競合する変更を解決することにより、2 つのバージョン管理に関連するエラー ステータス コード 409 と 412 を処理することが予想されます。</span><span class="sxs-lookup"><span data-stu-id="def5a-p108">Planner versions all resources using etags. These etags are returned with `@odata.etag` property on each resource, and `PATCH` and `DELETE` requests require the last etag known by the client to be specified with `If-Match` header. Planner allows changes to older versions of resources, if the intended change does not conflict with newer changes accepted by the Planner service on the same resource. The clients can identify which etag for the same resource is newer by calculating which etag value is greater in ordinal string comparison. Each resource has a separate etag. Etag values for different resources, including those with containment relationships, cannot be compared. The client apps are expected to handle two versioning related error status codes 409 and 412 by reading the latest version of the item, and resolving the conflicting changes.</span></span>
 
-`POST` および `PATCH` 要求で 400 ステータス コードを取得できる一般的なケースがいくつかあります。一般的な問題は次のとおりです。
-* Open Type プロパティが正しい型でないか、型が指定されていないか、またはプロパティが含まれていません。たとえば、複雑な値が指定された [plannerAssignments](plannerAssignments.md) プロパティは、値 `microsoft.graph.plannerAssignment` を指定した `@odata.type` プロパティで宣言する必要があります。
-* ORDER ヒントの値が[正しい書式](planner_order_hint_format.md)になっていません。たとえば、ORDER ヒントの値は、クライアントに返される値に直接設定されています。
-* データが論理的に矛盾しています。たとえば、タスクの開始日がタスクの期日よりも後になる場合などです。
+## <a name="common-planner-error-conditions"></a><span data-ttu-id="def5a-148">一般的な Planner のエラー条件</span><span class="sxs-lookup"><span data-stu-id="def5a-148">Common Planner error conditions</span></span>
 
-### <a name="403-forbidden"></a>403 アクセスは許可されていません
+<span data-ttu-id="def5a-149">Microsoft Graph に適用される [一般的なエラー](../../../concepts/errors.md) のほかに、Planner API に固有のエラー条件もあります。</span><span class="sxs-lookup"><span data-stu-id="def5a-149">In addition to [general errors](../../../concepts/errors.md) that apply to Microsoft Graph, some error conditions are specific to the Planner API.</span></span>
 
-Planner API では、一般的なエラーのほかに、サービスで定義された制限を超えた場合にもこのステータスコードを返します。この場合、エラー リソースの種類の `code` プロパティは、要求が超過した制限の種類を示します。制限の種類の有効な値は次のとおりです。
+### <a name="400-bad-request"></a><span data-ttu-id="def5a-150">400 要求が不適切です</span><span class="sxs-lookup"><span data-stu-id="def5a-150">400 Bad request</span></span>
 
-| 値  | 説明|
-|:------------------|:----------|
-|MaximumProjectsOwnedByUser|グループが所有するプランの最大数の制限を超過しています。この制限は、[plannerPlan](plannerPlan.md) リソースの `owner` プロパティに基づいています。|
-|MaximumProjectsSharedWithUser|ユーザーが共有するプランの最大数の制限を超過しています。この制限は、[plannerPlanDetails](plannerPlanDetails.md) リソースの `sharedWith` プロパティに基づいています。|
-|MaximumTasksCreatedByUser|ユーザーが作成するタスクの最大数の制限を超過しています。この制限は、[plannerTask](plannerTask.md) リソースの `createdBy` プロパティに基づいています。|
-|MaximumTasksAssignedToUser|ユーザーに割り当てられるタスクの最大数の制限を超過しています。この制限は、[plannerTask](plannerTask.md) リソースの `assignments` プロパティに基づいています。|
-|MaximumTasksInProject|プランにおけるタスクの最大数の制限を超過しています。この制限は、[plannerTask](plannerTask.md) リソースの `planId` プロパティに基づいています。|
-|MaximumActiveTasksInProject|プランで完了されないタスクの最大数の制限を超過しています。この制限は、[plannerTask](plannerTask.md) リソースの `planId` および `percentComplete` プロパティに基づいています。|
-|MaximumBucketsInProject|プランにおけるバケットの最大数の制限を超過しています。この制限は、[plannerBucket](plannerBucket.md) リソースの `planId` プロパティに基づいています。|
-|MaximumUsersSharedWithProject|[plannerPlanDetails](plannerPlanDetails.md) リソースの `sharedWith` プロパティに含まれる値が多すぎます。|
-|MaximumReferencesOnTask|[plannerTaskDetails](plannerTaskDetails.md) リソースの `references` プロパティに含まれる値が多すぎます。|
-|MaximumChecklistItemsOnTask|[plannerTaskDetails](plannerTaskDetails.md) リソースの `checklist` プロパティに含まれる値が多すぎます。|
-|MaximumAssigneesInTasks|[plannerTask](plannerTask.md) リソースの `assignments` プロパティに含まれる値が多すぎます。|
+<span data-ttu-id="def5a-p109">`POST` および `PATCH` 要求で 400 ステータス コードを取得できる一般的なケースがいくつかあります。一般的な問題がは次のとおりです。</span><span class="sxs-lookup"><span data-stu-id="def5a-p109">There are several common cases where the `POST` and `PATCH` requests can get a 400 status code. Common problems include:</span></span>
 
-### <a name="412-precondition-failed"></a>412 必須条件に失敗しました 
+* <span data-ttu-id="def5a-p110">Open Type プロパティが正しい型でないか、型が指定されていないか、またはプロパティが含まれていません。たとえば、複雑な値が指定された [plannerAssignments](plannerAssignments.md) プロパティは、値 `microsoft.graph.plannerAssignment` を指定した `@odata.type` プロパティで宣言する必要があります。</span><span class="sxs-lookup"><span data-stu-id="def5a-p110">Open Type properties are not of correct types, or the type isn't specified, or they do not contain any properties. For example, [plannerAssignments](plannerAssignments.md) properties with complex values need to declare `@odata.type` property with value `microsoft.graph.plannerAssignment`.</span></span>
+* <span data-ttu-id="def5a-p111">ORDER ヒントの値が[正しい書式](planner_order_hint_format.md)になっていません。たとえば、ORDER ヒントの値は、クライアントに返される値に直接設定されています。</span><span class="sxs-lookup"><span data-stu-id="def5a-p111">Order hint values do not have the [correct format](planner_order_hint_format.md). For example, an order hint value is being set directly to the value returned to the client.</span></span>
+* <span data-ttu-id="def5a-p112">データが論理的に矛盾しています。たとえば、タスクの開始日がタスクの期日よりも後になる場合などです。</span><span class="sxs-lookup"><span data-stu-id="def5a-p112">The data is logically inconsistent. For example, start date of task is later than due date of the task.</span></span>
 
-Planner API のすべての `POST`、`PATCH` および `DELETE` 要求には、要求の対象となるリソースと思われる最新の Etag 値で `If-Match` ヘッダーを指定する必要があります。さらに、要求に指定された Etag 値がサービス内のリソースのバージョンと一致しなくなった場合は、412 ステータス コードが返されます。この場合、クライアントはリソースを再度読み込んで、新しい Etag を取得する必要があります。
+### <a name="403-forbidden"></a><span data-ttu-id="def5a-159">403 アクセスは許可されていません</span><span class="sxs-lookup"><span data-stu-id="def5a-159">403 Forbidden</span></span>
+
+<span data-ttu-id="def5a-p113">Planner API では、一般的なエラーのほかに、サービスで定義された制限を超えた場合にもこのステータスコードを返します。この場合、エラー リソースの種類の `code` プロパティは、要求が超過した制限の種類を示します。制限の種類の有効な値は次のとおりです。</span><span class="sxs-lookup"><span data-stu-id="def5a-p113">In addition to the general errors, the Planner API also returns this status code when a service-defined limit has been exceeded. If this is the case, the `code` property on the error resource type will indicate the type of the limit exceeded by the request. The possible values for the limit types include:</span></span>
+
+| <span data-ttu-id="def5a-163">値</span><span class="sxs-lookup"><span data-stu-id="def5a-163">Value</span></span>                         | <span data-ttu-id="def5a-164">説明</span><span class="sxs-lookup"><span data-stu-id="def5a-164">Description</span></span>                                                                                                                                                                                              |
+| :---------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| <span data-ttu-id="def5a-165">MaximumProjectsOwnedByUser</span><span class="sxs-lookup"><span data-stu-id="def5a-165">MaximumProjectsOwnedByUser</span></span>    | <span data-ttu-id="def5a-p114">グループが所有するプランの最大数の制限を超過しています。この制限は、[plannerPlan](plannerPlan.md) リソースの `owner` プロパティに基づいています。</span><span class="sxs-lookup"><span data-stu-id="def5a-p114">The maximum number of Plans owned by a group limit has been exceeded. This limit is based on the `owner` property on the [plannerPlan](plannerPlan.md) resource.</span></span>                                         |
+| <span data-ttu-id="def5a-168">MaximumProjectsSharedWithUser</span><span class="sxs-lookup"><span data-stu-id="def5a-168">MaximumProjectsSharedWithUser</span></span> | <span data-ttu-id="def5a-p115">ユーザーが共有するプランの最大数の制限を超過しています。この制限は、[plannerPlanDetails](plannerPlanDetails.md) リソースの `sharedWith` プロパティに基づいています。</span><span class="sxs-lookup"><span data-stu-id="def5a-p115">The maximum number of Plans shared with a user limit has been exceeded.  This limit is based on the `sharedWith` property on the [plannerPlanDetails](plannerPlanDetails.md) resource.</span></span>                   |
+| <span data-ttu-id="def5a-171">MaximumTasksCreatedByUser</span><span class="sxs-lookup"><span data-stu-id="def5a-171">MaximumTasksCreatedByUser</span></span>     | <span data-ttu-id="def5a-p116">ユーザーが作成するタスクの最大数の制限を超過しています。この制限は、[plannerTask](plannerTask.md) リソースの `createdBy` プロパティに基づいています。</span><span class="sxs-lookup"><span data-stu-id="def5a-p116">The maximum number of Tasks created by a user limit has been exceeded. This limit is based on the `createdBy` property on the [plannerTask](plannerTask.md) resource.</span></span>                                    |
+| <span data-ttu-id="def5a-174">MaximumTasksAssignedToUser</span><span class="sxs-lookup"><span data-stu-id="def5a-174">MaximumTasksAssignedToUser</span></span>    | <span data-ttu-id="def5a-p117">ユーザーに割り当てられるタスクの最大数の制限を超過しています。この制限は、[plannerTask](plannerTask.md) リソースの `assignments` プロパティに基づいています。</span><span class="sxs-lookup"><span data-stu-id="def5a-p117">The maximum number of Tasks assigned to a user limit has been exceeded. This limit is based on the `assignments` property on the [plannerTask](plannerTask.md) resource.</span></span>                                 |
+| <span data-ttu-id="def5a-177">MaximumTasksInProject</span><span class="sxs-lookup"><span data-stu-id="def5a-177">MaximumTasksInProject</span></span>         | <span data-ttu-id="def5a-p118">プランにおけるタスクの最大数の制限を超過しています。この制限は、[plannerTask](plannerTask.md) リソースの `planId` プロパティに基づいています。</span><span class="sxs-lookup"><span data-stu-id="def5a-p118">The maximum number of Tasks in a Plan limit has been exceeded. This limit is based on the `planId` property on the [plannerTask](plannerTask.md) resource.</span></span>                                               |
+| <span data-ttu-id="def5a-180">MaximumActiveTasksInProject</span><span class="sxs-lookup"><span data-stu-id="def5a-180">MaximumActiveTasksInProject</span></span>   | <span data-ttu-id="def5a-p119">プランで完了されないタスクの最大数の制限を超過しています。この制限は、[plannerTask](plannerTask.md) リソースの `planId` および `percentComplete` プロパティに基づいています。</span><span class="sxs-lookup"><span data-stu-id="def5a-p119">The maximum number of Tasks that aren't completed in a Plan limit has been exceeded. This limit is based on the `planId` and `percentComplete` properties on the [plannerTask](plannerTask.md) resource.</span></span> |
+| <span data-ttu-id="def5a-183">MaximumBucketsInProject</span><span class="sxs-lookup"><span data-stu-id="def5a-183">MaximumBucketsInProject</span></span>       | <span data-ttu-id="def5a-p120">プランにおけるバケットの最大数の制限を超過しています。この制限は、[plannerBucket](plannerBucket.md) リソースの `planId` プロパティに基づいています。</span><span class="sxs-lookup"><span data-stu-id="def5a-p120">The maximum number of Buckets in a Plan limit has been exceeded. This limit is based on the `planId` property on the [plannerBucket](plannerBucket.md) resource.</span></span>                                         |
+| <span data-ttu-id="def5a-186">MaximumUsersSharedWithProject</span><span class="sxs-lookup"><span data-stu-id="def5a-186">MaximumUsersSharedWithProject</span></span> | <span data-ttu-id="def5a-187">[plannerPlanDetails](plannerPlanDetails.md) リソースの `sharedWith` プロパティに含まれる値が多すぎます。</span><span class="sxs-lookup"><span data-stu-id="def5a-187">The `sharedWith` property on the [plannerPlanDetails](plannerPlanDetails.md) resource contains too many values.</span></span>                                                                                          |
+| <span data-ttu-id="def5a-188">MaximumReferencesOnTask</span><span class="sxs-lookup"><span data-stu-id="def5a-188">MaximumReferencesOnTask</span></span>       | <span data-ttu-id="def5a-189">[plannerTaskDetails](plannerTaskDetails.md) リソースの `references` プロパティに含まれる値が多すぎます。</span><span class="sxs-lookup"><span data-stu-id="def5a-189">The `references` property on the [plannerTaskDetails](plannerTaskDetails.md) resource contains too many values.</span></span>                                                                                          |
+| <span data-ttu-id="def5a-190">MaximumChecklistItemsOnTask</span><span class="sxs-lookup"><span data-stu-id="def5a-190">MaximumChecklistItemsOnTask</span></span>   | <span data-ttu-id="def5a-191">[plannerTaskDetails](plannerTaskDetails.md) リソースの `checklist` プロパティに含まれる値が多すぎます。</span><span class="sxs-lookup"><span data-stu-id="def5a-191">The `checklist` property on the [plannerTaskDetails](plannerTaskDetails.md) resource contains too many values.</span></span>                                                                                           |
+| <span data-ttu-id="def5a-192">MaximumAssigneesInTasks</span><span class="sxs-lookup"><span data-stu-id="def5a-192">MaximumAssigneesInTasks</span></span>       | <span data-ttu-id="def5a-193">[plannerTask](plannerTask.md) リソースの `assignments` プロパティに含まれる値が多すぎます。</span><span class="sxs-lookup"><span data-stu-id="def5a-193">The `assignments` property on the [plannerTask](plannerTask.md) resource contains too many values.</span></span>                                                                                                       |
+
+### <a name="412-precondition-failed"></a><span data-ttu-id="def5a-194">412 前提条件が失敗しました</span><span class="sxs-lookup"><span data-stu-id="def5a-194">412 Precondition Failed</span></span> 
+
+<span data-ttu-id="def5a-p121">Planner API のすべての `POST`、`PATCH` および `DELETE` 要求には、要求の対象となるリソースと思われる最新の Etag 値で `If-Match` ヘッダーを指定する必要があります。さらに、要求に指定された Etag 値がサービス内のリソースのバージョンと一致しなくなった場合は、412 ステータス コードが返されます。この場合、クライアントはリソースを再度読み込んで、新しい Etag を取得する必要があります。</span><span class="sxs-lookup"><span data-stu-id="def5a-p121">All `POST`, `PATCH` and `DELETE` requests in Planner API require `If-Match` header to be specified with the last etag value seen of the resource that is subject to the request. Additionally, 412 status code can be returned if the etag value specified in the request no longer matches a version of the resource in the service. In this case, the clients should read the resource again and obtain a new etag.</span></span>
 
