@@ -1,0 +1,15 @@
+# <a name="prereleasefeatures-enum-type"></a><span data-ttu-id="b58f2-101">prereleaseFeatures 列挙型</span><span class="sxs-lookup"><span data-stu-id="b58f2-101">prereleaseFeatures enum type</span></span>
+
+> <span data-ttu-id="b58f2-102">**注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。</span><span class="sxs-lookup"><span data-stu-id="b58f2-102">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
+
+<span data-ttu-id="b58f2-103">プレリリース機能の使用可能な値です。</span><span class="sxs-lookup"><span data-stu-id="b58f2-103">Possible values for pre-release features.</span></span>
+## <a name="members"></a><span data-ttu-id="b58f2-104">メンバー</span><span class="sxs-lookup"><span data-stu-id="b58f2-104">Members</span></span>
+|<span data-ttu-id="b58f2-105">メンバー</span><span class="sxs-lookup"><span data-stu-id="b58f2-105">Member</span></span>|<span data-ttu-id="b58f2-106">値</span><span class="sxs-lookup"><span data-stu-id="b58f2-106">Value</span></span>|<span data-ttu-id="b58f2-107">説明</span><span class="sxs-lookup"><span data-stu-id="b58f2-107">Description</span></span>|
+|:---|:---|:---|
+|<span data-ttu-id="b58f2-108">userDefined</span><span class="sxs-lookup"><span data-stu-id="b58f2-108">UserDefined</span></span>|<span data-ttu-id="b58f2-109">0</span><span class="sxs-lookup"><span data-stu-id="b58f2-109">0%</span></span>|<span data-ttu-id="b58f2-110">ユーザー定義、デフォルト値、意図なし。</span><span class="sxs-lookup"><span data-stu-id="b58f2-110">User Defined, default value, no intent.</span></span>|
+|<span data-ttu-id="b58f2-111">settingsOnly</span><span class="sxs-lookup"><span data-stu-id="b58f2-111">settingsOnly</span></span>|<span data-ttu-id="b58f2-112">1</span><span class="sxs-lookup"><span data-stu-id="b58f2-112">-1</span></span>|<span data-ttu-id="b58f2-113">プレリリース機能のみを設定します。</span><span class="sxs-lookup"><span data-stu-id="b58f2-113">Settings only pre-release features.</span></span>|
+|<span data-ttu-id="b58f2-114">settingsAndExperimentations</span><span class="sxs-lookup"><span data-stu-id="b58f2-114">settingsAndExperimentations</span></span>|<span data-ttu-id="b58f2-115">2</span><span class="sxs-lookup"><span data-stu-id="b58f2-115">-2</span></span>|<span data-ttu-id="b58f2-116">プレリリース機能を設定し、実験します。</span><span class="sxs-lookup"><span data-stu-id="b58f2-116">Settings and experimentations pre-release features.</span></span>|
+|<span data-ttu-id="b58f2-117">notAllowed</span><span class="sxs-lookup"><span data-stu-id="b58f2-117">notAllowed</span></span>|<span data-ttu-id="b58f2-118">3</span><span class="sxs-lookup"><span data-stu-id="b58f2-118">"3"</span></span>|<span data-ttu-id="b58f2-119">プレリリース機能が許可されていません。</span><span class="sxs-lookup"><span data-stu-id="b58f2-119">Pre-release features not allowed.</span></span>|
+
+
+
