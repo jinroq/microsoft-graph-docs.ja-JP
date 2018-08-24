@@ -1,0 +1,17 @@
+# <a name="installstate-enum-type"></a><span data-ttu-id="fabff-101">installState 列挙型</span><span class="sxs-lookup"><span data-stu-id="fabff-101">installState enum type</span></span>
+
+> <span data-ttu-id="fabff-102">**注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。</span><span class="sxs-lookup"><span data-stu-id="fabff-102">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
+
+<span data-ttu-id="fabff-103">インストール状態の値です。</span><span class="sxs-lookup"><span data-stu-id="fabff-103">Possible values for install state.</span></span>
+## <a name="members"></a><span data-ttu-id="fabff-104">メンバー</span><span class="sxs-lookup"><span data-stu-id="fabff-104">Members</span></span>
+|<span data-ttu-id="fabff-105">メンバー</span><span class="sxs-lookup"><span data-stu-id="fabff-105">Member</span></span>|<span data-ttu-id="fabff-106">値</span><span class="sxs-lookup"><span data-stu-id="fabff-106">Value</span></span>|<span data-ttu-id="fabff-107">説明</span><span class="sxs-lookup"><span data-stu-id="fabff-107">Description</span></span>|
+|:---|:---|:---|
+|<span data-ttu-id="fabff-108">NotApplicable</span><span class="sxs-lookup"><span data-stu-id="fabff-108">NotApplicable</span></span>|<span data-ttu-id="fabff-109">0</span><span class="sxs-lookup"><span data-stu-id="fabff-109">0%</span></span>|<span data-ttu-id="fabff-110">該当なし。</span><span class="sxs-lookup"><span data-stu-id="fabff-110">Not applicable</span></span>|
+|<span data-ttu-id="fabff-111">installed</span><span class="sxs-lookup"><span data-stu-id="fabff-111">Installed</span></span>|<span data-ttu-id="fabff-112">1</span><span class="sxs-lookup"><span data-stu-id="fabff-112">-1</span></span>|<span data-ttu-id="fabff-113">インストール済み。</span><span class="sxs-lookup"><span data-stu-id="fabff-113">Installed</span></span>|
+|<span data-ttu-id="fabff-114">failed</span><span class="sxs-lookup"><span data-stu-id="fabff-114">Failed</span></span>|<span data-ttu-id="fabff-115">2</span><span class="sxs-lookup"><span data-stu-id="fabff-115">-2</span></span>|<span data-ttu-id="fabff-116">失敗しました。</span><span class="sxs-lookup"><span data-stu-id="fabff-116">Failed</span></span>|
+|<span data-ttu-id="fabff-117">notInstalled</span><span class="sxs-lookup"><span data-stu-id="fabff-117">notInstalled</span></span>|<span data-ttu-id="fabff-118">3</span><span class="sxs-lookup"><span data-stu-id="fabff-118">"3"</span></span>|<span data-ttu-id="fabff-119">インストールされていません。</span><span class="sxs-lookup"><span data-stu-id="fabff-119">Not installed</span></span>|
+|<span data-ttu-id="fabff-120">uninstallFailed</span><span class="sxs-lookup"><span data-stu-id="fabff-120">uninstallFailed</span></span>|<span data-ttu-id="fabff-121">4</span><span class="sxs-lookup"><span data-stu-id="fabff-121">-4</span></span>|<span data-ttu-id="fabff-122">アンインストールできませんでした。</span><span class="sxs-lookup"><span data-stu-id="fabff-122">Uninstall Failed.</span></span>|
+|<span data-ttu-id="fabff-123">unknown</span><span class="sxs-lookup"><span data-stu-id="fabff-123">unknown</span></span>|<span data-ttu-id="fabff-124">5</span><span class="sxs-lookup"><span data-stu-id="fabff-124">.5</span></span>|<span data-ttu-id="fabff-125">不明。</span><span class="sxs-lookup"><span data-stu-id="fabff-125">Unknown</span></span>|
+
+
+
