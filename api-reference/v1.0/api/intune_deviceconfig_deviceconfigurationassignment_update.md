@@ -24,7 +24,7 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/assignments
 ## <a name="request-headers"></a>要求ヘッダー
 |ヘッダー|値|
 |:---|:---|
-|Authorization|ベアラー &lt;トークン&gt; が必要です。|
+|Authorization|ベアラー &lt;トークン&gt; が必須。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>要求本文
@@ -32,7 +32,7 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/assignments
 
 次の表に、[deviceConfigurationAssignment](../resources/intune_deviceconfig_deviceconfigurationassignment.md) の作成時に必要なプロパティを示します。
 
-|プロパティ|型|説明|
+|プロパティ|タイプ|説明|
 |:---|:---|:---|
 |id|String|割り当てのキー。|
 |target|[deviceAndAppManagementAssignmentTarget](../resources/intune_shared_deviceandappmanagementassignmenttarget.md)|デバイス構成の割り当て先。|

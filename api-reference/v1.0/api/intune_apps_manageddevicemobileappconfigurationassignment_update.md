@@ -24,7 +24,7 @@ PATCH /deviceAppManagement/mobileAppConfigurations/{managedDeviceMobileAppConfig
 ## <a name="request-headers"></a>要求ヘッダー
 |ヘッダー|値|
 |:---|:---|
-|Authorization|ベアラー &lt;トークン&gt; が必要です。|
+|Authorization|ベアラー &lt;トークン&gt; が必須。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>要求本文
