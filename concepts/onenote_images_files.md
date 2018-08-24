@@ -18,27 +18,27 @@ URL の参照または生データの送信によって、画像を追加でき�
 
 [Web からパブリック イメージを追加する](#add-a-public-image-from-the-web)
 
-`img` で `src="http://image-url"` を使用し、公開されていてアクセス可能な画像の URL を指定します。OneNote ページに画像を表示します。
+で `src="http://image-url"` を使用し、公開されていてアクセス可能な画像の URL を指定します。OneNote ページに画像を表示します。`img`
 
 [バイナリ データを使用して画像を追加する](#add-an-image-using-binary-data)
 
-`img` で `src="name:image-block-name"` を使用し、マルチパート要求のデータ部分で画像ファイルを送信します。OneNote ページに画像を表示します。
+で `src="name:image-block-name"` を使用し、マルチパート要求のデータ部分で画像ファイルを送信します。OneNote ページに画像を表示します。`img`
 
 [Web ページのスナップショットを追加する](#add-a-webpage-snapshot)
 
-`img` で `data-render-src="http://webpage-url"` を使用し、Web ページの URL を指定します。OneNote ページに Web ページ全体のスナップショットを表示します。
+で `data-render-src="http://webpage-url"` を使用し、Web ページの URL を指定します。OneNote ページに Web ページ全体のスナップショットを表示します。`img`
 
 [HTML から表示される画像を追加する](#add-an-image-rendered-from-html)
 
-`img` で `data-render-src="name:html-block-name"` を使用し、マルチパート要求のデータ部分で HTML を送信します。OneNote ページに HTML を画像として表示します。
+で `data-render-src="name:html-block-name"` を使用し、マルチパート要求のデータ部分で HTML を送信します。OneNote ページに HTML を画像として表示します。`img`
 
 [PDF ファイルのコンテンツの画像を追加する](#add-images-of-pdf-file-contents)
 
-`<img data-render-src="name:part-name" />`を使用します。マルチパート要求のデータ部分で PDF ファイルを送信します。 OneNote ページの個別の画像として、PDF の各ページを表示します。
+を使用します。マルチパート要求のデータ部分で PDF ファイルを送信します。`<img data-render-src="name:part-name" />` OneNote ページの個別の画像として、PDF の各ページを表示します。
 
 [添付ファイルとして画像ファイルを追加する](#add-an-image-file-as-an-attachment)
 
-`object` と `data="name:file-block-name" data-attachment="file-name.file-ext" type="media-type"` を使用します。マルチパート要求のデータ部分で画像ファイルを送信します。添付ファイルを OneNote ページに追加して、ファイルのアイコンを表示します。
+と `data="name:file-block-name" data-attachment="file-name.file-ext" type="media-type"` を使用します。マルチパート要求のデータ部分で画像ファイルを送信します。添付ファイルを OneNote ページに追加して、ファイルのアイコンを表示します。`object`
 
 
 > **注:** OneNote ページで画像を取得するには、最初に[ページのコンテンツの GET 要求](onenote-get-content.md#page-html-content)を送信します。 これにより、ページで画像リソースへの URL を返します。 次に、[画像リソースに対する GET 要求](onenote-get-content.md#image-or-other-file-resource)を分離します。
@@ -310,11 +310,11 @@ Content-Type: text/html
 
 [添付ファイルを追加する](#add-a-file-attachment)
 
-`<object .../>`を使用します。マルチパート要求のデータ部分でファイルを送信します。 OneNote ページでファイル アイコンを表示する添付ファイルを追加します。
+を使用します。マルチパート要求のデータ部分でファイルを送信します。`<object .../>` OneNote ページでファイル アイコンを表示する添付ファイルを追加します。
 
 [PDF ファイルのコンテンツの画像を追加する](#add-images-of-pdf-file-contents)
 
-`<img data-render-src="name:part-name" />`を使用します。マルチパート要求のデータ部分で PDF ファイルを送信します。 OneNote ページの個別の画像として、PDF の各ページを表示します。
+を使用します。マルチパート要求のデータ部分で PDF ファイルを送信します。`<img data-render-src="name:part-name" />` OneNote ページの個別の画像として、PDF の各ページを表示します。
 
 #### <a name="file-attributes"></a>ファイルの属性
 
@@ -332,7 +332,7 @@ OneNote ページで表示するファイル名と拡張子。
 
 例: `data="name:part-name"`
 
-**type**
+**タイプ**
 
 ファイルのメディア タイプ。ページで利用するファイル アイコンの決定に使用されます。また、ユーザーが OneNote からデバイス上のファイルをアクティブ化する際に開始されるアプリケーションを決定します。
 
@@ -486,7 +486,7 @@ OneNote ページを作成または更新するには、適切なアクセス許
 - Notes.ReadWrite
 - Notes.ReadWrite.All
 
-アクセス許可のスコープと動作のしくみの詳細については、「[OneNote のアクセス許可のスコープ](permissions_reference.md#notes-permissions)」をご覧ください。
+アクセス許可のスコープと動作のしくみの詳細については、「[OneNote のアクセス許可のスコープ](permissions_reference.md#notes-permissions)」を参照してください。
 
 
 <a name="see-also"></a>
