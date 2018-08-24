@@ -23,7 +23,7 @@ PATCH /devices/{id}
 ## <a name="request-headers"></a>要求ヘッダー
 | 名前       | 型 | 説明|
 |:-----------|:------|:----------|
-| Authorization  | string  | ベアラー {トークン}。必須。 |
+| 承認  | 文字列  | ベアラー {トークン}。必須。 |
 
 ## <a name="request-body"></a>要求本文
 
@@ -33,10 +33,10 @@ PATCH /devices/{id}
 |:---------------|:--------|:----------|
 |accountEnabled|ブール値| アカウントが有効な場合は **true**。それ以外の場合は **false**。 |
 |operatingSystem|文字列|デバイス上のオペレーティング システムの種類。|
-|operatingSystemVersion|String|デバイス上のオペレーティング システムのバージョン|
+|operatingSystemVersion|文字列|デバイス上のオペレーティング システムのバージョン|
 |displayName|文字列|デバイスの表示名。|
-|isCompliant|Boolean|デバイスがモバイル デバイス管理 (MDM) ポリシーに準拠している場合は **true**。それ以外の場合は **false**。 これは承認済みの MDM アプリでのみ更新できます。 |
-|isManaged|Boolean|デバイスがモバイル デバイス管理 (MDM) アプリで管理されている場合は **true**。それ以外の場合は **false**。 これは承認済みの MDM アプリでのみ更新できます。 |
+|isCompliant|ブール値|デバイスがモバイル デバイス管理 (MDM) ポリシーに準拠している場合は **true**。それ以外の場合は **false**。 これはのみ、Intune は、デバイスの OS の種類のか、 [MDM アプリケーションを承認された](https://docs.microsoft.com/windows/client-management/mdm/azure-active-directory-integration-with-mdm) Windows OS のデバイスで更新できます。 |
+|isManaged|ブール値|デバイスがモバイル デバイス管理 (MDM) アプリで管理されている場合は **true**。それ以外の場合は **false**。 これはのみ、Intune は、デバイスの OS の種類のか、 [MDM アプリケーションを承認された](https://docs.microsoft.com/windows/client-management/mdm/azure-active-directory-integration-with-mdm) Windows OS のデバイスで更新できます。 |
 
 ## <a name="response"></a>応答
 

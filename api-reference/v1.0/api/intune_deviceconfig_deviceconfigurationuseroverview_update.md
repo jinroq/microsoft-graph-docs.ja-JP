@@ -1,6 +1,6 @@
 # <a name="update-deviceconfigurationuseroverview"></a>deviceConfigurationUserOverview の更新
 
-> **注:**Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
+> **注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
 
 [deviceConfigurationUserOverview](../resources/intune_deviceconfig_deviceconfigurationuseroverview.md) オブジェクトのプロパティを更新します。
 ## <a name="prerequisites"></a>前提条件
@@ -24,8 +24,8 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/userStatusO
 ## <a name="request-headers"></a>要求ヘッダー
 |ヘッダー|値|
 |:---|:---|
-|Authorization|ベアラー &lt;トークン&gt; が必要です。|
-|Accept|application/json|
+|承認|ベアラー &lt;トークン&gt; が必須。|
+|受託|application/json|
 
 ## <a name="request-body"></a>要求本文
 要求本文で、[deviceConfigurationUserOverview](../resources/intune_deviceconfig_deviceconfigurationuseroverview.md) オブジェクトの JSON 表記を指定します。
@@ -34,9 +34,9 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/userStatusO
 
 |プロパティ|型|説明|
 |:---|:---|:---|
-|id|String|エンティティのキー。|
+|id|文字列|エンティティのキー。|
 |pendingCount|Int32|保留中のユーザーの数|
-|notApplicableCount|Int32|該当しないデバイスの数|
+|notApplicableCount|Int32|該当しないユーザーの数|
 |successCount|Int32|成功したユーザーの数|
 |errorCount|Int32|エラー ユーザーの数|
 |failedCount|Int32|失敗したユーザーの数|
