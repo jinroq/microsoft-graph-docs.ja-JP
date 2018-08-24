@@ -17,10 +17,10 @@
 |:---|:---|:---|
 |id|String|オブジェクトの GUID|
 |orderIdentifier|String|Windows オートパイロット デバイスの受注 ID。|
-|serialNumber|String|Windows オートパイロット デバイスのシリアル番号。|
+|シリアル番号|String|Windows オートパイロット デバイスのシリアル番号。|
 |productKey|String|Windows オートパイロット デバイスのプロダクト キー。|
-|hardwareIdentifier|Binary|Windows オートパイロット デバイスのハードウェア BLOB。|
-|state|[importedWindowsAutopilotDeviceIdentityState](../resources/intune_enrollment_importedwindowsautopilotdeviceidentitystate.md)|インポートしたデバイスの現在の状態。|
+|hardwareIdentifier|バイナリ|Windows オートパイロット デバイスのハードウェア BLOB。|
+|状態|[importedWindowsAutopilotDeviceIdentityState](../resources/intune_enrollment_importedwindowsautopilotdeviceidentitystate.md)|インポートしたデバイスの現在の状態。|
 
 ## <a name="relationships"></a>リレーションシップ
 なし
