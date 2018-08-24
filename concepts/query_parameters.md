@@ -41,7 +41,7 @@ GET https://graph.microsoft.com/v1.0/users?$filter=startswith(givenName%2C+'J')
 
 ## <a name="count-parameter"></a>count パラメーター
 
-`$count` クエリ パラメーターを使用し、Microsoft Graph から返されるデータ値のページにコレクション内の項目数の合計を含めます。 
+クエリ パラメーターを使用し、Microsoft Graph から返されるデータ値のページにコレクション内の項目数の合計を含めます。`$count` 
 
 たとえば、次のような要求では、現在のユーザーの **contact** コレクションと、`@odata.count` プロパティ内の **contact** コレクションのアイテム数の両方が返されます。
 
@@ -82,7 +82,7 @@ GET https://graph.microsoft.com/v1.0/me/drive/root?$expand=children($select=id,n
 
 ## <a name="filter-parameter"></a>filter パラメーター
 
-`$filter` クエリ パラメーターを使用して、コレクションのサブセットのみを取得します。 
+クエリ パラメーターを使用して、コレクションのサブセットのみを取得します。`$filter` 
 
 たとえば、表示名が「J」という文字で始まるユーザーを検索するには、`startswith` を使用します。
 
@@ -92,7 +92,7 @@ GET https://graph.microsoft.com/v1.0/users?$filter=startswith(displayName,'J')
 
 [Graph エクスプローラーで試す][filter-example]
 
-`$filter` 演算子のサポートは、お使いの Microsoft Graph API によって異なります。 通常、次の論理演算子がサポートされています。 
+演算子のサポートは、お使いの Microsoft Graph API によって異なります。`$filter` 通常、次の論理演算子がサポートされています。 
 
 - 等しい (`eq`)
 - 等しくない (`ne`)
@@ -103,7 +103,7 @@ GET https://graph.microsoft.com/v1.0/users?$filter=startswith(displayName,'J')
 - OR (`or`)
 - NOT (`not`)
  
-`startswith` 文字列の演算子はたいていサポートされています。 `any` ラムダ演算子は、一部の API でサポートされています。 いくつかの使用例について、次の表を参照してください。 `$filter` 構文の詳細については、「[OData プロトコル][odata-filter]」を参照してください。  
+文字列の演算子はたいていサポートされています。`startswith` ラムダ演算子は、一部の API でサポートされています。`any` いくつかの使用例について、次の表を参照してください。 構文の詳細については、「[OData プロトコル][odata-filter]」を参照してください。`$filter`  
 
 次の表では、`$filter` クエリ パラメーター使用例を示します。
 
@@ -122,7 +122,7 @@ GET https://graph.microsoft.com/v1.0/users?$filter=startswith(displayName,'J')
 
 ## <a name="format-parameter"></a>format パラメーター
 
-`$format` クエリ パラメーターを使用して、Microsoft Graph から返される項目のメディア形式を指定します。
+クエリ パラメーターを使用して、Microsoft Graph から返される項目のメディア形式を指定します。`$format`
 
 たとえば、次の要求では組織のユーザーが JSON 形式で返されます。
 
@@ -136,7 +136,7 @@ GET https://graph.microsoft.com/v1.0/users?$format=json
 
 ## <a name="orderby-parameter"></a>orderby パラメーター
 
-`$orderby` クエリ パラメーターを使用して、Microsof Graph から返される項目の並べ替え順序を指定します。
+クエリ パラメーターを使用して、Microsof Graph から返される項目の並べ替え順序を指定します。`$orderby`
 
 たとえば、次の要求では組織のユーザーが表示名順で返されます。
 
@@ -162,7 +162,7 @@ GET https://graph.microsoft.com/v1.0/me/mailFolders/Inbox/messages?$orderby=from
 
 [Graph エクスプローラーで試す](https://developer.microsoft.com/graph/graph-explorer?request=me/messages?$orderby=from/emailAddress/name%20desc,subject&method=GET&version=v1.0)
 
-$filter を指定した場合は、サーバーで結果の並べ替え順序が考慮されます。 `$orderby` と `$filter` の両方を使用する場合、サーバーでは常に `$filter` の結果の並べ替え順序が考慮されるため、`$filter` 内のプロパティを他のプロパティよりも先に `$orderby` 内に配置して、`$filter` パラメーターに現れる順序で並べる必要があります。 
+$filter を指定した場合は、サーバーで結果の並べ替え順序が考慮されます。 と `$filter` の両方を使用する場合、サーバーでは常に `$filter` の結果の並べ替え順序が考慮されるため、`$filter` 内のプロパティを他のプロパティよりも先に `$orderby` 内に配置して、`$filter` パラメーターに現れる順序で並べる必要があります。`$orderby` 
 
 次の例は、**Subject** と **Importance** の両方のプロパティでフィルター処理されてから、**Subject**、**Importance**、**receivedDateTime** の各プロパティで降順で並べ替えられたクエリを示しています。
 
@@ -176,7 +176,7 @@ GET https://graph.microsoft.com/v1.0/me/messages?$filter=Subject eq 'welcome' an
 
 ## <a name="search-parameter"></a>search パラメーター
 
-`$search` クエリ パラメーターを使用して、要求の結果を検索条件と一致するものに制限します。
+クエリ パラメーターを使用して、要求の結果を検索条件と一致するものに制限します。`$search`
 
 > **注:** 現在の検索対象は、[メッセージ](../api-reference/v1.0/resources/message.md) コレクションと[人物](../api-reference/v1.0/resources/person.md)コレクション**だけ**です。`$search` 要求は最大 250 まで結果を返します。検索要求では [`$filter`](#filter-parameter) も [`$orderby`](#orderby-parameter) も使用できません。
 
@@ -218,12 +218,11 @@ GET https://graph.microsoft.com/v1.0/me/messages?$search="pizza"
 
 検索可能な電子メール プロパティ、KQL 構文、サポートされている演算子、検索のヒントなどの詳細については、次の記事を参照してください。
 
-- [Exchange の検索可能なプロパティ](https://docs.microsoft.com/ja-JP/Exchange/policy-and-compliance/ediscovery/message-properties-and-search-operators#searchable-properties-in-exchange)。
+- [Exchange の検索可能なプロパティ](https://docs.microsoft.com/en-us/Exchange/policy-and-compliance/ediscovery/message-properties-and-search-operators#searchable-properties-in-exchange)。
 
-- [キーワード クエリ言語 (KQL) 構文のリファレンス](https://docs.microsoft.com/ja-JP/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference)
+- [キーワード クエリ言語 (KQL) 構文のリファレンス](https://docs.microsoft.com/en-us/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference)
 
-- 
-  [Exchange 2016 におけるインプレースの電子情報開示のためのメッセージ プロパティと検索演算子](https://technet.microsoft.com/en-us/library/dn774955(v=exchg.160).aspx)
+- [Exchange 2016 におけるインプレースの電子情報開示のためのメッセージ プロパティと検索演算子](https://technet.microsoft.com/en-us/library/dn774955(v=exchg.160).aspx)
 
 ### <a name="using-search-on-person-collections"></a>人物コレクションで $search を使用する
 
@@ -288,7 +287,7 @@ People API の詳細については、「[関係する人の情報を取得す�
 
 ## <a name="select-parameter"></a>select パラメーター
 
-`$select` クエリ パラメーターを使用して、個別リソースまたはリソースのコレクションの既定値とは異なるプロパティのセットを返します。 $Select で、既定のプロパティのサブセットまたはスーパーセットを指定できます。
+クエリ パラメーターを使用して、個別リソースまたはリソースのコレクションの既定値とは異なるプロパティのセットを返します。`$select` $Select で、既定のプロパティのサブセットまたはスーパーセットを指定できます。
 
 たとえば、サインイン ユーザーのメッセージを取得するとき、**from** プロパティと **subject** プロパティだけを返すよう指定できます。
 
@@ -300,7 +299,7 @@ GET https://graph.microsoft.com/v1.0/me/messages?$select=from,subject
 
 > **重要:** 通常は、`$select` を使用して、クエリから返されるプロパティをお使いのアプリで必要なものだけに制限することをお勧めします。 これは特に、クエリが大きな結果セットを返す可能性がある場合に該当します。 行ごとに返されるプロパティを制限すれば、ネットワークの負荷を軽減し、アプリのパフォーマンスを向上させることができます。
 >
-> `v1.0`では、[ユーザー](../api-reference/v1.0/resources/user.md)と[グループ](../api-reference/v1.0/resources/group.md)のような、[directoryObject](../api-reference/v1.0/resources/directoryobject.md) から派生した一部の Azure AD リソースは、読み取り時に制限された既定値のプロパティ サブセットを返します。既定のセット以外のプロパティを返すには、これらのリソースに対して `$select` を使用する必要があります。  
+> では、[ユーザー](../api-reference/v1.0/resources/user.md)と[グループ](../api-reference/v1.0/resources/group.md)のような、[directoryObject](../api-reference/v1.0/resources/directoryobject.md) から派生した一部の Azure AD リソースは、読み取り時に制限された既定値のプロパティ サブセットを返します。既定のセット以外のプロパティを返すには、これらのリソースに対して `$select` を使用する必要があります。`v1.0`  
 
 ## <a name="skip-parameter"></a>skip パラメーター
 
@@ -320,7 +319,7 @@ GET  https://graph.microsoft.com/v1.0/me/events?$orderby=createdDateTime&$skip=2
 
 ## <a name="top-parameter"></a>top パラメーター
 
-`$top` クエリ パラメーターを使用して、結果セットのページ サイズを指定します。 
+クエリ パラメーターを使用して、結果セットのページ サイズを指定します。`$top` 
 
 結果セットにさらに項目が残っている場合、応答本文に `@odata.nextLink` パラメーターが含まれます。 このパラメーターには、結果の次のページを取得するために使用できる URL が含まれています。 詳細については、「[ページング](./paging.md)」を参照してください。 
 

@@ -8,7 +8,7 @@
 
 |アクセス許可の種類|アクセス許可 (特権の大きいものから小さいものへ)|
 |:---|:---|
-|委任 (職場または学校アカウント)|DeviceManagementServiceConfig.ReadWrite.All|
+|委任 (職場または学校のアカウント)|DeviceManagementServiceConfig.ReadWrite.All|
 |委任 (個人用 Microsoft アカウント)|サポートされていません。|
 |アプリケーション|サポートされていません。|
 
@@ -24,8 +24,8 @@ PATCH /deviceManagement/importedWindowsAutopilotDeviceIdentities/{importedWindow
 ## <a name="request-headers"></a>要求ヘッダー
 |ヘッダー|値|
 |:---|:---|
-|Authorization|ベアラー &lt;トークン&gt; が必須。|
-|Accept|application/json|
+|承認|ベアラー &lt;トークン&gt; が必須。|
+|受諾|application/json|
 
 ## <a name="request-body"></a>要求本文
 要求本文で、[importedWindowsAutopilotDeviceIdentity](../resources/intune_enrollment_importedwindowsautopilotdeviceidentity.md) オブジェクトの JSON 表記を指定します。
@@ -34,10 +34,10 @@ PATCH /deviceManagement/importedWindowsAutopilotDeviceIdentities/{importedWindow
 
 |プロパティ|型|説明|
 |:---|:---|:---|
-|id|String|オブジェクトの GUID|
-|orderIdentifier|String|Windows オートパイロット デバイスの受注 ID。|
-|シリアル番号|String|Windows オートパイロット デバイスのシリアル番号。|
-|productKey|String|Windows オートパイロット デバイスのプロダクト キー。|
+|id|文字列|オブジェクトの GUID|
+|orderIdentifier|文字列|Windows オートパイロット デバイスの受注 ID。|
+|シリアル番号|文字列|Windows オートパイロット デバイスのシリアル番号。|
+|productKey|文字列|Windows オートパイロット デバイスのプロダクト キー。|
 |hardwareIdentifier|バイナリ|Windows オートパイロット デバイスのハードウェア BLOB。|
 |状態|[importedWindowsAutopilotDeviceIdentityState](../resources/intune_enrollment_importedwindowsautopilotdeviceidentitystate.md)|インポートしたデバイスの現在の状態。|
 

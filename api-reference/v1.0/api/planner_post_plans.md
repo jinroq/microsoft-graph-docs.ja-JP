@@ -1,29 +1,36 @@
-# <a name="create-plannerplan"></a>Create plannerPlan
+# <a name="create-plannerplan"></a>plannerPlan の作成
 
 この API を使用して、新しい **plannerPlan** を作成します。
 
 ## <a name="permissions"></a>アクセス許可
+
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](../../../concepts/permissions_reference.md)」を参照してください。
 
-|アクセス許可の種類      | アクセス許可 (特権の小さいものから大きいものへ)              |
-|:--------------------|:---------------------------------------------------------|
-|委任 (職場または学校のアカウント) | Group.ReadWrite.All    |
-|委任 (個人用 Microsoft アカウント) | サポートされていません。    |
-|アプリケーション | サポートされていません。 |
+| アクセス許可の種類                        | アクセス許可 (特権の小さいものから大きいものへ) |
+| :------------------------------------- | :------------------------------------------ |
+| 委任 (職場または学校のアカウント)     | Group.ReadWrite.All                         |
+| 委任 (個人用 Microsoft アカウント) | サポートされていません。                              |
+| アプリケーション                            | サポートされていません。                              |
 
 ## <a name="http-request"></a>HTTP 要求
-<!-- { "blockType": "ignored" } -->
-```http
-POST /planner/plans
 
+<!-- { "blockType": "ignored" } -->
+``` http
+POST /planner/plans
 ```
+
 ## <a name="request-headers"></a>要求ヘッダー
-| 名前       | 説明|
-|:---------------|:----------|
-| Authorization  | ベアラー {トークン}。必須。 |
+
+| 名前          | 説明               |
+| :------------ | :------------------------ |
+| 承認 | ベアラー {トークン}。必須。 |
 
 ## <a name="request-body"></a>要求本文
+
 要求本文で、[plannerPlan](../resources/plannerplan.md) オブジェクトの JSON 表記を指定します。**plannerPlan** 所有者プロパティは、[group](../resources/group.md) オブジェクトの ID に設定する必要があります。
+
+>**注意:** プランを作成しているユーザーは、プランを所有するグループのメンバーである必要があります。 [グループの作成](../api/group_post_groups.md) を使用して新しいグループを作成する場合は、メンバーとしてグループに追加されません。 グループが作成されたら、[グループ ポスト メンバー](../api/group_post_members.md) を使用してご自分をメンバーとして追加します。
+
 
 ## <a name="response"></a>応答
 
@@ -32,13 +39,16 @@ POST /planner/plans
 このメソッドは、いずれかの [HTTP 状態コード](../../../concepts/errors.md)を返します。このメソッドでアプリが処理する最も一般的なエラーは、400、403 および 404 応答です。これらのエラーの詳細については、「[一般的なプランナーのエラー条件](../resources/planner_overview.md#common-planner-error-conditions)」を参照してください。
 
 ## <a name="example"></a>例
-##### <a name="request"></a>要求
+
+### <a name="request"></a>要求
+
 以下は、要求の例です。
+
 <!-- {
   "blockType": "request",
   "name": "create_plannerplan_from_planner"
 }-->
-```http
+``` http
 POST https://graph.microsoft.com/v1.0/planner/plans
 Content-type: application/json
 Content-length: 381
@@ -48,15 +58,19 @@ Content-length: 381
   "title": "title-value"
 }
 ```
+
 要求本文で、[plannerPlan](../resources/plannerplan.md) オブジェクトの JSON 表記を指定します。
-##### <a name="response"></a>応答
+
+### <a name="response"></a>応答
+
 以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。
+
 <!-- {
   "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.plannerPlan"
 } -->
-```http
+``` http
 HTTP/1.1 200 OK
 Content-type: application/json
 Content-length: 357

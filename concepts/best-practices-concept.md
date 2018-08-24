@@ -15,7 +15,7 @@ Microsoft Graph のデータにアクセスするには、アプリケーショ�
 - HTTP *Authorization* 要求ヘッダー (*Bearer* トークンとして)
 - グラフ クライアント コンストラクター (Microsoft Graph クライアント ライブラリを使用する場合)
 
-Microsoft Authentication Library API ([MSAL](https://docs.microsoft.com/ja-JP/azure/active-directory/develop/active-directory-v2-libraries)) を使用して、Microsoft Graph へのアクセス トークンを取得します。
+Microsoft Authentication Library API ([MSAL](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-v2-libraries)) を使用して、Microsoft Graph へのアクセス トークンを取得します。
 
 ## <a name="consent-and-authorization"></a>同意と承認
 
@@ -30,8 +30,8 @@ Microsoft Authentication Library API ([MSAL](https://docs.microsoft.com/ja-JP/az
 - **慎重にアプリを構成する**。 これは、エンドユーザーや管理者のエクスペリエンス、およびアプリケーションの導入とセキュリティに直接影響します。 例:
 
     - アプリケーションのプライバシーに関する声明、使用条件、名前、ロゴ、ドメインは、同意その他の操作で表示されるので、エンドユーザーが理解できるように慎重に構成する必要があります。
-    - アプリケーションに同意するのがどのようなユーザーなのか (エンドユーザーか管理者か) を考慮した上で、アプリケーションが[適切なアクセス許可を要求する](https://docs.microsoft.com/ja-JP/azure/active-directory/develop/active-directory-v2-scopes)ように構成します。
-    - [静的、動的、増分同意](https://docs.microsoft.com/ja-JP/azure/active-directory/develop/active-directory-v2-compare#incremental-and-dynamic-consent)の違いを確実に理解している必要があります。
+    - アプリケーションに同意するのがどのようなユーザーなのか (エンドユーザーか管理者か) を考慮した上で、アプリケーションが[適切なアクセス許可を要求する](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-v2-scopes)ように構成します。
+    - [静的、動的、増分同意](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-v2-compare#incremental-and-dynamic-consent)の違いを確実に理解している必要があります。
 
 - **マルチテナント アプリケーションを考慮する**。 ユーザーによって、アプリケーションや同意のコントロールはまちまちで、その状態もさまざまであることを想定します。 例:
 
@@ -83,7 +83,7 @@ GET https://graph.microsoft.com/v1.0/me/messages
 
 ## <a name="storing-data-locally"></a>ローカルにデータを保存する
 
-アプリケーションは、Microsoft Graph に対して呼び出しを実行し、必要に応じてリアルタイムでデータを取得するのが理想的です。 特定のシナリオに必要な場合に限って、データをローカルにキャッシュし保存するようにします。そのようなユース ケースが使用条件やプライバシー ポリシーの対象となっている場合は、[Microsoft Graph の利用規約](https://developer.microsoft.com/ja-JP/graph/docs/misc/terms-of-use)に違反しないようにする必要があります。 適切な保持ポリシーと削除ポリシーをアプリケーションに実装する必要もあります。
+アプリケーションは、Microsoft Graph に対して呼び出しを実行し、必要に応じてリアルタイムでデータを取得するのが理想的です。 特定のシナリオに必要な場合に限って、データをローカルにキャッシュし保存するようにします。そのようなユース ケースが使用条件やプライバシー ポリシーの対象となっている場合は、[Microsoft Graph の利用規約](https://developer.microsoft.com/en-us/graph/docs/misc/terms-of-use)に違反しないようにする必要があります。 適切な保持ポリシーと削除ポリシーをアプリケーションに実装する必要もあります。
 
 ## <a name="optimizations"></a>最適化
 

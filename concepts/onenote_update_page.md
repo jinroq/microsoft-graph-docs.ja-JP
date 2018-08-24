@@ -72,25 +72,25 @@ PATCH 要求の JSON オブジェクトの定義には、**target** 属性、**a
 
 更新する要素。値として次の ID のいずれかを指定する必要があります。
 
-| Identifier | 説明 |  
+| 識別子 | 説明 |  
 |------|------|  
-| #{data-id} | <p>この ID は、[ページを作成](onenote-create-page.md)するときや[更新](onenote_update_page.md)するときに、入力 HTML の要素で任意で定義されます。値の先頭に # を付けます。</p><p> 例:<br/>`'target':'#intro'` は要素 `<div data-id="intro" ...>` をターゲットとします</p> |  
-| ID | <p>これは、Microsoft Graph から得られる[生成済み ID](#generated-ids) であり、ほとんどの置換操作で必要になります。 プレフィックス # を追加しないでください。</p><p> 例:<br/>`'target':'div:{33f8a2...}{37}'` は要素 `<div id="div:{33f8a2...}{37}" ...>` をターゲットとします</p><p>[入力 HTML](onenote_input_output_html.md) に定義されている **id** 値とこれらを混同しないでください。入力 HTML で送信される **id** 値は、すべて破棄されます。</p> |  
-| body | ページ上で最初の div をターゲットにするキーワード。プレフィックス # を追加してはいけません。 |  
-| title | ページ タイトルをターゲットにするキーワード。プレフィックス # を追加してはなりません。 |  
+| #{data-id} | <p>この ID は、[ページを作成](onenote-create-page.md)するときや[更新](onenote_update_page.md)するときに、入力 HTML の要素で任意で定義されます。値の先頭に # を付けます。</p><p> 例:<br/>`'target':'#intro'` は要素 `<div data-id="intro" ...>` をターゲットとします `<div data-id="intro" ...>`</p> |  
+| ID | <p>これは、Microsoft Graph から得られる[生成済み ID](#generated-ids) であり、ほとんどの置換操作で必要になります。 プレフィックス # を追加しないでください。</p><p> 例:<br/>`'target':'div:{33f8a2...}{37}'` は要素 `<div id="div:{33f8a2...}{37}" ...>` をターゲットとします `<div id="div:{33f8a2...}{37}" ...>`</p><p>[入力 HTML](onenote_input_output_html.md) に定義されている **id** 値とこれらを混同しないでください。入力 HTML で送信される **id** 値は、すべて破棄されます。</p> |  
+| 本文 | ページ上で最初の div をターゲットにするキーワード。プレフィックス # を追加してはいけません。 |  
+| タイトル | ページ タイトルをターゲットにするキーワード。プレフィックス # を追加してはなりません。 |  
  
-#### <a name="action"></a>action
+#### <a name="action"></a>操作
 
 ターゲット要素に対して実行するアクション。「[サポートされる要素とアクション](#supported-elements-and-actions)」を参照してください。
 
 | アクション | 説明 |  
 |------|------|  
-| append | <p>指定されたコンテンツを最初または最後の子としてターゲットに追加します。追加される位置 (最初または最後) は、**position** 属性によって決まります。</p><p>**body**、**div**、**ol**、**ul** 要素にのみ適用されます。</p> |  
-| insert | 指定されたコンテンツを兄弟としてターゲットの前または後に追加します。追加される位置 (前または後) は、**position** 属性によって決まります。 |  
-| prepend | <p>指定されたコンテンツを最初の子としてターゲットに追加します。**append** + **before** のショートカット。</p><p>**body**、**div**、**ol**、**ul** 要素にのみ適用されます。</p> |  
-| replace | <p>指定したコンテンツでターゲットを置換します。</p><p>ほとんどの **replace** アクションは、ターゲットの[生成された ID](#generated-ids) を使用する必要があります (ただし、div 内の **img** 要素と **object** 要素を除きます。これらは、**data-id** の使用もサポートしています)。</p> |  
+| 追加 | <p>指定されたコンテンツを最初または最後の子としてターゲットに追加します。追加される位置 (最初または最後) は、**position** 属性によって決まります。</p><p>**body**、**div**、**ol**、**ul** 要素にのみ適用されます。</p> |  
+| 挿入 | 指定されたコンテンツを兄弟としてターゲットの前または後に追加します。追加される位置 (前または後) は、**position** 属性によって決まります。 |  
+| 先頭に追加 | <p>指定されたコンテンツを最初の子としてターゲットに追加します。**append** + **before** のショートカット。</p><p>**body**、**div**、**ol**、**ul** 要素にのみ適用されます。</p> |  
+| 置換え | <p>指定したコンテンツでターゲットを置換します。</p><p>ほとんどの **replace** アクションは、ターゲットの[生成された ID](#generated-ids) を使用する必要があります (ただし、div 内の **img** 要素と **object** 要素を除きます。これらは、**data-id** の使用もサポートしています)。</p> |  
  
-#### <a name="position"></a>position
+#### <a name="position"></a>位置
 
 指定されたコンテンツを追加する位置。ターゲット要素を基準とした相対位置です。省略すると、既定値として **after** が使用されます。
 
@@ -99,7 +99,7 @@ PATCH 要求の JSON オブジェクトの定義には、**target** 属性、**a
 | after (既定値) |<p>**append** の場合: ターゲット要素の最後の子。</p><p>**insert** の場合: ターゲット要素の後続の兄弟。</p> |
 | before | <p>**append** の場合: ターゲット要素の最初の子。</p><p>**insert** の場合: ターゲット要素の先行の兄弟。</p> |
 
-#### <a name="content"></a>content
+#### <a name="content"></a>コンテンツ
 
 ページに追加する整形式 HTML の文字列と画像またはファイル バイナリ データ。コンテンツにバイナリ データが含まれている場合、コンテンツ タイプとして `multipart/form-data` を利用し、"Commands" パートを含む要求を送信する必要があります ([例](#multipart-request-with-binary-content)参照)。 
  
@@ -150,14 +150,14 @@ Microsoft Graph は、更新可能なページで要素に対して **id** 値�
 
 | 要素 | 置換 | 子の追加 | 兄弟の挿入 |  
 |------|:------:|:------:|:------:|  
-| body<br /> (ページの最初の div をターゲットとする) | いいえ | **はい** | いいえ |  
+| 本文<br /> (ページの最初の div をターゲットとする) | いいえ | **はい** | いいえ |  
 | div<br /> ([絶対配置](onenote-abs-pos.md)) | いいえ | **はい** | いいえ |  
 | div<br /> (div 内) | **はい**<br/>(id のみ) | **はい** | **はい** |   
 | img、object<br /> (div 内) | **はい** | いいえ | **はい** |   
 | ol、ul | **はい**<br/>(id のみ) | **はい** | **はい** |   
-| table | **はい**<br/>(id のみ) | いいえ | **はい** |   
+| テーブル | **はい**<br/>(id のみ) | いいえ | **はい** |   
 | p、li、h1-h6 | **はい**<br/>(id のみ) | いいえ | **はい** |   
-| title | **はい** | いいえ | いいえ |  
+| タイトル | **はい** | いいえ | いいえ |  
  
 <br/>
 
@@ -166,9 +166,9 @@ Microsoft Graph は、更新可能なページで要素に対して **id** 値�
 - img ([絶対配置](onenote-abs-pos.md))
 - object ([絶対配置](onenote-abs-pos.md))
 - tr、td
-- meta
-- head
-- span
+- メタ
+- 見出し
+- スパン
 - a
 - style タグ
 
@@ -358,7 +358,7 @@ Microsoft Graph は、更新可能なページで要素に対して **id** 値�
 
 #### <a name="request-with-text-content-only"></a>テキスト コンテンツのみの要求
 
-次の例では、PATCH 要求でコンテンツ タイプとして **application/json** が使用されています。 コンテンツにバイナリ データが含まれていない場合は、この形式を使用できます。
+次の例は、**application/json** コンテンツ タイプを使用する PATCH 要求を示しています。コンテンツにバイナリ データが含まれていない場合にこの形式を使用できます。
 
 ```json
 PATCH https://graph.microsoft.com/v1.0/me/onenote/notebooks/pages/{page-id}/content
@@ -427,7 +427,7 @@ Content-Type: image/png
 |------|------|  
 | プロトコル | すべての要求は SSL/TLS HTTPS プロトコルを使用します。 |  
 | 承認ヘッダー | <p>`Bearer {token}`。`{token}` は、登録済みアプリの有効な OAuth 2.0 アクセス トークンです。</p><p>これがないか、無効の場合、401 ステータス コードで要求は失敗します。「[認証とアクセス許可](permissions_reference.md)」を参照してください。</p> |  
-| Content-Type ヘッダー | <p>JSON 変更オブジェクトの配列の `application/json`。メッセージ本文または[マルチパート要求](#multipart-request-with-binary-content)の必須の "Commands" パートで直接送信。</p><p>マルチパート要求はバイナリ データを送信するときに必須であり、コンテンツ タイプとして `multipart/form-data; boundary=part-boundary` を使用します。`{part-boundary}` は、各データ パートの開始と終了を伝える文字列です。</p> |  
+| Content-Type ヘッダー | <p>`application/json` JSON 変更オブジェクトの配列の `application/json`。メッセージ本文または[マルチパート要求](#multipart-request-with-binary-content)の必須の "Commands" パートで直接送信。</p><p>マルチパート要求はバイナリ データを送信するときに必須であり、コンテンツ タイプとして `multipart/form-data; boundary=part-boundary` を使用します。`{part-boundary}` は、各データ パートの開始と終了を伝える文字列です。</p> |  
 
 <br/> 
 
@@ -446,9 +446,9 @@ OneNote サービスのルート URL は、OneNote API へのすべての呼び�
 
 `https://graph.microsoft.com/{version}/me/onenote/`
 
-URL の `version` セグメントは、使用する Microsoft Graph のバージョンを示しています。 安定した運用コードには `v1.0` を使用します。 開発中の機能を試すには `beta` を使用します。 ベータ版の機能は変更される可能性があるため、運用コードでは使用しないでください。
+URL の `version` セグメントは、使用する Microsoft Graph のバージョンを示しています。 `v1.0` 安定した運用コードには `v1.0` を使用します。 `beta` 開発中の機能を試すには `beta` を使用します。 ベータ版の機能は変更される可能性があるため、運用コードでは使用しないでください。
 
-現在のユーザーがアクセスできる OneNote コンテンツには `me` を使用します (所有と共有)。 指定されたユーザー (URL 内) が現在のユーザーと共有している OneNote コンテンツには `users/{id}` を使用します。 [Azure AD Graph API](https://msdn.microsoft.com/library/azure/ad/graph/api/api-catalog) の使用。
+`me` 現在のユーザーがアクセスできる OneNote コンテンツには `me` を使用します (所有と共有)。 `users/{id}` 指定されたユーザー (URL 内) が現在のユーザーと共有している OneNote コンテンツには `users/{id}` を使用します。 [Azure AD Graph API](https://msdn.microsoft.com/library/azure/ad/graph/api/api-catalog) の使用。
 
 
 > **注:** `https://graph.microsoft.com/v1.0/users`で GET 要求を行うことにより、ユーザー ID を取得できます。
@@ -464,7 +464,7 @@ OneNote ページを更新するには、適切なアクセス許可を要求す
 - Notes.ReadWrite
 - Notes.ReadWrite.All
 
-アクセス許可のスコープと動作のしくみの詳細については、「[OneNote のアクセス許可のスコープ](permissions_reference.md)」をご覧ください。
+アクセス許可のスコープと動作のしくみの詳細については、「[OneNote のアクセス許可のスコープ](permissions_reference.md)」を参照してください。
    
 
 <a name="see-also"></a>
