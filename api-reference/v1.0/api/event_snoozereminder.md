@@ -1,6 +1,6 @@
 # <a name="event-snoozereminder"></a>イベント: snoozeReminder
 
-新しい時刻まで、アラームを延期します。
+新しいイベントまで [ユーザーの予定表](../resources/calendar.md) の[イベント](../resources/event.md) のお知らせを延期します。
 
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](../../../concepts/permissions_reference.md)」を参照してください。
@@ -16,11 +16,9 @@
 ```http
 POST /me/events/{id}/snoozeReminder
 POST /users/{id | userPrincipalName}/events/{id}/snoozeReminder
-POST /groups/{id}/events/{id}/snoozeReminder
 
 POST /me/calendar/events/{id}/snoozeReminder
 POST /users/{id | userPrincipalName}/calendar/events/{id}/snoozeReminder
-POST /groups/{id}/calendar/events/{id}/snoozeReminder
 
 POST /me/calendars/{id}/events/{id}/snoozeReminder
 POST /users/{id | userPrincipalName}/calendars/{id}/events/{id}/snoozeReminder
@@ -34,8 +32,8 @@ POST /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{
 ## <a name="request-headers"></a>要求ヘッダー
 | 名前       | 型 | 説明|
 |:---------------|:--------|:----------|
-| Authorization  | string  | ベアラー {トークン}。必須。 |
-| Content-Type | string  | エンティティ本文内のデータの性質です。必須。 |
+| 認可  | 文字列  | ベアラー {トークン}。必須。 |
+| コンテンツタイプ | 文字列  | エンティティ本文内のデータの性質です。必須。 |
 
 ## <a name="request-body"></a>要求本文
 要求本文で、次のパラメーターを含む JSON オブジェクトを指定します。

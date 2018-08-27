@@ -1,6 +1,6 @@
 # <a name="update-devicemanagementtroubleshootingevent"></a>deviceManagementTroubleshootingEvent の更新
 
-> **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでは、これらの API の使用はサポートされていません。
+> **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。
 
 > **注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
 
@@ -10,7 +10,7 @@
 
 |アクセス許可の種類|アクセス許可 (特権の大きいものから小さいものへ)|
 |:---|:---|
-|委任 (職場または学校アカウント)|DeviceManagementManagedDevices.ReadWrite.All|
+|委任 (職場または学校のアカウント)|DeviceManagementManagedDevices.ReadWrite.All|
 |委任 (個人用 Microsoft アカウント)|サポートされていません。|
 |アプリケーション|サポートされていません。|
 
@@ -34,11 +34,11 @@ PATCH /deviceManagement/troubleshootingEvents/{deviceManagementTroubleshootingEv
 
 次の表に、[deviceManagementTroubleshootingEvent](../resources/intune_troubleshooting_devicemanagementtroubleshootingevent.md) の作成時に必要なプロパティを示します。
 
-|プロパティ|型|説明|
+|プロパティ|タイプ|説明|
 |:---|:---|:---|
-|id|String|オブジェクトの UUID|
-|eventDateTime|DateTimeOffset|イベントが発生した時刻。|
-|correlationId|String|サービスのエラーをトレースするための ID。|
+|id|文字列|オブジェクトの UUID|
+|eventDateTime|DateTimeOffset|インシデントが発生した時間。|
+|correlationId|文字列|サービスのエラーをトレースするための ID。|
 
 
 
