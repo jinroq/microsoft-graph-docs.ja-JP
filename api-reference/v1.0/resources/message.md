@@ -36,41 +36,41 @@ mailFolder のメッセージ。
 |[スキーマ拡張機能の値を追加する](../../../concepts/extensibility_schema_groups.md) || スキーマ拡張機能の定義を作成し、それを使用してカスタマイズされた種類のデータをリソースに追加します。|
 |**拡張プロパティ**| | |
 |[単一値の拡張プロパティを作成する](../api/singlevaluelegacyextendedproperty_post_singlevalueextendedproperties.md) |[message](message.md)  |新規または既存のメッセージに、1 つ以上の単一値の拡張プロパティを作成します。   |
-|[単一値の拡張プロパティを持つメッセージの取得](../api/singlevaluelegacyextendedproperty_get.md)  | [message](message.md) | `$expand` または `$filter` を使用して、単一値の拡張プロパティを含むメッセージを取得します。 |
+|[単一値の拡張プロパティを持つメッセージの取得](../api/singlevaluelegacyextendedproperty_get.md)  | [message](message.md) | または `$filter` を使用して、単一値の拡張プロパティを含むメッセージを取得します。`$expand` |
 |[複数値の拡張プロパティを作成する](../api/multivaluelegacyextendedproperty_post_multivalueextendedproperties.md) | [message](message.md) | 新規または既存のメッセージに、1 つ以上の複数値の拡張プロパティを作成します。  |
-|[複数値の拡張プロパティを持つメッセージの取得](../api/multivaluelegacyextendedproperty_get.md)  | [message](message.md) | `$expand` を使用して、複数値の拡張プロパティを含むメッセージを取得します。 |
+|[複数値の拡張プロパティを持つメッセージの取得](../api/multivaluelegacyextendedproperty_get.md)  | [message](message.md) | を使用して、複数値の拡張プロパティを含むメッセージを取得します。`$expand` |
 
 ## <a name="properties"></a>プロパティ
-| プロパティ     | 型   |説明|
+| プロパティ     | タイプ   |説明|
 |:---------------|:--------|:----------|
-|bccRecipients|[recipient](recipient.md) collection|メッセージの BCC 受信者。|
-|body|[itemBody](itembody.md)|メッセージの本文。HTML 形式またはテキスト形式にできます。|
+|bccRecipients|[recipient](recipient.md) コレクション|メッセージの BCC 受信者。|
+|本文|[itemBody](itembody.md)|メッセージの本文。HTML 形式またはテキスト形式にできます。|
 |bodyPreview|String|メッセージ本文の最初の 255 文字。テキスト形式です。|
-|categories|String collection|メッセージに関連付けられたカテゴリ。|
-|ccRecipients|[recipient](recipient.md) collection|メッセージの CC 受信者。|
+|categories|String コレクション|メッセージに関連付けられたカテゴリ。|
+|ccRecipients|[recipient](recipient.md) コレクション|メッセージの CC 受信者。|
 |changeKey|String|メッセージのバージョン。|
 |conversationId|String|電子メールが属している会話の ID。|
 |createdDateTime|DateTimeOffset|メッセージが作成された日時。|
-|flag|[followUpFlag](followupflag.md)|メッセージのステータス、開始日、期限、または完了日を示すフラグ値。|
-|from|[recipient](recipient.md)|メッセージのメールボックス所有者と送信者。|
+|flag|[FollowupFlag](followupflag.md)|メッセージのステータス、開始日、期限、または完了日を示すフラグ値。|
+|from|[recipient](recipient.md)|メッセージのメールボックス所有者と送信者。 値は、使用される実際のメールボックスに対応する必要があります。|
 |hasAttachments|ブール値|メッセージに添付ファイルがあるかどうかを示します。このプロパティにはインライン添付ファイルが含まれていません。このためメッセージにインライン添付ファイルのみが含まれている場合、このプロパティは false です。インライン添付ファイルが存在するかどうかを確認するには、**body** プロパティを解析して `<IMG src="cid:image001.jpg@01D26CD8.6C05F070">` などの `src` 属性を探します。|
 |id|String|メッセージの一意識別子 (メッセージが移動または変更された場合、この値は変更される可能性があることに注意)|
-|importance|String| メッセージの重要度: `Low`、`Normal`、`High`。|
-|inferenceClassification | String | 推定される関連性や重要性、または明示的なオーバーライドに基づく、ユーザーのメッセージの分類。使用可能な値は、`focused` または `other` です。 |
+|importance|importance| メッセージの重要度: `Low`、`Normal`、`High`。|
+|inferenceClassification | InferenceClassificationType | 推定される関連性や重要性、または明示的なオーバーライドに基づく、ユーザーの対象メッセージの分類。 使用可能な値: `focused` または `other`。 |
 |internetMessageHeaders | [internetMessageHeader](internetmessageheader.md) コレクション | [RFC5322](https://www.ietf.org/rfc/rfc5322.txt) によって定義された、メッセージ ヘッダーのコレクション。メッセージが送信者から受信者に到達するまでに辿ったネットワーク パスの詳細を説明します。 読み取り専用。|
 |internetMessageId |String |[RFC2822](http://www.ietf.org/rfc/rfc2822.txt) によって指定された形式のメッセージ ID。 |
 |isDeliveryReceiptRequested|Boolean|メッセージの開封確認メッセージが要求されているかどうかを示します。|
-|isDraft|Boolean|メッセージが下書きかどうかを示します。メッセージがまだ送信されていなければ下書きです。|
+|isDraft|ブール型|メッセージが下書きかどうかを示します。メッセージがまだ送信されていなければ下書きです。|
 |isRead|Boolean|メッセージが開封されたかどうかを示します。|
 |isReadReceiptRequested|Boolean|メッセージの開封確認メッセージが要求されているかどうかを示します。|
 |lastModifiedDateTime|DateTimeOffset|メッセージが最後に変更された日時。|
 |parentFolderId|String|メッセージの親 mailFolder の一意識別子。|
 |receivedDateTime|DateTimeOffset|メッセージが受信された日時です。|
-|replyTo|[recipient](recipient.md) collection|返信時に使用される電子メール アドレス。|
-|sender|[recipient](recipient.md)|メッセージを生成するために実際に使用されるアカウント。|
+|replyTo|[recipient](recipient.md) コレクション|返信時に使用される電子メール アドレス。|
+|sender|[recipient](recipient.md)|メッセージを生成するために実際に使用されるアカウント。 ほとんどの場合、この値は、 **from** プロパティと同じです。  [共有されているメールボックス](https://docs.microsoft.com/en-us/exchange/collaboration/shared-mailboxes/shared-mailboxes)からメッセージを送信するとき、または [委任](https://support.office.com/en-us/article/allow-someone-else-to-manage-your-mail-and-calendar-41c40c04-3bd1-4d22-963a-28eafec25926)としてメッセージを送信するとき、別の値にこのプロパティを設定できます。 値は、使用される実際のメールボックスに対応する必要があります。|
 |sentDateTime|DateTimeOffset|メッセージが送信された日時。|
 |subject|String|メッセージの件名。|
-|toRecipients|[recipient](recipient.md) collection|メッセージの宛先。|
+|toRecipients|[recipient](recipient.md) コレクション|メッセージの宛先。|
 |uniqueBody|[itemBody](itembody.md)|現在のメッセージに一意であるメッセージの本文の一部。**uniqueBody** は、既定で返されませんが、特定のメッセージのために `?$select=uniqueBody` クエリを使用して取得することができます。HTML 形式またはテキスト形式にできます。|
 |webLink|String|Outlook Web App でメッセージを開く URL。<br><br>URL の末尾に ispopout 引数を付加して、メッセージの表示方法を変更できます。ispopout が存在しない、または 1 に設定されている場合は、メッセージがポップアウト ウィンドウに表示されます。ispopout が 0 に設定されている場合、ブラウザーの Outlook Web App レビュー ウィンドウにメッセージが表示されます。<br><br>Outlook Web App のメールボックスにログインしている場合、ブラウザーでメッセージが開きます。まだブラウザーでログインしていない場合、ログインするように求められます。<br><br>この URL には、iFrame 内からアクセスできます。|
 
@@ -88,20 +88,22 @@ Prefer: outlook.allow-unsafe-html
 - **From** プロパティは、Exchange 管理者がメールボックスの **SendAs** 権限を他のユーザーに割り当てた場合には変更が可能です。管理者は、Azure ポータルでメールボックス所有者の **メールボックスのアクセス許可** を選択するか、Exchange 管理センターまたは Windows PowerShell Add-ADPermission コマンドレットを使用してこれを行えます。その後、プログラムを使用して、**From** プロパティを、対象メールボックスの **SendAs** 権限を持ついずれかのユーザーに自動的に設定できます。
 - **sender** プロパティは、メールボックス所有者が 1 人以上のユーザーにそのメールボックスからメッセージを送信する権限を委任すると、変更できます。メールボックス所有者は、Outlook で委任できます。代理人がメールボックス所有者に代わってメッセージを送信する場合、**sender** プロパティは代理人のアカウントに設定され、**from** プロパティはメールボックス所有者のままになります。プログラムを使用して、**sender** プロパティを、対象メールボックスの委任権限を取得したユーザーに設定できます。
 
-## <a name="relationships"></a>関係
+## <a name="relationships"></a>リレーションシップ
 | リレーションシップ | 型   |説明|
 |:---------------|:--------|:----------|
 |attachments|[attachment](attachment.md) コレクション|メッセージの [fileAttachment](fileattachment.md) 添付ファイルと [itemAttachment](itemattachment.md) 添付ファイル。|
 |extensions|[extension](extension.md) コレクション|メッセージに対して定義されているオープン拡張機能のコレクション。読み取り専用。Null 許容型。|
-|multiValueExtendedProperties|[multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md) collection| メッセージに対して定義された、複数値の拡張プロパティのコレクション。読み取り専用。Null 許容型。|
-|singleValueExtendedProperties|[singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md) collection| メッセージに対して定義された、単一値の拡張プロパティのコレクションです。読み取り専用。Null 許容型。|
+|multiValueExtendedProperties|[multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md) コレクション| メッセージに対して定義された、複数値の拡張プロパティのコレクション。読み取り専用。Null 許容型。|
+|singleValueExtendedProperties|[singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md) コレクション| メッセージに対して定義された、単一値の拡張プロパティのコレクションです。読み取り専用。Null 許容型。|
 
 ## <a name="json-representation"></a>JSON 表記
 
 以下は、リソースの JSON 表記です
 
-<!-- {
+<!--{
   "blockType": "resource",
+  "baseType": "microsoft.graph.outlookItem",
+  "openType": true,
   "optionalProperties": [
     "attachments",
     "extensions",
@@ -109,7 +111,23 @@ Prefer: outlook.allow-unsafe-html
     "multiValueExtendedProperties"
   ],
   "keyProperty": "id",
-  "@odata.type": "microsoft.graph.message"
+  "@odata.type": "microsoft.graph.message",
+  "@odata.annotations": [
+    {
+      "property": "attachments",
+      "capabilities": {
+        "changeTracking": false,
+        "searchable": false
+      }
+    },
+    {
+      "property": "extensions",
+      "capabilities": {
+        "changeTracking": false,
+        "searchable": false
+      }
+    }
+  ]
 }-->
 
 ```json
