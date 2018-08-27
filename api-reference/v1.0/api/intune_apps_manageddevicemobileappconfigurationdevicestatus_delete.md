@@ -1,14 +1,14 @@
-# <a name="sync-action"></a>sync アクション
+# <a name="delete-manageddevicemobileappconfigurationdevicestatus"></a>ManagedDeviceMobileAppConfigurationDeviceStatus を削除する
 
 > **注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
 
-まだ文書化されていません
+[managedDeviceMobileAppConfigurationDeviceStatus](../resources/intune_apps_manageddevicemobileappconfigurationdevicestatus.md) を削除します。
 ## <a name="prerequisites"></a>前提条件
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](../../../concepts/permissions_reference.md)」を参照してください。
 
 |アクセス許可の種類|アクセス許可 (特権の大きいものから小さいものへ)|
 |:---|:---|
-|委任 (職場または学校のアカウント)|DeviceManagementServiceConfig.ReadWrite.All|
+|委任 (職場または学校のアカウント)|DeviceManagementApps.ReadWrite.All|
 |委任 (個人用 Microsoft アカウント)|サポートされていません。|
 |アプリケーション|サポートされていません。|
 
@@ -18,7 +18,7 @@
 }
 -->
 ``` http
-POST /deviceManagement/exchangeConnectors/{deviceManagementExchangeConnectorId}/sync
+DELETE /deviceAppManagement/mobileAppConfigurations/{managedDeviceMobileAppConfigurationId}/deviceStatuses/{managedDeviceMobileAppConfigurationDeviceStatusId}
 ```
 
 ## <a name="request-headers"></a>要求ヘッダー
@@ -28,31 +28,16 @@ POST /deviceManagement/exchangeConnectors/{deviceManagementExchangeConnectorId}/
 |Accept|application/json|
 
 ## <a name="request-body"></a>要求本文
-要求本文で、パラメーターの JSON 表記を指定します。
-
-次の表に、このアクションで使用できるパラメーターを示します。
-
-|プロパティ|タイプ|説明|
-|:---|:---|:---|
-|syncType|[deviceManagementExchangeConnectorSyncType](../resources/intune_onboarding_devicemanagementexchangeconnectorsynctype.md)|実行される同期の種類。完全同期またはデルタ同期のどちらかです。|
-
-
+このメソッドには、要求本文を指定しません。
 
 ## <a name="response"></a>応答
-成功した場合、このアクションは `204 No Content` 応答コードを返します。
+成功した場合、このメソッドは `204 No Content` 応答コードを返します。
 
 ## <a name="example"></a>例
 ### <a name="request"></a>要求
 以下は、要求の例です。
 ``` http
-POST https://graph.microsoft.com/v1.0/deviceManagement/exchangeConnectors/{deviceManagementExchangeConnectorId}/sync
-
-Content-type: application/json
-Content-length: 31
-
-{
-  "syncType": "deltaSync"
-}
+DELETE https://graph.microsoft.com/v1.0/deviceAppManagement/mobileAppConfigurations/{managedDeviceMobileAppConfigurationId}/deviceStatuses/{managedDeviceMobileAppConfigurationDeviceStatusId}
 ```
 
 ### <a name="response"></a>応答

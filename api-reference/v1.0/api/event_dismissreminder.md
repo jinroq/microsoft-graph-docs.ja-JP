@@ -1,6 +1,6 @@
 # <a name="event-dismissreminder"></a>イベント: dismissReminder
 
-トリガーされたアラームを消します。
+ユーザー [calendar](../resources/calendar.md) の [event](../resources/event.md) のトリガーされたアラームを閉じる。
 
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](../../../concepts/permissions_reference.md)」を参照してください。
@@ -18,11 +18,9 @@
 ```http
 POST /me/events/{id}/dismissReminder
 POST /users/{id | userPrincipalName}/events/{id}/dismissReminder
-POST /groups/{id}/events/{id}/dismissReminder
 
 POST /me/calendar/events/{id}/dismissReminder
 POST /users/{id | userPrincipalName}/calendar/events/{id}/dismissReminder
-POST /groups/{id}/calendar/events/{id}/dismissReminder
 
 POST /me/calendars/{id}/events/{id}/dismissReminder
 POST /users/{id | userPrincipalName}/calendars/{id}/events/{id}/dismissReminder
@@ -39,7 +37,7 @@ POST /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{
 ## <a name="request-headers"></a>要求ヘッダー
 | 名前       | 型 | 説明|
 |:---------------|:--------|:----------|
-| Authorization  | string  | ベアラー {トークン}。必須。 |
+| Authorization  | 文字列  | ベアラー {トークン}。必須。 |
 
 <br/>
 

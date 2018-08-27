@@ -3,11 +3,12 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
 title: SiteCollection
-ms.openlocfilehash: 6b36f3a0c2d958081f1b5663231a541f2e8a000f
-ms.sourcegitcommit: 7aea7a97e36e6d146214de3a90fdbc71628aadba
+ms.openlocfilehash: 84de2a8aa6796051b3b11ebec0d0f8f5934ea1fc
+ms.sourcegitcommit: abf4b739257e3ffd9d045f783ec595d846172590
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "19069344"
 ---
 # <a name="sitecollection-resource"></a>SiteCollection リソース
 
@@ -28,16 +29,19 @@ ms.lasthandoff: 09/28/2017
 
 ```json
 {
-  "hostname": "contoso.sharepoint.com"
+  "hostname": "contoso.sharepoint.com",
+  "root": { "@odata.type": "microsoft.graph.root" }
 }
 ```
 
 ## <a name="properties"></a>プロパティ
 
-| プロパティ名 | 種類    | 説明                                                                                                                  |
-|:--------------|:--------|:---------------------------------------------------
-| **hostname**  | string  | サイト コレクションのホスト名です。読み取り専用です。
+| プロパティ名        | 型     | 説明
+|:---------------------|:---------|:---------------------------------------------------
+| **hostname**         | 文字列   | サイト コレクションのホスト名です。読み取り専用です。
+| **root**             | [ルート][] | 存在する場合は、SharePoint 内のルート サイト コレクションであることを示します。 読み取り専用。
 
+[root]: root.md
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

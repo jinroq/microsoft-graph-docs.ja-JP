@@ -1,6 +1,6 @@
 # <a name="event-tentativelyaccept"></a>イベント: tentativelyAccept
 
-指定したイベントを仮承諾します。
+ユーザーの[予定表](../resources/event.md)の指定[イベント](../resources/calendar.md)を一時的に承認します。
 
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](../../../concepts/permissions_reference.md)」を参照してください。
@@ -16,11 +16,9 @@
 ```http
 POST /me/events/{id}/tentativelyAccept
 POST /users/{id | userPrincipalName}/events/{id}/tentativelyAccept
-POST /groups/{id}/events/{id}/tentativelyAccept
 
 POST /me/calendar/events/{id}/tentativelyAccept
 POST /users/{id | userPrincipalName}/calendar/events/{id}/tentativelyAccept
-POST /groups/{id}/calendar/events/{id}/tentativelyAccept
 
 POST /me/calendars/{id}/events/{id}/tentativelyAccept
 POST /users/{id | userPrincipalName}/calendars/{id}/events/{id}/tentativelyAccept
@@ -34,16 +32,16 @@ POST /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{
 ## <a name="request-headers"></a>要求ヘッダー
 | 名前       | 型 | 説明|
 |:---------------|:--------|:----------|
-| Authorization  | string  | ベアラー {トークン}。必須。 |
-| Content-Type | string  | エンティティ本文内のデータの性質です。必須。 |
+| 承認  | 文字列  | ベアラー {トークン}。必須。 |
+| Content-Type | 文字列  | エンティティ本文内のデータの性質です。必須。 |
 
 ## <a name="request-body"></a>要求本文
 要求本文で、次のパラメーターを含む JSON オブジェクトを指定します。
 
 | パラメーター    | 型   |説明|
 |:---------------|:--------|:----------|
-|comment|String|応答に含まれるテキスト。省略可。|
-|sendResponse|ブール型|応答が開催者に送信される場合は、`true`。それ以外の場合は、`false`。省略可。既定値は `true` です。|
+|コメント|文字列|応答に含まれるテキスト。省略可。|
+|sendResponse|ブール型|`true` 応答が開催者に送信される場合は、`true`。それ以外の場合は、`false`。省略可。既定値は `true` です。|
 
 ## <a name="response"></a>応答
 

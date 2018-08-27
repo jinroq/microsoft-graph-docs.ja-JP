@@ -1,6 +1,6 @@
 # <a name="event-decline"></a>イベント: 辞退
 
-指定したイベントへの招待を辞退します。
+ユーザーの [予定表](../resources/event.md) で指定した[イベント](../resources/calendar.md)への招待を辞退します。
 
 ## <a name="permissions"></a>アクセス許可
 
@@ -19,11 +19,9 @@
 ```http
 POST /me/events/{id}/decline
 POST /users/{id | userPrincipalName}/events/{id}/decline
-POST /groups/{id}/events/{id}/decline
 
 POST /me/calendar/events/{id}/decline
 POST /users/{id | userPrincipalName}/calendar/events/{id}/decline
-POST /groups/{id}/calendar/events/{id}/decline
 
 POST /me/calendars/{id}/events/{id}/decline
 POST /users/{id | userPrincipalName}/calendars/{id}/events/{id}/decline
@@ -41,8 +39,8 @@ POST /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{
 
 | 名前       | 型 | 説明|
 |:---------------|:--------|:----------|
-| Authorization  | string  | ベアラー {トークン}。必須。 |
-| Content-Type | string  | エンティティ本文内のデータの性質です。必須。 |
+| 承認  | 文字列  | ベアラー {トークン}。必須。 |
+| Content-Type | 文字列  | エンティティ本文内のデータの性質です。必須。 |
 
 ## <a name="request-body"></a>要求本文
 
@@ -50,8 +48,8 @@ POST /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{
 
 | パラメーター    | 型   |説明|
 |:---------------|:--------|:----------|
-|comment|String|応答に含まれるテキスト。省略可。|
-|sendResponse|ブール型|応答が開催者に送信される場合は、`true`。それ以外の場合は、`false`。省略可。既定値は `true` です。|
+|コメント|文字列|応答に含まれるテキスト。省略可。|
+|sendResponse|ブール型|`true` 応答が開催者に送信される場合は、`true`。それ以外の場合は、`false`。省略可。既定値は `true` です。|
 
 ## <a name="response"></a>応答
 

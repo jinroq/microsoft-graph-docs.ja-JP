@@ -12,7 +12,7 @@ Android 用アプリで Microsoft Graph を使用するには、以下のスク�
 
 <br/>
 
-**アプリを作成してみたくありませんか。**この記事の基になっている [Android 用接続サンプル](https://github.com/microsoftgraph/android-java-connect-sample)をダウンロードすれば、すぐに始めることができます。
+**アプリを作成してみたくありませんか。** この記事の基になっている [Android 用接続サンプル](https://github.com/microsoftgraph/android-java-connect-sample)をダウンロードすれば、すぐに始めることができます。
 
 
 ## <a name="prerequisites"></a>前提条件
