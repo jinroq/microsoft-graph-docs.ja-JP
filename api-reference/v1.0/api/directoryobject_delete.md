@@ -21,7 +21,7 @@ DELETE /directoryObjects/{id}
 ## <a name="request-headers"></a>要求ヘッダー
 | 名前       | 型 | 説明|
 |:---------------|:--------|:----------|
-| Authorization  | string  | ベアラー {トークン}。必須。 |
+| 承認  | 文字列  | ベアラー {トークン}。必須。 |
 
 ## <a name="request-body"></a>要求本文
 このメソッドには、要求本文を指定しません。
@@ -38,7 +38,7 @@ DELETE /directoryObjects/{id}
   "name": "delete_directoryobject"
 }-->
 ```http
-DELETE https://graph.microsoft.com/v1.0/directoryObject/{id}
+DELETE https://graph.microsoft.com/v1.0/directoryObjects/{id}
 ```
 ##### <a name="response"></a>応答
 

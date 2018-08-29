@@ -15,14 +15,14 @@
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/planner/plans
-GET /users/<id>/planner/plans
+GET /users/{id}/planner/plans
 GET /drive/root/createdByUser/planner/plans
 ```
 
 ## <a name="request-headers"></a>要求ヘッダー
 | 名前      |説明|
 |:----------|:----------|
-| Authorization  | ベアラー {トークン}。必須。 |
+| 承認  | ベアラー {トークン}。必須。 |
 
 ## <a name="request-body"></a>要求本文
 このメソッドには、要求本文を指定しません。

@@ -1,23 +1,19 @@
-# plannerAppliedCategories リソースの種類
-<a id="plannerappliedcategories-resource-type" class="xliff"></a>
+# <a name="plannerappliedcategories-resource-type"></a>plannerAppliedCategories リソースの種類
 
 
 **AppliedCategoriesCollection** リソースは、タスクに適用されているカテゴリ (またはラベル) のコレクションを表します。これは [plannerTask](plannertask.md) オブジェクトの一部です。最大 6 つのカテゴリをタスクに適用できます。カテゴリの説明 (`category1`、`category2` など) は、[計画の詳細](plannerplandetails.md)オブジェクトの一部です。これはオープン型です。
 
-## プロパティ
-<a id="properties" class="xliff"></a>
+## <a name="properties"></a>プロパティ
 クライアントは、オープン型のプロパティを定義できます。ただし、この場合クライアントは、対応するカテゴリがタスクに適用される際に、`category1`、`category2`、`category3`、`category4`、`category5` および/または `category6` を、`true` ブール値が設定されたプロパティとして指定する必要があります。以下に例を示します。これらが適用されなくなると、プロパティはその値が `false` ブール値に設定され、自動的に削除されます。 
 
-## JSON 表記
-<a id="json-representation" class="xliff"></a>
+## <a name="json-representation"></a>JSON 表記
 
 以下は、リソースの JSON 表記です
 
 <!-- {
   "blockType": "resource",
-  "optionalProperties": [
-
-  ],
+  "openType": true,
+  "optionalProperties": [ "String-value" ],
   "@odata.type": "microsoft.graph.plannerAppliedCategories"
 }-->
 

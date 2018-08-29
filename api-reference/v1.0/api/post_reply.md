@@ -21,7 +21,7 @@ POST /groups/{id}/conversations/{id}/threads/{id}/posts/{id}/reply
 ## <a name="request-headers"></a>要求ヘッダー
 | ヘッダー       | 値 |
 |:---------------|:--------|
-| Authorization  | ベアラー {トークン}。必須。  |
+| 承認  | ベアラー {トークン}。必須。  |
 
 ## <a name="request-body"></a>要求本文
 要求本文で、次のパラメーターを含む JSON オブジェクトを指定します。
@@ -100,7 +100,6 @@ Content-length: 1131
 }
 ```
 
-##### <a name="response"></a>応答
 ##### <a name="response"></a>応答
 以下は、応答の例です。
 <!-- {

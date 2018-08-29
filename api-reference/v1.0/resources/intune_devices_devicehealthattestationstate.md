@@ -1,10 +1,10 @@
 # <a name="devicehealthattestationstate-resource-type"></a>deviceHealthAttestationState リソース タイプ
 
-> **注:**Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
+> **注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
 
 まだ文書化されていません
 ## <a name="properties"></a>プロパティ
-|プロパティ|型|説明|
+|プロパティ|タイプ|説明|
 |:---|:---|:---|
 |lastUpdateDateTime|String|最終更新のタイムスタンプ。|
 |contentNamespaceUrl|String|DHA レポートのバージョン。 (名前空間のバージョン)|
@@ -43,12 +43,10 @@
 なし
 ## <a name="json-representation"></a>JSON 表記
 以下は、リソースの JSON 表記です。
-<!-- {
+<!--{
   "blockType": "resource",
-  "keyProperty": "id",
   "@odata.type": "microsoft.graph.deviceHealthAttestationState"
-}
--->
+}-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.deviceHealthAttestationState",

@@ -1,6 +1,6 @@
 # <a name="list-mdmwindowsinformationprotectionpolicies"></a>mdmWindowsInformationProtectionPolicies のリスト
 
-> **注:**Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
+> **注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
 
 [mdmWindowsInformationProtectionPolicy](../resources/intune_mam_mdmwindowsinformationprotectionpolicy.md) オブジェクトのプロパティとリレーションシップをリストします。
 ## <a name="prerequisites"></a>前提条件
@@ -24,8 +24,8 @@ GET /deviceAppManagement/mdmWindowsInformationProtectionPolicies
 ## <a name="request-headers"></a>要求ヘッダー
 |ヘッダー|値|
 |:---|:---|
-|Authorization|ベアラー &lt;トークン&gt; が必要です。|
-|Accept|application/json|
+|承認|ベアラー &lt;トークン&gt; が必須。|
+|承諾|application/json|
 
 ## <a name="request-body"></a>要求本文
 このメソッドには、要求本文を指定しません。
@@ -50,7 +50,7 @@ Content-Length: 4607
 {
   "value": [
     {
-      "@odata.type": "#microsoft.intune_mam_graph.mdmWindowsInformationProtectionPolicy",
+      "@odata.type": "#microsoft.graph.mdmWindowsInformationProtectionPolicy",
       "displayName": "Display Name value",
       "description": "Description value",
       "createdDateTime": "2017-01-01T00:02:43.5775965-08:00",
@@ -77,7 +77,7 @@ Content-Length: 4607
         "certificate": "Y2VydGlmaWNhdGU="
       },
       "revokeOnUnenrollDisabled": true,
-      "rightsManagementServicesTemplateId": "<Unknown Primitive Type Edm.Guid>",
+      "rightsManagementServicesTemplateId": "79199ed9-e50b-4257-8de4-70b9c8685061",
       "azureRightsManagementServicesAllowed": true,
       "iconsVisible": true,
       "protectedApps": [

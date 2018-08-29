@@ -1,6 +1,6 @@
 # <a name="deviceconfigurationdeviceactivity-function"></a>deviceConfigurationDeviceActivity 関数
 
-> **注:**Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
+> **注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
 
 デバイス構成のデバイス アクティビティ レポートのメタデータ
 ## <a name="prerequisites"></a>前提条件
@@ -24,7 +24,7 @@ GET /reports/deviceConfigurationDeviceActivity
 ## <a name="request-headers"></a>要求ヘッダー
 |ヘッダー|値|
 |:---|:---|
-|承認|ベアラー &lt;トークン&gt;が必須。|
+|承認|ベアラー &lt;トークン&gt; が必須。|
 |承諾|application/json|
 
 ## <a name="request-body"></a>要求本文
@@ -50,7 +50,7 @@ Content-Length: 123
 {
   "value": {
     "@odata.type": "microsoft.graph.report",
-    "content": "<Unknown Primitive Type Edm.Stream>"
+    "content": {"@odata.type": "Edm.Stream"}
   }
 }
 ```

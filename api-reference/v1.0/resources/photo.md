@@ -3,11 +3,12 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
 title: Photo
-ms.openlocfilehash: a4284caa7c20e266d87e22e9b3d729e17bc88abf
-ms.sourcegitcommit: 7aea7a97e36e6d146214de3a90fdbc71628aadba
+ms.openlocfilehash: 391eafd84ab1abd4670c953720ff7097e060bfd3
+ms.sourcegitcommit: abf4b739257e3ffd9d045f783ec595d846172590
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23267067"
 ---
 # <a name="photo-resource-type"></a>Photo リソース型
 
@@ -20,6 +21,7 @@ ms.lasthandoff: 09/28/2017
   "optionalProperties": [  ],
   "@odata.type": "microsoft.graph.photo"
 }-->
+
 ```json
 {
   "cameraMake": "string",
@@ -35,7 +37,7 @@ ms.lasthandoff: 09/28/2017
 
 ## <a name="properties"></a>プロパティ
 
-| プロパティ                | 型           | 説明
+| プロパティ                | タイプ           | 説明
 |:------------------------|:---------------|:----------------------------------
 | **takenDateTime**       | DateTimeOffset | 写真の撮影日時を表します。読み取り専用です。
 | **cameraMake**          | String         | カメラの製造元。読み取り専用です。
@@ -44,9 +46,10 @@ ms.lasthandoff: 09/28/2017
 | **exposureDenominator** | Double         | カメラの露出時間の分数の分母。読み取り専用です。
 | **exposureNumerator**   | Double         | カメラの露出時間の分数の分子。読み取り専用です。
 | **focalLength**         | Double         | カメラの焦点距離。読み取り専用です。
-| **iso**                 | Int64          | カメラの ISO 値。読み取り専用です。
+| **iso**                 | Int32          | カメラの ISO 値。読み取り専用です。
 
 ## <a name="remarks"></a>注釈
+
 OneDrive for Business と SharePoint は、**takenDateTime** プロパティのみを返します。
 
 DriveItem のファセットの詳細については、「[DriveItem](driveitem.md)」を参照してください。

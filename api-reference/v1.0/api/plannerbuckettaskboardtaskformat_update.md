@@ -13,18 +13,18 @@
 ## <a name="http-request"></a>HTTP 要求
 <!-- { "blockType": "ignored" } -->
 ```http
-PATCH /planner/tasks/<id>/bucketTaskBoardFormat
+PATCH /planner/tasks/{id}/bucketTaskBoardFormat
 ```
 ## <a name="optional-request-headers"></a>オプションの要求ヘッダー
 | 名前       | 説明|
 |:-----------|:-----------|
-| Authorization  | ベアラー {トークン}。必須。 |
+| 承認  | ベアラー {トークン}。必須。 |
 | If-Match  | 更新する **plannerBucketTaskBoardTaskFormat** の最後の既知の ETag 値。必須。|
 
 ## <a name="request-body"></a>要求本文
 要求本文で、更新する関連フィールドの値を指定します。要求本文に含まれない既存のプロパティは、以前の値のままになるか、他のプロパティ値の変化に基づいて再計算されます。最適なパフォーマンスを得るためには、変更されていない既存の値を含めないでください。
 
-| プロパティ     | 型   |説明|
+| プロパティ     | タイプ   |説明|
 |:---------------|:--------|:----------|
 |orderHint|String|タスク ボードのバケット ビューでタスクの順序付けに使用するヒント。形式は[ここ](../resources/planner_order_hint_format.md)の説明に従って定義されます。|
 
@@ -42,7 +42,7 @@ PATCH /planner/tasks/<id>/bucketTaskBoardFormat
   "name": "update_plannerbuckettaskboardtaskformat"
 }-->
 ```http
-PATCH https://graph.microsoft.com/v1.0/planner/tasks/hsOf2dhOJkqyYYZEtdzDe2QAIUCR/bucketTaskBoardFormat
+PATCH https://graph.microsoft.com/v1.0/planner/tasks/{task-id}/bucketTaskBoardFormat
 Content-type: application/json
 Content-length: 34
 If-Match: W/"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc="

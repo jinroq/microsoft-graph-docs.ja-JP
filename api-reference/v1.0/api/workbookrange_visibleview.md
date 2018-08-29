@@ -18,7 +18,7 @@ GET /me/drive/root/workbook/worksheets/{id}/range(address={address})/visibleView
 ## <a name="request-headers"></a>要求ヘッダー
 | 名前       | 説明|
 |:---------------|:----------|
-| Authorization  | ベアラー {トークン}。必須。 |
+| 承認  | ベアラー {トークン}。必須。 |
 | Workbook-Session-Id  | 変更を保持するかどうかを決定するブック セッション ID。省略可能。|
 
 ## <a name="request-body"></a>要求本文
@@ -35,7 +35,7 @@ GET /me/drive/root/workbook/worksheets/{id}/range(address={address})/visibleView
   "name": "workbookrange_visibleview"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/drive/root/workbook/worksheets/{id}/range(addres='A1:Z10')/visibleView
+GET https://graph.microsoft.com/v1.0/me/drive/root/workbook/worksheets/{id}/range(address='A1:Z10')/visibleView
 ```
 
 ##### <a name="response"></a>応答

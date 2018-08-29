@@ -26,7 +26,7 @@ GET /reports/getOffice365ActivationsUserCounts
 
 | 名前          | 説明                              |
 | :------------ | :--------------------------------------- |
-| Authorization | ベアラー {トークン}。必須。                |
+| 承認 | ベアラー {トークン}。必須。                |
 | If-None-Match | この要求ヘッダーが含まれている場合、指定された eTag がファイルの現在のタグに一致すると、`304 Not Modified` 応答コードが返されます。 省略可能。 |
 
 ## <a name="response"></a>応答
@@ -48,8 +48,9 @@ GET /reports/getOffice365ActivationsUserCounts
 
 要求の例を次に示します。
 
-<!-- {
+<!--{
   "blockType": "request",
+  "isComposable": true,
   "name": "reportroot_getoffice365activationsusercounts"
 }-->
 
@@ -61,7 +62,11 @@ GET https://graph.microsoft.com/v1.0/reports/getOffice365ActivationsUserCounts
 
 応答の例を次に示します。
 
-<!-- { "blockType": "ignored" } --> 
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.report"
+} -->
 
 ```http
 HTTP/1.1 302 Found
@@ -71,11 +76,7 @@ Location: https://reports.office.com/data/download/JDFKdf2_eJXKS034dbc7e0t__XDe
 
 302 リダイレクトに従うと、ダウンロードされる CSV ファイルは次のスキーマを持つことになります。
 
-<!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "stream"
-} -->
+<!-- { "blockType": "ignored" } --> 
 
 ```http
 HTTP/1.1 200 OK

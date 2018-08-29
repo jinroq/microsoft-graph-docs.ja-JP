@@ -24,8 +24,8 @@ GET /deviceManagement/auditEvents
 ## <a name="request-headers"></a>要求ヘッダー
 |ヘッダー|値|
 |:---|:---|
-|Authorization|ベアラー &lt;トークン&gt; が必要です。|
-|Accept|application/json|
+|承認|ベアラー &lt;トークン&gt; が必須。|
+|承諾|application/json|
 
 ## <a name="request-body"></a>要求本文
 このメソッドには、要求本文を指定しません。
@@ -72,7 +72,7 @@ Content-Length: 1629
       "activityType": "Activity Type value",
       "activityOperationType": "Activity Operation Type value",
       "activityResult": "Activity Result value",
-      "correlationId": "<Unknown Primitive Type Edm.Guid>",
+      "correlationId": "79199ed9-e50b-4257-8de4-70b9c8685061",
       "resources": [
         {
           "@odata.type": "microsoft.graph.auditResource",

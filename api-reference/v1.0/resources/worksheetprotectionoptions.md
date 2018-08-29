@@ -3,7 +3,7 @@
 シート保護のオプションを表します。
 
 ## <a name="properties"></a>プロパティ
-| プロパティ     | 型   |説明|
+| プロパティ     | タイプ   |説明|
 |:---------------|:--------|:----------|
 |allowAutoFilter|boolean|自動フィルター機能の使用を可能にするワークシート保護オプションを表します。|
 |allowDeleteColumns|boolean|列の削除を可能にするワークシート保護オプションを表します。|
@@ -26,7 +26,7 @@
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.worksheetProtectionOptions"
+  "@odata.type": "microsoft.graph.workbookWorksheetProtectionOptions"
 }-->
 
 ```json

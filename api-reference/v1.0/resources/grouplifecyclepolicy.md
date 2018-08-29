@@ -15,7 +15,7 @@ Office 365 グループのライフサイクル ポリシーを表します。 �
 
 ## <a name="properties"></a>プロパティ
 
-| プロパティ | 型 | 説明 |
+| プロパティ | タイプ | 説明 |
 |:---------------|:--------|:----------|
 |alternateNotificationEmails|String| 所有者のいないグループに対して通知を送信する電子メール アドレスのリスト 電子メール アドレスをセミコロンで区切って、複数の電子メール アドレスを定義することができます。 |
 |groupLifetimeInDays|Int32| グループの有効期限が切れ、更新が必要になるまでの日数。 更新されると、グループの有効期限は定義された日数、延長されます。 |
@@ -30,11 +30,11 @@ Office 365 グループのライフサイクル ポリシーを表します。 �
 
 以下は、リソースの JSON 表記です。
 
-<!-- {
+<!--{
   "blockType": "resource",
-  "optionalProperties": [
-
-  ],
+  "optionalProperties": [],
+  "keyProperty": "id",
+  "baseType": "microsoft.graph.entity",
   "@odata.type": "microsoft.graph.groupLifecyclePolicy"
 }-->
 

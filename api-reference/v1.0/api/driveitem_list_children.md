@@ -2,12 +2,13 @@
 author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
-title: "フォルダーの内容を一覧表示する"
-ms.openlocfilehash: e4c8f7b66333d739aeeaff9a8b92c0088d2fde0b
-ms.sourcegitcommit: 7aea7a97e36e6d146214de3a90fdbc71628aadba
+title: フォルダーの内容を一覧表示する
+ms.openlocfilehash: 31e20780379055b9ec8217bb90b4da26414a64e5
+ms.sourcegitcommit: abf4b739257e3ffd9d045f783ec595d846172590
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23265219"
 ---
 # <a name="list-children-of-a-driveitem"></a>driveItem の子を一覧表示する
 
@@ -44,7 +45,7 @@ GET /users/{user-id}/drive/items/{item-id}/children
 
 ### <a name="optional-request-headers"></a>オプションの要求ヘッダー
 
-| ヘッダー名     | 値 | 説明                                                                                                                                              |
+| 名前     | 値 | 説明                                                                                                                                              |
 |:----------------|:------|:---------------------------------------------------------------------------------------------------------------------------------------------------------|
 | _if-none-match_ | etag  | この要求ヘッダーが含まれている場合、指定された eTag (または cTag) がファイルの現在のタグに一致すると、`HTTP 304 Not Modified` 応答が返されます。 |
 
@@ -52,9 +53,9 @@ GET /users/{user-id}/drive/items/{item-id}/children
 
 ### <a name="list-children-in-the-root-of-the-current-users-drive"></a>現在のユーザーのドライブのルートの子を一覧表示する
 
-ドライブのルートのファイルを取得するには、ドライブ上の `root` リレーションシップを使用して、子のリレーションシップにアクセスします。
+ドライブのルートのファイルを取得するには、ドライブ上の `root` リレーションシップを使用し、子のリレーションシップにアクセスします。
 
-<!-- { "blockType": "request", "name": "list-children-root", "scopes": "files.read" } -->
+<!-- { "blockType": "request", "name": "list-children-root", "scopes": "files.read", "tags": "service.graph" } -->
 
 ```http
 GET /me/drive/root/children
@@ -63,7 +64,7 @@ GET /me/drive/root/children
 
 ### <a name="list-children-of-a-driveitem-with-a-known-id"></a>既知の ID を持つ DriveItem の子を一覧表示する
 
-ドライブのルートのファイルを取得するには、ドライブ上の `root` リレーションシップを使用して、子のリレーションシップにアクセスします。
+ドライブのルートのファイルを取得するには、ドライブ上の `root` リレーションシップを使用し、子のリレーションシップにアクセスします。
 
 <!-- { "blockType": "request", "name": "list-children", "scopes": "files.read" } -->
 
@@ -82,7 +83,7 @@ GET /drives/{drive-id}/root:/{path-relative-to-root}:/children
 ## <a name="response"></a>応答
 
 成功すると、このメソッドはターゲット アイテムの子コレクション内にあるアイテムの一覧を返します。
-子コレクションは、[driveItem][item-resource] リソースで構成されます。
+子のコレクションは、[driveItem][item-resource] リソースで構成されます。
 
 <!-- { "blockType": "response", 
        "@odata.type": "Collection(microsoft.graph.driveItem)", 
@@ -104,7 +105,7 @@ Content-type: application/json
 }
 ```
 
-**注:**コレクションが既定のページ サイズ (200 アイテム) を超えた場合は、応答で **@odata.nextLink** プロパティが返され、より多くのアイテムが使用できることが示されます。また、アイテムの次のページの要求 URL も提供されます。
+**注:** コレクションが既定のページ サイズ (200 アイテム) を超えた場合は、応答で **@odata.nextLink** プロパティが返され、より多くのアイテムが使用できることが示されます。また、アイテムの次のページの要求 URL も提供されます。
 
 ページ サイズは[オプションのクエリ文字列パラメーター](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters)で制御できます。
 

@@ -4,7 +4,7 @@
 
 
 ## <a name="properties"></a>プロパティ
-| プロパティ     | 型   |説明|
+| プロパティ     | タイプ   |説明|
 |:---------------|:--------|:----------|
 |capabilityStatus|String|「有効」など。|
 |provisioningStatus|String|「成功」など。|
@@ -19,7 +19,7 @@
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.provisionedplan"
+  "@odata.type": "microsoft.graph.provisionedPlan"
 }-->
 
 ```json

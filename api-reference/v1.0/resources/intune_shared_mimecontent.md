@@ -4,7 +4,7 @@
 
 汎用 MIME コンテンツのプロパティが含まれています。
 ## <a name="properties"></a>プロパティ
-|プロパティ|型|説明|
+|プロパティ|タイプ|説明|
 |:---|:---|:---|
 |type|String|コンテンツ MIME の種類を示します。|
 |value|バイナリ型 (Binary)|実際のコンテンツを含むバイト配列です。|
@@ -15,7 +15,6 @@
 以下は、リソースの JSON 表記です。
 <!-- {
   "blockType": "resource",
-  "keyProperty": "id",
   "@odata.type": "microsoft.graph.mimeContent"
 }
 -->

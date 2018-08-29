@@ -21,7 +21,7 @@ POST /sites/{id}/onenote/sectionGroups/{id}/sectionGroups
 ## <a name="request-headers"></a>要求ヘッダー
 | 名前       | 型 | 説明|
 |:---------------|:--------|:----------|
-| Authorization  | string  | ベアラー {トークン}。必須。 |
+| 承認  | 文字列  | ベアラー {トークン}。必須。 |
 | Content-Type | string | `application/json` |
 
 ## <a name="request-body"></a>要求本文
@@ -54,7 +54,7 @@ Content-length: 30
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.sectiongroup"
+  "@odata.type": "microsoft.graph.sectionGroup"
 } -->
 ```http
 HTTP/1.1 200 OK

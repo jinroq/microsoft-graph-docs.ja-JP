@@ -15,19 +15,19 @@
 ## <a name="http-request"></a>HTTP 要求
 <!-- { "blockType": "ignored" } -->
 ```http
-PATCH /me/mailFolders/inbox/messagerules/{id}
-PATCH /users/{id | userPrincipalName}/mailFolders/inbox/messagerules/{id}
+PATCH /me/mailFolders/inbox/messageRules/{id}
+PATCH /users/{id | userPrincipalName}/mailFolders/inbox/messageRules/{id}
 ```
 ## <a name="optional-request-headers"></a>オプションの要求ヘッダー
 | 名前       | 説明|
 |:-----------|:-----------|
-| Authorization  | ベアラー {トークン}。必須。 |
+| 承認  | ベアラー {トークン}。必須。 |
 
 
 ## <a name="request-body"></a>要求本文
 要求本文で、更新する関連フィールドの値を指定します。要求本文に含まれない既存のプロパティは、以前の値のままになるか、他のプロパティ値の変化に基づいて再計算されます。最適なパフォーマンスを得るためには、変更されていない既存の値を含めないでください。
 
-| プロパティ     | 型   |説明|
+| プロパティ     | タイプ   |説明|
 |:---------------|:--------|:----------|
 | actions | [messageRuleActions](../resources/messageruleactions.md) | 該当する条件が満たされた場合にメッセージに対して実行されるアクション。 |
 | conditions | [messageRulePredicates](../resources/messagerulepredicates.md) | 該当するルール アクションをトリガーするために満たす必要のある条件。 |
@@ -45,11 +45,11 @@ PATCH /users/{id | userPrincipalName}/mailFolders/inbox/messagerules/{id}
 次の例では、ルールの名前、「[ルールを取得する](messagerule_get.md)」の[例](messagerule_get.md#example)のルールに対して実行するアクションを転送元からアドレスを変更し、その重要度を高くマークします。 
 <!-- {
   "blockType": "request",
+  "sampleKeys": ["inbox", "AQAAAJ5dZqA="],
   "name": "update_messagerule"
 }-->
 ```http
-PATCH https://graph.microsoft.com/v1.0/me/mailfolders/inbox/messagerules('AQAAAJ5dZqA=')
-
+PATCH https://graph.microsoft.com/v1.0/me/mailFolders/inbox/messageRules/AQAAAJ5dZqA=
 Content-type: application/json
 
 {

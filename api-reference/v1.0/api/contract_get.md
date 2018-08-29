@@ -27,7 +27,7 @@ GET /contracts/{id}
 
 | 名前      |説明|
 |:----------|:----------|
-| Authorization  | ベアラー {トークン}。必須。 |
+| 承認  | ベアラー {トークン}。必須。 |
 
 ## <a name="request-body"></a>要求本文
 
@@ -53,7 +53,7 @@ GET https://graph.microsoft.com/v1.0/contracts/{id}
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.Contract"
+  "@odata.type": "microsoft.graph.contract"
 } -->
 ```http
 HTTP/1.1 200 OK

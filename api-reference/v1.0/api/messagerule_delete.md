@@ -15,13 +15,13 @@
 ## <a name="http-request"></a>HTTP 要求
 <!-- { "blockType": "ignored" } -->
 ```http
-DELETE /me/mailFolders/inbox/messagerules/{id}
-DELETE /users/{id | userPrincipalName}/mailFolders/inbox/messagerules/{id}
+DELETE /me/mailFolders/inbox/messageRules/{id}
+DELETE /users/{id | userPrincipalName}/mailFolders/inbox/messageRules/{id}
 ```
 ## <a name="request-headers"></a>要求ヘッダー
 | 名前       | 説明|
 |:---------------|:----------|
-| Authorization  | ベアラー {トークン}。必須。 |
+| 承認  | ベアラー {トークン}。必須。 |
 
 
 ## <a name="request-body"></a>要求本文
@@ -36,10 +36,11 @@ DELETE /users/{id | userPrincipalName}/mailFolders/inbox/messagerules/{id}
 以下は、要求の例です。
 <!-- {
   "blockType": "request",
+  "sampleKeys": ["inbox", "AQAAAJ5dZp8="],
   "name": "delete_messagerule"
 }-->
 ```http
-DELETE https://graph.microsoft.com/v1.0/me/mailfolders/inbox/messagerules('AQAAAJ5dZp8=')
+DELETE https://graph.microsoft.com/v1.0/me/mailFolders/inbox/messageRules/AQAAAJ5dZp8=
 
 ```
 ##### <a name="response"></a>応答

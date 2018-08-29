@@ -18,7 +18,7 @@
 |[招待状の作成](../api/invitation_post.md) | invitation | 招待状オブジェクトのプロパティと関係を書き込みます。|
 
 ## <a name="properties"></a>プロパティ
-| プロパティ     | 型   |説明|
+| プロパティ     | タイプ   |説明|
 |:---------------|:--------|:----------|
 |invitedUserDisplayName|String|招待されるユーザーの表示名。|
 |invitedUserEmailAddress|String|招待されるユーザーのメール アドレス。必須。|
@@ -37,7 +37,7 @@
 ## <a name="json-representation"></a>JSON 表記
 以下は、リソースの JSON 表記です
 
-<!-- { "blockType": "resource", "@odata.type": "microsoft.graph.invitations" } -->
+<!-- { "blockType": "resource", "baseType": "microsoft.graph.entity", "@odata.type": "microsoft.graph.invitation" } -->
 ```json
 {
   "invitedUserDisplayName": "string",
@@ -47,8 +47,8 @@
   "inviteRedirectUrl": "string",
   "inviteRedeemUrl": "string",
   "status": "string",
-
-  "invitedUser": [{"@odata.type": "microsoft.graph.user"}]
+  "invitedUser": {"@odata.type": "microsoft.graph.user"},
+  "invitedUserType": "string"
 }
 ```
 

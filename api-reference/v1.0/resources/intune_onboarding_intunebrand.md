@@ -4,7 +4,7 @@
 
 intuneBrand には、会社のポータル アプリケーションとエンド ユーザーの Web ポータルの外観のカスタマイズに使用するデータが含まれています。
 ## <a name="properties"></a>プロパティ
-|プロパティ|型|説明|
+|プロパティ|タイプ|説明|
 |:---|:---|:---|
 |displayName|String|エンド ユーザーに表示される会社名または組織名。|
 |contactITName|String|IT サポートを担当する個人名または組織名。|
@@ -27,7 +27,6 @@ intuneBrand には、会社のポータル アプリケーションとエンド 
 以下は、リソースの JSON 表記です。
 <!-- {
   "blockType": "resource",
-  "keyProperty": "id",
   "@odata.type": "microsoft.graph.intuneBrand"
 }
 -->

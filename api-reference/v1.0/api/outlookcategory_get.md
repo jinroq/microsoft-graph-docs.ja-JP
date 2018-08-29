@@ -24,7 +24,7 @@ GET /users/{id|userPrincipalName}/outlook/masterCategories/{id}
 ## <a name="request-headers"></a>要求ヘッダー
 | 名前      |説明|
 |:----------|:----------|
-| Authorization  | ベアラー {トークン}。必須。 |
+| 承認  | ベアラー {トークン}。必須。 |
 
 ## <a name="request-body"></a>要求本文
 このメソッドには、要求本文を指定しません。
@@ -37,10 +37,11 @@ GET /users/{id|userPrincipalName}/outlook/masterCategories/{id}
 以下は、要求の例です。
 <!-- {
   "blockType": "request",
+  "sampleKeys": ["de912e4d-c790-4da9-949c-ccd933aaa0f7"],
   "name": "get_outlookcategory"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/me/outlook/masterCategories('de912e4d-c790-4da9-949c-ccd933aaa0f7')
+GET https://graph.microsoft.com/v1.0/me/outlook/masterCategories/de912e4d-c790-4da9-949c-ccd933aaa0f7
 ```
 ##### <a name="response"></a>応答
 以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。

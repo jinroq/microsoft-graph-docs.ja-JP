@@ -14,13 +14,14 @@ AcceptedSenders リストからユーザーまたはグループを削除しま�
 
 <!-- { "blockType": "ignored" } -->
 ```http
-DELETE /groups/{id}/acceptedSenders/$ref?$id=<id>
+DELETE /groups/{id}/acceptedSenders/$ref?$id=https://graph.microsoft.com/v1.0/users/{user-id}
+DELETE /groups/{id}/acceptedSenders/$ref?$id=https://graph.microsoft.com/v1.0/groups/{other-group-id}
 ```
 
 ## <a name="request-headers"></a>要求ヘッダー
 | ヘッダー         | 値                      |
 |:---------------|:---------------------------|
-| Authorization  | ベアラー {トークン}。必須。  
+| 承認  | ベアラー {トークン}。必須。  
 
 ## <a name="request-body"></a>要求本文
 このメソッドには、要求本文を指定しません。
@@ -30,16 +31,14 @@ DELETE /groups/{id}/acceptedSenders/$ref?$id=<id>
 
 ## <a name="example"></a>例
 #### <a name="request"></a>要求
-要求のいくつかの例を次に示します。
+要求の例を次に示します。
 
 <!-- {
   "blockType": "request",
   "name": "create_directoryobject_from_group"
 }-->
 ```http
-DELETE https://graph.microsoft.com/v1.0/groups/{id}/acceptedSenders/$ref?$id=https://graph.microsoft.com/v1.0/users/{id}
-
-DELETE https://graph.microsoft.com/v1.0/groups/{id}/acceptedSenders/$ref?$id=https://graph.microsoft.com/v1.0/groups/{id}
+DELETE https://graph.microsoft.com/v1.0/groups/{id}/acceptedSenders/$ref?$id=https://graph.microsoft.com/v1.0/users/{user-id}
 ```
 
 #### <a name="response"></a>応答

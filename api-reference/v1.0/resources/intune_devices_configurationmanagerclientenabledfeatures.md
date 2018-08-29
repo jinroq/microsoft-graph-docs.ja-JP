@@ -1,10 +1,10 @@
 # <a name="configurationmanagerclientenabledfeatures-resource-type"></a>configurationManagerClientEnabledFeatures リソースの種類
 
-> **注:**Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
+> **注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
 
 構成マネージャーのクライアントに対応した機能
 ## <a name="properties"></a>プロパティ
-|プロパティ|型|説明|
+|プロパティ|タイプ|説明|
 |:---|:---|:---|
 |inventory|Boolean|在庫が Intune によって管理されているかどうか|
 |modernApps|Boolean|モダン アプリケーションが Intune によって管理されているかどうか|
@@ -17,12 +17,10 @@
 なし
 ## <a name="json-representation"></a>JSON 表記
 以下は、リソースの JSON 表記です。
-<!-- {
+<!--{
   "blockType": "resource",
-  "keyProperty": "id",
   "@odata.type": "microsoft.graph.configurationManagerClientEnabledFeatures"
-}
--->
+}-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.configurationManagerClientEnabledFeatures",

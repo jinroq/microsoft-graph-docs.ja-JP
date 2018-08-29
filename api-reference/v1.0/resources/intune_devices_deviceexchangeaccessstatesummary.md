@@ -1,10 +1,10 @@
 # <a name="deviceexchangeaccessstatesummary-resource-type"></a>deviceExchangeAccessStateSummary リソースの種類
 
-> **注:**Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
+> **注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
 
 デバイスの Exchange アクセス状態の要約
 ## <a name="properties"></a>プロパティ
-|プロパティ|型|説明|
+|プロパティ|タイプ|説明|
 |:---|:---|:---|
 |allowedDeviceCount|Int32|Exchange アクセス状態が Allowed のデバイスの総数です。|
 |blockedDeviceCount|Int32|Exchange アクセス状態が Blocked のデバイスの総数です。|
@@ -16,12 +16,10 @@
 なし
 ## <a name="json-representation"></a>JSON 表記
 以下は、リソースの JSON 表記です。
-<!-- {
+<!--{
   "blockType": "resource",
-  "keyProperty": "id",
   "@odata.type": "microsoft.graph.deviceExchangeAccessStateSummary"
-}
--->
+}-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.deviceExchangeAccessStateSummary",

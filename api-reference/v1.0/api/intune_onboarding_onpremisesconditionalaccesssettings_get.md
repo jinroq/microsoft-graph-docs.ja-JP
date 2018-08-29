@@ -1,6 +1,6 @@
 # <a name="get-onpremisesconditionalaccesssettings"></a>onPremisesConditionalAccessSettings の取得
 
-> **注:**Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
+> **注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
 
 [onPremisesConditionalAccessSettings](../resources/intune_onboarding_onpremisesconditionalaccesssettings.md) オブジェクトのプロパティとリレーションシップを読み取ります。
 ## <a name="prerequisites"></a>前提条件
@@ -22,12 +22,12 @@ GET /deviceManagement/conditionalAccessSettings
 ```
 
 ## <a name="optional-query-parameters"></a>オプションのクエリ パラメーター
-このメソッドは、応答をカスタマイズするための [OData クエリ パラメーター](https://developer.microsoft.com/ja-JP/graph/docs/overview/query_parameters)をサポートします。
+このメソッドは、応答をカスタマイズするための [OData クエリ パラメーター](https://developer.microsoft.com/en-us/graph/docs/overview/query_parameters)をサポートします。
 ## <a name="request-headers"></a>要求ヘッダー
 |ヘッダー|値|
 |:---|:---|
-|Authorization|ベアラー &lt;トークン&gt; が必要です。|
-|Accept|application/json|
+|承認|ベアラー &lt;トークン&gt; が必須。|
+|承諾|application/json|
 
 ## <a name="request-body"></a>要求本文
 このメソッドには、要求本文を指定しません。
@@ -55,10 +55,10 @@ Content-Length: 357
     "id": "a0efde21-de21-a0ef-21de-efa021deefa0",
     "enabled": true,
     "includedGroups": [
-      "<Unknown Primitive Type Edm.Guid>"
+      "79199ed9-e50b-4257-8de4-70b9c8685061"
     ],
     "excludedGroups": [
-      "<Unknown Primitive Type Edm.Guid>"
+      "79199ed9-e50b-4257-8de4-70b9c8685061"
     ],
     "overrideDefaultRule": true
   }

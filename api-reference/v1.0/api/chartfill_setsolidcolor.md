@@ -13,23 +13,23 @@
 ## <a name="http-request"></a>HTTP 要求
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/worksheets/{id|name}/charts(<name>)/format/fill/setSolidColor
-POST /workbook/worksheets/{id|name}/charts(<name>)/title/format/fill/setSolidColor
-POST /workbook/worksheets/{id|name}/charts(<name>)/legend/format/fill/setSolidColor
+POST /workbook/worksheets/{id|name}/charts/{name}/format/fill/setSolidColor
+POST /workbook/worksheets/{id|name}/charts/{name}/title/format/fill/setSolidColor
+POST /workbook/worksheets/{id|name}/charts/{name}/legend/format/fill/setSolidColor
 
 ```
 ## <a name="request-headers"></a>要求ヘッダー
 | 名前       | 説明|
 |:---------------|:----------|
-| Authorization  | ベアラー {トークン}。必須。 |
+| 承認  | ベアラー {トークン}。必須。 |
 | Workbook-Session-Id  | 変更を保持するかどうかを決定するブック セッション ID。省略可能。|
 
 ## <a name="request-body"></a>要求本文
 要求本文で、次のパラメーターを含む JSON オブジェクトを指定します。
 
-| パラメーター    | Type   |説明|
+| パラメーター    | 型   |説明|
 |:---------------|:--------|:----------|
-|color|string|枠線の色を表す HTML カラー コード。形式は #RRGGBB (例: "FFA500")、または名前付きの HTML 色 (例: "オレンジ") です。|
+|color|文字列|枠線の色を表す HTML カラー コード。形式は #RRGGBB (例: "FFA500")、または名前付きの HTML 色 (例: "オレンジ") です。|
 
 ## <a name="response"></a>応答
 
@@ -44,7 +44,7 @@ POST /workbook/worksheets/{id|name}/charts(<name>)/legend/format/fill/setSolidCo
   "name": "chartfill_setsolidcolor"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/{id|name}/charts(<name>)/format/fill/setSolidColor
+POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/{id|name}/charts/{name}/format/fill/setSolidColor
 Content-type: application/json
 Content-length: 28
 
@@ -57,8 +57,7 @@ Content-length: 28
 以下は、応答の例です。 
 <!-- {
   "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.none"
+  "truncated": true
 } -->
 ```http
 HTTP/1.1 200 OK

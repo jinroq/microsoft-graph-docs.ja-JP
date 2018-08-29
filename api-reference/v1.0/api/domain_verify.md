@@ -2,7 +2,7 @@
 
 ドメインの所有権を検証します。
 
-> **重要:**未検証のドメインにのみ適用されます。未検証のドメインでは、[domain](../resources/domain.md) の isVerified プロパティは false です。
+> **重要:** 未検証のドメインにのみ適用されます。未検証のドメインでは、[domain](../resources/domain.md) の isVerified プロパティは false です。
 
 ## <a name="permissions"></a>アクセス許可
 
@@ -28,8 +28,8 @@ POST /domains/{id}/verify
 
 | 名前       | 説明|
 |:---------------|:----------|
-| Authorization  | ベアラー {トークン}。必須。|
-| Content-Type  | application/json |
+| 承認  | ベアラー {トークン}。必須。|
+| Content-Type  | アプリケーション /json |
 
 ## <a name="request-body"></a>要求本文
 
@@ -44,7 +44,7 @@ POST /domains/{id}/verify
   "name": "domain_verify"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/domains/contoso.com/verify
+POST https://graph.microsoft.com/v1.0/domains/{domain-name}/verify
 ```
 
 ##### <a name="response"></a>応答
@@ -66,7 +66,7 @@ Content-length: 192
   "isDefault": true,
   "isInitial": true,
   "isRoot": true,
-  "name": "contoso.com"
+  "id": "contoso.com"
 }
 ```
 

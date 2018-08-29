@@ -18,13 +18,13 @@ Outlook では、ユーザーの受信トレイで受信したメッセージが
 ## <a name="http-request"></a>HTTP 要求
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /me/mailFolders/inbox/messagerules
-POST /users/{id | userPrincipalName}/mailFolders/inbox/messagerules
+POST /me/mailFolders/inbox/messageRules
+POST /users/{id | userPrincipalName}/mailFolders/inbox/messageRules
 ```
 ## <a name="request-headers"></a>要求ヘッダー
 | 名前       | 説明|
 |:---------------|:----------|
-| Authorization  | ベアラー {トークン}。必須。 |
+| 承認  | ベアラー {トークン}。必須。 |
 
 
 ## <a name="request-body"></a>要求本文
@@ -35,7 +35,7 @@ POST /users/{id | userPrincipalName}/mailFolders/inbox/messagerules
 |:--------|:-------|:----------|
 |actions|[messageRuleActions](../resources/messageruleactions.md)|該当する条件があり、それが満たされる場合にメッセージに対して実行されるアクションです。必須。|
 |conditions|[messageRulePredicates](../resources/messagerulepredicates.md)|満たされた場合に、そのルールに該当するアクションをトリガーする条件です。省略可能。|
-|displayName| String  | ルールの表示名。必須。|
+|displayName| 文字列  | ルールの表示名。必須。|
 |exceptions| [messageRulePredicates](../resources/messagerulepredicates.md)| ルールの例外条件を表します。省略可能。 |
 |isEnabled | Boolean | メッセージに対するルールの適用が有効になっているかどうかを示します。省略可能。 |
 |sequence| Int32 | 他のルールもある中で、そのルールが実行される順序を示します。必須。|
@@ -48,10 +48,11 @@ POST /users/{id | userPrincipalName}/mailFolders/inbox/messagerules
 以下は、要求の例です。
 <!-- {
   "blockType": "request",
+  "sampleKeys": ["inbox"],
   "name": "create_messagerule_from_mailfolder"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/me/mailFolders/inbox/messagerules
+POST https://graph.microsoft.com/v1.0/me/mailFolders/inbox/messageRules
 Content-type: application/json
 
 {      

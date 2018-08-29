@@ -13,14 +13,14 @@
 ## <a name="http-request"></a>HTTP 要求
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/tables/{id|name}/rows(<index>)/delete
-POST /workbook/worksheets/{id|name}/tables/{id|name}/rows(<index>)/delete
+POST /workbook/tables/{id|name}/rows/{index}/delete
+POST /workbook/worksheets/{id|name}/tables/{id|name}/rows/{index}/delete
 
 ```
 ## <a name="request-headers"></a>要求ヘッダー
 | 名前       | 説明|
 |:---------------|:----------|
-| Authorization  | ベアラー {トークン}。必須。 |
+| 承認  | ベアラー {トークン}。必須。 |
 | Workbook-Session-Id  | 変更を保持するかどうかを決定するブック セッション ID。省略可能。|
 
 ## <a name="request-body"></a>要求本文
@@ -38,15 +38,14 @@ POST /workbook/worksheets/{id|name}/tables/{id|name}/rows(<index>)/delete
   "name": "tablerow_delete"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/tables/{id|name}/rows(<index>)/delete
+POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/tables/{id|name}/rows/{index}/delete
 ```
 
 ##### <a name="response"></a>応答
 以下は、応答の例です。 
 <!-- {
   "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.none"
+  "truncated": true
 } -->
 ```http
 HTTP/1.1 200 OK

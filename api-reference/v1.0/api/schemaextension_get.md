@@ -22,8 +22,8 @@ GET /schemaExtensions/{id}
 ## <a name="request-headers"></a>要求ヘッダー
 | 名前      |説明|
 |:----------|:----------|
-| Authorization  | ベアラー {トークン}。必須。 |
-| Content-Type   | application/json |
+| 承認  | ベアラー {トークン}。必須。 |
+| Content-Type   | アプリケーション /json |
 
 ## <a name="request-body"></a>要求本文
 このメソッドには、要求本文を指定しません。
@@ -35,7 +35,7 @@ GET /schemaExtensions/{id}
 ##### <a name="request"></a>要求
 以下は、要求の例です。
 <!-- {
-  "blockType": "request",
+  "blockType": "ignored",
   "name": "get_schemaextension"
 }-->
 ```http
@@ -44,7 +44,7 @@ GET https://graph.microsoft.com/v1.0/schemaExtensions/graphlearn_test
 ##### <a name="response"></a>応答
 以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。
 <!-- {
-  "blockType": "response",
+  "blockType": "ignored",
   "truncated": true,
   "@odata.type": "microsoft.graph.schemaExtension"
 } -->
@@ -72,7 +72,7 @@ Content-length: 201
 
 ## <a name="see-also"></a>関連項目
 
-- [拡張機能を使用したリソースへのカスタム データの追加](../../../concepts/extensibility_overview.md)
+- [拡張機能を使用してカスタム データをリソースに追加する](../../../concepts/extensibility_overview.md)
 - [スキーマ拡張機能を使用したグループへのカスタム データの追加](../../../concepts/extensibility_schema_groups.md)
 
 

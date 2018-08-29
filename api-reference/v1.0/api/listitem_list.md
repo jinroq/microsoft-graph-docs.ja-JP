@@ -2,18 +2,19 @@
 author: rgregg
 ms.author: rgregg
 ms.date: 09/11/2017
-title: "SharePoint リストからアイテムを取得する"
-ms.openlocfilehash: ff414159015b4731b76626e309418c32cb6640d4
-ms.sourcegitcommit: 339070a20730bc4d363da7eb346d5f3c1e1d6c3e
+title: SharePoint リストからアイテムを取得する
+ms.openlocfilehash: e037114bac4f83eb2477f163c233cd7c3a0ac620
+ms.sourcegitcommit: abf4b739257e3ffd9d045f783ec595d846172590
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/18/2017
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23269153"
 ---
 # <a name="enumerate-items-in-a-list"></a>リスト内のアイテムを列挙する
 
 [リスト][]内の[アイテム][item]のコレクションを取得します。
 
-[list]: ../resources/list.md
+[リスト]: ../resources/list.md
 [item]: ../resources/listItem.md
 
 ## <a name="permissions"></a>アクセス許可
@@ -38,7 +39,7 @@ GET https://graph.microsoft.com/v1.0/sites/{site-id}/lists/{list-id}/items?expan
 
 #### <a name="request"></a>要求
 
-<!-- { "blockType": "request", "name": "get-list-items" } -->
+<!-- { "blockType": "request", "name": "get-list-items", "scopes": "sites.read.all" } -->
 
 ```http
 GET https://graph.microsoft.com/v1.0/sites/{site-id}/lists/{list-id}/items?expand=fields(select=Name,Color,Quantity)

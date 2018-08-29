@@ -13,13 +13,13 @@
 ## <a name="http-request"></a>HTTP 要求
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/names(<name>)/Range
+POST /workbook/names/{name}/range
 
 ```
 ## <a name="request-headers"></a>要求ヘッダー
 | 名前       | 説明|
 |:---------------|:----------|
-| Authorization  | ベアラー {トークン}。必須。 |
+| 承認  | ベアラー {トークン}。必須。 |
 | Workbook-Session-Id  | 変更を保持するかどうかを決定するブック セッション ID。省略可能。|
 
 ## <a name="request-body"></a>要求本文
@@ -34,10 +34,11 @@ POST /workbook/names(<name>)/Range
 以下は、要求の例です。
 <!-- {
   "blockType": "request",
+  "idempotent": true,
   "name": "nameditem_range"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/names(<name>)/Range
+POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/names/{name}/range
 ```
 
 ##### <a name="response"></a>応答
@@ -45,7 +46,7 @@ POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/names(<name>)
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.range"
+  "@odata.type": "microsoft.graph.workbookRange"
 } -->
 ```http
 HTTP/1.1 200 OK

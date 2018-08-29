@@ -7,7 +7,7 @@
 [deviceAndAppManagementAssignmentTarget](../resources/intune_shared_deviceandappmanagementassignmenttarget.md) からの継承
 
 ## <a name="properties"></a>プロパティ
-|プロパティ|型|説明|
+|プロパティ|タイプ|説明|
 |:---|:---|:---|
 
 ## <a name="relationships"></a>リレーションシップ
@@ -16,7 +16,7 @@
 以下は、リソースの JSON 表記です。
 <!-- {
   "blockType": "resource",
-  "keyProperty": "id",
+  "baseType": "microsoft.graph.deviceAndAppManagementAssignmentTarget",
   "@odata.type": "microsoft.graph.allLicensedUsersAssignmentTarget"
 }
 -->

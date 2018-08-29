@@ -4,19 +4,18 @@
 
 割り当てターゲットの基本型です。
 ## <a name="properties"></a>プロパティ
-|プロパティ|型|説明|
+|プロパティ|タイプ|説明|
 |:---|:---|:---|
 
 ## <a name="relationships"></a>リレーションシップ
 なし
 ## <a name="json-representation"></a>JSON 表記
 以下は、リソースの JSON 表記です。
-<!-- {
+<!--{
   "blockType": "resource",
-  "keyProperty": "id",
+  "abstract": true,
   "@odata.type": "microsoft.graph.deviceAndAppManagementAssignmentTarget"
-}
--->
+}-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.deviceAndAppManagementAssignmentTarget"

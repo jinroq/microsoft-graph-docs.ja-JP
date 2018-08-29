@@ -3,11 +3,12 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/11/2017
 title: ListInfo
-ms.openlocfilehash: eb4952c1a49c41dfae6683153753711158c70f01
-ms.sourcegitcommit: 7aea7a97e36e6d146214de3a90fdbc71628aadba
+ms.openlocfilehash: da8398bbb87111648ea561e1799e062ed46b0ee6
+ms.sourcegitcommit: abf4b739257e3ffd9d045f783ec595d846172590
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23270777"
 ---
 # <a name="listinfo-resource"></a>ListInfo リソース
 
@@ -36,7 +37,7 @@ ms.lasthandoff: 09/28/2017
 
 ## <a name="properties"></a>プロパティ
 
-| プロパティ名           | 種類    | 説明
+| プロパティ名           | 型    | 説明
 |:------------------------|:--------|:------------------------------------------------
 | **contentTypesEnabled** | Boolean | `true` である場合、このリストのコンテンツ タイプが有効であることを示します。
 | **hidden**              | Boolean | `true` である場合、リストが通常 SharePoint ユーザー エクスペリエンスに表示されないことを示します。
@@ -55,5 +56,9 @@ SharePoint の CSOM API に詳しい開発者へ: `template` の値は `SPListTe
   "description": "",
   "keywords": "",
   "section": "documentation",
+  "suppressions": [
+    "Warning: /api-reference/v1.0/resources/listinfo.md:
+      Found potential enums in resource example that weren't defined in a table:(documentLibrary,genericList,tasks,survey,links,announcements,contacts,...) are in resource, but () are in table"
+  ],
   "tocPath": ""
 }-->

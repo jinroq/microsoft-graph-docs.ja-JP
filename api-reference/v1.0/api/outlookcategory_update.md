@@ -24,12 +24,12 @@ PATCH /users/{id|userPrincipalName}/outlook/masterCategories/{id}
 ## <a name="request-headers"></a>要求ヘッダー
 | 名前      |説明|
 |:----------|:----------|
-| Authorization  | ベアラー {トークン}。必須。 |
+| 承認  | ベアラー {トークン}。必須。 |
 
 ## <a name="request-body"></a>要求本文
 要求本文で、更新する関連フィールドの値を指定します。要求本文に含まれない既存のプロパティは、以前の値のままになるか、他のプロパティ値の変化に基づいて再計算されます。最適なパフォーマンスを得るためには、変更されていない既存の値を含めないでください。
 
-| プロパティ     | 型   |説明|
+| プロパティ     | タイプ   |説明|
 |:---------------|:--------|:----------|
 |color|String|カテゴリを特徴付ける、あらかじめ設定された色の定数。定数は、事前定義された 25 種類の色のいずれか 1 つにマッピングされています。 |
 
@@ -41,10 +41,11 @@ PATCH /users/{id|userPrincipalName}/outlook/masterCategories/{id}
 以下は、要求の例です。
 <!-- {
   "blockType": "request",
+  "sampleKeys": ["bac262b7-485d-4739-b436-e31467d64fac"],
   "name": "update_outlookcategory"
 }-->
 ```http
-PATCH https://graph.microsoft.com/v1.0/me/outlook/masterCategories('bac262b7-485d-4739-b436-e31467d64fac')
+PATCH https://graph.microsoft.com/v1.0/me/outlook/masterCategories/bac262b7-485d-4739-b436-e31467d64fac
 Content-type: application/json
 Content-length: 30
 

@@ -23,11 +23,11 @@ GET /me/mailFolders/{id}/messages/{id}
 GET /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}
 ```
 ## <a name="optional-query-parameters"></a>オプションのクエリ パラメーター
-このメソッドは、応答をカスタマイズするための [OData クエリ パラメーター](http://developer.microsoft.com/ja-JP/graph/docs/overview/query_parameters)をサポートします。
+このメソッドは、応答をカスタマイズするための [OData クエリ パラメーター](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters)をサポートします。
 ## <a name="request-headers"></a>要求ヘッダー
 | 名前       | 型 | 説明|
 |:-----------|:------|:----------|
-| Authorization  | string  | ベアラー {トークン}。必須。 |
+| 承認  | 文字列  | ベアラー {トークン}。必須。 |
 
 ## <a name="request-body"></a>要求本文
 このメソッドには、要求本文を指定しません。
@@ -40,10 +40,11 @@ GET /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}
 最初の例では、イベント メッセージ ID に基づいてイベント メッセージのプロパティを取得する方法を示します。
 <!-- {
   "blockType": "request",
+  "sampleKeys": ["AAMkADYAAAImV_lAAA="],
   "name": "get_eventmessage"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/me/messages('AAMkADYAAAImV_lAAA=')
+GET https://graph.microsoft.com/v1.0/me/messages/AAMkADYAAAImV_lAAA=
 ```
 ##### <a name="response-1"></a>応答 1
 以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。
@@ -124,10 +125,11 @@ Content-type: application/json
 2 番目の例では、イベント メッセージに関連付けられているイベントを取得する方法を示します。 イベント メッセージ ID を使用してイベントのメッセージを取得し、イベント メッセージ上に明示的にキャストを提供してその **event** ナビゲーション プロパティにアクセスし、$expand パラメーターを適用してそのイベントのプロパティを取得します。
 <!-- {
   "blockType": "request",
+  "sampleKeys": ["AAMkADYAAAImV_jAAA="],
   "name": "get_event_based_on_eventmessage"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/me/messages('AAMkADYAAAImV_jAAA=')?$expand=microsoft.graph.eventMessage/event
+GET https://graph.microsoft.com/v1.0/me/messages/AAMkADYAAAImV_jAAA=?$expand=microsoft.graph.eventMessage/event
 ```
 ##### <a name="response-2"></a>応答 2
 以下は、応答の例です。 関連付けられているイベントのプロパティは、応答で返されます。 注: 簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。 実際の呼び出しではすべてのプロパティが返されます。

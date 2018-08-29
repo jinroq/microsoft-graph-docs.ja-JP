@@ -16,7 +16,7 @@
 ## <a name="http-request"></a>HTTP 要求
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /groups/<id>/renew
+POST /groups/{id}/renew
 ```
 
 ## <a name="request-headers"></a>要求ヘッダー
@@ -42,7 +42,7 @@ POST /groups/<id>/renew
   "name": "group_renew"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/groups/<id>/renew
+POST https://graph.microsoft.com/v1.0/groups/{id}/renew
 ```
 
 ##### <a name="response"></a>応答

@@ -21,8 +21,8 @@ POST /groups/{id}/conversations
 ## <a name="request-headers"></a>要求ヘッダー
 | ヘッダー       | 値 |
 |:---------------|:--------|
-| Authorization  | ベアラー {トークン}。必須。  |
-| Content-Type  | application/json  |
+| 承認  | ベアラー {トークン}。必須。  |
+| Content-Type  | アプリケーション /json  |
 
 ## <a name="request-body"></a>要求本文
 要求の本文に、[conversationThread](../resources/conversationThread.md) と [投稿](../resources/post.md) を含む [会話](../resources/conversation.md) オブジェクトの JSON 表記を指定します。
@@ -37,10 +37,11 @@ POST /groups/{id}/conversations
 要求の例を次に示します。
 <!-- {
   "blockType": "request",
+  "sampleKeys": ["29981b6a-0e57-42dc-94c9-cd24f5306196"],
   "name": "create_conversation_from_group"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/groups('29981b6a-0e57-42dc-94c9-cd24f5306196')/conversations
+POST https://graph.microsoft.com/v1.0/groups/29981b6a-0e57-42dc-94c9-cd24f5306196/conversations
 Content-type: application/json
 
 {

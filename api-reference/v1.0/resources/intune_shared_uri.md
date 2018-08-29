@@ -4,7 +4,7 @@
 
 まだ文書化されていません
 ## <a name="properties"></a>プロパティ
-|プロパティ|型|説明|
+|プロパティ|タイプ|説明|
 |:---|:---|:---|
 |セグメント|文字列コレクション|まだ文書化されていません|
 
@@ -12,12 +12,10 @@
 なし
 ## <a name="json-representation"></a>JSON 表記
 以下は、リソースの JSON 表記です。
-<!-- {
+<!--{
   "blockType": "resource",
-  "keyProperty": "id",
   "@odata.type": "microsoft.graph.uri"
-}
--->
+}-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.uri",

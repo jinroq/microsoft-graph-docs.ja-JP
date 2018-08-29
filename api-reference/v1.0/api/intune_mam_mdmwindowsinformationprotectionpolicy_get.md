@@ -1,6 +1,6 @@
 # <a name="get-mdmwindowsinformationprotectionpolicy"></a>Get mdmWindowsInformationProtectionPolicy
 
-> **注:**Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
+> **注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
 
 [mdmWindowsInformationProtectionPolicy](../resources/intune_mam_mdmwindowsinformationprotectionpolicy.md) オブジェクトのプロパティとリレーションシップを読み取ります。
 ## <a name="prerequisites"></a>前提条件
@@ -22,11 +22,11 @@ GET /deviceAppManagement/mdmWindowsInformationProtectionPolicies/{mdmWindowsInfo
 ```
 
 ## <a name="optional-query-parameters"></a>オプションのクエリ パラメーター
-このメソッドは、応答をカスタマイズするための [OData クエリ パラメーター](https://developer.microsoft.com/ja-JP/graph/docs/overview/query_parameters)をサポートします。
+このメソッドは、応答をカスタマイズするための [OData クエリ パラメーター](https://developer.microsoft.com/en-us/graph/docs/overview/query_parameters)をサポートします。
 ## <a name="request-headers"></a>要求ヘッダー
 |ヘッダー|値|
 |:---|:---|
-|承認|ベアラー &lt;トークン&gt;が必須。|
+|承認|ベアラー &lt;トークン&gt; が必須。|
 |承諾|application/json|
 
 ## <a name="request-body"></a>要求本文
@@ -51,7 +51,7 @@ Content-Length: 4343
 
 {
   "value": {
-    "@odata.type": "#microsoft.intune_mam_graph.mdmWindowsInformationProtectionPolicy",
+    "@odata.type": "#microsoft.graph.mdmWindowsInformationProtectionPolicy",
     "displayName": "Display Name value",
     "description": "Description value",
     "createdDateTime": "2017-01-01T00:02:43.5775965-08:00",
@@ -78,7 +78,7 @@ Content-Length: 4343
       "certificate": "Y2VydGlmaWNhdGU="
     },
     "revokeOnUnenrollDisabled": true,
-    "rightsManagementServicesTemplateId": "<Unknown Primitive Type Edm.Guid>",
+    "rightsManagementServicesTemplateId": "79199ed9-e50b-4257-8de4-70b9c8685061",
     "azureRightsManagementServicesAllowed": true,
     "iconsVisible": true,
     "protectedApps": [

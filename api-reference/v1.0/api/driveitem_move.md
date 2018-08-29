@@ -2,12 +2,13 @@
 author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
-title: "ファイルまたはフォルダーを移動する"
-ms.openlocfilehash: ebffe8451c6cf5ce7f025b70225054cfb8080cf6
-ms.sourcegitcommit: 7aea7a97e36e6d146214de3a90fdbc71628aadba
+title: ファイルまたはフォルダーを移動する
+ms.openlocfilehash: 5ecde28e0e3e8dd5f72079271305903c1fce5a7a
+ms.sourcegitcommit: abf4b739257e3ffd9d045f783ec595d846172590
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23268187"
 ---
 # <a name="move-a-driveitem-to-a-new-folder"></a>DriveItem を新しいフォルダーに移動する
 
@@ -58,9 +59,9 @@ PATCH /users/{user-id}/drive/items/{item-id}
 
 ## <a name="example"></a>例
 
-この例では、{item-id} で指定したアイテムを、ID `new-parent-folder-id` を持つユーザーのドライブ内のフォルダーに移動します。
+この例では、{item-id} で指定したアイテムを、ID を持つユーザーのドライブの `new-parent-folder-id` フォルダーに移動します。
 
-<!-- { "blockType": "request", "name": "move-item", "scopes": "files.readwrite" } -->
+<!-- { "blockType": "request", "name": "move-item", "scopes": "files.readwrite", "tags": "service.graph" } -->
 
 ```http
 PATCH /me/drive/items/{item-id}
@@ -68,7 +69,7 @@ Content-type: application/json
 
 {
   "parentReference": {
-    "id": "new-parent-folder-id"
+    "id": "{new-parent-folder-id}"
   },
   "name": "new-item-name.txt"
 }

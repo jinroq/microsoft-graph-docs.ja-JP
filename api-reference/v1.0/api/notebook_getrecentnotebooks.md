@@ -16,7 +16,7 @@
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/onenote/notebooks/getRecentNotebooks(includePersonalNotebooks=includePersonalNotebooks-value)
-GET /users/<id | userPrincipalName>/onenote/notebooks/getRecentNotebooks(includePersonalNotebooks=includePersonalNotebooks-value)
+GET /users/{id | userPrincipalName}/onenote/notebooks/getRecentNotebooks(includePersonalNotebooks=includePersonalNotebooks-value)
 ```
 
 ユーザーの `<id | userPrincipalName>` は、要求を行うために使用された承認トークンにおいてエンコードされたユーザーと一致しなければなりません。
@@ -46,7 +46,7 @@ GET /users/<id | userPrincipalName>/onenote/notebooks/getRecentNotebooks(include
 次の例は要求を示しています。
 <!-- { "blockType": "request", "name": "recent_notebooks", "scopes": "notes.read" } -->
 ```http
-GET https://graph.microsoft.com/v1.0/onenote/notebooks/getrecentnotebooks(includePersonalNotebooks=true)
+GET https://graph.microsoft.com/v1.0/me/onenote/notebooks/getRecentNotebooks(includePersonalNotebooks=true)
 ```
 
 #### <a name="response"></a>応答
@@ -55,7 +55,7 @@ GET https://graph.microsoft.com/v1.0/onenote/notebooks/getrecentnotebooks(includ
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.notebook",
+  "@odata.type": "Collection(microsoft.graph.recentNotebook)",
   "isCollection": true
 } -->
 ```http
@@ -66,7 +66,7 @@ Content-Length: 1110
 {
   "value":[
     {
-      "name":"Personal Notebook","lastAccessedTime":"timestamp","links":{
+      "displayName":"Personal Notebook","lastAccessedTime":"timestamp","links":{
         "oneNoteClientUrl":{
           "href":"onenote:href-value"
         },"oneNoteWebUrl":{
@@ -74,7 +74,7 @@ Content-Length: 1110
         }
       },"sourceService":"OneDrive"
     },{
-      "name":"Team Shared Notebook","lastAccessedTime":"timestamp","links":{
+      "displayName":"Team Shared Notebook","lastAccessedTime":"timestamp","links":{
         "oneNoteClientUrl":{
           "href":"onenote:href-value"
         },"oneNoteWebUrl":{

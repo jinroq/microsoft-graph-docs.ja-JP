@@ -21,7 +21,7 @@ GET /education/classes/{id}/group
 ## <a name="request-headers"></a>要求ヘッダー
 | ヘッダー       | 値 |
 |:---------------|:--------|
-| Authorization  | ベアラー {トークン}。必須。  |
+| 承認  | ベアラー {トークン}。必須。  |
 
 ## <a name="request-body"></a>要求本文
 このメソッドには、要求本文を指定しません。
@@ -35,7 +35,7 @@ GET /education/classes/{id}/group
   "name": "get_group"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/education/classes/2961761D-8094-4183-A9F6-8E36E966C7D9/group
+GET https://graph.microsoft.com/v1.0/education/classes/{class-id}/group
 ```
 ##### <a name="response"></a>応答
 応答の例を次に示します。 

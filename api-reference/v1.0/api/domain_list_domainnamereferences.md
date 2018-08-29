@@ -29,7 +29,7 @@ GET /domains/{id}/domainNameReferences
 
 | 名前      |説明|
 |:----------|:----------|
-| Authorization  | ベアラー {トークン}。必須。 |
+| 承認  | ベアラー {トークン}。必須。 |
 
 ## <a name="request-body"></a>要求本文
 
@@ -47,7 +47,7 @@ GET /domains/{id}/domainNameReferences
   "name": "get_domainnamereferences"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/domains/contoso.com/domainNameReferences
+GET https://graph.microsoft.com/v1.0/domains/{domain-name}/domainNameReferences
 ```
 
 ##### <a name="response"></a>応答

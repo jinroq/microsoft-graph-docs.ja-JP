@@ -2,7 +2,7 @@
 
 ドメイン オブジェクトのプロパティを更新します。
 
-> **重要:**検証済みのドメインのみを更新できます。
+> **重要:** 検証済みのドメインのみを更新できます。
 
 ## <a name="permissions"></a>アクセス許可
 
@@ -27,8 +27,8 @@ PATCH /domains/{id}
 
 | 名前       | 説明|
 |:-----------|:-----------|
-| Authorization  | ベアラー {トークン}。必須。 |
-| Content-Type  | application/json |
+| 承認  | ベアラー {トークン}。必須。 |
+| Content-Type  | アプリケーション /json |
 
 ## <a name="request-body"></a>要求本文
 
@@ -43,6 +43,7 @@ PATCH /domains/{id}
 
 <!-- {
   "blockType": "request",
+  "sampleKeys": ["contoso.com"],
   "name": "update_domain"
 }-->
 ```http

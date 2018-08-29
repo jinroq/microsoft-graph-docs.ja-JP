@@ -19,7 +19,7 @@ DELETE /education/classes/{id}/teachers/{userId}/$ref
 ## <a name="request-headers"></a>要求ヘッダー
 | ヘッダー       | 値 |
 |:---------------|:--------|
-| Authorization  | ベアラー {トークン}。必須。  |
+| 承認  | ベアラー {トークン}。必須。  |
 
 ## <a name="request-body"></a>要求本文
 このメソッドには、要求本文を指定しません。
@@ -36,7 +36,7 @@ DELETE /education/classes/{id}/teachers/{userId}/$ref
   "name": "create_educationclass_from_educationschool"
 }-->
 ```http
-DELETE https://graph.microsoft.com/v1.0/education/classes/<id>/teachers/14012
+DELETE https://graph.microsoft.com/v1.0/education/classes/{class-id}/teachers/{teacher-id}
 ```
 
 ##### <a name="response"></a>応答

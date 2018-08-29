@@ -19,7 +19,7 @@ POST /groups/{id}/addFavorite
 ## <a name="request-headers"></a>要求ヘッダー
 | ヘッダー       | 値 |
 |:---------------|:--------|
-| Authorization  | ベアラー {トークン}。必須。  |
+| 承認  | ベアラー {トークン}。必須。  |
 | Prefer | return=minimal. 最小応答ヘッダーが要求ヘッダーに含まれている場合、正常な応答で `204 No Content` コードが返されます。 省略可能。  |
 
 ## <a name="request-body"></a>要求本文
@@ -43,8 +43,7 @@ POST https://graph.microsoft.com/v1.0/groups/{id}/addFavorite
 応答の例を次に示します。
 <!-- {
   "blockType": "response",
-  "truncated": false,
-  "@odata.type": "microsoft.graph.none"
+  "truncated": false
 } -->
 ```http
 HTTP/1.1 200 OK

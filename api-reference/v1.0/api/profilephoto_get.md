@@ -59,19 +59,18 @@ GET /users/{id | userPrincipalName}/contactfolders/{contactFolderId}/contacts/{i
 
 ## <a name="parameters"></a>パラメーター
 
-|**パラメーター**|**型**|**説明**|
+|パラメーター|型|説明|
 |:-----|:-----|:-----|
-|_URL パラメーター_|
 |size  |String  | 写真のサイズ。 Office 365 上でサポートされている HD Photo のサイズは次のとおりです: '48x48'、'64x64'、'96x96'、'120x120'、'240x240'、 
 '360 360 x'、'432 x 432'、'504 504 x'、および '648x648'。 写真が Azure Active Directory に格納されている場合は、サイズに関する制限はありません。 |
 
 ## <a name="optional-query-parameters"></a>オプションのクエリ パラメーター
-このメソッドは、応答をカスタマイズするための [OData クエリ パラメーター](http://developer.microsoft.com/ja-JP/graph/docs/overview/query_parameters)をサポートします。
+このメソッドは、応答をカスタマイズするための [OData クエリ パラメーター](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters)をサポートします。
 
 ## <a name="request-headers"></a>要求ヘッダー
 | 名前       | 型 | 説明|
 |:-----------|:------|:----------|
-| Authorization  | string  | ベアラー {トークン}。必須。 |
+| 承認  | 文字列  | ベアラー {トークン}。必須。 |
 
 ## <a name="request-body"></a>要求本文
 このメソッドには、要求本文を指定しません。

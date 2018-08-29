@@ -29,8 +29,8 @@ GET /domains/contoso.com/serviceConfigurationRecords
 
 | 名前      |説明|
 |:----------|:----------|
-| Authorization  | ベアラー {トークン}。必須。 |
-| Content-Type  | application/json |
+| 承認  | ベアラー {トークン}。必須。 |
+| Content-Type  | アプリケーション /json |
 
 ## <a name="request-body"></a>要求本文
 
@@ -48,7 +48,7 @@ GET /domains/contoso.com/serviceConfigurationRecords
   "name": "get_serviceconfigurationrecords"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/domains/contoso.com/serviceConfigurationRecords
+GET https://graph.microsoft.com/v1.0/domains/{domain-name}/serviceConfigurationRecords
 ```
 ##### <a name="response"></a>応答
 注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。
@@ -66,6 +66,7 @@ Content-length: 220
 {
   "value": [
     {
+      "@odata.type":"microsoft.graph.domainDnsMxRecord",
       "isOptional": false,
       "label": "contoso.com",
       "recordType": "Mx",
@@ -75,10 +76,11 @@ Content-length: 220
       "preference": 0
     },
     {
+      "@odata.type":"microsoft.graph.domainDnsTxtRecord",
       "isOptional": false,
       "label": "contoso.com",
       "recordType": "Txt",
-      "supportedServices": "Email",
+      "supportedService": "Email",
       "ttl": 3600,
       "text": "v=spf1 include: spf.protection.outlook.com ~all"
     }

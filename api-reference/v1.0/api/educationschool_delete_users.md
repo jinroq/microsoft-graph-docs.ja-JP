@@ -14,12 +14,12 @@
 ## <a name="http-request"></a>HTTP 要求
 <!-- { "blockType": "ignored" } -->
 ```http
-DELETE /education/schools/<id>/users/{userId}/$ref
+DELETE /education/schools/{id}/users/{userId}/$ref
 ```
 ## <a name="request-headers"></a>要求ヘッダー
 | ヘッダー       | 値 |
 |:---------------|:--------|
-| Authorization  | ベアラー {トークン}。必須。  |
+| 承認  | ベアラー {トークン}。必須。  |
 
 ## <a name="request-body"></a>要求本文
 このメソッドには、要求本文を指定しません。
@@ -36,7 +36,7 @@ DELETE /education/schools/<id>/users/{userId}/$ref
   "name": "create_educationclass_from_educationschool"
 }-->
 ```http
-DELETE https://graph.microsoft.com/v1.0/education/schools/10001/users/13006
+DELETE https://graph.microsoft.com/v1.0/education/schools/{school-id}/users/{user-id}
 ```
 
 ##### <a name="response"></a>応答

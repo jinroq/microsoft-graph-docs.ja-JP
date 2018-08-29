@@ -24,7 +24,7 @@ DELETE /users/{id|userPrincipalName}/outlook/masterCategories/{id}
 ## <a name="request-headers"></a>要求ヘッダー
 | 名前      |説明|
 |:----------|:----------|
-| Authorization  | ベアラー {トークン}。必須。 |
+| 承認  | ベアラー {トークン}。必須。 |
 
 ## <a name="request-body"></a>要求本文
 このメソッドには、要求本文を指定しません。
@@ -38,10 +38,11 @@ DELETE /users/{id|userPrincipalName}/outlook/masterCategories/{id}
 以下は、要求の例です。
 <!-- {
   "blockType": "request",
+  "sampleKeys": ["4b1c2495-54c9-4a5e-90a2-0ab0b31987d8"],
   "name": "delete_outlookcategory"
 }-->
 ```http
-DELETE https://graph.microsoft.com/v1.0/me/outlook/masterCategories('4b1c2495-54c9-4a5e-90a2-0ab0b31987d8')
+DELETE https://graph.microsoft.com/v1.0/me/outlook/masterCategories/4b1c2495-54c9-4a5e-90a2-0ab0b31987d8
 ```
 ##### <a name="response"></a>応答
 以下は、応答の例です。

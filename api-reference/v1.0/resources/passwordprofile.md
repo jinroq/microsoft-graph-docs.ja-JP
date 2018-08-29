@@ -4,7 +4,7 @@
 
 
 ## <a name="properties"></a>プロパティ
-| プロパティ     | 型   |説明|
+| プロパティ     | タイプ   |説明|
 |:---------------|:--------|:----------|
 |forceChangePasswordNextSignIn|Boolean| ユーザーが次回のログインでパスワードを変更する必要がある場合は **true**、それ以外の場合は **false**。 |
 |password|String|ユーザーのパスワード。このプロパティは、ユーザーの作成時に必要です。このプロパティは更新できますが、ユーザーは次回のログインでパスワードを変更する必要があります。パスワードは、ユーザーの **passwordPolicies** プロパティによって指定されているとおりの最小要件を満たす必要があります。既定では、強力なパスワードが必要です。|
@@ -18,7 +18,7 @@
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.passwordprofile"
+  "@odata.type": "microsoft.graph.passwordProfile"
 }-->
 
 ```json

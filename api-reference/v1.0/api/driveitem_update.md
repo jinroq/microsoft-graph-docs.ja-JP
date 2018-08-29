@@ -2,12 +2,13 @@
 author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
-title: "ファイルまたはフォルダーを更新する"
-ms.openlocfilehash: 1662007d030f51b0fd9242ba0f22b670e5e2bde2
-ms.sourcegitcommit: 7aea7a97e36e6d146214de3a90fdbc71628aadba
+title: ファイルまたはフォルダーを更新する
+ms.openlocfilehash: af936948371ada7f0a8cd52115eac31ea6388d10
+ms.sourcegitcommit: abf4b739257e3ffd9d045f783ec595d846172590
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23266892"
 ---
 # <a name="update-driveitem-properties"></a>DriveItem プロパティを更新する
 
@@ -47,7 +48,7 @@ PATCH /users/{user-id}/drive/items/{item-id}
 
 要求本文で、更新すべきプロパティの値を指定します。
 
-要求本文に含まれない既存のプロパティは、以前の値のままになるか、他のプロパティ値の変化に基づいて再計算されます。
+要求本文に含まれない既存のプロパティは、以前の値のままになるか、他のプロパティ値の変更に基づいて再計算されます。
 最高のパフォーマンスのためには、変更されていないプロパティをアプリケーションに含めないでください。
 
 ## <a name="response"></a>応答
@@ -58,7 +59,7 @@ PATCH /users/{user-id}/drive/items/{item-id}
 
 この例では、DriveItem リソースを「new-file-name.docx」という名前に変更します。
 
-<!-- { "blockType": "request", "name": "update-item" } -->
+<!-- { "blockType": "request", "name": "update-item", "tags": "service.graph" } -->
 
 ```http
 PATCH /me/drive/items/{item-id}

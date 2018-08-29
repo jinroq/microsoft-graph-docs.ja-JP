@@ -2,12 +2,13 @@
 author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
-title: "共有アイテムへのアクセス"
-ms.openlocfilehash: d396e7bb79f3c2bbc9c824d48b6fa3df4a5ef26c
-ms.sourcegitcommit: 7aea7a97e36e6d146214de3a90fdbc71628aadba
+title: 共有アイテムへのアクセス
+ms.openlocfilehash: 4566452cc661d9ad2c913c06333a56bfcb0d5fce
+ms.sourcegitcommit: abf4b739257e3ffd9d045f783ec595d846172590
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23268271"
 ---
 # <a name="accessing-shared-driveitems"></a>共有 DriveItems へのアクセス
 
@@ -47,7 +48,7 @@ GET /shares/{shareIdOrEncodedSharingUrl}
 2. base64 でエンコードされた結果を [unpadded base64url 形式](https://en.wikipedia.org/wiki/Base64)に変換します (値の末尾から `=` 文字を削除し、`/` を `_`、`+` を `-` に置き換える)。
 3. 文字列の先頭に `u!` を追加します。
 
-C# で URL をエンコードする例を以下に示します。
+URL を C# でエンコードする例を次に示します。
 
 ```csharp
 string sharingUrl = "https://onedrive.live.com/redir?resid=1231244193912!12&authKey=1201919!12921!1";
@@ -89,10 +90,6 @@ Content-type: application/json
       "id": "98E88F1C-F8DC-47CC-A406-C090248B30E5",
       "displayName": "Ryan Gregg"
     }
-  },
-  "remoteItem": { 
-    "driveId": "",
-    "id": ""
   }
 }
 ```
@@ -105,7 +102,7 @@ Content-type: application/json
 
 ### <a name="request"></a>要求
 
-**driveItem** リレーションシップを要求することで、共有されている **DriveItem** が返されます。
+**driveItem** リレーションシップを要求することで、共有された **DriveItem** が返されます。
 
 <!-- { "blockType": "request", "name": "get-shared-driveitem" } -->
 

@@ -2,12 +2,13 @@
 author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
-title: "アクセス許可の取得"
-ms.openlocfilehash: 34171ca2c862857069f904103681ecc9b1646fc7
-ms.sourcegitcommit: 7aea7a97e36e6d146214de3a90fdbc71628aadba
+title: アクセス許可の取得
+ms.openlocfilehash: 48c0d7f07565c87e5f2b77ca7a3d5beec83540e7
+ms.sourcegitcommit: abf4b739257e3ffd9d045f783ec595d846172590
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23268551"
 ---
 # <a name="get-sharing-permission-for-a-file-or-folder"></a>ファイルまたはフォルダーの共有アクセス許可を取得する
 
@@ -17,7 +18,7 @@ ms.lasthandoff: 09/28/2017
 
 呼び出し元は、`inheritedFrom` プロパティを確認することで、アクセス許可が継承されたものかどうかを区別できます。このプロパティは、アクセス許可の継承元になる先祖を参照する [ItemReference](../resources/itemReference.md) リソースです。
 
-アイテムに設定された SharePoint アクセス許可レベルは、'SP' というプレフィックス付きで返されます。 たとえば、SP.View Only、SP.Limited Access、SP.View Web Analytics Data などです。 「[SharePoint ロールの完全なリスト](https://technet.microsoft.com/en-us/library/cc721640.aspx#section1)」を参照してください。
+アイテムに設定された SharePoint アクセス許可レベルは、'SP' というプレフィックス付きで返されます。 たとえば、SP.View Only、SP.Limited Access、SP.View Web Analytics Data などです。 [SharePoint ロールの完全なリスト](https://technet.microsoft.com/en-us/library/cc721640.aspx#section1)を参照してください。
 
 ## <a name="permissions"></a>アクセス許可
 
@@ -43,7 +44,7 @@ GET /users/{user-id}/drive/items/{item-id}/permissions/{perm-id}
 
 ## <a name="optional-query-parameters"></a>オプションのクエリ パラメーター
 
-応答を形成するため、このメソッドは、[$select クエリ パラメーター](../../../concepts/query_parameters.md)をサポートしています。
+応答を形成するため、このメソッドは、[$select クエリ パラメーター](../../../concepts/query_parameters.md) をサポートしています。
 
 ## <a name="response"></a>応答
 
@@ -55,7 +56,7 @@ GET /users/{user-id}/drive/items/{item-id}/permissions/{perm-id}
 
 以下は、フォルダーのアクセス許可にアクセスするための要求の例です。
 
-<!-- { "blockType": "request", "name": "get-item-permission", "scopes": "files.read" } -->
+<!-- { "blockType": "request", "name": "get-item-permission", "scopes": "files.read", "tags": "service.graph" } -->
 
 ```http
 GET /me/drive/items/{item-id}/permissions/{perm-id}
@@ -89,7 +90,7 @@ Content-type: application/json
 
 [**リンク**](../resources/sharinglink.md) ファセットのあるアクセス許可は、項目上に作成された共有するリンクを表します。共有リンクは、リンクを持つすべてのユーザーのアイテムへのアクセス許可を提供する固有のトークンを含みます。
 
-[**invitation**](../resources/sharinginvitation.md) ファセットを持つアクセス許可は、指定のユーザーやグループをファイルへのアクセスへ招待することで追加されたアクセス許可を表します。
+[**招待**](../resources/sharinginvitation.md) ファセットを持つアクセス許可は、指定のユーザーやグループをファイルへのアクセスへ招待することで追加されたアクセス許可を表します。
 
 ### <a name="error-responses"></a>エラー応答
 

@@ -1,10 +1,10 @@
 # <a name="androidminimumoperatingsystem-resource-type"></a>androidMinimumOperatingSystem リソースの種類
 
-> **注:**Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
+> **注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
 
 Android モバイル アプリに必要な最小限のオペレーティング システムのプロパティが含まれます。
 ## <a name="properties"></a>プロパティ
-|プロパティ|型|説明|
+|プロパティ|タイプ|説明|
 |:---|:---|:---|
 |v4_0|ブール型 (Boolean)|バージョン 4.0 以降。|
 |v4_0_3|ブール型 (Boolean)|バージョン 4.0.3 以降。|
@@ -21,7 +21,6 @@ Android モバイル アプリに必要な最小限のオペレーティング �
 以下は、リソースの JSON 表記です。
 <!-- {
   "blockType": "resource",
-  "keyProperty": "id",
   "@odata.type": "microsoft.graph.androidMinimumOperatingSystem"
 }
 -->

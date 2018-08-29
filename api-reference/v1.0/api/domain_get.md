@@ -30,8 +30,8 @@ GET /domains/{id}
 
 | 名前      |説明|
 |:----------|:----------|
-| Authorization  | ベアラー {トークン}。必須。 |
-| Content-Type  | application/json |
+| 承認  | ベアラー {トークン}。必須。 |
+| Content-Type  | アプリケーション /json |
 
 ## <a name="request-body"></a>要求本文
 このメソッドには、要求本文を指定しません。
@@ -44,6 +44,7 @@ GET /domains/{id}
 
 <!-- {
   "blockType": "request",
+  "sampleKeys": ["contoso.com"],
   "name": "get_domain"
 }-->
 ```http

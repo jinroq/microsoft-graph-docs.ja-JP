@@ -18,14 +18,14 @@ directoryRole からメンバーを削除します。
 <!-- { "blockType": "ignored" } -->
 
 ```http
-DELETE /directoryroles/{id}/members/{id}/$ref
+DELETE /directoryRoles/{id}/members/{id}/$ref
 ```
 
 ## <a name="request-headers"></a>要求ヘッダー
 
 | 名前       | 型 | 説明|
 |:---------------|:--------|:----------|
-| Authorization  | string  | ベアラー {トークン}。必須。 |
+| 承認  | 文字列  | ベアラー {トークン}。必須。 |
 
 ## <a name="request-body"></a>要求本文
 
@@ -46,7 +46,7 @@ DELETE /directoryroles/{id}/members/{id}/$ref
 }-->
 
 ```http
-DELETE https://graph.microsoft.com/v1.0/directoryroles/{id}/members/{id}/$ref
+DELETE https://graph.microsoft.com/v1.0/directoryRoles/{id}/members/{id}/$ref
 ```
 
 ##### <a name="response"></a>応答

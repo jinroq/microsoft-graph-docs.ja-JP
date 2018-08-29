@@ -2,18 +2,19 @@
 author: rgregg
 ms.author: rgregg
 ms.date: 09/11/2017
-title: "サイト内の SharePoint リストを一覧表示する"
-ms.openlocfilehash: 8c3d8da3e8dc4ab3aa2f399eb09d916ea602e1c5
-ms.sourcegitcommit: 339070a20730bc4d363da7eb346d5f3c1e1d6c3e
+title: サイト内の SharePoint リストを一覧表示する
+ms.openlocfilehash: 5d88720ecf3d183f806526364130dd2812874f3c
+ms.sourcegitcommit: abf4b739257e3ffd9d045f783ec595d846172590
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/18/2017
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23267648"
 ---
 # <a name="enumerate-lists-in-a-site"></a>サイト内のリストを列挙する
 
 [サイト][]の[リスト][]のコレクションを取得します。
 
-[lists]: ../resources/list.md
+[サイト]: ../resources/list.md
 [site]: ../resources/site.md
 
 ## <a name="permissions"></a>アクセス許可
@@ -36,7 +37,7 @@ GET https://graph.microsoft.com/v1.0/sites/{site-id}/lists
 
 #### <a name="request"></a>要求
 
-<!-- { "blockType": "request", "name": "enum-lists", "scopes": "sites.read.all service.sharepoint" } -->
+<!-- { "blockType": "request", "name": "enum-lists", "scopes": "sites.read.all", "tags": "service.sharepoint" } -->
 
 ```http
 GET https://graph.microsoft.com/v1.0/sites/{site-id}/lists
@@ -75,6 +76,13 @@ Content-type: application/json
   ]
 }
 ```
+
+## <a name="remarks"></a>注釈
+
+[system][] ファセットのあるリストは既定では非表示です。
+それらを一覧表示するには、`$select` ステートメントに `system` を含めます。
+
+[system]: ../resources/systemFacet.md
 
 <!-- {
   "type": "#page.annotation",

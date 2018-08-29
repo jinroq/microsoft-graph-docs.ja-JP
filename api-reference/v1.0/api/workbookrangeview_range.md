@@ -14,13 +14,13 @@ rangeView リソースに関連付けられている範囲を返します。
 ## <a name="http-request"></a>HTTP 要求
 <!-- { "blockType": "ignored" } -->
 ```http
-GET me/drive/root/workbook/worksheets/{id}/range(addres={address})/visibleView/range
+GET me/drive/root/workbook/worksheets/{id}/range(address={address})/visibleView/range
 
 ```
 ## <a name="request-headers"></a>要求ヘッダー
 | 名前       | 説明|
 |:---------------|:----------|
-| Authorization  | ベアラー {トークン}。必須。 |
+| 承認  | ベアラー {トークン}。必須。 |
 | Workbook-Session-Id  | 変更を保持するかどうかを決定するブック セッション ID。省略可能。|
 
 ## <a name="request-body"></a>要求本文
@@ -32,12 +32,13 @@ GET me/drive/root/workbook/worksheets/{id}/range(addres={address})/visibleView/r
 以下は、この API を呼び出す方法の例です。
 ##### <a name="request"></a>要求
 以下は、要求の例です。
-<!-- {
+<!--{
   "blockType": "request",
+  "isComposable": true,
   "name": "workbookrangeview_range"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/drive/root/workbook/worksheets/{id}/range(addres='A1:Z10')/visibleView/range
+GET https://graph.microsoft.com/v1.0/me/drive/root/workbook/worksheets/{id}/range(address='A1:Z10')/visibleView/range
 ```
 
 ##### <a name="response"></a>応答
@@ -45,7 +46,7 @@ GET https://graph.microsoft.com/v1.0/drive/root/workbook/worksheets/{id}/range(a
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.range"
+  "@odata.type": "microsoft.graph.workbookRange"
 } -->
 ```http
 HTTP/1.1 200 OK

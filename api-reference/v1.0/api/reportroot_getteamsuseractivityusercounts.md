@@ -32,7 +32,7 @@ GET /reports/getTeamsUserActivityUserCounts(period='{period_value}')
 
 | 名前          | 説明               |
 | :------------ | :------------------------ |
-| Authorization | ベアラー {トークン}。必須。 |
+| 承認 | ベアラー {トークン}。必須。 |
 
 ## <a name="response"></a>応答
 
@@ -70,7 +70,11 @@ GET https://graph.microsoft.com/v1.0/reports/getTeamsUserActivityUserCounts(peri
 
 応答の例を次に示します。
 
-<!-- { "blockType": "ignored" } --> 
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.report"
+} -->
 
 ```http
 HTTP/1.1 302 Found
@@ -80,11 +84,7 @@ Location: https://reports.office.com/data/download/JDFKdf2_eJXKS034dbc7e0t__XDe
 
 302 リダイレクトに従うと、ダウンロードされる CSV ファイルは次のスキーマを持つことになります。
 
-<!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "stream"
-} -->
+<!-- { "blockType": "ignored" } --> 
 
 ```http
 HTTP/1.1 200 OK

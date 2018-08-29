@@ -13,12 +13,12 @@
 ## <a name="http-request"></a>HTTP 要求
 <!-- { "blockType": "ignored" } -->
 ```http
-DELETE /planner/tasks/<id>
+DELETE /planner/tasks/{id}
 ```
 ## <a name="request-headers"></a>要求ヘッダー
 | 名前       | 説明|
 |:---------------|:----------|
-| Authorization  | ベアラー {トークン}。必須。 |
+| 承認  | ベアラー {トークン}。必須。 |
 | If-Match  | 削除する **plannerTask** の最後の既知の ETag 値。必須。|
 
 ## <a name="request-body"></a>要求本文
@@ -38,7 +38,7 @@ DELETE /planner/tasks/<id>
   "name": "delete_plannertask"
 }-->
 ```http
-DELETE https://graph.microsoft.com/v1.0/planner/tasks/<id>
+DELETE https://graph.microsoft.com/v1.0/planner/tasks/{id}
 If-Match: W/"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc="
 ```
 ##### <a name="response"></a>応答

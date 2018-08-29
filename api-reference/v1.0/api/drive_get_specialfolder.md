@@ -2,12 +2,13 @@
 author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
-title: "特殊フォルダーを取得する"
-ms.openlocfilehash: 894c0dc2c41441ab8006f58dcf5ccbc9d0043b0a
-ms.sourcegitcommit: 7aea7a97e36e6d146214de3a90fdbc71628aadba
+title: 特殊フォルダーを取得する
+ms.openlocfilehash: 42deedff6dc5a0925412e95af806fee99d8be242
+ms.sourcegitcommit: abf4b739257e3ffd9d045f783ec595d846172590
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23265037"
 ---
 # <a name="get-a-special-folder-by-name"></a>名前で特殊フォルダーを取得する
 
@@ -17,7 +18,7 @@ ms.lasthandoff: 09/28/2017
 
 特殊なフォルダーは、まだ存在していない場合、アプリケーションが最初に書き込みを試行したときに自動的に作成されます。ユーザーが削除した場合は、もう一度書き込まれたときに再作成されます。
 
-> **注:**読み取り専用のアクセス許可が付与されているときに、存在していない特殊フォルダーを要求すると、`403 Forbidden` エラーが返されます。
+> **注:** 読み取り専用のアクセス許可が付与されているときに、存在していない特殊フォルダーを要求すると、`403 Forbidden` エラーが返されます。
 
 ## <a name="permissions"></a>アクセス許可
 
@@ -58,7 +59,7 @@ GET /me/drive/special/{name}
 
 このメソッドは `200 OK` 応答コードと、応答本文で [driveItem](../resources/driveitem.md) オブジェクトを返します。
 
-driveItem のプロパティまたはリレーションシップの追加の呼び出しと合わせて、特殊フォルダーのアドレス指定のメソッドを使用できます。
+プロパティや driveItem 上のリレーションシップへの付加的な呼び出しを伴う、特殊フォルダーのインラインのアドレス指定のメソッドを使用できます。
 
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.driveItem", "truncated": true } -->
 
@@ -76,16 +77,16 @@ Content-type: application/json
 }
 ```
 
-## <a name="get-children-of-a-special-folder"></a>特殊フォルダーの子を取得する
+## <a name="get-children-of-a-special-folder"></a>特殊フォルダーの子を取得します。
 
 特殊フォルダーの子を要求する場合は、`children` コレクションを要求するか、子コレクションを展開する [expand](../../../concepts/query_parameters.md) オプションを使用します。
 
 ### <a name="http-request"></a>HTTP 要求
 
-<!-- { "blockType": "request", "name": "get-special-children", "scopes": "files.read" } -->
+<!-- { "blockType": "request", "name": "get-special-children", "scopes": "files.read", "tags": "service.graph" } -->
 
 ```http
-GET /me/drive/special/{name}/children
+GET /me/drive/special/{special-folder-name}/children
 ```
 
 ### <a name="http-response"></a>HTTP 応答
@@ -108,7 +109,7 @@ Content-Type: application/json
 
 ## <a name="remarks"></a>備考
 
-> **注:** `specialFolder` ファセットを伴う DriveItem は、アイテムが特殊フォルダーであり、`special` コレクションを介してアクセスできることを示しています。
+> **注:** `specialFolder` ファセットを伴う DriveItem は、アイテムが特殊フォルダーであり、`special` コレクション経由でアクセスできることを示しています。
 
 アプリに読み取り専用アクセス許可が付与されている場合、特殊フォルダーまたは特殊フォルダーの子を取得する要求は、その特殊フォルダーが存在していないと、`404 Not Found` エラーまたは `403 Forbidden` エラーで失敗します。
 

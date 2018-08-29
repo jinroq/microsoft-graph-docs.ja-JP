@@ -20,7 +20,7 @@ workbook-session-id: {session-id}
 ## <a name="request-headers"></a>要求ヘッダー
 | 名前       | 説明|
 |:---------------|:----------|
-| Authorization  | ベアラー {トークン}。必須。 |
+| 承認  | ベアラー {トークン}。必須。 |
 | workbook-session-id | 更新するブック セッションの ID |
 
 ## <a name="request-body"></a>要求本文
@@ -61,3 +61,11 @@ workbook-session-id ヘッダーが必要となることに注意してくださ
 ```http
 HTTP/1.1 204 No Content
 ```
+
+<!-- {
+  "type": "#page.annotation",
+  "suppressions": [
+    "Warning: refresh_excel_session//api-reference/v1.0/api/workbook_refreshsession.md:
+      Request includes a non-standard header: workbook-session-id"
+  ]
+}-->

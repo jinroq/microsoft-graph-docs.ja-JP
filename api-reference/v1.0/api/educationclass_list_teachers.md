@@ -22,7 +22,7 @@ GET /education/classes/{id}/teachers
 ## <a name="request-headers"></a>要求ヘッダー
 | ヘッダー       | 値 |
 |:---------------|:--------|
-| Authorization  | ベアラー {トークン}。必須。  |
+| 承認  | ベアラー {トークン}。必須。  |
 
 ## <a name="request-body"></a>要求本文
 このメソッドには、要求本文を指定しません。
@@ -36,7 +36,7 @@ GET /education/classes/{id}/teachers
   "name": "get_teachers"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/education/classes/11023/teachers
+GET https://graph.microsoft.com/v1.0/education/classes/{class-id}/teachers
 ```
 ##### <a name="response"></a>応答
 応答の例を次に示します。 

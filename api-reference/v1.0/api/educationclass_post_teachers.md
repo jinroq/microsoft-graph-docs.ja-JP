@@ -19,8 +19,8 @@ POST /education/classes/{id}/teachers/$ref
 ## <a name="request-headers"></a>要求ヘッダー
 | ヘッダー       | 値 |
 |:---------------|:--------|
-| Authorization  | ベアラー {トークン}。必須。  |
-| Content-Type  | application/json  |
+| 承認  | ベアラー {トークン}。必須。  |
+| Content-Type  | アプリケーション /json  |
 
 ## <a name="request-body"></a>要求本文
 要求本文で、[educationUser](../resources/educationuser.md) オブジェクトの JSON 表記を指定します。
@@ -37,7 +37,7 @@ POST /education/classes/{id}/teachers/$ref
   "name": "create_educationuser_from_educationclass"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/education/classes/11017/teachers/$ref
+POST https://graph.microsoft.com/v1.0/education/classes/{class-id}/teachers/$ref
 Content-type: application/json
 Content-length: 508
 

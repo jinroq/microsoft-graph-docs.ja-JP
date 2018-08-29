@@ -13,7 +13,7 @@
 ## <a name="http-request"></a>HTTP 要求
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/names(<name>)/range/merge
+POST /workbook/names/{name}/range/merge
 POST /workbook/worksheets/{id|name}/range(address='<address>')/merge
 POST /workbook/tables/{id|name}/columns/{id|name}/range/merge
 
@@ -21,13 +21,13 @@ POST /workbook/tables/{id|name}/columns/{id|name}/range/merge
 ## <a name="request-headers"></a>要求ヘッダー
 | 名前       | 説明|
 |:---------------|:----------|
-| Authorization  | ベアラー {トークン}。必須。 |
+| 承認  | ベアラー {トークン}。必須。 |
 | Workbook-Session-Id  | 変更を保持するかどうかを決定するブック セッション ID。省略可能。|
 
 ## <a name="request-body"></a>要求本文
 要求本文で、次のパラメーターを含む JSON オブジェクトを指定します。
 
-| パラメーター    | Type   |説明|
+| パラメーター    | 型   |説明|
 |:---------------|:--------|:----------|
 |across|boolean|省略可能。指定した範囲のセルを行ごとに結合して、行ごとに別のセルを作成する場合は True に設定します。既定値は False です。|
 
@@ -44,7 +44,7 @@ POST /workbook/tables/{id|name}/columns/{id|name}/range/merge
   "name": "range_merge"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/names(<name>)/range/merge
+POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/names/{name}/range/merge
 Content-type: application/json
 Content-length: 20
 
@@ -56,9 +56,7 @@ Content-length: 20
 ##### <a name="response"></a>応答
 以下は、応答の例です。 
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.none"
+  "blockType": "response"
 } -->
 ```http
 HTTP/1.1 200 OK
