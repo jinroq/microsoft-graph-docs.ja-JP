@@ -1,39 +1,39 @@
-# <a name="get-photo"></a><span data-ttu-id="b06fa-101">写真を取得する</span><span class="sxs-lookup"><span data-stu-id="b06fa-101">Get photo</span></span>
+# <a name="get-photo"></a><span data-ttu-id="3c4ee-101">写真を取得する</span><span class="sxs-lookup"><span data-stu-id="3c4ee-101">Get photo</span></span>
 
-<span data-ttu-id="b06fa-102">写真オブジェクトのプロパティとリレーションシップを取得します。</span><span class="sxs-lookup"><span data-stu-id="b06fa-102">Retrieve the properties and relationships of photo object.</span></span>
-## <a name="permissions"></a><span data-ttu-id="b06fa-103">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="b06fa-103">Permissions</span></span>
-<span data-ttu-id="b06fa-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](../../../concepts/permissions_reference.md)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="b06fa-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).</span></span>
+<span data-ttu-id="3c4ee-102">写真オブジェクトのプロパティとリレーションシップを取得します。</span><span class="sxs-lookup"><span data-stu-id="3c4ee-102">Retrieve the properties and relationships of photo object.</span></span>
+## <a name="permissions"></a><span data-ttu-id="3c4ee-103">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="3c4ee-103">Permissions</span></span>
+<span data-ttu-id="3c4ee-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](../../../concepts/permissions_reference.md)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="3c4ee-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).</span></span>
 
-|<span data-ttu-id="b06fa-106">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="b06fa-106">Permission type</span></span>      | <span data-ttu-id="b06fa-107">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="b06fa-107">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="3c4ee-106">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="3c4ee-106">Permission type</span></span>      | <span data-ttu-id="3c4ee-107">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="3c4ee-107">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="b06fa-108">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="b06fa-108">Delegated (work or school account)</span></span> | <span data-ttu-id="b06fa-109">Files.Read</span><span class="sxs-lookup"><span data-stu-id="b06fa-109">Files.Read</span></span>    |
-|<span data-ttu-id="b06fa-110">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="b06fa-110">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="b06fa-111">Files.Read</span><span class="sxs-lookup"><span data-stu-id="b06fa-111">Files.Read</span></span>    |
-|<span data-ttu-id="b06fa-112">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="b06fa-112">Application</span></span> | <span data-ttu-id="b06fa-113">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="b06fa-113">Not supported.</span></span> |
+|<span data-ttu-id="3c4ee-108">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="3c4ee-108">Delegated (work or school account)</span></span> | <span data-ttu-id="3c4ee-109">Files.Read</span><span class="sxs-lookup"><span data-stu-id="3c4ee-109">Files.Read</span></span>    |
+|<span data-ttu-id="3c4ee-110">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="3c4ee-110">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="3c4ee-111">Files.Read</span><span class="sxs-lookup"><span data-stu-id="3c4ee-111">Files.Read</span></span>    |
+|<span data-ttu-id="3c4ee-112">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="3c4ee-112">Application</span></span> | <span data-ttu-id="3c4ee-113">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="3c4ee-113">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="b06fa-114">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="b06fa-114">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="3c4ee-114">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="3c4ee-114">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /users/{id | userPrincipalName}/photo
 GET /groups/{id}/photo
 GET /drive/root/createdByUser/photo
 ```
-## <a name="optional-query-parameters"></a><span data-ttu-id="b06fa-115">オプションのクエリ パラメーター</span><span class="sxs-lookup"><span data-stu-id="b06fa-115">Optional query parameters</span></span>
-<span data-ttu-id="b06fa-116">このメソッドは、応答をカスタマイズするための [OData クエリ パラメーター]((http://developer.microsoft.com/ja-JP/graph/docs/overview/query_parameters))をサポートします。</span><span class="sxs-lookup"><span data-stu-id="b06fa-116">This method supports the [OData Query Parameters]((http://developer.microsoft.com/ja-JP/graph/docs/overview/query_parameters)) to help customize the response.</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="3c4ee-115">オプションのクエリ パラメーター</span><span class="sxs-lookup"><span data-stu-id="3c4ee-115">Optional query parameters</span></span>
+<span data-ttu-id="3c4ee-116">このメソッドは、応答をカスタマイズするための [OData クエリ パラメーター](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters)をサポートします。</span><span class="sxs-lookup"><span data-stu-id="3c4ee-116">This method supports the [OData Query Parameters](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) to help customize the response.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="b06fa-117">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="b06fa-117">Request headers</span></span>
-| <span data-ttu-id="b06fa-118">名前</span><span class="sxs-lookup"><span data-stu-id="b06fa-118">Name</span></span>       | <span data-ttu-id="b06fa-119">型</span><span class="sxs-lookup"><span data-stu-id="b06fa-119">Type</span></span> | <span data-ttu-id="b06fa-120">説明</span><span class="sxs-lookup"><span data-stu-id="b06fa-120">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="3c4ee-117">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="3c4ee-117">Request headers</span></span>
+| <span data-ttu-id="3c4ee-118">名前</span><span class="sxs-lookup"><span data-stu-id="3c4ee-118">Name</span></span>       | <span data-ttu-id="3c4ee-119">型</span><span class="sxs-lookup"><span data-stu-id="3c4ee-119">Type</span></span> | <span data-ttu-id="3c4ee-120">説明</span><span class="sxs-lookup"><span data-stu-id="3c4ee-120">Description</span></span>|
 |:-----------|:------|:----------|
-| <span data-ttu-id="b06fa-121">Authorization</span><span class="sxs-lookup"><span data-stu-id="b06fa-121">Authorization</span></span>  | <span data-ttu-id="b06fa-122">string</span><span class="sxs-lookup"><span data-stu-id="b06fa-122">string</span></span>  | <span data-ttu-id="b06fa-p102">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="b06fa-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="3c4ee-121">承認</span><span class="sxs-lookup"><span data-stu-id="3c4ee-121">Authorization</span></span>  | <span data-ttu-id="3c4ee-122">文字列</span><span class="sxs-lookup"><span data-stu-id="3c4ee-122">string</span></span>  | <span data-ttu-id="3c4ee-p102">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="3c4ee-p102">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="b06fa-125">要求本文</span><span class="sxs-lookup"><span data-stu-id="b06fa-125">Request body</span></span>
-<span data-ttu-id="b06fa-126">このメソッドには、要求本文を指定しません。</span><span class="sxs-lookup"><span data-stu-id="b06fa-126">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="3c4ee-125">要求本文</span><span class="sxs-lookup"><span data-stu-id="3c4ee-125">Request body</span></span>
+<span data-ttu-id="3c4ee-126">このメソッドには、要求本文を指定しません。</span><span class="sxs-lookup"><span data-stu-id="3c4ee-126">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="b06fa-127">応答</span><span class="sxs-lookup"><span data-stu-id="b06fa-127">Response</span></span>
+## <a name="response"></a><span data-ttu-id="3c4ee-127">応答</span><span class="sxs-lookup"><span data-stu-id="3c4ee-127">Response</span></span>
 
-<span data-ttu-id="b06fa-128">成功した場合、このメソッドは `200 OK` 応答コードと、応答本文で[写真](../resources/photo.md)オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="b06fa-128">If successful, this method returns a `200 OK` response code and [photo](../resources/photo.md) object in the response body.</span></span>
-## <a name="example"></a><span data-ttu-id="b06fa-129">例</span><span class="sxs-lookup"><span data-stu-id="b06fa-129">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="b06fa-130">要求</span><span class="sxs-lookup"><span data-stu-id="b06fa-130">Request</span></span>
-<span data-ttu-id="b06fa-131">以下は、写真のメタデータに対する要求の例です。</span><span class="sxs-lookup"><span data-stu-id="b06fa-131">Here is an example of the request for the user's drives.</span></span>
+<span data-ttu-id="3c4ee-128">成功した場合、このメソッドは `200 OK` 応答コードと、応答本文で[写真](../resources/photo.md)オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="3c4ee-128">If successful, this method returns a `200 OK` response code and [photo](../resources/photo.md) object in the response body.</span></span>
+## <a name="example"></a><span data-ttu-id="3c4ee-129">例</span><span class="sxs-lookup"><span data-stu-id="3c4ee-129">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="3c4ee-130">要求</span><span class="sxs-lookup"><span data-stu-id="3c4ee-130">Request</span></span>
+<span data-ttu-id="3c4ee-131">以下は、写真のメタデータに対する要求の例です。</span><span class="sxs-lookup"><span data-stu-id="3c4ee-131">Here is an example of the request for photo metadata.</span></span>
 <!-- {
   "blockType": "request",
   "name": "get_photo"
@@ -41,8 +41,8 @@ GET /drive/root/createdByUser/photo
 ```http
 GET https://graph.microsoft.com/v1.0/users/{id|userPrincipalName}/photo
 ```
-##### <a name="response"></a><span data-ttu-id="b06fa-132">応答</span><span class="sxs-lookup"><span data-stu-id="b06fa-132">Response</span></span>
-<span data-ttu-id="b06fa-133">以下は、応答の例です。</span><span class="sxs-lookup"><span data-stu-id="b06fa-133">Here is an example of the response.</span></span>
+##### <a name="response"></a><span data-ttu-id="3c4ee-132">応答</span><span class="sxs-lookup"><span data-stu-id="3c4ee-132">Response</span></span>
+<span data-ttu-id="3c4ee-133">以下は、応答の例です。</span><span class="sxs-lookup"><span data-stu-id="3c4ee-133">Here is an example of the response.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": false,
@@ -59,19 +59,19 @@ Content-length: 53
   "id": "id-value"
 }
 ```
-##### <a name="request"></a><span data-ttu-id="b06fa-134">要求</span><span class="sxs-lookup"><span data-stu-id="b06fa-134">Request</span></span>
-<span data-ttu-id="b06fa-135">以下は、写真のバイト数に対する要求の例です。</span><span class="sxs-lookup"><span data-stu-id="b06fa-135">Here is an example of the request for the user's drives.</span></span>
+##### <a name="request"></a><span data-ttu-id="3c4ee-134">要求</span><span class="sxs-lookup"><span data-stu-id="3c4ee-134">Request</span></span>
+<span data-ttu-id="3c4ee-135">以下は、写真のバイト数に対する要求の例です。</span><span class="sxs-lookup"><span data-stu-id="3c4ee-135">Here is an example of the request for the photo bytes.</span></span>
 <!-- {
   "blockType": "request",
-  "name": "get_photo"
+  "name": "get_photo_value"
 }-->
 ```http
 GET https://graph.microsoft.com/v1.0/users/{id|userPrincipalName}/photo/$value
 ```
-##### <a name="response"></a><span data-ttu-id="b06fa-136">応答</span><span class="sxs-lookup"><span data-stu-id="b06fa-136">Response</span></span>
-<span data-ttu-id="b06fa-137">以下は、応答の例です。</span><span class="sxs-lookup"><span data-stu-id="b06fa-137">Here is an example of the response.</span></span>
+##### <a name="response"></a><span data-ttu-id="3c4ee-136">応答</span><span class="sxs-lookup"><span data-stu-id="3c4ee-136">Response</span></span>
+<span data-ttu-id="3c4ee-137">以下は、応答の例です。</span><span class="sxs-lookup"><span data-stu-id="3c4ee-137">Here is an example of the response.</span></span>
 
-<!-- { "blockType": "response", "@odata.type": "stream" } -->
+<!-- { "blockType": "response", "@odata.type": "Edm.Stream" } -->
 
 ```http
 HTTP/1.1 200 OK

@@ -1,48 +1,49 @@
-# <a name="update-domain"></a><span data-ttu-id="fc227-101">ドメインを更新する</span><span class="sxs-lookup"><span data-stu-id="fc227-101">Update domain</span></span>
+# <a name="update-domain"></a><span data-ttu-id="19783-101">ドメインを更新する</span><span class="sxs-lookup"><span data-stu-id="19783-101">Update domain</span></span>
 
-<span data-ttu-id="fc227-102">ドメイン オブジェクトのプロパティを更新します。</span><span class="sxs-lookup"><span data-stu-id="fc227-102">Update the properties of domain object.</span></span>
+<span data-ttu-id="19783-102">ドメイン オブジェクトのプロパティを更新します。</span><span class="sxs-lookup"><span data-stu-id="19783-102">Update the properties of domain object.</span></span>
 
-> <span data-ttu-id="fc227-103">**重要:**検証済みのドメインのみを更新できます。</span><span class="sxs-lookup"><span data-stu-id="fc227-103">**Important:** Only verified domains can be updated.</span></span>
+> <span data-ttu-id="19783-103">**重要:** 検証済みのドメインのみを更新できます。</span><span class="sxs-lookup"><span data-stu-id="19783-103">**Important:** Only verified domains can be updated.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="fc227-104">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="fc227-104">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="19783-104">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="19783-104">Permissions</span></span>
 
-<span data-ttu-id="fc227-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](../../../concepts/permissions_reference.md)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="fc227-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).</span></span>
+<span data-ttu-id="19783-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](../../../concepts/permissions_reference.md)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="19783-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).</span></span>
 
 
-|<span data-ttu-id="fc227-107">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="fc227-107">Permission type</span></span>      | <span data-ttu-id="fc227-108">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="fc227-108">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="19783-107">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="19783-107">Permission type</span></span>      | <span data-ttu-id="19783-108">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="19783-108">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="fc227-109">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="fc227-109">Delegated (work or school account)</span></span> | <span data-ttu-id="fc227-110">Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="fc227-110">Directory.AccessAsUser.All</span></span>    |
-|<span data-ttu-id="fc227-111">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="fc227-111">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="fc227-112">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="fc227-112">Not supported.</span></span>    |
-|<span data-ttu-id="fc227-113">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="fc227-113">Application</span></span> | <span data-ttu-id="fc227-114">Domain.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="fc227-114">Domain.ReadWrite.All</span></span> |
+|<span data-ttu-id="19783-109">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="19783-109">Delegated (work or school account)</span></span> | <span data-ttu-id="19783-110">Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="19783-110">Directory.AccessAsUser.All</span></span>    |
+|<span data-ttu-id="19783-111">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="19783-111">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="19783-112">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="19783-112">Not supported.</span></span>    |
+|<span data-ttu-id="19783-113">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="19783-113">Application</span></span> | <span data-ttu-id="19783-114">Domain.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="19783-114">Domain.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="fc227-115">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="fc227-115">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="19783-115">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="19783-115">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 PATCH /domains/{id}
 ```
 
-> <span data-ttu-id="fc227-116">{Id} には、ドメインを完全修飾ドメイン名で指定します。</span><span class="sxs-lookup"><span data-stu-id="fc227-116">For {id}, specify the domain with its fully qualified domain name.</span></span>
+> <span data-ttu-id="19783-116">{Id} には、ドメインを完全修飾ドメイン名で指定します。</span><span class="sxs-lookup"><span data-stu-id="19783-116">For {id}, specify the domain with its fully qualified domain name.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="fc227-117">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="fc227-117">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="19783-117">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="19783-117">Request headers</span></span>
 
-| <span data-ttu-id="fc227-118">名前</span><span class="sxs-lookup"><span data-stu-id="fc227-118">Name</span></span>       | <span data-ttu-id="fc227-119">説明</span><span class="sxs-lookup"><span data-stu-id="fc227-119">Description</span></span>|
+| <span data-ttu-id="19783-118">名前</span><span class="sxs-lookup"><span data-stu-id="19783-118">Name</span></span>       | <span data-ttu-id="19783-119">説明</span><span class="sxs-lookup"><span data-stu-id="19783-119">Description</span></span>|
 |:-----------|:-----------|
-| <span data-ttu-id="fc227-120">Authorization</span><span class="sxs-lookup"><span data-stu-id="fc227-120">Authorization</span></span>  | <span data-ttu-id="fc227-p102">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="fc227-p102">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="fc227-123">Content-Type</span><span class="sxs-lookup"><span data-stu-id="fc227-123">Content-Type</span></span>  | <span data-ttu-id="fc227-124">application/json</span><span class="sxs-lookup"><span data-stu-id="fc227-124">application/json</span></span> |
+| <span data-ttu-id="19783-120">承認</span><span class="sxs-lookup"><span data-stu-id="19783-120">Authorization</span></span>  | <span data-ttu-id="19783-p102">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="19783-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="19783-123">Content-Type</span><span class="sxs-lookup"><span data-stu-id="19783-123">Content-Type</span></span>  | <span data-ttu-id="19783-124">アプリケーション /json</span><span class="sxs-lookup"><span data-stu-id="19783-124">application/json</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="fc227-125">要求本文</span><span class="sxs-lookup"><span data-stu-id="fc227-125">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="19783-125">要求本文</span><span class="sxs-lookup"><span data-stu-id="19783-125">Request body</span></span>
 
-<span data-ttu-id="fc227-p103">要求本文で、更新する関連フィールドの値を指定します。要求本文に含まれない既存のプロパティは、以前の値のままになるか、他のプロパティ値の変化に基づいて再計算されます。最適なパフォーマンスを得るには、変更する値のみを含めます。</span><span class="sxs-lookup"><span data-stu-id="fc227-p103">In the request body, supply the values for relevant fields to be updated. Existing properties not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance, only include changed values.</span></span>
+<span data-ttu-id="19783-p103">要求本文で、更新する関連フィールドの値を指定します。要求本文に含まれない既存のプロパティは、以前の値のままになるか、他のプロパティ値の変化に基づいて再計算されます。最適なパフォーマンスを得るには、変更する値のみを含めます。</span><span class="sxs-lookup"><span data-stu-id="19783-p103">In the request body, supply the values for relevant fields to be updated. Existing properties not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance, only include changed values.</span></span>
 
-## <a name="response"></a><span data-ttu-id="fc227-129">応答</span><span class="sxs-lookup"><span data-stu-id="fc227-129">Response</span></span>
+## <a name="response"></a><span data-ttu-id="19783-129">応答</span><span class="sxs-lookup"><span data-stu-id="19783-129">Response</span></span>
 
-<span data-ttu-id="fc227-130">成功した場合、このメソッドは `204 No Content` 応答コードを返しますが、応答本文は返しません。</span><span class="sxs-lookup"><span data-stu-id="fc227-130">If successful, this method returns a `204 No Content` response code and no response body.</span></span>
+<span data-ttu-id="19783-130">成功した場合、このメソッドは `204 No Content` 応答コードを返しますが、応答本文は返しません。</span><span class="sxs-lookup"><span data-stu-id="19783-130">If successful, this method returns a `204 No Content` response code and no response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="fc227-131">例</span><span class="sxs-lookup"><span data-stu-id="fc227-131">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="fc227-132">要求</span><span class="sxs-lookup"><span data-stu-id="fc227-132">Request</span></span>
+## <a name="example"></a><span data-ttu-id="19783-131">例</span><span class="sxs-lookup"><span data-stu-id="19783-131">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="19783-132">要求</span><span class="sxs-lookup"><span data-stu-id="19783-132">Request</span></span>
 
 <!-- {
   "blockType": "request",
+  "sampleKeys": ["contoso.com"],
   "name": "update_domain"
 }-->
 ```http
@@ -58,7 +59,7 @@ Content-type: application/json
 }
 ```
 
-##### <a name="response"></a><span data-ttu-id="fc227-133">応答</span><span class="sxs-lookup"><span data-stu-id="fc227-133">Response</span></span>
+##### <a name="response"></a><span data-ttu-id="19783-133">応答</span><span class="sxs-lookup"><span data-stu-id="19783-133">Response</span></span>
 
 <!-- {
   "blockType": "response",

@@ -1,16 +1,19 @@
-<span data-ttu-id="0a3b9-p102">クライアントは、オープン型のプロパティを定義できます。この場合、クライアントは **GUID** をプロパティとして指定し、その値は [checklistItem](plannerchecklistitem.md) オブジェクトでなければなりません。以下に例を示します。チェックリストの項目を削除するには、プロパティの値を `null` に設定します。</span><span class="sxs-lookup"><span data-stu-id="0a3b9-p102">Properties of an Open Type can be defined by the client. In this case, the client should provide **GUIDs** as properties and their values must be [checklistItem](plannerchecklistitem.md) objects. Example is shown below. To remove an item in the checklist, set the value of the property to `null`.</span></span>
-クライアントは、オープン型のプロパティを定義できます。この場合、クライアントは **GUID** をプロパティとして指定し、その値は [checklistItem](plannerchecklistitem.md) オブジェクトでなければなりません。以下に例を示します。チェックリストの項目を削除するには、プロパティの値を `null` に設定します。
+# <a name="plannerchecklistitems-resource-type"></a><span data-ttu-id="fe021-101">plannerChecklistItems リソースの種類</span><span class="sxs-lookup"><span data-stu-id="fe021-101">plannerChecklistItems resource type</span></span>
 
-## <span data-ttu-id="0a3b9-111">JSON 表記</span><span class="sxs-lookup"><span data-stu-id="0a3b9-111">JSON representation</span></span>
-<a id="json-representation" class="xliff"></a>
+<span data-ttu-id="fe021-p101">**plannerChecklistItemCollection** リソースは、タスクのチェックリスト項目のコレクションを表します。これは、オープン型です。[タスクの詳細](plannertaskdetails.md)オブジェクトの一部です。プロパティ/値の組の値は、[checklistItem](plannerchecklistitem.md) オブジェクトです。</span><span class="sxs-lookup"><span data-stu-id="fe021-p101">The **plannerChecklistItemCollection** resource represents the collection of checklist items on a task. It is an Open Type. It is part of the [task details](plannertaskdetails.md) object. The value in the property-value pair is the [checklistItem](plannerchecklistitem.md) object.</span></span>
 
-<span data-ttu-id="0a3b9-112">以下は、リソースの JSON 表記です</span><span class="sxs-lookup"><span data-stu-id="0a3b9-112">Here is a JSON representation of the resource</span></span>
+
+## <a name="properties"></a><span data-ttu-id="fe021-106">プロパティ</span><span class="sxs-lookup"><span data-stu-id="fe021-106">Properties</span></span>
+<span data-ttu-id="fe021-p102">クライアントは、オープン型のプロパティを定義できます。この場合、クライアントは **GUID** をプロパティとして指定し、その値は [checklistItem](plannerchecklistitem.md) オブジェクトでなければなりません。以下に例を示します。チェックリストの項目を削除するには、プロパティの値を `null` に設定します。</span><span class="sxs-lookup"><span data-stu-id="fe021-p102">Properties of an Open Type can be defined by the client. In this case, the client should provide **GUIDs** as properties and their values must be [checklistItem](plannerchecklistitem.md) objects. Example is shown below. To remove an item in the checklist, set the value of the property to `null`.</span></span>
+
+## <a name="json-representation"></a><span data-ttu-id="fe021-111">JSON 表記</span><span class="sxs-lookup"><span data-stu-id="fe021-111">JSON representation</span></span>
+
+<span data-ttu-id="fe021-112">以下は、リソースの JSON 表記です</span><span class="sxs-lookup"><span data-stu-id="fe021-112">Here is a JSON representation of the resource</span></span>
 
 <!-- {
   "blockType": "resource",
-  "optionalProperties": [
-
-  ],
+  "openType": true,
+  "optionalProperties": [ "String-value" ],
   "@odata.type": "microsoft.graph.plannerChecklistItems"
 }-->
 
@@ -26,7 +29,7 @@
   }
 }
 ```
-<span data-ttu-id="0a3b9-113">// 例</span><span class="sxs-lookup"><span data-stu-id="0a3b9-113">// Example</span></span>
+<span data-ttu-id="fe021-113">// 例</span><span class="sxs-lookup"><span data-stu-id="fe021-113">// Example</span></span>
 
 ```json
 {

@@ -1,20 +1,20 @@
-# <a name="reportroot-getoffice365groupsactivitygroupcounts"></a><span data-ttu-id="b6917-101">reportRoot: getOffice365GroupsActivityGroupCounts</span><span class="sxs-lookup"><span data-stu-id="b6917-101">reportRoot: getOffice365GroupsActivityGroupCounts</span></span>
+# <a name="reportroot-getoffice365groupsactivitygroupcounts"></a><span data-ttu-id="4e876-101">reportRoot: getOffice365GroupsActivityGroupCounts</span><span class="sxs-lookup"><span data-stu-id="4e876-101">reportRoot: getOffice365GroupsActivityGroupCounts</span></span>
 
-<span data-ttu-id="b6917-102">グループの日次合計数と、そのうちのアクティブなグループの数を、電子メールでの会話、Yammer の投稿、SharePoint ファイルのアクティビティに基づいて取得します。</span><span class="sxs-lookup"><span data-stu-id="b6917-102">Get the daily total number of groups and how many of them were active based on email conversations, Yammer posts, and SharePoint file activities.</span></span>
+<span data-ttu-id="4e876-102">グループの日次合計数と、そのうちのアクティブなグループの数を、電子メールでの会話、Yammer の投稿、SharePoint ファイルのアクティビティに基づいて取得します。</span><span class="sxs-lookup"><span data-stu-id="4e876-102">Get the daily total number of groups and how many of them were active based on email conversations, Yammer posts, and SharePoint file activities.</span></span>
 
-> <span data-ttu-id="b6917-103">**注:** 別のレポートのビューとレポート名についての詳細は、「[Office 365 レポート: Office 365 グループ](https://support.office.com/client/Office-365-groups-a27f1a99-3557-4f85-9560-a28e3d822a40)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="b6917-103">**Note:** For details about different report views and names, see [Office 365 Reports - Office 365 groups](https://support.office.com/client/Office-365-groups-a27f1a99-3557-4f85-9560-a28e3d822a40).</span></span>
+> <span data-ttu-id="4e876-103">**注:** 別のレポートのビューとレポート名についての詳細は、「[Office 365 レポート: Office 365 グループ](https://support.office.com/client/Office-365-groups-a27f1a99-3557-4f85-9560-a28e3d822a40)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="4e876-103">**Note:** For details about different report views and names, see [Office 365 Reports - Office 365 groups](https://support.office.com/client/Office-365-groups-a27f1a99-3557-4f85-9560-a28e3d822a40).</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="b6917-104">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="b6917-104">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="4e876-104">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="4e876-104">Permissions</span></span>
 
-<span data-ttu-id="b6917-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](../../../concepts/permissions_reference.md)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="b6917-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).</span></span>
+<span data-ttu-id="4e876-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](../../../concepts/permissions_reference.md)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="4e876-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).</span></span>
 
-| <span data-ttu-id="b6917-107">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="b6917-107">Permission type</span></span>                        | <span data-ttu-id="b6917-108">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="b6917-108">Permissions (from least to most privileged)</span></span> |
+| <span data-ttu-id="4e876-107">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="4e876-107">Permission type</span></span>                        | <span data-ttu-id="4e876-108">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="4e876-108">Permissions (from least to most privileged)</span></span> |
 | :------------------------------------- | :--------------------------------------- |
-| <span data-ttu-id="b6917-109">委任 (職場または学校アカウント)</span><span class="sxs-lookup"><span data-stu-id="b6917-109">Delegated (work or school account)</span></span>     | <span data-ttu-id="b6917-110">Reports.Read.All</span><span class="sxs-lookup"><span data-stu-id="b6917-110">Reports.Read.All</span></span>                         |
-| <span data-ttu-id="b6917-111">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="b6917-111">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="b6917-112">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="b6917-112">Not supported.</span></span>                           |
-| <span data-ttu-id="b6917-113">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="b6917-113">Application</span></span>                            | <span data-ttu-id="b6917-114">Reports.Read.All</span><span class="sxs-lookup"><span data-stu-id="b6917-114">Reports.Read.All</span></span>                         |
+| <span data-ttu-id="4e876-109">委任 (職場または学校アカウント)</span><span class="sxs-lookup"><span data-stu-id="4e876-109">Delegated (work or school account)</span></span>     | <span data-ttu-id="4e876-110">Reports.Read.All</span><span class="sxs-lookup"><span data-stu-id="4e876-110">Reports.Read.All</span></span>                         |
+| <span data-ttu-id="4e876-111">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="4e876-111">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="4e876-112">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="4e876-112">Not supported.</span></span>                           |
+| <span data-ttu-id="4e876-113">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="4e876-113">Application</span></span>                            | <span data-ttu-id="4e876-114">Reports.Read.All</span><span class="sxs-lookup"><span data-stu-id="4e876-114">Reports.Read.All</span></span>                         |
 
-## <a name="http-request"></a><span data-ttu-id="b6917-115">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="b6917-115">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="4e876-115">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="4e876-115">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } --> 
 
@@ -22,43 +22,44 @@
 GET /reports/getOffice365GroupsActivityGroupCounts(period='{period_value}')
 ```
 
-## <a name="request-parameters"></a><span data-ttu-id="b6917-116">要求パラメーター</span><span class="sxs-lookup"><span data-stu-id="b6917-116">Request parameters</span></span>
+## <a name="request-parameters"></a><span data-ttu-id="4e876-116">要求パラメーター</span><span class="sxs-lookup"><span data-stu-id="4e876-116">Request parameters</span></span>
 
-<span data-ttu-id="b6917-117">要求 URL に、次のパラメーターと有効な値を指定します。</span><span class="sxs-lookup"><span data-stu-id="b6917-117">In the request URL, provide the following parameter with a valid value.</span></span>
+<span data-ttu-id="4e876-117">要求 URL に、次のパラメーターと有効な値を指定します。</span><span class="sxs-lookup"><span data-stu-id="4e876-117">In the request URL, provide the following parameter with a valid value.</span></span>
 
-| <span data-ttu-id="b6917-118">パラメーター</span><span class="sxs-lookup"><span data-stu-id="b6917-118">Parameter</span></span> | <span data-ttu-id="b6917-119">型</span><span class="sxs-lookup"><span data-stu-id="b6917-119">Type</span></span>   | <span data-ttu-id="b6917-120">説明</span><span class="sxs-lookup"><span data-stu-id="b6917-120">Description</span></span>                              |
+| <span data-ttu-id="4e876-118">パラメーター</span><span class="sxs-lookup"><span data-stu-id="4e876-118">Parameter</span></span> | <span data-ttu-id="4e876-119">型</span><span class="sxs-lookup"><span data-stu-id="4e876-119">Type</span></span>   | <span data-ttu-id="4e876-120">説明</span><span class="sxs-lookup"><span data-stu-id="4e876-120">Description</span></span>                              |
 | :-------- | :----- | :--------------------------------------- |
-| <span data-ttu-id="b6917-121">period</span><span class="sxs-lookup"><span data-stu-id="b6917-121">period</span></span>    | <span data-ttu-id="b6917-122">文字列</span><span class="sxs-lookup"><span data-stu-id="b6917-122">string</span></span> | <span data-ttu-id="b6917-123">レポートを集計する期間の長さを指定します。</span><span class="sxs-lookup"><span data-stu-id="b6917-123">Specifies the length of time over which the report is aggregated.</span></span> <span data-ttu-id="b6917-124">{period_value} でサポートされている値は D7、D30、D90、D180 です。</span><span class="sxs-lookup"><span data-stu-id="b6917-124">The supported values for {period_value} are: D7, D30, D90, and D180.</span></span> <span data-ttu-id="b6917-125">これらの値は、D*n* の形式 (*n* はレポートを集計する日数) に従います。</span><span class="sxs-lookup"><span data-stu-id="b6917-125">These values follow the format D   where    represents the number of days over which the report is aggregated.</span></span> <span data-ttu-id="b6917-126">必須。</span><span class="sxs-lookup"><span data-stu-id="b6917-126">Required.</span></span> |
+| <span data-ttu-id="4e876-121">period</span><span class="sxs-lookup"><span data-stu-id="4e876-121">period</span></span>    | <span data-ttu-id="4e876-122">文字列</span><span class="sxs-lookup"><span data-stu-id="4e876-122">string</span></span> | <span data-ttu-id="4e876-123">レポートを集計する期間の長さを指定します。</span><span class="sxs-lookup"><span data-stu-id="4e876-123">Specifies the length of time over which the report is aggregated.</span></span> <span data-ttu-id="4e876-124">{period_value} でサポートされている値は D7、D30、D90、D180 です。</span><span class="sxs-lookup"><span data-stu-id="4e876-124">The supported values for {period_value} are: D7, D30, D90, and D180.</span></span> <span data-ttu-id="4e876-125">これらの値は、D*n* の形式 (*n* はレポートを集計する日数) に従います。</span><span class="sxs-lookup"><span data-stu-id="4e876-125">These values follow the format D*n* where *n* represents the number of days over which the report is aggregated.</span></span> <span data-ttu-id="4e876-126">必須。</span><span class="sxs-lookup"><span data-stu-id="4e876-126">Required.</span></span> |
 
-## <a name="request-headers"></a><span data-ttu-id="b6917-127">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="b6917-127">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="4e876-127">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="4e876-127">Request headers</span></span>
 
-| <span data-ttu-id="b6917-128">名前</span><span class="sxs-lookup"><span data-stu-id="b6917-128">Name</span></span>          | <span data-ttu-id="b6917-129">説明</span><span class="sxs-lookup"><span data-stu-id="b6917-129">Description</span></span>                              |
+| <span data-ttu-id="4e876-128">名前</span><span class="sxs-lookup"><span data-stu-id="4e876-128">Name</span></span>          | <span data-ttu-id="4e876-129">説明</span><span class="sxs-lookup"><span data-stu-id="4e876-129">Description</span></span>                              |
 | :------------ | :--------------------------------------- |
-| <span data-ttu-id="b6917-130">Authorization</span><span class="sxs-lookup"><span data-stu-id="b6917-130">Authorization</span></span> | <span data-ttu-id="b6917-p103">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="b6917-p103">Bearer {token}. Required.</span></span>                |
-| <span data-ttu-id="b6917-133">If-None-Match</span><span class="sxs-lookup"><span data-stu-id="b6917-133">If-None-Match</span></span> | <span data-ttu-id="b6917-134">この要求ヘッダーが含まれている場合、指定された eTag がファイルの現在のタグに一致すると、`304 Not Modified` 応答コードが返されます。</span><span class="sxs-lookup"><span data-stu-id="b6917-134">If this request header is included and the eTag provided matches the current tag on the file, a `304 Not Modified` response code is returned.</span></span> <span data-ttu-id="b6917-135">省略可能。</span><span class="sxs-lookup"><span data-stu-id="b6917-135">Optional.</span></span> |
+| <span data-ttu-id="4e876-130">承認</span><span class="sxs-lookup"><span data-stu-id="4e876-130">Authorization</span></span> | <span data-ttu-id="4e876-p103">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="4e876-p103">Bearer {token}. Required.</span></span>                |
+| <span data-ttu-id="4e876-133">If-None-Match</span><span class="sxs-lookup"><span data-stu-id="4e876-133">If-None-Match</span></span> | <span data-ttu-id="4e876-134">この要求ヘッダーが含まれている場合、指定された eTag がファイルの現在のタグに一致すると、`304 Not Modified` 応答コードが返されます。</span><span class="sxs-lookup"><span data-stu-id="4e876-134">If this request header is included and the eTag provided matches the current tag on the file, a `304 Not Modified` response code is returned.</span></span> <span data-ttu-id="4e876-135">省略可能。</span><span class="sxs-lookup"><span data-stu-id="4e876-135">Optional.</span></span> |
 
-## <a name="response"></a><span data-ttu-id="b6917-136">応答</span><span class="sxs-lookup"><span data-stu-id="b6917-136">Response</span></span>
+## <a name="response"></a><span data-ttu-id="4e876-136">応答</span><span class="sxs-lookup"><span data-stu-id="4e876-136">Response</span></span>
 
-<span data-ttu-id="b6917-137">成功すると、レポートの事前認証されたダウンロード URL にリダイレクトする `302 Found` 応答が返されます。</span><span class="sxs-lookup"><span data-stu-id="b6917-137">If successful, this method returns a `302 Found` response that redirects to a preauthenticated download URL for the report.</span></span> <span data-ttu-id="b6917-138">その URL は、応答の `Location` ヘッダー内にあります。</span><span class="sxs-lookup"><span data-stu-id="b6917-138">That URL can be found in the `Location` header in the response.</span></span>
+<span data-ttu-id="4e876-137">成功すると、レポートの事前認証されたダウンロード URL にリダイレクトする `302 Found` 応答が返されます。</span><span class="sxs-lookup"><span data-stu-id="4e876-137">If successful, this method returns a `302 Found` response that redirects to a preauthenticated download URL for the report.</span></span> <span data-ttu-id="4e876-138">その URL は、応答の `Location` ヘッダー内にあります。</span><span class="sxs-lookup"><span data-stu-id="4e876-138">That URL can be found in the `Location` header in the response.</span></span>
 
-<span data-ttu-id="b6917-139">事前認証されたダウンロード URL は、短期間 (数分) のみ有効で、`Authorization` ヘッダーを必要としません。</span><span class="sxs-lookup"><span data-stu-id="b6917-139">Preauthenticated download URLs are only valid for a short period of time (a few minutes) and do not require an `Authorization` header.</span></span>
+<span data-ttu-id="4e876-139">事前認証されたダウンロード URL は、短期間 (数分) のみ有効で、`Authorization` ヘッダーを必要としません。</span><span class="sxs-lookup"><span data-stu-id="4e876-139">Preauthenticated download URLs are only valid for a short period of time (a few minutes) and do not require an `Authorization` header.</span></span>
 
-<span data-ttu-id="b6917-140">この CSV ファイルには、次の列ヘッダーがあります。</span><span class="sxs-lookup"><span data-stu-id="b6917-140">The CSV file has the following headers for columns.</span></span>
+<span data-ttu-id="4e876-140">この CSV ファイルには、次の列ヘッダーがあります。</span><span class="sxs-lookup"><span data-stu-id="4e876-140">The CSV file has the following headers for columns.</span></span>
 
-- <span data-ttu-id="b6917-141">レポートの更新日</span><span class="sxs-lookup"><span data-stu-id="b6917-141">Report Refresh Date</span></span>
-- <span data-ttu-id="b6917-142">合計</span><span class="sxs-lookup"><span data-stu-id="b6917-142">Total</span></span>
-- <span data-ttu-id="b6917-143">アクティブ</span><span class="sxs-lookup"><span data-stu-id="b6917-143">Active</span></span>
-- <span data-ttu-id="b6917-144">レポート日付</span><span class="sxs-lookup"><span data-stu-id="b6917-144">Report Date</span></span>
-- <span data-ttu-id="b6917-145">レポート期間</span><span class="sxs-lookup"><span data-stu-id="b6917-145">Report Period</span></span>
+- <span data-ttu-id="4e876-141">レポートの更新日</span><span class="sxs-lookup"><span data-stu-id="4e876-141">Report Refresh Date</span></span>
+- <span data-ttu-id="4e876-142">合計</span><span class="sxs-lookup"><span data-stu-id="4e876-142">Total</span></span>
+- <span data-ttu-id="4e876-143">アクティブ</span><span class="sxs-lookup"><span data-stu-id="4e876-143">Active</span></span>
+- <span data-ttu-id="4e876-144">レポート日付</span><span class="sxs-lookup"><span data-stu-id="4e876-144">Report Date</span></span>
+- <span data-ttu-id="4e876-145">レポート期間</span><span class="sxs-lookup"><span data-stu-id="4e876-145">Report Period</span></span>
 
-## <a name="example"></a><span data-ttu-id="b6917-146">例</span><span class="sxs-lookup"><span data-stu-id="b6917-146">Example</span></span>
+## <a name="example"></a><span data-ttu-id="4e876-146">例</span><span class="sxs-lookup"><span data-stu-id="4e876-146">Example</span></span>
 
-#### <a name="request"></a><span data-ttu-id="b6917-147">要求</span><span class="sxs-lookup"><span data-stu-id="b6917-147">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="4e876-147">要求</span><span class="sxs-lookup"><span data-stu-id="4e876-147">Request</span></span>
 
-<span data-ttu-id="b6917-148">要求の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="b6917-148">The following is an example of the request.</span></span>
+<span data-ttu-id="4e876-148">要求の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="4e876-148">The following is an example of the request.</span></span>
 
-<!-- {
+<!--{
   "blockType": "request",
+  "isComposable": true,
   "name": "reportroot_getoffice365groupsactivitygroupcounts"
 }-->
 
@@ -66,11 +67,15 @@ GET /reports/getOffice365GroupsActivityGroupCounts(period='{period_value}')
 GET https://graph.microsoft.com/v1.0/reports/getOffice365GroupsActivityGroupCounts(period='D7')
 ```
 
-#### <a name="response"></a><span data-ttu-id="b6917-149">応答</span><span class="sxs-lookup"><span data-stu-id="b6917-149">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="4e876-149">応答</span><span class="sxs-lookup"><span data-stu-id="4e876-149">Response</span></span>
 
-<span data-ttu-id="b6917-150">応答の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="b6917-150">The following is an example of the response.</span></span>
+<span data-ttu-id="4e876-150">応答の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="4e876-150">The following is an example of the response.</span></span>
 
-<!-- { "blockType": "ignored" } --> 
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.report"
+} -->
 
 ```http
 HTTP/1.1 302 Found
@@ -78,13 +83,9 @@ Content-Type: text/plain
 Location: https://reports.office.com/data/download/JDFKdf2_eJXKS034dbc7e0t__XDe
 ```
 
-<span data-ttu-id="b6917-151">302 リダイレクトに従うと、ダウンロードされる CSV ファイルは次のスキーマを持つことになります。</span><span class="sxs-lookup"><span data-stu-id="b6917-151">Follow the 302 redirection and the CSV file that downloads will have the following schema.</span></span>
+<span data-ttu-id="4e876-151">302 リダイレクトに従うと、ダウンロードされる CSV ファイルは次のスキーマを持つことになります。</span><span class="sxs-lookup"><span data-stu-id="4e876-151">Follow the 302 redirection and the CSV file that downloads will have the following schema.</span></span>
 
-<!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "stream"
-} -->
+<!-- { "blockType": "ignored" } --> 
 
 ```http
 HTTP/1.1 200 OK

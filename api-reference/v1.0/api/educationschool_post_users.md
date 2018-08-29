@@ -1,43 +1,43 @@
-# <a name="add-educationuser-to-an-educationschool"></a><span data-ttu-id="52467-101">educationSchool に educationUser を追加する</span><span class="sxs-lookup"><span data-stu-id="52467-101">Add educationUser to an educationSchool</span></span>
+# <a name="add-educationuser-to-an-educationschool"></a><span data-ttu-id="9cf0a-101">educationSchool に educationUser を追加する</span><span class="sxs-lookup"><span data-stu-id="9cf0a-101">Add educationUser to an educationSchool</span></span>
 
-<span data-ttu-id="52467-102">学校にユーザーを追加します。</span><span class="sxs-lookup"><span data-stu-id="52467-102">Add a user to a role</span></span>
+<span data-ttu-id="9cf0a-102">学校にユーザーを追加します。</span><span class="sxs-lookup"><span data-stu-id="9cf0a-102">Add a user to a school.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="52467-103">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="52467-103">Permissions</span></span>
-<span data-ttu-id="52467-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](../../../concepts/permissions_reference.md)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="52467-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).</span></span>
+## <a name="permissions"></a><span data-ttu-id="9cf0a-103">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="9cf0a-103">Permissions</span></span>
+<span data-ttu-id="9cf0a-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](../../../concepts/permissions_reference.md)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="9cf0a-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).</span></span>
 
-|<span data-ttu-id="52467-106">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="52467-106">Permission type</span></span>      | <span data-ttu-id="52467-107">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="52467-107">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="9cf0a-106">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="9cf0a-106">Permission type</span></span>      | <span data-ttu-id="9cf0a-107">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="9cf0a-107">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="52467-108">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="52467-108">Delegated (work or school account)</span></span> |  <span data-ttu-id="52467-109">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="52467-109">Not supported.</span></span>  |
-|<span data-ttu-id="52467-110">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="52467-110">Delegated (personal Microsoft account)</span></span> |  <span data-ttu-id="52467-111">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="52467-111">Not supported.</span></span>  |
-|<span data-ttu-id="52467-112">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="52467-112">Application</span></span> | <span data-ttu-id="52467-113">EduRoster.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="52467-113">EduRoster.ReadWrite.All</span></span> | 
+|<span data-ttu-id="9cf0a-108">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="9cf0a-108">Delegated (work or school account)</span></span> |  <span data-ttu-id="9cf0a-109">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="9cf0a-109">Not supported.</span></span>  |
+|<span data-ttu-id="9cf0a-110">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="9cf0a-110">Delegated (personal Microsoft account)</span></span> |  <span data-ttu-id="9cf0a-111">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="9cf0a-111">Not supported.</span></span>  |
+|<span data-ttu-id="9cf0a-112">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="9cf0a-112">Application</span></span> | <span data-ttu-id="9cf0a-113">EduRoster.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="9cf0a-113">EduRoster.ReadWrite.All</span></span> | 
 
-## <a name="http-request"></a><span data-ttu-id="52467-114">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="52467-114">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="9cf0a-114">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="9cf0a-114">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /education/schools/{id}/users/$ref
 ```
-## <a name="request-headers"></a><span data-ttu-id="52467-115">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="52467-115">Request headers</span></span>
-| <span data-ttu-id="52467-116">ヘッダー</span><span class="sxs-lookup"><span data-stu-id="52467-116">Header</span></span>       | <span data-ttu-id="52467-117">値</span><span class="sxs-lookup"><span data-stu-id="52467-117">Value</span></span> |
+## <a name="request-headers"></a><span data-ttu-id="9cf0a-115">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="9cf0a-115">Request headers</span></span>
+| <span data-ttu-id="9cf0a-116">ヘッダー</span><span class="sxs-lookup"><span data-stu-id="9cf0a-116">Header</span></span>       | <span data-ttu-id="9cf0a-117">値</span><span class="sxs-lookup"><span data-stu-id="9cf0a-117">Value</span></span> |
 |:---------------|:--------|
-| <span data-ttu-id="52467-118">Authorization</span><span class="sxs-lookup"><span data-stu-id="52467-118">Authorization</span></span>  | <span data-ttu-id="52467-p102">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="52467-p102">Bearer {token}. Required.</span></span>  |
-| <span data-ttu-id="52467-121">Content-Type</span><span class="sxs-lookup"><span data-stu-id="52467-121">Content-Type</span></span>  | <span data-ttu-id="52467-122">application/json</span><span class="sxs-lookup"><span data-stu-id="52467-122">application/json</span></span>  |
+| <span data-ttu-id="9cf0a-118">承認</span><span class="sxs-lookup"><span data-stu-id="9cf0a-118">Authorization</span></span>  | <span data-ttu-id="9cf0a-p102">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="9cf0a-p102">Bearer {token}. Required.</span></span>  |
+| <span data-ttu-id="9cf0a-121">Content-Type</span><span class="sxs-lookup"><span data-stu-id="9cf0a-121">Content-Type</span></span>  | <span data-ttu-id="9cf0a-122">アプリケーション /json</span><span class="sxs-lookup"><span data-stu-id="9cf0a-122">application/json</span></span>  |
 
-## <a name="request-body"></a><span data-ttu-id="52467-123">要求本文</span><span class="sxs-lookup"><span data-stu-id="52467-123">Request body</span></span>
-<span data-ttu-id="52467-124">要求本文で、[educationUser](../resources/educationuser.md) オブジェクトの JSON 表記を指定します。</span><span class="sxs-lookup"><span data-stu-id="52467-124">In the request body, supply a JSON representation of an [invitation](../resources/educationuser.md) object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="9cf0a-123">要求本文</span><span class="sxs-lookup"><span data-stu-id="9cf0a-123">Request body</span></span>
+<span data-ttu-id="9cf0a-124">要求本文で、[educationUser](../resources/educationuser.md) オブジェクトの JSON 表記を指定します。</span><span class="sxs-lookup"><span data-stu-id="9cf0a-124">In the request body, supply a JSON representation of an [educationUser](../resources/educationuser.md) object.</span></span>
 
 
-## <a name="response"></a><span data-ttu-id="52467-125">応答</span><span class="sxs-lookup"><span data-stu-id="52467-125">Response</span></span>
-<span data-ttu-id="52467-126">成功した場合、このメソッドは `204 No Content` 応答コードと、応答本文で [educationClass](../resources/educationclass.md) オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="52467-126">If successful, this method returns a `204 No Content` response code and an [event](../resources/educationclass.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="9cf0a-125">応答</span><span class="sxs-lookup"><span data-stu-id="9cf0a-125">Response</span></span>
+<span data-ttu-id="9cf0a-126">成功した場合、このメソッドは `204 No Content` 応答コードと、応答本文で [educationClass](../resources/educationclass.md) オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="9cf0a-126">If successful, this method returns a `204 No Content` response code and an [educationClass](../resources/educationclass.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="52467-127">例</span><span class="sxs-lookup"><span data-stu-id="52467-127">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="52467-128">要求</span><span class="sxs-lookup"><span data-stu-id="52467-128">Request</span></span>
-<span data-ttu-id="52467-129">要求の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="52467-129">The following is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="9cf0a-127">例</span><span class="sxs-lookup"><span data-stu-id="9cf0a-127">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="9cf0a-128">要求</span><span class="sxs-lookup"><span data-stu-id="9cf0a-128">Request</span></span>
+<span data-ttu-id="9cf0a-129">要求の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="9cf0a-129">The following is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "create_educationuser_from_educationschool"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/education/schools/<id>/users/$ref
+POST https://graph.microsoft.com/v1.0/education/schools/{id}/users/$ref
 Content-type: application/json
 Content-length: 56
 
@@ -46,8 +46,8 @@ Content-length: 56
 }
 ```
 
-##### <a name="response"></a><span data-ttu-id="52467-130">応答</span><span class="sxs-lookup"><span data-stu-id="52467-130">Response</span></span>
-<span data-ttu-id="52467-131">応答の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="52467-131">The following is an example of the response.</span></span> 
+##### <a name="response"></a><span data-ttu-id="9cf0a-130">応答</span><span class="sxs-lookup"><span data-stu-id="9cf0a-130">Response</span></span>
+<span data-ttu-id="9cf0a-131">応答の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="9cf0a-131">The following is an example of the response.</span></span> 
 
 <!-- Add the educationClass resource to the response. -->
 

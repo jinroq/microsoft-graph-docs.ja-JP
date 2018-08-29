@@ -1,56 +1,57 @@
-# <a name="get-domain"></a><span data-ttu-id="8f62a-101">ドメインを取得する</span><span class="sxs-lookup"><span data-stu-id="8f62a-101">Get domain</span></span>
+# <a name="get-domain"></a><span data-ttu-id="757e8-101">ドメインを取得する</span><span class="sxs-lookup"><span data-stu-id="757e8-101">Get domain</span></span>
 
-<span data-ttu-id="8f62a-102">ドメイン オブジェクトのプロパティとリレーションシップを取得します。</span><span class="sxs-lookup"><span data-stu-id="8f62a-102">Retrieve the properties and relationships of domain object.</span></span>
+<span data-ttu-id="757e8-102">ドメイン オブジェクトのプロパティとリレーションシップを取得します。</span><span class="sxs-lookup"><span data-stu-id="757e8-102">Retrieve the properties and relationships of domain object.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="8f62a-103">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="8f62a-103">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="757e8-103">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="757e8-103">Permissions</span></span>
 
-<span data-ttu-id="8f62a-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](../../../concepts/permissions_reference.md)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="8f62a-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).</span></span>
+<span data-ttu-id="757e8-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](../../../concepts/permissions_reference.md)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="757e8-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).</span></span>
 
 
-|<span data-ttu-id="8f62a-106">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="8f62a-106">Permission type</span></span>      | <span data-ttu-id="8f62a-107">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="8f62a-107">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="757e8-106">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="757e8-106">Permission type</span></span>      | <span data-ttu-id="757e8-107">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="757e8-107">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="8f62a-108">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="8f62a-108">Delegated (work or school account)</span></span> | <span data-ttu-id="8f62a-109">Directory.Read.All</span><span class="sxs-lookup"><span data-stu-id="8f62a-109">Directory.Read.All</span></span>    |
-|<span data-ttu-id="8f62a-110">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="8f62a-110">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="8f62a-111">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="8f62a-111">Not supported.</span></span>    |
-|<span data-ttu-id="8f62a-112">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="8f62a-112">Application</span></span> | <span data-ttu-id="8f62a-113">Directory.Read.All、Domain.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="8f62a-113">Directory.Read.All, Domain.ReadWrite.All</span></span> |
+|<span data-ttu-id="757e8-108">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="757e8-108">Delegated (work or school account)</span></span> | <span data-ttu-id="757e8-109">Directory.Read.All</span><span class="sxs-lookup"><span data-stu-id="757e8-109">Directory.Read.All</span></span>    |
+|<span data-ttu-id="757e8-110">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="757e8-110">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="757e8-111">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="757e8-111">Not supported.</span></span>    |
+|<span data-ttu-id="757e8-112">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="757e8-112">Application</span></span> | <span data-ttu-id="757e8-113">Directory.Read.All、Domain.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="757e8-113">Directory.Read.All, Domain.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="8f62a-114">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="8f62a-114">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="757e8-114">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="757e8-114">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /domains/{id}
 ```
 
-> <span data-ttu-id="8f62a-115">{Id} には、ドメインを完全修飾ドメイン名で指定します。</span><span class="sxs-lookup"><span data-stu-id="8f62a-115">For {id}, specify the domain with its fully qualified domain name.</span></span>
+> <span data-ttu-id="757e8-115">{Id} には、ドメインを完全修飾ドメイン名で指定します。</span><span class="sxs-lookup"><span data-stu-id="757e8-115">For {id}, specify the domain with its fully qualified domain name.</span></span>
 
-## <a name="optional-query-parameters"></a><span data-ttu-id="8f62a-116">オプションのクエリ パラメーター</span><span class="sxs-lookup"><span data-stu-id="8f62a-116">Optional query parameters</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="757e8-116">オプションのクエリ パラメーター</span><span class="sxs-lookup"><span data-stu-id="757e8-116">Optional query parameters</span></span>
 
-<span data-ttu-id="8f62a-117">このメソッドは、応答をカスタマイズするための [OData クエリ パラメーター](http://graph.microsoft.io/docs/overview/query_parameters)をサポートします。</span><span class="sxs-lookup"><span data-stu-id="8f62a-117">This method supports the [OData Query Parameters](http://graph.microsoft.io/docs/overview/query_parameters) to help customize the response.</span></span>
+<span data-ttu-id="757e8-117">このメソッドは、応答をカスタマイズするための [OData クエリ パラメーター](http://graph.microsoft.io/docs/overview/query_parameters)をサポートします。</span><span class="sxs-lookup"><span data-stu-id="757e8-117">This method supports the [OData Query Parameters](http://graph.microsoft.io/docs/overview/query_parameters) to help customize the response.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="8f62a-118">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="8f62a-118">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="757e8-118">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="757e8-118">Request headers</span></span>
 
-| <span data-ttu-id="8f62a-119">名前</span><span class="sxs-lookup"><span data-stu-id="8f62a-119">Name</span></span>      |<span data-ttu-id="8f62a-120">説明</span><span class="sxs-lookup"><span data-stu-id="8f62a-120">Description</span></span>|
+| <span data-ttu-id="757e8-119">名前</span><span class="sxs-lookup"><span data-stu-id="757e8-119">Name</span></span>      |<span data-ttu-id="757e8-120">説明</span><span class="sxs-lookup"><span data-stu-id="757e8-120">Description</span></span>|
 |:----------|:----------|
-| <span data-ttu-id="8f62a-121">Authorization</span><span class="sxs-lookup"><span data-stu-id="8f62a-121">Authorization</span></span>  | <span data-ttu-id="8f62a-p102">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="8f62a-p102">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="8f62a-124">Content-Type</span><span class="sxs-lookup"><span data-stu-id="8f62a-124">Content-Type</span></span>  | <span data-ttu-id="8f62a-125">application/json</span><span class="sxs-lookup"><span data-stu-id="8f62a-125">application/json</span></span> |
+| <span data-ttu-id="757e8-121">承認</span><span class="sxs-lookup"><span data-stu-id="757e8-121">Authorization</span></span>  | <span data-ttu-id="757e8-p102">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="757e8-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="757e8-124">Content-Type</span><span class="sxs-lookup"><span data-stu-id="757e8-124">Content-Type</span></span>  | <span data-ttu-id="757e8-125">アプリケーション /json</span><span class="sxs-lookup"><span data-stu-id="757e8-125">application/json</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="8f62a-126">要求本文</span><span class="sxs-lookup"><span data-stu-id="8f62a-126">Request body</span></span>
-<span data-ttu-id="8f62a-127">このメソッドには、要求本文を指定しません。</span><span class="sxs-lookup"><span data-stu-id="8f62a-127">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="757e8-126">要求本文</span><span class="sxs-lookup"><span data-stu-id="757e8-126">Request body</span></span>
+<span data-ttu-id="757e8-127">このメソッドには、要求本文を指定しません。</span><span class="sxs-lookup"><span data-stu-id="757e8-127">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="8f62a-128">応答</span><span class="sxs-lookup"><span data-stu-id="8f62a-128">Response</span></span>
+## <a name="response"></a><span data-ttu-id="757e8-128">応答</span><span class="sxs-lookup"><span data-stu-id="757e8-128">Response</span></span>
 
-<span data-ttu-id="8f62a-129">成功した場合、このメソッドは `200 OK` 応答コードと、応答本文で [domain](../resources/domain.md) オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="8f62a-129">If successful, this method returns a `200 OK` response code and [domain](../resources/domain.md) object in the response body.</span></span>
-## <a name="example"></a><span data-ttu-id="8f62a-130">例</span><span class="sxs-lookup"><span data-stu-id="8f62a-130">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="8f62a-131">要求</span><span class="sxs-lookup"><span data-stu-id="8f62a-131">Request</span></span>
+<span data-ttu-id="757e8-129">成功した場合、このメソッドは `200 OK` 応答コードと、応答本文で [domain](../resources/domain.md) オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="757e8-129">If successful, this method returns a `200 OK` response code and [domain](../resources/domain.md) object in the response body.</span></span>
+## <a name="example"></a><span data-ttu-id="757e8-130">例</span><span class="sxs-lookup"><span data-stu-id="757e8-130">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="757e8-131">要求</span><span class="sxs-lookup"><span data-stu-id="757e8-131">Request</span></span>
 
 <!-- {
   "blockType": "request",
+  "sampleKeys": ["contoso.com"],
   "name": "get_domain"
 }-->
 ```http
 GET https://graph.microsoft.com/v1.0/domains/contoso.com
 ```
-##### <a name="response"></a><span data-ttu-id="8f62a-132">応答</span><span class="sxs-lookup"><span data-stu-id="8f62a-132">Response</span></span>
-<span data-ttu-id="8f62a-p103">注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。</span><span class="sxs-lookup"><span data-stu-id="8f62a-p103">Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="757e8-132">応答</span><span class="sxs-lookup"><span data-stu-id="757e8-132">Response</span></span>
+<span data-ttu-id="757e8-p103">注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。</span><span class="sxs-lookup"><span data-stu-id="757e8-p103">Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
