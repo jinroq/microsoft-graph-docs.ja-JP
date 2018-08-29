@@ -3,12 +3,12 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
 ms.topic: conceptual
-ms.openlocfilehash: 30f98afa7b75784b0ee2b9ec446c6389cc876949
-ms.sourcegitcommit: af8fdd5ea762fb54b7fbebb9a70bd942a56c6b7a
+ms.openlocfilehash: 2dc0ecdf553b41b92202a2d5835108f2861adfa2
+ms.sourcegitcommit: abf4b739257e3ffd9d045f783ec595d846172590
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/25/2018
-ms.locfileid: "19473154"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23280761"
 ---
 # <a name="working-with-long-running-actions-beta"></a>長時間実行アクションの処理 (ベータ版)
 
@@ -64,7 +64,7 @@ Location: https://api.onedrive.com/monitor/4A3407B5-88FC-4504-8B21-0AABD3412717
 コピー アクションの状態を確認するために、アプリは前の応答で提供された URL に要求を行います。
 *注:* この要求には、認証は必要ありません。この URL の有効期間は短く、最初の呼び出し元に一意であるためです。 
 
-<!-- { "blockType": "request", "name": "lro-check-status", "scopes": "files.readwrite" } -->
+<!-- { "blockType": "request", "opaqueUrl": true, "name": "lro-check-status", "scopes": "files.readwrite" } -->
 
 ```http
 GET https://api.onedrive.com/monitor/4A3407B5-88FC-4504-8B21-0AABD3412717
@@ -93,7 +93,7 @@ Content-type: application/json
 コピー操作が完了してから数秒経過しています。
 このときにアプリがモニター URL に要求を送信すると、完了したアクションの結果にリダイレクトする応答が返されます。
 
-<!-- { "blockType": "request", "name": "lro-check-status-complete", "scopes": "files.readwrite" } -->
+<!-- { "blockType": "request", "opaqueUrl": true, "name": "lro-check-status-complete", "scopes": "files.readwrite" } -->
 
 ```http
 GET https://api.onedrive.com/monitor/4A3407B5-88FC-4504-8B21-0AABD3412717
@@ -119,13 +119,17 @@ Content-type: application/json
 ジョブが完了すると、モニター URL が結果の resourceId を返します。ここでは、元のアイテムの新しいコピーを返します。
 resourceId を使用してこの新しいアイテムに対処することができます。次に例を示します。
 
-<!-- { "blockType": "request", "name": "lro-copy-item-example-complete", "scopes": "files.readwrite" } -->
+<!-- {
+  "blockType": "request",
+  "name": "lro-copy-item-example-complete",
+  "scopes": "files.readwrite"
+} -->
 
 ```http
-GET https://graph.microsoft.com/beta/me/drive/items/01MOWKYVJML57KN2ANMBA3JZJS2MBGC7KM
+GET https://graph.microsoft.com/beta/me/drive/items/{item-id}
 ```
 
-<!-- { "blockType": "response", "@odata.type": "microsoft.graph.driveItem" } -->
+<!-- { "blockType": "response", "@odata.type": "microsoft.graph.driveItem", "truncated": true } -->
 
 ```http
 HTTP/1.1 200 OK
@@ -159,5 +163,11 @@ Content-type: application/json
   "description": "Monitor the progress of long-running actions in the API.",
   "keywords": "monitor,long,running,operation,action",
   "section": "documentation",
+  "suppressions": [
+    "Error: lro-check-status:
+      Unable to locate a definition for resource type: microsoft.graph.asyncJobStatus",
+    "Error: lro-check-status-complete:
+      Unable to locate a definition for resource type: microsoft.graph.asyncJobStatus"
+  ],
   "tocPath": "Concepts/Long running actions"
 } -->
