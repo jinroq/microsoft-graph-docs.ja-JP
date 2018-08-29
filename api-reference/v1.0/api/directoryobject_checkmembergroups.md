@@ -22,15 +22,15 @@ POST /directoryObjects/{id}/checkMemberGroups
 ## <a name="request-headers"></a>要求ヘッダー
 | 名前       | 型 | 説明|
 |:---------------|:--------|:----------|
-| Authorization  | string  | ベアラー {トークン}。必須。 |
-| Content-Type  | application/json  |
+| 承認  | 文字列  | ベアラー {トークン}。必須。 |
+| コンテンツ タイプ  | 文字列 | アプリケーションまたは json  |
 
 ## <a name="request-body"></a>要求本文
 要求本文で、次のパラメーターを含む JSON オブジェクトを指定します。
 
 | パラメーター    | 型   |説明|
 |:---------------|:--------|:----------|
-|groupIds|String|メンバーシップを確認するためのグループのオブジェクト ID を含むコレクションです。最大 20 グループを指定することが可能です。|
+|groupIds|文字列コレクション|メンバーシップを確認するためのグループのオブジェクト ID を含むコレクションです。最大 20 グループを指定することが可能です。|
 
 ## <a name="response"></a>応答
 
@@ -45,13 +45,13 @@ POST /directoryObjects/{id}/checkMemberGroups
   "name": "directoryobject_checkmembergroups"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/me/checkMemberGroups
+POST https://graph.microsoft.com/v1.0/directoryObjects/{id}/checkMemberGroups
 Content-type: application/json
 
 {
   "groupIds": [
-        "fee2c45b-915a-4a64-b130-f4eb9e75525e",
-        "4fe90ae7-065a-478b-9400-e0a0e1cbd540"
+        "fee2c45b-915a-4a64b130f4eb9e75525e",
+        "4fe90ae065a-478b9400e0a0e1cbd540"
   ]
 }
 ```

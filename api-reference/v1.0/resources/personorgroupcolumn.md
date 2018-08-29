@@ -3,11 +3,12 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/11/2017
 title: PersonOrGroupColumn
-ms.openlocfilehash: 715c6ca22957cbd951784e6cf32edf2bf47f1098
-ms.sourcegitcommit: 7aea7a97e36e6d146214de3a90fdbc71628aadba
+ms.openlocfilehash: 37c324ddb1863e3e589e7d17ea60bd879e50771f
+ms.sourcegitcommit: abf4b739257e3ffd9d045f783ec595d846172590
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23267557"
 ---
 # <a name="personorgroupcolumn-resource-type"></a>PersonOrGroupColumn リソースの種類
 
@@ -28,17 +29,17 @@ ms.lasthandoff: 09/28/2017
 
 ## <a name="properties"></a>プロパティ
 
-| プロパティ名              | 種類    | 説明
+| プロパティ名              | 型    | 説明
 |:---------------------------|:--------|:--------------------------------------
-| **allowMultipleSelection** | boolean | ソースから複数の値を選択できるかどうかを示します。
-| **displayAs**              | string  | 選択された個人またはグループについての情報を表示する方法。 以下を参照してください。
-| **chooseFromType**         | string  | 個人のみ選択、または個人とグループの選択が可能かどうか。 `peopleAndGroups` または `peopleOnly` のいずれかでなければなりません。
+| **allowMultipleSelection** | ブール値 | ソースから複数の値を選択できるかどうかを示します。
+| **displayAs**              | 文字列  | 選択された個人またはグループについての情報を表示する方法。 以下を参照してください。
+| **chooseFromType**         | 文字列  | 個人のみ選択、または個人とグループの選択が可能かどうか。 `peopleAndGroups` または `peopleOnly` のいずれかでなければなりません。
 
-## <a name="displayas-values"></a>DisplayAs 値
+## <a name="displayas-options"></a>DisplayAs オプション
 
 | DisplayAs 値               | 説明
 |:------------------------------|:-----------------------
-| **account**                   | 個人またはグループの、エンコードされた未加工の SharePoint 要求文字列 (たとえば、 i:0#.f|membership|jane@contoso.com)。
+| **アカウント**                   | 個人またはグループの、未加工の SharePoint エンコードの要求文字列 (たとえば i:0#.f|メンバーシップ|jane@contoso.com)。
 | **department**                | 個人またはグループの部門。
 | **firstName**                 | 個人の名。
 | **id**                        | ディレクトリ内の個人またはグループの ID。
@@ -64,5 +65,11 @@ ms.lasthandoff: 09/28/2017
   "description": "",
   "keywords": "",
   "section": "documentation",
+  "suppressions": [
+    "Warning: /api-reference/v1.0/resources/personorgroupcolumn.md:
+      Found potential enums in resource example that weren't defined in a table:(peopleAndGroups,peopleOnly) are in resource, but () are in table",
+    "Warning: /api-reference/v1.0/resources/personorgroupcolumn.md:
+      Found potential enums in resource example that weren't defined in a table:(account,contentType,created,department,...) are in resource, but () are in table"
+  ],
   "tocPath": "Resources/PersonOrGroupColumn"
 } -->

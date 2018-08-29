@@ -7,7 +7,7 @@
 [groupAssignmentTarget](../resources/intune_shared_groupassignmenttarget.md) からの継承
 
 ## <a name="properties"></a>プロパティ
-|プロパティ|型|説明|
+|プロパティ|タイプ|説明|
 |:---|:---|:---|
 |groupId|文字列|割り当てのターゲットとなるグループ ID です。 [groupAssignmentTarget](../resources/intune_shared_groupassignmenttarget.md) からの継承|
 
@@ -17,7 +17,7 @@
 以下は、リソースの JSON 表記です。
 <!-- {
   "blockType": "resource",
-  "keyProperty": "id",
+  "baseType": "microsoft.graph.groupAssignmentTarget",
   "@odata.type": "microsoft.graph.exclusionGroupAssignmentTarget"
 }
 -->

@@ -2,17 +2,18 @@
 author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
-ms.openlocfilehash: 9de6923146b915207fc771721d7aeb6767e9f99e
-ms.sourcegitcommit: 7aea7a97e36e6d146214de3a90fdbc71628aadba
+ms.openlocfilehash: 92882910ecf86d19e1f0a8a5767d148f5aa95775
+ms.sourcegitcommit: abf4b739257e3ffd9d045f783ec595d846172590
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23264036"
 ---
 # <a name="hashes-resource-type"></a>ハッシュ リソースの種類
 
- **ハッシュ** リソースは、利用可能なハッシュをアイテムの 1 つの構造にグループ化します。
+**ハッシュ** リソースは、利用可能なハッシュをアイテムの 1 つの構造にグループ化します。
 
-**注:**すべてのサービスで、表示されているすべてのハッシュ プロパティに対して値が指定されているわけではありません。
+**注:** すべてのサービスで、表示されているすべてのハッシュ プロパティに対して値が指定されているわけではありません。
 
 ## <a name="json-representation"></a>JSON 表記
 
@@ -34,13 +35,13 @@ ms.lasthandoff: 09/28/2017
 
 ## <a name="properties"></a>プロパティ
 
-| プロパティ         | 型   | 説明                                                       |
+| プロパティ         | タイプ   | 説明                                                       |
 |:-----------------|:-------|:------------------------------------------------------------------|
-| **sha1Hash**     | String | ファイルの内容の SHA1 ハッシュ (使用可能な場合)。読み取り専用。 |
-| **crc32Hash**    | String | ファイルの CRC32 の値 (使用可能な場合)。読み取り専用。            |
-| **quickXorHash** | String | ファイルの内容が変更されているかどうかの判別に使用できるファイルの専用ハッシュ (使用可能な場合)。読み取り専用。 |
+| **sha1Hash**     | 文字列 | ファイルの内容の SHA1 ハッシュ (使用可能な場合)。読み取り専用。 |
+| **crc32Hash**    | 文字列 | リトルエンディアン (ある場合) 内のファイルの CRC32 の値です。 読み取り専用。            |
+| **quickXorHash** | 文字列 | ファイルの内容が変更されているかどうかの判別に使用できるファイルの専用ハッシュ (使用可能な場合)。読み取り専用。 |
 
-**注:**ハッシュ値が使用可能ではない場合があります。その場合、アイテムのハッシュ値は、アイテムがダウンロードされた後に更新されます。
+**注:** ハッシュ値が使用可能ではない場合があります。その場合、アイテムのハッシュ値は、アイテムがダウンロードされた後に更新されます。
 
 ## <a name="remarks"></a>注釈
 
@@ -48,7 +49,7 @@ OneDrive for Business および SharePoint Server 2016 では、**sha1Hash** と
 
 OneDrive 個人用では、**quickXorHash** は利用できません。
 
-ファイルに対する **quickXorHash** を計算する場合は、「[QuickXorHash スニペット](https://dev.onedrive.com/snippets/quickxorhash.htm)」を参照してください。
+ファイルに対する **quickXorHash** を計算する場合は、[QuickXorHash スニペット](https://dev.onedrive.com/snippets/quickxorhash.htm)を参照してください。
 DriveItem のファセットの詳細については、「[DriveItem](driveitem.md)」を参照してください。
 
 

@@ -1,6 +1,6 @@
 # <a name="create-deviceinstallstate"></a>deviceInstallState の作成
 
-> **注:**Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
+> **注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
 
 新しい [deviceInstallState](../resources/intune_books_deviceinstallstate.md) オブジェクトを作成します。
 ## <a name="prerequisites"></a>前提条件
@@ -25,25 +25,25 @@ POST /deviceAppManagement/managedEBooks/{managedEBookId}/userStateSummary/{userI
 ## <a name="request-headers"></a>要求ヘッダー
 |ヘッダー|値|
 |:---|:---|
-|Authorization|ベアラー &lt;トークン&gt; が必要です。|
-|Accept|application/json|
+|承認|ベアラー &lt;トークン&gt; が必須。|
+|承諾|application/json|
 
 ## <a name="request-body"></a>要求本文
 要求本文で、deviceInstallState オブジェクトの JSON 表記を指定します。
 
 次の表に、deviceInstallState の作成時に必要なプロパティを示します。
 
-|プロパティ|型|説明|
+|プロパティ|タイプ|説明|
 |:---|:---|:---|
-|id|String|エンティティのキー。|
-|deviceName|String|デバイス名。|
-|deviceId|String|デバイス ID。|
+|ID|文字列|エンティティのキー。|
+|deviceName|文字列|デバイス名。|
+|deviceId|文字列|デバイス ID。|
 |lastSyncDateTime|DateTimeOffset|最後の同期日時。|
-|installState|String|電子ブックのインストールの状態。 可能な値は、`notApplicable`、`installed`、`failed`、`notInstalled`、`uninstallFailed`、`unknown` です。|
-|errorCode|String|インストール失敗のエラー コード。|
-|osVersion|String|OS バージョン。|
-|osDescription|String|OS の説明。|
-|userName|String|デバイスのユーザー名。|
+|installState|[installState](../resources/intune_books_installstate.md)|電子ブックのインストールの状態。 指定できる値は、`notApplicable`、`installed`、`failed`、`notInstalled`、`uninstallFailed`、`unknown` です。|
+|errorCode|文字列|インストール失敗のエラー コード。|
+|osVersion|文字列|OS バージョン。|
+|osDescription|文字列|OS の説明。|
+|userName|文字列|デバイスのユーザー名。|
 
 
 

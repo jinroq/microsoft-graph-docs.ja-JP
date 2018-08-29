@@ -8,13 +8,13 @@
 | メソッド           | 戻り値の型    |説明|
 |:---------------|:--------|:----------|
 |[FormatProtection を取得する](../api/formatprotection_get.md) | [FormatProtection](formatprotection.md) |formatProtection オブジェクトのプロパティと関係を読み取ります。|
-|[Update](../api/formatprotection_update.md) | [FormatProtection](formatprotection.md)    |FormatProtection オブジェクトを更新します。 |
+|[更新する](../api/formatprotection_update.md) | [FormatProtection](formatprotection.md)  |FormatProtection オブジェクトを更新します。 |
 
 ## <a name="properties"></a>プロパティ
-| プロパティ       | 型    |説明|
+| プロパティ     | タイプ   |説明|
 |:---------------|:--------|:----------|
-|formulaHidden|boolean|Excel が範囲内のセルの数式を非表示にするかどうかを示します。null 値は、範囲全体に一様な数式非表示設定がないことを表します。|
-|locked|boolean|Excel がオブジェクト内のセルをロックするかどうかを示します。null 値は、範囲全体に一様なロック設定がないことを表します。|
+|formulaHidden|ブーリアン|Excel が範囲内のセルの数式を非表示にするかどうかを示します。null 値は、範囲全体に一様な数式非表示設定がないことを表します。|
+|locked|ブーリアン|Excel がオブジェクト内のセルをロックするかどうかを示します。null 値は、範囲全体に一様なロック設定がないことを表します。|
 
 ## <a name="relationships"></a>リレーションシップ
 なし
@@ -26,10 +26,11 @@
 
 <!-- {
   "blockType": "resource",
+  "baseType": "microsoft.graph.entity",
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.formatProtection"
+  "@odata.type": "microsoft.graph.workbookFormatProtection"
 }-->
 
 ```json

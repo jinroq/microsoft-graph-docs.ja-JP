@@ -1,36 +1,32 @@
-<a id="planneruser-resource-type" class="xliff"></a>
-# plannerUser リソースの種類
+# <a name="planneruser-resource-type"></a>plannerUser リソースの種類
 
 **plannerUser** リソースは、[user](user.md) のプランナー リソースへのアクセスを提供します。使用可能なプロパティは含まれていません。
 
 
-<a id="methods" class="xliff"></a>
-## メソッド
+## <a name="methods"></a>メソッド
 
 | メソッド           | 戻り値の型    |説明|
 |:---------------|:--------|:----------|
 |[plans を一覧表示する](../api/planneruser_list_plans.md) |[plannerPlan](plannerplan.md) コレクション| **plannerPlan** オブジェクト コレクションを取得します。|
-|[List tasks](../api/planneruser_list_tasks.md) |[plannerTask](plannertask.md) コレクション| **plannerTask** オブジェクト コレクションを取得します。|
+|[Tasks を一覧表示する](../api/planneruser_list_tasks.md) |[plannerTask](plannertask.md) コレクション| **plannerTask** オブジェクト コレクションを取得します。|
 
-<a id="properties" class="xliff"></a>
-## プロパティ
-| プロパティ     | 型   |説明|
+## <a name="properties"></a>プロパティ
+| プロパティ     | タイプ   |説明|
 |:---------------|:--------|:----------|
-|id|String| 読み取り専用です。planenrUser の識別子|
+|id|文字列| 読み取り専用です。planenrUser の識別子|
 
-<a id="relationships" class="xliff"></a>
-## リレーションシップ
+## <a name="relationships"></a>リレーションシップ
 | リレーションシップ | 型   |説明|
 |:---------------|:--------|:----------|
 |plans|[plannerPlan](plannerplan.md) コレクション| 読み取り専用です。Null 許容型。ユーザーに割り当てられている [plannerTasks](plannertask.md) を返します。|
 |tasks|[plannerTask](plannertask.md) コレクション| 読み取り専用です。Null 許容型。ユーザーと共有している [plannerPlans](plannerplan.md) を返します。|
 
-<a id="json-representation" class="xliff"></a>
-## JSON 表記
+## <a name="json-representation"></a>JSON 表記
 以下は、リソースの JSON 表記です。
 
 <!-- {
   "blockType": "resource",
+  "baseType": "microsoft.graph.entity",
   "optionalProperties": [
 
   ],

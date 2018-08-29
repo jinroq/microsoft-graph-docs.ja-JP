@@ -1,33 +1,29 @@
-<a id="plannergroup-resource-type" class="xliff"></a>
-# plannerGroup リソースの種類
+# <a name="plannergroup-resource-type"></a>plannerGroup リソースの種類
 
 **plannerGroup** リソースは、[group](group.md) の Planner リソースへのアクセスを提供します。使用可能なプロパティは含まれていません。
 
-<a id="methods" class="xliff"></a>
-## メソッド
+## <a name="methods"></a>メソッド
 
 | メソッド           | 戻り値の型    |説明|
 |:---------------|:--------|:----------|
 |[plans を一覧表示する](../api/plannergroup_list_plans.md) |[plannerPlan](plannerplan.md) コレクション| **plannerPlan** オブジェクト コレクションを取得します。|
 
-<a id="properties" class="xliff"></a>
-## プロパティ
-| プロパティ     | 型   |説明|
+## <a name="properties"></a>プロパティ
+| プロパティ     | タイプ   |説明|
 |:---------------|:--------|:----------|
-|id|String| 読み取り専用です。**plannerGroup** の識別子|
+|id|文字列| 読み取り専用です。**plannerGroup** の識別子|
 
-<a id="relationships" class="xliff"></a>
-## リレーションシップ
+## <a name="relationships"></a>リレーションシップ
 | リレーションシップ | 型   |説明|
 |:---------------|:--------|:----------|
 |plans|[plannerPlan](plannerplan.md) コレクション| 読み取り専用です。Null 許容型。グループが所有する [plannerPlans](plannerplan.md) を返します。|
 
-<a id="json-representation" class="xliff"></a>
-## JSON 表記
+## <a name="json-representation"></a>JSON 表記
 以下は、リソースの JSON 表記です。
 
 <!-- {
   "blockType": "resource",
+  "baseType": "microsoft.graph.entity",
   "optionalProperties": [
 
   ],

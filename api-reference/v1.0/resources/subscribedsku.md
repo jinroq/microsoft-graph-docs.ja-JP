@@ -8,19 +8,19 @@
 | メソッド           | 戻り値の型    |説明|
 |:---------------|:--------|:----------|
 |[subscribedSku を取得する](../api/subscribedsku_get.md) | [subscribedSku](subscribedsku.md) |subscribedSku オブジェクトのプロパティとリレーションシップを読み取ります。|
-|[List subscribedsku](../api/subscribedsku_list.md) | [subscribedSku](subscribedsku.md) コレクション |組織で取得した商用サブスクリプションの一覧を取得します。|
+|[subscribedSku を一覧表示する](../api/subscribedsku_list.md) | [subscribedSku](subscribedsku.md) コレクション |組織で取得した商用サブスクリプションの一覧を取得します。|
 
 ## <a name="properties"></a>プロパティ
-| プロパティ       | 型    |説明|
+| プロパティ     | タイプ   |説明|
 |:---------------|:--------|:----------|
-|appliesTo|String| "User" や "Company" など。 |
-|capabilityStatus|String| 「有効」など。 |
+|appliesTo|文字列| "User" や "Company" など。 |
+|capabilityStatus|文字列| 「有効」など。 |
 |consumedUnits|Int32| 割り当てられたライセンスの数。 |
-|id|String| 購読している SKU オブジェクトの一意識別子。キーであり、null 許容ではありません。 |
+|ID|文字列| 購読している SKU オブジェクトの一意識別子。キーであり、null 許容ではありません。 |
 |prepaidUnits|[licenseUnitsDetail](licenseunitsdetail.md)| プリペイド ライセンスの数と状態に関する情報。 |
 |servicePlans|[servicePlanInfo](serviceplaninfo.md) コレクション| SKU と併用できるサービス プランに関する情報。null 許容ではありません |
 |skuId|Guid| サービス SKU の一意識別子 (GUID)。 |
-|skuPartNumber|String| SKU 部品番号。"AAD_PREMIUM" や "RMSBASIC" など。 |
+|skuPartNumber|文字列| SKU 部品番号。"AAD_PREMIUM" や "RMSBASIC" など。 |
 
 ## <a name="relationships"></a>リレーションシップ
 なし
@@ -29,13 +29,25 @@
 
 以下は、リソースの JSON 表記です
 
-<!-- {
+<!--{
   "blockType": "resource",
-  "optionalProperties": [
-
-  ],
+  "optionalProperties": [],
   "keyProperty": "id",
-  "@odata.type": "microsoft.graph.subscribedSku"
+  "baseType": "microsoft.graph.entity",
+  "@odata.type": "microsoft.graph.subscribedSku",
+  "@odata.annotations": [
+    {
+      "capabilities": {
+        "skippable": false,
+        "toppable": false,
+        "countable": false,
+        "expandable": false,
+        "filterable": false,
+        "referenceable": false,
+        "selectable": false
+      }
+    }
+  ]
 }-->
 
 ```json

@@ -4,10 +4,10 @@
 
 ## <a name="properties"></a>プロパティ
 
-| プロパティ | 型           | 説明 |
+| プロパティ | タイプ           | 説明 |
 |:---------|:---------------|:------------|
-| response | String         | 応答の種類。 可能な値は `None`、`Organizer`、`TentativelyAccepted`、`Accepted`、`Declined`、`NotResponded` です。
-| time     | DateTimeOffset | 応答が返された日時。 ISO 8601 形式を使って表され、常に UTC 時間です。 たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、次のようになります。`'2014-01-01T00:00:00Z'`
+| response | ResponseType   | 応答の種類。 指定できる値: `None`、`Organizer`、`TentativelyAccepted`、`Accepted`、`Declined`、`NotResponded`。
+| time     | DateTimeOffset | 応答が返された日時。ISO 8601 形式を使って表され、常に UTC 時間です。たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、次のようになります。 `'2014-01-01T00:00:00Z'`
 
 ## <a name="json-representation"></a>JSON 表記
 

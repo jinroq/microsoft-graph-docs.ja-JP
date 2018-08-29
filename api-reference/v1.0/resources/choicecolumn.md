@@ -3,15 +3,16 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/11/2017
 title: ChoiceColumn
-ms.openlocfilehash: c266550e8918603c3ee6104818c0aa721f1281d9
-ms.sourcegitcommit: 7aea7a97e36e6d146214de3a90fdbc71628aadba
+ms.openlocfilehash: 9feb49fc9c581a4518f63a0367087d54de32cff4
+ms.sourcegitcommit: abf4b739257e3ffd9d045f783ec595d846172590
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23264071"
 ---
 # <a name="choicecolumn-resource-type"></a>ChoiceColumn リソースの種類
 
-[columnDefinition](columnDefinition.md) リソースの **choiceColumn** は、選択肢のリストから列の値を選択できることを示します。
+[columnDefinition ](columnDefinition.md)リソースの** choiceColumn **は、選択肢のリストから列の値を選択できることを示します。
 
 ## <a name="json-representation"></a>JSON 表記
 
@@ -28,11 +29,11 @@ ms.lasthandoff: 09/28/2017
 
 ## <a name="properties"></a>プロパティ
 
-| プロパティ名      | 種類               | 説明
+| プロパティ名      | 型               | 説明
 |:-------------------|:-------------------|:----------------------------------------------
-| **allowTextEntry** | boolean            | true の場合、設定された選択肢にないカスタム値を使用できます。
+| **allowTextEntry** | ブール値            | true の場合、設定された選択肢にないカスタム値を使用できます。
 | **choices**        | collection(string) | この列に使用可能な値のリスト。
-| **displayAs**      | string             | UX での選択肢の表示方法。 `checkBoxes`、`dropDownMenu`、`radioButtons` のいずれかでなければなりません
+| **displayAs**      | 文字列             | UX での選択肢の表示方法。 、`dropDownMenu`、`radioButtons` のいずれかでなければなりません。 `radioButtons`
 
 
 <!-- {
@@ -40,5 +41,9 @@ ms.lasthandoff: 09/28/2017
   "description": "",
   "keywords": "",
   "section": "documentation",
+  "suppressions": [
+    "Warning: /api-reference/v1.0/resources/choicecolumn.md:
+      Found potential enums in resource example that weren't defined in a table:(checkBoxes,dropDownMenu,radioButtons) are in resource, but () are in table"
+  ],
   "tocPath": "Resources/ChoiceColumn"
 } -->

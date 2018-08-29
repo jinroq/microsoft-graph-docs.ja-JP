@@ -6,11 +6,10 @@ OneNote の特定の長時間操作の状態。
 
 以下は、リソースの JSON 表記です。
 
-<!-- {
+<!--{
   "blockType": "resource",
-  "optionalProperties": [
-
-  ],
+  "optionalProperties": [],
+  "baseType": "microsoft.graph.operation",
   "@odata.type": "microsoft.graph.onenoteOperation"
 }-->
 
@@ -28,16 +27,16 @@ OneNote の特定の長時間操作の状態。
 
 ```
 ## <a name="properties"></a>プロパティ
-| プロパティ     | 型   |説明|
+| プロパティ     | タイプ   |説明|
 |:---------------|:--------|:----------|
 |createdDateTime| DateTimeOffset |操作の開始時刻です。|
 |error|[onenoteOperationError](onenoteoperationerror.md)|操作によって返されるエラーです。|
-|id|string|操作 ID です。読み取り専用です。|
+|ID|文字列|操作 ID です。読み取り専用です。|
 |lastActionDateTime| DateTimeOffset |操作の最後の操作の時間です。|
-|resourceId|string|リソース ID。|
-|resourceLocation|string|オブジェクトのリソース URI。たとえば、コピーしたページまたはセクションのリソース URI。 |
-|status|string|操作の現在の状態: `notstarted`、`running`、`completed`、`failed` |
-|percentComplete|string|操作がまだ `running` の状態の場合の操作達成率。
+|resourceId|文字列|リソース ID。|
+|resourceLocation|文字列|オブジェクトのリソース URI。たとえば、コピーしたページまたはセクションのリソース URI。 |
+|状態|文字列|操作の現在の状態: `notstarted`、`running`、`completed`、 `failed` |
+|percentComplete|文字列|操作がまだ `running` の状態の場合の操作達成率。
 
 ## <a name="relationships"></a>リレーションシップ
 なし

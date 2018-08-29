@@ -1,16 +1,23 @@
-# <a name="resource-resource-type"></a>resource リソースの種類
+# <a name="onenoteresource-resource-type"></a>OneNoteResource リソースの種類
 
-イメージまたは OneNote のページ上の他のファイル リソースです。 
+OneNote ページ上の画像または 他のファイル リソースです。 
 
 リソースのバイナリ データは取得できますが、リソース オブジェクトまたはリソース コレクションの JSON 表記の取得はサポートされていません。
 
-<!-- {
+<!--{
   "blockType": "resource",
-  "optionalProperties": [
-
-  ],
+  "baseType": "microsoft.graph.onenoteEntityBaseModel",
+  "optionalProperties": [],
+  "isMediaEntity": true,
   "@odata.type": "microsoft.graph.onenoteResource"
 }-->
+
+```json
+{
+  "content": { "@odata.type": "Edm.Stream" },
+  "contentUrl": "string (url)"
+}
+```
 
 GET リクエストをリソースの `content` エンドポイントに送信することによって、特定のリソースのバイナリ データを取得します。
 
@@ -33,7 +40,7 @@ GET ../onenote/pages/{id}/content
     data-fullres-src-type="media-type" ... />
 ```
 
-`object` タグ (PDF、DOCX、PNG などのファイルを表す) には、`data` 属性のファイル リソースのエンドポイントが含まれます。
+タグ (PDF、DOCX、PNG などのファイルを表す) には、`data` 属性のファイル リソースのエンドポイントが含まれます。`object`
 
 ```
 <object
@@ -43,7 +50,11 @@ GET ../onenote/pages/{id}/content
 ```
 
 ## <a name="properties"></a>プロパティ
-なし
+
+| プロパティ             | タイプ            | 説明
+|:---------------------|:----------------|:---------------------------------
+| コンテンツ              | ストリーム          | ストリーム
+| contentUrl           | 文字列 (URL)    | コンテンツをダウンロードするための URL
 
 ## <a name="relationships"></a>リレーションシップ
 なし。
@@ -52,7 +63,7 @@ GET ../onenote/pages/{id}/content
 ## <a name="methods"></a>メソッド
 | メソッド           | 戻り値の型    |説明|
 |:---------------|:--------|:----------|
-|[リソース バイナリ データの取得](../api/resource_get.md) | Stream |ファイルまたはイメージ リソースのバイナリ データを取得します。|
+|[リソース バイナリ データの取得](../api/resource_get.md) | ストリーム |ファイルまたはイメージ リソースのバイナリ データを取得します。|
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
