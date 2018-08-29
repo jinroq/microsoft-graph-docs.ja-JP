@@ -1,6 +1,6 @@
 # <a name="update-remoteassistancepartner"></a>remoteAssistancePartner の更新
 
-> **注:**Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
+> **注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
 
 [remoteAssistancePartner](../resources/intune_remoteassistance_remoteassistancepartner.md) オブジェクトのプロパティを更新します。
 ## <a name="prerequisites"></a>前提条件
@@ -24,20 +24,20 @@ PATCH /deviceManagement/remoteAssistancePartners/{remoteAssistancePartnerId}
 ## <a name="request-headers"></a>要求ヘッダー
 |ヘッダー|値|
 |:---|:---|
-|Authorization|ベアラー &lt;トークン&gt; が必要です。|
-|Accept|application/json|
+|承認|ベアラー &lt;トークン&gt; が必須。|
+|承諾|application/json|
 
 ## <a name="request-body"></a>要求本文
 要求本文で、[remoteAssistancePartner](../resources/intune_remoteassistance_remoteassistancepartner.md) オブジェクトの JSON 表記を指定します。
 
 次の表に、[remoteAssistancePartner](../resources/intune_remoteassistance_remoteassistancepartner.md) の作成時に必要なプロパティを示します。
 
-|プロパティ|型|説明|
+|プロパティ|タイプ|説明|
 |:---|:---|:---|
-|id|String|パートナーの一意識別子。|
-|displayName|String|パートナーの表示名。|
-|onboardingUrl|String|パートナーのオンボーディング ポータルの URL。このポータルでは、管理者がパートナーのリモート アシスタンス サービスを構成できます。|
-|onboardingStatus|String|TBD の可能な値は、`notOnboarded`、`onboarding`、`onboarded` です。|
+|ID|文字列|パートナーの一意識別子。|
+|displayName|文字列|パートナーの表示名。|
+|onboardingUrl|文字列|パートナーのオンボーディング ポータルの URL。このポータルでは、管理者がパートナーのリモート アシスタンス サービスを構成できます。|
+|onboardingStatus|[remoteAssistanceOnboardingStatus](../resources/intune_remoteassistance_remoteassistanceonboardingstatus.md)|未定 可能な値は、 `notOnboarded`、`onboarding`、`onboarded` です。|
 |lastConnectionDateTime|DateTimeOffset|TEM パートナーによって Intune に最後に送信された要求のタイムスタンプ。|
 
 

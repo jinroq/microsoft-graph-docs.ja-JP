@@ -3,11 +3,12 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/11/2017
 title: CalculatedColumn
-ms.openlocfilehash: 44700ba7606243002798ec0ec84c3be30d38ef1f
-ms.sourcegitcommit: 7aea7a97e36e6d146214de3a90fdbc71628aadba
+ms.openlocfilehash: 7e26b3683c2c84d1c413f3214da39e0a3d016f40
+ms.sourcegitcommit: abf4b739257e3ffd9d045f783ec595d846172590
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23267844"
 ---
 # <a name="calculatedcolumn-resource-type"></a>CalculatedColumn リソースの種類
 
@@ -28,11 +29,11 @@ ms.lasthandoff: 09/28/2017
 
 ## <a name="properties"></a>プロパティ
 
-| プロパティ名  | 種類    | 説明
+| プロパティ名  | 型    | 説明
 |:---------------|:--------|:--------------------------------------------------
-| **format**     | string  | `dateTime` 出力の種類に対する値の形式。 `dateOnly` または `dateTime` のいずれかでなければなりません。
-| **formula**    | string  | この列の値を計算するために使用する数式。
-| **outputType** | string  | この列の値の形式を設定するために使用する出力の種類。 `boolean`、`currency`、`dateTime`、`number`、`text` のいずれかでなければなりません。
+| **書式設定**     | 文字列  | 出力の種類に対する値の形式。`dateTime` または `dateTime` のいずれかでなければなりません。`dateOnly`
+| **数式**    | 文字列  | この列の値を計算するために使用する数式。
+| **outputType** | 文字列  | この列の値の形式を設定するために使用する出力の種類。 、`currency`、`dateTime`、`number`、`text` のいずれかでなければなりません。`boolean`
 
 SharePoint の数式は、Excel の数式のような構文を使用します。
 詳細については、「[SharePoint リストの一般的な数式の例][SPFormulas]」を参照してください。
@@ -44,5 +45,11 @@ SharePoint の数式は、Excel の数式のような構文を使用します。
   "description": "",
   "keywords": "",
   "section": "documentation",
+  "suppressions": [
+    "Warning: /api-reference/v1.0/resources/calculatedcolumn.md:
+      Found potential enums in resource example that weren't defined in a table:(dateOnly,dateTime) are in resource, but () are in table",
+    "Warning: /api-reference/v1.0/resources/calculatedcolumn.md:
+      Found potential enums in resource example that weren't defined in a table:(boolean,currency,dateTime,number,text) are in resource, but () are in table"
+  ],
   "tocPath": "Resources/CalculatedColumn"
 } -->

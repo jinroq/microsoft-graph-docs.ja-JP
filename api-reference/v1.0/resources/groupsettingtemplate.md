@@ -11,11 +11,11 @@
 
 ## <a name="properties"></a>プロパティ
 
-| プロパティ | 型 | 説明 |
+| プロパティ | タイプ | 説明 |
 |:---------------|:--------|:----------|
-|description|文字列| テンプレートの説明です。 |
+|説明|文字列| テンプレートの説明です。 |
 |displayName|文字列| テンプレートの表示名です。 |
-|id|文字列| テンプレートの一意識別子です。読み取り専用です。|
+|ID|文字列| テンプレートの一意識別子です。読み取り専用です。|
 |値|[settingTemplateValue](settingtemplatevalue.md) コレクション| このテンプレートを構成する、一連の利用可能な設定、既定値、種類を一覧表示する settingTemplateValues のコレクションです。 |
 
 ## <a name="relationships"></a>リレーションシップ
@@ -27,11 +27,12 @@
 
 以下は、リソースの JSON 表記です。
 
-<!-- {
+<!--{
   "blockType": "resource",
-  "optionalProperties": [
-
-  ],
+  "openType": true,
+  "optionalProperties": [],
+  "keyProperty": "id",
+  "baseType": "microsoft.graph.directoryObject",
   "@odata.type": "microsoft.graph.groupSettingTemplate"
 }-->
 

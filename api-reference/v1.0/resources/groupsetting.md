@@ -16,10 +16,10 @@
 
 ## <a name="properties"></a>プロパティ
 
-| プロパティ | 型 | 説明 |
+| プロパティ | タイプ | 説明 |
 |:---------------|:--------|:----------|
 |displayName|文字列| 関連するテンプレートに由来する設定グループの名前を表示します。 |
-|id|文字列| 設定の一意識別子です。読み取り専用です。 |
+|ID|文字列| 設定の一意識別子です。読み取り専用です。 |
 |templateId|文字列| 設定グループの作成に使用されるテンプレートの一意識別子です。読み取り専用です。 |
 |値|[settingValue](settingvalue.md) コレクション| 名前と値の組のコレクションです。テンプレートに定義されているすべての設定を含める必要があります。 |
 
@@ -31,11 +31,12 @@
 
 以下は、リソースの JSON 表記です。
 
-<!-- {
+<!--{
   "blockType": "resource",
-  "optionalProperties": [
-
-  ],
+  "openType": true,
+  "optionalProperties": [],
+  "keyProperty": "id",
+  "baseType": "microsoft.graph.entity",
   "@odata.type": "microsoft.graph.groupSetting"
 }-->
 

@@ -22,19 +22,19 @@
 |[イベントの添付ファイルを一覧表示する](../api/event_list_attachments.md) | [attachment](attachment.md) コレクション | イベントの添付ファイルの一覧を取得します。 |
 |[メッセージの添付ファイルを一覧表示する](../api/message_list_attachments.md) | [attachment](attachment.md) コレクション | メッセージの添付ファイルの一覧を取得します。 |
 |[投稿の添付ファイルを一覧表示する](../api/post_list_attachments.md) | [attachment](attachment.md) コレクション | 投稿の添付ファイルの一覧を取得します。 |
-|[削除](../api/attachment_delete.md) | None |イベント、メッセージ、または投稿の添付ファイルを削除します。 |
+|[削除](../api/attachment_delete.md) | なし |イベント、メッセージ、または投稿の添付ファイルを削除します。 |
 
 ## <a name="properties"></a>プロパティ
 
 次に、添付ファイル リソースの基本プロパティを示します。他のプロパティについては、特定の種類の添付ファイル ([fileAttachment](../resources/fileattachment.md)、[itemAttachment](../resources/itemattachment.md)、または [referenceAttachment](../resources/referenceAttachment.md)) を参照してください。
 
-| プロパティ     | 型   |説明|
+| プロパティ     | タイプ   |説明|
 |:---------------|:--------|:----------|
-|contentType|String|MIME タイプ。|
-|id|String| 読み取り専用。|
-|isInline|Boolean|添付ファイルがインライン添付ファイルの場合は `true`、それ以外の場合は `false`。|
-|lastModifiedDateTime|DateTimeOffset|Timestamp 型は、ISO 8601 形式を使用して日付と時刻の情報を表し、必ず UTC 時間です。たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、次のようになります。`'2014-01-01T00:00:00Z'`|
-|name|String|添付ファイルのファイル名。|
+|contentType|文字列|MIME タイプ。|
+|ID|文字列| 読み取り専用。|
+|isInline|ブール値|`true` 添付ファイルがインライン添付ファイルの場合は `true`、それ以外の場合は `false`。|
+|lastModifiedDateTime|DateTimeOffset|Timestamp 型は、ISO 8601 形式を使用して日付と時刻の情報を表し、必ず UTC 時間です。たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、次のようになります。 `'2014-01-01T00:00:00Z'`|
+|name|文字列|添付ファイルのファイル名。|
 |size|Int32|添付ファイルの長さ (バイト単位)。|
 
 ## <a name="relationships"></a>リレーションシップ
@@ -46,6 +46,8 @@
 
 <!-- {
   "blockType": "resource",
+  "baseType": "microsoft.graph.entity",
+  "abstract": true,
   "optionalProperties": [
 
   ],

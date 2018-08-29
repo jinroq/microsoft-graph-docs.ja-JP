@@ -3,18 +3,18 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
 title: Video
-ms.openlocfilehash: dd6ece46ce54fe791c0e6b5801287e2abad4fe48
-ms.sourcegitcommit: 7aea7a97e36e6d146214de3a90fdbc71628aadba
+ms.openlocfilehash: cb9e28c1b26aa60fe7d854796df8bff34ca8e5df
+ms.sourcegitcommit: abf4b739257e3ffd9d045f783ec595d846172590
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23265849"
 ---
-# <a name="video-resource-type"></a>Video リソース型
+# <a name="video-resource-type"></a>ビデオ リソースの種類
 
 **ビデオ** リソースは、ビデオ関連のデータ項目を 1 つの構造にグループ化します。
 
-[**DriveItem**](driveitem.md) に null でない **video** ファセットがある場合、そのアイテムはビデオ ファイルを表します。
-**Video** リソースのプロパティは、ファイルからメタデータを抽出することにより設定されます。
+[**DriveItem**](driveitem.md) に null 以外の**ビデオ** ファセットがある場合は、項目はビデオ ファイルを表します。**ビデオ** リソースのプロパティは、ファイルからメタデータを抽出することにより設定されます。
 
 ## <a name="json-representation"></a>JSON 表記
 
@@ -43,15 +43,15 @@ ms.lasthandoff: 09/28/2017
 
 ## <a name="properties"></a>プロパティ
 
-| プロパティ名             | 種類   | 説明
+| プロパティ名             | 型   | 説明
 |:--------------------------|:-------|:----------------------------------------
-| **audioBitsPerSample**    | Int32  | 1 サンプルあたりのオーディオ ビット数。
+| **audioBitsPerSample**    | Int32  | サンプルあたりのオーディオ ビット数。
 | **audioChannels**         | Int32  | オーディオ チャンネル数。
-| **audioFormat**           | string | オーディオ形式の名前 (AAC、MP3 など)。
+| **audioFormat**           | 文字列 | オーディオ形式の名前 (AAC、MP3 など)。
 | **audioSamplesPerSecond** | Int32  | 1 秒あたりのオーディオ サンプル数。
 | **bitrate**               | Int32  | 1 秒あたりのビデオのビット レート (ビット単位)。
-| **duration**              | Int64  | ファイルの長さ (ミリ秒単位)。
-| **fourCC**                | string | ビデオ形式の「4 文字コード」名。
+| **duration**              | Int64  | ファイルの継続時間 (ミリ秒単位)。
+| **fourCC**                | 文字列 | ビデオ形式の「4 文字コード」名。
 | **framerate**             | double | ビデオのフレーム レート。
 | **height**                | Int32  | ビデオの高さ (ピクセル単位)。
 | **width**                 | Int32  | ビデオの幅 (ピクセル単位)。

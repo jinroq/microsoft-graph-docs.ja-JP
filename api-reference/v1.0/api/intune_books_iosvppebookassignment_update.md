@@ -1,6 +1,6 @@
 # <a name="update-iosvppebookassignment"></a>iosVppEBookAssignment の更新
 
-> **注:**Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
+> **注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
 
 [iosVppEBookAssignment](../resources/intune_books_iosvppebookassignment.md) オブジェクトのプロパティを更新します。
 ## <a name="prerequisites"></a>前提条件
@@ -24,19 +24,19 @@ PATCH /deviceAppManagement/managedEBooks/{managedEBookId}/assignments/{managedEB
 ## <a name="request-headers"></a>要求ヘッダー
 |ヘッダー|値|
 |:---|:---|
-|Authorization|ベアラー &lt;トークン&gt; が必要です。|
-|Accept|application/json|
+|承認|ベアラー &lt;トークン&gt; が必須。|
+|承諾|application/json|
 
 ## <a name="request-body"></a>要求本文
 要求本文で、[iosVppEBookAssignment](../resources/intune_books_iosvppebookassignment.md) オブジェクトの JSON 表記を指定します。
 
 次の表に、[iosVppEBookAssignment](../resources/intune_books_iosvppebookassignment.md) の作成時に必要なプロパティを示します。
 
-|プロパティ|型|説明|
+|プロパティ|タイプ|説明|
 |:---|:---|:---|
-|id|String|エンティティのキー。 [managedEBookAssignment](../resources/intune_books_managedebookassignment.md) から継承します|
-|target|[deviceAndAppManagementAssignmentTarget](../resources/intune_books_deviceandappmanagementassignmenttarget.md)|電子ブックの割り当て先。 [managedEBookAssignment](../resources/intune_books_managedebookassignment.md) から継承します|
-|installIntent|String|電子ブックのインストールの目的。 [managedEBookAssignment](../resources/intune_books_managedebookassignment.md) から継承します。可能な値は、`available`、`required`、`uninstall`、`availableWithoutEnrollment` です。|
+|id|文字列|エンティティのキー。 [managedEBookAssignment](../resources/intune_books_managedebookassignment.md) から継承します|
+|target|[deviceAndAppManagementAssignmentTarget](../resources/intune_shared_deviceandappmanagementassignmenttarget.md)|電子ブックの割り当て先。 [managedEBookAssignment](../resources/intune_books_managedebookassignment.md) から継承します|
+|installIntent|[installIntent](../resources/intune_shared_installintent.md)|電子ブックのインストールの目的。 [managedEBookAssignment](../resources/intune_books_managedebookassignment.md) から継承します。 指定できる値は、`available`、`required`、`uninstall`、`availableWithoutEnrollment` です。|
 
 
 

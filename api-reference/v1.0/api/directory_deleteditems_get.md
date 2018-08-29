@@ -26,7 +26,7 @@
 ## <a name="http-request"></a>HTTP 要求
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /directory/deleteditems/{id}
+GET /directory/deletedItems/{id}
 ```
 
 ## <a name="optional-query-parameters"></a>オプションのクエリ パラメーター
@@ -35,8 +35,8 @@ GET /directory/deleteditems/{id}
 ## <a name="request-headers"></a>要求ヘッダー
 | 名前      |説明|
 |:----------|:----------|
-| Authorization  | ベアラー &lt;コード&gt; が*必要*|
-| Accept  | application/json |
+| 承認  | ベアラー &lt;コード&gt; が*必要*|
+| 承諾  | application/json |
 
 ## <a name="request-body"></a>要求本文
 このメソッドには、要求本文を指定しません。
@@ -52,14 +52,14 @@ GET /directory/deleteditems/{id}
   "name": "get_directory"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/directory/deleteditems/46cc6179-19d0-473e-97ad-6ff84347bbbb
+GET https://graph.microsoft.com/v1.0/directory/deletedItems/{object-id}
 ```
 ##### <a name="response"></a>応答
 注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.directory"
+  "@odata.type": "microsoft.graph.directoryObject"
 } -->
 ```http
 HTTP/1.1 200 OK

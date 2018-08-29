@@ -4,14 +4,14 @@
 
 
 ## <a name="properties"></a>プロパティ
-| プロパティ       | 型    |説明|
+| プロパティ     | タイプ   |説明|
 |:---------------|:--------|:----------|
-|externalAudience|String| **Status** が `AlwaysEnabled` または `Scheduled` の場合に、**ExternalReplyMessage** を受信する、サインイン ユーザーの組織外の一連の対象ユーザー。可能な値は、`none`、`contactsOnly`、`all` です。|
-|externalReplyMessage|string|**Status** が `AlwaysEnabled` または `Scheduled` の場合、指定の外部対象ユーザーに送信される自動応答。|
-|internalReplyMessage|string|**Status** が `AlwaysEnabled` または `Scheduled` の場合、サインイン ユーザーの組織内の対象ユーザーに送信される自動応答。 |
+|externalAudience|ExternalAudienceScope| **Status** が `AlwaysEnabled` または `Scheduled` の場合に、**ExternalReplyMessage** を受信する、サインイン ユーザーの組織外の一連の対象ユーザー。 使用可能な値: `none`、`contactsOnly`、`all`。|
+|externalReplyMessage|文字列|**Status** が `AlwaysEnabled` または `Scheduled` の場合、指定の外部対象ユーザーに送信される自動応答。|
+|internalReplyMessage|文字列|**Status** が `AlwaysEnabled` または `Scheduled` の場合、サインイン ユーザーの組織内の対象ユーザーに送信される自動応答。 |
 |scheduledEndDateTime|[dateTimeTimeZone](datetimetimezone.md)|**Status** が `Scheduled` に設定されている場合に、自動応答を終了する日時。 |
 |scheduledStartDateTime|[dateTimeTimeZone](datetimetimezone.md)|**Status** が `Scheduled` に設定されている場合に、自動応答を開始する日時。|
-|status|String|自動応答の構成状態。可能な値は、`disabled`、`alwaysEnabled`、`scheduled` です。|
+|状態|AutomaticRepliesStatus|自動応答の構成状態です。 使用可能な値: `disabled`、`alwaysEnabled`、`scheduled`。|
 
 ## <a name="json-representation"></a>JSON 表記
 

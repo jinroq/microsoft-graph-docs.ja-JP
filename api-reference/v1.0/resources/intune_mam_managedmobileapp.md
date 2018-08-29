@@ -1,6 +1,6 @@
 # <a name="managedmobileapp-resource-type"></a>managedMobileApp リソースの種類
 
-> **注:**Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
+> **注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
 
 アプリ展開の識別子。
 ## <a name="methods"></a>メソッド
@@ -13,22 +13,22 @@
 |[Update managedMobileApp](../api/intune_mam_managedmobileapp_update.md)|[managedMobileApp](../resources/intune_mam_managedmobileapp.md)|[managedMobileApp](../resources/intune_mam_managedmobileapp.md) オブジェクトのプロパティを更新します。|
 
 ## <a name="properties"></a>プロパティ
-|プロパティ|型|説明|
+|プロパティ|タイプ|説明|
 |:---|:---|:---|
 |mobileAppIdentifier|[mobileAppIdentifier](../resources/intune_mam_mobileappidentifier.md)|対象のオペレーティング システムの種類のアプリの識別子。|
-|id|文字列型 (String)|エンティティのキー。|
-|version|文字列型 (String)|エンティティのバージョン。|
+|id|文字列|エンティティのキー。|
+|version|文字列|エンティティのバージョン。|
 
 ## <a name="relationships"></a>リレーションシップ
 なし
 ## <a name="json-representation"></a>JSON 表記
 以下は、リソースの JSON 表記です。
-<!-- {
+<!--{
   "blockType": "resource",
   "keyProperty": "id",
+  "baseType": "microsoft.graph.entity",
   "@odata.type": "microsoft.graph.managedMobileApp"
-}
--->
+}-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.managedMobileApp",

@@ -18,7 +18,7 @@
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/calendarView/delta?startDateTime={start_datetime}&endDateTime={end_datetime}
-GET /users/<id>/calendarView/delta?startDateTime={start_datetime}&endDateTime={end_datetime}
+GET /users/{id}/calendarView/delta?startDateTime={start_datetime}&endDateTime={end_datetime}
 
 ```
 
@@ -29,10 +29,10 @@ GET /users/<id>/calendarView/delta?startDateTime={start_datetime}&endDateTime={e
 
 | クエリ パラメーター      | 種類   |説明|
 |:---------------|:--------|:----------|
-|startDateTime|String|時間範囲の開始日時は、ISO 8601 形式で表されます。例: "2015-11-08T19:00:00.0000000"。|
-|endDateTime|String|時間範囲の終了日時は、ISO 8601 形式で表されます。例: "2015-11-08T20:00:00.0000000"。|
-| $deltatoken | string | 同じカレンダー ビュー用の前の**デルタ**関数呼び出しの `deltaLink` URL で返された[状態トークン](../../../concepts/delta_query_overview.md)で、その一連の変更追跡が完了したことを示します。このトークンを含む `deltaLink` URL 全体を、該当カレンダー ビュー用の次回の一連の変更追跡の最初の要求内に保存し、適用します。|
-| $skiptoken | string | 前の**デルタ**関数呼び出しの `nextLink` URL 内で返された[状態トークン](../../../concepts/delta_query_overview.md)で、同じカレンダー ビュー内に追跡されるべきさらなる変化があることを示しています。 |
+|startDateTime|文字列|時間範囲の開始日時は、ISO 8601 形式で表されます。例: "2015-11-08T19:00:00.0000000"。|
+|endDateTime|文字列|時間範囲の終了日時は、ISO 8601 形式で表されます。例: "2015-11-08T20:00:00.0000000"。|
+| $deltatoken | 文字列 | 同じカレンダー ビュー用の前の**デルタ**関数呼び出しの `deltaLink` URL で返された[状態トークン](../../../concepts/delta_query_overview.md)で、その一連の変更追跡が完了したことを示します。このトークンを含む `deltaLink` URL 全体を、該当カレンダー ビュー用の次回の一連の変更追跡の最初の要求内に保存し、適用します。|
+| $skiptoken | 文字列 | 前の**デルタ**関数呼び出しの `nextLink` URL 内で返された[状態トークン](../../../concepts/delta_query_overview.md)で、同じカレンダー ビュー内に追跡されるべきさらなる変化があることを示しています。 |
 
 カレンダー ビューでデルタ クエリを実行する場合、`GET /calendarview` 要求で通常得られるプロパティのすべてを得られると予期します。この場合、`$select` はサポートされていません。 
 
@@ -40,10 +40,10 @@ GET /users/<id>/calendarView/delta?startDateTime={start_datetime}&endDateTime={e
 ## <a name="request-headers"></a>要求ヘッダー
 | 名前       | 型 | 説明 |
 |:---------------|:----------|:----------|
-| Authorization  | string  | ベアラー {トークン}。必須。 |
-| Content-Type  | string  | application/json. Required. |
-| Prefer | string  | odata.maxpagesize={x}.省略可能。 |
-| Prefer | string | {タイム ゾーン}。省略可能。指定しない場合、UTC が使用されます。|
+| 承認  | 文字列  | ベアラー {トークン}。必須。 |
+| コンテンツ タイプ  | 文字列  | アプリケーションまたは json。必須。 |
+| 優先 | 文字列  | odata.maxpagesize={x}.省略可能。 |
+| 優先 | 文字列 | {タイム ゾーン}。省略可能。指定しない場合、UTC が使用されます。|
 
 ## <a name="response"></a>応答
 
@@ -61,7 +61,7 @@ GET /users/<id>/calendarView/delta?startDateTime={start_datetime}&endDateTime={e
   "name": "event_delta"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/me/calendarview/delta?startdatetime={start_datetime}&enddatetime={end_datetime}
+GET https://graph.microsoft.com/v1.0/me/calendarView/delta?startdatetime={start_datetime}&enddatetime={end_datetime}
 
 Prefer: odata.maxpagesize=2
 ```
@@ -84,7 +84,7 @@ Content-type: application/json
 Content-length: 359
 
 {
-  "@odata.nextLink":"https://graph.microsoft.com/v1.0/me/calendarview/delta?$skiptoken={_skipToken_}",
+  "@odata.nextLink":"https://graph.microsoft.com/v1.0/me/calendarView/delta?$skiptoken={_skipToken_}",
   "value": [
     {
       "originalStartTimeZone": "originalStartTimeZone-value",

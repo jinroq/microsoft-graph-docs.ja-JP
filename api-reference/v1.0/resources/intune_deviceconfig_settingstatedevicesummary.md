@@ -1,6 +1,6 @@
 # <a name="settingstatedevicesummary-resource-type"></a>settingStateDeviceSummary リソースの種類
 
-> **注:**Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
+> **注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
 
 設定状態の要約に対する、デバイス コンプライアンス ポリシーおよび構成
 ## <a name="methods"></a>メソッド
@@ -13,11 +13,11 @@
 |[settingStateDeviceSummary の更新](../api/intune_deviceconfig_settingstatedevicesummary_update.md)|[settingStateDeviceSummary](../resources/intune_deviceconfig_settingstatedevicesummary.md)|[settingStateDeviceSummary](../resources/intune_deviceconfig_settingstatedevicesummary.md) オブジェクトのプロパティを更新します。|
 
 ## <a name="properties"></a>プロパティ
-|プロパティ|型|説明|
+|プロパティ|タイプ|説明|
 |:---|:---|:---|
-|id|String|エンティティのキー。|
-|settingName|String|設定の名前|
-|instancePath|String|設定の InstancePath の名前|
+|id|文字列|エンティティのキー。|
+|settingName|文字列|設定の名前|
+|instancePath|文字列|設定の InstancePath の名前|
 |unknownDeviceCount|Int32|設定の不明なデバイスの数|
 |notApplicableDeviceCount|Int32|設定の該当しないデバイスの数|
 |compliantDeviceCount|Int32|設定の準拠しているデバイスの数|
@@ -30,12 +30,12 @@
 なし
 ## <a name="json-representation"></a>JSON 表記
 以下は、リソースの JSON 表記です。
-<!-- {
+<!--{
   "blockType": "resource",
   "keyProperty": "id",
+  "baseType": "microsoft.graph.entity",
   "@odata.type": "microsoft.graph.settingStateDeviceSummary"
-}
--->
+}-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.settingStateDeviceSummary",

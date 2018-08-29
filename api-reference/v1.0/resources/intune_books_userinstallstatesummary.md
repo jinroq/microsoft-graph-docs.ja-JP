@@ -1,6 +1,6 @@
 # <a name="userinstallstatesummary-resource-type"></a>userInstallStateSummary リソースの種類
 
-> **注:**Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
+> **注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
 
 ユーザーのインストール状態の要約のプロパティが含まれています。
 ## <a name="methods"></a>メソッド
@@ -13,12 +13,12 @@
 |[userInstallStateSummary の更新](../api/intune_books_userinstallstatesummary_update.md)|[userInstallStateSummary](../resources/intune_books_userinstallstatesummary.md)|[userInstallStateSummary](../resources/intune_books_userinstallstatesummary.md) オブジェクトのプロパティを更新します。|
 
 ## <a name="properties"></a>プロパティ
-|プロパティ|型|説明|
+|プロパティ|タイプ|説明|
 |:---|:---|:---|
-|id|String|エンティティのキー。|
-|userName|String|ユーザー名です。|
+|ID|文字列|エンティティのキー。|
+|userName|文字列|ユーザー名です。|
 |installedDeviceCount|Int32|インストールされたデバイスの数です。|
-|failedDeviceCount|Int32|障害のあるデバイスの数です。|
+|failedDeviceCount|Int32|失敗したデバイスの数です。|
 |notInstalledDeviceCount|Int32|インストールされていないデバイスの数です。|
 
 ## <a name="relationships"></a>リレーションシップ
@@ -28,12 +28,12 @@
 
 ## <a name="json-representation"></a>JSON 表記
 以下は、リソースの JSON 表記です。
-<!-- {
+<!--{
   "blockType": "resource",
   "keyProperty": "id",
+  "baseType": "microsoft.graph.entity",
   "@odata.type": "microsoft.graph.userInstallStateSummary"
-}
--->
+}-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.userInstallStateSummary",
