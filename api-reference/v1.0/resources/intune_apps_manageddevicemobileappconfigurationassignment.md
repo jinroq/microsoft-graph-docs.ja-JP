@@ -13,21 +13,21 @@
 |[managedDeviceMobileAppConfigurationAssignment の更新](../api/intune_apps_manageddevicemobileappconfigurationassignment_update.md)|[managedDeviceMobileAppConfigurationAssignment](../resources/intune_apps_manageddevicemobileappconfigurationassignment.md)|[managedDeviceMobileAppConfigurationAssignment](../resources/intune_apps_manageddevicemobileappconfigurationassignment.md) オブジェクトのプロパティを更新します。|
 
 ## <a name="properties"></a>プロパティ
-|プロパティ|型|説明|
+|プロパティ|タイプ|説明|
 |:---|:---|:---|
-|id|String|エンティティの一意識別子です。|
-|target|[deviceAndAppManagementAssignmentTarget](../resources/intune_shared_deviceandappmanagementassignmenttarget.md)|T & C ポリシーが割り当てられる、割り当て先です。|
+|ID|文字列|エンティティの一意識別子。|
+|ターゲット|[deviceAndAppManagementAssignmentTarget](../resources/intune_shared_deviceandappmanagementassignmenttarget.md)|T & C ポリシーが割り当てられる、割り当て先です。|
 
 ## <a name="relationships"></a>リレーションシップ
 なし
 ## <a name="json-representation"></a>JSON 表記
 以下は、リソースの JSON 表記です。
-<!-- {
+<!--{
   "blockType": "resource",
   "keyProperty": "id",
+  "baseType": "microsoft.graph.entity",
   "@odata.type": "microsoft.graph.managedDeviceMobileAppConfigurationAssignment"
-}
--->
+}-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.managedDeviceMobileAppConfigurationAssignment",

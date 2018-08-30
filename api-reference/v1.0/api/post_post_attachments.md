@@ -20,8 +20,7 @@
 |アプリケーション | Group.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 要求
-<!-- { "blockType": "ignored" } -->
-グループの[会話](../resources/conversation.md)に属する[スレッド](../resources/conversationthread.md)内の[投稿](../resources/post.md)の添付ファイル。
+<!-- { "blockType": "ignored" } --> グループの[ 会話](../resources/post.md)に属する[スレッド](../resources/conversationthread.md)内の[ 投稿](../resources/conversation.md)の添付ファイル。
 ```http
 POST /groups/{id}/threads/{id}/posts/{id}/attachments
 POST /groups/{id}/conversations/{id}/threads/{id}/posts/{id}/attachments
@@ -29,7 +28,7 @@ POST /groups/{id}/conversations/{id}/threads/{id}/posts/{id}/attachments
 ## <a name="request-headers"></a>要求ヘッダー
 | ヘッダー       | 値 |
 |:---------------|:--------|
-| Authorization  | ベアラー {トークン}。必須。  |
+| 承認  | ベアラー {トークン}。必須。  |
 
 ## <a name="request-body"></a>要求本文
 要求本文で、[Attachment](../resources/attachment.md) オブジェクトの JSON 表記を指定します。
@@ -54,14 +53,14 @@ Content-length: 142
 {
   "@odata.type": "#microsoft.graph.fileAttachment",
   "name": "name-value",
-  "contentBytes": "contentBytes-value"
+  "contentBytes": "base64-contentBytes-value"
 }
 ```
 
 要求本文で、[Attachment](../resources/attachment.md) オブジェクトの JSON 表記を指定します。
 
 ##### <a name="response"></a>応答
-以下は、応答の例です。注: 簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。実際の呼び出しではすべてのプロパティが返されます。
+以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。
 <!-- {
   "blockType": "response",
   "truncated": true,

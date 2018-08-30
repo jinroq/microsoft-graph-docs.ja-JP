@@ -2,14 +2,15 @@
 author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
-title: Package
-ms.openlocfilehash: 33be73ed79438bdf28b76747b6efb79290be8d0c
-ms.sourcegitcommit: 7aea7a97e36e6d146214de3a90fdbc71628aadba
+title: パッケージ
+ms.openlocfilehash: 12ae750a0f4fbe0e951554308d4041928c31a16d
+ms.sourcegitcommit: abf4b739257e3ffd9d045f783ec595d846172590
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23267543"
 ---
-# <a name="package-resource-type"></a>Package リソース型
+# <a name="package-resource-type"></a>Package リソースの種類
 
 **Package** リソースは、DriveItem が「パッケージ」内で最上位項目であること、または個別の項目ではなくコレクションとして扱うべき項目のコレクションであることを示します。
 
@@ -26,9 +27,11 @@ OneNote のノートブックはパッケージの一例です。 ノートブ�
 }
 ```
 
+## <a name="properties"></a>プロパティ
+
 | プロパティ名 | 型   | 説明                                                                                                                                                                      |
 |:--------------|:-------|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **type**      | string | パッケージのタイプを指定する文字列です。`oneNote` が唯一の現在定義されている値であるとしても、他のパッケージ タイプが返されるものと考え、それぞれに応じた扱いをする必要があります。 |
+| 型          | 文字列 | パッケージのタイプを示す文字列です。 `oneNote` が現在唯一定義されている値であるとしても、他のパッケージ タイプが返されるものと考え、それに応じて対応する必要があります。 |
 
 ## <a name="remarks"></a>注釈 
 

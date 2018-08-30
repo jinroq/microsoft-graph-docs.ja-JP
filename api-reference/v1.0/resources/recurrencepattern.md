@@ -19,15 +19,15 @@
 
 
 ## <a name="properties"></a>プロパティ
-| プロパティ     | 型   |説明|
+| プロパティ     | タイプ   |説明|
 |:---------------|:--------|:----------|
 |dayOfMonth|Int32|イベントが発生する月の日付。 **type** が、`absoluteMonthly` または `absoluteYearly` の場合、必要です。 |
-|daysOfWeek|String collection|イベントが発生する曜日のコレクションです。 使用可能な値は、`sunday`、`monday`、`tuesday`、`wednesday`、`thursday`、`friday`、`saturday` です。 <br>**type** が `relativeMonthly` または `relativeYearly` であり、**daysOfWeek** で 1 日以上を指定する場合、パターンを満たす最初の日にイベントが発生します。 <br> **type** が `weekly`、`relativeMonthly`、`relativeYearly` の場合、必要です。|
-|firstDayOfWeek|String|週の最初の曜日。 使用可能な値は、`sunday`、`monday`、`tuesday`、`wednesday`、`thursday`、`friday`、`saturday` です。 既定値は `sunday` です。 **type** が `weekly` の場合、必要です。 |
-|index|String|月の最初のインスタンスから数えて、**daysOfsWeek** で指定された許可日数のどのインスタンスでイベントが発生するか指定します。 使用可能な値は、`first`、`second`、`third`、`fourth`、`last` です。 既定値は `first` です。 オプションです。**type** が `relativeMonthly` か `relativeYearly` の場合、使用します。 |
+|daysOfWeek|dayOfWeek コレクション|イベントが発生する曜日のコレクションです。 可能な値は、`sunday`、`monday`、`tuesday`、`wednesday`、`thursday`、`friday`、`saturday` です。 <br>**type** が `relativeMonthly` または `relativeYearly` であり、**daysOfWeek** で 1 日以上を指定する場合、パターンを満たす最初の日にイベントが発生します。 <br> **type** が `weekly`、`relativeMonthly`、`relativeYearly` の場合、必要です。|
+|firstDayOfWeek|dayOfWeek|週の最初の曜日を指定します。 可能な値は、`sunday`、`monday`、`tuesday`、`wednesday`、`thursday`、`friday`、`saturday` です。 既定値は `sunday` です。 **type** が `weekly` の場合、必要です。 |
+|インデックス|WeekIndex|月の最初のインスタンスから数えて、**daysOfsWeek** で指定された許可日数のどのインスタンスでイベントが発生するか指定します。 可能な値は、`first`、`second`、`third`、`fourth`、`last`です。 既定値は `first` です。 オプションです。**type** が `relativeMonthly` か `relativeYearly` の場合、使用します。 |
 |interval|Int32|次のイベント発生までの単位数。**type** によって、単位は、日、週、月、年などになります。 必須。 |
 |month|Int32|イベントが発生する月。  これは、1 から 12 までの数字です。|
-|type|String|定期的なパターンの種類は、`daily`、`weekly`、`absoluteMonthly`、`relativeMonthly`、`absoluteYearly`、`relativeYearly` です。 必須。|
+|型|RecurrencePatternType|定期的なパターンの種類は、`daily`、`weekly`、`absoluteMonthly`、`relativeMonthly`、`absoluteYearly`、`relativeYearly` です。 必須。|
 
 ## <a name="json-representation"></a>JSON 表記
 
@@ -61,5 +61,9 @@
   "description": "recurrencePattern resource",
   "keywords": "",
   "section": "documentation",
+  "suppressions": [
+    "Warning: /api-reference/v1.0/resources/recurrencepattern.md/microsoft.graph.recurrencePattern/daysOfWeek:
+      Inconsistent types between parameter (String) and table (Object)"
+  ],
   "tocPath": ""
 }-->

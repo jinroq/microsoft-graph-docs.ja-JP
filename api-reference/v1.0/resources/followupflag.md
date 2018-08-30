@@ -4,11 +4,11 @@
 ユーザーが特定のアイテムを後でフォローアップできるよう、フラグを設定できます。 サポートされているアイテムには、[メッセージ](message.md)と[連絡先](contact.md)があります。
 
 ## <a name="properties"></a>プロパティ
-| プロパティ     | 型   |説明|
+| プロパティ     | タイプ   |説明|
 |:---------------|:--------|:----------|
 |CompletedDateTime|[dateTimeTimeZone](dateTimeTimeZone.md)|フォローアップが終了した日時。|
 |dueDateTime|**dateTimeTimeZone**|フォローアップが終了する予定の日時。|
-|FlagStatus|String|アイテムのフォローアップ状態。 可能な値は、`notFlagged`、`complete`、`flagged` です。|
+|FlagStatus|FollowupFlagStatus|アイテムのフォローアップ状態。 可能な値は、`notFlagged`、`complete`、`flagged` です。|
 |startDateTime|**dateTimeTimeZone**|フォローアップを開始する予定の日時。|
 
 ## <a name="json-representation"></a>JSON 表記

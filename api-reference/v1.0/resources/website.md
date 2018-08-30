@@ -4,11 +4,11 @@ Web サイトを表します。
 
 
 ## <a name="properties"></a>プロパティ
-| プロパティ     | 型   |説明|
+| プロパティ     | タイプ   |説明|
 |:---------------|:--------|:----------|
-|type|String| 可能な値は、`other`、`home`、`work`、`blog`、`profile` です。|
-|アドレス|string|Web サイトの URL。|
-|displayName|string|Web サイトの表示名。|
+|型|WebsiteType| 可能な値は、`other`、`home`、`work`、`blog`、`profile`です。|
+|アドレス|文字列|Web サイトの URL。|
+|displayName|文字列|Web サイトの表示名。|
 
 ## <a name="json-representation"></a>JSON 表記
 

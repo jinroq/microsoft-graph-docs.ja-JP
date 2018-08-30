@@ -1,4 +1,4 @@
-# <a name="create-section"></a>section を作成する
+# <a name="create-section"></a>セクションを作成する
 
 指定されたセクション グループに新しい[セクション](../resources/section.md)を作成します。
 ## <a name="permissions"></a>アクセス許可
@@ -21,8 +21,8 @@ POST /sites/{id}/onenote/sectionGroups/{id}/sections
 ## <a name="request-headers"></a>要求ヘッダー
 | 名前       | 型 | 説明|
 |:---------------|:--------|:----------|
-| Authorization  | string  | ベアラー {トークン}。必須。 |
-| Content-Type | string | `application/json` |
+| 承認  | 文字列  | ベアラー {トークン}。必須。 |
+| コンテンツ - タイプ | 文字列 | `application/json` |
 
 ## <a name="request-body"></a>要求本文
 要求本文でセクション名を入力します。
@@ -31,7 +31,7 @@ POST /sites/{id}/onenote/sectionGroups/{id}/sections
 
 ## <a name="response"></a>応答
 
-成功した場合、このメソッドは `201 Created` 応答コードと、応答本文で [section](../resources/section.md) オブジェクトを返します。
+成功した場合、このメソッドは `201 Created` 応答コードと、応答本文で [onenoteSection](../resources/section.md) オブジェクトを返します。
 
 ## <a name="example"></a>例
 ##### <a name="request"></a>要求
