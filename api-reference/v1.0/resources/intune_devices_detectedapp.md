@@ -1,6 +1,6 @@
 # <a name="detectedapp-resource-type"></a>detectedApp リソースの種類
 
-> **注:**Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
+> **注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
 
 管理対象デバイスにインストールされている管理対象アプリまたは非管理対象アプリです。 非管理対象アプリは、会社所有のデバイスにのみ表示されます。
 ## <a name="methods"></a>メソッド
@@ -13,12 +13,12 @@
 |[detectedApp の更新](../api/intune_devices_detectedapp_update.md)|[detectedApp](../resources/intune_devices_detectedapp.md)|[detectedApp](../resources/intune_devices_detectedapp.md) オブジェクトのプロパティを更新します。|
 
 ## <a name="properties"></a>プロパティ
-|プロパティ|型|説明|
+|プロパティ|タイプ|説明|
 |:---|:---|:---|
-|id|String|検出されたアプリケーションの一意識別子です。 これは、Intune によって、アプリケーション作成時に自動的に生成されます。 読み取り専用です。|
-|displayName|String|検出されたアプリケーションの名前です。 読み取り専用です|
-|version|String|検出されたアプリケーションのバージョンです。 読み取り専用です|
-|sizeInByte|Int64|検出されたアプリケーションのサイズ (バイト単位) です。 読み取り専用です|
+|ID|文字列|検出されたアプリケーションの一意識別子。 これは、アプリケーションの作成時に、Intune によって自動的に生成されます。 読み取り専用です。|
+|displayName|文字列|検出されたアプリケーションの名前。 読み取り専用です|
+|バージョン|文字列|検出されたアプリケーションのバージョン。 読み取り専用です|
+|sizeInByte|Int64|検出されたアプリケーションのサイズ (バイト単位)。 読み取り専用です|
 |deviceCount|Int32|このアプリケーションがインストールされているデバイスの数|
 
 ## <a name="relationships"></a>リレーションシップ
@@ -28,12 +28,12 @@
 
 ## <a name="json-representation"></a>JSON 表記
 以下は、リソースの JSON 表記です。
-<!-- {
+<!--{
   "blockType": "resource",
   "keyProperty": "id",
+  "baseType": "microsoft.graph.entity",
   "@odata.type": "microsoft.graph.detectedApp"
-}
--->
+}-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.detectedApp",

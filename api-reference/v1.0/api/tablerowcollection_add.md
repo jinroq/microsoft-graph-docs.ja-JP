@@ -1,6 +1,6 @@
-# <a name="tablerowcollection-add"></a>TableRowCollection: add　
+# <a name="tablerowcollection-add"></a>TableRowCollection: add
 
-新しい行をテーブルに追加します。
+テーブルの末尾に行を追加します。 API がこの API を使用して複数の行データを受け入れることができることに注意してください。 一度に 1 行を追加すると、パフォーマンスが低下する可能性があります。 推奨されるアプローチは、1 つの行の挿入を行うのではなく、1 回の呼び出しでまとめて行をバッチ処理することです。 最良の結果を得るには、収集アプリケーション側で挿入して、1 つの行を実行する行操作を追加します。 行の数で試して、1 回の API 呼び出しで使用する理想的な行の数を決定してください。 
 
 ## <a name="error-handling"></a>エラー処理
 
@@ -25,7 +25,7 @@ POST /workbook/worksheets/{id|name}/tables/{id|name}/rows/add
 ## <a name="request-headers"></a>要求ヘッダー
 | 名前       | 説明|
 |:---------------|:----------|
-| Authorization  | ベアラー {トークン}。必須。 |
+| 承認  | ベアラー {トークン}。必須。 |
 | Workbook-Session-Id  | 変更を保持するかどうかを決定するブック セッション ID。省略可能。|
 
 ## <a name="request-body"></a>要求本文
@@ -33,15 +33,16 @@ POST /workbook/worksheets/{id|name}/tables/{id|name}/rows/add
 
 | パラメーター    | 型   |説明|
 |:---------------|:--------|:----------|
-|index|number|省略可能。新しい行の相対位置を指定します。null の場合、最後に追加が行われます。挿入した行の下のすべての行が下方向にシフトします。0 を起点とする番号になります。|
-|values|(boolean、string、または number)|省略可能。テーブルの行の書式設定されていない値の 2 次元の配列。|
+|インデックス|Int32|省略可能。新しい行の相対位置を指定します。null の場合、最後に追加が行われます。挿入した行の下のすべての行が下方向にシフトします。0 を起点とする番号になります。|
+|値|Json|省略可能。テーブルの行の書式設定されていない値の 2 次元の配列。|
 
 ## <a name="response"></a>応答
 
-成功した場合、このメソッドは `200 OK` 応答コードと、応答本文で [TableRow](../resources/tablerow.md) オブジェクトを返します。
+成功した場合、このメソッドは `200 OK` 応答コードと、応答本文で [WorkbookTableRow](../resources/tablerow.md) オブジェクトを返します。
 
 ## <a name="example"></a>例
-以下は、この API を呼び出す方法の例です。
+この例では、テーブルの末尾に 2 行のデータが挿入されます。 
+
 ##### <a name="request"></a>要求
 以下は、要求の例です。
 <!-- {
@@ -54,7 +55,7 @@ Content-type: application/json
 Content-length: 51
 
 {
-  "index": null,
+  "index": 5,
   "values": [
     [1, 2, 3],
     [4, 5, 6]
@@ -67,7 +68,7 @@ Content-length: 51
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.tableRow"
+  "@odata.type": "microsoft.graph.workbookTableRow"
 } -->
 ```http
 HTTP/1.1 200 OK
@@ -87,5 +88,11 @@ Content-length: 45
   "description": "TableRowCollection: add",
   "keywords": "",
   "section": "documentation",
+  "suppressions": [
+    "Warning: /api-reference/v1.0/api/tablerowcollection_add.md/tablerowcollection_add/values:
+      Inconsistent types between parameter (Collection) and table (None)",
+    "Error: /api-reference/v1.0/api/tablerowcollection_add.md/tablerowcollection_add/values:
+      Type mismatch between example and table. Parameter name: values; example type (Collection(Collection)) is a collection, while the table description type (microsoft.graph.Json) is not."
+  ],
   "tocPath": ""
 }-->

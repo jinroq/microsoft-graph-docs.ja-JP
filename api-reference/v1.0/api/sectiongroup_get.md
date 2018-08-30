@@ -1,4 +1,4 @@
-# <a name="get-sectiongroup"></a>Get sectionGroup
+# <a name="get-sectiongroup"></a>SectionGroup を取得します
 
 [sectionGroup](../resources/sectiongroup.md) オブジェクトのプロパティとリレーションシップを取得します。
 ## <a name="permissions"></a>アクセス許可
@@ -26,8 +26,8 @@ GET /sites/{id}/onenote/sectionGroups/{id}
 ## <a name="request-headers"></a>要求ヘッダー
 | 名前       | 型 | 説明|
 |:-----------|:------|:----------|
-| Authorization  | string  | ベアラー {トークン}。必須。 |
-| 承諾 | string | `application/json` |
+| 承認  | 文字列  | ベアラー {トークン}。必須。 |
+| 承諾 | 文字列 | `application/json` |
 
 ## <a name="request-body"></a>要求本文
 このメソッドには、要求本文を指定しません。
@@ -50,7 +50,7 @@ GET https://graph.microsoft.com/v1.0/me/onenote/sectionGroups/{id}
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.sectiongroup"
+  "@odata.type": "microsoft.graph.sectionGroup"
 } -->
 ```http
 HTTP/1.1 200 OK

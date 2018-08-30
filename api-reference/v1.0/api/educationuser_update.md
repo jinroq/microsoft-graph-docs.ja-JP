@@ -19,27 +19,27 @@ PATCH /education/users/{id}
 ## <a name="request-headers"></a>要求ヘッダー
 | ヘッダー       | 値 |
 |:---------------|:--------|
-| Authorization  | ベアラー {トークン}。必須。  |
-| Content-Type  | application/json  |
+| 承認  | ベアラー {トークン}。必須。  |
+| コンテンツ-タイプ  | アプリケーション /json  |
 
 ## <a name="request-body"></a>要求本文
 要求本文で、更新する関連フィールドの値を指定します。 要求本文に含まれない既存のプロパティは、以前の値のままになるか、他のプロパティ値の変更に基づいて再計算されます。 最適なパフォーマンスを得るために、変更されていない既存の値を含めないでください。
 
-| プロパティ     | 型   |説明|
+| プロパティ     | タイプ   |説明|
 |:---------------|:--------|:----------|
 |displayName| String| ユーザーの表示名|
 |givenName| String | 名 |
 |middleName| String | ユーザーのミドル ネーム|
-|surname| String | ユーザーの姓|
-|mail| String| メール アドレス|
+|姓| String | ユーザーの姓|
+|メール| String| メール アドレス|
 |mobilePhone| String | ユーザーの携帯電話番号 |
-|externalSource|string| 使用可能な値: `sis`、`manual`、`enum_sentinel`。|
-|externalSource|string| このユーザーが作成された場所。  使用可能な値: `sis`、`manual`、`enum_sentinel`。|
+|externalSource|文字列| 可能な値は、`sis`、`manual`、`enum_sentinel` です。|
+|externalSource|文字列| このユーザーが作成された場所。  可能な値は、`sis`、`manual`、`enum_sentinel` です。|
 |mailingAddress|[physicalAddress](../resources/physicaladdress.md)| ユーザーのメール アドレス。|
 |residenceAddress|[physicalAddress](../resources/physicaladdress.md)| ユーザーが在住している場所のアドレス。|
-|primaryRole|string| ユーザーの既定のロール。  ユーザーのロールは、個々のクラスで異なる場合があります。 使用可能な値: `student`、`teacher`、`enum_sentinel`。|
-|student|[educationStudent](../resources/educationstudent.md)| プライマリ ロールが学生の場合、このブロックには学生固有のデータが含まれます。|
-|teacher|[educationTeacher](../resources/educationteacher.md)| プライマリ ロールが教師の場合、このブロックには教師固有のデータが含まれます。|
+|primaryRole|文字列| ユーザーの既定のロール。  ユーザーのロールは、個々のクラスで異なる場合があります。 可能な値は、`student`、`teacher`、`enum_sentinel` です。|
+|学生|[educationStudent](../resources/educationstudent.md)| プライマリ ロールが学生の場合、このブロックには学生固有のデータが含まれます。|
+|教師|[educationTeacher](../resources/educationteacher.md)| プライマリ ロールが教師の場合、このブロックには教師固有のデータが含まれます。|
 
 
 ## <a name="response"></a>応答
@@ -52,7 +52,7 @@ PATCH /education/users/{id}
   "name": "update_educationuser"
 }-->
 ```http
-PATCH https://graph.microsoft.com/v1.0/education/users/13020
+PATCH https://graph.microsoft.com/v1.0/education/users/{user-id}
 Content-type: application/json
 Content-length: 508
 
@@ -97,7 +97,7 @@ Content-length: 508
         "state": "CA",
         "street": "12345 Main St."
       },
-  "primaryRole": "string",
+  "primaryRole": "student",
   "residenceAddress": {
         "city": "Los Angeles",
         "countryOrRegion": "United States",
@@ -106,7 +106,6 @@ Content-length: 508
         "street": "12345 Main St."
       },
   "student": {
-      "primaryRole": "student",
       "externalId": "13005",
       "birthDate": "2001-01-01T00:00:00Z"
     }

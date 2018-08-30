@@ -1,45 +1,57 @@
 # <a name="calendargroup-resource-type"></a>calendarGroup リソースの種類
 
-予定表のグループです。
+ユーザーの予定表のグループです。
 
 ## <a name="methods"></a>メソッド
 
 | メソッド                                                      | 戻り値の型                        | 説明                                                   |
 | :---------------------------------------------------------- | :--------------------------------- | :------------------------------------------------------------ |
-| [予定表グループを一覧表示する](../api/user_list_calendargroups.md)  | [Calendar](calendar.md) collection | ユーザーの予定表グループを取得します。                               |
-| [予定表グループを作成する](../api/user_post_calendargroups.md) | [Calendar](calendar.md)            | 新しい予定表グループを作成します。                                  |
+| [予定表グループを一覧表示する](../api/user_list_calendargroups.md)  | [Calendar](calendar.md) コレクション | ユーザーの予定表グループを取得します。                               |
+| [予定表グループを作成する](../api/user_post_calendargroups.md) | [カレンダー](calendar.md)            | 新しい予定表グループを作成します。                                  |
 | [予定表グループを取得する](../api/calendargroup_get.md)           | [calendarGroup](calendargroup.md)  | 予定表グループ オブジェクトのプロパティと関係を読み取ります。 |
-| [Update](../api/calendargroup_update.md)                    | [calendarGroup](calendargroup.md)  | calendarGroup オブジェクトを更新します。                                  |
-| [Delete](../api/calendargroup_delete.md)                    | なし                               | calendarGroup オブジェクトを削除します。                                  |
-| [予定表を一覧表示する](../api/calendargroup_list_calendars.md)    | [Calendar](calendar.md) collection | 予定表グループ内の予定表を一覧表示する                           |
-| [予定表を作成する](../api/calendargroup_post_calendars.md)   | [Calendar](calendar.md)            | 予定表グループに新しい予定表を作成します。                    |
+| [更新する](../api/calendargroup_update.md)                    | [calendarGroup](calendargroup.md)  | calendarGroup オブジェクトを更新します。                                  |
+| [削除](../api/calendargroup_delete.md)                    | なし                               | calendarGroup オブジェクトを削除します。                                  |
+| [予定表を一覧表示する](../api/calendargroup_list_calendars.md)    | [Calendar](calendar.md) コレクション | 予定表グループ内の予定表を一覧表示する                           |
+| [予定表を作成する](../api/calendargroup_post_calendars.md)   | [カレンダー](calendar.md)            | 予定表グループに新しい予定表を作成します。                    |
 
 ## <a name="properties"></a>プロパティ
 
-| プロパティ  | 型   | 説明                                                                                                                                                                                               |
+| プロパティ  | タイプ   | 説明                                                                                                                                                                                               |
 | :-------- | :----- | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| name      | String | グループの名前。                                                                                                                                                                                           |
-| changeKey | String | 予定表グループのバージョンを識別します。予定表グループを変更するたびに ChangeKey も変更されます。これにより、Exchange は正しいバージョンのオブジェクトに変更を適用できます。読み取り専用です。 |
-| classId   | Guid   | クラス識別子。読み取り専用です。                                                                                                                                                                          |
-| id        | String | グループの一意識別子。読み取り専用です。                                                                                                                                                                 |
+| 名前      | 文字列 | グループの名前。                                                                                                                                                                                           |
+| 変更キー | 文字列 | 予定表グループのバージョンを識別します。予定表グループを変更するたびに ChangeKey も変更されます。これにより、Exchange は正しいバージョンのオブジェクトに変更を適用できます。読み取り専用です。 |
+| classId   | Guid型   | クラス識別子。読み取り専用です。                                                                                                                                                                          |
+| ID        | 文字列 | グループの一意識別子。読み取り専用です。                                                                                                                                                                 |
 
 ## <a name="relationships"></a>リレーションシップ
 
 | リレーションシップ | 型                               | 説明                                                                    |
 | :----------- | :--------------------------------- | :----------------------------------------------------------------------------- |
-| 予定表    | [Calendar](calendar.md) collection | 予定表グループ内の予定表。ナビゲーション プロパティ。読み取り専用です。Null 許容型。 |
+| 予定表    | [Calendar](calendar.md) コレクション | 予定表グループ内の予定表。ナビゲーション プロパティ。読み取り専用です。Null 許容型。 |
 
 ## <a name="json-representation"></a>JSON 表記
 
 以下は、リソースの JSON 表記です
 
-<!-- {
+<!--{
   "blockType": "resource",
   "optionalProperties": [
     "calendars"
   ],
   "keyProperty": "id",
-  "@odata.type": "microsoft.graph.calendarGroup"
+  "baseType": "microsoft.graph.entity",
+  "@odata.type": "microsoft.graph.calendarGroup",
+  "@odata.annotations": [
+    {
+      "property": "calendars",
+      "capabilities": {
+        "changeTracking": false,
+        "expandable": false,
+        "navigability": "single",
+        "searchable": false
+      }
+    }
+  ]
 }-->
 
 ```json
