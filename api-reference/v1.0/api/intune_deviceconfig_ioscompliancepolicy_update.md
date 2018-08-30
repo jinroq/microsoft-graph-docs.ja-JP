@@ -1,6 +1,6 @@
 # <a name="update-ioscompliancepolicy"></a>iosCompliancePolicy の更新
 
-> **注:**Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
+> **注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
 
 [iosCompliancePolicy](../resources/intune_deviceconfig_ioscompliancepolicy.md) オブジェクトのプロパティを更新します。
 ## <a name="prerequisites"></a>前提条件
@@ -24,7 +24,7 @@ PATCH /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}
 ## <a name="request-headers"></a>要求ヘッダー
 |ヘッダー|値|
 |:---|:---|
-|承認|ベアラー &lt;トークン&gt;が必須。|
+|承認|ベアラー &lt;トークン&gt; が必須。|
 |承諾|application/json|
 
 ## <a name="request-body"></a>要求本文
@@ -32,28 +32,28 @@ PATCH /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}
 
 次の表に、[iosCompliancePolicy](../resources/intune_deviceconfig_ioscompliancepolicy.md) 作成時に必要なプロパティを示します。
 
-|プロパティ|型|説明|
+|プロパティ|タイプ|説明|
 |:---|:---|:---|
 |id|String|エンティティのキー。 [deviceCompliancePolicy](../resources/intune_deviceconfig_devicecompliancepolicy.md) から継承します|
 |createdDateTime|DateTimeOffset|オブジェクトが作成された DateTime。 [deviceCompliancePolicy](../resources/intune_deviceconfig_devicecompliancepolicy.md) から継承します|
 |description|String|デバイス構成について管理者が提供した説明。 [deviceCompliancePolicy](../resources/intune_deviceconfig_devicecompliancepolicy.md) から継承します|
-|lastModifiedDateTime|DateTimeOffset|オブジェクトの最終更新の DateTime。 [deviceCompliancePolicy](../resources/intune_deviceconfig_devicecompliancepolicy.md) から継承します|
+|lastModifiedDateTime|DateTimeOffset|オブジェクトが最後に変更された DateTime。 [deviceCompliancePolicy](../resources/intune_deviceconfig_devicecompliancepolicy.md) から継承します|
 |displayName|String|デバイス構成について管理者が指定した名前。 [deviceCompliancePolicy](../resources/intune_deviceconfig_devicecompliancepolicy.md) から継承します|
 |version|Int32|デバイス構成のバージョン。 [deviceCompliancePolicy](../resources/intune_deviceconfig_devicecompliancepolicy.md) から継承します|
 |passcodeBlockSimple|Boolean|単純なパスコードを禁止するかどうかを示します。|
 |passcodeExpirationDays|Int32|パスコードの有効期限が切れるまでの日数。 有効な値は 1 から 65535 までです|
 |passcodeMinimumLength|Int32|パスコードの最小の長さ。 有効な値は 4 から 14 までです|
 |passcodeMinutesOfInactivityBeforeLock|Int32|パスコードが要求されるまでの非アクティブ時間 (分)。|
-|passcodePreviousPasscodeBlockCount|Int32|禁止する、以前のパスコードの数。 有効な値は 1 から 24 までです|
+|passcodePreviousPasscodeBlockCount|Int32|ブロックする、以前のパスコードの数。 有効な値は 1 から 24 までです|
 |passcodeMinimumCharacterSetCount|Int32|パスワードに必要な文字セットの数。|
-|passcodeRequiredType|String|必要なパスコードの種類。 可能な値は、`deviceDefault`、`alphanumeric`、`numeric` です。|
-|passcodeRequired|Boolean|パスコードを要求するかどうかを示します。|
-|osMinimumVersion|String|最小の iOS バージョン。|
-|osMaximumVersion|String|最大の iOS バージョン。|
+|passcodeRequiredType|[requiredPasswordType](../resources/intune_deviceconfig_requiredpasswordtype.md)|要求されるパスコードの種類。 可能な値は、 `deviceDefault`、`alphanumeric`、`numeric` です。|
+|passcodeRequired|Boolean|パスコードを要求するかどうかを指定します。|
+|osMinimumVersion|String|最低限必要な iOS のバージョン。|
+|osMaximumVersion|String|iOS の最高バージョン。|
 |securityBlockJailbrokenDevices|Boolean|デバイスの脱獄またはルート化を認めません。|
-|deviceThreatProtectionEnabled|Boolean|デバイスの脅威保護が有効になっている必要があります。|
-|deviceThreatProtectionRequiredSecurityLevel|String|Mobile Threat Protection に、コンプライアンス違反をレポートするための最小のリスク レベルを要求します。 可能な値は、`unavailable`、`secured`、`low`、`medium`、`high`、`notSet` です。|
-|managedEmailProfileRequired|Boolean|管理された電子メール プロファイルを必要とするかどうかを示します。|
+|deviceThreatProtectionEnabled|Boolean|デバイスへの脅威に対する保護が有効になっている必要があります。|
+|deviceThreatProtectionRequiredSecurityLevel|[deviceThreatProtectionLevel](../resources/intune_deviceconfig_devicethreatprotectionlevel.md)|Mobile Threat Protection に、コンプライアンス違反をレポートするための最小のリスク レベルを要求します。 可能な値は、`unavailable`、`secured`、`low`、`medium`、`high`、`notSet` です。|
+|managedEmailProfileRequired|Boolean|管理された電子メール プロファイルを必要とするかどうかを指定します。|
 
 
 

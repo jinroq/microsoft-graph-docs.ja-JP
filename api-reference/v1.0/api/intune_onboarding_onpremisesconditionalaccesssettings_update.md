@@ -1,6 +1,6 @@
 # <a name="update-onpremisesconditionalaccesssettings"></a>onPremisesConditionalAccessSettings の更新
 
-> **注:**Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
+> **注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
 
 [onPremisesConditionalAccessSettings](../resources/intune_onboarding_onpremisesconditionalaccesssettings.md) オブジェクトのプロパティを更新します。
 ## <a name="prerequisites"></a>前提条件
@@ -24,7 +24,7 @@ PATCH /deviceManagement/conditionalAccessSettings
 ## <a name="request-headers"></a>要求ヘッダー
 |ヘッダー|値|
 |:---|:---|
-|承認|ベアラー &lt;トークン&gt;が必須。|
+|承認|ベアラー &lt;トークン&gt; が必須。|
 |承諾|application/json|
 
 ## <a name="request-body"></a>要求本文
@@ -32,13 +32,13 @@ PATCH /deviceManagement/conditionalAccessSettings
 
 次の表に、[onPremisesConditionalAccessSettings](../resources/intune_onboarding_onpremisesconditionalaccesssettings.md) の作成時に必要なプロパティを示します。
 
-|プロパティ|型|説明|
+|プロパティ|タイプ|説明|
 |:---|:---|:---|
-|id|String|まだ文書化されていません|
-|enabled|Boolean|対象組織で、オンプレミスの条件付きアクセスが有効かどうかを示します。|
+|ID|文字列|まだ文書化されていません|
+|enabled|ブール値|対象組織で、オンプレミスの条件付きアクセスが有効かどうかを示します。|
 |includedGroups|Guid コレクション|オンプレミスの条件付きアクセスで対象となるユーザー グループ。 これらのグループ内のユーザーすべては、管理対象のモバイル デバイスを持っており、メール アクセスに準拠している必要があります。|
 |excludedGroups|Guid コレクション|オンプレミスの条件付きアクセスで除外されるユーザー グループ。 これらのグループ内のすべてのユーザーは、条件付きアクセス ポリシーから除外されます。|
-|overrideDefaultRule|Boolean|デバイスでアクセスが付与されていることを確認できるようにするとき、既定のアクセス ルールを上書きします。|
+|overrideDefaultRule|ブール値|デバイスでアクセスが付与されていることを確認できるようにするとき、既定のアクセス ルールを上書きします。|
 
 
 
@@ -56,10 +56,10 @@ Content-length: 195
 {
   "enabled": true,
   "includedGroups": [
-    "<Unknown Primitive Type Edm.Guid>"
+    "79199ed9-e50b-4257-8de4-70b9c8685061"
   ],
   "excludedGroups": [
-    "<Unknown Primitive Type Edm.Guid>"
+    "79199ed9-e50b-4257-8de4-70b9c8685061"
   ],
   "overrideDefaultRule": true
 }
@@ -77,10 +77,10 @@ Content-Length: 318
   "id": "a0efde21-de21-a0ef-21de-efa021deefa0",
   "enabled": true,
   "includedGroups": [
-    "<Unknown Primitive Type Edm.Guid>"
+    "79199ed9-e50b-4257-8de4-70b9c8685061"
   ],
   "excludedGroups": [
-    "<Unknown Primitive Type Edm.Guid>"
+    "79199ed9-e50b-4257-8de4-70b9c8685061"
   ],
   "overrideDefaultRule": true
 }

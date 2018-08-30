@@ -1,6 +1,6 @@
 # <a name="remoteassistancepartner-resource-type"></a>remoteAssistancePartner リソースの種類
 
-> **注:**Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
+> **注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
 
 remoteAssistPartner リソースは、特定のリモート アシスタンス パートナー サービスのメタデータおよび状態を表します。
 ## <a name="methods"></a>メソッド
@@ -15,24 +15,24 @@ remoteAssistPartner リソースは、特定のリモート アシスタンス �
 |[disconnect アクション](../api/intune_remoteassistance_remoteassistancepartner_disconnect.md)|なし|まだ文書化されていません|
 
 ## <a name="properties"></a>プロパティ
-|プロパティ|型|説明|
+|プロパティ|タイプ|説明|
 |:---|:---|:---|
-|id|文字列型 (String)|パートナーの一意識別子。|
-|displayName|文字列型 (String)|パートナーの表示名。|
-|onboardingUrl|文字列型 (String)|パートナーのオンボーディング ポータルの URL。ポータルでは、管理者がパートナーのリモート アシスタンス サービスを構成できます。|
-|onboardingStatus|文字列型 (String)|TBD の可能な値: `notOnboarded`、`onboarding`、`onboarded`。|
+|id|String|パートナーの一意識別子。|
+|displayName|String|パートナーの表示名。|
+|onboardingUrl|String|パートナーのオンボーディング ポータルの URL。このポータルでは、管理者がパートナーのリモート アシスタンス サービスを構成できます。|
+|onboardingStatus|[remoteAssistanceOnboardingStatus](../resources/intune_remoteassistance_remoteassistanceonboardingstatus.md)|未定 可能な値は、 `notOnboarded`、`onboarding`、`onboarded` です。|
 |lastConnectionDateTime|DateTimeOffset|TEM パートナーによって Intune に対して最後に送信された要求のタイムスタンプ。|
 
 ## <a name="relationships"></a>リレーションシップ
 なし
 ## <a name="json-representation"></a>JSON 表記
 以下は、リソースの JSON 表記です。
-<!-- {
+<!--{
   "blockType": "resource",
   "keyProperty": "id",
+  "baseType": "microsoft.graph.entity",
   "@odata.type": "microsoft.graph.remoteAssistancePartner"
-}
--->
+}-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.remoteAssistancePartner",

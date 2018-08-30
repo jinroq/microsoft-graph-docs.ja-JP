@@ -11,7 +11,7 @@
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.locationconstraint"
+  "@odata.type": "microsoft.graph.locationConstraint"
 }-->
 
 ```json
@@ -23,11 +23,11 @@
 
 ```
 ## <a name="properties"></a>プロパティ
-| プロパティ       | 型    |説明|
+| プロパティ     | タイプ   |説明|
 |:---------------|:--------|:----------|
-|isRequired|Boolean|クライアントは、応答に会議の場所を含めるようにサービスに要求します。この値が true で、すべてのリソースがビジー状態の場合、[findMeetingTimes](../api/user_findmeetingtimes.md) は会議時間の提案を返しません。この値が false で、すべてのリソースがビジー状態の場合は、**findMeetingTimes** は位置指定のないまま会議時間を検索します。 |
+|isRequired|ブール値|クライアントは、応答に会議の場所を含めるようにサービスに要求します。この値が true で、すべてのリソースがビジー状態の場合、[findMeetingTimes](../api/user_findmeetingtimes.md) は会議時間の提案を返しません。この値が false で、すべてのリソースがビジー状態の場合は、**findMeetingTimes** は位置指定のないまま会議時間を検索します。 |
 |locations|[locationConstraintItem](locationconstraintitem.md) コレクション|クライアントが会議のために要求する 1 つ以上の場所に関する制約情報。|
-|suggestLocation|Boolean|クライアントは、1 つ以上の会議場所を提案するようサービスに要求します。|
+|suggestLocation|ブール値|クライアントは、1 つ以上の会議場所を提案するようサービスに要求します。|
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

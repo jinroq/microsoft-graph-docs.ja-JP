@@ -11,18 +11,27 @@
 |アプリケーション | Calendars.ReadWrite |
 
 ## <a name="http-request"></a>HTTP 要求
+ユーザーの既定[ カレンダー](../resources/event.md)内の[ イベント](../resources/calendar.md)の添付ファイル。
+
+<!--
+Attachments for an [event](../resources/event.md) in the user's or group's default [calendar](../resources/calendar.md).
+-->
 <!-- { "blockType": "ignored" } -->
-ユーザーまたはグループの既定の[カレンダー](../resources/calendar.md)内の[イベント](../resources/event.md)の添付ファイル。
 ```http
 POST /me/events/{id}/attachments
 POST /users/{id | userPrincipalName}/events/{id}/attachments
-POST /groups/{id}/events/{id}/attachments
 
 POST /me/calendar/events/{id}/attachments
 POST /users/{id | userPrincipalName}/calendar/events/{id}/attachments
-POST /groups/{id}/calendar/events/{id}/attachments
 ```
-ユーザーの既定 [calendarGroup](../resources/calendargroup.md) に属する[カレンダー](../resources/calendar.md)内[イベント](../resources/event.md)の添付ファイル。
+
+<!--
+POST /groups/{id}/events/{id}/attachments
+POST /groups/{id}/calendar/events/{id}/attachments
+-->
+
+ユーザーの既定[  calendarGroup](../resources/event.md) に属する[カレンダー](../resources/calendar.md)内[ イベント](../resources/calendargroup.md)の添付ファイル。
+<!-- { "blockType": "ignored" } -->
 ```http
 POST /me/calendars/{id}/events/{id}/attachments
 POST /users/{id | userPrincipalName}/calendars/{id}/events/{id}/attachments
@@ -31,6 +40,7 @@ POST /me/calendargroup/calendars/{id}/events/{id}/attachments
 POST /users/{id | userPrincipalName}/calendargroup/calendars/{id}/events/{id}/attachments
 ```
 ユーザーの [calendarGroup](../resources/calendargroup.md) に属する[カレンダー](../resources/calendar.md)内[イベント](../resources/event.md)の添付ファイル。
+<!-- { "blockType": "ignored" } -->
 ```http
 POST /me/calendargroups/{id}/calendars/{id}/events/{id}/attachments
 POST /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{id}/attachments
@@ -38,8 +48,8 @@ POST /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{
 ## <a name="request-headers"></a>要求ヘッダー
 | 名前       | 型 | 説明|
 |:---------------|:--------|:----------|
-| Authorization  | string  | ベアラー {トークン}。必須。 |
-| Content-Type | string  | エンティティ本文内のデータの性質です。必須。 |
+| 承認  | 文字列  | ベアラー {トークン}。必須。 |
+| コンテンツ - タイプ | 文字列  | エンティティ本文内のデータの性質です。必須。 |
 
 ## <a name="request-body"></a>要求本文
 要求本文で、[attachment](../resources/attachment.md) オブジェクトの JSON 表記を指定します。
@@ -54,17 +64,18 @@ POST /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{
 以下は、要求の例です。
 <!-- {
   "blockType": "request",
+  "sampleKeys": ["AAMkAGI1AAAt9AHjAAA="],
   "name": "create_file_attachment_from_event"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/me/events('AAMkAGI1AAAt9AHjAAA=')/attachments 
+POST https://graph.microsoft.com/v1.0/me/events/AAMkAGI1AAAt9AHjAAA=/attachments
 Content-type: application/json
 Content-length: 151
 
 {
     "@odata.type": "#microsoft.graph.fileAttachment",
     "name": "menu.txt",
-    "contentBytes": "bWFjIGFuZCBjaGVlc2UgdG9kYXk="   
+    "contentBytes": "base64bWFjIGFuZCBjaGVlc2UgdG9kYXk="   
 }
 ```
 
@@ -79,7 +90,7 @@ Content-length: 151
 } -->
 ```http
 HTTP 201 Created
-Content-Length: 735
+Content-type: application/json
 
 {
     "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#users('cd209b0b-3f83-4c35-82d2-d88a61820480')/events('AAMkAGI1AAAt9AHjAAA%3D')/attachments/$entity",
@@ -92,7 +103,7 @@ Content-Length: 735
     "isInline":false,
     "contentId":null,
     "contentLocation":null,
-    "contentBytes":"bWFjIGFuZCBjaGVlc2UgdG9kYXk="
+    "contentBytes":"base64bWFjIGFuZCBjaGVlc2UgdG9kYXk="
 }
 ```
 
@@ -104,10 +115,11 @@ Content-Length: 735
 
 <!-- {
   "blockType": "request",
+  "sampleKeys": ["AAMkAGI1AAAt9AHjAAA="],
   "name": "create_item_attachment_from_event"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/me/events/{AAMkAGI1AAAt9AHjAAA=}/attachments
+POST https://graph.microsoft.com/v1.0/me/events/AAMkAGI1AAAt9AHjAAA=/attachments
 Content-type: application/json
 Content-length: 600
 
@@ -146,9 +158,9 @@ Content-type: application/json
 Content-length: 162
 
 {
-    "@odata.context":"https://graph.microsoft.com/api/v1.0/$metadata#me/events('AAMkAGI1AAAt9AHjAAA=')/attachments/$entity",
+    "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#me/events('AAMkAGI1AAAt9AHjAAA=')/attachments/$entity",
     "@odata.type":"#microsoft.graph.itemAttachment",
-    "@odata.id":"https://graph.microsoft.com/api/v1.0/users('fdcbcf34-2505-4d07-be5b-0a55b699d157@41a5b830-45ac-4f1b-9bfc-baafa3b7db2e')/events('AAMkAGI1AAAt9AHjAAA=')/attachments('AAMkADNkN2Jp5JVnQIe9r0=')",
+    "@odata.id":"https://graph.microsoft.com/v1.0/users('fdcbcf34-2505-4d07-be5b-0a55b699d157@41a5b830-45ac-4f1b-9bfc-baafa3b7db2e')/events('AAMkAGI1AAAt9AHjAAA=')/attachments('AAMkADNkN2Jp5JVnQIe9r0=')",
     "id":"AAMkADNkNJp5JVnQIe9r0=",
     "lastModifiedDateTime":"2016-12-01T22:27:13Z",
     "name":"Holiday event",

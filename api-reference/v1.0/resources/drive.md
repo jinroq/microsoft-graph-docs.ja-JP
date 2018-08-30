@@ -3,11 +3,12 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
 title: Drive
-ms.openlocfilehash: 0b178967f7eb8da8bdf8584bb13a7d4f9950392b
-ms.sourcegitcommit: 7aea7a97e36e6d146214de3a90fdbc71628aadba
+ms.openlocfilehash: c1abdfefa30dc2f510f3207adaf1d61a4d6a5edd
+ms.sourcegitcommit: abf4b739257e3ffd9d045f783ec595d846172590
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23270098"
 ---
 # <a name="drive-resource-type"></a>Drive リソース型
 
@@ -17,14 +18,31 @@ OneDrive のユーザーは、少なくとも 1 つのドライブ (そのユー
 
 ## <a name="json-representation"></a>JSON 表記
 
-Drive リソースの JSON 表記を以下に示します。
+ドライブ リソースの JSON 表記を次に示します。
 
-**drive** リソースは [**baseItem**](baseitem.md) から派生しており、そのリソースからプロパティを継承しています。
+**drive** リソースは [**baseItem**](baseitem.md) から派生し、そのリソースからプロパティを継承します。
 
-<!-- { "blockType": "resource", 
-       "@odata.type": "microsoft.graph.drive",
-       "keyProperty": "id", 
-       "optionalProperties": [ "activities", "createdBy", "createdDateTime", "description", "lastModifiedBy", "lastModifiedDateTime", "name", "webUrl", "items", "root", "special", "system"] } -->
+<!--{
+  "blockType": "resource",
+  "optionalProperties": [
+    "activities",
+    "createdBy",
+    "createdDateTime",
+    "description",
+    "lastModifiedBy",
+    "lastModifiedDateTime",
+    "name",
+    "webUrl",
+    "items",
+    "root",
+    "sharepointIds",
+    "special",
+    "system"
+  ],
+  "keyProperty": "id",
+  "baseType": "microsoft.graph.baseItem",
+  "@odata.type": "microsoft.graph.drive"
+}-->
 
 ```json
 {
@@ -40,6 +58,7 @@ Drive リソースの JSON 表記を以下に示します。
   "owner": { "@odata.type": "microsoft.graph.identitySet" },
   "quota": { "@odata.type": "microsoft.graph.quota" },
   "root": { "@odata.type": "microsoft.graph.driveItem" },
+  "sharepointIds": { "@odata.type": "microsoft.graph.sharepointIds" },
   "special": [ { "@odata.type": "microsoft.graph.driveItem" }],
   "system": { "@odata.type": "microsoft.graph.systemFacet" },
   "webUrl": "url"
@@ -48,20 +67,20 @@ Drive リソースの JSON 表記を以下に示します。
 
 ## <a name="properties"></a>プロパティ
 
-| プロパティ             | 型                          | 説明                                                                                                                                                                                                                      |
+| プロパティ             | タイプ                          | 説明                                                                                                                                                                                                                      |
 | :------------------- | :---------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | createdBy            | [identitySet][]               | アイテムを作成したユーザーの ID、デバイス、アプリケーション。読み取り専用です。                                                                                                                                                  |
 | createdDateTime      | dateTimeOffset                | アイテム作成の日時。読み取り専用です。                                                                                                                                                                                       |
 | 説明          | String                        | ユーザーに表示されるドライブの説明を提供します。 読み取り/書き込み。
 | driveType            | String                        | このリソースで表されるドライブの種類についての説明。OneDrive 個人用のドライブは `personal` を返します。OneDrive for Business は `business` を返します。SharePoint ドキュメント ライブラリは `documentLibrary` を返します。読み取り専用。 |
-| id                   | 文字列                        | ドライブの一意識別子。読み取り専用です。                                                                                                                                                                                   |
+| id                   | String                        | ドライブの一意識別子。読み取り専用です。                                                                                                                                                                                   |
 | lastModifiedBy       | [identitySet][]               | アイテムを最終更新したユーザーの ID、デバイス、アプリケーション。読み取り専用です。                                                                                                                                           |
 | lastModifiedDateTime | dateTimeOffset                | アイテムが最後に変更された日時。読み取り専用です。                                                                                                                                                                             |
 | name                 | string                        | アイテムの名前。読み取り/書き込み。                                                                                                                                                                                                |
 | owner                | [identitySet](identityset.md) | 省略可能。ドライブを所有しているユーザー アカウント。読み取り専用です。                                                                                                                                                                       |
 | quota                | [quota](quota.md)             | 省略可能。ドライブの記憶領域クォータに関する情報。読み取り専用です。                                                                                                                                                          |
 | sharepointIds        | [sharepointIds][]             | SharePoint REST 互換性に役立つ識別子を返します。読み取り専用です。                                                                                                                                                         |
-| system               | [systemFacet][]               | 存在する場合は、これがシステム管理のドライブであることを示しています。 読み取り専用です。
+| システム               | [systemFacet][]               | 存在する場合は、これがシステム管理のドライブであることを示しています。 読み取り専用です。
 | webUrl               | string (URL)                  | ブラウザーでリソースを表示するための URL。読み取り専用です。                                                                                                                                                                        |
 
 [identitySet]: identityset.md
@@ -73,19 +92,20 @@ Drive リソースの JSON 表記を以下に示します。
 | リレーションシップ | 型                                 | 説明
 |:-------------|:-------------------------------------|:-----------------------
 | items        | [driveitem](driveitem.md) コレクション | ドライブに含まれているすべてのアイテム。読み取り専用。Null 許容型。
-| root         | [driveitem](driveitem.md)            | ドライブのルート フォルダー。読み取り専用。
+| root         | [DriveItem](driveitem.md)            | ドライブのルート フォルダー。読み取り専用。
 | special      | [driveitem](driveitem.md) コレクション | OneDrive で使用可能な共通フォルダーのコレクション。読み取り専用。Null 許容型。
+| リスト         | [リスト](list.md)                      | SharePoint のドライブでは、基になるドキュメント ライブラリの一覧です。 読み取り専用。 Null 許容型。
 
 ## <a name="methods"></a>メソッド
 
 |                        共通タスク                         |         HTTP メソッド         |
 | :--------------------------------------------------------- | :-------------------------- |
-| [別の Drive の Drive メタデータを取得する][drive-get]           | `GET /drives/{drive-id}`    |
+| [別のドライブのドライブ メタデータを取得する][drive-get]           | `GET /drives/{drive-id}`    |
 | [ユーザーの既定のドライブのルート フォルダーを取得する][item-get]       | `GET /drive/root`           |
 | [ドライブの子を一覧表示する][item-children]             | `GET /drive/root/children`  |
 | [ドライブ内のすべてのアイテムの変更を一覧表示する][item-changes]    | `GET /drive/root/delta`     |
 | [ドライブ内のアイテムを検索する][item-search]               | `GET /drive/root/search`    |
-| [特殊フォルダーにアクセスする](../api/drive_get_specialfolder.md) | `GET /drive/special/{name}` |
+| [特別なフォルダーにアクセスする](../api/drive_get_specialfolder.md) | `GET /drive/special/{name}` |
 
 前の表では例に `/drive` を使用していますが、他のパスも有効です。
 
@@ -105,6 +125,10 @@ Drive リソースの JSON 表記を以下に示します。
   "description": "Drive is a top level object for OneDrive API that provides access to the contents of a drive. ",
   "keywords": "drive,objects,resources",
   "section": "documentation",
+  "suppressions": [
+    "Warning: /api-reference/v1.0/resources/drive.md:
+      Found potential enums in resource example that weren't defined in a table:(personal,business,documentLibrary) are in resource, but () are in table"
+  ],
   "tocPath": "Drives",
   "tocBookmarks": { "Resources/Drive": "#" }
 } -->
