@@ -1,12 +1,12 @@
 # <a name="windowsfirewallnetworkprofile-resource-type"></a>windowsFirewallNetworkProfile リソース タイプ
 
-> **注:**Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
+> **注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
 
 Windows ファイアウォールのプロファイルのポリシーです。
 ## <a name="properties"></a>プロパティ
-|プロパティ|型|説明|
+|プロパティ|タイプ|説明|
 |:---|:---|:---|
-|firewallEnabled|String|ファイアウォールと高度なセキュリティの実行をオンにします。可能な値は、`notConfigured`、`blocked`、`allowed` です。|
+|firewallEnabled|[stateManagementSetting](../resources/intune_deviceconfig_statemanagementsetting.md)|ファイアウォールと高度なセキュリティの実行をオンにします。 可能な値は、 `notConfigured`、`blocked`、`allowed` です。|
 |stealthModeBlocked|Boolean|サーバーがステルス モードで動作するのを防ぎます|
 |incomingTrafficBlocked|Boolean|他のポリシーの設定に関係なく、すべての受信トラフィックをブロックするようにファイアウォールを構成します|
 |unicastResponsesToMulticastBroadcastsBlocked|Boolean|マルチキャスト ブロードキャスト トラフィックへのユニキャスト応答をブロックするようにファイアウォールを構成します|
@@ -23,12 +23,10 @@ Windows ファイアウォールのプロファイルのポリシーです。
 なし
 ## <a name="json-representation"></a>JSON 表記
 以下は、リソースの JSON 表記です。
-<!-- {
+<!--{
   "blockType": "resource",
-  "keyProperty": "id",
   "@odata.type": "microsoft.graph.windowsFirewallNetworkProfile"
-}
--->
+}-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.windowsFirewallNetworkProfile",

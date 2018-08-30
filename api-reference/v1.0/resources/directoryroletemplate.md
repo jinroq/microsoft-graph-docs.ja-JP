@@ -7,15 +7,15 @@
 
 | メソッド       | 戻り値の型  |説明|
 |:---------------|:--------|:----------|
-|[Get directoryRoleTemplate](../api/directoryroletemplate_get.md) | [directoryRoleTemplate](directoryroletemplate.md) |directoryRoleTemplate オブジェクトのプロパティとリレーションシップを読み取ります。|
-|[List directoryRoleTemplate](../api/directoryroletemplate_list.md) | [directoryRoleTemplate](directoryroletemplate.md) コレクション |directoryRoleTemplate オブジェクトのリストを取得します|
+|[DirectoryRoleTemplate を取得します。](../api/directoryroletemplate_get.md) | [directoryRoleTemplate](directoryroletemplate.md) |directoryRoleTemplate オブジェクトのプロパティとリレーションシップを読み取ります。|
+|[directoryRoleTemplate を一覧表示する](../api/directoryroletemplate_list.md) | [directoryRoleTemplate](directoryroletemplate.md) コレクション |directoryRoleTemplate オブジェクトのリストを取得します|
 
 ## <a name="properties"></a>プロパティ
-| プロパティ       | 型    |説明|
+| プロパティ     | タイプ   |説明|
 |:---------------|:--------|:----------|
-|description|String|ディレクトリ ロールに設定する説明。読み取り専用。|
-|displayName|String|ディレクトリ ロールに設定する表示名。読み取り専用。 |
-|id|String|テンプレートの一意識別子。[directoryObject](directoryobject.md) から継承されます。POST 要求の **roleTemplateId** プロパティにディレクトリ ロール テンプレートの **id** を指定して、テナントの [directoryRole](directoryrole.md) をアクティブ化します。キーであり、Null は許容されません。読み取り専用。|
+|説明|文字列|ディレクトリ ロールに設定する説明。読み取り専用。|
+|displayName|文字列|ディレクトリ ロールに設定する表示名。読み取り専用。 |
+|ID|文字列|テンプレートの一意識別子。[directoryObject](directoryobject.md) から継承されます。POST 要求の **roleTemplateId** プロパティにディレクトリ ロール テンプレートの **id** を指定して、テナントの [directoryRole](directoryrole.md) をアクティブ化します。キーであり、Null は許容されません。読み取り専用。|
 
 ## <a name="relationships"></a>リレーションシップ
 なし
@@ -26,13 +26,20 @@
 
 以下は、リソースの JSON 表記です
 
-<!-- {
+<!--{
   "blockType": "resource",
-  "optionalProperties": [
-
-  ],
+  "openType": true,
+  "optionalProperties": [],
   "keyProperty": "id",
-  "@odata.type": "microsoft.graph.directoryRoleTemplate"
+  "baseType": "microsoft.graph.directoryObject",
+  "@odata.type": "microsoft.graph.directoryRoleTemplate",
+  "@odata.annotations": [
+    {
+      "capabilities": {
+        "toppable": false
+      }
+    }
+  ]
 }-->
 
 ```json
