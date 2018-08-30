@@ -1,4 +1,4 @@
-# <a name="update-plannertask"></a>Update plannertask
+# <a name="update-plannertask"></a>plannertask を更新する
 
 **plannertask** オブジェクトのプロパティを更新します。
 ## <a name="permissions"></a>アクセス許可
@@ -13,30 +13,30 @@
 ## <a name="http-request"></a>HTTP 要求
 <!-- { "blockType": "ignored" } -->
 ```http
-PATCH /planner/tasks/<id>
+PATCH /planner/tasks/{id}
 ```
 ## <a name="optional-request-headers"></a>オプションの要求ヘッダー
 | 名前       | 説明|
 |:-----------|:-----------|
-| Authorization  | ベアラー {トークン}。必須。 |
+| 承認  | ベアラー {トークン}。必須。 |
 | If-Match  | 更新する **plannerTask** の最後の既知の ETag 値。必須。|
 
 ## <a name="request-body"></a>要求本文
 要求本文で、更新する関連フィールドの値を指定します。要求本文に含まれない既存のプロパティは、以前の値のままになるか、他のプロパティ値の変化に基づいて再計算されます。最適なパフォーマンスを得るためには、変更されていない既存の値を含めないでください。
 
-| プロパティ     | 型   |説明|
+| プロパティ     | タイプ   |説明|
 |:---------------|:--------|:----------|
 |appliedCategories|[plannerAppliedCategories](../resources/plannerappliedcategories.md)|タスクが適用されているカテゴリ。可能な値については、「[適用されるカテゴリ](../resources/plannerappliedcategories.md)」を参照してください。|
-|assigneePriority|String|リスト ビューでこの種類の項目の順序付けに使用するヒント。形式は「[プランナーでの順序のヒントの使用](../resources/planner_order_hint_format.md)」で定義されています。|
-|assignments|[plannerAssignments](../resources/plannerassignments.md)|タスクが割り当てられているユーザーのセット。|
-|bucketId|String|タスクが属しているバケット ID。バケットは、タスクがある計画に含まれている必要があります。28 文字長で、大文字と小文字の区別があります。[書式検証](../resources/planner_identifiers_disclaimer.md)はサービスによって行われます。 |
-|conversationThreadId|String|タスク内の会話のスレッド ID。これは、グループ内に作成された会話スレッド オブジェクトの ID です。|
-|dueDateTime|DateTimeOffset|タスクが期限切れになる日時。Timestamp 型は、ISO 8601 形式を使用して日付と時刻の情報を表し、必ず UTC 時間です。たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、次のようになります。`'2014-01-01T00:00:00Z'`|
-|orderHint|String|リスト ビューでこの種類の項目の順序付けに使用するヒント。形式は「[プランナーでの順序のヒントの使用](../resources/planner_order_hint_format.md)」で定義されています。|
+|assigneePriority|文字列|リスト ビューでこの種類の項目の順序付けに使用するヒント。形式は「[プランナーでの順序のヒントの使用](../resources/planner_order_hint_format.md)」で定義されています。|
+|割り当て|[plannerAssignments](../resources/plannerassignments.md)|タスクが割り当てられているユーザーのセット。|
+|bucketId|文字列|タスクが属するバケット ID。 バケットは、タスクが含まれるプランになければなりません。 28 文字で大文字小文字を区別します。 サービスの[フォーマットの検証](../resources/planner_identifiers_disclaimer.md) が行われます。 |
+|conversationThreadId|文字列|タスク内の会話のスレッド ID。これは、グループ内に作成された会話スレッド オブジェクトの ID です。|
+|dueDateTime|DateTimeOffset|タスクが期限切れになる日時。Timestamp 型は、ISO 8601 形式を使用して日付と時刻の情報を表し、必ず UTC 時間です。たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、次のようになります。 `'2014-01-01T00:00:00Z'`|
+|orderHint|文字列|リスト ビューでこの種類の項目の順序付けに使用するヒント。形式は「[プランナーでの順序のヒントの使用](../resources/planner_order_hint_format.md)」で定義されています。|
 |percentComplete|Int32|タスクの完了の割合。`100` に設定すると、タスクが完了したと見なされます。 |
-|planId|String|タスクが属している計画 ID。|
-|startDateTime|DateTimeOffset|タスクが開始される日時。Timestamp 型は、ISO 8601 形式を使用して日付と時刻の情報を表し、必ず UTC 時間です。たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、次のようになります。`'2014-01-01T00:00:00Z'`|
-|title|String|タスクのタイトル。|
+|planId|文字列|タスクが属している計画 ID。|
+|startDateTime|DateTimeOffset|タスクが開始される日時。Timestamp 型は、ISO 8601 形式を使用して日付と時刻の情報を表し、必ず UTC 時間です。たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、次のようになります。 `'2014-01-01T00:00:00Z'`|
+|タイトル|文字列|タスクのタイトル。|
 
 ## <a name="response"></a>応答
 
@@ -52,7 +52,7 @@ PATCH /planner/tasks/<id>
   "name": "update_plannertask"
 }-->
 ```http
-PATCH https://graph.microsoft.com/v1.0/planner/tasks/01gzSlKkIUSUl6DF_EilrmQAKDhh
+PATCH https://graph.microsoft.com/v1.0/planner/tasks/{task-id}
 Content-type: application/json
 Content-length: 247
 If-Match: W/"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc="

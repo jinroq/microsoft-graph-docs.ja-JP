@@ -13,12 +13,12 @@
 |[オーバーライドを一覧表示する](../api/inferenceclassification_list_overrides.md) |[inferenceClassificationOverride](inferenceclassificationoverride.md) コレクション| ユーザーが設定したオーバーライドを取得して、特定の送信者からのメッセージを常に一定の方法で分類します。|
 
 ## <a name="properties"></a>プロパティ
-| プロパティ       | 型    |説明|
+| プロパティ     | タイプ   |説明|
 |:---------------|:--------|:----------|
-|id|string| 読み取り専用です。|
+|ID|文字列| 読み取り専用です。|
 
-## <a name="relationships"></a>関係
-| リレーションシップ | 型    |説明|
+## <a name="relationships"></a>リレーションシップ
+| リレーションシップ | 型   |説明|
 |:---------------|:--------|:----------|
 |overrides|[inferenceClassificationOverride](inferenceclassificationoverride.md) コレクション| ユーザーが、`focused` または `other` の特定の方法で特定の差出人からのメッセージを常時分類するための一連のオーバーライド。読み取り専用です。Null 許容型。|
 
@@ -31,7 +31,18 @@
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.inferenceClassification"
+  "baseType": "microsoft.graph.entity",
+  "@odata.type": "microsoft.graph.inferenceClassification",
+  "@odata.annotations": [
+    {
+      "property": "overrides",
+      "capabilities": {
+        "changeTracking": false,
+        "expandable": false,
+        "searchable": false
+      }
+    }
+  ]
 }-->
 
 ```json

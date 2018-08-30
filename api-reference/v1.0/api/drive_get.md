@@ -2,16 +2,17 @@
 author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
-title: "ドライブを取得する"
-ms.openlocfilehash: 91a140dbcb1550bc850656452a6fa24a84dd5500
-ms.sourcegitcommit: 7aea7a97e36e6d146214de3a90fdbc71628aadba
+title: ドライブを取得する
+ms.openlocfilehash: 4c77a1ef801fa65edf77376d421cafa3ff79f3d4
+ms.sourcegitcommit: abf4b739257e3ffd9d045f783ec595d846172590
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23269433"
 ---
 # <a name="get-drive"></a>ドライブを取得する
 
-[Drive](../resources/drive.md) リソースのプロパティと関係を取得します。
+[Drive](../resources/drive.md) リソースのプロパティとリレーションシップを取得します。
 
 ドライブとは、OneDrive または SharePoint のドキュメント ライブラリなど、ファイル システムの最上位コンテナーです。
 
@@ -33,7 +34,7 @@ ms.lasthandoff: 09/28/2017
 
 ### <a name="http-request"></a>HTTP 要求
 
-<!-- { "blockType": "request", "name": "get-drive-default", "scopes": "files.read" } -->
+<!-- { "blockType": "request", "name": "get-drive-default", "scopes": "files.read", "tags": "service.graph" } -->
 
 ```http
 GET /me/drive
@@ -47,7 +48,7 @@ GET /me/drive
 
 ### <a name="http-request"></a>HTTP 要求
 
-<!-- { "blockType": "request", "name": "get-drive-by-user", "scopes": "files.read.all" } -->
+<!-- { "blockType": "request", "name": "get-drive-by-user", "scopes": "files.read.all", "tags": "service.graph" } -->
 
 ```http
 GET /users/{idOrUserPrincipalName}/drive
@@ -57,7 +58,7 @@ GET /users/{idOrUserPrincipalName}/drive
 
 | パラメーター名 | 値  | 説明                                       |
 |:---------------|:-------|:--------------------------------------------------|
-| _idOrUserPrincipalName_     | string | 必須。 OneDrive を所有するユーザー オブジェクトの識別子。 |
+| _idOrUserPrincipalName_     | 文字列 | 必須。 OneDrive を所有するユーザー オブジェクトの識別子。 |
 
 ## <a name="get-the-document-library-associated-with-a-group"></a>グループに関連付けられたドキュメント ライブラリを取得する
 
@@ -65,7 +66,7 @@ GET /users/{idOrUserPrincipalName}/drive
 
 ### <a name="http-request"></a>HTTP 要求
 
-<!-- { "blockType": "request", "name": "get-drive-by-group", "scopes": "group.read.all" } -->
+<!-- { "blockType": "request", "name": "get-drive-by-group", "scopes": "group.read.all", "tags": "service.graph" } -->
 
 ```http
 GET /groups/{groupId}/drive
@@ -75,7 +76,7 @@ GET /groups/{groupId}/drive
 
 | パラメーター名 | 値  | 説明                                       |
 |:---------------|:-------|:--------------------------------------------------|
-| _groupId_      | string | 必須。 ドキュメント ライブラリを所有するグループの識別子。 |
+| _groupId_      | 文字列 | 必須。 ドキュメント ライブラリを所有するグループの識別子。 |
 
 ## <a name="get-the-document-library-for-a-site"></a>サイトのドキュメント ライブラリを取得する
 
@@ -91,7 +92,7 @@ GET /sites/{siteId}/drive
 
 | パラメーター名 | 値  | 説明                                       |
 |:---------------|:-------|:--------------------------------------------------|
-| _siteId_       | string | 必須。 ドキュメント ライブラリを含むサイトの識別子。 |
+| _siteId_       | 文字列 | 必須。 ドキュメント ライブラリを含むサイトの識別子。 |
 
 ## <a name="get-a-drive-by-id"></a>ID によりドライブを取得する
 
@@ -102,14 +103,14 @@ GET /sites/{siteId}/drive
 <!-- { "blockType": "request", "name": "get-drive-by-id", "scopes": "files.read" } -->
 
 ```http
-GET /drives/{driveId}
+GET /drives/{drive-id}
 ```
 
 ### <a name="path-parameters"></a>パス パラメーター
 
 | パラメーター名 | 値  | 説明                                       |
 |:---------------|:-------|:--------------------------------------------------|
-| _driveId_      | string | 必須。 要求されるドライブの識別子。 |
+| _driveId_      | 文字列 | 必須。 要求されるドライブの識別子。 |
 
 ## <a name="optional-query-parameters"></a>オプションのクエリ パラメーター
 
@@ -155,5 +156,13 @@ Content-type: application/json
   "description": "Get metadata for a OneDrive, OneDrive for Business, or Office 365 group drive",
   "keywords": "drive,onedrive,default drive,group drive",
   "section": "documentation",
+  "suppressions": [
+      "Warning: /api-reference/v1.0/api/drive_get.md:
+        Unable to map some markdown elements into schema.
+            Unmapped methods:
+        get-drive-default, get-drive-by-user, get-drive-by-group, get-drive-by-id
+            Unmapped tables:
+        Permissions - AuthScopes, Path parameters - PathParameters, Path parameters - PathParameters, Path parameters - PathParameters, Path parameters - PathParameters"
+  ],
   "tocPath": "Drives/Get drive"
 } -->

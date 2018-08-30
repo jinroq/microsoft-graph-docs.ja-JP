@@ -25,8 +25,8 @@ POST /invitations
 ## <a name="request-headers"></a>要求ヘッダー
 | ヘッダー       | 値 |
 |:---------------|:--------|
-| Authorization  | ベアラー {トークン}。必須。  |
-| Content-Type  | application/json  |
+| 承認  | ベアラー {トークン}。必須。  |
+| コンテンツ-タイプ  | アプリケーション /json  |
 
 ## <a name="request-body"></a>要求本文
 要求本文で、[invitation](../resources/invitation.md) オブジェクトの JSON 表記を指定します。
@@ -35,8 +35,8 @@ POST /invitations
 
 | パラメーター | 型 | 説明|
 |:---------------|:--------|:----------|
-|invitedUserEmailAddress |string | 招待するユーザーのメール アドレス。|
-|inviteRedirectUrl |string |引き換え後にユーザーがリダイレクトされる URL。|
+|invitedUserEmailAddress |文字列 | 招待するユーザーのメール アドレス。|
+|inviteRedirectUrl |文字列 |引き換え後にユーザーがリダイレクトされる URL。|
 
 ## <a name="response"></a>応答
 
@@ -65,7 +65,7 @@ Content-length: 551
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.invitations"
+  "@odata.type": "microsoft.graph.invitation"
 } -->
 ```http
 HTTP/1.1 201 OK
@@ -95,3 +95,11 @@ Content-length: 551
   "invitedUser":  [ {  "id": "243b1de4-ad9f-421c-a933-d55305fb165d" } ]
 }
 ```
+
+<!-- {
+  "type": "#page.annotation",
+  "suppressions": [
+    "Error: create_user_from_users/invitedUser:
+      Property 'invitedUser' is of type Custom but has no custom members."
+  ]
+}-->

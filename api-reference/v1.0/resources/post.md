@@ -28,31 +28,31 @@
 |[スキーマ拡張機能の値を追加する](../../../concepts/extensibility_schema_groups.md) || スキーマ拡張機能の定義を作成し、それを使用してカスタマイズされた種類のデータをリソースに追加します。|
 |**拡張プロパティ**| | |
 |[単一値の拡張プロパティを作成する](../api/singlevaluelegacyextendedproperty_post_singlevalueextendedproperties.md) |[post](post.md)  |新規または既存の投稿に、ひとつまたは複数の単一値の拡張プロパティを作成します。   |
-|[Get post with single-value extended property](../api/singlevaluelegacyextendedproperty_get.md)  | [post](post.md) | `$expand` または `$filter` を使用して、単一値の拡張プロパティを含む投稿を取得します。 |
+|[単一値の拡張プロパティをもつ投稿トを取得する](../api/singlevaluelegacyextendedproperty_get.md)  | [post](post.md) | または `$filter` を使用して、単一値の拡張プロパティを含む投稿を取得します。`$expand` |
 |[複数値の拡張プロパティを作成する](../api/multivaluelegacyextendedproperty_post_multivalueextendedproperties.md) | [post](post.md) | 新規または既存の投稿に、ひとつまたは複数の複数値の拡張プロパティを作成します。  |
-|[Get post with multi-value extended property](../api/multivaluelegacyextendedproperty_get.md)  | [post](post.md) | `$expand` を使用して、複数値の拡張プロパティを含む投稿を取得します。 |
+|[複数値の拡張プロパティをもつ投稿を取得する](../api/multivaluelegacyextendedproperty_get.md)  | [post](post.md) | を使用して、複数値の拡張プロパティを含む投稿を取得します。`$expand` |
 
 ## <a name="properties"></a>プロパティ
-| プロパティ     | 型   |説明|
+| プロパティ     | タイプ   |説明|
 |:---------------|:--------|:----------|
 |body|[itemBody](itembody.md)|投稿の内容です。これが既定のプロパティです。このプロパティを null にすることができます。|
-|categories|String collection|投稿に関連付けられたカテゴリ。|
+|categories|String コレクション|投稿に関連付けられたカテゴリ。|
 |changeKey|String|投稿のバージョンを識別します。投稿を変更するたびに ChangeKey も変更されます。これにより、Exchange は正しいバージョンのオブジェクトに変更を適用できます。|
 |conversationId|String|会話の固有 ID です。読み取り専用。|
 |conversationThreadId|String|会話スレッドの固有 ID です。読み取り専用。|
-|createdDateTime|DateTimeOffset|投稿の作成時刻を示します。DateTimeOffset 型は、ISO 8601 形式を使用して日付と時刻の情報を表し、常に UTC 時間です。たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、次のようになります。`'2014-01-01T00:00:00Z'`|
+|createdDateTime|DateTimeOffset|投稿の作成時刻を示します。DateTimeOffset 型は、ISO 8601 形式を使用して日付と時刻の情報を表し、常に UTC 時間です。たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、次のようになります。 `'2014-01-01T00:00:00Z'`|
 |from|[recipient](recipient.md)|代理人アクセスのシナリオで使用されます。他のユーザーの代わりにメッセージを投稿したユーザーを示します。これが既定のプロパティです。|
-|hasAttachments|Boolean|投稿の添付ファイルが 1 つ以上あるかどうかを示します。これが既定のプロパティです。|
-|id|String| 読み取り専用。|
-|lastModifiedDateTime|DateTimeOffset|投稿が最後に修正された日時を指定します。DateTimeOffset 型は、ISO 8601 形式を使用して日付と時刻の情報を表し、常に UTC 時間です。たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、次のようになります。`'2014-01-01T00:00:00Z'`|
-|newParticipants|[recipient](recipient.md) collection|この投稿の一部としてスレッドに追加された会話の参加者です。|
-|receivedDateTime|DateTimeOffset|投稿の受信時刻を示します。DateTimeOffset 型は、ISO 8601 形式を使用して日付と時刻の情報を表し、常に UTC 時間です。たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、次のようになります。`'2014-01-01T00:00:00Z'`|
+|hasAttachments|ブール型|投稿の添付ファイルが 1 つ以上あるかどうかを示します。これが既定のプロパティです。|
+|id|文字列| 読み取り専用。|
+|lastModifiedDateTime|DateTimeOffset|投稿が最後に修正された日時を指定します。DateTimeOffset 型は、ISO 8601 形式を使用して日付と時刻の情報を表し、常に UTC 時間です。たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、次のようになります。 `'2014-01-01T00:00:00Z'`|
+|newParticipants|[recipient](recipient.md) コレクション|この投稿の一部としてスレッドに追加された会話の参加者です。|
+|receivedDateTime|DateTimeOffset|投稿の受信時刻を示します。DateTimeOffset 型は、ISO 8601 形式を使用して日付と時刻の情報を表し、常に UTC 時間です。たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、次のようになります。 `'2014-01-01T00:00:00Z'`|
 |sender|[recipient](recipient.md)|送信者のアドレスが含まれます。送信者が指定されていない場合、送信者の値は認証済みユーザーのアドレスと見なされます。これが既定のプロパティです。|
 
 ## <a name="relationships"></a>リレーションシップ
 | リレーションシップ | 型   |説明|
 |:---------------|:--------|:----------|
-|attachments|[Attachment](attachment.md) コレクション| 読み取り専用。Null 許容型。|
+|attachements|[Attachment](attachment.md) コレクション| 読み取り専用。Null 許容型。|
 |extensions|[Extension](extension.md) コレクション|投稿に対して定義されているオープン拡張機能のコレクション。読み取り専用。Null 許容型。|
 |inReplyTo|[post](post.md)| 読み取り専用。|
 |multiValueExtendedProperties|[multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md) コレクション| その投稿用に定義された、複数値拡張プロパティのコレクションです。読み取り専用。Null 許容型。|
@@ -62,15 +62,45 @@
 
 以下は、リソースの JSON 表記です
 
-<!-- {
+<!--{
   "blockType": "resource",
+  "openType": true,
   "optionalProperties": [
     "attachments",
     "inReplyTo",
     "multiValueExtendedProperties",
     "singleValueExtendedProperties"
   ],
-  "@odata.type": "microsoft.graph.post"
+  "baseType": "microsoft.graph.outlookItem",
+  "@odata.type": "microsoft.graph.post",
+  "@odata.annotations": [
+    {
+      "property": "attachments",
+      "capabilities": {
+        "changeTracking": false,
+        "searchable": false,
+        "updatable": false
+      }
+    },
+    {
+      "property": "extensions",
+      "capabilities": {
+        "changeTracking": false,
+        "searchable": false
+      }
+    },
+    {
+      "property": "inReplyTo",
+      "capabilities": {
+        "changeTracking": false,
+        "deletable": false,
+        "insertable": false,
+        "navigability": "single",
+        "searchable": false,
+        "updatable": false
+      }
+    }
+  ]
 }-->
 
 ```json

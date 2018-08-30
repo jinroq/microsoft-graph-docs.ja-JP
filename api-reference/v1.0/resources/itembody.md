@@ -3,10 +3,10 @@
 メッセージ、イベント、またはグループの投稿など、アイテムの本文のプロパティを表します。
 
 ## <a name="properties"></a>プロパティ
-| プロパティ     | 型   |説明|
+| プロパティ     | タイプ   |説明|
 |:---------------|:--------|:----------|
-|content|String|アイテムのコンテンツ。|
-|contentType|String|コンテンツの種類。可能な値は、`Text` と `HTML` です。|
+|content|文字列|アイテムのコンテンツ。|
+|contentType|BodyType|コンテンツの種類。可能な値は、`Text` と `HTML` です。|
 
 ## <a name="json-representation"></a>JSON 表記
 

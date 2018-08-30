@@ -22,8 +22,8 @@ POST /directoryObjects/{id}/getMemberGroups
 ## <a name="request-headers"></a>要求ヘッダー
 | 名前       | 型 | 説明|
 |:---------------|:--------|:----------|
-| Authorization  | string  | ベアラー {トークン}。必須。 |
-| Content-Type  | application/json  |
+| 承認  | 文字列  | ベアラー {トークン}。必須。 |
+| Content-Type   | 文字列  | アプリケーション/json  |
 
 ## <a name="request-body"></a>要求本文
 要求本文で、次のパラメーターを含む JSON オブジェクトを指定します。
@@ -45,7 +45,7 @@ POST /directoryObjects/{id}/getMemberGroups
   "name": "directoryobject_getmembergroups"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/me/getMemberGroups
+POST https://graph.microsoft.com/v1.0/directoryObjects/{object-id}/getMemberGroups
 Content-type: application/json
 
 {
