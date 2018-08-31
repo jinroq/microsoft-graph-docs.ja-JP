@@ -29,8 +29,8 @@ GET /reports/getYammerActivityUserDetail(date={date_value})
 
 | パラメーター | 型   | 説明                              |
 | :-------- | :----- | :--------------------------------------- |
-| period    | 文字列 | レポートを集計する期間の長さを指定します。 {period_value} でサポートされている値は D7、D30、D90、D180 です。 これらの値は、D*n* の形式 (*n* はレポートを集計する日数) に従います。 |
-| date      | 日付   | 何らかのアクティビティを実行したユーザーを表示する日付を指定します。 {date_value} は YYYY-MM-DD の形式にします。 このレポートは、過去 30 日間のみ利用可能であり、{date_value} はその範囲内の日付である必要があります。 |
+| 期間    | 文字列 | レポートを集計する期間の長さを指定します。 {period_value} でサポートされている値は D7、D30、D90、D180 です。 これらの値は、D*n* の形式 (*n* はレポートを集計する日数) に従います。 |
+| 日付      | 日付   | 何らかのアクティビティを実行したユーザーを表示する日付を指定します。 {date_value} は YYYY-MM-DD の形式にします。 このレポートは、過去 30 日間のみ利用可能であり、{date_value} はその範囲内の日付である必要があります。 |
 
 > **注:** URL に期間または日付を設定する必要があります。
 
@@ -38,7 +38,7 @@ GET /reports/getYammerActivityUserDetail(date={date_value})
 
 | 名前          | 説明                              |
 | :------------ | :--------------------------------------- |
-| Authorization | ベアラー {トークン}。必須。                |
+| 承認 | ベアラー {トークン}。必須。                |
 | If-None-Match | この要求ヘッダーが含まれている場合、指定された eTag がファイルの現在のタグに一致すると、`304 Not Modified` 応答コードが返されます。 省略可能。 |
 
 ## <a name="response"></a>応答
@@ -67,8 +67,9 @@ GET /reports/getYammerActivityUserDetail(date={date_value})
 
 要求の例を次に示します。
 
-<!-- {
+<!--{
   "blockType": "request",
+  "isComposable": true,
   "name": "reportroot_getyammeractivityuserdetail"
 }-->
 
@@ -80,7 +81,7 @@ GET https://graph.microsoft.com/v1.0/reports/getYammerActivityUserDetail(period=
 
 応答の例を次に示します。
 
-<!-- { "blockType": "ignored" } --> 
+<!-- { "blockType": "response", "@odata.type": "microsoft.graph.report" } --> 
 
 ```http
 HTTP/1.1 302 Found
@@ -88,13 +89,40 @@ Content-Type: text/plain
 Location: https://reports.office.com/data/download/JDFKdf2_eJXKS034dbc7e0t__XDe
 ```
 
-302 リダイレクトに従うと、ダウンロードされる CSV ファイルは次のスキーマを持つことになります。
+#### <a name="request"></a>要求
+
+`date` パラメーターを指定すると、レポートのスコープは、与えられた日に行われた活動になります。
+
+<!--{
+  "blockType": "request",
+  "isComposable": true,
+  "name": "reportroot_getyammeractivityuserdetail_date"
+}-->
+
+```http
+GET https://graph.microsoft.com/v1.0/reports/getYammerActivityUserDetail(date='2018-03-05')
+```
+
+#### <a name="response"></a>応答
+
+応答の例を次に示します。
 
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "stream"
+  "@odata.type": "microsoft.graph.report"
 } -->
+
+```http
+HTTP/1.1 302 Found
+Content-Type: text/plain
+Location: https://reports.office.com/data/download/JDFKdf2_eJXKS034dbc7e0t__XDe
+```
+
+
+302 リダイレクトに従うと、ダウンロードされる CSV ファイルは次のスキーマを持つことになります。
+
+<!-- { "blockType": "ignored" } --> 
 
 ```http
 HTTP/1.1 200 OK
