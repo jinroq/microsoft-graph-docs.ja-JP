@@ -13,28 +13,28 @@
 ## <a name="http-request"></a>HTTP 要求
 <!-- { "blockType": "ignored" } -->
 ```http
-PATCH /workbook/names(<name>)/range
+PATCH /workbook/names/{name}/range
 PATCH /workbook/worksheets/{id|name}/range(address='<address>')
 PATCH /workbook/tables/{id|name}/columns/{id|name}/range
 ```
 ## <a name="optional-request-headers"></a>オプションの要求ヘッダー
 | 名前       | 説明|
 |:-----------|:-----------|
-| Authorization  | ベアラー {トークン}。必須。 |
+| 承認  | ベアラー {トークン}。必須。 |
 | Workbook-Session-Id  | 変更を保持するかどうかを決定するブック セッション ID。省略可能。|
 
 ## <a name="request-body"></a>要求本文
 要求本文で、更新する関連フィールドの値を指定します。要求本文に含まれない既存のプロパティは、以前の値のままになるか、他のプロパティ値の変化に基づいて再計算されます。最適なパフォーマンスを得るためには、変更されていない既存の値を含めないでください。
 
-| プロパティ     | 型   |説明|
+| プロパティ     | タイプ   |説明|
 |:---------------|:--------|:----------|
-|columnHidden|boolean|現在の範囲のすべての列が非表示になっているかどうかを表します。|
-|formulas|json|A1 スタイル表記の数式を表します。|
-|formulasLocal|json|ユーザーの言語と数値書式ロケールで、A1 スタイル表記の数式を表します。たとえば、英語の数式 "=SUM(A1, 1.5)" は、ドイツ語では "=SUMME(A1; 1,5)" になります。|
-|formulasR1C1|json|R1C1 スタイル表記の数式を表します。|
-|numberFormat|json|指定したセルの Excel の数値書式コードを表します。|
-|rowHidden|boolean|現在の範囲のすべての行が非表示になっているかどうかを表します。|
-|values|json|指定した範囲の Raw 値を表します。返されるデータの型は、文字列、数値、またはブール値のいずれかになります。エラーが含まれているセルは、エラー文字列を返します。|
+|columnHidden|ブール値|現在の範囲のすべての列が非表示になっているかどうかを表します。|
+|数式|Json|A1 スタイル表記の数式を表します。|
+|formulasLocal|Json|ユーザーの言語と数値書式ロケールで、A1 スタイル表記の数式を表します。たとえば、英語の数式 "=SUM(A1, 1.5)" は、ドイツ語では "=SUMME(A1; 1,5)" になります。|
+|formulasR1C1|Json|R1C1 スタイル表記の数式を表します。|
+|numberFormat|Json|指定したセルの Excel の数値書式コードを表します。|
+|rowHidden|ブール値|現在の範囲のすべての行が非表示になっているかどうかを表します。|
+|値|Json|指定した範囲の Raw 値を表します。返されるデータの型は、文字列、数値、またはブール値のいずれかになります。エラーが含まれているセルは、エラー文字列を返します。|
 
 ## <a name="response"></a>応答
 
@@ -48,7 +48,7 @@ PATCH /workbook/tables/{id|name}/columns/{id|name}/range
   "name": "update_range"
 }-->
 ```http
-PATCH https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets('sheet1')/range(address='A1:B2')
+PATCH https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/{sheet-id}/range(address='A1:B2')
 Content-type: application/json
 Content-length: 169
 
@@ -63,7 +63,7 @@ Content-length: 169
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.range"
+  "@odata.type": "microsoft.graph.workbookRange"
 } -->
 ```http
 HTTP/1.1 200 OK
@@ -87,5 +87,15 @@ Content-length: 169
   "description": "Update range",
   "keywords": "",
   "section": "documentation",
+  "suppressions": [
+    "Warning: /api-reference/v1.0/api/range_update.md/update_range/numberFormat:
+      Inconsistent types between parameter (Collection) and table (None)",
+    "Warning: /api-reference/v1.0/api/range_update.md/update_range/values:
+      Inconsistent types between parameter (Collection) and table (None)",
+    "Error: /api-reference/v1.0/api/range_update.md/update_range/numberFormat:
+      Type mismatch between example and table. Parameter name: numberFormat; example type (Collection(Collection)) is a collection, while the table description type (microsoft.graph.Json) is not.",
+    "Error: /api-reference/v1.0/api/range_update.md/update_range/values:
+      Type mismatch between example and table. Parameter name: values; example type (Collection(Collection)) is a collection, while the table description type (microsoft.graph.Json) is not."
+  ],
   "tocPath": ""
 }-->

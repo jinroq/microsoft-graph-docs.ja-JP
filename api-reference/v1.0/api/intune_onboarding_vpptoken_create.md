@@ -1,6 +1,6 @@
-# <a name="create-vpptoken"></a>Create vppToken
+# <a name="create-vpptoken"></a>vppToken の作成
 
-> **注:**Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
+> **注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
 
 新規に[vppToken](../resources/intune_onboarding_vpptoken.md)オブジェクトを作成します。
 ## <a name="prerequisites"></a>前提条件
@@ -8,7 +8,7 @@
 
 |アクセス許可の種類|アクセス許可 (特権の大きいものから小さいものへ)|
 |:---|:---|
-|委任 (職場または学校アカウント)|DeviceManagementServiceConfig.ReadWrite.All|
+|委任 (職場または学校のアカウント)|DeviceManagementServiceConfig.ReadWrite.All|
 |委任 (個人用 Microsoft アカウント)|サポートされていません。|
 |アプリケーション|サポートされていません。|
 
@@ -24,28 +24,28 @@ POST /deviceAppManagement/vppTokens
 ## <a name="request-headers"></a>要求ヘッダー
 |ヘッダー|値|
 |:---|:---|
-|Authorization|ベアラー &lt;トークン&gt; が必須。|
-|Accept|application/json|
+|承認|ベアラー &lt;トークン&gt; が必須。|
+|承諾|application/json|
 
 ## <a name="request-body"></a>要求本文
 要求本文で、vppToken オブジェクトの JSON 表記を指定します。
 
 次の表に、vppToken 作成時に必要なプロパティを示します。
 
-|プロパティ|型|説明|
+|プロパティ|タイプ|説明|
 |:---|:---|:---|
-|id|String|appleVolumePurchaseProgramToken 作成時に自動的に生成されます。 エンティティのキーになります。|
-|organizationName|String|Apple ボリューム購入プログラムのトークンに関連付けられている組織|
-|vppTokenAccountType|String|特定の Apple ボリューム購入プログラムのトークンが関連付けられている、ボリューム購入プログラムの種類。 可能な値は、`business`、`education` です。 可能な値は、`business`、`education` です。|
-|appleId|String|特定の Apple ボリューム購入プログラムのトークンに関連付けられている Apple ID。|
-|expirationDateTime|DateTimeOffset|Apple ボリューム購入プログラムのトークンの有効期限。|
-|lastSyncDateTime|DateTimeOffset|Apple ボリューム購入プログラムのトークンを使用して、Apple ボリューム購入プログラム サービスと最後にアプリケーションの同期を行った日時。|
-|トークン|String|Apple ボリューム購入プログラムからダウンロードした Apple ボリューム購入プログラムのトークン文字列。|
-|lastModifiedDateTime|DateTimeOffset|Apple ボリューム購入プログラムのトークンに関連付けられている最終変更日時。|
-|state|String|Apple ボリューム購入プログラムのトークンの現在の状態。 可能な値は、`unknown`、`valid`、`expired`、`invalid` です。 可能な値は、`unknown`、`valid`、`expired`、`invalid` です。|
-|lastSyncStatus|String|Apple ボリューム購入プログラム トークンを使用して行われた最後のアプリケーションの同期の現在の同期状態。 可能な値は、`none`、`inProgress`、`completed`、`failed` です。 可能な値は、`none`、`inProgress`、`completed`、`failed` です。|
+|id|文字列|appleVolumePurchaseProgramToken 作成時に自動的に生成されます。 エンティティのキーになります。|
+|organizationName|文字列|Apple Volume Purchase Program のトークンに関連付けられている組織|
+|vppTokenAccountType|[vppTokenAccountType](../resources/intune_shared_vpptokenaccounttype.md)|特定の Apple Volume Purchase Program のトークンが関連付けられている、ボリューム購入プログラムの種類。 可能な値は、`business`、`education` です。 可能な値は、`business`、`education` です。|
+|appleId|文字列|特定の Apple Volume Purchase Program のトークンに関連付けられている Apple ID。|
+|expirationDateTime|DateTimeOffset|Apple Volume Purchase Program のトークンの有効期限。|
+|lastSyncDateTime|DateTimeOffset|Apple Volume Purchase Program のトークンを使用して、Apple ボリューム購入プログラム サービスと最後にアプリケーションの同期を行った日時。|
+|token|文字列|Apple Volume Purchase Program からダウンロードした Apple ボリューム購入プログラムのトークン文字列。|
+|lastModifiedDateTime|DateTimeOffset|Apple Volume Purchase Program のトークンに関連付けられている最終変更日時。|
+|状態|[vppTokenState](../resources/intune_onboarding_vpptokenstate.md)|Apple Volume Purchase Program のトークンの現在の状態。 可能な値は、`unknown`、`valid`、`expired`、`invalid` です。 可能な値は、`unknown`、`valid`、`expired`、`invalid` です。|
+|lastSyncStatus|[vppTokenSyncStatus](../resources/intune_onboarding_vpptokensyncstatus.md)|Apple Volume Purchase Program のトークンを使用して行われた最後のアプリケーションの同期の現在の同期状態。 可能な値は、`none`、`inProgress`、`completed`、`failed` です。 可能な値は、`none`、`inProgress`、`completed`、`failed` です。|
 |automaticallyUpdateApps|ブール型|VPP トークンのアプリを自動で更新するかどうか。|
-|countryOrRegion|String|VPP トークンのアプリを自動で更新するかどうか。|
+|countryOrRegion|文字列|VPP トークンのアプリを自動で更新するかどうか。|
 
 
 

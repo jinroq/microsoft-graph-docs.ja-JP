@@ -18,15 +18,13 @@
 |アプリケーション | MailboxSettings.Read、MailboxSettings.ReadWrite |
 
 ## <a name="http-request"></a>HTTP 要求
-ユーザーのすべてのメールボックス設定を取得する場合:
-<!-- { "blockType": "ignored" } -->
+ユーザーのすべてのメールボックス設定を取得する場合: <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/mailboxSettings
 GET /users/{id|userPrincipalName}/mailboxSettings
 ```
 
-特定の設定 (たとえば、自動応答の設定、ロケール、タイム ゾーン、または就業時間のみ) を取得する場合:
-<!-- { "blockType": "ignored" } -->
+特定の設定 (たとえば、自動応答の設定、ロケール、タイム ゾーン、または就業時間のみ) を取得する場合: <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/mailboxSettings/automaticRepliesSetting
 GET /users/{id|userPrincipalName}/mailboxSettings/automaticRepliesSetting
@@ -41,11 +39,11 @@ GET /me/mailboxSettings/workingHours
 GET /users/{id|userPrincipalName}/mailboxSettings/workingHours
 ```
 ## <a name="optional-query-parameters"></a>オプションのクエリ パラメーター
-このメソッドは、応答をカスタマイズするための [OData クエリ パラメーター](http://developer.microsoft.com/ja-JP/graph/docs/overview/query_parameters)をサポートします。
+このメソッドは、応答をカスタマイズするための [OData クエリ パラメーター](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters)をサポートします。
 ## <a name="request-headers"></a>要求ヘッダー
 | 名前       | 型 | 説明|
 |:-----------|:------|:----------|
-| Authorization  | string  | ベアラー {トークン}。必須。 |
+| 承認  | 文字列  | ベアラー {トークン}。必須。 |
 
 ## <a name="request-body"></a>要求本文
 このメソッドには、要求本文を指定しません。
@@ -111,8 +109,8 @@ Content-type: application/json
             "thursday",
             "friday"
         ],
-        "startTime":"08:00:00.0000000",
-        "endTime":"17:00:00.0000000",
+        "startTime":"08:00:00.000",
+        "endTime":"17:00:00.000",
         "timeZone":{
             "name":"Pacific Standard Time"
         }
@@ -142,7 +140,7 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/api/v1.0/$metadata#Me/mailboxSettings/automaticRepliesSetting",
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#Me/mailboxSettings/automaticRepliesSetting",
     "status": "alwaysEnabled",
     "externalAudience": "None",
     "scheduledStartDateTime": {

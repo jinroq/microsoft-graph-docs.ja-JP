@@ -7,13 +7,13 @@
 
 | メソッド           | 戻り値の型    |説明|
 |:---------------|:--------|:----------|
-|[Get ChartDataLabels](../api/chartdatalabels_get.md) | [ChartDataLabels](chartdatalabels.md) |chartDataLabels オブジェクトのプロパティと関係を読み取ります。|
-|[Update](../api/chartdatalabels_update.md) | [ChartDataLabels](chartdatalabels.md)    |ChartDataLabels オブジェクトを更新します。 |
+|[Get ChartDataLabels](../api/chartdatalabels_get.md) | [WorkbookChartDataLabels](chartdatalabels.md) |chartDataLabels オブジェクトのプロパティとリレーションシップを読み取ります。|
+|[Update](../api/chartdatalabels_update.md) | [WorkbookChartDataLabels](chartdatalabels.md) |ChartDataLabels オブジェクトを更新します。 |
 
 ## <a name="properties"></a>プロパティ
-| プロパティ       | 型    |説明|
+| プロパティ     | タイプ   |説明|
 |:---------------|:--------|:----------|
-|position|string|データ ラベルの位置を表す DataLabelPosition 値。可能な値は、`None`、`Center`、`InsideEnd`、`InsideBase`、`OutsideEnd`、`Left`、`Right`、`Top`、`Bottom`、`BestFit`、`Callout` です。|
+|position|string|データ ラベルの位置を表すDataLabelPosition の値。 可能な値は、`None`, `Center`, `InsideEnd`, `InsideBase`, `OutsideEnd`, `Left`, `Right`, `Top`, `Bottom`, `BestFit`, `Callout` です。|
 |separator|string|グラフのデータ ラベルに使用される区切り文字を表す文字列を設定します。|
 |showBubbleSize|boolean|データ ラベルのバブルのサイズを表示または非表示にするかを表すブール型の値。|
 |showCategoryName|boolean|データ ラベルのカテゴリ名を表示するか非表示にするかを表すブール型の値。|
@@ -23,20 +23,19 @@
 |showValue|boolean|データ ラベルの値を表示するか非表示にするかを表すブール型の値。|
 
 ## <a name="relationships"></a>関係
-| リレーションシップ | 型    |説明|
+| リレーションシップ | 型   |説明|
 |:---------------|:--------|:----------|
-|format|[ChartDataLabelFormat](chartdatalabelformat.md)|グラフのデータ ラベルの書式 (塗りつぶしとフォントの書式設定を含む) を表します。値の取得のみ可能です。|
+|format|[WorkbookChartDataLabelFormat](chartdatalabelformat.md)|グラフのデータ ラベルの書式 (塗りつぶしとフォントの書式設定を含む) を表します。読み取り専用です。|
 
 ## <a name="json-representation"></a>JSON 表記
 
 以下は、リソースの JSON 表記です。
 
-<!-- {
+<!--{
   "blockType": "resource",
-  "optionalProperties": [
-
-  ],
-  "@odata.type": "microsoft.graph.chartDataLabels"
+  "baseType": "microsoft.graph.entity",
+  "optionalProperties": [],
+  "@odata.type": "microsoft.graph.workbookChartDataLabels"
 }-->
 
 ```json

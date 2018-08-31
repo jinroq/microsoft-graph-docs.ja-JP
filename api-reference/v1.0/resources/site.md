@@ -3,11 +3,12 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
 title: Site
-ms.openlocfilehash: db465f93f336a51d862daf6e05b1d6bc422247ea
-ms.sourcegitcommit: 7aea7a97e36e6d146214de3a90fdbc71628aadba
+ms.openlocfilehash: 20d31a9cdc0e540c2b2f2d93fedabdc254e9c03e
+ms.sourcegitcommit: abf4b739257e3ffd9d045f783ec595d846172590
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23265716"
 ---
 # <a name="site-resource"></a>Site リソース
 
@@ -35,12 +36,22 @@ ms.lasthandoff: 09/28/2017
 
 以下は、**サイト** リソースの JSON 表記です。
 
-**driveItem** リソースは [**baseItem**](baseitem.md) から派生し、そのリソースからプロパティを継承します。
+**サイト** リソースは [**baseItem**](baseitem.md) から派生しており、そのリソースからプロパティを継承しています。
 
-<!-- { "blockType": "resource",
-       "@odata.type": "microsoft.graph.site",
-       "keyProperty": "id",
-       "optionalProperties": [ "root", "sharepointIds", "siteCollection", "drive", "drives", "sites" ] } -->
+<!--{
+  "blockType": "resource",
+  "optionalProperties": [
+    "root",
+    "sharepointIds",
+    "siteCollection",
+    "drive",
+    "drives",
+    "sites"
+  ],
+  "keyProperty": "id",
+  "baseType": "microsoft.graph.baseItem",
+  "@odata.type": "microsoft.graph.site"
+}-->
 
 ```json
 {
@@ -58,7 +69,7 @@ ms.lasthandoff: 09/28/2017
   "lists": [ { "@odata.type": "microsoft.graph.list" }],
   "sites": [ { "@odata.type": "microsoft.graph.site"} ],
   "columns": [ { "@odata.type": "microsoft.graph.columnDefinition" }],
-  "onenote": [ { "@odata.type": "microsoft.graph.onenote"} ],
+  "onenote": { "@odata.type": "microsoft.graph.onenote"},
 
   /* inherited from baseItem */
   "name": "string",
@@ -72,12 +83,13 @@ ms.lasthandoff: 09/28/2017
 
 ## <a name="properties"></a>プロパティ
 
-| プロパティ名            | 種類                                | 説明                                                                                    |
+| プロパティ名            | 型                                | 説明                                                                                    |
 | :----------------------- | :---------------------------------- | :--------------------------------------------------------------------------------------------- |
 | **id**                   | string                              | アイテムの一意識別子。読み取り専用です。                                                  |
 | **createdDateTime**      | DateTimeOffset                      | アイテムが作成された日時。読み取り専用です。                                             |
 | **説明**          | string                              | サイトの説明テキスト。                                                             |
 | **displayName**          | string                              | サイトの完全なタイトル。読み取り専用です。                                                        |
+| **eTag**                 | string                              | アイテムの ETag。読み取り専用です。                                                                  |
 | **lastModifiedDateTime** | DateTimeOffset                      | アイテムが最後に変更された日時。読み取り専用です。                                       |
 | **name**                 | string                              | アイテムの名前/タイトル。                                                                  |
 | **root**                 | [root](root.md)                     | 存在する場合は、これがサイト コレクションのルート サイトであることを示します。読み取り専用です。            |
@@ -95,13 +107,13 @@ ms.lasthandoff: 09/28/2017
 | **ドライブ**        | Collection([drive][])            | このサイトの下のドライブ (ドキュメント ライブラリ) のコレクション。
 | **アイテム**         | Collection([baseItem][])         | このサイトに含まれるすべてのアイテムを処理するために使用されました。このコレクションを列挙することはできません。
 | **lists**         | Collection([list][])             | このサイトにあるリストのコレクションです。
-| **sites**         | Collection([site][])             | このサイトの下のサブサイトのコレクション。
+| **sites**         | Collection([サイト][])             | このサイトの下のサブサイトのコレクション。
 | **onenote**       | [onenote][]                      | ノートブック関連の操作のために OneNote サービスを呼び出します。
 
 [columnDefinition]: columndefinition.md
 [baseItem]: baseitem.md
 [contentType]: contentType.md
-[drive]: drive.md
+[ドライブ]: drive.md
 [identitySet]: identityset.md
 [list]: list.md
 [site]: site.md

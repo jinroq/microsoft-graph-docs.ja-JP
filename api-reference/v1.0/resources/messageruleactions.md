@@ -4,20 +4,19 @@
 ルールに使用可能なアクションのセットを表します。
 
 ## <a name="properties"></a>プロパティ
-| プロパティ     | 型   |説明|
+| プロパティ     | タイプ   |説明|
 |:---------------|:--------|:----------|
 | assignCategories | String コレクション | メッセージに割り当てられるカテゴリの一覧です。 |
-| copyToFolder | String | メッセージのコピー先のフォルダーの ID です。 |
-| delete | Boolean | 削除済みアイテム フォルダーにメッセージを移動する必要があるかどうかを示します。 |
+| copyToFolder | 文字列 | メッセージのコピー先のフォルダーの ID です。 |
+| 削除 | ブール値 | 削除済みアイテム フォルダーにメッセージを移動する必要があるかどうかを示します。 |
 | forwardAsAttachmentTo | [recipient](recipient.md) コレクション | 添付ファイルとしてメッセージを転送する受信者の電子メール アドレスです。 |
 | forwardTo | [recipient](recipient.md) コレクション | メッセージを転送する受信者の電子メール アドレスです。 |
-| markAsRead | Boolean | メッセージを開封済みにする必要があるかどうかを示します。 |
-| markImportance | String | メッセージの重要度を設定します。使用可能な値は、`low`、`normal`、`high` です。 |
-| moveToFolder |  String| メッセージ移動先のフォルダーの ID です。 |
-| permanentDelete | Boolean | メッセージを完全に削除し、削除済みアイテム フォルダーにメッセージを保存しないようにするかどうかを示します。 |
-| redirectTo | [recipient](recipient.md) | メッセージのリダイレクト先の電子メール アドレスです。 |
-| stopProcessingRules | Boolean | 後続のルールを評価する必要があるかどうかを示します。 |
-
+| markAsRead | ブール値 | メッセージを開封済みにする必要があるかどうかを示します。 |
+| markImportance | 重要性 | メッセージの重要性: `low`、`normal`、`high` を設定します。 |
+| moveToFolder |  文字列| メッセージ移動先のフォルダーの ID です。 |
+| permanentDelete | ブール値 | メッセージを完全に削除し、削除済みアイテム フォルダーにメッセージを保存しないようにするかどうかを示します。 |
+| redirectTo | [recipient](recipient.md) コレクション | メッセージのリダイレクト先の電子メール アドレスです。 |
+| stopProcessingRules | ブール値 | 後続のルールを評価する必要があるかどうかを示します。 |
 
 ## <a name="json-representation"></a>JSON 表記
 以下は、リソースの JSON 表記です。
@@ -40,7 +39,7 @@
   "markImportance": "String",
   "moveToFolder": "String",
   "permanentDelete": "Boolean",
-  "redirectTo": {"@odata.type": "microsoft.graph.recipient"},
+  "redirectTo": [{"@odata.type": "microsoft.graph.recipient"}],
   "stopProcessingRules": "Boolean"
 }
 

@@ -1,4 +1,4 @@
-# <a name="tablesort-apply"></a>TableSort: apply　
+# <a name="tablesort-apply"></a>TableSort: apply
 
 並べ替え操作を実行します。
 ## <a name="permissions"></a>アクセス許可
@@ -20,7 +20,7 @@ POST /workbook/worksheets/{id|name}/tables/{id|name}/sort/apply
 ## <a name="request-headers"></a>要求ヘッダー
 | 名前       | 説明|
 |:---------------|:----------|
-| Authorization  | ベアラー {トークン}。必須。 |
+| 承認  | ベアラー {トークン}。必須。 |
 | Workbook-Session-Id  | 変更を保持するかどうかを決定するブック セッション ID。省略可能。|
 
 ## <a name="request-body"></a>要求本文
@@ -28,9 +28,9 @@ POST /workbook/worksheets/{id|name}/tables/{id|name}/sort/apply
 
 | パラメーター    | 型   |説明|
 |:---------------|:--------|:----------|
-|fields|SortField|並べ替えに使用する条件の一覧。|
+|fields|WorkbookSortField コレクション|並べ替えに使用する条件の一覧。|
 |matchCase|boolean|省略可能。大文字小文字の区別が文字列の順序に影響を与えるかどうか。|
-|method|string|省略可能。中国語文字に使用される順序付けの方法です。可能な値は、`PinYin`、`StrokeCount` です。|
+|method|string|省略可能。 中国語の文字に使用される順序の指定方法です。  可能な値は、`PinYin`、`StrokeCount` です。|
 
 ## <a name="response"></a>応答
 
@@ -72,8 +72,7 @@ Content-length: 298
 以下は、応答の例です。 
 <!-- {
   "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.none"
+  "truncated": true
 } -->
 ```http
 HTTP/1.1 200 OK

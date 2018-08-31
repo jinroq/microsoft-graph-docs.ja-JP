@@ -1,6 +1,6 @@
 # <a name="get-section"></a>Get section
 
-[セクション](../resources/section.md) オブジェクトのプロパティとリレーションシップを取得します。
+[onenoteSection](../resources/section.md) オブジェクトのプロパティとリレーションシップを取得します。
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](../../../concepts/permissions_reference.md)」を参照してください。
 
@@ -26,7 +26,7 @@ GET /sites/{id}/onenote/sections/{id}
 ## <a name="request-headers"></a>要求ヘッダー
 | 名前       | 型 | 説明|
 |:-----------|:------|:----------|
-| Authorization  | string  | ベアラー {トークン}。必須。 |
+| 承認  | 文字列  | ベアラー {トークン}。必須。 |
 | 承諾 | string | `application/json` |
 
 ## <a name="request-body"></a>要求本文
@@ -34,7 +34,7 @@ GET /sites/{id}/onenote/sections/{id}
 
 ## <a name="response"></a>応答
 
-成功した場合、このメソッドは `200 OK` 応答コードと、応答本文で [section](../resources/section.md) オブジェクトを返します。
+成功した場合、このメソッドは `200 OK` 応答コードと、応答本文で [onenoteSection](../resources/section.md) オブジェクトを返します。
 ## <a name="example"></a>例
 ##### <a name="request"></a>要求
 以下は、要求の例です。

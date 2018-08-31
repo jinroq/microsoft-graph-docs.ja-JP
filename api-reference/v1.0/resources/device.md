@@ -22,24 +22,24 @@
 |[スキーマ拡張機能の値を追加する](../../../concepts/extensibility_schema_groups.md) || スキーマ拡張機能の定義を作成し、それを使用してカスタマイズされた種類のデータをリソースに追加します。|
 
 ## <a name="properties"></a>プロパティ
-| プロパティ     | 型   |説明|
+| プロパティ     | タイプ   |説明|
 |:---------------|:--------|:----------|
 |accountEnabled|Boolean| アカウントが有効な場合は **true**。それ以外の場合は **false**。必須。|
 |alternativeSecurityIds|alternativeSecurityId コレクション| 内部使用専用です。 null 許容ではありません。 |
 |approximateLastSignInDateTime|DateTimeOffset| Timestamp 型は、ISO 8601 形式を使用して日付と時刻の情報を表し、必ず UTC 時間です。 たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、次のようになります。`'2014-01-01T00:00:00Z'` 読み取り専用。 |
-|deviceId|Guid| 登録時に Azure の Device Registration Service により設定された一意の識別子。 |
+|deviceId|string| 登録時に Azure のデバイス登録サービスにより設定された一意の識別子。 |
 |deviceMetadata|String| 内部使用専用です。 Null に設定します。 |
 |deviceVersion|Int32| 内部使用専用です。 |
 |displayName|String|デバイスの表示名。必須。 |
 |id|String|デバイスの一意識別子。[directoryObject](directoryobject.md) から継承されます。キーであり、Null は許容されません。読み取り専用。|
-|isCompliant|Boolean|デバイスがモバイル デバイス管理 (MDM) ポリシーに準拠している場合は **true**。それ以外の場合は **false**。 読み取り専用です。 |
-|isManaged|Boolean|デバイスがモバイル デバイス管理 (MDM) アプリで管理されている場合は **true**。それ以外の場合は **false**。|
+|isCompliant|ブール値|デバイスがモバイル デバイス管理 (MDM) ポリシーに準拠している場合は **true**。それ以外の場合は **false**。 読み取り専用。 これは、Intune を使用すればすべてのデバイスの OS の種類で更新でき、Wondows の OS デバイスでは [承認された MDM アプリ](https://docs.microsoft.com/windows/client-management/mdm/azure-active-directory-integration-with-mdm) を使用して更新できます。|
+|isManaged|ブール値|デバイスがモバイル デバイス管理 (MDM) アプリで管理されている場合は **true**。それ以外の場合は **false**。 これは、Intune を使用すればすべてのデバイスの OS の種類で更新でき、Wondows の OS デバイスでは [承認された MDM アプリ](https://docs.microsoft.com/windows/client-management/mdm/azure-active-directory-integration-with-mdm) を使用して更新できます。 |
 |onPremisesLastSyncDateTime|DateTimeOffset|オブジェクトがオンプレミスのディレクトリと最後に同期された日時を示します。Timestamp 型は、ISO 8601 形式を使用して、常に UTC 時間での日付と時刻の情報を表します。 たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、次のようになります。`'2014-01-01T00:00:00Z'` 読み取り専用。|
 |onPremisesSyncEnabled|Boolean|このオブジェクトがオンプレミスのディレクトリから同期される場合は **true**。このオブジェクトが最初にオンプレミスのディレクトリから同期されていて、今後は同期されない場合は **false**。このオブジェクトがオンプレミスのディレクトリから一度も同期されたことがない場合は **null** (既定値)。 読み取り専用です。 |
 |operatingSystem|String| デバイス上のオペレーティング システムの種類。必須。 |
 |operatingSystemVersion|String|デバイス上のオペレーティング システムのバージョン。必須。 |
-|physicalIds|String collection| 内部使用専用です。 null 許容ではありません。 |
-|trustType|String| 参加済みデバイスの信頼の種類。 読み取り専用です。 可能な値: <br />**ワークプレース** - *bring your own personal devices* を示します<br />**AzureAd** - クラウド専用の参加済みデバイス<br />**ServerAd** -Azure AD に参加済みのオンプレミスのドメイン参加済みデバイス。 詳細については、「[Azure Active Directory のデバイス管理の概要](https://docs.microsoft.com/ja-JP/azure/active-directory/device-management-introduction)」を参照してください |
+|physicalIds|文字列コレクション| 内部使用専用です。 null 許容ではありません。 |
+|trustType|String| 参加済みデバイスの信頼の種類。 読み取り専用です。 可能な値: <br />**ワークプレース** - *bring your own personal devices* を示します<br />**AzureAd** - クラウド専用の参加済みデバイス<br />**ServerAd** -Azure AD に参加済みのオンプレミスのドメイン参加済みデバイス。 詳細については、「[Azure Active Directory のデバイス管理の概要](https://docs.microsoft.com/en-us/azure/active-directory/device-management-introduction)」を参照してください |
 
 ## <a name="relationships"></a>リレーションシップ
 | リレーションシップ | 型   |説明|
@@ -52,20 +52,23 @@
 
 以下は、リソースの JSON 表記です
 
-<!-- {
+<!--{
   "blockType": "resource",
+  "openType": true,
   "optionalProperties": [
     "extensions",
     "registeredOwners",
     "registeredUsers"
   ],
   "keyProperty": "id",
+  "baseType": "microsoft.graph.directoryObject",
   "@odata.type": "microsoft.graph.device"
 }-->
 
 ```json
 {
   "accountEnabled": true,
+  "alternativeSecurityIds": [{"@odata.type": "microsoft.graph.alternativeSecurityId"}],
   "approximateLastSignInDateTime": "String (timestamp)",
   "deviceId": "string",
   "deviceMetadata": "string",
@@ -81,7 +84,6 @@
   "physicalIds": ["string"],
   "trustType": "string"
 }
-
 ```
 
 ## <a name="see-also"></a>関連項目
@@ -89,6 +91,7 @@
 - [拡張機能を使用してカスタム データをリソースに追加する](../../../concepts/extensibility_overview.md)
 - [オープン拡張機能を使用してカスタム データをユーザーに追加する](../../../concepts/extensibility_open_users.md)
 - [スキーマ拡張機能を使用したグループへのカスタム データの追加](../../../concepts/extensibility_schema_groups.md)
+
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

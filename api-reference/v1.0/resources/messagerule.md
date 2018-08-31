@@ -9,7 +9,7 @@ Outlook では、受信トレイ内の受信メッセージに対し、一定の
 
 
 ## <a name="properties"></a>プロパティ
-| プロパティ     | 型   |説明|
+| プロパティ     | タイプ   |説明|
 |:---------------|:--------|:----------|
 | actions | [messageRuleActions](messageruleactions.md) | 該当する条件が満たされた場合にメッセージに対して実行されるアクション。 |
 | conditions | [messageRulePredicates](messagerulepredicates.md) | 該当するルール アクションをトリガーするために満たす必要のある条件。 |
@@ -29,6 +29,7 @@ Outlook では、受信トレイ内の受信メッセージに対し、一定の
   "blockType": "resource",
   "optionalProperties": [
    ],
+   "baseType": "microsoft.graph.entity",
   "@odata.type": "microsoft.graph.messageRule"
 }-->
 

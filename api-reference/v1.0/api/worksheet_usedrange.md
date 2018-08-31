@@ -13,21 +13,21 @@
 ## <a name="http-request"></a>HTTP 要求
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /workbook/worksheets/{id|name}/UsedRange
+GET /workbook/worksheets/{id|name}/usedRange
 
 ```
 
-## <a name="optional-request-parameter"></a>オプションの要求パラメーター
-要求の URL では、オプションのクエリ パラメーターを提供します。
+## <a name="parameters"></a>パラメーター
+要求 URL でオプション パラメーターを提供することがあります。
 
 | パラメーター    | 型   |説明|
 |:---------------|:--------|:----------|
-|valuesOnly|Boolean|省略可能。値の入っているセルのみを使用セルと見なします (書式設定は無視されます)。|
+|valuesOnly|ブール値|省略可能。値の入っているセルのみを使用セルと見なします (書式設定は無視されます)。|
 
 ## <a name="request-headers"></a>要求ヘッダー
 | 名前       | 説明|
 |:---------------|:----------|
-| Authorization  | ベアラー {トークン}。必須。 |
+| 承認  | ベアラー {トークン}。必須。 |
 | Workbook-Session-Id  | 変更を保持するかどうかを決定するブック セッション ID。省略可能。|
 
 ## <a name="response"></a>応答
@@ -36,14 +36,16 @@ GET /workbook/worksheets/{id|name}/UsedRange
 
 ## <a name="example"></a>例
 以下は、この API を呼び出す方法の例です。
+
 ##### <a name="request"></a>要求
 以下は、要求の例です。
-<!-- {
+<!--{
   "blockType": "request",
+  "isComposable": true,
   "name": "worksheet_usedrange"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/{id|name}/UsedRange(valuesOnly=true)
+GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/{id|name}/usedRange
 ```
 
 ##### <a name="response"></a>応答
@@ -51,7 +53,38 @@ GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/{id
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.range"
+  "@odata.type": "microsoft.graph.workbookRange"
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+Content-length: 169
+
+{
+  "address": "address-value",
+  "addressLocal": "addressLocal-value"
+}
+```
+
+代わりに、この関数はオプションの `valuesOnly` パラメーターを呼び出すことができます。
+
+##### <a name="request"></a>要求
+以下は、要求の例です。
+<!--{
+  "blockType": "request",
+  "isComposable": true,
+  "name": "worksheet_usedrange_valuesonly"
+}-->
+```http
+GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/{id|name}/usedRange(valuesOnly=true)
+```
+
+##### <a name="response"></a>応答
+以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.workbookRange"
 } -->
 ```http
 HTTP/1.1 200 OK

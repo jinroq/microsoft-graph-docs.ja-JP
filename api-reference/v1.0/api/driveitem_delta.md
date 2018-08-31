@@ -3,12 +3,12 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
 title: ドライブのコンテンツを同期する
-ms.openlocfilehash: 47f3ebbc7936b6bd97b58a62db4805197c3bb3c1
-ms.sourcegitcommit: 126066a65b7c59f0d71667d722ee987b8ee97713
+ms.openlocfilehash: f87bfcd686ab98297c8b33aefc55705162438a35
+ms.sourcegitcommit: abf4b739257e3ffd9d045f783ec595d846172590
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "20050831"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23265016"
 ---
 # <a name="track-changes-for-a-drive"></a>ドライブの変更履歴を記録する
 
@@ -48,6 +48,12 @@ GET /users/{userId}/drive/root/delta
 
 このメソッドは、応答をカスタマイズするための `$select`、`$expand`、`$top` の [OData クエリ パラメーター](../../../concepts/query_parameters.md)をサポートします。
 
+## <a name="parameters"></a>パラメーター
+
+| 名前   | 値  | 説明                                                                                                                          |
+|:-------|:-------|:-------------------------------------------------------------------------------------------------------------------------------------|
+| token  | string | 省略可能。 指定しない場合は、階層の現在の状態を列挙します。 `latest` の場合は、最新のデルタ トークンを使用して空の応答を返します。 以前のデルタ トークンの場合は、そのトークン以降の新しい状態を返します。
+
 ## <a name="response"></a>応答
 
 成功した場合、このメソッドは応答本文で `200 OK` 応答コードと、[DriveItem](../resources/driveitem.md) リソースのコレクションを返します。
@@ -67,7 +73,7 @@ DriveItem のコレクションのほか、応答には次のプロパティの�
 
 以下は最初の要求の例です。
 
-<!-- { "blockType": "request", "name": "get_item_delta_first" } -->
+<!-- { "blockType": "request", "name": "get_item_delta_first", "tags": "service.graph" } -->
 
 ```http
 GET https://graph.microsoft.com/v1.0/me/drive/root/delta
@@ -115,7 +121,7 @@ Content-type: application/json
 
 以下は最初の要求後の要求の例です。
 
-<!-- { "blockType": "request", "name": "get_item_delta_last" }-->
+<!-- { "blockType": "request", "name": "get-item-delta-last", "tags": "service.graph" }-->
 
 ```http
 GET https://graph.microsoft.com/v1.0/me/drive/root/delta(token='1230919asd190410jlka')
@@ -171,7 +177,7 @@ Content-type: application/json
 
 ### <a name="request"></a>要求
 
-<!-- { "blockType": "request", "name": "get-delta-latest", "scope": "files.read", "target": "action" } -->
+<!-- { "blockType": "request", "name": "get-delta-latest", "scopes": "files.read", "tags": "service.graph", "target": "action" } -->
 
 ```http
 GET /me/drive/root/delta?token=latest
@@ -179,7 +185,7 @@ GET /me/drive/root/delta?token=latest
 
 ### <a name="response"></a>応答
 
-<!-- { "blockType": "response", "@odata.type": "Collection(microsoft.graph.driveItem)" } -->
+<!-- { "blockType": "response", "isEmpty": true, "@odata.type": "Collection(microsoft.graph.driveItem)" } -->
 
 ```http
 HTTP/1.1 200 OK
@@ -191,7 +197,7 @@ Content-type: application/json
 }
 ```
 
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 * 差分フィードは各変更を示すのではなく、各アイテムの最新の状態を示すものです。アイテムの名前が 2 回変更された場合、最新の名前で 1 回だけ表示されます。
 * 差分フィードには、さまざまな理由から同じアイテムが複数回表示される場合があります。その場合は最後に出現したものを使用する必要があります。

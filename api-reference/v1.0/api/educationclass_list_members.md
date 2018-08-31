@@ -9,7 +9,7 @@
 |:--------------------|:---------------------------------------------------------|
 |委任 (職場または学校のアカウント) |  EduRoster.ReadBasic  |
 |委任 (個人用 Microsoft アカウント) |  サポートされていません  |
-|アプリケーション | EduRoster.Read.All、EduRoster.ReadWrite.All | 
+|アプリケーション | EduRoster.Read.All、EduRoster.ReadWrite.All と Member.Read.Hidden | 
 
 ## <a name="http-request"></a>HTTP 要求
 <!-- { "blockType": "ignored" } -->
@@ -22,7 +22,7 @@ GET /education/classes/{id}/members
 ## <a name="request-headers"></a>要求ヘッダー
 | ヘッダー       | 値 |
 |:---------------|:--------|
-| Authorization  | ベアラー {トークン}。必須。  |
+| 承認  | ベアラー {トークン}。必須。  |
 
 ## <a name="request-body"></a>要求本文
 このメソッドには、要求本文を指定しません。
@@ -36,7 +36,7 @@ GET /education/classes/{id}/members
   "name": "get_members"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/education/classes/11016/members
+GET https://graph.microsoft.com/v1.0/education/classes/{class-id}/members
 ```
 ##### <a name="response"></a>応答
 応答の例を次に示します。 
@@ -79,8 +79,6 @@ Content-length: 593
         "street": "12345 Main St."
       },
       "primaryRole": "teacher",
-      "externalId": "13013",
-      "teacherNumber": "8802",
       "residenceAddress": {
         "city": "Los Angeles",
         "countryOrRegion": "United States",
@@ -88,6 +86,10 @@ Content-length: 593
         "state": "CA",
         "street": "12345 Main St."
       },
+      "teacher": {
+        "externalId": "13013",
+        "teacherNumber": "8802",
+      }
     },
     {
       "id": "13005",
@@ -111,13 +113,15 @@ Content-length: 593
         "state": "NY",
         "street": "12345 Main St."
       },
+      "student": {
+        "birthDate": "2001-01-01T00:00:00Z",
+        "externalId": "13005",
+        "gender": "female",
+        "grade": "9",
+        "graduationYear": "2019",
+        "studentNumber": "13005",
+      },
       "primaryRole": "student",
-      "externalId": "13005",
-      "birthDate": "2001-01-01T00:00:00Z",
-      "gender": "female",
-      "grade": "9",
-      "graduationYear": "2019",
-      "studentNumber": "13005",
       "residenceAddress": {
         "city": "Long Beach",
         "countryOrRegion": "United States",

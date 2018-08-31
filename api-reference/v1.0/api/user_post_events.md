@@ -49,8 +49,8 @@ POST /users/{id | userPrincipalName}/calendars/{id}/events
 ## <a name="request-headers"></a>要求ヘッダー
 | ヘッダー       | 値 |
 |:-----------|:------|
-| Authorization  | ベアラー {トークン}。必須。  |
-| Content-Type  | application/json. Required.  |
+| 承認  | ベアラー {トークン}。必須。  |
+| Content-Type  | アプリケーションまたは json。必須。  |
 
 ## <a name="request-body"></a>要求本文
 要求本文で、[イベント](../resources/event.md) オブジェクトの JSON 表記を指定します。
@@ -63,7 +63,7 @@ POST /users/{id | userPrincipalName}/calendars/{id}/events
 
 ## <a name="example"></a>例
 ##### <a name="request-1"></a>要求 1
-以下は、要求の例です。 `Prefer: outlook.timezone` 要求ヘッダーを使用して、応答の**開始**時刻と**終了**時刻に対するタイム ゾーンを指定します。
+以下は、要求の例です。 要求ヘッダーを使用して、応答の**開始**時刻と**終了**時刻に対するタイム ゾーンを指定します。`Prefer: outlook.timezone`
 <!-- {
   "blockType": "request",
   "name": "create_event_from_user"
@@ -273,7 +273,7 @@ Content-length: 1390
 ```
 
 ##### <a name="response-2"></a>応答 2
-次の応答の例には、会議の 3 つの場所に関する情報を指定する、作成されたイベントが示されています。 `Prefer: outlook.timezone="Pacific Standard Time"` 要求ヘッダーにより、**start** および **end** プロパティは PST で表記されています。
+次の応答の例には、会議の 3 つの場所に関する情報を指定する、作成されたイベントが示されています。 要求ヘッダーにより、**start** および **end** プロパティは PST で表記されています。`Prefer: outlook.timezone="Pacific Standard Time"`
 注: 簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。 実際の呼び出しではすべてのプロパティが返されます。
 <!-- {
   "blockType": "response",
@@ -349,7 +349,6 @@ Content-length: 2985
       "uniqueId":"Fourth Coffee",
       "uniqueIdType":"private",
       "address":{
-        "type":"unknown",
         "street":"4567 Main St",
         "city":"Redmond",
         "state":"WA",

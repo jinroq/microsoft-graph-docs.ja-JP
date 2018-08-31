@@ -16,21 +16,34 @@
 
 * メッセージの添付ファイルにアクセスする場合:Mail.Read。
 * イベントの添付ファイルにアクセスする場合:Calendars.Read。
-* グループ イベントおよび投稿の添付ファイルにアクセスする場合:Group.Read.All。
+* グループ投稿の添付ファイルにアクセスする場合: Group.Read.All。
+
+<!--
+* If accessing attachments in group events or posts: Group.Read.All.
+-->
 
 ## <a name="http-request"></a>HTTP 要求
+ユーザーの既定 [カレンダー](../resources/calendar.md) 内の [ イベント](../resources/event.md) の添付ファイル。
+
+<!--
+Attachments for an [event](../resources/event.md) in the user's or group's default [calendar](../resources/calendar.md).
+-->
 <!-- { "blockType": "ignored" } -->
-ユーザーまたはグループの既定の[カレンダー](../resources/calendar.md)内の[イベント](../resources/event.md)の添付ファイル。
 ```http
 GET /me/events/{id}/attachments/{id}
 GET /users/{id | userPrincipalName}/events/{id}/attachments/{id}
-GET /groups/{id}/events/{id}/attachments/{id}
 
 GET /me/calendar/{id}/events/{id}/attachments/{id}
 GET /users/{id | userPrincipalName}/calendar/events/{id}/attachments/{id}
-GET /groups/{id}/calendar/events/{id}/attachments/{id}
 ```
+
+<!--
+GET /groups/{id}/events/{id}/attachments/{id}
+GET /groups/{id}/calendar/events/{id}/attachments/{id}
+-->
+
 ユーザーの既定 [calendarGroup](../resources/calendargroup.md) に属する[カレンダー](../resources/calendar.md)内[イベント](../resources/event.md)の添付ファイル。
+<!-- { "blockType": "ignored" } -->
 ```http
 GET /me/calendars/{id}/events/{id}/attachments/{id}
 GET /users/{id | userPrincipalName}/calendars/{id}/events/{id}/attachments/{id}
@@ -39,26 +52,31 @@ GET /me/calendargroup/calendars/{id}/events/{id}/attachments/{id}
 GET /users/{id | userPrincipalName}/calendargroup/calendars/{id}/events/{id}/attachments/{id}
 ```
 ユーザーの [calendarGroup](../resources/calendargroup.md) に属する[カレンダー](../resources/calendar.md)内[イベント](../resources/event.md)の添付ファイル。
+<!-- { "blockType": "ignored" } -->
 ```http
 GET /me/calendargroups/{id}/calendars/{id}/events/{id}/attachments/{id}
 GET /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{id}/attachments/{id}
 ```
 ユーザーのメールボックス内の[メッセージ](../resources/message.md)の添付ファイル。
+<!-- { "blockType": "ignored" } -->
 ```http
 GET /me/messages/{id}/attachments/{id}
 GET /users/{id | userPrincipalName}/messages/{id}/attachments/{id}
 ```
 ユーザーのメールボックスの最上位レベルの [mailFolder](../resources/mailfolder.md) に含まれている[メッセージ](../resources/message.md)の添付ファイル。
+<!-- { "blockType": "ignored" } -->
 ```http
 GET /me/mailFolders/{id}/messages/{id}/attachments/{id}
 GET /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/attachments/{id}
 ```
-ユーザーのメールボックスの [mailFolder](../resources/mailfolder.md) の子フォルダーに含まれている[メッセージ](../resources/message.md)の添付ファイル。次の例は、入れ子のレベルの 1 つを示していますが、メッセージは子の子などに入れることができます。
+ユーザーのメールボックス内の[mailFolder](../resources/mailfolder.md)の子フォルダーに含まれている[メッセージ](../resources/message.md)の添付ファイル。  次の例は、入れ子のレベルの 1 つを示していますが、メッセージは子の子などに入れることができます。
+<!-- { "blockType": "ignored" } -->
 ```http
 GET /me/mailFolders/{id}/childFolders/{id}/.../messages/{id}/attachments/{id}
 GET /users/{id | userPrincipalName}/mailFolders/{id}/childFolders/{id}/messages/{id}/attachments/{id}
 ```
 グループの[会話](../resources/conversation.md)に属する[スレッド](../resources/conversationthread.md)内の[投稿](../resources/post.md)の添付ファイル。
+<!-- { "blockType": "ignored" } -->
 ```http
 GET /groups/{id}/threads/{id}/posts/{id}/attachments/{id}
 GET /groups/{id}/conversations/{id}/threads/{id}/posts/{id}/attachments/{id}
@@ -68,7 +86,7 @@ GET /groups/{id}/conversations/{id}/threads/{id}/posts/{id}/attachments/{id}
 ## <a name="request-headers"></a>要求ヘッダー
 | 名前       | 型 | 説明|
 |:-----------|:------|:----------|
-| Authorization  | string  | ベアラー {トークン}。必須。 |
+| 承認  | 文字列  | ベアラー {トークン}。必須。 |
 
 ## <a name="request-body"></a>要求本文
 このメソッドには、要求本文を指定しません。
@@ -90,7 +108,7 @@ GET https://graph.microsoft.com/v1.0/me/events/{id}/attachments/{id}
 ```
 
 ##### <a name="response"></a>応答
-以下は、応答の例です。注: 簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。実際の呼び出しではすべてのプロパティが返されます。
+以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -105,7 +123,7 @@ Content-length: 199
   "@odata.type": "#microsoft.graph.fileAttachment",
   "contentType": "contentType-value",
   "contentLocation": "contentLocation-value",
-  "contentBytes": "contentBytes-value",
+  "contentBytes": "binary",
   "contentId": "null",
   "lastModifiedDateTime": "2016-01-01T12:00:00Z",
   "id": "id-value",
@@ -120,10 +138,11 @@ Content-length: 199
 最初の例は、メッセージの項目の添付ファイルを取得する方法を示しています。**itemAttachment** のプロパティが返されます。
 <!-- {
   "blockType": "request",
+  "sampleKeys": ["AAMkADA1M-zAAA=", "AAMkADA1M-CJKtzmnlcqVgqI="],
   "name": "get_item_attachment"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/me/messages('AAMkADA1M-zAAA=')/attachments('AAMkADA1M-CJKtzmnlcqVgqI=')
+GET https://graph.microsoft.com/v1.0/me/messages/AAMkADA1M-zAAA=/attachments/AAMkADA1M-CJKtzmnlcqVgqI=
 ```
 
 ##### <a name="response-1"></a>応答 1
@@ -152,10 +171,11 @@ Content-type: application/json
 次の例は、`$expand` を使用してメッセージに添付されている項目のプロパティを取得する方法を示しています。この例では、項目はメッセージであり、添付メッセージのプロパティも返されます。
 <!-- {
   "blockType": "request",
+  "sampleKeys": ["AAMkADA1M-zAAA=", "AAMkADA1M-CJKtzmnlcqVgqI="],
   "name": "get_and_expand_item_attachment"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/me/messages('AAMkADA1M-zAAA=')/attachments('AAMkADA1M-CJKtzmnlcqVgqI=')/?$expand=microsoft.graph.itemattachment/item 
+GET https://graph.microsoft.com/v1.0/me/messages/AAMkADA1M-zAAA=/attachments/AAMkADA1M-CJKtzmnlcqVgqI=/?$expand=microsoft.graph.itemattachment/item 
 ```
 
 ##### <a name="response-2"></a>応答 2
@@ -275,5 +295,9 @@ Content-length: 215
   "description": "Get attachment",
   "keywords": "",
   "section": "documentation",
+  "suppressions": [
+    "Error: get_and_expand_item_attachment/item:
+      Property 'item' is of type Custom but has no custom members."
+  ],
   "tocPath": ""
 }-->
