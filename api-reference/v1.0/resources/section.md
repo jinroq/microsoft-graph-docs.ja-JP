@@ -8,6 +8,7 @@ OneNote ノートブックのセクションです。セクションには、ペ
 
 <!-- {
   "blockType": "resource",
+  "baseType": "microsoft.graph.onenoteEntityHierarchyModel",
   "optionalProperties": [
     "pages",
     "parentNotebook",
@@ -32,33 +33,33 @@ OneNote ノートブックのセクションです。セクションには、ペ
 
 ```
 ## <a name="properties"></a>プロパティ
-| プロパティ     | 型   |説明|
+| プロパティ     | タイプ   |説明|
 |:---------------|:--------|:----------|
-|createdBy|[identitySet](identityset.md)|そのアイテムを作成したユーザーの ID、デバイス、アプリケーション。読み取り専用。|
+|createdBy|[identitySet](identityset.md)|そのアイテムを作成したユーザーの ID、デバイス、アプリケーション。読み取り専用です。|
 |createdDateTime|DateTimeOffset|セクションが作成された日時。Timestamp は、ISO 8601 形式を使用した日付と時刻の情報を表し、必ず UTC 時間です。たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、次のようになります。`'2014-01-01T00:00:00Z'`読み取り専用です。|
-|id|String|セクションの一意識別子。読み取り専用です。|
-|isDefault|ブール値|これがユーザーの既定のセクションであるかどうかを示します。読み取り専用です。|
+|id|文字列|セクションの一意識別子。読み取り専用です。|
+|isDefault|ブール型|これがユーザーの既定のセクションであるかどうかを示します。読み取り専用です。|
 |lastModifiedBy|[identitySet](identityset.md)|そのアイテムを作成したユーザーの ID、デバイス、アプリケーション。読み取り専用です。|
 |lastModifiedDateTime|DateTimeOffset|セクションが最後に変更された日時。Timestamp は、ISO 8601 形式を使用した日付と時刻の情報を表し、必ず UTC 時間です。たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、次のようになります。`'2014-01-01T00:00:00Z'`読み取り専用です。|
 |links|[SectionLinks](sectionlinks.md)|セクションを開くためのリンク。`oneNoteClientURL` リンクが OneNote のネイティブ クライアントでセクションを開きます (インストールされている場合)。`oneNoteWebURL` リンクでは、OneNote Online でセクションを開きます。|
-|displayName|String|セクションの名前。 |
-|pagesUrl|String|セクション内のすべてのページに関する詳細情報を入手できる `pages` エンドポイント。読み取り専用です。|
-|self|String|セクションに関する詳細情報を入手できるエンドポイント。読み取り専用です。|
+|displayName|文字列|セクションの名前。 |
+|pagesUrl|文字列|セクション内のすべてのページに関する詳細情報を入手できる `pages` エンドポイント。読み取り専用です。|
+|self|文字列|セクションに関する詳細情報を入手できるエンドポイント。読み取り専用です。|
 
 ## <a name="relationships"></a>リレーションシップ
 | リレーションシップ | 型   |説明|
 |:---------------|:--------|:----------|
-|pages|[Page](page.md) コレクション|セクション内のページのコレクションです。読み取り専用です。Null 許容型。|
-|parentNotebook|[Notebook](notebook.md)|セクションを含むノートブック。読み取り専用です。|
+|pages|[OnenotePage](page.md) コレクション|セクション内のページのコレクションです。読み取り専用です。Null 許容型。|
+|parentNotebook|[ノートブック](notebook.md)|セクションを含むノートブック。読み取り専用です。|
 |parentSectionGroup|[SectionGroup](sectiongroup.md)|セクションを含むセクション グループ。読み取り専用です。|
 
 ## <a name="methods"></a>メソッド
 
 | メソッド           | 戻り値の型    |説明|
 |:---------------|:--------|:----------|
-|[Get section](../api/section_get.md) | [Section](section.md) |セクションのプロパティとリレーションシップを読み取ります。|
-|[Create page](../api/section_post_pages.md) |[Page](page.md)| 指定されたセクションでページのコレクションに投稿してページを作成します。|
-|[List pages](../api/section_list_pages.md) |[Page](page.md) コレクション| 指定されたセクション内のページのコレクションを取得します。|
+|[セクションを取得する](../api/section_get.md) | [OnenoteSection](section.md) |セクションのプロパティとリレーションシップを読み取ります。|
+|[ページを作成](../api/section_post_pages.md) |[ページ](page.md)| 指定されたセクションでページのコレクションに投稿してページを作成します。|
+|[ページをリスト](../api/section_list_pages.md) |[Page](page.md) コレクション| 指定されたセクション内のページのコレクションを取得します。|
 |[copyToNotebook](../api/section_copytonotebook.md)|なし|特定のノートブックにセクションをコピーします。|
 |[copyToSectionGroup](../api/section_copytosectiongroup.md)|なし|特定のセクション グループにセクションをコピーします。|
 

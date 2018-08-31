@@ -1,6 +1,6 @@
 # <a name="deviceconfigurationuserstatus-resource-type"></a>deviceConfigurationUserStatus リソースの種類
 
-> **注:**Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
+> **注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
 
 まだ文書化されていません
 ## <a name="methods"></a>メソッド
@@ -13,25 +13,25 @@
 |[deviceConfigurationUserStatus の更新](../api/intune_deviceconfig_deviceconfigurationuserstatus_update.md)|[deviceConfigurationUserStatus](../resources/intune_deviceconfig_deviceconfigurationuserstatus.md)|[deviceConfigurationUserStatus](../resources/intune_deviceconfig_deviceconfigurationuserstatus.md) オブジェクトのプロパティを更新します。|
 
 ## <a name="properties"></a>プロパティ
-|プロパティ|型|説明|
+|プロパティ|タイプ|説明|
 |:---|:---|:---|
-|id|String|エンティティのキー。|
-|userDisplayName|String|DevicePolicyStatus のユーザー名です。|
-|devicesCount|Int32|そのユーザーのデバイスの数です。|
-|status|String|ポリシー レポートのコンプライアンスの状態です。 可能な値は、`unknown`、`notApplicable`、`compliant`、`remediated`、`nonCompliant`、`error`、`conflict` です。|
-|lastReportedDateTime|DateTimeOffset|ポリシー レポートの最終変更日時です。|
-|userPrincipalName|String|UserPrincipalName。|
+|ID|文字列|エンティティのキー。|
+|userDisplayName|文字列|DevicePolicyStatus のユーザー名。|
+|devicesCount|Int32|そのユーザーのデバイスの数。|
+|状態|[complianceStatus](../resources/intune_shared_compliancestatus.md)|ポリシー レポートのコンプライアンスの状態。 可能な値は、`unknown`、`notApplicable`、`compliant`、`remediated`、`nonCompliant`、`error`、`conflict` です。|
+|lastReportedDateTime|DateTimeOffset|ポリシー レポートの最終変更日時。|
+|userPrincipalName|文字列|UserPrincipalName。|
 
 ## <a name="relationships"></a>リレーションシップ
 なし
 ## <a name="json-representation"></a>JSON 表記
 以下は、リソースの JSON 表記です。
-<!-- {
+<!--{
   "blockType": "resource",
   "keyProperty": "id",
+  "baseType": "microsoft.graph.entity",
   "@odata.type": "microsoft.graph.deviceConfigurationUserStatus"
-}
--->
+}-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.deviceConfigurationUserStatus",

@@ -28,14 +28,14 @@
 ## <a name="http-request"></a>HTTP 要求
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /directory/deleteditems/{id}/restore
+POST /directory/deletedItems/{id}/restore
 ```
 
 ## <a name="request-headers"></a>要求ヘッダー
 | 名前       | 説明|
 |:---------------|:----------|
-| Authorization  | ベアラー &lt;コード&gt; が*必要*|
-| Accept | application/json |
+| 承認  | ベアラー &lt;コード&gt; が*必要*|
+| 承諾 | application/json |
 
 ## <a name="request-body"></a>要求本文
 このメソッドには、要求本文を指定しません。
@@ -52,7 +52,7 @@ POST /directory/deleteditems/{id}/restore
   "name": "create_directoryobject_from_directory"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/directory/deleteditems/46cc6179-19d0-473e-97ad-6ff84347bbbb/restore
+POST https://graph.microsoft.com/v1.0/directory/deletedItems/{object-id}/restore
 ```
 要求本文に、[directoryObject](../resources/directoryobject.md) オブジェクトの JSON 表記を指定します。
 ##### <a name="response"></a>応答

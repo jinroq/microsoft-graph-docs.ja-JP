@@ -38,7 +38,7 @@ GET /reports/getYammerGroupsActivityDetail(date={date_value})
 
 | 名前          | 説明                              |
 | :------------ | :--------------------------------------- |
-| Authorization | ベアラー {トークン}。必須。                |
+| 承認 | ベアラー {トークン}。必須。                |
 | If-None-Match | この要求ヘッダーが含まれている場合、指定された eTag がファイルの現在のタグに一致すると、`304 Not Modified` 応答コードが返されます。 省略可能。 |
 
 ## <a name="response"></a>応答
@@ -68,8 +68,9 @@ GET /reports/getYammerGroupsActivityDetail(date={date_value})
 
 要求の例を次に示します。
 
-<!-- {
+<!--{
   "blockType": "request",
+  "isComposable": true,
   "name": "reportroot_getyammergroupsactivityuserdetail"
 }-->
 
@@ -81,7 +82,31 @@ GET https://graph.microsoft.com/v1.0/reports/getYammerGroupsActivityDetail(perio
 
 応答の例を次に示します。
 
-<!-- { "blockType": "ignored" } --> 
+<!-- { "blockType": "response", "@odata.type": "microsoft.graph.report" } --> 
+
+```http
+HTTP/1.1 302 Found
+Location: https://reports.office.com/data/download/JDFKdf2_eJXKS034dbc7e0t__XDe
+```
+
+#### <a name="request"></a>要求
+`date` で呼び出した場合、レポートは指定した日のアクティビティに制限されます。
+
+<!--{
+  "blockType": "request",
+  "isComposable": true,
+  "name": "reportroot_getyammergroupsactivityuserdetail_date"
+}-->
+
+```http
+GET https://graph.microsoft.com/v1.0/reports/getYammerGroupsActivityDetail(date='2018-03-05')
+```
+
+#### <a name="response"></a>応答
+
+応答の例を次に示します。
+
+<!-- { "blockType": "response", "@odata.type": "microsoft.graph.report" } --> 
 
 ```http
 HTTP/1.1 302 Found
@@ -92,9 +117,7 @@ Location: https://reports.office.com/data/download/JDFKdf2_eJXKS034dbc7e0t__XDe
 302 リダイレクトに従うと、ダウンロードされる CSV ファイルは次のスキーマを持つことになります。
 
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "stream"
+  "blockType": "ignored"
 } -->
 
 ```http

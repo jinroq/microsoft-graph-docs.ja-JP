@@ -7,14 +7,14 @@
 
 | メソッド           | 戻り値の型    |説明|
 |:---------------|:--------|:----------|
-|[Update](../api/inferenceclassificationoverride_update.md) | [inferenceClassificationOverride](inferenceclassificationoverride.md)    |指定のとおり、オーバーライドの **ClassifyAs** フィールドを変更します。 |
-|[Delete](../api/inferenceclassificationoverride_delete.md) | なし |その ID で指定されたオーバーライドを削除します。 |
+|[更新する](../api/inferenceclassificationoverride_update.md) | [inferenceClassificationOverride](inferenceclassificationoverride.md) |指定のとおり、オーバーライドの **ClassifyAs** フィールドを変更します。 |
+|[削除](../api/inferenceclassificationoverride_delete.md) | なし |その ID で指定されたオーバーライドを削除します。 |
 
 ## <a name="properties"></a>プロパティ
-| プロパティ       | 型    |説明|
+| プロパティ     | タイプ   |説明|
 |:---------------|:--------|:----------|
-|classifyAs|string| 特定の差出人からの着信メッセージを常時分類する方法を指定します。可能な値は、`focused`、`other` です。|
-|id|string| オーバーライドの一意識別子。読み取り専用です。|
+|classifyAs|InferenceClassificationType| 特定の差出人からの着信メッセージを常時分類する方法を指定します。 可能な値は、`focused`、`other` です。|
+|ID|文字列| オーバーライドの一意識別子。読み取り専用です。|
 |senderEmailAddress|[emailAddress](emailaddress.md)|オーバーライドを作成する対象の差出人のメール アドレス情報。|
 
 ## <a name="relationships"></a>関係
@@ -27,6 +27,7 @@
 
 <!-- {
   "blockType": "resource",
+  "baseType": "microsoft.graph.entity",
   "optionalProperties": [
 
   ],

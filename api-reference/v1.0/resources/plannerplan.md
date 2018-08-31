@@ -8,24 +8,24 @@
 |:---------------|:--------|:----------|
 |[Get plannerPlan](../api/plannerplan_get.md) | [plannerPlan](plannerplan.md) |**plannerPlan** オブジェクトのプロパティとリレーションシップを読み取ります。|
 |[List buckets](../api/plannerplan_list_buckets.md) |[plannerBucket](plannerbucket.md) コレクション| **plannerBucket** オブジェクト コレクションを取得します。|
-|[List tasks](../api/plannerplan_list_tasks.md) |[plannerTask](plannertask.md) コレクション| **plannerTask** オブジェクト コレクションを取得します。|
-|[Update](../api/plannerplan_update.md) | [plannerPlan](plannerplan.md) |**plannerPlan** オブジェクトを更新します。 |
+|[Tasks を一覧表示する](../api/plannerplan_list_tasks.md) |[plannerTask](plannertask.md) コレクション| **plannerTask** オブジェクト コレクションを取得します。|
+|[更新する](../api/plannerplan_update.md) | [plannerPlan](plannerplan.md) |**plannerPlan** オブジェクトを更新します。 |
 
 ## <a name="properties"></a>プロパティ
-| プロパティ     | 型   |説明|
+| プロパティ     | タイプ   |説明|
 |:---------------|:--------|:----------|
-|createdDateTime|DateTimeOffset|読み取り専用。計画の作成日時。Timestamp 型は、ISO 8601 形式を使用して日付と時刻の情報を表し、必ず UTC 時間です。たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、次のようになります。`'2014-01-01T00:00:00Z'`|
-|id|String| 読み取り専用です。計画の ID。28 文字長で、大文字と小文字の区別があります。[書式検証](planner_identifiers_disclaimer.md)はサービスによって行われます。|
-|owner|String|計画を所有している [Group](group.md) の ID。このフィールドを設定するためには、有効なグループが存在していなければなりません。一度設定したら、所有者のみが更新できます。|
-|title|String|必須。計画のタイトル。|
+|createdDateTime|DateTimeOffset|読み取り専用。計画の作成日時。Timestamp 型は、ISO 8601 形式を使用して日付と時刻の情報を表し、必ず UTC 時間です。たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、次のようになります。 `'2014-01-01T00:00:00Z'`|
+|ID|文字列| 読み取り専用。 計画の ID です。 28 文字で大文字小文字を区別します。 サービスの[フォーマットの検証](planner_identifiers_disclaimer.md) が行われます。|
+|所有者|文字列|計画を所有している [Group](group.md) の ID。このフィールドを設定するためには、有効なグループが存在していなければなりません。一度設定したら、所有者のみが更新できます。|
+|タイトル|文字列|必須。計画のタイトル。|
 |createdBy|[identitySet](identityset.md)|読み取り専用です。計画を作成したユーザー。|
 
 ## <a name="relationships"></a>リレーションシップ
 | リレーションシップ | 型   |説明|
 |:---------------|:--------|:----------|
-|buckets|[plannerBucket](plannerbucket.md) コレクション| 読み取り専用です。Null 許容型。計画に含まれるバケットのコレクション。|
+|バケット|[plannerBucket](plannerbucket.md) コレクション| 読み取り専用です。Null 許容型。計画に含まれるバケットのコレクション。|
 |詳細|[plannerPlanDetails](plannerplandetails.md)| 読み取り専用です。Null 許容型。計画に関する追加の詳細。|
-|tasks|[plannerTask](plannertask.md) コレクション| 読み取り専用です。Null 許容型。計画に含まれるタスクのコレクション。|
+|タスク|[plannerTask](plannertask.md) コレクション| 読み取り専用です。Null 許容型。計画に含まれるタスクのコレクション。|
 
 ## <a name="json-representation"></a>JSON 表記
 
@@ -33,6 +33,7 @@
 
 <!-- {
   "blockType": "resource",
+  "baseType": "microsoft.graph.entity",
   "optionalProperties": [
 
   ],

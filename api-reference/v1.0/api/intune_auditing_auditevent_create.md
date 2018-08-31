@@ -24,28 +24,28 @@ POST /deviceManagement/auditEvents
 ## <a name="request-headers"></a>要求ヘッダー
 |ヘッダー|値|
 |:---|:---|
-|Authorization|ベアラー &lt;トークン&gt; が必要です。|
-|Accept|application/json|
+|承認|ベアラー &lt;トークン&gt; が必須。|
+|承諾|アプリケーション/json|
 
 ## <a name="request-body"></a>要求本文
 要求本文で、auditEvent オブジェクトの JSON 表記を指定します。
 
 次の表に、auditEvent の作成時に必要なプロパティを示します。
 
-|プロパティ|型|説明|
+|プロパティ|タイプ|説明|
 |:---|:---|:---|
-|id|String|エンティティのキー。|
-|displayName|String|イベントの表示名。|
-|componentName|String|コンポーネント名。|
+|id|文字列|エンティティのキー。|
+|displayName|文字列|イベントの表示名。|
+|componentName|文字列|コンポーネント名。|
 |actor|[auditActor](../resources/intune_auditing_auditactor.md)|監査イベントに関連付けられている AAD ユーザーとアプリケーション。|
-|アクティビティ|String|アクティビティのフレンドリ名。|
+|activity|文字列|わかりやすいアクティビティの名前。|
 |activityDateTime|DateTimeOffset|アクティビティが実行された日時 (UTC)。|
-|activityType|String|実行されたアクティビティの種類。|
-|activityOperationType|String|アクティビティの HTTP 操作の種類。|
-|activityResult|String|アクティビティの結果。|
-|correlationId|Guid|システム内でのアクティビティの相互関連付けに使用されるクライアント要求 ID。|
+|activityType|文字列|実行されたアクティビティの種類。|
+|activityOperationType|文字列|アクティビティの HTTP 操作の種類。|
+|activityResult|文字列|アクティビティの結果。|
+|correlationId|Guid|システム内でのアクティビティに関連付けるために使用されるクライアント要求 ID。|
 |resources|[auditResource](../resources/intune_auditing_auditresource.md) コレクション|変更中のリソースです。|
-|category|String|監査のカテゴリです。|
+|category|文字列|監査のカテゴリです。|
 
 
 
@@ -82,7 +82,7 @@ Content-length: 1387
   "activityType": "Activity Type value",
   "activityOperationType": "Activity Operation Type value",
   "activityResult": "Activity Result value",
-  "correlationId": "<Unknown Primitive Type Edm.Guid>",
+  "correlationId": "79199ed9-e50b-4257-8de4-70b9c8685061",
   "resources": [
     {
       "@odata.type": "microsoft.graph.auditResource",
@@ -133,7 +133,7 @@ Content-Length: 1436
   "activityType": "Activity Type value",
   "activityOperationType": "Activity Operation Type value",
   "activityResult": "Activity Result value",
-  "correlationId": "<Unknown Primitive Type Edm.Guid>",
+  "correlationId": "79199ed9-e50b-4257-8de4-70b9c8685061",
   "resources": [
     {
       "@odata.type": "microsoft.graph.auditResource",

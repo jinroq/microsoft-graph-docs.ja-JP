@@ -3,11 +3,12 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
 title: SharingLink
-ms.openlocfilehash: 7b7729899d134fa1d5de7debb1f209ec5aadd70d
-ms.sourcegitcommit: 7aea7a97e36e6d146214de3a90fdbc71628aadba
+ms.openlocfilehash: 7639dab9f63a948b3e9a849d8d320de60f5a0954
+ms.sourcegitcommit: abf4b739257e3ffd9d045f783ec595d846172590
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23270490"
 ---
 # <a name="sharinglink-resource-type"></a>SharingLink リソース型
 
@@ -37,17 +38,17 @@ ms.lasthandoff: 09/28/2017
 
 ## <a name="properties"></a>プロパティ
 
-| プロパティ    | 型          | 説明
+| プロパティ    | タイプ          | 説明
 |:------------|:--------------|:-------------------------------------
-| application | [identity][]  | リンクが関連付けられているアプリケーションです。
-| type        | String        | 作成されたリンクの種類。
-| scope       | String        | このアクセス許可によって表されるリンクの範囲です。値 `anonymous` は、すべてのユーザーがリンクを使用できることを示し、`organization` は同じテナントにサインインしたユーザーのみがリンクを使用できることを示します。
-| webHtml     | String        | `embed` リンクの場合、このプロパティには、Web ページに項目を埋め込む `<iframe>` 要素の HTML コードが含まれています。
-| webUrl      | String        | 項目をブラウザーで OneDrive の Web サイト上で開くための URL です。
+| アプリケーション | [アイデンティティ][]  | リンクが関連付けられているアプリケーションです。
+| 型        | 文字列        | 作成されたリンクの種類。
+| スコープ       | 文字列        | このアクセス許可によって表されるリンクの範囲です。値 `anonymous` は、すべてのユーザーがリンクを使用できることを示し、`organization` は同じテナントにサインインしたユーザーのみがリンクを使用できることを示します。
+| webHtml     | 文字列        | リンクの場合、このプロパティには、Web ページに項目を埋め込む `<iframe>` 要素の HTML コードが格納されます。`embed`
+| webUrl      | 文字列        | OneDrive の web サイト上で、項目をブラウザーに開く URL です。
 
-[Identity]: identity.md
+[ID]: identity.md
 
-## <a name="type-enumeration"></a>Type 列挙型
+## <a name="type-options"></a>タイプ オプション
 
 この表は、**type** プロパティの可能な値を定義します。
 
@@ -57,12 +58,12 @@ ms.lasthandoff: 09/28/2017
 | `edit`  | `write` | 読み取り/書き込みのアクセスを許可する、編集共有リンクです。
 | `embed` | `read`  | ホスト Web ページにコンテンツを埋め込むために使用できる、表示専用共有リンクです。 埋め込みリンクは、OneDrive for Business または SharePoint では使用できません。
 
-## <a name="scope-enumeration"></a>スコープ列挙
+## <a name="scope-options"></a>スコープ オプション
 
-| 値          | 説明                                                                                                                 |
-|:---------------|:----------------------------------------------------------------------------------------------------------------------------|
-| `anonymous`    | 共有リンクは誰でも使用可能です。                                                                            |
-| `organization` | 共有リンクは、同じ組織 (テナント) 内のすべてのユーザーが使用可能です。OneDrive Personal では使用できません。 |
+| 値          | 説明
+|:---------------|:------------------------------------------------------------
+| `anonymous`    | ユーザーはリンクがあればアクセスでき、サインインする必要はありません。 これには、組織外部のユーザーが含まれる場合があります。
+| `organization` | 組織 (テナント) に所属しているすべてのユーザーが、リンクを使ってアクセスできます。 OneDrive for Business と SharePoint のみで使用できます。
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -71,5 +72,11 @@ ms.lasthandoff: 09/28/2017
   "description": "The sharing link facet provides information about how a file is shared.",
   "keywords": "sharing,sharing link, sharing url, webUrl",
   "section": "documentation",
+  "suppressions": [
+    "Warning: /api-reference/v1.0/resources/sharinglink.md:
+      Found potential enums in resource example that weren't defined in a table:(view,edit,embed) are in resource, but () are in table",
+    "Warning: /api-reference/v1.0/resources/sharinglink.md:
+      Found potential enums in resource example that weren't defined in a table:(anonymous,organization) are in resource, but () are in table"
+  ],
   "tocPath": "Facets/SharingLink"
 } -->

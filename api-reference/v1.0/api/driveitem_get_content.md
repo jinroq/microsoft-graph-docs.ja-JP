@@ -3,12 +3,12 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
 title: ファイルをダウンロードする
-ms.openlocfilehash: b5456acc6661fdc7a9682bf2b0ff70a2e5e38a3e
-ms.sourcegitcommit: 9f5a17e9978197ab47b460c53f7fe2cec180d4a2
+ms.openlocfilehash: efed0b12484c3656e5b2b4b9cbe8fb84cdc27006
+ms.sourcegitcommit: abf4b739257e3ffd9d045f783ec595d846172590
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/10/2018
-ms.locfileid: "19492733"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23268089"
 ---
 # <a name="download-the-contents-of-a-driveitem"></a>DriveItem のコンテンツをダウンロードする
 
@@ -41,7 +41,7 @@ GET /users/{userId}/drive/items/{item-id}/content
 
 | 名前          | 値  | 説明                                                                                                                                              |
 |:--------------|:-------|:---------------------------------------------------------------------------------------------------------------------------------------------------------|
-| if-none-match | String | この要求ヘッダーが含まれている場合、指定された eTag (または cTag) がファイルの現在のタグに一致すると、`HTTP 304 Not Modified` 応答が返されます。 |
+| if-none-match | 文字列 | この要求ヘッダーが含まれている場合、指定された eTag (または cTag) がファイルの現在のタグに一致すると、`HTTP 304 Not Modified` 応答が返されます。 |
 
 ## <a name="example"></a>例
 
@@ -58,7 +58,8 @@ GET /me/drive/items/{item-id}/content
 
 ファイルの事前認証されたダウンロード URL にリダイレクトする、`302 Found` 応答を返します。これは、DriveItem の `@microsoft.graph.downloadUrl` プロパティを通じて使用可能な URL と同じものです。
 
-ファイルのコンテンツをダウンロードするには、アプリケーションで応答の `Location` ヘッダーに従う必要があります。多くの HTTP クライアント ライブラリは、自動的に 302 リダイレクションに従い、即座にファイルのダウンロードを開始します。
+ファイルのコンテンツをダウンロードするには、アプリケーションで応答の `Location` ヘッダーに従う必要があります。
+多くの HTTP クライアント ライブラリは自動的に302 にリダイレクトしてファイルのダウンロードを直ちに開始します。
 
 事前認証されたダウンロード URL は、短期間 (数分) のみ有効で、ダウンロードのために `Authorization` ヘッダーを必要としません。
 
@@ -73,7 +74,7 @@ Location: https://b0mpua-by3301.files.1drv.com/y23vmagahszhxzlcvhasdhasghasodfi
 
 ファイルから部分的なバイトの範囲をダウンロードするには、[RFC 2616](https://www.ietf.org/rfc/rfc2616.txt) で規定されているように、アプリで `Range` ヘッダーを使用します。`Range` ヘッダーは実際の `@microsoft.graph.downloadUrl` URL に追加する必要があり、`/content` の要求には追加しない点に注意してください。
 
-<!-- { "blockType": "request", "name": "download-item-partial", "scopes": "files.read" } -->
+<!-- { "blockType": "request", "opaqueUrl": true, "name": "download-item-partial", "scopes": "files.read" } -->
 
 ```http
 GET https://b0mpua-by3301.files.1drv.com/y23vmag
@@ -87,6 +88,7 @@ Range: bytes=0-1023
 ```http
 HTTP/1.1 206 Partial Content
 Content-Range: bytes 0-1023/2048
+Content-Type: application/octet-stream
 
 <first 1024 bytes of file>
 ```

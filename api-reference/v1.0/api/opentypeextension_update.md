@@ -35,23 +35,22 @@ PATCH /users/{id|userPrincipalName}/contacts/{id}/extensions/{extensionId}
 PATCH /users/{id|userPrincipalName}/extensions/{extensionId}
 ```
 
->**注:**上記の構文は、含まれる拡張機能を更新するリソース インスタンスを特定する一般的な方法を示しています。こうしたリソース インスタンスを特定するために使用できる他の構文すべても、同様の方法でオープン拡張機能を更新できます。
+>**注:** 上記の構文は、含まれる拡張機能を更新するリソース インスタンスを特定する一般的な方法を示しています。こうしたリソース インスタンスを特定するために使用できる他の構文すべても、同様の方法でオープン拡張機能を更新できます。
 
 要求本文に、その拡張情報への変更や追加を行うための任意のカスタム データを含める方法については、[要求本文](#request-body)のセクションをご覧ください。
 
 
-## <a name="parameters"></a>パラメーター
-|**パラメーター**|**型**|**説明**|
+## <a name="path-parameters"></a>パス パラメーター
+|パラメーター|型|説明|
 |:-----|:-----|:-----|
-|_URL parameters_|
-|id|string|対応するコレクションのインスタンスの一意識別子。必須。|
-|extensionId|string|これは、拡張情報の一意のテキスト識別子である拡張情報名、または拡張情報の種類と一意のテキスト識別子を連結した完全修飾名になります。完全修飾名は、拡張情報を作成したときに、`id` プロパティで返されます。必須。|
+|ID|文字列|対応するコレクションのインスタンスの一意識別子。必須。|
+|extensionId|文字列|これは、拡張情報の一意のテキスト識別子である拡張情報名、または拡張情報の種類と一意のテキスト識別子を連結した完全修飾名になります。完全修飾名は、拡張情報を作成したときに、`id` プロパティで返されます。必須。|
 
 ## <a name="request-headers"></a>要求ヘッダー
 | 名前       | 値 |
 |:---------------|:----------|
-| Authorization | ベアラー {トークン}。必須。 |
-| Content-Type | application/json |
+| 承認 | ベアラー {トークン}。必須。 |
+| コンテンツ タイプ | アプリケーション /json |
 
 ## <a name="request-body"></a>要求本文
 
@@ -60,7 +59,7 @@ PATCH /users/{id|userPrincipalName}/extensions/{extensionId}
 | 名前       | 値 |
 |:---------------|:----------|
 | @odata.type | Microsoft.Graph.OpenTypeExtension |
-| extensionName | %unique_string% |
+| extensionName | %unique_string % |
 
 ## <a name="response"></a>応答
 
@@ -76,7 +75,7 @@ PATCH /users/{id|userPrincipalName}/extensions/{extensionId}
 ```http
 {
     "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#Me/messages('AAMkAGE1M2IyNGNmLTI5MTktNDUyZi1iOTVl===')/extensions/$entity",
-    "@odata.type": "#Microsoft.Graph.OpenTypeExtension",
+    "@odata.type": "#microsoft.graph.openTypeExtension",
     "@odata.id": "https://graph.microsoft.com/v1.0/users('ddfc984d-b826-40d7-b48b-57002df85e00@1717f226-49d1-4d0c-9d74-709fad6677b4')/messages('AAMkAGE1M2IyNGNmLTI5MTktNDUyZi1iOTVl===')/extensions
 ('Microsoft.OutlookServices.OpenTypeExtension.Com.Contoso.Referral')",
     "extensionName": "Com.Contoso.Referral",
@@ -91,25 +90,25 @@ PATCH /users/{id|userPrincipalName}/extensions/{extensionId}
 
 <!-- { "blockType": "ignored" } -->
 ```http
-PATCH https://graph.microsoft.com/v1.0/me/messages('AAMkAGE1M2IyNGNmLTI5MTktNDUyZi1iOTVl===')/extensions('Com.Contoso.Referral')
+PATCH https://graph.microsoft.com/v1.0/me/messages/AAMkAGE1M2IyNGNmLTI5MTktNDUyZi1iOTVl===/extensions/Com.Contoso.Referral
 ```
 
 また、拡張情報は、その完全修飾名でも参照できます。
 
 <!-- { "blockType": "ignored" } -->
 ```http
-PATCH https://graph.microsoft.com/v1.0/me/messages('AAMkAGE1M2IyNGNmLTI5MTktNDUyZi1iOTVl===')/extensions('Microsoft.OutlookServices.OpenTypeExtension.Com.Contoso.Referral')
+PATCH https://graph.microsoft.com/v1.0/me/messages/AAMkAGE1M2IyNGNmLTI5MTktNDUyZi1iOTVl===/extensions/Microsoft.OutlookServices.OpenTypeExtension.Com.Contoso.Referral
 ```
 
 要求の例と以下の要求本文を使用して、上記の拡張情報を次のように更新できます。
-- `companyName` を `Wingtip Toys` から `Wingtip Toys (USA)` に変更する
-- `dealValue` を `500050` から `500100` に変更する
-- 新しいデータをカスタム プロパティ `updated` として追加する
+- を `Wingtip Toys` から `Wingtip Toys (USA)` に変更する `Wingtip Toys (USA)`
+- を `500050` から `500100` に変更する `500100`
+- 新しいデータをカスタム プロパティ `updated` として追加する `updated`
 
 <!-- { "blockType": "ignored" } -->
 ```http
 {
-    "@odata.type": "Microsoft.Graph.OpenTypeExtension",
+    "@odata.type": "microsoft.graph.openTypeExtension",
     "extensionName": "Com.Contoso.Referral",
     "companyName": "Wingtip Toys (USA)",
     "dealValue": "500100",
@@ -130,7 +129,7 @@ Content-type: application/json
 
 {
     "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#Me/messages('AAMkAGE1M2IyNGNmLTI5MTktNDUyZi1iOTVl===')/extensions/$entity",
-    "@odata.type": "#Microsoft.Graph.OpenTypeExtension",
+    "@odata.type": "#microsoft.graph.openTypeExtension",
     "@odata.id": "https://graph.microsoft.com/v1.0/users('ddfc984d-b826-40d7-b48b-57002df85e00@1717f226-49d1-4d0c-9d74-709fad6677b4')/messages('AAMkAGE1M2IyNGNmLTI5MTktNDUyZi1iOTVl===')/extensions
 ('Microsoft.OutlookServices.OpenTypeExtension.Com.Contoso.Referral')",
     "id": "Microsoft.OutlookServices.OpenTypeExtension.Com.Contoso.Referral",
@@ -170,11 +169,12 @@ Content-type: application/json
 次に、`expirationDate` を `2016-07-30T11:00:00Z` に変更する要求と要求本文を示します。
 
 <!-- {
-  "blockType": "request",
+  "blockType": "ignored",
+  "sampleKeys": ["Microsoft.OutlookServices.OpenTypeExtension.Com.Contoso.Estimate"],
   "name": "update_opentypeextension"
 }-->
 ```http
-PATCH https://graph.microsoft.com/v1.0/groups('37df2ff0-0de0-4c33-8aee-75289364aef6')/threads('AAQkADJizZJpEWwqDHsEpV_KA==')/posts('AAMkADJiUg96QZUkA-ICwMubAADDEd7UAAA=')/extensions('Microsoft.OutlookServices.OpenTypeExtension.Com.Contoso.Estimate')
+PATCH https://graph.microsoft.com/v1.0/groups/37df2ff0-0de0-4c33-8aee-75289364aef6/threads/AAQkADJizZJpEWwqDHsEpV_KA==/posts/AAMkADJiUg96QZUkA-ICwMubAADDEd7UAAA=/extensions/Microsoft.OutlookServices.OpenTypeExtension.Com.Contoso.Estimate
 Content-type: application/json
 
 {
@@ -196,9 +196,9 @@ Content-type: application/json
 ここでは、拡張情報内の更新された `expirationDate` を表示する 2 番目の例の応答を示します。
 
 <!-- {  
-  "blockType": "response",  
+  "blockType": "ignored",  
   "truncated": true,  
-  "@odata.type": "microsoft.graph.opentypeextension"  
+  "@odata.type": "microsoft.graph.openTypeExtension"  
 } --> 
 ```http
 HTTP/1.1 200 OK

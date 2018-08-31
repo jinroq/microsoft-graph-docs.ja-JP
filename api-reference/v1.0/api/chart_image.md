@@ -11,25 +11,27 @@
 |アプリケーション | サポートされていません。 |
 
 ## <a name="http-request"></a>HTTP 要求
-<!-- { "blockType": "ignored" } -->
+<!-- { "blockType": "samples" } -->
 ```http
-GET /workbook/worksheets/{id|name}/charts(<name>)/Image(width=0,height=0,fittingMode='fit')
-
+GET /workbook/worksheets/{id|name}/charts/{name}/image
+GET /workbook/worksheets/{id|name}/charts/{name}/image(width=640)
+GET /workbook/worksheets/{id|name}/charts/{name}/image(width=640,height=480)
+GET /workbook/worksheets/{id|name}/charts/{name}/image(width=640,height=480,fittingMode='fit')
 ```
 ## <a name="request-headers"></a>要求ヘッダー
 | 名前       | 説明|
 |:---------------|:----------|
-| Authorization  | ベアラー {トークン}。必須。 |
-| Workbook-Session-Id  | 変更を保持するかどうかを決定するブック セッション ID。省略可能。|
+| 承認  | ベアラー {トークン}。必須。 |
+| ワークブック-セッション-ID  | 変更を保持するかどうかを決定するブック セッション ID。省略可能。|
 
-## <a name="request-body"></a>要求本文
+## <a name="path-parameters"></a>パス パラメーター
 要求本文で、次のパラメーターを含む JSON オブジェクトを指定します。
 
-| パラメーター    | Type   |説明|
+| パラメーター    | 型   |説明|
 |:---------------|:--------|:----------|
-|height|number|省略可能。結果の画像の希望する高さ。|
-|width|number|省略可能。結果の画像の希望する幅。|
-|fittingMode|string|省略可能。指定したディメンションに合わせてグラフを拡大または縮小するために使用するメソッド (高さと幅の両方が設定されている場合)。使用可能な値: `Fit`、`FitAndCenter`、`Fill`。|
+|高さ|Int32|結果の画像が希望する高さ。 省略可能。|
+|幅|Int32|結果の画像が希望する幅。 省略可能。|
+|fittingMode|文字列|メソッド (高さと幅の両方が設定されている) 場合は、グラフを指定のサイズを拡大または縮小するために使用します。」  可能な値は、`Fit`、`FitAndCenter`、`Fill` です。|
 
 ## <a name="response"></a>応答
 
@@ -37,16 +39,18 @@ GET /workbook/worksheets/{id|name}/charts(<name>)/Image(width=0,height=0,fitting
 
 ## <a name="example"></a>例
 以下は、この API を呼び出す方法の例です。
+
 ##### <a name="request"></a>要求
 以下は、要求の例です。
-<!-- { "blockType": "ignored" } -->
+
+<!-- { "blockType": "request" } -->
 ```http
-GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/{id|name}/charts(<name>)/Image(width=0,height=0,fittingMode='fit')
+GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/{id|name}/charts/{name}/image(width=640,height=480,fittingMode='fit')
 ```
 
 ##### <a name="response"></a>応答
-以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。
-<!-- { "blockType": "ignored" } -->
+以下は、応答の例です。 注: 簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。 実際の呼び出しではすべてのプロパティが返されます。
+<!-- { "blockType": "response", "@odata.type": "Edm.String" } -->
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json;odata.metadata=minimal;odata.streaming=true
@@ -56,7 +60,7 @@ Content-type: application/json;odata.metadata=minimal;odata.streaming=true
 }
 ```
 
-## <a name="usage"></a>使用方法
+## <a name="usage"></a>使用例
 
 HTML イメージ タグ: `<img src="data:image/png;base64,{base-64 chart image string}/>` 内の Base-64 文字列を表示できます。
 

@@ -8,12 +8,12 @@ Exchange Online 上でサポートされている HD Photo のサイズは次の
 | メソッド       | 戻り値の型  |説明|
 |:---------------|:--------|:----------|
 |[ProfilePhoto を取得する](../api/profilephoto_get.md) | [profilePhoto](profilephoto.md) |指定した **profilePhoto** またはそのメタデータ (profilePhoto プロパティ) を取得します。|
-|[Update](../api/profilephoto_update.md) | [profilePhoto](profilephoto.md)  |指定されたユーザー、グループ、または連絡先に写真を割り当てます。写真はバイナリ形式にする必要があります。既存の写真が置き換えられます (存在する場合)。|
+|[更新](../api/profilephoto_update.md) | [profilePhoto](profilephoto.md)  |指定されたユーザー、グループ、または連絡先に写真を割り当てます。写真はバイナリ形式にする必要があります。既存の写真が置き換えられます (存在する場合)。|
 
 ## <a name="properties"></a>プロパティ
-| プロパティ     | 型   |説明|
+| プロパティ     | タイプ   |説明|
 |:---------------|:--------|:----------|
-|id|string|読み取り専用です。|
+|ID|文字列|読み取り専用です。|
 |height|int32|写真の高さ。読み取り専用です。|
 |width|int32|写真の幅。読み取り専用です。|
 
@@ -25,11 +25,11 @@ Exchange Online 上でサポートされている HD Photo のサイズは次の
 
 以下は、リソースの JSON 表記です。
 
-<!-- {
+<!--{
   "blockType": "resource",
-  "optionalProperties": [
-
-  ],
+  "baseType": "microsoft.graph.entity",
+  "optionalProperties": [],
+  "isMediaEntity": true,
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.profilePhoto"
 }-->

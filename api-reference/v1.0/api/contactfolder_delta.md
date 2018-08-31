@@ -1,4 +1,4 @@
-# <a name="contactfolder-delta"></a>contactFolder: delta
+# <a name="contactfolder-delta"></a>contactFolder: デルタ
 
 ユーザーのメールボックスで追加または削除された一連の連絡先フォルダーを取得します。
 
@@ -18,7 +18,7 @@
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/contactFolders/delta
-GET /users/<id>/contactFolders/delta
+GET /users/{id}/contactFolders/delta
 ```
 
 ### <a name="query-parameters"></a>クエリ パラメーター
@@ -27,8 +27,8 @@ GET /users/<id>/contactFolders/delta
 
 | クエリ パラメーター      | 種類   |説明|
 |:---------------|:--------|:----------|
-| $deltatoken | string | 同じ連絡先フォルダー コレクションの前の**デルタ**関数呼び出しの `deltaLink` URL で[状態トークン](../../../concepts/delta_query_overview.md)が返され、変更追跡のその回が完了したことを示します。このコレクションについて、このトークンを含む `deltaLink` URL 全体を、変更追跡の次の回の最初の要求に保存し、適用します。|
-| $skiptoken | string | 前の**デルタ**関数呼び出しの `nextLink` URL で[状態トークン](../../../concepts/delta_query_overview.md)が返され、同じ連絡先フォルダー コレクションに追跡すべき変更が他にもあることを示します。 |
+| $deltatoken | 文字列 | 同じ連絡先フォルダー コレクションの前の**デルタ**関数呼び出しの `deltaLink` URL で[状態トークン](../../../concepts/delta_query_overview.md)が返され、変更追跡のその回が完了したことを示します。このコレクションについて、このトークンを含む `deltaLink` URL 全体を、変更追跡の次の回の最初の要求に保存し、適用します。|
+| $skiptoken | 文字列 | 前の**デルタ**関数呼び出しの `nextLink` URL で[状態トークン](../../../concepts/delta_query_overview.md)が返され、同じ連絡先フォルダー コレクションに追跡すべき変更が他にもあることを示します。 |
 
 #### <a name="odata-query-parameters"></a>OData クエリ パラメーター
 
@@ -37,9 +37,9 @@ GET /users/<id>/contactFolders/delta
 ## <a name="request-headers"></a>要求ヘッダー
 | 名前       | 型 | 説明 |
 |:---------------|:----------|:----------|
-| Authorization  | string  | ベアラー {トークン}。必須。 |
-| Content-Type  | string  | application/json. Required. |
-| Prefer | string  | odata.maxpagesize={x}.省略可能。 |
+| 承認  | 文字列  | ベアラー {トークン}。必須。 |
+| コンテンツ - タイプ  | 文字列  | アプリケーションまたは json。必須。 |
+| 優先 | 文字列  | odata.maxpagesize={x}.省略可能。 |
 
 ## <a name="response"></a>応答
 
@@ -59,7 +59,6 @@ GET /users/<id>/contactFolders/delta
 }-->
 ```http
 GET https://graph.microsoft.com/v1.0/me/contactFolders/delta
-
 Prefer: odata.maxpagesize=2
 ```
 
@@ -88,7 +87,6 @@ Content-length: 254
     {
      "parentFolderId": "parentFolderId-value",
       "displayName": "displayName-value",
-      "wellKnownName": "wellKnownName-value",
       "id": "id-value"
     }
   ]

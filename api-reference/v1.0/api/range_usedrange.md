@@ -13,23 +13,21 @@
 ## <a name="http-request"></a>HTTP 要求
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /workbook/names(<name>)/range/UsedRange
-GET /workbook/worksheets/{id|name}/range(address='<address>')/UsedRange
-GET /workbook/tables/{id|name}/columns/{id|name}/range/UsedRange
+GET /workbook/names/{name}/range/usedRange
+GET /workbook/worksheets/{id|name}/range(address='<address>')/usedRange
+GET /workbook/tables/{id|name}/columns/{id|name}/range/usedRange
 
 ```
 ## <a name="request-headers"></a>要求ヘッダー
 | 名前       | 説明|
 |:---------------|:----------|
-| Authorization  | ベアラー {トークン}。必須。 |
-| Workbook-Session-Id  | 変更を保持するかどうかを決定するブック セッション ID。省略可能。|
+| 承認  | ベアラー {トークン}。必須。 |
+| ブック セッション ID  | 変更を保持するかどうかを決定するブック セッション ID。省略可能。|
 
-## <a name="request-body"></a>要求本文
-要求本文で、次のパラメーターを含む JSON オブジェクトを指定します。
-
-| パラメーター    | Type   |説明|
+## <a name="path-parameters"></a>パス パラメーター
+| パラメーター    | 型   |説明|
 |:---------------|:--------|:----------|
-|valuesOnly|boolean|省略可能。値の入っているセルのみを使用セルと見なします。|
+|valuesOnly|ブール値|省略可能。値の入っているセルのみを使用セルと見なします。|
 
 ## <a name="response"></a>応答
 
@@ -39,18 +37,13 @@ GET /workbook/tables/{id|name}/columns/{id|name}/range/UsedRange
 以下は、この API を呼び出す方法の例です。
 ##### <a name="request"></a>要求
 以下は、要求の例です。
-<!-- {
+<!--{
   "blockType": "request",
+  "isComposable": true,
   "name": "range_usedrange"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/names(<name>)/range/UsedRange
-Content-type: application/json
-Content-length: 24
-
-{
-  "valuesOnly": true
-}
+GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/names/{name}/range/usedRange
 ```
 
 ##### <a name="response"></a>応答
@@ -58,7 +51,7 @@ Content-length: 24
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.range"
+  "@odata.type": "microsoft.graph.workbookRange"
 } -->
 ```http
 HTTP/1.1 200 OK
@@ -74,6 +67,42 @@ Content-length: 169
   "valueTypes": "valueTypes-value"
 }
 ```
+
+以下は、オプション `valuesOnly` のパラメーターを指定する例です。
+
+##### <a name="request"></a>要求
+以下は、要求の例です。
+<!--{
+  "blockType": "request",
+  "isComposable": true,
+  "name": "range_usedrange_valuesonly"
+}-->
+```http
+GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/names/{name}/range/usedRange(valuesOnly=true)
+```
+
+##### <a name="response"></a>応答
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.workbookRange"
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+Content-length: 169
+
+{
+  "address": "address-value",
+  "addressLocal": "addressLocal-value",
+  "cellCount": 90,
+  "columnCount": 90,
+  "columnIndex": 90,
+  "valueTypes": "valueTypes-value"
+}
+```
+
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

@@ -1,4 +1,4 @@
-# <a name="update-chartlineformat"></a>Update chartlineformat
+# <a name="update-chartlineformat"></a>chartlineformat の更新
 
 chartlineformat オブジェクトのプロパティを更新します。
 ## <a name="permissions"></a>アクセス許可
@@ -13,26 +13,26 @@ chartlineformat オブジェクトのプロパティを更新します。
 ## <a name="http-request"></a>HTTP 要求
 <!-- { "blockType": "ignored" } -->
 ```http
-PATCH /workbook/worksheets/{id|name}/charts(<name>)/axes/seriesaxis/format/line
-PATCH /workbook/worksheets/{id|name}/charts(<name>)/axes/categoryaxis/format/line
-PATCH /workbook/worksheets/{id|name}/charts(<name>)/axes/seriesaxis/majorgridlines/format/line
+PATCH /workbook/worksheets/{id|name}/charts/{name}/axes/seriesAxis/format/line
+PATCH /workbook/worksheets/{id|name}/charts/{name}/axes/categoryaxis/format/line
+PATCH /workbook/worksheets/{id|name}/charts/{name}/axes/seriesAxis/majorgridlines/format/line
 ```
 ## <a name="optional-request-headers"></a>オプションの要求ヘッダー
 | 名前       | 説明|
 |:-----------|:-----------|
-| Authorization  | ベアラー {トークン}。必須。 |
-| Workbook-Session-Id  | 変更を保持するかどうかを決定するブック セッション ID。省略可能。|
+| 承認  | ベアラー {トークン}。必須。 |
+| ブック セッション ID  | 変更を保持するかどうかを決定するブック セッション ID。省略可能。|
 
 ## <a name="request-body"></a>要求本文
 要求本文で、更新する関連フィールドの値を指定します。要求本文に含まれない既存のプロパティは、以前の値のままになるか、他のプロパティ値の変化に基づいて再計算されます。最適なパフォーマンスを得るためには、変更されていない既存の値を含めないでください。
 
-| プロパティ     | 型   |説明|
+| プロパティ     | タイプ   |説明|
 |:---------------|:--------|:----------|
-|color|string|グラフの線の色を表す HTML カラー コード。|
+|color|文字列|グラフの線の色を表す HTML カラー コード。|
 
 ## <a name="response"></a>応答
 
-成功した場合、このメソッドは `200 OK` 応答コードと、応答本文で、更新された [ChartLineFormat](../resources/chartlineformat.md) オブジェクトを返します。
+成功した場合、このメソッドは `200 OK` 応答コードと、応答本文で[WorkbookChartLineFormat](../resources/chartlineformat.md) オブジェクトを返します。
 ## <a name="example"></a>例
 ##### <a name="request"></a>要求
 以下は、要求の例です。
@@ -41,7 +41,7 @@ PATCH /workbook/worksheets/{id|name}/charts(<name>)/axes/seriesaxis/majorgridlin
   "name": "update_chartlineformat"
 }-->
 ```http
-PATCH https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/{id|name}/charts(<name>)/axes/seriesaxis/format/line
+PATCH https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/{id|name}/charts/{name}/axes/seriesAxis/format/line
 Content-type: application/json
 Content-length: 28
 
@@ -54,7 +54,7 @@ Content-length: 28
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.chartLineFormat"
+  "@odata.type": "microsoft.graph.workbookChartLineFormat"
 } -->
 ```http
 HTTP/1.1 200 OK

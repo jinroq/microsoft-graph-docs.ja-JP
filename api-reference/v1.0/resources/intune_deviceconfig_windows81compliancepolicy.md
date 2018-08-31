@@ -1,6 +1,6 @@
 # <a name="windows81compliancepolicy-resource-type"></a>windows81CompliancePolicy リソース タイプ
 
-> **注:**Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
+> **注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
 
 このクラスには、Windows 8.1 のコンプライアンス設定が含まれています。
 
@@ -9,32 +9,32 @@
 ## <a name="methods"></a>メソッド
 |メソッド|戻り値の型|説明|
 |:---|:---|:---|
-|[List windows81CompliancePolicies](../api/intune_deviceconfig_windows81compliancepolicy_list.md)|[windows81CompliancePolicy](../resources/intune_deviceconfig_windows81compliancepolicy.md) コレクション|[windows81CompliancePolicy](../resources/intune_deviceconfig_windows81compliancepolicy.md) オブジェクトのプロパティとリレーションシップをリストします。|
-|[Get windows81CompliancePolicy](../api/intune_deviceconfig_windows81compliancepolicy_get.md)|[windows81CompliancePolicy](../resources/intune_deviceconfig_windows81compliancepolicy.md)|[windows81CompliancePolicy](../resources/intune_deviceconfig_windows81compliancepolicy.md) オブジェクトのプロパティとリレーションシップを読み取ります。|
-|[Create windows81CompliancePolicy](../api/intune_deviceconfig_windows81compliancepolicy_create.md)|[windows81CompliancePolicy](../resources/intune_deviceconfig_windows81compliancepolicy.md)|新しい [windows81CompliancePolicy](../resources/intune_deviceconfig_windows81compliancepolicy.md) オブジェクトを作成します。|
-|[Delete windows81CompliancePolicy](../api/intune_deviceconfig_windows81compliancepolicy_delete.md)|なし|[windows81CompliancePolicy](../resources/intune_deviceconfig_windows81compliancepolicy.md) を削除します。|
-|[Update windows81CompliancePolicy](../api/intune_deviceconfig_windows81compliancepolicy_update.md)|[windows81CompliancePolicy](../resources/intune_deviceconfig_windows81compliancepolicy.md)|[windows81CompliancePolicy](../resources/intune_deviceconfig_windows81compliancepolicy.md) オブジェクトのプロパティを更新します。|
+|[windows81CompliancePolicies をリスト](../api/intune_deviceconfig_windows81compliancepolicy_list.md)|[windows81CompliancePolicy](../resources/intune_deviceconfig_windows81compliancepolicy.md) コレクション|[windows81CompliancePolicy](../resources/intune_deviceconfig_windows81compliancepolicy.md) オブジェクトのプロパティとリレーションシップをリストします。|
+|[windows81CompliancePolicy を取得](../api/intune_deviceconfig_windows81compliancepolicy_get.md)|[windows81CompliancePolicy](../resources/intune_deviceconfig_windows81compliancepolicy.md)|[windows81CompliancePolicy](../resources/intune_deviceconfig_windows81compliancepolicy.md) オブジェクトのプロパティとリレーションシップを読み取ります。|
+|[windows81CompliancePolicy を作成](../api/intune_deviceconfig_windows81compliancepolicy_create.md)|[windows81CompliancePolicy](../resources/intune_deviceconfig_windows81compliancepolicy.md)|新しい [windows81CompliancePolicy](../resources/intune_deviceconfig_windows81compliancepolicy.md) オブジェクトを作成します。|
+|[windows81CompliancePolicy を削除](../api/intune_deviceconfig_windows81compliancepolicy_delete.md)|なし|[windows81CompliancePolicy](../resources/intune_deviceconfig_windows81compliancepolicy.md) を削除します。|
+|[windows81CompliancePolicy を更新](../api/intune_deviceconfig_windows81compliancepolicy_update.md)|[windows81CompliancePolicy](../resources/intune_deviceconfig_windows81compliancepolicy.md)|[windows81CompliancePolicy](../resources/intune_deviceconfig_windows81compliancepolicy.md) オブジェクトのプロパティを更新します。|
 
 ## <a name="properties"></a>プロパティ
-|プロパティ|型|説明|
+|プロパティ|タイプ|説明|
 |:---|:---|:---|
-|id|String|エンティティのキー。 [deviceCompliancePolicy](../resources/intune_deviceconfig_devicecompliancepolicy.md) から継承します|
+|id|文字列|エンティティのキー。 [deviceCompliancePolicy](../resources/intune_deviceconfig_devicecompliancepolicy.md) から継承します|
 |createdDateTime|DateTimeOffset|オブジェクトが作成された DateTime。 [deviceCompliancePolicy](../resources/intune_deviceconfig_devicecompliancepolicy.md) から継承します|
-|description|String|デバイス構成について管理者が提供した説明です。 [deviceCompliancePolicy](../resources/intune_deviceconfig_devicecompliancepolicy.md) から継承します|
-|lastModifiedDateTime|DateTimeOffset|オブジェクトの最終更新の DateTime。 [deviceCompliancePolicy](../resources/intune_deviceconfig_devicecompliancepolicy.md) から継承します|
-|displayName|String|デバイス構成について管理者が指定した名前です。 [deviceCompliancePolicy](../resources/intune_deviceconfig_devicecompliancepolicy.md) から継承します|
+|description|文字列|デバイス構成について管理者が提供した説明。 [deviceCompliancePolicy](../resources/intune_deviceconfig_devicecompliancepolicy.md) から継承します|
+|lastModifiedDateTime|DateTimeOffset|オブジェクトが最後に変更された DateTime。 [deviceCompliancePolicy](../resources/intune_deviceconfig_devicecompliancepolicy.md) から継承します|
+|displayName|文字列|デバイス構成について管理者が指定した名前。 [deviceCompliancePolicy](../resources/intune_deviceconfig_devicecompliancepolicy.md) から継承します|
 |version|Int32|デバイス構成のバージョン。 [deviceCompliancePolicy](../resources/intune_deviceconfig_devicecompliancepolicy.md) から継承します|
-|passwordRequired|Boolean|Windows デバイスのロックを解除するパスワードを要求します。|
-|passwordBlockSimple|Boolean|単純なパスワードをブロックするかどうかを示します。|
+|passwordRequired|ブール値|Windows デバイスのロックを解除するパスワードを要求します。|
+|passwordBlockSimple|ブール値|単純なパスワードをブロックするかどうかを示します。|
 |passwordExpirationDays|Int32|パスワードの有効期限 (日数)。|
 |passwordMinimumLength|Int32|パスワードの最小文字数。|
-|passwordMinutesOfInactivityBeforeLock|Int32|パスワードが要求されるまでの非アクティブな時間。|
+|passwordMinutesOfInactivityBeforeLock|Int32|パスワードが要求されるまでの非アクティブ時間 (分)。|
 |passwordMinimumCharacterSetCount|Int32|パスワードに必要な文字セットの数。|
-|passwordRequiredType|String|必要なパスワードの種類。 可能な値は、`deviceDefault`、`alphanumeric`、`numeric` です。|
+|passwordRequiredType|[requiredPasswordType](../resources/intune_deviceconfig_requiredpasswordtype.md)|必要なパスワードの種類。 可能な値は、 `deviceDefault`、`alphanumeric`、`numeric` です。|
 |passwordPreviousPasswordBlockCount|Int32|再使用を禁止する、以前のパスワードの数。 有効な値は 0 から 24 までです|
-|osMinimumVersion|String|Windows 8.1 の最小バージョン。|
-|osMaximumVersion|String|Windows 8.1 の最大バージョン。|
-|storageRequireEncryption|Boolean|Windows 8.1 のデバイスでの暗号化が必要かどうかを示します。|
+|osMinimumVersion|文字列|Windows 8.1 の最小バージョン。|
+|osMaximumVersion|文字列|Windows 8.1 の最大バージョン。|
+|storageRequireEncryption|ブール値|Windows 8.1 のデバイスでの暗号化が必要かどうかを示します。|
 
 ## <a name="relationships"></a>リレーションシップ
 |リレーションシップ|型|説明|
@@ -49,12 +49,12 @@
 
 ## <a name="json-representation"></a>JSON 表記
 以下は、リソースの JSON 表記です。
-<!-- {
+<!--{
   "blockType": "resource",
   "keyProperty": "id",
+  "baseType": "microsoft.graph.deviceCompliancePolicy",
   "@odata.type": "microsoft.graph.windows81CompliancePolicy"
-}
--->
+}-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.windows81CompliancePolicy",

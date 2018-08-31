@@ -19,7 +19,7 @@ POST /me/drive/root/workbook/worksheets/{id}/range/resizedRange(deltaRows={n}, d
 ## <a name="request-headers"></a>要求ヘッダー
 | 名前       | 説明|
 |:---------------|:----------|
-| Authorization  | ベアラー {トークン}。必須。 |
+| 承認  | ベアラー {トークン}。必須。 |
 | Workbook-Session-Id  | 変更を保持するかどうかを決定するブック セッション ID。省略可能。|
 
 ## <a name="parameters"></a>パラメーター
@@ -27,15 +27,7 @@ POST /me/drive/root/workbook/worksheets/{id}/range/resizedRange(deltaRows={n}, d
 | パラメーター    | 型   |説明|
 |:---------------|:--------|:----------|
 |deltaRows|Int32|現在の範囲を基準にして、右下隅を拡張する行の数です。範囲を拡張するには正の数値、または範囲を縮小するには負の数値を使用します|
-|deltaColumns|Int32|現在の範囲を基準にして、右下隅を拡張する列の数です。範囲を拡張するには正の数値、または範囲を縮小するには負の数値を使用します。|
-
-## <a name="request-body"></a>要求本文
-要求 URL に、次のクエリ パラメーターを値で指定します。
-
-| パラメーター    | 型   |説明|
-|:---------------|:--------|:----------|
-|deltaRows|Int32||
-|deltaColumns|Int32||
+|deltaColumns|Int32|現在の範囲を基準にして、右下隅を拡張する列の数です。 範囲を拡張するには正の数値を、縮小するには負の数値を使用します。|
 
 ### <a name="response"></a>応答
 成功した場合、このメソッドは `200 OK` 応答コードと、応答本文で [workbookRange](../resources/range.md) オブジェクトを返します。
@@ -44,12 +36,14 @@ POST /me/drive/root/workbook/worksheets/{id}/range/resizedRange(deltaRows={n}, d
 以下は、この API を呼び出す方法の例です。
 ##### <a name="request"></a>要求
 以下は、要求の例です。
-<!-- {
+<!--{
   "blockType": "request",
-  "name": "workbookrange_resizedrange"
+  "isComposable": true,
+  "name": "workbookrange_resizedrange",
+  "idempotent": true
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/drive/root/workbook/worksheets/{id}/range/resizedRange(deltarows={n}, deltaColumns={n})
+POST https://graph.microsoft.com/v1.0/me/drive/root/workbook/worksheets/{id}/range/resizedRange(deltaRows={n}, deltaColumns={n})
 ```
 
 ##### <a name="response"></a>応答
@@ -57,7 +51,7 @@ POST https://graph.microsoft.com/v1.0/drive/root/workbook/worksheets/{id}/range/
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.range"
+  "@odata.type": "microsoft.graph.workbookRange"
 } -->
 ```http
 HTTP/1.1 200 OK

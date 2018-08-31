@@ -1,18 +1,18 @@
 # <a name="ebookinstallsummary-resource-type"></a>eBookInstallSummary リソース タイプ
 
-> **注:**Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
+> **注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
 
 デバイスのブックのインストール要約のプロパティが含まれています。
 ## <a name="methods"></a>メソッド
 |メソッド|戻り値の型|説明|
 |:---|:---|:---|
-|[Get eBookInstallSummary](../api/intune_books_ebookinstallsummary_get.md)|[eBookInstallSummary](../resources/intune_books_ebookinstallsummary.md)|[eBookInstallSummary](../resources/intune_books_ebookinstallsummary.md) オブジェクトのプロパティとリレーションシップを読み取ります。|
-|[Update eBookInstallSummary](../api/intune_books_ebookinstallsummary_update.md)|[eBookInstallSummary](../resources/intune_books_ebookinstallsummary.md)|[eBookInstallSummary](../resources/intune_books_ebookinstallsummary.md) オブジェクトのプロパティを更新します。|
+|[eBookInstallSummary の取得](../api/intune_books_ebookinstallsummary_get.md)|[eBookInstallSummary](../resources/intune_books_ebookinstallsummary.md)|[eBookInstallSummary](../resources/intune_books_ebookinstallsummary.md) オブジェクトのプロパティとリレーションシップを読み取ります。|
+|[eBookInstallSummary の更新](../api/intune_books_ebookinstallsummary_update.md)|[eBookInstallSummary](../resources/intune_books_ebookinstallsummary.md)|[eBookInstallSummary](../resources/intune_books_ebookinstallsummary.md) オブジェクトのプロパティを更新します。|
 
 ## <a name="properties"></a>プロパティ
-|プロパティ|型|説明|
+|プロパティ|タイプ|説明|
 |:---|:---|:---|
-|id|String|エンティティのキー。|
+|ID|文字列|エンティティのキー。|
 |installedDeviceCount|Int32|このブックが正常にインストールされたデバイスの数。|
 |failedDeviceCount|Int32|このブックのインストールが失敗したデバイスの数。|
 |notInstalledDeviceCount|Int32|このブックがインストールされていないデバイスの数。|
@@ -24,12 +24,12 @@
 なし
 ## <a name="json-representation"></a>JSON 表記
 以下は、リソースの JSON 表記です。
-<!-- {
+<!--{
   "blockType": "resource",
   "keyProperty": "id",
+  "baseType": "microsoft.graph.entity",
   "@odata.type": "microsoft.graph.eBookInstallSummary"
-}
--->
+}-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.eBookInstallSummary",

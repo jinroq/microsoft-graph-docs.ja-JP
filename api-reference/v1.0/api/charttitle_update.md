@@ -13,26 +13,26 @@ charttitle オブジェクトのプロパティを更新します。
 ## <a name="http-request"></a>HTTP 要求
 <!-- { "blockType": "ignored" } -->
 ```http
-PATCH /workbook/worksheets/{id|name}/charts(<name>)/title
+PATCH /workbook/worksheets/{id|name}/charts/{name}/title
 ```
 ## <a name="optional-request-headers"></a>オプションの要求ヘッダー
 | 名前       | 説明|
 |:-----------|:-----------|
-| Authorization  | ベアラー {トークン}。必須。 |
-| Workbook-Session-Id  | 変更を保持するかどうかを決定するブック セッション ID。省略可能。|
+| 承認  | ベアラー {トークン}。必須。 |
+| ワークブック-セッション-ID  | 変更を保持するかどうかを決定するブック セッション ID。省略可能。|
 
 ## <a name="request-body"></a>要求本文
 要求本文で、更新する関連フィールドの値を指定します。要求本文に含まれない既存のプロパティは、以前の値のままになるか、他のプロパティ値の変化に基づいて再計算されます。最適なパフォーマンスを得るためには、変更されていない既存の値を含めないでください。
 
-| プロパティ     | 型   |説明|
+| プロパティ     | タイプ   |説明|
 |:---------------|:--------|:----------|
-|overlay|boolean|グラフのタイトルをグラフに重ねるかどうかを表すブール型の値。|
-|text|string|グラフのタイトルのテキストを表します。|
-|visible|boolean|ChartTitle オブジェクトを表示または非表示にするかを表すブール型の値。|
+|オーバーレイ|ブール値|グラフのタイトルをグラフに重ねるかどうかを表すブール型の値。|
+|テキスト|文字列|グラフのタイトルのテキストを表します。|
+|目に見える|ブール値|ChartTitle オブジェクトを表示または非表示にするかを表すブール型の値。|
 
 ## <a name="response"></a>応答
 
-成功した場合、このメソッドは `200 OK` 応答コードと、応答本文で、更新された [ChartTitle](../resources/charttitle.md) オブジェクトを返します。
+成功した場合、このメソッドは `200 OK` 応答コードと、応答本文で、更新された[アイコン](../resources/charttitle.md) オブジェクトを返します。
 ## <a name="example"></a>例
 ##### <a name="request"></a>要求
 以下は、要求の例です。
@@ -41,7 +41,7 @@ PATCH /workbook/worksheets/{id|name}/charts(<name>)/title
   "name": "update_charttitle"
 }-->
 ```http
-PATCH https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/{id|name}/charts(<name>)/title
+PATCH https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/{id|name}/charts/{name}/title
 Content-type: application/json
 Content-length: 64
 
@@ -56,7 +56,7 @@ Content-length: 64
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.chartTitle"
+  "@odata.type": "microsoft.graph.workbookChartTitle"
 } -->
 ```http
 HTTP/1.1 200 OK

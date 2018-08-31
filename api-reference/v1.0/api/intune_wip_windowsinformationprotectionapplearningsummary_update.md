@@ -1,6 +1,6 @@
 # <a name="update-windowsinformationprotectionapplearningsummary"></a>windowsInformationProtectionAppLearningSummary の更新
 
-> **注:**Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
+> **注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
 
 [windowsInformationProtectionAppLearningSummary](../resources/intune_wip_windowsinformationprotectionapplearningsummary.md) オブジェクトのプロパティを更新します。
 ## <a name="prerequisites"></a>前提条件
@@ -24,19 +24,19 @@ PATCH /deviceManagement/windowsInformationProtectionAppLearningSummaries/{window
 ## <a name="request-headers"></a>要求ヘッダー
 |ヘッダー|値|
 |:---|:---|
-|Authorization|ベアラー &lt;トークン&gt; が必要です。|
-|Accept|application/json|
+|承認|ベアラー &lt;トークン&gt; が必須。|
+|承諾|アプリケーション/json|
 
 ## <a name="request-body"></a>要求本文
 要求本文で、[windowsInformationProtectionAppLearningSummary](../resources/intune_wip_windowsinformationprotectionapplearningsummary.md) オブジェクトの JSON 表記を指定します。
 
 次の表に、[windowsInformationProtectionAppLearningSummary](../resources/intune_wip_windowsinformationprotectionapplearningsummary.md) の作成時に必要なプロパティを示します。
 
-|プロパティ|型|説明|
+|プロパティ|タイプ|説明|
 |:---|:---|:---|
-|id|String|WindowsInformationProtectionAppLearningSummary の一意識別子。|
-|applicationName|String|アプリケーション名|
-|applicationType|String|アプリケーションの種類。可能な値は、`universal`、`desktop` です。|
+|id|文字列|WindowsInformationProtectionAppLearningSummary の一意識別子。|
+|applicationName|文字列|アプリケーション名|
+|applicationType|[applicationType](../resources/intune_wip_applicationtype.md)|アプリケーション タイプ。 指定できる値は、`universal`、`desktop` です。|
 |deviceCount|Int32|デバイス数|
 
 

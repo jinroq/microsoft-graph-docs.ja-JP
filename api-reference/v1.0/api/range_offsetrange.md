@@ -13,24 +13,24 @@
 ## <a name="http-request"></a>HTTP 要求
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /workbook/names(<name>)/range/OffsetRange
-GET /workbook/worksheets/{id|name}/range(address='<address>')/OffsetRange
-GET /workbook/tables/{id|name}/columns/{id|name}/range/OffsetRange
+GET /workbook/names/{name}/range/offsetRange
+GET /workbook/worksheets/{id|name}/range(address='<address>')/offsetRange
+GET /workbook/tables/{id|name}/columns/{id|name}/range/offsetRange
 
 ```
 ## <a name="request-headers"></a>要求ヘッダー
 | 名前       | 説明|
 |:---------------|:----------|
-| Authorization  | ベアラー {トークン}。必須。 |
-| Workbook-Session-Id  | 変更を保持するかどうかを決定するブック セッション ID。省略可能。|
+| 承認  | ベアラー {トークン}。必須。 |
+| ブック セッション ID  | 変更を保持するかどうかを決定するブック セッション ID。省略可能。|
 
 ## <a name="request-body"></a>要求本文
 要求本文で、次のパラメーターを含む JSON オブジェクトを指定します。
 
-| パラメーター    | Type   |説明|
+| パラメーター    | 型   |説明|
 |:---------------|:--------|:----------|
-|rowOffset|number|範囲をオフセットする行数 (正、負、または 0)。正の値は下方向へのオフセットです。また、負の値は上方向へのオフセットです。|
-|columnOffset|number|範囲をオフセットする列数 (正、負、または 0)。正の値は右方向へのオフセットです。また、負の値は左方向へのオフセットです。|
+|rowOffset|Int32|範囲をオフセットする行数 (正、負、または 0)。正の値は下方向へのオフセットです。また、負の値は上方向へのオフセットです。|
+|columnOffset|Int32|範囲をオフセットする列数 (正、負、または 0)。正の値は右方向へのオフセットです。また、負の値は左方向へのオフセットです。|
 
 ## <a name="response"></a>応答
 
@@ -42,18 +42,17 @@ GET /workbook/tables/{id|name}/columns/{id|name}/range/OffsetRange
 以下は、要求の例です。
 <!-- {
   "blockType": "request",
+  "isComposable": true,
   "name": "range_offsetrange"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/names(<name>)/range/OffsetRange
+GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/names/{name}/range/offsetRange
 Content-type: application/json
 Content-length: 49
 
 {
-  "rowOffset": {
-  },
-  "columnOffset": {
-  }
+  "rowOffset": 3,
+  "columnOffset": 5
 }
 ```
 
@@ -62,7 +61,7 @@ Content-length: 49
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.range"
+  "@odata.type": "microsoft.graph.workbookRange"
 } -->
 ```http
 HTTP/1.1 200 OK

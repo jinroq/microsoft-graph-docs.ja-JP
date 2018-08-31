@@ -19,7 +19,7 @@ POST /workbook/worksheets/{id|name}/tables/add
 ## <a name="request-headers"></a>要求ヘッダー
 | 名前       | 説明|
 |:---------------|:----------|
-| Authorization  | ベアラー {トークン}。必須。 |
+| 承認  | ベアラー {トークン}。必須。 |
 | Workbook-Session-Id  | 変更を保持するかどうかを決定するブック セッション ID。省略可能。|
 
 ## <a name="request-body"></a>要求本文
@@ -33,7 +33,7 @@ POST /workbook/worksheets/{id|name}/tables/add
 
 ## <a name="response"></a>応答
 
-成功した場合、このメソッドは `201 Created` 応答コードと、応答本文で[テーブル](../resources/table.md) オブジェクトを返します。
+成功した場合、このメソッドは `201 Created` 応答コードと、応答本文で[WorkbookTable](../resources/table.md) オブジェクトを返します。
 
 ## <a name="example"></a>例
 ##### <a name="request"></a>要求
@@ -43,7 +43,7 @@ POST /workbook/worksheets/{id|name}/tables/add
   "name": "create_table_from_worksheet"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/{id|name}/tables/$/add
+POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/{id|name}/tables/{id}/add
 Content-type: application/json
 Content-length: 109
 
@@ -57,7 +57,7 @@ Content-length: 109
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.table"
+  "@odata.type": "microsoft.graph.workbookTable"
 } -->
 ```http
 HTTP/1.1 201 Created

@@ -7,14 +7,14 @@
 
 | メソッド           | 戻り値の型    |説明|
 |:---------------|:--------|:----------|
-|[Get ChartLineFormat](../api/chartlineformat_get.md) | [ChartLineFormat](chartlineformat.md) |chartLineFormat オブジェクトのプロパティと関係を読み取ります。|
-|[Update](../api/chartlineformat_update.md) | [ChartLineFormat](chartlineformat.md)    |ChartLineFormat オブジェクトを更新します。 |
+|[ChartLineFormat を取得する](../api/chartlineformat_get.md) | [WorkbookChartLineFormat](chartlineformat.md) |chartLineFormat オブジェクトのプロパティと関係を読み取ります。|
+|[更新](../api/chartlineformat_update.md) | [WorkbookChartLineFormat](chartlineformat.md) |ChartLineFormat オブジェクトを更新します。 |
 |[Clear](../api/chartlineformat_clear.md)|なし|グラフ要素の線の書式をクリアします。|
 
 ## <a name="properties"></a>プロパティ
-| プロパティ       | 型    |説明|
+| プロパティ     | タイプ   |説明|
 |:---------------|:--------|:----------|
-|color|string|グラフの線の色を表す HTML カラー コード。|
+|color|文字列|グラフの線の色を表す HTML カラー コード。|
 
 ## <a name="relationships"></a>関係
 なし
@@ -24,12 +24,11 @@
 
 以下は、リソースの JSON 表記です。
 
-<!-- {
+<!--{
   "blockType": "resource",
-  "optionalProperties": [
-
-  ],
-  "@odata.type": "microsoft.graph.chartLineFormat"
+  "baseType": "microsoft.graph.entity",
+  "optionalProperties": [],
+  "@odata.type": "microsoft.graph.workbookChartLineFormat"
 }-->
 
 ```json

@@ -18,16 +18,16 @@ POST /users/{id | userPrincipalName}/assignLicense
 ## <a name="request-headers"></a>要求ヘッダー
 | ヘッダー       | 値 |
 |:---------------|:--------|
-| Authorization  | ベアラー {トークン}。必須。  |
-| Content-Type  | application/json  |
+| 承認  | ベアラー {トークン}。必須。  |
+| コンテンツ-タイプ  | アプリケーション /json  |
 
 ## <a name="request-body"></a>要求本文
 要求本文で、次のパラメーターを含む JSON オブジェクトを指定します。
 
 | パラメーター    | 型   |説明|
 |:---------------|:--------|:----------|
-|addLicenses|AssignedLicense|追加するライセンスを指定する [assignedLicense](../resources/assignedlicense.md) オブジェクトのコレクションです。[assignedLicense](../resources/assignedlicense.md) オブジェクト上で **disabledPlans** プロパティを設定すると、ライセンスに関連付けられたプランを無効にできます。|
-|removeLicenses|Guid|削除するライセンスを識別する GUID のコレクションです。|
+|addLicenses|assignedLicense collection|追加するライセンスを指定する [assignedLicense](../resources/assignedlicense.md) オブジェクトのコレクションです。[assignedLicense](../resources/assignedlicense.md) オブジェクト上で **disabledPlans** プロパティを設定すると、ライセンスに関連付けられたプランを無効にできます。|
+|removeLicenses|Guid コレクション|削除するライセンスを識別する GUID のコレクションです。|
 
 ## <a name="response"></a>応答
 
@@ -50,7 +50,7 @@ Content-length: 185
   "addLicenses": [
     {
       "disabledPlans": [ "11b0131d-43c8-4bbb-b2c8-e80f9a50834a" ],
-      "skuId": "skuId-value"
+      "skuId": "guid"
     }
   ],
   "removeLicenses": [ "bea13e0c-3828-4daa-a392-28af7ff61a0f" ]
@@ -74,12 +74,12 @@ Content-length: 491
   "assignedLicenses": [
     {
       "disabledPlans": [ "11b0131d-43c8-4bbb-b2c8-e80f9a50834a" ],
-      "skuId": "skuId-value"
+      "skuId": "0118A350-71FC-4EC3-8F0C-6A1CB8867561"
     }
   ],
   "assignedPlans": [
     {
-      "assignedDateTime": "datetime-value",
+      "assignedDateTime": "2016-10-02T12:13:14Z",
       "capabilityStatus": "capabilityStatus-value",
       "service": "service-value",
       "servicePlanId": "bea13e0c-3828-4daa-a392-28af7ff61a0f"

@@ -4,10 +4,10 @@
 
 
 ## <a name="properties"></a>プロパティ
-| プロパティ     | 型   |説明|
+| プロパティ     | タイプ   |説明|
 |:---------------|:--------|:----------|
-|number|string|電話番号。|
-|種類|String|電話番号の種類。可能な値は、`home`、`business`、`mobile`、`other`、`assistant`、`homeFax`、`businessFax`、`otherFax`、`pager`、`radio` です。|
+|number|文字列|電話番号。|
+|type|phoneType|電話番号の種類。 指定できる値は、`home`、`business`、`mobile`、`other`、`assistant`、`homeFax`、`businessFax`、`otherFax`、`pager`、`radio` です。|
 
 ## <a name="json-representation"></a>JSON 表記
 

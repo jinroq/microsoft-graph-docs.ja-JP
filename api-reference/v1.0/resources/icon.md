@@ -7,14 +7,14 @@
 
 | メソッド           | 戻り値の型    |説明|
 |:---------------|:--------|:----------|
-|[アイコンを取得する](../api/icon_get.md) | [Icon](icon.md) |アイコン オブジェクトのプロパティと関係を読み取ります。|
-|[Update](../api/icon_update.md) | [Icon](icon.md)    |アイコン オブジェクトを更新します。 |
+|[アイコンを取得する](../api/icon_get.md) | [アイコン](icon.md) |アイコン オブジェクトのプロパティと関係を読み取ります。|
+|[更新する](../api/icon_update.md) | [アイコン](icon.md)  |アイコン オブジェクトを更新します。 |
 
 ## <a name="properties"></a>プロパティ
-| プロパティ       | 型    |説明|
+| プロパティ     | タイプ   |説明|
 |:---------------|:--------|:----------|
-|index|int|指定したセット内のアイコンのインデックスを表します。|
-|set|string|アイコンがその一部であるセットを表します。可能な値は、`Invalid`、`ThreeArrows`、`ThreeArrowsGray`、`ThreeFlags`、`ThreeTrafficLights1`、`ThreeTrafficLights2`、`ThreeSigns`、`ThreeSymbols`、`ThreeSymbols2`、`FourArrows`、`FourArrowsGray`、`FourRedToBlack`、`FourRating`、`FourTrafficLights`、`FiveArrows`、`FiveArrowsGray`、`FiveRating`、`FiveQuarters`、`ThreeStars`、`ThreeTriangles`、`FiveBoxes` です。|
+|インデックス|int|指定したセット内のアイコンのインデックスを表します。|
+|set|文字列|一部であるアイコンのセットを表します。 可能な値は、 `Invalid`、 `ThreeArrows`、 `ThreeArrowsGray`、 `ThreeFlags`、 `ThreeTrafficLights1`、 `ThreeTrafficLights2`、 `ThreeSigns`、 `ThreeSymbols`、 `ThreeSymbols2`、 `FourArrows`、 `FourArrowsGray`、 `FourRedToBlack`、 `FourRating`、 `FourTrafficLights`、 `FiveArrows`、 `FiveArrowsGray`、 `FiveRating`、 `FiveQuarters`、 `ThreeStars`, `ThreeTriangles`, `FiveBoxes`です。|
 
 ## <a name="relationships"></a>リレーションシップ
 なし
@@ -29,7 +29,7 @@
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.icon"
+  "@odata.type": "microsoft.graph.workbookIcon"
 }-->
 
 ```json

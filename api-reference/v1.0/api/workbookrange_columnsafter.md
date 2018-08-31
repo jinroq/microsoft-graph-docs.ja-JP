@@ -20,14 +20,14 @@ POST /me/drive/root/workbook/worksheets/{id}/range/columnsAfter(count=n)
 ## <a name="request-headers"></a>要求ヘッダー
 | 名前       | 説明|
 |:---------------|:----------|
-| Authorization  | ベアラー {トークン}。必須。 |
+| 承認  | ベアラー {トークン}。必須。 |
 | Workbook-Session-Id  | 変更を保持するかどうかを決定するブック セッション ID。省略可能。|
 
 ## <a name="parameters"></a>パラメーター
 
 | パラメーター    | 型   |説明|
 |:---------------|:--------|:----------|
-|count|Int32|結果の範囲に含める列の数です。通常、正の数値を使用して現在の範囲外に範囲を作成します。負の数値を使用して、現在の範囲内に範囲を作成することもできます。既定値は 1 です|
+|count|Int32|省略可能。 結果の範囲に含まれる列の数です。 通常、正の数値を使用して現在の範囲外に範囲を作成します。 負の数値を使用して、現在の範囲内に範囲を作成することもできます。 既定値は 1 です|
 
 ## <a name="request-body"></a>要求本文
 
@@ -38,12 +38,14 @@ POST /me/drive/root/workbook/worksheets/{id}/range/columnsAfter(count=n)
 以下は、この API を呼び出す方法の例です。
 ##### <a name="request"></a>要求
 以下は、要求の例です。
-<!-- {
+<!--{
   "blockType": "request",
-  "name": "workbookrange_columnsafter"
+  "isComposable": true,
+  "name": "workbookrange_columnsafter",
+  "idempotent": true
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/drive/root/workbook/worksheets/{id}/range/columnsAfter(count=2)
+POST https://graph.microsoft.com/v1.0/me/drive/root/workbook/worksheets/{id}/range/columnsAfter(count=2)
 ```
 
 ##### <a name="response"></a>応答
@@ -51,7 +53,7 @@ POST https://graph.microsoft.com/v1.0/drive/root/workbook/worksheets/{id}/range/
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.range"
+  "@odata.type": "microsoft.graph.workbookRange"
 } -->
 ```http
 HTTP/1.1 200 OK

@@ -23,8 +23,7 @@
 |アプリケーション | Mail.ReadWrite |
 
 ## <a name="http-request"></a>HTTP 要求
-<!-- { "blockType": "ignored" } -->
-ユーザーのメールボックス内の[メッセージ](../resources/message.md)の添付ファイル。
+<!-- { "blockType": "ignored" } --> ユーザーのメールボックス内の[メッセージ](../resources/message.md)の添付ファイル。
 ```http
 POST /me/messages/{id}/attachments
 POST /users/{id | userPrincipalName}/messages/{id}/attachments
@@ -42,7 +41,7 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/childFolders/{id}/messages
 ## <a name="request-headers"></a>要求ヘッダー
 | 名前       | 型 | 説明|
 |:---------------|:--------|:----------|
-| Authorization  | string  | ベアラー {トークン}。必須。 |
+| 承認  | 文字列  | ベアラー {トークン}。必須。 |
 | Content-Type | string  | エンティティ本文内のデータの性質です。必須。 |
 
 ## <a name="request-body"></a>要求本文
@@ -58,6 +57,7 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/childFolders/{id}/messages
 以下は、要求の例です。
 <!-- {
   "blockType": "request",
+  "sampleKeys": ["AAMkpsDRVK"],
   "name": "create_file_attachment_from_message"
 }-->
 ```http
@@ -68,7 +68,7 @@ Content-length: 142
 {
   "@odata.type": "#microsoft.graph.fileAttachment",
   "name": "smile",
-  "contentBytes": "R0lGODdhEAYEAA7"
+  "contentBytes": "base64R0lGODdhEAYEAA7"
 }
 ```
 
@@ -94,7 +94,7 @@ Content-length: 202
     "isInline": false,
     "contentId": null,
     "contentLocation": null,
-    "contentBytes": "R0lGODdhEAYEAA7"
+    "contentBytes": "base64R0lGODdhEAYEAA7"
 }
 
 ```
@@ -105,6 +105,7 @@ Content-length: 202
 以下は、要求の例です。
 <!-- {
   "blockType": "request",
+  "sampleKeys": ["AAMkpsDRVK"],
   "name": "create_item_attachment_from_message"
 }-->
 

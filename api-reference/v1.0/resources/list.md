@@ -3,11 +3,12 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/11/2017
 title: List
-ms.openlocfilehash: ba0c01ce1887a32bd8b671cf511104e9128b5efb
-ms.sourcegitcommit: 7aea7a97e36e6d146214de3a90fdbc71628aadba
+ms.openlocfilehash: 9fa1de406a3c4064ccb410b4b5b2df91b54a1bac
+ms.sourcegitcommit: abf4b739257e3ffd9d045f783ec595d846172590
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23268460"
 ---
 # <a name="list-resource"></a>List リソース
 
@@ -20,7 +21,7 @@ list リソースで使用可能なタスクを次に示します。
 **注:** このベータ版では、リスト上の移動だけが可能であり、リストの作成や更新はできません。
 ただし、[リスト アイテム]の [listItem] の作成または更新は可能です。
 
-以下のすべての例は、`https://graph.microsoft.com/beta/sites/{site-id}` などのサイトからの相対指定です。
+以下のすべての例は、`https://graph.microsoft.com/v1.0/sites/{site-id}` などのサイトからの相対指定です。
 
 | 共通タスク               | HTTP メソッド
 |:--------------------------|:------------------------------
@@ -40,10 +41,16 @@ list リソースで使用可能なタスクを次に示します。
 
 以下は、**list** リソースの JSON 表記です。
 
-<!-- { "blockType": "resource", 
-       "@odata.type": "microsoft.graph.list",
-       "keyProperty": "id", 
-       "optionalProperties": [ "items", "drive"] } -->
+<!--{
+  "blockType": "resource",
+  "optionalProperties": [
+    "items",
+    "drive"
+  ],
+  "keyProperty": "id",
+  "baseType": "microsoft.graph.baseItem",
+  "@odata.type": "microsoft.graph.list"
+}-->
 
 ```json
 {
@@ -55,7 +62,7 @@ list リソースで使用可能なタスクを次に示します。
   "list": {
     "@odata.type": "microsoft.graph.listInfo",
     "hidden": false,
-    "template": "documentLibrary | genericList | survey | links | announcements | contacts ..."
+    "template": "documentLibrary | genericList | survey | links | announcements | contacts | accessRequest ..."
   },
   "system": false,
 
@@ -68,6 +75,8 @@ list リソースで使用可能なタスクを次に示します。
   "eTag": "string",
   "lastModifiedBy": { "@odata.type": "microsoft.graph.identitySet" },
   "lastModifiedDateTime": "timestamp",
+  "parentReference": { "@odata.type": "microsoft.graph.itemReference" },
+  "sharepointIds": { "@odata.type": "microsoft.graph.sharepointIds" },
   "webUrl": "url to visit the list in a browser"
 }
 ```
@@ -76,35 +85,38 @@ list リソースで使用可能なタスクを次に示します。
 
 **list** リソースには以下のプロパティがあります。
 
-| プロパティ名    | 種類                             | 説明
+| プロパティ名    | 型                             | 説明
 |:-----------------|:---------------------------------|:---------------------------
-| **columns**      | Collection([columnDefinition][]) | このリストのフィールド定義のコレクションです。
-| **contentTypes** | Collection([contentType][])      | このリスト内に存在するコンテンツ タイプのコレクションです。
-| **displayName**  | string                           | リストの表示可能なタイトルです。
+| **displayName**  | 文字列                           | リストの表示可能なタイトルです。
 | **list**         | [listInfo][]                     | リストに関する追加の詳細を示します。
 | **system**       | [systemFacet][]                  | 存在する場合は、これがシステム管理のリストであることを示しています。 読み取り専用です。
 
 次のプロパティは、**[baseItem][]** から継承しています。
 
-| プロパティ名            | 種類             | 説明
-|:-------------------------|:-----------------|:-------------------------------
-| **id**                   | string           | アイテムの一意識別子。読み取り専用です。
-| **name**                 | string           | アイテムの名前。
-| **createdBy**            | [identitySet][]  | このアイテムの作成者の ID です。 読み取り専用です。
-| **createdDateTime**      | DateTimeOffset   | アイテムが作成された日時。読み取り専用です。
-| **説明**          | string           | アイテムの説明テキストです。
-| **lastModifiedBy**       | [identitySet][]  | このアイテムの最終変更者の ID です。 読み取り専用です。
-| **lastModifiedDateTime** | DateTimeOffset   | アイテムが最後に変更された日時。読み取り専用です。
-| **webUrl**               | string (URL)     | ブラウザーでアイテムを表示する URL。読み取り専用です。
+| プロパティ名            | 型              | 説明
+|:-------------------------|:------------------|:------------------------------
+| **id**                   | 文字列            | アイテムの一意識別子。読み取り専用です。
+| **name**                 | 文字列            | アイテムの名前。
+| **createdBy**            | [identitySet][]   | このアイテムの作成者の ID です。 読み取り専用です。
+| **createdDateTime**      | DateTimeOffset    | アイテムが作成された日時。読み取り専用です。
+| **説明**          | 文字列            | アイテムの説明テキストです。
+| **eTag**                 | 文字列            | アイテムの ETag。読み取り専用です。                                                          |
+| **lastModifiedBy**       | [identitySet][]   | このアイテムの最終変更者の ID です。 読み取り専用です。
+| **lastModifiedDateTime** | DateTimeOffset    | アイテムが最後に変更された日時。読み取り専用です。
+| **parentReference**      | [itemReference][] | 親の情報 (アイテムに親がある場合)。読み取り/書き込み。
+| **sharepointIds**        | [sharepointIds][] | SharePoint REST 互換性に役立つ識別子を返します。読み取り専用です。
+| **webUrl**               | string (URL)      | ブラウザーでアイテムを表示する URL。読み取り専用です。
 
 ## <a name="relationships"></a>リレーションシップ
 
 **list** リソースには、他のリソースと次のような関係があります。
 
-| リレーションシップ名 | 種類                        | 説明
-|:------------------|:----------------------------|:------------------------------
-| **ドライブ**         | [drive][]                   | ドキュメント ライブラリにのみ存在します。 [driveItems][driveItem] を含む [drive][] リソースとしてリストにアクセスできます。
-| **items**         | Collection([listItem][])    | リストに含まれているすべてのアイテム。
+| リレーションシップ名 | 種類                             | 説明
+|:------------------|:---------------------------------|:----------------------
+| **ドライブ**         | [drive][]                        | ドキュメント ライブラリにのみ存在します。 [driveItems][driveItem] を含む [drive][] リソースとしてリストにアクセスできます。
+| **items**         | Collection([listItem][])         | リストに含まれているすべてのアイテム。
+| **columns**       | Collection([columnDefinition][]) | このリストのフィールド定義のコレクションです。
+| **contentTypes**  | Collection([contentType][])      | このリスト内に存在するコンテンツ タイプのコレクションです。
 
 [baseItem]: baseItem.md
 [contentType]: contentType.md
@@ -112,8 +124,10 @@ list リソースで使用可能なタスクを次に示します。
 [driveItem]: driveItem.md
 [columnDefinition]: columnDefinition.md
 [identitySet]: identitySet.md
+[itemReference]: itemreference.md
 [listInfo]: listInfo.md
 [listItem]: listItem.md
+[sharepointIds]: sharepointIds.md
 [site]: site.md
 [systemFacet]: systemFacet.md
 

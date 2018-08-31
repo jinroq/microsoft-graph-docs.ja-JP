@@ -2,28 +2,36 @@
 author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
-title: Permission
-ms.openlocfilehash: 9f73684d51ab4cee047219e142f72edf778cb171
-ms.sourcegitcommit: 7aea7a97e36e6d146214de3a90fdbc71628aadba
+title: アクセス許可
+ms.openlocfilehash: 4c39722653cd61f5d58a4de5b317cb3a1a9afb9d
+ms.sourcegitcommit: abf4b739257e3ffd9d045f783ec595d846172590
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23269615"
 ---
-# <a name="permission-resource-type"></a>Permission リソース型
+# <a name="permission-resource-type"></a>permission リソースの種類
 
-**Permission** リソースは、[DriveItem](driveitem.md) リソースに付与された共有アクセス許可についての情報を提供します。
+**permission** リソースは、[DriveItem](driveitem.md) リソースに付与された共有アクセス許可についての情報を提供します。
 
 共有アクセス許可にはさまざまなフォームがあります。
-**Permission** リソースは、これらのさまざまなフォームをリソースのファセットを通じて表します。
+**permission** リソースは、これらの異なるフォームをリソースのファセットを通じて表します。
 
 ## <a name="json-representation"></a>JSON 表記
 
 以下は、リソースの JSON 表記です
 
-<!-- {
+<!--{
   "blockType": "resource",
-  "optionalProperties": [ "link", "grantedTo", "invitation", "inheritedFrom", "shareId" ],
+  "optionalProperties": [
+    "link",
+    "grantedTo",
+    "invitation",
+    "inheritedFrom",
+    "shareId"
+  ],
   "keyProperty": "id",
+  "baseType": "microsoft.graph.entity",
   "@odata.type": "microsoft.graph.permission"
 }-->
 ```json
@@ -42,13 +50,13 @@ ms.lasthandoff: 09/28/2017
 
 | プロパティ      | 型                                      | 説明
 |:--------------|:------------------------------------------|:-----------------
-| id            | String                                    | 項目の全アクセス許可の中の、アクセス許可の一意の識別子です。読み取り専用。
+| ID            | 文字列                                    | 項目の全アクセス許可の中の、アクセス許可の一意の識別子です。読み取り専用。
 | grantedTo     | [IdentitySet](identityset.md)             | ユーザー タイプのアクセス許可、ユーザーとこのアクセス許可のアプリケーションの詳細。読み取り専用。
 | invitation    | [SharingInvitation][]                     | このアクセス許可に任意に関連付けられた共有招待状の詳細情報です。読み取り専用。
 | inheritedFrom | [ItemReference](itemreference.md)         | 現在のアクセス許可が先祖から継承されている場合、その先祖への参照を提供します。読み取り専用。
-| link          | [SharingLink][]                           | 現在のアクセス許可がリンク タイプのアクセス許可である場合は、そのリンクの詳細を提供します。読み取り専用。
-| role          | Collection of String                      | `read` など、アクセス許可の種類。ロールの完全なリストは以下を参照してください。読み取り専用。
-| shareId       | String                                    | [**共有** API](../api/shares_get.md) 経由で、この共有項目にアクセスするために使用できる一意のトークン。読み取り専用です。
+| リンク          | [SharingLink][]                           | 現在のアクセス許可がリンク タイプのアクセス許可である場合は、そのリンクの詳細を提供します。読み取り専用。
+| roles         | 文字列のコレクション                      | など、アクセス許可の種類。ロールの完全なリストは以下を参照してください。読み取り専用。`read`
+| shareId       | 文字列                                    | [**共有** API](../api/shares_get.md) 経由で、この共有項目にアクセスするために使用できる一意のトークン。読み取り専用です。
 
 permission リソースは、_ファセット_ を使用して、リソースによって表されるアクセス許可の種類に関する情報を提供します。
 
@@ -149,7 +157,7 @@ permission リソースは、_ファセット_ を使用して、リソースに
 
 ## <a name="methods"></a>メソッド
 
-| Method                                                   | REST パス
+| メソッド                                                   | REST パス
 |:---------------------------------------------------------|:-----------------------
 | [アクセス許可を一覧表示する](../api/driveitem_list_permissions.md) | `GET /drive/items/{item-id}/permissions`
 | [アクセス許可を取得する](../api/permission_get.md)               | `GET /drive/items/{item-id}/permissions/{id}`

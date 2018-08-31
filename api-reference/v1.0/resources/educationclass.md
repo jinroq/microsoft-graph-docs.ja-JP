@@ -7,32 +7,32 @@
 
 | メソッド           | 戻り値の型    |説明|
 |:---------------|:--------|:----------|
-|[Get educationClass](../api/educationclass_get.md) | [educationClass](educationclass.md) |**educationClass** オブジェクトのプロパティとリレーションシップを読み取ります。|
-|[Add member](../api/educationclass_post_members.md) |[educationUser](educationuser.md)| members ナビゲーション プロパティに投稿することで、クラスの新しい **educationUser** を追加します。|
-|[List members](../api/educationclass_list_members.md) |[educationUser](educationuser.md) コレクション| **educationUser** オブジェクト コレクションを取得します。|
-|[Remove student](../api/educationclass_delete_members.md) |[educationUser](educationuser.md)| members ナビゲーション プロパティによって、クラスから **educationUser** を削除します。|
-|[List schools](../api/educationclass_list_schools.md) |[educationSchool](educationschool.md) コレクション| **educationSchool** オブジェクト コレクションを取得します。|
-|[Add teacher](../api/educationclass_post_teachers.md) |[educationUser](educationuser.md)| teachers ナビゲーション プロパティに投稿することで、クラスの新しい **educationUser** を追加します。|
-|[List teachers](../api/educationclass_list_teachers.md) |[educationUser](educationuser.md) コレクション| クラスの教師一覧を取得します。|
-|[Remove teacher](../api/educationclass_delete_teachers.md) |[educationUser](educationuser.md)| teachers ナビゲーション プロパティによって、クラスから **educationUser** を削除します。|
-|[Get group](../api/educationclass_get_group.md) |[group](group.md)| この **educationClass** に対応する Office 365 **group**を取得します。|
-|[Update](../api/educationclass_update.md) | [educationClass](educationclass.md)    |**educationClass** オブジェクトを更新します。 |
-|[Delete](../api/educationclass_delete.md) | なし |**educationClass** オブジェクトを削除します。 |
+|[educationClass を取得
+](../api/educationclass_get.md) | [educationClass](educationclass.md) |**educationClass** オブジェクトのプロパティとリレーションシップを読み取ります。|
+|[メンバーを追加する](../api/educationclass_post_members.md) |[educationUser](educationuser.md)| members ナビゲーション プロパティに投稿することで、クラスの新しい **educationUser** を追加します。|
+|[メンバーをリストする](../api/educationclass_list_members.md) |[educationUser](educationuser.md) コレクション| **educationUser** オブジェクト コレクションを取得します。|
+|[学生を削除する](../api/educationclass_delete_members.md) |[educationUser](educationuser.md)| members ナビゲーション プロパティによって、クラスから **educationUser** を削除します。|
+|[学校をリスト](../api/educationclass_list_schools.md) |[educationSchool](educationschool.md) コレクション| **educationSchool** オブジェクト コレクションを取得します。|
+|[教師の追加](../api/educationclass_post_teachers.md) |[educationUser](educationuser.md)| teachers ナビゲーション プロパティに投稿することで、クラスの新しい **educationUser** を追加します。|
+|[教師をリスト](../api/educationclass_list_teachers.md) |[educationUser](educationuser.md) コレクション| クラスの教師一覧を取得します。|
+|[教師を削除](../api/educationclass_delete_teachers.md) |[educationUser](educationuser.md)| teachers ナビゲーション プロパティによって、クラスから **educationUser** を削除します。|
+|[グループを取得](../api/educationclass_get_group.md) |[group](group.md)| この **educationClass** に対応する Office 365 **group**を取得します。|
+|[更新](../api/educationclass_update.md) | [educationClass](educationclass.md)    |**educationClass** オブジェクトを更新します。 |
+|[削除](../api/educationclass_delete.md) | なし |**educationClass** オブジェクトを削除します。 |
 
 ## <a name="properties"></a>プロパティ
-| プロパティ     | 型   |説明|
+| プロパティ     | タイプ   |説明|
 |:---------------|:--------|:----------|
-|id| String| クラスの一意の識別子。|
-|description|String| クラスの説明。|
-|displayName|String| クラスの名前。|
-|mailNickname|String| すべてのメンバーに電子メールを送信する際のメール名 (この機能が有効な場合)。 |
+|id| 文字列| クラスの一意の識別子。|
+|説明|文字列| クラスの説明。|
+|displayName|文字列| クラスの名前。|
+|mailNickname|文字列| すべてのメンバーに電子メールを送信する際のメール名 (この機能が有効な場合)。 |
 |createdBy|[identitySet](identityset.md)| クラスを作成したエンティティ。 |
-|classCode|String| クラスを識別するために学校が使用するクラス コード。|
-|externalId|String| 同期システムからのクラスの ID。 |
-|externalName|String|同期システムからのクラスの名前。|
-|externalSource|string| このクラスの作成方法。 使用可能な値: `sis`、`manual`、`unknownFutureValue`。|
+|classCode|文字列| クラスを識別するために学校が使用するクラス コード。|
+|externalId|文字列| 同期システムからのクラスの ID。 |
+|externalName|文字列|同期システムからのクラスの名前。|
+|externalSource|educationExternalSource| このクラスの作成方法。 可能な値は、 `sis`、`manual`、`unknownFutureValue` です。|
 |term|[educationTerm](educationterm.md)|このクラスの学期。|
-
 
 ## <a name="relationships"></a>リレーションシップ
 | リレーションシップ | 型   |説明|
@@ -40,16 +40,17 @@
 |members|[educationUser](../resources/educationuser.md) コレクション| クラスのすべてのユーザー。 Null 許容型。|
 |schools|[educationSchool](../resources/educationschool.md) コレクション| このクラスに関連付けられているすべての学校。 Null 許容型。|
 |teachers|[educationUser](../resources/educationuser.md) コレクション|  このクラスのすべての教師。 Null 許容型。|
+|group|[group](../resources/group.md)| このクラスに対応するディレクトリのグループです。|
 
 ## <a name="json-representation"></a>JSON 表記
 
 リソースの JSON 表記を次に示します。
 
-<!-- {
+<!--{
   "blockType": "resource",
-  "optionalProperties": [
-
-  ],
+  "optionalProperties": [],
+  "keyProperty": "id",
+  "baseType": "microsoft.graph.entity",
   "@odata.type": "microsoft.graph.educationClass"
 }-->
 
@@ -64,7 +65,7 @@
   "externalName": "String",
   "externalSource": "string",
   "mailNickname": "String",
-  "term": {"@odata.type": "microsoft.graph.education.term"}
+  "term": {"@odata.type": "microsoft.graph.educationTerm"}
 }
 
 ```

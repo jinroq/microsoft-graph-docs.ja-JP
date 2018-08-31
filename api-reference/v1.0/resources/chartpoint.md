@@ -7,35 +7,37 @@
 
 | メソッド           | 戻り値の型    |説明|
 |:---------------|:--------|:----------|
-|[Get ChartPoint](../api/chartpoint_get.md) | [ChartPoint](chartpoint.md) |chartPoint オブジェクトのプロパティと関係を読み取ります。|
-|[List](../api/chartpoint_list.md) | [ChartPoint](chartpoint.md) コレクション |chartPoint オブジェクトのコレクションを取得します。 |
-|[Itemat](../api/chartpointscollection_itemat.md)|[ChartPoint](chartpoint.md)|データ系列内の位置に基づくポイントを取得します。|
+|[ChartPoint の取得](../api/chartpoint_get.md) | [WorkbookChartPoint](chartpoint.md) |chartPoint オブジェクトのプロパティと関係を読み取ります。|
+|[List](../api/chartpoint_list.md) | [WorkbookChartPoint](chartpoint.md) コレクション |chartPoint オブジェクトのコレクションを取得します。 |
+|[Itemat](../api/chartpointscollection_itemat.md)|[WorkbookChartPoint](chartpoint.md)|データ系列内の位置に基づくポイントを取得します。|
 
 ## <a name="properties"></a>プロパティ
-| プロパティ       | 型    |説明|
+| プロパティ     | タイプ   |説明|
 |:---------------|:--------|:----------|
-|value|object|グラフのポイントの値を返します。値の取得のみ可能です。|
+|値|Json|グラフのポイントの値を返します。読み取り専用。|
+|ID|文字列|一意識別子|
 
-## <a name="relationships"></a>関係
-| リレーションシップ | 型    |説明|
+## <a name="relationships"></a>リレーションシップ
+| リレーションシップ | 型   |説明|
 |:---------------|:--------|:----------|
-|format|[ChartPointFormat](chartpointformat.md)|グラフのポイントの書式設定プロパティをカプセル化します。値の取得のみ可能です。|
+|format|[WorkbookChartPointFormat](chartpointformat.md)|グラフのポイントの書式設定プロパティをカプセル化します。値の取得のみ可能です。|
 
 ## <a name="json-representation"></a>JSON 表記
 
 以下は、リソースの JSON 表記です。
 
-<!-- {
+<!--{
   "blockType": "resource",
-  "optionalProperties": [
-
-  ],
-  "@odata.type": "microsoft.graph.chartPoint"
+  "optionalProperties": [],
+  "keyProperty": "id",
+  "baseType": "microsoft.graph.entity",
+  "@odata.type": "microsoft.graph.workbookChartPoint"
 }-->
 
 ```json
 {
-  "value": "string"
+  "value": "string",
+  "id": "string"
 }
 
 ```

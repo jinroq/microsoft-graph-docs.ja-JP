@@ -1,6 +1,6 @@
 # <a name="mobileapp-resource-type"></a>mobileApp リソースの種類
 
-> **注:**Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
+> **注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
 
 Intune モバイル アプリの基本プロパティを含む抽象クラスです。
 ## <a name="methods"></a>メソッド
@@ -11,24 +11,24 @@ Intune モバイル アプリの基本プロパティを含む抽象クラスで
 |[アクションの割り当て](../api/intune_apps_mobileapp_assign.md)|なし|まだ文書化されていません|
 
 ## <a name="properties"></a>プロパティ
-|プロパティ|型|説明|
+|プロパティ|タイプ|説明|
 |:---|:---|:---|
-|id|String|エンティティのキー。|
-|displayName|String|管理者が提供またはインポートしたアプリのタイトルです。|
-|description|String|アプリの説明。|
-|publisher|String|アプリの発行元。|
-|largeIcon|[mimeContent](../resources/intune_apps_mimecontent.md)|アプリの詳細に表示され、アイコンのアップロードに使用される大きいアイコン。|
+|ID|文字列|エンティティのキー。|
+|displayName|文字列|管理者が提供またはインポートしたアプリのタイトルです。|
+|説明|文字列|アプリの説明。|
+|publisher|文字列|アプリの発行元。|
+|largeIcon|[mimeContent](../resources/intune_shared_mimecontent.md)|アプリの詳細に表示され、アイコンのアップロードに使用される大きいアイコン。|
 |createdDateTime|DateTimeOffset|アプリが作成された日時。|
 |lastModifiedDateTime|DateTimeOffset|アプリが最後に変更された日時。|
-|isFeatured|Boolean|アプリが管理者のおすすめとしてマークされたかどうかを示す値。|
-|privacyInformationUrl|String|プライバシーに関する声明の URL。|
-|informationUrl|String|詳細情報の URL。|
-|owner|String|アプリの所有者。|
-|developer|String|アプリの開発者。|
-|notes|String|アプリ用のメモ。|
-|publishingState|String|アプリの発行の状態。 アプリが発行されていない限り、アプリを割り当てることができません。 可能な値は、`notPublished`、`processing`、`published` です。|
+|isFeatured|ブール値|アプリが管理者のおすすめとしてマークされたかどうかを示す値。|
+|privacyInformationUrl|文字列|プライバシーに関する声明の URL。|
+|informationUrl|文字列|詳細情報の URL。|
+|owner|文字列|アプリの所有者。|
+|developer|文字列|アプリの開発者。|
+|notes|文字列|アプリ用のメモ。|
+|publishingState|[mobileAppPublishingState](../resources/intune_apps_mobileapppublishingstate.md)|アプリの発行の状態。 アプリが発行されていない限り、アプリを割り当てることができません。 可能な値は、 `notPublished`、`processing`、`published` です。|
 
-## <a name="relationships"></a>関係
+## <a name="relationships"></a>リレーションシップ
 |リレーションシップ|型|説明|
 |:---|:---|:---|
 |categories|[mobileAppCategory](../resources/intune_apps_mobileappcategory.md) コレクション|このアプリのカテゴリのリストです。|
@@ -36,12 +36,13 @@ Intune モバイル アプリの基本プロパティを含む抽象クラスで
 
 ## <a name="json-representation"></a>JSON 表記
 以下は、リソースの JSON 表記です。
-<!-- {
+<!--{
   "blockType": "resource",
+  "abstract": true,
   "keyProperty": "id",
+  "baseType": "microsoft.graph.entity",
   "@odata.type": "microsoft.graph.mobileApp"
-}
--->
+}-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.mobileApp",

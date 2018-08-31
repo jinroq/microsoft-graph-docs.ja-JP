@@ -7,16 +7,16 @@
 
 | メソッド           | 戻り値の型    |説明|
 |:---------------|:--------|:----------|
-|[Get plannerTaskDetails](../api/plannertaskdetails_get.md) | [plannerTaskDetails](plannertaskdetails.md) |**plannerTaskDetails** オブジェクトのプロパティとリレーションシップを読み取ります。|
-|[Update](../api/plannertaskdetails_update.md) | [plannerTaskDetails](plannertaskdetails.md)    |**plannerTaskDetails** オブジェクトを更新します。 |
+|[plannerTaskDetails を取得](../api/plannertaskdetails_get.md) | [plannerTaskDetails](plannertaskdetails.md) |**plannerTaskDetails** オブジェクトのプロパティとリレーションシップを読み取ります。|
+|[更新](../api/plannertaskdetails_update.md) | [plannerTaskDetails](plannertaskdetails.md)    |**plannerTaskDetails** オブジェクトを更新します。 |
 
 ## <a name="properties"></a>プロパティ
-| プロパティ     | 型   |説明|
+| プロパティ     | タイプ   |説明|
 |:---------------|:--------|:----------|
 |checklist|[plannerChecklistItems](plannerchecklistitems.md)|タスク上のチェックリスト項目のコレクション。|
-|description|String|タスクの説明|
-|id|String| 読み取り専用です。タスクの詳細の ID。28 文字長で、大文字と小文字の区別があります。[書式検証](planner_identifiers_disclaimer.md)はサービスによって行われます。|
-|previewType|string|タスクに表示されるプレビューの種類を設定します。使用可能な値: `automatic`、`noPreview`、`checklist`、`description`、`reference`。`automatic` に設定すると、タスクを表示しているアプリによって表示するプレビューが選択されます。|
+|説明|文字列|タスクの説明|
+|id|文字列| 読み取り専用。 タスクの詳細の ID です。 28 文字で大文字小文字を区別します。 サービスの[フォーマットの検証](planner_identifiers_disclaimer.md) が行われます。|
+|previewType|文字列|タスクに表示されるプレビューの種類を設定します。 可能な値は、`automatic`、`noPreview`、`checklist`、`description`、`reference` です。 `automatic` に設定されている場合、表示されるプレビューは、タスクを表示するアプリによって選択されます。|
 |references|[plannerExternalReferences](plannerexternalreferences.md)|タスク上の参照のコレクションです。|
 
 ## <a name="relationships"></a>リレーションシップ
@@ -26,11 +26,10 @@
 ## <a name="json-representation"></a>JSON 表記
 以下は、リソースの JSON 表記です。
 
-<!-- {
+<!--{
   "blockType": "resource",
-  "optionalProperties": [
-
-  ],
+  "optionalProperties": [],
+  "baseType": "microsoft.graph.entity",
   "@odata.type": "microsoft.graph.plannerTaskDetails"
 }-->
 

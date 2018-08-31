@@ -1,6 +1,6 @@
-# <a name="create-windowsinformationprotectionpolicy"></a>Create windowsInformationProtectionPolicy
+# <a name="create-windowsinformationprotectionpolicy"></a>windowsInformationProtectionPolicy を作成する
 
-> **注:**Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
+> **注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
 
 新しい [windowsInformationProtectionPolicy](../resources/intune_mam_windowsinformationprotectionpolicy.md) オブジェクトを作成します。
 ## <a name="prerequisites"></a>前提条件
@@ -8,7 +8,7 @@
 
 |アクセス許可の種類|アクセス許可 (特権の大きいものから小さいものへ)|
 |:---|:---|
-|委任 (職場または学校アカウント)|DeviceManagementApps.ReadWrite.All|
+|委任 (職場または学校のアカウント)|DeviceManagementApps.ReadWrite.All|
 |委任 (個人用 Microsoft アカウント)|サポートされていません。|
 |アプリケーション|サポートされていません。|
 
@@ -24,29 +24,29 @@ POST /deviceAppManagement/windowsInformationProtectionPolicies
 ## <a name="request-headers"></a>要求ヘッダー
 |ヘッダー|値|
 |:---|:---|
-|Authorization|ベアラー &lt;トークン&gt; が必須。|
-|Accept|application/json|
+|承認|ベアラー &lt;トークン&gt; が必須。|
+|承諾|application/json|
 
 ## <a name="request-body"></a>要求本文
 要求の本文に、windowsInformationProtectionPolicy オブジェクトの JSON 表現を指定します。
 
 次の表に、windowsInformationProtectionPolicy の作成時に必要なプロパティを示します。
 
-|プロパティ|型|説明|
+|プロパティ|タイプ|説明|
 |:---|:---|:---|
 |displayName|String|ポリシーの表示名。 [managedAppPolicy](../resources/intune_mam_managedapppolicy.md) から継承します|
-|description|String|ポリシーの説明。 [managedAppPolicy](../resources/intune_mam_managedapppolicy.md) から継承します|
+|説明|String|ポリシーの説明。 [managedAppPolicy](../resources/intune_mam_managedapppolicy.md) から継承します|
 |createdDateTime|DateTimeOffset|ポリシーが作成された日時。 [managedAppPolicy](../resources/intune_mam_managedapppolicy.md) から継承します|
 |lastModifiedDateTime|DateTimeOffset|ポリシーが変更された最終日時。 [managedAppPolicy](../resources/intune_mam_managedapppolicy.md) から継承します|
-|id|String|エンティティのキー。 [managedAppPolicy](../resources/intune_mam_managedapppolicy.md) から継承します|
+|id|文字列|エンティティのキー。 [managedAppPolicy](../resources/intune_mam_managedapppolicy.md) から継承します|
 |version|String|エンティティのバージョン。 [managedAppPolicy](../resources/intune_mam_managedapppolicy.md) から継承します|
-|enforcementLevel|String|WIP の実施レベル。サポートされている値の Enum 定義を参照してください ([windowsInformationProtection](../resources/intune_mam_windowsinformationprotection.md) から継承。可能な値: `noProtection`、`encryptAndAuditOnly`、`encryptAuditAndPrompt`、`encryptAuditAndBlock`)。|
+|enforcementLevel|[windowsInformationProtectionEnforcementLevel](../resources/intune_mam_windowsinformationprotectionenforcementlevel.md)|WIP の適用レベルです。 [WindowsInformationProtection](../resources/intune_mam_windowsinformationprotection.md) から継承されるサポートされた値については、列挙型の定義を参照してください。 可能な値は、`noProtection`、`encryptAndAuditOnly`、`encryptAuditAndPrompt`、`encryptAuditAndBlock` です。|
 |enterpriseDomain|String|プライマリ エンタープライズ ドメイン ([windowsInformationProtection](../resources/intune_mam_windowsinformationprotection.md) から継承)|
 |enterpriseProtectedDomainNames|[windowsInformationProtectionResourceCollection](../resources/intune_mam_windowsinformationprotectionresourcecollection.md) コレクション|保護するエンタープライズ ドメインのリスト ([windowsInformationProtection](../resources/intune_mam_windowsinformationprotection.md) から継承)|
 |protectionUnderLockConfigRequired|Boolean|ロック機能による保護 (pin での暗号化) を構成するかどうかを指定します ([windowsInformationProtection](../resources/intune_mam_windowsinformationprotection.md) から継承)|
 |dataRecoveryCertificate|[windowsInformationProtectionDataRecoveryCertificate](../resources/intune_mam_windowsinformationprotectiondatarecoverycertificate.md)|暗号化されたファイルのデータ回復に使用できる回復証明書を指定します。 これは、暗号化ファイル システム (EFS) のデータ回復エージェント (DRA) 証明書と同じです ([windowsInformationProtection](../resources/intune_mam_windowsinformationprotection.md) から継承)|
 |revokeOnUnenrollDisabled|Boolean|このポリシーは、デバイスが管理サービスから登録を解除するときに WIP キーを取り消すかどうかを制御します。 1 (キーの取り消しをしない) に設定すると、キーは取り消されず、ユーザーは登録解除後も引き続き保護されたファイルにアクセスできます。 キーが取り消されない場合は、その後、取り消されたファイルのクリーンアップは行われません。 [windowsInformationProtection](../resources/intune_mam_windowsinformationprotection.md) から継承します|
-|rightsManagementServicesTemplateId|GUID|RMS の暗号化に使用する TemplateID GUID。 RMS テンプレートを使用すると、IT 管理者は、RMS で保護されたファイルにアクセスできるユーザーの詳細とアクセスできる期間の詳細を構成することができます ([windowsInformationProtection](../resources/intune_mam_windowsinformationprotection.md) から継承)|
+|rightsManagementServicesTemplateId|Guid|RMS の暗号化に使用する TemplateID GUID。 RMS テンプレートを使用すると、IT 管理者は、RMS で保護されたファイルにアクセスできるユーザーの詳細とアクセスできる期間の詳細を構成することができます ([windowsInformationProtection](../resources/intune_mam_windowsinformationprotection.md) から継承)|
 |azureRightsManagementServicesAllowed|Boolean|WIP 用の Azure RMS の暗号化を許可するかどうかを指定します ([windowsInformationProtection](../resources/intune_mam_windowsinformationprotection.md) から継承)|
 |iconsVisible|Boolean|エクスプローラーでの WIP で保護されたファイルと、スタート メニューのエンタープライズ専用のアプリ タイルについて、アイコンにオーバーレイを追加するかどうかを決定します。 Windows 10 Version 1703 以降では、この設定は WIP で保護されたアプリのタイトル バーにおける WIP アイコンの可視性も構成します ([windowsInformationProtection](../resources/intune_mam_windowsinformationprotection.md) から継承)|
 |protectedApps|[windowsInformationProtectionApp](../resources/intune_mam_windowsinformationprotectionapp.md) コレクション|保護されたアプリケーションはエンタープライズ データにアクセスすることができ、これらのアプリケーションによって処理されるデータは暗号化によって保護されます ([windowsInformationProtection](../resources/intune_mam_windowsinformationprotection.md) から継承)|
@@ -66,9 +66,9 @@ POST /deviceAppManagement/windowsInformationProtectionPolicies
 |mdmEnrollmentUrl|String|MDM の登録 URL|
 |windowsHelloForBusinessBlocked|Boolean|Windows にサインインするためのメソッドとして Windows Hello for Business を設定するブール値です。|
 |pinMinimumLength|Int32|PIN に必要な文字の最小数を設定する整数値です。 既定値は 4 です。 このポリシー設定で構成できる最小値は 4 です。 構成できる最大値は、[PIN の最大文字数] ポリシー設定で構成された値、または 127 のうち、どちらか小さい方です。|
-|pinUppercaseLetters|String|Windows Hello for Business の PIN における大文字の使用を構成する整数値です。 既定値は NotAllow です。 可能な値は、`notAllow`、`requireAtLeastOne`、`allow` です。|
-|pinLowercaseLetters|String|Windows Hello for Business の PIN における小文字の使用を構成する整数値です。 既定値は NotAllow です。 可能な値は、`notAllow`、`requireAtLeastOne`、`allow` です。|
-|pinSpecialCharacters|String|Windows Hello for Business の PIN における特殊文字の使用を構成する整数値です。 Windows Hello for Business の PIN ジェスチャの有効な特殊文字は以下のとおりです: ! " # $ % & ' ( ) * + , - . / : ; < = > ? @ \[ \ \] ^ _ ` { | } ~。 既定値は NotAllow です。 可能な値は、`notAllow`、`requireAtLeastOne`、`allow` です。|
+|pinUppercaseLetters|[windowsInformationProtectionPinCharacterRequirements](../resources/intune_mam_windowsinformationprotectionpincharacterrequirements.md)|Windows Hello for Business の PIN における大文字の使用を構成する整数値です。 既定値は NotAllow です。 可能な値は、`notAllow`、`requireAtLeastOne`、`allow` です。|
+|pinLowercaseLetters|[windowsInformationProtectionPinCharacterRequirements](../resources/intune_mam_windowsinformationprotectionpincharacterrequirements.md)|Windows Hello for Business の PIN における小文字の使用を構成する整数値です。 既定値は NotAllow です。 可能な値は、`notAllow`、`requireAtLeastOne`、`allow` です。|
+|pinSpecialCharacters|[windowsInformationProtectionPinCharacterRequirements](../resources/intune_mam_windowsinformationprotectionpincharacterrequirements.md)|Windows Hello for Business の PIN における特殊文字の使用を構成する整数値です。 Windows Hello for Business の PIN ジェスチャの有効な特殊文字は以下のとおりです: ! " # $ % & ' ( ) * + , - . / : ; < = > ? @ \[ \ \] ^ _ ` { | } ~。 既定値は NotAllow です。 可能な値は、`notAllow`、`requireAtLeastOne`、`allow` です。|
 |pinExpirationDays|Int32|この整数値は、システムがユーザーに PIN の変更を要求する前の、PIN の使用可能な期間 (日数) を指定します。 このポリシー設定で構成できる最大値は 730 です。 このポリシー設定で構成できる最小値は 0 です。 このポリシーが 0 に設定されている場合、ユーザーの PIN は期限切れになりません。 このノードは、Windows 10 バージョン 1511 で追加されました。 既定値は 0 です。|
 |numberOfPastPinsRemembered|Int32|再使用できないユーザー アカウントに関連付けられる過去の PIN の数を指定する整数値です。 このポリシー設定で構成できる最大値は 50 です。 このポリシー設定で構成できる最小値は 0 です。 このポリシーが 0 に設定されている場合、以前の PIN の格納は不要です。 このノードは、Windows 10 バージョン 1511 で追加されました。 既定値は 0 です。|
 |passwordMaximumAttemptCount|Int32|デバイスがワイプされるまでの、許可されている認証失敗の回数です。 値を 0 にすると、デバイス ワイプ機能が無効になります。 範囲は整数 X (デスクトップの場合: 4 <= X <= 16、モバイル デバイスの場合: 0 <= X <= 999) です。|
@@ -114,7 +114,7 @@ Content-length: 4466
     "certificate": "Y2VydGlmaWNhdGU="
   },
   "revokeOnUnenrollDisabled": true,
-  "rightsManagementServicesTemplateId": "<Unknown Primitive Type Edm.Guid>",
+  "rightsManagementServicesTemplateId": "79199ed9-e50b-4257-8de4-70b9c8685061",
   "azureRightsManagementServicesAllowed": true,
   "iconsVisible": true,
   "protectedApps": [
@@ -262,7 +262,7 @@ Content-Length: 4574
     "certificate": "Y2VydGlmaWNhdGU="
   },
   "revokeOnUnenrollDisabled": true,
-  "rightsManagementServicesTemplateId": "<Unknown Primitive Type Edm.Guid>",
+  "rightsManagementServicesTemplateId": "79199ed9-e50b-4257-8de4-70b9c8685061",
   "azureRightsManagementServicesAllowed": true,
   "iconsVisible": true,
   "protectedApps": [

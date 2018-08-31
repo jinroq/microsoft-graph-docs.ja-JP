@@ -3,14 +3,14 @@
 ユーザーの primaryRole が `student` の場合に存在する [educationUser](educationuser.md) に追加される、その他の情報。
 
 ## <a name="properties"></a>プロパティ
-| プロパティ     | 型   |説明|
+| プロパティ     | タイプ   |説明|
 |:---------------|:--------|:----------|
-|birthDate|Date| 学生の生年月日。|
-|externalId|String| ソース システムの学生の ID。|
-|gender|`educationGender enumeration`| 使用可能な値: `female`、`male`、`other`、`unkownFutureValue`。|
-|grade|String|学生の現在の学年。|
-|graduationYear|String| 学生が学校から卒業する年。|
-|studentNumber|String| 学生番号。|
+|birthDate|日付| 学生の生年月日。|
+|externalId|文字列| ソース システムの学生の ID。|
+|性別|educationGender| 指定できる値は、`female`、`male`、`other`、`unknownFutureValue` です。|
+|成績|文字列|学生の現在の学年。|
+|graduationYear|文字列| 学生が学校から卒業する年。|
+|studentNumber|文字列| 学生番号。|
 
 ## <a name="json-representation"></a>JSON 表記
 

@@ -1,6 +1,6 @@
 # <a name="windowsphone81generalconfiguration-resource-type"></a>windowsPhone81GeneralConfiguration リソース タイプ
 
-> **注:**Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
+> **注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
 
 このトピックでは、windowsPhone81GeneralConfiguration リソースによって公開された、宣言されたメソッド、プロパティ、リレーションシップについて説明します。
 
@@ -16,21 +16,21 @@
 |[Update windowsPhone81GeneralConfiguration](../api/intune_deviceconfig_windowsphone81generalconfiguration_update.md)|[windowsPhone81GeneralConfiguration](../resources/intune_deviceconfig_windowsphone81generalconfiguration.md)|[windowsPhone81GeneralConfiguration](../resources/intune_deviceconfig_windowsphone81generalconfiguration.md) オブジェクトのプロパティを更新します。|
 
 ## <a name="properties"></a>プロパティ
-|プロパティ|型|説明|
+|プロパティ|タイプ|説明|
 |:---|:---|:---|
-|id|String|エンティティのキー。 [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md) から継承します|
-|lastModifiedDateTime|DateTimeOffset|オブジェクトの最終更新の DateTime。 [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md) から継承します|
+|ID|文字列|エンティティのキー。 [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md) から継承します|
+|lastModifiedDateTime|DateTimeOffset|オブジェクトが最後に変更された DateTime。 [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md) から継承します|
 |createdDateTime|DateTimeOffset|オブジェクトが作成された DateTime。 [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md) から継承します|
-|description|String|デバイス構成について管理者が提供した説明です。 [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md) から継承します|
-|displayName|String|デバイス構成について管理者が指定した名前です。 [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md) から継承します|
-|version|Int32|デバイス構成のバージョン。 [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md) から継承します|
+|説明|String|デバイス構成について管理者が提供した説明。 [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md) から継承します|
+|displayName|String|デバイス構成について管理者が指定した名前。 [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md) から継承します|
+|バージョン|Int32|デバイス構成のバージョン。 [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md) から継承します|
 |applyOnlyToWindowsPhone81|Boolean|このポリシーを Windows Phone 8.1 にのみ適用するかどうかを示す値。 このプロパティは読み取り専用です。|
 |appsBlockCopyPaste|Boolean|コピー/貼り付けを禁止するかどうかを示します。|
 |bluetoothBlocked|Boolean|Bluetooth をブロックするかどうかを示します。|
 |cameraBlocked|Boolean|カメラをブロックするかどうかを示します。|
 |cellularBlockWifiTethering|Boolean|Wi-Fi テザリングをブロックするかどうかを示します。 Wi-Fi がブロックされていれば、この値は関係ありません。|
 |compliantAppsList|[appListItem](../resources/intune_deviceconfig_applistitem.md) コレクション|コンプライアンス内のアプリのリスト (CompliantAppListType によって制御される、許可リストまたは禁止リスト)。 このコレクションには、最大で 10000 個の要素を含めることができます。|
-|compliantAppListType|String|AppComplianceList 内にあるリスト。 可能な値は、`none`、`appsInListCompliant`、`appsNotInListCompliant` です。|
+|compliantAppListType|[appListType](../resources/intune_deviceconfig_applisttype.md)|AppComplianceList 内にあるリスト。 可能な値は、 `none`、`appsInListCompliant`、`appsNotInListCompliant` です。|
 |diagnosticDataBlockSubmission|Boolean|診断データの送信をブロックするかどうかを示します。|
 |emailBlockAddingAccounts|Boolean|カスタム電子メール アカウントをブロックするかどうかを示します。|
 |locationServicesBlocked|Boolean|位置情報サービスをブロックするかどうかを示します。|
@@ -43,7 +43,7 @@
 |passwordMinimumCharacterSetCount|Int32|パスワードが含まなければならない文字セットの数。|
 |passwordPreviousPasswordBlockCount|Int32|ブロックする、以前のパスワードの数。 有効な値は 0 から 24 までです|
 |passwordSignInFailureCountBeforeFactoryReset|Int32|出荷時の設定にリセットされるまでの、失敗が許可されるサインインの回数。|
-|passwordRequiredType|String|必要なパスワードの種類。 可能な値は、`deviceDefault`、`alphanumeric`、`numeric` です。|
+|passwordRequiredType|[requiredPasswordType](../resources/intune_deviceconfig_requiredpasswordtype.md)|必要なパスワードの種類。 可能な値は、 `deviceDefault`、`alphanumeric`、`numeric` です。|
 |passwordRequired|Boolean|パスワードを要求するかどうかを指定します。|
 |screenCaptureBlocked|Boolean|スクリーンショットを禁止するかどうかを示します。|
 |storageBlockRemovableStorage|Boolean|リムーバブル記憶域をブロックするかどうかを示します。|
@@ -66,12 +66,21 @@
 
 ## <a name="json-representation"></a>JSON 表記
 以下は、リソースの JSON 表記です。
-<!-- {
+<!--{
   "blockType": "resource",
   "keyProperty": "id",
-  "@odata.type": "microsoft.graph.windowsPhone81GeneralConfiguration"
-}
--->
+  "baseType": "microsoft.graph.deviceConfiguration",
+  "@odata.type": "microsoft.graph.windowsPhone81GeneralConfiguration",
+  "@odata.annotations": [
+    {
+      "property": "applyOnlyToWindowsPhone81",
+      "capabilities": {
+        "computed": true,
+        "permissions": "Read"
+      }
+    }
+  ]
+}-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.windowsPhone81GeneralConfiguration",

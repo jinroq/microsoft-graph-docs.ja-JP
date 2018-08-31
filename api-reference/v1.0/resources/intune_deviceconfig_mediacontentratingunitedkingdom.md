@@ -1,13 +1,13 @@
 # <a name="mediacontentratingunitedkingdom-resource-type"></a>mediaContentRatingUnitedKingdom リソースの種類
 
-> **注:**Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
+> **注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
 
 まだ文書化されていません
 ## <a name="properties"></a>プロパティ
-|プロパティ|型|説明|
+|プロパティ|タイプ|説明|
 |:---|:---|:---|
-|movieRating|文字列型 (String)|イギリス向けに選択されている映画のレーティング。可能な値: `allAllowed`、`allBlocked`、`general`、`universalChildren`、`parentalGuidance`、`agesAbove12Video`、`agesAbove12Cinema`、`agesAbove15`、`adults`。|
-|tvRating|文字列型 (String)|イギリス向けに選択されているテレビのレーティング。可能な値: `allAllowed`、`allBlocked`、`caution`。|
+|movieRating|[ratingUnitedKingdomMoviesType](../resources/intune_deviceconfig_ratingunitedkingdommoviestype.md)|イギリス向けに選択されている映画のレーティング。 T指定できる値は、: `allAllowed`, `allBlocked`, `general`, `universalChildren`, `parentalGuidance`, `agesAbove12Video`, `agesAbove12Cinema`, `agesAbove15`, `adults`です。|
+|tvRating|[ratingUnitedKingdomTelevisionType](../resources/intune_deviceconfig_ratingunitedkingdomtelevisiontype.md)|イギリス向けに選択されている映画のレーティング。 指定できる値は、 `allAllowed`、`allBlocked`、`caution` です。|
 
 ## <a name="relationships"></a>リレーションシップ
 なし
@@ -15,7 +15,6 @@
 以下は、リソースの JSON 表記です。
 <!-- {
   "blockType": "resource",
-  "keyProperty": "id",
   "@odata.type": "microsoft.graph.mediaContentRatingUnitedKingdom"
 }
 -->

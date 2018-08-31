@@ -1,6 +1,6 @@
 # <a name="deviceinstallstate-resource-type"></a>deviceInstallState リソースの種類
 
-> **注:**Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
+> **注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
 
 デバイスのインストール状態のプロパティが含まれています。
 ## <a name="methods"></a>メソッド
@@ -13,28 +13,28 @@
 |[deviceInstallState の更新](../api/intune_books_deviceinstallstate_update.md)|[deviceInstallState](../resources/intune_books_deviceinstallstate.md)|[deviceInstallState](../resources/intune_books_deviceinstallstate.md) オブジェクトのプロパティを更新します。|
 
 ## <a name="properties"></a>プロパティ
-|プロパティ|型|説明|
+|プロパティ|タイプ|説明|
 |:---|:---|:---|
-|id|String|エンティティのキー。|
-|deviceName|String|デバイス名です。|
-|deviceId|String|デバイス ID です。|
-|lastSyncDateTime|DateTimeOffset|最後同期の日付と時刻です。|
-|installState|String|電子ブックのインストールの状態です。 可能な値は、`notApplicable`、`installed`、`failed`、`notInstalled`、`uninstallFailed`、`unknown` です。|
-|errorCode|String|インストール失敗のエラー コードです。|
-|osVersion|String|OS のバージョンです。|
-|osDescription|String|OS の説明です。|
-|userName|String|デバイスのユーザー名です。|
+|id|文字列|エンティティのキー。|
+|deviceName|文字列|デバイス名。|
+|deviceId|文字列|デバイス ID。|
+|lastSyncDateTime|DateTimeOffset|最後の同期日時。|
+|installState|[installState](../resources/intune_books_installstate.md)|電子ブックのインストールの状態。 指定できる値は、`notApplicable`、`installed`、`failed`、`notInstalled`、`uninstallFailed`、`unknown` です。|
+|errorCode|文字列|インストール失敗のエラー コード。|
+|osVersion|文字列|OS バージョン。|
+|osDescription|文字列|OS の説明。|
+|userName|文字列|デバイスのユーザー名です。|
 
 ## <a name="relationships"></a>リレーションシップ
 なし
 ## <a name="json-representation"></a>JSON 表記
 以下は、リソースの JSON 表記です。
-<!-- {
+<!--{
   "blockType": "resource",
   "keyProperty": "id",
+  "baseType": "microsoft.graph.entity",
   "@odata.type": "microsoft.graph.deviceInstallState"
-}
--->
+}-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.deviceInstallState",
