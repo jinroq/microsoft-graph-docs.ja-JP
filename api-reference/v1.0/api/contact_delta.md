@@ -17,10 +17,10 @@
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/contactFolders/{id}/contacts/delta
-GET /users/<id>/contactFolders/{id}/contacts/delta
+GET /users/{id}/contactFolders/{id}/contacts/delta
 ```
 
-### <a name="query-parameters"></a>クエリ パラメーター
+## <a name="query-parameters"></a>クエリ パラメーター
 
 連絡先の変更を追跡すると、一連の**デルタ**関数呼び出しが発生します。任意のクエリ パラメーター (`$deltatoken` と `$skiptoken` 以外) を使用する場合は、最初の**デルタ**要求でこれを指定する必要があります。Microsoft Graph は、応答で提供される `nextLink` または `deltaLink` の URL のトークン部分に指定したパラメーターを自動的にエンコードします。必要なクエリ パラメーターを前もって指定しておくだけで済みます。それ以降の要求では、前の応答で `nextLink` または `deltaLink` の URL に必要なパラメーターが既にエンコードされ、含まれているため、この URL をコピーして適用します。
 
@@ -29,7 +29,7 @@ GET /users/<id>/contactFolders/{id}/contacts/delta
 | $deltatoken | string | 同じ連絡先コレクションの前の**デルタ**関数呼び出しの `deltaLink` URL で[状態トークン](../../../concepts/delta_query_overview.md)が返され、変更追跡のその回が完了したことを示します。このコレクションについて、このトークンを含む `deltaLink` URL 全体を、変更追跡の次の回の最初の要求に保存し、適用します。|
 | $skiptoken | string | 前の**デルタ**関数呼び出しの `nextLink` URL で[状態トークン](../../../concepts/delta_query_overview.md)が返され、同じ連絡先コレクションに追跡すべき変更が他にもあることを示します。 |
 
-#### <a name="odata-query-parameters"></a>OData クエリ パラメーター
+### <a name="odata-query-parameters"></a>OData クエリ パラメーター
 
 - 任意の GET リクエストと同様に `$select` クエリ パラメーターを使用して、最善のパフォーマンスを得るために必要なプロパティのみを指定することができます。_Id_ プロパティは常に返されます。 
 
@@ -37,9 +37,9 @@ GET /users/<id>/contactFolders/{id}/contacts/delta
 ## <a name="request-headers"></a>要求ヘッダー
 | 名前       | 型 | 説明 |
 |:---------------|:----------|:----------|
-| Authorization  | string  | ベアラー {トークン}。必須。 |
-| Content-Type  | string  | application/json. Required. |
-| Prefer | string  | odata.maxpagesize={x}.省略可能。 |
+| 承認  | string  | ベアラー {トークン}。必須。 |
+| コンテンツ タイプ  | string  | アプリケーションまたは json。必須。 |
+| 優先 | string  | odata.maxpagesize={x}.省略可能。 |
 
 ## <a name="response"></a>応答
 
@@ -59,7 +59,6 @@ GET /users/<id>/contactFolders/{id}/contacts/delta
 }-->
 ```http
 GET https://graph.microsoft.com/v1.0/me/contactFolders/{id}/contacts/delta?$select=displayName
-
 Prefer: odata.maxpagesize=2
 ```
 

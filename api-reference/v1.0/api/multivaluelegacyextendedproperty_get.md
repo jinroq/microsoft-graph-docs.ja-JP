@@ -1,6 +1,6 @@
 # <a name="get-multivaluelegacyextendedproperty"></a>multiValueLegacyExtendedProperty を取得する
 
-`$expand` を使用して、複数値の拡張プロパティを含むリソース インスタンスを取得します。
+を使用して、複数値の拡張プロパティを含むリソース インスタンスを取得します。`$expand`
 
 クエリ パラメーター `$expand` を使用すると、指示された拡張プロパティで展開された特定のインスタンスを取得できます。 これは、現時点で、拡張プロパティを表す [multiValueLegacyExtendedProperty](../resources/multiValueLegacyExtendedProperty.md) オブジェクトを取得する唯一の方法です。
 
@@ -8,9 +8,9 @@
 
 - [message](../resources/message.md)
 - [mailFolder](../resources/mailfolder.md)
-- [event](../resources/event.md)
-- [calendar](../resources/calendar.md)
-- [contact](../resources/contact.md)
+- [イベント](../resources/event.md)
+- [カレンダー](../resources/calendar.md)
+- [連絡先](../resources/contact.md)
 - [contactFolder](../resources/contactfolder.md) 
 
 次のグループ リソースもサポートされます。
@@ -33,69 +33,60 @@
 
 **id** プロパティに対するフィルターと一致する拡張プロパティで展開された、リソース インスタンスを取得します。フィルター文字列内のスペース文字に [URL エンコード](http://www.w3schools.com/tags/ref_urlencode.asp)を適用していることを確認してください。
 
-**message** インスタンスの取得:
-<!-- { "blockType": "ignored" } -->
+**message** インスタンスの取得: <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/messages/{id}?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
 GET /users/{id|userPrincipalName}/messages/{id}?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
 GET /me/mailFolders/{id}/messages/{id}?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
 ```
-**mailFolder** インスタンスの取得:
-<!-- { "blockType": "ignored" } -->
+**mailFolder** インスタンスの取得: <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/mailFolders/{id}?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
 GET /users/{id|userPrincipalName}/mailFolders/{id}?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
 ```
 
-**event** インスタンスの取得:
-<!-- { "blockType": "ignored" } -->
+**event** インスタンスの取得: <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/events/{id}?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
 GET /users/{id|userPrincipalName}/events/{id}?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
 ```
-**calendar** インスタンスの取得:
-<!-- { "blockType": "ignored" } -->
+**calendar** インスタンスの取得: <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/calendars/{id}?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
 GET /users/{id|userPrincipalName}/calendars/{id}?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
 ```
-**contact** インスタンスの取得:
-<!-- { "blockType": "ignored" } -->
+**contact** インスタンスの取得: <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/contacts/{id}?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
 GET /users/{id|userPrincipalName}/contacts/{id}?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
 GET /me/contactFolders/{id}/contacts/{id}?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
 GET /users/{id|userPrincipalName}/contactFolders/{id}/contacts/{id}?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
 ```
-**contactFolder** インスタンスの取得:
-<!-- { "blockType": "ignored" } -->
+**contactFolder** インスタンスの取得: <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/contactfolders/{id}?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
 GET /users/{id|userPrincipalName}/contactFolders/{id}?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
 ```
-グループ **event** インスタンスの取得:
-<!-- { "blockType": "ignored" } -->
+グループ **event** インスタンスの取得: <!-- { "blockType": "ignored" } -->
 ```http
 GET /groups/{id}/events/{id}?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
 ```
 
-グループ **post** インスタンスの取得:
-<!-- { "blockType": "ignored" } -->
+グループ **post** インスタンスの取得: <!-- { "blockType": "ignored" } -->
 ```http
 GET /groups/{id}/threads/{id}/posts/{id}?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
 GET /groups/{id}/conversations/{id}/threads/{id}/posts/{id}?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
 ```
 
-## <a name="parameters"></a>パラメーター
-|**パラメーター**|**型**|**説明**|
+## <a name="path-parameters"></a>パス パラメーター
+|パラメーター|型|説明|
 |:-----|:-----|:-----|
-|_URL parameters_|
-|id_value|String|照合する拡張プロパティの ID。サポートされている形式のいずれかに従う必要があります。詳しくは、「[Outlook の拡張プロパティの概要](../resources/extended-properties-overview.md)」を参照してください。必須。|
+|id_value|文字列|照合する拡張プロパティの ID。サポートされている形式のいずれかに従う必要があります。詳しくは、「[Outlook の拡張プロパティの概要](../resources/extended-properties-overview.md)」を参照してください。必須。|
 
 ## <a name="request-headers"></a>要求ヘッダー
 | 名前      |説明|
 |:----------|:----------|
-| Authorization  | ベアラー {トークン}。必須。 |
+| 承認  | ベアラー {トークン}。必須。 |
 
 ## <a name="request-body"></a>要求本文
 このメソッドには、要求本文を指定しません。

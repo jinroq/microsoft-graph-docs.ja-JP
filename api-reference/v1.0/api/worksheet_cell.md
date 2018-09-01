@@ -13,22 +13,26 @@
 ## <a name="http-request"></a>HTTP 要求
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /workbook/worksheets/{id|name}/cell(row=<row>,column=<column>)
+GET /workbook/worksheets/{id|name}/cell(row={row},column={column})
 
 ```
+
+## <a name="function-parameters"></a>関数パラメーター
+要求のパスには、次のパラメーターを提供します。
+
+| パラメーター    | 型   |説明|
+|:---------------|:--------|:----------|
+|行|Int32|取得するセルの行番号。0 を起点とする番号になります。|
+|列|Int32|取得セルの列番号。0 を起点とする番号になります。|
+
 ## <a name="request-headers"></a>要求ヘッダー
 | 名前       | 説明|
 |:---------------|:----------|
 | 承認  | ベアラー {トークン}。必須。 |
 | Workbook-Session-Id  | 変更を保持するかどうかを決定するブック セッション ID。省略可能。|
 
-## <a name="parameters"></a>パラメーター
-要求のパスには、次のパラメーターを提供します。
-
-| パラメーター    | 型   |説明|
-|:---------------|:--------|:----------|
-|行|Int32|取得するセルの行番号。0 を起点とする番号になります。|
-|列|Int32|取得するセルの列番号。0 を起点とする番号になります。|
+## <a name="request-body"></a>要求本文
+このメソッドには、要求本文を指定しません。
 
 ## <a name="response"></a>応答
 

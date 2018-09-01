@@ -22,7 +22,7 @@
 GET /users/delta
 ```
 
-### <a name="query-parameters"></a>クエリ パラメーター
+## <a name="query-parameters"></a>クエリ パラメーター
 
 ユーザーの変更を追跡すると、一連の **デルタ**関数呼び出しが発生します。任意のクエリ パラメーター (`$deltatoken` と `$skiptoken` 以外) を使用する場合は、最初の**デルタ**要求でこれを指定する必要があります。Microsoft Graph は、応答で提供される `nextLink` や `deltaLink` の URL のトークン部分に指定したパラメーターを自動的にエンコードします。必要なクエリ パラメーターを前もって指定しておくだけで済みます。それ以降の要求では、前の応答で `nextLink` や `deltaLink` の URL に必要なパラメーターが既にエンコードされ、含まれているため、この URL をコピーして適用します。
 
@@ -31,22 +31,22 @@ GET /users/delta
 | $deltatoken | string | 同じユーザー コレクションの前の**デルタ**関数の `deltaLink` URL で[状態トークン](../../../concepts/delta_query_overview.md)が返され、変更追跡のその回が完了したことを示します。このコレクションについて、このトークンを含む、`deltaLink` URL 全体を次の変更追跡のラウンドの最初の要求に保存し、適用します。|
 | $skiptoken | string | 前の**デルタ**関数の `nextLink` URL で[状態トークン](../../../concepts/delta_query_overview.md)が返され、同じユーザー コレクションで追跡されるその他の変更があることを示します。 |
 
-## <a name="optional-query-parameters"></a>オプションのクエリ パラメーター
+### <a name="odata-query-parameters"></a>OData クエリ パラメーター
 
 このメソッドは、応答をカスタマイズするための OData クエリ パラメーターをサポートします。
 
 - 任意の GET リクエストと同様に `$select` クエリ パラメーターを使用して、最善のパフォーマンスを得るために必要なプロパティのみを指定することができます。_Id_ プロパティは常に返されます。 
 - デルタ クエリは、メッセージの `$select`、`$top`、および `$expand` をサポートします。 
-- `$filter` と `$orderby` に対するサポートには制限があります。
-  * サポートされている唯一の`$filter` 式は、一人または二人の特定ユーザーでの変更を追跡する `$filter=id+eq+{value}` あるいは `$filter=id+eq+{value1}+or+id+eq+{value2}` です。 
-  * サポートされている唯一の `$orderby` 式は、`$orderby=receivedDateTime+desc` です。 `$orderby` 式を含めない場合、戻り値の順序は保証されません。 
-- `$search` はサポートされていません。
+- と `$orderby` に対するサポートには制限があります。`$filter`
+  * サポートされている唯一の`$filter` 式は、一人または二人の特定ユーザーでの変更を追跡する `$filter=id+eq+{value}` あるいは `$filter=id+eq+{value1}+or+id+eq+{value2}` です。 `$filter=id+eq+{value1}+or+id+eq+{value2}` 
+  * サポートされている唯一の `$orderby` 式は、`$orderby=receivedDateTime+desc` です。 式を含めない場合、戻り値の順序は保証されません。`$orderby` 
+- はサポートされていません。`$search`
 
 ## <a name="request-headers"></a>要求ヘッダー
 | 名前       | 説明|
 |:---------------|:----------|
-| Authorization  | Bearer &lt;token&gt;|
-| Content-Type  | application/json |
+| 承認  | ベアラー&lt;トークン&gt;|
+| コンテンツ タイプ  | アプリケーション /json |
 
 ## <a name="request-body"></a>要求本文
 このメソッドには、要求本文を指定しません。

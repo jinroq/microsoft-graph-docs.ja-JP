@@ -3,12 +3,12 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
 title: ドライブのコンテンツを同期する
-ms.openlocfilehash: f87bfcd686ab98297c8b33aefc55705162438a35
-ms.sourcegitcommit: abf4b739257e3ffd9d045f783ec595d846172590
+ms.openlocfilehash: 64ca2eb0593c7eb6da518dadf3722b65c8472966
+ms.sourcegitcommit: 7d7c4476483b95e960d944053974794a4073a4c6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "23265016"
+ms.lasthandoff: 09/01/2018
+ms.locfileid: "23798188"
 ---
 # <a name="track-changes-for-a-drive"></a>ドライブの変更履歴を記録する
 
@@ -44,15 +44,15 @@ GET /sites/{siteId}/drive/root/delta
 GET /users/{userId}/drive/root/delta
 ```
 
-## <a name="optional-query-parameters"></a>オプションのクエリ パラメーター
-
-このメソッドは、応答をカスタマイズするための `$select`、`$expand`、`$top` の [OData クエリ パラメーター](../../../concepts/query_parameters.md)をサポートします。
-
-## <a name="parameters"></a>パラメーター
+## <a name="function-parameters"></a>関数パラメーター
 
 | 名前   | 値  | 説明                                                                                                                          |
 |:-------|:-------|:-------------------------------------------------------------------------------------------------------------------------------------|
-| token  | string | 省略可能。 指定しない場合は、階層の現在の状態を列挙します。 `latest` の場合は、最新のデルタ トークンを使用して空の応答を返します。 以前のデルタ トークンの場合は、そのトークン以降の新しい状態を返します。
+| token  | string | 省略可能。 指定しない場合は、階層の現在の状態を列挙します。 の場合は、最新のデルタ トークンを使用して空の応答を返します。`latest` 以前のデルタ トークンの場合は、そのトークン以降の新しい状態を返します。
+
+## <a name="optional-query-parameters"></a>オプションのクエリ パラメーター
+
+このメソッドは、応答をカスタマイズするための `$select`、`$expand`、`$top` の [OData クエリ パラメーター](../../../concepts/query_parameters.md)をサポートします。
 
 ## <a name="response"></a>応答
 

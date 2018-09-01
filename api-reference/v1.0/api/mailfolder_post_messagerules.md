@@ -30,14 +30,13 @@ POST /users/{id | userPrincipalName}/mailFolders/inbox/messageRules
 ## <a name="request-body"></a>要求本文
 要求本文に、ルールを適用するパラメーターを指定します。 ルールを作成する際に本文に通常指定するパラメーターは、次のとおりです。 必要に応じて、本文に他の書き込み可能な **messageRule** プロパティを指定することもできます。
 
-### <a name="request-parameters"></a>要求パラメーター
 | 名前       | 型|説明|
 |:--------|:-------|:----------|
 |actions|[messageRuleActions](../resources/messageruleactions.md)|該当する条件があり、それが満たされる場合にメッセージに対して実行されるアクションです。必須。|
 |conditions|[messageRulePredicates](../resources/messagerulepredicates.md)|満たされた場合に、そのルールに該当するアクションをトリガーする条件です。省略可能。|
 |displayName| 文字列  | ルールの表示名。必須。|
 |exceptions| [messageRulePredicates](../resources/messagerulepredicates.md)| ルールの例外条件を表します。省略可能。 |
-|isEnabled | Boolean | メッセージに対するルールの適用が有効になっているかどうかを示します。省略可能。 |
+|isEnabled | ブール値 | メッセージに対するルールの適用が有効になっているかどうかを示します。省略可能。 |
 |sequence| Int32 | 他のルールもある中で、そのルールが実行される順序を示します。必須。|
 
 ## <a name="response"></a>応答
