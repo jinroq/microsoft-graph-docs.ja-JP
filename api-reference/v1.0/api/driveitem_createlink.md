@@ -3,12 +3,12 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
 title: ファイルをリンクで共有する
-ms.openlocfilehash: 2a1471cf08545bb24b8da47ce1792f85860d07ca
-ms.sourcegitcommit: 9f78a3506e1c1ad0733264ce21a1f8acfeadb90a
+ms.openlocfilehash: bbdf872216a5a9e266e04c95868e0179cf15e553
+ms.sourcegitcommit: abf4b739257e3ffd9d045f783ec595d846172590
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/09/2018
-ms.locfileid: "22223476"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23266808"
 ---
 # <a name="create-a-sharing-link-for-a-driveitem"></a>DriveItem の共有リンクを作成する
 
@@ -47,8 +47,8 @@ POST /users/{userId}/drive/items/{itemId}/createLink
 
 |   名前    |  型  |                                 説明                                  |
 | :-------- | :----- | :--------------------------------------------------------------------------- |
-| **type**  | string | 作成する共有リンクの種類。`view`、`edit`、または `embed` です。       |
-| **scope** | string | 省略可能。 作成するリンクのスコープ。 `anonymous` または `organization` のどちらかです。 |
+| **型**  | 文字列 | 作成する共有リンクの種類。`view`、`edit`、または `embed` です。       |
+| **スコープ** | 文字列 | 省略可能。 作成するリンクのスコープ。 または `organization` のどちらかです。`anonymous` |
 
 
 ### <a name="link-types"></a>リンクの種類
@@ -64,12 +64,13 @@ POST /users/{userId}/drive/items/{itemId}/createLink
 ### <a name="scope-types"></a>スコープの種類
 
 **scope** パラメーターには次の値を使用できます。
-**scope** パラメーターが指定されていない場合、組織の既定のリンクの種類が作成されます。
+**scope** パラメーターが指定されていない場合、組織の既定リンクの種類が作成されます。
 
-| 種類の値     | 説明                                                                                                                   |
-|:---------------|:------------------------------------------------------------------------------------------------------------------------------|
-| `anonymous`    | DriveItem への、すべてのユーザーがアクセス可能なリンクを作成します。 匿名リンクは管理者により無効にされることがあります。                 |
-| `organization` | DriveItem への、ユーザーの組織内のだれでもアクセス可能なリンクを作成します。 組織のリンク スコープは、OneDrive 個人用では使用できません。 |
+| 値          | 説明
+|:---------------|:------------------------------------------------------------
+| `anonymous`    | ユーザーはリンクがあればアクセスでき、サインインする必要はありません。 これには、組織外部のユーザーが含まれる場合があります。 匿名のリンクのサポートは、管理者が無効にする場合があります。
+| `organization` | 組織 (テナント) に所属しているすべてのユーザーが、リンクを使ってアクセスできます。 OneDrive for Business と SharePoint のみで使用できます。
+
 
 ## <a name="response"></a>応答
 
@@ -86,11 +87,11 @@ POST /users/{userId}/drive/items/{itemId}/createLink
 
 <!-- {
   "blockType": "request",
-  "name": "item_createlink"
+  "name": "create-link"
 }-->
 
 ```http
-POST /me/drive/items/{itemId}/createLink
+POST /me/drive/items/{item-id}/createLink
 Content-type: application/json
 
 {
@@ -130,7 +131,7 @@ OneDrive for Business および SharePoint は、会社の共有可能リンク�
 
 ### <a name="request"></a>要求
 
-<!-- { "blockType": "request", "name": "create-link-scoped", "scopes": "files.readwrite service.sharepoint" } -->
+<!-- { "blockType": "request", "name": "create-link-scoped", "scopes": "files.readwrite", "tags": "service.sharepoint" } -->
 
 ```http
 POST /me/drive/items/{item-id}/createLink
@@ -173,7 +174,7 @@ Content-Type: application/json
 
 ### <a name="request"></a>要求
 
-<!-- { "blockType": "request", "name": "create-embedded-link", "scopes": "files.readwrite service.onedrive" } -->
+<!-- { "blockType": "request", "name": "create-embedded-link", "scopes": "files.readwrite", "tags": "service.onedrive service.graph" } -->
 
 ```http
 POST /me/drive/items/{item-id}/createLink
@@ -207,7 +208,7 @@ Content-Type: application/json
 }
 ```
 
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 * 組織に既定の有効期限ポリシーが適用されている場合を除き、このアクションを使用して作成されたリンクに期限はありません。
 * リンクはそのアイテムの共有アクセス許可に表示され、アイテムの所有者はそれを削除できます。

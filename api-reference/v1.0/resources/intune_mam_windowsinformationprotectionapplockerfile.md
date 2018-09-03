@@ -1,6 +1,6 @@
 # <a name="windowsinformationprotectionapplockerfile-resource-type"></a>windowsInformationProtectionAppLockerFile リソースの種類
 
-> **注:**Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
+> **注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
 
 Windows 情報保護 AppLocker ファイル
 ## <a name="methods"></a>メソッド
@@ -13,24 +13,24 @@ Windows 情報保護 AppLocker ファイル
 |[Update windowsInformationProtectionAppLockerFile](../api/intune_mam_windowsinformationprotectionapplockerfile_update.md)|[windowsInformationProtectionAppLockerFile](../resources/intune_mam_windowsinformationprotectionapplockerfile.md)|[windowsInformationProtectionAppLockerFile](../resources/intune_mam_windowsinformationprotectionapplockerfile.md) オブジェクトのプロパティを更新します。|
 
 ## <a name="properties"></a>プロパティ
-|プロパティ|型|説明|
+|プロパティ|タイプ|説明|
 |:---|:---|:---|
-|displayName|文字列型 (String)|フレンドリ名|
-|fileHash|文字列型 (String)|ファイルの SHA256 ハッシュ|
-|file|バイナリ型 (Binary)|バイト配列のファイル|
-|id|文字列型 (String)|エンティティのキー。|
-|version|文字列型 (String)|エンティティのバージョン。|
+|displayName|String|フレンドリ名|
+|fileHash|String|ファイルの SHA256 ハッシュ|
+|ファイル|バイナリ型 (Binary)|バイト配列のファイル|
+|ID|文字列|エンティティのキー。|
+|バージョン|String|エンティティのバージョン。|
 
 ## <a name="relationships"></a>リレーションシップ
 なし
 ## <a name="json-representation"></a>JSON 表記
 以下は、リソースの JSON 表記です。
-<!-- {
+<!--{
   "blockType": "resource",
   "keyProperty": "id",
+  "baseType": "microsoft.graph.entity",
   "@odata.type": "microsoft.graph.windowsInformationProtectionAppLockerFile"
-}
--->
+}-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.windowsInformationProtectionAppLockerFile",

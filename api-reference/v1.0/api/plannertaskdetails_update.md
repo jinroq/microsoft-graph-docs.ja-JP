@@ -1,4 +1,4 @@
-# <a name="update-plannertaskdetails"></a>Update plannertaskdetails
+# <a name="update-plannertaskdetails"></a>plannertaskdetails を更新する
 
 **plannertaskdetails** オブジェクトのプロパティを更新します。
 ## <a name="permissions"></a>アクセス許可
@@ -13,22 +13,22 @@
 ## <a name="http-request"></a>HTTP 要求
 <!-- { "blockType": "ignored" } -->
 ```http
-PATCH /planner/tasks/<id>/details
+PATCH /planner/tasks/{id}/details
 ```
 ## <a name="optional-request-headers"></a>オプションの要求ヘッダー
 | 名前       | 説明|
 |:-----------|:-----------|
-| Authorization  | ベアラー {トークン}。必須。 |
+| 承認  | ベアラー {トークン}。必須。 |
 | If-Match  | 更新する **plannerTaskDetails** の最後の既知の ETag 値。必須。|
 
 ## <a name="request-body"></a>要求本文
 要求本文で、更新する関連フィールドの値を指定します。要求本文に含まれない既存のプロパティは、以前の値のままになるか、他のプロパティ値の変化に基づいて再計算されます。最適なパフォーマンスを得るためには、変更されていない既存の値を含めないでください。
 
-| プロパティ     | 型   |説明|
+| プロパティ     | タイプ   |説明|
 |:---------------|:--------|:----------|
 |checklist|[plannerChecklistItems](../resources/plannerchecklistitems.md)|タスク上のチェックリスト項目のコレクション。|
-|description|String|タスクの説明|
-|previewType|string|タスクに表示されるプレビューの種類を設定します。使用可能な値: `automatic`、`noPreview`、`checklist`、`description`、`reference`。`automatic` に設定すると、タスクを表示しているアプリによって表示するプレビューが選択されます。|
+|説明|String|タスクの説明|
+|previewType|string|タスクに表示されるプレビューの種類を設定します。 可能な値は、`automatic`、`noPreview`、`checklist`、`description`、`reference` です。 `automatic` に設定されている場合、表示されるプレビューは、タスクを閲覧しているアプリによって選択されます。|
 |references|[plannerExternalReferences](../resources/plannerexternalreferences.md)|タスク上の参照のコレクションです。|
 
 ## <a name="response"></a>応答
@@ -45,7 +45,7 @@ PATCH /planner/tasks/<id>/details
   "name": "update_plannertaskdetails"
 }-->
 ```http
-PATCH https://graph.microsoft.com/v1.0/planner/tasks/gcrYAaAkgU2EQUvpkNNXLGQAGTtu/details
+PATCH https://graph.microsoft.com/v1.0/planner/tasks/{task-id}/details
 Content-type: application/json
 Content-length: 857
 If-Match: W/"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc="

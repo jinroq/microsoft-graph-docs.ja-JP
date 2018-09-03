@@ -7,7 +7,7 @@
 - [message](../resources/message.md)
 - [mailFolder](../resources/mailfolder.md)
 - [event](../resources/event.md)
-- [calendar](../resources/calendar.md)
+- [calndar](../resources/calendar.md)
 - [contact](../resources/contact.md)
 - [contactFolder](../resources/contactfolder.md) 
 
@@ -93,28 +93,24 @@ PATCH /users/{id|userPrincipalName}/contactFolders/{id}
 PATCH /groups/{id}/events/{id}
 ```
 
-
-## <a name="parameters"></a>パラメーター
-|**パラメーター**|**型**|**説明**|
-|:-----|:-----|:-----|
-|_URL parameters_|
-|id|string|該当するコレクション内のオブジェクトの一意識別子。必須。|
-|_本文のパラメーター_|
-|multiValueExtendedProperties|[multiValueLegacyExtendedProperty](../resources/multiValueLegacyExtendedProperty.md) collection| 1 つ以上の複数値を持つ拡張プロパティの配列。 |
-|id|String|**multiValueExtendedProperties** コレクションの各プロパティに対してこれを指定し、プロパティを特定します。サポートされている形式のいずれかに従う必要があります。詳しくは、[「Outlook の拡張プロパティの概要」](../resources/extended-properties-overview.md)をご覧ください。必須。|
-|value|string|**multiValueExtendedProperties** コレクションの各プロパティに対し、プロパティの値を特定します。必須。|
-
 ## <a name="request-headers"></a>要求ヘッダー
 | 名前       | 値 |
 |:---------------|:----------|
-| Authorization | ベアラー {トークン}。必須。 |
-| Content-Type | application/json |
+| 承認 | ベアラー {トークン}。必須。 |
+| Content-Type | アプリケーション /json |
 
 ## <a name="request-body"></a>要求本文
 
 リソース インスタンスの **multiValueExtendedProperties** コレクション プロパティに、各 [multiValueLegacyExtendedProperty](../resources/multiValueLegacyExtendedProperty.md) オブジェクトの JSON 本文を指定します。
 
+|プロパティ|タイプ|説明|
+|:-----|:-----|:-----|
+|multiValueExtendedProperties|[multiValueLegacyExtendedProperty](../resources/multiValueLegacyExtendedProperty.md) コレクション| 1 つ以上の複数値を持つ拡張プロパティの配列。 |
+|id|String|**multiValueExtendedProperties** コレクションの各プロパティに対してこれを指定し、プロパティを特定します。サポートされている形式のいずれかに従う必要があります。詳しくは、[「Outlook の拡張プロパティの概要」](../resources/extended-properties-overview.md)をご覧ください。必須。|
+|value|string|**multiValueExtendedProperties** コレクションの各プロパティに対し、プロパティの値を特定します。必須。|
+
 _新しい_リソース インスタンスに拡張プロパティを作成する場合は、新しい **multiValueExtendedProperties** コレクションのほか、そのリソース インスタンスの JSON 表現を指定します ([message](../resources/message.md)、[mailFolder](../resources/mailfolder.md)、[event](../resources/event.md) など)。
+
 
 ## <a name="response"></a>応答
 

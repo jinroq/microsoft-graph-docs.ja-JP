@@ -10,6 +10,7 @@
 
 <!-- {
   "blockType": "resource",
+  "baseType": "microsoft.graph.recipient",
   "optionalProperties": [
 
   ],
@@ -24,9 +25,9 @@
 
 ```
 ## <a name="properties"></a>プロパティ
-| プロパティ       | 型    |説明|
+| プロパティ     | タイプ   |説明|
 |:---------------|:--------|:----------|
-|type|String| 出席者の種類です。使用可能な値: `required`、`optional`、`resource`。現時点では、出席者が 1 人である場合、[findMeetingTimes](../api/user_findmeetingtimes.md) では常にその人は `Required` 型と見なされます。|
+|型|AttendeeType| 出席者の種類です。 可能な値は、 `required`、`optional`、`resource` です。 現時点では、出席者が 1 人である場合、[FindMeetingTimes](../api/user_findmeetingtimes.md) では常にその人は `Required` 型と見なされます。|
 |emailAddress|[emailAddress](emailAddress.md)|参加者の名前と SMTP アドレスが含まれます。|
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
