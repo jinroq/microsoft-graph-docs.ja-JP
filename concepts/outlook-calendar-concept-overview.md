@@ -45,8 +45,9 @@ Outlook カレンダーは、Office 365 の Outlook メッセージング ハブ
 Outlook とカレンダー API には、イベントのスケジュールに便利な機能が豊富に用意されています。
 
 - Outlook カレンダーのアプリ設定により、ユーザーは、フライト、ホテル、食事の予約などのメールや請求書からイベントを自動で追加できます。 追加されたイベントは、ユーザーのメールボックスにある他の [event](../api-reference/v1.0/resources/event.md) オブジェクトと同様に操作できるので、Outlook のこの機能に基づいてクリエイティブなシナリオを構築できます。
-- ** Outlook では、会議室の予約も、出席者を**イベント**に追加するのと同じほど簡単に行えます。 カレンダー API では、会議室が [emailAddress](../api-reference/v1.0/resources/emailaddress.md) オブジェクトとして表されます。 テナントで使用できる[会議室の取得](../api-reference/beta/api/user_findrooms.md)や、[会議室一覧の取得](../api-reference/beta/api/user_findroomlists.md)ができます。 特定の会議室での会議を計画するには、その会議室を**イベント**の**場所**プロパティに割り当てます。
-- ** さらに、[findMeetingTimes を使用して、開催可能な会議日時を特定する](findmeetingtimes_example.md)こともできます。 [FindMeetingTimes](../api-reference/v1.0/api/user_findmeetingtimes.md) 関数は、出席者の空き時間情報、会議室や日時に関する希望、およびユーザーが指定した他の制約事項を考慮します。 最初の試行で全員参加可能な会議日時が返されない場合は、理由を確認してから条件を変更し、もう一度 **findMeetingTimes** を呼び出してください。
+- ** Outlook では、会議室の予約も、出席者を**イベント**に追加するのと同じほど簡単に行えます。 カレンダー API では、会議室が [emailAddress](../api-reference/v1.0/resources/emailaddress.md) オブジェクトとして表されます。 テナントで利用可能な[会議室を取得 (プレビュー) ](../api-reference/beta/api/user_findrooms.md)したり、[会議室リストを取得 (プレビュー) ](../api-reference/beta/api/user_findroomlists.md)することができます。 特定の会議室での会議を主催するには、その会議室を** イベント**の** 場所**プロパティに割り当てます。
+- * * 一定期間の[ユーザーとリソースの空き状況の情報を検索する (プレビュー) ](outlook-get-free-busy-schedule.md)することができます。 そして、このデータを使用してリソース プランニングやイベントのスケジューリングなど、さまざまなシナリオに適用することができます。 
+- ** 最適な時間に会議をスケジューリングしなければならないような場合は、[findMeetingTimes を使用して可能な時間や集合する場所を特定する](findmeetingtimes_example.md)ことを検討してください。 [FindMeetingTimes](../api-reference/v1.0/api/user_findmeetingtimes.md) 関数は、出席者の空き時間状況、会議室や日時に関する希望、およびユーザーが指定した他の制約事項を考慮します。 最初の試行で全員参加可能な会議日時が返されない場合は、理由を確認してから条件を変更し、もう一度 **findMeetingTimes** を呼び出してください。
 
 
 ### <a name="teleconference-across-multiple-locations-and-time-zones"></a>複数の場所とタイム ゾーンをまたぐ電話会議
@@ -55,7 +56,7 @@ Outlook とカレンダー API には、イベントのスケジュールに便�
 
 - Outlook の例として、ユーザーが組織する会議に、シアトルの会議室、パリのコーヒー ショップ、中国のホーム オフィスから出席者が参加するケースが考えられます。 プログラムを使用すると、[location](../api-reference/v1.0/resources/location.md) オブジェクトのコレクションであるイベントの**場所**プロパティで、このレベルの詳細を**場所**ごとに **displayName** と **locationType** で反映できます。 [例](../api-reference/v1.0/api/event_get.md#request-2)をご覧ください。
 - Outlook では、柔軟にイベントを組織し、イベントの開始日時と終了日時ごとにタイム ゾーンを指定できます。 このような柔軟性をサポートするため、既定では、カレンダー API は**イベント**の**開始**日時と**終了**日時を UTC で返し、用意されている **originalStartTimeZone** プロパティと **originalEndTimeZone** プロパティで、イベントの作成時に使用されたタイム ゾーンを示します。 
-- 代わりに、`Prefer: outlook.timezone="{time zone name}"` ヘッダーを指定して、GET イベント操作が**開始**日時と**終了**日時を指定したタイム ゾーンで返すようにすることもできます。 タイム ゾーン名は、この[リスト](../api-reference/v1.0/resources/datetimetimezone.md)にあるものだけでなく、Windows でサポートされている任意の名前を使用できます。 `Prefer` ヘッダーの使用[例](../api-reference/v1.0/api/event_get.md#request-1)をご覧ください。
+- 代わりに、`Prefer: outlook.timezone="{time zone name}"` ヘッダーを指定して、GET イベント操作が**開始**日時と**終了**日時を指定したタイム ゾーンで返すようにすることもできます。 タイム ゾーン名は、この[リスト](../api-reference/v1.0/resources/datetimetimezone.md)にあるものだけでなく、Windows でサポートされている任意の名前を使用できます。 ヘッダーの使用[例](../api-reference/v1.0/api/event_get.md#request-1)をご覧ください。`Prefer`
 
 
 ### <a name="take-advantage-of-social-intelligence-and-other-developer-conveniences-in-microsoft-graph"></a>Microsoft Graph でのソーシャル インテリジェンス、および開発者向けのその他の便利な機能の活用

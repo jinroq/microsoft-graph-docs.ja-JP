@@ -16,43 +16,43 @@ iOS Vpp eBook のプロパティを含むクラスです。
 |[iosVppEBook の更新](../api/intune_books_iosvppebook_update.md)|[iosVppEBook](../resources/intune_books_iosvppebook.md)|[iosVppEBook](../resources/intune_books_iosvppebook.md) オブジェクトのプロパティを更新します。|
 
 ## <a name="properties"></a>プロパティ
-|プロパティ|型|説明|
+|プロパティ|タイプ|説明|
 |:---|:---|:---|
-|id|String|エンティティのキー。 [managedEBook](../resources/intune_books_managedebook.md) から継承します|
-|displayName|String|電子ブックの名前。 [managedEBook](../resources/intune_books_managedebook.md) から継承します|
-|description|String|説明。 [managedEBook](../resources/intune_books_managedebook.md) から継承します|
-|publisher|String|発行元です。 [managedEBook](../resources/intune_books_managedebook.md) から継承します|
+|ID|文字列|エンティティのキー。 [managedEBook](../resources/intune_books_managedebook.md) から継承します|
+|displayName|文字列|電子ブックの名前。 [managedEBook](../resources/intune_books_managedebook.md) から継承します|
+|説明|文字列|説明。 [managedEBook](../resources/intune_books_managedebook.md) から継承します|
+|発行元|文字列|発行元です。 [managedEBook](../resources/intune_books_managedebook.md) から継承します|
 |publishedDateTime|DateTimeOffset|電子ブックが発行された日時。 [managedEBook](../resources/intune_books_managedebook.md) から継承します|
 |largeCover|[mimeContent](../resources/intune_shared_mimecontent.md)|ブック カバー。 [managedEBook](../resources/intune_books_managedebook.md) から継承します|
 |createdDateTime|DateTimeOffset|電子ブック ファイルが作成された日時。 [managedEBook](../resources/intune_books_managedebook.md) から継承します|
 |lastModifiedDateTime|DateTimeOffset|電子ブックが最後に変更された日時。 [managedEBook](../resources/intune_books_managedebook.md) から継承します|
-|informationUrl|String|詳細情報の URL。 [managedEBook](../resources/intune_books_managedebook.md) から継承します|
-|privacyInformationUrl|String|プライバシーに関する声明の URL。 [managedEBook](../resources/intune_books_managedebook.md) から継承します|
-|vppTokenId|Guid|Vpp トークン ID。|
-|appleId|String|Vpp トークンに関連付けられている Apple ID。|
-|vppOrganizationName|String|Vpp トークンの組織の名前。|
-|genres|String コレクション|ジャンル。|
-|language|String|言語。|
-|seller|String|販売元。|
+|informationUrl|文字列|詳細情報の URL。 [managedEBook](../resources/intune_books_managedebook.md) から継承します|
+|privacyInformationUrl|文字列|プライバシーに関する声明の URL。 [managedEBook](../resources/intune_books_managedebook.md) から継承します|
+|vppTokenId|GUID 型 (GUID)|Vpp トークン ID。|
+|appleId|文字列|Vpp トークンに関連付けられている Apple ID。|
+|vppOrganizationName|文字列|Vpp トークンの組織の名前。|
+|ジャンル|String コレクション|ジャンル。|
+|言語|文字列|言語。|
+|販売元|文字列|販売元。|
 |totalLicenseCount|Int32|ライセンスの合計数。|
 |usedLicenseCount|Int32|使用されているライセンスの数。|
 
 ## <a name="relationships"></a>リレーションシップ
 |リレーションシップ|型|説明|
 |:---|:---|:---|
-|assignments|[managedEBookAssignment](../resources/intune_books_managedebookassignment.md) コレクション|この電子ブックの割り当てのリストです。 [managedEBook](../resources/intune_books_managedebook.md) から継承します|
+|割り当て|[managedEBookAssignment](../resources/intune_books_managedebookassignment.md) コレクション|この電子ブックの割り当てのリストです。 [managedEBook](../resources/intune_books_managedebook.md) から継承します|
 |installSummary|[eBookInstallSummary](../resources/intune_books_ebookinstallsummary.md)|モバイル アプリ インストール概要です。 [managedEBook](../resources/intune_books_managedebook.md) から継承します|
 |deviceStates|[deviceInstallState](../resources/intune_books_deviceinstallstate.md) コレクション|この電子ブックのインストール状態のリストです。 [managedEBook](../resources/intune_books_managedebook.md) から継承します|
 |userStateSummary|[userInstallStateSummary](../resources/intune_books_userinstallstatesummary.md) コレクション|この電子ブックのインストール状態のリストです。 [managedEBook](../resources/intune_books_managedebook.md) から継承します|
 
 ## <a name="json-representation"></a>JSON 表記
 以下は、リソースの JSON 表記です。
-<!-- {
+<!--{
   "blockType": "resource",
   "keyProperty": "id",
+  "baseType": "microsoft.graph.managedEBook",
   "@odata.type": "microsoft.graph.iosVppEBook"
-}
--->
+}-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.iosVppEBook",
@@ -70,7 +70,7 @@ iOS Vpp eBook のプロパティを含むクラスです。
   "lastModifiedDateTime": "String (timestamp)",
   "informationUrl": "String",
   "privacyInformationUrl": "String",
-  "vppTokenId": "<Unknown Primitive Type Edm.Guid>",
+  "vppTokenId": "79199ed9-e50b-4257-8de4-70b9c8685061",
   "appleId": "String",
   "vppOrganizationName": "String",
   "genres": [

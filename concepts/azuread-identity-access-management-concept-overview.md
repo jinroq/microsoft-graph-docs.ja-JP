@@ -30,7 +30,7 @@ Microsoft Graph で Azure AD API を使用することにより、次のこと�
 
 ### <a name="manage-devices"></a>デバイスを管理する
 
-組織に登録されている[デバイスを管理](https://docs.microsoft.com/ja-JP/azure/active-directory/device-management-introduction.md)します。 デバイスはユーザーに登録されており、ノート PC、デスクトップ、タブレット、携帯電話などのアイテムを含みます。 デバイスは通常、Device Registration Service を使用するか、Microsoft Intune によって、クラウドで作成されます。 これは、多要素認証の条件付きアクセス ポリシーで使用されます。
+組織に登録されている[デバイスを管理](https://docs.microsoft.com/en-us/azure/active-directory/device-management-introduction.md)します。 デバイスはユーザーに登録されており、ノート PC、デスクトップ、タブレット、携帯電話などのアイテムを含みます。 デバイスは通常、Device Registration Service を使用するか、Microsoft Intune によって、クラウドで作成されます。 これは、多要素認証の条件付きアクセス ポリシーで使用されます。
 
 ### <a name="partner-tenant-management"></a>パートナー テナント管理
 
@@ -54,11 +54,14 @@ Microsoft オンライン サービス (Office 365、Microsoft Azure、CRM オ�
 
 管理者権限をオンデマンドでアクティブ化することによってリソースへのアクセスをセキュリティで保護できます。 [特権 ID 管理](../api-reference/beta/resources/privilegedidentitymanagement_root.md)の機能は Azure AD Premium P2 で利用できます。
 
+### <a name="manage-user-access-reviews-preview"></a>ユーザー アクセスの確認 (プレビュー) を管理する
 
-## <a name="next-steps"></a>次の手順
+グループのメンバーシップ、およびアプリケーションへのアクセスのアクセス確認を構成できます。 [アクセス確認](../api-reference/beta/resources/accessreviews_root.md)の機能は、Azure AD Premium P2 で利用できます。
+
+## <a name="next-steps"></a>次のステップ
 
 - [Azure AD REST API の使用](../api-reference/v1.0/resources/azure_ad_overview.md)方法を確認する。
 - Azure AD を使用して Microsoft Graph の[認証](auth_overview.md)を実行する。 
-- [Azure AD サインイン](https://azure.microsoft.com/ja-JP/develop/identity/signin/)をアプリまたは Web サイトに統合する
+- [Azure AD サインイン](https://azure.microsoft.com/en-us/develop/identity/signin/)をアプリまたは Web サイトに統合する
 - Azure AD API の最新情報については、[Changelog](changelog.md) を参照してください。
-- Microsoft Graph の使用方法についてのさらに多くのアイデアについては、[サンプル](https://developer.microsoft.com/ja-JP/graph/graph/examples)を参照してください。
+- Microsoft Graph の使用方法についてのさらに多くのアイデアについては、[サンプル](https://developer.microsoft.com/en-us/graph/graph/examples)を参照してください。
