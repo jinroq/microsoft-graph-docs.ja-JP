@@ -13,23 +13,23 @@
 ## <a name="http-request"></a>HTTP 要求
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/names(<name>)/range/Row
-POST /workbook/worksheets/{id|name}/range(address='<address>')/Row
-POST /workbook/tables/{id|name}/columns/{id|name}/range/Row
+POST /workbook/names/{name}/range/row
+POST /workbook/worksheets/{id|name}/range(address='<address>')/row
+POST /workbook/tables/{id|name}/columns/{id|name}/range/row
 
 ```
 ## <a name="request-headers"></a>要求ヘッダー
 | 名前       | 説明|
 |:---------------|:----------|
-| Authorization  | ベアラー {トークン}。必須。 |
+| 承認  | ベアラー {トークン}。必須。 |
 | Workbook-Session-Id  | 変更を保持するかどうかを決定するブック セッション ID。省略可能。|
 
 ## <a name="request-body"></a>要求本文
 要求本文で、次のパラメーターを含む JSON オブジェクトを指定します。
 
-| パラメーター    | Type   |説明|
+| パラメーター    | 型   |説明|
 |:---------------|:--------|:----------|
-|row|number|取得する範囲の行番号。0 を起点とする番号になります。|
+|行|Int32|取得する範囲の行番号。0 を起点とする番号になります。|
 
 ## <a name="response"></a>応答
 
@@ -39,18 +39,20 @@ POST /workbook/tables/{id|name}/columns/{id|name}/range/Row
 以下は、この API を呼び出す方法の例です。
 ##### <a name="request"></a>要求
 以下は、要求の例です。
-<!-- {
+<!--{
   "blockType": "request",
-  "name": "range_row"
+  "isComposable": true,
+  "name": "range_row",
+  "idempotent": true,
+  "@type": "requestBodyResourceFor.range_row"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/names(<name>)/range/Row
+POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/names/{name}/range/row
 Content-type: application/json
 Content-length: 18
 
 {
-  "row": {
-  }
+  "row": 2
 }
 ```
 
@@ -59,7 +61,7 @@ Content-length: 18
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.range"
+  "@odata.type": "microsoft.graph.workbookRange"
 } -->
 ```http
 HTTP/1.1 200 OK

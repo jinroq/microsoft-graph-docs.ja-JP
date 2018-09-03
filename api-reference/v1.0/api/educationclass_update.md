@@ -19,19 +19,18 @@ PATCH /education/classes/{id}
 ## <a name="request-headers"></a>要求ヘッダー
 | ヘッダー       | 値 |
 |:---------------|:--------|
-| Authorization  | ベアラー {トークン}。必須。  |
-| Content-Type  | application/json  |
+| 承認  | ベアラー {トークン}。必須。  |
+| コンテンツ-タイプ  | アプリケーション /json  |
 
 ## <a name="request-body"></a>要求本文
 要求本文で、更新する関連フィールドの値を指定します。 要求本文に含まれない既存のプロパティは、以前の値のままになるか、他のプロパティ値の変更に基づいて再計算されます。 最適なパフォーマンスを得るために、変更されていない既存の値を含めないでください。
 
-| プロパティ     | 型   |説明|
+| プロパティ     | タイプ   |説明|
 |:---------------|:--------|:----------|
-|description|String| クラスの説明。|
-|displayName|String| クラスの名前。|
-|mailNickname|String| 機能が有効になっている場合に、すべてのユーザーに電子メールを送信する電子メールのエイリアス。 |
-<!-- Please verify the revised description here. -->
-|classCode|String| 学校が使用するクラス コード。| |externalId|String| 同期システムからのクラスの ID。 | |externalName|String|同期システム内のクラスの名前。| |externalSource|string| このクラスを作成した方法。 使用可能な値: `sis`、`manual`、`enum_sentinel`.|
+|説明|文字列| クラスの説明。|
+|displayName|文字列| クラスの名前。|
+|mailNickname|文字列| 機能が有効になっている場合に、すべてのユーザーに電子メールを送信する電子メールのエイリアス。 |
+<!-- Please verify the revised description here. --> |classCode|String| 学校が使用するクラス コード。| |externalId|String| 同期システムからのクラスの ID。 | |externalName|String|同期システム内のクラスの名前。| |externalSource|string| このクラスを作成した方法。 可能な値は、`sis`、`manual`、`enum_sentinel` です。
 
 ## <a name="response"></a>応答
 成功した場合、このメソッドは `200 OK` 応答コードと、応答本文で更新された [educationClass](../resources/educationclass.md) オブジェクトを返します。
@@ -43,7 +42,7 @@ PATCH /education/classes/{id}
   "name": "update_educationclass"
 }-->
 ```http
-PATCH https://graph.microsoft.com/v1.0/education/classes/11014
+PATCH https://graph.microsoft.com/v1.0/education/classes/{class-id}
 Content-type: application/json
 Content-length: 224
 

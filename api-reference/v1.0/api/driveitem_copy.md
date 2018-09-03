@@ -2,16 +2,17 @@
 author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
-title: "ファイルまたはフォルダーをコピーする"
-ms.openlocfilehash: 6740091f887e42a14b2a42c99ee586af4254c473
-ms.sourcegitcommit: 7aea7a97e36e6d146214de3a90fdbc71628aadba
+title: ファイルまたはフォルダーをコピーする
+ms.openlocfilehash: 2b54f183daa716f1a872f373a499368fdfd558d9
+ms.sourcegitcommit: abf4b739257e3ffd9d045f783ec595d846172590
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23265254"
 ---
 # <a name="copy-a-driveitem"></a>DriveItem をコピーする
 
-新しい親アイテムの下に、または新しい名前を指定して、[driveItem][item-resource] (すべての子を含む) のコピーを非同期で作成します。
+新しい親アイテムの下に、または新しい名前を指定して、[driveItem][item-resource] (すべての子を含む) のコピーを非同期に作成します。
 
 ## <a name="permissions"></a>アクセス許可
 
@@ -43,16 +44,16 @@ POST /users/{userId}/drive/items/{itemId}/copy
 | 名前            | 値                                          | 説明                                                                                                 |
 |:----------------|:-----------------------------------------------|:------------------------------------------------------------------------------------------------------------|
 | parentReference | [ItemReference](../resources/itemreference.md) | 省略可能。コピーが作成される親アイテムへの参照。                                         |
-| name            | string                                         | 省略可能。コピーの新しい名前。これを指定しない場合は、元の名前と同じ名前が使用されます。    |
+| 名前            | 文字列                                         | 省略可能。コピーの新しい名前。これを指定しない場合は、元の名前と同じ名前が使用されます。    |
 
-**注:** _parentReference_ には、ターゲット フォルダーの `driveId` パラメーターと `id` パラメーターを含める必要があります。
+**注:** _parentReference_ には、ターゲット フォルダーの `driveId` と `id` パラメーターを含める必要があります。
 
 ## <a name="example"></a>例
 
 この例では、`{item-id}` で識別されるファイルを `driveId` および `id` の値で識別されるフォルダーにコピーします。
 ファイルの新しいコピーの名前は `contoso plan (copy).txt` になります。
 
-<!-- { "blockType": "request", "name": "copy-item", "scopes": "files.readwrite", "target": "action" } -->
+<!-- { "blockType": "request", "name": "copy-item", "scopes": "files.readwrite", "tags": "service.graph", "target": "action" } -->
 
 ```http
 POST /me/drive/items/{item-id}/copy
@@ -78,7 +79,7 @@ HTTP/1.1 202 Accepted
 Location: https://contoso.sharepoint.com/_api/v2.0/monitor/4A3407B5-88FC-4504-8B21-0AABD3412717
 ```
 
-`Location` ヘッダーの値は、コピー操作の現在の状況を返すサービスの URL を提供します。
+ヘッダーの値は、コピー操作の現在の状況を返すサービスの URL を提供します。`Location`
 この情報を使用して、[コピーがいつ終了したかを判断する](../../../concepts/long_running_actions_overview.md)ことができます。
 
 ### <a name="remarks"></a>備考

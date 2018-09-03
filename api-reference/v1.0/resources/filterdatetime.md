@@ -3,10 +3,10 @@
 値をフィルター処理するときに日付をフィルター処理する方法を表します。
 
 ## <a name="properties"></a>プロパティ
-| プロパティ       | 型    |説明|
+| プロパティ     | タイプ   |説明|
 |:---------------|:--------|:----------|
-|date|string|データをフィルターをかけるための ISO8601 形式の日付です。|
-|specificity|string|データを保持するのに、日付をどの程度詳細に使用するか。たとえば、date が 2005-04-02 で "month" に設定した場合、フィルター操作では 2005 年 4 月の日付データを含むすべての行が保持されます。可能な値は、`Year`、`Monday`、`Day`、`Hour`、`Minute`、`Second` です。|
+|日付|文字列|データをフィルターをかけるための ISO8601 形式の日付です。|
+|特定性|文字列|データを保持するのに、日付をどの程度詳細に使用するか。 たとえば、日付が 2005-04-02 で "month" に設定した場合、フィルター操作では 2009 年 4 月の日付データを含むすべての行が保持されます。 指定できる値は、  `Year`、`Monday`、`Day`、`Hour`、`Minute`、`Second` です。|
 
 ## <a name="relationships"></a>リレーションシップ
 なし
@@ -21,7 +21,7 @@
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.filterDateTime"
+  "@odata.type": "microsoft.graph.workbookFilterDateTime"
 }-->
 
 ```json

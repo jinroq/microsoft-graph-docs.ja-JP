@@ -7,23 +7,23 @@
 
 | メソッド           | 戻り値の型    |説明|
 |:---------------|:--------|:----------|
-|[Get ChartSeries](../api/chartseries_get.md) | [ChartSeries](chartseries.md) |chartSeries オブジェクトのプロパティと関係を読み取ります。|
+|[ChartSeries を取得する](../api/chartseries_get.md) | [WorkbookChartSeries](chartseries.md) |chartSeries オブジェクトのプロパティと関係を読み取ります。|
 |[ChartPoints を作成する](../api/chartseries_post_points.md) |[ChartPoints](chartpoint.md)| ポイント コレクションに投稿して、新しい ChartPoints を作成します。|
 |[ポイントを一覧表示する](../api/chartseries_list_points.md) |[ChartPoints](chartpoint.md) コレクション| ChartPoints オブジェクトのコレクションを取得します。|
-|[Update](../api/chartseries_update.md) | [ChartSeries](chartseries.md)    |ChartSeries オブジェクトを更新します。 |
-|[List](../api/chartseries_list.md) | [ChartSeries](chartseries.md) コレクション |chartSeries オブジェクトのコレクションを取得します。 |
-|[Itemat](../api/chartseriescollection_itemat.md)|[ChartSeries](chartseries.md)|コレクション内の位置に基づいてデータ系列を取得します。|
+|[更新する](../api/chartseries_update.md) | [WorkbookChartSeries](chartseries.md) |ChartSeries オブジェクトを更新します。 |
+|[リスト](../api/chartseries_list.md) | [WorkbookChartSeries](chartseries.md) コレクション |chartSeries オブジェクトのコレクションを取得します。 |
+|[Itemat](../api/chartseriescollection_itemat.md)|[WorkbookChartSeries](chartseries.md)|コレクション内の位置に基づいてデータ系列を取得します。|
 
 ## <a name="properties"></a>プロパティ
-| プロパティ       | 型    |説明|
+| プロパティ     | タイプ   |説明|
 |:---------------|:--------|:----------|
-|name|string|グラフのデータ系列の名前を表します。|
+|名前|文字列|グラフのデータ系列の名前を表します。|
 
 ## <a name="relationships"></a>関係
-| リレーションシップ | 型    |説明|
+| リレーションシップ | 型   |説明|
 |:---------------|:--------|:----------|
-|format|[ChartSeriesFormat](chartseriesformat.md)|グラフ の系列の書式設定を表します。これには塗りつぶしと線の書式設定などがあります。値の取得のみ可能です。|
-|points|[ChartPoints](chartpoint.md) コレクション|データ系列にあるすべてのポイントのコレクションを返します。値の取得のみ可能です。|
+|形式|[WorkbookChartSeriesFormat](chartseriesformat.md)|グラフ の系列の書式設定を表します。これには塗りつぶしと線の書式設定などがあります。値の取得のみ可能です。|
+|ポイント|[WorkbookChartPoint](chartpoint.md) コレクション|データ系列にあるすべてのポイントのコレクションを返します。値の取得のみ可能です。|
 
 ## <a name="json-representation"></a>JSON 表記
 
@@ -31,10 +31,11 @@
 
 <!-- {
   "blockType": "resource",
+  "baseType": "microsoft.graph.entity",
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.chartSeries"
+  "@odata.type": "microsoft.graph.workbookChartSeries"
 }-->
 
 ```json

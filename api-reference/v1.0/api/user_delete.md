@@ -8,7 +8,7 @@
 |:--------------------|:---------------------------------------------------------|
 |委任 (職場または学校のアカウント) | Directory.AccessAsUser.All    |
 |委任 (個人用 Microsoft アカウント) | サポートされていません。    |
-|アプリケーション | サポートされていません。 |
+|アプリケーション | User.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 要求
 <!-- { "blockType": "ignored" } -->
@@ -19,7 +19,7 @@ DELETE /users/{id | userPrincipalName}
 ## <a name="request-headers"></a>要求ヘッダー
 | ヘッダー       | 値|
 |:-----------|:------|
-| Authorization  | ベアラー {トークン}。必須。  |
+| 承認  | ベアラー {トークン}。必須。  |
 
 ## <a name="request-body"></a>要求本文
 このメソッドには、要求本文を指定しません。
@@ -36,7 +36,7 @@ DELETE /users/{id | userPrincipalName}
   "name": "delete_user"
 }-->
 ```http
-DELETE https://graph.microsoft.com/v1.0/users/mba9a3254-9f18-4209-aeb3-9e42a35b5be4
+DELETE https://graph.microsoft.com/v1.0/users/{user-id}
 ```
 ##### <a name="response"></a>応答
 以下は、応答の例です。 
