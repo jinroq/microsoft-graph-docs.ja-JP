@@ -23,7 +23,7 @@ GET /reports/getYammerDeviceUsageUserDetail(period='{period_value}')
 GET /reports/getYammerDeviceUsageUserDetail(date={date_value})
 ```
 
-## <a name="request-parameters"></a>要求パラメーター
+## <a name="function-parameters"></a>関数パラメーター
 
 要求 URL に、クエリ パラメーターと有効な値を指定します。
 
@@ -93,7 +93,7 @@ Location: https://reports.office.com/data/download/JDFKdf2_eJXKS034dbc7e0t__XDe
 
 #### <a name="request"></a>要求
 
-`date` パラメーターで呼び出した場合、レポートの使用は特定の日に制限されます。
+パラメーターで呼び出した場合、レポートの使用は特定の日に制限されます。`date`
 
 <!--{
   "blockType": "request",

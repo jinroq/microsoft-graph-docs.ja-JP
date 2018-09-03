@@ -23,7 +23,7 @@ GET /reports/getYammerActivityUserDetail(period='{period_value}')
 GET /reports/getYammerActivityUserDetail(date={date_value})
 ```
 
-## <a name="request-parameters"></a>要求パラメーター
+## <a name="function-parameters"></a>関数パラメーター
 
 要求 URL に、次のうちの 1 つのパラメーターと有効な値を指定します。
 
@@ -91,7 +91,7 @@ Location: https://reports.office.com/data/download/JDFKdf2_eJXKS034dbc7e0t__XDe
 
 #### <a name="request"></a>要求
 
-`date` パラメーターを指定すると、レポートのスコープは、与えられた日に行われた活動になります。
+パラメーターを指定すると、レポートのスコープは、与えられた日に行われた活動になります。`date`
 
 <!--{
   "blockType": "request",

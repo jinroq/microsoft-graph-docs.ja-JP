@@ -22,13 +22,13 @@
 GET /reports/getYammerGroupsActivityCounts(period='{period_value}')
 ```
 
-## <a name="request-parameters"></a>要求パラメーター
+## <a name="function-parameters"></a>関数パラメーター
 
 要求 URL に、次のパラメーターと有効な値を指定します。
 
 | パラメーター | 型   | 説明                              |
 | :-------- | :----- | :--------------------------------------- |
-| period    | 文字列 | レポートを集計する期間の長さを指定します。 {period_value} でサポートされている値は D7、D30、D90、D180 です。 これらの値は、D*n* の形式 (*n* はレポートを集計する日数) に従います。 必須。 |
+| 期間    | 文字列 | レポートを集計する期間の長さを指定します。 {period_value} でサポートされている値は D7、D30、D90、D180 です。 これらの値は、D*n* の形式 (*n* はレポートを集計する日数) に従います。 必須。 |
 
 ## <a name="request-headers"></a>要求ヘッダー
 

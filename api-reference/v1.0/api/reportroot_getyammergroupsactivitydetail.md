@@ -23,14 +23,14 @@ GET /reports/getYammerGroupsActivityDetail(period='{period_value}')
 GET /reports/getYammerGroupsActivityDetail(date={date_value})
 ```
 
-## <a name="request-parameters"></a>要求パラメーター
+## <a name="function-parameters"></a>関数パラメーター
 
 要求 URL に、次のうちの 1 つのパラメーターと有効な値を指定します。
 
 | パラメーター | 型   | 説明                              |
 | :-------- | :----- | :--------------------------------------- |
-| period    | 文字列 | レポートを集計する期間の長さを指定します。 {period_value} でサポートされている値は D7、D30、D90、D180 です。 これらの値は、D*n* の形式 (*n* はレポートを集計する日数) に従います。 |
-| date      | 日付   | 何らかのアクティビティを実行したユーザーを表示する日付を指定します。 {date_value} は YYYY-MM-DD の形式にします。 このレポートは、過去 30 日間のみ利用可能であり、{date_value} はその範囲内の日付である必要があります。 |
+| 期間    | 文字列 | レポートを集計する期間の長さを指定します。 {period_value} でサポートされている値は D7、D30、D90、D180 です。 これらの値は、D*n* の形式 (*n* はレポートを集計する日数) に従います。 |
+| 日付      | 日付   | 何らかのアクティビティを実行したユーザーを表示する日付を指定します。 {date_value} は YYYY-MM-DD の形式にします。 このレポートは、過去 30 日間のみ利用可能であり、{date_value} はその範囲内の日付である必要があります。 |
 
 > **注:** URL に期間または日付を設定する必要があります。
 
@@ -90,7 +90,7 @@ Location: https://reports.office.com/data/download/JDFKdf2_eJXKS034dbc7e0t__XDe
 ```
 
 #### <a name="request"></a>要求
-`date` で呼び出した場合、レポートは指定した日のアクティビティに制限されます。
+で呼び出した場合、レポートは指定した日のアクティビティに制限されます。`date`
 
 <!--{
   "blockType": "request",
