@@ -18,8 +18,8 @@ Microsoft Graph のエラーは、標準の HTTP 状態コード、および JSO
 |:------------|:--------------------------------|:---------------------------------------------------------------------------------------------------------------------------------------|
 | 400         | 要求が正しくありません (Bad Request)                     | 形式が正しくない、または無効なため、要求を処理できません。                                                                       |
 | 401         | 権限がありません (Unauthorized)                    | リソースの必要な認証情報が見つからないか、無効です。                                                   |
-| 403         | 禁止されています                       | 要求されたリソースへのアクセスが拒否されました。ユーザーに十分なアクセス許可がない可能性があります。 <br /><br /> **重要:**条件付きアクセス ポリシーがリソースに適用される場合、HTTP 403; Forbidden error=insufficent_claims が返される場合があります。 Microsoft Graph と条件付きアクセスの詳細は、「[Azure Active Directory の条件付きアクセスについての開発者ガイド](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-conditional-access-developer)」を参照してください。  |
-| 404         | 見つかりません (Not Found)                       | 要求されたリソースは存在しません。                                                                                                  |
+| 403         | 禁止されています (Forbidden)                       | 要求されたリソースへのアクセスが拒否されました。ユーザーに十分なアクセス許可がない可能性があります。 <br /><br /> **重要:** 条件付きアクセス ポリシーがリソースに適用される場合、HTTP 403; Forbidden error=insufficent_claims が返される場合があります。 Microsoft Graph と条件付きアクセスの詳細は、「[Azure Active Directory の条件付きアクセスについての開発者ガイド](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-conditional-access-developer)」を参照してください。  |
+| 404         | 見つかりません                       | 要求されたリソースは存在しません。                                                                                                  |
 | 405         | メソッドが許可されていません (Method Not Allowed)              | 要求の HTTP メソッドはリソースで許可されていません。                                                                         |
 | 406         | 許容されません (Not Acceptable)                  | このサービスでは、Accept ヘッダーで要求された形式をサポートしていません。                                                                |
 | 409         | 競合 (Conflict)                        | 現在の状態が要求に必要なものと競合しています。たとえば、指定された親フォルダーが存在しない可能性があります。                   |
@@ -36,11 +36,11 @@ Microsoft Graph のエラーは、標準の HTTP 状態コード、および JSO
 | 503         | サービスは利用できません             | メンテナンスまたは過負荷のため、このサービスは一時的に利用できません。後で要求を繰り返すことができます。期間については、Retry-After ヘッダーで指定されている可能性があります。|
 | 504         | ゲートウェイ タイムアウト                 | プロキシとして動作しているサーバーが、要求を完了しようとするときにアクセスが必要なアップストリーム サーバーからの応答を時間内に受信しませんでした。503 と同時に発生する場合があります。 |
 | 507         | 記憶域の不足 (Insufficient Storage)            | 記憶域の最大クォータに達しました。                                                                                            |
-| 509         | 帯域幅の上限を超えました        | 帯域幅の上限を超えたため、アプリケーションが調整されました。さらに時間が経過すると、アプリは要求を再試行できます。 |
+| 509         | 帯域幅の上限を超えました (Bandwidth Limit Exceeded)        | 帯域幅の上限を超えたため、アプリケーションが調整されました。さらに時間が経過すると、アプリは要求を再試行できます。 |
 
-エラー応答は、**エラー**という名前の 1 つのプロパティを含む 1 つの JSON オブジェクトです。 このオブジェクトには、すべてのエラーの詳細が含まれます。 HTTP 状態コードの代わりに、またはこれに加えて、ここに返される情報を使用することができます。 完全な JSON エラー本体の例を以下に示します。
+エラー応答は、**エラー**という名前の 1 つのプロパティを含む 1 つの JSON オブジェクトです。このオブジェクトには、すべてのエラーの詳細が含まれます。HTTP 状態コードの代わりに、またはこれに加えて、ここに返される情報を使用することができます。完全な JSON エラー本体の例を以下に示します。
 
-<!-- { "blockType": "example", "@odata.type": "sample.error", "expectError": true, "name": "example-error-response"} -->
+<!-- { "blockType": "ignored", "@odata.type": "odata.error", "expectError": true, "name": "example-error-response" } -->
 ```json
 {
   "error": {
@@ -66,7 +66,7 @@ Microsoft Graph のエラーは、標準の HTTP 状態コード、および JSO
 
 エラー リソースは、これらのリソースで構成されます。
 
-<!-- { "blockType": "resource", "@odata.type": "sample.error" } -->
+<!-- { "blockType": "resource", "@odata.type": "odata.error" } -->
 ```json
 {
   "error": { "@odata.type": "odata.error" }  
@@ -88,22 +88,15 @@ Microsoft Graph のエラーは、標準の HTTP 状態コード、および JSO
 
 | プロパティ名  | 値                  | 説明\                                                                                               |
 |:---------------|:-----------------------|:-----------------------------------------------------------------------------------------------------------|
-| **code**       | string                 | 発生したエラーのエラー コード文字列                                                            |
-| **message**    | string                 | 発生したエラーに関する開発者用メッセージ。これはユーザーには直接表示されません。 |
-| **innererror** | error object           | 省略可能。最上位レベルのエラーよりも詳細である可能性のある追加のエラー オブジェクト。                     |
-<!-- {
-  "type": "#page.annotation",
-  "description": "Understand the error format for the API and error codes.",
-  "keywords": "error response, error, error codes, innererror, message, code",
-  "section": "documentation",
-  "tocPath": "Misc/Error Responses"
-} -->
+| **コード**       | 文字列                 | 発生したエラーのエラー コード文字列                                                            |
+| **メッセージ**    | 文字列                 | 発生したエラーに関する開発者用メッセージ。これはユーザーには直接表示されません。 |
+| **innererror** | エラー オブジェクト           | 省略可能。最上位レベルのエラーよりも詳細である可能性のある追加のエラー オブジェクト。                     |
 
 <!--<a name="msg_code_property"> </a> -->
 
 #### <a name="code-property"></a>コードのプロパティ
 
-`code` プロパティには次のいずれかの値が含まれます。 アプリは、これらのエラーのいずれかを処理するように準備する必要があります。
+`code` プロパティには次のいずれかの値が含まれます。アプリは、これらのエラーのいずれかを処理するように準備する必要があります。
 
 | コード                      | 説明
 |:--------------------------|:--------------
@@ -123,7 +116,7 @@ Microsoft Graph のエラーは、標準の HTTP 状態コード、および JSO
 | **quotaLimitReached**     | ユーザーがクォータ制限に達しました。
 | **unauthenticated**       | 呼び出し元が認証されていません。
 
-`innererror` オブジェクトには、さらに詳細な追加のエラー コードを持つ別の複数の `innererror` オブジェクトが再帰的に含まれる可能性があります。 エラーを処理する際に、アプリは使用可能なすべてのエラー コード間をループして、アプリが理解する最も詳細なコードを使用する必要があります。 より詳細なコードの一部は、このページの下部に一覧表示されています。
+オブジェクトには、さらに詳細な追加のエラー コードを持つ別の複数の `innererror` オブジェクトが再帰的に含まれる可能性があります。エラーを処理する際に、アプリは使用可能なすべてのエラー コード間をループして、アプリが理解する最も詳細なコードを使用する必要があります。より詳細なコードの一部は、このページの下部に一覧表示されています。`innererror`
 
 エラー オブジェクトが予期したとおりのエラーであることを確認するには、`innererror` オブジェクト全体をループして、予期したエラー コードを検索する必要があります。次に例を示します。
 
@@ -146,7 +139,7 @@ public bool IsError(string expectedErrorCode)
 ルートにある `message` プロパティには、開発者が読み取ることを目的としたエラー メッセージが含まれます。エラー メッセージはローカライズされておらず、直接ユーザーに表示すべきではありません。エラーを処理する際に、コードは `message` 値を入力するべきではありません。これらの値はいつでも変更でき、多くの場合失敗した要求に固有の動的情報が含まれるためです。`code` プロパティで返されるエラー コードに対してのみ、コードを記述する必要があります。
 
 #### <a name="detailed-error-codes"></a>詳細なエラー コード
-入れ子になった `innererror` オブジェクト内でアプリが検出する可能性のある他のエラーの一部を、以下に示します。 アプリでこれらの処理を行うことは必須ではありませんが、処理することもできます。 サービスでは常に新しいエラー コードが追加されたり、以前のコードが返されなくなったりすることがあります。そのため、[基本のエラー コード](#code-property)をすべてのアプリが処理できることが重要です。
+入れ子になった `innererror` オブジェクト内でアプリが検出する可能性のある他のエラーの一部を、以下に示します。アプリでこれらの処理を行うことは必須ではありませんが、処理することもできます。サービスでは常に新しいエラー コードが追加されたり、以前のコードが返されなくなったりすることがあります。そのため、[基本のエラー コード](#code-property)をすべてのアプリが処理できることが重要です。
 
 | コード                               | 説明
 |:-----------------------------------|:----------------------------------------------------------
@@ -198,3 +191,15 @@ public bool IsError(string expectedErrorCode)
 
 - [Microsoft Graph API release notes and known issues](microsoft-graph-api-release-notes-known-issues.md )
 - [Hands on lab: Deep dive into the Microsoft Graph API](http://dev.office.com/hands-on-labs/4585) -->
+
+<!-- {
+  "type": "#page.annotation",
+  "description": "Understand the error format for the API and error codes.",
+  "keywords": "error response, error, error codes, innererror, message, code",
+  "section": "documentation",
+  "suppressions": [
+    " Warning: /concepts/errors.md:
+      Multiple resources found in file, but we only support one per file. 'odata.error,odata.error'. Skipping."
+  ],
+  "tocPath": "Misc/Error Responses"
+} -->

@@ -1,6 +1,6 @@
 # <a name="iosvppebookassignment-resource-type"></a>iosVppEBookAssignment リソースの種類
 
-> **注:**Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
+> **注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
 
 グループへの iOS VPP 電子ブックの割り当てに使用されるプロパティが含まれています。
 
@@ -16,22 +16,22 @@
 |[iosVppEBookAssignment の更新](../api/intune_books_iosvppebookassignment_update.md)|[iosVppEBookAssignment](../resources/intune_books_iosvppebookassignment.md)|[iosVppEBookAssignment](../resources/intune_books_iosvppebookassignment.md) のプロパティを更新します。|
 
 ## <a name="properties"></a>プロパティ
-|プロパティ|型|説明|
+|プロパティ|タイプ|説明|
 |:---|:---|:---|
-|id|String|エンティティのキー。 [managedEBookAssignment](../resources/intune_books_managedebookassignment.md) から継承します|
-|target|[deviceAndAppManagementAssignmentTarget](../resources/intune_books_deviceandappmanagementassignmenttarget.md)|電子ブックの割り当て先です。 [managedEBookAssignment](../resources/intune_books_managedebookassignment.md) から継承します|
-|installIntent|String|電子ブックのインストールの目的です。 [managedEBookAssignment](../resources/intune_books_managedebookassignment.md) から継承します。可能な値は、`available`、`required`、`uninstall`、`availableWithoutEnrollment` です。|
+|ID|文字列|エンティティのキー。 [managedEBookAssignment](../resources/intune_books_managedebookassignment.md) から継承します|
+|target|[deviceAndAppManagementAssignmentTarget](../resources/intune_shared_deviceandappmanagementassignmenttarget.md)|電子ブックの割り当て先。 [managedEBookAssignment](../resources/intune_books_managedebookassignment.md) から継承します|
+|installIntent|[installIntent](../resources/intune_shared_installintent.md)|電子ブックのインストールの目的。 [managedEBookAssignment](../resources/intune_books_managedebookassignment.md) から継承します。 可能な値は、`available`、`required`、`uninstall`、`availableWithoutEnrollment` です。|
 
 ## <a name="relationships"></a>リレーションシップ
 なし
 ## <a name="json-representation"></a>JSON 表記
 以下は、リソースの JSON 表記です。
-<!-- {
+<!--{
   "blockType": "resource",
   "keyProperty": "id",
+  "baseType": "microsoft.graph.managedEBookAssignment",
   "@odata.type": "microsoft.graph.iosVppEBookAssignment"
-}
--->
+}-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.iosVppEBookAssignment",

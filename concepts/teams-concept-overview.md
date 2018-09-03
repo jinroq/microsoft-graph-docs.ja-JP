@@ -1,4 +1,4 @@
-# <a name="microsoft-teams-teamwork-api-overview"></a>Microsoft Teams のチームワーク API の概要
+# <a name="microsoft-teams-api-overview-preview"></a>Microsoft Teams API の概要 (プレビュー)
 
 Microsoft Teams は、チームワークおよびインテリジェントな通信のための究極のハブです。 1 億 2 千万人を超えるユーザーが利用する Office 365 のパワーと規模に基づいて構築されている Microsoft Teams は、チャット ベースのコラボレーション、会議、通話、およびエンタープライズ ボイスのさまざまな機能を提供します。
 
@@ -16,7 +16,7 @@ Web サイト、サービス、およびネイティブ プラットフォーム
 
 ![Microsoft Teams API をタブ、ボット、Web サイト、およびサービスから呼び出す](images/TeamsAppEndpoints.png)
 
-これらのコラボレーション ツールには、Microsoft Teams 内部で実行される Microsoft Graph 対応のタブまたはボット アプリが含まれます。 また、Web サイトまたは Web サービスからなど、Microsoft Teams アプリの外部で Microsoft Graph を呼び出すこともできます。 すでに Web サイトが Microsoft Graph 対応になっている場合、[Microsoft Teams デベロッパー プラットフォーム](https://docs.microsoft.com/ja-JP/microsoftteams/platform/#pivot=home&panel=home-all)を使用して、既存の Web サイト コードを使用するタブ アプリを作成することにより、そのサイトの機能を Microsoft Teams のために使用することができます。
+これらのコラボレーション ツールには、Microsoft Teams 内部で実行される Microsoft Graph 対応のタブまたはボット アプリが含まれます。 また、Web サイトまたは Web サービスからなど、Microsoft Teams アプリの外部で Microsoft Graph を呼び出すこともできます。 すでに Web サイトが Microsoft Graph 対応になっている場合、[Microsoft Teams デベロッパー プラットフォーム](https://docs.microsoft.com/en-us/microsoftteams/platform/#pivot=home&panel=home-all)を使用して、既存の Web サイト コードを使用するタブ アプリを作成することにより、そのサイトの機能を Microsoft Teams のために使用することができます。
 
 Microsoft Teams タブまたはボット アプリがシナリオに適したものではない場合は、アプリの種類として次のいずれかを選んでください。
 
@@ -31,7 +31,6 @@ Microsoft Teams タブまたはボット アプリがシナリオに適したも
 |メッセージング拡張機能|ユーザーが会話の中で拡張カードに関するクエリを実行したり共有したりできるようにします。|
 |サービス|Web サービスによりクライアント アプリケーションを拡張して Microsoft Graph データを使用できるようにします。|
 
-
 ### <a name="create-multiple-teams-and-channels"></a>複数のチームおよびチャネルを作成する
 
 顧客が、アプリにリンクした新しい[チーム](../api-reference/beta/resources/team.md)および[チャネル](../api-reference/beta/resources/channel.md)を作成できるようにします。 Microsoft Teams API の使用により、数多くのチームの作成やそこへのユーザーとチャネルの登録の作業を容易にします。
@@ -45,9 +44,7 @@ Microsoft Graph を使用することにより、業務上の新しい問題が�
 ## <a name="next-steps"></a>次の手順
 
 - [Microsoft Teams API の使用](../api-reference/beta/resources/teams_api_overview.md)方法を確認する。
-- [チーム](../api-reference/beta/resources/team.md)、[チャネル](../api-reference/beta/resources/channel.md)、および [グループ](.../api-reference/v1.0/resources/group.md)のリソースのメソッド、プロパティ、およびリレーションシップについて詳しく調べる。
-- [Graph エクスプローラー](https://developer.microsoft.com/ja-JP/graph/graph-explorer)で API をお試しください。
-- [Microsoft Teams プログラミング モデル](https://docs.microsoft.com/ja-JP/microsoftteams/platform/concepts/concepts-overview)に関する詳細を読む。
+- [チーム](../api-reference/beta/resources/team.md)、[チャネル](../api-reference/beta/resources/channel.md)、および [グループ](../api-reference/v1.0/resources/group.md)のリソースのメソッド、プロパティ、およびリレーションシップについて詳しく調べる。
+- [Graph エクスプローラー](https://developer.microsoft.com/en-us/graph/graph-explorer)で API をお試しください。
+- [Microsoft Teams プログラミング モデル](https://docs.microsoft.com/en-us/microsoftteams/platform/concepts/concepts-overview)に関する詳細を読む。
 - [サンプル コード](https://github.com/OfficeDev/microsoft-teams-sample-graph)を試す。
-
-

@@ -28,11 +28,11 @@ Microsoft Graph のサービスは、Microsoft 世界規模のクラウドの一
 
 ## <a name="connect-to-school-services"></a>学校用サービスに接続する
 
-Microsoft Graph を使用することにより、教育機関用 Microsoft 365 サービスのライセンスを付与された学生、教師、および学校に達することができます。 ユーザーの同意を得た上で、Microsoft Graph の教育機関 API を使用することにより、Office 365 のリソースとデータを、学校、学生、教師、クラス、入学、および割り当てを含む教育機関のシナリオと関連する情報によって強化します。 
+Microsoft Graph を使用することにより、教育機関用 Microsoft 365 サービスのライセンスを付与された学生、教師、および学校に達することができます。 ユーザーの同意を得た上で、Microsoft Graph の教育機関 API を使用することにより、Office 365 のリソースとデータを、学校、学生、教師、クラス、入学、および割り当てを含む教育機関のシナリオと関連する情報によって強化します。  [教育 API との統合](education-concept-overview.md)の詳細を学習します。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
-- [おすすめのシナリオ](https://developer.microsoft.com/ja-JP/graph/examples)を確認します。
+- [おすすめのシナリオ](https://developer.microsoft.com/en-us/graph/examples)を確認します。
 - [Graph エクスプローラー](https://developer.microsoft.com/graph/graph-explorer)でサンプルの要求を試します。
 - [クイック スタート](https://developer.microsoft.com/graph/quick-start)を使用して、すぐに実行できるサンプル アプリをセットアップします。
 - 目次の「**詳細情報**」を見て、さまざまなシナリオで使用できるサービスや機能についての詳細情報を参照します。 

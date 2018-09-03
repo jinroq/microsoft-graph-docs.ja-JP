@@ -21,17 +21,16 @@ GET /users/{id | userPrincipalName}/onenote/notebooks/getRecentNotebooks(include
 
 ユーザーの `<id | userPrincipalName>` は、要求を行うために使用された承認トークンにおいてエンコードされたユーザーと一致しなければなりません。
 
-## <a name="request-headers"></a>要求ヘッダー
-| 名前       | 説明|
-|:---------------|:----------|
-| Authorization  | Bearer {code}|
-
-## <a name="request-parameters"></a>要求パラメーター
-要求 URL に、次のクエリ パラメーターを値で指定します。
+## <a name="function-parameters"></a>関数パラメーター
 
 | パラメーター    | 型   |説明|
 |:---------------|:--------|:----------|
-|includePersonalNotebooks|Boolean|ユーザーが所有しているノートブックを含みます。 ユーザーが所有しているノートブックを含むには、`true` に設定します。そうでない場合は、`false` に設定します。 `includePersonalNotebooks` パラメーターを含めない場合、要求は `400` エラー応答を返します。|
+|includePersonalNotebooks|ブール値|ユーザーが所有しているノートブックを含みます。 ユーザーが所有しているノートブックを含むには、`true` に設定します。そうでない場合は、`false` に設定します。 `includePersonalNotebooks` パラメーターを含めない場合、要求は `400` エラー応答を返します。|
+
+## <a name="request-headers"></a>要求ヘッダー
+| 名前       | 説明|
+|:---------------|:----------|
+| 承認  | Bearer {code}|
 
 ## <a name="request-body"></a>要求本文
 このメソッドには、要求本文を指定しません。

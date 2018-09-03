@@ -11,10 +11,10 @@ Azure Active Directory テナントを表します。テナントでは読み取
 |:---------------|:--------|:----------|
 |[組織を取得する](../api/organization_get.md) | [組織](organization.md) |組織オブジェクトのプロパティと関係を読み取ります。|
 |[更新](../api/organization_update.md) | [組織](organization.md)  |organization オブジェクトを更新します。 更新できるプロパティは、**marketingNotificationMails**、**technicalNotificationMails**、**securityComplianceNotificationMails**、**securityComplianceNotificationPhones**、**privacyProfile** のみです。 |
-|**オープン拡張機能**| | ||**オープン拡張機能**| | |
+|**オープン拡張機能**| 
 |[オープン拡張機能を作成する](../api/opentypeextension_post_opentypeextension.md) |[openTypeExtension](opentypeextension.md)| オープン拡張機能を作成し、新規または既存のリソースにカスタム プロパティを追加します。|
 |[オープン拡張機能を取得する](../api/opentypeextension_get.md) |[openTypeExtension](opentypeextension.md) コレクション| 拡張機能の名前で識別されるオープン拡張機能を取得します。|
-|**スキーマ拡張機能**| | |
+|**スキーマ拡張機能**| 
 |[スキーマ拡張機能の値を追加する](../../../concepts/extensibility_schema_groups.md) || スキーマ拡張機能の定義を作成し、それを使用してカスタマイズされた種類のデータをリソースに追加します。|
 
 ## <a name="properties"></a>プロパティ
@@ -29,7 +29,7 @@ Azure Active Directory テナントを表します。テナントでは読み取
 | deletionTimestamp                    | DateTimeOffset                                                    | Timestamp 型は、ISO 8601 形式を使用して日付と時刻の情報を表し、必ず UTC 時間です。たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、次のようになります。 `'2014-01-01T00:00:00Z'`                                                                                     |
 | dirSyncEnabled                       | ブール値                                                           | このオブジェクトがオンプレミスのディレクトリから同期される場合は **true**。このオブジェクトが最初にオンプレミスのディレクトリから同期されていて、今後は同期されない場合は **false**。このオブジェクトがオンプレミスのディレクトリから一度も同期されたことがない場合は **null** (既定値)。                        |
 | displayName                          | 文字列                                                            | テナントの表示名。                                                                                                                                                                                                                                                     |
-| ID                                   | 文字列                                                            | テナントの一意識別子。[directoryObject](directoryobject.md) から継承されます。キー。null 許容ではありません。読み取り専用です。                                                                                                                                                            |
+| id                                   | 文字列                                                            | テナントの一意識別子。[directoryObject](directoryobject.md) から継承されます。キー。null 許容ではありません。読み取り専用です。                                                                                                                                                            |
 | marketingNotificationEmails          | String コレクション                                                 | null 許容ではありません。                                                                                                                                                                                                                                                                        |
 | objectType                           | 文字列                                                            | オブジェクトの種類を識別する文字列です。テナントの場合、値は常に「会社」です。                                                                                                                                                                                                 |
 | postalCode                           | 文字列                                                            | 組織の住所の郵便番号                                                                                                                                                                                                                                      |
