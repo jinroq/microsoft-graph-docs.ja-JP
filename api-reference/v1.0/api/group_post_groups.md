@@ -28,14 +28,17 @@ POST /groups
 | 承認  | 文字列  | ベアラー {トークン}。必須。 |
 
 ## <a name="request-body"></a>要求本文
-次の表は、グループを作成するときに最低限指定する必要のある [group](../resources/group.md) リソースのプロパティを示しています。 
+次の表は、グループ作成時に指定する [group](../resources/group.md) リソースのプロパティを示します。 
 
 | プロパティ | タイプ | 説明|
 |:---------------|:--------|:----------|
-| displayName | 文字列 | アドレス帳に表示するグループの名前。 |
-| mailEnabled | ブール値 | メールが有効なグループの場合は、**true** に設定します。Office 365 グループを作成する場合は、このプロパティを **true** に設定します。動的グループまたはセキュリティ グループを作成する場合は、このプロパティを **false** に設定します。|
-| mailNickname | 文字列 | グループの電子メール エイリアス。 |
-| securityEnabled | ブール値 | セキュリティが有効なグループの場合は、**true** に設定します。動的グループまたはセキュリティ グループを作成する場合は、これを **true** に設定します。Office 365 グループを作成する場合は、これを **false** に設定します。 |
+| displayName | 文字列 | アドレス帳に表示するグループの名前。 必須。 |
+| mailEnabled | ブール値 | メールが有効なグループの場合は、**true** に設定します。 Office 365 グループを作成する場合は、**true** に設定します。 動的グループまたはセキュリティ グループを作成する場合は、**false** に設定します。 必須。 |
+| mailNickname | 文字列 | グループの電子メール エイリアス。 必須。 |
+| securityEnabled | ブール値 | セキュリティが有効なグループの場合は、**  true** を設定します。 動的グループまたはセキュリティ グループを作成する場合は、**true** に設定します。 Office 365 グループを作成する場合は、**true** に設定します。 必須。 |
+| owners | 文字列コレクション | このプロパティは、作成時のグループの所有者を表します。 省略可能。 |
+| メンバー | 文字列コレクション | このプロパティは、作成時のグループのメンバーを表します。 省略可能。 |
+
 
 Office 365 グループまたは動的グループを作成している場合は、以下のように **groupTypes** プロパティを指定します。
 
@@ -47,14 +50,17 @@ Office 365 グループまたは動的グループを作成している場合は
 | 動的 | "DynamicMembership" |
 | セキュリティ | 設定しない。 |
 
-グループの必要に応じて他の書き込み可能なプロパティを指定します。詳細については、[group](../resources/group.md) リソースのプロパティをご覧ください。
+
+>**注:** ユーザー コンテキストおよび所有者を指定せずにプログラムで Office 365 グループを作成すると、匿名のグループが作成されます。  これを行うと、関連する SharePoint Online サイトは手動操作が行なわれるまで自動的に作成されなくなります。  
+
+グループの必要に応じて他の書き込み可能なプロパティを指定します。詳細については、[group](../resources/group.md) リソースのプロパティを参照してください。
 
 ## <a name="response"></a>応答
 成功した場合、このメソッドは `201 Created` 応答コードと、応答本文で[グループ](../resources/group.md) オブジェクトを返します。
 
 ## <a name="example"></a>例
-#### <a name="request"></a>要求
-Office 365 グループを作成する要求の例を次に示します。
+#### <a name="request-1"></a>要求 1
+最初の例は、Office 365 グループの作成を要求するものです。
 <!-- {
   "blockType": "request",
   "name": "create_group"
@@ -76,7 +82,7 @@ Content-length: 244
 }
 ```
 
-#### <a name="response"></a>応答
+#### <a name="response-1"></a>応答 1
 応答の例を次に示します。
 >**注:** 読みやすくするために、ここに示す応答オブジェクトは短くされている場合があります。実際の呼び出しからは、すべてのプロパティが返されます。
 <!-- {
@@ -99,6 +105,55 @@ Content-length: 244
   "mailEnabled": true,
   "mailNickname": "library",
   "securityEnabled": false
+}
+```
+
+#### <a name="request-2"></a>要求 2
+2 番目の例は、指定した所有者で Office 365 グループの作成を要求するものです。
+<!-- {
+  "blockType": "request"
+}-->
+```http
+POST https://graph.microsoft.com/v1.0/groups
+Content-Type: application/json
+
+{
+  "description": "Group with owners",
+  "displayName": "Group1",
+  "groupTypes": [
+    "Unified"
+  ],
+  "mailEnabled": true,
+  "mailNickname": "group1",
+  "securityEnabled": false,
+  "owners@odata.bind": [
+    "https://graph.microsoft.com/v1.0/users/26be1845-4119-4801-a799-aea79d09f1a2"
+  ]
+}
+```
+
+#### <a name="response-2"></a>応答 2
+成功した応答の例を次に示します。
+>**注:** 読みやすくするために、ここに示す応答オブジェクトは短くされている場合があります。実際の呼び出しからは、すべてのプロパティが返されます。
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.group"
+} -->
+```http
+HTTP/1.1 201 Created
+Content-type: application/json
+
+{
+    "description": "Group with owners",
+    "displayName": "Group1",
+    "groupTypes": [
+        "Unified"
+    ],
+    "mail": "group1@contoso.onmicrosoft.com",
+    "mailEnabled": true,
+    "mailNickname": "group1",
+    "securityEnabled": false
 }
 ```
 
