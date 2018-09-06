@@ -25,16 +25,16 @@ GET /users/{id|userPrincipalName}/outlook/supportedTimeZones
 GET /me/outlook/supportedTimeZones(TimeZoneStandard=microsoft.graph.timeZoneStandard'{timezone_format}')
 GET /users/{id|userPrincipalName}/outlook/supportedTimeZones(TimeZoneStandard=microsoft.graph.timeZoneStandard'{timezone_format}')
 ```
-## <a name="request-headers"></a>要求ヘッダー
-| 名前       | 型 | 説明|
-|:---------------|:--------|:----------|
-| 承認  | 文字列  | ベアラー {トークン}。必須。 |
-
 
 ## <a name="function-parameters"></a>関数パラメーター
 | パラメーター       | 型 | 説明|
 |:---------------|:--------|:----------|
 | TimeZoneStandard  | TimeZoneStandard  | タイム ゾーンの形式。 サポートされている値は `Windows` および `Iana` です。 省略可能。 |
+
+## <a name="request-headers"></a>要求ヘッダー
+| 名前       | 型 | 説明|
+|:---------------|:--------|:----------|
+| 承認  | string  | ベアラー {トークン}。必須。 |
 
 ## <a name="request-body"></a>要求本文
 このメソッドには、要求本文を指定しません。
