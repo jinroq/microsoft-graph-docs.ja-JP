@@ -1,8 +1,8 @@
-# <a name="integrate-security-api-alerts-with-your-siem-using-azure-monitor"></a>Azure Monitor を使ったセキュリティ API の警告と SIEM の統合
+# <a name="integrate-microsoft-graph-security-api-alerts-with-your-siem-using-azure-monitor"></a>Azure Monitor を使用して Microsoft Graph セキュリティ API の警告と SIEM を統合する
 
-Microsoft Graph のセキュリティ API は、単一の REST エンドポイントを介してさまざまなセキュリティ製品 (プロバイダーと呼ばれる) から出力されるセキュリティの警告を管理する機能を提供します。 組織によっては、Azure Monitor によって Azure 固有のログ データが SIEM ソリューションに既に取り込まれている場合があります。 統合を簡単にするため、REST API で利用できるセキュリティの警告は Azure Monitor でも利用できるようになっています。 Azure Monitor と SIEM ソリューションの統合が既に構成されている組織では、組織のセキュリティの警告を Azure Monitor で利用できるデータに簡単に追加できます。 この記事では、この統合を有効にする手順について説明します。
+Microsoft Graph セキュリティ API を使用すると、単一の REST  エンド ポイント経由で、すべての Microsoft のセキュリティ製品 (プロバイダーと呼ばれます) からセキュリティ警告を管理することができます。 組織によっては、Azure Monitor 経由で Azure 固有のログ データが SIEM ソリューションにすでに取り込まれている可能性があります。 統合を簡素化するには、Microsoft Graph セキュリティ API 経由で使用可能なセキュリティ警告を、顧客が Azure Monitor を介してのサブスクリプションに設定することもできます。 Azure Monitor と SIEM ソリューションの統合が既に構成されている組織では、組織のセキュリティの警告を Azure Monitor で利用できるデータに簡単に追加できます。 この記事では、この統合を有効にする手順について説明します。
 
-Azure Monitor では、さまざまなベンダーの複数の異なる SIEM コネクタがサポートされています。 Azure Monitor データ用のコネクタを含む SIEM ツールの限定的なリストについては、[イベント ハブに送信された監視データを処理する方法](https://docs.microsoft.com/ja-JP/azure/monitoring-and-diagnostics/monitor-stream-monitoring-data-event-hubs#what-can-i-do-with-the-monitoring-data-being-sent-to-my-event-hub)の記事を参照してください。 この記事の手順 1 と手順 2 は、イベント ハブを介した使用をサポートするすべての Azure Monitor コネクタに関連しています。 この記事では、Splunk SIEM コネクタのエンド ツー エンドの構成について説明します。
+Azure Monitor では、いくつかの SIEM 製品へのコネクタをサポートしています。 サポートされている SIEM 製品の一覧は、「[監視データをイベント ハブへ送信](https://docs.microsoft.com/en-us/azure/monitoring-and-diagnostics/monitor-stream-monitoring-data-event-hubs#what-can-i-do-with-the-monitoring-data-being-sent-to-my-event-hub)」にあります。 この記事の手順 1 と 2 の指示では、イベント ハブ経由の消費をサポートするすべての Azure Monitor のコネクタに言及します。 この記事では、Splunk SIEM コネクタのエンド  ツー エンドの統合について説明します。
 
 この統合プロセスは、以下の手順から構成されます。
 
@@ -26,7 +26,7 @@ Azure Monitor では、さまざまなベンダーの複数の異なる SIEM コ
 - イベント ハブの既定のコンシューマー グループを使用することをお勧めします。 2 つの異なるツールが同じイベント ハブの同じデータを使用しない限り、追加のコンシューマー グループを作成したり、別のコンシューマー グループを使用したりする必要はありません。
 - 通常、イベント ハブのデータを使用するマシンのポート 5671 と 5672 を開く必要があります。
 
-[Event Hubs のよく寄せられる質問](https://docs.microsoft.com/ja-JP/azure/event-hubs/event-hubs-faq)も参照してください。
+[Event Hubs のよく寄せられる質問](https://docs.microsoft.com/en-us/azure/event-hubs/event-hubs-faq)も参照してください。
 
 1. [Azure Portal](https://portal.azure.com/) にログオンし、画面左上の **[リソースの作成]** を選択します。
 
@@ -44,12 +44,12 @@ Azure Monitor では、さまざまなベンダーの複数の異なる SIEM コ
 
 Azure Monitor を使った組織のセキュリティの警告のストリーミングを有効にする操作は、Azure Active Directory (Azure AD) テナント全体で 1 回だけ実行します。 セキュリティ API がライセンスされ、有効になっているすべての製品が Azure Monitor にセキュリティの警告を送信し始め、Azure Monitor がコンシューマー アプリケーションにデータをストリーミングし始めます。 組織にライセンスされ、配置された追加のセキュリティ API 対応製品は、この同じ Azure Monitor 構成を使用してセキュリティの警告を自動的にストリーミングします。 組織内で追加の統合作業は発生しません。
 
-セキュリティの警告は、通常は組織内のセキュリティ対応担当者と全体管理者だけが表示できる高い権限を持つデータです。 このため、テナントのセキュリティの警告と SIEM システムの統合を構成する手順では、Azure AD の全体管理者アカウントが必要です。 このアカウントは、セットアップ中に組織のセキュリティの警告を Azure Monitor に送信するように要求するときに 1 回だけ使用されます。
+セキュリティの警告は、通常は組織内のセキュリティ対応担当者と全体管理者だけが表示できる高い権限を持つデータです。 このため、テナントのセキュリティの警告と SIEM システムの統合を構成する手順では、Azure AD の全体管理者アカウントが必要です。 このアカウントは、セットアップ中に、組織のセキュリティ警告を Azure Monitor に送信するように要求するとき、1 回だけ必要となります。
 
-> **注:** この時点では、Azure Monitor の [診断設定] ブレードでテナントレベルのリソースを構成できません。 セキュリティ API の警告はテナントレベルのリソースであるため、Azure Resource Manager API を使用して、組織のセキュリティの警告に対応するように Azure Monitor を構成する必要があります。
+> **注:** この時点では、Azure Monitor の [診断設定] ブレードは、テナント レベルのリソースの構成をサポートしていません。 Microsoft Graph セキュリティ API の警告はテナント レベルのリソースです。Azure リソース マネージャー API を使用して、組織のセキュリティ警告の消費をサポートするように、Azure Monitor を構成する必要があります。
 
 1. Azure サブスクリプションで "microsoft.insights" (Azure Monitor) をリソース プロバイダーとして登録します。  
-> **注:** Azure サブスクリプションで "Microsoft.SecurityGraph" (Security Graph API) をリソース プロバイダーとして登録しないでください。"Microsoft.SecurityGraph" はテナント レベル プロバイダーだからです。 テナント レベル構成は後述する #6 で扱います。 
+> **注:** "Microsoft.SecurityGraph" (Microsoft Graph セキュリティ API) は、前述のようにテナント レベルのリソースですので、Azure サブスクリプションのリソース プロバイダーとしては登録しないでください。 テナント レベルの構成は後述する項目 6 の一部となります。
 
 2. Azure Resource Manager API を使用して Azure Monitor を構成するには、[ARMClient](https://github.com/projectkudu/ARMClient) ツールを入手します。 このツールは、コマンド ラインから Azure Portal に REST API 呼び出しを送信するために使用されます。
 
@@ -78,12 +78,12 @@ Azure Monitor を使った組織のセキュリティの警告のストリーミ
     JSON ファイル内の値を次のように置き換えます。
 
      **SUBSCRIPTION_ID** は、組織からセキュリティの警告を送信するときに使用するリソース グループとイベント ハブの名前空間をホストする Azure サブスクリプションのサブスクリプション ID です。
-     
+
      **RESOURCE_GROUP** は、組織からセキュリティの警告を送信するときに使用するイベント ハブの名前空間を含むリソース グループです。
-     
+
      **EVENT_HUB_NAMESPACE** は、組織からセキュリティの警告を送信するときに使用するイベント ハブの名前空間です。
-     
-     **“days”:** 7 は、イベント ハブにメッセージを保持する日数です。
+
+     **“days”:** は、イベント ハブにメッセージを保持する日数です。
 
 4. ARMClient.exe を起動するディレクトリに、このファイルを JSON 形式で保存します。 たとえば、ファイル名を **AzMonConfig.json** とします。
 
@@ -108,27 +108,16 @@ Azure Monitor を使った組織のセキュリティの警告のストリーミ
 
 ## <a name="step-3-download-and-install-the-azure-monitor-add-on-for-splunk-which-will-allow-splunk-to-consume-security-alerts"></a>手順 3: Splunk がセキュリティの警告を使用できるように Splunk 向けの Azure Monitor アドオンをダウンロードしてインストールする
 
-1. **Splunk Enterprise** をダウンロードするか、既存の Splunk Enterprise インストールを使用します。
-2. [Splunk 向けの Azure Monitor アドオン](https://github.com/Microsoft/AzureMonitorAddonForSplunk)をダウンロードしてインストールします。 インストール手順の詳細については、[インストール](https://github.com/Microsoft/AzureMonitorAddonForSplunk/wiki/Installation)を参照してください。
-3. Splunk 向けの Azure Monitor アドオンはセキュリティ API の警告が Azure Monitor の統合で使用可能になる前に作成されているため、追加の手順が 1 つ必要になります。 Azure Monitor 用のセキュリティ API で使用される新しいログ カテゴリと、組織のセキュリティの警告用に構成したイベント ハブの名前を認識するように、2 つの Splunk 構成ファイルを変更する必要があります。
-
-    a.  Splunk インストール ディレクトリ内のパス **\etc\apps\TA-Azure_Monitor\bin\app** から **logCategories.json** ファイルを開きます。
-   標準のログ カテゴリのリストに次の行を追加します。  
-    `“MICROSOFT.SECURITYGRAPH/ALERT”: “_json”`  
-    これにより、JSON として扱うログの種類が Splunk 向けの Azure Monitor アドオンに通知されます。
-
-    b. Splunk インストール ディレクトリ内のパス **\etc\apps\TA-Azure_Monitor\bin\app** から **hubs.json** ファイルを開きます。  
-    標準のイベント ハブのリストに次の行を追加します。  
-    `“insights-logs-alert”: “tenantId”`  
-    これにより、イベント ハブの名前が Splunk 向けの Azure Monitor アドオンに通知されます。また、該当するセキュリティの警告はテナントレベルのリソースであるため、このリソース ID が Azure AD テナント ID であることが指定されます。 前述のプロビジョニング時にカスタム名を選択した場合は、必ず上記のイベント ハブの名前 (insights-logs-alert) を変更してください。
-
+1. この統合では、Splunk Enterprise の展開のみをサポートします。
+2. 「[Splunk 向け Azure Monitor アドオン](https://github.com/Microsoft/AzureMonitorAddonForSplunk)」をダウンロードしてインストールします。 インストール手順の詳細については、「[インストール](https://github.com/Microsoft/AzureMonitorAddonForSplunk/wiki/Installation)」を参照してください。 **Splunk バージョン 1.2.9 またはそれ以降の Azure Monitor アドオンだけがサポートされています。**
+3. アドオンを正常にインストールした後、「[Azure Monitor アドオンの構成 wiki](https://github.com/Microsoft/AzureMonitorAddonForSplunk/wiki/Configuration-of-Splunk )」で説明する構成手順に従って、Splunk を構成します。
 4. アドオンのインストール手順に示されているように、アドオンは Splunk Web の [App の管理] ページで有効/無効を切り替えることで動作します。 または、Splunk を再起動します。
 
 ## <a name="step-4-register-an-application-with-your-tenant-azure-active-directory-which-splunk-will-use-to-read-from-the-event-hub"></a>手順 4: Splunk がイベント ハブからの読み取りに使用するアプリケーションをテナントの Azure Active Directory に登録する
 
-Splunk では、イベント ハブからセキュリティの警告を読み取るのに必要なアクセス許可とシークレットを取得するために、組織の Azure Active Directory 内のアプリケーションを登録する必要があります。 ドメイン内の標準的なユーザー アカウントでアプリを登録できます。 
+Splunk では、必要なアクセス許可と、Azure Monitor イベント ハブへの認証に必要なアプリ資格情報の付与のために、組織の Azure Active Directory 内でのアプリケーション登録が必要です。
 
-1. Azure Portal で、**[アプリの登録]** に移動して **[新しいアプリケーションの登録]** を選択します。
+1. Azure ポータル で、**[アプリの登録]** を開き、**[新しいアプリケーションの登録]** を選択します。
 
     ![[アプリの登録] の画像](../concepts/images/app-registration.png)
 
@@ -187,4 +176,31 @@ Azure Key Vault は、アプリケーションが実行時に使用する ID、�
 
     ![Azure Monitor のフィールド](../concepts/images/azure-monitor-fields.png)
 
-3. **[次へ]** を選択すると、Azure Monitor から取り込まれた組織のセキュリティの警告の検索が開始されます。
+3. **[次へ]** を選択し、Azure Monitor から取り込まれた組織のセキュリティ警告の検索を開始します。
+
+## <a name="optional-use-splunk-search-to-explore-data"></a>(オプション) Splunk 検索を使用してデータを探索する
+
+Azure Monitor の Splunk プラグインをセットアップすると、Splunk インスタンスにより、構成されたイベント ハブからのイベントの取得が開始されます。 既定では、splunk は、検索を許可するために、Graph セキュリティ警告スキーマの各プロパティにインデックスを付けます。
+
+Graph セキュリティ警告を検索するか、ダッシュ ボードを作成するか、または検索クエリに Splunk の警告を設定するには、[アプリ] -> [Splunk の検索・レポート アプリ] へ移動します。
+
+**例**:<br/>
+Graph のセキュリティ警告を検索してみてください。
+
+- 検索バーに `sourcetype="amdl:securitygraph:alert"` と入力して、グラフ セキュリティ API を通じてすべての警告を表示します。 右側には、Azure Monitor ログの最上位レベルのプロパティが表示され、Graph のセキュリティ警告が  [プロパティ] フィールドの下に表示されます。<br/>
+- 左側のウィンドウには、選択したフィールドと興味深いフィールドが表示されます。 選択したフィールドを使用してダッシュ ボードまたは Splunk の警告を作成することができます。また、選択したフィールドを右クリックして追加または削除することもできます。  
+> **注:** 次の検索クエリに示すように、必要に応じて検索を制限できます。 例では、Graph のセキュリティ警告を、Azure のセキュリティ センターからの高深刻度警告によりフィルター処理します。 表示する選択フィールドとして、`eventDatetime`、`severity`、`status`、`provider` も使用しています。 さらに上級の検索語句については、「[splunk 検索チュートリアル](http://docs.splunk.com/Documentation/Splunk/7.1.2/SearchTutorial/WelcometotheSearchTutorial)」 をご覧ください。
+
+ ![splunk_search_query](../concepts/images/splunk_search_query.png)
+> 検索クエリー: `sourcetype="amdl:securitygraph:alert" "properties.vendorInformation.provider"=ASC "properties.severity"=High | rename properties.eventDataTime as eventDateTime properties.severity as severity properties.vendorInformation.provider as provider properties.status as status`
+
+Splunk では、画面の右上にある [名前を付けて保存] メニュー オプションを使用して、検索結果に対して複数の操作を許可します。 検索フィルターに基づいて、レポート、ダッシュ ボード パネル、または警告を作成することができます。
+前のクエリに基づいて、イベント ストリームのあるダッシュ ボードの例を次に示します。 Microsoft Graph のサイトの詳細にさらにアクセスするために、各イベントにドリルダウン リンクを追加することができます。 「 [Splunk ドリル ダウンのドキュメント](http://docs.splunk.com/Documentation/Splunk/7.1.2/Viz/DrilldownIntro)」 を参照してください。
+
+ ![splunk_search_results](../concepts/images/splunk_search_results.png)
+
+または、タイムライン グラフとしてダッシュ ボードを作成することができます。
+
+ ![splunk_search_timeline](../concepts/images/splunk_search_timeline.png)
+
+詳細については、「[Splunk の検索とレポートのチュートリアル](http://docs.splunk.com/Documentation/Splunk/7.1.2/SearchTutorial/WelcometotheSearchTutorial)」をフォローしてください。
