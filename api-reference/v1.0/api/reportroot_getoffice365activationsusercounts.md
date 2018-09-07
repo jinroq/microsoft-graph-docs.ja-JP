@@ -1,6 +1,6 @@
 # <a name="reportroot-getoffice365activationsusercounts"></a>reportRoot: getOffice365ActivationsUserCounts
 
-有効なユーザーで、デスクトップまたはデバイスで Office サブスクリプションがアクティブ化されているユーザーの数を取得します。
+有効なユーザーで、デスクトップ、デバイス、または共有のコンピューターで Office サブスクリプションがアクティブ化されているユーザーの数を取得します。
 
 > **注:** 別のレポートのビューとレポート名についての詳細は、「[Office 365 レポート: Microsoft Office ライセンス認証](https://support.office.com/client/Office-activations-87c24ae2-82e0-4d1e-be01-c3bcc3f18c60)」を参照してください。
 
@@ -41,6 +41,7 @@ GET /reports/getOffice365ActivationsUserCounts
 - 製品の種類
 - 割り当て済み
 - アクティブ
+- 共有コンピューターのライセンス認証
 
 ## <a name="example"></a>例
 
@@ -82,5 +83,5 @@ Location: https://reports.office.com/data/download/JDFKdf2_eJXKS034dbc7e0t__XDe
 HTTP/1.1 200 OK
 Content-Type: application/octet-stream
 
-Report Refresh Date,Product Type,Assigned,Activated
+Report Refresh Date,Product Type,Assigned,Activated,Shared Computer Activation
 ```

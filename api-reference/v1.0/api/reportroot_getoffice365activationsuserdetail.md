@@ -47,6 +47,7 @@ GET /reports/getOffice365ActivationsUserDetail
 - Windows 10 Mobile
 - iOS
 - Android
+- 共有コンピューター上でアクティブ化
 
 ## <a name="example"></a>例
 
@@ -88,5 +89,5 @@ Location: https://reports.office.com/data/download/JDFKdf2_eJXKS034dbc7e0t__XDe
 HTTP/1.1 200 OK
 Content-Type: application/octet-stream
 
-Report Refresh Date,User Principal Name,Display Name,Product Type,Last Activated Date,Windows,Mac,Windows 10 Mobile,iOS,Android
+Report Refresh Date,User Principal Name,Display Name,Product Type,Last Activated Date,Windows,Mac,Windows 10 Mobile,iOS,Android,Activated On Shared Computer
 ```
