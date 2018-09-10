@@ -1,8 +1,6 @@
 # <a name="list-devicemanagementtroubleshootingevents"></a>deviceManagementTroubleshootingEvents のリスト
 
-> **重要:**Microsoft Graph のベータ版 (/beta) の API はプレビュー中で、変更されることがあります。 実稼働アプリケーションでは、これらの API の使用はサポートされていません。
-
-> **注:**Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
+> **注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
 
 [deviceManagementTroubleshootingEvent](../resources/intune_troubleshooting_devicemanagementtroubleshootingevent.md) オブジェクトのプロパティとリレーションシップをリストします。
 ## <a name="prerequisites"></a>前提条件
@@ -26,8 +24,8 @@ GET /deviceManagement/troubleshootingEvents
 ## <a name="request-headers"></a>要求ヘッダー
 |ヘッダー|値|
 |:---|:---|
-|Authorization|ベアラー &lt;トークン&gt; が必須。|
-|Accept|application/json|
+|承認|ベアラー &lt;トークン&gt; が必須。|
+|Accept|アプリケーションまたは json|
 
 ## <a name="request-body"></a>要求本文
 このメソッドには、要求本文を指定しません。
@@ -39,7 +37,7 @@ GET /deviceManagement/troubleshootingEvents
 ### <a name="request"></a>要求
 以下は、要求の例です。
 ``` http
-GET https://graph.microsoft.com/beta/deviceManagement/troubleshootingEvents
+GET https://graph.microsoft.com/v1/deviceManagement/troubleshootingEvents
 ```
 
 ### <a name="response"></a>応答
@@ -60,6 +58,7 @@ Content-Length: 277
   ]
 }
 ```
+
 
 
 

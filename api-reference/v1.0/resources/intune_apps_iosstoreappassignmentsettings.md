@@ -7,7 +7,7 @@
 [mobileAppAssignmentSettings](../resources/intune_apps_mobileappassignmentsettings.md) からの継承
 
 ## <a name="properties"></a>プロパティ
-|プロパティ|タイプ|説明|
+|プロパティ|型|説明|
 |:---|:---|:---|
 |vpnConfigurationId|文字列型 (String)|このアプリに適用するための VPN 構成 ID。|
 
@@ -15,18 +15,21 @@
 なし
 ## <a name="json-representation"></a>JSON 表記
 以下は、リソースの JSON 表記です。
-<!-- {
+<!--{
   "blockType": "resource",
-  "baseType": "microsoft.graph.mobileAppAssignmentSettings",
   "@odata.type": "microsoft.graph.iosStoreAppAssignmentSettings"
-}
--->
+}-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.iosStoreAppAssignmentSettings",
   "vpnConfigurationId": "String"
 }
 ```
+
+
+
+
+
 
 
 

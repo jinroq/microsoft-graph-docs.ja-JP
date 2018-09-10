@@ -4,7 +4,7 @@
 
 プラットフォーム固有の登録の制限
 ## <a name="properties"></a>プロパティ
-|プロパティ|タイプ|説明|
+|プロパティ|型|説明|
 |:---|:---|:---|
 |platformBlocked|ブール型 (Boolean)|登録で対象プラットフォームをブロックします|
 |personalDeviceEnrollmentBlocked|ブール型 (Boolean)|個人所有のデバイスの登録をブロックします|
@@ -15,11 +15,10 @@
 なし
 ## <a name="json-representation"></a>JSON 表記
 以下は、リソースの JSON 表記です。
-<!-- {
+<!--{
   "blockType": "resource",
   "@odata.type": "microsoft.graph.deviceEnrollmentPlatformRestriction"
-}
--->
+}-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.deviceEnrollmentPlatformRestriction",
@@ -29,6 +28,11 @@
   "osMaximumVersion": "String"
 }
 ```
+
+
+
+
+
 
 
 

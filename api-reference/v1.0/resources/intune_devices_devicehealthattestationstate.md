@@ -4,7 +4,7 @@
 
 まだ文書化されていません
 ## <a name="properties"></a>プロパティ
-|プロパティ|タイプ|説明|
+|プロパティ|型|説明|
 |:---|:---|:---|
 |lastUpdateDateTime|String|最終更新のタイムスタンプ。|
 |contentNamespaceUrl|String|DHA レポートのバージョン。 (名前空間のバージョン)|
@@ -84,6 +84,11 @@
   "healthAttestationSupportedStatus": "String"
 }
 ```
+
+
+
+
+
 
 
 
