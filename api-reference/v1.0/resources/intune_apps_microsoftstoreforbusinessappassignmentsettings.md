@@ -7,7 +7,7 @@
 [mobileAppAssignmentSettings](../resources/intune_apps_mobileappassignmentsettings.md) からの継承
 
 ## <a name="properties"></a>プロパティ
-|プロパティ|タイプ|説明|
+|プロパティ|型|説明|
 |:---|:---|:---|
 |useDeviceContext|ブール型 (Boolean)|ビジネス向け Microsoft Store モバイル アプリのデバイス実行コンテキストを使用するかどうか。|
 
@@ -17,7 +17,6 @@
 以下は、リソースの JSON 表記です。
 <!--{
   "blockType": "resource",
-  "baseType": "microsoft.graph.mobileAppAssignmentSettings",
   "@odata.type": "microsoft.graph.microsoftStoreForBusinessAppAssignmentSettings"
 }-->
 ``` json
@@ -26,6 +25,11 @@
   "useDeviceContext": true
 }
 ```
+
+
+
+
+
 
 
 

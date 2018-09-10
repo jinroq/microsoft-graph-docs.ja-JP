@@ -7,7 +7,7 @@
 [iosHomeScreenItem](../resources/intune_deviceconfig_ioshomescreenitem.md) からの継承
 
 ## <a name="properties"></a>プロパティ
-|プロパティ|タイプ|説明|
+|プロパティ|型|説明|
 |:---|:---|:---|
 |displayName|文字列型 (String)|アプリの名前。[iosHomeScreenItem](../resources/intune_deviceconfig_ioshomescreenitem.md) から継承|
 |pages|[iosHomeScreenFolderPage](../resources/intune_deviceconfig_ioshomescreenfolderpage.md) コレクション|アプリケーションの種類にする必要がある、ホーム画面レイアウト アイコンで構成されるページ。 このコレクションには、最大で 500 個の要素を含めることができます。|
@@ -16,12 +16,10 @@
 なし
 ## <a name="json-representation"></a>JSON 表記
 以下は、リソースの JSON 表記です。
-<!-- {
+<!--{
   "blockType": "resource",
-  "baseType": "microsoft.graph.iosHomeScreenItem",
   "@odata.type": "microsoft.graph.iosHomeScreenFolder"
-}
--->
+}-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.iosHomeScreenFolder",
@@ -41,6 +39,11 @@
   ]
 }
 ```
+
+
+
+
+
 
 
 

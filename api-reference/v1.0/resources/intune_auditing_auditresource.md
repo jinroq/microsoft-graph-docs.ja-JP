@@ -4,7 +4,7 @@
 
 監査のリソースのプロパティが含まれるクラス。
 ## <a name="properties"></a>プロパティ
-|プロパティ|タイプ|説明|
+|プロパティ|型|説明|
 |:---|:---|:---|
 |displayName|文字列型 (String)|表示名。|
 |modifiedProperties|[auditProperty](../resources/intune_auditing_auditproperty.md) コレクション|変更されたプロパティの一覧。|
@@ -35,6 +35,11 @@
   "resourceId": "String"
 }
 ```
+
+
+
+
+
 
 
 

@@ -7,7 +7,7 @@
 [windowsDeviceAccount](../resources/intune_devices_windowsdeviceaccount.md) からの継承
 
 ## <a name="properties"></a>プロパティ
-|プロパティ|タイプ|説明|
+|プロパティ|型|説明|
 |:---|:---|:---|
 |password|文字列|まだ文書化されていない、[windowsDeviceAccount](../resources/intune_devices_windowsdeviceaccount.md) からの継承|
 |userPrincipalName|文字列|まだ文書化されていません|
@@ -18,7 +18,6 @@
 以下は、リソースの JSON 表記です。
 <!--{
   "blockType": "resource",
-  "baseType": "microsoft.graph.windowsDeviceAccount",
   "@odata.type": "microsoft.graph.windowsDeviceAzureADAccount"
 }-->
 ``` json
@@ -28,6 +27,11 @@
   "userPrincipalName": "String"
 }
 ```
+
+
+
+
+
 
 
 

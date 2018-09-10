@@ -4,7 +4,7 @@
 
 RGB 色。
 ## <a name="properties"></a>プロパティ
-|プロパティ|タイプ|説明|
+|プロパティ|型|説明|
 |:---|:---|:---|
 |r|バイト型 (Byte)|赤の値|
 |g|バイト型 (Byte)|緑の値|
@@ -14,11 +14,10 @@ RGB 色。
 なし
 ## <a name="json-representation"></a>JSON 表記
 以下は、リソースの JSON 表記です。
-<!-- {
+<!--{
   "blockType": "resource",
   "@odata.type": "microsoft.graph.rgbColor"
-}
--->
+}-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.rgbColor",
@@ -27,6 +26,11 @@ RGB 色。
   "b": 1024
 }
 ```
+
+
+
+
+
 
 
 

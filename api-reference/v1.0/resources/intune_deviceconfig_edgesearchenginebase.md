@@ -4,7 +4,7 @@
 
 IT 管理者が MDM 制御デバイス用の既定の検索エンジンを設定できるようにします。 AllowSearchEngineCustomization ポリシーが設定されていない場合、ユーザーは上書きして既定の検索エンジンを変更することができます。
 ## <a name="properties"></a>プロパティ
-|プロパティ|タイプ|説明|
+|プロパティ|型|説明|
 |:---|:---|:---|
 
 ## <a name="relationships"></a>リレーションシップ
@@ -13,7 +13,6 @@ IT 管理者が MDM 制御デバイス用の既定の検索エンジンを設定
 以下は、リソースの JSON 表記です。
 <!--{
   "blockType": "resource",
-  "abstract": true,
   "@odata.type": "microsoft.graph.edgeSearchEngineBase"
 }-->
 ``` json
@@ -21,6 +20,11 @@ IT 管理者が MDM 制御デバイス用の既定の検索エンジンを設定
   "@odata.type": "#microsoft.graph.edgeSearchEngineBase"
 }
 ```
+
+
+
+
+
 
 
 

@@ -1,6 +1,6 @@
 # <a name="deleteuserfromsharedappledevice-action"></a>deleteUserFromSharedAppleDevice アクション
 
-> **注:**Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
+> **注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
 
 共有の Apple デバイスからユーザーを削除する
 ## <a name="prerequisites"></a>前提条件
@@ -26,17 +26,17 @@ POST /deviceManagement/detectedApps/{detectedAppId}/managedDevices/{managedDevic
 ## <a name="request-headers"></a>要求ヘッダー
 |ヘッダー|値|
 |:---|:---|
-|承認|ベアラー &lt;トークン&gt;が必須。|
-|承諾|application/json|
+|承認|ベアラー &lt;トークン&gt; が必須。|
+|Accept|アプリケーションまたは json|
 
 ## <a name="request-body"></a>要求本文
 要求本文で、パラメーターの JSON 表記を指定します。
 
-次の表は、このアクションで使用できるパラメーターを示しています。
+次の表に、このアクションで使用できるパラメーターを示します。
 
 |プロパティ|型|説明|
 |:---|:---|:---|
-|userPrincipalName|String|まだ文書化されていません|
+|userPrincipalName|文字列|まだ文書化されていません|
 
 
 
@@ -62,6 +62,11 @@ Content-length: 56
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
+
+
+
 
 
 

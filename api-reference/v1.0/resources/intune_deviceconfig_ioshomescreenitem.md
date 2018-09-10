@@ -4,7 +4,7 @@
 
 IOS ホーム画面上のアイテムを表します
 ## <a name="properties"></a>プロパティ
-|プロパティ|タイプ|説明|
+|プロパティ|型|説明|
 |:---|:---|:---|
 |displayName|文字列型 (String)|アプリの名前|
 
@@ -14,7 +14,6 @@ IOS ホーム画面上のアイテムを表します
 以下は、リソースの JSON 表記です。
 <!--{
   "blockType": "resource",
-  "abstract": true,
   "@odata.type": "microsoft.graph.iosHomeScreenItem"
 }-->
 ``` json
@@ -23,6 +22,11 @@ IOS ホーム画面上のアイテムを表します
   "displayName": "String"
 }
 ```
+
+
+
+
+
 
 
 

@@ -4,7 +4,7 @@
 
 診断状態を表します。
 ## <a name="properties"></a>プロパティ
-|プロパティ|タイプ|説明|
+|プロパティ|型|説明|
 |:---|:---|:---|
 |validationName|文字列型 (String)|検証のフレンドリ名|
 |state|文字列型 (String)|操作の状態|
@@ -26,6 +26,11 @@
   "mitigationInstruction": "String"
 }
 ```
+
+
+
+
+
 
 
 

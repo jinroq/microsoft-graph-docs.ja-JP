@@ -4,7 +4,7 @@
 
 モバイル アプリを実行できる iOS デバイスの種類のプロパティが含まれます。
 ## <a name="properties"></a>プロパティ
-|プロパティ|タイプ|説明|
+|プロパティ|型|説明|
 |:---|:---|:---|
 |iPad|ブール型 (Boolean)|アプリを iPad で実行できるかどうか。|
 |iPhoneAndIPod|ブール型 (Boolean)|アプリを iPhone および iPod で実行できるかどうか。|
@@ -24,6 +24,11 @@
   "iPhoneAndIPod": true
 }
 ```
+
+
+
+
+
 
 
 

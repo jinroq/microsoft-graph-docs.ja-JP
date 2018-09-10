@@ -4,7 +4,7 @@
 
 IPV4、IPV6 アドレス範囲を表す、IP 範囲基底クラス
 ## <a name="properties"></a>プロパティ
-|プロパティ|タイプ|説明|
+|プロパティ|型|説明|
 |:---|:---|:---|
 
 ## <a name="relationships"></a>リレーションシップ
@@ -13,7 +13,6 @@ IPV4、IPV6 アドレス範囲を表す、IP 範囲基底クラス
 以下は、リソースの JSON 表記です。
 <!--{
   "blockType": "resource",
-  "abstract": true,
   "@odata.type": "microsoft.graph.ipRange"
 }-->
 ``` json
@@ -21,6 +20,11 @@ IPV4、IPV6 アドレス範囲を表す、IP 範囲基底クラス
   "@odata.type": "#microsoft.graph.ipRange"
 }
 ```
+
+
+
+
+
 
 
 

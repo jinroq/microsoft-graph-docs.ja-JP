@@ -1,6 +1,6 @@
 # <a name="getuseridswithflaggedappregistration-function"></a>getUserIdsWithFlaggedAppRegistration 関数
 
-> **注:**Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
+> **注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
 
 まだ文書化されていません
 ## <a name="prerequisites"></a>前提条件
@@ -24,14 +24,14 @@ GET /deviceAppManagement/managedAppRegistrations/getUserIdsWithFlaggedAppRegistr
 ## <a name="request-headers"></a>要求ヘッダー
 |ヘッダー|値|
 |:---|:---|
-|承認|ベアラー &lt;トークン&gt;が必須。|
-|承諾|application/json|
+|承認|ベアラー &lt;トークン&gt; が必須。|
+|Accept|アプリケーションまたは json|
 
 ## <a name="request-body"></a>要求本文
 このメソッドには、要求本文を指定しません。
 
 ## <a name="response"></a>応答
-成功した場合、この関数は `200 OK` 応答コードと、応答本文で文字列コレクションを返します。
+成功した場合、この関数は `200 OK` 応答コードと、応答本文で String コレクションを返します。
 
 ## <a name="example"></a>例
 ### <a name="request"></a>要求
@@ -53,6 +53,11 @@ Content-Length: 79
   ]
 }
 ```
+
+
+
+
+
 
 
 

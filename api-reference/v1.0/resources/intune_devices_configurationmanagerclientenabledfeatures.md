@@ -4,7 +4,7 @@
 
 構成マネージャーのクライアントに対応した機能
 ## <a name="properties"></a>プロパティ
-|プロパティ|タイプ|説明|
+|プロパティ|型|説明|
 |:---|:---|:---|
 |inventory|Boolean|在庫が Intune によって管理されているかどうか|
 |modernApps|Boolean|モダン アプリケーションが Intune によって管理されているかどうか|
@@ -32,6 +32,11 @@
   "windowsUpdateForBusiness": true
 }
 ```
+
+
+
+
+
 
 
 

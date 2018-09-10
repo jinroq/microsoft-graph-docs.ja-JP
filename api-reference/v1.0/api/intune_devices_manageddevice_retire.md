@@ -27,7 +27,7 @@ POST /deviceManagement/detectedApps/{detectedAppId}/managedDevices/{managedDevic
 |ヘッダー|値|
 |:---|:---|
 |承認|ベアラー &lt;トークン&gt; が必須。|
-|承諾|application/json|
+|Accept|アプリケーションまたは json|
 
 ## <a name="request-body"></a>要求本文
 このメソッドには、要求本文を指定しません。
@@ -38,19 +38,20 @@ POST /deviceManagement/detectedApps/{detectedAppId}/managedDevices/{managedDevic
 ## <a name="example"></a>例
 ### <a name="request"></a>要求
 以下は、要求の例です。
-
-<!-- { "blockType": "request" } -->
 ``` http
 POST https://graph.microsoft.com/v1.0/users/{usersId}/managedDevices/{managedDeviceId}/retire
 ```
 
 ### <a name="response"></a>応答
 以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。
-
-<!-- { "blockType": "response" } -->
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
+
+
+
 
 
 

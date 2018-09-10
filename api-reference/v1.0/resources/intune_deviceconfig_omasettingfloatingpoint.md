@@ -7,10 +7,10 @@ OMA 設定の浮動小数点の定義です。
 [omaSetting](../resources/intune_deviceconfig_omasetting.md) からの継承
 
 ## <a name="properties"></a>プロパティ
-|プロパティ|タイプ|説明|
+|プロパティ|型|説明|
 |:---|:---|:---|
 |displayName|文字列|表示名。 [omaSetting](../resources/intune_deviceconfig_omasetting.md) からの継承|
-|説明|String|説明。 [omaSetting](../resources/intune_deviceconfig_omasetting.md) からの継承|
+|説明|文字列|説明。 [omaSetting](../resources/intune_deviceconfig_omasetting.md) からの継承|
 |omaUri|文字列|OMA。 [omaSetting](../resources/intune_deviceconfig_omasetting.md) からの継承|
 |値|単精度浮動小数点型 (Single)|値。|
 
@@ -20,7 +20,6 @@ OMA 設定の浮動小数点の定義です。
 以下は、リソースの JSON 表記です。
 <!--{
   "blockType": "resource",
-  "baseType": "microsoft.graph.omaSetting",
   "@odata.type": "microsoft.graph.omaSettingFloatingPoint"
 }-->
 ``` json
@@ -29,9 +28,14 @@ OMA 設定の浮動小数点の定義です。
   "displayName": "String",
   "description": "String",
   "omaUri": "String",
-  "value": 1.5
+  "value": "<Unknown Primitive Type Edm.Single>"
 }
 ```
+
+
+
+
+
 
 
 

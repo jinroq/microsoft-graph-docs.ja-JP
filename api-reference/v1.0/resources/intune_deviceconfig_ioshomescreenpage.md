@@ -4,7 +4,7 @@
 
 ホーム画面上のアプリとフォルダーが含まれるページ
 ## <a name="properties"></a>プロパティ
-|プロパティ|タイプ|説明|
+|プロパティ|型|説明|
 |:---|:---|:---|
 |displayName|文字列型 (String)|ページの名前|
 |アイコン|[iosHomeScreenItem](../resources/intune_deviceconfig_ioshomescreenitem.md) コレクション|特定ページに表示されるアプリとフォルダーの一覧。 このコレクションには、最大で 500 個の要素を含めることができます。|
@@ -42,6 +42,11 @@
   ]
 }
 ```
+
+
+
+
+
 
 
 

@@ -4,7 +4,7 @@
 
 Windows 情報保護のプロキシ化されたドメイン コレクション
 ## <a name="properties"></a>プロパティ
-|プロパティ|タイプ|説明|
+|プロパティ|型|説明|
 |:---|:---|:---|
 |displayName|文字列|表示名|
 |proxiedDomains|[proxiedDomain](../resources/intune_mam_proxieddomain.md) コレクション|プロキシ化されたドメインのコレクション|
@@ -30,6 +30,11 @@ Windows 情報保護のプロキシ化されたドメイン コレクション
   ]
 }
 ```
+
+
+
+
+
 
 
 

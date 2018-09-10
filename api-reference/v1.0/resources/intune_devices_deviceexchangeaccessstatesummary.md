@@ -4,7 +4,7 @@
 
 デバイスの Exchange アクセス状態の要約
 ## <a name="properties"></a>プロパティ
-|プロパティ|タイプ|説明|
+|プロパティ|型|説明|
 |:---|:---|:---|
 |allowedDeviceCount|Int32|Exchange アクセス状態が Allowed のデバイスの総数です。|
 |blockedDeviceCount|Int32|Exchange アクセス状態が Blocked のデバイスの総数です。|
@@ -30,6 +30,11 @@
   "unavailableDeviceCount": 1024
 }
 ```
+
+
+
+
+
 
 
 

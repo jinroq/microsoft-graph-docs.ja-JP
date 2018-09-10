@@ -4,7 +4,7 @@
 
 モバイル アプリの識別子です。
 ## <a name="properties"></a>プロパティ
-|プロパティ|タイプ|説明|
+|プロパティ|型|説明|
 |:---|:---|:---|
 
 ## <a name="relationships"></a>リレーションシップ
@@ -13,7 +13,6 @@
 以下は、リソースの JSON 表記です。
 <!--{
   "blockType": "resource",
-  "abstract": true,
   "@odata.type": "microsoft.graph.mobileAppIdentifier"
 }-->
 ``` json
@@ -21,6 +20,11 @@
   "@odata.type": "#microsoft.graph.mobileAppIdentifier"
 }
 ```
+
+
+
+
+
 
 
 

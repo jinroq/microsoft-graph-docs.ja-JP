@@ -4,10 +4,10 @@
 
 OMA 設定の定義。
 ## <a name="properties"></a>プロパティ
-|プロパティ|タイプ|説明|
+|プロパティ|型|説明|
 |:---|:---|:---|
 |displayName|文字列|表示名。|
-|説明|String|説明。|
+|説明|文字列|説明。|
 |omaUri|文字列|OMA。|
 
 ## <a name="relationships"></a>関係
@@ -16,7 +16,6 @@ OMA 設定の定義。
 以下は、リソースの JSON 表記です。
 <!--{
   "blockType": "resource",
-  "abstract": true,
   "@odata.type": "microsoft.graph.omaSetting"
 }-->
 ``` json
@@ -27,6 +26,11 @@ OMA 設定の定義。
   "omaUri": "String"
 }
 ```
+
+
+
+
+
 
 
 

@@ -7,7 +7,7 @@
 [windowsUpdateInstallScheduleType](../resources/intune_deviceconfig_windowsupdateinstallscheduletype.md) からの継承
 
 ## <a name="properties"></a>プロパティ
-|プロパティ|タイプ|説明|
+|プロパティ|型|説明|
 |:---|:---|:---|
 |activeHoursStart|TimeOfDay|アクティブ時間の開始|
 |activeHoursEnd|TimeOfDay|アクティブ時間の終了|
@@ -18,7 +18,6 @@
 以下は、リソースの JSON 表記です。
 <!--{
   "blockType": "resource",
-  "baseType": "microsoft.graph.windowsUpdateInstallScheduleType",
   "@odata.type": "microsoft.graph.windowsUpdateActiveHoursInstall"
 }-->
 ``` json
@@ -28,6 +27,11 @@
   "activeHoursEnd": "String (time of day)"
 }
 ```
+
+
+
+
+
 
 
 

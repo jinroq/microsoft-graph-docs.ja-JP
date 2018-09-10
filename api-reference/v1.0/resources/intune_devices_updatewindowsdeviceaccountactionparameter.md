@@ -4,7 +4,7 @@
 
 まだ文書化されていません
 ## <a name="properties"></a>プロパティ
-|プロパティ|タイプ|説明|
+|プロパティ|型|説明|
 |:---|:---|:---|
 |deviceAccount|[windowsDeviceAccount](../resources/intune_devices_windowsdeviceaccount.md)|まだ文書化されていません|
 |passwordRotationEnabled|ブール型 (Boolean)|まだ文書化されていません|
@@ -35,6 +35,11 @@
   "sessionInitiationProtocalAddress": "String"
 }
 ```
+
+
+
+
+
 
 
 

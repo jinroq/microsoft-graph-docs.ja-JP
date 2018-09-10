@@ -1,6 +1,6 @@
 # <a name="get-devicecompliancepolicysettingstatesummary"></a>Get deviceCompliancePolicySettingStateSummary
 
-> **注:**Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
+> **注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
 
 [deviceCompliancePolicySettingStateSummary](../resources/intune_deviceconfig_devicecompliancepolicysettingstatesummary.md) オブジェクトのプロパティとリレーションシップを読み取ります。
 ## <a name="prerequisites"></a>前提条件
@@ -22,12 +22,12 @@ GET /deviceManagement/deviceCompliancePolicySettingStateSummaries/{deviceComplia
 ```
 
 ## <a name="optional-query-parameters"></a>オプションのクエリ パラメーター
-このメソッドは、応答をカスタマイズするための [OData クエリ パラメーター](https://developer.microsoft.com/ja-JP/graph/docs/overview/query_parameters)をサポートします。
+このメソッドは、応答をカスタマイズするための [OData クエリ パラメーター](https://developer.microsoft.com/en-us/graph/docs/overview/query_parameters)をサポートします。
 ## <a name="request-headers"></a>要求ヘッダー
 |ヘッダー|値|
 |:---|:---|
-|承認|ベアラー &lt;トークン&gt;が必須。|
-|承諾|application/json|
+|承認|ベアラー &lt;トークン&gt; が必須。|
+|Accept|アプリケーションまたは json|
 
 ## <a name="request-body"></a>要求本文
 このメソッドには、要求本文を指定しません。
@@ -52,10 +52,10 @@ Content-Length: 483
 {
   "value": {
     "@odata.type": "#microsoft.graph.deviceCompliancePolicySettingStateSummary",
+    "id": "7474d6d5-d6d5-7474-d5d6-7474d5d67474",
     "setting": "Setting value",
     "settingName": "Setting Name value",
     "platformType": "iOS",
-    "id": "7474d6d5-d6d5-7474-d5d6-7474d5d67474",
     "unknownDeviceCount": 2,
     "notApplicableDeviceCount": 8,
     "compliantDeviceCount": 4,
@@ -66,6 +66,11 @@ Content-Length: 483
   }
 }
 ```
+
+
+
+
+
 
 
 

@@ -4,7 +4,7 @@
 
 まだ文書化されていません
 ## <a name="properties"></a>プロパティ
-|プロパティ|タイプ|説明|
+|プロパティ|型|説明|
 |:---|:---|:---|
 |deviceComplianceCheckinThresholdDays|Int32|デバイスがチェックインせずに移動し、準拠性を維持できる日数です。 有効な値は 0 から 120 までです|
 |isScheduledActionEnabled|Boolean|ルールのスケジュール済みアクションの機能が有効かどうか。|
@@ -26,6 +26,11 @@
   "secureByDefault": true
 }
 ```
+
+
+
+
+
 
 
 

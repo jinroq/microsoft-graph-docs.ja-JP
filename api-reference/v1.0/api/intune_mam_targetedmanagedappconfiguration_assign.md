@@ -24,17 +24,17 @@ POST /deviceAppManagement/targetedManagedAppConfigurations/{targetedManagedAppCo
 ## <a name="request-headers"></a>要求ヘッダー
 |ヘッダー|値|
 |:---|:---|
-|Authorization|ベアラー &lt;トークン&gt; が必須。|
-|Accept|application/json|
+|承認|ベアラー &lt;トークン&gt; が必須。|
+|Accept|アプリケーションまたは json|
 
 ## <a name="request-body"></a>要求本文
 要求本文で、パラメーターの JSON 表記を指定します。
 
 次の表に、このアクションで使用できるパラメーターを示します。
 
-|プロパティ|Type|説明|
+|プロパティ|型|説明|
 |:---|:---|:---|
-|assignments|[targetedManagedAppPolicyAssignment](../resources/intune_mam_targetedmanagedapppolicyassignment.md) コレクション|まだ文書化されていません|
+|割り当て|[targetedManagedAppPolicyAssignment](../resources/intune_mam_targetedmanagedapppolicyassignment.md) コレクション|まだ文書化されていません|
 
 
 
@@ -68,6 +68,11 @@ Content-length: 282
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
+
+
+
 
 
 

@@ -4,7 +4,7 @@
 
 iOS Volume-Purchase Program (VPP) ライセンスの種類のプロパティが含まれます。
 ## <a name="properties"></a>プロパティ
-|プロパティ|タイプ|説明|
+|プロパティ|型|説明|
 |:---|:---|:---|
 |supportsUserLicensing|ブール型 (Boolean)|プログラムがユーザー ライセンスの種類をサポートするかどうか。|
 |supportsDeviceLicensing|ブール型 (Boolean)|プログラムがデバイス ライセンスの種類をサポートするかどうか。|
@@ -24,6 +24,11 @@ iOS Volume-Purchase Program (VPP) ライセンスの種類のプロパティが�
   "supportsDeviceLicensing": true
 }
 ```
+
+
+
+
+
 
 
 

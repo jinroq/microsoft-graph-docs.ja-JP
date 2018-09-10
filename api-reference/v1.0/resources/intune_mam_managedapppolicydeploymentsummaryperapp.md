@@ -4,7 +4,7 @@
 
 アプリごとのポリシーの展開の概要を表します。
 ## <a name="properties"></a>プロパティ
-|プロパティ|タイプ|説明|
+|プロパティ|型|説明|
 |:---|:---|:---|
 |mobileAppIdentifier|[mobileAppIdentifier](../resources/intune_mam_mobileappidentifier.md)|アプリの展開|
 |configurationAppliedUserCount|Int32|ポリシーが適用されているユーザーの数。|
@@ -26,6 +26,11 @@
   "configurationAppliedUserCount": 1024
 }
 ```
+
+
+
+
+
 
 
 

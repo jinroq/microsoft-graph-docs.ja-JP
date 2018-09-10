@@ -4,7 +4,7 @@
 
 Android モバイル アプリに必要な最小限のオペレーティング システムのプロパティが含まれます。
 ## <a name="properties"></a>プロパティ
-|プロパティ|タイプ|説明|
+|プロパティ|型|説明|
 |:---|:---|:---|
 |v4_0|ブール型 (Boolean)|バージョン 4.0 以降。|
 |v4_0_3|ブール型 (Boolean)|バージョン 4.0.3 以降。|
@@ -19,11 +19,10 @@ Android モバイル アプリに必要な最小限のオペレーティング �
 なし
 ## <a name="json-representation"></a>JSON 表記
 以下は、リソースの JSON 表記です。
-<!-- {
+<!--{
   "blockType": "resource",
   "@odata.type": "microsoft.graph.androidMinimumOperatingSystem"
-}
--->
+}-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.androidMinimumOperatingSystem",
@@ -37,6 +36,11 @@ Android モバイル アプリに必要な最小限のオペレーティング �
   "v5_1": true
 }
 ```
+
+
+
+
+
 
 
 

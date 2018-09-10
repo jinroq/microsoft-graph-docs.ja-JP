@@ -7,7 +7,7 @@
 [iosHomeScreenItem](../resources/intune_deviceconfig_ioshomescreenitem.md) からの継承
 
 ## <a name="properties"></a>プロパティ
-|プロパティ|タイプ|説明|
+|プロパティ|型|説明|
 |:---|:---|:---|
 |displayName|文字列型 (String)|アプリの名前。[iosHomeScreenItem](../resources/intune_deviceconfig_ioshomescreenitem.md) から継承|
 |bundleID|文字列型 (String)|アプリの BundleID|
@@ -16,12 +16,10 @@
 なし
 ## <a name="json-representation"></a>JSON 表記
 以下は、リソースの JSON 表記です。
-<!-- {
+<!--{
   "blockType": "resource",
-  "baseType": "microsoft.graph.iosHomeScreenItem",
   "@odata.type": "microsoft.graph.iosHomeScreenApp"
-}
--->
+}-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.iosHomeScreenApp",
@@ -29,6 +27,11 @@
   "bundleID": "String"
 }
 ```
+
+
+
+
+
 
 
 

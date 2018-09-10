@@ -7,10 +7,10 @@ OMA 設定文字列の XML 定義です。
 [omaSetting](../resources/intune_deviceconfig_omasetting.md) からの継承
 
 ## <a name="properties"></a>プロパティ
-|プロパティ|タイプ|説明|
+|プロパティ|型|説明|
 |:---|:---|:---|
 |displayName|文字列|表示名。 [omaSetting](../resources/intune_deviceconfig_omasetting.md) からの継承|
-|説明|String|説明。 [omaSetting](../resources/intune_deviceconfig_omasetting.md) からの継承|
+|説明|文字列|説明。 [omaSetting](../resources/intune_deviceconfig_omasetting.md) からの継承|
 |omaUri|文字列|OMA。 [omaSetting](../resources/intune_deviceconfig_omasetting.md) からの継承|
 |fileName|文字列型 (String)|Value プロパティに関連付けられているファイル名 (*.xml)。|
 |value|バイナリ型 (Binary)|値。 (UTF8 でエンコードされたバイト配列)|
@@ -21,7 +21,6 @@ OMA 設定文字列の XML 定義です。
 以下は、リソースの JSON 表記です。
 <!--{
   "blockType": "resource",
-  "baseType": "microsoft.graph.omaSetting",
   "@odata.type": "microsoft.graph.omaSettingStringXml"
 }-->
 ``` json
@@ -34,6 +33,11 @@ OMA 設定文字列の XML 定義です。
   "value": "binary"
 }
 ```
+
+
+
+
+
 
 
 
