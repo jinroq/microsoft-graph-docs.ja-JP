@@ -1,24 +1,23 @@
-# <a name="rgbcolor-resource-type"></a><span data-ttu-id="daf4a-101">rgbColor リソースの種類</span><span class="sxs-lookup"><span data-stu-id="daf4a-101">rgbColor resource type</span></span>
+# <a name="rgbcolor-resource-type"></a><span data-ttu-id="37d59-101">rgbColor リソースの種類</span><span class="sxs-lookup"><span data-stu-id="37d59-101">rgbColor resource type</span></span>
 
-> <span data-ttu-id="daf4a-102">**注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。</span><span class="sxs-lookup"><span data-stu-id="daf4a-102">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
+> <span data-ttu-id="37d59-102">**注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。</span><span class="sxs-lookup"><span data-stu-id="37d59-102">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
 
-<span data-ttu-id="daf4a-103">RGB 色。</span><span class="sxs-lookup"><span data-stu-id="daf4a-103">Color in RGB.</span></span>
-## <a name="properties"></a><span data-ttu-id="daf4a-104">プロパティ</span><span class="sxs-lookup"><span data-stu-id="daf4a-104">Properties</span></span>
-|<span data-ttu-id="daf4a-105">プロパティ</span><span class="sxs-lookup"><span data-stu-id="daf4a-105">Property</span></span>|<span data-ttu-id="daf4a-106">タイプ</span><span class="sxs-lookup"><span data-stu-id="daf4a-106">Type</span></span>|<span data-ttu-id="daf4a-107">説明</span><span class="sxs-lookup"><span data-stu-id="daf4a-107">Description</span></span>|
+<span data-ttu-id="37d59-103">RGB 色。</span><span class="sxs-lookup"><span data-stu-id="37d59-103">Color in RGB.</span></span>
+## <a name="properties"></a><span data-ttu-id="37d59-104">プロパティ</span><span class="sxs-lookup"><span data-stu-id="37d59-104">Properties</span></span>
+|<span data-ttu-id="37d59-105">プロパティ</span><span class="sxs-lookup"><span data-stu-id="37d59-105">Property</span></span>|<span data-ttu-id="37d59-106">型</span><span class="sxs-lookup"><span data-stu-id="37d59-106">Type</span></span>|<span data-ttu-id="37d59-107">説明</span><span class="sxs-lookup"><span data-stu-id="37d59-107">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="daf4a-108">r</span><span class="sxs-lookup"><span data-stu-id="daf4a-108">r</span></span>|<span data-ttu-id="daf4a-109">バイト型 (Byte)</span><span class="sxs-lookup"><span data-stu-id="daf4a-109">Byte</span></span>|<span data-ttu-id="daf4a-110">赤の値</span><span class="sxs-lookup"><span data-stu-id="daf4a-110">Red value</span></span>|
-|<span data-ttu-id="daf4a-111">g</span><span class="sxs-lookup"><span data-stu-id="daf4a-111">g</span></span>|<span data-ttu-id="daf4a-112">バイト型 (Byte)</span><span class="sxs-lookup"><span data-stu-id="daf4a-112">Byte</span></span>|<span data-ttu-id="daf4a-113">緑の値</span><span class="sxs-lookup"><span data-stu-id="daf4a-113">Green value</span></span>|
-|<span data-ttu-id="daf4a-114">b</span><span class="sxs-lookup"><span data-stu-id="daf4a-114">b</span></span>|<span data-ttu-id="daf4a-115">バイト型 (Byte)</span><span class="sxs-lookup"><span data-stu-id="daf4a-115">Byte</span></span>|<span data-ttu-id="daf4a-116">青の値</span><span class="sxs-lookup"><span data-stu-id="daf4a-116">Blue value</span></span>|
+|<span data-ttu-id="37d59-108">r</span><span class="sxs-lookup"><span data-stu-id="37d59-108">r</span></span>|<span data-ttu-id="37d59-109">バイト型 (Byte)</span><span class="sxs-lookup"><span data-stu-id="37d59-109">Byte</span></span>|<span data-ttu-id="37d59-110">赤の値</span><span class="sxs-lookup"><span data-stu-id="37d59-110">Red value</span></span>|
+|<span data-ttu-id="37d59-111">g</span><span class="sxs-lookup"><span data-stu-id="37d59-111">g</span></span>|<span data-ttu-id="37d59-112">バイト型 (Byte)</span><span class="sxs-lookup"><span data-stu-id="37d59-112">Byte</span></span>|<span data-ttu-id="37d59-113">緑の値</span><span class="sxs-lookup"><span data-stu-id="37d59-113">Green value</span></span>|
+|<span data-ttu-id="37d59-114">b</span><span class="sxs-lookup"><span data-stu-id="37d59-114">b</span></span>|<span data-ttu-id="37d59-115">バイト型 (Byte)</span><span class="sxs-lookup"><span data-stu-id="37d59-115">Byte</span></span>|<span data-ttu-id="37d59-116">青の値</span><span class="sxs-lookup"><span data-stu-id="37d59-116">Blue value</span></span>|
 
-## <a name="relationships"></a><span data-ttu-id="daf4a-117">リレーションシップ</span><span class="sxs-lookup"><span data-stu-id="daf4a-117">Relationships</span></span>
-<span data-ttu-id="daf4a-118">なし</span><span class="sxs-lookup"><span data-stu-id="daf4a-118">None</span></span>
-## <a name="json-representation"></a><span data-ttu-id="daf4a-119">JSON 表記</span><span class="sxs-lookup"><span data-stu-id="daf4a-119">JSON Representation</span></span>
-<span data-ttu-id="daf4a-120">以下は、リソースの JSON 表記です。</span><span class="sxs-lookup"><span data-stu-id="daf4a-120">Here is a JSON representation of the resource.</span></span>
-<!-- {
+## <a name="relationships"></a><span data-ttu-id="37d59-117">リレーションシップ</span><span class="sxs-lookup"><span data-stu-id="37d59-117">Relationships</span></span>
+<span data-ttu-id="37d59-118">なし</span><span class="sxs-lookup"><span data-stu-id="37d59-118">None</span></span>
+## <a name="json-representation"></a><span data-ttu-id="37d59-119">JSON 表記</span><span class="sxs-lookup"><span data-stu-id="37d59-119">JSON Representation</span></span>
+<span data-ttu-id="37d59-120">以下は、リソースの JSON 表記です。</span><span class="sxs-lookup"><span data-stu-id="37d59-120">Here is a JSON representation of the resource.</span></span>
+<!--{
   "blockType": "resource",
   "@odata.type": "microsoft.graph.rgbColor"
-}
--->
+}-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.rgbColor",
@@ -27,6 +26,11 @@
   "b": 1024
 }
 ```
+
+
+
+
+
 
 
 

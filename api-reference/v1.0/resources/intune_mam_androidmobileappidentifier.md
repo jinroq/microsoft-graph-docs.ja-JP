@@ -1,32 +1,35 @@
-# <a name="androidmobileappidentifier-resource-type"></a><span data-ttu-id="6bc18-101">androidMobileAppIdentifier リソースの種類</span><span class="sxs-lookup"><span data-stu-id="6bc18-101">androidMobileAppIdentifier resource type</span></span>
+# <a name="androidmobileappidentifier-resource-type"></a><span data-ttu-id="0c091-101">androidMobileAppIdentifier リソースの種類</span><span class="sxs-lookup"><span data-stu-id="0c091-101">androidMobileAppIdentifier resource type</span></span>
 
-> <span data-ttu-id="6bc18-102">**注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。</span><span class="sxs-lookup"><span data-stu-id="6bc18-102">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
+> <span data-ttu-id="0c091-102">**注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。</span><span class="sxs-lookup"><span data-stu-id="0c091-102">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
 
-<span data-ttu-id="6bc18-103">Android アプリの識別子。</span><span class="sxs-lookup"><span data-stu-id="6bc18-103">The identifier for an Android app.</span></span>
+<span data-ttu-id="0c091-103">Android アプリの識別子。</span><span class="sxs-lookup"><span data-stu-id="0c091-103">The identifier for an Android app.</span></span>
 
-<span data-ttu-id="6bc18-104">[mobileAppIdentifier](../resources/intune_mam_mobileappidentifier.md) からの継承</span><span class="sxs-lookup"><span data-stu-id="6bc18-104">Inherits from [mobileAppIdentifier](../resources/intune_mam_mobileappidentifier.md)</span></span>
+<span data-ttu-id="0c091-104">[mobileAppIdentifier](../resources/intune_mam_mobileappidentifier.md) からの継承</span><span class="sxs-lookup"><span data-stu-id="0c091-104">Inherits from [mobileAppIdentifier](../resources/intune_mam_mobileappidentifier.md)</span></span>
 
-## <a name="properties"></a><span data-ttu-id="6bc18-105">プロパティ</span><span class="sxs-lookup"><span data-stu-id="6bc18-105">Properties</span></span>
-|<span data-ttu-id="6bc18-106">プロパティ</span><span class="sxs-lookup"><span data-stu-id="6bc18-106">Property</span></span>|<span data-ttu-id="6bc18-107">タイプ</span><span class="sxs-lookup"><span data-stu-id="6bc18-107">Type</span></span>|<span data-ttu-id="6bc18-108">説明</span><span class="sxs-lookup"><span data-stu-id="6bc18-108">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="0c091-105">プロパティ</span><span class="sxs-lookup"><span data-stu-id="0c091-105">Properties</span></span>
+|<span data-ttu-id="0c091-106">プロパティ</span><span class="sxs-lookup"><span data-stu-id="0c091-106">Property</span></span>|<span data-ttu-id="0c091-107">型</span><span class="sxs-lookup"><span data-stu-id="0c091-107">Type</span></span>|<span data-ttu-id="0c091-108">説明</span><span class="sxs-lookup"><span data-stu-id="0c091-108">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="6bc18-109">packageId</span><span class="sxs-lookup"><span data-stu-id="6bc18-109">packageId</span></span>|<span data-ttu-id="6bc18-110">文字列型 (String)</span><span class="sxs-lookup"><span data-stu-id="6bc18-110">String</span></span>|<span data-ttu-id="6bc18-111">Play ストアで指定されている、アプリの識別子。</span><span class="sxs-lookup"><span data-stu-id="6bc18-111">The identifier for an app, as specified in the play store.</span></span>|
+|<span data-ttu-id="0c091-109">packageId</span><span class="sxs-lookup"><span data-stu-id="0c091-109">packageId</span></span>|<span data-ttu-id="0c091-110">文字列型 (String)</span><span class="sxs-lookup"><span data-stu-id="0c091-110">String</span></span>|<span data-ttu-id="0c091-111">Play ストアで指定されている、アプリの識別子。</span><span class="sxs-lookup"><span data-stu-id="0c091-111">The identifier for an app, as specified in the play store.</span></span>|
 
-## <a name="relationships"></a><span data-ttu-id="6bc18-112">リレーションシップ</span><span class="sxs-lookup"><span data-stu-id="6bc18-112">Relationships</span></span>
-<span data-ttu-id="6bc18-113">なし</span><span class="sxs-lookup"><span data-stu-id="6bc18-113">None</span></span>
-## <a name="json-representation"></a><span data-ttu-id="6bc18-114">JSON 表記</span><span class="sxs-lookup"><span data-stu-id="6bc18-114">JSON Representation</span></span>
-<span data-ttu-id="6bc18-115">以下は、リソースの JSON 表記です。</span><span class="sxs-lookup"><span data-stu-id="6bc18-115">Here is a JSON representation of the resource.</span></span>
-<!-- {
+## <a name="relationships"></a><span data-ttu-id="0c091-112">リレーションシップ</span><span class="sxs-lookup"><span data-stu-id="0c091-112">Relationships</span></span>
+<span data-ttu-id="0c091-113">なし</span><span class="sxs-lookup"><span data-stu-id="0c091-113">None</span></span>
+## <a name="json-representation"></a><span data-ttu-id="0c091-114">JSON 表記</span><span class="sxs-lookup"><span data-stu-id="0c091-114">JSON Representation</span></span>
+<span data-ttu-id="0c091-115">以下は、リソースの JSON 表記です。</span><span class="sxs-lookup"><span data-stu-id="0c091-115">Here is a JSON representation of the resource.</span></span>
+<!--{
   "blockType": "resource",
-  "baseType": "microsoft.graph.mobileAppIdentifier",
   "@odata.type": "microsoft.graph.androidMobileAppIdentifier"
-}
--->
+}-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.androidMobileAppIdentifier",
   "packageId": "String"
 }
 ```
+
+
+
+
+
 
 
 
