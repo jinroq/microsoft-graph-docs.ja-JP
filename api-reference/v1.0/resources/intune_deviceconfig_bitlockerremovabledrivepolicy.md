@@ -6,7 +6,7 @@ BitLocker リムーバブル ドライブ ポリシー。
 ## <a name="properties"></a>プロパティ
 |プロパティ|タイプ|説明|
 |:---|:---|:---|
-|encryptionMethod|[bitLockerEncryptionMethod](../resources/intune_deviceconfig_bitlockerencryptionmethod.md)|リムーバブル ドライブの暗号化方法を選択します。 可能な値は、`aesCbc128`、`aesCbc256`、`xtsAes128`、`xtsAes256` です。|
+|encryptionMethod|[bitLockerEncryptionMethod](../resources/intune_deviceconfig_bitlockerencryptionmethod.md)|リムーバブル ドライブの暗号化方法を選択します。指定できる値は、`aesCbc128`、`aesCbc256`、`xtsAes128`、`xtsAes256` です。|
 |requireEncryptionForWriteAccess|ブール値|別の組織で構成されたデバイスへの書き込みアクセスをブロックするかどうかを示します。  RequireEncryptionForWriteAccess が false の場合、この値は影響を与えません。|
 |blockCrossOrganizationWriteAccess|ブール値|このポリシー設定は、コンピューター上でリムーバブル データ ドライブを書き込み可能にする際に、BitLocker 保護が必要かどうかを決定します。|
 
@@ -14,11 +14,10 @@ BitLocker リムーバブル ドライブ ポリシー。
 なし
 ## <a name="json-representation"></a>JSON 表記
 以下は、リソースの JSON 表記です。
-<!-- {
+<!--{
   "blockType": "resource",
   "@odata.type": "microsoft.graph.bitLockerRemovableDrivePolicy"
-}
--->
+}-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.bitLockerRemovableDrivePolicy",
@@ -27,6 +26,11 @@ BitLocker リムーバブル ドライブ ポリシー。
   "blockCrossOrganizationWriteAccess": true
 }
 ```
+
+
+
+
+
 
 
 

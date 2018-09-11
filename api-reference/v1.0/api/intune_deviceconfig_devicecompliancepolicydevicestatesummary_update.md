@@ -1,6 +1,6 @@
 # <a name="update-devicecompliancepolicydevicestatesummary"></a>deviceCompliancePolicyDeviceStateSummary の更新
 
-> **注:**Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
+> **注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
 
 [deviceCompliancePolicyDeviceStateSummary](../resources/intune_deviceconfig_devicecompliancepolicydevicestatesummary.md) オブジェクトのプロパティを更新します。
 ## <a name="prerequisites"></a>前提条件
@@ -24,8 +24,8 @@ PATCH /deviceManagement/deviceCompliancePolicyDeviceStateSummary
 ## <a name="request-headers"></a>要求ヘッダー
 |ヘッダー|値|
 |:---|:---|
-|Authorization|ベアラー &lt;トークン&gt; が必要です。|
-|Accept|application/json|
+|承認|ベアラー &lt;トークン&gt; が必須。|
+|承諾|アプリケーションまたは json|
 
 ## <a name="request-body"></a>要求本文
 要求本文で、[deviceCompliancePolicyDeviceStateSummary](../resources/intune_deviceconfig_devicecompliancepolicydevicestatesummary.md) オブジェクトの JSON 表記を指定します。
@@ -36,7 +36,7 @@ PATCH /deviceManagement/deviceCompliancePolicyDeviceStateSummary
 |:---|:---|:---|
 |inGracePeriodCount|Int32|解約猶予期間内のデバイスの数|
 |configManagerCount|Int32|System Center Configuration Manager によってコンプライアンスが管理されているデバイスの数|
-|id|String|エンティティのキー。|
+|ID|文字列|エンティティのキー。|
 |unknownDeviceCount|Int32|不明なデバイスの数|
 |notApplicableDeviceCount|Int32|該当しないデバイスの数|
 |compliantDeviceCount|Int32|準拠デバイスの数|
@@ -92,6 +92,11 @@ Content-Length: 398
   "conflictDeviceCount": 3
 }
 ```
+
+
+
+
+
 
 
 

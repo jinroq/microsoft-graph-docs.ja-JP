@@ -20,14 +20,14 @@
 |説明|文字列|ポリシーの説明。 [managedAppPolicy](../resources/intune_mam_managedapppolicy.md) から継承します|
 |createdDateTime|DateTimeOffset|ポリシーが作成された日時。 [managedAppPolicy](../resources/intune_mam_managedapppolicy.md) から継承します|
 |lastModifiedDateTime|DateTimeOffset|ポリシーが変更された最終日時。 [managedAppPolicy](../resources/intune_mam_managedapppolicy.md) から継承します|
-|ID|文字列|エンティティのキー。 [managedAppPolicy](../resources/intune_mam_managedapppolicy.md) から継承します|
+|id|文字列|エンティティのキー。 [managedAppPolicy](../resources/intune_mam_managedapppolicy.md) から継承します|
 |バージョン|文字列|エンティティのバージョン。 [managedAppPolicy](../resources/intune_mam_managedapppolicy.md) から継承します|
 |periodOfflineBeforeAccessCheck|期間|デバイスがインターネットに接続されていないでこの期間が過ぎると、アクセスがチェックされます。|
 |periodOnlineBeforeAccessCheck|期間|デバイスがインターネットに接続されていてこの期間が過ぎると、アクセスがチェックされます。|
-|allowedInboundDataTransferSources|[managedAppDataTransferLevel](../resources/intune_mam_managedappdatatransferlevel.md)|データの転送が許可されたソース。 指定できる値は、`allApps`、`managedApps`、`none`です。|
-|allowedOutboundDataTransferDestinations|[managedAppDataTransferLevel](../resources/intune_mam_managedappdatatransferlevel.md)|データの転送が許可された宛先。 指定できる値は、`allApps`、`managedApps`、`none`です。|
+|allowedInboundDataTransferSources|[managedAppDataTransferLevel](../resources/intune_mam_managedappdatatransferlevel.md)|データの転送が許可されたソース。指定可能な値は、`allApps`、`managedApps`、`none` です。|
+|allowedOutboundDataTransferDestinations|[managedAppDataTransferLevel](../resources/intune_mam_managedappdatatransferlevel.md)|データの転送が許可された宛先。指定可能な値は、`allApps`、`managedApps`、`none` です。|
 |organizationalCredentialsRequired|ブール値|アプリを使用するために組織の資格情報が必要かどうかを示します。|
-|allowedOutboundClipboardSharingLevel|[managedAppClipboardSharingLevel](../resources/intune_mam_managedappclipboardsharinglevel.md)|管理対象デバイスで、アプリ間でクリップボードを共有できるレベル。 指定できる値は、`allApps`、`managedAppsWithPasteIn`、`managedApps`、`blocked` です。|
+|allowedOutboundClipboardSharingLevel|[managedAppClipboardSharingLevel](../resources/intune_mam_managedappclipboardsharinglevel.md)|管理対象デバイスで、アプリ間でクリップボードを共有できるレベル。指定可能な値は、`allApps`、`managedAppsWithPasteIn`、`managedApps`、`blocked` です。|
 |dataBackupBlocked|ブール値|管理対象アプリのデータのバックアップがブロックされるかどうかを示します。|
 |deviceComplianceRequired|ブール値|デバイスの準拠が必要かどうかを示します。|
 |managedBrowserToOpenLinksRequired|ブール値|管理対象ブラウザー アプリでインターネット リンクを開く必要があるかどうかを示します。|
@@ -37,9 +37,9 @@
 |maximumPinRetries|Int32|正しくない pin の再試行の最大回数。この回数を超えると管理対象アプリがブロックまたは消去されます。|
 |simplePinBlocked|ブール値|simplePin がブロックされるかどうかを示します。|
 |minimumPinLength|Int32|PinRequired が True に設定されている場合に、アプリ レベルの pin に必要な最小の pin の長さ|
-|pinCharacterSet|[managedAppPinCharacterSet](../resources/intune_mam_managedapppincharacterset.md)|PinRequired が True に設定されている場合に、アプリ レベルの pin に使用できる文字セット。 指定できる値は、`numeric`、`alphanumericAndSymbol` です。|
+|pinCharacterSet|[managedAppPinCharacterSet](../resources/intune_mam_managedapppincharacterset.md)|PinRequired が True に設定されている場合に、アプリ レベルの pin に使用できる文字セット。指定できる値は、`numeric`、`alphanumericAndSymbol` です。|
 |periodBeforePinReset|期間|PinRequired が True に設定されている場合、この TimePeriod を過ぎると全レベルの pin を再設定する必要があります。|
-|allowedDataStorageLocations|[managedAppDataStorageLocation 列挙型](../resources/intune_mam_managedappdatastoragelocation.md) のコレクション|ユーザーが管理対象データを格納できるデータの保存場所。|
+|allowedDataStorageLocations|[managedAppDataStorageLocation](../resources/intune_mam_managedappdatastoragelocation.md) コレクション|ユーザーが管理対象データを格納できるデータの保存場所。|
 |contactSyncBlocked|ブール値|連絡先をユーザー デバイスに同期できるかどうかを示します。|
 |printBlocked|ブール値|管理対象アプリからの印刷を許可するかどうかを示します。|
 |fingerprintBlocked|ブール値|PinRequired が True に設定されている場合に、pin の代わりに指紋リーダーの使用を許可するかどうかを示します。|
@@ -55,9 +55,8 @@
 以下は、リソースの JSON 表記です。
 <!--{
   "blockType": "resource",
-  "abstract": true,
-  "keyProperty": "id",
   "baseType": "microsoft.graph.managedAppPolicy",
+  "keyProperty": "id",
   "@odata.type": "microsoft.graph.managedAppProtection"
 }-->
 ``` json
@@ -99,6 +98,11 @@
   "minimumWarningAppVersion": "String"
 }
 ```
+
+
+
+
+
 
 
 
