@@ -1,6 +1,6 @@
 # <a name="update-managedappoperation"></a>managedAppOperation の更新
 
-> **注:**Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
+> **注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
 
 [managedAppOperation](../resources/intune_mam_managedappoperation.md) オブジェクトのプロパティを更新します。
 ## <a name="prerequisites"></a>前提条件
@@ -24,8 +24,8 @@ PATCH /deviceAppManagement/managedAppRegistrations/{managedAppRegistrationId}/op
 ## <a name="request-headers"></a>要求ヘッダー
 |ヘッダー|値|
 |:---|:---|
-|Authorization|ベアラー &lt;トークン&gt; が必要です。|
-|Accept|application/json|
+|承認|ベアラー &lt;トークン&gt; が必須。|
+|承諾|アプリケーションまたは json|
 
 ## <a name="request-body"></a>要求本文
 要求本文で、[managedAppOperation](../resources/intune_mam_managedappoperation.md) オブジェクトの JSON 表記を指定します。
@@ -34,11 +34,11 @@ PATCH /deviceAppManagement/managedAppRegistrations/{managedAppRegistrationId}/op
 
 |プロパティ|型|説明|
 |:---|:---|:---|
-|displayName|String|操作名。|
+|displayName|文字列|操作名。|
 |lastModifiedDateTime|DateTimeOffset|アプリ操作が変更された最終時刻。|
-|state|String|操作の現在の状態。|
-|id|String|エンティティのキー。|
-|version|String|エンティティのバージョン。|
+|状態|文字列|操作の現在の状態。|
+|id|文字列|エンティティのキー。|
+|バージョン|文字列|エンティティのバージョン。|
 
 
 
@@ -77,6 +77,11 @@ Content-Length: 272
   "version": "Version value"
 }
 ```
+
+
+
+
+
 
 
 

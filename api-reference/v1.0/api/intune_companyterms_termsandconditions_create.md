@@ -1,6 +1,6 @@
 # <a name="create-termsandconditions"></a>termsAndConditions の作成
 
-> **注:**Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
+> **注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
 
 新しい [termsAndConditions](../resources/intune_companyterms_termsandconditions.md) オブジェクトを作成します。
 ## <a name="prerequisites"></a>前提条件
@@ -8,7 +8,7 @@
 
 |アクセス許可の種類|アクセス許可 (特権の大きいものから小さいものへ)|
 |:---|:---|
-|委任 (職場または学校のアカウント)|DeviceManagementServiceConfig.ReadWrite.All|
+|委任 (職場または学校アカウント)|DeviceManagementServiceConfig.ReadWrite.All|
 |委任 (個人用 Microsoft アカウント)|サポートされていません。|
 |アプリケーション|サポートされていません。|
 
@@ -24,8 +24,8 @@ POST /deviceManagement/termsAndConditions
 ## <a name="request-headers"></a>要求ヘッダー
 |ヘッダー|値|
 |:---|:---|
-|Authorization|ベアラー &lt;トークン&gt; が必要です。|
-|Accept|application/json|
+|承認|ベアラー &lt;トークン&gt; が必須。|
+|承諾|アプリケーションまたは json|
 
 ## <a name="request-body"></a>要求本文
 要求本文において、termsAndConditions オブジェクトの JSON 表記を指定します。
@@ -34,15 +34,15 @@ POST /deviceManagement/termsAndConditions
 
 |プロパティ|型|説明|
 |:---|:---|:---|
-|id|String|T&C ポリシーの一意識別子。|
+|ID|文字列|T&C ポリシーの一意識別子。|
 |createdDateTime|DateTimeOffset|オブジェクトが作成された DateTime。|
-|lastModifiedDateTime|DateTimeOffset|オブジェクトの最終更新の DateTime。|
-|displayName|String|管理者が指定した T&C ポリシーの名前。 |
-|description|String|管理者が指定した T&C ポリシーの説明。|
-|title|String|管理者が指定した使用条件のタイトル。 ユーザーが T&C ポリシーを承諾する際のプロンプトに表示されます。|
-|bodyText|String|管理者が指定した使用条件の本文で、通常は使用条件そのものです。 ユーザーが T&C ポリシーを承諾する際のプロンプトに表示されます。|
-|acceptanceStatement|String|管理者が指定した使用条件に関する説明内容です。通常は、T&C ポリシーに定められた使用条件を受け入れることの意味が記載されます。 ユーザーが T&C ポリシーを承諾する際のプロンプトに表示されます。|
-|version|Int32|使用条件の現在のバージョンを示す整数。 管理者が条件を変更し、修正された T&C ポリシーをユーザーが再承諾するように求める場合に増分されます。|
+|lastModifiedDateTime|DateTimeOffset|オブジェクトが最後に変更された DateTime。|
+|displayName|文字列|T&C ポリシー用に管理者が提供した名前。 |
+|説明|文字列|管理者が提供した T&C ポリシーの説明。|
+|タイトル|文字列|管理者が提供した契約条件のタイトル。 ユーザーが T&C ポリシーを承諾する際のプロンプトに表示されます。|
+|bodyText|文字列|管理者が提供する契約条件の本文で、通常は条件そのものです。 ユーザーが T&C ポリシーを承諾する際のプロンプトに表示されます。|
+|acceptanceStatement|文字列|使用条件に関する、管理者指定の説明内容です。通常は、T&C ポリシーに定められた使用条件を受け入れることの意味を記載します。 ユーザーが T&C ポリシーを承諾する際のプロンプトに表示されます。|
+|バージョン|Int32|条件の現行バージョンを示す整数。 管理者が条件を変更し、修正された T&C ポリシーをユーザーが再承諾するように求める場合に増分されます。|
 
 
 
@@ -89,6 +89,11 @@ Content-Length: 445
   "version": 7
 }
 ```
+
+
+
+
+
 
 
 

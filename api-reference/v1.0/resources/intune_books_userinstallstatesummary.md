@@ -15,7 +15,7 @@
 ## <a name="properties"></a>プロパティ
 |プロパティ|タイプ|説明|
 |:---|:---|:---|
-|ID|文字列|エンティティのキー。|
+|id|文字列|エンティティのキー。|
 |userName|文字列|ユーザー名です。|
 |installedDeviceCount|Int32|インストールされたデバイスの数です。|
 |failedDeviceCount|Int32|失敗したデバイスの数です。|
@@ -30,8 +30,8 @@
 以下は、リソースの JSON 表記です。
 <!--{
   "blockType": "resource",
-  "keyProperty": "id",
   "baseType": "microsoft.graph.entity",
+  "keyProperty": "id",
   "@odata.type": "microsoft.graph.userInstallStateSummary"
 }-->
 ``` json
@@ -44,6 +44,11 @@
   "notInstalledDeviceCount": 1024
 }
 ```
+
+
+
+
+
 
 
 

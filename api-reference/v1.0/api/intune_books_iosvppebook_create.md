@@ -25,7 +25,7 @@ POST /deviceAppManagement/managedEBooks
 |ヘッダー|値|
 |:---|:---|
 |承認|ベアラー &lt;トークン&gt; が必須。|
-|承諾|application/json|
+|承諾|アプリケーションまたは json|
 
 ## <a name="request-body"></a>要求本文
 要求本文で、iosVppEBook オブジェクトの JSON 表記を指定します。
@@ -34,10 +34,10 @@ POST /deviceAppManagement/managedEBooks
 
 |プロパティ|タイプ|説明|
 |:---|:---|:---|
-|ID|文字列|エンティティのキー。 [managedEBook](../resources/intune_books_managedebook.md) から継承します|
+|id|文字列|エンティティのキー。 [managedEBook](../resources/intune_books_managedebook.md) から継承します|
 |displayName|文字列|電子ブックの名前。 [managedEBook](../resources/intune_books_managedebook.md) から継承します|
 |説明|文字列|説明。 [managedEBook](../resources/intune_books_managedebook.md) から継承します|
-|publisher|文字列|発行元です。 [managedEBook](../resources/intune_books_managedebook.md) から継承します|
+|パブリッシャー|文字列|発行元です。 [managedEBook](../resources/intune_books_managedebook.md) から継承します|
 |publishedDateTime|DateTimeOffset|電子ブックが発行された日時。 [managedEBook](../resources/intune_books_managedebook.md) から継承します|
 |largeCover|[mimeContent](../resources/intune_shared_mimecontent.md)|ブック カバー。 [managedEBook](../resources/intune_books_managedebook.md) から継承します|
 |createdDateTime|DateTimeOffset|電子ブック ファイルが作成された日時。 [managedEBook](../resources/intune_books_managedebook.md) から継承します|
@@ -47,9 +47,9 @@ POST /deviceAppManagement/managedEBooks
 |vppTokenId|Guid|Vpp トークン ID。|
 |appleId|文字列|Vpp トークンに関連付けられている Apple ID。|
 |vppOrganizationName|文字列|Vpp トークンの組織の名前。|
-|genres|String コレクション|ジャンル。|
-|language|文字列|言語。|
-|seller|文字列|販売元。|
+|ジャンル|String コレクション|ジャンル。|
+|言語|文字列|言語。|
+|販売元|文字列|販売元。|
 |totalLicenseCount|Int32|ライセンスの合計数。|
 |usedLicenseCount|Int32|使用されているライセンスの数。|
 
@@ -80,7 +80,7 @@ Content-length: 853
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
   "informationUrl": "https://example.com/informationUrl/",
   "privacyInformationUrl": "https://example.com/privacyInformationUrl/",
-  "vppTokenId": "79199ed9-e50b-4257-8de4-70b9c8685061",
+  "vppTokenId": "<Unknown Primitive Type Edm.Guid>",
   "appleId": "Apple Id value",
   "vppOrganizationName": "Vpp Organization Name value",
   "genres": [
@@ -116,7 +116,7 @@ Content-Length: 961
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
   "informationUrl": "https://example.com/informationUrl/",
   "privacyInformationUrl": "https://example.com/privacyInformationUrl/",
-  "vppTokenId": "79199ed9-e50b-4257-8de4-70b9c8685061",
+  "vppTokenId": "<Unknown Primitive Type Edm.Guid>",
   "appleId": "Apple Id value",
   "vppOrganizationName": "Vpp Organization Name value",
   "genres": [
@@ -128,6 +128,11 @@ Content-Length: 961
   "usedLicenseCount": 0
 }
 ```
+
+
+
+
+
 
 
 

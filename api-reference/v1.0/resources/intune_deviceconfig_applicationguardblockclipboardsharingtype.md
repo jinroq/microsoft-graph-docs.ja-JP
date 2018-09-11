@@ -14,3 +14,8 @@ ApplicationGuardBlockClipboardSharingType に指定できる値
 
 
 
+
+
+
+
+

@@ -6,10 +6,15 @@ Apple Volume Purchase Program トークンに関連付けられている可能�
 ## <a name="members"></a>メンバー
 |メンバー|値|説明|
 |:---|:---|:---|
-|none|0|既定の状態。|
+|なし|0|既定の状態。|
 |InProgress|1|最新の同期が進行中。|
 |completed|2|前回の同期は正常に完了。|
 |failed|3|前回の同期は失敗。|
+
+
+
+
+
 
 
 
