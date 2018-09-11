@@ -34,10 +34,10 @@ POST /deviceManagement/deviceCompliancePolicySettingStateSummaries
 
 |プロパティ|タイプ|説明|
 |:---|:---|:---|
+|ID|文字列|エンティティのキー。|
 |設定|文字列|設定のクラス名とプロパティ名。|
 |settingName|文字列|設定の名前。|
 |platformType|[policyPlatformType](../resources/intune_deviceconfig_policyplatformtype.md)|設定のプラットフォームです。 可能な値は、`android`、`iOS`、`macOS`、`windowsPhone81`、`windows81AndLater`、`windows10AndLater`、`androidWorkProfile`、`all` です。|
-|ID|文字列|エンティティのキー。|
 |unknownDeviceCount|Int32|不明なデバイスの数|
 |notApplicableDeviceCount|Int32|該当しないデバイスの数|
 |compliantDeviceCount|Int32|準拠デバイスの数|
@@ -83,10 +83,10 @@ Content-Length: 440
 
 {
   "@odata.type": "#microsoft.graph.deviceCompliancePolicySettingStateSummary",
+  "id": "7474d6d5-d6d5-7474-d5d6-7474d5d67474",
   "setting": "Setting value",
   "settingName": "Setting Name value",
   "platformType": "iOS",
-  "id": "7474d6d5-d6d5-7474-d5d6-7474d5d67474",
   "unknownDeviceCount": 2,
   "notApplicableDeviceCount": 8,
   "compliantDeviceCount": 4,
@@ -96,6 +96,11 @@ Content-Length: 440
   "conflictDeviceCount": 3
 }
 ```
+
+
+
+
+
 
 
 

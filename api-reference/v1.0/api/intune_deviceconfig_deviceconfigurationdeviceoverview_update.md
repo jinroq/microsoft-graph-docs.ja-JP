@@ -1,6 +1,6 @@
 # <a name="update-deviceconfigurationdeviceoverview"></a>deviceConfigurationDeviceOverview の更新
 
-> **注:**Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
+> **注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
 
 [deviceConfigurationDeviceOverview](../resources/intune_deviceconfig_deviceconfigurationdeviceoverview.md) オブジェクトのプロパティを更新します。
 ## <a name="prerequisites"></a>前提条件
@@ -24,8 +24,8 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/deviceStatu
 ## <a name="request-headers"></a>要求ヘッダー
 |ヘッダー|値|
 |:---|:---|
-|Authorization|ベアラー &lt;トークン&gt; が必要です。|
-|Accept|application/json|
+|承認|ベアラー &lt;トークン&gt; が必須。|
+|承諾|アプリケーションまたは json|
 
 ## <a name="request-body"></a>要求本文
 要求本文で、[deviceConfigurationDeviceOverview](../resources/intune_deviceconfig_deviceconfigurationdeviceoverview.md) オブジェクトの JSON 表記を指定します。
@@ -34,7 +34,7 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/deviceStatu
 
 |プロパティ|型|説明|
 |:---|:---|:---|
-|id|String|エンティティのキー。|
+|ID|文字列|エンティティのキー。|
 |pendingCount|Int32|保留中のデバイスの数|
 |notApplicableCount|Int32|該当しないデバイスの数|
 |successCount|Int32|成功したデバイスの数|
@@ -86,6 +86,11 @@ Content-Length: 333
   "configurationVersion": 4
 }
 ```
+
+
+
+
+
 
 
 

@@ -40,7 +40,7 @@ PATCH /deviceAppManagement/mdmWindowsInformationProtectionPolicies/{mdmWindowsIn
 |lastModifiedDateTime|DateTimeOffset|ポリシーが変更された最終日時。 [managedAppPolicy](../resources/intune_mam_managedapppolicy.md) から継承します|
 |ID|文字列|エンティティのキー。 [managedAppPolicy](../resources/intune_mam_managedapppolicy.md) から継承します|
 |バージョン|文字列|エンティティのバージョン。 [managedAppPolicy](../resources/intune_mam_managedapppolicy.md) から継承します|
-|enforcementLevel|[windowsInformationProtectionEnforcementLevel](../resources/intune_mam_windowsinformationprotectionenforcementlevel.md)|WIP の適用レベルです。 [WindowsInformationProtection](../resources/intune_mam_windowsinformationprotection.md)からサポートされている値継承の列挙型定義を参照してください。 可能な値は、`noProtection`、`encryptAndAuditOnly`、`encryptAuditAndPrompt`、`encryptAuditAndBlock` です。|
+|enforcementLevel|[windowsInformationProtectionEnforcementLevel](../resources/intune_mam_windowsinformationprotectionenforcementlevel.md)|WIP の実施レベル。[windowsInformationProtection](../resources/intune_mam_windowsinformationprotection.md) から継承されたサポートされている値の Enum 定義を参照してください。可能な値は `noProtection`、`encryptAndAuditOnly`、`encryptAuditAndPrompt`、`encryptAuditAndBlock`です。|
 |enterpriseDomain|文字列|プライマリ エンタープライズ ドメイン ([windowsInformationProtection](../resources/intune_mam_windowsinformationprotection.md) から継承)|
 |enterpriseProtectedDomainNames|[windowsInformationProtectionResourceCollection](../resources/intune_mam_windowsinformationprotectionresourcecollection.md) コレクション|保護するエンタープライズ ドメインのリスト ([windowsInformationProtection](../resources/intune_mam_windowsinformationprotection.md) から継承)|
 |protectionUnderLockConfigRequired|ブール値|ロック機能による保護 (pin での暗号化) を構成するかどうかを指定します ([windowsInformationProtection](../resources/intune_mam_windowsinformationprotection.md) から継承)|
@@ -101,7 +101,7 @@ Content-length: 3890
     "certificate": "Y2VydGlmaWNhdGU="
   },
   "revokeOnUnenrollDisabled": true,
-  "rightsManagementServicesTemplateId": "79199ed9-e50b-4257-8de4-70b9c8685061",
+  "rightsManagementServicesTemplateId": "<Unknown Primitive Type Edm.Guid>",
   "azureRightsManagementServicesAllowed": true,
   "iconsVisible": true,
   "protectedApps": [
@@ -210,7 +210,7 @@ Content-Type: application/json
 Content-Length: 4074
 
 {
-  "@odata.type": "#microsoft.graph.mdmWindowsInformationProtectionPolicy",
+  "@odata.type": "#microsoft.intune_mam_graph.windowsInformationProtectionPolicy",
   "displayName": "Display Name value",
   "description": "Description value",
   "createdDateTime": "2017-01-01T00:02:43.5775965-08:00",
@@ -237,7 +237,7 @@ Content-Length: 4074
     "certificate": "Y2VydGlmaWNhdGU="
   },
   "revokeOnUnenrollDisabled": true,
-  "rightsManagementServicesTemplateId": "79199ed9-e50b-4257-8de4-70b9c8685061",
+  "rightsManagementServicesTemplateId": "<Unknown Primitive Type Edm.Guid>",
   "azureRightsManagementServicesAllowed": true,
   "iconsVisible": true,
   "protectedApps": [
@@ -337,6 +337,11 @@ Content-Length: 4074
   "isAssigned": true
 }
 ```
+
+
+
+
+
 
 
 

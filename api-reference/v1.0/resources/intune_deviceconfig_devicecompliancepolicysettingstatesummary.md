@@ -1,6 +1,6 @@
 # <a name="devicecompliancepolicysettingstatesummary-resource-type"></a>deviceCompliancePolicySettingStateSummary リソースの種類
 
-> **注:**Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
+> **注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
 
 アカウント全体における、デバイス コンプライアンスのポリシー設定状態の要約です。
 ## <a name="methods"></a>メソッド
@@ -15,10 +15,10 @@
 ## <a name="properties"></a>プロパティ
 |プロパティ|型|説明|
 |:---|:---|:---|
-|setting|String|設定のクラス名とプロパティ名です。|
-|settingName|String|設定の名前です。|
-|platformType|String|設定のプラットフォームです。可能な値は、`android`、`iOS`、`macOS`、`windowsPhone81`、`windows81AndLater`、`windows10AndLater`、`all` です。|
-|id|String|エンティティのキー。|
+|ID|文字列|エンティティのキー。|
+|設定|文字列|設定のクラス名とプロパティ名。|
+|settingName|文字列|設定の名前。|
+|platformType|[policyPlatformType](../resources/intune_deviceconfig_policyplatformtype.md)|設定のプラットフォームです。 可能な値は、`android`、`iOS`、`macOS`、`windowsPhone81`、`windows81AndLater`、`windows10AndLater`、`androidWorkProfile`、`all` です。|
 |unknownDeviceCount|Int32|不明なデバイスの数|
 |notApplicableDeviceCount|Int32|該当しないデバイスの数|
 |compliantDeviceCount|Int32|準拠デバイスの数|
@@ -34,19 +34,19 @@
 
 ## <a name="json-representation"></a>JSON 表記
 以下は、リソースの JSON 表記です。
-<!-- {
+<!--{
   "blockType": "resource",
+  "baseType": "microsoft.graph.entity",
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.deviceCompliancePolicySettingStateSummary"
-}
--->
+}-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.deviceCompliancePolicySettingStateSummary",
+  "id": "String (identifier)",
   "setting": "String",
   "settingName": "String",
   "platformType": "String",
-  "id": "String (identifier)",
   "unknownDeviceCount": 1024,
   "notApplicableDeviceCount": 1024,
   "compliantDeviceCount": 1024,
@@ -56,6 +56,11 @@
   "conflictDeviceCount": 1024
 }
 ```
+
+
+
+
+
 
 
 

@@ -15,7 +15,7 @@
 ## <a name="properties"></a>プロパティ
 |プロパティ|タイプ|説明|
 |:---|:---|:---|
-|id|文字列|エンティティのキー。|
+|ID|文字列|エンティティのキー。|
 |settingName|文字列|設定の名前|
 |instancePath|文字列|設定の InstancePath の名前|
 |unknownDeviceCount|Int32|設定の不明なデバイスの数|
@@ -32,8 +32,8 @@
 以下は、リソースの JSON 表記です。
 <!--{
   "blockType": "resource",
-  "keyProperty": "id",
   "baseType": "microsoft.graph.entity",
+  "keyProperty": "id",
   "@odata.type": "microsoft.graph.settingStateDeviceSummary"
 }-->
 ``` json
@@ -51,6 +51,11 @@
   "conflictDeviceCount": 1024
 }
 ```
+
+
+
+
+
 
 
 

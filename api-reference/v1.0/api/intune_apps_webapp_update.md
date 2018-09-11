@@ -34,9 +34,9 @@ PATCH /deviceAppManagement/mobileApps/{mobileAppId}
 
 |プロパティ|タイプ|説明|
 |:---|:---|:---|
-|id|文字列|エンティティのキー。 [mobileApp](../resources/intune_apps_mobileapp.md) から継承します|
+|ID|文字列|エンティティのキー。 [mobileApp](../resources/intune_apps_mobileapp.md) から継承します|
 |displayName|文字列|管理者が提供またはインポートしたアプリのタイトル。 [mobileApp](../resources/intune_apps_mobileapp.md) から継承します|
-|description|文字列|アプリの説明。 [mobileApp](../resources/intune_apps_mobileapp.md) から継承します|
+|説明|文字列|アプリの説明。 [mobileApp](../resources/intune_apps_mobileapp.md) から継承します|
 |publisher|文字列|アプリの発行元。 [mobileApp](../resources/intune_apps_mobileapp.md) から継承します|
 |largeIcon|[mimeContent](../resources/intune_shared_mimecontent.md)|アプリの詳細に表示され、アイコンのアップロードに使用される大きなアイコン。 [mobileApp](../resources/intune_apps_mobileapp.md) から継承します|
 |createdDateTime|DateTimeOffset|アプリが作成された日時。 [mobileApp](../resources/intune_apps_mobileapp.md) から継承します|
@@ -47,7 +47,7 @@ PATCH /deviceAppManagement/mobileApps/{mobileAppId}
 |owner|文字列|アプリの所有者。 [mobileApp](../resources/intune_apps_mobileapp.md) から継承します|
 |developer|文字列|アプリの開発者。 [mobileApp](../resources/intune_apps_mobileapp.md) から継承します|
 |notes|文字列|アプリ用のメモ。 [mobileApp](../resources/intune_apps_mobileapp.md) から継承します|
-|publishingState|[mobileAppPublishingState](../resources/intune_apps_mobileapppublishingstate.md)|アプリの発行の状態。 アプリが発行されていない限り、アプリを割り当てることができません。 [mobileApp](../resources/intune_apps_mobileapp.md) から継承します。 可能な値は、`notPublished`、`processing`、`published` です。|
+|publishingState|[mobileAppPublishingState](../resources/intune_apps_mobileapppublishingstate.md)|アプリケーションの発行の状態です。アプリが公開されていない限り、アプリケーションを割り当てることができません。 [MobileApp](../resources/intune_apps_mobileapp.md)から継承されます。使用可能な値は`notPublished`、`processing`、`published`です。|
 |appUrl|文字列|Web アプリの URL。|
 |useManagedBrowser|ブール値|管理対象のブラウザーを使用するかどうかを指定します。 このプロパティは、Android と iOS にのみ適用されます。|
 
@@ -117,6 +117,11 @@ Content-Length: 817
   "useManagedBrowser": true
 }
 ```
+
+
+
+
+
 
 
 

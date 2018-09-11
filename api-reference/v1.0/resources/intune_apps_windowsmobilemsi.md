@@ -20,7 +20,7 @@ Windows Mobile MSI 基幹業務アプリケーションのプロパティと継�
 |:---|:---|:---|
 |ID|文字列|エンティティのキー。 [mobileApp](../resources/intune_apps_mobileapp.md) から継承します|
 |displayName|文字列|管理者が提供またはインポートしたアプリのタイトル。 [mobileApp](../resources/intune_apps_mobileapp.md) から継承します|
-|説明|文字列|アプリの説明。 [mobileApp](../resources/intune_apps_mobileapp.md) から継承します|
+|description|文字列|アプリの説明。 [mobileApp](../resources/intune_apps_mobileapp.md) から継承します|
 |発行元|文字列|アプリの発行元。 [mobileApp](../resources/intune_apps_mobileapp.md) から継承します|
 |largeIcon|[mimeContent](../resources/intune_shared_mimecontent.md)|アプリの詳細に表示され、アイコンのアップロードに使用される大きなアイコン。 [mobileApp](../resources/intune_apps_mobileapp.md) から継承します|
 |createdDateTime|DateTimeOffset|アプリが作成された日時。 [mobileApp](../resources/intune_apps_mobileapp.md) から継承します|
@@ -31,7 +31,7 @@ Windows Mobile MSI 基幹業務アプリケーションのプロパティと継�
 |所有者|文字列|アプリの所有者。 [mobileApp](../resources/intune_apps_mobileapp.md) から継承します|
 |開発者|文字列|アプリの開発者。 [mobileApp](../resources/intune_apps_mobileapp.md) から継承します|
 |メモ|文字列|アプリ用のメモ。 [mobileApp](../resources/intune_apps_mobileapp.md) から継承します|
-|publishingState|[mobileAppPublishingState](../resources/intune_apps_mobileapppublishingstate.md)|アプリの発行の状態。 アプリが発行されていない限り、アプリを割り当てることはできません。 [mobileApp](../resources/intune_apps_mobileapp.md) から継承します。 指定できる値は、 `notPublished`、`processing`、`published` です。|
+|publishingState|[mobileAppPublishingState](../resources/intune_apps_mobileapppublishingstate.md)|アプリケーションの発行の状態です。アプリが公開されていない限り、アプリケーションを割り当てることができません。 [MobileApp](../resources/intune_apps_mobileapp.md)から継承されます。使用可能な値は`notPublished`、 `processing`、 `published`です。|
 |committedContentVersion|文字列|内部にコミットされたコンテンツのバージョン。 [mobileLobApp](../resources/intune_apps_mobilelobapp.md) から継承します|
 |fileName|文字列|メインの Lob アプリケーションのファイル名。 [mobileLobApp](../resources/intune_apps_mobilelobapp.md) から継承します|
 |サイズ|Int64|アップロードされたすべてのファイルを含む合計サイズ。 [mobileLobApp](../resources/intune_apps_mobilelobapp.md) から継承します|
@@ -51,8 +51,8 @@ Windows Mobile MSI 基幹業務アプリケーションのプロパティと継�
 以下は、リソースの JSON 表記です。
 <!--{
   "blockType": "resource",
-  "keyProperty": "id",
   "baseType": "microsoft.graph.mobileLobApp",
+  "keyProperty": "id",
   "@odata.type": "microsoft.graph.windowsMobileMSI"
 }-->
 ``` json
@@ -85,6 +85,11 @@ Windows Mobile MSI 基幹業務アプリケーションのプロパティと継�
   "ignoreVersionDetection": true
 }
 ```
+
+
+
+
+
 
 
 
