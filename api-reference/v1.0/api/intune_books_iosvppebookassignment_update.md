@@ -34,9 +34,9 @@ PATCH /deviceAppManagement/managedEBooks/{managedEBookId}/assignments/{managedEB
 
 |プロパティ|タイプ|説明|
 |:---|:---|:---|
-|id|文字列|エンティティのキー。 [managedEBookAssignment](../resources/intune_books_managedebookassignment.md) から継承します|
+|ID|文字列|エンティティのキー。 [managedEBookAssignment](../resources/intune_books_managedebookassignment.md) から継承します|
 |target|[deviceAndAppManagementAssignmentTarget](../resources/intune_shared_deviceandappmanagementassignmenttarget.md)|電子ブックの割り当て先。 [managedEBookAssignment](../resources/intune_books_managedebookassignment.md) から継承します|
-|installIntent|[installIntent](../resources/intune_shared_installintent.md)|電子ブックのインストールの目的。 [managedEBookAssignment](../resources/intune_books_managedebookassignment.md) から継承します。 指定できる値は、`available`、`required`、`uninstall`、`availableWithoutEnrollment` です。|
+|installIntent|[installIntent](../resources/intune_shared_installintent.md)|EBook のインストールの目的です。 [ ManagedEBookAssignment ](../resources/intune_books_managedebookassignment.md) から継承されます。使用可能な値は`available`、`required`、`uninstall`、`availableWithoutEnrollment`です。|
 
 
 
@@ -75,6 +75,11 @@ Content-Length: 242
   "installIntent": "required"
 }
 ```
+
+
+
+
+
 
 
 

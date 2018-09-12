@@ -29,8 +29,8 @@ termsAndConditionsAcceptanceStatus エンティティは、特定のユーザー
 以下は、リソースの JSON 表記です。
 <!--{
   "blockType": "resource",
-  "keyProperty": "id",
   "baseType": "microsoft.graph.entity",
+  "keyProperty": "id",
   "@odata.type": "microsoft.graph.termsAndConditionsAcceptanceStatus"
 }-->
 ``` json
@@ -42,6 +42,11 @@ termsAndConditionsAcceptanceStatus エンティティは、特定のユーザー
   "acceptedDateTime": "String (timestamp)"
 }
 ```
+
+
+
+
+
 
 
 

@@ -1,6 +1,6 @@
 # <a name="create-detectedapp"></a>detectedApp の作成
 
-> **注:**Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
+> **注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
 
 新しい [detectedApp](../resources/intune_devices_detectedapp.md) オブジェクトを作成します。
 ## <a name="prerequisites"></a>前提条件
@@ -24,8 +24,8 @@ POST /deviceManagement/detectedApps
 ## <a name="request-headers"></a>要求ヘッダー
 |ヘッダー|値|
 |:---|:---|
-|Authorization|ベアラー &lt;トークン&gt; が必要です。|
-|Accept|application/json|
+|承認|ベアラー &lt;トークン&gt; が必須。|
+|承諾|アプリケーションまたは json|
 
 ## <a name="request-body"></a>要求本文
 要求本文で、detectedApp オブジェクトの JSON 表記を指定します。
@@ -34,9 +34,9 @@ POST /deviceManagement/detectedApps
 
 |プロパティ|型|説明|
 |:---|:---|:---|
-|id|String|検出されたアプリケーションの一意識別子。 これは、アプリケーションの作成時に、Intune によって自動的に生成されます。 読み取り専用です。|
-|displayName|String|検出されたアプリケーションの名前。 読み取り専用です|
-|version|String|検出されたアプリケーションのバージョン。 読み取り専用です|
+|ID|文字列|検出されたアプリケーションの一意識別子。 これは、アプリケーションの作成時に、Intune によって自動的に生成されます。 読み取り専用です。|
+|displayName|文字列|検出されたアプリケーションの名前。 読み取り専用です|
+|バージョン|文字列|検出されたアプリケーションのバージョン。 読み取り専用です|
 |sizeInByte|Int64|検出されたアプリケーションのサイズ (バイト単位)。 読み取り専用です|
 |deviceCount|Int32|このアプリケーションがインストールされているデバイスの数|
 
@@ -78,6 +78,11 @@ Content-Length: 216
   "deviceCount": 11
 }
 ```
+
+
+
+
+
 
 
 
