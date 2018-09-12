@@ -1,6 +1,6 @@
 # <a name="update-managedapppolicydeploymentsummary"></a>managedAppPolicyDeploymentSummary の更新
 
-> **注:**Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
+> **注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
 
 [managedAppPolicyDeploymentSummary](../resources/intune_mam_managedapppolicydeploymentsummary.md) オブジェクトのプロパティを更新します。
 ## <a name="prerequisites"></a>前提条件
@@ -27,8 +27,8 @@ PATCH /deviceAppManagement/targetedManagedAppConfigurations/{targetedManagedAppC
 ## <a name="request-headers"></a>要求ヘッダー
 |ヘッダー|値|
 |:---|:---|
-|Authorization|ベアラー &lt;トークン&gt; が必要です。|
-|Accept|application/json|
+|承認|ベアラー &lt;トークン&gt; が必須。|
+|承諾|アプリケーションまたは json|
 
 ## <a name="request-body"></a>要求本文
 要求本文で、[managedAppPolicyDeploymentSummary](../resources/intune_mam_managedapppolicydeploymentsummary.md) オブジェクトの JSON 表記を指定します。
@@ -37,12 +37,12 @@ PATCH /deviceAppManagement/targetedManagedAppConfigurations/{targetedManagedAppC
 
 |プロパティ|型|説明|
 |:---|:---|:---|
-|displayName|String|まだ文書化されていません|
+|displayName|文字列|まだ文書化されていません|
 |configurationDeployedUserCount|Int32|まだ文書化されていません|
 |lastRefreshTime|DateTimeOffset|まだ文書化されていません|
 |configurationDeploymentSummaryPerApp|[managedAppPolicyDeploymentSummaryPerApp](../resources/intune_mam_managedapppolicydeploymentsummaryperapp.md) コレクション|まだ文書化されていません|
-|id|String|エンティティのキー。|
-|version|String|エンティティのバージョン。|
+|ID|文字列|エンティティのキー。|
+|バージョン|文字列|エンティティのバージョン。|
 
 
 
@@ -101,6 +101,11 @@ Content-Length: 637
   "version": "Version value"
 }
 ```
+
+
+
+
+
 
 
 

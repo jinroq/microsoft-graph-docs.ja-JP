@@ -9,7 +9,7 @@ Intune アプリ保護ポリシーで管理できる Android ストア アプリ
 ## <a name="methods"></a>メソッド
 |メソッド|戻り値の型|説明|
 |:---|:---|:---|
-|[List managedAndroidStoreApps](../api/intune_apps_managedandroidstoreapp_list.md)|[managedAndroidStoreApp](../resources/intune_apps_managedandroidstoreapp.md) コレクション|[managedAndroidStoreApp](../resources/intune_apps_managedandroidstoreapp.md) オブジェクトのプロパティとリレーションシップをリストします。|
+|[managedAndroidStoreApps の一覧表示](../api/intune_apps_managedandroidstoreapp_list.md)|[managedAndroidStoreApp](../resources/intune_apps_managedandroidstoreapp.md) コレクション|[managedAndroidStoreApp](../resources/intune_apps_managedandroidstoreapp.md) オブジェクトのプロパティとリレーションシップをリストします。|
 |[managedAndroidStoreApp の取得](../api/intune_apps_managedandroidstoreapp_get.md)|[managedAndroidStoreApp](../resources/intune_apps_managedandroidstoreapp.md)|[managedAndroidStoreApp](../resources/intune_apps_managedandroidstoreapp.md) オブジェクトのプロパティとリレーションシップを読み取ります。|
 |[managedAndroidStoreApp の作成](../api/intune_apps_managedandroidstoreapp_create.md)|[managedAndroidStoreApp](../resources/intune_apps_managedandroidstoreapp.md)|新しい [managedAndroidStoreApp](../resources/intune_apps_managedandroidstoreapp.md) オブジェクトを作成します。|
 |[managedAndroidStoreApp の削除](../api/intune_apps_managedandroidstoreapp_delete.md)|なし|[managedAndroidStoreApp](../resources/intune_apps_managedandroidstoreapp.md) を削除します。|
@@ -31,8 +31,8 @@ Intune アプリ保護ポリシーで管理できる Android ストア アプリ
 |owner|文字列|アプリの所有者。 [mobileApp](../resources/intune_apps_mobileapp.md) から継承します|
 |developer|文字列|アプリの開発者。 [mobileApp](../resources/intune_apps_mobileapp.md) から継承します|
 |notes|文字列|アプリ用のメモ。 [mobileApp](../resources/intune_apps_mobileapp.md) から継承します|
-|publishingState|[mobileAppPublishingState](../resources/intune_apps_mobileapppublishingstate.md)|アプリの発行の状態。 アプリが発行されていない限り、アプリを割り当てることができません。 [mobileApp](../resources/intune_apps_mobileapp.md) から継承します。 指定できる値は、`notPublished`、`processing`、`published`です。|
-|appAvailability|[managedAppAvailability](../resources/intune_apps_managedappavailability.md)|アプリケーションの可用性。 [managedApp](../resources/intune_apps_managedapp.md) から継承します。 指定できる値は、`global`、`lineOfBusiness` です。|
+|publishingState|[mobileAppPublishingState](../resources/intune_apps_mobileapppublishingstate.md)|アプリケーションの発行の状態です。アプリが公開されていない限り、アプリケーションを割り当てることができません。 [MobileApp](../resources/intune_apps_mobileapp.md)から継承されます。使用可能な値は`notPublished`、`processing`、`published`です。|
+|アプリケーション可用性|[アプリケーション可用性の管理](../resources/intune_apps_managedappavailability.md)|アプリケーションの可用性です。 [ManagedApp](../resources/intune_apps_managedapp.md)から継承されます。使用可能な値は `global`、 `lineOfBusiness`です。|
 |バージョン|文字列|アプリケーションのバージョン。 [managedApp](../resources/intune_apps_managedapp.md) から継承します|
 |packageId|文字列|アプリのパッケージ ID。|
 |appStoreUrl|文字列|Android の AppStoreUrl。|
@@ -42,14 +42,14 @@ Intune アプリ保護ポリシーで管理できる Android ストア アプリ
 |リレーションシップ|型|説明|
 |:---|:---|:---|
 |categories|[mobileAppCategory](../resources/intune_apps_mobileappcategory.md) コレクション|このアプリのカテゴリのリスト。 [mobileApp](../resources/intune_apps_mobileapp.md) から継承します|
-|assignments|[mobileAppAssignment](../resources/intune_apps_mobileappassignment.md) コレクション|このモバイル アプリのグループ割り当てのリスト。 [mobileApp](../resources/intune_apps_mobileapp.md) から継承します|
+|割り当て|[mobileAppAssignment](../resources/intune_apps_mobileappassignment.md) コレクション|このモバイル アプリのグループ割り当てのリスト。 [mobileApp](../resources/intune_apps_mobileapp.md) から継承します|
 
 ## <a name="json-representation"></a>JSON 表記
 以下は、リソースの JSON 表記です。
 <!--{
   "blockType": "resource",
-  "keyProperty": "id",
   "baseType": "microsoft.graph.managedApp",
+  "keyProperty": "id",
   "@odata.type": "microsoft.graph.managedAndroidStoreApp"
 }-->
 ``` json
@@ -90,6 +90,11 @@ Intune アプリ保護ポリシーで管理できる Android ストア アプリ
   }
 }
 ```
+
+
+
+
+
 
 
 

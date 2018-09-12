@@ -25,7 +25,7 @@
 |userName|文字列|レポートされているユーザー名|
 |userPrincipalName|文字列|レポートされているユーザーの PrincipalName|
 |deviceModel|文字列|レポートされているデバイス モデル|
-|状態|[complianceStatus](../resources/intune_shared_compliancestatus.md)|設定のコンプライアンスの状態です。 可能な値は、`unknown`、`notApplicable`、`compliant`、`remediated`、`nonCompliant`、`error`、`conflict` です。|
+|state|[complianceStatus](../resources/intune_shared_compliancestatus.md)|設定のコンプライアンスの状態です。使用可能な値は `unknown`、 `notApplicable`、 `compliant`、 `remediated`、 `nonCompliant`、 `error`、 `conflict`、 `notAssigned`です。|
 |complianceGracePeriodExpirationDateTime|DateTimeOffset|デバイス コンプライアンスの猶予期間が過ぎる DateTime|
 
 ## <a name="relationships"></a>リレーションシップ
@@ -34,8 +34,8 @@
 以下は、リソースの JSON 表記です。
 <!--{
   "blockType": "resource",
-  "keyProperty": "id",
   "baseType": "microsoft.graph.entity",
+  "keyProperty": "id",
   "@odata.type": "microsoft.graph.deviceComplianceSettingState"
 }-->
 ``` json
@@ -55,6 +55,11 @@
   "complianceGracePeriodExpirationDateTime": "String (timestamp)"
 }
 ```
+
+
+
+
+
 
 
 

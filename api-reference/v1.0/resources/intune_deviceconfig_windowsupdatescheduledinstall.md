@@ -9,7 +9,7 @@
 ## <a name="properties"></a>プロパティ
 |プロパティ|タイプ|説明|
 |:---|:---|:---|
-|scheduledInstallDay|[weeklySchedule](../resources/intune_deviceconfig_weeklyschedule.md)|スケジュールされたインストールの週の曜日です。 可能な値は、`userDefined`、`everyday`、`sunday`、`monday`、`tuesday`、`wednesday`、`thursday`、`friday`、`saturday` です。|
+|scheduledInstallDay|[weeklySchedule](../resources/intune_deviceconfig_weeklyschedule.md)|スケジュールされたインストール日 (曜日)。可能な値は `userDefined`、`everyday`、`sunday`、`monday`、`tuesday`、`wednesday`、`thursday`、`friday`、`saturday` です。|
 |scheduledInstallTime|TimeOfDay|スケジュールされたインストール時刻|
 
 ## <a name="relationships"></a>リレーションシップ
@@ -18,7 +18,6 @@
 以下は、リソースの JSON 表記です。
 <!--{
   "blockType": "resource",
-  "baseType": "microsoft.graph.windowsUpdateInstallScheduleType",
   "@odata.type": "microsoft.graph.windowsUpdateScheduledInstall"
 }-->
 ``` json
@@ -28,6 +27,11 @@
   "scheduledInstallTime": "String (time of day)"
 }
 ```
+
+
+
+
+
 
 
 

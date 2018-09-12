@@ -47,7 +47,7 @@ POST /deviceManagement/deviceCompliancePolicies
 |passwordExpirationDays|Int32|パスワードの有効期限 (日数)。|
 |passwordMinimumLength|Int32|パスワードの最小文字数。|
 |passwordMinimumCharacterSetCount|Int32|パスワードに必要な文字セットの数。|
-|passwordRequiredType|[requiredPasswordType](../resources/intune_deviceconfig_requiredpasswordtype.md)|必要なパスワードの種類。 可能な値は、 `deviceDefault`、`alphanumeric`、`numeric` です。|
+|passwordRequiredType|[requiredPasswordType](../resources/intune_deviceconfig_requiredpasswordtype.md)|必要なパスワードの種類です。指定できる値は`deviceDefault`、`alphanumeric`、`numeric` です。|
 |passwordPreviousPasswordBlockCount|Int32|再使用を禁止する、以前のパスワードの数。|
 |requireHealthyDeviceReport|ブール値|デバイスが Windows デバイス正常性構成証明によって正常と報告されることを要求します。|
 |osMinimumVersion|文字列|Windows 10 の最小バージョン。|
@@ -137,6 +137,11 @@ Content-Length: 1126
   "storageRequireEncryption": true
 }
 ```
+
+
+
+
+
 
 
 

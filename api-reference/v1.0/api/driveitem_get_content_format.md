@@ -3,12 +3,12 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
 title: 他の形式に変換する
-ms.openlocfilehash: 46e8ed178384a81f232a753fe683f8e11efe8585
-ms.sourcegitcommit: abf4b739257e3ffd9d045f783ec595d846172590
+ms.openlocfilehash: 7798905363217d366caabbdd9c82559f578c01aa
+ms.sourcegitcommit: 809748ea18943f5fd1d99c4c65a9b964f39a5f25
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "23269181"
+ms.lasthandoff: 09/08/2018
+ms.locfileid: "23893299"
 ---
 # <a name="download-a-file-in-another-format"></a>別の形式でファイルをダウンロードする
 
@@ -30,21 +30,14 @@ GET /drive/items/{item-id}/content?format={format}
 GET /drive/root:/{path and filename}:/content?format={format}
 ```
 
-### <a name="optional-request-headers"></a>オプションの要求ヘッダー
+## <a name="query-parameters"></a>クエリ パラメータ
 
-| 名前            | 値   | 説明                                                                                                                                              |
-|:----------------|:--------|:---------------------------------------------------------------------------------------------------------------------------------------------------------|
-| _if-none-match_ | 文字列  | この要求ヘッダーが含まれている場合、指定された eTag (または cTag) がファイルの現在のタグに一致すると、`HTTP 304 Not Modified` 応答が返されます。 |
-
-
-### <a name="query-string-parameters"></a>クエリ文字列のパラメーター
-
-| 名前      | 値  | 説明                                                    |
+| パラメータ      | 型  | 説明                                                    |
 |:----------|:-------|:---------------------------------------------------------------|
-| _format_  | 文字列 | アイテムのコンテンツをダウンロードする形式を指定します。 |
+| _format_  | string | アイテムのコンテンツをダウンロードする形式を指定します。 |
 
 
-#### <a name="format-options"></a>形式のオプション
+### <a name="format-options"></a>形式のオプション
 
 **format** パラメーターには次の値を指定できます。
 
@@ -52,7 +45,13 @@ GET /drive/root:/{path and filename}:/content?format={format}
 |:-------------|:-----------------------------------|----------------------------
 | pdf          | アイテムを PDF 形式に変換します。 | csv、doc、docx、odp、ods、odt、pot、potm、potx、pps、ppsx、ppsxm、ppt、pptm、pptx、rtf、xls、xlsx
 
-### <a name="example"></a>例
+## <a name="optional-request-headers"></a>オプションの要求ヘッダー
+
+| 名前            | 値   | 説明                                                                                                                                              |
+|:----------------|:--------|:---------------------------------------------------------------------------------------------------------------------------------------------------------|
+| _if-none-match_ | 文字列  | この要求ヘッダーが含まれている場合、指定された eTag (または cTag) がファイルの現在のタグに一致すると、`HTTP 304 Not Modified` 応答が返されます。 |
+
+## <a name="example"></a>例
 
 <!-- { "blockType": "request", "name": "convert-item-content", "scopes": "files.read" } -->
 

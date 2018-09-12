@@ -34,7 +34,7 @@ POST /deviceAppManagement/mobileAppConfigurations/{managedDeviceMobileAppConfigu
 
 |プロパティ|タイプ|説明|
 |:---|:---|:---|
-|id|文字列|エンティティの一意識別子。|
+|ID|文字列|エンティティの一意識別子。|
 |ターゲット|[deviceAndAppManagementAssignmentTarget](../resources/intune_shared_deviceandappmanagementassignmenttarget.md)|T & C ポリシーが割り当てられる、割り当て先です。|
 
 
@@ -73,6 +73,11 @@ Content-Length: 234
   }
 }
 ```
+
+
+
+
+
 
 
 
