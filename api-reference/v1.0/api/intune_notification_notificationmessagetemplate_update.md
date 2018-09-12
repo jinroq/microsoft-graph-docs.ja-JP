@@ -34,11 +34,11 @@ PATCH /deviceManagement/notificationMessageTemplates/{notificationMessageTemplat
 
 |プロパティ|タイプ|説明|
 |:---|:---|:---|
-|id|文字列|エンティティのキー。|
+|ID|文字列|エンティティのキー。|
 |lastModifiedDateTime|DateTimeOffset|オブジェクトが最後に変更された DateTime。|
 |displayName|文字列|通知メッセージ テンプレートの表示名。|
 |defaultLocale|文字列|要求されたロケールが使用できないときにフォールバックする既定のロケール。|
-|brandingOptions|[notificationTemplateBrandingOptions](../resources/intune_notification_notificationtemplatebrandingoptions.md)|メッセージ テンプレートのブランド化オプション。 ブランド化は、Intune 管理コンソールで定義されます。 指定できる値は、`none`、`includeCompanyLogo`、`includeCompanyName`、`includeContactInformation` です。|
+|brandingOptions|[notificationTemplateBrandingOptions](../resources/intune_notification_notificationtemplatebrandingoptions.md)|メッセージ テンプレートのブランド化オプション。Intune 管理コンソールでは、ブランド化が定義されています。使用可能な値は `none`、 `includeCompanyLogo`、 `includeCompanyName`、 `includeContactInformation`です。|
 
 
 
@@ -77,6 +77,11 @@ Content-Length: 310
   "brandingOptions": "includeCompanyLogo"
 }
 ```
+
+
+
+
+
 
 
 

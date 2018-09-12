@@ -14,3 +14,8 @@ applicationGuardBlockFileTransferのための可能な値
 
 
 
+
+
+
+
+

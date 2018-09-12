@@ -39,7 +39,7 @@ POST /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/devic
 |userName|文字列|レポートされているユーザー名|
 |deviceModel|文字列|レポートされているデバイス モデル|
 |complianceGracePeriodExpirationDateTime|DateTimeOffset|デバイス コンプライアンスの猶予期間が過ぎる DateTime|
-|状態|[complianceStatus](../resources/intune_shared_compliancestatus.md)|ポリシー レポートのコンプライアンスの状態。 可能な値は、`unknown`、`notApplicable`、`compliant`、`remediated`、`nonCompliant`、`error`、`conflict` です。|
+|状態|[complianceStatus](../resources/intune_shared_compliancestatus.md)|コンプライアンス ポリシー レポートの状態。使用可能な値は `unknown`、 `notApplicable`、 `compliant`、 `remediated`、 `nonCompliant`、 `error`、 `conflict`、 `notAssigned`です。|
 |lastReportedDateTime|DateTimeOffset|ポリシー レポートの最終変更日時。|
 |userPrincipalName|文字列|UserPrincipalName。|
 
@@ -87,6 +87,11 @@ Content-Length: 475
   "userPrincipalName": "User Principal Name value"
 }
 ```
+
+
+
+
+
 
 
 

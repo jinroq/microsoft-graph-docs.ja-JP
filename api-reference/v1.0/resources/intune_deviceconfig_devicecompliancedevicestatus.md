@@ -1,6 +1,6 @@
 # <a name="devicecompliancedevicestatus-resource-type"></a>deviceComplianceDeviceStatus リソースの種類
 
-> **注:**Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
+> **注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
 
 まだ文書化されていません
 ## <a name="methods"></a>メソッド
@@ -15,25 +15,25 @@
 ## <a name="properties"></a>プロパティ
 |プロパティ|型|説明|
 |:---|:---|:---|
-|id|String|エンティティのキー。|
-|deviceDisplayName|String|DevicePolicyStatus のデバイス名です。|
-|userName|String|レポートされているユーザー名です|
-|deviceModel|String|レポートされているデバイス モデルです|
-|complianceGracePeriodExpirationDateTime|DateTimeOffset|デバイス コンプライアンスの猶予期間が過ぎた DateTime です|
-|status|String|ポリシー レポートのコンプライアンスの状態です。 可能な値は、`unknown`、`notApplicable`、`compliant`、`remediated`、`nonCompliant`、`error`、`conflict` です。|
-|lastReportedDateTime|DateTimeOffset|ポリシー レポートの最終変更日時です。|
-|userPrincipalName|String|UserPrincipalName。|
+|ID|文字列|エンティティのキー。|
+|deviceDisplayName|文字列|DevicePolicyStatus のデバイス名。|
+|userName|文字列|レポートされているユーザー名|
+|deviceModel|文字列|レポートされているデバイス モデル|
+|complianceGracePeriodExpirationDateTime|DateTimeOffset|デバイス コンプライアンスの猶予期間が過ぎる DateTime|
+|状態|[complianceStatus](../resources/intune_shared_compliancestatus.md)|ポリシー レポートのコンプライアンスの状態。 可能な値は、`unknown`、`notApplicable`、`compliant`、`remediated`、`nonCompliant`、`error`、`conflict`、`notAssigned` です。|
+|lastReportedDateTime|DateTimeOffset|ポリシー レポートの最終変更日時。|
+|userPrincipalName|文字列|UserPrincipalName。|
 
 ## <a name="relationships"></a>リレーションシップ
 なし
 ## <a name="json-representation"></a>JSON 表記
 以下は、リソースの JSON 表記です。
-<!-- {
+<!--{
   "blockType": "resource",
+  "baseType": "microsoft.graph.entity",
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.deviceComplianceDeviceStatus"
-}
--->
+}-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.deviceComplianceDeviceStatus",
@@ -47,6 +47,11 @@
   "userPrincipalName": "String"
 }
 ```
+
+
+
+
+
 
 
 
