@@ -34,9 +34,9 @@ POST /deviceAppManagement/managedEBooks/{managedEBookId}/assignments
 
 |プロパティ|タイプ|説明|
 |:---|:---|:---|
-|id|文字列|エンティティのキー。|
+|ID|文字列|エンティティのキー。|
 |target|[deviceAndAppManagementAssignmentTarget](../resources/intune_shared_deviceandappmanagementassignmenttarget.md)|電子ブックの割り当て先。|
-|installIntent|[installIntent](../resources/intune_shared_installintent.md)|電子ブックのインストールの目的。 可能な値は、`available`、`required`、`uninstall`、`availableWithoutEnrollment` です。|
+|installIntent|[installIntent](../resources/intune_shared_installintent.md)|EBook のインストールの目的です。使用可能な値は `available`、 `required`、 `uninstall`、 `availableWithoutEnrollment`です。|
 
 
 
@@ -76,6 +76,11 @@ Content-Length: 243
   "installIntent": "required"
 }
 ```
+
+
+
+
+
 
 
 

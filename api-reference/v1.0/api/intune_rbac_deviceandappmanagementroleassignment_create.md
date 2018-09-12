@@ -1,6 +1,6 @@
 # <a name="create-deviceandappmanagementroleassignment"></a>deviceAndAppManagementRoleAssignment の作成
 
-> **注:**Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
+> **注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
 
 新しい [deviceAndAppManagementRoleAssignment](../resources/intune_rbac_deviceandappmanagementroleassignment.md) オブジェクトを作成します。
 ## <a name="prerequisites"></a>前提条件
@@ -24,8 +24,8 @@ POST /deviceManagement/roleAssignments
 ## <a name="request-headers"></a>要求ヘッダー
 |ヘッダー|値|
 |:---|:---|
-|Authorization|ベアラー &lt;トークン&gt; が必要です。|
-|Accept|application/json|
+|承認|ベアラー &lt;トークン&gt; が必須。|
+|承諾|アプリケーションまたは json|
 
 ## <a name="request-body"></a>要求本文
 要求本文で、deviceAndAppManagementRoleAssignment オブジェクトの JSON 表記を指定します。
@@ -34,9 +34,9 @@ POST /deviceManagement/roleAssignments
 
 |プロパティ|型|説明|
 |:---|:---|:---|
-|id|String|エンティティのキー。 これは読み取り専用で、自動生成されます。 [roleAssignment](../resources/intune_rbac_roleassignment.md) から継承します|
-|displayName|String|ロール割り当ての表示名またはフレンドリ名。 [roleAssignment](../resources/intune_rbac_roleassignment.md) から継承します|
-|description|String|ロール割り当ての説明。 [roleAssignment](../resources/intune_rbac_roleassignment.md) から継承します|
+|ID|文字列|エンティティのキー。 これは読み取り専用で、自動生成されます。 [roleAssignment](../resources/intune_rbac_roleassignment.md) から継承します|
+|displayName|文字列|ロール割り当ての表示名またはフレンドリ名。 [roleAssignment](../resources/intune_rbac_roleassignment.md) から継承します|
+|説明|文字列|ロール割り当ての説明。 [roleAssignment](../resources/intune_rbac_roleassignment.md) から継承します|
 |resourceScopes|String コレクション|役割のスコープ メンバーのセキュリティ グループの ID リスト。  Azure Active Directory の ID。 [roleAssignment](../resources/intune_rbac_roleassignment.md) から継承します|
 |members|String コレクション|ロール メンバーのセキュリティ グループの ID リスト。 Azure Active Directory の ID。|
 
@@ -86,6 +86,11 @@ Content-Length: 307
   ]
 }
 ```
+
+
+
+
+
 
 
 

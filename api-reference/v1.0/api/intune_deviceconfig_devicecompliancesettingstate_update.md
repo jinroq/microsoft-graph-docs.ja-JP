@@ -1,6 +1,6 @@
 # <a name="update-devicecompliancesettingstate"></a>deviceComplianceSettingState の更新
 
-> **注:**Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
+> **注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
 
 [deviceComplianceSettingState](../resources/intune_deviceconfig_devicecompliancesettingstate.md) オブジェクトのプロパティを更新します。
 ## <a name="prerequisites"></a>前提条件
@@ -24,8 +24,8 @@ PATCH /deviceManagement/deviceCompliancePolicySettingStateSummaries/{deviceCompl
 ## <a name="request-headers"></a>要求ヘッダー
 |ヘッダー|値|
 |:---|:---|
-|承認|ベアラー &lt;トークン&gt;が必須。|
-|承諾|application/json|
+|承認|ベアラー &lt;トークン&gt; が必須。|
+|承諾|アプリケーションまたは json|
 
 ## <a name="request-body"></a>要求本文
 要求本文で、[deviceComplianceSettingState](../resources/intune_deviceconfig_devicecompliancesettingstate.md) オブジェクトの JSON 表記を指定します。
@@ -34,17 +34,17 @@ PATCH /deviceManagement/deviceCompliancePolicySettingStateSummaries/{deviceCompl
 
 |プロパティ|型|説明|
 |:---|:---|:---|
-|id|String|エンティティのキー|
-|setting|String|設定のクラス名とプロパティ名。|
-|settingName|String|レポートされている設定名。|
-|deviceId|String|レポートされているデバイス ID。|
-|deviceName|String|レポートされているデバイス名。|
-|userId|String|レポートされているユーザー ID|
-|userEmail|String|レポートされているユーザーのメール アドレス。|
-|userName|String|レポートされているユーザー名|
-|userPrincipalName|String|レポートされているユーザーの PrincipalName|
-|deviceModel|String|レポートされているデバイス モデル|
-|state|String|設定のコンプライアンス対応状態。可能な値は、`unknown`、`notApplicable`、`compliant`、`remediated`、`nonCompliant`、`error`、`conflict` です。|
+|ID|文字列|エンティティのキー|
+|setting|文字列|設定のクラス名とプロパティ名。|
+|settingName|文字列|レポートされている設定名。|
+|deviceId|文字列|レポートされているデバイス ID。|
+|deviceName|文字列|レポートされているデバイス名。|
+|userId|文字列|レポートされているユーザー ID|
+|userEmail|文字列|レポートされているユーザーのメール アドレス。|
+|userName|文字列|レポートされているユーザー名|
+|userPrincipalName|文字列|レポートされているユーザーの PrincipalName|
+|deviceModel|文字列|レポートされているデバイス モデル|
+|state|[complianceStatus](../resources/intune_shared_compliancestatus.md)|設定のコンプライアンスの状態です。 使用可能な値は`unknown`、`notApplicable`、`compliant`、`remediated`、`nonCompliant`、`error`、`conflict`、`notAssigned` です。|
 |complianceGracePeriodExpirationDateTime|DateTimeOffset|デバイス コンプライアンスの猶予期間が過ぎる DateTime|
 
 
@@ -98,6 +98,11 @@ Content-Length: 566
   "complianceGracePeriodExpirationDateTime": "2016-12-31T23:56:44.951111-08:00"
 }
 ```
+
+
+
+
+
 
 
 

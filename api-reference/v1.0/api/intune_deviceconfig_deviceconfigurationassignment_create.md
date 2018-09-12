@@ -34,7 +34,7 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/assignments
 
 |プロパティ|型|説明|
 |:---|:---|:---|
-|id|文字列|割り当てのキー。|
+|ID|文字列|割り当てのキー。|
 |ターゲット|[deviceAndAppManagementAssignmentTarget](../resources/intune_shared_deviceandappmanagementassignmenttarget.md)|デバイス構成の割り当て先。|
 
 
@@ -73,6 +73,11 @@ Content-Length: 218
   }
 }
 ```
+
+
+
+
+
 
 
 
