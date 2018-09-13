@@ -39,7 +39,7 @@ POST /deviceAppManagement/managedEBooks/{managedEBookId}/userStateSummary/{userI
 |deviceName|文字列|デバイス名。|
 |deviceId|文字列|デバイス ID。|
 |lastSyncDateTime|DateTimeOffset|最後の同期日時。|
-|installState|[installState](../resources/intune_books_installstate.md)|電子ブックのインストールの状態。 指定できる値は、`notApplicable`、`installed`、`failed`、`notInstalled`、`uninstallFailed`、`unknown` です。|
+|installState|[installState](../resources/intune_books_installstate.md)|EBook のインストール状態です。使用可能な値は `notApplicable`、 `installed`、 `failed`、 `notInstalled`、 `uninstallFailed`、 `unknown`です。|
 |errorCode|文字列|インストール失敗のエラー コード。|
 |osVersion|文字列|OS バージョン。|
 |osDescription|文字列|OS の説明。|
@@ -91,6 +91,11 @@ Content-Length: 423
   "userName": "User Name value"
 }
 ```
+
+
+
+
+
 
 
 

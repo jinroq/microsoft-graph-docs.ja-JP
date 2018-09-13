@@ -1,6 +1,6 @@
 # <a name="update-applepushnotificationcertificate"></a>applePushNotificationCertificate の更新
 
-> **注:**Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
+> **注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
 
 [applePushNotificationCertificate](../resources/intune_devices_applepushnotificationcertificate.md) オブジェクトのプロパティを更新します。
 ## <a name="prerequisites"></a>前提条件
@@ -24,8 +24,8 @@ PATCH /deviceManagement/applePushNotificationCertificate
 ## <a name="request-headers"></a>要求ヘッダー
 |ヘッダー|値|
 |:---|:---|
-|Authorization|ベアラー &lt;トークン&gt; が必要です。|
-|Accept|application/json|
+|承認|ベアラー &lt;トークン&gt; が必須。|
+|承諾する|アプリケーションまたは json|
 
 ## <a name="request-body"></a>要求本文
 要求本文で、[applePushNotificationCertificate](../resources/intune_devices_applepushnotificationcertificate.md) オブジェクトの JSON 表記を指定します。
@@ -34,12 +34,12 @@ PATCH /deviceManagement/applePushNotificationCertificate
 
 |プロパティ|型|説明|
 |:---|:---|:---|
-|id|String|証明書の一意識別子|
-|appleIdentifier|String|MDM プッシュ証明書の作成に使用するアカウントの Apple ID。|
-|topicIdentifier|String|トピック ID。|
+|ID|文字列|証明書の一意識別子|
+|appleIdentifier|文字列|MDM プッシュ証明書の作成に使用するアカウントの Apple ID。|
+|topicIdentifier|文字列|トピック ID。|
 |lastModifiedDateTime|DateTimeOffset|Apple プッシュ通知証明書の最終変更日時。|
 |expirationDateTime|DateTimeOffset|Apple プッシュ通知証明書の有効期限。|
-|証明書|String|まだ文書化されていません|
+|証明書|文字列|まだ文書化されていません|
 
 
 
@@ -80,6 +80,11 @@ Content-Length: 384
   "certificate": "Certificate value"
 }
 ```
+
+
+
+
+
 
 
 

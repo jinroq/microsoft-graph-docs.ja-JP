@@ -18,7 +18,7 @@
 |displayName|文字列|進捗レポートのフレンドリ名。 [managedAppStatus](../resources/intune_mam_managedappstatus.md) から継承します|
 |ID|文字列|エンティティのキー。 [managedAppStatus](../resources/intune_mam_managedappstatus.md) から継承します|
 |バージョン|文字列|エンティティのバージョン。 [managedAppStatus](../resources/intune_mam_managedappstatus.md) から継承します|
-|コンテンツ|[Json](../resources/intune_mam_json.md)|進捗レポートの内容。|
+|コンテンツ|[Json](../resources/json.md)|進捗レポートの内容。|
 
 ## <a name="relationships"></a>リレーションシップ
 なし
@@ -26,8 +26,8 @@
 以下は、リソースの JSON 表記です。
 <!--{
   "blockType": "resource",
-  "keyProperty": "id",
   "baseType": "microsoft.graph.managedAppStatus",
+  "keyProperty": "id",
   "@odata.type": "microsoft.graph.managedAppStatusRaw"
 }-->
 ``` json
@@ -41,6 +41,11 @@
   }
 }
 ```
+
+
+
+
+
 
 
 

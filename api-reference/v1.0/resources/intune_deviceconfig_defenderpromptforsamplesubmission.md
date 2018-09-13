@@ -6,11 +6,16 @@
 ## <a name="members"></a>メンバー
 |メンバー|値|説明|
 |:---|:---|:---|
-|UserDefined|0|ユーザー定義済み、既定値、インテントなし。|
+|userDefined|0|ユーザー定義済み、既定値、インテントなし。|
 |alwaysPrompt|1|常にダイアログを表示する。|
 |promptBeforeSendingPersonalData|2|個人データを送信する前にダイアログを表示する。|
 |neverSendData|3|データを送信しない。|
 |sendAllDataWithoutPrompting|4|ダイアログを表示することなく、すべてのデータを送信する。|
+
+
+
+
+
 
 
 

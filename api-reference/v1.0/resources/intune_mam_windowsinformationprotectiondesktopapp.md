@@ -24,7 +24,6 @@ Windows 情報保護用デスクトップ アプリ
 以下は、リソースの JSON 表記です。
 <!--{
   "blockType": "resource",
-  "baseType": "microsoft.graph.windowsInformationProtectionApp",
   "@odata.type": "microsoft.graph.windowsInformationProtectionDesktopApp"
 }-->
 ``` json
@@ -40,6 +39,11 @@ Windows 情報保護用デスクトップ アプリ
   "binaryVersionHigh": "String"
 }
 ```
+
+
+
+
+
 
 
 
