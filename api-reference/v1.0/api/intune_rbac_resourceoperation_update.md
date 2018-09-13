@@ -1,6 +1,6 @@
 # <a name="update-resourceoperation"></a>resourceOperation の更新
 
-> **注:**Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
+> **注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
 
 [resourceOperation](../resources/intune_rbac_resourceoperation.md) オブジェクトのプロパティを更新します。
 ## <a name="prerequisites"></a>前提条件
@@ -24,8 +24,8 @@ PATCH /deviceManagement/resourceOperations/{resourceOperationId}
 ## <a name="request-headers"></a>要求ヘッダー
 |ヘッダー|値|
 |:---|:---|
-|承認|ベアラー &lt;トークン&gt;が必須。|
-|承諾|application/json|
+|承認|ベアラー &lt;トークン&gt; が必須。|
+|承諾する|アプリケーションまたは json|
 
 ## <a name="request-body"></a>要求本文
 要求本文で、[resourceOperation](../resources/intune_rbac_resourceoperation.md) オブジェクトの JSON 表記を指定します。
@@ -34,10 +34,10 @@ PATCH /deviceManagement/resourceOperations/{resourceOperationId}
 
 |プロパティ|型|説明|
 |:---|:---|:---|
-|id|String|リソース操作のキー。 読み取り専用で、自動生成されます。|
-|resourceName|String|この操作が実行されるリソースの名前。|
-|actionName|String|この操作が実行するアクションの種類。 actionName は簡潔で、できるだけ少ない単語にする必要があります。|
-|description|String|リソース操作の説明。 Azure Portal で操作にマウス ポインターを合わせると、その操作の説明がテキストで表示されます。|
+|ID|文字列|リソース操作のキー。 読み取り専用で、自動生成されます。|
+|resourceName|文字列|この操作が実行されるリソースの名前。|
+|actionName|文字列|この操作が実行するアクションの種類。 actionName は簡潔で、できるだけ少ない単語にする必要があります。|
+|説明|文字列|リソース操作の説明。 Azure Portal で操作にマウス ポインターを合わせると、その操作の説明がテキストで表示されます。|
 
 
 
@@ -74,6 +74,11 @@ Content-Length: 227
   "description": "Description value"
 }
 ```
+
+
+
+
+
 
 
 
