@@ -1,35 +1,46 @@
-# <a name="overview-of-security-in-microsoft-graph-preview"></a>Microsoft Graph でのセキュリティの概要 (プレビュー) 
+# <a name="microsoft-graph-security-api-overview"></a>Microsoft Graph Security API の概要
 
-Microsoft Graph を使用することにより、Intelligent Security Graph に接続して Microsoft およびそのセキュリティ パートナーのリソースを活用して、脅威への対応ソリューションとしてより良いものを構築できます。 さらに Microsoft Graph は、Azure Active Directory (Azure AD) の Identity Protection サービスによって検出されるユーザーおよびアカウントのリスクへのアクセスも提供します。それにより、アカウント リスク データをセキュリティ アプリケーションに統合することができます。
+Microsoft Graph Security API は、Microsoft のセキュリティ製品、サービス、およびパートナーを接続し、セキュリティ オペレーションを合理化することで、脅威防御、検出、および応答機能を向上させます。 Microsoft Graph Security API は、 ひとつのプログラム インターフェイスにより複数の [Microsoft Graph Security プロバイダ](../api-reference/v1.0/resources/securityvendorinformation.md)  (セキュリティ プロバイダ、あるいはプロバイダ) を接続する、仲介サービス (ブローカー) です。 Microsoft Graph Security API  へのリクエストは、適用可能なすべてのセキュリティ プロバイダにフェデレーションされます。 次の図に示すように、結果を統合して、要求元のアプリケーションに共通のスキーマで返します。 詳細については、 [「Microsoft Graph Security のデータ フロー」](security-dataflow.md)　を参照してください。
 
-## <a name="why-use-the-security-api-and-connect-with-microsoft-intelligent-security-graph"></a>セキュリティ API を使用して Microsoft Intelligent Security Graph に接続する理由
+![security_overview_diagram_1.png](./images/security_overview_diagram_1.png)
 
-Intelligent Security Graph は、サイバー脅威と戦うための統一プラットフォームです。 これは、Microsoft のさまざまな製品やサービスを脅威から守るリアルタイム保護機能を提供し、統合ソリューションのエコシステムをサポートします。
+認証については、 [「認証、およびセキュリティ API」](security-authorization.md) を参照してください。 アクセス許可 (委任されたアクセス許可とアプリケーションのアクセス許可を含む) の詳細については、「 [アクセス許可](permissions_reference.md#security-permissions) 」を参照してください。
 
-それらのソリューションには、Intelligent Security Graph において [Microsoft Graph のセキュリティ API](https://aka.ms/graphsecuritydocs) により、容易に接続することができます。 それらのソリューションの実現がさらに容易になり、その価値が高まります。
+## <a name="why-use-the-microsoft-graph-security-api"></a>Microsoft Graph セキュリティ API を使用する理由
 
-### <a name="unify-and-standardize-alert-management"></a>警告管理の統一と標準化
+ [Microsoft グラフ セキュリティ API](../api-reference/v1.0/resources/security-api-overview.md) を使用すれば、Microsoft および Microsoft パートナーのさまざまなセキュリティ製品およびサービスの接続を簡単に行うことができます。 これらソリューションをより容易に、より高い価値で実現することができます。
 
-複数のセキュリティ ソリューション間の警告を、一般的な警告スキーマに関連付けることが容易になります。 1 回のコーディングで Microsoft Graph 統合セキュリティ ソリューションからの警告を統合し、全ソリューション間で警告の状態と割り当ての同期を維持します。 また、[Azure Monitor](https://docs.microsoft.com/ja-JP/azure/monitoring-and-diagnostics/monitor-stream-monitoring-data-event-hubs#what-can-i-do-with-the-monitoring-data-being-sent-to-my-event-hub) により、Spluk や IBM QRadar など、セキュリティ情報およびイベント管理 (SIEM) ソリューションに警告をストリーミング処理することができます。
+### <a name="unify-and-standardize-alert-tracking"></a>アラート追跡の統一と標準化
 
-### <a name="federated-security-aggregation-service"></a>フェデレーション セキュリティ集約サービス
+1回のコーディングで Microsoft Graph 統合セキュリティ ソリューションからの警告を統合し、全ソリューション間で警告の状態と割り当ての同期を維持します。 また[Azure Monitor](https://docs.microsoft.com/en-us/azure/monitoring-and-diagnostics/monitor-stream-monitoring-data-event-hubs#what-can-i-do-with-the-monitoring-data-being-sent-to-my-event-hub) を使用して、Spluk や IBM QRadar などのセキュリティ情報およびイベント管理 (SIEM) ソリューションに、警告をストリーミング処理することができます。 SIEM のセキュリティ API エンティティとの統合についての詳細は、 [「SIEM との統合」](security_siemintegration.md) を参照してください。
 
-セキュリティ API をフェデレーション セキュリティ集約サービスとして使用することにより、オンボードのセキュリティ プロバイダーすべてに対してクエリを発行し、回答の集約情報を得ることができます。
+### <a name="correlate-security-alerts-to-improve-threat-protection-and-response"></a>セキュリティの警告を関連させ、脅威に対する防御とレスポンスを向上させる
 
-### <a name="unlock-security-context-to-drive-investigation"></a>セキュリティ コンテキストをロックを解除して調査を促進
+複数のセキュリティ ソリューション間の警告を、統合された警告スキーマに容易に関連付けることができます。 これにより、実践的な警告情報を受け取れるだけでなく、アセット、およびユーザー情報を使用してセキュリティ アナリストをピボットし、脅威とアセットの保護のより高速な応答を有効にする警告情報を追加することができます。  
+
+### <a name="update-alert-tags-status-and-assignments"></a>警告タグ、ステータス、および割り当ての更新
+
+追加のコンテキストまたは脅威インテリジェンスに警告を関連付け、応答と修復を通知します。 すべてのワークフローにおいて、警告に関するコメントやフィードバックが可視化されるようになります。 警告の状態および割り当てを最新に保つことにより、すべての統合ソリューションが現在の状態を反映するようにします。 Webhook サブスクリプションを使用すると、変更の通知を受け取ることができます。  
+
+### <a name="unlock-security-context-to-drive-investigation"></a>セキュリティ コンテキストをロック解除してドライブを調査する
 
 関連するセキュリティ関連インベントリ (ユーザー、ホスト、アプリなど) を深く掘り下げ、Microsoft Graph の他のプロバイダー (Azure AD、Microsoft Intune、Office 365) からの組織コンテキストを追加することにより、ビジネス コンテキストとセキュリティ コンテキストをまとめて、脅威への対応を向上させます。
 
-## <a name="why-use-azure-ad-to-protect-identities-in-your-organization"></a>組織内の ID を保護するために Azure AD を使用する理由
+### <a name="proactively-manage-security-risks-preview"></a>セキュリティ リスク (プレビュー) をプロアクティブに管理
 
-ほとんどのセキュリティ侵害は、攻撃者がユーザーの ID を盗んだ結果としてなされており、第三者による侵害、パスワード スプレー攻撃、および高度なフィッシング攻撃を利用することで、ますます威力が増してきています。 したがって、ユーザー アカウントのすべてをそのような攻撃から保護し、無防備な ID が悪用されるのを事前に防ぐ必要があります。
+Microsoft Secure Score (プレビュー) は組織のセキュリティのニーズを可視化して改善方法を提案し、解決策が組み込まれた後に改良されたスコアを実行します。 経時的な進行状況を簡単に計測し、スコアの向上につながっている特定の変更情報を取得します。
 
-Azure AD では、アカウントが無防備である可能性を示す異常を検出するために、アダプティブ機械学習アルゴリズムや経験則を使用します。 そのデータを使用することにより、Identity Protection は、リスク ベースの条件アクセス ポリシーでユーザーを保護し、レポートを生成し、検出された場合にはそれを通知します。
+## <a name="benefits-of-using-the-microsoft-graph-security-api"></a>Microsoft Graph セキュリティ API を使用する利点
 
-現在では、Microsoft Graph により、Azure AD Premium P1 および P2 のユーザーに容易にアクセスすることにより、Identity Protection によるリスク検出について問い合わせて、それらのイベントを SIEM システムおよびセキュリティ アプリケーションで使用することができます。
+次の一覧表は、Microsoft Graph Security API を使用して統合することで得られる、さまざまなセキュリティ ソリューションです。  
+
+|**領域**     | **利点**|
+|:---------------|:---------|
+|**マネージド セキュリティ サービス プロバイダ (MSSP)**|<ul><li>セキュリティ操作ツールとサービスの合理的な統合。</li> <li>展開と保守に要する時間を短縮し、作業を減らします。</li> <li>MSSP ユーザーにより多くの価値を提供する機能。</li></ul>|
+|**SIEM と IT リスク管理ソリューション**|<ul><li>Microsoft のセキュリティ ソリューションとエコシステム パートナーをスムーズに統合します。</li> <li>豊富な警告メタデータ。</li> <li>警告の相関関係を向上します。</li></ul>|
+|**アプリケーション** <br> (脅威インテリジェンス、モバイル、クラウド、IOT、詐欺検出、アイデンティティとアクセス、リスクとコンプライアンス、ファイアウォール、など)|<ul><li>さまざまなセキュリティ ・ ソリューションにまたがる脅威管理、防御、およびリスク管理の統合。</li> <li>警告、在庫、構成、および Microsoft Graph を通じて公開されるアクション。</li> <li>Microsoft Graph により有効化されたソリューションの即座の統合。</li></ul>|
 
 ## <a name="next-steps"></a>次の手順
 
-- [セキュリティ API を使用する](../api-reference/beta/resources/security-api-overview.md)
-- [Azure AD Identity Protection API を使用する](../api-reference/beta/resources/identityprotection_root.md)
-
+- [Microsoft Graph セキュリティ API を使用する](../api-reference/v1.0/resources/security-api-overview.md)
+- セキュリティ プロバイダになることに関心がありますか？  [「Graphsecfeedback」](mailto:graphsecfeedback@microsoft.com)にアクセスしてください。
