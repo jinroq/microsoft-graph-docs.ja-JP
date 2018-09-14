@@ -19,6 +19,7 @@
 -->
 ``` http
 PATCH /deviceManagement/importedWindowsAutopilotDeviceIdentities/{importedWindowsAutopilotDeviceIdentityId}
+PATCH /deviceManagement/importedWindowsAutopilotDeviceIdentityUploads/{importedWindowsAutopilotDeviceIdentityUploadId}/deviceIdentities/{importedWindowsAutopilotDeviceIdentityId}
 ```
 
 ## <a name="request-headers"></a>要求ヘッダー
@@ -34,7 +35,7 @@ PATCH /deviceManagement/importedWindowsAutopilotDeviceIdentities/{importedWindow
 
 |プロパティ|型|説明|
 |:---|:---|:---|
-|id|文字列|オブジェクトの GUID|
+|ID|文字列|オブジェクトの GUID|
 |orderIdentifier|文字列|Windows オートパイロット デバイスの受注 ID。|
 |シリアル番号|文字列|Windows オートパイロット デバイスのシリアル番号。|
 |productKey|文字列|Windows オートパイロット デバイスのプロダクト キー。|
@@ -92,6 +93,11 @@ Content-Length: 590
   }
 }
 ```
+
+
+
+
+
 
 
 

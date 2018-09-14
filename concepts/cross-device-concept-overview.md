@@ -12,10 +12,17 @@ Microsoft では、複数デバイス間での統一的作業を可能にする�
 アクティビティにより、アプリのユーザーが、プラットフォームやデバイスを越えてシームレスに移行しながら実行する固有のタスクをキャプチャする手段が提供されます。それにより、ユーザーが希望する画面からすぐに作業を再開できるようになります。 アクティビティ フィードを使用することにより、ユーザーにとって最も重要な作業に関する人中心のビューを作成することができ、それにより、Web、モバイル、PC の間で切り替える際のストレスが軽減されます。 
 
 ### <a name="build-rich-cross-device-experiences-by-using-the-device-relay-api"></a>デバイス リレー API 使用によるクロスデバイスの豊かなエクスペリエンスを構築 
-デバイス リレー API は、Microsoft のさまざまなデバイス (PC、Windows Phone、Xbox、IoT、HoloLens など) に加えて、Android および iOS のデバイスを公開します。 それにより、ユーザーの複数デバイスの間の境界を完全に打ち破ることができます。 ユーザーの環境を利用し、単一デバイスの壁をリアルタイムで越える豊かなエクスペリエンスを作成するようなアプリを構築できます。 
+デバイス リレー API は、Microsoft のさまざまなデバイス (PC、Windows Phone、Xbox、IoT、HoloLens など) に加えて、Android および iOS のデバイスを公開します。 それにより、ユーザーの複数デバイスの間の境界を完全に打ち破ることができます。 ユーザーの環境を利用し、単一デバイスの壁をリアルタイムで越える豊かなエクスペリエンスを生み出すようなアプリを構築できます。 
+
+## <a name="reach-out-to-and-engage-with-users-anywhere-via-a-coherent-and-human-centric-notification-story-preview"></a>一貫性のある人中心の通知ストーリー (プレビュー) を介して、あらゆる場所のユーザーに到達して繋がる
+
+通知はユーザーと通信し、関わりあう最も効果的な直接の方法の 1 つです。 
+
+ Microsoft Graph 通知 API を用いれば、デバイス中心ではなく、人中心の方法で通知を配信できます。 通知を送信するユーザーに焦点を合わせ、Microsoft Graph の通知フレームワークを信頼して、ユーザーがサインインしている各エンドポイントに通知を配信させることができます。 Microsoft Graph 通知 API を使用すれば、クロスデバイス通知の管理も簡単になり、ユーザーの複数のデバイス間で通知を同期させ、ユーザー側での冗長性と中断の回数を減らすことができます。 
 
 ## <a name="next-steps"></a>次の手順
 
 - [Microsoft Graph API を使用してクロスデバイス エクスペリエンスを有効にする](../api-reference/v1.0/resources/cross-device-reference-overview.md)
 - [Microsoft Graph のアクティビティ フィード API の詳細情報を確認する](activity-feed-concept-overview.md)
-- [Microsoft Graph のデバイス リレー API の詳細情報を確認する](device-relay-concept-overview.md)
+- [Microsoft Graph のデバイス再生 API の詳細情報を確認する](device-relay-concept-overview.md)
+- [Graph Graph の通知 API の詳細情報を確認する](notifications-concept-overview.md)

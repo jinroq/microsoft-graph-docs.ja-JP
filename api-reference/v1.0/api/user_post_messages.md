@@ -24,8 +24,8 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/messages
 ## <a name="request-headers"></a>要求ヘッダー
 | ヘッダー       | 値 |
 |:---------------|:--------|
-| Authorization  | ベアラー {トークン}。必須。  |
-| Content-Type  | application/json  |
+| 承認  | ベアラー {トークン}。必須。  |
+| Content-Type  | アプリケーション/json  |
 
 ## <a name="request-body"></a>要求本文
 要求本文で、[メッセージ](../resources/message.md) オブジェクトの JSON 表記を指定します。
@@ -122,6 +122,106 @@ Content-type: application/json
     "replyTo":[
 
     ]
+}
+```
+
+##### <a name="request-2"></a>要求 2
+次の例では、メッセージの下書きを作成するときに、顧客のインターネット メッセージ ヘッダーを 2 つ追加します。
+<!-- {
+  "blockType": "request",
+  "name": "create_message_with_headers_from_user"
+}-->
+```http
+POST https://graph.microsoft.com/v1.0/me/messages
+Content-type: application/json
+
+{
+    "subject":"9/8/2018: concert",
+    "body":{
+        "contentType":"HTML",
+        "content":"The group represents Washington."
+    },
+    "toRecipients":[
+        {
+            "emailAddress":{
+                "address":"AlexW@contoso.OnMicrosoft.com"
+            }
+        }
+    ],
+    "internetMessageHeaders":[
+        {
+            "name":"x-custom-header-group-name",
+            "value":"Washington"
+        },
+        {
+            "name":"x-custom-header-group-id",
+            "value":"WA001"
+        }
+    ]
+}
+```
+要求本文で、[メッセージ](../resources/message.md) オブジェクトの JSON 表記を指定します。
+##### <a name="response-2"></a>応答 2
+以下は、応答の例です。 注: 既定では、インターネット メッセージのヘッダーは、POST 応答では返されません。 注: 簡潔にするために、ここに示す応答オブジェクトも切り詰められている場合があります。 実際の呼び出しではすべてのプロパティが返されます。
+<!-- {
+  "blockType": "response",
+  "name": "create_message_with_headers_from_user",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.message"
+} -->
+```http
+HTTP/1.1 201 Created
+Content-type: application/json
+
+{
+    "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#users('7f180cbb-a5ae-457c-b7e8-6f5b42ba33e7')/messages/$entity",
+    "@odata.etag":"W/\"CQAAABYAAAC4ofQHEIqCSbQPot83AFcbAAAnjjuE\"",
+    "id":"AAMkADhNmAAA=",
+    "createdDateTime":"2018-09-09T02:54:56Z",
+    "lastModifiedDateTime":"2018-09-09T02:54:56Z",
+    "changeKey":"CQAAABYAAAC4ofQHEIqCSbQPot83AFcbAAAnjjuE",
+    "categories":[
+
+    ],
+    "receivedDateTime":"2018-09-09T02:54:56Z",
+    "sentDateTime":"2018-09-09T02:54:56Z",
+    "hasAttachments":false,
+    "internetMessageId":"<MWHPR220MB1120.namprd22.prod.outlook.com>",
+    "subject":"9/8/2018: concert",
+    "bodyPreview":"The group represents Washington.",
+    "importance":"normal",
+    "parentFolderId":"AAMkADhAAAAAAEPAAA=",
+    "conversationId":"AAQkADhNCuP8OKSm-0NE=",
+    "isDeliveryReceiptRequested":false,
+    "isReadReceiptRequested":false,
+    "isRead":true,
+    "isDraft":true,
+    "webLink":"https://outlook.office365.com/owa/?ItemID=AAMkADhNmAAA%3D&exvsurl=1&viewmodel=ReadMessageItem",
+    "inferenceClassification":"focused",
+    "body":{
+        "contentType":"html",
+        "content":"<html>\r\n<head>\r\n<meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\">\r\n<meta content=\"text/html; charset=us-ascii\">\r\n</head>\r\n<body>\r\nThe group represents Washington.\r\n</body>\r\n</html>\r\n"
+    },
+    "toRecipients":[
+        {
+            "emailAddress":{
+                "name":"Alex Wilber",
+                "address":"AlexW@contoso.OnMicrosoft.com"
+            }
+        }
+    ],
+    "ccRecipients":[
+
+    ],
+    "bccRecipients":[
+
+    ],
+    "replyTo":[
+
+    ],
+    "flag":{
+        "flagStatus":"notFlagged"
+    }
 }
 ```
 

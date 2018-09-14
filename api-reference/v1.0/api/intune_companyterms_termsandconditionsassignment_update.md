@@ -24,8 +24,8 @@ PATCH /deviceManagement/termsAndConditions/{termsAndConditionsId}/assignments/{t
 ## <a name="request-headers"></a>要求ヘッダー
 |ヘッダー|値|
 |:---|:---|
-|Authorization|ベアラー &lt;トークン&gt; が必須。|
-|Accept|application/json|
+|承認|ベアラー &lt;トークン&gt; が必須。|
+|受け入れる|application/json|
 
 ## <a name="request-body"></a>要求本文
 要求本文で、[termsAndConditionsAssignment](../resources/intune_companyterms_termsandconditionsassignment.md) オブジェクトの JSON 表記を指定します。
@@ -34,8 +34,8 @@ PATCH /deviceManagement/termsAndConditions/{termsAndConditionsId}/assignments/{t
 
 |プロパティ|タイプ|説明|
 |:---|:---|:---|
-|id|文字列|エンティティの一意識別子。|
-|target|[deviceAndAppManagementAssignmentTarget](../resources/intune_shared_deviceandappmanagementassignmenttarget.md)|T & C ポリシーが割り当てられる、割り当て先です。|
+|ID|文字列|エンティティの一意識別子。|
+|ターゲット|[deviceAndAppManagementAssignmentTarget](../resources/intune_shared_deviceandappmanagementassignmenttarget.md)|T & C ポリシーが割り当てられる、割り当て先です。|
 
 
 
@@ -72,6 +72,11 @@ Content-Length: 217
   }
 }
 ```
+
+
+
+
+
 
 
 

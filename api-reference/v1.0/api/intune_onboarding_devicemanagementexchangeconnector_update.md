@@ -1,6 +1,6 @@
 # <a name="update-devicemanagementexchangeconnector"></a>deviceManagementExchangeConnector の更新
 
-> **注:**Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
+> **注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
 
 [deviceManagementExchangeConnector](../resources/intune_onboarding_devicemanagementexchangeconnector.md) オブジェクトのプロパティを更新します。
 ## <a name="prerequisites"></a>前提条件
@@ -8,7 +8,7 @@
 
 |アクセス許可の種類|アクセス許可 (特権の大きいものから小さいものへ)|
 |:---|:---|
-|委任 (職場または学校のアカウント)|DeviceManagementServiceConfig.ReadWrite.All|
+|委任 (職場または学校アカウント)|DeviceManagementServiceConfig.ReadWrite.All|
 |委任 (個人用 Microsoft アカウント)|サポートされていません。|
 |アプリケーション|サポートされていません。|
 
@@ -24,8 +24,8 @@ PATCH /deviceManagement/exchangeConnectors/{deviceManagementExchangeConnectorId}
 ## <a name="request-headers"></a>要求ヘッダー
 |ヘッダー|値|
 |:---|:---|
-|承認|ベアラー &lt;トークン&gt;が必須。|
-|承諾|application/json|
+|承認|ベアラー &lt;トークン&gt; が必須。|
+|受け入れる|アプリケーションまたは json|
 
 ## <a name="request-body"></a>要求本文
 要求本文で、[deviceManagementExchangeConnector](../resources/intune_onboarding_devicemanagementexchangeconnector.md) オブジェクトの JSON 表記を指定します。
@@ -34,15 +34,16 @@ PATCH /deviceManagement/exchangeConnectors/{deviceManagementExchangeConnectorId}
 
 |プロパティ|型|説明|
 |:---|:---|:---|
-|id|String|まだ文書化されていません|
+|ID|文字列|まだ文書化されていません|
 |lastSyncDateTime|DateTimeOffset|Exchange Connector の最終同期日時|
-|status|String|Exchange Connector の状態。可能な値は、`none`、`connectionPending`、`connected`、`disconnected` です。|
-|primarySmtpAddress|String|サービス間の Exchange Connector を構成するときに使用するメール アドレス。|
-|serverName|String|Exchange Connector をホストするサーバーの名前。|
-|exchangeConnectorType|String|構成されている Exchange Connector の種類。 可能な値は、`onPremises`、`hosted`、`serviceToService`、`dedicated` です。|
-|version|String|ExchangeConnectorAgent のバージョン|
-|exchangeAlias|String|Exchange Server に割り当てられているエイリアス。|
-|exchangeOrganization|String|Exchange Server に対する Exchange 組織|
+|ステータス|[deviceManagementExchangeConnectorStatus](../resources/intune_onboarding_devicemanagementexchangeconnectorstatus.md)|Exchange コネクタのステータスです。 指定できる値は、`none`、`connectionPending`、`connected`、`disconnected` です。|
+|primarySmtpAddress|文字列|サービス間の Exchange Connector を構成するときに使用するメール アドレス。|
+|serverName|文字列|Exchange サーバーの名前。|
+|connectorServerName|文字列|Exchange Connector をホストするサーバーの名前。|
+|exchangeConnectorType|[deviceManagementExchangeConnectorType](../resources/intune_onboarding_devicemanagementexchangeconnectortype.md)|構成されている Exchange コネクタの種類。 可能な値は、`onPremises`、`hosted`、`serviceToService`、`dedicated` です。|
+|バージョン|文字列|ExchangeConnectorAgent のバージョン|
+|exchangeAlias|文字列|Exchange Server に割り当てられているエイリアス。|
+|exchangeOrganization|文字列|Exchange Server に対する Exchange 組織|
 
 
 
@@ -55,13 +56,14 @@ PATCH /deviceManagement/exchangeConnectors/{deviceManagementExchangeConnectorId}
 ``` http
 PATCH https://graph.microsoft.com/v1.0/deviceManagement/exchangeConnectors/{deviceManagementExchangeConnectorId}
 Content-type: application/json
-Content-length: 361
+Content-length: 418
 
 {
   "lastSyncDateTime": "2017-01-01T00:02:49.3205976-08:00",
   "status": "connectionPending",
   "primarySmtpAddress": "Primary Smtp Address value",
   "serverName": "Server Name value",
+  "connectorServerName": "Connector Server Name value",
   "exchangeConnectorType": "hosted",
   "version": "Version value",
   "exchangeAlias": "Exchange Alias value",
@@ -74,7 +76,7 @@ Content-length: 361
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 482
+Content-Length: 539
 
 {
   "@odata.type": "#microsoft.graph.deviceManagementExchangeConnector",
@@ -83,12 +85,18 @@ Content-Length: 482
   "status": "connectionPending",
   "primarySmtpAddress": "Primary Smtp Address value",
   "serverName": "Server Name value",
+  "connectorServerName": "Connector Server Name value",
   "exchangeConnectorType": "hosted",
   "version": "Version value",
   "exchangeAlias": "Exchange Alias value",
   "exchangeOrganization": "Exchange Organization value"
 }
 ```
+
+
+
+
+
 
 
 

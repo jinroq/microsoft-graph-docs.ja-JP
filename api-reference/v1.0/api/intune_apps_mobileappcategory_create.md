@@ -1,6 +1,6 @@
 # <a name="create-mobileappcategory"></a>mobileAppCategory の作成
 
-> **注:**Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
+> **注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
 
 新しい [mobileAppCategory](../resources/intune_apps_mobileappcategory.md) オブジェクトを作成します。
 ## <a name="prerequisites"></a>前提条件
@@ -25,8 +25,8 @@ POST /deviceAppManagement/mobileApps/{mobileAppId}/categories
 ## <a name="request-headers"></a>要求ヘッダー
 |ヘッダー|値|
 |:---|:---|
-|Authorization|ベアラー &lt;トークン&gt; が必要です。|
-|Accept|application/json|
+|承認|ベアラー &lt;トークン&gt; が必須。|
+|受け入れる|アプリケーションまたは json|
 
 ## <a name="request-body"></a>要求本文
 要求本文で、mobileAppCategory オブジェクトの JSON 表記を指定します。
@@ -35,8 +35,8 @@ POST /deviceAppManagement/mobileApps/{mobileAppId}/categories
 
 |プロパティ|型|説明|
 |:---|:---|:---|
-|id|String|エンティティのキー。|
-|displayName|String|アプリのカテゴリの名前。|
+|ID|文字列|エンティティのキー。|
+|displayName|文字列|アプリのカテゴリの名前。|
 |lastModifiedDateTime|DateTimeOffset|mobileAppCategory が最後に変更された日時。|
 
 
@@ -73,6 +73,11 @@ Content-Length: 212
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00"
 }
 ```
+
+
+
+
+
 
 
 
