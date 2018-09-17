@@ -1,6 +1,6 @@
 # <a name="update-roleassignment"></a>roleAssignment の更新
 
-> **注:**Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
+> **注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
 
 [roleAssignment](../resources/intune_rbac_roleassignment.md) オブジェクトのプロパティを更新します。
 ## <a name="prerequisites"></a>前提条件
@@ -24,8 +24,8 @@ PATCH /deviceManagement/roleDefinitions/{roleDefinitionId}/roleAssignments/{role
 ## <a name="request-headers"></a>要求ヘッダー
 |ヘッダー|値|
 |:---|:---|
-|Authorization|ベアラー &lt;トークン&gt; が必要です。|
-|Accept|application/json|
+|承認|ベアラー &lt;トークン&gt; が必須。|
+|承諾する|アプリケーションまたは json|
 
 ## <a name="request-body"></a>要求本文
 要求本文で、[roleAssignment](../resources/intune_rbac_roleassignment.md) オブジェクトの JSON 表記を指定します。
@@ -34,9 +34,9 @@ PATCH /deviceManagement/roleDefinitions/{roleDefinitionId}/roleAssignments/{role
 
 |プロパティ|型|説明|
 |:---|:---|:---|
-|id|String|エンティティのキー。 これは読み取り専用で、自動生成されます。|
-|displayName|String|ロール割り当ての表示名またはフレンドリ名。|
-|description|String|ロール割り当ての説明。|
+|ID|文字列|エンティティのキー。 これは読み取り専用で、自動生成されます。|
+|displayName|文字列|ロール割り当ての表示名またはフレンドリ名。|
+|説明|文字列|ロール割り当ての説明。|
 |resourceScopes|String コレクション|役割のスコープ メンバーのセキュリティ グループの ID リスト。  Azure Active Directory の ID。|
 
 
@@ -78,6 +78,11 @@ Content-Length: 242
   ]
 }
 ```
+
+
+
+
+
 
 
 

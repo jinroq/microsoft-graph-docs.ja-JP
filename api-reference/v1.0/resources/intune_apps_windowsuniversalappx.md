@@ -1,6 +1,6 @@
 # <a name="windowsuniversalappx-resource-type"></a>windowsUniversalAppX リソース タイプ
 
-> **注:**Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
+> **注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
 
 Windows ユニバーサル AppX 基幹業務アプリのプロパティと継承されたプロパティが含まれます。
 
@@ -9,56 +9,56 @@ Windows ユニバーサル AppX 基幹業務アプリのプロパティと継承
 ## <a name="methods"></a>メソッド
 |メソッド|戻り値の型|説明|
 |:---|:---|:---|
-|[List windowsUniversalAppXs](../api/intune_apps_windowsuniversalappx_list.md)|[windowsUniversalAppX](../resources/intune_apps_windowsuniversalappx.md) コレクション|[windowsUniversalAppX](../resources/intune_apps_windowsuniversalappx.md) オブジェクトのプロパティとリレーションシップをリストします。|
-|[Get windowsUniversalAppX](../api/intune_apps_windowsuniversalappx_get.md)|[windowsUniversalAppX](../resources/intune_apps_windowsuniversalappx.md)|[windowsUniversalAppX](../resources/intune_apps_windowsuniversalappx.md) オブジェクトのプロパティとリレーションシップを読み取ります。|
-|[Create windowsUniversalAppX](../api/intune_apps_windowsuniversalappx_create.md)|[windowsUniversalAppX](../resources/intune_apps_windowsuniversalappx.md)|新しい [windowsUniversalAppX](../resources/intune_apps_windowsuniversalappx.md) オブジェクトを作成します。|
-|[Delete windowsUniversalAppX](../api/intune_apps_windowsuniversalappx_delete.md)|なし|[windowsUniversalAppX](../resources/intune_apps_windowsuniversalappx.md) を削除します。|
-|[Update windowsUniversalAppX](../api/intune_apps_windowsuniversalappx_update.md)|[windowsUniversalAppX](../resources/intune_apps_windowsuniversalappx.md)|[windowsUniversalAppX](../resources/intune_apps_windowsuniversalappx.md) オブジェクトのプロパティを更新します。|
+|[windowsUniversalAppXs をリストします](../api/intune_apps_windowsuniversalappx_list.md)|[windowsUniversalAppX](../resources/intune_apps_windowsuniversalappx.md) コレクション|[windowsUniversalAppX](../resources/intune_apps_windowsuniversalappx.md) オブジェクトのプロパティとリレーションシップをリストします。|
+|[windowsUniversalAppX を取得します](../api/intune_apps_windowsuniversalappx_get.md)|[windowsUniversalAppX](../resources/intune_apps_windowsuniversalappx.md)|[windowsUniversalAppX](../resources/intune_apps_windowsuniversalappx.md) オブジェクトのプロパティとリレーションシップを読み取ります。|
+|[windowsUniversalAppX を作成します](../api/intune_apps_windowsuniversalappx_create.md)|[windowsUniversalAppX](../resources/intune_apps_windowsuniversalappx.md)|新しい [windowsUniversalAppX](../resources/intune_apps_windowsuniversalappx.md) オブジェクトを作成します。|
+|[windowsUniversalAppX を削除します](../api/intune_apps_windowsuniversalappx_delete.md)|なし|[windowsUniversalAppX](../resources/intune_apps_windowsuniversalappx.md) を削除します。|
+|[windowsUniversalAppX を更新します](../api/intune_apps_windowsuniversalappx_update.md)|[windowsUniversalAppX](../resources/intune_apps_windowsuniversalappx.md)|[windowsUniversalAppX](../resources/intune_apps_windowsuniversalappx.md) オブジェクトのプロパティを更新します。|
 
 ## <a name="properties"></a>プロパティ
 |プロパティ|型|説明|
 |:---|:---|:---|
-|id|String|エンティティのキー。 [mobileApp](../resources/intune_apps_mobileapp.md) から継承します|
-|displayName|String|管理者が提供またはインポートしたアプリのタイトル。 [mobileApp](../resources/intune_apps_mobileapp.md) から継承します|
-|description|String|アプリの説明。 [mobileApp](../resources/intune_apps_mobileapp.md) から継承します|
-|publisher|String|アプリの発行元です。 [mobileApp](../resources/intune_apps_mobileapp.md) から継承します|
-|largeIcon|[mimeContent](../resources/intune_apps_mimecontent.md)|アプリの詳細に表示され、アイコンのアップロードに使用される大きいアイコン。 [mobileApp](../resources/intune_apps_mobileapp.md) から継承します|
+|ID|文字列|エンティティのキー。 [mobileApp](../resources/intune_apps_mobileapp.md) から継承します|
+|displayName|文字列|管理者が提供またはインポートしたアプリのタイトル。 [mobileApp](../resources/intune_apps_mobileapp.md) から継承します|
+|説明|文字列|アプリの説明。 [mobileApp](../resources/intune_apps_mobileapp.md) から継承します|
+|発行元|文字列|アプリの発行元。 [mobileApp](../resources/intune_apps_mobileapp.md) から継承します|
+|largeIcon|[MIME コンテンツ](../resources/intune_shared_mimecontent.md)|アプリの詳細に表示され、アイコンのアップロードに使用される大きなアイコン。 [mobileApp](../resources/intune_apps_mobileapp.md) から継承します|
 |createdDateTime|DateTimeOffset|アプリが作成された日時。 [mobileApp](../resources/intune_apps_mobileapp.md) から継承します|
 |lastModifiedDateTime|DateTimeOffset|アプリが最後に変更された日時。 [mobileApp](../resources/intune_apps_mobileapp.md) から継承します|
-|isFeatured|Boolean|アプリが管理者のおすすめとしてマークされたかどうかを示す値。[mobileApp](../resources/intune_apps_mobileapp.md) から継承します|
-|privacyInformationUrl|String|プライバシーに関する声明の URL。 [mobileApp](../resources/intune_apps_mobileapp.md) から継承します|
-|informationUrl|String|詳細情報の URL。 [mobileApp](../resources/intune_apps_mobileapp.md) から継承します|
-|owner|String|アプリの所有者。 [mobileApp](../resources/intune_apps_mobileapp.md) から継承します|
-|developer|String|アプリの開発者。 [mobileApp](../resources/intune_apps_mobileapp.md) から継承します|
-|notes|String|アプリ用のメモ。 [mobileApp](../resources/intune_apps_mobileapp.md) から継承します|
-|publishingState|String|アプリの発行の状態。 アプリが発行されていない限り、アプリを割り当てることができません。 [mobileApp](../resources/intune_apps_mobileapp.md) から継承します。可能な値は、`notPublished`、`processing`、`published` です。|
-|committedContentVersion|String|内部にコミットされたコンテンツのバージョン。 [mobileLobApp](../resources/intune_apps_mobilelobapp.md) から継承します|
-|fileName|String|メインの LOB アプリケーションのファイル名。 [mobileLobApp](../resources/intune_apps_mobilelobapp.md) から継承します|
-|size|Int64|アップロードされたすべてのファイルを含む合計サイズ。 [mobileLobApp](../resources/intune_apps_mobilelobapp.md) から継承します|
-|applicableArchitectures|String|このアプリを実行できる Windows アーキテクチャ。 可能な値は、`none`、`x86`、`x64`、`arm`、`neutral` です。|
-|applicableDeviceTypes|String|このアプリを実行できる Windows デバイスの種類。 可能な値は、`none`、`desktop`、`mobile`、`holographic`、`team` です。|
-|identityName|String|ID 名。|
-|identityPublisherHash|String|ID の発行元のハッシュ。|
-|identityResourceIdentifier|String|ID のリソースの識別子。|
-|isBundle|Boolean|アプリがバンドルかどうかを示します。|
+|isFeatured|ブール値|アプリが管理者のおすすめとしてマークされたかどうかを示す値。[mobileApp](../resources/intune_apps_mobileapp.md) から継承します|
+|privacyInformationUrl|文字列|プライバシーに関する声明の URL。 [mobileApp](../resources/intune_apps_mobileapp.md) から継承します|
+|informationUrl|文字列|詳細情報の URL。 [mobileApp](../resources/intune_apps_mobileapp.md) から継承します|
+|所有者|文字列|アプリの所有者。 [mobileApp](../resources/intune_apps_mobileapp.md) から継承します|
+|開発者|文字列|アプリの開発者。 [mobileApp](../resources/intune_apps_mobileapp.md) から継承します|
+|メモ|文字列|アプリ用のメモ。 [mobileApp](../resources/intune_apps_mobileapp.md) から継承します|
+|publishingState|[mobileAppPublishingState](../resources/intune_apps_mobileapppublishingstate.md)|アプリの発行の状態。 アプリが発行されていない限り、アプリを割り当てることができません。 [mobileApp](../resources/intune_apps_mobileapp.md) から継承します。 可能な値は、`notPublished`、`processing`、`published` です。|
+|committedContentVersion|文字列|内部にコミットされたコンテンツのバージョン。 [mobileLobApp](../resources/intune_apps_mobilelobapp.md) から継承します|
+|fileName|文字列|メインの Lob アプリケーションのファイル名。 [mobileLobApp](../resources/intune_apps_mobilelobapp.md) から継承します|
+|サイズ|Int64|アップロードされたすべてのファイルを含む合計サイズ。 [mobileLobApp](../resources/intune_apps_mobilelobapp.md) から継承します|
+|applicableArchitectures|[windowsArchitecture](../resources/intune_apps_windowsarchitecture.md)|このアプリを実行できる Windows アーキテクチャ。 可能な値は、`none`、`x86`、`x64`、`arm`、`neutral` です。|
+|applicableDeviceTypes|[windowsDeviceType](../resources/intune_apps_windowsdevicetype.md)|このアプリを実行できる Windows デバイスの種類。 可能な値は、`none`、`desktop`、`mobile`、`holographic`、`team` です。|
+|identityName|文字列|ID 名。|
+|identityPublisherHash|文字列|ID の発行元のハッシュ。|
+|identityResourceIdentifier|文字列|ID のリソースの識別子。|
+|isBundle|ブール値|アプリがバンドルかどうかを示します。|
 |minimumSupportedOperatingSystem|[windowsMinimumOperatingSystem](../resources/intune_apps_windowsminimumoperatingsystem.md)|該当するオペレーティング システムの最小の値です。|
-|identityVersion|String|ID のバージョン。|
+|identityVersion|文字列|ID のバージョン。|
 
 ## <a name="relationships"></a>リレーションシップ
 |リレーションシップ|型|説明|
 |:---|:---|:---|
-|categories|[mobileAppCategory](../resources/intune_apps_mobileappcategory.md) コレクション|このアプリのカテゴリのリスト。 [mobileApp](../resources/intune_apps_mobileapp.md) から継承します|
-|assignments|[mobileAppAssignment](../resources/intune_apps_mobileappassignment.md) コレクション|このモバイル アプリのグループ割り当てのリスト。 [mobileApp](../resources/intune_apps_mobileapp.md) から継承します|
+|カテゴリー|[mobileAppCategory](../resources/intune_apps_mobileappcategory.md) コレクション|このアプリのカテゴリのリスト。 [mobileApp](../resources/intune_apps_mobileapp.md) から継承します|
+|割り当て|[mobileAppAssignment](../resources/intune_apps_mobileappassignment.md) コレクション|このモバイル アプリのグループ割り当てのリスト。 [mobileApp](../resources/intune_apps_mobileapp.md) から継承します|
 |contentVersions|[mobileAppContent](../resources/intune_apps_mobileappcontent.md) コレクション|このアプリのコンテンツのバージョンのリスト。 [mobileLobApp](../resources/intune_apps_mobilelobapp.md) から継承します|
 
 ## <a name="json-representation"></a>JSON 表記
 以下は、リソースの JSON 表記です。
-<!-- {
+<!--{
   "blockType": "resource",
+  "baseType": "microsoft.graph.mobileLobApp",
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.windowsUniversalAppX"
-}
--->
+}-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.windowsUniversalAppX",
@@ -98,6 +98,11 @@ Windows ユニバーサル AppX 基幹業務アプリのプロパティと継承
   "identityVersion": "String"
 }
 ```
+
+
+
+
+
 
 
 

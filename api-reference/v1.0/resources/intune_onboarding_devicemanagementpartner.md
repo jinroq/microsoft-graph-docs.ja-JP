@@ -15,10 +15,10 @@
 ## <a name="properties"></a>プロパティ
 |プロパティ|タイプ|説明|
 |:---|:---|:---|
-|id|文字列|まだ文書化されていません|
+|ID|文字列|まだ文書化されていません|
 |lastHeartbeatDateTime|DateTimeOffset|管理者が [デバイス管理パートナーに接続] オプションを有効にした後の最終ハートビートのタイムスタンプ|
-|partnerState|[deviceManagementPartnerTenantState](../resources/intune_onboarding_devicemanagementpartnertenantstate.md)|このテナントのパートナーの状態です。 指定できる値は、`unknown`、`unavailable`、`enabled`、`terminated`、`rejected`、`unresponsive` です。|
-|partnerAppType|[deviceManagementPartnerAppType](../resources/intune_onboarding_devicemanagementpartnerapptype.md)|パートナー アプリの種類。 指定できる値は、 `unknown`、`singleTenantApp`、`multiTenantApp` です。|
+|partnerState|[deviceManagementPartnerTenantState](../resources/intune_onboarding_devicemanagementpartnertenantstate.md)|このテナントのパートナーの状態。可能な値は、`unknown`、`unavailable`、`enabled`、`terminated`、`rejected`、`unresponsive` です。|
+|partnerAppType|[deviceManagementPartnerAppType](../resources/intune_onboarding_devicemanagementpartnerapptype.md)|パートナー アプリの種類。可能な値は、`unknown`、`singleTenantApp`、`multiTenantApp` です。|
 |singleTenantAppId|文字列|パートナーのシングル テナントのアプリ ID|
 |displayName|文字列|パートナー表示名|
 |isConfigured|ブール値|デバイス管理パートナーが構成されているかどうかを指定します|
@@ -31,8 +31,8 @@
 以下は、リソースの JSON 表記です。
 <!--{
   "blockType": "resource",
-  "keyProperty": "id",
   "baseType": "microsoft.graph.entity",
+  "keyProperty": "id",
   "@odata.type": "microsoft.graph.deviceManagementPartner"
 }-->
 ``` json
@@ -49,6 +49,11 @@
   "whenPartnerDevicesWillBeMarkedAsNonCompliantDateTime": "String (timestamp)"
 }
 ```
+
+
+
+
+
 
 
 

@@ -6,11 +6,11 @@ Windows 情報保護用アプリ
 ## <a name="properties"></a>プロパティ
 |プロパティ|タイプ|説明|
 |:---|:---|:---|
-|displayName|文字列型 (String)|アプリの表示名。|
-|説明|文字列型 (String)|アプリの説明。|
-|publisherName|文字列型 (String)|発行元名|
-|productName|文字列型 (String)|製品名。|
-|拒否されました|ブール型 (Boolean)|true の場合、アプリは拒否された保護または除外です。|
+|displayName|文字列|アプリの表示名。|
+|説明|文字列|アプリの説明。|
+|publisherName|文字列|発行元名|
+|productName|文字列|製品名。|
+|拒否されました|ブール型|true の場合、アプリは拒否された保護または除外です。|
 
 ## <a name="relationships"></a>リレーションシップ
 なし
@@ -18,7 +18,6 @@ Windows 情報保護用アプリ
 以下は、リソースの JSON 表記です。
 <!--{
   "blockType": "resource",
-  "abstract": true,
   "@odata.type": "microsoft.graph.windowsInformationProtectionApp"
 }-->
 ``` json
@@ -31,6 +30,11 @@ Windows 情報保護用アプリ
   "denied": true
 }
 ```
+
+
+
+
+
 
 
 

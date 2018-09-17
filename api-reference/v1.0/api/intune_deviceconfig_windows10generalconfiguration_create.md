@@ -53,7 +53,7 @@ POST /deviceManagement/deviceConfigurations
 |searchDisableIndexerBackoff|ブール値|インデクサー バックオフの検索機能を無効にするかどうかを示します。|
 |searchDisableIndexingRemovableDrive|ブール値|リムーバブル ドライブ上の場所をライブラリに追加してインデックスを作成することをユーザーに許可するかどうかを示します。|
 |searchEnableAutomaticIndexSizeManangement|ブール値|インデックスの場所と同じドライブ上のハード ドライブ領域の最小値を指定して、その最小値を下回ったらインデックス作成を停止するかどうかを示します。|
-|diagnosticsDataSubmissionMode|[diagnosticDataSubmissionMode](../resources/intune_deviceconfig_diagnosticdatasubmissionmode.md)|診断データと利用統計情報データ (Watson など) の送信をデバイスに許可する値を取得または設定します。 可能な値は、`userDefined`、`none`、`basic`、`enhanced`、`full`です。|
+|diagnosticsDataSubmissionMode|[diagnosticDataSubmissionMode](../resources/intune_deviceconfig_diagnosticdatasubmissionmode.md)|Watsonのような診断および使用遠隔測定法データを送信するためのデバイス用の値を取得または設定する。可能な値は: `userDefined`, `none`, `basic`, `enhanced`, `full`です。|
 |oneDriveDisableFileSync|ブール値|アプリや機能から OneDrive 上のファイルを操作することを IT 管理者が禁止できるかどうかを示す値を取得または設定します。|
 |smartScreenEnableAppInstallControl|ブール値|ユーザーがストア以外の場所からアプリをインストールできるかどうかを IT 管理者が制御することを許可します。|
 |personalizationDesktopImageUrl|文字列|ダウンロードしてデスクトップ画像として使用する必要がある jpg、jpeg、png 画像の http または https URL、あるいはデスクトップ画像として使用する必要があるファイル システム上のローカル画像のファイル URL。|
@@ -64,7 +64,7 @@ POST /deviceManagement/deviceConfigurations
 |bluetoothBlockPrePairing|ブール値|バンドルされた特定のいくつかの Bluetooth 周辺機器を自動的にホスト デバイスとペアにすることを禁止するかどうか。|
 |edgeBlockAutofill|ブール値|自動入力を禁止するかどうかを示します。|
 |edgeBlocked|ブール値|ユーザーが Edge ブラウザーを使用することを禁止するかどうかを示します。|
-|edgeCookiePolicy|[edgeCookiePolicy](../resources/intune_deviceconfig_edgecookiepolicy.md)|Edge ブラウザーでどの Cookie を禁止するかを示します。 指定できる値は、`userDefined`、`allow`、`blockThirdParty`、`blockAll` です。|
+|edgeCookiePolicy|[edgeCookiePolicy](../resources/intune_deviceconfig_edgecookiepolicy.md)|どのクッキーがEdgeブラウザーをブロックするかを表示します。可能な値は:  `userDefined` 、 `allow`、 `blockThirdParty`、 `blockAll`です。|
 |edgeBlockDeveloperTools|ブール値|Edge ブラウザー内の開発者ツールを禁止するかどうかを示します。|
 |edgeBlockSendingDoNotTrackHeader|ブール値|ユーザーがトラッキング拒否ヘッダーを送信することを禁止するかどうかを示します。|
 |edgeBlockExtensions|ブール値|Edge ブラウザーの拡張機能を禁止するかどうかを示します。|
@@ -84,13 +84,13 @@ POST /deviceManagement/deviceConfigurations
 |defenderBlockEndUserAccess|ブール値|エンド ユーザーが Defender にアクセスすることを禁止するかどうか。|
 |defenderDaysBeforeDeletingQuarantinedMalware|Int32|検疫済みのマルウェアを削除するまでの日数。 有効な値は 0 から 90 までです|
 |defenderDetectedMalwareActions|[defenderDetectedMalwareActions](../resources/intune_deviceconfig_defenderdetectedmalwareactions.md)|検出されたマルウェアに対する Defender のアクションを脅威レベルごとに取得または設定します。|
-|defenderSystemScanSchedule|[weeklySchedule](../resources/intune_deviceconfig_weeklyschedule.md)|Defender がシステムをスキャンする曜日。 指定できる値は、`userDefined`、`everyday`、`sunday`、`monday`、`tuesday`、`wednesday`、`thursday`、`friday`、`saturday` です。|
+|defenderSystemScanSchedule|[weeklySchedule](../resources/intune_deviceconfig_weeklyschedule.md)|Defender がシステムをスキャンする曜日。可能な値は、 `userDefined`、 `everyday`、 `sunday`、 `monday`、 `tuesday`、 `wednesday`、 `thursday`、 `friday`、 `saturday`です。|
 |defenderFilesAndFoldersToExclude|String コレクション|スキャンとリアルタイム保護から除外するファイルとフォルダー。|
 |defenderFileExtensionsToExclude|String コレクション|スキャンとリアルタイム保護から除外するファイル拡張子。|
 |defenderScanMaxCpu|Int32|スキャン中の最大 CPU 使用率。 有効な値は 0 から 100 までです|
-|defenderMonitorFileActivity|[defenderMonitorFileActivity](../resources/intune_deviceconfig_defendermonitorfileactivity.md)|ファイル アクティビティを監視する値。 可能な値は、`userDefined`、`disable`、`monitorAllFiles`、`monitorIncomingFilesOnly`、`monitorOutgoingFilesOnly` です。|
+|defenderMonitorFileActivity|[defenderMonitorFileActivity](../resources/intune_deviceconfig_defendermonitorfileactivity.md)|ファイル アクティビティを監視する値。可能な値は:  `userDefined`、 `disable`、 `monitorAllFiles`、 `monitorIncomingFilesOnly`、 `monitorOutgoingFilesOnly`です。|
 |defenderProcessesToExclude|String コレクション|スキャンとリアルタイム保護から除外するプロセス。|
-|defenderPromptForSampleSubmission|[defenderPromptForSampleSubmission](../resources/intune_deviceconfig_defenderpromptforsamplesubmission.md)|ユーザーにサンプルの送信を要求する方法の構成。 可能な値は、`userDefined`、`alwaysPrompt`、`promptBeforeSendingPersonalData`、`neverSendData`、`sendAllDataWithoutPrompting` です。|
+|defenderPromptForSampleSubmission|[defenderPromptForSampleSubmission](../resources/intune_deviceconfig_defenderpromptforsamplesubmission.md)|ユーザーにサンプルの送信を要求する方法の設定。可能な値は、 `userDefined`、 `alwaysPrompt`、 `promptBeforeSendingPersonalData`、 `neverSendData`、 `sendAllDataWithoutPrompting` です。|
 |defenderRequireBehaviorMonitoring|ブール値|動作の監視が必要かどうかを示します。|
 |defenderRequireCloudProtection|ブール値|クラウドの保護が必要かどうかを示します。|
 |defenderRequireNetworkInspectionSystem|ブール値|ネットワーク検査システムが必要かどうかを示します。|
@@ -103,10 +103,10 @@ POST /deviceManagement/deviceConfigurations
 |defenderScanRemovableDrivesDuringFullScan|ブール値|フル スキャン時に、リムーバブル ドライブをスキャンするかどうかを示します。|
 |defenderScanScriptsLoadedInInternetExplorer|ブール値|Internet Explorer ブラウザーに読み込まれるスクリプトをスキャンするかどうかを示します。|
 |defenderSignatureUpdateIntervalInHours|Int32|署名を更新する間隔 (時間)。 確認しない場合は 0 を指定します。 有効な値は 0 から 24 までです|
-|defenderScanType|[defenderScanType](../resources/intune_deviceconfig_defenderscantype.md)|Defender システム スキャンの種類。 指定できる値は、`userDefined`、`disabled`、`quick`、`full` です。|
+|defenderScanType|[defenderScanType](../resources/intune_deviceconfig_defenderscantype.md)|Defender のシステム スキャンの種類。可能な値は、 `userDefined`、 `disabled`、 `quick`、 `full`です。|
 |defenderScheduledScanTime|TimeOfDay|システムのスキャンの Defender 時刻。|
 |defenderScheduledQuickScanTime|TimeOfDay|毎日のクイック スキャンを実行する時刻。|
-|defenderCloudBlockLevel|[defenderCloudBlockLevelType](../resources/intune_deviceconfig_defendercloudblockleveltype.md)|クラウド配信の保護レベルを指定します。 指定できる値は、`notConfigured`、`high`、`highPlus`、`zeroTolerance` です。|
+|defenderCloudBlockLevel|[defenderCloudBlockLevelType](../resources/intune_deviceconfig_defendercloudblockleveltype.md)|クラウドが提供する保護のレベルを指定します。可能な値は、`notConfigured`、 `high`、 `highPlus`、 `zeroTolerance`です。|
 |lockScreenAllowTimeoutConfiguration|ブール値|Windows 10 Mobile デバイスのロック画面で、画面のタイムアウトを制御するユーザー構成可能な設定を表示するかどうかを指定します。 このポリシーが [許可] に設定されている場合は、lockScreenTimeoutInSeconds によって設定された値は無視されます。|
 |lockScreenBlockActionCenterNotifications|ブール値|ロック画面上のアクション センター通知を禁止するかどうかを示します。|
 |lockScreenBlockCortana|ブール値|システムのロック中にユーザーが音声認識を使用して Cortana と対話できるかどうかを示します。|
@@ -120,13 +120,13 @@ POST /deviceManagement/deviceConfigurations
 |passwordPreviousPasswordBlockCount|Int32|再使用を禁止する、以前のパスワードの数。 有効な値は 0 から 50 までです|
 |passwordRequired|ブール値|ユーザーにパスワードを要求するかどうかを指定します。|
 |passwordRequireWhenResumeFromIdleState|ブール値|アイドル状態からの再開時にパスワードを要求するかどうかを示します。|
-|passwordRequiredType|[requiredPasswordType](../resources/intune_deviceconfig_requiredpasswordtype.md)|必要なパスワードの種類。 指定できる値は、`deviceDefault`、`alphanumeric`、`numeric` です。|
+|passwordRequiredType|[requiredPasswordType](../resources/intune_deviceconfig_requiredpasswordtype.md)|必要なパスワードの種類です。使用可能な値は`deviceDefault`、`alphanumeric`、`numeric` です。|
 |passwordSignInFailureCountBeforeFactoryReset|Int32|出荷時の設定にリセットされるサインインの失敗回数。 有効な値は 0 から 999 までです|
-|privacyAdvertisingId|[stateManagementSetting](../resources/intune_deviceconfig_statemanagementsetting.md)|広告識別子の使用を有効または無効にします。 Windows 10 バージョン 1607 で追加されました。 指定できる値は、`notConfigured`、`blocked`、`allowed` です。|
+|privacyAdvertisingId|[stateManagementSetting](../resources/intune_deviceconfig_statemanagementsetting.md)|広告IDの使用を有効化または非有効化します。バージョン1607のWindows 10に追加されています。 可能な値は:  `notConfigured`、 `blocked`、 `allowed`です。|
 |privacyAutoAcceptPairingAndConsentPrompts|ブール値|アプリの起動時に、ペアリングとプライバシーに関するユーザーの同意ダイアログの自動受け入れを許可するかどうかを示します。|
 |privacyBlockInputPersonalization|ブール値|Cortana、音声入力、ストア アプリケーションに対するクラウド ベースの音声サービスの使用を禁止するかどうかを示します。|
 |startBlockUnpinningAppsFromTaskbar|ブール値|ユーザーがタスク バーからアプリのピン留めを外すことを禁止するかどうかを示します。|
-|startMenuAppListVisibility|[windowsStartMenuAppListVisibilityType](../resources/intune_deviceconfig_windowsstartmenuapplistvisibilitytype.md)|この値を設定すると、アプリ リストを折りたたんだり、アプリ リスト全体を削除したり、設定アプリで対応する切り替えを無効にしたりできます。 指定できる値は、`userDefined`、`collapse`、`remove`、`disableSettingsApp` です。|
+|startMenuAppListVisibility|[windowsStartMenuAppListVisibilityType](../resources/intune_deviceconfig_windowsstartmenuapplistvisibilitytype.md)|この値を設定すると、アプリ リストを折りたたんだり、アプリ リスト全体を削除したり、設定アプリで対応する切り替えが無効になります。可能な値は、 `userDefined`, `collapse`, `remove`, `disableSettingsApp` です。|
 |startMenuHideChangeAccountSettings|ブール値|このポリシーを有効にすると、スタート メニューのユーザー タイルに [アカウント設定の変更] が表示されなくなります。|
 |startMenuHideFrequentlyUsedApps|ブール値|このポリシーを有効にすると、よく使われるアプリがスタート メニューに表示されなくなり、設定アプリで対応する切り替えが無効になります。|
 |startMenuHideHibernate|ブール値|このポリシーを有効にすると、スタート メニューの電源ボタンに [休止状態] が表示されなくなります。|
@@ -142,17 +142,17 @@ POST /deviceManagement/deviceConfigurations
 |startMenuHideUserTile|ブール値|このポリシーを有効にすると、スタート メニューにユーザー タイルが表示されなくなります。|
 |startMenuLayoutEdgeAssetsXml|バイナリ|このポリシー設定では、Edge アセットをインポートして startMenuLayoutXml ポリシーで使用することができます。 スタートのレイアウトには、Edge アプリからのセカンダリ タイルを含めることができ、このタイルは Edge のローカル アセット ファイルを検索します。 Edge のローカル アセットは存在しないことがあり、その場合は Edge のセカンダリ タイルが空で表示されます。 このポリシーは、startMenuLayoutXml ポリシーが変更された場合にのみ適用されます。 値は、UTF-8 の Base64 でエンコードされたバイト配列にする必要があります。|
 |startMenuLayoutXml|バイナリ|管理者がスタート メニューの既定のレイアウトを上書きし、ユーザーがこれを変更できないようにすることを許可します。 レイアウトを変更するには、レイアウト変更スキーマに基づく XML ファイルを指定します。 XML は、UTF8 エンコードのバイト配列形式である必要があります。|
-|startMenuMode|[windowsStartMenuModeType](../resources/intune_deviceconfig_windowsstartmenumodetype.md)|管理者がスタート メニューの表示方法を決めることを許可します。 指定できる値は、`userDefined`、`fullScreen`、`nonFullScreen` です。|
-|startMenuPinnedFolderDocuments|[visibilitySetting](../resources/intune_deviceconfig_visibilitysetting.md)|スタート メニューへのドキュメント フォルダー ショートカットの表示/非表示を強制します。 指定できる値は、`notConfigured`、`hide`、`show` です。|
-|startMenuPinnedFolderDownloads|[visibilitySetting](../resources/intune_deviceconfig_visibilitysetting.md)|スタート メニューへのダウンロード フォルダー ショートカットの表示/非表示を強制します。 指定できる値は、`notConfigured`、`hide`、`show` です。|
-|startMenuPinnedFolderFileExplorer|[visibilitySetting](../resources/intune_deviceconfig_visibilitysetting.md)|スタート メニューへのエクスプローラー ショートカットの表示/非表示を強制します。 指定できる値は、`notConfigured`、`hide`、`show` です。|
-|startMenuPinnedFolderHomeGroup|[visibilitySetting](../resources/intune_deviceconfig_visibilitysetting.md)|スタート メニューへのホームグループ フォルダー ショートカットの表示/非表示を強制します。 指定できる値は、`notConfigured`、`hide`、`show` です。|
-|startMenuPinnedFolderMusic|[visibilitySetting](../resources/intune_deviceconfig_visibilitysetting.md)|スタート メニューへのミュージック フォルダー ショートカットの表示/非表示を強制します。 指定できる値は、`notConfigured`、`hide`、`show` です。|
-|startMenuPinnedFolderNetwork|[visibilitySetting](../resources/intune_deviceconfig_visibilitysetting.md)|スタート メニューへのネットワーク フォルダー ショートカットの表示/非表示を強制します。 指定できる値は、`notConfigured`、`hide`、`show` です。|
-|startMenuPinnedFolderPersonalFolder|[visibilitySetting](../resources/intune_deviceconfig_visibilitysetting.md)|スタート メニューへの個人用フォルダー ショートカットの表示/非表示を強制します。 指定できる値は、`notConfigured`、`hide`、`show` です。|
-|startMenuPinnedFolderPictures|[visibilitySetting](../resources/intune_deviceconfig_visibilitysetting.md)|スタート メニューへのピクチャ フォルダー ショートカットの表示/非表示を強制します。 指定できる値は、`notConfigured`、`hide`、`show` です。|
-|startMenuPinnedFolderSettings|[visibilitySetting](../resources/intune_deviceconfig_visibilitysetting.md)|スタート メニューへの設定フォルダー ショートカットの表示/非表示を強制します。 指定できる値は、`notConfigured`、`hide`、`show` です。|
-|startMenuPinnedFolderVideos|[visibilitySetting](../resources/intune_deviceconfig_visibilitysetting.md)|スタート メニューへのビデオ フォルダー ショートカットの表示/非表示を強制します。 指定できる値は、`notConfigured`、`hide`、`show` です。|
+|startMenuMode|[windowsStartMenuModeType](../resources/intune_deviceconfig_windowsstartmenumodetype.md)|管理者は、[スタート]メニューの表示方法を決定できます。可能な値は、`userDefined`, `fullScreen`, `nonFullScreen` です。|
+|startMenuPinnedFolderDocuments|[visibilitySetting](../resources/intune_deviceconfig_visibilitysetting.md)|スタート メニューへのドキュメント フォルダー ショートカットの表示/非表示を強制します。可能な値は、 `notConfigured`, `hide`, `show` です。|
+|startMenuPinnedFolderDownloads|[visibilitySetting](../resources/intune_deviceconfig_visibilitysetting.md)|スタート メニューへのダウンロード フォルダー ショートカットの表示/非表示を強制します。可能な値は、`notConfigured`, `hide`, `show` です。|
+|startMenuPinnedFolderFileExplorer|[visibilitySetting](../resources/intune_deviceconfig_visibilitysetting.md)|スタート メニューへのファイル エクスプローラー ショートカットの表示/非表示を強制します。可能な値は、  `notConfigured`, `hide`, `show` です。|
+|startMenuPinnedFolderHomeGroup|[visibilitySetting](../resources/intune_deviceconfig_visibilitysetting.md)|スタート メニューへのホームグループ フォルダー ショートカットの表示/非表示を強制します。可能な値は、 `notConfigured`, `hide`, `show` です。|
+|startMenuPinnedFolderMusic|[visibilitySetting](../resources/intune_deviceconfig_visibilitysetting.md)|スタート メニューへのミュージック フォルダー ショートカットの表示/非表示を強制します。可能な値は、 `notConfigured`, `hide`, `show`  です。|
+|startMenuPinnedFolderNetwork|[visibilitySetting](../resources/intune_deviceconfig_visibilitysetting.md)|スタート メニューへのネットワーク フォルダー ショートカットの表示/非表示を強制します。可能な値は、 `notConfigured`, `hide`, `show` です。|
+|startMenuPinnedFolderPersonalFolder|[visibilitySetting](../resources/intune_deviceconfig_visibilitysetting.md)|スタート メニューへの個人用フォルダー ショートカットの表示/非表示を強制します。可能な値は、   `notConfigured`, `hide`, `show`  です。|
+|startMenuPinnedFolderPictures|[visibilitySetting](../resources/intune_deviceconfig_visibilitysetting.md)|スタート メニューへのピクチャ フォルダー ショートカットの表示/非表示を強制します。可能な値は、 `notConfigured`, `hide`, `show` です。|
+|startMenuPinnedFolderSettings|[visibilitySetting](../resources/intune_deviceconfig_visibilitysetting.md)|スタートメニューへのピクチャフォルダー ショートカットの表示/非表示を強制します。可能な値は、`notConfigured`, `hide`, `show` です。|
+|startMenuPinnedFolderVideos|[visibilitySetting](../resources/intune_deviceconfig_visibilitysetting.md)|スタート メニューへのビデオ フォルダー ショートカットの表示/非表示を強制します。可能な値は、 `notConfigured`, `hide`, `show` です。|
 |settingsBlockSettingsApp|ブール値|設定アプリへのアクセスを禁止するかどうかを示します。|
 |settingsBlockSystemPage|ブール値|設定アプリ内の [システム] へのアクセスを禁止するかどうかを示します。|
 |settingsBlockDevicesPage|ブール値|設定アプリ内の [デバイス] へのアクセスを禁止するかどうかを示します。|
@@ -172,7 +172,7 @@ POST /deviceManagement/deviceConfigurations
 |windowsSpotlightBlockThirdPartyNotifications|ブール値|Windows スポットライト経由でサード パーティのコンテンツを配信することを禁止します|
 |windowsSpotlightBlockWelcomeExperience|ブール値|Windows スポットライトからの Windows へようこそのエクスペリエンスを禁止します|
 |windowsSpotlightBlockWindowsTips|ブール値|Windows のヒントのポップアップを IT 管理者がオフにできるようにします。|
-|windowsSpotlightConfigureOnLockScreen|[windowsSpotlightEnablementSettings](../resources/intune_deviceconfig_windowsspotlightenablementsettings.md)|スポットライトの種類を指定します。 指定できる値は、`notConfigured`、`disabled`、`enabled` です。|
+|windowsSpotlightConfigureOnLockScreen|[windowsSpotlightEnablementSettings](../resources/intune_deviceconfig_windowsspotlightenablementsettings.md)|スポットライトの種類を指定します。可能な値は、  `notConfigured`、`disabled`、`enabled` です。|
 |networkProxyApplySettingsDeviceWide|ブール値|オンに設定すると、プロキシの設定がデバイスのすべてのプロセスとアカウントに適用されます。 それ以外の場合は、MDM に登録されているユーザー アカウントに適用されます。|
 |networkProxyDisableAutoDetect|ブール値|設定の自動検出を無効にします。 有効にした場合、システムはプロキシ自動構成 (PAC) スクリプトへのパスを検索します。|
 |networkProxyAutomaticConfigurationUrl|文字列|使用するプロキシ自動構成 (PAC) スクリプトのアドレス。|
@@ -187,7 +187,7 @@ POST /deviceManagement/deviceConfigurations
 |cortanaBlocked|ブール値|ユーザーが Cortana を使用することを禁止するかどうか。|
 |deviceManagementBlockFactoryResetOnMobile|ブール値|ユーザーが携帯電話をリセットすることを禁止するかどうかを示します。|
 |deviceManagementBlockManualUnenroll|ブール値|ユーザーがデバイス管理から手動で登録解除を行うことを禁止するかどうかを示します。|
-|safeSearchFilter|[safeSearchFilterType](../resources/intune_deviceconfig_safesearchfiltertype.md)|セーフ サーチに必要なフィルター レベルを指定します。 指定できる値は、`userDefined`、`strict`、`moderate` です。|
+|safeSearchFilter|[safeSearchFilterType](../resources/intune_deviceconfig_safesearchfiltertype.md)|安全な検索が必要なフィルター レベルを指定します。可能な値は、`userDefined`、`strict`、`moderate`です。|
 |edgeBlockPopups|ブール値|ポップアップをブロックするかどうかを示します。|
 |edgeBlockSearchSuggestions|ブール値|ユーザーがアドレス バーで検索候補を使用することを禁止するかどうかを示します。|
 |edgeBlockSendingIntranetTrafficToInternetExplorer|ブール値|ユーザーが Edge から Internet Explorer にイントラネット トラフィックを送信することを禁止するかどうかを示します。|
@@ -226,9 +226,9 @@ POST /deviceManagement/deviceConfigurations
 |wirelessDisplayBlockUserInputFromReceiver|ブール値|ワイヤレス ディスプレイ レシーバーからのユーザー入力を許可するかどうかを示します。|
 |wirelessDisplayRequirePinForPairing|ブール値|新しいデバイスがペアリングを開始するときに PIN が必要かどうかを示します。|
 |windowsStoreBlocked|ブール値|ユーザーが Windows ストアを使用することを禁止するかどうかを示します。|
-|appsAllowTrustedAppsSideloading|[stateManagementSetting](../resources/intune_deviceconfig_statemanagementsetting.md)|信頼された証明書で署名した AppX パッケージからアプリをサイドローディングできるかどうかを示します。 指定できる値は、`notConfigured`、`blocked`、`allowed` です。|
+|appsAllowTrustedAppsSideloading|[stateManagementSetting](../resources/intune_deviceconfig_statemanagementsetting.md)|AppXパッケージが信頼できる証明書で署名されてからアプリケーションが読み込まれる側にできるかどうかを示します。可能な値は、 `notConfigured`、 `blocked`、 `allowed` です。|
 |windowsStoreBlockAutoUpdate|ブール値|Windows ストアからのアプリの自動更新を禁止するかどうかを示します。|
-|developerUnlockSetting|[stateManagementSetting](../resources/intune_deviceconfig_statemanagementsetting.md)|開発者によるロック解除を許可するかどうかを示します。 指定できる値は、`notConfigured`、`blocked`、`allowed` です。|
+|developerUnlockSetting|[stateManagementSetting](../resources/intune_deviceconfig_statemanagementsetting.md)|開発者によるロック解除を許可するかどうかを示します。可能な値は、 `notConfigured`, `blocked`, `allowed` です。|
 |sharedUserAppDataAllowed|ブール値|同じアプリの複数のユーザーによるデータ共有を禁止するかどうかを示します。|
 |appsBlockWindowsStoreOriginatedApps|ブール値|プレインストールまたはダウンロードによって取得したすべての Windows ストア アプリの起動を無効にするかどうかを示します。|
 |windowsStoreEnablePrivateStoreOnly|ブール値|プライベート ストアのみを有効にするかどうかを示します。|
@@ -727,6 +727,11 @@ Content-Length: 9875
   "logonBlockFastUserSwitching": true
 }
 ```
+
+
+
+
+
 
 
 

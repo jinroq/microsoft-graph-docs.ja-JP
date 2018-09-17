@@ -6,12 +6,17 @@
 ## <a name="members"></a>メンバー
 |メンバー|値|説明|
 |:---|:---|:---|
-|UserDefined|0|ユーザー定義済み、既定値、目的なし。|
+|ユーザー定義|0|ユーザー定義済み、既定値、目的なし。|
 |notifyDownload|1|ダウンロード時に通知。|
 |autoInstallAtMaintenanceTime|2|メンテナンス時に自動インストール。|
 |autoInstallAndRebootAtMaintenanceTime|3|メンテナンス時に自動インストールと再起動。|
 |autoInstallAndRebootAtScheduledTime|4|設定時刻に自動インストールと再起動。|
 |autoInstallAndRebootWithoutEndUserControl|5|エンド ユーザーによる操作なしに自動インストールと再起動。|
+
+
+
+
+
 
 
 

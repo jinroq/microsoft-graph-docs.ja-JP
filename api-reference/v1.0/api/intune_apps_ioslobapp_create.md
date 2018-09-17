@@ -25,7 +25,7 @@ POST /deviceAppManagement/mobileApps
 |ヘッダー|値|
 |:---|:---|
 |承認|ベアラー &lt;トークン&gt; が必須。|
-|承諾|application/json|
+|承諾|アプリケーションまたは json|
 
 ## <a name="request-body"></a>要求本文
 要求本文で、iosLobApp オブジェクトの JSON 表記を指定します。
@@ -47,7 +47,7 @@ POST /deviceAppManagement/mobileApps
 |所有者|文字列|アプリの所有者。 [mobileApp](../resources/intune_apps_mobileapp.md) から継承します|
 |開発者|文字列|アプリの開発者。 [mobileApp](../resources/intune_apps_mobileapp.md) から継承します|
 |メモ|文字列|アプリ用のメモ。 [mobileApp](../resources/intune_apps_mobileapp.md) から継承します|
-|publishingState|[mobileAppPublishingState](../resources/intune_apps_mobileapppublishingstate.md)|アプリの発行の状態。 アプリが発行されていない限り、アプリを割り当てることはできません。 [mobileApp](../resources/intune_apps_mobileapp.md) から継承します。 指定できる値は、 `notPublished`、`processing`、`published` です。|
+|publishingState|[mobileAppPublishingState](../resources/intune_apps_mobileapppublishingstate.md)|アプリケーションの発行の状態です。アプリが公開されていない限り、アプリケーションを割り当てることができません。 [MobileApp](../resources/intune_apps_mobileapp.md)から継承されます。使用可能な値は`notPublished`、`processing`、`published`です。|
 |committedContentVersion|文字列|内部にコミットされたコンテンツのバージョン。 [mobileLobApp](../resources/intune_apps_mobilelobapp.md) から継承します|
 |fileName|文字列|メインの Lob アプリケーションのファイル名。 [mobileLobApp](../resources/intune_apps_mobilelobapp.md) から継承します|
 |サイズ|Int64|アップロードされたすべてのファイルを含む合計サイズ。 [mobileLobApp](../resources/intune_apps_mobilelobapp.md) から継承します|
@@ -159,6 +159,11 @@ Content-Length: 1361
   "buildNumber": "Build Number value"
 }
 ```
+
+
+
+
+
 
 
 

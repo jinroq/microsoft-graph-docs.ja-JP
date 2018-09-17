@@ -34,8 +34,8 @@ POST /deviceManagement/auditEvents
 
 |プロパティ|タイプ|説明|
 |:---|:---|:---|
-|id|文字列|エンティティのキー。|
-|displayName|文字列|イベントの表示名。|
+|ID|文字列|エンティティのキー。|
+|名前を表示する|文字列|イベントの表示名。|
 |componentName|文字列|コンポーネント名。|
 |actor|[auditActor](../resources/intune_auditing_auditactor.md)|監査イベントに関連付けられている AAD ユーザーとアプリケーション。|
 |activity|文字列|わかりやすいアクティビティの名前。|
@@ -45,7 +45,7 @@ POST /deviceManagement/auditEvents
 |activityResult|文字列|アクティビティの結果。|
 |correlationId|Guid|システム内でのアクティビティに関連付けるために使用されるクライアント要求 ID。|
 |resources|[auditResource](../resources/intune_auditing_auditresource.md) コレクション|変更中のリソースです。|
-|category|文字列|監査のカテゴリです。|
+|カテゴリ|文字列|監査のカテゴリです。|
 
 
 
@@ -82,7 +82,7 @@ Content-length: 1387
   "activityType": "Activity Type value",
   "activityOperationType": "Activity Operation Type value",
   "activityResult": "Activity Result value",
-  "correlationId": "79199ed9-e50b-4257-8de4-70b9c8685061",
+  "correlationId": "<Unknown Primitive Type Edm.Guid>",
   "resources": [
     {
       "@odata.type": "microsoft.graph.auditResource",
@@ -133,7 +133,7 @@ Content-Length: 1436
   "activityType": "Activity Type value",
   "activityOperationType": "Activity Operation Type value",
   "activityResult": "Activity Result value",
-  "correlationId": "79199ed9-e50b-4257-8de4-70b9c8685061",
+  "correlationId": "<Unknown Primitive Type Edm.Guid>",
   "resources": [
     {
       "@odata.type": "microsoft.graph.auditResource",
@@ -153,6 +153,11 @@ Content-Length: 1436
   "category": "Category value"
 }
 ```
+
+
+
+
+
 
 
 

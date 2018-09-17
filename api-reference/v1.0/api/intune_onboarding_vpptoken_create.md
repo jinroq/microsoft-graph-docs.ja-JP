@@ -25,7 +25,7 @@ POST /deviceAppManagement/vppTokens
 |ヘッダー|値|
 |:---|:---|
 |承認|ベアラー &lt;トークン&gt; が必須。|
-|承諾|application/json|
+|承諾|アプリケーションまたは json|
 
 ## <a name="request-body"></a>要求本文
 要求本文で、vppToken オブジェクトの JSON 表記を指定します。
@@ -36,14 +36,14 @@ POST /deviceAppManagement/vppTokens
 |:---|:---|:---|
 |id|文字列|appleVolumePurchaseProgramToken 作成時に自動的に生成されます。 エンティティのキーになります。|
 |organizationName|文字列|Apple Volume Purchase Program のトークンに関連付けられている組織|
-|vppTokenAccountType|[vppTokenAccountType](../resources/intune_shared_vpptokenaccounttype.md)|特定の Apple Volume Purchase Program のトークンが関連付けられている、ボリューム購入プログラムの種類。 可能な値は、`business`、`education` です。 可能な値は、`business`、`education` です。|
+|vppTokenAccountType|[vppTokenAccountType](../resources/intune_shared_vpptokenaccounttype.md)|特定の Apple Volume Purchase Program のトークンが関連付けられている、ボリューム購入プログラムの種類です。指定できる値は、`business`、`education` です。指定できる値は、`business`、`education` です。|
 |appleId|文字列|特定の Apple Volume Purchase Program のトークンに関連付けられている Apple ID。|
 |expirationDateTime|DateTimeOffset|Apple Volume Purchase Program のトークンの有効期限。|
 |lastSyncDateTime|DateTimeOffset|Apple Volume Purchase Program のトークンを使用して、Apple ボリューム購入プログラム サービスと最後にアプリケーションの同期を行った日時。|
 |token|文字列|Apple Volume Purchase Program からダウンロードした Apple ボリューム購入プログラムのトークン文字列。|
 |lastModifiedDateTime|DateTimeOffset|Apple Volume Purchase Program のトークンに関連付けられている最終変更日時。|
-|状態|[vppTokenState](../resources/intune_onboarding_vpptokenstate.md)|Apple Volume Purchase Program のトークンの現在の状態。 可能な値は、`unknown`、`valid`、`expired`、`invalid` です。 可能な値は、`unknown`、`valid`、`expired`、`invalid` です。|
-|lastSyncStatus|[vppTokenSyncStatus](../resources/intune_onboarding_vpptokensyncstatus.md)|Apple Volume Purchase Program のトークンを使用して行われた最後のアプリケーションの同期の現在の同期状態。 可能な値は、`none`、`inProgress`、`completed`、`failed` です。 可能な値は、`none`、`inProgress`、`completed`、`failed` です。|
+|都道府県|[vppTokenState](../resources/intune_onboarding_vpptokenstate.md)|Apple ボリューム購入プログラム トークンの現在の状態。指定できる値は`unknown`、 `valid`、 `expired`、 `invalid`、 `assignedToExternalMDM`。指定できる値は`unknown`、 `valid`、 `expired`、 `invalid`、 `assignedToExternalMDM`。|
+|lastSyncStatus|[vppTokenSyncStatus](../resources/intune_onboarding_vpptokensyncstatus.md)|Apple ボリューム購入プログラム トークンを使用して発生した最後のアプリケーションの同期の現在の同期の状態です。指定できる値は`none`、 `inProgress`、 `completed`、 `failed`。指定できる値は`none`、 `inProgress`、 `completed`、 `failed`。|
 |automaticallyUpdateApps|ブール型|VPP トークンのアプリを自動で更新するかどうか。|
 |countryOrRegion|文字列|VPP トークンのアプリを自動で更新するかどうか。|
 
@@ -99,6 +99,11 @@ Content-Length: 574
   "countryOrRegion": "Country Or Region value"
 }
 ```
+
+
+
+
+
 
 
 

@@ -25,7 +25,7 @@ POST /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/assig
 |ヘッダー|値|
 |:---|:---|
 |承認|ベアラー &lt;トークン&gt; が必須。|
-|承諾する|application/json|
+|承諾する|アプリケーションまたは json|
 
 ## <a name="request-body"></a>要求本文
 要求本文で、deviceCompliancePolicyAssignment オブジェクトの JSON 表記を指定します。
@@ -34,8 +34,8 @@ POST /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/assig
 
 |プロパティ|タイプ|説明|
 |:---|:---|:---|
-|id|文字列|エンティティのキー。|
-|target|[deviceAndAppManagementAssignmentTarget](../resources/intune_shared_deviceandappmanagementassignmenttarget.md)|コンプライアンス ポリシーの割り当て先です。|
+|ID|文字列|エンティティのキー。|
+|ターゲット|[deviceAndAppManagementAssignmentTarget](../resources/intune_shared_deviceandappmanagementassignmenttarget.md)|コンプライアンス ポリシーの割り当て先です。|
 
 
 
@@ -73,6 +73,11 @@ Content-Length: 221
   }
 }
 ```
+
+
+
+
+
 
 
 

@@ -24,8 +24,8 @@ POST /deviceManagement/termsAndConditions/{termsAndConditionsId}/assignments
 ## <a name="request-headers"></a>要求ヘッダー
 |ヘッダー|値|
 |:---|:---|
-|Authorization|ベアラー &lt;トークン&gt; が必須。|
-|Accept|アプリケーション /json|
+|承認|ベアラー &lt;トークン&gt; が必須。|
+|承諾する|アプリケーション /json|
 
 ## <a name="request-body"></a>要求本文
 要求本文で、termsAndConditionsAssignment オブジェクトの JSON 表記を指定します。
@@ -34,8 +34,8 @@ POST /deviceManagement/termsAndConditions/{termsAndConditionsId}/assignments
 
 |プロパティ|型|説明|
 |:---|:---|:---|
-|id|String|エンティティの一意識別子。|
-|target|[deviceAndAppManagementAssignmentTarget](../resources/intune_shared_deviceandappmanagementassignmenttarget.md)|T & C ポリシーが割り当てられる、割り当て先です。|
+|ID|文字列|エンティティの一意識別子。|
+|ターゲット|[deviceAndAppManagementAssignmentTarget](../resources/intune_shared_deviceandappmanagementassignmenttarget.md)|T & C ポリシーが割り当てられる、割り当て先です。|
 
 
 
@@ -73,6 +73,11 @@ Content-Length: 217
   }
 }
 ```
+
+
+
+
+
 
 
 

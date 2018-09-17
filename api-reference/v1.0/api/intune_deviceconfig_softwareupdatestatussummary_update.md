@@ -1,6 +1,6 @@
 # <a name="update-softwareupdatestatussummary"></a>softwareUpdateStatusSummary の更新
 
-> **注:**Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
+> **注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
 
 [softwareUpdateStatusSummary](../resources/intune_deviceconfig_softwareupdatestatussummary.md) オブジェクトのプロパティを更新します。
 ## <a name="prerequisites"></a>前提条件
@@ -24,8 +24,8 @@ PATCH /deviceManagement/softwareUpdateStatusSummary
 ## <a name="request-headers"></a>要求ヘッダー
 |ヘッダー|値|
 |:---|:---|
-|承認|ベアラー &lt;トークン&gt;が必須。|
-|承諾|application/json|
+|承認|ベアラー &lt;トークン&gt; が必須。|
+|承諾する|アプリケーションまたは json|
 
 ## <a name="request-body"></a>要求本文
 要求本文で、[softwareUpdateStatusSummary](../resources/intune_deviceconfig_softwareupdatestatussummary.md) オブジェクトの JSON 表記を指定します。
@@ -34,8 +34,8 @@ PATCH /deviceManagement/softwareUpdateStatusSummary
 
 |プロパティ|型|説明|
 |:---|:---|:---|
-|id|String|エンティティのキー。|
-|displayName|String|ポリシーの名前。|
+|ID|文字列|エンティティのキー。|
+|displayName|文字列|ポリシーの名前。|
 |compliantDeviceCount|Int32|準拠デバイスの数。|
 |nonCompliantDeviceCount|Int32|準拠していないデバイスの数。|
 |remediatedDeviceCount|Int32|修復済みデバイスの数。|
@@ -110,6 +110,11 @@ Content-Length: 567
   "notApplicableUserCount": 6
 }
 ```
+
+
+
+
+
 
 
 

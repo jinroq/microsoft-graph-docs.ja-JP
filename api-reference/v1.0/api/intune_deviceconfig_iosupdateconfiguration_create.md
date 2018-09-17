@@ -42,7 +42,7 @@ POST /deviceManagement/deviceConfigurations
 |バージョン|Int32|デバイス構成のバージョン。 [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md) から継承します|
 |activeHoursStart|TimeOfDay|アクティブ時間の開始 (アクティブ時間は、更新のインストールが実施されない時間枠のことです)|
 |activeHoursEnd|TimeOfDay|アクティブ時間の終了 (アクティブ時間は、更新のインストールが実施されない時間枠のことです)|
-|scheduledInstallDays|[dayOfWeek 列挙型](../resources/intune_deviceconfig_dayofweek.md)コレクション|アクティブ時間が設定されている曜日。 このコレクションには、最大で 7 個の要素を含めることができます。 指定できる値は、`sunday`、`monday`、`tuesday`、`wednesday`、`thursday`、`friday`、`saturday` です。|
+|scheduledInstallDays|[dayOfWeek](../resources/intune_deviceconfig_dayofweek.md) コレクション|アクティブな時間が設定されている曜日。このコレクションには、最大7つの要素を含めることができます。使用可能な値:  `sunday`、 `monday`、 `tuesday`、 `wednesday`、 `thursday`、 `friday`、 `saturday`。|
 |utcTimeOffsetInMinutes|Int32|UTC タイム オフセット (分単位で示されます)|
 
 
@@ -96,6 +96,11 @@ Content-Length: 497
   "utcTimeOffsetInMinutes": 6
 }
 ```
+
+
+
+
+
 
 
 

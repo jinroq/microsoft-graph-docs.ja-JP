@@ -28,8 +28,8 @@ PATCH /deviceAppManagement/mdmWindowsInformationProtectionPolicies/{mdmWindowsIn
 ## <a name="request-headers"></a>要求ヘッダー
 |ヘッダー|値|
 |:---|:---|
-|Authorization|ベアラー &lt;トークン&gt; が必須。|
-|Accept|application/json|
+|承認|ベアラー &lt;トークン&gt; が必須。|
+|承諾する|アプリケーションまたは JSON|
 
 ## <a name="request-body"></a>要求本文
 要求本文で、[targetedManagedAppPolicyAssignment](../resources/intune_mam_targetedmanagedapppolicyassignment.md) オブジェクトの JSON 表記を指定します。
@@ -38,7 +38,7 @@ PATCH /deviceAppManagement/mdmWindowsInformationProtectionPolicies/{mdmWindowsIn
 
 |プロパティ|タイプ|説明|
 |:---|:---|:---|
-|id|文字列|ID|
+|ID|文字列|ID|
 |ターゲット|[deviceAndAppManagementAssignmentTarget](../resources/intune_shared_deviceandappmanagementassignmenttarget.md)|グループまたはアプリの展開の識別子|
 
 
@@ -76,6 +76,11 @@ Content-Length: 223
   }
 }
 ```
+
+
+
+
+
 
 
 

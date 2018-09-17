@@ -6,9 +6,14 @@
 ## <a name="members"></a>メンバー
 |メンバー|値|説明|
 |:---|:---|:---|
-|UserDefined|0|ユーザー定義済み、既定値、目的なし。|
+|ユーザー定義|0|ユーザー定義済み、既定値、目的なし。|
 |showOrganizerAndTimeOnly|1|開催者と時間のみを表示します。|
 |showOrganizerAndTimeAndSubject|2|主催者、時間、件名を表示します（プライベートミーティングの場合は非表示になります）。|
+
+
+
+
+
 
 
 

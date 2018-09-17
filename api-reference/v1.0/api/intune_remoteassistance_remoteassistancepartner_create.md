@@ -37,7 +37,7 @@ POST /deviceManagement/remoteAssistancePartners
 |ID|文字列|パートナーの一意識別子。|
 |displayName|文字列|パートナーの表示名。|
 |onboardingUrl|文字列|パートナーのオンボーディング ポータルの URL。このポータルでは、管理者がパートナーのリモート アシスタンス サービスを構成できます。|
-|onboardingStatus|[remoteAssistanceOnboardingStatus](../resources/intune_remoteassistance_remoteassistanceonboardingstatus.md)|未定 可能な値は、 `notOnboarded`、`onboarding`、`onboarded` です。|
+|onboardingStatus|[remoteAssistanceOnboardingStatus](../resources/intune_remoteassistance_remoteassistanceonboardingstatus.md)|TBD。使用可能な値は`notOnboarded`、`onboarding`、`onboarded` です。|
 |lastConnectionDateTime|DateTimeOffset|TEM パートナーによって Intune に最後に送信された要求のタイムスタンプ。|
 
 
@@ -78,6 +78,11 @@ Content-Length: 315
   "lastConnectionDateTime": "2016-12-31T23:58:36.6670033-08:00"
 }
 ```
+
+
+
+
+
 
 
 

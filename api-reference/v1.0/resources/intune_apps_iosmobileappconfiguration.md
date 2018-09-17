@@ -39,12 +39,12 @@ iOS モバイル アプリ構成に関する、プロパティ、継承済みの
 
 ## <a name="json-representation"></a>JSON 表記
 以下は、リソースの JSON 表記です。
-<!-- {
+<!--{
   "blockType": "resource",
   "baseType": "microsoft.graph.managedDeviceMobileAppConfiguration",
+  "keyProperty": "id",
   "@odata.type": "microsoft.graph.iosMobileAppConfiguration"
-}
--->
+}-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.iosMobileAppConfiguration",
@@ -68,6 +68,11 @@ iOS モバイル アプリ構成に関する、プロパティ、継承済みの
   ]
 }
 ```
+
+
+
+
+
 
 
 

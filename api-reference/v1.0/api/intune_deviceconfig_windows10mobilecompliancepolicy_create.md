@@ -25,7 +25,7 @@ POST /deviceManagement/deviceCompliancePolicies
 |ヘッダー|値|
 |:---|:---|
 |承認|ベアラー &lt;トークン&gt; が必須。|
-|承諾|application/json|
+|承諾|アプリケーションまたは json|
 
 ## <a name="request-body"></a>要求本文
 要求本文で、windows10MobileCompliancePolicy オブジェクト用の JSON 表記を指定します。
@@ -36,26 +36,26 @@ POST /deviceManagement/deviceCompliancePolicies
 |:---|:---|:---|
 |id|文字列|エンティティのキー。 [deviceCompliancePolicy](../resources/intune_deviceconfig_devicecompliancepolicy.md) から継承します|
 |createdDateTime|DateTimeOffset|オブジェクトが作成された DateTime。 [deviceCompliancePolicy](../resources/intune_deviceconfig_devicecompliancepolicy.md) から継承します|
-|説明|String|デバイス構成について管理者が提供した説明。 [deviceCompliancePolicy](../resources/intune_deviceconfig_devicecompliancepolicy.md) から継承します|
+|description|文字列|デバイス構成について管理者が提供した説明。 [deviceCompliancePolicy](../resources/intune_deviceconfig_devicecompliancepolicy.md) から継承します|
 |lastModifiedDateTime|DateTimeOffset|オブジェクトが最後に変更された DateTime。 [deviceCompliancePolicy](../resources/intune_deviceconfig_devicecompliancepolicy.md) から継承します|
-|displayName|String|デバイス構成について管理者が指定した名前。 [deviceCompliancePolicy](../resources/intune_deviceconfig_devicecompliancepolicy.md) から継承します|
+|displayName|文字列|デバイス構成について管理者が指定した名前。 [deviceCompliancePolicy](../resources/intune_deviceconfig_devicecompliancepolicy.md) から継承します|
 |version|Int32|デバイス構成のバージョン。 [deviceCompliancePolicy](../resources/intune_deviceconfig_devicecompliancepolicy.md) から継承します|
-|passwordRequired|Boolean|Windows Phone デバイスのロックを解除するパスワードを要求します。|
-|passwordBlockSimple|Boolean|カレンダーの同期を禁止するかどうかを指定します。|
+|passwordRequired|ブール値|Windows Phone デバイスのロックを解除するパスワードを要求します。|
+|passwordBlockSimple|ブール値|カレンダーの同期を禁止するかどうかを指定します。|
 |passwordMinimumLength|Int32|パスワードの最小文字数。 有効な値は 4 から 16 までです|
 |passwordMinimumCharacterSetCount|Int32|パスワードに必要な文字セットの数。|
-|passwordRequiredType|[requiredPasswordType](../resources/intune_deviceconfig_requiredpasswordtype.md)|必要なパスワードの種類。 可能な値は、 `deviceDefault`、`alphanumeric`、`numeric` です。|
+|passwordRequiredType|[requiredPasswordType](../resources/intune_deviceconfig_requiredpasswordtype.md)|必要なパスワードの種類です。指定できる値は、`deviceDefault`、`alphanumeric`、`numeric` です。|
 |passwordPreviousPasswordBlockCount|Int32|再使用を禁止する、以前のパスワードの数。|
 |passwordExpirationDays|Int32|パスワードの有効期限が切れるまでの日数。 有効な値は 1 から 255 までです|
 |passwordMinutesOfInactivityBeforeLock|Int32|パスワードが要求されるまでの非アクティブ時間 (分)。|
-|passwordRequireToUnlockFromIdle|Boolean|アイドル デバイスのロックを解除するパスワードを要求します。|
-|osMinimumVersion|String|Windows Phone の最小バージョン。|
-|osMaximumVersion|String|Windows Phone の最大バージョン。|
-|earlyLaunchAntiMalwareDriverEnabled|Boolean|デバイスが Windows デバイス正常性構成証明によって正常と報告される (早期起動マルウェア対策ドライバーが有効である) ことを要求します。|
-|bitLockerEnabled|Boolean|デバイスが Windows デバイス正常性構成証明によって正常と報告される (BitLocker が有効である) ことを要求します。|
-|secureBootEnabled|Boolean|デバイスが Windows デバイス正常性構成証明によって正常と報告される (セキュア ブートが有効である) ことを要求します。|
-|codeIntegrityEnabled|Boolean|デバイスが Windows デバイス正常性構成証明によって正常と報告されることを要求します。|
-|storageRequireEncryption|Boolean|Windows デバイス上での暗号化を要求します。|
+|passwordRequireToUnlockFromIdle|ブール値|アイドル デバイスのロックを解除するパスワードを要求します。|
+|osMinimumVersion|文字列|Windows Phone の最小バージョン。|
+|osMaximumVersion|文字列|Windows Phone の最大バージョン。|
+|earlyLaunchAntiMalwareDriverEnabled|ブール値|デバイスが Windows デバイス正常性構成証明によって正常と報告される (早期起動マルウェア対策ドライバーが有効である) ことを要求します。|
+|bitLockerEnabled|ブール値|デバイスが Windows デバイス正常性構成証明によって正常と報告される (BitLocker が有効である) ことを要求します。|
+|secureBootEnabled|ブール値|デバイスが Windows デバイス正常性構成証明によって正常と報告される (セキュア ブートが有効である) ことを要求します。|
+|codeIntegrityEnabled|ブール値|デバイスが Windows デバイス正常性構成証明によって正常と報告されることを要求します。|
+|storageRequireEncryption|ブール値|Windows デバイス上での暗号化を要求します。|
 
 
 
@@ -128,6 +128,11 @@ Content-Length: 964
   "storageRequireEncryption": true
 }
 ```
+
+
+
+
+
 
 
 

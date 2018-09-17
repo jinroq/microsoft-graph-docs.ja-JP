@@ -15,18 +15,21 @@
 なし
 ## <a name="json-representation"></a>JSON 表記
 以下は、リソースの JSON 表記です。
-<!-- {
+<!--{
   "blockType": "resource",
-  "baseType": "microsoft.graph.groupAssignmentTarget",
   "@odata.type": "microsoft.graph.exclusionGroupAssignmentTarget"
-}
--->
+}-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.exclusionGroupAssignmentTarget",
   "groupId": "String"
 }
 ```
+
+
+
+
+
 
 
 

@@ -1,6 +1,6 @@
 # <a name="mailtips-resource-type"></a>mailTips リソースの種類
 
-メッセージの作成中にユーザーに表示される、受信者に関する情報メッセージです。 メッセージの受信者に対するj移動返信としての不在時のメッセージがその例です。
+メッセージの作成中にユーザーに表示される、受信者に関する情報メッセージです。 メッセージの受信者に対する自動返信としての不在時のメッセージがその例です。
 
 
 ## <a name="properties"></a>プロパティ
@@ -15,9 +15,20 @@
 | IsModerated |ブール値  | 受信者へのメッセージ送信に承認が必要かどうか。たとえば、受信者が大規模な配布リストであり、モデレーターが配布リストに送信されたメッセージを承認するようにセットアップされている場合、または受信者へのメッセージの送信に受信者の上司の承認を必要とする場合などです。 |
 | MailboxFull | ブール値 | 受信者のメールボックスのフル状態。 |
 | MaxMessageSize | Int32 | 受信者の組織またはメールボックスに対して構成されているメッセージの最大サイズ。 |
-| RecipientScope | 文字列 | 受信者のスコープです。 可能な値は、`none`、`internal`、`external`、`externalPartner`、`externalNonParther` です。 たとえば、管理者は別の組織をその「パートナー」に設定できます。 スコープは、管理者が特定のメール ヒントが特定のスコープにアクセスできるようにしたい場合に便利です。 メッセージが組織から送信されても支障がないことを送信者に伝えたり、言葉遣いや文調、内容について正しい判断を下せるよう支援するのにも役立ちます。|
+| RecipientScope | RecipientScopeType | 受信者のスコープです。 可能な値は、`none`、`internal`、`external`、`externalPartner`、`externalNonParther` です。 たとえば、管理者は別の組織をその「パートナー」に設定できます。 スコープは、管理者が特定のメール ヒントが特定のスコープにアクセスできるようにしたい場合に便利です。 メッセージが組織から送信されても支障がないことを送信者に伝えたり、言葉遣いや文調、内容について正しい判断を下せるよう支援するのにも役立ちます。|
 | RecipientSuggestions | [recipient](../resources/recipient.md) コレクション | 同じメッセージに表示される前のコンテキストに基づいて提案される受信者。 |
 | TotalMemberCount | Int32 | 受信者が配布リストの場合はメンバー数です。 |
+
+### <a name="recipientscopetype-values"></a>recipientScopeType 値
+
+| 値
+|:-------------------------
+| なし
+| 内部
+| 外部
+| ExternalPartner
+| ExternalNonPartner
+
 
 ## <a name="json-representation"></a>JSON 表記
 

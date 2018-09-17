@@ -1,4 +1,4 @@
-# <a name="microsoft-bookings-api-overview"></a>Microsoft Bookings API の概要
+# <a name="microsoft-bookings-api-overview-preview"></a>Microsoft 予約 API の概要 (プレビュー)
 
 Microsoft Bookings は、小規模企業およびその顧客を対象とした、シンプルかつ効率的な予約スケジュールのためのオンラインおよびモバイルのアプリを提供します。 自動車修理工場、美容院、法律事務所など、予約を扱うサービスを提供する小規模企業で予約管理機能を活用すれば、それによって空いた時間を、事業拡大に向けたより重要な作業に当てることができます。 Microsoft Bookings は、Office 365 Business Premium サブスクリプションを取得した企業がご利用いただけます。
 
@@ -22,7 +22,6 @@ Microsoft Bookings は、小規模企業およびその顧客を対象とした�
 
 次の詳細情報をご確認ください:
 
-- 
-  [Microsoft Bookings](https://support.office.com/ja-JP/article/Publish-your-business-calendar-online-with-Microsoft-Bookings-47403d64-a067-4754-9ae9-00157244c27d) およびその他の [Office 365 ビジネス アプリ](https://support.office.com/en-us/article/manage-your-business-apps-in-the-business-center-47eca808-cf96-42ba-83e8-55daf18e49dc?ui=en-US&rs=en-US&ad=US)。
+- [Microsoft Bookings](https://support.office.com/en-us/article/Publish-your-business-calendar-online-with-Microsoft-Bookings-47403d64-a067-4754-9ae9-00157244c27d) およびその他の [Office 365 ビジネス アプリ](https://support.office.com/en-us/article/manage-your-business-apps-in-the-business-center-47eca808-cf96-42ba-83e8-55daf18e49dc?ui=en-US&rs=en-US&ad=US)。
 - Microsoft Graph における [Bookings API の利用](../api-reference/beta/resources/booking-api-overview.md)。
 

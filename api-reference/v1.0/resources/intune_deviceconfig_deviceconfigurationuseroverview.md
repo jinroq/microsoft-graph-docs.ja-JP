@@ -18,7 +18,8 @@
 |successCount|Int32|成功したユーザーの数|
 |errorCount|Int32|エラー ユーザーの数|
 |failedCount|Int32|失敗したユーザーの数|
-|lastUpdateDateTime|DateTimeOffset|最終更新時刻|
+|
+lastUpdateDateTime|DateTimeOffset|最終更新時刻|
 |configurationVersion|Int32|対象の概要に関するポリシーのバージョン|
 
 ## <a name="relationships"></a>リレーションシップ
@@ -27,8 +28,8 @@
 以下は、リソースの JSON 表記です。
 <!--{
   "blockType": "resource",
-  "keyProperty": "id",
   "baseType": "microsoft.graph.entity",
+  "keyProperty": "id",
   "@odata.type": "microsoft.graph.deviceConfigurationUserOverview"
 }-->
 ``` json
@@ -44,6 +45,11 @@
   "configurationVersion": 1024
 }
 ```
+
+
+
+
+
 
 
 

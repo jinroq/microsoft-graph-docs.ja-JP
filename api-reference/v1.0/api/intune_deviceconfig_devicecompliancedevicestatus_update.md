@@ -1,6 +1,6 @@
 # <a name="update-devicecompliancedevicestatus"></a>deviceComplianceDeviceStatus の更新
 
-> **注:**Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
+> **注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
 
 [deviceComplianceDeviceStatus](../resources/intune_deviceconfig_devicecompliancedevicestatus.md) オブジェクトのプロパティを更新します。
 ## <a name="prerequisites"></a>前提条件
@@ -24,8 +24,8 @@ PATCH /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/devi
 ## <a name="request-headers"></a>要求ヘッダー
 |ヘッダー|値|
 |:---|:---|
-|Authorization|ベアラー &lt;トークン&gt; が必要です。|
-|Accept|application/json|
+|承認|ベアラー &lt;トークン&gt; が必須。|
+|承諾する|アプリケーションまたは json|
 
 ## <a name="request-body"></a>要求本文
 要求本文で、[deviceComplianceDeviceStatus](../resources/intune_deviceconfig_devicecompliancedevicestatus.md) オブジェクトの JSON 表記を指定します。
@@ -34,14 +34,14 @@ PATCH /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/devi
 
 |プロパティ|型|説明|
 |:---|:---|:---|
-|id|String|エンティティのキー。|
-|deviceDisplayName|String|DevicePolicyStatus のデバイス名。|
-|userName|String|レポートされているユーザー名|
-|deviceModel|String|レポートされているデバイス モデル|
+|ID|文字列|エンティティのキー。|
+|deviceDisplayName|文字列|DevicePolicyStatus のデバイス名。|
+|userName|文字列|レポートされているユーザー名|
+|deviceModel|文字列|レポートされているデバイス モデル|
 |complianceGracePeriodExpirationDateTime|DateTimeOffset|デバイス コンプライアンスの猶予期間が過ぎる DateTime|
-|status|String|ポリシー レポートのコンプライアンスの状態。 可能な値は、`unknown`、`notApplicable`、`compliant`、`remediated`、`nonCompliant`、`error`、`conflict` です。|
+|状態|[complianceStatus](../resources/intune_shared_compliancestatus.md)|ポリシー レポートのコンプライアンスの状態。 可能な値は、`unknown`、`notApplicable`、`compliant`、`remediated`、`nonCompliant`、`error`、`conflict`、`notAssigned` です。|
 |lastReportedDateTime|DateTimeOffset|ポリシー レポートの最終変更日時。|
-|userPrincipalName|String|UserPrincipalName。|
+|userPrincipalName|文字列|UserPrincipalName。|
 
 
 
@@ -86,6 +86,11 @@ Content-Length: 475
   "userPrincipalName": "User Principal Name value"
 }
 ```
+
+
+
+
+
 
 
 

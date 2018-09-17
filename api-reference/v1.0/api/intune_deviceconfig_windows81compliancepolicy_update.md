@@ -25,7 +25,7 @@ PATCH /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}
 |ヘッダー|値|
 |:---|:---|
 |承認|ベアラー &lt;トークン&gt; が必須。|
-|承諾|application/json|
+|承諾|アプリケーションまたは JSON|
 
 ## <a name="request-body"></a>要求本文
 要求本文で、[windows81CompliancePolicy](../resources/intune_deviceconfig_windows81compliancepolicy.md) オブジェクトの JSON 表現を指定します。
@@ -46,7 +46,7 @@ PATCH /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}
 |passwordMinimumLength|Int32|パスワードの最小文字数。|
 |passwordMinutesOfInactivityBeforeLock|Int32|パスワードが要求されるまでの非アクティブ時間 (分)。|
 |passwordMinimumCharacterSetCount|Int32|パスワードに必要な文字セットの数。|
-|passwordRequiredType|[requiredPasswordType](../resources/intune_deviceconfig_requiredpasswordtype.md)|必要なパスワードの種類。 可能な値は、 `deviceDefault`、`alphanumeric`、`numeric` です。|
+|passwordRequiredType|[requiredPasswordType](../resources/intune_deviceconfig_requiredpasswordtype.md)|必要なパスワードの種類です。指定できる値は`deviceDefault`、`alphanumeric`、`numeric` です。|
 |passwordPreviousPasswordBlockCount|Int32|再使用を禁止する、以前のパスワードの数。 有効な値は 0 から 24 までです|
 |osMinimumVersion|文字列|Windows 8.1 の最小バージョン。|
 |osMaximumVersion|文字列|Windows 8.1 の最大バージョン。|
@@ -112,6 +112,11 @@ Content-Length: 774
   "storageRequireEncryption": true
 }
 ```
+
+
+
+
+
 
 
 

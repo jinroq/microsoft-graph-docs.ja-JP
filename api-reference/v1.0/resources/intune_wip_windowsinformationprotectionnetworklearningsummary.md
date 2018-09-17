@@ -25,8 +25,8 @@ Windows 情報保護のネットワークの学習概要エンティティ。
 以下は、リソースの JSON 表記です。
 <!--{
   "blockType": "resource",
-  "keyProperty": "id",
   "baseType": "microsoft.graph.entity",
+  "keyProperty": "id",
   "@odata.type": "microsoft.graph.windowsInformationProtectionNetworkLearningSummary"
 }-->
 ``` json
@@ -37,6 +37,11 @@ Windows 情報保護のネットワークの学習概要エンティティ。
   "deviceCount": 1024
 }
 ```
+
+
+
+
+
 
 
 

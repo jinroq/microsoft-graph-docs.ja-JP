@@ -6,15 +6,15 @@
 ## <a name="properties"></a>プロパティ
 |プロパティ|タイプ|説明|
 |:---|:---|:---|
-|setting|文字列|レポートされている設定値です。|
+|文字列|文字列|レポートされている設定値です。|
 |settingName|文字列|レポートされている、ローカライズされた設定名またはユーザー フレンドリな設定名です|
 |instanceDisplayName|文字列|レポートされている設定インスタンスの名前です。|
-|状態|[complianceStatus](../resources/intune_shared_compliancestatus.md)|設定のコンプライアンスの状態です。 指定できる値: `unknown`、`notApplicable`、`compliant`、`remediated`、`nonCompliant`、`error`、`conflict`。|
+|都道府県|[complianceStatus](../resources/intune_shared_compliancestatus.md)|設定のコンプライアンスの状態です。使用可能な値は `unknown`、`notApplicable`、`compliant`、`remediated`、`nonCompliant`、`error`、`conflict`、`notAssigned` です。|
 |errorCode|Int64|設定のエラー コード|
 |errorDescription|文字列|エラーの説明|
 |userId|文字列|UserId|
-|userName|文字列|UserName|
-|userEmail|文字列|UserEmail|
+|userName|文字列|userName|
+|userEmail|文字列|userEmail|
 |userPrincipalName|文字列|UserPrincipalName。|
 |ソース|[settingSource](../resources/intune_deviceconfig_settingsource.md) コレクション|投稿ポリシー|
 |currentValue|文字列|デバイスに関する設定の現在の値|
@@ -50,6 +50,11 @@
   "currentValue": "String"
 }
 ```
+
+
+
+
+
 
 
 

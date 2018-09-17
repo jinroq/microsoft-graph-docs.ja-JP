@@ -1,6 +1,6 @@
 # <a name="get-recent-user-activities"></a>最近のユーザーのアクティビティを取得する
 
-特定のユーザーの最近のアクティビティを取得します。 この OData 関数には、「直近に使用された」API のように動作させるためのいくつかの既定の動作が含まれています。 このサービスは、直近の [historyItems](../resources/projectrome_historyitem.md) のクエリを実行し、関連するアクティビティを引き出します。 アクティビティは、 **historyItem** で、直近の **lastModified** に従って並べ替えられます。 これは、**historyItems** のないアクティビティは応答に含まれないことを意味します。 UserActivity.ReadWrite.CreatedByApp アクセス許可も、応答に対し追加のフィルタリングを適用するので、アプリケーションによって作成されたアクティビティのみが返されるようになります。 ユーザーが特にアクティブで、他のアプリケーションが最近より多くのアクティビティを作成した場合、このサーバー側のフィルター処理によって空のページが発生することがあります。 アプリケーションのアクティビティを取得するには **nextLink** プロパティを使ってページ割りをします。
+特定のユーザーの最近のアクティビティを取得します。 この OData 関数には、「直近に使用された」API のように動作させるためのいくつかの既定の動作が含まれています。 このサービスは、直近の [historyItems](../resources/projectrome_historyitem.md) のクエリを実行し、関連するアクティビティを引き出します。 アクティビティは、 **historyItem** で、直近の **lastModified** に従って並べ替えられます。 これは、**historyItems** のないアクティビティは応答に含まれないことを意味します。 UserActivity.ReadWrite.CreatedByApp アクセス許可も、応答に対し追加のフィルタリングを適用するので、アプリケーションによって作成されたアクティビティのみが返されるようになります。 ユーザーが特にアクティブで、他のアプリケーションが最近より多くのアクティビティを作成した場合、このサーバー側のフィルター処理によって空のページが発生することがあります。 アプリケーションのアクティビティを取得するには **nextLink** プロパティを使ってページ化します。
 
 ## <a name="permissions"></a>アクセス許可
 
@@ -8,7 +8,7 @@
 
 |アクセス許可の種類      | アクセス許可 (特権の小さいものから大きいものへ)              |
 |:--------------------|:---------------------------------------------------------|
-|委任 (職場または学校のアカウント) | UserActivity.ReadWrite.CreatedByApp    |
+|委任 (職場または学校アカウント) | UserActivity.ReadWrite.CreatedByApp    |
 |委任 (個人用 Microsoft アカウント) | UserActivity.ReadWrite.CreatedByApp    |
 |アプリケーション | サポートされていません。 |
 
@@ -50,7 +50,7 @@ URL エンコーディングを使ったサポートされているクエリの�
 
 ## <a name="response"></a>応答
 
-|||UNTRANSLATED_CONTENT_START|||If successful, this method returns the `200 OK` response code with the user's recent activities for your application.|||UNTRANSLATED_CONTENT_END|||
+成功した場合、このメソッドは、`200 OK` アプリケーションのユーザーの最近のアクティビティを使用して応答コードを返します。
 
 ## <a name="example"></a>例
 
@@ -136,7 +136,23 @@ Content-Type: application/json
   "section": "documentation",
   "suppressions": [
     "Error: get_recent_activities/container/contentInfo:
-      Property 'contentInfo' is of type Custom but has no custom members."
+      Property 'contentInfo' is of type Custom but has no custom members.",
+
+    "Warning: get_recent_activities/container/visualElements:
+      Schema validation failed on property 'visualElements' ['microsoft.graph.visualInfo']",
+
+    "Warning: get_recent_activities/container/visualElements/content:
+      Schema validation failed on property 'content' ['microsoft.graph.Json']",
+
+    "Warning: get_recent_activities/container/visualElements/content/$schema:
+      Undocumented property '$schema' [String] was not expected on resource microsoft.graph.Json.",
+
+    "Warning: get_recent_activities/container/visualElements/content/body:
+      Undocumented property 'body' [Collection(Object)] was not expected on resource microsoft.graph.Json.",
+
+    "Warning: get_recent_activities/container/visualElements/content/type:
+      Undocumented property 'type' [String] was not expected on resource microsoft.graph.Json."
+
   ],
   "tocPath": ""
 }-->

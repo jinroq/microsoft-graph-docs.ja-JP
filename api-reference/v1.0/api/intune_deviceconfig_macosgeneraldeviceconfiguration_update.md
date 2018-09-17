@@ -34,14 +34,14 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}
 
 |プロパティ|タイプ|説明|
 |:---|:---|:---|
-|id|文字列|エンティティのキー。 [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md) から継承します|
+|ID|文字列|エンティティのキー。 [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md) から継承します|
 |lastModifiedDateTime|DateTimeOffset|オブジェクトが最後に変更された DateTime。 [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md) から継承します|
 |createdDateTime|DateTimeOffset|オブジェクトが作成された DateTime。 [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md) から継承します|
-|description|文字列|デバイス構成について管理者が提供した説明。 [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md) から継承します|
+|説明|文字列|デバイス構成について管理者が提供した説明。 [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md) から継承します|
 |displayName|文字列|デバイス構成について管理者が指定した名前。 [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md) から継承します|
-|version|Int32|デバイス構成のバージョン。 [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md) から継承します|
+|バージョン|Int32|デバイス構成のバージョン。 [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md) から継承します|
 |compliantAppsList|[appListItem](../resources/intune_deviceconfig_applistitem.md) コレクション|コンプライアンス内のアプリのリスト (CompliantAppListType によって制御される、許可リストまたは禁止リスト)。 このコレクションには、最大で 10000 個の要素を含めることができます。|
-|compliantAppListType|[appListType](../resources/intune_deviceconfig_applisttype.md)|CompliantAppsList 内にあるリスト。 指定できる値は、`none`、`appsInListCompliant`、`appsNotInListCompliant` です。|
+|compliantAppListType|[appListType](../resources/intune_deviceconfig_applisttype.md)|CompliantAppsList中にあるリスト。 使用可能な値は: `none`, `appsInListCompliant`, `appsNotInListCompliant`です。|
 |emailInDomainSuffixes|String コレクション|これらの文字列のいずれかに一致するサフィックスがないメール アドレスは、ドメイン外と見なされます。|
 |passwordBlockSimple|ブール値|単純なパスワードを禁止します。|
 |passwordExpirationDays|Int32|パスワードの有効期限が切れるまでの日数。|
@@ -50,7 +50,7 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}
 |passwordMinutesOfInactivityBeforeLock|Int32|パスワードが要求されるまでの非アクティブ時間 (分)。|
 |passwordMinutesOfInactivityBeforeScreenTimeout|Int32|画面がタイムアウトになるまでの非アクティブ時間。|
 |passwordPreviousPasswordBlockCount|Int32|ブロックする、以前のパスワードの数。|
-|passwordRequiredType|[requiredPasswordType](../resources/intune_deviceconfig_requiredpasswordtype.md)|必要なパスワードの種類。 指定できる値は、`deviceDefault`、`alphanumeric`、`numeric` です。|
+|passwordRequiredType|[requiredPasswordType](../resources/intune_deviceconfig_requiredpasswordtype.md)|必要なパスワードの種類. 使用可能な値は: `deviceDefault`, `alphanumeric`, `numeric`です。|
 |passwordRequired|ブール値|パスワードを要求するかどうかを指定します。|
 
 
@@ -135,6 +135,11 @@ Content-Length: 1078
   "passwordRequired": true
 }
 ```
+
+
+
+
+
 
 
 

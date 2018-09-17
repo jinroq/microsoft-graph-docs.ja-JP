@@ -15,15 +15,16 @@
 ## <a name="properties"></a>プロパティ
 |プロパティ|タイプ|説明|
 |:---|:---|:---|
-|id|文字列|エンティティのキー。|
+|ID|文字列|エンティティのキー。|
 |deviceName|文字列|デバイス名。|
 |deviceId|文字列|デバイス ID。|
-|lastSyncDateTime|DateTimeOffset|最後の同期日時。|
-|installState|[installState](../resources/intune_books_installstate.md)|電子ブックのインストールの状態。 指定できる値は、`notApplicable`、`installed`、`failed`、`notInstalled`、`uninstallFailed`、`unknown` です。|
+|lastSyncDateTime|DateTimeOffset
+|最後の同期日時。|
+|installState|[installState](../resources/intune_books_installstate.md)|EBook のインストール状態です。使用可能な値は `notApplicable`、 `installed`、 `failed`、 `notInstalled`、 `uninstallFailed`、 `unknown`です。|
 |errorCode|文字列|インストール失敗のエラー コード。|
 |osVersion|文字列|OS バージョン。|
 |osDescription|文字列|OS の説明。|
-|userName|文字列|デバイスのユーザー名です。|
+|ユーザー名|文字列|デバイスのユーザー名です。|
 
 ## <a name="relationships"></a>リレーションシップ
 なし
@@ -31,8 +32,8 @@
 以下は、リソースの JSON 表記です。
 <!--{
   "blockType": "resource",
-  "keyProperty": "id",
   "baseType": "microsoft.graph.entity",
+  "keyProperty": "id",
   "@odata.type": "microsoft.graph.deviceInstallState"
 }-->
 ``` json
@@ -49,6 +50,11 @@
   "userName": "String"
 }
 ```
+
+
+
+
+
 
 
 

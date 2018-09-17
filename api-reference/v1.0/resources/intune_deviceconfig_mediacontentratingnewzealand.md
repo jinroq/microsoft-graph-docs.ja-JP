@@ -6,18 +6,17 @@
 ## <a name="properties"></a>プロパティ
 |プロパティ|タイプ|説明|
 |:---|:---|:---|
-|movieRating|[ratingNewZealandMoviesType](../resources/intune_deviceconfig_ratingnewzealandmoviestype.md)|ニュージーランド向けに選択された映画の評価です。 指定できる値は、`allAllowed`, `allBlocked`, `general`, `parentalGuidance`, `mature`, `agesAbove13`, `agesAbove15`, `agesAbove16`, `agesAbove18`, `restricted`, `agesAbove16Restricted` です。|
-|tvRating|[ratingNewZealandTelevisionType](../resources/intune_deviceconfig_ratingnewzealandtelevisiontype.md)|ニュージーランド向けに選択されたテレビの評価です。 指定できる値は、`allAllowed`、`allBlocked`、`general`、`parentalGuidance`、`adults`です。|
+|movieRating|[ratingNewZealandMoviesType](../resources/intune_deviceconfig_ratingnewzealandmoviestype.md)|評価のニュージーランドを選択したムービーです。使用可能な値: `allAllowed`、 `allBlocked`、 `general`、 `parentalGuidance`、 `mature`、 `agesAbove13`、 `agesAbove15`、 `agesAbove16`、 `agesAbove18`、 `restricted`、 `agesAbove16Restricted`。|
+|tvRating|[ratingNewZealandTelevisionType](../resources/intune_deviceconfig_ratingnewzealandtelevisiontype.md)|ニュージーランド向けに選択されているテレビのレーティング。可能な値: `allAllowed` 、`allBlocked` 、`general` 、`parentalGuidance` 、`adults` 。|
 
-## <a name="relationships"></a>リレーションシップ
+## <a name="relationships"></a>関係
 なし
 ## <a name="json-representation"></a>JSON 表記
 以下は、リソースの JSON 表記です。
-<!-- {
+<!--{
   "blockType": "resource",
   "@odata.type": "microsoft.graph.mediaContentRatingNewZealand"
-}
--->
+}-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.mediaContentRatingNewZealand",
@@ -25,6 +24,11 @@
   "tvRating": "String"
 }
 ```
+
+
+
+
+
 
 
 

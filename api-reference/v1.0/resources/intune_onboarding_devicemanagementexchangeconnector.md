@@ -16,14 +16,14 @@ Exchange 環境との接続を表すエンティティです。
 ## <a name="properties"></a>プロパティ
 |プロパティ|タイプ|説明|
 |:---|:---|:---|
-|id|文字列|まだ文書化されていません|
+|ID|文字列|まだ文書化されていません|
 |lastSyncDateTime|DateTimeOffset|Exchange Connector の最終同期日時|
-|status|[deviceManagementExchangeConnectorStatus](../resources/intune_onboarding_devicemanagementexchangeconnectorstatus.md)|Exchange コネクタの状態。 指定できる値は、`none`、`connectionPending`、`connected`、`disconnected` です。|
+|状態|[deviceManagementExchangeConnectorStatus](../resources/intune_onboarding_devicemanagementexchangeconnectorstatus.md)|Exchange Connector の状態。可能な値は、`none`、`connectionPending`、`connected`、`disconnected` です。|
 |primarySmtpAddress|文字列|サービス間の Exchange Connector を構成するときに使用するメール アドレス。|
 |serverName|文字列|Exchange サーバーの名前。|
 |connectorServerName|文字列|Exchange Connector をホストするサーバーの名前。|
-|exchangeConnectorType|[deviceManagementExchangeConnectorType](../resources/intune_onboarding_devicemanagementexchangeconnectortype.md)|構成されている Exchange Connector の種類。 指定できる値は、`onPremises`、`hosted`、`serviceToService`、`dedicated` です。|
-|version|文字列|ExchangeConnectorAgent のバージョン|
+|exchangeConnectorType|[deviceManagementExchangeConnectorType](../resources/intune_onboarding_devicemanagementexchangeconnectortype.md)|Exchange コネクタの構成の型。使用可能な値: `onPremises`、 `hosted`、 `serviceToService`、 `dedicated`。|
+|バージョン|文字列|ExchangeConnectorAgent のバージョン|
 |exchangeAlias|文字列|Exchange Server に割り当てられているエイリアス。|
 |exchangeOrganization|文字列|Exchange Server に対する Exchange 組織|
 
@@ -33,8 +33,8 @@ Exchange 環境との接続を表すエンティティです。
 以下は、リソースの JSON 表記です。
 <!--{
   "blockType": "resource",
-  "keyProperty": "id",
   "baseType": "microsoft.graph.entity",
+  "keyProperty": "id",
   "@odata.type": "microsoft.graph.deviceManagementExchangeConnector"
 }-->
 ``` json
@@ -52,6 +52,11 @@ Exchange 環境との接続を表すエンティティです。
   "exchangeOrganization": "String"
 }
 ```
+
+
+
+
+
 
 
 

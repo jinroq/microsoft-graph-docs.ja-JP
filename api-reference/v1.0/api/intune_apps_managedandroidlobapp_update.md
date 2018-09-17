@@ -25,7 +25,7 @@ PATCH /deviceAppManagement/mobileApps/{mobileAppId}
 |ヘッダー|値|
 |:---|:---|
 |承認|ベアラー &lt;トークン&gt; が必須。|
-|承諾|application/json|
+|承諾|アプリケーションまたは json|
 
 ## <a name="request-body"></a>要求本文
 要求本文で、[managedAndroidLobApp](../resources/intune_apps_managedandroidlobapp.md) オブジェクトの JSON 表記を指定します。
@@ -47,16 +47,16 @@ PATCH /deviceAppManagement/mobileApps/{mobileAppId}
 |所有者|文字列|アプリの所有者。 [mobileApp](../resources/intune_apps_mobileapp.md) から継承します|
 |開発者|文字列|アプリの開発者。 [mobileApp](../resources/intune_apps_mobileapp.md) から継承します|
 |メモ|文字列|アプリ用のメモ。 [mobileApp](../resources/intune_apps_mobileapp.md) から継承します|
-|publishingState|[mobileAppPublishingState](../resources/intune_apps_mobileapppublishingstate.md)|アプリの発行の状態。 アプリが発行されていない限り、アプリを割り当てることはできません。 [mobileApp](../resources/intune_apps_mobileapp.md) から継承します。 指定できる値は、`notPublished`、`processing`、`published`です。|
-|appAvailability|[managedAppAvailability](../resources/intune_apps_managedappavailability.md)|アプリケーションの可用性。 [managedApp](../resources/intune_apps_managedapp.md) から継承します。 指定できる値は、`global`、`lineOfBusiness` です。|
+|publishingState|[mobileAppPublishingState](../resources/intune_apps_mobileapppublishingstate.md)|アプリケーションの発行の状態です。アプリが公開されていない限り、アプリケーションを割り当てることができません。 [MobileApp](../resources/intune_apps_mobileapp.md)から継承されます。使用可能な値は`notPublished`、`processing`、`published`です。|
+|アプリケーション可用性|[アプリケーション可用性の管理](../resources/intune_apps_managedappavailability.md)|アプリケーションの可用性です。[managedApp](../resources/intune_apps_managedapp.md) から継承されます。使用可能な値は `global`、`lineOfBusiness` です。|
 |バージョン|文字列|アプリケーションのバージョン。 [managedApp](../resources/intune_apps_managedapp.md) から継承します|
 |committedContentVersion|文字列|内部にコミットされたコンテンツのバージョン。 [managedMobileLobApp](../resources/intune_apps_managedmobilelobapp.md) から継承します|
 |fileName|文字列|メインの Lob アプリケーションのファイル名。 [managedMobileLobApp](../resources/intune_apps_managedmobilelobapp.md) から継承します|
 |サイズ|Int64|アップロードされたすべてのファイルを含む合計サイズ。 [managedMobileLobApp](../resources/intune_apps_managedmobilelobapp.md) から継承します|
-|packageId|文字列|パッケージの識別子。|
+|パッケージのID|文字列|パッケージの識別子。|
 |minimumSupportedOperatingSystem|[androidMinimumOperatingSystem](../resources/intune_apps_androidminimumoperatingsystem.md)|該当するオペレーティング システムの最小の値です。|
 |versionName|文字列|管理対象 Android 基幹業務 (LoB) アプリのバージョン名。|
-|versionCode|文字列|管理対象 Android 基幹業務 (LoB) アプリのバージョン コード。|
+|バージョン コード|文字列|管理対象 Android 基幹業務 (LoB) アプリのバージョン コード。|
 
 
 
@@ -158,6 +158,11 @@ Content-Length: 1325
   "versionCode": "Version Code value"
 }
 ```
+
+
+
+
+
 
 
 

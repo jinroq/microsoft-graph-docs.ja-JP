@@ -1,6 +1,6 @@
 # <a name="create-iosmobileappconfiguration"></a>iosMobileAppConfiguration の作成
 
-> **注:**Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
+> **注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
 
 新しい [iosMobileAppConfiguration](../resources/intune_apps_iosmobileappconfiguration.md) オブジェクトを作成します。
 ## <a name="prerequisites"></a>前提条件
@@ -8,7 +8,7 @@
 
 |アクセス許可の種類|アクセス許可 (特権の大きいものから小さいものへ)|
 |:---|:---|
-|委任 (職場または学校アカウント)|DeviceManagementApps.ReadWrite.All|
+|委任 (職場または学校のアカウント)|DeviceManagementApps.ReadWrite.All|
 |委任 (個人用 Microsoft アカウント)|サポートされていません。|
 |アプリケーション|サポートされていません。|
 
@@ -24,8 +24,8 @@ POST /deviceAppManagement/mobileAppConfigurations
 ## <a name="request-headers"></a>要求ヘッダー
 |ヘッダー|値|
 |:---|:---|
-|Authorization|ベアラー &lt;トークン&gt; が必須。|
-|Accept|application/json|
+|承認|ベアラー &lt;トークン&gt; が必須。|
+|承諾する|アプリケーションまたは json|
 
 ## <a name="request-body"></a>要求本文
 要求本文で、iOSMobileAppConfiguration オブジェクトの JSON 表記を指定します。
@@ -34,15 +34,15 @@ POST /deviceAppManagement/mobileAppConfigurations
 
 |プロパティ|型|説明|
 |:---|:---|:---|
-|id|String|エンティティのキー。 [managedDeviceMobileAppConfiguration](../resources/intune_apps_manageddevicemobileappconfiguration.md) から継承済み|
-|targetedMobileApps|String コレクション|関連するアプリ。 [managedDeviceMobileAppConfiguration](../resources/intune_apps_manageddevicemobileappconfiguration.md) から継承済み|
-|createdDateTime|DateTimeOffset|オブジェクトが作成された DateTime。 [managedDeviceMobileAppConfiguration](../resources/intune_apps_manageddevicemobileappconfiguration.md) から継承済み|
-|description|String|デバイス構成について管理者が提供した説明。 [managedDeviceMobileAppConfiguration](../resources/intune_apps_manageddevicemobileappconfiguration.md) から継承済み|
-|lastModifiedDateTime|DateTimeOffset|オブジェクトが最後に変更された DateTime。 [managedDeviceMobileAppConfiguration](../resources/intune_apps_manageddevicemobileappconfiguration.md) から継承済み|
-|displayName|String|デバイス構成について管理者が指定した名前。 [managedDeviceMobileAppConfiguration](../resources/intune_apps_manageddevicemobileappconfiguration.md) から継承済み|
-|version|Int32|デバイス構成のバージョン。 [managedDeviceMobileAppConfiguration](../resources/intune_apps_manageddevicemobileappconfiguration.md) から継承済み|
-|encodedSettingXml|Binary|mdm アプリ 構成 Base 64 バイナリ。|
-|settings|[appConfigurationSettingItem](../resources/intune_apps_appconfigurationsettingitem.md) コレクション|アプリの構成設定アイテム。|
+|ID|文字列|エンティティのキー。 [managedDeviceMobileAppConfiguration](../resources/intune_apps_manageddevicemobileappconfiguration.md) から継承されます|
+|targetedMobileApps|String コレクション|関連するアプリです。 [managedDeviceMobileAppConfiguration](../resources/intune_apps_manageddevicemobileappconfiguration.md) から継承されます|
+|createdDateTime|DateTimeOffset|オブジェクトが作成された DateTime。 [managedDeviceMobileAppConfiguration](../resources/intune_apps_manageddevicemobileappconfiguration.md) から継承されます|
+|説明|文字列|デバイス構成について管理者が提供した説明。 [managedDeviceMobileAppConfiguration](../resources/intune_apps_manageddevicemobileappconfiguration.md) から継承されます|
+|lastModifiedDateTime|DateTimeOffset|オブジェクトが最後に変更された DateTime。 [managedDeviceMobileAppConfiguration](../resources/intune_apps_manageddevicemobileappconfiguration.md) から継承されます|
+|displayName|文字列|デバイス構成について管理者が指定した名前。 [managedDeviceMobileAppConfiguration](../resources/intune_apps_manageddevicemobileappconfiguration.md) から継承されます|
+|バージョン|Int32|デバイス構成のバージョン。 [managedDeviceMobileAppConfiguration](../resources/intune_apps_manageddevicemobileappconfiguration.md) から継承されます|
+|encodedSettingXml|バイナリ|mdm アプリ 構成 Base 64 バイナリ。|
+|設定|[appConfigurationSettingItem](../resources/intune_apps_appconfigurationsettingitem.md) コレクション|アプリの構成設定アイテム。|
 
 
 
@@ -107,6 +107,11 @@ Content-Length: 706
   ]
 }
 ```
+
+
+
+
+
 
 
 

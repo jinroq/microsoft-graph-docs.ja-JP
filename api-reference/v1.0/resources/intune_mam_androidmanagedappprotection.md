@@ -26,22 +26,22 @@ Android デバイス上の特定のセキュリティ グループおよびア�
 |バージョン|文字列|エンティティのバージョン。 [managedAppPolicy](../resources/intune_mam_managedapppolicy.md) から継承します|
 |periodOfflineBeforeAccessCheck|期間|デバイスがインターネットに接続されていないでこの期間が過ぎると、アクセスがチェックされます。 [managedAppProtection](../resources/intune_mam_managedappprotection.md) から継承します|
 |periodOnlineBeforeAccessCheck|期間|デバイスがインターネットに接続されていてこの期間が過ぎると、アクセスがチェックされます。 [managedAppProtection](../resources/intune_mam_managedappprotection.md) から継承します|
-|allowedInboundDataTransferSources|[managedAppDataTransferLevel](../resources/intune_mam_managedappdatatransferlevel.md)|データの転送が許可されたソース。 [managedAppProtection](../resources/intune_mam_managedappprotection.md) から継承します 指定できる値は、 `allApps`、`managedApps`、`none` です。|
-|allowedOutboundDataTransferDestinations|[managedAppDataTransferLevel](../resources/intune_mam_managedappdatatransferlevel.md)|データの転送が許可された宛先。 [managedAppProtection](../resources/intune_mam_managedappprotection.md) から継承します 指定できる値は、 `allApps`、`managedApps`、`none` です。|
+|allowedInboundDataTransferSources|[managedAppDataTransferLevel](../resources/intune_mam_managedappdatatransferlevel.md)|データの転送が許可されたソース。[managedAppProtection](../resources/intune_mam_managedappprotection.md) から継承されます。指定できる値は、`allApps`、`managedApps`、`none` です。|
+|allowedOutboundDataTransferDestinations|[managedAppDataTransferLevel](../resources/intune_mam_managedappdatatransferlevel.md)|データの転送が許可された宛先。[managedAppProtection](../resources/intune_mam_managedappprotection.md) から継承されます。指定できる値は、`allApps`、`managedApps`、`none` です。|
 |organizationalCredentialsRequired|ブール値|アプリを使用するために組織の資格情報が必要かどうかを示します。 [managedAppProtection](../resources/intune_mam_managedappprotection.md) から継承します|
-|allowedOutboundClipboardSharingLevel|[managedAppClipboardSharingLevel](../resources/intune_mam_managedappclipboardsharinglevel.md)|管理対象デバイスで、アプリ間でクリップボードを共有できるレベル。 [managedAppProtection](../resources/intune_mam_managedappprotection.md) から継承します 指定できる値は、、、、 です。`allApps` `managedAppsWithPasteIn` `managedApps` `blocked`|
+|allowedOutboundClipboardSharingLevel|[managedAppClipboardSharingLevel](../resources/intune_mam_managedappclipboardsharinglevel.md)|管理対象デバイスで、アプリ間でクリップボードを共有できるレベル。[managedAppProtection](../resources/intune_mam_managedappprotection.md) から継承されます。指定できる値は、`allApps`、`managedAppsWithPasteIn`、`managedApps`、`blocked` です。|
 |dataBackupBlocked|ブール値|管理対象アプリのデータのバックアップがブロックされるかどうかを示します。 [managedAppProtection](../resources/intune_mam_managedappprotection.md) から継承します|
 |deviceComplianceRequired|ブール値|デバイスの準拠が必要かどうかを示します。 [managedAppProtection](../resources/intune_mam_managedappprotection.md) から継承します|
 |managedBrowserToOpenLinksRequired|ブール値|管理対象ブラウザー アプリでインターネット リンクを開く必要があるかどうかを示します。 [managedAppProtection](../resources/intune_mam_managedappprotection.md) から継承します|
 |saveAsBlocked|ブール値|ユーザーが保護されたファイルのコピーを保存するために、[名前を付けて保存] メニュー項目を使用できるかどうかを示します。 [managedAppProtection](../resources/intune_mam_managedappprotection.md) から継承します|
 |periodOfflineBeforeWipeIsEnforced|期間|アプリがインターネットから切断されている状態を維持できる時間数。この時間を過ぎると管理対象データはすべて消去されます。 [managedAppProtection](../resources/intune_mam_managedappprotection.md) から継承します|
 |pinRequired|ブール値|アプリ レベルの pin が必要かどうかを示します。 [managedAppProtection](../resources/intune_mam_managedappprotection.md) から継承します|
-|maximumPinRetries|Int32|正しくない pin の再試行の最大回数。この回数を超えると管理対象アプリが消去されます。 [managedAppProtection](../resources/intune_mam_managedappprotection.md) から継承します|
+|maximumPinRetries|Int32|正しくない pin の再試行の最大回数。この回数を超えると管理対象アプリがブロックまたは消去されます。 [managedAppProtection](../resources/intune_mam_managedappprotection.md) から継承します|
 |simplePinBlocked|ブール値|simplePin がブロックされるかどうかを示します。 [managedAppProtection](../resources/intune_mam_managedappprotection.md) から継承します|
 |minimumPinLength|Int32|PinRequired が True に設定されている場合の、アプリ レベルの pin に必要な最小限の pin の長さ ([managedAppProtection](../resources/intune_mam_managedappprotection.md) から継承)|
-|pinCharacterSet|[managedAppPinCharacterSet](../resources/intune_mam_managedapppincharacterset.md)|PinRequired が True に設定されている場合に、アプリ レベルの pin に使用できる文字セット。 [managedAppProtection](../resources/intune_mam_managedappprotection.md) から継承します 指定できる値は、、 です。`numeric` `alphanumericAndSymbol`|
+|pinCharacterSet|[managedAppPinCharacterSet](../resources/intune_mam_managedapppincharacterset.md)|PinRequired が True に設定されている場合に、アプリ レベルの pin に使用できる文字セット。[managedAppProtection](../resources/intune_mam_managedappprotection.md) から継承されます。指定できる値は、`numeric`、`alphanumericAndSymbol` です。|
 |periodBeforePinReset|期間|PinRequired が True に設定されている場合、この TimePeriod を過ぎると全レベルの pin を再設定する必要があります。 [managedAppProtection](../resources/intune_mam_managedappprotection.md) から継承します|
-|allowedDataStorageLocations|[managedAppDataStorageLocation 列挙型](../resources/intune_mam_managedappdatastoragelocation.md) のコレクション|ユーザーが管理対象データを格納できるデータの保存場所。 [managedAppProtection](../resources/intune_mam_managedappprotection.md) から継承します|
+|allowedDataStorageLocations|[managedAppDataStorageLocation](../resources/intune_mam_managedappdatastoragelocation.md) コレクション|ユーザーが管理対象データを格納できるデータの保存場所。 [managedAppProtection](../resources/intune_mam_managedappprotection.md) から継承します|
 |contactSyncBlocked|ブール値|連絡先をユーザー デバイスに同期できるかどうかを示します。 [managedAppProtection](../resources/intune_mam_managedappprotection.md) から継承します|
 |printBlocked|ブール値|管理対象アプリからの印刷を許可するかどうかを示します。 [managedAppProtection](../resources/intune_mam_managedappprotection.md) から継承します|
 |fingerprintBlocked|ブール値|PinRequired が True に設定されている場合に、pin の代わりに指紋リーダーの使用を許可するかどうかを示します。 [managedAppProtection](../resources/intune_mam_managedappprotection.md) から継承します|
@@ -69,8 +69,8 @@ Android デバイス上の特定のセキュリティ グループおよびア�
 以下は、リソースの JSON 表記です。
 <!--{
   "blockType": "resource",
-  "keyProperty": "id",
   "baseType": "microsoft.graph.targetedManagedAppProtection",
+  "keyProperty": "id",
   "@odata.type": "microsoft.graph.androidManagedAppProtection"
 }-->
 ``` json
@@ -119,6 +119,11 @@ Android デバイス上の特定のセキュリティ グループおよびア�
   "minimumWarningPatchVersion": "String"
 }
 ```
+
+
+
+
+
 
 
 

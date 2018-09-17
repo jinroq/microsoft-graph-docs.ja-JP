@@ -7,14 +7,14 @@
 ## <a name="methods"></a>メソッド
 |メソッド|戻り値の型|説明|
 |:---|:---|:---|
-|[リストの deviceCategories](../api/intune_shared_devicecategory_list.md) コレクション|[deviceCategory](../resources/intune_shared_devicecategory.md) オブジェクトのプロパティとリレーションシップをリストします。|
-|[deviceCategory の取得](../api/intune_shared_devicecategory_get.md)|[deviceCategory](../resources/intune_shared_devicecategory.md) オブジェクトのプロパティとリレーションシップを読み取ります。|
-|[deviceCategory の作成](../api/intune_shared_devicecategory_create.md)|新しい [deviceCategory](../resources/intune_shared_devicecategory.md) オブジェクトを作成します。|
-|[DeviceCategory を削除](../api/intune_shared_devicecategory_delete.md)。|
-|[deviceCategory の更新](../api/intune_shared_devicecategory_update.md)|[deviceCategory](../resources/intune_shared_devicecategory.md) オブジェクトのプロパティを更新します。|
+|[deviceCategories をリストする](../api/intune_shared_devicecategory_list.md) オブジェクトです。|
+|[deviceCategory を取得する](../api/intune_shared_devicecategory_get.md) オブジェクトです。|
+|[DeviceCategory を作成する](../api/intune_shared_devicecategory_create.md) オブジェクトです。|
+|[DeviceCategory を削除する](../api/intune_shared_devicecategory_delete.md)。|
+|[deviceCategory を更新する](../api/intune_shared_devicecategory_update.md) オブジェクトです。|
 
 ## <a name="properties"></a>プロパティ
-|プロパティ|タイプ|説明|
+|プロパティ|型|説明|
 |:---|:---|:---|
 |ID|文字列|デバイス カテゴリの一意識別子。 読み取り専用です。|
 |**採用**|

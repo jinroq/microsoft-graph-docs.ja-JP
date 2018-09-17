@@ -25,11 +25,11 @@ ManagedAppRegistration リソースは、組織のメンバーに使用される
 |deviceType|文字列|ホスト デバイスの種類 ([managedAppRegistration](../resources/intune_mam_managedappregistration.md) から継承)|
 |deviceTag|文字列|アプリ管理 SDK が生成したタグ。同じデバイスでホストされているアプリの関連付けに役立ちます。 あらゆる状況でのアプリの関連付けを保証するものではありません。 [managedAppRegistration](../resources/intune_mam_managedappregistration.md) から継承します|
 |deviceName|文字列|ホスト デバイスの名前 ([managedAppRegistration](../resources/intune_mam_managedappregistration.md) から継承)|
-|flaggedReasons|[managedAppFlaggedReason 列挙型](../resources/intune_mam_managedappflaggedreason.md) のコレクション|アプリ登録にフラグが設定された、0 個以上の理由。 例: ルートのデバイス上で実行されているアプリ ([managedAppRegistration](../resources/intune_mam_managedappregistration.md) から継承)|
+|flaggedReasons|[managedAppFlaggedReason](../resources/intune_mam_managedappflaggedreason.md) コレクション|アプリ登録にフラグが設定された、0 個以上の理由。 例: ルートのデバイス上で実行されているアプリ ([managedAppRegistration](../resources/intune_mam_managedappregistration.md) から継承)|
 |userId|文字列|このアプリの登録が属するユーザー ID。 [managedAppRegistration](../resources/intune_mam_managedappregistration.md) から継承します|
 |appIdentifier|[mobileAppIdentifier](../resources/intune_mam_mobileappidentifier.md)|アプリ パッケージの識別子 ([managedAppRegistration](../resources/intune_mam_managedappregistration.md) から継承)|
 |ID|文字列|エンティティのキー。 [managedAppRegistration](../resources/intune_mam_managedappregistration.md) から継承します|
-|version|文字列|エンティティのバージョン。 [managedAppRegistration](../resources/intune_mam_managedappregistration.md) から継承します|
+|バージョン|文字列|エンティティのバージョン。 [managedAppRegistration](../resources/intune_mam_managedappregistration.md) から継承します|
 
 ## <a name="relationships"></a>リレーションシップ
 |リレーションシップ|型|説明|
@@ -40,13 +40,12 @@ ManagedAppRegistration リソースは、組織のメンバーに使用される
 
 ## <a name="json-representation"></a>JSON 表記
 以下は、リソースの JSON 表記です。
-<!-- {
+<!--{
   "blockType": "resource",
-  "keyProperty": "id",
   "baseType": "microsoft.graph.managedAppRegistration",
+  "keyProperty": "id",
   "@odata.type": "microsoft.graph.androidManagedAppRegistration"
-}
--->
+}-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.androidManagedAppRegistration",
@@ -63,13 +62,18 @@ ManagedAppRegistration リソースは、組織のメンバーに使用される
   ],
   "userId": "String",
   "appIdentifier": {
-    "@odata.type": "microsoft.graph.mobileAppIdentifier",
+    "@odata.type": "microsoft.graph.androidMobileAppIdentifier",
     "packageId": "String"
   },
   "id": "String (identifier)",
   "version": "String"
 }
 ```
+
+
+
+
+
 
 
 

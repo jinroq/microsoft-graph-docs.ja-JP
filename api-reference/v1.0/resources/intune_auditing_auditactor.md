@@ -11,9 +11,9 @@
 |applicationId|文字列型 (String)|AAD アプリケーション ID。|
 |applicationDisplayName|文字列型 (String)|アプリケーションの名前。|
 |userPrincipalName|文字列型 (String)|ユーザー プリンシパル名 (UPN)。|
-|servicePrincipalName|文字列型 (String)|サービス プリンシパル名 (SPN)。|
-|ipAddress|文字列型 (String)|IPAddress。|
-|userId|文字列型 (String)|ユーザー ID。|
+|servicePrincipalName|文字列|サービス プリンシパル名 (SPN)。|
+|ipAddress|文字列|IPAddress。|
+|userId|文字列|ユーザー ID。|
 
 ## <a name="relationships"></a>リレーションシップ
 なし
@@ -38,6 +38,11 @@
   "userId": "String"
 }
 ```
+
+
+
+
+
 
 
 

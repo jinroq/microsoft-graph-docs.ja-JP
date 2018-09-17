@@ -2,7 +2,7 @@
 
 > **注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
 
-[managedDeviceMobileAppConfigurationDeviceStatus](../resources/intune_apps_manageddevicemobileappconfigurationdevicestatus.md) オブジェクトのプロパティとリレーションシップのリストを取得します。
+[managedDeviceMobileAppConfigurationDeviceStatus](../resources/intune_apps_manageddevicemobileappconfigurationdevicestatus.md) オブジェクトのプロパティとリレーションシップのリストをリストします。
 ## <a name="prerequisites"></a>前提条件
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](../../../concepts/permissions_reference.md)」を参照してください。
 
@@ -24,14 +24,14 @@ GET /deviceAppManagement/mobileAppConfigurations/{managedDeviceMobileAppConfigur
 ## <a name="request-headers"></a>要求ヘッダー
 |ヘッダー|値|
 |:---|:---|
-|Authorization|ベアラー &lt;トークン&gt; が必須。|
-|Accept|application/json|
+|承認|ベアラー &lt;トークン&gt; が必須。|
+|承諾する|アプリケーションまたは JSON|
 
 ## <a name="request-body"></a>要求本文
 このメソッドには、要求本文を指定しません。
 
 ## <a name="response"></a>応答
-成功した場合、このメソッドは応答コード `200 OK` と、応答本文として [managedDeviceMobileAppConfigurationDeviceStatus](../resources/intune_apps_manageddevicemobileappconfigurationdevicestatus.md) オブジェクトのコレクションを返します。
+成功した場合、このメソッドは `200 OK` 応答コードと、応答本文で [androidWorkProfileGeneralDeviceConfiguration](../resources/intune_apps_manageddevicemobileappconfigurationdevicestatus.md) オブジェクトのコレクションを返します。
 
 ## <a name="example"></a>例
 ### <a name="request"></a>要求
@@ -63,6 +63,11 @@ Content-Length: 563
   ]
 }
 ```
+
+
+
+
+
 
 
 

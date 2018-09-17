@@ -25,7 +25,7 @@ POST /deviceManagement/deviceConfigurations
 |ヘッダー|値|
 |:---|:---|
 |承認|ベアラー &lt;トークン&gt; が必須。|
-|承諾|application/json|
+|承諾|アプリケーションまたは json|
 
 ## <a name="request-body"></a>要求本文
 要求本文で、sharedPCConfiguration オブジェクト用の JSON 表記を指定します。
@@ -41,13 +41,13 @@ POST /deviceManagement/deviceConfigurations
 |displayName|文字列|デバイス構成について管理者が指定した名前。 [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md) から継承します|
 |バージョン|Int32|デバイス構成のバージョン。 [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md) から継承します|
 |accountManagerPolicy|[sharedPCAccountManagerPolicy](../resources/intune_deviceconfig_sharedpcaccountmanagerpolicy.md)|共有の PC 上でアカウントを管理する方法を指定します。 disableAccountManager が false の場合にのみ適用されます。|
-|allowedAccounts|[sharedPCAllowedAccountType](../resources/intune_deviceconfig_sharedpcallowedaccounttype.md)|共有の PC で使用できるアカウントの種類を示します。 可能な値は、`guest`、`domain` です。|
+|allowedAccounts|[sharedPCAllowedAccountType](../resources/intune_deviceconfig_sharedpcallowedaccounttype.md)|共有の PC で使用できるアカウントの種類を示します。使用可能な値は `guest`、 `domain`です。|
 |allowLocalStorage|ブール値|共有の PC でローカル ストレージを許可するかどうかを指定します。|
 |disableAccountManager|ブール値|共有 PC モードのアカウント マネージャーを無効にします。|
 |disableEduPolicies|ブール値|既定の共有 PC 教育環境ポリシーを無効にするかどうかを指定します。 Windows 10 RS2 以降では、このポリシーは Enabled を true に設定しなくても適用されます。|
 |disablePowerPolicies|ブール値|既定の共有 PC 電源ポリシーを無効にするかどうかを指定します。|
 |disableSignInOnResume|ブール値|デバイスがスリープ モードから再開するたびにサインインを求める設定を無効にします。|
-|enabled|ブール値|共有 PC モードを有効にし、共有 PC のポリシーを適用します。|
+|有効化済み|ブール値|共有 PC モードを有効にし、共有 PC のポリシーを適用します。|
 |idleTimeBeforeSleepInSeconds|Int32|PC がスリープ状態になるまでにデバイスがアイドル状態を続ける時間を秒単位で指定します。 この値を 0 に設定すると、スリープ タイムアウトは発生しなくなります。|
 |kioskAppDisplayName|文字列|SetKioskAppUserModelId で指定されたアプリを起動するサインイン画面に表示されるアカウントの表示テキストを指定します。 KioskAppUserModelId が設定されている場合にのみ適用されます。|
 |kioskAppUserModelId|文字列|割り当てられたアクセスで使用するアプリのアプリケーション ユーザー モデル ID を指定します。|
@@ -128,6 +128,11 @@ Content-Length: 1032
   "maintenanceStartTime": "11:59:24.7240000"
 }
 ```
+
+
+
+
+
 
 
 

@@ -25,7 +25,7 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}
 |ヘッダー|値|
 |:---|:---|
 |承認|ベアラー &lt;トークン&gt; が必須。|
-|承諾|application/json|
+|承諾|アプリケーションまたは JSON|
 
 ## <a name="request-body"></a>要求本文
 要求本文で、[windows81GeneralConfiguration](../resources/intune_deviceconfig_windows81generalconfiguration.md) オブジェクトの JSON 表記を指定します。
@@ -34,45 +34,45 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}
 
 |プロパティ|タイプ|説明|
 |:---|:---|:---|
-|id|文字列|エンティティのキー。 [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md) から継承します|
+|ID|文字列|エンティティのキー。 [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md) から継承します|
 |lastModifiedDateTime|DateTimeOffset|オブジェクトが最後に変更された DateTime。 [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md) から継承します|
 |createdDateTime|DateTimeOffset|オブジェクトが作成された DateTime。 [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md) から継承します|
-|description|String|デバイス構成について管理者が提供した説明。 [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md) から継承します|
-|displayName|String|デバイス構成について管理者が指定した名前。 [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md) から継承します|
-|version|Int32|デバイス構成のバージョン。 [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md) から継承します|
-|accountsBlockAddingNonMicrosoftAccountEmail|Boolean|Microsoft アカウントに関連付けられていない電子メール アカウントをユーザーがデバイスに追加できないようにするかどうかを示します。|
-|applyOnlyToWindows81|Boolean|このポリシーを Windows 8.1 にのみ適用するかどうかを示す値。 このプロパティは読み取り専用です。|
-|browserBlockAutofill|Boolean|自動入力を禁止するかどうかを示します。|
-|browserBlockAutomaticDetectionOfIntranetSites|Boolean|イントラネット サイトの自動検出をブロックするかどうかを示します。|
-|browserBlockEnterpriseModeAccess|Boolean|エンタープライズ モードのアクセスを禁止するかどうかを示します。|
-|browserBlockJavaScript|Boolean|ユーザーが JavaScript を使用することを禁止するかどうかを示します。|
-|browserBlockPlugins|Boolean|プラグインを禁止するかどうかを示します。|
-|browserBlockPopups|Boolean|ポップアップをブロックするかどうかを示します。|
-|browserBlockSendingDoNotTrackHeader|Boolean|ユーザーがトラッキング拒否ヘッダーを送信することを禁止するかどうかを示します。|
-|browserBlockSingleWordEntryOnIntranetSites|Boolean|イントラネット サイトでの 1 単語のエントリを禁止するかどうかを示します。|
-|browserRequireSmartScreen|Boolean|スマート スクリーン フィルターの使用をユーザーに要求するかどうかを示します。|
-|browserEnterpriseModeSiteListLocation|String|エンタープライズ モードのサイト リストの場所。 ローカル ファイル、ローカル ネットワーク、http の場所が該当します。|
-|browserInternetSecurityLevel|[internetSiteSecurityLevel](../resources/intune_deviceconfig_internetsitesecuritylevel.md)|インターネット セキュリティ レベル。 可能な値は、`userDefined`、`medium`、`mediumHigh`、`high` です。|
-|browserIntranetSecurityLevel|[siteSecurityLevel](../resources/intune_deviceconfig_sitesecuritylevel.md)|イントラネット セキュリティ レベル。 可能な値は、`userDefined`、`low`、`mediumLow`、`medium`、`mediumHigh`、`high` です。|
-|browserLoggingReportLocation|String|ログ レポートの場所。|
-|browserRequireHighSecurityForRestrictedSites|Boolean|制限付きサイトに対する高度なセキュリティを必要とするかどうかを示します。|
-|browserRequireFirewall|Boolean|ファイアウォールが必要かどうかを示します。|
-|browserRequireFraudWarning|Boolean|不正行為の警告を必要とするかどうかを示します。|
-|browserTrustedSitesSecurityLevel|[siteSecurityLevel](../resources/intune_deviceconfig_sitesecuritylevel.md)|信頼済みサイトのセキュリティ レベル。 可能な値は、`userDefined`、`low`、`mediumLow`、`medium`、`mediumHigh`、`high` です。|
-|cellularBlockDataRoaming|Boolean|データ ローミングをブロックするかどうかを示します。|
-|diagnosticsBlockDataSubmission|Boolean|診断データの送信をブロックするかどうかを示します。|
-|passwordBlockPicturePasswordAndPin|Boolean|ユーザーがピクチャ パスワードおよび暗証番号 (PIN) を使用することを禁止するかどうかを示します。|
+|説明|文字列|デバイス構成について管理者が提供した説明。 [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md) から継承します|
+|displayName|文字列|デバイス構成について管理者が指定した名前。 [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md) から継承します|
+|バージョン|Int32|デバイス構成のバージョン。 [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md) から継承します|
+|accountsBlockAddingNonMicrosoftAccountEmail|ブール値|Microsoft アカウントに関連付けられていない電子メール アカウントをユーザーがデバイスに追加できないようにするかどうかを示します。|
+|applyOnlyToWindows81|ブール値|このポリシーを Windows 8.1 にのみ適用するかどうかを示す値。 このプロパティは読み取り専用です。|
+|browserBlockAutofill|ブール値|自動入力を禁止するかどうかを示します。|
+|browserBlockAutomaticDetectionOfIntranetSites|ブール値|イントラネット サイトの自動検出をブロックするかどうかを示します。|
+|browserBlockEnterpriseModeAccess|ブール値|エンタープライズ モードのアクセスを禁止するかどうかを示します。|
+|browserBlockJavaScript|ブール値|ユーザーが JavaScript を使用することを禁止するかどうかを示します。|
+|browserBlockPlugins|ブール値|プラグインを禁止するかどうかを示します。|
+|browserBlockPopups|ブール値|ポップアップをブロックするかどうかを示します。|
+|browserBlockSendingDoNotTrackHeader|ブール値|ユーザーがトラッキング拒否ヘッダーを送信することを禁止するかどうかを示します。|
+|browserBlockSingleWordEntryOnIntranetSites|ブール値|イントラネット サイトでの 1 単語のエントリを禁止するかどうかを示します。|
+|browserRequireSmartScreen|ブール値|スマート スクリーン フィルターの使用をユーザーに要求するかどうかを示します。|
+|browserEnterpriseModeSiteListLocation|文字列|エンタープライズ モードのサイト リストの場所。 ローカル ファイル、ローカル ネットワーク、http の場所が該当します。|
+|browserInternetSecurityLevel|[internetSiteSecurityLevel](../resources/intune_deviceconfig_internetsitesecuritylevel.md)|インターネットのセキュリティ レベル。使用可能な値は `userDefined`、 `medium`、 `mediumHigh`、 `high`です。|
+|browserIntranetSecurityLevel|[siteSecurityLevel](../resources/intune_deviceconfig_sitesecuritylevel.md)|イントラネットのセキュリティ レベル。使用可能な値は `userDefined`、 `low`、 `mediumLow`、 `medium`、 `mediumHigh`、 `high`です。|
+|browserLoggingReportLocation|文字列|ログ レポートの場所。|
+|browserRequireHighSecurityForRestrictedSites|ブール値|制限付きサイトに対する高度なセキュリティを必要とするかどうかを示します。|
+|browserRequireFirewall|ブール値|ファイアウォールが必要かどうかを示します。|
+|browserRequireFraudWarning|ブール値|不正行為の警告を必要とするかどうかを示します。|
+|browserTrustedSitesSecurityLevel|[siteSecurityLevel](../resources/intune_deviceconfig_sitesecuritylevel.md)|信頼済みサイトのセキュリティ レベル。使用可能な値は `userDefined`、 `low`、 `mediumLow`、 `medium`、 `mediumHigh`、 `high`です。|
+|cellularBlockDataRoaming|ブール値|データ ローミングをブロックするかどうかを示します。|
+|diagnosticsBlockDataSubmission|ブール値|診断データの送信をブロックするかどうかを示します。|
+|passwordBlockPicturePasswordAndPin|ブール値|ユーザーがピクチャ パスワードおよび暗証番号 (PIN) を使用することを禁止するかどうかを示します。|
 |passwordExpirationDays|Int32|パスワードの有効期限 (日数)。|
 |passwordMinimumLength|Int32|パスワードの最小文字数。|
 |passwordMinutesOfInactivityBeforeScreenTimeout|Int32|画面がタイムアウトになるまでの非アクティブ時間 (分)。|
 |passwordMinimumCharacterSetCount|Int32|パスワードに必要な文字セットの数。|
 |passwordPreviousPasswordBlockCount|Int32|再使用を禁止する、以前のパスワードの数。 有効な値は 0 から 24 までです|
-|passwordRequiredType|[requiredPasswordType](../resources/intune_deviceconfig_requiredpasswordtype.md)|必要なパスワードの種類。 可能な値は、`deviceDefault`、`alphanumeric`、`numeric` です。|
+|passwordRequiredType|[requiredPasswordType](../resources/intune_deviceconfig_requiredpasswordtype.md)|必要なパスワードの種類です。使用可能な値は`deviceDefault`、`alphanumeric`、`numeric` です。|
 |passwordSignInFailureCountBeforeFactoryReset|Int32|出荷時の設定にリセットされるサインインの失敗回数。|
-|storageRequireDeviceEncryption|Boolean|モバイル デバイスでの暗号化が必要かどうかを示します。|
-|updatesRequireAutomaticUpdates|Boolean|自動更新が必要かどうかを示します。|
-|userAccountControlSettings|[windowsUserAccountControlSettings](../resources/intune_deviceconfig_windowsuseraccountcontrolsettings.md)|ユーザー アカウント制御の設定。 可能な値は、`userDefined`、`alwaysNotify`、`notifyOnAppChanges`、`notifyOnAppChangesWithoutDimming`、`neverNotify` です。|
-|workFoldersUrl|String|作業フォルダーの URL。|
+|storageRequireDeviceEncryption|ブール値|モバイル デバイスでの暗号化が必要かどうかを示します。|
+|updatesRequireAutomaticUpdates|ブール値|自動更新が必要かどうかを示します。|
+|userAccountControlSettings|[windowsUserAccountControlSettings](../resources/intune_deviceconfig_windowsuseraccountcontrolsettings.md)|ユーザー アカウント制御の設定です。使用可能な値は `userDefined`、 `alwaysNotify`、 `notifyOnAppChanges`、 `notifyOnAppChangesWithoutDimming`、 `neverNotify`です。|
+|workFoldersUrl|文字列|作業フォルダーの URL。|
 
 
 
@@ -178,6 +178,11 @@ Content-Length: 1865
   "workFoldersUrl": "https://example.com/workFoldersUrl/"
 }
 ```
+
+
+
+
+
 
 
 

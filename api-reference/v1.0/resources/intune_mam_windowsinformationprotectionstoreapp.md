@@ -21,7 +21,6 @@ Windows 情報保護のストア アプリ
 以下は、リソースの JSON 表記です。
 <!--{
   "blockType": "resource",
-  "baseType": "microsoft.graph.windowsInformationProtectionApp",
   "@odata.type": "microsoft.graph.windowsInformationProtectionStoreApp"
 }-->
 ``` json
@@ -34,6 +33,11 @@ Windows 情報保護のストア アプリ
   "denied": true
 }
 ```
+
+
+
+
+
 
 
 

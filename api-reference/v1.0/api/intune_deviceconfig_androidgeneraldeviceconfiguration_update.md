@@ -25,7 +25,7 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}
 |ヘッダー|値|
 |:---|:---|
 |承認|ベアラー &lt;トークン&gt; が必須。|
-|承諾|application/json|
+|承諾|アプリケーションまたは json|
 
 ## <a name="request-body"></a>要求本文
 要求本文で、[androidGeneralDeviceConfiguration](../resources/intune_deviceconfig_androidgeneraldeviceconfiguration.md) オブジェクトの JSON 表記を指定します。
@@ -34,12 +34,12 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}
 
 |プロパティ|タイプ|説明|
 |:---|:---|:---|
-|id|文字列|エンティティのキー。 [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md) から継承します|
+|ID|文字列|エンティティのキー。 [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md) から継承します|
 |lastModifiedDateTime|DateTimeOffset|オブジェクトが最後に変更された DateTime。 [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md) から継承します|
 |createdDateTime|DateTimeOffset|オブジェクトが作成された DateTime。 [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md) から継承します|
 |説明|文字列|デバイス構成について管理者が提供した説明。 [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md) から継承します|
 |displayName|文字列|デバイス構成について管理者が指定した名前。 [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md) から継承します|
-|version|Int32|デバイス構成のバージョン。 [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md) から継承します|
+|バージョン|Int32|デバイス構成のバージョン。 [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md) から継承します|
 |appsBlockClipboardSharing|ブール値|アプリケーション間でコピー/貼り付けを行うためのクリップボードの共有をブロックするかどうかを示します。|
 |appsBlockCopyPaste|ブール値|アプリケーション内でのコピー/貼り付けをブロックするかどうかを示します。|
 |appsBlockYouTube|ブール値|YouTube アプリをブロックするかどうかを示します。|
@@ -50,7 +50,7 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}
 |cellularBlockVoiceRoaming|ブール値|音声通話ローミングをブロックするかどうかを示します。|
 |cellularBlockWiFiTethering|ブール値|Wi-Fi テザリングの同期をブロックするかどうかを示します。|
 |compliantAppsList|[appListItem](../resources/intune_deviceconfig_applistitem.md) コレクション|コンプライアンス内のアプリのリスト (CompliantAppListType によって制御される、許可リストまたは禁止リスト)。 このコレクションには、最大で 10000 個の要素を含めることができます。|
-|compliantAppListType|[appListType](../resources/intune_deviceconfig_applisttype.md)|CompliantAppsList 内にあるリストの種類。 可能な値は、 `none`、`appsInListCompliant`、`appsNotInListCompliant` です。|
+|compliantAppListType|[appListType](../resources/intune_deviceconfig_applisttype.md)|CompliantAppsList 内にあるリストの種類。 可能な値は`none`, `appsInListCompliant`, `appsNotInListCompliant` です。|
 |diagnosticDataBlockSubmission|ブール値|診断データの送信をブロックするかどうかを示します。|
 |locationServicesBlocked|ブール値|位置情報サービスをブロックするかどうかを示します。|
 |googleAccountBlockAutoSync|ブール値|Google アカウントの自動同期をブロックするかどうかを示します。|
@@ -66,7 +66,7 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}
 |passwordMinutesOfInactivityBeforeScreenTimeout|Int32|画面がタイムアウトになるまでの非アクティブ時間 (分)。|
 |passwordPreviousPasswordBlockCount|Int32|ブロックする、以前のパスワードの数。 有効な値は 0 から 24 までです|
 |passwordSignInFailureCountBeforeFactoryReset|Int32|出荷時の設定にリセットされるまでの、失敗が許可されるサインインの回数。 有効な値は 4 から 11 までです|
-|passwordRequiredType|[androidRequiredPasswordType](../resources/intune_deviceconfig_androidrequiredpasswordtype.md)|必要なパスワードの種類。 指定できる値は、`deviceDefault`、`alphabetic`、`alphanumeric`、`alphanumericWithSymbols`、`lowSecurityBiometric`、`numeric`、`numericComplex`、`any` です。|
+|passwordRequiredType|[androidRequiredPasswordType](../resources/intune_deviceconfig_androidrequiredpasswordtype.md)|必要なパスワードの種類です。使用可能な値: `deviceDefault`、 `alphabetic`、 `alphanumeric`、 `alphanumericWithSymbols`、 `lowSecurityBiometric`、 `numeric`、 `numericComplex`、 `any`。|
 |passwordRequired|ブール値|パスワードを要求するかどうかを指定します。|
 |powerOffBlocked|ブール値|デバイスの電源オフをブロックするかどうかを示します。|
 |factoryResetBlocked|ブール値|ユーザーが出荷時の設定にリセットできないようにするかどうかを示します。|
@@ -82,7 +82,7 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}
 |webBrowserBlockAutofill|ブール値|Web ブラウザーの自動塗りつぶし機能をブロックするかどうかを示します。|
 |webBrowserBlockJavaScript|ブール値|Web ブラウザー内の JavaScript をブロックするかどうかを示します。|
 |webBrowserBlocked|ブール値|Web ブラウザーをブロックするかどうかを示します。|
-|webBrowserCookieSettings|[webBrowserCookieSettings](../resources/intune_deviceconfig_webbrowsercookiesettings.md)|Web ブラウザー内の Cookie の設定。 可能な値は、`browserDefault`、`blockAlways`、`allowCurrentWebSite`、`allowFromWebsitesVisited`、`allowAlways` です。|
+|webBrowserCookieSettings|[webBrowserCookieSettings](../resources/intune_deviceconfig_webbrowsercookiesettings.md)|Cookie settings within the web browser. The possible values are: `browserDefault`, `blockAlways`, `allowCurrentWebSite`, `allowFromWebsitesVisited`, `allowAlways`.|
 |wiFiBlocked|ブール値|Wi-Fi の同期をブロックするかどうかを示します。|
 |appsInstallAllowList|[appListItem](../resources/intune_deviceconfig_applistitem.md) コレクション|KNOX デバイス上にインストールできるアプリのリスト。 このコレクションには、最大で 500 個の要素を含めることができます。|
 |appsLaunchBlockList|[appListItem](../resources/intune_deviceconfig_applistitem.md) コレクション|KNOX デバイス上での起動がブロックされているアプリのリスト。 このコレクションには、最大で 500 個の要素を含めることができます。|
@@ -303,6 +303,11 @@ Content-Length: 3205
   "securityRequireVerifyApps": true
 }
 ```
+
+
+
+
+
 
 
 

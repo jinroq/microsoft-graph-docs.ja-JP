@@ -28,18 +28,18 @@ POST /deviceAppManagement/mobileAppConfigurations/{managedDeviceMobileAppConfigu
 |承諾|アプリケーションまたは json|
 
 ## <a name="request-body"></a>要求本文
-要求本文で、windows10GeneralConfiguration オブジェクトの JSON 表記を指定します。
+要求本文で、managedDeviceMobileAppConfigurationDeviceStatus オブジェクトの JSON 表記を指定します。
 
 次の表に、managedDeviceMobileAppConfigurationDeviceStatus の作成時に必要なプロパティを示します。
 
 |プロパティ|タイプ|説明|
 |:---|:---|:---|
-|ID|文字列|エンティティのキー。|
+|id|文字列|エンティティのキー。|
 |deviceDisplayName|文字列|DevicePolicyStatus のデバイス名。|
 |userName|文字列|レポートされているユーザー名|
 |deviceModel|文字列|レポートされているデバイス モデル|
 |complianceGracePeriodExpirationDateTime|DateTimeOffset|デバイス コンプライアンスの猶予期間が過ぎる DateTime|
-|状態|[complianceStatus](../resources/intune_shared_compliancestatus.md)|ポリシー レポートのコンプライアンスの状態。 指定できる値は、`unknown`、`notApplicable`、`compliant`、`remediated`、`nonCompliant`、`error`、`conflict` です。|
+|status|[complianceStatus](../resources/intune_shared_compliancestatus.md)|デバイスの状態を遵守します。使用可能な値: `unknown`、 `notApplicable`、`compliant`、`remediated`、`nonCompliant`、`error`、`conflict`、`notAssigned`。|
 |lastReportedDateTime|DateTimeOffset|ポリシー レポートの最終変更日時。|
 |userPrincipalName|文字列|UserPrincipalName。|
 
@@ -87,6 +87,11 @@ Content-Length: 494
   "userPrincipalName": "User Principal Name value"
 }
 ```
+
+
+
+
+
 
 
 

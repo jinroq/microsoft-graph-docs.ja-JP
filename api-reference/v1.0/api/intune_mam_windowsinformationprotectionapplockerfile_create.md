@@ -1,6 +1,6 @@
 # <a name="create-windowsinformationprotectionapplockerfile"></a>windowsInformationProtectionAppLockerFile の作成
 
-> **注:**Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
+> **注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
 
 新しい [windowsInformationProtectionAppLockerFile](../resources/intune_mam_windowsinformationprotectionapplockerfile.md) オブジェクトを作成します。
 ## <a name="prerequisites"></a>前提条件
@@ -27,8 +27,8 @@ POST /deviceAppManagement/mdmWindowsInformationProtectionPolicies/{mdmWindowsInf
 ## <a name="request-headers"></a>要求ヘッダー
 |ヘッダー|値|
 |:---|:---|
-|Authorization|ベアラー &lt;トークン&gt; が必要です。|
-|Accept|application/json|
+|承認|ベアラー &lt;トークン&gt; が必須。|
+|承諾する|アプリケーションまたは json|
 
 ## <a name="request-body"></a>要求本文
 要求本文で、windowsInformationProtectionAppLockerFile オブジェクトの JSON 表記を指定します。
@@ -37,11 +37,11 @@ POST /deviceAppManagement/mdmWindowsInformationProtectionPolicies/{mdmWindowsInf
 
 |プロパティ|型|説明|
 |:---|:---|:---|
-|displayName|String|フレンドリ名|
-|fileHash|String|ファイルの SHA256 ハッシュ|
-|file|Binary|バイト配列のファイル|
-|id|String|エンティティのキー。|
-|version|String|エンティティのバージョン。|
+|displayName|文字列|フレンドリ名|
+|fileHash|文字列|ファイルの SHA256 ハッシュ|
+|ファイル|バイナリ型 (Binary)|バイト配列のファイル|
+|ID|文字列|エンティティのキー。|
+|バージョン|文字列|エンティティのバージョン。|
 
 
 
@@ -81,6 +81,11 @@ Content-Length: 260
   "version": "Version value"
 }
 ```
+
+
+
+
+
 
 
 

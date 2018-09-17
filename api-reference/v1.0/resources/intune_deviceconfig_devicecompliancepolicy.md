@@ -34,13 +34,12 @@
 
 ## <a name="json-representation"></a>JSON 表記
 以下は、リソースの JSON 表記です。
-<!-- {
+<!--{
   "blockType": "resource",
   "baseType": "microsoft.graph.entity",
-  "abstract": true,
+  "keyProperty": "id",
   "@odata.type": "microsoft.graph.deviceCompliancePolicy"
-}
--->
+}-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.deviceCompliancePolicy",
@@ -52,6 +51,11 @@
   "version": 1024
 }
 ```
+
+
+
+
+
 
 
 

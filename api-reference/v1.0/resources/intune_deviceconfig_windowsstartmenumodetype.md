@@ -7,8 +7,13 @@
 |メンバー|値|説明|
 |:---|:---|:---|
 |userDefined|0|ユーザー定義。 既定値。|
-|fullScreen|1|フルスクリーン。|
+|fullScreen|1|画面全体|
 |nonFullScreen|2|非フルスクリーン。|
+
+
+
+
+
 
 
 

@@ -8,13 +8,11 @@
 
 | アクセス権&nbsp;型&nbsp;(によって&nbsp;ワークフロー) | アクセス許可 (特権の大きいものから小さいものへ) |
 |:---|:---|
-| 委任 (職場または学校のアカウント) | |
+| 委任 (職場または学校アカウント) | |
 | &nbsp; &nbsp; 監査 | DeviceManagementApps.ReadWrite.All、DeviceManagementApps.Read.All |
 | &nbsp; &nbsp; 会社の用語 | DeviceManagementServiceConfig.ReadWrite.All、DeviceManagementServiceConfig.Read.All |
-| &nbsp; &nbsp; 企業登録 | DeviceManagementServiceConfig.ReadWrite.All、DeviceManagementServiceConfig.Read.All |
 | &nbsp; &nbsp; デバイス構成 | DeviceManagementConfiguration.ReadWrite.All、DeviceManagementConfiguration.Read.All |
 | &nbsp; &nbsp; デバイスの管理 | DeviceManagementManagedDevices.ReadWrite.All、DeviceManagementManagedDevices.Read.All |
-| &nbsp; &nbsp; エンドポイント保護 | DeviceManagementManagedDevices.ReadWrite.All、DeviceManagementManagedDevices.Read.All |
 | &nbsp; &nbsp; 登録 | DeviceManagementServiceConfig.ReadWrite.All、DeviceManagementServiceConfig.Read.All |
 | &nbsp; &nbsp; 通知 | DeviceManagementServiceConfig.ReadWrite.All、DeviceManagementServiceConfig.Read.All |
 | &nbsp; &nbsp; 採用 | DeviceManagementServiceConfig.ReadWrite.All、DeviceManagementServiceConfig.Read.All |
@@ -43,7 +41,7 @@ GET /deviceManagement
 |ヘッダー|値|
 |:---|:---|
 |承認|ベアラー &lt;トークン&gt; が必須。|
-|受諾|application/json|
+|承諾する|アプリケーションまたは json|
 
 ## <a name="request-body"></a>要求本文
 このメソッドには、要求本文を指定しません。

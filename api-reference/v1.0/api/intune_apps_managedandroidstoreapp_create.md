@@ -47,8 +47,8 @@ POST /deviceAppManagement/mobileApps
 |所有者|文字列|アプリの所有者。 [mobileApp](../resources/intune_apps_mobileapp.md) から継承します|
 |開発者|文字列|アプリの開発者。 [mobileApp](../resources/intune_apps_mobileapp.md) から継承します|
 |メモ|文字列|アプリ用のメモ。 [mobileApp](../resources/intune_apps_mobileapp.md) から継承します|
-|publishingState|[mobileAppPublishingState](../resources/intune_apps_mobileapppublishingstate.md)|アプリの発行の状態。 アプリが発行されていない限り、アプリを割り当てることができません。 [mobileApp](../resources/intune_apps_mobileapp.md) から継承します。 指定できる値は、`notPublished`、`processing`、`published`です。|
-|appAvailability|[managedAppAvailability](../resources/intune_apps_managedappavailability.md)|アプリケーションの可用性。 [managedApp](../resources/intune_apps_managedapp.md) から継承します。 指定できる値は、`global`、`lineOfBusiness` です。|
+|publishingState|[mobileAppPublishingState](../resources/intune_apps_mobileapppublishingstate.md)|アプリケーションの発行の状態です。アプリが公開されていない限り、アプリケーションを割り当てることができません。 [MobileApp](../resources/intune_apps_mobileapp.md)から継承されます。使用可能な値は`notPublished`、`processing`、`published`です。|
+|アプリケーション可用性|[アプリケーション可用性の管理](../resources/intune_apps_managedappavailability.md)|アプリケーションの可用性です。[managedApp](../resources/intune_apps_managedapp.md) から継承されます。使用可能な値は `global`、`lineOfBusiness` です。|
 |バージョン|文字列|アプリケーションのバージョン。 [managedApp](../resources/intune_apps_managedapp.md) から継承します|
 |packageId|文字列|アプリのパッケージ ID。|
 |appStoreUrl|文字列|Android の AppStoreUrl。|
@@ -147,6 +147,11 @@ Content-Length: 1188
   }
 }
 ```
+
+
+
+
+
 
 
 

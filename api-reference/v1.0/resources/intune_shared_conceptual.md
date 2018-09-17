@@ -18,6 +18,8 @@
 - [グループの割り当て先](intune_shared_groupassignmenttarget.md)
 - [目的をインストールします](intune_shared_installintent.md)
 - [MIME コンテンツ](intune_shared_mimecontent.md)
+- [レポート](intune_shared_report.md)
+- [レポートのルート](intune_shared_reportroot.md)
 - [UI 状態の生成オプションを保存しました](intune_shared_saveduistategenerationoptions.md)
 - [URI](intune_shared_uri.md)
 - [ユーザー](intune_shared_user.md)

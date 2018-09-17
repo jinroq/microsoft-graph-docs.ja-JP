@@ -6,7 +6,7 @@ termsAndConditions エンティティは、特定の使用条件 (T&C) ポリシ
 ## <a name="methods"></a>メソッド
 |メソッド|戻り値の型|説明|
 |:---|:---|:---|
-|[List termsAndConditionses](../api/intune_companyterms_termsandconditions_list.md)|[termsAndConditions](../resources/intune_companyterms_termsandconditions.md) コレクション|[termsAndConditions](../resources/intune_companyterms_termsandconditions.md) オブジェクトのプロパティとリレーションシップをリストします。|
+|[termsAndConditionses をリストします](../api/intune_companyterms_termsandconditions_list.md)|[termsAndConditions](../resources/intune_companyterms_termsandconditions.md) コレクション|[termsAndConditions](../resources/intune_companyterms_termsandconditions.md) オブジェクトのプロパティとリレーションシップをリストします。|
 |[termsAndConditions の取得](../api/intune_companyterms_termsandconditions_get.md)|[termsAndConditions](../resources/intune_companyterms_termsandconditions.md)|[termsAndConditions](../resources/intune_companyterms_termsandconditions.md) オブジェクトのプロパティとリレーションシップを読み取ります。|
 |[termsAndConditions の作成](../api/intune_companyterms_termsandconditions_create.md)|[termsAndConditions](../resources/intune_companyterms_termsandconditions.md)|新しい [termsAndConditions](../resources/intune_companyterms_termsandconditions.md) オブジェクトを作成します。|
 |[termsAndConditions の削除](../api/intune_companyterms_termsandconditions_delete.md)|なし|[termsAndConditions](../resources/intune_companyterms_termsandconditions.md) を削除します。|
@@ -28,15 +28,15 @@ termsAndConditions エンティティは、特定の使用条件 (T&C) ポリシ
 ## <a name="relationships"></a>リレーションシップ
 |リレーションシップ|型|説明|
 |:---|:---|:---|
-|assignments|[termsAndConditionsAssignment](../resources/intune_companyterms_termsandconditionsassignment.md) コレクション|この T&C ポリシーの割り当てのリスト。|
+|課題|[termsAndConditionsAssignment](../resources/intune_companyterms_termsandconditionsassignment.md) コレクション|この T&C ポリシーの割り当てのリスト。|
 |acceptanceStatuses|[termsAndConditionsAcceptanceStatus](../resources/intune_companyterms_termsandconditionsacceptancestatus.md) コレクション|この T&C ポリシーの承諾状態のリスト。|
 
 ## <a name="json-representation"></a>JSON 表記
 以下は、リソースの JSON 表記です。
 <!--{
   "blockType": "resource",
-  "keyProperty": "id",
   "baseType": "microsoft.graph.entity",
+  "keyProperty": "id",
   "@odata.type": "microsoft.graph.termsAndConditions"
 }-->
 ``` json
@@ -53,6 +53,11 @@ termsAndConditions エンティティは、特定の使用条件 (T&C) ポリシ
   "version": 1024
 }
 ```
+
+
+
+
+
 
 
 

@@ -1,6 +1,6 @@
 # <a name="update-manageddeviceoverview"></a>managedDeviceOverview の更新
 
-> **注:**Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
+> **注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
 
 [managedDeviceOverview](../resources/intune_devices_manageddeviceoverview.md) オブジェクトのプロパティを更新します。
 ## <a name="prerequisites"></a>前提条件
@@ -24,8 +24,8 @@ PATCH /deviceManagement/managedDeviceOverview
 ## <a name="request-headers"></a>要求ヘッダー
 |ヘッダー|値|
 |:---|:---|
-|Authorization|ベアラー &lt;トークン&gt; が必要です。|
-|Accept|application/json|
+|承認|ベアラー &lt;トークン&gt; が必須。|
+|承諾する|アプリケーションまたは json|
 
 ## <a name="request-body"></a>要求本文
 要求本文で、[managedDeviceOverview](../resources/intune_devices_manageddeviceoverview.md) オブジェクトの JSON 表記を指定します。
@@ -34,7 +34,7 @@ PATCH /deviceManagement/managedDeviceOverview
 
 |プロパティ|型|説明|
 |:---|:---|:---|
-|id|String|概要の一意識別子|
+|ID|文字列|概要の一意識別子|
 |enrolledDeviceCount|Int32|登録済みデバイスの合計数。 Intune PC エージェントで管理されている PC デバイスは含まれません|
 |mdmEnrolledCount|Int32|MDM に登録されているデバイスの数|
 |dualEnrolledDeviceCount|Int32|MDM と EAS の両方に登録されているデバイスの数|
@@ -110,6 +110,11 @@ Content-Length: 734
   }
 }
 ```
+
+
+
+
+
 
 
 

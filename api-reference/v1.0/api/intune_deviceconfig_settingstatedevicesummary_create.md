@@ -1,6 +1,6 @@
 # <a name="create-settingstatedevicesummary"></a>settingStateDeviceSummary の作成
 
-> **注:**Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
+> **注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
 
 新しい [settingStateDeviceSummary](../resources/intune_deviceconfig_settingstatedevicesummary.md) オブジェクトを作成します。
 ## <a name="prerequisites"></a>前提条件
@@ -25,8 +25,8 @@ POST /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/devic
 ## <a name="request-headers"></a>要求ヘッダー
 |ヘッダー|値|
 |:---|:---|
-|承認|ベアラー &lt;トークン&gt;が必須。|
-|承諾|application/json|
+|承認|ベアラー &lt;トークン&gt; が必須。|
+|承諾|アプリケーションまたは json|
 
 ## <a name="request-body"></a>要求本文
 要求本文で、settingStateDeviceSummary オブジェクトの JSON 表記を指定します。
@@ -35,9 +35,9 @@ POST /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/devic
 
 |プロパティ|型|説明|
 |:---|:---|:---|
-|id|String|エンティティのキー。|
-|settingName|String|設定の名前|
-|instancePath|String|設定の InstancePath の名前|
+|id|文字列|エンティティのキー。|
+|settingName|文字列|設定の名前|
+|instancePath|文字列|設定の InstancePath の名前|
 |unknownDeviceCount|Int32|設定の不明なデバイスの数|
 |notApplicableDeviceCount|Int32|設定の該当しないデバイスの数|
 |compliantDeviceCount|Int32|設定の準拠しているデバイスの数|
@@ -94,6 +94,11 @@ Content-Length: 409
   "conflictDeviceCount": 3
 }
 ```
+
+
+
+
+
 
 
 

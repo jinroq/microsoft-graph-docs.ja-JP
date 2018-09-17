@@ -1,6 +1,6 @@
 # <a name="create-deviceenrollmentwindowshelloforbusinessconfiguration"></a>deviceEnrollmentWindowsHelloForBusinessConfiguration の作成
 
-> **注:**Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
+> **注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
 
 新しい [deviceEnrollmentWindowsHelloForBusinessConfiguration](../resources/intune_onboarding_deviceenrollmentwindowshelloforbusinessconfiguration.md) オブジェクトを作成します。
 ## <a name="prerequisites"></a>前提条件
@@ -8,7 +8,7 @@
 
 |アクセス許可の種類|アクセス許可 (特権の大きいものから小さいものへ)|
 |:---|:---|
-|委任 (職場または学校のアカウント)|DeviceManagementServiceConfig.ReadWrite.All|
+|委任 (職場または学校アカウント)|DeviceManagementServiceConfig.ReadWrite.All|
 |委任 (個人用 Microsoft アカウント)|サポートされていません。|
 |アプリケーション|サポートされていません。|
 
@@ -24,8 +24,8 @@ POST /deviceManagement/deviceEnrollmentConfigurations
 ## <a name="request-headers"></a>要求ヘッダー
 |ヘッダー|値|
 |:---|:---|
-|承認|ベアラー &lt;トークン&gt;が必須。|
-|承諾|application/json|
+|承認|ベアラー &lt;トークン&gt; が必須。|
+|承諾する|アプリケーションまたは json|
 
 ## <a name="request-body"></a>要求本文
 要求本文で、deviceEnrollmentWindowsHelloForBusinessConfiguration オブジェクトの JSON 表記を指定します。
@@ -34,25 +34,25 @@ POST /deviceManagement/deviceEnrollmentConfigurations
 
 |プロパティ|型|説明|
 |:---|:---|:---|
-|id|String|まだ文書化されていません。[deviceEnrollmentConfiguration](../resources/intune_onboarding_deviceenrollmentconfiguration.md) から継承します|
-|displayName|String|まだ文書化されていません。[deviceEnrollmentConfiguration](../resources/intune_onboarding_deviceenrollmentconfiguration.md) から継承します|
-|description|String|まだ文書化されていません。[deviceEnrollmentConfiguration](../resources/intune_onboarding_deviceenrollmentconfiguration.md) から継承します|
-|priority|Int32|まだ文書化されていません。[deviceEnrollmentConfiguration](../resources/intune_onboarding_deviceenrollmentconfiguration.md) から継承します|
+|ID|文字列|まだ文書化されていません。[deviceEnrollmentConfiguration](../resources/intune_onboarding_deviceenrollmentconfiguration.md) から継承します|
+|displayName|文字列|まだ文書化されていません。[deviceEnrollmentConfiguration](../resources/intune_onboarding_deviceenrollmentconfiguration.md) から継承します|
+|説明|文字列|まだ文書化されていません。[deviceEnrollmentConfiguration](../resources/intune_onboarding_deviceenrollmentconfiguration.md) から継承します|
+|重要度|Int32|まだ文書化されていません。[deviceEnrollmentConfiguration](../resources/intune_onboarding_deviceenrollmentconfiguration.md) から継承します|
 |createdDateTime|DateTimeOffset|まだ文書化されていません。[deviceEnrollmentConfiguration](../resources/intune_onboarding_deviceenrollmentconfiguration.md) から継承します|
 |lastModifiedDateTime|DateTimeOffset|まだ文書化されていません。[deviceEnrollmentConfiguration](../resources/intune_onboarding_deviceenrollmentconfiguration.md) から継承します|
-|version|Int32|まだ文書化されていません。[deviceEnrollmentConfiguration](../resources/intune_onboarding_deviceenrollmentconfiguration.md) から継承します|
+|バージョン|Int32|まだ文書化されていません。[deviceEnrollmentConfiguration](../resources/intune_onboarding_deviceenrollmentconfiguration.md) から継承します|
 |pinMinimumLength|Int32|まだ文書化されていません|
 |pinMaximumLength|Int32|まだ文書化されていません|
-|pinUppercaseCharactersUsage|String|まだ文書化されていません。可能な値は、`allowed`、`required`、`disallowed` です。|
-|pinLowercaseCharactersUsage|String|まだ文書化されていません。可能な値は、`allowed`、`required`、`disallowed` です。|
-|pinSpecialCharactersUsage|String|まだ文書化されていません。可能な値は、`allowed`、`required`、`disallowed` です。|
-|state|String|まだ文書化されていません。可能な値は、`notConfigured`、`enabled`、`disabled` です。|
-|securityDeviceRequired|Boolean|まだ文書化されていません|
-|unlockWithBiometricsEnabled|Boolean|まだ文書化されていません|
-|remotePassportEnabled|Boolean|まだ文書化されていません|
+|pinUppercaseCharactersUsage|[windowsHelloForBusinessPinUsage](../resources/intune_onboarding_windowshelloforbusinesspinusage.md)|まだ文書化されていません。 可能な値は、`allowed`、`required`、`disallowed` です。|
+|pinLowercaseCharactersUsage|[windowsHelloForBusinessPinUsage](../resources/intune_onboarding_windowshelloforbusinesspinusage.md)|まだ文書化されていません。 可能な値は、`allowed`、`required`、`disallowed` です。|
+|pinSpecialCharactersUsage|[windowsHelloForBusinessPinUsage](../resources/intune_onboarding_windowshelloforbusinesspinusage.md)|まだ文書化されていません。 可能な値は、`allowed`、`required`、`disallowed` です。|
+|都道府県|[有効化](../resources/intune_onboarding_enablement.md)|まだ文書化されていません。 可能な値は、`notConfigured`、`enabled`、`disabled` です。|
+|securityDeviceRequired|ブール値|まだ文書化されていません|
+|unlockWithBiometricsEnabled|ブール値|まだ文書化されていません|
+|remotePassportEnabled|ブール値|まだ文書化されていません|
 |pinPreviousBlockCount|Int32|まだ文書化されていません|
 |pinExpirationInDays|Int32|まだ文書化されていません|
-|enhancedBiometricsState|String|まだ文書化されていません。可能な値は、`notConfigured`、`enabled`、`disabled` です。|
+|enhancedBiometricsState|[有効化](../resources/intune_onboarding_enablement.md)|まだ文書化されていません。 可能な値は、`notConfigured`、`enabled`、`disabled` です。|
 
 
 
@@ -119,6 +119,11 @@ Content-Length: 801
   "enhancedBiometricsState": "enabled"
 }
 ```
+
+
+
+
+
 
 
 

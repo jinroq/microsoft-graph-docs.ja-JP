@@ -1,6 +1,6 @@
 # <a name="update-deviceinstallstate"></a>deviceInstallState の更新
 
-> **注:**Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
+> **注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
 
 [deviceInstallState](../resources/intune_books_deviceinstallstate.md) オブジェクトのプロパティを更新します。
 ## <a name="prerequisites"></a>前提条件
@@ -25,8 +25,8 @@ PATCH /deviceAppManagement/managedEBooks/{managedEBookId}/userStateSummary/{user
 ## <a name="request-headers"></a>要求ヘッダー
 |ヘッダー|値|
 |:---|:---|
-|Authorization|ベアラー &lt;トークン&gt; が必要です。|
-|Accept|application/json|
+|承認|ベアラー &lt;トークン&gt; が必須。|
+|承諾する|アプリケーションまたは json|
 
 ## <a name="request-body"></a>要求本文
 要求本文で、[deviceInstallState](../resources/intune_books_deviceinstallstate.md) オブジェクトの JSON 表記を指定します。
@@ -35,15 +35,16 @@ PATCH /deviceAppManagement/managedEBooks/{managedEBookId}/userStateSummary/{user
 
 |プロパティ|型|説明|
 |:---|:---|:---|
-|id|String|エンティティのキー。|
-|deviceName|String|デバイス名。|
-|deviceId|String|デバイス ID。|
-|lastSyncDateTime|DateTimeOffset|最後の同期日時。|
-|installState|String|電子ブックのインストールの状態。 可能な値は、`notApplicable`、`installed`、`failed`、`notInstalled`、`uninstallFailed`、`unknown` です。|
-|errorCode|String|インストール失敗のエラー コード。|
-|osVersion|String|OS バージョン。|
-|osDescription|String|OS の説明。|
-|userName|String|デバイスのユーザー名。|
+|ID|文字列|エンティティのキー。|
+|deviceName|文字列|デバイス名。|
+|deviceId|文字列|デバイス ID。|
+|lastSyncDateTime|DateTimeOffset
+|最後の同期日時。|
+|installState|[installState](../resources/intune_books_installstate.md)|電子ブックのインストールの状態です。 可能な値は、`notApplicable`、`installed`、`failed`、`notInstalled`、`uninstallFailed`、`unknown` です。|
+|errorCode|文字列|インストール失敗のエラー コード。|
+|osVersion|文字列|OS バージョン。|
+|osDescription|文字列|OS の説明。|
+|ユーザー名|文字列|デバイスのユーザー名。|
 
 
 
@@ -90,6 +91,11 @@ Content-Length: 423
   "userName": "User Name value"
 }
 ```
+
+
+
+
+
 
 
 

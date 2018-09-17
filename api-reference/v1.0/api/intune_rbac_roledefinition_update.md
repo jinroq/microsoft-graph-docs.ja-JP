@@ -1,6 +1,6 @@
 # <a name="update-roledefinition"></a>roleDefinition の更新
 
-> **注:**Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
+> **注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
 
 [roleDefinition](../resources/intune_rbac_roledefinition.md) オブジェクトのプロパティを更新します。
 ## <a name="prerequisites"></a>前提条件
@@ -25,8 +25,8 @@ PATCH /deviceManagement/roleDefinitions/{roleDefinitionId}/roleAssignments/{role
 ## <a name="request-headers"></a>要求ヘッダー
 |ヘッダー|値|
 |:---|:---|
-|Authorization|ベアラー &lt;トークン&gt; が必要です。|
-|Accept|application/json|
+|承認|ベアラー &lt;トークン&gt; が必須。|
+|承諾する|アプリケーションまたは json|
 
 ## <a name="request-body"></a>要求本文
 要求本文で、[roleDefinition](../resources/intune_rbac_roledefinition.md) オブジェクトの JSON 表記を指定します。
@@ -35,11 +35,11 @@ PATCH /deviceManagement/roleDefinitions/{roleDefinitionId}/roleAssignments/{role
 
 |プロパティ|型|説明|
 |:---|:---|:---|
-|id|String|エンティティのキー。 これは読み取り専用で、自動生成されます。|
-|displayName|String|ロールの定義の表示名。|
-|description|String|ロールの定義の説明。|
+|ID|文字列|エンティティのキー。 これは読み取り専用で、自動生成されます。|
+|displayName|文字列|ロールの定義の表示名。|
+|説明|文字列|ロールの定義の説明。|
 |rolePermissions|[rolePermission](../resources/intune_rbac_rolepermission.md) コレクション|このロールに実行が許可されている、ロールのアクセス許可のリスト。 これらは、rolePermission の一部として定義されている actionName と一致する必要があります。|
-|isBuiltIn|Boolean|ロールの種類。 組み込みの場合は True に設定し、カスタム ロールの定義の場合は False に設定します。|
+|isBuiltIn|ブール値|ロールの種類。 組み込みの場合は True に設定し、カスタム ロールの定義の場合は False に設定します。|
 
 
 
@@ -108,6 +108,11 @@ Content-Length: 629
   "isBuiltIn": true
 }
 ```
+
+
+
+
+
 
 
 

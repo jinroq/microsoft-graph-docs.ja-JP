@@ -13,7 +13,7 @@
 |プロパティ|タイプ|説明|
 |:---|:---|:---|
 |ID|文字列|まだ文書化されていません|
-|enabled|ブール値|対象組織で、オンプレミスの条件付きアクセスが有効かどうかを示します。|
+|有効化済み|ブール値|対象組織で、オンプレミスの条件付きアクセスが有効かどうかを示します。|
 |includedGroups|Guid コレクション|オンプレミスの条件付きアクセスで対象となるユーザー グループ。 これらのグループ内のユーザーすべては、管理対象のモバイル デバイスを持っており、メール アクセスに準拠している必要があります。|
 |excludedGroups|Guid コレクション|オンプレミスの条件付きアクセスで除外されるユーザー グループ。 これらのグループ内のすべてのユーザーは、条件付きアクセス ポリシーから除外されます。|
 |overrideDefaultRule|ブール値|デバイスでアクセスが付与されていることを確認できるようにするとき、既定のアクセス ルールを上書きします。|
@@ -24,8 +24,8 @@
 以下は、リソースの JSON 表記です。
 <!--{
   "blockType": "resource",
-  "keyProperty": "id",
   "baseType": "microsoft.graph.entity",
+  "keyProperty": "id",
   "@odata.type": "microsoft.graph.onPremisesConditionalAccessSettings"
 }-->
 ``` json
@@ -34,14 +34,19 @@
   "id": "String (identifier)",
   "enabled": true,
   "includedGroups": [
-    "fe4d7f2b-e7b8-4276-9976-7a3fc83edbbc"
+    "Guid"
   ],
   "excludedGroups": [
-    "79199ed9-e50b-4257-8de4-70b9c8685061"
+    "Guid"
   ],
   "overrideDefaultRule": true
 }
 ```
+
+
+
+
+
 
 
 

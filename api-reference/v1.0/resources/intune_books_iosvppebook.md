@@ -23,7 +23,7 @@ iOS Vpp eBook のプロパティを含むクラスです。
 |説明|文字列|説明。 [managedEBook](../resources/intune_books_managedebook.md) から継承します|
 |発行元|文字列|発行元です。 [managedEBook](../resources/intune_books_managedebook.md) から継承します|
 |publishedDateTime|DateTimeOffset|電子ブックが発行された日時。 [managedEBook](../resources/intune_books_managedebook.md) から継承します|
-|largeCover|[mimeContent](../resources/intune_shared_mimecontent.md)|ブック カバー。 [managedEBook](../resources/intune_books_managedebook.md) から継承します|
+|largeCover|[マイムコンテンツ](../resources/intune_shared_mimecontent.md)|ブック カバー。 [managedEBook](../resources/intune_books_managedebook.md) から継承します|
 |createdDateTime|DateTimeOffset|電子ブック ファイルが作成された日時。 [managedEBook](../resources/intune_books_managedebook.md) から継承します|
 |lastModifiedDateTime|DateTimeOffset|電子ブックが最後に変更された日時。 [managedEBook](../resources/intune_books_managedebook.md) から継承します|
 |informationUrl|文字列|詳細情報の URL。 [managedEBook](../resources/intune_books_managedebook.md) から継承します|
@@ -49,8 +49,8 @@ iOS Vpp eBook のプロパティを含むクラスです。
 以下は、リソースの JSON 表記です。
 <!--{
   "blockType": "resource",
-  "keyProperty": "id",
   "baseType": "microsoft.graph.managedEBook",
+  "keyProperty": "id",
   "@odata.type": "microsoft.graph.iosVppEBook"
 }-->
 ``` json
@@ -70,7 +70,7 @@ iOS Vpp eBook のプロパティを含むクラスです。
   "lastModifiedDateTime": "String (timestamp)",
   "informationUrl": "String",
   "privacyInformationUrl": "String",
-  "vppTokenId": "79199ed9-e50b-4257-8de4-70b9c8685061",
+  "vppTokenId": "Guid",
   "appleId": "String",
   "vppOrganizationName": "String",
   "genres": [
@@ -82,6 +82,11 @@ iOS Vpp eBook のプロパティを含むクラスです。
   "usedLicenseCount": 1024
 }
 ```
+
+
+
+
+
 
 
 

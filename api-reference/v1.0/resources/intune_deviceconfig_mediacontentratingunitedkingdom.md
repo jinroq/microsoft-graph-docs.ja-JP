@@ -6,18 +6,17 @@
 ## <a name="properties"></a>プロパティ
 |プロパティ|タイプ|説明|
 |:---|:---|:---|
-|movieRating|[ratingUnitedKingdomMoviesType](../resources/intune_deviceconfig_ratingunitedkingdommoviestype.md)|イギリス向けに選択されている映画のレーティング。 T指定できる値は、: `allAllowed`, `allBlocked`, `general`, `universalChildren`, `parentalGuidance`, `agesAbove12Video`, `agesAbove12Cinema`, `agesAbove15`, `adults`です。|
-|tvRating|[ratingUnitedKingdomTelevisionType](../resources/intune_deviceconfig_ratingunitedkingdomtelevisiontype.md)|イギリス向けに選択されている映画のレーティング。 指定できる値は、 `allAllowed`、`allBlocked`、`caution` です。|
+|movieRating|[ratingUnitedKingdomMoviesType](../resources/intune_deviceconfig_ratingunitedkingdommoviestype.md)|イギリス向けに選択されている映画のレーティング。使用可能な値: `allAllowed`、`allBlocked`、`general`、`universalChildren`、`parentalGuidance`、`agesAbove12Video`、`agesAbove12Cinema`、`agesAbove15`、`adults`。|
+|tvRating|[ratingUnitedKingdomTelevisionType](../resources/intune_deviceconfig_ratingunitedkingdomtelevisiontype.md)|イギリス向けに選択されているテレビのレーティング。使用可能な値: `allAllowed`、`allBlocked`、`caution`。|
 
 ## <a name="relationships"></a>リレーションシップ
 なし
 ## <a name="json-representation"></a>JSON 表記
 以下は、リソースの JSON 表記です。
-<!-- {
+<!--{
   "blockType": "resource",
   "@odata.type": "microsoft.graph.mediaContentRatingUnitedKingdom"
-}
--->
+}-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.mediaContentRatingUnitedKingdom",
@@ -25,6 +24,11 @@
   "tvRating": "String"
 }
 ```
+
+
+
+
+
 
 
 

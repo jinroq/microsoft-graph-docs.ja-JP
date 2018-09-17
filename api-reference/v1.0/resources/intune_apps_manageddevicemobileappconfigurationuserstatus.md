@@ -15,10 +15,10 @@
 ## <a name="properties"></a>プロパティ
 |プロパティ|タイプ|説明|
 |:---|:---|:---|
-|ID|文字列|エンティティのキー。|
+|id|文字列|エンティティのキー。|
 |userDisplayName|文字列|DevicePolicyStatus のユーザー名。|
 |devicesCount|Int32|そのユーザーのデバイスの数。|
-|状態|[complianceStatus](../resources/intune_shared_compliancestatus.md)|ポリシー レポートのコンプライアンスの状態。 指定できる値は、`unknown`、`notApplicable`、`compliant`、`remediated`、`nonCompliant`、`error`、`conflict` です。|
+|status|[complianceStatus](../resources/intune_shared_compliancestatus.md)|コンプライアンス ポリシー レポートの状態。使用可能な値は `unknown`、`notApplicable`、`compliant`、`remediated`、`nonCompliant`、`error`、`conflict`、`notAssigned` です。|
 |lastReportedDateTime|DateTimeOffset|ポリシー レポートの最終変更日時。|
 |userPrincipalName|文字列|UserPrincipalName。|
 
@@ -28,8 +28,8 @@
 以下は、リソースの JSON 表記です。
 <!--{
   "blockType": "resource",
-  "keyProperty": "id",
   "baseType": "microsoft.graph.entity",
+  "keyProperty": "id",
   "@odata.type": "microsoft.graph.managedDeviceMobileAppConfigurationUserStatus"
 }-->
 ``` json
@@ -43,6 +43,11 @@
   "userPrincipalName": "String"
 }
 ```
+
+
+
+
+
 
 
 

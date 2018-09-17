@@ -25,7 +25,7 @@ PATCH /organization/{organizationId}
 |ヘッダー|値|
 |:---|:---|
 |承認|ベアラー &lt;トークン&gt; が必須。|
-|承諾|application/json|
+|承諾|アプリケーションまたは json|
 
 ## <a name="request-body"></a>要求本文
 要求本文で、[organization](../resources/intune_onboarding_organization.md) オブジェクトの JSON 表記を指定します。
@@ -35,7 +35,7 @@ PATCH /organization/{organizationId}
 |プロパティ|タイプ|説明|
 |:---|:---|:---|
 |ID|文字列|オブジェクトの GUID。|
-|mobileDeviceManagementAuthority|[mdmAuthority](../resources/intune_onboarding_mdmauthority.md)|モバイル デバイス管理権限。 可能な値は、`unknown`、`intune`、`sccm`、`office365` です。|
+|mobileDeviceManagementAuthority|[mdmAuthority](../resources/intune_onboarding_mdmauthority.md)|モバイル デバイス管理権限。指定できる値は、`unknown` 、`intune`、`sccm`、`office365` です。|
 
 
 
@@ -68,6 +68,11 @@ Content-Length: 151
   "mobileDeviceManagementAuthority": "intune"
 }
 ```
+
+
+
+
+
 
 
 

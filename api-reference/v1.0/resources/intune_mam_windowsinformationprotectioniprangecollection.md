@@ -4,12 +4,12 @@
 
 Windows 情報保護の IP 範囲のコレクション
 ## <a name="properties"></a>プロパティ
-|プロパティ|タイプ|説明|
+|プロパティ|型|説明|
 |:---|:---|:---|
 |displayName|文字列|表示名|
 |範囲|[ipRange](../resources/intune_mam_iprange.md) コレクション|IP 範囲のコレクション|
 
-## <a name="relationships"></a>関係
+## <a name="relationships"></a>リレーションシップ
 なし
 ## <a name="json-representation"></a>JSON 表記
 以下は、リソースの JSON 表記です。
@@ -30,6 +30,11 @@ Windows 情報保護の IP 範囲のコレクション
   ]
 }
 ```
+
+
+
+
+
 
 
 

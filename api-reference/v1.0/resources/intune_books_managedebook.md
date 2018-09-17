@@ -18,7 +18,7 @@
 |説明|文字列|説明。|
 |パブリッシャー|文字列|発行元です。|
 |publishedDateTime|DateTimeOffset|電子ブックが発行された日時。|
-|largeCover|[mimeContent](../resources/intune_shared_mimecontent.md)|ブック カバー。|
+|大型カバー|[マイムコンテンツ](../resources/intune_shared_mimecontent.md)|ブック カバー。|
 |createdDateTime|DateTimeOffset|電子ブック ファイルが作成された日時。|
 |lastModifiedDateTime|DateTimeOffset|電子ブックが最後に変更された日時。|
 |informationUrl|文字列|詳細情報の URL。|
@@ -36,9 +36,8 @@
 以下は、リソースの JSON 表記です。
 <!--{
   "blockType": "resource",
-  "abstract": true,
-  "keyProperty": "id",
   "baseType": "microsoft.graph.entity",
+  "keyProperty": "id",
   "@odata.type": "microsoft.graph.managedEBook"
 }-->
 ``` json
@@ -60,6 +59,11 @@
   "privacyInformationUrl": "String"
 }
 ```
+
+
+
+
+
 
 
 

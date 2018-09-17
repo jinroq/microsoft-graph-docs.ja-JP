@@ -1,6 +1,6 @@
 # <a name="create-telecomexpensemanagementpartner"></a>telecomExpenseManagementPartner の作成
 
-> **注:**Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
+> **注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
 
 新しい [telecomExpenseManagementPartner](../resources/intune_tem_telecomexpensemanagementpartner.md) オブジェクトを作成します。
 ## <a name="prerequisites"></a>前提条件
@@ -8,7 +8,7 @@
 
 |アクセス許可の種類|アクセス許可 (特権の大きいものから小さいものへ)|
 |:---|:---|
-|委任 (職場または学校のアカウント)|DeviceManagementServiceConfig.ReadWrite.All|
+|委任 (職場または学校アカウント)|DeviceManagementServiceConfig.ReadWrite.All|
 |委任 (個人用 Microsoft アカウント)|サポートされていません。|
 |アプリケーション|サポートされていません。|
 
@@ -24,8 +24,8 @@ POST /deviceManagement/telecomExpenseManagementPartners
 ## <a name="request-headers"></a>要求ヘッダー
 |ヘッダー|値|
 |:---|:---|
-|承認|ベアラー &lt;トークン&gt;が必須。|
-|承諾|application/json|
+|承認|ベアラー &lt;トークン&gt; が必須。|
+|承諾する|アプリケーションまたは json|
 
 ## <a name="request-body"></a>要求本文
 要求本文で、telecomExpenseManagementPartner オブジェクトの JSON 表記を指定します。
@@ -34,11 +34,11 @@ POST /deviceManagement/telecomExpenseManagementPartners
 
 |プロパティ|型|説明|
 |:---|:---|:---|
-|id|String|TEM パートナーの一意識別子。|
-|displayName|String|TEM パートナーの表示名。|
-|url|String|TEM パートナーの管理用コントロール パネルの URL。管理者はここで TEM サービスを構成できます。|
-|appAuthorized|Boolean|パートナーの AAD アプリに Intune へのアクセスが承認されているかどうかを指定します。|
-|enabled|Boolean|TEM サービスへの Intune の接続が現在有効であるか、無効であるかを指定します。|
+|ID|文字列|TEM パートナーの一意識別子。|
+|displayName|文字列|TEM パートナーの表示名。|
+|url|文字列|TEM パートナーの管理用コントロール パネルの URL。管理者はここで TEM サービスを構成できます。|
+|appAuthorized|ブール値|パートナーの AAD アプリに Intune へのアクセスが承認されているかどうかを指定します。|
+|有効化済み|ブール値|TEM サービスへの Intune の接続が現在有効であるか、無効であるかを指定します。|
 |lastConnectionDateTime|DateTimeOffset|TEM パートナーによって Intune に最後に送信された要求のタイムスタンプ。|
 
 
@@ -81,6 +81,11 @@ Content-Length: 297
   "lastConnectionDateTime": "2016-12-31T23:58:36.6670033-08:00"
 }
 ```
+
+
+
+
+
 
 
 

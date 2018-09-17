@@ -16,17 +16,17 @@
 |プロパティ|タイプ|説明|
 |:---|:---|:---|
 |ID|文字列|エンティティのキー。|
-|target|[deviceAndAppManagementAssignmentTarget](../resources/intune_shared_deviceandappmanagementassignmenttarget.md)|電子ブックの割り当て先。|
-|installIntent|[installIntent](../resources/intune_shared_installintent.md)|電子ブックのインストールの目的。 指定できる値は、`available`、`required`、`uninstall`、`availableWithoutEnrollment` です。|
+|ターゲット|[deviceAndAppManagementAssignmentTarget](../resources/intune_shared_deviceandappmanagementassignmenttarget.md)|電子ブックの割り当て先。|
+|installIntent|[installIntent](../resources/intune_shared_installintent.md)|eBook のインストールの目的です。指定できる値は `available`、 `required`、 `uninstall`、 `availableWithoutEnrollment`です。|
 
-## <a name="relationships"></a>リレーションシップ
+## <a name="relationships"></a>関係
 なし
 ## <a name="json-representation"></a>JSON 表記
 以下は、リソースの JSON 表記です。
 <!--{
   "blockType": "resource",
-  "keyProperty": "id",
   "baseType": "microsoft.graph.entity",
+  "keyProperty": "id",
   "@odata.type": "microsoft.graph.managedEBookAssignment"
 }-->
 ``` json
@@ -39,6 +39,11 @@
   "installIntent": "String"
 }
 ```
+
+
+
+
+
 
 
 

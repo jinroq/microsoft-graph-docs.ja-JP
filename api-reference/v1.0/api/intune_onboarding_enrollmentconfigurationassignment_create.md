@@ -34,7 +34,7 @@ POST /deviceManagement/deviceEnrollmentConfigurations/{deviceEnrollmentConfigura
 
 |プロパティ|型|説明|
 |:---|:---|:---|
-|id|文字列|まだ文書化されていません|
+|ID|文字列|まだ文書化されていません|
 |ターゲット|[deviceAndAppManagementAssignmentTarget](../resources/intune_shared_deviceandappmanagementassignmenttarget.md)|まだ文書化されていません|
 
 
@@ -73,6 +73,11 @@ Content-Length: 222
   }
 }
 ```
+
+
+
+
+
 
 
 

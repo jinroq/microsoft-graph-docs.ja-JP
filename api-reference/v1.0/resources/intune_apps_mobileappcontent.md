@@ -20,14 +20,14 @@
 ## <a name="relationships"></a>リレーションシップ
 |リレーションシップ|型|説明|
 |:---|:---|:---|
-|files|[mobileAppContentFile](../resources/intune_apps_mobileappcontentfile.md) コレクション|このアプリのコンテンツのバージョンに関するファイルのリストです。|
+|ファイル|[mobileAppContentFile](../resources/intune_apps_mobileappcontentfile.md) コレクション|このアプリのコンテンツのバージョンに関するファイルのリストです。|
 
 ## <a name="json-representation"></a>JSON 表記
 以下は、リソースの JSON 表記です。
 <!--{
   "blockType": "resource",
-  "keyProperty": "id",
   "baseType": "microsoft.graph.entity",
+  "keyProperty": "id",
   "@odata.type": "microsoft.graph.mobileAppContent"
 }-->
 ``` json
@@ -36,6 +36,11 @@
   "id": "String (identifier)"
 }
 ```
+
+
+
+
+
 
 
 

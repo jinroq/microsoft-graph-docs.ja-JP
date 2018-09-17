@@ -14,7 +14,7 @@
 |[targetedManagedAppConfiguration の作成](../api/intune_mam_targetedmanagedappconfiguration_create.md)|[targetedManagedAppConfiguration](../resources/intune_mam_targetedmanagedappconfiguration.md)|新しい [targetedManagedAppConfiguration](../resources/intune_mam_targetedmanagedappconfiguration.md) オブジェクトを作成します。|
 |[targetedManagedAppConfiguration の削除](../api/intune_mam_targetedmanagedappconfiguration_delete.md)|なし|[targetedManagedAppConfiguration](../resources/intune_mam_targetedmanagedappconfiguration.md) を削除します。|
 |[targetedManagedAppConfiguration の更新](../api/intune_mam_targetedmanagedappconfiguration_update.md)|[targetedManagedAppConfiguration](../resources/intune_mam_targetedmanagedappconfiguration.md)|[targetedManagedAppConfiguration](../resources/intune_mam_targetedmanagedappconfiguration.md) オブジェクトのプロパティを更新します。|
-|[assign action](../api/intune_mam_targetedmanagedappconfiguration_assign.md)|なし|まだ文書化されていません|
+|[割り当ての操作](../api/intune_mam_targetedmanagedappconfiguration_assign.md)|なし|まだ文書化されていません|
 |[targetApps アクション](../api/intune_mam_targetedmanagedappconfiguration_targetapps.md)|なし|まだ文書化されていません|
 
 ## <a name="properties"></a>プロパティ
@@ -35,14 +35,14 @@
 |:---|:---|:---|
 |アプリ|[managedMobileApp](../resources/intune_mam_managedmobileapp.md) コレクション|ポリシーが配置されたアプリのリスト。|
 |deploymentSummary|[managedAppPolicyDeploymentSummary](../resources/intune_mam_managedapppolicydeploymentsummary.md)|構成の展開概要のナビゲーション プロパティ。|
-|assignments|[targetedManagedAppPolicyAssignment](../resources/intune_mam_targetedmanagedapppolicyassignment.md) コレクション|ポリシーが配置される包含グループと除外グループのリストのナビゲーション プロパティです。|
+|課題|[targetedManagedAppPolicyAssignment](../resources/intune_mam_targetedmanagedapppolicyassignment.md) コレクション|ポリシーが配置される包含グループと除外グループのリストのナビゲーション プロパティです。|
 
 ## <a name="json-representation"></a>JSON 表記
 以下は、リソースの JSON 表記です。
 <!--{
   "blockType": "resource",
-  "keyProperty": "id",
   "baseType": "microsoft.graph.managedAppConfiguration",
+  "keyProperty": "id",
   "@odata.type": "microsoft.graph.targetedManagedAppConfiguration"
 }-->
 ``` json
@@ -65,6 +65,11 @@
   "isAssigned": true
 }
 ```
+
+
+
+
+
 
 
 

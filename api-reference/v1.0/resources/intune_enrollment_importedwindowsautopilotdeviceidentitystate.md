@@ -6,7 +6,7 @@
 ## <a name="properties"></a>プロパティ
 |プロパティ|タイプ|説明|
 |:---|:---|:---|
-|deviceImportStatus|[importedWindowsAutopilotDeviceIdentityImportStatus](../resources/intune_enrollment_importedwindowsautopilotdeviceidentityimportstatus.md)|Device Directory Service (DDS) から報告されたデバイスの状態です。 可能な値は、`unknown`、`pending`、`partial`、`complete`、`error`です。|
+|deviceImportStatus|[importedWindowsAutopilotDeviceIdentityImportStatus](../resources/intune_enrollment_importedwindowsautopilotdeviceidentityimportstatus.md)|デバイス ディレクトリの Service(DDS) によって報告されたデバイスの状態です。使用可能な値: `unknown`、 `pending`、 `partial`、 `complete`、 `error`。|
 |deviceRegistrationId|文字列|正常に追加されたと Devce Directory Service (DDS) から報告されたデバイスの Devce Registration ID です。|
 |deviceErrorCode|Int32|Device Directory Service (DDS) から報告されたデバイス エラー コードです。|
 |deviceErrorName|文字列|Device Directory Service (DDS) から報告されたデバイス エラー名です。|
@@ -28,6 +28,11 @@
   "deviceErrorName": "String"
 }
 ```
+
+
+
+
+
 
 
 

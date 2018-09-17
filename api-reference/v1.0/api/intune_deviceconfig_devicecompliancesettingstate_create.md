@@ -25,7 +25,7 @@ POST /deviceManagement/deviceCompliancePolicySettingStateSummaries/{deviceCompli
 |ヘッダー|値|
 |:---|:---|
 |承認|ベアラー &lt;トークン&gt; が必須。|
-|承諾|application/json|
+|承諾|アプリケーションまたは json|
 
 ## <a name="request-body"></a>要求本文
 要求本文で、deviceComplianceSettingState オブジェクトの JSON 表記を指定します。
@@ -35,16 +35,16 @@ POST /deviceManagement/deviceCompliancePolicySettingStateSummaries/{deviceCompli
 |プロパティ|タイプ|説明|
 |:---|:---|:---|
 |ID|文字列|エンティティのキー|
-|setting|文字列|設定のクラス名とプロパティ名。|
+|文字列|文字列|設定のクラス名とプロパティ名。|
 |settingName|文字列|レポートされている設定名。|
 |deviceId|文字列|レポートされているデバイス ID。|
 |deviceName|文字列|レポートされているデバイス名。|
 |userId|文字列|レポートされているユーザー ID|
-|userEmail|文字列|レポートされているユーザーのメール アドレス。|
-|userName|文字列|レポートされているユーザー名|
+|電子メール アドレス|文字列|レポートされているユーザーのメール アドレス。|
+|ユーザーの名前|文字列|レポートされているユーザー名|
 |userPrincipalName|文字列|レポートされているユーザーの PrincipalName|
 |deviceModel|文字列|レポートされているデバイス モデル|
-|状態|[complianceStatus](../resources/intune_shared_compliancestatus.md)|設定のコンプライアンスの状態です。 可能な値は、`unknown`、`notApplicable`、`compliant`、`remediated`、`nonCompliant`、`error`、`conflict` です。|
+|都道府県|[complianceStatus](../resources/intune_shared_compliancestatus.md)|設定のコンプライアンスの状態です。使用可能な値は `unknown`、 `notApplicable`、 `compliant`、 `remediated`、 `nonCompliant`、 `error`、 `conflict`、 `notAssigned`です。|
 |complianceGracePeriodExpirationDateTime|DateTimeOffset|デバイス コンプライアンスの猶予期間が過ぎる DateTime|
 
 
@@ -99,6 +99,11 @@ Content-Length: 566
   "complianceGracePeriodExpirationDateTime": "2016-12-31T23:56:44.951111-08:00"
 }
 ```
+
+
+
+
+
 
 
 

@@ -34,9 +34,9 @@ PATCH /deviceManagement/windowsInformationProtectionAppLearningSummaries/{window
 
 |プロパティ|タイプ|説明|
 |:---|:---|:---|
-|id|文字列|WindowsInformationProtectionAppLearningSummary の一意識別子。|
+|ID|文字列|WindowsInformationProtectionAppLearningSummary の一意識別子。|
 |applicationName|文字列|アプリケーション名|
-|applicationType|[applicationType](../resources/intune_wip_applicationtype.md)|アプリケーション タイプ。 指定できる値は、`universal`、`desktop` です。|
+|applicationType|[applicationType](../resources/intune_wip_applicationtype.md)|アプリケーションの種類。可能な値は、`universal`、`desktop` です。|
 |deviceCount|Int32|デバイス数|
 
 
@@ -74,6 +74,11 @@ Content-Length: 240
   "deviceCount": 11
 }
 ```
+
+
+
+
+
 
 
 

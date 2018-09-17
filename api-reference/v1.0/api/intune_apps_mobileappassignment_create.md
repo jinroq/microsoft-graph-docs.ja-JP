@@ -35,7 +35,7 @@ POST /deviceAppManagement/mobileApps/{mobileAppId}/assignments
 |プロパティ|タイプ|説明|
 |:---|:---|:---|
 |ID|文字列|エンティティのキー。|
-|インテント|[installIntent](../resources/intune_shared_installintent.md)|管理者によって定義されたインストールのインテント。可能な値は、`available`、`required`、`uninstall`、`availableWithoutEnrollment` です。|
+|インテント|[installIntent](../resources/intune_shared_installintent.md)|管理者によって定義されたインストールの目的。可能な値は、`available`、`required`、`uninstall`、`availableWithoutEnrollment` です。|
 |ターゲット|[deviceAndAppManagementAssignmentTarget](../resources/intune_shared_deviceandappmanagementassignmenttarget.md)|管理者によって定義された、ターゲット グループの割り当て。|
 |設定|[mobileAppAssignmentSettings](../resources/intune_apps_mobileappassignmentsettings.md)|管理者によって定義された、ターゲットの割り当ての設定。|
 
@@ -83,6 +83,11 @@ Content-Length: 322
   }
 }
 ```
+
+
+
+
+
 
 
 

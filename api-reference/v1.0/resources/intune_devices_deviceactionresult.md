@@ -6,8 +6,8 @@
 ## <a name="properties"></a>プロパティ
 |プロパティ|タイプ|説明|
 |:---|:---|:---|
-|actionName|文字列型 (String)|アクション名|
-|actionState|[actionState](../resources/intune_devices_actionstate.md)|アクションの状態です。 指定できる値は、`none`、`pending`、`canceled`、`active`、`done`、`failed`、`notSupported` です。|
+|actionName|文字列|アクション名|
+|actionState|[actionState](../resources/intune_devices_actionstate.md)|アクションの状態。指定できる値は、`none`、`pending`、`canceled`、`active`、`done`、`failed`、`notSupported` です。|
 |startDateTime|DateTimeOffset|アクションが開始された時刻|
 |lastUpdatedDateTime|DateTimeOffset|アクション状態の最終更新時刻|
 
@@ -28,6 +28,11 @@
   "lastUpdatedDateTime": "String (timestamp)"
 }
 ```
+
+
+
+
+
 
 
 

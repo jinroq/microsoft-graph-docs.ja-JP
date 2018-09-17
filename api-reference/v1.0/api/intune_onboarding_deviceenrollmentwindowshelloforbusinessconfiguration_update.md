@@ -25,7 +25,7 @@ PATCH /deviceManagement/deviceEnrollmentConfigurations/{deviceEnrollmentConfigur
 |ヘッダー|値|
 |:---|:---|
 |承認|ベアラー &lt;トークン&gt; が必須。|
-|承諾|application/json|
+|承諾|アプリケーションまたは json|
 
 ## <a name="request-body"></a>要求本文
 要求本文で、[deviceEnrollmentWindowsHelloForBusinessConfiguration](../resources/intune_onboarding_deviceenrollmentwindowshelloforbusinessconfiguration.md) オブジェクトの JSON 表記を指定します。
@@ -43,16 +43,16 @@ PATCH /deviceManagement/deviceEnrollmentConfigurations/{deviceEnrollmentConfigur
 |バージョン|Int32|まだ文書化されていません。[deviceEnrollmentConfiguration](../resources/intune_onboarding_deviceenrollmentconfiguration.md) から継承します|
 |pinMinimumLength|Int32|まだ文書化されていません|
 |pinMaximumLength|Int32|まだ文書化されていません|
-|pinUppercaseCharactersUsage|[windowsHelloForBusinessPinUsage](../resources/intune_onboarding_windowshelloforbusinesspinusage.md)|まだ文書化されていません。 使用可能な値: `allowed`、`required`、`disallowed`。|
-|pinLowercaseCharactersUsage|[windowsHelloForBusinessPinUsage](../resources/intune_onboarding_windowshelloforbusinesspinusage.md)|まだ文書化されていません。 使用可能な値: `allowed`、`required`、`disallowed`。|
-|pinSpecialCharactersUsage|[windowsHelloForBusinessPinUsage](../resources/intune_onboarding_windowshelloforbusinesspinusage.md)|まだ文書化されていません。 使用可能な値: `allowed`、`required`、`disallowed`。|
-|状態|[有効化](../resources/intune_onboarding_enablement.md)|まだ文書化されていません。 使用可能な値: `notConfigured`、`enabled`、`disabled`。|
+|pinUppercaseCharactersUsage|[windowsHelloForBusinessPinUsage](../resources/intune_onboarding_windowshelloforbusinesspinusage.md)|まだ文書化されていません。可能な値は、`allowed`、`required`、`disallowed` です。|
+|pinLowercaseCharactersUsage|[windowsHelloForBusinessPinUsage](../resources/intune_onboarding_windowshelloforbusinesspinusage.md)|まだ文書化されていません。可能な値は、`allowed`、`required`、`disallowed` です。|
+|pinSpecialCharactersUsage|[windowsHelloForBusinessPinUsage](../resources/intune_onboarding_windowshelloforbusinesspinusage.md)|まだ文書化されていません。可能な値は、`allowed`、`required`、`disallowed` です。|
+|都道府県|[有効化](../resources/intune_onboarding_enablement.md)|まだ文書化されていません。可能な値は、`notConfigured`、`enabled`、`disabled` です。|
 |securityDeviceRequired|ブール値|まだ文書化されていません|
 |unlockWithBiometricsEnabled|ブール値|まだ文書化されていません|
 |remotePassportEnabled|ブール値|まだ文書化されていません|
 |pinPreviousBlockCount|Int32|まだ文書化されていません|
 |pinExpirationInDays|Int32|まだ文書化されていません|
-|enhancedBiometricsState|[有効化](../resources/intune_onboarding_enablement.md)|まだ文書化されていません。 使用可能な値: `notConfigured`、`enabled`、`disabled`。|
+|enhancedBiometricsState|[有効化](../resources/intune_onboarding_enablement.md)|まだ文書化されていません。可能な値は、`notConfigured`、`enabled`、`disabled` です。|
 
 
 
@@ -118,6 +118,11 @@ Content-Length: 801
   "enhancedBiometricsState": "enabled"
 }
 ```
+
+
+
+
+
 
 
 

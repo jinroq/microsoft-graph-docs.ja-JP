@@ -25,8 +25,8 @@ ManagedAppEntity は、アプリ管理ワークフロー下にある他のすべ
 以下は、リソースの JSON 表記です。
 <!--{
   "blockType": "resource",
-  "keyProperty": "id",
   "baseType": "microsoft.graph.entity",
+  "keyProperty": "id",
   "@odata.type": "microsoft.graph.managedAppPolicyDeploymentSummary"
 }-->
 ``` json
@@ -49,6 +49,11 @@ ManagedAppEntity は、アプリ管理ワークフロー下にある他のすべ
   "version": "String"
 }
 ```
+
+
+
+
+
 
 
 

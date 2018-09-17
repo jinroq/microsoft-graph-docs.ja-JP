@@ -1,6 +1,6 @@
 # <a name="create-notificationmessagetemplate"></a>notificationMessageTemplate の作成
 
-> **注:**Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
+> **注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
 
 新しい [notificationMessageTemplate](../resources/intune_notification_notificationmessagetemplate.md) オブジェクトを作成します。
 ## <a name="prerequisites"></a>前提条件
@@ -8,7 +8,7 @@
 
 |アクセス許可の種類|アクセス許可 (特権の大きいものから小さいものへ)|
 |:---|:---|
-|委任 (職場または学校のアカウント)|DeviceManagementServiceConfig.ReadWrite.All|
+|委任 (職場または学校アカウント)|DeviceManagementServiceConfig.ReadWrite.All|
 |委任 (個人用 Microsoft アカウント)|サポートされていません。|
 |アプリケーション|サポートされていません。|
 
@@ -24,8 +24,8 @@ POST /deviceManagement/notificationMessageTemplates
 ## <a name="request-headers"></a>要求ヘッダー
 |ヘッダー|値|
 |:---|:---|
-|Authorization|ベアラー &lt;トークン&gt; が必要です。|
-|Accept|application/json|
+|承認|ベアラー &lt;トークン&gt; が必須。|
+|承諾する|アプリケーションまたは json|
 
 ## <a name="request-body"></a>要求本文
 要求の本文で、notificationMessageTemplate オブジェクトの JSON 表記を指定します。
@@ -34,11 +34,11 @@ POST /deviceManagement/notificationMessageTemplates
 
 |プロパティ|型|説明|
 |:---|:---|:---|
-|id|String|エンティティのキー。|
-|lastModifiedDateTime|DateTimeOffset|オブジェクトの最終更新の DateTime。|
-|displayName|String|通知メッセージ テンプレートの表示名。|
-|defaultLocale|String|要求されたロケールが使用できないときにフォールバックする既定のロケール。|
-|brandingOptions|String|メッセージ テンプレートのブランド化オプション。 ブランド化は、Intune 管理コンソールで定義されます。 可能な値は、`none`、`includeCompanyLogo`、`includeCompanyName`、`includeContactInformation` です。|
+|ID|文字列|エンティティのキー。|
+|lastModifiedDateTime|DateTimeOffset|オブジェクトが最後に変更された DateTime。|
+|displayName|文字列|通知メッセージ テンプレートの表示名。|
+|defaultLocale|文字列|要求されたロケールが使用できないときにフォールバックする既定のロケール。|
+|brandingOptions|[notificationTemplateBrandingOptions](../resources/intune_notification_notificationtemplatebrandingoptions.md)|メッセージ テンプレートのブランド化オプション。 ブランド化は、Intune 管理コンソールで定義されます。 可能な値は、`none`、`includeCompanyLogo`、`includeCompanyName`、`includeContactInformation` です。|
 
 
 
@@ -78,6 +78,11 @@ Content-Length: 310
   "brandingOptions": "includeCompanyLogo"
 }
 ```
+
+
+
+
+
 
 
 

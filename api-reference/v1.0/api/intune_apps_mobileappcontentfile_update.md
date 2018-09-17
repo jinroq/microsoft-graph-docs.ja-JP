@@ -25,7 +25,7 @@ PATCH /deviceAppManagement/mobileApps/{mobileAppId}/contentVersions/{mobileAppCo
 |ヘッダー|値|
 |:---|:---|
 |承認|ベアラー &lt;トークン&gt; が必須。|
-|承諾|application/json|
+|承諾|アプリケーションまたは JSON|
 
 ## <a name="request-body"></a>要求本文
 要求本文で、[mobileAppContentFile](../resources/intune_apps_mobileappcontentfile.md) オブジェクトの JSON 表記を指定します。
@@ -34,16 +34,16 @@ PATCH /deviceAppManagement/mobileApps/{mobileAppId}/contentVersions/{mobileAppCo
 
 |プロパティ|タイプ|説明|
 |:---|:---|:---|
-|azureStorageUri|String|Azure ストレージ URI。|
-|isCommitted|Boolean|ファイルがコミットされたかどうかを示す値。|
-|id|String|ファイル ID。|
+|azureStorageUri|文字列|Azure ストレージ URI。|
+|isCommitted|ブール値|ファイルがコミットされたかどうかを示す値。|
+|ID|文字列|ファイル ID。|
 |createdDateTime|DateTimeOffset|ファイルが作成された時刻。|
-|name|String|ファイル名。|
-|size|Int64|暗号化する前のファイルのサイズ。|
+|名前|文字列|ファイル名。|
+|サイズ|Int64|暗号化する前のファイルのサイズ。|
 |sizeEncrypted|Int64|暗号化した後のファイルのサイズ。|
 |azureStorageUriExpirationDateTime|DateTimeOffset|Azure ストレージ URI の有効期限が切れる時刻。|
-|manifest|バイナリ|マニフェスト情報。|
-|uploadState|[mobileAppContentFileUploadState](../resources/intune_apps_mobileappcontentfileuploadstate.md)|現在のアップロード要求の状態。 可能な値は、`success`、`transientError`、`error`、`unknown`、`azureStorageUriRequestSuccess`、`azureStorageUriRequestPending`、`azureStorageUriRequestFailed`、`azureStorageUriRequestTimedOut`、`azureStorageUriRenewalSuccess`、`azureStorageUriRenewalPending`、`azureStorageUriRenewalFailed`、`azureStorageUriRenewalTimedOut`、`commitFileSuccess`、`commitFilePending`、`commitFileFailed`、`commitFileTimedOut` です。|
+|マニフェスト|バイナリ|マニフェスト情報。|
+|uploadState|[mobileAppContentFileUploadState](../resources/intune_apps_mobileappcontentfileuploadstate.md)|アップロードの現在の要求の状態。使用可能な値は、 `success`、 `transientError`、 `error`、 `unknown`、 `azureStorageUriRequestSuccess`、 `azureStorageUriRequestPending`、 `azureStorageUriRequestFailed`、 `azureStorageUriRequestTimedOut`、 `azureStorageUriRenewalSuccess`、 `azureStorageUriRenewalPending`、 `azureStorageUriRenewalFailed`、 `azureStorageUriRenewalTimedOut`、 `commitFileSuccess`、 `commitFilePending`、 `commitFileFailed`、 `commitFileTimedOut`です。|
 
 
 
@@ -91,6 +91,11 @@ Content-Length: 450
   "uploadState": "transientError"
 }
 ```
+
+
+
+
+
 
 
 

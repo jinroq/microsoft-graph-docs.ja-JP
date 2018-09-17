@@ -1,6 +1,6 @@
 # <a name="create-resourceoperation"></a>resourceOperation の作成
 
-> **注:**Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
+> **注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
 
 新しい [resourceOperation](../resources/intune_rbac_resourceoperation.md) オブジェクトを作成します。
 ## <a name="prerequisites"></a>前提条件
@@ -24,8 +24,8 @@ POST /deviceManagement/resourceOperations
 ## <a name="request-headers"></a>要求ヘッダー
 |ヘッダー|値|
 |:---|:---|
-|Authorization|ベアラー &lt;トークン&gt; が必要です。|
-|Accept|application/json|
+|承認|ベアラー &lt;トークン&gt; が必須。|
+|承諾|アプリケーションまたは json|
 
 ## <a name="request-body"></a>要求本文
 要求本文で、resourceOperation オブジェクトの JSON 表記を指定します。
@@ -34,10 +34,10 @@ POST /deviceManagement/resourceOperations
 
 |プロパティ|型|説明|
 |:---|:---|:---|
-|id|String|リソース操作のキー。 読み取り専用で、自動生成されます。|
-|resourceName|String|この操作が実行されるリソースの名前。|
-|actionName|String|この操作が実行するアクションの種類。 actionName は簡潔で、できるだけ少ない単語にする必要があります。|
-|description|String|リソース操作の説明。 Azure Portal で操作にマウス ポインターを合わせると、その操作の説明がテキストで表示されます。|
+|ID|文字列|リソース操作のキー。 読み取り専用で、自動生成されます。|
+|resourceName|文字列|この操作が実行されるリソースの名前。|
+|actionName|文字列|この操作が実行するアクションの種類。 actionName は簡潔で、できるだけ少ない単語にする必要があります。|
+|説明|文字列|リソース操作の説明。 Azure Portal で操作にマウス ポインターを合わせると、その操作の説明がテキストで表示されます。|
 
 
 
@@ -75,6 +75,11 @@ Content-Length: 227
   "description": "Description value"
 }
 ```
+
+
+
+
+
 
 
 

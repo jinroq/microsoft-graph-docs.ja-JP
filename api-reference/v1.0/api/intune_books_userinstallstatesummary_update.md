@@ -1,6 +1,6 @@
 # <a name="update-userinstallstatesummary"></a>userInstallStateSummary の更新
 
-> **注:**Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
+> **注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
 
 [userInstallStateSummary](../resources/intune_books_userinstallstatesummary.md) オブジェクトのプロパティを更新します。
 ## <a name="prerequisites"></a>前提条件
@@ -24,8 +24,8 @@ PATCH /deviceAppManagement/managedEBooks/{managedEBookId}/userStateSummary/{user
 ## <a name="request-headers"></a>要求ヘッダー
 |ヘッダー|値|
 |:---|:---|
-|Authorization|ベアラー &lt;トークン&gt; が必要です。|
-|Accept|application/json|
+|承認|ベアラー &lt;トークン&gt; が必須。|
+|承諾する|アプリケーションまたは json|
 
 ## <a name="request-body"></a>要求本文
 要求本文で、[userInstallStateSummary](../resources/intune_books_userinstallstatesummary.md) オブジェクトの JSON 表記を指定します。
@@ -34,8 +34,8 @@ PATCH /deviceAppManagement/managedEBooks/{managedEBookId}/userStateSummary/{user
 
 |プロパティ|型|説明|
 |:---|:---|:---|
-|id|String|エンティティのキー。|
-|userName|String|ユーザー名です。|
+|ID|文字列|エンティティのキー。|
+|userName|文字列|ユーザー名です。|
 |installedDeviceCount|Int32|インストールされたデバイスの数です。|
 |failedDeviceCount|Int32|失敗したデバイスの数です。|
 |notInstalledDeviceCount|Int32|インストールされていないデバイスの数です。|
@@ -77,6 +77,11 @@ Content-Length: 238
   "notInstalledDeviceCount": 7
 }
 ```
+
+
+
+
+
 
 
 

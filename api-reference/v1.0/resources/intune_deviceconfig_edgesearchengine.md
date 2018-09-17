@@ -9,24 +9,27 @@ IT 管理者が MDM 制御デバイス用向けに事前定義されている既
 ## <a name="properties"></a>プロパティ
 |プロパティ|タイプ|説明|
 |:---|:---|:---|
-|edgeSearchEngineType|[edgeSearchEngineType](../resources/intune_deviceconfig_edgesearchenginetype.md)|IT 管理者が MDM 制御デバイス用向けに事前定義されている既定の検索エンジンを設定できるようにします。 可能な値は、`default`、`bing` です。|
+|edgeSearchEngineType|[edgeSearchEngineType](../resources/intune_deviceconfig_edgesearchenginetype.md)|MDM 管理対象デバイス用の定義済みの既定の検索エンジンを設定するのには、IT 管理者を使用できます。使用可能な値: `default`、 `bing`。|
 
 ## <a name="relationships"></a>リレーションシップ
 なし
 ## <a name="json-representation"></a>JSON 表記
 以下は、リソースの JSON 表記です。
-<!-- {
+<!--{
   "blockType": "resource",
-  "baseType": "microsoft.graph.edgeSearchEngineBase",
   "@odata.type": "microsoft.graph.edgeSearchEngine"
-}
--->
+}-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.edgeSearchEngine",
   "edgeSearchEngineType": "String"
 }
 ```
+
+
+
+
+
 
 
 

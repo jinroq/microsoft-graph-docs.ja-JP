@@ -17,7 +17,6 @@
 以下は、リソースの JSON 表記です。
 <!--{
   "blockType": "resource",
-  "baseType": "microsoft.graph.deviceAndAppManagementAssignmentTarget",
   "@odata.type": "microsoft.graph.groupAssignmentTarget"
 }-->
 ``` json
@@ -26,6 +25,11 @@
   "groupId": "String"
 }
 ```
+
+
+
+
+
 
 
 

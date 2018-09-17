@@ -8,7 +8,8 @@
 
 |アクセス許可の種類|アクセス許可 (特権の大きいものから小さいものへ)|
 |:---|:---|
-|委任 (職場または学校のアカウント)|DeviceManagementApps.ReadWrite.All、DeviceManagementApps.Read.All|
+|委任 (職場または学校のアカウント)| _コンテキストによって異なります_|
+| &nbsp; &nbsp; MAM | DeviceManagementApps.ReadWrite.All、DeviceManagementApps.Read.All |
 |委任 (個人用 Microsoft アカウント)|サポートされていません。|
 |アプリケーション|サポートされていません。|
 
@@ -24,8 +25,8 @@ GET /users/{usersId}/getManagedAppDiagnosticStatuses
 ## <a name="request-headers"></a>要求ヘッダー
 |ヘッダー|値|
 |:---|:---|
-|Authorization|ベアラー &lt;トークン&gt; が必須。|
-|Accept|application/json|
+|承認|ベアラー &lt;トークン&gt; が必須。|
+|承諾する|アプリケーションまたは json|
 
 ## <a name="request-body"></a>要求本文
 このメソッドには、要求本文を指定しません。

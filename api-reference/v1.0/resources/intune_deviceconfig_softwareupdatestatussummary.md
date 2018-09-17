@@ -13,7 +13,7 @@
 |プロパティ|タイプ|説明|
 |:---|:---|:---|
 |ID|文字列|エンティティのキー。|
-|displayName|文字列|ポリシーの名前。|
+|名前を表示する|文字列|ポリシーの名前。|
 |compliantDeviceCount|Int32|準拠デバイスの数。|
 |nonCompliantDeviceCount|Int32|準拠していないデバイスの数。|
 |remediatedDeviceCount|Int32|修復済みデバイスの数。|
@@ -35,8 +35,8 @@
 以下は、リソースの JSON 表記です。
 <!--{
   "blockType": "resource",
-  "keyProperty": "id",
   "baseType": "microsoft.graph.entity",
+  "keyProperty": "id",
   "@odata.type": "microsoft.graph.softwareUpdateStatusSummary"
 }-->
 ``` json
@@ -60,6 +60,11 @@
   "notApplicableUserCount": 1024
 }
 ```
+
+
+
+
+
 
 
 

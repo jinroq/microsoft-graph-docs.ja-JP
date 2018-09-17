@@ -25,7 +25,7 @@ POST /deviceAppManagement/mobileApps
 |ヘッダー|値|
 |:---|:---|
 |承認|ベアラー &lt;トークン&gt; が必須。|
-|承諾|application/json|
+|承諾|アプリケーションまたは json|
 
 ## <a name="request-body"></a>要求本文
 要求本文で、webApp オブジェクトの JSON 表記を指定します。
@@ -47,7 +47,7 @@ POST /deviceAppManagement/mobileApps
 |所有者|文字列|アプリの所有者。 [mobileApp](../resources/intune_apps_mobileapp.md) から継承します|
 |開発者|文字列|アプリの開発者。 [mobileApp](../resources/intune_apps_mobileapp.md) から継承します|
 |備考|文字列|アプリ用のメモ。 [mobileApp](../resources/intune_apps_mobileapp.md) から継承します|
-|publishingState|[mobileAppPublishingState](../resources/intune_apps_mobileapppublishingstate.md)|アプリの発行の状態。 アプリが発行されていない限り、アプリを割り当てることができません。 [mobileApp](../resources/intune_apps_mobileapp.md) から継承します。 可能な値は、`notPublished`、`processing`、`published` です。|
+|publishingState|[mobileAppPublishingState](../resources/intune_apps_mobileapppublishingstate.md)|アプリケーションの発行の状態です。アプリが公開されていない限り、アプリケーションを割り当てることができません。 [MobileApp](../resources/intune_apps_mobileapp.md)から継承されます。使用可能な値は`notPublished`、`processing`、`published`です。|
 |appUrl|文字列|Web アプリの URL。|
 |useManagedBrowser|ブール値|管理対象のブラウザーを使用するかどうかを指定します。 このプロパティは、Android と iOS にのみ適用されます。|
 
@@ -118,6 +118,11 @@ Content-Length: 817
   "useManagedBrowser": true
 }
 ```
+
+
+
+
+
 
 
 

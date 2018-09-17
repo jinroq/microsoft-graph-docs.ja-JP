@@ -10,10 +10,10 @@ MDM を使用しない、Windows 情報保護のポリシー
 |メソッド|戻り値の型|説明|
 |:---|:---|:---|
 |[windowsInformationProtectionPoliciesのリスト化](../api/intune_mam_windowsinformationprotectionpolicy_list.md)|[windowsInformationProtectionPolicy](../resources/intune_mam_windowsinformationprotectionpolicy.md) コレクション|[windowsInformationProtectionPolicy](../resources/intune_mam_windowsinformationprotectionpolicy.md) オブジェクトのプロパティとリレーションシップをリストします。|
-|[ windowsInformationProtectionPolicyの入手](../api/intune_mam_windowsinformationprotectionpolicy_get.md)|[windowsInformationProtectionPolicy](../resources/intune_mam_windowsinformationprotectionpolicy.md)|[windowsInformationProtectionPolicy](../resources/intune_mam_windowsinformationprotectionpolicy.md) オブジェクトのプロパティとリレーションシップを読み取ります。|
-|[ windowsInformationProtectionPolicyの生成](../api/intune_mam_windowsinformationprotectionpolicy_create.md)|[windowsInformationProtectionPolicy](../resources/intune_mam_windowsinformationprotectionpolicy.md)|新しい [windowsInformationProtectionPolicy](../resources/intune_mam_windowsinformationprotectionpolicy.md) オブジェクトを作成します。|
-|[ windowsInformationProtectionPolicyの削除](../api/intune_mam_windowsinformationprotectionpolicy_delete.md)|なし|[windowsInformationProtectionPolicy](../resources/intune_mam_windowsinformationprotectionpolicy.md) を削除します。|
-|[ windowsInformationProtectionPolicyの更新](../api/intune_mam_windowsinformationprotectionpolicy_update.md)|[windowsInformationProtectionPolicy](../resources/intune_mam_windowsinformationprotectionpolicy.md)|[windowsInformationProtectionPolicy](../resources/intune_mam_windowsinformationprotectionpolicy.md) オブジェクトのプロパティを更新します。|
+|[windowsInformationProtectionPolicyの入手](../api/intune_mam_windowsinformationprotectionpolicy_get.md)|[windowsInformationProtectionPolicy](../resources/intune_mam_windowsinformationprotectionpolicy.md)|[windowsInformationProtectionPolicy](../resources/intune_mam_windowsinformationprotectionpolicy.md) オブジェクトのプロパティとリレーションシップを読み取ります。|
+|[windowsInformationProtectionPolicyの生成](../api/intune_mam_windowsinformationprotectionpolicy_create.md)|[windowsInformationProtectionPolicy](../resources/intune_mam_windowsinformationprotectionpolicy.md)|新しい [windowsInformationProtectionPolicy](../resources/intune_mam_windowsinformationprotectionpolicy.md) オブジェクトを作成します。|
+|[windowsInformationProtectionPolicyの削除](../api/intune_mam_windowsinformationprotectionpolicy_delete.md)|なし|[windowsInformationProtectionPolicy](../resources/intune_mam_windowsinformationprotectionpolicy.md) を削除します。|
+|[windowsInformationProtectionPolicyの更新](../api/intune_mam_windowsinformationprotectionpolicy_update.md)|[windowsInformationProtectionPolicy](../resources/intune_mam_windowsinformationprotectionpolicy.md)|[windowsInformationProtectionPolicy](../resources/intune_mam_windowsinformationprotectionpolicy.md) オブジェクトのプロパティを更新します。|
 
 ## <a name="properties"></a>プロパティ
 |プロパティ|タイプ|説明|
@@ -22,9 +22,9 @@ MDM を使用しない、Windows 情報保護のポリシー
 |説明|文字列|ポリシーの説明。 [managedAppPolicy](../resources/intune_mam_managedapppolicy.md) から継承します|
 |createdDateTime|DateTimeOffset|ポリシーが作成された日時。 [managedAppPolicy](../resources/intune_mam_managedapppolicy.md) から継承します|
 |lastModifiedDateTime|DateTimeOffset|ポリシーが変更された最終日時。 [managedAppPolicy](../resources/intune_mam_managedapppolicy.md) から継承します|
-|ID|文字列|エンティティのキー。 [managedAppPolicy](../resources/intune_mam_managedapppolicy.md) から継承します|
+|id|文字列|エンティティのキー。 [managedAppPolicy](../resources/intune_mam_managedapppolicy.md) から継承します|
 |バージョン|文字列|エンティティのバージョン。 [managedAppPolicy](../resources/intune_mam_managedapppolicy.md) から継承します|
-|enforcementLevel|[windowsInformationProtectionEnforcementLevel](../resources/intune_mam_windowsinformationprotectionenforcementlevel.md)|WIP の適用レベルです。 [WindowsInformationProtection](../resources/intune_mam_windowsinformationprotection.md)からサポートされている値継承の列挙型定義を参照してください。 可能な値は、`noProtection`、`encryptAndAuditOnly`、`encryptAuditAndPrompt`、`encryptAuditAndBlock` です。|
+|enforcementLevel|[windowsInformationProtectionEnforcementLevel](../resources/intune_mam_windowsinformationprotectionenforcementlevel.md)|WIP の実施レベル。[windowsInformationProtection](../resources/intune_mam_windowsinformationprotection.md) から継承されたサポートされている値の Enum 定義を参照してください。可能な値は `noProtection`、`encryptAndAuditOnly`、`encryptAuditAndPrompt`、`encryptAuditAndBlock`です。|
 |enterpriseDomain|文字列|プライマリ エンタープライズ ドメイン ([windowsInformationProtection](../resources/intune_mam_windowsinformationprotection.md) から継承)|
 |enterpriseProtectedDomainNames|[windowsInformationProtectionResourceCollection](../resources/intune_mam_windowsinformationprotectionresourcecollection.md) コレクション|保護するエンタープライズ ドメインのリスト ([windowsInformationProtection](../resources/intune_mam_windowsinformationprotection.md) から継承)|
 |protectionUnderLockConfigRequired|ブール値|ロック機能による保護 (pin での暗号化) を構成するかどうかを指定します ([windowsInformationProtection](../resources/intune_mam_windowsinformationprotection.md) から継承)|
@@ -50,9 +50,9 @@ MDM を使用しない、Windows 情報保護のポリシー
 |mdmEnrollmentUrl|文字列|MDM の登録 URL|
 |windowsHelloForBusinessBlocked|ブール値|Windows にサインインするためのメソッドとして Windows Hello for Business を設定するブール値です。|
 |pinMinimumLength|Int32|PIN に必要な文字の最小数を設定する整数値です。 既定値は 4 です。 このポリシー設定で構成できる最小値は 4 です。 構成できる最大値は、[PIN の最大文字数] ポリシー設定で構成された値、または 127 のうち、どちらか小さい方です。|
-|pinUppercaseLetters|[windowsInformationProtectionPinCharacterRequirements](../resources/intune_mam_windowsinformationprotectionpincharacterrequirements.md)|Windows Hello for Business の PIN における大文字の使用を構成する整数値です。 既定値は NotAllow です。 可能な値は、`notAllow`、`requireAtLeastOne`、`allow` です。|
-|pinLowercaseLetters|[windowsInformationProtectionPinCharacterRequirements](../resources/intune_mam_windowsinformationprotectionpincharacterrequirements.md)|Windows Hello for Business の PIN における小文字の使用を構成する整数値です。 既定値は NotAllow です。 可能な値は、`notAllow`、`requireAtLeastOne`、`allow` です。|
-|pinSpecialCharacters|[windowsInformationProtectionPinCharacterRequirements](../resources/intune_mam_windowsinformationprotectionpincharacterrequirements.md)|Windows Hello for Business の PIN における特殊文字の使用を構成する整数値です。 Windows Hello for Business の PIN ジェスチャの有効な特殊文字は以下のとおりです: ! " # $ % & ' ( ) * + , - . / : ; < = > ? @ \[ \ \] ^ _ ` { | } ~。 既定値は NotAllow です。 可能な値は、`notAllow`、`requireAtLeastOne`、`allow` です。|
+|pinUppercaseLetters|[windowsInformationProtectionPinCharacterRequirements](../resources/intune_mam_windowsinformationprotectionpincharacterrequirements.md)|Windows Hello for Business PINで大文字使用を構成する整数値。規定値はNotAllow。可能な値は、`notAllow`、 `requireAtLeastOne`、 `allow`。|
+|pinLowercaseLetters|[windowsInformationProtectionPinCharacterRequirements](../resources/intune_mam_windowsinformationprotectionpincharacterrequirements.md)|Windows Hello for Business PINで小文字使用を構成する整数値。規定値は、NotAllow。可能な値は、`notAllow`、 `requireAtLeastOne`、`allow`。|
+|pinSpecialCharacters|[windowsInformationProtectionPinCharacterRequirements](../resources/intune_mam_windowsinformationprotectionpincharacterrequirements.md)|Windows Hello for Business の PIN における特殊文字の使用を構成する整数値です。 Windows Hello for Business の PIN ジェスチャの有効な特殊文字は以下のとおりです: ! " # $ % & ' ( ) * + , - . / : ; < = > ? @ \[ \ \] ^ _ ` { | } ~。規定値は、NotAllow。可能な値は`notAllow`、 `requireAtLeastOne`、`allow`。|
 |pinExpirationDays|Int32|この整数値は、システムがユーザーに PIN の変更を要求する前の、PIN の使用可能な期間 (日数) を指定します。 このポリシー設定で構成できる最大値は 730 です。 このポリシー設定で構成できる最小値は 0 です。 このポリシーが 0 に設定されている場合、ユーザーの PIN は期限切れになりません。 このノードは、Windows 10 バージョン 1511 で追加されました。 既定値は 0 です。|
 |numberOfPastPinsRemembered|Int32|再使用できないユーザー アカウントに関連付けられる過去の PIN の数を指定する整数値です。 このポリシー設定で構成できる最大値は 50 です。 このポリシー設定で構成できる最小値は 0 です。 このポリシーが 0 に設定されている場合、以前の PIN の格納は不要です。 このノードは、Windows 10 バージョン 1511 で追加されました。 既定値は 0 です。|
 |passwordMaximumAttemptCount|Int32|デバイスがワイプされるまでの、許可されている認証失敗の回数です。 値を 0 にすると、デバイス ワイプ機能が無効になります。 範囲は整数 X (デスクトップの場合: 4 <= X <= 16、モバイル デバイスの場合: 0 <= X <= 999) です。|
@@ -70,8 +70,8 @@ MDM を使用しない、Windows 情報保護のポリシー
 以下は、リソースの JSON 表記です。
 <!--{
   "blockType": "resource",
-  "keyProperty": "id",
   "baseType": "microsoft.graph.windowsInformationProtection",
+  "keyProperty": "id",
   "@odata.type": "microsoft.graph.windowsInformationProtectionPolicy"
 }-->
 ``` json
@@ -103,7 +103,7 @@ MDM を使用しない、Windows 情報保護のポリシー
     "certificate": "binary"
   },
   "revokeOnUnenrollDisabled": true,
-  "rightsManagementServicesTemplateId": "79199ed9-e50b-4257-8de4-70b9c8685061",
+  "rightsManagementServicesTemplateId": "guid",
   "azureRightsManagementServicesAllowed": true,
   "iconsVisible": true,
   "protectedApps": [
@@ -215,6 +215,11 @@ MDM を使用しない、Windows 情報保護のポリシー
   "daysWithoutContactBeforeUnenroll": 1024
 }
 ```
+
+
+
+
+
 
 
 

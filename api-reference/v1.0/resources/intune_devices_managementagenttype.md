@@ -6,7 +6,7 @@
 ## <a name="members"></a>メンバー
 |メンバー|値|説明|
 |:---|:---|:---|
-|eas|1|デバイスは、Exchange サーバーによって管理されます。|
+|EAS|1|デバイスは、Exchange サーバーによって管理されます。|
 |mdm|2|デバイスは Intune MDM によって管理されます。|
 |easMdm|3|デバイスは、Exchange サーバーによって管理されます。|
 |intuneClient|4|Intune クライアントが管理されています。|
@@ -17,6 +17,11 @@
 |不明|16|不明な管理エージェントの種類です。|
 |jamf|32|デバイス属性は、Jamf からフェッチされます。|
 |googleCloudDevicePolicyController|64|デバイスは、Google の CloudDPC によって管理されます。|
+
+
+
+
+
 
 
 

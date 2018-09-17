@@ -6,8 +6,8 @@ Windows 情報保護の DataRecoveryCertificate
 ## <a name="properties"></a>プロパティ
 |プロパティ|タイプ|説明|
 |:---|:---|:---|
-|subjectName|文字列型 (String)|データ回復証明書のサブジェクト名|
-|説明|文字列型 (String)|データ回復証明書の説明|
+|subjectName|文字列|データ回復証明書のサブジェクト名|
+|説明|文字列|データ回復証明書の説明|
 |expirationDateTime|DateTimeOffset|データ回復証明書の有効期限日時|
 |証明書|バイナリ型 (Binary)|データ回復証明書|
 
@@ -28,6 +28,11 @@ Windows 情報保護の DataRecoveryCertificate
   "certificate": "binary"
 }
 ```
+
+
+
+
+
 
 
 

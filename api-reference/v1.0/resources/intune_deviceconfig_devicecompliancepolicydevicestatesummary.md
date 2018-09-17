@@ -1,6 +1,6 @@
 # <a name="devicecompliancepolicydevicestatesummary-resource-type"></a>deviceCompliancePolicyDeviceStateSummary リソースの種類
 
-> **注:**Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
+> **注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
 
 まだ文書化されていません
 ## <a name="methods"></a>メソッド
@@ -14,7 +14,7 @@
 |:---|:---|:---|
 |inGracePeriodCount|Int32|解約猶予期間内のデバイスの数|
 |configManagerCount|Int32|System Center Configuration Manager によってコンプライアンスが管理されているデバイスの数|
-|id|String|エンティティのキー。|
+|ID|文字列|エンティティのキー。|
 |unknownDeviceCount|Int32|不明なデバイスの数|
 |notApplicableDeviceCount|Int32|該当しないデバイスの数|
 |compliantDeviceCount|Int32|準拠デバイスの数|
@@ -27,12 +27,12 @@
 なし
 ## <a name="json-representation"></a>JSON 表記
 以下は、リソースの JSON 表記です。
-<!-- {
+<!--{
   "blockType": "resource",
+  "baseType": "microsoft.graph.entity",
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.deviceCompliancePolicyDeviceStateSummary"
-}
--->
+}-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.deviceCompliancePolicyDeviceStateSummary",
@@ -48,6 +48,11 @@
   "conflictDeviceCount": 1024
 }
 ```
+
+
+
+
+
 
 
 

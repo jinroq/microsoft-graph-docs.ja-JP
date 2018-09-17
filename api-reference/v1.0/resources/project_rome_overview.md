@@ -10,7 +10,7 @@ Microsoft Graph のアクティビティにより、デバイスやプラット�
 
 - ディープ リンク
 - 視覚表示
-- [http://schema.org/](http://schema.org/) で共有されたボキャブラリを使用した、アクティビティを記述するコンテンツのメタデータ
+- で共有されたボキャブラリを使用した、アクティビティを記述するコンテンツのメタデータ[http://schema.org/](http://schema.org/)
 
 アプリケーションによってセッションが作成されると、履歴項目がアクティビティに追加され、ユーザー エンゲージメントの期間が反映されます。 ユーザーがアクティビティに再エンゲージするたびに、新しい履歴項目がアクティビティに追加され、ユーザー エンゲージメントが蓄積されます。
 
@@ -24,3 +24,4 @@ Microsoft Graph のアクティビティにより、デバイスやプラット�
 - [アクティビティを削除する](../api/projectrome_delete_activity.md)
 - [履歴項目を作成または置換する](../api/projectrome_put_historyitem.md)
 - [履歴項目を削除する](../api/projectrome_delete_historyitem.md)
+

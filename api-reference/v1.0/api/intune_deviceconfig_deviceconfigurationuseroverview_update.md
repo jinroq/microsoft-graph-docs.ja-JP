@@ -25,7 +25,7 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/userStatusO
 |ヘッダー|値|
 |:---|:---|
 |承認|ベアラー &lt;トークン&gt; が必須。|
-|受託|application/json|
+|受託|アプリケーションまたは json|
 
 ## <a name="request-body"></a>要求本文
 要求本文で、[deviceConfigurationUserOverview](../resources/intune_deviceconfig_deviceconfigurationuseroverview.md) オブジェクトの JSON 表記を指定します。
@@ -34,7 +34,7 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/userStatusO
 
 |プロパティ|型|説明|
 |:---|:---|:---|
-|id|文字列|エンティティのキー。|
+|ID|文字列|エンティティのキー。|
 |pendingCount|Int32|保留中のユーザーの数|
 |notApplicableCount|Int32|該当しないユーザーの数|
 |successCount|Int32|成功したユーザーの数|
@@ -86,6 +86,11 @@ Content-Length: 331
   "configurationVersion": 4
 }
 ```
+
+
+
+
+
 
 
 

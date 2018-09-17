@@ -1,6 +1,6 @@
-# <a name="create-windows10secureassessmentconfiguration"></a>Create windows10SecureAssessmentConfiguration
+# <a name="create-windows10secureassessmentconfiguration"></a>windows10SecureAssessmentConfigurationを作成する
 
-> **注:**Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
+> **注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
 
 新しい [windows10SecureAssessmentConfiguration](../resources/intune_deviceconfig_windows10secureassessmentconfiguration.md) オブジェクトを作成します。
 ## <a name="prerequisites"></a>前提条件
@@ -8,7 +8,7 @@
 
 |アクセス許可の種類|アクセス許可 (特権の大きいものから小さいものへ)|
 |:---|:---|
-|委任 (職場または学校アカウント)|DeviceManagementConfiguration.ReadWrite.All|
+|委任 (職場または学校のアカウント)|DeviceManagementConfiguration.ReadWrite.All|
 |委任 (個人用 Microsoft アカウント)|サポートされていません。|
 |アプリケーション|サポートされていません。|
 
@@ -24,8 +24,8 @@ POST /deviceManagement/deviceConfigurations
 ## <a name="request-headers"></a>要求ヘッダー
 |ヘッダー|値|
 |:---|:---|
-|Authorization|ベアラー &lt;トークン&gt; が必須。|
-|Accept|application/json|
+|承認|ベアラー &lt;トークン&gt; が必須。|
+|承諾する|アプリケーションまたは json|
 
 ## <a name="request-body"></a>要求本文
 要求本文で、windows10SecureAssessmentConfiguration オブジェクトの JSON 表記を指定します。
@@ -34,17 +34,17 @@ POST /deviceManagement/deviceConfigurations
 
 |プロパティ|型|説明|
 |:---|:---|:---|
-|id|String|エンティティのキー。 [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md) から継承します|
+|ID|文字列|エンティティのキー。 [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md) から継承します|
 |lastModifiedDateTime|DateTimeOffset|オブジェクトが最後に変更された DateTime。 [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md) から継承します|
 |createdDateTime|DateTimeOffset|オブジェクトが作成された DateTime。 [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md) から継承します|
-|description|String|デバイス構成について管理者が提供した説明。 [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md) から継承します|
-|displayName|String|デバイス構成について管理者が指定した名前。 [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md) から継承します|
-|version|Int32|デバイス構成のバージョン。 [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md) から継承します|
-|launchUri|String|安全性評価ブラウザーを起動すると自動的に読み込まれる評価への URL リンク。 有効な URL である必要があります (http\[s\]://msdn.microsoft.com/)。|
-|configurationAccount|String|Windows デバイスにテストを受けさせる際に、それを構成するために使用するアカウント。 ユーザーは、ドメイン アカウント (domain\user)、AAD アカウント (username@tenant.com)、ローカル アカウント (username) のいずれでも可能です。|
-|allowPrinting|Boolean|テスト中にアプリが印刷することを許可するかどうかを示します。|
-|allowScreenCapture|Boolean|テスト中に画面キャプチャ機能を許可するかどうかを示します。|
-|allowTextSuggestion|Boolean|テスト中に入力ヒントを許可するかどうかを示します。|
+|説明|文字列|デバイス構成について管理者が提供した説明。 [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md) から継承します|
+|displayName|文字列|デバイス構成について管理者が指定した名前。 [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md) から継承します|
+|バージョン|Int32|デバイス構成のバージョン。 [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md) から継承します|
+|launchUri|文字列|安全性評価ブラウザーを起動すると自動的に読み込まれる評価への URL リンク。 有効な URL である必要があります (http\[s\]://msdn.microsoft.com/)。|
+|configurationAccount|文字列|Windows デバイスにテストを受けさせる際に、それを構成するために使用するアカウント。 ユーザーは、ドメイン アカウント (domain\user)、AAD アカウント (username@tenant.com)、ローカル アカウント (username) のいずれでも可能です。|
+|allowPrinting|ブール値|テスト中にアプリが印刷することを許可するかどうかを示します。|
+|allowScreenCapture|ブール値|テスト中に画面キャプチャ機能を許可するかどうかを示します。|
+|allowTextSuggestion|ブール値|テスト中に入力ヒントを許可するかどうかを示します。|
 
 
 
@@ -95,6 +95,11 @@ Content-Length: 531
   "allowTextSuggestion": true
 }
 ```
+
+
+
+
+
 
 
 

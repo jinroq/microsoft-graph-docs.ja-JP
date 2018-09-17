@@ -25,7 +25,7 @@ PATCH /deviceManagement/auditEvents/{auditEventId}
 |ヘッダー|値|
 |:---|:---|
 |承認|ベアラー &lt;トークン&gt; が必須。|
-|承諾|application/json|
+|承諾|アプリケーションまたは JSON|
 
 ## <a name="request-body"></a>要求本文
 要求本文で、[auditEvent](../resources/intune_auditing_auditevent.md) オブジェクトの JSON 表記を指定します。
@@ -34,18 +34,18 @@ PATCH /deviceManagement/auditEvents/{auditEventId}
 
 |プロパティ|タイプ|説明|
 |:---|:---|:---|
-|id|文字列|エンティティのキー。|
+|ID|文字列|エンティティのキー。|
 |displayName|文字列|イベントの表示名。|
 |componentName|文字列|コンポーネント名。|
-|actor|[auditActor](../resources/intune_auditing_auditactor.md)|監査イベントに関連付けられている AAD ユーザーとアプリケーション。|
-|activity|文字列|わかりやすいアクティビティの名前。|
+|アクター|[auditActor](../resources/intune_auditing_auditactor.md)|監査イベントに関連付けられている AAD ユーザーとアプリケーション。|
+|アクティビティ|文字列|わかりやすいアクティビティの名前。|
 |activityDateTime|DateTimeOffset|アクティビティが実行された日時 (UTC)。|
 |activityType|文字列|実行されたアクティビティの種類。|
 |activityOperationType|文字列|アクティビティの HTTP 操作の種類。|
 |activityResult|文字列|アクティビティの結果。|
 |correlationId|Guid|システム内でのアクティビティに関連付けるために使用されるクライアント要求 ID。|
-|resources|[auditResource](../resources/intune_auditing_auditresource.md) コレクション|変更中のリソースです。|
-|category|文字列|監査のカテゴリです。|
+|リソース|[auditResource](../resources/intune_auditing_auditresource.md) コレクション|変更中のリソースです。|
+|カテゴリ|文字列|監査のカテゴリです。|
 
 
 
@@ -81,7 +81,7 @@ Content-length: 1338
   "activityType": "Activity Type value",
   "activityOperationType": "Activity Operation Type value",
   "activityResult": "Activity Result value",
-  "correlationId": "79199ed9-e50b-4257-8de4-70b9c8685061",
+  "correlationId": "<Unknown Primitive Type Edm.Guid>",
   "resources": [
     {
       "@odata.type": "microsoft.graph.auditResource",
@@ -132,7 +132,7 @@ Content-Length: 1436
   "activityType": "Activity Type value",
   "activityOperationType": "Activity Operation Type value",
   "activityResult": "Activity Result value",
-  "correlationId": "79199ed9-e50b-4257-8de4-70b9c8685061",
+  "correlationId": "<Unknown Primitive Type Edm.Guid>",
   "resources": [
     {
       "@odata.type": "microsoft.graph.auditResource",
@@ -152,6 +152,11 @@ Content-Length: 1436
   "category": "Category value"
 }
 ```
+
+
+
+
+
 
 
 

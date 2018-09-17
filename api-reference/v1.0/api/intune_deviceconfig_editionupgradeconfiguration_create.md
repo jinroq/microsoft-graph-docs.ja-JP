@@ -25,7 +25,7 @@ POST /deviceManagement/deviceConfigurations
 |ヘッダー|値|
 |:---|:---|
 |承認|ベアラー &lt;トークン&gt; が必須。|
-|承諾|application/json|
+|承諾|アプリケーションまたは json|
 
 ## <a name="request-body"></a>要求本文
 要求本文では、editionUpgradeConfiguration オブジェクトの JSON 表記を指定します。
@@ -40,9 +40,9 @@ POST /deviceManagement/deviceConfigurations
 |説明|文字列|デバイス構成について管理者が提供した説明。 [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md) から継承します|
 |displayName|文字列|デバイス構成について管理者が指定した名前。 [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md) から継承します|
 |バージョン|Int32|デバイス構成のバージョン。 [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md) から継承します|
-|licenseType|[editionUpgradeLicenseType](../resources/intune_deviceconfig_editionupgradelicensetype.md)|エディション アップグレード ライセンスの種類。 可能な値は、`productKey`、`licenseFile` です。|
-|targetEdition|[windows10EditionType](../resources/intune_deviceconfig_windows10editiontype.md)|エディション アップグレードの対象エディション。 可能な値は、 `windows10Enterprise`、 `windows10EnterpriseN`、 `windows10Education`、 `windows10EducationN`、 `windows10MobileEnterprise`、 `windows10HolographicEnterprise`、 `windows10Professional`、 `windows10ProfessionalN`、 `windows10ProfessionalEducation`、 `windows10ProfessionalEducationN`、 `windows10ProfessionalWorkstation`、 `windows10ProfessionalWorkstationN`です。|
-|license|文字列|エディション アップグレード ライセンスのファイル コンテンツ。|
+|licenseType|[editionUpgradeLicenseType](../resources/intune_deviceconfig_editionupgradelicensetype.md)|エディションのアップグレードのライセンスの種類。使用可能な値は `productKey`、 `licenseFile`です。|
+|targetEdition|[windows10EditionType](../resources/intune_deviceconfig_windows10editiontype.md)|エディションのアップグレード対象のエディションです。使用可能な値は `windows10Enterprise`、 `windows10EnterpriseN`、 `windows10Education`、 `windows10EducationN`、 `windows10MobileEnterprise`、 `windows10HolographicEnterprise`、 `windows10Professional`、 `windows10ProfessionalN`、 `windows10ProfessionalEducation`、 `windows10ProfessionalEducationN`、 `windows10ProfessionalWorkstation`、 `windows10ProfessionalWorkstationN`です。|
+|ライセンス|文字列|エディション アップグレード ライセンスのファイル コンテンツ。|
 |productKey|文字列|エディション アップグレードのプロダクト キー。|
 
 
@@ -92,6 +92,11 @@ Content-Length: 483
   "productKey": "Product Key value"
 }
 ```
+
+
+
+
+
 
 
 

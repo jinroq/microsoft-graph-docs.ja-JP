@@ -29,9 +29,8 @@
 以下は、リソースの JSON 表記です。
 <!--{
   "blockType": "resource",
-  "abstract": true,
-  "keyProperty": "id",
   "baseType": "microsoft.graph.managedAppPolicy",
+  "keyProperty": "id",
   "@odata.type": "microsoft.graph.managedAppConfiguration"
 }-->
 ``` json
@@ -52,6 +51,11 @@
   ]
 }
 ```
+
+
+
+
+
 
 
 

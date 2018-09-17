@@ -1,6 +1,6 @@
 # <a name="macoscompliancepolicy-resource-type"></a>macOSCompliancePolicy リソースの種類
 
-> **注:**Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
+> **注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
 
 このクラスには、Mac OS のコンプライアンス設定が含まれています。
 
@@ -18,46 +18,49 @@
 ## <a name="properties"></a>プロパティ
 |プロパティ|型|説明|
 |:---|:---|:---|
-|id|String|エンティティのキー。 [deviceCompliancePolicy](../resources/intune_deviceconfig_devicecompliancepolicy.md) から継承します|
+|ID|文字列|エンティティのキー。 [deviceCompliancePolicy](../resources/intune_deviceconfig_devicecompliancepolicy.md) から継承します|
 |createdDateTime|DateTimeOffset|オブジェクトが作成された DateTime。 [deviceCompliancePolicy](../resources/intune_deviceconfig_devicecompliancepolicy.md) から継承します|
-|description|String|デバイス構成について管理者が提供した説明です。 [deviceCompliancePolicy](../resources/intune_deviceconfig_devicecompliancepolicy.md) から継承します|
-|lastModifiedDateTime|DateTimeOffset|オブジェクトの最終更新の DateTime。 [deviceCompliancePolicy](../resources/intune_deviceconfig_devicecompliancepolicy.md) から継承します|
-|displayName|String|デバイス構成について管理者が指定した名前です。 [deviceCompliancePolicy](../resources/intune_deviceconfig_devicecompliancepolicy.md) から継承します|
-|version|Int32|デバイス構成のバージョン。 [deviceCompliancePolicy](../resources/intune_deviceconfig_devicecompliancepolicy.md) から継承します|
-|passwordRequired|Boolean|パスワードを要求するかどうかを指定します。|
-|passwordBlockSimple|Boolean|単純なパスワードをブロックするかどうかを示します。|
-|passwordExpirationDays|Int32|パスワードの有効期限が切れるまでの日数です。 有効な値は 1 から 65535 までです|
-|passwordMinimumLength|Int32|パスワードの最小の長さです。 有効な値は 4 から 14 までです|
+|説明|文字列|デバイス構成について管理者が提供した説明。 [deviceCompliancePolicy](../resources/intune_deviceconfig_devicecompliancepolicy.md) から継承します|
+|lastModifiedDateTime|DateTimeOffset|オブジェクトが最後に変更された DateTime。 [deviceCompliancePolicy](../resources/intune_deviceconfig_devicecompliancepolicy.md) から継承します|
+|displayName|文字列|デバイス構成について管理者が指定した名前。 [deviceCompliancePolicy](../resources/intune_deviceconfig_devicecompliancepolicy.md) から継承します|
+|バージョン|Int32|デバイス構成のバージョン。 [deviceCompliancePolicy](../resources/intune_deviceconfig_devicecompliancepolicy.md) から継承します|
+|passwordRequired|ブール値|パスワードを要求するかどうかを指定します。|
+|passwordBlockSimple|ブール値|単純なパスワードをブロックするかどうかを示します。|
+|passwordExpirationDays|Int32|パスワードの有効期限が切れるまでの日数。 有効な値は 1 から 65535 までです|
+|passwordMinimumLength|Int32|パスワードの最小の長さ。 有効な値は 4 から 14 までです|
 |passwordMinutesOfInactivityBeforeLock|Int32|パスワードが要求されるまでの非アクティブ時間 (分)。|
-|passwordPreviousPasswordBlockCount|Int32|禁止する、以前のパスワードの数です。 有効な値は 1 から 24 までです|
+|passwordPreviousPasswordBlockCount|Int32|禁止する、以前のパスワードの数。 有効な値は 1 から 24 までです|
 |passwordMinimumCharacterSetCount|Int32|パスワードに必要な文字セットの数。|
-|passwordRequiredType|String|必要なパスワードの種類。 可能な値は、`deviceDefault`、`alphanumeric`、`numeric` です。|
-|osMinimumVersion|String|最小の iOS バージョン。|
-|osMaximumVersion|String|最大の iOS バージョン。|
-|systemIntegrityProtectionEnabled|Boolean|デバイスでシステム整合性の保護が有効になっている必要があります。|
-|deviceThreatProtectionEnabled|Boolean|デバイスの脅威保護が有効になっている必要があります。|
-|deviceThreatProtectionRequiredSecurityLevel|String|Mobile Threat Protection には、コンプライアンス違反をレポートするための最小のリスク レベルが必要です。 可能な値は、`unavailable`、`secured`、`low`、`medium`、`high`、`notSet` です。|
-|storageRequireEncryption|Boolean|Mac OS のデバイスでの暗号化が必要です。|
+|passwordRequiredType|[requiredPasswordType](../resources/intune_deviceconfig_requiredpasswordtype.md)|必要なパスワードの種類。 可能な値は、`deviceDefault`、`alphanumeric`、`numeric` です。|
+|osMinimumVersion|文字列|最低限必要な iOS のバージョン。|
+|osMaximumVersion|文字列|最大の iOS バージョン。|
+|systemIntegrityProtectionEnabled|ブール値|デバイスでシステム整合性の保護が有効になっている必要があります。|
+|deviceThreatProtectionEnabled|ブール値|デバイスへの脅威に対する保護が有効になっている必要があります。|
+|deviceThreatProtectionRequiredSecurityLevel|[deviceThreatProtectionLevel](../resources/intune_deviceconfig_devicethreatprotectionlevel.md)|Mobile Threat Protection に、コンプライアンス違反をレポートするための最小のリスク レベルを要求します。 可能な値は、`unavailable`、`secured`、`low`、`medium`、`high`、`notSet` です。|
+|storageRequireEncryption|ブール値|Mac OS デバイスでの暗号化を要求します。|
+|firewallEnabled|ブール値|ファイアウォールを有効または無効にするかどうかを決定します。|
+|firewallBlockAllIncoming|ブール値|[すべての受信接続をブロックする] オプションに対応します。|
+|firewallEnableStealthMode|ブール値|[ステルス モードの有効化] に対応します。|
 
 ## <a name="relationships"></a>リレーションシップ
 |リレーションシップ|型|説明|
 |:---|:---|:---|
 |scheduledActionsForRule|[deviceComplianceScheduledActionForRule](../resources/intune_deviceconfig_devicecompliancescheduledactionforrule.md) コレクション|このルールのスケジュール済みのアクションのリスト ([deviceCompliancePolicy](../resources/intune_deviceconfig_devicecompliancepolicy.md) から継承)|
-|deviceStatuses|[deviceComplianceDeviceStatus](../resources/intune_deviceconfig_devicecompliancedevicestatus.md) コレクション|DeviceComplianceDeviceStatus のリストです。 [deviceCompliancePolicy](../resources/intune_deviceconfig_devicecompliancepolicy.md) から継承します|
-|userStatuses|[deviceComplianceUserStatus](../resources/intune_deviceconfig_devicecomplianceuserstatus.md) コレクション|DeviceComplianceUserStatus のリストです。 [deviceCompliancePolicy](../resources/intune_deviceconfig_devicecompliancepolicy.md) から継承します|
-|deviceStatusOverview|[deviceComplianceDeviceOverview](../resources/intune_deviceconfig_devicecompliancedeviceoverview.md)|デバイス コンプライアンスのデバイス状態の概要 ([deviceCompliancePolicy](../resources/intune_deviceconfig_devicecompliancepolicy.md) から継承)|
+|deviceStatuses|[deviceComplianceDeviceStatus](../resources/intune_deviceconfig_devicecompliancedevicestatus.md) コレクション|DeviceComplianceDeviceStatus のリスト。 [deviceCompliancePolicy](../resources/intune_deviceconfig_devicecompliancepolicy.md) から継承します|
+|userStatuses|[deviceComplianceUserStatus](../resources/intune_deviceconfig_devicecomplianceuserstatus.md) コレクション|DeviceComplianceUserStatus のリスト。 [deviceCompliancePolicy](../resources/intune_deviceconfig_devicecompliancepolicy.md) から継承します|
+|deviceStatusOverview|[deviceComplianceDeviceOverview](../resources/intune_deviceconfig_devicecompliancedeviceoverview.md)|デバイス コンプライアンスとデバイス状態の概要 ([deviceCompliancePolicy](../resources/intune_deviceconfig_devicecompliancepolicy.md) から継承)|
 |userStatusOverview|[deviceComplianceUserOverview](../resources/intune_deviceconfig_devicecomplianceuseroverview.md)|デバイス コンプライアンスのユーザー状態の概要 ([deviceCompliancePolicy](../resources/intune_deviceconfig_devicecompliancepolicy.md) から継承)|
 |deviceSettingStateSummaries|[settingStateDeviceSummary](../resources/intune_deviceconfig_settingstatedevicesummary.md) コレクション|コンプライアンス設定状態のデバイスの要約 ([deviceCompliancePolicy](../resources/intune_deviceconfig_devicecompliancepolicy.md) から継承)|
-|assignments|[deviceCompliancePolicyAssignment](../resources/intune_deviceconfig_devicecompliancepolicyassignment.md) コレクション|このコンプライアンス ポリシーの割り当てのコレクションです。 [deviceCompliancePolicy](../resources/intune_deviceconfig_devicecompliancepolicy.md) から継承します|
+|割り当て|[deviceCompliancePolicyAssignment](../resources/intune_deviceconfig_devicecompliancepolicyassignment.md) コレクション|このコンプライアンス ポリシーの割り当てのコレクション。 [deviceCompliancePolicy](../resources/intune_deviceconfig_devicecompliancepolicy.md) から継承します|
 
 ## <a name="json-representation"></a>JSON 表記
 以下は、リソースの JSON 表記です。
-<!-- {
+<!--{
   "blockType": "resource",
+  "baseType": "microsoft.graph.deviceCompliancePolicy",
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.macOSCompliancePolicy"
-}
--->
+}-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.macOSCompliancePolicy",
@@ -80,9 +83,17 @@
   "systemIntegrityProtectionEnabled": true,
   "deviceThreatProtectionEnabled": true,
   "deviceThreatProtectionRequiredSecurityLevel": "String",
-  "storageRequireEncryption": true
+  "storageRequireEncryption": true,
+  "firewallEnabled": true,
+  "firewallBlockAllIncoming": true,
+  "firewallEnableStealthMode": true
 }
 ```
+
+
+
+
+
 
 
 

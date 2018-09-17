@@ -1,6 +1,6 @@
 # <a name="update-devicemanagementpartner"></a>deviceManagementPartner の更新
 
-> **注:**Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
+> **注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
 
 [deviceManagementPartner](../resources/intune_onboarding_devicemanagementpartner.md) オブジェクトのプロパティを更新します。
 ## <a name="prerequisites"></a>前提条件
@@ -8,7 +8,7 @@
 
 |アクセス許可の種類|アクセス許可 (特権の大きいものから小さいものへ)|
 |:---|:---|
-|委任 (職場または学校のアカウント)|DeviceManagementServiceConfig.ReadWrite.All|
+|委任 (職場または学校アカウント)|DeviceManagementServiceConfig.ReadWrite.All|
 |委任 (個人用 Microsoft アカウント)|サポートされていません。|
 |アプリケーション|サポートされていません。|
 
@@ -24,8 +24,8 @@ PATCH /deviceManagement/deviceManagementPartners/{deviceManagementPartnerId}
 ## <a name="request-headers"></a>要求ヘッダー
 |ヘッダー|値|
 |:---|:---|
-|承認|ベアラー &lt;トークン&gt;が必須。|
-|承諾|application/json|
+|承認|ベアラー &lt;トークン&gt; が必須。|
+|承諾する|アプリケーションまたは json|
 
 ## <a name="request-body"></a>要求本文
 要求本文で、[deviceManagementPartner](../resources/intune_onboarding_devicemanagementpartner.md) オブジェクトの JSON 表記を指定します。
@@ -34,13 +34,13 @@ PATCH /deviceManagement/deviceManagementPartners/{deviceManagementPartnerId}
 
 |プロパティ|型|説明|
 |:---|:---|:---|
-|id|String|まだ文書化されていません|
+|ID|文字列|まだ文書化されていません|
 |lastHeartbeatDateTime|DateTimeOffset|管理者が [デバイス管理パートナーに接続] オプションを有効にした後の最終ハートビートのタイムスタンプ|
-|partnerState|String|このテナントのパートナーの状態。可能な値は、`unknown`、`unavailable`、`enabled`、`terminated`、`rejected`、`unresponsive` です。|
-|partnerAppType|String|パートナー アプリの種類。可能な値は、`unknown`、`singleTenantApp`、`multiTenantApp` です。|
-|singleTenantAppId|String|パートナーのシングル テナントのアプリ ID|
-|displayName|String|パートナー表示名|
-|isConfigured|Boolean|デバイス管理パートナーが構成されているかどうかを指定します|
+|partnerState|[deviceManagementPartnerTenantState](../resources/intune_onboarding_devicemanagementpartnertenantstate.md)|このテナントのパートナーの状態。 使用可能な値: `unknown`、`unavailable`、`enabled`、`terminated`、`rejected`、`unresponsive`。|
+|partnerAppType|[deviceManagementPartnerAppType](../resources/intune_onboarding_devicemanagementpartnerapptype.md)|パートナー アプリの種類。 可能な値は、`unknown`、`singleTenantApp`、`multiTenantApp` です。|
+|singleTenantAppId|文字列|パートナーのシングル テナントのアプリ ID|
+|displayName|文字列|パートナー表示名|
+|isConfigured|ブール値|デバイス管理パートナーが構成されているかどうかを指定します|
 |whenPartnerDevicesWillBeRemovedDateTime|DateTimeOffset|パートナー デバイスが削除されるときの日時 (UTC)|
 |whenPartnerDevicesWillBeMarkedAsNonCompliantDateTime|DateTimeOffset|パートナー デバイスが準拠していないとマークされる日時 (UTC)|
 
@@ -89,6 +89,11 @@ Content-Length: 551
   "whenPartnerDevicesWillBeMarkedAsNonCompliantDateTime": "2016-12-31T23:58:42.2131231-08:00"
 }
 ```
+
+
+
+
+
 
 
 

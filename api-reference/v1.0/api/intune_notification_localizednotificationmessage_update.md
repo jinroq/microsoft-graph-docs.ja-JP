@@ -1,6 +1,6 @@
 # <a name="update-localizednotificationmessage"></a>localizedNotificationMessage の更新
 
-> **注:**Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
+> **注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
 
 [localizedNotificationMessage](../resources/intune_notification_localizednotificationmessage.md) オブジェクトのプロパティを更新します。
 ## <a name="prerequisites"></a>前提条件
@@ -8,7 +8,7 @@
 
 |アクセス許可の種類|アクセス許可 (特権の大きいものから小さいものへ)|
 |:---|:---|
-|委任 (職場または学校のアカウント)|DeviceManagementServiceConfig.ReadWrite.All|
+|委任 (職場または学校アカウント)|DeviceManagementServiceConfig.ReadWrite.All|
 |委任 (個人用 Microsoft アカウント)|サポートされていません。|
 |アプリケーション|サポートされていません。|
 
@@ -24,8 +24,8 @@ PATCH /deviceManagement/notificationMessageTemplates/{notificationMessageTemplat
 ## <a name="request-headers"></a>要求ヘッダー
 |ヘッダー|値|
 |:---|:---|
-|Authorization|ベアラー &lt;トークン&gt; が必要です。|
-|Accept|application/json|
+|承認|ベアラー &lt;トークン&gt; が必須。|
+|承諾する|アプリケーションまたは json|
 
 ## <a name="request-body"></a>要求本文
 要求本文で、[localizedNotificationMessage](../resources/intune_notification_localizednotificationmessage.md) オブジェクトの JSON 表記を指定します。
@@ -34,12 +34,12 @@ PATCH /deviceManagement/notificationMessageTemplates/{notificationMessageTemplat
 
 |プロパティ|型|説明|
 |:---|:---|:---|
-|id|String|エンティティのキー。|
+|ID|文字列|エンティティのキー。|
 |lastModifiedDateTime|DateTimeOffset|オブジェクトの最終更新の DateTime。|
-|locale|String|対象メッセージの送信先ロケール。|
-|subject|String|メッセージ テンプレートの件名。|
-|messageTemplate|String|メッセージ テンプレートのコンテンツ。|
-|isDefault|Boolean|言語フォールバック用の既定ロケールかどうかを示すフラグ。 このフラグは設定のみ可能です。 設定解除するには、このプロパティを別のローカライズされた通知メッセージで有効にします。|
+|ロケール|文字列|対象メッセージの送信先ロケール。|
+|件名|文字列|メッセージ テンプレートの件名。|
+|messageTemplate|文字列|メッセージ テンプレートのコンテンツ。|
+|isDefault|ブール値|言語フォールバック用の既定ロケールかどうかを示すフラグ。 このフラグは設定のみ可能です。 設定解除するには、このプロパティを別のローカライズされた通知メッセージで有効にします。|
 
 
 
@@ -80,6 +80,11 @@ Content-Length: 313
   "isDefault": true
 }
 ```
+
+
+
+
+
 
 
 

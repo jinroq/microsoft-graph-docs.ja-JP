@@ -15,6 +15,7 @@
 以下は、リソースの JSON 表記です。
 <!-- {
   "blockType": "resource",
+  "keyProperty": "id",
   "@odata.type": "microsoft.graph.settingSource"
 }
 -->
@@ -25,6 +26,11 @@
   "displayName": "String"
 }
 ```
+
+
+
+
+
 
 
 

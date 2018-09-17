@@ -6,18 +6,17 @@
 ## <a name="properties"></a>プロパティ
 |プロパティ|タイプ|説明|
 |:---|:---|:---|
-|movieRating|[ratingJapanMoviesType](../resources/intune_deviceconfig_ratingjapanmoviestype.md)|日本向けに選択されている映画のレーティング。 指定できる値: `allAllowed`、`allBlocked`、`general`、`parentalGuidance`、`agesAbove15`、`agesAbove18`。|
-|tvRating|[ratingJapanTelevisionType](../resources/intune_deviceconfig_ratingjapantelevisiontype.md)|日本向けに選択されているテレビのレーティング。 指定できる値: `allAllowed`、`allBlocked`、`explicitAllowed`。|
+|movieRating|[ratingJapanMoviesType](../resources/intune_deviceconfig_ratingjapanmoviestype.md)|日本向けに選択されている映画のレーティング。可能な値: `allAllowed`、`allBlocked`、`general`、`parentalGuidance`、`agesAbove15`、`agesAbove18`。|
+|tvRating|[ratingJapanTelevisionType](../resources/intune_deviceconfig_ratingjapantelevisiontype.md)|日本向けに選択されているテレビのレーティング。可能な値: `allAllowed`、`allBlocked`、`explicitAllowed`。|
 
 ## <a name="relationships"></a>リレーションシップ
 なし
 ## <a name="json-representation"></a>JSON 表記
 以下は、リソースの JSON 表記です。
-<!-- {
+<!--{
   "blockType": "resource",
   "@odata.type": "microsoft.graph.mediaContentRatingJapan"
-}
--->
+}-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.mediaContentRatingJapan",
@@ -25,6 +24,11 @@
   "tvRating": "String"
 }
 ```
+
+
+
+
+
 
 
 

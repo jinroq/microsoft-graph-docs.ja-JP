@@ -1,6 +1,6 @@
 # <a name="create-devicemanagementexchangeconnector"></a>deviceManagementExchangeConnector の作成
 
-> **注:**Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
+> **注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
 
 新しい [deviceManagementExchangeConnector](../resources/intune_onboarding_devicemanagementexchangeconnector.md) オブジェクトを作成します。
 ## <a name="prerequisites"></a>前提条件
@@ -8,7 +8,7 @@
 
 |アクセス許可の種類|アクセス許可 (特権の大きいものから小さいものへ)|
 |:---|:---|
-|委任 (職場または学校のアカウント)|DeviceManagementServiceConfig.ReadWrite.All|
+|委任 (職場または学校アカウント)|DeviceManagementServiceConfig.ReadWrite.All|
 |委任 (個人用 Microsoft アカウント)|サポートされていません。|
 |アプリケーション|サポートされていません。|
 
@@ -24,8 +24,8 @@ POST /deviceManagement/exchangeConnectors
 ## <a name="request-headers"></a>要求ヘッダー
 |ヘッダー|値|
 |:---|:---|
-|承認|ベアラー &lt;トークン&gt;が必須。|
-|承諾|application/json|
+|承認|ベアラー &lt;トークン&gt; が必須。|
+|承諾する|アプリケーションまたは json|
 
 ## <a name="request-body"></a>要求本文
 要求本文で、deviceManagementExchangeConnector オブジェクトの JSON 表記を指定します。
@@ -34,15 +34,16 @@ POST /deviceManagement/exchangeConnectors
 
 |プロパティ|型|説明|
 |:---|:---|:---|
-|id|String|まだ文書化されていません|
+|ID|文字列|まだ文書化されていません|
 |lastSyncDateTime|DateTimeOffset|Exchange Connector の最終同期日時|
-|status|String|Exchange Connector の状態。可能な値は、`none`、`connectionPending`、`connected`、`disconnected` です。|
-|primarySmtpAddress|String|サービス間の Exchange Connector を構成するときに使用するメール アドレス。|
-|serverName|String|Exchange Connector をホストするサーバーの名前。|
-|exchangeConnectorType|String|構成されている Exchange Connector の種類。 可能な値は、`onPremises`、`hosted`、`serviceToService`、`dedicated` です。|
-|version|String|ExchangeConnectorAgent のバージョン|
-|exchangeAlias|String|Exchange Server に割り当てられているエイリアス。|
-|exchangeOrganization|String|Exchange Server に対する Exchange 組織|
+|状態|[deviceManagementExchangeConnectorStatus](../resources/intune_onboarding_devicemanagementexchangeconnectorstatus.md)|Exchange コネクタのステータスです。 可能な値は、`none`、`connectionPending`、`connected`、`disconnected` です。|
+|primarySmtpAddress|文字列|サービス間の Exchange Connector を構成するときに使用するメール アドレス。|
+|serverName|文字列|Exchange サーバーの名前。|
+|connectorServerName|文字列|Exchange Connector をホストするサーバーの名前。|
+|exchangeConnectorType|[deviceManagementExchangeConnectorType](../resources/intune_onboarding_devicemanagementexchangeconnectortype.md)|構成されている Exchange Connector の種類。 可能な値は、`onPremises`、`hosted`、`serviceToService`、`dedicated` です。|
+|バージョン|文字列|ExchangeConnectorAgent のバージョン|
+|exchangeAlias|文字列|Exchange Server に割り当てられているエイリアス。|
+|exchangeOrganization|文字列|Exchange Server に対する Exchange 組織|
 
 
 
@@ -55,7 +56,7 @@ POST /deviceManagement/exchangeConnectors
 ``` http
 POST https://graph.microsoft.com/v1.0/deviceManagement/exchangeConnectors
 Content-type: application/json
-Content-length: 433
+Content-length: 490
 
 {
   "@odata.type": "#microsoft.graph.deviceManagementExchangeConnector",
@@ -63,6 +64,7 @@ Content-length: 433
   "status": "connectionPending",
   "primarySmtpAddress": "Primary Smtp Address value",
   "serverName": "Server Name value",
+  "connectorServerName": "Connector Server Name value",
   "exchangeConnectorType": "hosted",
   "version": "Version value",
   "exchangeAlias": "Exchange Alias value",
@@ -75,7 +77,7 @@ Content-length: 433
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 482
+Content-Length: 539
 
 {
   "@odata.type": "#microsoft.graph.deviceManagementExchangeConnector",
@@ -84,12 +86,18 @@ Content-Length: 482
   "status": "connectionPending",
   "primarySmtpAddress": "Primary Smtp Address value",
   "serverName": "Server Name value",
+  "connectorServerName": "Connector Server Name value",
   "exchangeConnectorType": "hosted",
   "version": "Version value",
   "exchangeAlias": "Exchange Alias value",
   "exchangeOrganization": "Exchange Organization value"
 }
 ```
+
+
+
+
+
 
 
 

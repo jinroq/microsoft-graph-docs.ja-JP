@@ -16,8 +16,8 @@ Intune モバイル アプリの基本プロパティを含む抽象クラスで
 |ID|文字列|エンティティのキー。|
 |displayName|文字列|管理者が提供またはインポートしたアプリのタイトルです。|
 |説明|文字列|アプリの説明。|
-|publisher|文字列|アプリの発行元。|
-|largeIcon|[mimeContent](../resources/intune_shared_mimecontent.md)|アプリの詳細に表示され、アイコンのアップロードに使用される大きいアイコン。|
+|パブリッシャー|文字列|アプリの発行元。|
+|largeIcon|[MIME コンテンツ](../resources/intune_shared_mimecontent.md)|アプリの詳細に表示され、アイコンのアップロードに使用される大きいアイコン。|
 |createdDateTime|DateTimeOffset|アプリが作成された日時。|
 |lastModifiedDateTime|DateTimeOffset|アプリが最後に変更された日時。|
 |isFeatured|ブール値|アプリが管理者のおすすめとしてマークされたかどうかを示す値。|
@@ -26,21 +26,20 @@ Intune モバイル アプリの基本プロパティを含む抽象クラスで
 |owner|文字列|アプリの所有者。|
 |developer|文字列|アプリの開発者。|
 |notes|文字列|アプリ用のメモ。|
-|publishingState|[mobileAppPublishingState](../resources/intune_apps_mobileapppublishingstate.md)|アプリの発行の状態。 アプリが発行されていない限り、アプリを割り当てることができません。 可能な値は、 `notPublished`、`processing`、`published` です。|
+|publishingState|[mobileAppPublishingState](../resources/intune_apps_mobileapppublishingstate.md)|アプリケーションの発行の状態です。アプリが公開されていない限り、アプリケーションを割り当てることができません。使用可能な値は、 `notPublished`、 `processing`、 `published`です。|
 
 ## <a name="relationships"></a>リレーションシップ
 |リレーションシップ|型|説明|
 |:---|:---|:---|
-|categories|[mobileAppCategory](../resources/intune_apps_mobileappcategory.md) コレクション|このアプリのカテゴリのリストです。|
-|assignments|[mobileAppAssignment](../resources/intune_apps_mobileappassignment.md) コレクション|このモバイル アプリのグループ割り当てのリスト。|
+|カテゴリ|[mobileAppCategory](../resources/intune_apps_mobileappcategory.md) コレクション|このアプリのカテゴリのリストです。|
+|課題|[mobileAppAssignment](../resources/intune_apps_mobileappassignment.md) コレクション|このモバイル アプリのグループ割り当てのリスト。|
 
 ## <a name="json-representation"></a>JSON 表記
 以下は、リソースの JSON 表記です。
 <!--{
   "blockType": "resource",
-  "abstract": true,
-  "keyProperty": "id",
   "baseType": "microsoft.graph.entity",
+  "keyProperty": "id",
   "@odata.type": "microsoft.graph.mobileApp"
 }-->
 ``` json
@@ -66,6 +65,11 @@ Intune モバイル アプリの基本プロパティを含む抽象クラスで
   "publishingState": "String"
 }
 ```
+
+
+
+
+
 
 
 

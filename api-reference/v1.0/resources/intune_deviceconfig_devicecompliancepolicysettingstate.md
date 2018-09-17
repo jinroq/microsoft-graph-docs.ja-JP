@@ -9,7 +9,7 @@
 |setting|文字列|レポートされている設定値です。|
 |settingName|文字列|レポートされている、ローカライズされた設定名またはユーザー フレンドリな設定名です|
 |instanceDisplayName|文字列|レポートされている設定インスタンスの名前です。|
-|state|[complianceStatus](../resources/intune_shared_compliancestatus.md)|設定のコンプライアンス状態です。 指定できる値は、`unknown`、`notApplicable`、`compliant`、`remediated`、`nonCompliant`、`error`、`conflict` です。|
+|state|[complianceStatus](../resources/intune_shared_compliancestatus.md)|設定のコンプライアンスの状態です。使用可能な値は `unknown`、`notApplicable`、`compliant`、`remediated`、`nonCompliant`、`error`、`conflict`、`notAssigned` です。|
 |errorCode|Int64|設定のエラー コード|
 |errorDescription|文字列|エラーの説明|
 |userId|文字列|UserId|
@@ -50,6 +50,11 @@
   "currentValue": "String"
 }
 ```
+
+
+
+
+
 
 
 

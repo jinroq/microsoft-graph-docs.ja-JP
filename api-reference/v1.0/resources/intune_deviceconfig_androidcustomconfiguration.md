@@ -40,8 +40,8 @@
 以下は、リソースの JSON 表記です。
 <!--{
   "blockType": "resource",
-  "keyProperty": "id",
   "baseType": "microsoft.graph.deviceConfiguration",
+  "keyProperty": "id",
   "@odata.type": "microsoft.graph.androidCustomConfiguration"
 }-->
 ``` json
@@ -64,6 +64,11 @@
   ]
 }
 ```
+
+
+
+
+
 
 
 

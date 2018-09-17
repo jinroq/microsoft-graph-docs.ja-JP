@@ -2,7 +2,7 @@
 
 > **注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
 
-DeviceManagement リソースは、ワークフローに従って内容を変更する、以下を含むコンテナーを表します。
+DeviceManagement リソースは、ワークフローに従って内容を変更する、以下を含むコンテナーを表します。  
 
 - イベントの監査
 - 企業の諸条件 
@@ -36,7 +36,7 @@ DeviceManagement リソースは、ワークフローに従って内容を変更
 |**デバイス構成**|
 |設定|[deviceManagementSettings](../resources/intune_deviceconfig_devicemanagementsettings.md)|アカウント レベルの設定。|
 |**デバイスの管理**|
-|subscriptionState|文字列|テナントのモバイル デバイス管理のサブスクリプション状態。 指定できる値は、`pending`、`active`、`warning`、`disabled`、`deleted`、`blocked`、`lockedOut` です。|
+|subscriptionState|文字列|テナントのモバイル デバイス管理のサブスクリプション状態。 可能な値: `pending`、 `active`、 `warning`、 `disabled`、 `deleted`、 `blocked`、 `lockedOut`。|
 |**採用**|
 |intuneBrand|[intuneBrand](../resources/intune_onboarding_intunebrand.md)|intuneBrand には、会社のポータル アプリケーションとエンド ユーザーの Web ポータルの外観のカスタマイズに使用するデータが含まれています。|
 
@@ -61,7 +61,8 @@ DeviceManagement リソースは、ワークフローに従って内容を変更
 |managedDeviceOverview|[managedDeviceOverview](../resources/intune_devices_manageddeviceoverview.md)|デバイスの概要|
 |managedDevices|[managedDevice](../resources/intune_devices_manageddevice.md) コレクション|管理対象デバイスの一覧。|
 |**登録**|
-|importedWindowsAutopilotDeviceIdentities|[importedWindowsAutopilotDeviceIdentity](../resources/intune_enrollment_importedwindowsautopilotdeviceidentity.md)コレクション|インポートされた Windows Autopilot デバイスのコレクション。|
+|importedWindowsAutopilotDeviceIdentities|[importedWindowsAutopilotDeviceIdentity](../resources/intune_enrollment_importedwindowsautopilotdeviceidentity.md)コレクション|インポートされたWindows Autopilot デバイスのコレクション。|
+|importedWindowsAutopilotDeviceIdentityUploads|[importedWindowsAutopilotDeviceIdentityUpload](../resources/intune_enrollment_importedwindowsautopilotdeviceidentityupload.md) コレクション|デバイスをアップロード、Windows AutoPilot のコレクションです。|
 |**通知**|
 |notificationMessageTemplates|[notificationMessageTemplate](../resources/intune_notification_notificationmessagetemplate.md) コレクション|通知メッセージ テンプレート。|
 |**採用**|

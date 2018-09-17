@@ -15,7 +15,7 @@
 ## <a name="properties"></a>プロパティ
 |プロパティ|タイプ|説明|
 |:---|:---|:---|
-|id|文字列|まだ文書化されていません|
+|ID|文字列|まだ文書化されていません|
 |ターゲット|[deviceAndAppManagementAssignmentTarget](../resources/intune_shared_deviceandappmanagementassignmenttarget.md)|まだ文書化されていません|
 
 ## <a name="relationships"></a>リレーションシップ
@@ -24,8 +24,8 @@
 以下は、リソースの JSON 表記です。
 <!--{
   "blockType": "resource",
-  "keyProperty": "id",
   "baseType": "microsoft.graph.entity",
+  "keyProperty": "id",
   "@odata.type": "microsoft.graph.enrollmentConfigurationAssignment"
 }-->
 ``` json
@@ -37,6 +37,11 @@
   }
 }
 ```
+
+
+
+
+
 
 
 

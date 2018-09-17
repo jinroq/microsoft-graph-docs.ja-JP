@@ -15,7 +15,7 @@
 ## <a name="properties"></a>プロパティ
 |プロパティ|タイプ|説明|
 |:---|:---|:---|
-|id|文字列|エンティティのキー。 これは読み取り専用で、自動生成されます。|
+|ID|文字列|エンティティのキー。 これは読み取り専用で、自動生成されます。|
 |displayName|文字列|ロール割り当ての表示名またはフレンドリ名。|
 |説明|文字列|ロール割り当ての説明。|
 |resourceScopes|String コレクション|役割のスコープ メンバーのセキュリティ グループの ID リスト。  Azure Active Directory の ID です。|
@@ -29,8 +29,8 @@
 以下は、リソースの JSON 表記です。
 <!--{
   "blockType": "resource",
-  "keyProperty": "id",
   "baseType": "microsoft.graph.entity",
+  "keyProperty": "id",
   "@odata.type": "microsoft.graph.roleAssignment"
 }-->
 ``` json
@@ -44,6 +44,11 @@
   ]
 }
 ```
+
+
+
+
+
 
 
 

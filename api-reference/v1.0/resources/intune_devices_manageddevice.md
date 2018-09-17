@@ -36,29 +36,29 @@ Intune 経由で管理または事前登録されるデバイス
 |ID|文字列|デバイスの一意識別子|
 |userId|文字列|デバイスに関連付けられているユーザーの一意の識別子|
 |deviceName|文字列|デバイスの名前|
-|managedDeviceOwnerType|[managedDeviceOwnerType](../resources/intune_devices_manageddeviceownertype.md)|デバイスの所有権。 '会社' または '個人' にすることができます。 指定できる値は、`unknown`、`company`、`personal`です。|
+|managedDeviceOwnerType|[managedDeviceOwnerType](../resources/intune_devices_manageddeviceownertype.md)|デバイスの所有権。'会社' または '個人' にすることができます。使用可能な値: `unknown`、 `company`、 `personal`。|
 |deviceActionResults|[deviceActionResult](../resources/intune_devices_deviceactionresult.md) コレクション|ComplexType deviceActionResult オブジェクトのリスト。|
 |enrolledDateTime|DateTimeOffset|デバイスの登録時刻。|
 |lastSyncDateTime|DateTimeOffset|デバイスが Intune との正常な同期を最終的に完了した日時。|
 |operatingSystem|文字列|デバイスのオペレーティング システム。 Windows、iOS など。|
-|complianceState|[complianceState](../resources/intune_devices_compliancestate.md)|デバイスのコンプライアンス状態。 指定できる値は、`unknown`、`compliant`、`noncompliant`、`conflict`、`error`、`inGracePeriod`、`configManager` です。|
+|complianceState|[complianceState](../resources/intune_devices_compliancestate.md)|デバイスの状態を遵守します。使用可能な値: `unknown`、 `compliant`、 `noncompliant`、 `conflict`、 `error`、 `inGracePeriod`、 `configManager`。|
 |jailBroken|文字列|デバイスが脱獄またはルート化されているかどうかを示します。|
-|managementAgent|[managementAgentType](../resources/intune_devices_managementagenttype.md)|デバイスの管理チャネル。 Intune、EA などです。可能な値: `eas`、 `mdm`、 `easMdm`、 `intuneClient`、 `easIntuneClient`、 `configurationManagerClient`、 `configurationManagerClientMdm`、 `configurationManagerClientMdmEas`、 `unknown`、 `jamf`、 `googleCloudDevicePolicyController`。|
+|managementAgent|[managementAgentType](../resources/intune_devices_managementagenttype.md)|デバイスのチャネルを管理します。Intune、EAS などです。使用可能な値: `eas`、 `mdm`、 `easMdm`、 `intuneClient`、 `easIntuneClient`、 `configurationManagerClient`、 `configurationManagerClientMdm`、 `configurationManagerClientMdmEas`、 `unknown`、 `jamf`、 `googleCloudDevicePolicyController`。|
 |osVersion|文字列|デバイスのオペレーティング システムのバージョン。|
 |easActivated|ブール値|Exchange ActiveSync がアクティブになっているデバイスかどうかを示します。|
 |easDeviceId|文字列|デバイスの Exchange ActiveSync の ID。|
 |easActivationDateTime|DateTimeOffset|デバイスの Exchange ActivationSync のアクティブ化の時刻。|
 |azureADRegistered|ブール値|Azure Active Directory が登録されているデバイスかどうかを示します。|
-|deviceEnrollmentType|[deviceEnrollmentType](../resources/intune_shared_deviceenrollmenttype.md)|デバイスの登録の種類。 指定できる値は、`unknown`、`userEnrollment`、`deviceEnrollmentManager`、`appleBulkWithUser`、`appleBulkWithoutUser`、`windowsAzureADJoin`、`windowsBulkUserless`、`windowsAutoEnrollment`、`windowsBulkAzureDomainJoin`、`windowsCoManagement`です。|
+|deviceEnrollmentType|[deviceEnrollmentType](../resources/intune_shared_deviceenrollmenttype.md)|OEnrollment type of the device. The possible values are: `unknown`, `userEnrollment`, `deviceEnrollmentManager`, `appleBulkWithUser`, `appleBulkWithoutUser`, `windowsAzureADJoin`, `windowsBulkUserless`, `windowsAutoEnrollment`, `windowsBulkAzureDomainJoin`, `windowsCoManagement`.|
 |activationLockBypassCode|文字列|デバイスのアクティベーション ロックをバイパスするためのコード。|
 |emailAddress|文字列|デバイスに関連付けられているユーザーの電子メール|
 |azureADDeviceId|文字列|Azure Active Directory デバイスの一意識別子。 読み取り専用です。|
-|deviceRegistrationState|[deviceRegistrationState](../resources/intune_devices_deviceregistrationstate.md)|デバイスの登録状態。 指定できる値は、`notRegistered`、`registered`、`revoked`、`keyConflict`、`approvalPending`、`certificateReset`、`notRegisteredPendingEnrollment`、`unknown`です。|
+|deviceRegistrationState|[deviceRegistrationState](../resources/intune_devices_deviceregistrationstate.md)|デバイス登録の状態です。使用可能な値: `notRegistered`、 `registered`、 `revoked`、 `keyConflict`、 `approvalPending`、 `certificateReset`、 `notRegisteredPendingEnrollment`、 `unknown`。|
 |deviceCategoryDisplayName|文字列|デバイス カテゴリの表示名|
 |isSupervised|ブール値|デバイスの管理状況|
 |exchangeLastSuccessfulSyncDateTime|DateTimeOffset|最後にデバイスが Exchange に接続した時刻。|
-|exchangeAccessState|[deviceManagementExchangeAccessState](../resources/intune_devices_devicemanagementexchangeaccessstate.md)|Exchange でのデバイスのアクセスの状態。 指定できる値は、`none`、`unknown`、`allowed`、`blocked`、`quarantined`です。|
-|exchangeAccessStateReason|[deviceManagementExchangeAccessStateReason](../resources/intune_devices_devicemanagementexchangeaccessstatereason.md)|Exchange でのデバイスのアクセス状態の理由。 指定できる値は、`none`、`unknown`、`exchangeGlobalRule`、`exchangeIndividualRule`、`exchangeDeviceRule`、`exchangeUpgrade`、`exchangeMailboxPolicy`、`other`、`compliant`、`notCompliant`、`notEnrolled`、`unknownLocation`、`mfaRequired`、`azureADBlockDueToAccessPolicy`、`compromisedPassword`、`deviceNotKnownWithManagedApp`です。|
+|exchangeAccessState|[deviceManagementExchangeAccessState](../resources/intune_devices_devicemanagementexchangeaccessstate.md)|Exchange 内のデバイスのアクセス状態です。使用可能な値: `none`、 `unknown`、 `allowed`、 `blocked`、 `quarantined`。|
+|exchangeAccessStateReason|[deviceManagementExchangeAccessStateReason](../resources/intune_devices_devicemanagementexchangeaccessstatereason.md)|デバイスのアクセスの理由で Exchange 状態です。使用可能な値: `none`、 `unknown`、 `exchangeGlobalRule`、 `exchangeIndividualRule`、 `exchangeDeviceRule`、 `exchangeUpgrade`、 `exchangeMailboxPolicy`、 `other`、 `compliant`、 `notCompliant`、 `notEnrolled`、 `unknownLocation`、 `mfaRequired`、 `azureADBlockDueToAccessPolicy`、 `compromisedPassword`、 `deviceNotKnownWithManagedApp`。|
 |remoteAssistanceSessionUrl|文字列|デバイスとのリモート アシスタンス セッションを確立できるようにする URL。|
 |remoteAssistanceSessionErrorDetails|文字列|リモート アシスタンス セッション オブジェクトの作成時に問題を識別するエラー文字列。|
 |isEncrypted|ブール値|デバイスの暗号化の状態|
@@ -79,7 +79,7 @@ Intune 経由で管理または事前登録されるデバイス
 |totalStorageSpaceInBytes|Int64|記憶域の合計 (バイト)|
 |freeStorageSpaceInBytes|Int64|空き記憶域 (バイト)|
 |managedDeviceName|文字列|デバイスを識別する名前が自動的に生成されます。 ユーザー フレンドリ名に上書きできます。|
-|partnerReportedThreatState|[managedDevicePartnerReportedHealthState](../resources/intune_devices_manageddevicepartnerreportedhealthstate.md)|Mobile Threat Defense パートナーがアカウントおよびデバイスで使用されている場合の、デバイスの脅威の状態を示します。 読み取り専用です。 指定できる値は、`unknown`、`activated`、`deactivated`、`secured`、`lowSeverity`、`mediumSeverity`、`highSeverity`、`unresponsive`です。|
+|partnerReportedThreatState|[managedDevicePartnerReportedHealthState](../resources/intune_devices_manageddevicepartnerreportedhealthstate.md)|モバイルの脅威に対する防御のパートナーは、アカウントとデバイスで使用されている場合は、デバイスの脅威の状態を示します。読み取り専用です。使用可能な値: `unknown`、 `activated`、 `deactivated`、 `secured`、 `lowSeverity`、 `mediumSeverity`、 `highSeverity`、 `unresponsive`、 `compromised`、 `misconfigured`。|
 
 ## <a name="relationships"></a>リレーションシップ
 |リレーションシップ|型|説明|
@@ -90,8 +90,8 @@ Intune 経由で管理または事前登録されるデバイス
 以下は、リソースの JSON 表記です。
 <!--{
   "blockType": "resource",
-  "keyProperty": "id",
   "baseType": "microsoft.graph.entity",
+  "keyProperty": "id",
   "@odata.type": "microsoft.graph.managedDevice"
 }-->
 ``` json
@@ -196,6 +196,11 @@ Intune 経由で管理または事前登録されるデバイス
   "partnerReportedThreatState": "String"
 }
 ```
+
+
+
+
+
 
 
 

@@ -6,18 +6,17 @@
 ## <a name="properties"></a>プロパティ
 |プロパティ|タイプ|説明|
 |:---|:---|:---|
-|movieRating|[ratingIrelandMoviesType](../resources/intune_deviceconfig_ratingirelandmoviestype.md)|アイルランド向けに選択された映画の視聴制限です。 可能な値は、`allAllowed`、`allBlocked`、`general`、`parentalGuidance`、`agesAbove12`、`agesAbove15`、`agesAbove16`、`adults` です。|
-|tvRating|[ratingIrelandTelevisionType](../resources/intune_deviceconfig_ratingirelandtelevisiontype.md)|アイルランド向けに選択されたテレビの視聴制限です。 指定できる値は、`allAllowed`、`allBlocked`、`general`、`children`、`youngAdults`、`parentalSupervision`、`mature` です。|
+|movieRating|[ratingIrelandMoviesType](../resources/intune_deviceconfig_ratingirelandmoviestype.md)|アイルランド向けに選択されているテレビのレーティング。可能な値: `allAllowed`、`allBlocked`、`general`、`parentalGuidance`、`agesAbove12`、`agesAbove15`、`agesAbove16`、`adults`。|
+|tvRating|[ratingIrelandTelevisionType](../resources/intune_deviceconfig_ratingirelandtelevisiontype.md)|アイルランド向けに選択されているテレビのレーティング。可能な値: `allAllowed`、`allBlocked`、`general`、`children`、`youngAdults`、`parentalSupervision`、`mature`。|
 
 ## <a name="relationships"></a>リレーションシップ
 なし
 ## <a name="json-representation"></a>JSON 表記
 以下は、リソースの JSON 表記です。
-<!-- {
+<!--{
   "blockType": "resource",
   "@odata.type": "microsoft.graph.mediaContentRatingIreland"
-}
--->
+}-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.mediaContentRatingIreland",
@@ -25,6 +24,11 @@
   "tvRating": "String"
 }
 ```
+
+
+
+
+
 
 
 

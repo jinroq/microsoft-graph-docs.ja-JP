@@ -25,7 +25,7 @@ PATCH /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/user
 |ヘッダー|値|
 |:---|:---|
 |承認|ベアラー &lt;トークン&gt; が必須。|
-|承諾|application/json|
+|承諾|アプリケーションまたは json|
 
 ## <a name="request-body"></a>要求本文
 要求本文で、[deviceComplianceUserOverview](../resources/intune_deviceconfig_devicecomplianceuseroverview.md) オブジェクトの JSON 表記を指定します。
@@ -34,7 +34,7 @@ PATCH /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/user
 
 |プロパティ|タイプ|説明|
 |:---|:---|:---|
-|id|文字列|エンティティのキー。|
+|ID|文字列|エンティティのキー。|
 |pendingCount|Int32|保留中のユーザーの数|
 |notApplicableCount|Int32|該当しないユーザーの数|
 |successCount|Int32|成功したユーザーの数|
@@ -86,6 +86,11 @@ Content-Length: 328
   "configurationVersion": 4
 }
 ```
+
+
+
+
+
 
 
 

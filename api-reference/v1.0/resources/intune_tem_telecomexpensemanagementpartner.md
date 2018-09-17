@@ -15,11 +15,11 @@ telecomExpenseManagementPartner リソースは、特定の TEM サービスの�
 ## <a name="properties"></a>プロパティ
 |プロパティ|タイプ|説明|
 |:---|:---|:---|
-|id|文字列|TEM パートナーの一意識別子。|
+|ID|文字列|TEM パートナーの一意識別子。|
 |displayName|文字列|TEM パートナーの表示名。|
 |url|文字列|TEM パートナーの管理用コントロール パネルの URL。管理者はここで TEM サービスを構成できます。|
 |appAuthorized|ブール値|パートナーの AAD アプリに Intune へのアクセスが承認されているかどうかを指定します。|
-|enabled|ブール値|TEM サービスへの Intune の接続が現在有効であるか、無効であるかを指定します。|
+|有効化済み|ブール値|TEM サービスへの Intune の接続が現在有効であるか、無効であるかを指定します。|
 |lastConnectionDateTime|DateTimeOffset|TEM パートナーによって Intune に対して最後に送信された要求のタイムスタンプ。|
 
 ## <a name="relationships"></a>リレーションシップ
@@ -28,8 +28,8 @@ telecomExpenseManagementPartner リソースは、特定の TEM サービスの�
 以下は、リソースの JSON 表記です。
 <!--{
   "blockType": "resource",
-  "keyProperty": "id",
   "baseType": "microsoft.graph.entity",
+  "keyProperty": "id",
   "@odata.type": "microsoft.graph.telecomExpenseManagementPartner"
 }-->
 ``` json
@@ -43,6 +43,11 @@ telecomExpenseManagementPartner リソースは、特定の TEM サービスの�
   "lastConnectionDateTime": "String (timestamp)"
 }
 ```
+
+
+
+
+
 
 
 
