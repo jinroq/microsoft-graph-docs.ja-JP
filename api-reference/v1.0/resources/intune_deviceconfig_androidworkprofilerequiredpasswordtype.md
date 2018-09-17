@@ -1,0 +1,24 @@
+# <a name="androidworkprofilerequiredpasswordtype-enum-type"></a><span data-ttu-id="8110e-101">androidWorkProfileRequiredPasswordType 列挙型</span><span class="sxs-lookup"><span data-stu-id="8110e-101">androidWorkProfileRequiredPasswordType enum type</span></span>
+
+> <span data-ttu-id="8110e-102">**注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。</span><span class="sxs-lookup"><span data-stu-id="8110e-102">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
+
+<span data-ttu-id="8110e-103">Android の作業プロファイルには、パスワード入力が必要です。</span><span class="sxs-lookup"><span data-stu-id="8110e-103">Android Work Profile required password type.</span></span>
+## <a name="members"></a><span data-ttu-id="8110e-104">メンバー</span><span class="sxs-lookup"><span data-stu-id="8110e-104">Members</span></span>
+|<span data-ttu-id="8110e-105">メンバー</span><span class="sxs-lookup"><span data-stu-id="8110e-105">Member</span></span>|<span data-ttu-id="8110e-106">値</span><span class="sxs-lookup"><span data-stu-id="8110e-106">Value</span></span>|<span data-ttu-id="8110e-107">説明</span><span class="sxs-lookup"><span data-stu-id="8110e-107">Description</span></span>|
+|:---|:---|:---|
+|<span data-ttu-id="8110e-108">deviceDefault</span><span class="sxs-lookup"><span data-stu-id="8110e-108">deviceDefault</span></span>|<span data-ttu-id="8110e-109">0</span><span class="sxs-lookup"><span data-stu-id="8110e-109">0%</span></span>|<span data-ttu-id="8110e-110">デバイスのデフォルト値、意図なし。</span><span class="sxs-lookup"><span data-stu-id="8110e-110">Device default value, no intent.</span></span>|
+|<span data-ttu-id="8110e-111">lowSecurityBiometric</span><span class="sxs-lookup"><span data-stu-id="8110e-111">lowSecurityBiometric</span></span>|<span data-ttu-id="8110e-112">1</span><span class="sxs-lookup"><span data-stu-id="8110e-112">-1</span></span>|<span data-ttu-id="8110e-113">低レベルのセキュリティ ベースの生体認証パスワードが必要です。</span><span class="sxs-lookup"><span data-stu-id="8110e-113">Low security biometrics based password required.</span></span>|
+|<span data-ttu-id="8110e-114">必須</span><span class="sxs-lookup"><span data-stu-id="8110e-114">required</span></span>|<span data-ttu-id="8110e-115">2</span><span class="sxs-lookup"><span data-stu-id="8110e-115">-2</span></span>|<span data-ttu-id="8110e-116">必須。</span><span class="sxs-lookup"><span data-stu-id="8110e-116">Required.</span></span>|
+|<span data-ttu-id="8110e-117">atLeastNumeric</span><span class="sxs-lookup"><span data-stu-id="8110e-117">atLeastNumeric</span></span>|<span data-ttu-id="8110e-118">3</span><span class="sxs-lookup"><span data-stu-id="8110e-118">"3"</span></span>|<span data-ttu-id="8110e-119">数値以上のパスワードが必要です。</span><span class="sxs-lookup"><span data-stu-id="8110e-119">At least numeric password required.</span></span>|
+|<span data-ttu-id="8110e-120">numericComplex</span><span class="sxs-lookup"><span data-stu-id="8110e-120">numericComplex</span></span>|<span data-ttu-id="8110e-121">4</span><span class="sxs-lookup"><span data-stu-id="8110e-121">-4</span></span>|<span data-ttu-id="8110e-122">複雑な数字のパスワードが必要です。</span><span class="sxs-lookup"><span data-stu-id="8110e-122">Numeric complex password required.</span></span>|
+|<span data-ttu-id="8110e-123">atLeastAlphabetic</span><span class="sxs-lookup"><span data-stu-id="8110e-123">atLeastAlphabetic</span></span>|<span data-ttu-id="8110e-124">5</span><span class="sxs-lookup"><span data-stu-id="8110e-124">.5</span></span>|<span data-ttu-id="8110e-125">少なくともアルファベットのパスワードが必要です。</span><span class="sxs-lookup"><span data-stu-id="8110e-125">At least alphabetic password required.</span></span>|
+|<span data-ttu-id="8110e-126">atLeastAlphanumeric</span><span class="sxs-lookup"><span data-stu-id="8110e-126">atLeastAlphanumeric</span></span>|<span data-ttu-id="8110e-127">6</span><span class="sxs-lookup"><span data-stu-id="8110e-127">-6</span></span>|<span data-ttu-id="8110e-128">以上の英数字のパスワードが必要です。</span><span class="sxs-lookup"><span data-stu-id="8110e-128">At least alphanumeric password required.</span></span>|
+|<span data-ttu-id="8110e-129">alphanumericWithSymbols</span><span class="sxs-lookup"><span data-stu-id="8110e-129">alphanumericWithSymbols</span></span>|<span data-ttu-id="8110e-130">7</span><span class="sxs-lookup"><span data-stu-id="8110e-130">-7</span></span>|<span data-ttu-id="8110e-131">英数字と記号のパスワードが必要です。</span><span class="sxs-lookup"><span data-stu-id="8110e-131">At least alphanumeric with symbols password required.</span></span>|
+
+
+
+
+
+
+
+
