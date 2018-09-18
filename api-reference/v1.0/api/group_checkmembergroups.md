@@ -14,7 +14,7 @@
 | 委任 (個人用 Microsoft アカウント) | サポートされていません。                                                                              |
 | アプリケーション                            | _Group.Read.All_、Directory.Read.All。 Directory.ReadWrite.All                               |
 
-> **注:** この API では現在、`Directory.Read.All` 以上のアクセス権が必要です。 `Gorup.Read.All` のアクセス許可を使用するとエラーが返されます。 これは既知のバグです。
+> **注:** この API では現在、`Directory.Read.All` 以上のアクセス権が必要です。 `Group.Read.All` のアクセス許可を使用するとエラーが返されます。 これは既知のバグです。
 
 ## <a name="http-request"></a>HTTP 要求
 
@@ -36,7 +36,7 @@ POST /groups/{id}/checkMemberGroups
 
 | パラメーター | 型              | 説明           |
 | :-------- | :---------------- | :-------------------- |
-| groupIds  | 文字列コレクション | グループ ID の配列 |
+| groupIds  | String コレクション | グループ ID の配列 |
 
 ## <a name="response"></a>応答
 

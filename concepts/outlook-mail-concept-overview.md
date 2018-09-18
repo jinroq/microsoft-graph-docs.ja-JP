@@ -28,16 +28,18 @@ Microsoft Graph を利用することにより、アプリ ユーザーに対し
 
 - [優先受信トレイ](../api-reference/v1.0/resources/manage_focused_inbox.md)および [@ メンション (プレビュー)](../api-reference/beta/api/message_get.md#request-2) を統合し、アプリ ユーザーが気になっているものを最初に読み、返信できるようにする。 
 
-- メッセージ作成中に[メール ヒント (プレビュー)](../api-reference/beta/resources/mailtips.md) をチェックして、受信者に関する有用な情報を得る (受信者が自動返信を送信中なのか、あるいはメールボックスがいっぱいなのかなど)。 メール ヒントは、アプリに対して特定の条件を警告することにより、フォローアップのアクションの効率を上げることができます。 
+- メッセージ作成中に[メール ヒント](../api-reference/v1.0/resources/mailtips.md)をチェックして、受信者に関する有用な情報を得る (受信者が自動返信を送信中なのか、あるいはメールボックスがいっぱいなのかなど)。 メール ヒントは、アプリに対して特定の条件を警告することにより、フォローアップのアクションの効率を上げることができます。 
 
 - [連絡先 API](people_example.md) の利用により、アプリの中で連絡先を選択するなど、対話式のコントロールが提供されます。 連絡先 API では、ユーザーの通信および共同作業のパターン、そしてビジネス上の付き合いに基づいて、ユーザーに最も関係の深い連絡先を提案することができます。 
 
-- アプリ ユーザーに対して、メッセージ作成中に添付ファイルに関連して、気の利いたファイル選択機能を提供したり、最近利用したファイルを提案したりする。 [Insights](../api-reference/beta/resources/insights.md) では、高度な分析機能を使用することにより、ユーザーの周辺で頻繁に使用されるファイル、最近ユーザーが表示または編集したファイル、あるいはそのユーザーと共有したファイルについての提案がなされます。
+- アプリ ユーザーに対して、メッセージ作成中に添付ファイルに関連して、気の利いたファイル選択機能を提供したり、最近利用したファイルを提案したりする。 [Insights (プレビュー)](../api-reference/beta/resources/insights.md) では、高度な分析機能を使用することにより、ユーザーの周辺で頻繁に使用されるファイル、最近ユーザーが表示または編集したファイル、あるいはそのユーザーと共有したファイルについての提案がなされます。
 
 
 ### <a name="store-app-data-in-a-resource-or-resource-instance"></a>アプリ データをリソースまたはリソース インスタンスに保存する
 
-アプリでは、データを外部データ ストアに保存するために、データの管理とアクセスのためのオーバーヘッドが発生することが少なくありません。 アプリで Microsoft Graph を使用すれば、単に[カスタム データを個々のリソース インスタンスに保存](extensibility_overview.md#open-extensions)するか、あるいは該当する場合には、スキーマを拡張し、カスタム プロパティを追加して、Microsoft Graph リソースの中に型指定されたデータを保存することができます。 そのような[スキーマ拡張](extensibility_overview.md#schema-extensions)を、検出可能また共有可能なものにすることができます。 
+アプリでは、データを外部データ ストアに保存するため、データの管理とアクセスのためのオーバーヘッドが発生することが少なくありません。 Graph では、 新しいメッセージを[を作成したり](../api-reference/v1.0/api/user_post_messages.md#request-2)、[送信したり](../api-reference/v1.0/api/user_sendmail.md#request-2)、メッセージに返信したりする場合に、単にインターネット メッセージのヘッダーとしてアプリケーション データを追加することができます。 
+
+カスタム データを追加し、後で更新する必要がある場合は、[個々 のリソース インスタンス内にデータを格納](extensibility_overview.md#open-extensions)することができます。 必要に応じて、この代わりに、スキーマを拡張したり、カスタム プロパティを追加したり、Microsoft Graph のリソースに型指定されたデータを格納したりすることができます。 そのような[スキーマ拡張](extensibility_overview.md#schema-extensions)を、検出や共有が可能なものにすることができます。 
 
 
 ## <a name="next-steps"></a>次の手順
@@ -46,7 +48,7 @@ Microsoft Graph を利用することにより、アプリ ユーザーに対し
 - 以下について調べます。
 
   - [メッセージの作成と送信](outlook-create-send-messages.md)
-  - [メッセージの整理方法](outlook-organize-messages.md)
+  - メッセージの整理方法[](outlook-organize-messages.md)
   - [メッセージ フォルダーを共有する](outlook-share-messages-folders.md)方法
 
 - Microsoft Graph v1.0 での[メール API の使用](../api-reference/v1.0/resources/mail_api_overview.md) とその[用途](../api-reference/v1.0/resources/mail_api_overview.md#common-use-cases)について調べる。
