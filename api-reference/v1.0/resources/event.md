@@ -5,6 +5,7 @@
 このリソースは以下をサポートしています。
 
 - [拡張機能](../../../concepts/extensibility_overview.md)を使用して、カスタム プロパティに独自のデータを追加します。
+- [通知の変更](../../../concepts/webhooks.md)にサブスクライブします。
 - [デルタ](../api/event_delta.md)関数を提供することにより、[デルタ クエリ](../../../concepts/delta_query_overview.md)を使用して、増分の追加、削除、更新を追跡します。
 
 
@@ -32,64 +33,65 @@
 |[オープン拡張機能を取得する](../api/opentypeextension_get.md) |[openTypeExtension](opentypeextension.md) コレクション| 名前や完全修飾名によって識別されたオープン拡張機能オブジェクトを 1 つまたは複数取得します。|
 |**拡張プロパティ**| | |
 |[単一値の拡張プロパティを作成する](../api/singlevaluelegacyextendedproperty_post_singlevalueextendedproperties.md) |[event](event.md)  |新規または既存のイベントに、1 つ以上の単一値の拡張プロパティを作成します。   |
-|[単一値の拡張プロパティを持つイベントの取得](../api/singlevaluelegacyextendedproperty_get.md)  | [event](event.md) | `$expand` または `$filter` を使用して、単一値の拡張プロパティを含むイベントを取得します。 |
+|[単一値の拡張プロパティを持つイベントの取得](../api/singlevaluelegacyextendedproperty_get.md)  | [event](event.md) | または `$filter` を使用して、単一値の拡張プロパティを含むイベントを取得します。`$expand` |
 |[複数値の拡張プロパティを作成する](../api/multivaluelegacyextendedproperty_post_multivalueextendedproperties.md) | [event](event.md) | 新規または既存のイベントに、1 つ以上の複数値の拡張プロパティを作成します。  |
-|[複数値の拡張プロパティを持つイベントの取得](../api/multivaluelegacyextendedproperty_get.md)  | [event](event.md) | `$expand` を使用して、複数値の拡張プロパティを含むイベントを取得します。 |
+|[複数値の拡張プロパティを持つイベントの取得](../api/multivaluelegacyextendedproperty_get.md)  | [event](event.md) | を使用して、複数値の拡張プロパティを含むイベントを取得します。`$expand` |
 
 ## <a name="properties"></a>プロパティ
 | プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
 |attendees|[attendee](attendee.md) コレクション|イベントの出席者のコレクション。|
-|body|[itemBody](itembody.md)|イベントに関連付けられたメッセージの本文。HTML 形式またはテキスト形式にできます。|
-|bodyPreview|String|イベントに関連付けられたメッセージのプレビュー。テキスト形式です。|
-|categories|String collection|イベントに関連付けられたカテゴリ。|
-|changeKey|String|イベント オブジェクトのバージョンを識別します。イベントを変更するたびに ChangeKey も変更されます。これにより、Exchange は正しいバージョンのオブジェクトに変更を適用できます。|
-|createdDateTime|DateTimeOffset|Timestamp 型は、ISO 8601 形式を使用して日付と時刻の情報を表し、必ず UTC 時間です。たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、次のようになります。`'2014-01-01T00:00:00Z'`|
+|本文|[itemBody](itembody.md)|イベントに関連付けられたメッセージの本文。HTML 形式またはテキスト形式にできます。|
+|bodyPreview|文字列|イベントに関連付けられたメッセージのプレビュー。テキスト形式です。|
+|categories|String コレクション|イベントに関連付けられたカテゴリ。|
+|changeKey|文字列|イベント オブジェクトのバージョンを識別します。イベントを変更するたびに ChangeKey も変更されます。これにより、Exchange は正しいバージョンのオブジェクトに変更を適用できます。|
+|createdDateTime|DateTimeOffset|Timestamp 型は、ISO 8601 形式を使用して日付と時刻の情報を表し、必ず UTC 時間です。たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、次のようになります。 `'2014-01-01T00:00:00Z'`|
 |end|[dateTimeTimeZone](datetimetimezone.md)|イベントが終了する日付、時刻、タイムゾーン|
-|hasAttachments|Boolean|イベントに添付ファイルが含まれている場合、true に設定します。|
-|iCalUId|String|複数の予定表で 1 つのイベントのすべてのインスタンスによって共有される一意識別子。|
-|id|String| 読み取り専用。|
-|importance|String|イベントの重要度。 可能な値は `low`、`normal`、`high` です。|
-|isAllDay|Boolean|イベントが一日中続く場合に、true に設定します。|
-|isCancelled|Boolean|イベントがキャンセルされた場合に、true に設定します。|
-|isOrganizer|Boolean|メッセージの送信者が開催者でもある場合に、true に設定します。|
-|isReminderOn|Boolean|ユーザーにイベントを通知するアラートを設定する場合は、true に設定します。|
-|lastModifiedDateTime|DateTimeOffset|Timestamp 型は、ISO 8601 形式を使用して日付と時刻の情報を表し、必ず UTC 時間です。たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、次のようになります。`'2014-01-01T00:00:00Z'`|
+|hasAttachments|ブール値|イベントに添付ファイルが含まれている場合、true に設定します。|
+|iCalUId|文字列|複数の予定表で 1 つのイベントのすべてのインスタンスによって共有される一意識別子。|
+|ID|文字列| 読み取り専用です。|
+|重要性|重要性|イベントの重要度。 使用可能な値は`low`、`normal`、`high` です。|
+|isAllDay|ブール値|イベントが一日中続く場合に、true に設定します。|
+|isCancelled|ブール値|イベントがキャンセルされた場合に、true に設定します。|
+|isOrganizer|ブール値|メッセージの送信者が開催者でもある場合に、true に設定します。|
+|isReminderOn|ブール値|ユーザーにイベントを通知するアラートを設定する場合は、true に設定します。|
+|lastModifiedDateTime|DateTimeOffset|Timestamp 型は、ISO 8601 形式を使用して日付と時刻の情報を表し、必ず UTC 時間です。たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、次のようになります。 `'2014-01-01T00:00:00Z'`|
 |location|[location](location.md)|イベントの場所。|
-|locations|[location](location.md) コレクション|イベントを開催する場所、または参加者がいる場所。 **location** プロパティと **locations** プロパティは常に互いに一致します。 **location** プロパティを更新すると、**locations** コレクションに含まれる既存のすべての場所が削除されて、**location** の新しい値に置き換えられます。 |
-|onlineMeetingUrl|String|オンライン会議の URL。|
+|位置|[location](location.md) コレクション|イベントを開催する場所、または参加者がいる場所。 **location** プロパティと **locations** プロパティは常に互いに一致します。 **location** プロパティを更新すると、**locations** コレクションに含まれる既存のすべての場所が削除されて、**location** の新しい値に置き換えられます。 |
+|onlineMeetingUrl|文字列|オンライン会議の URL。 会議の開催者が Skype 会議などのオンライン会議としてイベントを指定するときにのみ、プロパティが設定されます。 読み取り専用です。|
 |organizer|[recipient](recipient.md)|イベントの開催者。|
-|originalEndTimeZone|String|イベントの作成時に設定された終了タイム ゾーン。 値 `tzone://Microsoft/Custom` は、デスクトップの Outlook で、従来のカスタム タイム ゾーンが設定されていることを示します。|
-|originalStart|DateTimeOffset|Timestamp 型は、ISO 8601 形式を使用して日付と時刻の情報を表し、必ず UTC 時間です。たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、次のようになります。`'2014-01-01T00:00:00Z'`|
-|originalStartTimeZone|String|イベントが作成されたときに設定された開始タイム ゾーン。値 `tzone://Microsoft/Custom` は、デスクトップの Outlook で、従来のカスタム タイム ゾーンが設定されていることを示します。 |
+|originalEndTimeZone|文字列|イベントの作成時に設定された終了タイム ゾーン。 値 `tzone://Microsoft/Custom` は、デスクトップの Outlook で、従来のカスタム タイム ゾーンが設定されていることを示します。|
+|originalStart|DateTimeOffset|Timestamp 型は、ISO 8601 形式を使用して日付と時刻の情報を表し、必ず UTC 時間です。たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、次のようになります。 `'2014-01-01T00:00:00Z'`|
+|originalStartTimeZone|文字列|イベントが作成されたときに設定された開始タイム ゾーン。値 `tzone://Microsoft/Custom` は、デスクトップの Outlook で、従来のカスタム タイム ゾーンが設定されていることを示します。 |
 |recurrence|[patternedRecurrence](patternedrecurrence.md)|イベントの繰り返しパターン。|
 |reminderMinutesBeforeStart|Int32|アラーム通知を行う、イベント開始時間前の分数。|
-|responseRequested|Boolean|イベントが承諾または辞退されたときに、送信者が応答を希望する場合に、true に設定します。|
+|responseRequested|ブール値|イベントが承諾または辞退されたときに、送信者が応答を希望する場合に、true に設定します。|
 |responseStatus|[responseStatus](responsestatus.md)|イベント メッセージへの応答で送信される応答のタイプを識別します。|
-|sensitivity|String| 使用可能な値: `normal`、`personal`、`private`、`confidential`。|
-|seriesMasterId|String|アイテムに割り当てられたカテゴリ。|
-|showAs|String|表示するステータス。 使用可能な値: `free`、`tentative`、`busy`、`oof`、`workingElsewhere`、`unknown`。|
+|秘密度|秘密度| 使用可能な値は`normal`、`personal`、`private`、`confidential` です。|
+|seriesMasterId|文字列|このイベントが定期的なイベントの一部である場合、定期的な一連のイベントのマスター アイテムの ID。|
+|showAs|FreeBusyStatus|表示するステータス。 使用可能な値は `free`、 `tentative`、 `busy`、 `oof`、 `workingElsewhere`、 `unknown` です。|
 |start|[dateTimeTimeZone](datetimetimezone.md)|イベントが開始する日付、時刻、タイムゾーン。|
-|subject|String|イベントの件名行のテキスト。|
-|type|String|イベントの種類。 使用可能な値: `singleInstance`、`occurrence`、`exception`、`seriesMaster`。 読み取り専用です。|
-|webLink|String|Outlook Web App でイベントを開く URL。<br/><br/>Outlook Web App のメールボックスにログインしている場合、ブラウザーでイベントが開きます。まだブラウザーでログインしていない場合、ログインするように求められます。<br/><br/>この URL には、iFrame 内からアクセスできます。|
+|subject|文字列|イベントの件名行のテキスト。|
+|型|eventType|イベントの種類。 使用可能な値は`singleInstance`、`occurrence`、`exception`、`seriesMaster` です。 読み取り専用です。|
+|webLink|文字列|Outlook Web App でイベントを開く URL。<br/><br/>Outlook Web App のメールボックスにログインしている場合、ブラウザーでイベントが開きます。まだブラウザーでログインしていない場合、ログインするように求められます。<br/><br/>この URL には、iFrame 内からアクセスできます。|
 
 ## <a name="relationships"></a>リレーションシップ
 | リレーションシップ | 型   |説明|
 |:---------------|:--------|:----------|
-|attachments|[attachment](attachment.md) コレクション|イベントの [fileAttachment](fileAttachment.md) 添付ファイルと [itemAttachment](itemAttachment.md) 添付ファイルのコレクション。ナビゲーション プロパティ。読み取り専用。Null 許容型。|
-|予定表|[calendar](calendar.md)|イベントを含む予定表。ナビゲーション プロパティ。読み取り専用。|
+|添付ファイル|[attachment](attachment.md) コレクション|イベントの [fileAttachment](fileAttachment.md) 添付ファイルと [itemAttachment](itemAttachment.md) 添付ファイルのコレクション。ナビゲーション プロパティ。読み取り専用。Null 許容型。|
+|calendar|[calendar](calendar.md)|イベントを含む予定表。ナビゲーション プロパティ。読み取り専用。|
 |extensions|[Extension](extension.md) コレクション|イベントに対して定義されているオープン拡張機能のコレクション。読み取り専用。Null 許容型。|
 |インスタンス|[event](event.md) コレクション|イベントのインスタンス。ナビゲーション プロパティ。読み取り専用。Null 許容型。|
-|multiValueExtendedProperties|[multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md) collection| イベントに対して定義された、複数値の拡張プロパティのコレクション。読み取り専用。Null 許容型。|
-|singleValueExtendedProperties|[singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md) collection| イベントに対して定義された、単一値の拡張プロパティのコレクションです。読み取り専用。Null 許容型。|
+|multiValueExtendedProperties|[multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md) コレクション| イベントに対して定義された、複数値の拡張プロパティのコレクション。読み取り専用。Null 許容型。|
+|singleValueExtendedProperties|[singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md) コレクション| イベントに対して定義された、単一値の拡張プロパティのコレクションです。読み取り専用。Null 許容型。|
 
 ## <a name="json-representation"></a>JSON 表記
 
 以下は、リソースの JSON 表記です
 
-<!-- {
+<!--{
   "blockType": "resource",
+  "openType": true,
   "optionalProperties": [
     "attachments",
     "calendar",
@@ -99,7 +101,49 @@
     "singleValueExtendedProperties"
   ],
   "keyProperty": "id",
-  "@odata.type": "microsoft.graph.event"
+  "baseType": "microsoft.graph.outlookItem",
+  "@odata.type": "microsoft.graph.event",
+  "@odata.annotations": [
+    {
+      "property": "attachments",
+      "capabilities": {
+        "changeTracking": false,
+        "searchable": false,
+        "updatable": false
+      }
+    },
+    {
+      "property": "calendar",
+      "capabilities": {
+        "changeTracking": false,
+        "deletable": false,
+        "expandable": false,
+        "insertable": false,
+        "navigability": "single",
+        "searchable": false,
+        "updatable": false
+      }
+    },
+    {
+      "property": "extensions",
+      "capabilities": {
+        "changeTracking": false,
+        "searchable": false
+      }
+    },
+    {
+      "property": "instances",
+      "capabilities": {
+        "changeTracking": false,
+        "deletable": false,
+        "expandable": false,
+        "insertable": false,
+        "navigability": "single",
+        "searchable": false,
+        "updatable": false
+      }
+    }
+  ]
 }-->
 
 ```json

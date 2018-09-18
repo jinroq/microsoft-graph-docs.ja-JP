@@ -5,6 +5,7 @@
 このリソースは以下をサポートしています。
 
 - [拡張機能](../../../concepts/extensibility_overview.md)を使用して、カスタム プロパティに独自のデータを追加します。
+-  [通知の変更](../../../concepts/webhooks.md)にサブスクライブします。
 - [デルタ](../api/contact_delta.md)関数を提供することにより、[デルタ クエリ](../../../concepts/delta_query_overview.md)を使用して、増分の追加、削除、更新を追跡します。
 
 
@@ -29,7 +30,7 @@
 |[複数値の拡張プロパティを持つ連絡先を取得する](../api/multivaluelegacyextendedproperty_get.md)  | [連絡先](contact.md) | を使用して、複数値の拡張プロパティを含む連絡先を取得します。`$expand` |
 
 ## <a name="properties"></a>プロパティ
-| プロパティ     | タイプ   |説明|
+| プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
 |assistantName|文字列|連絡先のアシスタントの名前。|
 |誕生日|DateTimeOffset|連絡先の誕生日です。Timestamp 型は、ISO 8601 形式を使用して日付と時刻の情報を表し、必ず UTC 時間です。たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、次のようになります。 `'2014-01-01T00:00:00Z'`|

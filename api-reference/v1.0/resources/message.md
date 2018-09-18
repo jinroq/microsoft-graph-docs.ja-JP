@@ -5,7 +5,8 @@ mailFolder のメッセージ。
 このリソースは以下をサポートしています。
 
 - カスタムのインターネット メッセージのヘッダーとして、独自のデータを追加しています。 メッセージを作成するときにのみ、カスタム ヘッダーを追加し、名前を付けます"x-"で始まります。 メッセージが送信されると、ヘッダーを変更することはできません。 メッセージのヘッダーを取得するには、適用、 `$select` 、 [メッセージの取得](../api/message_get.md) 操作のパラメーターのクエリを実行します。
--  [拡張](../../../concepts/extensibility_overview.md)のカスタム プロパティとしては、独自のデータを追加します。
+- [拡張機能](../../../concepts/extensibility_overview.md)を使用して、カスタム プロパティに独自のデータを追加します。
+- [通知の変更](../../../concepts/webhooks.md)にサブスクライブします。
 - [デルタ](../api/message_delta.md)関数を提供することにより、[デルタ クエリ](../../../concepts/delta_query_overview.md)を使用して、増分の追加、削除、更新を追跡します。
 
 ## <a name="methods"></a>メソッド
@@ -58,12 +59,12 @@ mailFolder のメッセージ。
 |ID|文字列|メッセージの一意識別子 (メッセージが移動または変更された場合、この値は変更される可能性があることに注意)|
 |重要性|重要性| メッセージの重要度: `Low`、`Normal`、`High`。|
 |inferenceClassification | InferenceClassificationType | 推定される関連性や重要性、または明示的なオーバーライドに基づく、ユーザーの対象メッセージの分類。 使用可能な値: `focused` または `other`。 |
-|internetMessageHeaders | [internetMessageHeader](internetmessageheader.md) コレクション |  [RFC5322](https://www.ietf.org/rfc/rfc5322.txt)で定義されているメッセージ ヘッダーのコレクションです。 セットには、受信者に送信者からのメッセージを取得するネットワーク パスを示すメッセージのヘッダーが含まれています。 メッセージのアプリケーション データを保持するカスタム メッセージのヘッダーを含めることもできます。 |
+|internetMessageHeaders | [internetMessageHeader](internetmessageheader.md) コレクション | [RFC5322](https://www.ietf.org/rfc/rfc5322.txt)で定義されているメッセージ ヘッダーのコレクションです。 セットには、受信者に送信者からのメッセージを取得するネットワーク パスを示すメッセージのヘッダーが含まれています。 メッセージのアプリケーション データを保持するカスタム メッセージのヘッダーを含めることもできます。 |
 |internetMessageId |文字列 |[RFC2822](http://www.ietf.org/rfc/rfc2822.txt) によって指定された形式のメッセージ ID。 |
-|isDeliveryReceiptRequested|ブーリアン|メッセージの開封確認メッセージが要求されているかどうかを示します。|
-|isDraft|ブール型|メッセージが下書きかどうかを示します。メッセージがまだ送信されていなければ下書きです。|
-|isRead|ブーリアン|メッセージが開封されたかどうかを示します。|
-|isReadReceiptRequested|ブーリアン|メッセージの開封確認メッセージが要求されているかどうかを示します。|
+|isDeliveryReceiptRequested|ブール値|メッセージの開封確認メッセージが要求されているかどうかを示します。|
+|isDraft|ブール値|メッセージが下書きかどうかを示します。メッセージがまだ送信されていなければ下書きです。|
+|isRead|ブール値|メッセージが開封されたかどうかを示します。|
+|isReadReceiptRequested|ブール値|メッセージの開封確認メッセージが要求されているかどうかを示します。|
 |lastModifiedDateTime|DateTimeOffset|メッセージが最後に変更された日時。|
 |parentFolderId|文字列|メッセージの親 mailFolder の一意識別子。|
 |receivedDateTime|DateTimeOffset|メッセージが受信された日時です。|

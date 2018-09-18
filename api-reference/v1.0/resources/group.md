@@ -5,6 +5,7 @@ Office 365 グループ、動的なグループ、セキュリティ グルー�
 このリソースは以下をサポートしています。
 
 - [拡張機能](../../../concepts/extensibility_overview.md)を使用して、カスタム プロパティに独自のデータを追加します。
+- [通知の変更](../../../concepts/webhooks.md)にサブスクライブします。
 - [デルタ](../api/user_delta.md)関数を提供することにより、[デルタ クエリ](../../../concepts/delta_query_overview.md)を使用して、増分の追加、削除、更新を追跡します。
 
 
@@ -36,8 +37,8 @@ Office 365 グループ、動的なグループ、セキュリティ グルー�
 |[設定を更新する](../api/groupsetting_update.md) | [groupSetting](groupsetting.md) | 設定オブジェクトを更新します。 |
 |[設定を削除する](../api/groupsetting_delete.md) | なし | 設定オブジェクトを削除します。 |
 |**予定表**| | |
-|[イベントを作成する](../api/group_post_events.md) |[event](event.md)| event コレクションへの投稿によって、新しいイベントを作成します。|
-|[イベントを取得する](../api/group_get_event.md) |[event](event.md)|event オブジェクトのプロパティを読み取ります。|
+|[イベントを作成する](../api/group_post_events.md) |[イベント](event.md)| event コレクションへの投稿によって、新しいイベントを作成します。|
+|[イベントを取得する](../api/group_get_event.md) |[イベント](event.md)|event オブジェクトのプロパティを読み取ります。|
 |[イベントを一覧表示する](../api/group_list_events.md) |[event](event.md) コレクション| event オブジェクトのコレクションを取得します。|
 |[イベントを更新する](../api/group_update_event.md) |なし|event オブジェクトのプロパティを更新します。|
 |[イベントを削除する](../api/group_delete_event.md) |なし|event オブジェクトを削除します。|
@@ -79,13 +80,13 @@ Office 365 グループ、動的なグループ、セキュリティ グルー�
 |[resetUnseenCount](../api/group_resetunseencount.md)|なし|現在のユーザーが最後の訪問以降見ていない、すべての投稿の unseenCount を 0 にリセットします。Office 365 のグループのみをサポートします。|
 
 ## <a name="properties"></a>プロパティ
-| プロパティ     | タイプ   |説明|
+| プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
 |allowExternalSenders|ブール値|既定値は **false** です。組織外部のユーザーがグループにメッセージを送信できるかどうかを示します。|
 |autoSubscribeNewMembers|ブール値|既定値は **false** です。グループに追加された新しいメンバーが、電子メールの通知を受信するように自動的にサブスクライブされるかどうかを示します。グループの PATCH 要求でこのプロパティを設定できます。グループを作成する最初の POST 要求では設定しないでください。|
 |classification|文字列|グループの分類 (低、中、高程度の企業への影響など) を説明します。このプロパティの有効な値は、[テンプレート定義](groupsettingtemplate.md)に基づいて ClassificationList [設定](groupsetting.md)値を作成することによって定義されます。|
-|createdDateTime|DateTimeOffset| グループ作成時のタイムスタンプです。 値は変更できず、グループが作成されると自動的に設定されます。 Timestamp 型は、ISO 8601 形式を使用して日付と時刻の情報を表し、常に UTC 時間です。 たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、次のようになります。`'2014-01-01T00:00:00Z'` 読み取り専用。 |
-|description|文字列|グループに関するオプションの説明。 |
+|createdDateTime|DateTimeOffset| グループ作成時のタイムスタンプです。 値は変更できず、グループが作成されると自動的に設定されます。 Timestamp 型は、ISO 8601 形式を使用して日付と時刻の情報を表し、常に UTC 時間です。 たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、次のようになります。`'2014-01-01T00:00:00Z'` 読み取り専用です。 |
+|説明|文字列|グループに関するオプションの説明。 |
 |displayName|文字列|グループの表示名。このプロパティは、グループの作成時の必須プロパティであり、更新時にクリアすることはできません。$filter および $orderby をサポートします。|
 |groupTypes|文字列コレクション| 作成するグループの種類を指定します。使用可能な値は **Unified** (Office 365 のグループを作成する場合) または **DynamicMembership** (動的なグループを作成する場合) です。その他のグループの種類 (セキュリティが有効なグループやメールが有効なセキュリティ グループなど) の場合、このプロパティは設定しないでください。$filter をサポートします。|
 |ID|文字列|グループの一意の識別子。[directoryObject](directoryobject.md) から継承されます。キー。null 許容ではありません。読み取り専用です。|
@@ -98,7 +99,7 @@ Office 365 グループ、動的なグループ、セキュリティ グルー�
 |onPremisesSecurityIdentifier|文字列|オンプレミスからクラウドに同期されたグループのオンプレミスのセキュリティ識別子 (SID) が含まれます。読み取り専用です。 |
 |onPremisesSyncEnabled|ブール値|このグループがオンプレミスのディレクトリから同期される場合は **true**、このグループが最初にオンプレミスのディレクトリから同期されていて、今後は同期しない場合は **false**、このオブジェクトがオンプレミスのディレクトリから一度も同期されたことがない場合は **null**。読み取り専用です。$filter をサポートします。|
 |proxyAddresses|String コレクション| 複数値プロパティのフィルター式には **any** 演算子が必要です。読み取り専用です。null 許容ではありません。$filter をサポートします。 |
-|renewedDateTime|DateTimeOffset| グループの最後の更新時のタイムスタンプです。 これは直接変更することはできず、[更新サービス アクション](../api/group_renew.md)経由でのみ更新されます。 Timestamp 型は、ISO 8601 形式を使用して日付と時刻の情報を表し、常に UTC 時間です。 たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、次のようになります。`'2014-01-01T00:00:00Z'` 読み取り専用。|
+|renewedDateTime|DateTimeOffset| グループの最後の更新時のタイムスタンプです。 これは直接変更することはできず、[更新サービス アクション](../api/group_renew.md)経由でのみ更新されます。 Timestamp 型は、ISO 8601 形式を使用して日付と時刻の情報を表し、常に UTC 時間です。 たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、次のようになります。`'2014-01-01T00:00:00Z'` 読み取り専用です。|
 |securityEnabled|ブール値|グループがセキュリティ グループであるかどうかを指定します。**mailEnabled** プロパティも true の場合、グループはメールが有効なセキュリティ グループになります。それ以外の場合は、セキュリティ グループになります。Office 365 グループの場合、**false** にする必要があります。$filter をサポートします。|
 |unseenCount|Int32|現在のユーザーの最後のアクセス以降の投稿の非表示カウントです。|
 |表示 / 非表示|文字列| Office 365 のグループの表示 / 非表示を指定します。 指定できる値は、**プライベート**、 **パブリック**、 **HiddenMembership**、または空 (これは、 **パブリック**として解釈されます) です。|
@@ -111,18 +112,18 @@ Office 365 グループ、動的なグループ、セキュリティ グルー�
 |calendarView|[event](event.md) コレクション|予定表のカレンダー ビュー。読み取り専用です。|
 |conversations|[conversation](conversation.md) コレクション|グループの会話。|
 |createdOnBehalfOf|[directoryObject](directoryobject.md)| グループを作成したユーザー (またはアプリケーション)。注: ユーザーが管理者である場合、これは設定されません。読み取り専用です。|
-|drive|[drive](drive.md)|グループの既定のドライブです。 読み取り専用。|
-|drives|[drive](drive.md) コレクション|グループのドライブ。 読み取り専用。|
-|events|[event](event.md) コレクション|グループの予定表イベント。|
+|ドライブ|[ドライブ](drive.md)|グループの既定のドライブです。 読み取り専用です。|
+|drives|[drive](drive.md) コレクション|グループのドライブ。 読み取り専用です。|
+|イベント|[event](event.md) コレクション|グループの予定表イベント。|
 |extensions|[extension](extension.md) コレクション|グループに対して定義されているオープン拡張機能のコレクション。読み取り専用です。Null 許容型。|
-|groupLifecyclePolicies|[groupLifecyclePolicy](groupLifecyclePolicy.md) コレクション|このグループのライフ サイクル ポリシーのコレクションです。 読み取り専用。 Null 許容型。|
+|groupLifecyclePolicies|[groupLifecyclePolicy](groupLifecyclePolicy.md) コレクション|このグループのライフ サイクル ポリシーのコレクションです。 読み取り専用です。 Null 許容型。|
 |memberOf|[directoryObject](directoryobject.md) コレクション|このグループがメンバーとして含まれているグループ。HTTP メソッド:GET (すべてのグループでサポートされます)。読み取り専用です。Null 許容型。|
-|members|[directoryObject](directoryobject.md) コレクション| このグループのメンバーであるユーザーとグループ。HTTP メソッド:GET (すべてのグループでサポートされます)、POST (Office 365 グループ、セキュリティ グループ、およびメールが有効なセキュリティ グループでサポートされます)、DELETE (Office 365 グループとセキュリティ グループでサポートされます)。Null 許容型。|
-|onenote|[Onenote](onenote.md)| 読み取り専用。|
+|メンバー|[directoryObject](directoryobject.md) コレクション| このグループのメンバーであるユーザーとグループ。HTTP メソッド:GET (すべてのグループでサポートされます)、POST (Office 365 グループ、セキュリティ グループ、およびメールが有効なセキュリティ グループでサポートされます)、DELETE (Office 365 グループとセキュリティ グループでサポートされます)。Null 許容型。|
+|onenote|[Onenote](onenote.md)| 読み取り専用です。|
 |owners|[directoryObject](directoryobject.md) コレクション|グループの所有者。所有者は、このオブジェクトの変更を許可されている管理者以外のユーザーです。10 人の所有者に制限されます。HTTP メソッド:GET (すべてのグループでサポートされます)、POST (Office 365 グループ、セキュリティ グループ、およびメールが有効なセキュリティ グループでサポートされます)、DELETE (Office 365 グループとセキュリティ グループでサポートされます)。Null 許容型。|
 |photo|[profilePhoto](profilephoto.md)| グループのプロファイル写真 |
 |photos|[profilePhoto](profilephoto.md) コレクション| グループが所有しているプロファイル写真。読み取り専用です。Null 許容型。|
-|planner|[plannerGroup](plannergroup.md)| 統合グループに存在する可能性がある Planner リソースのエントリ ポイント。|
+|プランナー|[plannerGroup](plannergroup.md)| 統合グループに存在する可能性がある Planner リソースのエントリ ポイント。|
 |rejectedSenders|[directoryObject](directoryobject.md) コレクション|このグループで投稿またはカレンダーのイベントを作成することが許可されていないグループの一覧。Null 許容型|
 |設定|[groupSetting](groupsetting.md) コレクション| 読み取り専用。Null 許容型。|
 |sites|[site](site.md) コレクション|このグループ内の SharePoint サイトの一覧。/sites/root を使用して既定のサイトにアクセスします。|

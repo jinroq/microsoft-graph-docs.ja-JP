@@ -5,6 +5,7 @@ Azure AD ユーザー アカウントを表します。[directoryObject](directo
 このリソースは以下をサポートしています。
 
 - [拡張機能](../../../concepts/extensibility_overview.md)を使用して、カスタム プロパティに独自のデータを追加します。
+- [通知の変更](../../../concepts/webhooks.md)にサブスクライブします。
 - [デルタ](../api/user_delta.md)関数を提供することにより、[デルタ クエリ](../../../concepts/delta_query_overview.md)を使用して、増分の追加、削除、更新を追跡します。
 
 ## <a name="methods"></a>メソッド
@@ -54,7 +55,7 @@ Azure AD ユーザー アカウントを表します。[directoryObject](directo
 
 ## <a name="properties"></a>プロパティ
 
-| プロパティ       | タイプ    |説明|
+| プロパティ       | 型    |説明|
 |:---------------|:--------|:----------|
 |aboutMe|文字列|ユーザーが自分自身について記述する、フリー フォームのテキスト入力フィールド。|
 |accountEnabled|ブーリアン| アカウントが有効な場合は **true**。そうでない場合は **false**。このプロパティは、ユーザーの作成時に必要です。$filter をサポートします。    |
@@ -66,24 +67,24 @@ Azure AD ユーザー アカウントを表します。[directoryObject](directo
 |都市|文字列|ユーザーがいる都市。$filter をサポートします。|
 |companyName| 文字列 | ユーザーが関連付けられている会社名。 読み取り専用です。
 |consentProvidedForMinor|文字列|未成年者の同意が得られたかどうかを設定します。 指定できる値は、`null`、 `granted`、 `denied` 、`notRequired` です。 詳細については [法定年齢グループのプロパティの定義](#legal-age-group-property-definitions) を参照してください。|
-|country|文字列|ユーザーがいる国/地域。たとえば、「US (米国)」や「UK (英国)」です。$filter をサポートします。|
+|国|文字列|ユーザーがいる国/地域。たとえば、「US (米国)」や「UK (英国)」です。$filter をサポートします。|
 |部署|文字列|ユーザーが働いている部門の名前。$filter をサポートします。|
 |displayName|文字列|アドレス帳に表示されるユーザーの名前。これは通常、ユーザーの名前、ミドルネームのイニシャル、姓の組み合わせです。このプロパティは、ユーザーの作成時に必須になります。更新時にクリアすることはできません。$filter および $orderby をサポートします。|
 |givenName|文字列|ユーザーの名。$filter をサポートします。|
 |hireDate|DateTimeOffset|ユーザーの採用日付。Timestamp 型は、ISO 8601 形式を使用して日付と時刻の情報を表し、必ず UTC 時間です。たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、次のようになります。 `'2014-01-01T00:00:00Z'`|
-|id|文字列|ユーザーの一意の識別子。[directoryObject](directoryobject.md) から継承されます。キー。null 許容ではありません。読み取り専用です。|
+|ID|文字列|ユーザーの一意の識別子。[directoryObject](directoryobject.md) から継承されます。キー。null 許容ではありません。読み取り専用です。|
 |imAddresses|String コレクション|ユーザーのインスタント メッセージ ボイス オーバー IP (VOIP) セッション開始プロトコル (SIP) のアドレス。読み取り専用です。|
 |興味関心|String コレクション|ユーザーが自分の関心事を記述する一覧。|
 |jobTitle|文字列|ユーザーの役職。$filter をサポートします。|
 |legalAgeGroupClassification|文字列| ユーザーの法定年齢グループを決定するために、エンタープライズ アプリケーションで使用されます。 このプロパティは、読み取り専用で、`ageGroup` プロパティと `consentProvidedForMinor` プロパティに基づいて計算されます。 指定できる値は、`null`、 `minorWithOutParentalConsent`、 `minorWithParentalConsent` 、`minorNoParentalConsentRequired`、`notAdult`、`adult`  です。 詳細については、[法定年齢グループのプロパティの定義](#legal-age-group-property-definitions) を参照してください。|
-|mail|文字列|ユーザーの SMTP アドレス (たとえば、"jeff@contoso.onmicrosoft.com")。読み取り専用。$filter をサポートします。|
+|メール|文字列|ユーザーの SMTP アドレス (たとえば、"jeff@contoso.onmicrosoft.com")。読み取り専用。$filter をサポートします。|
 |mailboxSettings|[mailboxSettings](mailboxsettings.md)|サインイン ユーザーのプライマリ メールボックスの設定。着信メッセージに対する自動応答を送信するための設定、ロケール、タイム ゾーンを [取得](../api/user_get_mailboxsettings.md) または [更新](../api/user_update_mailboxsettings.md) できます。|
 |mailNickname|文字列|ユーザーの電子メール エイリアス。ユーザーの作成時に、このプロパティを指定する必要があります。$filter をサポートします。|
 |mobilePhone|文字列|ユーザーの主な携帯電話の番号。|
 |mySite|文字列|ユーザーの個人用サイトの URL。|
 |officeLocation|文字列|ユーザーの勤務先の場所。|
 |onPremisesDomainName|文字列| 内部設置型の `domainFQDN` が含まれています。また、内部設置型のディレクトリから同期された dnsDomainName を呼び出します。 プロパティは、内部設置型のディレクトリを  Azure AD Connect 経由で直接 Azure Active Directory に同期しているお客様に対してのみ設定されます。 読み取り専用です。 |
-|onPremisesExtensionAttributes|[OnPremisesExtensionAttributes](onpremisesextensionattributes.md)|ユーザーの extensionAttributes 1-15 を含みます。 個々 の拡張属性は、選択もフィルターも不可能なことに注意してください。  `onPremisesSyncEnabled` ユーザーでは、このプロパティのセットは内部設置型をマスタとし、読み取り専用となります。 クラウドのみのユーザー (`onPremisesSyncEnabled`が falseの場合) では、これらのプロパティは作成時または更新時に設定されることがあります。 |
+|onPremisesExtensionAttributes|[OnPremisesExtensionAttributes](onpremisesextensionattributes.md)|ユーザーの extensionAttributes 1-15 を含みます。 個々 の拡張属性は、選択もフィルターも不可能なことに注意してください。 ユーザーでは、このプロパティのセットは内部設置型をマスタとし、読み取り専用となります。`onPremisesSyncEnabled` クラウドのみのユーザー (`onPremisesSyncEnabled`が falseの場合) では、これらのプロパティは作成時または更新時に設定されることがあります。 |
 |onPremisesImmutableId|文字列|このプロパティは、オンプレミスの Active Directory ユーザー アカウントを Azure AD ユーザー オブジェクトに関連付けるために使用します。Graph で新しいユーザー アカウントを作成するとき、ユーザーの **userPrincipalName** (UPN) プロパティにフェデレーション ドメインを使用する場合は、このプロパティを指定する必要があります。**重要:****$** と **_** の文字は、このプロパティを指定するときには使用できません。$filter をサポートします。                            |
 |onPremisesLastSyncDateTime|DateTimeOffset|オブジェクトがオンプレミス ディレクトリと前回、同期された日時を示します。例："2013-02-16T03:04:54Z"Timestamp 型は、ISO 8601 形式を使用して日付と時刻の情報を表し、必ず UTC 時間です。たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、次のようになります。`'2014-01-01T00:00:00Z'`読み取り専用です。|
 |onPremisesProvisioningErrors|[onPremisesProvisioningError](onpremisesprovisioningerror.md) コレクション| 事前設定中に Microsoft の同期製品を使用するときのエラーです。 |
@@ -150,7 +151,7 @@ Azure AD ユーザー アカウントを表します。[directoryObject](directo
 |denied|2|アカウントのユーザーの同意を得ていません。|
 |不要|3|ユーザーは、同意を必要としない国や地域の出身です。|
  
-## <a name="relationships"></a>関係
+## <a name="relationships"></a>リレーションシップ
 
 | リレーションシップ | 型   |説明|
 |:---------------|:--------|:----------|
@@ -174,12 +175,12 @@ Azure AD ユーザー アカウントを表します。[directoryObject](directo
 |memberOf|[directoryObject](directoryobject.md) コレクション|ユーザーがメンバーになっているグループとディレクトリ ロール。読み取り専用です。Null 許容型。|
 |メッセージ|[Message](message.md) コレクション|メールボックスまたはフォルダー内のメッセージ。読み取り専用です。Null 許容型。|
 |onenote|[Onenote](onenote.md)| 読み取り専用です。|
-|outlook|[outlookUser](outlookuser.md)| 読み取り専用です。|
+|outlook|[OutlookUser](outlookuser.md)| 読み取り専用です。|
 |ownedDevices|[directoryObject](directoryobject.md) コレクション|ユーザーが所有しているデバイス。読み取り専用です。Null 許容型。|
 |ownedObjects|[directoryObject](directoryobject.md) コレクション|ユーザーが所有しているディレクトリ オブジェクト。読み取り専用です。Null 許容型。|
 |people|[person](person.md) コレクション| ユーザーに関連する人。 読み取り専用です。 Null 許容型。
 |photo|[profilePhoto](profilephoto.md)| ユーザーのプロフィール写真。読み取り専用です。|
-|planner|[plannerUser](planneruser.md)| ユーザー用に存在する可能性のあるプランナー リソースへのエントリ ポイントです。 読み取り専用です。|
+|プランナー|[plannerUser](planneruser.md)| ユーザー用に存在する可能性のあるプランナー リソースへのエントリ ポイントです。 読み取り専用です。|
 |registeredDevices|[directoryObject](directoryobject.md) コレクション|ユーザーについて登録されているデバイス。読み取り専用です。Null 許容型。|
 
 ## <a name="json-representation"></a>JSON 表記
