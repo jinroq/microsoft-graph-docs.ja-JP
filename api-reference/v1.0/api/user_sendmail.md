@@ -30,8 +30,8 @@ POST /users/{id | userPrincipalName}/sendMail
 
 | パラメーター    | 型   |説明|
 |:---------------|:--------|:----------|
-|message|[Message](../resources/message.md)|送信するメッセージです。必須。|
-|SavetoSentItems|ブーリアン|[送信済みアイテム] 内のメッセージを保存するかどうかを示します。パラメーターを false にする場合にのみ指定します。既定では true です。省略可能。 |
+|メッセージ|[メッセージ](../resources/message.md)|送信するメッセージです。必須。|
+|SavetoSentItems|ブール値|[送信済みアイテム] 内のメッセージを保存するかどうかを示します。パラメーターを false にする場合にのみ指定します。既定では true です。省略可能。 |
 
 ## <a name="response"></a>応答
 
@@ -39,7 +39,7 @@ POST /users/{id | userPrincipalName}/sendMail
 
 ## <a name="example"></a>例
 以下は、この API を呼び出す方法の例です。
-##### <a name="request"></a>要求
+##### <a name="request-1"></a>要求 1
 以下は、要求の例です。
 <!-- {
   "blockType": "request",
@@ -48,7 +48,6 @@ POST /users/{id | userPrincipalName}/sendMail
 ```http
 POST https://graph.microsoft.com/v1.0/me/sendMail
 Content-type: application/json
-Content-length: 512
 
 {
   "message": {
@@ -76,7 +75,55 @@ Content-length: 512
 }
 ```
 
-##### <a name="response"></a>応答
+##### <a name="response-1"></a>応答 1
+以下は、応答の例です。
+<!-- {
+  "blockType": "response",
+  "truncated": true
+} -->
+```http
+HTTP/1.1 202 Accepted
+```
+
+##### <a name="request-2"></a>要求 2
+次の例では、カスタムのインターネット メッセージ ヘッダーを持つメッセージを作成し、メッセージを送信します。
+<!-- {
+  "blockType": "request",
+  "name": "user_sendmail_with_headers"
+}-->
+```http
+POST https://graph.microsoft.com/v1.0/me/sendMail
+Content-type: application/json
+
+{
+  "message": {
+    "subject": "9/9/2018: concert",
+    "body": {
+      "contentType": "HTML",
+      "content": "The group represents Nevada."
+    },
+    "toRecipients": [
+      {
+        "emailAddress": {
+          "address": "AlexW@contoso.OnMicrosoft.com"
+        }
+      }
+    ],
+    "internetMessageHeaders":[
+      {
+        "name":"x-custom-header-group-name",
+        "value":"Nevada"
+      },
+      {
+        "name":"x-custom-header-group-id",
+        "value":"NV001"
+      }
+    ]
+  }
+}
+```
+
+##### <a name="response-2"></a>応答 2
 以下は、応答の例です。
 <!-- {
   "blockType": "response",
