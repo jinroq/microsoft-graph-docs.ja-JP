@@ -1,0 +1,230 @@
+# <a name="get-alert"></a><span data-ttu-id="370e6-101">アラートの取得</span><span class="sxs-lookup"><span data-stu-id="370e6-101">Get alert</span></span>
+
+ <span data-ttu-id="370e6-102">プロパティと [アラート](../resources/alert.md) オブジェクトの関係を取得します。</span><span class="sxs-lookup"><span data-stu-id="370e6-102">Retrieve the properties and relationships of [plannertaskdetails](../resources/alert.md) object.</span></span>
+
+## <a name="permissions"></a><span data-ttu-id="370e6-103">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="370e6-103">Permissions</span></span>
+
+<span data-ttu-id="370e6-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](../../../concepts/permissions_reference.md)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="370e6-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).</span></span>
+
+|<span data-ttu-id="370e6-106">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="370e6-106">Permission type</span></span>      | <span data-ttu-id="370e6-107">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="370e6-107">Permissions (from least to most privileged)</span></span>              |
+|:--------------------|:---------------------------------------------------------|
+|<span data-ttu-id="370e6-108">委任 (職場または学校アカウント)</span><span class="sxs-lookup"><span data-stu-id="370e6-108">Delegated (work or school account)</span></span> |  <span data-ttu-id="370e6-109">SecurityEvents.Read.All、SecurityEvents.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="370e6-109">SecurityEvents.Read.All, SecurityEvents.ReadWrite.All</span></span>   |
+|<span data-ttu-id="370e6-110">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="370e6-110">Delegated (personal Microsoft account)</span></span> |  <span data-ttu-id="370e6-111">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="370e6-111">Not supported.</span></span>  |
+|<span data-ttu-id="370e6-112">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="370e6-112">Application</span></span> | <span data-ttu-id="370e6-113">SecurityEvents.Read.All、SecurityEvents.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="370e6-113">SecurityEvents.Read.All, SecurityEvents.ReadWrite.All</span></span> |
+
+## <a name="http-request"></a><span data-ttu-id="370e6-114">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="370e6-114">HTTP request</span></span>
+
+<!-- { "blockType": "ignored" } -->
+
+```http
+GET /security/alerts/{alert_id}
+```
+
+## <a name="request-headers"></a><span data-ttu-id="370e6-115">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="370e6-115">Request headers</span></span>
+
+| <span data-ttu-id="370e6-116">名前</span><span class="sxs-lookup"><span data-stu-id="370e6-116">Name</span></span>      |<span data-ttu-id="370e6-117">説明</span><span class="sxs-lookup"><span data-stu-id="370e6-117">Description</span></span>|
+|:----------|:----------|
+| <span data-ttu-id="370e6-118">承認</span><span class="sxs-lookup"><span data-stu-id="370e6-118">Authorization</span></span>  | <span data-ttu-id="370e6-p102">Bearer {code}。必須。</span><span class="sxs-lookup"><span data-stu-id="370e6-p102">Bearer {code}. Required.</span></span>|
+
+## <a name="request-body"></a><span data-ttu-id="370e6-121">要求本文</span><span class="sxs-lookup"><span data-stu-id="370e6-121">Request body</span></span>
+
+<span data-ttu-id="370e6-122">このメソッドには、要求本文を指定しません。</span><span class="sxs-lookup"><span data-stu-id="370e6-122">Do not supply a request body for this method.</span></span>
+
+## <a name="response"></a><span data-ttu-id="370e6-123">応答</span><span class="sxs-lookup"><span data-stu-id="370e6-123">Response</span></span>
+
+<span data-ttu-id="370e6-124">成功した場合、このメソッドは`200 OK`応答コードと、応答本文で**アラート**オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="370e6-124">If successful, this method returns a `200 OK` response code and an updated **windows10CompliancePolicy** object in the response body.</span></span>
+
+## <a name="example"></a><span data-ttu-id="370e6-125">例</span><span class="sxs-lookup"><span data-stu-id="370e6-125">Example</span></span>
+
+### <a name="request"></a><span data-ttu-id="370e6-126">要求</span><span class="sxs-lookup"><span data-stu-id="370e6-126">Request</span></span>
+
+<span data-ttu-id="370e6-127">要求の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="370e6-127">The following is an example of the request.</span></span>
+<!-- {
+  "blockType": "request",
+  "name": "get_alert"
+}-->
+
+```http
+GET https://graph.microsoft.com/v1.0/security/alerts/{alert_id}
+```
+
+### <a name="response"></a><span data-ttu-id="370e6-128">応答</span><span class="sxs-lookup"><span data-stu-id="370e6-128">Response</span></span>
+
+<span data-ttu-id="370e6-129">応答の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="370e6-129">The following is an example of the response.</span></span>
+<!-- {
+  "blockType": "response",
+  "truncated": false,
+  "@odata.type": "microsoft.graph.alert"
+} -->
+
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+  "activityGroupName": "String",
+  "assignedTo": "String",
+  "azureSubscriptionId": "String",
+  "azureTenantId": "String",
+  "category": "String",
+  "closedDateTime": "String (timestamp)",
+  "cloudAppStates": [
+    {
+      "destinationServiceIp": "String",
+      "destinationServiceName": "String",
+      "riskScore": "String"
+    }
+  ],
+  "comments": ["String"],
+  "confidence": 1024,
+  "createdDateTime": "String (timestamp)",
+  "description": "String",
+  "detectionIds": ["String"],
+  "eventDateTime": "String (timestamp)",
+  "feedback": "@odata.type: microsoft.graph.alertFeedback",
+  "fileStates": [
+    {
+      "fileHash": {
+        "hashType": "@odata.type: microsoft.graph.fileHashType",
+        "hashValue": "String"
+      },
+      "name": "String",
+      "path": "String",
+      "riskScore": "String"
+    }
+  ],
+  "hostStates": [
+    {
+      "fqdn": "String",
+      "isAzureAadJoined": true,
+      "isAzureAadRegistered": true,
+      "isHybridAzureDomainJoined": true,
+      "netBiosName": "String",
+      "os": "String",
+      "privateIpAddress": "String",
+      "publicIpAddress": "String",
+      "riskScore": "String"
+    }
+  ],
+  "id": "String (identifier)",
+  "lastModifiedDateTime": "String (timestamp)",
+  "malwareStates": [
+    {
+      "category": "String",
+      "family": "String",
+      "name": "String",
+      "severity": "String",
+      "wasRunning": true
+    }
+  ],
+  "networkConnections": [
+    {
+      "applicationName": "String",
+      "destinationAddress": "String",
+      "destinationDomain": "String",
+      "destinationPort": "String",
+      "destinationUrl": "String",
+      "direction": "@odata.type: microsoft.graph.connectionDirection",
+      "domainRegisteredDateTime": "String (timestamp)",
+      "localDnsName": "String",
+      "natDestinationAddress": "String",
+      "natDestinationPort": "String",
+      "natSourceAddress": "String",
+      "natSourcePort": "String",
+      "protocol": "@odata.type: microsoft.graph.securityNetworkProtocol",
+      "riskScore": "String",
+      "sourceAddress": "String",
+      "sourcePort": "String",
+      "status": "@odata.type: microsoft.graph.connectionStatus",
+      "urlParameters": "String"
+    }
+  ],
+  "processes": [
+    {
+      "accountName": "String",
+      "commandLine": "String",
+      "createdDateTime": "String (timestamp)",
+      "fileHash": {
+        "hashType": "@odata.type: microsoft.graph.fileHashType",
+        "hashValue": "String"
+      },
+      "integrityLevel": "@odata.type: microsoft.graph.processIntegrityLevel",
+      "isElevated": true,
+      "name": "String",
+      "parentProcessCreatedDateTime": "String (timestamp)",
+      "parentProcessId": 1024,
+      "parentProcessName": "String",
+      "path": "String",
+      "processId": 1024
+    }
+  ],
+  "recommendedActions": ["String"],
+  "registryKeyStates": [
+    {
+      "hive": "@odata.type: microsoft.graph.registryHive",
+      "key": "String",
+      "oldKey": "String",
+      "oldValueData": "String",
+      "oldValueName": "String",
+      "operation": "@odata.type: microsoft.graph.registryOperation",
+      "processId": 1024,
+      "valueData": "String",
+      "valueName": "String",
+      "valueType": "@odata.type: microsoft.graph.registryValueType"
+    }
+  ],
+  "severity": "@odata.type: microsoft.graph.alertSeverity",
+  "sourceMaterials": ["String"],
+  "status": "@odata.type: microsoft.graph.alertStatus",
+  "tags": ["String"],
+  "title": "String",
+  "triggers": [
+    {
+      "name": "String",
+      "type": "String",
+      "value": "String"
+    }
+  ],
+  "userStates": [
+    {
+      "aadUserId": "String",
+      "accountName": "String",
+      "domainName": "String",
+      "emailRole": "@odata.type: microsoft.graph.emailRole",
+      "isVpn": true,
+      "logonDateTime": "String (timestamp)",
+      "logonId": "String",
+      "logonIp": "String",
+      "logonLocation": "String",
+      "logonType": "@odata.type: microsoft.graph.logonType",
+      "onPremisesSecurityIdentifier": "String",
+      "riskScore": "String",
+      "userAccountType": "@odata.type: microsoft.graph.userAccountSecurityType",
+      "userPrincipalName": "String"
+    }
+  ],
+  "vendorInformation": {
+    "provider": "String",
+    "providerVersion": "String",
+    "subProvider": "String",
+    "vendor": "String"
+  },
+  "vulnerabilityStates": [
+    {
+      "cve": "String",
+      "severity": "String",
+      "wasRunning": true
+    }
+  ]
+}
+```
+
+<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
+2015-10-25 14:57:30 UTC -->
+<!-- {
+  "type": "#page.annotation",
+  "description": "Get glert",
+  "keywords": "",
+  "section": "documentation",
+  "tocPath": ""
+}-->
