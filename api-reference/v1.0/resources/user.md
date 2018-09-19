@@ -58,26 +58,27 @@ Azure AD ユーザー アカウントを表します。[directoryObject](directo
 | プロパティ       | 型    |説明|
 |:---------------|:--------|:----------|
 |aboutMe|文字列|ユーザーが自分自身について記述する、フリー フォームのテキスト入力フィールド。|
-|accountEnabled|ブーリアン| アカウントが有効な場合は **true**。そうでない場合は **false**。このプロパティは、ユーザーの作成時に必要です。$filter をサポートします。    |
+|accountEnabled|ブーリアン| アカウントが有効な場合は **true**、それ以外の場合は **false**。このプロパティは、ユーザーの作成時に必要です。$filter をサポートします。    |
 |ageGroup|文字列|ユーザーの年齢グループを設定します。 指定できる値は、`null`、 `minor`、 `notAdult` 、`adult` です。 詳細については [法定年齢グループのプロパティの定義](#legal-age-group-property-definitions) を参照してください。 |
 |assignedLicenses|[assignedLicense](assignedlicense.md) コレクション|ユーザーに割り当てられているライセンス。null 許容ではありません。            |
 |assignedPlans|[assignedPlan](assignedplan.md) コレクション|ユーザーに割り当てられているプラン。読み取り専用です。null 許容ではありません。 |
 |誕生日|DateTimeOffset|ユーザーの誕生日。Timestamp 型は、ISO 8601 形式を使用して日付と時刻の情報を表し、必ず UTC 時間です。たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、次のようになります。 `'2014-01-01T00:00:00Z'`|
 |businessPhones|String コレクション|ユーザーの電話番号。注:文字列コレクションですが、このプロパティに設定できるのは 1 つの数字のみです。|
 |都市|文字列|ユーザーがいる都市。$filter をサポートします。|
-|companyName| 文字列 | ユーザーが関連付けられている会社名。 読み取り専用です。
+|companyName | 文字列 | ユーザーが関連付けられている会社名。 読み取り専用です。 |
 |consentProvidedForMinor|文字列|未成年者の同意が得られたかどうかを設定します。 指定できる値は、`null`、 `granted`、 `denied` 、`notRequired` です。 詳細については [法定年齢グループのプロパティの定義](#legal-age-group-property-definitions) を参照してください。|
-|国|文字列|ユーザーがいる国/地域。たとえば、「US (米国)」や「UK (英国)」です。$filter をサポートします。|
-|部署|文字列|ユーザーが働いている部門の名前。$filter をサポートします。|
+|country|文字列|ユーザーがいる国/地域。たとえば、「US (米国)」や「UK (英国)」です。$filter をサポートします。|
+|createdDateTime | DateTimeOffset |ユーザー オブジェクトの作成日。 |
+|department|文字列|ユーザーが働いている部門の名前。$filter をサポートします。|
 |displayName|文字列|アドレス帳に表示されるユーザーの名前。これは通常、ユーザーの名前、ミドルネームのイニシャル、姓の組み合わせです。このプロパティは、ユーザーの作成時に必須になります。更新時にクリアすることはできません。$filter および $orderby をサポートします。|
 |givenName|文字列|ユーザーの名。$filter をサポートします。|
 |hireDate|DateTimeOffset|ユーザーの採用日付。Timestamp 型は、ISO 8601 形式を使用して日付と時刻の情報を表し、必ず UTC 時間です。たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、次のようになります。 `'2014-01-01T00:00:00Z'`|
-|ID|文字列|ユーザーの一意の識別子。[directoryObject](directoryobject.md) から継承されます。キー。null 許容ではありません。読み取り専用です。|
+|id|文字列|ユーザーの一意の識別子。[directoryObject](directoryobject.md) から継承されます。キー。null 許容ではありません。読み取り専用です。|
 |imAddresses|String コレクション|ユーザーのインスタント メッセージ ボイス オーバー IP (VOIP) セッション開始プロトコル (SIP) のアドレス。読み取り専用です。|
 |興味関心|String コレクション|ユーザーが自分の関心事を記述する一覧。|
 |jobTitle|文字列|ユーザーの役職。$filter をサポートします。|
 |legalAgeGroupClassification|文字列| ユーザーの法定年齢グループを決定するために、エンタープライズ アプリケーションで使用されます。 このプロパティは、読み取り専用で、`ageGroup` プロパティと `consentProvidedForMinor` プロパティに基づいて計算されます。 指定できる値は、`null`、 `minorWithOutParentalConsent`、 `minorWithParentalConsent` 、`minorNoParentalConsentRequired`、`notAdult`、`adult`  です。 詳細については、[法定年齢グループのプロパティの定義](#legal-age-group-property-definitions) を参照してください。|
-|メール|文字列|ユーザーの SMTP アドレス (たとえば、"jeff@contoso.onmicrosoft.com")。読み取り専用。$filter をサポートします。|
+|mail|文字列|ユーザーの SMTP アドレス (たとえば、"jeff@contoso.onmicrosoft.com")。読み取り専用。$filter をサポートします。|
 |mailboxSettings|[mailboxSettings](mailboxsettings.md)|サインイン ユーザーのプライマリ メールボックスの設定。着信メッセージに対する自動応答を送信するための設定、ロケール、タイム ゾーンを [取得](../api/user_get_mailboxsettings.md) または [更新](../api/user_update_mailboxsettings.md) できます。|
 |mailNickname|文字列|ユーザーの電子メール エイリアス。ユーザーの作成時に、このプロパティを指定する必要があります。$filter をサポートします。|
 |mobilePhone|文字列|ユーザーの主な携帯電話の番号。|
@@ -108,7 +109,7 @@ Azure AD ユーザー アカウントを表します。[directoryObject](directo
 |姓|文字列|ユーザーの姓。$filter をサポートします。|
 |usageLocation|文字列|2 文字の国コード (ISO 規格 3166)国におけるサービスの利用可能性を確認することが法的に義務付けられているため、ライセンスを割り当てられるユーザーには必須です。例:"US"、"JP"、"GB"null 許容ではありません。$filter をサポートします。|
 |userPrincipalName|文字列|ユーザーのユーザー プリンシパル名 (UPN)。UPN は、インターネット標準 RFC 822 に基づいた、インターネット スタイルのユーザーのログイン名です。規則では、これはユーザーの電子メール名にマップされる必要があります。一般的な形式は alias@domain です。このドメインは、検証済みドメインのテナントのコレクション内に存在している必要があります。このプロパティは、ユーザーの作成時に必要です。テナントの検証済みのドメインには、[organization](organization.md) の **verifiedDomains** プロパティからアクセスできます。$filter および $orderby をサポートします。
-|userType|文字列|ディレクトリ内のユーザーの種類を分類するために使用する文字列値 (“Member”、“Guest” など)。$filter をサポートします。          |
+|userType|文字列|ディレクトリ内のユーザーの種類を分類するために使用する文字列の値 (“Member”、“Guest” など)。$filter をサポートします。          |
 
 ### <a name="legal-age-group-property-definitions"></a>法定年齢グループのプロパティの定義
 
@@ -169,7 +170,7 @@ Azure AD ユーザー アカウントを表します。[directoryObject](directo
 |イベント|[Event](event.md) コレクション|ユーザーのイベント。既定は、既定の予定表でイベントを表示します。読み取り専用です。Null 許容型。|
 |拡張機能|[extension](extension.md) コレクション|ユーザーに対して定義されているオープン拡張機能のコレクション。読み取り専用です。Null 許容型。|
 |inferenceClassification | [inferenceClassification](inferenceClassification.md) | 明示的な指定に基づく、ユーザーのメッセージの関連性の分類。明示的な指定は、推定される関連性や重要性より優先されます。 |
-|licenseDetails|[licenseDetails](licensedetails.md) コレクション|このユーザーのライセンス詳細情報のコレクションです。 Null 許容型。|
+|licenseDetails|[LicenseDetails](licensedetails.md) コレクション|このユーザーのライセンス詳細情報のコレクションです。 Null 許容型。|
 |mailFolders|[MailFolder](mailfolder.md) コレクション| ユーザーのメール フォルダー。読み取り専用です。Null 許容型。|
 |マネージャー|[directoryObject](directoryobject.md)|このユーザーの上司であるユーザーまたは連絡先。読み取り専用です。(HTTP メソッド:GET、PUT、DELETE)|
 |memberOf|[directoryObject](directoryobject.md) コレクション|ユーザーがメンバーになっているグループとディレクトリ ロール。読み取り専用です。Null 許容型。|
@@ -180,7 +181,7 @@ Azure AD ユーザー アカウントを表します。[directoryObject](directo
 |ownedObjects|[directoryObject](directoryobject.md) コレクション|ユーザーが所有しているディレクトリ オブジェクト。読み取り専用です。Null 許容型。|
 |people|[person](person.md) コレクション| ユーザーに関連する人。 読み取り専用です。 Null 許容型。
 |photo|[profilePhoto](profilephoto.md)| ユーザーのプロフィール写真。読み取り専用です。|
-|プランナー|[plannerUser](planneruser.md)| ユーザー用に存在する可能性のあるプランナー リソースへのエントリ ポイントです。 読み取り専用です。|
+|planner|[plannerUser](planneruser.md)| ユーザーに用意されている可能性のあるプランナー リソースへのエントリ ポイントです。 読み取り専用です。|
 |registeredDevices|[directoryObject](directoryobject.md) コレクション|ユーザーについて登録されているデバイス。読み取り専用です。Null 許容型。|
 
 ## <a name="json-representation"></a>JSON 表記
@@ -436,6 +437,10 @@ Azure AD ユーザー アカウントを表します。[directoryObject](directo
   "type": "#page.annotation",
   "description": "user resource",
   "keywords": "",
+  "suppressions" : [
+     "Warning: /api-reference/v1.0/resources/user.md/microsoft.graph.user:
+      Property 'createdDateTime' found in markdown table but not in resource definition."
+  ],
   "section": "documentation",
   "tocPath": ""
 }-->
