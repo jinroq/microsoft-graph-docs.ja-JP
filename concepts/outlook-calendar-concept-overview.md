@@ -45,9 +45,9 @@ Outlook カレンダーは、Office 365 の Outlook メッセージング ハブ
 Outlook とカレンダー API には、イベントのスケジュールに便利な機能が豊富に用意されています。
 
 - Outlook カレンダーのアプリ設定により、ユーザーは、フライト、ホテル、食事の予約などのメールや請求書からイベントを自動で追加できます。 追加されたイベントは、ユーザーのメールボックスにある他の [event](../api-reference/v1.0/resources/event.md) オブジェクトと同様に操作できるので、Outlook のこの機能に基づいてクリエイティブなシナリオを構築できます。
-- ** Outlook では、会議室の予約も、出席者を**イベント**に追加するのと同じほど簡単に行えます。 カレンダー API では、会議室が [emailAddress](../api-reference/v1.0/resources/emailaddress.md) オブジェクトとして表されます。 テナントで利用可能な[会議室を取得 (プレビュー) ](../api-reference/beta/api/user_findrooms.md)したり、[会議室リストを取得 (プレビュー) ](../api-reference/beta/api/user_findroomlists.md)することができます。 特定の会議室での会議を主催するには、その会議室を** イベント**の** 場所**プロパティに割り当てます。
+- ** Outlook では、会議室の予約も、出席者を**イベント**に追加するのと同じほど簡単に行えます。 カレンダー API では、会議室が [emailAddress](../api-reference/v1.0/resources/emailaddress.md) オブジェクトとして表されます。 テナントで利用可能な[会議室を取得 (プレビュー) ](../api-reference/beta/api/user_findrooms.md)したり、[会議室リストを取得 (プレビュー) ](../api-reference/beta/api/user_findroomlists.md)したりすることができます。 特定の会議室での会議を計画するには、その会議室を**イベント**の **[場所]** プロパティに割り当てます。
 - * * 一定期間の[ユーザーとリソースの空き状況の情報を検索する (プレビュー) ](outlook-get-free-busy-schedule.md)することができます。 そして、このデータを使用してリソース プランニングやイベントのスケジューリングなど、さまざまなシナリオに適用することができます。 
-- ** 最適な時間に会議をスケジューリングしなければならないような場合は、[findMeetingTimes を使用して可能な時間や集合する場所を特定する](findmeetingtimes_example.md)ことを検討してください。 [FindMeetingTimes](../api-reference/v1.0/api/user_findmeetingtimes.md) 関数は、出席者の空き時間状況、会議室や日時に関する希望、およびユーザーが指定した他の制約事項を考慮します。 最初の試行で全員参加可能な会議日時が返されない場合は、理由を確認してから条件を変更し、もう一度 **findMeetingTimes** を呼び出してください。
+- ** 最適な時間に会議をスケジューリングしなければならないような場合は、[findMeetingTimes を使用して可能な時間や集合する場所を特定する](findmeetingtimes_example.md)ことを検討してください。 [FindMeetingTimes](../api-reference/v1.0/api/user_findmeetingtimes.md) 関数は、出席者の空き時間情報、会議室や日時に関する希望、およびユーザーが指定した他の制約事項を考慮します。 最初の試行で全員参加可能な会議日時が返されない場合は、理由を確認してから条件を変更し、もう一度 **findMeetingTimes** を呼び出してください。
 
 
 ### <a name="teleconference-across-multiple-locations-and-time-zones"></a>複数の場所とタイム ゾーンをまたぐ電話会議
@@ -71,8 +71,10 @@ Microsoft Graph では、[people API](people_example.md) を使用し、ユー�
 - [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer/?request=me%2Fevents&version=v1.0) でカレンダー サンプル クエリを選択して試行します。
 - 以下について調べます。
   - [開催可能な会議日時を Outlook カレンダーで検索する](findmeetingtimes_example.md)
+  - [ユーザーおよびリソースのスケジュールの空き時間情報を取得する (プレビュー)](outlook-get-free-busy-schedule.md)
   - [繰り返される予定を Outlook で定期的なイベントとしてスケジュール設定する](outlook-schedule-recurring-events.md)
-- Outlook [カレンダー API](../api-reference/v1.0/resources/calendar.md) リファレンスを確認します。
+  - [共有イベントを取得する](outlook-get-shared-events-calendars.md)
+- Outlook [カレンダー API](../api-reference/v1.0/resources/calendar.md) リファレンスを確認する
 
 <!-- Replace the last item with the calendar API overview when it's published.
 -->

@@ -38,4 +38,5 @@ Outlook [連絡先](../api-reference/v1.0/resources/contact.md)のための典�
 ## <a name="next-steps"></a>次の手順
 
 - [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer/?request=me%2Fcontacts&version=v1.0) で連絡先サンプル クエリを選択して試行する。 左側の列の **[サンプルをさらに表示]** を選択します。 メニューを使用して **[個人用連絡先]** をオンにします。
-- Outlook の[連絡先 API](../api-reference/v1.0/resources/contact.md) リファレンスを確認する。
+-  [共有の連絡先を取得する](outlook-get-shared-contacts-folders.md)方法について説明します。
+- Outlook の[連絡先 API](../api-reference/v1.0/resources/contact.md) リファレンスを確認します。

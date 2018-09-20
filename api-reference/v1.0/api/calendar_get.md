@@ -2,35 +2,10 @@
 
 [予定表](../resources/calendar.md)オブジェクトのプロパティと関係を取得します。 [ユーザー](../resources/user.md)の予定表、または Office 365 [グループ](../resources/group.md)の既定の予定表のいずれかを指定できます。
 
+アプリが別のユーザーの予定表を取得できる 2 つのシナリオがあります。
 
-### <a name="get-another-users-calendar"></a>別のユーザーの予定表の取得
-
-アプリケーションのアクセス許可がある場合や、1 人のユーザーから適切に委任された[アクセス許可](#permissions)がある場合には、別のユーザーの予定表を取得することができます。 このセクションでは、委任されたアクセス許可に関連するシナリオに焦点を当てます。
-
-たとえば、アプリがユーザー John から委任されたアクセス許可を取得したとします。 別のユーザー Garth は、John と予定表を共有しています。 その場合、以下に示す例のクエリで、Garth のユーザー ID (またはユーザー プリンシパル名) を指定することにより、その共有の予定表を取得できます。
-
-<!-- { "blockType": "ignored" } -->
-```http
-GET /users/{Garth-id | Garth-userPrincipalName}/calendar
-```
-
-この機能は、以下の [HTTP 要求](#http-request)セクションで記載されているように、個々のユーザーに対しサポートされているすべての連絡先の予定表の取得操作に適用されます。 これは、Garth が John にメールボックス全体を委任した場合にも適用されます。
-
-Garth が John と予定表を共有していない、もしくはメールボックスを John に委任していない場合、それらの GET 操作に Garth のユーザー ID またはユーザー プリンシパル名を指定すると、エラーが返されます。 このような場合、ユーザー ID またはユーザー プリンシパル名の指定は、サインインしているユーザー自身の予定表を取得するためにのみ使用でき、そのクエリは /me ショートカットを使用することと同義となります。
-
-<!-- { "blockType": "ignored" } -->
-```http
-GET /me/calendar
-```
-
-この機能は、以下の GET 操作でのみ使用できます。
-
-- 共有の連絡先フォルダー、予定表、メッセージ フォルダー 
-- 連絡先、イベント、共有フォルダー内のメッセージ
-- 委任されたメールボックス内の上述のリソース
-
-この機能は、連絡先、イベント、メッセージ、それらのフォルダーに対する他の操作では使用できません。
-
+* このアプリにアプリケーションのアクセス許可がある場合、または、
+* このアプリに、1 人のユーザーから適切な[アクセス許可](#permissions)が委任され、別のユーザーは、そのユーザーと予定表を共有しているか、またはそのユーザーにアクセスを委任しているかする場合。  [詳細と例](../../../concepts/outlook-get-shared-events-calendars.md)をご覧ください。
 
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](../../../concepts/permissions_reference.md)」を参照してください。
@@ -42,8 +17,7 @@ GET /me/calendar
 |アプリケーション | Calendars.Read |
 
 ## <a name="http-request"></a>HTTP 要求
-<!-- { "blockType": "ignored" } -->
-ユーザーまたはグループの既定の[予定表](../resources/calendar.md)。
+<!-- { "blockType": "ignored" } --> ユーザーまたはグループの既定の[予定表](../resources/calendar.md)。
 ```http
 GET /me/calendar
 GET /users/{id | userPrincipalName}/calendar
@@ -67,7 +41,7 @@ GET /users/{id | userPrincipalName}/calendarGroups/{id}/calendars/{id}
 ## <a name="request-headers"></a>要求ヘッダー
 | 名前       | 型 | 説明|
 |:-----------|:------|:----------|
-| Authorization  | string  | ベアラー {トークン}。必須。 |
+| 承認  | 文字列  | ベアラー {トークン}。必須。 |
 
 ## <a name="request-body"></a>要求本文
 このメソッドには、要求本文を指定しません。

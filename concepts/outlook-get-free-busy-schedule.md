@@ -1,8 +1,8 @@
-# <a name="get-freebusy-schedule-for-users-and-resources-preview"></a>ユーザーおよびリソース (プレビュー) のスケジュールの空き時間情報を取得します。
+# <a name="get-freebusy-schedule-of-users-and-resources-preview"></a>ユーザーおよびリソースのスケジュールの空き時間情報を取得する (プレビュー)
 
 作業または学校の設定では、一般的なシナリオは、ユーザーが会議の空きを確認したりすると、チーム、部屋、または期間内の機器の可用性を参照します。
 
- [GetSchedule](../api-reference/beta/api/calendar_getschedule.md) アクションでは、特定の期間の 1 つまたは複数のエンティティのユーザー、配布リスト、またはリソースの可用性情報を取得することができます。 
+[GetSchedule](../api-reference/beta/api/calendar_getschedule.md) アクションでは、特定の期間の 1 つまたは複数のエンティティのユーザー、配布リスト、またはリソースの可用性情報を取得することができます。 
 
 ## <a name="example"></a>例
 
@@ -120,11 +120,11 @@ Content-type: application/json
 - `3`外出中
 - `4`他の場所で働いています。 
 
-既定では、各タイム スロットの長さは、30 分です。 この例では、15 分に時間帯をカスタマイズするのには **availabilityViewInterval** プロパティを使用します。
+既定では、各タイム スロットの長さは 30 分です。 この例では、15 分に時間帯をカスタマイズするのには **availabilityViewInterval** プロパティを使用します。
 
 ## <a name="how-is-getschedule-different-from-findmeetingtimes"></a>getScheduleとfindMeetingTimesの違い
 
- [FindMeetingTimes](../api-reference/v1.0/api/user_findmeetingtimes.md) アクションは、指定されたユーザーおよびリソースの作業時間と空き時間情報を読み取る両方という点で **getSchedule** に似ています。 2 つのアクションは、いくつかの主要な点で異なります。
+[FindMeetingTimes](../api-reference/v1.0/api/user_findmeetingtimes.md) アクションは、指定されたユーザーおよびリソースの作業時間と空き時間情報を読み取る両方という点で **getSchedule** に似ています。 2 つのアクションは、いくつかの主要な点で異なります。
 
 ### <a name="application"></a>アプリケーション
 
@@ -134,7 +134,7 @@ Content-type: application/json
 - 1 日の時間の要求されたアクティビティの性質
 - 会議のクォーラムに必要な最低限の参加
 
- [予約を合理化すること](findmeetingtimes_example.md)に依存するシナリオに適しています。
+[予約を合理化すること](findmeetingtimes_example.md)に依存するシナリオに適しています。
 
 **getSchedule** は単に空き時間情報のステータスを返します既存のイベントで要求されたカレンダーの特定の期間のと tp がその時間内に残り時間を想定しています。 さらにビジネス ロジックを適用するには、シナリオを完了するのにはこのデータを使用します。
 
@@ -154,7 +154,7 @@ Content-type: application/json
 
 ## <a name="permissions"></a>アクセス許可
 空き時間情報を取得するために必要な最小特権は、Calendar.Readです。 アプリのシナリオによっては、ログインしているユーザーまたは管理者が同意することができます。
- getSchedule は、要求されたエンティティの空き時間や勤務時間以外にも、イベントの件名と場所を返すことができます。** **
+getSchedule は、要求されたエンティティの空き時間や勤務時間以外にも、イベントの件名と場所を返すことができます。****
 
 - イベントが [低] 感度のレベルが付いている場合 `normal` または `personal` し、次の条件の 1 つ以上を適用します。
 
@@ -162,8 +162,8 @@ Content-type: application/json
 - 要求されたユーザーの予定表は、サインイン中のユーザーと共有します。
 - ログインしているユーザーは、要求されたユーザーと同じ組織の管理者です。
 
-## <a name="time-zone-representation"></a>タイムゾーン表現
-既定では、返されたスケジュール項目の開始と終了時刻が UTC で表されます。 `Prefer`ヘッダーを使用して、アプリに適したタイムゾーンを指定することができます。 例: 
+## <a name="time-zone-representation"></a>タイム ゾーン表現
+既定では、返されたスケジュール項目の開始と終了時刻が UTC で表されます。 ヘッダーを使用して、アプリに適したタイムゾーンを指定することができます。`Prefer` 例: 
 ```
 Prefer: outlook.timezone="Pacific Standard Time"
 ```
@@ -173,7 +173,7 @@ Prefer: outlook.timezone="Pacific Standard Time"
 
 - **getSchedule** では、空き時間情報を最大 20 個のエンティティを一度に検索をサポートできます。 この制限は、個々にまたは配布リストのメンバーとして識別されたユーザー数、およびリソース数にも適用されます。
 - 検索するまでの時間は 42 日未満である必要があります。
--  **GetSchedule** は、指定したユーザーまたはリソースを識別できない場合、1 つのスケジュール項目を返し、エラーを示します。 
+- **GetSchedule** は、指定したユーザーまたはリソースを識別できない場合、1 つのスケジュール項目を返し、エラーを示します。 
 
 ## <a name="see-also"></a>関連項目
 - [アクセス許可の参照](permissions_reference.md#calendars-permissions)

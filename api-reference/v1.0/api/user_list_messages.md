@@ -4,35 +4,10 @@
 
 現在、この操作によって返されるメッセージの本文は HTML 形式のみです。
 
+アプリが別のユーザーのメール フォルダーのメッセージを取得できる 2 つのシナリオがあります。
 
-### <a name="get-messages-in-another-users-message-folder"></a>別のユーザーのメッセージ フォルダーでメッセージを取得する
-
-アプリケーションのアクセス許可がある場合、または 1 人のユーザーから適切に委任された[アクセス許可](#permissions)がある場合、別のユーザーのメッセージ フォルダーからメッセージを取得することができます。 このセクションでは、委任されたアクセス許可に関連するシナリオについて説明します。
-
-たとえば、アプリがユーザー John から委任されたアクセス許可を取得したとします。 別のユーザー Garth は、John とメッセージ フォルダーを共有しています。 その場合、以下に示すサンプル クエリで、Garth のユーザー ID (またはユーザー プリンシパル名) を指定することにより、その共有フォルダーでメッセージを取得できます。
-
-<!-- { "blockType": "ignored" } -->
-```http
-GET /users/{Garth-id | Garth-userPrincipalName}/messages
-```
-
-この機能は、後述の [HTTP 要求](#http-request)セクションに記載されている、個々のユーザーに対しサポートされているすべての GET メッセージ操作に適用されます。 これは、Garth が John にメールボックス全体を委任した場合にも適用されます。
-
-Garth が John とメッセージ フォルダーを共有していない、もしくはメールボックスを John に委任していない場合、それらの GET 操作に Garth のユーザー ID またはユーザー プリンシパル名を指定すると、エラーが返されます。 このような場合、ユーザー ID またはユーザー プリンシパル名の指定は、サインインしているユーザー自身のメッセージ フォルダーでメッセージを取得するためにのみ使用でき、そのクエリは /me ショートカットを使用することと同義となります。
-
-<!-- { "blockType": "ignored" } -->
-```http
-GET /me/messages
-```
-
-この機能は、以下の GET 操作でのみ使用できます。
-
-- 共有の連絡先フォルダー、予定表、メッセージ フォルダー 
-- 連絡先、イベント、共有フォルダー内のメッセージ
-- 委任されたメールボックス内の上述のリソース
-
-この機能は、連絡先、イベント、メッセージ、それらのフォルダーに対する他の操作では使用できません。
-
+* このアプリにアプリケーションのアクセス許可がある場合、または、
+* このアプリに、1 人のユーザーから適切な[アクセス許可](#permissions)が委任され、別のユーザーは、そのユーザーとメール フォルダーを共有しているか、またはそのユーザーにアクセスを委任しているかする場合。 [詳細と例](../../../concepts/outlook-share-messages-folders.md)をご覧ください。
 
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](../../../concepts/permissions_reference.md)」を参照してください。
@@ -62,12 +37,12 @@ GET /users/{id | userPrincipalName}/mailFolders/{id}/messages
 ```
 
 ## <a name="optional-query-parameters"></a>オプションのクエリ パラメーター
-このメソッドは、応答をカスタマイズするための [OData クエリ パラメーター](http://developer.microsoft.com/ja-JP/graph/docs/overview/query_parameters)をサポートします。
+このメソッドは、応答をカスタマイズするための [OData クエリ パラメーター](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters)をサポートします。
 ## <a name="request-headers"></a>要求ヘッダー
 | 名前       | 型 | 説明|
 |:-----------|:------|:----------|
-| Authorization  | string  | Bearer {トークン}。必須。 |
-| Prefer: outlook.body-content-type | string | **body** プロパティと **uniqueBody** プロパティが返されるときの形式です。 値は、"text" または "html" になります。 ヘッダーが指定されていない場合は、**body** プロパティと **uniqueBody** プロパティは HTML 形式で返されます。 省略可能。 |
+| 承認  | 文字列  | ベアラー {トークン}。必須。 |
+| 優先: outlook.body-content-type | 文字列 | **body** プロパティと **uniqueBody** プロパティが返されるときの形式です。 値は、"text" または "html" になります。 ヘッダーが指定されていない場合は、**body** プロパティと **uniqueBody** プロパティは HTML 形式で返されます。 省略可能。 |
 
 
 ## <a name="request-body"></a>要求本文

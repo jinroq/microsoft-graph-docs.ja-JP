@@ -2,34 +2,10 @@
 
 連絡先オブジェクトのプロパティとリレーションシップを取得します。
 
+アプリが別のユーザーの連絡先フォルダーの連絡先を取得できる 2 つのシナリオがあります。
 
-### <a name="get-contacts-in-another-users-contact-folder"></a>他のユーザーの連絡先フォルダーで連絡先を取得します。
-
-アプリケーションのアクセス許可がある場合、または 1 人のユーザーから適切に委任された[アクセス許可](#permissions)がある場合、別のユーザーの連絡先フォルダーから連絡先を取得することができます。 このセクションでは、委任されたアクセス許可に関連するシナリオに焦点を当てます。
-
-たとえば、アプリがユーザー John から委任されたアクセス許可を取得したとします。 別のユーザー Garth は、John と連絡先フォルダーを共有しています。 その場合、以下に示す例のクエリで、Garth のユーザー ID (またはユーザー プリンシパル名) を指定することにより、その共有フォルダーで連絡先を取得できます。
-
-<!-- { "blockType": "ignored" } -->
-```http
-GET /users/{Garth-id | Garth-userPrincipalName}/contacts/{id}
-```
-
-この機能は、後述の [HTTP 要求](#http-request)セクションに記載されている、個々のユーザーに対しサポートされているすべての GET 連絡先操作に適用されます。 これは、Garth が John にメールボックス全体を委任した場合にも適用されます。
-
-Garth が John と連絡先フォルダーを共有していない、もしくはメールボックスを John に委任していない場合、それらの GET 操作に Garth のユーザー ID またはユーザー プリンシパル名を指定すると、エラーが返されます。 このような場合、ユーザー ID またはユーザー プリンシパル名の指定は、サインインしているユーザー自身の連絡先フォルダーで連絡先を取得するためにのみ使用でき、そのクエリは /me ショートカットを使用することと同義となります。
-
-<!-- { "blockType": "ignored" } -->
-```http
-GET /me/contacts/{id}
-```
-
-この機能は、以下の GET 操作でのみ使用できます。
-
-- 共有の連絡先フォルダー、予定表、メッセージ フォルダー 
-- 連絡先、イベント、共有フォルダー内のメッセージ
-- 委任されたメールボックス内の上述のリソース
-
-この機能は、連絡先、イベント、メッセージ、それらのフォルダーに対する他の操作では使用できません。
+* このアプリにアプリケーションのアクセス許可がある場合、または、
+* このアプリに、1 人のユーザーから適切な[アクセス許可](#permissions)が委任され、別のユーザーは、そのユーザーと連絡先フォルダーを共有しているか、またはそのユーザーにアクセスを委任しているかする場合。 [詳細と例](../../../concepts/outlook-get-shared-contacts-folders.md)をご覧ください。
 
 
 ## <a name="permissions"></a>アクセス許可
@@ -42,13 +18,12 @@ GET /me/contacts/{id}
 |アプリケーション | Contacts.Read、Contacts.ReadWrite |
 
 ## <a name="http-request"></a>HTTP 要求
-<!-- { "blockType": "ignored" } -->
-ユーザーの既定 [contactFolder](../resources/contactfolder.md) からの [連絡先](../resources/contact.md)。
+<!-- { "blockType": "ignored" } --> ユーザーの既定の [contactFolder](../resources/contactfolder.md) からの [連絡先](../resources/contact.md)。
 ```http
 GET /me/contacts/{id}
 GET /users/{id | userPrincipalName}/contacts/{id}
 ```
-ユーザーの最上位レベル [contactFolder](../resources/contactfolder.md) からの [連絡先](../resources/contact.md)。
+ユーザーの最上位レベルの [contactFolder](../resources/contactfolder.md) からの [連絡先](../resources/contact.md)。
 ```http
 GET /me/contactfolders/{Id}/contacts/{id}
 GET /users/{id | userPrincipalName}/contactfolders/{id}/contacts/{id}
@@ -61,13 +36,13 @@ GET /users/{id | userPrincipalName}/contactFolders/{id}/childFolders/{id}/contac
 ## <a name="optional-query-parameters"></a>オプションのクエリ パラメーター
 |名前|値|説明|
 |:---------------|:--------|:-------|
-|$expand|string|展開して応答に含める関係を示すコンマ区切りのリスト。サポートされている名前に関しては、[連絡先](../resources/contact.md) オブジェクトの関係表を参照してください。 |
-|$select|string|応答に含めるプロパティを示すコンマ区切りのリスト。|
+|$expand|文字列|展開して応答に含める関係を示すコンマ区切りのリスト。サポートされている名前に関しては、[連絡先](../resources/contact.md) オブジェクトの関係表を参照してください。 |
+|$select|文字列|応答に含めるプロパティを示すコンマ区切りのリスト。|
 
 ## <a name="request-headers"></a>要求ヘッダー
 | ヘッダー       | 値 |
 |:---------------|:--------|
-| Authorization  | ベアラー {トークン}。必須。  |
+| 承認  | ベアラー {トークン}。必須。  |
 
 ## <a name="request-body"></a>要求本文
 このメソッドには、要求本文を指定しません。
