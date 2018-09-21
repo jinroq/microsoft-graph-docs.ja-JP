@@ -37,9 +37,9 @@ Microsoft Graph を利用することにより、アプリ ユーザーに対し
 
 ### <a name="store-app-data-in-a-resource-or-resource-instance"></a>アプリ データをリソースまたはリソース インスタンスに保存する
 
-アプリでは、データを外部データ ストアに保存するため、データの管理とアクセスのためのオーバーヘッドが発生することが少なくありません。 Graph では、 新しいメッセージを[を作成したり](../api-reference/v1.0/api/user_post_messages.md#request-2)、[送信したり](../api-reference/v1.0/api/user_sendmail.md#request-2)、メッセージに返信したりする場合に、単にインターネット メッセージのヘッダーとしてアプリケーション データを追加することができます。 
+アプリでは、データを外部データ ストアに保存するために、データの管理とアクセスのためのオーバーヘッドが発生することが少なくありません。 Graph では、 新しいメッセージを[を作成したり](../api-reference/v1.0/api/user_post_messages.md#request-2)、[送信したり](../api-reference/v1.0/api/user_sendmail.md#request-2)、メッセージに返信したりする場合に、単にインターネット メッセージのヘッダーとしてアプリケーション データを追加することができます。 
 
-カスタム データを追加し、後で更新する必要がある場合は、[個々 のリソース インスタンス内にデータを格納](extensibility_overview.md#open-extensions)することができます。 必要に応じて、この代わりに、スキーマを拡張したり、カスタム プロパティを追加したり、Microsoft Graph のリソースに型指定されたデータを格納したりすることができます。 そのような[スキーマ拡張](extensibility_overview.md#schema-extensions)を、検出や共有が可能なものにすることができます。 
+カスタム データを追加し、後で更新する必要がある場合は、[個々 のリソース インスタンス内にデータを格納](extensibility_overview.md#open-extensions)することができます。 必要に応じて、この代わりに、スキーマを拡張したり、カスタム プロパティを追加したり、Microsoft Graph のリソースに型指定されたデータを格納したりすることができます。 そのような[スキーマ拡張](extensibility_overview.md#schema-extensions)を、検出可能また共有可能なものにすることができます。 
 
 
 ## <a name="next-steps"></a>次の手順
@@ -49,7 +49,7 @@ Microsoft Graph を利用することにより、アプリ ユーザーに対し
 
   - [メッセージの作成と送信](outlook-create-send-messages.md)
   - メッセージの整理方法[](outlook-organize-messages.md)
-  - [メッセージ フォルダーを共有する](outlook-share-messages-folders.md)方法
+  -  [共有メッセージを取得](outlook-share-messages-folders.md)する方法
 
 - Microsoft Graph v1.0 での[メール API の使用](../api-reference/v1.0/resources/mail_api_overview.md) とその[用途](../api-reference/v1.0/resources/mail_api_overview.md#common-use-cases)について調べる。
 
