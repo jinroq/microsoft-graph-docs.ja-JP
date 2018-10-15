@@ -1,54 +1,54 @@
-# <a name="worksheet-resource-type"></a>ワークシート リソースの種類
+# <a name="worksheet-resource-type"></a><span data-ttu-id="a4ff4-101">ワークシート リソースの種類</span><span class="sxs-lookup"><span data-stu-id="a4ff4-101">Worksheet resource type</span></span>
 
-Excel のワークシートは、セルのグリッドになっています。そこに、データ、表、グラフなどを含めることができます。
+<span data-ttu-id="a4ff4-p101">Excel のワークシートは、セルのグリッドになっています。そこに、データ、表、グラフなどを含めることができます。</span><span class="sxs-lookup"><span data-stu-id="a4ff4-p101">An Excel worksheet is a grid of cells. It can contain data, tables, charts, etc.</span></span>
 
 
-## <a name="methods"></a>メソッド
+## <a name="methods"></a><span data-ttu-id="a4ff4-104">メソッド</span><span class="sxs-lookup"><span data-stu-id="a4ff4-104">Methods</span></span>
 
-| メソッド           | 戻り値の型    |説明|
+| <span data-ttu-id="a4ff4-105">メソッド</span><span class="sxs-lookup"><span data-stu-id="a4ff4-105">Method</span></span>           | <span data-ttu-id="a4ff4-106">戻り値の型</span><span class="sxs-lookup"><span data-stu-id="a4ff4-106">Return Type</span></span>    |<span data-ttu-id="a4ff4-107">説明</span><span class="sxs-lookup"><span data-stu-id="a4ff4-107">Description</span></span>|
 |:---------------|:--------|:----------|
-|[ワークシートを取得する](../api/worksheet_get.md) | [Worksheet](worksheet.md) |ワークシート オブジェクトのプロパティと関係を読み取ります。|
-|[グラフを作成する](../api/worksheet_post_charts.md) |[Chart](chart.md)| グラフ コレクションに投稿して、新しいグラフを作成します。|
-|[名前を一覧表示する](../api/worksheet_list_names.md) |[NamedItem](nameditem.md) コレクション| ワークシートに関連付けられている名前付きのアイテムのコレクションを取得します。|
-|[グラフを一覧表示する](../api/worksheet_list_charts.md) |[Chart](chart.md) コレクション| グラフ オブジェクトのコレクションを取得します。|
-|[テーブルを作成する](../api/worksheet_post_tables.md) |[Table](table.md)| テーブル コレクションに投稿して、新しいテーブルを作成します。|
-|[テーブルを一覧表示する](../api/worksheet_list_tables.md) |[Table](table.md) コレクション| テーブル オブジェクトのコレクションを取得します。|
-|[Update](../api/worksheet_update.md) | [Worksheet](worksheet.md)    |ワークシート オブジェクトを更新します。 |
-|[Cell](../api/worksheet_cell.md)|[Range](range.md)|行と列の番号に基づいて、1 つのセルを含んだ範囲オブジェクトを取得します。このセルは、ワークシートのグリッド内であれば、親の範囲の境界の外のセルであってもかまいません。|
-|[Range](../api/worksheet_range.md)|[Range](range.md)|アドレスまたは名前で指定された範囲オブジェクトを取得します。|
-|[Usedrange](../api/worksheet_usedrange.md)|[Range](range.md)|使用範囲とは、値または書式設定が割り当たっているすべてのセルを包含する最小の範囲です。ワークシートが空白の場合、この関数は左上のセルを返します。|
-|[Delete](../api/worksheet_delete.md)|なし|ブックからワークシートを削除します。|
-|[List](../api/worksheet_list.md) | [Worksheet](worksheet.md) コレクション |ワークシート オブジェクトのコレクションを取得します。 |
-|[Add](../api/worksheetcollection_add.md)|[Worksheet](worksheet.md)|新しいワークシートをブックに追加します。ワークシートは、既存のワークシートの末尾に追加されます。 |
-|[pivotTables を一覧表示する](../api/workbookworksheet_list_pivottables.md) |[workbookPivotTable](workbookpivottable.md) コレクション| workbookPivotTable オブジェクト コレクションを取得します。|
+|[<span data-ttu-id="a4ff4-108">Get Worksheet</span><span class="sxs-lookup"><span data-stu-id="a4ff4-108">Get Worksheet</span></span>](../api/worksheet_get.md) | [<span data-ttu-id="a4ff4-109">WorkbookWorksheet</span><span class="sxs-lookup"><span data-stu-id="a4ff4-109">WorkbookWorksheet</span></span>](worksheet.md) |<span data-ttu-id="a4ff4-110">ワークシート オブジェクトのプロパティと関係を読み取ります。</span><span class="sxs-lookup"><span data-stu-id="a4ff4-110">Read properties and relationships of worksheet object.</span></span>|
+|[<span data-ttu-id="a4ff4-111">Create Chart</span><span class="sxs-lookup"><span data-stu-id="a4ff4-111">Create Chart</span></span>](../api/worksheet_post_charts.md) |[<span data-ttu-id="a4ff4-112">WorkbookChart</span><span class="sxs-lookup"><span data-stu-id="a4ff4-112">WorkbookChart</span></span>](chart.md)| <span data-ttu-id="a4ff4-113">グラフ コレクションに投稿して、新しいグラフを作成します。</span><span class="sxs-lookup"><span data-stu-id="a4ff4-113">Create a new Chart by posting to the charts collection.</span></span>|
+|[<span data-ttu-id="a4ff4-114">List names</span><span class="sxs-lookup"><span data-stu-id="a4ff4-114">List names</span></span>](../api/worksheet_list_names.md) |<span data-ttu-id="a4ff4-115">[WorkbookNamedItem](nameditem.md) コレクション</span><span class="sxs-lookup"><span data-stu-id="a4ff4-115">[WorkbookNamedItem](nameditem.md) collection</span></span>| <span data-ttu-id="a4ff4-116">ワークシートに関連付けられている名前付きのアイテムのコレクションを取得します。</span><span class="sxs-lookup"><span data-stu-id="a4ff4-116">Get named item collection associated with the worksheet.</span></span>|
+|[<span data-ttu-id="a4ff4-117">List charts</span><span class="sxs-lookup"><span data-stu-id="a4ff4-117">List charts</span></span>](../api/worksheet_list_charts.md) |<span data-ttu-id="a4ff4-118">[WorkbookChart](chart.md) コレクション</span><span class="sxs-lookup"><span data-stu-id="a4ff4-118">[WorkbookChart](chart.md) collection</span></span>| <span data-ttu-id="a4ff4-119">グラフ オブジェクトのコレクションを取得します。</span><span class="sxs-lookup"><span data-stu-id="a4ff4-119">Get a Chart object collection.</span></span>|
+|[<span data-ttu-id="a4ff4-120">Create Table</span><span class="sxs-lookup"><span data-stu-id="a4ff4-120">Create Table</span></span>](../api/worksheet_post_tables.md) |[<span data-ttu-id="a4ff4-121">WorkbookTable</span><span class="sxs-lookup"><span data-stu-id="a4ff4-121">WorkbookTable</span></span>](table.md)| <span data-ttu-id="a4ff4-122">テーブル コレクションに投稿して、新しいテーブルを作成します。</span><span class="sxs-lookup"><span data-stu-id="a4ff4-122">Create a new Table by posting to the tables collection.</span></span>|
+|[<span data-ttu-id="a4ff4-123">List tables</span><span class="sxs-lookup"><span data-stu-id="a4ff4-123">List tables</span></span>](../api/worksheet_list_tables.md) |<span data-ttu-id="a4ff4-124">[WorkbookTable](table.md) コレクション</span><span class="sxs-lookup"><span data-stu-id="a4ff4-124">[WorkbookTable](table.md) collection</span></span>| <span data-ttu-id="a4ff4-125">テーブル オブジェクトのコレクションを取得します。</span><span class="sxs-lookup"><span data-stu-id="a4ff4-125">Get a Table object collection.</span></span>|
+|[<span data-ttu-id="a4ff4-126">更新</span><span class="sxs-lookup"><span data-stu-id="a4ff4-126">Update</span></span>](../api/worksheet_update.md) | [<span data-ttu-id="a4ff4-127">WorkbookWorksheet</span><span class="sxs-lookup"><span data-stu-id="a4ff4-127">WorkbookWorksheet</span></span>](worksheet.md)   |<span data-ttu-id="a4ff4-128">ワークシート オブジェクトを更新します。</span><span class="sxs-lookup"><span data-stu-id="a4ff4-128">Update Worksheet object.</span></span> |
+|[<span data-ttu-id="a4ff4-129">Cell</span><span class="sxs-lookup"><span data-stu-id="a4ff4-129">Cell</span></span>](../api/worksheet_cell.md)|[<span data-ttu-id="a4ff4-130">Range</span><span class="sxs-lookup"><span data-stu-id="a4ff4-130">Range</span></span>](range.md)|<span data-ttu-id="a4ff4-p102">行と列の番号に基づいて、1 つのセルを含んだ範囲オブジェクトを取得します。このセルは、ワークシートのグリッド内であれば、親の範囲の境界の外のセルであってもかまいません。</span><span class="sxs-lookup"><span data-stu-id="a4ff4-p102">Gets the range object containing the single cell based on row and column numbers. The cell can be outside the bounds of its parent range, so long as it's stays within the worksheet grid.</span></span>|
+|[<span data-ttu-id="a4ff4-133">Range</span><span class="sxs-lookup"><span data-stu-id="a4ff4-133">Range</span></span>](../api/worksheet_range.md)|[<span data-ttu-id="a4ff4-134">Range</span><span class="sxs-lookup"><span data-stu-id="a4ff4-134">Range</span></span>](range.md)|<span data-ttu-id="a4ff4-135">アドレスまたは名前で指定された範囲オブジェクトを取得します。</span><span class="sxs-lookup"><span data-stu-id="a4ff4-135">Gets the range object specified by the address or name.</span></span>|
+|[<span data-ttu-id="a4ff4-136">Usedrange</span><span class="sxs-lookup"><span data-stu-id="a4ff4-136">Usedrange</span></span>](../api/worksheet_usedrange.md)|[<span data-ttu-id="a4ff4-137">Range</span><span class="sxs-lookup"><span data-stu-id="a4ff4-137">Range</span></span>](range.md)|<span data-ttu-id="a4ff4-p103">使用範囲とは、値または書式設定が割り当たっているすべてのセルを包含する最小の範囲です。ワークシートが空白の場合、この関数は左上のセルを返します。</span><span class="sxs-lookup"><span data-stu-id="a4ff4-p103">The used range is the smallest range that encompasses any cells that have a value or formatting assigned to them. If the worksheet is blank, this function will return the top left cell.</span></span>|
+|[<span data-ttu-id="a4ff4-140">Delete</span><span class="sxs-lookup"><span data-stu-id="a4ff4-140">Delete</span></span>](../api/worksheet_delete.md)|<span data-ttu-id="a4ff4-141">なし</span><span class="sxs-lookup"><span data-stu-id="a4ff4-141">None</span></span>|<span data-ttu-id="a4ff4-142">ブックからワークシートを削除します。</span><span class="sxs-lookup"><span data-stu-id="a4ff4-142">Deletes the worksheet from the workbook.</span></span>|
+|[<span data-ttu-id="a4ff4-143">List</span><span class="sxs-lookup"><span data-stu-id="a4ff4-143">List</span></span>](../api/worksheet_list.md) | <span data-ttu-id="a4ff4-144">[WorkbookWorksheet](worksheet.md) コレクション</span><span class="sxs-lookup"><span data-stu-id="a4ff4-144">[WorkbookWorksheet](worksheet.md) collection</span></span> |<span data-ttu-id="a4ff4-145">ワークシート オブジェクトのコレクションを取得します。</span><span class="sxs-lookup"><span data-stu-id="a4ff4-145">Get worksheet object collection.</span></span> |
+|[<span data-ttu-id="a4ff4-146">Add</span><span class="sxs-lookup"><span data-stu-id="a4ff4-146">Add</span></span>](../api/worksheetcollection_add.md)|[<span data-ttu-id="a4ff4-147">WorkbookWorksheet</span><span class="sxs-lookup"><span data-stu-id="a4ff4-147">WorkbookWorksheet</span></span>](worksheet.md)|<span data-ttu-id="a4ff4-p104">新しいワークシートをブックに追加します。ワークシートは、既存のワークシートの末尾に追加されます。</span><span class="sxs-lookup"><span data-stu-id="a4ff4-p104">Adds a new worksheet to the workbook. The worksheet will be added at the end of existing worksheets.</span></span> |
+|[<span data-ttu-id="a4ff4-150">List pivotTables</span><span class="sxs-lookup"><span data-stu-id="a4ff4-150">List pivotTables</span></span>](../api/workbookworksheet_list_pivottables.md) |<span data-ttu-id="a4ff4-151">[workbookPivotTable](workbookpivottable.md) コレクション</span><span class="sxs-lookup"><span data-stu-id="a4ff4-151">[workbookPivotTable](workbookpivottable.md) collection</span></span>| <span data-ttu-id="a4ff4-152">workbookPivotTable オブジェクト コレクションを取得します。</span><span class="sxs-lookup"><span data-stu-id="a4ff4-152">Get a workbookPivotTable object collection.</span></span>|
 
-## <a name="properties"></a>プロパティ
-| プロパティ       | 型    |説明|
+## <a name="properties"></a><span data-ttu-id="a4ff4-153">プロパティ</span><span class="sxs-lookup"><span data-stu-id="a4ff4-153">Properties</span></span>
+| <span data-ttu-id="a4ff4-154">プロパティ</span><span class="sxs-lookup"><span data-stu-id="a4ff4-154">Property</span></span>     | <span data-ttu-id="a4ff4-155">タイプ</span><span class="sxs-lookup"><span data-stu-id="a4ff4-155">Type</span></span>   |<span data-ttu-id="a4ff4-156">説明</span><span class="sxs-lookup"><span data-stu-id="a4ff4-156">Description</span></span>|
 |:---------------|:--------|:----------|
-|id|string|指定されたブックのワークシートを一意に識別する値を返します。この識別子の値は、ワークシートの名前を変更したり移動したりしても同じままです。値の取得のみ可能です。|
-|name|string|ワークシートの表示名。|
-|position|int|0 を起点とした、ブック内のワークシートの位置。|
-|visibility|string|ワークシートの可視性。可能な値は、`Visible`、`Hidden`、`VeryHidden` です。|
+|<span data-ttu-id="a4ff4-157">ID</span><span class="sxs-lookup"><span data-stu-id="a4ff4-157">id</span></span>|<span data-ttu-id="a4ff4-158">文字列</span><span class="sxs-lookup"><span data-stu-id="a4ff4-158">string</span></span>|<span data-ttu-id="a4ff4-p105">指定されたブックのワークシートを一意に識別する値を返します。この識別子の値は、ワークシートの名前を変更したり移動したりしても同じままです。値の取得のみ可能です。</span><span class="sxs-lookup"><span data-stu-id="a4ff4-p105">Returns a value that uniquely identifies the worksheet in a given workbook. The value of the identifier remains the same even when the worksheet is renamed or moved. Read-only.</span></span>|
+|<span data-ttu-id="a4ff4-162">name</span><span class="sxs-lookup"><span data-stu-id="a4ff4-162">name</span></span>|<span data-ttu-id="a4ff4-163">文字列</span><span class="sxs-lookup"><span data-stu-id="a4ff4-163">string</span></span>|<span data-ttu-id="a4ff4-164">ワークシートの表示名。</span><span class="sxs-lookup"><span data-stu-id="a4ff4-164">The display name of the worksheet.</span></span>|
+|<span data-ttu-id="a4ff4-165">position</span><span class="sxs-lookup"><span data-stu-id="a4ff4-165">position</span></span>|<span data-ttu-id="a4ff4-166">int</span><span class="sxs-lookup"><span data-stu-id="a4ff4-166">int</span></span>|<span data-ttu-id="a4ff4-167">0 を起点とした、ブック内のワークシートの位置。</span><span class="sxs-lookup"><span data-stu-id="a4ff4-167">The zero-based position of the worksheet within the workbook.</span></span>|
+|<span data-ttu-id="a4ff4-168">visibility</span><span class="sxs-lookup"><span data-stu-id="a4ff4-168">visibility</span></span>|<span data-ttu-id="a4ff4-169">文字列</span><span class="sxs-lookup"><span data-stu-id="a4ff4-169">string</span></span>|<span data-ttu-id="a4ff4-170">ワークシートの可視性。</span><span class="sxs-lookup"><span data-stu-id="a4ff4-170">The Visibility of the worksheet. Possible values are: , , .</span></span> <span data-ttu-id="a4ff4-171">指定できる値は、 `Visible`、`Hidden`、`VeryHidden` です。</span><span class="sxs-lookup"><span data-stu-id="a4ff4-171">The possible values are `Visible`, `Hidden`, or `VeryHidden`.</span></span>|
 
-## <a name="relationships"></a>リレーションシップ
-| リレーションシップ | 型    |説明|
+## <a name="relationships"></a><span data-ttu-id="a4ff4-172">リレーションシップ</span><span class="sxs-lookup"><span data-stu-id="a4ff4-172">Relationships</span></span>
+| <span data-ttu-id="a4ff4-173">リレーションシップ</span><span class="sxs-lookup"><span data-stu-id="a4ff4-173">Relationship</span></span> | <span data-ttu-id="a4ff4-174">型</span><span class="sxs-lookup"><span data-stu-id="a4ff4-174">Type</span></span>   |<span data-ttu-id="a4ff4-175">説明</span><span class="sxs-lookup"><span data-stu-id="a4ff4-175">Description</span></span>|
 |:---------------|:--------|:----------|
-|charts|[Chart](chart.md) コレクション|ワークシートの一部になっているグラフのコレクションを返します。読み取り専用です。|
-|names|[NamedItem](nameditem.md) コレクション|ワークシートに関連付けられている名前のコレクションを返します。読み取り専用です。|
-|pivotTables|[workbookPivotTable](workbookpivottable.md) コレクション| ワークシートの一部になっているピボットテーブルのコレクション。 |
-|protection|[WorksheetProtection](worksheetprotection.md)|ワークシートのシート保護オブジェクトを返します。読み取り専用です。|
-|tables|[Table](table.md) コレクション|ワークシートの一部になっているグラフのコレクション。値の取得のみ可能です。|
+|<span data-ttu-id="a4ff4-176">charts</span><span class="sxs-lookup"><span data-stu-id="a4ff4-176">charts</span></span>|<span data-ttu-id="a4ff4-177">[WorkbookChart](chart.md) コレクション</span><span class="sxs-lookup"><span data-stu-id="a4ff4-177">[WorkbookChart](chart.md) collection</span></span>|<span data-ttu-id="a4ff4-p107">ワークシートの一部になっているグラフのコレクションを返します。読み取り専用です。</span><span class="sxs-lookup"><span data-stu-id="a4ff4-p107">Returns collection of charts that are part of the worksheet. Read-only.</span></span>|
+|<span data-ttu-id="a4ff4-180">names</span><span class="sxs-lookup"><span data-stu-id="a4ff4-180">names</span></span>|<span data-ttu-id="a4ff4-181">[WorkbookNamedItem](nameditem.md) コレクション</span><span class="sxs-lookup"><span data-stu-id="a4ff4-181">[WorkbookNamedItem](nameditem.md) collection</span></span>|<span data-ttu-id="a4ff4-p108">ワークシートに関連付けられている名前のコレクションを返します。読み取り専用です。</span><span class="sxs-lookup"><span data-stu-id="a4ff4-p108">Returns collection of names that are associated with the worksheet. Read-only.</span></span>|
+|<span data-ttu-id="a4ff4-184">pivotTables</span><span class="sxs-lookup"><span data-stu-id="a4ff4-184">pivotTables</span></span>|<span data-ttu-id="a4ff4-185">[workbookPivotTable](workbookpivottable.md) コレクション</span><span class="sxs-lookup"><span data-stu-id="a4ff4-185">[workbookPivotTable](workbookpivottable.md) collection</span></span>| <span data-ttu-id="a4ff4-186">ワークシートの一部になっているピボットテーブルのコレクションです。</span><span class="sxs-lookup"><span data-stu-id="a4ff4-186">Collection of PivotTables that are part of the worksheet.</span></span> |
+|<span data-ttu-id="a4ff4-187">protection</span><span class="sxs-lookup"><span data-stu-id="a4ff4-187">protection</span></span>|[<span data-ttu-id="a4ff4-188">WorkbookWorksheetProtection</span><span class="sxs-lookup"><span data-stu-id="a4ff4-188">WorkbookWorksheetProtection</span></span>](worksheetprotection.md)|<span data-ttu-id="a4ff4-p109">ワークシートのシート保護オブジェクトを返します。読み取り専用です。</span><span class="sxs-lookup"><span data-stu-id="a4ff4-p109">Returns sheet protection object for a worksheet. Read-only.</span></span>|
+|<span data-ttu-id="a4ff4-191">tables</span><span class="sxs-lookup"><span data-stu-id="a4ff4-191">tables</span></span>|<span data-ttu-id="a4ff4-192">[WorkbookTable](table.md) コレクション</span><span class="sxs-lookup"><span data-stu-id="a4ff4-192">[WorkbookTable](table.md) collection</span></span>|<span data-ttu-id="a4ff4-p110">ワークシートの一部になっているテーブルのコレクションです。読み取り専用です。</span><span class="sxs-lookup"><span data-stu-id="a4ff4-p110">Collection of tables that are part of the worksheet. Read-only.</span></span>|
 
-## <a name="json-representation"></a>JSON 表記
+## <a name="json-representation"></a><span data-ttu-id="a4ff4-195">JSON 表記</span><span class="sxs-lookup"><span data-stu-id="a4ff4-195">JSON representation</span></span>
 
-以下は、リソースの JSON 表記です。
+<span data-ttu-id="a4ff4-196">以下は、リソースの JSON 表記です。</span><span class="sxs-lookup"><span data-stu-id="a4ff4-196">Here is a JSON representation of the resource.</span></span>
 
-<!-- {
+<!--{
   "blockType": "resource",
-  "optionalProperties": [
-
-  ],
-  "@odata.type": "microsoft.graph.worksheet"
+  "optionalProperties": [],
+  "keyProperty": "id",
+  "baseType": "microsoft.graph.entity",
+  "@odata.type": "microsoft.graph.workbookWorksheet"
 }-->
 
 ```json
