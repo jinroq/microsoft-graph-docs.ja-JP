@@ -32,11 +32,11 @@ POST /deviceAppManagement/managedEBooks/{managedEBookId}/assignments
 
 次の表に、iosVppEBookAssignment の作成時に必要なプロパティを示します。
 
-|プロパティ|タイプ|説明|
+|プロパティ|型|説明|
 |:---|:---|:---|
-|id|文字列|エンティティのキー。 [managedEBookAssignment](../resources/intune_books_managedebookassignment.md) から継承します|
-|target|[deviceAndAppManagementAssignmentTarget](../resources/intune_shared_deviceandappmanagementassignmenttarget.md)|電子ブックの割り当て先。 [managedEBookAssignment](../resources/intune_books_managedebookassignment.md) から継承します|
-|installIntent|[installIntent](../resources/intune_shared_installintent.md)|電子ブックのインストールの目的。 [managedEBookAssignment](../resources/intune_books_managedebookassignment.md) から継承します。 指定できる値は、`available`、`required`、`uninstall`、`availableWithoutEnrollment` です。|
+|ID|文字列|エンティティのキー。 [managedEBookAssignment](../resources/intune_books_managedebookassignment.md) から継承します|
+|ターゲット|[deviceAndAppManagementAssignmentTarget](../resources/intune_shared_deviceandappmanagementassignmenttarget.md)|電子ブックの割り当て先。 [managedEBookAssignment](../resources/intune_books_managedebookassignment.md) から継承します|
+|installIntent|[installIntent](../resources/intune_shared_installintent.md)|EBookのインストールの目的。 [managedEBookAssignment](../resources/intune_books_managedebookassignment.md) から継承します。 指定できる値は、`available`、`required`、`uninstall`、`availableWithoutEnrollment` です。|
 
 
 
@@ -76,6 +76,11 @@ Content-Length: 242
   "installIntent": "required"
 }
 ```
+
+
+
+
+
 
 
 

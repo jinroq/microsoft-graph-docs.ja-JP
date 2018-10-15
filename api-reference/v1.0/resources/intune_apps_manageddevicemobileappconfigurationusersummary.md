@@ -10,9 +10,9 @@ MDM モバイル アプリ構成のユーザー状態の要約に関する、プ
 |[managedDeviceMobileAppConfigurationUserSummary の更新](../api/intune_apps_manageddevicemobileappconfigurationusersummary_update.md)|[managedDeviceMobileAppConfigurationUserSummary](../resources/intune_apps_manageddevicemobileappconfigurationusersummary.md)|[managedDeviceMobileAppConfigurationUserSummary](../resources/intune_apps_manageddevicemobileappconfigurationusersummary.md) オブジェクトのプロパティを更新します。|
 
 ## <a name="properties"></a>プロパティ
-|プロパティ|タイプ|説明|
+|プロパティ|型|説明|
 |:---|:---|:---|
-|id|文字列|エンティティのキー。|
+|ID|文字列|エンティティのキー。|
 |pendingCount|Int32|保留中のユーザーの数|
 |notApplicableCount|Int32|該当しないユーザーの数|
 |successCount|Int32|成功したユーザーの数|
@@ -27,8 +27,8 @@ MDM モバイル アプリ構成のユーザー状態の要約に関する、プ
 以下は、リソースの JSON 表記です。
 <!--{
   "blockType": "resource",
-  "keyProperty": "id",
   "baseType": "microsoft.graph.entity",
+  "keyProperty": "id",
   "@odata.type": "microsoft.graph.managedDeviceMobileAppConfigurationUserSummary"
 }-->
 ``` json
@@ -44,6 +44,11 @@ MDM モバイル アプリ構成のユーザー状態の要約に関する、プ
   "configurationVersion": 1024
 }
 ```
+
+
+
+
+
 
 
 

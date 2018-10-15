@@ -8,7 +8,7 @@
 
 |アクセス許可の種類|アクセス許可 (特権の大きいものから小さいものへ)|
 |:---|:---|
-|委任 (職場または学校のアカウント)|DeviceManagementServiceConfig.ReadWrite.All|
+|委任 (職場または学校アカウント)|DeviceManagementServiceConfig.ReadWrite.All|
 |委任 (個人用 Microsoft アカウント)|サポートされていません。|
 |アプリケーション|サポートされていません。|
 
@@ -32,9 +32,9 @@ PATCH /deviceManagement/mobileThreatDefenseConnectors/{mobileThreatDefenseConnec
 
 次の表に、[mobileThreatDefenseConnector](../resources/intune_onboarding_mobilethreatdefenseconnector.md) 作成時に必要なプロパティを示します。
 
-|プロパティ|タイプ|説明|
+|プロパティ|型|説明|
 |:---|:---|:---|
-|id|文字列|まだ文書化されていません|
+|ID|文字列|まだ文書化されていません|
 |lastHeartbeatDateTime|DateTimeOffset|データ同期パートナーから受信した最後のハートビートの日時|
 |partnerState|[mobileThreatPartnerTenantState](../resources/intune_onboarding_mobilethreatpartnertenantstate.md)|このアカウントのデータの同期パートナーの状態です。 指定できる値は、`unavailable`、`available`、`enabled`、`unresponsive` です。|
 |androidEnabled|ブール型|Android において、準拠評価時にデータ同期パートナーからのデータを使用するかどうかを設定します|
@@ -89,6 +89,11 @@ Content-Length: 463
   "partnerUnresponsivenessThresholdInDays": 6
 }
 ```
+
+
+
+
+
 
 
 
