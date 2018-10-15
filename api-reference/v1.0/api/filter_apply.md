@@ -20,14 +20,14 @@ POST /workbook/worksheets/{id|name}/tables/{id|name}/columns/{id|name}/filter/ap
 ## <a name="request-headers"></a>要求ヘッダー
 | 名前       | 説明|
 |:---------------|:----------|
-| Authorization  | ベアラー {トークン}。必須。 |
+| 承認  | ベアラー {トークン}。必須。 |
 
 ## <a name="request-body"></a>要求本文
 要求本文で、次のパラメーターを含む JSON オブジェクトを指定します。
 
 | パラメーター    | 型   |説明|
 |:---------------|:--------|:----------|
-|criteria|FilterCriteria|適用する基準。|
+|criteria|WorkbookFilterCriteria|適用する基準。|
 
 ## <a name="response"></a>応答
 
@@ -69,8 +69,7 @@ Content-length: 321
 以下は、応答の例です。 
 <!-- {
   "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.none"
+  "truncated": true
 } -->
 ```http
 HTTP/1.1 200 OK

@@ -19,21 +19,21 @@ POST /workbook/worksheets/{id|name}/charts/add
 ## <a name="request-headers"></a>要求ヘッダー
 | 名前       | 説明|
 |:---------------|:----------|
-| Authorization  | ベアラー {トークン}。必須。 |
+| 承認  | ベアラー {トークン}。必須。 |
 | Workbook-Session-Id  | 変更を保持するかどうかを決定するブック セッション ID。省略可能。|
 
 ## <a name="request-body"></a>要求本文
 要求本文で、次のパラメーターを含む JSON オブジェクトを指定します。
 
-| パラメーター    | Type   |説明|
+| パラメーター    | 型   |説明|
 |:---------------|:--------|:----------|
-|type|string|グラフの種類を表します。可能な値は、`ColumnClustered`、`ColumnStacked`、`ColumnStacked100`、`BarClustered`、`BarStacked`、`BarStacked100`、`LineStacked`、`LineStacked100`、`LineMarkers`、`LineMarkersStacked`、`LineMarkersStacked100`、`PieOfPie`、`etc.` です。|
-|sourceData|string|データ ソースに対応する Range オブジェクトです。|
-|seriesBy|string|省略可能。列や行がグラフのデータ系列として使用される方法を指定します。可能な値は、`Auto`、`Columns`、`Rows` です。|
+|型|文字列|グラフの種類を表します。  指定できる値は、 `ColumnClustered`、 `ColumnStacked`、 `ColumnStacked100`、 `BarClustered`、 `BarStacked`、 `BarStacked100`、 `LineStacked`、 `LineStacked100`、 `LineMarkers`、 `LineMarkersStacked`、 `LineMarkersStacked100`、 `PieOfPie`、 `etc.` です。|
+|sourceData|Json|データ ソースに対応する Range オブジェクトです。|
+|seriesBy|文字列|省略可能。 方法の列または行がグラフのデータ系列として使用されるかを指定します。  指定できる値は、 `Auto`、`Columns`、`Rows` です。|
 
 ## <a name="response"></a>応答
 
-成功した場合、このメソッドは `200 OK` 応答コードと、応答本文で[グラフ](../resources/chart.md) オブジェクトを返します。
+成功した場合、このメソッドは `200 OK`応答コードと、応答本文で [WorkbookChart](../resources/chart.md) オブジェクトを返します。
 
 ## <a name="example"></a>例
 以下は、この API を呼び出す方法の例です。
@@ -60,7 +60,7 @@ Content-length: 94
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.chart"
+  "@odata.type": "microsoft.graph.workbookChart"
 } -->
 ```http
 HTTP/1.1 200 OK

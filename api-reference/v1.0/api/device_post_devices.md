@@ -21,8 +21,8 @@ POST /devices
 ## <a name="request-headers"></a>要求ヘッダー
 | 名前       | 型 | 説明|
 |:---------------|:--------|:----------|
-| Authorization  | string  | ベアラー {トークン}。必須。 |
-| Content-type | string | application/json |
+| 承認  | 文字列  | ベアラー {トークン}。必須。 |
+| Content-type | 文字列 | アプリケーション/json |
 
 ## <a name="request-body"></a>要求本文
 要求本文で、[デバイス](../resources/device.md) オブジェクトの JSON 表記を指定します。
@@ -48,7 +48,7 @@ Content-type: application/json
   [
     {
       "type":2,
-      "key":"Y3YxN2E1MWFlYw=="
+      "key":"base64Y3YxN2E1MWFlYw=="
     }
   ],
   "deviceId":"4c299165-6e8f-4b45-a5ba-c5d250a707ff",
@@ -75,7 +75,7 @@ Content-type: application/json
   [
     {
       "type":2,
-      "key":"Y3YxN2E1MWFlYw=="
+      "key":"base64Y3YxN2E1MWFlYw=="
     }
   ],
   "deviceId":"4c299165-6e8f-4b45-a5ba-c5d250a707ff",

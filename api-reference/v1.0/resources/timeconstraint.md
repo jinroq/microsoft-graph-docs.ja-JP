@@ -11,7 +11,7 @@
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.timeconstraint"
+  "@odata.type": "microsoft.graph.timeConstraint"
 }-->
 
 ```json
@@ -22,9 +22,9 @@
 
 ```
 ## <a name="properties"></a>プロパティ
-| プロパティ       | 型    |説明|
+| プロパティ     | タイプ   |説明|
 |:---------------|:--------|:----------|
-|activityDomain|String|アクティビティの性質です (省略可能)。使用可能な値: `work`、`personal`、`unrestricted`、`unknown`。|
+|activityDomain|activityDomain|アクティビティの性質です (省略可能)。 指定できる値は、 `work`、`personal`、`unrestricted`、または `unknown` です。|
 |timeslots|[timeSlot](timeslot.md) コレクション|期間の配列。|
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

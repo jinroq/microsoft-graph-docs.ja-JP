@@ -13,44 +13,46 @@
 ## <a name="http-request"></a>HTTP 要求
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/names(<name>)/range/format/borders/ItemAt
-POST /workbook/worksheets/{id|name}/range(address='<address>')/format/borders/ItemAt
-POST /workbook/tables/{id|name}/columns/{id|name}/range/format/borders/ItemAt
+POST /workbook/names/{name}/range/format/borders/itemAt
+POST /workbook/worksheets/{id|name}/range(address='<address>')/format/borders/itemAt
+POST /workbook/tables/{id|name}/columns/{id|name}/range/format/borders/itemAt
 
 ```
 ## <a name="request-headers"></a>要求ヘッダー
 | 名前       | 説明|
 |:---------------|:----------|
-| Authorization  | ベアラー {トークン}。必須。 |
-| Workbook-Session-Id  | 変更を保持するかどうかを決定するブック セッション ID。省略可能。|
+| 承認  | ベアラー {トークン}。必須。 |
+| ブックセッション Id  | 変更を保持するかどうかを決定するブック セッション ID。省略可能。|
 
 ## <a name="request-body"></a>要求本文
 要求本文で、次のパラメーターを含む JSON オブジェクトを指定します。
 
-| パラメーター    | Type   |説明|
+| パラメーター    | 型   |説明|
 |:---------------|:--------|:----------|
-|index|number|取得するオブジェクトのインデックス値。0 を起点とする番号になります。|
+|index|Int32|取得するオブジェクトのインデックス値。0 を起点とする番号になります。|
 
 ## <a name="response"></a>応答
 
-成功した場合、このメソッドは `200 OK` 応答コードと、応答本文で [RangeBorder](../resources/rangeborder.md) オブジェクトを返します。
+成功した場合、このメソッドは `200 OK` 応答コードと、応答本文で [WorkbookRangeBorder](../resources/rangeborder.md) オブジェクトを返します。
 
 ## <a name="example"></a>例
 以下は、この API を呼び出す方法の例です。
 ##### <a name="request"></a>要求
 以下は、要求の例です。
-<!-- {
+<!--{
   "blockType": "request",
-  "name": "rangebordercollection_itemat"
+  "isComposable": true,
+  "name": "rangebordercollection_itemat",
+  "idempotent": true,
+  "@type": "requestBodyResourceFor.rangebordercollection_itemat"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/names(<name>)/range/format/borders/ItemAt
+POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/names/{name}/range/format/borders/itemAt
 Content-type: application/json
 Content-length: 20
 
 {
-  "index": {
-  }
+  "index": 1
 }
 ```
 
@@ -59,7 +61,7 @@ Content-length: 20
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.rangeBorder"
+  "@odata.type": "microsoft.graph.workbookRangeBorder"
 } -->
 ```http
 HTTP/1.1 200 OK

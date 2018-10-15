@@ -13,29 +13,29 @@ chartaxis オブジェクトのプロパティを更新します。
 ## <a name="http-request"></a>HTTP 要求
 <!-- { "blockType": "ignored" } -->
 ```http
-PATCH /workbook/worksheets/{id|name}/charts(<name>)/axes/valueaxis
-PATCH /workbook/worksheets/{id|name}/charts(<name>)/axes/seriesaxis
-PATCH /workbook/worksheets/{id|name}/charts(<name>)/axes/categoryaxis
+PATCH /workbook/worksheets/{id|name}/charts/{name}/axes/valueAxis
+PATCH /workbook/worksheets/{id|name}/charts/{name}/axes/seriesAxis
+PATCH /workbook/worksheets/{id|name}/charts/{name}/axes/categoryaxis
 ```
 ## <a name="optional-request-headers"></a>オプションの要求ヘッダー
 | 名前       | 説明|
 |:-----------|:-----------|
-| Authorization  | ベアラー {トークン}。必須。 |
+| 承認  | ベアラー {トークン}。必須。 |
 | Workbook-Session-Id  | 変更を保持するかどうかを決定するブック セッション ID。省略可能。|
 
 ## <a name="request-body"></a>要求本文
 要求本文で、更新する関連フィールドの値を指定します。要求本文に含まれない既存のプロパティは、以前の値のままになるか、他のプロパティ値の変化に基づいて再計算されます。最適なパフォーマンスを得るためには、変更されていない既存の値を含めないでください。
 
-| プロパティ     | 型   |説明|
+| プロパティ     | タイプ   |説明|
 |:---------------|:--------|:----------|
-|majorUnit|object|2 つの大きい目盛の間隔を表します。数値の値または空の文字列を設定できます。戻り値は常に数値です。|
-|maximum|object|数値軸の最大値を表します。数値の値または空の文字列を設定できます (軸の値が自動の場合)。戻り値は常に数値です。|
-|minimum|object|数値軸の最小値を表します。数値の値または空の文字列を設定できます (軸の値が自動の場合)。戻り値は常に数値です。|
-|minorUnit|object|2 つの小さい目盛の間隔を表します。"数値の値または空の文字列を設定できます (軸の値が自動の場合)。戻り値は常に数値です。|
+|majorUnit|Json|2 つの大きい目盛の間隔を表します。数値の値または空の文字列を設定できます。戻り値は常に数値です。|
+|maximum|Json|数値軸の最大値を表します。数値の値または空の文字列を設定できます (軸の値が自動の場合)。戻り値は常に数値です。|
+|minimum|Json|数値軸の最小値を表します。数値の値または空の文字列を設定できます (軸の値が自動の場合)。戻り値は常に数値です。|
+|minorUnit|Json|2 つの小さい目盛の間隔を表します。"数値の値または空の文字列を設定できます (軸の値が自動の場合)。戻り値は常に数値です。|
 
 ## <a name="response"></a>応答
 
-成功した場合、このメソッドは `200 OK` 応答コードと、応答本文で、更新された [ChartAxis](../resources/chartaxis.md) オブジェクトを返します。
+成功した場合、このメソッドは `200 OK` 応答コードを返し、応答本文で、[WorkbookChartAxis](../resources/chartaxis.md) オブジェクトを更新します。
 ## <a name="example"></a>例
 ##### <a name="request"></a>要求
 以下は、要求の例です。
@@ -44,7 +44,7 @@ PATCH /workbook/worksheets/{id|name}/charts(<name>)/axes/categoryaxis
   "name": "update_chartaxis"
 }-->
 ```http
-PATCH https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/{id|name}/charts(<name>)/axes/valueaxis
+PATCH https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/{id|name}/charts/{name}/axes/valueAxis
 Content-type: application/json
 Content-length: 64
 
@@ -62,7 +62,7 @@ Content-length: 64
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.chartaxis"
+  "@odata.type": "microsoft.graph.workbookChartAxis"
 } -->
 ```http
 HTTP/1.1 200 OK

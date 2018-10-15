@@ -1,8 +1,6 @@
 # <a name="create-devicemanagementtroubleshootingevent"></a>deviceManagementTroubleshootingEvent の作成
 
-> **重要:**Microsoft Graph のベータ版 (/beta) の API はプレビュー中で、変更されることがあります。 実稼働アプリケーションでは、これらの API の使用はサポートされていません。
-
-> **注:**Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
+> **注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
 
 新しい [deviceManagementTroubleshootingEvent](../resources/intune_troubleshooting_devicemanagementtroubleshootingevent.md) オブジェクトを作成します。
 ## <a name="prerequisites"></a>前提条件
@@ -10,7 +8,7 @@
 
 |アクセス許可の種類|アクセス許可 (特権の大きいものから小さいものへ)|
 |:---|:---|
-|委任 (職場または学校アカウント)|DeviceManagementManagedDevices.ReadWrite.All|
+|委任 (職場または学校のアカウント)|DeviceManagementManagedDevices.ReadWrite.All|
 |委任 (個人用 Microsoft アカウント)|サポートされていません。|
 |アプリケーション|サポートされていません。|
 
@@ -26,8 +24,8 @@ POST /deviceManagement/troubleshootingEvents
 ## <a name="request-headers"></a>要求ヘッダー
 |ヘッダー|値|
 |:---|:---|
-|Authorization|ベアラー &lt;トークン&gt; が必須。|
-|Accept|application/json|
+|承認|ベアラー &lt;トークン&gt; が必須。|
+|承諾|アプリケーションまたは json|
 
 ## <a name="request-body"></a>要求本文
 要求本文で、deviceManagementTroubleshootingEvent オブジェクトの JSON 表記を指定します。
@@ -36,9 +34,9 @@ POST /deviceManagement/troubleshootingEvents
 
 |プロパティ|型|説明|
 |:---|:---|:---|
-|id|String|オブジェクトの UUID|
-|eventDateTime|DateTimeOffset|イベントが発生した時刻。|
-|correlationId|String|サービスのエラーをトレースするための ID。|
+|ID|文字列|オブジェクトの UUID|
+|eventDateTime|DateTimeOffset|インシデントが発生した時間。|
+|correlationId|文字列|サービスのエラーをトレースするための ID。|
 
 
 
@@ -49,7 +47,7 @@ POST /deviceManagement/troubleshootingEvents
 ### <a name="request"></a>要求
 以下は、要求の例です。
 ``` http
-POST https://graph.microsoft.com/beta/deviceManagement/troubleshootingEvents
+POST https://graph.microsoft.com/v1/deviceManagement/troubleshootingEvents
 Content-type: application/json
 Content-length: 179
 
@@ -74,6 +72,7 @@ Content-Length: 228
   "correlationId": "Correlation Id value"
 }
 ```
+
 
 
 

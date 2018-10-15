@@ -12,13 +12,9 @@
 |[削除済みアイテムの復元](../api/directory_deleteditems_restore.md) |[directoryObject](directoryobject.md)| 最近削除されたアイテムを復元します。 |
 |[削除済みアイテムの一覧表示](../api/directory_deleteditems_list.md) |[directoryObject](directoryobject.md) コレクション| 最近削除されたアイテムのリストを取得します。 |
 |[アイテムの完全削除](../api/directory_deleteditems_delete.md) | なし | アイテムを完全に削除します。 |
+|[ユーザーによって所有されている削除済みのアイテムを一覧表示します。](../api/directory_deleteditems_user_owned.md) | [directoryObject](directoryobject.md) コレクション | ユーザーによって所有されているディレクトリの項目を一覧表示します。 |
 
-## <a name="properties"></a>プロパティ
-| プロパティ   | 型 |説明|
-|:---------------|:--------|:----------|
-|id|String| オブジェクトの一意識別子 (例: 12345678-9abc-def0-1234-56789abcde)。 キー。 null 許容ではありません。 読み取り専用です。|
-
-## <a name="relationships"></a>関係
+## <a name="relationships"></a>リレーションシップ
 | リレーションシップ | 型   |説明|
 |:---------------|:--------|:----------|
 |deleteditems|[directoryObject](directoryobject.md) コレクション| 最近削除されたアイテム 読み取り専用。 Null 許容型。|
@@ -28,17 +24,31 @@
 
 <!-- {
   "blockType": "resource",
-  "optionalProperties": [
-
-  ],
+  "baseType": "microsoft.graph.entity",
   "@odata.type": "microsoft.graph.directory"
 }-->
 
 ```json
 {
-  "id": "String (identifier)"
 }
 ```
+
+## <a name="example"></a>例
+
+<!--{"blockType": "request"}-->
+```http
+GET https://graph.microsoft.com/v1.0/directory
+```
+
+<!--{"blockType": "response", "truncated": true, "@odata.type": "microsoft.graph.directory"}-->
+```json
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+}
+```
+
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

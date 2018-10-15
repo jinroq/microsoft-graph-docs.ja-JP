@@ -2,12 +2,13 @@
 author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
-title: "アクセス許可を変更する"
-ms.openlocfilehash: ead6babf88b7efc578ef8be6d11cc9fb59dd5fdd
-ms.sourcegitcommit: 7aea7a97e36e6d146214de3a90fdbc71628aadba
+title: アクセス許可を変更する
+ms.openlocfilehash: 051520ed62fdfe6499a8cca2387e65f14714205f
+ms.sourcegitcommit: abf4b739257e3ffd9d045f783ec595d846172590
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23267284"
 ---
 # <a name="update-sharing-permission"></a>共有アクセス許可を更新する
 
@@ -41,18 +42,18 @@ PATCH /users/{user-id}/drive/items/{item-id}/permissions/{perm-id}
 
 | 名前          | 型   | 説明                                                                                                                                                                                       |
 |:--------------|:-------|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| if-match      | string | この要求ヘッダーが含まれていて、指定された eTag (または cTag) が項目の現在のタグに一致しない場合には、`412 Precondition Failed` 応答が返され、項目は削除されません。 |
+| if-match      | 文字列 | この要求ヘッダーが含まれていて、指定された eTag (または cTag) が項目の現在のタグに一致しない場合には、`412 Precondition Failed` 応答が返され、項目は削除されません。 |
 
 ## <a name="request-body"></a>要求本文
 
 要求本文で、更新する関連フィールドの値を指定します。
 
-要求本文に含まれない既存のプロパティは、以前の値のままになるか、他のプロパティ値の変化に基づいて再計算されます。
+要求本文に含まれない既存のプロパティは、以前の値のままになるか、他のプロパティ値の変更に基づいて再計算されます。
 最適なパフォーマンスを得るためには、変更されていない既存の値を含めないでください。
 
-| プロパティ     | 型   | 説明                   |
-|:-------------|:-------|:------------------------------|
-| **roles**    | String | アクセス許可の種類の配列。 |
+| プロパティ | 型              | 説明                   |
+|:---------|:------------------|:------------------------------|
+| roles    | String コレクション | アクセス許可の種類の配列。 |
 
 ## <a name="response"></a>応答
 
@@ -62,7 +63,7 @@ PATCH /users/{user-id}/drive/items/{item-id}/permissions/{perm-id}
 
 以下は、共有アクセス許可のロールを読み取り専用に変更する要求の例です。
 
-<!-- {"blockType": "request", "name": "update-permission", "@odata.type": "microsoft.graph.permission", "scopes": "files.readwrite"} -->
+<!-- { "blockType": "request", "name": "update-permission", "@odata.type": "microsoft.graph.permission", "scopes": "files.readwrite", "tags": "service.graph" } -->
 
 ```http
 PATCH /me/drive/items/{item-id}/permissions/{perm-id}
@@ -75,7 +76,7 @@ Content-type: application/json
 
 ### <a name="response"></a>応答
 
-成功した場合、このメソッドは、応答本文で更新されたアクセス許可の状態を表す [Permission](../resources/permission.md) リソースを返します。
+成功した場合、このメソッドは、応答本文でアクセス許可の更新された状態を表す [Permission](../resources/permission.md) リソースを返します。
 
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.permission", "truncated": true } -->
 

@@ -3,11 +3,12 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/11/2017
 title: NumberColumn
-ms.openlocfilehash: 8aa366e3c4f59fc5d22f945c863bab4f91373b67
-ms.sourcegitcommit: 7aea7a97e36e6d146214de3a90fdbc71628aadba
+ms.openlocfilehash: 4aaff6539fc9c7ce77029463562c0f8fca57cac6
+ms.sourcegitcommit: abf4b739257e3ffd9d045f783ec595d846172590
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23266507"
 ---
 # <a name="numbercolumn-resource-type"></a>NumberColumn リソース型
 
@@ -29,19 +30,19 @@ ms.lasthandoff: 09/28/2017
 
 ## <a name="properties"></a>プロパティ
 
-| プロパティ名      | 種類   | 説明
+| プロパティ名      | 型   | 説明
 |:-------------------|:-------|:-----------------------------------------------
 | **decimalPlaces**  | string | 表示する小数点以下の桁数です。 使用可能な値については、下記を参照してください。
-| **displayAs**      | string | UX での値の表示方法です。 `number` または `percentage` のいずれかでなければなりません。 指定しない場合、`number` として扱われます。
+| **displayAs**      | string | UX での値の表示方法です。 または `percentage` のいずれかでなければなりません。`number` 指定しない場合、`number` として扱われます。
 | **maximum**        | double | 許容最大値です。
 | **minimum**        | double | 許容最小値です。
 
-## <a name="decimalplaces-values"></a>DecimalPlaces 値
+## <a name="decimalplaces"></a>decimalPlaces
 
 | 値          | 説明
 |:---------------|:--------------------------------------------------------------
-| **automatic**  | 既定値。 必要に応じて自動的に小数点以下の桁を表示します。
-| **none**       | 小数点以下の桁は表示されません。
+| **automatic**  | 既定。 必要に応じて自動的に小数点以下の桁を表示します。
+| **なし**       | 小数点以下の桁は表示されません。
 | **one**        | 小数第 1 位までを常に表示します。
 | **two**        | 小数第 2 位までを常に表示します。
 | **three**      | 小数第 3 位までを常に表示します。
@@ -56,5 +57,11 @@ ms.lasthandoff: 09/28/2017
   "description": "",
   "keywords": "",
   "section": "documentation",
+  "suppressions": [
+    "Warning: /api-reference/v1.0/resources/numbercolumn.md:
+      Found potential enums in resource example that weren't defined in a table:(automatic,none,one,two,three,four,five) are in resource, but () are in table",
+    "Warning: /api-reference/v1.0/resources/numbercolumn.md:
+      Found potential enums in resource example that weren't defined in a table:(number,percentage) are in resource, but () are in table"
+  ],
   "tocPath": "Resources/NumberColumn"
 } -->

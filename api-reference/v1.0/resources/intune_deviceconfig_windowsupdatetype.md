@@ -6,12 +6,17 @@
 ## <a name="members"></a>メンバー
 |メンバー|値|説明|
 |:---|:---|:---|
-|UserDefined|0|設定するユーザーを許可します。|
+|userDefined|0|設定するユーザーを許可します。|
 |すべて|1|半期チャネル (対象指定) デバイスでは、半年のチャネル (対象) からすべての適用可能な機能の更新を取得します。|
 |businessReadyOnly|2|半期チャネル デバイスは、半年のチャネルからの機能の更新を取得します。|
 |windowsInsiderBuildFast|3|Windows の内部からのビルド - 高速|
 |windowsInsiderBuildSlow|4|Windows 内部からビルド時間がかかる|
 |windowsInsiderBuildRelease|5|リリース ビルドの Windows の内部から|
+
+
+
+
+
 
 
 

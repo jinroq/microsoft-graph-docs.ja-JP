@@ -1,6 +1,6 @@
 # <a name="update-mobilethreatdefenseconnector"></a>mobileThreatDefenseConnector の更新
 
-> **注:**Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
+> **注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
 
 [mobileThreatDefenseConnector](../resources/intune_onboarding_mobilethreatdefenseconnector.md) オブジェクトのプロパティを更新します。
 ## <a name="prerequisites"></a>前提条件
@@ -8,7 +8,7 @@
 
 |アクセス許可の種類|アクセス許可 (特権の大きいものから小さいものへ)|
 |:---|:---|
-|委任 (職場または学校アカウント)|DeviceManagementServiceConfig.ReadWrite.All|
+|委任 (職場または学校のアカウント)|DeviceManagementServiceConfig.ReadWrite.All|
 |委任 (個人用 Microsoft アカウント)|サポートされていません。|
 |アプリケーション|サポートされていません。|
 
@@ -24,19 +24,19 @@ PATCH /deviceManagement/mobileThreatDefenseConnectors/{mobileThreatDefenseConnec
 ## <a name="request-headers"></a>要求ヘッダー
 |ヘッダー|値|
 |:---|:---|
-|Authorization|ベアラー &lt;トークン&gt; が必須。|
-|Accept|application/json|
+|承認|ベアラー &lt;トークン&gt; が必須。|
+|承諾|アプリケーションまたは json|
 
 ## <a name="request-body"></a>要求本文
 要求本文で、[mobileThreatDefenseConnector](../resources/intune_onboarding_mobilethreatdefenseconnector.md) オブジェクトの JSON 表記を指定します。
 
 次の表に、[mobileThreatDefenseConnector](../resources/intune_onboarding_mobilethreatdefenseconnector.md) 作成時に必要なプロパティを示します。
 
-|プロパティ|型|説明|
+|プロパティ|タイプ|説明|
 |:---|:---|:---|
-|id|String|まだ文書化されていません|
+|id|文字列|まだ文書化されていません|
 |lastHeartbeatDateTime|DateTimeOffset|データ同期パートナーから受信した最後のハートビートの日時|
-|partnerState|String|このアカウントのデータ同期パートナーの状態です。使用可能な値は、`unavailable`、 `available`、 `enabled`、`unresponsive`です。|
+|partnerState|[mobileThreatPartnerTenantState](../resources/intune_onboarding_mobilethreatpartnertenantstate.md)|このアカウントのデータの同期パートナーの状態です。 指定できる値は、`unavailable`、`available`、`enabled`、`unresponsive` です。|
 |androidEnabled|ブール型|Android において、準拠評価時にデータ同期パートナーからのデータを使用するかどうかを設定します|
 |iosEnabled|ブール型|IOS において、準拠評価時にデータ同期パートナーからのデータを使用するかどうかを取得または設定します|
 |androidDeviceBlockedOnMissingPartnerData|ブール型|Android において、デバイスを準拠させる前に Intune がデータ同期パートナーからデータを受信する必要があるかどうかを設定します|

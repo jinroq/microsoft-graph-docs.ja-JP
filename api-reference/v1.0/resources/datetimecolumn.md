@@ -3,11 +3,12 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/11/2017
 title: DateTimeColumn
-ms.openlocfilehash: ce5f06b6e0d88324813372c2431b62e6b9105bcb
-ms.sourcegitcommit: 7aea7a97e36e6d146214de3a90fdbc71628aadba
+ms.openlocfilehash: 6f2c14d5fa67fa80c869c20081250bfa55e0f5e4
+ms.sourcegitcommit: abf4b739257e3ffd9d045f783ec595d846172590
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23267830"
 ---
 # <a name="datetimecolumn-resource-type"></a>DateTimeColumn リソース型
 
@@ -27,18 +28,18 @@ ms.lasthandoff: 09/28/2017
 
 ## <a name="properties"></a>プロパティ
 
-| プロパティ名      | 種類               | 説明
+| プロパティ名      | 型               | 説明
 |:-------------------|:-------------------|:----------------------------------------------
-| **displayAs**      | string             | UX での値の表示方法です。 `default`、`friendly`、`standard` のいずれかでなければなりません。 詳細については、後述します。 指定しない場合、`default` として扱われます。
-| **format**         | string             | 値を日付のみで表示するか、日付と時刻で表示するかを示します。 `dateOnly` または `dateTime` のいずれかでなければなりません
+| **displayAs**      | 文字列             | UX での値の表示方法です。 `default`、`friendly`、`standard` のいずれかでなければなりません。 詳細については、後述します。 指定しない場合、`default` として扱われます。
+| **format**         | 文字列             | 値を日付のみで表示するか、日付と時刻で表示するかを示します。 `dateOnly` のいずれかでなければなりません。 `dateTime`
 
-## <a name="displayas-values"></a>DisplayAs 値
+## <a name="displayas-options"></a>DisplayAs オプション
 
 | 値        | 説明
 |:-------------|:--------------------------------------------------------------
 | **default**  | UX での既定のレンダリングを使用します。
-| **friendly** | フレンドリな相対表現を使用します。(例:  「今日の午後 3:00」)
-| **standard** | 標準の絶対表現を使用します。(例:  「2017 年 5 月 10 日、午後 3:20」)
+| **friendly** | フレンドリーな相対表現を使用します。(例: 「今日の午後 3:00」)
+| **standard** | 標準の絶対表現を使用します。(例: 「2017 年 5 月 10 日、午後 3:20」)
 
 
 <!-- {
@@ -46,5 +47,13 @@ ms.lasthandoff: 09/28/2017
   "description": "",
   "keywords": "",
   "section": "documentation",
+  "suppressions": [
+    "Warning: /api-reference/v1.0/resources/choicecolumn.md:
+      Found potential enums in resource example that weren't defined in a table:(checkBoxes,dropDownMenu,radioButtons) are in resource, but () are in table",
+    "Warning: /api-reference/v1.0/resources/datetimecolumn.md:
+      Found potential enums in resource example that weren't defined in a table:(default,friendly,standard) are in resource, but () are in table",
+    "Warning: /api-reference/v1.0/resources/datetimecolumn.md:
+      Found potential enums in resource example that weren't defined in a table:(dateOnly,dateTime) are in resource, but () are in table"
+  ],
   "tocPath": "Resources/DateTimeColumn"
 } -->

@@ -3,13 +3,14 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
 title: ItemReference
-ms.openlocfilehash: abd8b438e6c4e364a7a4b010d0808255425fa4df
-ms.sourcegitcommit: 7aea7a97e36e6d146214de3a90fdbc71628aadba
+ms.openlocfilehash: e83b0a18725d587094a00e9cc84a51b030d83340
+ms.sourcegitcommit: abf4b739257e3ffd9d045f783ec595d846172590
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23268467"
 ---
-# <a name="itemreference-resource-type"></a>ItemReference リソース型
+# <a name="itemreference-resource-type"></a>ItemReference リソースの種類
 
 **ItemReference** リソースは、[DriveItem](driveitem.md) を処理するために必要な情報を API を介して提供します。
 
@@ -39,17 +40,17 @@ ms.lasthandoff: 09/28/2017
 
 | プロパティ      | 型              | 説明
 |:--------------|:------------------|:-----------------------------------------
-| driveId       | String            | アイテムを含むドライブ インスタンスの一意識別子。読み取り専用です。
-| driveType     | String            | ドライブの種類を表します。 値については [drive][] リソースを参照してください。
-| id            | String            | ドライブ内のアイテムの一意識別子。読み取り専用です。
-| name          | String            | 参照中のアイテムの名前。読み取り専用です。
-| path          | String            | アイテムへの移動に使用可能なパス。読み取り専用です。
-| shareId       | String            | [共有][] API 経由でアクセスできる共有リソースの一意識別子。
+| driveId       | 文字列            | アイテムを含むドライブ インスタンスの一意識別子。読み取り専用です。
+| driveType     | 文字列            | ドライブの種類を表します。 値については [drive][] リソースを参照してください。
+| id            | 文字列            | ドライブ内のアイテムの一意識別子。読み取り専用です。
+| name          | 文字列            | 参照中のアイテムの名前。読み取り専用です。
+| path          | 文字列            | アイテムへの移動に使用可能なパス。読み取り専用です。
+| shareId       | 文字列            | [共有][] API 経由でアクセスできる共有リソースの一意識別子。
 | sharepointIds | [sharepointIds][] | SharePoint REST 互換性に役立つ識別子を返します。読み取り専用です。
 
 [drive]: ../resources/drive.md
 [sharepointIds]: ../resources/sharepointids.md
-[Shares]: ../api/shares_get.md
+[共有]: ../api/shares_get.md
 
 ## <a name="remarks"></a>備考
 
@@ -69,5 +70,9 @@ GET https://graph.microsoft.com/v1.0/drives/{driveId}/items/{id}
   "type": "#page.annotation",
   "description": "ItemReference returns a pointer to another item.",
   "section": "documentation",
+  "suppressions": [
+    "Warning: /api-reference/v1.0/resources/itemreference.md:
+      Found potential enums in resource example that weren't defined in a table:(personal,business,documentLibrary) are in resource, but () are in table"
+  ],
   "tocPath": "Resources/ItemReference"
 } -->

@@ -20,17 +20,17 @@ POST /directoryRoles
 ## <a name="request-headers"></a>要求ヘッダー
 | 名前       | 型 | 説明|
 |:---------------|:--------|:----------|
-| Authorization  | string  | ベアラー {トークン}。必須。 |
-| Content-Type  | application/json  |
+| 承認  | string  | ベアラー {トークン}。必須。 |
+| Content-Type  | string  | application/json  |
 
 ## <a name="request-body"></a>要求本文
 要求本文で、[directoryRole](../resources/directoryrole.md) オブジェクトの JSON 表記を指定します。
 
-次の表に、ディレクトリ ロールをアクティブにする際に必要になるプロパティを示します。
+次の表に、ディレクトリ ロールをアクティブ化するときに必要なプロパティを示します。
 
-|必須のパラメーター | 種類 | 説明|
+|パラメーター | 型 | 説明|
 |:---------|:---------|:---------|
-|roleTemplateId | string | このロールが基づいている [directoryRoleTemplate](../resources/directoryroletemplate.md) の ID。これは要求で指定できる唯一のプロパティです。|
+|roleTemplateId | string | 必須。 ロールの基になっている [directoryRoleTemplate](../resources/directoryroletemplate.md) の ID です。 これは、要求内で指定できる唯一のプロパティです。|
 
 ## <a name="response"></a>応答
 

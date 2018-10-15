@@ -19,15 +19,15 @@ POST /workbook/worksheets/{id|name}/protection/protect
 ## <a name="request-headers"></a>要求ヘッダー
 | 名前       | 説明|
 |:---------------|:----------|
-| Authorization  | ベアラー {トークン}。必須。 |
-| Workbook-Session-Id  | 変更を保持するかどうかを決定するブック セッション ID。省略可能。|
+| 承認  | ベアラー {トークン}。必須。 |
+| ブックセッション Id  | 変更を保持するかどうかを決定するブック セッション ID。省略可能。|
 
 ## <a name="request-body"></a>要求本文
 要求本文で、次のパラメーターを含む JSON オブジェクトを指定します。
 
 | パラメーター    | 型   |説明|
 |:---------------|:--------|:----------|
-|options|WorksheetProtectionOptions|省略可能。シートの保護のオプション。|
+|options|WorkbookWorksheetProtectionOptions|省略可能。シートの保護のオプション。|
 
 ## <a name="response"></a>応答
 
@@ -67,8 +67,7 @@ Content-length: 383
 以下は、応答の例です。 
 <!-- {
   "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.none"
+  "truncated": true
 } -->
 ```http
 HTTP/1.1 200 OK

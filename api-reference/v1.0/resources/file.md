@@ -2,19 +2,19 @@
 author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
-title: File
-ms.openlocfilehash: fd1aa4628fb4f3ba58474028c46840e7c1e2d53c
-ms.sourcegitcommit: 7aea7a97e36e6d146214de3a90fdbc71628aadba
+title: ファイル
+ms.openlocfilehash: 2201533457863c3cac6b7a9463f80e37bd5a569a
+ms.sourcegitcommit: abf4b739257e3ffd9d045f783ec595d846172590
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23267466"
 ---
 # <a name="file-resource-type"></a>File リソース型
 
 **ファイル** リソースは、ファイル関連のデータ項目を 1 つの構造にグループ化します。
 
-[**DriveItem**](driveitem.md) に null 以外の**file** ファセットがある場合は、項目はファイルを表します。
-他のプロパティに加えて、ファイルにはファイルのバイト ストリームを含む **content** のリレーションシップがあります。
+[**DriveItem**](driveitem.md) に null 以外の**ファイル** ファセットがある場合は、項目はファイルを表します。他のプロパティに加えて、ファイルにはファイルのバイト ストリームを含む**コンテンツ**関係があります。
 
 ## <a name="json-representation"></a>JSON 表記
 
@@ -35,10 +35,10 @@ ms.lasthandoff: 09/28/2017
 
 ## <a name="properties"></a>プロパティ
 
-| プロパティ | 型                    | 説明                                                                                                                                      |
+| プロパティ | タイプ                    | 説明                                                                                                                                      |
 |:---------|:------------------------|:-------------------------------------------------------------------------------------------------------------------------------------------------|
-| hashes   | [HashesType](hashes.md) | ファイルのバイナリ コンテンツのハッシュ (利用可能な場合)。読み取り専用です。                                                                                    |
-| mimeType | string                  | ファイルの MIME の種類。これはサーバーのロジックによって決定されます。またファイルのアップロード時に指定された値でない場合があります。読み取り専用です。 |
+| hashes   | [Hashes](hashes.md) | ファイルのバイナリ コンテンツのハッシュ (利用可能な場合)。読み取り専用です。                                                                                    |
+| mimeType | 文字列                  | ファイルの MIME の種類。これはサーバーのロジックによって決定されます。またファイルのアップロード時に指定された値でない場合があります。読み取り専用です。 |
 
 ## <a name="remarks"></a>注釈 
 

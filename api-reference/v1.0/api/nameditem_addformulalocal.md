@@ -20,21 +20,21 @@ POST /workbook/worksheets({id|name})/names/add
 ## <a name="request-headers"></a>要求ヘッダー
 | 名前       | 説明|
 |:---------------|:----------|
-| Authorization  | ベアラー {トークン}。必須。 |
-| Workbook-Session-Id  | 変更を保持するかどうかを決定するブック セッション ID。省略可能。|
+| 承認  | ベアラー {トークン}。必須。 |
+| ブック セッション Id  | 変更を保持するかどうかを決定するブック セッション ID。省略可能。|
 
 ## <a name="request-body"></a>要求本文
 要求本文で、次のパラメーターを含む JSON オブジェクトを指定します。
 
-| パラメーター    | Type   |説明|
+| パラメーター    | 型   |説明|
 |:---------------|:--------|:----------|
-|name|string|名前付きのアイテムの名前。|
-|formula|string|名前が参照する数式または範囲。|
-|comment|string|名前付きアイテムに関連付けられているコメント。|
+|name|文字列|名前付きのアイテムの名前。|
+|formula|文字列|名前が参照する数式または範囲。|
+|comment|文字列|名前付きアイテムに関連付けられているコメント。|
 
 ## <a name="response"></a>応答
 
-成功した場合、このメソッドは `200 OK` 応答コードと、応答本文で [NamedItem](../resources/NamedItem.md) オブジェクトを返します。
+成功した場合、このメソッドは `200 OK` 応答コードと、応答本文で、[WorkbookNamedItem](../resources/NamedItem.md) オブジェクトを返します。
 
 ## <a name="example"></a>例
 以下は、この API を呼び出す方法の例です。
@@ -63,7 +63,7 @@ Content-length: 54
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.namedItem"
+  "@odata.type": "microsoft.graph.workbookNamedItem"
 } -->
 ```http
 HTTP/1.1 200 OK

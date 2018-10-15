@@ -17,8 +17,8 @@
 |:---|:---|:---|
 |ID|文字列|エンティティのキー。|
 |lastModifiedDateTime|DateTimeOffset|オブジェクトの最終更新の DateTime。|
-|locale|文字列|対象メッセージの送信先ロケール。|
-|subject|文字列|メッセージ テンプレートの件名。|
+|ロケール|文字列|対象メッセージの送信先ロケール。|
+|件名|文字列|メッセージ テンプレートの件名。|
 |messageTemplate|文字列|メッセージ テンプレートのコンテンツ。|
 |isDefault|ブール値|言語フォールバック用の既定ロケールかどうかを示すフラグ。 このフラグは設定のみ可能です。 設定解除するには、このプロパティを別のローカライズされた通知メッセージで有効にします。|
 
@@ -28,8 +28,8 @@
 以下は、リソースの JSON 表記です。
 <!--{
   "blockType": "resource",
-  "keyProperty": "id",
   "baseType": "microsoft.graph.entity",
+  "keyProperty": "id",
   "@odata.type": "microsoft.graph.localizedNotificationMessage"
 }-->
 ``` json
@@ -43,6 +43,11 @@
   "isDefault": true
 }
 ```
+
+
+
+
+
 
 
 

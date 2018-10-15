@@ -6,18 +6,17 @@
 ## <a name="properties"></a>プロパティ
 |プロパティ|タイプ|説明|
 |:---|:---|:---|
-|movieRating|[ratingFranceMoviesType](../resources/intune_deviceconfig_ratingfrancemoviestype.md)|フランスの映画レイティング 指定できる値は、`allAllowed`、`allBlocked`、`agesAbove10`、`agesAbove12`、`agesAbove16`、`agesAbove18` です。|
-|tvRating|[ratingFranceTelevisionType](../resources/intune_deviceconfig_ratingfrancetelevisiontype.md)|フランスのテレビ番組のレイティング 指定できる値は、`allAllowed`、`allBlocked`、`agesAbove10`、`agesAbove12`、`agesAbove16`、`agesAbove18` です。|
+|movieRating|[ratingFranceMoviesType](../resources/intune_deviceconfig_ratingfrancemoviestype.md)|フランス向けに選ばれている映画のレーティング。指定できる値: `allAllowed`、`allBlocked`、`agesAbove10`、`agesAbove12`、`agesAbove16`、`agesAbove18`。|
+|tvRating|[ratingFranceTelevisionType](../resources/intune_deviceconfig_ratingfrancetelevisiontype.md)|フランス向けに選ばれているテレビのレーティング。指定できる値: `allAllowed`、`allBlocked`、`agesAbove10`、`agesAbove12`、`agesAbove16`、`agesAbove18`。|
 
 ## <a name="relationships"></a>リレーションシップ
 なし
 ## <a name="json-representation"></a>JSON 表記
 以下は、リソースの JSON 表記です。
-<!-- {
+<!--{
   "blockType": "resource",
   "@odata.type": "microsoft.graph.mediaContentRatingFrance"
-}
--->
+}-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.mediaContentRatingFrance",
@@ -25,6 +24,11 @@
   "tvRating": "String"
 }
 ```
+
+
+
+
+
 
 
 

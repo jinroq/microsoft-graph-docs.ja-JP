@@ -17,21 +17,20 @@ GET /workbook/tables/{id|name}/columns
 GET /workbook/worksheets/{id|name}/tables/{id|name}/columns
 ```
 ## <a name="optional-query-parameters"></a>オプションのクエリ パラメーター
-このメソッドは、応答をカスタマイズするための [OData クエリ パラメーター](http://developer.microsoft.com/ja-JP/graph/docs/overview/query_parameters)をサポートします。  
-  [$top](https://developer.microsoft.com/en-us/graph/docs/concepts/query_parameters#top) クエリ パラメーターと [$skip](https://developer.microsoft.com/en-us/graph/docs/concepts/query_parameters#skip-parameter) クエリ パラメーターを使用して結果をページングすると、信頼性の高い結果を得られます。 こうして、大きな結果セットに関連するパフォーマンスの問題を回避できます。
+このメソッドは、応答をカスタマイズするための [OData クエリ パラメーター](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters)をサポートします。  [$top](https://developer.microsoft.com/en-us/graph/docs/concepts/query_parameters#top) クエリ パラメーターと [$skip](https://developer.microsoft.com/en-us/graph/docs/concepts/query_parameters#skip-parameter) クエリ パラメーターを使用して結果をページングすると、信頼性の高い結果を得られます。 こうして、大きな結果セットに関連するパフォーマンスの問題を回避できます。
 
 ## <a name="request-headers"></a>要求ヘッダー
 | 名前      |説明|
 |:----------|:----------|
-| Authorization  | ベアラー {トークン}。必須。 |
-| Workbook-Session-Id  | 変更を保持するかどうかを決定するブック セッション ID。省略可能。|
+| 承認  | ベアラー {トークン}。必須。 |
+| ブック セッション Id  | 変更を保持するかどうかを決定するブック セッション ID。省略可能。|
 
 ## <a name="request-body"></a>要求本文
 このメソッドには、要求本文を指定しません。
 
 ## <a name="response"></a>応答
 
-成功した場合、このメソッドは `200 OK` 応答コードと、応答本文で [TableColumn](../resources/tablecolumn.md) オブジェクトのコレクションを返します。
+成功した場合、このメソッドは `200 OK` 応答コードと、応答本文で [WorkbookTableColumn](../resources/tablecolumn.md) オブジェクトのコレクションを返します。
 ## <a name="example"></a>例
 ##### <a name="request"></a>要求
 以下は、要求の例です。
@@ -47,7 +46,7 @@ GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/tables/{id|nam
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.tableColumn",
+  "@odata.type": "microsoft.graph.workbookTableColumn",
   "isCollection": true
 } -->
 ```http
@@ -67,10 +66,9 @@ Content-length: 126
 }
 ```
 
-> 
-  **注:** [$top](https://developer.microsoft.com/en-us/graph/docs/concepts/query_parameters#top) クエリ パラメーターと [$skip](https://developer.microsoft.com/en-us/graph/docs/concepts/query_parameters#skip-parameter) を使用して、多数の列をページングします。
+> **注:** [$top](https://developer.microsoft.com/en-us/graph/docs/concepts/query_parameters#top) クエリ パラメーターと [$skip](https://developer.microsoft.com/en-us/graph/docs/concepts/query_parameters#skip-parameter) を使用して、多数の列をページングします。
 
-例:  
+例: 
 
 `https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/tables/{id|name}/columns?$top=5`
 `https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/tables/{id|name}/columns?$top=5&$skip=5`

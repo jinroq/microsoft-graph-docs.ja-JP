@@ -35,7 +35,7 @@ PATCH /deviceManagement/conditionalAccessSettings
 |プロパティ|タイプ|説明|
 |:---|:---|:---|
 |ID|文字列|まだ文書化されていません|
-|enabled|ブール値|対象組織で、オンプレミスの条件付きアクセスが有効かどうかを示します。|
+|有効|ブール値|対象組織で、オンプレミスの条件付きアクセスが有効かどうかを示します。|
 |includedGroups|Guid コレクション|オンプレミスの条件付きアクセスで対象となるユーザー グループ。 これらのグループ内のユーザーすべては、管理対象のモバイル デバイスを持っており、メール アクセスに準拠している必要があります。|
 |excludedGroups|Guid コレクション|オンプレミスの条件付きアクセスで除外されるユーザー グループ。 これらのグループ内のすべてのユーザーは、条件付きアクセス ポリシーから除外されます。|
 |overrideDefaultRule|ブール値|デバイスでアクセスが付与されていることを確認できるようにするとき、既定のアクセス ルールを上書きします。|
@@ -56,10 +56,10 @@ Content-length: 195
 {
   "enabled": true,
   "includedGroups": [
-    "79199ed9-e50b-4257-8de4-70b9c8685061"
+    "<Unknown Primitive Type Edm.Guid>"
   ],
   "excludedGroups": [
-    "79199ed9-e50b-4257-8de4-70b9c8685061"
+    "<Unknown Primitive Type Edm.Guid>"
   ],
   "overrideDefaultRule": true
 }
@@ -77,14 +77,19 @@ Content-Length: 318
   "id": "a0efde21-de21-a0ef-21de-efa021deefa0",
   "enabled": true,
   "includedGroups": [
-    "79199ed9-e50b-4257-8de4-70b9c8685061"
+    "String"
   ],
   "excludedGroups": [
-    "79199ed9-e50b-4257-8de4-70b9c8685061"
+    "String"
   ],
   "overrideDefaultRule": true
 }
 ```
+
+
+
+
+
 
 
 

@@ -3,11 +3,12 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
 title: SharedDriveItem
-ms.openlocfilehash: 3b4497c1a15704388dbb4bb4ba181d3985d65a69
-ms.sourcegitcommit: 7aea7a97e36e6d146214de3a90fdbc71628aadba
+ms.openlocfilehash: abcf686be46e15a523a1a88170981cb318e71b00
+ms.sourcegitcommit: abf4b739257e3ffd9d045f783ec595d846172590
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23268201"
 ---
 # <a name="shareddriveitem-resource-type"></a>SharedDriveItem リソース型
 
@@ -21,6 +22,7 @@ ms.lasthandoff: 09/28/2017
 
 <!-- {
   "blockType": "resource",
+  "baseType": "microsoft.graph.baseItem",
   "optionalProperties": [  ],
   "@odata.type": "microsoft.graph.sharedDriveItem"
 }-->
@@ -31,7 +33,7 @@ ms.lasthandoff: 09/28/2017
   "name": "string",
   "owner": { "@odata.type": "microsoft.graph.identitySet" },
 
-  "driveItem": [ { "@odata.type": "microsoft.graph.driveItem" }],
+  "driveItem": { "@odata.type": "microsoft.graph.driveItem" },
   "items": [ { "@odata.type": "microsoft.graph.driveItem" }],
   "list": { "@odata.type": "microsoft.graph.list" },
   "listItem": { "@odata.type": "microsoft.graph.listItem" },
@@ -42,10 +44,10 @@ ms.lasthandoff: 09/28/2017
 
 ## <a name="properties"></a>プロパティ
 
-| プロパティ | 型                          | 説明                                                      |
+| プロパティ | タイプ                          | 説明                                                      |
 | :------- | :---------------------------- | :--------------------------------------------------------------- |
-| id       | String                        | アクセスされている共有の一意識別子。              |
-| name     | String                        | 共有項目の表示名。                             |
+| id       | 文字列                        | アクセスされている共有の一意識別子。              |
+| name     | 文字列                        | 共有項目の表示名。                             |
 | owner    | [IdentitySet](identityset.md) | 参照されている共有アイテムの所有者に関する情報。 |
 
 ## <a name="relationships"></a>リレーションシップ
@@ -57,13 +59,12 @@ ms.lasthandoff: 09/28/2017
 | **listItem**      | [**listItem**][listItem]    | 基になる **listItem** にアクセスするために使用
 | **site**          | [**site**][site]        | 基になる **site** にアクセスするために使用
 
-
 または、個人用の OneDrive アカウントから共有される **driveItem** には、次のリレーションシップも使用できます。
 
 | リレーションシップ名 | 種類                         | 説明
 | ------------------|:-----------------------------|:-----------------------------------
 | **items**         | [**driveItem**][driveItem] コレクション | 共有ルートに含まれているすべての driveItem。 このコレクションを列挙することはできません。
-| **driveItem**     | [**driveItem**][driveItem]            | 基になる **driveItem** にアクセスするために使用
+| **root**          | [**driveItem**][driveItem]   | 基になる **driveItem** にアクセスするために使用 非推奨 -- 代わりに `driveItem` を使用してください。
 
 [driveItem]: driveItem.md
 [list]: list.md
@@ -72,7 +73,7 @@ ms.lasthandoff: 09/28/2017
 
 ## <a name="methods"></a>メソッド
 
-| Method                                  | REST パス                |
+| メソッド                                  | REST パス                |
 | :-------------------------------------- | :----------------------- |
 | [共有アイテムを取得する](../api/shares_get.md) | `GET /shares/{share-id}` |
 

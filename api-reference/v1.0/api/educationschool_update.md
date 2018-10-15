@@ -19,13 +19,13 @@ PATCH /education/schools/{id}
 ## <a name="request-headers"></a>要求ヘッダー
 | ヘッダー       | 値 |
 |:---------------|:--------|
-| Authorization  | ベアラー {トークン}。必須。  |
-| Content-Type  | application/json  |
+| 承認  | ベアラー {トークン}。必須。  |
+| Content-Type  | アプリケーション /json  |
 
 ## <a name="request-body"></a>要求本文
 要求本文で、更新する関連フィールドの値を指定します。 要求本文に含まれない既存のプロパティは、以前の値のままになるか、他のプロパティ値の変更に基づいて再計算されます。 最適なパフォーマンスを得るために、変更されていない既存の値を含めないでください。
 
-| プロパティ     | 型   |説明|
+| プロパティ     | タイプ   |説明|
 |:---------------|:--------|:----------|
 |displayName| String| 学校の表示名| 
 |description| String | 学校の説明| 
@@ -51,7 +51,7 @@ PATCH /education/schools/{id}
   "name": "update_educationschool"
 }-->
 ```http
-PATCH https://graph.microsoft.com/v1.0/education/schools/10002
+PATCH https://graph.microsoft.com/v1.0/education/schools/{school-id}
 Content-type: application/json
 Content-length: 292
 

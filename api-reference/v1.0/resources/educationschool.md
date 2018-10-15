@@ -18,25 +18,24 @@
 |[Delete](../api/educationschool_delete.md) | なし |**educationSchool** オブジェクトを削除します。 |
 
 ## <a name="properties"></a>プロパティ
-| プロパティ     | 型   |説明|
+| プロパティ     | タイプ   |説明|
 |:---------------|:--------|:----------|
-|id|String|この学校の GUID。|
-|displayName| String| 学校の表示名。| 
-|description| String | 学校の説明。| 
-|status| string| 読み取り専用。 使用可能な値: `inactive`、`active`、`expired`、`deleteable`。|
-|externalSource| string| 読み取り専用。  使用可能な値: `sis`、`manual`、`unknownFutureValue`。|
-|principalEmail| String| プリンシパルの電子メール アドレス。|
-|principalName| String | プリンシパルの名前。|
-|externalPrincipalId| String | 同期システム内のプリンシパルの ID。 |
-|highestGrade|String| 授業を受けている最高学年。 |
-|lowestGrade|String| 授業を受けている最低学年。 |
-|schoolNumber|String| 学校番号。|
-|externalId|String| 同期システム内の学校の ID。 |
-|phone|String| 学校の電話番号。 |
-|fax|String| 学校の FAX 番号。 |
+|id|文字列|この学校の GUID。|
+|displayName| 文字列| 学校の表示名。| 
+|description| 文字列 | 学校の説明。| 
+|status| 文字列| 読み取り専用。 指定できる値は`inactive` 、`active`、`expired` 、`deleteable`、 です。|
+|externalSource| educationExternalSource| 読み取り専用。  指定できる値は、`sis`、`manual`、`unknownFutureValue` です。|
+|principalEmail| 文字列| プリンシパルの電子メール アドレス。|
+|principalName| 文字列 | プリンシパルの名前。|
+|externalPrincipalId| 文字列 | 同期システム内のプリンシパルの ID。 |
+|highestGrade|文字列| 授業を受けている最高学年。 |
+|lowestGrade|文字列| 授業を受けている最低学年。 |
+|schoolNumber|文字列| 学校番号。|
+|externalId|文字列| 同期システム内の学校の ID。 |
+|phone|文字列| 学校の電話番号。 |
+|fax|文字列| 学校の FAX 番号。 |
 |address|[physicalAddress](physicaladdress.md)| 学校の住所。|
 |createdBy|[identitySet](identityset.md)|学校を作成したエンティティ。|
-
 
 ## <a name="relationships"></a>リレーションシップ
 | リレーションシップ | 型   |説明|
@@ -48,11 +47,10 @@
 
 リソースの JSON 表記を次に示します。
 
-<!-- {
+<!--{
   "blockType": "resource",
-  "optionalProperties": [
-
-  ],
+  "optionalProperties": [],
+  "baseType": "microsoft.graph.educationOrganization",
   "@odata.type": "microsoft.graph.educationSchool"
 }-->
 

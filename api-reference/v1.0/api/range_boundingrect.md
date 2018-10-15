@@ -13,23 +13,23 @@
 ## <a name="http-request"></a>HTTP 要求
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /workbook/names(<name>)/range/BoundingRect
-GET /workbook/worksheets/{id|name}/range(address='<address>')/BoundingRect
-GET /workbook/tables/{id|name}/columns/{id|name}/range/BoundingRect
+GET /workbook/names/{name}/range/boundingRect
+GET /workbook/worksheets/{id|name}/range(address='<address>')/boundingRect
+GET /workbook/tables/{id|name}/columns/{id|name}/range/boundingRect
 
 ```
 ## <a name="request-headers"></a>要求ヘッダー
 | 名前       | 説明|
 |:---------------|:----------|
-| Authorization  | ベアラー {トークン}。必須。 |
-| Workbook-Session-Id  | 変更を保持するかどうかを決定するブック セッション ID。省略可能。|
+| 承認  | ベアラー {トークン}。必須。 |
+| ブックセッション Id  | 変更を保持するかどうかを決定するブック セッション ID。省略可能。|
 
 ## <a name="request-body"></a>要求本文
 要求本文で、次のパラメーターを含む JSON オブジェクトを指定します。
 
-| パラメーター    | Type   |説明|
+| パラメーター    | 型   |説明|
 |:---------------|:--------|:----------|
-|anotherRange|string|Range オブジェクト、アドレスまたは範囲名。|
+|anotherRange|文字列|Range オブジェクト、アドレスまたは範囲名。|
 
 ## <a name="response"></a>応答
 
@@ -41,10 +41,11 @@ GET /workbook/tables/{id|name}/columns/{id|name}/range/BoundingRect
 以下は、要求の例です。
 <!-- {
   "blockType": "request",
+  "isComposable": true,
   "name": "range_boundingrect"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/names(<name>)/range/BoundingRect
+GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/names/{name}/range/boundingRect
 Content-type: application/json
 Content-length: 42
 
@@ -58,7 +59,7 @@ Content-length: 42
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.range"
+  "@odata.type": "microsoft.graph.workbookRange"
 } -->
 ```http
 HTTP/1.1 200 OK

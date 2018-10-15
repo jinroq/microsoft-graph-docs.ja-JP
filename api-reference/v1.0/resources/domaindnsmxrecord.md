@@ -1,15 +1,12 @@
-<a id="domaindnsmxrecord-resource-type" class="xliff"></a>
-# domainDnsMxRecord リソースの種類
+# <a name="domaindnsmxrecord-resource-type"></a>domainDnsMxRecord リソースの種類
 
 テナント内の特定のドメインの DNS ゾーン ファイルに追加された MX レコードを表します。[DomainDnsRecord](domaindnsrecord.md) エンティティから継承されます。
 
-<a id="methods" class="xliff"></a>
-## メソッド
+## <a name="methods"></a>メソッド
 このリソースへの直接クエリはサポートされていません。ドメイン サービス レコードのクエリを実行する方法の詳細については、[ドメイン](domain.md)のトピックを参照してください。
 
-<a id="properties" class="xliff"></a>
-## プロパティ
-| プロパティ     | 型   |説明|
+## <a name="properties"></a>プロパティ
+| プロパティ     | タイプ   |説明|
 |:---------------|:--------|:----------|
 |id|String| このエンティティに割り当てられた一意の識別子。null 許容ではありません。読み取り専用です。|
 |isOptional|Boolean| False の場合、MX レコードは Microsoft オンライン サービスでドメインを正しく操作するために、DNS ホストで顧客によって構成されている必要があります。 |
@@ -20,16 +17,15 @@
 |supportedService|String| Microsoft オンライン サービスまたはこの MX レコードに依存している機能。</br></br>次のいずれかの値を指定できます。**null**、*Email*、*Sharepoint*、*EmailInternalRelayOnly*、*OfficeCommunicationsOnline*、*SharePointDefaultDomain*、*FullRedelegation*、*SharePointPublic*、*OrgIdAuthentication*、*Yammer*、*Intune* |
 |ttl|Int32| DNS ホストで MX レコードの *Time To Live (ttl)* プロパティを設定するときに使用する値。null 許容ではありません |
 
-<a id="relationships" class="xliff"></a>
-## リレーションシップ
+## <a name="relationships"></a>リレーションシップ
 なし
 
-<a id="json-representation" class="xliff"></a>
-## JSON 表記
+## <a name="json-representation"></a>JSON 表記
 以下は、リソースの JSON 表記です。
 
 <!-- {
   "blockType": "resource",
+  "baseType": "microsoft.graph.domainDnsRecord",
   "optionalProperties": [
 
   ],
@@ -38,7 +34,6 @@
 
 ```json
 {
-  "canonicalName": "String",
   "id": "String (identifier)",
   "isOptional": true,
   "label": "String",

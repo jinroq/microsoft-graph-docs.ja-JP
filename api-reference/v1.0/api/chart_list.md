@@ -1,4 +1,4 @@
-# <a name="list-chartcollection"></a>List ChartCollection
+# <a name="list-chartcollection"></a>ChartCollection のリスト
 
 グラフ オブジェクトの一覧を取得します。
 ## <a name="permissions"></a>アクセス許可
@@ -21,15 +21,15 @@ GET /workbook/worksheets/{id|name}/charts
 ## <a name="request-headers"></a>要求ヘッダー
 | 名前      |説明|
 |:----------|:----------|
-| Authorization  | ベアラー {トークン}。必須。 |
-| Workbook-Session-Id  | 変更を保持するかどうかを決定するブック セッション ID。省略可能。|
+| 承認  | ベアラー {トークン}。必須。 |
+| ブックセッション Id  | 変更を保持するかどうかを決定するブック セッション ID。省略可能。|
 
 ## <a name="request-body"></a>要求本文
 このメソッドには、要求本文を指定しません。
 
 ## <a name="response"></a>応答
 
-成功した場合、このメソッドは `200 OK` 応答コードと、応答本文で [Chart](../resources/chart.md) オブジェクトのコレクションを返します。
+成功した場合、このメソッドは `200 OK` 応答コードと、応答本文で [WorkbookChart](../resources/chart.md) オブジェクトのコレクションを返します。
 ## <a name="example"></a>例
 ##### <a name="request"></a>要求
 以下は、要求の例です。
@@ -45,7 +45,7 @@ GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/{id
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.chart",
+  "@odata.type": "microsoft.graph.workbookChart",
   "isCollection": true
 } -->
 ```http

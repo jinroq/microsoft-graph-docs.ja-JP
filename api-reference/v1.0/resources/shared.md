@@ -3,16 +3,16 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
 title: Shared
-ms.openlocfilehash: 1d828310a226edd0443ff3b5f60156df1e7c98cb
-ms.sourcegitcommit: 7aea7a97e36e6d146214de3a90fdbc71628aadba
+ms.openlocfilehash: 0a94a1d5ddf671151cf786d9ff93ae4f9e012a7b
+ms.sourcegitcommit: abf4b739257e3ffd9d045f783ec595d846172590
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23267900"
 ---
 # <a name="shared-resource-type"></a>Shared リソース型
 
-**Shared** リソースは、DriveItem が他のユーザーと共有されていることを示します。
-リソースは、項目がどのように共有されているかに関する情報を含んでいます。
+**Shared** リソースは、DriveItem が他のユーザーと共有されていることを示します。リソースは、項目がどのように共有されているかに関する情報を含んでいます。
 
 [**Driveitem**](driveitem.md) が null でない **shared** ファセットを持つ場合、項目は共有されています。
 
@@ -37,12 +37,12 @@ ms.lasthandoff: 09/28/2017
 
 | プロパティ       | 型                          | 説明
 | :------------- |:------------------------------|:----------------------------
-| owner          | [IdentitySet](identityset.md) | 共有項目の所有者の ID。読み取り専用。
-| scope          | 文字列                        | `anonymous`、`organization`、や `users` など、項目がどのように共有されているかのスコープを示します。  読み取り専用です。
+| 所有者          | [IdentitySet](identityset.md) | 共有項目の所有者の ID。読み取り専用。
+| スコープ          | 文字列                        | `anonymous`、`organization` や `users` など、項目がどのように共有されているかのスコープを示します。 読み取り専用です。
 | sharedBy       | [identitySet](identityset.md) | 項目を共有するユーザーの ID。読み取り専用です。
 | sharedDateTime | DateTimeOffset                | 項目が共有された UTC 日時。読み取り専用です。
 
-## <a name="scope-values"></a>スコープの値
+## <a name="scope-options"></a>スコープ オプション
 
 | 値          | 説明                                                                           |
 |:---------------|:--------------------------------------------------------------------------------------|
@@ -59,5 +59,9 @@ ms.lasthandoff: 09/28/2017
   "description": "The shared facet provides info about shared items.",
   "keywords": "shared,share,item,facet,onedrive",
   "section": "documentation",
+  "suppressions": [
+    "Warning: /api-reference/v1.0/resources/shared.md:
+      Found potential enums in resource example that weren't defined in a table:(anonymous,organization,users) are in resource, but () are in table"
+  ],
   "tocPath": "Facets/Shared"
 } -->

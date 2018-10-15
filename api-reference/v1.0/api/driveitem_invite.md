@@ -2,16 +2,18 @@
 author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
-title: "アイテムにアクセスするために招待状を送信する"
-ms.openlocfilehash: 5be2060c190434c4b9d587d20fe68d69786b3aa5
-ms.sourcegitcommit: 7aea7a97e36e6d146214de3a90fdbc71628aadba
+title: アイテムにアクセスするために招待状を送信する
+ms.openlocfilehash: c68289049503e70e04b2e403ca09cfc1f67e4096
+ms.sourcegitcommit: abf4b739257e3ffd9d045f783ec595d846172590
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23268733"
 ---
 # <a name="send-a-sharing-invitation"></a>共有の招待状を送信する
 
-**DriveItem** の共有の招待状を送信します。共有の招待状は受信者にアクセス許可を提供します。また、任意で受信者に、アイテムが共有されたことを通知する電子メールを送信します。
+**DriveItem**の共有の招待状を送信します。
+共有の招待では、受信者へのアクセス許可を提供し、オプションで [共有リンク][]を記載した電子メールが招待状の受信者に送信されます。
 
 ## <a name="permissions"></a>アクセス許可
 
@@ -39,7 +41,7 @@ POST /users/{userId}/drive/items/{itemId}/invite
 
 要求本文で、次のパラメーターを含む JSON オブジェクトを指定します。
 
-<!-- { "blockType": "resource", "@odata.type": "microsoft.graph.inviteParameters", "scopes": "files.readwrite" } -->
+<!-- { "blockType": "ignored", "scopes": "files.readwrite" } -->
 
 ```json
 {
@@ -54,33 +56,33 @@ POST /users/{userId}/drive/items/{itemId}/invite
 }
 ```
 
-| パラメーター        | 型                                            | 説明                                                                                                |
-|:-----------------|:------------------------------------------------|:-----------------------------------------------------------------------------------------------------------|
-| Recipients       | Collection([DriveRecipient](../resources/driverecipient.md)) | アクセスおよび共有の招待状を受信する、受信者のコレクション。                                            |
-| message          | String                                          | 共有の招待状に含まれるプレーンテキスト形式のメッセージ。最大の長さは 2000 文字です。 |
-| requireSignIn    | Boolean                                         | 共有アイテムを表示するために、招待状の受信者がサインインする必要のある場所を指定します。            |
-| sendInvitation   | Boolean                                         | 電子メールまたは投稿が生成されるのか (false)、アクセス許可のみが作成されるのか (true) を指定します。            |
-| roles            | Collection(String)                              | 共有の招待状の受信者に付与されるロールを指定します。                         |
+| パラメーター        | 型                           | 説明
+|:-----------------|:-------------------------------|:-------------------------
+| Recipients       | コレクション ([DriveRecipient][]) | アクセスおよび共有の招待状を受信する、受信者のコレクション。
+| message          | 文字列                         | 共有の招待状に含まれるプレーンテキスト形式のメッセージ。最大の長さは 2000 文字です。
+| requireSignIn    | ブール値                        | 共有アイテムを表示するために、招待状の受信者がサインインする必要のあるかどうかを指定します。
+| sendInvitation   | ブール値                        | True の場合、 [共有リンク][] が、受信者に送信されます。 それ以外の場合、通知を送信せずに直接アクセス許可が与えられます。
+| roles            | コレクション (文字列)             | 共有の招待状の受信者に付与されるロールを指定します。
 
 ## <a name="example"></a>例
 
-この例では、"ryan@contoso.org" というメール アドレスを持つユーザーに共有の招待状を、共同作業中のファイルについてのメッセージと共に送信します。
+この例では、"ryan@contoso.com" というメール アドレスを持つユーザーに共有の招待状を、共同作業中のファイルについてのメッセージと共に送信します。
 この招待により、Ryan にはファイルへの読み取り/書き込みアクセス権が付与されます。
 
 ### <a name="http-request"></a>HTTP 要求
 
 成功した場合、このメソッドは `200 OK` 応答コードと、応答本文で[アクセス許可](../resources/permission.md)コレクション オブジェクトを返します。
 
-<!-- { "blockType": "request", "name": "send-sharing-invite", "@odata.type": "microsoft.graph.inviteParameters", "scopes": "files.readwrite", "target": "action" } -->
+<!-- { "blockType": "request", "name": "send-sharing-invite", "scopes": "files.readwrite", "target": "action" } -->
 
-```http
+```json
 POST /me/drive/items/{item-id}/invite
 Content-type: application/json
 
 {
   "recipients": [
     {
-      "email": "ryan@contoso.org"
+      "email": "ryan@contoso.com"
     }
   ],
   "message": "Here's the file that we're collaborating on.",
@@ -96,7 +98,7 @@ Content-type: application/json
 
 <!-- { "blockType": "response", "@odata.type": "Collection(microsoft.graph.permission)", "truncated": true } -->
 
-```http
+```json
 HTTP/1.1 200 OK
 Content-type: application/json
 
@@ -122,7 +124,7 @@ Content-type: application/json
 
 ## <a name="remarks"></a>備考
 
-* `personal` (OneDrive 個人用) の **driveType** を持つ[ドライブ](../resources/drive.md)は、ルートの DriveItem でアクセス許可を作成したり、変更したりすることはできません。
+* (OneDrive 個人用) の **driveType** を持つ[ドライブ](../resources/drive.md)は、ルートの DriveItem でアクセス許可を作成したり、変更したりすることはできません。`personal`
 * 使用可能なロールの一覧は、「[ロール列挙](../resources/permission.md#roles-enumeration)」を参照してください。
 
 ## <a name="error-responses"></a>エラー応答
@@ -130,7 +132,9 @@ Content-type: application/json
 エラーがどのような形で返されるかについては、「[エラー応答][error-response]」を参照してください。
 
 
+[driveRecipient]: ../resources/driverecipient.md
 [error-response]: ../../../concepts/errors.md
+[共有リンク]: ../resources/permission.md#sharing-links
 
 <!-- {
   "type": "#page.annotation",

@@ -24,8 +24,8 @@ PATCH /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/assi
 ## <a name="request-headers"></a>要求ヘッダー
 |ヘッダー|値|
 |:---|:---|
-|Authorization|ベアラー &lt;トークン&gt; が必須。|
-|Accept|application/json|
+|承認|ベアラー &lt;トークン&gt; が必須。|
+|承諾|application/json|
 
 ## <a name="request-body"></a>要求本文
 要求本文で、[deviceCompliancePolicyAssignment](../resources/intune_deviceconfig_devicecompliancepolicyassignment.md) オブジェクトの JSON 表記を指定します。
@@ -34,8 +34,8 @@ PATCH /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/assi
 
 |プロパティ|タイプ|説明|
 |:---|:---|:---|
-|id|文字列|エンティティのキー。|
-|target|[deviceAndAppManagementAssignmentTarget](../resources/intune_shared_deviceandappmanagementassignmenttarget.md)|コンプライアンス ポリシーの割り当て先です。|
+|ID|文字列|エンティティのキー。|
+|ターゲット|[deviceAndAppManagementAssignmentTarget](../resources/intune_shared_deviceandappmanagementassignmenttarget.md)|コンプライアンス ポリシーの割り当て先です。|
 
 
 
@@ -72,6 +72,11 @@ Content-Length: 221
   }
 }
 ```
+
+
+
+
+
 
 
 

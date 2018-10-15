@@ -12,22 +12,22 @@
 |[contactFolder を取得する](../api/contactfolder_get.md) | [contactFolder](contactfolder.md) |連絡先フォルダー ID を使用して連絡先フォルダーを取得します。|
 |[更新する](../api/contactfolder_update.md) | [contactFolder](contactfolder.md) |contactFolder オブジェクトを更新します。 |
 |[削除](../api/contactfolder_delete.md) | なし |contactFolder オブジェクトを削除します。 |
-|[childFolders を一覧表示する](../api/contactfolder_list_childfolders.md) |[ContactFolder](contactfolder.md) collection| 指定した連絡先フォルダーの下の子フォルダーのコレクションを取得します。|
+|[childFolders を一覧表示する](../api/contactfolder_list_childfolders.md) |[ContactFolder](contactfolder.md) コレクション| 指定した連絡先フォルダーの下の子フォルダーのコレクションを取得します。|
 |[子 contactFolder を作成する](../api/contactfolder_post_childfolders.md) |[ContactFolder](contactfolder.md)| 指定したフォルダーの子として新しい contactFolder を作成します。|
 |[delta](../api/contact_delta.md)|[contact](contact.md)コレクション| ユーザーのメールボックスで追加または削除された一連の連絡先フォルダーを取得します。|
-|[フォルダー内の連絡先を一覧表示する](../api/contactfolder_list_contacts.md) |[Contact](contact.md) collection| サインイン中のユーザーの既定の連絡先フォルダーから連絡先のコレクションを取得する (`.../me/contacts`) か、指定した連絡先フォルダーから取得します。|
-|[フォルダー内に連絡先を作成する](../api/contactfolder_post_contacts.md) |[Contact](contact.md)| 連絡先をルート連絡先フォルダーまたは別の連絡先フォルダーの `contacts` エンドポイントに追加します。|
+|[フォルダー内の連絡先を一覧表示する](../api/contactfolder_list_contacts.md) |[Contact](contact.md) コレクション| サインイン中のユーザーの既定の連絡先フォルダーから連絡先のコレクションを取得する (`.../me/contacts`) か、指定した連絡先フォルダーから取得します。|
+|[フォルダー内に連絡先を作成する](../api/contactfolder_post_contacts.md) |[連絡先](contact.md)| 連絡先をルート連絡先フォルダーまたは別の連絡先フォルダーの `contacts` エンドポイントに追加します。|
 |[単一値の拡張プロパティを作成する](../api/singlevaluelegacyextendedproperty_post_singlevalueextendedproperties.md) |[contactFolder](contactFolder.md)  |新規または既存の contactFolder に、1 つ以上の単一値の拡張プロパティを作成します。   |
-|[単一値の拡張プロパティを持つ contactFolder を取得する](../api/singlevaluelegacyextendedproperty_get.md)  | [contactFolder](contactFolder.md) | `$expand` または `$filter` を使用して、単一値の拡張プロパティを含む contactFolder を取得します。 |
+|[単一値の拡張プロパティを持つ contactFolder を取得する](../api/singlevaluelegacyextendedproperty_get.md)  | [contactFolder](contactFolder.md) | または `$filter` を使用して、単一値の拡張プロパティを含む contactFolder を取得します。`$expand` |
 |[複数値の拡張プロパティを作成する](../api/multivaluelegacyextendedproperty_post_multivalueextendedproperties.md) | [contactFolder](contactFolder.md) | 新規または既存の contactFolder に、1 つ以上の複数値の拡張プロパティを作成します。  |
-|[複数値の拡張プロパティを持つ contactFolder を取得する](../api/multivaluelegacyextendedproperty_get.md)  | [contactFolder](contactFolder.md) | `$expand` を使用して、複数値の拡張プロパティを含む contactFolder を取得します。 |
+|[複数値の拡張プロパティを持つ contactFolder を取得する](../api/multivaluelegacyextendedproperty_get.md)  | [contactFolder](contactFolder.md) | を使用して、複数値の拡張プロパティを含む contactFolder を取得します。`$expand` |
 
 ## <a name="properties"></a>プロパティ
-| プロパティ     | 型   |説明|
+| プロパティ     | タイプ   |説明|
 |:---------------|:--------|:----------|
-|displayName|String|フォルダーの表示名。|
-|id|String|連絡先フォルダーの一意識別子。読み取り専用。|
-|parentFolderId|String|フォルダーの親フォルダーの ID。|
+|displayName|文字列|フォルダーの表示名。|
+|id|文字列|連絡先フォルダーの一意識別子。読み取り専用。|
+|parentFolderId|文字列|フォルダーの親フォルダーの ID。|
 
 ## <a name="relationships"></a>リレーションシップ
 | リレーションシップ | 型   |説明|
@@ -41,7 +41,7 @@
 
 以下は、リソースの JSON 表記です
 
-<!-- {
+<!--{
   "blockType": "resource",
   "optionalProperties": [
     "childFolders",
@@ -50,7 +50,26 @@
     "singleValueExtendedProperties"
   ],
   "keyProperty": "id",
-  "@odata.type": "microsoft.graph.contactFolder"
+  "baseType": "microsoft.graph.entity",
+  "@odata.type": "microsoft.graph.contactFolder",
+  "@odata.annotations": [
+    {
+      "property": "childFolders",
+      "capabilities": {
+        "navigability": "single",
+        "changeTracking": false,
+        "searchable": false
+      }
+    },
+    {
+      "property": "contacts",
+      "capabilities": {
+        "changeTracking": true,
+        "navigability": "single",
+        "searchable": false
+      }
+    }
+  ]
 }-->
 
 ```json

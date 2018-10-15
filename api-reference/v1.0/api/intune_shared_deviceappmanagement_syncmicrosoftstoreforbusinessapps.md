@@ -8,7 +8,8 @@
 
 |アクセス許可の種類|アクセス許可 (特権の大きいものから小さいものへ)|
 |:---|:---|
-|委任 (職場または学校のアカウント)| (契約時)DeviceManagementApps.ReadWrite.All|
+|委任 (職場または学校のアカウント)| 
+| &nbsp; &nbsp; _新人研修_ | DeviceManagementApps.ReadWrite.All|
 |委任 (個人用 Microsoft アカウント)|サポートされていません。|
 |アプリケーション|サポートされていません。|
 
@@ -25,7 +26,7 @@ POST /deviceAppManagement/syncMicrosoftStoreForBusinessApps
 |ヘッダー|値|
 |:---|:---|
 |承認|ベアラー &lt;トークン&gt; が必須。|
-|承諾|application/json|
+|承諾|アプリケーションまたは json|
 
 ## <a name="request-body"></a>要求本文
 このメソッドには、要求本文を指定しません。
@@ -33,15 +34,16 @@ POST /deviceAppManagement/syncMicrosoftStoreForBusinessApps
 ## <a name="response"></a>応答
 成功した場合、このアクションは `204 No Content` 応答コードを返します。
 
-## <a name="example"></a>例
-### <a name="request"></a>要求
-以下は、要求の例です。
+## <a name="example-request"></a>要求の例
+
 ``` http
 POST https://graph.microsoft.com/v1.0/deviceAppManagement/syncMicrosoftStoreForBusinessApps
 ```
 
 ### <a name="response"></a>応答
-以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。
+
+注: 簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。 実際の呼び出しではすべてのプロパティが返されます。
+
 ``` http
 HTTP/1.1 204 No Content
 ```

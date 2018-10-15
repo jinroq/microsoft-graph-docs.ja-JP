@@ -9,19 +9,19 @@
 | イベントの作成方法  | プロパティ   | 予期される値 |
 |:----------|:-------|:--------------------------------|
 | [イベント作成](../api/user_post_events.md) REST API | **locationType** | `default` |
-| Outlook のユーザー インターフェイス | **locationType** | 以下のいずれか: <ul><li>プレーン テキストとして入力された場所の場合は `default`。</li><li>Outlook の会議室リストで提供された会議室の場合は `conferenceRoom`。</li><li>Bing Autosuggest または Bing ローカル検索による場所の場合は、`homeAddress`、`businessAddress`、`geoCoordinates`、`streetAddress`、`hotel`、`restaurant`、`localBusiness`、`postalAddress` のいずれか。</li></ul> |
+| Outlook のユーザー インターフェイス | **locationType** | 以下のいずれか: <ul><li>`default` プレーン テキストとして入力された場所の場合は `default`。</li><li>`conferenceRoom` Outlook の会議室リストで提供された会議室の場合は `conferenceRoom`。</li><li>Bing Autosuggest または Bing ローカル検索による場所の場合は、`homeAddress`、`businessAddress`、`geoCoordinates`、`streetAddress`、`hotel`、`restaurant`、`localBusiness`、`postalAddress` のいずれか。</li></ul> |
 
 ## <a name="properties"></a>プロパティ
-| プロパティ  | 型   | 説明                                                     |
+| プロパティ  | タイプ   | 説明                                                     |
 |:----------|:-------|:----------------------------------------------------------------|
 | address | [physicalAddress](physicaladdress.md) |場所の番地。 |
 | coordinates | [outlookGeoCoordinates](outlookgeocoordinates.md) | 場所の地理的座標と標高。 |
-| displayName  | String | 場所に関連付けられた名前。                       |
-| locationEmailAddress | String | 場所のメール アドレス (省略可能)。              |
-| locationUri | String | 場所を表す URI (省略可能)。 |
-| locationType | String | 場所の種類。 可能な値は、`default`、`conferenceRoom`、`homeAddress`、`businessAddress`、`geoCoordinates`、`streetAddress`、`hotel`、`restaurant`、`localBusiness`、`postalAddress` です。 読み取り専用。|
-| uniqueId | String | 内部使用のみ。|
-| uniqueIdType | String | 内部使用のみ。 |
+| displayName  | 文字列 | 場所に関連付けられた名前。                       |
+| locationEmailAddress | 文字列 | 場所のメール アドレス (省略可能)。              |
+| locationUri | 文字列 | 場所を表す URI (省略可能)。 |
+| locationType | locationType | 場所の種類。 指定できる値は、`default`、`conferenceRoom`、`homeAddress`、`businessAddress` です。`geoCoordinates` `streetAddress` `hotel` `restaurant` `localBusiness` `postalAddress` 読み取り専用。|
+| uniqueId | 文字列 | 内部使用のみ。|
+| uniqueIdType | locationUniqueIdType | 内部使用のみ。 |
 
 ## <a name="json-representation"></a>JSON 表記
 

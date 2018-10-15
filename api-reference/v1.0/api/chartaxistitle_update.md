@@ -1,4 +1,4 @@
-# <a name="update-chartaxistitle"></a>Update chartaxistitle
+# <a name="update-chartaxistitle"></a>chartaxistitle を更新する
 
 chartaxistitle オブジェクトのプロパティを更新します。
 ## <a name="permissions"></a>アクセス許可
@@ -13,27 +13,27 @@ chartaxistitle オブジェクトのプロパティを更新します。
 ## <a name="http-request"></a>HTTP 要求
 <!-- { "blockType": "ignored" } -->
 ```http
-PATCH /workbook/worksheets/{id|name}/charts(<name>)/axes/valueaxis/title
-PATCH /workbook/worksheets/{id|name}/charts(<name>)/axes/seriesaxis/title
-PATCH /workbook/worksheets/{id|name}/charts(<name>)/axes/categoryaxis/title
+PATCH /workbook/worksheets/{id|name}/charts/{name}/axes/valueAxis/title
+PATCH /workbook/worksheets/{id|name}/charts/{name}/axes/seriesAxis/title
+PATCH /workbook/worksheets/{id|name}/charts/{name}/axes/categoryaxis/title
 ```
 ## <a name="optional-request-headers"></a>オプションの要求ヘッダー
 | 名前       | 説明|
 |:-----------|:-----------|
-| Authorization  | ベアラー {トークン}。必須。 |
+| 承認  | ベアラー {トークン}。必須。 |
 | Workbook-Session-Id  | 変更を保持するかどうかを決定するブック セッション ID。省略可能。|
 
 ## <a name="request-body"></a>要求本文
 要求本文で、更新する関連フィールドの値を指定します。要求本文に含まれない既存のプロパティは、以前の値のままになるか、他のプロパティ値の変化に基づいて再計算されます。最適なパフォーマンスを得るためには、変更されていない既存の値を含めないでください。
 
-| プロパティ     | 型   |説明|
+| プロパティ     | タイプ   |説明|
 |:---------------|:--------|:----------|
-|text|string|軸タイトルを表します。|
+|text|文字列|軸タイトルを表します。|
 |visible|boolean|軸のタイトルの表示/非表示を指定するブール型の値です。|
 
 ## <a name="response"></a>応答
 
-成功した場合、このメソッドは `200 OK` 応答コードと、応答本文で、更新された [ChartAxisTitle](../resources/chartaxistitle.md) オブジェクトを返します。
+成功した場合、このメソッドは `200 OK` 応答コードを返し、応答本文で [WorkbookChartAxisTitle](../resources/chartaxistitle.md) オブジェクトを更新します。
 ## <a name="example"></a>例
 ##### <a name="request"></a>要求
 以下は、要求の例です。
@@ -42,7 +42,7 @@ PATCH /workbook/worksheets/{id|name}/charts(<name>)/axes/categoryaxis/title
   "name": "update_chartaxistitle"
 }-->
 ```http
-PATCH https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/{id|name}/charts(<name>)/axes/valueaxis/title
+PATCH https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/{id|name}/charts/{name}/axes/valueAxis/title
 Content-type: application/json
 Content-length: 45
 
@@ -56,7 +56,7 @@ Content-length: 45
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.chartAxisTitle"
+  "@odata.type": "microsoft.graph.workbookChartAxisTitle"
 } -->
 ```http
 HTTP/1.1 200 OK

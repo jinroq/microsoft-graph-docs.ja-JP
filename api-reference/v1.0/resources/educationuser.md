@@ -16,16 +16,16 @@
 |[Delete](../api/educationuser_delete.md) | なし |**educationUser** オブジェクトを削除します。 |
 
 ## <a name="properties"></a>プロパティ
-| プロパティ     | 型   |説明|
+| プロパティ     | タイプ   |説明|
 |:---------------|:--------|:----------|
 |accountEnabled|ブール型| アカウントが有効な場合は **true**。それ以外の場合は **false**。 このプロパティは、ユーザーの作成時に必要です。 $filter をサポートします。    |
-|assignedLicenses|[assignedLicense](assignedlicense.md) collection|ユーザーに割り当てられているライセンス。null 許容ではありません。            |
-|assignedPlans|[assignedPlan](assignedplan.md) collection|ユーザーに割り当てられているプラン。読み取り専用です。null 許容ではありません。 |
+|assignedLicenses|[assignedLicense](assignedlicense.md) コレクション|ユーザーに割り当てられているライセンス。null 許容ではありません。            |
+|assignedPlans|[assignedPlan](assignedplan.md) コレクション|ユーザーに割り当てられているプラン。読み取り専用です。null 許容ではありません。 |
 |businessPhones|String コレクション|ユーザーの電話番号。 **メモ:** 文字列コレクションですが、このプロパティに設定できるのは 1 つの数字のみです。|
 |createdBy|[identitySet](identityset.md)| ユーザーを作成したエンティティ。 |
 |部署|String|ユーザーが働いている部門の名前。$filter をサポートします。|
 |displayName|String|アドレス帳に表示されるユーザーの名前。 これは通常、ユーザーの名前、ミドルネームのイニシャル、姓の組み合わせになります。 このプロパティはユーザーの作成時に必須です。更新時にクリアすることはできません。 $filter および $orderby をサポートします。|
-|externalSource|`educationExternalSource`| このユーザーが作成された場所。 使用可能な値: `sis`、`manual`、`unkownFutureValue`。|
+|externalSource|`educationExternalSource`| このユーザーが作成された場所。 可能な値は、  `sis`、 `manual`、 `unkownFutureValue` です。|
 |givenName|String|ユーザーの名。$filter をサポートします。|
 |id|String|ユーザーの一意の識別子。[directoryObject](directoryobject.md) から継承されます。キー。null 許容ではありません。読み取り専用です。|
 |mail|String|ユーザーの SMTP アドレス (たとえば、"jeff@contoso.onmicrosoft.com")。 読み取り専用。 $filter をサポートします。|
@@ -36,8 +36,8 @@
 |passwordPolicies|String|ユーザーのパスワード ポリシーを指定します。 この値は列挙値であり、可能な 1 つの値は "DisableStrongPassword" です。この場合は、既定のポリシーより脆弱なパスワードを指定できます。 "DisablePasswordExpiration" を指定することもできます。 2 つを一緒に指定できます。例: "DisablePasswordExpiration、DisableStrongPassword"。|
 |passwordProfile|[PasswordProfile](passwordprofile.md)|ユーザーのパスワード プロファイルを指定します。プロファイルには、ユーザーのパスワードが含まれています。このプロパティは、ユーザーの作成時に必要です。プロファイルにあるパスワードは、**passwordPolicies** プロパティによって指定されている最小要件を満たす必要があります。既定では、強力なパスワードが必要です。|
 |preferredLanguage|String|ユーザーが設定する言語。 ISO 639-1 コードに従う必要があります。例: "en-US"。|
-|primaryRole|string| ユーザーの既定のロール。 ユーザーのロールは、個々のクラスで異なる場合があります。 使用可能な値: `student`、`teacher`、`enum_sentinel`。 $filter をサポートします。|
-|provisionedPlans|[ProvisionedPlan](provisionedplan.md) collection|ユーザーのために用意されたプラン。読み取り専用です。null 許容ではありません。 |
+|primaryRole|educationUserRole| ユーザーの既定のロール。 ユーザーのロールは、個々のクラスで異なる場合があります。 可能な値は、  `student`、 `teacher`、 `unknownFutureValue` です。 $filter をサポートします。|
+|provisionedPlans|[ProvisionedPlan](provisionedplan.md) コレクション|ユーザーのために用意されたプラン。読み取り専用です。null 許容ではありません。 |
 |residenceAddress|[physicalAddress](physicaladdress.md)| ユーザーが在住している場所のアドレス。|
 |student|[educationStudent](educationstudent.md)| プライマリ ロールが学生の場合、このブロックには学生固有のデータが含まれます。|
 |surname|String|ユーザーの姓。$filter をサポートします。|
@@ -52,8 +52,9 @@
 |classes|[educationClass](educationclass.md) コレクション| ユーザーが属しているクラス。 Null 許容型。|
 |schools|[educationSchool](educationschool.md) コレクション| ユーザーが属している学校。 Null 許容型。|
 |assignments| [educationAssignment](../../beta/resources/educationAssignment.md)| ユーザーの割り当てのリスト。 Null 許容型。|
+|user|[user](user.md)| このユーザーに対応するディレクトリ ユーザー。|
 
->**メモ:**  **educationassignment** リソースは /beta ベータ版のリソースです。 このリソースを使用する場合は、[変更ログ](../../../concepts/changelog.md)を定期的に確認してください。 Microsoft Graph API リソースが /v1.0 エンドポイントにリリースされると、リリースは変更ログに記録されます。 アプリが **educationassignment** リソースを使用する場合は、次のコード ブロックに示すように、基本要求 URL を宣言する必要があります。  
+>**注:**  **educationassignment** リソースはベータ版 (/beta) のリソースです。 このリソースを使用する場合は、[変更ログ](../../../concepts/changelog.md)を定期的に確認してください。 Microsoft Graph API リソースが /v1.0 エンドポイントにリリースされると、リリースは変更ログに記録されます。 アプリが **educationassignment** リソースを使用する場合は、次のコード ブロックに示すように、基本要求 URL を宣言する必要があります。  
 ```JavaScript
 var v1BaseUrl = “https://graph.microsoft.com/v1.0/education”;
 var betaBaseUrl = “https://graph.microsoft.com/beta/education”;  // for administrativeUnit and educationOrganization
@@ -64,30 +65,43 @@ var betaBaseUrl = “https://graph.microsoft.com/beta/education”;  // for admi
 
 リソースの JSON 表記を次に示します。
 
-<!-- {
+<!--{
   "blockType": "resource",
-  "optionalProperties": [
-
-  ],
+  "optionalProperties": [],
+  "keyProperty": "id",
+  "baseType": "microsoft.graph.entity",
   "@odata.type": "microsoft.graph.educationUser"
 }-->
 
 ```json
 {
   "id": "string",
+  "accountEnabled": true,
+  "assignedLicenses": [{"@odata.type": "microsoft.graph.assignedLicense"}],
+  "assignedPlans": [{"@odata.type": "microsoft.graph.assignedPlan"}],
+  "businessPhones": ["555-555-6568"],
+  "department": "string",
   "displayName": "string",
   "givenName": "string",
   "middleName": "string",
   "surname": "string",
   "mail": "string",
+  "mailNickname": "string",
   "mobilePhone": "string",
   "createdBy": {"@odata.type": "microsoft.graph.identitySet"},
   "externalSource": "string",
   "mailingAddress": {"@odata.type": "microsoft.graph.physicalAddress"},
+  "passwordPolicies": "string",
+  "passwordProfile": {"@odata.type": "microsoft.graph.passwordProfile"},
+  "preferredLanguage": "string",
   "primaryRole": "string",
+  "provisionedPlans": [{"@odata.type": "microsoft.graph.provisionedPlan"}],
   "residenceAddress": {"@odata.type": "microsoft.graph.physicalAddress"},
   "student": {"@odata.type": "microsoft.graph.educationStudent"},
-  "teacher": {"@odata.type": "microsoft.graph.educationTeacher"}
+  "teacher": {"@odata.type": "microsoft.graph.educationTeacher"},
+  "usageLocation": "string",
+  "userPrincipalName": "string",
+  "userType": "string"
 }
 
 ```
@@ -99,5 +113,9 @@ var betaBaseUrl = “https://graph.microsoft.com/beta/education”;  // for admi
   "description": "educationUser resource",
   "keywords": "",
   "section": "documentation",
+  "suppressions": [
+    "Error: microsoft.graph.educationUser/assignments:
+      Referenced type microsoft.graph.educationAssignment is not defined in the doc set! Potential suggestion: UNKNOWN"
+  ],
   "tocPath": ""
 }-->

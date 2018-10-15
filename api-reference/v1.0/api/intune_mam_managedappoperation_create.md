@@ -1,6 +1,6 @@
 # <a name="create-managedappoperation"></a>managedAppOperation の作成
 
-> **注:**Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
+> **注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
 
 新しい [managedAppOperation](../resources/intune_mam_managedappoperation.md) オブジェクトを作成します。
 ## <a name="prerequisites"></a>前提条件
@@ -24,8 +24,8 @@ POST /deviceAppManagement/managedAppRegistrations/{managedAppRegistrationId}/ope
 ## <a name="request-headers"></a>要求ヘッダー
 |ヘッダー|値|
 |:---|:---|
-|Authorization|ベアラー &lt;トークン&gt; が必要です。|
-|Accept|application/json|
+|承認|ベアラー &lt;トークン&gt; が必須。|
+|受け入れる|アプリケーションまたは json|
 
 ## <a name="request-body"></a>要求本文
 要求本文で、managedAppOperation オブジェクトの JSON 表記を指定します。
@@ -34,11 +34,11 @@ POST /deviceAppManagement/managedAppRegistrations/{managedAppRegistrationId}/ope
 
 |プロパティ|型|説明|
 |:---|:---|:---|
-|displayName|String|操作名。|
+|displayName|文字列|操作名。|
 |lastModifiedDateTime|DateTimeOffset|アプリ操作が変更された最終時刻。|
-|state|String|操作の現在の状態。|
-|id|String|エンティティのキー。|
-|version|String|エンティティのバージョン。|
+|状態|文字列|操作の現在の状態。|
+|ID|文字列|エンティティのキー。|
+|バージョン|文字列|エンティティのバージョン。|
 
 
 
@@ -78,6 +78,11 @@ Content-Length: 272
   "version": "Version value"
 }
 ```
+
+
+
+
+
 
 
 

@@ -1,4 +1,4 @@
-# <a name="user-findmeetingtimes"></a>user: findMeetingTimes
+# <a name="user-findmeetingtimes"></a>ユーザー: findMeetingTimes
 パラメーターとして指定された開催者と出席者の空き時間、および時間または場所の制約に基づいて、会議時間の提案を検索します。
 
 **findMeetingTimes** が会議提案を返すことができない場合は、応答で、**emptySuggestionsReason** プロパティに理由が示されます。この値に基づいて、パラメーターをさらに調整して、**findMeetingTimes** を再度呼び出すことができます。
@@ -22,7 +22,7 @@ POST /users/{id|userPrincipalName}/findMeetingTimes
 ## <a name="request-headers"></a>要求ヘッダー
 | 名前       | 値|
 |:---------------|:----------|
-| Authorization  | ベアラー {トークン}。必須。 |
+| 承認  | ベアラー {トークン}。必須。 |
 | 優先: outlook.timezone | 応答として "太平洋標準時" などの特定のタイム ゾーンを表す文字列です。省略可能。このヘッダーが指定されていない場合は、UTC が使用されます。|
 
 ## <a name="request-body"></a>要求本文
@@ -40,12 +40,12 @@ POST /users/{id|userPrincipalName}/findMeetingTimes
 |returnSuggestionReasons|Edm.Boolean|**SuggestionReason** プロパティで各会議提案の理由を返すには、`True` を指定します。既定値は `false` であり、そのプロパティを返しません。省略可能。|
 |timeConstraint|[timeConstraint](../resources/timeconstraint.md)|会議の性質 (**activityDomain** プロパティ) と可能な会議の時間帯 (**timeSlots** property) を含めることのできる時間制限。このパラメーターを指定しない場合、**findMeetingTimes** が **activityDomain** を `work` と仮定します。省略可能。|
 
-**timeConstraint** パラメーターに指定できるその他の制限について、次の表で説明します。
+次の表では、** timeConstraint**  パラメーターでさらに指定できる ** activityDomain** の制限について説明します。
 
-|**TimeConstraint の activityDomain 値**|**会議の時間の候補**|
+|activityDomain 値|会議の時間の候補|
 |:-----|:-----|
 |作業| ユーザーの予定表の構成で定義された稼働時間 (ユーザーまたは管理者がカスタマイズできる) の範囲内で候補が提案されます。既定の稼働時間は、月曜日から金曜日の午前 8 時から午後 5 時 (メールボックスに設定されたタイム ゾーンでの時刻) です。**activityDomain** を指定しない場合、これが既定値です。 |
-|personal| ユーザーの稼働時間の範囲内と、土曜日と日曜日の範囲内で候補が提案されます。既定では、月曜日から日曜日の午前 8 時から午後 5 時 (メールボックスに設定されたタイム ゾーンでの時刻) です。|
+|パーソナル| ユーザーの稼働時間の範囲内と、土曜日と日曜日の範囲内で候補が提案されます。既定では、月曜日から日曜日の午前 8 時から午後 5 時 (メールボックスに設定されたタイム ゾーンでの時刻) です。|
 |Unrestricted | 任意の曜日の任意の時刻から候補が提案されます。|
 |不明 | 将来的に使われなくなりますので、この値は使わないでください。現在の動作は、`work` と同じです。`work`、`personal` または `unrestricted` を使用するように、既存のコードを適宜変更します。
 
@@ -75,8 +75,8 @@ POST /users/{id|userPrincipalName}/findMeetingTimes
 
 |**出席者**|**空き時間状態**|**出席見込み (%)**|
 |:-----|:-----|:-----|
-|Dana | 空き | 100% |
-|John | 不明 | 49% |
+|Dana | フリー | 100% |
+|John | 未確認 | 49% |
 |Samantha | 多忙 | 0% |
 
 この場合、出席の平均見込みである会議時間の提案の信頼度は、(100% + 49% + 0%)/3 = 49.66% です。
@@ -145,8 +145,8 @@ Content-Type: application/json
     ] 
   },  
   "meetingDuration": "PT2H",
-  "returnSuggestionReasons": "true",
-  "minimumAttendeePercentage": "100"
+  "returnSuggestionReasons": true,
+  "minimumAttendeePercentage": 100.0
 }
 ```
 
@@ -241,5 +241,9 @@ Content-Length: 976
   "description": "user: findMeetingTimes",
   "keywords": "",
   "section": "documentation",
+  "suppressions": [
+      "Warning: /api-reference/v1.0/api/user_findmeetingtimes.md:
+      Failed to parse any rows out of table with headers: |activityDomain value|Suggestions for meeting times|"
+  ],
   "tocPath": ""
 }-->

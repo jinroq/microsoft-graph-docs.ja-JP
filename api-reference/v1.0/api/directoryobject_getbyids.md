@@ -23,15 +23,15 @@ ID のリストで指定されたディレクトリ オブジェクトを返し�
 <!-- { "blockType": "ignored" } -->
 
 ```http
-POST /directoryObjects/getById
+POST /directoryObjects/getByIds
 ```
 
 ## <a name="request-headers"></a>要求ヘッダー
 
 | 名前       | 型 | 説明|
 |:---------------|:--------|:----------|
-| Authorization  | string  | ベアラー {トークン}。必須。 |
-| Content-Type  | application/json  |
+| 承認  | 文字列  | ベアラー {トークン}。必須。 |
+| コンテンツ タイプ  | 文字列 | アプリケーションまたは json  |
 
 ## <a name="request-body"></a>要求本文
 
@@ -39,8 +39,8 @@ POST /directoryObjects/getById
 
 | パラメーター   | 型 |説明|
 |:---------------|:--------|:----------|
-|ids|String collection| オブジェクトを戻す ID のコレクション。最大 1000 ID まで指定できます。 |
-|types|String collection| 検索する一連のリソース コレクションを指定するリソース型のコレクションです。指定しない場合、既定値は、ディレクトリで定義されているすべてのリソース型を含む [directoryObject](../resources/directoryobject.md) になります。`directoryObject` から派生する任意のオブジェクトをコレクションに指定できます。例: [user](../resources/user.md)、[group](../resources/group.md)、[device](../resources/device.md) など。値では、大文字と小文字は区別されません。|
+|ids|String コレクション| オブジェクトを戻す ID のコレクション。最大 1000 ID まで指定できます。 |
+|types|String コレクション| 検索するリソース コレクションのセットを指定するリソースの種類のコレクションです。 指定しない場合、既定では [directoryObject](../resources/directoryobject.md) となります。これには、すべてのディレクトリで定義されているリソースの種類が含まれます。 `directoryObject` から派生したオブジェクトは、コレクションに指定されることがあります。たとえば、[ユーザー](../resources/user.md)、 [グループ](../resources/group.md)、 [デバイス](../resources/device.md)などです。 この値は、大文字と小文字は区別されません。|
 
 ## <a name="response"></a>応答
 
@@ -60,7 +60,7 @@ POST https://graph.microsoft.com/v1.0/directoryObjects/getByIds
 Content-type: application/json
 
 {
-    "ids":["84b80893-8749-40a3-97b7-68513b600544","5d6059b6-368d-45f8-91e1-8e07d485f1d0"],
+    "ids":["84b80893874940a3-97b7-68513b600544","5d6059b6368d-45f8-91e18e07d485f1d0"],
     "types":["user"]
 }
 ```

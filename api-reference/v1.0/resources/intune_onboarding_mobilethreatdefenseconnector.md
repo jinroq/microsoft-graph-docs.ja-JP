@@ -15,9 +15,9 @@ Mobile Threat Defense パートナーとの接続を表すエンティティで�
 ## <a name="properties"></a>プロパティ
 |プロパティ|タイプ|説明|
 |:---|:---|:---|
-|id|文字列|まだ文書化されていません|
+|ID|文字列|まだ文書化されていません|
 |lastHeartbeatDateTime|DateTimeOffset|データ同期パートナーから受信した最後のハートビートの日時|
-|partnerState|[mobileThreatPartnerTenantState](../resources/intune_onboarding_mobilethreatpartnertenantstate.md)|このアカウントのデータの同期パートナーの状態です。 指定できる値は、`unavailable`、`available`、`enabled`、`unresponsive` です。|
+|partnerState|[mobileThreatPartnerTenantState](../resources/intune_onboarding_mobilethreatpartnertenantstate.md)|このアカウントのデータ同期パートナーの状態です。使用可能な値は、`unavailable`、 `available`、 `enabled`、`unresponsive`です。|
 |androidEnabled|ブール型|Android において、準拠評価時にデータ同期パートナーからのデータを使用するかどうかを設定します|
 |iosEnabled|ブール型|IOS において、準拠評価時にデータ同期パートナーからのデータを使用するかどうかを取得または設定します|
 |androidDeviceBlockedOnMissingPartnerData|ブール型|Android において、デバイスを準拠させる前に Intune がデータ同期パートナーからデータを受信する必要があるかどうかを設定します|
@@ -31,8 +31,8 @@ Mobile Threat Defense パートナーとの接続を表すエンティティで�
 以下は、リソースの JSON 表記です。
 <!--{
   "blockType": "resource",
-  "keyProperty": "id",
   "baseType": "microsoft.graph.entity",
+  "keyProperty": "id",
   "@odata.type": "microsoft.graph.mobileThreatDefenseConnector"
 }-->
 ``` json
@@ -49,6 +49,11 @@ Mobile Threat Defense パートナーとの接続を表すエンティティで�
   "partnerUnresponsivenessThresholdInDays": 1024
 }
 ```
+
+
+
+
+
 
 
 

@@ -2,12 +2,13 @@
 author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
-title: "ファイルへのアクセス権を持つユーザーを一覧表示する"
-ms.openlocfilehash: 8b8671fbad37601a42127119f8bef6e5eca23dea
-ms.sourcegitcommit: 7aea7a97e36e6d146214de3a90fdbc71628aadba
+title: ファイルへのアクセス権を持つユーザーを一覧表示する
+ms.openlocfilehash: d7090939fb2b950ed92fd9574cf9dd5b80ec8a6c
+ms.sourcegitcommit: abf4b739257e3ffd9d045f783ec595d846172590
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23266633"
 ---
 # <a name="list-sharing-permissions-on-a-driveitem"></a>DriveItem の共有アクセス許可を一覧表示する
 
@@ -58,20 +59,20 @@ GET /users/{userId}/drive/items/{itemId}/permissions
 
 成功した場合、このメソッドは `200 OK` 応答コードと、応答本文で [Permission](../resources/permission.md) リソースのコレクションを返します。
 
-DriveItem の有効な共有アクセス許可は、次の 2 つのソースから取得できます。
+DriveItem の有効な共有アクセス許可は、次の 2 つのソースが元になります。
 
 * DriveItem 自体に直接適用される共有アクセス許可
 * DriveItem の先祖から継承された共有アクセス許可
 
 呼び出し元は、**inheritedFrom** プロパティを確認して、アクセス許可が継承されているかどうかによって区別できます。このプロパティは、アクセス許可が継承された先祖を参照する [**itemReference**](../resources/itemreference.md) リソースです。
 
-アイテムに設定された SharePoint アクセス許可レベルは、'SP' というプレフィックス付きで返されます。 たとえば、SP.View Only、SP.Limited Access、SP.View Web Analytics Data などです。 「[SharePoint ロールの完全なリスト](https://technet.microsoft.com/en-us/library/cc721640.aspx#section1)」を参照してください。
+アイテムに設定された SharePoint アクセス許可レベルは、'SP' というプレフィックス付きで返されます。 たとえば、SP.View Only、SP.Limited Access、SP.View Web Analytics Data などです。 [SharePoint ロールの完全なリスト](https://technet.microsoft.com/en-us/library/cc721640.aspx#section1)を参照してください。
 
 ## <a name="example"></a>例
 
-この例では、サインインしているユーザーのドライブ内のアイテムに対するアクセス許可のコレクションを取得します。
+この例では、サインイン ユーザーのドライブ内のアイテムに対するアクセス許可のコレクションを取得します。
 
-<!-- { "blockType": "request", "name": "get-item-permissions", "scopes": "files.read" } -->
+<!-- { "blockType": "request", "name": "get-item-permissions", "scopes": "files.read", "tags": "service.graph" } -->
 
 ```http
 GET /me/drive/items/{item-id}/permissions

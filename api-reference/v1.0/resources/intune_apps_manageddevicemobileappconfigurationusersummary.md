@@ -1,6 +1,6 @@
 # <a name="manageddevicemobileappconfigurationusersummary-resource-type"></a>managedDeviceMobileAppConfigurationUserSummary リソースの種類
 
-> **注:**Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
+> **注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
 
 MDM モバイル アプリ構成のユーザー状態の要約に関する、プロパティ、継承済みのプロパティ、アクションが含まれています。
 ## <a name="methods"></a>メソッド
@@ -10,11 +10,11 @@ MDM モバイル アプリ構成のユーザー状態の要約に関する、プ
 |[managedDeviceMobileAppConfigurationUserSummary の更新](../api/intune_apps_manageddevicemobileappconfigurationusersummary_update.md)|[managedDeviceMobileAppConfigurationUserSummary](../resources/intune_apps_manageddevicemobileappconfigurationusersummary.md)|[managedDeviceMobileAppConfigurationUserSummary](../resources/intune_apps_manageddevicemobileappconfigurationusersummary.md) オブジェクトのプロパティを更新します。|
 
 ## <a name="properties"></a>プロパティ
-|プロパティ|型|説明|
+|プロパティ|タイプ|説明|
 |:---|:---|:---|
-|id|String|エンティティのキー。|
+|id|文字列|エンティティのキー。|
 |pendingCount|Int32|保留中のユーザーの数|
-|notApplicableCount|Int32|該当しないデバイスの数|
+|notApplicableCount|Int32|該当しないユーザーの数|
 |successCount|Int32|成功したユーザーの数|
 |errorCount|Int32|エラー ユーザーの数|
 |failedCount|Int32|失敗したユーザーの数|
@@ -25,12 +25,12 @@ MDM モバイル アプリ構成のユーザー状態の要約に関する、プ
 なし
 ## <a name="json-representation"></a>JSON 表記
 以下は、リソースの JSON 表記です。
-<!-- {
+<!--{
   "blockType": "resource",
   "keyProperty": "id",
+  "baseType": "microsoft.graph.entity",
   "@odata.type": "microsoft.graph.managedDeviceMobileAppConfigurationUserSummary"
-}
--->
+}-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.managedDeviceMobileAppConfigurationUserSummary",

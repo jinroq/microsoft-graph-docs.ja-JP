@@ -7,20 +7,20 @@
 
 | メソッド           | 戻り値の型    |説明|
 |:---------------|:--------|:----------|
-|[Get ChartTitle](../api/charttitle_get.md) | [ChartTitle](charttitle.md) |chartTitle オブジェクトのプロパティと関係を読み取ります。|
-|[Update](../api/charttitle_update.md) | [ChartTitle](charttitle.md)    |ChartTitle オブジェクトを更新します。 |
+|[ChartTitle を取得する](../api/charttitle_get.md) | [WorkbookChartTitle](charttitle.md) |chartTitle オブジェクトのプロパティと関係を読み取ります。|
+|[更新する](../api/charttitle_update.md) | [WorkbookChartTitle](charttitle.md)    |ChartTitle オブジェクトを更新します。 |
 
 ## <a name="properties"></a>プロパティ
-| プロパティ       | 型    |説明|
+| プロパティ     | タイプ   |説明|
 |:---------------|:--------|:----------|
-|overlay|boolean|グラフのタイトルをグラフに重ねるかどうかを表すブール型の値。|
-|text|string|グラフのタイトルのテキストを表します。|
-|visible|boolean|ChartTitle オブジェクトを表示または非表示にするかを表すブール型の値。|
+|overlay|ブール値|グラフのタイトルをグラフに重ねるかどうかを表すブール型の値。|
+|テキスト|文字列|グラフのタイトルのテキストを表します。|
+|目に見える|ブール値|ChartTitle オブジェクトを表示または非表示にするかを表すブール型の値。|
 
 ## <a name="relationships"></a>関係
-| リレーションシップ | 型    |説明|
+| リレーションシップ | 型   |説明|
 |:---------------|:--------|:----------|
-|format|[ChartTitleFormat](charttitleformat.md)|グラフ のタイトルの書式設定を表します。これには塗りつぶしとフォントの書式設定などがあります。値の取得のみ可能です。|
+|format|[WorkbookChartTitleFormat](charttitleformat.md)|グラフ のタイトルの書式設定を表します。これには塗りつぶしとフォントの書式設定などがあります。値の取得のみ可能です。|
 
 ## <a name="json-representation"></a>JSON 表記
 
@@ -28,10 +28,11 @@
 
 <!-- {
   "blockType": "resource",
+  "baseType": "microsoft.graph.entity",
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.chartTitle"
+  "@odata.type": "microsoft.graph.workbookChartTitle"
 }-->
 
 ```json

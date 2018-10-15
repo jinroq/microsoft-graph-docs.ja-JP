@@ -1,6 +1,6 @@
 # <a name="update-managedmobileapp"></a>managedMobileApp の更新
 
-> **注:**Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
+> **注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
 
 [managedMobileApp](../resources/intune_mam_managedmobileapp.md) オブジェクトのプロパティを更新します。
 ## <a name="prerequisites"></a>前提条件
@@ -27,8 +27,8 @@ PATCH /deviceAppManagement/targetedManagedAppConfigurations/{targetedManagedAppC
 ## <a name="request-headers"></a>要求ヘッダー
 |ヘッダー|値|
 |:---|:---|
-|Authorization|ベアラー &lt;トークン&gt; が必要です。|
-|Accept|application/json|
+|承認|ベアラー &lt;トークン&gt; が必須。|
+|受け入れる|アプリケーションまたは json|
 
 ## <a name="request-body"></a>要求本文
 要求本文で、[managedMobileApp](../resources/intune_mam_managedmobileapp.md) オブジェクトの JSON 表記を指定します。
@@ -38,8 +38,8 @@ PATCH /deviceAppManagement/targetedManagedAppConfigurations/{targetedManagedAppC
 |プロパティ|型|説明|
 |:---|:---|:---|
 |mobileAppIdentifier|[mobileAppIdentifier](../resources/intune_mam_mobileappidentifier.md)|対象のオペレーティング システムの種類のアプリの識別子。|
-|id|String|エンティティのキー。|
-|version|String|エンティティのバージョン。|
+|ID|文字列|エンティティのキー。|
+|バージョン|文字列|エンティティのバージョン。|
 
 
 
@@ -78,6 +78,11 @@ Content-Length: 230
   "version": "Version value"
 }
 ```
+
+
+
+
+
 
 
 

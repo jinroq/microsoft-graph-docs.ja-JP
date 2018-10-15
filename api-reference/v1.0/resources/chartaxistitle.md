@@ -7,36 +7,36 @@
 
 | メソッド           | 戻り値の型    |説明|
 |:---------------|:--------|:----------|
-|[Get ChartAxisTitle](../api/chartaxistitle_get.md) | [ChartAxisTitle](chartaxistitle.md) |chartAxisTitle オブジェクトのプロパティと関係を読み取ります。|
-|[Update](../api/chartaxistitle_update.md) | [ChartAxisTitle](chartaxistitle.md)    |ChartAxisTitle オブジェクトを更新します。 |
+|[Get ChartAxisTitle](../api/chartaxistitle_get.md) | [WorkbookChartAxisTitle](chartaxistitle.md) |chartAxisTitle オブジェクトのプロパティと関係を読み取ります。|
+|[Update](../api/chartaxistitle_update.md) | [WorkbookChartAxisTitle](chartaxistitle.md)    |ChartAxisTitle オブジェクトを更新します。 |
 
 ## <a name="properties"></a>プロパティ
-| プロパティ       | 型    |説明|
+| プロパティ     | タイプ   |説明|
 |:---------------|:--------|:----------|
-|text|string|軸タイトルを表します。|
-|visible|boolean|軸のタイトルの表示/非表示を指定するブール型の値です。|
+|text|文字列|軸タイトルを表します。|
+|visible|ブール値|軸のタイトルの表示/非表示を指定するブール型の値です。|
 
 ## <a name="relationships"></a>関係
-| リレーションシップ | 型    |説明|
+| リレーションシップ | 型   |説明|
 |:---------------|:--------|:----------|
-|format|[ChartAxisTitleFormat](chartaxistitleformat.md)|グラフ軸のタイトルの書式設定を表します。値の取得のみ可能です。|
+|format|[WorkbookChartAxisTitleFormat](chartaxistitleformat.md)|グラフ軸のタイトルの書式設定を表します。値の取得のみ可能です。|
 
 ## <a name="json-representation"></a>JSON 表記
 
 以下は、リソースの JSON 表記です。
 
-<!-- {
+<!--{
   "blockType": "resource",
-  "optionalProperties": [
-
-  ],
-  "@odata.type": "microsoft.graph.chartAxisTitle"
+  "baseType": "microsoft.graph.entity",
+  "optionalProperties": [],
+  "@odata.type": "microsoft.graph.workbookChartAxisTitle"
 }-->
 
 ```json
 {
   "text": "string",
-  "visible": true
+  "visible": true,
+  "format": {"@odata.type":"microsoft.graph.workbookChartAxisTitleFormat"}
 }
 
 ```

@@ -10,13 +10,12 @@
 
 
 ## <a name="properties"></a>プロパティ
-| プロパティ     | 型   |説明|
+| プロパティ     | タイプ   |説明|
 |:---------------|:--------|:----------|
-| daysOfWeek | String コレクション | ユーザーが働く曜日。 |
+| daysOfWeek | dayOfWeek コレクション | ユーザーが働く曜日。 |
 | startTime | Edm.TimeOfDay | ユーザーの始業時間。 |
 | endTime | Edm.TimeOfDay | ユーザーの終業時間。 |
 | timeZone | [timeZoneBase](timezonebase.md) | 就業時間に適用するタイム ゾーン。 |
-
 
 ## <a name="json-representation"></a>JSON 表記
 
@@ -47,5 +46,9 @@
   "description": "workingHours resource",
   "keywords": "",
   "section": "documentation",
+  "suppressions": [
+    "Warning: /api-reference/v1.0/resources/workinghours.md/microsoft.graph.workingHours/daysOfWeek:
+      Inconsistent types between parameter (String) and table (Object)"
+  ],
   "tocPath": ""
 }-->

@@ -18,7 +18,7 @@
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/mailFolders/delta
-GET /users/<id>/mailFolders/delta
+GET /users/{id}/mailFolders/delta
 ```
 
 ## <a name="optional-query-parameters"></a>オプションのクエリ パラメーター
@@ -27,8 +27,8 @@ GET /users/<id>/mailFolders/delta
 
 | クエリ パラメーター      | 種類   |説明|
 |:---------------|:--------|:----------|
-| $deltatoken | string | 同じメール フォルダー コレクションの前の**デルタ**関数呼び出しの `deltaLink` URL で[状態トークン](../../../concepts/delta_query_overview.md)が返され、その変更追跡のラウンドが完了したことを示します。このコレクションについて、このトークンを含む、`deltaLink` URL 全体を次の変更追跡のラウンドの最初の要求に保存し、適用します。|
-| $skiptoken | string | 前の**デルタ**関数呼び出しの `nextLink` URL で[状態トークン](../../../concepts/delta_query_overview.md)が返され、同じメール フォルダー コレクションに追跡すべき変更が他にもあることを示します。 |
+| $deltatoken | 文字列 | 同じメール フォルダー コレクションの前の**デルタ**関数呼び出しの `deltaLink` URL で[状態トークン](../../../concepts/delta_query_overview.md)が返され、その変更追跡のラウンドが完了したことを示します。このコレクションについて、このトークンを含む、`deltaLink` URL 全体を次の変更追跡のラウンドの最初の要求に保存し、適用します。|
+| $skiptoken | 文字列 | 前の**デルタ**関数呼び出しの `nextLink` URL で[状態トークン](../../../concepts/delta_query_overview.md)が返され、同じメール フォルダー コレクションに追跡すべき変更が他にもあることを示します。 |
 
 #### <a name="odata-query-parameters"></a>OData クエリ パラメーター
 
@@ -37,9 +37,9 @@ GET /users/<id>/mailFolders/delta
 ## <a name="request-headers"></a>要求ヘッダー
 | 名前       | 型 | 説明 |
 |:---------------|:----------|:----------|
-| Authorization  | string  | ベアラー {トークン}。必須。 |
-| Content-Type  | string  | application/json. Required. |
-| Prefer | string  | odata.maxpagesize={x}.省略可能。 |
+| 承認  | 文字列  | ベアラー {トークン}。必須。 |
+| コンテンツ タイプ  | 文字列  | アプリケーションまたは json。必須。 |
+| 優先 | 文字列  | odata.maxpagesize={x}.省略可能。 |
 
 ## <a name="response"></a>応答
 
@@ -90,8 +90,7 @@ Content-length: 254
       "parentFolderId": "parentFolderId-value",
       "childFolderCount": 99,
       "unreadItemCount": 99,
-      "totalItemCount": 99,
-      "wellKnownName": "wellKnownName-value"
+      "totalItemCount": 99
     }
   ]
 }

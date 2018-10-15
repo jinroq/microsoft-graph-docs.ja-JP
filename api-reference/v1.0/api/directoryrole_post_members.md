@@ -20,8 +20,8 @@ POST /directoryRoles/{id}/members/$ref
 ## <a name="request-headers"></a>要求ヘッダー
 | 名前       | 型 | 説明|
 |:---------------|:--------|:----------|
-| Authorization  | string  | ベアラー {トークン}。必須。 |
-| Content-Type  | application/json  |
+| 承認  | 文字列  | ベアラー {トークン}。必須。 |
+| コンテンツ タイプ  | 文字列  | アプリケーションまたは json  |
 
 ## <a name="request-body"></a>要求本文
 要求本文で、追加する [directoryObject](../resources/directoryobject.md) または[ユーザー](../resources/user.md) オブジェクトの JSON 表記を指定します。

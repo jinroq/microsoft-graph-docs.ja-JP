@@ -2,12 +2,13 @@
 author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
-title: "ファイルまたはフォルダーのサムネイルを取得する"
-ms.openlocfilehash: 864765898955d0a690ab85dc0be9761a7a9d1856
-ms.sourcegitcommit: 7aea7a97e36e6d146214de3a90fdbc71628aadba
+title: ファイルまたはフォルダーのサムネイルを取得する
+ms.openlocfilehash: 98bfa0bee80beabc9934ae603f317627facffb4a
+ms.sourcegitcommit: abf4b739257e3ffd9d045f783ec595d846172590
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23266836"
 ---
 # <a name="list-thumbnails-for-a-driveitem"></a>DriveItem のサムネイルを一覧表示する
 
@@ -59,13 +60,13 @@ GET /users/{user-id}/drive/items/{item-id}/thumbnails
 
 次は、現在のユーザーの OneDrive 内のアイテムで使用可能なサムネイルを取得する要求の例です。
 
-<!-- { "blockType": "request", "name": "enum-item-thumbnails", "scopes": "files.read" } -->
+<!-- { "blockType": "request", "name": "enum-item-thumbnails", "scopes": "files.read", "tags": "service.graph" } -->
 
 ```http
 GET /me/drive/items/{item-id}/thumbnails
 ```
 
-この要求では、そのアイテムで使用可能な **thumbnailSets** の配列が返されます。 ドライブにあるすべてのアイテムは、0 個以上のサムネイルを保持できます。
+このアイテムの使用可能な **thumbnailSets** の配列が返されます。 ドライブにあるすべてのアイテムは、0 個以上のサムネイルを保持できます。
 
 **注:** _select_ クエリ文字列パラメーターを使用すると、**ThumbnailSet** で返されるサムネイルのサイズを制御できます。
 たとえば、`/thumbnails?select=medium` では、中サイズのサムネイルのみを取得します。
@@ -93,11 +94,11 @@ Content-type: application/json
 
 ## <a name="get-a-single-thumbnail"></a>1 つのサムネイルを取得する
 
-1 つのサムネイルとサイズのメタデータを、要求で直接アドレス指定 (特定して) して取得します。
+1 つのサムネイルとサイズのメタデータを、要求で直接アドレス指定して取得します。
 
 ### <a name="http-request"></a>HTTP 要求
 
-<!-- { "blockType": "request", "name": "get-one-thumbnail", "scopes": "files.read" } -->
+<!-- { "blockType": "request", "name": "get-one-thumbnail", "scopes": "files.read", "tags": "service.graph" } -->
 
 ```http
 GET /me/drive/items/{item-id}/thumbnails/{thumb-id}/{size}
@@ -109,7 +110,7 @@ GET /me/drive/items/{item-id}/thumbnails/{thumb-id}/{size}
 |:-------------|:-------|:-----------------------------------------------------------------------------------------|
 | **item-id**  | string | 参照されるアイテムの一意識別子。                                           |
 | **thumb-id** | number | サムネイルのインデックス (通常 0-4)。 カスタム サムネイルがある場合は、そのインデックスは 0 になります。 |
-| **size**     | string | 要求されるサムネイルのサイズ。 これは、後述する標準サイズか、カスタム サイズのいずれかになります。 |
+| **size**     | string | 要求されたサムネイルのサイズ。 これは、後述する標準サイズか、カスタム サイズのいずれかになります。 |
 
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.thumbnail" } -->
 
@@ -130,7 +131,7 @@ Content-Type: application/json
 
 ### <a name="http-request"></a>HTTP 要求
 
-<!-- { "blockType": "request", "name":"get-thumbnail-content", "scopes": "files.read" } -->
+<!-- { "blockType": "request", "name":"get-thumbnail-content", "scopes": "files.read", "tags": "service.graph" } -->
 
 ```http
 GET /me/drive/items/{item-id}/thumbnails/{thumb-id}/{size}/content
@@ -147,7 +148,7 @@ HTTP/1.1 302 Found
 Location: https://b0mpua-by3301.files.1drv.com/y23vmagahszhxzlcvhasdhasghasodfi
 ```
 
-サムネイル URL はキャッシュ対応です。 この URL は、新しいサムネイルの生成を要求する方法でアイテムを変更する場合に変更されます。
+サムネイル URL はキャッシュ対応です。 この URL は、新しいサムネイルの生成を必要とする方法でアイテムを変更する場合に変更されます。
 
 
 ## <a name="getting-thumbnails-while-listing-driveitems"></a>DriveItems を一覧表示する際にサムネイルを取得する
@@ -157,7 +158,7 @@ Location: https://b0mpua-by3301.files.1drv.com/y23vmagahszhxzlcvhasdhasghasodfi
 
 ### <a name="http-request"></a>HTTP 要求
 
-<!-- { "blockType": "request", "name":"get-thumbnail-while-listing", "scopes": "files.read" } -->
+<!-- { "blockType": "request", "name":"get-thumbnail-while-listing", "scopes": "files.read", "tags": "service.graph" } -->
 
 ```http
 GET /me/drive/items/{item-id}/children?$expand=thumbnails
@@ -165,7 +166,7 @@ GET /me/drive/items/{item-id}/children?$expand=thumbnails
 
 ### <a name="response"></a>応答
 
-サービスは、DriveItems とそのサムネイルのリストで応答します。
+DriveItems とそのサムネイルのリストでのサービスの応答。
 
 <!-- { "blockType": "response", "@odata.type": "Collection(microsoft.graph.driveItem)", "truncated": true } -->
 
@@ -203,7 +204,7 @@ Content-type: application/json
 }
 ```
 
-## <a name="size-values"></a>サイズの値
+## <a name="size-options"></a>サイズ オプション
 
 次の表で、使用可能なサムネイルのサイズを定義します。サムネイルの任意のサイズを要求できますが、定義済みの値が存在する可能性が高く、値は即時に返されます。
 
@@ -218,16 +219,16 @@ Content-type: application/json
 
 ## <a name="requesting-custom-thumbnail-sizes"></a>カスタムのサムネイル サイズを要求する
 
-定義済みのサイズに加えて、アプリでは、先頭に `c` を付けたサムネイルのディメンション (寸法) を指定することで、カスタムのサムネイル サイズを要求できます。
+定義済みのサイズに加えて、アプリでは、先頭に `c` を付けたサムネイルのディメンションを指定することで、カスタムのサムネイル サイズを要求できます。
 たとえば、アプリで 300x400 のサムネイルが必要な場合は、そのサイズを次に示すように要求できます。
 
-<!-- { "name": "get-thumbnail-custom-size", "scopes": "files.read" } -->
+<!-- { "blockType": "request", "name": "get-thumbnail-custom-size", "scopes": "files.read", "tags": "service.graph" } -->
 
 ```http
 GET /me/drive/items/{item-id}/thumbnails?select=c300x400_Crop
 ```
 
-これにより、次に示すように選択したカスタムのサムネイル サイズのみの応答が返されます。
+これにより、選択したカスタムのサムネイル サイズのみの応答が返されます。
 
 <!-- { "blockType": "response", "@odata.type": "Collection(microsoft.graph.thumbnailSet)" } -->
 
@@ -261,7 +262,7 @@ Content-Type: application/json
 
 **注:** OneDrive for Business および SharePoint の場合:
 
-次の呼び出しを使用したサムネイル コレクションの展開は機能しません。
+次の呼び出しを使用したサムネイル コレクションの展開は機能しません:
 
 * `GET /drive/root:/{item-path}?expand=children(expand=thumbnails)`
 * `GET /drive/items/{item-id}/children?expand=thumbnails`
@@ -279,5 +280,17 @@ Content-Type: application/json
   "description": "Get metadata and content for thumbnails of multiple sizes for OneDrive items.",
   "keywords": "thumbnail,content,download,sizes",
   "section": "documentation",
+  "suppressions": [
+    "Warning: /api-reference/v1.0/api/driveitem_list_thumbnails.md:
+      Unable to map some markdown elements into schema.
+         Unmapped methods:
+      enum-item-thumbnails, get-one-thumbnail, get-thumbnail-content, get-thumbnail-while-listing, get-thumbnail-custom-size
+         Unmapped tables:
+      Permissions - AuthScopes, Path parameters - PathParameters, Size options - Unknown, Examples of custom identifiers - Unknown",
+    "Warning: Couldn't serialize request for path /me/drive/items/{var}/thumbnails/{var}/{var}/content into EDMX: System.InvalidOperationException: Uri path requires navigating into unknown object hierarchy: missing property '{var}' on 'thumbnailSet'. Possible issues:
+         1) Doc bug where '{var}' isn't defined on the resource.         2) Doc bug where '{var}' is an example key and should instead be replaced with a placeholder like {item-id} or declared in the sampleKeys annotation.       3) Doc bug where 'thumbnailSet' is supposed to be an entity type, but is being treated as a complex because it (and its ancestors) are missing the keyProperty annotation
+     at ApiDocs.Publishing.CSDL.CsdlWriter.ParseRequestTargetType(String requestPath, MethodCollection requestMethodCollection, EntityFramework edmx, IssueLogger issues) in D:/src/mds2/ApiDocs.Publishing/CSDL/CsdlWriter.cs:line 1145
+     at ApiDocs.Publishing.CSDL.CsdlWriter.ProcessRestRequestPaths(EntityFramework edmx, String[] baseUrlsToRemove, IssueLogger issues) in D:/src/mds2/ApiDocs.Publishing/CSDL/CsdlWriter.cs:line 821"
+  ],
   "tocPath": "Items/Thumbnails"
 } -->

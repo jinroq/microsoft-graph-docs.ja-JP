@@ -26,13 +26,13 @@
 ## <a name="http-request"></a>HTTP 要求
 <!-- { "blockType": "ignored" } -->
 ```http
-DELETE /directory/deleteditems/{id}
+DELETE /directory/deletedItems/{id}
 ```
 ## <a name="request-headers"></a>要求ヘッダー
 | 名前       | 説明|
 |:---------------|:----------|
-| Authorization  | ベアラー &lt;コード&gt; が*必要*|
-| Accept  | application/json |
+| 承認  | ベアラー &lt;コード&gt; が*必要*|
+| 承諾  | application/json |
 
 ## <a name="request-body"></a>要求本文
 このメソッドには、要求本文を指定しません。
@@ -49,7 +49,7 @@ DELETE /directory/deleteditems/{id}
   "name": "delete_directory"
 }-->
 ```http
-DELETE https://graph.microsoft.com/v1.0/directory/deleteditems/46cc6179-19d0-473e-97ad-6ff84347bbbb
+DELETE https://graph.microsoft.com/v1.0/directory/deletedItems/{object-id}
 ```
 ##### <a name="response"></a>応答
 注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。

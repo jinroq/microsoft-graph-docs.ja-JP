@@ -13,11 +13,11 @@
 
 
 ## <a name="properties"></a>プロパティ
-| プロパティ     | 型   |説明|
+| プロパティ     | タイプ   |説明|
 |:---------------|:--------|:----------|
 | daylightBias | Edm.Int32 | 夏時間の協定世界時 (UTC) からの時間オフセットです。 この値は分単位です。  |
 | dayOccurrence | Edm.Int32 | 標準時から夏時間への切り替えが月の何番目の曜日に行われるかを表します。 |
-| dayOfWeek | string | 標準時から夏時間への切り替えが行われる曜日を表します。 |
+| dayOfWeek | 文字列 | 標準時から夏時間への切り替えが行われる曜日を表します。 |
 | month | Edm.Int32 | 標準時から夏時間への切り替えが行われる月を表します。 |
 | time | Edm.TimeOfDay | 標準時から夏時間への切り替えが行われる時刻を表します。 |
 | year | Edm.Int32 | 標準時から夏時間への切り替えが年に何回行われるかを表します。 たとえば、値 0 は年に 1 回を意味します。|
@@ -32,6 +32,7 @@
   "optionalProperties": [
 
   ],
+  "baseType": "microsoft.graph.standardTimeZoneOffset",
   "@odata.type": "microsoft.graph.daylightTimeZoneOffset"
 }-->
 

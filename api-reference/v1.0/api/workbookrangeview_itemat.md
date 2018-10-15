@@ -13,16 +13,16 @@
 ## <a name="http-request"></a>HTTP 要求
 <!-- { "blockType": "ignored" } -->
 ```http
-GET me/drive/root/workbook/worksheets/{id}/range(addres={address})/visibleView/itemAt(index={n})
+GET me/drive/root/workbook/worksheets/{id}/range(address={address})/visibleView/itemAt(index={n})
 
 ```
 ## <a name="request-headers"></a>要求ヘッダー
 | 名前       | 説明|
 |:---------------|:----------|
-| Authorization  | ベアラー {トークン}。必須。 |
+| 承認  | ベアラー {トークン}。必須。 |
 | Workbook-Session-Id  | 変更を保持するかどうかを決定するブック セッション ID。省略可能。|
 
-## <a name="request-body"></a>要求本文
+## <a name="function-parameters"></a>関数パラメーター
 要求 URL に、次のクエリ パラメーターを値で指定します。
 
 | パラメーター    | 型   |説明|
@@ -37,12 +37,13 @@ GET me/drive/root/workbook/worksheets/{id}/range(addres={address})/visibleView/i
 以下は、この API を呼び出す方法の例です。
 ##### <a name="request"></a>要求
 以下は、要求の例です。
-<!-- {
+<!--{
   "blockType": "request",
+  "isComposable": true,
   "name": "workbookrangeview_itemat"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/drive/root/workbook/worksheets/{id}/range(addres='A1:Z10')/visibleView/itemAt(index=0)
+GET https://graph.microsoft.com/v1.0/me/drive/root/workbook/worksheets/{id}/range(address='A1:Z10')/visibleView/itemAt(index=0)
 
 ```
 

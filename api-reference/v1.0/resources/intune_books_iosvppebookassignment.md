@@ -19,8 +19,8 @@
 |プロパティ|タイプ|説明|
 |:---|:---|:---|
 |ID|文字列|エンティティのキー。 [managedEBookAssignment](../resources/intune_books_managedebookassignment.md) から継承します|
-|target|[deviceAndAppManagementAssignmentTarget](../resources/intune_shared_deviceandappmanagementassignmenttarget.md)|電子ブックの割り当て先。 [managedEBookAssignment](../resources/intune_books_managedebookassignment.md) から継承します|
-|installIntent|[installIntent](../resources/intune_shared_installintent.md)|電子ブックのインストールの目的。 [managedEBookAssignment](../resources/intune_books_managedebookassignment.md) から継承します。 可能な値は、`available`、`required`、`uninstall`、`availableWithoutEnrollment` です。|
+|ターゲット|[deviceAndAppManagementAssignmentTarget](../resources/intune_shared_deviceandappmanagementassignmenttarget.md)|電子ブックの割り当て先。 [managedEBookAssignment](../resources/intune_books_managedebookassignment.md) から継承します|
+|installIntent|[installIntent](../resources/intune_shared_installintent.md)|EBook のインストールの目的です。 [ ManagedEBookAssignment ](../resources/intune_books_managedebookassignment.md) から継承されます。使用可能な値は`available`、`required`、`uninstall`、`availableWithoutEnrollment`です。|
 
 ## <a name="relationships"></a>リレーションシップ
 なし
@@ -28,8 +28,8 @@
 以下は、リソースの JSON 表記です。
 <!--{
   "blockType": "resource",
-  "keyProperty": "id",
   "baseType": "microsoft.graph.managedEBookAssignment",
+  "keyProperty": "id",
   "@odata.type": "microsoft.graph.iosVppEBookAssignment"
 }-->
 ``` json
@@ -42,6 +42,11 @@
   "installIntent": "String"
 }
 ```
+
+
+
+
+
 
 
 

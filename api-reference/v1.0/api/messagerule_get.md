@@ -16,8 +16,8 @@
 ## <a name="http-request"></a>HTTP 要求
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /me/mailFolders/inbox/messagerules/{id}
-GET /users/{id | userPrincipalName}/mailFolders/inbox/messagerules/{id}
+GET /me/mailFolders/inbox/messageRules/{id}
+GET /users/{id | userPrincipalName}/mailFolders/inbox/messageRules/{id}
 ```
 ## <a name="optional-query-parameters"></a>オプションのクエリ パラメーター
 このメソッドは、応答をカスタマイズするための [OData クエリ パラメーター](http://graph.microsoft.io/docs/overview/query_parameters)をサポートします。
@@ -25,7 +25,7 @@ GET /users/{id | userPrincipalName}/mailFolders/inbox/messagerules/{id}
 ## <a name="request-headers"></a>要求ヘッダー
 | 名前      |説明|
 |:----------|:----------|
-| Authorization  | ベアラー {トークン}。必須。 |
+| 承認  | ベアラー {トークン}。必須。 |
 
 
 ## <a name="request-body"></a>要求本文
@@ -37,10 +37,11 @@ GET /users/{id | userPrincipalName}/mailFolders/inbox/messagerules/{id}
 以下は、要求の例です。
 <!-- {
   "blockType": "request",
+  "sampleKeys": ["inbox", "AQAAAJ5dZqA="],
   "name": "get_messagerule"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/me/mailfolders/inbox/messagerules('AQAAAJ5dZqA=')
+GET https://graph.microsoft.com/v1.0/me/mailFolders/inbox/messageRules/AQAAAJ5dZqA=
 ```
 ##### <a name="response"></a>応答
 以下は、応答の例です。 既定では、応答に含まれる日時のプロパティは UTC 形式になります。 

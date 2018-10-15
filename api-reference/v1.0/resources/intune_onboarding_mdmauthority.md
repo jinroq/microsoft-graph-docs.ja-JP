@@ -6,10 +6,15 @@
 ## <a name="members"></a>メンバー
 |メンバー|値|説明|
 |:---|:---|:---|
-|unknown|0|不明|
+|不明|0|不明|
 |intune|1|Intune|
 |sccm|2|SCCM|
 |office365|3|Office365|
+
+
+
+
+
 
 
 

@@ -8,7 +8,7 @@ Microsoft Graph Security API は、Microsoft のセキュリティ製品、サ�
 
 ## <a name="why-use-the-microsoft-graph-security-api"></a>Microsoft Graph セキュリティ API を使用する理由
 
- [Microsoft グラフ セキュリティ API](../api-reference/v1.0/resources/security-api-overview.md) を使用すれば、Microsoft および Microsoft パートナーのさまざまなセキュリティ製品およびサービスの接続を簡単に行うことができます。 これらソリューションをより容易に、より高い価値で実現することができます。
+[Microsoft グラフ セキュリティ API](../api-reference/v1.0/resources/security-api-overview.md) を使用すれば、Microsoft および Microsoft パートナーのさまざまなセキュリティ製品およびサービスの接続を簡単に行うことができます。 それらのソリューションの実現がさらに容易になり、その価値が高まります。
 
 ### <a name="unify-and-standardize-alert-tracking"></a>アラート追跡の統一と標準化
 
@@ -22,7 +22,7 @@ Microsoft Graph Security API は、Microsoft のセキュリティ製品、サ�
 
 追加のコンテキストまたは脅威インテリジェンスに警告を関連付け、応答と修復を通知します。 すべてのワークフローにおいて、警告に関するコメントやフィードバックが可視化されるようになります。 警告の状態および割り当てを最新に保つことにより、すべての統合ソリューションが現在の状態を反映するようにします。 Webhook サブスクリプションを使用すると、変更の通知を受け取ることができます。  
 
-### <a name="unlock-security-context-to-drive-investigation"></a>セキュリティ コンテキストをロック解除してドライブを調査する
+### <a name="unlock-security-context-to-drive-investigation"></a>セキュリティ コンテキストをロックを解除して調査を促進
 
 関連するセキュリティ関連インベントリ (ユーザー、ホスト、アプリなど) を深く掘り下げ、Microsoft Graph の他のプロバイダー (Azure AD、Microsoft Intune、Office 365) からの組織コンテキストを追加することにより、ビジネス コンテキストとセキュリティ コンテキストをまとめて、脅威への対応を向上させます。
 
@@ -36,11 +36,11 @@ Microsoft Secure Score (プレビュー) は組織のセキュリティのニー
 
 |**領域**     | **利点**|
 |:---------------|:---------|
-|**マネージド セキュリティ サービス プロバイダ (MSSP)**|<ul><li>セキュリティ操作ツールとサービスの合理的な統合。</li> <li>展開と保守に要する時間を短縮し、作業を減らします。</li> <li>MSSP ユーザーにより多くの価値を提供する機能。</li></ul>|
-|**SIEM と IT リスク管理ソリューション**|<ul><li>Microsoft のセキュリティ ソリューションとエコシステム パートナーをスムーズに統合します。</li> <li>豊富な警告メタデータ。</li> <li>警告の相関関係を向上します。</li></ul>|
-|**アプリケーション** <br> (脅威インテリジェンス、モバイル、クラウド、IOT、詐欺検出、アイデンティティとアクセス、リスクとコンプライアンス、ファイアウォール、など)|<ul><li>さまざまなセキュリティ ・ ソリューションにまたがる脅威管理、防御、およびリスク管理の統合。</li> <li>警告、在庫、構成、および Microsoft Graph を通じて公開されるアクション。</li> <li>Microsoft Graph により有効化されたソリューションの即座の統合。</li></ul>|
+|**マネージド セキュリティ サービス プロバイダ (MSSP)**|<ul><li>セキュリティ操作ツールとサービスの合理的な統合。</li> <li>配備とメンテナンスの時間と労力を削減。</li> <li>MSSP ユーザーにより多くの価値を提供する機能。</li></ul>|
+|**SIEM と IT リスク管理ソリューション**|<ul><li>マイクロソフトのセキュリティソリューションおよびエコシステムパートナーとのスムーズな統合</li> <li>豊富な警告メタデータ。</li> <li>警告の相関関係を向上します。</li></ul>|
+|**アプリケーション** <br>(脅威インテリジェンス、モバイル、クラウド、IOT、詐欺検出、アイデンティティとアクセス、リスクとコンプライアンス、ファイアウォール、など)|<ul><li>様々なセキュリティソリューションにわたる統一された脅威管理、予防、およびリスク管理。</li> <li>警告、在庫、構成、および Microsoft Graph を通じて公開されるアクション。</li> <li>Microsoft Graph により有効化されたソリューションの即座の統合。</li></ul>|
 
 ## <a name="next-steps"></a>次の手順
 
 - [Microsoft Graph セキュリティ API を使用する](../api-reference/v1.0/resources/security-api-overview.md)
-- セキュリティ プロバイダになることに関心がありますか？  [「Graphsecfeedback」](mailto:graphsecfeedback@microsoft.com)にアクセスしてください。
+- セキュリティ プロバイダになることに関心がありますか？ [「Graphsecfeedback」](mailto:graphsecfeedback@microsoft.com)にアクセスしてください。

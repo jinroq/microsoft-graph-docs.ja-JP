@@ -10,10 +10,15 @@
 |allBlocked|1|すべてのテレビ番組コンテンツを不許可|
 |childrenAll|2|TV-Y、すべての子供|
 |childrenAbove7|3|TV-Y7、7 歳以上の子供|
-|general|4|TV-G、すべての子供向け|
+|全般|4|TV-G、すべての子供向け|
 |parentalGuidance|5|TV-PG、保護者の助言と指導が必要|
 |childrenAbove14|6|TV-14、14 歳以上の子供|
-|adults|7|TV-MA、成人のみ|
+|成人|7|TV-MA、成人のみ|
+
+
+
+
+
 
 
 

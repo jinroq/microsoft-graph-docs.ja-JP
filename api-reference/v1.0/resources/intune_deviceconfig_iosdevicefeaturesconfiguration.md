@@ -44,8 +44,8 @@ iOS デバイス機能構成のプロファイル。
 以下は、リソースの JSON 表記です。
 <!--{
   "blockType": "resource",
-  "keyProperty": "id",
   "baseType": "microsoft.graph.appleDeviceFeaturesConfigurationBase",
+  "keyProperty": "id",
   "@odata.type": "microsoft.graph.iosDeviceFeaturesConfiguration"
 }-->
 ``` json
@@ -84,7 +84,7 @@ iOS デバイス機能構成のプロファイル。
       "displayName": "String",
       "icons": [
         {
-          "@odata.type": "microsoft.graph.iosHomeScreenFolder",
+          "@odata.type": "microsoft.graph.iosHomeScreenItem",
           "displayName": "String",
           "pages": [
             {
@@ -119,6 +119,11 @@ iOS デバイス機能構成のプロファイル。
   ]
 }
 ```
+
+
+
+
+
 
 
 

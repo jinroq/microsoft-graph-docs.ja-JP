@@ -1,4 +1,4 @@
-# <a name="update-chartdatalabels"></a>Update chartdatalabels
+# <a name="update-chartdatalabels"></a>chartdatalabels を更新する
 
 chartdatalabels オブジェクトのプロパティを更新します。
 ## <a name="permissions"></a>アクセス許可
@@ -13,20 +13,20 @@ chartdatalabels オブジェクトのプロパティを更新します。
 ## <a name="http-request"></a>HTTP 要求
 <!-- { "blockType": "ignored" } -->
 ```http
-PATCH /workbook/worksheets/{id|name}/charts(<name>)/datalabels
+PATCH /workbook/worksheets/{id|name}/charts/{name}/dataLabels
 ```
 ## <a name="optional-request-headers"></a>オプションの要求ヘッダー
 | 名前       | 説明|
 |:-----------|:-----------|
-| Authorization  | ベアラー {トークン}。必須。 |
+| 承認  | ベアラー {トークン}。必須。 |
 | Workbook-Session-Id  | 変更を保持するかどうかを決定するブック セッション ID。省略可能。|
 
 ## <a name="request-body"></a>要求本文
 要求本文で、更新する関連フィールドの値を指定します。要求本文に含まれない既存のプロパティは、以前の値のままになるか、他のプロパティ値の変化に基づいて再計算されます。最適なパフォーマンスを得るためには、変更されていない既存の値を含めないでください。
 
-| プロパティ     | 型   |説明|
+| プロパティ     | タイプ   |説明|
 |:---------------|:--------|:----------|
-|position|string|データ ラベルの位置を表す DataLabelPosition 値。可能な値は、`None`、`Center`、`InsideEnd`、`InsideBase`、`OutsideEnd`、`Left`、`Right`、`Top`、`Bottom`、`BestFit`、`Callout` です。|
+|position|string|データ ラベルの位置を表す DataLabelPosition 値。 可能な値は、`None`, `Center`, `InsideEnd`, `InsideBase`, `OutsideEnd`, `Left`, `Right`, `Top`, `Bottom`, `BestFit`, `Callout` です。|
 |separator|string|グラフのデータ ラベルに使用される区切り文字を表す文字列を設定します。|
 |showBubbleSize|boolean|データ ラベルのバブルのサイズを表示または非表示にするかを表すブール型の値。|
 |showCategoryName|boolean|データ ラベルのカテゴリ名を表示するか非表示にするかを表すブール型の値。|
@@ -37,7 +37,7 @@ PATCH /workbook/worksheets/{id|name}/charts(<name>)/datalabels
 
 ## <a name="response"></a>応答
 
-成功した場合、このメソッドは `200 OK` 応答コードと、応答本文で、更新された [ChartDataLabels](../resources/chartdatalabels.md) オブジェクトを返します。
+成功した場合、このメソッドは `200 OK` 応答コードを返し、応答本文で[WorkbookChartDataLabels](../resources/chartdatalabels.md) オブジェクトを更新します。
 ## <a name="example"></a>例
 ##### <a name="request"></a>要求
 以下は、要求の例です。
@@ -46,7 +46,7 @@ PATCH /workbook/worksheets/{id|name}/charts(<name>)/datalabels
   "name": "update_chartdatalabels"
 }-->
 ```http
-PATCH https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/{id|name}/charts(<name>)/datalabels
+PATCH https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/{id|name}/charts/{name}/dataLabels
 Content-type: application/json
 Content-length: 134
 
@@ -63,7 +63,7 @@ Content-length: 134
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.chartDataLabels"
+  "@odata.type": "microsoft.graph.workbookChartDataLabels"
 } -->
 ```http
 HTTP/1.1 200 OK

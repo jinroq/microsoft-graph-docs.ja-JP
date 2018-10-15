@@ -15,10 +15,10 @@
 ## <a name="properties"></a>プロパティ
 |プロパティ|型|説明|
 |:---|:---|:---|
-|id|String|オブジェクトの GUID|
-|orderIdentifier|String|Windows オートパイロット デバイスの受注 ID。|
-|シリアル番号|String|Windows オートパイロット デバイスのシリアル番号。|
-|productKey|String|Windows オートパイロット デバイスのプロダクト キー。|
+|ID|文字列|オブジェクトの GUID|
+|orderIdentifier|文字列|Windows オートパイロット デバイスの受注 ID。|
+|シリアル番号|文字列|Windows オートパイロット デバイスのシリアル番号。|
+|productKey|文字列|Windows オートパイロット デバイスのプロダクト キー。|
 |hardwareIdentifier|バイナリ|Windows オートパイロット デバイスのハードウェア BLOB。|
 |状態|[importedWindowsAutopilotDeviceIdentityState](../resources/intune_enrollment_importedwindowsautopilotdeviceidentitystate.md)|インポートしたデバイスの現在の状態。|
 
@@ -49,6 +49,11 @@
   }
 }
 ```
+
+
+
+
+
 
 
 

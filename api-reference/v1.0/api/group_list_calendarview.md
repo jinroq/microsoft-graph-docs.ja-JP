@@ -21,17 +21,17 @@ GET /groups/{id}/calendarView?startDateTime={start_datetime}&endDateTime={end_da
 
 | パラメーター    | 型   |説明|
 |:---------------|:--------|:----------|
-|startDateTime|String|時間範囲の開始日時は、ISO 8601 形式で表されます。例: "2015-11-08T19:00:00.0000000"。|
-|endDateTime|String|時間範囲の終了日時は、ISO 8601 形式で表されます。例: "2015-11-08T20:00:00.0000000"。|
+|startDateTime|文字列|時間範囲の開始日時は、ISO 8601 形式で表されます。例: "2015-11-08T19:00:00.0000000"。|
+|endDateTime|文字列|時間範囲の終了日時は、ISO 8601 形式で表されます。例: "2015-11-08T20:00:00.0000000"。|
 
 また、このメソッドは応答をカスタマイズするための [OData クエリ パラメーター](../../../concepts/query_parameters.md)もサポートします。
 
 ## <a name="request-headers"></a>要求ヘッダー
 | 名前       | 型 | 説明 |
 |:---------------|:--------|:--------|
-| Authorization  | string | ベアラー {トークン}。必須。  |
-| 優先: outlook.timezone  | string | これを使用して、応答内の開始および終了時刻のタイム ゾーンを指定します。 指定しない場合、これらの時刻値は UTC で返されます。 省略可能。 |
-| Prefer: outlook.body-content-type | string | **body** プロパティが返されるときの形式です。 値は、"text" または "html" になります。 この `Prefer` ヘッダーが指定されている場合、`Preference-Applied` ヘッダーが確認として返されます。 このヘッダーが指定されていない場合は、**body** プロパティが HTML 形式で返されます。 省略可能。 |
+| 承認  | 文字列 | ベアラー {トークン}。必須。  |
+| 優先: outlook.timezone  | 文字列 | これを使用して、応答内の開始および終了時刻のタイム ゾーンを指定します。 指定しない場合、これらの時刻値は UTC で返されます。 省略可能。 |
+| 優先: outlook.body-content-type | 文字列 | **body** プロパティが返されるときの形式です。 値は、"text" または "html" になります。 この `Prefer` ヘッダーが指定されている場合、`Preference-Applied` ヘッダーが確認として返されます。 このヘッダーが指定されていない場合は、**body** プロパティが HTML 形式で返されます。 省略可能。 |
 
 ## <a name="request-body"></a>要求本文
 このメソッドには、要求本文を指定しません。
@@ -44,6 +44,7 @@ GET /groups/{id}/calendarView?startDateTime={start_datetime}&endDateTime={end_da
 次の例では、イベントの本文をテキスト形式で返すよう要求します。
 <!-- {
   "blockType": "request",
+  "sampleKeys": ["02bd9fd6-8f93-4758-87c3-1fb73740a315"],
   "name": "get_calendarview"
 }-->
 ```http
@@ -53,7 +54,7 @@ Prefer: outlook.body-content-type="text"
 
 #### <a name="response"></a>応答
 応答の例を次に示します。
->**注:** ここに示す応答オブジェクトは、読みやすさのために短縮されている場合があります。 実際の呼び出しではすべてのプロパティが返されます。
+>**注:** 読みやすくするために、ここに示す応答オブジェクトは短くされている場合があります。実際の呼び出しからは、すべてのプロパティが返されます。
 <!-- {
   "blockType": "response",
   "truncated": true,
