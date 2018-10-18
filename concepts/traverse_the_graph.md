@@ -34,7 +34,7 @@ GET https://graph.microsoft.com/v1.0/users HTTP/1.1
 Authorization : Bearer {access_token}
 ```
 
-成功した場合は、200 OK 応答が返され、そのペイロードに [user](..\api-reference\v1.0\resources\user.md) リソースのコレクションが含まれています。各ユーザーは **id** プロパティによって識別され、既定のプロパティが返されます。簡潔にするため、以下に示すペイロードは切り捨てられています。
+成功した場合は、200 OK 応答が返され、そのペイロードに [user](../api-reference/v1.0/resources/user.md) リソースのコレクションが含まれています。各ユーザーは **id** プロパティによって識別され、既定のプロパティが返されます。簡潔にするため、以下に示すペイロードは切り捨てられています。
 
 ```no-highlight 
 HTTP/1.1 200 OK
@@ -77,14 +77,14 @@ Content-type: application/json
 }
 ```
 
-Microsoft Graph を使用すると、1 つのリソースと別のリソース間のリレーションシップをナビゲートすることにより、コレクションを表示することもできます。たとえば、ユーザーの **mailFolders** ナビゲーション プロパティを通して、そのユーザーのメールボックス内の [mailFolder](..\api-reference\v1.0\resources\mailfolder.md) リソースのコレクションに対してクエリを実行することができます。
+Microsoft Graph を使用すると、1 つのリソースと別のリソース間のリレーションシップをナビゲートすることにより、コレクションを表示することもできます。たとえば、ユーザーの **mailFolders** ナビゲーション プロパティを通して、そのユーザーのメールボックス内の [mailFolder](../api-reference/v1.0/resources/mailfolder.md) リソースのコレクションに対してクエリを実行することができます。
 
 ```no-highlight 
 GET https://graph.microsoft.com/v1.0/me/mailfolders HTTP/1.1
 Authorization : Bearer {access_token}
 ```
 
-成功した場合は、200 OK 応答が返され、そのペイロードに [mailFolder](..\api-reference\v1.0\resources\user.md) リソースのコレクションが含まれています。各 **mailFolder** は **id** プロパティによって識別され、いくつかのプロパティも返されます。簡潔にするため、以下に示すペイロードは切り捨てられています。
+成功した場合は、200 OK 応答が返され、そのペイロードに [mailFolder](../api-reference/v1.0/resources/user.md) リソースのコレクションが含まれています。各 **mailFolder** は **id** プロパティによって識別され、いくつかのプロパティも返されます。簡潔にするため、以下に示すペイロードは切り捨てられています。
 
 ```no-highlight 
 HTTP/1.1 200 OK
@@ -162,7 +162,7 @@ GET https://graph.microsoft.com/v1.0/users/john.doe@contoso.onmicrosoft.com?$sel
 Authorization : Bearer {access_token}
 ```
 
-成功した場合の応答は、200 OK 状態と、次に示すペイロードを返します。
+表示のように、成功した場合の応答は 200 OK 状態とペイロードを返します。
 
 ```no-highlight 
 HTTP/1.1 200 OK
@@ -310,7 +310,7 @@ content-length: 96
     ],
     "attachments": [
       {
-        "@odata.type": "#Microsoft.OutlookServices.FileAttachment",
+        "@odata.type": "microsoft.graph.fileAttachment",
         "name": "menu.txt",
         "contentBytes": "bWFjIGFuZCBjaGVlc2UgdG9kYXk="
       }

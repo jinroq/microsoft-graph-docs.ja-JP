@@ -4,7 +4,7 @@
 
 > **すべてのエンタープライズのお客様**の**すべてのエンタープライズ シナリオ**をサポートするには、Azure AD エンドポイントを使用し、[Azure ポータル](https://aka.ms/aadapplist)でアプリを管理する必要があります。詳細については、「[Azure AD か Azure AD v2.0 エンドポイントかを決定する](../concepts/auth_overview.md#deciding-between-the-azure-ad-and-azure-ad-v20-endpoints)」を参照してください。
 
-この記事では、[Azure AD v2.0 エンドポイント](https://developer.microsoft.com/ja-JP/graph/docs/concepts/converged_auth)からアクセス トークンを取得し、Microsoft Graph を呼び出すために必要なタスクについて説明します。ここでは、[iOS (REST) 用 Office 365 Connect サンプル](https://github.com/microsoftgraph/ios-swift-connect-rest-sample)内のコードを説明し、Microsoft Graph を使用するアプリで実装する主要な概念について説明します。非同期の **Promise チェーン** パターンで REST 操作を使用して Microsoft Graph にアクセスする方法を説明します。サンプル内の Promise は、[mxcl/PromiseKit 4.5.2](https://github.com/mxcl/PromiseKit/blob/master/README.md) CocoaPods を使用して実装されています。 
+この記事では、[Azure AD v2.0 エンドポイント](https://developer.microsoft.com/en-us/graph/docs/concepts/converged_auth)からアクセス トークンを取得し、Microsoft Graph を呼び出すために必要なタスクについて説明します。ここでは、[iOS (REST) 用 Office 365 Connect サンプル](https://github.com/microsoftgraph/ios-swift-connect-rest-sample)内のコードを説明し、Microsoft Graph を使用するアプリで実装する主要な概念について説明します。非同期の **Promise チェーン** パターンで REST 操作を使用して Microsoft Graph にアクセスする方法を説明します。サンプル内の Promise は、[mxcl/PromiseKit 4.5.2](https://github.com/mxcl/PromiseKit/blob/master/README.md) CocoaPods を使用して実装されています。 
 
 このサンプルは、**Xcode 9.2** と **Swift 3.2** を使用して作成されています。
 
@@ -19,7 +19,7 @@
 
 ワークフローは、サンプルを認証および承認して Microsoft Graph リソースにアクセスし、職場または個人用のアカウントでサインインし、最後に受信者に向けてメールを送信する、というものです。
 
-**アプリを作成してみたくありませんか。**「[Microsoft Graph クイック スタート](https://developer.microsoft.com/ja-JP/graph/quick-start)」を使用すれば、すばやく稼働させることができます。
+**アプリを作成してみたくありませんか。**「[Microsoft Graph クイック スタート](https://developer.microsoft.com/en-us/graph/quick-start)」を使用すれば、すばやく稼働させることができます。
 
 ## <a name="prerequisites"></a>前提条件
 
@@ -29,7 +29,7 @@
 * 依存関係マネージャーとしての [CocoaPods](https://guides.cocoapods.org/using/using-cocoapods.html) のインストール。
 * **MSAL** ライブラリをインポートしてビルドするための [Carthage](https://github.com/Carthage/Carthage) のインストール。
 * [PromiseKit 4.5.2](https://github.com/mxcl/PromiseKit/blob/master/Documentation/Installation.md) CocoaPods のインストール。 
-* [Microsoft アカウント](https://www.outlook.com/)か[職場または学校アカウント](https://docs.microsoft.com/ja-JP/office/developer-program/office-365-developer-program-faq#account-types)
+* [Microsoft アカウント](https://www.outlook.com/)か[職場または学校アカウント](https://docs.microsoft.com/en-us/office/developer-program/office-365-developer-program-faq#account-types)
 
 ## <a name="register-the-app"></a>アプリを登録する
  
@@ -71,7 +71,7 @@ MSAL のプレビュー バージョンは、Carthage を使用してヘッダ�
  
 Xcode8 には、キーチェーンのグループを追加する必要があります。これを行わないと、アプリがキーチェーンにアクセスできなくなります。キーチェーン グループを追加するには:
  
-1. Xcode のプロジェクト マネージャーのパネルで、プロジェクトを選択します  (⌘ + 1)。
+1. Xcode のプロジェクト マネージャーのパネルで、プロジェクトを選択します (⌘ + 1)。
  
 2. **O365-iOS-Microsoft-Graph-Connect-swift** ターゲットを選択します。
 
@@ -83,7 +83,7 @@ Xcode8 には、キーチェーンのグループを追加する必要があり�
 
 ## <a name="authenticating-with-microsoft-graph"></a>Microsoft Graph での認証
 
-UI のワークフローは次のようになっています。まず、アプリがユーザーに認証を要求します。 認証後、ユーザーは他のユーザーにメールを送信できるようになります。 Microsoft Graph に対して要求を行うため、このサンプルは **MSAL** 認証ライブラリを使用して、適切な OAuth 2.0 ベアラー トークンによって HTTPS 要求を認証します。 サンプル プロジェクトでは、**AuthenticationClass.swift**  クラスが **MSAL** ライブラリをインポートし、Microsoft Graph の REST 操作に必要なアクセス トークンを取得します。
+UI のワークフローは次のようになっています。まず、アプリがユーザーに認証を要求します。 認証後、ユーザーは他のユーザーにメールを送信できるようになります。 Microsoft Graph に対して要求を行うため、このサンプルは **MSAL** 認証ライブラリを使用して、適切な OAuth 2.0 ベアラー トークンによって HTTPS 要求を認証します。 サンプル プロジェクトでは、**AuthenticationClass.swift** クラスが **MSAL** ライブラリをインポートし、Microsoft Graph の REST 操作に必要なアクセス トークンを取得します。
 
 1. **Xcode** プロジェクト ワークスペース (**Graph-iOS-Swift-Connect.xcworkspace**) を開き、クラス ファイル **AuthenticationClass.swift** を開きます。そのクラスで次のコードを検索します。
 
@@ -183,9 +183,9 @@ private extension ConnectViewController {
 
 メッセージの本文には、写真の共有リンクと、写真自体が添付された画像ファイルとして含まれています。 既定の受信者は認証されたユーザーですが、サンプルではこのユーザーが他のユーザーのメール アドレスを入力できるようになっています。 
 
-ここで操作するコードは、**SendMailViewController_WithPromise.swift** クラスに属しています。 `viewDidLoad()` 関数は `self.emailTextField.text` の値を読み取ってメール受信者のメール アドレスを取得し、**Promise チェーン**を開始して認証されたユーザーのプロフィール写真を取得します。 PromisePromise が拒否される場合は、`sendMailButton` が有効になっていません。
+ここで操作するコードは、**SendMailViewController_WithPromise.swift** クラスに属しています。 関数は `self.emailTextField.text` の値を読み取ってメール受信者のメール アドレスを取得し、**Promise チェーン**を開始して認証されたユーザーのプロフィール写真を取得します。`viewDidLoad()` PromisePromise が拒否される場合は、`sendMailButton` が有効になっていません。
 
-1. **SendMailViewController_WithPromise.swift** を開き、 `viewDidLoad` 関数を見つけます。 `self.userPictureWork` 関数は Promise チェーンを開始するために呼び出されます。
+1. **SendMailViewController_WithPromise.swift** を開き、 関数を見つけます。`viewDidLoad` 関数は Promise チェーンを開始するために呼び出されます。`self.userPictureWork`
 
    ```swift
     override func viewDidLoad() {
@@ -432,7 +432,7 @@ private extension ConnectViewController {
 ## <a name="run-the-app"></a>アプリの実行
 1. サンプルを実行する前に、「**アプリの登録**」セクションの登録プロセスで受け取ったクライアント ID を指定する必要があります。 ソース コードとして **Info.plist** を開きます。 
 
-   - `ENTER_CLIENT_ID_HERE` を、登録プロセスで受け取った **ClientID** に置き換えます。 `msal` を置き換えないようにしてください。 文字列を置換した後、配列の文字列値は `msal48d31887-5fad-4d73-a9f5-3c356e68a038` のようになります。GUID の部分は**ユーザーの**クライアント ID です。  
+   - を、登録プロセスで受け取った **ClientID** に置き換えます。`ENTER_CLIENT_ID_HERE` を置き換えないようにしてください。`msal` 文字列を置換した後、配列の文字列値は `msal48d31887-5fad-4d73-a9f5-3c356e68a038` のようになります。GUID の部分は**ユーザーの**クライアント ID です。  
 
    次に例を示します。 
 
@@ -483,5 +483,5 @@ private extension ConnectViewController {
 - [Microsoft Graph iOS Objective C スニペット サンプル](https://github.com/microsoftgraph/ios-objectiveC-snippets-sample)に、SDK 操作の一般的な操作の例があります。
 
 ## <a name="see-also"></a>関連項目
-- [Azure AD v2.0 のプロトコル](https://azure.microsoft.com/ja-JP/documentation/articles/active-directory-v2-protocols/)
-- [Azure AD v2.0 のトークン](https://azure.microsoft.com/ja-JP/documentation/articles/active-directory-v2-tokens/)
+- [Azure AD v2.0 のプロトコル](https://azure.microsoft.com/en-us/documentation/articles/active-directory-v2-protocols/)
+- [Azure AD v2.0 のトークン](https://azure.microsoft.com/en-us/documentation/articles/active-directory-v2-tokens/)

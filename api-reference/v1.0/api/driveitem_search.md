@@ -2,17 +2,18 @@
 author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
-title: "ファイルを検索する"
-ms.openlocfilehash: 1d4b4153f6c208390d928fc7833ecc5e1a9be094
-ms.sourcegitcommit: 7aea7a97e36e6d146214de3a90fdbc71628aadba
+title: ファイルを検索する
+ms.openlocfilehash: 35349150847c86d1fc7198309c13d910290b9019
+ms.sourcegitcommit: abf4b739257e3ffd9d045f783ec595d846172590
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23265233"
 ---
 # <a name="search-for-a-driveitems-within-a-drive"></a>ドライブ内の DriveItems を検索する
 
 クエリと一致するアイテムを対象にアイテムの階層を検索します。
-フォルダー階層内、ドライブ全体、現在のユーザーと共有されるファイル内で検索できます。
+フォルダー階層内、ドライブ全体、または現在のユーザーと共有されるファイル内で検索できます。
 
 ## <a name="permissions"></a>アクセス許可
 
@@ -44,7 +45,7 @@ GET /users/{user-id}/drive/root/search(q='{search-text}')
 
 | 名前 | 値  | 説明                                                                                                                          |
 |:-----|:-------|:-------------------------------------------------------------------------------------------------------------------------------------|
-| `q`  | string | アイテムの検索に使用するクエリ テキスト。値は、ファイル名、メタデータ、およびファイルのコンテンツを含む複数のフィールドに渡って照合できます。 |
+| `q`  | 文字列 | アイテムの検索に使用するクエリ テキスト。値は、ファイル名、メタデータ、およびファイルのコンテンツを含む複数のフィールドに渡って照合できます。 |
 
 ## <a name="example"></a>例
 
@@ -52,7 +53,7 @@ GET /users/{user-id}/drive/root/search(q='{search-text}')
 
 ここでは、現在のユーザーの OneDrive を検索する要求の例を示します。
 
-<!-- { "blockType": "request", "name": "item_search" }-->
+<!-- { "blockType": "request", "name": "item_search", "tags": "service.graph" }-->
 
 ```http
 GET /me/drive/root/search(q='{search-query}')
@@ -95,7 +96,7 @@ Content-type: application/json
 
 ### <a name="example"></a>例
 
-<!-- { "blockType": "request", "name": "item_search_all" }-->
+<!-- { "blockType": "request", "name": "item_search_all", "tags": "service.graph" }-->
 
 ```http
 GET /me/drive/search(q='{search-query}')
@@ -118,7 +119,7 @@ Content-type: application/json
         "name": "Contoso Project",
         "folder": {},
         "searchResult": { "onClickTelemetryUrl": "https://bing.com/0123456789abc!123" },
-        "remoteItem": { "id": "!23141901", "driveId": "s!1020101jlkjl12lx" }
+        "remoteItem": { "id": "!23141901", "parentReference": { "driveId": "s!1020101jlkjl12lx" } }
       },
       {
         "id": "0123456789abc!456",

@@ -8,7 +8,7 @@ Azure AD エンドポイントを使用するバージョンの Connect サン�
 
 ![Microsoft Ruby on Rails Connect サンプルのスクリーンショット](./images/Microsoft-Graph-Ruby-Connect-UI.png)
 
-**アプリを作成してみたくありませんか。**[Microsoft Graph クイック スタート](https://graph.microsoft.io/ja-JP/getting-started)を使用してすぐに使い始めるか、またはこの記事で取り扱っている [Ruby REST Connect サンプル](https://github.com/microsoftgraph/ruby-connect-rest-sample)をダウンロードしてください。
+**アプリを作成してみたくありませんか。**[Microsoft Graph クイック スタート](https://graph.microsoft.io/en-us/getting-started)を使用してすぐに使い始めるか、またはこの記事で取り扱っている [Ruby REST Connect サンプル](https://github.com/microsoftgraph/ruby-connect-rest-sample)をダウンロードしてください。
 
 
 ## <a name="prerequisites"></a>前提条件
@@ -19,8 +19,8 @@ Azure AD エンドポイントを使用するバージョンの Connect サン�
 - Rails フレームワーク (このサンプルは Rails 4.2 でテストされています)。
 - Bundler 依存関係マネージャー。
 - Ruby 用の Rack Web サーバー インターフェイス。
-- [Microsoft アカウント](https://www.outlook.com/)か[職場または学校アカウント](https://docs.microsoft.com/ja-JP/office/developer-program/office-365-developer-program-faq#account-types)
-- Ruby on Rails 用の Microsoft Graph Connect スターター プロジェクト。[Microsoft Graph Ruby on Rails Connect サンプル](https://github.com/microsoftgraph/ruby-connect-rest-sample)をダウンロードします。スタート プロジェクトはスターター フォルダー内にあります。
+- [Microsoft アカウント](https://www.outlook.com/)か[職場または学校アカウント](https://docs.microsoft.com/en-us/office/developer-program/office-365-developer-program-faq#account-types)
+- Ruby on Rails 用の Microsoft Graph Connect スターター プロジェクト。[Microsoft Graph Ruby on Rails Connect サンプル](https://github.com/microsoftgraph/ruby-connect-rest-sample)をダウンロードします。スタート プロジェクトはスターター フォルダー内にあります。__
 
 
 ## <a name="register-the-application"></a>アプリケーションの登録
@@ -53,7 +53,7 @@ Microsoft アプリケーション登録ポータルでアプリケーション�
 
 ## <a name="configure-the-project"></a>プロジェクトを構成する
 
-1. [Microsoft Graph Ruby on Rails Connect サンプル](https://github.com/microsoftgraph/ruby-connect-rest-sample)をダウンロードするか、複製を作成します。任意のエディターで、スターター フォルダーを開きます。
+1. [Microsoft Graph Ruby on Rails Connect サンプル](https://github.com/microsoftgraph/ruby-connect-rest-sample)をダウンロードするか、複製を作成します。任意のエディターで、スターター フォルダーを開きます。__
 1. Bundler と Rack がない場合は、次のコマンドでインストールできます。
 
     ```
@@ -79,7 +79,7 @@ Microsoft アプリケーション登録ポータルでアプリケーション�
 2. 認証コードを取得する
 3. 認証コードをアクセス トークンに交換する
 
->この認証フローの詳細については、Azure AD のドキュメントにある「[Web アプリケーション対 Web API](https://azure.microsoft.com/ja-JP/documentation/articles/active-directory-authentication-scenarios/#web-application-to-web-api)」および「[OpenID Connect を使用した Microsoft ID と Microsoft Graph の Web アプリケーションへの統合](https://azure.microsoft.com/ja-JP/documentation/samples/active-directory-dotnet-webapp-openidconnect-v2/)」を参照してください。
+>この認証フローの詳細については、Azure AD のドキュメントにある「[Web アプリケーション対 Web API](https://azure.microsoft.com/en-us/documentation/articles/active-directory-authentication-scenarios/#web-application-to-web-api)」および「[OpenID Connect を使用した Microsoft ID と Microsoft Graph の Web アプリケーションへの統合](https://azure.microsoft.com/en-us/documentation/samples/active-directory-dotnet-webapp-openidconnect-v2/)」を参照してください。
 
 [Rack](http://rack.github.io/) ミドルウェアの積み重ねられた 3 つのピースを使用して、アプリが Microsoft Graph に対して認証できるようにします。
 
@@ -97,11 +97,11 @@ Gemfile では、次の gem のコメントを解除して、依存関係とし�
     gem 'omniauth-microsoft_v2_auth', path: './omniauth-microsoft_v2_auth'
     ```
 
-`omniauth-microsoft_v2_auth` はアプリ プロジェクトに含まれ、指定したパスからインストールされることに注意してください。 
+はアプリ プロジェクトに含まれ、指定したパスからインストールされることに注意してください。`omniauth-microsoft_v2_auth` 
 
 ### <a name="configure-the-authentication-middleware"></a>アプリケーション ミドルウェアを構成する
 
-`config/initializers/omniauth-microsoft_v2_auth.rb` で、次の行のコメントを解除します。
+で、次の行のコメントを解除します。`config/initializers/omniauth-microsoft_v2_auth.rb`
 
     ```
     Rails.application.config.middleware.use OmniAuth::Builder do
@@ -117,7 +117,7 @@ Gemfile では、次の gem のコメントを解除して、依存関係とし�
 
 ここで、認証フローに必要な 2 つのルートを指定する必要があります。最初のルートは認証要求を OmniAuth ミドルウェアに転送し、2 つめのルートは認証が実行されたときに OmniAuth がリダイレクトするアプリ内の場所を指定します。
 
-`config/routes.rb` で、次のルート ディレクティブのコメントを解除します。
+で、次のルート ディレクティブのコメントを解除します。`config/routes.rb`
 
     get '/login', to: 'pages#login'
 
@@ -147,7 +147,7 @@ OmniAuth がユーザーの認証を完了すると、アプリ登録で指定�
 
 それでは、OmniAuth コールバックを処理するコードを追加して、そのハッシュから情報を取得しましょう。 
 
-`app/controllers/pages_controller.rb` で、空の `callback` メソッドを次のコードに置き換えます。
+で、空の `callback` メソッドを次のコードに置き換えます。`app/controllers/pages_controller.rb`
 
     ```
     def callback
@@ -179,7 +179,7 @@ OmniAuth がユーザーの認証を完了すると、アプリ登録で指定�
 
 これで、Microsoft Graph を呼び出すためのコードを追加する準備が整いました。 
 
-`callback` メソッド (`app/views/pages/callback.html.erb`) で表示されるビューには、ボタン 1 つの簡単なフォームが含まれています。フォームは、`send_mail` に投稿するものであり、対象の受信者の電子メール アドレスである、1 つのパラメーターが含まれています。
+メソッド (`app/views/pages/callback.html.erb`) で表示されるビューには、ボタン 1 つの簡単なフォームが含まれています。フォームは、`send_mail` に投稿するものであり、対象の受信者の電子メール アドレスである、1 つのパラメーターが含まれています。`callback`
     
     ``` 
     <form action="../../send_mail" method="post">
@@ -194,7 +194,7 @@ OmniAuth がユーザーの認証を完了すると、アプリ登録で指定�
         ...
     ```
 
-`app/controllers/pages_controller.rb` で、空の `send_mail` メソッドを次のコードに置き換えます。
+で、空の `send_mail` メソッドを次のコードに置き換えます。`app/controllers/pages_controller.rb`
 
     ```
     def send_mail

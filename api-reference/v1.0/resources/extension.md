@@ -7,7 +7,10 @@ OData v4 のオープン型 [openTypeExtension](openTypeExtension.md) をサポ�
 以下は、リソースの JSON 表記です
 
 <!-- {
+  "abstract": "true",
+  "baseType": "microsoft.graph.entity",
   "blockType": "resource",
+  "openType": true,
   "optionalProperties": [
 
   ],
@@ -21,11 +24,11 @@ OData v4 のオープン型 [openTypeExtension](openTypeExtension.md) をサポ�
 
 ```
 ## <a name="properties"></a>プロパティ
-| プロパティ       | 型    |説明|
+| プロパティ     | タイプ   |説明|
 |:---------------|:--------|:----------|
-|id|String| 読み取り専用です。|
+|ID|文字列| 読み取り専用。|
 
-## <a name="relationships"></a>関係
+## <a name="relationships"></a>リレーションシップ
 なし
 
 

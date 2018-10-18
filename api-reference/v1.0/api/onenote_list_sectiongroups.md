@@ -28,8 +28,8 @@ GET /sites/{id}/onenote/sectionGroups
 ## <a name="request-headers"></a>要求ヘッダー
 | 名前       | 型 | 説明|
 |:-----------|:------|:----------|
-| Authorization  | string  | ベアラー {トークン}。必須。 |
-| 承諾 | string | `application/json` |
+| 承認  | 文字列  | ベアラー {トークン}。必須。 |
+| 承諾 | 文字列 | `application/json` |
 
 ## <a name="request-body"></a>要求本文
 このメソッドには、要求本文を指定しません。
@@ -52,7 +52,7 @@ GET https://graph.microsoft.com/v1.0/me/onenote/sectionGroups
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.sectiongroup",
+  "@odata.type": "microsoft.graph.sectionGroup",
   "isCollection": true
 } -->
 ```http

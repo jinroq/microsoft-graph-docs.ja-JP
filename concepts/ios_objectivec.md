@@ -134,7 +134,7 @@ UI のワークフローを見直すため、アプリはユーザーに認証�
 
 認証できるようにプロジェクトを構成したら、次のタスクは、Microsoft Graph API を使用してユーザーにメールを送信することです。既定では、ログインしているユーザーが受信者ですが、他の任意の受信者に変更することができます。ここで操作するコードは **Controllers** フォルダーと **SendMailViewController.m** クラスにあります。ここには、UI を表す他のコードや、Microsoft Graph サービスからユーザー プロファイル情報を取得するヘルパー メソッドも入っています。メール メッセージの作成とそのメッセージの送信を行うメソッドに焦点を当てます。
 
-1. Controllers フォルダー内の **SendMailViewController.m** を開いて、**viewDidLoad** メソッドの `self.graphClient = [MSGraphClient client]` の後に次のコードを追加します。
+1. Controllers フォルダー内の **SendMailViewController.m** を開いて、**viewDidLoad** メソッドの `self.graphClient = [MSGraphClient client]` の後に次のコードを追加します。 `self.graphClient = [MSGraphClient client]`
    ```objectivec
        [self getUserInfo:(self.emailAddress) completion:^( NSError *error) {
         if (!error) {

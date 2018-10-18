@@ -1,6 +1,6 @@
 # <a name="company-terms-and-conditions-in-microsoft-intune"></a>Microsoft Intune の会社の使用条件
 
-> **注:**Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://www.microsoft.com/ja-JP/cloud-platform/microsoft-intune-pricing)を持っている必要があります。
+> **注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-pricing)を持っている必要があります。
 
 Intune の使用条件をユーザー グループに展開して、登録、作業リソースへのアクセス、ポータル サイト アプリがデバイスやユーザーにどのように影響するかを説明することができます。 ポータル サイトを使用して自分の仕事に登録してアクセスするには、ユーザーはまず使用条件に同意する必要があります。
 
@@ -8,13 +8,6 @@ Intune の使用条件をユーザー グループに展開して、登録、作
 
 次の Graph リソースを使用して、Intune での会社の使用条件を管理できます。
 
-
-- [すべてのデバイスの割り当て先](intune_companyterms_alldevicesassignmenttarget.md)
-- [すべてのライセンス ユーザーの割り当て先](intune_companyterms_alllicensedusersassignmenttarget.md)
-- [デバイスおよびアプリ管理の割り当て先](intune_companyterms_deviceandappmanagementassignmenttarget.md)
-- [デバイスの管理](intune_companyterms_devicemanagement.md)
-- [除外グループの割り当て先](intune_companyterms_exclusiongroupassignmenttarget.md)
-- [グループの割り当て先](intune_companyterms_groupassignmenttarget.md)
 - [使用条件の承認状態](intune_companyterms_termsandconditionsacceptancestatus.md)
 - [使用条件の割り当て](intune_companyterms_termsandconditionsassignment.md)
 - [使用条件](intune_companyterms_termsandconditions.md)

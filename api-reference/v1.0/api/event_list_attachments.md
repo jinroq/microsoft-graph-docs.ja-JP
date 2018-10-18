@@ -11,18 +11,29 @@
 |アプリケーション | Calendars.Read |
 
 ## <a name="http-request"></a>HTTP 要求
+ユーザーの既定[カレンダー](../resources/calendar.md)内の[ イベント](../resources/event.md)の添付ファイル。
+
+<!--
+Attachments for an [event](../resources/event.md) in the user's or group's default [calendar](../resources/calendar.md).
+-->
+
 <!-- { "blockType": "ignored" } -->
-ユーザーまたはグループの既定の[カレンダー](../resources/calendar.md)内の[イベント](../resources/event.md)の添付ファイル。
 ```http
 GET /me/events/{id}/attachments
 GET /users/{id | userPrincipalName}/events/{id}/attachments
-GET /groups/{id}/events/{id}/attachments
 
 GET /me/calendar/events/{id}/attachments
 GET /users/{id | userPrincipalName}/calendar/events/{id}/attachments
-GET /groups/{id}/calendar/events/{id}/attachments
 ```
-ユーザーの既定 [calendarGroup](../resources/calendargroup.md) に属する[カレンダー](../resources/calendar.md)内[イベント](../resources/event.md)の添付ファイル。
+
+<!--
+GET /groups/{id}/events/{id}/attachments
+GET /groups/{id}/calendar/events/{id}/attachments
+-->
+
+ユーザーの既定 [calendarGroup](../resources/calendargroup.md) に属する[カレンダー](../resources/calendar.md)内の[イベント](../resources/event.md)の添付ファイル。
+
+<!-- { "blockType": "ignored" } -->
 ```http
 GET /me/calendars/{id}/events/{id}/attachments
 GET /users/{id | userPrincipalName}/calendars/{id}/events/{id}/attachments
@@ -31,6 +42,8 @@ GET /me/calendargroup/calendars/{id}/events/{id}/attachments
 GET /users/{id | userPrincipalName}/calendargroup/calendars/{id}/events/{id}/attachments
 ```
 ユーザーの [calendarGroup](../resources/calendargroup.md) に属する[カレンダー](../resources/calendar.md)内[イベント](../resources/event.md)の添付ファイル。
+
+<!-- { "blockType": "ignored" } -->
 ```http
 GET /me/calendargroups/{id}/calendars/{id}/events/{id}/attachments
 GET /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{id}/attachments
@@ -40,7 +53,7 @@ GET /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{i
 ## <a name="request-headers"></a>要求ヘッダー
 | 名前       | 型 | 説明|
 |:-----------|:------|:----------|
-| Authorization  | string  | ベアラー {トークン}。必須。 |
+| 承認  | 文字列  | ベアラー {トークン}。必須。 |
 
 ## <a name="request-body"></a>要求本文
 このメソッドには、要求本文を指定しません。
@@ -63,7 +76,7 @@ GET https://graph.microsoft.com/v1.0/me/events/{id}/attachments
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.attachment",
+  "@odata.type": "collection(microsoft.graph.attachment)",
   "isCollection": true
 } -->
 ```http
@@ -74,15 +87,14 @@ Content-length: 215
 {
   "value": [
     {
-      "@odata.type": "#Microsoft.OutlookServices.FileAttachment",
+      "@odata.type": "microsoft.graph.fileAttachment",
       "contentType": "contentType-value",
       "contentLocation": "contentLocation-value",
-      "contentBytes": "contentBytes-value",
+      "contentBytes": "base64-contentBytes-value",
       "contentId": "null",
       "lastModifiedDateTime": "datetime-value",
       "id": "id-value",
       "isInline": false,
-      "isContactPhoto": false,
       "name": "name-value",
       "size": 99
     }
