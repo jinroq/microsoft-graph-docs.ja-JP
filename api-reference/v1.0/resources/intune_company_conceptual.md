@@ -8,6 +8,6 @@ Intune の使用条件をユーザー グループに展開して、登録、作
 
 次の Graph リソースを使用して、Intune での会社の使用条件を管理できます。
 
+- [使用条件](intune_companyterms_termsandconditions.md)
 - [使用条件の承認状態](intune_companyterms_termsandconditionsacceptancestatus.md)
 - [使用条件の割り当て](intune_companyterms_termsandconditionsassignment.md)
-- [使用条件](intune_companyterms_termsandconditions.md)
