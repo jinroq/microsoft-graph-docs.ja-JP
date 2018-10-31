@@ -7,7 +7,7 @@
 |プロパティ|タイプ|説明|
 |:---|:---|:---|
 |movieRating|[ratingCanadaMoviesType](../resources/intune_deviceconfig_ratingcanadamoviestype.md)|カナダ向けに選択されている映画のレーティング。指定できある値は、`allAllowed`、`allBlocked`、`general`、`parentalGuidance`、`agesAbove14`、`agesAbove18`、`restricted` です。|
-|tvRating|[ratingCanadaTelevisionType](../resources/intune_deviceconfig_ratingcanadatelevisiontype.md)||||UNTRANSLATED_CONTENT_START|||TV rating selected for Canada. Possible values are: `allAllowed`, `allBlocked`, `children`, `childrenAbove8`, `general`, `parentalGuidance`, `agesAbove14`, `agesAbove18`.|||UNTRANSLATED_CONTENT_END||||
+|tvRating|[ratingCanadaTelevisionType](../resources/intune_deviceconfig_ratingcanadatelevisiontype.md)|カナダ向けに選択されているテレビのレーティング。指定できる値は、`allAllowed`、`allBlocked`、`children`、`childrenAbove8`、`general`、`parentalGuidance`、`agesAbove14`、`agesAbove18` です。|
 
 ## <a name="relationships"></a>リレーションシップ
 なし

@@ -1,6 +1,6 @@
 # <a name="event-dismissreminder"></a>イベント: dismissReminder
 
-ユーザー [calendar](../resources/calendar.md) の [event](../resources/event.md) のトリガーされたアラームを閉じる。
+ユーザー [calendar](../resources/event.md) の [event](../resources/calendar.md) のトリガーされたアラームを閉じる。
 
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](../../../concepts/permissions_reference.md)」を参照してください。

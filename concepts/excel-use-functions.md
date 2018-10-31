@@ -1,6 +1,6 @@
 # <a name="use-workbook-functions-in-excel-with-microsoft-graph"></a>Microsoft Graph で Excel のブック関数を使用する
 
-どのブック関数も、`POST /workbook/functions/{function-name}` という構文を使用することにより呼び出すことができます 本文の中で関数の引数は、JSON オブジェクトを使用して指定します。 関数の結果としての `value` および任意の `error` 文字列が、関数の結果のオブジェクトに返されます。 `null` の `error` 値は、関数の実行が成功したことを示します。
+どのブック関数も、`POST /workbook/functions/{function-name}` という構文を使用することにより呼び出すことができます 本文の中で関数の引数は、JSON オブジェクトを使用して指定します。 関数の結果としての `value` および任意の `error` 文字列が、関数の結果のオブジェクトに返されます。 `error`の `null`値は、関数の実行が成功したことを示します。
 
 サポートする関数の完全な一覧は、[こちら](https://support.office.com/en-us/article/Excel-functions-alphabetical-b3944572-255d-4efb-bb96-c6d90033e188) で確認できます。特定のパラメータ名とデータ型は関数シグネチャを参照してください。
 

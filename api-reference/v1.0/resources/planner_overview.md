@@ -47,7 +47,7 @@ Planner API は、タスクとプランのデータのほかに、データの�
 | タスク完了までの進行状況を示す列を含むボード ビュー (進行状況タスク ボード) | [progressTaskBoardTaskFormat](plannerprogressTaskBoardTaskFormat.md) オブジェクト     |
 | タスクのカスタム列を含むボード ビュー (バケット タスク ボード)                              | [bucketTaskBoardTaskFormat](plannerbucketTaskBoardTaskFormat.md) オブジェクト         |
 
-|||UNTRANSLATED_CONTENT_START|||The custom columns in the bucket task board are represented by [bucket](plannerbucket.md) objects, and their order by `orderHint` property on the object.|||UNTRANSLATED_CONTENT_END|||
+バケット作業の掲示板では、カスタムの列は、 [バケット](plannerbucket.md) のオブジェクトとそのによって `orderHint` オブジェクトのプロパティです。
 
 すべての順序は、[Planner の順序のヒント](planner_order_hint_format.md) に定められた原則によって制御されます。
 
@@ -77,13 +77,13 @@ Planner API では、一般的なエラーのほかに、サービスで定義�
 | MaximumProjectsSharedWithUser | ユーザーが共有するプランの最大数の制限を超過しています。この制限は、[plannerPlanDetails](plannerPlanDetails.md) リソースの `sharedWith` プロパティに基づいています。                   |
 | MaximumTasksCreatedByUser     | ユーザーが作成するタスクの最大数の制限を超過しています。この制限は、[plannerTask](plannerTask.md) リソースの `createdBy` プロパティに基づいています。                                    |
 | MaximumTasksAssignedToUser    | ユーザーに割り当てられるタスクの最大数の制限を超過しています。この制限は、[plannerTask](plannerTask.md) リソースの `assignments` プロパティに基づいています。                                 |
-| MaximumTasksInProject         | プランにおけるタスクの最大数の制限を超過しています。この制限は、[plannerTask](plannerTask.md) リソースの `planId` プロパティに基づいています。                                               |
+| MaximumTasksInProject         | プランにおけるタスクの最大数の制限を超過しています。この制限は、`planId`[plannerTask](plannerTask.md) リソースの  プロパティに基づいています。                                               |
 | MaximumActiveTasksInProject   | プランで完了されないタスクの最大数の制限を超過しています。この制限は、[plannerTask](plannerTask.md) リソースの `planId` および `percentComplete` プロパティに基づいています。 |
-| MaximumBucketsInProject       | プランにおけるバケットの最大数の制限を超過しています。この制限は、[plannerBucket](plannerBucket.md) リソースの `planId` プロパティに基づいています。                                         |
-| MaximumUsersSharedWithProject | [plannerPlanDetails](plannerPlanDetails.md) リソースの `sharedWith` プロパティに含まれる値が多すぎます。                                                                                          |
-| MaximumReferencesOnTask       | [plannerTaskDetails](plannerTaskDetails.md) リソースの `references` プロパティに含まれる値が多すぎます。                                                                                          |
-| MaximumChecklistItemsOnTask   | [plannerTaskDetails](plannerTaskDetails.md) リソースの `checklist` プロパティに含まれる値が多すぎます。                                                                                           |
-| MaximumAssigneesInTasks       | [plannerTask](plannerTask.md) リソースの `assignments` プロパティに含まれる値が多すぎます。                                                                                                       |
+| MaximumBucketsInProject       | プランにおけるバケットの最大数の制限を超過しています。この制限は、`planId`[plannerBucket](plannerBucket.md) リソースの  プロパティに基づいています。                                         |
+| MaximumUsersSharedWithProject | `sharedWith`[plannerPlanDetails](plannerPlanDetails.md) リソースの  プロパティに含まれる値が多すぎます。                                                                                          |
+| MaximumReferencesOnTask       | `references`[plannerTaskDetails](plannerTaskDetails.md) リソースの  プロパティに含まれる値が多すぎます。                                                                                          |
+| MaximumChecklistItemsOnTask   | `checklist`[plannerTaskDetails](plannerTaskDetails.md) リソースの  プロパティに含まれる値が多すぎます。                                                                                           |
+| MaximumAssigneesInTasks       | `assignments`[plannerTask](plannerTask.md) リソースの  プロパティに含まれる値が多すぎます。                                                                                                       |
 
 ### <a name="412-precondition-failed"></a>412 前提条件が失敗しました 
 

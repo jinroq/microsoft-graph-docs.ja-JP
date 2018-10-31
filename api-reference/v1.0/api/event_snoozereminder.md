@@ -1,6 +1,6 @@
 # <a name="event-snoozereminder"></a>イベント: snoozeReminder
 
-新しいイベントまで [ユーザーの予定表](../resources/calendar.md) の[イベント](../resources/event.md) のお知らせを延期します。
+新しいイベントまで [ユーザーの予定表](../resources/event.md) の[イベント](../resources/calendar.md) のお知らせを延期します。
 
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](../../../concepts/permissions_reference.md)」を参照してください。

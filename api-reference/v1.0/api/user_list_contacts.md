@@ -5,7 +5,7 @@
 アプリが別のユーザーの連絡先フォルダーの連絡先を取得できる 2 つのシナリオがあります。
 
 * このアプリにアプリケーションのアクセス許可がある場合、または、
-* このアプリに、1 人のユーザーから適切な[アクセス許可](#permissions)が委任され、別のユーザーは、そのユーザーと連絡先フォルダーを共有しているか、またはそのユーザーにアクセスを委任しているかする場合。 |||UNTRANSLATED_CONTENT_START|||See [details and an example](../../../concepts/outlook-get-shared-contacts-folders.md).|||UNTRANSLATED_CONTENT_END|||
+* このアプリに、1 人のユーザーから適切な[アクセス許可](#permissions)が委任され、別のユーザーは、そのユーザーと連絡先フォルダーを共有しているか、またはそのユーザーにアクセスを委任しているかする場合。 [詳細と例](../../../concepts/outlook-get-shared-contacts-folders.md)をご覧ください。
 
 
 ## <a name="permissions"></a>アクセス許可

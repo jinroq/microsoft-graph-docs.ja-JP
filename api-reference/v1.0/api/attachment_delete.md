@@ -49,19 +49,19 @@ DELETE /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events
 DELETE /me/messages/{id}/attachments/{id}
 DELETE /users/{id | userPrincipalName}/messages/{id}/attachments/{id}
 ```
-ユーザーのメールボックスの最上位レベルの[mailFolder](../resources/mailfolder.md)に含まれている[メッセージ](../resources/message.md)の添付ファイル。
+ユーザーのメールボックスの最上位レベルの[mailFolder](../resources/message.md)に含まれている[メッセージ](../resources/mailfolder.md)の添付ファイル。
 <!-- { "blockType": "ignored" } -->
 ```http
 DELETE /me/mailFolders/{id}/messages/{id}/attachments/{id}
 DELETE /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/attachments/{id}
 ```
-ユーザーのメールボックス内の[mailFolder](../resources/mailfolder.md)の子フォルダーに含まれている[メッセージ](../resources/message.md)の添付ファイル。  次の例は、入れ子のレベルの 1 つを示していますが、メッセージは子の子などに入れることができます。
+ユーザーのメールボックス内の[mailFolder](../resources/message.md)の子フォルダーに含まれている[メッセージ](../resources/mailfolder.md)の添付ファイル。  次の例は、入れ子のレベルの 1 つを示していますが、メッセージは子の子などに入れることができます。
 <!-- { "blockType": "ignored" } -->
 ```http
 DELETE /me/mailFolders/{id}/childFolders/{id}/.../messages/{id}/attachments/{id}
 DELETE /users/{id | userPrincipalName}/mailFolders/{id}/childFolders/{id}/messages/{id}/attachments/{id}
 ```
-グループの[会話](../resources/conversation.md)に属する[スレッド](../resources/conversationthread.md)内の[投稿](../resources/post.md)の添付ファイル。
+グループの[会話](../resources/post.md)に属する[スレッド](../resources/conversationthread.md)内の[投稿](../resources/conversation.md)の添付ファイル。
 <!-- { "blockType": "ignored" } -->
 ```http
 DELETE /groups/{id}/threads/{id}/posts/{id}/attachments/{id}

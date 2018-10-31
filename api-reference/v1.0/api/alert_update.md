@@ -124,7 +124,7 @@ Prefer: return=representation
 
 ### <a name="response"></a>応答
 
-|||UNTRANSLATED_CONTENT_START|||The following is an example of the response when the optional `Prefer: return=representation` request header is used.|||UNTRANSLATED_CONTENT_END|||
+次の応答の例ではときに、省略可能な `Prefer: return=representation` 要求ヘッダーを使用します。
 
 >**注:** 読みやすくするために、ここに示す応答オブジェクトは短くされている場合があります。実際の呼び出しからは、すべてのプロパティが返されます。
 <!-- {
