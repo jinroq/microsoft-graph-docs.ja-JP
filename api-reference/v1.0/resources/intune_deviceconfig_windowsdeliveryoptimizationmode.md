@@ -6,18 +6,13 @@
 ## <a name="members"></a>メンバー
 |メンバー|値|説明|
 |:---|:---|:---|
-|userDefined|0|設定するユーザーを許可します。|
-|httpOnly|1|HTTPのみ、ピアリングなし|
-|httpWithPeeringNat|2|OS の既定値 – 同じネットワーク アドレス変換器の背後にあるピアリングとブレンドされた http|
-|httpWithPeeringPrivateGroup|3|プライベート グループ全体でピアリングとブレンドされた http|
-|httpWithInternetPeering|4|インターネットのピアリングとブレンドされた http|
+|ユーザー定義|0|設定するユーザーを許可します。|
+|httpOnly|1|ないピアリングのみ、HTTP|
+|httpWithPeeringNat|2|OS の既定値は – Http が同じネットワーク アドレス変換器の背後にあるピアリングとブレンド|
+|httpWithPeeringPrivateGroup|3|HTTP は、プライベート グループ全体でピアリングとブレンド|
+|httpWithInternetPeering|4|HTTP はインターネットのピアリングとブレンド|
 |simpleDownload|99|ピアリングのない単純なダウンロード モード|
-|bypassMode|100|バイパス モードにします。 配信の最適化を使用せず、代わりに BITS を使用|
-
-
-
-
-
+|bypassMode|100|バイパス モードにします。 配信の最適化を使用せず、代わりにビットを使用|
 
 
 

@@ -4,29 +4,30 @@
 
 指定されたデバイスのデバイス構成設定の状態。
 ## <a name="properties"></a>プロパティ
-|プロパティ|タイプ|説明|
+|プロパティ|型|説明|
 |:---|:---|:---|
-|文字列|文字列|レポートされている設定値です。|
-|settingName|文字列|レポートされている、ローカライズされた設定名またはユーザー フレンドリな設定名です|
-|instanceDisplayName|文字列|レポートされている設定インスタンスの名前です。|
-|都道府県|[complianceStatus](../resources/intune_shared_compliancestatus.md)|設定のコンプライアンスの状態です。使用可能な値は `unknown`、`notApplicable`、`compliant`、`remediated`、`nonCompliant`、`error`、`conflict`、`notAssigned` です。|
+|setting|文字列型 (String)|レポートされる設定値。|
+|settingName|文字列型 (String)|レポートされている、ローカライズされた設定名またはユーザー フレンドリな設定名|
+|instanceDisplayName|文字列型 (String)|レポートされている設定インスタンスの名前です。|
+|state|[complianceStatus](../resources/intune_shared_compliancestatus.md)|設定のコンプライアンスの状態です。 可能な値は、`unknown`、`notApplicable`、`compliant`、`remediated`、`nonCompliant`、`error`、`conflict`、`notAssigned` です。|
 |errorCode|Int64|設定のエラー コード|
-|errorDescription|文字列|エラーの説明|
-|userId|文字列|UserId|
-|userName|文字列|userName|
-|userEmail|文字列|userEmail|
-|userPrincipalName|文字列|UserPrincipalName。|
+|errorDescription|String|エラーの説明|
+|userId|String|UserId|
+|userName|String|UserName|
+|userEmail|String|UserEmail|
+|userPrincipalName|String|UserPrincipalName。|
 |ソース|[settingSource](../resources/intune_deviceconfig_settingsource.md) コレクション|投稿ポリシー|
-|currentValue|文字列|デバイスに関する設定の現在の値|
+|currentValue|String|デバイスに関する設定の現在の値|
 
 ## <a name="relationships"></a>リレーションシップ
 なし
 ## <a name="json-representation"></a>JSON 表記
 以下は、リソースの JSON 表記です。
-<!--{
+<!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.deviceConfigurationSettingState"
-}-->
+}
+-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.deviceConfigurationSettingState",
@@ -50,11 +51,6 @@
   "currentValue": "String"
 }
 ```
-
-
-
-
-
 
 
 

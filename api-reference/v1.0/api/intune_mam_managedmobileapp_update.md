@@ -27,8 +27,8 @@ PATCH /deviceAppManagement/targetedManagedAppConfigurations/{targetedManagedAppC
 ## <a name="request-headers"></a>要求ヘッダー
 |ヘッダー|値|
 |:---|:---|
-|承認|ベアラー &lt;トークン&gt; が必須。|
-|受け入れる|アプリケーションまたは json|
+|Authorization|ベアラー &lt;トークン&gt; が必要です。|
+|Accept|application/json|
 
 ## <a name="request-body"></a>要求本文
 要求本文で、[managedMobileApp](../resources/intune_mam_managedmobileapp.md) オブジェクトの JSON 表記を指定します。
@@ -38,8 +38,8 @@ PATCH /deviceAppManagement/targetedManagedAppConfigurations/{targetedManagedAppC
 |プロパティ|型|説明|
 |:---|:---|:---|
 |mobileAppIdentifier|[mobileAppIdentifier](../resources/intune_mam_mobileappidentifier.md)|対象のオペレーティング システムの種類のアプリの識別子。|
-|ID|文字列|エンティティのキー。|
-|バージョン|文字列|エンティティのバージョン。|
+|id|String|エンティティのキー。|
+|version|String|エンティティのバージョン。|
 
 
 
@@ -52,9 +52,10 @@ PATCH /deviceAppManagement/targetedManagedAppConfigurations/{targetedManagedAppC
 ``` http
 PATCH https://graph.microsoft.com/v1.0/deviceAppManagement/iosManagedAppProtections/{iosManagedAppProtectionId}/apps/{managedMobileAppId}
 Content-type: application/json
-Content-length: 126
+Content-length: 181
 
 {
+  "@odata.type": "#microsoft.graph.managedMobileApp",
   "mobileAppIdentifier": {
     "@odata.type": "microsoft.graph.mobileAppIdentifier"
   },
@@ -78,11 +79,6 @@ Content-Length: 230
   "version": "Version value"
 }
 ```
-
-
-
-
-
 
 
 

@@ -12,16 +12,17 @@ OMA 設定の文字列の定義です。
 |displayName|文字列|表示名。 [omaSetting](../resources/intune_deviceconfig_omasetting.md) からの継承|
 |説明|文字列|説明。 [omaSetting](../resources/intune_deviceconfig_omasetting.md) からの継承|
 |omaUri|文字列|OMA。 [omaSetting](../resources/intune_deviceconfig_omasetting.md) からの継承|
-|value|文字列|値。|
+|値|文字列|値。|
 
-## <a name="relationships"></a>リレーションシップ
+## <a name="relationships"></a>関係
 なし
 ## <a name="json-representation"></a>JSON 表記
 以下は、リソースの JSON 表記です。
-<!--{
+<!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.omaSettingString"
-}-->
+}
+-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.omaSettingString",
@@ -31,11 +32,6 @@ OMA 設定の文字列の定義です。
   "value": "String"
 }
 ```
-
-
-
-
-
 
 
 

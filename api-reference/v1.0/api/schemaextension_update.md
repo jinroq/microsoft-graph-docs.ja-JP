@@ -36,10 +36,10 @@ PATCH /schemaExtensions/{id}
 
 | プロパティ   | 型 |説明|
 |:---------------|:--------|:----------|
-|description|String|スキーマ拡張機能の説明。|
+|説明|String|スキーマ拡張機能の説明。|
 |properties|[extensionSchemaProperty](../resources/extensionschemaproperty.md) コレクション|スキーマ拡張機能の定義を構成するプロパティの名前と種類のコレクション。付加的な変更のみが許可されます。 |
-|status|String|スキーマ拡張機能のライフサイクル状態。作成時の初期状態は **InDevelopment** です。状態は、**InDevelopment** から **Available**、**Available** から **Deprecated**、**Deprecated** から **Available** のいずれかに切り替わります。|
-|targetTypes|String collection|スキーマ拡張機能に適用できる (拡張機能をサポートできる) 一連の Microsoft Graph の種類。付加的な変更のみが許可されます。|
+|status|String|スキーマ拡張機能のライフサイクル状態。 作成時に初期状態は、 **InDevelopment**です。 状態遷移は、 **InDevelopment**を**使用可能**および**使用可能な****非推奨**です。|
+|targetTypes|String コレクション|スキーマ拡張機能に適用できる (拡張機能をサポートできる) 一連の Microsoft Graph の種類。付加的な変更のみが許可されます。|
 
 ## <a name="response"></a>応答
 
@@ -86,7 +86,7 @@ HTTP/1.1 204 No Content
 
 ## <a name="see-also"></a>関連項目
 
-- [拡張機能を使用したリソースへのカスタム データの追加](../../../concepts/extensibility_overview.md)
+- [拡張機能を使用してカスタム データをリソースに追加する](../../../concepts/extensibility_overview.md)
 - [スキーマ拡張機能を使用したグループへのカスタム データの追加](../../../concepts/extensibility_schema_groups.md)
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

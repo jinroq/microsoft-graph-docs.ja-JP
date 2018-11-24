@@ -4,10 +4,10 @@
 
 現在、この操作によって返されるイベントの本文は HTML 形式のみです。
 
-アプリが別のユーザーの予定表を取得できる 2 つのシナリオがあります。
+2 つシナリオは、アプリケーションが別のユーザーの予定表でイベントを取得する場所です。
 
-* このアプリにアプリケーションのアクセス許可がある場合、または、
-* このアプリに、1 人のユーザーから適切な[アクセス許可](#permissions)が委任され、別のユーザーは、そのユーザーと予定表を共有しているか、またはそのユーザーにアクセスを委任している場合。 [詳細と例](../../../concepts/outlook-get-shared-events-calendars.md)をご覧ください。
+* アプリケーションは、アプリケーションの権限を持つ場合、または、
+* アプリケーションがある場合、適切な 1 人のユーザーから[アクセス許可](#permissions)を委任し、他のユーザーは、そのユーザーとカレンダーを共有するにはまたは、そのユーザーに代理アクセスを与え。 [詳細と例](../../../concepts/outlook-get-shared-events-calendars.md)を参照してください。
 
 **イベント** リソースは[拡張機能](../../../concepts/extensibility_overview.md)をサポートしているため、`GET` 操作を使用して、**イベント** インスタンスでカスタム プロパティと拡張機能データを取得することもできます。
 
@@ -56,11 +56,11 @@ GET /me/calendargroups/{id}/calendars/{id}/events/{id}
 GET /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{id}
 ```
 ## <a name="optional-query-parameters"></a>オプションのクエリ パラメーター
-このメソッドは、応答をカスタマイズするための [OData クエリ パラメーター](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters)をサポートします。
+このメソッドは、応答をカスタマイズするための [OData クエリ パラメーター](https://developer.microsoft.com/graph/docs/concepts/query_parameters)をサポートします。
 ## <a name="request-headers"></a>要求ヘッダー
 | 名前       | 型 | 説明 |
 |:---------------|:--------|:--------|
-| 承認  | 文字列 | ベアラー {トークン}。必須。  |
+| Authorization  | string | ベアラー {トークン}。必須。  |
 | 優先: outlook.timezone  | 文字列 | これを使用して、応答内の開始および終了時刻のタイム ゾーンを指定します。 指定しない場合、これらの時刻値は UTC で返されます。 省略可能。 |
 | Prefer: outlook.body-content-type | 文字列 | **body** プロパティが返されるときの形式です。 値は、"text" または "html" になります。 この `Prefer` ヘッダーが指定されている場合、`Preference-Applied` ヘッダーが確認として返されます。 このヘッダーが指定されていない場合は、**body** プロパティが HTML 形式で返されます。 省略可能。 |
 

@@ -1,4 +1,4 @@
-# <a name="create-windowsuniversalappx"></a>windowsUniversalAppX を作成する
+# <a name="create-windowsuniversalappx"></a>Create windowsUniversalAppX
 
 > **注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
 
@@ -8,7 +8,7 @@
 
 |アクセス許可の種類|アクセス許可 (特権の大きいものから小さいものへ)|
 |:---|:---|
-|委任 (職場または学校のアカウント)|DeviceManagementApps.ReadWrite.All|
+|委任 (職場または学校アカウント)|DeviceManagementApps.ReadWrite.All|
 |委任 (個人用 Microsoft アカウント)|サポートされていません。|
 |アプリケーション|サポートされていません。|
 
@@ -24,8 +24,8 @@ POST /deviceAppManagement/mobileApps
 ## <a name="request-headers"></a>要求ヘッダー
 |ヘッダー|値|
 |:---|:---|
-|承認|ベアラー &lt;トークン&gt; が必須。|
-|承諾する|アプリケーションまたは json|
+|Authorization|ベアラー &lt;トークン&gt; が必須。|
+|Accept|application/json|
 
 ## <a name="request-body"></a>要求本文
 要求本文で、windowsUniversalAppX オブジェクトの JSON 表現を指定します。
@@ -34,31 +34,31 @@ POST /deviceAppManagement/mobileApps
 
 |プロパティ|型|説明|
 |:---|:---|:---|
-|ID|文字列|エンティティのキー。 [mobileApp](../resources/intune_apps_mobileapp.md) から継承します|
-|displayName|文字列|管理者が提供またはインポートしたアプリのタイトル。 [mobileApp](../resources/intune_apps_mobileapp.md) から継承します|
-|説明|文字列|アプリの説明。 [mobileApp](../resources/intune_apps_mobileapp.md) から継承します|
-|発行元|文字列|アプリの発行元。 [mobileApp](../resources/intune_apps_mobileapp.md) から継承します|
-|largeIcon|[MIME コンテンツ](../resources/intune_shared_mimecontent.md)|アプリの詳細に表示され、アイコンのアップロードに使用される大きなアイコン。 [mobileApp](../resources/intune_apps_mobileapp.md) から継承します|
+|id|String|エンティティのキー。 [mobileApp](../resources/intune_apps_mobileapp.md) から継承します|
+|displayName|String|管理者が提供またはインポートしたアプリのタイトル。 [mobileApp](../resources/intune_apps_mobileapp.md) から継承します|
+|description|String|アプリの説明。 [mobileApp](../resources/intune_apps_mobileapp.md) から継承します|
+|publisher|String|アプリの発行元。 [mobileApp](../resources/intune_apps_mobileapp.md) から継承します|
+|largeIcon|[mimeContent](../resources/intune_shared_mimecontent.md)|アプリの詳細に表示され、アイコンのアップロードに使用される大きなアイコン。 [mobileApp](../resources/intune_apps_mobileapp.md) から継承します|
 |createdDateTime|DateTimeOffset|アプリが作成された日時。 [mobileApp](../resources/intune_apps_mobileapp.md) から継承します|
 |lastModifiedDateTime|DateTimeOffset|アプリが最後に変更された日時。 [mobileApp](../resources/intune_apps_mobileapp.md) から継承します|
-|isFeatured|ブール値|アプリが管理者のおすすめとしてマークされたかどうかを示す値。[mobileApp](../resources/intune_apps_mobileapp.md) から継承します|
-|privacyInformationUrl|文字列|プライバシーに関する声明の URL。 [mobileApp](../resources/intune_apps_mobileapp.md) から継承します|
-|informationUrl|文字列|詳細情報の URL。 [mobileApp](../resources/intune_apps_mobileapp.md) から継承します|
-|所有者|文字列|アプリの所有者。 [mobileApp](../resources/intune_apps_mobileapp.md) から継承します|
-|開発者|文字列|アプリの開発者。 [mobileApp](../resources/intune_apps_mobileapp.md) から継承します|
-|メモ|文字列|アプリ用のメモ。 [mobileApp](../resources/intune_apps_mobileapp.md) から継承します|
-|publishingState|[mobileAppPublishingState](../resources/intune_apps_mobileapppublishingstate.md)|アプリの発行の状態。 アプリが発行されていない限り、アプリを割り当てることができません。 [mobileApp](../resources/intune_apps_mobileapp.md) から継承します。 可能な値、`notPublished`、`processing`、`published` です。|
-|committedContentVersion|文字列|内部にコミットされたコンテンツのバージョン。 [mobileLobApp](../resources/intune_apps_mobilelobapp.md) から継承します|
-|fileName|文字列|メインの Lob アプリケーションのファイル名。 [mobileLobApp](../resources/intune_apps_mobilelobapp.md) から継承します|
-|サイズ|Int64|アップロードされたすべてのファイルを含む合計サイズ。 [mobileLobApp](../resources/intune_apps_mobilelobapp.md) から継承します|
+|isFeatured|Boolean|アプリが管理者のおすすめとしてマークされたかどうかを示す値。[mobileApp](../resources/intune_apps_mobileapp.md) から継承します|
+|privacyInformationUrl|String|プライバシーに関する声明の URL。 [mobileApp](../resources/intune_apps_mobileapp.md) から継承します|
+|informationUrl|String|詳細情報の URL。 [mobileApp](../resources/intune_apps_mobileapp.md) から継承します|
+|owner|String|アプリの所有者。 [mobileApp](../resources/intune_apps_mobileapp.md) から継承します|
+|developer|String|アプリの開発者。 [mobileApp](../resources/intune_apps_mobileapp.md) から継承します|
+|notes|String|アプリ用のメモ。 [mobileApp](../resources/intune_apps_mobileapp.md) から継承します|
+|publishingState|[mobileAppPublishingState](../resources/intune_apps_mobileapppublishingstate.md)|アプリの発行の状態。 アプリが発行されていない限り、アプリを割り当てることができません。 [MobileApp](../resources/intune_apps_mobileapp.md)から継承されます。 可能な値は、`notPublished`、`processing`、`published` です。|
+|committedContentVersion|String|内部にコミットされたコンテンツのバージョン。 [mobileLobApp](../resources/intune_apps_mobilelobapp.md) から継承します|
+|fileName|String|メインの Lob アプリケーションのファイル名。 [mobileLobApp](../resources/intune_apps_mobilelobapp.md) から継承します|
+|size|Int64|アップロードされたすべてのファイルを含む合計サイズ。 [mobileLobApp](../resources/intune_apps_mobilelobapp.md) から継承します|
 |applicableArchitectures|[windowsArchitecture](../resources/intune_apps_windowsarchitecture.md)|このアプリを実行できる Windows アーキテクチャ。 可能な値は、`none`、`x86`、`x64`、`arm`、`neutral` です。|
 |applicableDeviceTypes|[windowsDeviceType](../resources/intune_apps_windowsdevicetype.md)|このアプリを実行できる Windows デバイスの種類。 可能な値は、`none`、`desktop`、`mobile`、`holographic`、`team` です。|
-|identityName|文字列|ID 名。|
-|identityPublisherHash|文字列|ID の発行元のハッシュ。|
-|identityResourceIdentifier|文字列|ID のリソースの識別子。|
-|isBundle|ブール値|アプリがバンドルかどうかを示します。|
+|identityName|String|ID 名。|
+|identityPublisherHash|String|ID の発行元のハッシュ。|
+|identityResourceIdentifier|String|ID のリソースの識別子。|
+|isBundle|Boolean|アプリがバンドルかどうかを示します。|
 |minimumSupportedOperatingSystem|[windowsMinimumOperatingSystem](../resources/intune_apps_windowsminimumoperatingsystem.md)|該当するオペレーティング システムの最小の値です。|
-|identityVersion|文字列|ID のバージョン。|
+|identityVersion|String|ID のバージョン。|
 
 
 
@@ -71,7 +71,7 @@ POST /deviceAppManagement/mobileApps
 ``` http
 POST https://graph.microsoft.com/v1.0/deviceAppManagement/mobileApps
 Content-type: application/json
-Content-length: 1253
+Content-length: 1189
 
 {
   "@odata.type": "#microsoft.graph.windowsUniversalAppX",
@@ -83,7 +83,6 @@ Content-length: 1253
     "type": "Type value",
     "value": "dmFsdWU="
   },
-  "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
   "isFeatured": true,
   "privacyInformationUrl": "https://example.com/privacyInformationUrl/",
   "informationUrl": "https://example.com/informationUrl/",
@@ -155,11 +154,6 @@ Content-Length: 1361
   "identityVersion": "Identity Version value"
 }
 ```
-
-
-
-
-
 
 
 

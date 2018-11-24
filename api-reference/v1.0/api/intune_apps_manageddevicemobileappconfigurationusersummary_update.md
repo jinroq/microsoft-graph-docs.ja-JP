@@ -24,8 +24,8 @@ PATCH /deviceAppManagement/mobileAppConfigurations/{managedDeviceMobileAppConfig
 ## <a name="request-headers"></a>要求ヘッダー
 |ヘッダー|値|
 |:---|:---|
-|承認|ベアラー &lt;トークン&gt; が必須。|
-|受け入れ|アプリケーション/json|
+|Authorization|ベアラー &lt;トークン&gt; が必要です。|
+|Accept|application/json|
 
 ## <a name="request-body"></a>要求本文
 要求本文で、[managedDeviceMobileAppConfigurationUserSummary](../resources/intune_apps_manageddevicemobileappconfigurationusersummary.md) オブジェクトの JSON 表記を指定します。
@@ -34,9 +34,9 @@ PATCH /deviceAppManagement/mobileAppConfigurations/{managedDeviceMobileAppConfig
 
 |プロパティ|型|説明|
 |:---|:---|:---|
-|ID|文字列|エンティティのキー。|
+|id|String|エンティティのキー。|
 |pendingCount|Int32|保留中のユーザーの数|
-|notApplicableCount|Int32|該当しないユーザーの数|
+|notApplicableCount|Int32|適用されないユーザーの数|
 |successCount|Int32|成功したユーザーの数|
 |errorCount|Int32|エラー ユーザーの数|
 |failedCount|Int32|失敗したユーザーの数|
@@ -54,9 +54,10 @@ PATCH /deviceAppManagement/mobileAppConfigurations/{managedDeviceMobileAppConfig
 ``` http
 PATCH https://graph.microsoft.com/v1.0/deviceAppManagement/mobileAppConfigurations/{managedDeviceMobileAppConfigurationId}/userStatusSummary
 Content-type: application/json
-Content-length: 212
+Content-length: 297
 
 {
+  "@odata.type": "#microsoft.graph.managedDeviceMobileAppConfigurationUserSummary",
   "pendingCount": 12,
   "notApplicableCount": 2,
   "successCount": 12,
@@ -86,11 +87,6 @@ Content-Length: 346
   "configurationVersion": 4
 }
 ```
-
-
-
-
-
 
 
 

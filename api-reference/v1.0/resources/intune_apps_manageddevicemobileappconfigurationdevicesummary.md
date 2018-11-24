@@ -6,31 +6,31 @@ MDM モバイル アプリ構成のデバイス状態の要約に関する、プ
 ## <a name="methods"></a>メソッド
 |メソッド|戻り値の型|説明|
 |:---|:---|:---|
-|[managedDeviceMobileAppConfigurationDeviceSummary の取得](../api/intune_apps_manageddevicemobileappconfigurationdevicesummary_get.md)|[managedDeviceMobileAppConfigurationDeviceSummary](../resources/intune_apps_manageddevicemobileappconfigurationdevicesummary.md)|[managedDeviceMobileAppConfigurationDeviceSummary](../resources/intune_apps_manageddevicemobileappconfigurationdevicesummary.md) オブジェクトのプロパティとリレーションシップを読み取ります。|
-|[managedDeviceMobileAppConfigurationDeviceSummary の更新](../api/intune_apps_manageddevicemobileappconfigurationdevicesummary_update.md)|[managedDeviceMobileAppConfigurationDeviceSummary](../resources/intune_apps_manageddevicemobileappconfigurationdevicesummary.md)|[managedDeviceMobileAppConfigurationDeviceSummary](../resources/intune_apps_manageddevicemobileappconfigurationdevicesummary.md) オブジェクトのプロパティを更新します。|
+|[Get managedDeviceMobileAppConfigurationDeviceSummary](../api/intune_apps_manageddevicemobileappconfigurationdevicesummary_get.md)|[managedDeviceMobileAppConfigurationDeviceSummary](../resources/intune_apps_manageddevicemobileappconfigurationdevicesummary.md)| [managedDeviceMobileAppConfigurationDeviceSummary](../resources/intune_apps_manageddevicemobileappconfigurationdevicesummary.md) オブジェクトのプロパティとリレーションシップを読み取ります。|
+|[Update managedDeviceMobileAppConfigurationDeviceSummary](../api/intune_apps_manageddevicemobileappconfigurationdevicesummary_update.md)|[managedDeviceMobileAppConfigurationDeviceSummary](../resources/intune_apps_manageddevicemobileappconfigurationdevicesummary.md)|[managedDeviceMobileAppConfigurationDeviceSummary](../resources/intune_apps_manageddevicemobileappconfigurationdevicesummary.md) オブジェクトのプロパティを更新します。|
 
 ## <a name="properties"></a>プロパティ
-|プロパティ|タイプ|説明|
+|プロパティ|型|説明|
 |:---|:---|:---|
-|ID|文字列|エンティティのキー。|
+|id|文字列型 (String)|エンティティのキー。|
 |pendingCount|Int32|保留中のデバイスの数|
 |notApplicableCount|Int32|該当しないデバイスの数|
 |successCount|Int32|成功したデバイスの数|
 |errorCount|Int32|エラー デバイスの数|
 |failedCount|Int32|失敗したデバイスの数|
-|lastUpdateDateTime|DateTimeOffset|最終更新時刻|
+|lastUpdateDateTime|DateTimeOffset|最終更新日時|
 |configurationVersion|Int32|対象の概要に関するポリシーのバージョン|
 
 ## <a name="relationships"></a>リレーションシップ
 なし
 ## <a name="json-representation"></a>JSON 表記
 以下は、リソースの JSON 表記です。
-<!--{
+<!-- {
   "blockType": "resource",
-  "baseType": "microsoft.graph.entity",
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.managedDeviceMobileAppConfigurationDeviceSummary"
-}-->
+}
+-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.managedDeviceMobileAppConfigurationDeviceSummary",
@@ -44,11 +44,6 @@ MDM モバイル アプリ構成のデバイス状態の要約に関する、プ
   "configurationVersion": 1024
 }
 ```
-
-
-
-
-
 
 
 

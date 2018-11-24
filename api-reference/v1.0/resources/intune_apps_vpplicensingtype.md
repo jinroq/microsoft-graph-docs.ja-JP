@@ -13,10 +13,11 @@ iOS Volume-Purchase Program (VPP) ライセンスの種類のプロパティが�
 なし
 ## <a name="json-representation"></a>JSON 表記
 以下は、リソースの JSON 表記です。
-<!--{
+<!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.vppLicensingType"
-}-->
+}
+-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.vppLicensingType",
@@ -24,11 +25,6 @@ iOS Volume-Purchase Program (VPP) ライセンスの種類のプロパティが�
   "supportsDeviceLicensing": true
 }
 ```
-
-
-
-
-
 
 
 

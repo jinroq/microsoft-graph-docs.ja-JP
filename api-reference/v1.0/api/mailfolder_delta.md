@@ -21,25 +21,25 @@ GET /me/mailFolders/delta
 GET /users/{id}/mailFolders/delta
 ```
 
-## <a name="optional-query-parameters"></a>オプションのクエリ パラメーター
+## <a name="query-parameters"></a>クエリ パラメーター
 
 メール フォルダーの変更を追跡すると、1 つ以上の **デルタ**関数呼び出しのラウンドが発生します。任意のクエリ パラメーター (`$deltatoken` と `$skiptoken` 以外) を使用する場合は、最初の**デルタ**要求でこれを指定する必要があります。Microsoft Graph は、応答で提供される `nextLink` や `deltaLink` の URL のトークン部分に指定したパラメーターを自動的にエンコードします。必要なクエリ パラメーターを前もって指定しておくだけで済みます。それ以降の要求では、前の応答で `nextLink` や `deltaLink` の URL に必要なパラメーターが既にエンコードされ、含まれているため、この URL をコピーして適用するだけです。
 
 | クエリ パラメーター      | 種類   |説明|
 |:---------------|:--------|:----------|
-| $deltatoken | 文字列 | 同じメール フォルダー コレクションの前の**デルタ**関数呼び出しの `deltaLink` URL で[状態トークン](../../../concepts/delta_query_overview.md)が返され、その変更追跡のラウンドが完了したことを示します。このコレクションについて、このトークンを含む、`deltaLink` URL 全体を次の変更追跡のラウンドの最初の要求に保存し、適用します。|
-| $skiptoken | 文字列 | 前の**デルタ**関数呼び出しの `nextLink` URL で[状態トークン](../../../concepts/delta_query_overview.md)が返され、同じメール フォルダー コレクションに追跡すべき変更が他にもあることを示します。 |
+| $deltatoken | string | 同じメール フォルダー コレクションの前の**デルタ**関数呼び出しの `deltaLink` URL で[状態トークン](../../../concepts/delta_query_overview.md)が返され、その変更追跡のラウンドが完了したことを示します。このコレクションについて、このトークンを含む、`deltaLink` URL 全体を次の変更追跡のラウンドの最初の要求に保存し、適用します。|
+| $skiptoken | string | 前の**デルタ**関数呼び出しの `nextLink` URL で[状態トークン](../../../concepts/delta_query_overview.md)が返され、同じメール フォルダー コレクションに追跡すべき変更が他にもあることを示します。 |
 
-#### <a name="odata-query-parameters"></a>OData クエリ パラメーター
+### <a name="odata-query-parameters"></a>OData クエリ パラメーター
 
 任意の GET リクエストと同様に `$select` クエリ パラメーターを使用して、最善のパフォーマンスを得るために必要なプロパティのみを指定することができます。_Id_ プロパティは常に返されます。 
 
 ## <a name="request-headers"></a>要求ヘッダー
 | 名前       | 型 | 説明 |
 |:---------------|:----------|:----------|
-| 承認  | 文字列  | ベアラー {トークン}。必須。 |
-| コンテンツ タイプ  | 文字列  | アプリケーションまたは json。必須。 |
-| 優先 | 文字列  | odata.maxpagesize={x}.省略可能。 |
+| Authorization  | string  | ベアラー {トークン}。必須。 |
+| Content-Type  | string  | application/json. Required. |
+| Prefer | string  | odata.maxpagesize={x}.省略可能。 |
 
 ## <a name="response"></a>応答
 

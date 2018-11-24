@@ -24,8 +24,8 @@ PATCH /deviceManagement/deviceCompliancePolicyDeviceStateSummary
 ## <a name="request-headers"></a>要求ヘッダー
 |ヘッダー|値|
 |:---|:---|
-|承認|ベアラー &lt;トークン&gt; が必須。|
-|承諾|アプリケーションまたは json|
+|Authorization|ベアラー &lt;トークン&gt; が必要です。|
+|Accept|application/json|
 
 ## <a name="request-body"></a>要求本文
 要求本文で、[deviceCompliancePolicyDeviceStateSummary](../resources/intune_deviceconfig_devicecompliancepolicydevicestatesummary.md) オブジェクトの JSON 表記を指定します。
@@ -36,7 +36,7 @@ PATCH /deviceManagement/deviceCompliancePolicyDeviceStateSummary
 |:---|:---|:---|
 |inGracePeriodCount|Int32|解約猶予期間内のデバイスの数|
 |configManagerCount|Int32|System Center Configuration Manager によってコンプライアンスが管理されているデバイスの数|
-|ID|文字列|エンティティのキー。|
+|id|String|エンティティのキー。|
 |unknownDeviceCount|Int32|不明なデバイスの数|
 |notApplicableDeviceCount|Int32|該当しないデバイスの数|
 |compliantDeviceCount|Int32|準拠デバイスの数|
@@ -56,9 +56,10 @@ PATCH /deviceManagement/deviceCompliancePolicyDeviceStateSummary
 ``` http
 PATCH https://graph.microsoft.com/v1.0/deviceManagement/deviceCompliancePolicyDeviceStateSummary
 Content-type: application/json
-Content-length: 270
+Content-length: 349
 
 {
+  "@odata.type": "#microsoft.graph.deviceCompliancePolicyDeviceStateSummary",
   "inGracePeriodCount": 2,
   "configManagerCount": 2,
   "unknownDeviceCount": 2,
@@ -92,11 +93,6 @@ Content-Length: 398
   "conflictDeviceCount": 3
 }
 ```
-
-
-
-
-
 
 
 

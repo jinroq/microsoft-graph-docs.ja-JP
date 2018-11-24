@@ -24,20 +24,20 @@ POST /deviceAppManagement/mobileApps/{mobileAppId}/assignments
 ## <a name="request-headers"></a>要求ヘッダー
 |ヘッダー|値|
 |:---|:---|
-|承認|ベアラー &lt;トークン&gt; が必須。|
-|承諾|アプリケーションまたは json|
+|Authorization|ベアラー &lt;トークン&gt; が必要です。|
+|Accept|application/json|
 
 ## <a name="request-body"></a>要求本文
 要求本文で、mobileAppAssignment オブジェクトの JSON 表記を指定します。
 
 次の表に、mobileAppAssignment の作成時に必要なプロパティを示します。
 
-|プロパティ|タイプ|説明|
+|プロパティ|型|説明|
 |:---|:---|:---|
-|ID|文字列|エンティティのキー。|
-|インテント|[installIntent](../resources/intune_shared_installintent.md)|管理者によって定義されたインストールの目的。可能な値は、`available`、`required`、`uninstall`、`availableWithoutEnrollment` です。|
-|ターゲット|[deviceAndAppManagementAssignmentTarget](../resources/intune_shared_deviceandappmanagementassignmenttarget.md)|管理者によって定義された、ターゲット グループの割り当て。|
-|設定|[mobileAppAssignmentSettings](../resources/intune_apps_mobileappassignmentsettings.md)|管理者によって定義された、ターゲットの割り当ての設定。|
+|id|String|エンティティのキー。|
+|intent|[installIntent](../resources/intune_shared_installintent.md)|管理者によって定義されたインストールの目的。可能な値は、`available`、`required`、`uninstall`、`availableWithoutEnrollment` です。|
+|target|[deviceAndAppManagementAssignmentTarget](../resources/intune_shared_deviceandappmanagementassignmenttarget.md)|管理者によって定義された、ターゲット グループの割り当て。|
+|settings|[mobileAppAssignmentSettings](../resources/intune_apps_mobileappassignmentsettings.md)|管理者によって定義された、ターゲットの割り当ての設定。|
 
 
 
@@ -83,11 +83,6 @@ Content-Length: 322
   }
 }
 ```
-
-
-
-
-
 
 
 

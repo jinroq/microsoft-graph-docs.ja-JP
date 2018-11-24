@@ -6,7 +6,7 @@
 ## <a name="properties"></a>プロパティ
 |プロパティ|型|説明|
 |:---|:---|:---|
-|名前|文字列型 (String)|アプリケーション名|
+|name|文字列型 (String)|アプリケーション名|
 |発行元|文字列型 (String)|アプリケーションの発行元|
 |appStoreUrl|文字列型 (String)|アプリケーションのストア URL|
 |appId|文字列型 (String)|アプリケーションのアプリケーションまたはバンドルの識別子|
@@ -15,10 +15,11 @@
 なし
 ## <a name="json-representation"></a>JSON 表記
 以下は、リソースの JSON 表記です。
-<!--{
+<!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.appListItem"
-}-->
+}
+-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.appListItem",
@@ -28,11 +29,6 @@
   "appId": "String"
 }
 ```
-
-
-
-
-
 
 
 

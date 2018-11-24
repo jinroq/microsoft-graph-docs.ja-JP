@@ -6,17 +6,18 @@
 ## <a name="properties"></a>プロパティ
 |プロパティ|型|説明|
 |:---|:---|:---|
-|名前|文字列|キーと値のペアの名前|
-|value|文字列|キーと値のペアの値|
+|name|文字列|キーと値のペアの名前|
+|値|文字列|キーと値のペアの値|
 
-## <a name="relationships"></a>リレーションシップ
+## <a name="relationships"></a>関係
 なし
 ## <a name="json-representation"></a>JSON 表記
 以下は、リソースの JSON 表記です。
-<!--{
+<!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.keyValuePair"
-}-->
+}
+-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.keyValuePair",
@@ -24,11 +25,6 @@
   "value": "String"
 }
 ```
-
-
-
-
-
 
 
 

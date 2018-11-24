@@ -1,6 +1,6 @@
 # <a name="wipemanagedappregistrationsbydevicetag-action"></a>wipeManagedAppRegistrationsByDeviceTag アクション
 
-> **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。
+
 
 > **注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
 
@@ -11,7 +11,7 @@
 |アクセス許可の種類|アクセス許可 (特権の大きいものから小さいものへ)|
 |:---|:---|
 |委任 (職場または学校のアカウント)| _コンテキストによって異なります_ |
-| &nbsp; &nbsp; MAM | DeviceManagementApps.ReadWrite.All |
+| &nbsp;&nbsp; MAM | DeviceManagementApps.ReadWrite.All |
 |委任 (個人用 Microsoft アカウント)|サポートされていません。|
 |アプリケーション|サポートされていません。|
 
@@ -27,8 +27,8 @@ POST /users/{usersId}/wipeManagedAppRegistrationsByDeviceTag
 ## <a name="request-headers"></a>要求ヘッダー
 |ヘッダー|値|
 |:---|:---|
-|承認|ベアラー &lt;トークン&gt; が必須。|
-|承諾|アプリケーションまたは json|
+|Authorization|ベアラー &lt;トークン&gt; が必須。|
+|Accept|application/json|
 
 ## <a name="request-body"></a>要求本文
 要求本文で、パラメーターの JSON 表記を指定します。
@@ -37,7 +37,7 @@ POST /users/{usersId}/wipeManagedAppRegistrationsByDeviceTag
 
 |プロパティ|型|説明|
 |:---|:---|:---|
-|deviceTag|文字列|デバイス タグ|
+|deviceTag|String|デバイス タグ|
 
 ## <a name="response"></a>応答
 成功した場合、このアクションは `204 No Content` 応答コードを返します。

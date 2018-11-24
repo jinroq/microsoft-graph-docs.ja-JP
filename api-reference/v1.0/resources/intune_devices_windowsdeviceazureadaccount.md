@@ -12,14 +12,15 @@
 |password|文字列|まだ文書化されていない、[windowsDeviceAccount](../resources/intune_devices_windowsdeviceaccount.md) からの継承|
 |userPrincipalName|文字列|まだ文書化されていません|
 
-## <a name="relationships"></a>リレーションシップ
+## <a name="relationships"></a>関係
 なし
 ## <a name="json-representation"></a>JSON 表記
 以下は、リソースの JSON 表記です。
-<!--{
+<!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.windowsDeviceAzureADAccount"
-}-->
+}
+-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.windowsDeviceAzureADAccount",
@@ -27,11 +28,6 @@
   "userPrincipalName": "String"
 }
 ```
-
-
-
-
-
 
 
 

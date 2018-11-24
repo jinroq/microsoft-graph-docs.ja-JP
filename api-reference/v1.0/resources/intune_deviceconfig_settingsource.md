@@ -4,18 +4,17 @@
 
 まだ文書化されていません
 ## <a name="properties"></a>プロパティ
-|プロパティ|タイプ|説明|
+|プロパティ|型|説明|
 |:---|:---|:---|
-|ID|文字列|まだ文書化されていません|
+|id|文字列|まだ文書化されていません|
 |displayName|文字列|まだ文書化されていません|
 
-## <a name="relationships"></a>リレーションシップ
+## <a name="relationships"></a>関係
 なし
 ## <a name="json-representation"></a>JSON 表記
 以下は、リソースの JSON 表記です。
 <!-- {
   "blockType": "resource",
-  "keyProperty": "id",
   "@odata.type": "microsoft.graph.settingSource"
 }
 -->
@@ -26,11 +25,6 @@
   "displayName": "String"
 }
 ```
-
-
-
-
-
 
 
 

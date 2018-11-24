@@ -9,7 +9,7 @@ Microsoft Graph を通じて、ふたつの方法で [ユーザー](user.md) に
 
 ## <a name="authorization"></a>承認
 
-ユーザー操作へのアクセスには、次のいずれかの[アクセス許可](https://developer.microsoft.com/en-us/graph/docs/authorization/permission_scopes)が必要です。 最初の 3 つのアクセス許可は、ユーザーがアプリケーションに付与できます。 残りは管理者のみがアプリケーションに付与できます。
+ユーザー操作へのアクセスには、次のいずれかの [アクセス許可](https://developer.microsoft.com/graph/docs/authorization/permission_scopes) が必要です。最初の 3 つのアクセス許可は、ユーザーがアプリケーションに付与できます。残りは管理者のみがアプリケーションに付与できます。
 
 - User.ReadBasic.All
 - User.Read
@@ -44,7 +44,7 @@ Microsoft Graph を通じて、ふたつの方法で [ユーザー](user.md) に
 
 ## <a name="common-operations"></a>共通の操作
 
-> **注:**これらの操作のいくつかは、追加のアクセス許可を必要とします。
+> **注:** これらの操作のいくつかは、追加のアクセス許可を必要とします。
 
 | パス    | 説明 |
 |:---------|:-------------|

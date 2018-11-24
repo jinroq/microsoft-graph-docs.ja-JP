@@ -13,25 +13,25 @@ telecomExpenseManagementPartner リソースは、特定の TEM サービスの�
 |[telecomExpenseManagementPartner の更新](../api/intune_tem_telecomexpensemanagementpartner_update.md)|[telecomExpenseManagementPartner](../resources/intune_tem_telecomexpensemanagementpartner.md)|[telecomExpenseManagementPartner](../resources/intune_tem_telecomexpensemanagementpartner.md) オブジェクトのプロパティを更新します。|
 
 ## <a name="properties"></a>プロパティ
-|プロパティ|タイプ|説明|
+|プロパティ|型|説明|
 |:---|:---|:---|
-|ID|文字列|TEM パートナーの一意識別子。|
-|displayName|文字列|TEM パートナーの表示名。|
-|url|文字列|TEM パートナーの管理用コントロール パネルの URL。管理者はここで TEM サービスを構成できます。|
-|appAuthorized|ブール値|パートナーの AAD アプリに Intune へのアクセスが承認されているかどうかを指定します。|
-|有効化済み|ブール値|TEM サービスへの Intune の接続が現在有効であるか、無効であるかを指定します。|
+|id|String|TEM パートナーの一意識別子。|
+|displayName|String|TEM パートナーの表示名。|
+|url|String|TEM パートナーの管理用コントロール パネルの URL。管理者はここで TEM サービスを構成できます。|
+|appAuthorized|Boolean|パートナーの AAD アプリに Intune へのアクセスが承認されているかどうかを示します。|
+|enabled|Boolean|TEM サービスへの Intune の接続が現在有効であるか、無効であるかを示します。|
 |lastConnectionDateTime|DateTimeOffset|TEM パートナーによって Intune に対して最後に送信された要求のタイムスタンプ。|
 
 ## <a name="relationships"></a>リレーションシップ
 なし
 ## <a name="json-representation"></a>JSON 表記
 以下は、リソースの JSON 表記です。
-<!--{
+<!-- {
   "blockType": "resource",
-  "baseType": "microsoft.graph.entity",
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.telecomExpenseManagementPartner"
-}-->
+}
+-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.telecomExpenseManagementPartner",
@@ -43,11 +43,6 @@ telecomExpenseManagementPartner リソースは、特定の TEM サービスの�
   "lastConnectionDateTime": "String (timestamp)"
 }
 ```
-
-
-
-
-
 
 
 

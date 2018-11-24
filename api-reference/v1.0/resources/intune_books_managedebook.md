@@ -11,35 +11,35 @@
 |[アクションの割り当て](../api/intune_books_managedebook_assign.md)|なし|まだ文書化されていません|
 
 ## <a name="properties"></a>プロパティ
-|プロパティ|タイプ|説明|
+|プロパティ|型|説明|
 |:---|:---|:---|
-|ID|文字列|エンティティのキー。|
-|displayName|文字列|電子ブックの名前。|
-|説明|文字列|説明。|
-|パブリッシャー|文字列|発行元です。|
+|id|String|エンティティのキー。|
+|displayName|String|電子ブックの名前。|
+|description|String|説明。|
+|publisher|String|発行元です。|
 |publishedDateTime|DateTimeOffset|電子ブックが発行された日時。|
-|大型カバー|[マイムコンテンツ](../resources/intune_shared_mimecontent.md)|ブック カバー。|
+|largeCover|[mimeContent](../resources/intune_shared_mimecontent.md)|ブック カバー。|
 |createdDateTime|DateTimeOffset|電子ブック ファイルが作成された日時。|
 |lastModifiedDateTime|DateTimeOffset|電子ブックが最後に変更された日時。|
-|informationUrl|文字列|詳細情報の URL。|
-|privacyInformationUrl|文字列|プライバシーに関する声明の URL。|
+|informationUrl|String|詳細情報の URL。|
+|privacyInformationUrl|String|プライバシーに関する声明の URL。|
 
 ## <a name="relationships"></a>リレーションシップ
 |リレーションシップ|型|説明|
 |:---|:---|:---|
-|割り当て|[managedEBookAssignment](../resources/intune_books_managedebookassignment.md) コレクション|この電子ブックの割り当てのリストです。|
+|assignments|[managedEBookAssignment](../resources/intune_books_managedebookassignment.md) コレクション|この電子ブックの割り当てのリストです。|
 |installSummary|[eBookInstallSummary](../resources/intune_books_ebookinstallsummary.md)|モバイル アプリ インストール概要です。|
 |deviceStates|[deviceInstallState](../resources/intune_books_deviceinstallstate.md) コレクション|この電子ブックのインストール状態のリストです。|
 |userStateSummary|[userInstallStateSummary](../resources/intune_books_userinstallstatesummary.md) コレクション|この電子ブックのインストール状態のリストです。|
 
 ## <a name="json-representation"></a>JSON 表記
 以下は、リソースの JSON 表記です。
-<!--{
+<!-- {
   "blockType": "resource",
-  "baseType": "microsoft.graph.entity",
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.managedEBook"
-}-->
+}
+-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.managedEBook",
@@ -59,11 +59,6 @@
   "privacyInformationUrl": "String"
 }
 ```
-
-
-
-
-
 
 
 

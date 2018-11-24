@@ -24,19 +24,19 @@ PATCH /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/user
 ## <a name="request-headers"></a>要求ヘッダー
 |ヘッダー|値|
 |:---|:---|
-|承認|ベアラー &lt;トークン&gt; が必須。|
-|承諾|アプリケーションまたは json|
+|Authorization|ベアラー &lt;トークン&gt; が必要です。|
+|Accept|application/json|
 
 ## <a name="request-body"></a>要求本文
 要求本文で、[deviceComplianceUserOverview](../resources/intune_deviceconfig_devicecomplianceuseroverview.md) オブジェクトの JSON 表記を指定します。
 
 次の表に、[deviceComplianceUserOverview](../resources/intune_deviceconfig_devicecomplianceuseroverview.md) の作成時に必要なプロパティを示します。
 
-|プロパティ|タイプ|説明|
+|プロパティ|型|説明|
 |:---|:---|:---|
-|ID|文字列|エンティティのキー。|
+|id|String|エンティティのキー。|
 |pendingCount|Int32|保留中のユーザーの数|
-|notApplicableCount|Int32|該当しないユーザーの数|
+|notApplicableCount|Int32|適用されないユーザーの数|
 |successCount|Int32|成功したユーザーの数|
 |errorCount|Int32|エラー ユーザーの数|
 |failedCount|Int32|失敗したユーザーの数|
@@ -54,9 +54,10 @@ PATCH /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/user
 ``` http
 PATCH https://graph.microsoft.com/v1.0/deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/userStatusOverview
 Content-type: application/json
-Content-length: 212
+Content-length: 279
 
 {
+  "@odata.type": "#microsoft.graph.deviceComplianceUserOverview",
   "pendingCount": 12,
   "notApplicableCount": 2,
   "successCount": 12,
@@ -86,11 +87,6 @@ Content-Length: 328
   "configurationVersion": 4
 }
 ```
-
-
-
-
-
 
 
 

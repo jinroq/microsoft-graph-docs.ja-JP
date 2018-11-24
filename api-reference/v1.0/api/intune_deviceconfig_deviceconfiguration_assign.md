@@ -24,8 +24,8 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/assign
 ## <a name="request-headers"></a>要求ヘッダー
 |ヘッダー|値|
 |:---|:---|
-|承認|ベアラー &lt;トークン&gt; が必須。|
-|Accept|アプリケーションまたは json|
+|Authorization|ベアラー &lt;トークン&gt; が必要です。|
+|Accept|application/json|
 
 ## <a name="request-body"></a>要求本文
 要求本文で、パラメーターの JSON 表記を指定します。
@@ -34,7 +34,7 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/assign
 
 |プロパティ|型|説明|
 |:---|:---|:---|
-|割り当て|[deviceConfigurationAssignment](../resources/intune_deviceconfig_deviceconfigurationassignment.md) コレクション|まだ文書化されていません|
+|assignments|[deviceConfigurationAssignment](../resources/intune_deviceconfig_deviceconfigurationassignment.md) コレクション|まだ文書化されていません|
 
 
 
@@ -82,11 +82,6 @@ Content-Length: 271
   ]
 }
 ```
-
-
-
-
-
 
 
 

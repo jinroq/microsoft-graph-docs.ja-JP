@@ -6,17 +6,18 @@
 ## <a name="properties"></a>プロパティ
 |プロパティ|型|説明|
 |:---|:---|:---|
-|型|String|コンテンツ MIME の種類を示します。|
-|value|バイナリ|実際のコンテンツを含むバイト配列です。|
+|type|String|コンテンツ MIME の種類を示します。|
+|value|バイナリ型 (Binary)|実際のコンテンツを含むバイト配列です。|
 
 ## <a name="relationships"></a>リレーションシップ
 なし
 ## <a name="json-representation"></a>JSON 表記
 以下は、リソースの JSON 表記です。
-<!--{
+<!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.mimeContent"
-}-->
+}
+-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.mimeContent",
@@ -24,11 +25,6 @@
   "value": "binary"
 }
 ```
-
-
-
-
-
 
 
 

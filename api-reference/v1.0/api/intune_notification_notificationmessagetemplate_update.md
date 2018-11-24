@@ -24,21 +24,21 @@ PATCH /deviceManagement/notificationMessageTemplates/{notificationMessageTemplat
 ## <a name="request-headers"></a>要求ヘッダー
 |ヘッダー|値|
 |:---|:---|
-|承認|ベアラー &lt;トークン&gt; が必須。|
-|承諾|アプリケーション/json|
+|Authorization|ベアラー &lt;トークン&gt; が必要です。|
+|Accept|application/json|
 
 ## <a name="request-body"></a>要求本文
 要求の本文で、[notificationMessageTemplate](../resources/intune_notification_notificationmessagetemplate.md) オブジェクトの JSON 表記を指定します。
 
 次の表に、[notificationMessageTemplate](../resources/intune_notification_notificationmessagetemplate.md) の作成時に必要なプロパティを示します。
 
-|プロパティ|タイプ|説明|
+|プロパティ|型|説明|
 |:---|:---|:---|
-|ID|文字列|エンティティのキー。|
-|lastModifiedDateTime|DateTimeOffset|オブジェクトが最後に変更された DateTime。|
-|displayName|文字列|通知メッセージ テンプレートの表示名。|
-|defaultLocale|文字列|要求されたロケールが使用できないときにフォールバックする既定のロケール。|
-|brandingOptions|[notificationTemplateBrandingOptions](../resources/intune_notification_notificationtemplatebrandingoptions.md)|メッセージ テンプレートのブランド化オプション。Intune 管理コンソールでは、ブランド化が定義されています。使用可能な値は `none`、 `includeCompanyLogo`、 `includeCompanyName`、 `includeContactInformation`です。|
+|id|String|エンティティのキー。|
+|lastModifiedDateTime|DateTimeOffset|オブジェクトの最終更新の DateTime。|
+|displayName|String|通知メッセージ テンプレートの表示名。|
+|defaultLocale|String|要求されたロケールが使用できないときにフォールバックする既定のロケール。|
+|brandingOptions|[notificationTemplateBrandingOptions](../resources/intune_notification_notificationtemplatebrandingoptions.md)|メッセージ テンプレートのブランド化オプション。 ブランド化は、Intune 管理コンソールで定義されます。 可能な値は、`none`、`includeCompanyLogo`、`includeCompanyName`、`includeContactInformation` です。|
 
 
 
@@ -51,10 +51,10 @@ PATCH /deviceManagement/notificationMessageTemplates/{notificationMessageTemplat
 ``` http
 PATCH https://graph.microsoft.com/v1.0/deviceManagement/notificationMessageTemplates/{notificationMessageTemplateId}
 Content-type: application/json
-Content-length: 195
+Content-length: 197
 
 {
-  "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
+  "@odata.type": "#microsoft.graph.notificationMessageTemplate",
   "displayName": "Display Name value",
   "defaultLocale": "Default Locale value",
   "brandingOptions": "includeCompanyLogo"
@@ -77,11 +77,6 @@ Content-Length: 310
   "brandingOptions": "includeCompanyLogo"
 }
 ```
-
-
-
-
-
 
 
 

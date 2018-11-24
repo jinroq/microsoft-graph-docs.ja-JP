@@ -26,13 +26,13 @@ POST /deviceManagement/detectedApps/{detectedAppId}/managedDevices/{managedDevic
 ## <a name="request-headers"></a>要求ヘッダー
 |ヘッダー|値|
 |:---|:---|
-|承認|ベアラー &lt;トークン&gt; が必須。|
-|Accept|アプリケーションまたは json|
+|承認|ベアラー &lt;トークン&gt;が必須。|
+|承諾|application/json|
 
 ## <a name="request-body"></a>要求本文
 要求本文で、パラメーターの JSON 表記を指定します。
 
-次の表に、このアクションで使用できるパラメーターを示します。
+次の表は、このアクションで使用できるパラメーターを示しています。
 
 |プロパティ|型|説明|
 |:---|:---|:---|
@@ -73,11 +73,6 @@ Content-length: 532
 ``` http
 HTTP/1.1 204 No Content
 ```
-
-
-
-
-
 
 
 

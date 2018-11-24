@@ -4,8 +4,8 @@
 
 このリソースは以下をサポートしています。
 
-- [拡張機能](../../../concepts/extensibility_overview.md)を使用して、カスタム プロパティに独自のデータを追加します。
--  [通知の変更](../../../concepts/webhooks.md)にサブスクライブします。
+- [拡張機能](../../../concepts/extensibility_overview.md)として、カスタム プロパティに独自のデータを追加します。
+- [変更通知](../../../concepts/webhooks.md)にサブスクライブします。
 - [デルタ](../api/contact_delta.md)関数を提供することにより、[デルタ クエリ](../../../concepts/delta_query_overview.md)を使用して、増分の追加、削除、更新を追跡します。
 
 
@@ -13,50 +13,49 @@
 
 | メソッド       | 戻り値の型  |説明|
 |:---------------|:--------|:----------|
-|[連絡先を取得する](../api/contact_get.md) | [連絡先](contact.md) |連絡先オブジェクトのプロパティとリレーションシップを読み取ります。|
-|[作成](../api/user_post_contacts.md) | [連絡先](contact.md) |連絡先をルート連絡先フォルダーまたは別の連絡先フォルダーの連絡先エンドポイントに追加します。|
-|[更新する](../api/contact_update.md) | [連絡先](contact.md) |連絡先オブジェクトを更新します。 |
+|[連絡先を取得する](../api/contact_get.md) | [contact](contact.md) |連絡先オブジェクトのプロパティとリレーションシップを読み取ります。|
+|[作成](../api/user_post_contacts.md) | [contact](contact.md) |連絡先をルート連絡先フォルダーまたは別の連絡先フォルダーの連絡先エンドポイントに追加します。|
+|[更新する](../api/contact_update.md) | [contact](contact.md) |連絡先オブジェクトを更新します。 |
 |[削除](../api/contact_delete.md) | なし |連絡先オブジェクトを削除します。 |
-|[デルタ](../api/contact_delta.md)|[contact](contact.md)コレクション| 指定したフォルダーで追加、削除、更新された連絡先のセットを取得します。|
+|[delta](../api/contact_delta.md)|[contact](contact.md)コレクション| 指定したフォルダーで追加、削除、更新された連絡先のセットを取得します。|
 |**オープン拡張機能**| | |
 |[オープン拡張機能を作成する](../api/opentypeextension_post_opentypeextension.md) |[openTypeExtension](opentypeextension.md)| オープン拡張機能を作成し、リソースの新規または既存のインスタンスのカスタム プロパティを追加します。|
 |[オープン拡張機能を取得する](../api/opentypeextension_get.md) |[openTypeExtension](opentypeextension.md) コレクション| 名前や完全修飾名によって識別されたオープン拡張機能オブジェクトを取得します。|
 |**スキーマ拡張機能**| | |
 |[スキーマ拡張機能の値を追加する](../../../concepts/extensibility_schema_groups.md) || スキーマ拡張機能の定義を作成し、それを使用してカスタマイズされた種類のデータをリソースに追加します。|
 |**拡張プロパティ**| | |
-|[単一値の拡張プロパティを作成する](../api/singlevaluelegacyextendedproperty_post_singlevalueextendedproperties.md) |[連絡先](contact.md)  |新規または既存の連絡先に、1 つ以上の単一値の拡張プロパティを作成します。   |
-|[単一値の拡張プロパティを持つ連絡先を取得する](../api/singlevaluelegacyextendedproperty_get.md)  | [連絡先](contact.md) | または `$filter` を使用して、単一値の拡張プロパティを含む連絡先を取得します。`$expand` |
-|[複数値の拡張プロパティを作成する](../api/multivaluelegacyextendedproperty_post_multivalueextendedproperties.md) | [連絡先](contact.md) | 新規または既存の連絡先に、1 つ以上の複数値の拡張プロパティを作成します。  |
-|[複数値の拡張プロパティを持つ連絡先を取得する](../api/multivaluelegacyextendedproperty_get.md)  | [連絡先](contact.md) | を使用して、複数値の拡張プロパティを含む連絡先を取得します。`$expand` |
+|[単一値の拡張プロパティを作成する](../api/singlevaluelegacyextendedproperty_post_singlevalueextendedproperties.md) |[contact](contact.md)  |新規または既存の連絡先に、1 つ以上の単一値の拡張プロパティを作成します。   |
+|[単一値の拡張プロパティを持つ連絡先を取得する](../api/singlevaluelegacyextendedproperty_get.md)  | [contact](contact.md) | `$expand` または `$filter` を使用して、単一値の拡張プロパティを含む連絡先を取得します。 |
+|[複数値の拡張プロパティを作成する](../api/multivaluelegacyextendedproperty_post_multivalueextendedproperties.md) | [contact](contact.md) | 新規または既存の連絡先に、1 つ以上の複数値の拡張プロパティを作成します。  |
+|[複数値の拡張プロパティを持つ連絡先を取得する](../api/multivaluelegacyextendedproperty_get.md)  | [contact](contact.md) | `$expand` を使用して、複数値の拡張プロパティを含む連絡先を取得します。 |
 
 ## <a name="properties"></a>プロパティ
 | プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
 |assistantName|文字列|連絡先のアシスタントの名前。|
-|誕生日|DateTimeOffset|連絡先の誕生日です。Timestamp 型は、ISO 8601 形式を使用して日付と時刻の情報を表し、必ず UTC 時間です。たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、次のようになります。 `'2014-01-01T00:00:00Z'`|
+|birthday|DateTimeOffset|連絡先の誕生日です。Timestamp 型は、ISO 8601 形式を使用して日付と時刻の情報を表し、必ず UTC 時間です。たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、次のようになります。`'2014-01-01T00:00:00Z'`|
 |businessAddress|[PhysicalAddress](physicaladdress.md)|連絡先の勤務先の住所。|
 |businessHomePage|文字列|連絡先の勤務先のホーム ページ。|
 |businessPhones|String コレクション|連絡先の勤務先の電話番号。|
-|カテゴリ|String コレクション|連絡先に関連付けられたカテゴリ。|
+|categories|String コレクション|連絡先に関連付けられたカテゴリ。|
 |changeKey|文字列|連絡先のバージョンを識別します。連絡先を変更するたびに ChangeKey も変更されます。これにより、Exchange は正しいバージョンのオブジェクトに変更を適用できます。|
-|子|String コレクション|連絡先の子供の名前。|
+|children|String コレクション|連絡先の子供の名前。|
 |companyName|文字列|連絡先の会社の名前。|
-|createdDateTime|DateTimeOffset|連絡先が作成された時刻です。Timestamp 型は、ISO 8601 形式を使用して日付と時刻の情報を表し、必ず UTC 時間です。たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、次のようになります。 `'2014-01-01T00:00:00Z'`|
-|部署|文字列|連絡先の部署。|
-|displayName|文字列|連絡先の表示名。|
-|emailAddresses|[EmailAddress](emailaddress.md) コレクション|連絡先のメール アドレス。|
-|フラグ|[FollowupFlag](followupflag.md)|メッセージのステータス、開始日、期限、または完了日を示すフラグ値。|
+|createdDateTime|DateTimeOffset|連絡先が作成された時刻です。Timestamp 型は、ISO 8601 形式を使用して日付と時刻の情報を表し、必ず UTC 時間です。たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、次のようになります。`'2014-01-01T00:00:00Z'`|
+|department|文字列|連絡先の部署。|
+|displayName|文字列|連絡先の表示名。 [作成](../api/user_post_contacts.md)または[更新](../api/contact_update.md)操作では、表示名を指定できます。 その他のプロパティを後で更新プログラムが原因で、自動的に生成された値を指定した表示名の値を上書きすることに注意します。 既存の値を保持するには、必ず、[更新](../api/contact_update.md)操作の表示名としてです。|
+|emailAddresses|[EmailAddress](emailaddress.md) collection|連絡先のメール アドレス。|
 |fileAs|文字列|連絡先がファイルされる名前。|
-|生成|文字列|連絡先の世代。|
+|generation|文字列|連絡先の世代。|
 |givenName|文字列|連絡先の名。|
 |homeAddress|[PhysicalAddress](physicaladdress.md)|連絡先の自宅住所。|
 |homePhones|String コレクション|連絡先の自宅の電話番号。|
-|ID|文字列|連絡先の一意識別子。読み取り専用。|
+|id|文字列|連絡先の一意識別子。読み取り専用。|
 |imAddresses|String コレクション|連絡先のインスタント メッセージング (IM) アドレス。|
-|イニシャル|文字列|連絡先のイニシャル。|
+|initials|文字列|連絡先のイニシャル。|
 |jobTitle|文字列|連絡先の役職。|
-|lastModifiedDateTime|DateTimeOffset|連絡先が変更された時刻です。Timestamp 型は、ISO 8601 形式を使用して日付と時刻の情報を表し、必ず UTC 時間です。たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、次のようになります。 `'2014-01-01T00:00:00Z'`|
-|マネージャー|文字列|連絡先の上司の名前。
+|lastModifiedDateTime|DateTimeOffset|連絡先が変更された時刻です。Timestamp 型は、ISO 8601 形式を使用して日付と時刻の情報を表し、必ず UTC 時間です。たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、次のようになります。`'2014-01-01T00:00:00Z'`|
+|manager|文字列|連絡先の上司の名前。
 |middleName|文字列|連絡先のミドル ネーム。|
 |mobilePhone|文字列|連絡先の携帯電話番号。|
 |nickName|文字列|連絡先のニックネーム。|
@@ -64,10 +63,10 @@
 |otherAddress|[PhysicalAddress](physicaladdress.md)|連絡先の別の住所。|
 |parentFolderId|文字列|連絡先の親フォルダーの ID。|
 |personalNotes|文字列|連絡先に関するユーザーのメモ。|
-|職業|文字列|連絡先の専門的職業。|
-|spouseName|文字列|連絡先の配偶者/パートナーの名前。|
+|profession|文字列|連絡先の専門的職業。|
+|spouseName|String|連絡先の配偶者/パートナーの名前。|
 |姓|文字列|連絡先の姓。|
-|タイトル|文字列|連絡先の肩書。|
+|タイトル|String|連絡先の肩書。|
 |yomiCompanyName|文字列|連絡先の会社名の読み仮名。|
 |yomiGivenName|文字列|連絡先の名 (ファースト ネーム) の読み仮名。|
 |yomiSurname|文字列|連絡先の姓 (ラスト ネーム) の読み仮名。|
@@ -75,10 +74,10 @@
 ## <a name="relationships"></a>リレーションシップ
 | リレーションシップ | 型   |説明|
 |:---------------|:--------|:----------|
-|拡張機能|[extension](extension.md) コレクション|連絡先に対して定義されているオープン拡張機能のコレクション。読み取り専用。Null 許容型。|
-|multiValueExtendedProperties|[multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md) コレクション| 連絡先に定義された、複数値の拡張プロパティのコレクション。読み取り専用。Null 許容型。|
-|写真|[profilePhoto](profilephoto.md)| 連絡先の写真 (オプション)。連絡先の写真を取得また設定することができます。|
-|singleValueExtendedProperties|[singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md) コレクション| 連絡先に定義された、単一値の拡張プロパティのコレクション。読み取り専用。Null 許容型。|
+|extensions|[extension](extension.md) コレクション|連絡先に対して定義されているオープン拡張機能のコレクション。読み取り専用。Null 許容型。|
+|multiValueExtendedProperties|[multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md) collection| 連絡先に定義された、複数値の拡張プロパティのコレクション。読み取り専用。Null 許容型。|
+|photo|[profilePhoto](profilephoto.md)| 連絡先の写真 (オプション)。連絡先の写真を取得また設定することができます。|
+|singleValueExtendedProperties|[singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md) collection| 連絡先に定義された、単一値の拡張プロパティのコレクション。読み取り専用。Null 許容型。|
 
 ## <a name="json-representation"></a>JSON 表記
 
@@ -132,7 +131,6 @@
   "department": "string",
   "displayName": "string",
   "emailAddresses": [{"@odata.type": "microsoft.graph.emailAddress"}],
-  "flag": {"@odata.type": "microsoft.graph.followupFlag"},
   "fileAs": "string",
   "generation": "string",
   "givenName": "string",

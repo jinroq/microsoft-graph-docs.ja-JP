@@ -14,10 +14,11 @@ RGB 色。
 なし
 ## <a name="json-representation"></a>JSON 表記
 以下は、リソースの JSON 表記です。
-<!--{
+<!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.rgbColor"
-}-->
+}
+-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.rgbColor",
@@ -26,11 +27,6 @@ RGB 色。
   "b": 1024
 }
 ```
-
-
-
-
-
 
 
 

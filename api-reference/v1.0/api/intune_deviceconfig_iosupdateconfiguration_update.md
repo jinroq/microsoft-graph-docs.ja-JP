@@ -24,25 +24,25 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}
 ## <a name="request-headers"></a>要求ヘッダー
 |ヘッダー|値|
 |:---|:---|
-|承認|ベアラー &lt;トークン&gt; が必須。|
-|承諾|アプリケーションまたは json|
+|Authorization|ベアラー &lt;トークン&gt; が必要です。|
+|Accept|application/json|
 
 ## <a name="request-body"></a>要求本文
 要求本文で、[iosUpdateConfiguration](../resources/intune_deviceconfig_iosupdateconfiguration.md) オブジェクトの JSON 表記を指定します。
 
 次の表に、[iosUpdateConfiguration](../resources/intune_deviceconfig_iosupdateconfiguration.md) の作成時に必要なプロパティを示します。
 
-|プロパティ|タイプ|説明|
+|プロパティ|型|説明|
 |:---|:---|:---|
-|ID|文字列|エンティティのキー。 [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md) から継承します|
-|lastModifiedDateTime|DateTimeOffset|オブジェクトが最後に変更された DateTime。 [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md) から継承します|
+|id|String|エンティティのキー。 [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md) から継承します|
+|lastModifiedDateTime|DateTimeOffset|オブジェクトの最終更新の DateTime。 [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md) から継承します|
 |createdDateTime|DateTimeOffset|オブジェクトが作成された DateTime。 [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md) から継承します|
-|説明|文字列|デバイス構成について管理者が提供した説明。 [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md) から継承します|
-|displayName|文字列|デバイス構成について管理者が指定した名前。 [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md) から継承します|
-|バージョン|Int32|デバイス構成のバージョン。 [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md) から継承します|
+|description|String|管理者が指定した、デバイス構成についての説明。 [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md) から継承します|
+|displayName|String|管理者が指定した、デバイス構成の名前。 [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md) から継承します|
+|version|Int32|デバイス構成のバージョン。 [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md) から継承します|
 |activeHoursStart|TimeOfDay|アクティブ時間の開始 (アクティブ時間は、更新のインストールが実施されない時間枠のことです)|
 |activeHoursEnd|TimeOfDay|アクティブ時間の終了 (アクティブ時間は、更新のインストールが実施されない時間枠のことです)|
-|scheduledInstallDays|[dayOfWeek 列挙型](../resources/intune_deviceconfig_dayofweek.md) コレクション|アクティブな時間のように構成されている曜日。このコレクションには、最大 7 つの要素を含めることができます。使用可能な値: `sunday`、 `monday`、 `tuesday`、 `wednesday`、 `thursday`、 `friday`、 `saturday`。|
+|scheduledInstallDays|[dayOfWeek](../resources/intune_deviceconfig_dayofweek.md)コレクション|アクティブ時間が設定されている曜日。 このコレクションには、最大で 7 個の要素を含めることができます。 可能な値は、`sunday`、`monday`、`tuesday`、`wednesday`、`thursday`、`friday`、`saturday` です。|
 |utcTimeOffsetInMinutes|Int32|UTC タイム オフセット (分単位で示されます)|
 
 
@@ -56,10 +56,10 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}
 ``` http
 PATCH https://graph.microsoft.com/v1.0/deviceManagement/deviceConfigurations/{deviceConfigurationId}
 Content-type: application/json
-Content-length: 328
+Content-length: 325
 
 {
-  "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
+  "@odata.type": "#microsoft.graph.iosUpdateConfiguration",
   "description": "Description value",
   "displayName": "Display Name value",
   "version": 7,
@@ -95,11 +95,6 @@ Content-Length: 497
   "utcTimeOffsetInMinutes": 6
 }
 ```
-
-
-
-
-
 
 
 

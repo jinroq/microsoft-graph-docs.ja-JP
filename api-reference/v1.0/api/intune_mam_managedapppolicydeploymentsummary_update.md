@@ -27,8 +27,8 @@ PATCH /deviceAppManagement/targetedManagedAppConfigurations/{targetedManagedAppC
 ## <a name="request-headers"></a>要求ヘッダー
 |ヘッダー|値|
 |:---|:---|
-|承認|ベアラー &lt;トークン&gt; が必須。|
-|承諾|アプリケーションまたは json|
+|Authorization|ベアラー &lt;トークン&gt; が必要です。|
+|Accept|application/json|
 
 ## <a name="request-body"></a>要求本文
 要求本文で、[managedAppPolicyDeploymentSummary](../resources/intune_mam_managedapppolicydeploymentsummary.md) オブジェクトの JSON 表記を指定します。
@@ -37,12 +37,12 @@ PATCH /deviceAppManagement/targetedManagedAppConfigurations/{targetedManagedAppC
 
 |プロパティ|型|説明|
 |:---|:---|:---|
-|displayName|文字列|まだ文書化されていません|
+|displayName|String|まだ文書化されていません|
 |configurationDeployedUserCount|Int32|まだ文書化されていません|
 |lastRefreshTime|DateTimeOffset|まだ文書化されていません|
 |configurationDeploymentSummaryPerApp|[managedAppPolicyDeploymentSummaryPerApp](../resources/intune_mam_managedapppolicydeploymentsummaryperapp.md) コレクション|まだ文書化されていません|
-|ID|文字列|エンティティのキー。|
-|バージョン|文字列|エンティティのバージョン。|
+|id|String|エンティティのキー。|
+|version|String|エンティティのバージョン。|
 
 
 
@@ -55,9 +55,10 @@ PATCH /deviceAppManagement/targetedManagedAppConfigurations/{targetedManagedAppC
 ``` http
 PATCH https://graph.microsoft.com/v1.0/deviceAppManagement/iosManagedAppProtections/{iosManagedAppProtectionId}/deploymentSummary
 Content-type: application/json
-Content-length: 516
+Content-length: 588
 
 {
+  "@odata.type": "#microsoft.graph.managedAppPolicyDeploymentSummary",
   "displayName": "Display Name value",
   "configurationDeployedUserCount": 14,
   "lastRefreshTime": "2017-01-01T00:01:30.1240368-08:00",
@@ -101,11 +102,6 @@ Content-Length: 637
   "version": "Version value"
 }
 ```
-
-
-
-
-
 
 
 

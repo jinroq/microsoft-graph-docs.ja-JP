@@ -24,8 +24,8 @@ POST /deviceAppManagement/managedEBooks/{managedEBookId}/assignments
 ## <a name="request-headers"></a>要求ヘッダー
 |ヘッダー|値|
 |:---|:---|
-|承認|ベアラー &lt;トークン&gt; が必須。|
-|承諾|アプリケーションまたは json|
+|Authorization|ベアラー &lt;トークン&gt; が必要です。|
+|Accept|application/json|
 
 ## <a name="request-body"></a>要求本文
 要求本文で、iosVppEBookAssignment オブジェクトの JSON 表記を指定します。
@@ -34,9 +34,9 @@ POST /deviceAppManagement/managedEBooks/{managedEBookId}/assignments
 
 |プロパティ|型|説明|
 |:---|:---|:---|
-|ID|文字列|エンティティのキー。 [managedEBookAssignment](../resources/intune_books_managedebookassignment.md) から継承します|
-|ターゲット|[deviceAndAppManagementAssignmentTarget](../resources/intune_shared_deviceandappmanagementassignmenttarget.md)|電子ブックの割り当て先。 [managedEBookAssignment](../resources/intune_books_managedebookassignment.md) から継承します|
-|installIntent|[installIntent](../resources/intune_shared_installintent.md)|EBookのインストールの目的。 [managedEBookAssignment](../resources/intune_books_managedebookassignment.md) から継承します。 指定できる値は、`available`、`required`、`uninstall`、`availableWithoutEnrollment` です。|
+|id|String|エンティティのキー。 [managedEBookAssignment](../resources/intune_books_managedebookassignment.md) から継承します|
+|target|[deviceAndAppManagementAssignmentTarget](../resources/intune_shared_deviceandappmanagementassignmenttarget.md)|電子ブックの割り当て先。 [managedEBookAssignment](../resources/intune_books_managedebookassignment.md) から継承します|
+|installIntent|[installIntent](../resources/intune_shared_installintent.md)|電子ブックのインストールの目的。 [ManagedEBookAssignment](../resources/intune_books_managedebookassignment.md)から継承されます。 可能な値は、`available`、`required`、`uninstall`、`availableWithoutEnrollment` です。|
 
 
 
@@ -76,11 +76,6 @@ Content-Length: 242
   "installIntent": "required"
 }
 ```
-
-
-
-
-
 
 
 

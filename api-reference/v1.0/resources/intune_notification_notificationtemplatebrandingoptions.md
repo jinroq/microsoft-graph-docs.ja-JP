@@ -6,15 +6,10 @@
 ## <a name="members"></a>メンバー
 |メンバー|値|説明|
 |:---|:---|:---|
-|なし|0|ブランド化はありません。|
+|none|0|ブランド化はありません。|
 |includeCompanyLogo|1|会社のロゴが含まれます。|
 |includeCompanyName|2|会社名が含まれます。|
 |includeContactInformation|4|連絡先情報が含まれます。|
-
-
-
-
-
 
 
 

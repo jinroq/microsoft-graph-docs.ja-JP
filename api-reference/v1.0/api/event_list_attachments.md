@@ -11,7 +11,7 @@
 |アプリケーション | Calendars.Read |
 
 ## <a name="http-request"></a>HTTP 要求
-ユーザーの既定[カレンダー](../resources/calendar.md)内の[ イベント](../resources/event.md)の添付ファイル。
+ユーザーの既定の[予定表](../resources/calendar.md)に[イベント](../resources/event.md)の添付ファイルです。
 
 <!--
 Attachments for an [event](../resources/event.md) in the user's or group's default [calendar](../resources/calendar.md).
@@ -31,7 +31,7 @@ GET /groups/{id}/events/{id}/attachments
 GET /groups/{id}/calendar/events/{id}/attachments
 -->
 
-ユーザーの既定 [calendarGroup](../resources/calendargroup.md) に属する[カレンダー](../resources/calendar.md)内の[イベント](../resources/event.md)の添付ファイル。
+ユーザーの既定 [calendarGroup](../resources/calendargroup.md) に属する[カレンダー](../resources/calendar.md)内[イベント](../resources/event.md)の添付ファイル。
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -49,11 +49,11 @@ GET /me/calendargroups/{id}/calendars/{id}/events/{id}/attachments
 GET /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{id}/attachments
 ```
 ## <a name="optional-query-parameters"></a>オプションのクエリ パラメーター
-このメソッドは、応答をカスタマイズするための [OData クエリ パラメーター](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters)をサポートします。
+このメソッドは、応答をカスタマイズするための [OData クエリ パラメーター](https://developer.microsoft.com/graph/docs/concepts/query_parameters)をサポートします。
 ## <a name="request-headers"></a>要求ヘッダー
 | 名前       | 型 | 説明|
 |:-----------|:------|:----------|
-| 承認  | 文字列  | ベアラー {トークン}。必須。 |
+| Authorization  | string  | ベアラー {トークン}。必須。 |
 
 ## <a name="request-body"></a>要求本文
 このメソッドには、要求本文を指定しません。

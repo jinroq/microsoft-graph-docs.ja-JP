@@ -2,10 +2,10 @@
 
 連絡先オブジェクトのプロパティとリレーションシップを取得します。
 
-アプリが別のユーザーの連絡先フォルダーの連絡先を取得できる 2 つのシナリオがあります。
+2 つシナリオは、アプリケーションが別のユーザーの連絡先フォルダーに連絡先を取得する場所です。
 
-* このアプリにアプリケーションのアクセス許可がある場合、または、
-* このアプリに、1 人のユーザーから適切な[アクセス許可](#permissions)が委任され、別のユーザーは、そのユーザーと連絡先フォルダーを共有しているか、またはそのユーザーにアクセスを委任しているかする場合。 [詳細と例](../../../concepts/outlook-get-shared-contacts-folders.md)をご覧ください。
+* アプリケーションは、アプリケーションの権限を持つ場合、または、
+* アプリケーションがある場合、適切な 1 人のユーザーから[アクセス許可](#permissions)を委任し、他のユーザーは、そのユーザーの連絡先フォルダーを共有するにはまたは、そのユーザーに代理アクセスを与え。 [詳細と例](../../../concepts/outlook-get-shared-contacts-folders.md)を参照してください。
 
 
 ## <a name="permissions"></a>アクセス許可
@@ -18,12 +18,12 @@
 |アプリケーション | Contacts.Read、Contacts.ReadWrite |
 
 ## <a name="http-request"></a>HTTP 要求
-<!-- { "blockType": "ignored" } --> ユーザーの既定の [contactFolder](../resources/contactfolder.md) からの [連絡先](../resources/contact.md)。
+<!-- { "blockType": "ignored" } -->[連絡先](../resources/contact.md)ユーザーの既定の[contactFolder](../resources/contactfolder.md)からです。
 ```http
 GET /me/contacts/{id}
 GET /users/{id | userPrincipalName}/contacts/{id}
 ```
-ユーザーの最上位レベルの [contactFolder](../resources/contactfolder.md) からの [連絡先](../resources/contact.md)。
+ユーザーの最上位レベル [contactFolder](../resources/contactfolder.md) からの [連絡先](../resources/contact.md)。
 ```http
 GET /me/contactfolders/{Id}/contacts/{id}
 GET /users/{id | userPrincipalName}/contactfolders/{id}/contacts/{id}
@@ -42,7 +42,7 @@ GET /users/{id | userPrincipalName}/contactFolders/{id}/childFolders/{id}/contac
 ## <a name="request-headers"></a>要求ヘッダー
 | ヘッダー       | 値 |
 |:---------------|:--------|
-| 承認  | ベアラー {トークン}。必須。  |
+| Authorization  | ベアラー {トークン}。必須。  |
 
 ## <a name="request-body"></a>要求本文
 このメソッドには、要求本文を指定しません。
@@ -106,7 +106,7 @@ Content-length: 1977
   "department": "Sales & Marketing",
   "officeLocation": "20/1101",
   "profession": null,
-  "businessHomePage": "http://www.contoso.com",
+  "businessHomePage": "https://www.contoso.com",
   "assistantName": null,
   "manager": null,
   "homePhones": [],

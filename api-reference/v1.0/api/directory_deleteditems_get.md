@@ -30,13 +30,13 @@ GET /directory/deletedItems/{id}
 ```
 
 ## <a name="optional-query-parameters"></a>オプションのクエリ パラメーター
-このメソッドは、応答をカスタマイズするための [OData クエリ パラメーター](http://graph.microsoft.io/docs/overview/query_parameters)をサポートします。
+このメソッドは、応答をカスタマイズするための [OData クエリ パラメーター](https://developer.microsoft.com/graph/docs/concepts/query_parameters)をサポートします。
 
 ## <a name="request-headers"></a>要求ヘッダー
 | 名前      |説明|
 |:----------|:----------|
-| 承認  | ベアラー &lt;コード&gt; が*必要*|
-| 承諾  | application/json |
+| Authorization  | ベアラー &lt;コード&gt; が*必要*|
+| Accept  | application/json |
 
 ## <a name="request-body"></a>要求本文
 このメソッドには、要求本文を指定しません。

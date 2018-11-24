@@ -19,7 +19,7 @@ GET /groups/{id}/onenote/notebooks
 GET /sites/{id}/onenote/notebooks
 ```
 ## <a name="optional-query-parameters"></a>オプションのクエリ パラメーター
-このメソッドは、応答をカスタマイズするための [OData クエリ パラメーター](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters)をサポートします。
+このメソッドは、応答をカスタマイズするための [OData クエリ パラメーター](https://developer.microsoft.com/graph/docs/concepts/query_parameters)をサポートします。
 
 既定の並べ替え順序は `name asc` です。 
 

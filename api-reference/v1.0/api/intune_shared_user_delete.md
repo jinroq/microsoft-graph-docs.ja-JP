@@ -4,15 +4,15 @@
 
 [user](../resources/intune_shared_user.md) を削除します。
 ## <a name="prerequisites"></a>前提条件
-この API を呼び出すには次のアクセス許可のいずれかが必要です。 アクセス許可の選択方法などの詳細については [Permissions](../../../concepts/permissions_reference.md) を参照してください。  必要な特定のアクセス許可は、コンテキストに依存します。
+この API を呼び出すには次のアクセス許可のいずれかが必要です。 アクセス許可の選択方法などの詳細については、「[アクセス許可](../../../concepts/permissions_reference.md)」を参照してください。  必要な特定のアクセス許可は、コンテキストによって異なります。
 
 |アクセス許可の種類|アクセス許可 (特権の大きいものから小さいものへ)|
 |:---|:---|
 |委任 (職場または学校のアカウント)| _コンテキストによって異なります_|
-| &nbsp; &nbsp; デバイス | DeviceManagementManagedDevices.ReadWrite.All |
-| &nbsp; &nbsp; MAM | DeviceManagementApps.ReadWrite.All |
-| &nbsp; &nbsp; 新人研修 | DeviceManagementServiceConfig.ReadWrite.All |
-| &nbsp; &nbsp; トラブルシューティング | DeviceManagementManagedDevices.ReadWrite.All |
+| &nbsp;&nbsp;デバイス | DeviceManagementManagedDevices.ReadWrite.All |
+| &nbsp;&nbsp; MAM | DeviceManagementApps.ReadWrite.All |
+| &nbsp;&nbsp;契約時 | DeviceManagementServiceConfig.ReadWrite.All |
+| &nbsp;&nbsp;のトラブルシューティング | DeviceManagementManagedDevices.ReadWrite.All |
 |委任 (個人用 Microsoft アカウント)|サポートされていません。|
 |アプリケーション|サポートされていません。|
 
@@ -28,8 +28,8 @@ DELETE /users/{usersId}
 ## <a name="request-headers"></a>要求ヘッダー
 |ヘッダー|値|
 |:---|:---|
-|承認|ベアラー &lt;トークン&gt; が必須。|
-|受け入れ|アプリケーション /json|
+|Authorization|ベアラー &lt;トークン&gt; が必須。|
+|Accept|application/json|
 
 ## <a name="request-body"></a>要求本文
 このメソッドには、要求本文を指定しません。

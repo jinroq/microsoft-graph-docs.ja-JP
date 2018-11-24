@@ -1,14 +1,14 @@
 # <a name="followupflag-resource-type"></a>followupFlag リソースの種類
 
 
-ユーザーが特定のアイテムを後でフォローアップできるよう、フラグを設定できます。 サポートされているアイテムには、[メッセージ](message.md)と[連絡先](contact.md)があります。
+ユーザーが後でフォローするためのアイテムにフラグを設定できます。 
 
 ## <a name="properties"></a>プロパティ
-| プロパティ     | タイプ   |説明|
+| プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
 |CompletedDateTime|[dateTimeTimeZone](dateTimeTimeZone.md)|フォローアップが終了した日時。|
 |dueDateTime|**dateTimeTimeZone**|フォローアップが終了する予定の日時。|
-|FlagStatus|FollowupFlagStatus|アイテムのフォローアップ状態。 可能な値は、`notFlagged`、`complete`、`flagged` です。|
+|FlagStatus|followupFlagStatus|アイテムのフォローアップ状態。 可能な値は、`notFlagged`、`complete`、`flagged` です。|
 |startDateTime|**dateTimeTimeZone**|フォローアップを開始する予定の日時。|
 
 ## <a name="json-representation"></a>JSON 表記

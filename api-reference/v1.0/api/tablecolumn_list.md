@@ -17,12 +17,12 @@ GET /workbook/tables/{id|name}/columns
 GET /workbook/worksheets/{id|name}/tables/{id|name}/columns
 ```
 ## <a name="optional-query-parameters"></a>オプションのクエリ パラメーター
-このメソッドは、応答をカスタマイズするための [OData クエリ パラメーター](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters)をサポートします。
+このメソッドは、応答をカスタマイズするための [OData クエリ パラメーター](https://developer.microsoft.com/graph/docs/concepts/query_parameters)をサポートします。
 
 ## <a name="request-headers"></a>要求ヘッダー
 | 名前      |説明|
 |:----------|:----------|
-| 承認  | ベアラー {トークン}。必須。 |
+| Authorization  | ベアラー {トークン}。必須。 |
 | Workbook-Session-Id  | 変更を保持するかどうかを決定するブック セッション ID。省略可能。|
 
 ## <a name="request-body"></a>要求本文
@@ -30,7 +30,7 @@ GET /workbook/worksheets/{id|name}/tables/{id|name}/columns
 
 ## <a name="response"></a>応答
 
-成功した場合、このメソッドは `200 OK` 応答コードと、応答本文で [WorkbookRangeBorder](../resources/tablecolumn.md) オブジェクトのコレクションを返します。
+かどうかは成功すると、このメソッドが返されます、`200 OK`応答コードおよび応答の本文内の[WorkbookTableColumn](../resources/tablecolumn.md)オブジェクトのコレクションです。
 ## <a name="example"></a>例
 ##### <a name="request"></a>要求
 以下は、要求の例です。

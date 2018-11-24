@@ -22,16 +22,17 @@
 |:---------------|:--------|:----------|
 |[Get domain](../api/domain_get.md) | [domain](domain.md) | ドメイン オブジェクトのプロパティとリレーションシップを読み取ります。|
 |[Create domain](../api/domain_post_domains.md) | [domain](domain.md) | テナントにドメインを追加します。 |
-|[List domainNameReference](../api/domain_list_domainnamereferences.md) |[directoryObject](directoryobject.md) コレクション| ドメインへの参照付きのディレクトリ オブジェクトの一覧を取得します。|
-|[List serviceConfigurationRecords](../api/domain_list_serviceconfigurationrecords.md) |[domainDnsRecord](domaindnsrecord.md) コレクション|  ドメイン構成のためドメインの DNS レコードの一覧を取得します。|
-|[List verificationDnsRecords](../api/domain_list_verificationdnsrecords.md) |[domainDnsRecord](domaindnsrecord.md) コレクション|  ドメイン検証のためドメインの DNS レコードの一覧を取得します。|
+|[List domainNameReference](../api/domain_list_domainnamereferences.md) |[directoryObject](directoryobject.md) collection| ドメインへの参照付きのディレクトリ オブジェクトの一覧を取得します。|
+|[List serviceConfigurationRecords](../api/domain_list_serviceconfigurationrecords.md) |[domainDnsRecord](domaindnsrecord.md) collection|  ドメイン構成のためドメインの DNS レコードの一覧を取得します。|
+|[List verificationDnsRecords](../api/domain_list_verificationdnsrecords.md) |[domainDnsRecord](domaindnsrecord.md) collection|  ドメイン検証のためドメインの DNS レコードの一覧を取得します。|
 |[Update domain](../api/domain_update.md) | [domain](domain.md) |ドメインを更新します|
 |[Delete domain](../api/domain_delete.md) | なし |ドメインを削除します。|
+|[ForceDelete ドメイン](../api/domain_forcedelete.md)|なし|非同期操作を使用してドメインを削除します。|
 |[Verify domain](../api/domain_verify.md)|[domain](domain.md)|ドメインの所有権を検証します。|
 
 ## <a name="properties"></a>プロパティ
 
-| プロパティ   | タイプ | 説明 |
+| プロパティ   | 型 | 説明 |
 |:---------------|:--------|:----------|
 |authenticationType|String| ドメインに対して構成されている認証の種類を示します。値は、*Managed* または *Federated* のいずれかです。<br> *Managed* の場合、Azure AD がユーザー認証を実行するクラウド管理のドメインを表します。<br>*Federated* の場合、Active Directory フェデレーション サービスを経由したテナントのオンプレミスの Active Directory のように、認証が ID プロバイダーとフェデレーションを行うことを表します。null 許容ではありません |
 |availabilityStatus|String| [確認](../api/domain_verify.md)操作を使用する場合を除き、このプロパティは常に null です。[確認](../api/domain_verify.md)操作を使用する場合、応答で**ドメイン** エンティティが返されます。応答内の、**ドメイン** エンティティの **availabilityStatus** プロパティは、*AvailableImmediately* または *EmailVerifiedDomainTakeoverScheduled* のいずれかです。|
@@ -41,7 +42,7 @@
 |isInitial|Boolean| Microsoft Online Services (companyname.onmicrosoft.com) によって作成された初期ドメインがある場合は true です。会社ごとに 1 つだけの初期ドメインがあります。null 許容ではありません |
 |isRoot|Boolean| ドメインが検証済みのルート ドメインである場合は true です。それ以外に、ドメインがサブドメインまたは未確認である場合は false です。null 許容ではありません |
 |isVerified|Boolean| そのドメインが、ドメイン所有権の確認を完了している場合は true です。null 許容ではありません |
-|supportedServices|文字列コレクション| ドメインに割り当てられている機能です。<br><br>0、1 または次の値を含めることができます。*Email*、*Sharepoint*、*EmailInternalRelayOnly*、*OfficeCommunicationsOnline*、*SharePointDefaultDomain*、*FullRedelegation*、*SharePointPublic*、*OrgIdAuthentication*、*Yammer*、*Intune*<br><br> Graph API を使用して追加または削除できる値は次のとおりです。*Email*、*OfficeCommunicationsOnline*、*Yammer*<br>null 許容ではありません|
+|supportedServices|String collection| ドメインに割り当てられている機能です。<br><br>0、1 または次の値を含めることができます。*Email*、*Sharepoint*、*EmailInternalRelayOnly*、*OfficeCommunicationsOnline*、*SharePointDefaultDomain*、*FullRedelegation*、*SharePointPublic*、*OrgIdAuthentication*、*Yammer*、*Intune*<br><br> Graph API を使用して追加または削除できる値は次のとおりです。*Email*、*OfficeCommunicationsOnline*、*Yammer*<br>null 許容ではありません|
 |state|[domainState](domainstate.md)| ドメインのためにスケジュールされている非同期操作の状態です。 |
 
 ## <a name="relationships"></a>リレーションシップ
@@ -50,9 +51,9 @@
 
 | リレーションシップ | 型 |説明|
 |:---------------|:--------|:----------|
-|domainNameReferences|[directoryObject](directoryobject.md) コレクション| 読み取り専用、Null 許容型|
-|serviceConfigurationRecords|[domainDnsRecord](domaindnsrecord.md) コレクション| ドメインを Microsoft Online Services で使用する前に、顧客がそのドメインの DNS ゾーン ファイルに追加する DNS レコードです。<br>読み取り専用、Null 許容型 |
-|verificationDnsRecords|[domainDnsRecord](domaindnsrecord.md) コレクション| 顧客が Azure AD のドメイン所有権の確認を完了する前に、顧客がそのドメインの DNS ゾーン ファイルに追加する DNS レコード。<br>読み取り専用、Null 許容型|
+|domainNameReferences|[directoryObject](directoryobject.md) collection| 読み取り専用、Null 許容型|
+|serviceConfigurationRecords|[domainDnsRecord](domaindnsrecord.md) collection| ドメインを Microsoft Online Services で使用する前に、顧客がそのドメインの DNS ゾーン ファイルに追加する DNS レコードです。<br>読み取り専用、Null 許容型 |
+|verificationDnsRecords|[domainDnsRecord](domaindnsrecord.md) collection| 顧客が Azure AD のドメイン所有権の確認を完了する前に、顧客がそのドメインの DNS ゾーン ファイルに追加する DNS レコード。<br>読み取り専用、Null 許容型|
 
 ## <a name="json-representation"></a>JSON 表記
 以下は、リソースの JSON 表記です。

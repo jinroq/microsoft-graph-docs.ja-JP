@@ -24,8 +24,8 @@ PATCH /deviceManagement/troubleshootingEvents/{deviceManagementTroubleshootingEv
 ## <a name="request-headers"></a>要求ヘッダー
 |ヘッダー|値|
 |:---|:---|
-|承認|ベアラー &lt;トークン&gt; が必須。|
-|承諾|アプリケーションまたは json|
+|Authorization|ベアラー &lt;トークン&gt; が必須。|
+|Accept|application/json|
 
 ## <a name="request-body"></a>要求本文
 要求本文で、[deviceManagementTroubleshootingEvent](../resources/intune_troubleshooting_devicemanagementtroubleshootingevent.md) オブジェクトの JSON 表記を指定します。
@@ -34,9 +34,9 @@ PATCH /deviceManagement/troubleshootingEvents/{deviceManagementTroubleshootingEv
 
 |プロパティ|型|説明|
 |:---|:---|:---|
-|ID|文字列|オブジェクトの UUID|
+|id|String|オブジェクトの UUID|
 |eventDateTime|DateTimeOffset|インシデントが発生した時間。|
-|correlationId|文字列|サービスのエラーをトレースするための ID。|
+|correlationId|String|サービスのエラーをトレースするための ID。|
 
 
 
@@ -47,7 +47,7 @@ PATCH /deviceManagement/troubleshootingEvents/{deviceManagementTroubleshootingEv
 ### <a name="request"></a>要求
 以下は、要求の例です。
 ``` http
-PATCH https://graph.microsoft.com/v1/deviceManagement/troubleshootingEvents/{deviceManagementTroubleshootingEventId}
+PATCH https://graph.microsoft.com/v1.0/deviceManagement/troubleshootingEvents/{deviceManagementTroubleshootingEventId}
 Content-type: application/json
 Content-length: 104
 
@@ -71,7 +71,6 @@ Content-Length: 228
   "correlationId": "Correlation Id value"
 }
 ```
-
 
 
 

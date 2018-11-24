@@ -4,21 +4,22 @@
 
 まだ文書化されていません
 ## <a name="properties"></a>プロパティ
-|プロパティ|タイプ|説明|
+|プロパティ|型|説明|
 |:---|:---|:---|
-|deviceImportStatus|[importedWindowsAutopilotDeviceIdentityImportStatus](../resources/intune_enrollment_importedwindowsautopilotdeviceidentityimportstatus.md)|デバイス ディレクトリの Service(DDS) によって報告されたデバイスの状態です。使用可能な値: `unknown`、 `pending`、 `partial`、 `complete`、 `error`。|
-|deviceRegistrationId|文字列|正常に追加されたと Devce Directory Service (DDS) から報告されたデバイスの Devce Registration ID です。|
+|deviceImportStatus|[importedWindowsAutopilotDeviceIdentityImportStatus](../resources/intune_enrollment_importedwindowsautopilotdeviceidentityimportstatus.md)|Device Directory Service (DDS) から報告されたデバイスの状態です。 可能な値は、`unknown`、`pending`、`partial`、`complete`、`error` です。|
+|deviceRegistrationId|String|正常に追加されたと Devce Directory Service (DDS) から報告されたデバイスの Devce Registration ID です。|
 |deviceErrorCode|Int32|Device Directory Service (DDS) から報告されたデバイス エラー コードです。|
-|deviceErrorName|文字列|Device Directory Service (DDS) から報告されたデバイス エラー名です。|
+|deviceErrorName|String|Device Directory Service (DDS) から報告されたデバイス エラー名です。|
 
 ## <a name="relationships"></a>リレーションシップ
 なし
 ## <a name="json-representation"></a>JSON 表記
 以下は、リソースの JSON 表記です。
-<!--{
+<!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.importedWindowsAutopilotDeviceIdentityState"
-}-->
+}
+-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.importedWindowsAutopilotDeviceIdentityState",
@@ -28,11 +29,6 @@
   "deviceErrorName": "String"
 }
 ```
-
-
-
-
-
 
 
 

@@ -4,29 +4,36 @@
 
 次のユーザー リソースがサポートされます。
 
-- [message](../resources/message.md)
-- [mailFolder](../resources/mailfolder.md)
-- [event](../resources/event.md)
-- [calndar](../resources/calendar.md)
+- [calendar](../resources/calendar.md)
 - [contact](../resources/contact.md)
 - [contactFolder](../resources/contactfolder.md) 
+- [イベント](../resources/event.md)
+- [mailFolder](../resources/mailfolder.md)
+- [message](../resources/message.md)
 
 次のグループ リソースもサポートされます。
 
-- グループ [event](../resources/event.md)
 - グループ [calendar](../resources/calendar.md)
+- グループ [event](../resources/event.md)
 - グループ [post](../resources/post.md) 
 
 オープン拡張機能または拡張プロパティを使用するのに適した状況と、拡張プロパティを指定する方法の詳細については、「[拡張プロパティの概要](../resources/extended-properties-overview.md)」を参照してください。
 
 ## <a name="permissions"></a>アクセス許可
-この API を呼び出すには、拡張プロパティを作成するリソースに応じて、以下のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](../../../concepts/permissions_reference.md)」を参照してください。
+リソースに応じて、[拡張プロパティを作成するアクセス許可が委任された (アプリケーション) を要求を入力、次の表で指定されたアクセス許可は、この API を呼び出すために必要最低限。 アクセス許可の選択方法などの詳細については、「[アクセス許可](../../../concepts/permissions_reference.md)」を参照してください。
 
-- Mail.ReadWrite
-- Calendars.ReadWrite
-- Contacts.ReadWrite
-- Group.ReadWrite.All
- 
+| サポートされているリソース | 委任 (職場または学校のアカウント) | 委任 (個人用 Microsoft アカウント) | アプリケーション |
+|:-----|:-----|:-----|:-----|
+| [calendar](../resources/calendar.md) | Calendars.ReadWrite | Calendars.ReadWrite | Calendars.ReadWrite |
+| [連絡先](../resources/contact.md) | Contacts.ReadWrite | Contacts.ReadWrite | Contacts.ReadWrite |
+| [contactFolder](../resources/contactfolder.md) | Contacts.ReadWrite | Contacts.ReadWrite | Contacts.ReadWrite |
+| [イベント](../resources/event.md) | Calendars.ReadWrite | Calendars.ReadWrite |  Calendars.ReadWrite|
+| グループ [calendar](../resources/calendar.md) | Group.ReadWrite.All | 使用不可 | 使用不可 |
+| グループ [event](../resources/event.md) | Group.ReadWrite.All | 使用不可 | 使用不可 |
+| グループ [post](../resources/post.md) | Group.ReadWrite.All | 使用不可 | 使用不可 |
+| [mailFolder](../resources/mailfolder.md) | Mail.ReadWrite | Mail.ReadWrite | Mail.ReadWrite |
+| [メッセージ](../resources/message.md) | Mail.ReadWrite | Mail.ReadWrite | Mail.ReadWrite |
+
 ## <a name="http-request"></a>HTTP 要求
 新規または既存のリソースのインスタンスに、拡張プロパティを作成できます。
 
@@ -96,17 +103,17 @@ PATCH /groups/{id}/events/{id}
 ## <a name="request-headers"></a>要求ヘッダー
 | 名前       | 値 |
 |:---------------|:----------|
-| 承認 | ベアラー {トークン}。必須。 |
-| コンテンツ タイプ | アプリケーション /json |
+| Authorization | ベアラー {トークン}。必須。 |
+| Content-Type | application/json |
 
 ## <a name="request-body"></a>要求本文
 
 リソース インスタンスの **singleValueExtendedProperties** コレクション プロパティに、各 [singleValueLegacyExtendedProperty](../resources/singleValueLegacyExtendedProperty.md) オブジェクトの JSON 本文を指定します。
 
-|プロパティ|タイプ|説明|
+|プロパティ|型|説明|
 |:-----|:-----|:-----|
-|singleValueExtendedProperties|[singleValueLegacyExtendedProperty](../resources/singleValueLegacyExtendedProperty.md) コレクション| 1 つ以上の単一値を持つ拡張プロパティの配列。 |
-|id|文字列|**singleValueExtendedProperties** コレクションの各プロパティに対して、これを指定することでプロパティを特定します。サポートされている形式のいずれかに従う必要があります。詳しくは、「[Outlook の拡張プロパティの概要](../resources/extended-properties-overview.md)」を参照してください。必須。|
+|singleValueExtendedProperties|[singleValueLegacyExtendedProperty](../resources/singleValueLegacyExtendedProperty.md) collection| 1 つ以上の単一値を持つ拡張プロパティの配列。 |
+|id|String|**singleValueExtendedProperties** コレクションの各プロパティに対して、これを指定することでプロパティを特定します。サポートされている形式のいずれかに従う必要があります。詳しくは、「[Outlook の拡張プロパティの概要](../resources/extended-properties-overview.md)」を参照してください。必須。|
 |value|文字列|**singleValueExtendedProperties** コレクションの各プロパティについて、プロパティの値を特定します。必須。|
 
 _新しい_リソース インスタンスに拡張プロパティを作成する場合は、新しい **singleValueExtendedProperties**コレクションのほか、そのリソース インスタンスの JSON 表現を指定します ([message](../resources/message.md)、[mailFolder](../resources/mailfolder.md)、[event](../resources/event.md) など)。

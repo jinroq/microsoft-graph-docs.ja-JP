@@ -3,21 +3,21 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
 title: DriveItem
-ms.openlocfilehash: 60f2d58331f349f9990f78f36f04df055ce90b9e
-ms.sourcegitcommit: abf4b739257e3ffd9d045f783ec595d846172590
-ms.translationtype: HT
+ms.openlocfilehash: d73b43b0ba1d98f496b4a1b2a606ec9f95298efa
+ms.sourcegitcommit: ebac77d2ca32438e552831de0258fe5e86fa225a
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "23269839"
+ms.lasthandoff: 11/17/2018
+ms.locfileid: "26602385"
 ---
-# <a name="driveitem-resource-type"></a>DriveItem リソース型
+# <a name="driveitem-resource-type"></a>DriveItem リソースの種類
 
 **driveItem** リソースは、ドライブに格納されているファイル、フォルダーなどのアイテムを表します。OneDrive および SharePoint 内のすべてのファイル システム オブジェクトが、**driveItem** リソースとして返されます。
 
 **driveItem** リソースのアドレス指定には、主に 2 つの方法があります。
 
-* を使用した、**driveItem** 一意識別子による方法 `drive/items/{item-id}`
-* を使用した、ファイル システム パスによる方法 `/drive/root:/path/to/file`
+* `drive/items/{item-id}` を使用した、**driveItem** 一意識別子による方法
+* `/drive/root:/path/to/file` を使用した、ファイル システム パスによる方法
 
 **DriveItem** リソースには、driveItem の ID および機能に関するデータを提供するプロパティとしてモデル化されたファセットがあります。例:
 
@@ -95,39 +95,39 @@ ms.locfileid: "23269839"
 
 ## <a name="properties"></a>プロパティ
 
-| プロパティ             | タイプ               | 説明
+| プロパティ             | 型               | 説明
 |:---------------------|:-------------------|:---------------------------------
-| オーディオ                | [オーディオ][]          | オーディオのメタデータ (アイテムがオーディオ ファイルである場合)。読み取り専用です。
-| コンテンツ              | ストリーム             | コンテンツのストリーム (アイテムがファイルを表す場合)。
+| audio                | [audio][]          | オーディオのメタデータ (アイテムがオーディオ ファイルである場合)。読み取り専用です。
+| content              | Stream             | コンテンツのストリーム (アイテムがファイルを表す場合)。
 | createdBy            | [identitySet][]    | そのアイテムを作成したユーザーの ID、デバイス、アプリケーション。読み取り専用です。
 | createdDateTime      | DateTimeOffset     | アイテム作成の日時。読み取り専用です。
-| cTag                 | 文字列             | アイテムのコンテンツの eTag。メタデータのみが変更された場合、この eTag は変更されません。**注:** アイテムがフォルダーである場合、このプロパティは返されません。読み取り専用です。
-| 削除済み              | [削除済み][]        | アイテムの削除状態に関する情報。読み取り専用です。
-| 説明          | 文字列             | ユーザーに表示されるアイテムの説明を提供します。読み取り/書き込み。OneDrive 個人用においてのみ
-| eTag                 | 文字列             | アイテム全体 (メタデータおよびコンテンツ) の eTag。読み取り専用です。
-| ファイル                 | [ファイル][]           | ファイルのメタデータ (アイテムがファイルである場合)。読み取り専用です。
+| cTag                 | String             | アイテムのコンテンツの eTag。メタデータのみが変更された場合、この eTag は変更されません。**注:** アイテムがフォルダーである場合、このプロパティは返されません。読み取り専用です。
+| deleted              | [deleted][]        | アイテムの削除状態に関する情報。読み取り専用です。
+| 説明          | String             | ユーザーに表示されるアイテムの説明を提供します。読み取り/書き込み。OneDrive 個人用においてのみ
+| eTag                 | String             | アイテム全体 (メタデータおよびコンテンツ) の eTag。読み取り専用です。
+| file                 | [file][]           | ファイルのメタデータ (アイテムがファイルである場合)。読み取り専用です。
 | fileSystemInfo       | [fileSystemInfo][] | クライアント上のファイル システム情報。読み取り/書き込み。
-| フォルダー               | [フォルダー][]         | フォルダーのメタデータ (アイテムがフォルダーである場合)。読み取り専用です。
-| ID                   | 文字列             | ドライブ内のアイテムの一意識別子。読み取り専用です。
-| イメージ                | [イメージ][]          | 画像のメタデータ (アイテムが画像である場合)。読み取り専用です。
+| folder               | [folder][]         | フォルダーのメタデータ (アイテムがフォルダーである場合)。読み取り専用です。
+| id                   | String             | ドライブ内のアイテムの一意識別子。読み取り専用です。
+| image                | [image][]          | 画像のメタデータ (アイテムが画像である場合)。読み取り専用です。
 | lastModifiedBy       | [identitySet][]    | アイテムを最終更新したユーザーの ID、デバイス、アプリケーション。読み取り専用です。
 | lastModifiedDateTime | DateTimeOffset     | アイテムが最後に変更された日時。読み取り専用です。
-| 場所             | [geoCoordinates][] | 場所のメタデータ (アイテムに場所データが含まれている場合)。読み取り専用です。
-| 名前                 | 文字列             | アイテムの名前 (ファイル名と拡張子)。読み取り/書き込み。
-| パッケージ              | [パッケージ][]        | これがある場合、アイテムはフォルダーやファイルではなく、パッケージです。パッケージは、コンテキスト次第で、ファイルとして、あるいはフォルダーとして扱われます。読み取り専用です。
+| location             | [geoCoordinates][] | 場所のメタデータ (アイテムに場所データが含まれている場合)。読み取り専用です。
+| name                 | String             | アイテムの名前 (ファイル名と拡張子)。読み取り/書き込み。
+| package              | [package][]        | これがある場合、アイテムはフォルダーやファイルではなく、パッケージです。パッケージは、コンテキスト次第で、ファイルとして、あるいはフォルダーとして扱われます。読み取り専用です。
 | parentReference      | [itemReference][]  | 親の情報 (アイテムに親がある場合)。読み取り/書き込み。
-| 写真                | [写真][]          | 写真のメタデータ (アイテムが写真である場合)。読み取り専用です。
-| パブリケーション          | [publicationFacet][] | アイテムが公開されているか、チェックアウトの状態かどうかの情報を、そのような操作をサポートする場所で提供します。 既定では、このプロパティは返されません。 読み取り専用です。 |
+| 写真                | [photo][]          | 写真のメタデータ (アイテムが写真である場合)。読み取り専用です。
+| publication          | [publicationFacet][] | アイテムが公開されているか、チェックアウトの状態かどうかの情報を、そのような操作をサポートする場所で提供します。 既定では、このプロパティは返されません。 読み取り専用です。 |
 | remoteItem           | [remoteItem][]     | リモート アイテムのデータ (現在アクセス中のドライブ以外のドライブから共有されているアイテムの場合)。読み取り専用です。
-| ルート                 | [ルート][]           | このプロパティが null ではない場合は、driveItem がドライブで最上位の driveItem であることを示します。
+| root                 | [root][]           | このプロパティが null ではない場合は、driveItem がドライブで最上位の driveItem であることを示します。
 | searchResult         | [searchResult][]   | 検索のメタデータ (検索結果に由来するアイテムの場合)。読み取り専用です。
-| 共有済み               | [共有済み][]         | アイテムが他のユーザーと共有されていることを示し、アイテムの共有状態に関する情報を提供します。読み取り専用です。
+| shared               | [shared][]         | アイテムが他のユーザーと共有されていることを示し、アイテムの共有状態に関する情報を提供します。読み取り専用です。
 | sharepointIds        | [sharepointIds][]  | SharePoint REST 互換性に役立つ識別子を返します。読み取り専用です。
-| サイズ                 | Int64              | アイテムのサイズ (バイト単位)。読み取り専用です。
+| size                 | Int64              | アイテムのサイズ (バイト単位)。読み取り専用です。
 | specialFolder        | [specialFolder][]  | 現在のアイテムが特別なフォルダーとしても使用可能な場合は、このファセットが返されます。読み取り専用です。
-| ビデオ                | [ビデオ][]          | ビデオのメタデータ (アイテムがビデオである場合)。読み取り専用です。
-| webDavUrl            | 文字列             | アイテムの WebDAV 互換性のある URL。
-| webUrl               | 文字列             | ブラウザーでリソースを表示するための URL。読み取り専用です。
+| video                | [video][]          | ビデオのメタデータ (アイテムがビデオである場合)。読み取り専用です。
+| webDavUrl            | String             | アイテムの WebDAV 互換性のある URL。
+| webUrl               | String             | ブラウザーでリソースを表示するための URL。読み取り専用です。
 
 **注:** eTag プロパティと cTag プロパティは、コンテナー (フォルダー) 上での機能が異なります。cTag 値は、フォルダーのいずれかの子孫のコンテンツまたはメタデータが変更されると変更されます。eTag 値は、子孫から派生したプロパティ (**childCount** や **lastModifiedDateTime** など) 以外のフォルダーのプロパティが変更されたときにのみ、変更されます。
 
@@ -135,14 +135,14 @@ ms.locfileid: "23269839"
 
 | リレーションシップ       | 型                        | 説明
 |:-------------------|:----------------------------|:--------------------------
-| 子           | driveitem コレクション        | アイテムの直接の子のアイテム オブジェクトを格納するコレクション。子が含まれるのは、フォルダーを表すアイテムのみです。読み取り専用です。Null 許容型。
-| createdByUser      | [ユーザー][]                    | アイテムを作成したユーザーの ID です。 読み取り専用です。
-| lastModifiedByUser | [ユーザー][]                    | アイテムを最後に変更したユーザーの ID です。 読み取り専用。
-| listItem           | [listItem][]                | SharePoint のドライブ用の、関連付けられたドキュメント ライブラリのリスト アイテムです。 読み取り専用。 Null 許容型。
-| アクセス許可        | [permission][] コレクション   | アイテムのアクセス許可のセット。読み取り専用です。Null 許容型。
-| サムネイル         | [thumbnailSet][] コレクション | アイテムに関連付けられた [ThumbnailSet][] オブジェクトを格納するコレクション。詳細については、[サムネイルの取得][]についてのページをご覧ください。読み取り専用です。Null 許容型。
-| バージョン           | [driveItemVersion][] コレクション | 項目の以前のバージョンの一覧です。 詳細については、「[以前のバージョンを取得する][]」を参照してください。 読み取り専用。 Null 許容型。
-| ブック           | [ブック][]                | ファイルが Excel のスプレッドシートである場合、スプレッドシートのコンテンツを扱うためにブック API にアクセスします。 Null 許容型。
+| children           | driveItem コレクション        | アイテムの直接の子のアイテム オブジェクトを格納するコレクション。子が含まれるのは、フォルダーを表すアイテムのみです。読み取り専用です。Null 許容型。
+| createdByUser      | [user][]                    | アイテムを作成したユーザーの ID です。 読み取り専用です。
+| lastModifiedByUser | [user][]                    | アイテムを最後に変更したユーザーの ID です。 読み取り専用です。
+| listItem           | [listItem][]                | SharePoint 内のドライブ、関連するドキュメント ライブラリのアイテムをリストします。 読み取り専用です。 Null 許容型。
+| permissions        | [permission][] コレクション   | アイテムのアクセス許可のセット。読み取り専用です。Null 許容型。
+| thumbnails         | [thumbnailSet][] コレクション | アイテムに関連付けられた [ThumbnailSet][] オブジェクトを格納するコレクション。詳細については、[サムネイルの取得][]についてのページをご覧ください。読み取り専用です。Null 許容型。
+| versions           | [driveItemVersion][]コレクション | アイテムの以前のバージョンの一覧です。 詳細については、[以前のバージョンを取得する][]を参照してください。 読み取り専用です。 Null 許容型。
+| ブック           | [workbook][]                | ファイルは、Excel のスプレッドシートには、ブックのワークシートの内容を操作する API にアクセスします。 Null 許容型。
 
 ## <a name="instance-attributes"></a>インスタンスの属性
 
@@ -178,40 +178,42 @@ ms.locfileid: "23269839"
 | [アクセス許可を追加する](../api/driveitem_invite.md)            | `POST /drive/items/{item-id}/invite`
 | [アクセス許可を一覧表示する](../api/driveitem_list_permissions.md) | `GET /drive/items/{item-id}/permissions`
 | [アクセス許可を削除する](../api/permission_delete.md)         | `DELETE /drive/items/{item-id}/permissions/{perm-id}`
+| [アイテムのプレビュー][item-preview]                             | `POST /drive/items/{item-id}/preview`
 
+[item-preview]: ../api/driveItem_preview.md
 
 ## <a name="remarks"></a>備考
 
 OneDrive for Business または SharePoint のドキュメント ライブラリでは、**driveItem** に[フォルダー][] ファセットがある場合、**cTag** プロパティは返されません。
 
-[オーディオ]: audio.md
+[audio]: audio.md
 [baseItem]: baseItem.md
-[削除済み]: deleted.md
+[deleted]: deleted.md
 [download-format]: ../api/driveitem_get_content_format.md
 [driveItemVersion]: driveItemVersion.md
-[ファイル]: file.md
+[file]: file.md
 [fileSystemInfo]: fileSystemInfo.md
-[フォルダー]: folder.md
-[以前のバージョンを取得する]: ../api/driveitem_list_versions.md
+[folder]: folder.md
+[以前のバージョンを取得します。]: ../api/driveitem_list_versions.md
 [サムネイルの取得]: ../api/driveitem_list_thumbnails.md
 [identitySet]: identitySet.md
-[イメージ]: image.md
+[image]: image.md
 [itemReference]: itemReference.md
 [geoCoordinates]: geoCoordinates.md
 [listItem]: listItem.md
-[パッケージ]: package.md
-[アクセス許可]: permission.md
-[写真]: photo.md
+[package]: package.md
+[permission]: permission.md
+[photo]: photo.md
 [remoteItem]: remoteItem.md
-[ルート]: root.md
+[root]: root.md
 [searchResult]: searchResult.md
-[共有]: shared.md
+[shared]: shared.md
 [sharepointIds]: sharepointIds.md
 [specialFolder]: specialFolder.md
 [thumbnailSet]: thumbnailSet.md
-[ビデオ]: video.md
-[ブック]: workbook.md
-[ユーザー]: https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/users
+[video]: video.md
+[workbook]: workbook.md
+[user]: https://developer.microsoft.com/graph/docs/api-reference/v1.0/resources/users
 [publicationFacet]: publicationfacet.md
 
 <!-- {

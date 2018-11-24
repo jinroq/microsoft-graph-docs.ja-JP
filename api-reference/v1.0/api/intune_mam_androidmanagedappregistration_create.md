@@ -24,29 +24,29 @@ POST /deviceAppManagement/managedAppRegistrations
 ## <a name="request-headers"></a>要求ヘッダー
 |ヘッダー|値|
 |:---|:---|
-|承認|ベアラー &lt;トークン&gt; が必須。|
-|承諾|アプリケーションまたは JSON|
+|Authorization|ベアラー &lt;トークン&gt; が必要です。|
+|Accept|application/json|
 
 ## <a name="request-body"></a>要求本文
 要求本文で、androidManagedAppRegistration オブジェクトの JSON 表記を指定します。
 
 次の表に、androidManagedAppRegistration の作成時に必要なプロパティを示します。
 
-|プロパティ|タイプ|説明|
+|プロパティ|型|説明|
 |:---|:---|:---|
 |createdDateTime|DateTimeOffset|作成日時 ([managedAppRegistration](../resources/intune_mam_managedappregistration.md) から継承)。|
 |lastSyncDateTime|DateTimeOffset|アプリが管理サービスと最後に同期した日時。 [managedAppRegistration](../resources/intune_mam_managedappregistration.md) から継承します|
-|applicationVersion|文字列|アプリのバージョン ([managedAppRegistration](../resources/intune_mam_managedappregistration.md) から継承)|
-|managementSdkVersion|文字列|アプリ管理 SDK のバージョン ([managedAppRegistration](../resources/intune_mam_managedappregistration.md) から継承)|
-|platformVersion|文字列|オペレーティング システムのバージョン ([managedAppRegistration](../resources/intune_mam_managedappregistration.md) から継承)|
-|deviceType|文字列|ホスト デバイスの種類 ([managedAppRegistration](../resources/intune_mam_managedappregistration.md) から継承)|
-|deviceTag|文字列|アプリ管理 SDK が生成したタグ。同じデバイスでホストされているアプリの関連付けに役立ちます。 あらゆる状況でのアプリの関連付けを保証するものではありません。 [managedAppRegistration](../resources/intune_mam_managedappregistration.md) から継承します|
-|deviceName|文字列|ホスト デバイスの名前 ([managedAppRegistration](../resources/intune_mam_managedappregistration.md) から継承)|
-|flaggedReasons|[managedAppFlaggedReason](../resources/intune_mam_managedappflaggedreason.md) コレクション|アプリの登録にフラグが設定されている0個以上の理由。例えば、 [managedAppRegistration](../resources/intune_mam_managedappregistration.md)から継承されたルートデバイス上で実行されているアプリケーションです。使用可能な値: `none`、 `rootedDevice`。|
-|userId|文字列|このアプリの登録が属するユーザー ID。 [managedAppRegistration](../resources/intune_mam_managedappregistration.md) から継承します|
+|applicationVersion|String|アプリのバージョン ([managedAppRegistration](../resources/intune_mam_managedappregistration.md) から継承)|
+|managementSdkVersion|String|アプリ管理 SDK のバージョン ([managedAppRegistration](../resources/intune_mam_managedappregistration.md) から継承)|
+|platformVersion|String|オペレーティング システムのバージョン ([managedAppRegistration](../resources/intune_mam_managedappregistration.md) から継承)|
+|deviceType|String|ホスト デバイスの種類 ([managedAppRegistration](../resources/intune_mam_managedappregistration.md) から継承)|
+|deviceTag|String|アプリ管理 SDK が生成したタグ。同じデバイスでホストされているアプリの関連付けに役立ちます。 あらゆる状況でのアプリの関連付けを保証するものではありません。 [managedAppRegistration](../resources/intune_mam_managedappregistration.md) から継承します|
+|deviceName|String|ホスト デバイスの名前 ([managedAppRegistration](../resources/intune_mam_managedappregistration.md) から継承)|
+|flaggedReasons|[managedAppFlaggedReason](../resources/intune_mam_managedappflaggedreason.md)コレクション|アプリ登録にフラグが設定された、0 個以上の理由。 例:  [managedAppRegistration](../resources/intune_mam_managedappregistration.md)から継承のルート デバイス上で実行されているアプリケーションです。 使用可能な値は、`none`、`rootedDevice` です。|
+|userId|String|このアプリの登録が属するユーザー ID。 [managedAppRegistration](../resources/intune_mam_managedappregistration.md) から継承します|
 |appIdentifier|[mobileAppIdentifier](../resources/intune_mam_mobileappidentifier.md)|アプリ パッケージの識別子 ([managedAppRegistration](../resources/intune_mam_managedappregistration.md) から継承)|
-|ID|文字列|エンティティのキー。 [managedAppRegistration](../resources/intune_mam_managedappregistration.md) から継承します|
-|バージョン|文字列|エンティティのバージョン。 [managedAppRegistration](../resources/intune_mam_managedappregistration.md) から継承します|
+|id|String|エンティティのキー。 [managedAppRegistration](../resources/intune_mam_managedappregistration.md) から継承します|
+|version|String|エンティティのバージョン。 [managedAppRegistration](../resources/intune_mam_managedappregistration.md) から継承します|
 
 
 
@@ -111,11 +111,6 @@ Content-Length: 753
   "version": "Version value"
 }
 ```
-
-
-
-
-
 
 
 

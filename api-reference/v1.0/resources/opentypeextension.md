@@ -1,6 +1,6 @@
 # <a name="opentypeextension-resource-type-open-extensions"></a>openTypeExtension リソース タイプ (オープン拡張機能)
 
-オープン拡張機能 (旧称は Office 365 のデータ拡張機能) を使用すると、型指定されていないプロパティを Microsoft Graph のリソースに簡単に直接追加できます。
+(Office 365 のデータ拡張機能と呼ばれていました) 開いているの拡張機能では、直接グラフ内のリソースに型指定されていないプロパティを追加する簡単な方法を提供します。
 
 オープン拡張機能は、**openTypeExtension** リソースで表されます。 リソースに追加されるオープン拡張機能は **extensions** ナビゲーション プロパティに表示されます。このプロパティは、[extension](extension.md) 抽象型から派生します。 各拡張機能には **extensionName** プロパティがあります。このプロパティは、すべての拡張機能とカスタム データで唯一定義済みの書き込み可能なプロパティです。
 
@@ -25,16 +25,16 @@
 
 ## <a name="outlook-specific-considerations"></a>Outlook に固有の考慮事項
 
-Outlook のリソース上に存在する各オープン拡張 (イベント、メッセージ、または個人用の連絡先) は、[MAPI の名前付きプロパティ](https://msdn.microsoft.com/en-us/library/cc765864(v=office.15).aspx) に格納されます。 Outlook でオープン拡張を作成する際には、MAPI の名前付きプロパティを、ユーザーのメールボックス内の有限のリソースとみなします。 ユーザーの名前付きプロパティのクォータが不足すると、そのユーザーに対しそれ以上の名前付きプロパティを作成できません。 その場合、機能する名前付きプロパティに依存するクライアントで予期しない動作が発生することがあります。
+(イベント、メッセージ、または個人用の連絡先)、Outlook のリソース上に存在の開いている各拡張機能は、 [MAPI の名前付きプロパティ](https://msdn.microsoft.com/library/cc765864(v=office.15).aspx)に格納されます。 Outlook を開いている拡張機能を作成するときは、MAPI プロパティを名前付きのユーザーのメールボックス内の有限のリソースであることを検討します。 ユーザーの名前付きプロパティのクォータが不足すると、そのユーザーに対して複数の名前付きプロパティを作成できません。 その場合、関数の名前付きプロパティに依存するクライアントからの予期しない動作します。
 
-Outlook のリソースでオープン拡張を作製する場合には、次のガイドラインを適用します。
+Outlook のリソースで開いている拡張機能を作成するときは、次のガイドラインを適用します。
 
-- 必要な最小数の拡張機能を作成します。 ほとんどのアプリケーションでは、複数の拡張機能が必要です。 拡張機能には定義されたプロパティや構造がないため、単一の拡張機能に複数の値を格納することができます。
-- (ユーザー入力などに基づく) 変数の方法で拡張機能の名前付けをしないでください。 ユーザーのメールボックスで以前に使用されたことがない新しい名前でオープン拡張が作成されるたびに、新しい MAPI 名前付きプロパティが作成されます。 拡張子を削除しても、名前付きプロパティは削除されません。
+- 必要な拡張の最小数を作成します。 ほとんどのアプリケーションは、複数の拡張機能を必要があります。 拡張機能があるないプロパティの設定を定義または構造体は、単一の拡張機能に複数の値を格納することができますので。
+- (などのユーザー入力などに基づきます)。 変数の方法で拡張機能の名前付けをしないでください。 前に、ユーザーのメールボックスで使用されていない新しい名前で開いている拡張機能を作成するたびに、新しい MAPI 名前付きプロパティが作成されます。 拡張子を削除しても、名前付きプロパティは削除されません。
 
-### <a name="use-open-extensions-for-outlook-resources-or-extended-properties"></a>オープン拡張 (Outlook リソース用) または拡張プロパティを使用
+### <a name="use-open-extensions-for-outlook-resources-or-extended-properties"></a>(Outlook のリソース) の拡張子を開くか、拡張プロパティを使用します。
 
-オープン拡張は、カスタム データの格納およびカスタムデータへのアクセスを必要とするほとんどのシナリオで推奨されるソリューションです。 ただし、[Microsoft Graph API メタデータ](http://developer.microsoft.com/en-us/graph/docs/overview/call_api) を通じてすでに公開されていない Outlook MAPI プロパティのカスタム データにアクセスする必要がある場合は、[拡張プロパティとその REST API](extended-properties-overview.md) を使用できます。 メタデータがどのプロパティを公開するかは [https://graph.microsoft.com/v1.0/$metadata](https://graph.microsoft.com/v1.0/$metadata) で確認できます。
+開いている拡張機能を保存して、カスタムのデータへのアクセスに関連するほとんどのシナリオで推奨される解決策です。 ただし、 [Microsoft グラフ API メタデータ](https://developer.microsoft.com/graph/docs/overview/call_api)を通じて公開されていない Outlook MAPI プロパティのカスタムのデータにアクセスする必要がある場合は、[拡張プロパティおよびその他の API](extended-properties-overview.md)を使用できます。 メタデータを公開するプロパティを確認することができます[https://graph.microsoft.com/v1.0/$metadata](https://graph.microsoft.com/v1.0/$metadata)。
 
 ## <a name="json-representation"></a>JSON 表記
 
@@ -58,9 +58,9 @@ Outlook のリソースでオープン拡張を作製する場合には、次の
 
 ## <a name="properties"></a>プロパティ
 
-|プロパティ | タイプ | 説明 |
+|プロパティ | 型 | 説明 |
 |:---------------|:--------|:----------|
-|extensionName|文字列|オープン型のオープン拡張機能の一意のテキスト識別子。必須。|
+|extensionName|String|オープン型のオープン拡張機能の一意のテキスト識別子。必須。|
 |id|文字列| **extensionName** と拡張子タイプを連結する完全修飾識別子。読み取り専用。|
 
 ## <a name="relationships"></a>リレーションシップ
@@ -71,8 +71,8 @@ Outlook のリソースでオープン拡張を作製する場合には、次の
 
 |メソッド | 戻り値の型 | 説明 |
 |:---------------|:--------|:----------|
-|[投稿](../api/opentypeextension_post_opentypeextension.md) | (既存リソースのインスタンス内の) [openTypeExtension](opentypeextension.md)、または、openTypeExtension オブジェクトを含む新しい[contact](../resources/contact.md)、[event](../resources/event.md)、[message](../resources/message.md)。 | 既存または新規のリソース インスタンス内に openTypeExtension オブジェクトを作成します。|
-|[取得](../api/opentypeextension_get.md) | [openTypeExtension](opentypeextension.md) |openTypeExtension オブジェクトのプロパティと関係を読み取ります。|
+|[Post](../api/opentypeextension_post_opentypeextension.md) | (既存リソースのインスタンス内の) [openTypeExtension](opentypeextension.md)、または、openTypeExtension オブジェクトを含む新しい[contact](../resources/contact.md)、[event](../resources/event.md)、[message](../resources/message.md)。 | 既存または新規のリソース インスタンス内に openTypeExtension オブジェクトを作成します。|
+|[Get](../api/opentypeextension_get.md) | [openTypeExtension](opentypeextension.md) |openTypeExtension オブジェクトのプロパティと関係を読み取ります。|
 |[更新する](../api/opentypeextension_update.md) | [openTypeExtension](opentypeextension.md) |openTypeExtension オブジェクトを更新します。 |
 |[削除](../api/opentypeextension_delete.md) | なし |openTypeExtension オブジェクトを削除します。 |
 

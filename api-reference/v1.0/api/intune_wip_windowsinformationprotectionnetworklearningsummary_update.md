@@ -24,8 +24,8 @@ PATCH /deviceManagement/windowsInformationProtectionNetworkLearningSummaries/{wi
 ## <a name="request-headers"></a>要求ヘッダー
 |ヘッダー|値|
 |:---|:---|
-|承認|ベアラー &lt;トークン&gt; が必須。|
-|承諾する|アプリケーションまたは json|
+|Authorization|ベアラー &lt;トークン&gt; が必要です。|
+|Accept|application/json|
 
 ## <a name="request-body"></a>要求本文
 要求本文で、[windowsInformationProtectionNetworkLearningSummary](../resources/intune_wip_windowsinformationprotectionnetworklearningsummary.md) オブジェクトの JSON 表記を指定します。
@@ -34,8 +34,8 @@ PATCH /deviceManagement/windowsInformationProtectionNetworkLearningSummaries/{wi
 
 |プロパティ|型|説明|
 |:---|:---|:---|
-|ID|文字列|WindowsInformationProtectionNetworkLearningSummary の一意識別子。|
-|url|文字列|Web サイト URL|
+|id|String|WindowsInformationProtectionNetworkLearningSummary の一意識別子。|
+|url|String|Web サイト URL|
 |deviceCount|Int32|デバイス数|
 
 
@@ -49,9 +49,10 @@ PATCH /deviceManagement/windowsInformationProtectionNetworkLearningSummaries/{wi
 ``` http
 PATCH https://graph.microsoft.com/v1.0/deviceManagement/windowsInformationProtectionNetworkLearningSummaries/{windowsInformationProtectionNetworkLearningSummaryId}
 Content-type: application/json
-Content-length: 48
+Content-length: 137
 
 {
+  "@odata.type": "#microsoft.graph.windowsInformationProtectionNetworkLearningSummary",
   "url": "Url value",
   "deviceCount": 11
 }
@@ -71,11 +72,6 @@ Content-Length: 186
   "deviceCount": 11
 }
 ```
-
-
-
-
-
 
 
 

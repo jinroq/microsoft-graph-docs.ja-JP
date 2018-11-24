@@ -24,8 +24,8 @@ POST /deviceAppManagement/mobileApps/{mobileAppId}/contentVersions/{mobileAppCon
 ## <a name="request-headers"></a>要求ヘッダー
 |ヘッダー|値|
 |:---|:---|
-|承認|ベアラー &lt;トークン&gt; が必須。|
-|承諾|アプリケーションまたは json|
+|Authorization|ベアラー &lt;トークン&gt; が必要です。|
+|Accept|application/json|
 
 ## <a name="request-body"></a>要求本文
 要求本文で、mobileAppContentFile オブジェクトの JSON 表記を指定します。
@@ -34,15 +34,15 @@ POST /deviceAppManagement/mobileApps/{mobileAppId}/contentVersions/{mobileAppCon
 
 |プロパティ|型|説明|
 |:---|:---|:---|
-|azureStorageUri|文字列|Azure ストレージ URI。|
-|isCommitted|ブール値|ファイルがコミットされたかどうかを示す値。|
-|ID|文字列|ファイル ID。|
+|azureStorageUri|String|Azure Storage の URI。|
+|isCommitted|Boolean|ファイルがコミットされたかどうかを示す値。|
+|id|String|ファイル ID。|
 |createdDateTime|DateTimeOffset|ファイルが作成された時刻。|
-|name|文字列|ファイル名。|
-|size|Int64|暗号化する前のファイルのサイズ。|
-|sizeEncrypted|Int64|暗号化した後のファイルのサイズ。|
-|azureStorageUriExpirationDateTime|DateTimeOffset|Azure ストレージ URI の有効期限が切れる時刻。|
-|manifest|バイナリ|マニフェスト情報。|
+|name|String|ファイル名。|
+|size|Int64|暗号化前のファイルのサイズ。|
+|sizeEncrypted|Int64|暗号化後のファイルのサイズ。|
+|azureStorageUriExpirationDateTime|DateTimeOffset|Azure Storage の URI が有効期限切れになる時刻。|
+|manifest|Binary|マニフェスト情報。|
 |uploadState|[mobileAppContentFileUploadState](../resources/intune_apps_mobileappcontentfileuploadstate.md)|現在のアップロード要求の状態。 可能な値は、`success`、`transientError`、`error`、`unknown`、`azureStorageUriRequestSuccess`、`azureStorageUriRequestPending`、`azureStorageUriRequestFailed`、`azureStorageUriRequestTimedOut`、`azureStorageUriRenewalSuccess`、`azureStorageUriRenewalPending`、`azureStorageUriRenewalFailed`、`azureStorageUriRenewalTimedOut`、`commitFileSuccess`、`commitFilePending`、`commitFileFailed`、`commitFileTimedOut` です。|
 
 
@@ -92,11 +92,6 @@ Content-Length: 450
   "uploadState": "transientError"
 }
 ```
-
-
-
-
-
 
 
 

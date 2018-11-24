@@ -1,6 +1,6 @@
 # <a name="update-alert"></a>警告の更新
 
-統合ソリューション内の編集可能な**警告**プロパティを更新して、 ソリューション間で警告の状態と割り当ての同期を維持します。 このメソッドは、参照されている警告 ID のレコードのあるすべてのソリューションを更新します。
+アラートの状態および割り当ての同期を保つソリューション全体に統合されたソリューション内で、編集可能な**アラート**のプロパティを更新します。 このメソッドは、id。 参照されているアラートのレコードがどのようなソリューションを更新します。
 
 ## <a name="permissions"></a>アクセス許可
 
@@ -8,13 +8,13 @@
 
 |アクセス許可の種類      | アクセス許可 (特権の小さいものから大きいものへ)              |
 |:--------------------|:---------------------------------------------------------|
-|委任 (職場または学校アカウント) |   SecurityEvents.ReadWrite.All  |
+|委任 (職場または学校のアカウント) |   SecurityEvents.ReadWrite.All  |
 |委任 (個人用 Microsoft アカウント) |  サポートされていません。  |
 |アプリケーション | SecurityEvents.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 要求
 
-> **注:** このメソッドでは、`provider` と `vendor` を含むパラメーターと vendorInformation として、**警告** ID を含める必要があります。
+> **注:** パラメーターおよび vendorInformation が含まれていると**警告**の ID を含める必要があります、`provider`と`vendor`このメソッドを使用します。
 <!-- { "blockType": "ignored" } -->
 
 ```http
@@ -25,29 +25,28 @@ PATCH /security/alerts/{alert_id}
 
 | 名前       | 説明|
 |:-----------|:-----------|
-| 承認  | Bearer {code}。必須。|
-|優先 | 返す = 表現 |
+| Authorization  | Bearer {code}。必須。|
+|Prefer | 返す = 表現 |
 
 ## <a name="request-body"></a>要求本文
 
-要求本文で、更新する関連フィールドの値の JSON 表記を指定します。 本文には、有効な`provider` と `vendor`フィールドのある `vendorInformation` プロパティが含まれて**いなければなりません**。 次の表では、警告の更新可能なフィールドを示します。 要求の本文に含まれない既存のプロパティの値は変更されません。 最適なパフォーマンスを得るために、変更されていない既存の値を含めないでください。
+要求の本文には、更新される関連フィールドの値の JSON の形式を指定します。 含まれている**必要があります**本体、`vendorInformation`プロパティに有効な`provider`と`vendor`のフィールドです。 次の表では、アラートの更新可能なフィールドを示します。 要求の本文に含まれていない既存のプロパティの値は変更されません。 最適なパフォーマンスを得るために、変更されていない既存の値を含めないでください。
 
 | プロパティ   | 型 |説明|
 |:---------------|:--------|:----------|
-|assignedTo|文字列|警告は、アナリストの名前を選別、調査、または修復に割り当てます。|
-|closedDateTime|DateTimeOffset|警告が終了した時間。 Timestamp 型は、ISO 8601 形式を使用して日付と時刻の情報を表し、常に UTC 時間です。 |||UNTRANSLATED_CONTENT_START|||For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`.|||UNTRANSLATED_CONTENT_END||||
-|コメント|String コレクション|警告 (顧客の警告管理用) に関するアナリストのコメントです。|
-|フィードバック|alertFeedback|警告に関するアナリストのフィードバックです。 可能な値は、`unknown`、`truePositive`、`falsePositive`、`benignPositive` です。|
-|状態|alertStatus|アラートのライフ サイクル ステータス (ステージ)。 可能な値は、`unknown`、`newAlert`、`inProgress`、`resolved` です。|
-|タグ|String コレクション|警告に適用でき、フィルター条件 ("HVA"、"SAW" など) として機能できるユーザーが定義可能なラベル。|
-|vendorInformation *|[securityVendorInformation](../resources/securityvendorinformation.md)|セキュリティ製品、またはサービスの仕入先、サービス プロバイダー、およびサービス サブプロバイダーの詳細を含む複合型 (仕入先 = Microsoft、プロバイダー = Windows Defender ATP、サブプロバイダー = AppLocker など)。 **プロバイダーおよび仕入先のフィールドは必須です。**|
-(\* は、必須フィールドを表します)。
+|担当者|文字列|アナリスト、警告の名前は、選別、調査、または修復用に割り当てられます。|
+|closedDateTime|DateTimeOffset|時間のアラートが閉じられました。 Timestamp 型は、ISO 8601 形式を使用して日付と時刻の情報を表し、常に UTC 時間です。 たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、次のようになります。`'2014-01-01T00:00:00Z'`|
+|comments|String コレクション|(顧客の警告管理) の警告のアナリストのコメントです。|
+|feedback|alertFeedback|アナリストのフィードバック通知をします。 可能な値は、`unknown`、`truePositive`、`falsePositive`、`benignPositive` です。|
+|status|alertStatus|アラートのライフ サイクルのステータス (ステージ)。 可能な値は、`unknown`、`newAlert`、`inProgress`、`resolved` です。|
+|タグの前に追加されるマークアップ|String コレクション|アラートに適用することができますし、フィルターの条件 (たとえば、"HVA"、"されていた) として使用できるユーザー定義のラベル。|
+|vendorInformation |[securityVendorInformation](../resources/securityvendorinformation.md)|セキュリティ製品やサービスの仕入先、プロバイダー、および subprovider の詳細を含む複合型 (仕入先など = Microsoft; プロバイダー = Windows Defender の ATP は subProvider AppLocker を =)。 **プロバイダーおよび仕入先のフィールドは、必要があります。**|
 
 ## <a name="response"></a>応答
 
 成功した場合、このメソッドは `204 No Content` 応答コードを返します。
 
-オプションの要求ヘッダーが使われている場合、このメソッドは`200 OK`応答コードと、応答本文で[警告](../resources/alert.md)オブジェクトを返します。
+省略可能な要求ヘッダーが使用され、メソッドが返されます、`200 OK`応答コードおよび応答の本体で更新された[アラート](../resources/alert.md)オブジェクトです。
 
 ## <a name="example-1"></a>例 1
 
@@ -80,7 +79,7 @@ Content-type: application/json
 
 ### <a name="response"></a>応答
 
-正常な応答の例を次に示します。
+次は、正常な応答の例です。
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -95,7 +94,7 @@ HTTP/1.1 204 No Content
 
 ### <a name="request"></a>要求
 
-次の例では、`Prefer` 要求ヘッダーを含む要求を示します。
+次の例では、要求を含む、`Prefer`要求ヘッダー。
 
 <!-- {
   "blockType": "request",
@@ -124,7 +123,7 @@ Prefer: return=representation
 
 ### <a name="response"></a>応答
 
-次の応答の例ではときに、省略可能な `Prefer: return=representation` 要求ヘッダーを使用します。
+次の応答の例ではときに、省略可能な`Prefer: return=representation`要求ヘッダーを使用します。
 
 >**注:** 読みやすくするために、ここに示す応答オブジェクトは短くされている場合があります。実際の呼び出しからは、すべてのプロパティが返されます。
 <!-- {
