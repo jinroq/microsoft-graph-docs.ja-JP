@@ -6,13 +6,8 @@
 ## <a name="members"></a>メンバー
 |メンバー|値|説明|
 |:---|:---|:---|
-|数値|0|数字|
+|numeric|0|数値文字|
 |alphanumericAndSymbol|1|英数字および記号|
-
-
-
-
-
 
 
 

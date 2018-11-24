@@ -24,8 +24,8 @@ PATCH /deviceManagement/managedDeviceOverview
 ## <a name="request-headers"></a>要求ヘッダー
 |ヘッダー|値|
 |:---|:---|
-|承認|ベアラー &lt;トークン&gt; が必須。|
-|承諾する|アプリケーションまたは json|
+|Authorization|ベアラー &lt;トークン&gt; が必要です。|
+|Accept|application/json|
 
 ## <a name="request-body"></a>要求本文
 要求本文で、[managedDeviceOverview](../resources/intune_devices_manageddeviceoverview.md) オブジェクトの JSON 表記を指定します。
@@ -34,7 +34,7 @@ PATCH /deviceManagement/managedDeviceOverview
 
 |プロパティ|型|説明|
 |:---|:---|:---|
-|ID|文字列|概要の一意識別子|
+|id|String|概要の一意識別子|
 |enrolledDeviceCount|Int32|登録済みデバイスの合計数。 Intune PC エージェントで管理されている PC デバイスは含まれません|
 |mdmEnrolledCount|Int32|MDM に登録されているデバイスの数|
 |dualEnrolledDeviceCount|Int32|MDM と EAS の両方に登録されているデバイスの数|
@@ -52,9 +52,10 @@ PATCH /deviceManagement/managedDeviceOverview
 ``` http
 PATCH https://graph.microsoft.com/v1.0/deviceManagement/managedDeviceOverview
 Content-type: application/json
-Content-length: 625
+Content-length: 685
 
 {
+  "@odata.type": "#microsoft.graph.managedDeviceOverview",
   "enrolledDeviceCount": 3,
   "mdmEnrolledCount": 0,
   "dualEnrolledDeviceCount": 7,
@@ -110,11 +111,6 @@ Content-Length: 734
   }
 }
 ```
-
-
-
-
-
 
 
 

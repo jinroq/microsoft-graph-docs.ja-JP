@@ -1,8 +1,8 @@
 # <a name="user-getmailtips"></a>ユーザー: getMailTips
 
-サインイン中の[ユーザー](../resources/user.md)が利用できる、1 人以上の受信者に対するメール ヒントを取得します。
+サインインしている[ユーザー](../resources/user.md)に利用可能な 1 つまたは複数の受信者のメール ヒントを取得します。
 
-`getMailTips` アクションに対して`POST` 呼び出しを行うことで、特定の種類のメール ヒントを一度に複数の受信者に返す要求ができることにご注意ください。 要求されたメール ヒントは、[mailTips](../resources/mailtips.md) コレクションに返されます。
+注意することにより、`POST`を呼び出して、`getMailTips`アクション、同時に複数の受信者に返されるメール ヒントの特定の種類を要求することができます。 [メール ヒント](../resources/mailtips.md)のコレクションでは、要求されたメール ヒントが返されます。
 
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](../../../concepts/permissions_reference.md)」を参照してください。
@@ -20,27 +20,27 @@ POST /me/getMailTips
 POST /users/{id|userPrincipalName}/getMailTips
 ```
 ## <a name="optional-query-parameters"></a>オプションのクエリ パラメーター
-このメソッドは、応答をカスタマイズするための [OData クエリ パラメーター](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters)をサポートします。
+このメソッドは、応答をカスタマイズするための [OData クエリ パラメーター](https://developer.microsoft.com/graph/docs/concepts/query_parameters)をサポートします。
 ## <a name="request-headers"></a>要求ヘッダー
 | ヘッダー       | 値|
 |:-----------  |:------|
-| 承認 | ベアラー {トークン}。必須。 |
-| Content-Type  | アプリケーション /json  |
+| Authorization | ベアラー {トークン}。必須。 |
+| Content-Type  | application/json  |
 
 ## <a name="request-body"></a>要求本文
 要求本文で、次のパラメーターを含む JSON オブジェクトを指定します。
 
-| プロパティ     | タイプ   |説明|
+| プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
 |EmailAddresses|String コレクション|メール ヒントを取得する受信者の SMTP アドレスのコレクションです。|
-|MailTipsOptions|String|要求されたメールヒントを表すフラグの列挙型。 使用可能な値は、 `automaticReplies`、 `customMailTip`、 `deliveryRestriction`、 `externalMemberCount`、 `mailboxFullStatus`、 `maxMessageSize`、 `moderationStatus`、 `recipientScope`、 `recipientSuggestions`、 `totalMemberCount` です。|
+|MailTipsOptions|文字列|要求されたメールヒントを表すフラグの列挙型。 使用可能な値: `automaticReplies`、 `customMailTip`、 `deliveryRestriction`、 `externalMemberCount`、 `mailboxFullStatus`、 `maxMessageSize`、 `moderationStatus`、 `recipientScope`、`recipientSuggestions`と`totalMemberCount`。|
 
 ## <a name="response"></a>応答
 
-成功した場合、このメソッドは `200 OK` 応答コードと、応答本文で [mailTips](../resources/mailtips.md) オブジェクトのコレクションを返します。
+かどうかは成功すると、このメソッドが返されます、`200 OK`応答コードおよび応答の本文の[メール ヒント](../resources/mailtips.md)オブジェクトのコレクションです。
 ## <a name="example"></a>例
 ##### <a name="request"></a>要求
-次の使用例では、指定した受信者に対して、自動応答設定やメールボックスのフル状態を示すメール ヒントを取得します。
+次の使用例は、自動応答の設定、およびメールボックスのすべての状態を指定された受信者のメール ヒントを取得します。
 
 <!-- {
   "blockType": "request",

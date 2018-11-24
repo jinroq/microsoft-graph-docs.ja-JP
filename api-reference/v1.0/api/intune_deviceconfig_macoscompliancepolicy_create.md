@@ -24,8 +24,8 @@ POST /deviceManagement/deviceCompliancePolicies
 ## <a name="request-headers"></a>要求ヘッダー
 |ヘッダー|値|
 |:---|:---|
-|承認|ベアラー &lt;トークン&gt; が必須。|
-|承諾する|アプリケーションまたは json|
+|承認|ベアラー &lt;トークン&gt;が必須。|
+|承諾|application/json|
 
 ## <a name="request-body"></a>要求本文
 要求本文で、macOSCompliancePolicy オブジェクトの JSON 表記を指定します。
@@ -34,30 +34,29 @@ POST /deviceManagement/deviceCompliancePolicies
 
 |プロパティ|型|説明|
 |:---|:---|:---|
-|ID|文字列|エンティティのキー。 [deviceCompliancePolicy](../resources/intune_deviceconfig_devicecompliancepolicy.md) から継承します|
+|id|String|エンティティのキー。 [deviceCompliancePolicy](../resources/intune_deviceconfig_devicecompliancepolicy.md) から継承します|
 |createdDateTime|DateTimeOffset|オブジェクトが作成された DateTime。 [deviceCompliancePolicy](../resources/intune_deviceconfig_devicecompliancepolicy.md) から継承します|
-|説明|文字列|デバイス構成について管理者が提供した説明。 [deviceCompliancePolicy](../resources/intune_deviceconfig_devicecompliancepolicy.md) から継承します|
-|lastModifiedDateTime|DateTimeOffset|オブジェクトが最後に変更された DateTime。 [deviceCompliancePolicy](../resources/intune_deviceconfig_devicecompliancepolicy.md) から継承します|
-|displayName|文字列|デバイス構成について管理者が指定した名前。 [deviceCompliancePolicy](../resources/intune_deviceconfig_devicecompliancepolicy.md) から継承します|
-|バージョン|Int32|デバイス構成のバージョン。 [deviceCompliancePolicy](../resources/intune_deviceconfig_devicecompliancepolicy.md) から継承します|
-|passwordRequired|ブール値|パスワードを要求するかどうかを指定します。|
-|passwordBlockSimple|ブール値|単純なパスワードをブロックするかどうかを示します。|
+|description|String|デバイス構成について管理者が提供した説明。 [deviceCompliancePolicy](../resources/intune_deviceconfig_devicecompliancepolicy.md) から継承します|
+|lastModifiedDateTime|DateTimeOffset|オブジェクトの最終更新の DateTime。 [deviceCompliancePolicy](../resources/intune_deviceconfig_devicecompliancepolicy.md) から継承します|
+|displayName|String|デバイス構成について管理者が指定した名前。 [deviceCompliancePolicy](../resources/intune_deviceconfig_devicecompliancepolicy.md) から継承します|
+|version|Int32|デバイス構成のバージョン。 [deviceCompliancePolicy](../resources/intune_deviceconfig_devicecompliancepolicy.md) から継承します|
+|passwordRequired|Boolean|パスワードを要求するかどうかを指定します。|
+|passwordBlockSimple|Boolean|単純なパスワードをブロックするかどうかを示します。|
 |passwordExpirationDays|Int32|パスワードの有効期限が切れるまでの日数。 有効な値は 1 から 65535 までです|
 |passwordMinimumLength|Int32|パスワードの最小の長さ。 有効な値は 4 から 14 までです|
 |passwordMinutesOfInactivityBeforeLock|Int32|パスワードが要求されるまでの非アクティブ時間 (分)。|
 |passwordPreviousPasswordBlockCount|Int32|禁止する、以前のパスワードの数。 有効な値は 1 から 24 までです|
 |passwordMinimumCharacterSetCount|Int32|パスワードに必要な文字セットの数。|
 |passwordRequiredType|[requiredPasswordType](../resources/intune_deviceconfig_requiredpasswordtype.md)|必要なパスワードの種類。 可能な値は、`deviceDefault`、`alphanumeric`、`numeric` です。|
-|osMinimumVersion|文字列|最低限必要な iOS のバージョン。|
-|osMaximumVersion|文字列|最大の iOS バージョン。|
-|systemIntegrityProtectionEnabled|
-ブール値|デバイスでシステム整合性の保護が有効になっている必要があります。|
-|deviceThreatProtectionEnabled|ブール値|デバイスへの脅威に対する保護が有効になっている必要があります。|
+|osMinimumVersion|String|最小の iOS バージョン。|
+|osMaximumVersion|String|最大の iOS バージョン。|
+|systemIntegrityProtectionEnabled|Boolean|デバイスでシステム整合性の保護が有効になっている必要があります。|
+|deviceThreatProtectionEnabled|Boolean|デバイスの脅威保護が有効になっている必要があります。|
 |deviceThreatProtectionRequiredSecurityLevel|[deviceThreatProtectionLevel](../resources/intune_deviceconfig_devicethreatprotectionlevel.md)|Mobile Threat Protection に、コンプライアンス違反をレポートするための最小のリスク レベルを要求します。 可能な値は、`unavailable`、`secured`、`low`、`medium`、`high`、`notSet` です。|
-|storageRequireEncryption|ブール値|Mac OS デバイスでの暗号化を要求します。|
-|firewallEnabled|ブール値|ファイアウォールを有効または無効にするかどうかを決定します。|
-|firewallBlockAllIncoming|ブール値|[すべての受信接続をブロックする] オプションに対応します。|
-|firewallEnableStealthMode|ブール値|[ステルス モードの有効化] に対応します。|
+|storageRequireEncryption|Boolean|Mac OS デバイスでの暗号化を要求します。|
+|firewallEnabled|Boolean|かどうか、か、これらのファイアウォールは有効にする必要があります。|
+|firewallBlockAllIncoming|Boolean|「すべての着信接続をブロックする] オプションに対応します。|
+|firewallEnableStealthMode|Boolean|「有効にするステルス モード」に対応|
 
 
 
@@ -70,12 +69,11 @@ POST /deviceManagement/deviceCompliancePolicies
 ``` http
 POST https://graph.microsoft.com/v1.0/deviceManagement/deviceCompliancePolicies
 Content-type: application/json
-Content-length: 913
+Content-length: 849
 
 {
   "@odata.type": "#microsoft.graph.macOSCompliancePolicy",
   "description": "Description value",
-  "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
   "displayName": "Display Name value",
   "version": 7,
   "passwordRequired": true,
@@ -132,11 +130,6 @@ Content-Length: 1021
   "firewallEnableStealthMode": true
 }
 ```
-
-
-
-
-
 
 
 

@@ -19,7 +19,7 @@ GET /groups/{id}/onenote/sectionGroups
 GET /sites/{id}/onenote/sectionGroups
 ```
 ## <a name="optional-query-parameters"></a>オプションのクエリ パラメーター
-このメソッドは、応答をカスタマイズするための [OData クエリ パラメーター](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters)をサポートします。
+このメソッドは、応答をカスタマイズするための [OData クエリ パラメーター](https://developer.microsoft.com/graph/docs/concepts/query_parameters)をサポートします。
 
 既定の並べ替え順序は `name asc` です。
 
@@ -28,8 +28,8 @@ GET /sites/{id}/onenote/sectionGroups
 ## <a name="request-headers"></a>要求ヘッダー
 | 名前       | 型 | 説明|
 |:-----------|:------|:----------|
-| 承認  | 文字列  | ベアラー {トークン}。必須。 |
-| 承諾 | 文字列 | `application/json` |
+| Authorization  | string  | ベアラー {トークン}。必須。 |
+| 承諾 | string | `application/json` |
 
 ## <a name="request-body"></a>要求本文
 このメソッドには、要求本文を指定しません。

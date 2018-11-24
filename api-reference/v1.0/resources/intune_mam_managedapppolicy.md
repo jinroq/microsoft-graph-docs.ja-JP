@@ -6,30 +6,30 @@ ManagedAppPolicy リソースは、プラットフォーム特有のポリシー
 ## <a name="methods"></a>メソッド
 |メソッド|戻り値の型|説明|
 |:---|:---|:---|
-|[managedAppPolicies のリスト](../api/intune_mam_managedapppolicy_list.md)|[managedAppPolicy](../resources/intune_mam_managedapppolicy.md) コレクション|[managedAppPolicy](../resources/intune_mam_managedapppolicy.md) オブジェクトのプロパティとリレーションシップをリストします。|
-|[managedAppPolicy の取得](../api/intune_mam_managedapppolicy_get.md)|[managedAppPolicy](../resources/intune_mam_managedapppolicy.md)|[managedAppPolicy](../resources/intune_mam_managedapppolicy.md) オブジェクトのプロパティとリレーションシップを読み取ります。|
+|[List managedAppPolicies](../api/intune_mam_managedapppolicy_list.md)|[managedAppPolicy](../resources/intune_mam_managedapppolicy.md) コレクション|[managedAppPolicy](../resources/intune_mam_managedapppolicy.md) オブジェクトのプロパティとリレーションシップをリストします。|
+|[Get managedAppPolicy](../api/intune_mam_managedapppolicy_get.md)|[managedAppPolicy](../resources/intune_mam_managedapppolicy.md)|[managedAppPolicy](../resources/intune_mam_managedapppolicy.md) オブジェクトのプロパティとリレーションシップを読み取ります。|
 |[targetApps アクション](../api/intune_mam_managedapppolicy_targetapps.md)|なし|まだ文書化されていません|
 
 ## <a name="properties"></a>プロパティ
-|プロパティ|タイプ|説明|
+|プロパティ|型|説明|
 |:---|:---|:---|
-|displayName|文字列|ポリシーの表示名。|
-|説明|文字列|ポリシーの説明。|
+|displayName|文字列型 (String)|ポリシーの表示名。|
+|description|文字列型 (String)|ポリシーの説明。|
 |createdDateTime|DateTimeOffset|ポリシーが作成された日時。|
 |lastModifiedDateTime|DateTimeOffset|ポリシーが変更された最終日時。|
-|ID|文字列|エンティティのキー。|
-|バージョン|文字列|エンティティのバージョン。|
+|id|文字列型 (String)|エンティティのキー。|
+|version|文字列型 (String)|エンティティのバージョン。|
 
 ## <a name="relationships"></a>リレーションシップ
 なし
 ## <a name="json-representation"></a>JSON 表記
 以下は、リソースの JSON 表記です。
-<!--{
+<!-- {
   "blockType": "resource",
-  "baseType": "microsoft.graph.entity",
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.managedAppPolicy"
-}-->
+}
+-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.managedAppPolicy",
@@ -41,11 +41,6 @@ ManagedAppPolicy リソースは、プラットフォーム特有のポリシー
   "version": "String"
 }
 ```
-
-
-
-
-
 
 
 

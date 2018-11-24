@@ -9,7 +9,8 @@
 
 |アクセス許可の種類|アクセス許可 (特権の大きいものから小さいものへ)|
 |:---|:---|
-|委任 (職場または学校のアカウント)|DeviceManagementRBAC.ReadWrite.All、DeviceManagementRBAC.Read.All|
+|委任 (職場または学校のアカウント)||
+| &nbsp;&nbsp;ロール ベースのアクセス制御 | DeviceManagementRBAC.ReadWrite.All、DeviceManagementRBAC.Read.All|
 |委任 (個人用 Microsoft アカウント)|サポートされていません。|
 |アプリケーション|サポートされていません。|
 
@@ -25,8 +26,8 @@ GET /deviceManagement/getEffectivePermissions
 ## <a name="request-headers"></a>要求ヘッダー
 |ヘッダー|値|
 |:---|:---|
-|承認|ベアラー &lt;トークン&gt; が必須。|
-|Accept|アプリケーションまたは json|
+|Authorization|ベアラー &lt;トークン&gt; が必須。|
+|Accept|application/json|
 
 ## <a name="request-body"></a>要求本文
 要求 URL で、次のクエリ パラメーターに値を指定します。

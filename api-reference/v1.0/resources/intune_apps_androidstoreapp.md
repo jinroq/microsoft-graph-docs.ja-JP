@@ -9,31 +9,31 @@ Android ストア アプリのプロパティと継承されるプロパティ�
 ## <a name="methods"></a>メソッド
 |メソッド|戻り値の型|説明|
 |:---|:---|:---|
-|[androidStoreApps の一覧表示](../api/intune_apps_androidstoreapp_list.md)|[androidStoreApp](../resources/intune_apps_androidstoreapp.md) コレクション|[androidStoreApp](../resources/intune_apps_androidstoreapp.md) オブジェクトのプロパティとリレーションシップをリストします。|
-|[androidStoreApp の取得](../api/intune_apps_androidstoreapp_get.md)|[androidStoreApp](../resources/intune_apps_androidstoreapp.md)|[androidStoreApp](../resources/intune_apps_androidstoreapp.md) オブジェクトのプロパティとリレーションシップを読み取ります。|
-|[androidStoreApp の作成](../api/intune_apps_androidstoreapp_create.md)|[androidStoreApp](../resources/intune_apps_androidstoreapp.md)|新しい [androidStoreApp](../resources/intune_apps_androidstoreapp.md) オブジェクトを作成します。|
-|[androidStoreApp の削除](../api/intune_apps_androidstoreapp_delete.md)|なし|[androidStoreApp](../resources/intune_apps_androidstoreapp.md) を削除します。|
-|[androidStoreApp の更新](../api/intune_apps_androidstoreapp_update.md)|[androidStoreApp](../resources/intune_apps_androidstoreapp.md)|[androidStoreApp](../resources/intune_apps_androidstoreapp.md) オブジェクトのプロパティを更新します。|
+|[List androidStoreApps](../api/intune_apps_androidstoreapp_list.md)|[androidStoreApp](../resources/intune_apps_androidstoreapp.md) コレクション|[androidStoreApp](../resources/intune_apps_androidstoreapp.md) オブジェクトのプロパティとリレーションシップをリストします。|
+|[Get androidStoreApp](../api/intune_apps_androidstoreapp_get.md)|[androidStoreApp](../resources/intune_apps_androidstoreapp.md)|[androidStoreApp](../resources/intune_apps_androidstoreapp.md) オブジェクトのプロパティとリレーションシップを読み取ります。|
+|[Create androidStoreApp](../api/intune_apps_androidstoreapp_create.md)|[androidStoreApp](../resources/intune_apps_androidstoreapp.md)|新しい [androidStoreApp](../resources/intune_apps_androidstoreapp.md) オブジェクトを作成します。|
+|[Delete androidStoreApp](../api/intune_apps_androidstoreapp_delete.md)|なし|[androidStoreApp](../resources/intune_apps_androidstoreapp.md) を削除します。|
+|[Update androidStoreApp](../api/intune_apps_androidstoreapp_update.md)|[androidStoreApp](../resources/intune_apps_androidstoreapp.md)|[androidStoreApp](../resources/intune_apps_androidstoreapp.md) オブジェクトのプロパティを更新します。|
 
 ## <a name="properties"></a>プロパティ
-|プロパティ|タイプ|説明|
+|プロパティ|型|説明|
 |:---|:---|:---|
-|id|文字列|エンティティのキー。 [mobileApp](../resources/intune_apps_mobileapp.md) から継承します|
-|displayName|文字列|管理者が提供またはインポートしたアプリのタイトル。 [mobileApp](../resources/intune_apps_mobileapp.md) から継承します|
-|説明|文字列|アプリの説明。 [mobileApp](../resources/intune_apps_mobileapp.md) から継承します|
-|publisher|文字列|アプリの発行元。 [mobileApp](../resources/intune_apps_mobileapp.md) から継承します|
+|id|String|エンティティのキー。 [mobileApp](../resources/intune_apps_mobileapp.md) から継承します|
+|displayName|String|管理者が提供またはインポートしたアプリのタイトル。 [mobileApp](../resources/intune_apps_mobileapp.md) から継承します|
+|description|String|アプリの説明。 [mobileApp](../resources/intune_apps_mobileapp.md) から継承します|
+|publisher|String|アプリの発行元。 [mobileApp](../resources/intune_apps_mobileapp.md) から継承します|
 |largeIcon|[mimeContent](../resources/intune_shared_mimecontent.md)|アプリの詳細に表示され、アイコンのアップロードに使用される大きなアイコン。 [mobileApp](../resources/intune_apps_mobileapp.md) から継承します|
 |createdDateTime|DateTimeOffset|アプリが作成された日時。 [mobileApp](../resources/intune_apps_mobileapp.md) から継承します|
 |lastModifiedDateTime|DateTimeOffset|アプリが最後に変更された日時。 [mobileApp](../resources/intune_apps_mobileapp.md) から継承します|
-|isFeatured|ブール値|アプリが管理者のおすすめとしてマークされたかどうかを示す値。[mobileApp](../resources/intune_apps_mobileapp.md) から継承します|
-|privacyInformationUrl|文字列|プライバシーに関する声明の URL。 [mobileApp](../resources/intune_apps_mobileapp.md) から継承します|
-|informationUrl|文字列|詳細情報の URL。 [mobileApp](../resources/intune_apps_mobileapp.md) から継承します|
-|owner|文字列|アプリの所有者。 [mobileApp](../resources/intune_apps_mobileapp.md) から継承します|
-|developer|文字列|アプリの開発者。 [mobileApp](../resources/intune_apps_mobileapp.md) から継承します|
-|notes|文字列|アプリ用のメモ。 [mobileApp](../resources/intune_apps_mobileapp.md) から継承します|
-|publishingState|[mobileAppPublishingState](../resources/intune_apps_mobileapppublishingstate.md)|アプリケーションの発行の状態です。アプリが公開されていない限り、アプリケーションを割り当てることができません。 [MobileApp](../resources/intune_apps_mobileapp.md)から継承されます。使用可能な値は`notPublished`、`processing`、`published`です。|
-|packageId|文字列|パッケージの識別子。|
-|appStoreUrl|文字列|Android アプリ ストアの URL。|
+|isFeatured|Boolean|アプリが管理者のおすすめとしてマークされたかどうかを示す値。[mobileApp](../resources/intune_apps_mobileapp.md) から継承します|
+|privacyInformationUrl|String|プライバシーに関する声明の URL。 [mobileApp](../resources/intune_apps_mobileapp.md) から継承します|
+|informationUrl|String|詳細情報の URL。 [mobileApp](../resources/intune_apps_mobileapp.md) から継承します|
+|owner|String|アプリの所有者。 [mobileApp](../resources/intune_apps_mobileapp.md) から継承します|
+|developer|String|アプリの開発者。 [mobileApp](../resources/intune_apps_mobileapp.md) から継承します|
+|notes|String|アプリ用のメモ。 [mobileApp](../resources/intune_apps_mobileapp.md) から継承します|
+|publishingState|[mobileAppPublishingState](../resources/intune_apps_mobileapppublishingstate.md)|アプリの発行の状態。 アプリが発行されていない限り、アプリを割り当てることができません。 [MobileApp](../resources/intune_apps_mobileapp.md)から継承されます。 可能な値は、`notPublished`、`processing`、`published` です。|
+|packageId|String|パッケージの識別子。|
+|appStoreUrl|String|Android アプリ ストアの URL。|
 |minimumSupportedOperatingSystem|[androidMinimumOperatingSystem](../resources/intune_apps_androidminimumoperatingsystem.md)|該当するオペレーティング システムの最小の値です。|
 
 ## <a name="relationships"></a>リレーションシップ
@@ -44,12 +44,12 @@ Android ストア アプリのプロパティと継承されるプロパティ�
 
 ## <a name="json-representation"></a>JSON 表記
 以下は、リソースの JSON 表記です。
-<!--{
+<!-- {
   "blockType": "resource",
-  "baseType": "microsoft.graph.mobileApp",
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.androidStoreApp"
-}-->
+}
+-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.androidStoreApp",
@@ -86,11 +86,6 @@ Android ストア アプリのプロパティと継承されるプロパティ�
   }
 }
 ```
-
-
-
-
-
 
 
 

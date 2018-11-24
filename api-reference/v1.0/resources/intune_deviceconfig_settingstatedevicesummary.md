@@ -13,11 +13,11 @@
 |[settingStateDeviceSummary の更新](../api/intune_deviceconfig_settingstatedevicesummary_update.md)|[settingStateDeviceSummary](../resources/intune_deviceconfig_settingstatedevicesummary.md)|[settingStateDeviceSummary](../resources/intune_deviceconfig_settingstatedevicesummary.md) オブジェクトのプロパティを更新します。|
 
 ## <a name="properties"></a>プロパティ
-|プロパティ|タイプ|説明|
+|プロパティ|型|説明|
 |:---|:---|:---|
-|ID|文字列|エンティティのキー。|
-|settingName|文字列|設定の名前|
-|instancePath|文字列|設定の InstancePath の名前|
+|id|String|エンティティのキー。|
+|settingName|String|設定の名前|
+|instancePath|String|設定の InstancePath の名前|
 |unknownDeviceCount|Int32|設定の不明なデバイスの数|
 |notApplicableDeviceCount|Int32|設定の該当しないデバイスの数|
 |compliantDeviceCount|Int32|設定の準拠しているデバイスの数|
@@ -30,12 +30,12 @@
 なし
 ## <a name="json-representation"></a>JSON 表記
 以下は、リソースの JSON 表記です。
-<!--{
+<!-- {
   "blockType": "resource",
-  "baseType": "microsoft.graph.entity",
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.settingStateDeviceSummary"
-}-->
+}
+-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.settingStateDeviceSummary",
@@ -51,11 +51,6 @@
   "conflictDeviceCount": 1024
 }
 ```
-
-
-
-
-
 
 
 

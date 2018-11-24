@@ -3,14 +3,14 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
 title: 再開可能なファイル アップロード
-ms.openlocfilehash: d6a6066ea04d087efef556a1d5b5af888a34dad2
-ms.sourcegitcommit: abf4b739257e3ffd9d045f783ec595d846172590
-ms.translationtype: HT
+ms.openlocfilehash: 14b9047f84b5390aea2f5285660e6c04a6bc3149
+ms.sourcegitcommit: ebac77d2ca32438e552831de0258fe5e86fa225a
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "23265513"
+ms.lasthandoff: 11/17/2018
+ms.locfileid: "26564759"
 ---
-# <a name="upload-large-files-with-an-upload-session"></a>アップロード セッションを使ってサイズが大きいファイルをアップロードする
+# <a name="upload-large-files-with-an-upload-session"></a>アップロード セッションを使ってサイズの大きなファイルをアップロードする
 
 アプリで最大ファイル サイズまでファイルをアップロードできるようにするには、アップロード セッションを作成します。アップロード セッションにより、アプリは一連の API 要求で広範なファイルをアップロードでき、このため、アップロードの進行中に接続が切れた場合に転送を再開できます。
 
@@ -48,12 +48,12 @@ POST /users/{userId}/drive/items/{itemId}/createUploadSession
 ### <a name="request-body"></a>要求本文
 
 要求の本文は必要ありません。
-ただし、要求本文で `item` プロパティを指定して、アップロードされているファイルに関する追加データを提供することができます。
+ただし、指定することができます、`item`にアップロードされているファイルに関する追加データを提供する、要求の本文のプロパティです。
 
 <!-- { "blockType": "resource", "@odata.type": "microsoft.graph.driveItemUploadableProperties" } -->
 ```json
 {
-  "@microsoft.graph.conflictBehavior": "rename | fail | overwrite",
+  "@microsoft.graph.conflictBehavior": "rename | fail | replace",
   "description": "description",
   "fileSystemInfo": { "@odata.type": "microsoft.graph.fileSystemInfo" },
   "name": "filename.txt"
@@ -79,11 +79,11 @@ POST /users/{userId}/drive/items/{itemId}/createUploadSession
 
 ## <a name="properties"></a>プロパティ
 
-| プロパティ             | タイプ               | 説明
+| プロパティ             | 型               | 説明
 |:---------------------|:-------------------|:---------------------------------
-| 説明          | 文字列             | ユーザーに表示されるアイテムの説明を提供します。読み取り/書き込み。OneDrive 個人用においてのみ
+| 説明          | String             | ユーザーに表示されるアイテムの説明を提供します。読み取り/書き込み。OneDrive 個人用においてのみ
 | fileSystemInfo       | [fileSystemInfo][] | クライアント上のファイル システム情報。読み取り/書き込み。
-| 名前                 | 文字列             | アイテムの名前 (ファイル名と拡張子)。読み取り/書き込み。
+| 名前                 | String             | アイテムの名前 (ファイル名と拡張子)。読み取り/書き込み。
 
 ### <a name="request"></a>要求
 
@@ -128,7 +128,7 @@ Content-Type: application/json
 ファイル、またはファイルの一部をアップロードするために、アプリは **createUploadSession** 応答で受け取った **uploadUrl** 値への PUT 要求を出します。
 どの要求の最大バイト数も 60 MiB 未満である限り、ファイル全体をアップロードすることも、ファイルをいくつかのバイト範囲に分割することも可能です。
 
-分割されたファイルのフラグメントは順番にアップロードされる必要があります。
+ファイルのフラグメントは、順に順番にアップロードする必要があります。
 誤った順序でアップロードすると、エラーが発生します。
 
 **注:** アプリがファイルを複数のバイト範囲に分割する場合、各バイト範囲のサイズは 320 KiB (327,680 バイト) の倍数である**必要があります**。 320 KiB で均等に分割できないフラグメント サイズを使用した場合、一部のファイルのコミット中にエラーになります。
@@ -193,10 +193,10 @@ Content-Type: application/json
 
 ## <a name="remarks"></a>備考
 
-* プロパティは、欠落してするすべての範囲の一覧を必ずしも示すわけではありません。`nextExpectedRanges`
+* `nextExpectedRanges` プロパティは、欠落してするすべての範囲の一覧を必ずしも示すわけではありません。
 * フラグメントの書き込みが成功すると、次の開始点の範囲が返されます (例: "523-")。
 * サーバーが既に受信していたフラグメントをクライアントが送信した場合のエラーでは、サーバーから `HTTP 416 Requested Range Not Satisfiable` の応答が返されます。受信されていない範囲のより詳細なリストを取得するために、[アップロード ステータスを要求](#resuming-an-in-progress-upload)できます。
-* の呼び出しを発行するときに、承認ヘッダーを含めると、`HTTP 401 Unauthorized` 応答が発生する可能性があります。承認ヘッダーとベアラー トークンは、最初の手順で `POST` を発行するときにのみ送信する必要があります。`PUT` を発行する場合は、含めないようにします。`PUT`
+* `PUT` の呼び出しを発行するときに、承認ヘッダーを含めると、`HTTP 401 Unauthorized` 応答が発生する可能性があります。承認ヘッダーとベアラー トークンは、最初の手順で `POST` を発行するときにのみ送信する必要があります。`PUT` を発行する場合は、含めないようにします。
 
 ## <a name="completing-a-file"></a>ファイルの完成
 
@@ -277,7 +277,7 @@ HTTP/1.1 204 No Content
 
 ### <a name="example"></a>例
 
-に GET 要求を送信して、アップロードのステータスを照会します。`uploadUrl`
+`uploadUrl` に GET 要求を送信して、アップロードのステータスを照会します。
 
 <!-- { "blockType": "request", "opaqueUrl": true, "name": "upload-fragment-resume", "scopes": "files.readwrite" } -->
 
@@ -375,7 +375,7 @@ Content-Type: application/json
   "keywords": "upload,large file,fragment,BITS",
   "suppressions": [
     "Warning: /api-reference/v1.0/api/driveitem_createuploadsession.md:
-      Found potential enums in resource example that weren't defined in a table:(rename,fail,overwrite) are in resource, but () are in table"
+      Found potential enums in resource example that weren't defined in a table:(rename,fail,replace) are in resource, but () are in table"
   ],
   "section": "documentation"
 } -->

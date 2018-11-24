@@ -1,4 +1,4 @@
-# <a name="create-windowsphone81generalconfiguration"></a>windowsPhone81GeneralConfiguration を作成する
+# <a name="create-windowsphone81generalconfiguration"></a>Create windowsPhone81GeneralConfiguration
 
 > **注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
 
@@ -8,7 +8,7 @@
 
 |アクセス許可の種類|アクセス許可 (特権の大きいものから小さいものへ)|
 |:---|:---|
-|委任 (職場または学校のアカウント)|DeviceManagementConfiguration.ReadWrite.All|
+|委任 (職場または学校アカウント)|DeviceManagementConfiguration.ReadWrite.All|
 |委任 (個人用 Microsoft アカウント)|サポートされていません。|
 |アプリケーション|サポートされていません。|
 
@@ -24,8 +24,8 @@ POST /deviceManagement/deviceConfigurations
 ## <a name="request-headers"></a>要求ヘッダー
 |ヘッダー|値|
 |:---|:---|
-|承認|ベアラー &lt;トークン&gt; が必須。|
-|承諾|アプリケーションまたは json|
+|Authorization|ベアラー &lt;トークン&gt; が必須。|
+|Accept|application/json|
 
 ## <a name="request-body"></a>要求本文
 要求本文で、windowsPhone81GeneralConfiguration オブジェクトの JSON 表記を指定します。
@@ -34,25 +34,25 @@ POST /deviceManagement/deviceConfigurations
 
 |プロパティ|型|説明|
 |:---|:---|:---|
-|ID|文字列|エンティティのキー。 [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md) から継承します|
+|id|String|エンティティのキー。 [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md) から継承します|
 |lastModifiedDateTime|DateTimeOffset|オブジェクトが最後に変更された DateTime。 [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md) から継承します|
 |createdDateTime|DateTimeOffset|オブジェクトが作成された DateTime。 [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md) から継承します|
-|説明|文字列|デバイス構成について管理者が提供した説明。 [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md) から継承します|
-|displayName|文字列|デバイス構成について管理者が指定した名前。 [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md) から継承します|
-|バージョン|Int32|デバイス構成のバージョン。 [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md) から継承します|
-|applyOnlyToWindowsPhone81|ブール値|このポリシーを Windows Phone 8.1 にのみ適用するかどうかを示す値。 このプロパティは読み取り専用です。|
-|appsBlockCopyPaste|ブール値|コピー/貼り付けを禁止するかどうかを示します。|
-|bluetoothBlocked|ブール値|Bluetooth をブロックするかどうかを示します。|
-|cameraBlocked|ブール値|カメラをブロックするかどうかを示します。|
-|cellularBlockWifiTethering|ブール値|Wi-Fi テザリングをブロックするかどうかを示します。 Wi-Fi がブロックされていれば、この値は関係ありません。|
+|description|String|デバイス構成について管理者が提供した説明。 [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md) から継承します|
+|displayName|String|デバイス構成について管理者が指定した名前。 [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md) から継承します|
+|version|Int32|デバイス構成のバージョン。 [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md) から継承します|
+|applyOnlyToWindowsPhone81|Boolean|このポリシーを Windows Phone 8.1 にのみ適用するかどうかを示す値。 このプロパティは読み取り専用です。|
+|appsBlockCopyPaste|Boolean|コピー/貼り付けを禁止するかどうかを示します。|
+|bluetoothBlocked|Boolean|Bluetooth をブロックするかどうかを示します。|
+|cameraBlocked|Boolean|カメラをブロックするかどうかを示します。|
+|cellularBlockWifiTethering|Boolean|Wi-Fi テザリングをブロックするかどうかを示します。 Wi-Fi がブロックされていれば、この値は関係ありません。|
 |compliantAppsList|[appListItem](../resources/intune_deviceconfig_applistitem.md) コレクション|コンプライアンス内のアプリのリスト (CompliantAppListType によって制御される、許可リストまたは禁止リスト)。 このコレクションには、最大で 10000 個の要素を含めることができます。|
 |compliantAppListType|[appListType](../resources/intune_deviceconfig_applisttype.md)|AppComplianceList 内にあるリスト。 可能な値は、`none`、`appsInListCompliant`、`appsNotInListCompliant` です。|
-|diagnosticDataBlockSubmission|ブール値|診断データの送信をブロックするかどうかを示します。|
-|emailBlockAddingAccounts|ブール値|カスタム電子メール アカウントをブロックするかどうかを示します。|
-|locationServicesBlocked|ブール値|位置情報サービスをブロックするかどうかを示します。|
-|microsoftAccountBlocked|ブール値|Microsoft アカウントの使用を禁止するかどうかを示します。|
-|nfcBlocked|ブール値|近距離無線通信をブロックするかどうかを示します。|
-|passwordBlockSimple|ブール値|カレンダーの同期を禁止するかどうかを示します。|
+|diagnosticDataBlockSubmission|Boolean|診断データの送信をブロックするかどうかを示します。|
+|emailBlockAddingAccounts|Boolean|カスタム電子メール アカウントをブロックするかどうかを示します。|
+|locationServicesBlocked|Boolean|位置情報サービスをブロックするかどうかを示します。|
+|microsoftAccountBlocked|Boolean|Microsoft アカウントの使用を禁止するかどうかを示します。|
+|nfcBlocked|Boolean|近距離無線通信をブロックするかどうかを示します。|
+|passwordBlockSimple|Boolean|カレンダーの同期を禁止するかどうかを示します。|
 |passwordExpirationDays|Int32|パスワードの有効期限が切れるまでの日数。|
 |passwordMinimumLength|Int32|パスワードの最小の長さ。|
 |passwordMinutesOfInactivityBeforeScreenTimeout|Int32|画面がタイムアウトになるまでの非アクティブ時間 (分)。|
@@ -60,15 +60,15 @@ POST /deviceManagement/deviceConfigurations
 |passwordPreviousPasswordBlockCount|Int32|ブロックする、以前のパスワードの数。 有効な値は 0 から 24 までです|
 |passwordSignInFailureCountBeforeFactoryReset|Int32|出荷時の設定にリセットされるまでの、失敗が許可されるサインインの回数。|
 |passwordRequiredType|[requiredPasswordType](../resources/intune_deviceconfig_requiredpasswordtype.md)|必要なパスワードの種類。 可能な値は、`deviceDefault`、`alphanumeric`、`numeric` です。|
-|passwordRequired|ブール値|パスワードを要求するかどうかを指定します。|
-|screenCaptureBlocked|ブール値|スクリーンショットを禁止するかどうかを示します。|
-|storageBlockRemovableStorage|ブール値|リムーバブル記憶域をブロックするかどうかを示します。|
-|storageRequireEncryption|ブール値|暗号化が必要かどうかを示します。|
-|webBrowserBlocked|ブール値|Web ブラウザーをブロックするかどうかを示します。|
-|wifiBlocked|ブール値|Wi-Fi をブロックするかどうかを示します。|
-|wifiBlockAutomaticConnectHotspots|ブール値|Wi-Fi ホットスポットへの自動接続をブロックするかどうかを示します。 Wi-Fi がブロックされていれば、この値は関係ありません。|
-|wifiBlockHotspotReporting|ブール値|Wi-Fi ホットスポット レポートをブロックするかどうかを示します。 Wi-Fi がブロックされていれば、この値は関係ありません。|
-|windowsStoreBlocked|ブール値|Windows ストアをブロックするかどうかを示します。|
+|passwordRequired|Boolean|パスワードを要求するかどうかを指定します。|
+|screenCaptureBlocked|Boolean|スクリーンショットを禁止するかどうかを示します。|
+|storageBlockRemovableStorage|Boolean|リムーバブル記憶域をブロックするかどうかを示します。|
+|storageRequireEncryption|Boolean|暗号化が必要かどうかを示します。|
+|webBrowserBlocked|Boolean|Web ブラウザーをブロックするかどうかを示します。|
+|wifiBlocked|Boolean|Wi-Fi をブロックするかどうかを示します。|
+|wifiBlockAutomaticConnectHotspots|Boolean|Wi-Fi ホットスポットへの自動接続をブロックするかどうかを示します。 Wi-Fi がブロックされていれば、この値は関係ありません。|
+|wifiBlockHotspotReporting|Boolean|Wi-Fi ホットスポット レポートをブロックするかどうかを示します。 Wi-Fi がブロックされていれば、この値は関係ありません。|
+|windowsStoreBlocked|Boolean|Windows ストアをブロックするかどうかを示します。|
 
 
 
@@ -81,11 +81,10 @@ POST /deviceManagement/deviceConfigurations
 ``` http
 POST https://graph.microsoft.com/v1.0/deviceManagement/deviceConfigurations
 Content-type: application/json
-Content-length: 1525
+Content-length: 1461
 
 {
   "@odata.type": "#microsoft.graph.windowsPhone81GeneralConfiguration",
-  "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
   "description": "Description value",
   "displayName": "Display Name value",
   "version": 7,
@@ -183,11 +182,6 @@ Content-Length: 1633
   "windowsStoreBlocked": true
 }
 ```
-
-
-
-
-
 
 
 

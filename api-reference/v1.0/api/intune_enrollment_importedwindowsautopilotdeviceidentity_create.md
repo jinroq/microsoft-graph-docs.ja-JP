@@ -1,4 +1,4 @@
-# <a name="create-importedwindowsautopilotdeviceidentity"></a>ImportedWindowsAutopilotDeviceIdentity を作成します
+# <a name="create-importedwindowsautopilotdeviceidentity"></a>Create importedWindowsAutopilotDeviceIdentity
 
 > **注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
 
@@ -25,8 +25,8 @@ POST /deviceManagement/importedWindowsAutopilotDeviceIdentityUploads/{importedWi
 ## <a name="request-headers"></a>要求ヘッダー
 |ヘッダー|値|
 |:---|:---|
-|承認|ベアラー &lt;トークン&gt; が必須。|
-|承諾する|アプリケーションまたは json|
+|Authorization|ベアラー &lt;トークン&gt; が必須。|
+|Accept|application/json|
 
 ## <a name="request-body"></a>要求本文
 要求本文で、importedWindowsAutopilotDeviceIdentity オブジェクトの JSON 表記を指定します。
@@ -35,12 +35,12 @@ POST /deviceManagement/importedWindowsAutopilotDeviceIdentityUploads/{importedWi
 
 |プロパティ|型|説明|
 |:---|:---|:---|
-|ID|文字列|オブジェクトの GUID|
-|orderIdentifier|文字列|Windows オートパイロット デバイスの受注 ID。|
-|シリアル番号|文字列|Windows オートパイロット デバイスのシリアル番号。|
-|productKey|文字列|Windows オートパイロット デバイスのプロダクト キー。|
+|id|String|オブジェクトの GUID|
+|orderIdentifier|String|Windows オートパイロット デバイスの受注 ID。|
+|serialNumber|String|Windows オートパイロット デバイスのシリアル番号。|
+|productKey|String|Windows オートパイロット デバイスのプロダクト キー。|
 |hardwareIdentifier|バイナリ|Windows オートパイロット デバイスのハードウェア BLOB。|
-|状態|[importedWindowsAutopilotDeviceIdentityState](../resources/intune_enrollment_importedwindowsautopilotdeviceidentitystate.md)|インポートしたデバイスの現在の状態。|
+|state|[importedWindowsAutopilotDeviceIdentityState](../resources/intune_enrollment_importedwindowsautopilotdeviceidentitystate.md)|インポートしたデバイスの現在の状態。|
 
 
 
@@ -94,11 +94,6 @@ Content-Length: 590
   }
 }
 ```
-
-
-
-
-
 
 
 

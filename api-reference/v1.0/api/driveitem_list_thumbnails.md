@@ -3,12 +3,12 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
 title: ファイルまたはフォルダーのサムネイルを取得する
-ms.openlocfilehash: 98bfa0bee80beabc9934ae603f317627facffb4a
-ms.sourcegitcommit: abf4b739257e3ffd9d045f783ec595d846172590
-ms.translationtype: HT
+ms.openlocfilehash: b7b842a5aac4b8505db3b4fc1c77dcb7c983f521
+ms.sourcegitcommit: ebac77d2ca32438e552831de0258fe5e86fa225a
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "23266836"
+ms.lasthandoff: 11/17/2018
+ms.locfileid: "26564845"
 ---
 # <a name="list-thumbnails-for-a-driveitem"></a>DriveItem のサムネイルを一覧表示する
 
@@ -121,7 +121,7 @@ Content-Type: application/json
 {
   "width": 100,
   "height": 100,
-  "url": "http://onedrive.com/asd123a/asdjlkasjdkasdjlk.jpg"
+  "url": "https://onedrive.com/asd123a/asdjlkasjdkasdjlk.jpg"
 }
 ```
 
@@ -166,7 +166,7 @@ GET /me/drive/items/{item-id}/children?$expand=thumbnails
 
 ### <a name="response"></a>応答
 
-DriveItems とそのサムネイルのリストでのサービスの応答。
+サービスは、DriveItems とそのサムネイルのリストで応答します。
 
 <!-- { "blockType": "response", "@odata.type": "Collection(microsoft.graph.driveItem)", "truncated": true } -->
 
@@ -262,7 +262,7 @@ Content-Type: application/json
 
 **注:** OneDrive for Business および SharePoint の場合:
 
-次の呼び出しを使用したサムネイル コレクションの展開は機能しません:
+次の呼び出しを使用したサムネイル コレクションの展開は機能しません: 
 
 * `GET /drive/root:/{item-path}?expand=children(expand=thumbnails)`
 * `GET /drive/items/{item-id}/children?expand=thumbnails`

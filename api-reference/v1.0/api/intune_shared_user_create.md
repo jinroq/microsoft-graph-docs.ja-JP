@@ -8,11 +8,11 @@
 
 |アクセス許可の種類|アクセス許可 (特権の大きいものから小さいものへ)|
 |:---|:---|
-|委任 (職場または学校アカウント)| _コンテキストによって異なります_ |
-| &nbsp; &nbsp; デバイスの管理 | DeviceManagementManagedDevices.ReadWrite.All |
-| &nbsp; &nbsp; MAM | DeviceManagementApps.ReadWrite.All |
-| &nbsp; &nbsp; 採用 | DeviceManagementServiceConfig.ReadWrite.All |
-| &nbsp; &nbsp; トラブルシューティング | DeviceManagementManagedDevices.ReadWrite.All |
+|委任 (職場または学校のアカウント)| _コンテキストによって異なります_ |
+| &nbsp;&nbsp;デバイスの管理 | DeviceManagementManagedDevices.ReadWrite.All |
+| &nbsp;&nbsp; MAM | DeviceManagementApps.ReadWrite.All |
+| &nbsp;&nbsp;契約時 | DeviceManagementServiceConfig.ReadWrite.All |
+| &nbsp;&nbsp;のトラブルシューティング | DeviceManagementManagedDevices.ReadWrite.All |
 |委任 (個人用 Microsoft アカウント)|サポートされていません。|
 |アプリケーション|サポートされていません。|
 
@@ -28,18 +28,18 @@ POST /users
 ## <a name="request-headers"></a>要求ヘッダー
 |ヘッダー|値|
 |:---|:---|
-|承認|ベアラー &lt;トークン&gt; が必須。|
-|承諾|アプリケーションまたは json|
+|Authorization|ベアラー &lt;トークン&gt; が必須。|
+|Accept|application/json|
 
 ## <a name="request-body"></a>要求本文
 要求本文で、user オブジェクトの JSON 表記を指定します。
 
 次の表に、user の作成時に必要なプロパティを示します。
 
-|プロパティ|タイプ|説明|
+|プロパティ|型|説明|
 |:---|:---|:---|
-|ID|文字列|ユーザーの一意識別子。|
-|**採用**|
+|id|String|ユーザーの一意識別子。|
+|**契約時**|
 |deviceEnrollmentLimit|Int32|ユーザーが登録を許可されているデバイスの最大数。 使用できる値は 5 または 1000 です。|
 
 要求本文のプロパティのサポートは、コンテキストによって異なります。
