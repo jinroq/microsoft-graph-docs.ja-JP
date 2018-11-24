@@ -1,0 +1,15 @@
+# <a name="clonableteamparts-enum-type"></a><span data-ttu-id="35b32-101">clonableTeamParts 列挙型</span><span class="sxs-lookup"><span data-stu-id="35b32-101">clonableTeamParts enum type</span></span>
+
+
+
+<span data-ttu-id="35b32-102">[チーム](../resources/team.md)のどの部分のクローンを作成する必要があるについて説明します。</span><span class="sxs-lookup"><span data-stu-id="35b32-102">Describes which part of a [team](../resources/team.md) should be cloned.</span></span> 
+
+## <a name="members"></a><span data-ttu-id="35b32-103">メンバー</span><span class="sxs-lookup"><span data-stu-id="35b32-103">Members</span></span>
+
+| <span data-ttu-id="35b32-104">メンバー</span><span class="sxs-lookup"><span data-stu-id="35b32-104">Member</span></span> | <span data-ttu-id="35b32-105">値</span><span class="sxs-lookup"><span data-stu-id="35b32-105">Value</span></span>| <span data-ttu-id="35b32-106">説明</span><span class="sxs-lookup"><span data-stu-id="35b32-106">Description</span></span> |
+|:---------------|:--------|:----------|
+|<span data-ttu-id="35b32-107">apps</span><span class="sxs-lookup"><span data-stu-id="35b32-107">apps</span></span>|<span data-ttu-id="35b32-108">1</span><span class="sxs-lookup"><span data-stu-id="35b32-108">1</span></span>|<span data-ttu-id="35b32-109">インストールされたアプリの一覧をコピーします。</span><span class="sxs-lookup"><span data-stu-id="35b32-109">Copy the list of installed apps.</span></span>|
+|<span data-ttu-id="35b32-110">タブ</span><span class="sxs-lookup"><span data-stu-id="35b32-110">tabs</span></span>|<span data-ttu-id="35b32-111">2</span><span class="sxs-lookup"><span data-stu-id="35b32-111">2</span></span>|<span data-ttu-id="35b32-112">チャネル内のタブにコピーします。</span><span class="sxs-lookup"><span data-stu-id="35b32-112">copies the tabs within channels.</span></span>|
+|<span data-ttu-id="35b32-113">settings</span><span class="sxs-lookup"><span data-stu-id="35b32-113">settings</span></span>|<span data-ttu-id="35b32-114">4</span><span class="sxs-lookup"><span data-stu-id="35b32-114">4</span></span>|<span data-ttu-id="35b32-115">キーのグループの設定と、チーム内のすべての設定をコピーします。</span><span class="sxs-lookup"><span data-stu-id="35b32-115">Copies all settings within the team, along with key group settings.</span></span>|
+|<span data-ttu-id="35b32-116">チャンネル</span><span class="sxs-lookup"><span data-stu-id="35b32-116">channels</span></span>|<span data-ttu-id="35b32-117">8</span><span class="sxs-lookup"><span data-stu-id="35b32-117">8</span></span>|<span data-ttu-id="35b32-118">チャネルの構造 (ただし、チャネル内のメッセージではない) をコピーします。</span><span class="sxs-lookup"><span data-stu-id="35b32-118">copies the channel structure (but not the messages in the channel).</span></span>|
+|<span data-ttu-id="35b32-119">メンバー</span><span class="sxs-lookup"><span data-stu-id="35b32-119">members</span></span>|<span data-ttu-id="35b32-120">16</span><span class="sxs-lookup"><span data-stu-id="35b32-120">16</span></span>|<span data-ttu-id="35b32-121">メンバーとチームの所有者にコピーします。</span><span class="sxs-lookup"><span data-stu-id="35b32-121">copies the members and owners of the team.</span></span>|

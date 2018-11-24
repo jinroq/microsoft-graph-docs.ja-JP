@@ -1,0 +1,15 @@
+# <a name="teamsasyncoperationstatus-enum-type"></a><span data-ttu-id="6f2af-101">teamsAsyncOperationStatus 列挙型</span><span class="sxs-lookup"><span data-stu-id="6f2af-101">teamsAsyncOperationStatus enum type</span></span>
+
+
+
+<span data-ttu-id="6f2af-102">の[teamsAsyncOperation](teamsasyncoperation.md)の現在の状態について説明します。</span><span class="sxs-lookup"><span data-stu-id="6f2af-102">Describes the current status of a [teamsAsyncOperation](teamsasyncoperation.md).</span></span>
+
+## <a name="members"></a><span data-ttu-id="6f2af-103">メンバー</span><span class="sxs-lookup"><span data-stu-id="6f2af-103">Members</span></span>
+
+| <span data-ttu-id="6f2af-104">メンバー</span><span class="sxs-lookup"><span data-stu-id="6f2af-104">Member</span></span> | <span data-ttu-id="6f2af-105">値</span><span class="sxs-lookup"><span data-stu-id="6f2af-105">Value</span></span>| <span data-ttu-id="6f2af-106">説明</span><span class="sxs-lookup"><span data-stu-id="6f2af-106">Description</span></span> |
+|:---------------|:--------|:----------|
+|<span data-ttu-id="6f2af-107">無効です</span><span class="sxs-lookup"><span data-stu-id="6f2af-107">invalid</span></span>|<span data-ttu-id="6f2af-108">0</span><span class="sxs-lookup"><span data-stu-id="6f2af-108">0</span></span>|<span data-ttu-id="6f2af-109">値が無効です。</span><span class="sxs-lookup"><span data-stu-id="6f2af-109">Invalid value.</span></span>|
+|<span data-ttu-id="6f2af-110">未開始</span><span class="sxs-lookup"><span data-stu-id="6f2af-110">notStarted</span></span>|<span data-ttu-id="6f2af-111">1</span><span class="sxs-lookup"><span data-stu-id="6f2af-111">1</span></span>|<span data-ttu-id="6f2af-112">操作は開始されていません。</span><span class="sxs-lookup"><span data-stu-id="6f2af-112">The operation has not started.</span></span>|
+|<span data-ttu-id="6f2af-113">inProgress</span><span class="sxs-lookup"><span data-stu-id="6f2af-113">inProgress</span></span>|<span data-ttu-id="6f2af-114">2</span><span class="sxs-lookup"><span data-stu-id="6f2af-114">2</span></span>|<span data-ttu-id="6f2af-115">操作が行われています。</span><span class="sxs-lookup"><span data-stu-id="6f2af-115">The operation is running.</span></span>|
+|<span data-ttu-id="6f2af-116">成功しました</span><span class="sxs-lookup"><span data-stu-id="6f2af-116">succeeded</span></span>|<span data-ttu-id="6f2af-117">3</span><span class="sxs-lookup"><span data-stu-id="6f2af-117">3</span></span>|<span data-ttu-id="6f2af-118">操作が正常に完了しました。</span><span class="sxs-lookup"><span data-stu-id="6f2af-118">The operation succeeded.</span></span>|
+|<span data-ttu-id="6f2af-119">失敗しました。</span><span class="sxs-lookup"><span data-stu-id="6f2af-119">failed</span></span>|<span data-ttu-id="6f2af-120">4</span><span class="sxs-lookup"><span data-stu-id="6f2af-120">4</span></span>|<span data-ttu-id="6f2af-121">処理に失敗しました。</span><span class="sxs-lookup"><span data-stu-id="6f2af-121">The operation failed.</span></span>|
