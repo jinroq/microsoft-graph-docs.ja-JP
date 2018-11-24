@@ -1,18 +1,18 @@
-# <a name="update-termsandconditions"></a><span data-ttu-id="b8c83-101">TermsAndConditions を更新します</span><span class="sxs-lookup"><span data-stu-id="b8c83-101">Update termsAndConditions</span></span>
+# <a name="update-termsandconditions"></a><span data-ttu-id="179ca-101">Update termsAndConditions</span><span class="sxs-lookup"><span data-stu-id="179ca-101">Update termsAndConditions</span></span>
 
-> <span data-ttu-id="b8c83-102">**注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。</span><span class="sxs-lookup"><span data-stu-id="b8c83-102">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
+> <span data-ttu-id="179ca-102">**注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。</span><span class="sxs-lookup"><span data-stu-id="179ca-102">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
 
-<span data-ttu-id="b8c83-103">[termsAndConditions](../resources/intune_companyterms_termsandconditions.md) オブジェクトのプロパティを更新します。</span><span class="sxs-lookup"><span data-stu-id="b8c83-103">Update the properties of a [termsAndConditions](../resources/intune_companyterms_termsandconditions.md) object.</span></span>
-## <a name="prerequisites"></a><span data-ttu-id="b8c83-104">前提条件</span><span class="sxs-lookup"><span data-stu-id="b8c83-104">Prerequisites</span></span>
-<span data-ttu-id="b8c83-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](../../../concepts/permissions_reference.md)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="b8c83-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).</span></span>
+<span data-ttu-id="179ca-103">[termsAndConditions](../resources/intune_companyterms_termsandconditions.md) オブジェクトのプロパティを更新します。</span><span class="sxs-lookup"><span data-stu-id="179ca-103">Update the properties of a [termsAndConditions](../resources/intune_companyterms_termsandconditions.md) object.</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="179ca-104">前提条件</span><span class="sxs-lookup"><span data-stu-id="179ca-104">Prerequisites</span></span>
+<span data-ttu-id="179ca-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](../../../concepts/permissions_reference.md)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="179ca-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).</span></span>
 
-|<span data-ttu-id="b8c83-107">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="b8c83-107">Permission type</span></span>|<span data-ttu-id="b8c83-108">アクセス許可 (特権の大きいものから小さいものへ)</span><span class="sxs-lookup"><span data-stu-id="b8c83-108">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="179ca-107">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="179ca-107">Permission type</span></span>|<span data-ttu-id="179ca-108">アクセス許可 (特権の大きいものから小さいものへ)</span><span class="sxs-lookup"><span data-stu-id="179ca-108">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="b8c83-109">委任 (職場または学校アカウント)</span><span class="sxs-lookup"><span data-stu-id="b8c83-109">Delegated (work or school account)</span></span>|<span data-ttu-id="b8c83-110">DeviceManagementServiceConfig.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="b8c83-110">DeviceManagementServiceConfig.ReadWrite.All</span></span>|
-|<span data-ttu-id="b8c83-111">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="b8c83-111">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="b8c83-112">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="b8c83-112">Not supported.</span></span>|
-|<span data-ttu-id="b8c83-113">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="b8c83-113">Application</span></span>|<span data-ttu-id="b8c83-114">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="b8c83-114">Not supported.</span></span>|
+|<span data-ttu-id="179ca-109">委任 (職場または学校アカウント)</span><span class="sxs-lookup"><span data-stu-id="179ca-109">Delegated (work or school account)</span></span>|<span data-ttu-id="179ca-110">DeviceManagementServiceConfig.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="179ca-110">DeviceManagementServiceConfig.ReadWrite.All</span></span>|
+|<span data-ttu-id="179ca-111">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="179ca-111">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="179ca-112">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="179ca-112">Not supported.</span></span>|
+|<span data-ttu-id="179ca-113">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="179ca-113">Application</span></span>|<span data-ttu-id="179ca-114">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="179ca-114">Not supported.</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="b8c83-115">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="b8c83-115">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="179ca-115">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="179ca-115">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -22,44 +22,44 @@ PATCH /deviceManagement/termsAndConditions/{termsAndConditionsId}
 PATCH /deviceManagement/termsAndConditions/{termsAndConditionsId}/acceptanceStatuses/{termsAndConditionsAcceptanceStatusId}/termsAndConditions
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="b8c83-116">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="b8c83-116">Request headers</span></span>
-|<span data-ttu-id="b8c83-117">ヘッダー</span><span class="sxs-lookup"><span data-stu-id="b8c83-117">Header</span></span>|<span data-ttu-id="b8c83-118">値</span><span class="sxs-lookup"><span data-stu-id="b8c83-118">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="179ca-116">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="179ca-116">Request headers</span></span>
+|<span data-ttu-id="179ca-117">ヘッダー</span><span class="sxs-lookup"><span data-stu-id="179ca-117">Header</span></span>|<span data-ttu-id="179ca-118">値</span><span class="sxs-lookup"><span data-stu-id="179ca-118">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="b8c83-119">承認</span><span class="sxs-lookup"><span data-stu-id="b8c83-119">Authorization</span></span>|<span data-ttu-id="b8c83-120">ベアラー &lt;トークン&gt; が必須。</span><span class="sxs-lookup"><span data-stu-id="b8c83-120">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="b8c83-121">承諾する</span><span class="sxs-lookup"><span data-stu-id="b8c83-121">Accept</span></span>|<span data-ttu-id="b8c83-122">アプリケーションまたは json</span><span class="sxs-lookup"><span data-stu-id="b8c83-122">application/json</span></span>|
+|<span data-ttu-id="179ca-119">Authorization</span><span class="sxs-lookup"><span data-stu-id="179ca-119">Authorization</span></span>|<span data-ttu-id="179ca-120">ベアラー &lt;トークン&gt; が必須。</span><span class="sxs-lookup"><span data-stu-id="179ca-120">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="179ca-121">Accept</span><span class="sxs-lookup"><span data-stu-id="179ca-121">Accept</span></span>|<span data-ttu-id="179ca-122">application/json</span><span class="sxs-lookup"><span data-stu-id="179ca-122">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="b8c83-123">要求本文</span><span class="sxs-lookup"><span data-stu-id="b8c83-123">Request body</span></span>
-<span data-ttu-id="b8c83-124">要求本文で、[termsAndConditions](../resources/intune_companyterms_termsandconditions.md) オブジェクトの JSON 表記を指定します。</span><span class="sxs-lookup"><span data-stu-id="b8c83-124">In the request body, supply a JSON representation for the [termsAndConditions](../resources/intune_companyterms_termsandconditions.md) object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="179ca-123">要求本文</span><span class="sxs-lookup"><span data-stu-id="179ca-123">Request body</span></span>
+<span data-ttu-id="179ca-124">要求本文で、[termsAndConditions](../resources/intune_companyterms_termsandconditions.md) オブジェクトの JSON 表記を指定します。</span><span class="sxs-lookup"><span data-stu-id="179ca-124">In the request body, supply a JSON representation for the [termsAndConditions](../resources/intune_companyterms_termsandconditions.md) object.</span></span>
 
-<span data-ttu-id="b8c83-125">次の表に、[termsAndConditions](../resources/intune_companyterms_termsandconditions.md) 作成時に必要なプロパティを示します。</span><span class="sxs-lookup"><span data-stu-id="b8c83-125">The following table shows the properties that are required when you create the [termsAndConditions](../resources/intune_companyterms_termsandconditions.md).</span></span>
+<span data-ttu-id="179ca-125">次の表に、[termsAndConditions](../resources/intune_companyterms_termsandconditions.md) 作成時に必要なプロパティを示します。</span><span class="sxs-lookup"><span data-stu-id="179ca-125">The following table shows the properties that are required when you create the [termsAndConditions](../resources/intune_companyterms_termsandconditions.md).</span></span>
 
-|<span data-ttu-id="b8c83-126">プロパティ</span><span class="sxs-lookup"><span data-stu-id="b8c83-126">Property</span></span>|<span data-ttu-id="b8c83-127">型</span><span class="sxs-lookup"><span data-stu-id="b8c83-127">Type</span></span>|<span data-ttu-id="b8c83-128">説明</span><span class="sxs-lookup"><span data-stu-id="b8c83-128">Description</span></span>|
+|<span data-ttu-id="179ca-126">プロパティ</span><span class="sxs-lookup"><span data-stu-id="179ca-126">Property</span></span>|<span data-ttu-id="179ca-127">型</span><span class="sxs-lookup"><span data-stu-id="179ca-127">Type</span></span>|<span data-ttu-id="179ca-128">説明</span><span class="sxs-lookup"><span data-stu-id="179ca-128">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="b8c83-129">ID</span><span class="sxs-lookup"><span data-stu-id="b8c83-129">id</span></span>|<span data-ttu-id="b8c83-130">文字列</span><span class="sxs-lookup"><span data-stu-id="b8c83-130">String</span></span>|<span data-ttu-id="b8c83-131">T&C ポリシーの一意識別子。</span><span class="sxs-lookup"><span data-stu-id="b8c83-131">Unique identifier of the T&C policy.</span></span>|
-|<span data-ttu-id="b8c83-132">createdDateTime</span><span class="sxs-lookup"><span data-stu-id="b8c83-132">createdDateTime</span></span>|<span data-ttu-id="b8c83-133">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="b8c83-133">DateTimeOffset</span></span>|<span data-ttu-id="b8c83-134">オブジェクトが作成された DateTime。</span><span class="sxs-lookup"><span data-stu-id="b8c83-134">DateTime the object was created.</span></span>|
-|<span data-ttu-id="b8c83-135">lastModifiedDateTime</span><span class="sxs-lookup"><span data-stu-id="b8c83-135">lastModifiedDateTime</span></span>|<span data-ttu-id="b8c83-136">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="b8c83-136">DateTimeOffset</span></span>|<span data-ttu-id="b8c83-137">オブジェクトが最後に変更された DateTime。</span><span class="sxs-lookup"><span data-stu-id="b8c83-137">DateTime the object was last modified.</span></span>|
-|<span data-ttu-id="b8c83-138">displayName</span><span class="sxs-lookup"><span data-stu-id="b8c83-138">displayName</span></span>|<span data-ttu-id="b8c83-139">文字列</span><span class="sxs-lookup"><span data-stu-id="b8c83-139">String</span></span>|<span data-ttu-id="b8c83-140">T&C ポリシー用に管理者が提供した名前。</span><span class="sxs-lookup"><span data-stu-id="b8c83-140">Administrator-supplied name for the T&C policy.</span></span> |
-|<span data-ttu-id="b8c83-141">説明</span><span class="sxs-lookup"><span data-stu-id="b8c83-141">description</span></span>|<span data-ttu-id="b8c83-142">文字列</span><span class="sxs-lookup"><span data-stu-id="b8c83-142">String</span></span>|<span data-ttu-id="b8c83-143">管理者が提供した T&C ポリシーの説明。</span><span class="sxs-lookup"><span data-stu-id="b8c83-143">Administrator-supplied description of the T&C policy.</span></span>|
-|<span data-ttu-id="b8c83-144">タイトル</span><span class="sxs-lookup"><span data-stu-id="b8c83-144">title</span></span>|<span data-ttu-id="b8c83-145">文字列</span><span class="sxs-lookup"><span data-stu-id="b8c83-145">String</span></span>|<span data-ttu-id="b8c83-146">管理者が提供した契約条件のタイトル。</span><span class="sxs-lookup"><span data-stu-id="b8c83-146">Administrator-supplied title of the terms and conditions.</span></span> <span data-ttu-id="b8c83-147">ユーザーが T&C ポリシーを承諾する際のプロンプトに表示されます。</span><span class="sxs-lookup"><span data-stu-id="b8c83-147">This is shown to the user on prompts to accept the T&C policy.</span></span>|
-|<span data-ttu-id="b8c83-148">bodyText</span><span class="sxs-lookup"><span data-stu-id="b8c83-148">bodyText</span></span>|<span data-ttu-id="b8c83-149">文字列</span><span class="sxs-lookup"><span data-stu-id="b8c83-149">String</span></span>|<span data-ttu-id="b8c83-150">管理者が提供する契約条件の本文で、通常は条件そのものです。</span><span class="sxs-lookup"><span data-stu-id="b8c83-150">Administrator-supplied body text of the terms and conditions, typically the terms themselves.</span></span> <span data-ttu-id="b8c83-151">ユーザーが T&C ポリシーを承諾する際のプロンプトに表示されます。</span><span class="sxs-lookup"><span data-stu-id="b8c83-151">This is shown to the user on prompts to accept the T&C policy.</span></span>|
-|<span data-ttu-id="b8c83-152">acceptanceStatement</span><span class="sxs-lookup"><span data-stu-id="b8c83-152">acceptanceStatement</span></span>|<span data-ttu-id="b8c83-153">文字列</span><span class="sxs-lookup"><span data-stu-id="b8c83-153">String</span></span>|<span data-ttu-id="b8c83-154">使用条件に関する、管理者指定の説明内容です。通常は、T&C ポリシーに定められた使用条件を受け入れることの意味を記載します。</span><span class="sxs-lookup"><span data-stu-id="b8c83-154">Administrator-supplied explanation of the terms and conditions, typically describing what it means to accept the terms and conditions set out in the T&C policy.</span></span> <span data-ttu-id="b8c83-155">ユーザーが T&C ポリシーを承諾する際のプロンプトに表示されます。</span><span class="sxs-lookup"><span data-stu-id="b8c83-155">This is shown to the user on prompts to accept the T&C policy.</span></span>|
-|<span data-ttu-id="b8c83-156">バージョン</span><span class="sxs-lookup"><span data-stu-id="b8c83-156">version</span></span>|<span data-ttu-id="b8c83-157">Int32</span><span class="sxs-lookup"><span data-stu-id="b8c83-157">Int32</span></span>|<span data-ttu-id="b8c83-158">条件の現行バージョンを示す整数。</span><span class="sxs-lookup"><span data-stu-id="b8c83-158">Integer indicating the current version of the terms.</span></span> <span data-ttu-id="b8c83-159">管理者が条件を変更し、修正された T&C ポリシーをユーザーが再承諾するように求める場合に増分されます。</span><span class="sxs-lookup"><span data-stu-id="b8c83-159">Incremented when an administrator makes a change to the terms and wishes to require users to re-accept the modified T&C policy.</span></span>|
+|<span data-ttu-id="179ca-129">id</span><span class="sxs-lookup"><span data-stu-id="179ca-129">id</span></span>|<span data-ttu-id="179ca-130">String</span><span class="sxs-lookup"><span data-stu-id="179ca-130">String</span></span>|<span data-ttu-id="179ca-131">T&C ポリシーの一意識別子。</span><span class="sxs-lookup"><span data-stu-id="179ca-131">Unique identifier of the T&C policy.</span></span>|
+|<span data-ttu-id="179ca-132">createdDateTime</span><span class="sxs-lookup"><span data-stu-id="179ca-132">createdDateTime</span></span>|<span data-ttu-id="179ca-133">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="179ca-133">DateTimeOffset</span></span>|<span data-ttu-id="179ca-134">オブジェクトが作成された DateTime。</span><span class="sxs-lookup"><span data-stu-id="179ca-134">DateTime the object was created.</span></span>|
+|<span data-ttu-id="179ca-135">lastModifiedDateTime</span><span class="sxs-lookup"><span data-stu-id="179ca-135">lastModifiedDateTime</span></span>|<span data-ttu-id="179ca-136">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="179ca-136">DateTimeOffset</span></span>|<span data-ttu-id="179ca-137">オブジェクトが最後に変更された DateTime。</span><span class="sxs-lookup"><span data-stu-id="179ca-137">DateTime the object was last modified.</span></span>|
+|<span data-ttu-id="179ca-138">displayName</span><span class="sxs-lookup"><span data-stu-id="179ca-138">displayName</span></span>|<span data-ttu-id="179ca-139">String</span><span class="sxs-lookup"><span data-stu-id="179ca-139">String</span></span>|<span data-ttu-id="179ca-140">T&C ポリシー用に管理者が提供した名前。</span><span class="sxs-lookup"><span data-stu-id="179ca-140">Administrator-supplied name for the T&C policy.</span></span> |
+|<span data-ttu-id="179ca-141">description</span><span class="sxs-lookup"><span data-stu-id="179ca-141">description</span></span>|<span data-ttu-id="179ca-142">String</span><span class="sxs-lookup"><span data-stu-id="179ca-142">String</span></span>|<span data-ttu-id="179ca-143">管理者が提供した T&C ポリシーの説明。</span><span class="sxs-lookup"><span data-stu-id="179ca-143">Administrator-supplied description of the T&C policy.</span></span>|
+|<span data-ttu-id="179ca-144">title</span><span class="sxs-lookup"><span data-stu-id="179ca-144">title</span></span>|<span data-ttu-id="179ca-145">String</span><span class="sxs-lookup"><span data-stu-id="179ca-145">String</span></span>|<span data-ttu-id="179ca-146">管理者が提供した契約条件のタイトル。</span><span class="sxs-lookup"><span data-stu-id="179ca-146">Administrator-supplied title of the terms and conditions.</span></span> <span data-ttu-id="179ca-147">ユーザーが T&C ポリシーを承諾する際のプロンプトに表示されます。</span><span class="sxs-lookup"><span data-stu-id="179ca-147">This is shown to the user on prompts to accept the T&C policy.</span></span>|
+|<span data-ttu-id="179ca-148">bodyText</span><span class="sxs-lookup"><span data-stu-id="179ca-148">bodyText</span></span>|<span data-ttu-id="179ca-149">String</span><span class="sxs-lookup"><span data-stu-id="179ca-149">String</span></span>|<span data-ttu-id="179ca-150">管理者が提供する契約条件の本文で、通常は条件そのものです。</span><span class="sxs-lookup"><span data-stu-id="179ca-150">Administrator-supplied body text of the terms and conditions, typically the terms themselves.</span></span> <span data-ttu-id="179ca-151">ユーザーが T&C ポリシーを承諾する際のプロンプトに表示されます。</span><span class="sxs-lookup"><span data-stu-id="179ca-151">This is shown to the user on prompts to accept the T&C policy.</span></span>|
+|<span data-ttu-id="179ca-152">acceptanceStatement</span><span class="sxs-lookup"><span data-stu-id="179ca-152">acceptanceStatement</span></span>|<span data-ttu-id="179ca-153">String</span><span class="sxs-lookup"><span data-stu-id="179ca-153">String</span></span>|<span data-ttu-id="179ca-154">使用条件に関する、管理者指定の説明内容です。通常は、T&C ポリシーに定められた使用条件を受け入れることの意味を記載します。</span><span class="sxs-lookup"><span data-stu-id="179ca-154">Administrator-supplied explanation of the terms and conditions, typically describing what it means to accept the terms and conditions set out in the T&C policy.</span></span> <span data-ttu-id="179ca-155">ユーザーが T&C ポリシーを承諾する際のプロンプトに表示されます。</span><span class="sxs-lookup"><span data-stu-id="179ca-155">This is shown to the user on prompts to accept the T&C policy.</span></span>|
+|<span data-ttu-id="179ca-156">version</span><span class="sxs-lookup"><span data-stu-id="179ca-156">version</span></span>|<span data-ttu-id="179ca-157">Int32</span><span class="sxs-lookup"><span data-stu-id="179ca-157">Int32</span></span>|<span data-ttu-id="179ca-158">条件の現行バージョンを示す整数。</span><span class="sxs-lookup"><span data-stu-id="179ca-158">Integer indicating the current version of the terms.</span></span> <span data-ttu-id="179ca-159">管理者が条件を変更し、修正された T&C ポリシーをユーザーが再承諾するように求める場合に増分されます。</span><span class="sxs-lookup"><span data-stu-id="179ca-159">Incremented when an administrator makes a change to the terms and wishes to require users to re-accept the modified T&C policy.</span></span>|
 
 
 
-## <a name="response"></a><span data-ttu-id="b8c83-160">応答</span><span class="sxs-lookup"><span data-stu-id="b8c83-160">Response</span></span>
-<span data-ttu-id="b8c83-161">成功した場合、このメソッドは `200 OK` 応答コードと、更新された [termsAndConditions](../resources/intune_companyterms_termsandconditions.md) オブジェクトを応答本文で返します。</span><span class="sxs-lookup"><span data-stu-id="b8c83-161">If successful, this method returns a `200 OK` response code and an updated [termsAndConditions](../resources/intune_companyterms_termsandconditions.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="179ca-160">応答</span><span class="sxs-lookup"><span data-stu-id="179ca-160">Response</span></span>
+<span data-ttu-id="179ca-161">成功した場合、このメソッドは `200 OK` 応答コードと、更新された [termsAndConditions](../resources/intune_companyterms_termsandconditions.md) オブジェクトを応答本文で返します。</span><span class="sxs-lookup"><span data-stu-id="179ca-161">If successful, this method returns a `200 OK` response code and an updated [termsAndConditions](../resources/intune_companyterms_termsandconditions.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="b8c83-162">例</span><span class="sxs-lookup"><span data-stu-id="b8c83-162">Example</span></span>
-### <a name="request"></a><span data-ttu-id="b8c83-163">要求</span><span class="sxs-lookup"><span data-stu-id="b8c83-163">Request</span></span>
-<span data-ttu-id="b8c83-164">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="b8c83-164">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="179ca-162">例</span><span class="sxs-lookup"><span data-stu-id="179ca-162">Example</span></span>
+### <a name="request"></a><span data-ttu-id="179ca-163">要求</span><span class="sxs-lookup"><span data-stu-id="179ca-163">Request</span></span>
+<span data-ttu-id="179ca-164">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="179ca-164">Here is an example of the request.</span></span>
 ``` http
 PATCH https://graph.microsoft.com/v1.0/deviceManagement/termsAndConditions/{termsAndConditionsId}
 Content-type: application/json
-Content-length: 280
+Content-length: 273
 
 {
-  "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
+  "@odata.type": "#microsoft.graph.termsAndConditions",
   "displayName": "Display Name value",
   "description": "Description value",
   "title": "Title value",
@@ -69,8 +69,8 @@ Content-length: 280
 }
 ```
 
-### <a name="response"></a><span data-ttu-id="b8c83-165">応答</span><span class="sxs-lookup"><span data-stu-id="b8c83-165">Response</span></span>
-<span data-ttu-id="b8c83-p106">以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。</span><span class="sxs-lookup"><span data-stu-id="b8c83-p106">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="179ca-165">応答</span><span class="sxs-lookup"><span data-stu-id="179ca-165">Response</span></span>
+<span data-ttu-id="179ca-p106">以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。</span><span class="sxs-lookup"><span data-stu-id="179ca-p106">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
@@ -89,11 +89,6 @@ Content-Length: 445
   "version": 7
 }
 ```
-
-
-
-
-
 
 
 

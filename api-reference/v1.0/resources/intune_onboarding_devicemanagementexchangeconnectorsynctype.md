@@ -1,18 +1,13 @@
-# <a name="devicemanagementexchangeconnectorsynctype-enum-type"></a><span data-ttu-id="b3633-101">deviceManagementExchangeConnectorSyncType 列挙型</span><span class="sxs-lookup"><span data-stu-id="b3633-101">deviceManagementExchangeConnectorSyncType enum type</span></span>
+# <a name="devicemanagementexchangeconnectorsynctype-enum-type"></a><span data-ttu-id="6dc61-101">deviceManagementExchangeConnectorSyncType 列挙型</span><span class="sxs-lookup"><span data-stu-id="6dc61-101">deviceManagementExchangeConnectorSyncType enum type</span></span>
 
-> <span data-ttu-id="b3633-102">**注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。</span><span class="sxs-lookup"><span data-stu-id="b3633-102">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
+> <span data-ttu-id="6dc61-102">**注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。</span><span class="sxs-lookup"><span data-stu-id="6dc61-102">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
 
-<span data-ttu-id="b3633-103">要求されている Exchange Connector 同期の種類。</span><span class="sxs-lookup"><span data-stu-id="b3633-103">The type of Exchange Connector Configured.</span></span>
-## <a name="members"></a><span data-ttu-id="b3633-104">メンバー</span><span class="sxs-lookup"><span data-stu-id="b3633-104">Members</span></span>
-|<span data-ttu-id="b3633-105">メンバー</span><span class="sxs-lookup"><span data-stu-id="b3633-105">Member</span></span>|<span data-ttu-id="b3633-106">値</span><span class="sxs-lookup"><span data-stu-id="b3633-106">Value</span></span>|<span data-ttu-id="b3633-107">説明</span><span class="sxs-lookup"><span data-stu-id="b3633-107">Description</span></span>|
+<span data-ttu-id="6dc61-103">Exchange コネクタの同期要求の種類。</span><span class="sxs-lookup"><span data-stu-id="6dc61-103">The type of Exchange Connector sync requested.</span></span>
+## <a name="members"></a><span data-ttu-id="6dc61-104">メンバー</span><span class="sxs-lookup"><span data-stu-id="6dc61-104">Members</span></span>
+|<span data-ttu-id="6dc61-105">メンバー</span><span class="sxs-lookup"><span data-stu-id="6dc61-105">Member</span></span>|<span data-ttu-id="6dc61-106">値</span><span class="sxs-lookup"><span data-stu-id="6dc61-106">Value</span></span>|<span data-ttu-id="6dc61-107">説明</span><span class="sxs-lookup"><span data-stu-id="6dc61-107">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="b3633-108">fullSync</span><span class="sxs-lookup"><span data-stu-id="b3633-108">fullSync</span></span>|<span data-ttu-id="b3633-109">0</span><span class="sxs-lookup"><span data-stu-id="b3633-109">0%</span></span>|<span data-ttu-id="b3633-110">Exchange のすべてのデバイスを検出します。</span><span class="sxs-lookup"><span data-stu-id="b3633-110">Discover all the device in Exchange.</span></span>|
-|<span data-ttu-id="b3633-111">deltaSync</span><span class="sxs-lookup"><span data-stu-id="b3633-111">deltaSync</span></span>|<span data-ttu-id="b3633-112">1</span><span class="sxs-lookup"><span data-stu-id="b3633-112">-1</span></span>|<span data-ttu-id="b3633-113">差分同期ウィンドウ中に更新された Exchange 内のデバイスのみを検出します。</span><span class="sxs-lookup"><span data-stu-id="b3633-113">Discover only the device in Exchange which have updated during the delta sync window.</span></span>|
-
-
-
-
-
+|<span data-ttu-id="6dc61-108">fullSync</span><span class="sxs-lookup"><span data-stu-id="6dc61-108">fullSync</span></span>|<span data-ttu-id="6dc61-109">0</span><span class="sxs-lookup"><span data-stu-id="6dc61-109">0</span></span>|<span data-ttu-id="6dc61-110">Exchange のすべてのデバイスを検出します。</span><span class="sxs-lookup"><span data-stu-id="6dc61-110">Discover all the device in Exchange.</span></span>|
+|<span data-ttu-id="6dc61-111">deltaSync</span><span class="sxs-lookup"><span data-stu-id="6dc61-111">deltaSync</span></span>|<span data-ttu-id="6dc61-112">1</span><span class="sxs-lookup"><span data-stu-id="6dc61-112">1</span></span>|<span data-ttu-id="6dc61-113">デルタ同期ウィンドウの中に更新する Exchange のデバイスのみを検出します。</span><span class="sxs-lookup"><span data-stu-id="6dc61-113">Discover only the device in Exchange which have updated during the delta sync window.</span></span>|
 
 
 
