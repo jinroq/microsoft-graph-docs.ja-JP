@@ -1,22 +1,21 @@
-# <a name="list-educationschools"></a><span data-ttu-id="c7ae7-101">educationSchools をリストする</span><span class="sxs-lookup"><span data-stu-id="c7ae7-101">List educationSchools</span></span>
+# <a name="list-educationschools"></a><span data-ttu-id="a3864-101">educationSchools をリストする</span><span class="sxs-lookup"><span data-stu-id="a3864-101">List educationSchools</span></span>
 
-<span data-ttu-id="c7ae7-102">すべての学校オブジェクトのリストを取得します。</span><span class="sxs-lookup"><span data-stu-id="c7ae7-102">Retrieve a list of chartpoints objects.</span></span>
+<span data-ttu-id="a3864-102">すべての学校オブジェクトのリストを取得します。</span><span class="sxs-lookup"><span data-stu-id="a3864-102">Retrieve a list of all school objects.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="c7ae7-103">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="c7ae7-103">Permissions</span></span>
-<span data-ttu-id="c7ae7-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](../../../concepts/permissions_reference.md)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="c7ae7-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).</span></span>
+## <a name="permissions"></a><span data-ttu-id="a3864-103">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="a3864-103">Permissions</span></span>
+<span data-ttu-id="a3864-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](../../../concepts/permissions_reference.md)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="a3864-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).</span></span>
 
-|<span data-ttu-id="c7ae7-106">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="c7ae7-106">Permission type</span></span>      | <span data-ttu-id="c7ae7-107">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="c7ae7-107">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="a3864-106">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="a3864-106">Permission type</span></span>      | <span data-ttu-id="a3864-107">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="a3864-107">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="c7ae7-108">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="c7ae7-108">Delegated (work or school account)</span></span> |  <span data-ttu-id="c7ae7-109">EduRoster.ReadBasic</span><span class="sxs-lookup"><span data-stu-id="c7ae7-109">EduRoster.ReadBasic</span></span>  |
-|<span data-ttu-id="c7ae7-110">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="c7ae7-110">Delegated (personal Microsoft account)</span></span> |  <span data-ttu-id="c7ae7-111">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="c7ae7-111">Not supported.</span></span>  |
-|<span data-ttu-id="c7ae7-112">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="c7ae7-112">Application</span></span> | <span data-ttu-id="c7ae7-113">EduRoster.Read.All、EduRoster.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="c7ae7-113">EduRoster.Read.All, EduRoster.ReadWrite.All</span></span> | 
+|<span data-ttu-id="a3864-108">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="a3864-108">Delegated (work or school account)</span></span> |  <span data-ttu-id="a3864-109">EduRoster.ReadBasic</span><span class="sxs-lookup"><span data-stu-id="a3864-109">EduRoster.ReadBasic</span></span>  |
+|<span data-ttu-id="a3864-110">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="a3864-110">Delegated (personal Microsoft account)</span></span> |  <span data-ttu-id="a3864-111">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="a3864-111">Not supported.</span></span>  |
+|<span data-ttu-id="a3864-112">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="a3864-112">Application</span></span> | <span data-ttu-id="a3864-113">EduRoster.Read.All、EduRoster.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="a3864-113">EduRoster.Read.All, EduRoster.ReadWrite.All</span></span> | 
 
-## <a name="http-request"></a><span data-ttu-id="c7ae7-114">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="c7ae7-114">HTTP request</span></span>
-<!-- { "blockType": "ignored" } -->
-<span data-ttu-id="c7ae7-115">\`\`\`http GET /education/schools</span><span class="sxs-lookup"><span data-stu-id="c7ae7-115">\`\`\`http GET /education/schools</span></span>
+## <a name="http-request"></a><span data-ttu-id="a3864-114">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="a3864-114">HTTP request</span></span>
+<span data-ttu-id="a3864-115"><!-- { "blockType": "ignored" } -->'' http GET/教育/学校</span><span class="sxs-lookup"><span data-stu-id="a3864-115"><!-- { "blockType": "ignored" } --> \`\`\`http GET /education/schools</span></span>
 ```
 ## Optional query parameters
-This method supports the [OData Query Parameters](http://graph.microsoft.io/docs/overview/query_parameters) to help customize the response.
+This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.
 
 ## Request headers
 | Header       | Value |
@@ -37,10 +36,10 @@ The following is an example of the request.
 ```http
 GET https://graph.microsoft.com/v1.0/education/schools
 ```
-##### <a name="response"></a><span data-ttu-id="c7ae7-116">応答</span><span class="sxs-lookup"><span data-stu-id="c7ae7-116">Response</span></span>
-<span data-ttu-id="c7ae7-117">応答の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="c7ae7-117">The following is an example of the response.</span></span> 
+##### <a name="response"></a><span data-ttu-id="a3864-116">応答</span><span class="sxs-lookup"><span data-stu-id="a3864-116">Response</span></span>
+<span data-ttu-id="a3864-117">応答の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="a3864-117">The following is an example of the response.</span></span> 
 
-><span data-ttu-id="c7ae7-p102">**注:** 読みやすくするために、ここに示す応答オブジェクトは短くされている場合があります。実際の呼び出しからは、すべてのプロパティが返されます。</span><span class="sxs-lookup"><span data-stu-id="c7ae7-p102">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+><span data-ttu-id="a3864-p102">**注:** 読みやすくするために、ここに示す応答オブジェクトは短くされている場合があります。実際の呼び出しからは、すべてのプロパティが返されます。</span><span class="sxs-lookup"><span data-stu-id="a3864-p102">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",
