@@ -24,8 +24,8 @@ POST /deviceAppManagement/managedAppRegistrations/{managedAppRegistrationId}/ope
 ## <a name="request-headers"></a>要求ヘッダー
 |ヘッダー|値|
 |:---|:---|
-|承認|ベアラー &lt;トークン&gt; が必須。|
-|受け入れる|アプリケーションまたは json|
+|Authorization|ベアラー &lt;トークン&gt; が必要です。|
+|Accept|application/json|
 
 ## <a name="request-body"></a>要求本文
 要求本文で、managedAppOperation オブジェクトの JSON 表記を指定します。
@@ -34,11 +34,11 @@ POST /deviceAppManagement/managedAppRegistrations/{managedAppRegistrationId}/ope
 
 |プロパティ|型|説明|
 |:---|:---|:---|
-|displayName|文字列|操作名。|
+|displayName|String|操作名。|
 |lastModifiedDateTime|DateTimeOffset|アプリ操作が変更された最終時刻。|
-|状態|文字列|操作の現在の状態。|
-|ID|文字列|エンティティのキー。|
-|バージョン|文字列|エンティティのバージョン。|
+|state|String|操作の現在の状態。|
+|id|String|エンティティのキー。|
+|version|String|エンティティのバージョン。|
 
 
 
@@ -51,12 +51,11 @@ POST /deviceAppManagement/managedAppRegistrations/{managedAppRegistrationId}/ope
 ``` http
 POST https://graph.microsoft.com/v1.0/deviceAppManagement/managedAppRegistrations/{managedAppRegistrationId}/operations
 Content-type: application/json
-Content-length: 223
+Content-length: 159
 
 {
   "@odata.type": "#microsoft.graph.managedAppOperation",
   "displayName": "Display Name value",
-  "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
   "state": "State value",
   "version": "Version value"
 }
@@ -78,11 +77,6 @@ Content-Length: 272
   "version": "Version value"
 }
 ```
-
-
-
-
-
 
 
 

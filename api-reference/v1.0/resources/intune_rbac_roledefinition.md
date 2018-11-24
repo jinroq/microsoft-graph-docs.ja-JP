@@ -7,19 +7,19 @@
 |メソッド|戻り値の型|説明|
 |:---|:---|:---|
 |[List roleDefinition](../api/intune_rbac_roledefinition_list.md)|[roleDefinition](../resources/intune_rbac_roledefinition.md) コレクション|[roleDefinition](../resources/intune_rbac_roledefinition.md) オブジェクトのプロパティとリレーションシップをリストします。|
-|[roleDefinition の取得](../api/intune_rbac_roledefinition_get.md)|[roleDefinition](../resources/intune_rbac_roledefinition.md)|[roleDefinition](../resources/intune_rbac_roledefinition.md) オブジェクトのプロパティとリレーションシップを読み取ります。|
-|[roleDefinition の作成](../api/intune_rbac_roledefinition_create.md)|[roleDefinition](../resources/intune_rbac_roledefinition.md)|新しい [roleDefinition](../resources/intune_rbac_roledefinition.md) オブジェクトを作成します。|
-|[roleDefinition の削除](../api/intune_rbac_roledefinition_delete.md)|なし|[roleDefinition](../resources/intune_rbac_roledefinition.md) を削除します。|
-|[roleDefinition の更新](../api/intune_rbac_roledefinition_update.md)|[roleDefinition](../resources/intune_rbac_roledefinition.md)|[roleDefinition](../resources/intune_rbac_roledefinition.md) オブジェクトのプロパティを更新します。|
+|[Get roleDefinition](../api/intune_rbac_roledefinition_get.md)|[roleDefinition](../resources/intune_rbac_roledefinition.md)|[roleDefinition](../resources/intune_rbac_roledefinition.md) オブジェクトのプロパティとリレーションシップを読み取ります。|
+|[Create roleDefinition](../api/intune_rbac_roledefinition_create.md)|[roleDefinition](../resources/intune_rbac_roledefinition.md)|新しい [roleDefinition](../resources/intune_rbac_roledefinition.md) オブジェクトを作成します。|
+|[Delete roleDefinition](../api/intune_rbac_roledefinition_delete.md)|なし|[roleDefinition](../resources/intune_rbac_roledefinition.md) を削除します。|
+|[Update roleDefinition](../api/intune_rbac_roledefinition_update.md)|[roleDefinition](../resources/intune_rbac_roledefinition.md)|[roleDefinition](../resources/intune_rbac_roledefinition.md) オブジェクトのプロパティを更新します。|
 
 ## <a name="properties"></a>プロパティ
-|プロパティ|タイプ|説明|
+|プロパティ|型|説明|
 |:---|:---|:---|
-|ID|文字列|エンティティのキー。 これは読み取り専用で、自動生成されます。|
-|displayName|文字列|ロールの定義の表示名。|
-|説明|文字列|ロールの定義の説明。|
+|id|String|エンティティのキー。 これは読み取り専用で、自動生成されます。|
+|displayName|String|ロールの定義の表示名。|
+|description|String|ロールの定義の説明。|
 |rolePermissions|[rolePermission](../resources/intune_rbac_rolepermission.md) コレクション|このロールに実行が許可されている、ロールのアクセス許可のリスト。 これらは、rolePermission の一部として定義されている actionName と一致する必要があります。|
-|isBuiltIn|ブール値|ロールの種類。 組み込みの場合は True に設定し、カスタム ロールの定義の場合は False に設定します。|
+|isBuiltIn|Boolean|ロールの種類。 組み込みの場合は True に設定し、カスタム ロールの定義の場合は False に設定します。|
 
 ## <a name="relationships"></a>リレーションシップ
 |リレーションシップ|型|説明|
@@ -28,12 +28,12 @@
 
 ## <a name="json-representation"></a>JSON 表記
 以下は、リソースの JSON 表記です。
-<!--{
+<!-- {
   "blockType": "resource",
-  "baseType": "microsoft.graph.entity",
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.roleDefinition"
-}-->
+}
+-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.roleDefinition",
@@ -59,11 +59,6 @@
   "isBuiltIn": true
 }
 ```
-
-
-
-
-
 
 
 

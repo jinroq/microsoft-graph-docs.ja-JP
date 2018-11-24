@@ -2,7 +2,7 @@
 
 サブスクリプションを更新するには、サブスクリプションの有効期限を延長します。
 
-サブスクリプションは、リソースの種類によって異なる期間後に期限が切れます。 通知の欠落を回避するには、アプリケーションは、その有効期限前にサブスクリプションを更新する必要があります。 各リソースの種類のサブスクリプションの最大長については [サブスクリプション](../resources/subscription.md) を参照してください。
+サブスクリプションの有効期限後、時間の長さをリソースの種類によって異なります。 通知の欠落を回避するには、するためにアプリケーションの有効期限前に、サブスクリプションを更新する必要があります。 各リソースの種類のサブスクリプションの最大長の[サブスクリプション](../resources/subscription.md)を参照してください。
 
 ## <a name="permissions"></a>アクセス許可
 
@@ -14,10 +14,11 @@
 | スレッド               | Group.Read.All      |
 | イベント                      | Calendars.Read      |
 | メッセージ                    | Mail.Read           |
-| グループ                      | Group.Read.All      |
-| ユーザー                       | User.Read.All       |
+| Groups                      | Group.Read.All      |
+| Users                       | User.Read.All       |
 | ドライブ (ユーザーの OneDrive)    | Files.ReadWrite     |
-| ドライブ (SharePoint の共有コンテンツとドライブ) | Files.ReadWrite.All |
+| ドライブ (共有、SharePoint コンテンツおよびドライブ) | Files.ReadWrite.All |
+|セキュリティの警告| SecurityEvents.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 要求
 
@@ -31,7 +32,7 @@ PATCH /subscriptions/{id}
 
 | 名前       | 型 | 説明|
 |:-----------|:------|:----------|
-| 承認  | 文字列  | ベアラー {トークン}。必須。 |
+| Authorization  | string  | ベアラー {トークン}。必須。 |
 
 ## <a name="response"></a>応答
 

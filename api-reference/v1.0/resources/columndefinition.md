@@ -3,12 +3,12 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/11/2017
 title: ColumnDefinition
-ms.openlocfilehash: 2fd6c08e1cfc28a77019d174763b9d698519b6a2
-ms.sourcegitcommit: 9e4dc7745eb1bbbe595afd8c7f3db4c19c6bb4ac
-ms.translationtype: HT
+ms.openlocfilehash: a9c715983d83a448175c2c9d4110a92ff71edbbe
+ms.sourcegitcommit: ebac77d2ca32438e552831de0258fe5e86fa225a
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "23271316"
+ms.lasthandoff: 11/17/2018
+ms.locfileid: "26571666"
 ---
 # <a name="columndefinition-resource"></a>ColumnDefinition リソース
 
@@ -53,43 +53,43 @@ ms.locfileid: "23271316"
 
 **columnDefinition** リソースには以下のプロパティがあります。
 
-| プロパティ名           | 型    | 説明
+| プロパティ名           | 種類    | 説明
 |:------------------------|:--------|:-----------------------------------------
-| **columnGroup**         | 文字列  | サイト列の場合、この列が属するグループの名前。 関連する列を整理するのに役立ちます。
-| **説明**         | 文字列  | 列に関するユーザー向けの説明。
-| **displayName**         | 文字列  | 列を示すユーザー向けの名前。
-| **enforceUniqueValues** | ブール値 | True の場合、この列で 2 つのリスト アイテムの値を同じにすることはできません。
-| **隠し**              | ブール値 | この列がユーザー インターフェイスに表示されるかどうかを指定します。
-| **ID**                  | 文字列  | 列の一意識別子。
-| **インデックス済**             | ブール値 | 列の値を、並べ替えと検索に使用できるかどうかを指定します。
-| **名前**                | 文字列  | [listItem][] の [fields][] に表示される、列を示す API 向けの名前。 ユーザー向けの名前については **displayName** をご覧ください。
-| **readOnly**            | ブール値    | 列の値を変更できるかどうかを指定します。
-| **必須です**            | ブール値 | 列の値が省略不可であるかどうかを指定します。
+| **columnGroup**         | string  | サイト列の場合、この列が属するグループの名前。 関連する列を整理するのに役立ちます。
+| **description**         | string  | 列に関するユーザー向けの説明。
+| **displayName**         | string  | 列を示すユーザー向けの名前。
+| **enforceUniqueValues** | boolean | True の場合、この列で 2 つのリスト アイテムの値を同じにすることはできません。
+| **hidden**              | boolean | この列がユーザー インターフェイスに表示されるかどうかを指定します。
+| **id**                  | string  | 列の一意識別子。
+| **indexed**             | boolean | 列の値を、並べ替えと検索に使用できるかどうかを指定します。
+| **name**                | string  | [listItem][] の [fields][] に表示される、列を示す API 向けの名前。 ユーザー向けの名前については **displayName** をご覧ください。
+| **readOnly**            | bool    | 列の値を変更できるかどうかを指定します。
+| **required**            | boolean | 列の値が省略不可であるかどうかを指定します。
 
 列には、さまざまな種類のデータを保持できます。
 次のプロパティは、列に保持されるデータの種類と、そのデータに関する追加の設定を示します。
 これらのプロパティは相互に排他的で、各列でいずれか 1 つだけを指定できます。
 
-| プロパティ名     | 型                    | 説明
+| プロパティ名     | 種類                    | 説明
 |:------------------|:------------------------|:-------------------------------
-| **ブール値**       | [booleanColumn][]       | この列にはブール値が格納されます。
-| **計算済み**    | [calculatedColumn][]    | この列のデータは、他の列に基づいて計算されます。
-| **選択**        | [choiceColumn][]        | この列には、選択肢リストからのデータが格納されます。
-| **通貨**      | [currencyColumn][]      | この列には通貨値が格納されます。
+| **boolean**       | [booleanColumn][]       | この列にはブール値が格納されます。
+| **calculated**    | [calculatedColumn][]    | この列のデータは、他の列に基づいて計算されます。
+| **choice**        | [choiceColumn][]        | この列には、選択肢リストからのデータが格納されます。
+| **currency**      | [currencyColumn][]      | この列には通貨値が格納されます。
 | **dateTime**      | [dateTimeColumn][]      | この列には日時の値が格納されます。
 | **defaultValue**  | [defaultColumnValue][]  | この列の既定値です。
-| **参照**        | [lookupColumn][]        | この列のデータは、サイト内の別のソースから検索されます。
-| **数**        | [numberColumn][]        | この列には数値が格納されます。
+| **lookup**        | [lookupColumn][]        | この列のデータは、サイト内の別のソースから検索されます。
+| **number**        | [numberColumn][]        | この列には数値が格納されます。
 | **personOrGroup** | [personOrGroupColumn][] | この列にはユーザーまたはグループの値が格納されます。
-| **テキスト**          | [textColumn][]          | この列にはテキスト値が格納されます。
+| **text**          | [textColumn][]          | この列にはテキスト値が格納されます。
 
 注: これらのプロパティは SharePoint の [SPFieldType][] 列挙体に対応しています。
-ほとんどの一般的なフィールドの種類を上記に示しましたが、この API には含まれないものもあります。
+中、最も一般的な種類のフィールドは、上は、この API がまだないです。
 そのような場合、どの列タイプ ファセットも入力されず、基本的なプロパティだけが列に含まれます。
 
 ## <a name="remarks"></a>備考
 
-列の ColumnDefinitions とフィールドの値は、既定では表示されません。`hidden`
+`hidden` 列の ColumnDefinitions とフィールドの値は、既定では表示されません。
 **columnDefinitions** を一覧表示するときにこれらが表示されるようにするには、`$select` ステートメントに `hidden` を含めます。
 [listItems][listItem] の**フィールド**値を表示するときにこれらが表示されるようにするには、`$select` ステートメントに目的の列の名前を含めます。
 
@@ -107,7 +107,7 @@ ms.locfileid: "23271316"
 [fields]: fieldvalueset.md
 [listItem]: listitem.md
 
-[SPFieldType]: https://msdn.microsoft.com/en-us/library/microsoft.sharepoint.spfieldtype.aspx
+[SPFieldType]: https://msdn.microsoft.com/library/microsoft.sharepoint.spfieldtype.aspx
 
 <!-- {
   "type": "#page.annotation",

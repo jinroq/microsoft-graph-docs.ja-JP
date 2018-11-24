@@ -6,31 +6,31 @@
 ## <a name="methods"></a>メソッド
 |メソッド|戻り値の型|説明|
 |:---|:---|:---|
-|[managedAppOperations のリスト](../api/intune_mam_managedappoperation_list.md)|[managedAppOperation](../resources/intune_mam_managedappoperation.md) コレクション|[managedAppOperation](../resources/intune_mam_managedappoperation.md) オブジェクトのプロパティとリレーションシップをリストします。|
-|[managedAppOperation を取得する](../api/intune_mam_managedappoperation_get.md)|[managedAppOperation](../resources/intune_mam_managedappoperation.md)|[managedAppOperation](../resources/intune_mam_managedappoperation.md) オブジェクトのプロパティとリレーションシップを読み取ります。|
-|[managedAppOperation を作成する](../api/intune_mam_managedappoperation_create.md)|[managedAppOperation](../resources/intune_mam_managedappoperation.md)|新しい [managedAppOperation](../resources/intune_mam_managedappoperation.md) オブジェクトを作成します。|
-|[managedAppOperation を削除する](../api/intune_mam_managedappoperation_delete.md)|なし|[managedAppOperation](../resources/intune_mam_managedappoperation.md) を削除します。|
-|[managedAppOperation を更新する](../api/intune_mam_managedappoperation_update.md)|[managedAppOperation](../resources/intune_mam_managedappoperation.md)|[managedAppOperation](../resources/intune_mam_managedappoperation.md) オブジェクトのプロパティを更新します。|
+|[List managedAppOperations](../api/intune_mam_managedappoperation_list.md)|[managedAppOperation](../resources/intune_mam_managedappoperation.md) コレクション|[managedAppOperation](../resources/intune_mam_managedappoperation.md) オブジェクトのプロパティとリレーションシップをリストします。|
+|[Get managedAppOperation](../api/intune_mam_managedappoperation_get.md)|[managedAppOperation](../resources/intune_mam_managedappoperation.md)|[managedAppOperation](../resources/intune_mam_managedappoperation.md) オブジェクトのプロパティとリレーションシップを読み取ります。|
+|[Create managedAppOperation](../api/intune_mam_managedappoperation_create.md)|[managedAppOperation](../resources/intune_mam_managedappoperation.md)|新しい [managedAppOperation](../resources/intune_mam_managedappoperation.md) オブジェクトを作成します。|
+|[Delete managedAppOperation](../api/intune_mam_managedappoperation_delete.md)|なし|[managedAppOperation](../resources/intune_mam_managedappoperation.md) を削除します。|
+|[Update managedAppOperation](../api/intune_mam_managedappoperation_update.md)|[managedAppOperation](../resources/intune_mam_managedappoperation.md)|[managedAppOperation](../resources/intune_mam_managedappoperation.md) オブジェクトのプロパティを更新します。|
 
 ## <a name="properties"></a>プロパティ
-|プロパティ|タイプ|説明|
+|プロパティ|型|説明|
 |:---|:---|:---|
-|displayName|文字列|操作名。|
+|displayName|文字列型 (String)|操作名。|
 |lastModifiedDateTime|DateTimeOffset|アプリ操作が変更された最終時刻。|
-|状態|文字列|操作の現在の状態。|
-|ID|文字列|エンティティのキー。|
-|バージョン|文字列|エンティティのバージョン。|
+|state|文字列型 (String)|操作の現在の状態。|
+|id|文字列型 (String)|エンティティのキー。|
+|version|文字列型 (String)|エンティティのバージョン。|
 
 ## <a name="relationships"></a>リレーションシップ
 なし
 ## <a name="json-representation"></a>JSON 表記
 以下は、リソースの JSON 表記です。
-<!--{
+<!-- {
   "blockType": "resource",
-  "baseType": "microsoft.graph.entity",
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.managedAppOperation"
-}-->
+}
+-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.managedAppOperation",
@@ -41,11 +41,6 @@
   "version": "String"
 }
 ```
-
-
-
-
-
 
 
 

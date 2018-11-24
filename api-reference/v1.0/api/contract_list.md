@@ -22,7 +22,7 @@ GET /contracts
 
 ## <a name="optional-query-parameters"></a>オプションのクエリ パラメーター
 
-このメソッドは、応答をカスタマイズするための [OData クエリ パラメーター](http://graph.microsoft.io/docs/overview/query_parameters)をサポートします。 
+このメソッドは、応答をカスタマイズするための [OData クエリ パラメーター](https://developer.microsoft.com/graph/docs/concepts/query_parameters)をサポートします。 
 
 > customerId、defaultDomainName、displayName によるフィルタリングがサポートされています。
 
@@ -30,7 +30,7 @@ GET /contracts
 
 | 名前      |説明|
 |:----------|:----------|
-| 承認  | ベアラー {トークン}。必須。 |
+| Authorization  | ベアラー {トークン}。必須。 |
 
 ## <a name="request-body"></a>要求本文
 

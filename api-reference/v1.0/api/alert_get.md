@@ -1,6 +1,6 @@
-# <a name="get-alert"></a>アラートの取得
+# <a name="get-alert"></a>警告の取得
 
- プロパティと [アラート](../resources/alert.md) オブジェクトの関係を取得します。
+ プロパティと[通知](../resources/alert.md)オブジェクトの関係を取得します。
 
 ## <a name="permissions"></a>アクセス許可
 
@@ -8,7 +8,7 @@
 
 |アクセス許可の種類      | アクセス許可 (特権の小さいものから大きいものへ)              |
 |:--------------------|:---------------------------------------------------------|
-|委任 (職場または学校アカウント) |  SecurityEvents.Read.All、SecurityEvents.ReadWrite.All   |
+|委任 (職場または学校のアカウント) |  SecurityEvents.Read.All、SecurityEvents.ReadWrite.All   |
 |委任 (個人用 Microsoft アカウント) |  サポートされていません。  |
 |アプリケーション | SecurityEvents.Read.All、SecurityEvents.ReadWrite.All |
 
@@ -24,7 +24,7 @@ GET /security/alerts/{alert_id}
 
 | 名前      |説明|
 |:----------|:----------|
-| 承認  | Bearer {code}。必須。|
+| Authorization  | Bearer {code}。必須。|
 
 ## <a name="request-body"></a>要求本文
 
@@ -32,7 +32,7 @@ GET /security/alerts/{alert_id}
 
 ## <a name="response"></a>応答
 
-成功した場合、このメソッドは`200 OK`応答コードと、応答本文で**アラート**オブジェクトを返します。
+かどうかは成功すると、このメソッドが返されます、`200 OK`応答コードおよび応答の本文に**通知**オブジェクト。 2 xx または 404 以外のステータス コードは、プロバイダーから返された場合、またはプロバイダーがタイムアウトすると、応答がある場合、`206 Partial Content`警告ヘッダー内のプロバイダーの応答のステータス コード。 詳細については、 [Microsoft グラフ セキュリティ API のエラー応答](../resources/security-error-codes.md)を参照してください。
 
 ## <a name="example"></a>例
 

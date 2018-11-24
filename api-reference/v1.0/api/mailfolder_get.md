@@ -2,10 +2,10 @@
 
 メッセージ フォルダー オブジェクトのプロパティとリレーションシップを取得します。
 
-アプリが別のユーザーのメール フォルダーを取得できる 2 つのシナリオがあります。
+2 つシナリオは、アプリケーションが別のユーザーのメール フォルダーを取得する場所です。
 
-* このアプリにアプリケーションのアクセス許可がある場合、または、
-* このアプリに、1 人のユーザーから適切な[アクセス許可](#permissions)が委任され、別のユーザーは、そのユーザーとメールフォルダーを共有しているか、またはそのユーザーにアクセスを委任しているかする場合。 [詳細と例](../../../concepts/outlook-share-messages-folders.md)をご覧ください。
+* アプリケーションは、アプリケーションの権限を持つ場合、または、
+* アプリケーションがある場合、適切な 1 人のユーザーから[アクセス許可](#permissions)を委任を実行し、別のユーザーは、そのユーザーのメール フォルダーを共有するにはまたは、そのユーザーに代理アクセスを与えを実行します。 [詳細と例](../../../concepts/outlook-share-messages-folders.md)を参照してください。
 
 
 ## <a name="permissions"></a>アクセス許可
@@ -24,11 +24,11 @@ GET /me/mailFolders/{id}
 GET /users/{id | userPrincipalName}/mailFolders/{id}
 ```
 ## <a name="optional-query-parameters"></a>オプションのクエリ パラメーター
-このメソッドは、応答をカスタマイズするための [OData クエリ パラメーター](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters)をサポートします。
+このメソッドは、応答をカスタマイズするための [OData クエリ パラメーター](https://developer.microsoft.com/graph/docs/concepts/query_parameters)をサポートします。
 ## <a name="request-headers"></a>要求ヘッダー
 | 名前       | 型 | 説明|
 |:-----------|:------|:----------|
-| 承認  | 文字列  | ベアラー {トークン}。必須。 |
+| Authorization  | string  | ベアラー {トークン}。必須。 |
 
 ## <a name="request-body"></a>要求本文
 このメソッドには、要求本文を指定しません。

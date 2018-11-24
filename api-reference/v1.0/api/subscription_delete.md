@@ -12,10 +12,11 @@
 | スレッド               | Group.Read.All      |
 | イベント                      | Calendars.Read      |
 | メッセージ                    | Mail.Read           |
-| グループ                      | Group.Read.All      |
-| ユーザー                       | User.Read.All       |
+| Groups                      | Group.Read.All      |
+| Users                       | User.Read.All       |
 | ドライブ (ユーザーの OneDrive)    | Files.ReadWrite     |
-| ドライブ (Sharepoint の共有コンテンツとドライブ) | Files.ReadWrite.All |
+| ドライブ (共有、SharePoint コンテンツおよびドライブ) | Files.ReadWrite.All |
+|セキュリティの警告| SecurityEvents.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 要求
 
@@ -29,7 +30,7 @@ DELETE /subscriptions/{id}
 
 | 名前       | 型 | 説明|
 |:-----------|:------|:----------|
-| 承認  | 文字列  | ベアラー {トークン}。必須。 |
+| Authorization  | string  | ベアラー {トークン}。必須。 |
 
 ## <a name="request-body"></a>要求本文
 

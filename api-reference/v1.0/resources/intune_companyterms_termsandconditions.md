@@ -6,39 +6,39 @@ termsAndConditions エンティティは、特定の使用条件 (T&C) ポリシ
 ## <a name="methods"></a>メソッド
 |メソッド|戻り値の型|説明|
 |:---|:---|:---|
-|[termsAndConditionses をリストします](../api/intune_companyterms_termsandconditions_list.md)|[termsAndConditions](../resources/intune_companyterms_termsandconditions.md) コレクション|[termsAndConditions](../resources/intune_companyterms_termsandconditions.md) オブジェクトのプロパティとリレーションシップをリストします。|
-|[termsAndConditions の取得](../api/intune_companyterms_termsandconditions_get.md)|[termsAndConditions](../resources/intune_companyterms_termsandconditions.md)|[termsAndConditions](../resources/intune_companyterms_termsandconditions.md) オブジェクトのプロパティとリレーションシップを読み取ります。|
-|[termsAndConditions の作成](../api/intune_companyterms_termsandconditions_create.md)|[termsAndConditions](../resources/intune_companyterms_termsandconditions.md)|新しい [termsAndConditions](../resources/intune_companyterms_termsandconditions.md) オブジェクトを作成します。|
-|[termsAndConditions の削除](../api/intune_companyterms_termsandconditions_delete.md)|なし|[termsAndConditions](../resources/intune_companyterms_termsandconditions.md) を削除します。|
-|[termsAndConditions の更新](../api/intune_companyterms_termsandconditions_update.md)|[termsAndConditions](../resources/intune_companyterms_termsandconditions.md)|[termsAndConditions](../resources/intune_companyterms_termsandconditions.md) オブジェクトのプロパティを更新します。|
+|[List termsAndConditionses](../api/intune_companyterms_termsandconditions_list.md)|[termsAndConditions](../resources/intune_companyterms_termsandconditions.md) コレクション|[termsAndConditions](../resources/intune_companyterms_termsandconditions.md) オブジェクトのプロパティとリレーションシップをリストします。|
+|[Get termsAndConditions](../api/intune_companyterms_termsandconditions_get.md)|[termsAndConditions](../resources/intune_companyterms_termsandconditions.md)|[termsAndConditions](../resources/intune_companyterms_termsandconditions.md) オブジェクトのプロパティとリレーションシップを読み取ります。|
+|[Create termsAndConditions](../api/intune_companyterms_termsandconditions_create.md)|[termsAndConditions](../resources/intune_companyterms_termsandconditions.md)|新しい [termsAndConditions](../resources/intune_companyterms_termsandconditions.md) オブジェクトを作成します。|
+|[Delete termsAndConditions](../api/intune_companyterms_termsandconditions_delete.md)|なし|[termsAndConditions](../resources/intune_companyterms_termsandconditions.md) を削除します。|
+|[Update termsAndConditions](../api/intune_companyterms_termsandconditions_update.md)|[termsAndConditions](../resources/intune_companyterms_termsandconditions.md)|[termsAndConditions](../resources/intune_companyterms_termsandconditions.md) オブジェクトのプロパティを更新します。|
 
 ## <a name="properties"></a>プロパティ
-|プロパティ|タイプ|説明|
+|プロパティ|型|説明|
 |:---|:---|:---|
-|ID|文字列|T&C ポリシーの一意識別子。|
+|id|String|T&C ポリシーの一意識別子。|
 |createdDateTime|DateTimeOffset|オブジェクトが作成された DateTime。|
-|lastModifiedDateTime|DateTimeOffset|オブジェクトが最後に変更された DateTime。|
-|displayName|文字列|T&C ポリシー用に管理者が提供した名前。 |
-|説明|文字列|管理者が提供した T&C ポリシーの説明。|
-|タイトル|文字列|管理者が提供した契約条件のタイトル。 ユーザーが T&C ポリシーを承諾する際のプロンプトに表示されます。|
-|bodyText|文字列|管理者が提供する契約条件の本文で、通常は条件そのものです。 ユーザーが T&C ポリシーを承諾する際のプロンプトに表示されます。|
-|acceptanceStatement|文字列|使用条件に関する、管理者指定の説明内容です。通常は、T&C ポリシーに定められた使用条件を受け入れることの意味を記載します。 ユーザーが T&C ポリシーを承諾する際のプロンプトに表示されます。|
-|バージョン|Int32|条件の現行バージョンを示す整数。 管理者が使用条件を変更し、修正された T&C ポリシーを再承諾するようにユーザーに求めると、値が増加します。|
+|lastModifiedDateTime|DateTimeOffset|オブジェクトの最終更新の DateTime。|
+|displayName|String|T&C ポリシー用に管理者が指定した名前。 |
+|description|String|管理者が指定した T&C ポリシーの説明。|
+|タイトル|String|管理者が提供した契約条件のタイトル。 ユーザーが T&C ポリシーを承諾する際のプロンプトに表示されます。|
+|bodyText|String|管理者が提供する契約条件の本文で、通常は条件そのものです。 ユーザーが T&C ポリシーを承諾する際のプロンプトに表示されます。|
+|acceptanceStatement|String|使用条件に関する、管理者指定の説明内容です。通常は、T&C ポリシーに定められた使用条件を受け入れることの意味を記載します。 ユーザーが T&C ポリシーを承諾する際のプロンプトに表示されます。|
+|version|Int32|条件の現行バージョンを示す整数。 管理者が使用条件を変更し、修正された T&C ポリシーを再承諾するようにユーザーに求めると、値が増加します。|
 
 ## <a name="relationships"></a>リレーションシップ
 |リレーションシップ|型|説明|
 |:---|:---|:---|
-|課題|[termsAndConditionsAssignment](../resources/intune_companyterms_termsandconditionsassignment.md) コレクション|この T&C ポリシーの割り当てのリスト。|
+|assignments|[termsAndConditionsAssignment](../resources/intune_companyterms_termsandconditionsassignment.md) コレクション|この T&C ポリシーの割り当てのリスト。|
 |acceptanceStatuses|[termsAndConditionsAcceptanceStatus](../resources/intune_companyterms_termsandconditionsacceptancestatus.md) コレクション|この T&C ポリシーの承諾状態のリスト。|
 
 ## <a name="json-representation"></a>JSON 表記
 以下は、リソースの JSON 表記です。
-<!--{
+<!-- {
   "blockType": "resource",
-  "baseType": "microsoft.graph.entity",
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.termsAndConditions"
-}-->
+}
+-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.termsAndConditions",
@@ -53,11 +53,6 @@ termsAndConditions エンティティは、特定の使用条件 (T&C) ポリシ
   "version": 1024
 }
 ```
-
-
-
-
-
 
 
 

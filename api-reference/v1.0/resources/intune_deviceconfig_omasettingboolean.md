@@ -9,19 +9,20 @@ OMA 設定のブール定義。
 ## <a name="properties"></a>プロパティ
 |プロパティ|型|説明|
 |:---|:---|:---|
-|displayName|文字列|表示名。 [omaSetting](../resources/intune_deviceconfig_omasetting.md) からの継承|
-|説明|文字列|説明。 [omaSetting](../resources/intune_deviceconfig_omasetting.md) からの継承|
-|omaUri|文字列|OMA。 [omaSetting](../resources/intune_deviceconfig_omasetting.md) からの継承|
+|displayName|文字列型 (String)|表示名。 [omaSetting](../resources/intune_deviceconfig_omasetting.md) からの継承|
+|description|文字列型 (String)|説明。 [omaSetting](../resources/intune_deviceconfig_omasetting.md) からの継承|
+|omaUri|文字列型 (String)|OMA。 [omaSetting](../resources/intune_deviceconfig_omasetting.md) からの継承|
 |value|ブール型 (Boolean)|値。|
 
 ## <a name="relationships"></a>リレーションシップ
 なし
 ## <a name="json-representation"></a>JSON 表記
 以下は、リソースの JSON 表記です。
-<!--{
+<!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.omaSettingBoolean"
-}-->
+}
+-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.omaSettingBoolean",
@@ -31,11 +32,6 @@ OMA 設定のブール定義。
   "value": true
 }
 ```
-
-
-
-
-
 
 
 

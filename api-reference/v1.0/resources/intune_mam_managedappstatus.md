@@ -6,26 +6,26 @@
 ## <a name="methods"></a>メソッド
 |メソッド|戻り値の型|説明|
 |:---|:---|:---|
-|[managedAppStatuses のリスト](../api/intune_mam_managedappstatus_list.md)|[managedAppStatus](../resources/intune_mam_managedappstatus.md) コレクション|[managedAppStatus](../resources/intune_mam_managedappstatus.md) オブジェクトのプロパティとリレーションシップをリストします。|
-|[managedAppStatus の取得](../api/intune_mam_managedappstatus_get.md)|[managedAppStatus](../resources/intune_mam_managedappstatus.md)|[managedAppStatus](../resources/intune_mam_managedappstatus.md) オブジェクトのプロパティとリレーションシップを読み取ります。|
+|[List managedAppStatuses](../api/intune_mam_managedappstatus_list.md)|[managedAppStatus](../resources/intune_mam_managedappstatus.md) コレクション|[managedAppStatus](../resources/intune_mam_managedappstatus.md) オブジェクトのプロパティとリレーションシップをリストします。|
+|[Get managedAppStatus](../api/intune_mam_managedappstatus_get.md)|[managedAppStatus](../resources/intune_mam_managedappstatus.md)|[managedAppStatus](../resources/intune_mam_managedappstatus.md) オブジェクトのプロパティとリレーションシップを読み取ります。|
 
 ## <a name="properties"></a>プロパティ
-|プロパティ|タイプ|説明|
+|プロパティ|型|説明|
 |:---|:---|:---|
-|displayName|文字列|進捗レポートのフレンドリ名。|
-|id|文字列|エンティティのキー。|
-|バージョン|文字列|エンティティのバージョン。|
+|displayName|文字列型 (String)|進捗レポートのフレンドリ名。|
+|id|文字列型 (String)|エンティティのキー。|
+|version|文字列型 (String)|エンティティのバージョン。|
 
 ## <a name="relationships"></a>リレーションシップ
 なし
 ## <a name="json-representation"></a>JSON 表記
 以下は、リソースの JSON 表記です。
-<!--{
+<!-- {
   "blockType": "resource",
-  "baseType": "microsoft.graph.entity",
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.managedAppStatus"
-}-->
+}
+-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.managedAppStatus",
@@ -34,11 +34,6 @@
   "version": "String"
 }
 ```
-
-
-
-
-
 
 
 

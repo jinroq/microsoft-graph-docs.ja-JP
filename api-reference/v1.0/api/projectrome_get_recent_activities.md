@@ -1,6 +1,6 @@
-# <a name="get-recent-user-activities"></a>最近のユーザーのアクティビティを取得する
+# <a name="get-recent-user-activities"></a>ユーザーの最近の活動を取得します。
 
-特定のユーザーの最近のアクティビティを取得します。 この OData 関数には、「直近に使用された」API のように動作させるためのいくつかの既定の動作が含まれています。 このサービスは、直近の [historyItems](../resources/projectrome_historyitem.md) のクエリを実行し、関連するアクティビティを引き出します。 アクティビティは、 **historyItem** で、直近の **lastModified** に従って並べ替えられます。 これは、**historyItems** のないアクティビティは応答に含まれないことを意味します。 UserActivity.ReadWrite.CreatedByApp アクセス許可も、応答に対し追加のフィルタリングを適用するので、アプリケーションによって作成されたアクティビティのみが返されるようになります。 ユーザーが特にアクティブで、他のアプリケーションが最近より多くのアクティビティを作成した場合、このサーバー側のフィルター処理によって空のページが発生することがあります。 アプリケーションのアクティビティを取得するには **nextLink** プロパティを使ってページ化します。
+特定のユーザーの最近の活動を取得します。 この OData の関数では、「最近使用した」の API と同様に動作して含まれているいくつか既定動作があります。 サービスは、最新の[historyItems](../resources/projectrome_historyitem.md)のクエリを実行し、それらの関連の活動を引き出します。 アクティビティは、 **historyItem**で、最新の**lastModified**に従って並べ替えられます。 これは、なしで**historyItems**が応答に含まれないことを意味します。 UserActivity.ReadWrite.CreatedByApp アクセス許可も適用されます応答に追加のフィルタ リング、アプリケーションによって作成された活動のみが返されるようにします。 このサーバー側のフィルター処理が発生空のページでユーザーが特に作業中であり、他のアプリケーションが最新の活動を作成します。 アプリケーションのアクティビティを取得するには、改ページ調整**nextLink**プロパティを使用します。
 
 ## <a name="permissions"></a>アクセス許可
 
@@ -8,7 +8,7 @@
 
 |アクセス許可の種類      | アクセス許可 (特権の小さいものから大きいものへ)              |
 |:--------------------|:---------------------------------------------------------|
-|委任 (職場または学校アカウント) | UserActivity.ReadWrite.CreatedByApp    |
+|委任 (職場または学校のアカウント) | UserActivity.ReadWrite.CreatedByApp    |
 |委任 (個人用 Microsoft アカウント) | UserActivity.ReadWrite.CreatedByApp    |
 |アプリケーション | サポートされていません。 |
 
@@ -22,13 +22,13 @@ GET /me/activities/recent
 
 ## <a name="optional-query-parameters"></a>オプションのクエリ パラメーター
 
-このメソッドは、応答をカスタマイズするのに役立つ [OData クエリ パラメータ](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) をサポートします。 次のクエリ パラメータがサポートされています。
+このメソッドは、応答をカスタマイズするためにいくつかの[OData クエリ パラメーター](https://developer.microsoft.com/graph/docs/concepts/query_parameters)をサポートします。 次のクエリ パラメーターがサポートされています。
 
-- **historyItems** のナビゲーション プロパティの $expand。
-- ページ間での最大項目数を制限する $top。
-- 展開されている場合の **activities** または **historyItems** のいずれかの **lastModifiedDateTime**プロパティに対する $filter。
+- $ は、 **historyItems**のナビゲーション プロパティを展開します。
+- ページ間でのアイテムの最大数を制限する $top。
+- **アクティビティ**または**historyItems**、展開されている場合のいずれかの**lastModifiedDateTime**プロパティで $filter。
 
-URL エンコーディングを使ったサポートされているクエリの例をいくつか下に示します。
+URL エンコーディングを使用してクエリがサポートされているいくつかの例を次に示します。
 
 ```
 /me/activities/recent?$expand=historyItems($filter=lastModifiedDateTime%20gt%202018-01-22T21:45:00.347Z%20and%20lastModifiedDateTime%20lt%202018-01-22T22:00:00.347Z)
@@ -42,15 +42,15 @@ URL エンコーディングを使ったサポートされているクエリの�
 
 |名前 | 型 | 説明|
 |:----|:-----|:-----------|
-|承認 | 文字列 | ベアラー {トークン}。必須。|
+|Authorization | string | ベアラー {トークン}。必須。|
 
 ## <a name="request-body"></a>要求本文
 
-要求本文を指定しないでください。
+要求の本体を指定することはしません。
 
 ## <a name="response"></a>応答
 
-成功した場合、このメソッドは、`200 OK` アプリケーションのユーザーの最近のアクティビティを使用して応答コードを返します。
+かどうかは成功すると、このメソッドが返されます、 `200 OK` 、アプリケーションのユーザーの最近の活動を使用して応答コード。
 
 ## <a name="example"></a>例
 
@@ -93,7 +93,7 @@ Content-Type: application/json
         "appActivityId": "/article?12345",
         "visualElements": {
             "attribution": {
-              "iconUrl": "http://www.contoso.com/icon",
+              "iconUrl": "https://www.contoso.com/icon",
               "alternateText": "Contoso, Ltd.",
               "addImageQuery": false,
               },
@@ -101,7 +101,7 @@ Content-Type: application/json
             "description": "How to Tie a Reef Knot. A step-by-step visual guide to the art of nautical knot-tying.",
             "backgroundColor": "#ff0000",
             "content": {
-              "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+              "$schema": "https://adaptivecards.io/schemas/adaptive-card.json",
               "type": "AdaptiveCard",
               "body":
               [{
@@ -110,13 +110,13 @@ Content-Type: application/json
               }]
             }
         },
-        "activationUrl": "http://www.contoso.com/article?id=12345",
+        "activationUrl": "https://www.contoso.com/article?id=12345",
         "appDisplayName": "Contoso, Ltd.",
         "userTimezone": "Africa/Casablanca",
-        "fallbackUrl": "http://www.contoso.com/article?id=12345",
-        "contentUrl": "http://www.contoso.com/article?id=12345",
+        "fallbackUrl": "https://www.contoso.com/article?id=12345",
+        "contentUrl": "https://www.contoso.com/article?id=12345",
         "contentInfo": {
-            "@context": "http://schema.org",
+            "@context": "https://schema.org",
             "@type": "Article",
             "author": "John Doe",
             "name": "How to Tie a Reef Knot"

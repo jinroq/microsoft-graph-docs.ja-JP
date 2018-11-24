@@ -29,8 +29,8 @@ GET /reports/getSharePointSiteUsageDetail(date={date_value})
 
 | パラメーター | 型   | 説明                              |
 | :-------- | :----- | :--------------------------------------- |
-| 期間    | 文字列 | レポートを集計する期間の長さを指定します。 {period_value} でサポートされている値は D7、D30、D90、D180 です。 これらの値は、D*n* の形式 (*n* はレポートを集計する日数) に従います。 |
-| 日付      | 日付   | 何らかのアクティビティを実行したユーザーを表示する日付を指定します。 {date_value} は YYYY-MM-DD の形式にします。 このレポートは、過去 30 日間のみ利用可能であり、{date_value} はその範囲内の日付である必要があります。 |
+| period    | 文字列 | レポートを集計する期間の長さを指定します。 {period_value} でサポートされている値は D7、D30、D90、D180 です。 これらの値は、D*n* の形式 (*n* はレポートを集計する日数) に従います。 |
+| date      | 日付   | 何らかのアクティビティを実行したユーザーを表示する日付を指定します。 {date_value} は YYYY-MM-DD の形式にします。 このレポートは、過去 30 日間のみ利用可能であり、{date_value} はその範囲内の日付である必要があります。 |
 
 > **注:** URL に期間または日付を設定する必要があります。
 
@@ -38,7 +38,7 @@ GET /reports/getSharePointSiteUsageDetail(date={date_value})
 
 | 名前          | 説明                              |
 | :------------ | :--------------------------------------- |
-| 承認 | ベアラー {トークン}。必須。                |
+| Authorization | ベアラー {トークン}。必須。                |
 | If-None-Match | この要求ヘッダーが含まれている場合、指定された eTag がファイルの現在のタグに一致すると、`304 Not Modified` 応答コードが返されます。 省略可能。 |
 
 ## <a name="response"></a>応答
@@ -50,6 +50,7 @@ GET /reports/getSharePointSiteUsageDetail(date={date_value})
 この CSV ファイルには、次の列ヘッダーがあります。
 
 - レポートの更新日
+- サイト Id
 - サイトの URL
 - 所有者の表示名
 - 削除済み
@@ -103,5 +104,5 @@ Location: https://reports.office.com/data/download/JDFKdf2_eJXKS034dbc7e0t__XDe
 HTTP/1.1 200 OK
 Content-Type: application/octet-stream
 
-Report Refresh Date,Site URL,Owner Display Name,Is Deleted,Last Activity Date,File Count,Active File Count,Page View Count,Visited Page Count,Storage Used (Byte),Storage Allocated (Byte),Root Web Template,Report Period
+Report Refresh Date,Site Id,Site URL,Owner Display Name,Is Deleted,Last Activity Date,File Count,Active File Count,Page View Count,Visited Page Count,Storage Used (Byte),Storage Allocated (Byte),Root Web Template,Report Period
 ```

@@ -12,21 +12,17 @@ IOS ホーム画面上のアイテムを表します
 なし
 ## <a name="json-representation"></a>JSON 表記
 以下は、リソースの JSON 表記です。
-<!--{
+<!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.iosHomeScreenItem"
-}-->
+}
+-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.iosHomeScreenItem",
   "displayName": "String"
 }
 ```
-
-
-
-
-
 
 
 

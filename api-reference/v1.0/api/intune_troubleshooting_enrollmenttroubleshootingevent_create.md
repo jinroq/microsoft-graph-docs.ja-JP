@@ -24,8 +24,8 @@ POST /deviceManagement/troubleshootingEvents
 ## <a name="request-headers"></a>要求ヘッダー
 |ヘッダー|値|
 |:---|:---|
-|承認|ベアラー &lt;トークン&gt; が必須。|
-|承諾する|アプリケーションまたは json|
+|Authorization|ベアラー &lt;トークン&gt; が必須。|
+|Accept|application/json|
 
 ## <a name="request-body"></a>要求本文
 要求本文で、enrollmentTroubleshootingEvent オブジェクトの JSON 表記を指定します。
@@ -34,17 +34,17 @@ POST /deviceManagement/troubleshootingEvents
 
 |プロパティ|型|説明|
 |:---|:---|:---|
-|ID|文字列|オブジェクトの UUID。[deviceManagementTroubleshootingEvent](../resources/intune_troubleshooting_devicemanagementtroubleshootingevent.md) から継承|
+|id|String|オブジェクトの UUID。[deviceManagementTroubleshootingEvent](../resources/intune_troubleshooting_devicemanagementtroubleshootingevent.md) から継承|
 |eventDateTime|DateTimeOffset|インシデントが発生した時間。 [deviceManagementTroubleshootingEvent](../resources/intune_troubleshooting_devicemanagementtroubleshootingevent.md) から継承します|
-|correlationId|文字列|サービスのエラーをトレースするための ID。 [deviceManagementTroubleshootingEvent](../resources/intune_troubleshooting_devicemanagementtroubleshootingevent.md) から継承します|
-|managedDeviceIdentifier|文字列|Intune によって作成または収集されるデバイス識別子。|
-|operatingSystem|文字列|オペレーティング システム。|
-|osVersion|文字列|OS バージョン。|
-|userId|文字列|デバイスを登録しようとするユーザーの識別子。|
-|deviceId|文字列|Azure AD デバイス識別子。|
+|correlationId|String|サービスのエラーをトレースするための ID。 [deviceManagementTroubleshootingEvent](../resources/intune_troubleshooting_devicemanagementtroubleshootingevent.md) から継承します|
+|managedDeviceIdentifier|String|Intune によって作成または収集されるデバイス識別子。|
+|operatingSystem|String|オペレーティング システム。|
+|osVersion|String|OS バージョン。|
+|userId|String|デバイスを登録しようとするユーザーの識別子。|
+|deviceId|String|Azure AD デバイス識別子。|
 |enrollmentType|[deviceEnrollmentType](../resources/intune_shared_deviceenrollmenttype.md)|登録の種類。 可能な値は、`unknown`、`userEnrollment`、`deviceEnrollmentManager`、`appleBulkWithUser`、`appleBulkWithoutUser`、`windowsAzureADJoin`、`windowsBulkUserless`、`windowsAutoEnrollment`、`windowsBulkAzureDomainJoin`、`windowsCoManagement` です。|
 |failureCategory|[deviceEnrollmentFailureReason](../resources/intune_troubleshooting_deviceenrollmentfailurereason.md)|高レベルのエラー カテゴリ。 可能な値は、`unknown`、`authentication`、`authorization`、`accountValidation`、`userValidation`、`deviceNotSupported`、`inMaintenance`、`badRequest`、`featureNotSupported`、`enrollmentRestrictionsEnforced`、`clientDisconnected`、`userAbandonment` です。|
-|failureReason|文字列|詳細なエラーの理由。|
+|failureReason|String|詳細なエラーの理由。|
 
 
 
@@ -55,7 +55,7 @@ POST /deviceManagement/troubleshootingEvents
 ### <a name="request"></a>要求
 以下は、要求の例です。
 ``` http
-POST https://graph.microsoft.com/v1/deviceManagement/troubleshootingEvents
+POST https://graph.microsoft.com/v1.0/deviceManagement/troubleshootingEvents
 Content-type: application/json
 Content-length: 509
 
@@ -96,7 +96,6 @@ Content-Length: 558
   "failureReason": "Failure Reason value"
 }
 ```
-
 
 
 

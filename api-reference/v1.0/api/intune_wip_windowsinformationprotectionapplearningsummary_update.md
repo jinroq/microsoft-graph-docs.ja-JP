@@ -24,19 +24,19 @@ PATCH /deviceManagement/windowsInformationProtectionAppLearningSummaries/{window
 ## <a name="request-headers"></a>要求ヘッダー
 |ヘッダー|値|
 |:---|:---|
-|承認|ベアラー &lt;トークン&gt; が必須。|
-|承諾|アプリケーション/json|
+|Authorization|ベアラー &lt;トークン&gt; が必要です。|
+|Accept|application/json|
 
 ## <a name="request-body"></a>要求本文
 要求本文で、[windowsInformationProtectionAppLearningSummary](../resources/intune_wip_windowsinformationprotectionapplearningsummary.md) オブジェクトの JSON 表記を指定します。
 
 次の表に、[windowsInformationProtectionAppLearningSummary](../resources/intune_wip_windowsinformationprotectionapplearningsummary.md) の作成時に必要なプロパティを示します。
 
-|プロパティ|タイプ|説明|
+|プロパティ|型|説明|
 |:---|:---|:---|
-|ID|文字列|WindowsInformationProtectionAppLearningSummary の一意識別子。|
-|applicationName|文字列|アプリケーション名|
-|applicationType|[applicationType](../resources/intune_wip_applicationtype.md)|アプリケーションの種類。可能な値は、`universal`、`desktop` です。|
+|id|String|WindowsInformationProtectionAppLearningSummary の一意識別子。|
+|applicationName|String|アプリケーション名|
+|applicationType|[applicationType](../resources/intune_wip_applicationtype.md)|アプリケーションの種類。 使用可能な値は、`universal`、`desktop` です。|
 |deviceCount|Int32|デバイス数|
 
 
@@ -50,9 +50,10 @@ PATCH /deviceManagement/windowsInformationProtectionAppLearningSummaries/{window
 ``` http
 PATCH https://graph.microsoft.com/v1.0/deviceManagement/windowsInformationProtectionAppLearningSummaries/{windowsInformationProtectionAppLearningSummaryId}
 Content-type: application/json
-Content-length: 106
+Content-length: 191
 
 {
+  "@odata.type": "#microsoft.graph.windowsInformationProtectionAppLearningSummary",
   "applicationName": "Application Name value",
   "applicationType": "desktop",
   "deviceCount": 11
@@ -74,11 +75,6 @@ Content-Length: 240
   "deviceCount": 11
 }
 ```
-
-
-
-
-
 
 
 

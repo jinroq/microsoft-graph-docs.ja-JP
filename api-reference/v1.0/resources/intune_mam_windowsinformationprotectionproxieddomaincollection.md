@@ -13,10 +13,11 @@ Windows 情報保護のプロキシ化されたドメイン コレクション
 なし
 ## <a name="json-representation"></a>JSON 表記
 以下は、リソースの JSON 表記です。
-<!--{
+<!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.windowsInformationProtectionProxiedDomainCollection"
-}-->
+}
+-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.windowsInformationProtectionProxiedDomainCollection",
@@ -30,11 +31,6 @@ Windows 情報保護のプロキシ化されたドメイン コレクション
   ]
 }
 ```
-
-
-
-
-
 
 
 

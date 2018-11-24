@@ -4,7 +4,7 @@
 
 すべてのメールボックス設定を表示することも、特定の設定を取得することもできます。
 
-タイム ゾーンは、ユーザーが自分のメールボックスに設定できる優先設定のうちの 1 つです。 有効なタイム ゾーンの形式には、Windows タイム ゾーン形式および [Internet Assigned Numbers Authority (IANA) タイム ゾーン](http://www.iana.org/time-zones) (Olson タイム ゾーンとも呼ばれる) 形式があります。 既定値は Windows 形式です。 
+タイム ゾーンは、ユーザーが自分のメールボックスに設定できる優先設定のうちの 1 つです。 有効なタイム ゾーンの形式には、Windows タイム ゾーン形式および [Internet Assigned Numbers Authority (IANA) タイム ゾーン](https://www.iana.org/time-zones) (Olson タイム ゾーンとも呼ばれる) 形式があります。 既定値は Windows 形式です。 
 
 ユーザーの優先タイム ゾーンを取得するとき、そのタイム ゾーンは設定された形式で返されます。 タイム ゾーンを特定の形式 (Windows または IANA) にする場合は、最初に[メールボックス設定としてその形式の優先タイム ゾーンを更新](user_update_mailboxsettings.md)します。 その後は、その形式でタイム ゾーンを取得できるようになります。 または、アプリ内で形式変換を個別に管理することもできます。
 
@@ -18,13 +18,13 @@
 |アプリケーション | MailboxSettings.Read、MailboxSettings.ReadWrite |
 
 ## <a name="http-request"></a>HTTP 要求
-ユーザーのすべてのメールボックス設定を取得する場合: <!-- { "blockType": "ignored" } -->
+ユーザーのメールボックスのすべての設定を取得するには。<!-- { "blockType": "ignored" } -->
 ```http
 GET /me/mailboxSettings
 GET /users/{id|userPrincipalName}/mailboxSettings
 ```
 
-特定の設定 (たとえば、自動応答の設定、ロケール、タイム ゾーン、または就業時間のみ) を取得する場合: <!-- { "blockType": "ignored" } -->
+-特定の設定を取得するには、などだけ自動返信の設定をロケール、タイム ゾーン、または作業時間。<!-- { "blockType": "ignored" } -->
 ```http
 GET /me/mailboxSettings/automaticRepliesSetting
 GET /users/{id|userPrincipalName}/mailboxSettings/automaticRepliesSetting
@@ -39,11 +39,11 @@ GET /me/mailboxSettings/workingHours
 GET /users/{id|userPrincipalName}/mailboxSettings/workingHours
 ```
 ## <a name="optional-query-parameters"></a>オプションのクエリ パラメーター
-このメソッドは、応答をカスタマイズするための [OData クエリ パラメーター](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters)をサポートします。
+このメソッドは、応答をカスタマイズするための [OData クエリ パラメーター](https://developer.microsoft.com/graph/docs/concepts/query_parameters)をサポートします。
 ## <a name="request-headers"></a>要求ヘッダー
 | 名前       | 型 | 説明|
 |:-----------|:------|:----------|
-| 承認  | 文字列  | ベアラー {トークン}。必須。 |
+| Authorization  | string  | ベアラー {トークン}。必須。 |
 
 ## <a name="request-body"></a>要求本文
 このメソッドには、要求本文を指定しません。

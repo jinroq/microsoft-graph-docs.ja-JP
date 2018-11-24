@@ -17,7 +17,7 @@
 GET /planner/buckets
 ```
 ## <a name="optional-query-parameters"></a>オプションのクエリ パラメーター
-このメソッドでは planId [フィルター](http://graph.microsoft.io/docs/overview/query_parameters)を指定する必要があります。
+このメソッドでは planId [フィルター](https://developer.microsoft.com/graph/docs/concepts/query_parameters)を指定する必要があります。
 
 ## <a name="request-headers"></a>要求ヘッダー
 | 名前      |説明|

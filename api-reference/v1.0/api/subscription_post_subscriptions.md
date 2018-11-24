@@ -12,12 +12,13 @@ Microsoft Graph のデータが変更されたときに通知を受信するた�
 | スレッド               | Group.Read.All      |
 | イベント                      | Calendars.Read      |
 | メッセージ                    | Mail.Read           |
-| グループ                      | Group.Read.All      |
-| ユーザー                       | User.Read.All       |
+| Groups                      | Group.Read.All      |
+| Users                       | User.Read.All       |
 | ドライブ (ユーザーの OneDrive)    | Files.ReadWrite     |
-| ドライブ (SharePoint の共有コンテンツとドライブ) | Files.ReadWrite.All |
+| ドライブ (共有、SharePoint コンテンツおよびドライブ) | Files.ReadWrite.All |
+|セキュリティの警告| SecurityEvents.ReadWrite.All |
 
- > **注:** /V1.0 エンドポイントでは、リソースのほとんどのアプリケーションのアクセス許可を使用できます。 アプリケーションのアクセス許可は、グループ内の会話や OneDrive ドライブ ルート アイテムには対応していません。
+ > **注:**/V1.0 エンドポイントでは、リソースのほとんどのアプリケーションのアクセス許可を使用できます。 ドライブ ルート アイテムがグループ化して OneDrive での会話は、アプリケーションのアクセス許可ではサポートされていません。
 
 ## <a name="http-request"></a>HTTP 要求
 
@@ -31,7 +32,7 @@ POST /subscriptions
 
 | 名前       | 型 | 説明|
 |:-----------|:------|:----------|
-| 承認  | 文字列  | ベアラー {トークン}。必須。 |
+| Authorization  | string  | ベアラー {トークン}。必須。 |
 
 ## <a name="response"></a>応答
 
@@ -60,8 +61,8 @@ Content-type: application/json
 }
 ```
 
-要求本文で、[サブスクリプション](../resources/subscription.md)オブジェクトの JSON 表記を指定します。
- `clientState` フィールドは省略可能です。
+要求の本文には、[サブスクリプション](../resources/subscription.md)オブジェクトを JSON 表現したものを指定します。
+`clientState`フィールドは省略可能です。
 
 ##### <a name="resources-examples"></a>リソースの例
 
@@ -72,10 +73,11 @@ Content-type: application/json
 |メール|me/mailfolders('inbox')/messages<br />me/messages|
 |連絡先|me/contacts|
 |カレンダー|me/events|
-|ユーザー|ユーザー|
-|グループ|グループ|
+|Users|users|
+|Groups|グループ|
 |会話|groups('*{id}*')/conversations|
 |ドライブ|me/drive/root|
+|セキュリティの警告|セキュリティと警告? $filter eq のステータスを 'New' =|
 
 ##### <a name="response"></a>応答
 
@@ -106,7 +108,7 @@ Content-length: 252
 
 ## <a name="notification-endpoint-validation"></a>通知エンドポイントの検証
 
-サブスクリプション通知エンドポイント (`notificationUrl` プロパティで指定されている) は、[ユーザー データの変更の通知の設定](../../../concepts/webhooks.md#notification-endpoint-validation)で説明したように、検証要求に応答できる必要があります。 検証が失敗した場合、サブスクリプションを作成する要求は 400 不正な要求のエラーを返します。
+サブスクリプション通知エンドポイント (で指定されている、`notificationUrl`プロパティ) の[ユーザー データの変更の通知の設定](../../../concepts/webhooks.md#notification-endpoint-validation)で説明したように、検証要求に応答できる必要があります。 検証が失敗した場合、サブスクリプションを作成する要求は 400 不正な要求のエラーを返します。
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

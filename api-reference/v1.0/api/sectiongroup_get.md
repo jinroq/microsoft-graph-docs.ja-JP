@@ -1,4 +1,4 @@
-# <a name="get-sectiongroup"></a>SectionGroup を取得します
+# <a name="get-sectiongroup"></a>Get sectionGroup
 
 [sectionGroup](../resources/sectiongroup.md) オブジェクトのプロパティとリレーションシップを取得します。
 ## <a name="permissions"></a>アクセス許可
@@ -19,15 +19,15 @@ GET /groups/{id}/onenote/sectionGroups/{id}
 GET /sites/{id}/onenote/sectionGroups/{id}
 ```
 ## <a name="optional-query-parameters"></a>オプションのクエリ パラメーター
-このメソッドは、応答をカスタマイズするための [OData クエリ パラメーター](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters)をサポートします。
+このメソッドは、応答をカスタマイズするための [OData クエリ パラメーター](https://developer.microsoft.com/graph/docs/concepts/query_parameters)をサポートします。
 
 既定のクエリが `parentNotebook` を展開し、`id`、`name`、`self` プロパティを選択します。セクション グループの有効な `expand` 値は、`parentNotebook` と `parentSectionGroup` です。
 
 ## <a name="request-headers"></a>要求ヘッダー
 | 名前       | 型 | 説明|
 |:-----------|:------|:----------|
-| 承認  | 文字列  | ベアラー {トークン}。必須。 |
-| 承諾 | 文字列 | `application/json` |
+| Authorization  | string  | ベアラー {トークン}。必須。 |
+| 承諾 | string | `application/json` |
 
 ## <a name="request-body"></a>要求本文
 このメソッドには、要求本文を指定しません。

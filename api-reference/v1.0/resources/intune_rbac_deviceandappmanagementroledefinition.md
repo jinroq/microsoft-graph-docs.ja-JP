@@ -16,13 +16,13 @@
 |[deviceAndAppManagementRoleDefinition の更新](../api/intune_rbac_deviceandappmanagementroledefinition_update.md)|[deviceAndAppManagementRoleDefinition](../resources/intune_rbac_deviceandappmanagementroledefinition.md)|[deviceAndAppManagementRoleDefinition](../resources/intune_rbac_deviceandappmanagementroledefinition.md) オブジェクトのプロパティを更新します。|
 
 ## <a name="properties"></a>プロパティ
-|プロパティ|タイプ|説明|
+|プロパティ|型|説明|
 |:---|:---|:---|
-|ID|文字列|エンティティのキー。 これは読み取り専用で、自動生成されます。 [roleDefinition](../resources/intune_rbac_roledefinition.md) から継承します|
-|displayName|文字列|ロールの定義の表示名。 [roleDefinition](../resources/intune_rbac_roledefinition.md) から継承します|
-|説明|文字列|ロールの定義の説明。 [roleDefinition](../resources/intune_rbac_roledefinition.md) から継承します|
+|id|String|エンティティのキー。 これは読み取り専用で、自動生成されます。 [roleDefinition](../resources/intune_rbac_roledefinition.md) から継承します|
+|displayName|String|ロールの定義の表示名。 [roleDefinition](../resources/intune_rbac_roledefinition.md) から継承します|
+|description|String|ロールの定義の説明。 [roleDefinition](../resources/intune_rbac_roledefinition.md) から継承します|
 |rolePermissions|[rolePermission](../resources/intune_rbac_rolepermission.md) コレクション|このロールに実行が許可されている、ロールのアクセス許可のリスト。 これらは、rolePermission の一部として定義されている actionName と一致する必要があります。 [roleDefinition](../resources/intune_rbac_roledefinition.md) から継承します|
-|isBuiltIn|ブール値|ロールの種類。 組み込みの場合は True に設定し、カスタム ロールの定義の場合は False に設定します。 [roleDefinition](../resources/intune_rbac_roledefinition.md) から継承します|
+|isBuiltIn|Boolean|ロールの種類。 組み込みの場合は True に設定し、カスタム ロールの定義の場合は False に設定します。 [roleDefinition](../resources/intune_rbac_roledefinition.md) から継承します|
 
 ## <a name="relationships"></a>リレーションシップ
 |リレーションシップ|型|説明|
@@ -31,12 +31,12 @@
 
 ## <a name="json-representation"></a>JSON 表記
 以下は、リソースの JSON 表記です。
-<!--{
+<!-- {
   "blockType": "resource",
-  "baseType": "microsoft.graph.roleDefinition",
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.deviceAndAppManagementRoleDefinition"
-}-->
+}
+-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.deviceAndAppManagementRoleDefinition",
@@ -62,11 +62,6 @@
   "isBuiltIn": true
 }
 ```
-
-
-
-
-
 
 
 

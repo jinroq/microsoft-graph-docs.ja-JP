@@ -7,10 +7,10 @@ Windows 情報保護のストア アプリ
 [windowsInformationProtectionApp](../resources/intune_mam_windowsinformationprotectionapp.md) からの継承
 
 ## <a name="properties"></a>プロパティ
-|プロパティ|タイプ|説明|
+|プロパティ|型|説明|
 |:---|:---|:---|
 |displayName|文字列型 (String)|アプリの表示名。 [windowsInformationProtectionApp](../resources/intune_mam_windowsinformationprotectionapp.md) からの継承|
-|説明|文字列型 (String)|アプリの説明。 [windowsInformationProtectionApp](../resources/intune_mam_windowsinformationprotectionapp.md) からの継承|
+|description|文字列型 (String)|アプリの説明。 [windowsInformationProtectionApp](../resources/intune_mam_windowsinformationprotectionapp.md) からの継承|
 |publisherName|文字列型 (String)|[windowsInformationProtectionApp](../resources/intune_mam_windowsinformationprotectionapp.md) から継承される発行元名|
 |productName|文字列型 (String)|製品名。 [windowsInformationProtectionApp](../resources/intune_mam_windowsinformationprotectionapp.md) からの継承|
 |denied|ブール型 (Boolean)|true の場合、アプリは拒否された保護または除外です。 [windowsInformationProtectionApp](../resources/intune_mam_windowsinformationprotectionapp.md) からの継承|
@@ -19,10 +19,11 @@ Windows 情報保護のストア アプリ
 なし
 ## <a name="json-representation"></a>JSON 表記
 以下は、リソースの JSON 表記です。
-<!--{
+<!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.windowsInformationProtectionStoreApp"
-}-->
+}
+-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.windowsInformationProtectionStoreApp",
@@ -33,11 +34,6 @@ Windows 情報保護のストア アプリ
   "denied": true
 }
 ```
-
-
-
-
-
 
 
 

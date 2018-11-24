@@ -1,11 +1,11 @@
 # <a name="list-contacts"></a>連絡先を一覧表示する
 
-サインイン中のユーザーの既定の連絡先フォルダーから連絡先コレクションを取得します。
+サインイン中のユーザーの既定の連絡先フォルダーから連絡先のコレクションを取得します。
 
-アプリが別のユーザーの連絡先フォルダーの連絡先を取得できる 2 つのシナリオがあります。
+アプリケーションが別のユーザーの連絡先フォルダーに連絡先を入手するための 2 つのシナリオがあります。
 
-* このアプリにアプリケーションのアクセス許可がある場合、または、
-* このアプリに、1 人のユーザーから適切な[アクセス許可](#permissions)が委任され、別のユーザーは、そのユーザーと連絡先フォルダーを共有しているか、またはそのユーザーにアクセスを委任しているかする場合。 [詳細と例](../../../concepts/outlook-get-shared-contacts-folders.md)をご覧ください。
+* アプリケーションは、アプリケーションの権限を持つ場合、または、
+* アプリケーションがある場合、適切な 1 人のユーザーから[アクセス許可](#permissions)を委任し、他のユーザーは、そのユーザーの連絡先フォルダーを共有するにはまたは、そのユーザーに代理アクセスを与え。 [詳細と例](../../../concepts/outlook-get-shared-contacts-folders.md)を参照してください。
 
 
 ## <a name="permissions"></a>アクセス許可
@@ -38,7 +38,7 @@ GET /me/contactFolder/{id}/childFolders/{id}/.../contacts
 GET /users/{id | userPrincipalName}/contactFolders/{id}/childFolders/{id}/contacts
 ```
 ## <a name="optional-query-parameters"></a>オプションのクエリ パラメーター
-このメソッドは、応答をカスタマイズするための [OData クエリ パラメーター](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters)をサポートします。
+このメソッドは、応答をカスタマイズするための [OData クエリ パラメーター](https://developer.microsoft.com/graph/docs/concepts/query_parameters)をサポートします。
 
 たとえば、`$filter` クエリ パラメーターを使って、メール アドレスのドメインに基づいて連絡先をフィルターすることができます。
 
@@ -49,8 +49,8 @@ GET /users/{id | userPrincipalName}/contactFolders/{id}/childFolders/{id}/contac
 ## <a name="request-headers"></a>要求ヘッダー
 | ヘッダー       | 値 |
 |:---------------|:--------|
-| 承認  | ベアラー {トークン}。必須。  |
-| コンテンツ-種類   | アプリケーション /json  |
+| Authorization  | ベアラー {トークン}。必須。  |
+| Content-Type   | application/json  |
 
 ## <a name="request-body"></a>要求本文
 このメソッドには、要求本文を指定しません。

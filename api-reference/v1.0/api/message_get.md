@@ -4,10 +4,10 @@
 
 現在、この操作によって返されるメッセージの本文は HTML 形式のみです。
 
-アプリが別のユーザーのメール フォルダーのメッセージを取得できる 2 つのシナリオがあります。
+2 つシナリオは、アプリケーションが別のユーザーのメール フォルダーにメッセージを取得する場所です。
 
-* このアプリにアプリケーションのアクセス許可がある場合、または、
-* このアプリに、1 人のユーザーから適切な[アクセス許可](#permissions)が委任され、別のユーザーは、そのユーザーとメール フォルダーを共有しているか、またはそのユーザーにアクセスを委任しているかする場合。 [詳細と例](../../../concepts/outlook-share-messages-folders.md)をご覧ください。
+* アプリケーションは、アプリケーションの権限を持つ場合、または、
+* アプリケーションがある場合、適切な 1 人のユーザーから[アクセス許可](#permissions)を委任を実行し、別のユーザーは、そのユーザーのメール フォルダーを共有するにはまたは、そのユーザーに代理アクセスを与えを実行します。 [詳細と例](../../../concepts/outlook-share-messages-folders.md)を参照してください。
 
 **メッセージ** リソースは[拡張機能](../../../concepts/extensibility_overview.md)をサポートしているため、`GET` 操作を使用して、**メッセージ** インスタンスでカスタム プロパティと拡張機能データを取得することもできます。
 
@@ -30,12 +30,12 @@ GET /me/mailFolders/{id}/messages/{id}
 GET /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}
 ```
 ## <a name="optional-query-parameters"></a>オプションのクエリ パラメーター
-このメソッドは、応答をカスタマイズするための [OData クエリ パラメーター](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters)をサポートします。
+このメソッドは、応答をカスタマイズするための [OData クエリ パラメーター](https://developer.microsoft.com/graph/docs/concepts/query_parameters)をサポートします。
 ## <a name="request-headers"></a>要求ヘッダー
 | 名前       | 型 | 説明|
 |:-----------|:------|:----------|
-| 承認  | 文字列  | ベアラー {トークン}。必須。 |
-| 優先: outlook.body-content-type | 文字列 | **body** プロパティと **uniqueBody** プロパティが返されるときの形式です。 値は、"text" または "html" になります。 この `Prefer` ヘッダーが指定されている場合、`Preference-Applied` ヘッダーが確認として返されます。 ヘッダーが指定されていない場合は、**body** プロパティと **uniqueBody** プロパティは HTML 形式で返されます。 省略可能。 |
+| Authorization  | string  | ベアラー {トークン}。必須。 |
+| Prefer: outlook.body-content-type | 文字列 | **body** プロパティと **uniqueBody** プロパティが返されるときの形式です。 値は、"text" または "html" になります。 この `Prefer` ヘッダーが指定されている場合、`Preference-Applied` ヘッダーが確認として返されます。 ヘッダーが指定されていない場合は、**body** プロパティと **uniqueBody** プロパティは HTML 形式で返されます。 省略可能。 |
 
 ## <a name="request-body"></a>要求本文
 このメソッドには、要求本文を指定しません。
@@ -130,7 +130,7 @@ Content-type: application/json
 ```
 
 ##### <a name="request-2"></a>要求 2
-次の例では、メッセージのインターネット メッセージ ヘッダーを取得する `$select` クエリ パラメーターを実行します。 
+次の例では、`$select`メッセージのインターネット メッセージ ヘッダーを取得するパラメーター クエリを実行します。 
 <!-- {
   "blockType": "request",
   "sampleKeys": ["AAMkADhAAAW-VPeAAA="],
@@ -140,7 +140,7 @@ Content-type: application/json
 GET https://graph.microsoft.com/v1.0/me/messages/AAMkADhAAAW-VPeAAA=/?$select=internetMessageHeaders
 ```
 ##### <a name="response-2"></a>応答 2
-以下は、応答の例です。 注: 簡潔にするために、応答オブジェクトの一連のメッセージ ヘッダーが切り捨てられています。 実際の呼び出しではすべてのヘッダーが返されます。
+以下は、応答の例です。 注: 簡潔にするための一連の応答オブジェクトでメッセージ ヘッダーが切り捨てられます。 すべてのヘッダーは、実際の呼び出しから返されます。
 <!-- {
   "blockType": "response",
   "truncated": true,

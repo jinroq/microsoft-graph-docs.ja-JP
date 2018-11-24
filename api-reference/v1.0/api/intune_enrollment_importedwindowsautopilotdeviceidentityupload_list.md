@@ -2,7 +2,7 @@
 
 > **注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
 
-[user](../resources/intune_enrollment_importedwindowsautopilotdeviceidentityupload.md) オブジェクトのプロパティとリレーションシップをリストします。
+[ImportedWindowsAutopilotDeviceIdentityUpload](../resources/intune_enrollment_importedwindowsautopilotdeviceidentityupload.md)オブジェクトのプロパティと関係を一覧表示します。
 ## <a name="prerequisites"></a>前提条件
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](../../../concepts/permissions_reference.md)」を参照してください。
 
@@ -24,14 +24,14 @@ GET /deviceManagement/importedWindowsAutopilotDeviceIdentityUploads
 ## <a name="request-headers"></a>要求ヘッダー
 |ヘッダー|値|
 |:---|:---|
-|承認|ベアラー &lt;トークン&gt; が必須。|
-|承諾|アプリケーションまたは json|
+|Authorization|ベアラー &lt;トークン&gt; が必須。|
+|Accept|application/json|
 
 ## <a name="request-body"></a>要求本文
 このメソッドには、要求本文を指定しません。
 
 ## <a name="response"></a>応答
-成功した場合、このメソッドは `200 OK` 応答コードと、応答本文で [user](../resources/intune_enrollment_importedwindowsautopilotdeviceidentityupload.md) オブジェクトのコレクションを返します。
+かどうかは成功すると、このメソッドが返されます、`200 OK`応答コードおよび応答の本文に[importedWindowsAutopilotDeviceIdentityUpload](../resources/intune_enrollment_importedwindowsautopilotdeviceidentityupload.md)オブジェクトのコレクションです。
 
 ## <a name="example"></a>例
 ### <a name="request"></a>要求
@@ -58,11 +58,6 @@ Content-Length: 270
   ]
 }
 ```
-
-
-
-
-
 
 
 

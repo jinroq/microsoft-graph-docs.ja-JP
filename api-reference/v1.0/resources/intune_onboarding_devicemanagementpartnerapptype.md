@@ -2,18 +2,13 @@
 
 > **注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
 
-パートナー アプリの種類。
+パートナー アプリケーションの種類です。
 ## <a name="members"></a>メンバー
 |メンバー|値|説明|
 |:---|:---|:---|
-|不明|0|パートナー アプリの種類が不明です。|
-|singleTenantApp|1|パートナー アプリは、AAD(Azure AD) で単一のテナントです。|
-|multiTenantApp|2|パートナー アプリは、AAD(Azure AD) の複数テナントです。|
-
-
-
-
-
+|不明|0|パートナー アプリケーションの種類は不明です。|
+|singleTenantApp|1|パートナー アプリケーションは、AAD で単一のテナントです。|
+|multiTenantApp|2|パートナー アプリケーションは、AAD のマルチ テナント型です。|
 
 
 

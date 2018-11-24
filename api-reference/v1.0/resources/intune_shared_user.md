@@ -7,11 +7,11 @@ Azure Active Directory ユーザー オブジェクトを表します。
 ## <a name="methods"></a>メソッド
 |メソッド|戻り値の型|説明|
 |:---|:---|:---|
-|[ユーザー](../api/intune_shared_user_list.md) オブジェクト をリストする|[user](../resources/intune_shared_user.md) コレクション|[user](../resources/intune_shared_user.md) オブジェクトのプロパティとリレーションシップをリストします。|
-|オブジェクトの[ユーザーを取得](../api/intune_shared_user_get.md) する|[user](../resources/intune_shared_user.md) コレクション|[user](../resources/intune_shared_user.md) オブジェクトのプロパティとリレーションシップを読み取ります。|
-|[ユーザー](../api/intune_shared_user_create.md) オブジェクトを作成する|[user](../resources/intune_shared_user.md) コレクション|新しい [user](../resources/intune_shared_user.md) オブジェクトを作成します。|
-|[ユーザーを削除する](../api/intune_shared_user_delete.md)|なし|[user](../resources/intune_shared_user.md) を削除します。|
-|[ユーザーを更新する](../api/intune_shared_user_update.md) オブジェクトです。|[ユーザー](../resources/intune_shared_user.md)|[user](../resources/intune_shared_user.md) オブジェクトのプロパティを更新します。|
+|[ユーザーの一覧](../api/intune_shared_user_list.md)のオブジェクトです。|[user](../resources/intune_shared_user.md) コレクション|[user](../resources/intune_shared_user.md) オブジェクトのプロパティとリレーションシップをリストします。|
+|オブジェクトの[ユーザーを取得](../api/intune_shared_user_get.md)します。|[user](../resources/intune_shared_user.md) コレクション|[user](../resources/intune_shared_user.md) オブジェクトのプロパティとリレーションシップを読み取ります。|
+|[作成するユーザー](../api/intune_shared_user_create.md)オブジェクトです。|[user](../resources/intune_shared_user.md) コレクション|新しい [user](../resources/intune_shared_user.md) オブジェクトを作成します。|
+|[ユーザーを削除](../api/intune_shared_user_delete.md)します。|なし|[user](../resources/intune_shared_user.md) を削除します。|
+|[更新プログラムのユーザー](../api/intune_shared_user_update.md)オブジェクトです。|[user](../resources/intune_shared_user.md)|[user](../resources/intune_shared_user.md) オブジェクトのプロパティを更新します。|
 |**デバイスの管理**|
 |[removeAllDevicesFromManagement アクション](../api/intune_shared_user_removealldevicesfrommanagement.md)|なし|対象ユーザーの管理からすべてのデバイスを破棄します|
 |**モバイル アプリケーション管理 (MAM)**|
@@ -22,8 +22,8 @@ Azure Active Directory ユーザー オブジェクトを表します。
 ## <a name="properties"></a>プロパティ
 |プロパティ|型|説明|
 |:---|:---|:---|
-|ID|文字列|ユーザーの一意識別子。|
-|**採用**|
+|id|String|ユーザーの一意識別子。|
+|**契約時**|
 |deviceEnrollmentLimit|Int32|ユーザーが登録を許可されているデバイスの最大数。 使用できる値は 5 または 1000 です。|
 
 
@@ -45,7 +45,7 @@ Azure Active Directory ユーザー オブジェクトを表します。
   "openType": true,
   "@odata.type": "microsoft.graph.user"
 }
--->
+--> 
 ``` json
 {
   "@odata.type": "#microsoft.graph.user",

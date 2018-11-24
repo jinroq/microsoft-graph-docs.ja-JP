@@ -15,21 +15,17 @@ IT 管理者が MDM 制御デバイス用向けのカスタムの既定の検索
 なし
 ## <a name="json-representation"></a>JSON 表記
 以下は、リソースの JSON 表記です。
-<!--{
+<!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.edgeSearchEngineCustom"
-}-->
+}
+-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.edgeSearchEngineCustom",
   "edgeSearchEngineOpenSearchXmlUrl": "String"
 }
 ```
-
-
-
-
-
 
 
 

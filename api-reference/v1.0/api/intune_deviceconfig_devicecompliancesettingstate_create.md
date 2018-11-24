@@ -24,27 +24,27 @@ POST /deviceManagement/deviceCompliancePolicySettingStateSummaries/{deviceCompli
 ## <a name="request-headers"></a>要求ヘッダー
 |ヘッダー|値|
 |:---|:---|
-|承認|ベアラー &lt;トークン&gt; が必須。|
-|承諾|アプリケーションまたは json|
+|Authorization|ベアラー &lt;トークン&gt; が必要です。|
+|Accept|application/json|
 
 ## <a name="request-body"></a>要求本文
 要求本文で、deviceComplianceSettingState オブジェクトの JSON 表記を指定します。
 
 次の表に、deviceComplianceSettingState の作成時に必要なプロパティを示します。
 
-|プロパティ|タイプ|説明|
+|プロパティ|型|説明|
 |:---|:---|:---|
-|ID|文字列|エンティティのキー|
-|文字列|文字列|設定のクラス名とプロパティ名。|
-|settingName|文字列|レポートされている設定名。|
-|deviceId|文字列|レポートされているデバイス ID。|
-|deviceName|文字列|レポートされているデバイス名。|
-|userId|文字列|レポートされているユーザー ID|
-|電子メール アドレス|文字列|レポートされているユーザーのメール アドレス。|
-|ユーザーの名前|文字列|レポートされているユーザー名|
-|userPrincipalName|文字列|レポートされているユーザーの PrincipalName|
-|deviceModel|文字列|レポートされているデバイス モデル|
-|都道府県|[complianceStatus](../resources/intune_shared_compliancestatus.md)|設定のコンプライアンスの状態です。使用可能な値は `unknown`、 `notApplicable`、 `compliant`、 `remediated`、 `nonCompliant`、 `error`、 `conflict`、 `notAssigned`です。|
+|id|String|エンティティのキー|
+|setting|String|設定のクラス名とプロパティ名。|
+|settingName|String|レポートされている設定名|
+|deviceId|String|レポートされているデバイス ID|
+|deviceName|String|レポートされているデバイス名|
+|userId|String|レポートされているユーザー ID|
+|userEmail|String|レポートされているユーザーのメール アドレス|
+|userName|String|レポートされているユーザー名|
+|userPrincipalName|String|レポートされているユーザーの PrincipalName|
+|deviceModel|String|レポートされているデバイス モデル|
+|state|[complianceStatus](../resources/intune_shared_compliancestatus.md)|設定のコンプライアンスの状態です。 可能な値は、`unknown`、`notApplicable`、`compliant`、`remediated`、`nonCompliant`、`error`、`conflict`、`notAssigned` です。|
 |complianceGracePeriodExpirationDateTime|DateTimeOffset|デバイス コンプライアンスの猶予期間が過ぎる DateTime|
 
 
@@ -99,11 +99,6 @@ Content-Length: 566
   "complianceGracePeriodExpirationDateTime": "2016-12-31T23:56:44.951111-08:00"
 }
 ```
-
-
-
-
-
 
 
 

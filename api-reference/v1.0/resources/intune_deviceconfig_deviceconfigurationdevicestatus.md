@@ -13,27 +13,27 @@
 |[deviceConfigurationDeviceStatus の更新](../api/intune_deviceconfig_deviceconfigurationdevicestatus_update.md)|[deviceConfigurationDeviceStatus](../resources/intune_deviceconfig_deviceconfigurationdevicestatus.md)|[deviceConfigurationDeviceStatus](../resources/intune_deviceconfig_deviceconfigurationdevicestatus.md) オブジェクトのプロパティを更新します。|
 
 ## <a name="properties"></a>プロパティ
-|プロパティ|タイプ|説明|
+|プロパティ|型|説明|
 |:---|:---|:---|
-|ID|文字列|エンティティのキー。|
-|deviceDisplayName|文字列|DevicePolicyStatus のデバイス名。|
-|userName|文字列|レポートされているユーザー名|
-|deviceModel|文字列|レポートされているデバイス モデル|
-|complianceGracePeriodExpirationDateTime|DateTimeOffset|デバイス コンプライアンスの猶予期間が過ぎる DateTime|
-|状態|[complianceStatus](../resources/intune_shared_compliancestatus.md)|コンプライアンス ポリシー レポートの状態。使用可能な値は `unknown`、 `notApplicable`、 `compliant`、 `remediated`、 `nonCompliant`、 `error`、 `conflict`、 `notAssigned`です。|
-|lastReportedDateTime|DateTimeOffset|ポリシー レポートの最終変更日時。|
-|userPrincipalName|文字列|UserPrincipalName。|
+|id|String|エンティティのキー。|
+|deviceDisplayName|String|DevicePolicyStatus のデバイス名です。|
+|userName|String|レポートされているユーザー名です|
+|deviceModel|String|レポートされているデバイス モデルです|
+|complianceGracePeriodExpirationDateTime|DateTimeOffset|デバイス コンプライアンスの猶予期間が過ぎた DateTime です|
+|status|[complianceStatus](../resources/intune_shared_compliancestatus.md)|ポリシー レポートのコンプライアンスの状態。 可能な値は、`unknown`、`notApplicable`、`compliant`、`remediated`、`nonCompliant`、`error`、`conflict`、`notAssigned` です。|
+|lastReportedDateTime|DateTimeOffset|ポリシー レポートの最終変更日時です。|
+|userPrincipalName|String|UserPrincipalName。|
 
 ## <a name="relationships"></a>リレーションシップ
 なし
 ## <a name="json-representation"></a>JSON 表記
 以下は、リソースの JSON 表記です。
-<!--{
+<!-- {
   "blockType": "resource",
-  "baseType": "microsoft.graph.entity",
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.deviceConfigurationDeviceStatus"
-}-->
+}
+-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.deviceConfigurationDeviceStatus",
@@ -47,11 +47,6 @@
   "userPrincipalName": "String"
 }
 ```
-
-
-
-
-
 
 
 

@@ -2,7 +2,7 @@
 
 ユーザーに対してサポートされている (ユーザーのメールボックス サーバーで構成されている) タイム ゾーンのリストを取得します。
 
-Windows のタイム ゾーン形式または [Internet Assigned Numbers Authority (IANA) のタイム ゾーン](http://www.iana.org/time-zones) (別称: Olson タイム ゾーン) 形式でタイム ゾーンが返されるよう、明示的に指定できます。 既定値は Windows 形式です。
+Windows のタイム ゾーン形式または [Internet Assigned Numbers Authority (IANA) のタイム ゾーン](https://www.iana.org/time-zones) (別称: Olson タイム ゾーン) 形式でタイム ゾーンが返されるよう、明示的に指定できます。 既定値は Windows 形式です。
 
 Outlook クライアントを設定する際は、このサポートされているリストから、優先するタイム ゾーンを選択します。 これにより、[ユーザーのメールボックス設定を取得](user_get_mailboxsettings.md)することによって、優先タイム ゾーンを取得できるようになります。
 
@@ -29,12 +29,12 @@ GET /users/{id|userPrincipalName}/outlook/supportedTimeZones(TimeZoneStandard=mi
 ## <a name="function-parameters"></a>関数パラメーター
 | パラメーター       | 型 | 説明|
 |:---------------|:--------|:----------|
-| TimeZoneStandard  | TimeZoneStandard  | タイム ゾーンの形式。 サポートされている値は `Windows` および `Iana` です。 省略可能。 |
+| TimeZoneStandard  | timeZoneStandard  | タイム ゾーンの形式。 サポートされている値は `Windows` および `Iana` です。 省略可能。 |
 
 ## <a name="request-headers"></a>要求ヘッダー
 | 名前       | 型 | 説明|
 |:---------------|:--------|:----------|
-| 承認  | string  | ベアラー {トークン}。必須。 |
+| Authorization  | string  | ベアラー {トークン}。必須。 |
 
 ## <a name="request-body"></a>要求本文
 このメソッドには、要求本文を指定しません。

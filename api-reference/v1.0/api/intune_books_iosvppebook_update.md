@@ -8,7 +8,7 @@
 
 |アクセス許可の種類|アクセス許可 (特権の大きいものから小さいものへ)|
 |:---|:---|
-|委任 (職場または学校のアカウント)|DeviceManagementApps.ReadWrite.All|
+|委任 (職場または学校アカウント)|DeviceManagementApps.ReadWrite.All|
 |委任 (個人用 Microsoft アカウント)|サポートされていません。|
 |アプリケーション|サポートされていません。|
 
@@ -24,32 +24,32 @@ PATCH /deviceAppManagement/managedEBooks/{managedEBookId}
 ## <a name="request-headers"></a>要求ヘッダー
 |ヘッダー|値|
 |:---|:---|
-|承認|ベアラー &lt;トークン&gt; が必須。|
-|承諾|アプリケーションまたは json|
+|Authorization|ベアラー &lt;トークン&gt; が必須。|
+|Accept|application/json|
 
 ## <a name="request-body"></a>要求本文
 要求本文で、[iosVppEBook](../resources/intune_books_iosvppebook.md) オブジェクトの JSON 表記を指定します。
 
 次の表に、[iosVppEBook](../resources/intune_books_iosvppebook.md) の作成時に必要になるプロパティを示します。
 
-|プロパティ|タイプ|説明|
+|プロパティ|型|説明|
 |:---|:---|:---|
-|ID|文字列|エンティティのキー。 [managedEBook](../resources/intune_books_managedebook.md) から継承します|
-|displayName|文字列|電子ブックの名前。 [managedEBook](../resources/intune_books_managedebook.md) から継承します|
-|説明|文字列|説明。 [managedEBook](../resources/intune_books_managedebook.md) から継承します|
-|パブリッシャー|文字列|発行元です。 [managedEBook](../resources/intune_books_managedebook.md) から継承します|
+|id|String|エンティティのキー。 [managedEBook](../resources/intune_books_managedebook.md) から継承します|
+|displayName|String|電子ブックの名前。 [managedEBook](../resources/intune_books_managedebook.md) から継承します|
+|description|String|説明。 [managedEBook](../resources/intune_books_managedebook.md) から継承します|
+|publisher|String|発行元。 [managedEBook](../resources/intune_books_managedebook.md) から継承します|
 |publishedDateTime|DateTimeOffset|電子ブックが発行された日時。 [managedEBook](../resources/intune_books_managedebook.md) から継承します|
-|largeCover|[マイムコンテンツ](../resources/intune_shared_mimecontent.md)|ブック カバー。 [managedEBook](../resources/intune_books_managedebook.md) から継承します|
+|largeCover|[mimeContent](../resources/intune_shared_mimecontent.md)|ブック カバー。 [managedEBook](../resources/intune_books_managedebook.md) から継承します|
 |createdDateTime|DateTimeOffset|電子ブック ファイルが作成された日時。 [managedEBook](../resources/intune_books_managedebook.md) から継承します|
 |lastModifiedDateTime|DateTimeOffset|電子ブックが最後に変更された日時。 [managedEBook](../resources/intune_books_managedebook.md) から継承します|
-|informationUrl|文字列|詳細情報の URL。 [managedEBook](../resources/intune_books_managedebook.md) から継承します|
-|privacyInformationUrl|文字列|プライバシーに関する声明の URL。 [managedEBook](../resources/intune_books_managedebook.md) から継承します|
+|informationUrl|String|詳細情報の URL。 [managedEBook](../resources/intune_books_managedebook.md) から継承します|
+|privacyInformationUrl|String|プライバシーに関する声明の URL。 [managedEBook](../resources/intune_books_managedebook.md) から継承します|
 |vppTokenId|Guid|Vpp トークン ID。|
-|appleId|文字列|Vpp トークンに関連付けられている Apple ID。|
-|vppOrganizationName|文字列|Vpp トークンの組織の名前。|
-|ジャンル|String コレクション|ジャンル。|
-|言語|文字列|言語。|
-|販売元|文字列|販売元。|
+|appleId|String|Vpp トークンに関連付けられている Apple ID。|
+|vppOrganizationName|String|Vpp トークンの組織の名前。|
+|genres|String コレクション|ジャンル。|
+|language|String|言語。|
+|seller|String|販売元。|
 |totalLicenseCount|Int32|ライセンスの合計数。|
 |usedLicenseCount|Int32|使用されているライセンスの数。|
 
@@ -64,9 +64,10 @@ PATCH /deviceAppManagement/managedEBooks/{managedEBookId}
 ``` http
 PATCH https://graph.microsoft.com/v1.0/deviceAppManagement/managedEBooks/{managedEBookId}
 Content-type: application/json
-Content-length: 803
+Content-length: 792
 
 {
+  "@odata.type": "#microsoft.graph.iosVppEBook",
   "displayName": "Display Name value",
   "description": "Description value",
   "publisher": "Publisher value",
@@ -76,10 +77,9 @@ Content-length: 803
     "type": "Type value",
     "value": "dmFsdWU="
   },
-  "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
   "informationUrl": "https://example.com/informationUrl/",
   "privacyInformationUrl": "https://example.com/privacyInformationUrl/",
-  "vppTokenId": "<Unknown Primitive Type Edm.Guid>",
+  "vppTokenId": "9148ac60-ac60-9148-60ac-489160ac4891",
   "appleId": "Apple Id value",
   "vppOrganizationName": "Vpp Organization Name value",
   "genres": [
@@ -97,7 +97,7 @@ Content-length: 803
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 961
+Content-Length: 964
 
 {
   "@odata.type": "#microsoft.graph.iosVppEBook",
@@ -115,7 +115,7 @@ Content-Length: 961
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
   "informationUrl": "https://example.com/informationUrl/",
   "privacyInformationUrl": "https://example.com/privacyInformationUrl/",
-  "vppTokenId": "<Unknown Primitive Type Edm.Guid>",
+  "vppTokenId": "9148ac60-ac60-9148-60ac-489160ac4891",
   "appleId": "Apple Id value",
   "vppOrganizationName": "Vpp Organization Name value",
   "genres": [
@@ -127,11 +127,6 @@ Content-Length: 961
   "usedLicenseCount": 0
 }
 ```
-
-
-
-
-
 
 
 

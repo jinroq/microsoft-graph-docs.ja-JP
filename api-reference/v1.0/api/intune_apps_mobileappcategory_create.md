@@ -25,8 +25,8 @@ POST /deviceAppManagement/mobileApps/{mobileAppId}/categories
 ## <a name="request-headers"></a>要求ヘッダー
 |ヘッダー|値|
 |:---|:---|
-|承認|ベアラー &lt;トークン&gt; が必須。|
-|受け入れる|アプリケーションまたは json|
+|Authorization|ベアラー &lt;トークン&gt; が必要です。|
+|Accept|application/json|
 
 ## <a name="request-body"></a>要求本文
 要求本文で、mobileAppCategory オブジェクトの JSON 表記を指定します。
@@ -35,8 +35,8 @@ POST /deviceAppManagement/mobileApps/{mobileAppId}/categories
 
 |プロパティ|型|説明|
 |:---|:---|:---|
-|ID|文字列|エンティティのキー。|
-|displayName|文字列|アプリのカテゴリの名前。|
+|id|String|エンティティのキー。|
+|displayName|String|アプリのカテゴリの名前。|
 |lastModifiedDateTime|DateTimeOffset|mobileAppCategory が最後に変更された日時。|
 
 
@@ -50,12 +50,11 @@ POST /deviceAppManagement/mobileApps/{mobileAppId}/categories
 ``` http
 POST https://graph.microsoft.com/v1.0/deviceAppManagement/mobileAppCategories
 Content-type: application/json
-Content-length: 163
+Content-length: 99
 
 {
   "@odata.type": "#microsoft.graph.mobileAppCategory",
-  "displayName": "Display Name value",
-  "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00"
+  "displayName": "Display Name value"
 }
 ```
 
@@ -73,11 +72,6 @@ Content-Length: 212
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00"
 }
 ```
-
-
-
-
-
 
 
 

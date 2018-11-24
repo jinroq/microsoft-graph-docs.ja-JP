@@ -9,20 +9,21 @@
 ## <a name="properties"></a>プロパティ
 |プロパティ|型|説明|
 |:---|:---|:---|
-|actionName|文字列|[deviceActionResult](../resources/intune_devices_deviceactionresult.md) から継承されるアクション名|
-|actionState|[actionState](../resources/intune_devices_actionstate.md)|[DeviceActionResult](../resources/intune_devices_deviceactionresult.md)から継承されたアクションの状態です。 使用可能な値は`none`、`pending`、`canceled`、`active`、`done`、`failed`、`notSupported` です。|
+|actionName|文字列型 (String)|[deviceActionResult](../resources/intune_devices_deviceactionresult.md) から継承されるアクション名|
+|actionState|[actionState](../resources/intune_devices_actionstate.md)|[DeviceActionResult](../resources/intune_devices_deviceactionresult.md)から継承される、アクションの状態です。 可能な値は、`none`、`pending`、`canceled`、`active`、`done`、`failed`、`notSupported` です。|
 |startDateTime|DateTimeOffset|アクションが開始された時刻 ([deviceActionResult](../resources/intune_devices_deviceactionresult.md) から継承)|
 |lastUpdatedDateTime|DateTimeOffset|アクション状態の最終更新時刻。[deviceActionResult](../resources/intune_devices_deviceactionresult.md) から継承|
-|unlockPin|文字列|クライアントをロック解除するためのピン|
+|unlockPin|文字列型 (String)|クライアントをロック解除するためのピン|
 
 ## <a name="relationships"></a>リレーションシップ
 なし
 ## <a name="json-representation"></a>JSON 表記
 以下は、リソースの JSON 表記です。
-<!--{
+<!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.remoteLockActionResult"
-}-->
+}
+-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.remoteLockActionResult",
@@ -33,11 +34,6 @@
   "unlockPin": "String"
 }
 ```
-
-
-
-
-
 
 
 

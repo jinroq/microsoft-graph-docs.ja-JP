@@ -6,38 +6,38 @@
 ## <a name="methods"></a>メソッド
 |メソッド|戻り値の型|説明|
 |:---|:---|:---|
-|[deviceComplianceSettingStates のリスト](../api/intune_deviceconfig_devicecompliancesettingstate_list.md)|[deviceComplianceSettingState](../resources/intune_deviceconfig_devicecompliancesettingstate.md) コレクション|[deviceComplianceSettingState](../resources/intune_deviceconfig_devicecompliancesettingstate.md) オブジェクトのプロパティとリレーションシップをリストします。|
-|[deviceComplianceSettingState の取得](../api/intune_deviceconfig_devicecompliancesettingstate_get.md)|[deviceComplianceSettingState](../resources/intune_deviceconfig_devicecompliancesettingstate.md)|[deviceComplianceSettingState](../resources/intune_deviceconfig_devicecompliancesettingstate.md) オブジェクトのプロパティとリレーションシップを読み取ります。|
-|[deviceComplianceSettingState の作成](../api/intune_deviceconfig_devicecompliancesettingstate_create.md)|[deviceComplianceSettingState](../resources/intune_deviceconfig_devicecompliancesettingstate.md)|新しい [deviceComplianceSettingState](../resources/intune_deviceconfig_devicecompliancesettingstate.md) オブジェクトを作成します。|
-|[deviceComplianceSettingState の削除](../api/intune_deviceconfig_devicecompliancesettingstate_delete.md)|なし|[deviceComplianceSettingState](../resources/intune_deviceconfig_devicecompliancesettingstate.md) を削除します。|
-|[deviceComplianceSettingState の更新](../api/intune_deviceconfig_devicecompliancesettingstate_update.md)|[deviceComplianceSettingState](../resources/intune_deviceconfig_devicecompliancesettingstate.md)|[deviceComplianceSettingState](../resources/intune_deviceconfig_devicecompliancesettingstate.md) オブジェクトのプロパティを更新します。|
+|[List deviceComplianceSettingStates](../api/intune_deviceconfig_devicecompliancesettingstate_list.md)|[deviceComplianceSettingState](../resources/intune_deviceconfig_devicecompliancesettingstate.md) コレクション|[deviceComplianceSettingState](../resources/intune_deviceconfig_devicecompliancesettingstate.md) オブジェクトのプロパティとリレーションシップをリストします。|
+|[Get deviceComplianceSettingState](../api/intune_deviceconfig_devicecompliancesettingstate_get.md)|[deviceComplianceSettingState](../resources/intune_deviceconfig_devicecompliancesettingstate.md)|[deviceComplianceSettingState](../resources/intune_deviceconfig_devicecompliancesettingstate.md) オブジェクトのプロパティとリレーションシップを読み取ります。|
+|[Create deviceComplianceSettingState](../api/intune_deviceconfig_devicecompliancesettingstate_create.md)|[deviceComplianceSettingState](../resources/intune_deviceconfig_devicecompliancesettingstate.md)|新しい [deviceComplianceSettingState](../resources/intune_deviceconfig_devicecompliancesettingstate.md) オブジェクトを作成します。|
+|[Delete deviceComplianceSettingState](../api/intune_deviceconfig_devicecompliancesettingstate_delete.md)|なし|[deviceComplianceSettingState](../resources/intune_deviceconfig_devicecompliancesettingstate.md) を削除します。|
+|[Update deviceComplianceSettingState](../api/intune_deviceconfig_devicecompliancesettingstate_update.md)|[deviceComplianceSettingState](../resources/intune_deviceconfig_devicecompliancesettingstate.md)|[deviceComplianceSettingState](../resources/intune_deviceconfig_devicecompliancesettingstate.md) オブジェクトのプロパティを更新します。|
 
 ## <a name="properties"></a>プロパティ
-|プロパティ|タイプ|説明|
+|プロパティ|型|説明|
 |:---|:---|:---|
-|ID|文字列|エンティティのキー|
-|setting|文字列|設定のクラス名とプロパティ名。|
-|settingName|文字列|レポートされている設定名。|
-|deviceId|文字列|レポートされているデバイス ID。|
-|deviceName|文字列|レポートされているデバイス名。|
-|userId|文字列|レポートされているユーザー ID|
-|userEmail|文字列|レポートされているユーザーのメール アドレス。|
-|userName|文字列|レポートされているユーザー名|
-|userPrincipalName|文字列|レポートされているユーザーの PrincipalName|
-|deviceModel|文字列|レポートされているデバイス モデル|
-|state|[complianceStatus](../resources/intune_shared_compliancestatus.md)|設定のコンプライアンスの状態です。使用可能な値は `unknown`、 `notApplicable`、 `compliant`、 `remediated`、 `nonCompliant`、 `error`、 `conflict`、 `notAssigned`です。|
+|id|String|エンティティのキー|
+|setting|String|設定のクラス名とプロパティ名。|
+|settingName|String|レポートされている設定名。|
+|deviceId|String|レポートされているデバイス ID。|
+|deviceName|String|レポートされているデバイス名。|
+|userId|String|レポートされているユーザー ID。|
+|userEmail|String|レポートされているユーザーのメール アドレス。|
+|userName|String|レポートされているユーザー名。|
+|userPrincipalName|String|レポートされているユーザーの PrincipalName。|
+|deviceModel|String|レポートされているデバイス モデル。|
+|state|[complianceStatus](../resources/intune_shared_compliancestatus.md)|設定のコンプライアンスの状態です。 可能な値は、`unknown`、`notApplicable`、`compliant`、`remediated`、`nonCompliant`、`error`、`conflict`、`notAssigned` です。|
 |complianceGracePeriodExpirationDateTime|DateTimeOffset|デバイス コンプライアンスの猶予期間が過ぎる DateTime|
 
 ## <a name="relationships"></a>リレーションシップ
 なし
 ## <a name="json-representation"></a>JSON 表記
 以下は、リソースの JSON 表記です。
-<!--{
+<!-- {
   "blockType": "resource",
-  "baseType": "microsoft.graph.entity",
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.deviceComplianceSettingState"
-}-->
+}
+-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.deviceComplianceSettingState",
@@ -55,11 +55,6 @@
   "complianceGracePeriodExpirationDateTime": "String (timestamp)"
 }
 ```
-
-
-
-
-
 
 
 

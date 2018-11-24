@@ -14,14 +14,15 @@ OMA 設定の整数の定義。
 |omaUri|文字列|OMA。 [omaSetting](../resources/intune_deviceconfig_omasetting.md) からの継承|
 |値|Int32|値。|
 
-## <a name="relationships"></a>リレーションシップ
+## <a name="relationships"></a>関係
 なし
 ## <a name="json-representation"></a>JSON 表記
 以下は、リソースの JSON 表記です。
-<!--{
+<!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.omaSettingInteger"
-}-->
+}
+-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.omaSettingInteger",
@@ -31,11 +32,6 @@ OMA 設定の整数の定義。
   "value": 1024
 }
 ```
-
-
-
-
-
 
 
 

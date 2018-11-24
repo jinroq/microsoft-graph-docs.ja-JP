@@ -6,22 +6,17 @@
 ## <a name="members"></a>メンバー
 |メンバー|値|説明|
 |:---|:---|:---|
-|EAS|1|デバイスは、Exchange サーバーによって管理されます。|
-|mdm|2|デバイスは Intune MDM によって管理されます。|
-|easMdm|3|デバイスは、Exchange サーバーによって管理されます。|
+|ea|1|デバイスは、Exchange サーバーによって管理されます。|
+|mdm|2|Intune MDM. で、デバイスを管理します。|
+|easMdm|3|Intune MDM. と Exchange サーバーの両方がデバイス管理します。|
 |intuneClient|4|Intune クライアントが管理されています。|
-|easIntuneClient|5|デバイスは EAS と Intune クライアントによりデュアル管理されています。|
-|configurationManagerClient|8|デバイスは構成マネージャによって管理されます。|
-|configurationManagerClientMdm|10|デバイスは構成マネージャと MDM によって管理されます。|
-|configurationManagerClientMdmEas|11|デバイスはは構成マネージャ、MDM および Eas によって管理されます。|
+|easIntuneClient|5|デバイスは、EA と Intune クライアント デュアル管理です。|
+|configurationManagerClient|8|デバイスは、構成マネージャーによって管理されます。|
+|configurationManagerClientMdm|10|デバイスの管理は、構成マネージャーと MDM.|
+|configurationManagerClientMdmEas|11|デバイスは、MDM および Ea は、構成マネージャーによって管理されます。|
 |不明|16|不明な管理エージェントの種類です。|
 |jamf|32|デバイス属性は、Jamf からフェッチされます。|
 |googleCloudDevicePolicyController|64|デバイスは、Google の CloudDPC によって管理されます。|
-
-
-
-
-
 
 
 

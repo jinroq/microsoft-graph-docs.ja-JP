@@ -12,15 +12,20 @@
 
 ## <a name="permissions"></a>アクセス許可
 
-この API を呼び出すには、拡張機能が含まれているリソースに応じて、以下のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](../../../concepts/permissions_reference.md)」を参照してください。
+拡張機能とアクセス許可が含まれるリソースによって委任された (アプリケーション) の種類を要求、次の表で指定されたアクセス許可は、この API を呼び出すために必要最低限の特権。 アクセス許可の選択方法などの詳細については、「[アクセス許可](../../../concepts/permissions_reference.md)」を参照してください。
 
-|**サポートされているリソース**|**アクセス許可**|**サポートされているリソース**|**アクセス許可** |
+| サポートされているリソース | 委任 (職場または学校のアカウント) | 委任 (個人用 Microsoft アカウント) | アプリケーション |
 |:-----|:-----|:-----|:-----|
-| [デバイス](../resources/device.md) | Directory.Read.All | [イベント](../resources/event.md) | Calendars.Read |
-| [グループ](../resources/group.md) | Group.Read.All | [グループ イベント](../resources/event.md) | Group.Read.All |
-| [グループの投稿](../resources/post.md) | Group.Read.All | [メッセージ](../resources/message.md) | Mail.Read |
-| [組織](../resources/organization.md) | Directory.Read.All | [個人用連絡先](../resources/contact.md) | Contacts.Read |
-| [ユーザー](../resources/user.md) | User.ReadBasic.All | | |
+| [device](../resources/device.md) | Directory.Read.All | サポートされていません | Device.ReadWrite.All |
+| [イベント](../resources/event.md) | Calendars.Read | Calendars.Read | Calendars.Read |
+| [group](../resources/group.md) | Group.Read.All | サポートされていません | Group.Read.All |
+| [グループ イベント](../resources/event.md) | Group.Read.All | 使用不可 | 使用不可 |
+| [グループの投稿](../resources/post.md) | Group.Read.All | サポートされていません | Group.Read.All |
+| [message](../resources/message.md) | Mail.Read | Mail.Read | Mail.Read | 
+| [organization](../resources/organization.md) | User.Read | 使用不可 | 使用不可 |
+| [個人用連絡先](../resources/contact.md) | Contacts.Read | Contacts.Read | Contacts.Read |
+| [user](../resources/user.md) | User.Read | User.Read | User.Read.All |
+
 
 ## <a name="http-request"></a>HTTP 要求
 
@@ -86,23 +91,23 @@ GET /users/{Id|userPrincipalName}/contacts?$filter=Extensions/any(f:f/id eq '{ex
 ## <a name="path-parameters"></a>パス パラメーター
 |パラメーター|型|説明|
 |:-----|:-----|:-----|
-|id|string|メッセージ、イベント、連絡先などの対応するコレクションに含まれるオブジェクトの一意識別子を格納するプレースホルダー。必須。**openTypeExtension** の **id** プロパティと混同しないこと。|
-|extensionId|string|拡張情報名を表すプレースホルダー。これは、拡張情報の一意のテキスト識別子であるか、拡張情報の種類と一意のテキスト識別子を連結した完全修飾名のいずれかです。完全修飾名は、拡張情報の作成時に **id** プロパティに入れて返されます。必須。|
+|Id|文字列|メッセージ、イベント、連絡先などの対応するコレクションに含まれるオブジェクトの一意識別子を格納するプレースホルダー。必須。**openTypeExtension** の **id** プロパティと混同しないこと。|
+|extensionId|文字列|拡張情報名を表すプレースホルダー。これは、拡張情報の一意のテキスト識別子であるか、拡張情報の種類と一意のテキスト識別子を連結した完全修飾名のいずれかです。完全修飾名は、拡張情報の作成時に **id** プロパティに入れて返されます。必須。|
 
 ## <a name="optional-query-parameters"></a>オプションのクエリ パラメーター
 
-`$filter` 文字列内のスペース文字には必ず [URL エンコード](http://www.w3schools.com/tags/ref_urlencode.asp)を適用してください。
+`$filter` 文字列内のスペース文字には必ず [URL エンコード](https://www.w3schools.com/tags/ref_urlencode.asp)を適用してください。
 
 |名前|値|説明|
 |:---------------|:--------|:-------|
-|$filter|string|**id** が `extensionId` パラメーターの値と一致する拡張情報を返します。|
-|**任意**の演算子をもつ $Filter|string|**id** が `extensionId` パラメーターの値と一致する拡張情報を含むリソース コレクションのインスタンスを返します。|
-|$expand|string|リソース インスタンスを展開して、拡張情報を組み込みます。 |
+|$filter|文字列|**id** が `extensionId` パラメーターの値と一致する拡張情報を返します。|
+|$filter with **any** operator|文字列|**id** が `extensionId` パラメーターの値と一致する拡張情報を含むリソース コレクションのインスタンスを返します。|
+|$expand|文字列|リソース インスタンスを展開して、拡張情報を組み込みます。 |
 
 ## <a name="request-headers"></a>要求ヘッダー
 | 名前       | 値 |
 |:---------------|:----------|
-| 承認 | ベアラー {トークン}。必須。 |
+| Authorization | ベアラー {トークン}。必須。 |
 
 ## <a name="request-body"></a>要求本文
 このメソッドには、要求本文を指定しません。

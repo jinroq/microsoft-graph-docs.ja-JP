@@ -26,8 +26,8 @@ PATCH /deviceAppManagement/mobileApps/{mobileAppId}/microsoft.graph.managedMobil
 ## <a name="request-headers"></a>要求ヘッダー
 |ヘッダー|値|
 |:---|:---|
-|承認|ベアラー &lt;トークン&gt; が必須。|
-|承諾する|アプリケーションまたは json|
+|Authorization|ベアラー &lt;トークン&gt; が必要です。|
+|Accept|application/json|
 
 ## <a name="request-body"></a>要求本文
 要求本文で、[mobileAppContent](../resources/intune_apps_mobileappcontent.md) オブジェクトの JSON 表記を指定します。
@@ -36,7 +36,7 @@ PATCH /deviceAppManagement/mobileApps/{mobileAppId}/microsoft.graph.managedMobil
 
 |プロパティ|型|説明|
 |:---|:---|:---|
-|ID|文字列|アプリのコンテンツのバージョン。|
+|id|String|アプリのコンテンツのバージョン。|
 
 
 
@@ -49,9 +49,11 @@ PATCH /deviceAppManagement/mobileApps/{mobileAppId}/microsoft.graph.managedMobil
 ``` http
 PATCH https://graph.microsoft.com/v1.0/deviceAppManagement/mobileApps/{mobileAppId}/contentVersions/{mobileAppContentId}
 Content-type: application/json
-Content-length: 2
+Content-length: 58
 
-{}
+{
+  "@odata.type": "#microsoft.graph.mobileAppContent"
+}
 ```
 
 ### <a name="response"></a>応答
@@ -66,11 +68,6 @@ Content-Length: 107
   "id": "fe0bb9a9-b9a9-fe0b-a9b9-0bfea9b90bfe"
 }
 ```
-
-
-
-
-
 
 
 

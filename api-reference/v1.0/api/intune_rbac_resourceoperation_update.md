@@ -24,8 +24,8 @@ PATCH /deviceManagement/resourceOperations/{resourceOperationId}
 ## <a name="request-headers"></a>要求ヘッダー
 |ヘッダー|値|
 |:---|:---|
-|承認|ベアラー &lt;トークン&gt; が必須。|
-|承諾する|アプリケーションまたは json|
+|承認|ベアラー &lt;トークン&gt;が必須。|
+|承諾|application/json|
 
 ## <a name="request-body"></a>要求本文
 要求本文で、[resourceOperation](../resources/intune_rbac_resourceoperation.md) オブジェクトの JSON 表記を指定します。
@@ -34,10 +34,10 @@ PATCH /deviceManagement/resourceOperations/{resourceOperationId}
 
 |プロパティ|型|説明|
 |:---|:---|:---|
-|ID|文字列|リソース操作のキー。 読み取り専用で、自動生成されます。|
-|resourceName|文字列|この操作が実行されるリソースの名前。|
-|actionName|文字列|この操作が実行するアクションの種類。 actionName は簡潔で、できるだけ少ない単語にする必要があります。|
-|説明|文字列|リソース操作の説明。 Azure Portal で操作にマウス ポインターを合わせると、その操作の説明がテキストで表示されます。|
+|id|String|リソース操作のキー。 読み取り専用で、自動生成されます。|
+|resourceName|String|この操作が実行されるリソースの名前。|
+|actionName|String|この操作が実行するアクションの種類。 actionName は簡潔で、できるだけ少ない単語にする必要があります。|
+|description|String|リソース操作の説明。 Azure Portal で操作にマウス ポインターを合わせると、その操作の説明がテキストで表示されます。|
 
 
 
@@ -50,9 +50,10 @@ PATCH /deviceManagement/resourceOperations/{resourceOperationId}
 ``` http
 PATCH https://graph.microsoft.com/v1.0/deviceManagement/resourceOperations/{resourceOperationId}
 Content-type: application/json
-Content-length: 122
+Content-length: 178
 
 {
+  "@odata.type": "#microsoft.graph.resourceOperation",
   "resourceName": "Resource Name value",
   "actionName": "Action Name value",
   "description": "Description value"
@@ -74,11 +75,6 @@ Content-Length: 227
   "description": "Description value"
 }
 ```
-
-
-
-
-
 
 
 

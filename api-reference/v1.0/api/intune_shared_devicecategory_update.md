@@ -8,7 +8,8 @@
 
 |アクセス許可の種類|アクセス許可 (特権の大きいものから小さいものへ)|
 |:---|:---|
-|委任 (職場または学校のアカウント)|DeviceManagementManagedDevices.ReadWrite.All|
+|委任 (職場または学校のアカウント)||
+| &nbsp;&nbsp; **契約時**と <br> &nbsp;&nbsp; **デバイスの管理**| DeviceManagementManagedDevices.ReadWrite.All|
 |委任 (個人用 Microsoft アカウント)|サポートされていません。|
 |アプリケーション|サポートされていません。|
 
@@ -25,8 +26,8 @@ PATCH /deviceManagement/detectedApps/{detectedAppId}/managedDevices/{managedDevi
 ## <a name="request-headers"></a>要求ヘッダー
 |ヘッダー|値|
 |:---|:---|
-|承認|ベアラー &lt;トークン&gt; が必須。|
-|受諾|アプリケーション /json|
+|Authorization|ベアラー &lt;トークン&gt; が必須。|
+|Accept|application/json|
 
 ## <a name="request-body"></a>要求本文
 要求本文で、[deviceCategory](../resources/intune_shared_devicecategory.md) オブジェクトの JSON 表記を指定します。
@@ -35,10 +36,10 @@ PATCH /deviceManagement/detectedApps/{detectedAppId}/managedDevices/{managedDevi
 
 |プロパティ|型|説明|
 |:---|:---|:---|
-|id|文字列|デバイス カテゴリの一意識別子。 読み取り専用。|
-|**採用**|
-|displayName|文字列|デバイス カテゴリの表示名。|
-|説明|文字列|デバイス カテゴリに関するオプションの説明。|
+|id|文字列|デバイス カテゴリの一意識別子。 読み取り専用です。|
+|**契約時**|
+|displayName|String|デバイス カテゴリの表示名。|
+|説明|String|デバイス カテゴリに関するオプションの説明。|
 
 
 

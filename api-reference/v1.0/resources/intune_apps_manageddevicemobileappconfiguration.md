@@ -8,35 +8,36 @@
 |:---|:---|:---|
 |[managedDeviceMobileAppConfigurations のリスト](../api/intune_apps_manageddevicemobileappconfiguration_list.md)|[managedDeviceMobileAppConfiguration](../resources/intune_apps_manageddevicemobileappconfiguration.md) コレクション|[managedDeviceMobileAppConfiguration](../resources/intune_apps_manageddevicemobileappconfiguration.md) オブジェクトのプロパティとリレーションシップをリストします。|
 |[managedDeviceMobileAppConfiguration の取得](../api/intune_apps_manageddevicemobileappconfiguration_get.md)|[managedDeviceMobileAppConfiguration](../resources/intune_apps_manageddevicemobileappconfiguration.md)|[managedDeviceMobileAppConfiguration](../resources/intune_apps_manageddevicemobileappconfiguration.md) オブジェクトのプロパティとリレーションシップを読み取ります。|
+|[assign action](../api/intune_apps_manageddevicemobileappconfiguration_assign.md)|なし|まだ文書化されていません|
 
 ## <a name="properties"></a>プロパティ
 |プロパティ|型|説明|
 |:---|:---|:---|
-|ID|文字列|エンティティのキー。|
+|id|String|エンティティのキー。|
 |targetedMobileApps|String コレクション|関連するアプリです。|
 |createdDateTime|DateTimeOffset|オブジェクトが作成された DateTime。|
-|説明|文字列|デバイス構成について管理者が提供した説明です。|
+|説明|String|デバイス構成について管理者が提供した説明です。|
 |lastModifiedDateTime|DateTimeOffset|オブジェクトが最後に変更された DateTime。|
-|displayName|文字列|デバイス構成について管理者が指定した名前です。|
-|バージョン|Int32|デバイス構成のバージョン。|
+|displayName|String|デバイス構成について管理者が指定した名前です。|
+|version|Int32|デバイス構成のバージョン。|
 
 ## <a name="relationships"></a>リレーションシップ
 |リレーションシップ|型|説明|
 |:---|:---|:---|
-|割り当て|[managedDeviceMobileAppConfigurationAssignment](../resources/intune_apps_manageddevicemobileappconfigurationassignment.md) コレクション|アプリ構成のグループ割り当てのリストです。|
-|deviceStatuses|[managedDeviceMobileAppConfigurationDeviceStatus](../resources/intune_apps_manageddevicemobileappconfigurationdevicestatus.md) コレクション|ManagedDeviceMobileAppConfigurationDeviceStatus のリストです。|
+|assignments|[managedDeviceMobileAppConfigurationAssignment](../resources/intune_apps_manageddevicemobileappconfigurationassignment.md) コレクション|アプリ構成のグループ割り当てのリストです。|
+|deviceStatuses|[managedDeviceMobileAppConfigurationDeviceStatus](../resources/intune_apps_manageddevicemobileappconfigurationdevicestatus.md)コレクション|ManagedDeviceMobileAppConfigurationDeviceStatus のリストです。|
 |userStatuses|[managedDeviceMobileAppConfigurationUserStatus](../resources/intune_apps_manageddevicemobileappconfigurationuserstatus.md) コレクション|ManagedDeviceMobileAppConfigurationUserStatus のリストです。|
 |deviceStatusSummary|[managedDeviceMobileAppConfigurationDeviceSummary](../resources/intune_apps_manageddevicemobileappconfigurationdevicesummary.md)|アプリ構成のデバイス状態の要約です。|
 |userStatusSummary|[managedDeviceMobileAppConfigurationUserSummary](../resources/intune_apps_manageddevicemobileappconfigurationusersummary.md)|アプリ構成のユーザー状態の要約です。|
 
 ## <a name="json-representation"></a>JSON 表記
 以下は、リソースの JSON 表記です。
-<!--{
+<!-- {
   "blockType": "resource",
-  "baseType": "microsoft.graph.entity",
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.managedDeviceMobileAppConfiguration"
-}-->
+}
+-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.managedDeviceMobileAppConfiguration",
@@ -51,11 +52,6 @@
   "version": 1024
 }
 ```
-
-
-
-
-
 
 
 

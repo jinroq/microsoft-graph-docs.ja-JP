@@ -1,7 +1,7 @@
 # <a name="timezoneinformation-resource-type"></a>timeZoneInformation リソースの種類
 
 
-タイム ゾーンを表します。 サポートされる形式は、Windows 形式です。現在既知の問題が解決されている場合は、[Internet Assigned Numbers Authority (IANA) タイム ゾーン](http://www.iana.org/time-zones) (Olson タイム ゾーンとも呼ばれる) 形式もサポートされます。
+タイム ゾーンを表します。 サポートされる形式は、Windows 形式です。現在既知の問題が解決されている場合は、[Internet Assigned Numbers Authority (IANA) タイム ゾーン](https://www.iana.org/time-zones) (Olson タイム ゾーンとも呼ばれる) 形式もサポートされます。
 
 ## <a name="properties"></a>プロパティ
 | プロパティ     | 型   |説明|

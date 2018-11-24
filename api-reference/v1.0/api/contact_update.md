@@ -11,8 +11,7 @@
 |アプリケーション | Contacts.ReadWrite |
 
 ## <a name="http-request"></a>HTTP 要求
-<!-- { "blockType": "ignored" } -->
-ユーザーの既定 [contactFolder](../resources/contactfolder.md) からの [連絡先](../resources/contact.md)。
+<!-- { "blockType": "ignored" } -->[連絡先](../resources/contact.md)ユーザーの既定の[contactFolder](../resources/contactfolder.md)からです。
 ```http
 PATCH /me/contacts/{id}
 PATCH /users/{id | userPrincipalName}/contacts/{id}
@@ -47,28 +46,28 @@ PATCH /users/{id | userPrincipalName}/contactFolders/{id}/childFolders/{id}/cont
 |children|String|連絡先の子供の名前。|
 |companyName|String|連絡先の会社の名前。|
 |department|String|連絡先の部署。|
-|displayName|String|連絡先の表示名。|
+|displayName|String|連絡先の表示名。 その他のプロパティを後で更新プログラムが原因で、自動的に生成された値を指定した表示名の値を上書きすることに注意します。 既存の値を保持するには、必ず、更新操作の表示名としてです。|
 |emailAddresses|[EmailAddress](../resources/emailaddress.md) collection|連絡先のメール アドレス。|
-|fileAs|String|連絡先がファイルされる名前。|
-|generation|String|連絡先の世代。|
-|givenName|String|連絡先の名。|
+|fileAs|文字列|連絡先がファイルされる名前。|
+|generation|文字列|連絡先の世代。|
+|givenName|文字列|連絡先の名。|
 |homeAddress|[PhysicalAddress](../resources/physicaladdress.md)|連絡先の自宅住所。|
-|homePhones|String collection|連絡先の自宅の電話番号。|
+|homePhones|String コレクション|連絡先の自宅の電話番号。|
 |imAddresses|String|連絡先のインスタント メッセージング (IM) アドレス。|
-|initials|String|連絡先のイニシャル。|
-|jobTitle|String|連絡先の役職。|
-|manager|String|連絡先の上司の名前。
-|middleName|String|連絡先のミドル ネーム。|
-|mobilePhone|String|連絡先の携帯電話番号。|
-|nickName|String|連絡先のニックネーム。|
-|officeLocation|String|連絡先のオフィスの所在地。|
+|initials|文字列|連絡先のイニシャル。|
+|jobTitle|文字列|連絡先の役職。|
+|manager|文字列|連絡先の上司の名前。
+|middleName|文字列|連絡先のミドル ネーム。|
+|mobilePhone|文字列|連絡先の携帯電話番号。|
+|nickName|文字列|連絡先のニックネーム。|
+|officeLocation|文字列|連絡先のオフィスの所在地。|
 |otherAddress|[PhysicalAddress](../resources/physicaladdress.md)|連絡先の別の住所。|
-|parentFolderId|String|連絡先の親フォルダーの ID。|
-|personalNotes|String|連絡先に関するユーザーのメモ。|
-|profession|String|連絡先の専門的職業。|
+|parentFolderId|文字列|連絡先の親フォルダーの ID。|
+|personalNotes|文字列|連絡先に関するユーザーのメモ。|
+|profession|文字列|連絡先の専門的職業。|
 |spouseName|String|連絡先の配偶者/パートナーの名前。|
-|姓|String|連絡先の姓。|
-|title|String|連絡先の肩書。|
+|姓|文字列|連絡先の姓。|
+|タイトル|String|連絡先の肩書。|
 |yomiCompanyName|String|連絡先の会社名の読み仮名。このプロパティは省略可能です。|
 |yomiGivenName|String|連絡先の名 (ファースト ネーム) の読み仮名。このプロパティは省略可能です。|
 |yomiSurname|String|連絡先の姓 (ラスト ネーム) の読み仮名。このプロパティは省略可能です。|
@@ -144,7 +143,7 @@ Content-length: 1977
   "department": "Sales & Marketing",
   "officeLocation": "20/1101",
   "profession": null,
-  "businessHomePage": "http://www.contoso.com",
+  "businessHomePage": "https://www.contoso.com",
   "assistantName": null,
   "manager": null,
   "homePhones": [],

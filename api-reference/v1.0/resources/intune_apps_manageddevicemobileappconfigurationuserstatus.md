@@ -13,25 +13,25 @@
 |[managedDeviceMobileAppConfigurationUserStatus の更新](../api/intune_apps_manageddevicemobileappconfigurationuserstatus_update.md)|[managedDeviceMobileAppConfigurationUserStatus](../resources/intune_apps_manageddevicemobileappconfigurationuserstatus.md)|[managedDeviceMobileAppConfigurationUserStatus](../resources/intune_apps_manageddevicemobileappconfigurationuserstatus.md) オブジェクトのプロパティを更新します。|
 
 ## <a name="properties"></a>プロパティ
-|プロパティ|タイプ|説明|
+|プロパティ|型|説明|
 |:---|:---|:---|
-|id|文字列|エンティティのキー。|
-|userDisplayName|文字列|DevicePolicyStatus のユーザー名。|
-|devicesCount|Int32|そのユーザーのデバイスの数。|
-|status|[complianceStatus](../resources/intune_shared_compliancestatus.md)|コンプライアンス ポリシー レポートの状態。使用可能な値は `unknown`、`notApplicable`、`compliant`、`remediated`、`nonCompliant`、`error`、`conflict`、`notAssigned` です。|
-|lastReportedDateTime|DateTimeOffset|ポリシー レポートの最終変更日時。|
-|userPrincipalName|文字列|UserPrincipalName。|
+|id|String|エンティティのキー。|
+|userDisplayName|String|DevicePolicyStatus のユーザー名です。|
+|devicesCount|Int32|そのユーザーのデバイスの数です。|
+|status|[complianceStatus](../resources/intune_shared_compliancestatus.md)|ポリシー レポートのコンプライアンスの状態。 可能な値は、`unknown`、`notApplicable`、`compliant`、`remediated`、`nonCompliant`、`error`、`conflict`、`notAssigned` です。|
+|lastReportedDateTime|DateTimeOffset|ポリシー レポートの最終変更日時です。|
+|userPrincipalName|String|UserPrincipalName。|
 
 ## <a name="relationships"></a>リレーションシップ
 なし
 ## <a name="json-representation"></a>JSON 表記
 以下は、リソースの JSON 表記です。
-<!--{
+<!-- {
   "blockType": "resource",
-  "baseType": "microsoft.graph.entity",
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.managedDeviceMobileAppConfigurationUserStatus"
-}-->
+}
+-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.managedDeviceMobileAppConfigurationUserStatus",
@@ -43,11 +43,6 @@
   "userPrincipalName": "String"
 }
 ```
-
-
-
-
-
 
 
 

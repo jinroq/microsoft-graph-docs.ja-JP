@@ -9,15 +9,19 @@
 
 ## <a name="permissions"></a>アクセス許可
 
-この API を呼び出すには、拡張機能が作成されたリソースに応じて、以下のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](../../../concepts/permissions_reference.md)」を参照してください。
+拡張機能を作成したリソースとアクセス許可によって委任された (アプリケーション) の種類要求されると、次の表で指定されたアクセス許可は、この API を呼び出すために必要最低限の特権。 アクセス許可の選択方法などの詳細については、「[アクセス許可](../../../concepts/permissions_reference.md)」を参照してください。
 
-|**サポートされているリソース**|**アクセス許可**|**サポートされているリソース**|**アクセス許可** |
+| サポートされているリソース | 委任 (職場または学校のアカウント) | 委任 (個人用 Microsoft アカウント) | アプリケーション |
 |:-----|:-----|:-----|:-----|
-| [デバイス](../resources/device.md) | Device.ReadWrite.All | [イベント](../resources/event.md) | Calendars.ReadWrite |
-| [グループ](../resources/group.md) | Group.ReadWrite.All | [グループ イベント](../resources/event.md) | Group.ReadWrite.All |
-| [グループの投稿](../resources/post.md) | Group.ReadWrite.All | [メッセージ](../resources/message.md) | Mail.ReadWrite |
-| [組織](../resources/organization.md) | Directory.AccessAsUser.All | [個人用連絡先](../resources/contact.md) | Contacts.ReadWrite |
-| [ユーザー](../resources/user.md) | Directory.AccessAsUser.All | | |
+| [device](../resources/device.md) | Directory.AccessAsUser.All | サポートされていません | Device.ReadWrite.All |
+| [イベント](../resources/event.md) | Calendars.ReadWrite | Calendars.ReadWrite | Calendars.ReadWrite |
+| [グループ](../resources/group.md) | Group.ReadWrite.All | サポートされていません | Group.ReadWrite.All |
+| [グループ イベント](../resources/event.md) | Group.ReadWrite.All | 使用不可 | 使用不可 |
+| [グループの投稿](../resources/post.md) | Group.ReadWrite.All | サポートされていません | Group.ReadWrite.All |
+| [メッセージ](../resources/message.md) | Mail.ReadWrite | Mail.ReadWrite | Mail.ReadWrite | 
+| [組織](../resources/organization.md) | Directory.AccessAsUser.All | 使用不可 | 使用不可 |
+| [個人用連絡先](../resources/contact.md) | Contacts.ReadWrite | Contacts.ReadWrite | Contacts.ReadWrite |
+| [ユーザー](../resources/user.md) | User.ReadWrite.All | User.ReadWrite | User.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 要求
 要求で、リソース インスタンスを識別し、そのインスタンスの **extensions** ナビゲーション プロパティを使用して拡張機能を識別し、その拡張インスタンスで `PATCH` を行います。
@@ -49,8 +53,8 @@ PATCH /users/{id|userPrincipalName}/extensions/{extensionId}
 ## <a name="request-headers"></a>要求ヘッダー
 | 名前       | 値 |
 |:---------------|:----------|
-| 承認 | ベアラー {トークン}。必須。 |
-| コンテンツ タイプ | アプリケーション /json |
+| Authorization | ベアラー {トークン}。必須。 |
+| Content-Type | application/json |
 
 ## <a name="request-body"></a>要求本文
 
@@ -58,8 +62,8 @@ PATCH /users/{id|userPrincipalName}/extensions/{extensionId}
 
 | 名前       | 値 |
 |:---------------|:----------|
-| @odata.type | Microsoft.Graph.OpenTypeExtension |
-| extensionName | %unique_string % |
+| @odata.type | microsoft.graph.openTypeExtension |
+| extensionName | %unique_string% |
 
 ## <a name="response"></a>応答
 
@@ -101,9 +105,9 @@ PATCH https://graph.microsoft.com/v1.0/me/messages/AAMkAGE1M2IyNGNmLTI5MTktNDUyZ
 ```
 
 要求の例と以下の要求本文を使用して、上記の拡張情報を次のように更新できます。
-- を `Wingtip Toys` から `Wingtip Toys (USA)` に変更する `Wingtip Toys (USA)`
+- `companyName` を `Wingtip Toys` から `Wingtip Toys (USA)` に変更する
 - を `500050` から `500100` に変更する `500100`
-- 新しいデータをカスタム プロパティ `updated` として追加する `updated`
+- 新しいデータをカスタム プロパティ `updated` として追加する
 
 <!-- { "blockType": "ignored" } -->
 ```http

@@ -13,11 +13,11 @@
 |[roleAssignment の更新](../api/intune_rbac_roleassignment_update.md)|[roleAssignment](../resources/intune_rbac_roleassignment.md)|[roleAssignment](../resources/intune_rbac_roleassignment.md) オブジェクトのプロパティを更新します。|
 
 ## <a name="properties"></a>プロパティ
-|プロパティ|タイプ|説明|
+|プロパティ|型|説明|
 |:---|:---|:---|
-|ID|文字列|エンティティのキー。 これは読み取り専用で、自動生成されます。|
-|displayName|文字列|ロール割り当ての表示名またはフレンドリ名。|
-|説明|文字列|ロール割り当ての説明。|
+|id|String|エンティティのキー。 これは読み取り専用で、自動生成されます。|
+|displayName|String|役割の割り当ての表示名またはフレンドリ名です。|
+|description|String|役割の割り当ての説明です。|
 |resourceScopes|String コレクション|役割のスコープ メンバーのセキュリティ グループの ID リスト。  Azure Active Directory の ID です。|
 
 ## <a name="relationships"></a>リレーションシップ
@@ -27,12 +27,12 @@
 
 ## <a name="json-representation"></a>JSON 表記
 以下は、リソースの JSON 表記です。
-<!--{
+<!-- {
   "blockType": "resource",
-  "baseType": "microsoft.graph.entity",
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.roleAssignment"
-}-->
+}
+-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.roleAssignment",
@@ -44,11 +44,6 @@
   ]
 }
 ```
-
-
-
-
-
 
 
 

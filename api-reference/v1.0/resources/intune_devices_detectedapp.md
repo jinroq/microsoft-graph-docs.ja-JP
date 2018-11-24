@@ -13,11 +13,11 @@
 |[detectedApp の更新](../api/intune_devices_detectedapp_update.md)|[detectedApp](../resources/intune_devices_detectedapp.md)|[detectedApp](../resources/intune_devices_detectedapp.md) オブジェクトのプロパティを更新します。|
 
 ## <a name="properties"></a>プロパティ
-|プロパティ|タイプ|説明|
+|プロパティ|型|説明|
 |:---|:---|:---|
-|ID|文字列|検出されたアプリケーションの一意識別子。 これは、アプリケーションの作成時に、Intune によって自動的に生成されます。 読み取り専用です。|
-|displayName|文字列|検出されたアプリケーションの名前。 読み取り専用です|
-|バージョン|文字列|検出されたアプリケーションのバージョン。 読み取り専用です|
+|id|String|検出されたアプリケーションの一意識別子。 これは、アプリケーションの作成時に、Intune によって自動的に生成されます。 読み取り専用です。|
+|displayName|String|検出されたアプリケーションの名前。 読み取り専用です|
+|version|String|検出されたアプリケーションのバージョン。 読み取り専用です|
 |sizeInByte|Int64|検出されたアプリケーションのサイズ (バイト単位)。 読み取り専用です|
 |deviceCount|Int32|このアプリケーションがインストールされているデバイスの数|
 
@@ -28,12 +28,12 @@
 
 ## <a name="json-representation"></a>JSON 表記
 以下は、リソースの JSON 表記です。
-<!--{
+<!-- {
   "blockType": "resource",
-  "baseType": "microsoft.graph.entity",
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.detectedApp"
-}-->
+}
+-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.detectedApp",
@@ -44,11 +44,6 @@
   "deviceCount": 1024
 }
 ```
-
-
-
-
-
 
 
 

@@ -4,7 +4,7 @@
 
 Intune の役割ベースのアクセス制御により、だれが Intune オブジェクトに対してアクションを実行し、管理対象アプリケーション、ユーザー、デバイスを変更できるかが決まります。   
 
-次の Graph リソースを使用して、Intune での役割ベースのアクセス制御を管理できます。
+次の Graph リソースを使用して、Intune での役割ベースのアクセス制御を管理できます。  
 
 - [デバイスおよびアプリ管理役割の割り当て](intune_rbac_deviceandappmanagementroleassignment.md)
 - [デバイスおよびアプリ管理役割の定義](intune_rbac_deviceandappmanagementroledefinition.md)

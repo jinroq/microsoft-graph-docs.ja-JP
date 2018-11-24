@@ -24,14 +24,14 @@ GET /deviceAppManagement/managedAppRegistrations/getUserIdsWithFlaggedAppRegistr
 ## <a name="request-headers"></a>要求ヘッダー
 |ヘッダー|値|
 |:---|:---|
-|承認|ベアラー &lt;トークン&gt; が必須。|
-|Accept|アプリケーションまたは json|
+|承認|ベアラー &lt;トークン&gt;が必須。|
+|承諾|application/json|
 
 ## <a name="request-body"></a>要求本文
 このメソッドには、要求本文を指定しません。
 
 ## <a name="response"></a>応答
-成功した場合、この関数は `200 OK` 応答コードと、応答本文で String コレクションを返します。
+成功した場合、この関数は `200 OK` 応答コードと、応答本文で文字列コレクションを返します。
 
 ## <a name="example"></a>例
 ### <a name="request"></a>要求
@@ -53,11 +53,6 @@ Content-Length: 79
   ]
 }
 ```
-
-
-
-
-
 
 
 

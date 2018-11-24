@@ -9,17 +9,18 @@ IP V6 の範囲
 ## <a name="properties"></a>プロパティ
 |プロパティ|型|説明|
 |:---|:---|:---|
-|lowerAddress|文字列|低い番号の IP アドレス|
-|upperAddress|文字列|高い番号の IP アドレス|
+|lowerAddress|文字列|低位 IP アドレス|
+|upperAddress|文字列|高位 IP アドレス|
 
-## <a name="relationships"></a>リレーションシップ
+## <a name="relationships"></a>関係
 なし
 ## <a name="json-representation"></a>JSON 表記
 以下は、リソースの JSON 表記です。
-<!--{
+<!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.iPv6Range"
-}-->
+}
+-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.iPv6Range",
@@ -27,11 +28,6 @@ IP V6 の範囲
   "upperAddress": "String"
 }
 ```
-
-
-
-
-
 
 
 

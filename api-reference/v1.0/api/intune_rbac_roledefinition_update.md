@@ -25,8 +25,8 @@ PATCH /deviceManagement/roleDefinitions/{roleDefinitionId}/roleAssignments/{role
 ## <a name="request-headers"></a>要求ヘッダー
 |ヘッダー|値|
 |:---|:---|
-|承認|ベアラー &lt;トークン&gt; が必須。|
-|承諾する|アプリケーションまたは json|
+|Authorization|ベアラー &lt;トークン&gt; が必要です。|
+|Accept|application/json|
 
 ## <a name="request-body"></a>要求本文
 要求本文で、[roleDefinition](../resources/intune_rbac_roledefinition.md) オブジェクトの JSON 表記を指定します。
@@ -35,11 +35,11 @@ PATCH /deviceManagement/roleDefinitions/{roleDefinitionId}/roleAssignments/{role
 
 |プロパティ|型|説明|
 |:---|:---|:---|
-|ID|文字列|エンティティのキー。 これは読み取り専用で、自動生成されます。|
-|displayName|文字列|ロールの定義の表示名。|
-|説明|文字列|ロールの定義の説明。|
+|id|String|エンティティのキー。 これは読み取り専用で、自動生成されます。|
+|displayName|String|ロールの定義の表示名。|
+|description|String|ロールの定義の説明。|
 |rolePermissions|[rolePermission](../resources/intune_rbac_rolepermission.md) コレクション|このロールに実行が許可されている、ロールのアクセス許可のリスト。 これらは、rolePermission の一部として定義されている actionName と一致する必要があります。|
-|isBuiltIn|ブール値|ロールの種類。 組み込みの場合は True に設定し、カスタム ロールの定義の場合は False に設定します。|
+|isBuiltIn|Boolean|ロールの種類。 組み込みの場合は True に設定し、カスタム ロールの定義の場合は False に設定します。|
 
 
 
@@ -52,9 +52,10 @@ PATCH /deviceManagement/roleDefinitions/{roleDefinitionId}/roleAssignments/{role
 ``` http
 PATCH https://graph.microsoft.com/v1.0/deviceManagement/roleDefinitions/{roleDefinitionId}
 Content-type: application/json
-Content-length: 527
+Content-length: 580
 
 {
+  "@odata.type": "#microsoft.graph.roleDefinition",
   "displayName": "Display Name value",
   "description": "Description value",
   "rolePermissions": [
@@ -108,11 +109,6 @@ Content-Length: 629
   "isBuiltIn": true
 }
 ```
-
-
-
-
-
 
 
 

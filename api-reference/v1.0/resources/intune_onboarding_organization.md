@@ -6,20 +6,18 @@ organization リソースは、グローバル設定インスタンスと、テ�
 ## <a name="methods"></a>メソッド
 |メソッド|戻り値の型|説明|
 |:---|:---|:---|
-|[organizations をリスト](../api/intune_onboarding_organization_list.md)|[organization](../resources/intune_onboarding_organization.md) コレクション|[organization](../resources/intune_onboarding_organization.md) オブジェクトのプロパティとリレーションシップをリストします。|
-|[organization を取得](../api/intune_onboarding_organization_get.md)|[組織
-](../resources/intune_onboarding_organization.md)|[organization](../resources/intune_onboarding_organization.md) オブジェクトのプロパティとリレーションシップを読み取ります。|
-|[organization の更新](../api/intune_onboarding_organization_update.md)|[組織
-](../resources/intune_onboarding_organization.md)|[organization](../resources/intune_onboarding_organization.md) オブジェクトのプロパティを更新します。|
+|[List organizations](../api/intune_onboarding_organization_list.md)|[organization](../resources/intune_onboarding_organization.md) コレクション|[organization](../resources/intune_onboarding_organization.md) オブジェクトのプロパティとリレーションシップをリストします。|
+|[Get organization](../api/intune_onboarding_organization_get.md)|[organization](../resources/intune_onboarding_organization.md)|[organization](../resources/intune_onboarding_organization.md) オブジェクトのプロパティとリレーションシップを読み取ります。|
+|[Update organization](../api/intune_onboarding_organization_update.md)|[organization](../resources/intune_onboarding_organization.md)|[organization](../resources/intune_onboarding_organization.md) オブジェクトのプロパティを更新します。|
 |[setMobileDeviceManagementAuthority アクション](../api/intune_onboarding_organization_setmobiledevicemanagementauthority.md)|Int32|モバイル デバイス管理権限の設定|
 
 ## <a name="properties"></a>プロパティ
-|プロパティ|タイプ|説明|
+|プロパティ|型|説明|
 |:---|:---|:---|
-|id|文字列|オブジェクトの GUID。|
-|mobileDeviceManagementAuthority|[mdmAuthority](../resources/intune_onboarding_mdmauthority.md)|モバイル デバイス管理権限。指定できる値は、`unknown` 、`intune`、`sccm`、`office365` です。|
+|id|文字列型 (String)|オブジェクトの GUID。|
+|mobileDeviceManagementAuthority|[mdmAuthority](../resources/intune_onboarding_mdmauthority.md)|モバイル デバイス管理権限。 可能な値は、`unknown`、`intune`、`sccm`、`office365` です。|
 
-## <a name="relationships"></a>リレーションシップ
+## <a name="relationships"></a>関係
 なし
 ## <a name="json-representation"></a>JSON 表記
 以下は、リソースの JSON 表記です。
@@ -37,6 +35,7 @@ organization リソースは、グローバル設定インスタンスと、テ�
 }
 ```
 
+
 <!-- {
   "type": "#page.annotation",
   "suppressions": [
@@ -53,9 +52,4 @@ organization リソースは、グローバル設定インスタンスと、テ�
 
 }
 -->
-
-
-
-
-
 

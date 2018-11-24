@@ -22,12 +22,12 @@ GET /deviceAppManagement/managedEBooks/{managedEBookId}
 ```
 
 ## <a name="optional-query-parameters"></a>オプションのクエリ パラメーター
-このメソッドは、応答をカスタマイズするための [OData クエリ パラメーター](https://developer.microsoft.com/en-us/graph/docs/overview/query_parameters)をサポートします。
+このメソッドは、応答をカスタマイズするための [OData クエリ パラメーター](https://developer.microsoft.com/graph/docs/concepts/query_parameters)をサポートします。
 ## <a name="request-headers"></a>要求ヘッダー
 |ヘッダー|値|
 |:---|:---|
-|承認|ベアラー &lt;トークン&gt; が必須。|
-|Accept|アプリケーションまたは json|
+|承認|ベアラー &lt;トークン&gt;が必須。|
+|承諾|application/json|
 
 ## <a name="request-body"></a>要求本文
 このメソッドには、要求本文を指定しません。
@@ -47,7 +47,7 @@ GET https://graph.microsoft.com/v1.0/deviceAppManagement/managedEBooks/{managedE
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1030
+Content-Length: 1033
 
 {
   "value": {
@@ -66,7 +66,7 @@ Content-Length: 1030
     "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
     "informationUrl": "https://example.com/informationUrl/",
     "privacyInformationUrl": "https://example.com/privacyInformationUrl/",
-    "vppTokenId": "<Unknown Primitive Type Edm.Guid>",
+    "vppTokenId": "9148ac60-ac60-9148-60ac-489160ac4891",
     "appleId": "Apple Id value",
     "vppOrganizationName": "Vpp Organization Name value",
     "genres": [
@@ -79,11 +79,6 @@ Content-Length: 1030
   }
 }
 ```
-
-
-
-
-
 
 
 

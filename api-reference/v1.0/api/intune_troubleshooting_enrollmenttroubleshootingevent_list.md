@@ -24,8 +24,8 @@ GET /deviceManagement/troubleshootingEvents
 ## <a name="request-headers"></a>要求ヘッダー
 |ヘッダー|値|
 |:---|:---|
-|承認|ベアラー &lt;トークン&gt; が必須。|
-|Accept|アプリケーションまたは json|
+|Authorization|ベアラー &lt;トークン&gt; が必須。|
+|Accept|application/json|
 
 ## <a name="request-body"></a>要求本文
 このメソッドには、要求本文を指定しません。
@@ -37,7 +37,7 @@ GET /deviceManagement/troubleshootingEvents
 ### <a name="request"></a>要求
 以下は、要求の例です。
 ``` http
-GET https://graph.microsoft.com/v1/deviceManagement/troubleshootingEvents
+GET https://graph.microsoft.com/v1.0/deviceManagement/troubleshootingEvents
 ```
 
 ### <a name="response"></a>応答
@@ -66,7 +66,6 @@ Content-Length: 639
   ]
 }
 ```
-
 
 
 

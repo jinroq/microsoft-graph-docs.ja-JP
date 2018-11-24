@@ -24,26 +24,26 @@ PATCH /deviceAppManagement/mobileApps/{mobileAppId}/contentVersions/{mobileAppCo
 ## <a name="request-headers"></a>要求ヘッダー
 |ヘッダー|値|
 |:---|:---|
-|承認|ベアラー &lt;トークン&gt; が必須。|
-|承諾|アプリケーションまたは JSON|
+|承認|ベアラー &lt;トークン&gt;が必須。|
+|承諾|application/json|
 
 ## <a name="request-body"></a>要求本文
 要求本文で、[mobileAppContentFile](../resources/intune_apps_mobileappcontentfile.md) オブジェクトの JSON 表記を指定します。
 
 次の表に、[mobileAppContentFile](../resources/intune_apps_mobileappcontentfile.md) の作成時に必要なプロパティを示します。
 
-|プロパティ|タイプ|説明|
+|プロパティ|型|説明|
 |:---|:---|:---|
-|azureStorageUri|文字列|Azure ストレージ URI。|
-|isCommitted|ブール値|ファイルがコミットされたかどうかを示す値。|
-|ID|文字列|ファイル ID。|
+|azureStorageUri|String|Azure ストレージ URI。|
+|isCommitted|Boolean|ファイルがコミットされたかどうかを示す値。|
+|id|String|ファイル ID。|
 |createdDateTime|DateTimeOffset|ファイルが作成された時刻。|
-|名前|文字列|ファイル名。|
-|サイズ|Int64|暗号化する前のファイルのサイズ。|
+|name|String|ファイル名。|
+|size|Int64|暗号化する前のファイルのサイズ。|
 |sizeEncrypted|Int64|暗号化した後のファイルのサイズ。|
 |azureStorageUriExpirationDateTime|DateTimeOffset|Azure ストレージ URI の有効期限が切れる時刻。|
-|マニフェスト|バイナリ|マニフェスト情報。|
-|uploadState|[mobileAppContentFileUploadState](../resources/intune_apps_mobileappcontentfileuploadstate.md)|アップロードの現在の要求の状態。使用可能な値は、 `success`、 `transientError`、 `error`、 `unknown`、 `azureStorageUriRequestSuccess`、 `azureStorageUriRequestPending`、 `azureStorageUriRequestFailed`、 `azureStorageUriRequestTimedOut`、 `azureStorageUriRenewalSuccess`、 `azureStorageUriRenewalPending`、 `azureStorageUriRenewalFailed`、 `azureStorageUriRenewalTimedOut`、 `commitFileSuccess`、 `commitFilePending`、 `commitFileFailed`、 `commitFileTimedOut`です。|
+|manifest|バイナリ|マニフェスト情報。|
+|uploadState|[mobileAppContentFileUploadState](../resources/intune_apps_mobileappcontentfileuploadstate.md)|現在のアップロード要求の状態。 可能な値は、`success`、`transientError`、`error`、`unknown`、`azureStorageUriRequestSuccess`、`azureStorageUriRequestPending`、`azureStorageUriRequestFailed`、`azureStorageUriRequestTimedOut`、`azureStorageUriRenewalSuccess`、`azureStorageUriRenewalPending`、`azureStorageUriRenewalFailed`、`azureStorageUriRenewalTimedOut`、`commitFileSuccess`、`commitFilePending`、`commitFileFailed`、`commitFileTimedOut` です。|
 
 
 
@@ -56,9 +56,10 @@ PATCH /deviceAppManagement/mobileApps/{mobileAppId}/contentVersions/{mobileAppCo
 ``` http
 PATCH https://graph.microsoft.com/v1.0/deviceAppManagement/mobileApps/{mobileAppId}/contentVersions/{mobileAppContentId}/files/{mobileAppContentFileId}
 Content-type: application/json
-Content-length: 283
+Content-length: 342
 
 {
+  "@odata.type": "#microsoft.graph.mobileAppContentFile",
   "azureStorageUri": "Azure Storage Uri value",
   "isCommitted": true,
   "name": "Name value",
@@ -91,11 +92,6 @@ Content-Length: 450
   "uploadState": "transientError"
 }
 ```
-
-
-
-
-
 
 
 

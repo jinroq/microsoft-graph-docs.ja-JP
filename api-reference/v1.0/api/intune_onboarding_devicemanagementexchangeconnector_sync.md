@@ -24,17 +24,17 @@ POST /deviceManagement/exchangeConnectors/{deviceManagementExchangeConnectorId}/
 ## <a name="request-headers"></a>要求ヘッダー
 |ヘッダー|値|
 |:---|:---|
-|承認|ベアラー &lt;トークン&gt; が必須。|
-|承諾する|アプリケーション/json|
+|Authorization|ベアラー &lt;トークン&gt; が必要です。|
+|Accept|application/json|
 
 ## <a name="request-body"></a>要求本文
 要求本文で、パラメーターの JSON 表記を指定します。
 
 次の表に、このアクションで使用できるパラメーターを示します。
 
-|プロパティ|タイプ|説明|
+|プロパティ|型|説明|
 |:---|:---|:---|
-|syncType|[deviceManagementExchangeConnectorSyncType](../resources/intune_onboarding_devicemanagementexchangeconnectorsynctype.md)|実行される syncのタイプ。完全syncまたはデルタsyncのいずれか。|
+|syncType|[deviceManagementExchangeConnectorSyncType](../resources/intune_onboarding_devicemanagementexchangeconnectorsynctype.md)|実行される同期の種類。完全同期またはデルタ同期のどちらかです。|
 
 
 
@@ -60,11 +60,6 @@ Content-length: 31
 ``` http
 HTTP/1.1 204 No Content
 ```
-
-
-
-
-
 
 
 

@@ -6,32 +6,31 @@ Miracast チャネルの使用可能な値です。
 ## <a name="members"></a>メンバー
 |メンバー|値|説明|
 |:---|:---|:---|
-|userDefined|0|ユーザー定義、デフォルト値、意図なし。|
-|one|1|1。|
-|two|2|２。|
-|three|3|３。|
-|four|4|4。|
-|five|5|5。|
-|six|6|6。|
-|seven|7|7。|
-|eight|8|8。|
-|nine|9|9。|
-|ten|10|10。|
-|eleven|11|11。|
-|thirtySix|36|36。|
-|40。|40|40。|
-|fortyFour|44|44。|
-|fortyEight|48|48。|
-|oneHundredFortyNine|149|149。|
-|oneHundredFiftyThree|153|153。|
-|oneHundredFiftySeven|157|157。|
-|oneHundredSixtyOne|161|161。|
-|oneHundredSixtyFive|165|165。|
-
-
-
-
-
+|ユーザー定義|0|ユーザー定義、既定値、ない目的。|
+|one|1|1 つです。|
+|two|2|2 つです。|
+|three|3|次の 3 つです。|
+|four|4|4 つです。|
+|5 つ|5|5 つです。|
+|6 つ|6|6 つです。|
+|7 つ|7|7。|
+|8 つ|8|8。|
+|9 つ|9|9。|
+|10|10|10 個です。|
+|11|11|11。|
+|thirtySix|36|30-6。|
+|40|40|40。|
+|fortyFour|44|40-4。|
+|fortyEight|48|40-8。|
+|oneHundredFortyNine|149|OneHundredForty 9。|
+|oneHundredFiftyThree| 
+153 
+|OneHundredFifty の 3 つです。|
+|oneHundredFiftySeven| 
+157 
+|OneHundredFifty 個です。|
+|oneHundredSixtyOne|161|OneHundredSixty の 1 つです。|
+|oneHundredSixtyFive|165|OneHundredSixty の 5 つです。|
 
 
 

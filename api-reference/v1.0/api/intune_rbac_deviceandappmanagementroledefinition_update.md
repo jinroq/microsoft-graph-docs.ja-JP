@@ -25,8 +25,8 @@ PATCH /deviceManagement/roleDefinitions/{roleDefinitionId}/roleAssignments/{role
 ## <a name="request-headers"></a>要求ヘッダー
 |ヘッダー|値|
 |:---|:---|
-|承認|ベアラー &lt;トークン&gt; が必須。|
-|承諾する|アプリケーションまたは json|
+|Authorization|ベアラー &lt;トークン&gt; が必要です。|
+|Accept|application/json|
 
 ## <a name="request-body"></a>要求本文
 要求本文で、[deviceAndAppManagementRoleDefinition](../resources/intune_rbac_deviceandappmanagementroledefinition.md) オブジェクトの JSON 表記を指定します。
@@ -35,11 +35,11 @@ PATCH /deviceManagement/roleDefinitions/{roleDefinitionId}/roleAssignments/{role
 
 |プロパティ|型|説明|
 |:---|:---|:---|
-|ID|文字列|エンティティのキー。 これは読み取り専用で、自動生成されます。 [roleDefinition](../resources/intune_rbac_roledefinition.md) から継承します|
-|displayName|文字列|ロールの定義の表示名。 [roleDefinition](../resources/intune_rbac_roledefinition.md) から継承します|
-|説明|文字列|ロールの定義の説明。 [roleDefinition](../resources/intune_rbac_roledefinition.md) から継承します|
+|id|String|エンティティのキー。 これは読み取り専用で、自動生成されます。 [roleDefinition](../resources/intune_rbac_roledefinition.md) から継承します|
+|displayName|String|ロールの定義の表示名。 [roleDefinition](../resources/intune_rbac_roledefinition.md) から継承します|
+|description|String|ロールの定義の説明。 [roleDefinition](../resources/intune_rbac_roledefinition.md) から継承します|
 |rolePermissions|[rolePermission](../resources/intune_rbac_rolepermission.md) コレクション|このロールに実行が許可されている、ロールのアクセス許可のリスト。 これらは、rolePermission の一部として定義されている actionName と一致する必要があります。 [roleDefinition](../resources/intune_rbac_roledefinition.md) から継承します|
-|isBuiltIn|ブール値|ロールの種類。 組み込みの場合は True に設定し、カスタム ロールの定義の場合は False に設定します。 [roleDefinition](../resources/intune_rbac_roledefinition.md) から継承します|
+|isBuiltIn|Boolean|ロールの種類。 組み込みの場合は True に設定し、カスタム ロールの定義の場合は False に設定します。 [roleDefinition](../resources/intune_rbac_roledefinition.md) から継承します|
 
 
 
@@ -52,9 +52,10 @@ PATCH /deviceManagement/roleDefinitions/{roleDefinitionId}/roleAssignments/{role
 ``` http
 PATCH https://graph.microsoft.com/v1.0/deviceManagement/roleDefinitions/{roleDefinitionId}
 Content-type: application/json
-Content-length: 527
+Content-length: 602
 
 {
+  "@odata.type": "#microsoft.graph.deviceAndAppManagementRoleDefinition",
   "displayName": "Display Name value",
   "description": "Description value",
   "rolePermissions": [
@@ -108,11 +109,6 @@ Content-Length: 651
   "isBuiltIn": true
 }
 ```
-
-
-
-
-
 
 
 

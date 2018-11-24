@@ -9,14 +9,15 @@ Windows 情報保護の IP 範囲のコレクション
 |displayName|文字列|表示名|
 |範囲|[ipRange](../resources/intune_mam_iprange.md) コレクション|IP 範囲のコレクション|
 
-## <a name="relationships"></a>リレーションシップ
+## <a name="relationships"></a>関係
 なし
 ## <a name="json-representation"></a>JSON 表記
 以下は、リソースの JSON 表記です。
-<!--{
+<!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.windowsInformationProtectionIPRangeCollection"
-}-->
+}
+-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.windowsInformationProtectionIPRangeCollection",
@@ -30,11 +31,6 @@ Windows 情報保護の IP 範囲のコレクション
   ]
 }
 ```
-
-
-
-
-
 
 
 

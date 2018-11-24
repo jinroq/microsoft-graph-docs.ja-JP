@@ -6,19 +6,14 @@
 ## <a name="members"></a>メンバー
 |メンバー|値|説明|
 |:---|:---|:---|
-|allAllowed|0|既定値、すべてのテレビ番組コンテンツを許可|
-|allBlocked|1|すべてのテレビ番組コンテンツを不許可|
-|childrenAll|2|TV-Y、すべての子供|
-|childrenAbove7|3|TV-Y7、7 歳以上の子供|
-|全般|4|TV-G、すべての子供向け|
-|parentalGuidance|5|TV-PG、保護者の助言と指導が必要|
-|childrenAbove14|6|TV-14、14 歳以上の子供|
-|成人|7|TV-MA、成人のみ|
-
-
-
-
-
+|allAllowed|0|既定値、すべてのテレビ番組コンテンツを許可します。|
+|allBlocked|1|任意のテレビ番組コンテンツを許可しません。|
+|childrenAll|2|テレビ Y のすべての子|
+|childrenAbove7|3|テレビ ・ Y7、子供の年齢 7 およびそれ以上|
+|全般|4|テレビ G、一般ユーザー向け|
+|parentalGuidance|5|テレビ PG、保護者による制限|
+|childrenAbove14|6|テレビ-14、子供時代の 14 以上の文字|
+|大人|7|テレビ MA、成人のみ|
 
 
 

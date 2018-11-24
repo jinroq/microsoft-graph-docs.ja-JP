@@ -6,19 +6,14 @@ Android の作業プロファイルには、パスワード入力が必要です
 ## <a name="members"></a>メンバー
 |メンバー|値|説明|
 |:---|:---|:---|
-|deviceDefault|0|デバイスのデフォルト値、意図なし。|
+|deviceDefault|0|デバイスの既定値でことを目的しません。|
 |lowSecurityBiometric|1|低レベルのセキュリティ ベースの生体認証パスワードが必要です。|
 |必須|2|必須。|
 |atLeastNumeric|3|数値以上のパスワードが必要です。|
-|numericComplex|4|複雑な数字のパスワードが必要です。|
+|numericComplex|4|数値の複雑なパスワードが必要です。|
 |atLeastAlphabetic|5|少なくともアルファベットのパスワードが必要です。|
 |atLeastAlphanumeric|6|以上の英数字のパスワードが必要です。|
-|alphanumericWithSymbols|7|英数字と記号のパスワードが必要です。|
-
-
-
-
-
+|alphanumericWithSymbols|7|少なくとも文字の英数字の記号のパスワードが必要です。|
 
 
 

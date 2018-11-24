@@ -6,13 +6,13 @@
 ## <a name="methods"></a>メソッド
 |メソッド|戻り値の型|説明|
 |:---|:---|:---|
-|[managedDeviceOverview の取得](../api/intune_devices_manageddeviceoverview_get.md)|[managedDeviceOverview](../resources/intune_devices_manageddeviceoverview.md)|[managedDeviceOverview](../resources/intune_devices_manageddeviceoverview.md) オブジェクトのプロパティとリレーションシップを読み取ります。|
-|[managedDeviceOverview の更新](../api/intune_devices_manageddeviceoverview_update.md)|[managedDeviceOverview](../resources/intune_devices_manageddeviceoverview.md)|[managedDeviceOverview](../resources/intune_devices_manageddeviceoverview.md) オブジェクトのプロパティを更新します。|
+|[Get managedDeviceOverview](../api/intune_devices_manageddeviceoverview_get.md)|[managedDeviceOverview](../resources/intune_devices_manageddeviceoverview.md)|[managedDeviceOverview](../resources/intune_devices_manageddeviceoverview.md) オブジェクトのプロパティとリレーションシップを読み取ります。|
+|[Update managedDeviceOverview](../api/intune_devices_manageddeviceoverview_update.md)|[managedDeviceOverview](../resources/intune_devices_manageddeviceoverview.md)|[managedDeviceOverview](../resources/intune_devices_manageddeviceoverview.md) オブジェクトのプロパティを更新します。|
 
 ## <a name="properties"></a>プロパティ
-|プロパティ|タイプ|説明|
+|プロパティ|型|説明|
 |:---|:---|:---|
-|ID|文字列|概要の一意識別子|
+|id|文字列型 (String)|概要の一意識別子|
 |enrolledDeviceCount|Int32|登録済みデバイスの合計数。 Intune PC エージェントで管理されている PC デバイスは含まれません|
 |mdmEnrolledCount|Int32|MDM に登録されているデバイスの数|
 |dualEnrolledDeviceCount|Int32|MDM と EAS の両方に登録されているデバイスの数|
@@ -23,12 +23,12 @@
 なし
 ## <a name="json-representation"></a>JSON 表記
 以下は、リソースの JSON 表記です。
-<!--{
+<!-- {
   "blockType": "resource",
-  "baseType": "microsoft.graph.entity",
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.managedDeviceOverview"
-}-->
+}
+-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.managedDeviceOverview",
@@ -55,11 +55,6 @@
   }
 }
 ```
-
-
-
-
-
 
 
 

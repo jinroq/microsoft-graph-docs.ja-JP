@@ -1,6 +1,6 @@
-# <a name="get-user-activities"></a>ユーザー アクティビティを取得する
+# <a name="get-user-activities"></a>ユーザー ・ アクティビティを取得します。
 
-特定のユーザーの最近のアクティビティを取得します。 **最新の** OData 関数とは異なり、履歴のないアクティビティが返されます。 UserActivity.ReadWrite.CreatedByApp アクセス許可も、応答に対し追加のフィルタリングを適用するので、アプリケーションによって作成されたアクティビティのみが返されるようになります。 ユーザーが特にアクティブで、他のアプリケーションが最近より多くのアクティビティを作成した場合、このサーバー側のフィルター処理によって空のページが発生することがあります。 アプリケーションのアクティビティを取得するには **nextLink** プロパティを使ってページ化します。
+特定のユーザーのアクティビティを取得します。 異なり、**最近使用した**OData 機能、履歴のない活動が返されます。 アクセス許可 UserActivity.ReadWrite.CreatedByApp はフィルターを適用余分な応答に、アプリケーションによって作成された活動のみが返されるようにします。 このサーバー側のフィルター処理が発生空のページでユーザーが特に作業中であり、他のアプリケーションが最新の活動を作成します。 アプリケーションのアクティビティを取得するには、改ページ調整**nextLink**プロパティを使用します。
 
 ## <a name="permissions"></a>アクセス許可
 
@@ -22,13 +22,13 @@ GET /me/activities
 
 ## <a name="optional-query-parameters"></a>オプションのクエリ パラメーター
 
-このメソッドは、応答をカスタマイズするのに役立つ [OData クエリ パラメータ](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) をサポートします。 次のクエリ パラメータがサポートされています。
+このメソッドは、応答をカスタマイズするためにいくつかの[OData クエリ パラメーター](https://developer.microsoft.com/graph/docs/concepts/query_parameters)をサポートします。 次のクエリ パラメーターがサポートされています。
 
-- **historyItems** のナビゲーション プロパティの $expand。
-- ページ間での最大項目数を制限する $top。
-- 展開されている場合の activities または historyItems のいずれかの lastModifiedDateTimeプロパティに対する $filter。** ** ** **
+- $ は、 **historyItems**のナビゲーション プロパティを展開します。
+- ページ間でのアイテムの最大数を制限する $top。
+- アクティビティまたは**historyItems**、展開されている場合のいずれかの**lastModifiedDateTime**プロパティで $filter。
 
-URL エンコーディングを使ったサポートされているクエリの例をいくつか下に示します。
+次に、URL エンコードがサポートされているクエリの例を示します。
 
 ```
 /me/activities?$expand=historyItems($filter=lastModifiedDateTime%20gt%202018-01-22T21:45:00.347Z%20and%20lastModifiedDateTime%20lt%202018-01-22T22:00:00.347Z)
@@ -42,15 +42,15 @@ URL エンコーディングを使ったサポートされているクエリの�
 
 |名前 | 型 | 説明|
 |:----|:-----|:-----------|
-|承認 | 文字列 | ベアラー {トークン}。必須。|
+|Authorization | string | ベアラー {トークン}。必須。|
 
 ## <a name="request-body"></a>要求本文
 
-要求本文がありません。
+要求の本体がありません。
 
 ## <a name="response"></a>応答
 
-成功すると、このメソッドは、アプリケーションにおけるユーザーの最近のアクティビティを含む `200 OK`  応答コードを返します。
+かどうかは成功すると、このメソッドが返されます、 `200 OK` 、アプリケーションのユーザーのアクティビティに応答コード。
 
 ## <a name="example"></a>例
 
@@ -93,7 +93,7 @@ Content-Type: application/json
         "appActivityId": "/article?12345",
         "visualElements": {
             "attribution": {
-              "iconUrl": "http://www.contoso.com/icon",
+              "iconUrl": "https://www.contoso.com/icon",
               "alternateText": "Contoso, Ltd.",
               "addImageQuery": false,
               },
@@ -101,7 +101,7 @@ Content-Type: application/json
             "description": "How to Tie a Reef Knot. A step-by-step visual guide to the art of nautical knot-tying.",
             "backgroundColor": "#ff0000",
             "content": {
-              "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+              "$schema": "https://adaptivecards.io/schemas/adaptive-card.json",
               "type": "AdaptiveCard",
               "body":
               [{
@@ -110,13 +110,13 @@ Content-Type: application/json
               }]
             }
         },
-        "activationUrl": "http://www.contoso.com/article?id=12345",
+        "activationUrl": "https://www.contoso.com/article?id=12345",
         "appDisplayName": "Contoso, Ltd.",
         "userTimezone": "Africa/Casablanca",
-        "fallbackUrl": "http://www.contoso.com/article?id=12345",
-        "contentUrl": "http://www.contoso.com/article?id=12345",
+        "fallbackUrl": "https://www.contoso.com/article?id=12345",
+        "contentUrl": "https://www.contoso.com/article?id=12345",
         "contentInfo": {
-            "@context": "http://schema.org",
+            "@context": "https://schema.org",
             "@type": "Article",
             "author": "John Doe",
             "name": "How to Tie a Reef Knot"

@@ -24,8 +24,8 @@ POST /deviceManagement/roleDefinitions
 ## <a name="request-headers"></a>要求ヘッダー
 |ヘッダー|値|
 |:---|:---|
-|承認|ベアラー &lt;トークン&gt; が必須。|
-|承諾|アプリケーションまたは json|
+|承認|ベアラー &lt;トークン&gt;が必須。|
+|承諾|application/json|
 
 ## <a name="request-body"></a>要求本文
 要求本文で、roleDefinition オブジェクトの JSON 表記を指定します。
@@ -34,11 +34,11 @@ POST /deviceManagement/roleDefinitions
 
 |プロパティ|型|説明|
 |:---|:---|:---|
-|ID|文字列|エンティティのキー。 これは読み取り専用で、自動生成されます。|
-|displayName|文字列|ロールの定義の表示名。|
-|説明|文字列|ロールの定義の説明。|
+|id|String|エンティティのキー。 これは読み取り専用で、自動生成されます。|
+|displayName|String|ロールの定義の表示名。|
+|description|String|ロールの定義の説明。|
 |rolePermissions|[rolePermission](../resources/intune_rbac_rolepermission.md) コレクション|このロールに実行が許可されている、ロールのアクセス許可のリスト。 これらは、rolePermission の一部として定義されている actionName と一致する必要があります。|
-|isBuiltIn|ブール値|ロールの種類。 組み込みの場合は True に設定し、カスタム ロールの定義の場合は False に設定します。|
+|isBuiltIn|Boolean|ロールの種類。 組み込みの場合は True に設定し、カスタム ロールの定義の場合は False に設定します。|
 
 
 
@@ -108,11 +108,6 @@ Content-Length: 629
   "isBuiltIn": true
 }
 ```
-
-
-
-
-
 
 
 

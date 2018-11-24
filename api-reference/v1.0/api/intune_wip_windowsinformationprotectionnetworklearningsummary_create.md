@@ -24,8 +24,8 @@ POST /deviceManagement/windowsInformationProtectionNetworkLearningSummaries
 ## <a name="request-headers"></a>要求ヘッダー
 |ヘッダー|値|
 |:---|:---|
-|承認|ベアラー &lt;トークン&gt; が必須。|
-|承諾|アプリケーションまたは json|
+|Authorization|ベアラー &lt;トークン&gt; が必要です。|
+|Accept|application/json|
 
 ## <a name="request-body"></a>要求本文
 要求本文で、windowsInformationProtectionNetworkLearningSummary オブジェクトの JSON 表記を指定します。
@@ -34,8 +34,8 @@ POST /deviceManagement/windowsInformationProtectionNetworkLearningSummaries
 
 |プロパティ|型|説明|
 |:---|:---|:---|
-|ID|文字列|WindowsInformationProtectionNetworkLearningSummary の一意識別子。|
-|url|文字列|Web サイト URL|
+|id|String|WindowsInformationProtectionNetworkLearningSummary の一意識別子。|
+|url|String|Web サイト URL|
 |deviceCount|Int32|デバイス数|
 
 
@@ -72,11 +72,6 @@ Content-Length: 186
   "deviceCount": 11
 }
 ```
-
-
-
-
-
 
 
 

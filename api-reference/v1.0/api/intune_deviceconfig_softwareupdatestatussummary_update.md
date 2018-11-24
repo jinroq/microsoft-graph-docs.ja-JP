@@ -24,8 +24,8 @@ PATCH /deviceManagement/softwareUpdateStatusSummary
 ## <a name="request-headers"></a>要求ヘッダー
 |ヘッダー|値|
 |:---|:---|
-|承認|ベアラー &lt;トークン&gt; が必須。|
-|承諾する|アプリケーションまたは json|
+|承認|ベアラー &lt;トークン&gt;が必須。|
+|承諾|application/json|
 
 ## <a name="request-body"></a>要求本文
 要求本文で、[softwareUpdateStatusSummary](../resources/intune_deviceconfig_softwareupdatestatussummary.md) オブジェクトの JSON 表記を指定します。
@@ -34,8 +34,8 @@ PATCH /deviceManagement/softwareUpdateStatusSummary
 
 |プロパティ|型|説明|
 |:---|:---|:---|
-|ID|文字列|エンティティのキー。|
-|displayName|文字列|ポリシーの名前。|
+|id|String|エンティティのキー。|
+|displayName|String|ポリシーの名前。|
 |compliantDeviceCount|Int32|準拠デバイスの数。|
 |nonCompliantDeviceCount|Int32|準拠していないデバイスの数。|
 |remediatedDeviceCount|Int32|修復済みデバイスの数。|
@@ -62,9 +62,10 @@ PATCH /deviceManagement/softwareUpdateStatusSummary
 ``` http
 PATCH https://graph.microsoft.com/v1.0/deviceManagement/softwareUpdateStatusSummary
 Content-type: application/json
-Content-length: 452
+Content-length: 518
 
 {
+  "@odata.type": "#microsoft.graph.softwareUpdateStatusSummary",
   "displayName": "Display Name value",
   "compliantDeviceCount": 4,
   "nonCompliantDeviceCount": 7,
@@ -110,11 +111,6 @@ Content-Length: 567
   "notApplicableUserCount": 6
 }
 ```
-
-
-
-
-
 
 
 

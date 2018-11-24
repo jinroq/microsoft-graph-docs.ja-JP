@@ -13,22 +13,22 @@ Intune のアプリの単一カテゴリのプロパティが含まれていま�
 |[mobileAppCategory の更新](../api/intune_apps_mobileappcategory_update.md)|[mobileAppCategory](../resources/intune_apps_mobileappcategory.md)|[mobileAppCategory](../resources/intune_apps_mobileappcategory.md) オブジェクトのプロパティを更新します。|
 
 ## <a name="properties"></a>プロパティ
-|プロパティ|タイプ|説明|
+|プロパティ|型|説明|
 |:---|:---|:---|
-|ID|文字列|エンティティのキー。|
-|displayName|文字列|アプリのカテゴリの名前。|
+|id|String|エンティティのキー。|
+|displayName|String|アプリのカテゴリの名前です。|
 |lastModifiedDateTime|DateTimeOffset|mobileAppCategory が最後に変更された日時です。|
 
 ## <a name="relationships"></a>リレーションシップ
 なし
 ## <a name="json-representation"></a>JSON 表記
 以下は、リソースの JSON 表記です。
-<!--{
+<!-- {
   "blockType": "resource",
-  "baseType": "microsoft.graph.entity",
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.mobileAppCategory"
-}-->
+}
+-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.mobileAppCategory",
@@ -37,11 +37,6 @@ Intune のアプリの単一カテゴリのプロパティが含まれていま�
   "lastModifiedDateTime": "String (timestamp)"
 }
 ```
-
-
-
-
-
 
 
 
