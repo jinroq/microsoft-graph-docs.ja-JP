@@ -4,20 +4,21 @@
 
 アプリの構成設定アイテムのプロパティが含まれています。
 ## <a name="properties"></a>プロパティ
-|プロパティ|タイプ|説明|
+|プロパティ|型|説明|
 |:---|:---|:---|
-|appConfigKey|文字列|アプリの構成キー。|
-|appConfigKeyType|[mdmAppConfigKeyType](../resources/intune_apps_mdmappconfigkeytype.md)|アプリケーションの構成のキーの種類です。使用可能な値は、 `stringType`、 `integerType`、 `realType`、 `booleanType`、 `tokenType`です。|
-|appConfigKeyValue|文字列|アプリの構成キーの値。|
+|appConfigKey|String|アプリの構成キー。|
+|appConfigKeyType|[mdmAppConfigKeyType](../resources/intune_apps_mdmappconfigkeytype.md)|アプリの構成キーの種類。 可能な値は、`stringType`、`integerType`、`realType`、`booleanType`、`tokenType` です。|
+|appConfigKeyValue|String|アプリの構成キーの値。|
 
 ## <a name="relationships"></a>リレーションシップ
 なし
 ## <a name="json-representation"></a>JSON 表記
 以下は、リソースの JSON 表記です。
-<!--{
+<!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.appConfigurationSettingItem"
-}-->
+}
+-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.appConfigurationSettingItem",
@@ -26,11 +27,6 @@
   "appConfigKeyValue": "String"
 }
 ```
-
-
-
-
-
 
 
 

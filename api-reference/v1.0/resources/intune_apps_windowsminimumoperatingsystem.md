@@ -14,10 +14,11 @@ Windows モバイル アプリに必要な最小オペレーティング シス�
 なし
 ## <a name="json-representation"></a>JSON 表記
 以下は、リソースの JSON 表記です。
-<!--{
+<!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.windowsMinimumOperatingSystem"
-}-->
+}
+-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.windowsMinimumOperatingSystem",
@@ -26,11 +27,6 @@ Windows モバイル アプリに必要な最小オペレーティング シス�
   "v10_0": true
 }
 ```
-
-
-
-
-
 
 
 

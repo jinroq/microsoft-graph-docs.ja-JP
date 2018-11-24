@@ -8,7 +8,8 @@
 
 |アクセス許可の種類|アクセス許可 (特権の大きいものから小さいものへ)|
 |:---|:---|
-|委任 (職場または学校のアカウント)|DeviceManagementServiceConfig.ReadWrite.All|
+|委任 (職場または学校のアカウント)||
+| &nbsp;&nbsp;契約時 | DeviceManagementServiceConfig.ReadWrite.All|
 |委任 (個人用 Microsoft アカウント)|サポートされていません。|
 |アプリケーション|サポートされていません。|
 
@@ -31,7 +32,7 @@ GET /deviceManagement/verifyWindowsEnrollmentAutoDiscovery
 要求 URL で、次のクエリ パラメーターに値を指定します。
 次の表に、この関数で使用できるパラメーターを示します。
 
-|プロパティ|Type|説明|
+|プロパティ|型|説明|
 |:---|:---|:---|
 |domainName|String|まだ文書化されていません|
 

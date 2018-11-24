@@ -9,20 +9,19 @@
 | アクセス権&nbsp;型&nbsp;(によって&nbsp;ワークフロー) | アクセス許可 (特権の大きいものから小さいものへ) |
 |:---|:---|
 | 委任 (職場または学校のアカウント) |
-| &nbsp; &nbsp; 監査 | DeviceManagementApps.ReadWrite.All |
-| &nbsp; &nbsp; 会社の用語 | DeviceManagementServiceConfig.ReadWrite.All |
-| &nbsp; &nbsp; 企業登録 | DeviceManagementServiceConfig.ReadWrite.All|
-| &nbsp; &nbsp; デバイスの構成 | DeviceManagementConfiguration.ReadWrite.All |
-| &nbsp; &nbsp; デバイスの管理 | DeviceManagementManagedDevices.ReadWrite.All |
-| &nbsp; &nbsp; エンドポイントの保護 | DeviceManagementManagedDevices.ReadWrite.All |
-| &nbsp; &nbsp; 登録 | DeviceManagementServiceConfig.ReadWrite.All |
-| &nbsp; &nbsp; 通知 | DeviceManagementServiceConfig.ReadWrite.All |
-| &nbsp; &nbsp; 採用 | DeviceManagementServiceConfig.ReadWrite.All |
-| &nbsp; &nbsp; RBAC | DeviceManagementRBAC.ReadWrite.All |
-| &nbsp; &nbsp; リモート アシスタンス | DeviceManagementServiceConfig.ReadWrite.All |
-| &nbsp; &nbsp; 通信経費の管理パートナー | DeviceManagementServiceConfig.ReadWrite.All |
-| &nbsp; &nbsp; トラブルシューティング | DeviceManagementManagedDevices.ReadWrite.All |
-| &nbsp; &nbsp; Windows 情報保護 | DeviceManagementApps.ReadWrite.All |
+| &nbsp;&nbsp;監査 | DeviceManagementApps.ReadWrite.All |
+| &nbsp;&nbsp;会社の用語 | DeviceManagementServiceConfig.ReadWrite.All |
+| &nbsp;&nbsp;企業登録 | DeviceManagementServiceConfig.ReadWrite.All|
+| &nbsp;&nbsp;デバイスの構成 | DeviceManagementConfiguration.ReadWrite.All |
+| &nbsp;&nbsp;デバイスの管理 | DeviceManagementManagedDevices.ReadWrite.All |
+| &nbsp;&nbsp;エンドポイントの保護 | DeviceManagementManagedDevices.ReadWrite.All |
+| &nbsp;&nbsp;の通知 | DeviceManagementServiceConfig.ReadWrite.All |
+| &nbsp;&nbsp;契約時 | DeviceManagementServiceConfig.ReadWrite.All |
+| &nbsp;&nbsp;ロール ベースのアクセス制御 | DeviceManagementRBAC.ReadWrite.All |
+| &nbsp;&nbsp;リモート アシスタンス | DeviceManagementServiceConfig.ReadWrite.All |
+| &nbsp;&nbsp;通信経費の管理 | DeviceManagementServiceConfig.ReadWrite.All |
+| &nbsp;&nbsp;のトラブルシューティング | DeviceManagementManagedDevices.ReadWrite.All |
+| &nbsp;&nbsp; Windows 情報の保護 | DeviceManagementApps.ReadWrite.All |
 | 委任 (個人用 Microsoft アカウント) | サポートされていません。|
 | アプリケーション | サポートされていません。 |
 
@@ -38,23 +37,23 @@ PATCH /deviceManagement
 ## <a name="request-headers"></a>要求ヘッダー
 |ヘッダー|値|
 |:---|:---|
-|承認|ベアラー &lt;トークン&gt; が必須。|
-|承諾|アプリケーション/json|
+|Authorization|ベアラー &lt;トークン&gt; が必須。|
+|Accept|application/json|
 
 ## <a name="request-body"></a>要求本文
 要求本文で、[deviceManagement](../resources/intune_shared_devicemanagement.md) オブジェクトの JSON 表記を指定します。
 
 次の表に、[deviceManagement](../resources/intune_shared_devicemanagement.md) の作成時に必要なプロパティを示します。
 
-|プロパティ|タイプ|説明|
+|プロパティ|型|説明|
 |:---|:---|:---|
-|id|文字列|デバイスの一意識別子|
-|**デバイスの構成**|
-|設定|[deviceManagementSettings](../resources/intune_deviceconfig_devicemanagementsettings.md)|アカウント レベルの設定。|
+|id|String|デバイスの一意識別子|
+|**デバイス構成**|
+|settings|[deviceManagementSettings](../resources/intune_deviceconfig_devicemanagementsettings.md)|アカウント レベルの設定。|
 |**デバイスの管理**|
-|subscriptionState|[deviceManagementSubscriptionState](../resources/intune_devices_devicemanagementsubscriptionstate.md)|テナントのモバイル デバイス管理のサブスクリプション状態。 指定できる値は、`pending`、`active`、`warning`、`disabled`、`deleted`、`blocked`、`lockedOut` です。|
-|**採用**|
-|intuneBrand|[intuneBrand](../resources/intune_onboarding_intunebrand.md)|intuneBrand には、ポータル サイト アプリケーションとエンド ユーザーの Web ポータルの外観のカスタマイズに使用するデータが含まれています。|
+|subscriptionState|[deviceManagementSubscriptionState](../resources/intune_devices_devicemanagementsubscriptionstate.md)|テナントのモバイル デバイス管理のサブスクリプション状態。 可能な値: `pending`、 `active`、 `warning`、 `disabled`、 `deleted`、 `blocked`、 `lockedOut`。|
+|**契約時**|
+|intuneBrand|[intuneBrand](../resources/intune_onboarding_intunebrand.md)|intuneBrand には、会社のポータル アプリケーションとエンド ユーザーの Web ポータルの外観のカスタマイズに使用するデータが含まれています。|
 
 要求本文のプロパティのサポートは、ワークフローによって異なります。
 
@@ -96,7 +95,7 @@ Content-length: 751
 
 ### <a name="response"></a>応答
 
-以下は、応答の例です。 注: 簡潔にするために、ここに示す応答オブジェクトは短くされている場合があります。 返されるプロパティは、ワークフローおよびコンテキストによって異なります。
+以下は、応答の例です。 注: 簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。 返されるプロパティは、ワークフローおよびコンテキストによって異なります。
 
 ``` http
 HTTP/1.1 200 OK

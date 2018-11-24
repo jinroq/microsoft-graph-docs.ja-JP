@@ -14,10 +14,11 @@
 なし
 ## <a name="json-representation"></a>JSON 表記
 以下は、リソースの JSON 表記です。
-<!--{
+<!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.managedAppDiagnosticStatus"
-}-->
+}
+-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.managedAppDiagnosticStatus",
@@ -26,11 +27,6 @@
   "mitigationInstruction": "String"
 }
 ```
-
-
-
-
-
 
 
 

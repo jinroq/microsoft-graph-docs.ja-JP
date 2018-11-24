@@ -6,16 +6,11 @@ Web ブラウザーの Cookie の設定です。
 ## <a name="members"></a>メンバー
 |メンバー|値|説明|
 |:---|:---|:---|
-|browserDefault|0|ブラウザ規定値、目的なし。|
-|blockAlways|1|常に cookie をブロック。|
-|allowCurrentWebSite|2|現在の Web サイトからの Cookie を許可。|
-|allowFromWebsitesVisited|3|訪問した web サイトからのCookie を許可。|
-|allowAlways|4|cookie を常に許可。|
-
-
-
-
-
+|browserDefault|0|ブラウザーの既定値でことを目的しません。|
+|blockAlways|1|常に cookie をブロックします。|
+|allowCurrentWebSite|2|現在の Web サイトからの cookie を許可します。|
+|allowFromWebsitesVisited|3|訪問した web サイトからの Cookie を許可します。|
+|allowAlways|4|常に cookie を許可します。|
 
 
 

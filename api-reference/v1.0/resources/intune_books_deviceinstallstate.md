@@ -13,29 +13,28 @@
 |[deviceInstallState の更新](../api/intune_books_deviceinstallstate_update.md)|[deviceInstallState](../resources/intune_books_deviceinstallstate.md)|[deviceInstallState](../resources/intune_books_deviceinstallstate.md) オブジェクトのプロパティを更新します。|
 
 ## <a name="properties"></a>プロパティ
-|プロパティ|タイプ|説明|
+|プロパティ|型|説明|
 |:---|:---|:---|
-|ID|文字列|エンティティのキー。|
-|deviceName|文字列|デバイス名。|
-|deviceId|文字列|デバイス ID。|
-|lastSyncDateTime|DateTimeOffset
-|最後の同期日時。|
-|installState|[installState](../resources/intune_books_installstate.md)|EBook のインストール状態です。使用可能な値は `notApplicable`、 `installed`、 `failed`、 `notInstalled`、 `uninstallFailed`、 `unknown`です。|
-|errorCode|文字列|インストール失敗のエラー コード。|
-|osVersion|文字列|OS バージョン。|
-|osDescription|文字列|OS の説明。|
-|ユーザー名|文字列|デバイスのユーザー名です。|
+|id|String|エンティティのキー。|
+|deviceName|String|デバイス名です。|
+|deviceId|String|デバイス ID です。|
+|lastSyncDateTime|DateTimeOffset|最後同期の日付と時刻です。|
+|installState|[installState](../resources/intune_books_installstate.md)|電子ブックのインストールの状態。 可能な値は、`notApplicable`、`installed`、`failed`、`notInstalled`、`uninstallFailed`、`unknown` です。|
+|errorCode|String|インストール失敗のエラー コードです。|
+|osVersion|String|OS のバージョンです。|
+|osDescription|String|OS の説明です。|
+|userName|String|デバイスのユーザー名です。|
 
 ## <a name="relationships"></a>リレーションシップ
 なし
 ## <a name="json-representation"></a>JSON 表記
 以下は、リソースの JSON 表記です。
-<!--{
+<!-- {
   "blockType": "resource",
-  "baseType": "microsoft.graph.entity",
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.deviceInstallState"
-}-->
+}
+-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.deviceInstallState",
@@ -50,11 +49,6 @@
   "userName": "String"
 }
 ```
-
-
-
-
-
 
 
 

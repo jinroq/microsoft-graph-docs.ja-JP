@@ -13,23 +13,23 @@
 |[managedAppStatusRaw の取得](../api/intune_mam_managedappstatusraw_get.md)|[managedAppStatusRaw](../resources/intune_mam_managedappstatusraw.md)|[managedAppStatusRaw](../resources/intune_mam_managedappstatusraw.md) オブジェクトのプロパティとリレーションシップを読み取ります。|
 
 ## <a name="properties"></a>プロパティ
-|プロパティ|タイプ|説明|
+|プロパティ|型|説明|
 |:---|:---|:---|
-|displayName|文字列|進捗レポートのフレンドリ名。 [managedAppStatus](../resources/intune_mam_managedappstatus.md) から継承します|
-|ID|文字列|エンティティのキー。 [managedAppStatus](../resources/intune_mam_managedappstatus.md) から継承します|
-|バージョン|文字列|エンティティのバージョン。 [managedAppStatus](../resources/intune_mam_managedappstatus.md) から継承します|
-|コンテンツ|[Json](../resources/json.md)|進捗レポートの内容。|
+|displayName|String|進捗レポートのフレンドリ名。 [managedAppStatus](../resources/intune_mam_managedappstatus.md) から継承します|
+|id|String|エンティティのキー。 [managedAppStatus](../resources/intune_mam_managedappstatus.md) から継承します|
+|version|String|エンティティのバージョン。 [managedAppStatus](../resources/intune_mam_managedappstatus.md) から継承します|
+|content|[Json](../resources/intune_mam_json.md)|進捗レポートの内容。|
 
 ## <a name="relationships"></a>リレーションシップ
 なし
 ## <a name="json-representation"></a>JSON 表記
 以下は、リソースの JSON 表記です。
-<!--{
+<!-- {
   "blockType": "resource",
-  "baseType": "microsoft.graph.managedAppStatus",
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.managedAppStatusRaw"
-}-->
+}
+-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.managedAppStatusRaw",
@@ -41,11 +41,6 @@
   }
 }
 ```
-
-
-
-
-
 
 
 

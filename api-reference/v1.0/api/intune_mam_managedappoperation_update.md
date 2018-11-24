@@ -24,8 +24,8 @@ PATCH /deviceAppManagement/managedAppRegistrations/{managedAppRegistrationId}/op
 ## <a name="request-headers"></a>要求ヘッダー
 |ヘッダー|値|
 |:---|:---|
-|承認|ベアラー &lt;トークン&gt; が必須。|
-|承諾|アプリケーションまたは json|
+|Authorization|ベアラー &lt;トークン&gt; が必要です。|
+|Accept|application/json|
 
 ## <a name="request-body"></a>要求本文
 要求本文で、[managedAppOperation](../resources/intune_mam_managedappoperation.md) オブジェクトの JSON 表記を指定します。
@@ -34,11 +34,11 @@ PATCH /deviceAppManagement/managedAppRegistrations/{managedAppRegistrationId}/op
 
 |プロパティ|型|説明|
 |:---|:---|:---|
-|displayName|文字列|操作名。|
+|displayName|String|操作名。|
 |lastModifiedDateTime|DateTimeOffset|アプリ操作が変更された最終時刻。|
-|状態|文字列|操作の現在の状態。|
-|id|文字列|エンティティのキー。|
-|バージョン|文字列|エンティティのバージョン。|
+|state|String|操作の現在の状態。|
+|id|String|エンティティのキー。|
+|version|String|エンティティのバージョン。|
 
 
 
@@ -51,11 +51,11 @@ PATCH /deviceAppManagement/managedAppRegistrations/{managedAppRegistrationId}/op
 ``` http
 PATCH https://graph.microsoft.com/v1.0/deviceAppManagement/managedAppRegistrations/{managedAppRegistrationId}/operations/{managedAppOperationId}
 Content-type: application/json
-Content-length: 165
+Content-length: 159
 
 {
+  "@odata.type": "#microsoft.graph.managedAppOperation",
   "displayName": "Display Name value",
-  "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
   "state": "State value",
   "version": "Version value"
 }
@@ -77,11 +77,6 @@ Content-Length: 272
   "version": "Version value"
 }
 ```
-
-
-
-
-
 
 
 

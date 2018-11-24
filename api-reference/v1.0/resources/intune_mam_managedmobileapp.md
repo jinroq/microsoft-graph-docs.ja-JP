@@ -6,29 +6,29 @@
 ## <a name="methods"></a>メソッド
 |メソッド|戻り値の型|説明|
 |:---|:---|:---|
-|[managedMobileApps をリストする](../api/intune_mam_managedmobileapp_list.md)|[managedMobileApp](../resources/intune_mam_managedmobileapp.md) コレクション|[managedMobileApp](../resources/intune_mam_managedmobileapp.md) オブジェクトのプロパティとリレーションシップをリストします。|
-|[managedMobileApp を取得する](../api/intune_mam_managedmobileapp_get.md)|[managedMobileApp](../resources/intune_mam_managedmobileapp.md)|[managedMobileApp](../resources/intune_mam_managedmobileapp.md) オブジェクトのプロパティとリレーションシップを読み取ります。|
-|[managedMobileApp を作成する](../api/intune_mam_managedmobileapp_create.md)|[managedMobileApp](../resources/intune_mam_managedmobileapp.md)|新しい [managedMobileApp](../resources/intune_mam_managedmobileapp.md) オブジェクトを作成します。|
-|[managedMobileApp を削除する](../api/intune_mam_managedmobileapp_delete.md)|なし|[managedMobileApp](../resources/intune_mam_managedmobileapp.md) を削除します。|
-|[managedMobileApp を更新する](../api/intune_mam_managedmobileapp_update.md)|[managedMobileApp](../resources/intune_mam_managedmobileapp.md)|[managedMobileApp](../resources/intune_mam_managedmobileapp.md) オブジェクトのプロパティを更新します。|
+|[List managedMobileApps](../api/intune_mam_managedmobileapp_list.md)|[managedMobileApp](../resources/intune_mam_managedmobileapp.md) コレクション|[managedMobileApp](../resources/intune_mam_managedmobileapp.md) オブジェクトのプロパティとリレーションシップをリストします。|
+|[Get managedMobileApp](../api/intune_mam_managedmobileapp_get.md)|[managedMobileApp](../resources/intune_mam_managedmobileapp.md)|[managedMobileApp](../resources/intune_mam_managedmobileapp.md) オブジェクトのプロパティとリレーションシップを読み取ります。|
+|[Create managedMobileApp](../api/intune_mam_managedmobileapp_create.md)|[managedMobileApp](../resources/intune_mam_managedmobileapp.md)|新しい [managedMobileApp](../resources/intune_mam_managedmobileapp.md) オブジェクトを作成します。|
+|[Delete managedMobileApp](../api/intune_mam_managedmobileapp_delete.md)|なし|[managedMobileApp](../resources/intune_mam_managedmobileapp.md) を削除します。|
+|[Update managedMobileApp](../api/intune_mam_managedmobileapp_update.md)|[managedMobileApp](../resources/intune_mam_managedmobileapp.md)|[managedMobileApp](../resources/intune_mam_managedmobileapp.md) オブジェクトのプロパティを更新します。|
 
 ## <a name="properties"></a>プロパティ
-|プロパティ|タイプ|説明|
+|プロパティ|型|説明|
 |:---|:---|:---|
 |mobileAppIdentifier|[mobileAppIdentifier](../resources/intune_mam_mobileappidentifier.md)|対象のオペレーティング システムの種類のアプリの識別子。|
-|ID|文字列|エンティティのキー。|
-|バージョン|文字列|エンティティのバージョン。|
+|id|文字列型 (String)|エンティティのキー。|
+|version|文字列型 (String)|エンティティのバージョン。|
 
 ## <a name="relationships"></a>リレーションシップ
 なし
 ## <a name="json-representation"></a>JSON 表記
 以下は、リソースの JSON 表記です。
-<!--{
+<!-- {
   "blockType": "resource",
-  "baseType": "microsoft.graph.entity",
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.managedMobileApp"
-}-->
+}
+-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.managedMobileApp",
@@ -39,11 +39,6 @@
   "version": "String"
 }
 ```
-
-
-
-
-
 
 
 

@@ -27,8 +27,8 @@ PATCH /deviceAppManagement/mdmWindowsInformationProtectionPolicies/{mdmWindowsIn
 ## <a name="request-headers"></a>要求ヘッダー
 |ヘッダー|値|
 |:---|:---|
-|承認|ベアラー &lt;トークン&gt; が必須。|
-|承諾|アプリケーションまたは json|
+|Authorization|ベアラー &lt;トークン&gt; が必要です。|
+|Accept|application/json|
 
 ## <a name="request-body"></a>要求本文
 要求本文で、[windowsInformationProtectionAppLockerFile](../resources/intune_mam_windowsinformationprotectionapplockerfile.md) オブジェクトの JSON 表記を指定します。
@@ -37,11 +37,11 @@ PATCH /deviceAppManagement/mdmWindowsInformationProtectionPolicies/{mdmWindowsIn
 
 |プロパティ|型|説明|
 |:---|:---|:---|
-|displayName|文字列|フレンドリ名|
-|fileHash|文字列|ファイルの SHA256 ハッシュ|
-|ファイル|バイナリ型 (Binary)|バイト配列のファイル|
-|ID|文字列|エンティティのキー。|
-|バージョン|文字列|エンティティのバージョン。|
+|displayName|String|フレンドリ名|
+|fileHash|String|ファイルの SHA256 ハッシュ|
+|file|Binary|バイト配列のファイル|
+|id|String|エンティティのキー。|
+|version|String|エンティティのバージョン。|
 
 
 
@@ -54,9 +54,10 @@ PATCH /deviceAppManagement/mdmWindowsInformationProtectionPolicies/{mdmWindowsIn
 ``` http
 PATCH https://graph.microsoft.com/v1.0/deviceAppManagement/windowsInformationProtectionPolicies/{windowsInformationProtectionPolicyId}/exemptAppLockerFiles/{windowsInformationProtectionAppLockerFileId}
 Content-type: application/json
-Content-length: 131
+Content-length: 211
 
 {
+  "@odata.type": "#microsoft.graph.windowsInformationProtectionAppLockerFile",
   "displayName": "Display Name value",
   "fileHash": "File Hash value",
   "file": "ZmlsZQ==",
@@ -80,11 +81,6 @@ Content-Length: 260
   "version": "Version value"
 }
 ```
-
-
-
-
-
 
 
 

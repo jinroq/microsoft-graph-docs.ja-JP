@@ -4,25 +4,26 @@
 
 監査アクターのプロパティが含まれるクラス。
 ## <a name="properties"></a>プロパティ
-|プロパティ|タイプ|説明|
+|プロパティ|型|説明|
 |:---|:---|:---|
-|型|文字列型 (String)|アクターの種類。|
+|type|文字列型 (String)|アクターの種類。|
 |userPermissions|String コレクション|監査の実行時におけるユーザーのアクセス許可の一覧。|
 |applicationId|文字列型 (String)|AAD アプリケーション ID。|
 |applicationDisplayName|文字列型 (String)|アプリケーションの名前。|
 |userPrincipalName|文字列型 (String)|ユーザー プリンシパル名 (UPN)。|
-|servicePrincipalName|文字列|サービス プリンシパル名 (SPN)。|
-|ipAddress|文字列|IPAddress。|
-|userId|文字列|ユーザー ID。|
+|servicePrincipalName|文字列型 (String)|サービス プリンシパル名 (SPN)。|
+|ipAddress|文字列型 (String)|IPAddress。|
+|userId|文字列型 (String)|ユーザー ID。|
 
 ## <a name="relationships"></a>リレーションシップ
 なし
 ## <a name="json-representation"></a>JSON 表記
 以下は、リソースの JSON 表記です。
-<!--{
+<!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.auditActor"
-}-->
+}
+-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.auditActor",
@@ -38,11 +39,6 @@
   "userId": "String"
 }
 ```
-
-
-
-
-
 
 
 

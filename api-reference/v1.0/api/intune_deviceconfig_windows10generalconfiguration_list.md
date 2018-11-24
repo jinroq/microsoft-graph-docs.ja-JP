@@ -24,8 +24,8 @@ GET /deviceManagement/deviceConfigurations
 ## <a name="request-headers"></a>要求ヘッダー
 |ヘッダー|値|
 |:---|:---|
-|承認|ベアラー &lt;トークン&gt; が必須。|
-|Accept|アプリケーションまたは json|
+|Authorization|ベアラー &lt;トークン&gt; が必要です。|
+|Accept|application/json|
 
 ## <a name="request-body"></a>要求本文
 このメソッドには、要求本文を指定しません。
@@ -45,7 +45,7 @@ GET https://graph.microsoft.com/v1.0/deviceManagement/deviceConfigurations
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 10832
+Content-Length: 10901
 
 {
   "value": [
@@ -280,16 +280,12 @@ Content-Length: 10832
       "experienceBlockDeviceDiscovery": true,
       "experienceBlockErrorDialogWhenNoSIM": true,
       "experienceBlockTaskSwitcher": true,
-      "logonBlockFastUserSwitching": true
+      "logonBlockFastUserSwitching": true,
+      "tenantLockdownRequireNetworkDuringOutOfBoxExperience": true
     }
   ]
 }
 ```
-
-
-
-
-
 
 
 

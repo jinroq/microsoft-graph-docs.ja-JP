@@ -8,7 +8,7 @@
 
 |アクセス許可の種類|アクセス許可 (特権の大きいものから小さいものへ)|
 |:---|:---|
-|委任 (職場または学校アカウント)|DeviceManagementServiceConfig.ReadWrite.All|
+|委任 (職場または学校のアカウント)|DeviceManagementServiceConfig.ReadWrite.All|
 |委任 (個人用 Microsoft アカウント)|サポートされていません。|
 |アプリケーション|サポートされていません。|
 
@@ -24,8 +24,8 @@ PATCH /deviceManagement/telecomExpenseManagementPartners/{telecomExpenseManageme
 ## <a name="request-headers"></a>要求ヘッダー
 |ヘッダー|値|
 |:---|:---|
-|承認|ベアラー &lt;トークン&gt; が必須。|
-|承諾する|アプリケーションまたは json|
+|Authorization|ベアラー &lt;トークン&gt; が必要です。|
+|Accept|application/json|
 
 ## <a name="request-body"></a>要求本文
 要求本文で、[telecomExpenseManagementPartner](../resources/intune_tem_telecomexpensemanagementpartner.md) オブジェクトの JSON 表記を指定します。
@@ -34,11 +34,11 @@ PATCH /deviceManagement/telecomExpenseManagementPartners/{telecomExpenseManageme
 
 |プロパティ|型|説明|
 |:---|:---|:---|
-|ID|文字列|TEM パートナーの一意識別子。|
-|displayName|文字列|TEM パートナーの表示名。|
-|url|文字列|TEM パートナーの管理用コントロール パネルの URL。管理者はここで TEM サービスを構成できます。|
-|appAuthorized|ブール値|パートナーの AAD アプリに Intune へのアクセスが承認されているかどうかを指定します。|
-|有効化済み|ブール値|TEM サービスへの Intune の接続が現在有効であるか、無効であるかを指定します。|
+|id|String|TEM パートナーの一意識別子。|
+|displayName|String|TEM パートナーの表示名。|
+|url|String|TEM パートナーの管理用コントロール パネルの URL。管理者は、このパネルで TEM サービスを構成できます。|
+|appAuthorized|Boolean|パートナーの AAD アプリに Intune へのアクセスが承認されているかどうかを示します。|
+|enabled|Boolean|TEM サービスへの Intune の接続が現在有効であるか、無効であるかを示します。|
 |lastConnectionDateTime|DateTimeOffset|TEM パートナーによって Intune に最後に送信された要求のタイムスタンプ。|
 
 
@@ -52,9 +52,10 @@ PATCH /deviceManagement/telecomExpenseManagementPartners/{telecomExpenseManageme
 ``` http
 PATCH https://graph.microsoft.com/v1.0/deviceManagement/telecomExpenseManagementPartners/{telecomExpenseManagementPartnerId}
 Content-type: application/json
-Content-length: 178
+Content-length: 248
 
 {
+  "@odata.type": "#microsoft.graph.telecomExpenseManagementPartner",
   "displayName": "Display Name value",
   "url": "Url value",
   "appAuthorized": true,
@@ -80,11 +81,6 @@ Content-Length: 297
   "lastConnectionDateTime": "2016-12-31T23:58:36.6670033-08:00"
 }
 ```
-
-
-
-
-
 
 
 

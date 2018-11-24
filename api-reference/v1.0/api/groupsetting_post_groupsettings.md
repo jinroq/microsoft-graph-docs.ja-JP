@@ -2,7 +2,7 @@
 
 この API を使用して、[groupSettingTemplates](../resources/groupsettingtemplate.md) で使用可能なテンプレートに基づいて新しい設定を作成します。これらの設定は、テナント レベルまたはグループ レベルで行うことができます。作成要求は、テンプレートに定義されているすべての設定の [settingValues](../resources/settingvalue.md) を提供する必要があります。グループ固有の設定では、グループのメンバーがゲスト ユーザーを招待できるかどうかの管理のみが設定できます。グループにゲスト ユーザーを追加する機能が一般的に利用可能になると、上記の動作は制御されます。
 
- v1.0 でサポートしているテンプレートとプロパティのリストは 、[groupSettingTemplate クエリ](https://developer.microsoft.com/en-us/graph/graph-explorer?request=groupSettingTemplates&version=v1.0) (ベータ版のエンドポイントの場合は [directorySettingTemplatesを呼び出します](https://developer.microsoft.com/en-us/graph/graph-explorer?request=directorySettingTemplates&version=beta)。)を使用します。
+テンプレートと v1.0 でサポートしているプロパティのリストは、の使用[groupSettingTemplate クエリ](https://developer.microsoft.com/graph/graph-explorer?request=groupSettingTemplates&version=v1.0)(ベータ版のエンドポイントの呼び出し[directorySettingTemplates](https://developer.microsoft.com/graph/graph-explorer?request=directorySettingTemplates&version=beta)。)
 
 ## <a name="permissions"></a>アクセス許可
 
@@ -26,8 +26,8 @@ POST /groups/{id}/settings
 
 | 名前 | 説明 |
 |:---------------|:----------|
-| 認可 | ベアラー {トークン}。必須。 |
-| コンテンツ-種類 | アプリケーション /json |
+| Authorization | ベアラー {トークン}。必須。 |
+| Content-Type | application/json |
 
 ## <a name="request-body"></a>要求本文
 要求本文で、[groupSetting](../resources/groupsetting.md) オブジェクトの JSON 表記を指定します。ただし、設定の表示名は、参照される設定テンプレート名に基づいて設定されます。

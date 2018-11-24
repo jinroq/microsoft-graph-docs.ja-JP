@@ -10,16 +10,16 @@
 |:---|:---|:---|
 |[Get deviceAppManagement](../api/intune_shared_deviceappmanagement_get.md)|[deviceAppManagement](../resources/intune_shared_deviceappmanagement.md) オブジェクトのプロパティとリレーションシップを読み取ります。|
 |[Update deviceAppManagement](../api/intune_shared_deviceappmanagement_update.md)|[deviceAppManagement](../resources/intune_shared_deviceappmanagement.md) オブジェクトのプロパティを更新します。|
-|**採用**|
+|**契約時**|
 |[syncMicrosoftStoreForBusinessApps アクション](../api/intune_shared_deviceappmanagement_syncmicrosoftstoreforbusinessapps.md)|なし|ビジネス向け Microsoft Store と Intune アカウントを同期します|
 
 ## <a name="properties"></a>プロパティ
-|プロパティ|タイプ|説明|
+|プロパティ|型|説明|
 |:---|:---|:---|
-|id|文字列|エンティティのキー。|
-|**採用**|
-|isEnabledForMicrosoftStoreForBusiness|ブール値|アカウントと、ビジネス向け Microsoft Store からのアプリケーションとの同期が有効にされているかどうか。|
-|microsoftStoreForBusinessLanguage|文字列|ビジネス向け Microsoft Store からのアプリケーションの同期に使用されたロケール情報。 国/地域固有のカルチャ。 カルチャの名前は RFC 4646 に準拠します (Windows Vista 以降)。 形式の <languagecode2>-<country/regioncode2> は<languagecode2>  ISO 639-1 に基づく小文字 2 文字のコードで、<country/regioncode2> は ISO 3166 に基づく大文字 2 文字のコードです。 たとえば、英語 (米国) 固有のカルチャは en-US です。|
+|id|String|エンティティのキー。|
+|**契約時**|
+|isEnabledForMicrosoftStoreForBusiness|Boolean|アカウントと、ビジネス向け Microsoft Store からのアプリケーションとの同期が有効にされているかどうか。|
+|microsoftStoreForBusinessLanguage|String|ビジネス向け Microsoft Store からのアプリケーションの同期に使用されたロケール情報。 国/地域固有のカルチャ。 カルチャの名前は RFC 4646 に準拠します (Windows Vista 以降)。 形式の <languagecode2>-<country/regioncode2> は<languagecode2>  ISO 639-1 に基づく小文字 2 文字のコードで、<country/regioncode2> は ISO 3166 に基づく大文字 2 文字のコードです。 たとえば、英語 (米国) 固有のカルチャは en-US です。|
 |microsoftStoreForBusinessLastCompletedApplicationSyncTime|DateTimeOffset|ビジネス向け Microsoft Store からのアプリケーション同期が最後に実行された日時。|
 |microsoftStoreForBusinessLastSuccessfulSyncDateTime|DateTimeOffset|ビジネス向け Microsoft Store のアプリがアカウントに正常に同期された最終日時。|
 
@@ -42,11 +42,11 @@
 |mdmWindowsInformationProtectionPolicies|[mdmWindowsInformationProtectionPolicy](../resources/intune_mam_mdmwindowsinformationprotectionpolicy.md) コレクション|MDM に登録されたデバイス上で実行されているアプリの Windows 情報保護です。|
 |targetedManagedAppConfigurations|[targetedManagedAppConfiguration](../resources/intune_mam_targetedmanagedappconfiguration.md) コレクション|ターゲットとなる管理対象アプリの構成です。|
 |windowsInformationProtectionPolicies|[windowsInformationProtectionPolicy](../resources/intune_mam_windowsinformationprotectionpolicy.md) コレクション|MDM に登録されていないデバイス上で実行されているアプリの Windows 情報保護です。|
-|**採用**|
+|**契約時**|
 |vppTokens|[vppToken](../resources/intune_onboarding_vpptoken.md) コレクション|この組織への Vpp トークンのリストです。|
 
 ## <a name="json-representation"></a>JSON 表記
-以下は、リソースの JSON 表記です。  これは、単なる一例です。実際のクエリのクエリ応答には、コンテキストに適切なプロパティが含まれます。  
+以下は、リソースの JSON 表記です。  これは、単なる一例です。コンテキストに適切なプロパティは、実際のクエリのクエリ応答が含まれます。  
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

@@ -1,39 +1,39 @@
-# <a name="security-api-error-responses"></a>セキュリティ API のエラー応答
+# <a name="microsoft-graph-security-api-error-responses"></a>Microsoft グラフ セキュリティ API のエラー応答
 
-Microsoft Graph のセキュリティ API のエラーは、標準の HTTP ステータス コードを使用して返され、警告ヘッダーを介して配信されます。
+Graph で Microsoft グラフ セキュリティ API のエラーは、標準的な HTTP 206 部分的なコンテンツのステータス コードを使用して返されます、警告ヘッダーを使用して配信されます。
 
-セキュリティ API は、すべてのデータ プロバイダーから複数の応答を受信するフェデレーション サービスです。 セキュリティ API は HTTP エラーを受信すると、次の形式の警告ヘッダーを送信して返します。 <!-- { "blockType": "ignored" } -->
+Microsoft グラフ セキュリティ API は、すべてのデータ プロバイダーから複数の応答を受信するフェデレーション サービスです。 Microsoft グラフ セキュリティ API が HTTP エラーを受信したを送信します戻る警告ヘッダーで次の形式。<!-- { "blockType": "ignored" } -->
 
 ```http
 {Vendor}/{Provider}/{StatusCode}/{LatencyInMs}
 ```
 
-この警告ヘッダーは、データ プロバイダーの 1 つが 2 xx または 404 以外のエラー コードを返すときにのみ、クライアントに送信して返されます。 例:
+この警告ヘッダーはデータ プロバイダーの 1 つ以外の 2 xx または 404 エラー コードが返されるときにクライアントにのみ送信されます。 例:
 
-- リソースへのアクセスが与えられていない場合は、HttpStatusCode.Forbidden (403) が返される場合があります。
-- プロバイダーがタイムアウトになった場合は、警告ヘッダー内に HttpStatusCode.GatewayTimeout (504) が返されます。
-- 内部プロバイダ エラーが発生した場合は、警告ヘッダー内で HttpStatusCode.InternalServerError (500) が使用されます。
+- HttpStatusCode.Forbidden (403) は、リソースへのアクセスが与えられていない場合に返される可能性があります。
+- プロバイダーがタイムアウトになった場合は、警告ヘッダーの HttpStatusCode.GatewayTimeout (504) が返されます。
+- 内部プロバイダ エラーが発生した場合、HttpStatusCode.InternalServerError (500) は、warning ヘッダーで使用されます。
 
-データ プロバイダーが 2xx または 404 を返す場合は、それは警告ヘッダーに表示されません。なぜなら、2xx は成功した場合、404 はデータが見つからない場合に想定されるコードであるからです。 フェデレーション システムでは、多くの場合、データが 1 つまたはいくつかのプロバイダーには知られていても、すべてのプロバイダーには知られていないため、データが見つからない場合の 404 が返されることが想定されます。
+データ プロバイダーに 2 xx または 404 が返される場合に表示されませんの警告ヘッダーのこれらのコードが成功した場合に期待どおりになっているか、それぞれのデータが見つからない場合。 フェデレートされたシステムでは、何度もデータだけがわかっている 1 つまたはいくつか、すべてではなくプロバイダーと、404 が見つかりませんが考えられます。
 
 ## <a name="example"></a>例
 
-ユーザーが `security/alerts/{alert_id}` を求めます。
+ユーザーが求める`security/alerts/{alert_id}`。
 
     Provider 1: 404 (provider does not have a record of this alert ID)
     Provider 2: 504 (provider timed out)
     Provider 3: 200 (success)
     Provider 4: 403 (customer has not licensed this provider)
 
-404 と 200 の両方は想定される条件であるため、警告ヘッダーには次のものが含まれます。 
+404 と 200 の両方が必要な条件であるため warning ヘッダーは、次の含まれています。 
 
 ```HTTP
-Warning : 199 - "{Vendor2}/{Provider 2}/504/29000",    (usual timeout limit is set at 29 seconds)
+Warning : 199 - "{Vendor2}/{Provider 2}/504/10000",    (usual timeout limit is set at 10 seconds)
           199 - "{Vendor4}/{Provider 4}/403/10"       (Provider 4 rejected the request in 10 ms)
 ```
 
-> **注:** 各 HTTP ヘッダーはサブ項目のコレクションであるため、ユーザーは警告ヘッダーを列挙して、すべての項目をチェックすることができます。
+> **注:** 各 HTTP ヘッダーは、ユーザーは警告ヘッダーを列挙し、すべての項目をチェックするために、サブ項目のコレクションです。
 
 ## <a name="see-also"></a>関連項目
 
-承認に問題がある場合は、私たちの[ブログ記事](https://techcommunity.microsoft.com/t5/Using-Microsoft-Graph-Security/Authorization-and-Microsoft-Graph-Security-API/m-p/184376#M2)をご覧ください。
+認証に問題がある場合は、私たちの[ブログの投稿](https://techcommunity.microsoft.com/t5/Using-Microsoft-Graph-Security/Authorization-and-Microsoft-Graph-Security-API/m-p/184376#M2)を参照してください。

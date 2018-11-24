@@ -25,8 +25,8 @@ PATCH /deviceAppManagement/managedEBooks/{managedEBookId}/userStateSummary/{user
 ## <a name="request-headers"></a>要求ヘッダー
 |ヘッダー|値|
 |:---|:---|
-|承認|ベアラー &lt;トークン&gt; が必須。|
-|承諾する|アプリケーションまたは json|
+|Authorization|ベアラー &lt;トークン&gt; が必要です。|
+|Accept|application/json|
 
 ## <a name="request-body"></a>要求本文
 要求本文で、[deviceInstallState](../resources/intune_books_deviceinstallstate.md) オブジェクトの JSON 表記を指定します。
@@ -35,16 +35,15 @@ PATCH /deviceAppManagement/managedEBooks/{managedEBookId}/userStateSummary/{user
 
 |プロパティ|型|説明|
 |:---|:---|:---|
-|ID|文字列|エンティティのキー。|
-|deviceName|文字列|デバイス名。|
-|deviceId|文字列|デバイス ID。|
-|lastSyncDateTime|DateTimeOffset
-|最後の同期日時。|
-|installState|[installState](../resources/intune_books_installstate.md)|電子ブックのインストールの状態です。 可能な値は、`notApplicable`、`installed`、`failed`、`notInstalled`、`uninstallFailed`、`unknown` です。|
-|errorCode|文字列|インストール失敗のエラー コード。|
-|osVersion|文字列|OS バージョン。|
-|osDescription|文字列|OS の説明。|
-|ユーザー名|文字列|デバイスのユーザー名。|
+|id|String|エンティティのキー。|
+|deviceName|String|デバイス名。|
+|deviceId|String|デバイス ID。|
+|lastSyncDateTime|DateTimeOffset|最後の同期日時。|
+|installState|[installState](../resources/intune_books_installstate.md)|電子ブックのインストールの状態。 可能な値は、`notApplicable`、`installed`、`failed`、`notInstalled`、`uninstallFailed`、`unknown` です。|
+|errorCode|String|インストール失敗のエラー コード。|
+|osVersion|String|OS バージョン。|
+|osDescription|String|OS の説明。|
+|userName|String|デバイスのユーザー名。|
 
 
 
@@ -57,9 +56,10 @@ PATCH /deviceAppManagement/managedEBooks/{managedEBookId}/userStateSummary/{user
 ``` http
 PATCH https://graph.microsoft.com/v1.0/deviceAppManagement/managedEBooks/{managedEBookId}/deviceStates/{deviceInstallStateId}
 Content-type: application/json
-Content-length: 317
+Content-length: 374
 
 {
+  "@odata.type": "#microsoft.graph.deviceInstallState",
   "deviceName": "Device Name value",
   "deviceId": "Device Id value",
   "lastSyncDateTime": "2017-01-01T00:02:49.3205976-08:00",
@@ -91,11 +91,6 @@ Content-Length: 423
   "userName": "User Name value"
 }
 ```
-
-
-
-
-
 
 
 

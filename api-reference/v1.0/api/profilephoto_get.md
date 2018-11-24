@@ -23,7 +23,7 @@ Office 365 上でサポートされている HD Photo のサイズは次のと�
 
 ## <a name="http-request"></a>HTTP 要求 
 
-### <a name="get-the-photo"></a>写真を取得
+### <a name="get-the-photo"></a>写真を取得します。
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/photo/$value
@@ -34,7 +34,7 @@ GET /users/{id | userPrincipalName}/contacts/{id}/photo/$value
 GET /me/contactfolders/{contactFolderId}/contacts/{id}/photo/$value
 GET /users/{id | userPrincipalName}/contactfolders/{contactFolderId}/contacts/{id}/photo/$value
 ```
-### <a name="get-the-metadata-of-the-photo"></a>写真のメタデータを取得
+### <a name="get-the-metadata-of-the-photo"></a>写真のメタデータを取得します。
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/photo
@@ -47,7 +47,7 @@ GET /me/contactfolders/{contactFolderId}/contacts/{id}/photo
 GET /users/{id | userPrincipalName}/contactfolders/{contactFolderId}/contacts/{id}/photo
 ```
 
-### <a name="get-the-metadata-for-a-specific-photo-size"></a>特定の写真サイズのメタデータを取得
+### <a name="get-the-metadata-for-a-specific-photo-size"></a>特定の写真サイズのメタデータを取得する
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/photos/{size}
@@ -63,15 +63,15 @@ GET /users/{id | userPrincipalName}/contactfolders/{contactFolderId}/contacts/{i
 
 |パラメーター|型|説明|
 |:-----|:-----|:-----|
-|size  |文字列  | 写真のサイズ。 Office 365 上でサポートされている HD Photo のサイズは次のとおりです: '48x48'、'64x64'、'96x96'、'120x120'、'240x240'、'360x360'、'432x432'、'504x504'、'648x648'。 写真が Azure Active Directory に格納されている場合は、サイズに関する制限はありません。 |
+|size  |String  | 写真のサイズ。 Office 365 上でサポートされている HD Photo のサイズは次のとおりです: '48x48'、'64x64'、'96x96'、'120x120'、'240x240'、'360x360'、'432x432'、'504x504'、'648x648'。 写真が Azure Active Directory に格納されている場合は、サイズに関する制限はありません。 |
 
 ## <a name="optional-query-parameters"></a>オプションのクエリ パラメーター
-このメソッドは、応答をカスタマイズするための [OData クエリ パラメーター](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters)をサポートします。
+このメソッドは、応答をカスタマイズするための [OData クエリ パラメーター](https://developer.microsoft.com/graph/docs/concepts/query_parameters)をサポートします。
 
 ## <a name="request-headers"></a>要求ヘッダー
 | 名前       | 型 | 説明|
 |:-----------|:------|:----------|
-| 承認  | string  | ベアラー {トークン}。必須。 |
+| Authorization  | string  | ベアラー {トークン}。必須。 |
 
 ## <a name="request-body"></a>要求本文
 このメソッドには、要求本文を指定しません。
@@ -159,7 +159,7 @@ Content-type: application/json
 ```
 ## <a name="using-the-binary-data-of-the-requested-photo"></a>要求した写真のバイナリ データを使用する
 
-エンドポイントを使用してプロフィール写真のバイナリ データを取得するときに、そのデータを電子メールの添付ファイルとして追加するには、ベース 64 の文字列に変換する必要があります。`/photo/$value` JavaScript で [Outlook メッセージ](user_post_messages.md)の `Attachments` パラメーターの値として渡すことができる配列を作成する方法の例を次に示します。
+`/photo/$value` エンドポイントを使用してプロフィール写真のバイナリ データを取得するときに、そのデータを電子メールの添付ファイルとして追加するには、ベース 64 の文字列に変換する必要があります。 JavaScript で [Outlook メッセージ](user_post_messages.md)の `Attachments` パラメーターの値として渡すことができる配列を作成する方法の例を次に示します。
 
       const attachments = [{
         '@odata.type': '#microsoft.graph.fileAttachment',

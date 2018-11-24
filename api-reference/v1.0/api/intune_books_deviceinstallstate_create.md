@@ -25,25 +25,25 @@ POST /deviceAppManagement/managedEBooks/{managedEBookId}/userStateSummary/{userI
 ## <a name="request-headers"></a>要求ヘッダー
 |ヘッダー|値|
 |:---|:---|
-|承認|ベアラー &lt;トークン&gt; が必須。|
-|承諾|application/json|
+|Authorization|ベアラー &lt;トークン&gt; が必要です。|
+|Accept|application/json|
 
 ## <a name="request-body"></a>要求本文
 要求本文で、deviceInstallState オブジェクトの JSON 表記を指定します。
 
 次の表に、deviceInstallState の作成時に必要なプロパティを示します。
 
-|プロパティ|タイプ|説明|
+|プロパティ|型|説明|
 |:---|:---|:---|
-|ID|文字列|エンティティのキー。|
-|deviceName|文字列|デバイス名。|
-|deviceId|文字列|デバイス ID。|
+|id|String|エンティティのキー。|
+|deviceName|String|デバイス名。|
+|deviceId|String|デバイス ID。|
 |lastSyncDateTime|DateTimeOffset|最後の同期日時。|
-|installState|[installState](../resources/intune_books_installstate.md)|EBook のインストール状態です。使用可能な値は `notApplicable`、 `installed`、 `failed`、 `notInstalled`、 `uninstallFailed`、 `unknown`です。|
-|errorCode|文字列|インストール失敗のエラー コード。|
-|osVersion|文字列|OS バージョン。|
-|osDescription|文字列|OS の説明。|
-|userName|文字列|デバイスのユーザー名。|
+|installState|[installState](../resources/intune_books_installstate.md)|電子ブックのインストールの状態。 可能な値は、`notApplicable`、`installed`、`failed`、`notInstalled`、`uninstallFailed`、`unknown` です。|
+|errorCode|String|インストール失敗のエラー コード。|
+|osVersion|String|OS バージョン。|
+|osDescription|String|OS の説明。|
+|userName|String|デバイスのユーザー名。|
 
 
 
@@ -91,11 +91,6 @@ Content-Length: 423
   "userName": "User Name value"
 }
 ```
-
-
-
-
-
 
 
 

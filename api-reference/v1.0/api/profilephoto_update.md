@@ -15,7 +15,7 @@
 
 > **注** 組織内のユーザーの写真を更新するには、アプリにはアプリケーションのアクセス許可 User.ReadWrite.All が必要で、ユーザーの代わりではなく、それ自身の ID でこの API を呼び出す必要があります。詳細については、「[ユーザーなしでアクセスを取得する](../../../concepts/auth_v2_service.md)」を参照してください。
 
-## <a name="http-request-to-update-the-photo"></a>写真を更新するための HTTP 要求
+## <a name="http-request"></a>HTTP 要求
 <!-- { "blockType": "ignored" } -->
 ```http
 PATCH /me/photo/$value

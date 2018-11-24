@@ -7,15 +7,10 @@ AppLocker アプリケーションのコントロールの種類の使用可能�
 |メンバー|値|説明|
 |:---|:---|:---|
 |notConfigured|0|デバイス デフォルト値が選択されていないアプリケーションのコントロールの種類です。|
-|enforceComponentsAndStoreApps|1|Windows コンポーネントとストア アプリを強制します。|
-|auditComponentsAndStoreApps|2|Windows コンポーネントとストア アプリを監査します。|
-|enforceComponentsStoreAppsAndSmartlocker|3|Windowsコンポーネントを監査し、アプリとスマートロッカーを保管します。|
-|auditComponentsStoreAppsAndSmartlocker|4|Windowsコンポーネントを監査し、アプリとスマートロッカーを保管します。|
-
-
-
-
-
+|enforceComponentsAndStoreApps|1|Windows コンポーネント、ストア アプリケーションを強制します。|
+|auditComponentsAndStoreApps|2|Windows コンポーネント、ストア アプリケーションを監査します。|
+|enforceComponentsStoreAppsAndSmartlocker|3|Windows コンポーネント、アプリケーションとスマート ロッカーを格納します。|
+|auditComponentsStoreAppsAndSmartlocker|4|Windows コンポーネントを監査し、アプリケーションとスマート ロッカーを格納します。|
 
 
 

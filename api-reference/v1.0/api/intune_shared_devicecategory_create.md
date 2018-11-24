@@ -8,7 +8,8 @@
 
 |アクセス許可の種類|アクセス許可 (特権の大きいものから小さいものへ)|
 |:---|:---|
-|委任 (職場または学校のアカウント)|DeviceManagementManagedDevices.ReadWrite.All|
+|委任 (職場または学校のアカウント)||
+| &nbsp;&nbsp; **契約時** | DeviceManagementManaged Devices.ReadWrite.All|
 |委任 (個人用 Microsoft アカウント)|サポートされていません。|
 |アプリケーション|サポートされていません。|
 
@@ -25,7 +26,7 @@ POST /deviceManagement/deviceCategories
 |ヘッダー|値|
 |:---|:---|
 |Authorization|ベアラー &lt;トークン&gt; が必須。|
-|Accept|アプリケーション /json|
+|Accept|application/json|
 
 ## <a name="request-body"></a>要求本文
 要求本文で、deviceCategory オブジェクトの JSON 表記を指定します。
@@ -34,9 +35,10 @@ POST /deviceManagement/deviceCategories
 
 |プロパティ|型|説明|
 |:---|:---|:---|
-|id|String|デバイス カテゴリの一意識別子。 読み取り専用です。|
+|id|文字列|デバイス カテゴリの一意識別子。 読み取り専用です。|
+|**契約時**|
 |displayName|String|デバイス カテゴリの表示名。|
-|description|String|デバイス カテゴリに関するオプションの説明。|
+|説明|String|デバイス カテゴリに関するオプションの説明。|
 
 
 

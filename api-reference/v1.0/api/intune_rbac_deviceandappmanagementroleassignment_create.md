@@ -24,8 +24,8 @@ POST /deviceManagement/roleAssignments
 ## <a name="request-headers"></a>要求ヘッダー
 |ヘッダー|値|
 |:---|:---|
-|承認|ベアラー &lt;トークン&gt; が必須。|
-|承諾|アプリケーションまたは json|
+|Authorization|ベアラー &lt;トークン&gt; が必要です。|
+|Accept|application/json|
 
 ## <a name="request-body"></a>要求本文
 要求本文で、deviceAndAppManagementRoleAssignment オブジェクトの JSON 表記を指定します。
@@ -34,9 +34,9 @@ POST /deviceManagement/roleAssignments
 
 |プロパティ|型|説明|
 |:---|:---|:---|
-|ID|文字列|エンティティのキー。 これは読み取り専用で、自動生成されます。 [roleAssignment](../resources/intune_rbac_roleassignment.md) から継承します|
-|displayName|文字列|ロール割り当ての表示名またはフレンドリ名。 [roleAssignment](../resources/intune_rbac_roleassignment.md) から継承します|
-|説明|文字列|ロール割り当ての説明。 [roleAssignment](../resources/intune_rbac_roleassignment.md) から継承します|
+|id|String|エンティティのキー。 これは読み取り専用で、自動生成されます。 [roleAssignment](../resources/intune_rbac_roleassignment.md) から継承します|
+|displayName|String|ロール割り当ての表示名またはフレンドリ名。 [roleAssignment](../resources/intune_rbac_roleassignment.md) から継承します|
+|description|String|ロール割り当ての説明。 [roleAssignment](../resources/intune_rbac_roleassignment.md) から継承します|
 |resourceScopes|String コレクション|役割のスコープ メンバーのセキュリティ グループの ID リスト。  Azure Active Directory の ID。 [roleAssignment](../resources/intune_rbac_roleassignment.md) から継承します|
 |members|String コレクション|ロール メンバーのセキュリティ グループの ID リスト。 Azure Active Directory の ID。|
 
@@ -86,11 +86,6 @@ Content-Length: 307
   ]
 }
 ```
-
-
-
-
-
 
 
 

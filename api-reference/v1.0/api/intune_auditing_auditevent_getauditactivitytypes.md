@@ -24,8 +24,8 @@ GET /deviceManagement/auditEvents/getAuditActivityTypes
 ## <a name="request-headers"></a>要求ヘッダー
 |ヘッダー|値|
 |:---|:---|
-|承認|ベアラー &lt;トークン&gt; が必須。|
-|Accept|アプリケーションまたは json|
+|Authorization|ベアラー &lt;トークン&gt; が必要です。|
+|Accept|application/json|
 
 ## <a name="request-body"></a>要求本文
 要求 URL で、次のクエリ パラメーターに値を指定します。
@@ -33,7 +33,7 @@ GET /deviceManagement/auditEvents/getAuditActivityTypes
 
 |プロパティ|型|説明|
 |:---|:---|:---|
-|category|文字列|まだ文書化されていません|
+|category|String|まだ文書化されていません|
 
 
 
@@ -60,11 +60,6 @@ Content-Length: 61
   ]
 }
 ```
-
-
-
-
-
 
 
 

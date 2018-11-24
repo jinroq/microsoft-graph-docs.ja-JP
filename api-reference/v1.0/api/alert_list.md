@@ -1,6 +1,6 @@
 # <a name="list-alerts"></a>警告の一覧表示
 
-オブジェクトの [アラート](../resources/alert.md) の一覧を取得します。
+オブジェクトの[アラート](../resources/alert.md)の一覧を取得します。
 
 ## <a name="permissions"></a>アクセス許可
 
@@ -8,7 +8,7 @@
 
 |アクセス許可の種類      | アクセス許可 (特権の小さいものから大きいものへ)              |
 |:--------------------|:---------------------------------------------------------|
-|委任 (職場または学校アカウント) |  SecurityEvents.Read.All、SecurityEvents.ReadWrite.All  |
+|委任 (職場または学校のアカウント) |  SecurityEvents.Read.All、SecurityEvents.ReadWrite.All  |
 |委任 (個人用 Microsoft アカウント) |  サポートされていません。  |
 |アプリケーション | SecurityEvents.Read.All、SecurityEvents.ReadWrite.All |
 
@@ -26,22 +26,22 @@ GET /security/alerts?$filter={property} eq '{property-value}'&{property} eq '{pr
 
 ## <a name="optional-query-parameters"></a>オプションのクエリ パラメーター
 
-このメソッドは、応答をカスタマイズするための以下の [OData クエリ パラメーター](../../../concepts/query_parameters.md)をサポートします。
+このメソッドは、応答をカスタマイズするために次の[OData クエリ パラメーター](../../../concepts/query_parameters.md)をサポートします。
 
 - `$count`
 - `$filter`
 - `$orderby`
 - `$select`
 - `$skip`
-- `$top` セキュリティ API の各プロバイダーから集計の上位の結果を返します。  
+- `$top`セキュリティ API の各プロバイダーから集計の上位の結果を返します。  
 
-OData を使用する別のプロパティ セットを返すには、 `$select` する **警告** のプロパティのセットを指定するパラメーター クエリを実行します。  たとえば、 **担当者**、 **カテゴリ**、および **重要度** のプロパティを返す、クエリに次を追加: `$select=assignedTo,category,severity`。
+OData を使用する別のプロパティ セットを返すには、`$select`する**警告**のプロパティのセットを指定するパラメーター クエリを実行します。  たとえば、**担当者**、**カテゴリ**、および**重要度**のプロパティを返す、クエリに次を追加: `$select=assignedTo,category,severity`。
 
 ## <a name="request-headers"></a>要求ヘッダー
 
 | 名前      |説明|
 |:----------|:----------|
-| 承認  | ベアラ  {code}。必須。|
+| Authorization  | Bearer {code}。必須。|
 
 ## <a name="request-body"></a>要求本文
 
@@ -49,7 +49,7 @@ OData を使用する別のプロパティ セットを返すには、 `$select`
 
 ## <a name="response"></a>応答
 
-成功した場合、このメソッドは `200 OK` 応答コードと、応答本文で **WorkbookChart** オブジェクトのコレクションを返します。
+かどうかは成功すると、このメソッドが返されます、`200 OK`応答コードおよび応答の本文の**通知**オブジェクトのコレクションです。 2 xx または 404 以外のステータス コードは、プロバイダーから返された場合、またはプロバイダーがタイムアウトすると、応答がある場合、`206 Partial Content`警告ヘッダー内のプロバイダーの応答のステータス コード。 詳細については、 [Microsoft グラフ セキュリティ API のエラー応答](../resources/security-error-codes.md)を参照してください。
 
 ## <a name="example"></a>例
 

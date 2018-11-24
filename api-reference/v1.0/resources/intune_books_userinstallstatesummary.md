@@ -13,12 +13,12 @@
 |[userInstallStateSummary の更新](../api/intune_books_userinstallstatesummary_update.md)|[userInstallStateSummary](../resources/intune_books_userinstallstatesummary.md)|[userInstallStateSummary](../resources/intune_books_userinstallstatesummary.md) オブジェクトのプロパティを更新します。|
 
 ## <a name="properties"></a>プロパティ
-|プロパティ|タイプ|説明|
+|プロパティ|型|説明|
 |:---|:---|:---|
-|id|文字列|エンティティのキー。|
-|userName|文字列|ユーザー名です。|
+|id|String|エンティティのキー。|
+|userName|String|ユーザー名です。|
 |installedDeviceCount|Int32|インストールされたデバイスの数です。|
-|failedDeviceCount|Int32|失敗したデバイスの数です。|
+|failedDeviceCount|Int32|障害のあるデバイスの数です。|
 |notInstalledDeviceCount|Int32|インストールされていないデバイスの数です。|
 
 ## <a name="relationships"></a>リレーションシップ
@@ -28,12 +28,12 @@
 
 ## <a name="json-representation"></a>JSON 表記
 以下は、リソースの JSON 表記です。
-<!--{
+<!-- {
   "blockType": "resource",
-  "baseType": "microsoft.graph.entity",
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.userInstallStateSummary"
-}-->
+}
+-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.userInstallStateSummary",
@@ -44,11 +44,6 @@
   "notInstalledDeviceCount": 1024
 }
 ```
-
-
-
-
-
 
 
 

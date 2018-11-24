@@ -11,20 +11,16 @@ IPV4、IPV6 アドレス範囲を表す、IP 範囲基底クラス
 なし
 ## <a name="json-representation"></a>JSON 表記
 以下は、リソースの JSON 表記です。
-<!--{
+<!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.ipRange"
-}-->
+}
+-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.ipRange"
 }
 ```
-
-
-
-
-
 
 
 

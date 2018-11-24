@@ -6,7 +6,7 @@ Microsoft Graph の教育機関 API は、Office 365 のリソースとデータ
 
 ## <a name="authorization"></a>認証
 
-Microsoft Graph で教育機関 API を呼び出すために、アプリはアクセス トークンを取得する必要があります。 アクセス トークンの詳細については、「[Microsoft Graph を呼び出すためのトークンの取得](https://developer.microsoft.com/ja-JP/graph/docs/concepts/auth_overview)」を参照してください。 また、アプリには適切なアクセス許可も必要です。 詳細については、「[教育機関アクセス許可](../../../concepts/permissions_reference.md#education-permissions)」を参照してください。 
+Microsoft Graph で教育機関 API を呼び出すために、アプリはアクセス トークンを取得する必要があります。 アクセス トークンの詳細については、「[Microsoft Graph を呼び出すためのトークンの取得](https://developer.microsoft.com/graph/docs/concepts/auth_overview)」を参照してください。 また、アプリには適切なアクセス許可も必要です。 詳細については、「[教育機関アクセス許可](../../../concepts/permissions_reference.md#education-permissions)」を参照してください。 
 
 ### <a name="app-permissions-to-enable-school-it-admins-to-consent"></a>学校の IT 管理者が同意できるようにする、アプリのアクセス許可 
 
@@ -64,5 +64,5 @@ client_id={clientId}&state=12345&redirect_uri={redirectUrl}
 Microsoft Graph 教育機関 API を使用して、学校の名簿にアクセスする教育機関向けソリューションをビルドする。 詳細情報
 
 - 自分のシナリオに最も役立つリソースと方法を検討する。
-- [Graph エクスプローラー](https://developer.microsoft.com/ja-JP/graph/graph-explorer)で API を試す。
+- [Graph エクスプローラー](https://developer.microsoft.com/graph/graph-explorer)で API を試す。
 
