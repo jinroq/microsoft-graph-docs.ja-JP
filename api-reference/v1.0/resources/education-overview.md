@@ -49,7 +49,7 @@ client_id={clientId}&state=12345&redirect_uri={redirectUrl}
 - [すべての学校を一覧表示する](../api/educationroot_list_schools.md) 
 - [授業が実施されている学校を一覧表示する](../api/educationclass_list_schools.md)
 - [ユーザーの学校を一覧表示する](../api/educationuser_list_schools.md)
-- [すべてのクラスを取得する](../api/educationroot_list_classes.md )
+- [すべてのクラスを取得する](../api/educationroot_list_classes.md)
 - [学校内のクラスを取得する](../api/educationschool_list_classes.md)
 - [ユーザーのクラスを一覧表示する](../api/educationuser_list_classes.md)
 - [学校にクラスを追加する](../api/educationschool_post_classes.md)
