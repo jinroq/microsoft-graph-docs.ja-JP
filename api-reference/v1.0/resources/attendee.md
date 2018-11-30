@@ -1,6 +1,16 @@
+---
+title: 参加者リソースの種類
+description: イベントの参加者です。 これはユーザー、またはテナントの Exchange Server 上でリソースとしてセットアップされている会議室や備品などのリソースとなります。
+ms.openlocfilehash: 7c9040b563840c22eec1dd7456892fc7ff83ee4f
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27024327"
+---
 # <a name="attendee-resource-type"></a>参加者リソースの種類
 
-イベントの参加者です。
+イベントの参加者です。 これはユーザー、またはテナントの Exchange Server 上でリソースとしてセットアップされている会議室や備品などのリソースとなります。
 
 [attendeeBase](attendeebase.md) から派生します。
 
@@ -8,8 +18,8 @@
 | プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
 |status|[ResponseStatus](responsestatus.md)|イベントに対する参加者からの応答 (なし、承諾、辞退など) と応答が送信された日時。|
-|type|String|参加者のタイプは、`Required`、`Optional`、`Resource` です。|
-|emailAddress|[emailAddress](emailAddress.md)|参加者の名前と SMTP アドレスが含まれます。|
+|type|String|参加者のタイプは、`required`、`optional`、`resource` です。|
+|emailAddress|[emailAddress](emailaddress.md)|参加者の名前と SMTP アドレスが含まれます。|
 
 ## <a name="json-representation"></a>JSON 表記
 
@@ -17,6 +27,7 @@
 
 <!-- {
   "blockType": "resource",
+  "baseType": "microsoft.graph.attendeeBase",
   "optionalProperties": [
 
   ],
