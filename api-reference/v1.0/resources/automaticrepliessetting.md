@@ -1,21 +1,31 @@
-# <a name="automaticrepliessetting-resource-type"></a>automaticRepliesSetting リソースの種類
+---
+title: automaticRepliesSetting リソースの種類
+description: 'メッセージを受信したメールの送信者に自動的に通知する設定を構成します '
+ms.openlocfilehash: 983f5062c5a7bacaccfdca4687705aed5aa7a604
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27020217"
+---
+# <a name="automaticrepliessetting-resource-type"></a><span data-ttu-id="d865a-103">automaticRepliesSetting リソースの種類</span><span class="sxs-lookup"><span data-stu-id="d865a-103">automaticRepliesSetting resource type</span></span>
 
-サインイン ユーザーからのメッセージを使用して、着信メールの送信者に自動的に通知する構成設定。たとえば、サインイン ユーザーが電子メールに返信できないことを通知する自動返信などです。 
+<span data-ttu-id="d865a-p101">サインイン ユーザーからのメッセージを使用して、着信メールの送信者に自動的に通知する構成設定。たとえば、サインイン ユーザーが電子メールに返信できないことを通知する自動返信などです。</span><span class="sxs-lookup"><span data-stu-id="d865a-p101">Configuration settings to automatically notify the sender of an incoming email with a message from the signed-in user. For example, an automatic reply to notify that the signed-in user is unavailable to respond to emails.</span></span> 
 
 
-## <a name="properties"></a>プロパティ
-| プロパティ       | 型    |説明|
+## <a name="properties"></a><span data-ttu-id="d865a-106">プロパティ</span><span class="sxs-lookup"><span data-stu-id="d865a-106">Properties</span></span>
+| <span data-ttu-id="d865a-107">プロパティ</span><span class="sxs-lookup"><span data-stu-id="d865a-107">Property</span></span>     | <span data-ttu-id="d865a-108">型</span><span class="sxs-lookup"><span data-stu-id="d865a-108">Type</span></span>   |<span data-ttu-id="d865a-109">説明</span><span class="sxs-lookup"><span data-stu-id="d865a-109">Description</span></span>|
 |:---------------|:--------|:----------|
-|externalAudience|String| **Status** が `AlwaysEnabled` または `Scheduled` の場合に、**ExternalReplyMessage** を受信する、サインイン ユーザーの組織外の一連の対象ユーザー。可能な値は、`none`、`contactsOnly`、`all` です。|
-|externalReplyMessage|string|**Status** が `AlwaysEnabled` または `Scheduled` の場合、指定の外部対象ユーザーに送信される自動応答。|
-|internalReplyMessage|string|**Status** が `AlwaysEnabled` または `Scheduled` の場合、サインイン ユーザーの組織内の対象ユーザーに送信される自動応答。 |
-|scheduledEndDateTime|[dateTimeTimeZone](datetimetimezone.md)|**Status** が `Scheduled` に設定されている場合に、自動応答を終了する日時。 |
-|scheduledStartDateTime|[dateTimeTimeZone](datetimetimezone.md)|**Status** が `Scheduled` に設定されている場合に、自動応答を開始する日時。|
-|status|String|自動応答の構成状態。可能な値は、`disabled`、`alwaysEnabled`、`scheduled` です。|
+|<span data-ttu-id="d865a-110">externalAudience</span><span class="sxs-lookup"><span data-stu-id="d865a-110">externalAudience</span></span>|<span data-ttu-id="d865a-111">externalAudienceScope</span><span class="sxs-lookup"><span data-stu-id="d865a-111">externalAudienceScope</span></span>| <span data-ttu-id="d865a-112">**Status** が `AlwaysEnabled` または `Scheduled` の場合に、**ExternalReplyMessage** を受信する、サインイン ユーザーの組織外の一連の対象ユーザー。</span><span class="sxs-lookup"><span data-stu-id="d865a-112">The set of audience external to the signed-in user's organization who will receive the **ExternalReplyMessage**, if **Status** is `AlwaysEnabled` or `Scheduled`.</span></span> <span data-ttu-id="d865a-113">可能な値: `none`、 `contactsOnly`、 `all`。</span><span class="sxs-lookup"><span data-stu-id="d865a-113">The possible values are: `none`, `contactsOnly`, `all`.</span></span>|
+|<span data-ttu-id="d865a-114">externalReplyMessage</span><span class="sxs-lookup"><span data-stu-id="d865a-114">externalReplyMessage</span></span>|<span data-ttu-id="d865a-115">文字列</span><span class="sxs-lookup"><span data-stu-id="d865a-115">string</span></span>|<span data-ttu-id="d865a-116">**Status** が `AlwaysEnabled` または `Scheduled` の場合、指定の外部対象ユーザーに送信される自動応答。</span><span class="sxs-lookup"><span data-stu-id="d865a-116">The automatic reply to send to the specified external audience, if **Status** is `AlwaysEnabled` or `Scheduled`.</span></span>|
+|<span data-ttu-id="d865a-117">internalReplyMessage</span><span class="sxs-lookup"><span data-stu-id="d865a-117">internalReplyMessage</span></span>|<span data-ttu-id="d865a-118">文字列</span><span class="sxs-lookup"><span data-stu-id="d865a-118">string</span></span>|<span data-ttu-id="d865a-119">**Status** が `AlwaysEnabled` または `Scheduled` の場合、サインイン ユーザーの組織内の対象ユーザーに送信される自動応答。</span><span class="sxs-lookup"><span data-stu-id="d865a-119">The automatic reply to send to the audience internal to the signed-in user's organization, if **Status** is `AlwaysEnabled` or `Scheduled`.</span></span> |
+|<span data-ttu-id="d865a-120">scheduledEndDateTime</span><span class="sxs-lookup"><span data-stu-id="d865a-120">scheduledEndDateTime</span></span>|[<span data-ttu-id="d865a-121">dateTimeTimeZone</span><span class="sxs-lookup"><span data-stu-id="d865a-121">dateTimeTimeZone</span></span>](datetimetimezone.md)|<span data-ttu-id="d865a-122">**Status** が `Scheduled` に設定されている場合に、自動応答を終了する日時。</span><span class="sxs-lookup"><span data-stu-id="d865a-122">The date and time that automatic replies are set to end, if **Status** is set to `Scheduled`.</span></span> |
+|<span data-ttu-id="d865a-123">scheduledStartDateTime</span><span class="sxs-lookup"><span data-stu-id="d865a-123">scheduledStartDateTime</span></span>|[<span data-ttu-id="d865a-124">dateTimeTimeZone</span><span class="sxs-lookup"><span data-stu-id="d865a-124">dateTimeTimeZone</span></span>](datetimetimezone.md)|<span data-ttu-id="d865a-125">**Status** が `Scheduled` に設定されている場合に、自動応答を開始する日時。</span><span class="sxs-lookup"><span data-stu-id="d865a-125">The date and time that automatic replies are set to begin, if **Status** is set to `Scheduled`.</span></span>|
+|<span data-ttu-id="d865a-126">status</span><span class="sxs-lookup"><span data-stu-id="d865a-126">status</span></span>|<span data-ttu-id="d865a-127">automaticRepliesStatus</span><span class="sxs-lookup"><span data-stu-id="d865a-127">automaticRepliesStatus</span></span>|<span data-ttu-id="d865a-128">自動応答の構成状態です。</span><span class="sxs-lookup"><span data-stu-id="d865a-128">Configurations status for automatic replies.</span></span> <span data-ttu-id="d865a-129">可能な値: `disabled`、 `alwaysEnabled`、 `scheduled`。</span><span class="sxs-lookup"><span data-stu-id="d865a-129">The possible values are: `disabled`, `alwaysEnabled`, `scheduled`.</span></span>|
 
-## <a name="json-representation"></a>JSON 表記
+## <a name="json-representation"></a><span data-ttu-id="d865a-130">JSON 表記</span><span class="sxs-lookup"><span data-stu-id="d865a-130">JSON representation</span></span>
 
-以下は、リソースの JSON 表記です。
+<span data-ttu-id="d865a-131">以下は、リソースの JSON 表記です。</span><span class="sxs-lookup"><span data-stu-id="d865a-131">Here is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
