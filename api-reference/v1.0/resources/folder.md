@@ -1,4 +1,16 @@
-# <a name="folder-resource-type"></a>フォルダー リソースの種類
+---
+author: rgregg
+ms.author: rgregg
+ms.date: 09/10/2017
+title: Folder
+ms.openlocfilehash: dc90624b14a88d06b45302f421a7e3fcfa802a67
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27020262"
+---
+# <a name="folder-resource-type"></a>Folder リソース型
 
 **フォルダー**リソースは、アイテム上のフォルダー関連のデータを 1 つの構造にグループ化します。**フォルダー**ファセットが null 以外の [**DriveItems**](driveitem.md) は、他の DriveItems のコンテナーです。
 
@@ -16,26 +28,29 @@
 
 ```json
 {
-  "childCount": 1024
+  "childCount": 1024,
+  "view": { "@odata.type": "microsoft.graph.folderView" }
 }
 ```
 
 ## <a name="properties"></a>プロパティ
 
-| プロパティ       | 型  | 説明                                                     |
-|:---------------|:------|:----------------------------------------------------------------|
-| **childCount** | Int64 | このコンテナーの中に含まれる子の数。 |
+| プロパティ       | 型           | 説明
+|:---------------|:---------------|:-------------------------------------------
+| **childCount** | Int32          | このコンテナーの中に含まれる子の数。
+| **view**       | [folderView][] | フォルダーに推奨されるビューを定義するプロパティのコレクション。
 
-## <a name="remarks"></a>注釈 
+## <a name="remarks"></a>備考 
 
-DriveItem のファセットの詳細については、「[DriveItem](driveitem.md)」を参照してください。
+DriveItem のファセットの詳細については、「[DriveItem][]」を参照してください。
 
-<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
-2015-10-25 14:57:30 UTC -->
+[folderView]: folderview.md
+[DriveItem]: driveitem.md
+
 <!-- {
   "type": "#page.annotation",
-  "description": "folder resource",
-  "keywords": "",
+  "description": "The Folder facet describes properties of a folder",
+  "keywords": "folder,item,facet",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "Facets/Folder"
+} -->

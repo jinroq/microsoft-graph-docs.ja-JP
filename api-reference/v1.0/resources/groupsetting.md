@@ -1,18 +1,28 @@
+---
+title: groupSetting リソースの種類
+description: グループ設定は、グループ表示名でブロックする単語の一覧や、ゲスト ユーザーがグループの所有者になることを許可するか、といった動作を制御します。
+ms.openlocfilehash: 16eb67e717fb151a627961176b1409e8426e3178
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27021075"
+---
 # <a name="groupsetting-resource-type"></a>groupSetting リソースの種類
 
 グループ設定は、グループ表示名でブロックする単語の一覧や、ゲスト ユーザーがグループの所有者になることを許可するか、といった動作を制御します。
 
-グループ設定は、使用可能な [groupSettingTemplates](groupSettingTemplate.md) に基づいて作成することができ、事前設定された既定値を変更することができます。これらの設定は、テナント全体のレベルまたは特定のグループのグループ基本動作を制御します。テナント全体および特定のグループの両方で同じ設定が定義されている場合、グループ レベルの設定がテナント全体の設定よりも優先されます。たとえば、テナント全体の設定では、ゲストは既存のグループのメンバーによって招待されることがありますが、個別のグループ設定を優先することができ、その場合は、グループのメンバーはゲストを招待することができません。グループ設定は、Office 365 グループの動作のみを制御します。
+グループ設定は、使用可能な [groupSettingTemplates](groupsettingtemplate.md) に基づいて作成することができ、事前設定された既定値を変更することができます。これらの設定は、テナント全体のレベルまたは特定のグループのグループ基本動作を制御します。テナント全体および特定のグループの両方で同じ設定が定義されている場合、グループ レベルの設定がテナント全体の設定よりも優先されます。たとえば、テナント全体の設定では、ゲストは既存のグループのメンバーによって招待されることがありますが、個別のグループ設定を優先することができ、その場合は、グループのメンバーはゲストを招待することができません。グループ設定は、Office 365 グループの動作のみを制御します。
 
 ## <a name="methods"></a>メソッド
 
 | メソッド | 戻り値の型 | 説明 |
 |:---------------|:--------|:----------|
-|[設定を作成する](../api/groupsetting_post_groupsettings.md) | [groupSetting](groupsetting.md) |groupSettingTemplate に基づいて、設定オブジェクトを作成します。POST 要求は、テンプレートに定義されているすべての設定の settingValues を提供する必要があります。 |
-|[設定を取得する](../api/groupsetting_get.md) | [groupSetting](groupsetting.md) | 特定の設定オブジェクトのプロパティを参照します。 |
-|[設定を一覧表示する](../api/groupsetting_list.md) | [groupSetting](groupsetting.md) コレクション | すべての設定オブジェクトのプロパティを一覧表示します。 |
-|[設定を更新する](../api/groupsetting_update.md) | [groupSetting](groupsetting.md) | Groupsetting オブジェクトを更新します。 |
-|[設定を削除する](../api/groupsetting_delete.md) | なし | 設定オブジェクトを削除します。 |
+|[設定を作成する](../api/groupsetting-post-groupsettings.md) | [groupSetting](groupsetting.md) |groupSettingTemplate に基づいて、設定オブジェクトを作成します。POST 要求は、テンプレートに定義されているすべての設定の settingValues を提供する必要があります。 |
+|[設定を取得する](../api/groupsetting-get.md) | [groupSetting](groupsetting.md) | 特定の設定オブジェクトのプロパティを参照します。 |
+|[設定を一覧表示する](../api/groupsetting-list.md) | [groupSetting](groupsetting.md) コレクション | すべての設定オブジェクトのプロパティを一覧表示します。 |
+|[設定を更新する](../api/groupsetting-update.md) | [groupSetting](groupsetting.md) | Groupsetting オブジェクトを更新します。 |
+|[設定を削除する](../api/groupsetting-delete.md) | なし | 設定オブジェクトを削除します。 |
 
 ## <a name="properties"></a>プロパティ
 
@@ -31,11 +41,12 @@
 
 以下は、リソースの JSON 表記です。
 
-<!-- {
+<!--{
   "blockType": "resource",
-  "optionalProperties": [
-
-  ],
+  "openType": true,
+  "optionalProperties": [],
+  "keyProperty": "id",
+  "baseType": "microsoft.graph.entity",
   "@odata.type": "microsoft.graph.groupSetting"
 }-->
 

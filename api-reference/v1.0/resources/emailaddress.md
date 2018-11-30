@@ -1,3 +1,13 @@
+---
+title: emailAddress リソースの種類
+description: 連絡先またはメッセージ受信者の名前と電子メール アドレスです。
+ms.openlocfilehash: 962b2f36af9e292125edc3da8606cd532b8c2ec0
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27020539"
+---
 # <a name="emailaddress-resource-type"></a>emailAddress リソースの種類
 
 連絡先またはメッセージ受信者の名前と電子メール アドレスです。

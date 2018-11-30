@@ -1,36 +1,49 @@
+---
+title: Microsoft Graph での Excel の操作
+description: 'Microsoft Graph を使用すると、OneDrive for Business、SharePoint サイト、またはグループ ドライブに保存されている Excel ブックを、Web アプリケーションやモバイル アプリケーションで読み取ったり変更したりすることができます。`Workbook` (つまり Excel ファイル) リソースには、リレーションシップを介するその他のすべての Excel リソースが含まれています。ファイルの場所を URL で指定すれば、ドライブ API でブックにアクセスできます。例:'
+ms.openlocfilehash: b08ee4d6a82d4d45d75e53d568102a9c6f322a01
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27020528"
+---
 # <a name="working-with-excel-in-microsoft-graph"></a>Microsoft Graph での Excel の操作
 
-Microsoft Graph を使用すると、OneDrive、SharePoint、またはその他のサポートされているストレージ プラットフォームに格納されている Excel ブックを、Web アプリケーションやモバイル アプリケーションで読み取ったり変更したりすることができます。`Workbook` (つまり Excel ファイル) リソースには、リレーションシップを介するその他のすべての Excel リソースが含まれています。ファイルの場所を URL で指定すれば、[ドライブ API](drive.md) でブックにアクセスできます。例:
+Microsoft Graph を使用すると、OneDrive for Business、SharePoint サイト、またはグループ ドライブに保存されている Excel ブックを、Web アプリケーションやモバイル アプリケーションで読み取ったり変更したりすることができます。`Workbook` (つまり Excel ファイル) リソースには、リレーションシップを介するその他のすべての Excel リソースが含まれています。ファイルの場所を URL で指定すれば、[ドライブ API](drive.md) でブックにアクセスできます。例:
 
 `https://graph.microsoft.com/{version}/me/drive/items/{id}/workbook/`  
 `https://graph.microsoft.com/{version}/me/drive/root:/{item-path}:/workbook/`  
 
-ブックに対して作成、読み取り、更新、削除 (CRUD) 操作を実行するための標準 REST API を使用して、一連の Excel オブジェクト (テーブル、範囲、またはグラフなど) にアクセスできます。たとえば、`https://graph.microsoft.com/{version}/me/drive/items/{id}/workbook/` では、  
+ブックに対して作成、読み取り、更新、削除 (CRUD) 操作を実行するための標準 REST API を使用して、一連の Excel オブジェクト (テーブル、範囲、またはグラフなど) にアクセスできます。たとえば、`GET https://graph.microsoft.com/{version}/me/drive/items/{id}/workbook/worksheets` では、  
 ワークブックの一部であるワークシート オブジェクトのコレクションが返されます。    
 
 
-**注:**Excel の REST API では、Office Open XML ファイル形式のブックのみをサポートしています。`.xls` 拡張子のブックはサポートされていません。 
+Excel の REST API では、Office Open XML ファイル形式のブックのみをサポートしています。`.xls` 拡張子のブックはサポートされていません。 
+
+**注**: OneDrive のコンシューマー向けのプラットフォームに保存されたブックは、サポートされていません。 現時点では、Excel の REST API は、ビジネス プラットフォームに保存されたファイルのみをサポートしています。 
 
 ## <a name="authorization-and-scopes"></a>承認とスコープ
 
-[Azure AD v.20 エンドポイント](https://developer.microsoft.com/en-us/graph/docs/authorization/converged_auth)を使用して Excel API を認証できます。すべての API には、`Authorization: Bearer {access-token}` HTTP ヘッダーが必要です。   
+[Azure AD v.2 エンドポイント](https://developer.microsoft.com/graph/docs/authorization/converged_auth)を使用して Excel API を認証できます。 すべての API には、`Authorization: Bearer {access-token}` HTTP ヘッダーが必要です。   
   
-Excel リソースを使用するには、次のいずれかの[アクセス許可のスコープ](https://developer.microsoft.com/en-us/graph/docs/authorization/permission_scopes)が必要です。
+Excel リソースを使用するには、以下のいずれかの[アクセス許可のスコープ](https://developer.microsoft.com/graph/docs/authorization/permission_scopes)が必要です。
 
-* Files.Read 
-* Files.ReadWrite
+* Files.Read (読み取りアクション用)
+* Files.ReadWrite (読み取りおよび書き込みアクション用)
 
 
 ## <a name="sessions-and-persistence"></a>セッションと永続化
 
-2 つのモードのいずれかで、Excel API を呼び出すことができます。 
+次の 3 つのモードのいずれかで、Excel API を呼び出すことができます。 
 
-1. 永続セッション - ブックに加えられたすべての変更は永続化 (保存) されます。これは通常の操作モードです。 
-2. 非永続セッション - API によって加えられた変更は元の場所に保存されません。代わりに、その特定の API セッション中に加えられた変更を反映するファイルの一時コピーが Excel のバックエンド サーバーに保持されます。Excel のセッションの有効期限が切れると、変更は失われます。分析を行ったり、計算の結果やグラフのイメージを取得したりする必要があるものの、ドキュメントの状態には影響を与えないアプリには、このモードが便利です。   
+1. 永続セッション - ブックに加えられたすべての変更は永続化 (保存) されます。 これは、最も効率的でパフォーマンスの高い操作のモードです。 
+2. 非永続セッション - API によって加えられた変更は元の場所に保存されません。代わりに、その特定の API セッション中に加えられた変更を反映するファイルの一時コピーが Excel のバックエンド サーバーに保持されます。Excel のセッションの有効期限が切れると、変更は失われます。分析を行ったり、計算の結果やグラフのイメージを取得したりする必要があるものの、ドキュメントの状態には影響を与えないアプリには、このモードが便利です。 
+3. セッションレス - セッション情報を伴わずに API 呼び出しが行われます。 Excel サーバーは、操作を実行するたびにサーバーにあるブックのコピーを検索する必要があるので、これは Excel API を呼び出す上で効率的な方法とは言えません。 この方法は 1 回限りの要求を出すのには適しています。 
 
 API でセッションを表すには、`workbook-session-id: {session-id}` ヘッダーを使用します。 
 
->**注:**セッション ヘッダーは Excel API が機能するために必要ではありません。しかし、パフォーマンスを向上させるためにセッション ヘッダーを使用することをお勧めします。セッション ヘッダーを使用しない場合は、API の呼び出し時に行われた変更がファイルに永続化_されます_。  
+>**注:** セッション ヘッダーは Excel API が機能するために必要ではありません。しかし、パフォーマンスを向上させるためにセッション ヘッダーを使用することをお勧めします。セッション ヘッダーを使用しない場合は、API の呼び出し時に行われた変更がファイルに永続化_されます_。  
 
 ### <a name="api-call-to-get-a-session"></a>セッションを取得するための API の呼び出し 
 
@@ -54,7 +67,7 @@ authorization: Bearer {access-token}
 
 <!-- { "blockType": "ignored" } -->
 ```http
-HTTP code: 201, Created
+HTTP code: 201 Created
 content-type: application/json;odata.metadata 
 
 {
@@ -67,7 +80,7 @@ content-type: application/json;odata.metadata
 #### <a name="usage"></a>使用方法 
 
 以前の呼び出しから返されたセッション ID は、後続の API 要求のヘッダーとして渡されます  
-`workbook-session-id` HTTP ヘッダー 
+`workbook-session-id` HTTP ヘッダー。 
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -75,6 +88,8 @@ GET /{version}/me/drive/items/01CYZLFJGUJ7JHBSZDFZFL25KSZGQTVAUN/workbook/worksh
 authorization: Bearer {access-token} 
 workbook-session-id: {session-id}
 ```
+
+>注: セッション ID の有効期限が切れていた場合、そのセッションで `404` HTTP エラー コードが返されます。 このようなシナリオでは、新しいセッションを作成して続行できます。 または、定期的にセッションを更新して維持するという方法もあります。 通常、永続セッションの有効期限は、非アクティブ状態が約 7 分間経過した後に切れます。 非永続セッションの有効期限は、非アクティブ状態が約 5 分間経過した後に切れます。 
 
 ## <a name="common-excel-scenarios"></a>一般的な Excel のシナリオ
 
@@ -97,7 +112,7 @@ workbook-session-id: {session-id}
 
 <!-- { "blockType": "ignored" } -->
 ```http
-HTTP code: 200, OK
+HTTP code: 200 OK
 content-type: application/json;odata.metadata 
 
 {
@@ -132,10 +147,9 @@ workbook-session-id: {session-id}
 { "name": "Sheet32243" }
 ```
 
-応答 
-<!-- { "blockType": "ignored" } -->
+応答<!-- { "blockType": "ignored" } -->
 ```http
-HTTP code: 201, Created
+HTTP code: 201 Created
 content-type: application/json;odata.metadata 
 
 {
@@ -149,7 +163,9 @@ content-type: application/json;odata.metadata
 ```
 
 #### <a name="get-a-new-worksheet"></a>新しいワークシートの取得 
- 
+
+名前に基づいてワークシートを取得します。 
+
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /{version}/me/drive/items/01CYZLFJGUJ7JHBSZDFZFL25KSZGQTVAUN/workbook/worksheets/Sheet32243
@@ -158,10 +174,9 @@ authorization: Bearer {access-token}
 workbook-session-id: {session-id}
 ```
 
-応答 
-<!-- { "blockType": "ignored" } -->
+応答<!-- { "blockType": "ignored" } -->
 ```http
-HTTP code: 200, OK
+HTTP code: 200 OK
 content-type: application/json;odata.metadata 
 
 {
@@ -186,10 +201,9 @@ authorization: Bearer {access-token}
 workbook-session-id: {session-id}
 ```
 
-応答
-<!-- { "blockType": "ignored" } -->
+応答<!-- { "blockType": "ignored" } -->
 ```http
-HTTP code: 204, No Content
+HTTP code: 204 No Content
 ```
 
 
@@ -211,7 +225,7 @@ workbook-session-id: {session-id}
 
 <!-- { "blockType": "ignored" } -->
 ```http
-HTTP code: 200, OK
+HTTP code: 200 OK
 content-type: application/json;odata.metadata 
 
 {
@@ -228,8 +242,7 @@ content-type: application/json;odata.metadata
 
 #### <a name="list-charts-that-are-part-of-the-worksheet"></a>ワークシートの一部になっているグラフを一覧表示する 
 
-要求
-<!-- { "blockType": "ignored" } -->
+要求<!-- { "blockType": "ignored" } -->
 ```http 
 GET /{version}/me/drive/items/01CYZLFJB6K563VVUU2ZC2FJBAHLSZZQXL/workbook/worksheets('%7B00000000-0001-0000-0000-000000000000%7D')/charts
 accept: Application/Json 
@@ -237,10 +250,9 @@ authorization: Bearer {access-token}
 workbook-session-id: {session-id} 
 ```
 
-応答
-<!-- { "blockType": "ignored" } -->
+応答<!-- { "blockType": "ignored" } -->
 ```http
-HTTP code: 200, OK
+HTTP code: 200 OK
 content-type: application/json;odata.metadata 
 
 {
@@ -263,18 +275,16 @@ content-type: application/json;odata.metadata
 
 #### <a name="get-chart-image"></a>グラフの画像を取得する
 
-要求 
-<!-- { "blockType": "ignored" } -->
+要求<!-- { "blockType": "ignored" } -->
 ```http
 GET /{version}/me/drive/items/01CYZLFJB6K563VVUU2ZC2FJBAHLSZZQXL/workbook/worksheets('%7B00000000-0001-0000-0000-000000000000%7D')/charts('%7B00000000-0008-0000-0100-000003000000%7D')/Image(width=0,height=0,fittingMode='fit')
 authorization: Bearer {access-token} 
 workbook-session-id: {session-id} 
 ```
 
-応答
-<!-- { "blockType": "ignored" } -->
+応答<!-- { "blockType": "ignored" } -->
 ```http
-HTTP code: 200, OK
+HTTP code: 200 OK
 content-type: application/json;odata.metadata 
 
 {
@@ -297,15 +307,14 @@ authorization: Bearer {access-token}
 { "type": "ColumnClustered", "sourcedata": "A1:C4", "seriesby": "Auto" }
 ```
 
-応答 
-<!-- { "blockType": "ignored" } -->
+応答<!-- { "blockType": "ignored" } -->
 ```http
-HTTP code: 201, Created
+HTTP code: 201 Created
 content-type: application/json;odata.metadata 
 
 {
   "@odata.context": "https://graph.microsoft.com/{version}/$metadata#chart",
-  "@odata.type": "#microsoft.graph.chart",
+  "@odata.type": "#microsoft.graph.workbookChart",
   "@odata.id": "/users('f6d92604-4b76-4b70-9a4c-93dfbcc054d5')/drive/items('01CYZLFJB6K563VVUU2ZC2FJBAHLSZZQXL')/workbook/worksheets(%27%7B00000000-0001-0000-0000-000000000000%7D%27)/charts(%27%7B2D421098-FA19-41F7-8528-EE7B00E4BB42%7D%27)",
   "height": 216.0,
   "id": "{2D421098-FA19-41F7-8528-EE7B00E4BB42}",
@@ -332,7 +341,7 @@ workbook-session-id: {session-id}
 
 <!-- { "blockType": "ignored" } -->
 ```http
-HTTP code: 200, OK
+HTTP code: 200 OK
 content-type: application/json;odata.metadata 
 
 {
@@ -349,8 +358,7 @@ content-type: application/json;odata.metadata
 
 #### <a name="update-chart-source-data"></a>グラフのソース データの更新 
 
-要求
-<!-- { "blockType": "ignored" } -->
+要求<!-- { "blockType": "ignored" } -->
 ```http
 POST /{version}/me/drive/items/01CYZLFJB6K563VVUU2ZC2FJBAHLSZZQXL/workbook/worksheets('%7B00000000-0001-0000-0000-000000000000%7D')/charts('%7B2D421098-FA19-41F7-8528-EE7B00E4BB42%7D')/setData
 content-type: Application/Json 
@@ -361,18 +369,16 @@ workbook-session-id: {session-id}
 { "sourceData": "A1:C4", "seriesBy": "Auto" }
 ```
 
-応答
-<!-- { "blockType": "ignored" } -->
+応答<!-- { "blockType": "ignored" } -->
 ```http
-HTTP code: 204, No Content
+HTTP code: 204 No Content
 ```
 
 ### <a name="table-operations"></a>テーブルの操作 
 
 #### <a name="get-list-of-tables"></a>テーブル一覧の取得 
 
-要求 
-<!-- { "blockType": "ignored" } -->
+要求<!-- { "blockType": "ignored" } -->
 ```http
 GET /{version}/me/drive/items/01CYZLFJB6K563VVUU2ZC2FJBAHLSZZQXL/workbook/worksheets('%7B00000000-0001-0000-0000-000000000000%7D')/tables
 accept: Application/Json 
@@ -380,17 +386,43 @@ authorization: Bearer {access-token}
 workbook-session-id: {session-id}
 ```
 
-応答
-<!-- { "blockType": "ignored" } -->
+応答<!-- { "blockType": "ignored" } -->
 ```http
-HTTP code: 200, OK
+HTTP code: 200 OK
 content-type: application/json;odata.metadata 
+```
+
+#### <a name="create-table"></a>テーブルの作成
+
+要求<!-- { "blockType": "ignored" } -->
+```http 
+POST /{version}/me/drive/items/01CYZLFJDYBLIGAE7G5FE3I4VO2XP7BLU4/workbook/tables/{table-id}/add
+content-type: Application/Json 
+authorization: Bearer {access-token} 
+workbook-session-id: {session-id}
+
+{ "name": "NewTableName", "hasHeaders": true, "showTotals": false, "style": "TableStyleMedium4" }
+```
+
+応答<!-- { "blockType": "ignored" } -->
+```http
+HTTP code: 201 Created
+content-type: application/json;odata.metadata 
+
+{
+  "@odata.context": "https://graph.microsoft.com/{version}/$metadata#users('f6d92604-4b76-4b70-9a4c-93dfbcc054d5')/drive/items('01CYZLFJDYBLIGAE7G5FE3I4VO2XP7BLU4')/workbook/tables/$entity",
+  "@odata.id": "/users('f6d92604-4b76-4b70-9a4c-93dfbcc054d5')/drive/items('01CYZLFJDYBLIGAE7G5FE3I4VO2XP7BLU4')/workbook/tables(%272%27)",
+  "id": "2",
+  "name": "NewTableName",
+  "showHeaders": true,
+  "showTotals": false,
+  "style": "TableStyleMedium4"
+}
 ```
 
 #### <a name="update-table"></a>テーブルの更新
 
-要求 
-<!-- { "blockType": "ignored" } -->
+要求<!-- { "blockType": "ignored" } -->
 ```http 
 PATCH /{version}/me/drive/items/01CYZLFJDYBLIGAE7G5FE3I4VO2XP7BLU4/workbook/tables('2')
 content-type: Application/Json 
@@ -400,10 +432,9 @@ workbook-session-id: {session-id}
 { "name": "NewTableName", "showHeaders": true, "showTotals": false, "style": "TableStyleMedium4" }
 ```
 
-応答 
-<!-- { "blockType": "ignored" } -->
+応答<!-- { "blockType": "ignored" } -->
 ```http
-HTTP code: 200, OK
+HTTP code: 200 OK
 content-type: application/json;odata.metadata 
 
 {
@@ -422,7 +453,7 @@ content-type: application/json;odata.metadata
 
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /{version}/me/drive/items/01CYZLFJDYBLIGAE7G5FE3I4VO2XP7BLU4/workbook/tables('4')/Rows
+GET /{version}/me/drive/items/01CYZLFJDYBLIGAE7G5FE3I4VO2XP7BLU4/workbook/tables('4')/rows
 authorization: Bearer {access-token} 
 workbook-session-id: {session-id}
 ```
@@ -431,7 +462,7 @@ workbook-session-id: {session-id}
 
 <!-- { "blockType": "ignored" } -->
 ```http
-HTTP code: 200, OK
+HTTP code: 200 OK
 content-type: application/json;odata.metadata 
 
 {
@@ -509,10 +540,9 @@ content-type: application/json;odata.metadata
 
 #### <a name="get-list-of-table-columns"></a>テーブル列の一覧の取得
 
-要求
-<!-- { "blockType": "ignored" } -->
+要求<!-- { "blockType": "ignored" } -->
 ```http
-GET /{version}/me/drive/items/01CYZLFJDYBLIGAE7G5FE3I4VO2XP7BLU4/workbook/tables('4')/Columns
+GET /{version}/me/drive/items/01CYZLFJDYBLIGAE7G5FE3I4VO2XP7BLU4/workbook/tables('4')/columns
 authorization: Bearer {access-token} 
 workbook-session-id: {session-id}
 ```
@@ -521,7 +551,7 @@ workbook-session-id: {session-id}
 
 <!-- { "blockType": "ignored" } -->
 ```http
-HTTP code: 200, OK 
+HTTP code: 200 OK 
 content-type: application/json;odata.metadata 
 
 {
@@ -621,10 +651,9 @@ content-type: application/json;odata.metadata
 
 #### <a name="add-a-table-row"></a>テーブル行の追加
 
-要求
-<!-- { "blockType": "ignored" } -->
+要求<!-- { "blockType": "ignored" } -->
 ```http
-POST /{version}/me/drive/items/01CYZLFJDYBLIGAE7G5FE3I4VO2XP7BLU4/workbook/tables('4')/Rows
+POST /{version}/me/drive/items/01CYZLFJDYBLIGAE7G5FE3I4VO2XP7BLU4/workbook/tables('4')/rows
 content-type: Application/Json 
 authorization: Bearer {access-token} 
 workbook-session-id: {session-id}
@@ -632,10 +661,9 @@ workbook-session-id: {session-id}
 { "values": [ [ "Jan-15-2016", "49", "37" ] ], "index": null }
 ```
 
-応答 
-<!-- { "blockType": "ignored" } -->
+応答<!-- { "blockType": "ignored" } -->
 ```http
-HTTP code: 201, Created
+HTTP code: 201 Created
 content-type: application/json;odata.metadata 
 
 {
@@ -654,10 +682,9 @@ content-type: application/json;odata.metadata
 
 #### <a name="add-a-table-column"></a>テーブル列の追加 
 
-要求 
-<!-- { "blockType": "ignored" } -->
+要求<!-- { "blockType": "ignored" } -->
 ```http 
-POST /{version}/me/drive/items/01CYZLFJDYBLIGAE7G5FE3I4VO2XP7BLU4/workbook/tables('2')/Columns
+POST /{version}/me/drive/items/01CYZLFJDYBLIGAE7G5FE3I4VO2XP7BLU4/workbook/tables('2')/columns
 content-type: Application/Json 
 accept: application/Json 
 
@@ -669,7 +696,7 @@ accept: application/Json
 
 <!-- { "blockType": "ignored" } -->
 ```http 
-HTTP code: 201, Created
+HTTP code: 201 Created
 content-type: application/json;odata.metadata 
 
 {
@@ -694,54 +721,47 @@ content-type: application/json;odata.metadata
 
 #### <a name="delete-table-row"></a>テーブル行の削除
 
-要求 
-<!-- { "blockType": "ignored" } -->
+要求<!-- { "blockType": "ignored" } -->
 ```http  
-DELETE /{version}/me/drive/items/01CYZLFJDYBLIGAE7G5FE3I4VO2XP7BLU4/workbook/tables('4')/Rows/$/ItemAt(index=6)
+DELETE /{version}/me/drive/items/01CYZLFJDYBLIGAE7G5FE3I4VO2XP7BLU4/workbook/tables('4')/rows/$/itemAt(index=6)
 authorization: Bearer {access-token} 
 workbook-session-id: {session-id}
 ```
 
-応答 
-<!-- { "blockType": "ignored" } -->
+応答<!-- { "blockType": "ignored" } -->
 ```http
-HTTP code: 204, No Content
+HTTP code: 204 No Content
 ```
 
 #### <a name="delete-table-column"></a>テーブル列の削除 
-要求
-<!-- { "blockType": "ignored" } -->
+要求<!-- { "blockType": "ignored" } -->
 ```http
-DELETE /{version}/me/drive/items/01CYZLFJDYBLIGAE7G5FE3I4VO2XP7BLU4/workbook/tables('4')/Columns('3')
+DELETE /{version}/me/drive/items/01CYZLFJDYBLIGAE7G5FE3I4VO2XP7BLU4/workbook/tables('4')/columns('3')
 authorization: Bearer {access-token} 
 workbook-session-id: {session-id}
 ```
 
-応答 
-<!-- { "blockType": "ignored" } -->
+応答<!-- { "blockType": "ignored" } -->
 ```http
-HTTP code: 204, No Content
+HTTP code: 204 No Content
 ```
 
 #### <a name="convert-table-to-range"></a>テーブルを範囲に変換する 
-要求
-<!-- { "blockType": "ignored" } -->
+要求<!-- { "blockType": "ignored" } -->
 ```http
 POST /{version}/me/drive/items/01CYZLFJDYBLIGAE7G5FE3I4VO2XP7BLU4/workbook/tables('1')/convertToRange
 authorization: Bearer {access-token} 
 workbook-session-id: {session-id}
 ```
 
-応答
-<!-- { "blockType": "ignored" } -->
+応答<!-- { "blockType": "ignored" } -->
 ```http
-HTTP code: 200, OK 
+HTTP code: 200 OK 
 content-type: application/json;odata.metadata 
 ```
 
 #### <a name="table-sort"></a>テーブルの並べ替え
-要求
-<!-- { "blockType": "ignored" } -->
+要求<!-- { "blockType": "ignored" } -->
 ```http
 POST /{version}/me/drive/items/01CYZLFJGUJ7JHBSZDFZFL25KSZGQTVAUN/workbook/worksheets('Sheet15799')/tables('table2')/sort/apply
 authorization: Bearer {access-token} 
@@ -757,15 +777,13 @@ workbook-session-id: {session-id}
 ```
 
 
-応答
-<!-- { "blockType": "ignored" } -->
+応答<!-- { "blockType": "ignored" } -->
 ```http
-HTTP code: 204, No Content
+HTTP code: 204 No Content
 ```
 
 #### <a name="table-filter"></a>テーブル フィルター
-要求
-<!-- { "blockType": "ignored" } -->
+要求<!-- { "blockType": "ignored" } -->
 ```http
 POST /{version}/me/drive/items/01CYZLFJGUJ7JHBSZDFZFL25KSZGQTVAUN/workbook/worksheets('Sheet15799')/tables('table2')/columns(id='2')/filter/apply
 authorization: Bearer {access-token} 
@@ -782,36 +800,32 @@ workbook-session-id: {session-id}
 }
 ```
 
-応答
-<!-- { "blockType": "ignored" } -->
+応答<!-- { "blockType": "ignored" } -->
 ```http
-HTTP code: 204, No Content
+HTTP code: 204 No Content
 ```
 
 
 #### <a name="clear-filter"></a>フィルターのクリア
-要求
-<!-- { "blockType": "ignored" } -->
+要求<!-- { "blockType": "ignored" } -->
 ```http
 POST /{version}/me/drive/items/01CYZLFJGUJ7JHBSZDFZFL25KSZGQTVAUN/workbook/worksheets('Sheet15799')/tables('table2')/columns(id='2')/filter/clear
 authorization: Bearer {access-token} 
 workbook-session-id: {session-id}
 ```
 
-応答
-<!-- { "blockType": "ignored" } -->
+応答<!-- { "blockType": "ignored" } -->
 ```http
-HTTP code: 204, No Content
+HTTP code: 204 No Content
 ```
 
 ### <a name="range-operations"></a>範囲の操作
 
 #### <a name="get-range"></a>範囲の取得 
 
-要求
-<!-- { "blockType": "ignored" } -->
+要求<!-- { "blockType": "ignored" } -->
 ```http
-GET /{version}/me/drive/items/01CYZLFJDYBLIGAE7G5FE3I4VO2XP7BLU4/workbook/worksheets('test')/range(address='A1:B2')
+GET /{version}/me/drive/items/{item-id}/workbook/worksheets/{worksheet-id}/range(address='A1:B2')
 authorization: Bearer {access-token} 
 workbook-session-id: {session-id}
 ```
@@ -820,12 +834,12 @@ workbook-session-id: {session-id}
 
 <!-- { "blockType": "ignored" } -->
 ```http
-HTTP code: 200, OK
+HTTP code: 200 OK
 content-type: application/json;odata.metadata 
 
 {
   "@odata.context": "https://graph.microsoft.com/{version}/$metadata#range",
-  "@odata.type": "#microsoft.graph.range",
+  "@odata.type": "#microsoft.graph.workbookRange",
   "@odata.id": "/users('f6d92604-4b76-4b70-9a4c-93dfbcc054d5')/drive/items('01CYZLFJDYBLIGAE7G5FE3I4VO2XP7BLU4')/workbook/worksheets(%27%7B00000000-0001-0000-0300-000000000000%7D%27)/range(address=%27A1:B2%27)",
   "address": "test!A1:B2",
   "addressLocal": "test!A1:B2",
@@ -923,12 +937,12 @@ workbook-session-id: {session-id}
 
 <!-- { "blockType": "ignored" } -->
 ```http
-HTTP code: 200, OK
+HTTP code: 200 OK
 content-type: application/json;odata.metadata
 
 {
   "@odata.context": "https://graph.microsoft.com/{version}/$metadata#range",
-  "@odata.type": "#microsoft.graph.range",
+  "@odata.type": "#microsoft.graph.workbookRange",
   "@odata.id": "/users('f6d92604-4b76-4b70-9a4c-93dfbcc054d5')/drive/items('01CYZLFJDYBLIGAE7G5FE3I4VO2XP7BLU4')/workbook/worksheets(%27%7B00000000-0001-0000-0300-000000000000%7D%27)/range(address=%27test!A1:B2%27)",
   "address": "test!A1:B2",
   "addressLocal": "test!A1:B2",
@@ -1014,8 +1028,7 @@ content-type: application/json;odata.metadata
 ```
 
 #### <a name="range-sort"></a>範囲の並べ替え
-要求
-<!-- { "blockType": "ignored" } -->
+要求<!-- { "blockType": "ignored" } -->
 ```http
 POST /{version}/me/drive/items/01CYZLFJGUJ7JHBSZDFZFL25KSZGQTVAUN/workbook/worksheets('Sheet15799')/usedRange/sort/apply
 authorization: Bearer {access-token} 
@@ -1030,10 +1043,9 @@ workbook-session-id: {session-id}
 }
 ```
 
-応答
-<!-- { "blockType": "ignored" } -->
+応答<!-- { "blockType": "ignored" } -->
 ```http
-HTTP code: 204, No Content
+HTTP code: 204 No Content
 ```
 
 
@@ -1051,7 +1063,7 @@ workbook-session-id: {session-id}
 
 <!-- { "blockType": "ignored" } -->
 ```http 
-HTTP code: 200, OK
+HTTP code: 200 OK
 content-type: application/json
 
 {
@@ -1179,7 +1191,7 @@ API が無制限の範囲を取得する要求を行う場合 (`getRange('C:C')`
 
 <!-- { "blockType": "ignored" } -->
 ```http
-PATCH /workbook/worksheets('Sheet1')/range(address="A:B")
+PATCH /workbook/worksheets/{id}/range(address="A:B")
 
 {
   "values" : "Due Date"
@@ -1208,7 +1220,7 @@ API は *1 つのセル値*を探し、対象の範囲ディメンションが�
 
 <!-- { "blockType": "ignored" } -->
 ```http
-PATCH /workbook/worksheets('Sheet1')/range(address="A1:B00")
+PATCH /workbook/worksheets/{id}/range(address="A1:B00")
 
 {
   "values" : "Sample text"
@@ -1240,7 +1252,7 @@ workbook-session-id: {session-id}
 
 <!-- { "blockType": "ignored" } -->
 ```http 
-HTTP code: 200, OK
+HTTP code: 200 OK
 content-type: application/json
 
 {

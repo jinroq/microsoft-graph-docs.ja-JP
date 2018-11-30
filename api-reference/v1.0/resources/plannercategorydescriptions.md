@@ -1,11 +1,19 @@
-# plannerCategoryDescriptions リソースの種類
-<a id="plannercategorydescriptions-resource-type" class="xliff"></a>
+---
+title: plannerCategoryDescriptions リソースの種類
+description: '**PlannerCategoryDescriptions** リソースは、計画に定義されているカテゴリを説明するラベルを表します。これは、計画の詳細オブジェクトに含まれています。最大 6 つのカテゴリを定義できます。 '
+ms.openlocfilehash: e71cbd1f41d23747691b3738b5a46ff302a72168
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27021219"
+---
+# <a name="plannercategorydescriptions-resource-type"></a>plannerCategoryDescriptions リソースの種類
 
 **PlannerCategoryDescriptions** リソースは、計画に定義されているカテゴリを説明するラベルを表します。これは、[計画の詳細](plannerplandetails.md)オブジェクトに含まれています。最大 6 つのカテゴリを定義できます。 
 
 
-## プロパティ
-<a id="properties" class="xliff"></a>
+## <a name="properties"></a>プロパティ
 | プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
 |category1|String|Category 1 に関連付けられているラベル|
@@ -15,8 +23,7 @@
 |category5|String|Category 5 に関連付けられているラベル|
 |category6|String|Category 6 に関連付けられているラベル|
 
-## JSON 表記
-<a id="json-representation" class="xliff"></a>
+## <a name="json-representation"></a>JSON 表記
 以下は、リソースの JSON 表記です。
 
 <!-- {

@@ -1,3 +1,15 @@
+---
+author: rgregg
+ms.author: rgregg
+ms.date: 09/10/2017
+title: File
+ms.openlocfilehash: 2201533457863c3cac6b7a9463f80e37bd5a569a
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27022014"
+---
 # <a name="file-resource-type"></a>ファイル リソースの種類
 
 **ファイル** リソースは、ファイル関連のデータ項目を 1 つの構造にグループ化します。
@@ -25,21 +37,17 @@
 
 | プロパティ | 型                    | 説明                                                                                                                                      |
 |:---------|:------------------------|:-------------------------------------------------------------------------------------------------------------------------------------------------|
-| hashes   | [HashesType](hashes.md) | ファイルのバイナリ コンテンツのハッシュ (利用可能な場合)。読み取り専用です。                                                                                    |
+| hashes   | [Hashes](hashes.md) | ファイルのバイナリ コンテンツのハッシュ (利用可能な場合)。読み取り専用です。                                                                                    |
 | mimeType | string                  | ファイルの MIME の種類。これはサーバーのロジックによって決定されます。またファイルのアップロード時に指定された値でない場合があります。読み取り専用です。 |
 
 ## <a name="remarks"></a>注釈 
 
 DriveItem のファセットの詳細については、「[DriveItem](driveitem.md)」を参照してください。
 
-
-
-<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
-2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "file resource",
-  "keywords": "",
+  "description": "The file facet describes properties of a file",
+  "keywords": "file,item,facet",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "Facets/File"
+} -->

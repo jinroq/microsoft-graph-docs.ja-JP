@@ -1,19 +1,26 @@
-# licenseDetails リソースの種類
-<a id="licensedetails-resource-type" class="xliff"></a>
+---
+title: licenseDetails リソースの種類
+description: ユーザーに割り当てられているライセンスに関する情報が含まれています。
+ms.openlocfilehash: 8c357617eea04151851a0e3a27c41937abd07b28
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27021771"
+---
+# <a name="licensedetails-resource-type"></a>licenseDetails リソースの種類
 
 ユーザーに割り当てられているライセンスに関する情報が含まれています。
 
-## メソッド
-<a id="methods" class="xliff"></a>
+## <a name="methods"></a>メソッド
 
 | メソッド           | 戻り値の型    |説明|
 |:---------------|:--------|:----------|
-|[licenseDetails を一覧表示する](../api/user_list_licensedetails.md) | licenseDetails コレクション |ユーザーの licenseDetails オブジェクトの一覧を取得します。|
+|[licenseDetails を一覧表示する](../api/user-list-licensedetails.md) | licenseDetails コレクション |ユーザーの licenseDetails オブジェクトの一覧を取得します。|
 
-<!--|[Get licenseDetails](../api/licensedetails_get.md) | licenseDetails |Read properties and relationships of a licenseDetails object.|-->
+<!--|[Get licenseDetails](../api/licensedetails-get.md) | licenseDetails |Read properties and relationships of a licenseDetails object.|-->
 
-## プロパティ
-<a id="properties" class="xliff"></a>
+## <a name="properties"></a>プロパティ
 | プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
 |id|String| ライセンス詳細オブジェクトの一意識別子。読み取り専用。キー。null 許容ではありません。 |
@@ -21,16 +28,15 @@
 |skuId|Guid| サービス SKU の一意識別子 (GUID)。関連する [SubscribedSku](subscribedsku.md) オブジェクトの skuId プロパティと同じです。読み取り専用 |
 |skuPartNumber|String| 一意の SKU 表示名です。関連する [SubscribedSku](subscribedsku.md) オブジェクトの skuPartNumber と同じです。例: "AAD_Premium"。読み取り専用 |
 
-## リレーションシップ
-<a id="relationships" class="xliff"></a>
+## <a name="relationships"></a>リレーションシップ
 なし
 
-## JSON 表記
-<a id="json-representation" class="xliff"></a>
+## <a name="json-representation"></a>JSON 表記
 以下は、リソースの JSON 表記です。
 
 <!-- {
   "blockType": "resource",
+  "baseType": "microsoft.graph.entity",
   "optionalProperties": [
 
   ],

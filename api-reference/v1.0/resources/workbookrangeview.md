@@ -1,3 +1,13 @@
+---
+title: rangeView リソースの種類
+description: RangeView は、親の範囲の表示されているセルのセットを表します。
+ms.openlocfilehash: e7a19464e52f694705f2e22795513110ae7cbd89
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27020310"
+---
 # <a name="rangeview-resource-type"></a>rangeView リソースの種類
 RangeView は、親の範囲の表示されているセルのセットを表します。
 
@@ -5,13 +15,14 @@ RangeView は、親の範囲の表示されているセルのセットを表し�
 
 | メソッド           | 戻り値の型    |説明|
 |:---------------|:--------|:----------|
-|[行を一覧表示する](../api/workbookrangeview_list_rows.md) |[workbookRangeView](workbookrangeview.md) コレクション| workbookRangeView オブジェクト コレクションを取得します。|
-|[Itemat](../api/workbookrangeview_itemat.md)|[workbookRangeView](workbookrangeview.md)|インデックスに基づいて範囲ビューの項目を取得します。|
-|[Range](../api/workbookrangeview_range.md)|[workbookRange](range.md)|範囲ビューに関連付けられた範囲オブジェクトを返します。|
+|[行を一覧表示する](../api/workbookrangeview-list-rows.md) |[workbookRangeView](workbookrangeview.md) コレクション| workbookRangeView オブジェクト コレクションを取得します。|
+|[Itemat](../api/workbookrangeview-itemat.md)|[workbookRangeView](workbookrangeview.md)|インデックスに基づいて範囲ビューの項目を取得します。|
+|[Range](../api/workbookrangeview-range.md)|[workbookRange](range.md)|範囲ビューに関連付けられた範囲オブジェクトを返します。|
 
 ## <a name="properties"></a>プロパティ
 | プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
+|cellAddresses|Json|セルのアドレスを表します。
 |columnCount|Int32|表示されている列の数を返します。読み取り専用。|
 |formulas|Json|A1 スタイル表記の数式を表します。 |
 |formulasLocal|Json|ユーザーの言語と数値書式ロケールで、A1 スタイル表記の数式を表します。たとえば、英語の数式 "=SUM(A1, 1.5)" は、ドイツ語では "=SUMME(A1; 1,5)" になります。    |
@@ -20,7 +31,7 @@ RangeView は、親の範囲の表示されているセルのセットを表し�
 |numberFormat|Json|指定したセルの Excel の数値書式コードを表します。読み取り専用です。 |
 |rowCount|Int32|表示されている行の数を返します。読み取り専用。  |
 |text|Json|指定した範囲のテキスト値。テキスト値は、セルの幅には依存しません。Excel UI で発生する # 記号による置換は、この API から返されるテキスト値には影響しません。読み取り専用です。    |
-|valueTypes|Json|各セルのデータの種類を表します。読み取り専用です。使用可能な値は次のとおりです。Unknown、Empty、String、Integer、Double、Boolean、Error。 |
+|valueTypes|Json|各セルのデータの種類を表します。 読み取り専用。 値を指定できます: 不明な空白、文字列、整数、ブール値、エラーでは 2 倍、です。 |
 |values|Json|指定した範囲ビューの Raw 値を表します。返されるデータの型は、文字列、数値、ブール値のいずれかになります。エラーが含まれているセルは、エラー文字列を返します。   |
 
 ## <a name="relationships"></a>リレーションシップ
@@ -32,6 +43,7 @@ RangeView は、親の範囲の表示されているセルのセットを表し�
 以下は、リソースの JSON 表記です。
 <!-- {
   "blockType": "resource",
+  "baseType": "microsoft.graph.entity",
   "optionalProperties": [  ],
   "@odata.type": "microsoft.graph.workbookRangeView"
 }-->
@@ -42,7 +54,6 @@ RangeView は、親の範囲の表示されているセルのセットを表し�
   "formulas": "Json",
   "formulasLocal": "Json",
   "formulasR1C1": "Json",
-  "id": "String (identifier)",
   "index": 1024,
   "numberFormat": "Json",
   "rowCount": 1024,

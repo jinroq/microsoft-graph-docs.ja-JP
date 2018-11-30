@@ -1,14 +1,21 @@
-<a id="domaindnstxtrecord-resource-type" class="xliff"></a>
-# domainDnsTxtRecord リソースの種類
+---
+title: domainDnsTxtRecord リソースの種類
+description: テナント内の特定のドメインの DNS ゾーン ファイルに追加された TXT レコードを表します。DomainDnsRecord エンティティから継承されます。
+ms.openlocfilehash: ed60c15463bd4182049fe3ae8fa32963f8574456
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27020420"
+---
+# <a name="domaindnstxtrecord-resource-type"></a>domainDnsTxtRecord リソースの種類
 
 テナント内の特定のドメインの DNS ゾーン ファイルに追加された TXT レコードを表します。[DomainDnsRecord](domaindnsrecord.md) エンティティから継承されます。
 
-<a id="methods" class="xliff"></a>
-## メソッド
+## <a name="methods"></a>メソッド
 このリソースへの直接クエリはサポートされていません。ドメイン サービス レコードのクエリを実行する方法の詳細については、[ドメイン](domain.md)のトピックを参照してください。
 
-<a id="properties" class="xliff"></a>
-## プロパティ
+## <a name="properties"></a>プロパティ
 | プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
 |id|String| このエンティティに割り当てられた一意の識別子。null 許容ではありません。読み取り専用です。 |
@@ -19,17 +26,16 @@
 |text|String| DNS ホストで *text* プロパティを設定するときに使用する値。 |
 |ttl|Int32| DNS ホストで MX レコードの *Time To Live (ttl)* プロパティを設定するときに使用する値。null 許容ではありません |
 
-<a id="relationships" class="xliff"></a>
-## リレーションシップ
+## <a name="relationships"></a>リレーションシップ
 なし
 
 
-<a id="json-representation" class="xliff"></a>
-## JSON 表記
+## <a name="json-representation"></a>JSON 表記
 以下は、リソースの JSON 表記です。
 
 <!-- {
   "blockType": "resource",
+  "baseType": "microsoft.graph.domainDnsRecord",
   "optionalProperties": [
 
   ],
@@ -38,7 +44,6 @@
 
 ```json
 {
-  "canonicalName": "String",
   "id": "String (identifier)",
   "isOptional": true,
   "label": "String",

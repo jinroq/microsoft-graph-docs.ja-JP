@@ -1,3 +1,13 @@
+---
+title: assignedPlan リソースの種類
+description: ユーザー エンティティと組織エンティティの両方の **assignedPlans** プロパティは、**assignedPlan** のコレクションです。
+ms.openlocfilehash: 306c485b31189e7693075735ceda0812d3259251
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27021206"
+---
 # <a name="assignedplan-resource-type"></a>assignedPlan リソースの種類
 
 [ユーザー](user.md) エンティティと[組織](organization.md)エンティティの両方の **assignedPlans** プロパティは、**assignedPlan** のコレクションです。

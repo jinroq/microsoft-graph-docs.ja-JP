@@ -1,3 +1,13 @@
+---
+title: ChartLineFormat リソースの種類
+description: 直線要素の書式設定オプションをカプセル化します。
+ms.openlocfilehash: 6e43818bc55972585deff5aa2add1d513f031360
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27021039"
+---
 # <a name="chartlineformat-resource-type"></a>ChartLineFormat リソースの種類
 
 直線要素の書式設定オプションをカプセル化します。
@@ -7,14 +17,14 @@
 
 | メソッド           | 戻り値の型    |説明|
 |:---------------|:--------|:----------|
-|[Get ChartLineFormat](../api/chartlineformat_get.md) | [ChartLineFormat](chartlineformat.md) |chartLineFormat オブジェクトのプロパティと関係を読み取ります。|
-|[Update](../api/chartlineformat_update.md) | [ChartLineFormat](chartlineformat.md)    |ChartLineFormat オブジェクトを更新します。 |
-|[Clear](../api/chartlineformat_clear.md)|なし|グラフ要素の線の書式をクリアします。|
+|[Get ChartLineFormat](../api/chartlineformat-get.md) | [WorkbookChartLineFormat](chartlineformat.md) |chartLineFormat オブジェクトのプロパティと関係を読み取ります。|
+|[Update](../api/chartlineformat-update.md) | [WorkbookChartLineFormat](chartlineformat.md) |ChartLineFormat オブジェクトを更新します。 |
+|[クリア](../api/chartlineformat-clear.md)|なし|グラフ要素の線の書式をクリアします。|
 
 ## <a name="properties"></a>プロパティ
-| プロパティ       | 型    |説明|
+| プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
-|color|string|グラフの線の色を表す HTML カラー コード。|
+|color|文字列|グラフの線の色を表す HTML カラー コード。|
 
 ## <a name="relationships"></a>関係
 なし
@@ -24,12 +34,11 @@
 
 以下は、リソースの JSON 表記です。
 
-<!-- {
+<!--{
   "blockType": "resource",
-  "optionalProperties": [
-
-  ],
-  "@odata.type": "microsoft.graph.chartLineFormat"
+  "baseType": "microsoft.graph.entity",
+  "optionalProperties": [],
+  "@odata.type": "microsoft.graph.workbookChartLineFormat"
 }-->
 
 ```json

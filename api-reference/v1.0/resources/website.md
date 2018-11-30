@@ -1,3 +1,13 @@
+---
+title: Web サイトのリソースの種類
+description: Web サイトを表します。
+ms.openlocfilehash: 14934aae418581f4c75c880be67bf51fd0bc293c
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27020744"
+---
 # <a name="website-resource-type"></a>Web サイトのリソースの種類
 
 Web サイトを表します。
@@ -6,8 +16,8 @@ Web サイトを表します。
 ## <a name="properties"></a>プロパティ
 | プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
-|type|String| 可能な値は、`other`、`home`、`work`、`blog`、`profile` です。|
-|アドレス|string|Web サイトの URL。|
+|type|websiteType| 可能な値: `other`、 `home`、 `work`、 `blog`、 `profile`。|
+|address|文字列|Web サイトの URL。|
 |displayName|string|Web サイトの表示名。|
 
 ## <a name="json-representation"></a>JSON 表記

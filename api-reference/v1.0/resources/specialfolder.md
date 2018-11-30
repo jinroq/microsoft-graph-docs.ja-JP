@@ -1,14 +1,27 @@
-# <a name="specialfolder-resource-type"></a>SpecialFolder リソースタイプ
+---
+author: rgregg
+ms.author: rgregg
+ms.date: 09/10/2017
+title: SpecialFolder
+ms.openlocfilehash: bbf12aa0bf127116fd5f1250717c19f3f053f751
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27020165"
+---
+# <a name="specialfolder-resource-type"></a>SpecialFolder リソースの種類
 
 **SpecialFolder**リソースは、特殊フォルダー関連のデータ項目を単一の構造にグループ化します。
 
-**DriveItem** が非 null の **specialFolder** ファセットを持つ場合、その項目は特殊な (名前が付けられた) フォルダーを示します。特殊なフォルダーは [特殊なフォルダーのコレクション](../api/drive_special.md) 経由で直接アクセスできます。
+**DriveItem** が null 以外の **specialFolder** ファセットを持つ場合、その項目は特殊な (名前が付けられた) フォルダーを示します。
+特殊なフォルダーは [特殊なフォルダーのコレクション](../api/drive-get-specialfolder.md) 経由で直接アクセスできます。
 
 特殊なフォルダーは、フォルダーを (ローカライズが必要となる) パスで探したり、ID を持つフォルダーを参照したりせずに、既知のフォルダーにアクセスするための、単純なエイリアスを提供します。特殊なフォルダーが名前変更されたりドライブ内の別の場所に移動されたりした場合、この構文はそのフォルダーを返し続けます。
 
 特殊なフォルダーは、まだ存在していない場合、アプリケーションが最初に書き込みを試行したときに自動的に作成されます。ユーザーが削除した場合は、もう一度書き込まれたときに再作成されます。
 
-**注:**アプリが **Files.Read** スコープのみを要求していて、存在しない特殊なフォルダーを要求する場合、返答は `403 Forbidden` エラーになります。
+**注:** アプリが **Files.Read** スコープのみを要求していて、存在しない特殊なフォルダーを要求する場合、返答は `403 Forbidden` エラーになります。
 
 ## <a name="json-representation"></a>JSON 表記
 
@@ -47,13 +60,10 @@
 
 DriveItem のファセットの詳細については、「[DriveItem](driveitem.md)」を参照してください。
 
-
-<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
-2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "specialFolder resource",
-  "keywords": "",
+  "description": "The SpecialFolder facet provides information about folders accessible as special folders.",
+  "keywords": "special folder,item,facet",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "Facets/SpecialFolder"
+} -->

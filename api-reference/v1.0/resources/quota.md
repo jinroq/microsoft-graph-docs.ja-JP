@@ -1,3 +1,15 @@
+---
+author: rgregg
+ms.author: rgregg
+ms.date: 09/10/2017
+title: Quota
+ms.openlocfilehash: 54eb88bdc048c6b63bb6f2d0a23fb05023663ca7
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27021217"
+---
 # <a name="quota-resource-type"></a>クォータ リソースの種類
 
 **クォータ** リソースは、[ドライブ](drive.md) リソースの領域の制約に関する詳細を提供します。
@@ -41,12 +53,14 @@
 | `critical` | 残りのクォータは、クォータ領域の合計の 1% 未満です。                                                                                                                       |
 | `exceeded` | クォータ使用量が、クォータの合計を超えています。クォータの合計を下回るか、追加の記憶領域を購入するまで、新しいファイルまたはフォルダーをドライブに追加することはできません。 |
 
-<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
-2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "quota resource",
-  "keywords": "",
+  "description": "The quota facet provides information about how much space the OneDrive has available.",
+  "keywords": "quota,available,remaining,used",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "suppressions": [
+    "Warning: /api-reference/v1.0/resources/quota.md:
+      Found potential enums in resource example that weren't defined in a table:(normal, nearing,critical,exceeded) are in resource, but () are in table"
+  ],
+  "tocPath": "Facets/Quota"
+} -->

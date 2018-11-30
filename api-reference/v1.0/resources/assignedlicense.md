@@ -1,3 +1,13 @@
+---
+title: assignedLicense リソースの種類
+description: ユーザーに割り当てられているライセンスを表します。ユーザー エンティティの **assignedLicenses** プロパティは、**assignedLicense** のコレクションです。
+ms.openlocfilehash: 48863a9acdcfa173a3f0c1a2a008516360ffdf9b
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27021350"
+---
 # <a name="assignedlicense-resource-type"></a>assignedLicense リソースの種類
 
 ユーザーに割り当てられているライセンスを表します。[ユーザー](user.md) エンティティの **assignedLicenses** プロパティは、**assignedLicense** のコレクションです。

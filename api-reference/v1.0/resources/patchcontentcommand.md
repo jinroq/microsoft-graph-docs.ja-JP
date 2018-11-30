@@ -1,10 +1,20 @@
+---
+title: patchContentCommand リソースの種類
+description: PATCH 要求で OneNote ページに加える変更。
+ms.openlocfilehash: bfbdceeda0294540f701f9fa458030834e7d7850
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27021252"
+---
 # <a name="patchcontentcommand-resource-type"></a>patchContentCommand リソースの種類
 
 PATCH 要求で OneNote ページに加える変更。
 
 ## <a name="json-representation"></a>JSON 表記
 
-以下は、リソースの JSON 表記です。[PATCH pages/{id}`](../api/page_update.md) 要求の本文に送信されます。 
+以下は、リソースの JSON 表記です。[PATCH pages/{id}`](../api/page-update.md) 要求の本文に送信されます。 
 
 <!-- {
   "blockType": "resource",
@@ -25,11 +35,11 @@ PATCH 要求で OneNote ページに加える変更。
 ```
 
 ## <a name="properties"></a>プロパティ
-| プロパティ       | 型    |説明|
+| プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
-|action|String|ターゲット要素で実行するアクション。使用可能な値: `replace`、`append`、`delete`、`insert`、`prepend`。|
+|action|onenotePatchActionType|ターゲット要素で実行するアクション。 可能な値: `replace`、 `append`、 `delete`、 `insert`、または`prepend`。|
 |content|String|ページに追加する整形式 HTML の文字列と画像またはファイル バイナリ データ。コンテンツにバイナリ データが含まれている場合、コンテンツ タイプとして `multipart/form-data` を利用し、"Commands" パートを含む要求を送信する必要があります。 |
-|position|String|指定されたコンテンツを追加する位置。ターゲット要素を基準とした相対位置です。使用可能な値: `after` (既定値) または `before`。|
+|position|onenotePatchInsertPosition|指定されたコンテンツを追加する位置。ターゲット要素を基準とした相対位置です。 可能な値: `after` (既定値) または`before`。|
 |target|String|更新する要素。要素の `#<data-id>` または生成された `<id>`、または `body` か `title` のキーワードでなければなりません。|
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

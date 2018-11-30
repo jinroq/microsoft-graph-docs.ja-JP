@@ -1,3 +1,13 @@
+---
+title: ChartTitle リソースの種類
+description: グラフのグラフ タイトル オブジェクトを表します。
+ms.openlocfilehash: 44777d939e67d2e8b5563cf3edb0b5bfddeeef9a
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27021207"
+---
 # <a name="charttitle-resource-type"></a>ChartTitle リソースの種類
 
 グラフのグラフ タイトル オブジェクトを表します。
@@ -7,20 +17,20 @@
 
 | メソッド           | 戻り値の型    |説明|
 |:---------------|:--------|:----------|
-|[Get ChartTitle](../api/charttitle_get.md) | [ChartTitle](charttitle.md) |chartTitle オブジェクトのプロパティと関係を読み取ります。|
-|[Update](../api/charttitle_update.md) | [ChartTitle](charttitle.md)    |ChartTitle オブジェクトを更新します。 |
+|[Get ChartTitle](../api/charttitle-get.md) | [WorkbookChartTitle](charttitle.md) |chartTitle オブジェクトのプロパティと関係を読み取ります。|
+|[Update](../api/charttitle-update.md) | [WorkbookChartTitle](charttitle.md)    |ChartTitle オブジェクトを更新します。 |
 
 ## <a name="properties"></a>プロパティ
-| プロパティ       | 型    |説明|
+| プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
-|overlay|boolean|グラフのタイトルをグラフに重ねるかどうかを表すブール型の値。|
-|text|string|グラフのタイトルのテキストを表します。|
-|visible|boolean|ChartTitle オブジェクトを表示または非表示にするかを表すブール型の値。|
+|overlay|ブール値|グラフのタイトルをグラフに重ねるかどうかを表すブール型の値。|
+|text|文字列|グラフのタイトルのテキストを表します。|
+|visible|ブール値|ChartTitle オブジェクトを表示または非表示にするかを表すブール型の値。|
 
 ## <a name="relationships"></a>関係
-| リレーションシップ | 型    |説明|
+| リレーションシップ | 型   |説明|
 |:---------------|:--------|:----------|
-|format|[ChartTitleFormat](charttitleformat.md)|グラフ のタイトルの書式設定を表します。これには塗りつぶしとフォントの書式設定などがあります。値の取得のみ可能です。|
+|format|[WorkbookChartTitleFormat](charttitleformat.md)|グラフ のタイトルの書式設定を表します。これには塗りつぶしとフォントの書式設定などがあります。値の取得のみ可能です。|
 
 ## <a name="json-representation"></a>JSON 表記
 
@@ -28,10 +38,11 @@
 
 <!-- {
   "blockType": "resource",
+  "baseType": "microsoft.graph.entity",
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.chartTitle"
+  "@odata.type": "microsoft.graph.workbookChartTitle"
 }-->
 
 ```json

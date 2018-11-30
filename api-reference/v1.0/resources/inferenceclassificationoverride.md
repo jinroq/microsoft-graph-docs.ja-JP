@@ -1,3 +1,13 @@
+---
+title: inferenceClassificationOverride リソースの種類
+description: 特定の差出人からの着信メッセージを常時分類するためのユーザーのオーバーライドを表します。
+ms.openlocfilehash: 3f3f07e870a4ba549062197a380633ab591c54fe
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27022021"
+---
 # <a name="inferenceclassificationoverride-resource-type"></a>inferenceClassificationOverride リソースの種類
 
 特定の差出人からの着信メッセージを常時分類するためのユーザーのオーバーライドを表します。
@@ -7,14 +17,14 @@
 
 | メソッド           | 戻り値の型    |説明|
 |:---------------|:--------|:----------|
-|[Update](../api/inferenceclassificationoverride_update.md) | [inferenceClassificationOverride](inferenceclassificationoverride.md)    |指定のとおり、オーバーライドの **ClassifyAs** フィールドを変更します。 |
-|[Delete](../api/inferenceclassificationoverride_delete.md) | なし |その ID で指定されたオーバーライドを削除します。 |
+|[Update](../api/inferenceclassificationoverride-update.md) | [inferenceClassificationOverride](inferenceclassificationoverride.md) |指定のとおり、オーバーライドの **ClassifyAs** フィールドを変更します。 |
+|[削除](../api/inferenceclassificationoverride-delete.md) | なし |その ID で指定されたオーバーライドを削除します。 |
 
 ## <a name="properties"></a>プロパティ
-| プロパティ       | 型    |説明|
+| プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
-|classifyAs|string| 特定の差出人からの着信メッセージを常時分類する方法を指定します。可能な値は、`focused`、`other` です。|
-|id|string| オーバーライドの一意識別子。読み取り専用です。|
+|classifyAs|inferenceClassificationType| 特定の差出人からの着信メッセージを常時分類する方法を指定します。 可能な値: `focused`、 `other`。|
+|ID|文字列| オーバーライドの一意識別子。読み取り専用です。|
 |senderEmailAddress|[emailAddress](emailaddress.md)|オーバーライドを作成する対象の差出人のメール アドレス情報。|
 
 ## <a name="relationships"></a>関係
@@ -27,6 +37,7 @@
 
 <!-- {
   "blockType": "resource",
+  "baseType": "microsoft.graph.entity",
   "optionalProperties": [
 
   ],

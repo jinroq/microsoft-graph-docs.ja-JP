@@ -1,6 +1,18 @@
-# <a name="driverecipient-resource-type"></a>DriveRecipient リソースの種類
+---
+author: rgregg
+ms.author: rgregg
+ms.date: 09/10/2017
+title: DriveRecipient
+ms.openlocfilehash: 24d06c43af0d8c319ca88062c1d564648176cd30
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27021531"
+---
+# <a name="driverecipient-resource"></a>DriveRecipient リソース
 
-**DriveRecipient** リソースは、[出席依頼](../api/item_invite.md)アクションを使用して共有する個人、グループ、または他の受信者を表します。
+**DriveRecipient** リソースは、[出席依頼](../api/driveitem-invite.md)アクションを使用して共有する個人、グループ、または他の受信者を表します。
 
 ## <a name="json-representation"></a>JSON 表記
 
@@ -27,11 +39,12 @@
 
 ## <a name="remarks"></a>注釈
 
-[出席依頼](../api/item_invite.md)を使用して、アクセス許可を追加する場合は、DriveRecipient で **email**、**alias**、または **objectId** を指定できます。これらの値のうち 1 つのみが必要です。
+[出席依頼](../api/driveitem-invite.md)を使用して、アクセス許可を追加する場合は、DriveRecipient で **email**、**alias**、または **objectId** を指定できます。これらの値のうち 1 つのみが必要です。
 
 <!-- {
   "type": "#page.annotation",
   "description": "Recipients resource defines a single recipient for the sharing invitation and permissions collection.",
   "keywords": "sharing,share,permissions,action.invite,invite,email",
-  "section": "documentation"
+  "section": "documentation",
+  "tocPath": "Resources/Recipients"
 } -->

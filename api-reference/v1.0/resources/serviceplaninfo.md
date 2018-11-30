@@ -1,3 +1,13 @@
+---
+title: servicePlanInfo リソースの種類
+description: 購読している SKU に関連付けられているサービス プランに関する情報が含まれています。subscribedSku エンティティの **servicePlans** プロパティは、**servicePlanInfo** のコレクションです。
+ms.openlocfilehash: 70d49eb22542e9bc22ee28df5bc77b3bf6146b6d
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27022090"
+---
 # <a name="serviceplaninfo-resource-type"></a>servicePlanInfo リソースの種類
 
 購読している SKU に関連付けられているサービス プランに関する情報が含まれています。[subscribedSku](subscribedsku.md) エンティティの **servicePlans** プロパティは、**servicePlanInfo** のコレクションです。

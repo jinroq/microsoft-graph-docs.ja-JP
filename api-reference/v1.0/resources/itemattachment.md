@@ -1,3 +1,13 @@
+---
+title: itemAttachment リソースの種類
+description: '別のイベント、メッセージ、または投稿に添付された連絡先、イベント、またはメッセージです。  '
+ms.openlocfilehash: 79097b10327d895a41090e068a2fd8e9681df125
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27022069"
+---
 # <a name="itemattachment-resource-type"></a>itemAttachment リソースの種類
 
 別のイベント、メッセージ、または投稿に添付された連絡先、イベント、またはメッセージです。  
@@ -8,21 +18,21 @@
 
 | メソッド       | 戻り値の型  |説明|
 |:---------------|:--------|:----------|
-|[取得](../api/attachment_get.md) | [itemAttachment](itemattachment.md) |itemAttachment オブジェクトのプロパティと関係を読み取ります。|
-|[Delete](../api/attachment_delete.md) | なし |itemAttachment オブジェクトを削除します。 |
+|[Get](../api/attachment-get.md) | [itemAttachment](itemattachment.md) |itemAttachment オブジェクトのプロパティと関係を読み取ります。|
+|[削除](../api/attachment-delete.md) | なし |itemAttachment オブジェクトを削除します。 |
 
 ## <a name="properties"></a>プロパティ
-| プロパティ       | 型    |説明|
+| プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
 |contentType|String|添付ファイルのコンテンツ タイプ。|
 |id|String| 添付ファイル ID。|
-|isInline|Boolean|添付ファイルがインライン (アイテムの本文に埋め込まれた画像など) の場合に、true に設定します。|
+|isInline|ブール値|添付ファイルがインライン (アイテムの本文に埋め込まれた画像など) の場合に、true に設定します。|
 |lastModifiedDateTime|DateTimeOffset|添付ファイルが変更された最後の日時です。|
 |name|String|添付ファイルの表示名。|
 |size|Int32|添付ファイルのバイト単位のサイズ。|
 
 ## <a name="relationships"></a>関係
-| リレーションシップ | 型    |説明|
+| リレーションシップ | 型   |説明|
 |:---------------|:--------|:----------|
 |item|[OutlookItem](outlookitem.md)|添付されたメッセージまたはイベントです。ナビゲーション プロパティです。|
 
@@ -30,12 +40,25 @@
 
 以下は、リソースの JSON 表記です
 
-<!-- {
+<!--{
   "blockType": "resource",
   "optionalProperties": [
     "item"
   ],
-  "@odata.type": "microsoft.graph.itemAttachment"
+  "baseType": "microsoft.graph.attachment",
+  "@odata.type": "microsoft.graph.itemAttachment",
+  "@odata.annotations": [
+    {
+      "property": "item",
+      "capabilities": {
+        "changeTracking": false,
+        "deletable": false,
+        "insertable": false,
+        "searchable": false,
+        "updatable": false
+      }
+    }
+  ]
 }-->
 
 ```json
@@ -45,7 +68,8 @@
   "isInline": true,
   "lastModifiedDateTime": "String (timestamp)",
   "name": "string",
-  "size": 1024
+  "size": 1024,
+  "item": { "@odata.type": "microsoft.graph.outlookItem" }
 }
 
 ```

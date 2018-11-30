@@ -1,3 +1,13 @@
+---
+title: dateTimeTimeZone リソースの種類
+description: 特定時点の日付、時刻、およびタイム ゾーンを記述します。
+ms.openlocfilehash: 3ce02fbf82dabbbe354b2672cfd950812ea0bd32
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27020633"
+---
 # <a name="datetimetimezone-resource-type"></a>dateTimeTimeZone リソースの種類
 
 特定時点の日付、時刻、およびタイム ゾーンを記述します。
@@ -5,8 +15,8 @@
 ## <a name="properties"></a>プロパティ
 | プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
-|DateTime|String|特定時点の日付と時刻を組み合わせた表現 (`<date>T<time>`)。|
-|TimeZone|String|次のいずれかのタイム ゾーン名。|
+|dateTime|String|特定時点の日付と時刻を組み合わせた表現 (`<date>T<time>`)。|
+|timeZone|String|次のいずれかのタイム ゾーン名。|
 
 _TimeZone_ プロパティは、Windows でサポートされている任意のタイム ゾーン、および次のタイム ゾーン名に設定できます。
 
@@ -146,13 +156,13 @@ Etc/GMT
 
 アジア/カトマンズ
 
-アジア/アルマトイ
+アジア/アスタナ (アルマトイ)
 
 アジア/ダッカ
 
 アジア/エカテリンブルク
 
-アジア/ヤンゴン
+アジア/ヤンゴン (ラングーン)
 
 アジア/バンコク
 

@@ -1,10 +1,20 @@
+---
+author: rgregg
+ms.author: rgregg
+ms.date: 09/10/2017
+title: SearchResult
+ms.openlocfilehash: 120f1805196e40d652bd2fcd409f4ee3cd3203fa
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27021236"
+---
 # <a name="searchresult-resource-type"></a>SearchResult リソースの種類
 
-**SearchResult ** リソースは、アイテムが検索への応答であることを示します。
+**SearchResult** リソースは、アイテムが検索クエリへの応答であることを示します。
 
 ## <a name="json-representation"></a>JSON 表記
-
-以下は、リソースの JSON 表記です。
 
 <!-- {
   "blockType": "resource",
@@ -20,22 +30,18 @@
 
 ## <a name="properties"></a>プロパティ
 
-| プロパティ            | 型   | 説明                                                                                                                                                                         |
-|:--------------------|:-------|:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| onClickTelemetryUrl | String | テレメトリ情報の記録に使用できるコールバックの URL。ユーザーがより正確な結果を得るためにこのアイテムを操作する場合は、アプリケーションからこの URL に対して GET を発行する必要があります。 |
+| プロパティ            | 型   | 説明
+|:--------------------|:-------|:----------------------------------------------
+| onClickTelemetryUrl | String | テレメトリ情報の記録に使用できるコールバックの URL。ユーザーがより正確な結果を得るためにこのアイテムを操作する場合は、アプリケーションからこの URL に対して GET を発行する必要があります。
 
 ## <a name="remarks"></a>注釈 
 
 DriveItem のファセットの詳細については、「[DriveItem](driveitem.md)」を参照してください。
 
-
-
-<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
-2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "searchResult resource",
-  "keywords": "",
+  "description": "The search result facet indicates an item is from a search.",
+  "keywords": "search result facet",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "Facets/SearchResult"
+} -->
