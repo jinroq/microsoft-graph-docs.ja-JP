@@ -1,72 +1,78 @@
-# <a name="audio-resource-type"></a>オーディオ リソース型
+---
+author: rgregg
+ms.author: rgregg
+ms.date: 09/10/2017
+title: Audio
+ms.openlocfilehash: 1472bffec12ed5626a65ea71b971dc5bc2b77aa9
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27068411"
+---
+# <a name="audio-facet"></a>Audio ファセット
 
-**オーティオ** リソースは、アイテムのオーディオ関連のプロパティを単一の構造にグループ化します。
+> **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。
+
+**オーディオ** リソースは、アイテムのオーディオ関連のプロパティを単一の構造にグループ化します。
 
 [**DriveItem**](driveitem.md) に null 以外の**オーディオ** ファセットがある場合、そのアイテムはオーディオ ファイルを表します。**オーディオ** リソースのプロパティは、ファイルからメタデータを抽出することで設定されます。 
 
 ## <a name="json-representation"></a>JSON 表記
 
-以下は、リソースの JSON 表記です。
-
-<!-- {
-  "blockType": "resource",
-  "optionalProperties": [ ],
-  "@odata.type": "microsoft.graph.audio"
-}-->
+<!-- { "blockType": "resource", "@odata.type": "microsoft.graph.audio" } -->
 ```json
 {
   "album": "string",
   "albumArtist": "string",
   "artist": "string",
-  "bitrate": 1024,
+  "bitrate": 128,
   "composers": "string",
   "copyright": "string",
-  "disc": 1024,
-  "discCount": 1024,
-  "duration": 1024,
+  "disc": 0,
+  "discCount": 0,
+  "duration": 567,
   "genre": "string",
-  "hasDrm": true,
-  "isVariableBitrate": true,
+  "hasDrm": false,
+  "isVariableBitrate": false,
   "title": "string",
-  "track": 1024,
-  "trackCount": 1024,
-  "year": 1024
+  "track": 1,
+  "trackCount": 16,
+  "year": 2014
 }
 ```
 
 ## <a name="properties"></a>プロパティ
 
-| プロパティ          | 型    | 説明                                                          |
-|:------------------|:--------|:---------------------------------------------------------------------|
-| album             | string  | オーディオ ファイルのアルバムのタイトル。                          |
-| albumArtist       | string  | オーディオ ファイルのアルバムに付けられたアーチスト名。                    |
-| artist            | string  | オーディオ ファイルの歌手や奏者。                            |
-| bitrate           | string  | kbps 単位で表されるビットレート。                                           |
-| composers         | string  | オーディオ ファイルの作曲者の名前。                          |
-| copyright         | string  | オーディオ ファイルの著作権情報。                            |
-| disc              | number  | このオーディオ ファイルの元のディスクの番号。                    |
-| discCount         | number  | このアルバムの合計ディスク数。                             |
-| duration          | number  | オーディオ ファイルの継続時間。ミリ秒単位で表されます。                |
-| genre             | string  | このオーディオ ファイルのジャンル。                                        |
-| hasDrm            | boolean | ファイルがデジタル著作権管理で保護されているかどうかを示します。   |
-| isVariableBitrate | boolean | ファイルが可変ビットレートでエンコードされているかどうかを示します。            |
-| title             | string  | オーディオ ファイルのタイトル。                                         |
-| track             | number  | このオーディオ ファイルの元のディスクでのトラック番号。    |
-| trackCount        | number  | このオーディオ ファイルの元のディスクの合計トラック数。 |
-| year              | number  | オーディオ ファイルが録音された年。                                |
+| プロパティ名         | 型    | 説明                                                          |
+|:----------------------|:--------|:---------------------------------------------------------------------|
+| **album**             | 文字列  | このオーディオ ファイルのアルバムのタイトル。                          |
+| **albumArtist**       | 文字列  | オーディオ ファイルのアルバムに付けられたアーチスト名。                    |
+| **artist**            | 文字列  | オーディオ ファイルの歌手や奏者。                            |
+| **bitrate**           | Int32   | kbps 単位で表されるビットレート。                                           |
+| **composers**         | 文字列  | オーディオ ファイルの作曲者の名前。                          |
+| **copyright**         | 文字列  | オーディオ ファイルの著作権情報。                            |
+| **disc**              | Int32   | このオーディオ ファイルの元のディスクの番号。                    |
+| **discCount**         | Int32   | このアルバムの合計ディスク数。                             |
+| **duration**          | Int64   | オーディオ ファイルの継続時間。ミリ秒単位で表されます。                |
+| **genre**             | 文字列  | このオーディオ ファイルのジャンル。                                        |
+| **hasDrm**            | boolean | ファイルがデジタル著作権管理で保護されているかどうかを示します。   |
+| **isVariableBitrate** | boolean | ファイルが可変ビットレートでエンコードされているかどうかを示します。            |
+| **title**             | 文字列  | オーディオ ファイルのタイトル。                                         |
+| **track**             | Int32   | このオーディオ ファイルの元のディスクでのトラック番号。    |
+| **trackCount**        | Int32   | このオーディオ ファイルの元のディスクの合計トラック数。 |
+| **year**              | Int32   | オーディオ ファイルが録音された年。                                |
 
-## <a name="remarks"></a>備考 
+[item-resource]: ../resources/driveitem.md
+
+## <a name="remarks"></a>備考
 
 DriveItem のファセットの詳細については、「[DriveItem](driveitem.md)」を参照してください。
 
-
-
-<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
-2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "audio resource",
-  "keywords": "",
+  "description": "The audio facet provides information about music or audio metadata.",
+  "keywords": "music,audio,metadata,onedrive",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "Facets/Audio"
+} -->

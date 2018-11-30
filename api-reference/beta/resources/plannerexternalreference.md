@@ -1,12 +1,22 @@
-# plannerExternalReference リソースの種類
-<a id="plannerexternalreference-resource-type" class="xliff"></a>
+---
+title: plannerExternalReference リソースの種類
+description: '**PlannerExternalReference**リソース (ファイル、URL などの添付ファイル) の参照のメタデータを表します。 ExternalReferences オブジェクトのプロパティと値のペアの値です。'
+ms.openlocfilehash: ad892b5e9f9a741e7a4994c509ac704ad1ca62a6
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27067401"
+---
+# <a name="plannerexternalreference-resource-type"></a>plannerExternalReference リソースの種類
+
+> **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。
 
 **plannerExternalReference** リソースは、参照 (ファイル、URL などの添付ファイル) のメタデータを表します。[externalReferences オブジェクト](plannerexternalreferences.md)のプロパティ/値の組の値です。
 
 
 
-## プロパティ
-<a id="properties" class="xliff"></a>
+## <a name="properties"></a>プロパティ
 | プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
 |alias|String|参照を記述するエイリアス名。|
@@ -15,8 +25,7 @@
 |previewPriority|String|タスクのプレビューとして参照が表示される、相対的な優先順位を設定するのに使用されます。|
 |type|String|参照の種類を記述するのに使用されます。次の種類が含まれます: `PowerPoint`、`Word`、`Excel`、`Other`。|
 
-## JSON 表記
-<a id="json-representation" class="xliff"></a>
+## <a name="json-representation"></a>JSON 表記
 以下は、リソースの JSON 表記です。
 
 <!-- {
