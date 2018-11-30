@@ -1,12 +1,24 @@
+---
+title: localeInfo リソースの種類
+description: サインインしているユーザーの優先言語および国/地域を含むロケールに関する情報。
+ms.openlocfilehash: 5dae464a4931fb094ae47cce600a95d55c6c3f93
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27072799"
+---
 # <a name="localeinfo-resource-type"></a>localeInfo リソースの種類
+
+> **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。
 
 サインインしているユーザーの優先言語および国/地域を含むロケールに関する情報。
 
 
 ## <a name="properties"></a>プロパティ
-| プロパティ       | 型    |説明|
+| プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
-|locale|string|ユーザーのロケールを表します。ユーザーの優先言語および国/地域が含まれます。たとえば、"en-us"。言語のコンポーネントは [ISO 639-1](http://www.iso.org/iso/home/standards/language_codes.htm) で定義されている 2 文字のコードに従い、国のコンポーネントは [ISO 3166-1 alpha-2](http://www.iso.org/iso/country_codes.htm) で定義されている 2 文字のコードに従います。|
+|locale|文字列|ユーザーのロケールを表します。ユーザーの優先言語および国/地域が含まれます。たとえば、"en-us"。言語のコンポーネントは [ISO 639-1](https://www.iso.org/iso/home/standards/language_codes.htm) で定義されている 2 文字のコードに従い、国のコンポーネントは [ISO 3166-1 alpha-2](https://www.iso.org/iso/country_codes.htm) で定義されている 2 文字のコードに従います。|
 |displayName|string|たとえば "English (United States)" のように、ユーザーのロケールを自然言語で表す名前。|
 
 ## <a name="json-representation"></a>JSON 表記

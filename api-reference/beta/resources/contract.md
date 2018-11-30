@@ -1,19 +1,29 @@
-# コントラクト リソース型
-<a id="contract-resource-type" class="xliff"></a>
+---
+title: コントラクト リソース型
+description: パートナー テナントがカスタマー テナントとの間で持つ、既存のパートナーシップを表します。
+ms.openlocfilehash: 7465a54c735b7c1e6f9d5ecb8bf79420b8de45c3
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27073674"
+---
+# <a name="contract-resource-type"></a>コントラクト リソース型
+
+> **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。
+
 パートナー テナントがカスタマー テナントとの間で持つ、既存のパートナーシップを表します。
 
-> **重要:**パートナー テナントにのみ存在します。パートナー テナントとは、[Microsoft クラウド ソリューション プロバイダー](https://partnercenter.microsoft.com/en-us/partner/programs)、Office 365 Syndication、Microsoft Advisor パートナー プログラムのいずれかに含まれている、Microsoft パートナーに所属する Azure AD テナントです。
+> **重要:** パートナー テナントにのみ存在します。パートナー テナントとは、[Microsoft クラウド ソリューション プロバイダー](https://partnercenter.microsoft.com/en-us/partner/programs)、Office 365 Syndication、Microsoft Advisor パートナー プログラムのいずれかに含まれている、Microsoft パートナーに所属する Azure AD テナントです。
 
-## メソッド
-<a id="methods" class="xliff"></a>
+## <a name="methods"></a>メソッド
 
 | メソッド   | 戻り値の型 | 説明 |
 |:---------------|:--------|:----------|
-|[コントラクトを取得する](../api/contract_get.md) | コントラクト |特定のコントラクト オブジェクトのプロパティを参照します。 |
-|[コントラクトを一覧表示する](../api/contract_list.md) | コントラクト コレクション | パートナー テナントのコントラクトの一覧です。 |
+|[コントラクトを取得する](../api/contract-get.md) | コントラクト |特定のコントラクト オブジェクトのプロパティを参照します。 |
+|[コントラクトを一覧表示する](../api/contract-list.md) | コントラクト コレクション | パートナー テナントのコントラクトの一覧です。 |
 
-## プロパティ
-<a id="properties" class="xliff"></a>
+## <a name="properties"></a>プロパティ
 | プロパティ   | 型 | 説明 |
 |:---------------|:--------|:----------|
 |contractType|String|コントラクトの型。<br><br>使用可能な値は次のとおりです。<br> *SyndicationPartner* - この顧客に対し O365 と Intune を排他的に再販し管理するパートナーです。再販し、顧客をサポートします。<br> *BreadthPartner* - この顧客に対し管理上のサポートを提供する能力を備えたパートナーです。ただし、パートナーが顧客に再販売することは許されていません。<br>*ResellerPartner* - シンジケーション パートナーに類似していますが、テナントへの排他的アクセスを持たないパートナーです。シンジケーションの場合、顧客は Microsoft またはその他のパートナーから直接に追加のサブスクリプションを購入することはできません。|
@@ -22,13 +32,11 @@
 |displayName|String|カスタマー テナントの表示名のコピーです。顧客とのパートナーシップが確立されるとコピーを作成します。カスタマー テナントの表示名が変更された場合は、自動的には更新されません。|
 |id|String| パートナーシップの一意識別子です。キー、読み取り専用 |
 
-## リレーションシップ
-<a id="relationships" class="xliff"></a>
+## <a name="relationships"></a>リレーションシップ
 なし
 
 
-## JSON 表記
-<a id="json-representation" class="xliff"></a>
+## <a name="json-representation"></a>JSON 表記
 以下は、リソースの JSON 表記です。
 
 <!-- {

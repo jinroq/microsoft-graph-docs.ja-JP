@@ -1,4 +1,16 @@
+---
+title: WorksheetProtection リソースの種類
+description: シート オブジェクトの保護を表します。
+ms.openlocfilehash: 8886117df669201a0c8a6f9fda1df18bb47cc4a4
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27073768"
+---
 # <a name="worksheetprotection-resource-type"></a>WorksheetProtection リソースの種類
+
+> **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。
 
 シート オブジェクトの保護を表します。
 
@@ -7,17 +19,17 @@
 
 | メソッド           | 戻り値の型    |説明|
 |:---------------|:--------|:----------|
-|[WorksheetProtection を取得する](../api/worksheetprotection_get.md) | [WorksheetProtection](worksheetprotection.md) |worksheetProtection オブジェクトのプロパティと関係を読み取ります。|
-|[Protect](../api/worksheetprotection_protect.md)|なし|ワークシートを保護します。ワークシートが保護されている場合はスローします。|
-|[Unprotect](../api/worksheetprotection_unprotect.md)|なし|ワークシートの保護を解除します。|
+|[WorksheetProtection を取得する](../api/worksheetprotection-get.md) | [WorksheetProtection](worksheetprotection.md) |worksheetProtection オブジェクトのプロパティと関係を読み取ります。|
+|[Protect](../api/worksheetprotection-protect.md)|なし|ワークシートを保護します。ワークシートが保護されている場合はスローします。|
+|[Unprotect](../api/worksheetprotection-unprotect.md)|なし|ワークシートの保護を解除します。|
 
 ## <a name="properties"></a>プロパティ
-| プロパティ       | 型    |説明|
+| プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
-|protected|boolean|ワークシートが保護されているかどうかを示します。読み取り専用です。|
+|protected|ブール値|ワークシートが保護されているかどうかを示します。読み取り専用です。|
 
 ## <a name="relationships"></a>リレーションシップ
-| リレーションシップ | 型    |説明|
+| リレーションシップ | 型   |説明|
 |:---------------|:--------|:----------|
 |options|[WorksheetProtectionOptions](worksheetprotectionoptions.md)|シートの保護のオプション。読み取り専用。|
 
