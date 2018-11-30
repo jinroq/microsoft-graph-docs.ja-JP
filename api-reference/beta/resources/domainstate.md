@@ -1,10 +1,20 @@
-<a id="domainstate-resource-type" class="xliff"></a>
-# domainState リソースの種類
+---
+title: domainState リソースの種類
+description: ドメイン上でスケジュールされている非同期操作の状態を表します。
+ms.openlocfilehash: 84c2e418a14de8aa05abfac7a2f04d6637d410b4
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27067191"
+---
+# <a name="domainstate-resource-type"></a>domainState リソースの種類
+
+> **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。
 
 ドメイン上でスケジュールされている非同期操作の状態を表します。
 
-<a id="properties" class="xliff"></a>
-## プロパティ
+## <a name="properties"></a>プロパティ
 
 | プロパティ   | 型 | 説明 |
 |:---------------|:--------|:----------|
@@ -12,8 +22,7 @@
 | 操作​​ | String | 非同期操作の種類。値は、*ForceDelete* または *Verification* のいずれかです。 |
 | status | String | 操作の現在の状態。 <br> *Scheduled* - 操作はスケジュールされていますが、開始されていません。 <br> *InProgress* - タスクが開始され、実行中です。 <br> *Failed* - 操作が失敗しました。 |
 
-<a id="json-representation" class="xliff"></a>
-## JSON 表記
+## <a name="json-representation"></a>JSON 表記
 以下は、リソースの JSON 表記です。
 
 <!-- {

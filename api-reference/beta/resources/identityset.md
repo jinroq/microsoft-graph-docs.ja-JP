@@ -1,44 +1,68 @@
-# <a name="identityset-resource-type"></a>IdentitySet リソースの種類
+---
+author: rgregg
+ms.author: rgregg
+ms.date: 09/10/2017
+title: IdentitySet
+ms.openlocfilehash: 71620da04ea9d7f67d69422ce175182d406d44f5
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27069577"
+---
+# <a name="identityset-resource-type"></a>identitySet リソースの種類
 
 **IdentitySet** リソースは、[ID](identity.md) リソースのキー付きコレクションです。_作成者_または_最終更新者_など、アイテムのさまざまなイベントに関連付けられている ID のセットを表すために使用されます。
 
 ## <a name="json-representation"></a>JSON 表記
 
-以下は、リソースの JSON 表記です。
+リソースの JSON 表記を次に示します。
 
 <!-- {
   "blockType": "resource",
-  "optionalProperties": [ "user", "device", "application" ],
-  "@odata.type": "microsoft.graph.identitySet"
-}-->
-
+  "@odata.type": "microsoft.graph.identitySet",
+  "optionalProperties": [
+    "application",
+    "applicationInstance",
+    "device",
+    "encrypted",
+    "guest",
+    "phone",
+    "user"
+  ],
+  "openType": true
+} -->
 ```json
 {
-  "application": {"@odata.type": "microsoft.graph.identity"},
-  "device": {"@odata.type": "microsoft.graph.identity"},
-  "user": {"@odata.type": "microsoft.graph.identity"}
+  "application": {"@odata.type": "#microsoft.graph.identity"},
+  "applicationInstance": {"@odata.type": "#microsoft.graph.identity"},
+  "device": {"@odata.type": "#microsoft.graph.identity"},
+  "encrypted": {"@odata.type": "#microsoft.graph.identity"},
+  "guest": {"@odata.type": "#microsoft.graph.identity"},
+  "phone": {"@odata.type": "#microsoft.graph.identity"},
+  "user": {"@odata.type": "#microsoft.graph.identity"}
 }
 ```
 
 ## <a name="properties"></a>プロパティ
 
-| プロパティ    | 型                    | 説明                                            |
-|:------------|:------------------------|:-------------------------------------------------------|
-| application | [Identity](identity.md) | 省略可能。このアクションに関連付けられているアプリケーション。 |
-| デバイス      | [Identity](identity.md) | 省略可能。このアクションに関連付けられているデバイス。      |
-| ユーザー        | [Identity](identity.md) | 省略可能。このアクションに関連付けられているユーザー。        |
+| プロパティ    | 型                    | 説明                                             |
+|:------------|:------------------------|:--------------------------------------------------------|
+| application | [Identity](identity.md) | 省略可能。このアクションに関連付けられているアプリケーション。  |
+| デバイス      | [Identity](identity.md) | 省略可能。このアクションに関連付けられているデバイス。       |
+| phone       | [identity](identity.md) | 省略可能。 このアクションに関連付けられている電話番号です。 |
+| user        | [Identity](identity.md) | 省略可能。このアクションに関連付けられているユーザー。         |
 
 ## <a name="remarks"></a>注釈 
 
-**IdentitySet** リソースの使用法については、[DriveItem](driveitem.md) を参照してください。
+**IdentitySet**リソースの使用率の[呼び出し](call.md)を参照してください。
 
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "identitySet resource",
-  "keywords": "",
+  "description": "Identity set is a collection of identities",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "Resources/IdentitySet"
+} -->
