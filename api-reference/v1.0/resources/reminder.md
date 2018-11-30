@@ -1,6 +1,16 @@
+---
+title: アラーム リソースの種類
+description: ユーザーの予定表でイベントを通知します。
+ms.openlocfilehash: 131de8772c6b4fa400ab0f48197430611030c255
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27023695"
+---
 # <a name="reminder-resource-type"></a>アラーム リソースの種類
 
-
+ユーザー[の予定表](calendar.md)の[イベント](event.md)を通知します。
 
 ## <a name="properties"></a>プロパティ
 | プロパティ     | 型   |説明|

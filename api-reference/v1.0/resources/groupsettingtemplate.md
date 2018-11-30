@@ -1,3 +1,13 @@
+---
+title: groupSettingTemplate リソースの種類
+description: グループ設定テンプレートは、テナントが使用できるシステム定義の設定を表します。グループ設定は、使用可能な **groupSettingTemplates** に基づいて作成することができ、値は事前設定された既定値から変更することができます。グループ設定テンプレートの作成、更新、削除はできません。これらの設定は、テナント全体の設定または特定のグループ設定を表すことができます。現時点では、利用可能なテンプレートは Office 365 グループのみに適用され、そこでユーザーがグループを作成したり、組織外からゲストをグループのメンバーに招待できるかどうかなどの設定をすることができます。
+ms.openlocfilehash: 3c4111b2727e79e048778063b259611795733de4
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27023768"
+---
 # <a name="groupsettingtemplate-resource-type"></a>groupSettingTemplate リソースの種類
 
 グループ設定テンプレートは、テナントが使用できるシステム定義の設定を表します。[グループ設定](groupsetting.md)は、使用可能な **groupSettingTemplates** に基づいて作成することができ、値は事前設定された既定値から変更することができます。グループ設定テンプレートの作成、更新、削除はできません。これらの設定は、テナント全体の設定または特定のグループ設定を表すことができます。現時点では、利用可能なテンプレートは Office 365 グループのみに適用され、そこでユーザーがグループを作成したり、組織外からゲストをグループのメンバーに招待できるかどうかなどの設定をすることができます。
@@ -6,14 +16,14 @@
 
 | メソッド | 戻り値の型 | 説明 |
 |:---------------|:--------|:----------|
-|[groupSettingTemplate の取得](../api/groupsettingtemplate_get.md) | [groupSettingTemplate](groupsettingtemplate.md) | システムで定義された groupSettingTemplate オブジェクトの特定のプロパティを読み込みます。 |
-|[groupSettingTemplate のリスト](../api/groupsettingtemplate_list.md) | [GroupSettingTemplate のコレクション](groupsettingtemplate.md) |システムで定義された groupSettingTemplate オブジェクトをすべて一覧表示します。|
+|[groupSettingTemplate の取得](../api/groupsettingtemplate-get.md) | [groupSettingTemplate](groupsettingtemplate.md) | システムで定義された groupSettingTemplate オブジェクトの特定のプロパティを読み込みます。 |
+|[groupSettingTemplate のリスト](../api/groupsettingtemplate-list.md) | [GroupSettingTemplate のコレクション](groupsettingtemplate.md) |システムで定義された groupSettingTemplate オブジェクトをすべて一覧表示します。|
 
 ## <a name="properties"></a>プロパティ
 
 | プロパティ | 型 | 説明 |
 |:---------------|:--------|:----------|
-|description|文字列| テンプレートの説明です。 |
+|説明|文字列| テンプレートの説明です。 |
 |displayName|文字列| テンプレートの表示名です。 |
 |id|文字列| テンプレートの一意識別子です。読み取り専用です。|
 |値|[settingTemplateValue](settingtemplatevalue.md) コレクション| このテンプレートを構成する、一連の利用可能な設定、既定値、種類を一覧表示する settingTemplateValues のコレクションです。 |
@@ -27,11 +37,12 @@
 
 以下は、リソースの JSON 表記です。
 
-<!-- {
+<!--{
   "blockType": "resource",
-  "optionalProperties": [
-
-  ],
+  "openType": true,
+  "optionalProperties": [],
+  "keyProperty": "id",
+  "baseType": "microsoft.graph.directoryObject",
   "@odata.type": "microsoft.graph.groupSettingTemplate"
 }-->
 

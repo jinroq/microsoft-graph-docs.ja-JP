@@ -1,4 +1,16 @@
-# <a name="site-resource"></a>サイト リソース
+---
+author: rgregg
+ms.author: rgregg
+ms.date: 09/10/2017
+title: Site
+ms.openlocfilehash: ae8962dfa38c3c6f3e06ccb687eb42a4a8262f1a
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27024314"
+---
+# <a name="site-resource"></a>Site リソース
 
 **サイト** リソースは、メタデータと SharePoint サイトのリレーションシップを提供します。
 
@@ -6,28 +18,40 @@
 
 以下のすべての例は、`https://graph.microsoft.com/v1.0` からの相対指定です。
 
-| タスク名            | 要求の例                                   |
-| :------------------- | :------------------------------------------------ |
-| [ルート サイトを取得する][]    | GET /sites/root                                   |
-| [サイトを取得する][]         | GET /sites/{site-id}                              |
-| [パスを使用してサイトを取得する][] | GET /sites/{hostname}:/{site-path}                |
-| [グループのサイトを取得する][] | GET /groups/{group-id}/sites/root             |
+| タスク名                | 要求の例
+|:-------------------------|:--------------------------------------------------
+| [ルート サイトを取得する][]        | GET /sites/root
+| [サイトを取得する][]             | GET /sites/{site-id}
+| [パスを使用してサイトを取得する][]     | GET /sites/{hostname}:/{site-path}
+| [グループのサイトを取得する][] | GET /groups/{group-id}/sites/root
+| [サイトを検索する][]     | GET /sites?search={query}
 
-[サイトを取得する]: ../api/site_get.md
-[ルート サイトを取得する]: ../api/site_get.md
-[パスを使用してサイトを取得する]: ../api/site_get.md
-[グループのサイトを取得する]: ../api/site_get.md
+[サイトを取得する]: ../api/site-get.md
+[ルート サイトを取得する]: ../api/site-get.md
+[パスを使用してサイトを取得する]: ../api/site-getbypath.md
+[グループのサイトを取得する]: ../api/site-get.md
+[サイトを検索する]: ../api/site-search.md
 
 ## <a name="json-representation"></a>JSON 表記
 
 以下は、**サイト** リソースの JSON 表記です。
 
-**driveItem** リソースは [**baseItem**](baseitem.md) から派生し、そのリソースからプロパティを継承します。
+**サイト** リソースは [**baseItem**](baseitem.md) から派生しており、そのリソースからプロパティを継承しています。
 
-<!-- { "blockType": "resource",
-       "@odata.type": "microsoft.graph.site",
-       "keyProperty": "id",
-       "optionalProperties": [ "root", "sharepointIds", "siteCollection", "drive", "drives", "sites" ] } -->
+<!--{
+  "blockType": "resource",
+  "optionalProperties": [
+    "root",
+    "sharepointIds",
+    "siteCollection",
+    "drive",
+    "drives",
+    "sites"
+  ],
+  "keyProperty": "id",
+  "baseType": "microsoft.graph.baseItem",
+  "@odata.type": "microsoft.graph.site"
+}-->
 
 ```json
 {
@@ -38,11 +62,14 @@
   "displayName": "string",
 
   /* relationships */
+  "contentTypes": [ { "@odata.type": "microsoft.graph.contentType" }],
   "drive": { "@odata.type": "microsoft.graph.drive" },
   "drives": [ { "@odata.type": "microsoft.graph.drive" }],
   "items": [ { "@odata.type": "microsoft.graph.baseItem" }],
+  "lists": [ { "@odata.type": "microsoft.graph.list" }],
   "sites": [ { "@odata.type": "microsoft.graph.site"} ],
-  "onenote": [ { "@odata.type": "microsoft.graph.onenote"} ],
+  "columns": [ { "@odata.type": "microsoft.graph.columnDefinition" }],
+  "onenote": { "@odata.type": "microsoft.graph.onenote"},
 
   /* inherited from baseItem */
   "name": "string",
@@ -56,14 +83,15 @@
 
 ## <a name="properties"></a>プロパティ
 
-| プロパティ名            | 種類                                | 説明                                                                                    |
+| プロパティ名            | 型                                | 説明                                                                                    |
 | :----------------------- | :---------------------------------- | :--------------------------------------------------------------------------------------------- |
 | **id**                   | string                              | アイテムの一意識別子。読み取り専用です。                                                  |
 | **createdDateTime**      | DateTimeOffset                      | アイテムが作成された日時。読み取り専用です。                                             |
-| **説明**          | string                              | サイトの説明テキスト。                                                             |
-| **displayName**          | string                              | サイトの完全なタイトル。読み取り専用です。                                                        |
+| **説明**          | 文字列                              | サイトの説明テキスト。                                                             |
+| **displayName**          | 文字列                              | サイトの完全なタイトル。読み取り専用です。                                                        |
+| **eTag**                 | 文字列                              | アイテムの ETag。読み取り専用です。                                                                  |
 | **lastModifiedDateTime** | DateTimeOffset                      | アイテムが最後に変更された日時。読み取り専用です。                                       |
-| **name**                 | string                              | アイテムの名前/タイトル。                                                                  |
+| **name**                 | 文字列                              | アイテムの名前/タイトル。                                                                  |
 | **root**                 | [root](root.md)                     | 存在する場合は、これがサイト コレクションのルート サイトであることを示します。読み取り専用です。            |
 | **sharepointIds**        | [sharepointIds](sharepointids.md)   | SharePoint REST 互換性に役立つ識別子を返します。読み取り専用です。                       |
 | **siteCollection**       | [siteCollection](sitecollection.md) | サイトのサイト コレクションに関する詳細情報を提供します。ルート サイトにのみ使用できます。読み取り専用です。 |
@@ -71,17 +99,23 @@
 
 ## <a name="relationships"></a>リレーションシップ
 
-| リレーションシップ名 | 種類                     | 説明
-|:------------------|:-------------------------|:----------------------------------
-| **ドライブ**         | [ドライブ][]                | このサイトの既定ドライブ (ドキュメント ライブラリ)。
-| **ドライブ**        | Collection([drive][])    | このサイトの下のドライブ (ドキュメント ライブラリ) のコレクション。
-| **アイテム**         | Collection([baseItem][]) | このサイトに含まれるすべてのアイテムを処理するために使用されました。このコレクションを列挙することはできません。
-| **サイト**         | Collection([site][])     | このサイトの下のサブサイトのコレクション。
-| **onenote**       | [onenote][]              | ノートブック関連の操作のために OneNote サービスを呼び出します。
+| リレーションシップ名 | 種類                             | 説明
+|:------------------|:---------------------------------|:----------------------
+| **columns**       | Collection([columnDefinition][]) | このサイトのすべてのリストで再利用可能なコラム定義のコレクションです。
+| **contentTypes**  | Collection([contentType][])      | このサイトに定義されたコンテンツ タイプのコレクションです。
+| **drive**         | [ドライブ][]                        | このサイトの既定ドライブ (ドキュメント ライブラリ)。
+| **ドライブ**        | Collection([drive][])            | このサイトの下のドライブ (ドキュメント ライブラリ) のコレクション。
+| **アイテム**         | Collection([baseItem][])         | このサイトに含まれるすべてのアイテムを処理するために使用されました。このコレクションを列挙することはできません。
+| **lists**         | Collection([list][])             | このサイトにあるリストのコレクションです。
+| **sites**         | Collection([サイト][])             | このサイトの下のサブサイトのコレクション。
+| **onenote**       | [onenote][]                      | ノートブック関連の操作のために OneNote サービスを呼び出します。
 
+[columnDefinition]: columndefinition.md
 [baseItem]: baseitem.md
-[drive]: drive.md
+[contentType]: contenttype.md
+[ドライブ]: drive.md
 [identitySet]: identityset.md
+[list]: list.md
 [site]: site.md
 [onenote]: onenote.md
 
@@ -90,8 +124,6 @@
   "description": "",
   "keywords": "",
   "section": "documentation",
-  "tocPath": "Resources/Site",
-  "tocBookmarks": {
-    "Site": "#"
-  }
+  "tocPath": "Sites",
+  "tocBookmarks": { "Resources/Site": "#" }
 } -->

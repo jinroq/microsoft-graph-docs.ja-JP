@@ -1,3 +1,13 @@
+---
+title: profilePhoto リソースの種類
+description: Exchange Online からアクセスされるユーザー、グループ、または Outlook の連絡先のプロフィール写真。base 64 でエンコードされていないバイナリ データです。
+ms.openlocfilehash: c5f74e1dcd48e42a2e17d5a64e6ed4b9e9cca5e4
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27024191"
+---
 # <a name="profilephoto-resource-type"></a>profilePhoto リソースの種類
 Exchange Online からアクセスされるユーザー、グループ、または Outlook の連絡先のプロフィール写真。base 64 でエンコードされていないバイナリ データです。
 
@@ -7,13 +17,13 @@ Exchange Online 上でサポートされている HD Photo のサイズは次の
 
 | メソッド       | 戻り値の型  |説明|
 |:---------------|:--------|:----------|
-|[ProfilePhoto を取得する](../api/profilephoto_get.md) | [profilePhoto](profilephoto.md) |指定した **profilePhoto** またはそのメタデータ (profilePhoto プロパティ) を取得します。|
-|[Update](../api/profilephoto_update.md) | [profilePhoto](profilephoto.md)  |指定されたユーザー、グループ、または連絡先に写真を割り当てます。写真はバイナリ形式にする必要があります。既存の写真が置き換えられます (存在する場合)。|
+|[ProfilePhoto を取得する](../api/profilephoto-get.md) | [profilePhoto](profilephoto.md) |指定した **profilePhoto** またはそのメタデータ (profilePhoto プロパティ) を取得します。|
+|[Update](../api/profilephoto-update.md) | [profilePhoto](profilephoto.md)  |指定されたユーザー、グループ、または連絡先に写真を割り当てます。写真はバイナリ形式にする必要があります。既存の写真が置き換えられます (存在する場合)。|
 
 ## <a name="properties"></a>プロパティ
 | プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
-|id|string|読み取り専用です。|
+|ID|文字列|読み取り専用です。|
 |height|int32|写真の高さ。読み取り専用です。|
 |width|int32|写真の幅。読み取り専用です。|
 
@@ -25,11 +35,11 @@ Exchange Online 上でサポートされている HD Photo のサイズは次の
 
 以下は、リソースの JSON 表記です。
 
-<!-- {
+<!--{
   "blockType": "resource",
-  "optionalProperties": [
-
-  ],
+  "baseType": "microsoft.graph.entity",
+  "optionalProperties": [],
+  "isMediaEntity": true,
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.profilePhoto"
 }-->

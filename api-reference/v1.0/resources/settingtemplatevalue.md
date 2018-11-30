@@ -1,3 +1,13 @@
+---
+title: settingTemplateValue リソースの種類
+description: 設定がインスタンス化されていない場合の、設定の既定値を含む個々のテンプレートの設定定義を表します。
+ms.openlocfilehash: 00e424e36338855d8ef603d06c7a9ee52a99c621
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27023692"
+---
 # <a name="settingtemplatevalue-resource-type"></a>settingTemplateValue リソースの種類
 
 設定がインスタンス化されていない場合の、設定の既定値を含む個々のテンプレートの設定定義を表します。
@@ -8,7 +18,7 @@
 |:---------------|:--------|:----------|
 |defaultValue|文字列| 設定の既定値です。 |
 |説明|文字列| 設定の説明です。 |
-|名前|文字列| 設定の名前です。 |
+|名前|String| 設定の名前です。 |
 |種類|文字列| 設定の種類です。 |
 
 ### <a name="json-representation"></a>JSON 表記

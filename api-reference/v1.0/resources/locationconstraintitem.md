@@ -1,3 +1,13 @@
+---
+title: locationConstraintItem リソースの種類
+description: 会議の場所に関して、クライアントが表明している条件です。
+ms.openlocfilehash: 4f985a5d37dc3a27866f077b68250b07b4a173f4
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27023051"
+---
 # <a name="locationconstraintitem-resource-type"></a>locationConstraintItem リソースの種類
 
 会議の場所に関して、クライアントが表明している条件です。
@@ -8,11 +18,10 @@
 
 以下は、リソースの JSON 表記です
 
-<!-- {
+<!--{
   "blockType": "resource",
-  "optionalProperties": [
-  
-  ],
+  "optionalProperties": [],
+  "baseType": "microsoft.graph.location",
   "@odata.type": "microsoft.graph.locationConstraintItem"
 }-->
 
@@ -26,12 +35,12 @@
 
 ```
 ## <a name="properties"></a>プロパティ
-| プロパティ       | 型    |説明|
+| プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
-| address | [physicalAddress](physicalAddress.md) |場所の番地。 |
+| address | [physicalAddress](physicaladdress.md) |場所の番地。 |
 | displayName  | String | 場所に関連付けられた名前。                       |
 | locationEmailAddress | String | 場所の電子メール アドレス (省略可能)。 |
-| resolveAvailability | Boolean | true に設定されているときに指定したリソースがビジー状態である場合は、[findMeetingTimes](../api/user_findmeetingtimes.md) は空いている別のリソースを検索します。false に設定されているときに指定したリソースがビジー状態である場合は、**findMeetingTimes** はリソースが空いているかどうかを確認しないで、ユーザーのキャッシュでトップにランク付けられているリソースを返します。既定値は true です。 |
+| resolveAvailability | Boolean | true に設定されているときに指定したリソースがビジー状態である場合は、[findMeetingTimes](../api/user-findmeetingtimes.md) は空いている別のリソースを検索します。false に設定されているときに指定したリソースがビジー状態である場合は、**findMeetingTimes** はリソースが空いているかどうかを確認しないで、ユーザーのキャッシュでトップにランク付けられているリソースを返します。既定値は true です。 |
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
