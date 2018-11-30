@@ -1,3 +1,13 @@
+---
+title: fileAttachment リソースの種類
+description: '(テキスト ファイルなどの Word 文書)、イベント、メッセージや投稿の添付ファイルです。 **ContentBytes** '
+ms.openlocfilehash: 97c9b22c379b00fa76a9dee45389e57269e6fc20
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27023646"
+---
 # <a name="fileattachment-resource-type"></a>fileAttachment リソースの種類
 
 イベント、メッセージまたは投稿に添付されたファイル (テキスト ファイルや Word 文書など) です。**contentBytes** プロパティには、base64 でエンコードされたファイルの内容が含まれています。  
@@ -13,18 +23,18 @@
 
 | メソッド       | 戻り値の型  |説明|
 |:---------------|:--------|:----------|
-|[取得](../api/attachment_get.md) | [fileAttachment](fileattachment.md) |fileattachment オブジェクトのプロパティと関係を読み取ります。|
-|[Delete](../api/attachment_delete.md) | なし |fileAttachment オブジェクトを削除します。 |
+|[取得](../api/attachment-get.md) | [fileAttachment](fileattachment.md) |fileattachment オブジェクトのプロパティと関係を読み取ります。|
+|[Delete](../api/attachment-delete.md) | なし |fileAttachment オブジェクトを削除します。 |
 
 ## <a name="properties"></a>プロパティ
 | プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
-|contentBytes|Binary|ファイルのバイナリ コンテンツです。|
+|contentBytes|Binary|base64 でエンコードされたファイルの内容。|
 |contentId|String|Exchange ストア内の添付ファイルの ID。|
 |contentLocation|String|添付ファイルのコンテンツの場所に対応する Uniform Resource Identifier (URI)。|
 |contentType|String|添付ファイルのコンテンツ タイプ。|
 |id|String|添付ファイル ID。|
-|isInline|Boolean|インライン添付ファイルの場合、true に設定します。|
+|isInline|ブール値|インライン添付ファイルの場合、true に設定します。|
 |lastModifiedDateTime|DateTimeOffset|添付ファイルが最後に変更された日時です。|
 |name|String|埋め込み添付ファイルを表すアイコンの下に表示されるテキストを表す名前。これは、実際のファイル名にする必要はありません。|
 |size|Int32|添付ファイルのバイト単位のサイズ。|
@@ -39,6 +49,7 @@
 
 <!-- {
   "blockType": "resource",
+  "baseType": "microsoft.graph.attachment",
   "optionalProperties": [
 
   ],

@@ -1,16 +1,33 @@
-# <a name="resource-resource-type"></a>resource リソースの種類
+---
+title: OneNoteResource リソースの種類
+description: 'イメージまたは OneNote のページ上の他のファイル リソースです。 '
+ms.openlocfilehash: a5be2602e2a015b278ed7c3e01c573a543c7c6a1
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27021810"
+---
+# <a name="onenoteresource-resource-type"></a>OneNoteResource リソースの種類
 
 イメージまたは OneNote のページ上の他のファイル リソースです。 
 
 リソースのバイナリ データは取得できますが、リソース オブジェクトまたはリソース コレクションの JSON 表記の取得はサポートされていません。
 
-<!-- {
+<!--{
   "blockType": "resource",
-  "optionalProperties": [
-
-  ],
+  "baseType": "microsoft.graph.onenoteEntityBaseModel",
+  "optionalProperties": [],
+  "isMediaEntity": true,
   "@odata.type": "microsoft.graph.onenoteResource"
 }-->
+
+```json
+{
+  "content": { "@odata.type": "Edm.Stream" },
+  "contentUrl": "string (url)"
+}
+```
 
 GET リクエストをリソースの `content` エンドポイントに送信することによって、特定のリソースのバイナリ データを取得します。
 
@@ -43,7 +60,11 @@ GET ../onenote/pages/{id}/content
 ```
 
 ## <a name="properties"></a>プロパティ
-なし
+
+| プロパティ             | 型            | 説明
+|:---------------------|:----------------|:---------------------------------
+| content              | Stream          | コンテンツ ストリーム
+| contentUrl           | 文字列 (url)    | コンテンツをダウンロードするための URL
 
 ## <a name="relationships"></a>リレーションシップ
 なし。
@@ -52,7 +73,7 @@ GET ../onenote/pages/{id}/content
 ## <a name="methods"></a>メソッド
 | メソッド           | 戻り値の型    |説明|
 |:---------------|:--------|:----------|
-|[リソース バイナリ データの取得](../api/resource_get.md) | Stream |ファイルまたはイメージ リソースのバイナリ データを取得します。|
+|[リソース バイナリ データの取得](../api/resource-get.md) | Stream |ファイルまたはイメージ リソースのバイナリ データを取得します。|
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
