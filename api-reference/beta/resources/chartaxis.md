@@ -1,34 +1,46 @@
-# <a name="chartaxis-resource-type"></a>ChartAxis リソースの種類
+---
+title: ChartAxis リソースの種類
+description: グラフの 1 つの軸を表します。
+ms.openlocfilehash: f92e8dd12dc2d7036d5022e2b293cfc290faf910
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27070928"
+---
+# <a name="chartaxis-resource-type"></a><span data-ttu-id="d1fb7-103">ChartAxis リソースの種類</span><span class="sxs-lookup"><span data-stu-id="d1fb7-103">ChartAxis resource type</span></span>
 
-グラフの 1 つの軸を表します。
+> <span data-ttu-id="d1fb7-104">**重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。</span><span class="sxs-lookup"><span data-stu-id="d1fb7-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="d1fb7-105">実稼働アプリケーションでの、これらの API の使用はサポートされていません。</span><span class="sxs-lookup"><span data-stu-id="d1fb7-105">Use of these APIs in production applications is not supported.</span></span>
+
+<span data-ttu-id="d1fb7-106">グラフの 1 つの軸を表します。</span><span class="sxs-lookup"><span data-stu-id="d1fb7-106">Represents a single axis in a chart.</span></span>
 
 
-## <a name="methods"></a>メソッド
+## <a name="methods"></a><span data-ttu-id="d1fb7-107">メソッド</span><span class="sxs-lookup"><span data-stu-id="d1fb7-107">Methods</span></span>
 
-| メソッド           | 戻り値の型    |説明|
+| <span data-ttu-id="d1fb7-108">メソッド</span><span class="sxs-lookup"><span data-stu-id="d1fb7-108">Method</span></span>           | <span data-ttu-id="d1fb7-109">戻り値の型</span><span class="sxs-lookup"><span data-stu-id="d1fb7-109">Return Type</span></span>    |<span data-ttu-id="d1fb7-110">説明</span><span class="sxs-lookup"><span data-stu-id="d1fb7-110">Description</span></span>|
 |:---------------|:--------|:----------|
-|[Get ChartAxis](../api/chartaxis_get.md) | [ChartAxis](chartaxis.md) |chartAxis オブジェクトのプロパティと関係を読み取ります。|
-|[Update](../api/chartaxis_update.md) | [ChartAxis](chartaxis.md)    |ChartAxis オブジェクトを更新します。 |
+|[<span data-ttu-id="d1fb7-111">Get ChartAxis</span><span class="sxs-lookup"><span data-stu-id="d1fb7-111">Get ChartAxis</span></span>](../api/chartaxis-get.md) | [<span data-ttu-id="d1fb7-112">ChartAxis</span><span class="sxs-lookup"><span data-stu-id="d1fb7-112">ChartAxis</span></span>](chartaxis.md) |<span data-ttu-id="d1fb7-113">chartAxis オブジェクトのプロパティと関係を読み取ります。</span><span class="sxs-lookup"><span data-stu-id="d1fb7-113">Read properties and relationships of chartAxis object.</span></span>|
+|[<span data-ttu-id="d1fb7-114">Update</span><span class="sxs-lookup"><span data-stu-id="d1fb7-114">Update</span></span>](../api/chartaxis-update.md) | [<span data-ttu-id="d1fb7-115">ChartAxis</span><span class="sxs-lookup"><span data-stu-id="d1fb7-115">ChartAxis</span></span>](chartaxis.md)   |<span data-ttu-id="d1fb7-116">ChartAxis オブジェクトを更新します。</span><span class="sxs-lookup"><span data-stu-id="d1fb7-116">Update ChartAxis object.</span></span> |
 
-## <a name="properties"></a>プロパティ
-| プロパティ       | 型    |説明|
+## <a name="properties"></a><span data-ttu-id="d1fb7-117">プロパティ</span><span class="sxs-lookup"><span data-stu-id="d1fb7-117">Properties</span></span>
+| <span data-ttu-id="d1fb7-118">プロパティ</span><span class="sxs-lookup"><span data-stu-id="d1fb7-118">Property</span></span>     | <span data-ttu-id="d1fb7-119">型</span><span class="sxs-lookup"><span data-stu-id="d1fb7-119">Type</span></span>   |<span data-ttu-id="d1fb7-120">説明</span><span class="sxs-lookup"><span data-stu-id="d1fb7-120">Description</span></span>|
 |:---------------|:--------|:----------|
-|majorUnit|オブジェクト|2 つの大きい目盛の間隔を表します。数値の値または空の文字列を設定できます。戻り値は常に数値です。|
-|maximum|object|数値軸の最大値を表します。数値の値または空の文字列を設定できます (軸の値が自動の場合)。戻り値は常に数値です。|
-|minimum|object|数値軸の最小値を表します。数値の値または空の文字列を設定できます (軸の値が自動の場合)。戻り値は常に数値です。|
-|minorUnit|オブジェクト|2 つの小さい目盛の間隔を表します。"数値の値または空の文字列を設定できます (軸の値が自動の場合)。戻り値は常に数値です。|
+|<span data-ttu-id="d1fb7-121">majorUnit</span><span class="sxs-lookup"><span data-stu-id="d1fb7-121">majorUnit</span></span>|<span data-ttu-id="d1fb7-122">オブジェクト</span><span class="sxs-lookup"><span data-stu-id="d1fb7-122">object</span></span>|<span data-ttu-id="d1fb7-p102">2 つの大きい目盛の間隔を表します。数値の値または空の文字列を設定できます。戻り値は常に数値です。</span><span class="sxs-lookup"><span data-stu-id="d1fb7-p102">Represents the interval between two major tick marks. Can be set to a numeric value or an empty string.  The returned value is always a number.</span></span>|
+|<span data-ttu-id="d1fb7-126">maximum</span><span class="sxs-lookup"><span data-stu-id="d1fb7-126">maximum</span></span>|<span data-ttu-id="d1fb7-127">object</span><span class="sxs-lookup"><span data-stu-id="d1fb7-127">object</span></span>|<span data-ttu-id="d1fb7-p103">数値軸の最大値を表します。数値の値または空の文字列を設定できます (軸の値が自動の場合)。戻り値は常に数値です。</span><span class="sxs-lookup"><span data-stu-id="d1fb7-p103">Represents the maximum value on the value axis.  Can be set to a numeric value or an empty string (for automatic axis values).  The returned value is always a number.</span></span>|
+|<span data-ttu-id="d1fb7-131">minimum</span><span class="sxs-lookup"><span data-stu-id="d1fb7-131">minimum</span></span>|<span data-ttu-id="d1fb7-132">object</span><span class="sxs-lookup"><span data-stu-id="d1fb7-132">object</span></span>|<span data-ttu-id="d1fb7-p104">数値軸の最小値を表します。数値の値または空の文字列を設定できます (軸の値が自動の場合)。戻り値は常に数値です。</span><span class="sxs-lookup"><span data-stu-id="d1fb7-p104">Represents the minimum value on the value axis. Can be set to a numeric value or an empty string (for automatic axis values).  The returned value is always a number.</span></span>|
+|<span data-ttu-id="d1fb7-136">minorUnit</span><span class="sxs-lookup"><span data-stu-id="d1fb7-136">minorUnit</span></span>|<span data-ttu-id="d1fb7-137">オブジェクト</span><span class="sxs-lookup"><span data-stu-id="d1fb7-137">object</span></span>|<span data-ttu-id="d1fb7-p105">2 つの小さい目盛の間隔を表します。"数値の値または空の文字列を設定できます (軸の値が自動の場合)。戻り値は常に数値です。</span><span class="sxs-lookup"><span data-stu-id="d1fb7-p105">Represents the interval between two minor tick marks. "Can be set to a numeric value or an empty string (for automatic axis values). The returned value is always a number.</span></span>|
 
-## <a name="relationships"></a>関係
-| リレーションシップ | 型    |説明|
+## <a name="relationships"></a><span data-ttu-id="d1fb7-141">関係</span><span class="sxs-lookup"><span data-stu-id="d1fb7-141">Relationships</span></span>
+| <span data-ttu-id="d1fb7-142">リレーションシップ</span><span class="sxs-lookup"><span data-stu-id="d1fb7-142">Relationship</span></span> | <span data-ttu-id="d1fb7-143">型</span><span class="sxs-lookup"><span data-stu-id="d1fb7-143">Type</span></span>   |<span data-ttu-id="d1fb7-144">説明</span><span class="sxs-lookup"><span data-stu-id="d1fb7-144">Description</span></span>|
 |:---------------|:--------|:----------|
-|format|[ChartAxisFormat](chartaxisformat.md)|グラフ オブジェクトの書式設定を表します。これには線とフォントの書式設定などがあります。値の取得のみ可能です。|
-|majorGridlines|[ChartGridlines](chartgridlines.md)|指定された軸の目盛線を表す gridlines オブジェクトを返します。値の取得のみ可能です。|
-|minorGridlines|[ChartGridlines](chartgridlines.md)|指定された軸の小さい目盛線を表す gridlines オブジェクトを返します。値の取得のみ可能です。|
-|title|[ChartAxisTitle](chartaxistitle.md)|軸タイトルを表します。値の取得のみ可能です。|
+|<span data-ttu-id="d1fb7-145">format</span><span class="sxs-lookup"><span data-stu-id="d1fb7-145">format</span></span>|[<span data-ttu-id="d1fb7-146">ChartAxisFormat</span><span class="sxs-lookup"><span data-stu-id="d1fb7-146">ChartAxisFormat</span></span>](chartaxisformat.md)|<span data-ttu-id="d1fb7-p106">グラフ オブジェクトの書式設定を表します。これには線とフォントの書式設定などがあります。値の取得のみ可能です。</span><span class="sxs-lookup"><span data-stu-id="d1fb7-p106">Represents the formatting of a chart object, which includes line and font formatting. Read-only.</span></span>|
+|<span data-ttu-id="d1fb7-149">majorGridlines</span><span class="sxs-lookup"><span data-stu-id="d1fb7-149">majorGridlines</span></span>|[<span data-ttu-id="d1fb7-150">ChartGridlines</span><span class="sxs-lookup"><span data-stu-id="d1fb7-150">ChartGridlines</span></span>](chartgridlines.md)|<span data-ttu-id="d1fb7-p107">指定された軸の目盛線を表す gridlines オブジェクトを返します。値の取得のみ可能です。</span><span class="sxs-lookup"><span data-stu-id="d1fb7-p107">Returns a gridlines object that represents the major gridlines for the specified axis. Read-only.</span></span>|
+|<span data-ttu-id="d1fb7-153">minorGridlines</span><span class="sxs-lookup"><span data-stu-id="d1fb7-153">minorGridlines</span></span>|[<span data-ttu-id="d1fb7-154">ChartGridlines</span><span class="sxs-lookup"><span data-stu-id="d1fb7-154">ChartGridlines</span></span>](chartgridlines.md)|<span data-ttu-id="d1fb7-p108">指定された軸の小さい目盛線を表す gridlines オブジェクトを返します。値の取得のみ可能です。</span><span class="sxs-lookup"><span data-stu-id="d1fb7-p108">Returns a Gridlines object that represents the minor gridlines for the specified axis. Read-only.</span></span>|
+|<span data-ttu-id="d1fb7-157">title</span><span class="sxs-lookup"><span data-stu-id="d1fb7-157">title</span></span>|[<span data-ttu-id="d1fb7-158">ChartAxisTitle</span><span class="sxs-lookup"><span data-stu-id="d1fb7-158">ChartAxisTitle</span></span>](chartaxistitle.md)|<span data-ttu-id="d1fb7-p109">軸タイトルを表します。値の取得のみ可能です。</span><span class="sxs-lookup"><span data-stu-id="d1fb7-p109">Represents the axis title. Read-only.</span></span>|
 
-## <a name="json-representation"></a>JSON 表記
+## <a name="json-representation"></a><span data-ttu-id="d1fb7-161">JSON 表記</span><span class="sxs-lookup"><span data-stu-id="d1fb7-161">JSON representation</span></span>
 
-以下は、リソースの JSON 表記です。
+<span data-ttu-id="d1fb7-162">以下は、リソースの JSON 表記です。</span><span class="sxs-lookup"><span data-stu-id="d1fb7-162">Here is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",

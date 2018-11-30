@@ -1,24 +1,36 @@
-# <a name="sortfield-resource-type"></a>SortField リソースの種類
+---
+title: SortField リソースの種類
+description: 並べ替え操作の条件を表します。
+ms.openlocfilehash: bb5915e9d9637912b97c0425819acd15a6ed40ca
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27072235"
+---
+# <a name="sortfield-resource-type"></a><span data-ttu-id="db6ef-103">SortField リソースの種類</span><span class="sxs-lookup"><span data-stu-id="db6ef-103">SortField resource type</span></span>
 
-並べ替え操作の条件を表します。
+> <span data-ttu-id="db6ef-104">**重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。</span><span class="sxs-lookup"><span data-stu-id="db6ef-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="db6ef-105">実稼働アプリケーションでの、これらの API の使用はサポートされていません。</span><span class="sxs-lookup"><span data-stu-id="db6ef-105">Use of these APIs in production applications is not supported.</span></span>
 
-## <a name="properties"></a>プロパティ
-| プロパティ       | 型    |説明|
+<span data-ttu-id="db6ef-106">並べ替え操作の条件を表します。</span><span class="sxs-lookup"><span data-stu-id="db6ef-106">Represents a condition in a sorting operation.</span></span>
+
+## <a name="properties"></a><span data-ttu-id="db6ef-107">プロパティ</span><span class="sxs-lookup"><span data-stu-id="db6ef-107">Properties</span></span>
+| <span data-ttu-id="db6ef-108">プロパティ</span><span class="sxs-lookup"><span data-stu-id="db6ef-108">Property</span></span>     | <span data-ttu-id="db6ef-109">型</span><span class="sxs-lookup"><span data-stu-id="db6ef-109">Type</span></span>   |<span data-ttu-id="db6ef-110">説明</span><span class="sxs-lookup"><span data-stu-id="db6ef-110">Description</span></span>|
 |:---------------|:--------|:----------|
-|ascending|boolean|昇順の方法で並べ替えを行うかどうかを表します。|
-|color|string|並べ替えがフォントまたはセルの色で行われるときに条件の対象となる色を表します。|
-|dataOption|string|このフィールドのその他の並べ替えオプションを表します。可能な値は、`Normal`、`TextAsNumber` です。|
-|key|int|条件の対象とする列 (または行。並べ替えの方向によって異なります) を表します。最初の列 (または行) からのオフセットとして表します。|
-|sortOn|string|この条件の並べ替えの種類を表します。可能な値は、`Value`、`CellColor`、`FontColor`、`Icon` です。|
+|<span data-ttu-id="db6ef-111">ascending</span><span class="sxs-lookup"><span data-stu-id="db6ef-111">ascending</span></span>|<span data-ttu-id="db6ef-112">ブール値</span><span class="sxs-lookup"><span data-stu-id="db6ef-112">boolean</span></span>|<span data-ttu-id="db6ef-113">昇順の方法で並べ替えを行うかどうかを表します。</span><span class="sxs-lookup"><span data-stu-id="db6ef-113">Represents whether the sorting is done in an ascending fashion.</span></span>|
+|<span data-ttu-id="db6ef-114">color</span><span class="sxs-lookup"><span data-stu-id="db6ef-114">color</span></span>|<span data-ttu-id="db6ef-115">文字列</span><span class="sxs-lookup"><span data-stu-id="db6ef-115">string</span></span>|<span data-ttu-id="db6ef-116">並べ替えがフォントまたはセルの色で行われるときに条件の対象となる色を表します。</span><span class="sxs-lookup"><span data-stu-id="db6ef-116">Represents the color that is the target of the condition if the sorting is on font or cell color.</span></span>|
+|<span data-ttu-id="db6ef-117">dataOption</span><span class="sxs-lookup"><span data-stu-id="db6ef-117">dataOption</span></span>|<span data-ttu-id="db6ef-118">文字列</span><span class="sxs-lookup"><span data-stu-id="db6ef-118">string</span></span>|<span data-ttu-id="db6ef-p102">このフィールドのその他の並べ替えオプションを表します。可能な値は、`Normal`、`TextAsNumber` です。</span><span class="sxs-lookup"><span data-stu-id="db6ef-p102">Represents additional sorting options for this field. Possible values are: `Normal`, `TextAsNumber`.</span></span>|
+|<span data-ttu-id="db6ef-121">Key</span><span class="sxs-lookup"><span data-stu-id="db6ef-121">key</span></span>|<span data-ttu-id="db6ef-122">int</span><span class="sxs-lookup"><span data-stu-id="db6ef-122">int</span></span>|<span data-ttu-id="db6ef-p103">条件の対象とする列 (または行。並べ替えの方向によって異なります) を表します。最初の列 (または行) からのオフセットとして表します。</span><span class="sxs-lookup"><span data-stu-id="db6ef-p103">Represents the column (or row, depending on the sort orientation) that the condition is on. Represented as an offset from the first column (or row).</span></span>|
+|<span data-ttu-id="db6ef-125">sortOn</span><span class="sxs-lookup"><span data-stu-id="db6ef-125">sortOn</span></span>|<span data-ttu-id="db6ef-126">文字列</span><span class="sxs-lookup"><span data-stu-id="db6ef-126">string</span></span>|<span data-ttu-id="db6ef-p104">この条件の並べ替えの種類を表します。可能な値は、`Value`、`CellColor`、`FontColor`、`Icon` です。</span><span class="sxs-lookup"><span data-stu-id="db6ef-p104">Represents the type of sorting of this condition. Possible values are: `Value`, `CellColor`, `FontColor`, `Icon`.</span></span>|
 
-## <a name="relationships"></a>リレーションシップ
-| リレーションシップ | 型    |説明|
+## <a name="relationships"></a><span data-ttu-id="db6ef-129">リレーションシップ</span><span class="sxs-lookup"><span data-stu-id="db6ef-129">Relationships</span></span>
+| <span data-ttu-id="db6ef-130">リレーションシップ</span><span class="sxs-lookup"><span data-stu-id="db6ef-130">Relationship</span></span> | <span data-ttu-id="db6ef-131">型</span><span class="sxs-lookup"><span data-stu-id="db6ef-131">Type</span></span>   |<span data-ttu-id="db6ef-132">説明</span><span class="sxs-lookup"><span data-stu-id="db6ef-132">Description</span></span>|
 |:---------------|:--------|:----------|
-|icon|[Icon](icon.md)|並べ替えがセルのアイコンで行われるときに条件の対象となるアイコンを表します。|
+|<span data-ttu-id="db6ef-133">アイコン</span><span class="sxs-lookup"><span data-stu-id="db6ef-133">icon</span></span>|[<span data-ttu-id="db6ef-134">Icon</span><span class="sxs-lookup"><span data-stu-id="db6ef-134">Icon</span></span>](icon.md)|<span data-ttu-id="db6ef-135">並べ替えがセルのアイコンで行われるときに条件の対象となるアイコンを表します。</span><span class="sxs-lookup"><span data-stu-id="db6ef-135">Represents the icon that is the target of the condition if the sorting is on the cell's icon.</span></span>|
 
-## <a name="json-representation"></a>JSON 表記
+## <a name="json-representation"></a><span data-ttu-id="db6ef-136">JSON 表記</span><span class="sxs-lookup"><span data-stu-id="db6ef-136">JSON representation</span></span>
 
-以下は、リソースの JSON 表記です。
+<span data-ttu-id="db6ef-137">以下は、リソースの JSON 表記です。</span><span class="sxs-lookup"><span data-stu-id="db6ef-137">Here is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
