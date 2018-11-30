@@ -1,3 +1,13 @@
+---
+title: ChartAxisTitle リソースの種類
+description: グラフ軸のタイトルを表します。
+ms.openlocfilehash: ede660e2ba5d0ab34e8b985574e3077ca06b32b6
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27021604"
+---
 # <a name="chartaxistitle-resource-type"></a>ChartAxisTitle リソースの種類
 
 グラフ軸のタイトルを表します。
@@ -7,36 +17,36 @@
 
 | メソッド           | 戻り値の型    |説明|
 |:---------------|:--------|:----------|
-|[Get ChartAxisTitle](../api/chartaxistitle_get.md) | [ChartAxisTitle](chartaxistitle.md) |chartAxisTitle オブジェクトのプロパティと関係を読み取ります。|
-|[Update](../api/chartaxistitle_update.md) | [ChartAxisTitle](chartaxistitle.md)    |ChartAxisTitle オブジェクトを更新します。 |
+|[Get ChartAxisTitle](../api/chartaxistitle-get.md) | [WorkbookChartAxisTitle](chartaxistitle.md) |chartAxisTitle オブジェクトのプロパティと関係を読み取ります。|
+|[Update](../api/chartaxistitle-update.md) | [WorkbookChartAxisTitle](chartaxistitle.md)    |ChartAxisTitle オブジェクトを更新します。 |
 
 ## <a name="properties"></a>プロパティ
-| プロパティ       | 型    |説明|
+| プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
-|text|string|軸タイトルを表します。|
-|visible|boolean|軸のタイトルの表示/非表示を指定するブール型の値です。|
+|text|文字列|軸タイトルを表します。|
+|visible|ブール値|軸のタイトルの表示/非表示を指定するブール型の値です。|
 
 ## <a name="relationships"></a>関係
-| リレーションシップ | 型    |説明|
+| リレーションシップ | 型   |説明|
 |:---------------|:--------|:----------|
-|format|[ChartAxisTitleFormat](chartaxistitleformat.md)|グラフ軸のタイトルの書式設定を表します。値の取得のみ可能です。|
+|format|[WorkbookChartAxisTitleFormat](chartaxistitleformat.md)|グラフ軸のタイトルの書式設定を表します。値の取得のみ可能です。|
 
 ## <a name="json-representation"></a>JSON 表記
 
 以下は、リソースの JSON 表記です。
 
-<!-- {
+<!--{
   "blockType": "resource",
-  "optionalProperties": [
-
-  ],
-  "@odata.type": "microsoft.graph.chartAxisTitle"
+  "baseType": "microsoft.graph.entity",
+  "optionalProperties": [],
+  "@odata.type": "microsoft.graph.workbookChartAxisTitle"
 }-->
 
 ```json
 {
   "text": "string",
-  "visible": true
+  "visible": true,
+  "format": {"@odata.type":"microsoft.graph.workbookChartAxisTitleFormat"}
 }
 
 ```

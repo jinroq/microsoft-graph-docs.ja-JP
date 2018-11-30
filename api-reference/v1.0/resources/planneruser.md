@@ -1,36 +1,42 @@
-<a id="planneruser-resource-type" class="xliff"></a>
-# plannerUser リソースの種類
+---
+title: plannerUser リソースの種類
+description: '**PlannerUser**リソースでは、ユーザーの計画のリソースへのアクセスを提供します。 使用可能なプロパティが含まれていません。'
+ms.openlocfilehash: 777886a61d702198ec03ea844fb9fced761047ba
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27022300"
+---
+# <a name="planneruser-resource-type"></a>plannerUser リソースの種類
 
 **plannerUser** リソースは、[user](user.md) のプランナー リソースへのアクセスを提供します。使用可能なプロパティは含まれていません。
 
 
-<a id="methods" class="xliff"></a>
-## メソッド
+## <a name="methods"></a>メソッド
 
 | メソッド           | 戻り値の型    |説明|
 |:---------------|:--------|:----------|
-|[plans を一覧表示する](../api/planneruser_list_plans.md) |[plannerPlan](plannerplan.md) コレクション| **plannerPlan** オブジェクト コレクションを取得します。|
-|[List tasks](../api/planneruser_list_tasks.md) |[plannerTask](plannertask.md) コレクション| **plannerTask** オブジェクト コレクションを取得します。|
+|[plans を一覧表示する](../api/planneruser-list-plans.md) |[plannerPlan](plannerplan.md) コレクション| **plannerPlan** オブジェクト コレクションを取得します。|
+|[List tasks](../api/planneruser-list-tasks.md) |[plannerTask](plannertask.md) コレクション| **plannerTask** オブジェクト コレクションを取得します。|
 
-<a id="properties" class="xliff"></a>
-## プロパティ
+## <a name="properties"></a>プロパティ
 | プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
 |id|String| 読み取り専用です。planenrUser の識別子|
 
-<a id="relationships" class="xliff"></a>
-## リレーションシップ
+## <a name="relationships"></a>リレーションシップ
 | リレーションシップ | 型   |説明|
 |:---------------|:--------|:----------|
 |plans|[plannerPlan](plannerplan.md) コレクション| 読み取り専用です。Null 許容型。ユーザーに割り当てられている [plannerTasks](plannertask.md) を返します。|
 |tasks|[plannerTask](plannertask.md) コレクション| 読み取り専用です。Null 許容型。ユーザーと共有している [plannerPlans](plannerplan.md) を返します。|
 
-<a id="json-representation" class="xliff"></a>
-## JSON 表記
+## <a name="json-representation"></a>JSON 表記
 以下は、リソースの JSON 表記です。
 
 <!-- {
   "blockType": "resource",
+  "baseType": "microsoft.graph.entity",
   "optionalProperties": [
 
   ],

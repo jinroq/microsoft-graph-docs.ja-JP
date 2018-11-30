@@ -1,24 +1,30 @@
-# plannerUserIds リソースの種類
-<a id="planneruserids-resource-type" class="xliff"></a>
+---
+title: plannerUserIds リソースの種類
+description: '**PlannerUserIds**リソースは、plan を共有するユーザー ID のリストを表します。これはオープン型です。Office 365 グループを活用している場合は、グループの API を使用してグループのメンバーシップを管理し、グループの計画を共有します。グループの既存のメンバーもこのコレクションに追加できますが、このグループが所有する計画へのアクセスは必要とされません。'
+ms.openlocfilehash: f2115cb31825f30190701bc2ab6b0d29669c4665
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27024188"
+---
+# <a name="planneruserids-resource-type"></a>plannerUserIds リソースの種類
 
 **PlannerUserIds**リソースは、[plan](plannerplan.md) を共有するユーザー ID のリストを表します。これはオープン型です。Office 365 グループを活用している場合は、グループの API を使用してグループのメンバーシップを管理し、[グループの](group.md)計画を共有します。グループの既存のメンバーもこのコレクションに追加できますが、このグループが所有する計画へのアクセスは必要とされません。
 
 
-## プロパティ
-<a id="properties" class="xliff"></a>
+## <a name="properties"></a>プロパティ
 クライアントは、オープン型のプロパティを定義できます。この例では、クライアントは、値が `true` ブール値となるプロパティとしてユーザー ID を指定する必要があります。ユーザー ID が共有されなくなると、プロパティはその値が `false` ブール値に設定され、自動的に削除されます。
 
 
-## JSON 表記
-<a id="json-representation" class="xliff"></a>
+## <a name="json-representation"></a>JSON 表記
 
 以下は、リソースの JSON 表記です
 
 <!-- {
   "blockType": "resource",
-  "optionalProperties": [
-
-  ],
+  "openType": true,
+  "optionalProperties": [ "String-value" ],
   "@odata.type": "microsoft.graph.plannerUserIds"
 }-->
 
