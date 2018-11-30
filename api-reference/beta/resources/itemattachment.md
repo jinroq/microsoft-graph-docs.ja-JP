@@ -1,34 +1,46 @@
-# <a name="itemattachment-resource-type"></a>itemAttachment リソースの種類
+---
+title: itemAttachment リソースの種類
+description: 連絡先、イベント、または別のイベントに関連付けられているメッセージ
+ms.openlocfilehash: fd8638a7d263c2ebbe09c77f717af989e1dd5a0e
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27071902"
+---
+# <a name="itemattachment-resource-type"></a><span data-ttu-id="93a05-103">itemAttachment リソースの種類</span><span class="sxs-lookup"><span data-stu-id="93a05-103">itemAttachment resource type</span></span>
 
-別のイベント、メッセージ、または投稿に添付された連絡先、イベント、またはメッセージです。  
+> <span data-ttu-id="93a05-104">**重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。</span><span class="sxs-lookup"><span data-stu-id="93a05-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="93a05-105">実稼働アプリケーションでの、これらの API の使用はサポートされていません。</span><span class="sxs-lookup"><span data-stu-id="93a05-105">Use of these APIs in production applications is not supported.</span></span>
 
-[添付ファイル](attachment.md)から派生します。
+<span data-ttu-id="93a05-106">連絡先、イベント、または他の[イベント](../resources/event.md)、[メッセージ](../resources/message.md)、 [Outlook の仕事](../resources/outlooktask.md)、または[投稿](../resources/post.md)に添付されているメッセージです。</span><span class="sxs-lookup"><span data-stu-id="93a05-106">A contact, event, or message that's attached to another [event](../resources/event.md), [message](../resources/message.md), [Outlook task](../resources/outlooktask.md), or [post](../resources/post.md).</span></span>  
 
-## <a name="methods"></a>メソッド
+<span data-ttu-id="93a05-107">[添付ファイル](attachment.md)から派生します。</span><span class="sxs-lookup"><span data-stu-id="93a05-107">Derived from [attachment](attachment.md).</span></span>
 
-| メソッド       | 戻り値の型  |説明|
+## <a name="methods"></a><span data-ttu-id="93a05-108">メソッド</span><span class="sxs-lookup"><span data-stu-id="93a05-108">Methods</span></span>
+
+| <span data-ttu-id="93a05-109">メソッド</span><span class="sxs-lookup"><span data-stu-id="93a05-109">Method</span></span>       | <span data-ttu-id="93a05-110">戻り値の型</span><span class="sxs-lookup"><span data-stu-id="93a05-110">Return Type</span></span>  |<span data-ttu-id="93a05-111">説明</span><span class="sxs-lookup"><span data-stu-id="93a05-111">Description</span></span>|
 |:---------------|:--------|:----------|
-|[取得](../api/attachment_get.md) | [itemAttachment](itemattachment.md) |itemAttachment オブジェクトのプロパティと関係を読み取ります。|
-|[Delete](../api/attachment_delete.md) | なし |itemAttachment オブジェクトを削除します。 |
+|[<span data-ttu-id="93a05-112">Get</span><span class="sxs-lookup"><span data-stu-id="93a05-112">Get</span></span>](../api/attachment-get.md) | [<span data-ttu-id="93a05-113">itemAttachment</span><span class="sxs-lookup"><span data-stu-id="93a05-113">itemAttachment</span></span>](itemattachment.md) |<span data-ttu-id="93a05-114">itemAttachment オブジェクトのプロパティと関係を読み取ります。</span><span class="sxs-lookup"><span data-stu-id="93a05-114">Read properties and relationships of itemAttachment object.</span></span>|
+|[<span data-ttu-id="93a05-115">削除</span><span class="sxs-lookup"><span data-stu-id="93a05-115">Delete</span></span>](../api/attachment-delete.md) | <span data-ttu-id="93a05-116">なし</span><span class="sxs-lookup"><span data-stu-id="93a05-116">None</span></span> |<span data-ttu-id="93a05-117">itemAttachment オブジェクトを削除します。</span><span class="sxs-lookup"><span data-stu-id="93a05-117">Delete itemAttachment object.</span></span> |
 
-## <a name="properties"></a>プロパティ
-| プロパティ       | 型    |説明|
+## <a name="properties"></a><span data-ttu-id="93a05-118">プロパティ</span><span class="sxs-lookup"><span data-stu-id="93a05-118">Properties</span></span>
+| <span data-ttu-id="93a05-119">プロパティ</span><span class="sxs-lookup"><span data-stu-id="93a05-119">Property</span></span>     | <span data-ttu-id="93a05-120">型</span><span class="sxs-lookup"><span data-stu-id="93a05-120">Type</span></span>   |<span data-ttu-id="93a05-121">説明</span><span class="sxs-lookup"><span data-stu-id="93a05-121">Description</span></span>|
 |:---------------|:--------|:----------|
-|contentType|String|添付ファイルのコンテンツ タイプ。|
-|id|String| 添付ファイル ID。|
-|isInline|Boolean|添付ファイルがインライン (アイテムの本文に埋め込まれた画像など) の場合に、true に設定します。|
-|lastModifiedDateTime|DateTimeOffset|添付ファイルが変更された最後の日時です。|
-|name|String|添付ファイルの表示名。|
-|size|Int32|添付ファイルのバイト単位のサイズ。|
+|<span data-ttu-id="93a05-122">contentType</span><span class="sxs-lookup"><span data-stu-id="93a05-122">contentType</span></span>|<span data-ttu-id="93a05-123">String</span><span class="sxs-lookup"><span data-stu-id="93a05-123">String</span></span>|<span data-ttu-id="93a05-124">添付ファイルのコンテンツ タイプ。</span><span class="sxs-lookup"><span data-stu-id="93a05-124">The content type of the attachment.</span></span>|
+|<span data-ttu-id="93a05-125">id</span><span class="sxs-lookup"><span data-stu-id="93a05-125">id</span></span>|<span data-ttu-id="93a05-126">String</span><span class="sxs-lookup"><span data-stu-id="93a05-126">String</span></span>| <span data-ttu-id="93a05-127">添付ファイル ID。</span><span class="sxs-lookup"><span data-stu-id="93a05-127">The attachment ID.</span></span>|
+|<span data-ttu-id="93a05-128">isInline</span><span class="sxs-lookup"><span data-stu-id="93a05-128">isInline</span></span>|<span data-ttu-id="93a05-129">ブール値</span><span class="sxs-lookup"><span data-stu-id="93a05-129">Boolean</span></span>|<span data-ttu-id="93a05-130">添付ファイルがインライン (アイテムの本文に埋め込まれた画像など) の場合に、true に設定します。</span><span class="sxs-lookup"><span data-stu-id="93a05-130">Set to true if the attachment is inline, such as an embedded image within the body of the item.</span></span>|
+|<span data-ttu-id="93a05-131">lastModifiedDateTime</span><span class="sxs-lookup"><span data-stu-id="93a05-131">lastModifiedDateTime</span></span>|<span data-ttu-id="93a05-132">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="93a05-132">DateTimeOffset</span></span>|<span data-ttu-id="93a05-133">添付ファイルが変更された最後の日時です。</span><span class="sxs-lookup"><span data-stu-id="93a05-133">The last time and date that the attachment was modified.</span></span>|
+|<span data-ttu-id="93a05-134">name</span><span class="sxs-lookup"><span data-stu-id="93a05-134">name</span></span>|<span data-ttu-id="93a05-135">String</span><span class="sxs-lookup"><span data-stu-id="93a05-135">String</span></span>|<span data-ttu-id="93a05-136">添付ファイルの表示名。</span><span class="sxs-lookup"><span data-stu-id="93a05-136">The display name of the attachment.</span></span>|
+|<span data-ttu-id="93a05-137">size</span><span class="sxs-lookup"><span data-stu-id="93a05-137">size</span></span>|<span data-ttu-id="93a05-138">Int32</span><span class="sxs-lookup"><span data-stu-id="93a05-138">Int32</span></span>|<span data-ttu-id="93a05-139">添付ファイルのバイト単位のサイズ。</span><span class="sxs-lookup"><span data-stu-id="93a05-139">The size in bytes of the attachment.</span></span>|
 
-## <a name="relationships"></a>関係
-| リレーションシップ | 型    |説明|
+## <a name="relationships"></a><span data-ttu-id="93a05-140">関係</span><span class="sxs-lookup"><span data-stu-id="93a05-140">Relationships</span></span>
+| <span data-ttu-id="93a05-141">リレーションシップ</span><span class="sxs-lookup"><span data-stu-id="93a05-141">Relationship</span></span> | <span data-ttu-id="93a05-142">型</span><span class="sxs-lookup"><span data-stu-id="93a05-142">Type</span></span>   |<span data-ttu-id="93a05-143">説明</span><span class="sxs-lookup"><span data-stu-id="93a05-143">Description</span></span>|
 |:---------------|:--------|:----------|
-|item|[OutlookItem](outlookitem.md)|添付されたメッセージまたはイベントです。ナビゲーション プロパティです。|
+|<span data-ttu-id="93a05-144">item</span><span class="sxs-lookup"><span data-stu-id="93a05-144">item</span></span>|[<span data-ttu-id="93a05-145">OutlookItem</span><span class="sxs-lookup"><span data-stu-id="93a05-145">OutlookItem</span></span>](outlookitem.md)|<span data-ttu-id="93a05-146">添付されている連絡先、メッセージまたはイベントです。</span><span class="sxs-lookup"><span data-stu-id="93a05-146">The attached contact, message or event.</span></span> <span data-ttu-id="93a05-147">ナビゲーション プロパティ。</span><span class="sxs-lookup"><span data-stu-id="93a05-147">Navigation property.</span></span>|
 
-## <a name="json-representation"></a>JSON 表記
+## <a name="json-representation"></a><span data-ttu-id="93a05-148">JSON 表記</span><span class="sxs-lookup"><span data-stu-id="93a05-148">JSON representation</span></span>
 
-以下は、リソースの JSON 表記です
+<span data-ttu-id="93a05-149">以下は、リソースの JSON 表記です</span><span class="sxs-lookup"><span data-stu-id="93a05-149">Here is a JSON representation of the resource</span></span>
 
 <!-- {
   "blockType": "resource",
