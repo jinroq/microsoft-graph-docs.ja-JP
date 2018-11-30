@@ -1,4 +1,16 @@
+---
+title: RangeFormat リソースの種類
+description: 範囲のフォント、塗りつぶし、境界線、配置などのプロパティをカプセル化する、書式設定オブジェクトです。
+ms.openlocfilehash: dc1eb1fd06370dff554e1245245ec24cdf5a6658
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27069797"
+---
 # <a name="rangeformat-resource-type"></a>RangeFormat リソースの種類
+
+> **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。
 
 範囲のフォント、塗りつぶし、境界線、配置などのプロパティをカプセル化する、書式設定オブジェクトです。
 
@@ -7,24 +19,24 @@
 
 | メソッド           | 戻り値の型    |説明|
 |:---------------|:--------|:----------|
-|[RangeFormat を取得する](../api/rangeformat_get.md) | [RangeFormat](rangeformat.md) |rangeFormat オブジェクトのプロパティと関係を読み取ります。|
-|[RangeBorder を作成する](../api/rangeformat_post_borders.md) |[RangeBorder](rangeborder.md)| 境界線コレクションに投稿して、新しい RangeBorder を作成します。|
-|[境界線を一覧表示する](../api/rangeformat_list_borders.md) |[RangeBorder](rangeborder.md) コレクション| RangeBorder オブジェクトのコレクションを取得します。|
-|[Update](../api/rangeformat_update.md) | [RangeFormat](rangeformat.md)    |RangeFormat オブジェクトを更新します。 |
-|[Autofitcolumns](../api/rangeformat_autofitcolumns.md)|なし|現在の列のデータに基づいて、現在の範囲の列の幅を最適な幅に変更します。|
-|[Autofitrows](../api/rangeformat_autofitrows.md)|なし|現在の行のデータに基づいて、現在の範囲の行の高さを最適な高さに変更します。|
+|[RangeFormat を取得する](../api/rangeformat-get.md) | [RangeFormat](rangeformat.md) |rangeFormat オブジェクトのプロパティと関係を読み取ります。|
+|[RangeBorder を作成する](../api/rangeformat-post-borders.md) |[RangeBorder](rangeborder.md)| 境界線コレクションに投稿して、新しい RangeBorder を作成します。|
+|[境界線を一覧表示する](../api/rangeformat-list-borders.md) |[RangeBorder](rangeborder.md) コレクション| RangeBorder オブジェクトのコレクションを取得します。|
+|[Update](../api/rangeformat-update.md) | [RangeFormat](rangeformat.md) |RangeFormat オブジェクトを更新します。 |
+|[Autofitcolumns](../api/rangeformat-autofitcolumns.md)|なし|現在の列のデータに基づいて、現在の範囲の列の幅を最適な幅に変更します。|
+|[Autofitrows](../api/rangeformat-autofitrows.md)|なし|現在の行のデータに基づいて、現在の範囲の行の高さを最適な高さに変更します。|
 
 ## <a name="properties"></a>プロパティ
-| プロパティ       | 型    |説明|
+| プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
 |columnWidth|double|範囲内のすべての列の幅を取得または設定します。列の幅が均一でない場合は、null が返されます。|
-|horizontalAlignment|string|指定したオブジェクトの水平方向の配置を表します。可能な値は、`General`、`Left`、`Center`、`Right`、`Fill`、`Justify`、`CenterAcrossSelection`、`Distributed` です。|
+|horizontalAlignment|文字列|指定したオブジェクトの水平方向の配置を表します。可能な値は、`General`、`Left`、`Center`、`Right`、`Fill`、`Justify`、`CenterAcrossSelection`、`Distributed` です。|
 |rowHeight|double|範囲内のすべての行の高さを取得または設定します。行の高さが均一でない場合は、null が返されます。|
-|verticalAlignment|string|指定したオブジェクトの垂直方向の配置を表します。可能な値は、`Top`、`Center`、`Bottom`、`Justify`、`Distributed` です。|
-|wrapText|boolean|オブジェクト内のテキストを Excel でラップするかどうかを表します。null 値は、範囲全体に一様なラップ設定がないことを表します。|
+|verticalAlignment|文字列|指定したオブジェクトの垂直方向の配置を表します。可能な値は、`Top`、`Center`、`Bottom`、`Justify`、`Distributed` です。|
+|wrapText|ブール値|オブジェクト内のテキストを Excel でラップするかどうかを表します。null 値は、範囲全体に一様なラップ設定がないことを表します。|
 
 ## <a name="relationships"></a>リレーションシップ
-| リレーションシップ | 型    |説明|
+| リレーションシップ | 型   |説明|
 |:---------------|:--------|:----------|
 |borders|[RangeBorder](rangeborder.md) コレクション|選択した範囲全体に適用する境界線オブジェクトのコレクションです。読み取り専用です。|
 |fill|[RangeFill](rangefill.md)|範囲全体に定義された塗りつぶしオブジェクトを返します。読み取り専用です。|

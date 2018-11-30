@@ -1,9 +1,21 @@
+---
+title: アラーム リソースの種類
+description: ユーザーの予定表でイベントを通知します。
+ms.openlocfilehash: e7b7e2266b5959c6aa4927ecad52e24342d607e4
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27069790"
+---
 # <a name="reminder-resource-type"></a>アラーム リソースの種類
 
+> **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。
 
+ユーザー[の予定表](calendar.md)の[イベント](event.md)を通知します。
 
 ## <a name="properties"></a>プロパティ
-| プロパティ       | 型    |説明|
+| プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
 |changeKey|String|アラームのバージョンを識別します。アラームを変更するたびに **changeKey** も変更されます。これにより、Exchange は正しいバージョンのオブジェクトに変更を適用できます。|
 |eventEndTime|[DateTimeTimeZone](datetimetimezone.md)|イベントが終了する日付、時刻、タイムゾーン。|
@@ -13,7 +25,6 @@
 |eventSubject|String|イベントの件名行のテキスト。|
 |eventWebLink|String|Web 上の Outlook でイベントを開く URL。<br/><br/>Web 上の Outlook のメールボックスにログインしている場合、ブラウザーでイベントが開きます。まだブラウザーでログインしていない場合、ログインするように求められます。<br/><br/>この URL には、iFrame 内からアクセスできます。|
 |reminderFireTime|[DateTimeTimeZone](datetimetimezone.md)|アラームの発生を設定する日付、時刻、タイムゾーン。|
-
 
 ## <a name="json-representation"></a>JSON 表記
 
