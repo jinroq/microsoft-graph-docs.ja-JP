@@ -1,4 +1,16 @@
+---
+title: ChartPointFormat リソースの種類
+description: グラフのポイントの書式設定オブジェクトを表します。
+ms.openlocfilehash: ec8c2c277e3bd81b5b96be4c7af8a5788bcfb80d
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27068127"
+---
 # <a name="chartpointformat-resource-type"></a>ChartPointFormat リソースの種類
+
+> **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。
 
 グラフのポイントの書式設定オブジェクトを表します。
 
@@ -10,7 +22,7 @@
 なし
 
 ## <a name="relationships"></a>関係
-| リレーションシップ | 型    |説明|
+| リレーションシップ | 型   |説明|
 |:---------------|:--------|:----------|
 |fill|[ChartFill](chartfill.md)|グラフの塗りつぶしの書式を表します。これには背景の書式設定情報などがあります。値の取得のみ可能です。|
 

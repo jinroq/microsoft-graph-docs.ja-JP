@@ -1,4 +1,16 @@
+---
+title: Microsoft Graph でのファイルの作業
+description: Microsoft Graph を使用して、OneDrive、OneDrive for Business、および SharePoint のドキュメント ライブラリに配置されるファイルに接続するアプリケーションを作成できます。Microsoft Graph を使用することで、ユーザーのドキュメントを単に格納することから、複雑なファイル共有の複雑なシナリオまで、Office 365 に格納されるファイルに関するさまざまなエクスペリエンスを構築できます。
+ms.openlocfilehash: 6b25f279fbbc6386e110647cc25e882f7a388220
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27068681"
+---
 # <a name="working-with-files-in-microsoft-graph"></a>Microsoft Graph でのファイルの作業
+
+> **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。
 
 Microsoft Graph を使用して、OneDrive、OneDrive for Business、および SharePoint のドキュメント ライブラリに配置されるファイルに接続するアプリケーションを作成できます。Microsoft Graph を使用することで、ユーザーのドキュメントを単に格納することから、複雑なファイル共有の複雑なシナリオまで、Office 365 に格納されるファイルに関するさまざまなエクスペリエンスを構築できます。
 
@@ -11,7 +23,7 @@ Microsoft Graph では、ファイルを操作するための 2 種類のリソ�
 
 ```json
 {
-  "@content.downloadUrl":"http://public-sn3302.files.1drv.com/y2pcT7OaUEExF7EHOlpTjCE55mIUoiX7H3sx1ff6I-nP35XUTBqZlnkh9FJhWb_pf9sZ7LEpEchvDznIbQig0hWBeidpwFkOqSKCwQylisarN6T0ecAeMvantizBUzM2PA1",
+  "@content.downloadUrl":"https://public-sn3302.files.1drv.com/y2pcT7OaUEExF7EHOlpTjCE55mIUoiX7H3sx1ff6I-nP35XUTBqZlnkh9FJhWb_pf9sZ7LEpEchvDznIbQig0hWBeidpwFkOqSKCwQylisarN6T0ecAeMvantizBUzM2PA1",
   "createdDateTime": "2016-09-16T03:37:04.72Z",
   "cTag": "aYzpENDY0OEYwNkM5MUQ5RDNEITU0OTI3LjI1Ng",
   "eTag": "aRDQ2NDhGMDZDOTFEOUQzRCE1NDkyNy4w",
@@ -77,7 +89,7 @@ Microsoft Graph では、ファイルを操作するための 2 種類のリソ�
 
 [DriveItem](driveitem.md) は、ドライブのファイル システム内のオブジェクトです。`/items/{item-id}` 構文で **id** を使用して、または `/root:/path/to/item/` 構文でファイル システム パスを使用して、それらにアクセスできます。
 
-DriveItem には、アイテムの id および機能に関するデータを提供する_ファセット_が存在します。
+DriveItem には、アイテムの ID と機能に関するデータを提供する_ファセット_が存在します。
 
 **folder** ファセットを持つ DriveItem は、アイテムのコンテナーとして機能し、フォルダーの下のアイテムのコレクションを指す**子**参照を持ちます。
 
@@ -89,8 +101,8 @@ OneDrive 個人ユーザーは、別のドライブから自分の OneDrive に 
 
 ## <a name="sharing-and-permissions"></a>共有とアクセス許可
 
-OneDrive と SharePoint のドキュメント ライブラリの最も一般的な操作の 1 つは、他のユーザーとコンテンツを共有することです。Microsoft Graph を使用することによって、アプリで[共有リンク](../api/item_createLink.md)を作成し、[アクセス許可を追加してドライブ内のアイテムに招待状を送信](../api/item_invite.md)することができます。
+OneDrive と SharePoint のドキュメント ライブラリの最も一般的な操作の 1 つは、他のユーザーとコンテンツを共有することです。Microsoft Graph を使用することによって、アプリで[共有リンク](../api/driveitem-createlink.md)を作成し、[アクセス許可を追加してドライブ内のアイテムに招待状を送信](../api/driveitem-invite.md)することができます。
 
-Microsoft Graph では、アプリで共有リンクから[共有コンテンツに直接アクセス](../api/shares_get.md)することもできます。
+Microsoft Graph では、アプリで共有リンクから[共有コンテンツに直接アクセス](../api/shares-get.md)することもできます。
 
  

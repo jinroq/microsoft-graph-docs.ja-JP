@@ -1,16 +1,27 @@
+---
+title: servicePlanInfo リソースの種類
+description: 購読している SKU に関連付けられているサービス プランに関する情報が含まれています。subscribedSku エンティティの **servicePlans** プロパティは、**servicePlanInfo** のコレクションです。
+ms.openlocfilehash: 86246de74caef6bf0c778f5b6b38e185841394b1
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27071871"
+---
 # <a name="serviceplaninfo-resource-type"></a>servicePlanInfo リソースの種類
+
+> **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。
 
 購読している SKU に関連付けられているサービス プランに関する情報が含まれています。[subscribedSku](subscribedsku.md) エンティティの **servicePlans** プロパティは、**servicePlanInfo** のコレクションです。
 
 
 ## <a name="properties"></a>プロパティ
-| プロパティ       | 型    |説明|
+| プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
 |servicePlanId|Guid|サービス プランの一意識別子。|
 |servicePlanName|String|サービス プランの名前。|
-|provisioningStatus|String|サービス プランのプロビジョニング状況。|
-|appliesTo|String||
-
+|provisioningStatus|String|サービス プランのプロビジョニング状況。可能な値:<br/>Success - サービスは完全にプロビジョニングされます。<br/>Disabled - サービスは無効になっています。<br/>PendingInput - サービスはまだプロビジョニングされていません。サービスの確認を待っています。<br/>"PendingActivation"のサービスは、プロビジョニングでは、(たとえば、Intune_O365 ・ サービス ・ プラン) を管理者が明示的な有効化が必要です。<br/>PendingProvisioning - Microsoft では製品の SKU に新しいサービスを追加していますが、テナント側でまだアクティブ化されていません。|
+|appliesTo|String|サービス プランを割り当てることができるオブジェクト。可能な値:<br/>User - サービス プランを個別のユーザーに割り当てることができます。<br/>Company - サービス プランをテナント全体に割り当てることができます。|
 
 ## <a name="json-representation"></a>JSON 表記
 

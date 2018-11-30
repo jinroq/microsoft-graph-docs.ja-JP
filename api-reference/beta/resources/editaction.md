@@ -1,0 +1,50 @@
+---
+author: daspek
+ms.author: dspektor
+ms.date: 09/14/2017
+title: EditAction
+ms.openlocfilehash: 5ff2580f21f09a88b4747114e6070a5c7b523728
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27073494"
+---
+# <a name="editaction-resource-type"></a>EditAction リソースの種類
+
+> **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。
+
+[**itemActivity**][activity] に **EditAction** リソースがある場合、アクティビティがアイテムを編集したことを示します。
+
+**注**:現在、このリソースは空ですが、将来のリビジョンでは、このリソースに追加のプロパティが設定される可能性があります。
+
+[activity]: itemactivity.md
+
+## <a name="json-representation"></a>JSON 表記
+
+<!-- {
+  "blockType": "resource",
+  "optionalProperties": [ ],
+  "@type": "microsoft.graph.editAction"
+}-->
+
+```json
+{
+}
+```
+
+## <a name="properties"></a>プロパティ
+
+なし。 このファセットは null 値または null 以外の値になり、プロパティは含まれていません。
+
+## <a name="remarks"></a>備考
+
+アイテムのアクティビティの記録は、現在、SharePoint と OneDrive for Business でのみ使用できます。
+
+<!-- {
+  "type": "#page.annotation",
+  "description": "The EditAction object provides information about an activity that edited an item.",
+  "keywords": "activities,activity,action,edit,modify",
+  "section": "documentation",
+  "tocPath": "Resources/EditAction"
+} -->
