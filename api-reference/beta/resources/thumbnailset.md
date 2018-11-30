@@ -1,4 +1,18 @@
+---
+author: rgregg
+ms.author: rgregg
+ms.date: 09/10/2017
+title: ThumbnailSet
+ms.openlocfilehash: d88e19242ea6c271e206a4c1a582fdbbfac8877b
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27067702"
+---
 # <a name="thumbnailset-resource-type"></a>ThumbnailSet リソースの種類
+
+> **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。
 
 **ThumbnailSet** リソースは、[サムネイル](thumbnail.md) リソースのキー付きコレクションです。DriveItem に関連付けられているサムネイルのセットを表すために使用されます。
 
@@ -17,10 +31,10 @@
 ```json
 {
   "id": "string (identifier)",
-  "large": {"@odata.type": "microsoft.graph.thumbnail"},
-  "medium": {"@odata.type": "microsoft.graph.thumbnail"},
-  "small": {"@odata.type": "microsoft.graph.thumbnail"},
-  "source": {"@odata.type": "microsoft.graph.thumbnail"}
+  "large": { "@odata.type": "microsoft.graph.thumbnail" },
+  "medium": { "@odata.type": "microsoft.graph.thumbnail" },
+  "small": { "@odata.type": "microsoft.graph.thumbnail" },
+  "source": { "@odata.type": "microsoft.graph.thumbnail" }
 }
 ```
 
@@ -34,13 +48,11 @@
 | small    | [Thumbnail](thumbnail.md) | 48 x 48 にトリミングされたサムネイル。                                                        |
 | source   | [Thumbnail](thumbnail.md) | カスタムのサムネイル イメージ、または他のサムネイルを生成するために使用する元のイメージ。 |
 
-
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "thumbnailSet resource",
-  "keywords": "",
+  "description": "ThumbnailSet enables access to thumbnails of different sizes",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "Resources/ThumbnailSet"
+} -->

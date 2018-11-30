@@ -1,4 +1,16 @@
+---
+title: ChartAxisTitleFormat リソースの種類
+description: グラフ軸のタイトルの書式設定を表します。
+ms.openlocfilehash: 70a1dd344355c82d3a8afe9daf2a2e713cce14ae
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27070908"
+---
 # <a name="chartaxistitleformat-resource-type"></a>ChartAxisTitleFormat リソースの種類
+
+> **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。
 
 グラフ軸のタイトルの書式設定を表します。
 
@@ -10,7 +22,7 @@
 なし
 
 ## <a name="relationships"></a>関係
-| リレーションシップ | 型    |説明|
+| リレーションシップ | 型   |説明|
 |:---------------|:--------|:----------|
 |font|[ChartFont](chartfont.md)|グラフの軸タイトルのオブジェクトのフォント属性 (フォント名、フォント サイズ、色など) を表します。値の取得のみ可能です。|
 

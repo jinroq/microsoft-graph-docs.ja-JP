@@ -1,11 +1,21 @@
-# plannerOrderHintsByAssignee リソースの種類
-<a id="plannerorderhintsbyassignee-resource-type" class="xliff"></a>
+---
+title: plannerOrderHintsByAssignee リソースの種類
+description: '**PlannerOrderHintsByAssignee**は、タスクの掲示板のビューに割り当てられているタスクの順序を示すために、plannerTask のリソースの割り当て先の命令のヒントを含むリソースです。'
+ms.openlocfilehash: a15a1f81b348958e5c38189db10743b83d72050f
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27068202"
+---
+# <a name="plannerorderhintsbyassignee-resource-type"></a>plannerOrderHintsByAssignee リソースの種類
 
-**plannerOrderHintsByAssignee** には、タスク ボードの [割り当て先ユーザー/グループ] ビューのタスクの順序を示す、[plannerTask](plannerTask.md) リソースの担当者の[順序に関するヒント](planner_order_hint_format.md)が含まれます。この型はオープン型です。プロパティは、タスクに割り当てられているユーザーの ID で、値は順序のヒントです。
+> **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。
 
-## プロパティ
-<a id="properties" class="xliff"></a>
-クライアントは、オープン型のプロパティを定義できます。この場合、クライアントは、タスクに割り当てられているユーザーの ID をプロパティ名として指定し、有効な[順序のヒント](planner_order_hint_format.md)を値として指定する必要があります。プロパティは、この型から削除できません。サービスは、含まれている [plannerTask](plannerTask.md) の割り当てが更新されると、値を自動的に削除します
+**plannerOrderHintsByAssignee** には、タスク ボードの [割り当て先ユーザー/グループ] ビューのタスクの順序を示す、[plannerTask](plannertask.md) リソースの担当者の[順序に関するヒント](planner-order-hint-format.md)が含まれます。この型はオープン型です。プロパティは、タスクに割り当てられているユーザーの ID で、値は順序のヒントです。
+
+## <a name="properties"></a>プロパティ
+クライアントは、オープン型のプロパティを定義できます。この場合、クライアントは、タスクに割り当てられているユーザーの ID をプロパティ名として指定し、有効な[順序のヒント](planner-order-hint-format.md)を値として指定する必要があります。プロパティは、この型から削除できません。サービスは、含まれている [plannerTask](plannertask.md) の割り当てが更新されると、値を自動的に削除します
 
 例:
 

@@ -1,0 +1,72 @@
+---
+author: chackman
+ms.author: chackman
+title: 後にリストのアイテム
+ms.openlocfilehash: dfaa727d25b3713d1be2a8d49f87dab8dba3b553
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27071384"
+---
+# <a name="list-followed-items"></a>後にリストのアイテム
+
+> **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。
+
+サインインしているユーザーが行っている[項目](../resources/driveitem.md)を一覧表示します。
+このコレクションには、アイテムを他のドライブへのアクセスがあるだけでなく、ユーザーのドライブにある項目が含まれています。
+
+## <a name="permissions"></a>アクセス許可
+
+この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
+
+|アクセス許可の種類      | アクセス許可 (特権の小さいものから大きいものへ)              |
+|:--------------------|:---------------------------------------------------------|
+|委任 (職場または学校のアカウント) | Files.Read、Files.ReadWrite、Files.Read.All、Files.ReadWrite.All、Sites.Read.All、Sites.ReadWrite.All    |
+|委任 (個人用 Microsoft アカウント) | サポートされていません。    |
+|アプリケーション | Files.Read.All、Files.ReadWrite.All、Sites.Read.All、Sites.ReadWrite.All |
+
+## <a name="http-request"></a>HTTP 要求
+
+<!-- { "blockType": "request", "name": "get-followed-items", "scopes": "files.read" } -->
+
+```http
+GET /me/drive/following
+```
+
+## <a name="response"></a>応答
+
+このメソッドでは、ドライブの所有者は、次の項目の[driveItem](../resources/driveitem.md)リソースのコレクションを返します。
+アイテムが見つからなかった場合、空のコレクションが返されます。
+
+<!-- { "blockType": "response", "@odata.type": "Collection(microsoft.graph.driveItem)", "truncated": true } -->
+
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+  "value": [
+    {
+      "id": "1312abc!1231",
+      "name": "March Proposal.docx",
+      "size": 19121,
+      "lastModifiedDateTime": "2017-12-12T10:40:59Z"
+    },
+    {
+      "id": "1312def!9943",
+      "name": "Vacation.jpg",
+      "size": 37810,
+      "lastModifiedDateTime": "2016-10-18T10:40:59Z"
+    }
+  ]
+}
+```
+
+<!-- {
+  "type": "#page.annotation",
+  "description": "List the items a user is following.",
+  "keywords": "drive,onedrive.drive,list followed items",
+  "section": "documentation",
+  "tocPath": "Drives/List followed items"
+} -->

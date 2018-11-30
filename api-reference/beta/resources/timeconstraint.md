@@ -1,4 +1,16 @@
+---
+title: timeConstraint リソースの種類
+description: 指定したアクティビティの性質と空き時間帯に従って、会議の日時の候補を、特定の時間と曜日に限定します。
+ms.openlocfilehash: 092133d34e12fe5c06bfd8a76e8a33afb33892f3
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27067700"
+---
 # <a name="timeconstraint-resource-type"></a>timeConstraint リソースの種類
+
+> **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。
 
 指定したアクティビティの性質と空き時間帯に従って、会議の日時の候補を、特定の時間と曜日に限定します。
 
@@ -22,7 +34,7 @@
 
 ```
 ## <a name="properties"></a>プロパティ
-| プロパティ       | 型    |説明|
+| プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
 |activityDomain|String|アクティビティの性質です (省略可能)。使用可能な値: `work`、`personal`、`unrestricted`、`unknown`。|
 |timeslots|[timeSlot](timeslot.md) コレクション|期間の配列。|
