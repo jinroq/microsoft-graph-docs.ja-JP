@@ -1,4 +1,16 @@
+---
+title: ChartAxisTitle リソースの種類
+description: グラフ軸のタイトルを表します。
+ms.openlocfilehash: 83d3712367b3c56b2fe30e7e1e464491b77fbee5
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27071674"
+---
 # <a name="chartaxistitle-resource-type"></a>ChartAxisTitle リソースの種類
+
+> **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。
 
 グラフ軸のタイトルを表します。
 
@@ -7,17 +19,17 @@
 
 | メソッド           | 戻り値の型    |説明|
 |:---------------|:--------|:----------|
-|[Get ChartAxisTitle](../api/chartaxistitle_get.md) | [ChartAxisTitle](chartaxistitle.md) |chartAxisTitle オブジェクトのプロパティと関係を読み取ります。|
-|[Update](../api/chartaxistitle_update.md) | [ChartAxisTitle](chartaxistitle.md)    |ChartAxisTitle オブジェクトを更新します。 |
+|[Get ChartAxisTitle](../api/chartaxistitle-get.md) | [ChartAxisTitle](chartaxistitle.md) |chartAxisTitle オブジェクトのプロパティと関係を読み取ります。|
+|[Update](../api/chartaxistitle-update.md) | [ChartAxisTitle](chartaxistitle.md)    |ChartAxisTitle オブジェクトを更新します。 |
 
 ## <a name="properties"></a>プロパティ
-| プロパティ       | 型    |説明|
+| プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
-|text|string|軸タイトルを表します。|
-|visible|boolean|軸のタイトルの表示/非表示を指定するブール型の値です。|
+|text|文字列|軸タイトルを表します。|
+|visible|ブール値|軸のタイトルの表示/非表示を指定するブール型の値です。|
 
 ## <a name="relationships"></a>関係
-| リレーションシップ | 型    |説明|
+| リレーションシップ | 型   |説明|
 |:---------------|:--------|:----------|
 |format|[ChartAxisTitleFormat](chartaxistitleformat.md)|グラフ軸のタイトルの書式設定を表します。値の取得のみ可能です。|
 

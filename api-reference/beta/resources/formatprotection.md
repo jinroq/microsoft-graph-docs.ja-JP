@@ -1,4 +1,16 @@
+---
+title: FormatProtection リソースの種類
+description: 範囲オブジェクトの書式保護を表します。
+ms.openlocfilehash: 5f2a4968b018a952b24bb18a75a4f6d5aff55b00
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27071077"
+---
 # <a name="formatprotection-resource-type"></a>FormatProtection リソースの種類
+
+> **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。
 
 範囲オブジェクトの書式保護を表します。
 
@@ -7,14 +19,14 @@
 
 | メソッド           | 戻り値の型    |説明|
 |:---------------|:--------|:----------|
-|[FormatProtection を取得する](../api/formatprotection_get.md) | [FormatProtection](formatprotection.md) |formatProtection オブジェクトのプロパティと関係を読み取ります。|
-|[Update](../api/formatprotection_update.md) | [FormatProtection](formatprotection.md)    |FormatProtection オブジェクトを更新します。 |
+|[FormatProtection を取得する](../api/formatprotection-get.md) | [FormatProtection](formatprotection.md) |formatProtection オブジェクトのプロパティと関係を読み取ります。|
+|[Update](../api/formatprotection-update.md) | [FormatProtection](formatprotection.md)  |FormatProtection オブジェクトを更新します。 |
 
 ## <a name="properties"></a>プロパティ
-| プロパティ       | 型    |説明|
+| プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
-|formulaHidden|boolean|Excel が範囲内のセルの数式を非表示にするかどうかを示します。null 値は、範囲全体に一様な数式非表示設定がないことを表します。|
-|locked|boolean|Excel がオブジェクト内のセルをロックするかどうかを示します。null 値は、範囲全体に一様なロック設定がないことを表します。|
+|formulaHidden|ブール値|Excel が範囲内のセルの数式を非表示にするかどうかを示します。null 値は、範囲全体に一様な数式非表示設定がないことを表します。|
+|locked|ブール値|Excel がオブジェクト内のセルをロックするかどうかを示します。null 値は、範囲全体に一様なロック設定がないことを表します。|
 
 ## <a name="relationships"></a>リレーションシップ
 なし
