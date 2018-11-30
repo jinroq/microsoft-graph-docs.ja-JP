@@ -1,46 +1,57 @@
-# <a name="rangeformat-resource-type"></a>RangeFormat リソースの種類
+---
+title: RangeFormat リソースの種類
+description: 範囲のフォント、塗りつぶし、境界線、配置などのプロパティをカプセル化する、書式設定オブジェクトです。
+ms.openlocfilehash: 8451b1f24f7c0df3842ed390a2a182746a0a7b20
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27021274"
+---
+# <a name="rangeformat-resource-type"></a><span data-ttu-id="de3b2-103">RangeFormat リソースの種類</span><span class="sxs-lookup"><span data-stu-id="de3b2-103">RangeFormat resource type</span></span>
 
-範囲のフォント、塗りつぶし、境界線、配置などのプロパティをカプセル化する、書式設定オブジェクトです。
+<span data-ttu-id="de3b2-104">範囲のフォント、塗りつぶし、境界線、配置などのプロパティをカプセル化する、書式設定オブジェクトです。</span><span class="sxs-lookup"><span data-stu-id="de3b2-104">A format object encapsulating the range's font, fill, borders, alignment, and other properties.</span></span>
 
 
-## <a name="methods"></a>メソッド
+## <a name="methods"></a><span data-ttu-id="de3b2-105">メソッド</span><span class="sxs-lookup"><span data-stu-id="de3b2-105">Methods</span></span>
 
-| メソッド           | 戻り値の型    |説明|
+| <span data-ttu-id="de3b2-106">メソッド</span><span class="sxs-lookup"><span data-stu-id="de3b2-106">Method</span></span>           | <span data-ttu-id="de3b2-107">戻り値の型</span><span class="sxs-lookup"><span data-stu-id="de3b2-107">Return Type</span></span>    |<span data-ttu-id="de3b2-108">説明</span><span class="sxs-lookup"><span data-stu-id="de3b2-108">Description</span></span>|
 |:---------------|:--------|:----------|
-|[RangeFormat を取得する](../api/rangeformat_get.md) | [RangeFormat](rangeformat.md) |rangeFormat オブジェクトのプロパティと関係を読み取ります。|
-|[RangeBorder を作成する](../api/rangeformat_post_borders.md) |[RangeBorder](rangeborder.md)| 境界線コレクションに投稿して、新しい RangeBorder を作成します。|
-|[境界線を一覧表示する](../api/rangeformat_list_borders.md) |[RangeBorder](rangeborder.md) コレクション| RangeBorder オブジェクトのコレクションを取得します。|
-|[Update](../api/rangeformat_update.md) | [RangeFormat](rangeformat.md)    |RangeFormat オブジェクトを更新します。 |
-|[Autofitcolumns](../api/rangeformat_autofitcolumns.md)|なし|現在の列のデータに基づいて、現在の範囲の列の幅を最適な幅に変更します。|
-|[Autofitrows](../api/rangeformat_autofitrows.md)|なし|現在の行のデータに基づいて、現在の範囲の行の高さを最適な高さに変更します。|
+|[<span data-ttu-id="de3b2-109">RangeFormat を取得する</span><span class="sxs-lookup"><span data-stu-id="de3b2-109">Get RangeFormat</span></span>](../api/rangeformat-get.md) | [<span data-ttu-id="de3b2-110">WorkbookRangeFormat</span><span class="sxs-lookup"><span data-stu-id="de3b2-110">WorkbookRangeFormat</span></span>](rangeformat.md) |<span data-ttu-id="de3b2-111">rangeFormat オブジェクトのプロパティと関係を読み取ります。</span><span class="sxs-lookup"><span data-stu-id="de3b2-111">Read properties and relationships of rangeFormat object.</span></span>|
+|[<span data-ttu-id="de3b2-112">RangeBorder を作成する</span><span class="sxs-lookup"><span data-stu-id="de3b2-112">Create RangeBorder</span></span>](../api/rangeformat-post-borders.md) |[<span data-ttu-id="de3b2-113">WorkbookRangeBorder</span><span class="sxs-lookup"><span data-stu-id="de3b2-113">WorkbookRangeBorder</span></span>](rangeborder.md)| <span data-ttu-id="de3b2-114">境界線コレクションに投稿して、新しい RangeBorder を作成します。</span><span class="sxs-lookup"><span data-stu-id="de3b2-114">Create a new RangeBorder by posting to the borders collection.</span></span>|
+|[<span data-ttu-id="de3b2-115">境界線を一覧表示する</span><span class="sxs-lookup"><span data-stu-id="de3b2-115">List borders</span></span>](../api/rangeformat-list-borders.md) |<span data-ttu-id="de3b2-116">[WorkbookRangeBorder](rangeborder.md)コレクション</span><span class="sxs-lookup"><span data-stu-id="de3b2-116">[WorkbookRangeBorder](rangeborder.md) collection</span></span>| <span data-ttu-id="de3b2-117">RangeBorder オブジェクトのコレクションを取得します。</span><span class="sxs-lookup"><span data-stu-id="de3b2-117">Get a RangeBorder object collection.</span></span>|
+|[<span data-ttu-id="de3b2-118">Update</span><span class="sxs-lookup"><span data-stu-id="de3b2-118">Update</span></span>](../api/rangeformat-update.md) | [<span data-ttu-id="de3b2-119">WorkbookRangeFormat</span><span class="sxs-lookup"><span data-stu-id="de3b2-119">WorkbookRangeFormat</span></span>](rangeformat.md) |<span data-ttu-id="de3b2-120">RangeFormat オブジェクトを更新します。</span><span class="sxs-lookup"><span data-stu-id="de3b2-120">Update RangeFormat object.</span></span> |
+|[<span data-ttu-id="de3b2-121">Autofitcolumns</span><span class="sxs-lookup"><span data-stu-id="de3b2-121">Autofitcolumns</span></span>](../api/rangeformat-autofitcolumns.md)|<span data-ttu-id="de3b2-122">なし</span><span class="sxs-lookup"><span data-stu-id="de3b2-122">None</span></span>|<span data-ttu-id="de3b2-123">現在の列のデータに基づいて、現在の範囲の列の幅を最適な幅に変更します。</span><span class="sxs-lookup"><span data-stu-id="de3b2-123">Changes the width of the columns of the current range to achieve the best fit, based on the current data in the columns.</span></span>|
+|[<span data-ttu-id="de3b2-124">Autofitrows</span><span class="sxs-lookup"><span data-stu-id="de3b2-124">Autofitrows</span></span>](../api/rangeformat-autofitrows.md)|<span data-ttu-id="de3b2-125">なし</span><span class="sxs-lookup"><span data-stu-id="de3b2-125">None</span></span>|<span data-ttu-id="de3b2-126">現在の行のデータに基づいて、現在の範囲の行の高さを最適な高さに変更します。</span><span class="sxs-lookup"><span data-stu-id="de3b2-126">Changes the height of the rows of the current range to achieve the best fit, based on the current data in the columns.</span></span>|
 
-## <a name="properties"></a>プロパティ
-| プロパティ       | 型    |説明|
+## <a name="properties"></a><span data-ttu-id="de3b2-127">プロパティ</span><span class="sxs-lookup"><span data-stu-id="de3b2-127">Properties</span></span>
+| <span data-ttu-id="de3b2-128">プロパティ</span><span class="sxs-lookup"><span data-stu-id="de3b2-128">Property</span></span>     | <span data-ttu-id="de3b2-129">型</span><span class="sxs-lookup"><span data-stu-id="de3b2-129">Type</span></span>   |<span data-ttu-id="de3b2-130">説明</span><span class="sxs-lookup"><span data-stu-id="de3b2-130">Description</span></span>|
 |:---------------|:--------|:----------|
-|columnWidth|double|範囲内のすべての列の幅を取得または設定します。列の幅が均一でない場合は、null が返されます。|
-|horizontalAlignment|string|指定したオブジェクトの水平方向の配置を表します。可能な値は、`General`、`Left`、`Center`、`Right`、`Fill`、`Justify`、`CenterAcrossSelection`、`Distributed` です。|
-|rowHeight|double|範囲内のすべての行の高さを取得または設定します。行の高さが均一でない場合は、null が返されます。|
-|verticalAlignment|string|指定したオブジェクトの垂直方向の配置を表します。可能な値は、`Top`、`Center`、`Bottom`、`Justify`、`Distributed` です。|
-|wrapText|boolean|オブジェクト内のテキストを Excel でラップするかどうかを表します。null 値は、範囲全体に一様なラップ設定がないことを表します。|
+|<span data-ttu-id="de3b2-131">columnWidth</span><span class="sxs-lookup"><span data-stu-id="de3b2-131">columnWidth</span></span>|<span data-ttu-id="de3b2-132">double</span><span class="sxs-lookup"><span data-stu-id="de3b2-132">double</span></span>|<span data-ttu-id="de3b2-p101">範囲内のすべての列の幅を取得または設定します。列の幅が均一でない場合は、null が返されます。</span><span class="sxs-lookup"><span data-stu-id="de3b2-p101">Gets or sets the width of all colums within the range. If the column widths are not uniform, null will be returned.</span></span>|
+|<span data-ttu-id="de3b2-135">horizontalAlignment</span><span class="sxs-lookup"><span data-stu-id="de3b2-135">horizontalAlignment</span></span>|<span data-ttu-id="de3b2-136">文字列</span><span class="sxs-lookup"><span data-stu-id="de3b2-136">string</span></span>|<span data-ttu-id="de3b2-137">指定したオブジェクトの水平方向の配置を表します。</span><span class="sxs-lookup"><span data-stu-id="de3b2-137">Represents the horizontal alignment for the specified object.</span></span> <span data-ttu-id="de3b2-138">可能な値: `General`、 `Left`、 `Center`、 `Right`、 `Fill`、 `Justify`、 `CenterAcrossSelection`、 `Distributed`。</span><span class="sxs-lookup"><span data-stu-id="de3b2-138">The possible values are: `General`, `Left`, `Center`, `Right`, `Fill`, `Justify`, `CenterAcrossSelection`, `Distributed`.</span></span>|
+|<span data-ttu-id="de3b2-139">rowHeight</span><span class="sxs-lookup"><span data-stu-id="de3b2-139">rowHeight</span></span>|<span data-ttu-id="de3b2-140">double</span><span class="sxs-lookup"><span data-stu-id="de3b2-140">double</span></span>|<span data-ttu-id="de3b2-p103">範囲内のすべての行の高さを取得または設定します。行の高さが均一でない場合は、null が返されます。</span><span class="sxs-lookup"><span data-stu-id="de3b2-p103">Gets or sets the height of all rows in the range. If the row heights are not uniform null will be returned.</span></span>|
+|<span data-ttu-id="de3b2-143">verticalAlignment</span><span class="sxs-lookup"><span data-stu-id="de3b2-143">verticalAlignment</span></span>|<span data-ttu-id="de3b2-144">文字列</span><span class="sxs-lookup"><span data-stu-id="de3b2-144">string</span></span>|<span data-ttu-id="de3b2-145">指定したオブジェクトの垂直方向の配置を表します。</span><span class="sxs-lookup"><span data-stu-id="de3b2-145">Represents the vertical alignment for the specified object.</span></span> <span data-ttu-id="de3b2-146">可能な値: `Top`、 `Center`、 `Bottom`、 `Justify`、 `Distributed`。</span><span class="sxs-lookup"><span data-stu-id="de3b2-146">The possible values are: `Top`, `Center`, `Bottom`, `Justify`, `Distributed`.</span></span>|
+|<span data-ttu-id="de3b2-147">wrapText</span><span class="sxs-lookup"><span data-stu-id="de3b2-147">wrapText</span></span>|<span data-ttu-id="de3b2-148">ブール値</span><span class="sxs-lookup"><span data-stu-id="de3b2-148">boolean</span></span>|<span data-ttu-id="de3b2-p105">オブジェクト内のテキストを Excel でラップするかどうかを表します。null 値は、範囲全体に一様なラップ設定がないことを表します。</span><span class="sxs-lookup"><span data-stu-id="de3b2-p105">Indicates if Excel wraps the text in the object. A null value indicates that the entire range doesn't have uniform wrap setting</span></span>|
 
-## <a name="relationships"></a>リレーションシップ
-| リレーションシップ | 型    |説明|
+## <a name="relationships"></a><span data-ttu-id="de3b2-151">リレーションシップ</span><span class="sxs-lookup"><span data-stu-id="de3b2-151">Relationships</span></span>
+| <span data-ttu-id="de3b2-152">リレーションシップ</span><span class="sxs-lookup"><span data-stu-id="de3b2-152">Relationship</span></span> | <span data-ttu-id="de3b2-153">型</span><span class="sxs-lookup"><span data-stu-id="de3b2-153">Type</span></span>   |<span data-ttu-id="de3b2-154">説明</span><span class="sxs-lookup"><span data-stu-id="de3b2-154">Description</span></span>|
 |:---------------|:--------|:----------|
-|borders|[RangeBorder](rangeborder.md) コレクション|選択した範囲全体に適用する境界線オブジェクトのコレクションです。読み取り専用です。|
-|fill|[RangeFill](rangefill.md)|範囲全体に定義された塗りつぶしオブジェクトを返します。読み取り専用です。|
-|font|[RangeFont](rangefont.md)|選択した範囲全体に定義されているフォント オブジェクトを返します。読み取り専用です。|
-|protection|[FormatProtection](formatprotection.md)|範囲に対する書式保護オブジェクトを返します。読み取り専用です。|
+|<span data-ttu-id="de3b2-155">borders</span><span class="sxs-lookup"><span data-stu-id="de3b2-155">borders</span></span>|<span data-ttu-id="de3b2-156">[WorkbookRangeBorder](rangeborder.md)コレクション</span><span class="sxs-lookup"><span data-stu-id="de3b2-156">[WorkbookRangeBorder](rangeborder.md) collection</span></span>|<span data-ttu-id="de3b2-157">選択した範囲全体に適用する境界線オブジェクトのコレクションです。読み取り専用です。</span><span class="sxs-lookup"><span data-stu-id="de3b2-157">Collection of border objects that apply to the overall range selected Read-only.</span></span>|
+|<span data-ttu-id="de3b2-158">fill</span><span class="sxs-lookup"><span data-stu-id="de3b2-158">fill</span></span>|[<span data-ttu-id="de3b2-159">WorkbookRangeFill</span><span class="sxs-lookup"><span data-stu-id="de3b2-159">WorkbookRangeFill</span></span>](rangefill.md)|<span data-ttu-id="de3b2-p106">範囲全体に定義された塗りつぶしオブジェクトを返します。読み取り専用です。</span><span class="sxs-lookup"><span data-stu-id="de3b2-p106">Returns the fill object defined on the overall range. Read-only.</span></span>|
+|<span data-ttu-id="de3b2-162">font</span><span class="sxs-lookup"><span data-stu-id="de3b2-162">font</span></span>|[<span data-ttu-id="de3b2-163">WorkbookRangeFont</span><span class="sxs-lookup"><span data-stu-id="de3b2-163">WorkbookRangeFont</span></span>](rangefont.md)|<span data-ttu-id="de3b2-164">選択した範囲全体に定義されているフォント オブジェクトを返します。読み取り専用です。</span><span class="sxs-lookup"><span data-stu-id="de3b2-164">Returns the font object defined on the overall range selected Read-only.</span></span>|
+|<span data-ttu-id="de3b2-165">protection</span><span class="sxs-lookup"><span data-stu-id="de3b2-165">protection</span></span>|[<span data-ttu-id="de3b2-166">WorkbookFormatProtection</span><span class="sxs-lookup"><span data-stu-id="de3b2-166">WorkbookFormatProtection</span></span>](formatprotection.md)|<span data-ttu-id="de3b2-p107">範囲に対する書式保護オブジェクトを返します。読み取り専用です。</span><span class="sxs-lookup"><span data-stu-id="de3b2-p107">Returns the format protection object for a range. Read-only.</span></span>|
 
-## <a name="json-representation"></a>JSON 表記
+## <a name="json-representation"></a><span data-ttu-id="de3b2-169">JSON 表記</span><span class="sxs-lookup"><span data-stu-id="de3b2-169">JSON representation</span></span>
 
-以下は、リソースの JSON 表記です。
+<span data-ttu-id="de3b2-170">以下は、リソースの JSON 表記です。</span><span class="sxs-lookup"><span data-stu-id="de3b2-170">Here is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
+  "baseType": "microsoft.graph.entity",
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.rangeFormat"
+  "@odata.type": "microsoft.graph.workbookRangeFormat"
 }-->
 
 ```json

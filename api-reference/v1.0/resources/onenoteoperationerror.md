@@ -1,10 +1,20 @@
-# <a name="onenoteoperationerror-resource-type"></a>onenoteOperationError リソースの種類
+---
+title: onenoteOperationError リソースの種類
+description: 失敗した OneNote 操作によるエラー。
+ms.openlocfilehash: 3e09bd4b4ec0a8fc36113c278ebe7cab25392ecf
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27020598"
+---
+# <a name="onenoteoperationerror-resource-type"></a><span data-ttu-id="9990a-103">onenoteOperationError リソースの種類</span><span class="sxs-lookup"><span data-stu-id="9990a-103">onenoteOperationError resource type</span></span>
 
-失敗した OneNote 操作によるエラー。
+<span data-ttu-id="9990a-104">失敗した OneNote 操作によるエラー。</span><span class="sxs-lookup"><span data-stu-id="9990a-104">An error from a failed OneNote operation.</span></span>
 
-## <a name="json-representation"></a>JSON 表記
+## <a name="json-representation"></a><span data-ttu-id="9990a-105">JSON 表記</span><span class="sxs-lookup"><span data-stu-id="9990a-105">JSON representation</span></span>
 
-以下は、リソースの JSON 表記です。
+<span data-ttu-id="9990a-106">以下は、リソースの JSON 表記です。</span><span class="sxs-lookup"><span data-stu-id="9990a-106">Here is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -21,11 +31,11 @@
 }
 
 ```
-## <a name="properties"></a>プロパティ
-| プロパティ       | 型    |説明|
+## <a name="properties"></a><span data-ttu-id="9990a-107">プロパティ</span><span class="sxs-lookup"><span data-stu-id="9990a-107">Properties</span></span>
+| <span data-ttu-id="9990a-108">プロパティ</span><span class="sxs-lookup"><span data-stu-id="9990a-108">Property</span></span>     | <span data-ttu-id="9990a-109">型</span><span class="sxs-lookup"><span data-stu-id="9990a-109">Type</span></span>   |<span data-ttu-id="9990a-110">説明</span><span class="sxs-lookup"><span data-stu-id="9990a-110">Description</span></span>|
 |:---------------|:--------|:----------|
-|code|string|エラー コード。|
-|message|string|エラー メッセージ。|
+|<span data-ttu-id="9990a-111">code</span><span class="sxs-lookup"><span data-stu-id="9990a-111">code</span></span>|<span data-ttu-id="9990a-112">文字列</span><span class="sxs-lookup"><span data-stu-id="9990a-112">string</span></span>|<span data-ttu-id="9990a-113">エラー コード。</span><span class="sxs-lookup"><span data-stu-id="9990a-113">The error code.</span></span>|
+|<span data-ttu-id="9990a-114">message</span><span class="sxs-lookup"><span data-stu-id="9990a-114">message</span></span>|<span data-ttu-id="9990a-115">文字列</span><span class="sxs-lookup"><span data-stu-id="9990a-115">string</span></span>|<span data-ttu-id="9990a-116">エラー メッセージ。</span><span class="sxs-lookup"><span data-stu-id="9990a-116">The error message.</span></span>|
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

@@ -1,10 +1,20 @@
-# <a name="sectionlinks-resource-type"></a>sectionLinks リソースの種類
+---
+title: sectionLinks リソースの種類
+description: OneNote セクションを開くためのリンクです。
+ms.openlocfilehash: 4ca6221992c75f410839538d8080c084c8486903
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27021265"
+---
+# <a name="sectionlinks-resource-type"></a><span data-ttu-id="5ffe9-103">sectionLinks リソースの種類</span><span class="sxs-lookup"><span data-stu-id="5ffe9-103">sectionLinks resource type</span></span>
 
-OneNote セクションを開くためのリンクです。
+<span data-ttu-id="5ffe9-104">OneNote セクションを開くためのリンクです。</span><span class="sxs-lookup"><span data-stu-id="5ffe9-104">Links for opening a OneNote section.</span></span>
 
-## <a name="json-representation"></a>JSON 表記
+## <a name="json-representation"></a><span data-ttu-id="5ffe9-105">JSON 表記</span><span class="sxs-lookup"><span data-stu-id="5ffe9-105">JSON representation</span></span>
 
-以下は、リソースの JSON 表記です。
+<span data-ttu-id="5ffe9-106">以下は、リソースの JSON 表記です。</span><span class="sxs-lookup"><span data-stu-id="5ffe9-106">Here is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -21,11 +31,11 @@ OneNote セクションを開くためのリンクです。
 }
 
 ```
-## <a name="properties"></a>プロパティ
-| プロパティ       | 型    |説明|
+## <a name="properties"></a><span data-ttu-id="5ffe9-107">プロパティ</span><span class="sxs-lookup"><span data-stu-id="5ffe9-107">Properties</span></span>
+| <span data-ttu-id="5ffe9-108">プロパティ</span><span class="sxs-lookup"><span data-stu-id="5ffe9-108">Property</span></span>     | <span data-ttu-id="5ffe9-109">型</span><span class="sxs-lookup"><span data-stu-id="5ffe9-109">Type</span></span>   |<span data-ttu-id="5ffe9-110">説明</span><span class="sxs-lookup"><span data-stu-id="5ffe9-110">Description</span></span>|
 |:---------------|:--------|:----------|
-|oneNoteClientUrl|[externalLink](externallink.md)|OneNote のネイティブ クライアントでセクションを開きます (インストールされている場合)。|
-|oneNoteWebUrl|[externalLink](externallink.md)|OneNote Online でセクションを開きます。|
+|<span data-ttu-id="5ffe9-111">oneNoteClientUrl</span><span class="sxs-lookup"><span data-stu-id="5ffe9-111">oneNoteClientUrl</span></span>|[<span data-ttu-id="5ffe9-112">externalLink</span><span class="sxs-lookup"><span data-stu-id="5ffe9-112">externalLink</span></span>](externallink.md)|<span data-ttu-id="5ffe9-113">OneNote のネイティブ クライアントでセクションを開きます (インストールされている場合)。</span><span class="sxs-lookup"><span data-stu-id="5ffe9-113">Opens the section in the OneNote native client if it's installed.</span></span>|
+|<span data-ttu-id="5ffe9-114">oneNoteWebUrl</span><span class="sxs-lookup"><span data-stu-id="5ffe9-114">oneNoteWebUrl</span></span>|[<span data-ttu-id="5ffe9-115">externalLink</span><span class="sxs-lookup"><span data-stu-id="5ffe9-115">externalLink</span></span>](externallink.md)|<span data-ttu-id="5ffe9-116">OneNote Online でセクションを開きます。</span><span class="sxs-lookup"><span data-stu-id="5ffe9-116">Opens the section in OneNote Online.</span></span>|
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
