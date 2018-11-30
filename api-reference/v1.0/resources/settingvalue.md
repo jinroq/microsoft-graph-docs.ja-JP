@@ -1,3 +1,13 @@
+---
+title: settingValue リソースの種類
+description: 名前と値の組で表される設定。
+ms.openlocfilehash: b47c5c746117390cfd59db71d832928e482403b9
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27024285"
+---
 # <a name="settingvalue-resource-type"></a>settingValue リソースの種類
 
 名前と値の組で表される設定。
@@ -6,7 +16,7 @@
 
 | プロパティ | 型 | 説明 |
 |:---------------|:--------|:----------|
-|name|文字列| 設定の名前 ([groupSettingTemplate](groupsettingtemplate.md) によって定義されている)。 |
+|名前|文字列| 設定の名前 ([groupSettingTemplate](groupsettingtemplate.md) によって定義されている)。 |
 |値|文字列| 設定の値です。 |
 
 ### <a name="json-representation"></a>JSON 表記

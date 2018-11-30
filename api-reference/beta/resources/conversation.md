@@ -1,34 +1,46 @@
+---
+title: 会話リソースの種類
+description: 会話はスレッドのコレクションです。スレッドにはそのスレッドへの投稿が含まれています。会話のすべてのスレッドと投稿は同じ件名を共有します。
+ms.openlocfilehash: 8a4a83fdc109eb047a22afbd3b15ad2d575f0795
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27066779"
+---
 # <a name="conversation-resource-type"></a>会話リソースの種類
 
+> **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。
+
 会話は[スレッド](conversationthread.md)のコレクションです。スレッドにはそのスレッドへの投稿が含まれています。会話のすべてのスレッドと投稿は同じ件名を共有します。
+
+このリソースは、[変更通知](/graph/webhooks)をサブスクライブするをサポートします。
 
 ## <a name="methods"></a>メソッド
 
 | メソッド       | 戻り値の型  |説明|
 |:---------------|:--------|:----------|
-|[会話を一覧表示する](../api/group_list_conversations.md) | [conversation](conversation.md) コレクション |このグループの会話の一覧を取得します。|
-|[Create](../api/group_post_conversations.md) |[conversation](conversation.md)| スレッドと投稿を含めて、新しい会話を作成します。|
-|[会話を取得する](../api/conversation_get.md) | [conversation](conversation.md) |会話オブジェクトのプロパティと関係を読み取ります。|
-|[Delete](../api/conversation_delete.md) | なし |会話オブジェクトを削除します。 |
-|[会話スレッドを一覧表示する](../api/conversation_list_threads.md) |[conversationThread](conversationthread.md) コレクション| グループの会話のすべてのスレッドを取得します。|
-|[会話スレッドを作成する](../api/conversation_post_threads.md) |[conversationThread](conversationthread.md) コレクション| 指定した会話にスレッドを作成します。|
-
+|[会話を一覧表示する](../api/group-list-conversations.md) | [conversation](conversation.md) コレクション |このグループの会話の一覧を取得します。|
+|[Create](../api/group-post-conversations.md) |[conversation](conversation.md)| スレッドと投稿を含めて、新しい会話を作成します。|
+|[会話を取得する](../api/conversation-get.md) | [conversation](conversation.md) |会話オブジェクトのプロパティと関係を読み取ります。|
+|[Delete](../api/conversation-delete.md) | なし |会話オブジェクトを削除します。 |
+|[会話スレッドを一覧表示する](../api/conversation-list-threads.md) |[conversationThread](conversationthread.md) コレクション| グループの会話のすべてのスレッドを取得します。|
+|[会話スレッドを作成する](../api/conversation-post-threads.md) |[conversationThread](conversationthread.md) コレクション| 指定した会話にスレッドを作成します。|
 
 ## <a name="properties"></a>プロパティ
-| プロパティ       | 型    |説明|
+| プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
-|hasAttachments|Boolean|この会話内のいずれかの投稿に添付ファイルが 1 つ以上あるかどうかを示します。|
+|hasAttachments|ブール値|この会話内のいずれかの投稿に添付ファイルが 1 つ以上あるかどうかを示します。|
 |id|String|会話の一意識別子。読み取り専用です。|
 |lastDeliveredDateTime|DateTimeOffset|Timestamp 型は、ISO 8601 形式を使用して日付と時刻の情報を表し、必ず UTC 時間です。たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、次のようになります。`'2014-01-01T00:00:00Z'`|
 |preview|String|この会話における最新投稿の本文からの短い概要。|
 |topic|String|会話のトピックです。会話の作成時にこのプロパティを設定できますが、更新することはできません。|
-|uniqueSenders|String collection|この会話にメッセージを送信したすべてのユーザーです。|
+|uniqueSenders|String コレクション|この会話にメッセージを送信したすべてのユーザーです。|
 
 ## <a name="relationships"></a>関係
-| リレーションシップ | 型    |説明|
+| リレーションシップ | 型   |説明|
 |:---------------|:--------|:----------|
 |スレッド|[conversationThread](conversationthread.md) コレクション|会話内のすべての会話スレッドのコレクションです。ナビゲーションのプロパティです。読み取り専用です。Null 許容型。|
-
 
 ## <a name="json-representation"></a>JSON 表記
 

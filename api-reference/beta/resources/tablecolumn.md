@@ -1,4 +1,16 @@
+---
+title: TableColumn リソースの種類
+description: テーブル内にある 1 つの列を表します。
+ms.openlocfilehash: 0195bde59ee2116b064b47b9659f682877efc16b
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27070019"
+---
 # <a name="tablecolumn-resource-type"></a>TableColumn リソースの種類
+
+> **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。
 
 テーブル内にある 1 つの列を表します。
 
@@ -7,28 +19,27 @@
 
 | メソッド           | 戻り値の型    |説明|
 |:---------------|:--------|:----------|
-|[TableColumn を取得する](../api/tablecolumn_get.md) | [TableColumn](tablecolumn.md) |tableColumn オブジェクトのプロパティと関係を読み取ります。|
-|[Update](../api/tablecolumn_update.md) | [TableColumn](tablecolumn.md)    |TableColumn オブジェクトを更新します。 |
-|[Databodyrange](../api/tablecolumn_databodyrange.md)|[Range](range.md)|列のデータ本体に関連付けられた範囲オブジェクトを取得します。|
-|[Headerrowrange](../api/tablecolumn_headerrowrange.md)|[Range](range.md)|列のヘッダー行に関連付けられた範囲オブジェクトを取得します。|
-|[Range](../api/tablecolumn_range.md)|[Range](range.md)|列全体に関連付けられた範囲オブジェクトを取得します。|
-|[Totalrowrange](../api/tablecolumn_totalrowrange.md)|[Range](range.md)|列の集計行に関連付けられた範囲オブジェクトを取得します。|
-|[Delete](../api/tablecolumn_delete.md)|なし|テーブルから列を削除します。|
-|[List](../api/tablecolumn_list.md) | [TableColumn](tablecolumn.md) コレクション |tableColumn オブジェクトのコレクションを取得します。 |
-|[Itemat](../api/tablecolumncollection_itemat.md)|[TableColumn](tablecolumn.md)|コレクション内の位置に基づいて列を取得します。|
-|[Add](../api/tablecolumncollection_add.md)|[TableColumn](tablecolumn.md)|テーブルに新しい列を追加します。|
-
+|[TableColumn を取得する](../api/tablecolumn-get.md) | [TableColumn](tablecolumn.md) |tableColumn オブジェクトのプロパティと関係を読み取ります。|
+|[Update](../api/tablecolumn-update.md) | [TableColumn](tablecolumn.md) |TableColumn オブジェクトを更新します。 |
+|[Databodyrange](../api/tablecolumn-databodyrange.md)|[Range](range.md)|列のデータ本体に関連付けられた範囲オブジェクトを取得します。|
+|[Headerrowrange](../api/tablecolumn-headerrowrange.md)|[Range](range.md)|列のヘッダー行に関連付けられた範囲オブジェクトを取得します。|
+|[Range](../api/tablecolumn-range.md)|[Range](range.md)|列全体に関連付けられた範囲オブジェクトを取得します。|
+|[Totalrowrange](../api/tablecolumn-totalrowrange.md)|[Range](range.md)|列の集計行に関連付けられた範囲オブジェクトを取得します。|
+|[Delete](../api/tablecolumn-delete.md)|なし|テーブルから列を削除します。|
+|[List](../api/tablecolumn-list.md) | [TableColumn](tablecolumn.md) コレクション |tableColumn オブジェクトのコレクションを取得します。 |
+|[Itemat](../api/tablecolumncollection-itemat.md)|[TableColumn](tablecolumn.md)|コレクション内の位置に基づいて列を取得します。|
+|[Add](../api/tablecolumncollection-add.md)|[TableColumn](tablecolumn.md)|テーブルに新しい列を追加します。|
 
 ## <a name="properties"></a>プロパティ
-| プロパティ       | 型    |説明|
+| プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
-|id|int|テーブル内の列を識別する一意のキーを返します。読み取り専用です。|
+|ID|int|テーブル内の列を識別する一意のキーを返します。読み取り専用です。|
 |index|int|テーブルの列コレクション内の列のインデックス番号を返します。0 を起点とする番号になります。読み取り専用です。|
-|name|string|テーブル列の名前を取得します。読み取り専用です。|
+|name|文字列|テーブル列の名前を取得します。読み取り専用です。|
 |values|json|指定した範囲の Raw 値を表します。返されるデータの型は、文字列、数値、またはブール値のいずれかになります。エラーが含まれているセルは、エラー文字列を返します。|
 
 ## <a name="relationships"></a>関係
-| リレーションシップ | 型    |説明|
+| リレーションシップ | 型   |説明|
 |:---------------|:--------|:----------|
 |filter|[Filter](filter.md)|列に適用されるフィルターを取得します。読み取り専用です。|
 

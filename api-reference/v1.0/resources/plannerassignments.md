@@ -1,23 +1,29 @@
-# plannerAssignments リソースの種類
-<a id="plannerassignments-resource-type" class="xliff"></a>
+---
+title: plannerAssignments リソースの種類
+description: '**PlannerAssignments**リソースでは、plannerTask のリソースの割り当てを表します。 この型は、オープン型です。 このタイプの場合は、各プロパティ名 '
+ms.openlocfilehash: 1cb080ff8d66c2319b77dd560f10422e1663a46d
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27024015"
+---
+# <a name="plannerassignments-resource-type"></a>plannerAssignments リソースの種類
 
 **plannerAssignments** リソースは [plannerTask](plannertask.md) リソースの割り当てを表します。この型はオープン型です。この型の各プロパティ名は、タスクが割り当てられているユーザー オブジェクトの ID です。ユーザーは、orderHint プロパティが値として設定されている [plannerassignment](plannerassignment.md) オブジェクトとそれぞれの ID を使った名前の付いた新しいプロパティを作成して、タスクに割り当てることができます。担当者は、それぞれの ID を使った名前の付いたプロパティを null に設定することによって、タスクからの割り当てを解除できます。
 
 
-## プロパティ
-<a id="properties" class="xliff"></a>
+## <a name="properties"></a>プロパティ
 クライアントは、オープン型のプロパティを定義できます。ただしこの場合、クライアントは割り当て済みユーザーの ID をプロパティ名として指定する必要があります。担当者を作成または変更する場合はプロパティを **plannerAssignment** オブジェクトに設定し、削除する場合は null に設定します。
 
 例:
 
 <!-- {
   "blockType": "resource",
-  "optionalProperties": [
-
-  ],
+  "openType": true,
+  "optionalProperties": [ "ca2a1df2-e36b-4987-9f6b-0ea462f4eb47", "4e98f8f1-bb03-4015-b8e0-19bb370949d8" ],
   "@odata.type": "microsoft.graph.plannerAssignments"
 }-->
-
 ```json
 {
   "ca2a1df2-e36b-4987-9f6b-0ea462f4eb47": null,

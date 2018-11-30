@@ -1,14 +1,26 @@
+---
+title: mailboxSettings リソースの種類
+description: サインイン ユーザーのプライマリ メールボックスの設定。
+ms.openlocfilehash: b8fb2c1f11f849a4633d6be4f4519b85b33923ea
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27023412"
+---
 # <a name="mailboxsettings-resource-type"></a>mailboxSettings リソースの種類
 
 サインイン ユーザーのプライマリ メールボックスの設定。
 
 
 ## <a name="properties"></a>プロパティ
-| プロパティ       | 型    |説明|
+| プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
+|archiveFolder|文字列|ユーザーのアーカイブ フォルダーのフォルダー ID。|
 |automaticRepliesSetting|[automaticRepliesSetting](automaticrepliessetting.md)|サインイン ユーザーからのメッセージを使用して、着信メールの送信者に自動的に通知する構成設定。|
 |language|[localeInfo](localeinfo.md)|優先言語および国/地域を含むユーザーのロケール情報。|
-|timeZone|string|ユーザーのメールボックスの既定のタイム ゾーン。|
+|timeZone|文字列|ユーザーのメールボックスの既定のタイム ゾーン。|
+|workingHours|[workingHours](workinghours.md)|ユーザーが働く曜日と、特定のタイムゾーンの時間。|
 
 ## <a name="json-representation"></a>JSON 表記
 
@@ -17,16 +29,18 @@
 <!-- {
   "blockType": "resource",
   "optionalProperties": [
-
+    "archiveFolder"
   ],
   "@odata.type": "microsoft.graph.mailboxSettings"
 }-->
 
 ```json
 {
+  "archiveFolder": "string",
   "automaticRepliesSetting": {"@odata.type": "microsoft.graph.automaticRepliesSetting"},
   "language": {"@odata.type": "microsoft.graph.localeInfo"},
-  "timeZone": "string"
+  "timeZone": "string",
+  "workingHours": {"@odata.type": "microsoft.graph.workingHours"}
 }
 
 ```
