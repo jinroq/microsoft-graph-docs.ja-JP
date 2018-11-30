@@ -1,10 +1,22 @@
-# <a name="onenoteoperation-resource-type"></a>onenoteOperation リソースの種類
+---
+title: onenoteOperation リソースの種類
+description: OneNote の特定の長時間操作の状態。
+ms.openlocfilehash: af7da970a148d4b70385487503e3abf6431c430a
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27067559"
+---
+# <a name="onenoteoperation-resource-type"></a><span data-ttu-id="b3fac-103">onenoteOperation リソースの種類</span><span class="sxs-lookup"><span data-stu-id="b3fac-103">onenoteOperation resource type</span></span>
 
-OneNote の特定の長時間操作の状態。
+> <span data-ttu-id="b3fac-104">**重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。</span><span class="sxs-lookup"><span data-stu-id="b3fac-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="b3fac-105">実稼働アプリケーションでの、これらの API の使用はサポートされていません。</span><span class="sxs-lookup"><span data-stu-id="b3fac-105">Use of these APIs in production applications is not supported.</span></span>
 
-## <a name="json-representation"></a>JSON 表記
+<span data-ttu-id="b3fac-106">OneNote の特定の長時間操作の状態。</span><span class="sxs-lookup"><span data-stu-id="b3fac-106">The status of certain long-running OneNote operations.</span></span>
 
-以下は、リソースの JSON 表記です。
+## <a name="json-representation"></a><span data-ttu-id="b3fac-107">JSON 表記</span><span class="sxs-lookup"><span data-stu-id="b3fac-107">JSON representation</span></span>
+
+<span data-ttu-id="b3fac-108">以下は、リソースの JSON 表記です。</span><span class="sxs-lookup"><span data-stu-id="b3fac-108">Here is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -27,28 +39,27 @@ OneNote の特定の長時間操作の状態。
 }
 
 ```
-## <a name="properties"></a>プロパティ
-| プロパティ       | 型    |説明|
+## <a name="properties"></a><span data-ttu-id="b3fac-109">プロパティ</span><span class="sxs-lookup"><span data-stu-id="b3fac-109">Properties</span></span>
+| <span data-ttu-id="b3fac-110">プロパティ</span><span class="sxs-lookup"><span data-stu-id="b3fac-110">Property</span></span>     | <span data-ttu-id="b3fac-111">型</span><span class="sxs-lookup"><span data-stu-id="b3fac-111">Type</span></span>   |<span data-ttu-id="b3fac-112">説明</span><span class="sxs-lookup"><span data-stu-id="b3fac-112">Description</span></span>|
 |:---------------|:--------|:----------|
-|createdDateTime| DateTimeOffset |操作の開始時刻です。|
-|error|[onenoteOperationError](onenoteoperationerror.md)|操作によって返されるエラーです。|
-|id|string|操作 ID です。読み取り専用です。|
-|lastActionDateTime| DateTimeOffset |操作の最後の操作の時間です。|
-|resourceId|string|リソース ID。|
-|resourceLocation|string|オブジェクトのリソース URI。たとえば、コピーしたページまたはセクションのリソース URI。 |
-|status|string|操作の現在の状態: `notstarted`、`running`、`completed`、`failed` |
-|percentComplete|string|操作がまだ `running` の状態の場合の操作達成率。
+|<span data-ttu-id="b3fac-113">createdDateTime</span><span class="sxs-lookup"><span data-stu-id="b3fac-113">createdDateTime</span></span>| <span data-ttu-id="b3fac-114">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="b3fac-114">DateTimeOffset</span></span> |<span data-ttu-id="b3fac-115">操作の開始時刻です。</span><span class="sxs-lookup"><span data-stu-id="b3fac-115">The start time of the operation.</span></span>|
+|<span data-ttu-id="b3fac-116">error</span><span class="sxs-lookup"><span data-stu-id="b3fac-116">error</span></span>|[<span data-ttu-id="b3fac-117">onenoteOperationError</span><span class="sxs-lookup"><span data-stu-id="b3fac-117">onenoteOperationError</span></span>](onenoteoperationerror.md)|<span data-ttu-id="b3fac-118">操作によって返されるエラーです。</span><span class="sxs-lookup"><span data-stu-id="b3fac-118">The error returned by the operation.</span></span>|
+|<span data-ttu-id="b3fac-119">ID</span><span class="sxs-lookup"><span data-stu-id="b3fac-119">id</span></span>|<span data-ttu-id="b3fac-120">文字列</span><span class="sxs-lookup"><span data-stu-id="b3fac-120">string</span></span>|<span data-ttu-id="b3fac-121">操作 ID です。読み取り専用です。</span><span class="sxs-lookup"><span data-stu-id="b3fac-121">The operation id. Read-only.</span></span>|
+|<span data-ttu-id="b3fac-122">lastActionDateTime</span><span class="sxs-lookup"><span data-stu-id="b3fac-122">lastActionDateTime</span></span>| <span data-ttu-id="b3fac-123">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="b3fac-123">DateTimeOffset</span></span> |<span data-ttu-id="b3fac-124">操作の最後の操作の時間です。</span><span class="sxs-lookup"><span data-stu-id="b3fac-124">The time of the last action of the operation.</span></span>|
+|<span data-ttu-id="b3fac-125">resourceId</span><span class="sxs-lookup"><span data-stu-id="b3fac-125">resourceId</span></span>|<span data-ttu-id="b3fac-126">文字列</span><span class="sxs-lookup"><span data-stu-id="b3fac-126">string</span></span>|<span data-ttu-id="b3fac-127">リソース ID。</span><span class="sxs-lookup"><span data-stu-id="b3fac-127">The resource id.</span></span>|
+|<span data-ttu-id="b3fac-128">resourceLocation</span><span class="sxs-lookup"><span data-stu-id="b3fac-128">resourceLocation</span></span>|<span data-ttu-id="b3fac-129">文字列</span><span class="sxs-lookup"><span data-stu-id="b3fac-129">string</span></span>|<span data-ttu-id="b3fac-p102">オブジェクトのリソース URI。たとえば、コピーしたページまたはセクションのリソース URI。</span><span class="sxs-lookup"><span data-stu-id="b3fac-p102">The resource URI for the object. For example, the resource URI for a copied page or section.</span></span> |
+|<span data-ttu-id="b3fac-132">status</span><span class="sxs-lookup"><span data-stu-id="b3fac-132">status</span></span>|<span data-ttu-id="b3fac-133">文字列</span><span class="sxs-lookup"><span data-stu-id="b3fac-133">string</span></span>|<span data-ttu-id="b3fac-134">操作の現在の状態: `notstarted`、`running`、`completed`、`failed`</span><span class="sxs-lookup"><span data-stu-id="b3fac-134">The current status of the operation: `notstarted`, `running`, `completed`, `failed`</span></span> |
+|<span data-ttu-id="b3fac-135">percentComplete</span><span class="sxs-lookup"><span data-stu-id="b3fac-135">percentComplete</span></span>|<span data-ttu-id="b3fac-136">文字列</span><span class="sxs-lookup"><span data-stu-id="b3fac-136">string</span></span>|<span data-ttu-id="b3fac-137">操作がまだ `running` の状態の場合の操作達成率。</span><span class="sxs-lookup"><span data-stu-id="b3fac-137">The operation percent complete if the operation is still in `running` status</span></span>
 
-## <a name="relationships"></a>リレーションシップ
-なし
+## <a name="relationships"></a><span data-ttu-id="b3fac-138">リレーションシップ</span><span class="sxs-lookup"><span data-stu-id="b3fac-138">Relationships</span></span>
+<span data-ttu-id="b3fac-139">なし</span><span class="sxs-lookup"><span data-stu-id="b3fac-139">None</span></span>
 
 
-## <a name="methods"></a>メソッド
+## <a name="methods"></a><span data-ttu-id="b3fac-140">メソッド</span><span class="sxs-lookup"><span data-stu-id="b3fac-140">Methods</span></span>
 
-| メソッド           | 戻り値の型    |説明|
+| <span data-ttu-id="b3fac-141">メソッド</span><span class="sxs-lookup"><span data-stu-id="b3fac-141">Method</span></span>           | <span data-ttu-id="b3fac-142">戻り値の型</span><span class="sxs-lookup"><span data-stu-id="b3fac-142">Return Type</span></span>    |<span data-ttu-id="b3fac-143">説明</span><span class="sxs-lookup"><span data-stu-id="b3fac-143">Description</span></span>|
 |:---------------|:--------|:----------|
-|[操作の取得](../api/onenoteoperation_get.md) | [onenoteOperation](onenoteoperation.md) |操作の現在の状態を取得します。 |
-
+|[<span data-ttu-id="b3fac-144">操作の取得</span><span class="sxs-lookup"><span data-stu-id="b3fac-144">Get operation</span></span>](../api/onenoteoperation-get.md) | [<span data-ttu-id="b3fac-145">onenoteOperation</span><span class="sxs-lookup"><span data-stu-id="b3fac-145">onenoteOperation</span></span>](onenoteoperation.md) |<span data-ttu-id="b3fac-146">操作の現在の状態を取得します。</span><span class="sxs-lookup"><span data-stu-id="b3fac-146">Get the status of the operation.</span></span> |
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
