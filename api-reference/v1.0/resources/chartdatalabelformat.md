@@ -1,19 +1,49 @@
-# <a name="chartdatalabelformat-resource-type"></a>ChartDataLabelFormat リソースの種類
+---
+title: ChartDataLabelFormat リソースの種類
+description: グラフのデータ ラベルの書式設定プロパティをカプセル化します。
+ms.openlocfilehash: ec81523dc09c17cd8c7fb9d543c2214377201260
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27021208"
+---
+# <a name="chartdatalabelformat-resource-type"></a><span data-ttu-id="bc2ec-103">ChartDataLabelFormat リソースの種類</span><span class="sxs-lookup"><span data-stu-id="bc2ec-103">ChartDataLabelFormat resource type</span></span>
 
-グラフのデータ ラベルの書式設定プロパティをカプセル化します。
+<span data-ttu-id="bc2ec-104">グラフのデータ ラベルの書式設定プロパティをカプセル化します。</span><span class="sxs-lookup"><span data-stu-id="bc2ec-104">Encapsulates the format properties for the chart data labels.</span></span>
 
 
-## <a name="methods"></a>メソッド
-なし
+## <a name="methods"></a><span data-ttu-id="bc2ec-105">メソッド</span><span class="sxs-lookup"><span data-stu-id="bc2ec-105">Methods</span></span>
+<span data-ttu-id="bc2ec-106">なし</span><span class="sxs-lookup"><span data-stu-id="bc2ec-106">None</span></span>
 
-## <a name="properties"></a>プロパティ
-なし
+## <a name="properties"></a><span data-ttu-id="bc2ec-107">プロパティ</span><span class="sxs-lookup"><span data-stu-id="bc2ec-107">Properties</span></span>
+<span data-ttu-id="bc2ec-108">なし</span><span class="sxs-lookup"><span data-stu-id="bc2ec-108">None</span></span>
 
-## <a name="relationships"></a>関係
-| リレーションシップ | 型    |説明|
+## <a name="relationships"></a><span data-ttu-id="bc2ec-109">関係</span><span class="sxs-lookup"><span data-stu-id="bc2ec-109">Relationships</span></span>
+| <span data-ttu-id="bc2ec-110">リレーションシップ</span><span class="sxs-lookup"><span data-stu-id="bc2ec-110">Relationship</span></span> | <span data-ttu-id="bc2ec-111">型</span><span class="sxs-lookup"><span data-stu-id="bc2ec-111">Type</span></span>   |<span data-ttu-id="bc2ec-112">説明</span><span class="sxs-lookup"><span data-stu-id="bc2ec-112">Description</span></span>|
 |:---------------|:--------|:----------|
-|fill|[ChartFill](chartfill.md)|現在のグラフのデータ ラベルの塗りつぶしの書式を表します。値の取得のみ可能です。|
-|font|[ChartFont](chartfont.md)|グラフのデータ ラベルのフォント属性 (フォント名、フォント サイズ、色など) を表します。値の取得のみ可能です。|
+|<span data-ttu-id="bc2ec-113">fill</span><span class="sxs-lookup"><span data-stu-id="bc2ec-113">fill</span></span>|[<span data-ttu-id="bc2ec-114">WorkbookChartFill</span><span class="sxs-lookup"><span data-stu-id="bc2ec-114">WorkbookChartFill</span></span>](chartfill.md)|<span data-ttu-id="bc2ec-p101">現在のグラフのデータ ラベルの塗りつぶしの書式を表します。値の取得のみ可能です。</span><span class="sxs-lookup"><span data-stu-id="bc2ec-p101">Represents the fill format of the current chart data label. Read-only.</span></span>|
+|<span data-ttu-id="bc2ec-117">font</span><span class="sxs-lookup"><span data-stu-id="bc2ec-117">font</span></span>|[<span data-ttu-id="bc2ec-118">WorkbookChartFont</span><span class="sxs-lookup"><span data-stu-id="bc2ec-118">WorkbookChartFont</span></span>](chartfont.md)|<span data-ttu-id="bc2ec-p102">グラフのデータ ラベルのフォント属性 (フォント名、フォント サイズ、色など) を表します。値の取得のみ可能です。</span><span class="sxs-lookup"><span data-stu-id="bc2ec-p102">Represents the font attributes (font name, font size, color, etc.) for a chart data label. Read-only.</span></span>|
+
+
+## <a name="json-representation"></a><span data-ttu-id="bc2ec-121">JSON 表記</span><span class="sxs-lookup"><span data-stu-id="bc2ec-121">JSON representation</span></span>
+
+<span data-ttu-id="bc2ec-122">以下は、リソースの JSON 表記です。</span><span class="sxs-lookup"><span data-stu-id="bc2ec-122">Here is a JSON representation of the resource.</span></span>
+
+<!--{
+  "blockType": "resource",
+  "optionalProperties": [],
+  "baseType": "microsoft.graph.entity",
+  "@odata.type": "microsoft.graph.workbookChartDataLabelFormat"
+}-->
+
+```json
+{
+  "fill": {"@odata.type": "microsoft.graph.workbookChartFill"},
+  "font": {"@odata.type": "microsoft.graph.workbookChartFont"}
+}
+```
+
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
