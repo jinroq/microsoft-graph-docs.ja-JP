@@ -1,4 +1,16 @@
+---
+title: ChartAxis リソースの種類
+description: グラフの 1 つの軸を表します。
+ms.openlocfilehash: f92e8dd12dc2d7036d5022e2b293cfc290faf910
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27070928"
+---
 # <a name="chartaxis-resource-type"></a>ChartAxis リソースの種類
+
+> **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。
 
 グラフの 1 つの軸を表します。
 
@@ -7,11 +19,11 @@
 
 | メソッド           | 戻り値の型    |説明|
 |:---------------|:--------|:----------|
-|[Get ChartAxis](../api/chartaxis_get.md) | [ChartAxis](chartaxis.md) |chartAxis オブジェクトのプロパティと関係を読み取ります。|
-|[Update](../api/chartaxis_update.md) | [ChartAxis](chartaxis.md)    |ChartAxis オブジェクトを更新します。 |
+|[Get ChartAxis](../api/chartaxis-get.md) | [ChartAxis](chartaxis.md) |chartAxis オブジェクトのプロパティと関係を読み取ります。|
+|[Update](../api/chartaxis-update.md) | [ChartAxis](chartaxis.md)   |ChartAxis オブジェクトを更新します。 |
 
 ## <a name="properties"></a>プロパティ
-| プロパティ       | 型    |説明|
+| プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
 |majorUnit|オブジェクト|2 つの大きい目盛の間隔を表します。数値の値または空の文字列を設定できます。戻り値は常に数値です。|
 |maximum|object|数値軸の最大値を表します。数値の値または空の文字列を設定できます (軸の値が自動の場合)。戻り値は常に数値です。|
@@ -19,7 +31,7 @@
 |minorUnit|オブジェクト|2 つの小さい目盛の間隔を表します。"数値の値または空の文字列を設定できます (軸の値が自動の場合)。戻り値は常に数値です。|
 
 ## <a name="relationships"></a>関係
-| リレーションシップ | 型    |説明|
+| リレーションシップ | 型   |説明|
 |:---------------|:--------|:----------|
 |format|[ChartAxisFormat](chartaxisformat.md)|グラフ オブジェクトの書式設定を表します。これには線とフォントの書式設定などがあります。値の取得のみ可能です。|
 |majorGridlines|[ChartGridlines](chartgridlines.md)|指定された軸の目盛線を表す gridlines オブジェクトを返します。値の取得のみ可能です。|

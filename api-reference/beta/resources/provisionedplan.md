@@ -1,15 +1,26 @@
+---
+title: provisionedPlan リソースの種類
+description: ユーザー エンティティと組織エンティティの **provisionedPlans** プロパティは、**provisionedPlan** のコレクションです。
+ms.openlocfilehash: efaf4dc2916189e2bf6a8078a693059369f7cb2b
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27070060"
+---
 # <a name="provisionedplan-resource-type"></a>provisionedPlan リソースの種類
+
+> **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。
 
 [ユーザー](user.md) エンティティと[組織](organization.md)エンティティの **provisionedPlans** プロパティは、**provisionedPlan** のコレクションです。
 
 
 ## <a name="properties"></a>プロパティ
-| プロパティ       | 型    |説明|
+| プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
 |capabilityStatus|String|「有効」など。|
 |provisioningStatus|String|「成功」など。|
 |service|String|サービスの名前。「AccessControlS2S」など。|
-
 
 ## <a name="json-representation"></a>JSON 表記
 

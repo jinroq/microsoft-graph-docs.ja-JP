@@ -1,4 +1,16 @@
+---
+title: sectionLinks リソースの種類
+description: OneNote セクションを開くためのリンクです。
+ms.openlocfilehash: 26dbffd6f3bde9c05efabc737852c3619cc1e275
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27071798"
+---
 # <a name="sectionlinks-resource-type"></a>sectionLinks リソースの種類
+
+> **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。
 
 OneNote セクションを開くためのリンクです。
 
@@ -22,7 +34,7 @@ OneNote セクションを開くためのリンクです。
 
 ```
 ## <a name="properties"></a>プロパティ
-| プロパティ       | 型    |説明|
+| プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
 |oneNoteClientUrl|[externalLink](externallink.md)|OneNote のネイティブ クライアントでセクションを開きます (インストールされている場合)。|
 |oneNoteWebUrl|[externalLink](externallink.md)|OneNote Online でセクションを開きます。|
