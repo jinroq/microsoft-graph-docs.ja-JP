@@ -1,6 +1,20 @@
+---
+author: rgregg
+ms.author: rgregg
+ms.date: 09/10/2017
+title: SharedDriveItem
+ms.openlocfilehash: 44d8a7c2bab9f19ff7b7680aea2e2a88fc2ef245
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27066536"
+---
 # <a name="shareddriveitem-resource-type"></a>SharedDriveItem リソースの種類
 
-**sharedDriveItem** リソースは、[Shares](../api/shares_get.md) API を使用して共有 [driveItem](driveitem.md) にアクセスする場合に返されます。
+> **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。
+
+**sharedDriveItem** リソースは、[Shares](../api/shares-get.md) API を使用して共有 [driveItem](driveitem.md) にアクセスする場合に返されます。
 
 ## <a name="json-representation"></a>JSON 表記
 
@@ -10,21 +24,24 @@
 
 <!-- {
   "blockType": "resource",
+  "baseType": "microsoft.graph.baseItem",
   "optionalProperties": [  ],
   "@odata.type": "microsoft.graph.sharedDriveItem"
 }-->
 
 ```json
 {
-    "id": "string",
-    "name": "string",
-    "owner": { "@odata.type": "microsoft.graph.identitySet" },
+  "id": "string",
+  "name": "string",
+  "owner": { "@odata.type": "microsoft.graph.identitySet" },
 
-    /* relationships*/
-    "items": [ { "@odata.type": "microsoft.graph.driveItem" }],
-    "root": { "@odata.type": "microsoft.graph.driveItem" },
-    "driveItem": { "@odata.type": "microsoft.graph.driveItem" },
-    "site": { "@odata.type": "microsoft.graph.site" }
+  "driveItem": { "@odata.type": "microsoft.graph.driveItem" },
+  "items": [ { "@odata.type": "microsoft.graph.driveItem" }],
+  "list": { "@odata.type": "microsoft.graph.list" },
+  "listItem": { "@odata.type": "microsoft.graph.listItem" },
+  "permission": { "@odata.type": "microsoft.graph.permission" },
+  "root": { "@odata.type": "microsoft.graph.driveItem" },
+  "site": { "@odata.type": "microsoft.graph.site" }
 }
 ```
 
@@ -38,29 +55,41 @@
 
 ## <a name="relationships"></a>リレーションシップ
 
-| リレーションシップ | 型                                  | 説明                                                                                                                                                                                                |
-| :----------- | :------------------------------------ | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| items        | Collection([DriveItem](driveitem.md)) | 共有 **driveItem** リソースのコレクション。このコレクションは列挙することはできませんが、アイテムには固有の ID でアクセスできます。                                                                        |
-| root         | [DriveItem](driveitem.md)             | 最上位の共有 **driveItem**。単一のファイルが共有されている場合、このアイテムがファイルになります。フォルダーが共有されている場合は、この項目はフォルダーになります。アイテムのファセットを使用して、どちらのケースが適用されるか判断します。 |
-| driveItem    | [driveItem](driveitem.md)             | 共有されたリソースの **driveItem**。これは、**root** プロパティと一致します。                                                                                                             |
-| site         | [site](site.md)                       | 共有されたアイテムを含む **サイト** リソース。                                                                                                                                                |
+| リレーションシップ名 | 種類                | 説明
+| ------------------|:--------------------|:-----------------------------------
+| **driveItem**     | [**driveItem**][driveItem] | 基になる **driveItem** にアクセスするために使用
+| **list**          | [**list**][list]           | 基になる **list** にアクセスするために使用
+| **listItem**      | [**listItem**][listItem]   | 基になる **listItem** にアクセスするために使用
+| **permission**    | [**アクセス許可**][permission] | 基になっている共有リンクを表す**アクセス許可**にアクセスするために使用
+| **site**          | [**site**][site]           | 基になる **site** にアクセスするために使用
+
+または、個人用の OneDrive アカウントから共有される **driveItem** には、次のリレーションシップも使用できます。
+
+| リレーションシップ名 | 種類                         | 説明
+| ------------------|:-----------------------------|:-----------------------------------
+| **items**         | [**driveItem**][driveItem] コレクション | 共有ルートに含まれているすべての driveItem。 このコレクションを列挙することはできません。
+| **driveItem**     | [**driveItem**][driveItem]            | 基になる **driveItem** にアクセスするために使用
+
+[driveItem]: driveitem.md
+[list]: list.md
+[listItem]: listitem.md
+[permission]: permission.md
+[site]: site.md
 
 ## <a name="methods"></a>メソッド
 
-| Method                                  | REST パス                |
+| メソッド                                  | REST パス                |
 | :-------------------------------------- | :----------------------- |
-| [共有アイテムを取得する](../api/shares_get.md) | `GET /shares/{share-id}` |
+| [共有アイテムを取得する](../api/shares-get.md) | `GET /shares/{share-id}` |
 
 ## <a name="remarks"></a>備考
 
 DriveItem のファセットの詳細については、「[DriveItem](driveitem.md)」を参照してください。
 
-<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
-2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "sharepointIds resource",
-  "keywords": "",
+  "description": "Share resource returns information about a shared item or collection of items.",
+  "keywords": "share,shared,sharing root,shared files, shared items",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "Resources/Share"
+} -->

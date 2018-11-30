@@ -1,18 +1,16 @@
 ---
-title: attendeeAvailability リソースの種類
-description: 出席者の種類と空き時間情報。
-ms.openlocfilehash: ddea2be21f2dd9290637536e2a428e25fc03fcca
+title: メール リソースの種類
+description: 以下は、リソースの JSON 表記です
+ms.openlocfilehash: c0baf89485e0d8f98918a227f83b622781752c3e
 ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/29/2018
-ms.locfileid: "27066802"
+ms.locfileid: "27066281"
 ---
-# <a name="attendeeavailability-resource-type"></a>attendeeAvailability リソースの種類
+# <a name="email-resource-type"></a>メール リソースの種類
 
 > **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。
-
-出席者の種類と空き時間情報。
 
 ## <a name="json-representation"></a>JSON 表記
 
@@ -23,27 +21,25 @@ ms.locfileid: "27066802"
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.attendeeAvailability"
+  "@odata.type": "microsoft.graph.email"
 }-->
 
 ```json
 {
-  "attendee": {"@odata.type": "microsoft.graph.attendeeBase"},
-  "availability": "String"
+  "address": "string"
 }
 
 ```
 ## <a name="properties"></a>プロパティ
 | プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
-|attendee|[AttendeeBase](attendeebase.md)|出席者の種類 - 人、またはリソースのいずれか、さらに人である場合は、必須かどうか。|
-|availability|String| 出席者の空き時間の状態。使用可能な値: `free`、`tentative`、`busy`、`oof`、`workingElsewhere`、`unknown`。|
+|address|String||
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "attendeeAvailability resource",
+  "description": "email resource",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""
