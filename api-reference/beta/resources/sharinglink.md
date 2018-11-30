@@ -1,12 +1,26 @@
-# <a name="sharinglink-resource-type"></a>SharingLink リソースタイプ
+---
+author: rgregg
+ms.author: rgregg
+ms.date: 09/10/2017
+title: SharingLink
+ms.openlocfilehash: 094de0cbdb77fe427ba70b9418ced5cc6e9cc731
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27068133"
+---
+# <a name="sharinglink-resource-type"></a><span data-ttu-id="507d3-102">sharingLink リソースの種類</span><span class="sxs-lookup"><span data-stu-id="507d3-102">sharingLink resource type</span></span>
 
-**SharingLink** リソースは、リンク関連のデータ項目を 1 つの構造にグループ化します。
+> <span data-ttu-id="507d3-103">**重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。</span><span class="sxs-lookup"><span data-stu-id="507d3-103">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="507d3-104">実稼働アプリケーションでの、これらの API の使用はサポートされていません。</span><span class="sxs-lookup"><span data-stu-id="507d3-104">Use of these APIs in production applications is not supported.</span></span>
 
-[**Permission**](permission.md) リソースが非 null の **sharingLink** ファセットを持つ場合、アクセス許可は (ユーザーやグループに与えられている許可ではなく) sharnig リンクを表します。
+<span data-ttu-id="507d3-105">**SharingLink**リソースでは、1 つの構造体にデータのリンクに関連する項目をグループ化します。</span><span class="sxs-lookup"><span data-stu-id="507d3-105">The **sharingLink** resource groups link-related data items into a single structure.</span></span>
 
-## <a name="json-representation"></a>JSON 表記
+<span data-ttu-id="507d3-106">[**アクセス許可**](permission.md)リソースに非 null **sharingLink**ファセットがある場合、アクセス許可 (アクセス許可がユーザーまたはグループに与えられている) ではなく共有リンクを表します。</span><span class="sxs-lookup"><span data-stu-id="507d3-106">If a [**permission**](permission.md) resource has a non-null **sharingLink** facet, the permission represents a sharing link (as opposed to permissions granted to a person or group).</span></span>
 
-以下は、リソースの JSON 表記です。
+## <a name="json-representation"></a><span data-ttu-id="507d3-107">JSON 表記</span><span class="sxs-lookup"><span data-stu-id="507d3-107">JSON representation</span></span>
+
+<span data-ttu-id="507d3-108">以下は、リソースの JSON 表記です。</span><span class="sxs-lookup"><span data-stu-id="507d3-108">Here is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -16,45 +30,55 @@
 
 ```json
 {
-  "application": {"@odata.type": "microsoft.graph.identity"},
-  "type": "view | edit",
+  "application": { "@odata.type": "microsoft.graph.identity" },
+  "preventsDownload": false,
+  "type": "view | edit | embed",
   "scope": "anonymous | organization",
+  "webHtml": "string",
   "webUrl": "url"
 }
 ```
 
-## <a name="properties"></a>プロパティ
+## <a name="properties"></a><span data-ttu-id="507d3-109">プロパティ</span><span class="sxs-lookup"><span data-stu-id="507d3-109">Properties</span></span>
 
-| プロパティ    | 型                    | 説明                                                                                                                                                                                             |
-|:------------|:------------------------|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| application | [identity](identity.md) | リンクが関連付けられているアプリケーションです。                                                                                                                                                                    |
-| type        | String                  | 作成されたリンクの種類。                                                                                                                                                                           |
-| scope       | String                  | このアクセス許可によって表されるリンクの範囲です。値 `anonymous` は、すべてのユーザーがリンクを使用できることを示し、`organization` は同じテナントにサインインしたユーザーのみがリンクを使用できることを示します。 |
-| webUrl      | String                  | OneDrive の web サイト上で、項目をブラウザーに開く URL です。                                                                                                                                       |
+| <span data-ttu-id="507d3-110">プロパティ</span><span class="sxs-lookup"><span data-stu-id="507d3-110">Property</span></span>       | <span data-ttu-id="507d3-111">型</span><span class="sxs-lookup"><span data-stu-id="507d3-111">Type</span></span>          | <span data-ttu-id="507d3-112">説明</span><span class="sxs-lookup"><span data-stu-id="507d3-112">Description</span></span>
+|:---------------|:--------------|:-------------------------------------
+| <span data-ttu-id="507d3-113">application</span><span class="sxs-lookup"><span data-stu-id="507d3-113">application</span></span>    | <span data-ttu-id="507d3-114">[identity][]</span><span class="sxs-lookup"><span data-stu-id="507d3-114">[identity][]</span></span>  | <span data-ttu-id="507d3-115">リンクが関連付けられているアプリケーションです。</span><span class="sxs-lookup"><span data-stu-id="507d3-115">The app the link is associated with.</span></span>
+| <span data-ttu-id="507d3-116">type</span><span class="sxs-lookup"><span data-stu-id="507d3-116">type</span></span>           | <span data-ttu-id="507d3-117">String</span><span class="sxs-lookup"><span data-stu-id="507d3-117">String</span></span>        | <span data-ttu-id="507d3-118">作成されたリンクの種類。</span><span class="sxs-lookup"><span data-stu-id="507d3-118">The type of the link created.</span></span>
+| <span data-ttu-id="507d3-119">scope</span><span class="sxs-lookup"><span data-stu-id="507d3-119">scope</span></span>          | <span data-ttu-id="507d3-120">String</span><span class="sxs-lookup"><span data-stu-id="507d3-120">String</span></span>        | <span data-ttu-id="507d3-p102">このアクセス許可によって表されるリンクの範囲です。値 `anonymous` は、すべてのユーザーがリンクを使用できることを示し、`organization` は同じテナントにサインインしたユーザーのみがリンクを使用できることを示します。</span><span class="sxs-lookup"><span data-stu-id="507d3-p102">The scope of the link represented by this permission. Value `anonymous` indicates the link is usable by anyone, `organization` indicates the link is only usable for users signed into the same tenant.</span></span>
+| <span data-ttu-id="507d3-123">preventsDownload</span><span class="sxs-lookup"><span data-stu-id="507d3-123">preventsDownload</span></span> | <span data-ttu-id="507d3-124">ブール値</span><span class="sxs-lookup"><span data-stu-id="507d3-124">Boolean</span></span>       | <span data-ttu-id="507d3-125">True の場合、ユーザーは、web 上のアイテムを表示するのにはのみ、このリンクを使用できますし、項目の内容をダウンロードするのには使用できません。</span><span class="sxs-lookup"><span data-stu-id="507d3-125">If true then the user can only use this link to view the item on the web, and cannot use it to download the contents of the item.</span></span> <span data-ttu-id="507d3-126">ビジネスと SharePoint の OneDrive です。</span><span class="sxs-lookup"><span data-stu-id="507d3-126">Only for OneDrive for Business and SharePoint.</span></span>
+| <span data-ttu-id="507d3-127">webHtml</span><span class="sxs-lookup"><span data-stu-id="507d3-127">webHtml</span></span>        | <span data-ttu-id="507d3-128">String</span><span class="sxs-lookup"><span data-stu-id="507d3-128">String</span></span>        | <span data-ttu-id="507d3-129">`embed` リンクの場合、このプロパティには、Web ページに項目を埋め込む `<iframe>` 要素の HTML コードが格納されます。</span><span class="sxs-lookup"><span data-stu-id="507d3-129">For `embed` links, this property contains the HTML code for an `<iframe>` element that will embed the item in a webpage.</span></span>
+| <span data-ttu-id="507d3-130">webUrl</span><span class="sxs-lookup"><span data-stu-id="507d3-130">webUrl</span></span>         | <span data-ttu-id="507d3-131">String</span><span class="sxs-lookup"><span data-stu-id="507d3-131">String</span></span>        | <span data-ttu-id="507d3-132">OneDrive の web サイト上で、項目をブラウザーに開く URL です。</span><span class="sxs-lookup"><span data-stu-id="507d3-132">A URL that opens the item in the browser on the OneDrive website.</span></span>
 
-## <a name="type-enumeration"></a>Type 列挙
+[Identity]: identity.md
 
-この表は、**type** プロパティの可能な値を定義します。
+### <a name="type-options"></a><span data-ttu-id="507d3-134">タイプ オプション</span><span class="sxs-lookup"><span data-stu-id="507d3-134">Type options</span></span>
 
-| 値   | ロール    | 説明                                                                     |
-|:--------|:--------|:--------------------------------------------------------------------------------|
-| `view`  | `read`  | 読み取り専用のアクセスを許可する、閲覧専用の共有リンクです。                            |
-| `edit`  | `write` | 読み取り / 書き込みのアクセスを許可する、編集共有リンクです。                               |
+<span data-ttu-id="507d3-135">次の表は、 **type**プロパティの値を定義します。</span><span class="sxs-lookup"><span data-stu-id="507d3-135">The following table defines the possible values for the **type** property.</span></span>
 
-## <a name="scope-enumeration"></a>スコープ列挙
+| <span data-ttu-id="507d3-136">値</span><span class="sxs-lookup"><span data-stu-id="507d3-136">Value</span></span>    | <span data-ttu-id="507d3-137">ロール</span><span class="sxs-lookup"><span data-stu-id="507d3-137">Role</span></span>     | <span data-ttu-id="507d3-138">説明</span><span class="sxs-lookup"><span data-stu-id="507d3-138">Description</span></span>
+|:---------|:---------|:---------------------------------------------------------
+| `view`   | `read`   | <span data-ttu-id="507d3-139">読み取り専用のアクセスを許可する、閲覧専用の共有リンクです。</span><span class="sxs-lookup"><span data-stu-id="507d3-139">A view-only sharing link, allowing read-only access.</span></span>
+| `edit`   | `write`  | <span data-ttu-id="507d3-140">読み取り/書き込みのアクセスを許可する、編集共有リンクです。</span><span class="sxs-lookup"><span data-stu-id="507d3-140">An edit sharing link, allowing read-write access.</span></span>
+| `embed`  | `read`   | <span data-ttu-id="507d3-141">ホスト Web ページにコンテンツを埋め込むために使用できる、表示専用共有リンクです。</span><span class="sxs-lookup"><span data-stu-id="507d3-141">A view-only sharing link that can be used to embed content into a host webpage.</span></span> <span data-ttu-id="507d3-142">埋め込みリンクは、OneDrive for Business または SharePoint では使用できません。</span><span class="sxs-lookup"><span data-stu-id="507d3-142">Embed links are not available for OneDrive for Business or SharePoint.</span></span>
 
-| 値          | 説明                                                                                                                 |
-|:---------------|:----------------------------------------------------------------------------------------------------------------------------|
-| `anonymous`    | 共有リンクは誰でも使用可能です。                                                                            |
-| `organization` | 共有リンクは、同じ組織 (テナント) 内のすべてのユーザーが使用可能です。OneDrive Personal では使用できません。 |
+### <a name="scope-options"></a><span data-ttu-id="507d3-143">スコープ オプション</span><span class="sxs-lookup"><span data-stu-id="507d3-143">Scope options</span></span>
 
+<span data-ttu-id="507d3-144">次の表は、**スコープ**のプロパティの値を定義します。</span><span class="sxs-lookup"><span data-stu-id="507d3-144">The following table defines the possible values for the **scope** property.</span></span>
+
+| <span data-ttu-id="507d3-145">値</span><span class="sxs-lookup"><span data-stu-id="507d3-145">Value</span></span>            | <span data-ttu-id="507d3-146">説明</span><span class="sxs-lookup"><span data-stu-id="507d3-146">Description</span></span>
+|:-----------------|:------------------------------------------------------------
+| `anonymous`      | <span data-ttu-id="507d3-147">リンクを持つユーザーは、サインインすることがなく、アクセスを持ちます。</span><span class="sxs-lookup"><span data-stu-id="507d3-147">Anyone with the link has access, without needing to sign in.</span></span> <span data-ttu-id="507d3-148">これには、組織の外部ユーザーが含まれます。</span><span class="sxs-lookup"><span data-stu-id="507d3-148">This may include people outside of your organization.</span></span>
+| `organization`   | <span data-ttu-id="507d3-149">アクセス権を取得するのには、組織 (テナント) に署名されたすべてのユーザーのリンクを使用できます。</span><span class="sxs-lookup"><span data-stu-id="507d3-149">Anyone signed into your organization (tenant) can use the link to get access.</span></span> <span data-ttu-id="507d3-150">ビジネスと SharePoint の OneDrive でのみ使用できます。</span><span class="sxs-lookup"><span data-stu-id="507d3-150">Only available in OneDrive for Business and SharePoint.</span></span>
+| `existingAccess` | <span data-ttu-id="507d3-151">他の手段を使用して、アイテムへのアクセス権が既に付与されたユーザーだけは、このリンクを使用してアイテムにアクセスできます。</span><span class="sxs-lookup"><span data-stu-id="507d3-151">Only people who have already been granted access to the item through other means can access the item using this link.</span></span> <span data-ttu-id="507d3-152">ビジネスと SharePoint の OneDrive でのみ使用できます。</span><span class="sxs-lookup"><span data-stu-id="507d3-152">Only available in OneDrive for Business and SharePoint.</span></span>
+| `users`          | <span data-ttu-id="507d3-153">リンクでは、特定のユーザーの一覧にのみアクセスが許可されます。</span><span class="sxs-lookup"><span data-stu-id="507d3-153">The link grants access only to a specific list of people.</span></span> <span data-ttu-id="507d3-154">ビジネスと SharePoint の OneDrive でのみ使用できます。</span><span class="sxs-lookup"><span data-stu-id="507d3-154">Only available in OneDrive for Business and SharePoint.</span></span>
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "sharingLink resource",
-  "keywords": "",
+  "description": "The sharing link facet provides information about how a file is shared.",
+  "keywords": "sharing,sharing link, sharing url, webUrl",
   "section": "documentation",
   "tocPath": ""
 }-->
