@@ -1,3 +1,13 @@
+---
+title: verifiedDomain リソースの種類
+description: テナントのドメインを指定します。組織 エンティティの **VerifiedDomains** プロパティは、**VerifiedDomain** のコレクションです。
+ms.openlocfilehash: 21b6dd89dcc8b990046952d9ae7abcfe8ce02bca
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27021563"
+---
 # <a name="verifieddomain-resource-type"></a>verifiedDomain リソースの種類
 
 テナントのドメインを指定します。[組織](organization.md) エンティティの **VerifiedDomains** プロパティは、**VerifiedDomain** のコレクションです。
@@ -21,7 +31,7 @@
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.verifieddomain"
+  "@odata.type": "microsoft.graph.verifiedDomain"
 }-->
 
 ```json
