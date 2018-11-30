@@ -1,4 +1,18 @@
+---
+author: rgregg
+ms.author: rgregg
+ms.date: 09/10/2017
+title: Video
+ms.openlocfilehash: a9bf228d814526d089fb102444e6952558b07e1c
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27073275"
+---
 # <a name="video-resource-type"></a>ビデオ リソースの種類
+
+> **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。
 
 **ビデオ** リソースは、ビデオ関連のデータ項目を 1 つの構造にグループ化します。
 
@@ -16,23 +30,37 @@
 
 ```json
 {
-  "bitrate": 1024,
-  "duration": 1024,
-  "height": 1024,
-  "width": 1024
+  "audioBitsPerSample": 16,
+  "audioChannels": 1,
+  "audioFormat": "AAC",
+  "audioSamplesPerSecond": 44100,
+  "bitrate": 39101896,
+  "duration": 8053,
+  "fourCC": "H264",
+  "frameRate": 239.877,
+  "height": 1280,
+  "width": 720
 }
 ```
 
 ## <a name="properties"></a>プロパティ
 
-| プロパティ | 型  | 説明                               |
-|:---------|:------|:------------------------------------------|
-| bitrate  | Int32 | 1 秒あたりのビデオのビット レート (ビット単位)。 |
-| duration | Int64 | ファイルの継続時間 (ミリ秒単位)。     |
-| height   | Int32 | ビデオの高さ (ピクセル単位)。           |
-| width    | Int32 | ビデオの幅 (ピクセル単位)。            |
+| プロパティ名             | 型   | 説明
+|:--------------------------|:-------|:----------------------------------------
+| **audioBitsPerSample**    | Int32  | サンプルあたりのオーディオ ビット数。
+| **audioChannels**         | Int32  | オーディオ チャンネル数。
+| **audioFormat**           | 文字列 | オーディオ形式の名前 (AAC、MP3 など)。
+| **audioSamplesPerSecond** | Int32  | 1 秒あたりのオーディオ サンプル数。
+| **bitrate**               | Int32  | 1 秒あたりのビデオのビット レート (ビット単位)。
+| **duration**              | Int64  | ファイルの継続時間 (ミリ秒単位)。
+| **fourCC**                | 文字列 | ビデオ形式の「4 文字コード」名。
+| **framerate**             | double | ビデオのフレーム レート。
+| **height**                | Int32  | ビデオの高さ (ピクセル単位)。
+| **width**                 | Int32  | ビデオの幅 (ピクセル単位)。
 
-## <a name="remarks"></a>注釈 
+[item-resource]: ../resources/driveitem.md
+
+## <a name="remarks"></a>注釈
 
 DriveItem のファセットの詳細については、「[DriveItem](driveitem.md)」を参照してください。
 
@@ -44,8 +72,8 @@ DriveItem のファセットの詳細については、「[DriveItem](driveitem.
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "video resource",
-  "keywords": "",
+  "description": "The video facet provides information about the properties of a video file.",
+  "keywords": "bitrate,duration,size,video",
   "section": "documentation",
   "tocPath": ""
 }-->

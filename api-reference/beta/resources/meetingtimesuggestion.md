@@ -1,4 +1,16 @@
+---
+title: meetingTimeSuggestion リソースの種類
+description: '提案された会議の時間、出勤の可能性、個人情報が含まれる会議 '
+ms.openlocfilehash: 04b7996292decab5330cb17b8aada82d58cf759f
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27074057"
+---
 # <a name="meetingtimesuggestion-resource-type"></a>meetingTimeSuggestion リソースの種類
+
+> **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。
 
 会議時間、出席の可能性、各自の空き時間情報、利用可能な会議場所を含む、会議の提案です。
 
@@ -17,7 +29,7 @@
 ```json
 {
   "attendeeAvailability": [{"@odata.type": "microsoft.graph.attendeeAvailability"}],
-  "confidence": 1024,
+  "confidence": 1024.0,
   "locations": [{"@odata.type": "microsoft.graph.location"}],
   "meetingTimeSlot": {"@odata.type": "microsoft.graph.timeSlot"},
   "organizerAvailability": "String",
@@ -26,7 +38,7 @@
 
 ```
 ## <a name="properties"></a>プロパティ
-| プロパティ       | 型    |説明|
+| プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
 |attendeeAvailability|[attendeeAvailability](attendeeavailability.md) コレクション|この提案された会議の各出席者の空き時間情報の状態を示す配列。|
 |confidence|Double|すべての出席者が出席する見込みを表すパーセンテージ。|

@@ -1,14 +1,23 @@
-<a id="domaindnssrvrecord-resource-type" class="xliff"></a>
-# domainDnsSrvRecord リソースの種類
+---
+title: domainDnsSrvRecord リソースの種類
+description: テナント内の特定のドメインの DNS ゾーン ファイルに追加された SRV レコードを表します。DomainDnsRecord エンティティから継承されます。
+ms.openlocfilehash: 9eba2c74dd26d1c9431b1cabe3d5b283ee7a406d
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27073803"
+---
+# <a name="domaindnssrvrecord-resource-type"></a>domainDnsSrvRecord リソースの種類
+
+> **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。
 
 テナント内の特定のドメインの DNS ゾーン ファイルに追加された SRV レコードを表します。[DomainDnsRecord](domaindnsrecord.md) エンティティから継承されます。
 
-<a id="methods" class="xliff"></a>
-## メソッド
+## <a name="methods"></a>メソッド
 このリソースへの直接クエリはサポートされていません。ドメイン サービス レコードのクエリを実行する方法の詳細については、[ドメイン](domain.md)のトピックを参照してください。
 
-<a id="properties" class="xliff"></a>
-## プロパティ
+## <a name="properties"></a>プロパティ
 | プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
 |id|String| このエンティティに割り当てられた一意の識別子。null 許容ではありません。読み取り専用です。|
@@ -24,13 +33,11 @@
 |ttl|Int32| DNS ホストで SRV レコードの *Time to Live (TTL)* のプロパティを構成するときに使用する値です。null 許容ではありません |
 |weight|Int32| DNS ホストで SRV レコードの *weight* プロパティを構成する場合に使用する値です。 |
 
-<a id="relationships" class="xliff"></a>
-## リレーションシップ
+## <a name="relationships"></a>リレーションシップ
 なし
 
 
-<a id="json-representation" class="xliff"></a>
-## JSON 表記
+## <a name="json-representation"></a>JSON 表記
 以下は、リソースの JSON 表記です。
 
 <!-- {
