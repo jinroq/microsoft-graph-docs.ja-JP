@@ -1,61 +1,71 @@
-# <a name="table-resource-type"></a>テーブル リソースの種類
+---
+title: テーブル リソースの種類
+description: Excel の表を表します。
+ms.openlocfilehash: 0a078965febef44f1fc27f21c7c29cc184ea526a
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27074119"
+---
+# <a name="table-resource-type"></a><span data-ttu-id="b68d7-103">テーブル リソースの種類</span><span class="sxs-lookup"><span data-stu-id="b68d7-103">Table resource type</span></span>
 
-Excel の表を表します。
+> <span data-ttu-id="b68d7-104">**重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。</span><span class="sxs-lookup"><span data-stu-id="b68d7-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="b68d7-105">実稼働アプリケーションでの、これらの API の使用はサポートされていません。</span><span class="sxs-lookup"><span data-stu-id="b68d7-105">Use of these APIs in production applications is not supported.</span></span>
 
+<span data-ttu-id="b68d7-106">Excel の表を表します。</span><span class="sxs-lookup"><span data-stu-id="b68d7-106">Represents an Excel table.</span></span>
 
-## <a name="methods"></a>メソッド
+## <a name="methods"></a><span data-ttu-id="b68d7-107">メソッド</span><span class="sxs-lookup"><span data-stu-id="b68d7-107">Methods</span></span>
 
-| メソッド           | 戻り値の型    |説明|
+| <span data-ttu-id="b68d7-108">メソッド</span><span class="sxs-lookup"><span data-stu-id="b68d7-108">Method</span></span>           | <span data-ttu-id="b68d7-109">戻り値の型</span><span class="sxs-lookup"><span data-stu-id="b68d7-109">Return Type</span></span>    |<span data-ttu-id="b68d7-110">説明</span><span class="sxs-lookup"><span data-stu-id="b68d7-110">Description</span></span>|
 |:---------------|:--------|:----------|
-|[テーブルを取得する](../api/table_get.md) | [Table](table.md) |テーブル オブジェクトのプロパティと関係を読み取ります。|
-|[TableColumn を作成する](../api/table_post_columns.md) |[TableColumn](tablecolumn.md)| 列コレクションに投稿して、新しい TableColumn を作成します。|
-|[列を一覧表示する](../api/table_list_columns.md) |[TableColumn](tablecolumn.md) コレクション| TableColumn オブジェクトのコレクションを取得します。|
-|[TableRow を作成します。](../api/table_post_rows.md) |[TableRow](tablerow.md)| 行コレクションに投稿して、新しい bleRow を作成します。|
-|[行を一覧表示する](../api/table_list_rows.md) |[TableRow](tablerow.md) コレクション| TableRow オブジェクトのコレクションを取得します。|
-|[Update](../api/table_update.md) | [Table](table.md)    |テーブル オブジェクトを更新します。 |
-|[Databodyrange](../api/table_databodyrange.md)|[Range](range.md)|テーブルのデータ本体に関連付けられた範囲オブジェクトを取得します。|
-|[Headerrowrange](../api/table_headerrowrange.md)|[Range](range.md)|テーブルのヘッダー行に関連付けられた範囲オブジェクトを取得します。|
-|[Range](../api/table_range.md)|[Range](range.md)|テーブル全体に関連付けられた範囲オブジェクトを取得します。|
-|[Totalrowrange](../api/table_totalrowrange.md)|[Range](range.md)|テーブルの集計行に関連付けられた範囲オブジェクトを取得します。|
-|[Clearfilters](../api/table_clearfilters.md)|なし|現在テーブルに適用されているすべてのフィルターをクリアします。|
-|[Converttorange](../api/table_converttorange.md)|[Range](range.md)|テーブルを通常の範囲のセルに変換します。すべてのデータが保持されます。|
-|[Delete](../api/table_delete.md)|なし|テーブルを削除します。|
-|[Reapplyfilters](../api/table_reapplyfilters.md)|なし|現在テーブルにあるすべてのフィルターを再適用します。|
-|[List](../api/table_list.md) | [Table](table.md) コレクション |テーブル オブジェクトのコレクションを取得します。 |
-|[Add](../api/tablecollection_add.md)|[Table](table.md)|新しいテーブルを作成します。範囲のソース アドレスにより、テーブルが追加されるワークシートが判断されます。テーブルが追加できない場合 (たとえば、アドレスが無効な場合や、テーブルが別のテーブルと重複している場合) は、エラーがスローされます。|
+|[<span data-ttu-id="b68d7-111">テーブルを取得する</span><span class="sxs-lookup"><span data-stu-id="b68d7-111">Get Table</span></span>](../api/table-get.md) | [<span data-ttu-id="b68d7-112">Table</span><span class="sxs-lookup"><span data-stu-id="b68d7-112">Table</span></span>](table.md) |<span data-ttu-id="b68d7-113">テーブル オブジェクトのプロパティと関係を読み取ります。</span><span class="sxs-lookup"><span data-stu-id="b68d7-113">Read properties and relationships of table object.</span></span>|
+|[<span data-ttu-id="b68d7-114">TableColumn を作成する</span><span class="sxs-lookup"><span data-stu-id="b68d7-114">Create TableColumn</span></span>](../api/table-post-columns.md) |[<span data-ttu-id="b68d7-115">TableColumn</span><span class="sxs-lookup"><span data-stu-id="b68d7-115">TableColumn</span></span>](tablecolumn.md)| <span data-ttu-id="b68d7-116">列コレクションに投稿して、新しい TableColumn を作成します。</span><span class="sxs-lookup"><span data-stu-id="b68d7-116">Create a new TableColumn by posting to the columns collection.</span></span>|
+|[<span data-ttu-id="b68d7-117">列を一覧表示する</span><span class="sxs-lookup"><span data-stu-id="b68d7-117">List columns</span></span>](../api/table-list-columns.md) |<span data-ttu-id="b68d7-118">[TableColumn](tablecolumn.md) コレクション</span><span class="sxs-lookup"><span data-stu-id="b68d7-118">[TableColumn](tablecolumn.md) collection</span></span>| <span data-ttu-id="b68d7-119">TableColumn オブジェクトのコレクションを取得します。</span><span class="sxs-lookup"><span data-stu-id="b68d7-119">Get a TableColumn object collection.</span></span>|
+|[<span data-ttu-id="b68d7-120">TableRow を作成します。</span><span class="sxs-lookup"><span data-stu-id="b68d7-120">Create TableRow</span></span>](../api/table-post-rows.md) |[<span data-ttu-id="b68d7-121">TableRow</span><span class="sxs-lookup"><span data-stu-id="b68d7-121">TableRow</span></span>](tablerow.md)| <span data-ttu-id="b68d7-122">行コレクションに投稿して、新しい bleRow を作成します。</span><span class="sxs-lookup"><span data-stu-id="b68d7-122">Create a new TableRow by posting to the rows collection.</span></span>|
+|[<span data-ttu-id="b68d7-123">行を一覧表示する</span><span class="sxs-lookup"><span data-stu-id="b68d7-123">List rows</span></span>](../api/table-list-rows.md) |<span data-ttu-id="b68d7-124">[TableRow](tablerow.md) コレクション</span><span class="sxs-lookup"><span data-stu-id="b68d7-124">[TableRow](tablerow.md) collection</span></span>| <span data-ttu-id="b68d7-125">TableRow オブジェクトのコレクションを取得します。</span><span class="sxs-lookup"><span data-stu-id="b68d7-125">Get a TableRow object collection.</span></span>|
+|[<span data-ttu-id="b68d7-126">Update</span><span class="sxs-lookup"><span data-stu-id="b68d7-126">Update</span></span>](../api/table-update.md) | [<span data-ttu-id="b68d7-127">Table</span><span class="sxs-lookup"><span data-stu-id="b68d7-127">Table</span></span>](table.md)   |<span data-ttu-id="b68d7-128">テーブル オブジェクトを更新します。</span><span class="sxs-lookup"><span data-stu-id="b68d7-128">Update Table object.</span></span> |
+|[<span data-ttu-id="b68d7-129">Databodyrange</span><span class="sxs-lookup"><span data-stu-id="b68d7-129">Databodyrange</span></span>](../api/table-databodyrange.md)|[<span data-ttu-id="b68d7-130">Range</span><span class="sxs-lookup"><span data-stu-id="b68d7-130">Range</span></span>](range.md)|<span data-ttu-id="b68d7-131">テーブルのデータ本体に関連付けられた範囲オブジェクトを取得します。</span><span class="sxs-lookup"><span data-stu-id="b68d7-131">Gets the range object associated with the data body of the table.</span></span>|
+|[<span data-ttu-id="b68d7-132">Headerrowrange</span><span class="sxs-lookup"><span data-stu-id="b68d7-132">Headerrowrange</span></span>](../api/table-headerrowrange.md)|[<span data-ttu-id="b68d7-133">Range</span><span class="sxs-lookup"><span data-stu-id="b68d7-133">Range</span></span>](range.md)|<span data-ttu-id="b68d7-134">テーブルのヘッダー行に関連付けられた範囲オブジェクトを取得します。</span><span class="sxs-lookup"><span data-stu-id="b68d7-134">Gets the range object associated with header row of the table.</span></span>|
+|[<span data-ttu-id="b68d7-135">Range</span><span class="sxs-lookup"><span data-stu-id="b68d7-135">Range</span></span>](../api/table-range.md)|[<span data-ttu-id="b68d7-136">Range</span><span class="sxs-lookup"><span data-stu-id="b68d7-136">Range</span></span>](range.md)|<span data-ttu-id="b68d7-137">テーブル全体に関連付けられた範囲オブジェクトを取得します。</span><span class="sxs-lookup"><span data-stu-id="b68d7-137">Gets the range object associated with the entire table.</span></span>|
+|[<span data-ttu-id="b68d7-138">Totalrowrange</span><span class="sxs-lookup"><span data-stu-id="b68d7-138">Totalrowrange</span></span>](../api/table-totalrowrange.md)|[<span data-ttu-id="b68d7-139">Range</span><span class="sxs-lookup"><span data-stu-id="b68d7-139">Range</span></span>](range.md)|<span data-ttu-id="b68d7-140">テーブルの集計行に関連付けられた範囲オブジェクトを取得します。</span><span class="sxs-lookup"><span data-stu-id="b68d7-140">Gets the range object associated with totals row of the table.</span></span>|
+|[<span data-ttu-id="b68d7-141">Clearfilters</span><span class="sxs-lookup"><span data-stu-id="b68d7-141">Clearfilters</span></span>](../api/table-clearfilters.md)|<span data-ttu-id="b68d7-142">なし</span><span class="sxs-lookup"><span data-stu-id="b68d7-142">None</span></span>|<span data-ttu-id="b68d7-143">現在テーブルに適用されているすべてのフィルターをクリアします。</span><span class="sxs-lookup"><span data-stu-id="b68d7-143">Clears all the filters currently applied on the table.</span></span>|
+|[<span data-ttu-id="b68d7-144">Converttorange</span><span class="sxs-lookup"><span data-stu-id="b68d7-144">Converttorange</span></span>](../api/table-converttorange.md)|[<span data-ttu-id="b68d7-145">Range</span><span class="sxs-lookup"><span data-stu-id="b68d7-145">Range</span></span>](range.md)|<span data-ttu-id="b68d7-p102">テーブルを通常の範囲のセルに変換します。すべてのデータが保持されます。</span><span class="sxs-lookup"><span data-stu-id="b68d7-p102">Converts the table into a normal range of cells. All data is preserved.</span></span>|
+|[<span data-ttu-id="b68d7-148">Delete</span><span class="sxs-lookup"><span data-stu-id="b68d7-148">Delete</span></span>](../api/table-delete.md)|<span data-ttu-id="b68d7-149">なし</span><span class="sxs-lookup"><span data-stu-id="b68d7-149">None</span></span>|<span data-ttu-id="b68d7-150">テーブルを削除します。</span><span class="sxs-lookup"><span data-stu-id="b68d7-150">Deletes the table.</span></span>|
+|[<span data-ttu-id="b68d7-151">Reapplyfilters</span><span class="sxs-lookup"><span data-stu-id="b68d7-151">Reapplyfilters</span></span>](../api/table-reapplyfilters.md)|<span data-ttu-id="b68d7-152">なし</span><span class="sxs-lookup"><span data-stu-id="b68d7-152">None</span></span>|<span data-ttu-id="b68d7-153">現在テーブルにあるすべてのフィルターを再適用します。</span><span class="sxs-lookup"><span data-stu-id="b68d7-153">Reapplies all the filters currently on the table.</span></span>|
+|[<span data-ttu-id="b68d7-154">List</span><span class="sxs-lookup"><span data-stu-id="b68d7-154">List</span></span>](../api/table-list.md) | <span data-ttu-id="b68d7-155">[Table](table.md) コレクション</span><span class="sxs-lookup"><span data-stu-id="b68d7-155">[Table](table.md) collection</span></span> |<span data-ttu-id="b68d7-156">テーブル オブジェクトのコレクションを取得します。</span><span class="sxs-lookup"><span data-stu-id="b68d7-156">Get table object collection.</span></span> |
+|[<span data-ttu-id="b68d7-157">Add</span><span class="sxs-lookup"><span data-stu-id="b68d7-157">Add</span></span>](../api/tablecollection-add.md)|[<span data-ttu-id="b68d7-158">Table</span><span class="sxs-lookup"><span data-stu-id="b68d7-158">Table</span></span>](table.md)|<span data-ttu-id="b68d7-p103">新しいテーブルを作成します。範囲のソース アドレスにより、テーブルが追加されるワークシートが判断されます。テーブルが追加できない場合 (たとえば、アドレスが無効な場合や、テーブルが別のテーブルと重複している場合) は、エラーがスローされます。</span><span class="sxs-lookup"><span data-stu-id="b68d7-p103">Create a new table. The range source address determines the worksheet under which the table will be added. If the table cannot be added (e.g., because the address is invalid, or the table would overlap with another table), an error will be thrown.</span></span>|
 
-
-
-## <a name="properties"></a>プロパティ
-| プロパティ       | 型    |説明|
+## <a name="properties"></a><span data-ttu-id="b68d7-162">プロパティ</span><span class="sxs-lookup"><span data-stu-id="b68d7-162">Properties</span></span>
+| <span data-ttu-id="b68d7-163">プロパティ</span><span class="sxs-lookup"><span data-stu-id="b68d7-163">Property</span></span>     | <span data-ttu-id="b68d7-164">型</span><span class="sxs-lookup"><span data-stu-id="b68d7-164">Type</span></span>   |<span data-ttu-id="b68d7-165">説明</span><span class="sxs-lookup"><span data-stu-id="b68d7-165">Description</span></span>|
 |:---------------|:--------|:----------|
-|id|int|指定されたブックのテーブルを一意に識別する値を返します。識別子の値は、テーブルの名前が変更された場合も変わりません。読み取り専用です。|
-|name|string|テーブルの名前。|
-|showHeaders|boolean|ヘッダー行を表示するかどうかを示します。この値によって、ヘッダー行の表示または削除を設定できます。|
-|showTotals|boolean|集計行を表示するかどうかを示します。この値によって、集計行の表示または削除を設定できます。|
-|style|string|テーブル スタイルを表す定数値。使用可能な値は次のとおりです。TableStyleLight1 から TableStyleLight21、TableStyleMedium1 から TableStyleMedium28、TableStyleStyleDark1 から TableStyleStyleDark11。ブックに存在するカスタムのユーザー定義スタイルも指定できます。|
-|highlightFirstColumn|Boolean|最初の列に特別な書式設定が含まれているかどうかを示します。    |
-|highlightLastColumn|Boolean|最後の列に特別な書式設定が含まれているかどうかを示します。    |
-|showBandedColumns|Boolean|テーブルを見やすくするため、奇数列を偶数列とは異なる方法で強調表示する書式設定にして、列を縞模様で表示するかどうかを示します。    |
-|showBandedRows|Boolean|テーブルを見やすくするため、奇数行を偶数行とは異なる方法で強調表示する書式設定にして、行を縞模様で表示するかどうかを示します。    |
-|showFilterButton|Boolean|フィルター ボタンを各列のヘッダーの上部に表示するかどうかを示します。これは、テーブルにヘッダー行が含まれている場合のみ設定できます。    |
+|<span data-ttu-id="b68d7-166">ID</span><span class="sxs-lookup"><span data-stu-id="b68d7-166">id</span></span>|<span data-ttu-id="b68d7-167">文字列</span><span class="sxs-lookup"><span data-stu-id="b68d7-167">string</span></span>|<span data-ttu-id="b68d7-168">指定されたブックのテーブルを一意に識別する値を返します。</span><span class="sxs-lookup"><span data-stu-id="b68d7-168">Returns a value that uniquely identifies the table in a given workbook.</span></span> <span data-ttu-id="b68d7-169">識別子の値は、テーブルの名前が変更された場合も変わりません。</span><span class="sxs-lookup"><span data-stu-id="b68d7-169">The value of the identifier remains the same even when the table is renamed.</span></span> <span data-ttu-id="b68d7-170">このプロパティは符号化文字列値として解釈し、その他の型に解析すべきではありません。</span><span class="sxs-lookup"><span data-stu-id="b68d7-170">This property should be interpreted as an opaque string value and should not be parsed to any other type.</span></span> <span data-ttu-id="b68d7-171">読み取り専用。</span><span class="sxs-lookup"><span data-stu-id="b68d7-171">Read-only.</span></span>|
+|<span data-ttu-id="b68d7-172">name</span><span class="sxs-lookup"><span data-stu-id="b68d7-172">name</span></span>|<span data-ttu-id="b68d7-173">文字列</span><span class="sxs-lookup"><span data-stu-id="b68d7-173">string</span></span>|<span data-ttu-id="b68d7-174">テーブルの名前。</span><span class="sxs-lookup"><span data-stu-id="b68d7-174">Name of the table.</span></span>|
+|<span data-ttu-id="b68d7-175">showHeaders</span><span class="sxs-lookup"><span data-stu-id="b68d7-175">showHeaders</span></span>|<span data-ttu-id="b68d7-176">boolean</span><span class="sxs-lookup"><span data-stu-id="b68d7-176">boolean</span></span>|<span data-ttu-id="b68d7-p105">ヘッダー行を表示するかどうかを示します。この値によって、ヘッダー行の表示または削除を設定できます。</span><span class="sxs-lookup"><span data-stu-id="b68d7-p105">Indicates whether the header row is visible or not. This value can be set to show or remove the header row.</span></span>|
+|<span data-ttu-id="b68d7-179">showTotals</span><span class="sxs-lookup"><span data-stu-id="b68d7-179">showTotals</span></span>|<span data-ttu-id="b68d7-180">ブール値</span><span class="sxs-lookup"><span data-stu-id="b68d7-180">boolean</span></span>|<span data-ttu-id="b68d7-p106">集計行を表示するかどうかを示します。この値によって、集計行の表示または削除を設定できます。</span><span class="sxs-lookup"><span data-stu-id="b68d7-p106">Indicates whether the total row is visible or not. This value can be set to show or remove the total row.</span></span>|
+|<span data-ttu-id="b68d7-183">style</span><span class="sxs-lookup"><span data-stu-id="b68d7-183">style</span></span>|<span data-ttu-id="b68d7-184">文字列</span><span class="sxs-lookup"><span data-stu-id="b68d7-184">string</span></span>|<span data-ttu-id="b68d7-p107">テーブル スタイルを表す定数値。使用可能な値は次のとおりです。TableStyleLight1 から TableStyleLight21、TableStyleMedium1 から TableStyleMedium28、TableStyleStyleDark1 から TableStyleStyleDark11。ブックに存在するカスタムのユーザー定義スタイルも指定できます。</span><span class="sxs-lookup"><span data-stu-id="b68d7-p107">Constant value that represents the Table style. Possible values are: TableStyleLight1 thru TableStyleLight21, TableStyleMedium1 thru TableStyleMedium28, TableStyleStyleDark1 thru TableStyleStyleDark11. A custom user-defined style present in the workbook can also be specified.</span></span>|
+|<span data-ttu-id="b68d7-188">highlightFirstColumn</span><span class="sxs-lookup"><span data-stu-id="b68d7-188">highlightFirstColumn</span></span>|<span data-ttu-id="b68d7-189">Boolean</span><span class="sxs-lookup"><span data-stu-id="b68d7-189">Boolean</span></span>|<span data-ttu-id="b68d7-190">最初の列に特別な書式設定が含まれているかどうかを示します。</span><span class="sxs-lookup"><span data-stu-id="b68d7-190">Indicates whether the first column contains special formatting.</span></span>   |
+|<span data-ttu-id="b68d7-191">highlightLastColumn</span><span class="sxs-lookup"><span data-stu-id="b68d7-191">highlightLastColumn</span></span>|<span data-ttu-id="b68d7-192">Boolean</span><span class="sxs-lookup"><span data-stu-id="b68d7-192">Boolean</span></span>|<span data-ttu-id="b68d7-193">最後の列に特別な書式設定が含まれているかどうかを示します。</span><span class="sxs-lookup"><span data-stu-id="b68d7-193">Indicates whether the last column contains special formatting.</span></span> |
+|<span data-ttu-id="b68d7-194">showBandedColumns</span><span class="sxs-lookup"><span data-stu-id="b68d7-194">showBandedColumns</span></span>|<span data-ttu-id="b68d7-195">Boolean</span><span class="sxs-lookup"><span data-stu-id="b68d7-195">Boolean</span></span>|<span data-ttu-id="b68d7-196">テーブルを見やすくするため、奇数列を偶数列とは異なる方法で強調表示する書式設定にして、列を縞模様で表示するかどうかを示します。</span><span class="sxs-lookup"><span data-stu-id="b68d7-196">Indicates whether the columns show banded formatting in which odd columns are highlighted differently from even ones to make reading the table easier.</span></span>   |
+|<span data-ttu-id="b68d7-197">showBandedRows</span><span class="sxs-lookup"><span data-stu-id="b68d7-197">showBandedRows</span></span>|<span data-ttu-id="b68d7-198">Boolean</span><span class="sxs-lookup"><span data-stu-id="b68d7-198">Boolean</span></span>|<span data-ttu-id="b68d7-199">テーブルを見やすくするため、奇数行を偶数行とは異なる方法で強調表示する書式設定にして、行を縞模様で表示するかどうかを示します。</span><span class="sxs-lookup"><span data-stu-id="b68d7-199">Indicates whether the rows show banded formatting in which odd rows are highlighted differently from even ones to make reading the table easier.</span></span>    |
+|<span data-ttu-id="b68d7-200">showFilterButton</span><span class="sxs-lookup"><span data-stu-id="b68d7-200">showFilterButton</span></span>|<span data-ttu-id="b68d7-201">Boolean</span><span class="sxs-lookup"><span data-stu-id="b68d7-201">Boolean</span></span>|<span data-ttu-id="b68d7-p108">フィルター ボタンを各列のヘッダーの上部に表示するかどうかを示します。これは、テーブルにヘッダー行が含まれている場合のみ設定できます。</span><span class="sxs-lookup"><span data-stu-id="b68d7-p108">Indicates whether the filter buttons are visible at the top of each column header. Setting this is only allowed if the table contains a header row.</span></span>   |
+|<span data-ttu-id="b68d7-204">legacyId</span><span class="sxs-lookup"><span data-stu-id="b68d7-204">legacyId</span></span>|<span data-ttu-id="b68d7-205">String</span><span class="sxs-lookup"><span data-stu-id="b68d7-205">String</span></span>|<span data-ttu-id="b68d7-206">以前の Excle クライアントで使用されていたレガシ Id です。</span><span class="sxs-lookup"><span data-stu-id="b68d7-206">Legacy Id used in older Excle clients.</span></span> <span data-ttu-id="b68d7-207">識別子の値は、テーブルの名前が変更された場合も変わりません。</span><span class="sxs-lookup"><span data-stu-id="b68d7-207">The value of the identifier remains the same even when the table is renamed.</span></span> <span data-ttu-id="b68d7-208">このプロパティは符号化文字列値として解釈し、その他の型に解析すべきではありません。</span><span class="sxs-lookup"><span data-stu-id="b68d7-208">This property should be interpreted as an opaque string value and should not be parsed to any other type.</span></span> <span data-ttu-id="b68d7-209">読み取り専用。</span><span class="sxs-lookup"><span data-stu-id="b68d7-209">Read-only.</span></span>   |
 
-## <a name="relationships"></a>リレーションシップ
-| リレーションシップ | 型    |説明|
+## <a name="relationships"></a><span data-ttu-id="b68d7-210">リレーションシップ</span><span class="sxs-lookup"><span data-stu-id="b68d7-210">Relationships</span></span>
+| <span data-ttu-id="b68d7-211">リレーションシップ</span><span class="sxs-lookup"><span data-stu-id="b68d7-211">Relationship</span></span> | <span data-ttu-id="b68d7-212">型</span><span class="sxs-lookup"><span data-stu-id="b68d7-212">Type</span></span>   |<span data-ttu-id="b68d7-213">説明</span><span class="sxs-lookup"><span data-stu-id="b68d7-213">Description</span></span>|
 |:---------------|:--------|:----------|
-|columns|[TableColumn](tablecolumn.md) コレクション|テーブルに含まれるすべての列のコレクションを表します。読み取り専用です。|
-|rows|[TableRow](tablerow.md) コレクション|テーブルに含まれるすべての行のコレクションを表します。読み取り専用です。|
-|sort|[TableSort](tablesort.md)|テーブル内の並べ替えを表します。読み取り専用。|
-|ワークシート|[Worksheet](worksheet.md)|現在のテーブルを含んでいるワークシート。読み取り専用です。|
+|<span data-ttu-id="b68d7-214">columns</span><span class="sxs-lookup"><span data-stu-id="b68d7-214">columns</span></span>|<span data-ttu-id="b68d7-215">[TableColumn](tablecolumn.md) コレクション</span><span class="sxs-lookup"><span data-stu-id="b68d7-215">[TableColumn](tablecolumn.md) collection</span></span>|<span data-ttu-id="b68d7-p110">テーブルに含まれるすべての列のコレクションを表します。読み取り専用です。</span><span class="sxs-lookup"><span data-stu-id="b68d7-p110">Represents a collection of all the columns in the table. Read-only.</span></span>|
+|<span data-ttu-id="b68d7-218">rows</span><span class="sxs-lookup"><span data-stu-id="b68d7-218">rows</span></span>|<span data-ttu-id="b68d7-219">[TableRow](tablerow.md) コレクション</span><span class="sxs-lookup"><span data-stu-id="b68d7-219">[TableRow](tablerow.md) collection</span></span>|<span data-ttu-id="b68d7-p111">テーブルに含まれるすべての行のコレクションを表します。読み取り専用です。</span><span class="sxs-lookup"><span data-stu-id="b68d7-p111">Represents a collection of all the rows in the table. Read-only.</span></span>|
+|<span data-ttu-id="b68d7-222">sort</span><span class="sxs-lookup"><span data-stu-id="b68d7-222">sort</span></span>|[<span data-ttu-id="b68d7-223">TableSort</span><span class="sxs-lookup"><span data-stu-id="b68d7-223">TableSort</span></span>](tablesort.md)|<span data-ttu-id="b68d7-p112">テーブル内の並べ替えを表します。読み取り専用。</span><span class="sxs-lookup"><span data-stu-id="b68d7-p112">Represents the sorting for the table. Read-only.</span></span>|
+|<span data-ttu-id="b68d7-226">ワークシート</span><span class="sxs-lookup"><span data-stu-id="b68d7-226">worksheet</span></span>|[<span data-ttu-id="b68d7-227">Worksheet</span><span class="sxs-lookup"><span data-stu-id="b68d7-227">Worksheet</span></span>](worksheet.md)|<span data-ttu-id="b68d7-p113">現在のテーブルを含んでいるワークシート。読み取り専用です。</span><span class="sxs-lookup"><span data-stu-id="b68d7-p113">The worksheet containing the current table. Read-only.</span></span>|
 
-## <a name="json-representation"></a>JSON 表記
+## <a name="json-representation"></a><span data-ttu-id="b68d7-230">JSON 表記</span><span class="sxs-lookup"><span data-stu-id="b68d7-230">JSON representation</span></span>
 
-以下は、リソースの JSON 表記です。
+<span data-ttu-id="b68d7-231">以下は、リソースの JSON 表記です。</span><span class="sxs-lookup"><span data-stu-id="b68d7-231">Here is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
   "optionalProperties": [
-
+     "legacyId"
   ],
   "@odata.type": "microsoft.graph.table"
 }-->
@@ -71,7 +81,8 @@ Excel の表を表します。
   "showFilterButton": true,
   "showHeaders": true,
   "showTotals": true,
-  "style": "String"
+  "style": "String",
+  "legacyId": "String"
 }
 
 ```
