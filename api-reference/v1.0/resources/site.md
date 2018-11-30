@@ -3,44 +3,60 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
 title: Site
-ms.openlocfilehash: db465f93f336a51d862daf6e05b1d6bc422247ea
-ms.sourcegitcommit: 7aea7a97e36e6d146214de3a90fdbc71628aadba
-ms.translationtype: HT
+ms.openlocfilehash: ae8962dfa38c3c6f3e06ccb687eb42a4a8262f1a
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27024314"
 ---
-# <a name="site-resource"></a><span data-ttu-id="ad97e-102">Site リソース</span><span class="sxs-lookup"><span data-stu-id="ad97e-102">Site resource</span></span>
+# <a name="site-resource"></a><span data-ttu-id="e7f0b-102">Site リソース</span><span class="sxs-lookup"><span data-stu-id="e7f0b-102">Site resource</span></span>
 
-<span data-ttu-id="ad97e-103">**サイト** リソースは、メタデータと SharePoint サイトのリレーションシップを提供します。</span><span class="sxs-lookup"><span data-stu-id="ad97e-103">The **site** resource provides metadata and relationships for a SharePoint site.</span></span>
+<span data-ttu-id="e7f0b-103">**サイト** リソースは、メタデータと SharePoint サイトのリレーションシップを提供します。</span><span class="sxs-lookup"><span data-stu-id="e7f0b-103">The **site** resource provides metadata and relationships for a SharePoint site.</span></span>
 
-## <a name="tasks"></a><span data-ttu-id="ad97e-104">タスク</span><span class="sxs-lookup"><span data-stu-id="ad97e-104">Tasks</span></span>
+## <a name="tasks"></a><span data-ttu-id="e7f0b-104">タスク</span><span class="sxs-lookup"><span data-stu-id="e7f0b-104">Tasks</span></span>
 
-<span data-ttu-id="ad97e-105">以下のすべての例は、`https://graph.microsoft.com/v1.0` からの相対指定です。</span><span class="sxs-lookup"><span data-stu-id="ad97e-105">All examples below are relative to `https://graph.microsoft.com/v1.0`.</span></span>
+<span data-ttu-id="e7f0b-105">以下のすべての例は、`https://graph.microsoft.com/v1.0` からの相対指定です。</span><span class="sxs-lookup"><span data-stu-id="e7f0b-105">All examples below are relative to `https://graph.microsoft.com/v1.0`.</span></span>
 
-| <span data-ttu-id="ad97e-106">タスク名</span><span class="sxs-lookup"><span data-stu-id="ad97e-106">Task name</span></span>                | <span data-ttu-id="ad97e-107">要求の例</span><span class="sxs-lookup"><span data-stu-id="ad97e-107">Example Request</span></span>
+| <span data-ttu-id="e7f0b-106">タスク名</span><span class="sxs-lookup"><span data-stu-id="e7f0b-106">Task name</span></span>                | <span data-ttu-id="e7f0b-107">要求の例</span><span class="sxs-lookup"><span data-stu-id="e7f0b-107">Example Request</span></span>
 |:-------------------------|:--------------------------------------------------
-| <span data-ttu-id="ad97e-108">[ルート サイトを取得する][]</span><span class="sxs-lookup"><span data-stu-id="ad97e-108">[Get root site][]</span></span>        | <span data-ttu-id="ad97e-109">GET /sites/root</span><span class="sxs-lookup"><span data-stu-id="ad97e-109">GET /sites/root</span></span>
-| <span data-ttu-id="ad97e-110">[サイトを取得する][]</span><span class="sxs-lookup"><span data-stu-id="ad97e-110">[Get site][]</span></span>             | <span data-ttu-id="ad97e-111">GET /sites/{site-id}</span><span class="sxs-lookup"><span data-stu-id="ad97e-111">GET /sites/{site-id}</span></span>
-| <span data-ttu-id="ad97e-112">[パスを使用してサイトを取得する][]</span><span class="sxs-lookup"><span data-stu-id="ad97e-112">[Get site by path][]</span></span>     | <span data-ttu-id="ad97e-113">GET /sites/{hostname}:/{site-path}</span><span class="sxs-lookup"><span data-stu-id="ad97e-113">GET /sites/{hostname}:/{site-path}</span></span>
-| <span data-ttu-id="ad97e-114">[グループのサイトを取得する][]</span><span class="sxs-lookup"><span data-stu-id="ad97e-114">[Get site for a group][]</span></span> | <span data-ttu-id="ad97e-115">GET /groups/{group-id}/sites/root</span><span class="sxs-lookup"><span data-stu-id="ad97e-115">GET /groups/{group-id}/sites/root</span></span>
-| <span data-ttu-id="ad97e-116">[サイトを検索する][]</span><span class="sxs-lookup"><span data-stu-id="ad97e-116">[Search for sites][]</span></span>     | <span data-ttu-id="ad97e-117">GET /sites?search={query}</span><span class="sxs-lookup"><span data-stu-id="ad97e-117">GET /sites?search={query}</span></span>
+| <span data-ttu-id="e7f0b-108">[ルート サイトを取得する][]</span><span class="sxs-lookup"><span data-stu-id="e7f0b-108">[Get root site][]</span></span>        | <span data-ttu-id="e7f0b-109">GET /sites/root</span><span class="sxs-lookup"><span data-stu-id="e7f0b-109">GET /sites/root</span></span>
+| <span data-ttu-id="e7f0b-110">[サイトを取得する][]</span><span class="sxs-lookup"><span data-stu-id="e7f0b-110">[Get site][]</span></span>             | <span data-ttu-id="e7f0b-111">GET /sites/{site-id}</span><span class="sxs-lookup"><span data-stu-id="e7f0b-111">GET /sites/{site-id}</span></span>
+| <span data-ttu-id="e7f0b-112">[パスを使用してサイトを取得する][]</span><span class="sxs-lookup"><span data-stu-id="e7f0b-112">[Get site by path][]</span></span>     | <span data-ttu-id="e7f0b-113">GET /sites/{hostname}:/{site-path}</span><span class="sxs-lookup"><span data-stu-id="e7f0b-113">GET /sites/{hostname}:/{site-path}</span></span>
+| <span data-ttu-id="e7f0b-114">[グループのサイトを取得する][]</span><span class="sxs-lookup"><span data-stu-id="e7f0b-114">[Get site for a group][]</span></span> | <span data-ttu-id="e7f0b-115">GET /groups/{group-id}/sites/root</span><span class="sxs-lookup"><span data-stu-id="e7f0b-115">GET /groups/{group-id}/sites/root</span></span>
+| <span data-ttu-id="e7f0b-116">[サイトを検索する][]</span><span class="sxs-lookup"><span data-stu-id="e7f0b-116">[Search for sites][]</span></span>     | <span data-ttu-id="e7f0b-117">GET /sites?search={query}</span><span class="sxs-lookup"><span data-stu-id="e7f0b-117">GET /sites?search={query}</span></span>
 
-[サイトを取得する]: ../api/site_get.md
-[ルート サイトを取得する]: ../api/site_get.md
-[パスを使用してサイトを取得する]: ../api/site_getbypath.md
-[グループのサイトを取得する]: ../api/site_get.md
-[サイトを検索する]: ../api/site_search.md
+[サイトを取得する]: ../api/site-get.md
+[Get site]: ../api/site-get.md
+[ルート サイトを取得する]: ../api/site-get.md
+[Get root site]: ../api/site-get.md
+[パスを使用してサイトを取得する]: ../api/site-getbypath.md
+[Get site by path]: ../api/site-getbypath.md
+[グループのサイトを取得する]: ../api/site-get.md
+[Get site for a group]: ../api/site-get.md
+[サイトを検索する]: ../api/site-search.md
+[Search for sites]: ../api/site-search.md
 
-## <a name="json-representation"></a><span data-ttu-id="ad97e-123">JSON 表記</span><span class="sxs-lookup"><span data-stu-id="ad97e-123">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="e7f0b-123">JSON 表記</span><span class="sxs-lookup"><span data-stu-id="e7f0b-123">JSON representation</span></span>
 
-<span data-ttu-id="ad97e-124">以下は、**サイト** リソースの JSON 表記です。</span><span class="sxs-lookup"><span data-stu-id="ad97e-124">Here is a JSON representation of a **site** resource.</span></span>
+<span data-ttu-id="e7f0b-124">以下は、**サイト** リソースの JSON 表記です。</span><span class="sxs-lookup"><span data-stu-id="e7f0b-124">Here is a JSON representation of a **site** resource.</span></span>
 
-<span data-ttu-id="ad97e-125">**driveItem** リソースは [**baseItem**](baseitem.md) から派生し、そのリソースからプロパティを継承します。</span><span class="sxs-lookup"><span data-stu-id="ad97e-125">The **driveItem** resource is derived from [**baseItem**](baseitem.md) and inherits properties from that resource.</span></span>
+<span data-ttu-id="e7f0b-125">**サイト** リソースは [**baseItem**](baseitem.md) から派生しており、そのリソースからプロパティを継承しています。</span><span class="sxs-lookup"><span data-stu-id="e7f0b-125">The **site** resource is derived from [**baseItem**](baseitem.md) and inherits properties from that resource.</span></span>
 
-<!-- { "blockType": "resource",
-       "@odata.type": "microsoft.graph.site",
-       "keyProperty": "id",
-       "optionalProperties": [ "root", "sharepointIds", "siteCollection", "drive", "drives", "sites" ] } -->
+<!--{
+  "blockType": "resource",
+  "optionalProperties": [
+    "root",
+    "sharepointIds",
+    "siteCollection",
+    "drive",
+    "drives",
+    "sites"
+  ],
+  "keyProperty": "id",
+  "baseType": "microsoft.graph.baseItem",
+  "@odata.type": "microsoft.graph.site"
+}-->
 
 ```json
 {
@@ -58,7 +74,7 @@ ms.lasthandoff: 09/28/2017
   "lists": [ { "@odata.type": "microsoft.graph.list" }],
   "sites": [ { "@odata.type": "microsoft.graph.site"} ],
   "columns": [ { "@odata.type": "microsoft.graph.columnDefinition" }],
-  "onenote": [ { "@odata.type": "microsoft.graph.onenote"} ],
+  "onenote": { "@odata.type": "microsoft.graph.onenote"},
 
   /* inherited from baseItem */
   "name": "string",
@@ -70,37 +86,39 @@ ms.lasthandoff: 09/28/2017
 }
 ```
 
-## <a name="properties"></a><span data-ttu-id="ad97e-126">プロパティ</span><span class="sxs-lookup"><span data-stu-id="ad97e-126">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="e7f0b-126">プロパティ</span><span class="sxs-lookup"><span data-stu-id="e7f0b-126">Properties</span></span>
 
-| <span data-ttu-id="ad97e-127">プロパティ名</span><span class="sxs-lookup"><span data-stu-id="ad97e-127">Property name</span></span>            | <span data-ttu-id="ad97e-128">種類</span><span class="sxs-lookup"><span data-stu-id="ad97e-128">Type</span></span>                                | <span data-ttu-id="ad97e-129">説明</span><span class="sxs-lookup"><span data-stu-id="ad97e-129">Description</span></span>                                                                                    |
+| <span data-ttu-id="e7f0b-127">プロパティ名</span><span class="sxs-lookup"><span data-stu-id="e7f0b-127">Property name</span></span>            | <span data-ttu-id="e7f0b-128">型</span><span class="sxs-lookup"><span data-stu-id="e7f0b-128">Type</span></span>                                | <span data-ttu-id="e7f0b-129">説明</span><span class="sxs-lookup"><span data-stu-id="e7f0b-129">Description</span></span>                                                                                    |
 | :----------------------- | :---------------------------------- | :--------------------------------------------------------------------------------------------- |
-| <span data-ttu-id="ad97e-130">**id**</span><span class="sxs-lookup"><span data-stu-id="ad97e-130">**id**</span></span>                   | <span data-ttu-id="ad97e-131">string</span><span class="sxs-lookup"><span data-stu-id="ad97e-131">string</span></span>                              | <span data-ttu-id="ad97e-p101">アイテムの一意識別子。読み取り専用です。</span><span class="sxs-lookup"><span data-stu-id="ad97e-p101">The unique identifier of the item. Read-only.</span></span>                                                  |
-| <span data-ttu-id="ad97e-134">**createdDateTime**</span><span class="sxs-lookup"><span data-stu-id="ad97e-134">**createdDateTime**</span></span>      | <span data-ttu-id="ad97e-135">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="ad97e-135">DateTimeOffset</span></span>                      | <span data-ttu-id="ad97e-p102">アイテムが作成された日時。読み取り専用です。</span><span class="sxs-lookup"><span data-stu-id="ad97e-p102">The date and time the item was created. Read-only.</span></span>                                             |
-| <span data-ttu-id="ad97e-138">**説明**</span><span class="sxs-lookup"><span data-stu-id="ad97e-138">**description**</span></span>          | <span data-ttu-id="ad97e-139">string</span><span class="sxs-lookup"><span data-stu-id="ad97e-139">string</span></span>                              | <span data-ttu-id="ad97e-140">サイトの説明テキスト。</span><span class="sxs-lookup"><span data-stu-id="ad97e-140">The descriptive text for the site.</span></span>                                                             |
-| <span data-ttu-id="ad97e-141">**displayName**</span><span class="sxs-lookup"><span data-stu-id="ad97e-141">**displayName**</span></span>          | <span data-ttu-id="ad97e-142">string</span><span class="sxs-lookup"><span data-stu-id="ad97e-142">string</span></span>                              | <span data-ttu-id="ad97e-p103">サイトの完全なタイトル。読み取り専用です。</span><span class="sxs-lookup"><span data-stu-id="ad97e-p103">The full title for the site. Read-only.</span></span>                                                        |
-| <span data-ttu-id="ad97e-145">**lastModifiedDateTime**</span><span class="sxs-lookup"><span data-stu-id="ad97e-145">**lastModifiedDateTime**</span></span> | <span data-ttu-id="ad97e-146">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="ad97e-146">DateTimeOffset</span></span>                      | <span data-ttu-id="ad97e-p104">アイテムが最後に変更された日時。読み取り専用です。</span><span class="sxs-lookup"><span data-stu-id="ad97e-p104">The date and time the item was last modified. Read-only.</span></span>                                       |
-| <span data-ttu-id="ad97e-149">**name**</span><span class="sxs-lookup"><span data-stu-id="ad97e-149">**name**</span></span>                 | <span data-ttu-id="ad97e-150">string</span><span class="sxs-lookup"><span data-stu-id="ad97e-150">string</span></span>                              | <span data-ttu-id="ad97e-151">アイテムの名前/タイトル。</span><span class="sxs-lookup"><span data-stu-id="ad97e-151">The name / title of the item.</span></span>                                                                  |
-| <span data-ttu-id="ad97e-152">**root**</span><span class="sxs-lookup"><span data-stu-id="ad97e-152">**root**</span></span>                 | [<span data-ttu-id="ad97e-153">root</span><span class="sxs-lookup"><span data-stu-id="ad97e-153">root</span></span>](root.md)                     | <span data-ttu-id="ad97e-p105">存在する場合は、これがサイト コレクションのルート サイトであることを示します。読み取り専用です。</span><span class="sxs-lookup"><span data-stu-id="ad97e-p105">If present, indicates that this is the root site in the site collection. Read-only.</span></span>            |
-| <span data-ttu-id="ad97e-156">**sharepointIds**</span><span class="sxs-lookup"><span data-stu-id="ad97e-156">**sharepointIds**</span></span>        | [<span data-ttu-id="ad97e-157">sharepointIds</span><span class="sxs-lookup"><span data-stu-id="ad97e-157">sharepointIds</span></span>](sharepointids.md)   | <span data-ttu-id="ad97e-p106">SharePoint REST 互換性に役立つ識別子を返します。読み取り専用です。</span><span class="sxs-lookup"><span data-stu-id="ad97e-p106">Returns identifiers useful for SharePoint REST compatibility. Read-only.</span></span>                       |
-| <span data-ttu-id="ad97e-160">**siteCollection**</span><span class="sxs-lookup"><span data-stu-id="ad97e-160">**siteCollection**</span></span>       | [<span data-ttu-id="ad97e-161">siteCollection</span><span class="sxs-lookup"><span data-stu-id="ad97e-161">siteCollection</span></span>](sitecollection.md) | <span data-ttu-id="ad97e-p107">サイトのサイト コレクションに関する詳細情報を提供します。ルート サイトにのみ使用できます。読み取り専用です。</span><span class="sxs-lookup"><span data-stu-id="ad97e-p107">Provides details about the site's site collection. Available only on the root site. Read-only.</span></span> |
-| <span data-ttu-id="ad97e-165">**webUrl**</span><span class="sxs-lookup"><span data-stu-id="ad97e-165">**webUrl**</span></span>               | <span data-ttu-id="ad97e-166">string (URL)</span><span class="sxs-lookup"><span data-stu-id="ad97e-166">string (url)</span></span>                        | <span data-ttu-id="ad97e-p108">ブラウザーでアイテムを表示する URL。読み取り専用です。</span><span class="sxs-lookup"><span data-stu-id="ad97e-p108">URL that displays the item in the browser. Read-only.</span></span>                                          |
+| <span data-ttu-id="e7f0b-130">**id**</span><span class="sxs-lookup"><span data-stu-id="e7f0b-130">**id**</span></span>                   | <span data-ttu-id="e7f0b-131">string</span><span class="sxs-lookup"><span data-stu-id="e7f0b-131">string</span></span>                              | <span data-ttu-id="e7f0b-p101">アイテムの一意識別子。読み取り専用です。</span><span class="sxs-lookup"><span data-stu-id="e7f0b-p101">The unique identifier of the item. Read-only.</span></span>                                                  |
+| <span data-ttu-id="e7f0b-134">**createdDateTime**</span><span class="sxs-lookup"><span data-stu-id="e7f0b-134">**createdDateTime**</span></span>      | <span data-ttu-id="e7f0b-135">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="e7f0b-135">DateTimeOffset</span></span>                      | <span data-ttu-id="e7f0b-p102">アイテムが作成された日時。読み取り専用です。</span><span class="sxs-lookup"><span data-stu-id="e7f0b-p102">The date and time the item was created. Read-only.</span></span>                                             |
+| <span data-ttu-id="e7f0b-138">**説明**</span><span class="sxs-lookup"><span data-stu-id="e7f0b-138">**description**</span></span>          | <span data-ttu-id="e7f0b-139">文字列</span><span class="sxs-lookup"><span data-stu-id="e7f0b-139">string</span></span>                              | <span data-ttu-id="e7f0b-140">サイトの説明テキスト。</span><span class="sxs-lookup"><span data-stu-id="e7f0b-140">The descriptive text for the site.</span></span>                                                             |
+| <span data-ttu-id="e7f0b-141">**displayName**</span><span class="sxs-lookup"><span data-stu-id="e7f0b-141">**displayName**</span></span>          | <span data-ttu-id="e7f0b-142">文字列</span><span class="sxs-lookup"><span data-stu-id="e7f0b-142">string</span></span>                              | <span data-ttu-id="e7f0b-p103">サイトの完全なタイトル。読み取り専用です。</span><span class="sxs-lookup"><span data-stu-id="e7f0b-p103">The full title for the site. Read-only.</span></span>                                                        |
+| <span data-ttu-id="e7f0b-145">**eTag**</span><span class="sxs-lookup"><span data-stu-id="e7f0b-145">**eTag**</span></span>                 | <span data-ttu-id="e7f0b-146">文字列</span><span class="sxs-lookup"><span data-stu-id="e7f0b-146">string</span></span>                              | <span data-ttu-id="e7f0b-p104">アイテムの ETag。読み取り専用です。</span><span class="sxs-lookup"><span data-stu-id="e7f0b-p104">ETag for the item. Read-only.</span></span>                                                                  |
+| <span data-ttu-id="e7f0b-149">**lastModifiedDateTime**</span><span class="sxs-lookup"><span data-stu-id="e7f0b-149">**lastModifiedDateTime**</span></span> | <span data-ttu-id="e7f0b-150">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="e7f0b-150">DateTimeOffset</span></span>                      | <span data-ttu-id="e7f0b-p105">アイテムが最後に変更された日時。読み取り専用です。</span><span class="sxs-lookup"><span data-stu-id="e7f0b-p105">The date and time the item was last modified. Read-only.</span></span>                                       |
+| <span data-ttu-id="e7f0b-153">**name**</span><span class="sxs-lookup"><span data-stu-id="e7f0b-153">**name**</span></span>                 | <span data-ttu-id="e7f0b-154">文字列</span><span class="sxs-lookup"><span data-stu-id="e7f0b-154">string</span></span>                              | <span data-ttu-id="e7f0b-155">アイテムの名前/タイトル。</span><span class="sxs-lookup"><span data-stu-id="e7f0b-155">The name / title of the item.</span></span>                                                                  |
+| <span data-ttu-id="e7f0b-156">**root**</span><span class="sxs-lookup"><span data-stu-id="e7f0b-156">**root**</span></span>                 | [<span data-ttu-id="e7f0b-157">root</span><span class="sxs-lookup"><span data-stu-id="e7f0b-157">root</span></span>](root.md)                     | <span data-ttu-id="e7f0b-p106">存在する場合は、これがサイト コレクションのルート サイトであることを示します。読み取り専用です。</span><span class="sxs-lookup"><span data-stu-id="e7f0b-p106">If present, indicates that this is the root site in the site collection. Read-only.</span></span>            |
+| <span data-ttu-id="e7f0b-160">**sharepointIds**</span><span class="sxs-lookup"><span data-stu-id="e7f0b-160">**sharepointIds**</span></span>        | [<span data-ttu-id="e7f0b-161">sharepointIds</span><span class="sxs-lookup"><span data-stu-id="e7f0b-161">sharepointIds</span></span>](sharepointids.md)   | <span data-ttu-id="e7f0b-p107">SharePoint REST 互換性に役立つ識別子を返します。読み取り専用です。</span><span class="sxs-lookup"><span data-stu-id="e7f0b-p107">Returns identifiers useful for SharePoint REST compatibility. Read-only.</span></span>                       |
+| <span data-ttu-id="e7f0b-164">**siteCollection**</span><span class="sxs-lookup"><span data-stu-id="e7f0b-164">**siteCollection**</span></span>       | [<span data-ttu-id="e7f0b-165">siteCollection</span><span class="sxs-lookup"><span data-stu-id="e7f0b-165">siteCollection</span></span>](sitecollection.md) | <span data-ttu-id="e7f0b-p108">サイトのサイト コレクションに関する詳細情報を提供します。ルート サイトにのみ使用できます。読み取り専用です。</span><span class="sxs-lookup"><span data-stu-id="e7f0b-p108">Provides details about the site's site collection. Available only on the root site. Read-only.</span></span> |
+| <span data-ttu-id="e7f0b-169">**webUrl**</span><span class="sxs-lookup"><span data-stu-id="e7f0b-169">**webUrl**</span></span>               | <span data-ttu-id="e7f0b-170">string (URL)</span><span class="sxs-lookup"><span data-stu-id="e7f0b-170">string (url)</span></span>                        | <span data-ttu-id="e7f0b-p109">ブラウザーでアイテムを表示する URL。読み取り専用です。</span><span class="sxs-lookup"><span data-stu-id="e7f0b-p109">URL that displays the item in the browser. Read-only.</span></span>                                          |
 
-## <a name="relationships"></a><span data-ttu-id="ad97e-169">リレーションシップ</span><span class="sxs-lookup"><span data-stu-id="ad97e-169">Relationships</span></span>
+## <a name="relationships"></a><span data-ttu-id="e7f0b-173">リレーションシップ</span><span class="sxs-lookup"><span data-stu-id="e7f0b-173">Relationships</span></span>
 
-| <span data-ttu-id="ad97e-170">リレーションシップ名</span><span class="sxs-lookup"><span data-stu-id="ad97e-170">Relationship name</span></span> | <span data-ttu-id="ad97e-171">種類</span><span class="sxs-lookup"><span data-stu-id="ad97e-171">Type</span></span>                             | <span data-ttu-id="ad97e-172">説明</span><span class="sxs-lookup"><span data-stu-id="ad97e-172">Description</span></span>
+| <span data-ttu-id="e7f0b-174">リレーションシップ名</span><span class="sxs-lookup"><span data-stu-id="e7f0b-174">Relationship name</span></span> | <span data-ttu-id="e7f0b-175">種類</span><span class="sxs-lookup"><span data-stu-id="e7f0b-175">Type</span></span>                             | <span data-ttu-id="e7f0b-176">説明</span><span class="sxs-lookup"><span data-stu-id="e7f0b-176">Description</span></span>
 |:------------------|:---------------------------------|:----------------------
-| <span data-ttu-id="ad97e-173">**columns**</span><span class="sxs-lookup"><span data-stu-id="ad97e-173">**columns**</span></span>       | <span data-ttu-id="ad97e-174">Collection([columnDefinition][])</span><span class="sxs-lookup"><span data-stu-id="ad97e-174">Collection([columnDefinition][])</span></span> | <span data-ttu-id="ad97e-175">このサイトのすべてのリストで再利用可能なコラム定義のコレクションです。</span><span class="sxs-lookup"><span data-stu-id="ad97e-175">The collection of column definitions reusable across lists under this site.</span></span>
-| <span data-ttu-id="ad97e-176">**contentTypes**</span><span class="sxs-lookup"><span data-stu-id="ad97e-176"><ContentTypes></span></span>  | <span data-ttu-id="ad97e-177">Collection([contentType][])</span><span class="sxs-lookup"><span data-stu-id="ad97e-177">Collection([contentType][])</span></span>      | <span data-ttu-id="ad97e-178">このサイトに定義されたコンテンツ タイプのコレクションです。</span><span class="sxs-lookup"><span data-stu-id="ad97e-178">The collection of content types defined for this site.</span></span>
-| <span data-ttu-id="ad97e-179">**drive**</span><span class="sxs-lookup"><span data-stu-id="ad97e-179">**drive**</span></span>         | <span data-ttu-id="ad97e-180">[ドライブ][]</span><span class="sxs-lookup"><span data-stu-id="ad97e-180">[drive][]</span></span>                        | <span data-ttu-id="ad97e-181">このサイトの既定ドライブ (ドキュメント ライブラリ)。</span><span class="sxs-lookup"><span data-stu-id="ad97e-181">The default drive (document library) for this site.</span></span>
-| <span data-ttu-id="ad97e-182">**ドライブ**</span><span class="sxs-lookup"><span data-stu-id="ad97e-182">**drives**</span></span>        | <span data-ttu-id="ad97e-183">Collection([drive][])</span><span class="sxs-lookup"><span data-stu-id="ad97e-183">Collection([drive][])</span></span>            | <span data-ttu-id="ad97e-184">このサイトの下のドライブ (ドキュメント ライブラリ) のコレクション。</span><span class="sxs-lookup"><span data-stu-id="ad97e-184">The collection of drives (document libraries) under this site.</span></span>
-| <span data-ttu-id="ad97e-185">**アイテム**</span><span class="sxs-lookup"><span data-stu-id="ad97e-185">**items**</span></span>         | <span data-ttu-id="ad97e-186">Collection([baseItem][])</span><span class="sxs-lookup"><span data-stu-id="ad97e-186">Collection([baseItem][])</span></span>         | <span data-ttu-id="ad97e-p109">このサイトに含まれるすべてのアイテムを処理するために使用されました。このコレクションを列挙することはできません。</span><span class="sxs-lookup"><span data-stu-id="ad97e-p109">Used to address any item contained in this site. This collection cannot be enumerated.</span></span>
-| <span data-ttu-id="ad97e-189">**lists**</span><span class="sxs-lookup"><span data-stu-id="ad97e-189">**Lists**</span></span>         | <span data-ttu-id="ad97e-190">Collection([list][])</span><span class="sxs-lookup"><span data-stu-id="ad97e-190">Collection([list][])</span></span>             | <span data-ttu-id="ad97e-191">このサイトにあるリストのコレクションです。</span><span class="sxs-lookup"><span data-stu-id="ad97e-191">The collection of the sub-sites under this site.</span></span>
-| <span data-ttu-id="ad97e-192">**sites**</span><span class="sxs-lookup"><span data-stu-id="ad97e-192">**sites**</span></span>         | <span data-ttu-id="ad97e-193">Collection([site][])</span><span class="sxs-lookup"><span data-stu-id="ad97e-193">Collection([site][])</span></span>             | <span data-ttu-id="ad97e-194">このサイトの下のサブサイトのコレクション。</span><span class="sxs-lookup"><span data-stu-id="ad97e-194">The collection of the sub-sites under this site.</span></span>
-| <span data-ttu-id="ad97e-195">**onenote**</span><span class="sxs-lookup"><span data-stu-id="ad97e-195">**onenote**</span></span>       | <span data-ttu-id="ad97e-196">[onenote][]</span><span class="sxs-lookup"><span data-stu-id="ad97e-196">[onenote][]</span></span>                      | <span data-ttu-id="ad97e-197">ノートブック関連の操作のために OneNote サービスを呼び出します。</span><span class="sxs-lookup"><span data-stu-id="ad97e-197">Calls the OneNote service for notebook related operations.</span></span>
+| <span data-ttu-id="e7f0b-177">**columns**</span><span class="sxs-lookup"><span data-stu-id="e7f0b-177">**columns**</span></span>       | <span data-ttu-id="e7f0b-178">Collection([columnDefinition][])</span><span class="sxs-lookup"><span data-stu-id="e7f0b-178">Collection([columnDefinition][])</span></span> | <span data-ttu-id="e7f0b-179">このサイトのすべてのリストで再利用可能なコラム定義のコレクションです。</span><span class="sxs-lookup"><span data-stu-id="e7f0b-179">The collection of column definitions reusable across lists under this site.</span></span>
+| <span data-ttu-id="e7f0b-180">**contentTypes**</span><span class="sxs-lookup"><span data-stu-id="e7f0b-180">**contentTypes**</span></span>  | <span data-ttu-id="e7f0b-181">Collection([contentType][])</span><span class="sxs-lookup"><span data-stu-id="e7f0b-181">Collection([contentType][])</span></span>      | <span data-ttu-id="e7f0b-182">このサイトに定義されたコンテンツ タイプのコレクションです。</span><span class="sxs-lookup"><span data-stu-id="e7f0b-182">The collection of content types defined for this site.</span></span>
+| <span data-ttu-id="e7f0b-183">**drive**</span><span class="sxs-lookup"><span data-stu-id="e7f0b-183">**drive**</span></span>         | <span data-ttu-id="e7f0b-184">[ドライブ][]</span><span class="sxs-lookup"><span data-stu-id="e7f0b-184">[drive][]</span></span>                        | <span data-ttu-id="e7f0b-185">このサイトの既定ドライブ (ドキュメント ライブラリ)。</span><span class="sxs-lookup"><span data-stu-id="e7f0b-185">The default drive (document library) for this site.</span></span>
+| <span data-ttu-id="e7f0b-186">**ドライブ**</span><span class="sxs-lookup"><span data-stu-id="e7f0b-186">**drives**</span></span>        | <span data-ttu-id="e7f0b-187">Collection([drive][])</span><span class="sxs-lookup"><span data-stu-id="e7f0b-187">Collection([drive][])</span></span>            | <span data-ttu-id="e7f0b-188">このサイトの下のドライブ (ドキュメント ライブラリ) のコレクション。</span><span class="sxs-lookup"><span data-stu-id="e7f0b-188">The collection of drives (document libraries) under this site.</span></span>
+| <span data-ttu-id="e7f0b-189">**アイテム**</span><span class="sxs-lookup"><span data-stu-id="e7f0b-189">**items**</span></span>         | <span data-ttu-id="e7f0b-190">Collection([baseItem][])</span><span class="sxs-lookup"><span data-stu-id="e7f0b-190">Collection([baseItem][])</span></span>         | <span data-ttu-id="e7f0b-p110">このサイトに含まれるすべてのアイテムを処理するために使用されました。このコレクションを列挙することはできません。</span><span class="sxs-lookup"><span data-stu-id="e7f0b-p110">Used to address any item contained in this site. This collection cannot be enumerated.</span></span>
+| <span data-ttu-id="e7f0b-193">**lists**</span><span class="sxs-lookup"><span data-stu-id="e7f0b-193">**lists**</span></span>         | <span data-ttu-id="e7f0b-194">Collection([list][])</span><span class="sxs-lookup"><span data-stu-id="e7f0b-194">Collection([list][])</span></span>             | <span data-ttu-id="e7f0b-195">このサイトにあるリストのコレクションです。</span><span class="sxs-lookup"><span data-stu-id="e7f0b-195">The collection of lists under this site.</span></span>
+| <span data-ttu-id="e7f0b-196">**sites**</span><span class="sxs-lookup"><span data-stu-id="e7f0b-196">**sites**</span></span>         | <span data-ttu-id="e7f0b-197">Collection([サイト][])</span><span class="sxs-lookup"><span data-stu-id="e7f0b-197">Collection([site][])</span></span>             | <span data-ttu-id="e7f0b-198">このサイトの下のサブサイトのコレクション。</span><span class="sxs-lookup"><span data-stu-id="e7f0b-198">The collection of the sub-sites under this site.</span></span>
+| <span data-ttu-id="e7f0b-199">**onenote**</span><span class="sxs-lookup"><span data-stu-id="e7f0b-199">**onenote**</span></span>       | <span data-ttu-id="e7f0b-200">[onenote][]</span><span class="sxs-lookup"><span data-stu-id="e7f0b-200">[onenote][]</span></span>                      | <span data-ttu-id="e7f0b-201">ノートブック関連の操作のために OneNote サービスを呼び出します。</span><span class="sxs-lookup"><span data-stu-id="e7f0b-201">Calls the OneNote service for notebook related operations.</span></span>
 
 [columnDefinition]: columndefinition.md
 [baseItem]: baseitem.md
-[contentType]: contentType.md
+[contentType]: contenttype.md
+[ドライブ]: drive.md
 [drive]: drive.md
 [identitySet]: identityset.md
 [list]: list.md
