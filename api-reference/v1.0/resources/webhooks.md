@@ -1,12 +1,12 @@
 ---
 title: 変更通知を使用して Microsoft グラフ API を取得するには
 description: Microsoft グラフ REST API では、webhook メカニズムを使用して、クライアントに通知を配信します。 クライアントは、通知を受信するのにはそれ自身の URL を構成する web サービスです。 クライアント アプリケーションは、変更時に状態を更新するのには通知を使用します。 購読して、着信の通知を処理する方法を含め、詳細については、セットを参照してくださいユーザー データの変更の通知を設定します。
-ms.openlocfilehash: a44a32b5a1dd1c8f3bd2a9234503da5a583f8bdd
-ms.sourcegitcommit: 2532b8dd7f2533d956e2600855b3daeabdd9b8ff
+ms.openlocfilehash: c7d468b7c5064911d27d3a93bc3160d03c2a4dc3
+ms.sourcegitcommit: 02ead22efd4f10cd50f89c9f5aa3b6dfda96aeec
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/30/2018
-ms.locfileid: "27024349"
+ms.lasthandoff: 12/01/2018
+ms.locfileid: "27123946"
 ---
 # <a name="use-the-microsoft-graph-api-to-get-change-notifications"></a>変更通知を使用して Microsoft グラフ API を取得するには
 
@@ -37,6 +37,7 @@ Microsoft Graph の API を使用すると、アプリは次のリソースに�
 ## <a name="see-also"></a>関連項目
 
 - [Subscription リソースタイプ](./subscription.md)
+- [リストの購読](../api/subscription-list.md)
 - [サブスクリプションを取得する](../api/subscription-get.md)
 - [サブスクリプションを作成する](../api/subscription-post-subscriptions.md)
 - [Update subscription](../api/subscription-update.md)

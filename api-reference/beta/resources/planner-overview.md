@@ -1,18 +1,20 @@
 ---
 title: プランナーの REST API を使用します。
 description: Graph でプランナーの API を使用するにはタスクを作成し、Office 365 で、グループ内のユーザーに割り当てます。
-ms.openlocfilehash: b1ec3f6e179f05a41fa30aec1697c9bfcefad7ee
+ms.openlocfilehash: b6161218e5d65c96972a8fd5dd929b124d84c949
 ms.sourcegitcommit: 02ead22efd4f10cd50f89c9f5aa3b6dfda96aeec
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/01/2018
-ms.locfileid: "27123953"
+ms.locfileid: "27123967"
 ---
 # <a name="use-the-planner-rest-api"></a>プランナーの REST API を使用します。
 
+> **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。
+
 Graph でプランナーの API を使用するにはタスクを作成し、Office 365 で、グループ内のユーザーに割り当てます。
 
-プランナーの API を使用して開始する前に互いにも Office 365 のグループを主なオブジェクトの関係を理解するができます。
+プランナーの API を使用して開始する前に互いにも Office 365 のグループを主なオブジェクトの関係を理解するおくと便利になります。
 
 ## <a name="office-365-groups"></a>Office 365 グループ
 
@@ -61,6 +63,58 @@ Planner のリソースは、基本オブジェクトと詳細オブジェクト
 
 [プランナーの順序のヒント](planner-order-hint-format.md)で説明した原則には、すべての順序が制御されます。
 
+## <a name="delta">デルタのクエリを使用して変更履歴の記録します。</a>
+
+プランナーのデルタのクエリは、ユーザーが購読しているオブジェクトのクエリをサポートしています。
+
+ユーザーは、次のオブジェクトを購読します。
+
+| プランナーのリソースの種類 | 購読済みのインスタンス                                                                                                                                                                                    |
+| :-------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| タスク                 | <ul><li>ユーザーによって作成されました。</li><li>ユーザーに割り当てられています。</li><li>ユーザーが所有する計画に属しています。</li><li>計画の**SharedWith**コレクションをユーザーと共有の計画に含まれています。</li> |
+| プラン                 | <ul><li>計画の**SharedWith**コレクションをユーザーと共有</li></ul>                                                                                                                     |
+| バケット               | <ul><li>計画の**SharedWith**コレクションをユーザーと共有の計画に含まれています。</li></ul>                                                                                                 |  |
+
+### <a name="objectcache">デルタ ・ クエリのオブジェクト キャッシュを設定します。</a>
+
+プランナーのデルタ ・ クエリ API を使用する場合は、デルタの応答フィードから変更を適用するために観察することで、ユーザーが興味を示しているオブジェクトのローカル キャッシュを保持します。
+
+次の種類のプランナーのデルタ ・ クエリが返すことができる現在のデルタ ・ ペイロード オブジェクトになります。
+
+* [plannerTask](plannertask.md)
+* [plannerTaskDetails](plannertaskdetails.md)
+* [plannerPlan](plannerplan.md)
+* [plannerPlanDetails](plannerplandetails.md)
+* [plannerBucket](plannerbucket.md)
+* [plannerAssignedToTaskBoardTaskFormat](plannerassignedtotaskboardtaskformat.md)
+* [plannerBucketTaskBoardTaskFormat](plannerbuckettaskboardtaskformat.md)
+* [plannerAssignedToTaskBoardTaskFormat](plannerassignedtotaskboardtaskformat.md)
+
+使用して、対応する`GET`のリソースをローカルのキャッシュを格納するオブジェクトの初期状態を取得するメソッドです。
+
+### <a name="differentiating-between-object-creation-and-object-modification"></a>オブジェクトの作成とオブジェクトの変更の違いを知る
+
+特定のシナリオでは、呼び出し元がオブジェクトを作成し、フィードのプランナーのデルタのクエリ内のオブジェクトの変更を区別する必要があります。
+
+これらのガイドラインを使用して、オブジェクトの作成を推論することができます。
+
+* `createdBy`プロパティは、新しく作成されたオブジェクトにのみ表示されます。
+* 新しく作成された A`plannerTask`オブジェクトに対応する、続いて`plannerTaskDetails`オブジェクトです。
+* 新しく作成された A`plannerPlan`オブジェクトに対応する、続いて`plannerPlanDetails`オブジェクトです。
+
+### <a name="usage"></a>使用例
+
+呼び出し元は、購読しているオブジェクトが含まれているキャッシュを持つと思われます。 購読しているオブジェクトのローカル キャッシュを設定する方法についての詳細は、[デルタのクエリでオブジェクト キャッシュの作成](#populate-the-object-cache-for-delta-queries)を参照してください。
+
+プランナーのデルタのクエリの呼び出しのフローは次のとおりです。
+
+1. デルタ同期クエリを開始する呼び出し元を取得する、`nextLink`と変更の空のコレクションです。
+2. 呼び出し元する必要があります[デルタ クエリでオブジェクト キャッシュの設定](#populate-the-object-cache-for-delta-queries)とオブジェクトをユーザーが購読して、そのキャッシュを更新します。
+3. 呼び出し元に依存して、 `nextLink` 、新しいを取得する最初のデルタ ・同期クエリで提供されている`deltaLink`前の手順の変更を反映します。
+4. 呼び出し元に返されたデルタのキャッシュ内のオブジェクトに対して変更が適用されます。
+5. 呼び出し元は、次の deltaLink を取得する新しい deltaLink に依存して、現在以降の変更`deltaLink`が生成されました。
+6. 呼び出し元が (もしあれば) 変更が適用され、短時間を待機する前に実行する前にステップし、この手順です。
+
 ## <a name="planner-resource-versioning"></a>Planner のリソースのバージョン管理
 
 プランナーのバージョンすべてのリソースの**etag**を使用します。 返されるこれらの**etag**が`@odata.etag`の各リソースのプロパティです。 `PATCH``DELETE`を使用して指定するのには既知のクライアントによって最後の**etag**を要求、`If-Match`ヘッダー。
@@ -97,6 +151,9 @@ Microsoft Graph に適用される[一般的なエラー](/graph/errors)のほ�
 | MaximumReferencesOnTask       | [plannerTaskDetails](plannertaskdetails.md) リソースの `references` プロパティに含まれる値が多すぎます。                                                                                          |
 | MaximumChecklistItemsOnTask   | [plannerTaskDetails](plannertaskdetails.md) リソースの `checklist` プロパティに含まれる値が多すぎます。                                                                                           |
 | MaximumAssigneesInTasks       | [plannerTask](plannertask.md) リソースの `assignments` プロパティに含まれる値が多すぎます。                                                                                                       |
+| MaximumFavoritePlansForUser   | `favoritePlanReferences` [PlannerUser](planneruser.md)リソースのプロパティに値が多すぎますが含まれています。                                                                                            |
+| MaximumRecentPlansForUser     | `recentPlanReferences` [PlannerUser](planneruser.md)リソースのプロパティに値が多すぎますが含まれています。                                                                                              |
+| MaximumContextsOnPlan         | `contexts` [PlannerPlan](plannerplan.md)リソースのプロパティに値が多すぎますが含まれています。                                                                                                          |
 | MaximumPlannerPlans       | グループには、計画が既に含まれています。 現在、グループは 1 つの計画のみ含めることができます。 **注:** いくつかの Microsoft アプリケーションでは、この制限を超えることができます。 今後、すべてのアプリケーションにこの機能は拡張します。                                                                                                      |
 
 ### <a name="412-precondition-failed"></a>412 必須条件に失敗しました 
