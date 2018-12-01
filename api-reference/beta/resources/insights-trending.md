@@ -1,0 +1,51 @@
+---
+title: トレンド ・ リソースの種類
+description: ユーザー (は、ユーザーに関連する) 傾向を示しているドキュメントへのユーザーの接続の豊富な関係です。 OneDrive ファイルでは、チームの SharePoint サイトにファイルを保存できるユーザー傾向があるとします。
+ms.openlocfilehash: 7d240c4358047ca9ba3d6b8340fbfb7d893a6a1d
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27070495"
+---
+# <a name="trending-resource-type"></a><span data-ttu-id="26a72-104">トレンド ・ リソースの種類</span><span class="sxs-lookup"><span data-stu-id="26a72-104">trending resource type</span></span>
+
+> <span data-ttu-id="26a72-105">**重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。</span><span class="sxs-lookup"><span data-stu-id="26a72-105">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="26a72-106">実稼働アプリケーションでの、これらの API の使用はサポートされていません。</span><span class="sxs-lookup"><span data-stu-id="26a72-106">Use of these APIs in production applications is not supported.</span></span>
+
+<span data-ttu-id="26a72-107">ユーザー (は、ユーザーに関連する) 傾向を示しているドキュメントへのユーザーの接続の豊富な関係です。</span><span class="sxs-lookup"><span data-stu-id="26a72-107">Rich relationship connecting a user to documents that are trending around the user (are relevant to the user).</span></span> <span data-ttu-id="26a72-108">OneDrive ファイルでは、チームの SharePoint サイトにファイルを保存できるユーザー傾向があるとします。</span><span class="sxs-lookup"><span data-stu-id="26a72-108">OneDrive files, and files stored on SharePoint team sites can trend around the user.</span></span>
+
+## <a name="methods"></a><span data-ttu-id="26a72-109">メソッド</span><span class="sxs-lookup"><span data-stu-id="26a72-109">Methods</span></span>
+
+| <span data-ttu-id="26a72-110">メソッド</span><span class="sxs-lookup"><span data-stu-id="26a72-110">Method</span></span>       | <span data-ttu-id="26a72-111">戻り値の型</span><span class="sxs-lookup"><span data-stu-id="26a72-111">Return Type</span></span>  |<span data-ttu-id="26a72-112">説明</span><span class="sxs-lookup"><span data-stu-id="26a72-112">Description</span></span>|
+|:---------------|:--------|:----------|
+|[<span data-ttu-id="26a72-113">リストのトレンド分析</span><span class="sxs-lookup"><span data-stu-id="26a72-113">List trending</span></span>](../api/insights-list-trending.md) |<span data-ttu-id="26a72-114">[insights_trending](insights-trending.md)コレクション</span><span class="sxs-lookup"><span data-stu-id="26a72-114">[insights_trending](insights-trending.md) collection</span></span>| <span data-ttu-id="26a72-115">トレンド ・ ファイルの一覧を取得します。</span><span class="sxs-lookup"><span data-stu-id="26a72-115">Get a list of trending files.</span></span>|
+
+## <a name="properties"></a><span data-ttu-id="26a72-116">プロパティ</span><span class="sxs-lookup"><span data-stu-id="26a72-116">Properties</span></span>
+
+| <span data-ttu-id="26a72-117">プロパティ</span><span class="sxs-lookup"><span data-stu-id="26a72-117">Property</span></span>      | <span data-ttu-id="26a72-118">型</span><span class="sxs-lookup"><span data-stu-id="26a72-118">Type</span></span>                              | <span data-ttu-id="26a72-119">説明</span><span class="sxs-lookup"><span data-stu-id="26a72-119">Description</span></span>  |
+| ------------- |---------------                    | -------------|
+| <span data-ttu-id="26a72-120">id</span><span class="sxs-lookup"><span data-stu-id="26a72-120">id</span></span>                    | <span data-ttu-id="26a72-121">String</span><span class="sxs-lookup"><span data-stu-id="26a72-121">String</span></span>                    | <span data-ttu-id="26a72-122">リレーションシップの一意の識別子です。</span><span class="sxs-lookup"><span data-stu-id="26a72-122">Unique identifier of the relationship.</span></span> <span data-ttu-id="26a72-123">読み取り専用です。</span><span class="sxs-lookup"><span data-stu-id="26a72-123">Read only.</span></span>        |
+| <span data-ttu-id="26a72-124">weight</span><span class="sxs-lookup"><span data-stu-id="26a72-124">weight</span></span>                | <span data-ttu-id="26a72-125">倍精度浮動小数点数</span><span class="sxs-lookup"><span data-stu-id="26a72-125">Double</span></span>                    | <span data-ttu-id="26a72-126">どれだけドキュメントが現在のトレンド分析を示す値です。</span><span class="sxs-lookup"><span data-stu-id="26a72-126">Value indicating how much the document is currently trending.</span></span> <span data-ttu-id="26a72-127">大きい番号より文書が現在のトレンド分析ユーザー (関連するほどである)。</span><span class="sxs-lookup"><span data-stu-id="26a72-127">The larger the number, the more the document is currently trending around the user (the more relevant it is).</span></span> <span data-ttu-id="26a72-128">返されたドキュメントは、この値で並べ替えられます。</span><span class="sxs-lookup"><span data-stu-id="26a72-128">Returned documents are sorted by this value.</span></span>  |
+| <span data-ttu-id="26a72-129">resourceVisualization</span><span class="sxs-lookup"><span data-stu-id="26a72-129">resourceVisualization</span></span> | [<span data-ttu-id="26a72-130">resourceVisualization</span><span class="sxs-lookup"><span data-stu-id="26a72-130">resourceVisualization</span></span>](insights-resourcevisualization.md)    | <span data-ttu-id="26a72-131">プロパティは、時にドキュメントをビジュアル化を使用することができます。</span><span class="sxs-lookup"><span data-stu-id="26a72-131">Properties that you can use to visualize the document in your experience.</span></span> |
+| <span data-ttu-id="26a72-132">resourceReference</span><span class="sxs-lookup"><span data-stu-id="26a72-132">resourceReference</span></span>     | [<span data-ttu-id="26a72-133">resourceReference</span><span class="sxs-lookup"><span data-stu-id="26a72-133">resourceReference</span></span>](insights-resourcereference.md)        | <span data-ttu-id="26a72-134">トレンド ・ ドキュメント、url、ドキュメントの種類などのプロパティを参照します。</span><span class="sxs-lookup"><span data-stu-id="26a72-134">Reference properties of the trending document, such as the url and type of the document.</span></span> |
+
+## <a name="relationships"></a><span data-ttu-id="26a72-135">リレーションシップ</span><span class="sxs-lookup"><span data-stu-id="26a72-135">Relationships</span></span>
+
+| <span data-ttu-id="26a72-136">プロパティ</span><span class="sxs-lookup"><span data-stu-id="26a72-136">Property</span></span>      | <span data-ttu-id="26a72-137">型</span><span class="sxs-lookup"><span data-stu-id="26a72-137">Type</span></span>          | <span data-ttu-id="26a72-138">説明</span><span class="sxs-lookup"><span data-stu-id="26a72-138">Description</span></span>  |
+| ------------- |---------------| -------------|
+| <span data-ttu-id="26a72-139">リソース</span><span class="sxs-lookup"><span data-stu-id="26a72-139">resource</span></span>      | <span data-ttu-id="26a72-140">エンティティ</span><span class="sxs-lookup"><span data-stu-id="26a72-140">Entity</span></span>        | <span data-ttu-id="26a72-141">トレンドのドキュメントに移動するために使用されます。</span><span class="sxs-lookup"><span data-stu-id="26a72-141">Used for navigating to the trending document.</span></span> |
+
+## <a name="json-representation"></a><span data-ttu-id="26a72-142">JSON 表記</span><span class="sxs-lookup"><span data-stu-id="26a72-142">JSON representation</span></span>
+
+<span data-ttu-id="26a72-143">以下は、リソースの JSON 表記です</span><span class="sxs-lookup"><span data-stu-id="26a72-143">Here is a JSON representation of the resource</span></span>
+
+```json
+{
+  "id": "string",
+  "weight": "double",
+  "resourceVisualization": [{"@odata.type": "microsoft.graph.resourceVisualization"}],
+  "resourceReference": [{"@odata.type": "microsoft.graph.resourceReference"}],
+  
+  "resource": [ { "@odata.type": "microsoft.graph.entity" } ]
+}
+```
