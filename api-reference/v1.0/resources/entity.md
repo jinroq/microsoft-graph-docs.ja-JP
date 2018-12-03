@@ -1,24 +1,22 @@
+---
+title: エンティティ リソースの種類
+description: なし
+ms.openlocfilehash: 381e1df86d96f416a36eca58c1b3f6a7f3e58f01
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27021848"
+---
 # <a name="entity-resource-type"></a>エンティティ リソースの種類
 
-
-## <a name="methods"></a>メソッド
-
-| メソッド       | 戻り値の型  |説明|
-|:---------------|:--------|:----------|
-|[エンティティを取得する](../api/entity_get.md) | [entity](entity.md) |エンティティ オブジェクトのプロパティと関係を読み取ります。|
-|[Delete](../api/entity_delete.md) | なし |エンティティ オブジェクトを削除します。 |
-
 ## <a name="properties"></a>プロパティ
-| プロパティ       | 型    |説明|
+| プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
-|id|String| 読み取り専用です。|
+|id|String| 読み取り専用。|
 
-## <a name="relationships"></a>関係
+## <a name="relationships"></a>リレーションシップ
 なし
-
-
-
-
 
 ## <a name="json-representation"></a>JSON 表記
 
@@ -26,6 +24,8 @@
 
 <!-- {
   "blockType": "resource",
+  "abstract": "true",
+  "keyProperty": "id",
   "optionalProperties": [
 
   ],
