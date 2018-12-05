@@ -1,12 +1,12 @@
 ---
 title: '参加者: configureMixer'
 description: 通話の参加者に別のオーディオを混合する方法を構成します。
-ms.openlocfilehash: 32d50d165ed7beb69b99e5d0940b49acbce8f45c
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.openlocfilehash: 58ccdcb345d55ae28b30dd5ded6b95ef5b30fe81
+ms.sourcegitcommit: 4a46cfd112c8089fc07e4e5ccdccaf415a3a0e7f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27067652"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "27156002"
 ---
 # <a name="participant-configuremixer"></a>参加者: configureMixer
 
@@ -21,7 +21,7 @@ ms.locfileid: "27067652"
 | :-------------- | :------------------------------------------ |
 | 委任 (職場または学校のアカウント)     | サポート対象外        |
 | 委任 (個人用 Microsoft アカウント) | サポート対象外        |
-| アプリケーション     | Calls.JoinGroupCallsasGuest.All、Calls.JoinGroupCalls.All、Calls.InitiateGroupCalls.All |
+| アプリケーション     | Calls.JoinGroupCalls.All、Calls.InitiateGroupCalls.All |
 
 ## <a name="http-request"></a>HTTP 要求
 <!-- { "blockType": "ignored" } -->
@@ -38,7 +38,7 @@ POST /applications/{id}/calls/{id}/participants/configureMixer
 ## <a name="request-body"></a>要求本文
 要求本文で、次のパラメーターを含む JSON オブジェクトを指定します。
 
-| パラメーター      | 型    |説明|
+| パラメーター      | 種類    |説明|
 |:---------------|:--------|:----------|
 |participantMixerLevels|[participantMixerLevel](../resources/participantmixerlevel.md)コレクション| ミキサーの設定は、オーディオの参加者が指定されているのをレベルです。|
 |clientContext|String|クライアントのコンテキスト。|

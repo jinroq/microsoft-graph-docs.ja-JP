@@ -1,12 +1,12 @@
 ---
 title: オーディオのルーティング グループを取得します。
 description: プロパティと audioRoutingGroup オブジェクトの関係を取得します。
-ms.openlocfilehash: ce1c8afea4932427a700970a16d3ec22a7f14d8d
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.openlocfilehash: 4da3ceb829cf1a2e59fa34c7073fe7f54126a199
+ms.sourcegitcommit: 4a46cfd112c8089fc07e4e5ccdccaf415a3a0e7f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27068010"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "27156013"
 ---
 # <a name="get-audio-routing-group"></a>オーディオのルーティング グループを取得します。
 
@@ -21,7 +21,7 @@ ms.locfileid: "27068010"
 |:---------------------------------------|:--------------------------------------------|
 | 委任 (職場または学校のアカウント)     | サポート対象外                               |
 | 委任 (個人用 Microsoft アカウント) | サポート対象外                               |
-| アプリケーション     | Calls.JoinGroupCallsasGuest.All、Calls.JoinGroupCalls.All、Calls.InitiateGroupCalls.All |
+| アプリケーション     | Calls.JoinGroupCalls.All、Calls.InitiateGroupCalls.All |
 
 ## <a name="http-request"></a>HTTP 要求
 <!-- { "blockType": "ignored" } -->

@@ -1,12 +1,12 @@
 ---
 title: オーディオのルーティング グループを更新します。
 description: ソースと、audioRoutingGroup の受信機を変更します。
-ms.openlocfilehash: a6b5d2ed3c11733f7a8e46ed4db61def05395c5c
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.openlocfilehash: 6edbe0512b13de75645c3094b258de46c21956e9
+ms.sourcegitcommit: 4a46cfd112c8089fc07e4e5ccdccaf415a3a0e7f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27068963"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "27156027"
 ---
 # <a name="update-audio-routing-group"></a>オーディオのルーティング グループを更新します。
 
@@ -21,7 +21,7 @@ ms.locfileid: "27068963"
 | :-------------- | :--------------------------------------------------------- |
 | 委任 (職場または学校のアカウント)     | サポート対象外                       |
 | 委任 (個人用 Microsoft アカウント) | サポート対象外                       |
-| アプリケーション     | Calls.JoinGroupCallsasGuest.All、Calls.JoinGroupCalls.All、Calls.InitiateGroupCalls.All |
+| アプリケーション     | Calls.JoinGroupCalls.All、Calls.InitiateGroupCalls.All |
 
 ## <a name="http-request"></a>HTTP 要求
 <!-- { "blockType": "ignored" } -->
@@ -38,7 +38,7 @@ PATCH /applications/{id}/calls/{id}/audioRoutingGroups/{id}
 ## <a name="request-body"></a>要求本文
 要求本文で、更新する関連フィールドの値を指定します。 要求本文に含まれない既存のプロパティは、以前の値のままになるか、他のプロパティ値の変更に基づいて再計算されます。 最適なパフォーマンスを得るために、変更されていない既存の値を含めないでください。
 
-| プロパティ       | 型    |説明|
+| プロパティ       | 種類    |説明|
 |:---------------|:--------|:----------|
 | 受信機 | String コレクション | ターゲットの参加者、audioRoutingGroup。 |
 | routingMode | String | 使用可能な値は、`oneToOne`、`multicast` です。 |

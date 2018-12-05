@@ -1,12 +1,12 @@
 ---
 title: DataPolicyOperation を取得します。
 description: DataPolicyOperation オブジェクトのプロパティを取得します。
-ms.openlocfilehash: f2894b7cc23d6a5d35a03c7626ca9cb4640a9fcc
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.openlocfilehash: fbc94719f9944adb25f7dd744cf0b15b179f3a5d
+ms.sourcegitcommit: 4a46cfd112c8089fc07e4e5ccdccaf415a3a0e7f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27067898"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "27156020"
 ---
 # <a name="get-datapolicyoperation"></a>DataPolicyOperation を取得します。
 
@@ -24,7 +24,7 @@ DataPolicyOperation オブジェクトのプロパティを取得します。
 ## <a name="http-request"></a>HTTP 要求
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /dataPolicyOperations/<id>
+GET /dataPolicyOperations/{id}
 ```
 
 ## <a name="request-headers"></a>要求ヘッダー
@@ -43,7 +43,7 @@ GET /dataPolicyOperations/<id>
   "name": "get_datapolicyoperation"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/dataPolicyOperations/<id>
+GET https://graph.microsoft.com/beta/dataPolicyOperations/{id}
 ```
 ##### <a name="response"></a>応答
 注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。
@@ -63,7 +63,8 @@ Content-length: 212
   "status": "status-value",
   "storageLocation": "storageLocation-value",
   "userId": "userId-value",
-  "submittedDateTime": "datetime-value"
+  "submittedDateTime": "datetime-value",
+  "progress": "progress-value"
 }
 ```
 

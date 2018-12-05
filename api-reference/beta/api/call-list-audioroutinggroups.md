@@ -1,12 +1,12 @@
 ---
 title: オーディオのルーティング グループを一覧表示
 description: '**AudioRoutingGroup**オブジェクトのリストを取得します。'
-ms.openlocfilehash: da6724f95fbc2c4365a1b1e4d34d317c130f12df
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.openlocfilehash: d188d8478b8bf57f45f0fa15eed9973cafba7b2f
+ms.sourcegitcommit: 4a46cfd112c8089fc07e4e5ccdccaf415a3a0e7f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27071010"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "27156005"
 ---
 # <a name="list-audio-routing-groups"></a>オーディオのルーティング グループを一覧表示
 
@@ -21,7 +21,7 @@ ms.locfileid: "27071010"
 |:---------------------------------------|:--------------------------------------------|
 | 委任 (職場または学校のアカウント)     | サポートされていません。                               |
 | 委任 (個人用 Microsoft アカウント) | サポートされていません。                               |
-| アプリケーション     | Calls.JoinGroupCallsasGuest.All、Calls.JoinGroupCalls.All、Calls.InitiateGroupCalls.All |
+| アプリケーション     | Calls.JoinGroupCalls.All、Calls.InitiateGroupCalls.All |
 
 ## <a name="http-request"></a>HTTP 要求
 <!-- { "blockType": "ignored" } -->
