@@ -1,3 +1,13 @@
+---
+title: Microsoft Graph 調整ガイド
+description: 調整とは、リソースの使いすぎを防ぐために、サービスの同時呼び出し数を制限することをいいます。Microsoft Graph は、大量の要求を処理できるよう設計されています。過剰な数の要求が発生した場合、調整を行うことは Microsoft Graph サービスの最適なパフォーマンスと信頼性の維持に役立ちます。
+ms.openlocfilehash: dfe7fed3efc01932137df00d6d62ad069faf64cd
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27092416"
+---
 # <a name="microsoft-graph-throttling-guidance"></a>Microsoft Graph 調整ガイド
 
 
@@ -30,4 +40,15 @@
 2. 要求を再試行してください。
 3. 要求が再度エラーコード 429 で失敗した場合は、依然として調整を受けています。Retry-After で推奨された遅延に引き続き従い、成功するまで再試行してください。
 
-Microsoft Cloud における調整についてのより幅広い議論については「[調整パターン](https://msdn.microsoft.com/en-us/library/office/dn589798.aspx)」を参照してください。
+現在、次のリソースで Retry-After ヘッダーが提供されています。
+- [ユーザー](/graph/api/resources/user?view=graph-rest-1.0)
+- [写真](/graph/api/resources/profilephoto?view=graph-rest-1.0)
+- [メール](/graph/api/resources/message?view=graph-rest-1.0)
+- [カレンダー (ユーザーおよびグループ)](/graph/api/resources/event?view=graph-rest-1.0)
+- [連絡先](/graph/api/resources/contact?view=graph-rest-1.0)
+- [添付ファイル](/graph/api/resources/attachment?view=graph-rest-1.0)
+- [グループ会話](/graph/api/resources/conversation?view=graph-rest-1.0)
+- [ユーザーとソーシャル](/graph/api/resources/social-overview?view=graph-rest-beta)
+- [ドライブ (OneDrive)](/graph/api/resources/drive?view=graph-rest-1.0)
+
+Microsoft Cloud における調整についてのより幅広い議論については「[調整パターン](https://msdn.microsoft.com/library/office/dn589798.aspx)」を参照してください。

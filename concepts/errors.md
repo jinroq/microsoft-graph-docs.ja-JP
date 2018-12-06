@@ -1,10 +1,20 @@
+---
+title: Microsoft Graph のエラー応答とリソースの種類
+description: "  "
+ms.openlocfilehash: a4641b4e4de5adcb3ce6b935aaabe504d76e6676
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27092387"
+---
 # <a name="microsoft-graph-error-responses-and-resource-types"></a>Microsoft Graph のエラー応答とリソースの種類
 
 <!--In this article:
   
--    [Status code](#msg_status_code)
--    [Error resource type](#msg_error_resource_type)
--    [Code property](#msg_code_property)
+-   [Status code](#msg-status-code)
+-   [Error resource type](#msg-error-resource-type)
+-   [Code property](#msg-code-property)
 
 <a name="msg_error_response"> </a> -->
 
@@ -18,8 +28,8 @@ Microsoft Graph のエラーは、標準の HTTP 状態コード、および JSO
 |:------------|:--------------------------------|:---------------------------------------------------------------------------------------------------------------------------------------|
 | 400         | 要求が正しくありません (Bad Request)                     | 形式が正しくない、または無効なため、要求を処理できません。                                                                       |
 | 401         | 権限がありません (Unauthorized)                    | リソースの必要な認証情報が見つからないか、無効です。                                                   |
-| 403         | 禁止されています (Forbidden)                       | 要求されたリソースへのアクセスが拒否されました。ユーザーに十分なアクセス許可がない可能性があります。                                                 |
-| 404         | 見つかりません (Not Found)                       | 要求されたリソースは存在しません。                                                                                                  |
+| 403         | 禁止されています (Forbidden)                       | 要求されたリソースへのアクセスが拒否されました。ユーザーに十分なアクセス許可がない可能性があります。<br /><br /> **重要:** 条件付きアクセス ポリシーがリソースに適用される場合、HTTP 403; Forbidden error=insufficent_claims が返される場合があります。 Microsoft Graph と条件付きアクセスの詳細は、「[Azure Active Directory の条件付きアクセスについての開発者ガイド](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-conditional-access-developer)」を参照してください。  |
+| 404         | 見つかりません                       | 要求されたリソースは存在しません。                                                                                                  |
 | 405         | メソッドが許可されていません (Method Not Allowed)              | 要求の HTTP メソッドはリソースで許可されていません。                                                                         |
 | 406         | 許容されません (Not Acceptable)                  | このサービスでは、Accept ヘッダーで要求された形式をサポートしていません。                                                                |
 | 409         | 競合 (Conflict)                        | 現在の状態が要求に必要なものと競合しています。たとえば、指定された親フォルダーが存在しない可能性があります。                   |
@@ -29,7 +39,8 @@ Microsoft Graph のエラーは、標準の HTTP 状態コード、および JSO
 | 413         | 要求エンティティが大きすぎます (Request Entity Too Large)        | 要求サイズが上限を超えています。                                                                                            |
 | 415         | メディアの種類がサポートされていません (Unsupported Media Type)          | 要求のコンテンツの種類がサービスによってサポートされていない形式です。                                                      |
 | 416         | 要求された範囲が満たされません (Requested Range Not Satisfiable) | 指定したバイト範囲が正しくない、または利用できません。                                                                                    |
-| 422         | 処理できないエンティティです (Unprocessable Entity)            | 意味的に正しくないため、要求を処理できません。                                                                       |
+| 422         | 処理できないエンティティです (Unprocessable Entity)            | 意味的に正しくないため、要求を処理できません。                                                                        |
+| 423         | Locked                          | アクセスされているリソースがロックされています。                                                                                          |
 | 429         | 要求数が多すぎます (Too Many Requests)               | クライアント アプリケーションは調整されており、一定の時間が経過するまで要求を繰り返しません。                |
 | 500         | 内部サーバー エラー (Internal Server Error)           | 要求の処理中に内部サーバー エラーが発生しました。                                                                       |
 | 501         | 実装されていません (Not Implemented)                 | 要求された機能は実装されていません。                                                                                               |
@@ -40,7 +51,7 @@ Microsoft Graph のエラーは、標準の HTTP 状態コード、および JSO
 
 エラー応答は、**エラー**という名前の 1 つのプロパティを含む 1 つの JSON オブジェクトです。このオブジェクトには、すべてのエラーの詳細が含まれます。HTTP 状態コードの代わりに、またはこれに加えて、ここに返される情報を使用することができます。完全な JSON エラー本体の例を以下に示します。
 
-<!-- { "blockType": "example", "@odata.type": "sample.error", "expectError": true, "name": "example-error-response"} -->
+<!-- { "blockType": "ignored", "@odata.type": "odata.error", "expectError": true, "name": "example-error-response" } -->
 ```json
 {
   "error": {
@@ -60,13 +71,13 @@ Microsoft Graph のエラーは、標準の HTTP 状態コード、および JSO
 
 要求の処理中にエラーが発生するたびに、エラー リソースが返されます。
 
-エラー応答は、エラー応答に対する [OData v4](http://docs.oasis-open.org/odata/odata-json-format/v4.0/os/odata-json-format-v4.0-os.html#_Toc372793091) 仕様の定義に従います。
+エラー応答は、エラー応答に対する [OData v4](https://docs.oasis-open.org/odata/odata-json-format/v4.0/os/odata-json-format-v4.0-os.html#_Toc372793091) 仕様の定義に従います。
 
 ### <a name="json-representation"></a>JSON 表記
 
 エラー リソースは、これらのリソースで構成されます。
 
-<!-- { "blockType": "resource", "@odata.type": "sample.error" } -->
+<!-- { "blockType": "resource", "@odata.type": "odata.error" } -->
 ```json
 {
   "error": { "@odata.type": "odata.error" }  
@@ -88,16 +99,9 @@ Microsoft Graph のエラーは、標準の HTTP 状態コード、および JSO
 
 | プロパティ名  | 値                  | 説明\                                                                                               |
 |:---------------|:-----------------------|:-----------------------------------------------------------------------------------------------------------|
-| **code**       | string                 | 発生したエラーのエラー コード文字列                                                            |
-| **message**    | string                 | 発生したエラーに関する開発者用メッセージ。これはユーザーには直接表示されません。 |
+| **code**       | 文字列                 | 発生したエラーのエラー コード文字列                                                            |
+| **message**    | 文字列                 | 発生したエラーに関する開発者用メッセージ。これはユーザーには直接表示されません。 |
 | **innererror** | error object           | 省略可能。最上位レベルのエラーよりも詳細である可能性のある追加のエラー オブジェクト。                     |
-<!-- {
-  "type": "#page.annotation",
-  "description": "Understand the error format for the API and error codes.",
-  "keywords": "error response, error, error codes, innererror, message, code",
-  "section": "documentation",
-  "tocPath": "Misc/Error Responses"
-} -->
 
 <!--<a name="msg_code_property"> </a> -->
 
@@ -197,4 +201,16 @@ public bool IsError(string expectedErrorCode)
 <!-- ##Additional Resources##
 
 - [Microsoft Graph API release notes and known issues](microsoft-graph-api-release-notes-known-issues.md )
-- [Hands on lab: Deep dive into the Microsoft Graph API](http://dev.office.com/hands-on-labs/4585) -->
+- [Hands on lab: Deep dive into the Microsoft Graph API](https://dev.office.com/hands-on-labs/4585) -->
+
+<!-- {
+  "type": "#page.annotation",
+  "description": "Understand the error format for the API and error codes.",
+  "keywords": "error response, error, error codes, innererror, message, code",
+  "section": "documentation",
+  "suppressions": [
+    " Warning: /concepts/errors.md:
+      Multiple resources found in file, but we only support one per file. 'odata.error,odata.error'. Skipping."
+  ],
+  "tocPath": "Misc/Error Responses"
+} -->
