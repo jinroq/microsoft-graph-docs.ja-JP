@@ -3,7 +3,7 @@ title: Microsoft Teams API の概要
 description: 'Microsoft Teams は、チームワークおよびインテリジェントな通信のための究極のハブです。 '
 ms.openlocfilehash: 1f210bf529769c96f22c2c7180d3736cdc9ed776
 ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/29/2018
 ms.locfileid: "27092456"
@@ -21,7 +21,7 @@ Microsoft Graph を使用することにより、業務上の新しい問題が�
 
 ![チームの作成、メンバーと所有者の追加、チームの設定、チャネルの追加、アプリのインストール、タブの追加、必要となったタイミングでのチームのアーカイブまたは削除により、チームのライフサイクルを自動化します。](images/teams-lifecycle.png)
 
-業務上の問題が解決し、そのチームが不要になったら、Microsoft Teams API を使用してチームを[アーカイブ](/graph/api/team-archive?view=graph-rest-1.0)または[削除](/graph/api/group-delete?view=graph-rest-1.0)します。 チームを作成する時点で最大期間がわかっている場合は、そのチームについて [Office 365 グループ有効期限ポリシー](https://support.office.com/ja-JP/article/office-365-group-expiration-policy-8d253fe5-0e09-4b3c-8b5e-f48def064733?ui=en-US&rs=en-US&ad=US)を設定することにより、そのポリシーに従ってチームが自動で削除されます。
+業務上の問題が解決し、そのチームが不要になったら、Microsoft Teams API を使用してチームを[アーカイブ](/graph/api/team-archive?view=graph-rest-1.0)または[削除](/graph/api/group-delete?view=graph-rest-1.0)します。 チームを作成する時点で最大期間がわかっている場合は、そのチームについて [Office 365 グループ有効期限ポリシー](https://support.office.com/en-us/article/office-365-group-expiration-policy-8d253fe5-0e09-4b3c-8b5e-f48def064733?ui=en-US&rs=en-US&ad=US)を設定することにより、そのポリシーに従ってチームが自動で削除されます。
 
 ### <a name="get-work-done-even-when-no-one-is-around"></a>誰もいない場合でも作業を完了する
 

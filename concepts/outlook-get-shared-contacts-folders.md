@@ -3,7 +3,7 @@ title: 共有フォルダー内にある Outlook の連絡先を取得する
 description: " 別名 "
 ms.openlocfilehash: c8c5b3a2eac49153826113af036146cc4475d9e5
 ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/29/2018
 ms.locfileid: "27092404"

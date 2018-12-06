@@ -3,7 +3,7 @@ title: 共有または委任されたフォルダー内の Outlook メッセー�
 description: イベントの一覧表示、イベントの取得、予定表の取得、連絡先の一覧表示、連絡先の取得、連絡先フォルダーの各トピックにも、同様のセクションがあります。
 ms.openlocfilehash: d9e04527879cb32f14dc8d74a814a54150c5b2d0
 ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/29/2018
 ms.locfileid: "27092454"

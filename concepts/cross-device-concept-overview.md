@@ -3,7 +3,7 @@ title: Microsoft Graph のクロスデバイス エクスペリエンス
 description: '複数デバイス時代のユーザーは、複数のプラットフォームやフォーム ファクターのデバイスを使いこなしています。朝のニュースをタブレットで読み、通勤電車の中では携帯電話でメールをチェックし、仕事場ではデスクトップ PC を使います。 夜になると、ホーム メディア コンソールで映画を見た後、スマート スピーカーでその日のニュースを確認します。 平均的なユーザーは、一日の中で複数のデバイスやプラットフォームをあれこれ使い分けています。 '
 ms.openlocfilehash: 83557d59f964631fe12a8a5cb7f00121955432d3
 ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/29/2018
 ms.locfileid: "27092382"
