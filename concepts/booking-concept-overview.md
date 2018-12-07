@@ -1,5 +1,5 @@
 ---
-title: Microsoft 予約 API の概要 (プレビュー)
+title: Microsoft Bookings API の概要 (プレビュー)
 description: Microsoft Bookings は、小規模企業およびその顧客を対象とした、シンプルかつ効率的な予約スケジュールのためのオンラインおよびモバイルのアプリを提供します。 自動車修理工場、美容院、法律事務所など、予約を扱うサービスを提供する小規模企業で予約管理機能を活用すれば、それによって空いた時間を、事業拡大に向けたより重要な作業に当てることができます。 Microsoft Bookings は、Office 365 Business Premium サブスクリプションを取得した企業がご利用いただけます。
 ms.openlocfilehash: 334b26b5f02e7060b0fddfe8264e138e9d3a2bdc
 ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
@@ -8,14 +8,14 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 11/29/2018
 ms.locfileid: "27092490"
 ---
-# <a name="microsoft-bookings-api-overview-preview"></a>Microsoft 予約 API の概要 (プレビュー)
+# <a name="microsoft-bookings-api-overview-preview"></a>Microsoft Bookings API の概要 (プレビュー)
 
 Microsoft Bookings は、小規模企業およびその顧客を対象とした、シンプルかつ効率的な予約スケジュールのためのオンラインおよびモバイルのアプリを提供します。 自動車修理工場、美容院、法律事務所など、予約を扱うサービスを提供する小規模企業で予約管理機能を活用すれば、それによって空いた時間を、事業拡大に向けたより重要な作業に当てることができます。 Microsoft Bookings は、Office 365 Business Premium サブスクリプションを取得した企業がご利用いただけます。
 
 ## <a name="why-integrate-with-microsoft-bookings-using-microsoft-graph"></a>Microsoft Graph を利用して Microsoft Bookings を統合する理由
 
 ### <a name="streamline-appointment-booking"></a>予約管理を合理化する
-業務担当者が、かかってきた電話に応対できなかった場合や営業時間外の場合でも、顧客が予約を入れるチャンスを逃すことがありません。 お客様にはスケジュール] ページで、ビジネスの web サイトや Facebook 上で、いつでも直接[利用可能なサービスを参照してください](/graph/api/bookingbusiness-list-services?view=graph-rest-beta)」や「[本の予定](/graph/api/bookingbusiness-post-appointments?view=graph-rest-beta)ことができます。 
+業務担当者が、かかってきた電話に応対できなかった場合や営業時間外の場合でも、顧客が予約を入れるチャンスを逃すことがありません。 顧客は、事業者の Web サイトや Facebook の予定確認ページでいつでも[利用可能なサービス](/graph/api/bookingbusiness-list-services?view=graph-rest-beta)や[予約状況](/graph/api/bookingbusiness-post-appointments?view=graph-rest-beta)を確認できます。 
 
 業務担当者は、どこにいても Web、モバイル アプリ、対面、電話により予約を受け付けることができます。 既存の予約の[変更](/graph/api/bookingappointment-update?view=graph-rest-beta)、[キャンセル](/graph/api/bookingappointment-cancel?view=graph-rest-beta)、または別のスタッフ メンバーへの[再割り当て](/graph/api/bookingappointment-update?view=graph-rest-beta)を実行できます。 
 
@@ -29,16 +29,16 @@ Microsoft Bookings は、小規模企業およびその顧客を対象とした�
 同じ Microsoft Graph REST 統一エンドポイントを使用することにより、Bookings API にアクセスし、[Microsoft 365 の優れた機能を統合](overview-major-services.md)することにより、豊富なシナリオをサポートすることができます。 たとえば [Excel](excel-concept-overview.md#generate-reports-and-analyze-results) を使用して事業の財務データを追跡および分析し、本格的なレポートを生成したり、[SharePoint](sharepoint-concept-overview.md) や [Microsoft Teams](teams-concept-overview.md) を使用してチーム コラボレーションを推進したりできます。
 
 ## <a name="api-reference"></a>API リファレンス
-このサービスの API リファレンスを検索してください。
+このサービスの API リファレンスをお探しですか?
 
-[Graph のベータ版の Microsoft 予約 API](/graph/api/resources/booking-api-overview?view=graph-rest-beta)を参照してください。
+「[Microsoft Graph ベータ版の Microsoft Bookings API](/graph/api/resources/booking-api-overview?view=graph-rest-beta)」を参照してください。
 
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 次の詳細情報をご確認ください:
 
 - 
-  [Microsoft Bookings](https://support.office.com/en-us/article/Publish-your-business-calendar-online-with-Microsoft-Bookings-47403d64-a067-4754-9ae9-00157244c27d) およびその他の [Office 365 ビジネス アプリ](https://support.office.com/en-us/article/manage-your-business-apps-in-the-business-center-47eca808-cf96-42ba-83e8-55daf18e49dc?ui=en-US&rs=en-US&ad=US)。
+  [Microsoft Bookings](https://support.office.com/ja-JP/article/Publish-your-business-calendar-online-with-Microsoft-Bookings-47403d64-a067-4754-9ae9-00157244c27d) およびその他の [Office 365 ビジネス アプリ](https://support.office.com/ja-JP/article/manage-your-business-apps-in-the-business-center-47eca808-cf96-42ba-83e8-55daf18e49dc?ui=en-US&rs=en-US&ad=US)。
 - Microsoft Graph における [Bookings API の利用](/graph/api/resources/booking-api-overview?view=graph-rest-beta)。
 

@@ -1,17 +1,17 @@
-name: グラフ ドキュメント
+name: Graph のドキュメント
 items:
   - name: Microsoft Graph の概要
     href: overview.md
     expanded: true
     items:
-      - name: 確認
+      - name: 理解
         expanded: true
         items:
-          - name: Microsoft Graph を使用したサービス
+          - name: Microsoft Graph のサービス
             href: overview-major-services.md
             expanded: true
             items:
-              - name: ユーザーが到達することができます。
+              - name: 連絡可能なユーザー
                 href: users-you-can-reach.md
                 items:
                   - name: 国内クラウドの展開
@@ -22,7 +22,7 @@ items:
                 href: versioning-and-support.md
               - name: 利用規約
                 href: 'https://developer.microsoft.com/graph/terms-of-use'
-          - name: グラフ データ (プレビュー) を接続します。
+          - name: Microsoft Graph データ接続 (プレビュー)
             href: data-connect-overview.md
           - name: トレーニング
             href: training.md
@@ -55,24 +55,24 @@ items:
             items:
               - name: 会議の日時を検索する
                 href: findmeetingtimes-example.md
-              - name: スケジュールの空き時間情報を取得します。
+              - name: 空き時間スケジュールを取得する
                 href: outlook-get-free-busy-schedule.md
-              - name: 定期的なイベントをスケジュールします。
+              - name: 定期的なイベントをスケジュールする
                 href: outlook-schedule-recurring-events.md
-              - name: 共有イベントを取得します。
+              - name: 共有イベントを取得する
                 href: outlook-get-shared-events-calendars.md
-              - name: 不変の ID (プレビュー)
+              - name: 不変 ID (プレビュー)
                 href: outlook-immutable-id.md
           - name: クロスデバイス エクスペリエンス
             href: cross-device-concept-overview.md
             items:
               - name: アクティビティ フィード
                 href: activity-feed-concept-overview.md
-              - name: デバイス リレー (プレビュー)
+              - name: デバイスのリレー (プレビュー)
                 href: device-relay-concept-overview.md
               - name: 通知 (プレビュー)
                 href: notifications-concept-overview.md
-              - name: クロス デバイス アプリを構築します。
+              - name: デバイス間のアプリを構築する
                 href: cross-device-app-configuration.md
           - name: 顧客の予約 (プレビュー)
             href: booking-concept-overview.md
@@ -87,23 +87,23 @@ items:
             href: education-concept-overview.md
           - name: ファイル
             href: onedrive-concept-overview.md
-          - name: Id およびアクセス
+          - name: ID とアクセス
             href: azuread-identity-access-management-concept-overview.md
           - name: メール
             href: outlook-mail-concept-overview.md
             items:
               - name: メッセージを作成して送信する
                 href: outlook-create-send-messages.md
-              - name: メッセージを整理します。
+              - name: メッセージを整理する
                 href: outlook-organize-messages.md
-              - name: 共有メッセージを取得します。
+              - name: 共有メッセージを取得する
                 href: outlook-share-messages-folders.md
-              - name: 不変の ID (プレビュー)
+              - name: 不変 ID (プレビュー)
                 href: outlook-immutable-id.md
           - name: メモ
             href: integrate-with-onenote.md
             items:
-              - name: OneNote のコンテンツを取得します。
+              - name: OneNote のコンテンツを入手する
                 href: onenote-get-content.md
               - name: OneNote クライアントを開く
                 href: open-onenote-client.md
@@ -131,9 +131,9 @@ items:
           - name: 個人用連絡先
             href: outlook-contacts-concept-overview.md
             items:
-              - name: 共有の連絡先を取得します。
+              - name: 共有の連絡先を取得する
                 href: outlook-get-shared-contacts-folders.md
-              - name: 不変の ID (プレビュー)
+              - name: 不変 ID (プレビュー)
                 href: outlook-immutable-id.md
           - name: レポート
             href: reportroot-concept-overview.md
@@ -142,7 +142,7 @@ items:
             items:
               - name: データ フロー
                 href: security-dataflow.md
-              - name: Authorization
+              - name: 認可
                 href: security-authorization.md
               - name: SIEM との統合
                 href: security-siemintegration.md
@@ -153,10 +153,10 @@ items:
                     href: security-qradar-siemintegration.md
           - name: サイトとリスト
             href: sharepoint-concept-overview.md
-          - name: ソーシャル ・ インテリジェンス
+          - name: ソーシャル インテリジェンス
             href: social-intel-concept-overview.md
             items:
-              - name: 関連する他のユーザーに関する情報を取得します。
+              - name: 関係者の情報を取得する
                 href: people-example.md
           - name: タスクとプラン
             href: planner-concept-overview.md
@@ -165,33 +165,33 @@ items:
           - name: ブックとグラフ
             href: excel-concept-overview.md
             items:
-              - name: セッションを管理します。
+              - name: セッションを管理する
                 href: excel-manage-sessions.md
-              - name: グラフ イメージを表示します。
+              - name: グラフのイメージを表示する
                 href: excel-display-chart-image.md
-              - name: ブック機能を使用します。
+              - name: ブックの関数を使用する
                 href: excel-use-functions.md
-              - name: 範囲の書式を更新します。
+              - name: 範囲の書式を更新する
                 href: excel-update-range-format.md
               - name: ブックにデータを書き込む
                 href: excel-write-to-workbook.md
       - name: 開発
         expanded: true
         items:
-          - name: 認証トークンの取得
+          - name: 認証トークンを取得する
             href: auth-overview.md
             items:
-              - name: アプリを登録する
+              - name: アプリの登録
                 href: auth-register-app-v2.md
               - name: ユーザーの代わりにアクセスを取得
                 href: auth-v2-user.md
               - name: ユーザーなしでアクセスを取得
                 href: auth-v2-service.md
-              - name: Permissions
+              - name: アクセス許可
                 href: permissions-reference.md
-              - name: アプリケーション アクセス (Csp) を管理します。
+              - name: アプリケーション アクセス (CPS) の管理
                 href: auth-cloudsolutionprovider.md
-          - name: API を使用します。
+          - name: API の使用
             href: use-the-api.md
             items:
               - name: ページング
@@ -200,27 +200,27 @@ items:
                 href: query-parameters.md
               - name: バッチ要求
                 href: json-batching.md
-              - name: スロットル
+              - name: 調整
                 href: throttling.md
               - name: 変更通知
                 href: webhooks.md
               - name: 変更履歴の記録
                 href: delta-query-overview.md
                 items:
-                  - name: イベント (例) への変更を取得します。
+                  - name: イベントへの変更の取得 (例)
                     href: delta-query-events.md
-                  - name: グループ (例) への変更を取得します。
+                  - name: グループへの変更の取得 (例)
                     href: delta-query-groups.md
-                  - name: メッセージ (例) への変更を取得します。
+                  - name: メッセージへの変更の取得 (例)
                     href: delta-query-messages.md
-                  - name: ユーザー (など) に変更を取得します。
+                  - name: ユーザーへの変更の取得 (例)
                     href: delta-query-users.md
-              - name: カスタム データを追加します。
+              - name: カスタム データの追加
                 href: extensibility-overview.md
                 items:
-                  - name: 開いている拡張機能を使用 (例)
+                  - name: オープン拡張機能の使用 (例)
                     href: extensibility-open-users.md
-                  - name: スキーマの拡張機能 (例) を使用します。
+                  - name: スキーマ拡張機能の使用 (例)
                     href: extensibility-schema-groups.md
           - name: リソース
             expanded: true
@@ -233,7 +233,7 @@ items:
                 href: changelog.md
               - name: エラー
                 href: errors.md
-      - name: v1.0 の参照
+      - name: v1.0 参照
         href: /graph/api/overview?toc=./ref/toc.json&view=graph-rest-1.0
-      - name: ベータ版参照
+      - name: ベータ参照
         href: /graph/api/overview?toc=./ref/toc.json&view=graph-rest-beta

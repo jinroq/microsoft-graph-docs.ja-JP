@@ -1,6 +1,6 @@
 ---
 title: 'アプリで Microsoft Graph データをページングする '
-description: "odata.nextLink' プロパティでは、結果の次のページへの URL を含む応答します。 "
+description: "応答内の、結果の次のページへの URL を含む odata.nextLink' プロパティ。 "
 ms.openlocfilehash: 9a9224a6dc710fa70ebec2448bf2eef2238968ca
 ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
 ms.translationtype: MT
@@ -12,7 +12,7 @@ ms.locfileid: "27092503"
 
 Microsoft Graph に対するクエリの中には、サーバー側のページングを使用したり、1 つの要求におけるページ サイズを限定するために `$top` クエリ パラメーターを使用したりすることによって、複数のデータ ページを返すものがあります。要求セットが複数ページにまたがる場合、Microsoft Graph は、結果の次のページへの URL が含まれる `@odata.nextLink` プロパティを応答で返します。 
 
-5、指定のページ ・ サイズの組織内のすべてのユーザーを次の URL が要求するなど、`$top`パラメーターのクエリを実行します。
+たとえば、次の URL の場合、組織内のすべてのユーザーのうち、`$top` クエリ パラメーターで指定されたページ サイズ 5 のユーザーを要求します。
 
 ```html
 https://graph.microsoft.com/v1.0/users?$top=5

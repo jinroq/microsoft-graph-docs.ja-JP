@@ -172,7 +172,7 @@ GET https://graph.microsoft.com/v1.0/users/john.doe@contoso.onmicrosoft.com?$sel
 Authorization : Bearer {access_token}
 ```
 
-表示のように、成功した場合の応答は 200 OK 状態とペイロードを返します。
+成功した場合の応答は、200 OK 状態と、次に示すペイロードを返します。
 
 ```no-highlight 
 HTTP/1.1 200 OK
@@ -230,7 +230,7 @@ GET https://graph.microsoft.com/v1.0/users/john.doe@contoso.onmicrosoft.com/dire
 Authorization : Bearer {access_token}
 ```
 
-成功した場合の応答は、200 OK 状態と、次に示すペイロードを返します。
+表示のように、成功した場合の応答は 200 OK 状態とペイロードを返します。
 
 ```no-highlight 
 HTTP/1.1 200 OK

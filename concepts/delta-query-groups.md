@@ -1,6 +1,6 @@
 ---
 title: グループに対する増分の変更を取得する
-description: デルタのクエリは、追加、削除、またはグループに一連のデルタ関数の呼び出しを使用して更新のクエリを実行できます。 グループへの変更を検出するデルタ ・ クエリを有効に
+description: デルタ クエリでは、一連のデルタ関数呼び出しを使用して、グループへの追加、削除、または更新に対してクエリを実行できます。 デルタ クエリによりグループへの変更の検出が可能になる
 ms.openlocfilehash: b043d62e0d99b4d71e25a8367abc731d39ad6d45
 ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
 ms.translationtype: MT
@@ -82,7 +82,7 @@ Content-type: application/json
 }
 ```
 
->**注:** 、`members@delta`プロパティは、- TestGroup1 - の最初のグループ オブジェクトに含まれているし、2 つの現在のメンバー グループが含まれています。 TestGroup2 にはメンバーがないため、このグループにはそのプロパティが含まれていません。
+>**注:**  最初のグループ オブジェクト - TestGroup1 - には `members@delta` プロパティが含まれています。それにはグループの現在の 2 つのメンバーが含まれています。 TestGroup2 にはメンバーがないため、このグループにはそのプロパティが含まれていません。
 
 ## <a name="nextlink-request"></a>nextLink 要求
 

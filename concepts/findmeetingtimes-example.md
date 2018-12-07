@@ -1,6 +1,6 @@
 ---
 title: 開催可能な会議日時を Outlook カレンダーで検索する
-description: '職場または学校では、共通の時刻や多くの場合に対応するためのオーバーヘッドが発生します。 Graph のアプリケーションで使用できます。 '
+description: '職場や学校では、集まるための共通の時間と場所を探して頻繁にオーバーヘッドが発生します。 Microsoft Graph アプリケーションで使用可能 '
 ms.openlocfilehash: 92390509f68d469cf9912e9e903a2576b8fa7506
 ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
 ms.translationtype: MT

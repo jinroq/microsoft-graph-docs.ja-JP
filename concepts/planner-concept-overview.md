@@ -46,13 +46,13 @@ Note: Put an image here showing the relationship between Planner and other thing
 |[タスクを削除](/graph/api/plannertask-delete?view=graph-rest-1.0)|DELETE [https://graph.microsoft.com/v1.0/planner/tasks/{id}](https://developer.microsoft.com/graph/graph-explorer?request=groups/{id}/planner/plans&version=v1.0)|
 
 ## <a name="api-reference"></a>API リファレンス
-このサービスの API リファレンスを検索してください。
+このサービスの API リファレンスをお探しですか?
 
-- [Graph v1.0 プランナー API](/graph/api/resources/planner-overview?view=graph-rest-1.0)
-- [ベータ版の Microsoft Graph API のプランナー](/graph/api/resources/planner-overview?view=graph-rest-beta)
+- [Microsoft Graph v1.0 の Planner API](/graph/api/resources/planner-overview?view=graph-rest-1.0)
+- [Microsoft Graph ベータ版の Planner API](/graph/api/resources/planner-overview?view=graph-rest-beta)
 
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 - [Planner API を使用する](/graph/api/resources/planner-overview?view=graph-rest-1.0)
 - [プランを操作する](/graph/api/resources/planner-overview?view=graph-rest-1.0#plans)

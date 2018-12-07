@@ -1,6 +1,6 @@
 ---
 title: 'カレンダー ビューのイベントへの増分の変更を取得する '
-description: '[カレンダー] ビューは、既定のカレンダーから日付と時刻の範囲内のイベントのコレクション (./me/予定表ビュー) '
+description: 'カレンダー ビューは、既定のカレンダー (../me/calendarview) からの日付/時刻範囲内にあるイベントのコレクションです。 '
 ms.openlocfilehash: 68e4053c29fd95f04ff0b031bf519301e63dc08a
 ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
 ms.translationtype: MT

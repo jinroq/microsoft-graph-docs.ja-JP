@@ -1,17 +1,17 @@
 ---
 title: サインイン リソースの種類
 description: 'このリソースは、ユーザーまたはアプリケーションにサインイン活動、ディレクトリ内を詳しく説明します。 '
-ms.openlocfilehash: 2bc6c8b961f0626a6409d9be868235f285f48e52
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.openlocfilehash: f176f707e87b3e88292c32fba3748b9e70110e87
+ms.sourcegitcommit: 4aebfaefc23e02a98b2fec35958cd2110020f15f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27073340"
+ms.lasthandoff: 12/06/2018
+ms.locfileid: "27184540"
 ---
 # <a name="signin-resource-type"></a>サインイン リソースの種類
 このリソースは、ユーザーまたはアプリケーションにサインイン活動、ディレクトリ内を詳しく説明します。 
 
-## <a name="methods"></a>メソッド
+## <a name="methods"></a>Methods
 
 | メソッド           | 戻り値の型    |説明|
 |:---------------|:--------|:----------|
@@ -19,16 +19,15 @@ ms.locfileid: "27073340"
 |[サインインを取得します。](../api/signin-get.md) | [サイン](signin.md) |サイン オブジェクトのプロパティと関係を参照してください。|
 
 ## <a name="properties"></a>プロパティ
-| プロパティ     | 型   |説明|
+| プロパティ     | 種類   |説明|
 |:---------------|:--------|:----------|
 |appDisplayName|String|Azure ポータルに表示されるアプリケーション名を参照します。|
 |appId|文字列型 (String)|Azure Active Directory 内のアプリケーションの Id を表す一意の GUID を参照します。|
-|authenticationProcessingDetails|`authenticationProcessingDetails`|認証プロセッサに関連付けられている詳細情報を提供します。|
 |clientAppUsed|String|Activty.E.g サインインに使用されるレガシ クライアントを提供します。 ブラウザー、作業中の同期を Exchange、IMAP、MAPI、SMTP、POP の最近のクライアントが含まれています。|
 |appliedConditionalAccessPolicy|[conditionalAccessPolicy](conditionalaccesspolicy.md)コレクション|対応する記号の活動によってトリガーされる条件付きのアクセス ポリシーの一覧を示します。|
 |conditionalAccessStatus|文字列| トリガーの条件付きのアクセス ポリシーのステータスを提供します。 可能な値は、`success`、`failure`、`notApplied`、`unknownFutureValue` です。|
 |originalRequestId|String|認証シーケンス内の最初の要求の要求 id です。|
-|isInteractive|ブール値|サインインがインタラクティブかどうかを示します。|
+|isInteractive|ブール型|サインインがインタラクティブかどうかを示します。|
 |tokenIssuerName|String|Id プロバイダー (例えば sts.microsoft.com) の名前|
 |tokenIssuerType|String|IdentityProvider の種類を提供します。 使用可能な値は、 `AzureAD`、 `ADFederationServices`、 `UnknownFutureValue`。|
 |correlationId|String|サインインが開始されると、クライアントから送信される ID を参照します。 ヘルプ デスクやサポートを呼び出すときに、対応する記号の活動をトラブルシューティングに使用されます。|
@@ -41,7 +40,7 @@ ms.locfileid: "27073340"
 |riskDetail|`riskDetail`|危険なユーザー、サインインまたはリスク事象の特定の状態の背後にある '理由' を提供します。 可能な値: `none`、 `adminGeneratedTemporaryPassword`、 `userPerformedSecuredPasswordChange`、 `userPerformedSecuredPasswordReset`、 `adminConfirmedSigninSafe`、 `aiConfirmedSigninSafe`、 `userPassedMFADrivenByRiskBasedPolicy`、 `adminDismissedAllRiskForUser`、 `adminConfirmedSigninCompromised`、 `unknownFutureValue`。 値`none`アクションが実行されたことなしに、ユーザーまたはのサインインでこれまでにすることを意味します。|
 |riskLevelAggregated|`riskLevel`|集約されたリスクのレベルを提供します。 可能な値: `none`、 `low`、 `medium`、 `high`、`hidden`と`unknownFutureValue`。 値`hidden`ユーザーまたはサインインが有効ではなかった Azure AD のアイデンティティ保護のことを意味します。|
 |riskLevelDuringSignIn|`riskLevel`|サインイン中に、リスクのレベルを提供します。 可能な値: `none`、 `low`、 `medium`、 `high`、`hidden`と`unknownFutureValue`。 値`hidden`ユーザーまたはサインインが有効ではなかった Azure AD のアイデンティティ保護のことを意味します。|
-|riskEventTypes|`riskEventTypes`|記号に関連付けられているリスク イベントの種類の一覧を提供します。 可能な値: `none`、 `adminGeneratedTemporaryPassword`、 `userPerformedSecurePasswordChange`、 `userPerformedSecuredPasswordReset`、 `adminConfirmedSigninSafe`、 `aiConfirmedSigninSafe`、 `userPassedMFADrivenByRiskBasedPolicy`、 `adminDismissedAllRiskForUser`、 `adminConfirmedSigninCompromised`、`hidden`と`unknownFutureValue`。 値`hidden`ユーザーまたはサインインが有効ではなかった Azure AD のアイデンティティ保護のことを意味します。|
+|riskEventTypes|`riskEventTypes`|記号に関連付けられているリスク イベントの種類の一覧を提供します。 可能な値: `unlikelyTravel`、 `anonymizedIPAddress`、 `maliciousIPAddress`、 `unfamiliarFeatures`、 `malwareInfectedIPAddress`、 `suspiciousIPAddress`、 `leakedCredentials`、 `investigationsThreatIntelligence`、`generic`と`unknownFutureValue`。|
 |riskState|`riskState`|危険なユーザー、サインインまたはリスク イベントの 'リスク状態' を提供します。 可能な値: `none`、 `confirmedSafe`、 `remediated`、 `dismissed`、 `atRisk`、 `confirmedCompromised`、 `unknownFutureValue`。|
 |mfaDetail|[mfaDetail](mfadetail.md)|関連する MFA を提供情報が必要な MFA、MFA の状態に対応する記号のようにします。|
 |networkLocationDetail|[networkLocationDetail](networklocationdetail.md)|ネットワーク上の場所に関する詳細情報を提供します。|
@@ -91,7 +90,14 @@ ms.locfileid: "27073340"
   "tokenIssuerType": "String",
   "deviceDetail": {"@odata.type": "microsoft.graph.deviceDetail"},
   "location": {"@odata.type": "microsoft.graph.signInLocation"},
-  "riskLevel": "string",
+  "riskDetail": "string",
+  "riskLevelAggregated": "string",
+  "riskLevelDuringSignIn": "string",
+  "riskState": "string",
+  "riskEventTypes": "string",
+  "resourceDisplayName": "string",
+  "resourceId": "string",
+  "authenticationMethodsUsed": "string",
   "status": {"@odata.type": "microsoft.graph.signInStatus"},
 }
 

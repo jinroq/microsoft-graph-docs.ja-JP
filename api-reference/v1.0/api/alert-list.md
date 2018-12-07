@@ -1,12 +1,12 @@
 ---
 title: 警告の一覧表示
 description: オブジェクトのアラートの一覧を取得します。
-ms.openlocfilehash: c25784f62d37722fc997e57b9f15c9857133b964
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.openlocfilehash: 07dcdd4279ef0f258396bbfa6ecc0fc15cbd7ef0
+ms.sourcegitcommit: 4aebfaefc23e02a98b2fec35958cd2110020f15f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27022977"
+ms.lasthandoff: 12/06/2018
+ms.locfileid: "27184526"
 ---
 # <a name="list-alerts"></a>警告の一覧表示
 
@@ -46,6 +46,8 @@ GET /security/alerts?$filter={property} eq '{property-value}'&{property} eq '{pr
 - `$top`セキュリティ API の各プロバイダーから集計の上位の結果を返します。  
 
 OData を使用する別のプロパティ セットを返すには、`$select`する**警告**のプロパティのセットを指定するパラメーター クエリを実行します。  たとえば、**担当者**、**カテゴリ**、および**重要度**のプロパティを返す、クエリに次を追加: `$select=assignedTo,category,severity`。
+
+> **注:**`$top` 1000 の警告との組み合わせの制限が`$top`  +  `$skip` 6000 のアラートを超えることはできません。 などの`/security/alerts?$top=10&$skip=5990`を返します、`200 OK`応答コードの場合が、`/security/alerts?$top=10&$skip=5991`を返します、`400 Bad Request`応答コード。  詳細については、 [Microsoft グラフ セキュリティ API のエラー応答](../resources/security-error-codes.md)を参照してください。
 
 ## <a name="request-headers"></a>要求ヘッダー
 

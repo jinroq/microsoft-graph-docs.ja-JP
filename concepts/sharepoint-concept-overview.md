@@ -46,15 +46,15 @@ Microsoft Graph により、ユーザーにとって最も重要なデータを�
 
 アプリが SharePoint ページ内で実行される際、Microsoft Graph を使用することにより、Office 365 を通じて容易にデータにアクセスすることができます。
 
-それらのモデルに関する詳細については、[SharePoint デベロッパー センター][]または [SharePoint 開発者向けドキュメント][]を参照してください。
+それらのモデルに関する詳細については、「[SharePoint デベロッパー センター][]」または「[SharePoint 開発者向けドキュメント][]」を参照してください。
 
 ## <a name="api-reference"></a>API リファレンス
-このサービスの API リファレンスを検索してください。
+このサービスの API リファレンスをお探しですか?
 
-- [Graph v1.0 では、SharePoint API](/graph/api/resources/sharepoint?view=graph-rest-1.0)
-- [Graph のベータ版の SharePoint API](/graph/api/resources/sharepoint?view=graph-rest-beta)
+- [Microsoft Graph v1.0 の SharePoint API](/graph/api/resources/sharepoint?view=graph-rest-1.0)
+- [Microsoft Graph ベータ版の SharePoint API](/graph/api/resources/sharepoint?view=graph-rest-beta)
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 Microsoft Graph の SharePoint を利用する手始めとして、[サイトの使用][SharePoint]についてご確認ください。
 
@@ -64,8 +64,7 @@ Microsoft Graph の SharePoint を利用する手始めとして、[サイトの
 [作成]: /graph/api/list-create?view=graph-rest-1.0
 [クエリ]: /graph/api/listitem-get?view=graph-rest-1.0
 [ドライブ]: /graph/api/resources/drive?view=graph-rest-1.0
-
-  [OneDrive API]: /graph/api/resources/onedrive?view=graph-rest-1.0
+[OneDrive API]: /graph/api/resources/onedrive?view=graph-rest-1.0
 [SharePoint Framework]: https://docs.microsoft.com/sharepoint/dev/spfx/sharepoint-framework-overview
 [SharePoint アドイン]: https://docs.microsoft.com/sharepoint/dev/sp-add-ins/sharepoint-add-ins
 [SharePoint デベロッパー センター]: https://developer.microsoft.com/sharepoint

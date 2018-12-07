@@ -120,7 +120,7 @@ HTTP/1.1 204 No content
 
 ## <a name="see-also"></a>関連項目
 
-- [拡張機能を使用してカスタム データをリソースに追加する](extensibility-overview.md)
+- [拡張機能を使用したリソースへのカスタム データの追加](extensibility-overview.md)
 - [スキーマ拡張機能を使用したグループへのカスタム データの追加](extensibility-schema-groups.md)
 - [openTypeExtension リソース タイプ](/graph/api/resources/opentypeextension?view=graph-rest-1.0)
 - [オープン拡張機能を作成する](/graph/api/opentypeextension-post-opentypeextension?view=graph-rest-1.0)

@@ -31,7 +31,7 @@ https://graph.microsoft.com/{version}/{resource}?query-parameters
 
 * 状態コード - 成功または失敗を示す HTTP 状態コード。HTTP エラー コードの詳細については、「[エラー](errors.md)」を参照してください。
 * 応答メッセージ - 要求したデータ、または操作の結果。応答メッセージは、いくつかの操作で空になる場合があります。
-* **[次へ]** リンク - 要求が大量のデータを返す場合は、**[次ヘ]** を選択して、ページを進める必要があります。詳細については、「[ページング](paging.md)」を参照してください。
+* **[次へ]** リンク - 要求が大量のデータを返す場合は、[**次ヘ**] を選択して、ページを進める必要があります。詳細については、「[ページング](paging.md)」を参照してください。
 
 ## <a name="http-methods"></a>HTTP メソッド
 
@@ -64,7 +64,7 @@ API のバージョンに関する詳細については、「[バージョン管
 
 ユーザーの URL には、要求で操作するリソースが含まれます。たとえば、`me`、`users`、`groups`、`drives`、`sites` などです。最上位のリソースそれぞれにも、**リレーションシップ**が含まれます。`me/messages` または `me/drive` のように、追加のリソースにアクセスするのに使用できます。**メソッド** を使用して、リソースを操作することもできます。たとえば、電子メールを送信するには `me/sendMail` を使用します。
 
-リソースのリレーションシップおよびメソッドを移動する方法に関する詳細については、「[グラフをスキャンする](traverse-the-graph.md)」を参照してください。 
+リソースのリレーションシップおよびメソッドを移動する方法の詳細については、「[グラフをスキャンする](traverse-the-graph.md)」を参照してください。 
 
 各リソースにアクセスするために異なるアクセス許可が必要になる可能性があります。リソースの作成または更新には、リソースの読み取りよりも高いレベルのアクセス許可が必要になります。必要なアクセス許可に関する詳細については、メソッドの参照トピックを参照してください。 
 
@@ -82,6 +82,6 @@ https://graph.microsoft.com/v1.0/me/messages?filter=emailAddress eq 'jon@contoso
 
 クエリ パラメーターに関する詳細については、「[応答をカスタマイズする](query-parameters.md)」を参照してください。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 Microsoft Graph を使用して、起動および実行する準備ができました。詳細について知るには、[Graph エクスプローラー](https://developer.microsoft.com/graph/graph-explorer)に移動して、いくつかの要求や[クイック スタート](https://developer.microsoft.com/graph/quick-start)を試したり、「[SDK とコード サンプル](https://developer.microsoft.com/graph/code-samples-and-sdks)」のいずれかを使用して開始したりします。

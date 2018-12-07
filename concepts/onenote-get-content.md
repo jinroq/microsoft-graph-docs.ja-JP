@@ -596,7 +596,7 @@ Microsoft Graph は、**フィルター**式で次の OData 演算子および�
 | 論理演算子 | 例 |  
 |------|------|  
 | and | `createdTime le 2014-01-30 and createdTime gt 2014-01-23` |  
-| または | `createdByAppId eq '{app-id}' or createdByAppId eq '{app-id}'` |  
+| or | `createdByAppId eq '{app-id}' or createdByAppId eq '{app-id}'` |  
 | not | `not contains(tolower(title),'school')` |  
 
 <br/>

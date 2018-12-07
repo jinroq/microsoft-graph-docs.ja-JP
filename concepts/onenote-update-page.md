@@ -17,7 +17,7 @@ OneNote ページのコンテンツを更新する場合は、ページの *cont
 
 `PATCH ../notes/pages/{id}/content`</p>
 
-メッセージの本文で JSON 変更オブジェクトを送信します。 要求が成功すると、Microsoft Graph は 204 HTTP 状態コードを返します。
+メッセージの本文で JSON 変更オブジェクトを送信します。要求が成功すると、Microsoft Graph は 204 HTTP 状態コードを返します。
 
 
 <a name="request-uri"></a>

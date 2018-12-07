@@ -45,12 +45,12 @@ Intune API を使用して、Intune の次の作業を自動化します。
 - [通信費](/graph/api/resources/intune-tem-conceptual?view=graph-rest-1.0)を管理する
 
 ## <a name="api-reference"></a>API リファレンス
-このサービスの API リファレンスを検索してください。
+このサービスの API リファレンスをお探しですか?
 
-- [Graph v1.0 Intune API](/graph/api/resources/intune-graph-overview?view=graph-rest-1.0)
-- [Graph のベータ版で Intune API](/graph/api/resources/intune-graph-overview?view=graph-rest-beta)
+- [Microsoft Graph v1.0 の Intune API](/graph/api/resources/intune-graph-overview?view=graph-rest-1.0)
+- [Microsoft Graph ベータ版の Intune API](/graph/api/resources/intune-graph-overview?view=graph-rest-beta)
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 - [Azure AD を使用して Intune API にアクセス](https://docs.microsoft.com/intune/intune-graph-apis)します。
 - [PowerShell Intune サンプル](https://github.com/microsoftgraph/powershell-intune-samples)を使用して、一般的なタスクの実行方法を確認します。

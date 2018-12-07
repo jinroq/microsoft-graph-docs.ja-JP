@@ -1,12 +1,12 @@
 ---
 title: 警告の一覧表示
 description: " > **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。"
-ms.openlocfilehash: cd41c3c896c4c97d2090c2a43561c04510c771f9
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.openlocfilehash: e6ddf41616d27b41414386f83a9ce067411d92b9
+ms.sourcegitcommit: 4aebfaefc23e02a98b2fec35958cd2110020f15f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27067430"
+ms.lasthandoff: 12/06/2018
+ms.locfileid: "27184512"
 ---
 # <a name="list-alerts"></a>警告の一覧表示
 
@@ -49,6 +49,8 @@ GET /security/alerts?$filter={property} eq '{property-value}'&{property} eq '{pr
 
 OData を使用する別のプロパティ セットを返すには、`$select`する**警告**のプロパティのセットを指定するパラメーター クエリを実行します。  たとえば、**担当者**、**カテゴリ**、および**重要度**のプロパティを返す、クエリに次を追加: `$select=assignedTo,category,severity`。
 
+> **注:**`$top` 1000 の警告との組み合わせの制限が`$top`  +  `$skip` 6000 のアラートを超えることはできません。 などの`/security/alerts?$top=10&$skip=5990`を返します、`200 OK`応答コードの場合が、`/security/alerts?$top=10&$skip=5991`を返します、`400 Bad Request`応答コード。  詳細については、 [Microsoft グラフ セキュリティ API のエラー応答](../resources/security-error-codes.md)を参照してください。
+
 ## <a name="request-headers"></a>要求ヘッダー
 
 | 名前      |説明|
@@ -79,7 +81,7 @@ GET https://graph.microsoft.com/beta/security/alerts
 
 ### <a name="response"></a>応答
 
-応答の例を次に示します。 
+応答の例を次に示します。
 
 >**注:** 読みやすくするために、ここに示す応答オブジェクトは短くされている場合があります。実際の呼び出しからは、すべてのプロパティが返されます。
 <!-- {

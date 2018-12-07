@@ -1,12 +1,12 @@
 ---
 title: 警告の取得
 description: " プロパティと alert オブジェクトの関係を取得します。"
-ms.openlocfilehash: b5e85fe33f4896714c4100c22a26417091d154ee
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.openlocfilehash: b2c823257ffcb398639a89627b3a0e1cb407e085
+ms.sourcegitcommit: 4aebfaefc23e02a98b2fec35958cd2110020f15f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27023292"
+ms.lasthandoff: 12/06/2018
+ms.locfileid: "27184477"
 ---
 # <a name="get-alert"></a>警告の取得
 

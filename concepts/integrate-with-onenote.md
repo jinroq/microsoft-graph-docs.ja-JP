@@ -72,25 +72,25 @@ OneNote のコンテンツ更新機能については、Microsoft Graph API の�
 
 * [OneNote ページで絶対配置要素を作成する](onenote-abs-pos.md)
 * [OneNote ページに画像、ビデオ、ファイルを追加する](onenote-images-files.md)
-* [OneNote API の div タグを使用してキャプチャからデータを抽出する](onenote-extract-data.md)
+* [OneNote API div タグを使用してキャプチャからデータを抽出する](onenote-extract-data.md)
 
 ## <a name="see-also"></a>関連項目
-OneNote に固有のサービスの REST エンドポイントでのみ公開されている他のいくつかの OneNote 機能をお探しです。
+OneNote サービス固有の REST エンドポイントにのみ公開されている、OneNote その他の機能の一部について説明します。
 
-- [OneNote の開発](https://docs.microsoft.com/en-us/previous-versions/office/office-365-api/how-to/onenote-landing)
-- [クラス ノートブックの操作](https://docs.microsoft.com/en-us/previous-versions/office/office-365-api/how-to/onenote-classnotebook)
-- [非同期クラス ノートブックの操作](https://docs.microsoft.com/en-us/previous-versions/office/office-365-api/how-to/onenote-classnotebook-asynchronous)
-- [スタッフ ノートブックの操作](https://docs.microsoft.com/en-us/previous-versions/office/office-365-api/how-to/onenote-staffnotebook)
-- [ノートブック、セクション、ページのコピー](https://docs.microsoft.com/en-us/previous-versions/office/office-365-api/how-to/onenote-copy)
-- [OneNote エンティティのアクセス許可を管理する](https://docs.microsoft.com/en-us/previous-versions/office/office-365-api/how-to/onenote-manage-perms)
-- [Web ページで OneNote 保存ダイアログを使用する](https://docs.microsoft.com/en-us/previous-versions/office/office-365-api/how-to/onenote-save-dialog)
-- [Webhooks の購読](https://docs.microsoft.com/en-us/previous-versions/office/office-365-api/how-to/onenote-sync)
+- [OneNote の開発](https://docs.microsoft.com/ja-JP/previous-versions/office/office-365-api/how-to/onenote-landing)
+- [クラス ノートブックの操作](https://docs.microsoft.com/ja-JP/previous-versions/office/office-365-api/how-to/onenote-classnotebook)
+- [非同期クラス ノートブックの操作](https://docs.microsoft.com/ja-JP/previous-versions/office/office-365-api/how-to/onenote-classnotebook-asynchronous)
+- [スタッフ ノートブックの操作](https://docs.microsoft.com/ja-JP/previous-versions/office/office-365-api/how-to/onenote-staffnotebook)
+- [ノートブック、セクション、ページのコピー](https://docs.microsoft.com/ja-JP/previous-versions/office/office-365-api/how-to/onenote-copy)
+- [OneNote エンティティのアクセス許可を管理する](https://docs.microsoft.com/ja-JP/previous-versions/office/office-365-api/how-to/onenote-manage-perms)
+- [Web ページで OneNote 保存ダイアログを使用する](https://docs.microsoft.com/ja-JP/previous-versions/office/office-365-api/how-to/onenote-save-dialog)
+- [Webhooks の購読](https://docs.microsoft.com/ja-JP/previous-versions/office/office-365-api/how-to/onenote-sync)
 
 ## <a name="api-reference"></a>API リファレンス
-このサービスの API リファレンスを検索してください。
+このサービスの API リファレンスをお探しですか?
 
-- [Graph v1.0 では、OneNote API](/graph/api/resources/onenote-api-overview?view=graph-rest-1.0)
-- [Graph のベータ版の OneNote の API](/graph/api/resources/onenote-api-overview?view=graph-rest-beta)
+- [Microsoft Graph v1.0 の OneNote API](/graph/api/resources/onenote-api-overview?view=graph-rest-1.0)
+- [Microsoft Graph ベータ版の OneNote API](/graph/api/resources/onenote-api-overview?view=graph-rest-beta)
 
 ## <a name="next-steps"></a>次のステップ
 

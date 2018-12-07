@@ -35,10 +35,10 @@ Windows、iOS、Android、Web 用のアプリを関連付けるようクロス�
 アプリが利用可能な各プラットフォームでプッシュ通知認証情報をクロスデバイス アプリに関連付けると、ユーザーのアプリがデバイス間でコマンドを送信できるようになります。これにより、リアルタイムに複数の画面の間を移動したり、別のデバイスにワークフローを移行したりするようなエクスペリエンスを構築できます。 
 
 ## <a name="select-the-right-hosting-method-for-your-cross-device-app-configuration"></a>クロスデバイス アプリ構成のための適切なホスティング方式を選択する
-クロスデバイス アプリ構成は、ドメイン上の JSON ファイルとして、または [Windows デベロッパー センター](https://developer.microsoft.com/en-us/windows)により構成可能なプロファイルとしてホスティングできます。 ホスティング オプションは、アプリで有効にする Project Rome 機能に基づいて選択します。 
+クロスデバイス アプリ構成は、ドメイン上の JSON ファイルとして、または [Windows デベロッパー センター](https://developer.microsoft.com/ja-JP/windows)により構成可能なプロファイルとしてホスティングできます。 ホスティング オプションは、アプリで有効にする Project Rome 機能に基づいて選択します。 
 
 ### <a name="windows-dev-center-profile-recommended"></a>Windows デベロッパー センターのプロファイル (推奨) 
-Project Rome のすべて機能は、[Windows デベロッパー センター](https://developer.microsoft.com/en-us/windows)で管理されるクロスデバイス アプリを使用してアクセスできます。 また、Windows デベロッパー センターにより、クロスデバイス アプリ構成のあらゆる変更を管理するための*最善の*手段が提供されます。 変更内容を運用環境に公開する準備ができるまで、既存のプロファイルの更新内容を安全に保存できます。 デベロッパー センターで既存のクロスデバイス アプリの変更内容を公開すると、新しいプロファイルは、約 **1 時間**後に有効になります。  
+Project Rome のすべて機能は、[Windows デベロッパー センター](https://developer.microsoft.com/ja-JP/windows)で管理されるクロスデバイス アプリを使用してアクセスできます。 また、Windows デベロッパー センターにより、クロスデバイス アプリ構成のあらゆる変更を管理するための*最善の*手段が提供されます。 変更内容を運用環境に公開する準備ができるまで、既存のプロファイルの更新内容を安全に保存できます。 デベロッパー センターで既存のクロスデバイス アプリの変更内容を公開すると、新しいプロファイルは、約 **1 時間**後に有効になります。  
 
 ### <a name="externally-hosted-json-file-limited"></a>外部ホスティングの JSON ファイル (制限あり) 
 外部ホスティングされる JSON ファイルとして管理されるクロスデバイス アプリを使用することにより、サポートされるすべてのプラットフォーム上で、次の Project Rome 機能を使用することができます:  
@@ -59,7 +59,7 @@ Project Rome のすべて機能は、[Windows デベロッパー センター](h
 #### <a name="assert-domain-ownership-with-the-windows-dev-center"></a>Windows デベロッパー センターによるドメインの所有権のアサート
 Windows デベロッパー センターを使用してクロスデバイス アプリの構成を管理すると、クロスデバイス アプリ ID を表すドメインはクロスデバイス アプリ プロファイルの一部として保存されるため、Microsoft はドメイン所有者を確認することができます。 クロスデバイス アプリ構成を公開するには、ドメインの所有者であることが**検証されなければなりません**。そのため、最初にこれに取り組むのは良いことです。ドメインがまだ検証されていない場合、クロスデバイス アプリの詳細を保存し、この手順の完了後に再度検証を実行することにより、クロスデバイス アプリを公開できるようになります。
 
-クロスデバイス アプリのドメイン所有権を主張するには、デベロッパー センターで提供される固有の値を使って、そのドメインに対応する [DNS TXT](https://go.microsoft.com/fwlink/?linkid=871417) エントリを追加する必要があります。 この値は、クロスデバイス アプリごとに固有です。 アプリのための固有の値を調べるには、Windows デベロッパー センターにサインインし、左側のメニューから **[クロスデバイス エクスペリエンス]** を選択して、新しいクロスデバイス アプリの構成を開始します。 新しいクロスデバイス アプリに名前を付けた後、サブメニューから **[クロスデバイス アプリのドメインを検証する]** を選択します。 このページは、一意の値を **インライン**で表示される指示に表示されます (たとえば、MS = 95ff4557-813f-45a5-b2f6-1f94170b979f)。 'MS=' の部分も含めた値全体をコピーしてください。
+クロスデバイス アプリのドメイン所有権を主張するには、デベロッパー センターで提供される固有の値を使って、そのドメインに対応する [DNS TXT](https://go.microsoft.com/fwlink/?linkid=871417) エントリを追加する必要があります。 この値は、クロスデバイス アプリごとに固有です。 アプリのための固有の値を調べるには、Windows デベロッパー センターにサインインし、左側のメニューから **[クロスデバイス エクスペリエンス]** を選択して、新しいクロスデバイス アプリの構成を開始します。 新しいクロスデバイス アプリに名前を付けた後、サブメニューから **[クロスデバイス アプリのドメインを検証する]** を選択します。 このページには、固有の値が **インラインで**表示された手順が示されます (例: MS=95ff4557-813f-45a5-b2f6-1f94170b979f)。 'MS=' の部分も含めた値全体をコピーしてください。
 
 ### <a name="step-2-collect-your-platform-specific-application-ids"></a>手順 2: プラットフォーム固有のアプリケーション ID を収集する
 [Project Rome API](/graph/api/resources/project-rome-overview?view=graph-rest-1.0) を使用する、各アプリケーションおよびプラットフォームのプラットフォーム固有アプリケーション ID を収集します。
@@ -68,14 +68,14 @@ Windows デベロッパー センターを使用してクロスデバイス ア�
 
 ID を検索するには:
 
-* **windows_universal** - UWP アプリごとに 1 つの AUMID を提供します。 詳細については、「[インストール済みアプリのアプリケーション ユーザー モデル ID を検索する (Industry 8.1)](https://docs.microsoft.com/en-us/previous-versions/windows/embedded/dn449300(v=winembedded.82))」および「[アプリケーション](https://docs.microsoft.com/en-US/uwp/schemas/appxpackage/appxmanifestschema/element-application)」を参照してください。
-* **windows_win32** - アプリごとに 1 つの AUMID を提供します。 win32 アプリの場合、この情報を取得するにはスクリプトを使用する必要があります。 詳細については、「[インストール済みアプリのアプリケーション ユーザー モデル ID を検索する (Industry 8.1)](https://docs.microsoft.com/en-us/previous-versions/windows/embedded/dn449300(v=winembedded.82))」を参照してください。
+* **windows_universal** - UWP アプリごとに 1 つの AUMID を提供します。 詳細については、「[インストール済みアプリのアプリケーション ユーザー モデル ID を検索する (Industry 8.1)](https://docs.microsoft.com/ja-JP/previous-versions/windows/embedded/dn449300(v=winembedded.82))」および「[アプリケーション](https://docs.microsoft.com/ja-JP/uwp/schemas/appxpackage/appxmanifestschema/element-application)」を参照してください。
+* **windows_win32** - アプリごとに 1 つの AUMID を提供します。 win32 アプリの場合、この情報を取得するにはスクリプトを使用する必要があります。 詳細については、「[インストール済みアプリのアプリケーション ユーザー モデル ID を検索する (Industry 8.1)](https://docs.microsoft.com/ja-JP/previous-versions/windows/embedded/dn449300(v=winembedded.82))」を参照してください。
 * **android** - 詳細については、「[パッケージ名の変更](https://developer.android.com/studio/build/application-id.html#change_the_package_name)」を参照してください。 
 * **ios** - 詳細については、「[バンドル](https://developer.apple.com/documentation/foundation/bundle)」および「[必須プロパティ、ローカライズ可能なプロパティ、編集可能なプロパティ](https://help.apple.com/itunes-connect/developer/#/devfc3066644)」を参照してください。
 * **msa** – [アプリケーション登録ポータル](https://apps.dev.microsoft.com)にサインインします。 自分の任意のアプリについて、アプリ ID/クライアント ID を確認できます。 Live SDK (16 進値) と統合アプリ ID (GUID) の両方がサポートされています。   
 
 ### <a name="step-3-configure-support-for-microsoft-account-or-azure-ad"></a>手順 3: Microsoft アカウントまたは Azure AD のサポートを構成する
-クロス デバイス エクスペリエンスを有効にするには、アプリケーション ユーザー署名する必要がありますいずれかの方法を使用して、 [Microsoft アカウント](https://account.microsoft.com/account) または、 [Azure Active Directory](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-developers-guide) (Azure AD) のアカウントです。 クロスデバイス アプリ構成の一部として認証をサポートするためのアプリ ID/クライアント ID を提供することにより、クロスプラットフォーム サポートが有効になります。 最大 10 個のインスタンスを提供できます。
+クロスデバイス エクスペリエンスを有効にするには、アプリ ユーザーが  [Microsoft アカウント](https://account.microsoft.com/account) または  [Azure Active Directory](https://docs.microsoft.com/ja-JP/azure/active-directory/develop/active-directory-developers-guide)  (Azure AD) アカウントのいずれかでサインインする必要があります。 クロスデバイス アプリ構成の一部として認証をサポートするためのアプリ ID/クライアント ID を提供することにより、クロスプラットフォーム サポートが有効になります。 最大 10 個のインスタンスを提供できます。
 
 既存のアプリ ID/クライアント ID を検索するか、またはデベロッパー カウントで[アプリケーション登録ポータル](https://apps.dev.microsoft.com)にサインインすることにより新しい ID をプロビジョニングします。 そのポータルにサインインすると、自分の任意のアプリのアプリ ID/クライアント ID を確認できます。 Live SDK (16 進値) と統合アプリ ID (GUID) の両方がサポートされています。   
 
@@ -94,7 +94,7 @@ Azure AD のユーザーをサポートするアプリケーションをビル�
 ID を検索するには:
 
 * 
-  **Windows 通知サービス** - 「[アプリの登録とクラウド サービスのための認証情報の受け取り](https://docs.microsoft.com/en-us/previous-versions/windows/apps/hh913756(v=win.10)#registering-your-app-and-receiving-the-credentials-for-your-cloud-service)」および「[アプリケーション登録ポータル](https://apps.dev.microsoft.com)」を参照してください。
+  **Windows 通知サービス** - 「[アプリの登録とクラウド サービスのための認証情報の受け取り](https://docs.microsoft.com/ja-JP/previous-versions/windows/apps/hh913756(v=win.10)#registering-your-app-and-receiving-the-credentials-for-your-cloud-service)」および「[アプリケーション登録ポータル](https://apps.dev.microsoft.com)」を参照してください。
 * **Apple Push Notification Service** -「[APN の概要](https://developer.apple.com/library/content/documentation/NetworkingInternet/Conceptual/RemoteNotificationsPG/APNSOverview.html)」を参照してください。
 * **Google Cloud Messaging** - 「[Firebase Cloud Messaging](https://firebase.google.com/docs/cloud-messaging/)」を参照してください。
 
@@ -141,8 +141,8 @@ JSON ファイル自体の名前は **cross-platform-app-identifiers** でなけ
 
 ID を検索するには:
 
-* **windows_universal** - UWP アプリごとに 1 つの AUMID を提供します。 詳細については、「[インストール済みアプリのアプリケーション ユーザー モデル ID を検索する (Industry 8.1)](https://docs.microsoft.com/en-us/previous-versions/windows/embedded/dn449300(v=winembedded.82))」および「[アプリケーション](https://docs.microsoft.com/en-US/uwp/schemas/appxpackage/appxmanifestschema/element-application)」を参照してください。
-* **windows_win32** - アプリごとに 1 つの AUMID を提供します。 win32 アプリの場合、この情報を取得するにはスクリプトを使用する必要があります。 詳細については、「[インストール済みアプリのアプリケーション ユーザー モデル ID を検索する (Industry 8.1)](https://docs.microsoft.com/en-us/previous-versions/windows/embedded/dn449300(v=winembedded.82))」を参照してください。
+* **windows_universal** - UWP アプリごとに 1 つの AUMID を提供します。 詳細については、「[インストール済みアプリのアプリケーション ユーザー モデル ID を検索する (Industry 8.1)](https://docs.microsoft.com/ja-JP/previous-versions/windows/embedded/dn449300(v=winembedded.82))」および「[アプリケーション](https://docs.microsoft.com/ja-JP/uwp/schemas/appxpackage/appxmanifestschema/element-application)」を参照してください。
+* **windows_win32** - アプリごとに 1 つの AUMID を提供します。 win32 アプリの場合、この情報を取得するにはスクリプトを使用する必要があります。 詳細については、「[インストール済みアプリのアプリケーション ユーザー モデル ID を検索する (Industry 8.1)](https://docs.microsoft.com/ja-JP/previous-versions/windows/embedded/dn449300(v=winembedded.82))」を参照してください。
 * **android** - 詳細については、「[パッケージ名の変更](https://developer.android.com/studio/build/application-id.html#change_the_package_name)」を参照してください。 
 * **ios** - 詳細については、「[バンドル](https://developer.apple.com/documentation/foundation/bundle)」および「[必須プロパティ、ローカライズ可能なプロパティ、編集可能なプロパティ](https://help.apple.com/itunes-connect/developer/#/devfc3066644)」を参照してください。
 * **msa** – [アプリケーション登録ポータル](https://apps.dev.microsoft.com)にサインインします。 自分の任意のアプリについて、アプリ ID/クライアント ID を確認できます。 Live SDK (16 進値) と統合アプリ ID (GUID) の両方がサポートされています。   
@@ -162,9 +162,9 @@ ID を検索するには:
 ]
 ```
 
-ID とクライアント Id を検索するには、既存のアプリ開発者アカウントを使用して、 [アプリケーション登録ポータル](https://apps.dev.microsoft.com)にサインインして新しいものを提供したりできます。 サインインすると、自分の任意のアプリのアプリ ID/クライアント ID を確認できます。 Live SDK (16 進値) と統合アプリ ID (GUID) の両方がサポートされています。 前の例に示されているように、Microsoft アカウントまたは Azure AD のサポートを有効にするために使用される ID を追加する際には、プラットフォーム タイプとして "msa" を使用します。  
+既存のアプリ ID/クライアント ID を検索するか、またはデベロッパー カウントで [アプリケーション登録ポータル](https://apps.dev.microsoft.com)にサインインすることにより新しい ID をプロビジョニングします。 サインインすると、自分の任意のアプリのアプリ ID/クライアント ID を確認できます。 Live SDK (16 進値) と統合アプリ ID (GUID) の両方がサポートされています。 前の例に示されているように、Microsoft アカウントまたは Azure AD のサポートを有効にするために使用される ID を追加する際には、プラットフォーム タイプとして "msa" を使用します。  
 
->**注:** Azure AD のユーザーをサポートするアプリケーションを構築している、 [アプリケーション登録ポータル](https://apps.dev.microsoft.com)を通じて発行された、統合型のアプリケーション ID を使用しない場合は、Azure アプリケーションのアプリケーション ID の GUID を提供する必要があります。 このタイプの ID は、プラットフォーム タイプ "msa" としても構成されていなければなりません。 
+>**注:** Azure AD のユーザーをサポートするアプリケーションをビルドする場合、 [アプリケーション登録ポータル](https://apps.dev.microsoft.com)により発行される統合アプリケーション ID を使用していないなら、Azure アプリのアプリケーション ID のための GUID を提供することが必要になります。 このタイプの ID は、プラットフォーム タイプ "msa" としても構成されていなければなりません。 
 
 テナントに対応する Azure Portal の GUID を検索するには: 
 
@@ -186,7 +186,7 @@ Windows、iOS、Android のクライアント サイド API を使用してい�
 Microsoft Graph でアクティビティ フィード API を使用するアプリがある場合、ホスト値を **activitySourceHost** プロパティに指定する必要があります。 詳細については、「[アクティビティ リソース タイプ](/graph/api/resources/projectrome-activity?view=graph-rest-1.0)」を参照してください。
 
 ### <a name="universal-windows-apps"></a>ユニバーサル Windows アプリ
-Windows アプリがある場合、データを公開する前に、アプリ マニフェストの中にホスト値を構成する必要があります。 詳細については、「[uap5:UserActivity](https://docs.microsoft.com/en-us/uwp/schemas/appxpackage/uapmanifestschema/element-uap5-useractivity)」を参照してください。 
+Windows アプリがある場合、データを公開する前に、アプリ マニフェストの中にホスト値を構成する必要があります。 詳細については、「[uap5:UserActivity](https://docs.microsoft.com/ja-JP/uwp/schemas/appxpackage/uapmanifestschema/element-uap5-useractivity)」を参照してください。 
 
 <!-- Removing until we add the details.
 ### iOS & Android apps

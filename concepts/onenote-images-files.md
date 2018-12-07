@@ -47,7 +47,7 @@ URL の参照または生データの送信によって、画像を追加でき�
 
 [添付ファイルとして画像ファイルを追加する](#add-an-image-file-as-an-attachment)
 
-と `data="name:file-block-name" data-attachment="file-name.file-ext" type="media-type"` を使用します。マルチパート要求のデータ部分で画像ファイルを送信します。添付ファイルを OneNote ページに追加して、ファイルのアイコンを表示します。`object`
+`object` と `data="name:file-block-name" data-attachment="file-name.file-ext" type="media-type"` を使用します。マルチパート要求のデータ部分で画像ファイルを送信します。添付ファイルを OneNote ページに追加して、ファイルのアイコンを表示します。
 
 
 > **注:** OneNote ページで画像を取得するには、最初に[ページのコンテンツの GET 要求](onenote-get-content.md#page-html-content)を送信します。 これにより、ページで画像リソースへの URL を返します。 次に、[画像リソースに対する GET 要求](onenote-get-content.md#image-or-other-file-resource)を分離します。

@@ -14,7 +14,7 @@ Visual Studio の接続済みサービスを使い、アプリケーションか
 
 ## <a name="get-set-up"></a>設定する
 
-Office 365 接続済みサービスを Microsoft Graph と共に使用するには、次に従います。
+Office 365 接続済みサービスを Microsoft Graph と共に使用するには、以下の手順を実行する必要があります。
 
 - [Visual Studio 2017 プレビュー](https://www.visualstudio.com/vs/preview/)をまだダウンロードしていない場合は、ダウンロードします。Visual Studio の以前のバージョンを使用している場合は、それと合わせて Visual Studio 2017 プレビューを使用できます。
 
@@ -30,7 +30,7 @@ Microsoft Graph のサービスを Visual Studio プロジェクトに追加す�
 
 1. ソリューション エクスプローラーで、[**接続済みサービス**] を選択し、[接続済みサービス] タブを開きます。 
 
-2. **Microsoft Graph で Office 365 サービスをアクセス** プロバイダーを選択します。ウィザードに従います。以下のアクセス許可を選択します (アクセス許可は後から変更できます)。
+2. [**Microsoft Graph を使用して Office 365 サービスにアクセスする**] プロバイダーを選択します。ウィザードの手順に従います。次のアクセス許可を選択します (アクセス許可は後で変更することができます)。
 
     - **File** API のアクセス許可は**ファイルへのフルアクセス許可**を設定します。
     - **Mail** API のアクセス許可は**ユーザーとしてのメールの送信**を設定します。
@@ -56,7 +56,7 @@ Microsoft Graph のサービスを Visual Studio プロジェクトに追加す�
         GetSharingLink(GraphServiceClient graphClient, string Id)
     ```
  
-> **ヒント:** コメントは「//Uncomment:」で始まります。
+> **ヒント:** コメントは "//Uncomment:" で始まります。
  
 
 ## <a name="run-the-sample"></a>サンプルを実行する
@@ -76,11 +76,11 @@ Microsoft Graph のサービスを Visual Studio プロジェクトに追加す�
 
 このサンプルには、次のファイルが含まれています。
 
-- [Startup.Auth.cs](https://github.com/microsoftgraph/aspnet-connect-sample/tree/Office365connectedservice/Microsoft%20Graph%20SDK%20ASPNET%20Sample/Microsoft%20Graph%20SDK%20ASPNET%20Sample/App_Start/Startup.Auth.cs):現在のユーザーを認証して、サンプルのトークン キャッシュを初期化します。
+- [Startup.Auth.cs](https://github.com/microsoftgraph/aspnet-connect-sample/tree/Office365connectedservice/Microsoft%20Graph%20SDK%20ASPNET%20Sample/Microsoft%20Graph%20SDK%20ASPNET%20Sample/App_Start/Startup.Auth.cs): 現在のユーザーを認証して、サンプルのトークン キャッシュを初期化します。
 
-- Models\\[SessionTokenCache.cs](https://github.com/microsoftgraph/aspnet-connect-sample/tree/Office365connectedservice/Microsoft%20Graph%20SDK%20ASPNET%20Sample/Microsoft%20Graph%20SDK%20ASPNET%20Sample/TokenStorage/SessionTokenCache.cs):ユーザーのトークンの情報を格納します。これを独自のカスタム トークン キャッシュと置き換えることができます。詳細については、「[マルチテナント アプリケーションのアクセス トークンのキャッシュ](https://azure.microsoft.com/en-us/documentation/articles/guidance-multitenant-identity-token-cache/)」を参照してください。
+- Models\\[SessionTokenCache.cs](https://github.com/microsoftgraph/aspnet-connect-sample/tree/Office365connectedservice/Microsoft%20Graph%20SDK%20ASPNET%20Sample/Microsoft%20Graph%20SDK%20ASPNET%20Sample/TokenStorage/SessionTokenCache.cs):ユーザーのトークンの情報を格納します。これを独自のカスタム トークン キャッシュと置き換えることができます。詳細については、「[マルチテナント アプリケーションのアクセス トークンのキャッシュ](https://azure.microsoft.com/ja-JP/documentation/articles/guidance-multitenant-identity-token-cache/)」を参照してください。
 
-- Models\\[SampleAuthProvider.cs](https://github.com/microsoftgraph/aspnet-connect-sample/tree/Office365connectedservice/Microsoft%20Graph%20SDK%20ASPNET%20Sample/Microsoft%20Graph%20SDK%20ASPNET%20Sample/Helpers/SampleAuthProvider.cs):ローカルの IAuthProvider インターフェイスを実装して、アクセス トークンを取得します。 
+- Models\\[SampleAuthProvider.cs](https://github.com/microsoftgraph/aspnet-connect-sample/tree/Office365connectedservice/Microsoft%20Graph%20SDK%20ASPNET%20Sample/Microsoft%20Graph%20SDK%20ASPNET%20Sample/Helpers/SampleAuthProvider.cs): ローカルの IAuthProvider インターフェイスを実装して、アクセス トークンを取得します。 
 
 - Helpers\\[SDKHelper.cs](https://github.com/microsoftgraph/aspnet-connect-sample/tree/Office365connectedservice/Microsoft%20Graph%20SDK%20ASPNET%20Sample/Microsoft%20Graph%20SDK%20ASPNET%20Sample/Helpers/SDKHelper.cs):Microsoft Graph との対話に使用される [Microsoft Graph .NET クライアント ライブラリ](https://github.com/microsoftgraph/msgraph-sdk-dotnet)から **GraphServiceClient** を初期化します。
 

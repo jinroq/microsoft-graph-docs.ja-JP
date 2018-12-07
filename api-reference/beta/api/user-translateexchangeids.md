@@ -1,12 +1,12 @@
 ---
 title: 'ユーザー: translateExchangeIds'
 description: 形式との間、Outlook に関連するリソースの識別子を変換します。
-ms.openlocfilehash: 0c6e74ad0bb9676f261ed0202757b1e036b09c85
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.openlocfilehash: e18c59df5a7ecbaa16b954bf74221c8d8d1de5d3
+ms.sourcegitcommit: 4aebfaefc23e02a98b2fec35958cd2110020f15f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27070918"
+ms.lasthandoff: 12/06/2018
+ms.locfileid: "27184491"
 ---
 # <a name="user-translateexchangeids"></a>ユーザー: translateExchangeIds
 
@@ -41,7 +41,7 @@ POST /users/{id|userPrincipalName}/translateExchangeIds
 
 ## <a name="request-body"></a>要求本文
 
-| パラメーター | 型 | 説明 |
+| パラメーター | Type | 説明 |
 |:----------|:-----|:------------|
 | inputIds | Edm.String コレクション | 変換識別子のコレクションです。 コレクション内のすべての識別子は、同じソース ID の種類を持つ必要があり、同じメールボックス内のアイテムにする必要があります。 このコレクションの最大サイズは、1000 の文字列です。 |
 | sourceIdType | exchangeIdFormat | ID の種類の識別子の`InputIds`のパラメーターです。 |
@@ -59,9 +59,9 @@ POST /users/{id|userPrincipalName}/translateExchangeIds
 
 ## <a name="response"></a>応答
 
-かどうかは成功すると、このメソッドを返します`200 OK`応答コードおよび応答の本文に[convertIdResult](../resources/meetingtimesuggestionsresult.md)のコレクションです。
+かどうかは成功すると、このメソッドを返します`200 OK`応答コードおよび応答の本文に[convertIdResult](../resources/convertidresult.md)のコレクションです。
 
-## <a name="example"></a>使用例
+## <a name="example"></a>例
 
 次の使用例は、REST API の通常の形式から、複数の識別子を変換する方法を示しています (`restId`) に残りの部分の変更不可能な形式 (`restImmutableEntryId`)。
 

@@ -62,39 +62,28 @@ Microsoft Graph を利用すれば、バイナリをダウンロードしなく�
 [delta API][] を使用することにより、アプリがクラウドと同期した最後の時点以降で、どのような変更が加えられたかを調べます。
 
 ## <a name="api-reference"></a>API リファレンス
-このサービスの API リファレンスを検索してください。
+このサービスの API リファレンスをお探しですか?
 
-- [Graph v1.0 ファイル ストレージ API OneDrive](/graph/api/resources/onedrive?view=graph-rest-1.0)
-- [Graph のベータ版のファイル ストレージ API OneDrive](/graph/api/resources/onedrive?view=graph-rest-beta)
+- [Microsoft Graph v1.0 の OneDrive ファイル ストレージ API](/graph/api/resources/onedrive?view=graph-rest-1.0)
+- [Microsoft Graph ベータ版の OneDrive ファイル ストレージ API](/graph/api/resources/onedrive?view=graph-rest-beta)
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 Microsoft Graph v1.0 における [OneDrive API の使用][Drive API]に関する詳細を確認する。
 
 [SharePoint]: sharepoint-concept-overview.md
 [ファイル ピッカー]: https://dev.onedrive.com/sdk/js-v72/js-picker-overview.htm
 [ファイル ハンドラー]: https://docs.microsoft.com/onedrive/developer/file-handlers
-
-  [特殊フォルダー]: /graph/api/drive-get-specialfolder?view=graph-rest-1.0
-
-  [メモ API]: integrate-with-onenote.md
-
-  [Excel API]: /graph/api/resources/excel?view=graph-rest-1.0
+[特殊フォルダー]: /graph/api/drive-get-specialfolder?view=graph-rest-1.0
+[メモ API]: integrate-with-onenote.md
+[Excel API]: /graph/api/resources/excel?view=graph-rest-1.0
 [REST API]: /graph/api/resources/onedrive?view=graph-rest-1.0
-
-  [delta API]: /graph/api/driveitem-delta?view=graph-rest-1.0
-
-  [ビデオ]: /graph/api/resources/video?view=graph-rest-1.0
-
-  [写真]: /graph/api/resources/photo?view=graph-rest-1.0
-
-  [オーディオ]: /graph/api/resources/audio?view=graph-rest-1.0
-
-  [形式]: /graph/api/driveitem-get-content-format?view=graph-rest-1.0
-
-  [サムネイル]: /graph/api/driveitem-list-thumbnails?view=graph-rest-1.0
-
-  [プレビュー]: /graph/api/driveitem-preview?view=graph-rest-beta
-
-  [webhooks]: /graph/api/resources/webhooks?view=graph-rest-1.0
+[delta API]: /graph/api/driveitem-delta?view=graph-rest-1.0
+[ビデオ]: /graph/api/resources/video?view=graph-rest-1.0
+[写真]: /graph/api/resources/photo?view=graph-rest-1.0
+[オーディオ]: /graph/api/resources/audio?view=graph-rest-1.0
+[形式]: /graph/api/driveitem-get-content-format?view=graph-rest-1.0
+[サムネイル]: /graph/api/driveitem-list-thumbnails?view=graph-rest-1.0
+[プレビュー]: /graph/api/driveitem-preview?view=graph-rest-beta
+[webhooks]: /graph/api/resources/webhooks?view=graph-rest-1.0
 [Drive API]: /graph/api/resources/onedrive?view=graph-rest-1.0

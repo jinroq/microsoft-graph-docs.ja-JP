@@ -40,12 +40,12 @@ Microsoft Graph を使用すると、OneDrive、SharePoint、またはその他�
 ブックに対して作成、読み取り、更新、削除 (CRUD) 操作を実行するための標準 REST API を使用して、一連の Excel オブジェクト (テーブル、範囲、グラフなど) にアクセスできます。
 
 ## <a name="api-reference"></a>API リファレンス
-このサービスの API リファレンスを検索してください。
+このサービスの API リファレンスをお探しですか?
 
-- [Graph v1.0 Excel API](/graph/api/resources/excel?view=graph-rest-1.0)
-- [Graph のベータ版の Excel の API](/graph/api/resources/excel?view=graph-rest-beta)
+- [Microsoft Graph v1.0 の Excel API](/graph/api/resources/excel?view=graph-rest-1.0)
+- [Microsoft Graph ベータ版の Excel API](/graph/api/resources/excel?view=graph-rest-beta)
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 * [Microsoft Graph で Excel のセッションを管理する](excel-manage-sessions.md)
 * [Microsoft Graph を使用して Excel ブックに書き込む](excel-write-to-workbook.md)

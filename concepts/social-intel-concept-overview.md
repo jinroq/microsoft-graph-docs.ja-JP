@@ -87,12 +87,12 @@ Insights API は、[used](/graph/api/resources/insights-used?view=graph-rest-bet
 ![最近使用したファイルが表示されている、Outlook on the web のあるユーザーの人物カードのスクリーン ショット](images/peoplecard-concept.png)
 
 ## <a name="api-reference"></a>API リファレンス
-これらのサービスの API リファレンスを検索してください。
+これらのサービスの API リファレンスをお探しですか?
 
-- [Microsoft ユーザー API は、v1.0 をグラフ化します。](/graph/api/resources/social-overview?view=graph-rest-1.0)
-- [社会的知性とベータ版の Microsoft のグラフで分析するための API](/graph/api/resources/social-overview?view=graph-rest-beta)
+- [Microsoft Graph v1.0 の People API](/graph/api/resources/social-overview?view=graph-rest-1.0)
+- [Microsoft Graph ベータ版のソーシャル インテリジェンスと分析用 API](/graph/api/resources/social-overview?view=graph-rest-beta)
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 * [Graph エクスプローラー](https://developer.microsoft.com/graph/graph-explorer)を使用して、自分のファイルで People および Insights API を試してみてください。 サインインして、左側の列の**サンプルをさらに表示**を選択します。 メニューを使用して **People** と **Insights (beta)** を有効にします。
 * 詳細については、[People API](people-example.md) および [person](/graph/api/resources/person?view=graph-rest-1.0) エンティティを参照してください。

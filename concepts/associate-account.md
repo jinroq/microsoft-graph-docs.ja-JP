@@ -22,7 +22,7 @@ Microsoft Azure Active Directory (Azure AD) を使用してアプリケーショ
 
 既存のビジネス向けの Office 365 アカウントがない場合は、次の操作を実行できます。
 
-- 上記のいずれかの[ビジネス向けの Office 365 プラン](https://products.office.com/en-us/business/compare-office-365-for-business-plans)にサインアップする、または
+- 上記のいずれかの[ビジネス向けの Office 365 プラン](https://products.office.com/ja-JP/business/compare-office-365-for-business-plans)にサインアップする、または
 - [Office 365 Developer プログラムに参加して、Office 365 の 1 年間無料のサブスクリプションを取得します](https://aka.ms/devprogramsignup)。
 
 **Microsoft Azure サブスクリプション** 
@@ -41,7 +41,7 @@ Microsoft Azure Active Directory (Azure AD) を使用してアプリケーショ
         
 2. **[Active Directory]** ノードを選択し、**[ディレクトリ]** タブを選択し、画面下の **[新規]** を選択します。 
      
-4. **[新規]** メニュー上で、**[Active Directory]** > **[ディレクトリ]** > **[カスタム作成]** を選択します。
+4. **[新規]** メニュー上で、**[Active Directory]**  >  **[ディレクトリ]**  >  **[カスタム作成]** を選びます。
     
 5. **[ディレクトリの追加]** の **[ディレクトリ]** ドロップダウン ボックスで、**[既存のディレクトリの使用]** を選びます。**[サインアウトする準備ができました]** のチェックボックスをオンにして、右下隅にあるチェック マークを選びます。 
     
@@ -54,7 +54,7 @@ Microsoft Azure Active Directory (Azure AD) を使用してアプリケーショ
     >**重要:** Office 365 アカウントと Azure AD を関連付けるには、グローバル管理者特権を持つ Office 365 ビジネス アカウントが必要です。 
     
         
-4. **[続行]**、**[今すぐサインアウトする]** の順に選択します。
+4. **[続行]**、**[今すぐサインアウトする]** の順に選びます。
         
 5. ブラウザーを閉じて、もう一度[ポータル](https://manage.windowsazure.com)を開きます。それ以外の場合は、アクセス拒否エラーを受け取ります。
     
@@ -89,8 +89,8 @@ Microsoft Azure Active Directory (Azure AD) を使用してアプリケーショ
         
 5. Azure Tour が表示されます。表示するか、**[X]** をクリックしてツアーを閉じます。
         
-    この時点で、Azure サブスクリプション内のすべての項目が表示されます。自分の Office 365 テナントの名前が付いた 1 つのディレクトリが一覧に示されます。
+    You should now see all items in your Azure subscription. It lists a directory with the name of your Office 365 tenant.
     
 ## <a name="see-also"></a>関連項目
-- [Azure AD でのアプリケーションの登録の基本](https://azure.microsoft.com/en-us/documentation/articles/active-directory-authentication-scenarios/#basics-of-registering-an-application-in-azure-ad)
-- [Azure AD でアプリケーションを追加、更新、削除する](https://azure.microsoft.com/en-us/documentation/articles/active-directory-integrating-applications/)
+- [Azure AD でのアプリケーションの登録の基本](https://azure.microsoft.com/ja-JP/documentation/articles/active-directory-authentication-scenarios/#basics-of-registering-an-application-in-azure-ad)
+- [Azure AD でアプリケーションを追加、更新、削除する](https://azure.microsoft.com/ja-JP/documentation/articles/active-directory-integrating-applications/)

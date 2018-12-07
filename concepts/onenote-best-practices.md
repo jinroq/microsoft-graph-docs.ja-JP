@@ -8,7 +8,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 11/29/2018
 ms.locfileid: "27092463"
 ---
-# <a name="best-practices-for-working-with-the-onenote-api-in-microsoft-graph"></a>Microsoft Graph で OneNote API を使用する場合のベスト プラクティス
+# <a name="best-practices-for-working-with-the-onenote-api-in-microsoft-graph"></a>Microsoft Graph で OneNote API を使用する場合の推奨事項
 
 この記事では、Microsoft Graph で OneNote API を使用するための推奨事項を提供します。 これらの推奨事項は、Stack Overflow と Twitter でよく寄せられる質問への回答に基づいています。
 

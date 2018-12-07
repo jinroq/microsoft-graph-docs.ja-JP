@@ -108,7 +108,7 @@ GET https://localhost/myapp/permissions
 > 
 > https://login.microsoftonline.com/common/adminconsent?client_id=6731de76-14a6-49ae-97bc-6eba6914391e&state=12345&redirect_uri=https://localhost/myapp/permissions 
 
-## <a name="4-get-an-access-token"></a>4.アクセス トークンを取得する
+## <a name="4-get-an-access-token"></a>4. アクセス トークンを取得する
 
 OAuth 2.0 クライアント資格情報の付与フローでは、アプリの登録時に保存したアプリケーション ID とアプリケーション シークレットの値を使用して、Azure AD v2.0 `/token` エンドポイントからアクセス トークンを直接要求します。
 

@@ -1,6 +1,6 @@
 ---
 title: Microsoft Graph の主要なサービスおよび機能
-description: 'Microsoft Graph を使用すると、Office 365 Windows およびエンタープライズ モビリティ、セキュリティ ・ サービスで他の Api は、クライアント ライブラリを使用して、Microsoft の 365 の最上位製品と統合できます。 さらに、ユーザーの生産性、創造性、チーム共同作業を促進し、ビジネス リソースおよびユーザー データを保護することのできるセキュリティおよびソーシャル インテリジェンスが提供されます。 '
+description: 'Microsoft Graph では、REST API とクライアント ライブラリを使用して、非常に優れた Office 365、Windows 10、および Microsoft 365 の Enterprise Mobility and Security のサービスを統合することができます。 さらに、ユーザーの生産性、創造性、チーム共同作業を促進し、ビジネス リソースおよびユーザー データを保護することのできるセキュリティおよびソーシャル インテリジェンスが提供されます。 '
 ms.openlocfilehash: 12092b4b36159ae1b1cbd490815b0b00722e5ad8
 ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
 ms.translationtype: MT
@@ -10,7 +10,7 @@ ms.locfileid: "27092395"
 ---
 # <a name="major-services-and-features-in-microsoft-graph"></a>Microsoft Graph の主要なサービスおよび機能
 
-Microsoft Graph を使用すると、Office 365 Windows およびエンタープライズ モビリティ、セキュリティ ・ サービスで他の Api は、クライアント ライブラリを使用して、Microsoft の 365 の最上位製品と統合できます。 さらに、ユーザーの生産性、創造性、チーム共同作業を促進し、ビジネス リソースおよびユーザー データを保護することのできるセキュリティおよびソーシャル インテリジェンスが提供されます。 
+Microsoft Graph では、REST API とクライアント ライブラリを使用して、非常に優れた Office 365、Windows 10、および Microsoft 365 の Enterprise Mobility and Security のサービスを統合することができます。 さらに、ユーザーの生産性、創造性、チーム共同作業を促進し、ビジネス リソースおよびユーザー データを保護することのできるセキュリティおよびソーシャル インテリジェンスが提供されます。 
 
 ## <a name="users-and-groups"></a>ユーザーとグループ
 
@@ -40,7 +40,7 @@ Microsoft Graph の一部のサービスは、そこで初めて登場したサ�
 
 |機能     |サポートするサービス  |説明 |詳細情報 |
 |:-----------|:--------------------|:-----------|:----------------|
-| ID およびアクセス管理 | Azure AD | ユーザー、グループ、およびアプリケーションなどのディレクトリ リソースを作成したり管理したりします。 リソースおよびデータへのアクセスを管理します。 Azure AD で、サインインし、アカウントのリスクに関するデータをお客様アクセスを与えます。| [Azure AD ID およびアクセス管理の概要](azuread-identity-access-management-concept-overview.md)  |
+| ID およびアクセス管理 | Azure AD | ユーザー、グループ、およびアプリケーションなどのディレクトリ リソースを作成したり管理したりします。 リソースおよびデータへのアクセスを管理します。 Azure AD 内のサインインおよびアカウント リスク データへのアクセス権をユーザーに付与します。| [Azure AD ID およびアクセス管理の概要](azuread-identity-access-management-concept-overview.md)  |
 
 
 ## <a name="productivity"></a>生産性
@@ -85,7 +85,7 @@ Microsoft Graph の一部のサービスは、そこで初めて登場したサ�
 
 |機能     |サポートするサービス  |説明 |詳細情報 |
 |:-----------|:--------------------|:-----------|:----------------|
-| セキュリティ統合機能 | Azure AD のアイデンティティの保護、Azure の情報保護、Azure のセキュリティ センター、マイクロソフトのクラウド アプリケーションのセキュリティ、Windows Defender 高度な脅威保護、および[詳細](/graph/api/resources/security-api-overview?view=graph-rest-1.0) | Microsoft およびエコシステムのパートナーを通じて、セキュリティのインサイトやアクションに対する統一ゲートウェイを提供します。 | [Microsoft Graph のセキュリティ](security-concept-overview.md) |
+| セキュリティ統合 | Azure AD Identity Protection、Azure Information Protection、Azure Security Center、Microsoft Cloud Application Security、Windows Defender Advanced Threat Protection、[その他](/graph/api/resources/security-api-overview?view=graph-rest-1.0) | Microsoft およびエコシステムのパートナーを通じて、セキュリティの分析情報やアクションに対する統一ゲートウェイを提供します。 | [Microsoft Graph のセキュリティ](security-concept-overview.md) |
 
 
 

@@ -58,13 +58,13 @@ Office 365 グループとは、Microsoft サービス内またはアプリ内�
 - 削除されたグループを[復元する](/graph/api/directory-deleteditems-restore?view=graph-rest-1.0)。
 
 ## <a name="api-reference"></a>API リファレンス
-このサービスの API リファレンスを検索してください。
+このサービスの API リファレンスをお探しですか?
 
-- [V1.0 の Graph API のグループ](/graph/api/resources/groups-overview?view=graph-rest-1.0)
-- [ベータ版の Microsoft Graph API のグループ](/graph/api/resources/groups-overview?view=graph-rest-beta)
+- [Microsoft Graph v1.0 のグループ API](/graph/api/resources/groups-overview?view=graph-rest-1.0)
+- [Microsoft Graph ベータ版のグループ API](/graph/api/resources/groups-overview?view=graph-rest-beta)
 
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 - [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer) で、サンプル API リクエストを試す。 
 - Microsoft Graph で[グループ API を使用する](/graph/api/resources/groups-overview?view=graph-rest-1.0)方法に関する詳細を確認する。

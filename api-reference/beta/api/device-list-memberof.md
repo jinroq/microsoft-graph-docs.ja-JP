@@ -1,12 +1,12 @@
 ---
 title: デバイス グループを一覧表示
 description: このデバイスが直接のメンバーであるグループを取得します。 この操作は、推移的ではありません。
-ms.openlocfilehash: 8674bed8f00c6cbe9c55dd218a3611ecde9e548d
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.openlocfilehash: fae373a896a2fc048257a5dc6cd9eb07a85ec677
+ms.sourcegitcommit: 4aebfaefc23e02a98b2fec35958cd2110020f15f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27068917"
+ms.lasthandoff: 12/06/2018
+ms.locfileid: "27184470"
 ---
 # <a name="list-device-groups"></a>デバイス グループを一覧表示
 
@@ -27,10 +27,10 @@ ms.locfileid: "27068917"
 ## <a name="http-request"></a>HTTP 要求
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /devices/{id | userPrincipalName}/memberOf
+GET /devices/{id}/memberOf
 ```
 ## <a name="optional-query-parameters"></a>オプションのクエリ パラメーター
-このメソッドは、応答をカスタマイズするための [OData クエリ パラメーター](https://developer.microsoft.com/graph/docs/concepts/query_parameters)をサポートします。
+このメソッドは、応答をカスタマイズするための [OData クエリ パラメーター](/graph/query_parameters)をサポートします。
 ## <a name="request-headers"></a>要求ヘッダー
 | ヘッダー       | 値 |
 |:---------------|:--------|

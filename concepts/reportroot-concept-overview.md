@@ -35,12 +35,12 @@ Microsoft 365 管理センターの使用状況レポートを利用すること
 |Yammer |[アクティビティ](/graph/api/resources/yammer-activity-reports?view=graph-rest-1.0)<br/>[デバイスの使用状況](/graph/api/resources/yammer-device-usage-reports?view=graph-rest-1.0)<br/>[グループのアクティビティ](/graph/api/resources/yammer-groups-activity-reports?view=graph-rest-1.0)|
 
 ## <a name="api-reference"></a>API リファレンス
-このサービスの API リファレンスを検索してください。
+このサービスの API リファレンスをお探しですか?
 
-- [Office 365 の利用状況レポートで Microsoft Graph v1.0 の API](/graph/api/resources/report?view=graph-rest-1.0)
-- [Graph のベータ版の office 365 の利用状況レポート API](/graph/api/resources/report?view=graph-rest-beta)
+- [Microsoft Graph v1.0 の Office 365 使用状況レポート API](/graph/api/resources/report?view=graph-rest-1.0)
+- [Microsoft Graph ベータ版の Office 365 使用状況レポート API](/graph/api/resources/report?view=graph-rest-beta)
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 * [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer) の API について調べる
 * [レポート REST API の使用](/graph/api/resources/report?view=graph-rest-1.0)方法の詳細を確認する

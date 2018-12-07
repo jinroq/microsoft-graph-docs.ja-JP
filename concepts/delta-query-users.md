@@ -168,7 +168,7 @@ Content-type: application/json
 }
 ```
 
-変更が行われた場合は、変更されたユーザーのコレクションを含み、同じ `deltaToken` が返されます。
+変更が行われた場合は、変更されたユーザーのコレクションを含む、同じ `deltaToken` が返されます。
 
 ```http
 HTTP/1.1 200 OK
@@ -196,11 +196,11 @@ Content-type: application/json
 
 上記のサンプル応答に関する注意事項:
 
-- アイテムに注釈が含まれているユーザーが削除されると、:`@removed`の値を持つ`"reason": "changed"`。
+- ユーザーが削除されると、項目には `"reason": "changed"` の値が含まれた `@removed` のコメントが含まれます。
 
-- アイテムに注釈が含まれているユーザーが完全に削除されると、:`@removed`の値を持つ`"reason": "deleted"`。
+- ユーザーが完全に削除されると、項目には `"reason": "deleted"` の値が含まれた `@removed` のコメントが含まれます。
 
-- ユーザーを作成するには、または復元するとき、コメントはありません。
+- ユーザーを作成または復元しても、コメントはありません。
 
 ## <a name="see-also"></a>関連項目
 [Microsoft Graph デルタ クエリ](delta-query-overview.md)の概要。

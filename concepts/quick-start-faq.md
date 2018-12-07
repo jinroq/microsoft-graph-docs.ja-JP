@@ -1,6 +1,6 @@
 ---
 title: Microsoft Graph のクイック スタートのよくあるご質問
-description: この FAQ は、Microsoft Graph Quick Starts に関連する質問に回答します。
+description: この FAQ は、Microsoft Graph のクイック スタートに関連する質問に回答します。
 ms.openlocfilehash: 90e16a340d4dbb337cbe0af5f799476b28eba200
 ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
 ms.translationtype: MT

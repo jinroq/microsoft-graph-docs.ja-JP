@@ -60,7 +60,7 @@ OneNote API は、指定されたセクション内にページを作成でき�
 ユーザーまたはグループの OneDrive にある 1 つ以上のドキュメント ライブラリに 5000 を超える OneNote のアイテム (ノートブック、セクション、セクション グループ) が含まれており、API を使用してクエリを実行することができません。 ユーザーまたはグループのどのドキュメント ライブラリについても、その中の OneNote アイテム数が 5000 を超えることがないようにしてください。 軽減の手順については「[OneNote 開発者ブログ](https://blogs.msdn.microsoft.com/onenotedev/2016/09/11/onenote-api-calls-fail-with-a-large-number-of-items-in-a-sharepoint-document-library/)」を参照してください。
 
 ### <a name="10012"></a>10012
-エンティティを作成または更新できません。ノートブックが含まれるライブラリの場合、アイテムを編集する前にチェックアウトする必要があるためです。 詳細については、「[ファイルのチェックアウトを必須にするようにライブラリを設定する](https://support.office.com/en-us/article/Configure-a-site-library-to-require-check-out-of-files-f63fcbdc-1db6-4eb7-a3eb-dd815500c9e7)」を参照してください。
+エンティティを作成または更新できません。ノートブックが含まれるライブラリの場合、アイテムを編集する前にチェックアウトする必要があるためです。 詳細については、「[ファイルのチェックアウトを必須にするようにライブラリを設定する](https://support.office.com/ja-JP/article/Configure-a-site-library-to-require-check-out-of-files-f63fcbdc-1db6-4eb7-a3eb-dd815500c9e7)」を参照してください。
 
 ライブラリからチェックアウト要件を削除するか、ノートブックを移動します。
 
@@ -340,7 +340,7 @@ OData クエリが無効です。
 ユーザーのアカウントに問題があります。
 
 ### <a name="30101"></a>30101
-ユーザー アカウントの OneDrive のクォータを超えています。「[OneDrive](https://onedrive.live.com/about/en-us/)」を参照してください。
+ユーザー アカウントの OneDrive のクォータを超えています。「[OneDrive](https://onedrive.live.com/about/ja-JP/)」を参照してください。
 
 ### <a name="30102"></a>30102
 要求されたセクションは、最大サイズに達したため、これ以上追加できません。

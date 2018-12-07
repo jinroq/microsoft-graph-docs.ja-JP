@@ -77,7 +77,7 @@ ms.locfileid: "27092391"
 
 管理者の同意エクスペリエンスを提供するアプリケーションでは、応答を送信するために Azure AD のリダイレクト URL がもう一つ必要となることがあります。
 
-アプリケーション登録ポータルとアプリケーション設定のプロパティに関する詳細は「[アプリの登録リファレンス](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-v2-registration-portal)」を参照してください。  
+アプリケーション登録ポータルとアプリケーション設定のプロパティに関する詳細は「[アプリの登録リファレンス](https://docs.microsoft.com/ja-JP/azure/active-directory/develop/active-directory-v2-registration-portal)」を参照してください。  
 
 ## <a name="azure-ad-endpoint-considerations"></a>Azure AD エンドポイントに関して考慮すべき事項
 

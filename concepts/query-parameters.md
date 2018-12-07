@@ -31,7 +31,7 @@ Microsoft Graph にはオプションのクエリ パラメーターがあり、
 
 これらのパラメーターは、[OData V4 クエリ言語][odata-query]と互換性があります。 すべての Microsoft Graph API で全部のパラメーターがサポートされているわけではなく、`v1.0` エンドポイントと `beta` エンドポイントの間でサポートが大幅に異なる場合があります。 
 
-> **注:**`beta`と`v1.0`、エンドポイント、`$`プレフィックスは省略可能です。 などの代わりに`$filter`を使用することができます`filter`。 
+> **注:** `beta` と `v1.0` エンドポイントでは、`$` プレフィックスはオプションです。 たとえば、`$filter` の代わりに、`filter` を使用しても同じです。 
 
 ## <a name="encoding-query-parameters"></a>クエリ パラメーターのエンコード
 
@@ -228,12 +228,12 @@ GET https://graph.microsoft.com/v1.0/me/messages?$search="pizza"
 
 検索可能な電子メール プロパティ、KQL 構文、サポートされている演算子、検索のヒントなどの詳細については、次の記事を参照してください。
 
-- [Exchange の検索可能なプロパティ](https://docs.microsoft.com/en-us/Exchange/policy-and-compliance/ediscovery/message-properties-and-search-operators#searchable-properties-in-exchange)。
+- [Exchange の検索可能なプロパティ](https://docs.microsoft.com/ja-JP/Exchange/policy-and-compliance/ediscovery/message-properties-and-search-operators#searchable-properties-in-exchange)。
 
-- [キーワード クエリ言語 (KQL) 構文のリファレンス](https://docs.microsoft.com/en-us/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference)
+- [キーワード クエリ言語 (KQL) 構文のリファレンス](https://docs.microsoft.com/ja-JP/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference)
 
 - 
-  [Exchange 2016 におけるインプレースの電子情報開示のためのメッセージ プロパティと検索演算子](https://technet.microsoft.com/en-us/library/dn774955(v=exchg.160).aspx)
+  [Exchange 2016 におけるインプレースの電子情報開示のためのメッセージ プロパティと検索演算子](https://technet.microsoft.com/ja-JP/library/dn774955(v=exchg.160).aspx)
 
 ### <a name="using-search-on-person-collections"></a>人物コレクションで $search を使用する
 

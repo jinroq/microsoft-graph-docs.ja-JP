@@ -36,10 +36,10 @@ Microsoft Graph の API を使用すると、アプリは次のリソースに�
 
 あるいは、Sharepoint/OneDrive for Business ドライブ: `/drive/root`
 
-あるいは、ユーザーの個人用 OneDrive: `/drives/{id}/root`
+または、ユーザーの個人用 OneDrive: `/drives/{id}/root`
 `/drives/{id}/root/subfolder`
 
-または新しい[API のセキュリティの警告](security-concept-overview.md): `/security/alerts?$filter=status eq ‘New’`、`/security/alerts?$filter=vendorInformation/provider eq ‘ASC’`
+または、新しい[セキュリティ API の警告](security-concept-overview.md): `/security/alerts?$filter=status eq ‘New’`、`/security/alerts?$filter=vendorInformation/provider eq ‘ASC’`
 
 ### <a name="azure-ad-resource-limitations"></a>Azure AD リソースの制限
 
@@ -112,7 +112,7 @@ Microsoft Graph により、サブスクリプション作成の前にサブス�
     POST https://{notificationUrl}?validationToken={opaqueTokenCreatedByMicrosoftGraph}
     ```
 
-    > **重要な:** なので、`validationToken`は、クエリ パラメーター、HTTP のコーディング方法により、クライアントで正しくデコードする必要があります。 クライアントでは、トークンをデコードできません、代わりに (応答) に、次の手順でエンコードされた値を使用して、検証が失敗します。 クライアントがトークンの値として扱う不透明トークンの形式は、予告なしに将来変更可能性がありますので。
+    > **重要:** `validationToken` はクエリ パラメーターであるため、クライアントが HTTP コーディング プラクティスに従って適切にデコードする必要があります。 クライアントがトークンをデコードせず、代わりに次の手順で示すエンコードされた値 (応答) を使用する場合、検証は失敗します。 また、トークンの形式は将来予告なしに変更される可能性があるため、クライアントはトークン値を曖昧なものとして処理する必要があります。
 
 1. クライアントは 10 秒以内に次の特性を持つ応答を提供する必要があります。
 

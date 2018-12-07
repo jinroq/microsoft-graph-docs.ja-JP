@@ -55,12 +55,12 @@ Microsoft Graph を使用して、サインインしているユーザーと文�
 - ユーザーがメールや OneDrive for Business で共有しているドキュメントを一覧表示する。
 
 ## <a name="api-reference"></a>API リファレンス
-このサービスの API リファレンスを検索してください。
+このサービスの API リファレンスをお探しですか?
 
-- [Graph v1.0 ユーザー API](/graph/api/resources/users?view=graph-rest-1.0)
-- [ベータ版の Microsoft Graph API のユーザー](/graph/api/resources/users?view=graph-rest-beta)
+- [Microsoft Graph v1.0 の Users API](/graph/api/resources/users?view=graph-rest-1.0)
+- [Microsoft Graph ベータ版の Users API](/graph/api/resources/users?view=graph-rest-beta)
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 - [ユーザーの操作](/graph/api/resources/users?view=graph-rest-1.0)方法の詳細を確認する
 - [Graph エクスプローラー](https://developer.microsoft.com/graph/graph-explorer)の **user** リソースを使用して自分自身のデータを調べる

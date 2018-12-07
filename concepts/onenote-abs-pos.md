@@ -51,7 +51,7 @@ OneNote ページの本文には、直接の子要素 `div`、`img`、`object` �
    </body>
    ```
 
-The API renders the non-absolute positioned div in the default div. 入れ子になった `<div>` タグは意味情報 (`data-id` など) を定義しないため、破棄されます。
+API は既定の div に非絶対配置 div を表示します。入れ子になった `<div>` タグは意味情報 (`data-id` など) を定義しないため、破棄されます。
 
 #### <a name="output-html"></a>出力 HTML 
 

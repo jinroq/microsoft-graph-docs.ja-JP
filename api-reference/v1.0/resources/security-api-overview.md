@@ -1,12 +1,12 @@
 ---
 title: Graph セキュリティ API を使用します。
 description: Microsoft グラフ セキュリティ API は、統一されたインタ フェースとマイクロソフトとエコシステムのパートナーからのセキュリティ ソリューションと統合するためにスキーマを提供します。 これは、セキュリティ ・ オペレーションを合理化し、サイバー脅威の増加が防御よりのお客様を支援します。 Microsoft グラフ セキュリティ API は、集約された応答を取得するすべての onboarded セキュリティ プロバイダーにクエリを発行するフェデレーション セキュリティ集約サービスとして使用できます。 Microsoft グラフ セキュリティ API を使用してアプリケーションを構築します。
-ms.openlocfilehash: 511abbc6221ee9efb58cbfb36082514d98f9b918
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.openlocfilehash: b675ecd66081aec29f2727a394a91d9e2ee5fd5b
+ms.sourcegitcommit: 4aebfaefc23e02a98b2fec35958cd2110020f15f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27024310"
+ms.lasthandoff: 12/06/2018
+ms.locfileid: "27184519"
 ---
 # <a name="use-the-microsoft-graph-security-api"></a>Graph セキュリティ API を使用します。
 
@@ -25,14 +25,14 @@ Microsoft グラフ セキュリティ API には、次のキーのエンティ�
 
 グラフのセキュリティに統合されたソリューションの Microsoft 次のセキュリティ プロバイダーからのアラートが表示されます。
 
-- Azure のセキュリティ センター
-- Azure Active Directory Id の保護
-- Azure の情報の保護
-- マイクロソフト クラウド アプリケーションのセキュリティ
-- Windows Defender の脅威保護の詳細
-- Microsoft Intune (プライベート プレビュー)
-- Office 365 の (準備中)
-- Azure 高度な脅威の保護 (準備中)
+- [Azure のセキュリティ センター](https://docs.microsoft.com/azure/security-center/security-center-alerts-type)
+- [Azure Active Directory Id の保護](https://docs.microsoft.com/azure/active-directory/identity-protection/playbook)
+- [マイクロソフト クラウド アプリケーションのセキュリティ](https://docs.microsoft.com/cloud-app-security/monitor-alerts )
+- [Windows Defender の脅威保護の詳細](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/attack-simulations-windows-defender-advanced-threat-protection)
+- [Azure の情報の保護](https://docs.microsoft.com/azure/information-protection/faqs#i-see-azure-information-protection-is-listed-as-a-security-provider-for-microsoft-graph-securityhow-does-this-work-and-what-alerts-will-i-receive)**(プレビュー)**
+- Microsoft Intune **(プライベート プレビュー)**
+- Office 365 は **(準備中)**
+- Azure の脅威保護の詳細 **(準備中)**
 - パートナー ・ ソリューション、パロアルトのネットワーク ・ アプリケーション ・ フレームワーク
 
 > **注:** 新しいプロバイダーは、Microsoft のグラフのセキュリティ エコシステムの契約時では継続的にします。
@@ -61,7 +61,7 @@ Microsoft グラフ セキュリティ API には、次のキーのエンティ�
 - [テクニカル コミュニティに参加します。](https://aka.ms/graphsecuritycommunity)
 - [StackOverflow を説明します。](https://stackoverflow.com/questions/tagged/microsoft-graph-security)
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 Microsoft グラフ セキュリティ API は、Microsoft およびパートナーからのさまざまなセキュリティ ソリューションと連携するための新しい方法を開くことができます。 開始する次の手順に従います。
 

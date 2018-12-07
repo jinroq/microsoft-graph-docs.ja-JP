@@ -34,7 +34,7 @@ Microsoft Graph の教育機関向け API は、クラス、学校、ユーザ�
 
 割り当て API を使用することにより、クラス割り当てを管理する Web アプリを作成し、新しいカスタム タブ上でアプリを Microsoft Teams に統合することができます。  
 
-Office 365 の Microsoft Teams は、会話、コンテンツ、およびアプリを、クラスルールのための 1 つの場所にまとめるデジタル ハブです。 Microsoft Teams は、タブ、コネクタ、およびボットの作成など、[豊富な機能拡張ポイントのセット](https://docs.microsoft.com/en-us/microsoftteams/platform/concepts/apps/apps-overview)を提供します。 それらの機能拡張ポイントでは、Microsoft Graph の教育機関向け API を呼び出すことにより、課題や提出を処理することができます。 機能拡張ポイントを他の Microsoft Graph API や、課題と提出の API により有効にすることによって、さらに総合的なエクスペリエンスを構築します。
+Office 365 の Microsoft Teams は、会話、コンテンツ、およびアプリを、クラスルールのための 1 つの場所にまとめるデジタル ハブです。 Microsoft Teams は、タブ、コネクタ、およびボットの作成など、[豊富な機能拡張ポイントのセット](https://docs.microsoft.com/ja-JP/microsoftteams/platform/concepts/apps/apps-overview)を提供します。 それらの機能拡張ポイントでは、Microsoft Graph の教育機関向け API を呼び出すことにより、課題や提出を処理することができます。 機能拡張ポイントを他の Microsoft Graph API や、課題と提出の API により有効にすることによって、さらに総合的なエクスペリエンスを構築します。
 
 教育機関向けに、教育機関のクラス (チーム) のコンテキストで Microsoft Teams カスタム タブが開かれており、作成や配布から、評価やフィードバックに至るまで、エンドツーエンドの割り当てフローを意味ある方法で管理できます。 これは、Microsoft Teams で時間が節約され、日常的な作業が簡素化されることのほんの一例に過ぎません。この例の場合、教職員は雑務から解放されて学生に注意を集中できます。
 
@@ -61,13 +61,13 @@ Office 365 の Microsoft Teams は、会話、コンテンツ、およびアプ�
 - [一時停止](/graph/api/educationsynchronizationprofile-pause?view=graph-rest-beta)、[再開](/graph/api/educationsynchronizationprofile-resume?view=graph-rest-beta)、および[リセット](/graph/api/educationsynchronizationprofile-reset?view=graph-rest-beta)の操作により同期ライフサイクルを管理する
 
 ## <a name="api-reference"></a>API リファレンス
-このサービスの API リファレンスを検索してください。
+このサービスの API リファレンスをお探しですか?
 
-- [V1.0 の Graph API の教育](/graph/api/resources/education-overview?view=graph-rest-1.0)
-- [ベータ版の Microsoft Graph API の教育](/graph/api/resources/education-overview?view=graph-rest-beta)
+- [Microsoft Graph v1.0 の Education API](/graph/api/resources/education-overview?view=graph-rest-1.0)
+- [Microsoft Graph ベータ版の Education API](/graph/api/resources/education-overview?view=graph-rest-beta)
 
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 - 教育機関向け API を初めて使用する場合は、以下を参照してください:
     - [名簿 API を使用する](/graph/api/resources/education-overview?view=graph-rest-1.0)

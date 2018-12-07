@@ -1,12 +1,12 @@
 ---
 title: Graph セキュリティ API を使用します。
 description: " > **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。"
-ms.openlocfilehash: 556725597b7b020bc7ef5b55857ae59dfb127e80
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.openlocfilehash: dff91665fc288bf1714d1975f3ec2e109f576530
+ms.sourcegitcommit: 4aebfaefc23e02a98b2fec35958cd2110020f15f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27071891"
+ms.lasthandoff: 12/06/2018
+ms.locfileid: "27184533"
 ---
 # <a name="use-the-microsoft-graph-security-api"></a>Graph セキュリティ API を使用します。
 
@@ -27,14 +27,14 @@ Microsoft グラフ セキュリティ API には、次のキーのエンティ�
 
 グラフのセキュリティに統合されたソリューションの Microsoft 次のセキュリティ プロバイダーからのアラートが表示されます。
 
-- Azure のセキュリティ センター
-- Azure Active Directory Id の保護
-- Azure の情報の保護
-- マイクロソフト クラウド アプリケーションのセキュリティ
-- Windows Defender の脅威保護の詳細
-- Microsoft Intune (プライベート プレビュー)
-- Office 365 の (準備中)
-- Azure 高度な脅威の保護 (準備中)
+- [Azure のセキュリティ センター](https://docs.microsoft.com/azure/security-center/security-center-alerts-type)
+- [Azure Active Directory Id の保護](https://docs.microsoft.com/azure/active-directory/identity-protection/playbook)
+- [マイクロソフト クラウド アプリケーションのセキュリティ](https://docs.microsoft.com/cloud-app-security/monitor-alerts )
+- [Windows Defender の脅威保護の詳細](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/attack-simulations-windows-defender-advanced-threat-protection)
+- [Azure の情報の保護](https://docs.microsoft.com/azure/information-protection/faqs#i-see-azure-information-protection-is-listed-as-a-security-provider-for-microsoft-graph-securityhow-does-this-work-and-what-alerts-will-i-receive)**(プレビュー)**
+- Microsoft Intune **(プライベート プレビュー)**
+- Office 365 は **(準備中)**
+- Azure の脅威保護の詳細 **(準備中)**
 - パートナー ・ ソリューション、パロアルトのネットワーク ・ アプリケーション ・ フレームワーク
 
 > **注:** 新しいプロバイダーは、Microsoft のグラフのセキュリティ エコシステムの契約時では継続的にします。
@@ -57,7 +57,7 @@ Microsoft グラフ セキュリティ API を使用するための最も一般�
 
 購読して、Microsoft のグラフのセキュリティ エンティティの更新に関する通知を受け取るには、Graph [webhooks](/graph/webhooks)を使用できます。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 Microsoft グラフ セキュリティ API は、Microsoft およびパートナーからのさまざまなセキュリティ ソリューションと連携するための新しい方法を開くことができます。 開始する次の手順に従います。
 

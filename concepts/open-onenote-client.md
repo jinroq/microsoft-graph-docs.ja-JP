@@ -196,4 +196,4 @@ if (response.getResponseCode() == 201) {
 ## <a name="see-also"></a>関連項目
 
 - [OneNote コンテンツと構造を取得する](onenote-get-content.md)
-- [OneNote ページの作成](onenote-create-page.md)
+- [OneNote ページを作成する](onenote-create-page.md)

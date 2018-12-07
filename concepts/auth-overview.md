@@ -8,7 +8,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 11/29/2018
 ms.locfileid: "27092359"
 ---
-# <a name="get-access-tokens-to-call-microsoft-graph"></a>Microsoft Graph を呼び出すためのトークンの取得
+# <a name="get-access-tokens-to-call-microsoft-graph"></a>Microsoft Graph を呼び出すためのアクセス トークンの取得
 
 Microsoft Graph を呼び出すために、アプリは Microsoft のクラウド ID サービス Azure Active Directory (Azure AD) からアクセス トークンを取得する必要があります。アクセス トークンには、アプリとアプリに付与されているアクセス許可に関する情報 (要求) が含まれています (このアクセス許可は、Microsoft Graph を通じて利用できるリソースと API に対応するものです)。アクセス トークンを取得するためには、アプリを Azure AD で認証できるようにすることと、そのアプリが必要とする Microsoft Graph リソースへのアクセスをユーザーまたは管理者が承認することが必要です。 
 
@@ -149,13 +149,13 @@ Azure AD v2.0 は Azure AD よりも新しく、機能の追加が続けられ�
 
 Azure AD v2.0 エンドポイントと Azure AD エンドポイントの相違点の詳細については、「[v2.0 エンドポイントの変更点](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-compare)」を参照してください。
 
->**重要**: 
+>**重要**
 >
->**先のエンドポイントを使用する場合に本番環境のアプリケーションの開発を参照してください、意思決定を行う前に[v2.0 のエンドポイントを使用する必要がありますか?](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-limitations)です。**
+>**実稼働用のアプリを開発するときには、使用するエンドポイントを決定する前に、[v2.0 エンドポイントの使用が適しているかどうか](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-limitations)に関する記事を参照してください。**
 
 ## <a name="next-steps"></a>次のステップ
 
-アプリを登録して後、は、開始する準備が整ったら!
+アプリの登録が済むと、開始準備は完了です。
 
 - ユーザーの代わりに Microsoft Graph を呼び出すアプリのアクセス トークンを取得する簡単な手順については、「[ユーザーの代わりにアクセスを取得](auth-v2-user.md)」を参照してください。
 - ユーザーなしで Microsoft Graph を呼び出すアプリのアクセス トークンを取得する簡単な手順については、「[ユーザーなしでアクセスを取得](auth-v2-service.md)」を参照してください。
@@ -165,15 +165,15 @@ Azure AD v2.0 エンドポイントと Azure AD エンドポイントの相違�
 
 コードの作成準備が整ったら、次に示すリソースを使用できるようになります。これらのリソースは、Azure AD による認証と承認をアプリに実装する際に役立ちます。
 
-### <a name="microsoft-graph-training-and-samples"></a>Graph のトレーニングおよびサンプル
-簡単に開始するために、一連のトレーニング ・ モジュールとその他のリソースを認証し、さまざまなプラットフォームで API を使用する方法を示す設定しました。 
+### <a name="microsoft-graph-training-and-samples"></a>Microsoft Graph のトレーニングとサンプル
+すぐに使い始めることができるように、さまざまなプラットフォーム上で API を認証して使用する方法を示した、一連のトレーニング モジュールとその他のリソースを作成しました。 
 
-- プラットフォームに合ったお気に入り、ライブラリ、サンプル、トレーニング コンテンツ、およびその他のリソースを検索するのにには、[はじめ](https://developer.microsoft.com/en-us/graph/get-started)に] ページを使用します。 
-- お使いのプラットフォームの構成済みのサンプルを使用して簡単に実行を取得するのには[Microsoft のグラフのクイック スタート](https://developer.microsoft.com/en-us/graph/quick-start)を参照してください。
-- GitHub には、 [Microsoft のグラフのサンプル](https://github.com/microsoftgraph?utf8=%E2%9C%93&q=sample&type=&language=)を参照してください。
+- [概要](https://developer.microsoft.com/ja-JP/graph/get-started)のページで、お好みのプラットフォーム向けのライブラリ、サンプル、トレーニング コンテンツなどのリソースを見つけてください。 
+- お使いのプラットフォーム向けに構成済みのサンプルをすぐに実行するには、「[Microsoft Graph のクイック スタート](https://developer.microsoft.com/ja-JP/graph/quick-start)」を参照してください。
+- GitHub では [Microsoft Graph サンプル](https://github.com/microsoftgraph?utf8=%E2%9C%93&q=sample&type=&language=)を公開しています。
 
 
-### <a name="azure-active-directory-samples-and-documentation"></a>Azure Active Directory のサンプルとドキュメント documentation 
+### <a name="azure-active-directory-samples-and-documentation"></a>Azure Active Directory のサンプルとドキュメント 
 Azure AD のドキュメントには、特に Azure AD での認証と承認に焦点を合わせた記事とサンプルが含まれています。
 
 Azure AD v2.0 エンドポイント:  

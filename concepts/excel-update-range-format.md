@@ -8,7 +8,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 11/29/2018
 ms.locfileid: "27092384"
 ---
-# <a name="update-a-range-format-in-excel-with-microsoft-graph"></a>Microsoft Graph により Excel のある範囲の書式を更新する
+# <a name="update-a-range-format-in-excel-with-microsoft-graph"></a>Microsoft Graph で Excel のある範囲の書式を更新する
 
 次の例は、指定された範囲の [RangeFormat](/graph/api/resources/rangeformat?view=graph-rest-1.0)、[RangeFill](/graph/api/resources/rangefill?view=graph-rest-1.0)、[RangeFont](/graph/api/resources/rangefont?view=graph-rest-1.0) の各プロパティを更新する方法を示します。
 

@@ -1,6 +1,6 @@
 ---
 title: 国内クラウドの展開
-description: Microsoft のデータセンターのグローバル ネットワークに加えて、Microsoft クラウド サービスは 3 つの独立した国内クラウドで利用できます。 これらの国内クラウド バージョンは、Microsoft エンタープライズ クラウド サービスとは物理的および論理的に独立したネットワーク インスタンスで、特定の国の地理的な境界内に限定され、現地スタッフによって運営されます。 詳細については、「Microsoft の国内クラウド」を参照してください。
+description: Microsoft のデータセンターのグローバル ネットワークに加えて、Microsoft クラウド サービスは 3 つの独立した国内クラウドで利用できます。 これらの国内クラウド バージョンは、Microsoft エンタープライズ クラウド サービスの物理的および論理的ネットワークの独立したインスタンスで、特定の国の地理的な境界内に限定され、ローカル スタッフによって運営されます。 詳細については、「Microsoft National Clouds」 (Microsoft の国内クラウド) を参照してください。
 ms.openlocfilehash: b0f2ab257773faa14fe59566992bb1ed0dd77959
 ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
 ms.translationtype: MT
@@ -11,7 +11,7 @@ ms.locfileid: "27092366"
 # <a name="national-cloud-deployments"></a>国内クラウドの展開
 
 
-Microsoft のデータセンターのグローバル ネットワークに加えて、Microsoft クラウド サービスは 3 つの独立した国内クラウドで利用できます。 これらの国内クラウド バージョンは、Microsoft エンタープライズ クラウド サービスとは物理的および論理的に独立したネットワーク インスタンスで、特定の国の地理的な境界内に限定され、現地スタッフによって運営されます。 詳細については、「[Microsoft の国内クラウド](https://www.microsoft.com/en-us/TrustCenter/CloudServices/NationalCloud)」を参照してください。
+Microsoft のデータセンターのグローバル ネットワークに加えて、Microsoft クラウド サービスは 3 つの独立した国内クラウドで利用できます。 これらの国内クラウド バージョンは、Microsoft エンタープライズ クラウド サービスとは物理的および論理的に独立したネットワーク インスタンスで、特定の国の地理的な境界内に限定され、現地スタッフによって運営されます。 詳細については、「[Microsoft の国内クラウド](https://www.microsoft.com/ja-JP/TrustCenter/CloudServices/NationalCloud)」を参照してください。
 
 現在の国内クラウドは、次のとおりです。
 
@@ -52,7 +52,7 @@ Azure AD 承認またはトークン エンドポイントへの要求は、該�
 
 テナント特有のエンドポイントは、前述の URL の「common」の部分を、テナント ID またはテナントの検証済みドメインに置き換えて構成できます。共通エンドポイントまたはテナント特有のエンドポイントのどちらを使用するかは、アプリの要件と、トークンを取得するために使用している認証フローによって異なります。Azure AD のアクセス トークンと Microsoft Graph について詳しくは、「[認証トークンの取得](./auth-overview.md)」を参照してください。
 
-> **注:** [Azure AD v2.0 認証エンドポイントとトークン エンドポイント](https://azure.microsoft.com/en-us/documentation/articles/active-directory-appmodel-v2-overview/)はグローバル サービスでのみ使用できます。国内クラウド展開での使用はまだサポートされていません。
+> **注:** [Azure AD v2.0 認証エンドポイントとトークン エンドポイント](https://azure.microsoft.com/ja-JP/documentation/articles/active-directory-appmodel-v2-overview/)はグローバル サービスでのみ使用できます。国内クラウド展開での使用はまだサポートされていません。
 
 ## <a name="supported-features"></a>サポートされている機能
 

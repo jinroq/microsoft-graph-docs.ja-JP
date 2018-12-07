@@ -45,15 +45,15 @@ Outlook [連絡先](/graph/api/resources/contact?view=graph-rest-1.0)のため�
 - 連絡先インスタンスのアプリ ストレージを[オープン拡張](extensibility-overview.md#open-extensions)として拡張したり、厳密に型指定されたカスタム データを連絡先スキーマに[スキーマ拡張](extensibility-overview.md#schema-extensions)として追加したりすることができます。
 
 ## <a name="api-reference"></a>API リファレンス
-このサービスの API リファレンスを検索してください。
+このサービスの API リファレンスをお探しですか?
 
-- [Graph v1.0 で連絡先 API](/graph/api/resources/contact?view=graph-rest-1.0)
-- [Graph のベータ版で連絡先 API](/graph/api/resources/contact?view=graph-rest-beta)
+- [Microsoft Graph v1.0 の Outlook 連絡先 API](/graph/api/resources/contact?view=graph-rest-1.0)
+- [Microsoft Graph ベータ版の Outlook 連絡先 API](/graph/api/resources/contact?view=graph-rest-beta)
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 - [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer/?request=me%2Fcontacts&version=v1.0) で連絡先サンプル クエリを選択して試行する。 左側の列の **[サンプルをさらに表示]** を選択します。 メニューを使用して **[個人用連絡先]** をオンにします。
 - 以下について調べます。
-  - [Outlook リソースの不変の識別子を取得します。](outlook-immutable-id.md)
-  - [共有の連絡先を取得します。](outlook-get-shared-contacts-folders.md)
-- Outlook の[連絡先 API](/graph/api/resources/contact?view=graph-rest-1.0) リファレンスを確認する。
+  - [Outlook リソースの不変識別子の取得](outlook-immutable-id.md)
+  - [共有の連絡先の取得](outlook-get-shared-contacts-folders.md)
+- Outlook の[連絡先 API](/graph/api/resources/contact?view=graph-rest-1.0) リファレンスをご確認ください。

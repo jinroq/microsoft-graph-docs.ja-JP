@@ -1,12 +1,12 @@
 ---
 title: 警告の取得
 description: " > **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。"
-ms.openlocfilehash: a3c8acb8ab748636d7a79b7ce3995a61699f7946
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.openlocfilehash: 5f5a7330476de71308680b41e87e51d5d228b2e0
+ms.sourcegitcommit: 4aebfaefc23e02a98b2fec35958cd2110020f15f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27067689"
+ms.lasthandoff: 12/06/2018
+ms.locfileid: "27184484"
 ---
 # <a name="get-alert"></a>警告の取得
 

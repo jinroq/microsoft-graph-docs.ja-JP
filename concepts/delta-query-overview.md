@@ -26,7 +26,7 @@ ms.locfileid: "27092531"
 3. アプリケーションがリソースの変更を把握する必要がある場合、アプリケーションは手順 2 で受け取った `deltaLink` URL を使用して、新しい要求を実行します。この要求は、手順 2 が完了した直後、またはアプリケーションが変更を確認する際に実行できる*場合があります*。
 4. Microsoft Graph は、前の要求以降のリソースへの変更を説明する応答と、`nextLink` URL または `deltaLink` URL のいずれかを返します。
 
->**注:** Azure の Active Directory ユーザーとグループ) などのサポート」今すぐから同期] のシナリオに格納されているリソース。 これを使用すると、(リソースの完全な状態を取得する必要がない) 場合は、1 と 2 が上記の手順をスキップして、最新の`deltaLink`代わりにします。 追加`$deltaToken=latest`に、`delta`関数と応答には、`deltaLink`とリソース データがありません。
+>**注:** Azure Active Directory (ユーザーやグループなど) に保管されているリソースは、"今から同期を開始する" という状況をサポートしています。 このため、上記の手順 1 と 2 をスキップし (リソースの完全な状態を取得する必要がない場合)、代わりに最新の `deltaLink` を要求することができます。 `$deltaToken=latest` を `delta` 関数に追加すると、応答には `deltaLink` が含まれ、リソー スデータは一切含まれません。
 
 ### <a name="state-tokens"></a>状態トークン
 
@@ -49,7 +49,7 @@ ms.locfileid: "27092531"
 - `$select` クエリ パラメーターが使用されている場合、パラメーターは、`$select` ステートメントで指定したプロパティまたはリレーションシップに関する変更のみを追跡することを、クライアントが優先していることを示します。選択されていないプロパティに変更が加えられた場合、そのプロパティが変更されたリソースは、後続の要求後のデルタ応答には表示されなくなります。
 - `$expand` は、ユーザーとグループのナビゲーション プロパティである `manager` および `members` についてのみサポートされます。
 
-- スコープ フィルターを使用すると、オブジェクト Id によって特定のユーザーまたはグループの 1 つまたは複数の変更を追跡できます。 たとえば、次の要求: https://graph.microsoft.com/beta/groups/delta/?$filter = id eq '477e9fc6-5de7-4406-bb2a-7e5c83c9ae5f' または id eq' 004d6a07-fe70-4b92-add5-e6e37b8acd8e' を返します。 変更のクエリ フィルターで指定された id と一致するグループです。
+- スコープ フィルターで、objectID を使って 1 つまたは複数の特定のユーザーまたはグループに加えられた変更を追跡できます。 たとえば、https://graph.microsoft.com/beta/groups/delta/?$filter= id eq '477e9fc6-5de7-4406-bb2a-7e5c83c9ae5f' or id eq '004d6a07-fe70-4b92-add5-e6e37b8acd8e' の要求では、クエリ フィルターで指定された ID に一致するグループに加えられた変更が返されます。
 
 ## <a name="resource-representation-in-the-delta-query-response"></a>デルタ クエリ応答でのリソース表記
 
@@ -75,16 +75,16 @@ ms.locfileid: "27092531"
 
 | **リソース コレクション** | **API** |
 |:------ | :------ |
-| アプリケーション (プレビュー) | [アプリケーション](/graph/api/resources/application?view=graph-rest-beta)リソース (プレビュー) の[デルタ](/graph/api/application-delta?view=graph-rest-beta)関数 |
-| ディレクトリ オブジェクト | [directoryObjects](/graph/api/resources/directoryobject?view=graph-rest-beta)リソース (プレビュー) の[デルタ](/graph/api/directoryobject-delta?view=graph-rest-beta)関数 |
-| ディレクトリの役割 | [directoryRole](/graph/api/resources/directoryrole?view=graph-rest-1.0)リソースの[デルタ](/graph/api/directoryrole-delta?view=graph-rest-1.0)関数 |
+| アプリケーション (プレビュー) | [アプリケーション](/graph/api/resources/application?view=graph-rest-beta) リソース (プレビュー) の[デルタ](/graph/api/application-delta?view=graph-rest-beta)関数 |
+| ディレクトリ オブジェクト | [ディレクトリ オブジェクト](/graph/api/resources/directoryobject?view=graph-rest-beta) リソース (プレビュー) の[デルタ](/graph/api/directoryobject-delta?view=graph-rest-beta)関数 |
+| ディレクトリ ロール | [ディレクトリ ロール](/graph/api/resources/directoryrole?view=graph-rest-1.0) リソースの[デルタ](/graph/api/directoryrole-delta?view=graph-rest-1.0)関数 |
 | 標準として設定されている予定表の予定表ビュー (期間) 内のイベント | [イベント](/graph/api/resources/event?view=graph-rest-1.0)リソースの[デルタ](/graph/api/event-delta?view=graph-rest-1.0)関数 |
 | グループ | [グループ](/graph/api/resources/group?view=graph-rest-1.0)リソースの[デルタ](/graph/api/group-delta?view=graph-rest-1.0)関数 |
 | メール フォルダー | [mailFolder](/graph/api/resources/mailfolder?view=graph-rest-1.0) リソースの[デルタ](/graph/api/mailfolder-delta?view=graph-rest-1.0)関数 |
 | フォルダー内のメッセージ | [メッセージ](/graph/api/resources/message?view=graph-rest-1.0)リソースの[デルタ](/graph/api/message-delta?view=graph-rest-1.0)関数 |
 | 個人用連絡先フォルダー | [contactFolder](/graph/api/resources/contactfolder?view=graph-rest-1.0) リソースの[デルタ](/graph/api/contactfolder-delta?view=graph-rest-1.0)関数 |
 | フォルダー内の個人用連絡先 | [連絡先](/graph/api/resources/contact?view=graph-rest-1.0)リソースの[デルタ](/graph/api/contact-delta?view=graph-rest-1.0)関数 |
-| サービス ・ プリンシパル (プレビュー) | [servicePrincipal](/graph/api/resources/serviceprincipal?view=graph-rest-beta)リソース (プレビュー) の[デルタ](/graph/api/serviceprincipal-delta?view=graph-rest-beta)関数 |
+| サービス プリンシパル (プレビュー) | [サービス プリンシパル](/graph/api/resources/serviceprincipal?view=graph-rest-beta) リソース (プレビュー) の[デルタ](/graph/api/serviceprincipal-delta?view=graph-rest-beta)関数 |
 | ユーザー | [ユーザー](/graph/api/resources/user?view=graph-rest-1.0)リソースの[デルタ](/graph/api/user-delta?view=graph-rest-1.0)関数 |
 | ドライブの項目\* | [driveItem](/graph/api/resources/driveitem?view=graph-rest-1.0) リソースの[デルタ](/graph/api/driveitem-delta?view=graph-rest-1.0)関数 |
 | Planner の項目\*\* | [plannerUser](/graph/api/resources/planneruser?view=graph-rest-beta) リソースのすべてのセグメントの[デルタ](/graph/api/planneruser-list-delta?view=graph-rest-beta)関数 (プレビュー) |

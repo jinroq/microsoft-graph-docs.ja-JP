@@ -1,6 +1,6 @@
 ---
 title: REST API を使用して Exchange ハイブリッド展開のメールボックスにアクセスする (プレビュー)
-description: Microsoft Graph では、Office 365 の一部としての Exchange Online で、クラウドにある顧客メールボックスへのアクセスをずっと提供してきました。
+description: Office 365 の一部として、Microsoft Graph は、Exchange Online のクラウドにある顧客メールボックスへのアクセスを常に提供してきました。
 ms.openlocfilehash: 78b324765c580e76f080e2e8023e52617b3851f3
 ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
 ms.translationtype: MT
@@ -45,6 +45,6 @@ Microsoft Graph はオープンネス (JSON、OAUTH、ODATA といったオー�
 IT 管理者は、次のリソースで詳細情報を確認できます。
 
 - 
-  [Exchange Server のハイブリッド展開](https://technet.microsoft.com/en-us/library/jj200581(v=exchg.150).aspx)
+  [Exchange Server のハイブリッド展開](https://technet.microsoft.com/ja-JP/library/jj200581(v=exchg.150).aspx)
 - [2016 年 9 月の Cumulative Update リリース](https://blogs.technet.microsoft.com/exchange/2016/09/20/released-september-2016-quarterly-exchange-updates/) 
 - [REST API のオンプレミス アーキテクチャ要件](https://blogs.technet.microsoft.com/exchange/2016/09/26/on-premises-architectural-requirements-for-the-rest-api/)
