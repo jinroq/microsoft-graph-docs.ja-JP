@@ -23,7 +23,7 @@ items:
     href: /graph/query-parameters?toc=./ref/toc.json
   - name: バッチ要求
     href: /graph/json-batching?toc=./ref/toc.json
-  - name: 調整
+  - name: スロットル
     href: /graph/throttling?toc=./ref/toc.json
   - name: 変更通知
     href: /graph/webhooks?toc=./ref/toc.json
@@ -58,7 +58,7 @@ items:
 - name: リファレンス
   href: overview.md
   items:
-  - name: Users
+  - name: ユーザー
     href: resources/users.md
     items:
     - name: User
@@ -142,7 +142,7 @@ items:
         href: api/drive-get.md
       - name: 子を一覧表示する
         href: api/driveitem-list-children.md
-    - name: Groups
+    - name: グループ
       href: resources/group.md
       items:
       - name: 結合されたチームをリストします。
@@ -251,10 +251,10 @@ items:
         href: api/user-get-settings.md
       - name: 設定の更新
         href: api/user-update-settings.md
-  - name: Groups
+  - name: グループ
     href: resources/groups-overview.md
     items:
-    - name: グループ化
+    - name: Group
       href: resources/group.md
       items:
       - name: お気に入りに追加します。
@@ -473,7 +473,7 @@ items:
   - name: 予定表
     href: resources/calendar.md
     items:
-    - name: イベント
+    - name: Event
       href: resources/event.md
       items:
       - name: イベントを一覧表示する
@@ -645,7 +645,7 @@ items:
           href: api/multivaluelegacyextendedproperty-post-multivalueextendedproperties.md
         - name: 複数値プロパティを取得します。
           href: api/multivaluelegacyextendedproperty-get.md
-  - name: 通話やオンライン会議
+  - name: 通話とオンライン会議
     href: resources/calls-api-overview.md
     items:
     - name: Call
@@ -771,7 +771,7 @@ items:
         href: api/bookingbusiness-update.md
       - name: 削除
         href: api/bookingbusiness-delete.md
-      - name: 発行する
+      - name: 公開
         href: api/bookingbusiness-publish.md
       - name: 公開取り下げ
         href: api/bookingbusiness-unpublish.md
@@ -5933,7 +5933,7 @@ items:
         href: api/educationclass-list-assignments.md
       - name: 割り当てを作成します。
         href: api/educationclass-post-assignments.md
-    - name: Users
+    - name: ユーザー
       href: resources/educationuser.md
       items:
       - name: 学校をリストする
@@ -6517,6 +6517,8 @@ items:
           href: api/governanceresource-list.md
         - name: 取得
           href: api/governanceresource-get.md
+        - name: 登録
+          href: api/governanceresource-register.md
       - name: 役割の定義
         href: resources/governanceroledefinition.md
         items:
@@ -6898,7 +6900,7 @@ items:
         href: api/orgcontact-update.md
       - name: 組織の連絡先を削除します。
         href: api/orgcontact-delete.md
-    - name: Groups
+    - name: グループ
       href: resources/group.md
       items:
       - name: memberOf を一覧表示する
@@ -7814,9 +7816,9 @@ items:
       - name: サブスクリプションを削除する
         href: api/subscription-delete.md
   expanded: true
-ms.openlocfilehash: acde8e2772a4c97d9d299d024088b79387c1d6f7
-ms.sourcegitcommit: 02ead22efd4f10cd50f89c9f5aa3b6dfda96aeec
+ms.openlocfilehash: d223c8f9b7eb4e899705a51f9cb1fa09bff4db4e
+ms.sourcegitcommit: 82f9d0d10388572a3073b2dde8ca0a7b409135b8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/01/2018
-ms.locfileid: "27123995"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "27191201"

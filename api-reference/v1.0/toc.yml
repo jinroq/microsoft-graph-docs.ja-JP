@@ -23,7 +23,7 @@ items:
     href: /graph/query-parameters?toc=./ref/toc.json
   - name: バッチ要求
     href: /graph/json-batching?toc=./ref/toc.json
-  - name: 調整
+  - name: スロットル
     href: /graph/throttling?toc=./ref/toc.json
   - name: 変更通知
     href: /graph/webhooks?toc=./ref/toc.json
@@ -58,7 +58,7 @@ items:
 - name: リファレンス
   href: overview.md
   items:
-  - name: Users
+  - name: ユーザー
     href: resources/users.md
     items:
     - name: User
@@ -136,7 +136,7 @@ items:
         href: api/drive-get.md
       - name: 子を一覧表示する
         href: api/driveitem-list-children.md
-    - name: Groups
+    - name: グループ
       href: resources/group.md
       items:
       - name: memberOf を一覧表示する
@@ -214,10 +214,10 @@ items:
         href: api/user-get-settings.md
       - name: 設定の更新
         href: api/user-update-settings.md
-  - name: Groups
+  - name: グループ
     href: resources/groups-overview.md
     items:
-    - name: グループ化
+    - name: Group
       href: resources/group.md
       items:
       - name: お気に入りに追加します。
@@ -424,7 +424,7 @@ items:
   - name: 予定表
     href: resources/calendar.md
     items:
-    - name: イベント
+    - name: Event
       href: resources/event.md
       items:
       - name: イベントを一覧表示する
@@ -2949,7 +2949,7 @@ items:
         href: api/educationclass-post-members.md
       - name: メンバーを削除する
         href: api/educationclass-delete-members.md
-    - name: Users
+    - name: ユーザー
       href: resources/educationuser.md
       items:
       - name: 学校をリストする
@@ -3074,6 +3074,8 @@ items:
         href: api/device-post-registeredowners.md
       - name: 登録済みユーザーを作成します。
         href: api/device-post-registeredusers.md
+      - name: デバイス グループを一覧表示
+        href: api/device-list-memberof.md
     - name: ディレクトリ オブジェクト
       href: resources/directoryobject.md
       items:
@@ -4107,9 +4109,9 @@ items:
       - name: サブスクリプションを削除する
         href: api/subscription-delete.md
   expanded: true
-ms.openlocfilehash: 865c124cdf6634855e01cfa6a46a1e5aacda1304
-ms.sourcegitcommit: 02ead22efd4f10cd50f89c9f5aa3b6dfda96aeec
+ms.openlocfilehash: 5fd08c5b36c9fcec78cc6b48400347b90289b496
+ms.sourcegitcommit: 82f9d0d10388572a3073b2dde8ca0a7b409135b8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/01/2018
-ms.locfileid: "27123981"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "27191187"
