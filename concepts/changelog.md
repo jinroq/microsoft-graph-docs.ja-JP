@@ -1,12 +1,12 @@
 ---
 title: Microsoft Graph の変更ログ
 description: この変更ログでは、Microsoft Graph と、v1.0 およびベータ版のエンドポイント Microsoft Graph API の変更内容について説明します。
-ms.openlocfilehash: f7930e73cbfb1a8bf924e72ea790167bb263ba6a
-ms.sourcegitcommit: 4a46cfd112c8089fc07e4e5ccdccaf415a3a0e7f
+ms.openlocfilehash: b98389d40e6a64e31efed755558c25dbfc542002
+ms.sourcegitcommit: 4aebfaefc23e02a98b2fec35958cd2110020f15f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "27156069"
+ms.lasthandoff: 12/06/2018
+ms.locfileid: "27184561"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Microsoft Graph の変更ログ
 
@@ -20,7 +20,7 @@ Microsoft Graph API に関する既知の問題の詳細については、「[�
 
 | **変更の種類** | **バージョン** | **説明**                          |
 | :-------------- | :---------- | :--------------------------------------- |
-| 追加        | ベータ版        | [DataPolicyOperation](../api-reference/beta/resources/dataPolicyOperation)に新しい**進行状況**のプロパティを追加します。 操作の進行状況を指定します。
+| 追加        | ベータ版        | [DataPolicyOperation](/graph/api/resources/dataPolicyOperation?view=graph-rest-beta)に新しい**進行状況**のプロパティを追加します。 操作の進行状況を指定します。
 
 ### <a name="microsoft-teams-apis"></a>Microsoft Teams API
 
@@ -118,10 +118,10 @@ Microsoft Graph API に関する既知の問題の詳細については、「[�
 
 ### <a name="directory-apis"></a>ディレクトリ API
 
-| **変更の種類** | **バージョン**   | **説明**                          | 
-| :-------------- | :------------ | :--------------------------------------- | 
+| **変更の種類** | **バージョン**   | **説明**                          |
+| :-------------- | :------------ | :--------------------------------------- |
 | 追加 | ベータ版 | [ユーザー](/graph/api/resources/user?view=graph-rest-beta)のエンティティに[ライセンスを取得するグループ](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-licensing-whatis-azure-portal)の**licenseAssignmentStates**プロパティを追加します。|
-| 追加 | ベータ版 | [ライセンスを取得するグループ](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-licensing-whatis-azure-portal)の**licenseAssignmentState**リソースを追加します。| 
+| 追加 | ベータ版 | [ライセンスを取得するグループ](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-licensing-whatis-azure-portal)の**licenseAssignmentState**リソースを追加します。|
 | 追加 | ベータ版 | [グループ](/graph/api/resources/group?view=graph-rest-beta)のエンティティに[ライセンスを取得するグループ](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-licensing-whatis-azure-portal)の**assignedLicenses**、 **licenseProcessingState**、 **hasMembersWithLicenseErrors** 、 **membersWithLicenseErrors**プロパティが追加されます。|
 
 ### <a name="microsoft-intune-apis"></a>Microsoft Intune API

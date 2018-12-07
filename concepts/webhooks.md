@@ -1,12 +1,12 @@
 ---
 title: ユーザー データの変更に関する通知の設定
 description: Microsoft Graph の API は、webhook メカニズムを使用して、クライアントに通知を配信します。クライアントは、通知を受信するために自身の URL を構成する Web サービスです。クライアント アプリは通知を使用して、変更時に状態を更新します。
-ms.openlocfilehash: faaa1be8330118f1cbebf5362903f0e114816b67
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.openlocfilehash: e9c0c33aa18735d183d88836d33a99c8f12da560
+ms.sourcegitcommit: 4aebfaefc23e02a98b2fec35958cd2110020f15f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27092520"
+ms.lasthandoff: 12/06/2018
+ms.locfileid: "27184547"
 ---
 # <a name="set-up-notifications-for-changes-in-user-data"></a>ユーザー データの変更に関する通知の設定
 
@@ -36,10 +36,10 @@ Microsoft Graph の API を使用すると、アプリは次のリソースに�
 
 あるいは、Sharepoint/OneDrive for Business ドライブ: `/drive/root`
 
-または、ユーザーの個人用 OneDrive: `/drives/{id}/root`
+あるいは、ユーザーの個人用 OneDrive: `/drives/{id}/root`
 `/drives/{id}/root/subfolder`
 
-または、新しい[セキュリティ API の警告](security-concept-overview.md): `/security/alerts?$filter=status eq ‘New’`、`/security/alerts?$filter=vendorInformation/provider eq ‘ASC’`
+または新しい[API のセキュリティの警告](security-concept-overview.md): `/security/alerts?$filter=status eq ‘New’`、`/security/alerts?$filter=vendorInformation/provider eq ‘ASC’`
 
 ### <a name="azure-ad-resource-limitations"></a>Azure AD リソースの制限
 
@@ -98,6 +98,8 @@ Content-Type: application/json
 
 プロパティの `changeType`、`notificationUrl`、`resource`、および `expirationDateTime` は必須です。 プロパティの定義と値については、「[サブスクリプション リソースの種類](/graph/api/resources/subscription?view=graph-rest-1.0)」をご覧ください。
 
+`resource`プロパティは、変更の監視対象リソースを指定します。 特定のメール フォルダーへのサブスクリプションを作成するたとえば、:`me/mailFolders('inbox')/messages`または、管理者の承認が与えられたユーザーの代理として: `users/john.doe@onmicrosoft.com/mailFolders('inbox')/messages`。
+
 `clientState` は必須ではありませんが、推奨される通知の処理プロセスに準拠するには含める必要があります。 このプロパティを設定すると、受け取る通知が Microsoft Graph サービスから来たものであることを確認することができます。 その理由で、このプロパティの値は機密として保たなければならず、使用はアプリケーションと Microsoft Graph サービスのためにのみ限るようにしてください。
 
 処理が正常に終了すると、Microsoft Graph は `201 Created` コードおよび本文内に [サブスクリプション](/graph/api/resources/subscription?view=graph-rest-1.0) オブジェクトを返します。
@@ -112,7 +114,7 @@ Microsoft Graph により、サブスクリプション作成の前にサブス�
     POST https://{notificationUrl}?validationToken={opaqueTokenCreatedByMicrosoftGraph}
     ```
 
-    > **重要:** `validationToken` はクエリ パラメーターであるため、クライアントが HTTP コーディング プラクティスに従って適切にデコードする必要があります。 クライアントがトークンをデコードせず、代わりに次の手順で示すエンコードされた値 (応答) を使用する場合、検証は失敗します。 また、トークンの形式は将来予告なしに変更される可能性があるため、クライアントはトークン値を曖昧なものとして処理する必要があります。
+    > **重要な:** なので、`validationToken`は、クエリ パラメーター、HTTP のコーディング方法により、クライアントで正しくデコードする必要があります。 クライアントでは、トークンをデコードできません、代わりに (応答) に、次の手順でエンコードされた値を使用して、検証が失敗します。 クライアントがトークンの値として扱う不透明トークンの形式は、予告なしに将来変更可能性がありますので。
 
 1. クライアントは 10 秒以内に次の特性を持つ応答を提供する必要があります。
 
@@ -159,7 +161,7 @@ DELETE https://graph.microsoft.com/v1.0/subscriptions/{id}
 
 通知オブジェクトには、次のプロパティがあります。
 
-| プロパティ | 型 | 説明 |
+| プロパティ | 種類 | 説明 |
 |:---------|:-----|:------------|
 | subscriptionId | string | 通知を生成したサブスクリプションの ID。 |
 | subscriptionExpirationDateTime | [dateTime](https://tools.ietf.org/html/rfc3339) | サブスクリプションの有効期限が切れるとき。 |
@@ -170,7 +172,7 @@ DELETE https://graph.microsoft.com/v1.0/subscriptions/{id}
 
 たとえば、Outlook リソースの場合、`resourceData` には次のフィールドが含まれています:
 
-| プロパティ | 型 | 説明 |
+| プロパティ | 種類 | 説明 |
 |:---------|:-----|:------------|
 | @odata.type | string | 表しているオブジェクトを記述する、Microsoft Graph の OData エンティティ タイプ。 |
 | @odata.id | string | オブジェクトの OData 識別子。 |
