@@ -1,12 +1,12 @@
 ---
 title: GovernanceRoleSetting を更新します。
 description: GovernanceRoleSetting のプロパティを更新します。
-ms.openlocfilehash: ca5752d51e5d59578594a12c80ae1cac316b48bc
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.openlocfilehash: 2d9417c99e63b1b4c7302c2afdda4c272b2fce82
+ms.sourcegitcommit: 82f9d0d10388572a3073b2dde8ca0a7b409135b8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27066719"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "27191117"
 ---
 # <a name="update-governancerolesetting"></a>GovernanceRoleSetting を更新します。
 
@@ -17,19 +17,20 @@ ms.locfileid: "27066719"
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
 
+>**注:** この API では、依頼者の少なくとも 1 つある必要があります`Active`管理者の役割の割り当て (`owner`または`user access administrator`)、リソースにします。
+
 |アクセス許可の種類      | Permissions              |
 |:--------------------|:---------------------------------------------------------|
 |委任 (職場または学校のアカウント) | PrivilegedAccess.ReadWrite.AzureResources  |
 |委任 (個人用 Microsoft アカウント) | サポートされていません。    |
 |アプリケーション | PrivilegedAccess.ReadWrite.AzureResources |
 
-だけでなく、アクセス許可のスコープは、この API は、リクエスターが 1 つ以上を必要があります`Active`管理者の役割の割り当て (`owner`または`user access administrator`)、リソースにします。
 ## <a name="http-request"></a>HTTP 要求
 <!-- { "blockType": "ignored" } -->
 ```http
 PATCH /privilegedAccess/azureResources/roleSettings/{id}
 ```
-## <a name="optional-request-headers"></a>オプションの要求ヘッダー
+## <a name="request-headers"></a>要求ヘッダー
 | 名前       | 説明|
 |:-----------|:-----------|
 | Authorization  | Bearer {code}|
@@ -39,7 +40,7 @@ PATCH /privilegedAccess/azureResources/roleSettings/{id}
 ## <a name="request-body"></a>要求本文
 要求の本体を更新する必要がある[governanceRuleSettings](../resources/governancerulesetting.md)の値を指定します。 
 
-| プロパティ     | 型   |説明|
+| プロパティ     | 種類   |説明|
 |:---------------|:--------|:----------|
 |adminEligibleSettings|[governanceRuleSetting](../resources/governancerulesetting.md)|管理者対象のロール割り当てを追加しようとするときに評価されるルールの設定。|
 |adminMemberSettings|[governanceRuleSetting](../resources/governancerulesetting.md)|直接的なメンバーの役割の割り当てを追加する際に管理者に評価されるルールの設定。|
@@ -49,14 +50,15 @@ PATCH /privilegedAccess/azureResources/roleSettings/{id}
 ## <a name="response"></a>応答
 成功した場合、このメソッドは `204 NoContent` 応答コードを返します。応答本文には何も返されません。 
 
-## <a name="error-codes"></a>エラー コード
-この API は、HTTP のコードの標準に準拠します。 ほかに、カスタムのエラー コードを以下に示します。
+### <a name="error-codes"></a>エラー コード
+この API では、標準の HTTP エラー コードを返します。 さらに、次のカスタム エラー コードを返します。
+
 |エラー コード     | エラー メッセージ         | 詳細             |
 |:--------------| :---------------------|:--------------------|
 | 400 BadRequest| RoleSettingNotFound   | [GovernanceRoleSetting](../resources/governancerolesetting.md)は、システムに存在しません。
 | 400 BadRequest| InvalidRoleSetting    | 要求の本文に記載されている[governanceRuleSettings](../resources/governancerulesetting.md)の値が有効ではありません。
 
-## <a name="example"></a>使用例 
+## <a name="example"></a>例 
 この例では、サブスクリプション Wingtip toys 社の商品にカスタム ロール 3 のロール設定を更新します。
 ##### <a name="request"></a>要求
 <!-- {

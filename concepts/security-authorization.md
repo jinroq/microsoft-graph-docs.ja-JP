@@ -1,6 +1,6 @@
 ---
-title: 承認および Microsoft Graph セキュリティ API
-description: Microsoft グラフ セキュリティ API 経由でアクセス可能なセキュリティ ・ データは、機密性の高いアクセス許可と Azure Active Directory (AD の Azure) の役割の両方で保護されています。
+title: 承認と Microsoft Graph セキュリティ API
+description: Microsoft Graph セキュリティ API からアクセスできるセキュリティ データは機密性が高く、アクセス許可と Azure Active Directory (Azure AD) ロールによって保護されています。
 ms.openlocfilehash: c69621fa7059a96381bed76b58c4a77e80d984dd
 ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
 ms.translationtype: MT
@@ -8,38 +8,38 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 11/29/2018
 ms.locfileid: "27092353"
 ---
-# <a name="authorization-and-the-microsoft-graph-security-api"></a>承認および Microsoft Graph セキュリティ API
+# <a name="authorization-and-the-microsoft-graph-security-api"></a>承認と Microsoft Graph セキュリティ API
 
-Microsoft グラフ セキュリティ API 経由でアクセス可能なセキュリティ ・ データは、機密性の高いアクセス許可と Azure Active Directory (AD の Azure) の役割の両方で保護されています。
+Microsoft Graph セキュリティ API からアクセスできるセキュリティ データは機密性が高く、アクセス許可と Azure Active Directory (Azure AD) ロールによって保護されています。
 
-Microsoft グラフ セキュリティ API には、2 種類の認証がサポートされています。
+Microsoft Graph セキュリティ API では 2 種類の承認がサポートされています。
 
-- **アプリケーション レベルの承認** - サインインしているユーザーがいません (例: SIEM シナリオ)。 アプリケーションに付与されたアクセス許可によって、承認が決定します。 
+- **アプリケーション レベルの承認** - ユーザーはサインインしません (例: SIEM シナリオ)。 アプリケーションに付与されたアクセス許可によって、承認が決定します。 
     >**注:** このオプションは、アプリケーションがロール ベースのアクセス制御 (RBAC) を管理しているケースにも対応します。
 - **ユーザーにより委任された承認** - Azure AD テナントのメンバーであるユーザーがサインインしています。 アプリケーションに必要なアクセス許可が付与されており、ユーザーが Azure AD 制限付き管理者ロール ([セキュリティ閲覧者] または [セキュリティ管理者]) のメンバーである必要があります。
 
-グラフのエクスプ ローラーから Microsoft グラフ セキュリティ API を呼び出している場合。
+Graph エクスプローラーから Microsoft Graph セキュリティ API を呼び出す場合:
 
 - Azure AD テナント管理者は、要求されたアクセス許可を Graph エクスプローラー アプリケーションに付与することに明示的に同意する必要があります。
 - ユーザーは、Azure AD の [セキュリティ閲覧者] 制限付き管理者ロールのメンバーである必要があります ([セキュリティ閲覧者] または [セキュリティ管理者] のいずれか)。
 
 >**注**: Graph エクスプローラーでは、アプリケーション レベルの承認がサポートされていません。
 
-独自、または独自のアプリケーションから Microsoft グラフ セキュリティ API の呼び出しをしているかどうか。
+カスタム アプリケーションまたは独自のアプリケーションから Microsoft Graph セキュリティ API を呼び出す場合:
 
 - Azure AD テナント管理者は、アプリケーションに対して明示的に承認を与える必要があります。 これは、アプリケーション レベルの承認と、ユーザーにより委任された承認の両方に必要です。
 - ユーザーにより委任された承認を使用する場合、ユーザーは、Azure AD の [セキュリティ閲覧者] または [セキュリティ管理者] 制限付き管理者ロールのメンバーである必要があります。
 
 ## <a name="manage-authorization-in-security-api-client-applications"></a>セキュリティ API クライアント アプリケーションで承認を管理する
 
-Microsoft グラフ セキュリティ API 経由で提供されるセキュリティ データは、機密性の高い適切な認証および承認メカニズムによって保護する必要があります。 次の表は、登録し、Microsoft のグラフのセキュリティ API にアクセスできるクライアント アプリケーションを作成する手順を示します。
+Microsoft Graph セキュリティ API から提供されるセキュリティ データは機密性が高く、適切な認証および承認メカニズムを使用して保護する必要があります。 次の表に、Microsoft Graph セキュリティ API にアクセスできるクライアント アプリケーションを登録および作成する手順を示します。
 
 | **対象者** | **操作** |
 |:---------------------|:------------------|
 |アプリケーション開発者または所有者|アプリケーションをエンタープライズ アプリケーションとして登録します。|
 |テナント管理者|アプリケーションにアクセス許可を付与します。|
 |テナント管理者|ユーザーにロールを割り当てます。|
-|アプリケーション開発者|ユーザーとしてサインインし、Microsoft グラフ セキュリティ API にアクセスするアプリケーションを使用します。|
+|アプリケーション開発者|ユーザーとしてサインインし、アプリケーションを使用して Microsoft Graph セキュリティ API にアクセスします。|
 
 アプリケーションの登録では、アプリケーションの実行に必要なアクセス許可だけが定義されます。 これらのアクセス許可はアプリケーションに付与されません。
 
@@ -75,7 +75,7 @@ Azure AD v2.0 エンドポイントでアプリケーションを登録するに
 3. 新しいアプリケーションの登録ページで **[プラットフォームの追加]** > **[Web]** を選択します。 **[リダイレクト URL]** フィールドにリダイレクト URL を入力します。
 4. **[Microsoft Graph のアクセス許可]** セクションの **[委任されたアクセス許可]** で、**[追加]** を選択します。 ダイアログ ボックスで、必要なアクセス許可を選択します。 アクセス許可のリストについては、「[セキュリティのアクセス許可](permissions-reference.md#security-permissions)」を参照してください。
 
-    >Microsoft グラフ セキュリティ API には、GET クエリでは、SecurityEvents.Read.All スコープと、SecurityEvents.ReadWrite.All クエリのスコープまたはポストの修正プログラムが必要です。
+    >Microsoft Graph セキュリティ API では、GET クエリに SecurityEvents.Read.All スコープ、PATCH/POST クエリに SecurityEvents.ReadWrite.All スコープが必要です。
 
 5. **[保存]** を選択します。
 
@@ -89,7 +89,7 @@ Azure AD v2.0 エンドポイントでアプリケーションを登録するに
 
 ## <a name="grant-permissions-to-an-application"></a>アプリケーションにアクセス許可を付与する
 
-アプリケーションの登録では、アプリケーションに必要なアクセス許可が定義されますが、アプリケーションにこれらのアクセス許可は付与されません。 Azure AD テナント管理者は、管理者の同意エンドポイントを呼び出して、これらのアクセス許可を明示的に付与する必要があります。 詳細については、「[管理者の同意エンドポイントを使用する](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-v2-scopes#using-the-admin-consent-endpoint)」を参照してください。
+アプリケーションの登録では、アプリケーションに必要なアクセス許可が定義されますが、アプリケーションにこれらのアクセス許可は付与されません。 Azure AD テナント管理者は、管理者の同意エンドポイントを呼び出して、これらのアクセス許可を明示的に付与する必要があります。 詳細については、「[管理者の同意エンドポイントを使用する](https://docs.microsoft.com/ja-JP/azure/active-directory/develop/active-directory-v2-scopes#using-the-admin-consent-endpoint)」を参照してください。
 
 アプリケーションにアクセス許可を付与するには、以下の情報が必要です。
 
@@ -108,7 +108,7 @@ Azure AD v2.0 エンドポイントでアプリケーションを登録するに
 
 ## <a name="assign-azure-ad-roles-to-users"></a>Azure AD のロールをユーザーに割り当てる
 
-アプリケーションにアクセス許可が付与されると、そのアプリケーションにアクセスできるすべてのユーザー (Azure AD テナントのメンバー) に、付与されたアクセス許可が与えられます。 Microsoft グラフ セキュリティ API には、データの機密性の高いセキュリティを守るために、Azure AD**セキュリティのリーダー**の役割を割り当てられるユーザーも必要です。 詳細については、「[Azure Active Directory での管理者ロールの割り当て](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-assign-admin-roles-azure-portal)」と「[Azure Active Directory でユーザーを管理者ロールに割り当てる](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-users-assign-role-azure-portal)」を参照してください。
+アプリケーションにアクセス許可が付与されると、そのアプリケーションにアクセスできるすべてのユーザー (Azure AD テナントのメンバー) に、付与されたアクセス許可が与えられます。 機密性の高いセキュリティ データの保護を強化するため、Microsoft Graph セキュリティ API では、ユーザーに Azure AD の **[セキュリティ閲覧者]** ロールが割り当てられている必要があります。 詳細については、「[Azure Active Directory での管理者ロールの割り当て](https://docs.microsoft.com/ja-JP/azure/active-directory/active-directory-assign-admin-roles-azure-portal)」と「[Azure Active Directory でユーザーを管理者ロールに割り当てる](https://docs.microsoft.com/ja-JP/azure/active-directory/active-directory-users-assign-role-azure-portal)」を参照してください。
 
 >**注:** この手順を実行するには、テナント管理者でなければなりません。
 
@@ -133,19 +133,19 @@ Azure AD v2.0 エンドポイントでアプリケーションを登録するに
 
 |**アプリケーションの種類**|**認証ライブラリ**|
 |------------------------|----------------------------|
-|[デスクトップ アプリケーション - iOS](https://docs.microsoft.com/en-us/azure/active-directory/develop/guidedsetups/active-directory-ios)|[MSAL.framework: iOS 用 Microsoft Authentication Library プレビュー](https://github.com/AzureAD/microsoft-authentication-library-for-objc)|
-|[デスクトップ アプリケーション - Android](https://docs.microsoft.com/en-us/azure/active-directory/develop/guidedsetups/active-directory-android)|[Microsoft Authentication Library (MSAL)](https://javadoc.io/doc/com.microsoft.identity.client/msal)|
-|[デスクトップ アプリケーション - .Net](https://docs.microsoft.com/en-us/azure/active-directory/develop/guidedsetups/active-directory-windesktop)|[Microsoft Authentication Library (MSAL)](https://www.nuget.org/packages/Microsoft.Identity.Client)|
-|[Web アプリケーション - JavaScript SPA](https://docs.microsoft.com/en-us/azure/active-directory/develop/guidedsetups/active-directory-javascriptspa)|[JavaScript 用 Microsoft Authentication Library プレビュー](https://github.com/AzureAD/microsoft-authentication-library-for-js)|
-|[Web アプリケーション - .NET Web Server](https://docs.microsoft.com/en-us/azure/active-directory/develop/guidedsetups/active-directory-aspnetwebapp)|OpenIdConnection、Cookies、SystemWeb|
-|[Web アプリケーション - NodeJS Web アプリケーション](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-v2-devquickstarts-node-web)||
+|[デスクトップ アプリケーション - iOS](https://docs.microsoft.com/ja-JP/azure/active-directory/develop/guidedsetups/active-directory-ios)|[MSAL.framework: iOS 用 Microsoft Authentication Library プレビュー](https://github.com/AzureAD/microsoft-authentication-library-for-objc)|
+|[デスクトップ アプリケーション - Android](https://docs.microsoft.com/ja-JP/azure/active-directory/develop/guidedsetups/active-directory-android)|[Microsoft Authentication Library (MSAL)](https://javadoc.io/doc/com.microsoft.identity.client/msal)|
+|[デスクトップ アプリケーション - .Net](https://docs.microsoft.com/ja-JP/azure/active-directory/develop/guidedsetups/active-directory-windesktop)|[Microsoft Authentication Library (MSAL)](https://www.nuget.org/packages/Microsoft.Identity.Client)|
+|[Web アプリケーション - JavaScript SPA](https://docs.microsoft.com/ja-JP/azure/active-directory/develop/guidedsetups/active-directory-javascriptspa)|[JavaScript 用 Microsoft Authentication Library プレビュー](https://github.com/AzureAD/microsoft-authentication-library-for-js)|
+|[Web アプリケーション - .NET Web Server](https://docs.microsoft.com/ja-JP/azure/active-directory/develop/guidedsetups/active-directory-aspnetwebapp)|OpenIdConnection、Cookies、SystemWeb|
+|[Web アプリケーション - NodeJS Web アプリケーション](https://docs.microsoft.com/ja-JP/azure/active-directory/develop/active-directory-v2-devquickstarts-node-web)||
 
 既存のライブラリを使用しないアプリケーションの場合は、「[ユーザーの代わりにアクセスを取得](auth-v2-user.md)」を参照してください。
 
 1. Azure AD からコードを取得します。 呼び出すクエリには、アプリケーション ID、リダイレクト URI、および**必要なアクセス許可**のパラメーターが指定されています。
 2. コードを使用してアクセス トークンを取得します。
 
-OpenId Connect ライブラリを使用する場合は、「[Azure AD および OpenID Connect を使用して認証する](https://docs.microsoft.com/en-us/azure/architecture/multitenant-identity/authenticate)」を参照し、`app.UseOpenIdConnectAuthentication()` を呼び出してください。
+OpenId Connect ライブラリを使用する場合は、「[Azure AD および OpenID Connect を使用して認証する](https://docs.microsoft.com/ja-JP/azure/architecture/multitenant-identity/authenticate)」を参照し、`app.UseOpenIdConnectAuthentication()` を呼び出してください。
 
 >**注:** ユーザーにより委任された認証トークンを要求する場合、ライブラリのパラメーターは **Requested Scopes** です。 このパラメーターには、登録アプリケーションに必要なスコープではなく、User.Read を使用してください。 **Requested Scopes** パラメーターは、返される認証トークンに含まれるアクセス許可には影響しません。 これらのアクセス許可は、テナント管理者がアプリケーションに付与したアクセス許可によって決定します。
 

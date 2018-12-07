@@ -1,12 +1,12 @@
 ---
 title: GovernanceRoleAssignmentRequests を更新します。
 description: 管理者が意思決定を更新するを有効にする (`AdminApproved`または`AdminDenied`) の状態にある governanceRoleAssignmentRequests の`PendingAdminDecision`。
-ms.openlocfilehash: 0f52b810b861e18a679ae8aea4ffdf7fd2d67abd
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.openlocfilehash: bd924acd8ddd3a79ad1fb97ac5f9bdc9baba17dd
+ms.sourcegitcommit: 82f9d0d10388572a3073b2dde8ca0a7b409135b8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27073958"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "27191152"
 ---
 # <a name="update-governanceroleassignmentrequests"></a>GovernanceRoleAssignmentRequests を更新します。
 
@@ -17,13 +17,13 @@ ms.locfileid: "27073958"
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
 
+>**注:** この API では、依頼者の少なくとも 1 つある必要があります`Active`管理者の役割の割り当て (`owner`または`user access administrator`) [governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md)が属しているリソースにします。 
+
 |アクセス許可の種類      | Permissions              |
 |:--------------------|:---------------------------------------------------------|
 |委任 (職場または学校のアカウント) | PrivilegedAccess.ReadWrite.AzureResources  |
 |委任 (個人用 Microsoft アカウント) | サポートされていません。    |
 |アプリケーション | PrivilegedAccess.ReadWrite.AzureResources |
-
-だけでなく、アクセス許可のスコープは、この API は、リクエスターが 1 つ以上を必要があります`Active`管理者の役割の割り当て (`owner`または`user access administrator`)、 [governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md)が属するリソースにします。 
 
 ## <a name="http-request"></a>HTTP 要求
 <!-- { "blockType": "ignored" } -->
@@ -31,13 +31,14 @@ ms.locfileid: "27073958"
 POST /privilegedAccess/azureResources/roleAssignmentRequests/{id}/updateRequest   
 ```
 
-### <a name="request-headers"></a>要求ヘッダー
+## <a name="request-headers"></a>要求ヘッダー
 | 名前           | 説明|
 |:---------------|:----------|
 | Authorization  | Bearer {code}|
 | Content-type  | application/json|
 
-### <a name="request-body"></a>要求本文
+## <a name="request-body"></a>要求本文
+
 |パラメーター      |型                   |必須 |説明|
 |:-------------|:----------------------|:--------|:----------|
 |理由        |String                 |✓        |彼の意思決定の管理者によって提供されている理由です。|
@@ -47,9 +48,9 @@ POST /privilegedAccess/azureResources/roleAssignmentRequests/{id}/updateRequest
 ### <a name="response"></a>応答
 このメソッドは、要求の状態にあるにのみ適用できます`PendingAdminDecision`。
 
-成功した場合、このメソッドは `204, No Content` 応答コードを返します。応答本文には何も返されません。
+成功した場合、このメソッドは `204 No Content` 応答コードを返します。応答本文には何も返されません。
 
-### <a name="example"></a>例
+## <a name="example"></a>例
 ##### <a name="request"></a>要求
 <!-- {
   "blockType": "request",

@@ -1,6 +1,6 @@
 ---
 title: フォルダー内のメッセージへの増分の変更を取得する
-description: デルタのクエリは、追加、削除、または一連を使用して、フォルダー内のメッセージへの更新のクエリを実行できます。
+description: デルタ クエリでは、一連のデルタ関数呼び出しを使用して、フォルダー内のメッセージへの追加、削除、または更新に対してクエリを実行できます。
 ms.openlocfilehash: bae652cc8382ae1b966a24fc4af58f720a2f0c9f
 ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
 ms.translationtype: MT

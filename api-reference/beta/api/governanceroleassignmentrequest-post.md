@@ -1,12 +1,12 @@
 ---
 title: GovernanceRoleAssignmentRequest を作成します。
 description: 役割の割り当てで必要な操作を表すロールの割り当て要求を作成します。 次の表に、操作をします。
-ms.openlocfilehash: b0d9edab1182d4a6fa620cfb953df1cb8af20c66
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.openlocfilehash: 775cc8e22e7d273bfe387e5be2cc183d3d919a38
+ms.sourcegitcommit: 82f9d0d10388572a3073b2dde8ca0a7b409135b8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27069350"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "27191173"
 ---
 # <a name="create-governanceroleassignmentrequest"></a>GovernanceRoleAssignmentRequest を作成します。
 
@@ -14,7 +14,7 @@ ms.locfileid: "27069350"
 
 役割の割り当てで必要な操作を表すロールの割り当て要求を作成します。 次の表に、操作をします。
 
-| 操作       | 型 | 
+| 操作       | Type | 
 |:---------------|:----------|
 | 役割の割り当てを割り当てる| AdminAdd |
 | 対象のロール割り当てを有効化します。| UserAdd | 
@@ -42,19 +42,16 @@ ms.locfileid: "27069350"
 POST /privilegedAccess/azureResources/roleAssignmentRequests
 ```
 
-## <a name="optional-query-parameters"></a>オプションのクエリ パラメーター
-このメソッドは[OData クエリ パラメーター](/graph/query-parameters)はサポート**されません**。
-
-### <a name="request-headers"></a>要求ヘッダー
+## <a name="request-headers"></a>要求ヘッダー
 | 名前       | 説明|
 |:---------------|:----------|
 | Authorization  | Bearer {code}|
 | Content-type  | application/json|
 
-### <a name="request-body"></a>要求本文
+## <a name="request-body"></a>要求本文
 要求の本文には、 [governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md)オブジェクトの JSON 表現を指定します。 
 
-| プロパティ     | 型    |必須|  説明|
+| プロパティ     | 種類    |必須|  説明|
 |:---------------|:--------|:----------|:----------|
 |resourceId|String|はい|リソースの ID。|
 |roleDefinitionId|String|はい|役割の定義の ID です。|
@@ -64,11 +61,11 @@ POST /privilegedAccess/azureResources/roleAssignmentRequests
 |理由|String| |理由は、監査の役割の割り当て要求に指定して目的を確認する必要があります。|
 |スケジュール|[governanceSchedule](../resources/governanceschedule.md)| | 役割の割り当て要求のスケジュールです。 要求の種類の`UserAdd`、 `AdminAdd`、`AdminUpdate`と`AdminExtend`、これは必須です。|
 
-### <a name="response"></a>応答
-かどうかは成功すると、このメソッドが返されます、`201, Created`応答コードおよび応答の本文に[governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md)オブジェクトです。
+## <a name="response"></a>応答
+かどうかは成功すると、このメソッドが返されます、`201 Created`応答コードおよび応答の本文に[governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md)オブジェクトです。
 
-## <a name="error-codes"></a>エラー コード
-この API は、HTTP コード、次の表に記載されているエラー コードの他の標準に準拠します。
+### <a name="error-codes"></a>エラー コード
+この API では、標準の HTTP エラー コードを返します。 さらに、また次の表に記載されているエラー コードを返します。
 
 |エラー コード     | エラー メッセージ              | 詳細 |
 |:--------------------| :---------------------|:--------------------|
@@ -80,12 +77,15 @@ POST /privilegedAccess/azureResources/roleAssignmentRequests
 | 400 BadRequest | RoleAssignmentDoesNotExist    | 更新または拡張するように要求した[governanceRoleAssignment](../resources/governanceroleassignment.md)は、システムに存在しません。
 | 400 BadRequest | RoleAssignmentRequestPolicyValidationFailed | [GovernanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md)は、社内ポリシーを満たしていないと、作成することはできません。
 
-## <a name="example-1"></a>例 1
+## <a name="examples"></a>例
+次の例では、この API を使用する方法を示しています。
+
+### <a name="example-1"></a>例 1
 この例では、管理者は、課金情報の閲覧者の役割にユーザーの nawu@fimdev.net を割り当てます。
 
- >**注:** 次の使用例以外にも、アクセス許可が少なくとも 1 つのリクエスターが必要です`Active`管理者の役割の割り当て (`owner`または`user access administrator`)、リソースにします。 
+ >**注:** だけでなく、アクセス許可が、次の使用例が必要です、依頼者の少なくとも 1 つ`Active`管理者の役割の割り当て (`owner`または`user access administrator`)、リソースにします。 
 
-| プロパティ     | 型    |必須|  値 |
+| プロパティ     | 種類    |必須|  値 |
 |:---------------|:--------|:----------|:----------|
 |resourceId|String|はい|\<とります\>|
 |roleDefinitionId|String|はい|\<roleDefinitionId\>|
@@ -137,8 +137,6 @@ Content-length: 226
     "type": "AdminAdd",
     "assignmentState": "Eligible",
     "requestedDateTime": "0001-01-01T00:00:00Z",
-    "roleAssignmentStartDateTime": "2018-05-12T23:38:34.6007266Z",
-    "roleAssignmentEndDateTime": "2018-11-08T23:37:43.356Z",
     "reason": "Evaluate Only",
     "status": {
         "status": "InProgress",
@@ -167,10 +165,10 @@ Content-length: 226
 }
 ```
 
-## <a name="example-2"></a>例 2
+### <a name="example-2"></a>例 2
 この例では、ユーザー nawu@fimdev.net は、対象となる請求のリーダーの役割をアクティブにします。
 
-| プロパティ     | 型    |必須|  値 |
+| プロパティ     | 種類    |必須|  値 |
 |:---------------|:--------|:----------|:----------|
 |resourceId|String|はい|\<とります\>|
 |roleDefinitionId|String|はい|\<roleDefinitionId\>|
@@ -222,8 +220,6 @@ Content-type: application/json
     "type": "UserAdd",
     "assignmentState": "Active",
     "requestedDateTime": "0001-01-01T00:00:00Z",
-    "roleAssignmentStartDateTime": "2018-05-12T23:29:29.5123911Z",
-    "roleAssignmentEndDateTime": "2018-05-13T08:28:43.537Z",
     "reason": "Activate the owner role",
     "status": {
         "status": "InProgress",
@@ -264,10 +260,10 @@ Content-type: application/json
 }
 ```
 
-## <a name="example-3"></a>例 3
+### <a name="example-3"></a>例 3
 この例では、ユーザー nawu@fimdev.net には、作業中の課金情報の閲覧者の役割が無効になります。
 
-| プロパティ     | 型    |必須|  値 |
+| プロパティ     | 種類    |必須|  値 |
 |:---------------|:--------|:----------|:----------|
 |resourceId|String|はい|\<とります\>|
 |roleDefinitionId|String|はい|\<roleDefinitionId\>|
@@ -315,8 +311,6 @@ Content-length: 226
     "type": "UserRemove",
     "assignmentState": "Active",
     "requestedDateTime": "0001-01-01T00:00:00Z",
-    "roleAssignmentStartDateTime": null,
-    "roleAssignmentEndDateTime": null,
     "reason": "Evaluate only",
     "schedule": null,
     "status": {
@@ -330,9 +324,9 @@ Content-length: 226
 ### <a name="example-4"></a>例 4
 この例では、管理者は、課金情報の閲覧者の役割からユーザー nawu@fimdev.net を削除します。
 
- >**注:** 次の使用例以外にも、アクセス許可のスコープに少なくとも 1 つのリクエスターが必要です`Active`管理者の役割の割り当て (`owner`または`user access administrator`)、リソースにします。
+ >**注:** だけでなく、アクセス許可が、次の使用例が必要です、依頼者の少なくとも 1 つ`Active`管理者の役割の割り当て (`owner`または`user access administrator`)、リソースにします。
  
-| プロパティ     | 型    |必須|  値 |
+| プロパティ     | 種類    |必須|  値 |
 |:---------------|:--------|:----------|:----------|
 |resourceId|String|はい|\<とります\>|
 |roleDefinitionId|String|はい|\<roleDefinitionId\>|
@@ -379,8 +373,6 @@ Content-length: 226
   "type":"AdminRemove",
   "assignmentState":"Eligible",
   "requestedDateTime":"0001-01-01T00:00:00Z",
-  "roleAssignmentStartDateTime":null,
-  "roleAssignmentEndDateTime":null,
   "reason":null,
   "status":{
     "status":"Closed",
@@ -394,8 +386,9 @@ Content-length: 226
 ### <a name="example-5"></a>例 5
 この例では、管理者は、所有者をユーザー nawu@fimdev.net の役割の割り当てを更新します。
 
- >**注:** 次の使用例以外にも、アクセス許可のスコープに少なくとも 1 つのリクエスターが必要です`Active`管理者の役割の割り当て (`owner`または`user access administrator`)、リソースにします。 
-| プロパティ     | 型    |必須|  値 |
+ >**注:** だけでなく、アクセス許可が、次の使用例が必要です、依頼者の少なくとも 1 つ`Active`管理者の役割の割り当て (`owner`または`user access administrator`)、リソースにします。 
+
+| プロパティ     | 種類    |必須|  値 |
 |:---------------|:--------|:----------|:----------|
 |resourceId|String|はい|\<とります\>|
 |roleDefinitionId|String|はい|\<roleDefinitionId\>|
@@ -447,8 +440,6 @@ Content-length: 226
   "type":"AdminUpdate",
   "assignmentState":"Eligible",
   "requestedDateTime":"0001-01-01T00:00:00Z",
-  "roleAssignmentStartDateTime":"2018-05-12T23:50:03.4755896Z",
-  "roleAssignmentEndDateTime":"2018-06-05T05:42:31Z",
   "reason":null,
   "status":{
     "status":"InProgress",
@@ -475,9 +466,9 @@ Content-length: 226
 ### <a name="example-6"></a>例 6
 次の使用例は、API の管理サービスの共同作成者に ANUJCUSER のユーザーの有効期限切れのロールの割り当てを拡張します。
 
- >**注:** 次の使用例以外にも、アクセス許可のスコープに少なくとも 1 つのリクエスターが必要です`Active`管理者の役割の割り当て (`owner`または`user access administrator`)、リソースにします。
+ >**注:** Additon アクセス許可を次の使用例が必要です、依頼者が少なくとも 1 つであること`Active`管理者の役割の割り当て (`owner`または`user access administrator`)、リソースにします。
  
-| プロパティ     | 型    |必須|  値 |
+| プロパティ     | 種類    |必須|  値 |
 |:---------------|:--------|:----------|:----------|
 |resourceId|String|はい|\<とります\>|
 |roleDefinitionId|String|はい|\<roleDefinitionId\>|
@@ -530,8 +521,6 @@ Content-length: 226
   "type":"AdminExtend",
   "assignmentState":"Eligible",
   "requestedDateTime":"0001-01-01T00:00:00Z",
-  "roleAssignmentStartDateTime":"2018-05-12T23:54:09.7221332Z",
-  "roleAssignmentEndDateTime":"2018-08-10T23:53:55.327Z",
   "reason":"extend role assignment",
   "status":{
     "status":"InProgress",

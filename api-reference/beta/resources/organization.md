@@ -1,12 +1,12 @@
 ---
 title: 組織リソースの種類
 description: 'Azure Active Directory のテナント型を表します。 '
-ms.openlocfilehash: 0dc7b55053ba70272c4e639dba4b62160f58f435
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.openlocfilehash: 053656eb042ca04f2d487d47ee62624875fa4e17
+ms.sourcegitcommit: 82f9d0d10388572a3073b2dde8ca0a7b409135b8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27069144"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "27191145"
 ---
 # <a name="organization-resource-type"></a>組織リソースの種類
 
@@ -18,7 +18,7 @@ Azure Active Directory のテナント型を表します。
 
 のみ、読み取りおよび更新操作がサポートされてのテナントです。作成および削除はサポートされていません。 [directoryObject](directoryobject.md) から継承します。
 
-## <a name="methods"></a>メソッド
+## <a name="methods"></a>Methods
 
 | メソッド       | 戻り値の型  |説明|
 |:---------------|:--------|:----------|
@@ -31,18 +31,19 @@ Azure Active Directory のテナント型を表します。
 |[スキーマ拡張機能の値を追加する](/graph/extensibility-schema-groups) || スキーマ拡張機能の定義を作成し、それを使用してカスタマイズされた種類のデータをリソースに追加します。|
 
 ## <a name="properties"></a>プロパティ
-| プロパティ     | 型   |説明|
+| プロパティ     | 種類   |説明|
 |:---------------|:--------|:----------|
 |assignedPlans|[assignedPlan](assignedplan.md) コレクション|テナントに関連付けられているサービス プランのコレクション。null 許容ではありません。            |
 |city|String| 組織の住所の市区町村名 |
 |companyLastDirSyncTime|DateTimeOffset|テナントがオンプレミスのディレクトリと最後に同期した日時。Timestamp 型は、ISO 8601 形式を使用して日付と時刻の情報を表し、必ず UTC 時間です。たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、次のようになります。`'2014-01-01T00:00:00Z'`|
 |country|String| 組織の住所の国/地域名 |
 |countryLetterCode|String| 組織の国/地域の略称 |
+|createdDateTime|DateTimeOffset| 組織が作成された日時のタイムスタンプです。 値は変更できず、組織が作成されたときに自動的に設定されます。 Timestamp 型は、ISO 8601 形式を使用して日付と時刻の情報を表し、常に UTC 時間です。 たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、次のようになります。`'2014-01-01T00:00:00Z'` 読み取り専用です。 |
 |deletionTimestamp|DateTimeOffset|Timestamp 型は、ISO 8601 形式を使用して日付と時刻の情報を表し、必ず UTC 時間です。たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、次のようになります。`'2014-01-01T00:00:00Z'`|
 |dirSyncEnabled|Boolean|このオブジェクトがオンプレミスのディレクトリから同期される場合は **true**。このオブジェクトが最初にオンプレミスのディレクトリから同期されていて、今後は同期されない場合は **false**。このオブジェクトがオンプレミスのディレクトリから一度も同期されたことがない場合は **null** (既定値)。|
 |displayName|String|テナントの表示名。|
 |id|String|テナントの一意識別子。[directoryObject](directoryobject.md) から継承されます。キー。null 許容ではありません。読み取り専用です。|
-|isMultipleDataLocationsForServicesEnabled|ブール値|**true の**場合組織は、複数地域で有効になっています。複数地域が有効な場合は**false**の組織ではありません。**null**(既定値)。 読み取り専用。 詳細については、[オンラインの複数の地域 OneDrive](https://docs.microsoft.com/sharepoint/dev/solution-guidance/multigeo-introduction)を参照してください。|
+|isMultipleDataLocationsForServicesEnabled|ブール型|**true の**場合組織は、複数地域で有効になっています。複数地域が有効な場合は**false**の組織ではありません。**null**(既定値)。 取得のみ可能な値です。 詳細については、[オンラインの複数の地域 OneDrive](https://docs.microsoft.com/sharepoint/dev/solution-guidance/multigeo-introduction)を参照してください。|
 |marketingNotificationEmails|String コレクション| null 許容ではありません。            |
 |objectType|String|オブジェクトの種類を識別する文字列です。テナントの場合、値は常に「会社」です。 |
 |postalCode|String| 組織の住所の郵便番号 |

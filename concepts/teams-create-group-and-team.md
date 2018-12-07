@@ -1,6 +1,6 @@
 ---
-title: マイクロソフトのチームのチームのグループを作成
-description: 'チームを含むグループを作成するには、2 つの手順が含まれます。 '
+title: Microsoft Teams チームを含めたグループの作成
+description: 'チームを含めてグループを作成するには、2 つの手順が必要です。 '
 ms.openlocfilehash: 530b3625a1aa1d020bff841196e3b83a2eb99a4e
 ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
 ms.translationtype: MT
@@ -8,20 +8,20 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 11/29/2018
 ms.locfileid: "27092415"
 ---
-# <a name="creating-a-group-with-a-microsoft-teams-team"></a>マイクロソフトのチームのチームのグループを作成
+# <a name="creating-a-group-with-a-microsoft-teams-team"></a>Microsoft Teams チームを含めたグループの作成
 
-[チーム](/graph/api/resources/team?view=graph-rest-beta)を含む[グループ](/graph/api/resources/group?view=graph-rest-beta)を作成するには、2 つの手順が含まれます。 
+[チーム](/graph/api/resources/team?view=graph-rest-beta)を含めて[グループ](/graph/api/resources/group?view=graph-rest-beta)を作成するには、2 つの手順が必要です。 
 
-- 右のプロパティを持つ[グループの作成](/graph/api/group-post-groups?view=graph-rest-beta)をします。
+- 適切なプロパティを使用して[グループを作成します](/graph/api/group-post-groups?view=graph-rest-beta)。
 - グループに[チームを追加](/graph/api/team-put-teams?view=graph-rest-beta)します。
 
-## <a name="create-a-group"></a>グループを作成します。
+## <a name="create-a-group"></a>グループを作成する
 
-チームが含まれて、する必要があります、次のプロパティ値を設定する例を次に示すように。
+チームを含めるには、次の例に示すプロパティの値を設定する必要があります。
 
-- **groupTypes** = {「統合」。 
+- **groupTypes** = { "Unified" } 
 - **mailEnabled** = true
-- **セキュリティの有効化**= false
+- **securityEnabled** = false
 
 ```http
 POST /groups
@@ -46,9 +46,9 @@ POST /groups
 }
 ```
 
-応答の例を次に示します。 
+次の例に、応答を示します。 
 
->**注:** 応答オブジェクトが示すようには、読みやすさの短縮される可能性があります。 実際の呼び出しではすべてのプロパティが返されます。
+>**注:** ここに示す応答オブジェクトは、読みやすさのために短縮されている場合があります。 実際の呼び出しではすべてのプロパティが返されます。
 
 ```http
 HTTP/1.1 200 OK
@@ -60,18 +60,18 @@ Content-length: xxx
 }
 ```
 
-## <a name="add-a-team-to-the-group"></a>チームをグループに追加します。
+## <a name="add-a-team-to-the-group"></a>グループにチームを追加する
 
-ように、グループ、チームを追加します。
+次に示すように、グループにチームを追加します。
 
 ```http
 PUT /groups/{id}/team
 { }
 ```
 
-次の例は応答を示しています。 
+次の例に、応答を示します。 
 
->**注:** 応答オブジェクトが示すようには、読みやすさの短縮される可能性があります。 実際の呼び出しではすべてのプロパティが返されます。
+>**注:** ここに示す応答オブジェクトは、読みやすさのために短縮されている場合があります。 実際の呼び出しではすべてのプロパティが返されます。
 
 ```http
 HTTP/1.1 200 OK
@@ -89,4 +89,4 @@ Content-length: xxx
 }
 ```
 
-作成されたチームには、グループと同じ ID があります。
+作成したチームには、グループと同じ ID が割り当てられます。

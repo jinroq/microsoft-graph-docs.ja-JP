@@ -1,6 +1,6 @@
 ---
 title: Outlook メール API の概要
-description: Outlook は、Office 365 のメッセージング通信ハブです。 連絡先の管理、会議のスケジュール設定、組織内のユーザーに関する情報を検索することもできます。
+description: Outlook は、Office 365 のメッセージング通信ハブです。 連絡先の管理、会議のスケジュール管理、組織内のユーザーに関する情報の検索にも使用できます。
 ms.openlocfilehash: a4ae3c00b578cf2f3bce7a23b73ec47dadc81cf8
 ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
 ms.translationtype: MT
@@ -36,26 +36,26 @@ Outlook を統合するなら、多くのユーザーの好む豊かなエクス
 
 Microsoft Graph を利用することにより、アプリ ユーザーに対してコンテキスト データを提案することができます:
 
-- [優先受信トレイ](/graph/api/resources/manage-focused-inbox?view=graph-rest-1.0)および [@ メンション (プレビュー)](/graph/api/message-get?view=graph-rest-beta#request-2) を統合し、アプリ ユーザーが気になっているものを最初に読み、返信できるようにする。
+- [優先受信トレイ](/graph/api/resources/manage-focused-inbox?view=graph-rest-1.0)および [@-メンション (プレビュー)](/graph/api/message-get?view=graph-rest-beta#request-2) を統合し、アプリ ユーザーが気になっているものを最初に読み、返信できるようにする。
 
-- [メール ヒント](/graph/api/resources/mailtips?view=graph-rest-1.0)を確認しても、受信者の有効なステータス情報を取得するメッセージを作成するときに (自動応答を送信する受信者など、完全なメールボックスを持つまたは)。 メール ヒントは、アプリに対して特定の条件を警告することにより、フォローアップのアクションの効率を上げることができます。
+- メッセージ作成中に[メール ヒント](/graph/api/resources/mailtips?view=graph-rest-1.0)をチェックして、受信者に関する有用な情報を得る (受信者が自動返信を送信中なのか、あるいはメールボックスがいっぱいなのかなど)。 メール ヒントは、アプリに対して特定の条件を警告することにより、フォローアップのアクションの効率を上げることができます。
 
 - [連絡先 API](people-example.md) の利用により、アプリの中で連絡先を選択するなど、対話式のコントロールが提供されます。 連絡先 API では、ユーザーの通信および共同作業のパターン、そしてビジネス上の付き合いに基づいて、ユーザーに最も関係の深い連絡先を提案することができます。
 
-- アプリ ユーザーに対して、メッセージ作成中に添付ファイルに関連して、気の利いたファイル選択機能を提供したり、最近利用したファイルを提案したりする。 [洞察 (プレビュー)](/graph/api/resources/insights?view=graph-rest-beta)の使用には、以前に表示または編集は、ユーザー、またはユーザーと共有、ユーザーの周囲の傾向があるファイルを提案する分析機能が高度な。
+- アプリ ユーザーに対して、メッセージ作成中に添付ファイルに関連して、気の利いたファイル選択機能を提供したり、最近利用したファイルを提案したりする。 [Insights (プレビュー)](/graph/api/resources/insights?view=graph-rest-beta) では、高度な分析機能を使用することにより、ユーザーの周辺で頻繁に使用されるファイル、最近ユーザーが表示または編集したファイル、あるいはそのユーザーと共有したファイルについての提案がなされます。
 
 
 ### <a name="store-app-data-in-a-resource-or-resource-instance"></a>アプリ データをリソースまたはリソース インスタンスに保存する
 
-アプリでは、データを外部データ ストアに保存するために、データの管理とアクセスのためのオーバーヘッドが発生することが少なくありません。 Graph では、単にインターネット メッセージのヘッダーとしてアプリケーション データを追加できます。 時[を作成する](/graph/api/user-post-messages?view=graph-rest-1.0#request-2)新しいメッセージ[を送信する](/graph/api/user-sendmail?view=graph-rest-1.0#request-2)、またはメッセージに返信します。
+アプリでは、データを外部データ ストアに保存するために、データの管理とアクセスのためのオーバーヘッドが発生することが少なくありません。 Microsoft Graph では、新しいメッセージを[作成](/graph/api/user-post-messages?view=graph-rest-1.0#request-2)または[送信](/graph/api/user-sendmail?view=graph-rest-1.0#request-2)するとき、あるいはメッセージに返信するときに、アプリのデータをインターネット メッセージ ヘッダーとして追加するだけで対処できます。
 
-追加し、後でカスタム データを更新する必要がある場合は[個々 のリソース インスタンス内のデータを格納](extensibility-overview.md#open-extensions)することができます。 必要に応じて、別の方法として、スキーマを拡張する、カスタム プロパティを追加して Microsoft Graph のリソースの型指定されたデータを格納できます。 そのような[スキーマ拡張](extensibility-overview.md#schema-extensions)を、検出可能また共有可能なものにすることができます。
+カスタム データを追加して、そのデータを後で更新する必要がある場合、[カスタム データを個別のリソース インスタンスに格納](extensibility-overview.md#open-extensions)できます。 必要に応じて、スキーマを拡張してカスタム プロパティを追加し、型指定されたデータを Microsoft Graph のリソースに格納するという方法も使えます。 そのような[スキーマ拡張](extensibility-overview.md#schema-extensions)を、検出可能また共有可能なものにすることができます。
 
 ## <a name="api-reference"></a>API リファレンス
-このサービスの API リファレンスを検索してください。
+このサービスの API リファレンスをお探しですか?
 
-- [Graph v1.0 では、outlook メール API](/graph/api/resources/mail-api-overview?view=graph-rest-1.0)
-- [Graph のベータ版の outlook のメール API](/graph/api/resources/mail-api-overview?view=graph-rest-beta)
+- [Microsoft Graph v1.0 の Outlook メール API](/graph/api/resources/mail-api-overview?view=graph-rest-1.0)
+- [Microsoft Graph ベータ版の Outlook メール API](/graph/api/resources/mail-api-overview?view=graph-rest-beta)
 
 
 ## <a name="next-steps"></a>次の手順
@@ -65,8 +65,8 @@ Microsoft Graph を利用することにより、アプリ ユーザーに対し
 
   - [メッセージの作成と送信](outlook-create-send-messages.md)
   - [メッセージの整理方法](outlook-organize-messages.md)
-  - [共有メッセージを取得](outlook-share-messages-folders.md)する方法
-  - [Outlook リソースの不変の識別子を取得します。](outlook-immutable-id.md)
+  - [共有メッセージの取得方法](outlook-share-messages-folders.md)
+  - [Outlook リソースの不変識別子の取得](outlook-immutable-id.md)
 
 - Microsoft Graph v1.0 での[メール API の使用](/graph/api/resources/mail-api-overview?view=graph-rest-1.0) とその[用途](/graph/api/resources/mail-api-overview?view=graph-rest-1.0#common-use-cases)について調べる。
 

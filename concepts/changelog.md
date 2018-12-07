@@ -1,18 +1,39 @@
 ---
 title: Microsoft Graph の変更ログ
 description: この変更ログでは、Microsoft Graph と、v1.0 およびベータ版のエンドポイント Microsoft Graph API の変更内容について説明します。
-ms.openlocfilehash: b98389d40e6a64e31efed755558c25dbfc542002
-ms.sourcegitcommit: 4aebfaefc23e02a98b2fec35958cd2110020f15f
+ms.openlocfilehash: 6f42282844fd0dbed5c5df2ffdda86fd7eb559b5
+ms.sourcegitcommit: 82f9d0d10388572a3073b2dde8ca0a7b409135b8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/06/2018
-ms.locfileid: "27184561"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "27191215"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Microsoft Graph の変更ログ
 
 この変更ログでは、Microsoft Graph と、v1.0 およびベータ版のエンドポイント Microsoft Graph API の変更内容について説明します。
 
 Microsoft Graph API に関する既知の問題の詳細については、「[既知の問題](known-issues.md)」を参照してください。
+
+## <a name="december-2018"></a>12 月 2018
+
+### <a name="directory-apis"></a>ディレクトリ API
+
+| 変更の種類 | バージョン                                    | 説明                              |
+| :---------- | :----------------------------------------- | :--------------------------------------- |
+| 追加    | ベータ版 | 追加、 `createdDateTime` 、[組織](/graph/api/resources/organization?view=graph-rest-beta)のリソースのプロパティです。|
+| 追加 | v1.0 | メソッドを追加する`memberOf`[デバイス](/graph/api/resources/device?view=graph-rest-1.0)のダイレクト[メンバーシップ](/graph/api/device-list-memberOf?view=graph-rest-1.0)を取得します。 など入れ子になったメンバーシップのメンバーシップの一覧を取得するため、このメソッドが追加されました。|
+
+### <a name="privileged-identity-management-apis"></a>特権 ID 管理 API
+
+| **変更の種類** | **バージョン**   | **説明**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| 追加 | ベータ版 | プロパティを追加`registeredRoot` [governanceResource](/graph/api/resources/governanceresource?view=graph-rest-beta)エンティティにします。|
+| 変更 | ベータ版 | プロパティの名前を変更する`onboardDateTime` [governanceResource](/graph/api/resources/governanceresource?view=graph-rest-beta)エンティティの`registeredDateTime`。|
+| 追加 | ベータ版 | 追加した新しいアクション[リソースを登録](/graph/api/governanceresource-register?view=graph-rest-beta)します。|
+| 削除 | ベータ版 | 削除、 `isPermanent` [governanceRoleAssignment](/graph/api/resources/governanceroleassignment?view=graph-rest-beta)エンティティのプロパティです。|
+| 削除 | ベータ版 | 削除、 `roleAssignmentStartDateTime` [governanceRoleAssignmentRequest](/graph/api/resources/governanceroleassignmentrequest?view=graph-rest-beta)エンティティのプロパティです。|
+| 削除 | ベータ版 | 削除、 `roleAssignmentEndDateTime` [governanceRoleAssignmentRequest](/graph/api/resources/governanceroleassignmentrequest?view=graph-rest-beta)エンティティのプロパティです。|
+
 
 ## <a name="november-2018"></a>11 月 2018
 

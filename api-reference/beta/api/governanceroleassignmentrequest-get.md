@@ -1,12 +1,12 @@
 ---
 title: GovernanceRoleAssignmentRequest を取得します。
 description: 'GovernanceRoleAssignmentRequest を取得します。 '
-ms.openlocfilehash: 4dca14c081edc9cd3609bd4eab1c79a10953e433
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.openlocfilehash: aac41bd8443d6066a7866462624a072db57b35da
+ms.sourcegitcommit: 82f9d0d10388572a3073b2dde8ca0a7b409135b8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27071053"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "27191096"
 ---
 # <a name="get-governanceroleassignmentrequest"></a>GovernanceRoleAssignmentRequest を取得します。
 
@@ -46,7 +46,7 @@ GET /privilegedAccess/azureResources/roleAssignmentRequests/{id}
 ## <a name="response"></a>応答
 かどうかは成功すると、このメソッドが返されます、`200 OK`応答コードおよび応答の本文に[governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md)オブジェクトです。
 
-## <a name="example"></a>使用例
+## <a name="example"></a>例
 役割の割り当て要求を取得します。
 <!-- {
   "blockType": "request",
@@ -78,8 +78,6 @@ Content-length: 279
   "type":"AdminRemove",
   "assignmentState":"Eligible",
   "requestedDateTime":"2018-05-09T21:26:15.73-07:00",
-  "roleAssignmentStartDateTime":null,
-  "roleAssignmentEndDateTime":null,
   "reason":null,
   "status":{
     "status":"Closed",

@@ -1,12 +1,12 @@
 ---
 title: governanceResource リソースの種類
 description: 特権を持つユーザー情報管理 (PIM) で管理できるリソースを表します。 Azure のリソースでは、サブスクリプション、リソース グループ、およびなど、仮想マシン、SQL データベースなどのリソースとなります。
-ms.openlocfilehash: 9e47f1295f9498796d51414a0a97acbe51fe1aae
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.openlocfilehash: 6a048680c3b9bb614287e764d547a20bd09b5d25
+ms.sourcegitcommit: 82f9d0d10388572a3073b2dde8ca0a7b409135b8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27070755"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "27191131"
 ---
 # <a name="governanceresource-resource-type"></a>governanceResource リソースの種類
 
@@ -15,24 +15,26 @@ ms.locfileid: "27070755"
 特権を持つユーザー情報管理 (PIM) で管理できるリソースを表します。 Azure のリソースでは、サブスクリプション、リソース グループ、およびなど、仮想マシン、SQL データベースなどのリソースとなります。
 
 
-## <a name="methods"></a>メソッド
+## <a name="methods"></a>Methods
 
 | メソッド          | 戻り値の型 |説明|
 |:---------------|:--------|:----------|
 |[List](../api/governanceresource-list.md) | [governanceResource](../resources/governanceresource.md)コレクション|リクエスターへのアクセス権を持つリソースの一覧を表示します。|
 |[Get](../api/governanceresource-get.md) | [governanceResource](../resources/governanceresource.md) |Id で指定されたリソースのエンティティのプロパティと関係を参照してください。|
+|[登録](../api/governanceresource-register.md) | |アンマネージ Azure サブスクリプションまたは管理グループに PIM サービスを登録します。 |
 
 No `POST`、 `PUT`、 `PATCH`、`DELETE`でサポートされている`roleDefinitions`ここではエンティティのセットです。
 
 ## <a name="properties"></a>プロパティ
-| プロパティ          |型         |説明|
+| プロパティ          |種類         |説明|
 |:------------------|:----------|:----------|
 |id                 |String     |リソースの id です。 GUID 形式であります。|
-|externalId           |String   |外部データベースの元の id を表すリソースの外部の id です。 たとえば、サブスクリプション リソースの外部 id には、「サブスクリプション/c14ae696-5e0c-4e5d-88cc-bef6637737ac」ができます。 |
+|externalId           |String   |外部システムで、元の id を表すリソースの外部の id です。 たとえば、サブスクリプション リソースの外部 id には、「サブスクリプション/c14ae696-5e0c-4e5d-88cc-bef6637737ac」ができます。 |
 |type               |String     |必須。 リソースの種類。 たとえば、Azure のリソースの種類可能性があります「サブスクリプション」、「リソース グループ」、"Microsoft.Sql/server"など。|
 |displayName        |String     |リソースの表示名。|
 |status             |String     |特定のリソースの状態です。 たとえば、リソースをロックするかどうかを表すことが、(値: `Active` / `Locked`)。 メモ: このプロパティ拡張することが、将来的に複数のシナリオをサポートします。|
-|onboardDateTime|DateTimeOffset      |PIM で管理するためのリソースの開始時に日時を表します。|
+|registeredDateTime|DateTimeOffset      |PIM にリソースを登録するときの日時を表します。|
+|registeredRoot|String      |PIM に登録されているリソースのルート スコープの externalId です。 ルート スコープには、親、親の親、または先祖の高いリソースができます。|
 |roleAssignmentCount|Int32      |省略可能。 特定のリソースに対するロールの割り当ての数です。 プロパティを取得するには、明示的に使用をしてください。`$select=roleAssignmentCount`クエリにします。|
 |roleDefinitionCount|Int32      |省略可能。 指定されたリソースの役割の定義の数です。 プロパティを取得するには、明示的に使用をしてください。`$select=roleDefinitionCount`クエリにします。|
 |permissions|[governancePermission](../resources/governancepermission.md)      |省略可能。 リソースへのアクセスの要求元の状態を表します。プロパティを取得するには、明示的に使用をしてください。`$select=permissions`クエリにします。|
@@ -44,11 +46,11 @@ No `POST`、 `PUT`、 `PATCH`、`DELETE`でサポートされている`roleDefin
 |roleDefinitions |[governanceRoleDefinition](../resources/governanceroledefinition.md)コレクション|リソースのロール定義のコレクションです。|
 |roleAssignmentRequests |[governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md)コレクション|リソースの役割の割り当て要求のコレクションです。|
 |roleSettings |[governanceRoleSetting](../resources/governancerolesetting.md)コレクション|リソースのロールの設定のコレクションです。|
-|親          |[governanceResource](../resources/governanceresource.md)           |読み取り専用。 親リソースです。 `pimforazurerbac`シナリオでは、サブスクリプションに属しているリソースを表すことができます。|
+|親          |[governanceResource](../resources/governanceresource.md)           |取得のみ可能な値です。 親リソースです。 `pimforazurerbac`シナリオでは、サブスクリプションに属しているリソースを表すことができます。|
 
 ## <a name="json-representation"></a>JSON 表記
 
-以下は、リソースの JSON 表記です。
+リソースの JSON 表記を次に示します。
 
 <!-- {
   "blockType": "resource",
@@ -63,7 +65,9 @@ No `POST`、 `PUT`、 `PATCH`、`DELETE`でサポートされている`roleDefin
   "externalId": "String",
   "type": "String",
   "displayName": "String",
-  "status": "String"
+  "status": "String",
+  "registeredDateTime": "String (timestamp)",
+  "registeredRoot": "String"
 }
 
 ```

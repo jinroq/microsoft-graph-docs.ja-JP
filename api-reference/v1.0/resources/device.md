@@ -1,12 +1,12 @@
 ---
 title: デバイス リソース型
 description: 組織に登録されているデバイスを表します。 デバイスは、Device Registration Service を使用するか、Intune によってクラウドで作成されます。 これは、多要素認証の条件付きアクセス ポリシーで使用されます。 該当するデバイスの範囲は、デスクトップやノート PC から携帯電話やタブレットに及びます。 directoryObject から継承します。
-ms.openlocfilehash: a6d295be8d109a6a575eb6685087ed4fecb2c3a7
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.openlocfilehash: c32267001b309b0f701ed17d30b29f93f64f0936
+ms.sourcegitcommit: 82f9d0d10388572a3073b2dde8ca0a7b409135b8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27021097"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "27191166"
 ---
 # <a name="device-resource-type"></a>デバイス リソース型
 
@@ -23,6 +23,7 @@ ms.locfileid: "27021097"
 |[デバイスを一覧表示する](../api/device-list.md) | [device](device.md) コレクション| ディレクトリに登録されたデバイスの一覧を取得します。 |
 |[デバイスを更新する](../api/device-update.md) | [device](device.md) |デバイス オブジェクトのプロパティを更新します。 |
 |[デバイスを削除する](../api/device-delete.md) | なし |デバイス オブジェクトを削除します。 |
+|[memberOf を一覧表示する](../api/device-list-memberof.md) |[directoryObject](directoryobject.md) コレクション| デバイスが直接のメンバーであるグループを一覧表示します。 |
 |[registeredOwners を一覧表示する](../api/device-list-registeredowners.md) |[directoryObject](directoryobject.md) コレクション| registeredOwners ナビゲーション プロパティから、デバイスの登録済み所有者であるユーザーを取得します。|
 |[registeredUsers を一覧表示する](../api/device-list-registeredusers.md) |[directoryObject](directoryobject.md) コレクション| registeredUsers ナビゲーション プロパティから、デバイスの登録済みユーザーを取得します。|
 |**オープン拡張機能**| | |
@@ -32,7 +33,7 @@ ms.locfileid: "27021097"
 |[スキーマ拡張機能の値を追加する](/graph/extensibility-schema-groups) || スキーマ拡張機能の定義を作成し、それを使用してカスタマイズされた種類のデータをリソースに追加します。|
 
 ## <a name="properties"></a>プロパティ
-| プロパティ     | 型   |説明|
+| プロパティ     | 種類   |説明|
 |:---------------|:--------|:----------|
 |accountEnabled|ブール値| アカウントが有効な場合は **true**。それ以外の場合は **false**。必須。|
 |alternativeSecurityIds|alternativeSecurityId コレクション| 内部使用専用です。 null 許容ではありません。 |
@@ -55,6 +56,7 @@ ms.locfileid: "27021097"
 | リレーションシップ | 型   |説明|
 |:---------------|:--------|:----------|
 |extensions|[extension](extension.md) コレクション|デバイスに対して定義されているオープン拡張機能のコレクション。読み取り専用です。Null 許容型。|
+|memberOf|[directoryObject](directoryobject.md) コレクション|このグループがメンバーとして含まれているグループ。HTTP メソッド:GET (すべてのグループでサポートされます)。読み取り専用です。Null 許容型。|
 |registeredOwners|[directoryObject](directoryobject.md) コレクション|デバイスがクラウドに参加済みか、または個人用デバイスが登録済みのユーザー。 登録済み所有者は、登録時に設定されます。 現在、所有者は 1 人しかいることができません。 読み取り専用です。 Null 許容型。 |
 |registeredUsers|[directoryObject](directoryobject.md) コレクション|デバイスの登録済みユーザーのコレクション。 クラウドに参加済みのデバイスと登録済みの個人用デバイスの場合、登録済みのユーザーは、登録時に登録済み所有者と同じ値に設定されます。 読み取り専用です。 Null 許容型。|
 

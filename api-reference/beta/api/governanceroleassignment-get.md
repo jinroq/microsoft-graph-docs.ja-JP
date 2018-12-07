@@ -1,12 +1,12 @@
 ---
 title: GovernanceRoleAssignment を取得します。
 description: プロパティと、governanceRoleAssignment の関係を取得します。
-ms.openlocfilehash: fd35b9ba8083f49044115b914339e1069ccce896
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.openlocfilehash: 622fb890422ed0a4cf00542fede5ebaf662e5e71
+ms.sourcegitcommit: 82f9d0d10388572a3073b2dde8ca0a7b409135b8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27069571"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "27191075"
 ---
 # <a name="get-governanceroleassignment"></a>GovernanceRoleAssignment を取得します。
 
@@ -49,7 +49,7 @@ GET /privilegedAccess/azureResources/roleAssignments/{id}?$filter=subjectId+eq+'
 このメソッドには、要求本文を指定しません。
 ## <a name="response"></a>応答
 かどうかは成功すると、このメソッドが返されます、 `200 OK` 、応答の本体で応答コードと[governanceRoleAssignment](../resources/governanceroleassignment.md)のオブジェクトです。
-## <a name="example"></a>使用例
+## <a name="example"></a>例
 <!-- {
   "blockType": "request",
   "name": "get_governanceroleassignment"
@@ -78,7 +78,6 @@ Content-length: 182
     "subjectId": "74487eb5-1630-4fa8-9581-0bb076ea5de3",
     "linkedEligibleRoleAssignmentId": null,
     "externalId": null,
-    "isPermanent": false,
     "startDateTime": "2018-01-22T23:47:19.687Z",
     "endDateTime": "2018-07-21T23:47:02.887Z",
     "memberType": "Direct",
