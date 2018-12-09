@@ -1,12 +1,12 @@
 ---
 title: チャネル リソースの種類
 description: 'チャネルは、チーム内での chatMessages のコレクションです。 '
-ms.openlocfilehash: 90a2c6641a79829e340f2487d7f0381998d2a205
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.openlocfilehash: e69c0e7cdef347c59006b1dcce192e7949c2f07e
+ms.sourcegitcommit: 12c6e82f1417022540e534ebadbd0e8d7fb5abde
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27073624"
+ms.lasthandoff: 12/08/2018
+ms.locfileid: "27209713"
 ---
 # <a name="channel-resource-type"></a>チャネル リソースの種類
 
@@ -15,7 +15,7 @@ ms.locfileid: "27073624"
 チャネルは、[チーム](../resources/team.md)内での[chatMessages](chatmessage.md)のコレクションです。 チャネルでは、トピックとチーム内での議論の論理的分離を表します。 例としては、「金曜日チーム ランチ」のチャネルとチャネルの「アーキテクチャの説明」にあります。
 
 
-## <a name="methods"></a>メソッド
+## <a name="methods"></a>Methods
 
 | メソッド       | 戻り値の型  |説明|
 |:---------------|:--------|:----------|
@@ -28,11 +28,15 @@ ms.locfileid: "27073624"
 |[チャットのスレッドを作成します。](../api/channel-post-chatthreads.md) | [chatThread](chatthread.md)コレクション| 指定したチャンネルでのチャットのスレッドを作成します。|
 
 ## <a name="properties"></a>プロパティ
-| プロパティ     | 型   |説明|
+| プロパティ     | 種類   |説明|
 |:---------------|:--------|:----------|
 |説明|String|チャネルの省略可能な説明です。|
 |displayName|String|チャネルの名前は、マイクロソフトのチーム内のユーザーに表示されます。|
-|id|String|チャネルの一意の識別子です。 読み取り専用。|
+|id|String|チャネルの一意の識別子です。 取得のみ可能な値です。|
+|isFavoriteByDefault|ブール型|かどうかチャネルが自動的にマークされます 'お気に入り' チームのすべてのメンバーの。 既定値: `false`。|
+|email|ブール型| チャネルにメッセージを送信する電子メール アドレスです。 読み取り専用です。|
+|webUrl|String|ハイパーリンクは、マイクロソフトのチーム内のチャネルに移動します。 これは、マイクロソフトのチームでチャネルを右クリックし、チャネルを取得] リンクを選択するときに表示される URL です。 この URL は、非透過 blob として扱われます、解析されない必要があります。 読み取り専用。|
+
 
 ## <a name="relationships"></a>リレーションシップ
 | リレーションシップ | 型   |説明|

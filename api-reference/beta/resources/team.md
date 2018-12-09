@@ -1,12 +1,12 @@
 ---
 title: チーム リソースの種類
 description: 'マイクロソフトのチームで、チームは、チャネルのコレクションです。 '
-ms.openlocfilehash: 5ebb4dbc2c5913d69b69bdb244d8a7cfc83cec8d
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.openlocfilehash: 610aca1a95c877bd6246a501a8eea64ee761e58d
+ms.sourcegitcommit: 12c6e82f1417022540e534ebadbd0e8d7fb5abde
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27070581"
+ms.lasthandoff: 12/08/2018
+ms.locfileid: "27209699"
 ---
 # <a name="team-resource-type"></a>チーム リソースの種類
 
@@ -18,11 +18,12 @@ ms.locfileid: "27070581"
 グループは、チーム ・/groups/{id} などと同じ ID を持っているし、チームは、/teams/{id} と同じです。
 グループとチームのメンバーの詳細については、[マイクロソフトのチームで作業するのには Microsoft グラフ REST API を使用](teams-api-overview.md)を参照してください。
 
-## <a name="methods"></a>メソッド
+## <a name="methods"></a>Methods
 
 | メソッド       | 戻り値の型  |説明|
 |:---------------|:--------|:----------|
-|[チームを作成します。](../api/team-put-teams.md) | [チーム](team.md) | 新しいチームを作成または既存のグループにチームを追加します。|
+|[チームを作成します。](../api/team-post.md) | [teamsAsyncOperation](teamsasyncoperation.md) | 最初からチームを作成します。 |
+|[グループからチームを作成します。](../api/team-put-teams.md) | [チーム](team.md) | 新しいチームを作成または既存のグループにチームを追加します。|
 |[チームを取得します。](../api/team-get.md) | [チーム](team.md) | プロパティと指定されたチームの関係を取得します。|
 |[チームを更新します。](../api/team-update.md) | [チーム](team.md) |指定されたチームのプロパティを更新します。 |
 |[チームを削除します。](/graph/api/group-delete?view=graph-rest-1.0) | なし |チームおよびその関連付けられているグループを削除します。 |
@@ -38,11 +39,16 @@ ms.locfileid: "27070581"
 
 ## <a name="properties"></a>プロパティ
 
-| プロパティ | 型   | 説明 |
+| プロパティ | 種類   | 説明 |
 |:---------------|:--------|:----------|
+|displayName|string| チームの名前。 |
+|description|文字列| チームの説明 (オプション)。 |
+|分類|文字列| オプションのラベル。 通常、チームのデータやビジネスの重要度についても説明します。 テナントのディレクトリに定義済みのセットのいずれかに一致する必要があります。 |
+|特殊化|[teamSpecialization](teamspecialization.md)| 省略可能。 チームが特定のユース ケースの目的として かどうかを示します。  各チームの特殊化では、固有の動作とその使用例を対象としての経験へのアクセスを持ちます。 |
+|visibility|[teamVisibilityType](teamvisibilitytype.md)| 可視性、グループとチームです。 パブリックの既定値です。 |
 |funSettings|[teamFunSettings](teamfunsettings.md) |Giphy、memes、およびチームのステッカーを構成する設定を使用します。|
 |guestSettings|[teamGuestSettings](teamguestsettings.md) |来園者が作成、更新、またはチーム内のチャンネルを削除するかどうかを構成するのに設定します。|
-|isArchived|ブール値|このチームが、読み取り専用モードでかどうかです。 |
+|isArchived|ブール型|このチームが、読み取り専用モードでかどうかです。 |
 |memberSettings|[teamMemberSettings](teammembersettings.md) |など、メンバーが特定のアクションを実行するかどうかを構成する設定は、チャネルを作成し、チームにボットを追加します。|
 |messagingSettings|[teamMessagingSettings](teammessagingsettings.md) |メッセージングを構成する設定は、チーム内の参照。|
 |webUrl|文字列 (読み取り専用) | クライアントの Microsoft のチームにチームに移動するハイパーリンク。 これは、クライアントの Microsoft のチームにチームを右クリックし、**チームへのリンクを取得する**を選択するときに表示される URL です。 この URL は、非透過 blob として扱われます、解析されない必要があります。 |
@@ -54,6 +60,8 @@ ms.locfileid: "27070581"
 |apps|[teamsApp](teamsapp.md)コレクション| (古い形式)このチームにインストールされているアプリケーションです。|
 |チャンネル|[チャネル](channel.md)コレクション|チャンネルとチームに関連付けられているメッセージのコレクションです。|
 |installedApps|[teamsAppInstallation](teamsappinstallation.md)コレクション|このチームにインストールされているアプリケーションです。|
+|owners|[user](user.md)| このチームの所有者の一覧です。 |
+|template|[teamsTemplate](teamstemplate.md)| このチームが作成したテンプレートです。 |
 
 ## <a name="json-representation"></a>JSON 表記
 

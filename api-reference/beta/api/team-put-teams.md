@@ -1,18 +1,18 @@
 ---
-title: チームを作成します。
-description: グループの下の新しいチームを作成します。
-ms.openlocfilehash: 2e0331724006d18a0c02227427e7251b1d7e096d
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+title: グループからチームを作成します。
+description: グループから新しいチームを作成します。
+ms.openlocfilehash: 50915ff025a724565f1eaa4c37a01942133f9e4f
+ms.sourcegitcommit: 12c6e82f1417022540e534ebadbd0e8d7fb5abde
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27073352"
+ms.lasthandoff: 12/08/2018
+ms.locfileid: "27209671"
 ---
-# <a name="create-team"></a>チームを作成します。
+# <a name="create-team-from-group"></a>グループからチームを作成します。
 
 > **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。
 
-[グループ](../resources/group.md)の下に新しい[チーム](../resources/team.md)を作成します。
+[グループ](../resources/group.md)から新しい[チーム](../resources/team.md)を作成します。
 
 グループには、チームを作成するために少なくとも 1 人の所有者が必要です。
 

@@ -1,12 +1,12 @@
 ---
 title: EducationSynchronizationErrors を取得します。
 description: '検証中に、テナントの特定の学校のデータの同期プロファイルの同期中に発生したエラーを取得します。 '
-ms.openlocfilehash: 5853834187dcf470dff093a21589b3eba798e793
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.openlocfilehash: 8d4341eafa515f79de6dda2f40f22c990ed5926c
+ms.sourcegitcommit: 12c6e82f1417022540e534ebadbd0e8d7fb5abde
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27069883"
+ms.lasthandoff: 12/08/2018
+ms.locfileid: "27209664"
 ---
 # <a name="get-educationsynchronizationerrors"></a>EducationSynchronizationErrors を取得します。
 
@@ -30,7 +30,7 @@ GET /synchronizationProfiles/{id}/errors
 このメソッドは、応答をカスタマイズするために次の[OData クエリ パラメーター](https://developer.microsoft.com/graph/docs/concepts/query_parameters)をサポートしています: $filter、$orderby、$top、$skip、および $count。
 
 ## <a name="request-headers"></a>要求ヘッダー
-| 名前       | 型 | 説明|
+| 名前       | 種類 | 説明|
 |:-----------|:------|:----------|
 | Authorization  | string  | ベアラー {トークン}。必須。  |
 
@@ -47,7 +47,7 @@ GET /synchronizationProfiles/{id}/errors
   "name": "get_educationSynchronizationProfile_error"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/education/synchronizationProfiles/{id}/error
+GET https://graph.microsoft.com/beta/education/synchronizationProfiles/{id}/errors
 ```
 
 ##### <a name="response"></a>応答
