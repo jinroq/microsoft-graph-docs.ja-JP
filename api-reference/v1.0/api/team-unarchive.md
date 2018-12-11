@@ -1,12 +1,12 @@
 ---
 title: チームを unarchive します。
 description: アーカイブされたチームを復元します。 これは、メッセージを送信し、テナントとチームの設定に従いながら、チームを編集するユーザーの機能を復元します。 チームは、アーカイブの API を使用してアーカイブされます。
-ms.openlocfilehash: 4a90be4c5b2488bf72123cabe1da3aacf856e9d1
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.openlocfilehash: 7507a58ef75939110d0c740e20d8540838bda204
+ms.sourcegitcommit: 72d4da2a6bfaf99fa4edaf6ce3b97b1a6d96d874
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27021715"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "27222612"
 ---
 # <a name="unarchive-team"></a>チームを unarchive します。
 
@@ -24,6 +24,8 @@ Unarchiving は、非同期操作です。 チームは、非同期操作が完�
 |委任 (職場または学校のアカウント) | Group.ReadWrite.All    |
 |委任 (個人用 Microsoft アカウント) | サポートされていません。    |
 |アプリケーション | Group.ReadWrite.All    |
+
+> **注**: この API は、管理者のアクセス許可をサポートしています。 グローバル管理者とサービス管理者のマイクロソフトのチームのメンバーではないことをチームにアクセスできます。
 
 ## <a name="http-request"></a>HTTP 要求
 <!-- { "blockType": "ignored" } -->

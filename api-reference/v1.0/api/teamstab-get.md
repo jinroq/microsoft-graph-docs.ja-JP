@@ -1,12 +1,12 @@
 ---
 title: タブを取得します。
 description: 'プロパティと指定したタブの関係を取得します。 '
-ms.openlocfilehash: 0a183d9bd55e0002a40335849549285d45fe9f69
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.openlocfilehash: 6dcc850bb42487cd8ca7f9cc9f7330b59fa965cc
+ms.sourcegitcommit: 72d4da2a6bfaf99fa4edaf6ce3b97b1a6d96d874
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27020436"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "27222619"
 ---
 # <a name="get-tab"></a>タブを取得します。
 
@@ -23,7 +23,7 @@ ms.locfileid: "27020436"
 |委任 (個人用 Microsoft アカウント) | サポートされていません。    |
 |アプリケーション | Group.Read.All、Group.ReadWrite.All |
 
-> 現在、[委任されたアクセス許可](/graph/permissions-reference)をのみがこの操作に対してサポートされています。
+> **注**: この API は、管理者のアクセス許可をサポートしています。 グローバル管理者とサービス管理者のマイクロソフトのチームのメンバーではないことをチームにアクセスできます。
 
 ## <a name="http-request"></a>HTTP 要求
 ```http

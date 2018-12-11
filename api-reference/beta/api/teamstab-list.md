@@ -1,12 +1,12 @@
 ---
 title: チャネルの一覧] タブ
 description: 'チーム内で指定されたチャネル内のタブの一覧を取得します。 '
-ms.openlocfilehash: 6c72bae20542911c7ab1563e994ca9ebdb79b37a
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.openlocfilehash: 0628874876093447802583db70e160ad17e21f87
+ms.sourcegitcommit: 72d4da2a6bfaf99fa4edaf6ce3b97b1a6d96d874
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27073355"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "27222507"
 ---
 # <a name="list-tabs-in-channel"></a>チャネルの一覧] タブ
 
@@ -22,6 +22,8 @@ ms.locfileid: "27073355"
 |委任 (職場または学校のアカウント) | Group.ReadWrite.All、Group.Read.All    |
 |委任 (個人用 Microsoft アカウント) | サポートされていません。    |
 | アプリケーション                            | Group.Read.All、Group.ReadWrite.All         |
+
+> **注**: この API は、管理者のアクセス許可をサポートしています。 グローバル管理者とサービス管理者のマイクロソフトのチームのメンバーではないことをチームにアクセスできます。
 
 ## <a name="http-request"></a>HTTP 要求
 

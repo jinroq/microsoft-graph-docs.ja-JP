@@ -1,12 +1,12 @@
 ---
 title: '[更新] タブ'
 description: 指定したタブのプロパティを更新します。
-ms.openlocfilehash: 6943e9ea4ff602b3fcd4dc8ac899d55cee120ecc
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.openlocfilehash: bc25830411f93ed1644b86c1228f987c091db32a
+ms.sourcegitcommit: 72d4da2a6bfaf99fa4edaf6ce3b97b1a6d96d874
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27068061"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "27222563"
 ---
 # <a name="update-tab"></a>[更新] タブ
 
@@ -24,10 +24,13 @@ ms.locfileid: "27068061"
 |委任 (個人用 Microsoft アカウント) | サポートされていません。    |
 |アプリケーション                            | Group.ReadWrite.All                         |
 
+> **注**: この API は、管理者のアクセス許可をサポートしています。 グローバル管理者とサービス管理者のマイクロソフトのチームのメンバーではないことをチームにアクセスできます。
+
 ## <a name="http-request"></a>HTTP 要求
 ```http
 PATCH /teams/{id}/channels/{id}/tabs/{id}
 ```
+
 ## <a name="request-headers"></a>要求ヘッダー
 | ヘッダー       | 値 |
 |:---------------|:--------|

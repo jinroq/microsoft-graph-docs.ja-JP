@@ -1,12 +1,12 @@
 ---
 title: チャネルを削除します。
 description: チャネルを削除します。
-ms.openlocfilehash: b2756de636f38a14063a345ba2094c1cb628517c
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.openlocfilehash: f24471a4f93c50d722290feb9093514c34f4cc2f
+ms.sourcegitcommit: 72d4da2a6bfaf99fa4edaf6ce3b97b1a6d96d874
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27020167"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "27222348"
 ---
 # <a name="delete-channel"></a>チャネルを削除します。
 
@@ -26,6 +26,8 @@ ms.locfileid: "27020167"
 |委任 (職場または学校のアカウント) | Group.ReadWrite.All    |
 |委任 (個人用 Microsoft アカウント) | サポートされていません。    |
 |アプリケーション | Group.ReadWrite.All    |
+
+> **注**: この API は、管理者のアクセス許可をサポートしています。 グローバル管理者とサービス管理者のマイクロソフトのチームのメンバーではないことをチームにアクセスできます。
 
 ## <a name="http-request"></a>HTTP 要求
 <!-- { "blockType": "ignored" } -->

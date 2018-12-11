@@ -1,12 +1,12 @@
 ---
 title: チャネルのリスト
 description: このチーム内のチャンネルのリストを取得します。
-ms.openlocfilehash: a37ca4e6012dd287b1b637fe3ddb3cfc2aaf5518
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.openlocfilehash: 024751f0d77889249d2f2dcf6b2bb1f709128db1
+ms.sourcegitcommit: 72d4da2a6bfaf99fa4edaf6ce3b97b1a6d96d874
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27067340"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "27222542"
 ---
 # <a name="list-channels"></a>チャネルのリスト
 
@@ -23,6 +23,8 @@ ms.locfileid: "27067340"
 |委任 (職場または学校のアカウント) | Group.Read.All、Group.ReadWrite.All    |
 |委任 (個人用 Microsoft アカウント) | サポートされていません。    |
 |アプリケーション | Group.Read.All、Group.ReadWrite.All    |
+
+> **注**: この API は、管理者のアクセス許可をサポートしています。 グローバル管理者とサービス管理者のマイクロソフトのチームのメンバーではないことをチームにアクセスできます。
 
 ## <a name="http-request"></a>HTTP 要求
 <!-- { "blockType": "ignored" } -->

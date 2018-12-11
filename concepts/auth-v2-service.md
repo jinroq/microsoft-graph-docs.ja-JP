@@ -1,12 +1,12 @@
 ---
 title: ユーザーなしでアクセスを取得
 description: '一部のアプリでは、ユーザーの代わりに独自の ID を使用して Microsoft Graph を呼び出します。多くの場合、これらは、サインインしたユーザーが存在しないサーバー上で実行される、バックグラウンド サービスかデーモンです。この種のアプリの例として、夜間に起動して実行される電子メール アーカイブ サービスがあります。場合によっては、サインインしているユーザーが存在するアプリでも、独自の ID で Microsoft Graph を呼び出す必要があります。たとえば、サインインしたユーザーが所有している組織内の特権よりも高い特権を必要とする機能をアプリが使用する必要がある場合があります。  '
-ms.openlocfilehash: 25eb9686153e997079de3f17f88d017c336d3a61
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
-ms.translationtype: MT
+ms.openlocfilehash: 62bea47d8d4926a4d618ebc0c434b6fe2baad376
+ms.sourcegitcommit: 72d4da2a6bfaf99fa4edaf6ce3b97b1a6d96d874
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27092465"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "27222465"
 ---
 # <a name="get-access-without-a-user"></a>ユーザーなしでアクセスを取得
 
@@ -121,7 +121,7 @@ POST 要求を `/token` v2.0 エンドポイントに送信して、アクセス
 ```
 // Line breaks are for legibility only.
 
-POST /{tenant}/oauth2/v2.0/token HTTP/1.1
+POST https://login.microsoftonline.com/{tenant}/oauth2/v2.0/token HTTP/1.1
 Host: login.microsoftonline.com
 Content-Type: application/x-www-form-urlencoded
 

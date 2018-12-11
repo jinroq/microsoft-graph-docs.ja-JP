@@ -1,12 +1,12 @@
 ---
 title: チームを取得します。
 description: プロパティと指定されたチームの関係を取得します。
-ms.openlocfilehash: 790d550024742875b0fb3a5b4383f0ec9ba793bb
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.openlocfilehash: e1f3b08134377492fc00f9bc0b43c190d1d8a81d
+ms.sourcegitcommit: 72d4da2a6bfaf99fa4edaf6ce3b97b1a6d96d874
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27022774"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "27222647"
 ---
 # <a name="get-team"></a>チームを取得します。
 
@@ -23,7 +23,10 @@ ms.locfileid: "27022774"
 |委任 (個人用 Microsoft アカウント) | サポートされていません。    |
 |アプリケーション | Group.Read.All、Group.ReadWrite.All    |
 
+> **注**: この API は、管理者のアクセス許可をサポートしています。 グローバル管理者とサービス管理者のマイクロソフトのチームのメンバーではないことをチームにアクセスできます。
+
 ## <a name="http-request"></a>HTTP 要求
+
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /teams/{id}

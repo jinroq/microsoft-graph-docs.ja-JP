@@ -1,12 +1,12 @@
 ---
 title: グループからチームを作成します。
 description: グループから新しいチームを作成します。
-ms.openlocfilehash: 50915ff025a724565f1eaa4c37a01942133f9e4f
-ms.sourcegitcommit: 12c6e82f1417022540e534ebadbd0e8d7fb5abde
+ms.openlocfilehash: d43c9032811c2ddc1733117642f9e2ae4f343a7e
+ms.sourcegitcommit: 72d4da2a6bfaf99fa4edaf6ce3b97b1a6d96d874
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/08/2018
-ms.locfileid: "27209671"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "27222633"
 ---
 # <a name="create-team-from-group"></a>グループからチームを作成します。
 
@@ -27,6 +27,8 @@ ms.locfileid: "27209671"
 |委任 (職場または学校のアカウント) | Group.ReadWrite.All    |
 |委任 (個人用 Microsoft アカウント) | サポートされていません。    |
 |アプリケーション | Group.ReadWrite.All |
+
+> **注**: この API は、管理者のアクセス許可をサポートしています。 グローバル管理者およびマイクロソフトのチームのサービス管理者グループのメンバーではないことにアクセスできます。
 
 ## <a name="http-request"></a>HTTP 要求
 

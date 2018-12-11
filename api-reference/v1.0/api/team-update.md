@@ -1,12 +1,12 @@
 ---
 title: チームを更新します。
 description: 指定されたチームのプロパティを更新します。
-ms.openlocfilehash: 27cbf8f571752a27fb68727fe2695a0250f5dc75
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.openlocfilehash: 23f65ef1cd1948941bd814a521bdaa0984553dff
+ms.sourcegitcommit: 72d4da2a6bfaf99fa4edaf6ce3b97b1a6d96d874
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27020533"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "27222605"
 ---
 # <a name="update-team"></a>チームを更新します。
 
@@ -24,11 +24,14 @@ ms.locfileid: "27020533"
 |委任 (個人用 Microsoft アカウント) | サポートされていません。    |
 |アプリケーション | Group.Read.All、Group.ReadWrite.All    |
 
+> **注**: この API は、管理者のアクセス許可をサポートしています。 グローバル管理者とサービス管理者のマイクロソフトのチームのメンバーではないことをチームにアクセスできます。
+
 ## <a name="http-request"></a>HTTP 要求
 <!-- { "blockType": "ignored" } -->
 ```http
 PATCH /teams/{id}
 ```
+
 ## <a name="request-headers"></a>要求ヘッダー
 | ヘッダー       | 値 |
 |:---------------|:--------|

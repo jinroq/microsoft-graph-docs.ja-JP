@@ -1,12 +1,12 @@
 ---
 title: チャネルにタブを追加します。
 description: '(ピン) を追加、チーム内で指定したチャンネルをタブします。 '
-ms.openlocfilehash: 1bf2021438cc9c0c74a2a4133e54a4fbc42fdf4d
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.openlocfilehash: a32f0a289de08d49cfc12a9fa0cef60732f3364c
+ms.sourcegitcommit: 72d4da2a6bfaf99fa4edaf6ce3b97b1a6d96d874
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27022286"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "27222447"
 ---
 # <a name="add-tab-to-channel"></a>チャネルにタブを追加します。
 
@@ -22,6 +22,8 @@ ms.locfileid: "27022286"
 |委任 (職場または学校のアカウント) | Group.ReadWrite.All    |
 |委任 (個人用 Microsoft アカウント) | サポートされていません。    |
 | アプリケーション                            | Group.ReadWrite.All                         |
+
+> **注**: この API は、管理者のアクセス許可をサポートしています。 グローバル管理者とサービス管理者のマイクロソフトのチームのメンバーではないことをチームにアクセスできます。
 
 ## <a name="http-request"></a>HTTP 要求
 <!-- { "blockType": "ignored" } -->

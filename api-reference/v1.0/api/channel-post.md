@@ -1,12 +1,12 @@
 ---
 title: チャネルを作成します。
 description: 要求の本体に指定されている、マイクロソフトのチームでは、新しいチャネルを作成します。
-ms.openlocfilehash: 8cb6beed2758ac225bbef2b028abff68547b3eda
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.openlocfilehash: 9fb327e947585732e9a17151d4cc06e8d50c4bf1
+ms.sourcegitcommit: 72d4da2a6bfaf99fa4edaf6ce3b97b1a6d96d874
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27021956"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "27222584"
 ---
 # <a name="create-channel"></a>チャネルを作成します。
 
@@ -25,6 +25,8 @@ ms.locfileid: "27021956"
 |委任 (職場または学校のアカウント) | Group.ReadWrite.All    |
 |委任 (個人用 Microsoft アカウント) | サポートされていません。    |
 |アプリケーション | Group.ReadWrite.All    |
+
+> **注**: この API は、管理者のアクセス許可をサポートしています。 グローバル管理者とサービス管理者のマイクロソフトのチームのメンバーではないことをチームにアクセスできます。
 
 ## <a name="http-request"></a>HTTP 要求
 <!-- { "blockType": "ignored" } -->

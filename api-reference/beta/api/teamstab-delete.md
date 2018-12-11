@@ -1,12 +1,12 @@
 ---
 title: チャネルからタブを削除します。
 description: '削除 (固定解除)、チーム内で指定されたチャネルのタブです。 '
-ms.openlocfilehash: 975f046b3da279ddcda2f3f13be89ee7c45b21a3
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.openlocfilehash: bcede601f036e8e3c40659b74a593c99e2e60af3
+ms.sourcegitcommit: 72d4da2a6bfaf99fa4edaf6ce3b97b1a6d96d874
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27073357"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "27222486"
 ---
 # <a name="delete-tab-from-channel"></a>チャネルからタブを削除します。
 
@@ -22,6 +22,8 @@ ms.locfileid: "27073357"
 |委任 (職場または学校のアカウント) | Group.ReadWrite.All    |
 |委任 (個人用 Microsoft アカウント) | サポートされていません。    |
 |アプリケーション | Group.ReadWrite.All |
+
+> **注**: この API は、管理者のアクセス許可をサポートしています。 グローバル管理者とサービス管理者のマイクロソフトのチームのメンバーではないことをチームにアクセスできます。
 
 ## <a name="http-request"></a>HTTP 要求
 <!-- { "blockType": "ignored" } -->

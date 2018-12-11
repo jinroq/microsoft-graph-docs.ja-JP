@@ -1,12 +1,12 @@
 ---
 title: ID のリストからディレクトリ オブジェクトを取得します。
 description: 選択 ' クエリ オプションはこの操作に使用できません。
-ms.openlocfilehash: 87fa774910c1ea6795b6df65ee0f5538d12296bb
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.openlocfilehash: e6f987a3269b209c5df71b4961cf73081286a76d
+ms.sourcegitcommit: 72d4da2a6bfaf99fa4edaf6ce3b97b1a6d96d874
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27067402"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "27222450"
 ---
 # <a name="get-directory-objects-from-a-list-of-ids"></a>ID のリストからディレクトリ オブジェクトを取得します。
 
@@ -16,7 +16,7 @@ ID のリストで指定されたディレクトリ オブジェクトを返し�
 
 この関数の一般的な用途は次のとおりです。
 
-* [getMemberObjects](directoryobject-getmemberobjects.md) または [getMemberGroups](directoryobject-getmembergroups.md) などの (ID のコレクションを返す) 関数から返された ID を、バッキング ディレクトリ オブジェクトに解決する。
+* [getMemberObjects](/graph/api/directoryobject-getmemberobjects.md?view=graph-rest-beta) または [getMemberGroups](/graph/api/directoryobject-getmembergroups.md?view=graph-rest-beta) などの (ID のコレクションを返す) 関数から返された ID を、バッキング ディレクトリ オブジェクトに解決する。
 * アプリケーションによって外部記憶装置に保存されている ID をバッキング ディレクトリ オブジェクトに解決する。
 
 ## <a name="permissions"></a>アクセス許可
@@ -35,12 +35,12 @@ ID のリストで指定されたディレクトリ オブジェクトを返し�
 <!-- { "blockType": "ignored" } -->
 
 ```http
-POST /directoryObjects/getById
+POST /directoryObjects/getByIds
 ```
 
 ## <a name="request-headers"></a>要求ヘッダー
 
-| 名前       | 型 | 説明|
+| 名前       | 種類 | 説明|
 |:---------------|:--------|:----------|
 | Authorization  | string  | ベアラー {トークン}。必須。 |
 | Content-Type  | application/json  |
@@ -49,10 +49,10 @@ POST /directoryObjects/getById
 
 要求本文で、次のパラメーターを含む JSON オブジェクトを指定します。
 
-| パラメーター   | 型 |説明|
+| パラメーター   | Type |説明|
 |:---------------|:--------|:----------|
 |ids|String コレクション| オブジェクトを戻す ID のコレクション。最大 1000 ID まで指定できます。 |
-|types|String コレクション| 検索するリソースのコレクションのセットを指定するリソースの種類のコレクションです。 指定しない場合、既定では[directoryObject](../resources/directoryobject.md)、すべてのディレクトリで定義されているリソースの種類が含まれています。 派生したオブジェクトは、`directoryObject`コレクションに指定することがあります例:[ユーザー](../resources/user.md)、[グループ](../resources/group.md)、[デバイス](../resources/device.md)、およびようにします。 値は、大文字小文字を区別しません。|
+|types|String コレクション| 検索するリソースのコレクションのセットを指定するリソースの種類のコレクションです。 指定しない場合、既定では[directoryObject](/graph/api/resources/directoryobject?view=graph-rest-beta)、すべてのディレクトリで定義されているリソースの種類が含まれています。 [DirectoryObject](/graph/api/resources/directoryobject?view=graph-rest-beta)から派生した任意のオブジェクトをコレクションに指定する場合があります。例:[ユーザー](/graph/api/resources/user?view=graph-rest-beta)、[グループ](/graph/api/resources/group?view=graph-rest-beta)、[デバイス](/graph/api/resources/device?view=graph-rest-beta)、およびようにします。 [クラウド ソリューション プロバイダー](https://partner.microsoft.com/en-us/cloud-solution-provider)パートナーへの参照を検索するのには、組織は、 [directoryObjectPartnerReference](/graph/api/resources/directoryobjectpartnerreference?view=graph-rest-beta)を指定します。 指定しない場合、既定では[directoryObject](/graph/api/resources/directoryobject?view=graph-rest-beta)、すべての[クラウド ソリューション プロバイダー](https://partner.microsoft.com/en-us/cloud-solution-provider)パートナーの組織への参照を除いて、ディレクトリで定義されているリソースの種類が含まれています。 値は、大文字小文字を区別しません。|
 
 ## <a name="response"></a>応答
 
@@ -64,7 +64,7 @@ POST /directoryObjects/getById
 
 <!-- {
   "blockType": "request",
-  "name": "directoryobject_getById"
+  "name": "directoryobject_getByIds"
 }-->
 
 ```http
