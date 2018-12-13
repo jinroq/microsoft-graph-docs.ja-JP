@@ -1,12 +1,12 @@
 ---
 title: 'conversationThread: 返信'
 description: 'グループの会話のスレッドに返信して、そこに新しい投稿を追加します。 親の会話を指定することができます。 '
-ms.openlocfilehash: ca252cb578c0b04cddead455ca046d13180626e4
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.openlocfilehash: 9e191a53b2427b8c9def2acf15d48b7c8605437f
+ms.sourcegitcommit: 9f953e0c4cd624ba31919bfd5e82bf3e33cb9e21
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27022781"
+ms.lasthandoff: 12/13/2018
+ms.locfileid: "27245079"
 ---
 # <a name="conversationthread-reply"></a>conversationThread: 返信
 
@@ -19,7 +19,7 @@ ms.locfileid: "27022781"
 |:--------------------|:---------------------------------------------------------|
 |委任 (職場または学校のアカウント) | Group.ReadWrite.All    |
 |委任 (個人用 Microsoft アカウント) | サポートされていません。    |
-|アプリケーション | Group.ReadWrite.All |
+|アプリケーション | サポートされていません。 |
 
 ## <a name="http-request"></a>HTTP 要求
 <!-- { "blockType": "ignored" } -->
@@ -36,7 +36,7 @@ POST /groups/{id}/conversations/{id}/threads/{id}/reply
 ## <a name="request-body"></a>要求本文
 要求本文で、次のパラメーターを含む JSON オブジェクトを指定します。
 
-| パラメーター    | 型   |説明|
+| パラメーター    | 種類   |説明|
 |:---------------|:--------|:----------|
 |post|[post](../resources/post.md)|返信中の新規の投稿。|
 
