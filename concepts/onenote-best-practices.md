@@ -3,68 +3,68 @@ title: Microsoft Graph で OneNote API を使用する場合のベスト プラ�
 description: この記事では、Microsoft Graph で OneNote API を使用するための推奨事項を提供します。 これらの推奨事項は、Stack Overflow と Twitter でよく寄せられる質問への回答に基づいています。
 ms.openlocfilehash: d7135b09c11150181a479b6b9a00ab11247de11c
 ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/29/2018
 ms.locfileid: "27092463"
 ---
-# <a name="best-practices-for-working-with-the-onenote-api-in-microsoft-graph"></a><span data-ttu-id="0fa67-104">Microsoft Graph で OneNote API を使用する場合の推奨事項</span><span class="sxs-lookup"><span data-stu-id="0fa67-104">Best practices for working with the OneNote API in Microsoft Graph</span></span>
+# <a name="best-practices-for-working-with-the-onenote-api-in-microsoft-graph"></a><span data-ttu-id="b0d9d-104">Microsoft Graph で OneNote API を使用する場合の推奨事項</span><span class="sxs-lookup"><span data-stu-id="b0d9d-104">Best practices for working with the OneNote API in Microsoft Graph</span></span>
 
-<span data-ttu-id="0fa67-105">この記事では、Microsoft Graph で OneNote API を使用するための推奨事項を提供します。</span><span class="sxs-lookup"><span data-stu-id="0fa67-105">This article provides recommendations for working with the OneNote APIs in Microsoft Graph.</span></span> <span data-ttu-id="0fa67-106">これらの推奨事項は、Stack Overflow と Twitter でよく寄せられる質問への回答に基づいています。</span><span class="sxs-lookup"><span data-stu-id="0fa67-106">These recommendations are based on answers to common questions on Stack Overflow and Twitter.</span></span>
+<span data-ttu-id="b0d9d-105">この記事では、Microsoft Graph で OneNote API を使用するための推奨事項を提供します。</span><span class="sxs-lookup"><span data-stu-id="b0d9d-105">This article provides recommendations for working with the OneNote APIs in Microsoft Graph.</span></span> <span data-ttu-id="b0d9d-106">これらの推奨事項は、Stack Overflow と Twitter でよく寄せられる質問への回答に基づいています。</span><span class="sxs-lookup"><span data-stu-id="b0d9d-106">These recommendations are based on answers to common questions on Stack Overflow and Twitter.</span></span>
 
-## <a name="use-select-to-select-the-minimum-set-of-properties-you-need"></a><span data-ttu-id="0fa67-107">$Select を使用して、必要なプロパティの最小限のセットを選択する</span><span class="sxs-lookup"><span data-stu-id="0fa67-107">Use $select to select the minimum set of properties you need</span></span>
+## <a name="use-select-to-select-the-minimum-set-of-properties-you-need"></a><span data-ttu-id="b0d9d-107">$Select を使用して、必要なプロパティの最小限のセットを選択する</span><span class="sxs-lookup"><span data-stu-id="b0d9d-107">Use $select to select the minimum set of properties you need</span></span>
 
-<span data-ttu-id="0fa67-108">リソース (たとえば、ノートブック内のセクション) のクエリを実行するときには、次のような要求を行います。</span><span class="sxs-lookup"><span data-stu-id="0fa67-108">When you query for a resource (for example, sections inside a notebook), you make a request similar to the following.</span></span>
+<span data-ttu-id="b0d9d-108">リソース (たとえば、ノートブック内のセクション) のクエリを実行するときには、次のような要求を行います。</span><span class="sxs-lookup"><span data-stu-id="b0d9d-108">When you query for a resource (for example, sections inside a notebook), you make a request similar to the following.</span></span>
 
 ```http
 GET ~/notebooks/{id}/sections
 ```
 
-<span data-ttu-id="0fa67-109">これは、セクションのすべてのプロパティを取得します。</span><span class="sxs-lookup"><span data-stu-id="0fa67-109">This retrieves all the properties of the sections.</span></span> <span data-ttu-id="0fa67-110">ただし、すべてのプロパティが必要とは限りません。</span><span class="sxs-lookup"><span data-stu-id="0fa67-110">However, you might not need all properties.</span></span> <span data-ttu-id="0fa67-111">次の例のように、`$select` クエリ パラメーターを使用して、必要なプロパティだけを返すことができます。</span><span class="sxs-lookup"><span data-stu-id="0fa67-111">You can use the `$select` query parameter to return just the properties that you want, as shown in the following example.</span></span>
+<span data-ttu-id="b0d9d-109">これは、セクションのすべてのプロパティを取得します。</span><span class="sxs-lookup"><span data-stu-id="b0d9d-109">This retrieves all the properties of the sections.</span></span> <span data-ttu-id="b0d9d-110">ただし、すべてのプロパティが必要とは限りません。</span><span class="sxs-lookup"><span data-stu-id="b0d9d-110">However, you might not need all properties.</span></span> <span data-ttu-id="b0d9d-111">次の例のように、`$select` クエリ パラメーターを使用して、必要なプロパティだけを返すことができます。</span><span class="sxs-lookup"><span data-stu-id="b0d9d-111">You can use the `$select` query parameter to return just the properties that you want, as shown in the following example.</span></span>
 
 ```http
 GET ~/notebooks/{id}/sections?$select=id,displayName
 ```
 
-<span data-ttu-id="0fa67-112">同じアプローチは、他の OneNote API に適用されます。</span><span class="sxs-lookup"><span data-stu-id="0fa67-112">The same approach applies to other OneNote APIs.</span></span>
+<span data-ttu-id="b0d9d-112">同じアプローチは、他の OneNote API に適用されます。</span><span class="sxs-lookup"><span data-stu-id="b0d9d-112">The same approach applies to other OneNote APIs.</span></span>
 
-## <a name="use-expand-instead-of-making-multiple-api-calls"></a><span data-ttu-id="0fa67-113">複数の API 呼び出しを実行するのではなく、$expand を使用します。</span><span class="sxs-lookup"><span data-stu-id="0fa67-113">Use $expand instead of making multiple API calls</span></span>
+## <a name="use-expand-instead-of-making-multiple-api-calls"></a><span data-ttu-id="b0d9d-113">複数の API 呼び出しを実行するのではなく、$expand を使用します。</span><span class="sxs-lookup"><span data-stu-id="b0d9d-113">Use $expand instead of making multiple API calls</span></span>
 
-<span data-ttu-id="0fa67-114">ユーザーのノートブック、セクション、およびセクション グループのすべてを階層的なビューで取得します。</span><span class="sxs-lookup"><span data-stu-id="0fa67-114">Suppose you want to retrieve all of the user’s notebooks, sections, and section groups in a hierarchical view.</span></span> <span data-ttu-id="0fa67-115">次の方法でこれを行います。</span><span class="sxs-lookup"><span data-stu-id="0fa67-115">You might accomplish that by doing the following:</span></span>
+<span data-ttu-id="b0d9d-114">ユーザーのノートブック、セクション、およびセクション グループのすべてを階層的なビューで取得します。</span><span class="sxs-lookup"><span data-stu-id="b0d9d-114">Suppose you want to retrieve all of the user’s notebooks, sections, and section groups in a hierarchical view.</span></span> <span data-ttu-id="b0d9d-115">次の方法でこれを行います。</span><span class="sxs-lookup"><span data-stu-id="b0d9d-115">You might accomplish that by doing the following:</span></span>
 
-* <span data-ttu-id="0fa67-116">`GET ~/notebooks` を呼び出して、ノートブックの一覧を取得します。</span><span class="sxs-lookup"><span data-stu-id="0fa67-116">Call `GET ~/notebooks` to get the list of notebooks.</span></span>
+* <span data-ttu-id="b0d9d-116">`GET ~/notebooks` を呼び出して、ノートブックの一覧を取得します。</span><span class="sxs-lookup"><span data-stu-id="b0d9d-116">Call `GET ~/notebooks` to get the list of notebooks.</span></span>
 
-* <span data-ttu-id="0fa67-117">取得したすべてのノートブックについて、`GET ~/notebooks/{notebookId}/sections` を呼び出してセクションの一覧を取得します。</span><span class="sxs-lookup"><span data-stu-id="0fa67-117">For every retrieved notebook, call `GET ~/notebooks/{notebookId}/sections` to retrieve the list of sections.</span></span>
+* <span data-ttu-id="b0d9d-117">取得したすべてのノートブックについて、`GET ~/notebooks/{notebookId}/sections` を呼び出してセクションの一覧を取得します。</span><span class="sxs-lookup"><span data-stu-id="b0d9d-117">For every retrieved notebook, call `GET ~/notebooks/{notebookId}/sections` to retrieve the list of sections.</span></span>
 
-* <span data-ttu-id="0fa67-118">取得したすべてのノートブックについて、`GET ~/notebooks/{notebookId}/sectionGroups` を呼び出してセクション グループの一覧を取得します。</span><span class="sxs-lookup"><span data-stu-id="0fa67-118">For every retrieved notebook, call `GET ~/notebooks/{notebookId}/sectionGroups` to retrieve the list of section groups.</span></span>
+* <span data-ttu-id="b0d9d-118">取得したすべてのノートブックについて、`GET ~/notebooks/{notebookId}/sectionGroups` を呼び出してセクション グループの一覧を取得します。</span><span class="sxs-lookup"><span data-stu-id="b0d9d-118">For every retrieved notebook, call `GET ~/notebooks/{notebookId}/sectionGroups` to retrieve the list of section groups.</span></span>
 
-* <span data-ttu-id="0fa67-119">必要に応じて、セクション グループを再帰的に反復処理できます。</span><span class="sxs-lookup"><span data-stu-id="0fa67-119">Optionally recursively iterate through section groups.</span></span>
+* <span data-ttu-id="b0d9d-119">必要に応じて、セクション グループを再帰的に反復処理できます。</span><span class="sxs-lookup"><span data-stu-id="b0d9d-119">Optionally recursively iterate through section groups.</span></span>
 
-<span data-ttu-id="0fa67-120">この方法 (サービスへ何回かの連続した余分なラウンドトリップを実行) でも可能ですが、より優れたアプローチは、`$expand` クエリ パラメーターを使用することです。</span><span class="sxs-lookup"><span data-stu-id="0fa67-120">While this will work (with a few extra sequential roundtrips to the service), a better approach is to use the `$expand` query parameter.</span></span> 
+<span data-ttu-id="b0d9d-120">この方法 (サービスへ何回かの連続した余分なラウンドトリップを実行) でも可能ですが、より優れたアプローチは、`$expand` クエリ パラメーターを使用することです。</span><span class="sxs-lookup"><span data-stu-id="b0d9d-120">While this will work (with a few extra sequential roundtrips to the service), a better approach is to use the `$expand` query parameter.</span></span> 
 
 ```http
 GET ~/notebooks?$expand=sections,sectionGroups($expand=sections)
 ```
 
-<span data-ttu-id="0fa67-121">これにより、1 回のネットワーク ラウンドトリップで同じ結果が得られ、より良いパフォーマンスが得られます。</span><span class="sxs-lookup"><span data-stu-id="0fa67-121">This will yield the same results in one network roundtrip, with better performance.</span></span>
+<span data-ttu-id="b0d9d-121">これにより、1 回のネットワーク ラウンドトリップで同じ結果が得られ、より良いパフォーマンスが得られます。</span><span class="sxs-lookup"><span data-stu-id="b0d9d-121">This will yield the same results in one network roundtrip, with better performance.</span></span>
 
-## <a name="when-getting-all-pages-for-a-user-do-so-for-each-section-separately"></a><span data-ttu-id="0fa67-122">ユーザーに対してすべてのページを取得する場合は、セクションごとに個別に行ってください。</span><span class="sxs-lookup"><span data-stu-id="0fa67-122">When getting all pages for a user, do so for each section separately</span></span>
+## <a name="when-getting-all-pages-for-a-user-do-so-for-each-section-separately"></a><span data-ttu-id="b0d9d-122">ユーザーに対してすべてのページを取得する場合は、セクションごとに個別に行ってください。</span><span class="sxs-lookup"><span data-stu-id="b0d9d-122">When getting all pages for a user, do so for each section separately</span></span>
 
-<span data-ttu-id="0fa67-123">Microsoft Graph はすべてのページを取得するためにエンドポイントを公開しますが、これはユーザーがアクセス権を持っているすべてのページを取得する最良の方法ではありません。</span><span class="sxs-lookup"><span data-stu-id="0fa67-123">While Microsoft Graph exposes an endpoint to retrieve all pages, this isn't the best way to get all the pages the user has access to.</span></span> <span data-ttu-id="0fa67-124">ユーザーが持つセクションが多すぎると、これによりタイムアウトやパフォーマンスの低下を招きます。</span><span class="sxs-lookup"><span data-stu-id="0fa67-124">When the user has too many sections, this can lead to timeouts or bad performance.</span></span> <span data-ttu-id="0fa67-125">各セクションを反復処理して、個別にそれぞれのページを取得することをお勧めします。</span><span class="sxs-lookup"><span data-stu-id="0fa67-125">It is better to iterate each section, getting pages for each one separately.</span></span>
+<span data-ttu-id="b0d9d-123">Microsoft Graph はすべてのページを取得するためにエンドポイントを公開しますが、これはユーザーがアクセス権を持っているすべてのページを取得する最良の方法ではありません。</span><span class="sxs-lookup"><span data-stu-id="b0d9d-123">While Microsoft Graph exposes an endpoint to retrieve all pages, this isn't the best way to get all the pages the user has access to.</span></span> <span data-ttu-id="b0d9d-124">ユーザーが持つセクションが多すぎると、これによりタイムアウトやパフォーマンスの低下を招きます。</span><span class="sxs-lookup"><span data-stu-id="b0d9d-124">When the user has too many sections, this can lead to timeouts or bad performance.</span></span> <span data-ttu-id="b0d9d-125">各セクションを反復処理して、個別にそれぞれのページを取得することをお勧めします。</span><span class="sxs-lookup"><span data-stu-id="b0d9d-125">It is better to iterate each section, getting pages for each one separately.</span></span>
 
-<span data-ttu-id="0fa67-126">たとえば、この呼び出しを使用する代わりに、(この API はページ化されているので、すべてのページを一度にフェッチすることはできません):</span><span class="sxs-lookup"><span data-stu-id="0fa67-126">For example, instead of using this call (this API is paged, so you won't be able to fetch the pages all at once):</span></span>
+<span data-ttu-id="b0d9d-126">たとえば、この呼び出しを使用する代わりに、(この API はページ化されているので、すべてのページを一度にフェッチすることはできません):</span><span class="sxs-lookup"><span data-stu-id="b0d9d-126">For example, instead of using this call (this API is paged, so you won't be able to fetch the pages all at once):</span></span>
 
 ```http
 GET ~/pages
 ```
 
-<span data-ttu-id="0fa67-127">(特にすべてのセクションが必要ない場合は) 次の呼び出しを何回か使用することをお勧めします。</span><span class="sxs-lookup"><span data-stu-id="0fa67-127">It is better to use the following call several times (especially if you don't need all sections):</span></span>
+<span data-ttu-id="b0d9d-127">(特にすべてのセクションが必要ない場合は) 次の呼び出しを何回か使用することをお勧めします。</span><span class="sxs-lookup"><span data-stu-id="b0d9d-127">It is better to use the following call several times (especially if you don't need all sections):</span></span>
 
 ```http
 GET ~/sections/{id}/pages
 ```
 
-<span data-ttu-id="0fa67-128">ページのメタデータを取得するには、既定値 `lastModifiedDateTime` の順序付けを上書きします。</span><span class="sxs-lookup"><span data-stu-id="0fa67-128">When getting page metadata, override the default `lastModifiedDateTime` ordering.</span></span> <span data-ttu-id="0fa67-129">それらを `lastModifiedDateTime` で並べ替える必要がないときには、より速くページを取得できます。</span><span class="sxs-lookup"><span data-stu-id="0fa67-129">It is faster to get pages when you don't have to sort them by `lastModifiedDateTime`.</span></span> <span data-ttu-id="0fa67-130">これを行うには、たとえば他の任意のプロパティで並べ替えることができます。</span><span class="sxs-lookup"><span data-stu-id="0fa67-130">To do this, you can sort by any other property; for example:</span></span>
+<span data-ttu-id="b0d9d-128">ページのメタデータを取得するには、既定値 `lastModifiedDateTime` の順序付けを上書きします。</span><span class="sxs-lookup"><span data-stu-id="b0d9d-128">When getting page metadata, override the default `lastModifiedDateTime` ordering.</span></span> <span data-ttu-id="b0d9d-129">それらを `lastModifiedDateTime` で並べ替える必要がないときには、より速くページを取得できます。</span><span class="sxs-lookup"><span data-stu-id="b0d9d-129">It is faster to get pages when you don't have to sort them by `lastModifiedDateTime`.</span></span> <span data-ttu-id="b0d9d-130">これを行うには、たとえば他の任意のプロパティで並べ替えることができます。</span><span class="sxs-lookup"><span data-stu-id="b0d9d-130">To do this, you can sort by any other property; for example:</span></span>
 
 ```http
 GET ~/sections/{id}/pages?$select=id,title,createdDateTime&$orderby=createdDateTime
