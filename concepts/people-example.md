@@ -1,10 +1,10 @@
 ---
 title: Microsoft Graph の People API を使用した最も関連のある人物に関する情報の取得
-description: Graph のアプリケーションでは、ユーザーに最も関連する人を取得するためにユーザーの API を使用できます。 関連性は、ユーザーのコミュニケーションとコラボレーションのパターンとビジネスの関係によって決定されます。 ローカルの連絡先、取引先担当者からソーシャル ネットワークまたは組織のディレクトリから、およびユーザーの最新の通信 (電子メール、Skype など) ことがあります。 人 API と、この情報を生成するには、あいまい一致検索のサポートと、サインイン中のユーザーの組織内の別のユーザーに関連するユーザーの一覧を取得する機能も提供します。
+description: Microsoft Graph では、People API を使用してユーザーに最も関連のある人物を取得できます。 関連性は、ユーザーのコミュニケーションとコラボレーション パターン、およびビジネスのリレーションシップによって決定されます。 人物は、個人の連絡先、ソーシャル ネットワーキングの連絡先、組織のディレクトリ、最近 (メール、Skype などで) 連絡した人などになります。 この情報を生成するとともに、People API は、ファジー マッチ検索のサポートと、サインインしているユーザーの組織内の別のユーザーに関連するユーザーのリストを取得する機能も提供します。
 ms.date: 12/04/2018
 ms.openlocfilehash: b01ca4538c3155bbb30224b1f92d6e7ae55c5878
 ms.sourcegitcommit: 4a46cfd112c8089fc07e4e5ccdccaf415a3a0e7f
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/05/2018
 ms.locfileid: "27156055"
@@ -18,7 +18,7 @@ Microsoft Graph では、People API を使用してユーザーに最も関連�
 Microsoft Graph で People API を呼び出すには、アプリに適切なアクセス許可が必要になります。
 
 * People.Read - 一般的な People API の呼び出し (例: `https://graph.microsoft.com/v1.0/me/people/`) の作成に使用します。People.Read には、エンド ユーザーの同意が必要です。
-* People.Read.All - ログインしているユーザーの組織内の指定されたユーザーに最も関連する人を取得するために必要な (`https://graph.microsoft.com/v1.0/users('{id}')/people`) の呼び出し。 People.Read.All には、管理者の承認が必要です。
+* People.Read.All - サインインしているユーザーの組織 (`https://graph.microsoft.com/v1.0/users('{id}')/people`) の呼び出しで、特定のユーザーに最も関連性のあるユーザーを取得するために必要です。 People.Read.All には、管理者の同意が必要です。
 
 ## <a name="browse-people"></a>人物の参照
 

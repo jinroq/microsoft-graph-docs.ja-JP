@@ -3,7 +3,7 @@ title: 'OneNote API div タグを使用してキャプチャからデータを�
 description: " Office 365 のエンタープライズ ノートブック"
 ms.openlocfilehash: 201c20261d47e66df877e0138670b96ee377b7cb
 ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/29/2018
 ms.locfileid: "27092441"

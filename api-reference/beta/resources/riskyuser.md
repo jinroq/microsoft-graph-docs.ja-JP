@@ -1,18 +1,20 @@
 ---
 title: riskyUsers リソースの種類
 description: 危険にさらされている Azure AD ユーザーを表します。 Azure AD を継続的には、さまざまな信号と機械学習に基づくユーザーのリスクを評価します。 この API では、Azure の AD に問題が生じているすべてのユーザーにプログラムによるアクセスを提供します。
-ms.openlocfilehash: 5d51c303d25a781f8e432badb42acb48cf135217
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.openlocfilehash: 47856ab28a52046f19087e0f59745efb9855e81a
+ms.sourcegitcommit: ba6b1d1a12dcb54916b4d3e529c856f6514e01e7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27068300"
+ms.lasthandoff: 12/12/2018
+ms.locfileid: "27241063"
 ---
 # <a name="riskyusers-resource-type"></a>riskyUsers リソースの種類
 
 > **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。
 
 危険にさらされている Azure AD ユーザーを表します。 Azure AD を継続的には、さまざまな信号と機械学習に基づくユーザーのリスクを評価します。 この API では、Azure の AD に問題が生じているすべてのユーザーにプログラムによるアクセスを提供します。
+
+> **注:** この API には、Azure AD プレミアム P2 ライセンスが必要です。
 
 リスク イベントの詳細については、 [Azure Active Directory Id 保護](https://azure.microsoft.com/en-us/documentation/articles/active-directory-identityprotection/)を参照してください。
 
@@ -25,7 +27,7 @@ ms.locfileid: "27068300"
 
 ## <a name="properties"></a>プロパティ
 
-| プロパティ   | 型|説明|
+| プロパティ   | 種類|説明|
 |:---------------|:--------|:----------|
 |`id`|`string`|リスクのユーザーの一意の id|
 |`isDeleted`|`bool`|ユーザーを削除するかどうかを示します。 使用可能な値: `true`、`false`|

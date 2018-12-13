@@ -3,7 +3,7 @@ title: Azure Monitor を使った Microsoft Graph セキュリティ API の警�
 description: Microsoft Graph Security プロバイダーは、単一の REST エンドポイントを通じて管理できます。 このエンドポイントは、複数の SIEM 製品へのコネクタをサポートする Azure Monitor に対して構成できます。 この記事の手順 1 と手順 2 は、イベント ハブを介した使用をサポートするすべての Azure Monitor コネクタに関係しています。 この記事では、Splunk SIEM コネクタのエンド ツー エンドの統合について説明します。
 ms.openlocfilehash: bdd1d1e192a4945c67727d20e594006a387fb156
 ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/29/2018
 ms.locfileid: "27092477"

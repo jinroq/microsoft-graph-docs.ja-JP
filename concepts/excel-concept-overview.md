@@ -3,7 +3,7 @@ title: Excel のブックとグラフの API の概要
 description: Excel は、必要不可欠な生産性向上ツールです。 あらゆる業界と職務のユーザーが、あらゆる種類のデータを保存、追跡、操作するためのツールとして採用しています。 簡単なタスク追跡やデータ管理から複雑な計算や本格的なレポートに至るまで、あらゆる作業に使用されます。 Microsoft Graph で Excel REST API を使用して、データ、計算、レポート、およびダッシュボードの値を拡張できます。
 ms.openlocfilehash: 4d433b4b84bab2fc6a75cf8d0020d715a030683b
 ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/29/2018
 ms.locfileid: "27092547"

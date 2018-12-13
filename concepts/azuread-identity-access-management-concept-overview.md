@@ -3,7 +3,7 @@ title: Azure AD ID およびアクセス管理 API の概要
 description: 'Azure Active Directory (Azure AD) は、ID およびアクセス管理 (IAM) を集中管理し、アプリ、デバイス、サービス、およびインフラストラクチャの間でのセキュアで生産性の高いアクセスを可能にします。 組織では、Azure AD を使用することにより、オンプレミス、ハイブリッド、およびクラウドの各環境において、ID およびコントロール アクセスを管理することができます。  '
 ms.openlocfilehash: f933e47f890f228865968d47040fdb1316607692
 ms.sourcegitcommit: 4a46cfd112c8089fc07e4e5ccdccaf415a3a0e7f
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/05/2018
 ms.locfileid: "27156048"
@@ -40,7 +40,7 @@ Microsoft Graph で Azure AD API を使用することにより、次のこと�
 
 ### <a name="manage-devices"></a>デバイスを管理する
 
-組織に登録されている[デバイスを管理](https://docs.microsoft.com/en-us/azure/active-directory/device-management-introduction)します。 デバイスはユーザーに登録されており、ノート PC、デスクトップ、タブレット、携帯電話などのアイテムを含みます。 デバイスは通常、Device Registration Service を使用するか、Microsoft Intune によって、クラウドで作成されます。 これは、多要素認証の条件付きアクセス ポリシーで使用されます。
+組織に登録されている[デバイスを管理](https://docs.microsoft.com/ja-JP/azure/active-directory/device-management-introduction)します。 デバイスはユーザーに登録されており、ノート PC、デスクトップ、タブレット、携帯電話などのアイテムを含みます。 デバイスは通常、Device Registration Service を使用するか、Microsoft Intune によって、クラウドで作成されます。 これは、多要素認証の条件付きアクセス ポリシーで使用されます。
 
 ### <a name="partner-tenant-management"></a>パートナー テナント管理
 
@@ -56,33 +56,33 @@ Microsoft オンライン サービス (Office 365、Microsoft Azure、CRM オ�
 - 会社のサブスクライブ先の[サービス SKU](/graph/api/resources/subscribedsku?view=graph-rest-1.0) に関する情報を取得します。
 - 組織に[外部 (ゲスト) ユーザーを招待](/graph/api/resources/invitation?view=graph-rest-1.0)します。
 
-### <a name="monitor-identity-risks-preview"></a>リスクを識別する (プレビュー) を監視します。
+### <a name="monitor-identity-risks-preview"></a>ID リスクをモニターする (プレビュー)
 
 ほとんどのセキュリティ侵害は、攻撃者がユーザーの ID を盗んだ結果としてなされており、第三者による侵害、パスワード スプレー攻撃、および高度なフィッシング攻撃を利用することで、ますます威力が増してきています。 したがって、ユーザー アカウントのすべてをそのような攻撃から保護し、無防備な ID が悪用されるのを事前に防ぐ必要があります。
 
-Azure AD では、アカウントが無防備である可能性を示す異常を検出するために、アダプティブ機械学習アルゴリズムや経験則を使用します。 Azure AD の識別情報の保護はこのデータを使用すると、条件付きアクセスのリスク ・ ベースのポリシーを使用してユーザーを保護し、レポートとその検出の警告が生成されます。
+Azure AD では、アカウントが無防備である可能性を示す異常を検出するために、アダプティブ機械学習アルゴリズムや経験則を使用します。 そのデータを使用することにより、Azure AD Identity Protection は、リスク ベースの条件アクセス ポリシーでユーザーを保護し、レポートを生成し、検出された場合にはそれを通知します。
 
-今日では、Microsoft Graph により簡単にアクセスをなどの[クエリのリスク イベント Id 保護によって検出された](/graph/api/resources/identityprotection-root?view=graph-rest-beta)リスク イベントの種類、重要度、日付、時刻、場所、影響を受けるユーザーは、および複数に Azure AD プレミアム P2 の顧客にします。 お客様は、SIEM システムとセキュリティのアプリケーションでこれらのイベントを使用できます。
+現在、Microsoft Graph では、Azure AD Premium P2 のお客様が [Identity Protection によって検出されたリスク イベントのクエリ](/graph/api/resources/identityprotection-root?view=graph-rest-beta)を行って、リスク イベントの種類、重大度、発生した日時、場所、影響を受けたユーザーなどの情報を簡単に取得できるようになっています。 お客様は、取得したイベント情報を SIEM システムやセキュリティ アプリケーションで利用できます。
 
 ### <a name="activate-users-into-privileged-roles-preview"></a>特権ロール (プレビュー) にユーザーをアクティブにする
 
 管理者権限をオンデマンドでアクティブ化することによってリソースへのアクセスをセキュリティで保護できます。 [特権 ID 管理](/graph/api/resources/privilegedidentitymanagement-root?view=graph-rest-beta)の機能は Azure AD Premium P2 で利用できます。
 
-### <a name="manage-user-access-reviews-preview"></a>ユーザー アクセスの確認 (プレビュー) を管理します。
+### <a name="manage-user-access-reviews-preview"></a>ユーザー アクセス レビューを管理する (プレビュー)
 
-グループのメンバーシップ、およびアプリケーションへのアクセスのアクセス確認を構成できます。 [Access](/graph/api/resources/accessreviews-root?view=graph-rest-beta)は、Azure AD プレミアム P2 に示されています。
+グループ メンバーシップとアプリケーションのアクセス レビューを構成することができます。 [アクセス レビュー](/graph/api/resources/accessreviews-root?view=graph-rest-beta)の機能は Azure AD Premium P2 で利用できます。
 
 ## <a name="api-reference"></a>API リファレンス
 
-このサービスの API リファレンスを検索してください。
+このサービスの API リファレンスをお探しですか?
 
-- [Azure AD id およびアクセス管理 API Graph v1.0](/graph/api/resources/azure-ad-overview?view=graph-rest-1.0)
-- [Azure AD id およびアクセス管理 API ベータ版の Microsoft Graph](/graph/api/resources/azure-ad-overview?view=graph-rest-beta)
+- [Microsoft Graph v1.0 の Azure AD ID およびアクセス管理 API](/graph/api/resources/azure-ad-overview?view=graph-rest-1.0)
+- [Microsoft Graph ベータ版の Azure AD ID およびアクセス管理 API](/graph/api/resources/azure-ad-overview?view=graph-rest-beta)
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 - [Azure AD REST API の使用](/graph/api/resources/azure-ad-overview?view=graph-rest-1.0)方法を確認する。
 - Azure AD を使用して Microsoft Graph の[認証](auth-overview.md)を実行する。
-- [Azure AD サインイン](https://azure.microsoft.com/en-us/develop/identity/signin/)をアプリまたは Web サイトに統合する
+- [Azure AD サインイン](https://azure.microsoft.com/ja-JP/develop/identity/signin/)をアプリまたは Web サイトに統合する
 - Azure AD API の最新情報については、[Changelog](changelog.md) を参照してください。
 - Microsoft Graph の使用方法についてのさらに多くのアイデアについては、[サンプル](https://developer.microsoft.com/graph/graph/examples)を参照してください。

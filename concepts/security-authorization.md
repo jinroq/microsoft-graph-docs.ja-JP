@@ -3,7 +3,7 @@ title: 承認と Microsoft Graph セキュリティ API
 description: Microsoft Graph セキュリティ API からアクセスできるセキュリティ データは機密性が高く、アクセス許可と Azure Active Directory (Azure AD) ロールによって保護されています。
 ms.openlocfilehash: c69621fa7059a96381bed76b58c4a77e80d984dd
 ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/29/2018
 ms.locfileid: "27092353"

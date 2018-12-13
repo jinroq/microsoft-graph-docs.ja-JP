@@ -3,7 +3,7 @@ title: Microsoft Graph での Office 365 グループの概要
 description: 'Office 365 グループは、ユーザーが会話、ファイル、ノート、予定表、プラン、その他の多くのアセットを共有するための基本メンバーシップ サービスを提供します。 '
 ms.openlocfilehash: bf230b6e698c065a443ddab47b68439f2d6291d1
 ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/29/2018
 ms.locfileid: "27092453"

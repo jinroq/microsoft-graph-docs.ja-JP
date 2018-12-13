@@ -1,18 +1,21 @@
 ---
 title: リスト riskyUsers
 description: プロパティと、 **riskyUsers**オブジェクトの関係を取得します。
-ms.openlocfilehash: 152171ff098bb58e8cbb247ca687841e77594ead
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.openlocfilehash: d800f37c1e7e2d03edc0273d30e2be37c799d0d4
+ms.sourcegitcommit: ba6b1d1a12dcb54916b4d3e529c856f6514e01e7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27074464"
+ms.lasthandoff: 12/12/2018
+ms.locfileid: "27241042"
 ---
 # <a name="list-riskyusers"></a>リスト riskyUsers
 
 > **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。
 
 プロパティと、 **riskyUsers**オブジェクトの関係を取得します。
+
+> **注:** この API には、Azure AD プレミアム P2 ライセンスが必要です。
+
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
 

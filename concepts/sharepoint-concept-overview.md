@@ -3,7 +3,7 @@ title: SharePoint のサイトおよびコンテンツ API の概要
 description: SharePoint は、インテリジェントなモバイル イントラネットです。 SharePoint によりユーザーは、コンテンツ、知識、アプリケーションを共有および管理して、チームワークを推進したり、情報を検索したり、組織を通じて共同作業をしたりできます。 Microsoft Graph で SharePoint REST API を使用することにより、ソリューションを SharePoint のサイトおよびコンテンツに統合することができます。
 ms.openlocfilehash: e71ef735cadf13ddb05799431fcf74ae9b3fa463
 ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/29/2018
 ms.locfileid: "27092504"

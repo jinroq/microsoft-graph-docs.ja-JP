@@ -3,7 +3,7 @@ title: Microsoft Graph により Excel のある範囲の書式を更新する
 description: 次の例は、指定された範囲の RangeFormat、RangeFill、RangeFont の各プロパティを更新する方法を示します。
 ms.openlocfilehash: 17c8a8cc8e20887329ff79b4983f69e25d1e2dee
 ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/29/2018
 ms.locfileid: "27092384"

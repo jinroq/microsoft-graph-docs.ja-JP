@@ -3,7 +3,7 @@ title: OneNote ページに画像、ビデオ、ファイルを追加する
 description: " Office 365 のエンタープライズ ノートブック"
 ms.openlocfilehash: bc298339d73b162da6b2e37c314ffedfb76bd193
 ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/29/2018
 ms.locfileid: "27092422"

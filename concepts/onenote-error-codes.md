@@ -3,7 +3,7 @@ title: Microsoft Graph の OneNote API のエラー コード
 description: この記事では、API を通して送信した要求が失敗した場合に、Microsoft Graph の OneNote API から返されるエラー コードについて説明します。
 ms.openlocfilehash: 265929be081ee61a88b8baf4f600e2c154797ec7
 ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/29/2018
 ms.locfileid: "27092469"

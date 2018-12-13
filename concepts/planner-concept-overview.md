@@ -3,7 +3,7 @@ title: Planner のタスクおよびプラン API の概要
 description: Planner は、チームが作業を組織するためのシンプルかつビジュアルな手段を提供します。 顧客は Planner を使用することにより、プランを作成したり、タスクを組織して割り当てたり、進捗状況を共有したり、コンテンツに対して共同作業をしたりできます。  Planner は、タスク ボード、グラフ ページ、スケジュール ビューなどのインタラクティブなエクスペリエンスを提供し、Office 365 を通じた機能統合を実現します。
 ms.openlocfilehash: c2accfb200c9c55416872b5e5e240583db5396ef
 ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/29/2018
 ms.locfileid: "27092509"

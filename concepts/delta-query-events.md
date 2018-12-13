@@ -3,7 +3,7 @@ title: 'カレンダー ビューのイベントへの増分の変更を取得�
 description: 'カレンダー ビューは、既定のカレンダー (../me/calendarview) からの日付/時刻範囲内にあるイベントのコレクションです。 '
 ms.openlocfilehash: 68e4053c29fd95f04ff0b031bf519301e63dc08a
 ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/29/2018
 ms.locfileid: "27092449"

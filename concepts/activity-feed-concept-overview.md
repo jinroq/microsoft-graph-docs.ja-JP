@@ -3,7 +3,7 @@ title: Microsoft Graph のアクティビティ フィード API を使用して
 description: アクティビティの利用で、それらの Microsoft エクスペリエンスによってアプリの利用が推進されます。 また、アプリでのアクティビティを表示することにより、Windows、Android、iOS など、どんなプラットフォームのどんなデバイス上でも、直前の作業の続きにすぐ取り掛かることができます。
 ms.openlocfilehash: 768326a5a18962f28aebe2e66b7dbd2a95b1a7bb
 ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/29/2018
 ms.locfileid: "27092357"

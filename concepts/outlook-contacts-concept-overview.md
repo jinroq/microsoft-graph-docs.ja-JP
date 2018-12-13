@@ -3,7 +3,7 @@ title: Outlook 個人用連絡先 API の概要
 description: Outlook の連絡先を利用すると、個人用連絡先のデータを保存することができます。これは、Office 365 の Outlook メッセージング ハブの一部です。 Outlook により、メールの管理、会議のスケジュール管理、組織内のユーザーに関する情報の検索、オンライン会話の開始、ファイルの共有、およびグループでの共同作業をすることができます。
 ms.openlocfilehash: 0e8967fbb89b2d39e002826e9eb3f7f792c37a11
 ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/29/2018
 ms.locfileid: "27092354"

@@ -3,7 +3,7 @@ title: Outlook メール API の概要
 description: Outlook は、Office 365 のメッセージング通信ハブです。 連絡先の管理、会議のスケジュール管理、組織内のユーザーに関する情報の検索にも使用できます。
 ms.openlocfilehash: a4ae3c00b578cf2f3bce7a23b73ec47dadc81cf8
 ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/29/2018
 ms.locfileid: "27092527"

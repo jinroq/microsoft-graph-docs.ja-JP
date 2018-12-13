@@ -3,7 +3,7 @@ title: OneNote クライアントを開く
 description: 'ページまたはノートブックの **links** プロパティを使用して、OneNote アプリケーションで特定のぺージまたはノートブックを開きます。 '
 ms.openlocfilehash: c82507243488777e557b18e599edb86b2ac15622
 ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/29/2018
 ms.locfileid: "27092472"

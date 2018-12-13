@@ -3,7 +3,7 @@ title: Microsoft Teams チームを含めたグループの作成
 description: 'チームを含めてグループを作成するには、2 つの手順が必要です。 '
 ms.openlocfilehash: 530b3625a1aa1d020bff841196e3b83a2eb99a4e
 ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/29/2018
 ms.locfileid: "27092415"

@@ -3,7 +3,7 @@ title: 'Microsoft Graph の通知 API を使用した人中心の通知エクス
 description: '通知は、ユーザーと再びやり取りするのに最も効果的な方法です。 通知によってユーザーの注意を引き、ユーザーをアプリに戻すことができます。 マルチデバイス時代のユーザーは、アプリが存在するプラットフォームやデバイスが何であろうと、どこからでもアプリやサービスにアクセスできます。 '
 ms.openlocfilehash: 7ff36d7e0d406cb7918e2999812e3c756ae3b5bc
 ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/29/2018
 ms.locfileid: "27092406"

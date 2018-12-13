@@ -1,12 +1,12 @@
 ---
 title: チームからアプリケーションを削除します。
 description: 指定されたチームからアプリケーションをアンインストールします。
-ms.openlocfilehash: a1ba2ce7234796e3a2df508d40432a15690b1a63
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.openlocfilehash: f9e04ad9d6672c3b9cfaaee9109b1bba0f7ab4c6
+ms.sourcegitcommit: ba6b1d1a12dcb54916b4d3e529c856f6514e01e7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27021183"
+ms.lasthandoff: 12/12/2018
+ms.locfileid: "27241056"
 ---
 # <a name="delete-app-from-team"></a>チームからアプリケーションを削除します。
 
@@ -49,7 +49,7 @@ DELETE /teams/{id}/installedApps/{id}
   "name": "get_team"
 }-->
 ```http
-DELETE https://graph.microsoft.com/beta/teams/{id}/installedApps/{id}
+DELETE /teams/{id}/installedApps/{id}
 ```
 #### <a name="response"></a>応答
 応答の例を次に示します。 注: 簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。 実際の呼び出しではすべてのプロパティが返されます。

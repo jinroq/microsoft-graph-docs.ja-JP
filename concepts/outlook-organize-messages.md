@@ -3,7 +3,7 @@ title: Outlook メッセージを整理する
 description: Outlook を利用することによりユーザーは、自分の好みの方法でメッセージを整理できます。同じ受信トレイ フォルダーに全メッセージを入れたままにしたり、受信トレイの下に各自の必要に合うようなフォルダーのツリー構造を作成してその中にメッセージを分類保存したりできます。 ユーザーのメッセージに対してフィルター処理、検索、またはソートを便利に実行することができます。
 ms.openlocfilehash: 870da6cfed6bc286c0e9869dd98220d260b1e7ad
 ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/29/2018
 ms.locfileid: "27092491"

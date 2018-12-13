@@ -3,7 +3,7 @@ title: 'スキーマ拡張機能を使用したグループへのカスタム �
 description: '*スキーマ拡張機能*の使用方法について、具体例を使って説明します。 '
 ms.openlocfilehash: 098853ffaa5292313c71259e97fb8f1a8063fec4
 ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/29/2018
 ms.locfileid: "27092429"

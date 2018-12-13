@@ -3,7 +3,7 @@ title: クエリ パラメーターを使用して応答をカスタマイズす
 description: Microsoft Graph にはオプションのクエリ パラメーターがあり、応答で返されるデータの量を指定したり制御したりするために使用できます。次のクエリ パラメーターがサポートされています。
 ms.openlocfilehash: e41a6e8d9cc42506985bd82f00bcdc4efaec8add
 ms.sourcegitcommit: 2532b8dd7f2533d956e2600855b3daeabdd9b8ff
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/30/2018
 ms.locfileid: "27092551"
@@ -233,7 +233,7 @@ GET https://graph.microsoft.com/v1.0/me/messages?$search="pizza"
 - [キーワード クエリ言語 (KQL) 構文のリファレンス](https://docs.microsoft.com/ja-JP/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference)
 
 - 
-  [Exchange 2016 におけるインプレースの電子情報開示のためのメッセージ プロパティと検索演算子](https://technet.microsoft.com/ja-JP/library/dn774955(v=exchg.160).aspx)
+  [Exchange 2016 におけるインプレースの電子情報開示のためのメッセージ プロパティと検索演算子](https://technet.microsoft.com/en-us/library/dn774955(v=exchg.160).aspx)
 
 ### <a name="using-search-on-person-collections"></a>人物コレクションで $search を使用する
 

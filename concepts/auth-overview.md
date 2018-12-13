@@ -3,7 +3,7 @@ title: Microsoft Graph を呼び出すためのトークンの取得
 description: 'Microsoft Graph を呼び出すために、アプリは Microsoft のクラウド ID サービス Azure Active Directory (Azure AD) からアクセス トークンを取得する必要があります。アクセス トークンには、アプリとアプリに付与されているアクセス許可に関する情報 (要求) が含まれています (このアクセス許可は、Microsoft Graph を通じて利用できるリソースと API に対応するものです)。アクセス トークンを取得するためには、アプリを Azure AD で認証できるようにすることと、そのアプリが必要とする Microsoft Graph リソースへのアクセスをユーザーまたは管理者が承認することが必要です。 '
 ms.openlocfilehash: 2dc05d2edf1e5096b525d880b7d363f2e98721b0
 ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/29/2018
 ms.locfileid: "27092359"

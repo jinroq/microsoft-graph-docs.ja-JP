@@ -3,7 +3,7 @@ title: JSON バッチ処理を使用した複数要求の単一 HTTP 呼び出�
 description: JSON のバッチ処理を使用すると、複数の要求を単一の JSON オブジェクトに統合することにより、アプリケーションを最適化することができます。たとえば、次のような互いに無関係なデータからビューを作成する場合、
 ms.openlocfilehash: 875f5f8758d37e84498446876eb863f474e00f21
 ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/29/2018
 ms.locfileid: "27092364"

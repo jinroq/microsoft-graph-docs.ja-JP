@@ -3,7 +3,7 @@ title: OneDrive ファイル ストレージ API の概要
 description: OneDrive は、Office 365 のファイル ハブです。
 ms.openlocfilehash: dcd16969a2f1b1f6898696fe0be9539d50800252
 ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/29/2018
 ms.locfileid: "27092363"

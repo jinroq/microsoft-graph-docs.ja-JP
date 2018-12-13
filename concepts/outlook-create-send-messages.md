@@ -3,7 +3,7 @@ title: Outlook メッセージを作成して送信する
 description: Microsoft Graph では、メールは message リソースで表されます。
 ms.openlocfilehash: 49670df0d5d735e412a0fd97e3404fab044f6f50
 ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/29/2018
 ms.locfileid: "27092474"

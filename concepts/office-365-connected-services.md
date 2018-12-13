@@ -3,7 +3,7 @@ title: Visual Studio 2017 での Microsoft Graph API を使った Office 365 サ
 description: Visual Studio の接続済みサービスを使い、アプリケーションから Microsoft Graph API を呼び出せるよう設定できます。この記事では、サインインしているユーザーのプロフィール写真を取得し、OneDrive へアップロードし、写真の共有リンクを記載したメールを送信する方法を説明します。
 ms.openlocfilehash: 33469dec7014d81ed55c2efceb96a26c2651d239
 ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/29/2018
 ms.locfileid: "27092437"

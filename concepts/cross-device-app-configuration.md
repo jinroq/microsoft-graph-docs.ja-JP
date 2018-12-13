@@ -3,7 +3,7 @@ title: 'Project Rome を利用したクロスデバイス アプリのビルド 
 description: 'Project Rome を使用することにより、デバイスやプラットフォームをシームレスに超えて利用できるエクスペリエンスを構築できます。これにより、ユーザーのストレスが少なくなり、アプリの利用が推進されます。 アプリケーションが Project Rome API を利用して複数のデバイスやプラットフォーム間でデータを共有するには、プラットフォーム固有のアプリに関する情報を含むクロスデバイス アプリを構成する必要があります。 '
 ms.openlocfilehash: b555356fd523605837cd339630f64757fa8106bf
 ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/29/2018
 ms.locfileid: "27092479"
@@ -68,8 +68,8 @@ Windows デベロッパー センターを使用してクロスデバイス ア�
 
 ID を検索するには:
 
-* **windows_universal** - UWP アプリごとに 1 つの AUMID を提供します。 詳細については、「[インストール済みアプリのアプリケーション ユーザー モデル ID を検索する (Industry 8.1)](https://docs.microsoft.com/ja-JP/previous-versions/windows/embedded/dn449300(v=winembedded.82))」および「[アプリケーション](https://docs.microsoft.com/ja-JP/uwp/schemas/appxpackage/appxmanifestschema/element-application)」を参照してください。
-* **windows_win32** - アプリごとに 1 つの AUMID を提供します。 win32 アプリの場合、この情報を取得するにはスクリプトを使用する必要があります。 詳細については、「[インストール済みアプリのアプリケーション ユーザー モデル ID を検索する (Industry 8.1)](https://docs.microsoft.com/ja-JP/previous-versions/windows/embedded/dn449300(v=winembedded.82))」を参照してください。
+* **windows_universal** - UWP アプリごとに 1 つの AUMID を提供します。 詳細については、「[インストール済みアプリのアプリケーション ユーザー モデル ID を検索する (Industry 8.1)](https://docs.microsoft.com/en-us/previous-versions/windows/embedded/dn449300(v=winembedded.82))」および「[アプリケーション](https://docs.microsoft.com/ja-JP/uwp/schemas/appxpackage/appxmanifestschema/element-application)」を参照してください。
+* **windows_win32** - アプリごとに 1 つの AUMID を提供します。 win32 アプリの場合、この情報を取得するにはスクリプトを使用する必要があります。 詳細については、「[インストール済みアプリのアプリケーション ユーザー モデル ID を検索する (Industry 8.1)](https://docs.microsoft.com/en-us/previous-versions/windows/embedded/dn449300(v=winembedded.82))」を参照してください。
 * **android** - 詳細については、「[パッケージ名の変更](https://developer.android.com/studio/build/application-id.html#change_the_package_name)」を参照してください。 
 * **ios** - 詳細については、「[バンドル](https://developer.apple.com/documentation/foundation/bundle)」および「[必須プロパティ、ローカライズ可能なプロパティ、編集可能なプロパティ](https://help.apple.com/itunes-connect/developer/#/devfc3066644)」を参照してください。
 * **msa** – [アプリケーション登録ポータル](https://apps.dev.microsoft.com)にサインインします。 自分の任意のアプリについて、アプリ ID/クライアント ID を確認できます。 Live SDK (16 進値) と統合アプリ ID (GUID) の両方がサポートされています。   
@@ -94,7 +94,7 @@ Azure AD のユーザーをサポートするアプリケーションをビル�
 ID を検索するには:
 
 * 
-  **Windows 通知サービス** - 「[アプリの登録とクラウド サービスのための認証情報の受け取り](https://docs.microsoft.com/ja-JP/previous-versions/windows/apps/hh913756(v=win.10)#registering-your-app-and-receiving-the-credentials-for-your-cloud-service)」および「[アプリケーション登録ポータル](https://apps.dev.microsoft.com)」を参照してください。
+  **Windows 通知サービス** - 「[アプリの登録とクラウド サービスのための認証情報の受け取り](https://docs.microsoft.com/en-us/previous-versions/windows/apps/hh913756(v=win.10)#registering-your-app-and-receiving-the-credentials-for-your-cloud-service)」および「[アプリケーション登録ポータル](https://apps.dev.microsoft.com)」を参照してください。
 * **Apple Push Notification Service** -「[APN の概要](https://developer.apple.com/library/content/documentation/NetworkingInternet/Conceptual/RemoteNotificationsPG/APNSOverview.html)」を参照してください。
 * **Google Cloud Messaging** - 「[Firebase Cloud Messaging](https://firebase.google.com/docs/cloud-messaging/)」を参照してください。
 
@@ -141,8 +141,8 @@ JSON ファイル自体の名前は **cross-platform-app-identifiers** でなけ
 
 ID を検索するには:
 
-* **windows_universal** - UWP アプリごとに 1 つの AUMID を提供します。 詳細については、「[インストール済みアプリのアプリケーション ユーザー モデル ID を検索する (Industry 8.1)](https://docs.microsoft.com/ja-JP/previous-versions/windows/embedded/dn449300(v=winembedded.82))」および「[アプリケーション](https://docs.microsoft.com/ja-JP/uwp/schemas/appxpackage/appxmanifestschema/element-application)」を参照してください。
-* **windows_win32** - アプリごとに 1 つの AUMID を提供します。 win32 アプリの場合、この情報を取得するにはスクリプトを使用する必要があります。 詳細については、「[インストール済みアプリのアプリケーション ユーザー モデル ID を検索する (Industry 8.1)](https://docs.microsoft.com/ja-JP/previous-versions/windows/embedded/dn449300(v=winembedded.82))」を参照してください。
+* **windows_universal** - UWP アプリごとに 1 つの AUMID を提供します。 詳細については、「[インストール済みアプリのアプリケーション ユーザー モデル ID を検索する (Industry 8.1)](https://docs.microsoft.com/en-us/previous-versions/windows/embedded/dn449300(v=winembedded.82))」および「[アプリケーション](https://docs.microsoft.com/ja-JP/uwp/schemas/appxpackage/appxmanifestschema/element-application)」を参照してください。
+* **windows_win32** - アプリごとに 1 つの AUMID を提供します。 win32 アプリの場合、この情報を取得するにはスクリプトを使用する必要があります。 詳細については、「[インストール済みアプリのアプリケーション ユーザー モデル ID を検索する (Industry 8.1)](https://docs.microsoft.com/en-us/previous-versions/windows/embedded/dn449300(v=winembedded.82))」を参照してください。
 * **android** - 詳細については、「[パッケージ名の変更](https://developer.android.com/studio/build/application-id.html#change_the_package_name)」を参照してください。 
 * **ios** - 詳細については、「[バンドル](https://developer.apple.com/documentation/foundation/bundle)」および「[必須プロパティ、ローカライズ可能なプロパティ、編集可能なプロパティ](https://help.apple.com/itunes-connect/developer/#/devfc3066644)」を参照してください。
 * **msa** – [アプリケーション登録ポータル](https://apps.dev.microsoft.com)にサインインします。 自分の任意のアプリについて、アプリ ID/クライアント ID を確認できます。 Live SDK (16 進値) と統合アプリ ID (GUID) の両方がサポートされています。   
