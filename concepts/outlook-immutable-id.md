@@ -1,66 +1,66 @@
 ---
-title: Outlook リソースの不変の識別子を取得します。
-description: 'または大きなストレスが発生した可能性があることに気付きませんでしたか、注目に値する動作を outlook のアイテム (メッセージ、イベント、連絡先、タスクなど) がある: その Id を変更します。 しない場合に発生する多くの場合、だけアイテムを移動するが、後で使用できるオフラインの Id を格納するアプリケーションで実際に問題が発生することができます。 不変の識別子は、アイテムの有効期間は変更されませんが、ID を取得するようにアプリケーションを有効にします。'
+title: Outlook リソースの不変 ID の取得
+description: Outlook アイテム (メッセージ、イベント、連絡先、タスク) には、ユーザーは気づいていないか、大きな不満を感じている可能性のある、興味深い動作があります。それは、ID の変更です。 これは頻繁に発生するものではなく、アイテムが移動された場合のみ発生します。ただし、後で使用するために ID をオフラインで格納するアプリの場合、これは深刻な問題になることがあります。 不変 ID を使用すると、お使いのアプリケーションで、アイテムの有効期間中は変更のない ID を取得できます。
 ms.openlocfilehash: a7b188c968ad6e0bf93f92ec99cb473075f29a4d
 ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/29/2018
 ms.locfileid: "27092514"
 ---
-# <a name="get-immutable-identifiers-for-outlook-resources"></a>Outlook リソースの不変の識別子を取得します。
+# <a name="get-immutable-identifiers-for-outlook-resources"></a>Outlook リソースの不変 ID の取得
 
-または大きなストレスが発生した可能性があることに気付きませんでしたか、注目に値する動作を outlook のアイテム (メッセージ、イベント、連絡先、タスクなど) がある: その Id を変更します。 しない場合に発生する多くの場合、だけアイテムを移動するが、後で使用できるオフラインの Id を格納するアプリケーションで実際に問題が発生することができます。 不変の識別子は、アイテムの有効期間は変更されませんが、ID を取得するようにアプリケーションを有効にします。
+Outlook アイテム (メッセージ、イベント、連絡先、タスク) には、ユーザーは気づいていないか、大きな不満を感じている可能性のある、興味深い動作があります。それは、ID の変更です。 これは頻繁に発生するものではなく、アイテムが移動された場合のみ発生します。ただし、後で使用するために ID をオフラインで格納するアプリの場合、これは深刻な問題になることがあります。 不変 ID を使用すると、お使いのアプリケーションで、アイテムの有効期間中は変更のない ID を取得できます。
 
-> **重要な:** 不変の識別子は、Microsoft Graph で/beta のバージョンでの使用のみです。
+> **重要:** 不変 ID は、Microsoft Graph のベータ版のみで使用できます。
 
 ## <a name="how-it-works"></a>しくみ
 
-不変の ID は、Microsoft のグラフのオプション機能です。 オプトインすると、アプリケーションは、API 要求に追加の HTTP ヘッダーを送信する必要があります。
+不変 ID は、Microsoft Graph のオプション機能です。 オプト インするには、アプリケーションから、API 要求に追加の HTTP ヘッダーを含めて送信する必要があります。
 
 ```http
 Prefer: IdType="ImmutableId"
 ```
 
-このヘッダーに付属しています要求にのみ適用されます。 常に不変の Id を使用する場合は、API のすべての要求でこのヘッダーを含める必要があります。
+このヘッダーは、それが含まれる要求にのみ適用されます。 常に不変 ID を使用したい場合は、このヘッダーをすべての API 要求に含める必要があります。
 
-## <a name="lifetime-of-immutable-ids"></a>不変の Id の有効期間
+## <a name="lifetime-of-immutable-ids"></a>不変 ID の有効期間
 
-アイテムが同じメールボックスに保持している限り、アイテムの変更不可の ID は変更されません。 メールボックス内の別のフォルダーにアイテムを移動する場合に、不変の ID が変更されないことを意味します。 ただし場合は、不変の ID は変更されます。
+アイテムの不変 ID は、アイテムが同じメールボックス内にある限り、変更されません。 つまり、アイテムがメールボックス内の別のフォルダーに移動しても、不変 ID は変更されません。 ただし、次の場合、不変 ID は変更されます。
 
-- ユーザーがアーカイブ メールボックスにアイテムを移動します。
-- ユーザーが (PST ファイルのメッセージなど) にアイテムをエクスポートし、各自のメールボックスに再インポートすることです。
+- ユーザーがアイテムをアーカイブ メールボックスに移動した
+- ユーザーがアイテムをエクスポートし (PST へのエクスポート、MSG ファイルとしてのエクスポートなど)、それをメールボックスに再度インポートした
 
-## <a name="items-that-support-immutable-id"></a>不変の ID をサポートしている項目
+## <a name="items-that-support-immutable-id"></a>不変 ID をサポートするアイテム
 
-次の項目では、不変の Id をサポートします。
+不変 ID をサポートするアイテムは次のとおりです。
 
-- [メッセージ リソースの種類](/graph/api/resources/message?view=graph-rest-beta)
-- [添付ファイル リソースの種類](/graph/api/resources/attachment?view=graph-rest-beta)
-- [イベント リソースの種類](/graph/api/resources/event?view=graph-rest-beta)
-- [eventMessage リソースの種類](/graph/api/resources/eventmessage?view=graph-rest-beta)
+- [message リソース型](/graph/api/resources/message?view=graph-rest-beta)
+- [attachment リソース型](/graph/api/resources/attachment?view=graph-rest-beta)
+- [event リソース型](/graph/api/resources/event?view=graph-rest-beta)
+- [eventMessage リソース型](/graph/api/resources/eventmessage?view=graph-rest-beta)
 - [contact リソース型](/graph/api/resources/contact?view=graph-rest-beta)
-- [outlookTask リソースの種類](/graph/api/resources/outlooktask?view=graph-rest-beta)
+- [outlookTask リソース型](/graph/api/resources/outlooktask?view=graph-rest-beta)
 
-コンテナーの種類 (mailFolder、予定表など) は、不変の ID をサポートしていませんが、正規の Id の定数が存在しました。
+コンテナー型 (mailFolder、calendar など) は不変 ID をサポートしませんが、コンテナー型の標準 ID は既に不変です。
 
-## <a name="immutable-id-with-change-notifications"></a>変更通知の ID を変更できません。
+## <a name="immutable-id-with-change-notifications"></a>変更通知を使用する不変 ID
 
-含めることによって不変の Id での変更通知を送信する Microsoft Graph を要求することができます、`Prefer: IdType="ImmutableId"`ヘッダーと[サブスクリプションを作成](/graph/api/subscription-post-subscriptions?view=graph-rest-beta)します。 ヘッダーなしで作成された既存のサブスクリプションは、ID の既定の形式を使用する続行されます。 不変の Id を使用する既存のサブスクリプションを切り替えるには、削除し、ヘッダーを使用してそれらを再作成する必要があります。
+[サブスクリプションの作成](/graph/api/subscription-post-subscriptions?view=graph-rest-beta)時に `Prefer: IdType="ImmutableId"`ヘッダーを含めることで、Microsoft Graph が変更通知で不変 ID を送信するように要求することができます。 このヘッダーなしで作成された既存のサブスクリプションは、既定の ID 形式を使用し続けます。 既存のサブスクリプションを、不変 ID を使用するように切り替えるには、そのサブスクリプションを削除し、このヘッダーを使用して作成し直す必要があります。
 
-## <a name="immutable-id-with-delta-query"></a>デルタのクエリを使用して ID を変更できません。
+## <a name="immutable-id-with-delta-query"></a>デルタ クエリを使用する不変 ID
 
-Microsoft Graph などによってサポートされているリソースの種類の[クエリ応答のデルタ](delta-query-overview.md)に不変の Id を返すことを要求することができます、`Prefer: IdType="ImmutableId"`ヘッダー。 `nextLink`と`deltaLink`アプリケーションは、不変の ID の利用を再同期化する必要はありませんので、デルタのクエリによって返される値は両方の ID の形式と互換性のあります。 今後、不変の Id を取得するヘッダーを使用することができ、[更新](#updating-existing-data)することできます、アプリケーションのストレージとは別にします。
+`Prefer: IdType="ImmutableId"` ヘッダーを含めることで、Microsoft Graph が不変 ID を、サポートされるリソース型に関する[デルタ クエリ応答](delta-query-overview.md)で返すように要求することができます。 デルタ クエリによって返される `nextLink` と `deltaLink` の各値は、両方の ID 形式に対応しているので、アプリケーションは、不変 ID を利用するために再同期する必要はありません。 今後は、このヘッダーを使用して不変 ID を取得でき、[アプリの記憶域を個別に更新する](#updating-existing-data)ことができます。
 
-## <a name="updating-existing-data"></a>既存データの更新
+## <a name="updating-existing-data"></a>既存のデータの更新
 
-既に何千もの正規の Id を格納するデータベースがあれば、 [translateExchangeIds](/graph/api/user-translateexchangeids?view=graph-rest-beta)関数を使用して、変更不可能な形式にこれらの Id を移行できます。 ターゲット形式に変換するのには Id を 1000 までの配列を提供することができます。
+データベースが既に何千個もの標準 ID でいっぱいになっている場合、[translateExchangeIds](/graph/api/user-translateexchangeids?view=graph-rest-beta) 関数を使用して、それらの ID を不変形式に移行することができます。 最大 1000 個もの ID をターゲット形式に変換できます。
 
-> **注:** 使用することができます`translateExchangeIds`Exchange Web サービス アプリケーションは、Microsoft Graph を移行します。
+> **注:** `translateExchangeIds` を使用して、Exchange Web サービス アプリケーションを Microsoft Graph に移行することもできます。
 
 ### <a name="example"></a>例
 
-不変グラフ ID への通常のグラフ ID を変換する次の使用例
+次の例では、標準の Graph ID を不変の Graph ID に変換します。
 
 #### <a name="request"></a>要求
 
