@@ -1,12 +1,12 @@
 ---
 title: Microsoft Graph でのユーザーとの作業
 description: Microsoft Graph を使用し、ユーザー達、他のユーザーやグループとの関係、彼らのメール、予定表、およびファイルに基づいて、魅力的なアプリケーション体験を構築することができます。
-ms.openlocfilehash: ee084bb52042b0c42f0308584ec6b3989b5b6114
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.openlocfilehash: 0bc1e0b045703c73a22568912db978d50c5a0c15
+ms.sourcegitcommit: f3d479edf03935d0edbbc7668a65f7cde2a56c92
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27070020"
+ms.lasthandoff: 12/15/2018
+ms.locfileid: "27283648"
 ---
 # <a name="working-with-users-in-microsoft-graph"></a>Microsoft Graph でのユーザーとの作業
 

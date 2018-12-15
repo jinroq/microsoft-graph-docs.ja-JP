@@ -1,12 +1,12 @@
 ---
 title: teamsTab リソースの種類
 description: 'タブでは、teamsTab をチーム内でのチャネル (接続) を固定しました。 '
-ms.openlocfilehash: cba82432f6ade7baa591c3abb7e099ec7f6e9d5f
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.openlocfilehash: 102d4c0b766d8a0d9bdf22cb2ed76f5e06d87ad5
+ms.sourcegitcommit: f3d479edf03935d0edbbc7668a65f7cde2a56c92
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27069973"
+ms.lasthandoff: 12/15/2018
+ms.locfileid: "27283620"
 ---
 # <a name="teamstab-resource-type"></a>teamsTab リソースの種類
 
@@ -25,16 +25,16 @@ ms.locfileid: "27069973"
 |[[更新] タブ](../api/teamstab-update.md) | [teamsTab](teamstab.md) | タブのプロパティを更新します。|
 
 
-## <a name="properties"></a>プロパティ
+## <a name="properties"></a>Properties
 
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---------------|:--------|:----------|
-|  ID              |   文字列                  |  チャネル タブ読み取りのみの特定のインスタンスを一意に識別する識別子です。     |
+|  ID              |   string                  |  チャネル タブ読み取りのみの特定のインスタンスを一意に識別する識別子です。     |
 |  displayName            |   string                  |  タブの名前です。     |
 |  name            |   文字列                  |  (非推奨)タブの名前です。     |
-|  teamsAppId           |   文字列             |  タブのアプリケーション定義の識別子です。タブを作成した後は、この値を変更できません。     |
-|  sortOrderIndex  |   int                     |  タブの並べ替え順序のインデックス     |
-|  webUrl          |   文字列                  |  タブのインスタンスの高度なリンクの url です。 読み取り専用です。     |
+|  teamsAppId           |   string             |  タブのアプリケーション定義の識別子です。タブを作成した後は、この値を変更できません。     |
+|  sortOrderIndex  |   int                     |  タブの並べ替え順序のインデックス。     |
+|  webUrl          |   string                  |  タブのインスタンスの高度なリンクの url です。 読み取り専用です。     |
 |  configuration        |   [teamsTabConfiguration](teamstabconfiguration.md) |  タブに適用するカスタム設定のコンテナーです。タブでは、このプロパティが 1 回だけが構成されていると見なされます。     |
 
 ## <a name="relationships"></a>リレーションシップ

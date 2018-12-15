@@ -1,20 +1,20 @@
 items:
 - name: Microsoft Graph の概要
   href: /graph/overview?toc=./toc.json
-- name: 認証トークンの取得
+- name: 認証トークンを取得する
   href: /graph/auth-overview?toc=./ref/toc.json
   items:
-  - name: アプリを登録する
+  - name: アプリの登録
     href: /graph/auth-register-app-v2?toc=./ref/toc.json
   - name: ユーザーの代わりにアクセスを取得
     href: /graph/auth-v2-user?toc=./ref/toc.json
   - name: ユーザーなしでアクセスを取得
     href: /graph/auth-v2-service?toc=./ref/toc.json
-  - name: Permissions
+  - name: アクセス許可
     href: /graph/permissions-reference?toc=./ref/toc.json
-  - name: アプリケーション アクセス (Csp) を管理します。
+  - name: アプリケーション アクセス (CPS) の管理
     href: /graph/auth-cloudsolutionprovider?toc=./ref/toc.json
-- name: API を使用します。
+- name: API の使用
   href: /graph/use-the-api?toc=./ref/toc.json
   items:
   - name: ページング
@@ -23,27 +23,27 @@ items:
     href: /graph/query-parameters?toc=./ref/toc.json
   - name: バッチ要求
     href: /graph/json-batching?toc=./ref/toc.json
-  - name: スロットル
+  - name: 調整
     href: /graph/throttling?toc=./ref/toc.json
   - name: 変更通知
     href: /graph/webhooks?toc=./ref/toc.json
   - name: 変更履歴の記録
     href: /graph/delta-query-overview?toc=./ref/toc.json
     items:
-    - name: イベント (例) への変更を取得します。
+    - name: イベントへの変更の取得 (例)
       href: /graph/delta-query-events?toc=./ref/toc.json
-    - name: グループ (例) への変更を取得します。
+    - name: グループへの変更の取得 (例)
       href: /graph/delta-query-groups?toc=./ref/toc.json
-    - name: メッセージ (例) への変更を取得します。
+    - name: メッセージへの変更の取得 (例)
       href: /graph/delta-query-messages?toc=./ref/toc.json
-    - name: ユーザー (など) に変更を取得します。
+    - name: ユーザーへの変更の取得 (例)
       href: /graph/delta-query-users?toc=./ref/toc.json
-  - name: カスタム データを追加します。
+  - name: カスタム データの追加
     href: /graph/extensibility-overview?toc=./ref/toc.json
     items:
-    - name: 開いている拡張機能を使用 (例)
+    - name: オープン拡張機能の使用 (例)
       href: /graph/extensibility-open-users?toc=./ref/toc.json
-    - name: スキーマの拡張機能 (例) を使用します。
+    - name: スキーマ拡張機能の使用 (例)
       href: /graph/extensibility-schema-groups?toc=./ref/toc.json
   - name: リソース
     items:
@@ -55,13 +55,13 @@ items:
       href: /graph/changelog?toc=./ref/toc.json
     - name: エラー
       href: /graph/errors?toc=./ref/toc.json
-- name: リファレンス
+- name: 参照
   href: overview.md
   items:
   - name: ユーザー
     href: resources/users.md
     items:
-    - name: User
+    - name: ユーザー
       href: resources/user.md
       items:
       - name: ユーザーを一覧表示する
@@ -76,7 +76,7 @@ items:
         href: api/user-delete.md
       - name: デルタを取得します。
         href: api/user-delta.md
-    - name: 予定表
+    - name: カレンダー
       href: resources/event.md
       items:
       - name: イベントを一覧表示する
@@ -129,6 +129,8 @@ items:
         href: api/user-checkmembergroups.md
       - name: オブジェクトの Id を取得します。
         href: api/directoryobject-getbyids.md
+      - name: 個人データをエクスポートします。
+        href: api/user-exportpersonaldata.md
     - name: ドライブ
       href: resources/drive.md
       items:
@@ -217,7 +219,7 @@ items:
   - name: グループ
     href: resources/groups-overview.md
     items:
-    - name: Group
+    - name: グループ
       href: resources/group.md
       items:
       - name: お気に入りに追加します。
@@ -296,7 +298,7 @@ items:
         href: api/attachment-get.md
       - name: 添付ファイルを削除する
         href: api/attachment-delete.md
-    - name: 予定表
+    - name: カレンダー
       href: resources/calendar.md
       items:
       - name: イベントを一覧表示する
@@ -421,10 +423,10 @@ items:
         href: api/opentypeextension-post-opentypeextension.md
       - name: オープン拡張機能を取得する
         href: api/opentypeextension-get.md
-  - name: 予定表
+  - name: カレンダー
     href: resources/calendar.md
     items:
-    - name: Event
+    - name: イベント
       href: resources/event.md
       items:
       - name: イベントを一覧表示する
@@ -507,7 +509,7 @@ items:
         href: api/attachment-get.md
       - name: 添付ファイルを削除する
         href: api/attachment-delete.md
-    - name: 予定表
+    - name: カレンダー
       href: resources/calendar.md
       items:
       - name: 予定表を一覧表示する
@@ -2859,7 +2861,7 @@ items:
         href: resources/intune-shared-saveduistategenerationoptions.md
       - name: URI
         href: resources/intune-shared-uri.md
-      - name: User
+      - name: ユーザー
         href: resources/intune-shared-user.md
         items:
         - name: List
@@ -3013,7 +3015,7 @@ items:
         href: api/driveitem-list-versions.md
       - name: アイテムのプレビュー
         href: api/driveitem-preview.md
-    - name: Permissions
+    - name: アクセス許可
       href: resources/permission.md
       items:
       - name: 共有リンクを作成する
@@ -3030,7 +3032,7 @@ items:
         href: api/permission-update.md
       - name: アクセス許可を削除する
         href: api/permission-delete.md
-  - name: Id およびアクセス
+  - name: ID とアクセス
     href: resources/azure-ad-overview.md
     items:
     - name: 契約
@@ -3040,6 +3042,11 @@ items:
         href: api/contract-get.md
       - name: 契約書を一覧表示する
         href: api/contract-list.md
+    - name: データ ポリシーの操作
+      href: resources/datapolicyoperation.md
+      items:
+      - name: データ ポリシーの操作を取得します。
+        href: api/datapolicyoperation-get.md
     - name: 削除済みアイテム
       href: resources/directory.md
       items:
@@ -3910,7 +3917,7 @@ items:
         href: api/teamstab-delete.md
       - name: タブを追加します。
         href: api/teamstab-add.md
-    - name: 予定表
+    - name: カレンダー
       href: resources/event.md
       items:
       - name: イベントを一覧表示する
@@ -4109,9 +4116,9 @@ items:
       - name: サブスクリプションを削除する
         href: api/subscription-delete.md
   expanded: true
-ms.openlocfilehash: 5fd08c5b36c9fcec78cc6b48400347b90289b496
-ms.sourcegitcommit: 82f9d0d10388572a3073b2dde8ca0a7b409135b8
+ms.openlocfilehash: fbcf6261a173e7d99ae8aa25a8293f4a1e9c1ba7
+ms.sourcegitcommit: f3d479edf03935d0edbbc7668a65f7cde2a56c92
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "27191187"
+ms.lasthandoff: 12/15/2018
+ms.locfileid: "27283704"

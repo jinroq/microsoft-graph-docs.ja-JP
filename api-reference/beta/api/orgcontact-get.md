@@ -1,12 +1,12 @@
 ---
 title: OrgContact を取得します。
 description: プロパティと orgcontact オブジェクトの関係を取得します。
-ms.openlocfilehash: 178d670c55cdd904c604e1be1f6fb0aef3a4b953
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.openlocfilehash: 9297297bf341d622070c6ca200d99087588a8ce6
+ms.sourcegitcommit: f3d479edf03935d0edbbc7668a65f7cde2a56c92
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27067751"
+ms.lasthandoff: 12/15/2018
+ms.locfileid: "27283613"
 ---
 # <a name="get-orgcontact"></a>OrgContact を取得します。
 
@@ -31,7 +31,7 @@ GET /contacts/{id}
 このメソッドは、応答をカスタマイズするための [OData クエリ パラメーター](https://developer.microsoft.com/graph/docs/concepts/query_parameters)をサポートします。
 
 ## <a name="request-headers"></a>要求ヘッダー
-| 名前       | 型 | 説明|
+| 名前       | 種類 | 説明|
 |:-----------|:------|:----------|
 | Authorization  | string  | ベアラー {トークン}。必須。 |
 
@@ -64,14 +64,25 @@ Content-type: application/json
 Content-length: 222
 
 {
-  "businessPhones": [
-    "businessPhones-value"
+  "addresses":[
+      {
+        "city": "string",
+        "countryOrRegion": "string",
+        "officeLocation": "string",
+        "postalCode": "string",
+        "state": "string",
+        "street": "string"
+      }
   ],
-  "city": "city-value",
   "companyName": "companyName-value",
-  "country": "country-value",
   "department": "department-value",
-  "displayName": "displayName-value"
+  "displayName": "displayName-value",
+  "phones":[
+      {
+        "type": "string",
+        "number": "string"
+      }
+  ]
 }
 ```
 
