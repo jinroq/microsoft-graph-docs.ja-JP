@@ -1,10 +1,10 @@
 items:
 - name: Microsoft Graph の概要
   href: /graph/overview?toc=./toc.json
-- name: 認証トークンの取得
+- name: 認証トークンを取得する
   href: /graph/auth-overview?toc=./ref/toc.json
   items:
-  - name: アプリを登録する
+  - name: アプリの登録
     href: /graph/auth-register-app-v2?toc=./ref/toc.json
   - name: ユーザーの代わりにアクセスを取得
     href: /graph/auth-v2-user?toc=./ref/toc.json
@@ -12,9 +12,9 @@ items:
     href: /graph/auth-v2-service?toc=./ref/toc.json
   - name: アクセス許可
     href: /graph/permissions-reference?toc=./ref/toc.json
-  - name: アプリケーション アクセス (Csp) を管理します。
+  - name: アプリケーション アクセス (CPS) の管理
     href: /graph/auth-cloudsolutionprovider?toc=./ref/toc.json
-- name: API を使用します。
+- name: API の使用
   href: /graph/use-the-api?toc=./ref/toc.json
   items:
   - name: ページング
@@ -23,27 +23,27 @@ items:
     href: /graph/query-parameters?toc=./ref/toc.json
   - name: バッチ要求
     href: /graph/json-batching?toc=./ref/toc.json
-  - name: スロットル
+  - name: 調整
     href: /graph/throttling?toc=./ref/toc.json
   - name: 変更通知
     href: /graph/webhooks?toc=./ref/toc.json
   - name: 変更履歴の記録
     href: /graph/delta-query-overview?toc=./ref/toc.json
     items:
-    - name: イベント (例) への変更を取得します。
+    - name: イベントへの変更の取得 (例)
       href: /graph/delta-query-events?toc=./ref/toc.json
-    - name: グループ (例) への変更を取得します。
+    - name: グループへの変更の取得 (例)
       href: /graph/delta-query-groups?toc=./ref/toc.json
-    - name: メッセージ (例) への変更を取得します。
+    - name: メッセージへの変更の取得 (例)
       href: /graph/delta-query-messages?toc=./ref/toc.json
-    - name: ユーザー (など) に変更を取得します。
+    - name: ユーザーへの変更の取得 (例)
       href: /graph/delta-query-users?toc=./ref/toc.json
-  - name: カスタム データを追加します。
+  - name: カスタム データの追加
     href: /graph/extensibility-overview?toc=./ref/toc.json
     items:
-    - name: 開いている拡張機能を使用 (例)
+    - name: オープン拡張機能の使用 (例)
       href: /graph/extensibility-open-users?toc=./ref/toc.json
-    - name: スキーマの拡張機能 (例) を使用します。
+    - name: スキーマ拡張機能の使用 (例)
       href: /graph/extensibility-schema-groups?toc=./ref/toc.json
   - name: リソース
     items:
@@ -55,13 +55,13 @@ items:
       href: /graph/changelog?toc=./ref/toc.json
     - name: エラー
       href: /graph/errors?toc=./ref/toc.json
-- name: リファレンス
+- name: 参照
   href: overview.md
   items:
   - name: ユーザー
     href: resources/users.md
     items:
-    - name: User
+    - name: ユーザー
       href: resources/user.md
       items:
       - name: ユーザーを一覧表示する
@@ -76,7 +76,7 @@ items:
         href: api/user-delete.md
       - name: デルタを取得します。
         href: api/user-delta.md
-    - name: 予定表
+    - name: カレンダー
       href: resources/event.md
       items:
       - name: イベントを一覧表示する
@@ -95,7 +95,7 @@ items:
         href: api/calendar-list-calendarview.md
       - name: アラームの表示
         href: api/user-reminderview.md
-      - name: スケジュールの空き時間情報を取得します。
+      - name: 空き時間スケジュールを取得する
         href: api/calendar-getschedule.md
       - name: ルームのリストを検索します。
         href: api/user-findroomlists.md
@@ -254,7 +254,7 @@ items:
   - name: グループ
     href: resources/groups-overview.md
     items:
-    - name: Group
+    - name: グループ
       href: resources/group.md
       items:
       - name: お気に入りに追加します。
@@ -324,7 +324,7 @@ items:
         href: api/attachment-get.md
       - name: 添付ファイルを削除する
         href: api/attachment-delete.md
-    - name: 予定表
+    - name: カレンダー
       href: resources/calendar.md
       items:
       - name: イベントを一覧表示する
@@ -470,10 +470,10 @@ items:
         href: api/opentypeextension-post-opentypeextension.md
       - name: オープン拡張機能を取得する
         href: api/opentypeextension-get.md
-  - name: 予定表
+  - name: カレンダー
     href: resources/calendar.md
     items:
-    - name: Event
+    - name: イベント
       href: resources/event.md
       items:
       - name: イベントを一覧表示する
@@ -560,7 +560,7 @@ items:
         href: api/attachment-get.md
       - name: 添付ファイルを削除する
         href: api/attachment-delete.md
-    - name: 予定表
+    - name: カレンダー
       href: resources/calendar.md
       items:
       - name: 予定表を一覧表示する
@@ -583,7 +583,7 @@ items:
         href: api/calendar-post-events.md
       - name: 会議の日時を検索する
         href: api/user-findmeetingtimes.md
-      - name: スケジュールの空き時間情報を取得します。
+      - name: 空き時間スケジュールを取得する
         href: api/calendar-getschedule.md
       - name: ルームのリストを検索します。
         href: api/user-findroomlists.md
@@ -771,7 +771,7 @@ items:
         href: api/bookingbusiness-update.md
       - name: 削除
         href: api/bookingbusiness-delete.md
-      - name: 公開
+      - name: 発行する
         href: api/bookingbusiness-publish.md
       - name: 公開取り下げ
         href: api/bookingbusiness-unpublish.md
@@ -5822,7 +5822,7 @@ items:
         href: resources/intune-shared-saveduistategenerationoptions.md
       - name: URI
         href: resources/intune-shared-uri.md
-      - name: User
+      - name: ユーザー
         href: resources/intune-shared-user.md
         items:
         - name: List
@@ -6109,7 +6109,7 @@ items:
         href: api/permission-update.md
       - name: アクセス許可を削除する
         href: api/permission-delete.md
-  - name: Id およびアクセス
+  - name: ID とアクセス
     href: resources/azure-ad-overview.md
     items:
     - name: アクセス レビュー
@@ -6212,7 +6212,7 @@ items:
         href: api/approleassignment-update.md
       - name: AppRoleAssignment を削除します。
         href: api/approleassignment-delete.md
-    - name: アプリケーション
+    - name: Application
       href: resources/application.md
       items:
       - name: アプリケーション一覧
@@ -6253,6 +6253,11 @@ items:
         href: api/contract-get.md
       - name: 契約書を一覧表示する
         href: api/contract-list.md
+    - name: データ ポリシーの操作
+      href: resources/datapolicyoperation.md
+      items:
+      - name: データ ポリシーの操作を取得します。
+        href: api/datapolicyoperation-get.md
     - name: 削除済みアイテム
       href: resources/directory.md
       items:
@@ -6438,6 +6443,39 @@ items:
         href: api/organization-get.md
       - name: 組織の詳細を更新します。
         href: api/organization-update.md
+    - name: 組織の連絡先
+      href: resources/orgcontact.md
+      items:
+      - name: 連絡先
+        href: resources/orgcontact.md
+        items:
+        - name: 組織の連絡先のリスト
+          href: api/orgcontact-list.md
+        - name: 組織の連絡先を取得します。
+          href: api/orgcontact-get.md
+        - name: 組織の連絡先を更新します。
+          href: api/orgcontact-update.md
+        - name: 組織の連絡先を削除します。
+          href: api/orgcontact-delete.md
+      - name: グループ
+        href: resources/group.md
+        items:
+        - name: memberOf を一覧表示する
+          href: api/orgcontact-list-memberof.md
+        - name: メンバー グループを取得する
+          href: api/orgcontact-getmembergroups.md
+        - name: メンバー グループをチェックする
+          href: api/orgcontact-checkmembergroups.md
+      - name: 組織階層
+        href: resources/directoryobject.md
+        items:
+        - name: リストの直属の部下
+          href: api/orgcontact-list-directreports.md
+      - name: ディレクトリ オブジェクト
+        href: resources/directoryobject.md
+        items:
+        - name: メンバー オブジェクトを取得する
+          href: api/orgcontact-getmemberobjects.md
     - name: ポリシー
       href: resources/policy.md
       items:
@@ -6888,39 +6926,6 @@ items:
       items:
       - name: リソースを取得する
         href: api/resource-get.md
-  - name: 組織の連絡先
-    href: resources/orgcontact.md
-    items:
-    - name: 連絡先
-      href: resources/orgcontact.md
-      items:
-      - name: 組織の連絡先のリスト
-        href: api/orgcontact-list.md
-      - name: 組織の連絡先を取得します。
-        href: api/orgcontact-get.md
-      - name: 組織の連絡先を更新します。
-        href: api/orgcontact-update.md
-      - name: 組織の連絡先を削除します。
-        href: api/orgcontact-delete.md
-    - name: グループ
-      href: resources/group.md
-      items:
-      - name: memberOf を一覧表示する
-        href: api/orgcontact-list-memberof.md
-      - name: メンバー グループを取得する
-        href: api/orgcontact-getmembergroups.md
-      - name: メンバー グループをチェックする
-        href: api/orgcontact-checkmembergroups.md
-    - name: 組織階層
-      href: resources/directoryobject.md
-      items:
-      - name: リストの直属の部下
-        href: api/orgcontact-list-directreports.md
-    - name: ディレクトリ オブジェクト
-      href: resources/directoryobject.md
-      items:
-      - name: メンバー オブジェクトを取得する
-        href: api/orgcontact-getmemberobjects.md
   - name: 個人用連絡先
     href: resources/contact.md
     items:
@@ -7278,7 +7283,7 @@ items:
         href: api/sitepage-delete.md
       - name: '[発行] ページ'
         href: api/sitepage-publish.md
-  - name: ソーシャル ・ インテリジェンス
+  - name: ソーシャル インテリジェンス
     href: resources/social-overview.md
     items:
     - name: 洞察
@@ -7522,7 +7527,7 @@ items:
         href: api/teamstab-delete.md
     - name: チャット メッセージ
       href: resources/chatmessage.md
-    - name: 予定表
+    - name: カレンダー
       href: resources/event.md
       items:
       - name: イベントを一覧表示する
@@ -7820,9 +7825,9 @@ items:
       - name: サブスクリプションを削除する
         href: api/subscription-delete.md
   expanded: true
-ms.openlocfilehash: ab3329a853822812c08174e95ce080d712e7e4de
-ms.sourcegitcommit: 12c6e82f1417022540e534ebadbd0e8d7fb5abde
+ms.openlocfilehash: c65243ef45c288e7e6a592ad6778a20ad563ec86
+ms.sourcegitcommit: f3d479edf03935d0edbbc7668a65f7cde2a56c92
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/08/2018
-ms.locfileid: "27209755"
+ms.lasthandoff: 12/15/2018
+ms.locfileid: "27283718"
