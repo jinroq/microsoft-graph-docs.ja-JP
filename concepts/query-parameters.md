@@ -1,16 +1,23 @@
 ---
 title: クエリ パラメーターを使用して応答をカスタマイズする
 description: Microsoft Graph にはオプションのクエリ パラメーターがあり、応答で返されるデータの量を指定したり制御したりするために使用できます。次のクエリ パラメーターがサポートされています。
-ms.openlocfilehash: e41a6e8d9cc42506985bd82f00bcdc4efaec8add
-ms.sourcegitcommit: 2532b8dd7f2533d956e2600855b3daeabdd9b8ff
+ms.openlocfilehash: b79192a028be278ab38dc28f1d9d913b3bcb7209
+ms.sourcegitcommit: 9f953e0c4cd624ba31919bfd5e82bf3e33cb9e21
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/30/2018
-ms.locfileid: "27092551"
+ms.lasthandoff: 12/13/2018
+ms.locfileid: "27245107"
 ---
 # <a name="use-query-parameters-to-customize-responses"></a>クエリ パラメーターを使用して応答をカスタマイズする
 
-Microsoft Graph にはオプションのクエリ パラメーターがあり、応答で返されるデータの量を指定したり制御したりするために使用できます。次のクエリ パラメーターがサポートされています。
+Microsoft Graph はオプションのクエリ パラメーターをサポートしており、応答で返されるデータの量を指定したり制御したりするために使用できます。 正確なクエリ パラメーターのサポートは、API 操作ごとに異なり、API によっては、v1.0 とベータ版エンドポイントかでも異なることがあります。 
+
+> **注:** v1.0 とベータ版エンドポイントでは、`$` プレフィックスはオプションです。 たとえば、`filter` とせずに、`$filter` と指定することもできます。
+
+クエリ パラメーターには、OData のシステム クエリ オプションまたは他のクエリ パラメーターを使用できます。 
+
+## <a name="odata-system-query-options"></a>OData のシステム クエリ オプション
+Microsoft Graph API 操作は、次の OData のシステム クエリ オプションの 1 つ以上をサポートする可能性があります。 これらのクエリ オプションは、[OData V4 クエリ言語][odata-query]と互換性があります。
 
 >**注:** 例をクリックして [Graph エクスプローラー][graph-explorer]で試行します。
 
@@ -23,15 +30,15 @@ Microsoft Graph にはオプションのクエリ パラメーターがあり、
 | [$orderby](#orderby-parameter)     | 結果を並べます。|[`/users?$orderby=displayName desc`][orderby-example]
 | [$search](#search-parameter)       | 検索条件に基づいて結果を返します。現在、**messages** と **person** のコレクションでサポートされています。|[`/me/messages?$search=pizza`][search-example]
 | [$select](#select-parameter)       | プロパティ (列) をフィルターします。|[`/users?$select=givenName,surname`][select-example]
-| [$skip](#skip-parameter)           | 結果セットにインデックスを作成します。また一部の API でページングを実装するために使用されており、`$top` と組み合わせて結果を手動でページングすることもできます。 | [`/me/messages?$skip=11`][skip-example]
-| [$skipToken](#skiptoken-parameter) | 複数ページにわたる結果セットから、結果の次のページを取得します。(一部の API では代わりに `$skip` を使用します。) | `/users?$skiptoken=X%274453707402000100000017...`|
+| [$skip](#skip-parameter)           | 結果セットにインデックスを作成します。また一部の API でページングを実装するために使用されており、`$top` と組み合わせて手動で結果をページングすることもできます。 | [`/me/messages?$skip=11`][skip-example]
 | [$top](#top-parameter)             | 結果のページ サイズを設定します。 |[`/users?$top=2`][top-example]
 
 
+## <a name="other-query-parameters"></a>その他のクエリ パラメーター
 
-これらのパラメーターは、[OData V4 クエリ言語][odata-query]と互換性があります。 すべての Microsoft Graph API で全部のパラメーターがサポートされているわけではなく、`v1.0` エンドポイントと `beta` エンドポイントの間でサポートが大幅に異なる場合があります。 
-
-> **注:** `beta` と `v1.0` エンドポイントでは、`$` プレフィックスはオプションです。 たとえば、`$filter` の代わりに、`filter` を使用しても同じです。 
+| 名前                     | 説明 | 例
+|:-------------------------|:------------|:---------|
+| [$skipToken](#skiptoken-parameter) | 複数ページにわたる結果セットから、結果の次のページを取得します。(一部の API では代わりに `$skip` を使用します。) | `/users?$skiptoken=X%274453707402000100000017...`|
 
 ## <a name="encoding-query-parameters"></a>クエリ パラメーターのエンコード
 
