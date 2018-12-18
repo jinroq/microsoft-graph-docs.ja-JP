@@ -1,27 +1,28 @@
 ---
 title: windowsDeviceAccount リソースの種類
 description: まだ文書化されていません
-ms.openlocfilehash: 01341129f03121162cf430be4cc27a7004e9501e
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 212443034126e7dba322fe435897244fdc0fdfcc
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27022121"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27346033"
 ---
-# <a name="windowsdeviceaccount-resource-type"></a><span data-ttu-id="a1837-103">windowsDeviceAccount リソースの種類</span><span class="sxs-lookup"><span data-stu-id="a1837-103">windowsDeviceAccount resource type</span></span>
+# <a name="windowsdeviceaccount-resource-type"></a><span data-ttu-id="89497-103">windowsDeviceAccount リソースの種類</span><span class="sxs-lookup"><span data-stu-id="89497-103">windowsDeviceAccount resource type</span></span>
 
-> <span data-ttu-id="a1837-104">**注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。</span><span class="sxs-lookup"><span data-stu-id="a1837-104">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
+> <span data-ttu-id="89497-104">**注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。</span><span class="sxs-lookup"><span data-stu-id="89497-104">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
 
-<span data-ttu-id="a1837-105">まだ文書化されていません</span><span class="sxs-lookup"><span data-stu-id="a1837-105">Not yet documented</span></span>
-## <a name="properties"></a><span data-ttu-id="a1837-106">プロパティ</span><span class="sxs-lookup"><span data-stu-id="a1837-106">Properties</span></span>
-|<span data-ttu-id="a1837-107">プロパティ</span><span class="sxs-lookup"><span data-stu-id="a1837-107">Property</span></span>|<span data-ttu-id="a1837-108">型</span><span class="sxs-lookup"><span data-stu-id="a1837-108">Type</span></span>|<span data-ttu-id="a1837-109">説明</span><span class="sxs-lookup"><span data-stu-id="a1837-109">Description</span></span>|
+<span data-ttu-id="89497-105">まだ文書化されていません</span><span class="sxs-lookup"><span data-stu-id="89497-105">Not yet documented</span></span>
+## <a name="properties"></a><span data-ttu-id="89497-106">プロパティ</span><span class="sxs-lookup"><span data-stu-id="89497-106">Properties</span></span>
+|<span data-ttu-id="89497-107">プロパティ</span><span class="sxs-lookup"><span data-stu-id="89497-107">Property</span></span>|<span data-ttu-id="89497-108">種類</span><span class="sxs-lookup"><span data-stu-id="89497-108">Type</span></span>|<span data-ttu-id="89497-109">説明</span><span class="sxs-lookup"><span data-stu-id="89497-109">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="a1837-110">password</span><span class="sxs-lookup"><span data-stu-id="a1837-110">password</span></span>|<span data-ttu-id="a1837-111">String</span><span class="sxs-lookup"><span data-stu-id="a1837-111">String</span></span>|<span data-ttu-id="a1837-112">まだ文書化されていません</span><span class="sxs-lookup"><span data-stu-id="a1837-112">Not yet documented</span></span>|
+|<span data-ttu-id="89497-110">password</span><span class="sxs-lookup"><span data-stu-id="89497-110">password</span></span>|<span data-ttu-id="89497-111">String</span><span class="sxs-lookup"><span data-stu-id="89497-111">String</span></span>|<span data-ttu-id="89497-112">まだ文書化されていません</span><span class="sxs-lookup"><span data-stu-id="89497-112">Not yet documented</span></span>|
 
-## <a name="relationships"></a><span data-ttu-id="a1837-113">リレーションシップ</span><span class="sxs-lookup"><span data-stu-id="a1837-113">Relationships</span></span>
-<span data-ttu-id="a1837-114">なし</span><span class="sxs-lookup"><span data-stu-id="a1837-114">None</span></span>
-## <a name="json-representation"></a><span data-ttu-id="a1837-115">JSON 表記</span><span class="sxs-lookup"><span data-stu-id="a1837-115">JSON Representation</span></span>
-<span data-ttu-id="a1837-116">以下は、リソースの JSON 表記です。</span><span class="sxs-lookup"><span data-stu-id="a1837-116">Here is a JSON representation of the resource.</span></span>
+## <a name="relationships"></a><span data-ttu-id="89497-113">リレーションシップ</span><span class="sxs-lookup"><span data-stu-id="89497-113">Relationships</span></span>
+<span data-ttu-id="89497-114">なし</span><span class="sxs-lookup"><span data-stu-id="89497-114">None</span></span>
+## <a name="json-representation"></a><span data-ttu-id="89497-115">JSON 表記</span><span class="sxs-lookup"><span data-stu-id="89497-115">JSON Representation</span></span>
+<span data-ttu-id="89497-116">以下は、リソースの JSON 表記です。</span><span class="sxs-lookup"><span data-stu-id="89497-116">Here is a JSON representation of the resource.</span></span>
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.windowsDeviceAccount"

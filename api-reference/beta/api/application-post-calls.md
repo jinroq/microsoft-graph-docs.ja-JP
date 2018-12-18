@@ -1,58 +1,59 @@
 ---
 title: 呼び出しを作成します。
 description: 新しい呼び出しを作成します。
-ms.openlocfilehash: 863cde971859cf0b2b4eef8f400f3726eeac74d4
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lleonard-msft
+ms.openlocfilehash: b083c9a40fd1376370f7321111c6fbf89d6ee432
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27067437"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27348770"
 ---
-# <a name="create-call"></a><span data-ttu-id="13fc9-103">呼び出しを作成します。</span><span class="sxs-lookup"><span data-stu-id="13fc9-103">Create call</span></span>
+# <a name="create-call"></a><span data-ttu-id="a2d76-103">呼び出しを作成します。</span><span class="sxs-lookup"><span data-stu-id="a2d76-103">Create call</span></span>
 
-> <span data-ttu-id="13fc9-104">**重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。</span><span class="sxs-lookup"><span data-stu-id="13fc9-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="13fc9-105">実稼働アプリケーションでの、これらの API の使用はサポートされていません。</span><span class="sxs-lookup"><span data-stu-id="13fc9-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="a2d76-104">**重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。</span><span class="sxs-lookup"><span data-stu-id="a2d76-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="a2d76-105">実稼働アプリケーションでの、これらの API の使用はサポートされていません。</span><span class="sxs-lookup"><span data-stu-id="a2d76-105">Use of these APIs in production applications is not supported.</span></span>
 
-<span data-ttu-id="13fc9-106">新しい呼び出しを作成します。</span><span class="sxs-lookup"><span data-stu-id="13fc9-106">Create a new call.</span></span>
+<span data-ttu-id="a2d76-106">新しい呼び出しを作成します。</span><span class="sxs-lookup"><span data-stu-id="a2d76-106">Create a new call.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="13fc9-107">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="13fc9-107">Permissions</span></span>
-<span data-ttu-id="13fc9-p102">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="13fc9-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="a2d76-107">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="a2d76-107">Permissions</span></span>
+<span data-ttu-id="a2d76-p102">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="a2d76-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="13fc9-110">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="13fc9-110">Permission type</span></span>                        | <span data-ttu-id="13fc9-111">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="13fc9-111">Permissions (from least to most privileged)</span></span>                                             |
+| <span data-ttu-id="a2d76-110">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="a2d76-110">Permission type</span></span>                        | <span data-ttu-id="a2d76-111">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="a2d76-111">Permissions (from least to most privileged)</span></span>                                             |
 |:---------------------------------------|:----------------------------------------------------------------------------------------|
-| <span data-ttu-id="13fc9-112">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="13fc9-112">Delegated (work or school account)</span></span>     | <span data-ttu-id="13fc9-113">サポート対象外</span><span class="sxs-lookup"><span data-stu-id="13fc9-113">Not Supported</span></span>                                                                           |
-| <span data-ttu-id="13fc9-114">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="13fc9-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="13fc9-115">サポート対象外</span><span class="sxs-lookup"><span data-stu-id="13fc9-115">Not Supported</span></span>                                                                           |
-| <span data-ttu-id="13fc9-116">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="13fc9-116">Application</span></span>                            | <span data-ttu-id="13fc9-117">Calls.JoinGroupCallsasGuest.All、Calls.JoinGroupCalls.All、Calls.Initiate.All、Calls.InitiateGroupCalls.All</span><span class="sxs-lookup"><span data-stu-id="13fc9-117">Calls.JoinGroupCallsasGuest.All, Calls.JoinGroupCalls.All, Calls.Initiate.All, Calls.InitiateGroupCalls.All</span></span> |
+| <span data-ttu-id="a2d76-112">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="a2d76-112">Delegated (work or school account)</span></span>     | <span data-ttu-id="a2d76-113">サポート対象外</span><span class="sxs-lookup"><span data-stu-id="a2d76-113">Not Supported</span></span>                                                                           |
+| <span data-ttu-id="a2d76-114">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="a2d76-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="a2d76-115">サポート対象外</span><span class="sxs-lookup"><span data-stu-id="a2d76-115">Not Supported</span></span>                                                                           |
+| <span data-ttu-id="a2d76-116">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="a2d76-116">Application</span></span>                            | <span data-ttu-id="a2d76-117">Calls.JoinGroupCallsasGuest.All、Calls.JoinGroupCalls.All、Calls.Initiate.All、Calls.InitiateGroupCalls.All</span><span class="sxs-lookup"><span data-stu-id="a2d76-117">Calls.JoinGroupCallsasGuest.All, Calls.JoinGroupCalls.All, Calls.Initiate.All, Calls.InitiateGroupCalls.All</span></span> |
 
-> <span data-ttu-id="13fc9-118">**注:** アプリケーションがホストされているメディアを使用して呼び出し、上記の表に記載されているアクセス許可のいずれかで Calls.AccessMedia.All のアクセス許可が必要です。</span><span class="sxs-lookup"><span data-stu-id="13fc9-118">**Note:** For a call with app hosted media, you need the Calls.AccessMedia.All permission with one of the permissions listed in the previous table.</span></span>
+> <span data-ttu-id="a2d76-118">**注:** アプリケーションがホストされているメディアを使用して呼び出し、上記の表に記載されているアクセス許可のいずれかで Calls.AccessMedia.All のアクセス許可が必要です。</span><span class="sxs-lookup"><span data-stu-id="a2d76-118">**Note:** For a call with app hosted media, you need the Calls.AccessMedia.All permission with one of the permissions listed in the previous table.</span></span>
 
-## <a name="http-request"></a><span data-ttu-id="13fc9-119">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="13fc9-119">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="a2d76-119">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="a2d76-119">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /app/calls
 POST /applications/{id}/calls
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="13fc9-120">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="13fc9-120">Request headers</span></span>
-| <span data-ttu-id="13fc9-121">名前</span><span class="sxs-lookup"><span data-stu-id="13fc9-121">Name</span></span>          | <span data-ttu-id="13fc9-122">説明</span><span class="sxs-lookup"><span data-stu-id="13fc9-122">Description</span></span>               |
+## <a name="request-headers"></a><span data-ttu-id="a2d76-120">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="a2d76-120">Request headers</span></span>
+| <span data-ttu-id="a2d76-121">名前</span><span class="sxs-lookup"><span data-stu-id="a2d76-121">Name</span></span>          | <span data-ttu-id="a2d76-122">説明</span><span class="sxs-lookup"><span data-stu-id="a2d76-122">Description</span></span>               |
 |:--------------|:--------------------------|
-| <span data-ttu-id="13fc9-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="13fc9-123">Authorization</span></span> | <span data-ttu-id="13fc9-p103">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="13fc9-p103">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="a2d76-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="a2d76-123">Authorization</span></span> | <span data-ttu-id="a2d76-p103">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="a2d76-p103">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="13fc9-126">要求本文</span><span class="sxs-lookup"><span data-stu-id="13fc9-126">Request body</span></span>
-<span data-ttu-id="13fc9-127">要求の本体[を呼び出す](../resources/call.md)オブジェクトの JSON の形式を指定します。</span><span class="sxs-lookup"><span data-stu-id="13fc9-127">In the request body, supply a JSON representation of a [call](../resources/call.md) object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="a2d76-126">要求本文</span><span class="sxs-lookup"><span data-stu-id="a2d76-126">Request body</span></span>
+<span data-ttu-id="a2d76-127">要求の本体[を呼び出す](../resources/call.md)オブジェクトの JSON の形式を指定します。</span><span class="sxs-lookup"><span data-stu-id="a2d76-127">In the request body, supply a JSON representation of a [call](../resources/call.md) object.</span></span>
 
-> <span data-ttu-id="13fc9-128">**注:** プロパティとしてマーク`Server generated`を処理するときに無視されます`POST`の`app/calls`。</span><span class="sxs-lookup"><span data-stu-id="13fc9-128">**Note:** Properties marked as `Server generated` are ignored when processing `POST` on `app/calls`.</span></span>
+> <span data-ttu-id="a2d76-128">**注:** プロパティとしてマーク`Server generated`を処理するときに無視されます`POST`の`app/calls`。</span><span class="sxs-lookup"><span data-stu-id="a2d76-128">**Note:** Properties marked as `Server generated` are ignored when processing `POST` on `app/calls`.</span></span>
 
-## <a name="response"></a><span data-ttu-id="13fc9-129">応答</span><span class="sxs-lookup"><span data-stu-id="13fc9-129">Response</span></span>
-<span data-ttu-id="13fc9-130">かどうかは成功すると、このメソッドが返されます、`201 Created`応答コードと応答の本文[を呼び出す](../resources/call.md)オブジェクト。</span><span class="sxs-lookup"><span data-stu-id="13fc9-130">If successful, this method returns a `201 Created` response code and a [call](../resources/call.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="a2d76-129">応答</span><span class="sxs-lookup"><span data-stu-id="a2d76-129">Response</span></span>
+<span data-ttu-id="a2d76-130">かどうかは成功すると、このメソッドが返されます、`201 Created`応答コードと応答の本文[を呼び出す](../resources/call.md)オブジェクト。</span><span class="sxs-lookup"><span data-stu-id="a2d76-130">If successful, this method returns a `201 Created` response code and a [call](../resources/call.md) object in the response body.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="13fc9-131">例</span><span class="sxs-lookup"><span data-stu-id="13fc9-131">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="a2d76-131">例</span><span class="sxs-lookup"><span data-stu-id="a2d76-131">Examples</span></span>
 
-### <a name="create-peer-to-peer-voip-call-with-service-hosted-media"></a><span data-ttu-id="13fc9-132">サービスがホストされているメディアを使用してピア ツー ピアの VOIP 呼び出しを作成します。</span><span class="sxs-lookup"><span data-stu-id="13fc9-132">Create peer to peer VOIP call with service hosted media</span></span>
+### <a name="create-peer-to-peer-voip-call-with-service-hosted-media"></a><span data-ttu-id="a2d76-132">サービスがホストされているメディアを使用してピア ツー ピアの VOIP 呼び出しを作成します。</span><span class="sxs-lookup"><span data-stu-id="a2d76-132">Create peer to peer VOIP call with service hosted media</span></span>
 
-> <span data-ttu-id="13fc9-133">**注:** この呼び出しでは、Calls.Initiate.All アクセス許可が必要です。</span><span class="sxs-lookup"><span data-stu-id="13fc9-133">**Note:** This call needs the Calls.Initiate.All permission.</span></span>
+> <span data-ttu-id="a2d76-133">**注:** この呼び出しでは、Calls.Initiate.All アクセス許可が必要です。</span><span class="sxs-lookup"><span data-stu-id="a2d76-133">**Note:** This call needs the Calls.Initiate.All permission.</span></span>
 
-##### <a name="request"></a><span data-ttu-id="13fc9-134">要求</span><span class="sxs-lookup"><span data-stu-id="13fc9-134">Request</span></span>
-<span data-ttu-id="13fc9-135">次の例は要求を示しています。</span><span class="sxs-lookup"><span data-stu-id="13fc9-135">The following example shows the request.</span></span>
+##### <a name="request"></a><span data-ttu-id="a2d76-134">要求</span><span class="sxs-lookup"><span data-stu-id="a2d76-134">Request</span></span>
+<span data-ttu-id="a2d76-135">次の例は要求を示しています。</span><span class="sxs-lookup"><span data-stu-id="a2d76-135">The following example shows the request.</span></span>
 
 <!-- {
   "blockType": "request",
@@ -102,9 +103,9 @@ Content-Type: application/json
 }
 ```
 
-##### <a name="response"></a><span data-ttu-id="13fc9-136">応答</span><span class="sxs-lookup"><span data-stu-id="13fc9-136">Response</span></span>
+##### <a name="response"></a><span data-ttu-id="a2d76-136">応答</span><span class="sxs-lookup"><span data-stu-id="a2d76-136">Response</span></span>
 
-> <span data-ttu-id="13fc9-p104">**注:** 読みやすくするために、ここに示す応答オブジェクトは短くされている場合があります。実際の呼び出しからは、すべてのプロパティが返されます。</span><span class="sxs-lookup"><span data-stu-id="13fc9-p104">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+> <span data-ttu-id="a2d76-p104">**注:** 読みやすくするために、ここに示す応答オブジェクトは短くされている場合があります。実際の呼び出しからは、すべてのプロパティが返されます。</span><span class="sxs-lookup"><span data-stu-id="a2d76-p104">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -156,7 +157,7 @@ Content-Type: application/json
 }
 ```
 
-##### <a name="notification---establishing"></a><span data-ttu-id="13fc9-139">通知を確立します。</span><span class="sxs-lookup"><span data-stu-id="13fc9-139">Notification - establishing</span></span>
+##### <a name="notification---establishing"></a><span data-ttu-id="a2d76-139">通知を確立します。</span><span class="sxs-lookup"><span data-stu-id="a2d76-139">Notification - establishing</span></span>
 
 ```http
 POST https://bot.contoso.com/api/calls
@@ -184,7 +185,7 @@ Content-Type: application/json
   ]
 }
 ```
-##### <a name="notification---established"></a><span data-ttu-id="13fc9-140">通知の設定</span><span class="sxs-lookup"><span data-stu-id="13fc9-140">Notification - established</span></span>
+##### <a name="notification---established"></a><span data-ttu-id="a2d76-140">通知の設定</span><span class="sxs-lookup"><span data-stu-id="a2d76-140">Notification - established</span></span>
 
 ```http
 POST https://bot.contoso.com/api/calls
@@ -213,12 +214,12 @@ Content-Type: application/json
 }
 ```
 
-### <a name="create-peer-to-peer-voip-call-with-application-hosted-media"></a><span data-ttu-id="13fc9-141">アプリケーションがホストされているメディアを使用してピア ツー ピアの VOIP 呼び出しを作成します。</span><span class="sxs-lookup"><span data-stu-id="13fc9-141">Create peer to peer VOIP call with application hosted media</span></span>
+### <a name="create-peer-to-peer-voip-call-with-application-hosted-media"></a><span data-ttu-id="a2d76-141">アプリケーションがホストされているメディアを使用してピア ツー ピアの VOIP 呼び出しを作成します。</span><span class="sxs-lookup"><span data-stu-id="a2d76-141">Create peer to peer VOIP call with application hosted media</span></span>
 
-> <span data-ttu-id="13fc9-142">注: 必要な権限を Calls.Initiate.All と Calls.AccessMedia.All。</span><span class="sxs-lookup"><span data-stu-id="13fc9-142">Note: Needs Calls.Initiate.All and Calls.AccessMedia.All permission.</span></span>
+> <span data-ttu-id="a2d76-142">注: 必要な権限を Calls.Initiate.All と Calls.AccessMedia.All。</span><span class="sxs-lookup"><span data-stu-id="a2d76-142">Note: Needs Calls.Initiate.All and Calls.AccessMedia.All permission.</span></span>
 
-##### <a name="request"></a><span data-ttu-id="13fc9-143">要求</span><span class="sxs-lookup"><span data-stu-id="13fc9-143">Request</span></span>
-<span data-ttu-id="13fc9-144">次の例は要求を示しています。</span><span class="sxs-lookup"><span data-stu-id="13fc9-144">The following example shows the request.</span></span>
+##### <a name="request"></a><span data-ttu-id="a2d76-143">要求</span><span class="sxs-lookup"><span data-stu-id="a2d76-143">Request</span></span>
+<span data-ttu-id="a2d76-144">次の例は要求を示しています。</span><span class="sxs-lookup"><span data-stu-id="a2d76-144">The following example shows the request.</span></span>
 
 ```http
 POST https://graph.microsoft.com/beta/app/calls
@@ -264,11 +265,11 @@ Content-Type: application/json
 }
 ```
 
-### <a name="create-group-call-with-service-hosted-media"></a><span data-ttu-id="13fc9-145">サービスがホストされているメディアを使用して呼び出しのグループを作成します。</span><span class="sxs-lookup"><span data-stu-id="13fc9-145">Create group call with service hosted media</span></span>
+### <a name="create-group-call-with-service-hosted-media"></a><span data-ttu-id="a2d76-145">サービスがホストされているメディアを使用して呼び出しのグループを作成します。</span><span class="sxs-lookup"><span data-stu-id="a2d76-145">Create group call with service hosted media</span></span>
 
-> <span data-ttu-id="13fc9-146">**注:** この例では、Calls.InitiateGroupCalls.All と Calls.AccessMedia.All のアクセス許可が必要です。</span><span class="sxs-lookup"><span data-stu-id="13fc9-146">**Note:** This example needs the Calls.InitiateGroupCalls.All and Calls.AccessMedia.All permissions.</span></span>
+> <span data-ttu-id="a2d76-146">**注:** この例では、Calls.InitiateGroupCalls.All と Calls.AccessMedia.All のアクセス許可が必要です。</span><span class="sxs-lookup"><span data-stu-id="a2d76-146">**Note:** This example needs the Calls.InitiateGroupCalls.All and Calls.AccessMedia.All permissions.</span></span>
 
-##### <a name="request"></a><span data-ttu-id="13fc9-147">要求</span><span class="sxs-lookup"><span data-stu-id="13fc9-147">Request</span></span>
+##### <a name="request"></a><span data-ttu-id="a2d76-147">要求</span><span class="sxs-lookup"><span data-stu-id="a2d76-147">Request</span></span>
 
 ```http
 POST https://graph.microsoft.com/beta/app/calls
@@ -330,11 +331,11 @@ Content-Type: application/json
 }
 ```
 
-### <a name="join-private-meeting-with-service-hosted-media"></a><span data-ttu-id="13fc9-148">サービスがホストされているメディアを使用してプライベートな会議に参加します。</span><span class="sxs-lookup"><span data-stu-id="13fc9-148">Join private meeting with service hosted media</span></span>
+### <a name="join-private-meeting-with-service-hosted-media"></a><span data-ttu-id="a2d76-148">サービスがホストされているメディアを使用してプライベートな会議に参加します。</span><span class="sxs-lookup"><span data-stu-id="a2d76-148">Join private meeting with service hosted media</span></span>
 
-> <span data-ttu-id="13fc9-149">**注:** この例では、Calls.JoinGroupCalls.All アクセス許可が必要です。</span><span class="sxs-lookup"><span data-stu-id="13fc9-149">**Note:** This example needs the Calls.JoinGroupCalls.All permission.</span></span>
+> <span data-ttu-id="a2d76-149">**注:** この例では、Calls.JoinGroupCalls.All アクセス許可が必要です。</span><span class="sxs-lookup"><span data-stu-id="a2d76-149">**Note:** This example needs the Calls.JoinGroupCalls.All permission.</span></span>
 
-##### <a name="request"></a><span data-ttu-id="13fc9-150">要求</span><span class="sxs-lookup"><span data-stu-id="13fc9-150">Request</span></span>
+##### <a name="request"></a><span data-ttu-id="a2d76-150">要求</span><span class="sxs-lookup"><span data-stu-id="a2d76-150">Request</span></span>
 
 ```http
 POST https://graph.microsoft.com/beta/app/calls
@@ -386,11 +387,11 @@ Content-Type: application/json
 }
 ```
 
-### <a name="join-channel-meeting-with-service-hosted-media"></a><span data-ttu-id="13fc9-151">サービスがホストされているメディアを使用してチャネルの会議に参加します。</span><span class="sxs-lookup"><span data-stu-id="13fc9-151">Join channel meeting with service hosted media</span></span>
+### <a name="join-channel-meeting-with-service-hosted-media"></a><span data-ttu-id="a2d76-151">サービスがホストされているメディアを使用してチャネルの会議に参加します。</span><span class="sxs-lookup"><span data-stu-id="a2d76-151">Join channel meeting with service hosted media</span></span>
 
-> <span data-ttu-id="13fc9-152">**注:** この例では、Calls.JoinGroupCalls.All アクセス許可が必要です。</span><span class="sxs-lookup"><span data-stu-id="13fc9-152">**Note:** This example needs the Calls.JoinGroupCalls.All permission.</span></span>
+> <span data-ttu-id="a2d76-152">**注:** この例では、Calls.JoinGroupCalls.All アクセス許可が必要です。</span><span class="sxs-lookup"><span data-stu-id="a2d76-152">**Note:** This example needs the Calls.JoinGroupCalls.All permission.</span></span>
 
-##### <a name="request"></a><span data-ttu-id="13fc9-153">要求</span><span class="sxs-lookup"><span data-stu-id="13fc9-153">Request</span></span>
+##### <a name="request"></a><span data-ttu-id="a2d76-153">要求</span><span class="sxs-lookup"><span data-stu-id="a2d76-153">Request</span></span>
 
 ```http
 POST https://graph.microsoft.com/beta/app/calls
@@ -443,11 +444,11 @@ Content-Type: application/json
 }
 ```
 
-### <a name="join-channel-meeting-as-a-guest-with-service-hosted-media"></a><span data-ttu-id="13fc9-154">サービスがホストされているメディアを使用してゲストとしてチャネルの会議に参加します。</span><span class="sxs-lookup"><span data-stu-id="13fc9-154">Join channel meeting as a guest with service hosted media</span></span>
+### <a name="join-channel-meeting-as-a-guest-with-service-hosted-media"></a><span data-ttu-id="a2d76-154">サービスがホストされているメディアを使用してゲストとしてチャネルの会議に参加します。</span><span class="sxs-lookup"><span data-stu-id="a2d76-154">Join channel meeting as a guest with service hosted media</span></span>
 
-> <span data-ttu-id="13fc9-155">**注:** この例では、Calls.JoinGroupCallsAsGuest.All アクセス許可が必要です。</span><span class="sxs-lookup"><span data-stu-id="13fc9-155">**Note:** This example needs the Calls.JoinGroupCallsAsGuest.All permission.</span></span>
+> <span data-ttu-id="a2d76-155">**注:** この例では、Calls.JoinGroupCallsAsGuest.All アクセス許可が必要です。</span><span class="sxs-lookup"><span data-stu-id="a2d76-155">**Note:** This example needs the Calls.JoinGroupCallsAsGuest.All permission.</span></span>
 
-##### <a name="request"></a><span data-ttu-id="13fc9-156">要求</span><span class="sxs-lookup"><span data-stu-id="13fc9-156">Request</span></span>
+##### <a name="request"></a><span data-ttu-id="a2d76-156">要求</span><span class="sxs-lookup"><span data-stu-id="a2d76-156">Request</span></span>
 
 ```http
 POST https://graph.microsoft.com/beta/app/calls
