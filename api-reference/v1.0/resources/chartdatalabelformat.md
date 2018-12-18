@@ -1,12 +1,13 @@
 ---
 title: ChartDataLabelFormat リソースの種類
 description: グラフのデータ ラベルの書式設定プロパティをカプセル化します。
-ms.openlocfilehash: ec81523dc09c17cd8c7fb9d543c2214377201260
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lumine2008
+ms.openlocfilehash: 4c8961eb884a5ab603feda368934795cb73915d0
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27021208"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27356477"
 ---
 # <a name="chartdatalabelformat-resource-type"></a>ChartDataLabelFormat リソースの種類
 

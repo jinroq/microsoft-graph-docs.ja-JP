@@ -1,12 +1,13 @@
 ---
 title: ChartAreaFormat リソースの種類
 description: グラフ領域全体の書式設定プロパティをカプセル化します。
-ms.openlocfilehash: 1629faa007fa239e93c2e942af13570d4b46c488
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lumine2008
+ms.openlocfilehash: 36e303685713dd103d24ec6949eb8a2816d9ef8c
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27068710"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27356967"
 ---
 # <a name="chartareaformat-resource-type"></a>ChartAreaFormat リソースの種類
 

@@ -1,12 +1,13 @@
 ---
 title: updateWindowsDeviceAccount アクション
 description: まだ文書化されていません
-ms.openlocfilehash: da11fef02b5a2d47e2ca2dbf242e7e54ff5e55ee
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 9d7ae04e3fdbecdef75cbf905257510b5a6a893b
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27021926"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27356869"
 ---
 # <a name="updatewindowsdeviceaccount-action"></a>updateWindowsDeviceAccount アクション
 
@@ -44,7 +45,7 @@ POST /deviceManagement/detectedApps/{detectedAppId}/managedDevices/{managedDevic
 
 次の表に、このアクションで使用できるパラメーターを示します。
 
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
 |updateWindowsDeviceAccountActionParameter|[updateWindowsDeviceAccountActionParameter](../resources/intune-devices-updatewindowsdeviceaccountactionparameter.md)|まだ文書化されていません|
 

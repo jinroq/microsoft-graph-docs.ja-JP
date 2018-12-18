@@ -1,12 +1,13 @@
 ---
 title: detectedApp の作成
 description: 新しい detectedApp オブジェクトを作成します。
-ms.openlocfilehash: 1ff48803609ce03aed1ff6f979cfe6d7a804d68b
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 6e48d1fc38316144eb8aa800667b17a505d1e0a2
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27073658"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27357604"
 ---
 # <a name="create-detectedapp"></a>detectedApp の作成
 
@@ -45,9 +46,9 @@ POST /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/device
 
 次の表に、detectedApp の作成時に必要なプロパティを示します。
 
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
-|id|String|検出されたアプリケーションの一意識別子。 これは、アプリケーションの作成時に、Intune によって自動的に生成されます。 読み取り専用です。|
+|ID|String|検出されたアプリケーションの一意識別子。 これは、アプリケーションの作成時に、Intune によって自動的に生成されます。 読み取り専用です。|
 |displayName|String|検出されたアプリケーションの名前。 読み取り専用です|
 |version|String|検出されたアプリケーションのバージョン。 読み取り専用です|
 |sizeInByte|Int64|検出されたアプリケーションのサイズ (バイト単位)。 読み取り専用です|

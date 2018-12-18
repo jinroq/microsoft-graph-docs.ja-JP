@@ -1,12 +1,13 @@
 ---
 title: mobileAppIntentAndState リソースの種類
 description: MobileApp の意図と特定のデバイスのインストールの状態です。
-ms.openlocfilehash: 9553271075d582f4f167521131ded2dc4d9a954f
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 40ffbac3f86ccce3037a6585fa608dd4055bd428
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27072794"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27356057"
 ---
 # <a name="mobileappintentandstate-resource-type"></a>mobileAppIntentAndState リソースの種類
 
@@ -24,10 +25,10 @@ MobileApp の意図と特定のデバイスのインストールの状態です�
 |[MobileAppIntentAndState を削除します。](../api/intune-troubleshooting-mobileappintentandstate-delete.md)|なし|の[mobileAppIntentAndState](../resources/intune-troubleshooting-mobileappintentandstate.md)を削除します。|
 |[MobileAppIntentAndState を更新します。](../api/intune-troubleshooting-mobileappintentandstate-update.md)|[mobileAppIntentAndState](../resources/intune-troubleshooting-mobileappintentandstate.md)|[MobileAppIntentAndState](../resources/intune-troubleshooting-mobileappintentandstate.md)オブジェクトのプロパティを更新します。|
 
-## <a name="properties"></a>プロパティ
-|プロパティ|型|説明|
+## <a name="properties"></a>Properties
+|プロパティ|種類|説明|
 |:---|:---|:---|
-|id|String|オブジェクトの UUID|
+|ID|String|オブジェクトの UUID|
 |managedDeviceIdentifier|String|Intune によって作成または収集されるデバイス識別子。|
 |userId|String|デバイスを登録しようとするユーザーの識別子。|
 |mobileAppList|[mobileAppIntentAndStateDetail](../resources/intune-troubleshooting-mobileappintentandstatedetail.md)コレクション|ペイロードの目的と、テナントの状態の一覧です。|

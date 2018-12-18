@@ -1,12 +1,13 @@
 ---
 title: リスト macOSImportedPFXCertificateProfiles
 description: MacOSImportedPFXCertificateProfile オブジェクトのプロパティと関係を一覧表示します。
-ms.openlocfilehash: 4946b30b16bfbceb4155987eafa6ac77d62bd7fb
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 4b0f47303a29506cc5457893c54abc7a0ce27470
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27072525"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27357842"
 ---
 # <a name="list-macosimportedpfxcertificateprofiles"></a>リスト macOSImportedPFXCertificateProfiles
 

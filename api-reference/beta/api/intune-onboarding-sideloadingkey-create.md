@@ -1,12 +1,13 @@
 ---
 title: SideLoadingKey を作成します。
 description: 新しい sideLoadingKey オブジェクトを作成します。
-ms.openlocfilehash: c97b31fd37893433aeaea31539a7eaee021272ab
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 6edce1838499a73c2c28199a87c46fa44a10fe1f
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27072188"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27356309"
 ---
 # <a name="create-sideloadingkey"></a>SideLoadingKey を作成します。
 
@@ -44,9 +45,9 @@ POST /deviceAppManagement/sideLoadingKeys
 
 次の表は、sideLoadingKey を作成するときに必要なプロパティを示します。
 
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
-|id|String|側のキーの一意の id の読み込み|
+|ID|String|側のキーの一意の id の読み込み|
 |value|文字列|側の読み込みキー] の値は 5 列 5 行値、hiphens によって区切られています。|
 |displayName|String|側の読み込みキー名、it プロフェッショナルの管理者に表示されます。|
 |説明|String|側キーの読み込み中の説明は、it プロフェッショナルの管理者に表示されます.|

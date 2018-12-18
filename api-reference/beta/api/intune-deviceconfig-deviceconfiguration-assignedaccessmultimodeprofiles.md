@@ -1,12 +1,13 @@
 ---
 title: assignedAccessMultiModeProfiles アクション
 description: まだ文書化されていません
-ms.openlocfilehash: eb4e4cce71baabfcd10d28b88438dd2e4fe989c7
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 24ab12236044c08ab17b50acb5d7cc486fadcafa
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27070129"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27358143"
 ---
 # <a name="assignedaccessmultimodeprofiles-action"></a>assignedAccessMultiModeProfiles アクション
 
@@ -46,7 +47,7 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 
 次の表に、このアクションで使用できるパラメーターを示します。
 
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
 |assignedAccessMultiModeProfiles|[windowsAssignedAccessProfile](../resources/intune-deviceconfig-windowsassignedaccessprofile.md)コレクション|まだ文書化されていません|
 

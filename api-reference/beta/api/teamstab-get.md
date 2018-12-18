@@ -1,12 +1,13 @@
 ---
 title: タブを取得します。
 description: 'プロパティと指定したタブの関係を取得します。 '
-ms.openlocfilehash: 7bef495fbb37a878a291f2aac6004d386e932cbd
-ms.sourcegitcommit: 72d4da2a6bfaf99fa4edaf6ce3b97b1a6d96d874
+author: nkramer
+ms.openlocfilehash: 35aa21e1ffce9579fd11de25fb453ff6b71aa173
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/11/2018
-ms.locfileid: "27222409"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27357891"
 ---
 # <a name="get-tab"></a>タブを取得します。
 

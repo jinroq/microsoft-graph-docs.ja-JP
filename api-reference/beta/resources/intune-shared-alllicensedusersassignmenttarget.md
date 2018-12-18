@@ -1,12 +1,13 @@
 ---
 title: allLicensedUsersAssignmentTarget リソースの種類
 description: テナント内のすべてのライセンス ユーザーへの割り当てを表します。
-ms.openlocfilehash: 713a205e72171d4f3a30aa605481d59ba8d4a002
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 514f52113c7d52c37d9b6360f79ca87324c44e73
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27073209"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27357597"
 ---
 # <a name="alllicensedusersassignmenttarget-resource-type"></a>allLicensedUsersAssignmentTarget リソースの種類
 
@@ -19,7 +20,7 @@ ms.locfileid: "27073209"
 [deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md) からの継承
 
 ## <a name="properties"></a>プロパティ
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
 
 ## <a name="relationships"></a>リレーションシップ

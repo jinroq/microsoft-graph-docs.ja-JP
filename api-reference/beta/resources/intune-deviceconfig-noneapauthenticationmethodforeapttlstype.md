@@ -1,12 +1,13 @@
 ---
 title: nonEapAuthenticationMethodForEapTtlsType 列挙型
 description: 認証の非 EAP メソッドです。
-ms.openlocfilehash: a8321f433be88ea96a258012f0ae1eb9b3da319b
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 57d24189da1a6bc5f552ad32d2be9c4557539dab
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27069658"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27357268"
 ---
 # <a name="noneapauthenticationmethodforeapttlstype-enum-type"></a>nonEapAuthenticationMethodForEapTtlsType 列挙型
 

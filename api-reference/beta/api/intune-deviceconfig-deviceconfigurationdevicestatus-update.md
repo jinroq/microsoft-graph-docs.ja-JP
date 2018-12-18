@@ -1,12 +1,13 @@
 ---
 title: deviceConfigurationDeviceStatus の更新
 description: deviceConfigurationDeviceStatus オブジェクトのプロパティを更新します。
-ms.openlocfilehash: 3f5671c8e5019e065fd9e085856f28c39fef60f3
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 1beed2860cdaf2509f5ca6cb3e5f7c4ea3d1e456
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27068558"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27357618"
 ---
 # <a name="update-deviceconfigurationdevicestatus"></a>deviceConfigurationDeviceStatus の更新
 
@@ -52,9 +53,9 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 
 次の表に、[deviceConfigurationDeviceStatus](../resources/intune-deviceconfig-deviceconfigurationdevicestatus.md) の作成時に必要なプロパティを示します。
 
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
-|id|String|エンティティのキー。|
+|ID|String|エンティティのキー。|
 |deviceDisplayName|String|DevicePolicyStatus のデバイス名。|
 |userName|String|レポートされているユーザー名|
 |deviceModel|String|レポートされているデバイス モデル|

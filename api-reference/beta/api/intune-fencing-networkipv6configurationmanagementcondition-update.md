@@ -1,12 +1,13 @@
 ---
 title: NetworkIPv6ConfigurationManagementCondition を更新します。
 description: NetworkIPv6ConfigurationManagementCondition オブジェクトのプロパティを更新します。
-ms.openlocfilehash: f0a1045cfe41ecf9ceedea9f309879be7f223b9c
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 10014f1ddde4914b97f52e92901266e06ae07c99
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27072789"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27357317"
 ---
 # <a name="update-networkipv6configurationmanagementcondition"></a>NetworkIPv6ConfigurationManagementCondition を更新します。
 
@@ -45,9 +46,9 @@ PATCH /deviceManagement/managementConditions/{managementConditionId}/managementC
 
 [NetworkIPv6ConfigurationManagementCondition](../resources/intune-fencing-networkipv6configurationmanagementcondition.md)を作成するときに必要なプロパティを次の表に示します。
 
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
-|id|String|管理条件の一意の識別子です。 システムでは、作成時に割り当てられた値が生成されます。 [ManagementCondition](../resources/intune-fencing-managementcondition.md)から継承されました。|
+|ID|String|管理条件の一意の識別子です。 システムでは、作成時に割り当てられた値が生成されます。 [ManagementCondition](../resources/intune-fencing-managementcondition.md)から継承されました。|
 |一意な名前|String|管理条件の一意の名前です。 管理条件式で使用されます。 [ManagementCondition](../resources/intune-fencing-managementcondition.md)から継承されました。|
 |displayName|String|管理者は、管理の条件の名前を定義します。 [ManagementCondition](../resources/intune-fencing-managementcondition.md)から継承されました。|
 |説明|String|管理者は、管理状態の説明を定義します。 [ManagementCondition](../resources/intune-fencing-managementcondition.md)から継承されました。|

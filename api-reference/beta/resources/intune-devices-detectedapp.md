@@ -1,12 +1,13 @@
 ---
 title: detectedApp リソースの種類
 description: 管理対象デバイスにインストールされている管理対象アプリまたは非管理対象アプリです。 非管理対象アプリは、会社所有のデバイスにのみ表示されます。
-ms.openlocfilehash: 756600ce2d48d77ec404bf3b8eb3ce123b142f3c
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 0b8e234651c0936fea71d8420b30fcc5d1c6fb7a
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27067750"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27356897"
 ---
 # <a name="detectedapp-resource-type"></a>detectedApp リソースの種類
 
@@ -25,9 +26,9 @@ ms.locfileid: "27067750"
 |[detectedApp の更新](../api/intune-devices-detectedapp-update.md)|[detectedApp](../resources/intune-devices-detectedapp.md)|[detectedApp](../resources/intune-devices-detectedapp.md) オブジェクトのプロパティを更新します。|
 
 ## <a name="properties"></a>プロパティ
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
-|id|String|検出されたアプリケーションの一意識別子。 これは、アプリケーションの作成時に、Intune によって自動的に生成されます。 読み取り専用です。|
+|ID|String|検出されたアプリケーションの一意識別子。 これは、アプリケーションの作成時に、Intune によって自動的に生成されます。 読み取り専用です。|
 |displayName|String|検出されたアプリケーションの名前。 読み取り専用です|
 |version|String|検出されたアプリケーションのバージョン。 読み取り専用です|
 |sizeInByte|Int64|検出されたアプリケーションのサイズ (バイト単位)。 読み取り専用です|

@@ -1,12 +1,13 @@
 ---
 title: deviceCompliancePolicies のリスト
 description: deviceCompliancePolicy オブジェクトのプロパティとリレーションシップをリストします。
-ms.openlocfilehash: a27de6693b9b02f46057ab40823fae54bddabf96
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: cef180e6e84a3974353bef2e358380fca13bb503
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27023091"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27357730"
 ---
 # <a name="list-devicecompliancepolicies"></a>deviceCompliancePolicies のリスト
 

@@ -1,12 +1,13 @@
 ---
 title: androidForWorkEnrollmentProfile の更新
 description: androidForWorkEnrollmentProfile オブジェクトのプロパティを更新します。
-ms.openlocfilehash: f0af5db7115de09657d08d093836527e3198cad0
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 5ffbcfa51d94816b9a65a90e59cfc4c3a654006d
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27072435"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27356015"
 ---
 # <a name="update-androidforworkenrollmentprofile"></a>androidForWorkEnrollmentProfile の更新
 
@@ -44,7 +45,7 @@ PATCH /deviceManagement/androidForWorkEnrollmentProfiles/{androidForWorkEnrollme
 
 次の表に、[androidForWorkEnrollmentProfile](../resources/intune-androidforwork-androidforworkenrollmentprofile.md) の作成時に必要なプロパティを示します。
 
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
 |accountId|String|登録プロファイルが属するテナント GUID。|
 |id|String|登録プロファイル用の一意な GUID。|

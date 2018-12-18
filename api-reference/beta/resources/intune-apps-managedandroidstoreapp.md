@@ -1,12 +1,13 @@
 ---
 title: managedAndroidStoreApp リソース タイプ
 description: Intune アプリ保護ポリシーで管理できる Android ストア アプリのプロパティと継承されたプロパティが含まれます。
-ms.openlocfilehash: ff510358c1dbfa1bd12acbab22af37c1fd48a4e7
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: aebbc1ab3e6f4675ae683efb679a42ed2021324a
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27070790"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27357940"
 ---
 # <a name="managedandroidstoreapp-resource-type"></a>managedAndroidStoreApp リソース タイプ
 
@@ -28,9 +29,9 @@ Intune アプリ保護ポリシーで管理できる Android ストア アプリ
 |[Update managedAndroidStoreApp](../api/intune-apps-managedandroidstoreapp-update.md)|[managedAndroidStoreApp](../resources/intune-apps-managedandroidstoreapp.md)|[managedAndroidStoreApp](../resources/intune-apps-managedandroidstoreapp.md) オブジェクトのプロパティを更新します。|
 
 ## <a name="properties"></a>プロパティ
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
-|id|String|エンティティのキー。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|
+|ID|String|エンティティのキー。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|
 |displayName|String|管理者が提供またはインポートしたアプリのタイトル。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|
 |説明|String|アプリの説明。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|
 |publisher|String|アプリの発行元。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|

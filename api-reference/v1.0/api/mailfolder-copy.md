@@ -1,12 +1,13 @@
 ---
 title: 'mailFolder: コピー'
 description: mailFolder とその内容を別の mailFolder にコピーします。
-ms.openlocfilehash: 8cee2ad91fe40a9e9ef40c3a4662b76e71be1ccd
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: angelgolfer-ms
+ms.openlocfilehash: 44df53219e00479cdc48d057286f1af410e13c77
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27020734"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27356927"
 ---
 # <a name="mailfolder-copy"></a>mailFolder: コピー
 
@@ -34,14 +35,14 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/copy
 ## <a name="request-headers"></a>要求ヘッダー
 | ヘッダー | 値 |
 |:-------|:------|
-| Authorization | `Bearer {token}`. 必須。 |
-| Content-Type | `application/json`. 必須。 |
+| Authorization | `Bearer {token}`. 必須です。 |
+| Content-Type | `application/json`. 必須です。 |
 
 ## <a name="request-body"></a>要求本文
 
 要求本文で、次のパラメーターを含む JSON オブジェクトを指定します。
 
-| パラメーター | 型 | 説明 |
+| パラメーター | 種類 | 説明 |
 |:----------|:-----|:------------|
 |destinationId|String|フォルダー ID、またはよく知られているフォルダー名です。 サポートされている既知のフォルダー名の一覧については、「[mailFolder リソースの種類](../resources/mailfolder.md)」を参照してください。|
 

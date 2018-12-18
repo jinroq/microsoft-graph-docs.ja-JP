@@ -1,12 +1,13 @@
 ---
 title: edgeSearchEngineCustom リソースの種類
 description: IT 管理者が MDM 制御デバイス用向けのカスタムの既定の検索エンジンを設定できるようにします。
-ms.openlocfilehash: 54617b01fc3082fc8c80b653e7df36e48c1de0d1
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: f648f41bafcbaa37c972500139ecc8d3e70113ca
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27022026"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27357975"
 ---
 # <a name="edgesearchenginecustom-resource-type"></a>edgeSearchEngineCustom リソースの種類
 
@@ -17,7 +18,7 @@ IT 管理者が MDM 制御デバイス用向けのカスタムの既定の検索
 [edgeSearchEngineBase](../resources/intune-deviceconfig-edgesearchenginebase.md) からの継承
 
 ## <a name="properties"></a>プロパティ
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
 |edgeSearchEngineOpenSearchXmlUrl|文字列型 (String)|短縮名と検索エンジンの URL が最低限含まれる OpenSearch xml ファイルが入っている https リンクを指します。|
 
