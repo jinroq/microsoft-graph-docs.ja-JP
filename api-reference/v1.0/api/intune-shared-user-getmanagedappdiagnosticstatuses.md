@@ -1,12 +1,13 @@
 ---
 title: getManagedAppDiagnosticStatuses 関数
 description: 特定のユーザーの診断検証状態を取得します。
-ms.openlocfilehash: 9ba27e90de7faff043e1acbb755bc2c9d36c43fc
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 7318556fd6a87f9f71e5f0a68490a0293182c60d
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27023225"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27314183"
 ---
 # <a name="getmanagedappdiagnosticstatuses-function"></a>getManagedAppDiagnosticStatuses 関数
 

@@ -1,12 +1,13 @@
 ---
 title: outlookUser リソースの種類
 description: ユーザーが利用できる Outlook サービスを表します。
-ms.openlocfilehash: 63bbabccc540046961d31c91fe7b1fb9afaaf4f8
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: angelgolfer-ms
+ms.openlocfilehash: 3a65206c74d16f7943d986e38b520ef388803c22
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27023521"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27314743"
 ---
 # <a name="outlookuser-resource-type"></a>outlookUser リソースの種類
 

@@ -1,12 +1,13 @@
 ---
 title: DeviceManagementScriptGroupAssignment を削除します。
 description: DeviceManagementScriptGroupAssignment を削除します。
-ms.openlocfilehash: 45e59cd3760096eaca17e4cdf65368eecaac35b4
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: bec5ef8159e88899a3b5161889c32da3a13a640a
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27069965"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27312335"
 ---
 # <a name="delete-devicemanagementscriptgroupassignment"></a>DeviceManagementScriptGroupAssignment を削除します。
 

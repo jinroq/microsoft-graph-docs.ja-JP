@@ -1,12 +1,13 @@
 ---
 title: requiredPasswordType 列挙型
 description: 必要なパスワードの使用可能な値です。
-ms.openlocfilehash: 404680cc2a4f9f71a4072b337c6b91cf95f4a477
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: d4a46b800e7643eeefe1ada2282e437eb543cf9d
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27073349"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27313658"
 ---
 # <a name="requiredpasswordtype-enum-type"></a>requiredPasswordType 列挙型
 

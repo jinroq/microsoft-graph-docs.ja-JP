@@ -1,12 +1,13 @@
 ---
 title: iTunesPairingMode 列挙型
 description: まだ文書化されていません
-ms.openlocfilehash: 73e03b21d98e6fccaadb85c1679fa8d525a2c200
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 037f5cec162342491fae4692efa14a9845507e1a
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27073946"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27312321"
 ---
 # <a name="itunespairingmode-enum-type"></a>iTunesPairingMode 列挙型
 

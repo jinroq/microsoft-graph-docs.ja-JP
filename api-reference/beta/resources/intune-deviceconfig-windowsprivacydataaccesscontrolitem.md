@@ -1,12 +1,13 @@
 ---
 title: windowsPrivacyDataAccessControlItem リソースの種類
 description: プライバシー データのカテゴリごとのアクセス制御レベルを指定します。
-ms.openlocfilehash: b72571602b96f7b228361db4bf2526fda8def70f
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 3655282d7b3b6ff31268f9fe536a4a8f6ac85341
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27074279"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27314988"
 ---
 # <a name="windowsprivacydataaccesscontrolitem-resource-type"></a>windowsPrivacyDataAccessControlItem リソースの種類
 
@@ -24,10 +25,10 @@ ms.locfileid: "27074279"
 |[WindowsPrivacyDataAccessControlItem を削除します。](../api/intune-deviceconfig-windowsprivacydataaccesscontrolitem-delete.md)|なし|の[windowsPrivacyDataAccessControlItem](../resources/intune-deviceconfig-windowsprivacydataaccesscontrolitem.md)を削除します。|
 |[WindowsPrivacyDataAccessControlItem を更新します。](../api/intune-deviceconfig-windowsprivacydataaccesscontrolitem-update.md)|[windowsPrivacyDataAccessControlItem](../resources/intune-deviceconfig-windowsprivacydataaccesscontrolitem.md)|[WindowsPrivacyDataAccessControlItem](../resources/intune-deviceconfig-windowsprivacydataaccesscontrolitem.md)オブジェクトのプロパティを更新します。|
 
-## <a name="properties"></a>プロパティ
-|プロパティ|型|説明|
+## <a name="properties"></a>Properties
+|プロパティ|種類|説明|
 |:---|:---|:---|
-|id|String|WindowsPrivacyDataAccessControlItem のキー。|
+|ID|String|WindowsPrivacyDataAccessControlItem のキー。|
 |accessLevel|[windowsPrivacyDataAccessLevel](../resources/intune-deviceconfig-windowsprivacydataaccesslevel.md)|プライバシー データ カテゴリに、指定したアプリケーションを指定するアクセス レベルを示します。 可能な値は、`notConfigured`、`forceAllow`、`forceDeny`、`userInControl` です。|
 |dataCategory|[windowsPrivacyDataCategory](../resources/intune-deviceconfig-windowsprivacydatacategory.md)|これは、特定のアクセス制御が適用されるプライバシー データのカテゴリを示します。 使用可能な値: `notConfigured`、 `accountInfo`、 `appsRunInBackground`、 `calendar`、 `callHistory`、 `camera`、 `contacts`、 `diagnosticsInfo`、 `email`、 `location`、 `messaging`、 `microphone`、 `motion`、 `notifications`、 `phone`、 `radios`、 `tasks`、 `syncWithDevices`、 `trustedDevices`.|
 |appPackageFamilyName|String|Windows アプリケーションのパッケージ ファミリ名です。 アクセス レベルを設定すると、指定したアプリケーションを適用します。|

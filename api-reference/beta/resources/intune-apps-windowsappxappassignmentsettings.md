@@ -1,12 +1,13 @@
 ---
 title: windowsAppXAppAssignmentSettings リソースの種類
 description: Windows AppX のモバイル アプリケーションをグループに割り当てるときに使用するプロパティが含まれています。
-ms.openlocfilehash: ce65e3fbc841e2df6dc378b7f440fd588c7bf1d5
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 84103a91c3c670ef3da8a0ea2a2e38a95cff79a6
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27068408"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27311621"
 ---
 # <a name="windowsappxappassignmentsettings-resource-type"></a>windowsAppXAppAssignmentSettings リソースの種類
 
@@ -19,7 +20,7 @@ Windows AppX のモバイル アプリケーションをグループに割り当
 [mobileAppAssignmentSettings](../resources/intune-apps-mobileappassignmentsettings.md) からの継承
 
 ## <a name="properties"></a>プロパティ
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
 |useDeviceContext|ブール型 (Boolean)|Windows AppX のモバイル アプリケーションの実行コンテキストのデバイスを使用するかどうかを指定します。|
 

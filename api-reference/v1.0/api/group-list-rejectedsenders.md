@@ -1,12 +1,13 @@
 ---
 title: rejectedSenders の一覧表示
 description: 'このグループの rejectedSenders リストに含まれるユーザーまたはグループの一覧を取得します。 '
-ms.openlocfilehash: e5d5d9cc42d8f423659f92b6787480dfe623ea86
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: dkershaw10
+ms.openlocfilehash: 9c6cc6cf53671e67d5a20660ef3aa94dd5b1a449
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27023560"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27311306"
 ---
 # <a name="list-rejectedsenders"></a>rejectedSenders の一覧表示
 このグループの rejectedSenders リストに含まれるユーザーまたはグループの一覧を取得します。 

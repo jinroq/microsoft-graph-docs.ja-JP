@@ -1,12 +1,13 @@
 ---
 title: WindowsOfficeClientConfiguration を更新します。
 description: セキュリティ以外の特定のポリシーのペイロードにパッチを適用します。
-ms.openlocfilehash: 7d825d84a73df05ec9cde35bcb0121d7237eb279
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 728fe7b6ffdb4b964488317551fdbaef139d2803
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27072859"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27310753"
 ---
 # <a name="update-windowsofficeclientconfiguration"></a>WindowsOfficeClientConfiguration を更新します。
 
@@ -44,9 +45,9 @@ PATCH /officeConfiguration/clientConfigurations/{key}
 
 [WindowsOfficeClientConfiguration](../resources/intune-cirrus-windowsofficeclientconfiguration.md)を作成するときに必要なプロパティを次の表に示します。
 
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
-|id|String|[OfficeClientConfiguration](../resources/intune-cirrus-officeclientconfiguration.md)から継承を文書化されていません。|
+|ID|String|[OfficeClientConfiguration](../resources/intune-cirrus-officeclientconfiguration.md)から継承を文書化されていません。|
 |userPreferencePayload|Stream|[OfficeClientConfiguration](../resources/intune-cirrus-officeclientconfiguration.md)から継承を文書化されていません。|
 |policyPayload|Stream|[OfficeClientConfiguration](../resources/intune-cirrus-officeclientconfiguration.md)から継承を文書化されていません。|
 |説明|String|[OfficeClientConfiguration](../resources/intune-cirrus-officeclientconfiguration.md)から継承を文書化されていません。|

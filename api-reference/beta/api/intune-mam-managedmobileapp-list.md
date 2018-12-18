@@ -1,12 +1,13 @@
 ---
 title: managedMobileApps のリスト
 description: managedMobileApp オブジェクトのプロパティとリレーションシップをリストします。
-ms.openlocfilehash: 6ad8bd219e810c0ee276a9aa02de782acba3b563
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 9ccbc1a59ae8f324a83fdbe994c5c16e0a785738
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27068197"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27312426"
 ---
 # <a name="list-managedmobileapps"></a>managedMobileApps のリスト
 

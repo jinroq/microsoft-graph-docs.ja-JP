@@ -1,12 +1,13 @@
 ---
 title: omaSettingFloatingPoint リソースの種類
 description: OMA 設定の浮動小数点の定義です。
-ms.openlocfilehash: eb2ce90d3b7bc6539b9aae9ca8c3414c563f0fed
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 0d8f9de655f3ce1affb0b85d58eb2d1682593a65
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27067951"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27312174"
 ---
 # <a name="omasettingfloatingpoint-resource-type"></a>omaSettingFloatingPoint リソースの種類
 
@@ -19,7 +20,7 @@ OMA 設定の浮動小数点の定義です。
 [omaSetting](../resources/intune-deviceconfig-omasetting.md) からの継承
 
 ## <a name="properties"></a>プロパティ
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
 |displayName|文字列|表示名。 [omaSetting](../resources/intune-deviceconfig-omasetting.md) からの継承|
 |説明|String|説明。 [omaSetting](../resources/intune-deviceconfig-omasetting.md) からの継承|

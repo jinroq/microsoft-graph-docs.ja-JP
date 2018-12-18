@@ -1,12 +1,13 @@
 ---
 title: WindowsPhoneXAP を作成します。
 description: 新しい windowsPhoneXAP オブジェクトを作成します。
-ms.openlocfilehash: 8b22ed8d9294c8e7a3e5c2e91e5b3d82e8f6bce9
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: f20a1cc210f87bc9a2bad31cc6d79eac6aa892bd
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27073597"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27312965"
 ---
 # <a name="create-windowsphonexap"></a>WindowsPhoneXAP を作成します。
 
@@ -44,9 +45,9 @@ POST /deviceAppManagement/mobileApps
 
 次の表は、windowsPhoneXAP を作成するときに必要なプロパティを示します。
 
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
-|id|String|エンティティのキー。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|
+|ID|String|エンティティのキー。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|
 |displayName|String|管理者が提供またはインポートしたアプリのタイトル。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|
 |説明|String|アプリの説明。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|
 |publisher|String|アプリの発行元。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|

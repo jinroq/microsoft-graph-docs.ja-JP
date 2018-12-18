@@ -1,12 +1,13 @@
 ---
 title: 'RangeBorderCollection: ItemAt'
 description: オブジェクトのインデックスを使用して、境界線オブジェクトを取得します。
-ms.openlocfilehash: d62202f5d2678152af69e8c4b6b058d6f2ddcdaf
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lumine2008
+ms.openlocfilehash: 5a35f6592acd7735453da24e0f3e901d0a4af427
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27021737"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27315359"
 ---
 # <a name="rangebordercollection-itemat"></a>RangeBorderCollection: ItemAt
 
@@ -37,7 +38,7 @@ POST /workbook/tables/{id|name}/columns/{id|name}/range/format/borders/itemAt
 ## <a name="request-body"></a>要求本文
 要求本文で、次のパラメーターを含む JSON オブジェクトを指定します。
 
-| パラメーター    | 型   |説明|
+| パラメーター    | 種類   |説明|
 |:---------------|:--------|:----------|
 |index|Int32|取得するオブジェクトのインデックス値。0 を起点とする番号になります。|
 

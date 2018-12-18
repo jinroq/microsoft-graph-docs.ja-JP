@@ -1,12 +1,13 @@
 ---
 title: windowsDefenderAdvancedThreatProtectionConfiguration の取得
 description: windowsDefenderAdvancedThreatProtectionConfiguration オブジェクトのプロパティとリレーションシップを読み取ります。
-ms.openlocfilehash: 08c145fe1ff7c18f9a6ac724dd80012ba2a42b8a
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: a85ef90851dfc749f36a36a73f92b33133fcee49
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27068437"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27314022"
 ---
 # <a name="get-windowsdefenderadvancedthreatprotectionconfiguration"></a>windowsDefenderAdvancedThreatProtectionConfiguration の取得
 

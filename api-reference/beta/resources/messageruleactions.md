@@ -1,12 +1,13 @@
 ---
 title: messageRuleActions リソースの種類
 description: ルールに使用可能なアクションのセットを表します。
-ms.openlocfilehash: fbd189d8a43dc47e139f69cd345b4c14744d94f5
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: angelgolfer-ms
+ms.openlocfilehash: 515d31ff8c11b95a3aa0042449d22df883e0eecf
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27067273"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27314995"
 ---
 # <a name="messageruleactions-resource-type"></a>messageRuleActions リソースの種類
 
@@ -15,7 +16,7 @@ ms.locfileid: "27067273"
 ルールに使用可能なアクションのセットを表します。
 
 ## <a name="properties"></a>プロパティ
-| プロパティ     | 型   |説明|
+| プロパティ     | 種類   |説明|
 |:---------------|:--------|:----------|
 | assignCategories | String コレクション | メッセージに割り当てられるカテゴリの一覧です。 |
 | copyToFolder | String | メッセージのコピー先のフォルダーの ID です。 |

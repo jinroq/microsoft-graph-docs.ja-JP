@@ -1,12 +1,13 @@
 ---
 title: ratingNewZealandTelevisionType 列挙型
 description: ニュージーランドのテレビのコンテンツの規制ラベル
-ms.openlocfilehash: b0523b49f996720d163f5c77b661da2a60ddc49d
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: fd390f678cf2d44239fbc86abda369c22a396504
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27021380"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27311901"
 ---
 # <a name="ratingnewzealandtelevisiontype-enum-type"></a>ratingNewZealandTelevisionType 列挙型
 

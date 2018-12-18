@@ -1,12 +1,13 @@
 ---
 title: IntuneBrandingProfile を作成します。
 description: 新しい intuneBrandingProfile オブジェクトを作成します。
-ms.openlocfilehash: 42a90e6a5488e8f9e37fa5c3a5fda18a9d4f424f
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 4058e30fe858c261a59b105652d198946b630222
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27069769"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27314876"
 ---
 # <a name="create-intunebrandingprofile"></a>IntuneBrandingProfile を作成します。
 
@@ -44,12 +45,12 @@ POST /deviceManagement/intuneBrandingProfiles
 
 次の表は、intuneBrandingProfile を作成するときに必要なプロパティを示します。
 
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
-|id|String|プロファイル キー|
+|ID|String|プロファイル キー|
 |profilename プロパティ|String|プロファイルの名前|
 |profileDescription|String|プロファイルの説明|
-|isDefaultProfile|ブール値|既定のプロファイルが使用される場合について説明します。|
+|isDefaultProfile|ブール型|既定のプロファイルが使用される場合について説明します。|
 |createdDateTime|DateTimeOffset|BrandingProfile が作成された日時です。|
 |lastModifiedDateTime|DateTimeOffset|BrandingProfile の最終変更日時。|
 |displayName|String|エンド ユーザーに表示される会社名または組織名。|

@@ -1,12 +1,13 @@
 ---
 title: MacOSEndpointProtectionConfiguration を削除します。
 description: MacOSEndpointProtectionConfiguration を削除します。
-ms.openlocfilehash: b8506eef60433b505934df7169ffae857b10dace
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: c32a21a6db55a290d0a1af68e6c464bf9033c2c3
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27070680"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27315688"
 ---
 # <a name="delete-macosendpointprotectionconfiguration"></a>MacOSEndpointProtectionConfiguration を削除します。
 

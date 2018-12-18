@@ -1,12 +1,13 @@
 ---
 title: MacOSVpnConfiguration を削除します。
 description: MacOSVpnConfiguration を削除します。
-ms.openlocfilehash: e02ffe185861e5f853947491adc2a6830484844a
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 059d1b80226a9e782aacbc990827dbc57b907f35
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27070275"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27310893"
 ---
 # <a name="delete-macosvpnconfiguration"></a>MacOSVpnConfiguration を削除します。
 

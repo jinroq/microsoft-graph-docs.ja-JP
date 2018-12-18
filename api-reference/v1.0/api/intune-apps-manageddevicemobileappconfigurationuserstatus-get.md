@@ -1,12 +1,13 @@
 ---
 title: Get managedDeviceMobileAppConfigurationUserStatus
 description: managedDeviceMobileAppConfigurationUserStatus オブジェクトのプロパティとリレーションシップを読み取ります。
-ms.openlocfilehash: 17bff27b83b940980a3a02fd35a90b22861f1a24
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 0f804ff432fe7cee23364904456525083834a85b
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27022170"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27314134"
 ---
 # <a name="get-manageddevicemobileappconfigurationuserstatus"></a>Get managedDeviceMobileAppConfigurationUserStatus
 

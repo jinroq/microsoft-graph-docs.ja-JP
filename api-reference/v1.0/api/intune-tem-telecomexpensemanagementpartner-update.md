@@ -1,12 +1,13 @@
 ---
 title: telecomExpenseManagementPartner の更新
 description: telecomExpenseManagementPartner オブジェクトのプロパティを更新します。
-ms.openlocfilehash: 600ceb9fc5f7ec00659438516772d37867a8a207
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 1560a744d88da79a8b7878e03807d43e5659dd98
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27020631"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27313917"
 ---
 # <a name="update-telecomexpensemanagementpartner"></a>telecomExpenseManagementPartner の更新
 
@@ -42,9 +43,9 @@ PATCH /deviceManagement/telecomExpenseManagementPartners/{telecomExpenseManageme
 
 次の表に、[telecomExpenseManagementPartner](../resources/intune-tem-telecomexpensemanagementpartner.md) の作成時に必要なプロパティを示します。
 
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
-|id|String|TEM パートナーの一意識別子。|
+|ID|String|TEM パートナーの一意識別子。|
 |displayName|String|TEM パートナーの表示名。|
 |url|String|TEM パートナーの管理用コントロール パネルの URL。管理者はここで TEM サービスを構成できます。|
 |appAuthorized|Boolean|パートナーの AAD アプリに Intune へのアクセスが承認されているかどうかを指定します。|

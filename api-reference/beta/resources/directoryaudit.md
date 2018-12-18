@@ -1,12 +1,13 @@
 ---
 title: directoryAudit リソースの種類
 description: このリソースを表し、ディレクトリの監査項目のコレクション
-ms.openlocfilehash: 8656bd910cd5b84d7760f973b160d91efe08abe1
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lleonard-msft
+ms.openlocfilehash: 5cbfc1320f721afd71ed3f196bb94a5c716d2c5c
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27066264"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27312790"
 ---
 # <a name="directoryaudit-resource-type"></a>directoryAudit リソースの種類
 このリソースを表し、ディレクトリの監査項目のコレクション
@@ -20,8 +21,8 @@ ms.locfileid: "27066264"
 |[DirectoryAudit を取得します。](../api/directoryaudit-get.md) | [directoryAudit](directoryaudit.md) |特定のディレクトリの監査項目とそのプロパティを取得します。|
 
 
-## <a name="properties"></a>プロパティ
-| プロパティ     | 型   |説明|
+## <a name="properties"></a>Properties
+| プロパティ     | 種類   |説明|
 |:---------------|:--------|:----------|
 |activityDateTime|DateTimeOffset|アクティビティが実行された日時を示します。 タイムスタンプ型が、常に UTC 時刻です。 たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、次のようになります。`'2014-01-01T00:00:00Z'`|
 |activityDisplayName|String|アクティビティ名または操作の名前 (例。 「ユーザーを作成する」、「グループ メンバーの追加」)。 ログに記録する活動のリストは、 [Azure の広告活動のリスト](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-reporting-activity-audit-logs#azure-ad-audit-activity-list)を参照してください。|
@@ -31,7 +32,7 @@ ms.locfileid: "27066264"
 |id|String| アクティビティの一意の ID を示します。 これは、GUID です。|
 |initiatedBy|[auditActivityInitiator](auditactivityinitiator.md)|ユーザーまたはアプリケーションに関する情報が、アクティビティを開始することを示します。|
 |loggedByService|String|サービスが動作を開始する情報を示します (例: セルフ サービスのパスワード管理、コア ディレクトリ、B2C、ユーザーの招待、Microsoft 個人情報管理、Id 管理の権限を持つ。|
-|result|文字列| 活動の結果を示します。使用可能な値: `success`、 `failure`、 `timeout`、 `unknownFutureValue`。||
+|result|string| 活動の結果を示します。使用可能な値: `success`、 `failure`、 `timeout`、 `unknownFutureValue`。||
 |resultReason|String|結果が [エラー] または [タイムアウト] の場合は、エラーの原因を示します。|
 |targetResources|[targetResource](targetresource.md)コレクション|活動のためのリソースが変更された情報を示します。 ターゲット リソースの型には、ユーザー、デバイス、ディレクトリ、アプリケーション、役割、グループ、ポリシーまたはその他を指定できます。
 

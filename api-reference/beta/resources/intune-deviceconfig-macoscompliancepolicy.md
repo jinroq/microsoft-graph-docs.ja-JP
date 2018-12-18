@@ -1,12 +1,13 @@
 ---
 title: macOSCompliancePolicy リソースの種類
 description: このクラスには、Mac OS のコンプライアンス設定が含まれています。
-ms.openlocfilehash: 8378511336ea95f49bf723d21415748de848001d
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 9a70566e1d596606809b3037075d59153a09a91f
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27068311"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27313105"
 ---
 # <a name="macoscompliancepolicy-resource-type"></a>macOSCompliancePolicy リソースの種類
 
@@ -28,7 +29,7 @@ ms.locfileid: "27068311"
 |[macOSCompliancePolicy の更新](../api/intune-deviceconfig-macoscompliancepolicy-update.md)|[macOSCompliancePolicy](../resources/intune-deviceconfig-macoscompliancepolicy.md)|[macOSCompliancePolicy](../resources/intune-deviceconfig-macoscompliancepolicy.md) オブジェクトのプロパティを更新します。|
 
 ## <a name="properties"></a>プロパティ
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
 |roleScopeTagIds|String コレクション|このエンティティ インスタンスのスコープのタグのリストです。 [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md) から継承します|
 |id|String|エンティティのキー。 [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md) から継承します|
@@ -52,9 +53,9 @@ ms.locfileid: "27068311"
 |deviceThreatProtectionRequiredSecurityLevel|[deviceThreatProtectionLevel](../resources/intune-deviceconfig-devicethreatprotectionlevel.md)|Mobile Threat Protection に、コンプライアンス違反をレポートするための最小のリスク レベルを要求します。 可能な値は、`unavailable`、`secured`、`low`、`medium`、`high`、`notSet` です。|
 |storageRequireEncryption|Boolean|Mac OS デバイスでの暗号化を要求します。|
 |gatekeeperAllowedAppSource|[macOSGatekeeperAppSources](../resources/intune-deviceconfig-macosgatekeeperappsources.md)|システムは、macOS のデバイスでどのダウンロード場所のアプリケーションから実行できるかを決定するプライバシー設定。 可能な値は、`notConfigured`、`macAppStore`、`macAppStoreAndIdentifiedDevelopers`、`anywhere` です。|
-|firewallEnabled|ブール値|かどうか、か、これらのファイアウォールは有効にする必要があります。|
-|firewallBlockAllIncoming|ブール値|「すべての着信接続をブロックする] オプションに対応します。|
-|firewallEnableStealthMode|ブール値|「有効にするステルス モード」に対応|
+|firewallEnabled|ブール型|かどうか、か、これらのファイアウォールは有効にする必要があります。|
+|firewallBlockAllIncoming|ブール型|「すべての着信接続をブロックする] オプションに対応します。|
+|firewallEnableStealthMode|ブール型|「有効にするステルス モード」に対応|
 
 ## <a name="relationships"></a>リレーションシップ
 |リレーションシップ|型|説明|

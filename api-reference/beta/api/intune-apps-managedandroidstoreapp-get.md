@@ -1,12 +1,13 @@
 ---
 title: Get managedAndroidStoreApp
 description: managedAndroidStoreApp オブジェクトのプロパティとリレーションシップを読み取ります。
-ms.openlocfilehash: 85b5d3c9d362bd61500f5f266cf1adffe71d50f1
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 3db0444cdfddb140ed69d9cfd432b8e5262acde3
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27072879"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27312370"
 ---
 # <a name="get-managedandroidstoreapp"></a>Get managedAndroidStoreApp
 

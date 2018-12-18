@@ -1,12 +1,13 @@
 ---
 title: deviceManagementUserRightsSetting リソースの種類
 description: ユーザー権限の設定を表します。
-ms.openlocfilehash: e657c15a76700ef87283220254937ec685c57784
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: c58a1d3e9a352561a1abec87fa4efa90c599fd7a
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27071693"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27313700"
 ---
 # <a name="devicemanagementuserrightssetting-resource-type"></a>deviceManagementUserRightsSetting リソースの種類
 
@@ -15,8 +16,8 @@ ms.locfileid: "27071693"
 > **注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
 
 ユーザー権限の設定を表します。
-## <a name="properties"></a>プロパティ
-|プロパティ|型|説明|
+## <a name="properties"></a>Properties
+|プロパティ|種類|説明|
 |:---|:---|:---|
 |state|[stateManagementSetting](../resources/intune-deviceconfig-statemanagementsetting.md)|このユーザーの現在の状態を表す権限を設定します。 可能な値は、`notConfigured`、`blocked`、`allowed` です。|
 |localUsersOrGroups|[deviceManagementUserRightsLocalUserOrGroup](../resources/intune-deviceconfig-devicemanagementuserrightslocaluserorgroup.md)コレクション|ローカル ユーザーまたはグループはこの設定の状態が許可されている場合に、デバイスの設定のコレクションを表します。 このコレクションには、最大で 500 個の要素を含めることができます。|

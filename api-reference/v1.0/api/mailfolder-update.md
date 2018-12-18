@@ -1,12 +1,13 @@
 ---
 title: MailFolder を更新する
 description: mailFolder オブジェクトのプロパティを更新します。
-ms.openlocfilehash: cc28678ed6caaa8b6dff50e0cc24ae4a89d6aa22
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: angelgolfer-ms
+ms.openlocfilehash: 2c740d72557204d01abea4e2582467c740295197
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27022127"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27315051"
 ---
 # <a name="update-mailfolder"></a>MailFolder を更新する
 
@@ -35,7 +36,7 @@ PATCH /users/{id | userPrincipalName}/mailFolders/{id}
 ## <a name="request-body"></a>要求本文
 要求本文で、更新する関連フィールドの値を指定します。要求本文に含まれない既存のプロパティは、以前の値のままになるか、他のプロパティ値の変化に基づいて再計算されます。最適なパフォーマンスを得るためには、変更されていない既存の値を含めないでください。
 
-| プロパティ     | 型   |説明|
+| プロパティ     | 種類   |説明|
 |:---------------|:--------|:----------|
 |displayName|String|mailFolder の表示名。|
 

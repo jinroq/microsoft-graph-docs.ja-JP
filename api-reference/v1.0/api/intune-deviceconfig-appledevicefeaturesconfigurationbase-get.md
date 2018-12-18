@@ -1,12 +1,13 @@
 ---
 title: Get appleDeviceFeaturesConfigurationBase
 description: appleDeviceFeaturesConfigurationBase オブジェクトのプロパティとリレーションシップを読み取ります。
-ms.openlocfilehash: 81067baaad251d5430c767522217fce44039b6e4
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 096291a17ded6afc90816d862eb1ae1bcc8408e4
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27022937"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27312419"
 ---
 # <a name="get-appledevicefeaturesconfigurationbase"></a>Get appleDeviceFeaturesConfigurationBase
 

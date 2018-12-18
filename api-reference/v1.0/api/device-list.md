@@ -1,12 +1,13 @@
 ---
 title: デバイスを一覧表示する
 description: 組織に登録されているデバイス オブジェクトの一覧を取得します。
-ms.openlocfilehash: 8610ab9cc23209fb8dedc98de92334762ec4d6ed
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: a17dcdd3fc15a04276095b2f356cc780ae6a8fee
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27021782"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27314379"
 ---
 # <a name="list-devices"></a>デバイスを一覧表示する
 
@@ -30,7 +31,7 @@ GET /devices
 ## <a name="optional-query-parameters"></a>オプションのクエリ パラメーター
 このメソッドは、応答をカスタマイズするための [OData クエリ パラメーター](https://developer.microsoft.com/graph/docs/concepts/query_parameters)をサポートします。
 ## <a name="request-headers"></a>要求ヘッダー
-| 名前       | 型 | 説明|
+| 名前       | 種類 | 説明|
 |:-----------|:------|:----------|
 | Authorization  | string  | ベアラー {トークン}。必須。 |
 

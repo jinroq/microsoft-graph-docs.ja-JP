@@ -1,12 +1,13 @@
 ---
 title: イベントの更新
 description: イベント オブジェクトのプロパティを更新します。
-ms.openlocfilehash: da2d0558e3d59b34814fdd38c72e2d723e1912ec
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: angelgolfer-ms
+ms.openlocfilehash: 1ea0ae20a88159f9d96a23028fa731ea04d6817b
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27021565"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27312447"
 ---
 # <a name="update-event"></a>イベントの更新
 
@@ -41,27 +42,27 @@ PATCH /me/calendargroups/{id}/calendars/{id}/events/{id}
 PATCH /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{id}
 ```
 ## <a name="request-headers"></a>要求ヘッダー
-| 名前       | 型 | 説明|
+| 名前       | 種類 | 説明|
 |:-----------|:------|:----------|
 | Authorization  | string  | ベアラー {トークン}。必須。 |
 
 ## <a name="request-body"></a>要求本文
 要求本文で、更新する関連フィールドの値を指定します。要求本文に含まれない既存のプロパティは、以前の値のままになるか、他のプロパティ値の変化に基づいて再計算されます。最適なパフォーマンスを得るためには、変更されていない既存の値を含めないでください。
 
-| プロパティ     | 型   |説明|
+| プロパティ     | 種類   |説明|
 |:---------------|:--------|:----------|
 |attendees|[Attendee](../resources/attendee.md)|イベントの参加者のコレクションです。|
 |body|[ItemBody](../resources/itembody.md)|イベントに関連付けられたメッセージの本文。|
 |categories|String|イベントに関連付けられたカテゴリ。|
 |end|[DateTimeTimeZone](../resources/datetimetimezone.md)|イベントが終了する日時。<br/><br/>既定で、終了時刻は UTC 単位です。EndTimeZone でオプションのタイム ゾーンを指定して、そのタイム ゾーンで終了時刻を表現し、UTC からの時間オフセットを含めることができます。EndTimeZone を使用する場合、StartTimeZone の値も指定する必要があります。<br/><br/>この例では、太平洋標準時で 2015 年 2 月 25 日午後 9:34 を指定します ("2015-02-25T21:34:00-08:00")。 |
 |importance|String|イベントの重要度。 可能な値: `low`、 `normal`、 `high`。|
-|isAllDay|ブール値|イベントが一日中続く場合に、true に設定します。|
-|isReminderOn|ブール値|ユーザーにイベントを通知するアラートを設定する場合は、true に設定します。|
+|isAllDay|Boolean|イベントが一日中続く場合に、true に設定します。|
+|isReminderOn|Boolean|ユーザーにイベントを通知するアラートを設定する場合は、true に設定します。|
 |location|[Location](../resources/location.md)|イベントの場所。|
 |locations|[location](../resources/location.md) コレクション|イベントを開催する場所、または参加者がいる場所。 **location** プロパティと **locations** プロパティは常に互いに一致します。 **location** プロパティを更新すると、**locations** コレクションに含まれる既存のすべての場所が削除されて、**location** の新しい値に置き換えられます。 |
 |recurrence|[PatternedRecurrence](../resources/patternedrecurrence.md)|イベントの繰り返しパターン。|
 |reminderMinutesBeforeStart|Int32|アラーム通知を行う、イベント開始時間前の分数。|
-|responseRequested|ブール値|イベントが承諾または辞退されたときに、送信者が応答を要求する場合に、true に設定します。|
+|responseRequested|Boolean|イベントが承諾または辞退されたときに、送信者が応答を要求する場合に、true に設定します。|
 |sensitivity|String| 可能な値: `normal`、 `personal`、 `private`、 `confidential`。|
 |showAs|String|表示するステータス。 可能な値: `free`、 `tentative`、 `busy`、 `oof`、 `workingElsewhere`、 `unknown`。|
 |開始|[DateTimeTimeZone](../resources/datetimetimezone.md)|イベントの開始時刻です。 <br/><br/>既定で、開始時刻は UTC 単位です。EndTimeZone でオプションのタイム ゾーンを指定して、そのタイム ゾーンで開始時刻を表現し、UTC からの時間オフセットを含めることができます。StartTimeZone を使用する場合、EndTimeZone の値も指定する必要があります。<br/><br/>この例では、太平洋標準時で 2015 年 2 月 25 日午後 7:34 を指定します "2015-02-25T19:34:00-08:00".  |

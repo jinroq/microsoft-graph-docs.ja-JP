@@ -1,12 +1,13 @@
 ---
 title: EducationSynchronizationProfile のステータスを取得します。
 description: テナント内には、特定の学校のデータの同期プロファイルの状態を取得します。 応答は、同期のステータスを示します。
-ms.openlocfilehash: 87ced84dc0960eb6d5808fb8d21bc40d9d9e64e2
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: mmast-msft
+ms.openlocfilehash: 8c48565e22df54e81f17110bb0b13654e0e69cd7
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27067338"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27313574"
 ---
 # <a name="get-the-status-of-an-educationsynchronizationprofile"></a>EducationSynchronizationProfile のステータスを取得します。
 
@@ -30,7 +31,7 @@ GET /synchronizationProfiles/{id}/profileStatus
 ```
 
 ## <a name="request-headers"></a>要求ヘッダー
-| 名前       | 型 | 説明|
+| 名前       | 種類 | 説明|
 |:-----------|:------|:----------|
 | Authorization  | string  | ベアラー {トークン}。必須。  |
 

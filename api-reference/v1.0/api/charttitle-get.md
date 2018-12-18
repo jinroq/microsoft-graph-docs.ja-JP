@@ -1,12 +1,13 @@
 ---
 title: Get ChartTitle
 description: charttitle オブジェクトのプロパティと関係を取得します。
-ms.openlocfilehash: b338b46a77e153a500277f762b6f2792453d1505
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lumine2008
+ms.openlocfilehash: 2216ba5fe3e99819bf103b1517d0aae159be5363
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27023683"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27312923"
 ---
 # <a name="get-charttitle"></a>Get ChartTitle
 

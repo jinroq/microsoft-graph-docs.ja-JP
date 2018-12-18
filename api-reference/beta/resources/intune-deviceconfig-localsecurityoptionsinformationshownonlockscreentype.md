@@ -1,12 +1,13 @@
 ---
 title: localSecurityOptionsInformationShownOnLockScreenType 列挙型
 description: LocalSecurityOptionsInformationShownOnLockScreenType に指定できる値
-ms.openlocfilehash: 6bd051628fe98d6eb1df110d5e4c4d2492691fab
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 43ba3d7d076a436a210c7d98a16bc90f8731c3ab
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27069927"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27311250"
 ---
 # <a name="localsecurityoptionsinformationshownonlockscreentype-enum-type"></a>localSecurityOptionsInformationShownOnLockScreenType 列挙型
 

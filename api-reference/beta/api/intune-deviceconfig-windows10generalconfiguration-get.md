@@ -1,12 +1,13 @@
 ---
 title: Get windows10GeneralConfiguration
 description: windows10GeneralConfiguration オブジェクトのプロパティとリレーションシップを読み取ります。
-ms.openlocfilehash: fb0259775e542518d7abaa0711eba612813800b4
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 9f0ae3d32df8290616bcf50defa84515575c5bf2
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27066569"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27313315"
 ---
 # <a name="get-windows10generalconfiguration"></a>Get windows10GeneralConfiguration
 

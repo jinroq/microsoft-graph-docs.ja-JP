@@ -1,12 +1,13 @@
 ---
 title: deviceComplianceScheduledActionForRule リソースの種類
 description: ルールに関するスケジュール済みのアクション
-ms.openlocfilehash: 8beb0926064beca3bee9da33a9396839a2101b7c
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 36907817adea4a457f13fce57345d68b866be116
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27023979"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27315618"
 ---
 # <a name="devicecompliancescheduledactionforrule-resource-type"></a>deviceComplianceScheduledActionForRule リソースの種類
 
@@ -23,9 +24,9 @@ ms.locfileid: "27023979"
 |[deviceComplianceScheduledActionForRule の更新](../api/intune-deviceconfig-devicecompliancescheduledactionforrule-update.md)|[deviceComplianceScheduledActionForRule](../resources/intune-deviceconfig-devicecompliancescheduledactionforrule.md)|[deviceComplianceScheduledActionForRule](../resources/intune-deviceconfig-devicecompliancescheduledactionforrule.md) オブジェクトのプロパティを更新します。|
 
 ## <a name="properties"></a>プロパティ
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
-|id|String|エンティティのキー。|
+|ID|String|エンティティのキー。|
 |ruleName|String|このスケジュール済みのアクションが適用されるルールの名前です。|
 
 ## <a name="relationships"></a>リレーションシップ

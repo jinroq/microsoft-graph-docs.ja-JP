@@ -1,12 +1,13 @@
 ---
 title: EnrollmentProfile を作成します。
 description: 新しい enrollmentProfile オブジェクトを作成します。
-ms.openlocfilehash: 8b24964413250e9a0f9d8d98577e930e1ef99b84
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: becfc040bb7fa500a5378f16f50f6bcb2e4f106d
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27070784"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27313651"
 ---
 # <a name="create-enrollmentprofile"></a>EnrollmentProfile を作成します。
 
@@ -44,14 +45,14 @@ POST /deviceManagement/depOnboardingSettings/{depOnboardingSettingId}/enrollment
 
 次の表は、enrollmentProfile を作成するときに必要なプロパティを示します。
 
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
-|id|String|オブジェクトの GUID|
+|ID|String|オブジェクトの GUID|
 |displayName|String|プロファイルの名前|
 |説明|String|プロファイルの説明|
-|requiresUserAuthentication|ブール値|プロファイルにユーザー認証が必要なかどうかを示します|
+|requiresUserAuthentication|ブール型|プロファイルにユーザー認証が必要なかどうかを示します|
 |configurationEndpointUrl|String|登録に使用するエンドポイントの url を構成|
-|enableAuthenticationViaCompanyPortal|ブール値|アップルらくらく企業ポータルではなくを使用して認証することを示します。|
+|enableAuthenticationViaCompanyPortal|ブール型|アップルらくらく企業ポータルではなくを使用して認証することを示します。|
 
 
 

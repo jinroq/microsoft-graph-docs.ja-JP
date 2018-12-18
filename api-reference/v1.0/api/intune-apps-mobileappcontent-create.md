@@ -1,12 +1,13 @@
 ---
 title: mobileAppContent の作成
 description: 新しい mobileAppContent オブジェクトを作成します。
-ms.openlocfilehash: 8aba68926a39a23e8adf0448679cb46ea4b79bb0
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 0cc1abf7a1e13a151117db9407b1a03d6f4524c1
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27023873"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27312188"
 ---
 # <a name="create-mobileappcontent"></a>mobileAppContent の作成
 
@@ -44,9 +45,9 @@ POST /deviceAppManagement/mobileApps/{mobileAppId}/microsoft.graph.managedMobile
 
 次の表に、mobileAppContent の作成時に必要なプロパティを示します。
 
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
-|id|String|アプリのコンテンツのバージョン。|
+|ID|String|アプリのコンテンツのバージョン。|
 
 
 

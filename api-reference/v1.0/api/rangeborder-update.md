@@ -1,12 +1,13 @@
 ---
 title: rangeborder を更新する
 description: rangeborder オブジェクトのプロパティを更新します。
-ms.openlocfilehash: b3152bb9bc67ab5551389d0e87e46856f201f73b
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lumine2008
+ms.openlocfilehash: ed9b2e5fa6b3d4a1dd3c227160eb71435e9a3817
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27022079"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27311943"
 ---
 # <a name="update-rangeborder"></a>rangeborder を更新する
 
@@ -36,7 +37,7 @@ PATCH /workbook/tables/{id|name}/columns/{id|name}/range/format/borders/{sideInd
 ## <a name="request-body"></a>要求本文
 要求本文で、更新する関連フィールドの値を指定します。要求本文に含まれない既存のプロパティは、以前の値のままになるか、他のプロパティ値の変化に基づいて再計算されます。最適なパフォーマンスを得るためには、変更されていない既存の値を含めないでください。
 
-| プロパティ     | 型   |説明|
+| プロパティ     | 種類   |説明|
 |:---------------|:--------|:----------|
 |color|文字列|枠線の色を表す HTML カラー コード。形式は #RRGGBB (例: "FFA500")、または名前付きの HTML 色 (例: "オレンジ") です。|
 |style|文字列|境界線の線のスタイルを指定する線のスタイルの定数の 1 つです。 可能な値: `None`、 `Continuous`、 `Dash`、 `DashDot`、 `DashDotDot`、 `Dot`、 `Double`、 `SlantDashDot`。|

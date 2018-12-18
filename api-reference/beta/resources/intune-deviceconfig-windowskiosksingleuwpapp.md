@@ -1,12 +1,13 @@
 ---
 title: windowsKioskSingleUWPApp リソースの種類
 description: キオスクの構成の UWP のアプリケーション情報を識別するために使用するクラス
-ms.openlocfilehash: 009d53d1439894b59a89a1f269df34c4dbb09ce1
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: fd1dffd5a01b89db27132770d4c8ffe0094eed8f
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27071443"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27312181"
 ---
 # <a name="windowskiosksingleuwpapp-resource-type"></a>windowsKioskSingleUWPApp リソースの種類
 
@@ -18,8 +19,8 @@ ms.locfileid: "27071443"
 
 [WindowsKioskAppConfiguration](../resources/intune-deviceconfig-windowskioskappconfiguration.md)から継承します。
 
-## <a name="properties"></a>プロパティ
-|プロパティ|型|説明|
+## <a name="properties"></a>Properties
+|プロパティ|種類|説明|
 |:---|:---|:---|
 |uwpApp|[windowsKioskUWPApp](../resources/intune-deviceconfig-windowskioskuwpapp.md)|これは、専用アプリケーション ユーザー モデル ID (AUMID) を表示するキオスク モードでの使用を開始するのには、します。|
 

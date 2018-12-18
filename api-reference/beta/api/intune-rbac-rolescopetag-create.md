@@ -1,12 +1,13 @@
 ---
 title: RoleScopeTag を作成します。
 description: 新しい roleScopeTag オブジェクトを作成します。
-ms.openlocfilehash: b2f42999c785786175e5a6fb4dfd2b510d148927
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 2aaede673afa4346a1defbc9449a4e08d9d1c614
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27070013"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27315149"
 ---
 # <a name="create-rolescopetag"></a>RoleScopeTag を作成します。
 
@@ -45,9 +46,9 @@ POST /deviceManagement/roleDefinitions/{roleDefinitionId}/roleAssignments/{roleA
 
 次の表は、roleScopeTag を作成するときに必要なプロパティを示します。
 
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
-|id|String|エンティティのキー。 これは読み取り専用で、自動生成されます。|
+|ID|String|エンティティのキー。 これは読み取り専用で、自動生成されます。|
 |displayName|String|表示する、またはロールのスコープのタグの表示名。|
 |説明|String|ロールのスコープのタグの説明です。|
 

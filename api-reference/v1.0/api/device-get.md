@@ -1,12 +1,13 @@
 ---
 title: デバイスを取得する
 description: デバイス オブジェクトのプロパティとリレーションシップを取得します。
-ms.openlocfilehash: 07ee10ccc6f3cfb7649df2cb3711bfff24115036
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 57032f29ace00a441aff7f68e9b61bd52e88e79b
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27023730"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27310669"
 ---
 # <a name="get-device"></a>デバイスを取得する
 
@@ -32,7 +33,7 @@ GET /devices/{id}
 このメソッドは、応答をカスタマイズするための [OData クエリ パラメーター](https://developer.microsoft.com/graph/docs/concepts/query_parameters)をサポートします。
 
 ## <a name="request-headers"></a>要求ヘッダー
-| 名前       | 型 | 説明|
+| 名前       | 種類 | 説明|
 |:-----------|:------|:----------|
 | Authorization  | string  | ベアラー {トークン}。必須。 |
 

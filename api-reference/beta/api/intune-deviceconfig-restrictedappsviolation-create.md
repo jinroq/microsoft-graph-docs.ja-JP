@@ -1,12 +1,13 @@
 ---
 title: RestrictedAppsViolation を作成します。
 description: 新しい restrictedAppsViolation オブジェクトを作成します。
-ms.openlocfilehash: 2d43ddf5ae6c5965f67fdb32c4b242fd0a3f82e4
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 3f20463363c37e8ab9ed47bebb3b2323ca308656
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27069718"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27313329"
 ---
 # <a name="create-restrictedappsviolation"></a>RestrictedAppsViolation を作成します。
 
@@ -44,9 +45,9 @@ POST /deviceManagement/deviceConfigurationRestrictedAppsViolations
 
 次の表は、restrictedAppsViolation を作成するときに必要なプロパティを示します。
 
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
-|id|String|オブジェクトの一意の識別子です。 "Accountid"、deviceId、policyId、およびユーザー Id から構成されます。|
+|ID|String|オブジェクトの一意の識別子です。 "Accountid"、deviceId、policyId、およびユーザー Id から構成されます。|
 |userId|String|ユーザーの一意の識別子の Guid にする必要があります。|
 |userName|String|ユーザー名|
 |managedDeviceId|String|管理対象デバイスの一意の識別子の Guid にする必要があります。|

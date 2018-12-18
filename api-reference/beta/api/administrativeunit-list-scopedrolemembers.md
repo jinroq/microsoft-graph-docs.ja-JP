@@ -1,12 +1,13 @@
 ---
 title: リスト scopedRoleMembers
 description: ScopedRoleMembership リソースの一覧を取得します。
-ms.openlocfilehash: e2b41989f9f8120f80085e998b3899a2e219fdde
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lleonard-msft
+ms.openlocfilehash: f6945d3c7f09831b122291efda0f0f976c8aa139
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27067410"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27314428"
 ---
 # <a name="list-scopedrolemembers"></a>リスト scopedRoleMembers
 

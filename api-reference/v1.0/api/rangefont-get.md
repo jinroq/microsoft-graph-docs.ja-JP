@@ -1,12 +1,13 @@
 ---
 title: RangeFont を取得する
 description: rangefont オブジェクトのプロパティと関係を取得します。
-ms.openlocfilehash: 32cb5b290da6170a955f6f29d6396e496315fbb8
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lumine2008
+ms.openlocfilehash: 6e087bcaa8592d50ac33979e08e0f6b5764c6a80
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27022959"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27315373"
 ---
 # <a name="get-rangefont"></a>RangeFont を取得する
 

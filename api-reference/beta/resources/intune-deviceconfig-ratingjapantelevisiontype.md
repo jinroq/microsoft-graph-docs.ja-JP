@@ -1,12 +1,13 @@
 ---
 title: ratingJapanTelevisionType 列挙型
 description: 日本のテレビのコンテンツの規制ラベル
-ms.openlocfilehash: 12e0554d58f8f277687e5e98ea5d9178d1ffd631
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 902c8253b45f20086795a06bea60b379a3ebddd3
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27067731"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27313959"
 ---
 # <a name="ratingjapantelevisiontype-enum-type"></a>ratingJapanTelevisionType 列挙型
 

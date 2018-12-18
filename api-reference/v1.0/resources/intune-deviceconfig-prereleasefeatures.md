@@ -1,12 +1,13 @@
 ---
 title: prereleaseFeatures 列挙型
 description: 前のリリースの新機能の使用可能な値です。
-ms.openlocfilehash: 089ec3159c39da0412beb0eda9a50cbba7885f03
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: bcdf72123a9a523aa6aca678d004a8e820b3f5d4
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27021423"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27311852"
 ---
 # <a name="prereleasefeatures-enum-type"></a>prereleaseFeatures 列挙型
 

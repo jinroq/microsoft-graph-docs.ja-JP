@@ -1,12 +1,13 @@
 ---
 title: iPv4Range リソースの種類
 description: IP V4 範囲
-ms.openlocfilehash: 9147bb45380ec8d207bf8b4f332efe5a370f3c07
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: eae240d185a6cf0dc2fc7d0d83194dc9f3f6f00d
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27067557"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27314771"
 ---
 # <a name="ipv4range-resource-type"></a>iPv4Range リソースの種類
 
@@ -19,7 +20,7 @@ IP V4 範囲
 [ipRange](../resources/intune-shared-iprange.md) からの継承
 
 ## <a name="properties"></a>プロパティ
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
 |lowerAddress|文字列|低い番号の IP アドレス|
 |upperAddress|文字列|高い番号の IP アドレス|

@@ -1,12 +1,13 @@
 ---
 title: getEffectiveDeviceEnrollmentConfigurations 関数
 description: まだ文書化されていません
-ms.openlocfilehash: dffde709d57d9cb138bb163da66f6ec24e6a2d5d
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: b7bdf815f972f56892027a01db83539065fe9caf
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27074176"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27315254"
 ---
 # <a name="geteffectivedeviceenrollmentconfigurations-function"></a>getEffectiveDeviceEnrollmentConfigurations 関数
 

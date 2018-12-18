@@ -1,12 +1,13 @@
 ---
 title: windowsPhone81CompliancePolicy の更新
 description: windowsPhone81CompliancePolicy オブジェクトのプロパティを更新します。
-ms.openlocfilehash: aa737e0c1ab528e0ff67848e687ba5ec6c427c6e
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: f4d17c63d7c22542b94527f508ca40ebcea28562
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27072121"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27311166"
 ---
 # <a name="update-windowsphone81compliancepolicy"></a>windowsPhone81CompliancePolicy の更新
 
@@ -44,7 +45,7 @@ PATCH /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}
 
 次の表に、[windowsPhone81CompliancePolicy](../resources/intune-deviceconfig-windowsphone81compliancepolicy.md) の作成時に必要なプロパティを示します。
 
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
 |roleScopeTagIds|String コレクション|このエンティティ インスタンスのスコープのタグのリストです。 [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md) から継承します|
 |id|String|エンティティのキー。 [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md) から継承します|

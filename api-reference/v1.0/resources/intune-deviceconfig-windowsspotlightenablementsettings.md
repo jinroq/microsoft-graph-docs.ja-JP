@@ -1,12 +1,13 @@
 ---
 title: windowsSpotlightEnablementSettings 列挙型
 description: MDM 管理対象デバイス用の定義済みの既定の検索エンジンを設定するのには IT admind では、します。
-ms.openlocfilehash: a9d2d1231abf57f47fb510ad0ebe603ff2fa5213
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: e5ce0c09bd155e493a4df9a105edb12d09e8f9e7
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27020995"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27312993"
 ---
 # <a name="windowsspotlightenablementsettings-enum-type"></a>windowsSpotlightEnablementSettings 列挙型
 

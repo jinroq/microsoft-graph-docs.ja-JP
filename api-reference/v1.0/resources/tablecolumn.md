@@ -1,12 +1,13 @@
 ---
 title: TableColumn リソースの種類
 description: テーブル内にある 1 つの列を表します。
-ms.openlocfilehash: 3db97f1d80a0c36278cb27b806ab2a82be6c8b01
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lumine2008
+ms.openlocfilehash: d2d83859c15a24624d8711a7ef86e3b0c89448e1
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27022098"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27315128"
 ---
 # <a name="tablecolumn-resource-type"></a>TableColumn リソースの種類
 
@@ -29,9 +30,9 @@ ms.locfileid: "27022098"
 |[Add](../api/tablecolumncollection-add.md)|[WorkbookTableColumn](tablecolumn.md)|テーブルに新しい列を追加します。|
 
 ## <a name="properties"></a>プロパティ
-| プロパティ     | 型   |説明|
+| プロパティ     | 種類   |説明|
 |:---------------|:--------|:----------|
-|ID|文字列|テーブル内の列を識別する一意のキーを返します。 このプロパティは符号化文字列値として解釈し、その他の型に解析すべきではありません。 読み取り専用。|
+|ID|string|テーブル内の列を識別する一意のキーを返します。 このプロパティは符号化文字列値として解釈し、その他の型に解析すべきではありません。 読み取り専用。|
 |index|int|テーブルの列コレクション内の列のインデックス番号を返します。0 を起点とする番号になります。読み取り専用です。|
 |name|文字列|テーブル列の名前を取得します。読み取り専用です。|
 |values|Json|指定した範囲の Raw 値を表します。返されるデータの型は、文字列、数値、またはブール値のいずれかになります。エラーが含まれているセルは、エラー文字列を返します。|

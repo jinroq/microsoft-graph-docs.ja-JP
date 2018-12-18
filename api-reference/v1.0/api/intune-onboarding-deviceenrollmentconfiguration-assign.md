@@ -1,12 +1,13 @@
 ---
 title: assign アクション
 description: まだ文書化されていません
-ms.openlocfilehash: 5483b335dc2963f82939552af88fabfae32bb315
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 6812f3c1879c331cc27aeb25ea4516af080252b7
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27023909"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27315303"
 ---
 # <a name="assign-action"></a>assign アクション
 
@@ -42,7 +43,7 @@ POST /deviceManagement/deviceEnrollmentConfigurations/{deviceEnrollmentConfigura
 
 次の表に、このアクションで使用できるパラメーターを示します。
 
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
 |enrollmentConfigurationAssignments|[enrollmentConfigurationAssignment](../resources/intune-onboarding-enrollmentconfigurationassignment.md) コレクション|まだ文書化されていません|
 

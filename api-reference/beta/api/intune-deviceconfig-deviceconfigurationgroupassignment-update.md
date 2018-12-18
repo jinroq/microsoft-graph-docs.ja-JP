@@ -1,12 +1,13 @@
 ---
 title: DeviceConfigurationGroupAssignment を更新します。
 description: DeviceConfigurationGroupAssignment オブジェクトのプロパティを更新します。
-ms.openlocfilehash: 303ecefdccafc133c4680bc0fd7eb866b682fded
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 7ea879c7d267337a247455235f069206b7b3b2a0
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27071573"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27313882"
 ---
 # <a name="update-deviceconfigurationgroupassignment"></a>DeviceConfigurationGroupAssignment を更新します。
 
@@ -52,11 +53,11 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 
 [DeviceConfigurationGroupAssignment](../resources/intune-deviceconfig-deviceconfigurationgroupassignment.md)を作成するときに必要なプロパティを次の表に示します。
 
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
-|id|String|エンティティのキー。|
+|ID|String|エンティティのキー。|
 |targetGroupId|String|AAD グループの Id は、対象としてデバイスを構成します。|
-|excludeGroup|ブール値|かどうかをこのグループを除外するようにします。 既定のグループが含まれている必要があること|
+|excludeGroup|ブール型|かどうかをこのグループを除外するようにします。 既定のグループが含まれている必要があること|
 
 
 

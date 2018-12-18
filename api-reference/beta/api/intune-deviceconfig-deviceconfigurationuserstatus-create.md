@@ -1,12 +1,13 @@
 ---
 title: deviceConfigurationUserStatus の作成
 description: 新しい deviceConfigurationUserStatus オブジェクトを作成します。
-ms.openlocfilehash: 26cd6242558a8af1da665a2668e4cd07ddcd68b9
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 2d12b141fd45b89e7330595594f1110c65f8b4d4
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27073277"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27311649"
 ---
 # <a name="create-deviceconfigurationuserstatus"></a>deviceConfigurationUserStatus の作成
 
@@ -52,9 +53,9 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 
 次の表に、deviceConfigurationUserStatus の作成時に必要なプロパティを示します。
 
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
-|id|String|エンティティのキー。|
+|ID|String|エンティティのキー。|
 |userDisplayName|String|DevicePolicyStatus のユーザー名。|
 |devicesCount|Int32|そのユーザーのデバイスの数。|
 |status|[complianceStatus](../resources/intune-shared-compliancestatus.md)|ポリシー レポートのコンプライアンスの状態。 可能な値は、`unknown`、`notApplicable`、`compliant`、`remediated`、`nonCompliant`、`error`、`conflict`、`notAssigned` です。|

@@ -1,12 +1,13 @@
 ---
 title: Get iosVppEBookAssignment
 description: iosVppEBookAssignment オブジェクトのプロパティとリレーションシップを読み取ります。
-ms.openlocfilehash: ef3432164899f639a6865cd0219189e15d55a6cb
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 114d3dd8133b097986d2461e011ad517fb270261
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27071779"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27312545"
 ---
 # <a name="get-iosvppebookassignment"></a>Get iosVppEBookAssignment
 

@@ -1,12 +1,13 @@
 ---
 title: メンバーを一覧表示する
 description: この API を使用して、メンバーを取得する] ボックスの一覧 (ユーザーおよびグループ) の管理単位です。
-ms.openlocfilehash: c2d86992ccffd9d0ec4df90f5209ed5d6881ed16
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lleonard-msft
+ms.openlocfilehash: d373c8353928d8e8d5d8b398aa09e62d457ba665
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27069296"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27311663"
 ---
 # <a name="list-members"></a>メンバーを一覧表示する
 

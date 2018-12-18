@@ -1,12 +1,13 @@
 ---
 title: '範囲: マージ'
 description: 範囲内のセルをワークシートの 1 つの領域にマージします。
-ms.openlocfilehash: be9ef68a6f3f62e3f9396a4b51a34b9f7e63199b
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lumine2008
+ms.openlocfilehash: 87fc6fab83f1f03d40a1363277bfec511839bad6
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27020313"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27312776"
 ---
 # <a name="range-merge"></a>範囲: マージ
 
@@ -37,7 +38,7 @@ POST /workbook/tables/{id|name}/columns/{id|name}/range/merge
 ## <a name="request-body"></a>要求本文
 要求本文で、次のパラメーターを含む JSON オブジェクトを指定します。
 
-| パラメーター    | 型   |説明|
+| パラメーター    | 種類   |説明|
 |:---------------|:--------|:----------|
 |across|ブール値|省略可能。指定した範囲のセルを行ごとに結合して、行ごとに別のセルを作成する場合は True に設定します。既定値は False です。|
 

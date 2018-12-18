@@ -1,12 +1,13 @@
 ---
 title: WindowsUniversalAppXContainedApp を取得します。
 description: WindowsUniversalAppXContainedApp オブジェクトのプロパティと関係を参照してください。
-ms.openlocfilehash: 0b76faeabbc6d72715e779544a97e7cd6aaaece6
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 78d4d015be2e614ddd1d5463824b49281c375d86
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27072383"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27311180"
 ---
 # <a name="get-windowsuniversalappxcontainedapp"></a>WindowsUniversalAppXContainedApp を取得します。
 

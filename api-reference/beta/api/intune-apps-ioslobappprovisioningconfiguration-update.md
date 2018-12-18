@@ -1,12 +1,13 @@
 ---
 title: IosLobAppProvisioningConfiguration を更新します。
 description: IosLobAppProvisioningConfiguration オブジェクトのプロパティを更新します。
-ms.openlocfilehash: dd1986a3b9a64d77959aeeabb339adf137b92df2
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: df3cc8d27bb242998d513e98b8ce9b7ebfb24fd1
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27068902"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27313322"
 ---
 # <a name="update-ioslobappprovisioningconfiguration"></a>IosLobAppProvisioningConfiguration を更新します。
 
@@ -44,9 +45,9 @@ PATCH /deviceAppManagement/iosLobAppProvisioningConfigurations/{iosLobAppProvisi
 
 [IosLobAppProvisioningConfiguration](../resources/intune-apps-ioslobappprovisioningconfiguration.md)を作成するときに必要なプロパティを次の表に示します。
 
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
-|id|String|エンティティのキー。|
+|ID|String|エンティティのキー。|
 |expirationDateTime|DateTimeOffset|省略可能なプロファイルの有効期限の日付と時刻。|
 |payloadFileName|String|ペイロード ファイル名 (*.mobileprovision | *.xml)。|
 |payload|Binary|ペイロード。 (UTF8 でエンコードされたバイト配列)|

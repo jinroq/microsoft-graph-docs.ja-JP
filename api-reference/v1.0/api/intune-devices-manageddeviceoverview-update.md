@@ -1,12 +1,13 @@
 ---
 title: managedDeviceOverview の更新
 description: managedDeviceOverview オブジェクトのプロパティを更新します。
-ms.openlocfilehash: e17c084aafa7925419b4143b273e61703c08fc06
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 504f4f8dd3693e2c7aba2fc754e9f5d1b468e304
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27022947"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27311376"
 ---
 # <a name="update-manageddeviceoverview"></a>managedDeviceOverview の更新
 
@@ -42,9 +43,9 @@ PATCH /deviceManagement/managedDeviceOverview
 
 次の表に、[managedDeviceOverview](../resources/intune-devices-manageddeviceoverview.md) の作成時に必要なプロパティを示します。
 
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
-|id|String|概要の一意識別子|
+|ID|String|概要の一意識別子|
 |enrolledDeviceCount|Int32|登録済みデバイスの合計数。 Intune PC エージェントで管理されている PC デバイスは含まれません|
 |mdmEnrolledCount|Int32|MDM に登録されているデバイスの数|
 |dualEnrolledDeviceCount|Int32|MDM と EAS の両方に登録されているデバイスの数|

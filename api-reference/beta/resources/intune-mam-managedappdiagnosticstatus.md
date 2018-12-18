@@ -1,12 +1,13 @@
 ---
 title: managedAppDiagnosticStatus リソースの種類
 description: 診断状態を表します。
-ms.openlocfilehash: 44284b54692e4a123b1837bbfb0f5f04a2b01a2b
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 1618c65b46654832fc7706f01cb6d6a9f78926e4
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27073942"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27314778"
 ---
 # <a name="managedappdiagnosticstatus-resource-type"></a>managedAppDiagnosticStatus リソースの種類
 
@@ -16,7 +17,7 @@ ms.locfileid: "27073942"
 
 診断状態を表します。
 ## <a name="properties"></a>プロパティ
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
 |validationName|文字列型 (String)|検証のフレンドリ名|
 |state|文字列型 (String)|操作の状態|

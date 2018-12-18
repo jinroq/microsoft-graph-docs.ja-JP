@@ -1,12 +1,13 @@
 ---
 title: DeviceConfigurationConflictSummary を更新します。
 description: DeviceConfigurationConflictSummary オブジェクトのプロパティを更新します。
-ms.openlocfilehash: 583d00b1ee7bbb3547592cc58f45899aa89c4219
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 46290062b73a13cad575535cf28cb073f3a952be
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27067231"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27311502"
 ---
 # <a name="update-deviceconfigurationconflictsummary"></a>DeviceConfigurationConflictSummary を更新します。
 
@@ -44,7 +45,7 @@ PATCH /deviceManagement/deviceConfigurationConflictSummary/{deviceConfigurationC
 
 [DeviceConfigurationConflictSummary](../resources/intune-deviceconfig-deviceconfigurationconflictsummary.md)を作成するときに必要なプロパティを次の表に示します。
 
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
 |conflictingDeviceConfigurations|[settingSource](../resources/intune-deviceconfig-settingsource.md) コレクション|一連のポリシーを指定された設定と競合していません。|
 |id|String|競合するポリシーのセットの id です。 この id では、ConflictingDeviceConfigurations 内のすべてのポリシーの id をアンダー スコアで区切られた辞書式の順序にします。|

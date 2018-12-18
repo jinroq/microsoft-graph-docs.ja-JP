@@ -1,12 +1,13 @@
 ---
 title: 'イベント: snoozeReminder'
 description: までは新しいユーザーの予定表にイベントのアラームを延期します。
-ms.openlocfilehash: 9e47a128afd8caa9c771011c98e3c6c98c4ee612
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: angelgolfer-ms
+ms.openlocfilehash: 9e78e917190847fe1121c71a0ba185d11b697676
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27020469"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27313070"
 ---
 # <a name="event-snoozereminder"></a>イベント: snoozeReminder
 
@@ -40,7 +41,7 @@ POST /me/calendargroups/{id}/calendars/{id}/events/{id}/snoozeReminder
 POST /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{id}/snoozeReminder
 ```
 ## <a name="request-headers"></a>要求ヘッダー
-| 名前       | 型 | 説明|
+| 名前       | 種類 | 説明|
 |:---------------|:--------|:----------|
 | Authorization  | string  | ベアラー {トークン}。必須。 |
 | Content-Type | string  | エンティティ本文内のデータの性質です。必須。 |
@@ -48,7 +49,7 @@ POST /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{
 ## <a name="request-body"></a>要求本文
 要求本文で、次のパラメーターを含む JSON オブジェクトを指定します。
 
-| パラメーター    | 型   |説明|
+| パラメーター    | 種類   |説明|
 |:---------------|:--------|:----------|
 |newReminderTime|DateTimeTimeZone|アラームをトリガーする新しい日付と時刻。|
 

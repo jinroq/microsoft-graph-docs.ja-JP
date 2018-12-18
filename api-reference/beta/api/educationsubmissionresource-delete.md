@@ -1,12 +1,13 @@
 ---
 title: EducationSubmissionResource を削除します。
-description: " リソースを元の状態です。 リソースは割り当てからコピーされませんでしたが、受講者から追加された、リソースが単に削除されます。"
-ms.openlocfilehash: 9eb5b08e2e5481e707cc6c1e0b0f8339e3d22ad4
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+description: 提出書類からリソースを削除します。 これは、受講者によってのみ実行できます。 リソースは、割り当てからコピーされた場合は、現在のコピーが削除された後、リソースの新しいコピーが作成されます。
+author: dipakboyed
+ms.openlocfilehash: d56df6cee3884556186554d9c24ae09ed802c4f0
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27071431"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27313273"
 ---
 # <a name="delete-educationsubmissionresource"></a>EducationSubmissionResource を削除します。
 

@@ -1,12 +1,13 @@
 ---
 title: actionState 列挙型
 description: デバイス上のアクションの状態
-ms.openlocfilehash: e0169bd690cdc8a26cc771948ebcf311f6fd6aa5
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 1f36c3a6709ade5860ff24cc8d10c2cb0294a471
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27069722"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27315107"
 ---
 # <a name="actionstate-enum-type"></a>actionState 列挙型
 

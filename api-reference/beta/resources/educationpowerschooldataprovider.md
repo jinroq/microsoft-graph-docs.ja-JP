@@ -1,12 +1,13 @@
 ---
 title: educationPowerSchoolDataProvider リソース
 description: PowerSchool は、入力ソースとして使用すると、学校のデータの同期プロファイルを設定するために使用します。
-ms.openlocfilehash: 4c58d3b8baf1569aaeff68375b2dd3643db8b063
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: mmast-msft
+ms.openlocfilehash: 714866d03c70aae8ea03a27b63fb3efbb4fa5ba4
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27071870"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27312804"
 ---
 # <a name="educationpowerschooldataprovider-resource"></a>educationPowerSchoolDataProvider リソース
 
@@ -16,16 +17,16 @@ ms.locfileid: "27071870"
 
 [EducationSynchronizationDataProvider](educationsynchronizationdataprovider.md)から派生します。
 
-## <a name="properties"></a>プロパティ
+## <a name="properties"></a>Properties
 
-| プロパティ | 型 | 説明 |
+| プロパティ | 種類 | 説明 |
 |:-|:-|:-|
 | **connectionUrl** | String | PowerSchool のインスタンスへの接続 URL です。 |
 | **clientId** | String |  クライアント ID は、PowerSchool に接続するために使用します。 |
 | **clientSecret** | String |  PowerSchool のインスタンスへの接続を認証するためにクライアントの機密情報です。 |
 | **schoolsIds** | String コレクション |  学校の同期のリスト。 |
 | **schoolYear** | String |  同期する学校の年です。 |
-| **allowTeachersInMultipleSchools** | ブール値 |  ソースが 1 つの学生または教師の複数の識別子を持つかどうかを示します。 |
+| **allowTeachersInMultipleSchools** | ブール型 |  ソースが 1 つの学生または教師の複数の識別子を持つかどうかを示します。 |
 | **カスタマイズ** | [educationSynchronizationCustomizations](educationsynchronizationcustomizations.md) | 同期プロファイルを適用するオプションのカスタマイズ。|
 
 ## <a name="json-representation"></a>JSON 表記

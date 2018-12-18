@@ -1,12 +1,13 @@
 ---
 title: ユーザー リソースの種類
 description: Azure AD ユーザー アカウントを表します。directoryObject から継承します。
-ms.openlocfilehash: 893a5bef5fd3a2fce730c5f971ceca523e260be3
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: dkershaw10
+ms.openlocfilehash: 65d113ef86159ebc45160f2caa31fa51c9aa7571
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27023743"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27312482"
 ---
 # <a name="user-resource-type"></a>ユーザー リソースの種類
 
@@ -65,10 +66,10 @@ Azure AD ユーザー アカウントを表します。[directoryObject](directo
 
 ## <a name="properties"></a>プロパティ
 
-| プロパティ       | 型    |説明|
+| プロパティ       | 種類    |説明|
 |:---------------|:--------|:----------|
 |aboutMe|String|ユーザーが自分自身について記述する、フリー フォームのテキスト入力フィールド。|
-|accountEnabled|ブール値| アカウントが有効な場合は **true**。そうでない場合は **false**。このプロパティは、ユーザーの作成時に必要です。$filter をサポートします。    |
+|accountEnabled|Boolean| アカウントが有効な場合は **true**。そうでない場合は **false**。このプロパティは、ユーザーの作成時に必要です。$filter をサポートします。    |
 |ageGroup|String|ユーザーの年齢グループを設定します。 使用できる値: `null`、 `minor`、`notAdult`と`adult`。 詳細については[法律の年齢グループのプロパティの定義](#legal-age-group-property-definitions)を参照してください。 |
 |assignedLicenses|[assignedLicense](assignedlicense.md) collection|ユーザーに割り当てられているライセンス。null 許容ではありません。            |
 |assignedPlans|[assignedPlan](assignedplan.md) コレクション|ユーザーに割り当てられているプラン。読み取り専用です。null 許容ではありません。 |
@@ -94,15 +95,15 @@ Azure AD ユーザー アカウントを表します。[directoryObject](directo
 |mobilePhone|String|ユーザーの主な携帯電話の番号。|
 |mySite|String|ユーザーの個人用サイトの URL。|
 |officeLocation|String|ユーザーの勤務先の場所。|
-|onPremisesDomainName|String| 設置が含まれています`domainFQDN`、設置ディレクトリからの同期をとりますとも呼ばれます。 プロパティは Azure AD 接続経由で Active Directory を Azure に、オンプレミスのディレクトリが同期しているお客様に対してのみ設定されます。 読み取り専用。 |
+|onPremisesDomainName|String| 設置が含まれています`domainFQDN`、設置ディレクトリからの同期をとりますとも呼ばれます。 プロパティは Azure AD 接続経由で Active Directory を Azure に、オンプレミスのディレクトリが同期しているお客様に対してのみ設定されます。 読み取り専用です。 |
 |onPremisesExtensionAttributes|[OnPremisesExtensionAttributes](onpremisesextensionattributes.md)|ユーザーの extensionAttributes 1-15 が含まれています。 個々 の拡張属性は、フィルターも選択可能なことに注意してください。 `onPremisesSyncEnabled`ユーザーは、この一連のプロパティは読み取り専用で、マスター設置します。 クラウド専用のユーザー (、`onPremisesSyncEnabled`は)、これらのプロパティは作成時に設定するか、更新します。 |
 |onPremisesImmutableId|String|Azure AD ユーザー オブジェクトには、オンプレミス Active Directory ユーザー アカウントを関連付けるにはこのプロパティを使用します。 **UserPrincipalName** (UPN) のプロパティをユーザーのフェデレーション ドメインを使用している場合は、グラフに新しいユーザー アカウントを作成するとき、このプロパティを指定する必要があります。 **重要な:****$** と**\_** このプロパティを指定する場合、文字は使用できません。 $filter をサポートします。                            |
 |onPremisesLastSyncDateTime|DateTimeOffset|オブジェクトがオンプレミス ディレクトリと前回、同期された日時を示します。例："2013-02-16T03:04:54Z"Timestamp 型は、ISO 8601 形式を使用して日付と時刻の情報を表し、必ず UTC 時間です。たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、次のようになります。`'2014-01-01T00:00:00Z'`読み取り専用です。|
 |onPremisesProvisioningErrors|[onPremisesProvisioningError](onpremisesprovisioningerror.md)コレクション| 提供処理中に同期の Microsoft 製品を使用するときのエラーです。 |
-|onPremisesSamAccountName|String| 設置が含まれています`samAccountName`設置ディレクトリと同期します。 プロパティは Azure AD 接続経由で Active Directory を Azure に、オンプレミスのディレクトリが同期しているお客様に対してのみ設定されます。 読み取り専用。 |
+|onPremisesSamAccountName|String| 設置が含まれています`samAccountName`設置ディレクトリと同期します。 プロパティは Azure AD 接続経由で Active Directory を Azure に、オンプレミスのディレクトリが同期しているお客様に対してのみ設定されます。 読み取り専用です。 |
 |onPremisesSecurityIdentifier|String|オンプレミスからクラウドに同期されたユーザーのオンプレミスのセキュリティ識別子 (SID) が含まれます。読み取り専用です。|
 |onPremisesSyncEnabled|Boolean| このオブジェクトがオンプレミスのディレクトリから同期される場合は **true**、このオブジェクトが最初にオンプレミスのディレクトリから同期されていて、今後は同期しない場合は **false**、このオブジェクトがオンプレミスのディレクトリから 1 度も同期されたことがない場合は **null** (既定値)。読み取り専用 |
-|onPremisesUserPrincipalName|String| 設置が含まれています`userPrincipalName`設置ディレクトリと同期します。 プロパティは Azure AD 接続経由で Active Directory を Azure に、オンプレミスのディレクトリが同期しているお客様に対してのみ設定されます。 読み取り専用。 |
+|onPremisesUserPrincipalName|String| 設置が含まれています`userPrincipalName`設置ディレクトリと同期します。 プロパティは Azure AD 接続経由で Active Directory を Azure に、オンプレミスのディレクトリが同期しているお客様に対してのみ設定されます。 読み取り専用です。 |
 |passwordPolicies|String|ユーザーのパスワード ポリシーを指定します。この値は列挙値であり、可能な 1 つの値は "DisableStrongPassword" です。この場合は、既定のポリシーより脆弱なパスワードを指定できます。"DisablePasswordExpiration" を指定することもできます。2 つを一緒に指定することもできます。例:"DisablePasswordExpiration, DisableStrongPassword"|
 |passwordProfile|[PasswordProfile](passwordprofile.md)|ユーザーのパスワード プロファイルを指定します。プロファイルには、ユーザーのパスワードが含まれています。このプロパティは、ユーザーの作成時に必要です。プロファイルにあるパスワードは、**passwordPolicies** プロパティによって指定されている最小要件を満たす必要があります。既定では、強力なパスワードが必要です。|
 |pastProjects|String コレクション|ユーザーが過去のプロジェクトを列挙する一覧。|
@@ -167,7 +168,7 @@ Azure AD ユーザー アカウントを表します。[directoryObject](directo
 
 | リレーションシップ | 型   |説明|
 |:---------------|:--------|:----------|
-|アクティビティ|[userActivity](projectrome-activity.md)コレクション|デバイス間でのユーザーのアクティビティです。 読み取り専用。 Null 許容型。|
+|アクティビティ|[userActivity](projectrome-activity.md)コレクション|デバイス間でのユーザーのアクティビティです。 読み取り専用です。 Null 許容型。|
 |calendar|[Calendar](calendar.md)|ユーザーの標準予定表。読み取り専用です。|
 |calendarGroups|[CalendarGroup](calendargroup.md) collection|ユーザーの予定表グループ。読み取り専用です。Null 許容型。|
 |calendarView|[Event](event.md) collection|予定表のカレンダー ビュー。読み取り専用です。Null 許容型。|
@@ -186,13 +187,13 @@ Azure AD ユーザー アカウントを表します。[directoryObject](directo
 |manager|[directoryObject](directoryobject.md)|このユーザーの上司であるユーザーまたは連絡先。読み取り専用です。(HTTP メソッド:GET、PUT、DELETE)|
 |memberOf|[directoryObject](directoryobject.md) コレクション|ユーザーがメンバーになっているグループとディレクトリ ロール。読み取り専用です。Null 許容型。|
 |messages|[Message](message.md) コレクション|メールボックスまたはフォルダー内のメッセージ。読み取り専用です。Null 許容型。|
-|onenote|[Onenote](onenote.md)| 読み取り専用。|
-|outlook|[OutlookUser](outlookuser.md)| 読み取り専用。|
+|onenote|[Onenote](onenote.md)| 読み取り専用です。|
+|outlook|[OutlookUser](outlookuser.md)| 読み取り専用です。|
 |ownedDevices|[directoryObject](directoryobject.md) コレクション|ユーザーが所有しているデバイス。読み取り専用です。Null 許容型。|
 |ownedObjects|[directoryObject](directoryobject.md) コレクション|ユーザーが所有しているディレクトリ オブジェクト。読み取り専用です。Null 許容型。|
-|people|[人](person.md)コレクション| ユーザーに関連する人。 読み取り専用。 Null 許容型。
+|people|[人](person.md)コレクション| ユーザーに関連する人。 読み取り専用です。 Null 許容型。
 |photo|[profilePhoto](profilephoto.md)| ユーザーのプロフィール写真。読み取り専用です。|
-|プランナー|[plannerUser](planneruser.md)| ユーザーの存在するプランナーのリソースへのエントリ ポイントです。 読み取り専用。|
+|プランナー|[plannerUser](planneruser.md)| ユーザーの存在するプランナーのリソースへのエントリ ポイントです。 読み取り専用です。|
 |registeredDevices|[directoryObject](directoryobject.md) コレクション|ユーザーについて登録されているデバイス。読み取り専用です。Null 許容型。|
 
 ## <a name="json-representation"></a>JSON 表記

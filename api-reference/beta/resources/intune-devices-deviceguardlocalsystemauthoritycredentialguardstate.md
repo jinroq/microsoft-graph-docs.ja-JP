@@ -1,12 +1,13 @@
 ---
 title: deviceGuardLocalSystemAuthorityCredentialGuardState 列挙型
 description: まだ文書化されていません
-ms.openlocfilehash: a54eea5943683b47493c02916de235e1d35b240b
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: cc3b563fa83f4551f154b9e732f9d473703ca9fb
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27069665"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27314484"
 ---
 # <a name="deviceguardlocalsystemauthoritycredentialguardstate-enum-type"></a>deviceGuardLocalSystemAuthorityCredentialGuardState 列挙型
 

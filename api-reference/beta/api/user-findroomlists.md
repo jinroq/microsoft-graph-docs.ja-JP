@@ -1,12 +1,13 @@
 ---
 title: 'ユーザー: findRoomLists'
 description: テナントで定義された部屋の一覧を取得します。
-ms.openlocfilehash: 5857d5381252fc00c9b159c8a0a7eecd71de2a08
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: dkershaw10
+ms.openlocfilehash: f96f8e5c6349e87d2d71820b7b7cd3b0367908f9
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27066260"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27310774"
 ---
 # <a name="user-findroomlists"></a>ユーザー: findRoomLists
 
@@ -37,7 +38,7 @@ GET /users/<id>/findRoomLists
 ```
 
 ## <a name="request-headers"></a>要求ヘッダー
-| 名前       | 型 | 説明 |
+| 名前       | 種類 | 説明 |
 |:---------------|:----------|:----------|
 | Authorization  | string  | ベアラー {トークン}。必須。 |
 | Content-Type  | string  | application/json. Required. |

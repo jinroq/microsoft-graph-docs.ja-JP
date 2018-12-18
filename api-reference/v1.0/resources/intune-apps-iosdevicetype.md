@@ -1,12 +1,13 @@
 ---
 title: iosDeviceType リソースの種類
 description: モバイル アプリを実行できる iOS デバイスの種類のプロパティが含まれます。
-ms.openlocfilehash: b14abbb6713daf9fad7b0d2fd6f7865d251b6147
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 3111bc4b5fc78f6ed60b4a241b48e443923f7159
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27022215"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27313602"
 ---
 # <a name="iosdevicetype-resource-type"></a>iosDeviceType リソースの種類
 
@@ -14,7 +15,7 @@ ms.locfileid: "27022215"
 
 モバイル アプリを実行できる iOS デバイスの種類のプロパティが含まれます。
 ## <a name="properties"></a>プロパティ
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
 |iPad|ブール型 (Boolean)|アプリを iPad で実行できるかどうか。|
 |iPhoneAndIPod|ブール型 (Boolean)|アプリを iPhone および iPod で実行できるかどうか。|
