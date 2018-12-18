@@ -1,12 +1,13 @@
 ---
 title: リスト windows10VpnConfigurations
 description: Windows10VpnConfiguration オブジェクトのプロパティと関係を一覧表示します。
-ms.openlocfilehash: d8c2ce989cff6f8d7a499dab499e41377f96d05e
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: efc1abfff951cf7ce8d6b69072511a380b1be450
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27073833"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27354888"
 ---
 # <a name="list-windows10vpnconfigurations"></a>リスト windows10VpnConfigurations
 

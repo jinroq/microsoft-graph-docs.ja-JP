@@ -1,12 +1,13 @@
 ---
 title: windowsManagementAppHealthState リソースの種類
 description: Windows 管理アプリケーションの正常性の状態エンティティです。
-ms.openlocfilehash: 8c8f35d25e42b8f833acb0cb86b313c37006b0b9
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 5ff77ce54a99ed71a8f4b3498a469342b2e46367
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27073891"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27359704"
 ---
 # <a name="windowsmanagementapphealthstate-resource-type"></a>windowsManagementAppHealthState リソースの種類
 
@@ -24,10 +25,10 @@ Windows 管理アプリケーションの正常性の状態エンティティで
 |[WindowsManagementAppHealthState を削除します。](../api/intune-devices-windowsmanagementapphealthstate-delete.md)|なし|の[windowsManagementAppHealthState](../resources/intune-devices-windowsmanagementapphealthstate.md)を削除します。|
 |[WindowsManagementAppHealthState を更新します。](../api/intune-devices-windowsmanagementapphealthstate-update.md)|[windowsManagementAppHealthState](../resources/intune-devices-windowsmanagementapphealthstate.md)|[WindowsManagementAppHealthState](../resources/intune-devices-windowsmanagementapphealthstate.md)オブジェクトのプロパティを更新します。|
 
-## <a name="properties"></a>プロパティ
-|プロパティ|型|説明|
+## <a name="properties"></a>Properties
+|プロパティ|種類|説明|
 |:---|:---|:---|
-|id|String|Windows 管理アプリケーションの正常性状態の一意の識別子|
+|ID|String|Windows 管理アプリケーションの正常性状態の一意の識別子|
 |healthState|[healthState](../resources/intune-devices-healthstate.md)|Windows 管理アプリケーションの正常性状態。 可能な値は、`unknown`、`healthy`、`unhealthy` です。|
 |installedVersion|String|Windows 管理アプリケーションは、バージョンをインストールします。|
 |lastCheckInDateTime|DateTimeOffset|Windows 管理アプリケーション最後のチェックインの時間です。|

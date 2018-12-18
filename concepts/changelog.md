@@ -1,12 +1,13 @@
 ---
 title: Microsoft Graph の変更ログ
 description: この変更ログでは、Microsoft Graph と、v1.0 およびベータ版のエンドポイント Microsoft Graph API の変更内容について説明します。
-ms.openlocfilehash: 4317439af246701f9a1de214198e74933ef55632
-ms.sourcegitcommit: f3d479edf03935d0edbbc7668a65f7cde2a56c92
+author: jthake-msft
+ms.openlocfilehash: 4e8b70d5af01992e566c2d777db8f8a3c359f838
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/15/2018
-ms.locfileid: "27283732"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27358563"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Microsoft Graph の変更ログ
 
@@ -2873,7 +2874,7 @@ Microsoft Graph API に関する既知の問題の詳細については、「[�
 
 | **変更の種類** | **バージョン**   | **説明**                          |
 | :-------------- | :------------ | :--------------------------------------- |
-| 修正             | v1.0 およびベータ版 | directoryObjects にバインドされている呼び出しアクションが修正されました。このアクションは次のエラーで失敗していました。操作からの戻り値の型は、指定したエンティティ セットで使用できません。これは、次のアクションに適用されます: _microsoft.graph.checkMemberObjects_、_microsoft.graph.getMemberObjects_、_microsoft.graph.checkMemberGroups_、_microsoft.graph.assignLicense_、_microsoft.graph.changePassword_。 |
+| 修正プログラム             | v1.0 およびベータ版 | directoryObjects にバインドされている呼び出しアクションが修正されました。このアクションは次のエラーで失敗していました。操作からの戻り値の型は、指定したエンティティ セットで使用できません。これは、次のアクションに適用されます: _microsoft.graph.checkMemberObjects_、_microsoft.graph.getMemberObjects_、_microsoft.graph.checkMemberGroups_、_microsoft.graph.assignLicense_、_microsoft.graph.changePassword_。 |
 
 ## <a name="december-2015"></a>2015 年 12 月
 
@@ -2887,7 +2888,7 @@ Microsoft Graph API に関する既知の問題の詳細については、「[�
 
 | **変更の種類** | **バージョン**   | **説明**                          |
 | :-------------- | :------------ | :--------------------------------------- |
-| 修正             | v1.0 およびベータ版 | 同じプロパティを複数回指定した $filter 式を使用する要求が修正されました。この要求は次の 500 エラーで失敗していました。同じキーを持つ項目が既に追加されています。 |
+| 修正プログラム             | v1.0 およびベータ版 | 同じプロパティを複数回指定した $filter 式を使用する要求が修正されました。この要求は次の 500 エラーで失敗していました。同じキーを持つ項目が既に追加されています。 |
 | 修正プログラム             | v1.0 およびベータ版 | アクション パラメーターの名前と値で大文字と小文字が区別されない問題を修正しました。 |
 | 修正             | v1.0 およびベータ版 | 一部の埋め込み複合プロパティに null 値を含むペイロードの要求処理を修正しました。この要求は null 参照の例外で失敗していました。 |
 | 追加        | v1.0 およびベータ版 | 複合型プロパティの並べ替えとフィルター処理のサポートが追加されました。 |
@@ -2898,7 +2899,7 @@ Microsoft Graph API に関する既知の問題の詳細については、「[�
 
 | **変更の種類** | **バージョン**   | **説明**                          |
 | :-------------- | :------------ | :--------------------------------------- |
-| 修正             | v1.0 およびベータ版 | 次のグループ アクションの呼び出しを修正しました: _microsoft.graph.addFavorite_、_microsoft.graph.removeFavorite_、_microsoft.graph.resetUnseenCount_。 |
+| 修正プログラム             | v1.0 およびベータ版 | 次のグループ アクションの呼び出しを修正しました: _microsoft.graph.addFavorite_、_microsoft.graph.removeFavorite_、_microsoft.graph.resetUnseenCount_。 |
 
 ### <a name="messages"></a>メッセージ
 
@@ -2910,6 +2911,6 @@ Microsoft Graph API に関する既知の問題の詳細については、「[�
 
 | **変更の種類** | **バージョン**   | **説明**                          |
 | :-------------- | :------------ | :--------------------------------------- |
-| 修正             | v1.0 およびベータ版 | ユーザー プリンシパル名 (UPN) でユーザーを参照する場合に、他のユーザーで特定のユーザー プロパティを選択できてしまう問題を修正しました。 例: https://graph.microsoft.com/v1.0/users/anotherUser@contoso.com?$select=aboutMe |
+| 修正プログラム             | v1.0 およびベータ版 | ユーザー プリンシパル名 (UPN) でユーザーを参照する場合に、他のユーザーで特定のユーザー プロパティを選択できてしまう問題を修正しました。 例: https://graph.microsoft.com/v1.0/users/anotherUser@contoso.com?$select=aboutMe |
 | 修正             | v1.0 およびベータ版 | ユーザーにバインドされた _microsoft.graph.reminderView_ 関数の呼び出しを修正しました。この呼び出しは次のエラーで失敗していました。Microsoft.OutlookServices.Reminder 型で businessPhones という名前のプロパティは見つかりませんでした。 |
 | 修正プログラム             | v1.0 およびベータ版 | 400 エラーで失敗していた、ユーザーの作成と更新 (POST/PATCH /v1.0/users) を修正しました。 |

@@ -1,12 +1,13 @@
 ---
 title: deviceCategory の更新
 description: deviceCategory オブジェクトのプロパティを更新します。
-ms.openlocfilehash: 0a236a48877f6d71501fbd0dc6ad35664f766ff2
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 73980aa4c178ff610ce44dc3b832c8c931d72740
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27022232"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27344304"
 ---
 # <a name="update-devicecategory"></a>deviceCategory の更新
 
@@ -44,9 +45,9 @@ PATCH /deviceManagement/detectedApps/{detectedAppId}/managedDevices/{managedDevi
 
 次の表に、[deviceCategory](../resources/intune-shared-devicecategory.md) の作成時に必要なプロパティを示します。
 
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
-|id|String|デバイス カテゴリの一意識別子。 読み取り専用です。|
+|ID|String|デバイス カテゴリの一意識別子。 読み取り専用です。|
 |**契約時**|
 |displayName|String|デバイス カテゴリの表示名。|
 |説明|String|デバイス カテゴリに関するオプションの説明。|

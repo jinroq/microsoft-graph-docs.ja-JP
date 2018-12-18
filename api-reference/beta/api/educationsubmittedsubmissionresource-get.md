@@ -1,12 +1,13 @@
 ---
 title: EducationSubmittedSubmissionResource を取得します。
 description: 送信されたリソースを返します。 これに利用可能な教師、受講者が送信されると、できは受講者にしたら、先生が、提出書類を公開しました。  教師おくことができますノートの一部のリソースに注意してください。
-ms.openlocfilehash: 89235ad1d33e86da13ec5f4637af7cda949a940a
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: dipakboyed
+ms.openlocfilehash: a956f7b18125f01798f804ab577450030a626b3a
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27067331"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27336534"
 ---
 # <a name="get-educationsubmittedsubmissionresource"></a>EducationSubmittedSubmissionResource を取得します。
 

@@ -1,12 +1,13 @@
 ---
 title: windowsUniversalAppXContainedApp リソースの種類
 description: WindowsUniversalAppX アプリケーションの格納されているアプリケーションを表すクラスです。
-ms.openlocfilehash: a2025174135fd19b0b8925f9deccad1f2217d018
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 19afa6a677d51613b6a4a18368c53cc5a12a4df7
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27071103"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27360145"
 ---
 # <a name="windowsuniversalappxcontainedapp-resource-type"></a>windowsUniversalAppXContainedApp リソースの種類
 
@@ -27,10 +28,10 @@ WindowsUniversalAppX アプリケーションの格納されているアプリ�
 |[WindowsUniversalAppXContainedApp を削除します。](../api/intune-apps-windowsuniversalappxcontainedapp-delete.md)|なし|の[windowsUniversalAppXContainedApp](../resources/intune-apps-windowsuniversalappxcontainedapp.md)を削除します。|
 |[WindowsUniversalAppXContainedApp を更新します。](../api/intune-apps-windowsuniversalappxcontainedapp-update.md)|[windowsUniversalAppXContainedApp](../resources/intune-apps-windowsuniversalappxcontainedapp.md)|[WindowsUniversalAppXContainedApp](../resources/intune-apps-windowsuniversalappxcontainedapp.md)オブジェクトのプロパティを更新します。|
 
-## <a name="properties"></a>プロパティ
-|プロパティ|型|説明|
+## <a name="properties"></a>Properties
+|プロパティ|種類|説明|
 |:---|:---|:---|
-|id|String|エンティティのキー。 [MobileContainedApp](../resources/intune-apps-mobilecontainedapp.md)から継承されました。|
+|ID|String|エンティティのキー。 [MobileContainedApp](../resources/intune-apps-mobilecontainedapp.md)から継承されました。|
 |appUserModelId|String|WindowsUniversalAppX アプリケーションの格納されているアプリケーションのアプリケーション ユーザー モデル ID です。|
 
 ## <a name="relationships"></a>リレーションシップ

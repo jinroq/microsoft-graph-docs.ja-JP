@@ -1,12 +1,13 @@
 ---
 title: outlookTask リソースの種類
 description: '作業項目を追跡することができる Outlook のアイテム。 '
-ms.openlocfilehash: c197591d40b4c65e9a7ab5e047e9a93c522e6400
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: angelgolfer-ms
+ms.openlocfilehash: 959e7ee7d6b1844d4b66b8ab53747e26aa91d492
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27067459"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27335232"
 ---
 # <a name="outlooktask-resource-type"></a>outlookTask リソースの種類
 
@@ -37,7 +38,7 @@ Prefer: outlook.timezone="Eastern Standard Time"
 |:---------------|:--------|:----------|
 |[OutlookTask を取得します。](../api/outlooktask-get.md) | [outlookTask](outlooktask.md) |ユーザーのメールボックスのプロパティと、Outlook のタスクの関係を取得します。|
 |[Update](../api/outlooktask-update.md) | [outlookTask](outlooktask.md) |Outlook の仕事の書き込み可能なプロパティを変更します。 |
-|[削除](../api/outlooktask-delete.md) | なし |ユーザーのメールボックス内の指定されたタスクを削除します。 |
+|[Delete](../api/outlooktask-delete.md) | なし |ユーザーのメールボックス内の指定されたタスクを削除します。 |
 |[Complete](../api/outlooktask-complete.md)|[outlookTask](outlooktask.md)コレクション|**CompletedDateTime**プロパティに現在の日付、および**状態**のプロパティを設定する Outlook のタスクを完了`completed`。|
 |**添付ファイル**| | |
 |[添付ファイルを一覧表示する](../api/outlooktask-list-attachments.md) |[attachment](attachment.md) コレクション| Outlook の仕事のすべての添付ファイルを取得します。|
@@ -48,8 +49,8 @@ Prefer: outlook.timezone="Eastern Standard Time"
 |[複数値の拡張プロパティを作成する](../api/multivaluelegacyextendedproperty-post-multivalueextendedproperties.md) | [outlookTask](outlooktask.md) | 新規または既存の Outlook タスクの 1 つまたは複数の値を複数の拡張プロパティを作成します。  |
 |[複数値の拡張プロパティを使用してタスクを取得します。](../api/multivaluelegacyextendedproperty-get.md)  | [outlookTask](outlooktask.md) | 使用して複数の値の拡張プロパティを含む Outlook のタスクを取得する`$expand`。 |
 
-## <a name="properties"></a>プロパティ
-| プロパティ     | 型   |説明|
+## <a name="properties"></a>Properties
+| プロパティ     | 種類   |説明|
 |:---------------|:--------|:----------|
 |担当者|String|タスクが割り当てられているユーザーの名前。|
 |body|[itemBody](itembody.md)|通常はタスクに関する情報を含むタスク本体。HTML 型のみがサポートされていることに注意してください。|
@@ -58,26 +59,26 @@ Prefer: outlook.timezone="Eastern Standard Time"
 |CompletedDateTime|[dateTimeTimeZone](datetimetimezone.md)|タスクが終了した日付 (指定のタイム ゾーン)。|
 |createdDateTime|DateTimeOffset|日付と時刻、タスクが作成された日時です。 既定では、UTC であります。 要求ヘッダーにカスタム タイム ゾーンを使用できます。 プロパティの値は、ISO 8601 形式を使用します。 たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、次のようになります。`'2014-01-01T00:00:00Z'`|
 |dueDateTime|[dateTimeTimeZone](datetimetimezone.md)|タスクが終了する予定の日時 (指定のタイム ゾーン)。|
-|hasAttachments|ブール値|タスクに添付ファイルが含まれている場合、true に設定します。|
+|hasAttachments|ブール型|タスクに添付ファイルが含まれている場合、true に設定します。|
 |id|String|タスクの一意識別子。 読み取り専用。|
-|importance|文字列|イベントの重要度。 可能な値は `low`、`normal`、`high` です。|
-|isReminderOn|ブール値|ユーザーにタスクを通知するアラートを設定する場合は、true に設定します。|
+|importance|string|イベントの重要度。 可能な値は `low`、`normal`、`high` です。|
+|isReminderOn|Boolean|ユーザーにタスクを通知するアラートを設定する場合は、true に設定します。|
 |lastModifiedDateTime|DateTimeOffset|日付と、タスクが最後に修正されました。 既定では、UTC であります。 要求ヘッダーにカスタム タイム ゾーンを使用できます。 プロパティの値は、ISO 8601 形式を使用し、UTC 時刻が常に。 たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、次のようになります。`'2014-01-01T00:00:00Z'`|
 |owner|String|タスクを作成したユーザーの名前。|
 |parentFolderId|String|タスクの親フォルダーの一意の識別子。|
 |recurrence|[patternedRecurrence](patternedrecurrence.md)|タスクの繰り返しパターン。|
 |reminderDateTime|[dateTimeTimeZone](datetimetimezone.md)|タスクのアラーム通知を行う日時。|
-|sensitivity|文字列|タスクのプライバシーのレベルを示します。 可能な値は、`normal`、`personal`、`private`、`confidential` です。|
+|sensitivity|string|タスクのプライバシーのレベルを示します。 可能な値は、`normal`、`personal`、`private`、`confidential` です。|
 |startDateTime|[dateTimeTimeZone](datetimetimezone.md)|タスクを開始する日付 (指定のタイム ゾーン)。|
-|status|文字列|状態またはタスクの進行状況を示します。 可能な値は、`notStarted`、`inProgress`、`completed`、`waitingOnOthers`、`deferred` です。|
+|status|string|状態またはタスクの進行状況を示します。 可能な値は、`notStarted`、`inProgress`、`completed`、`waitingOnOthers`、`deferred` です。|
 |subject|String|タスクのタイトルまたは簡単な説明。|
 
 ## <a name="relationships"></a>リレーションシップ
 | リレーションシップ | 型   |説明|
 |:---------------|:--------|:----------|
-|attachments|[attachment](attachment.md) コレクション|タスクの[fileAttachment](fileattachment.md)、 [itemAttachment](itemattachment.md)、および[referenceAttachment](referenceattachment.md)の添付ファイルのコレクションです。  読み取り専用。 Null 許容型。|
-|multiValueExtendedProperties|[multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md) collection|複数値のコレクションは、タスクに対して定義されたプロパティを拡張します。 読み取り専用。 Null 許容型。|
-|singleValueExtendedProperties|[singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md) collection|単一値のコレクションでは、タスクに対して定義されたプロパティを拡張します。 読み取り専用。 Null 許容型。|
+|attachments|[attachment](attachment.md) コレクション|タスクの[fileAttachment](fileattachment.md)、 [itemAttachment](itemattachment.md)、および[referenceAttachment](referenceattachment.md)の添付ファイルのコレクションです。  読み取り専用です。 Null 許容型。|
+|multiValueExtendedProperties|[multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md) collection|複数値のコレクションは、タスクに対して定義されたプロパティを拡張します。 読み取り専用です。 Null 許容型。|
+|singleValueExtendedProperties|[singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md) collection|単一値のコレクションでは、タスクに対して定義されたプロパティを拡張します。 読み取り専用です。 Null 許容型。|
 
 ## <a name="json-representation"></a>JSON 表記
 以下は、リソースの JSON 表記です。

@@ -1,12 +1,13 @@
 ---
 title: 定期的に繰り返される予定を、Outlook で定期的なイベントとして設定する
 description: 繰り返しイベントは、Outlook カレンダーの重要な部分です。 毎週行う上司との個別の打ち合わせや毎月第 2 火曜日に行われる部門全体のレビュー会議などの繰り返しイベントでは、イベントを一度作成するだけで、シリーズの残りの部分はサーバーによって入力されます。
-ms.openlocfilehash: 1af082a32d79f6011e93a7fc0c5fc9d553d16712
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: angelgolfer-ms
+ms.openlocfilehash: 85d856cd9f59ee7df643ff74ed4b3dd9f48ba3a4
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27092371"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27340076"
 ---
 # <a name="schedule-repeating-appointments-as-recurring-events-in-outlook"></a>定期的に繰り返される予定を、Outlook で定期的なイベントとして設定する
 

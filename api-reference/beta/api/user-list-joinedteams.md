@@ -1,14 +1,15 @@
 ---
-title: リスト joinedTeams
+title: 参加チームのリストを作成する
 description: ユーザーの直接のメンバーでは、マイクロソフトのチームで、チームを取得します。
-ms.openlocfilehash: 8eabc9a27de2deb80153c9cbec5e8266dd38ed7d
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: dkershaw10
+ms.openlocfilehash: 1fdc3ac9f2f09e31af71cdb4707dd84adf2c74a5
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27068711"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27343842"
 ---
-# <a name="list-joinedteams"></a>リスト joinedTeams
+# <a name="list-joinedteams"></a>参加チームのリストを作成する
 
 > **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。
 

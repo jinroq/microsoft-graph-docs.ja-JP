@@ -1,12 +1,13 @@
 ---
 title: iosCompliancePolicy リソースの種類
 description: このクラスには、iOS のコンプライアンス設定が含まれています。
-ms.openlocfilehash: 63893ab38b5ad8204289185c05cb3294be633a3c
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: ae7c5c1df55236c7232e34e377a1b55e947e84ca
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27070354"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27336380"
 ---
 # <a name="ioscompliancepolicy-resource-type"></a>iosCompliancePolicy リソースの種類
 
@@ -28,7 +29,7 @@ ms.locfileid: "27070354"
 |[iosCompliancePolicy の更新](../api/intune-deviceconfig-ioscompliancepolicy-update.md)|[iosCompliancePolicy](../resources/intune-deviceconfig-ioscompliancepolicy.md)|[iosCompliancePolicy](../resources/intune-deviceconfig-ioscompliancepolicy.md) オブジェクトのプロパティを更新します。|
 
 ## <a name="properties"></a>プロパティ
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
 |roleScopeTagIds|String コレクション|このエンティティ インスタンスのスコープのタグのリストです。 [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md) から継承します|
 |id|String|エンティティのキー。 [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md) から継承します|

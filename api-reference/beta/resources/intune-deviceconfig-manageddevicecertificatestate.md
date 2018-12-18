@@ -1,12 +1,13 @@
 ---
 title: managedDeviceCertificateState リソースの種類
 description: まだ文書化されていません
-ms.openlocfilehash: 17128f812eca82f01d6d2fa632f11c6640d18fc6
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: f26eb40d371c59a65f58bc87ac5a24d38f47a959
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27073154"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27358388"
 ---
 # <a name="manageddevicecertificatestate-resource-type"></a>managedDeviceCertificateState リソースの種類
 
@@ -24,10 +25,10 @@ ms.locfileid: "27073154"
 |[ManagedDeviceCertificateState を削除します。](../api/intune-deviceconfig-manageddevicecertificatestate-delete.md)|なし|の[managedDeviceCertificateState](../resources/intune-deviceconfig-manageddevicecertificatestate.md)を削除します。|
 |[ManagedDeviceCertificateState を更新します。](../api/intune-deviceconfig-manageddevicecertificatestate-update.md)|[managedDeviceCertificateState](../resources/intune-deviceconfig-manageddevicecertificatestate.md)|[ManagedDeviceCertificateState](../resources/intune-deviceconfig-manageddevicecertificatestate.md)オブジェクトのプロパティを更新します。|
 
-## <a name="properties"></a>プロパティ
-|プロパティ|型|説明|
+## <a name="properties"></a>Properties
+|プロパティ|種類|説明|
 |:---|:---|:---|
-|id|String|エンティティのキー。|
+|ID|String|エンティティのキー。|
 |devicePlatform|[devicePlatformType](../resources/intune-shared-deviceplatformtype.md)|デバイスのプラットフォームです。 可能な値は、`android`、`androidForWork`、`iOS`、`macOS`、`windowsPhone81`、`windows81AndLater`、`windows10AndLater`、`androidWorkProfile` です。|
 |certificateKeyUsage|[keyUsages](../resources/intune-deviceconfig-keyusages.md)|キーの使用法です。 使用可能な値は、`keyEncipherment`、`digitalSignature` です。|
 |certificateValidityPeriodUnits|[certificateValidityPeriodScale](../resources/intune-deviceconfig-certificatevalidityperiodscale.md)|有効期間の単位。 可能な値は、`days`、`months`、`years` です。|

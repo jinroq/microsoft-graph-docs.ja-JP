@@ -1,12 +1,13 @@
 ---
 title: iosManagedAppProtection リソース タイプ
 description: iOS デバイス上の特定のセキュリティ グループおよびアプリの特定のセットを対象とした、管理設定の詳細を構成するために使用するポリシー
-ms.openlocfilehash: e0f38dc23d41b05be5f2e2e2a94edb19f199a1c5
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: b0323564851548b31533f9ee0c4c6cd38ae25984
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27021421"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27359956"
 ---
 # <a name="iosmanagedappprotection-resource-type"></a>iosManagedAppProtection リソース タイプ
 
@@ -26,7 +27,7 @@ iOS デバイス上の特定のセキュリティ グループおよびアプリ
 |[Update iosManagedAppProtection](../api/intune-mam-iosmanagedappprotection-update.md)|[iosManagedAppProtection](../resources/intune-mam-iosmanagedappprotection.md)|[iosManagedAppProtection](../resources/intune-mam-iosmanagedappprotection.md) オブジェクトのプロパティを更新します。|
 
 ## <a name="properties"></a>プロパティ
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
 |displayName|String|ポリシーの表示名。 [managedAppPolicy](../resources/intune-mam-managedapppolicy.md) から継承します|
 |説明|String|ポリシーの説明。 [managedAppPolicy](../resources/intune-mam-managedapppolicy.md) から継承します|

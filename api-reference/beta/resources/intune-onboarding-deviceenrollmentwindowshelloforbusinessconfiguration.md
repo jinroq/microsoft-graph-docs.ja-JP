@@ -1,12 +1,13 @@
 ---
 title: deviceEnrollmentWindowsHelloForBusinessConfiguration リソースの種類
 description: まだ文書化されていません
-ms.openlocfilehash: 6d3732652a161c145147d0f7d297e65a01f36dfa
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 268d05b8bf20fddc28e331d5bde73286bb13fc6a
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27071346"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27356876"
 ---
 # <a name="deviceenrollmentwindowshelloforbusinessconfiguration-resource-type"></a>deviceEnrollmentWindowsHelloForBusinessConfiguration リソースの種類
 
@@ -28,9 +29,9 @@ ms.locfileid: "27071346"
 |[Update deviceEnrollmentWindowsHelloForBusinessConfiguration](../api/intune-onboarding-deviceenrollmentwindowshelloforbusinessconfiguration-update.md)|[deviceEnrollmentWindowsHelloForBusinessConfiguration](../resources/intune-onboarding-deviceenrollmentwindowshelloforbusinessconfiguration.md)|[deviceEnrollmentWindowsHelloForBusinessConfiguration](../resources/intune-onboarding-deviceenrollmentwindowshelloforbusinessconfiguration.md) オブジェクトのプロパティを更新します。|
 
 ## <a name="properties"></a>プロパティ
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
-|id|String|まだ文書化されていません。[deviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md) から継承します|
+|ID|String|まだ文書化されていません。[deviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md) から継承します|
 |displayName|String|まだ文書化されていません。[deviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md) から継承します|
 |説明|String|まだ文書化されていません。[deviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md) から継承します|
 |priority|Int32|まだ文書化されていません。[deviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md) から継承します|
@@ -42,7 +43,7 @@ ms.locfileid: "27071346"
 |pinUppercaseCharactersUsage|[windowsHelloForBusinessPinUsage](../resources/intune-onboarding-windowshelloforbusinesspinusage.md)|まだ記載されていません。 可能な値は、`allowed`、`required`、`disallowed` です。|
 |pinLowercaseCharactersUsage|[windowsHelloForBusinessPinUsage](../resources/intune-onboarding-windowshelloforbusinesspinusage.md)|まだ記載されていません。 可能な値は、`allowed`、`required`、`disallowed` です。|
 |pinSpecialCharactersUsage|[windowsHelloForBusinessPinUsage](../resources/intune-onboarding-windowshelloforbusinesspinusage.md)|まだ記載されていません。 可能な値は、`allowed`、`required`、`disallowed` です。|
-|ステート|[有効化](../resources/intune-shared-enablement.md)|まだ記載されていません。 可能な値は、`notConfigured`、`enabled`、`disabled` です。|
+|state|[有効化](../resources/intune-shared-enablement.md)|まだ記載されていません。 可能な値は、`notConfigured`、`enabled`、`disabled` です。|
 |securityDeviceRequired|Boolean|まだ文書化されていません|
 |unlockWithBiometricsEnabled|Boolean|まだ文書化されていません|
 |remotePassportEnabled|Boolean|まだ文書化されていません|

@@ -1,12 +1,13 @@
 ---
 title: officeConfigurationGroupAssignmentTarget リソースの種類
 description: AAD Office クライアントの構成は、ターゲットの割り当てをグループ化します。
-ms.openlocfilehash: 263e48bfc5800231a9f36159e802f65294e6ac02
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 82008de6e5cb64885e9e2d5804a00956da2ff434
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27072326"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27335869"
 ---
 # <a name="officeconfigurationgroupassignmenttarget-resource-type"></a>officeConfigurationGroupAssignmentTarget リソースの種類
 
@@ -18,8 +19,8 @@ AAD Office クライアントの構成は、ターゲットの割り当てをグ
 
 [OfficeConfigurationAssignmentTarget](../resources/intune-cirrus-officeconfigurationassignmenttarget.md)から継承します。
 
-## <a name="properties"></a>プロパティ
-|プロパティ|型|説明|
+## <a name="properties"></a>Properties
+|プロパティ|種類|説明|
 |:---|:---|:---|
 |groupId|String|AAD グループの Id は、対象としてデバイスを構成します。|
 

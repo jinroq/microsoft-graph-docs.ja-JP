@@ -1,12 +1,13 @@
 ---
 title: enrollmentConfigurationAssignment の削除
 description: enrollmentConfigurationAssignment を削除します。
-ms.openlocfilehash: 72922c66f27827dc32662c357e07fc1a401428ae
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: aa809a2a69ec5e40470b9b95e9ca51dec13b9f10
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27021011"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27355035"
 ---
 # <a name="delete-enrollmentconfigurationassignment"></a>enrollmentConfigurationAssignment の削除
 

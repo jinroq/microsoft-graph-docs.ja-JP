@@ -1,12 +1,13 @@
 ---
 title: omaSettingBoolean リソースの種類
 description: OMA 設定のブール定義。
-ms.openlocfilehash: 2f2f156dba23fdba0f11667bf6d0c107e3cf74b5
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 3a643f642784b586a2528cb3396383466043d8b3
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27067843"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27357338"
 ---
 # <a name="omasettingboolean-resource-type"></a>omaSettingBoolean リソースの種類
 
@@ -19,7 +20,7 @@ OMA 設定のブール定義。
 [omaSetting](../resources/intune-deviceconfig-omasetting.md) からの継承
 
 ## <a name="properties"></a>プロパティ
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
 |displayName|文字列|表示名。 [omaSetting](../resources/intune-deviceconfig-omasetting.md) からの継承|
 |説明|String|説明。 [omaSetting](../resources/intune-deviceconfig-omasetting.md) からの継承|

@@ -1,12 +1,13 @@
 ---
 title: 'スキーマ拡張機能を使用したグループへのカスタム データの追加 '
 description: '*スキーマ拡張機能*の使用方法について、具体例を使って説明します。 '
-ms.openlocfilehash: 098853ffaa5292313c71259e97fb8f1a8063fec4
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: dkershaw10
+ms.openlocfilehash: 101e4569d05a36a55cc264ef806df312f2667aa8
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27092429"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27353600"
 ---
 # <a name="add-custom-data-to-groups-using-schema-extensions"></a>スキーマ拡張機能を使用したグループへのカスタム データの追加 
 

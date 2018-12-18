@@ -1,12 +1,13 @@
 ---
 title: educationclass プロパティを更新する
 description: クラスのプロパティを更新します。
-ms.openlocfilehash: 5b601fae6680b84d425a105bc39c559110872b76
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: mmast-msft
+ms.openlocfilehash: 9a11ae5e1a2139df4ade3417c940d00dea2d1888
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27021268"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27358710"
 ---
 # <a name="update-educationclass-properties"></a>educationclass プロパティを更新する
 
@@ -35,7 +36,7 @@ PATCH /education/classes/{id}
 ## <a name="request-body"></a>要求本文
 要求本文で、更新する関連フィールドの値を指定します。 要求本文に含まれない既存のプロパティは、以前の値のままになるか、他のプロパティ値の変更に基づいて再計算されます。 最適なパフォーマンスを得るために、変更されていない既存の値を含めないでください。
 
-| プロパティ     | 型   |説明|
+| プロパティ     | 種類   |説明|
 |:---------------|:--------|:----------|
 |説明|String| クラスの説明。|
 |displayName|String| クラスの名前。|

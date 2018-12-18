@@ -1,12 +1,13 @@
 ---
 title: メッセージを更新する
 description: メッセージ オブジェクトのプロパティを更新します。
-ms.openlocfilehash: 7d78f3827618378299043c601fcf490556b5d5b4
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: angelgolfer-ms
+ms.openlocfilehash: b8f39dc9648203f86749ba06b88bf2f74b79d88a
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27020754"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27337542"
 ---
 # <a name="update-message"></a>メッセージを更新する
 
@@ -29,14 +30,14 @@ PATCH /me/mailFolders/{id}/messages/{id}
 PATCH /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}
 ```
 ## <a name="request-headers"></a>要求ヘッダー
-| 名前       | 型 | 説明|
+| 名前       | 種類 | 説明|
 |:-----------|:------|:----------|
 | Authorization  | string  | ベアラー {トークン}。必須。 |
 | Content-Type | string  | エンティティ本文内のデータの性質です。必須。 |
 ## <a name="request-body"></a>要求本文
 要求本文で、更新する関連フィールドの値を指定します。要求本文に含まれない既存のプロパティは、以前の値のままになるか、他のプロパティ値の変化に基づいて再計算されます。最適なパフォーマンスを得るためには、変更されていない既存の値を含めないでください。以下のプロパティは書き込み可能または更新可能です。
 
-| プロパティ     | 型   |説明|
+| プロパティ     | 種類   |説明|
 |:---------------|:--------|:----------|
 |bccRecipients|Recipient|メッセージの BCC 受信者。 更新可能な場合にのみ isDraft = true です。|
 |categories|String コレクション|メッセージに関連付けられたカテゴリ。|
@@ -45,13 +46,13 @@ PATCH /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}
 |importance|String|メッセージの重要性。 可能な値: `Low`、 `Normal`、 `High`。|
 |inferenceClassification | String | 推論の妥当性や重要度、または明示的なオーバーライドに基づいて、ユーザーに対するメッセージの分類です。 可能な値:`focused`または`other`。 |
 |internetMessageId |String |[RFC2822](https://www.ietf.org/rfc/rfc2822.txt) によって指定された形式のメッセージ ID。 更新可能な場合にのみ isDraft = true です。|
-|isRead|ブール値|メッセージが読み取られたかどうかを示します。|
+|isRead|Boolean|メッセージが読み取られたかどうかを示します。|
 |replyTo|Recipient collection|返信時に使用される電子メール アドレス。 更新可能な場合にのみ isDraft = true です。|
 |sender|Recipient|メッセージを生成するために実際に使用されるアカウント。 更新可能な場合にのみ isDraft = true の場合と[共有されているメールボックス](https://docs.microsoft.com/en-us/exchange/collaboration/shared-mailboxes/shared-mailboxes)からメッセージを送信すると[デリゲート](https://support.office.com/en-us/article/allow-someone-else-to-manage-your-mail-and-calendar-41c40c04-3bd1-4d22-963a-28eafec25926)としてメッセージを送信します。 いずれの場合も、値は、使用される実際のメールボックスに対応する必要があります。|
 |toRecipients|Recipient collection|宛先] の受信者のメッセージです。 更新可能な場合にのみ isDraft = true です。|
 |body|ItemBody|メッセージの本文。 更新可能な場合にのみ isDraft = true です。|
-|isDeliveryReceiptRequested|ブール値|メッセージの開封応答が要求されているかどうかを示します。|
-|isReadReceiptRequested|ブール値|メッセージの開封応答が要求されているかどうかを示します。|
+|isDeliveryReceiptRequested|Boolean|メッセージの開封応答が要求されているかどうかを示します。|
+|isReadReceiptRequested|Boolean|メッセージの開封応答が要求されているかどうかを示します。|
 |subject|String|メッセージの件名。 更新可能な場合にのみ isDraft = true です。|
 
 **メッセージ** リソースは[拡張機能](/graph/extensibility-overview)をサポートしているため、`PATCH` 操作を使用して、既存の**メッセージ** インスタンスで拡張機能のカスタム プロパティにあるアプリ固有のデータを追加、更新、または削除することができます。

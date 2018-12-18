@@ -1,12 +1,13 @@
 ---
 title: managedMobileApp の削除
 description: managedMobileApp を削除します。
-ms.openlocfilehash: 95c8bcf5704cce00ed5b256dd5ab4993d4af76d0
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: ea2efb72282ad60e09e3f33370ea6edf0036961a
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27067010"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27358948"
 ---
 # <a name="delete-managedmobileapp"></a>managedMobileApp の削除
 

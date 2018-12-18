@@ -1,12 +1,13 @@
 ---
 title: Windows81WifiImportConfiguration を取得します。
 description: Windows81WifiImportConfiguration オブジェクトのプロパティと関係を参照してください。
-ms.openlocfilehash: a35f31bc35da3a5a7a70aab39d28e3c2824f1e5c
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: e0e5e40faf1d4fb888223d5692a5596e86a17fda
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27074023"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27355350"
 ---
 # <a name="get-windows81wifiimportconfiguration"></a>Windows81WifiImportConfiguration を取得します。
 

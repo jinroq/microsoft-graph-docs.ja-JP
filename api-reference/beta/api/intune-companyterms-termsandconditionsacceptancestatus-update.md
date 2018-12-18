@@ -1,12 +1,13 @@
 ---
 title: termsAndConditionsAcceptanceStatus の更新
 description: termsAndConditionsAcceptanceStatus オブジェクトのプロパティを更新します。
-ms.openlocfilehash: 46e7c69be6dc0ac410162b491b51c6f81a65fce5
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 8c28732beeebd78be6bd5b461b87bbf14550db8e
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27073050"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27355063"
 ---
 # <a name="update-termsandconditionsacceptancestatus"></a>termsAndConditionsAcceptanceStatus の更新
 
@@ -44,9 +45,9 @@ PATCH /deviceManagement/termsAndConditions/{termsAndConditionsId}/acceptanceStat
 
 次の表に、[termsAndConditionsAcceptanceStatus](../resources/intune-companyterms-termsandconditionsacceptancestatus.md) の作成時に必要なプロパティを示します。
 
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
-|id|String|エンティティの一意識別子。|
+|ID|String|エンティティの一意識別子。|
 |userDisplayName|String|エンティティによって承諾が示されているユーザーの表示名。|
 |acceptedVersion|Int32|ユーザーによって承諾された使用条件の最新バージョン番号。|
 |acceptedDateTime|DateTimeOffset|最後にユーザーによって使用条件が承諾された DateTime。|

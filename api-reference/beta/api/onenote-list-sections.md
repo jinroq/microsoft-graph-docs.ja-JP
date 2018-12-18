@@ -1,12 +1,13 @@
 ---
 title: セクションを一覧表示する
 description: section オブジェクトの一覧を取得します。
-ms.openlocfilehash: f5c8c04358d6f689982a295328fa63b0c77e4dc2
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: Jewan-microsoft
+ms.openlocfilehash: 074afecfcf358a349cfa251e3222cc4c2a2887ac
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27074442"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27356456"
 ---
 # <a name="list-sections"></a>セクションを一覧表示する
 
@@ -38,7 +39,7 @@ GET /sites/{id}/onenote/sections
 既定のクエリが `parentNotebook` を展開し、`id`、`displayName`、`self` プロパティを選択します。セクションの有効な `expand` 値は、`parentNotebook` と `parentSectionGroup` です。
 
 ## <a name="request-headers"></a>要求ヘッダー
-| 名前       | 型 | 説明|
+| 名前       | 種類 | 説明|
 |:-----------|:------|:----------|
 | Authorization  | string  | ベアラー {トークン}。必須。 |
 | 承諾 | string | `application/json` |

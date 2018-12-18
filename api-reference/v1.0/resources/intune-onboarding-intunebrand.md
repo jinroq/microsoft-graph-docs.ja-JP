@@ -1,12 +1,13 @@
 ---
 title: intuneBrand リソース タイプ
 description: intuneBrand には、会社のポータル アプリケーションとエンド ユーザーの Web ポータルの外観のカスタマイズに使用するデータが含まれています。
-ms.openlocfilehash: 9793709152b42637418f72457116642d501d9153
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: ba18be9cbe06643fd7943e3ebbf6c98d1a7a237e
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27020300"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27356505"
 ---
 # <a name="intunebrand-resource-type"></a>intuneBrand リソース タイプ
 
@@ -14,7 +15,7 @@ ms.locfileid: "27020300"
 
 intuneBrand には、会社のポータル アプリケーションとエンド ユーザーの Web ポータルの外観のカスタマイズに使用するデータが含まれています。
 ## <a name="properties"></a>プロパティ
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
 |displayName|String|エンド ユーザーに表示される会社名または組織名。|
 |contactITName|String|IT サポートを担当する個人名または組織名。|

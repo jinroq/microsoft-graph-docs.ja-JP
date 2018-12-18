@@ -1,12 +1,13 @@
 ---
 title: 予定表を一覧表示する
 description: 予定表グループに属している予定表のリストを取得します。
-ms.openlocfilehash: 40792ef7a7af1c9cd9155650315c3c5964df6733
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: angelgolfer-ms
+ms.openlocfilehash: a6cf89b6c5670659d5864496118d125d3c60a903
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27067985"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27336681"
 ---
 # <a name="list-calendars"></a>予定表を一覧表示する
 
@@ -48,7 +49,7 @@ GET /users/{id | userPrincipalName}/calendarGroups/{id}/calendars
 
 ## <a name="request-headers"></a>要求ヘッダー
 
-| 名前          | 型   | 説明               |
+| 名前          | 種類   | 説明               |
 | :------------ | :----- | :------------------------ |
 | Authorization | string | ベアラー {トークン}。必須。 |
 

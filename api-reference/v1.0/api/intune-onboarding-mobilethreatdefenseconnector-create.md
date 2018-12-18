@@ -1,12 +1,13 @@
 ---
 title: Create mobileThreatDefenseConnector
 description: 新しい mobileThreatDefenseConnector オブジェクトを作成します。
-ms.openlocfilehash: f7ed9c8175eec263b8b9b08d541cfedc7edd7d59
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 8bd4551c2290e5406db1e66cf3c9396a611e5b42
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27020824"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27358969"
 ---
 # <a name="create-mobilethreatdefenseconnector"></a>Create mobileThreatDefenseConnector
 
@@ -42,9 +43,9 @@ POST /deviceManagement/mobileThreatDefenseConnectors
 
 次の表に、mobileThreatDefenseConnector 作成時に必要なプロパティを示します。
 
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
-|id|String|まだ文書化されていません|
+|ID|String|まだ文書化されていません|
 |lastHeartbeatDateTime|DateTimeOffset|データ同期パートナーから受信した最後のハートビートの日時|
 |partnerState|[mobileThreatPartnerTenantState](../resources/intune-onboarding-mobilethreatpartnertenantstate.md)|このアカウントのデータの同期パートナーの状態です。 可能な値は、`unavailable`、`available`、`enabled`、`unresponsive` です。|
 |androidEnabled|ブール型|Android において、準拠評価時にデータ同期パートナーからのデータを使用するかどうかを設定します|

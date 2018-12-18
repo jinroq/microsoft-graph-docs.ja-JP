@@ -1,12 +1,13 @@
 ---
 title: AndroidManagedStoreAccountEnterpriseSettings を更新します。
 description: AndroidManagedStoreAccountEnterpriseSettings オブジェクトのプロパティを更新します。
-ms.openlocfilehash: 383c9225076e9e68e9b34d89b7fe904ccf747224
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: ee5fda9e9c6ce92cdf44ec878c2c5835ceed2c49
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27069587"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27356029"
 ---
 # <a name="update-androidmanagedstoreaccountenterprisesettings"></a>AndroidManagedStoreAccountEnterpriseSettings を更新します。
 
@@ -44,9 +45,9 @@ PATCH /deviceManagement/androidManagedStoreAccountEnterpriseSettings
 
 [AndroidManagedStoreAccountEnterpriseSettings](../resources/intune-androidforwork-androidmanagedstoreaccountenterprisesettings.md)を作成するときに必要なプロパティを次の表に示します。
 
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
-|id|String|アカウントのエンタープライズ設定の識別子を格納する、アプリ|
+|ID|String|アカウントのエンタープライズ設定の識別子を格納する、アプリ|
 |bindStatus|[androidManagedStoreAccountBindStatus](../resources/intune-androidforwork-androidmanagedstoreaccountbindstatus.md)|Google の EMM の API を使用してテナントの状態をバインドします。 可能な値は、`notBound`、`bound`、`boundAndValidated`、`unbinding` です。|
 |lastAppSyncDateTime|DateTimeOffset|アプリ同期の最終完了時刻|
 |lastAppSyncStatus|[androidManagedStoreAccountAppSyncStatus](../resources/intune-androidforwork-androidmanagedstoreaccountappsyncstatus.md)|アプリケーション同期の最終結果です。 使用可能な値: `success`、`credentialsNotValid`、`androidForWorkApiError`、`managementServiceError`、`unknownError`、`none`。|
@@ -55,7 +56,7 @@ PATCH /deviceManagement/androidManagedStoreAccountEnterpriseSettings
 |lastModifiedDateTime|DateTimeOffset|Android エンタープライズ設定の最終変更時刻|
 |enrollmentTarget|[androidManagedStoreAccountEnrollmentTarget](../resources/intune-androidforwork-androidmanagedstoreaccountenrollmenttarget.md)|Android エンタープライズ デバイスの管理デバイスを登録できるユーザーを示します。 可能な値は、`none`、`all`、`targeted`、`targetedAsEnrollmentRestrictions` です。|
 |targetGroupIds|String コレクション|enrollmentTarget が 'Targeted' に設定されている場合、どの AAD グループが Android for Work デバイス管理にデバイスを登録できるかを指定します。|
-|deviceOwnerManagementEnabled|ブール値|このアカウントを CloudDPC に Android のデバイスの所有者の管理の flighting かどうかを示します。|
+|deviceOwnerManagementEnabled|ブール型|このアカウントを CloudDPC に Android のデバイスの所有者の管理の flighting かどうかを示します。|
 
 
 

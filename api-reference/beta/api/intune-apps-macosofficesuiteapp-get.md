@@ -1,12 +1,13 @@
 ---
 title: Get macOSOfficeSuiteApp
 description: macOSOfficeSuiteApp オブジェクトのプロパティとリレーションシップを読み取ります。
-ms.openlocfilehash: 3ebea6aa66eaf40cf45a48127acb816b1d9652ba
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 04cc1c85e627bb0c06a71be0b82b97cfa96764b4
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27071367"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27356722"
 ---
 # <a name="get-macosofficesuiteapp"></a>Get macOSOfficeSuiteApp
 

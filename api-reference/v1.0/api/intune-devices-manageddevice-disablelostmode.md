@@ -1,12 +1,13 @@
 ---
 title: disableLostMode アクション
 description: 紛失モードの無効化
-ms.openlocfilehash: 73cf4278206a3a6153acc6fd7597d72726b98ef6
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: d03d518506d51e8053ea32ad9e30bb9913ce06f6
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27023240"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27343996"
 ---
 # <a name="disablelostmode-action"></a>disableLostMode アクション
 

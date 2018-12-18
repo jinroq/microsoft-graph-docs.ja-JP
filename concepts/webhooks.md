@@ -1,12 +1,13 @@
 ---
 title: ユーザー データの変更に関する通知の設定
 description: Microsoft Graph の API は、webhook メカニズムを使用して、クライアントに通知を配信します。クライアントは、通知を受信するために自身の URL を構成する Web サービスです。クライアント アプリは通知を使用して、変更時に状態を更新します。
-ms.openlocfilehash: e9c0c33aa18735d183d88836d33a99c8f12da560
-ms.sourcegitcommit: 4aebfaefc23e02a98b2fec35958cd2110020f15f
+author: piotrci
+ms.openlocfilehash: 6af6f3c54a7956d6a505c88bfc82fc8233dccdad
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/06/2018
-ms.locfileid: "27184547"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27337045"
 ---
 # <a name="set-up-notifications-for-changes-in-user-data"></a>ユーザー データの変更に関する通知の設定
 

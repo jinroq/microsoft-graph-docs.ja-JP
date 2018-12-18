@@ -1,12 +1,13 @@
 ---
 title: deviceManagementTroubleshootingEvent の作成
 description: 新しい deviceManagementTroubleshootingEvent オブジェクトを作成します。
-ms.openlocfilehash: d1fef87009c0797511adef5204cbc5ab4d99c291
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: cef96acd7db28fd9b686c01e748532e775cf5f01
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27072481"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27356407"
 ---
 # <a name="create-devicemanagementtroubleshootingevent"></a>deviceManagementTroubleshootingEvent の作成
 
@@ -44,9 +45,9 @@ POST /deviceManagement/troubleshootingEvents
 
 次の表に、deviceManagementTroubleshootingEvent の作成時に必要なプロパティを示します。
 
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
-|id|String|オブジェクトの UUID|
+|ID|String|オブジェクトの UUID|
 |eventDateTime|DateTimeOffset|インシデントが発生した時間。|
 |correlationId|String|サービスのエラーをトレースするための ID。|
 

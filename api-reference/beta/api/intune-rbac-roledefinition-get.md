@@ -1,12 +1,13 @@
 ---
 title: Get roleDefinition
 description: roleDefinition オブジェクトのプロパティとリレーションシップを読み取ります。
-ms.openlocfilehash: 9e06a8c61519e56c3bced8964c4bd5fde13ef138
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 60d7ea55079969bc07f17af305cc38a2f4711777
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27071497"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27337836"
 ---
 # <a name="get-roledefinition"></a>Get roleDefinition
 

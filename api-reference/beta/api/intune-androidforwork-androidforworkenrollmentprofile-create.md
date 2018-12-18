@@ -1,12 +1,13 @@
 ---
 title: Create androidForWorkEnrollmentProfile
 description: 新しい androidForWorkEnrollmentProfile オブジェクトを作成します。
-ms.openlocfilehash: e7dfefd7163f3b133b4e91936e7ee0e7317dd823
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 794179968afc4f39c809373b3425c076f7a591a3
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27070637"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27355977"
 ---
 # <a name="create-androidforworkenrollmentprofile"></a>Create androidForWorkEnrollmentProfile
 
@@ -44,7 +45,7 @@ POST /deviceManagement/androidForWorkEnrollmentProfiles
 
 次の表に、androidForWorkEnrollmentProfile 作成時に必要なプロパティを示します。
 
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
 |accountId|String|登録プロファイルが属するテナント GUID。|
 |id|String|登録プロファイル用の一意な GUID。|

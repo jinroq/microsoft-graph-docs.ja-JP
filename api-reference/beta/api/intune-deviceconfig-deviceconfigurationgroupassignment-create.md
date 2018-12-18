@@ -1,12 +1,13 @@
 ---
 title: DeviceConfigurationGroupAssignment を作成します。
 description: 新しい deviceConfigurationGroupAssignment オブジェクトを作成します。
-ms.openlocfilehash: 3e349664a1458b13be357dbabf7e9a1a8e14025e
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: c07356d3cf63699fda95e2be6fe361841e0b0d95
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27067556"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27355105"
 ---
 # <a name="create-deviceconfigurationgroupassignment"></a>DeviceConfigurationGroupAssignment を作成します。
 
@@ -52,11 +53,11 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 
 次の表は、deviceConfigurationGroupAssignment を作成するときに必要なプロパティを示します。
 
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
-|id|String|エンティティのキー。|
+|ID|String|エンティティのキー。|
 |targetGroupId|String|AAD グループの Id は、対象としてデバイスを構成します。|
-|excludeGroup|ブール値|かどうかをこのグループを除外するようにします。 既定のグループが含まれている必要があること|
+|excludeGroup|ブール型|かどうかをこのグループを除外するようにします。 既定のグループが含まれている必要があること|
 
 
 

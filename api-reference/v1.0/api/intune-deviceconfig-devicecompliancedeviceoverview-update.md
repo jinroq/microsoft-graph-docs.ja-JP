@@ -1,12 +1,13 @@
 ---
 title: deviceComplianceDeviceOverview の更新
 description: deviceComplianceDeviceOverview オブジェクトのプロパティを更新します。
-ms.openlocfilehash: 7fdbfb50bf6f0463436376e39541b35364ded5bf
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: a6cf54ad22e1d9f0c961d651149ee109fa4bd865
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27021867"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27345039"
 ---
 # <a name="update-devicecompliancedeviceoverview"></a>deviceComplianceDeviceOverview の更新
 
@@ -42,9 +43,9 @@ PATCH /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/devi
 
 次の表に、[deviceComplianceDeviceOverview](../resources/intune-deviceconfig-devicecompliancedeviceoverview.md) の作成時に必要なプロパティを示します。
 
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
-|id|String|エンティティのキー。|
+|ID|String|エンティティのキー。|
 |pendingCount|Int32|保留中のデバイスの数|
 |notApplicableCount|Int32|該当しないデバイスの数|
 |successCount|Int32|成功したデバイスの数|

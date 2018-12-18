@@ -1,12 +1,13 @@
 ---
 title: remoteLockActionResult リソースの種類
 description: ロック解除するためのピンが含まれるアクション結果のロック。
-ms.openlocfilehash: e0fff0a9ee389a1a73db1ad19ea3eba55a04989d
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 44d56b2ee20629d1cefbf965c72e5f6cc17fb0a2
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27022820"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27353691"
 ---
 # <a name="remotelockactionresult-resource-type"></a>remoteLockActionResult リソースの種類
 
@@ -17,7 +18,7 @@ ms.locfileid: "27022820"
 [deviceActionResult](../resources/intune-devices-deviceactionresult.md) からの継承
 
 ## <a name="properties"></a>プロパティ
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
 |actionName|String|[deviceActionResult](../resources/intune-devices-deviceactionresult.md) から継承されるアクション名|
 |actionState|[actionState](../resources/intune-devices-actionstate.md)|[DeviceActionResult](../resources/intune-devices-deviceactionresult.md)から継承される、アクションの状態です。 可能な値は、`none`、`pending`、`canceled`、`active`、`done`、`failed`、`notSupported` です。|

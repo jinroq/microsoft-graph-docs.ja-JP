@@ -1,12 +1,13 @@
 ---
 title: イベント リソースの種類
 description: 予定表内のイベントです。
-ms.openlocfilehash: 33226ac04bcf0dc8365ee56bf70bfa1a381b5ebc
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: angelgolfer-ms
+ms.openlocfilehash: 2caa1cb51da5f9d9ae8808b574e2787fbb63da46
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27020471"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27356596"
 ---
 # <a name="event-resource-type"></a>イベント リソースの種類
 
@@ -48,7 +49,7 @@ ms.locfileid: "27020471"
 |[複数値の拡張プロパティを持つイベントの取得](../api/multivaluelegacyextendedproperty-get.md)  | [event](event.md) | `$expand` を使用して、複数値の拡張プロパティを含むイベントを取得します。 |
 
 ## <a name="properties"></a>プロパティ
-| プロパティ     | 型   |説明|
+| プロパティ     | 種類   |説明|
 |:---------------|:--------|:----------|
 |attendees|[attendee](attendee.md) コレクション|イベントの出席者のコレクション。|
 |body|[itemBody](itembody.md)|イベントに関連付けられたメッセージの本文。HTML 形式またはテキスト形式にできます。|
@@ -57,25 +58,25 @@ ms.locfileid: "27020471"
 |changeKey|String|イベント オブジェクトのバージョンを識別します。イベントを変更するたびに ChangeKey も変更されます。これにより、Exchange は正しいバージョンのオブジェクトに変更を適用できます。|
 |createdDateTime|DateTimeOffset|Timestamp 型は、ISO 8601 形式を使用して日付と時刻の情報を表し、必ず UTC 時間です。たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、次のようになります。`'2014-01-01T00:00:00Z'`|
 |end|[dateTimeTimeZone](datetimetimezone.md)|イベントが終了する日付、時刻、タイムゾーン|
-|hasAttachments|ブール値|イベントに添付ファイルが含まれている場合、true に設定します。|
-|iCalUId|String|複数の予定表で 1 つのイベントのすべてのインスタンスによって共有される一意識別子。 読み取り専用。|
+|hasAttachments|Boolean|イベントに添付ファイルが含まれている場合、true に設定します。|
+|iCalUId|String|複数の予定表で 1 つのイベントのすべてのインスタンスによって共有される一意識別子。 読み取り専用です。|
 |id|String| 読み取り専用。|
 |importance|importance|イベントの重要度。 可能な値: `low`、 `normal`、 `high`。|
-|isAllDay|ブール値|イベントが一日中続く場合に、true に設定します。|
-|isCancelled|ブール値|イベントがキャンセルされた場合に、true に設定します。|
-|isOrganizer|ブール値|メッセージの送信者が開催者でもある場合に、true に設定します。|
-|isReminderOn|ブール値|ユーザーにイベントを通知するアラートを設定する場合は、true に設定します。|
+|isAllDay|Boolean|イベントが一日中続く場合に、true に設定します。|
+|isCancelled|Boolean|イベントがキャンセルされた場合に、true に設定します。|
+|isOrganizer|Boolean|メッセージの送信者が開催者でもある場合に、true に設定します。|
+|isReminderOn|Boolean|ユーザーにイベントを通知するアラートを設定する場合は、true に設定します。|
 |lastModifiedDateTime|DateTimeOffset|Timestamp 型は、ISO 8601 形式を使用して日付と時刻の情報を表し、必ず UTC 時間です。たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、次のようになります。`'2014-01-01T00:00:00Z'`|
 |location|[location](location.md)|イベントの場所。|
 |locations|[location](location.md) コレクション|イベントを開催する場所、または参加者がいる場所。 **location** プロパティと **locations** プロパティは常に互いに一致します。 **location** プロパティを更新すると、**locations** コレクションに含まれる既存のすべての場所が削除されて、**location** の新しい値に置き換えられます。 |
-|onlineMeetingUrl|String|オンライン会議の URL。 会議の開催者が Skype 会議などのオンラインの会議とイベントを指定するときにのみ、プロパティが設定されています。 読み取り専用。|
+|onlineMeetingUrl|String|オンライン会議の URL。 会議の開催者が Skype 会議などのオンラインの会議とイベントを指定するときにのみ、プロパティが設定されています。 読み取り専用です。|
 |organizer|[recipient](recipient.md)|イベントの開催者。|
 |originalEndTimeZone|String|イベントの作成時に設定された終了タイム ゾーン。 値 `tzone://Microsoft/Custom` は、デスクトップの Outlook で、従来のカスタム タイム ゾーンが設定されていることを示します。|
 |originalStart|DateTimeOffset|Timestamp 型は、ISO 8601 形式を使用して日付と時刻の情報を表し、必ず UTC 時間です。たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、次のようになります。`'2014-01-01T00:00:00Z'`|
 |originalStartTimeZone|String|イベントが作成されたときに設定された開始タイム ゾーン。値 `tzone://Microsoft/Custom` は、デスクトップの Outlook で、従来のカスタム タイム ゾーンが設定されていることを示します。 |
 |recurrence|[patternedRecurrence](patternedrecurrence.md)|イベントの繰り返しパターン。|
 |reminderMinutesBeforeStart|Int32|アラーム通知を行う、イベント開始時間前の分数。|
-|responseRequested|ブール値|イベントが承諾または辞退されたときに、送信者が応答を希望する場合に、true に設定します。|
+|responseRequested|Boolean|イベントが承諾または辞退されたときに、送信者が応答を希望する場合に、true に設定します。|
 |responseStatus|[responseStatus](responsestatus.md)|イベント メッセージへの応答で送信される応答のタイプを識別します。|
 |sensitivity|sensitivity| 可能な値: `normal`、 `personal`、 `private`、 `confidential`。|
 |seriesMasterId|String|項目の ID、定期的な系列マスター、このイベントが定期的な一連の一部である場合。|

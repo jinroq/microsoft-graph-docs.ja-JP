@@ -1,12 +1,13 @@
 ---
 title: deviceThreatProtectionLevel 列挙型
 description: デバイスの脅威保護 API のデバイスの脅威保護レベルです。
-ms.openlocfilehash: 9b6a5066c26dcfe5ee2922bc736cf0292b1d3055
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 755fd861196839ec261dd18f458b88aa97cf0191
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27023681"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27356008"
 ---
 # <a name="devicethreatprotectionlevel-enum-type"></a>deviceThreatProtectionLevel 列挙型
 

@@ -1,12 +1,13 @@
 ---
 title: Microsoft Teams API の概要
 description: 'Microsoft Teams は、チームワークおよびインテリジェントな通信のための究極のハブです。 '
-ms.openlocfilehash: 1f210bf529769c96f22c2c7180d3736cdc9ed776
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: nkramer
+ms.openlocfilehash: 2297f92cb44c8a12512e4e06ffc2392d75626952
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27092456"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27358857"
 ---
 # <a name="microsoft-teams-api-overview"></a>Microsoft Teams API の概要
 

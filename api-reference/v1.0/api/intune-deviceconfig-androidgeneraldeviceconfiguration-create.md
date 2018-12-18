@@ -1,12 +1,13 @@
 ---
 title: Create androidGeneralDeviceConfiguration
 description: 新しい androidGeneralDeviceConfiguration オブジェクトを作成します。
-ms.openlocfilehash: e28312afe09e150cb123e10767b373b9014f4f1a
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 67bbdf997c2157c7e3161ee1c37a7cdf47ac2d25
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27023195"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27353754"
 ---
 # <a name="create-androidgeneraldeviceconfiguration"></a>Create androidGeneralDeviceConfiguration
 
@@ -42,9 +43,9 @@ POST /deviceManagement/deviceConfigurations
 
 次の表に、androidGeneralDeviceConfiguration 作成時に必要なプロパティを示します。
 
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
-|id|String|エンティティのキー。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
+|ID|String|エンティティのキー。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |lastModifiedDateTime|DateTimeOffset|オブジェクトが最後に変更された DateTime。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |createdDateTime|DateTimeOffset|オブジェクトが作成された DateTime。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |説明|String|デバイス構成について管理者が提供した説明。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|

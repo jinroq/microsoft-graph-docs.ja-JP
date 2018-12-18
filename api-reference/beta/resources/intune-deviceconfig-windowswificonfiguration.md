@@ -1,12 +1,13 @@
 ---
 title: windowsWifiConfiguration リソースの種類
 description: デバイス構成です。
-ms.openlocfilehash: 13f2a5819e77c5687c0d4331b19ee6dfc50a1d12
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 5c8f7df3ef1c80e2d6204ca4acb2996200af5fa2
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27074364"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27359186"
 ---
 # <a name="windowswificonfiguration-resource-type"></a>windowsWifiConfiguration リソースの種類
 
@@ -27,13 +28,13 @@ ms.locfileid: "27074364"
 |[WindowsWifiConfiguration を削除します。](../api/intune-deviceconfig-windowswificonfiguration-delete.md)|なし|の[windowsWifiConfiguration](../resources/intune-deviceconfig-windowswificonfiguration.md)を削除します。|
 |[WindowsWifiConfiguration を更新します。](../api/intune-deviceconfig-windowswificonfiguration-update.md)|[windowsWifiConfiguration](../resources/intune-deviceconfig-windowswificonfiguration.md)|[WindowsWifiConfiguration](../resources/intune-deviceconfig-windowswificonfiguration.md)オブジェクトのプロパティを更新します。|
 
-## <a name="properties"></a>プロパティ
-|プロパティ|型|説明|
+## <a name="properties"></a>Properties
+|プロパティ|種類|説明|
 |:---|:---|:---|
-|id|String|エンティティのキー。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
+|ID|String|エンティティのキー。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |lastModifiedDateTime|DateTimeOffset|オブジェクトが最後に変更された DateTime。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |roleScopeTagIds|String コレクション|このエンティティ インスタンスのスコープのタグのリストです。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
-|supportsScopeTags|Boolean|デバイスの構成を基になるスコープのタグの割り当てをサポートしているかどうかを示します。 この値が false であり、エンティティをスコープ指定されたユーザーには表示されませんがある場合、ScopeTags プロパティに割り当てることは許可されていません。 これは、Silverlight で作成されたレガシ ポリシーに対して発生し、削除して、Azure ポータル内のポリシーを再作成することで解決できます。 このプロパティは値の取得のみ可能です。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
+|supportsScopeTags|ブール型|デバイスの構成を基になるスコープのタグの割り当てをサポートしているかどうかを示します。 この値が false であり、エンティティをスコープ指定されたユーザーには表示されませんがある場合、ScopeTags プロパティに割り当てることは許可されていません。 これは、Silverlight で作成されたレガシ ポリシーに対して発生し、削除して、Azure ポータル内のポリシーを再作成することで解決できます。 このプロパティは読み取りのみ可能です。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |createdDateTime|DateTimeOffset|オブジェクトが作成された DateTime。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |説明|String|デバイス構成について管理者が提供した説明。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |displayName|String|デバイス構成について管理者が指定した名前。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
@@ -43,14 +44,14 @@ ms.locfileid: "27074364"
 |meteredConnectionLimit|[meteredConnectionLimitType](../resources/intune-deviceconfig-meteredconnectionlimittype.md)|Wifi 接続のメータリングされた接続の制限の種類を指定します。 可能な値は、`unrestricted`、`fixed`、`variable` です。|
 |ssid|String|Wifi 接続の SSID を指定します。|
 |ネットワーク名リソース|String|ネットワーク構成の名前を指定します。|
-|connectAutomatically|Boolean|範囲で wifi 接続が自動的に接続する必要があるかどうかを指定します。|
-|connectToPreferredNetwork|Boolean|Wifi 接続は、この 1 つに既に接続されている場合より優先するネットワークに接続する必要があるかどうかを指定します。  True を指定する ConnectAutomatically が必要です。|
-|connectWhenNetworkNameIsHidden|Boolean|かどうか、wifi 接続自動的にでもすると、SSID をブロードキャストしていないかを指定します。|
+|connectAutomatically|ブール型|範囲で wifi 接続が自動的に接続する必要があるかどうかを指定します。|
+|connectToPreferredNetwork|ブール型|Wifi 接続は、この 1 つに既に接続されている場合より優先するネットワークに接続する必要があるかどうかを指定します。  True を指定する ConnectAutomatically が必要です。|
+|connectWhenNetworkNameIsHidden|ブール型|かどうか、wifi 接続自動的にでもすると、SSID をブロードキャストしていないかを指定します。|
 |proxySetting|[wiFiProxySetting](../resources/intune-deviceconfig-wifiproxysetting.md)|Wi-fi 構成のプロキシ設定を指定します。 可能な値は、`none`、`manual`、`automatic` です。|
 |proxyManualAddress|String|プロキシ サーバーの IP アドレスを指定します。|
 |proxyManualPort|Int32|プロキシ サーバーのポートを指定します。|
 |proxyAutomaticConfigurationUrl|String|プロキシ サーバーの構成スクリプトの URL を指定します。|
-|forceFIPSCompliance|Boolean|FIPS 準拠を強制するかどうかを指定します。|
+|forceFIPSCompliance|ブール型|FIPS 準拠を強制するかどうかを指定します。|
 
 ## <a name="relationships"></a>リレーションシップ
 |リレーションシップ|型|説明|

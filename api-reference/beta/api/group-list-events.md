@@ -1,12 +1,13 @@
 ---
 title: イベントを一覧表示する
 description: イベント オブジェクトのリストを取得します。
-ms.openlocfilehash: bb79676e63cf12731a39dceb94e8a1b8b8cf2247
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: dkershaw10
+ms.openlocfilehash: fdb996f9be5193c5f18e6adb7de0b16938221e58
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27069868"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27355546"
 ---
 # <a name="list-events"></a>イベントを一覧表示する
 
@@ -34,11 +35,11 @@ GET /groups/{id}/calendar/events
 このメソッドは、応答をカスタマイズするための [OData クエリ パラメーター](/graph/query-parameters)をサポートします。
 
 ## <a name="request-headers"></a>要求ヘッダー
-| 名前       | 型 | 説明 |
+| 名前       | 種類 | 説明 |
 |:---------------|:--------|:--------|
 | Authorization  | string | ベアラー {トークン}。必須。  |
-| 優先: outlook.timezone  | 文字列 | これを使用して、応答内の開始および終了時刻のタイム ゾーンを指定します。 指定しない場合、これらの時刻値は UTC で返されます。 省略可能。 |
-| Prefer: outlook.body-content-type | 文字列 | **body** プロパティが返されるときの形式です。 値は、"text" または "html" になります。 この `Prefer` ヘッダーが指定されている場合、`Preference-Applied` ヘッダーが確認として返されます。 このヘッダーが指定されていない場合は、**body** プロパティが HTML 形式で返されます。 省略可能。 |
+| 優先: outlook.timezone  | string | これを使用して、応答内の開始および終了時刻のタイム ゾーンを指定します。 指定しない場合、これらの時刻値は UTC で返されます。 省略可能。 |
+| Prefer: outlook.body-content-type | string | **body** プロパティが返されるときの形式です。 値は、"text" または "html" になります。 この `Prefer` ヘッダーが指定されている場合、`Preference-Applied` ヘッダーが確認として返されます。 このヘッダーが指定されていない場合は、**body** プロパティが HTML 形式で返されます。 省略可能。 |
 
 ## <a name="request-body"></a>要求本文
 このメソッドには、要求本文を指定しません。

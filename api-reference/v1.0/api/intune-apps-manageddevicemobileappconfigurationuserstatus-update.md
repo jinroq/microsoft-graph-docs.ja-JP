@@ -1,12 +1,13 @@
 ---
 title: managedDeviceMobileAppConfigurationUserStatus の更新
 description: managedDeviceMobileAppConfigurationUserStatus オブジェクトのプロパティを更新します。
-ms.openlocfilehash: 42cf0fad50b205adfe71c794a80ba358d0951b0b
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 581b332687e591da13dc4705c6d9cede2a524a13
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27021448"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27355441"
 ---
 # <a name="update-manageddevicemobileappconfigurationuserstatus"></a>managedDeviceMobileAppConfigurationUserStatus の更新
 
@@ -42,9 +43,9 @@ PATCH /deviceAppManagement/mobileAppConfigurations/{managedDeviceMobileAppConfig
 
 次の表に、[managedDeviceMobileAppConfigurationUserStatus](../resources/intune-apps-manageddevicemobileappconfigurationuserstatus.md) の作成時に必要なプロパティを示します。
 
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
-|id|String|エンティティのキー。|
+|ID|String|エンティティのキー。|
 |userDisplayName|String|DevicePolicyStatus のユーザー名。|
 |devicesCount|Int32|そのユーザーのデバイスの数。|
 |status|[complianceStatus](../resources/intune-shared-compliancestatus.md)|ポリシー レポートのコンプライアンスの状態。 可能な値は、`unknown`、`notApplicable`、`compliant`、`remediated`、`nonCompliant`、`error`、`conflict`、`notAssigned` です。|

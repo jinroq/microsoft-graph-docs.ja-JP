@@ -1,12 +1,13 @@
 ---
 title: 'メッセージ: 購読の取り消し'
 description: サイン インユーザーに代わって電子メール要求を送信し、電子メール配布リストから登録を解除します。`List-Unsubscribe` ヘッダー内の情報を使用します。
-ms.openlocfilehash: b4f72a0b629fb59074acbbd58f09a3c16118cc8c
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: angelgolfer-ms
+ms.openlocfilehash: e516a8aa68bde02f056e503da9c85d4e7a6f62fc
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27070701"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27357226"
 ---
 # <a name="message-unsubscribe"></a>メッセージ: 購読の取り消し
 
@@ -39,7 +40,7 @@ ms.locfileid: "27070701"
 POST /users/{id | userPrincipalName}/messages/{id}/unsubscribe
 ```
 ## <a name="request-headers"></a>要求ヘッダー
-| 名前       | 型 | 説明|
+| 名前       | 種類 | 説明|
 |:---------------|:--------|:----------|
 | Authorization  | string  | ベアラー {トークン}。必須。 |
 

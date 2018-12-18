@@ -1,12 +1,13 @@
 ---
 title: チャネルの一覧] タブ
 description: 'チーム内で指定されたチャネル内のタブの一覧を取得します。 '
-ms.openlocfilehash: 4efbe8508fc125d87268adfb05c23b99ab2c3d4b
-ms.sourcegitcommit: 72d4da2a6bfaf99fa4edaf6ce3b97b1a6d96d874
+author: nkramer
+ms.openlocfilehash: b8d5c55fa02d859a419823ad171fbcc9221a609e
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/11/2018
-ms.locfileid: "27222374"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27344570"
 ---
 # <a name="list-tabs-in-channel"></a>チャネルの一覧] タブ
 

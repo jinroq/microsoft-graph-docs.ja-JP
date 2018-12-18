@@ -1,12 +1,13 @@
 ---
 title: Get iosVppApp
 description: iosVppApp オブジェクトのプロパティとリレーションシップを読み取ります。
-ms.openlocfilehash: c5d08dd82c06f62525947e5285bcdc200600b631
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: a908fcecb64bbe9624e837b4ab61454e61054338
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27021483"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27358493"
 ---
 # <a name="get-iosvppapp"></a>Get iosVppApp
 

@@ -1,12 +1,13 @@
 ---
 title: リスト windowsAppXs
 description: WindowsAppX オブジェクトのプロパティと関係を一覧表示します。
-ms.openlocfilehash: 11e4844c22585dca6f7ddbaa9655b154852a56d9
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 8c951182c4e3be25d0e418d118c2e4a6a3b1c2a8
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27072632"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27355462"
 ---
 # <a name="list-windowsappxs"></a>リスト windowsAppXs
 

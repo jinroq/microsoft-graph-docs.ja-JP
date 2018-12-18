@@ -1,12 +1,13 @@
 ---
 title: UserPFXCertificate を作成します。
 description: 新しい userPFXCertificate オブジェクトを作成します。
-ms.openlocfilehash: 3f9ec2d223911191ea9e137bb2d50b5f5d03bb73
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 1f577189dc2e8a420bc4f62d0c7d59510c610ac9
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27071228"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27337738"
 ---
 # <a name="create-userpfxcertificate"></a>UserPFXCertificate を作成します。
 
@@ -44,9 +45,9 @@ POST /deviceManagement/userPfxCertificates
 
 次の表は、userPFXCertificate を作成するときに必要なプロパティを示します。
 
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
-|id|String|PFX 証明書の一意の識別子です。|
+|ID|String|PFX 証明書の一意の識別子です。|
 |拇印|String|PFX 証明書の拇印を sha-1 です。|
 |intendedPurpose|[userPfxIntendedPurpose](../resources/intune-raimportcerts-userpfxintendedpurpose.md)|証明書からのポイントからのビューの展開の目的のものです。 可能な値は、`unassigned`、`smimeEncryption`、`smimeSigning`、`vpn`、`wifi` です。|
 |userPrincipalName|String|PFX 証明書のユーザー プリンシパル名です。|
@@ -55,7 +56,7 @@ POST /deviceManagement/userPfxCertificates
 |プロバイダー|String|暗号サービス プロバイダーがこの blob の暗号化に使用します。|
 |キー名|String|(プロバイダー) 内のキーの名前が blob の暗号化に使用します。|
 |paddingScheme|[userPfxPaddingScheme](../resources/intune-raimportcerts-userpfxpaddingscheme.md)|暗号化/復号化中に、プロバイダーによって使用されるスキームをパディングします。 使用可能な値: `none`、`pkcs1`、`oaepSha1`、`oaepSha256`、`oaepSha384`、`oaepSha512`。|
-|encryptedPfxBlob|バイナリ|PFX の暗号化された blob です。|
+|encryptedPfxBlob|Binary|PFX の暗号化された blob です。|
 |encryptedPfxPassword|String|PFX パスワードを暗号化します。|
 |createdDateTime|DateTimeOffset|PFX 証明書がインポートされたときに、日付と時刻。|
 |lastModifiedDateTime|DateTimeOffset|PFX 証明書が最後に修正された日時です。|

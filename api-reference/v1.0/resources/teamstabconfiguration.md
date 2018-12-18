@@ -1,12 +1,13 @@
 ---
 title: teamsTabConfiguration リソースの種類 (オープン型)
 description: タブの内容を決定する設定です。
-ms.openlocfilehash: 4d04ca9128760ee6fed9c0fa704fa991384ac17a
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: nkramer
+ms.openlocfilehash: 281d27dfec1efa83859fad262e1b25fd06b5f4cc
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27020453"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27344962"
 ---
 # <a name="teamstabconfiguration-resource-type-open-type"></a>teamsTabConfiguration リソースの種類 (オープン型)
 
@@ -15,14 +16,14 @@ ms.locfileid: "27020453"
 [タブ](teamstab.md)の内容を決定する設定です。タブが対話形式で構成されている場合、この情報は、タブ プロバイダー アプリケーションによって設定されます。
 に加えて、以下のプロパティは、タブ プロバイダー アプリケーションをいくつかは、追加のカスタム プロパティを指定します。
 
-## <a name="properties"></a>プロパティ
+## <a name="properties"></a>Properties
 
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |-|-|-|
-|  エンティティ Id   |   文字列 |  タブ プロバイダーによってホストされているエンティティの識別子です。     |
-|  contentUrl |   文字列 |  チームでのタブの内容を表示するために使用される Url です。 必須。    |
-|  removeUrl  |   文字列 |  チームのクライアントを使用してタブが削除されたときに、チーム クライアントによって呼び出される Url。     |
-|  websiteUrl |   文字列 |  チーム以外のタブの内容を表示するための Url です。     |
+|  エンティティ Id   |   string |  タブ プロバイダーによってホストされているエンティティの識別子です。     |
+|  contentUrl |   string |  チームでのタブの内容を表示するために使用される Url です。 必須です。    |
+|  removeUrl  |   string |  チームのクライアントを使用してタブが削除されたときに、チーム クライアントによって呼び出される Url。     |
+|  websiteUrl |   string |  チーム以外のタブの内容を表示するための Url です。     |
 
 ## <a name="json-representation"></a>JSON 表記
 

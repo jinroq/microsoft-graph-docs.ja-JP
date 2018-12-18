@@ -1,12 +1,13 @@
 ---
 title: Get iosCustomConfiguration
 description: iosCustomConfiguration オブジェクトのプロパティとリレーションシップを読み取ります。
-ms.openlocfilehash: 91df02ae98f179fbb66ab08c35f43c04d72d97b9
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: aab8af4cbdaff832327f7d92474b88f453b47e10
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27069169"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27355115"
 ---
 # <a name="get-ioscustomconfiguration"></a>Get iosCustomConfiguration
 

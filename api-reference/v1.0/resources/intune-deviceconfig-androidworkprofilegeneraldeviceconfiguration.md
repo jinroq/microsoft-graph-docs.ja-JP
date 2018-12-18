@@ -1,12 +1,13 @@
 ---
 title: androidWorkProfileGeneralDeviceConfiguration リソースの種類
 description: Android 作業プロファイル全般的なデバイスを構成します。
-ms.openlocfilehash: 89329bbe4bce88153b56df3e2567688d910e9543
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: fbcbb87e8ae9c9d4a36f196b18b6577f423c90a6
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27020797"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27337696"
 ---
 # <a name="androidworkprofilegeneraldeviceconfiguration-resource-type"></a>androidWorkProfileGeneralDeviceConfiguration リソースの種類
 
@@ -25,10 +26,10 @@ Android 作業プロファイル全般的なデバイスを構成します。
 |[AndroidWorkProfileGeneralDeviceConfiguration を削除します。](../api/intune-deviceconfig-androidworkprofilegeneraldeviceconfiguration-delete.md)|なし|の[androidWorkProfileGeneralDeviceConfiguration](../resources/intune-deviceconfig-androidworkprofilegeneraldeviceconfiguration.md)を削除します。|
 |[AndroidWorkProfileGeneralDeviceConfiguration を更新します。](../api/intune-deviceconfig-androidworkprofilegeneraldeviceconfiguration-update.md)|[androidWorkProfileGeneralDeviceConfiguration](../resources/intune-deviceconfig-androidworkprofilegeneraldeviceconfiguration.md)|[AndroidWorkProfileGeneralDeviceConfiguration](../resources/intune-deviceconfig-androidworkprofilegeneraldeviceconfiguration.md)オブジェクトのプロパティを更新します。|
 
-## <a name="properties"></a>プロパティ
-|プロパティ|型|説明|
+## <a name="properties"></a>Properties
+|プロパティ|種類|説明|
 |:---|:---|:---|
-|id|String|エンティティのキー。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
+|ID|String|エンティティのキー。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |lastModifiedDateTime|DateTimeOffset|オブジェクトが最後に変更された DateTime。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |createdDateTime|DateTimeOffset|オブジェクトが作成された DateTime。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |説明|String|デバイス構成について管理者が提供した説明。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
@@ -43,17 +44,17 @@ Android 作業プロファイル全般的なデバイスを構成します。
 |passwordSignInFailureCountBeforeFactoryReset|Int32|出荷時の設定にリセットされるまでの、失敗が許可されるサインインの回数。 有効な値は 4 から 11 までです|
 |passwordRequiredType|[androidWorkProfileRequiredPasswordType](../resources/intune-deviceconfig-androidworkprofilerequiredpasswordtype.md)|必要なパスワードの種類。 可能な値は、`deviceDefault`、`lowSecurityBiometric`、`required`、`atLeastNumeric`、`numericComplex`、`atLeastAlphabetic`、`atLeastAlphanumeric`、`alphanumericWithSymbols` です。|
 |workProfileDataSharingType|[androidWorkProfileCrossProfileDataSharingType](../resources/intune-deviceconfig-androidworkprofilecrossprofiledatasharingtype.md)|共有するデータの種類を許可します。 可能な値は、`deviceDefault`、`preventAny`、`allowPersonalToWork`、`noRestrictions` です。|
-|workProfileBlockNotificationsWhileDeviceLocked|ブール値|デバイスがロックされているときに通知をブロックするかどうかを示します。|
-|workProfileBlockAddingAccounts|ブール値|作業プロファイル内のアカウントを追加または削除したり、ユーザーをブロックします。|
-|workProfileBluetoothEnableContactSharing|ブール値|企業の連絡先にアクセスするための bluetooth デバイスを使用できます。|
-|workProfileBlockScreenCapture|ブール値|作業プロファイルで、画面の取り込みをブロックします。|
-|workProfileBlockCrossProfileCallerId|ブール値|ブロックでは、作業プロファイル呼び出し元 ID を表示個人プロファイルにします。|
-|workProfileBlockCamera|ブール値|ブロック プロファイル カメラが動作します。|
-|workProfileBlockCrossProfileContactsSearch|ブール値|個人プロファイルでは、作業プロファイルの連絡先可用性ブロックです。|
-|workProfileBlockCrossProfileCopyPaste|ブール値|プロファイルのコピーと貼り付けが有効になっている間の設定を許可しない場合を示すブール値です。|
+|workProfileBlockNotificationsWhileDeviceLocked|ブール型|デバイスがロックされているときに通知をブロックするかどうかを示します。|
+|workProfileBlockAddingAccounts|ブール型|作業プロファイル内のアカウントを追加または削除したり、ユーザーをブロックします。|
+|workProfileBluetoothEnableContactSharing|ブール型|企業の連絡先にアクセスするための bluetooth デバイスを使用できます。|
+|workProfileBlockScreenCapture|ブール型|作業プロファイルで、画面の取り込みをブロックします。|
+|workProfileBlockCrossProfileCallerId|ブール型|ブロックでは、作業プロファイル呼び出し元 ID を表示個人プロファイルにします。|
+|workProfileBlockCamera|ブール型|ブロック プロファイル カメラが動作します。|
+|workProfileBlockCrossProfileContactsSearch|ブール型|個人プロファイルでは、作業プロファイルの連絡先可用性ブロックです。|
+|workProfileBlockCrossProfileCopyPaste|ブール型|プロファイルのコピーと貼り付けが有効になっている間の設定を許可しない場合を示すブール値です。|
 |workProfileDefaultAppPermissionPolicy|[androidWorkProfileDefaultAppPermissionPolicyType](../resources/intune-deviceconfig-androidworkprofiledefaultapppermissionpolicytype.md)|必要なパスワードの種類。 可能な値は、`deviceDefault`、`prompt`、`autoGrant`、`autoDeny` です。|
-|workProfilePasswordBlockFingerprintUnlock|ブール値|指紋をブロックするかどうかを示す作業プロファイルのロックを解除します。|
-|workProfilePasswordBlockTrustAgents|ブール値|スマート ロックと作業プロファイルを他の信頼のエージェントをブロックするかどうかを示します。|
+|workProfilePasswordBlockFingerprintUnlock|ブール型|指紋をブロックするかどうかを示す作業プロファイルのロックを解除します。|
+|workProfilePasswordBlockTrustAgents|ブール型|スマート ロックと作業プロファイルを他の信頼のエージェントをブロックするかどうかを示します。|
 |workProfilePasswordExpirationDays|Int32|日前作業プロファイルのパスワードに、の有効期限が切れます。 有効な値は 1 から 365 までです|
 |workProfilePasswordMinimumLength|Int32|作業プロファイル パスワードの最小長。 有効な値は 4 から 16 までです|
 |workProfilePasswordMinNumericCharacters|Int32|プロファイル パスワードの作業に必要な数字の最小数です。 有効な値 1 ~ 10|
@@ -66,7 +67,7 @@ Android 作業プロファイル全般的なデバイスを構成します。
 |workProfilePasswordPreviousPasswordBlockCount|Int32|ブロックする前の作業プロファイル パスワードの数です。 有効な値は 0 から 24 までです|
 |workProfilePasswordSignInFailureCountBeforeFactoryReset|Int32|作業プロファイルが削除されるまでに許容される障害および削除されたすべての企業データの記号の数です。 有効な値は 4 から 11 までです|
 |workProfilePasswordRequiredType|[androidWorkProfileRequiredPasswordType](../resources/intune-deviceconfig-androidworkprofilerequiredpasswordtype.md)|必要な作業プロファイル パスワードの種類です。 可能な値は、`deviceDefault`、`lowSecurityBiometric`、`required`、`atLeastNumeric`、`numericComplex`、`atLeastAlphabetic`、`atLeastAlphanumeric`、`alphanumericWithSymbols` です。|
-|workProfileRequirePassword|ブール値|パスワードが必要な作業プロファイルを|
+|workProfileRequirePassword|ブール型|パスワードが必要な作業プロファイルを|
 |securityRequireVerifyApps|Boolean|Android の検証アプリ機能がオンになっている必要があります。|
 
 ## <a name="relationships"></a>リレーションシップ

@@ -1,12 +1,13 @@
 ---
 title: TermsAndConditionsGroupAssignment を取得します。
 description: TermsAndConditionsGroupAssignment オブジェクトのプロパティと関係を参照してください。
-ms.openlocfilehash: 05333a323daabbc3df869cc7d58489157fafbbc4
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 92b9f6c0d48fe09149efd98015d64e96e2575852
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27069532"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27345032"
 ---
 # <a name="get-termsandconditionsgroupassignment"></a>TermsAndConditionsGroupAssignment を取得します。
 

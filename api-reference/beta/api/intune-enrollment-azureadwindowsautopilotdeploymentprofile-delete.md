@@ -1,12 +1,13 @@
 ---
 title: AzureADWindowsAutopilotDeploymentProfile を削除します。
 description: AzureADWindowsAutopilotDeploymentProfile を削除します。
-ms.openlocfilehash: ecf5cf9ee5c7f506b321263b016697e0702f5bf0
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 44adc5d06eb8b44efe576cd4d1f0045af84e671b
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27070451"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27354860"
 ---
 # <a name="delete-azureadwindowsautopilotdeploymentprofile"></a>AzureADWindowsAutopilotDeploymentProfile を削除します。
 

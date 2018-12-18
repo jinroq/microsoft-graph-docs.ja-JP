@@ -1,12 +1,13 @@
 ---
 title: deviceGuardVirtualizationBasedSecurityState 列挙型
 description: まだ文書化されていません
-ms.openlocfilehash: 719916717f711fa9230bc111e12d492557329830
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 2d40293a16fb3d424fed38cead82cfd7177df890
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27073775"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27354237"
 ---
 # <a name="deviceguardvirtualizationbasedsecuritystate-enum-type"></a>deviceGuardVirtualizationBasedSecurityState 列挙型
 

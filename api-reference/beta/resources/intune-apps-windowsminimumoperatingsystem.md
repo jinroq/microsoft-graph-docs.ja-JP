@@ -1,12 +1,13 @@
 ---
 title: windowsMinimumOperatingSystem リソースの種類
 description: Windows モバイル アプリに必要な最小オペレーティング システム。
-ms.openlocfilehash: 33c02e04f3f34361ce6d2fbbb17bf23e14b9d9d7
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 2ed80e724c5f53510db5366e82d2e9dea2d90707
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27072492"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27358437"
 ---
 # <a name="windowsminimumoperatingsystem-resource-type"></a>windowsMinimumOperatingSystem リソースの種類
 
@@ -16,15 +17,15 @@ ms.locfileid: "27072492"
 
 Windows モバイル アプリに必要な最小オペレーティング システム。
 ## <a name="properties"></a>プロパティ
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
 |v8_0|ブール型 (Boolean)|Windows バージョン 8.0 以降。|
 |v8_1|ブール型 (Boolean)|Windows バージョン 8.1 以降。|
 |v10_0|ブール型 (Boolean)|Windows バージョン 10.0 以降。|
-|v10_1607|ブール値|Windows 10 1607 以降です。|
-|v10_1703|ブール値|10 1703 の Windows またはそれ以降です。|
-|v10_1709|ブール値|10 1709 の Windows またはそれ以降です。|
-|v10_1803|ブール値|10 1803 の Windows またはそれ以降です。|
+|v10_1607|ブール型|Windows 10 1607 以降です。|
+|v10_1703|ブール型|10 1703 の Windows またはそれ以降です。|
+|v10_1709|ブール型|10 1709 の Windows またはそれ以降です。|
+|v10_1803|ブール型|10 1803 の Windows またはそれ以降です。|
 
 ## <a name="relationships"></a>リレーションシップ
 なし

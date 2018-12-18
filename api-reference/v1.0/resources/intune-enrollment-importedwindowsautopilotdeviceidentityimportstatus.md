@@ -1,12 +1,13 @@
 ---
 title: importedWindowsAutopilotDeviceIdentityImportStatus 列挙型
 description: まだ文書化されていません
-ms.openlocfilehash: 1d3138f9046df0a857f5ce4b0332594898c2ec65
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 626bb1efd27042b09f5ae24d5d16158aa8496993
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27020584"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27336436"
 ---
 # <a name="importedwindowsautopilotdeviceidentityimportstatus-enum-type"></a>importedWindowsAutopilotDeviceIdentityImportStatus 列挙型
 

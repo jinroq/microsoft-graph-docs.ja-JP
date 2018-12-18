@@ -1,12 +1,13 @@
 ---
 title: アプリケーション一覧
 description: この組織内のアプリケーションの一覧を取得します。
-ms.openlocfilehash: 073a7f91596afcf87cbd99969b570bf1bea68bcc
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lleonard-msft
+ms.openlocfilehash: 138a9e6d238fde44d5b5c47781bbd93cb2b73f98
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27067412"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27336695"
 ---
 # <a name="list-applications"></a>アプリケーション一覧
 
@@ -33,7 +34,7 @@ GET /applications
 このメソッドは、応答をカスタマイズするための [OData クエリ パラメーター](https://developer.microsoft.com/graph/docs/concepts/query_parameters)をサポートします。
 
 ## <a name="request-headers"></a>要求ヘッダー
-| 名前       | 型 | 説明|
+| 名前       | 種類 | 説明|
 |:-----------|:------|:----------|
 | Authorization  | string  | ベアラー {トークン}。必須。  |
 

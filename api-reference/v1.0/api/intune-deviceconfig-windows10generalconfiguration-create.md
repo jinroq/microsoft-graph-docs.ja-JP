@@ -1,12 +1,13 @@
 ---
 title: Create windows10GeneralConfiguration
 description: 新しい windows10GeneralConfiguration オブジェクトを作成します。
-ms.openlocfilehash: a727bb9da70b78e6e6c43957364e585c1b2b6f3a
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 7c4eaff2e9def33f4c79e4f42f0db30e2aa98d8a
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27023821"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27356666"
 ---
 # <a name="create-windows10generalconfiguration"></a>Create windows10GeneralConfiguration
 
@@ -42,9 +43,9 @@ POST /deviceManagement/deviceConfigurations
 
 次の表に、windows10GeneralConfiguration の作成時に必要なプロパティを示します。
 
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
-|id|String|エンティティのキー。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
+|ID|String|エンティティのキー。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |lastModifiedDateTime|DateTimeOffset|オブジェクトが最後に変更された DateTime。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |createdDateTime|DateTimeOffset|オブジェクトが作成された DateTime。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |説明|String|デバイス構成について管理者が提供した説明。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
@@ -249,7 +250,7 @@ POST /deviceManagement/deviceConfigurations
 |experienceBlockErrorDialogWhenNoSIM|Boolean|SIM カードが検出されない場合にエラー ダイアログを表示することを許可するかどうかを示します。|
 |experienceBlockTaskSwitcher|Boolean|デバイスでのタスクの切り替えを有効にするかどうかを示します。|
 |logonBlockFastUserSwitching|Boolean|同時にログオンしているユーザー間での切り替えをログオフなしで迅速に行う機能を無効にします。|
-|tenantLockdownRequireNetworkDuringOutOfBoxExperience|ブール値|かどうか、デバイスがネットワークに接続する必要があります。|
+|tenantLockdownRequireNetworkDuringOutOfBoxExperience|ブール型|かどうか、デバイスがネットワークに接続する必要があります。|
 
 
 

@@ -1,12 +1,13 @@
 ---
 title: リスト officeClientConfigurations
 description: すべてのポリシーを取得します。
-ms.openlocfilehash: f83058b6928f177b1437e8c423f5abf1f0ec69d9
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: de9bc4b2981aa4083148533a5fac7cb7654bc003
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27073572"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27355616"
 ---
 # <a name="list-officeclientconfigurations"></a>リスト officeClientConfigurations
 

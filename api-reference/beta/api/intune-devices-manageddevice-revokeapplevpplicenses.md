@@ -1,12 +1,13 @@
 ---
 title: revokeAppleVppLicenses アクション
 description: デバイスのすべてのアップル Vpp ライセンスを失効させる
-ms.openlocfilehash: 4399eefe22c70ca9d11d72988ea656c5a71f642d
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 03a38821a4ca7c8675dbd97d89b157ae6dd88fd4
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27071265"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27344899"
 ---
 # <a name="revokeapplevpplicenses-action"></a>revokeAppleVppLicenses アクション
 

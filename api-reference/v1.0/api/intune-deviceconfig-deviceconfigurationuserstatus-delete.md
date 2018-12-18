@@ -1,12 +1,13 @@
 ---
 title: Delete deviceConfigurationUserStatus
 description: deviceConfigurationUserStatus を削除します。
-ms.openlocfilehash: 86250266e1cfd127e0a6658229061c03d590309f
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: d248f1440053aeac9a53a534b22af61cfc396c03
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27020874"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27355077"
 ---
 # <a name="delete-deviceconfigurationuserstatus"></a>Delete deviceConfigurationUserStatus
 

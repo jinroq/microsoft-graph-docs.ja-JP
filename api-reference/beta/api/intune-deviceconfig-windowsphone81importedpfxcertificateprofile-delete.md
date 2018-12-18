@@ -1,12 +1,13 @@
 ---
 title: WindowsPhone81ImportedPFXCertificateProfile を削除します。
 description: WindowsPhone81ImportedPFXCertificateProfile を削除します。
-ms.openlocfilehash: 3e2ec0f08444ca5d33be2059b1fe750561ccecc2
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 708d520d9a6cb6d643d90ea0e3e9c0de410c0bd8
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27066274"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27354958"
 ---
 # <a name="delete-windowsphone81importedpfxcertificateprofile"></a>WindowsPhone81ImportedPFXCertificateProfile を削除します。
 

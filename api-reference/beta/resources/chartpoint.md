@@ -1,12 +1,13 @@
 ---
 title: ChartPoint リソースの種類
 description: グラフの系列のポイントを表します。
-ms.openlocfilehash: 3d1bcc26fdc78bd7b844c870d40346a5f1f0496f
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lumine2008
+ms.openlocfilehash: f27017d5e6cc111fa759fc6c9728ed182e7fa624
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27071184"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27358409"
 ---
 # <a name="chartpoint-resource-type"></a>ChartPoint リソースの種類
 
@@ -24,7 +25,7 @@ ms.locfileid: "27071184"
 |[Itemat](../api/chartpointscollection-itemat.md)|[ChartPoint](chartpoint.md)|データ系列内の位置に基づくポイントを取得します。|
 
 ## <a name="properties"></a>プロパティ
-| プロパティ     | 型   |説明|
+| プロパティ     | 種類   |説明|
 |:---------------|:--------|:----------|
 |value|object|グラフのポイントの値を返します。値の取得のみ可能です。|
 

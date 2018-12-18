@@ -1,12 +1,13 @@
 ---
 title: deviceComplianceActionItem の作成
 description: 新しい deviceComplianceActionItem オブジェクトを作成します。
-ms.openlocfilehash: edb99b2fac02b95ebd2634749bdaa8d4acfec781
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 52dd6bca4aa4f91f68d6e986a69e061e899602e8
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27070967"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27356120"
 ---
 # <a name="create-devicecomplianceactionitem"></a>deviceComplianceActionItem の作成
 
@@ -44,9 +45,9 @@ POST /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/sched
 
 次の表に、deviceComplianceActionItem の作成時に必要なプロパティを示します。
 
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
-|id|String|エンティティのキー。|
+|ID|String|エンティティのキー。|
 |gracePeriodHours|Int32|アクションが実行されるまでの待機時間。 有効な値は 0 から 8760 までです|
 |actionType|[deviceComplianceActionType](../resources/intune-deviceconfig-devicecomplianceactiontype.md)|実行するアクションです。 可能な値は、`noAction`、`notification`、`block`、`retire`、`wipe`、`removeResourceAccessProfiles`、`pushNotification`、`remoteLock` です。|
 |notificationTemplateId|String|使用する通知メッセージ テンプレート|
