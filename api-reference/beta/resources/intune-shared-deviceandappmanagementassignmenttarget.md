@@ -1,12 +1,13 @@
 ---
 title: deviceAndAppManagementAssignmentTarget リソースの種類
 description: 割り当てターゲットの基本型です。
-ms.openlocfilehash: a4d0a3c50bd63c2381b7b7dea5275449c8248436
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: d655bd9f8f18087916eb4943ffdb2cbf8921b790
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27070815"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27320791"
 ---
 # <a name="deviceandappmanagementassignmenttarget-resource-type"></a>deviceAndAppManagementAssignmentTarget リソースの種類
 
@@ -16,7 +17,7 @@ ms.locfileid: "27070815"
 
 割り当てターゲットの基本型です。
 ## <a name="properties"></a>プロパティ
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
 
 ## <a name="relationships"></a>リレーションシップ

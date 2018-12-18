@@ -1,12 +1,13 @@
 ---
 title: telecomExpenseManagementPartner の作成
 description: 新しい telecomExpenseManagementPartner オブジェクトを作成します。
-ms.openlocfilehash: f9a4c688867e4956e9abc147522033ff1fc0101d
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: e3b099bf71b586313a5cf67012c7f24ebc7e858c
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27074187"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27322408"
 ---
 # <a name="create-telecomexpensemanagementpartner"></a>telecomExpenseManagementPartner の作成
 
@@ -44,9 +45,9 @@ POST /deviceManagement/telecomExpenseManagementPartners
 
 次の表に、telecomExpenseManagementPartner の作成時に必要なプロパティを示します。
 
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
-|id|String|TEM パートナーの一意識別子。|
+|ID|String|TEM パートナーの一意識別子。|
 |displayName|String|TEM パートナーの表示名。|
 |url|String|TEM パートナーの管理用コントロール パネルの URL。管理者はここで TEM サービスを構成できます。|
 |appAuthorized|Boolean|パートナーの AAD アプリに Intune へのアクセスが承認されているかどうかを指定します。|

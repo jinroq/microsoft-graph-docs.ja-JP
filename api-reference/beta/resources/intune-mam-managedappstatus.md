@@ -1,12 +1,13 @@
 ---
 title: managedAppStatus リソースの種類
 description: 組織のアプリ保護と構成の状態を表します。
-ms.openlocfilehash: 659e89acb6741c7a3f7aad072bb658ce52e9e5cc
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 9a685b8eca9e276bd88bc9643a4ee07029ed4778
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27072785"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27318383"
 ---
 # <a name="managedappstatus-resource-type"></a>managedAppStatus リソースの種類
 
@@ -22,7 +23,7 @@ ms.locfileid: "27072785"
 |[Get managedAppStatus](../api/intune-mam-managedappstatus-get.md)|[managedAppStatus](../resources/intune-mam-managedappstatus.md)|[managedAppStatus](../resources/intune-mam-managedappstatus.md) オブジェクトのプロパティとリレーションシップを読み取ります。|
 
 ## <a name="properties"></a>プロパティ
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
 |displayName|String|進捗レポートのフレンドリ名。|
 |id|String|エンティティのキー。|

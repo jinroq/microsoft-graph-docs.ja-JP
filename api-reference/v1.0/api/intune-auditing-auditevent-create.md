@@ -1,12 +1,13 @@
 ---
 title: auditEvent の作成
 description: 新しい auditEvent オブジェクトを作成します。
-ms.openlocfilehash: b26b9fda355cda5b72133bc5257c0606a84de9a6
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 0997ca2e9a7bf5421d20e2e3c784ebd444943d4b
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27022175"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27318411"
 ---
 # <a name="create-auditevent"></a>auditEvent の作成
 
@@ -42,9 +43,9 @@ POST /deviceManagement/auditEvents
 
 次の表に、auditEvent の作成時に必要なプロパティを示します。
 
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
-|id|String|エンティティのキー。|
+|ID|String|エンティティのキー。|
 |displayName|String|イベントの表示名。|
 |componentName|String|コンポーネント名。|
 |actor|[auditActor](../resources/intune-auditing-auditactor.md)|監査イベントに関連付けられている AAD ユーザーとアプリケーション。|

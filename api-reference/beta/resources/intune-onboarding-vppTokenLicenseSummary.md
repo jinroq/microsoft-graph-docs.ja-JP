@@ -1,12 +1,13 @@
 ---
 title: vppTokenLicenseSummary リソースの種類
 description: トークンで指定されたアプリケーションのライセンスの概要です。
-ms.openlocfilehash: fba888c706b21a796615bf9bc2ea79968d5ad6d0
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 7847c6265ed526d50215567918698c7732adf947
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27068132"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27319979"
 ---
 # <a name="vpptokenlicensesummary-resource-type"></a>vppTokenLicenseSummary リソースの種類
 
@@ -15,8 +16,8 @@ ms.locfileid: "27068132"
 > **注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
 
 トークンで指定されたアプリケーションのライセンスの概要です。
-## <a name="properties"></a>プロパティ
-|プロパティ|型|説明|
+## <a name="properties"></a>Properties
+|プロパティ|種類|説明|
 |:---|:---|:---|
 |vppTokenId|String|VPP トークンの識別子です。|
 |appleId|String|特定の Apple ボリューム購入プログラムのトークンに関連付けられている Apple ID。|

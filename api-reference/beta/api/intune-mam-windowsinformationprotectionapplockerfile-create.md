@@ -1,12 +1,13 @@
 ---
 title: windowsInformationProtectionAppLockerFile の作成
 description: 新しい windowsInformationProtectionAppLockerFile オブジェクトを作成します。
-ms.openlocfilehash: 380b4b9358c3bc30337272ced4b92563978d7ffe
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: f2cbed922d6f2ac130169e5d9c85e3a5231184a5
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27071133"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27317123"
 ---
 # <a name="create-windowsinformationprotectionapplockerfile"></a>windowsInformationProtectionAppLockerFile の作成
 
@@ -47,11 +48,11 @@ POST /deviceAppManagement/mdmWindowsInformationProtectionPolicies/{mdmWindowsInf
 
 次の表に、windowsInformationProtectionAppLockerFile の作成時に必要なプロパティを示します。
 
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
 |displayName|String|フレンドリ名|
 |fileHash|String|ファイルの SHA256 ハッシュ|
-|file|バイナリ型 (Binary)|バイト配列のファイル|
+|file|Binary|バイト配列のファイル|
 |id|String|エンティティのキー。|
 |version|String|エンティティのバージョン。|
 

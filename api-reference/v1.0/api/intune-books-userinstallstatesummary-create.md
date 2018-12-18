@@ -1,12 +1,13 @@
 ---
 title: userInstallStateSummary の作成
 description: 新しい userInstallStateSummary オブジェクトを作成します。
-ms.openlocfilehash: d524801d8ee1b44ea955afdeb2a7c78364d89360
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: a1da2855896bae9d9c902ae978d3ce8c127f3bc4
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27023928"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27318418"
 ---
 # <a name="create-userinstallstatesummary"></a>userInstallStateSummary の作成
 
@@ -42,9 +43,9 @@ POST /deviceAppManagement/managedEBooks/{managedEBookId}/userStateSummary
 
 次の表に、userInstallStateSummary の作成時に必要なプロパティを示します。
 
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
-|id|String|エンティティのキー。|
+|ID|String|エンティティのキー。|
 |userName|String|ユーザー名です。|
 |installedDeviceCount|Int32|インストールされたデバイスの数です。|
 |failedDeviceCount|Int32|失敗したデバイスの数です。|

@@ -1,12 +1,13 @@
 ---
 title: termsAndConditionsAssignment の取得
 description: termsAndConditionsAssignment オブジェクトのプロパティとリレーションシップを読み取ります。
-ms.openlocfilehash: ad1defe1403afad9ac30a3d056d198e4e116802c
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: eb0f56703e50a48966dc2a8c27aa6a66e5fbdb6b
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27020501"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27319440"
 ---
 # <a name="get-termsandconditionsassignment"></a>termsAndConditionsAssignment の取得
 

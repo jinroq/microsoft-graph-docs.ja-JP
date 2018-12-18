@@ -1,12 +1,13 @@
 ---
 title: リスト windows10ImportedPFXCertificateProfiles
 description: Windows10ImportedPFXCertificateProfile オブジェクトのプロパティと関係を一覧表示します。
-ms.openlocfilehash: dfc1adaa5b350c7d7377db93d2b86a2b7357abb7
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 3bcddb3176f397d75aba781a320157677a16168a
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27073456"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27318739"
 ---
 # <a name="list-windows10importedpfxcertificateprofiles"></a>リスト windows10ImportedPFXCertificateProfiles
 

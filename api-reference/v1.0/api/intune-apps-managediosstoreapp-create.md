@@ -1,12 +1,13 @@
 ---
 title: managedIOSStoreApp の作成
 description: 新しい managedIOSStoreApp オブジェクトを作成します。
-ms.openlocfilehash: 7cdbcf6e3690a16fe0a6754d89bdb0ebd45e3cdb
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 392d7fee5685afe1804c8832bdd1fcb72ff6d3a9
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27023902"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27319468"
 ---
 # <a name="create-managediosstoreapp"></a>managedIOSStoreApp の作成
 
@@ -42,9 +43,9 @@ POST /deviceAppManagement/mobileApps
 
 次の表に、managedIOSStoreApp の作成時に必要なプロパティを示します。
 
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
-|id|String|エンティティのキー。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|
+|ID|String|エンティティのキー。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|
 |displayName|String|管理者が提供またはインポートしたアプリのタイトル。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|
 |説明|String|アプリの説明。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|
 |publisher|String|アプリの発行元。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|

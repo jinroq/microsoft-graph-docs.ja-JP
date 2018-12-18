@@ -1,12 +1,13 @@
 ---
 title: assign アクション
 description: まだ文書化されていません
-ms.openlocfilehash: 14193cf539adae252647b6696fc82a038f82aed0
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: b1f786bec3ce59ac36c12790e09fdcc2cd9a0d78
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27074311"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27319321"
 ---
 # <a name="assign-action"></a>assign アクション
 
@@ -44,7 +45,7 @@ POST /deviceAppManagement/iosLobAppProvisioningConfigurations/{iosLobAppProvisio
 
 次の表に、このアクションで使用できるパラメーターを示します。
 
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
 |appProvisioningConfigurationGroupAssignments|[mobileAppProvisioningConfigGroupAssignment](../resources/intune-apps-mobileappprovisioningconfiggroupassignment.md)コレクション|まだ文書化されていません|
 |iOSLobAppProvisioningConfigAssignments|[iosLobAppProvisioningConfigurationAssignment](../resources/intune-apps-ioslobappprovisioningconfigurationassignment.md)コレクション|まだ文書化されていません|

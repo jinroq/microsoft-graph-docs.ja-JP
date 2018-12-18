@@ -1,12 +1,13 @@
 ---
 title: resourceOperation の更新
 description: resourceOperation オブジェクトのプロパティを更新します。
-ms.openlocfilehash: 0044d35577e42f8cd97bc80017ab89690fac110d
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 98da602683c61313b11862bc5dc567f4a04e4268
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27022353"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27319734"
 ---
 # <a name="update-resourceoperation"></a>resourceOperation の更新
 
@@ -42,9 +43,9 @@ PATCH /deviceManagement/resourceOperations/{resourceOperationId}
 
 次の表に、[resourceOperation](../resources/intune-rbac-resourceoperation.md) の作成時に必要なプロパティを示します。
 
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
-|id|String|リソース操作のキー。 読み取り専用で、自動生成されます。|
+|ID|String|リソース操作のキー。 読み取り専用で、自動生成されます。|
 |resourceName|String|この操作が実行されるリソースの名前。|
 |actionName|String|この操作が実行するアクションの種類。 actionName は簡潔で、できるだけ少ない単語にする必要があります。|
 |説明|String|リソース操作の説明。 Azure Portal で操作にマウス ポインターを合わせると、その操作の説明がテキストで表示されます。|

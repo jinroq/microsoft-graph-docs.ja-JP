@@ -1,12 +1,13 @@
 ---
 title: ImportedAppleDeviceIdentityResult を作成します。
 description: 新しい importedAppleDeviceIdentityResult オブジェクトを作成します。
-ms.openlocfilehash: 1f3b7091ba904843ed95a802ece9a5fa42e05b4f
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 1560f8e05057327a6aafc5258e7c5c46b9bcb781
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27071900"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27316052"
 ---
 # <a name="create-importedappledeviceidentityresult"></a>ImportedAppleDeviceIdentityResult を作成します。
 
@@ -44,9 +45,9 @@ POST /deviceManagement/depOnboardingSettings/{depOnboardingSettingId}/importedAp
 
 次の表は、importedAppleDeviceIdentityResult を作成するときに必要なプロパティを示します。
 
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
-|id|String|エンティティのキー。 [ImportedAppleDeviceIdentity](../resources/intune-enrollment-importedappledeviceidentity.md)から継承されました。|
+|ID|String|エンティティのキー。 [ImportedAppleDeviceIdentity](../resources/intune-enrollment-importedappledeviceidentity.md)から継承されました。|
 |シリアル番号|String|継承されるデバイス ・ シリアル番号は、 [importedAppleDeviceIdentity](../resources/intune-enrollment-importedappledeviceidentity.md)から|
 |requestedEnrollmentProfileId|String|登録プロファイル Id の管理者が、 [importedAppleDeviceIdentity](../resources/intune-enrollment-importedappledeviceidentity.md)から継承される、次の登録時に、デバイスに適用しようとしています。|
 |requestedEnrollmentProfileAssignmentDateTime|DateTimeOffset|時間登録のプロファイルは、 [importedAppleDeviceIdentity](../resources/intune-enrollment-importedappledeviceidentity.md)から継承されるデバイスに割り当てられました。|
@@ -57,7 +58,7 @@ POST /deviceManagement/depOnboardingSettings/{depOnboardingSettingId}/importedAp
 |説明|String|[ImportedAppleDeviceIdentity](../resources/intune-enrollment-importedappledeviceidentity.md)から継承される、デバイスの説明|
 |enrollmentState|[enrollmentState](../resources/intune-enrollment-enrollmentstate.md)|Intune 継承で[importedAppleDeviceIdentity](../resources/intune-enrollment-importedappledeviceidentity.md)からのデバイスの状態。 使用可能な値: `unknown`、`enrolled`、`pendingReset`、`failed`、`notContacted`、`blocked`。|
 |platform|[プラットフォーム](../resources/intune-enrollment-platform.md)|デバイスのプラットフォームです。 [ImportedAppleDeviceIdentity](../resources/intune-enrollment-importedappledeviceidentity.md)から継承されます。 使用可能な値: `unknown`、`ios`、`android`、`windows`、`windowsMobile`、`macOS`。|
-|status|ブール値|インポートされたデバイス id のステータス|
+|status|ブール型|インポートされたデバイス id のステータス|
 
 
 

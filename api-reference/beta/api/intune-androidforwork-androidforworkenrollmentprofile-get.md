@@ -1,12 +1,13 @@
 ---
 title: androidForWorkEnrollmentProfile の取得
 description: androidForWorkEnrollmentProfile オブジェクトのプロパティとリレーションシップを読み取ります。
-ms.openlocfilehash: 69f5d4df7ae847b49edfe66ba3e44adc96f0c818
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 7983524b6992c68d01766d8c6015a05bbfe7342b
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27072380"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27315877"
 ---
 # <a name="get-androidforworkenrollmentprofile"></a>androidForWorkEnrollmentProfile の取得
 

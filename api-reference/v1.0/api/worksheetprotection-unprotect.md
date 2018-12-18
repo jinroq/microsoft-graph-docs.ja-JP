@@ -1,12 +1,13 @@
 ---
 title: 'WorksheetProtection: unprotect'
 description: ワークシートの保護を解除します。
-ms.openlocfilehash: fdb5d74a9f47c6cc3a56527058db02c9c30a1ed2
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lumine2008
+ms.openlocfilehash: b64c85d6d8f7c37b71c2082f1730045eeb6a055a
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27024331"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27319993"
 ---
 # <a name="worksheetprotection-unprotect"></a>WorksheetProtection: unprotect
 
@@ -35,9 +36,9 @@ POST /workbook/worksheets/{id|name}/protection/unprotect
 ## <a name="request-body"></a>要求本文
 要求本文で、次のパラメーターを含む JSON オブジェクトを指定します。
 
-| パラメーター    | 型   |説明|
+| パラメーター    | 種類   |説明|
 |:---------------|:--------|:----------|
-|password|文字列|省略可能。シートの保護パスワード。|
+|password|string|省略可能。シートの保護パスワード。|
 
 ## <a name="response"></a>応答
 

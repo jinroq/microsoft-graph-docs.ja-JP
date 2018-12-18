@@ -1,12 +1,13 @@
 ---
 title: notificationMessageTemplate リソース タイプ
 description: " セクションです。 notificationMessageTemplate オブジェクトを使用して、管理者が非準拠のアクションを構成する際に選択する、独自のカスタム通知を作成します。"
-ms.openlocfilehash: a7d38c1a8952b1d7b8fe170b179b5b6c3bc019a5
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: eae9d0ada0dcaf160b0b7dc8802af3ccbcfaa8f4
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27071782"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27316241"
 ---
 # <a name="notificationmessagetemplate-resource-type"></a>notificationMessageTemplate リソース タイプ
 
@@ -26,9 +27,9 @@ ms.locfileid: "27071782"
 |[sendTestMessage action](../api/intune-notification-notificationmessagetemplate-sendtestmessage.md)|なし|既定のロケールで、指定された notificationMessageTemplate を使用して、テスト メッセージを送信します|
 
 ## <a name="properties"></a>プロパティ
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
-|id|String|エンティティのキー。|
+|ID|String|エンティティのキー。|
 |lastModifiedDateTime|DateTimeOffset|オブジェクトが最後に変更された DateTime。|
 |displayName|String|通知メッセージ テンプレートの表示名。|
 |defaultLocale|String|要求されたロケールが使用できないときにフォールバックする既定のロケール。|

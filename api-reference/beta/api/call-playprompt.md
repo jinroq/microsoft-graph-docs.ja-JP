@@ -1,12 +1,13 @@
 ---
 title: '電話: playPrompt'
 description: 呼び出しではプロンプトを再生します。
-ms.openlocfilehash: a5fb5d34264298726add6cf2742d1319bfcb6c95
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: VinodRavichandran
+ms.openlocfilehash: 37192d916a1fe4365abafa0564329450a7c67077
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27071104"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27316584"
 ---
 # <a name="call-playprompt"></a>電話: playPrompt
 
@@ -38,7 +39,7 @@ POST /applications/{id}/calls/{id}/playPrompt
 ## <a name="request-body"></a>要求本文
 要求本文で、次のパラメーターを含む JSON オブジェクトを指定します。
 
-| パラメーター      | 型    |説明|
+| パラメーター      | 種類    |説明|
 |:---------------|:--------|:----------|
 |メッセージが表示されます。|[プロンプト](../resources/prompt.md)コレクション||
 |clientContext|String|クライアントのコンテキスト。|

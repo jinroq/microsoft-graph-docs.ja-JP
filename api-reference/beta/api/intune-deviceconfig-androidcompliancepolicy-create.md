@@ -1,12 +1,13 @@
 ---
 title: androidCompliancePolicy の作成
 description: 新しい androidCompliancePolicy オブジェクトを作成します。
-ms.openlocfilehash: dd483b057379f6f3c5fbf27c42507da0cd54f9b7
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: d09040d1db8d2516cf186b72e26ad24782b76328
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27073951"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27322569"
 ---
 # <a name="create-androidcompliancepolicy"></a>androidCompliancePolicy の作成
 
@@ -44,7 +45,7 @@ POST /deviceManagement/deviceCompliancePolicies
 
 次の表に、androidCompliancePolicy 作成時に必要となるプロパティを示します。
 
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
 |roleScopeTagIds|String コレクション|このエンティティ インスタンスのスコープのタグのリストです。 [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md) から継承します|
 |id|String|エンティティのキー。 [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md) から継承します|

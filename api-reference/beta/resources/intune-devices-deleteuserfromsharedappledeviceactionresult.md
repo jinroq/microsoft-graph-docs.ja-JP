@@ -1,12 +1,13 @@
 ---
 title: deleteUserFromSharedAppleDeviceActionResult リソースの種類
 description: 共有の Apple デバイスのアクションの結果からユーザーを削除する
-ms.openlocfilehash: 5ed6d7b8c07c28dce5ee8cc830a9e86bcdcafa1b
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 928d20603bc06d15e2e58c03d6ef611a9d57b42f
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27069113"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27319790"
 ---
 # <a name="deleteuserfromsharedappledeviceactionresult-resource-type"></a>deleteUserFromSharedAppleDeviceActionResult リソースの種類
 
@@ -19,7 +20,7 @@ ms.locfileid: "27069113"
 [deviceActionResult](../resources/intune-devices-deviceactionresult.md) から継承します
 
 ## <a name="properties"></a>プロパティ
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
 |actionName|String|[deviceActionResult](../resources/intune-devices-deviceactionresult.md) から継承されるアクション名|
 |actionState|[actionState](../resources/intune-shared-actionstate.md)|[DeviceActionResult](../resources/intune-devices-deviceactionresult.md)から継承される、アクションの状態です。 可能な値は、`none`、`pending`、`canceled`、`active`、`done`、`failed`、`notSupported` です。|

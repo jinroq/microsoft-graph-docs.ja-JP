@@ -1,12 +1,13 @@
 ---
 title: resourceAction リソースの種類
 description: まだ文書化されていません
-ms.openlocfilehash: d4f585ec52096cc9bd6d1430825d61426df644fe
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: c373cc15b1dfce1ca3cede9fa1c7a642da48f5bf
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27070900"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27319160"
 ---
 # <a name="resourceaction-resource-type"></a>resourceAction リソースの種類
 
@@ -16,7 +17,7 @@ ms.locfileid: "27070900"
 
 まだ文書化されていません
 ## <a name="properties"></a>プロパティ
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
 |allowedResourceActions|文字列コレクション|許可されるアクション|
 |notAllowedResourceActions|文字列コレクション|許可されていないアクション|

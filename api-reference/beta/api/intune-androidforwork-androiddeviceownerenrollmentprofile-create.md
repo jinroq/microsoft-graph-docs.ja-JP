@@ -1,12 +1,13 @@
 ---
 title: AndroidDeviceOwnerEnrollmentProfile を作成します。
 description: 新しい androidDeviceOwnerEnrollmentProfile オブジェクトを作成します。
-ms.openlocfilehash: da59eaf01dea9208540b7116b6309af754980157
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 6b1e287183265745fc19cab7817667290715d704
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27067592"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27319118"
 ---
 # <a name="create-androiddeviceownerenrollmentprofile"></a>AndroidDeviceOwnerEnrollmentProfile を作成します。
 
@@ -44,7 +45,7 @@ POST /deviceManagement/androidDeviceOwnerEnrollmentProfiles
 
 次の表は、androidDeviceOwnerEnrollmentProfile を作成するときに必要なプロパティを示します。
 
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
 |accountId|String|登録プロファイルが属するテナント GUID。|
 |id|String|登録プロファイル用の一意な GUID。|

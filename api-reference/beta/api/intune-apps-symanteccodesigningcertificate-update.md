@@ -1,12 +1,13 @@
 ---
 title: SymantecCodeSigningCertificate を更新します。
 description: SymantecCodeSigningCertificate オブジェクトのプロパティを更新します。
-ms.openlocfilehash: a6122997a4bc0c76521612b5b17a9c42cd944664
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: fe3580f0160c50c2580580ff3515a7842ccf610d
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27072388"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27318061"
 ---
 # <a name="update-symanteccodesigningcertificate"></a>SymantecCodeSigningCertificate を更新します。
 
@@ -44,10 +45,10 @@ PATCH /deviceAppManagement/symantecCodeSigningCertificate
 
 [SymantecCodeSigningCertificate](../resources/intune-apps-symanteccodesigningcertificate.md)を作成するときに必要なプロパティを次の表に示します。
 
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
-|id|String|エンティティのキー。|
-|content|バイナリ|生データの形式で Windows のシマンテック社のコード署名証明書。|
+|ID|String|エンティティのキー。|
+|content|Binary|生データの形式で Windows のシマンテック社のコード署名証明書。|
 |status|[certificateStatus](../resources/intune-apps-certificatestatus.md)|証明書の状態は、準備または準備されていません。 使用可能な値は、`notProvisioned`、`provisioned` です。|
 |password|String|.Pfx ファイルに必要なパスワードです。|
 |subjectName|文字列型 (String)|証明書のサブジェクト名。|

@@ -1,12 +1,13 @@
 ---
 title: resultantAppState 列挙型
 description: まだ文書化されていません
-ms.openlocfilehash: 7c3dd96aca4ed94a45a36b9a48a2908f805bb1f0
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 7b45353867abe77143fb97755aff457e0c81deb8
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27073239"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27319426"
 ---
 # <a name="resultantappstate-enum-type"></a>resultantAppState 列挙型
 

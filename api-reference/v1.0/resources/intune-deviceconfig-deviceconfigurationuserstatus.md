@@ -1,12 +1,13 @@
 ---
 title: deviceConfigurationUserStatus リソースの種類
 description: まだ文書化されていません
-ms.openlocfilehash: 69e4c4b23d786c52a89ba633a12351f1fe2fef5a
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: d47881bcc13e14d96be86056e3cc83fa9e47a697
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27023274"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27319944"
 ---
 # <a name="deviceconfigurationuserstatus-resource-type"></a>deviceConfigurationUserStatus リソースの種類
 
@@ -23,9 +24,9 @@ ms.locfileid: "27023274"
 |[deviceConfigurationUserStatus の更新](../api/intune-deviceconfig-deviceconfigurationuserstatus-update.md)|[deviceConfigurationUserStatus](../resources/intune-deviceconfig-deviceconfigurationuserstatus.md)|[deviceConfigurationUserStatus](../resources/intune-deviceconfig-deviceconfigurationuserstatus.md) オブジェクトのプロパティを更新します。|
 
 ## <a name="properties"></a>プロパティ
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
-|id|String|エンティティのキー。|
+|ID|String|エンティティのキー。|
 |userDisplayName|String|DevicePolicyStatus のユーザー名。|
 |devicesCount|Int32|そのユーザーのデバイスの数。|
 |status|[complianceStatus](../resources/intune-shared-compliancestatus.md)|ポリシー レポートのコンプライアンスの状態。 可能な値は、`unknown`、`notApplicable`、`compliant`、`remediated`、`nonCompliant`、`error`、`conflict`、`notAssigned` です。|

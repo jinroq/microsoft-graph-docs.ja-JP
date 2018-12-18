@@ -1,12 +1,13 @@
 ---
 title: calendarGroup リソースの種類
 description: ユーザーの予定表のグループです。
-ms.openlocfilehash: 6cc3ec5ed206109b341d0fc69845c9bd19df9373
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: angelgolfer-ms
+ms.openlocfilehash: 5de023a887622ed0dcc759da7ada6b1e4990b6d5
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27020252"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27316906"
 ---
 # <a name="calendargroup-resource-type"></a>calendarGroup リソースの種類
 
@@ -26,7 +27,7 @@ ms.locfileid: "27020252"
 
 ## <a name="properties"></a>プロパティ
 
-| プロパティ  | 型   | 説明                                                                                                                                                                                               |
+| プロパティ  | 種類   | 説明                                                                                                                                                                                               |
 | :-------- | :----- | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | 名前      | String | グループの名前。                                                                                                                                                                                           |
 | changeKey | String | 予定表グループのバージョンを識別します。予定表グループを変更するたびに ChangeKey も変更されます。これにより、Exchange は正しいバージョンのオブジェクトに変更を適用できます。読み取り専用です。 |

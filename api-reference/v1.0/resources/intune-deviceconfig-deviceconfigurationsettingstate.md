@@ -1,12 +1,13 @@
 ---
 title: deviceConfigurationSettingState リソースの種類
 description: 指定されたデバイスのデバイス構成設定の状態。
-ms.openlocfilehash: 056d4e1b501d438feb5bbda6b7910c9998c73cdb
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 545cb9bf0be410a5e9a0e25dbc242399c6dbc61f
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27022011"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27320644"
 ---
 # <a name="deviceconfigurationsettingstate-resource-type"></a>deviceConfigurationSettingState リソースの種類
 
@@ -14,7 +15,7 @@ ms.locfileid: "27022011"
 
 指定されたデバイスのデバイス構成設定の状態。
 ## <a name="properties"></a>プロパティ
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
 |setting|String|レポートされている設定値です。|
 |settingName|String|レポートされている、ローカライズされた設定名またはユーザー フレンドリな設定名です|

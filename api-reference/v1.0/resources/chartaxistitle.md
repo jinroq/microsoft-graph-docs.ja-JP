@@ -1,12 +1,13 @@
 ---
 title: ChartAxisTitle リソースの種類
 description: グラフ軸のタイトルを表します。
-ms.openlocfilehash: ede660e2ba5d0ab34e8b985574e3077ca06b32b6
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lumine2008
+ms.openlocfilehash: 785caa4d48cf32c5892d05238b4137691fd0f5c7
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27021604"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27317263"
 ---
 # <a name="chartaxistitle-resource-type"></a>ChartAxisTitle リソースの種類
 
@@ -21,7 +22,7 @@ ms.locfileid: "27021604"
 |[Update](../api/chartaxistitle-update.md) | [WorkbookChartAxisTitle](chartaxistitle.md)    |ChartAxisTitle オブジェクトを更新します。 |
 
 ## <a name="properties"></a>プロパティ
-| プロパティ     | 型   |説明|
+| プロパティ     | 種類   |説明|
 |:---------------|:--------|:----------|
 |text|文字列|軸タイトルを表します。|
 |visible|ブール値|軸のタイトルの表示/非表示を指定するブール型の値です。|

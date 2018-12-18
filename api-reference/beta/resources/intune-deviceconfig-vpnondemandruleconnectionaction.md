@@ -1,12 +1,13 @@
 ---
 title: vpnOnDemandRuleConnectionAction 列挙型
 description: VPN オン ・ デマンド ・ ルールの接続の動作です。
-ms.openlocfilehash: 5be833ff9877d553b4f0971056947582448fc619
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: e647f0e32845d9de0209d8acdb42ebe4397176e5
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27066370"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27317256"
 ---
 # <a name="vpnondemandruleconnectionaction-enum-type"></a>vpnOnDemandRuleConnectionAction 列挙型
 

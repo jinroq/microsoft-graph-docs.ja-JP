@@ -1,12 +1,13 @@
 ---
 title: windows10EnterpriseModernAppManagementConfiguration の作成
 description: 新しい windows10EnterpriseModernAppManagementConfiguration オブジェクトを作成します。
-ms.openlocfilehash: 0d324d2b6cdc2efa79a952418afb5459295931b7
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 0e04d717c1bed1803472c90dbffdba3b11a32aa4
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27021473"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27318208"
 ---
 # <a name="create-windows10enterprisemodernappmanagementconfiguration"></a>windows10EnterpriseModernAppManagementConfiguration の作成
 
@@ -42,9 +43,9 @@ POST /deviceManagement/deviceConfigurations
 
 次の表に、windows10EnterpriseModernAppManagementConfiguration の作成時に必要なプロパティを示します。
 
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
-|id|String|エンティティのキー。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
+|ID|String|エンティティのキー。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |lastModifiedDateTime|DateTimeOffset|オブジェクトが最後に変更された DateTime。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |createdDateTime|DateTimeOffset|オブジェクトが作成された DateTime。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |説明|String|デバイス構成について管理者が提供した説明。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|

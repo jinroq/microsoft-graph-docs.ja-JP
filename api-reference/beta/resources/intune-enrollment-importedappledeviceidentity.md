@@ -1,12 +1,13 @@
 ---
 title: importedAppleDeviceIdentity リソースの種類
 description: ImportedAppleDeviceIdentity リソースでは、アップル デバイスのインポートされたデバイス id を表します。
-ms.openlocfilehash: 8441d169e0e7aa1cbf9c79a017599cca1cc4aa04
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 966e384b63026def366ba19ea634d635d77d9083
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27067906"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27317592"
 ---
 # <a name="importedappledeviceidentity-resource-type"></a>importedAppleDeviceIdentity リソースの種類
 
@@ -26,9 +27,9 @@ ImportedAppleDeviceIdentity リソースでは、アップル デバイスのイ
 |[importAppleDeviceIdentityList アクション](../api/intune-enrollment-importedappledeviceidentity-importappledeviceidentitylist.md)|[importedAppleDeviceIdentityResult](../resources/intune-enrollment-importedappledeviceidentityresult.md)コレクション|まだ文書化されていません|
 
 ## <a name="properties"></a>プロパティ
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
-|id|String|エンティティのキー。|
+|ID|String|エンティティのキー。|
 |シリアル番号|String|デバイスのシリアル番号|
 |requestedEnrollmentProfileId|String|登録プロファイル Id の管理者が、次の登録時にデバイスに適用しようとしています。|
 |requestedEnrollmentProfileAssignmentDateTime|DateTimeOffset|時間登録のプロファイルは、デバイスに割り当てられました。|

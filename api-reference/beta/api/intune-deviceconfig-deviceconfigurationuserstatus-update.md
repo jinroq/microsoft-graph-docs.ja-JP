@@ -1,12 +1,13 @@
 ---
 title: deviceConfigurationUserStatus の更新
 description: deviceConfigurationUserStatus オブジェクトのプロパティを更新します。
-ms.openlocfilehash: c8d34042be1e5166880c0a23ab9ec7fd0126df01
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 11ad78aa074eb42e57d8c74af6d20b039e164a28
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27070580"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27317816"
 ---
 # <a name="update-deviceconfigurationuserstatus"></a>deviceConfigurationUserStatus の更新
 
@@ -52,9 +53,9 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 
 次の表に、[deviceConfigurationUserStatus](../resources/intune-deviceconfig-deviceconfigurationuserstatus.md) の作成時に必要なプロパティを示します。
 
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
-|id|String|エンティティのキー。|
+|ID|String|エンティティのキー。|
 |userDisplayName|String|DevicePolicyStatus のユーザー名。|
 |devicesCount|Int32|そのユーザーのデバイスの数。|
 |status|[complianceStatus](../resources/intune-shared-compliancestatus.md)|ポリシー レポートのコンプライアンスの状態。 可能な値は、`unknown`、`notApplicable`、`compliant`、`remediated`、`nonCompliant`、`error`、`conflict`、`notAssigned` です。|

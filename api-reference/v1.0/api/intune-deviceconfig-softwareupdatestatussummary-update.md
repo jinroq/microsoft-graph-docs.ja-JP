@@ -1,12 +1,13 @@
 ---
 title: softwareUpdateStatusSummary の更新
 description: softwareUpdateStatusSummary オブジェクトのプロパティを更新します。
-ms.openlocfilehash: 2c3c9688b7f2b7e24188ee6bdaff99dcfbb6605f
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: a08efea3a4552e97b638336eb70165c16e58055a
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27022538"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27317753"
 ---
 # <a name="update-softwareupdatestatussummary"></a>softwareUpdateStatusSummary の更新
 
@@ -42,9 +43,9 @@ PATCH /deviceManagement/softwareUpdateStatusSummary
 
 次の表に、[softwareUpdateStatusSummary](../resources/intune-deviceconfig-softwareupdatestatussummary.md) の作成時に必要なプロパティを示します。
 
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
-|id|String|エンティティのキー。|
+|ID|String|エンティティのキー。|
 |displayName|String|ポリシーの名前。|
 |compliantDeviceCount|Int32|準拠デバイスの数。|
 |nonCompliantDeviceCount|Int32|準拠していないデバイスの数。|

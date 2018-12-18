@@ -1,12 +1,13 @@
 ---
 title: AndroidWorkProfileVpnConfiguration を削除します。
 description: AndroidWorkProfileVpnConfiguration を削除します。
-ms.openlocfilehash: b267261d088c03209b295b8f27085b9ea4411a21
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 197cf31631d9baaf64cf8e87477d4a3698960ff3
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27070618"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27317781"
 ---
 # <a name="delete-androidworkprofilevpnconfiguration"></a>AndroidWorkProfileVpnConfiguration を削除します。
 

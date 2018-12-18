@@ -1,12 +1,13 @@
 ---
 title: WindowsAutopilotDeviceIdentity を作成します。
 description: 新しい windowsAutopilotDeviceIdentity オブジェクトを作成します。
-ms.openlocfilehash: 9a68b5db287732add986bc703668c75b9245f962
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 1e4a9d43755fff787efa08a8c727e6ddc35fa904
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27071538"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27316017"
 ---
 # <a name="create-windowsautopilotdeviceidentity"></a>WindowsAutopilotDeviceIdentity を作成します。
 
@@ -45,9 +46,9 @@ POST /deviceManagement/windowsAutopilotDeviceIdentities/{windowsAutopilotDeviceI
 
 次の表は、windowsAutopilotDeviceIdentity を作成するときに必要なプロパティを示します。
 
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
-|id|String|オブジェクトの GUID|
+|ID|String|オブジェクトの GUID|
 |deploymentProfileAssignmentStatus|[windowsAutopilotProfileAssignmentStatus](../resources/intune-enrollment-windowsautopilotprofileassignmentstatus.md)|Windows の自動操縦装置のデバイスの割り当ての状態をプロファイルします。 可能な値は、`unknown`、`assignedInSync`、`assignedOutOfSync`、`assignedUnkownSyncState`、`notAssigned`、`pending`、`failed` です。|
 |deploymentProfileAssignmentDetailedStatus|[windowsAutopilotProfileAssignmentDetailedStatus](../resources/intune-enrollment-windowsautopilotprofileassignmentdetailedstatus.md)|プロファイルの割り当ては、Windows の自動操縦装置のデバイスの状態を詳しく説明します。 使用可能な値は、`none`、`hardwareRequirementsNotMet` です。|
 |deploymentProfileAssignedDateTime|DateTimeOffset|プロファイルは、Windows の自動操縦装置のデバイスの時刻を設定します。|

@@ -1,12 +1,13 @@
 ---
 title: deviceProtectionOverview リソースの種類
 description: 特定のデバイスのハードウェア情報です。
-ms.openlocfilehash: 81252fdf60c1de129a615b075968e0e6f1eca943
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: e705324bfc611117657ec629f8770e76c69be28d
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27071816"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27317053"
 ---
 # <a name="deviceprotectionoverview-resource-type"></a>deviceProtectionOverview リソースの種類
 
@@ -15,8 +16,8 @@ ms.locfileid: "27071816"
 > **注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
 
 特定のデバイスのハードウェア情報です。
-## <a name="properties"></a>プロパティ
-|プロパティ|型|説明|
+## <a name="properties"></a>Properties
+|プロパティ|種類|説明|
 |:---|:---|:---|
 |totalReportedDeviceCount|Int32|デバイスの合計数です。|
 |inactiveThreatAgentDeviceCount|Int32|使用頻度の低い脅威エージェントの数とデバイス|

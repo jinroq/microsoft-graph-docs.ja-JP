@@ -1,12 +1,13 @@
 ---
 title: managedDevicePartnerReportedHealthState 列挙型
 description: デバイス状態の API の使用可能な状態
-ms.openlocfilehash: 3d944eacc2fe94d00fd1b5dd657ba9e936ab78c7
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 41dcc927e85664acf28c7cc654fa01d00d1e4b52
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27072774"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27321029"
 ---
 # <a name="manageddevicepartnerreportedhealthstate-enum-type"></a>managedDevicePartnerReportedHealthState 列挙型
 

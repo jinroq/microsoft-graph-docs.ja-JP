@@ -1,12 +1,13 @@
 ---
 title: domainDnsMxRecord リソースの種類
 description: テナント内の特定のドメインの DNS ゾーン ファイルに追加された MX レコードを表します。DomainDnsRecord エンティティから継承されます。
-ms.openlocfilehash: 51a99efbb9929064809bbd00364c72ffe2ed8651
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lleonard-msft
+ms.openlocfilehash: 562afbd6998ad1678f4f055dacf89af9b1ed4446
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27066494"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27320651"
 ---
 # <a name="domaindnsmxrecord-resource-type"></a>domainDnsMxRecord リソースの種類
 
@@ -18,9 +19,9 @@ ms.locfileid: "27066494"
 このリソースへの直接クエリはサポートされていません。ドメイン サービス レコードのクエリを実行する方法の詳細については、[ドメイン](domain.md)のトピックを参照してください。
 
 ## <a name="properties"></a>プロパティ
-| プロパティ     | 型   |説明|
+| プロパティ     | 種類   |説明|
 |:---------------|:--------|:----------|
-|id|String| このエンティティに割り当てられた一意の識別子。null 許容ではありません。読み取り専用です。|
+|ID|String| このエンティティに割り当てられた一意の識別子。null 許容ではありません。読み取り専用です。|
 |isOptional|Boolean| False の場合、MX レコードは Microsoft オンライン サービスでドメインを正しく操作するために、DNS ホストで顧客によって構成されている必要があります。 |
 |label|String| DNS ホストで MX レコードの *alias/host/name* プロパティを構成する場合に使用される値です。 |
 |mailExchange|String| DNS ホストで MX レコードの *answer/destination/value* を構成する場合に使用される値です。|

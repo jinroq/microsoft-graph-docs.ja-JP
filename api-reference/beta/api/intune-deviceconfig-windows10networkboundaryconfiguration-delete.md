@@ -1,12 +1,13 @@
 ---
 title: Windows10NetworkBoundaryConfiguration を削除します。
 description: Windows10NetworkBoundaryConfiguration を削除します。
-ms.openlocfilehash: 5683eabc829ff1e85783113e89f746cdafc682d5
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 8083c2266beb2f2899f314520a4283beb99c1b4c
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27069370"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27318831"
 ---
 # <a name="delete-windows10networkboundaryconfiguration"></a>Windows10NetworkBoundaryConfiguration を削除します。
 

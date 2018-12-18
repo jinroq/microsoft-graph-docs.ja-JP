@@ -1,12 +1,13 @@
 ---
 title: DataSharingConsent を更新します。
 description: DataSharingConsent オブジェクトのプロパティを更新します。
-ms.openlocfilehash: 75cf844a279bf45dc5297b08a3926031b8cdc06a
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 1d7759def9c11165fca0b646f166ac792c14369e
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27072531"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27317634"
 ---
 # <a name="update-datasharingconsent"></a>DataSharingConsent を更新します。
 
@@ -44,12 +45,12 @@ PATCH /deviceManagement/dataSharingConsents/{dataSharingConsentId}
 
 [DataSharingConsent](../resources/intune-devices-datasharingconsent.md)を作成するときに必要なプロパティを次の表に示します。
 
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
-|id|String|データ共有同意 Id|
+|ID|String|データ共有同意 Id|
 |serviceDisplayName|String|サービス作業の流れの表示名|
 |termsUrl|String|同意の共有データの TermsUrl|
-|付与|ブール値|同意の共有データに付与されている状態|
+|付与|ブール型|同意の共有データに付与されている状態|
 |grantDateTime|DateTimeOffset|同意は、このアカウントに与えられました。|
 |grantedByUpn|String|このアカウントに許可を付与するユーザーの Upn|
 |grantedByUserId|String|このアカウントに許可を付与するユーザーのユーザー Id|

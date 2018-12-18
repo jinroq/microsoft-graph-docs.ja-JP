@@ -1,12 +1,13 @@
 ---
 title: iosVppAppAssignmentSettings リソースの種類
 description: グループへの iOS VPP モバイル アプリの割り当てに使用されるプロパティが、含まれています。
-ms.openlocfilehash: c7ae6221aa978cc1412de25521dd8b08ff72c0c3
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 9e1233c9d5a33876da64ab3c75419c322ee83931
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27072055"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27321330"
 ---
 # <a name="iosvppappassignmentsettings-resource-type"></a>iosVppAppAssignmentSettings リソースの種類
 
@@ -19,7 +20,7 @@ ms.locfileid: "27072055"
 [mobileAppAssignmentSettings](../resources/intune-apps-mobileappassignmentsettings.md) からの継承
 
 ## <a name="properties"></a>プロパティ
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
 |useDeviceLicensing|ブール型 (Boolean)|デバイスのライセンスを使用するかどうか。|
 |vpnConfigurationId|文字列型 (String)|このアプリに適用するための VPN 構成 ID。|

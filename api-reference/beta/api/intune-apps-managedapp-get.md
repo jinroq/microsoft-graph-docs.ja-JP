@@ -1,12 +1,13 @@
 ---
 title: Get managedApp
 description: managedApp オブジェクトのプロパティとリレーションシップを読み取ります。
-ms.openlocfilehash: 6686de4ea95671ab3e64e389b0303abc2eb7e48d
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 6f6123c49fb94153d8503c29396825adbef177cc
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27072873"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27316045"
 ---
 # <a name="get-managedapp"></a>Get managedApp
 

@@ -1,12 +1,13 @@
 ---
 title: educationCsvDataProvider リソースの種類
 description: 'CSV ファイルは、入力ソースとは、学校のデータの同期プロファイルを設定するために使用します。  '
-ms.openlocfilehash: a3079b4f18c74c95fb0f8646116f2c7901d17b3f
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: mmast-msft
+ms.openlocfilehash: 1a816d4e176147d549381465154e35cf0a821b98
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27066864"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27317900"
 ---
 # <a name="educationcsvdataprovider-resource-type"></a>educationCsvDataProvider リソースの種類
 
@@ -16,9 +17,9 @@ CSV ファイルは、入力ソースとは、学校のデータの同期プロ�
 
 [EducationSynchronizationDataProvider](educationsynchronizationdataprovider.md)から派生します。
 
-## <a name="properties"></a>プロパティ
+## <a name="properties"></a>Properties
 
-| プロパティ | 型 | 説明 |
+| プロパティ | 種類 | 説明 |
 |:-|:-|:-|
 | **カスタマイズ** | [educationSynchronizationCustomizations](educationsynchronizationcustomizations.md) | 同期プロファイルを適用するオプションのカスタマイズです。|
 

@@ -1,12 +1,13 @@
 ---
 title: mediaContentRatingGermany リソースの種類
 description: まだ文書化されていません
-ms.openlocfilehash: 821a648f839e531c2efaa3da4b4b1aead65c9673
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: b7e02226ccea817a609d6e7f3059bff8e6bdb9ce
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27069933"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27318362"
 ---
 # <a name="mediacontentratinggermany-resource-type"></a>mediaContentRatingGermany リソースの種類
 
@@ -16,7 +17,7 @@ ms.locfileid: "27069933"
 
 まだ文書化されていません
 ## <a name="properties"></a>プロパティ
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
 |movieRating|[ratingGermanyMoviesType](../resources/intune-deviceconfig-ratinggermanymoviestype.md)|映画がドイツの選択を評価します。 可能な値は、`allAllowed`、`allBlocked`、`general`、`agesAbove6`、`agesAbove12`、`agesAbove16`、`adults` です。|
 |tvRating|[ratingGermanyTelevisionType](../resources/intune-deviceconfig-ratinggermanytelevisiontype.md)|テレビの視聴制限がドイツを選択します。 可能な値は、`allAllowed`、`allBlocked`、`general`、`agesAbove6`、`agesAbove12`、`agesAbove16`、`adults` です。|

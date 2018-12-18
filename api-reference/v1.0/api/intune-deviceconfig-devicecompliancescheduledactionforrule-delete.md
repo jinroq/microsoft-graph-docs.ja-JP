@@ -1,12 +1,13 @@
 ---
 title: deviceComplianceScheduledActionForRule の削除
 description: deviceComplianceScheduledActionForRule を削除します。
-ms.openlocfilehash: 5fa3b77a75d602c7fc74a1a88d07a76aa5db4130
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 6cca8886e57e867deb75af7299a510e6e833f0c0
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27022489"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27316353"
 ---
 # <a name="delete-devicecompliancescheduledactionforrule"></a>deviceComplianceScheduledActionForRule の削除
 

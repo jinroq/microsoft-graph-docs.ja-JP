@@ -1,12 +1,13 @@
 ---
 title: getManagementConditionStatementsForPlatform 関数
 description: まだ文書化されていません
-ms.openlocfilehash: d2855d7707cb8f1083f736c2a50d92e40e5d0278
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 6589cb380f5ea639b27cb4d3e2258b0bc9f1516f
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27072981"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27321939"
 ---
 # <a name="getmanagementconditionstatementsforplatform-function"></a>getManagementConditionStatementsForPlatform 関数
 
@@ -44,7 +45,7 @@ GET /deviceManagement/managementConditions/{managementConditionId}/managementCon
 要求 URL で、次のクエリ パラメーターに値を指定します。
 次の表に、この関数で使用できるパラメーターを示します。
 
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
 |platform|[devicePlatformType](../resources/intune-shared-deviceplatformtype.md)|まだ文書化されていません|
 

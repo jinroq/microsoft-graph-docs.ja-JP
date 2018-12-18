@@ -1,12 +1,13 @@
 ---
 title: softwareUpdateStatusSummary リソースの種類
 description: まだ文書化されていません
-ms.openlocfilehash: a090c9a88a72e03206c6eeb1f644ce31c88ef808
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 8813614be9f0fbc87839924a802fcb486a32ba8f
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27020440"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27319433"
 ---
 # <a name="softwareupdatestatussummary-resource-type"></a>softwareUpdateStatusSummary リソースの種類
 
@@ -20,9 +21,9 @@ ms.locfileid: "27020440"
 |[Update softwareUpdateStatusSummary](../api/intune-deviceconfig-softwareupdatestatussummary-update.md)|[softwareUpdateStatusSummary](../resources/intune-deviceconfig-softwareupdatestatussummary.md)|[softwareUpdateStatusSummary](../resources/intune-deviceconfig-softwareupdatestatussummary.md) オブジェクトのプロパティを更新します。|
 
 ## <a name="properties"></a>プロパティ
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
-|id|String|エンティティのキー。|
+|ID|String|エンティティのキー。|
 |displayName|String|ポリシーの名前。|
 |compliantDeviceCount|Int32|準拠デバイスの数。|
 |nonCompliantDeviceCount|Int32|準拠していないデバイスの数。|

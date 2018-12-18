@@ -1,12 +1,13 @@
 ---
 title: リスト recentPlans
 description: ユーザーが最近表示した plannerPlans の一覧を取得します。 PlannerUser リソースを更新することによって、最近表示した計画を更新できます。
-ms.openlocfilehash: 58c4d786dfdf596df8786db93c32e88b0cf93dfd
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: TarkanSevilmis
+ms.openlocfilehash: 68ed0cf626207e0cf02b6d32187598c3cf68d9d1
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27073168"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27322508"
 ---
 # <a name="list-recentplans"></a>リスト recentPlans
 

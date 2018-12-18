@@ -1,12 +1,13 @@
 ---
 title: WindowsPhone81AppX を更新します。
 description: WindowsPhone81AppX オブジェクトのプロパティを更新します。
-ms.openlocfilehash: 3f3f17be9ba4df2b214b6167f7d54972c2f3994d
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 7ebd110bd76797682ebd9a53b72e661e9e71d583
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27072767"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27321617"
 ---
 # <a name="update-windowsphone81appx"></a>WindowsPhone81AppX を更新します。
 
@@ -46,9 +47,9 @@ PATCH /deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/{mobileAppIns
 
 [WindowsPhone81AppX](../resources/intune-apps-windowsphone81appx.md)を作成するときに必要なプロパティを次の表に示します。
 
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
-|id|String|エンティティのキー。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|
+|ID|String|エンティティのキー。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|
 |displayName|String|管理者が提供またはインポートしたアプリのタイトル。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|
 |説明|String|アプリの説明。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|
 |publisher|String|アプリの発行元。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|

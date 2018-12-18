@@ -1,12 +1,13 @@
 ---
 title: roleDefinitions のリスト
 description: roleDefinition オブジェクトのプロパティとリレーションシップをリストします。
-ms.openlocfilehash: 55135d3eb48490303b66bd1839db4e05b4b3a2fe
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 2aa23644d075c03aeb5b19551672214f15e0f4bd
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27023295"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27319650"
 ---
 # <a name="list-roledefinitions"></a>roleDefinitions のリスト
 

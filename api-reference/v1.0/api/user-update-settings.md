@@ -1,12 +1,13 @@
 ---
 title: 設定の更新
 description: '設定オブジェクトのプロパティを更新します。 '
-ms.openlocfilehash: b763f2ccafeac84b12ff2e23cb89036afab5dbc7
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: dkershaw10
+ms.openlocfilehash: 571acf47852e703ee3bb20bd0c37cc5736cc4f1f
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27021917"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27320252"
 ---
 # <a name="update-settings"></a>設定の更新
 
@@ -45,9 +46,9 @@ PATCH https://graph.microsoft.com/v1.0/users/{id | userPrincipalName}/settings/
 
 要求本文で、更新する関連フィールドの値を指定します。要求本文に含まれない既存のプロパティは、以前の値のままになるか、他のプロパティ値の変化に基づいて再計算されます。最適なパフォーマンスを得るためには、変更されていない既存の値を含めないでください。
 
-| プロパティ     | 型   |説明|
+| プロパティ     | 種類   |説明|
 |:---------------|:--------|:----------|
-|contributionToContentDiscoveryDisabled|ブール値|True を設定するには、 [Trending](/graph/api/resources/insights-trending?view=graph-rest-beta) API およびユーザーの Office についてのドキュメントへのアクセスを無効にする代理人へのアクセスは無効にします。 Office 365 に表示されるコンテンツの関連性に影響を与えるも true に設定 - 候補のサイトでは、SharePoint のホームとビジネスの OneDrive の検索ビューの関連性の低い結果を表示するたとえば、します。 この設定は、 [Office の説明](https://support.office.com/en-us/article/are-my-documents-safe-in-office-delve-f5f409a2-37ed-4452-8f61-681e5e1836f3?ui=en-US&rs=en-US&ad=US#bkmk_optout)でコントロールの状態を反映しています。|
+|contributionToContentDiscoveryDisabled|ブール型|True を設定するには、 [Trending](/graph/api/resources/insights-trending?view=graph-rest-beta) API およびユーザーの Office についてのドキュメントへのアクセスを無効にする代理人へのアクセスは無効にします。 Office 365 に表示されるコンテンツの関連性に影響を与えるも true に設定 - 候補のサイトでは、SharePoint のホームとビジネスの OneDrive の検索ビューの関連性の低い結果を表示するたとえば、します。 この設定は、 [Office の説明](https://support.office.com/en-us/article/are-my-documents-safe-in-office-delve-f5f409a2-37ed-4452-8f61-681e5e1836f3?ui=en-US&rs=en-US&ad=US#bkmk_optout)でコントロールの状態を反映しています。|
 
 ## <a name="example"></a>例 
 

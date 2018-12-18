@@ -1,12 +1,13 @@
 ---
 title: リストのディレクトリの設定
 description: ディレクトリ オブジェクトの設定の一覧を取得します。
-ms.openlocfilehash: 844d2102b9bfd98e2ba0a585a7eb04c8e46b6a52
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lleonard-msft
+ms.openlocfilehash: 2d3c7d24009fb0068376629aa50197678774f683
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27067621"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27319041"
 ---
 # <a name="list-directory-settings"></a>リストのディレクトリの設定
 

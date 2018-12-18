@@ -1,12 +1,13 @@
 ---
 title: onPremisesConditionalAccessSettings の更新
 description: onPremisesConditionalAccessSettings オブジェクトのプロパティを更新します。
-ms.openlocfilehash: 31679b6c698903083675e926fa77e0c56be49a38
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 614625dd6783f279dfea9a55d81200184c005844
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27074536"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27317109"
 ---
 # <a name="update-onpremisesconditionalaccesssettings"></a>onPremisesConditionalAccessSettings の更新
 
@@ -45,9 +46,9 @@ PATCH /deviceManagement/exchangeOnPremisesPolicy/conditionalAccessSettings
 
 次の表に、[onPremisesConditionalAccessSettings](../resources/intune-onboarding-onpremisesconditionalaccesssettings.md) の作成時に必要なプロパティを示します。
 
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
-|id|String|まだ文書化されていません|
+|ID|String|まだ文書化されていません|
 |enabled|Boolean|対象組織で、オンプレミスの条件付きアクセスが有効かどうかを示します。|
 |includedGroups|Guid コレクション|オンプレミスの条件付きアクセスで対象となるユーザー グループ。 これらのグループ内のユーザーすべては、管理対象のモバイル デバイスを持っており、メール アクセスに準拠している必要があります。|
 |excludedGroups|Guid コレクション|オンプレミスの条件付きアクセスで除外されるユーザー グループ。 これらのグループ内のすべてのユーザーは、条件付きアクセス ポリシーから除外されます。|

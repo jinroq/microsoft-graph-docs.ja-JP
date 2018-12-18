@@ -1,12 +1,13 @@
 ---
 title: windows10SecureAssessmentConfigurations のリスト
 description: windows10SecureAssessmentConfiguration オブジェクトのプロパティとリレーションシップをリストします。
-ms.openlocfilehash: d9bd3e3491fc5f46c0b8a98c909cd0d6343e801b
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 520434de48da37d30d0945c429dfb7767096420c
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27021584"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27320854"
 ---
 # <a name="list-windows10secureassessmentconfigurations"></a>windows10SecureAssessmentConfigurations のリスト
 

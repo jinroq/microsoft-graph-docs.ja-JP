@@ -1,12 +1,13 @@
 ---
 title: webBrowserCookieSettings 列挙型
 description: Web ブラウザーの Cookie の設定です。
-ms.openlocfilehash: cfa691d0a63679a824fe0e693ac7bb91c2276319
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 3904bc02d1bccdbe6c2da2c30bbf3872f3c6cb49
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27068628"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27317060"
 ---
 # <a name="webbrowsercookiesettings-enum-type"></a>webBrowserCookieSettings 列挙型
 

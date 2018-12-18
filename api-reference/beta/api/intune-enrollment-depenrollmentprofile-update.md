@@ -1,12 +1,13 @@
 ---
 title: DepEnrollmentProfile を更新します。
 description: DepEnrollmentProfile オブジェクトのプロパティを更新します。
-ms.openlocfilehash: 1026abe11bec1a766b7fda2907612d77af077bd9
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 06d6fc12379a7f26ed8baf0e24bf23ef696c067a
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27071890"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27322512"
 ---
 # <a name="update-depenrollmentprofile"></a>DepEnrollmentProfile を更新します。
 
@@ -44,38 +45,38 @@ PATCH /deviceManagement/depOnboardingSettings/{depOnboardingSettingId}/enrollmen
 
 [DepEnrollmentProfile](../resources/intune-enrollment-depenrollmentprofile.md)を作成するときに必要なプロパティを次の表に示します。
 
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
-|id|String|[EnrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)から継承されるオブジェクトの GUID|
+|ID|String|[EnrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)から継承されるオブジェクトの GUID|
 |displayName|String|[EnrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)から継承されるプロファイルの名前|
 |説明|String|[EnrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)から継承されるプロファイルの説明|
-|requiresUserAuthentication|ブール値|プロファイルに[enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)から継承されるのユーザー認証が必要なかどうかを示します|
+|requiresUserAuthentication|ブール型|プロファイルに[enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)から継承されるのユーザー認証が必要なかどうかを示します|
 |configurationEndpointUrl|String|[EnrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)から登録の継承を使用するエンドポイントの url を構成|
-|enableAuthenticationViaCompanyPortal|ブール値|アップルらくらく企業ポータルではなくを使用して認証することを示します。 [EnrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)から継承されました。|
-|isDefault|ブール値|これは、既定のプロファイルであるかどうかを示します|
-|supervisedModeEnabled|ブール値|コールを管理モードを有効にする、false それ以外の場合は True です。 参照してくださいhttps://docs.microsoft.com/en-us/intune/deploy-use/enroll-devices-in-microsoft-intuneの追加情報です。|
+|enableAuthenticationViaCompanyPortal|ブール型|アップルらくらく企業ポータルではなくを使用して認証することを示します。 [EnrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)から継承されました。|
+|isDefault|ブール型|これは、既定のプロファイルであるかどうかを示します|
+|supervisedModeEnabled|ブール型|コールを管理モードを有効にする、false それ以外の場合は True です。 参照してくださいhttps://docs.microsoft.com/en-us/intune/deploy-use/enroll-devices-in-microsoft-intuneの追加情報です。|
 |supportDepartment|String|サポート部門の情報|
-|passCodeDisabled|ブール値|パスコードの設定] ウィンドウが無効になっているかどうかを示します|
-|isMandatory|ブール値|プロファイルが必須かどうかを|
-|locationDisabled|ブール値|場所サービス セットアップ] ウィンドウが無効になっているかどうかを示します|
+|passCodeDisabled|ブール型|パスコードの設定] ウィンドウが無効になっているかどうかを示します|
+|isMandatory|ブール型|プロファイルが必須かどうかを|
+|locationDisabled|ブール型|場所サービス セットアップ] ウィンドウが無効になっているかどうかを示します|
 |supportPhoneNumber|String|サポート電話番号|
 |iTunesPairingMode|[iTunesPairingMode](../resources/intune-enrollment-itunespairingmode.md)|ITunes のペアリング モードを示します。 可能な値は、`disallow`、`allow`、`requiresCertificate` です。|
-|profileRemovalDisabled|ブール値|プロファイルの削除オプションが無効になっているかどうかを示します|
+|profileRemovalDisabled|ブール型|プロファイルの削除オプションが無効になっているかどうかを示します|
 |managementCertificates|[managementCertificateWithThumbprint](../resources/intune-enrollment-managementcertificatewiththumbprint.md)コレクション|Apple Configurator の証明書を管理|
-|restoreBlocked|ブール値|復元の設定] ウィンドウがブロックされていることを示します。|
-|restoreFromAndroidDisabled|ブール値|Android からの復元が無効になっているかどうかを示します|
-|appleIdDisabled|ブール値|Apple id の設定] ウィンドウが無効になっているかどうかを示します|
-|termsAndConditionsDisabled|ブール値|'条項および条件' の設定ウィンドウが無効になっているかどうかを示します|
-|touchIdDisabled|ブール値|タッチ id の設定] ウィンドウが無効になっているかどうかを示します|
-|applePayDisabled|ブール値|アップル支払設定] ウィンドウが無効になっているかどうかを示します|
-|zoomDisabled|ブール値|ズームの設定] ウィンドウが無効になっているかどうかを示します|
-|siriDisabled|ブール値|Siri の設定] ウィンドウが無効になっているかどうかを示します|
-|diagnosticsDisabled|ブール値|診断設定] ウィンドウが無効になっているかどうかを示します|
-|macOSRegistrationDisabled|ブール値|Mac OS の登録が無効になっているかどうかを示します|
-|macOSFileVaultDisabled|ブール値|Mac OS ファイルのボルトが無効になっているかどうかを示します|
-|awaitDeviceConfiguredConfirmation|ブール値|デバイスが構成されている確認メッセージを待機する必要がかどうかを示します|
+|restoreBlocked|ブール型|復元の設定] ウィンドウがブロックされていることを示します。|
+|restoreFromAndroidDisabled|ブール型|Android からの復元が無効になっているかどうかを示します|
+|appleIdDisabled|ブール型|Apple id の設定] ウィンドウが無効になっているかどうかを示します|
+|termsAndConditionsDisabled|ブール型|'条項および条件' の設定ウィンドウが無効になっているかどうかを示します|
+|touchIdDisabled|ブール型|タッチ id の設定] ウィンドウが無効になっているかどうかを示します|
+|applePayDisabled|ブール型|アップル支払設定] ウィンドウが無効になっているかどうかを示します|
+|zoomDisabled|ブール型|ズームの設定] ウィンドウが無効になっているかどうかを示します|
+|siriDisabled|ブール型|Siri の設定] ウィンドウが無効になっているかどうかを示します|
+|diagnosticsDisabled|ブール型|診断設定] ウィンドウが無効になっているかどうかを示します|
+|macOSRegistrationDisabled|ブール型|Mac OS の登録が無効になっているかどうかを示します|
+|macOSFileVaultDisabled|ブール型|Mac OS ファイルのボルトが無効になっているかどうかを示します|
+|awaitDeviceConfiguredConfirmation|ブール型|デバイスが構成されている確認メッセージを待機する必要がかどうかを示します|
 |sharedIPadMaximumUserCount|Int32|共有の iPad を使用できるユーザーの最大数を指定します。 IPad を共有モードでのみ適用できます。|
-|enableSharedIPad|ブール値|これは、デバイスが、マルチ ユーザー シナリオを有効にするモードに登録するかどうかを示します。 共有台もの Ipad でのみ適用できます。|
+|enableSharedIPad|ブール型|これは、デバイスが、マルチ ユーザー シナリオを有効にするモードに登録するかどうかを示します。 共有台もの Ipad でのみ適用できます。|
 
 
 

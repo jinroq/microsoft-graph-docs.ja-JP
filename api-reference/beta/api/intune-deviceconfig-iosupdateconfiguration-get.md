@@ -1,12 +1,13 @@
 ---
 title: Get iosUpdateConfiguration
 description: iosUpdateConfiguration オブジェクトのプロパティとリレーションシップを読み取ります。
-ms.openlocfilehash: 5a3e83db1c402cc0707978b598e0d1a9454713f2
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 3bb2d9391338a7b7a4e70f97f9600af794530cf7
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27069465"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27315870"
 ---
 # <a name="get-iosupdateconfiguration"></a>Get iosUpdateConfiguration
 

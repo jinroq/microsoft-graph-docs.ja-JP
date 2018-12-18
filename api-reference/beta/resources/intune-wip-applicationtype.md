@@ -1,12 +1,13 @@
 ---
 title: applicationType 列挙型
 description: 可能なアプリケーションの種類
-ms.openlocfilehash: 0e8a6dea7a27adae543772abc79aa8466ce72f6f
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 33b895d251f366af0051081f17662d8e7f34aecf
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27068173"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27316633"
 ---
 # <a name="applicationtype-enum-type"></a>applicationType 列挙型
 

@@ -1,12 +1,13 @@
 ---
 title: NetworkIPv4ConfigurationManagementCondition を取得します。
 description: NetworkIPv4ConfigurationManagementCondition オブジェクトのプロパティと関係を参照してください。
-ms.openlocfilehash: ab6b216b031b457206440f3b01ffffdf7e325248
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: a13e202d1347705edd4d26e01a65668dba971f73
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27072089"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27319496"
 ---
 # <a name="get-networkipv4configurationmanagementcondition"></a>NetworkIPv4ConfigurationManagementCondition を取得します。
 

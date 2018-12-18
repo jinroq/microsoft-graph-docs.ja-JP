@@ -1,12 +1,13 @@
 ---
 title: resourceOperation の取得
 description: resourceOperation オブジェクトのプロパティとリレーションシップを読み取ります。
-ms.openlocfilehash: 7160244e9aeea54702a1e71f1a8e4f86448b8ee6
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 15aaa29f5a3563129722bf5c3ad7f14efa2fd655
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27074539"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27317291"
 ---
 # <a name="get-resourceoperation"></a>resourceOperation の取得
 

@@ -1,12 +1,13 @@
 ---
 title: outlookUser リソースの種類
 description: ユーザーが利用できる Outlook サービスを表します。
-ms.openlocfilehash: f908360d26bfe6994e5beec26cc2761dd1bc92a3
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: angelgolfer-ms
+ms.openlocfilehash: 51926b84b2e8ed19225369eda774408ae6031b58
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27070364"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27319972"
 ---
 # <a name="outlookuser-resource-type"></a>outlookUser リソースの種類
 
@@ -38,9 +39,9 @@ ms.locfileid: "27070364"
 | リレーションシップ | 型   |説明|
 |:---------------|:--------|:----------|
 |masterCategories|[outlookCategory](../resources/outlookcategory.md) コレクション| ユーザーに対して定義されているカテゴリのリスト。 | 
-|taskFolders|[outlookTaskFolder](outlooktaskfolder.md)コレクション| ユーザーの Outlook の仕事フォルダー。 読み取り専用。 Null 許容型。|
-|taskGroups|[outlookTaskGroup](outlooktaskgroup.md)コレクション| ユーザーの Outlook のタスク グループ。 読み取り専用。 Null 許容型。|
-|tasks|[outlookTask](outlooktask.md)コレクション| ユーザーの Outlook の仕事です。 読み取り専用。 Null 許容型。|
+|taskFolders|[outlookTaskFolder](outlooktaskfolder.md)コレクション| ユーザーの Outlook の仕事フォルダー。 読み取り専用です。 Null 許容型。|
+|taskGroups|[outlookTaskGroup](outlooktaskgroup.md)コレクション| ユーザーの Outlook のタスク グループ。 読み取り専用です。 Null 許容型。|
+|tasks|[outlookTask](outlooktask.md)コレクション| ユーザーの Outlook の仕事です。 読み取り専用です。 Null 許容型。|
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

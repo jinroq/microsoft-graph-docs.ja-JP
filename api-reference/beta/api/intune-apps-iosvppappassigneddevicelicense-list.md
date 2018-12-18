@@ -1,12 +1,13 @@
 ---
 title: リスト iosVppAppAssignedDeviceLicenses
 description: IosVppAppAssignedDeviceLicense オブジェクトのプロパティと関係を一覧表示します。
-ms.openlocfilehash: 95c679989c6ba693b0e86ebd4fd51c1bd47f2b50
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: a47028c3f19e7b152e38ff9b2488a81da0d98220
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27074312"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27316269"
 ---
 # <a name="list-iosvppappassigneddevicelicenses"></a>リスト iosVppAppAssignedDeviceLicenses
 

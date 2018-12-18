@@ -1,12 +1,13 @@
 ---
 title: EnterpriseCodeSigningCertificate を取得します。
 description: EnterpriseCodeSigningCertificate オブジェクトのプロパティと関係を参照してください。
-ms.openlocfilehash: f6b2967ec4149ff3a5d93251c1b96db616a39da2
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 2e6cd58c6cae8921d8fa117388ac774f006a8ae8
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27074126"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27321869"
 ---
 # <a name="get-enterprisecodesigningcertificate"></a>EnterpriseCodeSigningCertificate を取得します。
 

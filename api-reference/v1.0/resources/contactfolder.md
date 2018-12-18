@@ -1,12 +1,13 @@
 ---
 title: contactFolder リソース型
 description: 連絡先が格納されたフォルダーです。
-ms.openlocfilehash: c9b3ab0a89c4786e8a5467fe8ce6309424d98398
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: angelgolfer-ms
+ms.openlocfilehash: 4630547bdee34d6e012c3747dba248eef9f908b9
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27022844"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27320273"
 ---
 # <a name="contactfolder-resource-type"></a>contactFolder リソース型
 
@@ -33,7 +34,7 @@ ms.locfileid: "27022844"
 |[複数値の拡張プロパティを持つ contactFolder を取得する](../api/multivaluelegacyextendedproperty-get.md)  | [contactFolder](contactfolder.md) | `$expand` を使用して、複数値の拡張プロパティを含む contactFolder を取得します。 |
 
 ## <a name="properties"></a>プロパティ
-| プロパティ     | 型   |説明|
+| プロパティ     | 種類   |説明|
 |:---------------|:--------|:----------|
 |displayName|String|フォルダーの表示名。|
 |id|String|連絡先フォルダーの一意識別子。読み取り専用。|

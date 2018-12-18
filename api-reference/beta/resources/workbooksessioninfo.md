@@ -1,12 +1,13 @@
 ---
 title: workbookSessionInfo リソース型
 description: ブック セッションについての情報を提供します。
-ms.openlocfilehash: c04afe17c10edd8b136465d6d7ae3dbedb6307ed
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lumine2008
+ms.openlocfilehash: 5a86fd4dfd653f16445eeccad8478db56db0ac5f
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27069828"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27316843"
 ---
 # <a name="workbooksessioninfo-resource-type"></a>workbookSessionInfo リソース型
 
@@ -32,8 +33,8 @@ ms.locfileid: "27069828"
 
 ## <a name="properties"></a>プロパティ
 
-| プロパティ | 型  | 説明                               |
+| プロパティ | 種類  | 説明                               |
 |:---------|:------|:------------------------------------------|
-| ID  | 文字列 | ブック セッションの ID。 |
-| persistChanges | 文字列 |  `true`: 永続セッションの場合。 `false`: 非永続セッション (表示モード) の場合。 |
+| ID  | string | ブック セッションの ID。 |
+| persistChanges | string |  `true`: 永続セッションの場合。 `false`: 非永続セッション (表示モード) の場合。 |
 

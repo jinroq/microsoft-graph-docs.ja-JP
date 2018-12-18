@@ -1,12 +1,13 @@
 ---
 title: eBookInstallSummary の更新
 description: eBookInstallSummary オブジェクトのプロパティを更新します。
-ms.openlocfilehash: 261dd70883992b2aa1b2d480407969c1c887c421
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 200a84609523ed81ea7e5b9b3c50bd95913ddd80
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27020495"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27318026"
 ---
 # <a name="update-ebookinstallsummary"></a>eBookInstallSummary の更新
 
@@ -42,9 +43,9 @@ PATCH /deviceAppManagement/managedEBooks/{managedEBookId}/installSummary
 
 次の表に、[eBookInstallSummary](../resources/intune-books-ebookinstallsummary.md) の作成時に必要なプロパティを示します。
 
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
-|id|String|エンティティのキー。|
+|ID|String|エンティティのキー。|
 |installedDeviceCount|Int32|このブックが正常にインストールされたデバイスの数。|
 |failedDeviceCount|Int32|このブックのインストールが失敗したデバイスの数。|
 |notInstalledDeviceCount|Int32|このブックがインストールされていないデバイスの数。|

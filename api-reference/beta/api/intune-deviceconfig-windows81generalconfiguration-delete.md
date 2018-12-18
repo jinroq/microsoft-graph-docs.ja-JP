@@ -1,12 +1,13 @@
 ---
 title: Delete windows81GeneralConfiguration
 description: windows81GeneralConfiguration を削除します。
-ms.openlocfilehash: 8f413165b215a9c0130ff4b0966385c5d14b5da5
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 338c4c34c576f01727fc4123f465cc831ec83e4f
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27068433"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27317515"
 ---
 # <a name="delete-windows81generalconfiguration"></a>Delete windows81GeneralConfiguration
 

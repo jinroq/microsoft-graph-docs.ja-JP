@@ -1,12 +1,13 @@
 ---
 title: educationSubmissionRecipient リソースの種類
 description: 提出書類の割り当て先のユーザーの別のセットを表す抽象クラスです。 使用可能な値には、個人またはグループが含まれます。 **Submission.recipient**プロパティ内で使用されます。
-ms.openlocfilehash: fdde6785260791cbcadec63b9541d07241358833
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: dipakboyed
+ms.openlocfilehash: fc0837b15b1b45d61ab9a69a9074f1bbf104cee5
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27068088"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27318817"
 ---
 # <a name="educationsubmissionrecipient-resource-type"></a>educationSubmissionRecipient リソースの種類
 
@@ -15,7 +16,7 @@ ms.locfileid: "27068088"
 提出書類の割り当て先のユーザーの別のセットを表す抽象クラスです。 使用可能な値には、個人またはグループが含まれます。 **Submission.recipient**プロパティ内で使用されます。
 
 
-## <a name="properties"></a>プロパティ
+## <a name="properties"></a>Properties
 なし。
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

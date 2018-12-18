@@ -1,12 +1,13 @@
 ---
 title: ノートブックを作成する
 description: 新しい OneNote ノートブックを作成します。
-ms.openlocfilehash: 38e92f402b5372292cdd30ed60cae81c1e0d46cc
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: Jewan-microsoft
+ms.openlocfilehash: 00703bd93a45d1109249fb0081f642866a0f16c4
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27023239"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27320084"
 ---
 # <a name="create-notebook"></a>ノートブックを作成する
 
@@ -29,7 +30,7 @@ POST /groups/{id}/onenote/notebooks
 POST /sites/{id}/onenote/notebooks
 ```
 ## <a name="request-headers"></a>要求ヘッダー
-| 名前       | 型 | 説明|
+| 名前       | 種類 | 説明|
 |:---------------|:--------|:----------|
 | Authorization  | string  | ベアラー {トークン}。必須。 |
 | Content-Type | string | `application/json` |

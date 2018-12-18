@@ -1,12 +1,13 @@
 ---
 title: RangeBorder を取得する
 description: rangeborder オブジェクトのプロパティと関係を取得します。
-ms.openlocfilehash: fe18753f6e75c9c0189899db32f0f9d32cbdc6a8
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lumine2008
+ms.openlocfilehash: f28d703a0f99432cf8e30e9c219a6fd9f6c80692
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27020936"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27317347"
 ---
 # <a name="get-rangeborder"></a>RangeBorder を取得する
 

@@ -1,12 +1,13 @@
 ---
 title: settingStateDeviceSummary リソースの種類
 description: 設定状態の要約に対する、デバイス コンプライアンス ポリシーおよび構成
-ms.openlocfilehash: 467970b31709b8ab7ca48e786326b89c8ee73733
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 0394de24fb0dee6ba0df1434ea199b131cf05df8
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27021717"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27322499"
 ---
 # <a name="settingstatedevicesummary-resource-type"></a>settingStateDeviceSummary リソースの種類
 
@@ -23,9 +24,9 @@ ms.locfileid: "27021717"
 |[settingStateDeviceSummary の更新](../api/intune-deviceconfig-settingstatedevicesummary-update.md)|[settingStateDeviceSummary](../resources/intune-deviceconfig-settingstatedevicesummary.md)|[settingStateDeviceSummary](../resources/intune-deviceconfig-settingstatedevicesummary.md) オブジェクトのプロパティを更新します。|
 
 ## <a name="properties"></a>プロパティ
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
-|id|String|エンティティのキー。|
+|ID|String|エンティティのキー。|
 |settingName|String|設定の名前|
 |instancePath|String|設定の InstancePath の名前|
 |unknownDeviceCount|Int32|設定の不明なデバイスの数|

@@ -1,12 +1,13 @@
 ---
 title: deviceConfigurationUserStatuses のリスト
 description: deviceConfigurationUserStatus オブジェクトのプロパティとリレーションシップをリストします。
-ms.openlocfilehash: de70509961829b20b5a693213650d87ae8c89e58
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: e34fde4dda174927d7235d5ded4de918f142635d
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27022747"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27316703"
 ---
 # <a name="list-deviceconfigurationuserstatuses"></a>deviceConfigurationUserStatuses のリスト
 

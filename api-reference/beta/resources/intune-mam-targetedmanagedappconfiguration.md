@@ -1,12 +1,13 @@
 ---
 title: targetedManagedAppConfiguration リソース タイプ
 description: カスタム設定のセットをそのまま、ターゲット セキュリティ グループのすべてのユーザーに提供するために使用される構成
-ms.openlocfilehash: 9ddd84e07b76e6e9a8915cde14f4194228fdfb3e
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 6e1c1c3ccf053752cfd6a664f379a2fd3131bc35
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27070556"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27316612"
 ---
 # <a name="targetedmanagedappconfiguration-resource-type"></a>targetedManagedAppConfiguration リソース タイプ
 
@@ -30,7 +31,7 @@ ms.locfileid: "27070556"
 |[targetApps action](../api/intune-mam-targetedmanagedappconfiguration-targetapps.md)|なし|まだ文書化されていません|
 
 ## <a name="properties"></a>プロパティ
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
 |displayName|String|ポリシーの表示名。 [managedAppPolicy](../resources/intune-mam-managedapppolicy.md) から継承します|
 |説明|String|ポリシーの説明。 [managedAppPolicy](../resources/intune-mam-managedapppolicy.md) から継承します|

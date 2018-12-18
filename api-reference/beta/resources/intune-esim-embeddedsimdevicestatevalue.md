@@ -1,12 +1,13 @@
 ---
 title: embeddedSIMDeviceStateValue 列挙型
 description: SIM の埋め込みのライセンス認証コードのさまざまな状態をについて説明します。
-ms.openlocfilehash: c0b1cffedcae18dab4c1d23a2691cafa8709c0ff
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 51e550669d9cd29d7d5bb246fe2cba017b02187c
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27067589"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27320595"
 ---
 # <a name="embeddedsimdevicestatevalue-enum-type"></a>embeddedSIMDeviceStateValue 列挙型
 

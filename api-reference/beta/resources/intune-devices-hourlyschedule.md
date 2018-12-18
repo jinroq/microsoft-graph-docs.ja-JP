@@ -1,12 +1,13 @@
 ---
 title: hourlySchedule リソースの種類
 description: 定期的なデバイスの管理スクリプトのスケジュールを 1 時間ごとに実行します。
-ms.openlocfilehash: 1161f7dfc3d74224c22075db8eff83b7f412b9b9
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: e73ff542b7de780d16d9f2bd76c11c2d0f92e8ae
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27071301"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27317578"
 ---
 # <a name="hourlyschedule-resource-type"></a>hourlySchedule リソースの種類
 
@@ -18,8 +19,8 @@ ms.locfileid: "27071301"
 
 [RunSchedule](../resources/intune-devices-runschedule.md)から継承します。
 
-## <a name="properties"></a>プロパティ
-|プロパティ|型|説明|
+## <a name="properties"></a>Properties
+|プロパティ|種類|説明|
 |:---|:---|:---|
 |interval|Int32|間隔 (時間数単位)|
 

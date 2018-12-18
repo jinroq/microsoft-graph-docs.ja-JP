@@ -1,12 +1,13 @@
 ---
 title: mobileAppAssignment リソース タイプ
 description: モバイル アプリのグループ割り当て用に使用されるプロパティを含むクラスです。
-ms.openlocfilehash: f6a84e40ccbdc2192e0d5f81d20d3d598f50f913
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 5f1413bc973d3721c7e9b01aa29e513028af9926
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27067619"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27320573"
 ---
 # <a name="mobileappassignment-resource-type"></a>mobileAppAssignment リソース タイプ
 
@@ -25,9 +26,9 @@ ms.locfileid: "27067619"
 |[Update mobileAppAssignment](../api/intune-apps-mobileappassignment-update.md)|[mobileAppAssignment](../resources/intune-apps-mobileappassignment.md)|[mobileAppAssignment](../resources/intune-apps-mobileappassignment.md) オブジェクトのプロパティを更新します。|
 
 ## <a name="properties"></a>プロパティ
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
-|id|String|エンティティのキー。|
+|ID|String|エンティティのキー。|
 |intent|[installIntent](../resources/intune-shared-installintent.md)|管理者によって定義されたインストールの目的。可能な値は、`available`、`required`、`uninstall`、`availableWithoutEnrollment` です。|
 |target|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|管理者によって定義された、ターゲット グループの割り当て。|
 |settings|[mobileAppAssignmentSettings](../resources/intune-apps-mobileappassignmentsettings.md)|管理者によって定義された、ターゲットの割り当ての設定。|

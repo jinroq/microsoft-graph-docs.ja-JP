@@ -1,12 +1,13 @@
 ---
 title: AndroidWorkProfileCertificateProfileBase を取得します。
 description: AndroidWorkProfileCertificateProfileBase オブジェクトのプロパティと関係を参照してください。
-ms.openlocfilehash: bc0fc7270cd86b9aa466b2c95d56243eae55c710
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 0f98a64ddec8d95ca634c4a4690e4ef27d680063
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27074286"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27317529"
 ---
 # <a name="get-androidworkprofilecertificateprofilebase"></a>AndroidWorkProfileCertificateProfileBase を取得します。
 

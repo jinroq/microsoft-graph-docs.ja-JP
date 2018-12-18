@@ -1,12 +1,13 @@
 ---
 title: AndroidWorkProfileCompliancePolicy を更新します。
 description: AndroidWorkProfileCompliancePolicy オブジェクトのプロパティを更新します。
-ms.openlocfilehash: c37253c788fdbc7212cbb4ea729b1e4dd45cd6e5
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 7e7bacd9f926d5a3da1012f29ab511067c037a74
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27070991"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27317557"
 ---
 # <a name="update-androidworkprofilecompliancepolicy"></a>AndroidWorkProfileCompliancePolicy を更新します。
 
@@ -44,7 +45,7 @@ PATCH /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}
 
 [AndroidWorkProfileCompliancePolicy](../resources/intune-deviceconfig-androidworkprofilecompliancepolicy.md)を作成するときに必要なプロパティを次の表に示します。
 
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
 |roleScopeTagIds|String コレクション|このエンティティ インスタンスのスコープのタグのリストです。 [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md) から継承します|
 |id|String|エンティティのキー。 [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md) から継承します|

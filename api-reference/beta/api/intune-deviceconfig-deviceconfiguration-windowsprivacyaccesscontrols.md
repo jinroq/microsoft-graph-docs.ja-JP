@@ -1,12 +1,13 @@
 ---
 title: windowsPrivacyAccessControls アクション
 description: まだ文書化されていません
-ms.openlocfilehash: b9b8a3e9d5042d4bb896ac4a0f310f78d7bd78a6
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 301091be00f31ee0b4d86f6ec78f32c0adf34016
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27071712"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27321043"
 ---
 # <a name="windowsprivacyaccesscontrols-action"></a>windowsPrivacyAccessControls アクション
 
@@ -46,7 +47,7 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 
 次の表に、このアクションで使用できるパラメーターを示します。
 
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
 |windowsPrivacyAccessControls|[windowsPrivacyDataAccessControlItem](../resources/intune-deviceconfig-windowsprivacydataaccesscontrolitem.md)コレクション|まだ文書化されていません|
 

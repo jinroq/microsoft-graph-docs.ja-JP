@@ -1,12 +1,13 @@
 ---
 title: domainNameReferences の一覧表示
 description: ドメインへの参照付きの directoryObject の一覧を取得します。返されるリストには、ドメインに依存するすべてのディレクトリ オブジェクトが含まれます。
-ms.openlocfilehash: 145fbf3221467d4802a93f4f5112b49eaa99b339
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lleonard-msft
+ms.openlocfilehash: d100855bf55c31d1c51308c0fd2330461b44981e
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27069218"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27322590"
 ---
 # <a name="list-domainnamereferences"></a>domainNameReferences の一覧表示
 

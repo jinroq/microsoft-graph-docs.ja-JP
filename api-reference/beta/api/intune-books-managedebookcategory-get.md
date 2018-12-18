@@ -1,12 +1,13 @@
 ---
 title: ManagedEBookCategory を取得します。
 description: ManagedEBookCategory オブジェクトのプロパティと関係を参照してください。
-ms.openlocfilehash: 6c97031aadcd373b0f5cfb520d775e4e999b423d
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 3a3ece59025b28ed26ffa03931d1de67c45ed140
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27074324"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27321960"
 ---
 # <a name="get-managedebookcategory"></a>ManagedEBookCategory を取得します。
 

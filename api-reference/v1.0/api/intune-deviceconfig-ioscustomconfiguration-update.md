@@ -1,12 +1,13 @@
 ---
 title: iosCustomConfiguration の更新
 description: iosCustomConfiguration オブジェクトのプロパティを更新します。
-ms.openlocfilehash: 6151c93e83bd35db70d6c5428d55bde92e8027de
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: e7056ab274223fc65b4a8dbf600744b9adab77a0
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27022287"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27319958"
 ---
 # <a name="update-ioscustomconfiguration"></a>iosCustomConfiguration の更新
 
@@ -42,9 +43,9 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}
 
 次の表に、[iosCustomConfiguration](../resources/intune-deviceconfig-ioscustomconfiguration.md) の作成時に必要なプロパティを示します。
 
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
-|id|String|エンティティのキー。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
+|ID|String|エンティティのキー。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |lastModifiedDateTime|DateTimeOffset|オブジェクトが最後に変更された DateTime。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |createdDateTime|DateTimeOffset|オブジェクトが作成された DateTime。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |説明|String|デバイス構成について管理者が提供した説明。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|

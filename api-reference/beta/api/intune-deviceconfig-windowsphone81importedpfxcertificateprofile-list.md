@@ -1,12 +1,13 @@
 ---
 title: リスト windowsPhone81ImportedPFXCertificateProfiles
 description: WindowsPhone81ImportedPFXCertificateProfile オブジェクトのプロパティと関係を一覧表示します。
-ms.openlocfilehash: ae62c3fa4e421481e7120422f70e6935257c2159
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 05b2df41d64e109ad28f55004e81c41d15e3ae2a
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27069368"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27322121"
 ---
 # <a name="list-windowsphone81importedpfxcertificateprofiles"></a>リスト windowsPhone81ImportedPFXCertificateProfiles
 

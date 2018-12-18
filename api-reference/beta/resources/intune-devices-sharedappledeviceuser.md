@@ -1,12 +1,13 @@
 ---
 title: sharedAppleDeviceUser リソースの種類
 description: まだ文書化されていません
-ms.openlocfilehash: 79ebc5ae520c1c9b40bffb6a86e95693c52fa1e6
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 4e16d691ed6286fb8046c0693292012e1e94a0ca
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27068431"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27315990"
 ---
 # <a name="sharedappledeviceuser-resource-type"></a>sharedAppleDeviceUser リソースの種類
 
@@ -16,10 +17,10 @@ ms.locfileid: "27068431"
 
 まだ文書化されていません
 ## <a name="properties"></a>プロパティ
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
 |userPrincipalName|String|ユーザー名|
-|dataToSync|ブール値|データを同期します。|
+|dataToSync|ブール型|データを同期します。|
 |dataQuota|Int64|データのクォータ|
 |dataUsed|Int64|データのクォータ|
 

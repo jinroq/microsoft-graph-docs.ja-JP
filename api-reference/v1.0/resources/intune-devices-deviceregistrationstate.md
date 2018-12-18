@@ -1,12 +1,13 @@
 ---
 title: deviceRegistrationState 列挙型
 description: デバイス登録のステータス。
-ms.openlocfilehash: 9f9ee23d385ce4a7fca73e2d296c3f34063fc218
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 9fdd5cd3a63472e841f0d97f8cbee3a0f548380d
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27020589"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27320091"
 ---
 # <a name="deviceregistrationstate-enum-type"></a>deviceRegistrationState 列挙型
 

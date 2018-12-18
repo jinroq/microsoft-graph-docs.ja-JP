@@ -1,12 +1,13 @@
 ---
 title: acceptedSenders のリスト化
 description: このグループの acceptedSenders リストに含まれるユーザーまたはグループの一覧を取得します。
-ms.openlocfilehash: d06919f67a4d4afe917e87571f403970825f66ca
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: dkershaw10
+ms.openlocfilehash: 15b2387ce726b83d8e7b8b10034061d454b42e39
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27024118"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27319580"
 ---
 # <a name="list-acceptedsenders"></a>acceptedSenders のリスト化
 このグループの acceptedSenders リストに含まれるユーザーまたはグループの一覧を取得します。

@@ -1,12 +1,13 @@
 ---
 title: deviceCompliancePolicyDeviceStateSummary リソースの種類
 description: まだ文書化されていません
-ms.openlocfilehash: fe466fdee52102483355af633ec5721228a1a175
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 006b1ca71f8441898ba758397334c7ae31ac5690
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27072167"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27318810"
 ---
 # <a name="devicecompliancepolicydevicestatesummary-resource-type"></a>deviceCompliancePolicyDeviceStateSummary リソースの種類
 
@@ -22,7 +23,7 @@ ms.locfileid: "27072167"
 |[deviceCompliancePolicyDeviceStateSummary の更新](../api/intune-deviceconfig-devicecompliancepolicydevicestatesummary-update.md)|[deviceCompliancePolicyDeviceStateSummary](../resources/intune-deviceconfig-devicecompliancepolicydevicestatesummary.md)|[deviceCompliancePolicyDeviceStateSummary](../resources/intune-deviceconfig-devicecompliancepolicydevicestatesummary.md) オブジェクトのプロパティを更新します。|
 
 ## <a name="properties"></a>プロパティ
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
 |inGracePeriodCount|Int32|解約猶予期間内のデバイスの数|
 |configManagerCount|Int32|System Center Configuration Manager によってコンプライアンスが管理されているデバイスの数|

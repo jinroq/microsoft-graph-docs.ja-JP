@@ -1,12 +1,13 @@
 ---
 title: Get androidForWorkAppConfigurationSchema
 description: androidForWorkAppConfigurationSchema オブジェクトのプロパティとリレーションシップを読み取ります。
-ms.openlocfilehash: 9ece3217670089575ea596dd8fa7b02571cd527b
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 94aea1a7fc058e3e318edf73ad45c6aebde8f3e5
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27069497"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27316367"
 ---
 # <a name="get-androidforworkappconfigurationschema"></a>Get androidForWorkAppConfigurationSchema
 

@@ -1,12 +1,13 @@
 ---
 title: resourceOperations のリスト
 description: resourceOperation オブジェクトのプロパティとリレーションシップをリストします。
-ms.openlocfilehash: 7110a16e2713e950d5018d4904272feddbd56dec
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 210e7dfe8d321efccff6f5e985d0fa64a26d9f84
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27070691"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27321505"
 ---
 # <a name="list-resourceoperations"></a>resourceOperations のリスト
 

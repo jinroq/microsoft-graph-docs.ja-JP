@@ -1,12 +1,13 @@
 ---
 title: directoryObject を取得する
 description: directoryObject オブジェクトのプロパティとリレーションシップを取得します。
-ms.openlocfilehash: 21086b7d30b1e4480450b0bb63f4be27f7e7bd5d
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lleonard-msft
+ms.openlocfilehash: 452d88e5443a4fdf0f9c48cad127b3882a82217b
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27023733"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27316857"
 ---
 # <a name="get-directoryobject"></a>directoryObject を取得する
 
@@ -28,7 +29,7 @@ GET /directoryObjects/{id}
 ## <a name="optional-query-parameters"></a>オプションのクエリ パラメーター
 このメソッドは、応答をカスタマイズするための [OData クエリ パラメーター](https://developer.microsoft.com/graph/docs/concepts/query_parameters)をサポートします。
 ## <a name="request-headers"></a>要求ヘッダー
-| 名前       | 型 | 説明|
+| 名前       | 種類 | 説明|
 |:-----------|:------|:----------|
 | Authorization  | string  | ベアラー {トークン}。必須。 |
 

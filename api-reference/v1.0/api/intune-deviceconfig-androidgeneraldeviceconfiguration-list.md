@@ -1,12 +1,13 @@
 ---
 title: androidGeneralDeviceConfigurations のリスト
 description: androidGeneralDeviceConfiguration オブジェクトのプロパティとリレーションシップをリストします。
-ms.openlocfilehash: 3e0205bb65b52a9e57e52063ef5c6a47d4e6d205
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 8e7fcf0b11e3e4cd21cce99ba0ab419c2f6c87e2
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27023573"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27319531"
 ---
 # <a name="list-androidgeneraldeviceconfigurations"></a>androidGeneralDeviceConfigurations のリスト
 

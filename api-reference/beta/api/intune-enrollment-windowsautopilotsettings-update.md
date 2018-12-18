@@ -1,12 +1,13 @@
 ---
 title: WindowsAutopilotSettings を更新します。
 description: WindowsAutopilotSettings オブジェクトのプロパティを更新します。
-ms.openlocfilehash: 6c02d73a08e18906de6e2959f69c3377c20ce911
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 281a0ff6412151e284c566444886092e2566b491
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27069409"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27316087"
 ---
 # <a name="update-windowsautopilotsettings"></a>WindowsAutopilotSettings を更新します。
 
@@ -44,9 +45,9 @@ PATCH /deviceManagement/windowsAutopilotSettings
 
 [WindowsAutopilotSettings](../resources/intune-enrollment-windowsautopilotsettings.md)を作成するときに必要なプロパティを次の表に示します。
 
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
-|id|String|オブジェクトの GUID|
+|ID|String|オブジェクトの GUID|
 |lastSyncDateTime|DateTimeOffset|最後のデータは、DDS のサービスでの日付の時刻を同期します。|
 |lastManualSyncTriggerDateTime|DateTimeOffset|最後のデータは、DDS のサービスでの日付の時刻を同期します。|
 |syncStatus|[windowsAutopilotSyncStatus](../resources/intune-enrollment-windowsautopilotsyncstatus.md)|デバイスのデータ同期 (DDS) のサービスとの同期のステータスを示します。 可能な値は、`unknown`、`inProgress`、`completed`、`failed` です。|
