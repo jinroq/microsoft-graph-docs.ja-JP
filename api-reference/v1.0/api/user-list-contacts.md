@@ -1,35 +1,36 @@
 ---
 title: 連絡先を一覧表示する
 description: サインイン中のユーザーの既定の連絡先フォルダーから連絡先のコレクションを取得します。
-ms.openlocfilehash: 9322810d90f38c0b7643379f22a90a89cf7070df
-ms.sourcegitcommit: 12c6e82f1417022540e534ebadbd0e8d7fb5abde
+author: dkershaw10
+ms.openlocfilehash: a4fa40b66280ea3447c1d07a531a596a42c14ed2
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/08/2018
-ms.locfileid: "27209734"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27307498"
 ---
-# <a name="list-contacts"></a><span data-ttu-id="1fef1-103">連絡先を一覧表示する</span><span class="sxs-lookup"><span data-stu-id="1fef1-103">List contacts</span></span>
+# <a name="list-contacts"></a><span data-ttu-id="15a61-103">連絡先を一覧表示する</span><span class="sxs-lookup"><span data-stu-id="15a61-103">List contacts</span></span>
 
-<span data-ttu-id="1fef1-104">サインイン中のユーザーの既定の連絡先フォルダーから連絡先のコレクションを取得します。</span><span class="sxs-lookup"><span data-stu-id="1fef1-104">Get a contact collection from the default contacts folder of the signed-in user.</span></span>
+<span data-ttu-id="15a61-104">サインイン中のユーザーの既定の連絡先フォルダーから連絡先のコレクションを取得します。</span><span class="sxs-lookup"><span data-stu-id="15a61-104">Get a contact collection from the default contacts folder of the signed-in user.</span></span>
 
-<span data-ttu-id="1fef1-105">アプリケーションが別のユーザーの連絡先フォルダーに連絡先を入手するための 2 つのシナリオがあります。</span><span class="sxs-lookup"><span data-stu-id="1fef1-105">There are two scenarios where an app can get contacts in another user's contact folder:</span></span>
+<span data-ttu-id="15a61-105">アプリケーションが別のユーザーの連絡先フォルダーに連絡先を入手するための 2 つのシナリオがあります。</span><span class="sxs-lookup"><span data-stu-id="15a61-105">There are two scenarios where an app can get contacts in another user's contact folder:</span></span>
 
-* <span data-ttu-id="1fef1-106">アプリケーションは、アプリケーションの権限を持つ場合、または、</span><span class="sxs-lookup"><span data-stu-id="1fef1-106">If the app has application permissions, or,</span></span>
-* <span data-ttu-id="1fef1-107">アプリケーションがある場合、適切な 1 人のユーザーから[アクセス許可](#permissions)を委任し、他のユーザーは、そのユーザーの連絡先フォルダーを共有するにはまたは、そのユーザーに代理アクセスを与え。</span><span class="sxs-lookup"><span data-stu-id="1fef1-107">If the app has the appropriate delegated [permissions](#permissions) from one user, and another user has shared a contact folder with that user, or, has given delegated access to that user.</span></span> <span data-ttu-id="1fef1-108">[詳細と例](/graph/outlook-get-shared-contacts-folders)を参照してください。</span><span class="sxs-lookup"><span data-stu-id="1fef1-108">See [details and an example](/graph/outlook-get-shared-contacts-folders).</span></span>
+* <span data-ttu-id="15a61-106">アプリケーションは、アプリケーションの権限を持つ場合、または、</span><span class="sxs-lookup"><span data-stu-id="15a61-106">If the app has application permissions, or,</span></span>
+* <span data-ttu-id="15a61-107">アプリケーションがある場合、適切な 1 人のユーザーから[アクセス許可](#permissions)を委任し、他のユーザーは、そのユーザーの連絡先フォルダーを共有するにはまたは、そのユーザーに代理アクセスを与え。</span><span class="sxs-lookup"><span data-stu-id="15a61-107">If the app has the appropriate delegated [permissions](#permissions) from one user, and another user has shared a contact folder with that user, or, has given delegated access to that user.</span></span> <span data-ttu-id="15a61-108">[詳細と例](/graph/outlook-get-shared-contacts-folders)を参照してください。</span><span class="sxs-lookup"><span data-stu-id="15a61-108">See [details and an example](/graph/outlook-get-shared-contacts-folders).</span></span>
 
 
-## <a name="permissions"></a><span data-ttu-id="1fef1-109">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="1fef1-109">Permissions</span></span>
-<span data-ttu-id="1fef1-p102">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="1fef1-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="15a61-109">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="15a61-109">Permissions</span></span>
+<span data-ttu-id="15a61-p102">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="15a61-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="1fef1-112">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="1fef1-112">Permission type</span></span>      | <span data-ttu-id="1fef1-113">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="1fef1-113">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="15a61-112">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="15a61-112">Permission type</span></span>      | <span data-ttu-id="15a61-113">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="15a61-113">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="1fef1-114">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="1fef1-114">Delegated (work or school account)</span></span> | <span data-ttu-id="1fef1-115">Contacts.Read、Contacts.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="1fef1-115">Contacts.Read, Contacts.ReadWrite</span></span>    |
-|<span data-ttu-id="1fef1-116">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="1fef1-116">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="1fef1-117">Contacts.Read、Contacts.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="1fef1-117">Contacts.Read, Contacts.ReadWrite</span></span>    |
-|<span data-ttu-id="1fef1-118">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="1fef1-118">Application</span></span> | <span data-ttu-id="1fef1-119">Contacts.Read、Contacts.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="1fef1-119">Contacts.Read, Contacts.ReadWrite</span></span> |
+|<span data-ttu-id="15a61-114">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="15a61-114">Delegated (work or school account)</span></span> | <span data-ttu-id="15a61-115">Contacts.Read、Contacts.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="15a61-115">Contacts.Read, Contacts.ReadWrite</span></span>    |
+|<span data-ttu-id="15a61-116">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="15a61-116">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="15a61-117">Contacts.Read、Contacts.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="15a61-117">Contacts.Read, Contacts.ReadWrite</span></span>    |
+|<span data-ttu-id="15a61-118">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="15a61-118">Application</span></span> | <span data-ttu-id="15a61-119">Contacts.Read、Contacts.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="15a61-119">Contacts.Read, Contacts.ReadWrite</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="1fef1-120">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="1fef1-120">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="15a61-120">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="15a61-120">HTTP request</span></span>
 
-<span data-ttu-id="1fef1-121">ユーザーのメールボックス内のすべての連絡先を取得する</span><span class="sxs-lookup"><span data-stu-id="1fef1-121">To get all the contacts in a user's mailbox:</span></span>
+<span data-ttu-id="15a61-121">ユーザーのメールボックス内のすべての連絡先を取得する</span><span class="sxs-lookup"><span data-stu-id="15a61-121">To get all the contacts in a user's mailbox:</span></span>
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -37,7 +38,7 @@ GET /me/contacts
 GET /users/{id | userPrincipalName}/contacts
 ```
 
-<span data-ttu-id="1fef1-122">ユーザーのメールボックス内の特定のフォルダーにある連絡先を取得する</span><span class="sxs-lookup"><span data-stu-id="1fef1-122">To get contacts in a specific folder in the user's mailbox:</span></span>
+<span data-ttu-id="15a61-122">ユーザーのメールボックス内の特定のフォルダーにある連絡先を取得する</span><span class="sxs-lookup"><span data-stu-id="15a61-122">To get contacts in a specific folder in the user's mailbox:</span></span>
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -47,35 +48,35 @@ GET /users/{id | userPrincipalName}/contactfolders/{id}/contacts
 GET /me/contactFolder/{id}/childFolders/{id}/.../contacts
 GET /users/{id | userPrincipalName}/contactFolders/{id}/childFolders/{id}/contacts
 ```
-## <a name="optional-query-parameters"></a><span data-ttu-id="1fef1-123">オプションのクエリ パラメーター</span><span class="sxs-lookup"><span data-stu-id="1fef1-123">Optional query parameters</span></span>
-<span data-ttu-id="1fef1-124">使用することができます、`$filter`の電子メール アドレスに基づいて、連絡先をフィルターするクエリのパラメーター。</span><span class="sxs-lookup"><span data-stu-id="1fef1-124">You can use the `$filter` query parameter to filter contacts based on their email addresses:</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="15a61-123">オプションのクエリ パラメーター</span><span class="sxs-lookup"><span data-stu-id="15a61-123">Optional query parameters</span></span>
+<span data-ttu-id="15a61-124">使用することができます、`$filter`の電子メール アドレスに基づいて、連絡先をフィルターするクエリのパラメーター。</span><span class="sxs-lookup"><span data-stu-id="15a61-124">You can use the `$filter` query parameter to filter contacts based on their email addresses:</span></span>
 
 <!-- { "blockType": "ignored" } -->
 ``` http
 GET https://graph.microsoft.com/v1.0/me/contacts?$filter=emailAddresses/any(a:a/address eq 'garth@contoso.com')
 ```
 
-<span data-ttu-id="1fef1-125">注使用することができます`$filter`、`any`と`eq`演算子、 **emailAddresses**コレクション内のインスタンスの**アドレス**サブ プロパティのみにします。</span><span class="sxs-lookup"><span data-stu-id="1fef1-125">Note that you can use `$filter`, `any`, and the `eq` operator on only the **address** sub-property of instances in an **emailAddresses** collection.</span></span> <span data-ttu-id="1fef1-126">**名前**または他のサブの**emailAddresses**インスタンスのプロパティにフィルターを適用することはできずするその他の演算子を適用したり、機能を持つ`filter`、次のように`ne`、`le`と`startswith()`。</span><span class="sxs-lookup"><span data-stu-id="1fef1-126">That is, you cannot filter on the **name** or any other sub-property of an instance of **emailAddresses**, nor can you apply any other operator or function with `filter`, such as `ne`, `le`, and `startswith()`.</span></span>
+<span data-ttu-id="15a61-125">注使用することができます`$filter`、`any`と`eq`演算子、 **emailAddresses**コレクション内のインスタンスの**アドレス**サブ プロパティのみにします。</span><span class="sxs-lookup"><span data-stu-id="15a61-125">Note that you can use `$filter`, `any`, and the `eq` operator on only the **address** sub-property of instances in an **emailAddresses** collection.</span></span> <span data-ttu-id="15a61-126">**名前**または他のサブの**emailAddresses**インスタンスのプロパティにフィルターを適用することはできずするその他の演算子を適用したり、機能を持つ`filter`、次のように`ne`、`le`と`startswith()`。</span><span class="sxs-lookup"><span data-stu-id="15a61-126">That is, you cannot filter on the **name** or any other sub-property of an instance of **emailAddresses**, nor can you apply any other operator or function with `filter`, such as `ne`, `le`, and `startswith()`.</span></span>
 
-<span data-ttu-id="1fef1-127">全般については、`$filter`クエリのパラメーターで、 [OData クエリのパラメーター](/graph/query-parameters)を参照してください。</span><span class="sxs-lookup"><span data-stu-id="1fef1-127">For general information on the `$filter` query parameter, see [OData query parameters](/graph/query-parameters).</span></span>
+<span data-ttu-id="15a61-127">全般については、`$filter`クエリのパラメーターで、 [OData クエリのパラメーター](/graph/query-parameters)を参照してください。</span><span class="sxs-lookup"><span data-stu-id="15a61-127">For general information on the `$filter` query parameter, see [OData query parameters](/graph/query-parameters).</span></span>
 
 
 
-## <a name="request-headers"></a><span data-ttu-id="1fef1-128">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="1fef1-128">Request headers</span></span>
-| <span data-ttu-id="1fef1-129">ヘッダー</span><span class="sxs-lookup"><span data-stu-id="1fef1-129">Header</span></span>       | <span data-ttu-id="1fef1-130">値</span><span class="sxs-lookup"><span data-stu-id="1fef1-130">Value</span></span> |
+## <a name="request-headers"></a><span data-ttu-id="15a61-128">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="15a61-128">Request headers</span></span>
+| <span data-ttu-id="15a61-129">ヘッダー</span><span class="sxs-lookup"><span data-stu-id="15a61-129">Header</span></span>       | <span data-ttu-id="15a61-130">値</span><span class="sxs-lookup"><span data-stu-id="15a61-130">Value</span></span> |
 |:---------------|:--------|
-| <span data-ttu-id="1fef1-131">Authorization</span><span class="sxs-lookup"><span data-stu-id="1fef1-131">Authorization</span></span>  | <span data-ttu-id="1fef1-p104">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="1fef1-p104">Bearer {token}. Required.</span></span>  |
-| <span data-ttu-id="1fef1-134">Content-Type</span><span class="sxs-lookup"><span data-stu-id="1fef1-134">Content-Type</span></span>   | <span data-ttu-id="1fef1-135">application/json</span><span class="sxs-lookup"><span data-stu-id="1fef1-135">application/json</span></span>  |
+| <span data-ttu-id="15a61-131">Authorization</span><span class="sxs-lookup"><span data-stu-id="15a61-131">Authorization</span></span>  | <span data-ttu-id="15a61-p104">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="15a61-p104">Bearer {token}. Required.</span></span>  |
+| <span data-ttu-id="15a61-134">Content-Type</span><span class="sxs-lookup"><span data-stu-id="15a61-134">Content-Type</span></span>   | <span data-ttu-id="15a61-135">application/json</span><span class="sxs-lookup"><span data-stu-id="15a61-135">application/json</span></span>  |
 
-## <a name="request-body"></a><span data-ttu-id="1fef1-136">要求本文</span><span class="sxs-lookup"><span data-stu-id="1fef1-136">Request body</span></span>
-<span data-ttu-id="1fef1-137">このメソッドには、要求本文を指定しません。</span><span class="sxs-lookup"><span data-stu-id="1fef1-137">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="15a61-136">要求本文</span><span class="sxs-lookup"><span data-stu-id="15a61-136">Request body</span></span>
+<span data-ttu-id="15a61-137">このメソッドには、要求本文を指定しません。</span><span class="sxs-lookup"><span data-stu-id="15a61-137">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="1fef1-138">応答</span><span class="sxs-lookup"><span data-stu-id="1fef1-138">Response</span></span>
+## <a name="response"></a><span data-ttu-id="15a61-138">応答</span><span class="sxs-lookup"><span data-stu-id="15a61-138">Response</span></span>
 
-<span data-ttu-id="1fef1-139">成功した場合、このメソッドは `200 OK` 応答コードと、応答本文で [Contact](../resources/contact.md) オブジェクトのコレクションを返します。</span><span class="sxs-lookup"><span data-stu-id="1fef1-139">If successful, this method returns a `200 OK` response code and collection of [Contact](../resources/contact.md) objects in the response body.</span></span>
-## <a name="example"></a><span data-ttu-id="1fef1-140">例</span><span class="sxs-lookup"><span data-stu-id="1fef1-140">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="1fef1-141">要求</span><span class="sxs-lookup"><span data-stu-id="1fef1-141">Request</span></span>
-<span data-ttu-id="1fef1-142">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="1fef1-142">Here is an example of the request.</span></span>
+<span data-ttu-id="15a61-139">成功した場合、このメソッドは `200 OK` 応答コードと、応答本文で [Contact](../resources/contact.md) オブジェクトのコレクションを返します。</span><span class="sxs-lookup"><span data-stu-id="15a61-139">If successful, this method returns a `200 OK` response code and collection of [Contact](../resources/contact.md) objects in the response body.</span></span>
+## <a name="example"></a><span data-ttu-id="15a61-140">例</span><span class="sxs-lookup"><span data-stu-id="15a61-140">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="15a61-141">要求</span><span class="sxs-lookup"><span data-stu-id="15a61-141">Request</span></span>
+<span data-ttu-id="15a61-142">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="15a61-142">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "get_contacts"
@@ -85,8 +86,8 @@ GET https://graph.microsoft.com/v1.0/me/contacts
 ```
 
 
-##### <a name="response"></a><span data-ttu-id="1fef1-143">応答</span><span class="sxs-lookup"><span data-stu-id="1fef1-143">Response</span></span>
-<span data-ttu-id="1fef1-p105">以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。</span><span class="sxs-lookup"><span data-stu-id="1fef1-p105">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="15a61-143">応答</span><span class="sxs-lookup"><span data-stu-id="15a61-143">Response</span></span>
+<span data-ttu-id="15a61-p105">以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。</span><span class="sxs-lookup"><span data-stu-id="15a61-p105">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
