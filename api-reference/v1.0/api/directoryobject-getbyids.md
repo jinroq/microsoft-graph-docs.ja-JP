@@ -1,34 +1,35 @@
 ---
 title: ID のリストからディレクトリ オブジェクトを取得します。
 description: 選択 ' クエリ オプションはこの操作に使用できません。
-ms.openlocfilehash: 4a2b765d71fe799195a4afcd404ba21718fa87c8
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lleonard-msft
+ms.openlocfilehash: 78653f6db76092685de119390053624bbc6be882
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27020393"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27350506"
 ---
-# <a name="get-directory-objects-from-a-list-of-ids"></a><span data-ttu-id="2bd34-103">ID のリストからディレクトリ オブジェクトを取得します。</span><span class="sxs-lookup"><span data-stu-id="2bd34-103">Get directory objects from a list of ids</span></span>
+# <a name="get-directory-objects-from-a-list-of-ids"></a><span data-ttu-id="60079-103">ID のリストからディレクトリ オブジェクトを取得します。</span><span class="sxs-lookup"><span data-stu-id="60079-103">Get directory objects from a list of ids</span></span>
 
-<span data-ttu-id="2bd34-p101">ID のリストで指定されたディレクトリ オブジェクトを返します。注:ここで返されるディレクトリ オブジェクトは、**すべて**のプロパティを含む完全なオブジェクトです。この操作に `$select` クエリ オプションは使用できません。</span><span class="sxs-lookup"><span data-stu-id="2bd34-p101">Returns the directory objects specified in a list of ids.  NOTE: The directory objects returned are the full objects containing **all** their properties. The `$select` query option is not available for this operation.</span></span>
+<span data-ttu-id="60079-p101">ID のリストで指定されたディレクトリ オブジェクトを返します。注:ここで返されるディレクトリ オブジェクトは、**すべて**のプロパティを含む完全なオブジェクトです。この操作に `$select` クエリ オプションは使用できません。</span><span class="sxs-lookup"><span data-stu-id="60079-p101">Returns the directory objects specified in a list of ids.  NOTE: The directory objects returned are the full objects containing **all** their properties. The `$select` query option is not available for this operation.</span></span>
 
-<span data-ttu-id="2bd34-107">この関数の一般的な用途は次のとおりです。</span><span class="sxs-lookup"><span data-stu-id="2bd34-107">Some common uses for this function are to:</span></span>
+<span data-ttu-id="60079-107">この関数の一般的な用途は次のとおりです。</span><span class="sxs-lookup"><span data-stu-id="60079-107">Some common uses for this function are to:</span></span>
 
-* <span data-ttu-id="2bd34-108">[getMemberObjects](directoryobject-getmemberobjects.md) または [getMemberGroups](directoryobject-getmembergroups.md) などの (ID のコレクションを返す) 関数から返された ID を、バッキング ディレクトリ オブジェクトに解決する。</span><span class="sxs-lookup"><span data-stu-id="2bd34-108">Resolve ids returned by functions (that return collections of ids) such as [getMemberObjects](directoryobject-getmemberobjects.md) or [getMemberGroups](directoryobject-getmembergroups.md)  to their backing directory objects.</span></span>
-* <span data-ttu-id="2bd34-109">アプリケーションによって外部記憶装置に保存されている ID をバッキング ディレクトリ オブジェクトに解決する。</span><span class="sxs-lookup"><span data-stu-id="2bd34-109">Resolve ids persisted in an external store by the application to their backing directory objects.</span></span>
+* <span data-ttu-id="60079-108">[getMemberObjects](directoryobject-getmemberobjects.md) または [getMemberGroups](directoryobject-getmembergroups.md) などの (ID のコレクションを返す) 関数から返された ID を、バッキング ディレクトリ オブジェクトに解決する。</span><span class="sxs-lookup"><span data-stu-id="60079-108">Resolve ids returned by functions (that return collections of ids) such as [getMemberObjects](directoryobject-getmemberobjects.md) or [getMemberGroups](directoryobject-getmembergroups.md)  to their backing directory objects.</span></span>
+* <span data-ttu-id="60079-109">アプリケーションによって外部記憶装置に保存されている ID をバッキング ディレクトリ オブジェクトに解決する。</span><span class="sxs-lookup"><span data-stu-id="60079-109">Resolve ids persisted in an external store by the application to their backing directory objects.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="2bd34-110">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="2bd34-110">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="60079-110">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="60079-110">Permissions</span></span>
 
-<span data-ttu-id="2bd34-p102">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="2bd34-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="60079-p102">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="60079-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
 
-|<span data-ttu-id="2bd34-113">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="2bd34-113">Permission type</span></span>      | <span data-ttu-id="2bd34-114">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="2bd34-114">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="60079-113">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="60079-113">Permission type</span></span>      | <span data-ttu-id="60079-114">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="60079-114">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="2bd34-115">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="2bd34-115">Delegated (work or school account)</span></span> | <span data-ttu-id="2bd34-116">Directory.Read.All、Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="2bd34-116">Directory.Read.All, Directory.AccessAsUser.All</span></span>    |
-|<span data-ttu-id="2bd34-117">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="2bd34-117">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="2bd34-118">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="2bd34-118">Not supported.</span></span>    |
-|<span data-ttu-id="2bd34-119">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="2bd34-119">Application</span></span> | <span data-ttu-id="2bd34-120">Directory.Read.All</span><span class="sxs-lookup"><span data-stu-id="2bd34-120">Directory.Read.All</span></span> |
+|<span data-ttu-id="60079-115">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="60079-115">Delegated (work or school account)</span></span> | <span data-ttu-id="60079-116">Directory.Read.All、Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="60079-116">Directory.Read.All, Directory.AccessAsUser.All</span></span>    |
+|<span data-ttu-id="60079-117">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="60079-117">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="60079-118">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="60079-118">Not supported.</span></span>    |
+|<span data-ttu-id="60079-119">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="60079-119">Application</span></span> | <span data-ttu-id="60079-120">Directory.Read.All</span><span class="sxs-lookup"><span data-stu-id="60079-120">Directory.Read.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="2bd34-121">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="2bd34-121">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="60079-121">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="60079-121">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -36,29 +37,29 @@ ms.locfileid: "27020393"
 POST /directoryObjects/getByIds
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="2bd34-122">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="2bd34-122">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="60079-122">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="60079-122">Request headers</span></span>
 
-| <span data-ttu-id="2bd34-123">名前</span><span class="sxs-lookup"><span data-stu-id="2bd34-123">Name</span></span>       | <span data-ttu-id="2bd34-124">型</span><span class="sxs-lookup"><span data-stu-id="2bd34-124">Type</span></span> | <span data-ttu-id="2bd34-125">説明</span><span class="sxs-lookup"><span data-stu-id="2bd34-125">Description</span></span>|
+| <span data-ttu-id="60079-123">名前</span><span class="sxs-lookup"><span data-stu-id="60079-123">Name</span></span>       | <span data-ttu-id="60079-124">種類</span><span class="sxs-lookup"><span data-stu-id="60079-124">Type</span></span> | <span data-ttu-id="60079-125">説明</span><span class="sxs-lookup"><span data-stu-id="60079-125">Description</span></span>|
 |:---------------|:--------|:----------|
-| <span data-ttu-id="2bd34-126">Authorization</span><span class="sxs-lookup"><span data-stu-id="2bd34-126">Authorization</span></span>  | <span data-ttu-id="2bd34-127">string</span><span class="sxs-lookup"><span data-stu-id="2bd34-127">string</span></span>  | <span data-ttu-id="2bd34-p103">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="2bd34-p103">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="2bd34-130">Content-Type</span><span class="sxs-lookup"><span data-stu-id="2bd34-130">Content-Type</span></span>  | <span data-ttu-id="2bd34-131">string</span><span class="sxs-lookup"><span data-stu-id="2bd34-131">string</span></span> | <span data-ttu-id="2bd34-132">application/json</span><span class="sxs-lookup"><span data-stu-id="2bd34-132">application/json</span></span>  |
+| <span data-ttu-id="60079-126">Authorization</span><span class="sxs-lookup"><span data-stu-id="60079-126">Authorization</span></span>  | <span data-ttu-id="60079-127">string</span><span class="sxs-lookup"><span data-stu-id="60079-127">string</span></span>  | <span data-ttu-id="60079-p103">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="60079-p103">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="60079-130">Content-Type</span><span class="sxs-lookup"><span data-stu-id="60079-130">Content-Type</span></span>  | <span data-ttu-id="60079-131">string</span><span class="sxs-lookup"><span data-stu-id="60079-131">string</span></span> | <span data-ttu-id="60079-132">application/json</span><span class="sxs-lookup"><span data-stu-id="60079-132">application/json</span></span>  |
 
-## <a name="request-body"></a><span data-ttu-id="2bd34-133">要求本文</span><span class="sxs-lookup"><span data-stu-id="2bd34-133">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="60079-133">要求本文</span><span class="sxs-lookup"><span data-stu-id="60079-133">Request body</span></span>
 
-<span data-ttu-id="2bd34-134">要求本文で、次のパラメーターを含む JSON オブジェクトを指定します。</span><span class="sxs-lookup"><span data-stu-id="2bd34-134">In the request body, provide a JSON object with the following parameters.</span></span>
+<span data-ttu-id="60079-134">要求本文で、次のパラメーターを含む JSON オブジェクトを指定します。</span><span class="sxs-lookup"><span data-stu-id="60079-134">In the request body, provide a JSON object with the following parameters.</span></span>
 
-| <span data-ttu-id="2bd34-135">パラメーター</span><span class="sxs-lookup"><span data-stu-id="2bd34-135">Parameter</span></span>   | <span data-ttu-id="2bd34-136">型</span><span class="sxs-lookup"><span data-stu-id="2bd34-136">Type</span></span> |<span data-ttu-id="2bd34-137">説明</span><span class="sxs-lookup"><span data-stu-id="2bd34-137">Description</span></span>|
+| <span data-ttu-id="60079-135">パラメーター</span><span class="sxs-lookup"><span data-stu-id="60079-135">Parameter</span></span>   | <span data-ttu-id="60079-136">種類</span><span class="sxs-lookup"><span data-stu-id="60079-136">Type</span></span> |<span data-ttu-id="60079-137">説明</span><span class="sxs-lookup"><span data-stu-id="60079-137">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="2bd34-138">ids</span><span class="sxs-lookup"><span data-stu-id="2bd34-138">ids</span></span>|<span data-ttu-id="2bd34-139">String コレクション</span><span class="sxs-lookup"><span data-stu-id="2bd34-139">String collection</span></span>| <span data-ttu-id="2bd34-p104">オブジェクトを戻す ID のコレクション。最大 1000 ID まで指定できます。</span><span class="sxs-lookup"><span data-stu-id="2bd34-p104">A collection of ids for which to return objects. You can specify up to 1000 ids.</span></span> |
-|<span data-ttu-id="2bd34-142">types</span><span class="sxs-lookup"><span data-stu-id="2bd34-142">types</span></span>|<span data-ttu-id="2bd34-143">String コレクション</span><span class="sxs-lookup"><span data-stu-id="2bd34-143">String collection</span></span>| <span data-ttu-id="2bd34-144">検索するリソースのコレクションのセットを指定するリソースの種類のコレクションです。</span><span class="sxs-lookup"><span data-stu-id="2bd34-144">A collection of resource types that specifies the set of resource collections to search.</span></span> <span data-ttu-id="2bd34-145">指定しない場合、既定では[directoryObject](../resources/directoryobject.md)、すべてのディレクトリで定義されているリソースの種類が含まれています。</span><span class="sxs-lookup"><span data-stu-id="2bd34-145">If not specified, the default is [directoryObject](../resources/directoryobject.md), which contains all of the resource types defined in the directory.</span></span> <span data-ttu-id="2bd34-146">派生したオブジェクトは、`directoryObject`コレクションに指定することがあります例:[ユーザー](../resources/user.md)、[グループ](../resources/group.md)、[デバイス](../resources/device.md)、およびようにします。</span><span class="sxs-lookup"><span data-stu-id="2bd34-146">Any object that derives from `directoryObject` may be specified in the collection; for example: [user](../resources/user.md), [group](../resources/group.md), [device](../resources/device.md), and so on.</span></span> <span data-ttu-id="2bd34-147">値は、大文字小文字を区別しません。</span><span class="sxs-lookup"><span data-stu-id="2bd34-147">The values are not case-sensitive.</span></span>|
+|<span data-ttu-id="60079-138">ids</span><span class="sxs-lookup"><span data-stu-id="60079-138">ids</span></span>|<span data-ttu-id="60079-139">String コレクション</span><span class="sxs-lookup"><span data-stu-id="60079-139">String collection</span></span>| <span data-ttu-id="60079-p104">オブジェクトを戻す ID のコレクション。最大 1000 ID まで指定できます。</span><span class="sxs-lookup"><span data-stu-id="60079-p104">A collection of ids for which to return objects. You can specify up to 1000 ids.</span></span> |
+|<span data-ttu-id="60079-142">types</span><span class="sxs-lookup"><span data-stu-id="60079-142">types</span></span>|<span data-ttu-id="60079-143">String コレクション</span><span class="sxs-lookup"><span data-stu-id="60079-143">String collection</span></span>| <span data-ttu-id="60079-144">検索するリソースのコレクションのセットを指定するリソースの種類のコレクションです。</span><span class="sxs-lookup"><span data-stu-id="60079-144">A collection of resource types that specifies the set of resource collections to search.</span></span> <span data-ttu-id="60079-145">指定しない場合、既定では[directoryObject](../resources/directoryobject.md)、すべてのディレクトリで定義されているリソースの種類が含まれています。</span><span class="sxs-lookup"><span data-stu-id="60079-145">If not specified, the default is [directoryObject](../resources/directoryobject.md), which contains all of the resource types defined in the directory.</span></span> <span data-ttu-id="60079-146">派生したオブジェクトは、`directoryObject`コレクションに指定することがあります例:[ユーザー](../resources/user.md)、[グループ](../resources/group.md)、[デバイス](../resources/device.md)、およびようにします。</span><span class="sxs-lookup"><span data-stu-id="60079-146">Any object that derives from `directoryObject` may be specified in the collection; for example: [user](../resources/user.md), [group](../resources/group.md), [device](../resources/device.md), and so on.</span></span> <span data-ttu-id="60079-147">値は、大文字小文字を区別しません。</span><span class="sxs-lookup"><span data-stu-id="60079-147">The values are not case-sensitive.</span></span>|
 
-## <a name="response"></a><span data-ttu-id="2bd34-148">応答</span><span class="sxs-lookup"><span data-stu-id="2bd34-148">Response</span></span>
+## <a name="response"></a><span data-ttu-id="60079-148">応答</span><span class="sxs-lookup"><span data-stu-id="60079-148">Response</span></span>
 
-<span data-ttu-id="2bd34-149">成功した場合、このメソッドは `200 OK` 応答コードと、応答本文で文字列コレクション オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="2bd34-149">If successful, this method returns `200 OK` response code and String collection object in the response body.</span></span>
+<span data-ttu-id="60079-149">成功した場合、このメソッドは `200 OK` 応答コードと、応答本文で文字列コレクション オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="60079-149">If successful, this method returns `200 OK` response code and String collection object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="2bd34-150">例</span><span class="sxs-lookup"><span data-stu-id="2bd34-150">Example</span></span>
+## <a name="example"></a><span data-ttu-id="60079-150">例</span><span class="sxs-lookup"><span data-stu-id="60079-150">Example</span></span>
 
-##### <a name="request"></a><span data-ttu-id="2bd34-151">要求</span><span class="sxs-lookup"><span data-stu-id="2bd34-151">Request</span></span>
+##### <a name="request"></a><span data-ttu-id="60079-151">要求</span><span class="sxs-lookup"><span data-stu-id="60079-151">Request</span></span>
 
 <!-- {
   "blockType": "request",
@@ -75,9 +76,9 @@ Content-type: application/json
 }
 ```
 
-##### <a name="response"></a><span data-ttu-id="2bd34-152">応答</span><span class="sxs-lookup"><span data-stu-id="2bd34-152">Response</span></span>
+##### <a name="response"></a><span data-ttu-id="60079-152">応答</span><span class="sxs-lookup"><span data-stu-id="60079-152">Response</span></span>
 
-<span data-ttu-id="2bd34-p106">注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。</span><span class="sxs-lookup"><span data-stu-id="2bd34-p106">Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+<span data-ttu-id="60079-p106">注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。</span><span class="sxs-lookup"><span data-stu-id="60079-p106">Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
