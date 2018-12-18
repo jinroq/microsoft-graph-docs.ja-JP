@@ -1,12 +1,13 @@
 ---
 title: Windows10EnrollmentCompletionPageConfiguration を更新します。
 description: Windows10EnrollmentCompletionPageConfiguration オブジェクトのプロパティを更新します。
-ms.openlocfilehash: b3566d7b476c17557bdfc15f8ff9d86763123ab2
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: bcc62cc4bea069a6a29ce2d321578a86145a0446
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27072564"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27360047"
 ---
 # <a name="update-windows10enrollmentcompletionpageconfiguration"></a>Windows10EnrollmentCompletionPageConfiguration を更新します。
 
@@ -44,22 +45,22 @@ PATCH /deviceManagement/deviceEnrollmentConfigurations/{deviceEnrollmentConfigur
 
 [Windows10EnrollmentCompletionPageConfiguration](../resources/intune-onboarding-windows10enrollmentcompletionpageconfiguration.md)を作成するときに必要なプロパティを次の表に示します。
 
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
-|id|String|まだ文書化されていません。[deviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md) から継承します|
+|ID|String|まだ文書化されていません。[deviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md) から継承します|
 |displayName|String|まだ文書化されていません。[deviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md) から継承します|
 |説明|String|まだ文書化されていません。[deviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md) から継承します|
 |priority|Int32|まだ文書化されていません。[deviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md) から継承します|
 |createdDateTime|DateTimeOffset|まだ文書化されていません。[deviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md) から継承します|
 |lastModifiedDateTime|DateTimeOffset|まだ文書化されていません。[deviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md) から継承します|
 |version|Int32|まだ文書化されていません。[deviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md) から継承します|
-|showInstallationProgress|ブール値|ユーザーにインストールの進行状況の表示と非表示を切り替える|
-|blockDeviceSetupRetryByUser|ブール値|インストールの失敗時にセットアップを再実行するユーザーを許可します。|
-|allowDeviceResetOnInstallFailure|ブール値|許可またはブロック デバイスのインストールの失敗時にリセット|
-|allowLogCollectionOnInstallFailure|ブール値|許可またはブロックのインストールの失敗時にログの収集|
+|showInstallationProgress|ブール型|ユーザーにインストールの進行状況の表示と非表示を切り替える|
+|blockDeviceSetupRetryByUser|ブール型|インストールの失敗時にセットアップを再実行するユーザーを許可します。|
+|allowDeviceResetOnInstallFailure|ブール型|許可またはブロック デバイスのインストールの失敗時にリセット|
+|allowLogCollectionOnInstallFailure|ブール型|許可またはブロックのインストールの失敗時にログの収集|
 |customErrorMessage|String|インストールの失敗時に表示するカスタム エラー メッセージを設定します。|
 |installProgressTimeoutInMinutes|Int32|インストールの進行状況のタイムアウトを分単位で設定します。|
-|allowDeviceUseOnInstallFailure|ブール値|インストールの失敗時にデバイスを使用するユーザーを許可します。|
+|allowDeviceUseOnInstallFailure|ブール型|インストールの失敗時にデバイスを使用するユーザーを許可します。|
 |selectedMobileAppIds|String コレクション|インストールのステータスを追跡するために選択したアプリケーション|
 
 

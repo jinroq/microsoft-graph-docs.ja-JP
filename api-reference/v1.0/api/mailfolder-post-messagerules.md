@@ -1,12 +1,13 @@
 ---
 title: ルールを作成する
 description: '条件とアクションのセットを指定して messageRule オブジェクトを作成します。 '
-ms.openlocfilehash: fdea3920e272581c8d08e04c01c385575e6c6df1
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: angelgolfer-ms
+ms.openlocfilehash: 72c4991e077364514104d5bbc8e24625526bce51
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27021989"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27361356"
 ---
 # <a name="create-rule"></a>ルールを作成する
 
@@ -40,7 +41,7 @@ POST /users/{id | userPrincipalName}/mailFolders/inbox/messageRules
 ## <a name="request-body"></a>要求本文
 要求本文に、ルールを適用するパラメーターを指定します。 ルールを作成する際に本文に通常指定するパラメーターは、次のとおりです。 必要に応じて、本文に他の書き込み可能な **messageRule** プロパティを指定することもできます。
 
-| 名前       | 型|説明|
+| Name       | 種類|説明|
 |:--------|:-------|:----------|
 |actions|[messageRuleActions](../resources/messageruleactions.md)|該当する条件があり、それが満たされる場合にメッセージに対して実行されるアクションです。必須。|
 |conditions|[messageRulePredicates](../resources/messagerulepredicates.md)|満たされた場合に、そのルールに該当するアクションをトリガーする条件です。省略可能。|

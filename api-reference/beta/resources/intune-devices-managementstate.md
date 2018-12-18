@@ -1,12 +1,13 @@
 ---
 title: managementState 列挙型
 description: Microsoft Intune でのデバイスの状態を管理します。
-ms.openlocfilehash: 554e06ff32102285d4851a19350c7c44d11d1fb4
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 530c1fec4effeb83f6efb635cd44995d904dbdcf
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27072551"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27361062"
 ---
 # <a name="managementstate-enum-type"></a>managementState 列挙型
 

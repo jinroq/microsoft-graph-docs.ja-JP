@@ -1,12 +1,13 @@
 ---
 title: assign アクション
 description: まだ文書化されていません
-ms.openlocfilehash: b7d8fe08b041a4486b286ca4690e2f5b6782aa88
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 664265fc65ccf294e7406f23c557a635fad1d384
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27022537"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27358892"
 ---
 # <a name="assign-action"></a>assign アクション
 
@@ -42,7 +43,7 @@ POST /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/assig
 
 次の表に、このアクションで使用できるパラメーターを示します。
 
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
 |assignments|[deviceCompliancePolicyAssignment](../resources/intune-deviceconfig-devicecompliancepolicyassignment.md) コレクション|まだ文書化されていません|
 

@@ -1,12 +1,13 @@
 ---
 title: advancedThreatProtectionOnboardingStateSummary リソースの種類
 description: Windows defender 脅威の高度な保護契約時の状態の概要アカウント間で。
-ms.openlocfilehash: 8d870d51a7bb39bcc06472febd7d85f63b993a0a
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 3a31d489374b87469d2ed6fb87bb70f8d89d710c
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27072329"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27359172"
 ---
 # <a name="advancedthreatprotectiononboardingstatesummary-resource-type"></a>advancedThreatProtectionOnboardingStateSummary リソースの種類
 
@@ -21,10 +22,10 @@ Windows defender 脅威の高度な保護契約時の状態の概要アカウン
 |[AdvancedThreatProtectionOnboardingStateSummary を取得します。](../api/intune-deviceconfig-advancedthreatprotectiononboardingstatesummary-get.md)|[advancedThreatProtectionOnboardingStateSummary](../resources/intune-deviceconfig-advancedthreatprotectiononboardingstatesummary.md)|[AdvancedThreatProtectionOnboardingStateSummary](../resources/intune-deviceconfig-advancedthreatprotectiononboardingstatesummary.md)オブジェクトのプロパティと関係を参照してください。|
 |[AdvancedThreatProtectionOnboardingStateSummary を更新します。](../api/intune-deviceconfig-advancedthreatprotectiononboardingstatesummary-update.md)|[advancedThreatProtectionOnboardingStateSummary](../resources/intune-deviceconfig-advancedthreatprotectiononboardingstatesummary.md)|[AdvancedThreatProtectionOnboardingStateSummary](../resources/intune-deviceconfig-advancedthreatprotectiononboardingstatesummary.md)オブジェクトのプロパティを更新します。|
 
-## <a name="properties"></a>プロパティ
-|プロパティ|型|説明|
+## <a name="properties"></a>Properties
+|プロパティ|種類|説明|
 |:---|:---|:---|
-|id|String|一意識別子|
+|ID|String|一意識別子|
 |unknownDeviceCount|Int32|不明なデバイスの数|
 |notApplicableDeviceCount|Int32|該当しないデバイスの数|
 |compliantDeviceCount|Int32|準拠デバイスの数|

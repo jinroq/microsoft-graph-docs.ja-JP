@@ -1,12 +1,13 @@
 ---
 title: NdesConnector を更新します。
 description: NdesConnector オブジェクトのプロパティを更新します。
-ms.openlocfilehash: 963d27b89cb8c8731eb466475f65b36257f56b45
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 80a518a403ce2354ec2f0a633520baf98ae2c7c3
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27068436"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27358304"
 ---
 # <a name="update-ndesconnector"></a>NdesConnector を更新します。
 
@@ -44,11 +45,11 @@ PATCH /deviceManagement/ndesConnectors/{ndesConnectorId}
 
 [NdesConnector](../resources/intune-deviceconfig-ndesconnector.md)を作成するときに必要なプロパティを次の表に示します。
 
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
-|id|String|NDES のコネクタのキー。|
+|ID|String|NDES のコネクタのキー。|
 |lastConnectionDateTime|DateTimeOffset|Ndes コネクタの前回の接続|
-|ステート|[ndesConnectorState](../resources/intune-deviceconfig-ndesconnectorstate.md)|Ndes のコネクタの状態です。 可能な値は、`none`、`active`、`inactive` です。|
+|state|[ndesConnectorState](../resources/intune-deviceconfig-ndesconnectorstate.md)|Ndes のコネクタの状態です。 可能な値は、`none`、`active`、`inactive` です。|
 |displayName|String|Ndes のコネクタの表示名。|
 
 

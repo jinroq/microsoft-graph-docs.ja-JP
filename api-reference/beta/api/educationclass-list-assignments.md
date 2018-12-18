@@ -1,12 +1,13 @@
 ---
 title: リストの割り当て
 description: 割り当てオブジェクトのリストを取得します。 教師を許可して、クラスのすべての割り当てオブジェクトを参照してください。 受講者は、それらに割り当てられている割り当てだけを参照してください。
-ms.openlocfilehash: 664356620e83534c5cd686e0d1df796bd3743a3e
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: mmast-msft
+ms.openlocfilehash: c7fbab429b238a0ae7f1814066eedfe793096f02
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27069257"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27361405"
 ---
 # <a name="list-assignments"></a>リストの割り当て
 

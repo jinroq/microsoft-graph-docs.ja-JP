@@ -1,12 +1,13 @@
 ---
 title: Create windowsUniversalAppX
 description: 新しい windowsUniversalAppX オブジェクトを作成します。
-ms.openlocfilehash: 5a2085fee43609bdca375a6fbc23fe7f9c60862e
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 27fc37804da09f2740f0cfcf6548de529d82fbd9
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27072768"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27360215"
 ---
 # <a name="create-windowsuniversalappx"></a>Create windowsUniversalAppX
 
@@ -44,9 +45,9 @@ POST /deviceAppManagement/mobileApps
 
 次の表に、windowsUniversalAppX の作成時に必要なプロパティを示します。
 
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
-|id|String|エンティティのキー。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|
+|ID|String|エンティティのキー。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|
 |displayName|String|管理者が提供またはインポートしたアプリのタイトル。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|
 |説明|String|アプリの説明。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|
 |publisher|String|アプリの発行元。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|

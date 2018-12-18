@@ -1,12 +1,13 @@
 ---
 title: WindowsManagementAppHealthState を作成します。
 description: 新しい windowsManagementAppHealthState オブジェクトを作成します。
-ms.openlocfilehash: e815a86001e75e2350e0ea1b5bb73a8dfd87f58a
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 5fec23dec7510c0b7b1a53b0be7d2dfe507959f3
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27068961"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27359081"
 ---
 # <a name="create-windowsmanagementapphealthstate"></a>WindowsManagementAppHealthState を作成します。
 
@@ -44,9 +45,9 @@ POST /deviceAppManagement/windowsManagementApp/healthStates
 
 次の表は、windowsManagementAppHealthState を作成するときに必要なプロパティを示します。
 
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
-|id|String|Windows 管理アプリケーションの正常性状態の一意の識別子|
+|ID|String|Windows 管理アプリケーションの正常性状態の一意の識別子|
 |healthState|[healthState](../resources/intune-devices-healthstate.md)|Windows 管理アプリケーションの正常性状態。 可能な値は、`unknown`、`healthy`、`unhealthy` です。|
 |installedVersion|String|Windows 管理アプリケーションは、バージョンをインストールします。|
 |lastCheckInDateTime|DateTimeOffset|Windows 管理アプリケーション最後のチェックインの時間です。|

@@ -1,12 +1,13 @@
 ---
 title: directoryObject を削除する
 description: DirectoryObject を削除します。
-ms.openlocfilehash: a1377b0493c5c8a6833225faf33a16f596a23240
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lleonard-msft
+ms.openlocfilehash: f53ffc488529c2af4b566ada52f213d1fc132c60
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27069582"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27361412"
 ---
 # <a name="delete-directoryobject"></a>directoryObject を削除する
 
@@ -31,7 +32,7 @@ DELETE /directoryObjects/{id}
 
 ```
 ## <a name="request-headers"></a>要求ヘッダー
-| 名前       | 型 | 説明|
+| 名前       | 種類 | 説明|
 |:---------------|:--------|:----------|
 | Authorization  | string  | ベアラー {トークン}。必須。 |
 

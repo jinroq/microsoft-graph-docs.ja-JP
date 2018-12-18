@@ -1,12 +1,13 @@
 ---
 title: managementConditionExpressionString リソースの種類
 description: 管理条件の式の文字列は、管理条件式の文字列表現です。
-ms.openlocfilehash: 456df27900aa10ead7e2bc090e5e06e0bcd7754f
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: eabcc730e86f74e2afc7c93874d47e787579c899
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27073449"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27361041"
 ---
 # <a name="managementconditionexpressionstring-resource-type"></a>managementConditionExpressionString リソースの種類
 
@@ -18,8 +19,8 @@ ms.locfileid: "27073449"
 
 [ManagementConditionExpression](../resources/intune-fencing-managementconditionexpression.md)から継承します。
 
-## <a name="properties"></a>プロパティ
-|プロパティ|型|説明|
+## <a name="properties"></a>Properties
+|プロパティ|種類|説明|
 |:---|:---|:---|
 |value|文字列|管理条件ステートメント式の文字列値。|
 

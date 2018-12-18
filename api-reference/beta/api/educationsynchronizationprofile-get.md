@@ -1,12 +1,13 @@
 ---
 title: EducationSynchronizationProfile を取得します。
 description: 識別子に基づくテナントの学校のデータの同期プロファイルを取得します。
-ms.openlocfilehash: a62b938f3177f06a02a8a5ad1190d72b3f27dfd9
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: mmast-msft
+ms.openlocfilehash: 6aa01f8c48bdaad58ae3a6a9c6ba719e91eb23a8
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27066348"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27360852"
 ---
 # <a name="get-an-educationsynchronizationprofile"></a>EducationSynchronizationProfile を取得します。
 
@@ -30,7 +31,7 @@ GET /synchronizationProfiles/{id}
 ```
 
 ## <a name="request-headers"></a>要求ヘッダー
-| 名前       | 型 | 説明|
+| 名前       | 種類 | 説明|
 |:-----------|:------|:----------|
 | Authorization  | string  | ベアラー {トークン}。必須。  |
 

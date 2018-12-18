@@ -1,12 +1,13 @@
 ---
 title: Delete calendar
 description: 既定の予定表以外の予定を削除します。
-ms.openlocfilehash: ea020f5e8d10414fffceb0e44fd6e6f39ada294e
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: angelgolfer-ms
+ms.openlocfilehash: 2285287911fcca961304c8b46d3508db554f95a9
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27020958"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27359242"
 ---
 # <a name="delete-calendar"></a>Delete calendar
 
@@ -35,7 +36,7 @@ DELETE /me/calendarGroups/{id}/calendars/{id}
 DELETE /users/{id | userPrincipalName}/calendarGroups/{id}/calendars/{id}
 ```
 ## <a name="request-headers"></a>要求ヘッダー
-| 名前           |  型    | 説明|
+| 名前           |  種類    | 説明|
 |:---------------|:---------|:----------|
 | Authorization  |  string  | ベアラー {トークン}。必須。 |
 

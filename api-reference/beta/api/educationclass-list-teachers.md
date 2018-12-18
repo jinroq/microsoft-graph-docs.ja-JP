@@ -1,12 +1,13 @@
 ---
 title: 教師をリストする
 description: クラスの教師のリストを取得します。 教師のリストを取得するには、委任されたトークンがクラスのメンバーである必要があります。
-ms.openlocfilehash: e18d3987d0d0df52dc2bd1e6f8bd21b8018caa1e
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: mmast-msft
+ms.openlocfilehash: 9f60ab7c8bd03d84a7d085f16626b074ede82841
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27069956"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27360866"
 ---
 # <a name="list-teachers"></a>教師をリストする
 

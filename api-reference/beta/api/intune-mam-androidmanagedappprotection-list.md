@@ -1,12 +1,13 @@
 ---
 title: androidManagedAppProtections のリスト
 description: androidManagedAppProtection オブジェクトのプロパティとリレーションシップをリストします。
-ms.openlocfilehash: f662e710282ea718f8aefe38cdac7e0351bc0476
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: e5ef8d09df2af166f5a672b06ac2dc3d3792fc82
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27069700"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27359655"
 ---
 # <a name="list-androidmanagedappprotections"></a>androidManagedAppProtections のリスト
 

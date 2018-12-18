@@ -1,12 +1,13 @@
 ---
 title: Get targetedManagedAppConfiguration
 description: targetedManagedAppConfiguration オブジェクトのプロパティとリレーションシップを読み取ります。
-ms.openlocfilehash: c61a80b1775d6fd01854e4b931432781618151d0
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 2bc977dc2f586e7b727a6ab4885bb62eaec36fdb
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27068829"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27358633"
 ---
 # <a name="get-targetedmanagedappconfiguration"></a>Get targetedManagedAppConfiguration
 

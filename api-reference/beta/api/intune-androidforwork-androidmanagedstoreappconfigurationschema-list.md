@@ -1,12 +1,13 @@
 ---
 title: リスト androidManagedStoreAppConfigurationSchemas
 description: AndroidManagedStoreAppConfigurationSchema オブジェクトのプロパティと関係を一覧表示します。
-ms.openlocfilehash: 6e83dbc951410fcb9142b069c6c8d9ee0c20c0a0
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 1b13d49d1fa350d21001d9075f28eedc19191086
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27068230"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27358675"
 ---
 # <a name="list-androidmanagedstoreappconfigurationschemas"></a>リスト androidManagedStoreAppConfigurationSchemas
 

@@ -1,12 +1,13 @@
 ---
 title: androidForWorkAppConfigurationSchemas のリスト
 description: androidForWorkAppConfigurationSchema オブジェクトのプロパティとリレーションシップをリストします。
-ms.openlocfilehash: ee318997d239836d38ad5b3ce93b2a223cc73bf9
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 140a49f8cbb93b6c1990dd80ee4eaec8e23c1859
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27071383"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27358934"
 ---
 # <a name="list-androidforworkappconfigurationschemas"></a>androidForWorkAppConfigurationSchemas のリスト
 

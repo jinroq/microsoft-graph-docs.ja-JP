@@ -1,12 +1,13 @@
 ---
 title: リスト remoteActionAudits
 description: RemoteActionAudit オブジェクトのプロパティと関係を一覧表示します。
-ms.openlocfilehash: f3387c7857f0e02042775de7ef18d8915a464060
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: a261cc164ab4a792ed22613831f32b755e3216ab
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27069967"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27359067"
 ---
 # <a name="list-remoteactionaudits"></a>リスト remoteActionAudits
 

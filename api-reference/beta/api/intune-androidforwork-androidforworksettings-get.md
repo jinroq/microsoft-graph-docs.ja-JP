@@ -1,12 +1,13 @@
 ---
 title: Get androidForWorkSettings
 description: androidForWorkSettings オブジェクトのプロパティとリレーションシップを読み取ります。
-ms.openlocfilehash: 6cc1a179b9b594894cca42561dbe0e0b877a0c3a
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 4fe705a98622ac4a40fb96b6aed6abbe92e51660
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27066898"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27360845"
 ---
 # <a name="get-androidforworksettings"></a>Get androidForWorkSettings
 

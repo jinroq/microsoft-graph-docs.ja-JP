@@ -1,12 +1,13 @@
 ---
 title: 'ユーザー: translateExchangeIds'
 description: 形式との間、Outlook に関連するリソースの識別子を変換します。
-ms.openlocfilehash: e18c59df5a7ecbaa16b954bf74221c8d8d1de5d3
-ms.sourcegitcommit: 4aebfaefc23e02a98b2fec35958cd2110020f15f
+author: dkershaw10
+ms.openlocfilehash: 6dd18fe041c2a303be4ad333b8beeaef168682b1
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/06/2018
-ms.locfileid: "27184491"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27360579"
 ---
 # <a name="user-translateexchangeids"></a>ユーザー: translateExchangeIds
 
@@ -41,7 +42,7 @@ POST /users/{id|userPrincipalName}/translateExchangeIds
 
 ## <a name="request-body"></a>要求本文
 
-| パラメーター | Type | 説明 |
+| パラメーター | 種類 | 説明 |
 |:----------|:-----|:------------|
 | inputIds | Edm.String コレクション | 変換識別子のコレクションです。 コレクション内のすべての識別子は、同じソース ID の種類を持つ必要があり、同じメールボックス内のアイテムにする必要があります。 このコレクションの最大サイズは、1000 の文字列です。 |
 | sourceIdType | exchangeIdFormat | ID の種類の識別子の`InputIds`のパラメーターです。 |

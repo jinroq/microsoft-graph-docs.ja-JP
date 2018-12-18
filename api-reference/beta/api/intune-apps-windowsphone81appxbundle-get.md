@@ -1,12 +1,13 @@
 ---
 title: WindowsPhone81AppXBundle を取得します。
 description: WindowsPhone81AppXBundle オブジェクトのプロパティと関係を参照してください。
-ms.openlocfilehash: bbf32f723ae9794aafb6a337338b54430fd0cbaa
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: a48b58201952f9d6115ee496e29355ab9015f21c
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27068622"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27358115"
 ---
 # <a name="get-windowsphone81appxbundle"></a>WindowsPhone81AppXBundle を取得します。
 

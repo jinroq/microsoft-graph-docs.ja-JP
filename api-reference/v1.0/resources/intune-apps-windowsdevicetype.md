@@ -1,12 +1,13 @@
 ---
 title: windowsDeviceType 列挙型
 description: Windows デバイスの種類のプロパティが含まれています。
-ms.openlocfilehash: 9a2ca8d67254c3ea8f64e20f954b84d07060fbc1
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 74f169f66ab2fe1bf29fbd4a08c07c540367947f
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27023231"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27360691"
 ---
 # <a name="windowsdevicetype-enum-type"></a>windowsDeviceType 列挙型
 

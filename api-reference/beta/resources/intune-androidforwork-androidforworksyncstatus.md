@@ -1,12 +1,13 @@
 ---
 title: androidForWorkSyncStatus 列挙型
 description: Google の EMM の API を使用してテナントの同期の状態
-ms.openlocfilehash: 633670881d7f3b73730725e9146cb9fa1a303122
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 937abe8d814144f1bda65f87f48ac363ad71d76e
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27068502"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27360894"
 ---
 # <a name="androidforworksyncstatus-enum-type"></a>androidForWorkSyncStatus 列挙型
 

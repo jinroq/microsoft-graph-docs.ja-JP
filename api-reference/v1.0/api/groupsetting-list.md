@@ -1,12 +1,13 @@
 ---
 title: グループ設定の一覧表示
 description: グループ設定オブジェクトのリストを取得します。
-ms.openlocfilehash: 2a34627f057a5244a94d7f9e14dde5df1fe12202
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: dkershaw10
+ms.openlocfilehash: 834e843ee470d559427775370ed723fe6dafaf5e
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27022107"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27359641"
 ---
 # <a name="list-group-settings"></a>グループ設定の一覧表示
 

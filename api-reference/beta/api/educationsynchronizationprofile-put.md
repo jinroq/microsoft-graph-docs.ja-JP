@@ -1,12 +1,13 @@
 ---
 title: EducationSynchronizationProfile を更新します。
 description: テナント内の既存校のデータの同期プロファイルのプロパティを更新します。
-ms.openlocfilehash: 9f670a04dfb3c5465683883eeaf4eeed543e830a
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: mmast-msft
+ms.openlocfilehash: 17bf46eb4ebd6783f7bafba828ff1bcb7ad5ac48
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27069534"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27361468"
 ---
 # <a name="update-an-educationsynchronizationprofile"></a>EducationSynchronizationProfile を更新します。
 
@@ -17,7 +18,7 @@ ms.locfileid: "27069534"
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
 
-| アクセス許可の種類 | Permissions |
+| アクセス許可の種類 | アクセス許可 |
 |:-----------|:----------|
 | 委任 (職場または学校のアカウント) | EduAdministration.ReadWrite |
 |(個人用の Microsoft アカウントを委任します。|サポートされていません。|
@@ -30,7 +31,7 @@ PUT /synchronizationProfiles
 ```
 
 ## <a name="request-headers"></a>要求ヘッダー
-| 名前       | 型 | 説明|
+| 名前       | 種類 | 説明|
 |:-----------|:------|:----------|
 | Authorization  | string  | ベアラー {トークン}。必須。  |
 | Content-Type | string | application/json. Required. |

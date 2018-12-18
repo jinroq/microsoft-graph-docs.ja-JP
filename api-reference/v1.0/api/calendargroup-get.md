@@ -1,12 +1,13 @@
 ---
 title: Get calendarGroup
 description: 予定表グループ オブジェクトのプロパティとリレーションシップを取得します。
-ms.openlocfilehash: ffaf4fa4fbc96649bb93a430e77be758e8768ceb
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: angelgolfer-ms
+ms.openlocfilehash: fce49730733537b14eff145a6f6acd9fe4d82485
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27022716"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27358318"
 ---
 # <a name="get-calendargroup"></a>Get calendarGroup
 
@@ -39,7 +40,7 @@ GET /users/{id | userPrincipalName}/calendarGroups/{id}
 
 ## <a name="request-headers"></a>要求ヘッダー
 
-| 名前          | 型   | 説明               |
+| 名前          | 種類   | 説明               |
 | :------------ | :----- | :------------------------ |
 | Authorization | string | ベアラー {トークン}。必須。 |
 

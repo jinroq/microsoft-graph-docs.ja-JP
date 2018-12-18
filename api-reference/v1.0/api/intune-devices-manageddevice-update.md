@@ -2,12 +2,13 @@
 title: >
   managedDevice の更新
 description: managedDevice オブジェクトのプロパティを更新します。
-ms.openlocfilehash: 4e4f0cc7213a20477227683431fdd8af6e06bb9e
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 85803f6d5474ecc0e0e2f05cf974d705d4d47737
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27023975"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27358752"
 ---
 # <a name="update-manageddevice"></a>managedDevice の更新
 
@@ -46,9 +47,9 @@ PATCH /deviceManagement/detectedApps/{detectedAppId}/managedDevices/{managedDevi
 
 次の表に、[managedDevice](../resources/intune-devices-manageddevice.md) の作成時に必要なプロパティを示します。
 
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
-|id|String|デバイスの一意識別子|
+|ID|String|デバイスの一意識別子|
 |userId|String|デバイスに関連付けられているユーザーの一意の識別子|
 |deviceName|String|デバイスの名前|
 |managedDeviceOwnerType|[managedDeviceOwnerType](../resources/intune-devices-manageddeviceownertype.md)|デバイスの所有権。 '会社' または '個人' にすることができます。 可能な値は、`unknown`、`company`、`personal` です。|

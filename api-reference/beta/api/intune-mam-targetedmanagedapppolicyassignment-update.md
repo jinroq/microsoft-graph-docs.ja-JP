@@ -1,12 +1,13 @@
 ---
 title: targetedManagedAppPolicyAssignment の更新
 description: targetedManagedAppPolicyAssignment オブジェクトのプロパティを更新します。
-ms.openlocfilehash: f165b66b016080d3461d8a512812373615e16a27
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 4c0343d1790cf457dba5a28a999af5cc91eca66c
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27067664"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27358927"
 ---
 # <a name="update-targetedmanagedapppolicyassignment"></a>targetedManagedAppPolicyAssignment の更新
 
@@ -48,10 +49,10 @@ PATCH /deviceAppManagement/mdmWindowsInformationProtectionPolicies/{mdmWindowsIn
 
 次の表に、[targetedManagedAppPolicyAssignment](../resources/intune-mam-targetedmanagedapppolicyassignment.md) の作成時に必要なプロパティを示します。
 
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
-|id|String|ID|
-|target|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|グループまたはアプリの展開の識別子|
+|ID|String|ID|
+|ターゲット|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|グループまたはアプリの展開の識別子|
 
 
 

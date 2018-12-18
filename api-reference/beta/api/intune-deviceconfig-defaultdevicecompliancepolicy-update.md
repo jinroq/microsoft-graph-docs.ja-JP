@@ -1,12 +1,13 @@
 ---
 title: DefaultDeviceCompliancePolicy を更新します。
 description: DefaultDeviceCompliancePolicy オブジェクトのプロパティを更新します。
-ms.openlocfilehash: 65dcf950a1d8f3bbcbbb19b4132713bfb13b5153
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 6f4dcb134bcb03e3026c1361a34e38f7975ff495
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27073491"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27361013"
 ---
 # <a name="update-defaultdevicecompliancepolicy"></a>DefaultDeviceCompliancePolicy を更新します。
 
@@ -44,7 +45,7 @@ PATCH /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}
 
 [DefaultDeviceCompliancePolicy](../resources/intune-deviceconfig-defaultdevicecompliancepolicy.md)を作成するときに必要なプロパティを次の表に示します。
 
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
 |roleScopeTagIds|String コレクション|このエンティティ インスタンスのスコープのタグのリストです。 [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md) から継承します|
 |id|String|エンティティのキー。 [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md) から継承します|

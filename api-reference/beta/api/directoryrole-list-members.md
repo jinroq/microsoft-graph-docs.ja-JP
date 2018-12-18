@@ -1,12 +1,13 @@
 ---
 title: メンバーを一覧表示する
 description: ディレクトリ ロールに割り当てられているユーザーの一覧を取得します。ディレクトリに割り当てることができるのはユーザーのみです。
-ms.openlocfilehash: 8a347603c8ed99a1f25cfd5a4c0e24fb0cd991aa
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lleonard-msft
+ms.openlocfilehash: 8bd0f67d6ca565dac6dfae501f5bc5c829f4db3b
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27071111"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27359102"
 ---
 # <a name="list-members"></a>メンバーを一覧表示する
 
@@ -31,7 +32,7 @@ GET /directoryRoles/{id}/members
 ## <a name="optional-query-parameters"></a>オプションのクエリ パラメーター
 このメソッドは、応答をカスタマイズするための [OData クエリ パラメーター](https://developer.microsoft.com/graph/docs/concepts/query_parameters)をサポートします。
 ## <a name="request-headers"></a>要求ヘッダー
-| 名前       | 型 | 説明|
+| 名前       | 種類 | 説明|
 |:-----------|:------|:----------|
 | Authorization  | string  | ベアラー {トークン}。必須。 |
 

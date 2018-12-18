@@ -1,12 +1,13 @@
 ---
 title: revokeAppleVppLicensesActionResult リソースの種類
 description: アップル Vpp ライセンスのアクションの結果を取り消す
-ms.openlocfilehash: f751f90b90bbf282fa05a59a4a1c59d04ccfbb99
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: b45a2ddec46ddc5cac47937cb776d0f0da6c64a8
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27069754"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27361048"
 ---
 # <a name="revokeapplevpplicensesactionresult-resource-type"></a>revokeAppleVppLicensesActionResult リソースの種類
 
@@ -19,7 +20,7 @@ ms.locfileid: "27069754"
 [deviceActionResult](../resources/intune-devices-deviceactionresult.md) から継承します
 
 ## <a name="properties"></a>プロパティ
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
 |actionName|String|[deviceActionResult](../resources/intune-devices-deviceactionresult.md) から継承されるアクション名|
 |actionState|[actionState](../resources/intune-shared-actionstate.md)|[DeviceActionResult](../resources/intune-devices-deviceactionresult.md)から継承される、アクションの状態です。 可能な値は、`none`、`pending`、`canceled`、`active`、`done`、`failed`、`notSupported` です。|

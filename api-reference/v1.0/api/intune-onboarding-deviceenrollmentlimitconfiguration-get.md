@@ -1,12 +1,13 @@
 ---
 title: Get deviceEnrollmentLimitConfiguration
 description: deviceEnrollmentLimitConfiguration オブジェクトのプロパティとリレーションシップを読み取ります。
-ms.openlocfilehash: a06a5af5443aecfee9b021584aefcf59020c5b9a
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 3c92740fc369eb8ef7bc7ca881187d50dd476087
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27024259"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27359907"
 ---
 # <a name="get-deviceenrollmentlimitconfiguration"></a>Get deviceEnrollmentLimitConfiguration
 

@@ -1,12 +1,13 @@
 ---
 title: androidForWorkBindStatus 列挙型
 description: Google の EMM の API を使用してテナントの状態をバインドします。
-ms.openlocfilehash: 4e2764dcab584104de64c360b5502a8f31e92a78
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 56ec9c1d501d54a10f1fc8880086a56061fa865b
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27067093"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27360887"
 ---
 # <a name="androidforworkbindstatus-enum-type"></a>androidForWorkBindStatus 列挙型
 

@@ -1,12 +1,13 @@
 ---
 title: webApp リソースの種類
 description: Web アプリのプロパティと継承されるプロパティを含みます。
-ms.openlocfilehash: 0fe8ee4a904b14da14f13c85d6027b64b4fd45e0
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: dfdf64f8fd6e6efa64c1ad6b5baa727c518461df
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27070458"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27360355"
 ---
 # <a name="webapp-resource-type"></a>webApp リソースの種類
 
@@ -28,9 +29,9 @@ Web アプリのプロパティと継承されるプロパティを含みます�
 |[webApp の更新](../api/intune-apps-webapp-update.md)|[webApp](../resources/intune-apps-webapp.md)|[webApp](../resources/intune-apps-webapp.md) オブジェクトのプロパティを更新します。|
 
 ## <a name="properties"></a>プロパティ
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
-|id|String|エンティティのキー。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|
+|ID|String|エンティティのキー。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|
 |displayName|String|管理者が提供またはインポートしたアプリのタイトル。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|
 |説明|String|アプリの説明。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|
 |publisher|String|アプリの発行元。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|

@@ -1,12 +1,13 @@
 ---
 title: DeviceConfigurationGroupAssignment を削除します。
 description: DeviceConfigurationGroupAssignment を削除します。
-ms.openlocfilehash: ddf484688041594d650b5de0d89ccaa2c0ad007b
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 092ad9d684b6d04d3be7f151d759343fea44cc08
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27068553"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27361419"
 ---
 # <a name="delete-deviceconfigurationgroupassignment"></a>DeviceConfigurationGroupAssignment を削除します。
 

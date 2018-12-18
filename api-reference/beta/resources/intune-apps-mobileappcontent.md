@@ -1,12 +1,13 @@
 ---
 title: mobileAppContent リソースの種類
 description: 特定のアプリのバージョンに関するコンテンツのプロパティが含まれています。 各 mobileAppContent には、複数の mobileAppContentFile を含めることができます。
-ms.openlocfilehash: e57c4c0823636143962ac5fe1c50f4377e731f84
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 8cc5bd6e3c7aa5f08236d2662821a9a5d03707d0
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27070095"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27360348"
 ---
 # <a name="mobileappcontent-resource-type"></a>mobileAppContent リソースの種類
 
@@ -25,9 +26,9 @@ ms.locfileid: "27070095"
 |[mobileAppContent の更新](../api/intune-apps-mobileappcontent-update.md)|[mobileAppContent](../resources/intune-apps-mobileappcontent.md)|[mobileAppContent](../resources/intune-apps-mobileappcontent.md) オブジェクトのプロパティを更新します。|
 
 ## <a name="properties"></a>プロパティ
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
-|id|String|アプリのコンテンツのバージョンです。|
+|ID|String|アプリのコンテンツのバージョンです。|
 
 ## <a name="relationships"></a>リレーションシップ
 |リレーションシップ|型|説明|

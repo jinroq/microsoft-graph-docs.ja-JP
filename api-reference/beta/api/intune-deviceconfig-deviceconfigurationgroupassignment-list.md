@@ -1,12 +1,13 @@
 ---
 title: リスト deviceConfigurationGroupAssignments
 description: DeviceConfigurationGroupAssignment オブジェクトのプロパティと関係を一覧表示します。
-ms.openlocfilehash: b43c78d0b8ad99aaaaa86aeb713d45a425c91aee
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: a1dce979ab078d22c755b77724abfd274a1872cc
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27069164"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27361433"
 ---
 # <a name="list-deviceconfigurationgroupassignments"></a>リスト deviceConfigurationGroupAssignments
 
