@@ -1,12 +1,13 @@
 ---
 title: localizedNotificationMessage の取得
 description: localizedNotificationMessage オブジェクトのプロパティとリレーションシップを読み取ります。
-ms.openlocfilehash: 6539d7238823e96ad1f446d684e5703c3c9b0b53
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 7ed176a3f7d79ba0cf99a0a6deab77f23b3a3904
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27066248"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27302164"
 ---
 # <a name="get-localizednotificationmessage"></a>localizedNotificationMessage の取得
 

@@ -1,12 +1,13 @@
 ---
 title: List deviceComplianceScheduledActionForRules
 description: deviceComplianceScheduledActionForRule オブジェクトのプロパティとリレーションシップをリストします。
-ms.openlocfilehash: b42fef3bf753d889b642c34596b992b6a2012f7d
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 6af1e0c38329ec535b28bcafaedd0a1fde83dcb5
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27071958"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27303067"
 ---
 # <a name="list-devicecompliancescheduledactionforrules"></a>List deviceComplianceScheduledActionForRules
 

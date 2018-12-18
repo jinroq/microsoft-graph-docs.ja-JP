@@ -1,12 +1,13 @@
 ---
 title: groupSetting リソースの種類
 description: グループ設定は、グループ表示名でブロックする単語の一覧や、ゲスト ユーザーがグループの所有者になることを許可するか、といった動作を制御します。
-ms.openlocfilehash: 16eb67e717fb151a627961176b1409e8426e3178
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: dkershaw10
+ms.openlocfilehash: c4e3f92b96aa1be5088cace4adeef3ae33d968b9
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27021075"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27301149"
 ---
 # <a name="groupsetting-resource-type"></a>groupSetting リソースの種類
 
@@ -26,7 +27,7 @@ ms.locfileid: "27021075"
 
 ## <a name="properties"></a>プロパティ
 
-| プロパティ | 型 | 説明 |
+| プロパティ | 種類 | 説明 |
 |:---------------|:--------|:----------|
 |displayName|文字列| 関連するテンプレートに由来する設定グループの名前を表示します。 |
 |id|文字列| 設定の一意識別子です。読み取り専用です。 |

@@ -1,12 +1,13 @@
 ---
 title: AndroidWorkProfileCustomConfiguration を更新します。
 description: AndroidWorkProfileCustomConfiguration オブジェクトのプロパティを更新します。
-ms.openlocfilehash: 85d8d361f89358079b1ca945b80be3b9e239af0b
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 1293ca362719440871576c3976f184ed60e37e43
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27022876"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27302367"
 ---
 # <a name="update-androidworkprofilecustomconfiguration"></a>AndroidWorkProfileCustomConfiguration を更新します。
 
@@ -42,9 +43,9 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}
 
 [AndroidWorkProfileCustomConfiguration](../resources/intune-deviceconfig-androidworkprofilecustomconfiguration.md)を作成するときに必要なプロパティを次の表に示します。
 
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
-|id|String|エンティティのキー。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
+|ID|String|エンティティのキー。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |lastModifiedDateTime|DateTimeOffset|オブジェクトが最後に変更された DateTime。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |createdDateTime|DateTimeOffset|オブジェクトが作成された DateTime。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |説明|String|デバイス構成について管理者が提供した説明。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|

@@ -1,12 +1,13 @@
 ---
 title: ChartAxis リソースの種類
 description: グラフの 1 つの軸を表します。
-ms.openlocfilehash: f92e8dd12dc2d7036d5022e2b293cfc290faf910
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lumine2008
+ms.openlocfilehash: 766a1a6823cc83efb3ecaf7250f230216fc13cb0
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27070928"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27301828"
 ---
 # <a name="chartaxis-resource-type"></a>ChartAxis リソースの種類
 
@@ -23,12 +24,12 @@ ms.locfileid: "27070928"
 |[Update](../api/chartaxis-update.md) | [ChartAxis](chartaxis.md)   |ChartAxis オブジェクトを更新します。 |
 
 ## <a name="properties"></a>プロパティ
-| プロパティ     | 型   |説明|
+| プロパティ     | 種類   |説明|
 |:---------------|:--------|:----------|
-|majorUnit|オブジェクト|2 つの大きい目盛の間隔を表します。数値の値または空の文字列を設定できます。戻り値は常に数値です。|
+|majorUnit|object|2 つの大きい目盛の間隔を表します。数値の値または空の文字列を設定できます。戻り値は常に数値です。|
 |maximum|object|数値軸の最大値を表します。数値の値または空の文字列を設定できます (軸の値が自動の場合)。戻り値は常に数値です。|
 |minimum|object|数値軸の最小値を表します。数値の値または空の文字列を設定できます (軸の値が自動の場合)。戻り値は常に数値です。|
-|minorUnit|オブジェクト|2 つの小さい目盛の間隔を表します。"数値の値または空の文字列を設定できます (軸の値が自動の場合)。戻り値は常に数値です。|
+|minorUnit|object|2 つの小さい目盛の間隔を表します。"数値の値または空の文字列を設定できます (軸の値が自動の場合)。戻り値は常に数値です。|
 
 ## <a name="relationships"></a>関係
 | リレーションシップ | 型   |説明|

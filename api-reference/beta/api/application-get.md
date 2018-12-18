@@ -1,12 +1,13 @@
 ---
 title: アプリケーションを取得します。
 description: プロパティとアプリケーションのオブジェクトの関係を取得します。
-ms.openlocfilehash: 6e1b3f9771205b8b7decb4650993953dd6df2acb
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lleonard-msft
+ms.openlocfilehash: a041cbc4e97a59500106542b88e754b9c495f985
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27068003"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27303494"
 ---
 # <a name="get-application"></a>アプリケーションを取得します。
 
@@ -32,7 +33,7 @@ GET /applications/{id}
 このメソッドは、応答をカスタマイズするための [OData クエリ パラメーター](https://developer.microsoft.com/graph/docs/concepts/query_parameters)をサポートします。
 
 ## <a name="request-headers"></a>要求ヘッダー
-| 名前       | 型 | 説明|
+| 名前       | 種類 | 説明|
 |:-----------|:------|:----------|
 | Authorization  | string  | ベアラー {トークン}。必須。  |
 

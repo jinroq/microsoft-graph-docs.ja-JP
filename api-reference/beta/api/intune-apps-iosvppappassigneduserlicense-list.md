@@ -1,12 +1,13 @@
 ---
 title: リスト iosVppAppAssignedUserLicenses
 description: IosVppAppAssignedUserLicense オブジェクトのプロパティと関係を一覧表示します。
-ms.openlocfilehash: 7ab7b55dfdcd9f8cbe2d015f46ac013e7840db26
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 4e4de201d570813a3b985430d97774444d1e76f9
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27072871"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27302493"
 ---
 # <a name="list-iosvppappassigneduserlicenses"></a>リスト iosVppAppAssignedUserLicenses
 

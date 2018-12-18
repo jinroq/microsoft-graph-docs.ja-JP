@@ -1,12 +1,13 @@
 ---
 title: userAppInstallStatus リソースの種類
 description: プロパティには、ユーザーのインストールのステータスが含まれています。
-ms.openlocfilehash: 06d9be7bc6d5aa72bde80802b5f6bb282dc5707c
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 024fff32aac2a268a2e0bbec81a6d46b31012a11
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27072762"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27302759"
 ---
 # <a name="userappinstallstatus-resource-type"></a>userAppInstallStatus リソースの種類
 
@@ -24,10 +25,10 @@ ms.locfileid: "27072762"
 |[UserAppInstallStatus を削除します。](../api/intune-apps-userappinstallstatus-delete.md)|なし|の[userAppInstallStatus](../resources/intune-apps-userappinstallstatus.md)を削除します。|
 |[UserAppInstallStatus を更新します。](../api/intune-apps-userappinstallstatus-update.md)|[userAppInstallStatus](../resources/intune-apps-userappinstallstatus.md)|[UserAppInstallStatus](../resources/intune-apps-userappinstallstatus.md)オブジェクトのプロパティを更新します。|
 
-## <a name="properties"></a>プロパティ
-|プロパティ|型|説明|
+## <a name="properties"></a>Properties
+|プロパティ|種類|説明|
 |:---|:---|:---|
-|id|String|エンティティのキー。|
+|ID|String|エンティティのキー。|
 |userName|String|ユーザー名です。|
 |userPrincipalName|String|ユーザー プリンシパル名です。|
 |installedDeviceCount|Int32|インストールされたデバイスの数です。|

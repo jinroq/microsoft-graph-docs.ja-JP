@@ -1,12 +1,13 @@
 ---
 title: enrollmentConfigurationAssignment の作成
 description: 新しい enrollmentConfigurationAssignment オブジェクトを作成します。
-ms.openlocfilehash: 48afdefb08b9520a2ce4564bd0cc528bed7d0012
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: e2677c6a1ecabe71a0ff46c8e11e2e8d4515f786
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27020810"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27301618"
 ---
 # <a name="create-enrollmentconfigurationassignment"></a>enrollmentConfigurationAssignment の作成
 
@@ -42,10 +43,10 @@ POST /deviceManagement/deviceEnrollmentConfigurations/{deviceEnrollmentConfigura
 
 次の表に、enrollmentConfigurationAssignment の作成時に必要なプロパティを示します。
 
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
-|id|String|まだ文書化されていません|
-|target|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|まだ文書化されていません|
+|ID|String|まだ文書化されていません|
+|ターゲット|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|まだ文書化されていません|
 
 
 

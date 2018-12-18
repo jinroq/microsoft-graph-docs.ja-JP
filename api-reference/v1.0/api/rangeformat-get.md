@@ -1,12 +1,13 @@
 ---
 title: RangeFormat を取得する
 description: rangeformat オブジェクトのプロパティと関係を取得します。
-ms.openlocfilehash: a60c2b7c61f07e70ed9a858069647a60a90b42b4
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lumine2008
+ms.openlocfilehash: 180f9a0088e0c6f724e4983acdb51f87458962ee
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27020306"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27304789"
 ---
 # <a name="get-rangeformat"></a>RangeFormat を取得する
 

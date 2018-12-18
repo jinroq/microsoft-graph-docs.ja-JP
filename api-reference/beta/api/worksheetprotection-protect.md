@@ -1,12 +1,13 @@
 ---
 title: 'WorksheetProtection: protect'
 description: ワークシートを保護します。ワークシートが保護されている場合はスローします。
-ms.openlocfilehash: 885928c592f6aafe320181e62b3993dfbdadf87e
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lumine2008
+ms.openlocfilehash: 28aa911e9eaee53272432bda78ed01073d899166
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27070025"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27303478"
 ---
 # <a name="worksheetprotection-protect"></a>WorksheetProtection: protect
 
@@ -37,7 +38,7 @@ POST /workbook/worksheets/{id|name}/protection/protect
 ## <a name="request-body"></a>要求本文
 要求本文で、次のパラメーターを含む JSON オブジェクトを指定します。
 
-| パラメーター    | 型   |説明|
+| パラメーター    | 種類   |説明|
 |:---------------|:--------|:----------|
 |options|WorksheetProtectionOptions|省略可能。シートの保護のオプション。|
 

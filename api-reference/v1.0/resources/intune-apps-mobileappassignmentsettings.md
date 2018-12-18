@@ -1,12 +1,13 @@
 ---
 title: mobileAppAssignmentSettings リソースの種類
 description: グループへのモバイル アプリの割り当てに使用されるプロパティを含める抽象クラス。
-ms.openlocfilehash: 1a08de28100dfa78d7161a2c178596e0a7e5dcc0
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 34f742ca6e08ee39bcb179187e387906414444a8
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27023094"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27301625"
 ---
 # <a name="mobileappassignmentsettings-resource-type"></a>mobileAppAssignmentSettings リソースの種類
 
@@ -14,7 +15,7 @@ ms.locfileid: "27023094"
 
 グループへのモバイル アプリの割り当てに使用されるプロパティを含める抽象クラス。
 ## <a name="properties"></a>プロパティ
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
 
 ## <a name="relationships"></a>リレーションシップ

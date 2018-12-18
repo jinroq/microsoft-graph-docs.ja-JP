@@ -1,12 +1,13 @@
 ---
 title: VppTokenを削除します。
 description: vppToken を削除します。
-ms.openlocfilehash: e1c6471752bcf4414942de954848a6424d6a01ce
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 34d079883344f0725b87d4c1b46c92a37000fb40
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27020855"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27302857"
 ---
 # <a name="delete-vpptoken"></a>VppTokenを削除します。
 

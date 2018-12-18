@@ -1,12 +1,13 @@
 ---
 title: setPriority アクション
 description: まだ文書化されていません
-ms.openlocfilehash: 5c446dcc1951e459e736048d34218faee5745428
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: d9d4eb0beb72187a71771148985466a5f72644a0
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27023101"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27303942"
 ---
 # <a name="setpriority-action"></a>setPriority アクション
 
@@ -42,7 +43,7 @@ POST /deviceManagement/deviceEnrollmentConfigurations/{deviceEnrollmentConfigura
 
 次の表に、このアクションで使用できるパラメーターを示します。
 
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
 |priority|Int32|まだ文書化されていません|
 

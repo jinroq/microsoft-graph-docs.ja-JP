@@ -1,12 +1,13 @@
 ---
 title: AndroidForWorkApp を削除します。
 description: AndroidForWorkApp を削除します。
-ms.openlocfilehash: ff50960cc7f7b0a52946d94e87e08016a46e3b20
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 53ea38fe0e16f4222a9cf65395565787f63d2745
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27069155"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27304012"
 ---
 # <a name="delete-androidforworkapp"></a>AndroidForWorkApp を削除します。
 

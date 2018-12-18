@@ -1,12 +1,13 @@
 ---
 title: 'イベント: 承諾'
 description: ユーザーの予定表で指定したイベントをそのまま使用します。
-ms.openlocfilehash: c44d81953ca2834dc4d3bf5eea0bf4388766c1da
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: angelgolfer-ms
+ms.openlocfilehash: bfd8aaf654b1bab15dc2c9b8db4ebaea5856cf1e
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27023330"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27301597"
 ---
 # <a name="event-accept"></a>イベント: 承諾
 
@@ -40,7 +41,7 @@ POST /me/calendargroups/{id}/calendars/{id}/events/{id}/accept
 POST /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{id}/accept
 ```
 ## <a name="request-headers"></a>要求ヘッダー
-| 名前       | 型 | 説明|
+| 名前       | 種類 | 説明|
 |:---------------|:--------|:----------|
 | Authorization  | string  | ベアラー {トークン}。必須。 |
 | Content-Type | string  | エンティティ本文内のデータの性質です。必須。 |
@@ -48,10 +49,10 @@ POST /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{
 ## <a name="request-body"></a>要求本文
 要求本文で、次のパラメーターを含む JSON オブジェクトを指定します。
 
-| パラメーター    | 型   |説明|
+| パラメーター    | 種類   |説明|
 |:---------------|:--------|:----------|
 |comment|String|応答に含まれるテキスト。省略可。|
-|sendResponse|ブール値|応答が開催者に送信される場合は、`true`。それ以外の場合は、`false`。省略可。既定値は `true` です。|
+|sendResponse|ブール型|応答が開催者に送信される場合は、`true`。それ以外の場合は、`false`。省略可。既定値は `true` です。|
 
 ## <a name="response"></a>応答
 

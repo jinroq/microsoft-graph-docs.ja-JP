@@ -1,12 +1,13 @@
 ---
 title: TableColumn を作成する
 description: この API を使用して、新しい TableColumn を作成します。
-ms.openlocfilehash: 166b52307ae44e1f4e21e7bd64982e8488423c45
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lumine2008
+ms.openlocfilehash: 8dd2ce889fcd5d6677ca3aeef2f8c544325bdbac
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27068395"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27305370"
 ---
 # <a name="create-tablecolumn"></a>TableColumn を作成する
 

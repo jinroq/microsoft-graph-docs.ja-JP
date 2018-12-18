@@ -1,12 +1,13 @@
 ---
 title: MobileAppInstallStatus を取得します。
 description: MobileAppInstallStatus オブジェクトのプロパティと関係を参照してください。
-ms.openlocfilehash: 0663b3cb13714be201fd9f6917a2a0689d84402b
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 163e694d6b60d7d7d97408d33ebf682a88be6ea9
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27073937"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27303424"
 ---
 # <a name="get-mobileappinstallstatus"></a>MobileAppInstallStatus を取得します。
 

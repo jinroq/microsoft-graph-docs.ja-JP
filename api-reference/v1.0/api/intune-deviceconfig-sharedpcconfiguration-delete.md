@@ -1,12 +1,13 @@
 ---
 title: sharedPCConfiguration の削除
 description: sharedPCConfiguration を削除します。
-ms.openlocfilehash: 88612ac179482e7db7d957cc668030467afc88f7
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: aca06e7a2d0d3ce6aaa28a7b86274c8c4f44acc3
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27022056"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27304397"
 ---
 # <a name="delete-sharedpcconfiguration"></a>sharedPCConfiguration の削除
 

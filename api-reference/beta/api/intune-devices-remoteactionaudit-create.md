@@ -1,12 +1,13 @@
 ---
 title: RemoteActionAudit を作成します。
 description: 新しい remoteActionAudit オブジェクトを作成します。
-ms.openlocfilehash: f39f1b289a081d89135fd7be230e2aecba6823c8
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 2af2ca759463419e8619e5298b84ed002472e455
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27071269"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27302836"
 ---
 # <a name="create-remoteactionaudit"></a>RemoteActionAudit を作成します。
 
@@ -44,9 +45,9 @@ POST /deviceManagement/remoteActionAudits
 
 次の表は、remoteActionAudit を作成するときに必要なプロパティを示します。
 
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
-|id|String|レポートの id。|
+|ID|String|レポートの id。|
 |deviceDisplayName|String|Intune デバイスの名前です。|
 |userName|String|\[推奨\]InitiatedByUserPrincipalName を代わりに使用してください。|
 |initiatedByUserPrincipalName|String|デバイスのアクションを開始したユーザーは、UPN 形式です。|

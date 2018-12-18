@@ -1,12 +1,13 @@
 ---
 title: EmbeddedSIMActivationCodePool を作成します。
 description: 新しい embeddedSIMActivationCodePool オブジェクトを作成します。
-ms.openlocfilehash: ede66f9c1221a32ea500e7ac26626b5e1bf89660
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 88b495437859e6e7552763581886e0bf6786374c
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27072732"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27302598"
 ---
 # <a name="create-embeddedsimactivationcodepool"></a>EmbeddedSIMActivationCodePool を作成します。
 
@@ -44,9 +45,9 @@ POST /deviceManagement/embeddedSIMActivationCodePools
 
 次の表は、embeddedSIMActivationCodePool を作成するときに必要なプロパティを示します。
 
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
-|id|String|SIM のアクティブ化コードの埋め込み、プールの一意の識別子です。 システムでは、作成時に割り当てられた値が生成されます。|
+|ID|String|SIM のアクティブ化コードの埋め込み、プールの一意の識別子です。 システムでは、作成時に割り当てられた値が生成されます。|
 |displayName|String|管理者には、埋め込み SIM アクティベーション コードのプールの名前が定義されています。|
 |createdDateTime|DateTimeOffset|埋め込み SIM アクティベーション コードのプールが作成された時刻。 サービス側が生成されます。|
 |変更された日時|DateTimeOffset|埋め込み SIM アクティベーション コードのプールが最後に修正された時間です。 サービス側を更新します。|

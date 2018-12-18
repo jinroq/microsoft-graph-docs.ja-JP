@@ -1,12 +1,13 @@
 ---
 title: deviceComplianceUserOverview リソースの種類
 description: まだ文書化されていません
-ms.openlocfilehash: a650d9e017bbcca825aa7f15f829bba572f7e48f
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: fd11bb0949e9279b826cfc12e4c89a9f6b34ff53
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27021892"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27305265"
 ---
 # <a name="devicecomplianceuseroverview-resource-type"></a>deviceComplianceUserOverview リソースの種類
 
@@ -20,9 +21,9 @@ ms.locfileid: "27021892"
 |[Update deviceComplianceUserOverview](../api/intune-deviceconfig-devicecomplianceuseroverview-update.md)|[deviceComplianceUserOverview](../resources/intune-deviceconfig-devicecomplianceuseroverview.md)|[deviceComplianceUserOverview](../resources/intune-deviceconfig-devicecomplianceuseroverview.md) オブジェクトのプロパティを更新します。|
 
 ## <a name="properties"></a>プロパティ
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
-|id|String|エンティティのキー。|
+|ID|String|エンティティのキー。|
 |pendingCount|Int32|保留中のユーザーの数|
 |notApplicableCount|Int32|適用されないユーザーの数|
 |successCount|Int32|成功したユーザーの数|

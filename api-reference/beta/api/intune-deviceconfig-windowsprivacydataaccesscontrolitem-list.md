@@ -1,12 +1,13 @@
 ---
 title: リスト windowsPrivacyDataAccessControlItems
 description: WindowsPrivacyDataAccessControlItem オブジェクトのプロパティと関係を一覧表示します。
-ms.openlocfilehash: b176b7632d62957f855597598b8b6ade9050b26a
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 642db3e0381adf3bedfff52baf4987b7ea43cdaf
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27073644"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27303172"
 ---
 # <a name="list-windowsprivacydataaccesscontrolitems"></a>リスト windowsPrivacyDataAccessControlItems
 

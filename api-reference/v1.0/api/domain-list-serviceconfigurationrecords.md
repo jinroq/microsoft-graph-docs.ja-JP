@@ -1,12 +1,13 @@
 ---
 title: serviceConfigurationRecords の一覧表示
 description: ドメインのサービスを有効にするために必要な domainDnsRecord オブジェクトの一覧を取得します。
-ms.openlocfilehash: 92cc0695fa4128fcd32a59aee210fc63a35ac412
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lleonard-msft
+ms.openlocfilehash: 067315499b1557f667578f17f687ad21bb166dc5
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27020690"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27302941"
 ---
 # <a name="list-serviceconfigurationrecords"></a>serviceConfigurationRecords の一覧表示
 

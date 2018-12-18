@@ -1,12 +1,13 @@
 ---
 title: appManagementLevel 列挙型
 description: アプリケーションの管理のレベル
-ms.openlocfilehash: 35fc83f601964d415a1a4c8598f21493d06624de
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: e552055d7abd7f61c71243aa696acbbd263008e0
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27069717"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27301338"
 ---
 # <a name="appmanagementlevel-enum-type"></a>appManagementLevel 列挙型
 

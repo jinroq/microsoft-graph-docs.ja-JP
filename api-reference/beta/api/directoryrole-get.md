@@ -1,12 +1,13 @@
 ---
 title: directoryRole を取得する
 description: directoryRole オブジェクトのプロパティを取得します。
-ms.openlocfilehash: 70894d736ee8d7e1f2fda0edf2bb60b9d3654da7
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lleonard-msft
+ms.openlocfilehash: efb3de57c8cc0a36a11c5af873ee1507927e2e38
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27067903"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27302948"
 ---
 # <a name="get-directoryrole"></a>directoryRole を取得する
 
@@ -31,7 +32,7 @@ GET /directoryRoles/{id}
 このメソッドは、応答をカスタマイズするための [OData クエリ パラメーター](https://developer.microsoft.com/graph/docs/concepts/query_parameters)をサポート**していません** (例: $filter はここではサポートされていません)。
 
 ## <a name="request-headers"></a>要求ヘッダー
-| 名前       | 型 | 説明|
+| 名前       | 種類 | 説明|
 |:-----------|:------|:----------|
 | Authorization  | string  | ベアラー {トークン}。必須。 |
 

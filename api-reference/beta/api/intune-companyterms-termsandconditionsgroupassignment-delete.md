@@ -1,12 +1,13 @@
 ---
 title: TermsAndConditionsGroupAssignment を削除します。
 description: TermsAndConditionsGroupAssignment を削除します。
-ms.openlocfilehash: 225d411b9b0781c69122b34341e68264b32645ef
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: fdbc54434741bab2fee78f35b62a0ddce8d6ad74
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27071008"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27304362"
 ---
 # <a name="delete-termsandconditionsgroupassignment"></a>TermsAndConditionsGroupAssignment を削除します。
 

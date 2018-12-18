@@ -1,12 +1,13 @@
 ---
 title: deviceEnrollmentPlatformRestriction リソースの種類
 description: プラットフォーム固有の登録の制限
-ms.openlocfilehash: 823eecc37dc8ee4536d5cb63213f2bb80ca5138d
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 22401c83b3e68d66a2bd7a39359602e2aca0a932
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27072607"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27304124"
 ---
 # <a name="deviceenrollmentplatformrestriction-resource-type"></a>deviceEnrollmentPlatformRestriction リソースの種類
 
@@ -16,7 +17,7 @@ ms.locfileid: "27072607"
 
 プラットフォーム固有の登録の制限
 ## <a name="properties"></a>プロパティ
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
 |platformBlocked|ブール型 (Boolean)|登録で対象プラットフォームをブロックします|
 |personalDeviceEnrollmentBlocked|ブール型 (Boolean)|個人所有のデバイスの登録をブロックします|

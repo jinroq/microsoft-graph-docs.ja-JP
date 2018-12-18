@@ -1,12 +1,13 @@
 ---
 title: ScopedRoleMember を削除します。
 description: 管理単位からスコープ ロールのメンバーを削除します。
-ms.openlocfilehash: 562bf81d5c9c3db04a85d45110e6dce5a3ca9d53
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lleonard-msft
+ms.openlocfilehash: 0c312266b672a93d58723fd39a26cf7bd48bd7f4
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27067406"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27303004"
 ---
 # <a name="remove-a-scopedrolemember"></a>ScopedRoleMember を削除します。
 

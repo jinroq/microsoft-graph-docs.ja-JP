@@ -1,12 +1,13 @@
 ---
 title: mobileAppCategories のリスト
 description: mobileAppCategory オブジェクトのプロパティとリレーションシップをリストします。
-ms.openlocfilehash: bc39e2653bab4840fedc390ce6cb7497bcfd9606
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 1776a4c563a283a592d2a0ad37dc215423e91d0d
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27073502"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27304824"
 ---
 # <a name="list-mobileappcategories"></a>mobileAppCategories のリスト
 

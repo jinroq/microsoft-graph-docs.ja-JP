@@ -1,12 +1,13 @@
 ---
 title: executeAction アクション
 description: まだ文書化されていません
-ms.openlocfilehash: 1358b95bbb61aaef71df44c87ab6aeb0bc210761
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 8ab2749e694ac600c141e314018308efe34b4151
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27073652"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27305153"
 ---
 # <a name="executeaction-action"></a>executeAction アクション
 
@@ -46,7 +47,7 @@ POST /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/device
 
 次の表に、このアクションで使用できるパラメーターを示します。
 
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
 |actionName|[managedDeviceRemoteAction](../resources/intune-devices-manageddeviceremoteaction.md)|まだ文書化されていません|
 |deviceIds|String コレクション|まだ文書化されていません|

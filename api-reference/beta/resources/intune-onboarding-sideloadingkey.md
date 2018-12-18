@@ -1,12 +1,13 @@
 ---
 title: sideLoadingKey リソースの種類
 description: SideLoadingKey エンティティは、Windows 8 とテナントのビジネス アプリケーションのインストールの行に 8.1 のデバイスに必要です。
-ms.openlocfilehash: cac2360e2c50e64e1b421df4efaf53802d78558b
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 66dc833ab46f8dc1c030a3ef97be78cd73ee3660
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27074090"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27304313"
 ---
 # <a name="sideloadingkey-resource-type"></a>sideLoadingKey リソースの種類
 
@@ -24,10 +25,10 @@ SideLoadingKey エンティティは、Windows 8 とテナントのビジネス 
 |[SideLoadingKey を削除します。](../api/intune-onboarding-sideloadingkey-delete.md)|なし|の[sideLoadingKey](../resources/intune-onboarding-sideloadingkey.md)を削除します。|
 |[SideLoadingKey を更新します。](../api/intune-onboarding-sideloadingkey-update.md)|[sideLoadingKey](../resources/intune-onboarding-sideloadingkey.md)|[SideLoadingKey](../resources/intune-onboarding-sideloadingkey.md)オブジェクトのプロパティを更新します。|
 
-## <a name="properties"></a>プロパティ
-|プロパティ|型|説明|
+## <a name="properties"></a>Properties
+|プロパティ|種類|説明|
 |:---|:---|:---|
-|id|String|側のキーの一意の id の読み込み|
+|ID|String|側のキーの一意の id の読み込み|
 |value|文字列|側の読み込みキー] の値は 5 列 5 行値、hiphens によって区切られています。|
 |displayName|String|側の読み込みキー名、it プロフェッショナルの管理者に表示されます。|
 |説明|String|側キーの読み込み中の説明は、it プロフェッショナルの管理者に表示されます.|

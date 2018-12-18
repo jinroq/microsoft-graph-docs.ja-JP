@@ -1,12 +1,13 @@
 ---
 title: 'educationSubmission: unsubmit'
-description: . 送信中に、すべてのリソースからコピーされます submittedResources workingResources バケットにします。 先生はグレーディングの作業中のリソースの一覧を見ています。
-ms.openlocfilehash: 610b5a69a06c29d2e2b9b1fa6eb501a56d59b076
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+description: 'アクション起動された後、割り当ての送信時に、受講生受講者が要求していることを示します。 この操作は、受講者のみ取得できます。 '
+author: dipakboyed
+ms.openlocfilehash: a61f2e9c05691266ae9248ca95700f173e0ee0b0
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27067337"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27304229"
 ---
 # <a name="educationsubmission-unsubmit"></a>educationSubmission: unsubmit
 

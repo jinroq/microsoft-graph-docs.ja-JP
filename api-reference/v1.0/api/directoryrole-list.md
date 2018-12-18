@@ -1,12 +1,13 @@
 ---
 title: directoryRoles を一覧表示する
 description: テナントでアクティブになっているディレクトリ ロールを一覧表示します。
-ms.openlocfilehash: ef43a0b016aadccd4a92a53672a18b7fe74ec154
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lleonard-msft
+ms.openlocfilehash: c5639bac02fd002130657bc4e8b95f62d3bec986
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27022989"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27301710"
 ---
 # <a name="list-directoryroles"></a>directoryRoles を一覧表示する
 
@@ -29,7 +30,7 @@ GET /directoryRoles
 このメソッドは、応答をカスタマイズするための [OData クエリ パラメーター](https://developer.microsoft.com/graph/docs/concepts/query_parameters)をサポート**していません** (例: $filter はここではサポートされていません)。
 
 ## <a name="request-headers"></a>要求ヘッダー
-| 名前       | 型 | 説明|
+| 名前       | 種類 | 説明|
 |:-----------|:------|:----------|
 | Authorization  | string  | ベアラー {トークン}。必須。 |
 

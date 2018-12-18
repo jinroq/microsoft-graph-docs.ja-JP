@@ -1,12 +1,13 @@
 ---
 title: targetedManagedAppPolicyAssignment リソースの種類
 description: グループまたはアプリの展開の種類。
-ms.openlocfilehash: 06850c27b9f13a4613301a14ca7ba29e758be9ac
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 89caa9b24f9b22bd064931763fef2361102a689e
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27024228"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27303116"
 ---
 # <a name="targetedmanagedapppolicyassignment-resource-type"></a>targetedManagedAppPolicyAssignment リソースの種類
 
@@ -22,10 +23,10 @@ ms.locfileid: "27024228"
 |[Update targetedManagedAppPolicyAssignment](../api/intune-mam-targetedmanagedapppolicyassignment-update.md)|[targetedManagedAppPolicyAssignment](../resources/intune-mam-targetedmanagedapppolicyassignment.md)|[targetedManagedAppPolicyAssignment](../resources/intune-mam-targetedmanagedapppolicyassignment.md) オブジェクトのプロパティを更新します。|
 
 ## <a name="properties"></a>プロパティ
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
-|id|String|ID|
-|target|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|グループまたはアプリの展開の識別子|
+|ID|String|ID|
+|ターゲット|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|グループまたはアプリの展開の識別子|
 
 ## <a name="relationships"></a>リレーションシップ
 なし

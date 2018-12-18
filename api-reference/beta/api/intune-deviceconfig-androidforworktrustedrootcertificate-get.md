@@ -1,12 +1,13 @@
 ---
 title: AndroidForWorkTrustedRootCertificate を取得します。
 description: AndroidForWorkTrustedRootCertificate オブジェクトのプロパティと関係を参照してください。
-ms.openlocfilehash: ae3db38cea96c2e895b32d03df7f4f2e5cbde6c5
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 5227d516cd14ee344851be5cd955b6f0aa9c08bf
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27070238"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27303193"
 ---
 # <a name="get-androidforworktrustedrootcertificate"></a>AndroidForWorkTrustedRootCertificate を取得します。
 

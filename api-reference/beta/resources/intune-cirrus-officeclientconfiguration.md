@@ -1,12 +1,13 @@
 ---
 title: officeClientConfiguration リソースの種類
 description: Office クライアントの構成。
-ms.openlocfilehash: de510d7a57c10d1f74a3e58856afb9233243ec17
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 67a7845a2e0327e2e5de37d424274f6e2ee35604
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27069441"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27303837"
 ---
 # <a name="officeclientconfiguration-resource-type"></a>officeClientConfiguration リソースの種類
 
@@ -23,10 +24,10 @@ Office クライアントの構成。
 |[assign action](../api/intune-cirrus-officeclientconfiguration-assign.md)|[officeClientConfigurationAssignment](../resources/intune-cirrus-officeclientconfigurationassignment.md)コレクション|ポリシーのすべての対象とするグループを交換してください。|
 |[updatePriorities アクション](../api/intune-cirrus-officeclientconfiguration-updatepriorities.md)|なし|ポリシーの優先順位を更新します。|
 
-## <a name="properties"></a>プロパティ
-|プロパティ|型|説明|
+## <a name="properties"></a>Properties
+|プロパティ|種類|説明|
 |:---|:---|:---|
-|id|String|Office クライアントの構成のポリシーの id。|
+|ID|String|Office クライアントの構成のポリシーの id。|
 |userPreferencePayload|Stream|JSON の環境設定は、バイナリ形式の文字列は、ユーザーがこれらの値をオーバーライドすることができます。|
 |policyPayload|Stream|JSON のポリシー設定はバイナリ形式の文字列は、ユーザーがこれらの値を変更することはできません。|
 |説明|String|まだ文書化されていません|

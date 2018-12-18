@@ -1,12 +1,13 @@
 ---
 title: windowsInformationProtectionPinCharacterRequirements 列挙型
 description: 暗証番号 (pin) の文字の要件
-ms.openlocfilehash: 36da39cb344815fc04016a87f0638c572e75a676
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 7a89916f53d252ee72fab52d52c1c40f295f7b6f
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27068773"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27303676"
 ---
 # <a name="windowsinformationprotectionpincharacterrequirements-enum-type"></a>windowsInformationProtectionPinCharacterRequirements 列挙型
 

@@ -1,12 +1,13 @@
 ---
 title: Get managedAppProtection
 description: managedAppProtection オブジェクトのプロパティとリレーションシップを読み取ります。
-ms.openlocfilehash: 2dd8f4d03c5df49994ff265a421c575cf21ba35a
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: bdb4f574c279606de7de0772ff463f02dda3a875
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27021232"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27303893"
 ---
 # <a name="get-managedappprotection"></a>Get managedAppProtection
 

@@ -1,12 +1,13 @@
 ---
 title: WindowsUniversalAppXContainedApp を作成します。
 description: 新しい windowsUniversalAppXContainedApp オブジェクトを作成します。
-ms.openlocfilehash: 156af7a32e6041fbe06bc4f3dca4071425e5b468
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 97f50a79194af878569327073ae8911bf08199f3
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27073512"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27302815"
 ---
 # <a name="create-windowsuniversalappxcontainedapp"></a>WindowsUniversalAppXContainedApp を作成します。
 
@@ -46,9 +47,9 @@ POST /deviceAppManagement/mobileApps/{mobileAppId}/microsoft.graph.windowsUniver
 
 次の表は、windowsUniversalAppXContainedApp を作成するときに必要なプロパティを示します。
 
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
-|id|String|エンティティのキー。 [MobileContainedApp](../resources/intune-apps-mobilecontainedapp.md)から継承されました。|
+|ID|String|エンティティのキー。 [MobileContainedApp](../resources/intune-apps-mobilecontainedapp.md)から継承されました。|
 |appUserModelId|String|WindowsUniversalAppX アプリケーションの格納されているアプリケーションのアプリケーション ユーザー モデル ID です。|
 
 

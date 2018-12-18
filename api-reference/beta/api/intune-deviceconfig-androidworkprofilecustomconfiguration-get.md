@@ -1,12 +1,13 @@
 ---
 title: AndroidWorkProfileCustomConfiguration を取得します。
 description: AndroidWorkProfileCustomConfiguration オブジェクトのプロパティと関係を参照してください。
-ms.openlocfilehash: 3dd0d085445045f882962e278018e57727c538be
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 0c68ba789f98b3c6390ae146ceca644febbd0084
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27070954"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27302339"
 ---
 # <a name="get-androidworkprofilecustomconfiguration"></a>AndroidWorkProfileCustomConfiguration を取得します。
 

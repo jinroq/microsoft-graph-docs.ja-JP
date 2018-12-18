@@ -1,12 +1,13 @@
 ---
 title: iosUpdateDeviceStatus の削除
 description: iosUpdateDeviceStatus の削除
-ms.openlocfilehash: be7935e076f65ee0c21272f4894d4b1d207dfe08
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 62a6733fb0765a48928501c8876308d6aa50cb0c
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27067833"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27302297"
 ---
 # <a name="delete-iosupdatedevicestatus"></a>iosUpdateDeviceStatus の削除
 

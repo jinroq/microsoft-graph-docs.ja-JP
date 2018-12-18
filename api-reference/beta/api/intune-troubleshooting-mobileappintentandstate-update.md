@@ -1,12 +1,13 @@
 ---
 title: MobileAppIntentAndState を更新します。
 description: MobileAppIntentAndState オブジェクトのプロパティを更新します。
-ms.openlocfilehash: 36bbfa2ea41f68b84ae711204fcbdafb3c309aa2
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: d219e6d9d146f71c4979973e7f6510010fe2fa92
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27070016"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27303186"
 ---
 # <a name="update-mobileappintentandstate"></a>MobileAppIntentAndState を更新します。
 
@@ -44,9 +45,9 @@ PATCH /users/{usersId}/mobileAppIntentAndStates/{mobileAppIntentAndStateId}
 
 [MobileAppIntentAndState](../resources/intune-troubleshooting-mobileappintentandstate.md)を作成するときに必要なプロパティを次の表に示します。
 
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
-|id|String|オブジェクトの UUID|
+|ID|String|オブジェクトの UUID|
 |managedDeviceIdentifier|String|Intune によって作成または収集されるデバイス識別子。|
 |userId|String|デバイスを登録しようとするユーザーの識別子。|
 |mobileAppList|[mobileAppIntentAndStateDetail](../resources/intune-troubleshooting-mobileappintentandstatedetail.md)コレクション|ペイロードの目的と、テナントの状態の一覧です。|

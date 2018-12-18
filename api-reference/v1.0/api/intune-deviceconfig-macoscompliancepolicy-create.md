@@ -1,12 +1,13 @@
 ---
 title: macOSCompliancePolicy の作成
 description: 新しい macOSCompliancePolicy オブジェクトを作成します。
-ms.openlocfilehash: 78d5be45cf5339be669835e8471eb421a6b96889
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 615d60cc91d4ca463331b6352d29734640d6f5fc
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27021482"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27302234"
 ---
 # <a name="create-macoscompliancepolicy"></a>macOSCompliancePolicy の作成
 
@@ -42,9 +43,9 @@ POST /deviceManagement/deviceCompliancePolicies
 
 次の表に、macOSCompliancePolicy 作成時に必要なプロパティを示します。
 
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
-|id|String|エンティティのキー。 [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md) から継承します|
+|ID|String|エンティティのキー。 [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md) から継承します|
 |createdDateTime|DateTimeOffset|オブジェクトが作成された DateTime。 [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md) から継承します|
 |説明|String|デバイス構成について管理者が提供した説明。 [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md) から継承します|
 |lastModifiedDateTime|DateTimeOffset|オブジェクトが最後に変更された DateTime。 [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md) から継承します|
@@ -64,9 +65,9 @@ POST /deviceManagement/deviceCompliancePolicies
 |deviceThreatProtectionEnabled|Boolean|デバイスへの脅威に対する保護が有効になっている必要があります。|
 |deviceThreatProtectionRequiredSecurityLevel|[deviceThreatProtectionLevel](../resources/intune-deviceconfig-devicethreatprotectionlevel.md)|Mobile Threat Protection に、コンプライアンス違反をレポートするための最小のリスク レベルを要求します。 可能な値は、`unavailable`、`secured`、`low`、`medium`、`high`、`notSet` です。|
 |storageRequireEncryption|Boolean|Mac OS デバイスでの暗号化を要求します。|
-|firewallEnabled|ブール値|かどうか、か、これらのファイアウォールは有効にする必要があります。|
-|firewallBlockAllIncoming|ブール値|「すべての着信接続をブロックする] オプションに対応します。|
-|firewallEnableStealthMode|ブール値|「有効にするステルス モード」に対応|
+|firewallEnabled|ブール型|かどうか、か、これらのファイアウォールは有効にする必要があります。|
+|firewallBlockAllIncoming|ブール型|「すべての着信接続をブロックする] オプションに対応します。|
+|firewallEnableStealthMode|ブール型|「有効にするステルス モード」に対応|
 
 
 

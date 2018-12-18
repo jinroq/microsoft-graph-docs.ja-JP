@@ -1,12 +1,13 @@
 ---
 title: 'ChartFill: setSolidColor'
 description: グラフ要素の塗りつぶしの書式設定を均一な色に設定します。
-ms.openlocfilehash: 320e0e4ef116e2130fd99fab7e254c2fa987cb60
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lumine2008
+ms.openlocfilehash: e33c7a4740b332a8827a4d64a54f2b816c8a1b16
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27069573"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27302808"
 ---
 # <a name="chartfill-setsolidcolor"></a>ChartFill: setSolidColor
 
@@ -39,7 +40,7 @@ POST /workbook/worksheets/{id|name}/charts(<name>)/legend/format/fill/setSolidCo
 ## <a name="request-body"></a>要求本文
 要求本文で、次のパラメーターを含む JSON オブジェクトを指定します。
 
-| パラメーター    | 型   |説明|
+| パラメーター    | 種類   |説明|
 |:---------------|:--------|:----------|
 |color|文字列|枠線の色を表す HTML カラー コード。形式は #RRGGBB (例: "FFA500")、または名前付きの HTML 色 (例: "オレンジ") です。|
 

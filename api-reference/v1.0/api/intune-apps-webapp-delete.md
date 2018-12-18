@@ -1,12 +1,13 @@
 ---
 title: Delete webApp
 description: webApp を削除します。
-ms.openlocfilehash: c536a39dd253b14289a29fafa3ce9d0230a9fff2
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 03e2a04c9282a917fde430c970b50afacfa94304
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27023584"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27301723"
 ---
 # <a name="delete-webapp"></a>Delete webApp
 

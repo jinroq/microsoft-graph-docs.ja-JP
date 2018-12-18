@@ -1,12 +1,13 @@
 ---
 title: officeProductId 列挙型
 description: Office365 スイート Sku を表す Office365 ProductIds を指定する列挙型です。
-ms.openlocfilehash: 6b69a2477bb0f8779303f8d9f741f100501a3fe5
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 228478b6814bed360cbba77539e5ee39343e2bfa
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27070749"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27302794"
 ---
 # <a name="officeproductid-enum-type"></a>officeProductId 列挙型
 

@@ -1,12 +1,13 @@
 ---
 title: mobileAppTroubleshootingAppPolicyCreationHistory リソースの種類
 description: 履歴項目は、モバイル アプリケーションのトラブルシューティング イベントに含まれています。
-ms.openlocfilehash: 7ca80443351e5c1b1232dc050cdf721ab7389351
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 6d0192e8dde3cfc858629f7ae79e4b7de786740a
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27072797"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27301457"
 ---
 # <a name="mobileapptroubleshootingapppolicycreationhistory-resource-type"></a>mobileAppTroubleshootingAppPolicyCreationHistory リソースの種類
 
@@ -18,8 +19,8 @@ ms.locfileid: "27072797"
 
 [MobileAppTroubleshootingHistoryItem](../resources/intune-troubleshooting-mobileapptroubleshootinghistoryitem.md)から継承します。
 
-## <a name="properties"></a>プロパティ
-|プロパティ|型|説明|
+## <a name="properties"></a>Properties
+|プロパティ|種類|説明|
 |:---|:---|:---|
 |occurrenceDateTime|DateTimeOffset|履歴項目が発生した時刻です。 [MobileAppTroubleshootingHistoryItem](../resources/intune-troubleshooting-mobileapptroubleshootinghistoryitem.md)から継承されました。|
 |runState|[runState](../resources/intune-shared-runstate.md)|項目の状態です。 可能な値は、`unknown`、`success`、`fail` です。|

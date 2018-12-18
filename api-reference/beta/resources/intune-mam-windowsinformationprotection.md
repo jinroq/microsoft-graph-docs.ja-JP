@@ -1,12 +1,13 @@
 ---
 title: windowsInformationProtection リソース タイプ
 description: 詳細な管理設定を構成するための Windows 情報保護のポリシー
-ms.openlocfilehash: 214888766d3e24a1eb5aa1fa9a6aea65890fb8a3
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 5d4d36e0b4be5c5549c9ff1120756f8e851c2869
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27069767"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27304320"
 ---
 # <a name="windowsinformationprotection-resource-type"></a>windowsInformationProtection リソース タイプ
 
@@ -26,7 +27,7 @@ ms.locfileid: "27069767"
 |[assign action](../api/intune-mam-windowsinformationprotection-assign.md)|なし|まだ文書化されていません|
 
 ## <a name="properties"></a>プロパティ
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
 |displayName|String|ポリシーの表示名。 [managedAppPolicy](../resources/intune-mam-managedapppolicy.md) から継承します|
 |説明|String|ポリシーの説明。 [managedAppPolicy](../resources/intune-mam-managedapppolicy.md) から継承します|

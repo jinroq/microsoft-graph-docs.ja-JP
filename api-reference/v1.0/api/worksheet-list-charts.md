@@ -1,12 +1,13 @@
 ---
 title: グラフを一覧表示する
 description: グラフ オブジェクトの一覧を取得します。
-ms.openlocfilehash: 4720116c4f6a0095c00b7b4256633ed69e1facb7
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lumine2008
+ms.openlocfilehash: 2c6366c87b18769ee07d995352ae2fca2f4d0513
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27021205"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27305285"
 ---
 # <a name="list-charts"></a>グラフを一覧表示する
 

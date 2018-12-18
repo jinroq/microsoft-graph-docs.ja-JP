@@ -1,12 +1,13 @@
 ---
 title: deviceManagementExchangeConnectorStatus 列挙型
 description: Exchange コネクタの現在の状態です。
-ms.openlocfilehash: cd8b845f4902788029be8661b47161997203fc73
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 7b2576d75eef285fe64e8ebf4d89dd004130fa78
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27068774"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27303795"
 ---
 # <a name="devicemanagementexchangeconnectorstatus-enum-type"></a>deviceManagementExchangeConnectorStatus 列挙型
 

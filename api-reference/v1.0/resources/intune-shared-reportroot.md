@@ -1,12 +1,13 @@
 ---
 title: reportRoot リソースの種類
 description: 履歴レポートのインスタンスを表すリソースです。
-ms.openlocfilehash: 6f944351c0099270d1d16ca15a9ae1f41629174b
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 46b4844487a1cb714dde791e6867c277c1693f66
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27021466"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27303970"
 ---
 # <a name="reportroot-resource-type"></a>reportRoot リソースの種類
 
@@ -26,10 +27,10 @@ ms.locfileid: "27021466"
 |[managedDeviceEnrollmentTopFailures 関数](../api/intune-shared-reportroot-manageddeviceenrollmenttopfailures.md)|[レポート](../resources/intune-shared-report.md)|まだ記載されていません。|
 
 
-## <a name="properties"></a>プロパティ
-|プロパティ|型|説明|
+## <a name="properties"></a>Properties
+|プロパティ|種類|説明|
 |:---|:---|:---|
-|id|String|このエンティティの一意識別子です。|
+|ID|String|このエンティティの一意識別子です。|
 
 ## <a name="relationships"></a>リレーションシップ
 なし
@@ -49,7 +50,7 @@ ms.locfileid: "27021466"
 }
 ```
 
-## <a name="example"></a>使用例
+## <a name="example"></a>例
 
 <!--{"blockType": "request"}-->
 ```http

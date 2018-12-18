@@ -1,12 +1,13 @@
 ---
 title: DeviceConfigurationUserStateSummary を更新します。
 description: DeviceConfigurationUserStateSummary オブジェクトのプロパティを更新します。
-ms.openlocfilehash: fd22d51f9d52f97c080cace5c6cf434ccaff2416
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: a11c4447fee84116b68416ba78f610e8067a6104
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27071571"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27301569"
 ---
 # <a name="update-deviceconfigurationuserstatesummary"></a>DeviceConfigurationUserStateSummary を更新します。
 
@@ -44,9 +45,9 @@ PATCH /deviceManagement/deviceConfigurationUserStateSummaries
 
 [DeviceConfigurationUserStateSummary](../resources/intune-deviceconfig-deviceconfigurationuserstatesummary.md)を作成するときに必要なプロパティを次の表に示します。
 
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
-|id|String|エンティティのキー。|
+|ID|String|エンティティのキー。|
 |unknownUserCount|Int32|不明なユーザーの数|
 |notApplicableUserCount|Int32|適用されないユーザーの数|
 |compliantUserCount|Int32|準拠のユーザーの数|

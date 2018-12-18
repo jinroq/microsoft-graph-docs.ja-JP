@@ -1,12 +1,13 @@
 ---
 title: runSchedule リソースの種類
 description: 定期的なデバイスの管理スクリプトのスケジュールを実行します。
-ms.openlocfilehash: 6c9eaffd877a0c60fb89c240e389f95c16afa428
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 11fc574d87099560937af59f7045b9bf4a8630e8
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27071714"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27302962"
 ---
 # <a name="runschedule-resource-type"></a>runSchedule リソースの種類
 
@@ -15,8 +16,8 @@ ms.locfileid: "27071714"
 > **注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
 
 定期的なデバイスの管理スクリプトのスケジュールを実行します。
-## <a name="properties"></a>プロパティ
-|プロパティ|型|説明|
+## <a name="properties"></a>Properties
+|プロパティ|種類|説明|
 |:---|:---|:---|
 
 ## <a name="relationships"></a>リレーションシップ

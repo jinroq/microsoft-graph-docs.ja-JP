@@ -1,12 +1,13 @@
 ---
 title: ChartFill リソースの種類
 description: グラフ要素の塗りつぶしの書式設定を表します。
-ms.openlocfilehash: 094378842d405d4fcca6360b4c0e67e493aedadb
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lumine2008
+ms.openlocfilehash: 6e34c06825f52d9cfec271e8bd62a0a5ae3ae451
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27023855"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27301576"
 ---
 # <a name="chartfill-resource-type"></a>ChartFill リソースの種類
 
@@ -17,7 +18,7 @@ ms.locfileid: "27023855"
 
 | メソッド           | 戻り値の型    |説明|
 |:---------------|:--------|:----------|
-|[クリア](../api/chartfill-clear.md)|なし|グラフ要素の塗りつぶしの色をクリアします。|
+|[Clear](../api/chartfill-clear.md)|なし|グラフ要素の塗りつぶしの色をクリアします。|
 |[Setsolidcolor](../api/chartfill-setsolidcolor.md)|なし|グラフ要素の塗りつぶしの書式設定を均一な色に設定します。|
 
 ## <a name="properties"></a>プロパティ

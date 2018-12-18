@@ -1,12 +1,13 @@
 ---
 title: managedDeviceMobileAppConfigurationAssignment の更新
 description: managedDeviceMobileAppConfigurationAssignment オブジェクトのプロパティを更新します。
-ms.openlocfilehash: 3753b4d95a1f13c701ac6c5c9e27dda9c1a67fbc
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: a9c1c7b1f0af2ec49080d6b6e225d3923b7f37b5
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27022172"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27301436"
 ---
 # <a name="update-manageddevicemobileappconfigurationassignment"></a>managedDeviceMobileAppConfigurationAssignment の更新
 
@@ -42,9 +43,9 @@ PATCH /deviceAppManagement/mobileAppConfigurations/{managedDeviceMobileAppConfig
 
 次の表に、[managedDeviceMobileAppConfigurationAssignment](../resources/intune-apps-manageddevicemobileappconfigurationassignment.md) の作成時に必要なプロパティを示します。
 
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
-|id|String|エンティティの一意識別子。|
+|ID|String|エンティティの一意識別子。|
 |target|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|T & C ポリシーが割り当てられる、割り当て先です。|
 
 

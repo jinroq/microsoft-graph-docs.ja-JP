@@ -1,12 +1,13 @@
 ---
 title: sendCustomNotificationToCompanyPortal アクション
 description: まだ文書化されていません
-ms.openlocfilehash: 1242b334fc07bddd599dbbec4f2e04fe4eb4cc34
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 549aff553416e6e8c5fa03382b7a4e513a4ede83
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27071263"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27305244"
 ---
 # <a name="sendcustomnotificationtocompanyportal-action"></a>sendCustomNotificationToCompanyPortal アクション
 
@@ -44,7 +45,7 @@ POST /deviceManagement/sendCustomNotificationToCompanyPortal
 
 次の表に、このアクションで使用できるパラメーターを示します。
 
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
 |notificationTitle|String|まだ文書化されていません|
 |notificationBody|String|まだ文書化されていません|

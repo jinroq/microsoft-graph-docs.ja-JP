@@ -1,12 +1,13 @@
 ---
 title: WindowsAssignedAccessProfile を作成します。
 description: 新しい windowsAssignedAccessProfile オブジェクトを作成します。
-ms.openlocfilehash: 6ef13530dcd3d0064d829c3341710c5a32f02a2c
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 626b0815234153f585d74edcdad65f7ad2dfd3a4
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27074210"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27304544"
 ---
 # <a name="create-windowsassignedaccessprofile"></a>WindowsAssignedAccessProfile を作成します。
 
@@ -44,11 +45,11 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 
 次の表は、windowsAssignedAccessProfile を作成するときに必要なプロパティを示します。
 
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
-|id|String|エンティティのキー。|
+|ID|String|エンティティのキー。|
 |profilename プロパティ|String|これは、[スタート] メニューの [このプレゼンテーションの構成が割り当てられているユーザーにこれらのアプリケーションのレイアウト、アプリケーションのグループを識別するために使用するフレンドリ名です。|
-|showTaskBar|ブール値|この設定では、タスク バーを表示するかどうかを指定するのには管理ができます。|
+|showTaskBar|ブール型|この設定では、タスク バーを表示するかどうかを指定するのには管理ができます。|
 |appUserModelIds|String コレクション|これらは、[スタート] メニューから起動できる唯一の Windows ストア アプリです。|
 |desktopAppPaths|String コレクション|これらは、[スタート] メニューで利用可能なデスクトップ アプリケーションのパスと、唯一のアプリケーション、ユーザーが起動できるようです。|
 |ユーザー アカウント|String コレクション|この構成にキオスクがロックアウトされているユーザー アカウントです。|

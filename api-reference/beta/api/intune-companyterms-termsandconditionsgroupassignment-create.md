@@ -1,12 +1,13 @@
 ---
 title: TermsAndConditionsGroupAssignment を作成します。
 description: 新しい termsAndConditionsGroupAssignment オブジェクトを作成します。
-ms.openlocfilehash: 571b01fec640f7efa24122117c82052b5937bce8
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 54bcf9591cbfc9cd9369e434b11440a8247ea813
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27069537"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27301387"
 ---
 # <a name="create-termsandconditionsgroupassignment"></a>TermsAndConditionsGroupAssignment を作成します。
 
@@ -44,9 +45,9 @@ POST /deviceManagement/termsAndConditions/{termsAndConditionsId}/groupAssignment
 
 次の表は、termsAndConditionsGroupAssignment を作成するときに必要なプロパティを示します。
 
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
-|id|String|エンティティの一意識別子。|
+|ID|String|エンティティの一意識別子。|
 |targetGroupId|String|T & C のポリシーが割り当てられているグループの一意の識別子です。|
 
 

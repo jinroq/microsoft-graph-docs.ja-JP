@@ -1,12 +1,13 @@
 ---
 title: deviceExchangeAccessStateSummary リソースの種類
 description: デバイスの Exchange アクセス状態の要約
-ms.openlocfilehash: 0210a01fe522a5f8bab38d473d866aef176df3b4
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: dd2784078e8b44b1a02cb5a0013c1e38804912c0
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27023238"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27301744"
 ---
 # <a name="deviceexchangeaccessstatesummary-resource-type"></a>deviceExchangeAccessStateSummary リソースの種類
 
@@ -14,7 +15,7 @@ ms.locfileid: "27023238"
 
 デバイスの Exchange アクセス状態の要約
 ## <a name="properties"></a>プロパティ
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
 |allowedDeviceCount|Int32|Exchange アクセス状態が Allowed のデバイスの総数です。|
 |blockedDeviceCount|Int32|Exchange アクセス状態が Blocked のデバイスの総数です。|

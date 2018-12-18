@@ -1,12 +1,13 @@
 ---
 title: messageRulePredicates リソースの種類
 description: ルールで使用可能な条件および例外のセットを表します。
-ms.openlocfilehash: 068f90b6557021c6c77b11cfe0851255dd427ea3
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: angelgolfer-ms
+ms.openlocfilehash: f83eb524605133d069eb5ff1f902067d3611fdbd
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27068011"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27304712"
 ---
 # <a name="messagerulepredicates-resource-type"></a>messageRulePredicates リソースの種類
 
@@ -15,19 +16,19 @@ ms.locfileid: "27068011"
 ルールで使用可能な条件および例外のセットを表します。
 
 ## <a name="properties"></a>プロパティ
-| プロパティ     | 型   |説明|
+| プロパティ     | 種類   |説明|
 |:---------------|:--------|:----------|
 | bodyContains | コレクション (String) | 条件または例外を適用するために、受信メッセージの本文に表示される文字列を表します。 |
 | bodyOrSubjectContains | コレクション (String) | 条件または例外を適用するために、受信メッセージの本文または件名に表示される文字列を表します。 |
 | categories | コレクション (String) | 条件または例外を適用するために、受信メッセージにラベルを付けるカテゴリを表します。 |
 | fromAddresses | コレクション ([Recipient](recipient.md)) | 条件または例外を適用するために、受信メッセージの特定の送信者のメール アドレスを表します。 |
-| hasAttachments | Boolean | 条件または例外を適用するために、受信メッセージに添付ファイルがあるかどうかを示します。 |
+| hasAttachments | ブール型 | 条件または例外を適用するために、受信メッセージに添付ファイルがあるかどうかを示します。 |
 | headerContains | コレクション (String) | 条件または例外を適用するために、受信メッセージのヘッダーに表示される文字列を表します。 |
 | importance | String | 条件または例外を適用するために、受信メッセージに記録される重要性: `low`、`normal`、`high`。 |
 | isApprovalRequest | Boolean | 条件または例外を適用するために、受信メッセージが承認要求であるかどうかを示します。 |
 | isAutomaticForward | Boolean | 条件または例外を適用するために、受信メッセージが自動的に転送されるかどうかを示します。 |
 | isAutomaticReply | Boolean | 条件または例外を適用するために、受信メッセージが自動返信であるかどうかを示します。 |
-| isEncrypted | Boolean | 条件または例外を適用するために、受信メッセージが暗号化されるかどうかを示します。 |
+| isEncrypted | ブール型 | 条件または例外を適用するために、受信メッセージが暗号化されるかどうかを示します。 |
 | isMeetingRequest | Boolean | 条件または例外を適用するために、受信メッセージが会議出席依頼であるかどうかを示します。 |
 | isMeetingResponse | Boolean | 条件または例外を適用するために、受信メッセージが会議出席依頼の返信であるかどうかを示します。 |
 | isNonDeliveryReport | Boolean | 条件または例外を適用するために、受信メッセージが配信不能レポートであるかどうかを示します。 |

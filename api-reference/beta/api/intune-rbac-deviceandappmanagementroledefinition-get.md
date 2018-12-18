@@ -1,12 +1,13 @@
 ---
 title: Get deviceAndAppManagementRoleDefinition
 description: deviceAndAppManagementRoleDefinition オブジェクトのプロパティとリレーションシップを読み取ります。
-ms.openlocfilehash: 0aef6b4eb7d2bc0c072bfa37cc1d0fa32801e670
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 89342f0642157de546588f551db0d1698bed72f5
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27066234"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27301800"
 ---
 # <a name="get-deviceandappmanagementroledefinition"></a>Get deviceAndAppManagementRoleDefinition
 

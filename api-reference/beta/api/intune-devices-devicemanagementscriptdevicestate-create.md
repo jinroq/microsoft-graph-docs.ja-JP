@@ -1,12 +1,13 @@
 ---
 title: DeviceManagementScriptDeviceState を作成します。
 description: 新しい deviceManagementScriptDeviceState オブジェクトを作成します。
-ms.openlocfilehash: 64594aee75d398fb92a0b7150a07409aa4362126
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 2b809c82e077bc75c354d3b8b1c09548eaacad64
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27071143"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27304852"
 ---
 # <a name="create-devicemanagementscriptdevicestate"></a>DeviceManagementScriptDeviceState を作成します。
 
@@ -45,9 +46,9 @@ POST /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/userRu
 
 次の表は、deviceManagementScriptDeviceState を作成するときに必要なプロパティを示します。
 
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
-|id|String|デバイス管理スクリプト デバイス状態のエンティティのキーです。|
+|ID|String|デバイス管理スクリプト デバイス状態のエンティティのキーです。|
 |runState|[runState](../resources/intune-shared-runstate.md)|デバイス管理スクリプトの実行を最新の状態です。 可能な値は、`unknown`、`success`、`fail` です。|
 |resultMessage|String|実行結果の詳細です。|
 |lastStateUpdateDateTime|DateTimeOffset|最新の時間、デバイスの管理スクリプトを実行します。|

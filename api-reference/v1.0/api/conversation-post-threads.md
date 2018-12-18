@@ -1,12 +1,13 @@
 ---
 title: スレッドを作成する
 description: '指定した会話に新しいスレッドを作成します。 '
-ms.openlocfilehash: cc574449ad6de79e834e268c309c332d5856ca26
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: dkershaw10
+ms.openlocfilehash: e2c93e0c2a677afa584d0442ff1545f1926c7ec8
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27020894"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27304915"
 ---
 # <a name="create-thread"></a>スレッドを作成する
 
@@ -31,7 +32,7 @@ ms.locfileid: "27020894"
 POST /groups/{id}/conversations/{id}/threads
 ```
 ## <a name="request-headers"></a>要求ヘッダー
-| 名前       | 型 | 説明|
+| 名前       | 種類 | 説明|
 |:---------------|:--------|:----------|
 | Authorization  | string  | ベアラー {トークン}。必須。 |
 

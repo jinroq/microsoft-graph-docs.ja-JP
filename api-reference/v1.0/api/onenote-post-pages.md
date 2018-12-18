@@ -1,12 +1,13 @@
 ---
 title: page を作成する
 description: 既定のノートブックの既定のセクションで OneNote の新しいページを作成します。
-ms.openlocfilehash: 07f5eef560145a9aec1206d6966d1c113774444d
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: Jewan-microsoft
+ms.openlocfilehash: 7d8faf66d95bdeaf5e566a70026f1bc894cc2803
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27021108"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27303221"
 ---
 # <a name="create-page"></a>page を作成する
 
@@ -35,7 +36,7 @@ POST /sites/{id}/onenote/pages
 ```
 
 ## <a name="request-headers"></a>要求ヘッダー  
-| 名前       | 型 | 説明|
+| 名前       | 種類 | 説明|
 |:---------------|:--------|:----------|
 | Authorization  | string  | ベアラー {トークン}。必須。 |
 | Content-Type | string | HTML コンテンツを表す `text/html` または `application/xhtml+xml` (マルチパート要求の必須の "Presentation" パートを含む)。マルチパート要求では `multipart/form-data; boundary=your-boundary` コンテンツ タイプを使用します。 |

@@ -1,12 +1,13 @@
 ---
 title: mobileApp リソースの種類
 description: Intune モバイル アプリの基本プロパティを含む抽象クラスです。
-ms.openlocfilehash: 7de5450ade7c95984107026eb8a6b19e07a2ba82
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 7d28205e532779504b5b9a846e835d4178fc94e9
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27023361"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27301541"
 ---
 # <a name="mobileapp-resource-type"></a>mobileApp リソースの種類
 
@@ -21,9 +22,9 @@ Intune モバイル アプリの基本プロパティを含む抽象クラスで
 |[アクションの割り当て](../api/intune-apps-mobileapp-assign.md)|なし|まだ文書化されていません|
 
 ## <a name="properties"></a>プロパティ
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
-|id|String|エンティティのキー。|
+|ID|String|エンティティのキー。|
 |displayName|String|管理者が提供またはインポートしたアプリのタイトルです。|
 |説明|String|アプリの説明。|
 |publisher|String|アプリの発行元。|

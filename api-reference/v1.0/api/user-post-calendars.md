@@ -1,12 +1,13 @@
 ---
 title: 予定表を作成する
 description: この API を使用して、ユーザー用の新しい予定表を作成します。
-ms.openlocfilehash: 8ffa88331478d7bbbe1e94c87d58505041d63d41
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: dkershaw10
+ms.openlocfilehash: ecc86df41dd5d54f07545170ce33f42f782c5dc3
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27023711"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27300869"
 ---
 # <a name="create-calendar"></a>予定表を作成する
 

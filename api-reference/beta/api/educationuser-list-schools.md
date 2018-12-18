@@ -1,12 +1,13 @@
 ---
 title: 学校をリストする
 description: ユーザーの学校のリストを取得します。
-ms.openlocfilehash: f2ad3ed442394377cec09484b9395983aacfbc1c
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: mmast-msft
+ms.openlocfilehash: 35810f4b1928249576ac1216356701489f68feca
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27067334"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27303270"
 ---
 # <a name="list-schools"></a>学校をリストする
 

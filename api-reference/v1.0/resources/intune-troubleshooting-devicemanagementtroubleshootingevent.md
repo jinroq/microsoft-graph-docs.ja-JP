@@ -1,12 +1,13 @@
 ---
 title: deviceManagementTroubleshootingEvent リソースの種類
 description: 一般エラーを表すイベント。
-ms.openlocfilehash: e308c3a9d09fc153706a4801fad4ba1a41afef79
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 9ce9a1e13b21750d279fefb7cd8f7cae9608ac6a
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27021468"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27303417"
 ---
 # <a name="devicemanagementtroubleshootingevent-resource-type"></a>deviceManagementTroubleshootingEvent リソースの種類
 
@@ -23,9 +24,9 @@ ms.locfileid: "27021468"
 |[Update deviceManagementTroubleshootingEvent](../api/intune-troubleshooting-devicemanagementtroubleshootingevent-update.md)|[deviceManagementTroubleshootingEvent](../resources/intune-troubleshooting-devicemanagementtroubleshootingevent.md)|[deviceManagementTroubleshootingEvent](../resources/intune-troubleshooting-devicemanagementtroubleshootingevent.md) オブジェクトのプロパティを更新します。|
 
 ## <a name="properties"></a>プロパティ
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
-|id|String|オブジェクトの UUID|
+|ID|String|オブジェクトの UUID|
 |eventDateTime|DateTimeOffset|インシデントが発生した時間。|
 |correlationId|String|サービスのエラーをトレースするための ID。|
 

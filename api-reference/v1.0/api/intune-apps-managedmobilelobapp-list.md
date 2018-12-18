@@ -1,12 +1,13 @@
 ---
 title: managedMobileLobApps のリスト
 description: managedMobileLobApp オブジェクトのプロパティとリレーションシップをリストします。
-ms.openlocfilehash: 940fd9afb75aec1faffe300b75aa8ef5f0efa4db
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 3ce9c6be53386ebaba7c0f52186407ad8ecc0c09
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27020507"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27301275"
 ---
 # <a name="list-managedmobilelobapps"></a>managedMobileLobApps のリスト
 
