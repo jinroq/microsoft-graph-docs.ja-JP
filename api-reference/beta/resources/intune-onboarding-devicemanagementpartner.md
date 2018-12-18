@@ -1,12 +1,13 @@
 ---
 title: deviceManagementPartner リソースの種類
 description: デバイス管理パートナーとの接続を表すエンティティです。
-ms.openlocfilehash: c682b700636ad80f20719e40f35a929cf740c7a0
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 2174f81f7b9c5e73c3bc42a54cb030cf50c216d2
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27073262"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27354041"
 ---
 # <a name="devicemanagementpartner-resource-type"></a>deviceManagementPartner リソースの種類
 
@@ -25,9 +26,9 @@ ms.locfileid: "27073262"
 |[Update deviceManagementPartner](../api/intune-onboarding-devicemanagementpartner-update.md)|[deviceManagementPartner](../resources/intune-onboarding-devicemanagementpartner.md)|[deviceManagementPartner](../resources/intune-onboarding-devicemanagementpartner.md) オブジェクトのプロパティを更新します。|
 
 ## <a name="properties"></a>プロパティ
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
-|id|String|まだ文書化されていません|
+|ID|String|まだ文書化されていません|
 |lastHeartbeatDateTime|DateTimeOffset|管理者が [デバイス管理パートナーに接続] オプションを有効にした後の最終ハートビートのタイムスタンプ|
 |partnerState|[deviceManagementPartnerTenantState](../resources/intune-onboarding-devicemanagementpartnertenantstate.md)|このテナントのパートナーの状態です。 使用可能な値: `unknown`、`unavailable`、`enabled`、`terminated`、`rejected`、`unresponsive`。|
 |partnerAppType|[deviceManagementPartnerAppType](../resources/intune-onboarding-devicemanagementpartnerapptype.md)|パートナー ・ アプリケーションの種類です。 可能な値は、`unknown`、`singleTenantApp`、`multiTenantApp` です。|

@@ -1,12 +1,13 @@
 ---
 title: 所有者を一覧表示する
 description: DirectoryObject オブジェクトのリストを取得します。
-ms.openlocfilehash: 2db43b62d1d30813ed80e6d612e5c0d2770e283d
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lleonard-msft
+ms.openlocfilehash: 8b8cb478867639afa07f986c86f38e2460a17338
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27067035"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27325866"
 ---
 # <a name="list-owners"></a>所有者を一覧表示する
 
@@ -31,7 +32,7 @@ GET /applications/{id}/owners
 このメソッドは、応答をカスタマイズするための [OData クエリ パラメーター](https://developer.microsoft.com/graph/docs/concepts/query_parameters)をサポートします。
 
 ## <a name="request-headers"></a>要求ヘッダー
-| 名前       | 型 | 説明|
+| 名前       | 種類 | 説明|
 |:-----------|:------|:----------|
 | Authorization  | string  | ベアラー {トークン}。必須。  |
 

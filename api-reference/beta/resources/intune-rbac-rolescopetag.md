@@ -1,12 +1,13 @@
 ---
 title: roleScopeTag リソースの種類
 description: ロールのスコープのタグ
-ms.openlocfilehash: 9be1f1307243c18e10f8e6dfc3f302502cdb54a7
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 49059ceddcd043f39f51c563c85ba8986b6fc61b
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27069760"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27354769"
 ---
 # <a name="rolescopetag-resource-type"></a>roleScopeTag リソースの種類
 
@@ -24,10 +25,10 @@ ms.locfileid: "27069760"
 |[RoleScopeTag を削除します。](../api/intune-rbac-rolescopetag-delete.md)|なし|の[roleScopeTag](../resources/intune-rbac-rolescopetag.md)を削除します。|
 |[RoleScopeTag を更新します。](../api/intune-rbac-rolescopetag-update.md)|[roleScopeTag](../resources/intune-rbac-rolescopetag.md)|[RoleScopeTag](../resources/intune-rbac-rolescopetag.md)オブジェクトのプロパティを更新します。|
 
-## <a name="properties"></a>プロパティ
-|プロパティ|型|説明|
+## <a name="properties"></a>Properties
+|プロパティ|種類|説明|
 |:---|:---|:---|
-|id|String|エンティティのキー。 これは読み取り専用で、自動生成されます。|
+|ID|String|エンティティのキー。 これは読み取り専用で、自動生成されます。|
 |displayName|String|表示する、またはロールのスコープのタグの表示名。|
 |説明|String|ロールのスコープのタグの説明です。|
 

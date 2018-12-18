@@ -1,12 +1,13 @@
 ---
 title: リスト windowsPhone81AppXs
 description: WindowsPhone81AppX オブジェクトのプロパティと関係を一覧表示します。
-ms.openlocfilehash: 63f2f39a8e8c7d03a15c3b922f077773973f3a93
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 94f9cafa6261b48dea49356b208b20b6a076cd40
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27071059"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27361146"
 ---
 # <a name="list-windowsphone81appxs"></a>リスト windowsPhone81AppXs
 

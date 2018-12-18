@@ -1,12 +1,13 @@
 ---
 title: 教師を追加する
 description: クラスに教師を追加します。
-ms.openlocfilehash: a842aeff30b4911b469e9ae44cb6cedbee02db38
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: mmast-msft
+ms.openlocfilehash: 72887960cd43fcbc84ecdf33c3c9cca3e2a0cdd3
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27066688"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27361258"
 ---
 # <a name="add-teacher"></a>教師を追加する
 

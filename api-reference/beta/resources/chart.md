@@ -1,12 +1,13 @@
 ---
 title: グラフ リソースの種類
 description: ブック内のグラフ オブジェクトを表します。
-ms.openlocfilehash: 3305c674bf299fa68ce139ba16b3174965b694ac
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lumine2008
+ms.openlocfilehash: cf03a768422fca50e68b88a64b9991aad878466f
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27072599"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27325719"
 ---
 # <a name="chart-resource-type"></a>グラフ リソースの種類
 
@@ -24,15 +25,15 @@ ms.locfileid: "27072599"
 |[データ系列を一覧表示する](../api/chart-list-series.md) |[ChartSeries](chartseries.md) コレクション| ChartSeries オブジェクトのコレクションを取得します。|
 |[Update](../api/chart-update.md) | [Chart](chart.md)   |グラフ オブジェクトを更新します。 |
 |[Image](../api/chart-image.md)|Base64 でエンコードされた文字列の画像|指定したサイズに合わせてグラフを拡大・縮小することで、グラフを Base64 でエンコードされた画像としてレンダリングします。|
-|[削除](../api/chart-delete.md)|なし|グラフ オブジェクトを削除します。|
+|[Delete](../api/chart-delete.md)|なし|グラフ オブジェクトを削除します。|
 |[Setdata](../api/chart-setdata.md)|なし|グラフの元データをリセットします。|
 |[Setposition](../api/chart-setposition.md)|なし|ワークシート上のセルを基準にしてグラフを配置します。|
 |[List](../api/chart-list.md) | [Chart](chart.md) コレクション |グラフ オブジェクトのコレクションを取得します。 |
 |[Itemat](../api/chartcollection-itemat.md)|[Chart](chart.md)|コレクション内の位置に基づいて、グラフを取得します。|
-|[追加](../api/chartcollection-add.md)|[Chart](chart.md)|新しいグラフを作成します。|
+|[Add](../api/chartcollection-add.md)|[Chart](chart.md)|新しいグラフを作成します。|
 
 ## <a name="properties"></a>プロパティ
-| プロパティ     | 型   |説明|
+| プロパティ     | 種類   |説明|
 |:---------------|:--------|:----------|
 |height|double|グラフ オブジェクトの高さをポイント単位で表します。|
 |ID|文字列|コレクション内での位置を基にグラフを取得します。読み取り専用です。|

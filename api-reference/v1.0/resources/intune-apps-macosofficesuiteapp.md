@@ -1,12 +1,13 @@
 ---
 title: macOSOfficeSuiteApp リソース タイプ
 description: macOS Office スイート アプリのプロパティと継承されるプロパティを含みます。
-ms.openlocfilehash: 8462c7d078a4fd8d991e23934d7213c947b3a76f
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: d5e690dd4217d3753e11836248e8f96321942162
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27021306"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27329576"
 ---
 # <a name="macosofficesuiteapp-resource-type"></a>macOSOfficeSuiteApp リソース タイプ
 
@@ -26,9 +27,9 @@ macOS Office スイート アプリのプロパティと継承されるプロパ
 |[Update macOSOfficeSuiteApp](../api/intune-apps-macosofficesuiteapp-update.md)|[macOSOfficeSuiteApp](../resources/intune-apps-macosofficesuiteapp.md)|[macOSOfficeSuiteApp](../resources/intune-apps-macosofficesuiteapp.md) オブジェクトのプロパティを更新します。|
 
 ## <a name="properties"></a>プロパティ
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
-|id|String|エンティティのキー。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|
+|ID|String|エンティティのキー。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|
 |displayName|String|管理者が提供またはインポートしたアプリのタイトル。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|
 |説明|String|アプリの説明。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|
 |publisher|String|アプリの発行元。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|

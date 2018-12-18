@@ -1,12 +1,13 @@
 ---
 title: deviceEnrollmentWindowsHelloForBusinessConfiguration の取得
 description: deviceEnrollmentWindowsHelloForBusinessConfiguration オブジェクトのプロパティとリレーションシップを読み取ります。
-ms.openlocfilehash: 3c58b4b7689cf3b25fc16e65b8b4db95a3fbb897
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: a5ee2052854582c6892f6609647207fbe9d9c358
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27071691"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27361202"
 ---
 # <a name="get-deviceenrollmentwindowshelloforbusinessconfiguration"></a>deviceEnrollmentWindowsHelloForBusinessConfiguration の取得
 

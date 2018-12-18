@@ -1,12 +1,13 @@
 ---
 title: チームのクローンを作成します。
 description: チームのコピーを作成します。 この操作では、対応するグループのコピーも作成します。
-ms.openlocfilehash: b49fa4262fe65be03b99f2107e9ef1b2799bfeb3
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: nkramer
+ms.openlocfilehash: 79ae6f770e009f262adbda4872ddc51af626688f
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27074404"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27361930"
 ---
 # <a name="clone-a-team"></a>チームのクローンを作成します。
 
@@ -50,7 +51,7 @@ POST /teams/{id}/clone
 
 ## <a name="request-body"></a>要求本文
 
-| プロパティ     | 型   |説明|
+| プロパティ     | 種類   |説明|
 |:---------------|:--------|:----------|
 |分類|文字列 (省略可能)|(低、中、または高のビジネス ・ インパクト) などのグループの分類について説明します。 このプロパティの有効値は、[テンプレートの定義](../resources/directorysettingtemplate.md)に基づいて、ClassificationList の[設定](../resources/directorysetting.md)値を作成することによって定義されます。 分類を指定しない場合、分類は、元のチームまたはグループからコピーされます。|
 |description|文字列 (省略可能)|グループに関するオプションの説明。 このプロパティを指定しない場合、空白のままにします。|

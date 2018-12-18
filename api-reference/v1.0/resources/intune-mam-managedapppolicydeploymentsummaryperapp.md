@@ -1,12 +1,13 @@
 ---
 title: managedAppPolicyDeploymentSummaryPerApp リソースの種類
 description: アプリごとのポリシーの展開の概要を表します。
-ms.openlocfilehash: 56b7952049c6ad41ee46f6b77c821aa32b1c4de8
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 95c05696f6c080f90b9de61c309a577924e599b1
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27023170"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27354342"
 ---
 # <a name="managedapppolicydeploymentsummaryperapp-resource-type"></a>managedAppPolicyDeploymentSummaryPerApp リソースの種類
 
@@ -14,7 +15,7 @@ ms.locfileid: "27023170"
 
 アプリごとのポリシーの展開の概要を表します。
 ## <a name="properties"></a>プロパティ
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
 |mobileAppIdentifier|[mobileAppIdentifier](../resources/intune-mam-mobileappidentifier.md)|アプリの展開|
 |configurationAppliedUserCount|Int32|ポリシーが適用されているユーザーの数。|

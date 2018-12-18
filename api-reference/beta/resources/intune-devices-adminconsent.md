@@ -1,12 +1,13 @@
 ---
 title: adminConsent リソースの種類
 description: 同意の情報を管理します。
-ms.openlocfilehash: da7197c995d9c87ab69db11ae0c6c0804482877d
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 7e535eb3475745c8c8aabb2701d9b9e24b8d3b02
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27071296"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27354083"
 ---
 # <a name="adminconsent-resource-type"></a>adminConsent リソースの種類
 
@@ -15,8 +16,8 @@ ms.locfileid: "27071296"
 > **注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
 
 同意の情報を管理します。
-## <a name="properties"></a>プロパティ
-|プロパティ|型|説明|
+## <a name="properties"></a>Properties
+|プロパティ|種類|説明|
 |:---|:---|:---|
 |shareAPNSData|[adminConsentState](../resources/intune-devices-adminconsentstate.md)|ユーザーと apple のデバイスのデータを共有するための管理者の同意の状態です。 可能な値は、`notConfigured`、`granted`、`notGranted` です。|
 

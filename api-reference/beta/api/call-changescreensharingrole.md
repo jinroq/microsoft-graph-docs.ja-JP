@@ -1,12 +1,13 @@
 ---
 title: '電話: changeScreenSharingRole'
 description: 起動し、画面の呼び出しでの共有を停止します。 この API を使用して、通話や会議の参加者と画面の内容を共有するアプリケーションを許可します。
-ms.openlocfilehash: f0aa69b43813bd248048ad1bd965dfbc4afc012b
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: VinodRavichandran
+ms.openlocfilehash: 4b4c7e0afa452bef414dd466086463aa16c9d9cf
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27069881"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27328365"
 ---
 # <a name="call-changescreensharingrole"></a>電話: changeScreenSharingRole
 
@@ -38,7 +39,7 @@ POST /applications/{id}/calls/{id}/changeScreenSharingRole
 ## <a name="request-body"></a>要求本文
 要求本文で、次のパラメーターを含む JSON オブジェクトを指定します。
 
-| パラメーター      | 型    |説明|
+| パラメーター      | 種類    |説明|
 |:---------------|:--------|:----------|
 |role|String|使用可能な値: 'ビューアー'、'共有'|
 

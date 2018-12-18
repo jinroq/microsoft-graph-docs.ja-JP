@@ -1,12 +1,13 @@
 ---
 title: ImportedWindowsAutopilotDeviceIdentityUpload を作成します。
 description: 新しい importedWindowsAutopilotDeviceIdentityUpload オブジェクトを作成します。
-ms.openlocfilehash: 2538f08d18309d430896bae0e6d654903ac895bf
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: f4042129f33b617546e32d46435179af5c9d3282
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27069401"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27354811"
 ---
 # <a name="create-importedwindowsautopilotdeviceidentityupload"></a>ImportedWindowsAutopilotDeviceIdentityUpload を作成します。
 
@@ -44,9 +45,9 @@ POST /deviceManagement/importedWindowsAutopilotDeviceIdentityUploads
 
 次の表は、importedWindowsAutopilotDeviceIdentityUpload を作成するときに必要なプロパティを示します。
 
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
-|id|String|オブジェクトの GUID|
+|ID|String|オブジェクトの GUID|
 |createdDateTimeUtc|DateTimeOffset|日時を設定すると、エンティティを作成します。|
 |status|[importedWindowsAutopilotDeviceIdentityUploadStatus](../resources/intune-enrollment-importedwindowsautopilotdeviceidentityuploadstatus.md)|ステータスをアップロードします。 可能な値は、`noUpload`、`pending`、`complete`、`error` です。|
 

@@ -1,12 +1,13 @@
 ---
 title: edgeSearchEngine リソースの種類
 description: IT 管理者が MDM 制御デバイス用向けに事前定義されている既定の検索エンジンを設定できるようにします。
-ms.openlocfilehash: 51f947911e73927816eb4f1150cab36cba904f58
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: bbe5ba35c9d5832a1910414f99a4de4e9fa957e2
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27066500"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27361230"
 ---
 # <a name="edgesearchengine-resource-type"></a>edgeSearchEngine リソースの種類
 
@@ -19,7 +20,7 @@ IT 管理者が MDM 制御デバイス用向けに事前定義されている既
 [edgeSearchEngineBase](../resources/intune-deviceconfig-edgesearchenginebase.md) からの継承
 
 ## <a name="properties"></a>プロパティ
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
 |edgeSearchEngineType|[edgeSearchEngineType](../resources/intune-deviceconfig-edgesearchenginetype.md)|IT 管理者が MDM 制御デバイス用向けに事前定義されている既定の検索エンジンを設定できるようにします。 可能な値: `default`、`bing`。|
 

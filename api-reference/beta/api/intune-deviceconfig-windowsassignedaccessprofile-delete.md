@@ -1,12 +1,13 @@
 ---
 title: WindowsAssignedAccessProfile を削除します。
 description: WindowsAssignedAccessProfile を削除します。
-ms.openlocfilehash: e465d84e861448e76bad222354c2cbe3d5c5bcb1
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 218c5bd18049ca804fe72822bb265d3a9e53a69b
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27068422"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27353362"
 ---
 # <a name="delete-windowsassignedaccessprofile"></a>WindowsAssignedAccessProfile を削除します。
 

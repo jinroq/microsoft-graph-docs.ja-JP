@@ -1,12 +1,13 @@
 ---
 title: deviceInstallState リソースの種類
 description: デバイスのインストール状態のプロパティが含まれています。
-ms.openlocfilehash: 9fb7f7b2bbbb46a068d5ba41db022eed3072520d
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 660ecb3dfae66e2f442027f61b82da69c2cee286
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27024182"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27354594"
 ---
 # <a name="deviceinstallstate-resource-type"></a>deviceInstallState リソースの種類
 
@@ -23,9 +24,9 @@ ms.locfileid: "27024182"
 |[deviceInstallState の更新](../api/intune-books-deviceinstallstate-update.md)|[deviceInstallState](../resources/intune-books-deviceinstallstate.md)|[deviceInstallState](../resources/intune-books-deviceinstallstate.md) オブジェクトのプロパティを更新します。|
 
 ## <a name="properties"></a>プロパティ
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
-|id|String|エンティティのキー。|
+|ID|String|エンティティのキー。|
 |deviceName|String|デバイス名。|
 |deviceId|String|デバイス ID。|
 |lastSyncDateTime|DateTimeOffset|最後の同期日時。|

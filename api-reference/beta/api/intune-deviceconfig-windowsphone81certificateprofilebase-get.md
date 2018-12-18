@@ -1,12 +1,13 @@
 ---
 title: WindowsPhone81CertificateProfileBase を取得します。
 description: WindowsPhone81CertificateProfileBase オブジェクトのプロパティと関係を参照してください。
-ms.openlocfilehash: 0f119bbfd895cbc9bff2a2055911829056acb631
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 426e918269cb1f58a665f90fd1b5a427a5b26dbc
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27072741"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27324571"
 ---
 # <a name="get-windowsphone81certificateprofilebase"></a>WindowsPhone81CertificateProfileBase を取得します。
 

@@ -1,12 +1,13 @@
 ---
 title: AndroidManagedStoreAppConfiguration を作成します。
 description: 新しい androidManagedStoreAppConfiguration オブジェクトを作成します。
-ms.openlocfilehash: 2a9d9e7e9927f84999f018ce53dcad8c896554ba
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 1eb403a9547808969694b4e3712d4b2bcd1995f0
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27068906"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27361069"
 ---
 # <a name="create-androidmanagedstoreappconfiguration"></a>AndroidManagedStoreAppConfiguration を作成します。
 
@@ -44,9 +45,9 @@ POST /deviceAppManagement/mobileAppConfigurations
 
 次の表は、androidManagedStoreAppConfiguration を作成するときに必要なプロパティを示します。
 
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
-|id|String|エンティティのキー。 [managedDeviceMobileAppConfiguration](../resources/intune-apps-manageddevicemobileappconfiguration.md) から継承されます|
+|ID|String|エンティティのキー。 [managedDeviceMobileAppConfiguration](../resources/intune-apps-manageddevicemobileappconfiguration.md) から継承されます|
 |targetedMobileApps|String コレクション|関連するアプリです。 [managedDeviceMobileAppConfiguration](../resources/intune-apps-manageddevicemobileappconfiguration.md) から継承されます|
 |roleScopeTagIds|String コレクション|このアプリケーションの構成エンティティのスコープのタグの一覧です。 [managedDeviceMobileAppConfiguration](../resources/intune-apps-manageddevicemobileappconfiguration.md) から継承されます|
 |createdDateTime|DateTimeOffset|オブジェクトが作成された DateTime。 [managedDeviceMobileAppConfiguration](../resources/intune-apps-manageddevicemobileappconfiguration.md) から継承されます|

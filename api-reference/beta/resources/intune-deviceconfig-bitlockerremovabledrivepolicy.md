@@ -1,12 +1,13 @@
 ---
 title: bitLockerRemovableDrivePolicy リソースの種類
 description: BitLocker リムーバブル ドライブ ポリシー。
-ms.openlocfilehash: 726fb8aa0493ce17984719403a6fcf800300a9ad
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 15de11384195350b455cd4696a260aedf1de7a26
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27073371"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27354035"
 ---
 # <a name="bitlockerremovabledrivepolicy-resource-type"></a>bitLockerRemovableDrivePolicy リソースの種類
 
@@ -16,7 +17,7 @@ ms.locfileid: "27073371"
 
 BitLocker リムーバブル ドライブ ポリシー。
 ## <a name="properties"></a>プロパティ
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
 |encryptionMethod|[bitLockerEncryptionMethod](../resources/intune-deviceconfig-bitlockerencryptionmethod.md)|リムーバブル ドライブの暗号化方法を選択します。 可能な値は、`aesCbc128`、`aesCbc256`、`xtsAes128`、`xtsAes256` です。|
 |requireEncryptionForWriteAccess|Boolean|別の組織で構成されたデバイスへの書き込みアクセスをブロックするかどうかを示します。  RequireEncryptionForWriteAccess が false の場合、この値は影響を与えません。|

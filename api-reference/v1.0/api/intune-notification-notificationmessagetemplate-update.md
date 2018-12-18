@@ -1,12 +1,13 @@
 ---
 title: notificationMessageTemplate の更新
 description: notificationMessageTemplate オブジェクトのプロパティを更新します。
-ms.openlocfilehash: 765b53db64a66b713da5fb82eaaea99bbce6df5d
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 48e2b8789a0ecd9c94e682fc6ec39d6185bc22f4
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27021561"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27325880"
 ---
 # <a name="update-notificationmessagetemplate"></a>notificationMessageTemplate の更新
 
@@ -42,9 +43,9 @@ PATCH /deviceManagement/notificationMessageTemplates/{notificationMessageTemplat
 
 次の表に、[notificationMessageTemplate](../resources/intune-notification-notificationmessagetemplate.md) の作成時に必要なプロパティを示します。
 
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
-|id|String|エンティティのキー。|
+|ID|String|エンティティのキー。|
 |lastModifiedDateTime|DateTimeOffset|オブジェクトが最後に変更された DateTime。|
 |displayName|String|通知メッセージ テンプレートの表示名。|
 |defaultLocale|String|要求されたロケールが使用できないときにフォールバックする既定のロケール。|

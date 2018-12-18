@@ -1,12 +1,13 @@
 ---
 title: Update windows10GeneralConfiguration
 description: windows10GeneralConfiguration オブジェクトのプロパティを更新します。
-ms.openlocfilehash: 6adb423cc0e2eb62ec9ade84bfa29556178cc294
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: a289d0254d3a1c27abdc084a0b506d0b75b0c299
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27023206"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27354527"
 ---
 # <a name="update-windows10generalconfiguration"></a>Update windows10GeneralConfiguration
 
@@ -42,9 +43,9 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}
 
 次の表に、[windows10GeneralConfiguration](../resources/intune-deviceconfig-windows10generalconfiguration.md) の作成時に必要なプロパティを示します。
 
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
-|id|String|エンティティのキー。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
+|ID|String|エンティティのキー。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |lastModifiedDateTime|DateTimeOffset|オブジェクトが最後に変更された DateTime。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |createdDateTime|DateTimeOffset|オブジェクトが作成された DateTime。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |説明|String|デバイス構成について管理者が提供した説明。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
@@ -249,7 +250,7 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}
 |experienceBlockErrorDialogWhenNoSIM|Boolean|SIM カードが検出されない場合にエラー ダイアログを表示することを許可するかどうかを示します。|
 |experienceBlockTaskSwitcher|Boolean|デバイスでのタスクの切り替えを有効にするかどうかを示します。|
 |logonBlockFastUserSwitching|Boolean|同時にログオンしているユーザー間での切り替えをログオフなしで迅速に行う機能を無効にします。|
-|tenantLockdownRequireNetworkDuringOutOfBoxExperience|ブール値|かどうか、デバイスがネットワークに接続する必要があります。|
+|tenantLockdownRequireNetworkDuringOutOfBoxExperience|ブール型|かどうか、デバイスがネットワークに接続する必要があります。|
 
 
 

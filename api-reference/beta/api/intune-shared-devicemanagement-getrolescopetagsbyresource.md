@@ -1,12 +1,13 @@
 ---
 title: getRoleScopeTagsByResource 関数
 description: まだ文書化されていません
-ms.openlocfilehash: c6ccea13ee3b3314099573cb79625e1084ffdc13
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 535a27312f5a869745f9906dee848229da40f9a4
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27072139"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27354818"
 ---
 # <a name="getrolescopetagsbyresource-function"></a>getRoleScopeTagsByResource 関数
 
@@ -44,7 +45,7 @@ GET /deviceManagement/getRoleScopeTagsByResource
 要求 URL で、次のクエリ パラメーターに値を指定します。
 次の表に、この関数で使用できるパラメーターを示します。
 
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
 |リソース|String|まだ文書化されていません|
 

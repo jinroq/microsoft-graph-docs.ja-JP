@@ -1,12 +1,13 @@
 ---
 title: androidForWorkSettings リソース タイプ
 description: Android for Work の設定です。
-ms.openlocfilehash: 3c7aca729f145bb69447e442b7daddbfcf90c8c5
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 2a3bedbed986e10c0df1cae94d3302d16607e3f0
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27067114"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27361713"
 ---
 # <a name="androidforworksettings-resource-type"></a>androidForWorkSettings リソース タイプ
 
@@ -26,9 +27,9 @@ Android for Work の設定です。
 |[unbind action](../api/intune-androidforwork-androidforworksettings-unbind.md)|なし|まだ文書化されていません|
 
 ## <a name="properties"></a>プロパティ
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
-|id|String|Android for Work 設定の識別子|
+|ID|String|Android for Work 設定の識別子|
 |bindStatus|[androidForWorkBindStatus](../resources/intune-androidforwork-androidforworkbindstatus.md)|Google の EMM の API を使用してテナントの状態をバインドします。 可能な値は、`notBound`、`bound`、`boundAndValidated`、`unbinding` です。|
 |lastAppSyncDateTime|DateTimeOffset|アプリ同期の最終完了時刻|
 |lastAppSyncStatus|[androidForWorkSyncStatus](../resources/intune-androidforwork-androidforworksyncstatus.md)|アプリケーション同期の最終結果です。 使用可能な値: `success`、`credentialsNotValid`、`androidForWorkApiError`、`managementServiceError`、`unknownError`、`none`。|
@@ -37,7 +38,7 @@ Android for Work の設定です。
 |lastModifiedDateTime|DateTimeOffset|Android for Work 設定の最終変更時刻|
 |enrollmentTarget|[androidForWorkEnrollmentTarget](../resources/intune-androidforwork-androidforworkenrollmenttarget.md)|ワーク デバイス管理のアプリでデバイスを登録できるユーザーを示します。 可能な値は、`none`、`all`、`targeted`、`targetedAsEnrollmentRestrictions` です。|
 |targetGroupIds|String コレクション|enrollmentTarget が 'Targeted' に設定されている場合、どの AAD グループが Android for Work デバイス管理にデバイスを登録できるかを指定します。|
-|deviceOwnerManagementEnabled|ブール値|このアカウントを CloudDPC に Android のデバイスの所有者の管理の flighting かどうかを示します。|
+|deviceOwnerManagementEnabled|ブール型|このアカウントを CloudDPC に Android のデバイスの所有者の管理の flighting かどうかを示します。|
 
 ## <a name="relationships"></a>リレーションシップ
 なし

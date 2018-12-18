@@ -1,12 +1,13 @@
 ---
 title: iosMobileAppIdentifier リソースの種類
 description: iOS アプリの識別子。
-ms.openlocfilehash: d95a9820c06d4d8e4122c3555e6e225c3d747761
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: e68bfcca4b0873013c0c9e0fd0295483257ae52c
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27068582"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27354174"
 ---
 # <a name="iosmobileappidentifier-resource-type"></a>iosMobileAppIdentifier リソースの種類
 
@@ -19,7 +20,7 @@ iOS アプリの識別子。
 [mobileAppIdentifier](../resources/intune-mam-mobileappidentifier.md) からの継承
 
 ## <a name="properties"></a>プロパティ
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
 |bundleId|文字列型 (String)|App Store で指定されている、アプリの識別子。|
 

@@ -1,12 +1,13 @@
 ---
 title: windowsInformationProtectionAppLearningSummary の更新
 description: windowsInformationProtectionAppLearningSummary オブジェクトのプロパティを更新します。
-ms.openlocfilehash: 54eb3de891ad10a41bbe4ca747227b8b3af4f1d8
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 92302f282987a4cc6c56fbf3347e419696f58ee4
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27021238"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27354321"
 ---
 # <a name="update-windowsinformationprotectionapplearningsummary"></a>windowsInformationProtectionAppLearningSummary の更新
 
@@ -42,9 +43,9 @@ PATCH /deviceManagement/windowsInformationProtectionAppLearningSummaries/{window
 
 次の表に、[windowsInformationProtectionAppLearningSummary](../resources/intune-wip-windowsinformationprotectionapplearningsummary.md) の作成時に必要なプロパティを示します。
 
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
-|id|String|WindowsInformationProtectionAppLearningSummary の一意識別子。|
+|ID|String|WindowsInformationProtectionAppLearningSummary の一意識別子。|
 |applicationName|String|アプリケーション名|
 |applicationType|[applicationType](../resources/intune-wip-applicationtype.md)|アプリケーションの種類。 使用可能な値は、`universal`、`desktop` です。|
 |deviceCount|Int32|デバイス数|

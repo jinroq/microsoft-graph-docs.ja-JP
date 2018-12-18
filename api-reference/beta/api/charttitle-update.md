@@ -1,12 +1,13 @@
 ---
 title: charttitle オブジェクトを更新する
 description: charttitle オブジェクトのプロパティを更新します。
-ms.openlocfilehash: a20cafee793c5622fe29ad57aafb8e3d1e5cd2b5
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lumine2008
+ms.openlocfilehash: 2a3dd005b7932325685e9efa23acf1accd9320f8
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27067345"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27353369"
 ---
 # <a name="update-charttitle"></a>charttitle オブジェクトを更新する
 
@@ -36,7 +37,7 @@ PATCH /workbook/worksheets/{id|name}/charts(<name>)/title
 ## <a name="request-body"></a>要求本文
 要求本文で、更新する関連フィールドの値を指定します。要求本文に含まれない既存のプロパティは、以前の値のままになるか、他のプロパティ値の変化に基づいて再計算されます。最適なパフォーマンスを得るためには、変更されていない既存の値を含めないでください。
 
-| プロパティ     | 型   |説明|
+| プロパティ     | 種類   |説明|
 |:---------------|:--------|:----------|
 |overlay|ブール値|グラフのタイトルをグラフに重ねるかどうかを表すブール型の値。|
 |text|文字列|グラフのタイトルのテキストを表します。|

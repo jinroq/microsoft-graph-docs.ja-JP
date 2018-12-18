@@ -1,12 +1,13 @@
 ---
 title: ChartGridlines リソースの種類
 description: グラフの軸の目盛線または補助目盛線を表します。
-ms.openlocfilehash: 352f2ff93b899a5321787a0f44b75188e671de27
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lumine2008
+ms.openlocfilehash: 2aaf044b09d061af4853e76e0f2ba118bd1b2321
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27021066"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27353033"
 ---
 # <a name="chartgridlines-resource-type"></a>ChartGridlines リソースの種類
 
@@ -21,7 +22,7 @@ ms.locfileid: "27021066"
 |[Update](../api/chartgridlines-update.md) | [WorkbookChartGridlines](chartgridlines.md)    |ChartGridlines オブジェクトを更新します。 |
 
 ## <a name="properties"></a>プロパティ
-| プロパティ     | 型   |説明|
+| プロパティ     | 種類   |説明|
 |:---------------|:--------|:----------|
 |visible|ブール値|軸の目盛線を表示するか非表示にするかを表すブール型の値。|
 

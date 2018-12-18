@@ -1,12 +1,13 @@
 ---
 title: 組織の Microsoft Teams 内のすべてのチームのリストを作成する
 description: 'すべてのチームのリストを作成する方法 '
-ms.openlocfilehash: 2a9dbaa1fc9a02897870865295fd8d0dac9266a8
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: nkramer
+ms.openlocfilehash: f8f088dd9b7a55d3eb4c927ddef34458caeab507
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27092471"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27304160"
 ---
 # <a name="list-all-teams-in-microsoft-teams-for-an-organization"></a>組織の Microsoft Teams 内のすべてのチームのリストを作成する
 

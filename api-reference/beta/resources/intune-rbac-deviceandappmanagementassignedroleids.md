@@ -1,12 +1,13 @@
 ---
 title: deviceAndAppManagementAssignedRoleIds リソースの種類
 description: まだ文書化されていません
-ms.openlocfilehash: 9d9fbf9bc6dcfa422316a236dfd890369d069c2f
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 034120b891812a43c6c1683f61e52f071dc89816
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27070808"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27353383"
 ---
 # <a name="deviceandappmanagementassignedroleids-resource-type"></a>deviceAndAppManagementAssignedRoleIds リソースの種類
 
@@ -16,7 +17,7 @@ ms.locfileid: "27070808"
 
 まだ文書化されていません
 ## <a name="properties"></a>プロパティ
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
 |roleDefinitionIds|Guid コレクション|特定ユーザーに割り当てられているロールの定義のロール定義の Id。|
 |roleAssignmentIds|Guid コレクション|ロールの割り当てがユーザーに割り当て、特定のロールの割り当ての Id です。|

@@ -1,12 +1,13 @@
 ---
 title: 所有者を作成します。
 description: この API を使用すると、新しい所有者を作成します。
-ms.openlocfilehash: fdfbaf31b954b7621b7c59fc61741c12644aaf4b
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lleonard-msft
+ms.openlocfilehash: 60aaec55b0cc2994bd9f001b1af81a64a6ddca14
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27067993"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27353446"
 ---
 # <a name="create-owner"></a>所有者を作成します。
 
@@ -29,7 +30,7 @@ POST /applications/{id}/owners
 
 ```
 ## <a name="request-headers"></a>要求ヘッダー
-| 名前       | 型 | 説明|
+| 名前       | 種類 | 説明|
 |:---------------|:--------|:----------|
 | Authorization  | string  | ベアラー {トークン}。必須。  |
 

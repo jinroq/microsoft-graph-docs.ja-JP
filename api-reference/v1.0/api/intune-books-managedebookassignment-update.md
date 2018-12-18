@@ -1,12 +1,13 @@
 ---
 title: managedEBookAssignment の更新
 description: managedEBookAssignment オブジェクトのプロパティを更新します。
-ms.openlocfilehash: 23a4847b45f9e8c36b92dd1018368d8c102d7b86
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 041d1b16754c7c3f8047a40073590d5647e91f3c
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27023378"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27326503"
 ---
 # <a name="update-managedebookassignment"></a>managedEBookAssignment の更新
 
@@ -42,9 +43,9 @@ PATCH /deviceAppManagement/managedEBooks/{managedEBookId}/assignments/{managedEB
 
 次の表に、[managedEBookAssignment](../resources/intune-books-managedebookassignment.md) の作成時に必要なプロパティを示します。
 
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
-|id|String|エンティティのキー。|
+|ID|String|エンティティのキー。|
 |target|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|電子ブックの割り当て先。|
 |installIntent|[installIntent](../resources/intune-shared-installintent.md)|電子ブックのインストールの目的。 可能な値は、`available`、`required`、`uninstall`、`availableWithoutEnrollment` です。|
 

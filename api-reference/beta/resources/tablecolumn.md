@@ -1,12 +1,13 @@
 ---
 title: TableColumn リソースの種類
 description: テーブル内にある 1 つの列を表します。
-ms.openlocfilehash: 0195bde59ee2116b064b47b9659f682877efc16b
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lumine2008
+ms.openlocfilehash: b68051403bf57d84b51850255c8f98c0b76ea9c0
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27070019"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27354650"
 ---
 # <a name="tablecolumn-resource-type"></a>TableColumn リソースの種類
 
@@ -31,7 +32,7 @@ ms.locfileid: "27070019"
 |[Add](../api/tablecolumncollection-add.md)|[TableColumn](tablecolumn.md)|テーブルに新しい列を追加します。|
 
 ## <a name="properties"></a>プロパティ
-| プロパティ     | 型   |説明|
+| プロパティ     | 種類   |説明|
 |:---------------|:--------|:----------|
 |ID|int|テーブル内の列を識別する一意のキーを返します。読み取り専用です。|
 |index|int|テーブルの列コレクション内の列のインデックス番号を返します。0 を起点とする番号になります。読み取り専用です。|

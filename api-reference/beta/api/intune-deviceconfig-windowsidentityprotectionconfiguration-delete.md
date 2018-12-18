@@ -1,12 +1,13 @@
 ---
 title: WindowsIdentityProtectionConfiguration を削除します。
 description: WindowsIdentityProtectionConfiguration を削除します。
-ms.openlocfilehash: e78e82e965a4e0b3a9d32b0086c02096add98a60
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 1ca56434a5d851509f5c99adf57b67922f4cfeb0
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27072739"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27328358"
 ---
 # <a name="delete-windowsidentityprotectionconfiguration"></a>WindowsIdentityProtectionConfiguration を削除します。
 

@@ -1,12 +1,13 @@
 ---
 title: メンバーを削除する
 description: 管理単位からメンバー (ユーザーまたはグループ) を削除するのにはこの API を使用します。
-ms.openlocfilehash: dbf8ceaf66436ff44ea014ae5383e2f669fc7466
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lleonard-msft
+ms.openlocfilehash: 0b7b03042982b1eb50d9dfd7382186f0b3d28469
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27067684"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27353418"
 ---
 # <a name="remove-a-member"></a>メンバーを削除する
 

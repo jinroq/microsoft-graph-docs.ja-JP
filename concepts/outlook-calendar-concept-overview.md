@@ -1,12 +1,13 @@
 ---
 title: Outlook カレンダー API の概要
 description: Outlook カレンダーは、Office 365 の Outlook メッセージング ハブの一部です。Outlook カレンダーを使用して、メールや連絡先を管理したり、組織内のユーザーに関する情報を検索したりすることもできます。
-ms.openlocfilehash: fe62ca40af348cdfaf559ea3e137733a4d25d8e5
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: angelgolfer-ms
+ms.openlocfilehash: 44578d5ec37e25b66cceb11692a4519f6198ca1d
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27092435"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27304306"
 ---
 # <a name="outlook-calendar-api-overview"></a>Outlook カレンダー API の概要
 
