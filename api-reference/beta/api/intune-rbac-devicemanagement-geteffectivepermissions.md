@@ -1,12 +1,13 @@
 ---
 title: getEffectivePermissions 関数
 description: まだ文書化されていません
-ms.openlocfilehash: 2cfb9ad8117e121d990b85bd0afadfc9d4747caa
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: a7767182da36058891c4c9c627ea0015ac0880b4
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27066257"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27307218"
 ---
 # <a name="geteffectivepermissions-function"></a>getEffectivePermissions 関数
 
@@ -43,7 +44,7 @@ GET /deviceManagement/getEffectivePermissions
 要求 URL で、次のクエリ パラメーターに値を指定します。
 次の表に、この関数で使用できるパラメーターを示します。
 
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
 |scope|String|まだ文書化されていません|
 

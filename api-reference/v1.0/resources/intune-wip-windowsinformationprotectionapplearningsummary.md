@@ -1,12 +1,13 @@
 ---
 title: windowsInformationProtectionAppLearningSummary リソースの種類
 description: Windows 情報保護アプリの学習概要エンティティ。
-ms.openlocfilehash: 31f07fed6de0086cb203d4f2d6af4f03feeba510
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 6e60d412c92bbaf5eb3e664d8b4ce81c1a86c267
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27023436"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27306994"
 ---
 # <a name="windowsinformationprotectionapplearningsummary-resource-type"></a>windowsInformationProtectionAppLearningSummary リソースの種類
 
@@ -23,9 +24,9 @@ Windows 情報保護アプリの学習概要エンティティ。
 |[Update windowsInformationProtectionAppLearningSummary](../api/intune-wip-windowsinformationprotectionapplearningsummary-update.md)|[windowsInformationProtectionAppLearningSummary](../resources/intune-wip-windowsinformationprotectionapplearningsummary.md)|[windowsInformationProtectionAppLearningSummary](../resources/intune-wip-windowsinformationprotectionapplearningsummary.md) オブジェクトのプロパティを更新します。|
 
 ## <a name="properties"></a>プロパティ
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
-|id|String|WindowsInformationProtectionAppLearningSummary の一意識別子。|
+|ID|String|WindowsInformationProtectionAppLearningSummary の一意識別子。|
 |applicationName|String|アプリケーション名|
 |applicationType|[applicationType](../resources/intune-wip-applicationtype.md)|アプリケーションの種類。 使用可能な値は、`universal`、`desktop` です。|
 |deviceCount|Int32|デバイス数|

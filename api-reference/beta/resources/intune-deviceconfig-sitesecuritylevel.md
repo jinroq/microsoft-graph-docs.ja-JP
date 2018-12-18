@@ -1,12 +1,13 @@
 ---
 title: siteSecurityLevel 列挙型
 description: サイトのセキュリティ レベルの使用可能な値です。
-ms.openlocfilehash: fc8695b185a06133ca20ae88f709234f72855ce9
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 58138b6a3c2e7ff245a1dfa78fabea2d7db01ba5
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27072556"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27307512"
 ---
 # <a name="sitesecuritylevel-enum-type"></a>siteSecurityLevel 列挙型
 

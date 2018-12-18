@@ -1,12 +1,13 @@
 ---
 title: syncWithAppleDeviceEnrollmentProgram アクション
 description: アップル デバイスの登録プログラムと Intune との間の同期をとります
-ms.openlocfilehash: dd73335d4db56dea092f8d896859f7feb937d130
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 852a9ce3e7b9d349aee2e8b5d3baec732cd116f0
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27067127"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27308359"
 ---
 # <a name="syncwithappledeviceenrollmentprogram-action"></a>syncWithAppleDeviceEnrollmentProgram アクション
 

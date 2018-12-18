@@ -1,12 +1,13 @@
 ---
 title: 'メッセージ: replyAll'
 description: 'コメントを指定して、更新可能なプロパティを変更することによって、メッセージの受信者全員に返信します。 '
-ms.openlocfilehash: c79320229aad67a406a6519762c7cdd99af2ad50
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: angelgolfer-ms
+ms.openlocfilehash: 035212224bca5cb6d173be9ea447cf16406ebf36
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27072957"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27307190"
 ---
 # <a name="message-replyall"></a>メッセージ: replyAll
 
@@ -16,7 +17,7 @@ ms.locfileid: "27072957"
 
 または、最初の[ドラフトの全員に返信メッセージを作成する](../api/message-createreplyall.md)コメントを含めるか、メッセージのプロパティ、および更新し、返信[を送信](../api/message-send.md)することができます。
 
-**メモ**
+**注**
 
 - **Body**プロパティまたはコメントのいずれかを指定することができます、`message`のパラメーターです。 両方を指定すると、「HTTP 400 要求が正しくありません」というエラーが返されます。
 - **ReplyTo**プロパティが元のメッセージのインターネット メッセージ フォーマット ([RFC 2822](https://www.rfc-editor.org/info/rfc2822)) ごとに指定されている場合は、内の受信者に返信を送信する必要があります、  
@@ -41,7 +42,7 @@ POST /me/mailFolders/{id}/messages/{id}/replyAll
 POST /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/replyAll
 ```
 ## <a name="request-headers"></a>要求ヘッダー
-| 名前       | 型 | 説明|
+| 名前       | 種類 | 説明|
 |:---------------|:--------|:----------|
 | Authorization  | string  | ベアラー {トークン}。必須。 |
 | Content-Type | string  | エンティティ本文内のデータの性質です。必須。 |
@@ -49,7 +50,7 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/replyAll
 ## <a name="request-body"></a>要求本文
 要求本文で、次のパラメーターを含む JSON オブジェクトを指定します。
 
-| パラメーター    | 型   |説明|
+| パラメーター    | 種類   |説明|
 |:---------------|:--------|:----------|
 |comment|String|含めるコメントです。空の文字列にすることができます。|
 |message|[message](../resources/message.md)|返信メッセージで更新する書き込み可能なプロパティです。|

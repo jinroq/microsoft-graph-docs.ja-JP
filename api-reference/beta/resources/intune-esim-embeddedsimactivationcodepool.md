@@ -1,12 +1,13 @@
 ---
 title: embeddedSIMActivationCodePool リソースの種類
 description: プールでは、埋め込み SIM のアクティベーション コードのグループを表します。
-ms.openlocfilehash: f6c80d82d4be6a794547e3ec0b93d4206d7edbe8
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 9f756488d4e00e3d69bebf0e484f01aeec5650a7
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27072802"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27307141"
 ---
 # <a name="embeddedsimactivationcodepool-resource-type"></a>embeddedSIMActivationCodePool リソースの種類
 
@@ -26,9 +27,9 @@ ms.locfileid: "27072802"
 |[assign action](../api/intune-esim-embeddedsimactivationcodepool-assign.md)|[embeddedSIMActivationCodePoolAssignment](../resources/intune-esim-embeddedsimactivationcodepoolassignment.md)コレクション|まだ文書化されていません|
 
 ## <a name="properties"></a>プロパティ
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
-|id|String|SIM のアクティブ化コードの埋め込み、プールの一意の識別子です。 システムでは、作成時に割り当てられた値が生成されます。|
+|ID|String|SIM のアクティブ化コードの埋め込み、プールの一意の識別子です。 システムでは、作成時に割り当てられた値が生成されます。|
 |displayName|String|管理者には、埋め込み SIM アクティベーション コードのプールの名前が定義されています。|
 |createdDateTime|DateTimeOffset|埋め込み SIM アクティベーション コードのプールが作成された時刻。 サービス側が生成されます。|
 |変更された日時|DateTimeOffset|埋め込み SIM アクティベーション コードのプールが最後に修正された時間です。 サービス側を更新します。|

@@ -1,12 +1,13 @@
 ---
 title: セクションを一覧表示する
 description: 指定したノートブックから onenoteSection オブジェクトのリストを取得します。
-ms.openlocfilehash: a092630db8815117110c29420481a91aaac57164
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: Jewan-microsoft
+ms.openlocfilehash: 06072dc31a18c6573dffef67d905da04afec1aa1
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27023391"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27306294"
 ---
 # <a name="list-sections"></a>セクションを一覧表示する
 
@@ -37,7 +38,7 @@ GET /sites/{id}/onenote/notebooks/{id}/sections
 
 
 ## <a name="request-headers"></a>要求ヘッダー
-| 名前       | 型 | 説明|
+| 名前       | 種類 | 説明|
 |:-----------|:------|:----------|
 | Authorization  | string  | ベアラー {トークン}。必須。 |
 | 承諾 | string | `application/json` |

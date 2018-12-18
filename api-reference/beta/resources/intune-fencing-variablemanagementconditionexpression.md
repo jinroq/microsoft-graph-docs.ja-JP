@@ -1,12 +1,13 @@
 ---
 title: variableManagementConditionExpression リソースの種類
 description: 管理条件の状態は、ブール式として評価されます。
-ms.openlocfilehash: 220cb54680755461edb9dab6edf076f8ae0c6a68
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 8a6ee46bd42139d519e845c7fe53ab3ae964833f
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27070810"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27305923"
 ---
 # <a name="variablemanagementconditionexpression-resource-type"></a>variableManagementConditionExpression リソースの種類
 
@@ -18,8 +19,8 @@ ms.locfileid: "27070810"
 
 [ManagementConditionExpressionModel](../resources/intune-fencing-managementconditionexpressionmodel.md)から継承します。
 
-## <a name="properties"></a>プロパティ
-|プロパティ|型|説明|
+## <a name="properties"></a>Properties
+|プロパティ|種類|説明|
 |:---|:---|:---|
 |managementConditionId|String|式を評価するために使用される管理条件の id です。|
 

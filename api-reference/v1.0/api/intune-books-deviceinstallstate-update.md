@@ -1,12 +1,13 @@
 ---
 title: deviceInstallState の更新
 description: deviceInstallState オブジェクトのプロパティを更新します。
-ms.openlocfilehash: aa826b8db510d174d6b1a1ff2f092498a4d1fe7c
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: ad7a840021e2d18ea73f4e7d010768e8f24e6220
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27020801"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27306728"
 ---
 # <a name="update-deviceinstallstate"></a>deviceInstallState の更新
 
@@ -43,9 +44,9 @@ PATCH /deviceAppManagement/managedEBooks/{managedEBookId}/userStateSummary/{user
 
 次の表に、[deviceInstallState](../resources/intune-books-deviceinstallstate.md) の作成時に必要なプロパティを示します。
 
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
-|id|String|エンティティのキー。|
+|ID|String|エンティティのキー。|
 |deviceName|String|デバイス名。|
 |deviceId|String|デバイス ID。|
 |lastSyncDateTime|DateTimeOffset|最後の同期日時。|

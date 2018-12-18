@@ -1,12 +1,13 @@
 ---
 title: deviceCompliancePolicySettingStateSummary の作成
 description: 新しい deviceCompliancePolicySettingStateSummary オブジェクトを作成します。
-ms.openlocfilehash: f7924b8ec3e8c32ccd62899a8576d56c85f0b233
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 289fb312e0c4f208a6ac494dfea090c21fc52295
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27023579"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27307393"
 ---
 # <a name="create-devicecompliancepolicysettingstatesummary"></a>deviceCompliancePolicySettingStateSummary の作成
 
@@ -42,9 +43,9 @@ POST /deviceManagement/deviceCompliancePolicySettingStateSummaries
 
 次の表に、deviceCompliancePolicySettingStateSummary の作成時に必要なプロパティを示します。
 
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
-|id|String|エンティティのキー。|
+|ID|String|エンティティのキー。|
 |setting|String|設定のクラス名とプロパティ名。|
 |settingName|String|設定の名前。|
 |platformType|[policyPlatformType](../resources/intune-deviceconfig-policyplatformtype.md)|設定のプラットフォームです。 可能な値は、`android`、`iOS`、`macOS`、`windowsPhone81`、`windows81AndLater`、`windows10AndLater`、`androidWorkProfile`、`all` です。|

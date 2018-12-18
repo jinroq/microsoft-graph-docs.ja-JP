@@ -1,12 +1,13 @@
 ---
 title: WindowsManagementAppHealthSummary を更新します。
 description: WindowsManagementAppHealthSummary オブジェクトのプロパティを更新します。
-ms.openlocfilehash: e0f02a49b6585398d95d096aeb0b592438dbe68a
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 274ffcc65706f7d730815d4a8350af2dee68f763
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27070047"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27307071"
 ---
 # <a name="update-windowsmanagementapphealthsummary"></a>WindowsManagementAppHealthSummary を更新します。
 
@@ -44,9 +45,9 @@ PATCH /deviceAppManagement/windowsManagementApp/healthSummary
 
 [WindowsManagementAppHealthSummary](../resources/intune-devices-windowsmanagementapphealthsummary.md)を作成するときに必要なプロパティを次の表に示します。
 
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
-|id|String|Windows 管理アプリケーションの稼働状態の概要エンティティのキーです。|
+|ID|String|Windows 管理アプリケーションの稼働状態の概要エンティティのキーです。|
 |healthyDeviceCount|Int32|正常なデバイスの数。|
 |unhealthyDeviceCount|Int32|問題のあるデバイスの数。|
 |unknownDeviceCount|Int32|不明なデバイスの数。|

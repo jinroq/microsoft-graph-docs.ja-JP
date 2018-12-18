@@ -1,12 +1,13 @@
 ---
 title: WindowsProtectionState を更新します。
 description: WindowsProtectionState オブジェクトのプロパティを更新します。
-ms.openlocfilehash: f1323baa9a6611e5f6057456fbbefbaddefa626e
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 8bdbe3d1841eb29f7616edcc5063cd025f282974
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27071888"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27308709"
 ---
 # <a name="update-windowsprotectionstate"></a>WindowsProtectionState を更新します。
 
@@ -45,18 +46,18 @@ PATCH /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/devic
 
 [WindowsProtectionState](../resources/intune-devices-windowsprotectionstate.md)を作成するときに必要なプロパティを次の表に示します。
 
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
-|id|String|デバイス保護の状態のオブジェクトの一意の識別子です。 これは、デバイスのデバイス id|
-|malwareProtectionEnabled|ブール値|マルウェア対策が有効になっているか|
+|ID|String|デバイス保護の状態のオブジェクトの一意の識別子です。 これは、デバイスのデバイス id|
+|malwareProtectionEnabled|ブール型|マルウェア対策が有効になっているか|
 |deviceState|[windowsDeviceHealthState](../resources/intune-devices-windowsdevicehealthstate.md)|コンピューターの状態 (などのクリーンな保留中の完全なスキャンまたは再起動の保留中など)。 使用可能な値: `clean`、`fullScanPending`、`rebootPending`、`manualStepsPending`、`offlineScanPending`、`critical`。|
-|realTimeProtectionEnabled|ブール値|リアルタイム保護を有効または無効ですか。|
-|networkInspectionSystemEnabled|ブール値|ネットワーク検査システムが有効か無効か。|
-|quickScanOverdue|ブール値|クイック スキャン、か期限切れですか。|
-|fullScanOverdue|ブール値|完全なスキャンの期限切れかどうでしょうか。|
-|signatureUpdateOverdue|ブール値|署名が期限切れかどうか。|
-|rebootRequired|ブール値|しましたか。|
-|fullScanRequired|ブール値|全体を走査するかが必要でしょうか。|
+|realTimeProtectionEnabled|ブール型|リアルタイム保護を有効または無効ですか。|
+|networkInspectionSystemEnabled|ブール型|ネットワーク検査システムが有効か無効か。|
+|quickScanOverdue|ブール型|クイック スキャン、か期限切れですか。|
+|fullScanOverdue|ブール型|完全なスキャンの期限切れかどうでしょうか。|
+|signatureUpdateOverdue|ブール型|署名が期限切れかどうか。|
+|rebootRequired|ブール型|しましたか。|
+|fullScanRequired|ブール型|全体を走査するかが必要でしょうか。|
 |engineVersion|String|現在のエンドポイントの保護エンジンのバージョン|
 |signatureVersion|String|マルウェア定義の現在のバージョン|
 |antiMalwareVersion|String|現在のバージョンのマルウェア対策|

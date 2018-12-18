@@ -1,12 +1,13 @@
 ---
 title: fileEncryptionInfo リソースの種類
 description: ビジネス アプリの行のコンテンツ バージョンのファイル暗号化情報のプロパティが含まれています。
-ms.openlocfilehash: 17895b0bf081cc249f9081c737a2445683514280
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: a13c451193d248d09e020cc6b308b9f03d991295
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27067525"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27307855"
 ---
 # <a name="fileencryptioninfo-resource-type"></a>fileEncryptionInfo リソースの種類
 
@@ -16,7 +17,7 @@ ms.locfileid: "27067525"
 
 ビジネス アプリの行のコンテンツ バージョンのファイル暗号化情報のプロパティが含まれています。
 ## <a name="properties"></a>プロパティ
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
 |encryptionKey|Binary|ファイルのコンテンツを暗号化するために使用するキーです。|
 |initializationVector|Binary|暗号化アルゴリズムに使用される初期化ベクトルです。|

@@ -1,12 +1,13 @@
 ---
 title: auditEvent の更新
 description: auditEvent オブジェクトのプロパティを更新します。
-ms.openlocfilehash: 1a1de92517b59d168147feafe16fe2479b8afc2b
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: b8ffdbe6c20f1a81fb27f74444ba07ec9c9d8745
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27072858"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27306637"
 ---
 # <a name="update-auditevent"></a>auditEvent の更新
 
@@ -44,9 +45,9 @@ PATCH /deviceManagement/auditEvents/{auditEventId}
 
 次の表に、[auditEvent](../resources/intune-auditing-auditevent.md) の作成時に必要なプロパティを示します。
 
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
-|id|String|エンティティのキー。|
+|ID|String|エンティティのキー。|
 |displayName|String|イベントの表示名。|
 |componentName|String|コンポーネント名。|
 |actor|[auditActor](../resources/intune-auditing-auditactor.md)|監査イベントに関連付けられている AAD ユーザーとアプリケーション。|

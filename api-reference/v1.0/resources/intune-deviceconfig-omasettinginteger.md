@@ -1,12 +1,13 @@
 ---
 title: omaSettingInteger リソースの種類
 description: OMA 設定の整数の定義。
-ms.openlocfilehash: 36c22b423161d9f3c58c3085fb7b040c663d460b
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 6a2e6fe6e6782159afa99d91785ae9e854a2e99c
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27023703"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27306553"
 ---
 # <a name="omasettinginteger-resource-type"></a>omaSettingInteger リソースの種類
 
@@ -17,7 +18,7 @@ OMA 設定の整数の定義。
 [omaSetting](../resources/intune-deviceconfig-omasetting.md) からの継承
 
 ## <a name="properties"></a>プロパティ
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
 |displayName|文字列|表示名。 [omaSetting](../resources/intune-deviceconfig-omasetting.md) からの継承|
 |説明|String|説明。 [omaSetting](../resources/intune-deviceconfig-omasetting.md) からの継承|

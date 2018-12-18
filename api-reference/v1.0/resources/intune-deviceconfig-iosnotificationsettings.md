@@ -1,12 +1,13 @@
 ---
 title: iosNotificationSettings リソース タイプ
 description: 通知設定を記述するアイテムです。
-ms.openlocfilehash: 40f23c228bf10cfb7f273efbe343c1ff773ac280
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 197de8b9cd59d1f6c998f92460e62aab480ef455
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27023310"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27307841"
 ---
 # <a name="iosnotificationsettings-resource-type"></a>iosNotificationSettings リソース タイプ
 
@@ -14,7 +15,7 @@ ms.locfileid: "27023310"
 
 通知設定を記述するアイテムです。
 ## <a name="properties"></a>プロパティ
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
 |bundleID|String|これらの通知設定を適用するアプリのバンドル ID。|
 |appName|String|bundleID に関連するアプリケーション名。|

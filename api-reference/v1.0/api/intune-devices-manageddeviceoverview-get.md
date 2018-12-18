@@ -1,12 +1,13 @@
 ---
 title: Get managedDeviceOverview
 description: managedDeviceOverview オブジェクトのプロパティとリレーションシップを読み取ります。
-ms.openlocfilehash: b298e99bd0446f3548abf2741e599da9ccebdfe0
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: aab77b41664f25819006248a81b80e620bcdec2c
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27021830"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27307225"
 ---
 # <a name="get-manageddeviceoverview"></a>Get managedDeviceOverview
 

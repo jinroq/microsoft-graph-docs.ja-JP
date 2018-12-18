@@ -1,12 +1,13 @@
 ---
 title: androidCompliancePolicies のリスト
 description: androidCompliancePolicy オブジェクトのプロパティとリレーションシップをリストします。
-ms.openlocfilehash: 32953967a7ea84f9e769ee415b79f28ce95e8f4f
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 53097963cdd489006c176abd5dbf32633f7297d1
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27073923"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27307183"
 ---
 # <a name="list-androidcompliancepolicies"></a>androidCompliancePolicies のリスト
 

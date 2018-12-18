@@ -1,12 +1,13 @@
 ---
 title: Create windowsPhone81GeneralConfiguration
 description: 新しい windowsPhone81GeneralConfiguration オブジェクトを作成します。
-ms.openlocfilehash: 8598e728be574e09f79bb8e7a384b76416bf79f0
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 23e98acd93fc5851df690b7f06ee0bac3a16ce70
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27021659"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27307085"
 ---
 # <a name="create-windowsphone81generalconfiguration"></a>Create windowsPhone81GeneralConfiguration
 
@@ -42,9 +43,9 @@ POST /deviceManagement/deviceConfigurations
 
 次の表に、windowsPhone81GeneralConfiguration の作成時に必要なプロパティを示します。
 
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
-|id|String|エンティティのキー。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
+|ID|String|エンティティのキー。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |lastModifiedDateTime|DateTimeOffset|オブジェクトが最後に変更された DateTime。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |createdDateTime|DateTimeOffset|オブジェクトが作成された DateTime。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |説明|String|デバイス構成について管理者が提供した説明。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|

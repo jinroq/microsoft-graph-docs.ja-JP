@@ -1,12 +1,13 @@
 ---
 title: assign アクション
 description: まだ文書化されていません
-ms.openlocfilehash: aa1571614bdbe303ad2a22c3f74392972d858dca
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 0264f5aff78058887e6f219d08812eb6857737ed
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27070067"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27308177"
 ---
 # <a name="assign-action"></a>assign アクション
 
@@ -44,7 +45,7 @@ POST /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/assign
 
 次の表に、このアクションで使用できるパラメーターを示します。
 
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
 |deviceManagementScriptGroupAssignments|[deviceManagementScriptGroupAssignment](../resources/intune-devices-devicemanagementscriptgroupassignment.md)コレクション|まだ文書化されていません|
 |deviceManagementScriptAssignments|[deviceManagementScriptAssignment](../resources/intune-devices-devicemanagementscriptassignment.md)コレクション|まだ文書化されていません|

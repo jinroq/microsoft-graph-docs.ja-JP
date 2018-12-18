@@ -1,12 +1,13 @@
 ---
 title: windowsInformationProtectionResourceCollection リソースの種類
 description: Windows 情報保護のリソース コレクション
-ms.openlocfilehash: c6840c8ebb272d0ad066556d9edab825b3fb50f5
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 96b3b36f40d1eeb88731f6f44ebec812a18fe713
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27072989"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27306889"
 ---
 # <a name="windowsinformationprotectionresourcecollection-resource-type"></a>windowsInformationProtectionResourceCollection リソースの種類
 
@@ -16,7 +17,7 @@ ms.locfileid: "27072989"
 
 Windows 情報保護のリソース コレクション
 ## <a name="properties"></a>プロパティ
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
 |displayName|文字列|表示名|
 |リソース|文字列コレクション|リソースのコレクション|

@@ -1,12 +1,13 @@
 ---
 title: applePushNotificationCertificate リソースの種類
 description: Apple プッシュ通知証明書。
-ms.openlocfilehash: 94707f157c1667593c0f5a25234be52b1c7c5955
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 11c03712cc482a882452a9b64867090260863075
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27073004"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27306651"
 ---
 # <a name="applepushnotificationcertificate-resource-type"></a>applePushNotificationCertificate リソースの種類
 
@@ -23,9 +24,9 @@ Apple プッシュ通知証明書。
 |[downloadApplePushNotificationCertificateSigningRequest 関数](../api/intune-devices-applepushnotificationcertificate-downloadapplepushnotificationcertificatesigningrequest.md)|文字列型 (String)|Apple プッシュ通知の証明書署名要求をダウンロードします|
 
 ## <a name="properties"></a>プロパティ
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
-|id|String|証明書の一意識別子|
+|ID|String|証明書の一意識別子|
 |appleIdentifier|String|MDM プッシュ証明書の作成に使用するアカウントの Apple ID。|
 |topicIdentifier|String|トピック ID。|
 |lastModifiedDateTime|DateTimeOffset|Apple プッシュ通知証明書の最終変更日時。|

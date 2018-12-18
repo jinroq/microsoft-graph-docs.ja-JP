@@ -1,12 +1,13 @@
 ---
 title: mimeContent リソースの種類
 description: 汎用 MIME コンテンツのプロパティが含まれています。
-ms.openlocfilehash: 7f25a1c16b86a45886cd763c1a8a3aa6142c47e2
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 53776793fdd057ef057118decf2d72bb0b61a042
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27021814"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27307064"
 ---
 # <a name="mimecontent-resource-type"></a>mimeContent リソースの種類
 
@@ -14,7 +15,7 @@ ms.locfileid: "27021814"
 
 汎用 MIME コンテンツのプロパティが含まれています。
 ## <a name="properties"></a>プロパティ
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
 |type|String|コンテンツ MIME の種類を示します。|
 |value|バイナリ|実際のコンテンツを含むバイト配列です。|

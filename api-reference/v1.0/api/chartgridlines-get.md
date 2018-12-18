@@ -1,12 +1,13 @@
 ---
 title: Get ChartGridlines
 description: chartgridlines オブジェクトのプロパティと関係を取得します。
-ms.openlocfilehash: 5cd49cac8ff9397651a9439f475b766f42042a53
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lumine2008
+ms.openlocfilehash: 36df3a4bae39c0a12a95032572e7428d6fda7e77
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27022611"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27306707"
 ---
 # <a name="get-chartgridlines"></a>Get ChartGridlines
 

@@ -1,12 +1,13 @@
 ---
 title: RoleScopeTag を更新します。
 description: RoleScopeTag オブジェクトのプロパティを更新します。
-ms.openlocfilehash: d18f4f47be9aab01b1221e9ce7736878bb059bed
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 3e1cdc0997e0c2f7ebb8d70c730785e40b4143d4
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27072995"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27306945"
 ---
 # <a name="update-rolescopetag"></a>RoleScopeTag を更新します。
 
@@ -45,9 +46,9 @@ PATCH /deviceManagement/roleDefinitions/{roleDefinitionId}/roleAssignments/{role
 
 [RoleScopeTag](../resources/intune-rbac-rolescopetag.md)を作成するときに必要なプロパティを次の表に示します。
 
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
-|id|String|エンティティのキー。 これは読み取り専用で、自動生成されます。|
+|ID|String|エンティティのキー。 これは読み取り専用で、自動生成されます。|
 |displayName|String|表示する、またはロールのスコープのタグの表示名。|
 |説明|String|ロールのスコープのタグの説明です。|
 

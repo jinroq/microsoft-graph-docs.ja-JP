@@ -1,12 +1,13 @@
 ---
 title: tablecolumn を更新する
 description: tablecolumn オブジェクトのプロパティを更新します。
-ms.openlocfilehash: cd4c28ea481eb8e585f290733e903ed2874aff75
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lumine2008
+ms.openlocfilehash: 8b3d2872d574882b1d9fca24cee9e41e51ef3b23
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27068400"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27306763"
 ---
 # <a name="update-tablecolumn"></a>tablecolumn を更新する
 
@@ -37,7 +38,7 @@ PATCH /workbook/worksheets/{id|name}/tables/{id|name}/columns/{id|name}
 ## <a name="request-body"></a>要求本文
 要求本文で、更新する関連フィールドの値を指定します。要求本文に含まれない既存のプロパティは、以前の値のままになるか、他のプロパティ値の変化に基づいて再計算されます。最適なパフォーマンスを得るためには、変更されていない既存の値を含めないでください。
 
-| プロパティ     | 型   |説明|
+| プロパティ     | 種類   |説明|
 |:---------------|:--------|:----------|
 |values|json|指定した範囲の Raw 値を表します。返されるデータの型は、文字列、数値、またはブール値のいずれかになります。エラーが含まれているセルは、エラー文字列を返します。|
 

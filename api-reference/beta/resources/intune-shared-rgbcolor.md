@@ -1,12 +1,13 @@
 ---
 title: rgbColor リソースの種類
 description: RGB 色。
-ms.openlocfilehash: 7b5d450c0126e043a78a6c4f9f0e2fe6f06c7c13
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 0452d8c275e7568df6b304613d8619f04add0548
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27072294"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27307113"
 ---
 # <a name="rgbcolor-resource-type"></a>rgbColor リソースの種類
 
@@ -16,7 +17,7 @@ ms.locfileid: "27072294"
 
 RGB 色。
 ## <a name="properties"></a>プロパティ
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
 |r|バイト型 (Byte)|赤の値|
 |g|バイト型 (Byte)|緑の値|

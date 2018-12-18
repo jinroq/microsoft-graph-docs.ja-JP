@@ -1,12 +1,13 @@
 ---
 title: windowsKioskAppBase リソースの種類
 description: アプリケーションの型の基本クラス
-ms.openlocfilehash: bbd2a961e86e698ff0b9a98401927c518beafe49
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 2afccff07d15fa1f2dfeff6a4ae9029494faa521
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27068810"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27307449"
 ---
 # <a name="windowskioskappbase-resource-type"></a>windowsKioskAppBase リソースの種類
 
@@ -15,8 +16,8 @@ ms.locfileid: "27068810"
 > **注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
 
 アプリケーションの型の基本クラス
-## <a name="properties"></a>プロパティ
-|プロパティ|型|説明|
+## <a name="properties"></a>Properties
+|プロパティ|種類|説明|
 |:---|:---|:---|
 |startLayoutTileSize|[windowsAppStartLayoutTileSize](../resources/intune-deviceconfig-windowsappstartlayouttilesize.md)|開始レイアウトのアプリケーションのタイルのサイズです。 可能な値は、`hidden`、`small`、`medium`、`wide`、`large` です。|
 |名前|String|アプリケーションのフレンドリ名を表す|

@@ -1,12 +1,13 @@
 ---
 title: 連絡先を一覧表示する
 description: サインイン中のユーザーの既定の連絡先フォルダーから連絡先のコレクションを取得します。
-ms.openlocfilehash: 9322810d90f38c0b7643379f22a90a89cf7070df
-ms.sourcegitcommit: 12c6e82f1417022540e534ebadbd0e8d7fb5abde
+author: dkershaw10
+ms.openlocfilehash: a4fa40b66280ea3447c1d07a531a596a42c14ed2
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/08/2018
-ms.locfileid: "27209734"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27307498"
 ---
 # <a name="list-contacts"></a>連絡先を一覧表示する
 

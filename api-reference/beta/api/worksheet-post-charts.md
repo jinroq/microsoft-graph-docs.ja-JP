@@ -1,12 +1,13 @@
 ---
 title: グラフを作成します。
 description: この API を使用して、新しいグラフを作成します。
-ms.openlocfilehash: ca9c386a88c91ef149de9a27b97bf4bff4b8ed6e
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lumine2008
+ms.openlocfilehash: abc58613e87c6765a83db62178e54ef58ce425d9
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27074225"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27306770"
 ---
 # <a name="create-chart"></a>グラフを作成します。
 

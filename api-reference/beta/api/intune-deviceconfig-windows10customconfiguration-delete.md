@@ -1,12 +1,13 @@
 ---
 title: Delete windows10CustomConfiguration
 description: windows10CustomConfiguration を削除します。
-ms.openlocfilehash: 9dff8c909ecc26ea9d17e3363eef7bb8a5f7b1d3
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 92bfa3b216e9e615d57628e236b088941ef5d51c
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27068432"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27307778"
 ---
 # <a name="delete-windows10customconfiguration"></a>Delete windows10CustomConfiguration
 

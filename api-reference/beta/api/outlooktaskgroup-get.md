@@ -1,12 +1,13 @@
 ---
 title: OutlookTaskGroup を取得します。
 description: プロパティと指定した Outlook のタスク グループの関係を取得します。
-ms.openlocfilehash: ca1ceaf41c7664d83cfd042a61cf98c105bfdd73
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: angelgolfer-ms
+ms.openlocfilehash: c464a6ac9b219ca84538e6d369009e0f5f515c51
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27074172"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27306749"
 ---
 # <a name="get-outlooktaskgroup"></a>OutlookTaskGroup を取得します。
 

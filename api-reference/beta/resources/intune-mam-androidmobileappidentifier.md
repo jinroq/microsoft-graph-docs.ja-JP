@@ -1,12 +1,13 @@
 ---
 title: androidMobileAppIdentifier リソースの種類
 description: Android アプリの識別子。
-ms.openlocfilehash: 976191384afb563a8243b92dfa9ddfcc98f0c4a2
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: c8f590deb33faf1782e3e2ad38f0b65ab4f58eed
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27068589"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27306882"
 ---
 # <a name="androidmobileappidentifier-resource-type"></a>androidMobileAppIdentifier リソースの種類
 
@@ -19,7 +20,7 @@ Android アプリの識別子。
 [mobileAppIdentifier](../resources/intune-mam-mobileappidentifier.md) からの継承
 
 ## <a name="properties"></a>プロパティ
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
 |packageId|文字列型 (String)|Play ストアで指定されている、アプリの識別子。|
 

@@ -1,12 +1,13 @@
 ---
 title: getEncryptionPublicKey 関数
 description: アップル デバイスの登録プログラムを暗号化するために使用する公開キーのトークンを取得します。
-ms.openlocfilehash: 3d15d1eb6655c97032100b131174b2ea356538e6
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 206d5fa297a89537c8e94e72fbc6f69fb00ce056
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27067393"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27305566"
 ---
 # <a name="getencryptionpublickey-function"></a>getEncryptionPublicKey 関数
 

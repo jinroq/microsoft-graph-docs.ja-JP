@@ -1,12 +1,13 @@
 ---
 title: ManagedDeviceMobileAppConfigurationDeviceStatus を更新します。
 description: ManagedDeviceMobileAppConfigurationDeviceStatus オブジェクトのプロパティを更新します。
-ms.openlocfilehash: d81d8efac6e4b6f658fb7ebc6529ce1abfed38f5
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 9891581e7692f3450340df3b25bebc503094a080
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27023334"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27306609"
 ---
 # <a name="update-manageddevicemobileappconfigurationdevicestatus"></a>ManagedDeviceMobileAppConfigurationDeviceStatus を更新します。
 
@@ -42,9 +43,9 @@ PATCH /deviceAppManagement/mobileAppConfigurations/{managedDeviceMobileAppConfig
 
 [ManagedDeviceMobileAppConfigurationDeviceStatus](../resources/intune-apps-manageddevicemobileappconfigurationdevicestatus.md)を作成するときに必要なプロパティを次の表に示します。
 
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
-|id|String|エンティティのキー。|
+|ID|String|エンティティのキー。|
 |deviceDisplayName|String|DevicePolicyStatus のデバイス名。|
 |userName|String|レポートされているユーザー名|
 |deviceModel|String|レポートされているデバイス モデル|

@@ -1,12 +1,13 @@
 ---
 title: remoteAssistancePartners のリスト
 description: remoteAssistancePartner オブジェクトのプロパティとリレーションシップをリストします。
-ms.openlocfilehash: 9eca8425dcbefc284ae2bd42c4a75dd4db15f812
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 3394cc67ee1027267aa22b7e95eae8ae5dfdf6fb
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27068341"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27307169"
 ---
 # <a name="list-remoteassistancepartners"></a>remoteAssistancePartners のリスト
 

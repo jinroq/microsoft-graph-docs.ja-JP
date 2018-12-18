@@ -1,12 +1,13 @@
 ---
 title: assign アクション
 description: ポリシーのすべての対象とするグループを交換してください。
-ms.openlocfilehash: dd892444d60338b73df4209eef00069667e15d48
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 00ecb5d5e34fb067bbca36eee5ff190344319d7b
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27072650"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27307827"
 ---
 # <a name="assign-action"></a>assign アクション
 
@@ -44,7 +45,7 @@ POST /officeConfiguration/clientConfigurations/{officeClientConfigurationId}/ass
 
 次の表に、このアクションで使用できるパラメーターを示します。
 
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
 |officeConfigurationAssignments|[officeClientConfigurationAssignment](../resources/intune-cirrus-officeclientconfigurationassignment.md)コレクション|Office 構成の割り当ての一覧|
 

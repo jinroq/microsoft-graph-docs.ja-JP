@@ -1,12 +1,13 @@
 ---
 title: installIntent 列挙型
 description: 管理者が選択したインストールの目的に使用できる値
-ms.openlocfilehash: 27b3a48f91e9593ca0e4ebbf6d41ed2c289d20db
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: c32bafd0e9cc2b4325b9674a17ac8d14272bce9d
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27069376"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27305839"
 ---
 # <a name="installintent-enum-type"></a>installIntent 列挙型
 

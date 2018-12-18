@@ -1,12 +1,13 @@
 ---
 title: iosLobAppAssignmentSettings リソースの種類
 description: グループへの iOS LOB モバイル アプリの割り当てに使用されるプロパティが、含まれます。
-ms.openlocfilehash: 29642e7ba4d834d4481d5bc04b0d82a7046f544d
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 78de511bdbdf2e4a8b16d9ce32a790329d2eb3c9
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27023652"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27306091"
 ---
 # <a name="ioslobappassignmentsettings-resource-type"></a>iosLobAppAssignmentSettings リソースの種類
 
@@ -17,7 +18,7 @@ ms.locfileid: "27023652"
 [mobileAppAssignmentSettings](../resources/intune-apps-mobileappassignmentsettings.md) からの継承
 
 ## <a name="properties"></a>プロパティ
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
 |vpnConfigurationId|文字列型 (String)|このアプリに適用するための VPN 構成 ID。|
 

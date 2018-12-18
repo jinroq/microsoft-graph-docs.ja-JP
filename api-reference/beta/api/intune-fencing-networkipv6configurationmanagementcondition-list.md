@@ -1,12 +1,13 @@
 ---
 title: リスト networkIPv6ConfigurationManagementConditions
 description: NetworkIPv6ConfigurationManagementCondition オブジェクトのプロパティと関係を一覧表示します。
-ms.openlocfilehash: eb71bd64369a0cf02fff8e0390ba779a106d9684
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: ad138f098413cc09c06bc25e48d603d43f3d45a0
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27068793"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27305615"
 ---
 # <a name="list-networkipv6configurationmanagementconditions"></a>リスト networkIPv6ConfigurationManagementConditions
 

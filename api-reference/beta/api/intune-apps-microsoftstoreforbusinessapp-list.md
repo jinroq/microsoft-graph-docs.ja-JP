@@ -1,12 +1,13 @@
 ---
 title: microsoftStoreForBusinessApps のリスト
 description: microsoftStoreForBusinessApp オブジェクトのプロパティとリレーションシップをリストします。
-ms.openlocfilehash: 69543b89d68cf1baf448097289c0c24181690f3e
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 01d038502874c7468e07e6380994ff1e875014a9
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27073539"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27307666"
 ---
 # <a name="list-microsoftstoreforbusinessapps"></a>microsoftStoreForBusinessApps のリスト
 

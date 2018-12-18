@@ -1,12 +1,13 @@
 ---
 title: iosBookmark リソースの種類
 description: iOS の URL のブックマーク
-ms.openlocfilehash: e2349e0d280c9798a03363ab90d378ff206c57bf
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: e1577537e57365b2452e956e010f6c3f918bd743
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27068753"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27308401"
 ---
 # <a name="iosbookmark-resource-type"></a>iosBookmark リソースの種類
 
@@ -15,8 +16,8 @@ ms.locfileid: "27068753"
 > **注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
 
 iOS の URL のブックマーク
-## <a name="properties"></a>プロパティ
-|プロパティ|型|説明|
+## <a name="properties"></a>Properties
+|プロパティ|種類|説明|
 |:---|:---|:---|
 |url|String|URL のアクセスを許可|
 |bookmarkFolder|String|フォルダーには、Safari でブックマークを追加します。|

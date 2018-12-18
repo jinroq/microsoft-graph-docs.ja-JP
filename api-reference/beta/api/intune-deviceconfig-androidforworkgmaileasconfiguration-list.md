@@ -1,12 +1,13 @@
 ---
 title: リスト androidForWorkGmailEasConfigurations
 description: AndroidForWorkGmailEasConfiguration オブジェクトのプロパティと関係を一覧表示します。
-ms.openlocfilehash: a8d575ee5dcad9b1e6eeec8027364e28d25c7134
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: b227f09b13b8522d6e78cbee1f26743b9f82bc2a
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27066599"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27308079"
 ---
 # <a name="list-androidforworkgmaileasconfigurations"></a>リスト androidForWorkGmailEasConfigurations
 

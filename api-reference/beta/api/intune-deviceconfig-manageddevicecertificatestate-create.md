@@ -1,12 +1,13 @@
 ---
 title: ManagedDeviceCertificateState を作成します。
 description: 新しい managedDeviceCertificateState オブジェクトを作成します。
-ms.openlocfilehash: 7369b6d4eb8c5639fd928c5ff2be46b9db8dc10e
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 22b8a0db82e86b9136ee997a821223afe608b51a
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27071294"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27305958"
 ---
 # <a name="create-manageddevicecertificatestate"></a>ManagedDeviceCertificateState を作成します。
 
@@ -60,9 +61,9 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 
 次の表は、managedDeviceCertificateState を作成するときに必要なプロパティを示します。
 
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
-|id|String|エンティティのキー。|
+|ID|String|エンティティのキー。|
 |devicePlatform|[devicePlatformType](../resources/intune-shared-deviceplatformtype.md)|デバイスのプラットフォームです。 可能な値は、`android`、`androidForWork`、`iOS`、`macOS`、`windowsPhone81`、`windows81AndLater`、`windows10AndLater`、`androidWorkProfile` です。|
 |certificateKeyUsage|[keyUsages](../resources/intune-deviceconfig-keyusages.md)|キーの使用法です。 使用可能な値は、`keyEncipherment`、`digitalSignature` です。|
 |certificateValidityPeriodUnits|[certificateValidityPeriodScale](../resources/intune-deviceconfig-certificatevalidityperiodscale.md)|有効期間の単位。 可能な値は、`days`、`months`、`years` です。|

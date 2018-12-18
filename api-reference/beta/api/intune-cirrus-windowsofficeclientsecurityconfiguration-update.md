@@ -1,12 +1,13 @@
 ---
 title: WindowsOfficeClientSecurityConfiguration を更新します。
 description: WindowsOfficeClientSecurityConfiguration オブジェクトのプロパティを更新します。
-ms.openlocfilehash: 4e3430250a8b4332e07f9e6548c743aa122e1b19
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: c047601882210d83c6f71114c62615a79e743d93
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27069845"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27307792"
 ---
 # <a name="update-windowsofficeclientsecurityconfiguration"></a>WindowsOfficeClientSecurityConfiguration を更新します。
 
@@ -44,9 +45,9 @@ PATCH /officeConfiguration/clientConfigurations/{officeClientConfigurationId}
 
 [WindowsOfficeClientSecurityConfiguration](../resources/intune-cirrus-windowsofficeclientsecurityconfiguration.md)を作成するときに必要なプロパティを次の表に示します。
 
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
-|id|String|Office クライアントの構成のポリシーの id。 [OfficeClientConfiguration](../resources/intune-cirrus-officeclientconfiguration.md)から継承されました。|
+|ID|String|Office クライアントの構成のポリシーの id。 [OfficeClientConfiguration](../resources/intune-cirrus-officeclientconfiguration.md)から継承されました。|
 |userPreferencePayload|Stream|JSON の環境設定は、バイナリ形式の文字列は、ユーザーがこれらの値をオーバーライドすることができます。 [OfficeClientConfiguration](../resources/intune-cirrus-officeclientconfiguration.md)から継承されました。|
 |policyPayload|Stream|JSON のポリシー設定はバイナリ形式の文字列は、ユーザーがこれらの値を変更することはできません。 [OfficeClientConfiguration](../resources/intune-cirrus-officeclientconfiguration.md)から継承されました。|
 |説明|String|管理者には、office クライアントの説明の構成のポリシーが用意されています。 [OfficeClientConfiguration](../resources/intune-cirrus-officeclientconfiguration.md)から継承されました。|

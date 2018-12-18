@@ -1,12 +1,13 @@
 ---
 title: depEnrollmentBaseProfile リソースの種類
 description: DepEnrollmentBaseProfile リソースでは、アップル デバイスの登録プログラム (DEP) の登録プロファイルを表します。 このタイプのプロファイルは、DEP. を使用して対応するデバイスを登録する前に、Apple の DEP のシリアル番号を割り当てる必要があります。
-ms.openlocfilehash: 172e0f0d4ed9b23f8c5a3d5226e24e4ac63b0527
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 26335fd3d35494b815dd43531ad54b4796dc861c
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27073260"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27308373"
 ---
 # <a name="depenrollmentbaseprofile-resource-type"></a>depEnrollmentBaseProfile リソースの種類
 
@@ -24,31 +25,31 @@ DepEnrollmentBaseProfile リソースでは、アップル デバイスの登録
 |[リスト depEnrollmentBaseProfiles](../api/intune-enrollment-depenrollmentbaseprofile-list.md)|[depEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)コレクション|[DepEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)オブジェクトのプロパティと関係を一覧表示します。|
 |[DepEnrollmentBaseProfile を取得します。](../api/intune-enrollment-depenrollmentbaseprofile-get.md)|[depEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)|[DepEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)オブジェクトのプロパティと関係を参照してください。|
 
-## <a name="properties"></a>プロパティ
-|プロパティ|型|説明|
+## <a name="properties"></a>Properties
+|プロパティ|種類|説明|
 |:---|:---|:---|
-|id|String|[EnrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)から継承されるオブジェクトの GUID|
+|ID|String|[EnrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)から継承されるオブジェクトの GUID|
 |displayName|String|[EnrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)から継承されるプロファイルの名前|
 |説明|String|[EnrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)から継承されるプロファイルの説明|
-|requiresUserAuthentication|ブール値|プロファイルに[enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)から継承されるのユーザー認証が必要なかどうかを示します|
+|requiresUserAuthentication|ブール型|プロファイルに[enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)から継承されるのユーザー認証が必要なかどうかを示します|
 |configurationEndpointUrl|String|[EnrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)から登録の継承を使用するエンドポイントの url を構成|
-|enableAuthenticationViaCompanyPortal|ブール値|アップルらくらく企業ポータルではなくを使用して認証することを示します。 [EnrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)から継承されました。|
-|isDefault|ブール値|これは、既定のプロファイルであるかどうかを示します|
-|supervisedModeEnabled|ブール値|コールを管理モードを有効にする、false それ以外の場合は True です。 参照してくださいhttps://docs.microsoft.com/en-us/intune/deploy-use/enroll-devices-in-microsoft-intuneの追加情報です。|
+|enableAuthenticationViaCompanyPortal|ブール型|アップルらくらく企業ポータルではなくを使用して認証することを示します。 [EnrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)から継承されました。|
+|isDefault|ブール型|これは、既定のプロファイルであるかどうかを示します|
+|supervisedModeEnabled|ブール型|コールを管理モードを有効にする、false それ以外の場合は True です。 参照してくださいhttps://docs.microsoft.com/en-us/intune/deploy-use/enroll-devices-in-microsoft-intuneの追加情報です。|
 |supportDepartment|String|サポート部門の情報|
-|passCodeDisabled|ブール値|パスコードの設定] ウィンドウが無効になっているかどうかを示します|
-|isMandatory|ブール値|プロファイルが必須かどうかを|
-|locationDisabled|ブール値|場所サービス セットアップ] ウィンドウが無効になっているかどうかを示します|
+|passCodeDisabled|ブール型|パスコードの設定] ウィンドウが無効になっているかどうかを示します|
+|isMandatory|ブール型|プロファイルが必須かどうかを|
+|locationDisabled|ブール型|場所サービス セットアップ] ウィンドウが無効になっているかどうかを示します|
 |supportPhoneNumber|String|サポート電話番号|
-|profileRemovalDisabled|ブール値|プロファイルの削除オプションが無効になっているかどうかを示します|
-|restoreBlocked|ブール値|復元の設定] ウィンドウがブロックされていることを示します。|
-|appleIdDisabled|ブール値|Apple id の設定] ウィンドウが無効になっているかどうかを示します|
-|termsAndConditionsDisabled|ブール値|'条項および条件' の設定ウィンドウが無効になっているかどうかを示します|
-|touchIdDisabled|ブール値|タッチ id の設定] ウィンドウが無効になっているかどうかを示します|
-|applePayDisabled|ブール値|アップル支払設定] ウィンドウが無効になっているかどうかを示します|
-|zoomDisabled|ブール値|ズームの設定] ウィンドウが無効になっているかどうかを示します|
-|siriDisabled|ブール値|Siri の設定] ウィンドウが無効になっているかどうかを示します|
-|diagnosticsDisabled|ブール値|診断設定] ウィンドウが無効になっているかどうかを示します|
+|profileRemovalDisabled|ブール型|プロファイルの削除オプションが無効になっているかどうかを示します|
+|restoreBlocked|ブール型|復元の設定] ウィンドウがブロックされていることを示します。|
+|appleIdDisabled|ブール型|Apple id の設定] ウィンドウが無効になっているかどうかを示します|
+|termsAndConditionsDisabled|ブール型|'条項および条件' の設定ウィンドウが無効になっているかどうかを示します|
+|touchIdDisabled|ブール型|タッチ id の設定] ウィンドウが無効になっているかどうかを示します|
+|applePayDisabled|ブール型|アップル支払設定] ウィンドウが無効になっているかどうかを示します|
+|zoomDisabled|ブール型|ズームの設定] ウィンドウが無効になっているかどうかを示します|
+|siriDisabled|ブール型|Siri の設定] ウィンドウが無効になっているかどうかを示します|
+|diagnosticsDisabled|ブール型|診断設定] ウィンドウが無効になっているかどうかを示します|
 
 ## <a name="relationships"></a>リレーションシップ
 なし

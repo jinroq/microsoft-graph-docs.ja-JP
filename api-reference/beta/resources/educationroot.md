@@ -1,12 +1,13 @@
 ---
 title: educationRoot リソースの種類
 description: '`/education` 名前空間は、教育機関に固有の機能を公開します。 '
-ms.openlocfilehash: 01845df878d5e6a4fe01cb29f73d73b6980cfa9a
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: mmast-msft
+ms.openlocfilehash: 2a9eac02552e62e7bfb889e9e87efe47fa5f88f9
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27067509"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27307435"
 ---
 # <a name="educationroot-resource-type"></a>educationRoot リソースの種類
 

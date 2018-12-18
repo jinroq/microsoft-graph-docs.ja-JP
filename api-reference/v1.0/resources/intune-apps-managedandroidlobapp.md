@@ -1,12 +1,13 @@
 ---
 title: managedAndroidLobApp リソース タイプ
 description: 管理対象 Android 基幹業務アプリのプロパティと継承されたプロパティが含まれます。
-ms.openlocfilehash: 6821d488a5ffb5827e66c13964cde70b1c74d5d3
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 886049162a47ab104c131e36ab2b96ff0ce58996
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27022250"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27306266"
 ---
 # <a name="managedandroidlobapp-resource-type"></a>managedAndroidLobApp リソース タイプ
 
@@ -26,9 +27,9 @@ ms.locfileid: "27022250"
 |[Update managedAndroidLobApp](../api/intune-apps-managedandroidlobapp-update.md)|[managedAndroidLobApp](../resources/intune-apps-managedandroidlobapp.md)|[managedAndroidLobApp](../resources/intune-apps-managedandroidlobapp.md) オブジェクトのプロパティを更新します。|
 
 ## <a name="properties"></a>プロパティ
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
-|id|String|エンティティのキー。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|
+|ID|String|エンティティのキー。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|
 |displayName|String|管理者が提供またはインポートしたアプリのタイトル。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|
 |説明|String|アプリの説明。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|
 |publisher|String|アプリの発行元。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|

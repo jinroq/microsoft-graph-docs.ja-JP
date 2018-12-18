@@ -1,12 +1,13 @@
 ---
 title: officeConfiguration リソースの種類
 description: すべてのデバイス管理機能のコンテナーとして機能する単一のエンティティです。
-ms.openlocfilehash: 4a3657153ead53a5367c23cdc51b0e40a8efe535
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: bf74789d4debda00b21173ff2974db8224cd15f0
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27068754"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27305545"
 ---
 # <a name="officeconfiguration-resource-type"></a>officeConfiguration リソースの種類
 
@@ -21,10 +22,10 @@ ms.locfileid: "27068754"
 |OfficeConfiguration を取得します。|[officeConfiguration](../resources/intune-cirrus-officeconfiguration.md)|[OfficeConfiguration](../resources/intune-cirrus-officeconfiguration.md)オブジェクトのプロパティと関係を参照してください。|
 |OfficeConfiguration を更新します。|[officeConfiguration](../resources/intune-cirrus-officeconfiguration.md)|[OfficeConfiguration](../resources/intune-cirrus-officeconfiguration.md)オブジェクトのプロパティを更新します。|
 
-## <a name="properties"></a>プロパティ
-|プロパティ|型|説明|
+## <a name="properties"></a>Properties
+|プロパティ|種類|説明|
 |:---|:---|:---|
-|id|String|Office の構成の id です。|
+|ID|String|Office の構成の id です。|
 |tenantCheckinStatuses|[officeClientCheckinStatus](../resources/intune-cirrus-officeclientcheckinstatus.md)コレクション|Office クライアントでは、チェック状態の一覧です。|
 |tenantUserCheckinSummary|[officeUserCheckinSummary](../resources/intune-cirrus-officeusercheckinsummary.md)|テナント チェックインの彫像を記述するエンティティ|
 

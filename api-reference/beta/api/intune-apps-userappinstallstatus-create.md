@@ -1,12 +1,13 @@
 ---
 title: UserAppInstallStatus を作成します。
 description: 新しい userAppInstallStatus オブジェクトを作成します。
-ms.openlocfilehash: 4096bd5223869dba2e692c9d8dcc87e01b5a004e
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: ef110f5ce911e7e2244ebe2a50bcad194421ecea
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27072646"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27308485"
 ---
 # <a name="create-userappinstallstatus"></a>UserAppInstallStatus を作成します。
 
@@ -44,9 +45,9 @@ POST /deviceAppManagement/mobileApps/{mobileAppId}/userStatuses
 
 次の表は、userAppInstallStatus を作成するときに必要なプロパティを示します。
 
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
-|id|String|エンティティのキー。|
+|ID|String|エンティティのキー。|
 |userName|String|ユーザー名です。|
 |userPrincipalName|String|ユーザー プリンシパル名です。|
 |installedDeviceCount|Int32|インストールされたデバイスの数です。|

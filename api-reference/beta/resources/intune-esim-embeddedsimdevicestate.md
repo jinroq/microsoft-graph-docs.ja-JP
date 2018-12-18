@@ -1,12 +1,13 @@
 ---
 title: embeddedSIMDeviceState リソースの種類
 description: デバイスに関連して埋め込み SIM アクティベーション コードの展開状態を説明します。
-ms.openlocfilehash: 03d5d5d5dea85b3ecccf98fe57bc0611e2986063
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: ef7611e96b1b6f3bba0a3c59dead85ede41b2eda
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27072800"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27308457"
 ---
 # <a name="embeddedsimdevicestate-resource-type"></a>embeddedSIMDeviceState リソースの種類
 
@@ -24,17 +25,17 @@ ms.locfileid: "27072800"
 |[EmbeddedSIMDeviceState を削除します。](../api/intune-esim-embeddedsimdevicestate-delete.md)|なし|の[embeddedSIMDeviceState](../resources/intune-esim-embeddedsimdevicestate.md)を削除します。|
 |[EmbeddedSIMDeviceState を更新します。](../api/intune-esim-embeddedsimdevicestate-update.md)|[embeddedSIMDeviceState](../resources/intune-esim-embeddedsimdevicestate.md)|[EmbeddedSIMDeviceState](../resources/intune-esim-embeddedsimdevicestate.md)オブジェクトのプロパティを更新します。|
 
-## <a name="properties"></a>プロパティ
-|プロパティ|型|説明|
+## <a name="properties"></a>Properties
+|プロパティ|種類|説明|
 |:---|:---|:---|
-|id|String|埋め込みの SIM のデバイスの状態の一意の識別子です。 システムでは、作成時に割り当てられた値が生成されます。|
+|ID|String|埋め込みの SIM のデバイスの状態の一意の識別子です。 システムでは、作成時に割り当てられた値が生成されます。|
 |createdDateTime|DateTimeOffset|埋め込みの SIM のデバイスの状態が作成された時刻。 サービス側が生成されます。|
 |変更された日時|DateTimeOffset|埋め込み SIM デバイスのステータスが最後に修正された時間です。 サービス側を更新します。|
 |lastSyncDateTime|DateTimeOffset|SIM の埋め込みデバイスが最後にチェックインする時間です。 サービス側を更新します。|
 |universalIntegratedCircuitCardIdentifier|String|汎用集積回路カードの識別子 (UICCID) を展開する先となるプロファイルは、ハードウェアを識別します。|
 |deviceName|String|サブスクリプションには、デバイス名などのデスクトップでの準備|
 |userName|String|サブスクリプションが joe@contoso.com などに準備されているユーザー名|
-|ステート|[embeddedSIMDeviceStateValue](../resources/intune-esim-embeddedsimdevicestatevalue.md)|デバイスに適用されるプロファイルの操作の状態。 可能な値は、`notEvaluated`、`failed`、`installing`、`installed`、`deleting`、`error`、`deleted`、`removedByUser` です。|
+|state|[embeddedSIMDeviceStateValue](../resources/intune-esim-embeddedsimdevicestatevalue.md)|デバイスに適用されるプロファイルの操作の状態。 可能な値は、`notEvaluated`、`failed`、`installing`、`installed`、`deleting`、`error`、`deleted`、`removedByUser` です。|
 |stateDetails|String|プロビジョニングの状態の説明の文字列を指定します。|
 
 ## <a name="relationships"></a>リレーションシップ

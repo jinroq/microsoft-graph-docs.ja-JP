@@ -1,12 +1,13 @@
 ---
 title: managedEBookAssignment の削除
 description: managedEBookAssignment を削除します。
-ms.openlocfilehash: 851beabb06699b36dc21d6e54975ee85ee7b109f
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 30341025863221c8df4f8861c1fc409b8ec5c369
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27020799"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27305909"
 ---
 # <a name="delete-managedebookassignment"></a>managedEBookAssignment の削除
 

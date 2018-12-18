@@ -1,12 +1,13 @@
 ---
 title: eBookInstallSummary リソース タイプ
 description: デバイスのブックのインストール要約のプロパティが含まれています。
-ms.openlocfilehash: 76ae1348572bc40d01c958f676983d09456dcf03
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 631ebbcc704072051f5c9a954040de4cc94a2c48
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27069902"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27307813"
 ---
 # <a name="ebookinstallsummary-resource-type"></a>eBookInstallSummary リソース タイプ
 
@@ -22,9 +23,9 @@ ms.locfileid: "27069902"
 |[Update eBookInstallSummary](../api/intune-books-ebookinstallsummary-update.md)|[eBookInstallSummary](../resources/intune-books-ebookinstallsummary.md)|[eBookInstallSummary](../resources/intune-books-ebookinstallsummary.md) オブジェクトのプロパティを更新します。|
 
 ## <a name="properties"></a>プロパティ
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
-|id|String|エンティティのキー。|
+|ID|String|エンティティのキー。|
 |installedDeviceCount|Int32|このブックが正常にインストールされたデバイスの数。|
 |failedDeviceCount|Int32|このブックのインストールが失敗したデバイスの数。|
 |notInstalledDeviceCount|Int32|このブックがインストールされていないデバイスの数。|

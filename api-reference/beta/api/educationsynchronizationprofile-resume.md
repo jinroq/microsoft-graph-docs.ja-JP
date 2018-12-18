@@ -1,12 +1,13 @@
 ---
 title: EducationSynchronizationProfile の同期を再開します。
 description: テナントで特定の学校のデータの同期プロファイルの同期を再開します。
-ms.openlocfilehash: a184c6d7903da891d93275f87501ab38f83c3e88
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: mmast-msft
+ms.openlocfilehash: fd148db59d34f6455ba01e721453972f9cf65be4
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27071416"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27305650"
 ---
 # <a name="resume-sync-on-an-educationsynchronizationprofile"></a>EducationSynchronizationProfile の同期を再開します。
 
@@ -17,7 +18,7 @@ ms.locfileid: "27071416"
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
 
-| アクセス許可の種類 | Permissions |
+| アクセス許可の種類 | アクセス許可 |
 |:-----------|:----------|
 | 委任 (職場または学校のアカウント) | EduAdministration.ReadWrite |
 |(個人用の Microsoft アカウントを委任します。|サポートされていません。|
@@ -30,7 +31,7 @@ POST /synchronizationProfiles/{id}/resume
 ```
 
 ## <a name="request-headers"></a>要求ヘッダー
-| 名前       | 型 | 説明|
+| 名前       | 種類 | 説明|
 |:-----------|:------|:----------|
 | Authorization  | string  | ベアラー {トークン}。必須。  |
 

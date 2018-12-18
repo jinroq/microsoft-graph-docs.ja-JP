@@ -1,12 +1,13 @@
 ---
 title: NetworkIPv6ConfigurationManagementCondition を削除します。
 description: NetworkIPv6ConfigurationManagementCondition を削除します。
-ms.openlocfilehash: 8555b55cb92837690e043919b3a6df5955b90d2e
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: a872248dd5cdf965ae883937f12d4eee5ac142d1
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27068151"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27308261"
 ---
 # <a name="delete-networkipv6configurationmanagementcondition"></a>NetworkIPv6ConfigurationManagementCondition を削除します。
 

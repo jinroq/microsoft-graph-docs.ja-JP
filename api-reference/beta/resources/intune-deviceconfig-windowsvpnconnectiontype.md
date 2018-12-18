@@ -1,12 +1,13 @@
 ---
 title: windowsVpnConnectionType 列挙型
 description: Windows の VPN 接続の種類です。
-ms.openlocfilehash: a0b860da5e84f546c6e94fad66bc44302a470eed
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: d26b55b2d1b8fb38336c2dffcab4f002b03b1e82
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27072747"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27306364"
 ---
 # <a name="windowsvpnconnectiontype-enum-type"></a>windowsVpnConnectionType 列挙型
 

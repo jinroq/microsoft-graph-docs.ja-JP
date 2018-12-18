@@ -1,12 +1,13 @@
 ---
 title: DeviceManagementScriptUserState を更新します。
 description: DeviceManagementScriptUserState オブジェクトのプロパティを更新します。
-ms.openlocfilehash: f6428579bc19a005a1bf10b769916ac302304485
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 4a2601df84b022d13fd45ef3c506a4ee229fe6ad
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27073195"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27307834"
 ---
 # <a name="update-devicemanagementscriptuserstate"></a>DeviceManagementScriptUserState を更新します。
 
@@ -44,9 +45,9 @@ PATCH /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/userR
 
 [DeviceManagementScriptUserState](../resources/intune-devices-devicemanagementscriptuserstate.md)を作成するときに必要なプロパティを次の表に示します。
 
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
-|id|String|デバイス管理スクリプト ユーザー状態のエンティティのキーです。|
+|ID|String|デバイス管理スクリプト ユーザー状態のエンティティのキーです。|
 |successDeviceCount|Int32|デバイスの数の特定のユーザーに成功します。|
 |errorDeviceCount|Int32|特定のユーザー エラー デバイスの数。|
 |userPrincipalName|String|特定のユーザーのユーザー プリンシパル名です。|

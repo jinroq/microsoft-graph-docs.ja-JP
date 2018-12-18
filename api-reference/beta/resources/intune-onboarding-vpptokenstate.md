@@ -1,12 +1,13 @@
 ---
 title: vppTokenState 列挙型
 description: Apple ボリューム購入プログラム、トークンに関連付けられている状態です。
-ms.openlocfilehash: 7180364063a48e1b0eeb2778ed4def7c0d3930a6
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 70ff74a888e351d7f55c64a68771e221f9a644b4
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27069713"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27306581"
 ---
 # <a name="vpptokenstate-enum-type"></a>vppTokenState 列挙型
 
