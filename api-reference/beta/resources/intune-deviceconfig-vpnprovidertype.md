@@ -1,12 +1,13 @@
 ---
 title: vpnProviderType 列挙型
 description: アプリケーションごとの vpn プロバイダーの種類。
-ms.openlocfilehash: 133b1663ce3c72ba520dd5c1eeadf963154e9cc9
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: d8f002582879302bcbe0fb965110eaa5e674a689
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27072660"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27351598"
 ---
 # <a name="vpnprovidertype-enum-type"></a>vpnProviderType 列挙型
 

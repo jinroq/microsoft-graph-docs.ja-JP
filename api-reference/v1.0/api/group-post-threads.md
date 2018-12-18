@@ -1,12 +1,13 @@
 ---
 title: 会話スレッドを作成する
 description: '最初にスレッドを作成して、新しいグループ会話を開始します。 '
-ms.openlocfilehash: 4618a33cb22c327d9fe2b8400b99fa50959a6669
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: dkershaw10
+ms.openlocfilehash: e3517c3a933d428a8ba5b719ba72d0967ce1ae71
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27022357"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27352004"
 ---
 # <a name="create-conversation-thread"></a>会話スレッドを作成する
 最初にスレッドを作成して、新しいグループ会話を開始します。 

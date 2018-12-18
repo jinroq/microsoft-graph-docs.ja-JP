@@ -1,12 +1,13 @@
 ---
 title: iosMobileAppConfiguration の作成
 description: 新しい iosMobileAppConfiguration オブジェクトを作成します。
-ms.openlocfilehash: 24bd4b7a606ce95a146d0ce5273ba268766bb6c2
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 2437b71851a6476bb8607c46c4158dd6cb8337d7
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27021141"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27355560"
 ---
 # <a name="create-iosmobileappconfiguration"></a>iosMobileAppConfiguration の作成
 
@@ -42,9 +43,9 @@ POST /deviceAppManagement/mobileAppConfigurations
 
 次の表に、iosMobileAppConfiguration の作成時に必要なプロパティを示します。
 
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
-|id|String|エンティティのキー。 [managedDeviceMobileAppConfiguration](../resources/intune-apps-manageddevicemobileappconfiguration.md) から継承されます|
+|ID|String|エンティティのキー。 [managedDeviceMobileAppConfiguration](../resources/intune-apps-manageddevicemobileappconfiguration.md) から継承されます|
 |targetedMobileApps|String コレクション|関連するアプリです。 [managedDeviceMobileAppConfiguration](../resources/intune-apps-manageddevicemobileappconfiguration.md) から継承されます|
 |createdDateTime|DateTimeOffset|オブジェクトが作成された DateTime。 [managedDeviceMobileAppConfiguration](../resources/intune-apps-manageddevicemobileappconfiguration.md) から継承されます|
 |説明|String|デバイス構成について管理者が提供した説明。 [managedDeviceMobileAppConfiguration](../resources/intune-apps-manageddevicemobileappconfiguration.md) から継承されます|

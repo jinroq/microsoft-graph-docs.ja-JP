@@ -1,12 +1,13 @@
 ---
 title: 'イベント: キャンセル'
 description: 'このアクションにより、会議の開催者はキャンセル メッセージを送信し、イベントをキャンセルできます。 '
-ms.openlocfilehash: bf118b0ead0688967b6275c55fd9b665ffdc1057
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: angelgolfer-ms
+ms.openlocfilehash: 5e32219be129d1b16e05badd1fb778f86d95849b
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27067991"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27350310"
 ---
 # <a name="event-cancel"></a>イベント: キャンセル
 
@@ -50,7 +51,7 @@ POST /me/calendargroups/{id}/calendars/{id}/events/{id}/cancel
 POST /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{id}/cancel
 ```
 ## <a name="request-headers"></a>要求ヘッダー
-| 名前       | 型 | 説明|
+| 名前       | 種類 | 説明|
 |:---------------|:--------|:----------|
 | Authorization  | string  | ベアラー {トークン}。必須。 |
 | Content-Type | string  | エンティティ本文内のデータの性質です。必須。 |
@@ -58,7 +59,7 @@ POST /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{
 ## <a name="request-body"></a>要求本文
 要求本文で、次のパラメーターを含む JSON オブジェクトを指定します。
 
-| パラメーター    | 型   |説明|
+| パラメーター    | 種類   |説明|
 |:---------------|:--------|:----------|
 |comment|String|すべての出席者に送信されるキャンセルに関するコメント。 省略可能。|
 

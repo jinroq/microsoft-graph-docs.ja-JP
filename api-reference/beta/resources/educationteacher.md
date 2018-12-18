@@ -1,12 +1,13 @@
 ---
 title: educationTeacher リソースの種類
 description: ユーザーの primaryRole が `teacher` の場合に存在する educationUser に追加される、その他の情報。
-ms.openlocfilehash: 37fd46ee00f82b518d91969b1793147be859efdf
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: mmast-msft
+ms.openlocfilehash: ca174381fe8722c5b96848ced1d0e09b469068f9
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27066473"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27351661"
 ---
 # <a name="educationteacher-resource-type"></a>educationTeacher リソースの種類
 
@@ -16,7 +17,7 @@ ms.locfileid: "27066473"
 
 
 ## <a name="properties"></a>プロパティ
-| プロパティ     | 型   |説明|
+| プロパティ     | 種類   |説明|
 |:---------------|:--------|:----------|
 |externalId|String| ソース システムの教師の ID。|
 |teacherNumber|String|教師の番号。|

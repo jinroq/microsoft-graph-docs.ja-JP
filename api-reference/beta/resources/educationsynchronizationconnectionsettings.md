@@ -1,12 +1,13 @@
 ---
 title: educationSynchronizationConnectionSettings リソースの種類
 description: 'プロバイダー接続の設定を表します。 これにより、Api のプロバイダーに接続する方法を把握するシステムです。 '
-ms.openlocfilehash: 27cdd377318d3294be9802b7cf28e940d0ada31c
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: mmast-msft
+ms.openlocfilehash: 4e8b62a46fa6d14508a9d57ffedc46411910433d
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27070738"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27350625"
 ---
 # <a name="educationsynchronizationconnectionsettings-resource-type"></a>educationSynchronizationConnectionSettings リソースの種類
 
@@ -17,14 +18,14 @@ ms.locfileid: "27070738"
 > **注:** この複合型は抽象です。 特定の種類の接続設定のリストを参照してください。
 
 ## <a name="derived-types"></a>派生型
-| 型 | 説明 | 
+| 種類 | 説明 | 
 |:-|:-|
 | [**educationSynchronizationOAuth1ConnectionSettings**](educationsynchronizationoauth1connectionsettings.md) | OAuth1 接続の設定を提供するのにには、この型を使用します。 |
 | [**educationSynchronizationOAuth2ClientCredentialsConnectionSettings**](educationsynchronizationoauth2clientcredentialsconnectionsettings.md) | OAuth2 クライアントの資格情報の付与の接続の設定を提供するのにには、この型を使用します。 |
 
-## <a name="properties"></a>プロパティ
+## <a name="properties"></a>Properties
 
-| プロパティ | 型 | 説明 |
+| プロパティ | 種類 | 説明 |
 |:-|:-|:-|
 | **clientId** | String |  クライアント ID をプロバイダーに接続するために使用します。 |
 | **clientSecret** | String |  プロバイダーへの接続を認証するためにクライアント シークレット。 |

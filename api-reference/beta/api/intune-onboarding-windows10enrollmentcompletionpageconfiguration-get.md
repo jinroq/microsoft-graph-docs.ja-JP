@@ -1,12 +1,13 @@
 ---
 title: Windows10EnrollmentCompletionPageConfiguration を取得します。
 description: Windows10EnrollmentCompletionPageConfiguration オブジェクトのプロパティと関係を参照してください。
-ms.openlocfilehash: aaaad95bcad4485f1528a0a1bf0afa99a5161e48
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: a24f5ae9ff86e6aa7e827d5bd6c63f4d667f03ca
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27072144"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27351744"
 ---
 # <a name="get-windows10enrollmentcompletionpageconfiguration"></a>Windows10EnrollmentCompletionPageConfiguration を取得します。
 

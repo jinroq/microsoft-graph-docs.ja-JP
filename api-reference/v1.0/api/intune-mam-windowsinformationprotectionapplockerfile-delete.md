@@ -1,12 +1,13 @@
 ---
 title: windowsInformationProtectionAppLockerFile の削除
 description: windowsInformationProtectionAppLockerFile を削除します。
-ms.openlocfilehash: a408e023314f39d208c5a9be82038d8b79202ae3
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 25d59439e0a6af9ecc428a372d56b83d7162d72f
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27023291"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27351626"
 ---
 # <a name="delete-windowsinformationprotectionapplockerfile"></a>windowsInformationProtectionAppLockerFile の削除
 

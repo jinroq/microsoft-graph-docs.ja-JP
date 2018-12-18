@@ -1,12 +1,13 @@
 ---
 title: Update termsAndConditions
 description: termsAndConditions オブジェクトのプロパティを更新します。
-ms.openlocfilehash: 448edf2ceb596d7b4905eb78c8e6d6a37403d3da
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 7394fe5f6838f7ca8c9d25a1b16ab5642bf03e81
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27068244"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27350100"
 ---
 # <a name="update-termsandconditions"></a>Update termsAndConditions
 
@@ -46,9 +47,9 @@ PATCH /deviceManagement/termsAndConditions/{termsAndConditionsId}/acceptanceStat
 
 次の表に、[termsAndConditions](../resources/intune-companyterms-termsandconditions.md) 作成時に必要なプロパティを示します。
 
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
-|id|String|T&C ポリシーの一意識別子。|
+|ID|String|T&C ポリシーの一意識別子。|
 |createdDateTime|DateTimeOffset|オブジェクトが作成された DateTime。|
 |変更された日時|DateTimeOffset|オブジェクトが最後に変更された DateTime。|
 |lastModifiedDateTime|DateTimeOffset|オブジェクトが最後に変更された DateTime。|

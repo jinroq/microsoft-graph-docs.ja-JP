@@ -1,12 +1,13 @@
 ---
 title: ChartAxes リソースの種類
 description: グラフの軸を表します。
-ms.openlocfilehash: 964133a103d59b699613c4c378295e1d9693e7a1
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lumine2008
+ms.openlocfilehash: a4fc9cf19cbf1f8cc8bf535c21689990bf92fc08
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27070478"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27352760"
 ---
 # <a name="chartaxes-resource-type"></a>ChartAxes リソースの種類
 

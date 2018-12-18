@@ -1,12 +1,13 @@
 ---
 title: Update androidForWorkSettings
 description: androidForWorkSettings オブジェクトのプロパティを更新します。
-ms.openlocfilehash: 58d47117dd574dd6adf96f0ebeb46768c8c7368b
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 5514de226d138291743c5b017a50682e91e1e9ce
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27074359"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27352543"
 ---
 # <a name="update-androidforworksettings"></a>Update androidForWorkSettings
 
@@ -44,9 +45,9 @@ PATCH /deviceManagement/androidForWorkSettings
 
 次の表に、[androidForWorkSettings](../resources/intune-androidforwork-androidforworksettings.md) 作成時に必要なプロパティを示します。
 
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
-|id|String|Android for Work 設定の識別子|
+|ID|String|Android for Work 設定の識別子|
 |bindStatus|[androidForWorkBindStatus](../resources/intune-androidforwork-androidforworkbindstatus.md)|Google の EMM の API を使用してテナントの状態をバインドします。 可能な値は、`notBound`、`bound`、`boundAndValidated`、`unbinding` です。|
 |lastAppSyncDateTime|DateTimeOffset|アプリ同期の最終完了時刻|
 |lastAppSyncStatus|[androidForWorkSyncStatus](../resources/intune-androidforwork-androidforworksyncstatus.md)|アプリケーション同期の最終結果です。 使用可能な値: `success`、`credentialsNotValid`、`androidForWorkApiError`、`managementServiceError`、`unknownError`、`none`。|
@@ -55,7 +56,7 @@ PATCH /deviceManagement/androidForWorkSettings
 |lastModifiedDateTime|DateTimeOffset|Android for Work 設定の最終変更時刻|
 |enrollmentTarget|[androidForWorkEnrollmentTarget](../resources/intune-androidforwork-androidforworkenrollmenttarget.md)|ワーク デバイス管理のアプリでデバイスを登録できるユーザーを示します。 可能な値は、`none`、`all`、`targeted`、`targetedAsEnrollmentRestrictions` です。|
 |targetGroupIds|String コレクション|enrollmentTarget が 'Targeted' に設定されている場合、どの AAD グループが Android for Work デバイス管理にデバイスを登録できるかを指定します。|
-|deviceOwnerManagementEnabled|ブール値|このアカウントを CloudDPC に Android のデバイスの所有者の管理の flighting かどうかを示します。|
+|deviceOwnerManagementEnabled|ブール型|このアカウントを CloudDPC に Android のデバイスの所有者の管理の flighting かどうかを示します。|
 
 
 

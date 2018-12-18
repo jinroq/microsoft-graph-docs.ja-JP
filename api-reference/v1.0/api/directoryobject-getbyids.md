@@ -1,12 +1,13 @@
 ---
 title: ID のリストからディレクトリ オブジェクトを取得します。
 description: 選択 ' クエリ オプションはこの操作に使用できません。
-ms.openlocfilehash: 4a2b765d71fe799195a4afcd404ba21718fa87c8
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lleonard-msft
+ms.openlocfilehash: 78653f6db76092685de119390053624bbc6be882
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27020393"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27350506"
 ---
 # <a name="get-directory-objects-from-a-list-of-ids"></a>ID のリストからディレクトリ オブジェクトを取得します。
 
@@ -38,7 +39,7 @@ POST /directoryObjects/getByIds
 
 ## <a name="request-headers"></a>要求ヘッダー
 
-| 名前       | 型 | 説明|
+| 名前       | 種類 | 説明|
 |:---------------|:--------|:----------|
 | Authorization  | string  | ベアラー {トークン}。必須。 |
 | Content-Type  | string | application/json  |
@@ -47,7 +48,7 @@ POST /directoryObjects/getByIds
 
 要求本文で、次のパラメーターを含む JSON オブジェクトを指定します。
 
-| パラメーター   | 型 |説明|
+| パラメーター   | 種類 |説明|
 |:---------------|:--------|:----------|
 |ids|String コレクション| オブジェクトを戻す ID のコレクション。最大 1000 ID まで指定できます。 |
 |types|String コレクション| 検索するリソースのコレクションのセットを指定するリソースの種類のコレクションです。 指定しない場合、既定では[directoryObject](../resources/directoryobject.md)、すべてのディレクトリで定義されているリソースの種類が含まれています。 派生したオブジェクトは、`directoryObject`コレクションに指定することがあります例:[ユーザー](../resources/user.md)、[グループ](../resources/group.md)、[デバイス](../resources/device.md)、およびようにします。 値は、大文字小文字を区別しません。|

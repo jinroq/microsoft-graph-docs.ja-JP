@@ -1,12 +1,13 @@
 ---
 title: Windows10EasEmailProfileConfiguration を取得します。
 description: Windows10EasEmailProfileConfiguration オブジェクトのプロパティと関係を参照してください。
-ms.openlocfilehash: c65abcfb8cd7219a7ab63013733a3bc5077483fb
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 9990b00d68c0fd61fce0461a09574939dd52fe13
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27066562"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27352137"
 ---
 # <a name="get-windows10easemailprofileconfiguration"></a>Windows10EasEmailProfileConfiguration を取得します。
 

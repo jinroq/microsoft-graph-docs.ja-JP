@@ -1,12 +1,13 @@
 ---
 title: Microsoft Graph 調整ガイド
 description: 調整とは、リソースの使いすぎを防ぐために、サービスの同時呼び出し数を制限することをいいます。Microsoft Graph は、大量の要求を処理できるよう設計されています。過剰な数の要求が発生した場合、調整を行うことは Microsoft Graph サービスの最適なパフォーマンスと信頼性の維持に役立ちます。
-ms.openlocfilehash: dfe7fed3efc01932137df00d6d62ad069faf64cd
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: piotrci
+ms.openlocfilehash: d8f0c2098c76beaae65c5d84cc82e58949a0cebd
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27092416"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27353215"
 ---
 # <a name="microsoft-graph-throttling-guidance"></a>Microsoft Graph 調整ガイド
 

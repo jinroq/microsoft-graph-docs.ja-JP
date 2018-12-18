@@ -1,12 +1,13 @@
 ---
 title: childFolders を一覧表示する
 description: '指定したフォルダーの下のフォルダーのコレクションを取得します。 使用することができます、 `.../me/MailFolders` 、最上位レベルを取得するショートカット '
-ms.openlocfilehash: 5a01287fe90713846caf49a57610668042a70cd0
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: angelgolfer-ms
+ms.openlocfilehash: e02e8ab7bf8ad4dd6a3028d72df7829f69277258
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27023300"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27351892"
 ---
 # <a name="list-childfolders"></a>childFolders を一覧表示する
 
@@ -29,7 +30,7 @@ GET /users/{id | userPrincipalName}/mailFolders/{id}/childFolders
 ## <a name="optional-query-parameters"></a>オプションのクエリ パラメーター
 このメソッドは、応答をカスタマイズするための [OData クエリ パラメーター](https://developer.microsoft.com/graph/docs/concepts/query_parameters)をサポートします。
 ## <a name="request-headers"></a>要求ヘッダー
-| 名前       | 型 | 説明|
+| 名前       | 種類 | 説明|
 |:-----------|:------|:----------|
 | Authorization  | string  | ベアラー {トークン}。必須。 |
 

@@ -1,12 +1,13 @@
 ---
 title: Create vppToken
 description: 新規にvppToken オブジェクトを作成します。
-ms.openlocfilehash: fb33bcb1770dd50c95707a60edde121a9667f1e3
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 029af74ac49b6e95412f32a82bf57e69a78ffe4f
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27020733"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27351318"
 ---
 # <a name="create-vpptoken"></a>Create vppToken
 
@@ -42,9 +43,9 @@ POST /deviceAppManagement/vppTokens
 
 次の表に、vppToken 作成時に必要なプロパティを示します。
 
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
-|id|String|appleVolumePurchaseProgramToken 作成時に自動的に生成されます。 エンティティのキーになります。|
+|ID|String|appleVolumePurchaseProgramToken 作成時に自動的に生成されます。 エンティティのキーになります。|
 |organizationName|String|Apple Volume Purchase Program のトークンに関連付けられている組織|
 |vppTokenAccountType|[vppTokenAccountType](../resources/intune-shared-vpptokenaccounttype.md)|特定の Apple Volume Purchase Program のトークンが関連付けられている、ボリューム購入プログラムの種類。 可能な値は、`business`、`education` です。 可能な値は、`business`、`education` です。|
 |appleId|String|特定の Apple Volume Purchase Program のトークンに関連付けられている Apple ID。|
@@ -54,7 +55,7 @@ POST /deviceAppManagement/vppTokens
 |lastModifiedDateTime|DateTimeOffset|Apple Volume Purchase Program のトークンに関連付けられている最終変更日時。|
 |state|[vppTokenState](../resources/intune-onboarding-vpptokenstate.md)|Apple Volume Purchase Program のトークンの現在の状態。 可能な値は、`unknown`、`valid`、`expired`、`invalid`、`assignedToExternalMDM` です。 可能な値は、`unknown`、`valid`、`expired`、`invalid`、`assignedToExternalMDM` です。|
 |lastSyncStatus|[vppTokenSyncStatus](../resources/intune-onboarding-vpptokensyncstatus.md)|Apple Volume Purchase Program のトークンを使用して行われた最後のアプリケーションの同期の現在の同期状態。 可能な値は、`none`、`inProgress`、`completed`、`failed` です。 可能な値は、`none`、`inProgress`、`completed`、`failed` です。|
-|automaticallyUpdateApps|Boolean|VPP トークンのアプリを自動で更新するかどうか。|
+|automaticallyUpdateApps|ブール型|VPP トークンのアプリを自動で更新するかどうか。|
 |countryOrRegion|String|VPP トークンのアプリを自動で更新するかどうか。|
 
 

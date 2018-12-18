@@ -1,12 +1,13 @@
 ---
 title: managedDeviceMobileAppConfiguration リソースの種類
 description: 登録済みデバイスのモバイル アプリ構成用の抽象クラスです。
-ms.openlocfilehash: c829e720e8d998428e778e5b7bf20e5fe465dfd6
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: a533d5d7c15a32d811a7fd23f9ab39b89db9b7da
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27066368"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27352039"
 ---
 # <a name="manageddevicemobileappconfiguration-resource-type"></a>managedDeviceMobileAppConfiguration リソースの種類
 
@@ -23,9 +24,9 @@ ms.locfileid: "27066368"
 |[assign action](../api/intune-apps-manageddevicemobileappconfiguration-assign.md)|なし|まだ文書化されていません|
 
 ## <a name="properties"></a>プロパティ
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
-|id|String|エンティティのキー。|
+|ID|String|エンティティのキー。|
 |targetedMobileApps|String コレクション|関連するアプリです。|
 |roleScopeTagIds|String コレクション|このアプリケーションの構成エンティティのスコープのタグの一覧です。|
 |createdDateTime|DateTimeOffset|オブジェクトが作成された DateTime。|

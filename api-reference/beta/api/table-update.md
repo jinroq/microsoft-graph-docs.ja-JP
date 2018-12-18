@@ -1,12 +1,13 @@
 ---
 title: テーブルを更新する
 description: table オブジェクトのプロパティを更新します。
-ms.openlocfilehash: a929329ed9a88b7dda6206193292f1ca1e63ced1
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lumine2008
+ms.openlocfilehash: 020d0fcf4f162fbb800d54fbf703fb3af59e8385
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27069653"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27350205"
 ---
 # <a name="update-table"></a>テーブルの更新
 
@@ -37,7 +38,7 @@ PATCH /workbook/worksheets/{id|name}/tables/{id|name}
 ## <a name="request-body"></a>要求本文
 要求本文で、更新する関連フィールドの値を指定します。要求本文に含まれない既存のプロパティは、以前の値のままになるか、他のプロパティ値の変化に基づいて再計算されます。最適なパフォーマンスを得るためには、変更されていない既存の値を含めないでください。
 
-| プロパティ     | 型   |説明|
+| プロパティ     | 種類   |説明|
 |:---------------|:--------|:----------|
 |name|文字列|テーブルの名前。|
 |showHeaders|ブール値|ヘッダー行を表示するかどうかを示します。この値によって、ヘッダー行の表示または削除を設定できます。|

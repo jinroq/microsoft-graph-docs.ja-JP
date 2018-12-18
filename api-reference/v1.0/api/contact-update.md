@@ -1,12 +1,13 @@
 ---
 title: 連絡先を更新する
 description: 連絡先オブジェクトのプロパティを更新します。
-ms.openlocfilehash: baf563530dc174418169efdd7f7bb48d81048a6b
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: angelgolfer-ms
+ms.openlocfilehash: 386f0d3f7673733de805893e16ab049d85d120a6
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27022622"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27351234"
 ---
 # <a name="update-contact"></a>連絡先を更新する
 
@@ -45,7 +46,7 @@ PATCH /users/{id | userPrincipalName}/contactFolders/{id}/childFolders/{id}/cont
 ## <a name="request-body"></a>要求本文
 要求本文で、更新する関連フィールドの値を指定します。要求本文に含まれない既存のプロパティは、以前の値のままになるか、他のプロパティ値の変化に基づいて再計算されます。最適なパフォーマンスを得るためには、変更されていない既存の値を含めないでください。
 
-| プロパティ     | 型   |説明|
+| プロパティ     | 種類   |説明|
 |:---------------|:--------|:----------|
 |assistantName|String|連絡先のアシスタントの名前。|
 |birthday|DateTimeOffset|連絡先の誕生日です。|

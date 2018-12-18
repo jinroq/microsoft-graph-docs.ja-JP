@@ -1,12 +1,13 @@
 ---
 title: ImportedAppleDeviceIdentity を更新します。
 description: ImportedAppleDeviceIdentity オブジェクトのプロパティを更新します。
-ms.openlocfilehash: 48fbcd38e7e74734b069b9a0b8db6d675fe26a96
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: e2248a781ac4f6bb8ce238d12f2679217e7badd6
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27072758"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27352088"
 ---
 # <a name="update-importedappledeviceidentity"></a>ImportedAppleDeviceIdentity を更新します。
 
@@ -44,9 +45,9 @@ PATCH /deviceManagement/depOnboardingSettings/{depOnboardingSettingId}/importedA
 
 [ImportedAppleDeviceIdentity](../resources/intune-enrollment-importedappledeviceidentity.md)を作成するときに必要なプロパティを次の表に示します。
 
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
-|id|String|エンティティのキー。|
+|ID|String|エンティティのキー。|
 |シリアル番号|String|デバイスのシリアル番号|
 |requestedEnrollmentProfileId|String|登録プロファイル Id の管理者が、次の登録時にデバイスに適用しようとしています。|
 |requestedEnrollmentProfileAssignmentDateTime|DateTimeOffset|時間登録のプロファイルは、デバイスに割り当てられました。|

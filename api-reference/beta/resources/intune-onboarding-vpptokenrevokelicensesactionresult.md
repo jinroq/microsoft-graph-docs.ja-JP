@@ -1,12 +1,13 @@
 ---
 title: vppTokenRevokeLicensesActionResult リソースの種類
 description: 取り消しライセンスのステータスは、Apple ボリューム購入プログラムのトークンで実行されます。
-ms.openlocfilehash: 89baf69ba89ac11c52b8e05b35f38aca422cc1b2
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: a4188a269f9273b955fd29b32348dec82023b181
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27069850"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27351458"
 ---
 # <a name="vpptokenrevokelicensesactionresult-resource-type"></a>vppTokenRevokeLicensesActionResult リソースの種類
 
@@ -18,8 +19,8 @@ ms.locfileid: "27069850"
 
 [VppTokenActionResult](../resources/intune-onboarding-vpptokenactionresult.md)から継承します。
 
-## <a name="properties"></a>プロパティ
-|プロパティ|型|説明|
+## <a name="properties"></a>Properties
+|プロパティ|種類|説明|
 |:---|:---|:---|
 |actionName|String|[VppTokenActionResult](../resources/intune-onboarding-vpptokenactionresult.md)からアクション名継承|
 |actionState|[actionState](../resources/intune-shared-actionstate.md)|[VppTokenActionResult](../resources/intune-onboarding-vpptokenactionresult.md)から継承される、アクションの状態です。 可能な値は、`none`、`pending`、`canceled`、`active`、`done`、`failed`、`notSupported` です。|

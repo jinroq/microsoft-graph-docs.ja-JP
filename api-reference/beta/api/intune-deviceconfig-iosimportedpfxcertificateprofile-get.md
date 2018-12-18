@@ -1,12 +1,13 @@
 ---
 title: IosImportedPFXCertificateProfile を取得します。
 description: IosImportedPFXCertificateProfile オブジェクトのプロパティと関係を参照してください。
-ms.openlocfilehash: d9be44dd4ff9099212fc0c9729272cb7e034bdd6
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: d12dfdad92a672d4515ae6190d6ce5de73845b3b
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27074111"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27350868"
 ---
 # <a name="get-iosimportedpfxcertificateprofile"></a>IosImportedPFXCertificateProfile を取得します。
 

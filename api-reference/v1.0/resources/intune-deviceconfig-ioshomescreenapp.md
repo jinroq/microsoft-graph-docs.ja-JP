@@ -1,12 +1,13 @@
 ---
 title: iosHomeScreenApp リソースの種類
 description: ホーム画面上のアプリのアイコンを表します
-ms.openlocfilehash: ff749f7166da2d20bfd632e0c595b33f7b1e9fad
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 68fe4e7b5a226422cc0aaf980ac7fb0421a9bfc0
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27022958"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27350373"
 ---
 # <a name="ioshomescreenapp-resource-type"></a>iosHomeScreenApp リソースの種類
 
@@ -17,7 +18,7 @@ ms.locfileid: "27022958"
 [iosHomeScreenItem](../resources/intune-deviceconfig-ioshomescreenitem.md) からの継承
 
 ## <a name="properties"></a>プロパティ
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
 |displayName|文字列型 (String)|アプリの名前。[iosHomeScreenItem](../resources/intune-deviceconfig-ioshomescreenitem.md) から継承|
 |bundleID|文字列型 (String)|アプリの BundleID|

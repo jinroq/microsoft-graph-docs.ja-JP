@@ -1,12 +1,13 @@
 ---
 title: リスト embeddedSIMActivationCodePoolAssignments
 description: EmbeddedSIMActivationCodePoolAssignment オブジェクトのプロパティと関係を一覧表示します。
-ms.openlocfilehash: cfaef6034509a9a3b7a48588bfa98cbbbaacf80c
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 798701e538d1eabe7d49350efdb16777deee3dea
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27070788"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27352928"
 ---
 # <a name="list-embeddedsimactivationcodepoolassignments"></a>リスト embeddedSIMActivationCodePoolAssignments
 

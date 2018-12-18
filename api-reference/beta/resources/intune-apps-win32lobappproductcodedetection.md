@@ -1,12 +1,13 @@
 ---
 title: win32LobAppProductCodeDetection リソースの種類
 description: Win32 アプリケーションを検出するために製品コードとバージョンのプロパティが含まれています
-ms.openlocfilehash: fcb9d5927ce1518a7bba2086a8578867d4fdf01a
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: d66dab5a43a11c480e0e30f70eb8aecbe47e1fa7
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27074263"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27353985"
 ---
 # <a name="win32lobappproductcodedetection-resource-type"></a>win32LobAppProductCodeDetection リソースの種類
 
@@ -18,8 +19,8 @@ Win32 アプリケーションを検出するために製品コードとバー�
 
 [Win32LobAppDetection](../resources/intune-apps-win32lobappdetection.md)から継承します。
 
-## <a name="properties"></a>プロパティ
-|プロパティ|型|説明|
+## <a name="properties"></a>Properties
+|プロパティ|種類|説明|
 |:---|:---|:---|
 |productCode|String|Win32 基幹業務 (LoB) アプリケーションの製品コードです。|
 |productVersionOperator|[win32LobAppDetectionOperator](../resources/intune-apps-win32lobappdetectionoperator.md)|製品のバージョンを検出する演算子です。 可能な値は、`notConfigured`、`equal`、`notEqual`、`greaterThan`、`greaterThanOrEqual`、`lessThan`、`lessThanOrEqual` です。|

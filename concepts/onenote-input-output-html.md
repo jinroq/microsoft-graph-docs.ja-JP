@@ -1,12 +1,13 @@
 ---
 title: OneNote ページの入出力 HTML
 description: 'OneNote ページを作成または更新する際に、ページ コンテンツと構造を定義する HTML を*入力 HTML* と呼びます。 '
-ms.openlocfilehash: f75601771437e359626ef9ffbb474b9a29f07033
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: Jewan-microsoft
+ms.openlocfilehash: e169cf17804794d5120b2e968328b06d29a0a5a1
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27092513"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27351255"
 ---
 # <a name="input-and-output-html-in-onenote-pages"></a>OneNote ページの入出力 HTML
 

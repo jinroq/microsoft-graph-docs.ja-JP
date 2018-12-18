@@ -1,12 +1,13 @@
 ---
 title: MobileAppTroubleshootingEvent を作成します。
 description: 新しい mobileAppTroubleshootingEvent オブジェクトを作成します。
-ms.openlocfilehash: f9a1324845bd7a8b420b83ae7e120323ac489dfb
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: de4f525cbc7ba84727662cc497afcd33d3d71920
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27069044"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27352739"
 ---
 # <a name="create-mobileapptroubleshootingevent"></a>MobileAppTroubleshootingEvent を作成します。
 
@@ -44,9 +45,9 @@ POST /users/{usersId}/mobileAppTroubleshootingEvents
 
 次の表は、mobileAppTroubleshootingEvent を作成するときに必要なプロパティを示します。
 
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
-|id|String|オブジェクトの UUID。[deviceManagementTroubleshootingEvent](../resources/intune-troubleshooting-devicemanagementtroubleshootingevent.md) から継承|
+|ID|String|オブジェクトの UUID。[deviceManagementTroubleshootingEvent](../resources/intune-troubleshooting-devicemanagementtroubleshootingevent.md) から継承|
 |eventDateTime|DateTimeOffset|インシデントが発生した時間。 [deviceManagementTroubleshootingEvent](../resources/intune-troubleshooting-devicemanagementtroubleshootingevent.md) から継承します|
 |correlationId|String|サービスのエラーをトレースするための ID。 [deviceManagementTroubleshootingEvent](../resources/intune-troubleshooting-devicemanagementtroubleshootingevent.md) から継承します|
 |managedDeviceIdentifier|String|Intune によって作成または収集されるデバイス識別子。|

@@ -1,12 +1,13 @@
 ---
 title: ManagedDeviceCertificateState を更新します。
 description: ManagedDeviceCertificateState オブジェクトのプロパティを更新します。
-ms.openlocfilehash: 74cabce1bc80c7e99b44a30153f2bf03ec54ed00
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 14c73bf219d8a568f8df0c4c55e3a1e3d0516abd
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27068828"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27350170"
 ---
 # <a name="update-manageddevicecertificatestate"></a>ManagedDeviceCertificateState を更新します。
 
@@ -60,9 +61,9 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 
 [ManagedDeviceCertificateState](../resources/intune-deviceconfig-manageddevicecertificatestate.md)を作成するときに必要なプロパティを次の表に示します。
 
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
-|id|String|エンティティのキー。|
+|ID|String|エンティティのキー。|
 |devicePlatform|[devicePlatformType](../resources/intune-shared-deviceplatformtype.md)|デバイスのプラットフォームです。 可能な値は、`android`、`androidForWork`、`iOS`、`macOS`、`windowsPhone81`、`windows81AndLater`、`windows10AndLater`、`androidWorkProfile` です。|
 |certificateKeyUsage|[keyUsages](../resources/intune-deviceconfig-keyusages.md)|キーの使用法です。 使用可能な値は、`keyEncipherment`、`digitalSignature` です。|
 |certificateValidityPeriodUnits|[certificateValidityPeriodScale](../resources/intune-deviceconfig-certificatevalidityperiodscale.md)|有効期間の単位。 可能な値は、`days`、`months`、`years` です。|

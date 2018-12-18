@@ -1,12 +1,13 @@
 ---
 title: localSecurityOptionsMinimumSessionSecurity 列挙型
 description: LocalSecurityOptionsMinimumSessionSecurity に指定できる値
-ms.openlocfilehash: 969c7d6576c613f5214bfc3b8a5a1ad36722f0df
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 5feabd9c84ec42f55bb45b952be5af834fd84498
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27072332"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27350632"
 ---
 # <a name="localsecurityoptionsminimumsessionsecurity-enum-type"></a>localSecurityOptionsMinimumSessionSecurity 列挙型
 

@@ -1,12 +1,13 @@
 ---
 title: 添付ファイルを一覧表示する
 description: メッセージに添付された添付ファイル オブジェクトのリストを取得します。
-ms.openlocfilehash: eed79c362174a5cae600bc4e824caaa26baf8a15
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: angelgolfer-ms
+ms.openlocfilehash: 740616e0f2da0a941f6dc49944d81168dcc7d2c3
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27024232"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27352680"
 ---
 # <a name="list-attachments"></a>添付ファイルを一覧表示する
 
@@ -39,7 +40,7 @@ GET /users/{id | userPrincipalName}/mailFolders/{id}/childFolders/{id}/messages/
 ## <a name="optional-query-parameters"></a>オプションのクエリ パラメーター
 このメソッドは、応答をカスタマイズするための [OData クエリ パラメーター](https://developer.microsoft.com/graph/docs/concepts/query_parameters)をサポートします。
 ## <a name="request-headers"></a>要求ヘッダー
-| 名前       | 型 | 説明|
+| 名前       | 種類 | 説明|
 |:-----------|:------|:----------|
 | Authorization  | string  | ベアラー {トークン}。必須。 |
 

@@ -1,12 +1,13 @@
 ---
 title: ChartAxis を更新する
 description: chartaxis オブジェクトのプロパティを更新します。
-ms.openlocfilehash: 665c20683c2a2f54d4f5e73a66993707bc5f6539
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lumine2008
+ms.openlocfilehash: 45bb7c25bfaed625300c7ac486a8c7bddb50ddbc
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27021827"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27350898"
 ---
 # <a name="update-chartaxis"></a>ChartAxis を更新する
 
@@ -36,7 +37,7 @@ PATCH /workbook/worksheets/{id|name}/charts/{name}/axes/categoryaxis
 ## <a name="request-body"></a>要求本文
 要求本文で、更新する関連フィールドの値を指定します。要求本文に含まれない既存のプロパティは、以前の値のままになるか、他のプロパティ値の変化に基づいて再計算されます。最適なパフォーマンスを得るためには、変更されていない既存の値を含めないでください。
 
-| プロパティ     | 型   |説明|
+| プロパティ     | 種類   |説明|
 |:---------------|:--------|:----------|
 |majorUnit|Json|2 つの大きい目盛の間隔を表します。数値の値または空の文字列を設定できます。戻り値は常に数値です。|
 |maximum|Json|数値軸の最大値を表します。数値の値または空の文字列を設定できます (軸の値が自動の場合)。戻り値は常に数値です。|

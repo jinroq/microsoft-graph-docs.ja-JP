@@ -1,12 +1,13 @@
 ---
 title: リスト androidForWorkApps
 description: AndroidForWorkApp オブジェクトのプロパティと関係を一覧表示します。
-ms.openlocfilehash: b364dce5b574e32e93dbf7d0dd53cc031928dd40
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 82a1d40e12595c7aec61fbc920aea656547c8d76
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27072386"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27352165"
 ---
 # <a name="list-androidforworkapps"></a>リスト androidForWorkApps
 

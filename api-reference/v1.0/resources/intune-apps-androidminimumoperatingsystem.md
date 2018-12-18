@@ -1,12 +1,13 @@
 ---
 title: androidMinimumOperatingSystem リソースの種類
 description: Android モバイル アプリに必要な最小限のオペレーティング システムのプロパティが含まれます。
-ms.openlocfilehash: dc1dd771eb394fe149079fbe46c552d23a759e80
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 3c477a624377febe6001b92f6694fe27b0666cf5
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27020261"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27350471"
 ---
 # <a name="androidminimumoperatingsystem-resource-type"></a>androidMinimumOperatingSystem リソースの種類
 
@@ -14,7 +15,7 @@ ms.locfileid: "27020261"
 
 Android モバイル アプリに必要な最小限のオペレーティング システムのプロパティが含まれます。
 ## <a name="properties"></a>プロパティ
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
 |v4_0|ブール型 (Boolean)|バージョン 4.0 以降。|
 |v4_0_3|ブール型 (Boolean)|バージョン 4.0.3 以降。|

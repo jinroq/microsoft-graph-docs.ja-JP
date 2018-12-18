@@ -1,12 +1,13 @@
 ---
 title: リスト windowsKioskConfigurations
 description: WindowsKioskConfiguration オブジェクトのプロパティと関係を一覧表示します。
-ms.openlocfilehash: bb178bca4c1ce11958e28ed8c5ad4fa23ad4d668
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 59e4510f85bb47c53c00c679b0c8ea021aba2797
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27073809"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27350583"
 ---
 # <a name="list-windowskioskconfigurations"></a>リスト windowsKioskConfigurations
 

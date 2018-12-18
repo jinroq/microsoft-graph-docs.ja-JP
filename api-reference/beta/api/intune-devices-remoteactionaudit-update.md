@@ -1,12 +1,13 @@
 ---
 title: RemoteActionAudit を更新します。
 description: RemoteActionAudit オブジェクトのプロパティを更新します。
-ms.openlocfilehash: f7b72ce26617b3ba370e5135c31b98c7c33cbd97
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: a27cd54246aaa1badc9bdbf54379c5d9d2a5a218
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27071879"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27352130"
 ---
 # <a name="update-remoteactionaudit"></a>RemoteActionAudit を更新します。
 
@@ -44,9 +45,9 @@ PATCH /deviceManagement/remoteActionAudits/{remoteActionAuditId}
 
 [RemoteActionAudit](../resources/intune-devices-remoteactionaudit.md)を作成するときに必要なプロパティを次の表に示します。
 
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
-|id|String|レポートの id。|
+|ID|String|レポートの id。|
 |deviceDisplayName|String|Intune デバイスの名前です。|
 |userName|String|\[推奨\]InitiatedByUserPrincipalName を代わりに使用してください。|
 |initiatedByUserPrincipalName|String|デバイスのアクションを開始したユーザーは、UPN 形式です。|

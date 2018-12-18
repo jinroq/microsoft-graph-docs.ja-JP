@@ -1,12 +1,13 @@
 ---
 title: Update chartlineformat
 description: chartlineformat オブジェクトのプロパティを更新します。
-ms.openlocfilehash: 543177af0288c476c31d27b618a187a3a0f9a1a3
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lumine2008
+ms.openlocfilehash: 2023f18c500fbd9c1672e2f3f37f73a23e1879fe
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27022255"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27351325"
 ---
 # <a name="update-chartlineformat"></a>Update chartlineformat
 
@@ -36,7 +37,7 @@ PATCH /workbook/worksheets/{id|name}/charts/{name}/axes/seriesAxis/majorgridline
 ## <a name="request-body"></a>要求本文
 要求本文で、更新する関連フィールドの値を指定します。要求本文に含まれない既存のプロパティは、以前の値のままになるか、他のプロパティ値の変化に基づいて再計算されます。最適なパフォーマンスを得るためには、変更されていない既存の値を含めないでください。
 
-| プロパティ     | 型   |説明|
+| プロパティ     | 種類   |説明|
 |:---------------|:--------|:----------|
 |color|文字列|グラフの線の色を表す HTML カラー コード。|
 

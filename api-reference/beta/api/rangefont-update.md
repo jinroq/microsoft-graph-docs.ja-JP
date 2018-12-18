@@ -1,12 +1,13 @@
 ---
 title: ｒangefont を更新する
 description: rangefont オブジェクトのプロパティを更新します。
-ms.openlocfilehash: 199fb62bdc50ab3826cdbd02914412e461022287
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lumine2008
+ms.openlocfilehash: 29cda6e2902f20c040ecc307755eed8fc58d25a8
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27072022"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27350051"
 ---
 # <a name="update-rangefont"></a>ｒangefont を更新する
 
@@ -38,7 +39,7 @@ PATCH /workbook/tables/{id|name}/columns/{id|name}/range/format/font
 ## <a name="request-body"></a>要求本文
 要求本文で、更新する関連フィールドの値を指定します。要求本文に含まれない既存のプロパティは、以前の値のままになるか、他のプロパティ値の変化に基づいて再計算されます。最適なパフォーマンスを得るためには、変更されていない既存の値を含めないでください。
 
-| プロパティ     | 型   |説明|
+| プロパティ     | 種類   |説明|
 |:---------------|:--------|:----------|
 |bold|ブール値|フォントの太字の状態を表します。|
 |color|文字列|テキストの色の HTML カラー コード表記。たとえば、#FF0000 は赤を表します。|

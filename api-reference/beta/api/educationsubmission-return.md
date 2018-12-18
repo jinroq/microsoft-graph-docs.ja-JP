@@ -1,12 +1,13 @@
 ---
 title: 'educationSubmission: 戻る'
-description: " フィードバックを提供するか、グレーディングを行うことを示します。 このアクションは、先生によってのみ実行できます。"
-ms.openlocfilehash: de81f5429119556753462781f701fb7c936826b1
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+description: この操作によって、評価とフィードバックを受講者に利用可能なこの送信に関連付けられています。
+author: dipakboyed
+ms.openlocfilehash: d73300328168baf9481b329b36f056aa27044b2e
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27066373"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27350878"
 ---
 # <a name="educationsubmission-return"></a>educationSubmission: 戻る
 

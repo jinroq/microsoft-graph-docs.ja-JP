@@ -1,12 +1,13 @@
 ---
 title: auditEvent リソース タイプ
 description: 監査イベントのプロパティが含まれるクラス。
-ms.openlocfilehash: 96e8ad79dccd1b85ea848c6a975e4ee8d5217738
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: c19a7914790d7659a7b60000a81655d81a5dce52
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27020368"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27351437"
 ---
 # <a name="auditevent-resource-type"></a>auditEvent リソース タイプ
 
@@ -25,9 +26,9 @@ ms.locfileid: "27020368"
 |[getAuditActivityTypes function](../api/intune-auditing-auditevent-getauditactivitytypes.md)|String コレクション|まだ文書化されていません|
 
 ## <a name="properties"></a>プロパティ
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
-|id|String|エンティティのキー。|
+|ID|String|エンティティのキー。|
 |displayName|String|イベントの表示名。|
 |componentName|String|コンポーネント名。|
 |actor|[auditActor](../resources/intune-auditing-auditactor.md)|監査イベントに関連付けられている AAD ユーザーとアプリケーション。|

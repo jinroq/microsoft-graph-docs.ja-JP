@@ -1,12 +1,13 @@
 ---
 title: Create windows10GeneralConfiguration
 description: 新しい windows10GeneralConfiguration オブジェクトを作成します。
-ms.openlocfilehash: 4f725e95190995cdfa2a920cd2906ff7ff805319
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: dbaf6ca944295b0bba4786ef55174db57c178360
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27072389"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27352865"
 ---
 # <a name="create-windows10generalconfiguration"></a>Create windows10GeneralConfiguration
 
@@ -45,24 +46,24 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 
 次の表に、windows10GeneralConfiguration の作成時に必要なプロパティを示します。
 
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
-|id|String|エンティティのキー。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
+|ID|String|エンティティのキー。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |lastModifiedDateTime|DateTimeOffset|オブジェクトが最後に変更された DateTime。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |roleScopeTagIds|String コレクション|このエンティティ インスタンスのスコープのタグのリストです。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
-|supportsScopeTags|ブール値|デバイスの構成を基になるスコープのタグの割り当てをサポートしているかどうかを示します。 この値が false であり、エンティティをスコープ指定されたユーザーには表示されませんがある場合、ScopeTags プロパティに割り当てることは許可されていません。 これは、Silverlight で作成されたレガシ ポリシーに対して発生し、削除して、Azure ポータル内のポリシーを再作成することで解決できます。 このプロパティは値の取得のみ可能です。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
+|supportsScopeTags|ブール型|デバイスの構成を基になるスコープのタグの割り当てをサポートしているかどうかを示します。 この値が false であり、エンティティをスコープ指定されたユーザーには表示されませんがある場合、ScopeTags プロパティに割り当てることは許可されていません。 これは、Silverlight で作成されたレガシ ポリシーに対して発生し、削除して、Azure ポータル内のポリシーを再作成することで解決できます。 このプロパティは読み取りのみ可能です。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |createdDateTime|DateTimeOffset|オブジェクトが作成された DateTime。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |説明|String|デバイス構成について管理者が提供した説明。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |displayName|String|デバイス構成について管理者が指定した名前。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |version|Int32|デバイス構成のバージョン。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |windows10AppsForceUpdateSchedule|[windows10AppsForceUpdateSchedule](../resources/intune-deviceconfig-windows10appsforceupdateschedule.md)|Windows 10 アプリの更新スケジュールを強制します。|
-|enableAutomaticRedeployment|ブール値|すべてのユーザー データとデバイスに自動的に再を構成および管理を取得するために、デバイスのロック画面で ctrl キー + 勝利 + R を使用する設定を削除するのには管理者権限を持つユーザーを許可します。|
+|enableAutomaticRedeployment|ブール型|すべてのユーザー データとデバイスに自動的に再を構成および管理を取得するために、デバイスのロック画面で ctrl キー + 勝利 + R を使用する設定を削除するのには管理者権限を持つユーザーを許可します。|
 |assignedAccessSingleModeUserName|String|このポリシー設定は、アプリケーション キオスク モードの 1 つがロックアウトされているユーザー アカウントを定義することです。|
 |assignedAccessSingleModeAppUserModelId|String|このポリシー設定は、1 つのアプリケーション キオスク モードに、アプリケーション ユーザー モデル ID (AUMID) がロックされることを定義します。|
 |microsoftAccountSignInAssistantSettings|[signInAssistantOptions](../resources/intune-deviceconfig-signinassistantoptions.md)|Microsoft アカウントでサインイン アシスタント (wlidsvc) の NT サービスを制御します。 使用可能な値は、`notConfigured`、`disabled` です。|
-|authenticationAllowSecondaryDevice|ブール値|Windows で動作する第 2 の認証デバイスを使用できます。|
-|authenticationAllowFIDODevice|ブール値|デバイス (FIDO を使用して認証を許可するかどうかを示しますhttps://fidoalliance.org/)|
-|cryptographyAllowFipsAlgorithmPolicy|ブール値|連邦情報処理規格 (FIPS) ポリシーを有効または無効にするかどうかを指定します。|
+|authenticationAllowSecondaryDevice|ブール型|Windows で動作する第 2 の認証デバイスを使用できます。|
+|authenticationAllowFIDODevice|ブール型|デバイス (FIDO を使用して認証を許可するかどうかを示しますhttps://fidoalliance.org/)|
+|cryptographyAllowFipsAlgorithmPolicy|ブール型|連邦情報処理規格 (FIPS) ポリシーを有効または無効にするかどうかを指定します。|
 |displayAppListWithGdiDPIScalingTurnedOn|String コレクション|GDI DPI スケールをオンになっているレガシ アプリケーションの一覧です。|
 |displayAppListWithGdiDPIScalingTurnedOff|String コレクション|GDI の DPI スケーリングを無効になっているレガシ アプリケーションの一覧です。|
 |enterpriseCloudPrintDiscoveryEndPoint|String|クラウド プリンターを検出するエンドポイント。|
@@ -71,29 +72,29 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 |enterpriseCloudPrintResourceIdentifier|String|Azure Portal で構成されている印刷サービスの OAuth リソース URI。|
 |enterpriseCloudPrintDiscoveryMaxLimit|Int32|検出エンドポイントからクエリを実行する必要があるプリンターの最大数。 これはモバイルのみでの設定です。 有効な値は 1 から 65535 までです|
 |enterpriseCloudPrintMopriaDiscoveryResourceIdentifier|String|Azure Portal で構成されているプリンター検出サービスの OAuth リソース URI。|
-|messagingBlockSync|ブール値|テキスト メッセージをブロックをバックアップおよび復元するかどうか、すべてのメッセージを示します。|
-|messagingBlockMMS|ブール値|ブロックするかどうかを示します、MMS の送信/受信デバイスで機能します。|
-|messagingBlockRichCommunicationServices|ブール値|ブロックするかどうかを示します、RCS は、デバイスの機能を送信/受信します。|
+|messagingBlockSync|ブール型|テキスト メッセージをブロックをバックアップおよび復元するかどうか、すべてのメッセージを示します。|
+|messagingBlockMMS|ブール型|ブロックするかどうかを示します、MMS の送信/受信デバイスで機能します。|
+|messagingBlockRichCommunicationServices|ブール型|ブロックするかどうかを示します、RCS は、デバイスの機能を送信/受信します。|
 |printerNames|String コレクション|名前 (ホストのネットワーク名) に基づいてプリンターを自動的に準備します。|
 |printerDefaultName|String|インストール済みのプリンターの名前 (ネットワーク ・ ホスト名) が。|
-|printerBlockAddition|ブール値|プリンターの設定からの他のプリンターのインストールをユーザーを防止します。|
+|printerBlockAddition|ブール型|プリンターの設定からの他のプリンターのインストールをユーザーを防止します。|
 |searchBlockDiacritics|Boolean|検索で分音記号を使用できるかどうかを指定します。|
 |searchDisableAutoLanguageDetection|Boolean|コンテンツとプロパティのインデックスを作成するときに、自動言語検出を使用するかどうかを指定します。|
 |searchDisableIndexingEncryptedItems|Boolean|Cortana またはエクスプローラーの検索結果に表示されないようにするため、WIP で保護されているアイテムのインデックス作成を禁止するかどうかを示します。|
 |searchEnableRemoteQueries|Boolean|このコンピューターのインデックスに対するリモート クエリをブロックするかどうかを示します。|
-|searchDisableUseLocation|ブール値|場所情報検索を使用してかどうかを指定します。|
-|searchDisableLocation|ブール値|場所情報検索を使用してかどうかを指定します。|
+|searchDisableUseLocation|ブール型|場所情報検索を使用してかどうかを指定します。|
+|searchDisableLocation|ブール型|場所情報検索を使用してかどうかを指定します。|
 |searchDisableIndexerBackoff|Boolean|インデクサー バックオフの検索機能を無効にするかどうかを示します。|
 |searchDisableIndexingRemovableDrive|Boolean|リムーバブル ドライブ上の場所をライブラリに追加してインデックスを作成することをユーザーに許可するかどうかを示します。|
 |searchEnableAutomaticIndexSizeManangement|Boolean|インデックスの場所と同じドライブ上のハード ドライブ領域の最小値を指定して、その最小値を下回ったらインデックス作成を停止するかどうかを示します。|
-|searchBlockWebResults|ブール値|Web 検索をブロックするかどうかを示します。|
-|securityBlockAzureADJoinedDevicesAutoEncryption|ブール値|デバイスが Azure の AD が参加している (デスクトップのみ) の場合は、OOBE 中にデバイスの自動暗号化を許可するかどうかを指定します。|
+|searchBlockWebResults|ブール型|Web 検索をブロックするかどうかを示します。|
+|securityBlockAzureADJoinedDevicesAutoEncryption|ブール型|デバイスが Azure の AD が参加している (デスクトップのみ) の場合は、OOBE 中にデバイスの自動暗号化を許可するかどうかを指定します。|
 |diagnosticsDataSubmissionMode|[diagnosticDataSubmissionMode](../resources/intune-deviceconfig-diagnosticdatasubmissionmode.md)|診断データと利用統計情報データ (Watson など) の送信をデバイスに許可する値を取得または設定します。 可能な値は、`userDefined`、`none`、`basic`、`enhanced`、`full` です。|
 |oneDriveDisableFileSync|Boolean|アプリや機能から OneDrive 上のファイルを操作することを IT 管理者が禁止できるかどうかを示す値を取得または設定します。|
 |systemTelemetryProxyServer|String|取得または完全修飾ドメイン名 (FQDN) または接続されているユーザーの経験および遠隔測定の要求を転送するようにプロキシ サーバーの IP アドレスを設定します。|
 |inkWorkspaceAccess|[inkAccessSetting](../resources/intune-deviceconfig-inkaccesssetting.md)|デスクトップで、画面のロックの上から、インクのワークスペースにユーザー アクセスを制御します。 可能な値は、`notConfigured`、`enabled`、`disabled` です。|
 |inkWorkspaceAccessState|[stateManagementSetting](../resources/intune-deviceconfig-statemanagementsetting.md)|デスクトップで、画面のロックの上から、インクのワークスペースにユーザー アクセスを制御します。 可能な値は、`notConfigured`、`blocked`、`allowed` です。|
-|inkWorkspaceBlockSuggestedApps|ブール値|インクのワークスペースでアプリケーションの推奨される修正候補を表示するかどうかを指定します。|
+|inkWorkspaceBlockSuggestedApps|ブール型|インクのワークスペースでアプリケーションの推奨される修正候補を表示するかどうかを指定します。|
 |smartScreenEnableAppInstallControl|Boolean|ユーザーがストア以外の場所からアプリをインストールできるかどうかを IT 管理者が制御することを許可します。|
 |personalizationDesktopImageUrl|String|ダウンロードしてデスクトップ画像として使用する必要がある jpg、jpeg、png 画像の http または https URL、あるいはデスクトップ画像として使用する必要があるファイル システム上のローカル画像のファイル URL。|
 |personalizationLockScreenImageUrl|String|ダウンロードしてロック画面画像として使用する必要がある jpg、jpeg、png 画像の http または https URL、あるいはロック画面画像として使用する必要があるファイル システム上のローカル画像のファイル URL。|
@@ -118,7 +119,7 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 |edgeBlockLiveTileDataCollection|Boolean|ユーザーが Microsoft Edge からスタートにサイトをピン留めしたときに、ライブ タイルを作成するために Microsoft が情報を収集することを禁止します。|
 |edgeSyncFavoritesWithInternetExplorer|Boolean|Internet Explorer と Microsoft Edge の間でお気に入りの同期を有効にします。 お気に入りの追加、削除、変更、順序変更が、ブラウザー間で共有されます。|
 |edgeFavoritesListLocation|String|お気に入りの一覧を提供する場所です。 ローカル ファイル、ローカル ネットワーク、http の場所が該当します。|
-|edgeBlockEditFavorites|ブール値|[お気に入り] に変更を加えてからユーザーをブロックするかどうかを示します。|
+|edgeBlockEditFavorites|ブール型|[お気に入り] に変更を加えてからユーザーをブロックするかどうかを示します。|
 |cellularBlockDataWhenRoaming|Boolean|ローミング中に携帯電話上でユーザーがデータを使用することを禁止するかどうか。|
 |cellularBlockVpn|Boolean|携帯電話上でユーザーが VPN を使用することを禁止するかどうか。|
 |cellularBlockVpnWhenRoaming|Boolean|ローミング時に携帯電話上でユーザーが VPN を使用することを禁止するかどうか。|
@@ -153,7 +154,7 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 |defenderCloudBlockLevel|[defenderCloudBlockLevelType](../resources/intune-deviceconfig-defendercloudblockleveltype.md)|クラウド配信の保護レベルを指定します。 可能な値は、`notConfigured`、`high`、`highPlus`、`zeroTolerance` です。|
 |defenderCloudExtendedTimeout|Int32|クラウドでスキャンするファイルの拡張子をタイムアウトします。 有効な値は 0 から 50 までです|
 |defenderCloudExtendedTimeoutInSeconds|Int32|クラウドでスキャンするファイルの拡張子をタイムアウトします。 有効な値は 0 から 50 までです|
-|defenderBlockOnAccessProtection|ブール値|Windows Defender のアクセスの保護機能を許可または拒否します。|
+|defenderBlockOnAccessProtection|ブール型|Windows Defender のアクセスの保護機能を許可または拒否します。|
 |defenderScheduleScanDay|[defenderScheduleScanDay](../resources/intune-deviceconfig-defenderschedulescanday.md)|Windows Defender スキャンを実行する日を選択します。 可能な値は、`everyday`、`monday`、`tuesday`、`wednesday`、`thursday`、`friday`、`saturday`、`sunday`、`noScheduledScan` です。|
 |defenderSubmitSamplesConsentType|[defenderSubmitSamplesConsentType](../resources/intune-deviceconfig-defendersubmitsamplesconsenttype.md)|ユーザーに対するチェック データを送信する Windows Defender のレベルに同意するものです。 可能な値は、`sendSafeSamplesAutomatically`、`alwaysPrompt`、`neverSend`、`sendAllSamplesAutomatically` です。|
 |lockScreenAllowTimeoutConfiguration|Boolean|Windows 10 Mobile デバイスのロック画面で、画面のタイムアウトを制御するユーザー構成可能な設定を表示するかどうかを指定します。 このポリシーが [許可] に設定されている場合は、lockScreenTimeoutInSeconds によって設定された値は無視されます。|
@@ -175,8 +176,8 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 |privacyAdvertisingId|[stateManagementSetting](../resources/intune-deviceconfig-statemanagementsetting.md)|広告識別子の使用を有効または無効にします。 Windows 10 バージョン 1607 で追加されました。 可能な値は、`notConfigured`、`blocked`、`allowed` です。|
 |privacyAutoAcceptPairingAndConsentPrompts|Boolean|アプリの起動時に、ペアリングとプライバシーに関するユーザーの同意ダイアログの自動受け入れを許可するかどうかを示します。|
 |privacyBlockInputPersonalization|Boolean|Cortana、音声入力、ストア アプリケーションに対するクラウド ベースの音声サービスの使用を禁止するかどうかを示します。|
-|privacyBlockPublishUserActivities|ブール値|タスク切り替え等で最近使用したリソースの共有の経験と発見をブロックします。|
-|privacyBlockActivityFeed|ブール値|Cortana、ディクテーション、またはストアのアプリケーションをクラウド ベースの音声認識サービスの使用をブロックします。|
+|privacyBlockPublishUserActivities|ブール型|タスク切り替え等で最近使用したリソースの共有の経験と発見をブロックします。|
+|privacyBlockActivityFeed|ブール型|Cortana、ディクテーション、またはストアのアプリケーションをクラウド ベースの音声認識サービスの使用をブロックします。|
 |startBlockUnpinningAppsFromTaskbar|Boolean|ユーザーがタスク バーからアプリのピン留めを外すことを禁止するかどうかを示します。|
 |startMenuAppListVisibility|[windowsStartMenuAppListVisibilityType](../resources/intune-deviceconfig-windowsstartmenuapplistvisibilitytype.md)|この値を設定すると、アプリ リストを折りたたんだり、アプリ リスト全体を削除したり、設定アプリで対応する切り替えを無効にしたりできます。 可能な値は、`userDefined`、`collapse`、`remove`、`disableSettingsApp` です。|
 |startMenuHideChangeAccountSettings|Boolean|このポリシーを有効にすると、スタート メニューのユーザー タイルに [アカウント設定の変更] が表示されなくなります。|
@@ -291,10 +292,10 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 |experienceBlockErrorDialogWhenNoSIM|Boolean|SIM カードが検出されない場合にエラー ダイアログを表示することを許可するかどうかを示します。|
 |experienceBlockTaskSwitcher|Boolean|デバイスでのタスクの切り替えを有効にするかどうかを示します。|
 |logonBlockFastUserSwitching|Boolean|同時にログオンしているユーザー間での切り替えをログオフなしで迅速に行う機能を無効にします。|
-|tenantLockdownRequireNetworkDuringOutOfBoxExperience|ブール値|かどうか、デバイスがネットワークに接続する必要があります。|
-|appManagementMSIAllowUserControlOverInstall|ブール値|このポリシー設定は、通常は、システム管理者のみが利用可能なインストール オプションを変更するユーザーを許可します。|
-|appManagementMSIAlwaysInstallWithElevatedPrivileges|ブール値|このポリシー設定では、Windows インストーラーがシステム上で任意のプログラムをインストールするときに、昇格されたアクセス許可を使用するように指示します。|
-|dataProtectionBlockDirectMemoryAccess|ブール値|このポリシー設定によって、ユーザーが Windows にログインするまですべてホット プラグ可能なダウン ストリーム システムが不安定を使用すると、ダイレクト メモリ アクセス (DMA) をブロックするができます。|
+|tenantLockdownRequireNetworkDuringOutOfBoxExperience|ブール型|かどうか、デバイスがネットワークに接続する必要があります。|
+|appManagementMSIAllowUserControlOverInstall|ブール型|このポリシー設定は、通常は、システム管理者のみが利用可能なインストール オプションを変更するユーザーを許可します。|
+|appManagementMSIAlwaysInstallWithElevatedPrivileges|ブール型|このポリシー設定では、Windows インストーラーがシステム上で任意のプログラムをインストールするときに、昇格されたアクセス許可を使用するように指示します。|
+|dataProtectionBlockDirectMemoryAccess|ブール型|このポリシー設定によって、ユーザーが Windows にログインするまですべてホット プラグ可能なダウン ストリーム システムが不安定を使用すると、ダイレクト メモリ アクセス (DMA) をブロックするができます。|
 
 
 
