@@ -1,12 +1,13 @@
 ---
 title: deviceComplianceDeviceStatus の作成
 description: 新しい deviceComplianceDeviceStatus オブジェクトを作成します。
-ms.openlocfilehash: 1cb251ea30d3ea2518bbe51dd717fe95728666fd
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: f0f1f3ea46dcc2bf0b7ce1f6f60ab8d27eefaabd
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27071361"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27348224"
 ---
 # <a name="create-devicecompliancedevicestatus"></a>deviceComplianceDeviceStatus の作成
 
@@ -44,9 +45,9 @@ POST /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/devic
 
 次の表に、deviceComplianceDeviceStatus の作成時に必要なプロパティを示します。
 
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
-|id|String|エンティティのキー。|
+|ID|String|エンティティのキー。|
 |deviceDisplayName|String|DevicePolicyStatus のデバイス名。|
 |userName|String|レポートされているユーザー名|
 |deviceModel|String|レポートされているデバイス モデル|

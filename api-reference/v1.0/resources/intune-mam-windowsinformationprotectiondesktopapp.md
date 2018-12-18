@@ -1,12 +1,13 @@
 ---
 title: windowsInformationProtectionDesktopApp リソースの種類
 description: Windows 情報保護用デスクトップ アプリ
-ms.openlocfilehash: b685304a52818dfdf982cb48739965aa3b018a63
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 5164e6d1a9165139de1895dfae38dd8c90927504
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27023178"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27345515"
 ---
 # <a name="windowsinformationprotectiondesktopapp-resource-type"></a>windowsInformationProtectionDesktopApp リソースの種類
 
@@ -17,7 +18,7 @@ Windows 情報保護用デスクトップ アプリ
 [windowsInformationProtectionApp](../resources/intune-mam-windowsinformationprotectionapp.md) からの継承
 
 ## <a name="properties"></a>プロパティ
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
 |displayName|文字列型 (String)|アプリの表示名。 [windowsInformationProtectionApp](../resources/intune-mam-windowsinformationprotectionapp.md) からの継承|
 |説明|文字列型 (String)|アプリの説明。 [windowsInformationProtectionApp](../resources/intune-mam-windowsinformationprotectionapp.md) からの継承|

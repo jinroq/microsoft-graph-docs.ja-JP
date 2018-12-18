@@ -1,12 +1,13 @@
 ---
 title: 'ChartPointsCollection: ItemAt'
 description: データ系列内の位置に基づくポイントを取得します。
-ms.openlocfilehash: 0e6f3c05f9ab29f08fa4f848f4ebb437461ff2e6
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lumine2008
+ms.openlocfilehash: fd4adc19397ddd4f29a98d875f50df0e6df302f9
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27023869"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27348903"
 ---
 # <a name="chartpointscollection-itemat"></a>ChartPointsCollection: ItemAt
 
@@ -35,7 +36,7 @@ POST /workbook/worksheets/{id|name}/charts/{name}/series/{series-id}/points/item
 ## <a name="request-body"></a>要求本文
 要求本文で、次のパラメーターを含む JSON オブジェクトを指定します。
 
-| パラメーター    | 型   |説明|
+| パラメーター    | 種類   |説明|
 |:---------------|:--------|:----------|
 |index|Int32|取得するオブジェクトのインデックス値。0 を起点とする番号になります。|
 

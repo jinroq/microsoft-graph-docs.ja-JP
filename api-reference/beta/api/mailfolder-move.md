@@ -1,12 +1,13 @@
 ---
 title: 'mailFolder: 移動'
 description: mailFolder とその内容を別の mailFolder に移動します。
-ms.openlocfilehash: 8aeef43068bcd2f23df5d726e559d0c8268ae1ca
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: angelgolfer-ms
+ms.openlocfilehash: 50c982a9c2277530c884ee2807543f858fd3b696
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27073862"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27348756"
 ---
 # <a name="mailfolder-move"></a>mailFolder: 移動
 
@@ -37,14 +38,14 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/move
 
 | ヘッダー | 値 |
 |:-------|:------|
-| Authorization | `Bearer {token}`. 必須。 |
-| Content-Type | `application/json`. 必須。 |
+| Authorization | `Bearer {token}`. 必須です。 |
+| Content-Type | `application/json`. 必須です。 |
 
 ## <a name="request-body"></a>要求本文
 
 要求本文で、次のパラメーターを含む JSON オブジェクトを指定します。
 
-| パラメーター | 型 | 説明 |
+| パラメーター | 種類 | 説明 |
 |:----------|:-----|:------------|
 |destinationId|String|フォルダー ID、またはよく知られているフォルダー名です。 サポートされている既知のフォルダー名の一覧については、「[mailFolder リソースの種類](../resources/mailfolder.md)」を参照してください。|
 

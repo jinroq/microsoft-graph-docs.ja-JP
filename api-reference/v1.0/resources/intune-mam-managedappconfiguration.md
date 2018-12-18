@@ -1,12 +1,13 @@
 ---
 title: managedAppConfiguration リソースの種類
 description: 構成の対象であるユーザーに対して、一連のカスタム設定を現状のままアプリに配信するために使用する構成です。
-ms.openlocfilehash: 42544aeacda4494a7757a15bef75a493d96fe0cf
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: e4b20c642f49b2f110ced2f72a5a54a6583b561f
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27024100"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27346908"
 ---
 # <a name="managedappconfiguration-resource-type"></a>managedAppConfiguration リソースの種類
 
@@ -23,7 +24,7 @@ ms.locfileid: "27024100"
 |[managedAppConfiguration の取得](../api/intune-mam-managedappconfiguration-get.md)|[managedAppConfiguration](../resources/intune-mam-managedappconfiguration.md)|[managedAppConfiguration](../resources/intune-mam-managedappconfiguration.md) オブジェクトのプロパティとリレーションシップを読み取ります。|
 
 ## <a name="properties"></a>プロパティ
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
 |displayName|String|ポリシーの表示名。 [managedAppPolicy](../resources/intune-mam-managedapppolicy.md) から継承します|
 |説明|String|ポリシーの説明。 [managedAppPolicy](../resources/intune-mam-managedapppolicy.md) から継承します|

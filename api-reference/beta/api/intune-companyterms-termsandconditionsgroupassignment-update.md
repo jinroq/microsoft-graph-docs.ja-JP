@@ -1,12 +1,13 @@
 ---
 title: TermsAndConditionsGroupAssignment を更新します。
 description: TermsAndConditionsGroupAssignment オブジェクトのプロパティを更新します。
-ms.openlocfilehash: 0b38a5da65f76262d890ace17dc4d174567f62c1
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: ccce1cad1bcddd68e69ba3cdcb417b0aabbe7136
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27068576"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27349659"
 ---
 # <a name="update-termsandconditionsgroupassignment"></a>TermsAndConditionsGroupAssignment を更新します。
 
@@ -44,9 +45,9 @@ PATCH /deviceManagement/termsAndConditions/{termsAndConditionsId}/groupAssignmen
 
 [TermsAndConditionsGroupAssignment](../resources/intune-companyterms-termsandconditionsgroupassignment.md)を作成するときに必要なプロパティを次の表に示します。
 
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
-|id|String|エンティティの一意識別子。|
+|ID|String|エンティティの一意識別子。|
 |targetGroupId|String|T & C のポリシーが割り当てられているグループの一意の識別子です。|
 
 

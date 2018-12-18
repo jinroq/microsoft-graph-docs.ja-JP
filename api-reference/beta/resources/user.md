@@ -1,12 +1,13 @@
 ---
 title: ユーザー リソースの種類
 description: Azure AD ユーザー アカウントを表します。directoryObject から継承します。
-ms.openlocfilehash: 496e349162ddffe918c2d293cc9032cff6fd14c4
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: dkershaw10
+ms.openlocfilehash: c9d776091bba18a9459505b7d35d7ff15479cffe
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27073396"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27348203"
 ---
 # <a name="user-resource-type"></a>user リソースの種類
 
@@ -49,7 +50,7 @@ Azure AD ユーザー アカウントを表します。[directoryObject](directo
 |[List manager](../api/user-list-manager.md) |[directoryObject](directoryobject.md) | そのユーザーの上司であるユーザーまたは連絡先を、マネージャー ナビゲーション プロパティから取得します。|
 |[List memberOf](../api/user-list-memberof.md) |[directoryObject](directoryobject.md) コレクション| グループ、ディレクトリの役割、およびユーザーが所属するグループのナビゲーション プロパティからの直接のメンバーになっている管理の単位を取得します。|
 |[推移的な所属するグループ] ボックスの一覧](../api/user-list-transitivememberof.md) |[directoryObject](directoryobject.md) コレクション| グループ、ディレクトリの役割、およびメンバーであるユーザーの管理の単位を一覧表示します。 この操作では、推移的では、ユーザーの入れ子にされたメンバーであるグループが含まれています。 |
-|[リスト joinedTeams](../api/user-list-joinedteams.md) |[グループ](group.md)コレクション| ユーザーが joinedTeams のナビゲーション プロパティからの直接のメンバーであるマイクロソフトのチームを取得します。|
+|[参加チームのリストを作成する](../api/user-list-joinedteams.md) |[グループ](group.md)コレクション| ユーザーが joinedTeams のナビゲーション プロパティからの直接のメンバーであるマイクロソフトのチームを取得します。|
 |[List ownedDevices](../api/user-list-owneddevices.md) |[directoryObject](directoryobject.md) collection| そのユーザーにより所有されているデバイスを、OwnedDevices ナビゲーション プロパティから取得します。|
 |[List ownedObjects](../api/user-list-ownedobjects.md) |[directoryObject](directoryobject.md) collection| そのユーザーにより所有されているディレクトリ オブジェクトを、ownedObjects ナビゲーション プロパティから取得します。|
 |[List plannerTasks](../api/planneruser-list-tasks.md) |[plannerTask](plannertask.md) コレクション| ユーザーに割り当てられている plannerTasks を取得します。|
@@ -78,10 +79,10 @@ Azure AD ユーザー アカウントを表します。[directoryObject](directo
 
 ## <a name="properties"></a>プロパティ
 
-| プロパティ       | 型    | 説明 |
+| プロパティ       | 種類    | 説明 |
 |:---------------|:--------|:------------|
 |aboutMe|String|ユーザーが自分自身について記述する、フリー フォームのテキスト入力フィールド。|
-|accountEnabled|ブール値| アカウントが有効な場合は **true**。そうでない場合は **false**。このプロパティは、ユーザーの作成時に必要です。$filter をサポートします。    |
+|accountEnabled|Boolean| アカウントが有効な場合は **true**。そうでない場合は **false**。このプロパティは、ユーザーの作成時に必要です。$filter をサポートします。    |
 |ageGroup|String|ユーザーの年齢グループを設定します。 使用できる値: `null`、 `minor`、`notAdult`と`adult`。 詳細については[法律の年齢グループのプロパティの定義](#legal-age-group-property-definitions)を参照してください。 |
 |assignedLicenses|[assignedLicense](assignedlicense.md) collection|ユーザーに割り当てられているライセンス。null 許容ではありません。            |
 |assignedPlans|[assignedPlan](assignedplan.md) コレクション|ユーザーに割り当てられているプラン。読み取り専用です。null 許容ではありません。 |
@@ -103,23 +104,23 @@ Azure AD ユーザー アカウントを表します。[directoryObject](directo
 |interests|String コレクション|ユーザーが自分の関心事を記述する一覧。|
 |jobTitle|String|ユーザーの役職。$filter をサポートします。|
 |legalAgeGroupClassification|String| エンタープライズ ・ アプリケーションで使用すると、ユーザーの法的な年齢グループを決定します。 このプロパティは読み取り専用と演算に基づく`ageGroup`と`consentProvidedForMinor`のプロパティです。 使用できる値: `null`、 `minorWithOutParentalConsent`、 `minorWithParentalConsent`、 `minorNoParentalConsentRequired`、`notAdult`と`adult`。 参照してください詳細については[法律の年齢グループのプロパティの定義](#legal-age-group-property-definitions)。)|
-|licenseAssignmentStates|[licenseAssignmentState](licenseassignmentstate.md)コレクション|このユーザーのライセンスの割り当ての状態です。 読み取り専用。|
+|licenseAssignmentStates|[licenseAssignmentState](licenseassignmentstate.md)コレクション|このユーザーのライセンスの割り当ての状態です。 読み取り専用です。|
 |mail|String|ユーザーの SMTP アドレス (たとえば、"jeff@contoso.onmicrosoft.com")。読み取り専用。$filter をサポートします。|
 |mailboxSettings|[mailboxSettings](mailboxsettings.md)|サインイン ユーザーのプライマリ メールボックスの設定。 着信メッセージ、ロケール、およびタイム ゾーンへの自動返信を送信するため[の更新](../api/user-update-mailboxsettings.md)を[取得](../api/user-get-mailboxsettings.md)または設定ができます。|
 |mailNickname|String|ユーザーの電子メール エイリアス。ユーザーの作成時に、このプロパティを指定する必要があります。$filter をサポートします。|
 |mobilePhone|String|ユーザーの主な携帯電話の番号。|
 |mySite|String|ユーザーの個人用サイトの URL。|
 |officeLocation|String|ユーザーの勤務先の場所。|
-|onPremisesDistinguishedName|String| オンプレミスの Active Directory が含まれています`distinguished name`または`DN`。 プロパティは Azure AD 接続経由で Active Directory を Azure に、オンプレミスのディレクトリが同期しているお客様に対してのみ設定されます。 読み取り専用。 |
-|onPremisesDomainName|String| 設置が含まれています`domainFQDN`、設置ディレクトリからの同期をとりますとも呼ばれます。 プロパティは Azure AD 接続経由で Active Directory を Azure に、オンプレミスのディレクトリが同期しているお客様に対してのみ設定されます。 読み取り専用。 |
+|onPremisesDistinguishedName|String| オンプレミスの Active Directory が含まれています`distinguished name`または`DN`。 プロパティは Azure AD 接続経由で Active Directory を Azure に、オンプレミスのディレクトリが同期しているお客様に対してのみ設定されます。 読み取り専用です。 |
+|onPremisesDomainName|String| 設置が含まれています`domainFQDN`、設置ディレクトリからの同期をとりますとも呼ばれます。 プロパティは Azure AD 接続経由で Active Directory を Azure に、オンプレミスのディレクトリが同期しているお客様に対してのみ設定されます。 読み取り専用です。 |
 |onPremisesExtensionAttributes|[OnPremisesExtensionAttributes](onpremisesextensionattributes.md)|ユーザーの extensionAttributes 1-15 が含まれています。 個々 の拡張属性は、フィルターも選択可能なことに注意してください。 `onPremisesSyncEnabled`ユーザーは、この一連のプロパティは読み取り専用で、マスター設置します。 クラウド専用のユーザー (、`onPremisesSyncEnabled`は)、これらのプロパティは作成時に設定するか、更新します。 |
 |onPremisesImmutableId|String|Azure AD ユーザー オブジェクトには、オンプレミス Active Directory ユーザー アカウントを関連付けるにはこのプロパティを使用します。 ユーザーのフェデレーション ドメインを使用している場合は、グラフに新しいユーザー アカウントを作成するときは、このプロパティを指定する必要があります`userPrincipalName`(UPN) のプロパティです。 **重要な:****$** 、このプロパティを指定する場合、 **_** 文字を使用できません。 $filter をサポートします。 |
 |onPremisesLastSyncDateTime|DateTimeOffset|オブジェクトがオンプレミス ディレクトリと前回、同期された日時を示します。例："2013-02-16T03:04:54Z"Timestamp 型は、ISO 8601 形式を使用して日付と時刻の情報を表し、必ず UTC 時間です。たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、次のようになります。`'2014-01-01T00:00:00Z'`読み取り専用です。|
 |onPremisesProvisioningErrors|[onPremisesProvisioningError](onpremisesprovisioningerror.md)コレクション| 提供処理中に同期の Microsoft 製品を使用するときのエラーです。 |
-|onPremisesSamAccountName|String| 設置が含まれています`sAMAccountName`設置ディレクトリと同期します。 プロパティは Azure AD 接続経由で Active Directory を Azure に、オンプレミスのディレクトリが同期しているお客様に対してのみ設定されます。 読み取り専用。 |
+|onPremisesSamAccountName|String| 設置が含まれています`sAMAccountName`設置ディレクトリと同期します。 プロパティは Azure AD 接続経由で Active Directory を Azure に、オンプレミスのディレクトリが同期しているお客様に対してのみ設定されます。 読み取り専用です。 |
 |onPremisesSecurityIdentifier|String|オンプレミスからクラウドに同期されたユーザーのオンプレミスのセキュリティ識別子 (SID) が含まれます。読み取り専用です。|
 |onPremisesSyncEnabled|Boolean| このオブジェクトがオンプレミスのディレクトリから同期される場合は **true**、このオブジェクトが最初にオンプレミスのディレクトリから同期されていて、今後は同期しない場合は **false**、このオブジェクトがオンプレミスのディレクトリから 1 度も同期されたことがない場合は **null** (既定値)。読み取り専用 |
-|onPremisesUserPrincipalName|String| 設置が含まれています`userPrincipalName`設置ディレクトリと同期します。 プロパティは Azure AD 接続経由で Active Directory を Azure に、オンプレミスのディレクトリが同期しているお客様に対してのみ設定されます。 読み取り専用。 |
+|onPremisesUserPrincipalName|String| 設置が含まれています`userPrincipalName`設置ディレクトリと同期します。 プロパティは Azure AD 接続経由で Active Directory を Azure に、オンプレミスのディレクトリが同期しているお客様に対してのみ設定されます。 読み取り専用です。 |
 |otherMails|String| ユーザーの他の電子メール アドレスの一覧例: `["bob@contoso.com", "Robert@fabrikam.com"]`。 $filter をサポートします。|
 |passwordPolicies|String|ユーザーのパスワード ポリシーを指定します。この値は列挙値であり、可能な 1 つの値は "DisableStrongPassword" です。この場合は、既定のポリシーより脆弱なパスワードを指定できます。"DisablePasswordExpiration" を指定することもできます。2 つを一緒に指定することもできます。例:"DisablePasswordExpiration, DisableStrongPassword"|
 |passwordProfile|[PasswordProfile](passwordprofile.md)|ユーザーのパスワード プロファイルを指定します。プロファイルには、ユーザーのパスワードが含まれています。このプロパティは、ユーザーの作成時に必要です。プロファイルにあるパスワードは、**passwordPolicies** プロパティによって指定されている最小要件を満たす必要があります。既定では、強力なパスワードが必要です。|
@@ -130,10 +131,10 @@ Azure AD ユーザー アカウントを表します。[directoryObject](directo
 |preferredName|String|ユーザーが設定する名前。|
 |provisionedPlans|[ProvisionedPlan](provisionedplan.md) コレクション|ユーザーのために用意されたプラン。読み取り専用です。null 許容ではありません。 |
 |proxyAddresses|String コレクション|例:`["SMTP: bob@contoso.com", "smtp: bob@sales.contoso.com"]` 複数値プロパティのフィルター式には、**任意の**演算子が必要です。読み取り専用。null 許容ではありません。$filter をサポートします。          |
-|refreshTokensValidFromDateTime|DateTimeOffset| トークンの更新やセッション トークン (セッション cookie) は、この時間が有効でないと、アプリケーションはトークンを取得するエラー、無効な更新やセッション トークンを使用して、委任されたアクセスを取得するとき (Api にアクセスする Microsoft のグラフなど) の前に発行されます。  このような場合は、アプリケーションが承認エンドポイントを要求することによって、新しい更新のトークンを取得する必要があります。 読み取り専用。 リセットするには、 [invalidateAllRefreshTokens](../api/user-invalidateallrefreshtokens.md)を使用します。|
+|refreshTokensValidFromDateTime|DateTimeOffset| トークンの更新やセッション トークン (セッション cookie) は、この時間が有効でないと、アプリケーションはトークンを取得するエラー、無効な更新やセッション トークンを使用して、委任されたアクセスを取得するとき (Api にアクセスする Microsoft のグラフなど) の前に発行されます。  このような場合は、アプリケーションが承認エンドポイントを要求することによって、新しい更新のトークンを取得する必要があります。 読み取り専用です。 リセットするには、 [invalidateAllRefreshTokens](../api/user-invalidateallrefreshtokens.md)を使用します。|
 |responsibilities|String コレクション|ユーザーが自分の責任の範囲を列挙する一覧。|
 |schools|String コレクション|ユーザーが在籍した学校を列挙する一覧。|
-|showInAddressList|ブール値|**true の**場合、Outlook のグローバル アドレス一覧は、このユーザー、それ以外の場合は**false**を含める必要があります。 かどうかが設定されていないこのとして扱われます**場合は true**です。 招待マネージャーによって参加を要請するユーザー、このプロパティは**false**に設定されます。|
+|showInAddressList|ブール型|**true の**場合、Outlook のグローバル アドレス一覧は、このユーザー、それ以外の場合は**false**を含める必要があります。 かどうかが設定されていないこのとして扱われます**場合は true**です。 招待マネージャーによって参加を要請するユーザー、このプロパティは**false**に設定されます。|
 |skills|String コレクション|ユーザーが自分のスキルを列挙する一覧。|
 |state|String|ユーザーの住所の都道府県。$filter をサポートします。|
 |streetAddress|String|ユーザーの勤務先の番地。|
@@ -187,7 +188,7 @@ Azure AD ユーザー アカウントを表します。[directoryObject](directo
 
 | リレーションシップ | 型 |説明|
 |:---------------|:--------|:----------|
-|agreementAcceptances|[agreementAcceptance](agreementacceptance.md)コレクション| 使用の承認の状態のユーザーの条件です。 読み取り専用。 Null 許容型。|
+|agreementAcceptances|[agreementAcceptance](agreementacceptance.md)コレクション| 使用の承認の状態のユーザーの条件です。 読み取り専用です。 Null 許容型。|
 |予定表|[calendar](calendar.md)|ユーザーの標準予定表。読み取り専用です。|
 |calendarGroups|[calendarGroup](calendargroup.md)コレクション|ユーザーの予定表グループ。読み取り専用です。Null 許容型。|
 |calendarView|[event](event.md) コレクション|予定表のカレンダー ビュー。読み取り専用です。Null 許容型。|
@@ -205,18 +206,18 @@ Azure AD ユーザー アカウントを表します。[directoryObject](directo
 |mailFolders|[mailFolder](mailfolder.md) コレクション| ユーザーのメール フォルダー。読み取り専用です。Null 許容型。|
 |manager|[directoryObject](directoryobject.md)|このユーザーの上司であるユーザーまたは連絡先。読み取り専用です。(HTTP メソッド:GET、PUT、DELETE)|
 |memberOf|[directoryObject](directoryobject.md) コレクション|ユーザーがメンバーになっているグループ、ディレクトリ ロール、および管理単位。読み取り専用。Null 許容型。|
-|joinedTeams|[group](group.md) コレクション|ユーザーがのメンバーであるマイクロソフトのチームです。 読み取り専用。 Null 許容型。|
+|joinedTeams|[group](group.md) コレクション|ユーザーがのメンバーであるマイクロソフトのチームです。 読み取り専用です。 Null 許容型。|
 |messages|[message](message.md) コレクション|メールボックスまたはフォルダー内のメッセージ。読み取り専用です。Null 許容型。|
 |onenote|[OneNote](onenote.md)| 読み取り専用です。|
-|outlook|[outlookUser](outlookuser.md)| 選択 Outlook サービス ユーザーが利用できます。 読み取り専用。 Null 許容型。|
+|outlook|[outlookUser](outlookuser.md)| 選択 Outlook サービス ユーザーが利用できます。 読み取り専用です。 Null 許容型。|
 |ownedDevices|[directoryObject](directoryobject.md) コレクション|ユーザーが所有しているデバイス。読み取り専用です。Null 許容型。|
 |ownedObjects|[directoryObject](directoryobject.md) コレクション|ユーザーが所有しているディレクトリ オブジェクト。読み取り専用です。Null 許容型。|
 |people|[人](person.md)コレクション| 読み取り専用。ユーザーに最も関連のある人。コレクションは、ユーザーに対する関連 (ユーザーの通信、コラボレーション、およびビジネス リレーションシップによって決まる) を基準として配列されます。person は、メール、連絡先、およびソーシャル ネットワークのすべてからの情報の集約です。|
 |photo|[profilePhoto](profilephoto.md)| ユーザーのプロフィール写真。読み取り専用です。|
 |Photos|[Photo](photo.md) コレクション| 読み取り専用。Null 許容型。|
-|プランナー|[plannerUser](planneruser.md)| 選択的プランナー サービス ユーザーが利用できます。 読み取り専用。 Null 許容型。 |
+|プランナー|[plannerUser](planneruser.md)| 選択的プランナー サービス ユーザーが利用できます。 読み取り専用です。 Null 許容型。 |
 |sharepoint|[sharepoint](sharepoint.md)| ユーザーの SharePoint サイトにアクセスします。読み取り専用。 |
-|scopedRoleMemberOf|[scopedRoleMembership](scopedrolemembership.md) コレクション| このユーザーのスコープ役割の管理単位のメンバーシップ。 読み取り専用。 Null 許容型。|
+|scopedRoleMemberOf|[scopedRoleMembership](scopedrolemembership.md) コレクション| このユーザーのスコープ役割の管理単位のメンバーシップ。 読み取り専用です。 Null 許容型。|
 |settings|[設定](user-settings.md)コレクション| 読み取り専用。Null 許容型。|
 |registeredDevices|[directoryObject](directoryobject.md) コレクション|ユーザーについて登録されているデバイス。読み取り専用です。Null 許容型。|
 

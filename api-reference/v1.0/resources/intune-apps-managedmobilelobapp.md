@@ -1,12 +1,13 @@
 ---
 title: managedMobileLobApp のリソースの種類
 description: ビジネス アプリの管理対象のすべての携帯電話回線のプロパティを含む抽象基本クラス。
-ms.openlocfilehash: 10e83378e23eab55352d40000448d055a2478211
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: a89ebc3af31bdbc119808115305962e36c92f4be
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27023258"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27346341"
 ---
 # <a name="managedmobilelobapp-resource-type"></a>managedMobileLobApp のリソースの種類
 
@@ -23,9 +24,9 @@ ms.locfileid: "27023258"
 |[managedMobileLobApp の取得](../api/intune-apps-managedmobilelobapp-get.md)|[managedMobileLobApp](../resources/intune-apps-managedmobilelobapp.md)|[managedMobileLobApp](../resources/intune-apps-managedmobilelobapp.md) オブジェクトのプロパティとリレーションシップを読み取ります。|
 
 ## <a name="properties"></a>プロパティ
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
-|id|String|エンティティのキー。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|
+|ID|String|エンティティのキー。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|
 |displayName|String|管理者が提供またはインポートしたアプリのタイトル。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|
 |説明|String|アプリの説明。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|
 |publisher|String|アプリの発行元。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|

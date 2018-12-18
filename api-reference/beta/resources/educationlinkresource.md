@@ -1,12 +1,13 @@
 ---
 title: educationLinkResource リソースの種類
 description: EducationResource のサブクラスです。 このリソースは、リンクとは必要なデータに関連付けられていないことです。
-ms.openlocfilehash: 314bd87998ada178484401b2122f0936f87e51a0
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: mmast-msft
+ms.openlocfilehash: 02a55eeea25ab2c27d6c5848fbc178ff535d5e33
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27071866"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27349805"
 ---
 # <a name="educationlinkresource-resource-type"></a>educationLinkResource リソースの種類
 
@@ -15,8 +16,8 @@ ms.locfileid: "27071866"
 [EducationResource](educationresource.md)のサブクラスです。 このリソースは、リンクとは必要なデータに関連付けられていないことです。
 
 
-## <a name="properties"></a>プロパティ
-| プロパティ     | 型   |説明|
+## <a name="properties"></a>Properties
+| プロパティ     | 種類   |説明|
 |:---------------|:--------|:----------|
 |link|String|リソースへの URL です。|
 

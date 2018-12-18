@@ -1,12 +1,13 @@
 ---
 title: ImportedDeviceIdentity を更新します。
 description: ImportedDeviceIdentity オブジェクトのプロパティを更新します。
-ms.openlocfilehash: 4c5ce8e592f04cbda5d5ffbbde0e38bbf7ee3602
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 6910eedf448c85d919da74f5d4e04d11213cf6d2
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27069417"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27347713"
 ---
 # <a name="update-importeddeviceidentity"></a>ImportedDeviceIdentity を更新します。
 
@@ -44,9 +45,9 @@ PATCH /deviceManagement/importedDeviceIdentities/{importedDeviceIdentityId}
 
 [ImportedDeviceIdentity](../resources/intune-enrollment-importeddeviceidentity.md)を作成するときに必要なプロパティを次の表に示します。
 
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
-|id|String|インポートされたデバイス id の id|
+|ID|String|インポートされたデバイス id の id|
 |importedDeviceIdentifier|String|インポートされたデバイスの識別子|
 |importedDeviceIdentityType|[importedDeviceIdentityType](../resources/intune-enrollment-importeddeviceidentitytype.md)|インポートされたデバイスの識別情報の種類です。 可能な値は、`unknown`、`imei`、`serialNumber` です。|
 |lastModifiedDateTime|DateTimeOffset|説明の最後の変更日時|

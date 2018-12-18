@@ -1,12 +1,13 @@
 ---
 title: domainDnsTxtRecord リソースの種類
 description: テナント内の特定のドメインの DNS ゾーン ファイルに追加された TXT レコードを表します。DomainDnsRecord エンティティから継承されます。
-ms.openlocfilehash: 2c49f42c2044d58855d293d39c0e5110091e4495
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lleonard-msft
+ms.openlocfilehash: caefb97b39219c282c45949b504c3d0b91cdada9
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27073504"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27349015"
 ---
 # <a name="domaindnstxtrecord-resource-type"></a>domainDnsTxtRecord リソースの種類
 
@@ -18,9 +19,9 @@ ms.locfileid: "27073504"
 このリソースへの直接クエリはサポートされていません。ドメイン サービス レコードのクエリを実行する方法の詳細については、[ドメイン](domain.md)のトピックを参照してください。
 
 ## <a name="properties"></a>プロパティ
-| プロパティ     | 型   |説明|
+| プロパティ     | 種類   |説明|
 |:---------------|:--------|:----------|
-|id|String| このエンティティに割り当てられた一意の識別子。null 許容ではありません。読み取り専用です。 |
+|ID|String| このエンティティに割り当てられた一意の識別子。null 許容ではありません。読み取り専用です。 |
 |isOptional|ブール型| false の場合、ドメインが指定された Microsoft Online Services が適切に機能するには、TXT レコードが DNS ホストで顧客によって構成されている必要があります。 |
 |label|String| DNS ホストで TXT レコードの *name* プロパティを構成する場合に使用する値。|
 |recordType|String| DNS レコードの種類。この値は常に *Txt* です。キー |

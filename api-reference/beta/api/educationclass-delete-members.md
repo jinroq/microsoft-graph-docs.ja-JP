@@ -1,12 +1,13 @@
 ---
 title: 学生を削除する
 description: educationClass から educationUser を削除する
-ms.openlocfilehash: 6729622a07f36bd08e9f5e8a32312aa38582b490
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: mmast-msft
+ms.openlocfilehash: 39defb72f4b0d01171ff92730a8e86b24c43a8ae
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27068287"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27348141"
 ---
 # <a name="remove-a-student"></a>学生を削除する
 

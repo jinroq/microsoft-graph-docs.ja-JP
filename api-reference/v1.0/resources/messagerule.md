@@ -1,12 +1,13 @@
 ---
 title: messageRule リソースの種類
 description: ユーザーの受信トレイ内のメッセージに適用されるルールです。
-ms.openlocfilehash: beada909a5b4abc1d91a40cf1674916f3d3c04ed
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: angelgolfer-ms
+ms.openlocfilehash: 1a8e0bb0c8540848c9a57bd59b7536688afd6926
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27023490"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27347328"
 ---
 # <a name="messagerule-resource-type"></a>messageRule リソースの種類
 
@@ -19,7 +20,7 @@ Outlook では、受信トレイ内の受信メッセージに対し、一定の
 
 
 ## <a name="properties"></a>プロパティ
-| プロパティ     | 型   |説明|
+| プロパティ     | 種類   |説明|
 |:---------------|:--------|:----------|
 | actions | [messageRuleActions](messageruleactions.md) | 該当する条件が満たされた場合にメッセージに対して実行されるアクション。 |
 | conditions | [messageRulePredicates](messagerulepredicates.md) | 該当するルール アクションをトリガーするために満たす必要のある条件。 |

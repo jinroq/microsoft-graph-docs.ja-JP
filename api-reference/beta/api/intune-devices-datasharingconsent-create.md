@@ -1,12 +1,13 @@
 ---
 title: DataSharingConsent を作成します。
 description: 新しい dataSharingConsent オブジェクトを作成します。
-ms.openlocfilehash: 9973820ad8354e78f05569b8e1b46da680c2fa0c
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 07d76bbd92d2741571683bb7614b3336c10d9058
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27069071"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27349673"
 ---
 # <a name="create-datasharingconsent"></a>DataSharingConsent を作成します。
 
@@ -44,12 +45,12 @@ POST /deviceManagement/dataSharingConsents
 
 次の表は、dataSharingConsent を作成するときに必要なプロパティを示します。
 
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
-|id|String|データ共有同意 Id|
+|ID|String|データ共有同意 Id|
 |serviceDisplayName|String|サービス作業の流れの表示名|
 |termsUrl|String|同意の共有データの TermsUrl|
-|付与|ブール値|同意の共有データに付与されている状態|
+|付与|ブール型|同意の共有データに付与されている状態|
 |grantDateTime|DateTimeOffset|同意は、このアカウントに与えられました。|
 |grantedByUpn|String|このアカウントに許可を付与するユーザーの Upn|
 |grantedByUserId|String|このアカウントに許可を付与するユーザーのユーザー Id|

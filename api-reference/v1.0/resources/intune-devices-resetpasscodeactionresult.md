@@ -1,12 +1,13 @@
 ---
 title: resetPasscodeActionResult リソースの種類
 description: パスコードのリセット アクションの結果
-ms.openlocfilehash: 6b951a75b93b4e625fb61110ba909632c051b0f5
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 135aa6be61f54435aa7f990a51445cd5e61a9032
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27021664"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27348322"
 ---
 # <a name="resetpasscodeactionresult-resource-type"></a>resetPasscodeActionResult リソースの種類
 
@@ -17,7 +18,7 @@ ms.locfileid: "27021664"
 [deviceActionResult](../resources/intune-devices-deviceactionresult.md) からの継承
 
 ## <a name="properties"></a>プロパティ
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
 |actionName|String|[deviceActionResult](../resources/intune-devices-deviceactionresult.md) から継承されるアクション名|
 |actionState|[actionState](../resources/intune-devices-actionstate.md)|[DeviceActionResult](../resources/intune-devices-deviceactionresult.md)から継承される、アクションの状態です。 可能な値は、`none`、`pending`、`canceled`、`active`、`done`、`failed`、`notSupported` です。|

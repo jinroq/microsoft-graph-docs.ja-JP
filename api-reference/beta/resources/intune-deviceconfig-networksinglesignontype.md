@@ -1,12 +1,13 @@
 ---
 title: networkSingleSignOnType 列挙型
 description: Wi-fi ネットワーク シングル サインオンの種類の設定です。
-ms.openlocfilehash: f880da2485fbf8825441d5891a3d664a63067e30
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: d88f9a4c4d0bde58c3093a736a767acc0d2abe33
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27072337"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27345263"
 ---
 # <a name="networksinglesignontype-enum-type"></a>networkSingleSignOnType 列挙型
 
@@ -18,7 +19,7 @@ Wi-fi ネットワーク シングル サインオンの種類の設定です。
 ## <a name="members"></a>メンバー
 |メンバー|値|説明|
 |:---|:---|:---|
-|無効になっています。|0|Disabled|
+|無効になっています。|0|無効|
 |prelogon|1|ログオン前|
 |postlogon|2|ログオン後|
 

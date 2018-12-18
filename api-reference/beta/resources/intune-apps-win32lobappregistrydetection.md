@@ -1,12 +1,13 @@
 ---
 title: win32LobAppRegistryDetection リソースの種類
 description: Win32 アプリケーションを検出するためにレジストリのプロパティが含まれています
-ms.openlocfilehash: d0cab24f2f0eb4d0ad82d60285a4d0aca9ea6dda
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 5adeca1b569531d15657acc2a8960bab60580dc6
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27067533"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27347741"
 ---
 # <a name="win32lobappregistrydetection-resource-type"></a>win32LobAppRegistryDetection リソースの種類
 
@@ -18,10 +19,10 @@ Win32 アプリケーションを検出するためにレジストリのプロ�
 
 [Win32LobAppDetection](../resources/intune-apps-win32lobappdetection.md)から継承します。
 
-## <a name="properties"></a>プロパティ
-|プロパティ|型|説明|
+## <a name="properties"></a>Properties
+|プロパティ|種類|説明|
 |:---|:---|:---|
-|check32BitOn64System|ブール値|このレジストリ パスが 64 ビット システムで 32 ビット アプリケーションをチェックするかどうかを示す値|
+|check32BitOn64System|ブール型|このレジストリ パスが 64 ビット システムで 32 ビット アプリケーションをチェックするかどうかを示す値|
 |キーパス|String|Win32 基幹業務 (LoB) アプリケーションを検出するためにレジストリ キーのパス|
 |値名|String|レジストリ値の名前|
 |detectionType|[win32LobAppRegistryDetectionType](../resources/intune-apps-win32lobappregistrydetectiontype.md)|レジストリ データの検出型です。 使用可能な値: `notConfigured`、`exists`、`doesNotExist`、`string`、`integer`、`version`。|

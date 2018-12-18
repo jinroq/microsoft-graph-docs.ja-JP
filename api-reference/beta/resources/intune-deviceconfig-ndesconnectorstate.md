@@ -1,12 +1,13 @@
 ---
 title: ndesConnectorState 列挙型
 description: Ndes コネクタの現在の状態です。
-ms.openlocfilehash: 30d0f4a6244bcf6d0365f81e00dd55a71acaa8bd
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: e52f1651ab5e829e1ebe3dca77fc5056d17bf13f
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27070647"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27347475"
 ---
 # <a name="ndesconnectorstate-enum-type"></a>ndesConnectorState 列挙型
 

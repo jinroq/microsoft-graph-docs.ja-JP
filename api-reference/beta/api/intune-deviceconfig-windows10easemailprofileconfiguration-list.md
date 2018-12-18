@@ -1,12 +1,13 @@
 ---
 title: リスト windows10EasEmailProfileConfigurations
 description: Windows10EasEmailProfileConfiguration オブジェクトのプロパティと関係を一覧表示します。
-ms.openlocfilehash: 9a5f10e0b57d2fa426434698392fe7741d68fb6b
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 1db881087d6937e4d339c8e88f379d8836f22469
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27069708"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27345424"
 ---
 # <a name="list-windows10easemailprofileconfigurations"></a>リスト windows10EasEmailProfileConfigurations
 

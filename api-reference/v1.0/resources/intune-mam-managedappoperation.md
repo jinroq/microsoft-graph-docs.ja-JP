@@ -1,12 +1,13 @@
 ---
 title: managedAppOperation リソースの種類
 description: アプリ登録に対して適用される操作を表します。
-ms.openlocfilehash: 99d75983acda18e11d7abca667679eb66322dcf5
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: d92c467f1ff5eae403f348deac2cb6c17a3a950d
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27022642"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27345410"
 ---
 # <a name="managedappoperation-resource-type"></a>managedAppOperation リソースの種類
 
@@ -23,7 +24,7 @@ ms.locfileid: "27022642"
 |[Update managedAppOperation](../api/intune-mam-managedappoperation-update.md)|[managedAppOperation](../resources/intune-mam-managedappoperation.md)|[managedAppOperation](../resources/intune-mam-managedappoperation.md) オブジェクトのプロパティを更新します。|
 
 ## <a name="properties"></a>プロパティ
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
 |displayName|String|操作名。|
 |lastModifiedDateTime|DateTimeOffset|アプリ操作が変更された最終時刻。|

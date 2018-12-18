@@ -1,12 +1,13 @@
 ---
 title: notificationMessageTemplate の作成
 description: 新しい notificationMessageTemplate オブジェクトを作成します。
-ms.openlocfilehash: 013acd831979fdbb22eb67be66552b2d21d590b6
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 396d8cbcb312e4bbacc94770e3eceb4a4dc88067
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27074528"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27347629"
 ---
 # <a name="create-notificationmessagetemplate"></a>notificationMessageTemplate の作成
 
@@ -44,9 +45,9 @@ POST /deviceManagement/notificationMessageTemplates
 
 次の表に、notificationMessageTemplate の作成時に必要なプロパティを示します。
 
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
-|id|String|エンティティのキー。|
+|ID|String|エンティティのキー。|
 |lastModifiedDateTime|DateTimeOffset|オブジェクトが最後に変更された DateTime。|
 |displayName|String|通知メッセージ テンプレートの表示名。|
 |defaultLocale|String|要求されたロケールが使用できないときにフォールバックする既定のロケール。|

@@ -1,12 +1,13 @@
 ---
 title: 添付ファイルを追加する
 description: 投稿に添付ファイルを追加するのにには、この API を使用します。 そこから
-ms.openlocfilehash: bf3e58fe8d6131184cac87d3ab4433ba41a18034
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: dkershaw10
+ms.openlocfilehash: 15db2de825bf8f0b8fdc68094672f4f4fc7a9ae5
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27023815"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27346488"
 ---
 # <a name="add-attachment"></a>添付ファイルを追加する
 

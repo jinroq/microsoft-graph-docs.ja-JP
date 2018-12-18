@@ -1,12 +1,13 @@
 ---
 title: windowsMobileMSI リソース タイプ
 description: Windows Mobile MSI 基幹業務アプリケーションのプロパティと継承されたプロパティが含まれます。
-ms.openlocfilehash: 4041dd8e8b43170318507c17ec5edc4986ab2ce2
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 403000833a344eff62b6190d92a842fc89957f2e
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27067742"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27349386"
 ---
 # <a name="windowsmobilemsi-resource-type"></a>windowsMobileMSI リソース タイプ
 
@@ -28,9 +29,9 @@ Windows Mobile MSI 基幹業務アプリケーションのプロパティと継�
 |[Update windowsMobileMSI](../api/intune-apps-windowsmobilemsi-update.md)|[windowsMobileMSI](../resources/intune-apps-windowsmobilemsi.md)|[windowsMobileMSI](../resources/intune-apps-windowsmobilemsi.md) オブジェクトのプロパティを更新します。|
 
 ## <a name="properties"></a>プロパティ
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
-|id|String|エンティティのキー。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|
+|ID|String|エンティティのキー。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|
 |displayName|String|管理者が提供またはインポートしたアプリのタイトル。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|
 |説明|String|アプリの説明。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|
 |publisher|String|アプリの発行元。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|

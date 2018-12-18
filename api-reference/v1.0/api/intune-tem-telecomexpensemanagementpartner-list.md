@@ -1,12 +1,13 @@
 ---
 title: telecomExpenseManagementPartners のリスト
 description: telecomExpenseManagementPartner オブジェクトのプロパティとリレーションシップをリストします。
-ms.openlocfilehash: e71be2fb4975407fc0e1ad272899d2d73f39d861
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 5ef437d2aa8eb6a6f36f10e8951530fba1d5207d
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27020173"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27349393"
 ---
 # <a name="list-telecomexpensemanagementpartners"></a>telecomExpenseManagementPartners のリスト
 

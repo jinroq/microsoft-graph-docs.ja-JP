@@ -1,12 +1,13 @@
 ---
 title: unaryManagementConditionExpression リソースの種類
 description: 単項演算を使用して評価される管理条件式です。
-ms.openlocfilehash: 958c180e52a268f849eca1fe0d2a2b75ff81333b
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 43711e68d88bdf0854e8501377fbf3e30b25b3ec
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27070525"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27344346"
 ---
 # <a name="unarymanagementconditionexpression-resource-type"></a>unaryManagementConditionExpression リソースの種類
 
@@ -18,8 +19,8 @@ ms.locfileid: "27070525"
 
 [ManagementConditionExpressionModel](../resources/intune-fencing-managementconditionexpressionmodel.md)から継承します。
 
-## <a name="properties"></a>プロパティ
-|プロパティ|型|説明|
+## <a name="properties"></a>Properties
+|プロパティ|種類|説明|
 |:---|:---|:---|
 |operator|[unaryManagementConditionExpressionOperatorType](../resources/intune-fencing-unarymanagementconditionexpressionoperatortype.md)|単項演算の評価に使用する演算子です。 使用可能な値: `not`。|
 |オペランド|[managementConditionExpressionModel](../resources/intune-fencing-managementconditionexpressionmodel.md)|単項演算のオペランドです。|

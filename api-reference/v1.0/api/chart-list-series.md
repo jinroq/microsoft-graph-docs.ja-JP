@@ -1,12 +1,13 @@
 ---
 title: List series
 description: chartseries オブジェクトの一覧を取得します。
-ms.openlocfilehash: 7fdf4ff659d793687ca72a2d4dbb3d70febcd1da
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lumine2008
+ms.openlocfilehash: 82a861f655200a4fa961dda665b79a21267dd0db
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27021824"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27345495"
 ---
 # <a name="list-series"></a>List series
 

@@ -1,12 +1,13 @@
 ---
 title: プランナーの REST API を使用します。
 description: Graph でプランナーの API を使用するにはタスクを作成し、Office 365 で、グループ内のユーザーに割り当てます。
-ms.openlocfilehash: b6161218e5d65c96972a8fd5dd929b124d84c949
-ms.sourcegitcommit: 02ead22efd4f10cd50f89c9f5aa3b6dfda96aeec
+author: TarkanSevilmis
+ms.openlocfilehash: a57bdce9c61046d05bc969ff69d31971a85cf537
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/01/2018
-ms.locfileid: "27123967"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27346740"
 ---
 # <a name="use-the-planner-rest-api"></a>プランナーの REST API を使用します。
 
@@ -102,7 +103,7 @@ Planner のリソースは、基本オブジェクトと詳細オブジェクト
 * 新しく作成された A`plannerTask`オブジェクトに対応する、続いて`plannerTaskDetails`オブジェクトです。
 * 新しく作成された A`plannerPlan`オブジェクトに対応する、続いて`plannerPlanDetails`オブジェクトです。
 
-### <a name="usage"></a>使用例
+### <a name="usage"></a>使用方法
 
 呼び出し元は、購読しているオブジェクトが含まれているキャッシュを持つと思われます。 購読しているオブジェクトのローカル キャッシュを設定する方法についての詳細は、[デルタのクエリでオブジェクト キャッシュの作成](#populate-the-object-cache-for-delta-queries)を参照してください。
 

@@ -1,12 +1,13 @@
 ---
 title: Update chartgridlines
 description: chartgridlines オブジェクトのプロパティを更新します。
-ms.openlocfilehash: 80eb40f1d92d46313994b8fe9c6dea566edd4a2d
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lumine2008
+ms.openlocfilehash: db55f639cbe95f80929467b0feefd260a64fc596
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27021541"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27346460"
 ---
 # <a name="update-chartgridlines"></a>Update chartgridlines
 
@@ -36,7 +37,7 @@ PATCH /workbook/worksheets/{id|name}/charts/{name}/axes/seriesAxis/majorGridline
 ## <a name="request-body"></a>要求本文
 要求本文で、更新する関連フィールドの値を指定します。要求本文に含まれない既存のプロパティは、以前の値のままになるか、他のプロパティ値の変化に基づいて再計算されます。最適なパフォーマンスを得るためには、変更されていない既存の値を含めないでください。
 
-| プロパティ     | 型   |説明|
+| プロパティ     | 種類   |説明|
 |:---------------|:--------|:----------|
 |visible|ブール値|軸の目盛線を表示するか非表示にするかを表すブール型の値。|
 

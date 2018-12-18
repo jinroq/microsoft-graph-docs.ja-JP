@@ -1,12 +1,13 @@
 ---
 title: リスト networkManagementConditions
 description: NetworkManagementCondition オブジェクトのプロパティと関係を一覧表示します。
-ms.openlocfilehash: 22fe6885cfa54d74860ecb085477e6f65a153453
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 9d39a9f1d0bf09edaee5180f6c47721ad3aa9b62
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27072992"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27345485"
 ---
 # <a name="list-networkmanagementconditions"></a>リスト networkManagementConditions
 

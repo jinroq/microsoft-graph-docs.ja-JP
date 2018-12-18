@@ -1,12 +1,13 @@
 ---
 title: localizedNotificationMessage の更新
 description: localizedNotificationMessage オブジェクトのプロパティを更新します。
-ms.openlocfilehash: a3dfc54c0bdd65004e98dfc942e58e24ef7238f9
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 117f648b2e8d8172338f00878cc715beac938525
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27021019"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27348826"
 ---
 # <a name="update-localizednotificationmessage"></a>localizedNotificationMessage の更新
 
@@ -42,9 +43,9 @@ PATCH /deviceManagement/notificationMessageTemplates/{notificationMessageTemplat
 
 次の表に、[localizedNotificationMessage](../resources/intune-notification-localizednotificationmessage.md) の作成時に必要なプロパティを示します。
 
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
-|id|String|エンティティのキー。|
+|ID|String|エンティティのキー。|
 |lastModifiedDateTime|DateTimeOffset|オブジェクトの最終更新の DateTime。|
 |locale|String|対象メッセージの送信先ロケール。|
 |subject|String|メッセージ テンプレートの件名。|

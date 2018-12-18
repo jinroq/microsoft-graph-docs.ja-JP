@@ -1,12 +1,13 @@
 ---
 title: managementCertificateWithThumbprint リソースの種類
 description: まだ文書化されていません
-ms.openlocfilehash: 320b6241e1ac5a9078ccc32f99f87e9fd337335e
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 03846890822cae02a2eb04fc058895992119c98a
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27071310"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27348938"
 ---
 # <a name="managementcertificatewiththumbprint-resource-type"></a>managementCertificateWithThumbprint リソースの種類
 
@@ -16,7 +17,7 @@ ms.locfileid: "27071310"
 
 まだ文書化されていません
 ## <a name="properties"></a>プロパティ
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
 |拇印|String|管理証明書の拇印|
 |証明書|String|Base 64 にエンコードされた証明書の管理|

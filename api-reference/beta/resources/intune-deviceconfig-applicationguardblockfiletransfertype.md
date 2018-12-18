@@ -1,12 +1,13 @@
 ---
 title: applicationGuardBlockFileTransferType 列挙型
 description: ApplicationGuardBlockFileTransfer に指定できる値
-ms.openlocfilehash: d7991992c887273b99bc88114b81c8e355d6f357
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: fe1be9b0ceaee5651302b041b6612515557d899e
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27071246"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27347391"
 ---
 # <a name="applicationguardblockfiletransfertype-enum-type"></a>applicationGuardBlockFileTransferType 列挙型
 

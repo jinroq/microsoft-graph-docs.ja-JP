@@ -1,12 +1,13 @@
 ---
 title: notebookLinks リソースの種類
 description: OneNote ノートブックを開くためのリンクです。
-ms.openlocfilehash: 33f9a877ea6cae64acf3f05234362bfb86530c2f
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: Jewan-microsoft
+ms.openlocfilehash: 88ad146dc4b1499882a2605605c5bb725b6ed531
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27067662"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27345235"
 ---
 # <a name="notebooklinks-resource-type"></a>notebookLinks リソースの種類
 
@@ -34,7 +35,7 @@ OneNote ノートブックを開くためのリンクです。
 
 ```
 ## <a name="properties"></a>プロパティ
-| プロパティ     | 型   |説明|
+| プロパティ     | 種類   |説明|
 |:---------------|:--------|:----------|
 |oneNoteClientUrl|[externalLink](externallink.md)|OneNote のネイティブ クライアントでノートブックを開きます (インストールされている場合)。|
 |oneNoteWebUrl|[externalLink](externallink.md)|OneNote Online でノートブックを開きます。|

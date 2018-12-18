@@ -1,12 +1,13 @@
 ---
 title: Get managedAppRegistration
 description: managedAppRegistration オブジェクトのプロパティとリレーションを読み取ります。
-ms.openlocfilehash: c0065b9a50b52f69a224869e18982db984e3659e
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 6ee86c4cee124a86666fb6947aaf89c4732fefd8
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27022352"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27346936"
 ---
 # <a name="get-managedappregistration"></a>Get managedAppRegistration
 

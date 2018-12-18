@@ -1,12 +1,13 @@
 ---
 title: deviceAndAppManagementRoleAssignment の削除
 description: deviceAndAppManagementRoleAssignment を削除します。
-ms.openlocfilehash: 9eca158f8ac6adc79e70ed7969e3b59db2d5cb7f
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: cccc4f95d21b4db8e9275ae5b6c2225bdbdce53d
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27023685"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27346082"
 ---
 # <a name="delete-deviceandappmanagementroleassignment"></a>deviceAndAppManagementRoleAssignment の削除
 

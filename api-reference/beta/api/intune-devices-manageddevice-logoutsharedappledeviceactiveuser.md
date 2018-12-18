@@ -1,12 +1,13 @@
 ---
 title: logoutSharedAppleDeviceActiveUser アクション
 description: 共有の Apple デバイスのアクティブなユーザーをログアウトする
-ms.openlocfilehash: 06a180c1823b33bcc67df789d3d1f9dbf270fbbb
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 5c54bc377f24c0b27f6f5b54e42325bea24851d9
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27073192"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27348763"
 ---
 # <a name="logoutsharedappledeviceactiveuser-action"></a>logoutSharedAppleDeviceActiveUser アクション
 

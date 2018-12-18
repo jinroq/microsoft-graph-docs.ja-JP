@@ -1,12 +1,13 @@
 ---
 title: ratingIrelandMoviesType 列挙型
 description: アイルランドのラベルを規制ムービー
-ms.openlocfilehash: 4b68e20ccdf4be113b27757c1106b32ba9b6fa91
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: bf36790325edfa665f504f161c1de59ebe7c5bbb
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27021191"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27349197"
 ---
 # <a name="ratingirelandmoviestype-enum-type"></a>ratingIrelandMoviesType 列挙型
 

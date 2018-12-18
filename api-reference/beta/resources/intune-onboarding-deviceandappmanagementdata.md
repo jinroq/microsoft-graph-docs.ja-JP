@@ -1,12 +1,13 @@
 ---
 title: deviceAndAppManagementData リソースの種類
 description: エクスポートされたデータ
-ms.openlocfilehash: 5c092e42ebd6e14bdacf10e820fdb024fe056249
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 4b1c8a77f3c293f412c69836afac7b1f28f971aa
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27072609"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27348896"
 ---
 # <a name="deviceandappmanagementdata-resource-type"></a>deviceAndAppManagementData リソースの種類
 
@@ -15,8 +16,8 @@ ms.locfileid: "27072609"
 > **注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
 
 エクスポートされたデータ
-## <a name="properties"></a>プロパティ
-|プロパティ|型|説明|
+## <a name="properties"></a>Properties
+|プロパティ|種類|説明|
 |:---|:---|:---|
 |content|ストリーム|まだ文書化されていません|
 

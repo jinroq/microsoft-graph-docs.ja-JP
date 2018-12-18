@@ -1,12 +1,13 @@
 ---
 title: managedDeviceMobileAppConfigurationUserStatus の作成
 description: 新しい managedDeviceMobileAppConfigurationUserStatus オブジェクトを作成します。
-ms.openlocfilehash: 326078bd431c3ae7846105300b8ea19a53aab2fe
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 9fdd6a55f0a82de852e44e7ffdc0720830659c3b
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27071731"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27345774"
 ---
 # <a name="create-manageddevicemobileappconfigurationuserstatus"></a>managedDeviceMobileAppConfigurationUserStatus の作成
 
@@ -45,9 +46,9 @@ POST /deviceAppManagement/iosLobAppProvisioningConfigurations/{iosLobAppProvisio
 
 次の表に、managedDeviceMobileAppConfigurationUserStatus の作成時に必要なプロパティを示します。
 
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
-|id|String|エンティティのキー。|
+|ID|String|エンティティのキー。|
 |userDisplayName|String|DevicePolicyStatus のユーザー名。|
 |devicesCount|Int32|そのユーザーのデバイスの数。|
 |status|[complianceStatus](../resources/intune-shared-compliancestatus.md)|ポリシー レポートのコンプライアンスの状態。 可能な値は、`unknown`、`notApplicable`、`compliant`、`remediated`、`nonCompliant`、`error`、`conflict`、`notAssigned` です。|

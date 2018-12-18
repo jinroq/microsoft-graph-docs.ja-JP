@@ -1,12 +1,13 @@
 ---
 title: Get userInstallStateSummary
 description: userInstallStateSummary オブジェクトのプロパティとリレーションシップを読み取ります。
-ms.openlocfilehash: b2be719e97ab62116ebe493e8d82e21e5f9e6f57
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 4d0506b9d0e4736479d6bdd70e4176ffd82ea87c
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27021943"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27346607"
 ---
 # <a name="get-userinstallstatesummary"></a>Get userInstallStateSummary
 

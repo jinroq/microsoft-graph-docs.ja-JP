@@ -1,12 +1,13 @@
 ---
 title: networkManagementCondition リソースの種類
 description: ネットワーク管理の条件を定義するための情報が含まれています。
-ms.openlocfilehash: 0a514d079b7b5737c4ee4514920a203d8a4b3ae1
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: d906520d30b78b0acdb1f33d7b4d7046d84c53e1
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27070108"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27347594"
 ---
 # <a name="networkmanagementcondition-resource-type"></a>networkManagementCondition リソースの種類
 
@@ -24,10 +25,10 @@ ms.locfileid: "27070108"
 |[リスト networkManagementConditions](../api/intune-fencing-networkmanagementcondition-list.md)|[networkManagementCondition](../resources/intune-fencing-networkmanagementcondition.md)コレクション|[NetworkManagementCondition](../resources/intune-fencing-networkmanagementcondition.md)オブジェクトのプロパティと関係を一覧表示します。|
 |[NetworkManagementCondition を取得します。](../api/intune-fencing-networkmanagementcondition-get.md)|[networkManagementCondition](../resources/intune-fencing-networkmanagementcondition.md)|[NetworkManagementCondition](../resources/intune-fencing-networkmanagementcondition.md)オブジェクトのプロパティと関係を参照してください。|
 
-## <a name="properties"></a>プロパティ
-|プロパティ|型|説明|
+## <a name="properties"></a>Properties
+|プロパティ|種類|説明|
 |:---|:---|:---|
-|id|String|管理条件の一意の識別子です。 システムでは、作成時に割り当てられた値が生成されます。 [ManagementCondition](../resources/intune-fencing-managementcondition.md)から継承されました。|
+|ID|String|管理条件の一意の識別子です。 システムでは、作成時に割り当てられた値が生成されます。 [ManagementCondition](../resources/intune-fencing-managementcondition.md)から継承されました。|
 |一意な名前|String|管理条件の一意の名前です。 管理条件式で使用されます。 [ManagementCondition](../resources/intune-fencing-managementcondition.md)から継承されました。|
 |displayName|String|管理者は、管理の条件の名前を定義します。 [ManagementCondition](../resources/intune-fencing-managementcondition.md)から継承されました。|
 |説明|String|管理者は、管理状態の説明を定義します。 [ManagementCondition](../resources/intune-fencing-managementcondition.md)から継承されました。|

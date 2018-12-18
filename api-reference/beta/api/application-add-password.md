@@ -1,12 +1,13 @@
 ---
 title: アプリケーションのパスワードを追加します。
 description: 強力なパスワードをアプリケーションに追加します。
-ms.openlocfilehash: 78ccb6cced055ca7f2d2ab201e844a9f50f36939
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lleonard-msft
+ms.openlocfilehash: 88aa499cd478511aacba94c0d28c96592c79a5d5
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27067027"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27348742"
 ---
 # <a name="add-application-password"></a>アプリケーションのパスワードを追加します。
 
@@ -30,7 +31,7 @@ POST /applications/{id}/addPassword
 ```
 
 ## <a name="request-headers"></a>要求ヘッダー
-| 名前       | 型 | 説明|
+| 名前       | 種類 | 説明|
 |:-----------|:------|:----------|
 | Authorization  | string  | ベアラー {トークン}。必須。  |
 

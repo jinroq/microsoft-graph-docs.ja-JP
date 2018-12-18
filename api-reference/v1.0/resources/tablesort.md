@@ -1,12 +1,13 @@
 ---
 title: TableSort リソースの種類
 description: テーブル オブジェクトの並べ替え操作を管理します。
-ms.openlocfilehash: 3696608f13e4a56b71a84bc2d287300e9e54cfb2
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lumine2008
+ms.openlocfilehash: 1d40182fbd92da0022136cb694928397e468d7ac
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27024290"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27346978"
 ---
 # <a name="tablesort-resource-type"></a>TableSort リソースの種類
 
@@ -18,16 +19,16 @@ ms.locfileid: "27024290"
 | メソッド           | 戻り値の型    |説明|
 |:---------------|:--------|:----------|
 |[TableSort を取得する](../api/tablesort-get.md) | [WorkbookTableSort](tablesort.md) |tableSort オブジェクトのプロパティと関係を読み取ります。|
-|[適用](../api/tablesort-apply.md)|なし|並べ替え操作を実行します。|
-|[クリア](../api/tablesort-clear.md)|なし|テーブルに現在設定されている並べ替えをクリアします。これにより表の順序が変更されることはありませんが、ヘッダーのボタンの状態がクリアされます。|
+|[Apply](../api/tablesort-apply.md)|なし|並べ替え操作を実行します。|
+|[Clear](../api/tablesort-clear.md)|なし|テーブルに現在設定されている並べ替えをクリアします。これにより表の順序が変更されることはありませんが、ヘッダーのボタンの状態がクリアされます。|
 |[Reapply](../api/tablesort-reapply.md)|なし|テーブルに、現在の並べ替えパラメーターを再適用します。|
 
 ## <a name="properties"></a>プロパティ
-| プロパティ     | 型   |説明|
+| プロパティ     | 種類   |説明|
 |:---------------|:--------|:----------|
 |fields|[WorkbookSortField](sortfield.md)コレクション|テーブルの最後の並べ替えに使用する現在の条件を表します。読み取り専用です。|
 |matchCase|ブール値|大文字小文字の区別が、テーブルの最後の並べ替え操作に影響を与えたかどうかを表します。読み取り専用です。|
-|method|文字列|中国語の文字が最後にテーブルの並べ替えに使用するメソッドの順序を表します。 可能な値: `PinYin`、 `StrokeCount`。 読み取り専用。|
+|method|string|中国語の文字が最後にテーブルの並べ替えに使用するメソッドの順序を表します。 可能な値: `PinYin`、 `StrokeCount`。 読み取り専用です。|
 
 ## <a name="json-representation"></a>JSON 表記
 

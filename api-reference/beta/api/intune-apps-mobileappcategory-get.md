@@ -1,12 +1,13 @@
 ---
 title: Get mobileAppCategory
 description: mobileAppCategory オブジェクトのプロパティとリレーションシップを読み取ります。
-ms.openlocfilehash: b1b4425c37431c91c86682c3ca301dd1411180e8
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 99ed0bb0159bd39efe417aa66950a13a5d2dbcfe
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27073554"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27349904"
 ---
 # <a name="get-mobileappcategory"></a>Get mobileAppCategory
 

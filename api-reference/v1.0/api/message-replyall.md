@@ -1,12 +1,13 @@
 ---
 title: 'メッセージ: replyAll'
 description: メッセージの受信者すべてに返信します。その後、メッセージは送信済みアイテム フォルダーに保存されます。
-ms.openlocfilehash: ce6ee75912834b14b4a3b5e1d3b03b929f209dfa
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: angelgolfer-ms
+ms.openlocfilehash: cefe4d92d23cb9531f6fa66f74d1c9af87ef429e
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27022914"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27348987"
 ---
 # <a name="message-replyall"></a>メッセージ: replyAll
 
@@ -30,7 +31,7 @@ POST /me/mailFolders/{id}/messages/{id}/replyAll
 POST /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/replyAll
 ```
 ## <a name="request-headers"></a>要求ヘッダー
-| 名前       | 型 | 説明|
+| 名前       | 種類 | 説明|
 |:---------------|:--------|:----------|
 | Authorization  | string  | ベアラー {トークン}。必須。 |
 | Content-Type | string  | エンティティ本文内のデータの性質です。必須。 |
@@ -38,7 +39,7 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/replyAll
 ## <a name="request-body"></a>要求本文
 要求本文で、次のパラメーターを含む JSON オブジェクトを指定します。
 
-| パラメーター    | 型   |説明|
+| パラメーター    | 種類   |説明|
 |:---------------|:--------|:----------|
 |comment|String|含めるコメントです。空の文字列にすることができます。|
 

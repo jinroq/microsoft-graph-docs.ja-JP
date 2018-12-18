@@ -1,12 +1,13 @@
 ---
 title: macOSCompliancePolicy の更新
 description: macOSCompliancePolicy オブジェクトのプロパティを更新します。
-ms.openlocfilehash: 73e6d4d3fb0d24699e22b87dc3489a17e1287bd7
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 412e77f3c0c62f61ce0ab687861dd3cac4931c59
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27071288"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27348379"
 ---
 # <a name="update-macoscompliancepolicy"></a>macOSCompliancePolicy の更新
 
@@ -44,7 +45,7 @@ PATCH /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}
 
 次の表に、[macOSCompliancePolicy](../resources/intune-deviceconfig-macoscompliancepolicy.md) 作成時に必要なプロパティを示します。
 
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
 |roleScopeTagIds|String コレクション|このエンティティ インスタンスのスコープのタグのリストです。 [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md) から継承します|
 |id|String|エンティティのキー。 [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md) から継承します|
@@ -68,9 +69,9 @@ PATCH /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}
 |deviceThreatProtectionRequiredSecurityLevel|[deviceThreatProtectionLevel](../resources/intune-deviceconfig-devicethreatprotectionlevel.md)|Mobile Threat Protection に、コンプライアンス違反をレポートするための最小のリスク レベルを要求します。 可能な値は、`unavailable`、`secured`、`low`、`medium`、`high`、`notSet` です。|
 |storageRequireEncryption|Boolean|Mac OS デバイスでの暗号化を要求します。|
 |gatekeeperAllowedAppSource|[macOSGatekeeperAppSources](../resources/intune-deviceconfig-macosgatekeeperappsources.md)|システムは、macOS のデバイスでどのダウンロード場所のアプリケーションから実行できるかを決定するプライバシー設定。 可能な値は、`notConfigured`、`macAppStore`、`macAppStoreAndIdentifiedDevelopers`、`anywhere` です。|
-|firewallEnabled|Boolean|かどうか、か、これらのファイアウォールは有効にする必要があります。|
-|firewallBlockAllIncoming|Boolean|「すべての着信接続をブロックする] オプションに対応します。|
-|firewallEnableStealthMode|Boolean|「有効にするステルス モード」に対応|
+|firewallEnabled|ブール型|かどうか、か、これらのファイアウォールは有効にする必要があります。|
+|firewallBlockAllIncoming|ブール型|「すべての着信接続をブロックする] オプションに対応します。|
+|firewallEnableStealthMode|ブール型|「有効にするステルス モード」に対応|
 
 
 

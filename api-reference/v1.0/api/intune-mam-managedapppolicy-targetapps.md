@@ -1,12 +1,13 @@
 ---
 title: targetApps アクション
 description: まだ文書化されていません
-ms.openlocfilehash: 532e928dace6f956cbe17865128e5831d845abf4
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: ef8623efc272d4812bb1430bebd41f02effdb2a7
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27023023"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27346096"
 ---
 # <a name="targetapps-action"></a>targetApps アクション
 
@@ -44,7 +45,7 @@ POST /deviceAppManagement/managedAppRegistrations/{managedAppRegistrationId}/int
 
 次の表に、このアクションで使用できるパラメーターを示します。
 
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
 |apps|[managedMobileApp](../resources/intune-mam-managedmobileapp.md) コレクション|まだ文書化されていません|
 

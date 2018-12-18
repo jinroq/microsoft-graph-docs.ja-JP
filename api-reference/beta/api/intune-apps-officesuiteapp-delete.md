@@ -1,12 +1,13 @@
 ---
 title: OfficeSuiteApp を削除します。
 description: OfficeSuiteApp を削除します。
-ms.openlocfilehash: ec34915dac836863ad74fa70fbfac17cc97a694c
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 5abcaa73055109247e0b2a9c8cf1611971bc3f68
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27072363"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27345543"
 ---
 # <a name="delete-officesuiteapp"></a>OfficeSuiteApp を削除します。
 

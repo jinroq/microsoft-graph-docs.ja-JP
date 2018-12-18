@@ -1,12 +1,13 @@
 ---
 title: フォルダー内のメッセージへの増分の変更を取得する
 description: デルタ クエリでは、一連のデルタ関数呼び出しを使用して、フォルダー内のメッセージへの追加、削除、または更新に対してクエリを実行できます。
-ms.openlocfilehash: bae652cc8382ae1b966a24fc4af58f720a2f0c9f
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: piotrci
+ms.openlocfilehash: 4325826ee3d94766fac5bb345d4311bd03b1fb89
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27092401"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27346551"
 ---
 # <a name="get-incremental-changes-to-messages-in-a-folder"></a>フォルダー内のメッセージへの増分の変更を取得する
 

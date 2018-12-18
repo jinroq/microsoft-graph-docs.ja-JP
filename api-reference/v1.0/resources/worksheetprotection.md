@@ -1,12 +1,13 @@
 ---
 title: WorksheetProtection リソースの種類
 description: シート オブジェクトの保護を表します。
-ms.openlocfilehash: aae92566503ce7bdb4a742c33b1a65c43937662c
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lumine2008
+ms.openlocfilehash: 3df3ea522b7d4f476bf09173ed7998e62e9562d7
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27021790"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27344290"
 ---
 # <a name="worksheetprotection-resource-type"></a>WorksheetProtection リソースの種類
 
@@ -22,7 +23,7 @@ ms.locfileid: "27021790"
 |[Unprotect](../api/worksheetprotection-unprotect.md)|なし|ワークシートの保護を解除します。|
 
 ## <a name="properties"></a>プロパティ
-| プロパティ     | 型   |説明|
+| プロパティ     | 種類   |説明|
 |:---------------|:--------|:----------|
 |options|[WorkbookWorksheetProtectionOptions](worksheetprotectionoptions.md)|シートの保護のオプション。読み取り専用。|
 |protected|ブール値|ワークシートが保護されているかどうかを示します。読み取り専用です。|

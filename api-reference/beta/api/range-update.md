@@ -1,12 +1,13 @@
 ---
 title: 範囲を更新する
 description: 範囲オブジェクトのプロパティを更新します。
-ms.openlocfilehash: 462649816075a31c51e89b5fb54320fb9d86830b
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lumine2008
+ms.openlocfilehash: de084bd15ad448d6723b62fde4ea7761e2b5607a
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27071210"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27347433"
 ---
 # <a name="update-range"></a>範囲を更新する
 
@@ -38,7 +39,7 @@ PATCH /workbook/tables/{id|name}/columns/{id|name}/range
 ## <a name="request-body"></a>要求本文
 要求本文で、更新する関連フィールドの値を指定します。要求本文に含まれない既存のプロパティは、以前の値のままになるか、他のプロパティ値の変化に基づいて再計算されます。最適なパフォーマンスを得るためには、変更されていない既存の値を含めないでください。
 
-| プロパティ     | 型   |説明|
+| プロパティ     | 種類   |説明|
 |:---------------|:--------|:----------|
 |columnHidden|ブール値|現在の範囲のすべての列が非表示になっているかどうかを表します。|
 |formulas|json|A1 スタイル表記の数式を表します。|

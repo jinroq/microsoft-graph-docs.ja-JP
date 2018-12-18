@@ -1,12 +1,13 @@
 ---
 title: deviceComplianceSettingState の削除
 description: deviceComplianceSettingState を削除します。
-ms.openlocfilehash: 524793c925f4398cb3fcb594354f7fe907e53e50
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 410cc7593a9c7a1a8bc519d6b9375758e274d25b
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27069755"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27345333"
 ---
 # <a name="delete-devicecompliancesettingstate"></a>deviceComplianceSettingState の削除
 

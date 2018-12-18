@@ -1,12 +1,13 @@
 ---
 title: AndroidPkcsCertificateProfile を削除します。
 description: AndroidPkcsCertificateProfile を削除します。
-ms.openlocfilehash: 5f004aae364f17660fb4db2c7c64f05b42c3eaf5
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 68fb5f34f10906c8ab0d83b0285dffecba3d19bd
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27069136"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27347769"
 ---
 # <a name="delete-androidpkcscertificateprofile"></a>AndroidPkcsCertificateProfile を削除します。
 

@@ -1,12 +1,13 @@
 ---
 title: windowsDomainJoinConfiguration リソースの種類
 description: デバイス構成の Windows ドメインに参加します。
-ms.openlocfilehash: 26ed97579b92735ddff4087bcccbc08f0b988ad3
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 545c69864c2f325fcf6817941191872746304abc
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27070995"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27349358"
 ---
 # <a name="windowsdomainjoinconfiguration-resource-type"></a>windowsDomainJoinConfiguration リソースの種類
 
@@ -27,10 +28,10 @@ ms.locfileid: "27070995"
 |[WindowsDomainJoinConfiguration を削除します。](../api/intune-shared-windowsdomainjoinconfiguration-delete.md)|なし|の[windowsDomainJoinConfiguration](../resources/intune-shared-windowsdomainjoinconfiguration.md)を削除します。|[WindowsDomainJoinConfiguration](../resources/intune-shared-windowsdomainjoinconfiguration.md)オブジェクトを削除します。|
 |[WindowsDomainJoinConfiguration を更新します。](../api/intune-shared-windowsdomainjoinconfiguration-update.md)|[windowsDomainJoinConfiguration](../resources/intune-shared-windowsdomainjoinconfiguration.md)|[WindowsDomainJoinConfiguration](../resources/intune-shared-windowsdomainjoinconfiguration.md)オブジェクトのプロパティを更新します。|
 
-## <a name="properties"></a>プロパティ
-|プロパティ|型|説明|
+## <a name="properties"></a>Properties
+|プロパティ|種類|説明|
 |:---|:---|:---|
-|id|String|エンティティのキー。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
+|ID|String|エンティティのキー。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |**デバイス構成**|
 |activeDirectoryDomainName|String|参加するアクティブなディレクトリ ドメイン名です。|
 |computerNameStaticPrefix|String|コンピューター名に使用するプレフィックスを固定します。|
@@ -41,7 +42,7 @@ ms.locfileid: "27070995"
 |lastModifiedDateTime|DateTimeOffset|オブジェクトが最後に変更された DateTime。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |組織単位|String|組織単位 (OU) のコンピューター アカウントを作成する場所です。 このパラメーターが NULL の場合は、ドメインで公開されている、よく知られているコンピューター オブジェクトのコンテナーが使用されます。|
 |roleScopeTagIds|String コレクション|このエンティティ インスタンスのスコープのタグのリストです。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
-|supportsScopeTags|ブール値|デバイスの構成を基になるスコープのタグの割り当てをサポートしているかどうかを示します。 この値が false であり、エンティティをスコープ指定されたユーザーには表示されませんがある場合、ScopeTags プロパティに割り当てることは許可されていません。 これは、Silverlight で作成されたレガシ ポリシーに対して発生し、削除して、Azure ポータル内のポリシーを再作成することで解決できます。 このプロパティは値の取得のみ可能です。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
+|supportsScopeTags|ブール型|デバイスの構成を基になるスコープのタグの割り当てをサポートしているかどうかを示します。 この値が false であり、エンティティをスコープ指定されたユーザーには表示されませんがある場合、ScopeTags プロパティに割り当てることは許可されていません。 これは、Silverlight で作成されたレガシ ポリシーに対して発生し、削除して、Azure ポータル内のポリシーを再作成することで解決できます。 このプロパティは読み取りのみ可能です。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |version|Int32|デバイス構成のバージョン。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 
 ## <a name="relationships"></a>リレーションシップ

@@ -1,12 +1,13 @@
 ---
 title: termsAndConditionsAcceptanceStatus の作成
 description: 新しい termsAndConditionsAcceptanceStatus オブジェクトを作成します。
-ms.openlocfilehash: 24587f31c4a82348a1c35234153adc03f6ac2ddf
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 4a371d2ac03ef47ad0af4ae70aa248dcd96e4bf0
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27020500"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27348301"
 ---
 # <a name="create-termsandconditionsacceptancestatus"></a>termsAndConditionsAcceptanceStatus の作成
 
@@ -42,9 +43,9 @@ POST /deviceManagement/termsAndConditions/{termsAndConditionsId}/acceptanceStatu
 
 次の表に、termsAndConditionsAcceptanceStatus の作成時に必要なプロパティを示します。
 
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
-|id|String|エンティティの一意識別子。|
+|ID|String|エンティティの一意識別子。|
 |userDisplayName|String|エンティティによって承諾が示されているユーザーの表示名。|
 |acceptedVersion|Int32|ユーザーによって承諾された使用条件の最新バージョン番号。|
 |acceptedDateTime|DateTimeOffset|最後にユーザーによって使用条件が承諾された DateTime。|

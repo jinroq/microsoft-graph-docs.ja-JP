@@ -1,12 +1,13 @@
 ---
 title: WindowsPhone81StoreApp を作成します。
 description: 新しい windowsPhone81StoreApp オブジェクトを作成します。
-ms.openlocfilehash: d937eb98ca1eec2d9b6f8fc562f926bc43c3b356
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 2fe6f1bc2ee2884b5e9ab6251d63a30d2972ef2c
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27072925"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27345921"
 ---
 # <a name="create-windowsphone81storeapp"></a>WindowsPhone81StoreApp を作成します。
 
@@ -44,9 +45,9 @@ POST /deviceAppManagement/mobileApps
 
 次の表は、windowsPhone81StoreApp を作成するときに必要なプロパティを示します。
 
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
-|id|String|エンティティのキー。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|
+|ID|String|エンティティのキー。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|
 |displayName|String|管理者が提供またはインポートしたアプリのタイトル。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|
 |説明|String|アプリの説明。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|
 |publisher|String|アプリの発行元。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|

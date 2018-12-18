@@ -1,12 +1,13 @@
 ---
-title: メンバー
+title: Members
 description: TeamsApp の現在のインストール状態を説明します。
-ms.openlocfilehash: 5413d0b8dd631dd3f35a55e802b0c0bde3740748
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: nkramer
+ms.openlocfilehash: 52da05b61d1ef94f1dbc9b799c53b39049205fb7
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27021784"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27346355"
 ---
 #<a name="teamsappinstalledstate-enum-type"></a>teamsAppInstalledState 列挙型
 

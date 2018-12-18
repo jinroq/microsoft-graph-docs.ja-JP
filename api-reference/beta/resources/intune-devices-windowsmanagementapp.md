@@ -1,12 +1,13 @@
 ---
 title: windowsManagementApp リソースの種類
 description: Windows 管理アプリケーションのエンティティです。
-ms.openlocfilehash: b1c5c673e755f87328574113c4a0b0088c033d0f
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 641538644dc313234e27b0f518a26d8a38c612b7
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27073231"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27346425"
 ---
 # <a name="windowsmanagementapp-resource-type"></a>windowsManagementApp リソースの種類
 
@@ -21,10 +22,10 @@ Windows 管理アプリケーションのエンティティです。
 |[WindowsManagementApp を取得します。](../api/intune-devices-windowsmanagementapp-get.md)|[windowsManagementApp](../resources/intune-devices-windowsmanagementapp.md)|[WindowsManagementApp](../resources/intune-devices-windowsmanagementapp.md)オブジェクトのプロパティと関係を参照してください。|
 |[WindowsManagementApp を更新します。](../api/intune-devices-windowsmanagementapp-update.md)|[windowsManagementApp](../resources/intune-devices-windowsmanagementapp.md)|[WindowsManagementApp](../resources/intune-devices-windowsmanagementapp.md)オブジェクトのプロパティを更新します。|
 
-## <a name="properties"></a>プロパティ
-|プロパティ|型|説明|
+## <a name="properties"></a>Properties
+|プロパティ|種類|説明|
 |:---|:---|:---|
-|id|String|Windows 管理アプリケーションの一意の識別子|
+|ID|String|Windows 管理アプリケーションの一意の識別子|
 |availableVersion|String|Windows 管理アプリケーションの使用可能なバージョンです。|
 
 ## <a name="relationships"></a>リレーションシップ

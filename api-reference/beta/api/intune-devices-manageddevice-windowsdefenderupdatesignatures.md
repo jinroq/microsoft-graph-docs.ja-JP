@@ -1,12 +1,13 @@
 ---
 title: windowsDefenderUpdateSignatures アクション
 description: まだ文書化されていません
-ms.openlocfilehash: 688c50123e51273309dfe09ce13cab78a2458c31
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: b491477b2a16c1e703fc761c542e1bb83b04f8e7
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27069953"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27349484"
 ---
 # <a name="windowsdefenderupdatesignatures-action"></a>windowsDefenderUpdateSignatures アクション
 

@@ -1,12 +1,13 @@
 ---
 title: customSubjectAlternativeName リソースの種類
 description: カスタムのサブジェクトの別名定義
-ms.openlocfilehash: 14d6c24cd5e8c087b81fa51194301da522d169b5
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 5ed3f62cef38340ae7204b98e1fc984ba9bcb9cc
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27070303"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27349316"
 ---
 # <a name="customsubjectalternativename-resource-type"></a>customSubjectAlternativeName リソースの種類
 
@@ -15,8 +16,8 @@ ms.locfileid: "27070303"
 > **注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
 
 カスタムのサブジェクトの別名定義
-## <a name="properties"></a>プロパティ
-|プロパティ|型|説明|
+## <a name="properties"></a>Properties
+|プロパティ|種類|説明|
 |:---|:---|:---|
 |sanType|[subjectAlternativeNameType](../resources/intune-deviceconfig-subjectalternativenametype.md)|SAN のカスタム型です。 可能な値は、`none`、`emailAddress`、`userPrincipalName`、`customAzureADAttribute`、`domainNameService` です。|
 |名前|String|SAN のカスタム名|

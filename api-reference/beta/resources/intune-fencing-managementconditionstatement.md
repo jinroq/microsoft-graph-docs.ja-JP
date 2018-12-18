@@ -1,12 +1,13 @@
 ---
 title: managementConditionStatement リソースの種類
 description: 管理条件ステートメントは、管理の条件が含まれている管理のすべての条件が満たされたときにデバイスとアプリケーションの構成を有効または無効のグループです。
-ms.openlocfilehash: 98b76ce96550d894f8b32f6f6174d5c565e322ae
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: ca0966edd64166479361f42816e36fd278dbc6b1
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27070844"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27347678"
 ---
 # <a name="managementconditionstatement-resource-type"></a>managementConditionStatement リソースの種類
 
@@ -27,9 +28,9 @@ ms.locfileid: "27070844"
 |[getManagementConditionStatementsForPlatform 関数](../api/intune-fencing-managementconditionstatement-getmanagementconditionstatementsforplatform.md)|[managementConditionStatement](../resources/intune-fencing-managementconditionstatement.md)コレクション|まだ文書化されていません|
 
 ## <a name="properties"></a>プロパティ
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
-|id|String|管理条件付きステートメントの一意の識別子です。 システムでは、作成時に割り当てられた値が生成されます。|
+|ID|String|管理条件付きステートメントの一意の識別子です。 システムでは、作成時に割り当てられた値が生成されます。|
 |displayName|String|管理者は、管理条件ステートメントの名前を定義します。|
 |説明|String|管理者は、管理条件付きステートメントの説明を定義します。|
 |createdDateTime|DateTimeOffset|管理条件付きステートメントが作成された時刻。 サービス側が生成されます。|

@@ -1,12 +1,13 @@
 ---
 title: リスト androidTrustedRootCertificates
 description: AndroidTrustedRootCertificate オブジェクトのプロパティと関係を一覧表示します。
-ms.openlocfilehash: c5e0683e46dd24649d80a08aff48e334975ecd1b
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: e03e46c8029014e83aed06c5c9b9327fec37121a
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27070269"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27347776"
 ---
 # <a name="list-androidtrustedrootcertificates"></a>リスト androidTrustedRootCertificates
 

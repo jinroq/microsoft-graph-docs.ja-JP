@@ -1,12 +1,13 @@
 ---
 title: binaryManagementConditionExpressionOperatorType 列挙型
 description: 管理条件式の二項演算子をサポートします。
-ms.openlocfilehash: e1f58715f4e900c30a52bbe7a9db01e45a081d09
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 4b8fb4f1434f222c15bde5fd74261f021d282535
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27074032"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27346957"
 ---
 # <a name="binarymanagementconditionexpressionoperatortype-enum-type"></a>binaryManagementConditionExpressionOperatorType 列挙型
 
@@ -18,7 +19,7 @@ ms.locfileid: "27074032"
 ## <a name="members"></a>メンバー
 |メンバー|値|説明|
 |:---|:---|:---|
-|または|0|1 つ以上のオペランドが true の場合にのみ一連のオペランドが true と評価されました。|
+|or|0|1 つ以上のオペランドが true の場合にのみ一連のオペランドが true と評価されました。|
 |and|1|オペランドのすべてに該当する場合にのみ一連のオペランドが true と評価されました。|
 
 

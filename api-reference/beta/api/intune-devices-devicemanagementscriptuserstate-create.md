@@ -1,12 +1,13 @@
 ---
 title: DeviceManagementScriptUserState を作成します。
 description: 新しい deviceManagementScriptUserState オブジェクトを作成します。
-ms.openlocfilehash: 4d6aba6ae11f2d6250d20524a1e6f47e55bbda2a
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: fbe9c964296854a92e62a86743d06d8577b675f8
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27070352"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27347580"
 ---
 # <a name="create-devicemanagementscriptuserstate"></a>DeviceManagementScriptUserState を作成します。
 
@@ -44,9 +45,9 @@ POST /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/userRu
 
 次の表は、deviceManagementScriptUserState を作成するときに必要なプロパティを示します。
 
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
-|id|String|デバイス管理スクリプト ユーザー状態のエンティティのキーです。|
+|ID|String|デバイス管理スクリプト ユーザー状態のエンティティのキーです。|
 |successDeviceCount|Int32|デバイスの数の特定のユーザーに成功します。|
 |errorDeviceCount|Int32|特定のユーザー エラー デバイスの数。|
 |userPrincipalName|String|特定のユーザーのユーザー プリンシパル名です。|

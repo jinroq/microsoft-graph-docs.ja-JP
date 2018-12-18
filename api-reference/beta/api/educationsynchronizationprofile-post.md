@@ -1,12 +1,13 @@
 ---
 title: EducationSynchronizationProfile を作成します。
 description: 'テナントの新しい学校のデータの同期プロファイルの要求を作成します。 プロファイルの状態を取得する状態を照会します。 '
-ms.openlocfilehash: 0d2c4126ab92e376919ee0b69378754828a924a6
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: mmast-msft
+ms.openlocfilehash: 20c4a7f4dd1512a52bed4a12d1642b8d1138d0e3
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27069260"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27345312"
 ---
 # <a name="create-an-educationsynchronizationprofile"></a>EducationSynchronizationProfile を作成します。
 
@@ -17,7 +18,7 @@ ms.locfileid: "27069260"
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
 
-| アクセス許可の種類 | Permissions |
+| アクセス許可の種類 | アクセス許可 |
 |:-----------|:----------|
 | 委任 (職場または学校のアカウント) | EduAdministration.ReadWrite |
 |(個人用の Microsoft アカウントを委任します。|サポートされていません。|
@@ -30,10 +31,10 @@ POST /synchronizationProfiles
 ```
 
 ## <a name="request-headers"></a>要求ヘッダー
-| 名前       | 型 | 説明|
+| 名前       | 種類 | 説明|
 |:-----------|:------|:----------|
 | Authorization  | string  | ベアラー {トークン}。必須。  |
-| Content-Type | string | アプリケーションまたは json。 必須。 |
+| Content-Type | string | アプリケーションまたは json。 必須です。 |
 
 ## <a name="request-body"></a>要求本文
 要求の本文には、 [educationSynchronizationProfile](../resources/educationsynchronizationprofile.md)オブジェクトの JSON 表現を指定します。

@@ -1,12 +1,13 @@
 ---
 title: mobileAppActionType 列挙型
 description: まだ文書化されていません
-ms.openlocfilehash: 3b1fac9dad84e0d3e620dc193773d382e286bb30
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 1116231da1e4db409ceefd0e3394fc96159149fe
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27071314"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27347419"
 ---
 # <a name="mobileappactiontype-enum-type"></a>mobileAppActionType 列挙型
 

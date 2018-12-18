@@ -1,12 +1,13 @@
 ---
 title: リスト windowsManagedDevices
 description: WindowsManagedDevice オブジェクトのプロパティと関係を一覧表示します。
-ms.openlocfilehash: 541b5c9ca7fb1702e9262c0c9f63573ed57d300b
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 77edfc8bfa5d7deaa958f9eb1088e7a5cf50baba
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27066265"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27349526"
 ---
 # <a name="list-windowsmanageddevices"></a>リスト windowsManagedDevices
 

@@ -1,12 +1,13 @@
 ---
 title: WindowsWifiConfiguration を取得します。
 description: WindowsWifiConfiguration オブジェクトのプロパティと関係を参照してください。
-ms.openlocfilehash: 2906be6fb2ae29eb4d0797634565f96a5994a2ab
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 89a20033e38231dc6ed45918ce58a837ef1cebb9
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27068435"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27349519"
 ---
 # <a name="get-windowswificonfiguration"></a>WindowsWifiConfiguration を取得します。
 

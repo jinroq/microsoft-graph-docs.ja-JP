@@ -1,12 +1,13 @@
 ---
 title: 共有または委任された予定表内の Outlook イベントを取得する
 description: Outlook では、ユーザーが予定表を他のユーザーと共有し、他のユーザーがその予定表でイベントの表示や変更を行うことができます。 また、ユーザーは、会議出席依頼の受信と返信や、予定表項目の作成と変更を自分に代わって実行する代理人を許可することができます。
-ms.openlocfilehash: e05352e164b127adca1305dded5cbb00840eed52
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: angelgolfer-ms
+ms.openlocfilehash: 8ceb6a49b971c5ad01f27b53c0f3cd3cf047865d
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27092433"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27346565"
 ---
 # <a name="get-outlook-events-in-a-shared-or-delegated-calendar"></a>共有または委任された予定表内の Outlook イベントを取得する
 

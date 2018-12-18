@@ -1,12 +1,13 @@
 ---
 title: トレンド ・ リソースの種類
 description: ユーザー (は、ユーザーに関連する) 傾向を示しているドキュメントへのユーザーの接続の豊富な関係です。 OneDrive ファイルでは、チームの SharePoint サイトにファイルを保存できるユーザー傾向があるとします。
-ms.openlocfilehash: 7d240c4358047ca9ba3d6b8340fbfb7d893a6a1d
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: simonhult
+ms.openlocfilehash: ae3c3a876dba6c22a629cce5db8e5b4baa5fb5bf
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27070495"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27348000"
 ---
 # <a name="trending-resource-type"></a>トレンド ・ リソースの種類
 
@@ -20,20 +21,20 @@ ms.locfileid: "27070495"
 |:---------------|:--------|:----------|
 |[リストのトレンド分析](../api/insights-list-trending.md) |[insights_trending](insights-trending.md)コレクション| トレンド ・ ファイルの一覧を取得します。|
 
-## <a name="properties"></a>プロパティ
+## <a name="properties"></a>Properties
 
-| プロパティ      | 型                              | 説明  |
+| プロパティ      | 種類                              | 説明  |
 | ------------- |---------------                    | -------------|
-| id                    | String                    | リレーションシップの一意の識別子です。 読み取り専用です。        |
+| ID                    | String                    | リレーションシップの一意の識別子です。 読み取り専用です。        |
 | weight                | 倍精度浮動小数点数                    | どれだけドキュメントが現在のトレンド分析を示す値です。 大きい番号より文書が現在のトレンド分析ユーザー (関連するほどである)。 返されたドキュメントは、この値で並べ替えられます。  |
 | resourceVisualization | [resourceVisualization](insights-resourcevisualization.md)    | プロパティは、時にドキュメントをビジュアル化を使用することができます。 |
 | resourceReference     | [resourceReference](insights-resourcereference.md)        | トレンド ・ ドキュメント、url、ドキュメントの種類などのプロパティを参照します。 |
 
 ## <a name="relationships"></a>リレーションシップ
 
-| プロパティ      | 型          | 説明  |
+| プロパティ      | 種類          | 説明  |
 | ------------- |---------------| -------------|
-| リソース      | エンティティ        | トレンドのドキュメントに移動するために使用されます。 |
+| リソース      | Entity        | トレンドのドキュメントに移動するために使用されます。 |
 
 ## <a name="json-representation"></a>JSON 表記
 

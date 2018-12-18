@@ -1,12 +1,13 @@
 ---
 title: 教育機関向け API の概要
 description: Microsoft Graph の教育機関向け API は、教育のさまざまなシナリオに関係する情報によって Office 365 のリソースを拡張します。それには、学校、クラス、ユーザー (学生と教師)、課題、および提出に関する情報が含まれます。 これにより、学校やクラスルームのさまざまなシナリオのための教育関連リソースの統合ソリューションを容易に構築できます。
-ms.openlocfilehash: b393591472963b60d706a84f8e10b66e601eaa1a
-ms.sourcegitcommit: 02ead22efd4f10cd50f89c9f5aa3b6dfda96aeec
+author: mmast-msft
+ms.openlocfilehash: 2085c9be619e3de5eb4df457579461445423113a
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/01/2018
-ms.locfileid: "27123939"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27344990"
 ---
 # <a name="education-api-overview"></a>教育機関向け API の概要
 

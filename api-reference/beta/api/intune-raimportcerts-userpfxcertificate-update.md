@@ -1,12 +1,13 @@
 ---
 title: UserPFXCertificate を更新します。
 description: UserPFXCertificate オブジェクトのプロパティを更新します。
-ms.openlocfilehash: 9fde1e8ff073df7acf76119ace0848616424951a
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 48f60d9a11942fee657eebb5c8bbf33e50d24fe9
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27066261"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27347608"
 ---
 # <a name="update-userpfxcertificate"></a>UserPFXCertificate を更新します。
 
@@ -44,9 +45,9 @@ PATCH /deviceManagement/userPfxCertificates/{userPFXCertificateId}
 
 [UserPFXCertificate](../resources/intune-raimportcerts-userpfxcertificate.md)を作成するときに必要なプロパティを次の表に示します。
 
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
-|id|String|PFX 証明書の一意の識別子です。|
+|ID|String|PFX 証明書の一意の識別子です。|
 |拇印|String|PFX 証明書の拇印を sha-1 です。|
 |intendedPurpose|[userPfxIntendedPurpose](../resources/intune-raimportcerts-userpfxintendedpurpose.md)|証明書からのポイントからのビューの展開の目的のものです。 可能な値は、`unassigned`、`smimeEncryption`、`smimeSigning`、`vpn`、`wifi` です。|
 |userPrincipalName|String|PFX 証明書のユーザー プリンシパル名です。|
@@ -55,7 +56,7 @@ PATCH /deviceManagement/userPfxCertificates/{userPFXCertificateId}
 |プロバイダー|String|暗号サービス プロバイダーがこの blob の暗号化に使用します。|
 |キー名|String|(プロバイダー) 内のキーの名前が blob の暗号化に使用します。|
 |paddingScheme|[userPfxPaddingScheme](../resources/intune-raimportcerts-userpfxpaddingscheme.md)|暗号化/復号化中に、プロバイダーによって使用されるスキームをパディングします。 使用可能な値: `none`、`pkcs1`、`oaepSha1`、`oaepSha256`、`oaepSha384`、`oaepSha512`。|
-|encryptedPfxBlob|バイナリ|PFX の暗号化された blob です。|
+|encryptedPfxBlob|Binary|PFX の暗号化された blob です。|
 |encryptedPfxPassword|String|PFX パスワードを暗号化します。|
 |createdDateTime|DateTimeOffset|PFX 証明書がインポートされたときに、日付と時刻。|
 |lastModifiedDateTime|DateTimeOffset|PFX 証明書が最後に修正された日時です。|

@@ -1,12 +1,13 @@
 ---
 title: iosCertificateProfiles のリスト
 description: iosCertificateProfile オブジェクトのプロパティとリレーションシップをリストします。
-ms.openlocfilehash: 3083e6685919bc3f3437af05cd874b05a2c16208
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 59e38a2c587f62c5011e5d801bff13e5cec9b18a
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27070133"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27345284"
 ---
 # <a name="list-ioscertificateprofiles"></a>iosCertificateProfiles のリスト
 

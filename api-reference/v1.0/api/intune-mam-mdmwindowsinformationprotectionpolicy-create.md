@@ -1,12 +1,13 @@
 ---
 title: Create mdmWindowsInformationProtectionPolicy
 description: 新しい mdmWindowsInformationProtectionPolicy オブジェクトを作成します。
-ms.openlocfilehash: 3bbaeb2a445d1e7c48b94e9d019fe57e2aaf02c8
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 54f99110616f466e4a20188cf4a90b4ebfb9a3e7
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27022393"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27349253"
 ---
 # <a name="create-mdmwindowsinformationprotectionpolicy"></a>Create mdmWindowsInformationProtectionPolicy
 
@@ -42,7 +43,7 @@ POST /deviceAppManagement/mdmWindowsInformationProtectionPolicies
 
 次の表に、mdmWindowsInformationProtectionPolicy の作成時に必要なプロパティを示します。
 
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
 |displayName|String|ポリシーの表示名。 [managedAppPolicy](../resources/intune-mam-managedapppolicy.md) から継承します|
 |説明|String|ポリシーの説明。 [managedAppPolicy](../resources/intune-mam-managedapppolicy.md) から継承します|

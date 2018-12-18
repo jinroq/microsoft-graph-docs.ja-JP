@@ -1,12 +1,13 @@
 ---
 title: deviceCompliancePolicyAssignment リソースの種類
 description: デバイス コンプライアンス ポリシーの割り当てです。
-ms.openlocfilehash: 94ba5391db5059ca3386ea600098f66d87716bab
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 7acea29d7eea1066f0105cdda479eed5f7c30e20
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27022873"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27347195"
 ---
 # <a name="devicecompliancepolicyassignment-resource-type"></a>deviceCompliancePolicyAssignment リソースの種類
 
@@ -23,9 +24,9 @@ ms.locfileid: "27022873"
 |[deviceCompliancePolicyAssignment の更新](../api/intune-deviceconfig-devicecompliancepolicyassignment-update.md)|[deviceCompliancePolicyAssignment](../resources/intune-deviceconfig-devicecompliancepolicyassignment.md)|[deviceCompliancePolicyAssignment](../resources/intune-deviceconfig-devicecompliancepolicyassignment.md) オブジェクトのプロパティを更新します。|
 
 ## <a name="properties"></a>プロパティ
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
-|id|String|エンティティのキー。|
+|ID|String|エンティティのキー。|
 |target|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|デバイス コンプライアンス ポリシーの割り当て先です。|
 
 ## <a name="relationships"></a>リレーションシップ

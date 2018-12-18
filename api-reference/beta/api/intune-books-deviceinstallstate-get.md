@@ -1,12 +1,13 @@
 ---
 title: Get deviceInstallState
 description: deviceInstallState オブジェクトのプロパティとリレーションシップを読み取ります。
-ms.openlocfilehash: b2e111b477a4fb7122dd0addf18c167890b2639a
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: a01272118b837460c664e45baeb00948f29a2ad5
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27072377"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27348672"
 ---
 # <a name="get-deviceinstallstate"></a>Get deviceInstallState
 

@@ -1,12 +1,13 @@
 ---
 title: deviceEnrollmentType 列挙型
 description: 管理するモバイル デバイスを追加するための方法です。
-ms.openlocfilehash: adee8eec9908953ab82268e19cf95edfb67ecc39
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 4a7eaa63a59efe756fc2cb7216ddbe7384e4858c
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27071889"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27346985"
 ---
 # <a name="deviceenrollmenttype-enum-type"></a>deviceEnrollmentType 列挙型
 

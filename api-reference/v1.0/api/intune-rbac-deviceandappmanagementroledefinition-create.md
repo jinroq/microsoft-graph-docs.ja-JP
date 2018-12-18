@@ -1,12 +1,13 @@
 ---
 title: deviceAndAppManagementRoleDefinition の作成
 description: 新しい deviceAndAppManagementRoleDefinition オブジェクトを作成します。
-ms.openlocfilehash: 71ac4a42dcf0795ad9e1e26d20be5be09fbf0705
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: ad338b53aa49d140e36754d36a92f1eda4a6000a
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27023577"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27348518"
 ---
 # <a name="create-deviceandappmanagementroledefinition"></a>deviceAndAppManagementRoleDefinition の作成
 
@@ -42,9 +43,9 @@ POST /deviceManagement/roleDefinitions
 
 次の表に、deviceAndAppManagementRoleDefinition の作成時に必要なプロパティを示します。
 
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
-|id|String|エンティティのキー。 これは読み取り専用で、自動生成されます。 [roleDefinition](../resources/intune-rbac-roledefinition.md) から継承します|
+|ID|String|エンティティのキー。 これは読み取り専用で、自動生成されます。 [roleDefinition](../resources/intune-rbac-roledefinition.md) から継承します|
 |displayName|String|ロールの定義の表示名。 [roleDefinition](../resources/intune-rbac-roledefinition.md) から継承します|
 |説明|String|ロールの定義の説明。 [roleDefinition](../resources/intune-rbac-roledefinition.md) から継承します|
 |rolePermissions|[rolePermission](../resources/intune-rbac-rolepermission.md) コレクション|このロールに実行が許可されている、ロールのアクセス許可のリスト。 これらは、rolePermission の一部として定義されている actionName と一致する必要があります。 [roleDefinition](../resources/intune-rbac-roledefinition.md) から継承します|

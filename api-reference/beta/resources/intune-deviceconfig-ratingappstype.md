@@ -1,12 +1,13 @@
 ---
 title: ratingAppsType 列挙型
 description: アプリケーションのメディア ・ コンテンツと評価
-ms.openlocfilehash: 28ace3ba1e21a3f5f0901c926c6b633c8e96f041
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: fa9a70128347201657dfa0d5de6044142b37525d
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27068532"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27345529"
 ---
 # <a name="ratingappstype-enum-type"></a>ratingAppsType 列挙型
 

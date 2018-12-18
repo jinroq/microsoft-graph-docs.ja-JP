@@ -1,12 +1,13 @@
 ---
 title: 呼び出しを作成します。
 description: 新しい呼び出しを作成します。
-ms.openlocfilehash: 863cde971859cf0b2b4eef8f400f3726eeac74d4
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lleonard-msft
+ms.openlocfilehash: b083c9a40fd1376370f7321111c6fbf89d6ee432
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27067437"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27348770"
 ---
 # <a name="create-call"></a>呼び出しを作成します。
 

@@ -1,12 +1,13 @@
 ---
 title: commit アクション
 description: 特定のアプリのファイルをコミットします。
-ms.openlocfilehash: 71096b2dc90ecd214bf6a1fb466e4f926b8c3b1a
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 728cbaeb431fd6f3f9b27b64d118a603bbf9347d
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27020966"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27345438"
 ---
 # <a name="commit-action"></a>commit アクション
 
@@ -42,7 +43,7 @@ POST /deviceAppManagement/mobileApps/{mobileAppId}/contentVersions/{mobileAppCon
 
 次の表に、このアクションで使用できるパラメーターを示します。
 
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
 |fileEncryptionInfo|[fileEncryptionInfo](../resources/intune-apps-fileencryptioninfo.md)|ファイル暗号化情報のパラメーター キーです。|
 

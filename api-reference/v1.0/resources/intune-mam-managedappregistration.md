@@ -1,12 +1,13 @@
 ---
 title: managedAppRegistration リソース タイプ
 description: ManagedAppEntity は、アプリ管理ワークフロー下にある他のすべてのエンティティ タイプの基本型です。
-ms.openlocfilehash: efccea80c953ee4eac07588a21944d10810f8532
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 218a36a283febe646afcc6f9c9bcbd0ed5abf46a
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27020956"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27347790"
 ---
 # <a name="managedappregistration-resource-type"></a>managedAppRegistration リソース タイプ
 
@@ -22,7 +23,7 @@ ManagedAppRegistration リソースは、組織のメンバーに使用される
 |[getUserIdsWithFlaggedAppRegistration function](../api/intune-mam-managedappregistration-getuseridswithflaggedappregistration.md)|String コレクション|まだ文書化されていません|
 
 ## <a name="properties"></a>プロパティ
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
 |createdDateTime|DateTimeOffset|作成日時|
 |lastSyncDateTime|DateTimeOffset|アプリが管理サービスと最後に同期した日付と時刻。|

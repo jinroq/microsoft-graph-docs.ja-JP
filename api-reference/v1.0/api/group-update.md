@@ -1,12 +1,13 @@
 ---
 title: グループを更新する
 description: グループ オブジェクトのプロパティを更新します。
-ms.openlocfilehash: 60adb8b5d5fa075cab0f8255b619cb1f4eeafda4
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: dkershaw10
+ms.openlocfilehash: 11144b477d6a19ae876eed1f561ade4a139564a6
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27023232"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27347405"
 ---
 # <a name="update-group"></a>グループを更新する
 
@@ -32,7 +33,7 @@ PATCH /groups/{id}
 
 ## <a name="request-headers"></a>要求ヘッダー
 
-| 名前       | 型 | 説明|
+| 名前       | 種類 | 説明|
 |:-----------|:------|:----------|
 | Authorization  | string  | ベアラー {トークン}。必須。 |
 
@@ -40,10 +41,10 @@ PATCH /groups/{id}
 
 要求本文で、更新する関連フィールドの値を指定します。要求本文に含まれない既存のプロパティは、以前の値のままになるか、他のプロパティ値の変化に基づいて再計算されます。最適なパフォーマンスを得るためには、変更されていない既存の値を含めないでください。
 
-| プロパティ   | 型 |説明|
+| プロパティ   | 種類 |説明|
 |:---------------|:--------|:----------|
-|allowExternalSenders|ブール値|既定値は **false** です。組織外部のユーザーがグループにメッセージを送信できるかどうかを示します。|
-|autoSubscribeNewMembers|ブール値|既定値は **false** です。グループに追加された新しいメンバーが、電子メールの通知を受信するように自動的にサブスクライブされるかどうかを示します。|
+|allowExternalSenders|Boolean|既定値は **false** です。組織外部のユーザーがグループにメッセージを送信できるかどうかを示します。|
+|autoSubscribeNewMembers|Boolean|既定値は **false** です。グループに追加された新しいメンバーが、電子メールの通知を受信するように自動的にサブスクライブされるかどうかを示します。|
 |説明|String|グループに関するオプションの説明。 |
 |displayName|String|グループの表示名。このプロパティは、グループの作成時の必須プロパティであり、更新時にクリアすることはできません。$filter および $orderby をサポートします。|
 |groupTypes|String collection|作成するグループの種類を指定します。使用可能な値は **Unified** (Office 365 のグループを作成する場合) または **DynamicMembership** (動的なグループを作成する場合) です。その他のグループの種類 (セキュリティが有効なグループやメールが有効なセキュリティ グループなど) の場合、このプロパティは設定しないでください。|
