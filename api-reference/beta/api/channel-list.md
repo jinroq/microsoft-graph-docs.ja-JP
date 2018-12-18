@@ -1,12 +1,13 @@
 ---
 title: チャネルのリスト
 description: このチーム内のチャンネルのリストを取得します。
-ms.openlocfilehash: 024751f0d77889249d2f2dcf6b2bb1f709128db1
-ms.sourcegitcommit: 72d4da2a6bfaf99fa4edaf6ce3b97b1a6d96d874
+author: nkramer
+ms.openlocfilehash: 4a43c1abe07ce3c2e6c0f56c83151e5601f2824c
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/11/2018
-ms.locfileid: "27222542"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27309353"
 ---
 # <a name="list-channels"></a>チャネルのリスト
 

@@ -1,12 +1,13 @@
 ---
 title: auditEvents のリスト
 description: auditEvent オブジェクトのプロパティとリレーションシップをリストします。
-ms.openlocfilehash: 84b92b9d0c4fe520bf734af3472fe40d68510453
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: b4ef3d3993884c045428134c03b5097643b3b171
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27023085"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27309506"
 ---
 # <a name="list-auditevents"></a>auditEvents のリスト
 

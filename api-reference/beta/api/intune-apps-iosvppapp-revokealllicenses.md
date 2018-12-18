@@ -1,12 +1,13 @@
 ---
 title: revokeAllLicenses アクション
 description: VPP は割り当てられているすべて取り消し iOS のアプリケーションが指定されているライセンスです。
-ms.openlocfilehash: 576cbf5b63f9eb1f00a409483a36a483bf0c9892
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 970882bd4195ef0b478790d21f6addc937f9fd50
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27073719"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27309234"
 ---
 # <a name="revokealllicenses-action"></a>revokeAllLicenses アクション
 
@@ -46,9 +47,9 @@ POST /deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/{mobileAppInst
 
 次の表に、このアクションで使用できるパラメーターを示します。
 
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
-|notifyManagedDevices|ブール値|取り消しの通知をデバイスに送信するかどうかであることを示すブール値|
+|notifyManagedDevices|ブール型|取り消しの通知をデバイスに送信するかどうかであることを示すブール値|
 
 
 

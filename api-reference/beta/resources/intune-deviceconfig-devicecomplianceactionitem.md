@@ -1,12 +1,13 @@
 ---
 title: deviceComplianceActionItem リソース タイプ
 description: スケジュール済みのアクションの構成
-ms.openlocfilehash: dc84ee71e6544bf089f3470d607772c2242f7278
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: d2df3b7eaf62c5a50e24f7b64a797b7bb91c2264
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27068541"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27308730"
 ---
 # <a name="devicecomplianceactionitem-resource-type"></a>deviceComplianceActionItem リソース タイプ
 
@@ -25,9 +26,9 @@ ms.locfileid: "27068541"
 |[Update deviceComplianceActionItem](../api/intune-deviceconfig-devicecomplianceactionitem-update.md)|[deviceComplianceActionItem](../resources/intune-deviceconfig-devicecomplianceactionitem.md)|[deviceComplianceActionItem](../resources/intune-deviceconfig-devicecomplianceactionitem.md) オブジェクトのプロパティを更新します。|
 
 ## <a name="properties"></a>プロパティ
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
-|id|String|エンティティのキー。|
+|ID|String|エンティティのキー。|
 |gracePeriodHours|Int32|アクションが実行されるまでの待機時間。 有効な値は 0 から 8760 までです|
 |actionType|[deviceComplianceActionType](../resources/intune-deviceconfig-devicecomplianceactiontype.md)|実行するアクションです。 可能な値は、`noAction`、`notification`、`block`、`retire`、`wipe`、`removeResourceAccessProfiles`、`pushNotification`、`remoteLock` です。|
 |notificationTemplateId|String|使用する通知メッセージ テンプレート|

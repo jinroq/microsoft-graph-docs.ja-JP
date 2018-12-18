@@ -1,12 +1,13 @@
 ---
 title: healthState 列挙型
 description: Windows 管理アプリケーションの稼働状態を示します。
-ms.openlocfilehash: d52b894983795c9cb46d92dce6985e4aab3dd94d
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 831caf85b5beb4c90721aea44054b85d64817c84
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27074275"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27308723"
 ---
 # <a name="healthstate-enum-type"></a>healthState 列挙型
 

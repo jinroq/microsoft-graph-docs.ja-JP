@@ -1,12 +1,13 @@
 ---
 title: TableRow リソースの種類
 description: 表の行を表します。
-ms.openlocfilehash: ca363f8202d61364c609144eaa2fc136ab8b2928
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lumine2008
+ms.openlocfilehash: de83ec8cae87f159c6f1f9687bd093873558c150
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27070552"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27309885"
 ---
 # <a name="tablerow-resource-type"></a>TableRow リソースの種類
 
@@ -22,13 +23,13 @@ ms.locfileid: "27070552"
 |[TableRow を取得する](../api/tablerow-get.md) | [TableRow](tablerow.md) |tableRow オブジェクトのプロパティと関係を読み取ります。|
 |[Update](../api/tablerow-update.md) | [TableRow](tablerow.md)  |TableRow を更新します。 |
 |[Range](../api/tablerow-range.md)|[Range](range.md)|行全体に関連付けられた範囲オブジェクトを返します。|
-|[削除](../api/tablerow-delete.md)|なし|テーブルから行を削除します。|
+|[Delete](../api/tablerow-delete.md)|なし|テーブルから行を削除します。|
 |[List](../api/tablerow-list.md) | [TableRow](tablerow.md) コレクション |tableRow オブジェクトのコレクションを取得します。 |
 |[Itemat](../api/tablerowcollection-itemat.md)|[TableRow](tablerow.md)|コレクション内の位置を基に行を取得します。|
-|[追加](../api/tablerowcollection-add.md)|[TableRow](tablerow.md)|新しい行をテーブルに追加します。|
+|[Add](../api/tablerowcollection-add.md)|[TableRow](tablerow.md)|新しい行をテーブルに追加します。|
 
 ## <a name="properties"></a>プロパティ
-| プロパティ     | 型   |説明|
+| プロパティ     | 種類   |説明|
 |:---------------|:--------|:----------|
 |index|int|テーブルの行コレクション内の行のインデックス番号を返します。0 を起点とする番号になります。読み取り専用。|
 |values|json|指定した範囲の Raw 値を表します。返されるデータの型は、文字列、数値、またはブール値のいずれかになります。エラーが含まれているセルは、エラー文字列を返します。|

@@ -1,12 +1,13 @@
 ---
 title: deviceComplianceUserOverview の更新
 description: deviceComplianceUserOverview オブジェクトのプロパティを更新します。
-ms.openlocfilehash: b00c5576506aad566872dbf3477c643cd411782b
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: b703c5522670641961744cb6b7c3d62f8e46ae69
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27073482"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27310487"
 ---
 # <a name="update-devicecomplianceuseroverview"></a>deviceComplianceUserOverview の更新
 
@@ -44,9 +45,9 @@ PATCH /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/user
 
 次の表に、[deviceComplianceUserOverview](../resources/intune-deviceconfig-devicecomplianceuseroverview.md) の作成時に必要なプロパティを示します。
 
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
-|id|String|エンティティのキー。|
+|ID|String|エンティティのキー。|
 |pendingCount|Int32|保留中のユーザーの数|
 |notApplicableCount|Int32|適用されないユーザーの数|
 |successCount|Int32|成功したユーザーの数|

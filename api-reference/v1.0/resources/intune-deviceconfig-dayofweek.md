@@ -1,12 +1,13 @@
 ---
 title: dayOfWeek 列挙型
 description: 平日に指定できる値
-ms.openlocfilehash: 8a761c141103edab2a21d999b03c63196d60b7fb
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: d133d0f020e4b4e07ed26570569b8c97f7c1e3fb
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27020530"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27309801"
 ---
 # <a name="dayofweek-enum-type"></a>dayOfWeek 列挙型
 

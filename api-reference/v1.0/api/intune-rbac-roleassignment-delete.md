@@ -1,12 +1,13 @@
 ---
 title: Delete roleAssignment
 description: roleAssignment を削除します。
-ms.openlocfilehash: 50f3e42df98ecaa330385c8c78fdc0bffb5f71ae
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 76ad4c0a683c5c51b2895e875e9259860f42e7d1
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27022120"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27309150"
 ---
 # <a name="delete-roleassignment"></a>Delete roleAssignment
 

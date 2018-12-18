@@ -1,12 +1,13 @@
 ---
 title: deviceConfigurationDeviceStatus の作成
 description: 新しい deviceConfigurationDeviceStatus オブジェクトを作成します。
-ms.openlocfilehash: 372cf0454c684723d85422c1c1499debdaef5cf5
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: a43af27a299d131947a1c9d95e6b01e68270f491
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27071964"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27310473"
 ---
 # <a name="create-deviceconfigurationdevicestatus"></a>deviceConfigurationDeviceStatus の作成
 
@@ -52,9 +53,9 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 
 次の表に、deviceConfigurationDeviceStatus の作成時に必要なプロパティを示します。
 
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
-|id|String|エンティティのキー。|
+|ID|String|エンティティのキー。|
 |deviceDisplayName|String|DevicePolicyStatus のデバイス名。|
 |userName|String|レポートされているユーザー名|
 |deviceModel|String|レポートされているデバイス モデル|

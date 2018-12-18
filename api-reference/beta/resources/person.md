@@ -1,12 +1,13 @@
 ---
 title: person リソースの種類
 description: メール、連絡先、ソーシャル ネットワークの間でのユーザーに関する情報を集計します。 ユーザーは、個人用の連絡先、ソーシャル ネットワー キングの連絡先、組織のディレクトリ、およびユーザーの最新の通信 (電子メール、Skype など) を使用できます。
-ms.openlocfilehash: d9533c3550ec870c887b1e447fd0daf114bcfc83
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: simonhult
+ms.openlocfilehash: eccd5da56806b6608f5610579c61a171713990b6
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27066592"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27308555"
 ---
 # <a name="person-resource-type"></a>person リソースの種類
 
@@ -22,29 +23,29 @@ ms.locfileid: "27066592"
 
 ## <a name="properties"></a>プロパティ
 
-| プロパティ | 型 | 説明 |
+| プロパティ | 種類 | 説明 |
 |:---------------|:--------|:----------|
-|birthday|文字列|人物の誕生日。|
-|companyName|文字列|人物の会社名。|
-|department|文字列|人物の部署。|
+|birthday|string|人物の誕生日。|
+|companyName|string|人物の会社名。|
+|department|string|人物の部署。|
 |displayName|string|人物の表示名。|
 |emailAddresses|[rankedEmailAddress](rankedemailaddress.md)コレクション|人物の電子メール アドレス。|
-|givenName|文字列|人物に指定された名前。|
-|id|文字列|人物の一意の識別子。読み取り専用です。|
+|givenName|string|人物に指定された名前。|
+|ID|string|人物の一意の識別子。読み取り専用です。|
 |isFavorite|ブール|ユーザーがこの人物をお気に入りとしてフラグを設定した場合は `true`。|
-|mailboxType|文字列|相手の電子メール アドレスで表されるメールボックスの種類です。|
-|officeLocation|文字列|人物のオフィスの所在地。|
-|personNotes|文字列|ユーザーがこの人物について記入した自由形式のメモ。|
-|personType|文字列|配布リストなど、ユーザーの種類。|
+|mailboxType|string|相手の電子メール アドレスで表されるメールボックスの種類です。|
+|officeLocation|string|人物のオフィスの所在地。|
+|personNotes|string|ユーザーがこの人物について記入した自由形式のメモ。|
+|personType|string|配布リストなど、ユーザーの種類。|
 |phones|[phone](phone.md) コレクション|人物の電話番号。|
 |postalAddresses|[location](location.md) コレクション|人物のアドレス。|
-|profession|文字列|人物の職業。|
+|profession|string|人物の職業。|
 |ソース|[personDataSource](persondatasource.md)コレクション|ソース ユーザー データからのもの、たとえば、ディレクトリ、または Outlook の連絡先です。|
-|surname|文字列|人物の姓。|
+|surname|string|人物の姓。|
 |タイトル|文字列|人のタイトルです。|
-|userPrincipalName|文字列|人物のユーザー プリンシパル名 (UPN)。UPN は、インターネット標準 [RFC 822](https://www.ietf.org/rfc/rfc0822.txt) に基づいた、個人のインターネット スタイルのログイン名です。規則では、これは個人の電子メール名にマップされる必要があります。一般的な書式は alias@domain になります。|
+|userPrincipalName|string|人物のユーザー プリンシパル名 (UPN)。UPN は、インターネット標準 [RFC 822](https://www.ietf.org/rfc/rfc0822.txt) に基づいた、個人のインターネット スタイルのログイン名です。規則では、これは個人の電子メール名にマップされる必要があります。一般的な書式は alias@domain になります。|
 |websites|[website](website.md) コレクション|人物の Web サイト。|
-|yomiCompany|文字列|人物の会社の日本名の読み仮名。|
+|yomiCompany|string|人物の会社の日本名の読み仮名。|
 
 ## <a name="relationships"></a>リレーションシップ
 

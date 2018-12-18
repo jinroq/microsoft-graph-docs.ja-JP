@@ -1,12 +1,13 @@
 ---
 title: ディレクトリの設定を更新します。
 description: 特定のディレクトリの設定オブジェクトのプロパティを更新します。
-ms.openlocfilehash: 71568cdbd2a58bddbd40fffe20616616ff7398eb
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lleonard-msft
+ms.openlocfilehash: c4ff2401397b7a89d30f1513c504acaca5c71140
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27071109"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27308828"
 ---
 # <a name="update-a-directory-setting"></a>ディレクトリの設定を更新します。
 
@@ -39,7 +40,7 @@ PATCH /groups/{id}/settings/{id}
 ## <a name="request-body"></a>要求本文
 要求本文で、更新する関連フィールドの値を指定します。 
 
-| プロパティ     | 型   |説明|
+| プロパティ     | 種類   |説明|
 |:---------------|:--------|:----------|
 | values | settingValue | 更新された値のセットです。注:コレクション セット全体を指定する必要があります。単一の値のセットを更新することはできません。 |
 

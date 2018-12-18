@@ -1,12 +1,13 @@
 ---
 title: iosManagedAppProtection の取得
 description: iosManagedAppProtection オブジェクトのプロパティとリレーションシップを読み取ります。
-ms.openlocfilehash: 2dd50cbc226b7a5c0888d14eeb0f20c3502f2378
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: b913d26ae7022cff368984b65fbbf6eaa85aaad2
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27068794"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27310207"
 ---
 # <a name="get-iosmanagedappprotection"></a>iosManagedAppProtection の取得
 

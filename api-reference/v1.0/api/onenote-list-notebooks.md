@@ -1,12 +1,13 @@
 ---
 title: ノートブックを一覧表示する
 description: ノートブック オブジェクトの一覧を取得します。
-ms.openlocfilehash: 429c02d0032453fc00a7517af32cac8b9d3c66f6
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: Jewan-microsoft
+ms.openlocfilehash: c5925d858b7cbd567b018bd5d8491f2f20b33f66
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27023010"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27309829"
 ---
 # <a name="list-notebooks"></a>ノートブックを一覧表示する
 
@@ -36,7 +37,7 @@ GET /sites/{id}/onenote/notebooks
 ノートブックの有効な `expand` 値は `sections` および `sectionGroups` です。
 
 ## <a name="request-headers"></a>要求ヘッダー
-| 名前       | 型 | 説明|
+| 名前       | 種類 | 説明|
 |:-----------|:------|:----------|
 | Authorization  | string  | ベアラー {トークン}。必須。 |
 | 承諾 | string | `application/json` |

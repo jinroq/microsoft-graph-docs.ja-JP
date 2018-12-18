@@ -1,12 +1,13 @@
 ---
 title: setMobileDeviceManagementAuthority アクション
 description: モバイル デバイス管理権限の設定
-ms.openlocfilehash: 31a0a23362a9d5c19b3022cff1d1567f591655d9
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 87831691b1e1c12d7544f2893c759a28d46617e7
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27066438"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27309899"
 ---
 # <a name="setmobiledevicemanagementauthority-action"></a>setMobileDeviceManagementAuthority アクション
 

@@ -1,12 +1,13 @@
 ---
 title: windowsDeviceADAccount リソースの種類
 description: まだ文書化されていません
-ms.openlocfilehash: f1318f22c9bbb4b89779ddbdf130efbc6b01a7cb
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 58f0e86f6bddb11ffcd9462e1298456ad60f9c7b
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27070314"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27310102"
 ---
 # <a name="windowsdeviceadaccount-resource-type"></a>windowsDeviceADAccount リソースの種類
 
@@ -19,7 +20,7 @@ ms.locfileid: "27070314"
 [windowsDeviceAccount](../resources/intune-devices-windowsdeviceaccount.md) からの継承
 
 ## <a name="properties"></a>プロパティ
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
 |password|文字列|まだ文書化されていない。[windowsDeviceAccount](../resources/intune-devices-windowsdeviceaccount.md) からの継承|
 |domainName|String|まだ文書化されていません|

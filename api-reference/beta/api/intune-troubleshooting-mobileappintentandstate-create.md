@@ -1,12 +1,13 @@
 ---
 title: MobileAppIntentAndState を作成します。
 description: 新しい mobileAppIntentAndState オブジェクトを作成します。
-ms.openlocfilehash: 75ed07d1bc9dfddb914ec3a825cb31b038873cd8
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 590cbb01e8b1f41ce1a1c43be7c3a97872ea737a
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27069416"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27308702"
 ---
 # <a name="create-mobileappintentandstate"></a>MobileAppIntentAndState を作成します。
 
@@ -44,9 +45,9 @@ POST /users/{usersId}/mobileAppIntentAndStates
 
 次の表は、mobileAppIntentAndState を作成するときに必要なプロパティを示します。
 
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
-|id|String|オブジェクトの UUID|
+|ID|String|オブジェクトの UUID|
 |managedDeviceIdentifier|String|Intune によって作成または収集されるデバイス識別子。|
 |userId|String|デバイスを登録しようとするユーザーの識別子。|
 |mobileAppList|[mobileAppIntentAndStateDetail](../resources/intune-troubleshooting-mobileappintentandstatedetail.md)コレクション|ペイロードの目的と、テナントの状態の一覧です。|

@@ -1,12 +1,13 @@
 ---
 title: IntuneBrandingProfile を削除します。
 description: IntuneBrandingProfile を削除します。
-ms.openlocfilehash: dd847330c148ec89c2341771c1d54797e516dbbd
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: dcb76f76528c88afbda800ae03159ac984617181
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27072702"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27308660"
 ---
 # <a name="delete-intunebrandingprofile"></a>IntuneBrandingProfile を削除します。
 

@@ -1,12 +1,13 @@
 ---
 title: 範囲:列
 description: 範囲に含まれる列を 1 つ取得します。
-ms.openlocfilehash: dde991dff164f5abab34c0acccc4127ece76b673
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lumine2008
+ms.openlocfilehash: 6606562be4005528978696e2fe4e23fae991278d
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27072046"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27310165"
 ---
 # <a name="range-column"></a>範囲:列
 
@@ -39,7 +40,7 @@ GET /workbook/tables/{id|name}/columns/{id|name}/range/Column
 ## <a name="request-body"></a>要求本文
 要求本文で、次のパラメーターを含む JSON オブジェクトを指定します。
 
-| パラメーター    | 型   |説明|
+| パラメーター    | 種類   |説明|
 |:---------------|:--------|:----------|
 |列|数値|取得する範囲の列番号。0 を起点とする番号になります。|
 

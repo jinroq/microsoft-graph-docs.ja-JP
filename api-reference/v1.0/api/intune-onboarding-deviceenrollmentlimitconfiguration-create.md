@@ -1,12 +1,13 @@
 ---
 title: deviceEnrollmentLimitConfiguration の作成
 description: 新しい deviceEnrollmentLimitConfiguration オブジェクトを作成します。
-ms.openlocfilehash: f8fe820d63a2e6a5b3393033c49139ad85a4eb06
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 4a3f9230b29fbe78e4a3771812bdfa435b1e2c5f
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27022693"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27310424"
 ---
 # <a name="create-deviceenrollmentlimitconfiguration"></a>deviceEnrollmentLimitConfiguration の作成
 
@@ -42,9 +43,9 @@ POST /deviceManagement/deviceEnrollmentConfigurations
 
 次の表に、deviceEnrollmentLimitConfiguration の作成時に必要なプロパティを示します。
 
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
-|id|String|まだ文書化されていません。[deviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md) から継承します|
+|ID|String|まだ文書化されていません。[deviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md) から継承します|
 |displayName|String|まだ文書化されていません。[deviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md) から継承します|
 |説明|String|まだ文書化されていません。[deviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md) から継承します|
 |priority|Int32|まだ文書化されていません。[deviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md) から継承します|

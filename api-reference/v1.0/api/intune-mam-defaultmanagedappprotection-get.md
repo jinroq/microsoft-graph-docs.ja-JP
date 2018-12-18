@@ -1,12 +1,13 @@
 ---
 title: Get defaultManagedAppProtection
 description: defaultManagedAppProtection オブジェクトのプロパティとリレーションシップを読み取ります。
-ms.openlocfilehash: c6c51fc592534074588dac3bf783637c6dc7b3c2
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 9d2b7a72f4adec0616533092ec8001d89a55dd13
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27022912"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27309465"
 ---
 # <a name="get-defaultmanagedappprotection"></a>Get defaultManagedAppProtection
 

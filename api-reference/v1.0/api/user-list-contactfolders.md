@@ -1,12 +1,13 @@
 ---
 title: contactFolders を一覧表示する　
 description: サインイン中のユーザーの既定の連絡先フォルダー内の連絡先フォルダーのコレクションを取得します。
-ms.openlocfilehash: fa19a848fe206a73503aa27adb258a49cc53baf0
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: dkershaw10
+ms.openlocfilehash: b1f467fa74fa2962efbfc5e02c0de0a45c28ddde
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27020439"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27310529"
 ---
 # <a name="list-contactfolders"></a>contactFolders を一覧表示する　
 

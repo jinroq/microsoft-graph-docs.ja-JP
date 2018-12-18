@@ -1,12 +1,13 @@
 ---
 title: WindowsManagementAppHealthState を更新します。
 description: WindowsManagementAppHealthState オブジェクトのプロパティを更新します。
-ms.openlocfilehash: e333e974e4c6ec52da3044359db5464ce9fa47bc
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 72beed52f76531aacd3ba0c48e350954bd4ac525
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27074008"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27309087"
 ---
 # <a name="update-windowsmanagementapphealthstate"></a>WindowsManagementAppHealthState を更新します。
 
@@ -44,9 +45,9 @@ PATCH /deviceAppManagement/windowsManagementApp/healthStates/{windowsManagementA
 
 [WindowsManagementAppHealthState](../resources/intune-devices-windowsmanagementapphealthstate.md)を作成するときに必要なプロパティを次の表に示します。
 
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
-|id|String|Windows 管理アプリケーションの正常性状態の一意の識別子|
+|ID|String|Windows 管理アプリケーションの正常性状態の一意の識別子|
 |healthState|[healthState](../resources/intune-devices-healthstate.md)|Windows 管理アプリケーションの正常性状態。 可能な値は、`unknown`、`healthy`、`unhealthy` です。|
 |installedVersion|String|Windows 管理アプリケーションは、バージョンをインストールします。|
 |lastCheckInDateTime|DateTimeOffset|Windows 管理アプリケーション最後のチェックインの時間です。|

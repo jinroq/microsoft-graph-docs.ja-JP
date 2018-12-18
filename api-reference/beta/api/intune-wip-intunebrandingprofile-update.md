@@ -1,12 +1,13 @@
 ---
 title: IntuneBrandingProfile を更新します。
 description: IntuneBrandingProfile オブジェクトのプロパティを更新します。
-ms.openlocfilehash: 094de592e0e8d80472f1b0c6ed3d751ac79ba863
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: c4321b0197e30126c4d83371a31425af1d8e73bd
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27073793"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27309948"
 ---
 # <a name="update-intunebrandingprofile"></a>IntuneBrandingProfile を更新します。
 
@@ -44,12 +45,12 @@ PATCH /deviceManagement/intuneBrandingProfiles/{intuneBrandingProfileId}
 
 [IntuneBrandingProfile](../resources/intune-wip-intunebrandingprofile.md)を作成するときに必要なプロパティを次の表に示します。
 
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
-|id|String|プロファイル キー|
+|ID|String|プロファイル キー|
 |profilename プロパティ|String|プロファイルの名前|
 |profileDescription|String|プロファイルの説明|
-|isDefaultProfile|ブール値|既定のプロファイルが使用される場合について説明します。|
+|isDefaultProfile|ブール型|既定のプロファイルが使用される場合について説明します。|
 |createdDateTime|DateTimeOffset|BrandingProfile が作成された日時です。|
 |lastModifiedDateTime|DateTimeOffset|BrandingProfile の最終変更日時。|
 |displayName|String|エンド ユーザーに表示される会社名または組織名。|

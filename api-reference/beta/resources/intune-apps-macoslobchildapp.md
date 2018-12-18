@@ -1,12 +1,13 @@
 ---
 title: macOSLobChildApp リソースの種類
 description: バンドル パッケージに MacOS の LOB アプリケーションのプロパティが含まれています
-ms.openlocfilehash: 6035e77843923eacbce8a1647de241fc79338766
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: e62305ea856d42847b49be306d20bde737152163
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27069898"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27309871"
 ---
 # <a name="macoslobchildapp-resource-type"></a>macOSLobChildApp リソースの種類
 
@@ -15,8 +16,8 @@ ms.locfileid: "27069898"
 > **注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
 
 バンドル パッケージに MacOS の LOB アプリケーションのプロパティが含まれています
-## <a name="properties"></a>プロパティ
-|プロパティ|型|説明|
+## <a name="properties"></a>Properties
+|プロパティ|種類|説明|
 |:---|:---|:---|
 |bundleId|String|ID 名。|
 |buildNumber|String|MacOS の基幹業務 (LoB) アプリケーションのビルド番号です。|

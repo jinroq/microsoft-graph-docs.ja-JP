@@ -1,12 +1,13 @@
 ---
 title: deviceConfigurationDeviceOverview の更新
 description: deviceConfigurationDeviceOverview オブジェクトのプロパティを更新します。
-ms.openlocfilehash: 9c2d2ce687e871bb9b85c78aae9dd69b65e1f00b
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: a6ff0247fbc242aeb230e351e974baaa60f58e55
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27070138"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27308947"
 ---
 # <a name="update-deviceconfigurationdeviceoverview"></a>deviceConfigurationDeviceOverview の更新
 
@@ -52,9 +53,9 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 
 次の表に、[deviceConfigurationDeviceOverview](../resources/intune-deviceconfig-deviceconfigurationdeviceoverview.md) の作成時に必要なプロパティを示します。
 
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
-|id|String|エンティティのキー。|
+|ID|String|エンティティのキー。|
 |pendingCount|Int32|保留中のデバイスの数|
 |notApplicableCount|Int32|該当しないデバイスの数|
 |notApplicablePlatformCount|Int32|一致していないプラットフォームとポリシーが適用されないデバイスの数|

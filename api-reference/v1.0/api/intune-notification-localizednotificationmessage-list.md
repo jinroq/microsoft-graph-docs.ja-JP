@@ -1,12 +1,13 @@
 ---
 title: localizedNotificationMessages のリスト
 description: localizedNotificationMessage オブジェクトのプロパティとリレーションシップをリストします。
-ms.openlocfilehash: c7b23d5b35552497282080e1198c3facbc317315
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 49dfe2e38f3851d565e9462936833cb02caa4806
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27021012"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27309220"
 ---
 # <a name="list-localizednotificationmessages"></a>localizedNotificationMessages のリスト
 

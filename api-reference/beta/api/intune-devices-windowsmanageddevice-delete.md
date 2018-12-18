@@ -1,12 +1,13 @@
 ---
 title: WindowsManagedDevice を削除します。
 description: WindowsManagedDevice を削除します。
-ms.openlocfilehash: 01297cc37b0c60dd25cb98845f9d25e5a56e1b91
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 13960f29fc6317b4b74360b12c9063abddb62906
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27070455"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27310186"
 ---
 # <a name="delete-windowsmanageddevice"></a>WindowsManagedDevice を削除します。
 

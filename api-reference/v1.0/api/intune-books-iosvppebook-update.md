@@ -1,12 +1,13 @@
 ---
 title: iosVppEBook の更新
 description: iosVppEBook オブジェクトのプロパティを更新します。
-ms.openlocfilehash: cc642b6abffe7a813e3b3a2e663db639cd60f119
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: d73542adf39948979e0287be6a566ae8ddb7f829
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27021121"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27309675"
 ---
 # <a name="update-iosvppebook"></a>iosVppEBook の更新
 
@@ -42,9 +43,9 @@ PATCH /deviceAppManagement/managedEBooks/{managedEBookId}
 
 次の表に、[iosVppEBook](../resources/intune-books-iosvppebook.md) の作成時に必要になるプロパティを示します。
 
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
-|id|String|エンティティのキー。 [managedEBook](../resources/intune-books-managedebook.md) から継承します|
+|ID|String|エンティティのキー。 [managedEBook](../resources/intune-books-managedebook.md) から継承します|
 |displayName|String|電子ブックの名前。 [managedEBook](../resources/intune-books-managedebook.md) から継承します|
 |説明|String|説明。 [managedEBook](../resources/intune-books-managedebook.md) から継承します|
 |publisher|String|発行元です。 [managedEBook](../resources/intune-books-managedebook.md) から継承します|

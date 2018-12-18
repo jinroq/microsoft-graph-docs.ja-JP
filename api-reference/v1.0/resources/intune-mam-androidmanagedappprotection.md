@@ -1,12 +1,13 @@
 ---
 title: androidManagedAppProtection リソース タイプ
 description: Android デバイス上の特定のセキュリティ グループおよびアプリの特定のセットを対象とした、管理設定の詳細を構成するために使用するポリシー
-ms.openlocfilehash: 215de0589b2d055bd07a9dd13ba3a014c1d133b5
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 13db6d2185d30feeec8362b83f96b34ed83ffe0c
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27022591"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27309290"
 ---
 # <a name="androidmanagedappprotection-resource-type"></a>androidManagedAppProtection リソース タイプ
 
@@ -26,7 +27,7 @@ Android デバイス上の特定のセキュリティ グループおよびア�
 |[Update androidManagedAppProtection](../api/intune-mam-androidmanagedappprotection-update.md)|[androidManagedAppProtection](../resources/intune-mam-androidmanagedappprotection.md)|[androidManagedAppProtection](../resources/intune-mam-androidmanagedappprotection.md) オブジェクトのプロパティを更新します。|
 
 ## <a name="properties"></a>プロパティ
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
 |displayName|String|ポリシーの表示名。 [managedAppPolicy](../resources/intune-mam-managedapppolicy.md) から継承します|
 |説明|String|ポリシーの説明。 [managedAppPolicy](../resources/intune-mam-managedapppolicy.md) から継承します|

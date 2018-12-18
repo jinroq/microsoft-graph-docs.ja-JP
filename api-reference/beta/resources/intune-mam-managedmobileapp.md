@@ -1,12 +1,13 @@
 ---
 title: managedMobileApp リソースの種類
 description: アプリ展開の識別子。
-ms.openlocfilehash: 9bab1e53ff5fdc6065b1031349823e6ae4fee36c
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: f6cb1c74ef46bd08de695d1447c2b88cfeaee187
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27069430"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27308793"
 ---
 # <a name="managedmobileapp-resource-type"></a>managedMobileApp リソースの種類
 
@@ -25,7 +26,7 @@ ms.locfileid: "27069430"
 |[Update managedMobileApp](../api/intune-mam-managedmobileapp-update.md)|[managedMobileApp](../resources/intune-mam-managedmobileapp.md)|[managedMobileApp](../resources/intune-mam-managedmobileapp.md) オブジェクトのプロパティを更新します。|
 
 ## <a name="properties"></a>プロパティ
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
 |mobileAppIdentifier|[mobileAppIdentifier](../resources/intune-mam-mobileappidentifier.md)|対象のオペレーティング システムの種類のアプリの識別子。|
 |id|String|エンティティのキー。|

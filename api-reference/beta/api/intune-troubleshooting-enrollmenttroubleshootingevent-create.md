@@ -1,12 +1,13 @@
 ---
 title: enrollmentTroubleshootingEvent の作成
 description: 新しい enrollmentTroubleshootingEvent オブジェクトを作成します。
-ms.openlocfilehash: db083e952d6fcbcd67a24ade9ddfbac39a4e46c5
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 213c81a66cca2696083f54a5e0fc4cad28cce9f1
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27074243"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27309913"
 ---
 # <a name="create-enrollmenttroubleshootingevent"></a>enrollmentTroubleshootingEvent の作成
 
@@ -44,9 +45,9 @@ POST /deviceManagement/troubleshootingEvents
 
 次の表に、enrollmentTroubleshootingEvent の作成時に必要なプロパティを示します。
 
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
-|id|String|オブジェクトの UUID。[deviceManagementTroubleshootingEvent](../resources/intune-troubleshooting-devicemanagementtroubleshootingevent.md) から継承|
+|ID|String|オブジェクトの UUID。[deviceManagementTroubleshootingEvent](../resources/intune-troubleshooting-devicemanagementtroubleshootingevent.md) から継承|
 |eventDateTime|DateTimeOffset|インシデントが発生した時間。 [deviceManagementTroubleshootingEvent](../resources/intune-troubleshooting-devicemanagementtroubleshootingevent.md) から継承します|
 |correlationId|String|サービスのエラーをトレースするための ID。 [deviceManagementTroubleshootingEvent](../resources/intune-troubleshooting-devicemanagementtroubleshootingevent.md) から継承します|
 |managedDeviceIdentifier|String|Intune によって作成または収集されるデバイス識別子。|

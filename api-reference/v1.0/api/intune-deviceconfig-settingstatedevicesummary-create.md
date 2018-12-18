@@ -1,12 +1,13 @@
 ---
 title: settingStateDeviceSummary の作成
 description: 新しい settingStateDeviceSummary オブジェクトを作成します。
-ms.openlocfilehash: 8176db0e79e0775ceaa970089942eb3acda1ba37
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 53cccf3ee6cf11daa6cec1697de89eaf7f0a7140
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27023669"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27309577"
 ---
 # <a name="create-settingstatedevicesummary"></a>settingStateDeviceSummary の作成
 
@@ -43,9 +44,9 @@ POST /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/devic
 
 次の表に、settingStateDeviceSummary の作成時に必要なプロパティを示します。
 
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
-|id|String|エンティティのキー。|
+|ID|String|エンティティのキー。|
 |settingName|String|設定の名前|
 |instancePath|String|設定の InstancePath の名前|
 |unknownDeviceCount|Int32|設定の不明なデバイスの数|

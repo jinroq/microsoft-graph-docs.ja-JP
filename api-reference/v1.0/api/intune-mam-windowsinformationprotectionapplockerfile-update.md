@@ -1,12 +1,13 @@
 ---
 title: windowsInformationProtectionAppLockerFile の更新
 description: windowsInformationProtectionAppLockerFile オブジェクトのプロパティを更新します。
-ms.openlocfilehash: c54a29650dc47c5cc6e5e9535ee55846a8e3439b
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: fdf14722d82da5afa2d51cb87b8e8c6ea69b9bf5
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27023158"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27309836"
 ---
 # <a name="update-windowsinformationprotectionapplockerfile"></a>windowsInformationProtectionAppLockerFile の更新
 
@@ -45,11 +46,11 @@ PATCH /deviceAppManagement/mdmWindowsInformationProtectionPolicies/{mdmWindowsIn
 
 次の表に、[windowsInformationProtectionAppLockerFile](../resources/intune-mam-windowsinformationprotectionapplockerfile.md) の作成時に必要なプロパティを示します。
 
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
 |displayName|String|フレンドリ名|
 |fileHash|String|ファイルの SHA256 ハッシュ|
-|file|バイナリ型 (Binary)|バイト配列のファイル|
+|file|Binary|バイト配列のファイル|
 |id|String|エンティティのキー。|
 |version|String|エンティティのバージョン。|
 

@@ -1,12 +1,13 @@
 ---
 title: onenoteEntityBaseModel リソース
 description: これは、OneNote のエンティティの基本型です。
-ms.openlocfilehash: 68a864437cec59d9b5f0d3e69161b49bca80231c
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: Jewan-microsoft
+ms.openlocfilehash: 25e2da6732fd831c6bbec5ae86bddeae7b702aa5
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27021744"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27310466"
 ---
 # <a name="onenoteentitybasemodel-resource"></a>onenoteEntityBaseModel リソース
 
@@ -33,7 +34,7 @@ ms.locfileid: "27021744"
 
 ```
 ## <a name="properties"></a>プロパティ
-| プロパティ     | 型   |説明|
+| プロパティ     | 種類   |説明|
 |:---------------|:--------|:----------|
 |self|String|ページに関する詳細情報を入手できるエンドポイント。読み取り専用です。|
 

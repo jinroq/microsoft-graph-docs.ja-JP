@@ -1,12 +1,13 @@
 ---
 title: Get windowsMobileMSI
 description: windowsMobileMSI オブジェクトのプロパティとリレーションシップを読み取ります。
-ms.openlocfilehash: 736f8c21d657e0b83885a518a001b8265786226d
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: caeb258668c5913abafc488d22eb89cc388f13b4
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27071060"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27310522"
 ---
 # <a name="get-windowsmobilemsi"></a>Get windowsMobileMSI
 

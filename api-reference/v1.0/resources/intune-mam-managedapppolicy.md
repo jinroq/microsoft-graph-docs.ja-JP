@@ -1,12 +1,13 @@
 ---
 title: managedAppPolicy リソースの種類
 description: ManagedAppPolicy リソースは、プラットフォーム特有のポリシーの基本型を表します。
-ms.openlocfilehash: 0cd886e594e58dec3486af6d447969f1610c84fe
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: b1efe085bc2fc43804049ff4b091e10c458b9a98
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27022865"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27310550"
 ---
 # <a name="managedapppolicy-resource-type"></a>managedAppPolicy リソースの種類
 
@@ -21,7 +22,7 @@ ManagedAppPolicy リソースは、プラットフォーム特有のポリシー
 |[targetApps アクション](../api/intune-mam-managedapppolicy-targetapps.md)|なし|まだ文書化されていません|
 
 ## <a name="properties"></a>プロパティ
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
 |displayName|String|ポリシーの表示名。|
 |説明|String|ポリシーの説明。|

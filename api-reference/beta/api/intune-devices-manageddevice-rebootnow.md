@@ -1,12 +1,13 @@
 ---
 title: rebootNow アクション
 description: デバイスを再起動する
-ms.openlocfilehash: 03da8e4781302a11e10f20df2404764e0d0f05a3
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: a90e1b00bb49016cb4085fdce85c77261fc5ddcc
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27073654"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27310459"
 ---
 # <a name="rebootnow-action"></a>rebootNow アクション
 

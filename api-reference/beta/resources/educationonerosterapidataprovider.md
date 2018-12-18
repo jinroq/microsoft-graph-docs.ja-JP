@@ -1,12 +1,13 @@
 ---
 title: educationOneRosterApiDataProvider リソース
 description: OneRoster API は、入力ソースとして使用するときに、学校のデータの同期プロファイルを設定するために使用します。
-ms.openlocfilehash: 0fd9c87c9934fc86d4e6788a5db42eb036fdb04f
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: mmast-msft
+ms.openlocfilehash: 66c79c5e5d5ced4efcd635d2976e83887e545a9f
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27070089"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27309570"
 ---
 # <a name="educationonerosterapidataprovider-resource"></a>educationOneRosterApiDataProvider リソース
 
@@ -16,9 +17,9 @@ ms.locfileid: "27070089"
 
 [EducationSynchronizationDataProvider](educationsynchronizationdataprovider.md)から派生します。
 
-## <a name="properties"></a>プロパティ
+## <a name="properties"></a>Properties
 
-| プロパティ | 型 | 説明 |
+| プロパティ | 種類 | 説明 |
 |:-|:-|:-|
 | **connectionUrl** | String | OneRoster のインスタンスへの接続 URL です。 |
 | **schoolsIds** | String コレクション |  同期するのには学校の sourcedIds のリスト。 |

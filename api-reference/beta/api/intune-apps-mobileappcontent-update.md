@@ -1,12 +1,13 @@
 ---
 title: mobileAppContent の更新
 description: mobileAppContent オブジェクトのプロパティを更新します。
-ms.openlocfilehash: e6db23b831fb41865509b6092e9b14d2eabff960
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 478c01624c7b8bf42b71fa8224b31b38e8f0ae58
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27071725"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27310515"
 ---
 # <a name="update-mobileappcontent"></a>mobileAppContent の更新
 
@@ -46,9 +47,9 @@ PATCH /deviceAppManagement/mobileApps/{mobileAppId}/microsoft.graph.managedMobil
 
 次の表に、[mobileAppContent](../resources/intune-apps-mobileappcontent.md) の作成時に必要なプロパティを示します。
 
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
-|id|String|アプリのコンテンツのバージョン。|
+|ID|String|アプリのコンテンツのバージョン。|
 
 
 

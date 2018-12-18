@@ -1,12 +1,13 @@
 ---
 title: IosVppAppAssignedUserLicense を作成します。
 description: 新しい iosVppAppAssignedUserLicense オブジェクトを作成します。
-ms.openlocfilehash: 0a4bdad168dcb3baa633cf918ac12b6730e7f61b
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 93b92d28a73e253eb598d03d3171318d95d3fd8a
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27072423"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27308982"
 ---
 # <a name="create-iosvppappassigneduserlicense"></a>IosVppAppAssignedUserLicense を作成します。
 
@@ -44,9 +45,9 @@ POST /deviceAppManagement/mobileApps/{mobileAppId}/microsoft.graph.iosVppApp/ass
 
 次の表は、iosVppAppAssignedUserLicense を作成するときに必要なプロパティを示します。
 
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
-|id|String|エンティティのキー。 [IosVppAppAssignedLicense](../resources/intune-apps-iosvppappassignedlicense.md)から継承されました。|
+|ID|String|エンティティのキー。 [IosVppAppAssignedLicense](../resources/intune-apps-iosvppappassignedlicense.md)から継承されました。|
 |userEmailAddress|String|ユーザーの電子メール アドレスです。 [IosVppAppAssignedLicense](../resources/intune-apps-iosvppappassignedlicense.md)から継承されました。|
 |userId|String|ユーザー id。 [IosVppAppAssignedLicense](../resources/intune-apps-iosvppappassignedlicense.md)から継承されました。|
 |userName|String|ユーザー名。 [IosVppAppAssignedLicense](../resources/intune-apps-iosvppappassignedlicense.md)から継承されました。|
