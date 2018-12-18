@@ -1,12 +1,13 @@
 ---
 title: DeviceManagementScript を更新します。
 description: DeviceManagementScript オブジェクトのプロパティを更新します。
-ms.openlocfilehash: d88579f130607b08b0d34620b701be5c239bc03f
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: e0eb397960a9ddae4041578761d5001b729f1464
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27069614"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27325313"
 ---
 # <a name="update-devicemanagementscript"></a>DeviceManagementScript を更新します。
 
@@ -44,17 +45,17 @@ PATCH /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}
 
 [DeviceManagementScript](../resources/intune-devices-devicemanagementscript.md)を作成するときに必要なプロパティを次の表に示します。
 
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
-|id|String|デバイス管理スクリプト用の一意の識別子。|
+|ID|String|デバイス管理スクリプト用の一意の識別子。|
 |displayName|String|デバイスの管理スクリプトの名前です。|
 |説明|String|デバイスの管理スクリプトのオプションの説明です。|
 |runSchedule|[runSchedule](../resources/intune-devices-runschedule.md)|スクリプトを実行する間隔です。 定義されていないスクリプトは実行 1 回|
-|scriptContent|バイナリ|スクリプトの内容。|
+|scriptContent|Binary|スクリプトの内容。|
 |createdDateTime|DateTimeOffset|デバイス管理スクリプトが作成された日時です。|
 |lastModifiedDateTime|DateTimeOffset|日付と時刻、デバイス管理のスクリプトが最後に修正されました。|
 |runAsAccount|[runAsAccountType](../resources/intune-shared-runasaccounttype.md)|デバイス管理のスクリプトで実行される実行コンテキストの種類を示します。 使用可能な値は、`system`、`user` です。|
-|enforceSignatureCheck|ブール値|スクリプト署名をチェックする必要があるかどうかを指定します。|
+|enforceSignatureCheck|ブール型|スクリプト署名をチェックする必要があるかどうかを指定します。|
 |fileName|String|スクリプト ファイルの名前です。|
 
 

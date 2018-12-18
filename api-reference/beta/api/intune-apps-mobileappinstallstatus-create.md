@@ -1,12 +1,13 @@
 ---
 title: MobileAppInstallStatus を作成します。
 description: 新しい mobileAppInstallStatus オブジェクトを作成します。
-ms.openlocfilehash: 5aba88a33b5072f1426878eeaf32a0771ee250b7
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 12dfa8e7f827ef2d2933249a6089d000ef868769
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27070684"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27318110"
 ---
 # <a name="create-mobileappinstallstatus"></a>MobileAppInstallStatus を作成します。
 
@@ -45,9 +46,9 @@ POST /deviceAppManagement/mobileApps/{mobileAppId}/userStatuses/{userAppInstallS
 
 次の表は、mobileAppInstallStatus を作成するときに必要なプロパティを示します。
 
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
-|id|String|エンティティのキー。|
+|ID|String|エンティティのキー。|
 |deviceName|String|デバイス名|
 |deviceId|String|デバイス ID|
 |lastSyncDateTime|DateTimeOffset|前回の同期日時|

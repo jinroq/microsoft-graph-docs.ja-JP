@@ -1,12 +1,13 @@
 ---
 title: uploadDepToken アクション
 description: 新しいデバイスの登録プログラム トークンをアップロードします。
-ms.openlocfilehash: 0230717d84e5d73834f8ce82a73e076f1b2e7142
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 6fc303afa5efb5fab312732c95545b73004660a0
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27070826"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27330647"
 ---
 # <a name="uploaddeptoken-action"></a>uploadDepToken アクション
 
@@ -44,7 +45,7 @@ POST /deviceManagement/depOnboardingSettings/{depOnboardingSettingId}/uploadDepT
 
 次の表に、このアクションで使用できるパラメーターを示します。
 
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
 |appleId|String|まだ文書化されていません|
 |depToken|String|まだ文書化されていません|

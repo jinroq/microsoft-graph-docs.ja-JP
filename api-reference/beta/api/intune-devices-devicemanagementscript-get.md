@@ -1,12 +1,13 @@
 ---
 title: DeviceManagementScript を取得します。
 description: DeviceManagementScript オブジェクトのプロパティと関係を参照してください。
-ms.openlocfilehash: a786b9fc86fbf729f44725d720a8d5808919c1c7
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 830f7f98795333f22eab30655169e954d38ab782
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27072109"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27318894"
 ---
 # <a name="get-devicemanagementscript"></a>DeviceManagementScript を取得します。
 

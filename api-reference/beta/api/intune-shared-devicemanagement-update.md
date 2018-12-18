@@ -1,12 +1,13 @@
 ---
 title: deviceManagement の更新
 description: deviceManagement オブジェクトのプロパティを更新します。
-ms.openlocfilehash: 7f73d3fc944dcbc36709cd7f1b46e61bca271152
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 1808c18fd5e305871e0be2e47def97938384488c
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27069050"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27323766"
 ---
 # <a name="update-devicemanagement"></a>deviceManagement の更新
 
@@ -66,12 +67,12 @@ PATCH /deviceManagement
 
 次の表に、[deviceManagement](../resources/intune-shared-devicemanagement.md) の作成時に必要なプロパティを示します。
 
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
-|id|String|デバイスの一意の識別子です。|
+|ID|String|デバイスの一意の識別子です。|
 |**デバイス構成**|
 |intuneAccountId|GUID|Intune アカウント ID にはテナントが指定されました。|
-|legacyPcManangementEnabled|ブール値|非 MDM を有効にするプロパティは、このアカウントの従来の PC の管理を管理します。 このプロパティは値の取得のみ可能です。|
+|legacyPcManangementEnabled|ブール型|非 MDM を有効にするプロパティは、このアカウントの従来の PC の管理を管理します。 このプロパティは読み取りのみ可能です。|
 |maximumDepTokens|Int32|DEP のトークンの最大数では、テナントごとに許可されます。|
 |settings|[deviceManagementSettings](../resources/intune-deviceconfig-devicemanagementsettings.md)|アカウント レベルの設定。|
 |**デバイスの管理**|

@@ -1,12 +1,13 @@
 ---
 title: revokeUserLicense アクション
 description: Revoke が割り当てられている iOS VPP ユーザー ライセンスは、アプリケーションを指定します。
-ms.openlocfilehash: 0222623ba5e1f3de0122a632a3ea9554bbd2c0ea
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 94d8dff027421d5b3b1c763439dbcf4ec3d2391f
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27067284"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27332810"
 ---
 # <a name="revokeuserlicense-action"></a>revokeUserLicense アクション
 
@@ -46,10 +47,10 @@ POST /deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/{mobileAppInst
 
 次の表に、このアクションで使用できるパラメーターを示します。
 
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
 |userId|String|ユーザー Id が割り当てられているアプリケーションのライセンスを失効させるのには相手|
-|notifyManagedDevices|ブール値|取り消しの通知をデバイスに送信するかどうかであることを示すブール値|
+|notifyManagedDevices|ブール型|取り消しの通知をデバイスに送信するかどうかであることを示すブール値|
 
 
 

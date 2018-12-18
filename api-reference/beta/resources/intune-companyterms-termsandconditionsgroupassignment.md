@@ -1,12 +1,13 @@
 ---
 title: termsAndConditionsGroupAssignment リソースの種類
 description: C) を指定されたグループのポリシーです。 グループ内のユーザーは、デバイスを Intune に登録するためには使用条件に同意する必要があります。
-ms.openlocfilehash: 071cd73ba36aaab74c7f5c36522c03014711286e
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 044d82e00e2da81c59de5cdb26b9441da351db8a
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27072083"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27327616"
 ---
 # <a name="termsandconditionsgroupassignment-resource-type"></a>termsAndConditionsGroupAssignment リソースの種類
 
@@ -24,10 +25,10 @@ TermsAndConditionsGroupAssignment エンティティは、指定された条項�
 |[TermsAndConditionsGroupAssignment を削除します。](../api/intune-companyterms-termsandconditionsgroupassignment-delete.md)|なし|の[termsAndConditionsGroupAssignment](../resources/intune-companyterms-termsandconditionsgroupassignment.md)を削除します。|
 |[TermsAndConditionsGroupAssignment を更新します。](../api/intune-companyterms-termsandconditionsgroupassignment-update.md)|[termsAndConditionsGroupAssignment](../resources/intune-companyterms-termsandconditionsgroupassignment.md)|[TermsAndConditionsGroupAssignment](../resources/intune-companyterms-termsandconditionsgroupassignment.md)オブジェクトのプロパティを更新します。|
 
-## <a name="properties"></a>プロパティ
-|プロパティ|型|説明|
+## <a name="properties"></a>Properties
+|プロパティ|種類|説明|
 |:---|:---|:---|
-|id|String|エンティティの一意識別子。|
+|ID|String|エンティティの一意識別子。|
 |targetGroupId|String|T & C のポリシーが割り当てられているグループの一意の識別子です。|
 
 ## <a name="relationships"></a>リレーションシップ

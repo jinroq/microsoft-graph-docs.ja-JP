@@ -1,12 +1,13 @@
 ---
 title: onenoteOperation リソースの種類
 description: OneNote の特定の長時間操作の状態。
-ms.openlocfilehash: 913562abf1d2f644bd621268c93768c7500f4399
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: Jewan-microsoft
+ms.openlocfilehash: bbb7b9457ce5a3d7ba9faf45d893ae86cdfd8b32
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27024190"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27326909"
 ---
 # <a name="onenoteoperation-resource-type"></a>onenoteOperation リソースの種類
 
@@ -37,16 +38,16 @@ OneNote の特定の長時間操作の状態。
 
 ```
 ## <a name="properties"></a>プロパティ
-| プロパティ     | 型   |説明|
+| プロパティ     | 種類   |説明|
 |:---------------|:--------|:----------|
 |createdDateTime| DateTimeOffset |操作の開始時刻です。|
 |error|[onenoteOperationError](onenoteoperationerror.md)|操作によって返されるエラーです。|
-|ID|文字列|操作 ID です。読み取り専用です。|
+|ID|string|操作 ID です。読み取り専用です。|
 |lastActionDateTime| DateTimeOffset |操作の最後の操作の時間です。|
-|resourceId|文字列|リソース ID。|
-|resourceLocation|文字列|オブジェクトのリソース URI。たとえば、コピーしたページまたはセクションのリソース URI。 |
-|status|文字列|操作の現在の状態: `notstarted`、`running`、`completed`、`failed` |
-|percentComplete|文字列|操作がまだ `running` の状態の場合の操作達成率。
+|resourceId|string|リソース ID。|
+|resourceLocation|string|オブジェクトのリソース URI。たとえば、コピーしたページまたはセクションのリソース URI。 |
+|status|string|操作の現在の状態: `notstarted`、`running`、`completed`、`failed` |
+|percentComplete|string|操作がまだ `running` の状態の場合の操作達成率。
 
 ## <a name="relationships"></a>リレーションシップ
 なし

@@ -1,12 +1,13 @@
 ---
 title: チームのクローンを作成します。
 description: チームのコピーを作成します。 この操作では、対応するグループのコピーも作成します。
-ms.openlocfilehash: 8cd6c580db9aa77f87a31bdb9b2878ed9e580e61
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: nkramer
+ms.openlocfilehash: 21671ccbe440a57f6d745f9587c09b4432e25c35
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27020676"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27321834"
 ---
 # <a name="clone-a-team"></a>チームのクローンを作成します。
 
@@ -50,7 +51,7 @@ POST /teams/{id}/clone
 
 ## <a name="request-body"></a>要求本文
 
-| プロパティ     | 型   |説明|
+| プロパティ     | 種類   |説明|
 |:---------------|:--------|:----------|
 |分類|文字列 (省略可能)|(低、中、または高のビジネス ・ インパクト) などのグループの分類について説明します。 分類を指定しない場合、分類は、元のチームまたはグループからコピーされます。|
 |description|文字列 (省略可能)|グループに関するオプションの説明。 このプロパティを指定しない場合、空白のままにします。|

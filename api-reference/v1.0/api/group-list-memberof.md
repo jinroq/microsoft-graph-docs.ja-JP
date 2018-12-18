@@ -1,12 +1,13 @@
 ---
 title: memberOf を一覧表示する
 description: 'グループが直接メンバーであるグループを取得します。 '
-ms.openlocfilehash: 9733fd1bc2def3642913887a228275744e17b61c
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: dkershaw10
+ms.openlocfilehash: 5cd563c8697a0d93ca2d11c42b3b8c19b0ce7ec9
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27021806"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27323584"
 ---
 # <a name="list-memberof"></a>memberOf を一覧表示する
 グループが直接メンバーであるグループを取得します。 
@@ -32,7 +33,7 @@ GET /groups/{id}/memberOf
 このメソッドは、応答をカスタマイズするための [OData クエリ パラメーター](/graph/query-parameters)をサポートします。
 
 ## <a name="request-headers"></a>要求ヘッダー
-| 名前       | 型 | 説明|
+| 名前       | 種類 | 説明|
 |:-----------|:------|:----------|
 | Authorization  | string  | ベアラー {トークン}。必須。 |
 

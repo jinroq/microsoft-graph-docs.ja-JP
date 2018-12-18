@@ -1,12 +1,13 @@
 ---
 title: Microsoft Graph データ接続の開始 (プレビュー)
 description: 'Microsoft Graph データ接続を使用する前に、Office 365 管理者は 2 つの処理を行う必要があります。どちらも、管理者が Privileged Access Management (PAM) を通じてデータ移動を制御する機能を有効にします。 '
-ms.openlocfilehash: eb21f0d850f64694514c0ecd82f03de687606a56
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: ajacks-msft
+ms.openlocfilehash: 1cd8d5734b0fd8b48df8a49fe0a833583c21148d
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27092381"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27312083"
 ---
 # <a name="get-started-with-microsoft-graph-data-connect-preview"></a>Microsoft Graph データ接続の開始 (プレビュー)
 

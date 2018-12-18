@@ -1,12 +1,13 @@
 ---
 title: operatingSystemVersionRange リソースの種類
 description: オペレーティング システムのバージョンの範囲です。
-ms.openlocfilehash: af140bf2a5d889b66d45460465e47c466bb2160b
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: b853e71b2d8f66d24122afb51cea97fc6a8f8d7e
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27068533"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27331165"
 ---
 # <a name="operatingsystemversionrange-resource-type"></a>operatingSystemVersionRange リソースの種類
 
@@ -15,8 +16,8 @@ ms.locfileid: "27068533"
 > **注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
 
 オペレーティング システムのバージョンの範囲です。
-## <a name="properties"></a>プロパティ
-|プロパティ|型|説明|
+## <a name="properties"></a>Properties
+|プロパティ|種類|説明|
 |:---|:---|:---|
 |説明|String|この範囲 (有効 1702 のビルドなど) の説明|
 |lowestVersion|String|最小包括的なバージョンをこの範囲に含まれています。|

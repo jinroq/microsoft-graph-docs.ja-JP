@@ -1,12 +1,13 @@
 ---
 title: settingStateDeviceSummary の更新
 description: settingStateDeviceSummary オブジェクトのプロパティを更新します。
-ms.openlocfilehash: 18d4687714893b862bbd89f5d72f4018f5ef9a11
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 531b8f80aff08e2b8e4faa1444ecc0b264d39a4d
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27023022"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27323591"
 ---
 # <a name="update-settingstatedevicesummary"></a>settingStateDeviceSummary の更新
 
@@ -43,9 +44,9 @@ PATCH /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/devi
 
 次の表に、[settingStateDeviceSummary](../resources/intune-deviceconfig-settingstatedevicesummary.md) の作成時に必要なプロパティを示します。
 
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
-|id|String|エンティティのキー。|
+|ID|String|エンティティのキー。|
 |settingName|String|設定の名前|
 |instancePath|String|設定の InstancePath の名前|
 |unknownDeviceCount|Int32|設定の不明なデバイスの数|

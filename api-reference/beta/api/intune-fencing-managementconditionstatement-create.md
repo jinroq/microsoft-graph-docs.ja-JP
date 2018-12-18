@@ -1,12 +1,13 @@
 ---
 title: ManagementConditionStatement を作成します。
 description: 新しい managementConditionStatement オブジェクトを作成します。
-ms.openlocfilehash: a01d0233eff9d22b3174a8aa7bd382b9a1266ac2
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 5402faee0c7ace84957f3ff6a2ef65844f5a527e
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27067539"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27327350"
 ---
 # <a name="create-managementconditionstatement"></a>ManagementConditionStatement を作成します。
 
@@ -45,9 +46,9 @@ POST /deviceManagement/managementConditions/{managementConditionId}/managementCo
 
 次の表は、managementConditionStatement を作成するときに必要なプロパティを示します。
 
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
-|id|String|管理条件付きステートメントの一意の識別子です。 システムでは、作成時に割り当てられた値が生成されます。|
+|ID|String|管理条件付きステートメントの一意の識別子です。 システムでは、作成時に割り当てられた値が生成されます。|
 |displayName|String|管理者は、管理条件ステートメントの名前を定義します。|
 |説明|String|管理者は、管理条件付きステートメントの説明を定義します。|
 |createdDateTime|DateTimeOffset|管理条件付きステートメントが作成された時刻。 サービス側が生成されます。|

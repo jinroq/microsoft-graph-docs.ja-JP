@@ -1,18 +1,18 @@
 ---
-title: Outlook メッセージを作成して送信する
+title: メッセージの作成、送信、処理の自動化
 description: Microsoft Graph では、メールは message リソースで表されます。
-ms.openlocfilehash: 49670df0d5d735e412a0fd97e3404fab044f6f50
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.openlocfilehash: 9eba9e04426bdf1339d9ae287c1cf085bcf3b500
+ms.sourcegitcommit: f3d479edf03935d0edbbc7668a65f7cde2a56c92
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27092474"
+ms.lasthandoff: 12/15/2018
+ms.locfileid: "27283690"
 ---
-# <a name="create-and-send-outlook-messages"></a>Outlook メッセージを作成して送信する
+# <a name="automate-creating-sending-and-processing-messages"></a>メッセージの作成、送信、処理の自動化
 
 Microsoft Graph では、メールは [message](/graph/api/resources/message?view=graph-rest-1.0) リソースで表されます。
 
-既定で、メッセージは **id** プロパティの一意のエントリ ID で識別されます。 ストア プロバイダーは、メッセージが最初に下書きとして保存されるか送信されるときに、メッセージにエントリ ID を割り当てます。 この ID は、メッセージを別のフォルダー、ストア、または .PST ファイルにコピーしたり移動したりすると、変更されます。
+既定で、メッセージは **id** プロパティの一意のエントリ ID で識別されます。 ストア プロバイダーは、メッセージが最初に作成されて、下書きとして保存されるか送信されるときに、そのメッセージにエントリ ID を割り当てます。 既定でこの ID は、メッセージを別のフォルダー、ストア、.PST ファイルにコピーしたり移動したりすると、変更されます。 今後の処理のために、メッセージは現在の ID で参照されます。
 
 ## <a name="creating-and-sending-mail"></a>メールの作成と送信
 
@@ -22,20 +22,43 @@ Outlook では、同じ [sendMail](/graph/api/user-sendmail?view=graph-rest-1.0)
 
 下書きと送信済みメッセージをプログラムで区別するには、**isDraft** プロパティを確認します。
 
-既定では、下書きメッセージは `Drafts` フォルダーに保存され、送信済みメッセージは `Sent Items` フォルダーに保存されます。 利便性のため、Drafts フォルダーと SentItems フォルダーを、それぞれに対応する[わかりやすいフォルダー名](/graph/api/resources/mailfolder?view=graph-rest-1.0)で指定することもできます。 たとえば、次のようにして Drafts フォルダー内の[メッセージを取得](/graph/api/user-list-messages?view=graph-rest-1.0)できます。
+既定では、下書きメッセージは `Drafts` フォルダーに保存され、送信済みメッセージは `Sent Items` フォルダーに保存されます。 利便性のため、Drafts フォルダーと SentItems フォルダーを、それぞれに対応する[わかりやすいフォルダー名](/graph/api/resources/mailfolder?view=graph-rest-1.0)で指定することもできます。 
 
+### <a name="setting-the-from-and-sender-properties"></a>from プロパティと sender プロパティの設定
+
+メッセージの作成中、Outlook はたいてい **from** プロパティと **sender** プロパティを同じサインイン ユーザーに設定しています。 次のシナリオでは、これらのプロパティを更新できます。
+
+- **From** プロパティは、Exchange 管理者がメールボックスの **SendAs** 権限を他のユーザーに割り当てた場合には変更が可能です。管理者は、Azure ポータルでメールボックス所有者の **メールボックスのアクセス許可** を選択するか、Exchange 管理センターまたは Windows PowerShell Add-ADPermission コマンドレットを使用してこれを行えます。その後、プログラムを使用して、**From** プロパティを、対象メールボックスの **SendAs** 権限を持ついずれかのユーザーに自動的に設定できます。
+- **sender** プロパティは、メールボックス所有者が 1 人以上のユーザーにそのメールボックスからメッセージを送信する権限を委任すると、変更できます。 メールボックス所有者は、Outlook で委任できます。 代理人がメールボックス所有者に代わってメッセージを送信する場合、Outlook は **sender** プロパティを代理人のアカウントに設定し、**from** プロパティはメールボックス所有者のままになります。 プログラムを使用して、対象メールボックスの委任アクセス許可を取得したユーザーに **sender** プロパティを設定することができます。
+
+## <a name="using-mailtips-to-check-recipient-status-and-save-time-preview"></a>MailTips を使用して受信者の状態を確認し、時間を節約する (プレビュー)
+
+[MailTips](/graph/api/resources/mailtips?view=graph-rest-beta) を使用すると、メールを送信する前にスマートに意思決定できます。
+MailTips を使用すると、受信者のメールボックスが特定の送信者のみに制限されているかどうかや、その受信者にメールを送信するには承認が必要かなどの情報を取得できます。
+
+
+## <a name="reading-messages-with-control-over-the-body-format-returned"></a>返される本文の形式を制御したメッセージの読み取り
+
+ID を参照してメールボックス内の[メッセージを読み取る](/graph/api/message-get?view=graph-rest-1.0)ことができます。
+
+<!-- {
+  "blockType": "ignored",
+  "sampleKeys": ["AAMkADhMGAAA="]
+}-->
+```http
+GET /me/messages/AAMkADhMGAAA=
+```
+
+または、特定のフォルダー内の[メッセージを取得する](/graph/api/user-list-messages?view=graph-rest-1.0)ことができます。 たとえば、サインインしたユーザーの下書きフォルダーにあるメッセージを読み取るには、以下を行います。
+
+<!-- { "blockType": "ignored" } -->
 ```http
 GET /me/mailfolders('Drafts')
 ```
 
-### <a name="body-format-and-malicious-script"></a>本文の形式と悪意のあるスクリプト
+Outlook メッセージの本文には、HTML 形式かテキスト形式を使用できます。GET 応答で返される既定のメッセージ本文の種類は HTML 形式です。
 
-<!-- Remove the following 2 sections from the message.md topics
--->
-
-メッセージ本文には、HTML 形式かテキスト形式を使用できます。GET 応答で返される既定のメッセージ本文の種類は HTML 形式です。
-
-[メッセージを取得](/graph/api/message-get?view=graph-rest-1.0)する際に、次の要求ヘッダーで、**body** プロパティと **uniqueBody** プロパティがテキスト形式で返されるように指定できます。
+メッセージを取得する際に、次の要求ヘッダーで、**body** プロパティと **uniqueBody** プロパティがテキスト形式で返されるように指定できます。
 
 ```http
 Prefer: outlook.body-content-type="text"
@@ -60,18 +83,6 @@ Prefer: outlook.body-content-type="html"
 Prefer: outlook.allow-unsafe-html
 ```
 
-### <a name="differentiating-the-from-and-sender-properties"></a>from プロパティと sender プロパティの区別
-
-メッセージの作成中、Outlook はたいてい **from** プロパティと **sender** プロパティを同じサインイン ユーザーに設定しています。 次のシナリオでは、これらのプロパティを更新できます。
-
-- **From** プロパティは、Exchange 管理者がメールボックスの **SendAs** 権限を他のユーザーに割り当てた場合には変更が可能です。管理者は、Azure ポータルでメールボックス所有者の **メールボックスのアクセス許可** を選択するか、Exchange 管理センターまたは Windows PowerShell Add-ADPermission コマンドレットを使用してこれを行えます。その後、プログラムを使用して、**From** プロパティを、対象メールボックスの **SendAs** 権限を持ついずれかのユーザーに自動的に設定できます。
-- **sender** プロパティは、メールボックス所有者が 1 人以上のユーザーにそのメールボックスからメッセージを送信する権限を委任すると、変更できます。 メールボックス所有者は、Outlook で委任できます。 代理人がメールボックス所有者に代わってメッセージを送信する場合、Outlook は **sender** プロパティを代理人のアカウントに設定し、**from** プロパティはメールボックス所有者のままになります。 プログラムを使用して、対象メールボックスの委任アクセス許可を取得したユーザーに **sender** プロパティを設定することができます。
-
-## <a name="using-mailtips-to-check-recipient-status-and-save-time-preview"></a>MailTips を使用して受信者の状態を確認し、時間を節約する (プレビュー)
-
-[MailTips](/graph/api/resources/mailtips?view=graph-rest-beta) を使用すると、メールを送信する前にスマートに意思決定できます。
-MailTips を使用すると、受信者のメールボックスが特定の送信者のみに制限されているかどうかや、その受信者にメールを送信するには承認が必要かなどの情報を取得できます。
-
 ## <a name="integrating-with--social-gesture-preview"></a>@ ソーシャル ジェスチャとの統合 (プレビュー)
 
 @ メンションとは、それらがメッセージに含まれている場合にユーザーに警告する通知のことです。 [mention](/graph/api/resources/mention?view=graph-rest-beta) リソースを使用すると、メールに含まれる一般的なオンライン ソーシャル ジェスチャである @ プレフィックスを、アプリで設定および取得できます。
@@ -95,4 +106,5 @@ Microsoft Graph エンティティ間で共有されている次の一般的な�
 詳細情報:
 
 - [Outlook メールと統合する理由](outlook-mail-concept-overview.md)
-- Microsoft Graph v1.0 の[メール API](/graph/api/resources/mail-api-overview?view=graph-rest-1.0) とその[用途](/graph/api/resources/mail-api-overview?view=graph-rest-1.0#common-use-cases)
+- [Outlook リソースの不変 ID の取得 (プレビュー)](outlook-immutable-id.md)
+- Microsoft Graph v1.0 の[メール API](/graph/api/resources/mail-api-overview?view=graph-rest-1.0) とその[用途](/graph/api/resources/mail-api-overview?view=graph-rest-1.0#common-use-cases)。

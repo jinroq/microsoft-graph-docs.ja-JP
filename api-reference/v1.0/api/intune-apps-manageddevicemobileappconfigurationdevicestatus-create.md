@@ -1,12 +1,13 @@
 ---
 title: ManagedDeviceMobileAppConfigurationDeviceStatus を作成します。
 description: 新しい managedDeviceMobileAppConfigurationDeviceStatus オブジェクトを作成します。
-ms.openlocfilehash: 5f939c43b9c277842bed93118e05a8dd52400179
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 8a9b709104119622b2555c2a05548789de134363
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27021621"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27318038"
 ---
 # <a name="create-manageddevicemobileappconfigurationdevicestatus"></a>ManagedDeviceMobileAppConfigurationDeviceStatus を作成します。
 
@@ -42,9 +43,9 @@ POST /deviceAppManagement/mobileAppConfigurations/{managedDeviceMobileAppConfigu
 
 次の表は、managedDeviceMobileAppConfigurationDeviceStatus を作成するときに必要なプロパティを示します。
 
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
-|id|String|エンティティのキー。|
+|ID|String|エンティティのキー。|
 |deviceDisplayName|String|DevicePolicyStatus のデバイス名。|
 |userName|String|レポートされているユーザー名|
 |deviceModel|String|レポートされているデバイス モデル|

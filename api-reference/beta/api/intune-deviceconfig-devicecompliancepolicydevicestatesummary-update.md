@@ -1,12 +1,13 @@
 ---
 title: deviceCompliancePolicyDeviceStateSummary の更新
 description: deviceCompliancePolicyDeviceStateSummary オブジェクトのプロパティを更新します。
-ms.openlocfilehash: 045c9ac7aaecac535f3c4d04f587c74cbe84f442
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: d7955abf7919259c52f6f709a18a654efe6703d2
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27070135"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27321848"
 ---
 # <a name="update-devicecompliancepolicydevicestatesummary"></a>deviceCompliancePolicyDeviceStateSummary の更新
 
@@ -44,7 +45,7 @@ PATCH /deviceManagement/deviceCompliancePolicyDeviceStateSummary
 
 次の表に、[deviceCompliancePolicyDeviceStateSummary](../resources/intune-deviceconfig-devicecompliancepolicydevicestatesummary.md) の作成時に必要なプロパティを示します。
 
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
 |inGracePeriodCount|Int32|解約猶予期間内のデバイスの数|
 |configManagerCount|Int32|System Center Configuration Manager によってコンプライアンスが管理されているデバイスの数|

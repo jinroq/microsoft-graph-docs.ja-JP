@@ -1,12 +1,13 @@
 ---
 title: domainDnsSrvRecord リソースの種類
 description: テナント内の特定のドメインの DNS ゾーン ファイルに追加された SRV レコードを表します。DomainDnsRecord エンティティから継承されます。
-ms.openlocfilehash: 1fd1123866d1674aec167de8bec8ef9a45be8d99
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lleonard-msft
+ms.openlocfilehash: d8fbdb6a99e2a4c88b38d350ace3976842eb7f92
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27022020"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27318824"
 ---
 # <a name="domaindnssrvrecord-resource-type"></a>domainDnsSrvRecord リソースの種類
 
@@ -16,9 +17,9 @@ ms.locfileid: "27022020"
 このリソースへの直接クエリはサポートされていません。ドメイン サービス レコードのクエリを実行する方法の詳細については、[ドメイン](domain.md)のトピックを参照してください。
 
 ## <a name="properties"></a>プロパティ
-| プロパティ     | 型   |説明|
+| プロパティ     | 種類   |説明|
 |:---------------|:--------|:----------|
-|id|String| このエンティティに割り当てられた一意の識別子。null 許容ではありません。読み取り専用です。|
+|ID|String| このエンティティに割り当てられた一意の識別子。null 許容ではありません。読み取り専用です。|
 |isOptional|Boolean| False の場合、SRV レコードは Microsoft オンライン サービスでドメインを正しく操作するために、DNS ホストで顧客によって構成されている必要があります。 |
 |label|String| DNS ホストで SRV レコードの *name* プロパティを構成する場合に使用される値です。 |
 |nameTarget|String| DNS ホストで SRV レコードの *Target* プロパティを構成する場合に使用する値です。 |

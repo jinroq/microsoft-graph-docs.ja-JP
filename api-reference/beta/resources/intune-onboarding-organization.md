@@ -1,12 +1,13 @@
 ---
 title: 組織リソースの種類
 description: organization リソースは、グローバル設定インスタンスと、テナント レベルで操作およびプロビジョニングされるリソースを表わします。
-ms.openlocfilehash: e7e49e5676e412ea0e174b2e158b98efea8e0c7c
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 447ad5bb87c3c5783ba9097097fbc08281442a0b
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27070115"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27323430"
 ---
 # <a name="organization-resource-type"></a>組織リソースの種類
 
@@ -24,9 +25,9 @@ organization リソースは、グローバル設定インスタンスと、テ�
 |[setMobileDeviceManagementAuthority アクション](../api/intune-onboarding-organization-setmobiledevicemanagementauthority.md)|Int32|モバイル デバイス管理権限の設定|
 
 ## <a name="properties"></a>プロパティ
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
-|id|String|オブジェクトの GUID。|
+|ID|String|オブジェクトの GUID。|
 |mobileDeviceManagementAuthority|[mdmAuthority](../resources/intune-onboarding-mdmauthority.md)|モバイル デバイス管理権限。 可能な値は、`unknown`、`intune`、`sccm`、`office365` です。|
 |certificateConnectorSetting|[certificateConnectorSetting](../resources/intune-onboarding-certificateconnectorsetting.md)|コネクタ証明書の設定です。|
 

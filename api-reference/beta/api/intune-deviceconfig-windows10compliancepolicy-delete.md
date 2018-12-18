@@ -1,12 +1,13 @@
 ---
 title: Delete windows10CompliancePolicy
 description: windows10CompliancePolicy を削除します。
-ms.openlocfilehash: e26504d3b410fe4b9dfeb9206b7deb4436a151b5
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 4a42d28e9f4d8a0cc0d8558974abb56cf37c0454
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27072810"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27318488"
 ---
 # <a name="delete-windows10compliancepolicy"></a>Delete windows10CompliancePolicy
 

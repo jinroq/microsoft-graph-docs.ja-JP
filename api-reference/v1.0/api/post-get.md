@@ -1,12 +1,13 @@
 ---
 title: 投稿を取得する
 description: '指定したスレッド内の投稿のプロパティと関係を取得します。 両方の親を指定することができます。 '
-ms.openlocfilehash: d9f697ac45bf0a817334bdcfd46febc74f10e107
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: dkershaw10
+ms.openlocfilehash: f21f2a55e3bf456030131a2b14a6d9db5739a43f
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27020294"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27320308"
 ---
 # <a name="get-post"></a>投稿を取得する
 

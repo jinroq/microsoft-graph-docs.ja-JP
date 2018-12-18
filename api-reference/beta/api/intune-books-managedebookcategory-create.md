@@ -1,12 +1,13 @@
 ---
 title: ManagedEBookCategory を作成します。
 description: 新しい managedEBookCategory オブジェクトを作成します。
-ms.openlocfilehash: 8750e8c520e3a48b2da93d05b9f701c7760b6a15
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: dffb100162817db8ac733b8520dc0f026fb2b9f8
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27072855"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27325362"
 ---
 # <a name="create-managedebookcategory"></a>ManagedEBookCategory を作成します。
 
@@ -45,9 +46,9 @@ POST /deviceAppManagement/managedEBooks/{managedEBookId}/categories
 
 次の表は、managedEBookCategory を作成するときに必要なプロパティを示します。
 
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
-|id|String|エンティティのキー。|
+|ID|String|エンティティのキー。|
 |displayName|String|EBook カテゴリの名前です。|
 |lastModifiedDateTime|DateTimeOffset|日付と時刻、ManagedEBookCategory が最後に修正されました。|
 

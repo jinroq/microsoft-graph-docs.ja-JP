@@ -1,12 +1,13 @@
 ---
 title: Microsoft Graph で OneNote API を使用する場合のベスト プラクティス
 description: この記事では、Microsoft Graph で OneNote API を使用するための推奨事項を提供します。 これらの推奨事項は、Stack Overflow と Twitter でよく寄せられる質問への回答に基づいています。
-ms.openlocfilehash: d7135b09c11150181a479b6b9a00ab11247de11c
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: Jewan-microsoft
+ms.openlocfilehash: f02976424ea39935e38d45b7eb2f80ba66319c7e
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27092463"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27332166"
 ---
 # <a name="best-practices-for-working-with-the-onenote-api-in-microsoft-graph"></a>Microsoft Graph で OneNote API を使用する場合の推奨事項
 

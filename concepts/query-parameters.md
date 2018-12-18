@@ -1,12 +1,13 @@
 ---
 title: クエリ パラメーターを使用して応答をカスタマイズする
 description: Microsoft Graph にはオプションのクエリ パラメーターがあり、応答で返されるデータの量を指定したり制御したりするために使用できます。次のクエリ パラメーターがサポートされています。
-ms.openlocfilehash: b79192a028be278ab38dc28f1d9d913b3bcb7209
-ms.sourcegitcommit: 9f953e0c4cd624ba31919bfd5e82bf3e33cb9e21
+author: piotrci
+ms.openlocfilehash: 6cdc4ce0f502e941e24a6197e7ba4b65cac13b20
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/13/2018
-ms.locfileid: "27245107"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27311838"
 ---
 # <a name="use-query-parameters-to-customize-responses"></a>クエリ パラメーターを使用して応答をカスタマイズする
 

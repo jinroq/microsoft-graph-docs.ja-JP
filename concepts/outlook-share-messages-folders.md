@@ -1,12 +1,13 @@
 ---
 title: 共有または委任されたフォルダー内の Outlook メッセージを取得する
 description: イベントの一覧表示、イベントの取得、予定表の取得、連絡先の一覧表示、連絡先の取得、連絡先フォルダーの各トピックにも、同様のセクションがあります。
-ms.openlocfilehash: d9e04527879cb32f14dc8d74a814a54150c5b2d0
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: angelgolfer-ms
+ms.openlocfilehash: d90fa5d37fd7a07e4069bd5bcc0eb46f0cae29a6
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27092454"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27320112"
 ---
 # <a name="get-outlook-messages-in-a-shared-or-delegated-folder"></a>共有または委任されたフォルダー内の Outlook メッセージを取得する
 

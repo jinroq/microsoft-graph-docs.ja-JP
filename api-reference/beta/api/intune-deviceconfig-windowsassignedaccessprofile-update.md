@@ -1,12 +1,13 @@
 ---
 title: WindowsAssignedAccessProfile を更新します。
 description: WindowsAssignedAccessProfile オブジェクトのプロパティを更新します。
-ms.openlocfilehash: bbe3aab584ff19af07728d4ebe594238ef8439f9
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 84cbc1aaaebf9383c3d113d7f309c61de0cdeb67
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27068771"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27331361"
 ---
 # <a name="update-windowsassignedaccessprofile"></a>WindowsAssignedAccessProfile を更新します。
 
@@ -44,11 +45,11 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 
 [WindowsAssignedAccessProfile](../resources/intune-deviceconfig-windowsassignedaccessprofile.md)を作成するときに必要なプロパティを次の表に示します。
 
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
-|id|String|エンティティのキー。|
+|ID|String|エンティティのキー。|
 |profilename プロパティ|String|これは、[スタート] メニューの [このプレゼンテーションの構成が割り当てられているユーザーにこれらのアプリケーションのレイアウト、アプリケーションのグループを識別するために使用するフレンドリ名です。|
-|showTaskBar|ブール値|この設定では、タスク バーを表示するかどうかを指定するのには管理ができます。|
+|showTaskBar|ブール型|この設定では、タスク バーを表示するかどうかを指定するのには管理ができます。|
 |appUserModelIds|String コレクション|これらは、[スタート] メニューから起動できる唯一の Windows ストア アプリです。|
 |desktopAppPaths|String コレクション|これらは、[スタート] メニューで利用可能なデスクトップ アプリケーションのパスと、唯一のアプリケーション、ユーザーが起動できるようです。|
 |ユーザー アカウント|String コレクション|この構成にキオスクがロックアウトされているユーザー アカウントです。|

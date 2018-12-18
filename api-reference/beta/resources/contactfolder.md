@@ -1,12 +1,13 @@
 ---
 title: contactFolder リソース型
 description: 連絡先が格納されたフォルダーです。
-ms.openlocfilehash: 3e9916d70a23c8acd4b1da2ee8f7e2df4c408e41
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: angelgolfer-ms
+ms.openlocfilehash: 93b4586272e3e762cf182bddc489326503411c84
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27070830"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27325642"
 ---
 # <a name="contactfolder-resource-type"></a>contactFolder リソース型
 
@@ -36,12 +37,12 @@ ms.locfileid: "27070830"
 |[複数値の拡張プロパティを持つ contactFolder を取得する](../api/multivaluelegacyextendedproperty-get.md)  | [contactFolder](contactfolder.md) | `$expand` を使用して、複数値の拡張プロパティを含む contactFolder を取得します。 |
 
 ## <a name="properties"></a>プロパティ
-| プロパティ     | 型   |説明|
+| プロパティ     | 種類   |説明|
 |:---------------|:--------|:----------|
 |displayName|String|フォルダーの表示名。|
 |id|String|連絡先フォルダーの一意識別子。読み取り専用。|
 |parentFolderId|String|フォルダーの親フォルダーの ID。|
-|wellKnownName|文字列|フォルダーが認識されているフォルダーである場合、フォルダーの名前。現在、認識されている連絡先フォルダーは `contacts` のみです。|
+|wellKnownName|string|フォルダーが認識されているフォルダーである場合、フォルダーの名前。現在、認識されている連絡先フォルダーは `contacts` のみです。|
 
 ## <a name="relationships"></a>リレーションシップ
 | リレーションシップ | 型   |説明|

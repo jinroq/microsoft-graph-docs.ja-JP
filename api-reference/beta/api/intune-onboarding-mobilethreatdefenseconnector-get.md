@@ -1,12 +1,13 @@
 ---
 title: mobileThreatDefenseConnector の取得
 description: mobileThreatDefenseConnector オブジェクトのプロパティとリレーションシップを読み取ります。
-ms.openlocfilehash: 7b63cdd7fc9476ad36f8bf249e0b5a358414b9fc
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 07e0d8fc3a66f941925bb5a36ae7093abe2368b5
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27072529"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27318670"
 ---
 # <a name="get-mobilethreatdefenseconnector"></a>mobileThreatDefenseConnector の取得
 

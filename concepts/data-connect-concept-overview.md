@@ -1,12 +1,13 @@
 ---
 title: Microsoft Graph データ接続の概要 (プレビュー)
 description: Microsoft Graph には、作業方法、コミュニケーション方法、共同作業方法、時間管理方法に関する情報を含む、従業員とその職場に関するリッチ データが含まれています。 Microsoft Graph データ接続によってこのデータが Microsoft Azure に移動されることで、ユーザーがこのデータの操作に最適な開発およびホスティング ツールを使用できるようになります。 これにより、Microsoft Graph データに対する完全なコントロールを維持したまま、生産性を向上させる、革新的な業界固有のアプリケーションを活用することができます。 Microsoft は、お客様が期待する、より安全なコントロールを提供しています。
-ms.openlocfilehash: cce6046c9ed9b57171e998b1cb17c4e92fa0fcb5
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: ajacks-msft
+ms.openlocfilehash: 4f621dc40f99ec7b827ecb5cec61d6c2916b7ada
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27092446"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27323374"
 ---
 # <a name="overview-of-microsoft-graph-data-connect-preview"></a>Microsoft Graph データ接続の概要 (プレビュー)
 Microsoft Graph には、作業方法、コミュニケーション方法、共同作業方法、時間管理方法に関する情報を含む、従業員とその職場に関するリッチ データが含まれています。 Microsoft Graph データ接続によってこのデータが Microsoft Azure に移動されることで、ユーザーがこのデータの操作に最適な開発およびホスティング ツールを使用できるようになります。 これにより、Microsoft Graph データに対する完全なコントロールを維持したまま、生産性を向上させる、革新的な業界固有のアプリケーションを活用することができます。 Microsoft は、お客様が期待する、より安全なコントロールを提供しています。

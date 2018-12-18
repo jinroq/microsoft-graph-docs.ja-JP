@@ -1,12 +1,13 @@
 ---
 title: editionUpgradeLicenseType 列挙型
 description: エディションのアップグレードのライセンスの種類
-ms.openlocfilehash: d199c1cd128c4d95926009cd93538f4d56b2b223
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: bfaa9cd53e27cedd99026991537e27db9cfbf209
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27071774"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27318397"
 ---
 # <a name="editionupgradelicensetype-enum-type"></a>editionUpgradeLicenseType 列挙型
 

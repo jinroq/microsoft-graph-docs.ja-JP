@@ -1,12 +1,13 @@
 ---
 title: EmbeddedSIMActivationCodePool を更新します。
 description: EmbeddedSIMActivationCodePool オブジェクトのプロパティを更新します。
-ms.openlocfilehash: 50fc624840a19886e615f4acfe8b540c0fcf5ba0
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 83a374ab748ec7b9f93c327b609a5213073f470b
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27070111"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27318495"
 ---
 # <a name="update-embeddedsimactivationcodepool"></a>EmbeddedSIMActivationCodePool を更新します。
 
@@ -44,9 +45,9 @@ PATCH /deviceManagement/embeddedSIMActivationCodePools/{embeddedSIMActivationCod
 
 [EmbeddedSIMActivationCodePool](../resources/intune-esim-embeddedsimactivationcodepool.md)を作成するときに必要なプロパティを次の表に示します。
 
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
-|id|String|SIM のアクティブ化コードの埋め込み、プールの一意の識別子です。 システムでは、作成時に割り当てられた値が生成されます。|
+|ID|String|SIM のアクティブ化コードの埋め込み、プールの一意の識別子です。 システムでは、作成時に割り当てられた値が生成されます。|
 |displayName|String|管理者には、埋め込み SIM アクティベーション コードのプールの名前が定義されています。|
 |createdDateTime|DateTimeOffset|埋め込み SIM アクティベーション コードのプールが作成された時刻。 サービス側が生成されます。|
 |変更された日時|DateTimeOffset|埋め込み SIM アクティベーション コードのプールが最後に修正された時間です。 サービス側を更新します。|

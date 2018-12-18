@@ -1,12 +1,13 @@
 ---
 title: Get mobileApp
 description: mobileApp オブジェクトのプロパティとリレーションシップを読み取ります。
-ms.openlocfilehash: 302f858a819522040eb8d378fd697981ab1dd2bf
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 65ed02218e28b64d3749834d4eee5d57a05e8d74
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27022461"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27323577"
 ---
 # <a name="get-mobileapp"></a>Get mobileApp
 

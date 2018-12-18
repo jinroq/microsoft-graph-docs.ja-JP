@@ -1,12 +1,13 @@
 ---
 title: EducationAssignmentResource を削除します。
 description: .
-ms.openlocfilehash: 9a9798170e8aab9d167a305a8815c26aec8eed13
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: dipakboyed
+ms.openlocfilehash: 304ec56c8b2da36626f226104568cd353e58e88b
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27068320"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27322646"
 ---
 # <a name="delete-educationassignmentresource"></a>EducationAssignmentResource を削除します。
 

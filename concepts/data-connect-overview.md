@@ -1,12 +1,13 @@
 ---
 title: Microsoft Graph データ接続 (プレビュー)
 description: 'Microsoft Graph データ接続は、コア データ パイプラインを通じてユーザーに Office 365 データや Microsoft Azure リソースを提供します。 Microsoft Graph データ接続を使用すると、Microsoft 提供の優れた開発ツールを使用して貴重なデータにアクセスするインテリジェントなアプリケーションを構築することができます。これらのツールはすべて、Microsoft のセキュリティで保護されたクラウド内にあります。 すべての企業が生産性の向上に関心を持っています。つまり、ナレッジ ワーカーの生産性を向上させる製品を構築することは、非常に大きなビジネス チャンスを意味します。 '
-ms.openlocfilehash: ebd64bf994564decadd44f29c73c0117a99ce176
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: ajacks-msft
+ms.openlocfilehash: 283ad9044eb5ae5bc53bb4b72e4d6d1f2434cfee
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27092529"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27315268"
 ---
 # <a name="microsoft-graph-data-connect-preview"></a>Microsoft Graph データ接続 (プレビュー)
 

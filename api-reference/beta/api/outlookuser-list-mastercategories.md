@@ -1,12 +1,13 @@
 ---
 title: Outlook カテゴリを一覧表示する
 description: ユーザーに対して定義されているすべてのカテゴリを取得します。
-ms.openlocfilehash: 7eff66ea876c88e6a75953f4bd219e817a9a2e2f
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: angelgolfer-ms
+ms.openlocfilehash: a90eb368c3c6a03db6dbdf3d77518029abbfdaa9
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27071819"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27318306"
 ---
 # <a name="list-outlook-categories"></a>Outlook カテゴリを一覧表示する
 

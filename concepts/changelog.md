@@ -1,12 +1,12 @@
 ---
 title: Microsoft Graph の変更ログ
 description: この変更ログでは、Microsoft Graph と、v1.0 およびベータ版のエンドポイント Microsoft Graph API の変更内容について説明します。
-ms.openlocfilehash: e8b4671d527bac65d1855c21d7612077ed18203e
-ms.sourcegitcommit: 72d4da2a6bfaf99fa4edaf6ce3b97b1a6d96d874
+ms.openlocfilehash: 4317439af246701f9a1de214198e74933ef55632
+ms.sourcegitcommit: f3d479edf03935d0edbbc7668a65f7cde2a56c92
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/11/2018
-ms.locfileid: "27222661"
+ms.lasthandoff: 12/15/2018
+ms.locfileid: "27283732"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Microsoft Graph の変更ログ
 
@@ -16,6 +16,14 @@ Microsoft Graph API に関する既知の問題の詳細については、「[�
 
 ## <a name="december-2018"></a>2018 年 12 月
 
+### <a name="data-policy-api"></a>データ ポリシー API
+
+| **変更の種類** | **バージョン** | **説明**                          |
+| :-------------- | :---------- | :--------------------------------------- |
+|追加 |v1.0| 新しいエンティティ [dataPolicyOperation](/graph/api/resources/datapolicyoperation?view=graph-rest-1.0) を追加しました。 これは、追跡のために送信されたデータ ポリシー操作を表します。
+|追加 |v1.0| [users](/graph/api/resources/users?view=graph-rest-1.0) に [exportPersonalData](/graph/api/user-exportpersonaldata?view=graph-rest-1.0) アクションを追加しました。 このアクションは、Microsoft がユーザー用に保存している個人データをエクスポートするためのデータ ポリシー操作要求を送信します。 |
+|追加 |v1.0| メソッド [dataPolicyOperations](/graph/api/datapolicyoperation-get?view=graph-rest-1.0) を追加しました。 これは dataPolicyOperation オブジェクトのプロパティを取得します。|
+
 ### <a name="directory-apis"></a>ディレクトリ API
 
 | **変更の種類** | **バージョン**   | **説明**                          |
@@ -23,6 +31,7 @@ Microsoft Graph API に関する既知の問題の詳細については、「[�
 | 追加 | ベータ版 | 新しいリソースの種類 [directoryObjectPartnerReference](/graph/api/resources/directoryobjectpartnerreference?view=graph-rest-beta) を追加します。|
 | 追加 | ベータ版 | [organization](/graph/api/resources/organization?view=graph-rest-beta) リソースに `createdDateTime` プロパティを追加しました。|
 | 追加 | v1.0 | [デバイス](/graph/api/resources/device?view=graph-rest-1.0)のダイレクト [メンバーシップ](/graph/api/device-list-memberOf?view=graph-rest-1.0)を取得する `memberOf` メソッドを追加しました。 このメソッドは、入れ子になったメンバーシップを含むメンバーシップのリストを取得するために追加されました。|
+| 変更    | ベータ版 | [組織の連絡先](/graph/api/resources/orgcontact?view=graph-rest-beta)のリソースを再構成しました。 物理アドレスのプロパティ (`city`、`country`、`postalCode`、`streetAddress`、`state`) と `officeLocation` が `addresses` コレクション (新しい [physicalOfficeAddress](/graph/api/resources/physicalofficeaddress?view=graph-rest-beta) リソース タイプ) に含められ、`mobilePhone`、`businessPhones`、`faxNumber` が `phones` コレクションに含められるようになりました。 また、`companyName` と `imAddresses` が追加されました。|
 
 ### <a name="microsoft-teams-apis"></a>Microsoft Teams API
 

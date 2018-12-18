@@ -1,12 +1,13 @@
 ---
 title: iosVppEBook リソースの種類
 description: iOS Vpp eBook のプロパティを含むクラスです。
-ms.openlocfilehash: 9012584e619277716516582ce1e995446e019b7d
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: c28ac8d8754d7c0884dff9f2a925696fefea3d7c
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27071318"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27331130"
 ---
 # <a name="iosvppebook-resource-type"></a>iosVppEBook リソースの種類
 
@@ -28,9 +29,9 @@ iOS Vpp eBook のプロパティを含むクラスです。
 |[iosVppEBook の更新](../api/intune-books-iosvppebook-update.md)|[iosVppEBook](../resources/intune-books-iosvppebook.md)|[iosVppEBook](../resources/intune-books-iosvppebook.md) オブジェクトのプロパティを更新します。|
 
 ## <a name="properties"></a>プロパティ
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
-|id|String|エンティティのキー。 [managedEBook](../resources/intune-books-managedebook.md) から継承します|
+|ID|String|エンティティのキー。 [managedEBook](../resources/intune-books-managedebook.md) から継承します|
 |displayName|String|電子ブックの名前。 [managedEBook](../resources/intune-books-managedebook.md) から継承します|
 |説明|String|説明。 [managedEBook](../resources/intune-books-managedebook.md) から継承します|
 |publisher|String|発行元です。 [managedEBook](../resources/intune-books-managedebook.md) から継承します|

@@ -1,12 +1,13 @@
 ---
 title: defaultManagedAppProtection リソース タイプ
 description: TargetedManagedAppProtection ポリシーの対象とされていないすべてのユーザーに対して、アプリの指定したセットに関する管理設定の詳細を構成するために使用するポリシー
-ms.openlocfilehash: bfbf6dfbfa8a0c85987453239b162b5571263829
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 3c9599ebc3e381a61460351b0802105c23ef75d9
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27022665"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27331102"
 ---
 # <a name="defaultmanagedappprotection-resource-type"></a>defaultManagedAppProtection リソース タイプ
 
@@ -26,7 +27,7 @@ TargetedManagedAppProtection ポリシーの対象とされていないすべて
 |[Update defaultManagedAppProtection](../api/intune-mam-defaultmanagedappprotection-update.md)|[defaultManagedAppProtection](../resources/intune-mam-defaultmanagedappprotection.md)|[defaultManagedAppProtection](../resources/intune-mam-defaultmanagedappprotection.md) オブジェクトのプロパティを更新します。|
 
 ## <a name="properties"></a>プロパティ
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
 |displayName|String|ポリシーの表示名。 [managedAppPolicy](../resources/intune-mam-managedapppolicy.md) から継承します|
 |説明|String|ポリシーの説明。 [managedAppPolicy](../resources/intune-mam-managedapppolicy.md) から継承します|

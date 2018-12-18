@@ -1,12 +1,13 @@
 ---
 title: deviceConfiguration リソースの種類
 description: デバイス構成です。
-ms.openlocfilehash: ccfd34fbc05de7815b8aa199da305f57917bdced
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 7d1c765ff643950947f23192969078dd12028c2c
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27071753"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27315737"
 ---
 # <a name="deviceconfiguration-resource-type"></a>deviceConfiguration リソースの種類
 
@@ -26,12 +27,12 @@ ms.locfileid: "27071753"
 |[getTargetedUsersAndDevices アクション](../api/intune-deviceconfig-deviceconfiguration-gettargetedusersanddevices.md)|[deviceConfigurationTargetedUserAndDevice](../resources/intune-deviceconfig-deviceconfigurationtargeteduseranddevice.md)コレクション|まだ文書化されていません|
 
 ## <a name="properties"></a>プロパティ
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
-|id|String|エンティティのキー。|
+|ID|String|エンティティのキー。|
 |lastModifiedDateTime|DateTimeOffset|オブジェクトが最後に変更された DateTime。|
 |roleScopeTagIds|String コレクション|このエンティティ インスタンスのスコープのタグのリストです。|
-|supportsScopeTags|ブール値|デバイスの構成を基になるスコープのタグの割り当てをサポートしているかどうかを示します。 この値が false であり、エンティティをスコープ指定されたユーザーには表示されませんがある場合、ScopeTags プロパティに割り当てることは許可されていません。 これは、Silverlight で作成されたレガシ ポリシーに対して発生し、削除して、Azure ポータル内のポリシーを再作成することで解決できます。 このプロパティは値の取得のみ可能です。|
+|supportsScopeTags|ブール型|デバイスの構成を基になるスコープのタグの割り当てをサポートしているかどうかを示します。 この値が false であり、エンティティをスコープ指定されたユーザーには表示されませんがある場合、ScopeTags プロパティに割り当てることは許可されていません。 これは、Silverlight で作成されたレガシ ポリシーに対して発生し、削除して、Azure ポータル内のポリシーを再作成することで解決できます。 このプロパティは読み取りのみ可能です。|
 |createdDateTime|DateTimeOffset|オブジェクトが作成された DateTime。|
 |説明|String|デバイス構成について管理者が提供した説明です。|
 |displayName|String|デバイス構成について管理者が指定した名前です。|

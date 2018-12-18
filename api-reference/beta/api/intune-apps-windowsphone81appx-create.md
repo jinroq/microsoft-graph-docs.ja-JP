@@ -1,12 +1,13 @@
 ---
 title: WindowsPhone81AppX を作成します。
 description: 新しい windowsPhone81AppX オブジェクトを作成します。
-ms.openlocfilehash: 13c2e2b0484b5760973a67dbb980bdf829c7ba32
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: ac8501c6c68f1efe2fb99a39c659868944254048
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27071817"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27325712"
 ---
 # <a name="create-windowsphone81appx"></a>WindowsPhone81AppX を作成します。
 
@@ -44,9 +45,9 @@ POST /deviceAppManagement/mobileApps
 
 次の表は、windowsPhone81AppX を作成するときに必要なプロパティを示します。
 
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
-|id|String|エンティティのキー。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|
+|ID|String|エンティティのキー。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|
 |displayName|String|管理者が提供またはインポートしたアプリのタイトル。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|
 |説明|String|アプリの説明。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|
 |publisher|String|アプリの発行元。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|

@@ -1,12 +1,13 @@
 ---
 title: Create iosVppApp
 description: 新しい iosVppApp オブジェクトを作成します。
-ms.openlocfilehash: cb7b0926145d2448195662cef817292fb41ac1e9
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 0fa2f1c74586fd865e649c4f997c957f118d36fc
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27021339"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27316724"
 ---
 # <a name="create-iosvppapp"></a>Create iosVppApp
 
@@ -42,9 +43,9 @@ POST /deviceAppManagement/mobileApps
 
 次の表に、iosVppApp 作成時に必要となるプロパティを示します。
 
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
-|id|String|エンティティのキー。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|
+|ID|String|エンティティのキー。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|
 |displayName|String|管理者が提供またはインポートしたアプリのタイトル。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|
 |説明|String|アプリの説明。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|
 |publisher|String|アプリの発行元。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|

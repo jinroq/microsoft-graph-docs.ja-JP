@@ -1,12 +1,13 @@
 ---
 title: IosLobAppProvisioningConfigurationAssignment を作成します。
 description: 新しい iosLobAppProvisioningConfigurationAssignment オブジェクトを作成します。
-ms.openlocfilehash: 5d3a51aab8560e4922d74e48675aa95c25be5c72
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 4146ecdd2c2ee70239fc07a0eb2d7bf21edbe7c7
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27066922"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27331347"
 ---
 # <a name="create-ioslobappprovisioningconfigurationassignment"></a>IosLobAppProvisioningConfigurationAssignment を作成します。
 
@@ -44,9 +45,9 @@ POST /deviceAppManagement/iosLobAppProvisioningConfigurations/{iosLobAppProvisio
 
 次の表は、iosLobAppProvisioningConfigurationAssignment を作成するときに必要なプロパティを示します。
 
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
-|id|String|エンティティのキー。|
+|ID|String|エンティティのキー。|
 |target|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|管理者によって定義された、ターゲット グループの割り当て。|
 
 

@@ -1,12 +1,13 @@
 ---
 title: deviceCompliancePolicyAssignment の更新
 description: deviceCompliancePolicyAssignment オブジェクトのプロパティを更新します。
-ms.openlocfilehash: f472403ff97d2cce4fa7f24f9f75028652d56171
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 3c968232fdcc629376e5d7cc22758dd626d7f2a8
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27071343"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27327238"
 ---
 # <a name="update-devicecompliancepolicyassignment"></a>deviceCompliancePolicyAssignment の更新
 
@@ -44,9 +45,9 @@ PATCH /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/assi
 
 次の表に、[deviceCompliancePolicyAssignment](../resources/intune-deviceconfig-devicecompliancepolicyassignment.md) の作成時に必要なプロパティを示します。
 
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
-|id|String|エンティティのキー。|
+|ID|String|エンティティのキー。|
 |target|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|コンプライアンス ポリシーの割り当て先です。|
 
 

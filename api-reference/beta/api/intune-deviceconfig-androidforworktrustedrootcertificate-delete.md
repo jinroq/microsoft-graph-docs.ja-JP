@@ -1,12 +1,13 @@
 ---
 title: AndroidForWorkTrustedRootCertificate を削除します。
 description: AndroidForWorkTrustedRootCertificate を削除します。
-ms.openlocfilehash: 245ef109f2e8f6b96388ff28356d9bd62bbb107b
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 2571e3fd270ef56e8b93ea44efc826cf89a8613f
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27067858"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27318037"
 ---
 # <a name="delete-androidforworktrustedrootcertificate"></a>AndroidForWorkTrustedRootCertificate を削除します。
 

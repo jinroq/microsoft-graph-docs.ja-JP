@@ -1,12 +1,13 @@
 ---
 title: Azure Monitor を使った Microsoft Graph Security API の警告と IBM QRadar SIEM の統合
 description: Microsoft Graph Security プロバイダーは、単一の REST エンドポイントを通じて管理できます。 このエンドポイントは、複数の SIEM 製品へのコネクタをサポートする Azure Monitor に対して構成できます。 この記事の手順 1 と手順 2 は、イベント ハブを介した使用をサポートするすべての Azure Monitor コネクタに関係しています。 この記事では、QRadar SIEM コネクタのエンド ツー エンドの統合について説明します。
-ms.openlocfilehash: 107435c463116c002c86955559209d2dffd4d688
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: Preetikr
+ms.openlocfilehash: 663ff74741bdb3847cc0b47b56651c28bceef8f8
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27092425"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27309262"
 ---
 # <a name="integrate-microsoft-graph-security-api-alerts-with-ibm-qradar-siem-using-azure-monitor"></a>Azure Monitor を使った Microsoft Graph Security API の警告と IBM QRadar SIEM の統合
 
@@ -20,7 +21,7 @@ Microsoft Graph Security プロバイダーは、単一の REST エンドポイ�
 
 上記の手順を完了すると、IBM QRadar はテナントにライセンスされたすべての Microsoft Graph 統合セキュリティ製品から出力されるセキュリティの警告を使用します。 ユーザーがライセンスを取得した新しいセキュリティ製品もこの接続を使用して同じスキーマで警告を送信するため、追加の統合作業は発生しません。
 
-## <a name="step-1-set-up-an-event-hubs-namespace-in-azure-to-receive-security-alerts-for-your-tenant"></a>手順 1: テナントのセキュリティの警告を受信するように Azure の Event Hubs 名前空間をセットアップする
+## <a name="step-1-set-up-an-event-hubs-namespace-in-azure-to-receive-security-alerts-for-your-tenant"></a>手順 1: テナントのセキュリティ警告を受信するように Azure の Event Hubs 名前空間をセットアップする
 
 最初に、[Microsoft Azure Event Hubs](https://docs.microsoft.com/ja-JP/azure/event-hubs/) 名前空間とイベント ハブを作成する必要があります。 この名前空間とイベント ハブは、組織のすべてのセキュリティ警告の送信先になります。 Event Hubs 名前空間は、同じアクセス ポリシーを共有するイベント ハブの論理的なグループです。 Event Hubs 名前空間とイベント ハブを作成するときは、以下の点に注意してください。
 
@@ -47,14 +48,14 @@ Microsoft Graph Security プロバイダーは、単一の REST エンドポイ�
 
 ## <a name="step-2-configure-azure-monitor-to-send-security-alerts-from-your-tenant-to-the-event-hub"></a>手順 2: テナントからイベント ハブにセキュリティの警告を送信するように Azure Monitor を構成する
 
-Azure Monitor を使った組織のセキュリティの警告のストリーミングを有効にする操作は、Azure Active Directory (Azure AD) テナント全体で 1 回だけ実行します。 Microsoft Graph Security API がライセンスされ、有効になっているすべての製品が Azure Monitor にセキュリティの警告を送信し始め、Azure Monitor がコンシューマー アプリケーションにデータをストリーミングし始めます。 組織にライセンスされ、配置された追加の Microsoft Graph Security API 対応製品は、この同じ Azure Monitor 構成を使用してセキュリティの警告を自動的にストリーミングします。 組織内で追加の統合作業は発生しません。
+Azure Monitor を使った組織のセキュリティの警告のストリーミングを有効にする操作は、Azure Active Directory (Azure AD) テナント全体で 1 回だけ実行します。 Microsoft Graph セキュリティ API がライセンスされ、有効になっているすべての製品が Azure Monitor にセキュリティ警告を送信し始め、Azure Monitor がコンシューマー アプリケーションにデータをストリーミングし始めます。 組織にライセンスされ、配置された追加の Microsoft Graph セキュリティ API 対応製品は、この同じ Azure Monitor 構成を使用してセキュリティ警告を自動的にストリーミングします。 組織内で追加の統合作業は発生しません。
 
-セキュリティの警告は、通常は組織内のセキュリティ対応担当者と全体管理者だけが表示できる高い権限を持つデータです。 このため、テナントのセキュリティの警告と SIEM システムの統合を構成する手順では、Azure AD の全体管理者アカウントが必要です。 このアカウントは、セットアップ中に組織のセキュリティの警告を Azure Monitor に送信するように要求するときに 1 回だけ使用されます。
+セキュリティの警告は、通常は組織内のセキュリティ対応担当者と全体管理者だけが表示できる高い権限を持つデータです。 このため、テナントのセキュリティの警告と SIEM システムの統合を構成する手順では、Azure AD の全体管理者アカウントが必要です。 このアカウントは、セットアップ中に組織のセキュリティ警告を Azure Monitor に送信するように要求するときに 1 回だけ使用されます。
 
 > **注:** 現時点では、Azure Monitor の [診断設定] ブレードでテナントレベルのリソースを構成することはサポートされていません。 Microsoft Graph Security API の警告はテナントレベルのリソースです。このリソースでは Azure Resource Manager API を使用して、組織のセキュリティの警告の使用をサポートするように Azure Monitor を構成する必要があります。
 
 1. Azure サブスクリプション ([すべてのサービス] の下にある) で "microsoft.insights" (Azure Monitor) をリソース プロバイダーとして登録します。  
- > **注:** Azure サブスクリプションで "Microsoft.SecurityGraph" (Microsoft Graph Security API) をリソース プロバイダーとして登録しないでください。これは、上記で説明したとおり、"Microsoft.SecurityGraph" がテナント レベル リソースだからです。 テナント レベル構成は後述する #6 で扱います。
+ > **注:** Azure サブスクリプションで "Microsoft.SecurityGraph" (Microsoft Graph Security API) をリソース プロバイダーとして登録しないでください。これは、上記で説明したとおり、"Microsoft.SecurityGraph" がテナント レベル リソースだからです。 テナントレベルでの構成は後述する手順 6 で行います。
 
 2. Azure Resource Manager API を使用して Azure Monitor を構成するには、[ARMClient](https://github.com/projectkudu/ARMClient) ツールを入手します。 このツールは、コマンド ラインから Azure Portal に REST API 呼び出しを送信するために使用されます。
 
@@ -84,7 +85,7 @@ Azure Monitor を使った組織のセキュリティの警告のストリーミ
 
   * **SUBSCRIPTION_ID** は、組織からセキュリティの警告を送信するときに使用するリソース グループとイベント ハブの名前空間をホストする Azure サブスクリプションのサブスクリプション ID です。
   * **RESOURCE_GROUP** は、組織からセキュリティの警告を送信するときに使用するイベント ハブの名前空間を含むリソース グループです。
-  * **EVENT_HUB_NAMESPACE** は、組織からセキュリティの警告を送信するときに使用するイベント ハブの名前空間です。
+  * **EVENT_HUB_NAMESPACE** は、組織からセキュリティ警告を送信するときに使用するイベント ハブの名前空間です。
   * **“days”:** は、イベント ハブにメッセージを保持する日数です。
   
 &nbsp;

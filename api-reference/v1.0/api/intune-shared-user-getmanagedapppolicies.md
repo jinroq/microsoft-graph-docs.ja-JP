@@ -1,12 +1,13 @@
 ---
 title: getManagedAppPolicies 関数
 description: 特定のユーザーのアプリ制限を取得します。
-ms.openlocfilehash: 6cb9b388b8b999b298da070f592ebf7a19d851c5
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 3b06ca0e3aca10fb88c1cdc4bb42199b41719870
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27022692"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27323570"
 ---
 # <a name="getmanagedapppolicies-function"></a>getManagedAppPolicies 関数
 

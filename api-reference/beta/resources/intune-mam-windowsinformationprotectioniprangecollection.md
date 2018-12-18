@@ -1,12 +1,13 @@
 ---
 title: windowsInformationProtectionIPRangeCollection リソースの種類
 description: Windows 情報保護の IP 範囲のコレクション
-ms.openlocfilehash: 72b7c982197701f936a11b7b474a8acd86393260
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 6767a69ab1f3fe1b90c2a6b6fc7e76ea1abe2d99
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27073455"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27319055"
 ---
 # <a name="windowsinformationprotectioniprangecollection-resource-type"></a>windowsInformationProtectionIPRangeCollection リソースの種類
 
@@ -16,7 +17,7 @@ ms.locfileid: "27073455"
 
 Windows 情報保護の IP 範囲のコレクション
 ## <a name="properties"></a>プロパティ
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
 |displayName|文字列|表示名|
 |範囲|[ipRange](../resources/intune-shared-iprange.md) コレクション|IP 範囲のコレクション|

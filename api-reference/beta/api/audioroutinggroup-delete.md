@@ -1,12 +1,13 @@
 ---
 title: オーディオのルーティング グループを削除します。
 description: 指定した audioRoutingGroup を削除します。
-ms.openlocfilehash: cb4b4c2cf3f7023332acd443c63463d5251963ad
-ms.sourcegitcommit: 4a46cfd112c8089fc07e4e5ccdccaf415a3a0e7f
+author: VinodRavichandran
+ms.openlocfilehash: 025498e1ceb6178ede4c7ca938c7b0d3d05a80ee
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "27155992"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27323941"
 ---
 # <a name="delete-audio-routing-group"></a>オーディオのルーティング グループを削除します。
 

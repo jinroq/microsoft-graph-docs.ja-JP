@@ -2,12 +2,13 @@
 title: Microsoft Graph の People API を使用した最も関連のある人物に関する情報の取得
 description: Microsoft Graph では、People API を使用してユーザーに最も関連のある人物を取得できます。 関連性は、ユーザーのコミュニケーションとコラボレーション パターン、およびビジネスのリレーションシップによって決定されます。 人物は、個人の連絡先、ソーシャル ネットワーキングの連絡先、組織のディレクトリ、最近 (メール、Skype などで) 連絡した人などになります。 この情報を生成するとともに、People API は、ファジー マッチ検索のサポートと、サインインしているユーザーの組織内の別のユーザーに関連するユーザーのリストを取得する機能も提供します。
 ms.date: 12/04/2018
-ms.openlocfilehash: b01ca4538c3155bbb30224b1f92d6e7ae55c5878
-ms.sourcegitcommit: 4a46cfd112c8089fc07e4e5ccdccaf415a3a0e7f
+author: simonhult
+ms.openlocfilehash: e5cfc5abb7bac06f0355ebc2a2b70460050aa7e8
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "27156055"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27306854"
 ---
 # <a name="use-the-people-api-in-microsoft-graph-to-get-information-about-the-people-most-relevant-to-you"></a>Microsoft Graph の People API を使用した最も関連のある人物に関する情報の取得
 
