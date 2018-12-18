@@ -1,12 +1,13 @@
 ---
 title: MacOSImportedPFXCertificateProfile を削除します。
 description: MacOSImportedPFXCertificateProfile を削除します。
-ms.openlocfilehash: 01e5b094bf4e89edb0c82f427b8fa7e6f21fd29b
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: c15d1e2183034bdd2374062491a7c4ebc692d37c
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27068126"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27322261"
 ---
 # <a name="delete-macosimportedpfxcertificateprofile"></a>MacOSImportedPFXCertificateProfile を削除します。
 

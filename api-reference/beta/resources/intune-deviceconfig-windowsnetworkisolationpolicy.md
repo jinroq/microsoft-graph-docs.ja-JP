@@ -1,12 +1,13 @@
 ---
 title: windowsNetworkIsolationPolicy リソースの種類
 description: Windows ネットワークの分離のポリシー
-ms.openlocfilehash: 89c7db0453c76f6ec5016a4701bf357e27c579bc
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: af8cac99a359136bbc3d5d19842b56b57c80c6c9
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27069949"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27323290"
 ---
 # <a name="windowsnetworkisolationpolicy-resource-type"></a>windowsNetworkIsolationPolicy リソースの種類
 
@@ -15,8 +16,8 @@ ms.locfileid: "27069949"
 > **注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
 
 Windows ネットワークの分離のポリシー
-## <a name="properties"></a>プロパティ
-|プロパティ|型|説明|
+## <a name="properties"></a>Properties
+|プロパティ|種類|説明|
 |:---|:---|:---|
 |enterpriseNetworkDomainNames|String コレクション|これは、エンタープライズの境界を構成するドメインのリストです。 デバイスに送信されるこれらのドメインの 1 つのデータはエンタープライズ データと見なされ、保護します。 これらの場所は安全なエンタープライズ ・ データを共有する先と見なされます。|
 |enterpriseCloudResources|[proxiedDomain](../resources/intune-shared-proxieddomain.md) コレクション|保護する必要のあるクラウドでホストされているエンタープライズ リソースのドメインの一覧が含まれています。 これらのリソースへの接続は、エンタープライズ データと見なされます。 プロキシがクラウド リソースとペアリング済みの場合、クラウド リソースへのトラフィックは、指定されたプロキシ サーバー (ポート 80) を介してエンタープライズ ネットワーク経由でルーティングされます。 EnterpriseInternalProxyServers ポリシーを使用してこの目的に使用されるプロキシ サーバーを構成することもする必要があります。 このコレクションには、最大で 500 個の要素を含めることができます。|

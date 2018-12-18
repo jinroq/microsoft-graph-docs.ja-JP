@@ -1,12 +1,13 @@
 ---
 title: deviceManagementSubscriptionState 列挙型
 description: テナントのモバイル デバイス管理のサブスクリプション状態。
-ms.openlocfilehash: db3787b327608d4ffabdf40189f64bcf63269ec7
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 840614cad992fb057f8bd4a803a1fe9479a26be3
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27070508"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27323612"
 ---
 # <a name="devicemanagementsubscriptionstate-enum-type"></a>deviceManagementSubscriptionState 列挙型
 
@@ -21,8 +22,8 @@ ms.locfileid: "27070508"
 |保留中|0|Pending|
 |アクティブです|1|Active|
 |warning|2|警告|
-|無効になっています。|3|Disabled|
-|deleted|4|削除済み|
+|無効になっています。|3|無効|
+|deleted|4|Deleted|
 |ブロック|5|Blocked|
 |lockedOut|8|LockedOut|
 

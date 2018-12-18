@@ -1,12 +1,13 @@
 ---
 title: resourceOperation リソース タイプ
 description: " AAD のセキュリティ グループに、MobileApp のリソースを割り当てるオペレーションを使用します。  組み込みのロールについては、リソース操作を変更できません。"
-ms.openlocfilehash: 2aed25c7558d674abb39fdb4147b722afe69c0f9
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 9108181fe4d1c3cf241d879d5c1e4315d84d4eeb
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27067562"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27323297"
 ---
 # <a name="resourceoperation-resource-type"></a>resourceOperation リソース タイプ
 
@@ -26,14 +27,14 @@ Intune リソース (またはエンティティ) で実行できる操作また
 |[getScopesForUser 関数](../api/intune-rbac-resourceoperation-getscopesforuser.md)|String コレクション|まだ文書化されていません|
 
 ## <a name="properties"></a>プロパティ
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
-|id|String|リソース操作のキー。 読み取り専用で、自動生成されます。|
+|ID|String|リソース操作のキー。 読み取り専用で、自動生成されます。|
 |resource|String|この操作が所属しているリソースのカテゴリです。|
 |resourceName|String|この操作が実行されるリソースの名前。|
 |actionName|String|この操作が実行するアクションの種類。 actionName は簡潔で、できるだけ少ない単語にする必要があります。|
 |説明|String|リソース操作の説明。 Azure Portal で操作にマウス ポインターを合わせると、その操作の説明がテキストで表示されます。|
-|enabledForScopeValidation|ブール値|ロールの割り当てごとに定義されたスコープのアクセス許可を検証するかどうかを決定します。|
+|enabledForScopeValidation|ブール型|ロールの割り当てごとに定義されたスコープのアクセス許可を検証するかどうかを決定します。|
 
 ## <a name="relationships"></a>リレーションシップ
 なし

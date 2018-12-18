@@ -1,12 +1,13 @@
 ---
 title: Create defaultManagedAppProtection
 description: 新しい defaultManagedAppProtection オブジェクトを作成します。
-ms.openlocfilehash: 1bea16e7d329014fd2b17f45918a00899a5418b3
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: c76afc8d9c9bd465b40e506117ec80ef1345045c
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27023832"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27323192"
 ---
 # <a name="create-defaultmanagedappprotection"></a>Create defaultManagedAppProtection
 
@@ -42,7 +43,7 @@ POST /deviceAppManagement/defaultManagedAppProtections
 
 次の表に、defaultManagedAppProtection 作成時に必要となるプロパティを示します。
 
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
 |displayName|String|ポリシーの表示名。 [managedAppPolicy](../resources/intune-mam-managedapppolicy.md) から継承します|
 |説明|String|ポリシーの説明。 [managedAppPolicy](../resources/intune-mam-managedapppolicy.md) から継承します|

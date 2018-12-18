@@ -1,12 +1,13 @@
 ---
 title: EmbeddedSIMActivationCodePoolAssignment を作成します。
 description: 新しい embeddedSIMActivationCodePoolAssignment オブジェクトを作成します。
-ms.openlocfilehash: a1a4e35f72cc853d46b64033080a05ddc7d44d6b
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: b0f453e3d940f8e2d57d7c19e2a0da6905e654cf
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27073638"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27322331"
 ---
 # <a name="create-embeddedsimactivationcodepoolassignment"></a>EmbeddedSIMActivationCodePoolAssignment を作成します。
 
@@ -44,10 +45,10 @@ POST /deviceManagement/embeddedSIMActivationCodePools/{embeddedSIMActivationCode
 
 次の表は、embeddedSIMActivationCodePoolAssignment を作成するときに必要なプロパティを示します。
 
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
-|id|String|埋め込み SIM アクティベーション コードのプール割り当ての一意の識別子です。 システムでは、作成時に割り当てられた値が生成されます。|
-|target|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|SIM のアクティブ化コードの埋め込み、プールの対象となるグループの種類。|
+|ID|String|埋め込み SIM アクティベーション コードのプール割り当ての一意の識別子です。 システムでは、作成時に割り当てられた値が生成されます。|
+|ターゲット|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|SIM のアクティブ化コードの埋め込み、プールの対象となるグループの種類。|
 
 
 

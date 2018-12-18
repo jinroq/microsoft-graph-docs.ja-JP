@@ -1,12 +1,13 @@
 ---
 title: appListItem リソースの種類
 description: 管理対象アプリケーションの一覧にあるアプリを表します
-ms.openlocfilehash: c9b39b5fdee8bb503ef66f729a6ee478581a6391
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: a7e33b986f95f610abff2c7b5321f48f3668e488
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27020827"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27323598"
 ---
 # <a name="applistitem-resource-type"></a>appListItem リソースの種類
 
@@ -14,7 +15,7 @@ ms.locfileid: "27020827"
 
 管理対象アプリケーションの一覧にあるアプリを表します
 ## <a name="properties"></a>プロパティ
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
 |名前|文字列型 (String)|アプリケーション名|
 |発行元|文字列型 (String)|アプリケーションの発行元|

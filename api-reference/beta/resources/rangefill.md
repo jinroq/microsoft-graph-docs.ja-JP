@@ -1,12 +1,13 @@
 ---
 title: RangeFill リソースの種類
 description: 範囲オブジェクトの背景を表します。
-ms.openlocfilehash: 11806d95900c6e4ea1d4bf6ce4f4800bf5f6f66b
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lumine2008
+ms.openlocfilehash: 21d40b1ec65ad49241af30912c3c05e114c7008d
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27073312"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27323710"
 ---
 # <a name="rangefill-resource-type"></a>RangeFill リソースの種類
 
@@ -21,10 +22,10 @@ ms.locfileid: "27073312"
 |:---------------|:--------|:----------|
 |[RangeFill を取得する](../api/rangefill-get.md) | [RangeFill](rangefill.md) |rangeFill オブジェクトのプロパティと関係を読み取ります。|
 |[Update](../api/rangefill-update.md) | [RangeFill](rangefill.md)   |RangeFill オブジェクトを更新します。 |
-|[クリア](../api/rangefill-clear.md)|なし|範囲の背景をリセットします。|
+|[Clear](../api/rangefill-clear.md)|なし|範囲の背景をリセットします。|
 
 ## <a name="properties"></a>プロパティ
-| プロパティ     | 型   |説明|
+| プロパティ     | 種類   |説明|
 |:---------------|:--------|:----------|
 |color|文字列|枠線の色を表す HTML カラー コード。形式は #RRGGBB (例: "FFA500")、または名前付きの HTML 色 (例: "オレンジ")|
 

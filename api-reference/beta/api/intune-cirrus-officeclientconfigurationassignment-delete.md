@@ -1,12 +1,13 @@
 ---
 title: OfficeClientConfigurationAssignment を削除します。
 description: OfficeClientConfigurationAssignment を削除します。
-ms.openlocfilehash: 6ba075447da75530bb9eac6d00794a0fcdd64818
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 2125a736cdcaa5e5ab6623dd8802380b3ce602d8
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27073585"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27322310"
 ---
 # <a name="delete-officeclientconfigurationassignment"></a>OfficeClientConfigurationAssignment を削除します。
 

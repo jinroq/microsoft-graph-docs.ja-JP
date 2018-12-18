@@ -1,12 +1,13 @@
 ---
 title: groupAssignmentTarget リソースの種類
 description: グループへの割り当てを表します。
-ms.openlocfilehash: 76ea8c56b8022dc832335c575ad52632894f1d60
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 5371554d069237dc6bc017c29574423b415f4f33
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27067178"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27323136"
 ---
 # <a name="groupassignmenttarget-resource-type"></a>groupAssignmentTarget リソースの種類
 
@@ -19,7 +20,7 @@ ms.locfileid: "27067178"
 [deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md) からの継承
 
 ## <a name="properties"></a>プロパティ
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
 |groupId|文字列|割り当てのターゲットとなるグループ ID です。|
 

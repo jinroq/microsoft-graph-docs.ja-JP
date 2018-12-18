@@ -1,12 +1,13 @@
 ---
 title: 'プランナー: デルタ'
 description: ユーザーが購読しているオブジェクトへの変更を取得します。
-ms.openlocfilehash: 7c866946f0c9a873b99ee4efd6d9e2c7ce646be3
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: TarkanSevilmis
+ms.openlocfilehash: dcc60ad9c1bc5ea9e56099d4bc79fb57d4e95374
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27071826"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27323367"
 ---
 # <a name="planner-delta"></a>プランナー: デルタ
 
@@ -79,7 +80,7 @@ GET https://graph.microsoft.com/beta/me/planner/all/delta
 ##### <a name="response"></a>応答
 以下は、応答の例です。
 
->**注:** 応答オブジェクトが示すようには、読みやすさの短縮される可能性があります。 変更されたすべてのプロパティは、実際の呼び出しから返されます。
+>**注:** ここに示す応答オブジェクトは、読みやすさのために短縮されている場合があります。 変更されたすべてのプロパティは、実際の呼び出しから返されます。
 
 <!-- {
   "blockType": "response",

@@ -1,12 +1,13 @@
 ---
 title: DeviceConfigurationConflictSummary を作成します。
 description: 新しい deviceConfigurationConflictSummary オブジェクトを作成します。
-ms.openlocfilehash: 05532150c01c49e832e28ac811f68afcc00da651
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: f39d272d817ca2244f5b0d932fc9c955a1253b27
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27066255"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27323108"
 ---
 # <a name="create-deviceconfigurationconflictsummary"></a>DeviceConfigurationConflictSummary を作成します。
 
@@ -44,7 +45,7 @@ POST /deviceManagement/deviceConfigurationConflictSummary
 
 次の表は、deviceConfigurationConflictSummary を作成するときに必要なプロパティを示します。
 
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
 |conflictingDeviceConfigurations|[settingSource](../resources/intune-deviceconfig-settingsource.md) コレクション|一連のポリシーを指定された設定と競合していません。|
 |id|String|競合するポリシーのセットの id です。 この id では、ConflictingDeviceConfigurations 内のすべてのポリシーの id をアンダー スコアで区切られた辞書式の順序にします。|

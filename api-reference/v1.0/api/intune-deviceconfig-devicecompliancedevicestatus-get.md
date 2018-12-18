@@ -1,12 +1,13 @@
 ---
 title: Get deviceComplianceDeviceStatus
 description: deviceComplianceDeviceStatus オブジェクトのプロパティとリレーションシップを読み取ります。
-ms.openlocfilehash: 4ab52855e522fcddd0edbe38f032d0c82dcf16e9
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: b05cbdad4ff3e01db14517ee95af7a7f5fe5e0f4
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27021960"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27322912"
 ---
 # <a name="get-devicecompliancedevicestatus"></a>Get deviceComplianceDeviceStatus
 
