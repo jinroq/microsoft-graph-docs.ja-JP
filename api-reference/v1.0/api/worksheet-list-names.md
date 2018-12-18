@@ -1,12 +1,13 @@
 ---
 title: 名前を一覧表示する
 description: 'ワークシートに関連付けられている名前付きのアイテムの一覧を取得します。 '
-ms.openlocfilehash: 202e44c2747d8f90bb79183419038d9f5c632e3e
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lumine2008
+ms.openlocfilehash: 3d9a1cdff9c7903622309028c2d5e73a5868d219
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27022830"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27333286"
 ---
 # <a name="list-names"></a>名前を一覧表示する
 

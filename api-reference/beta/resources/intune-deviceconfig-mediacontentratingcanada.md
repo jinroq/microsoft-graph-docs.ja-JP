@@ -1,12 +1,13 @@
 ---
 title: mediaContentRatingCanada リソースの種類
 description: まだ文書化されていません
-ms.openlocfilehash: e44af4a72aee8c97a12b3d8dcad767bba08ad005
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: efdc88934e46c849f48c0eb24ddd49535b824044
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27066824"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27331956"
 ---
 # <a name="mediacontentratingcanada-resource-type"></a>mediaContentRatingCanada リソースの種類
 
@@ -16,7 +17,7 @@ ms.locfileid: "27066824"
 
 まだ文書化されていません
 ## <a name="properties"></a>プロパティ
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
 |movieRating|[ratingCanadaMoviesType](../resources/intune-deviceconfig-ratingcanadamoviestype.md)|評価のカナダの選択したムービーです。 可能な値は、`allAllowed`、`allBlocked`、`general`、`parentalGuidance`、`agesAbove14`、`agesAbove18`、`restricted` です。|
 |tvRating|[ratingCanadaTelevisionType](../resources/intune-deviceconfig-ratingcanadatelevisiontype.md)|テレビの視聴制限がカナダを選択します。 可能な値は、`allAllowed`、`allBlocked`、`children`、`childrenAbove8`、`general`、`parentalGuidance`、`agesAbove14`、`agesAbove18` です。|

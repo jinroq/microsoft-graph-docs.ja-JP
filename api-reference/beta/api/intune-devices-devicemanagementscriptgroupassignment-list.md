@@ -1,12 +1,13 @@
 ---
 title: リスト deviceManagementScriptGroupAssignments
 description: DeviceManagementScriptGroupAssignment オブジェクトのプロパティと関係を一覧表示します。
-ms.openlocfilehash: 0d5a9b8889f922354b280484236d209daa3100e0
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 1d57bdb9de953b080d88836d6de7ae25b7ec3feb
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27069954"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27327364"
 ---
 # <a name="list-devicemanagementscriptgroupassignments"></a>リスト deviceManagementScriptGroupAssignments
 

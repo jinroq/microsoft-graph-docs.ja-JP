@@ -1,12 +1,13 @@
 ---
 title: cartToClassAssociation リソースの種類
 description: 教室カートのデバイスに関連付けるための CartToClassAssociation です。
-ms.openlocfilehash: f177771cf6147771fc051d05e6fbb49d95b9feeb
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: f712759d82b5edf7d364658211f1f2142fb6eb87
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27069549"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27328281"
 ---
 # <a name="carttoclassassociation-resource-type"></a>cartToClassAssociation リソースの種類
 
@@ -24,10 +25,10 @@ ms.locfileid: "27069549"
 |[CartToClassAssociation を削除します。](../api/intune-deviceconfig-carttoclassassociation-delete.md)|なし|の[cartToClassAssociation](../resources/intune-deviceconfig-carttoclassassociation.md)を削除します。|
 |[CartToClassAssociation を更新します。](../api/intune-deviceconfig-carttoclassassociation-update.md)|[cartToClassAssociation](../resources/intune-deviceconfig-carttoclassassociation.md)|[CartToClassAssociation](../resources/intune-deviceconfig-carttoclassassociation.md)オブジェクトのプロパティを更新します。|
 
-## <a name="properties"></a>プロパティ
-|プロパティ|型|説明|
+## <a name="properties"></a>Properties
+|プロパティ|種類|説明|
 |:---|:---|:---|
-|id|String|エンティティのキー。|
+|ID|String|エンティティのキー。|
 |createdDateTime|DateTimeOffset|オブジェクトが作成された DateTime。|
 |lastModifiedDateTime|DateTimeOffset|オブジェクトが最後に変更された DateTime。|
 |version|Int32|CartToClassAssociation のバージョンです。|

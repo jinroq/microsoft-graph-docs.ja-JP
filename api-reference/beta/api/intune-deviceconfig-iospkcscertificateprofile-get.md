@@ -1,12 +1,13 @@
 ---
 title: IosPkcsCertificateProfile を取得します。
 description: IosPkcsCertificateProfile オブジェクトのプロパティと関係を参照してください。
-ms.openlocfilehash: 62c12b57509da4ab425dbc7cf74272c73ccb2ed2
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 28beb185148a711d54b562f252828d6ec01db8d3
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27074274"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27335701"
 ---
 # <a name="get-iospkcscertificateprofile"></a>IosPkcsCertificateProfile を取得します。
 

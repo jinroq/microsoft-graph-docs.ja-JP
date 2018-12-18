@@ -1,12 +1,13 @@
 ---
 title: チャネル リソースの種類
 description: 'チャネルは、チーム内でのメッセージのコレクションです。 '
-ms.openlocfilehash: 17a2e2edb86bfe7e107e69414a70dbe92fe4d3bc
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: nkramer
+ms.openlocfilehash: f9ab71213180732a0c8c626d5b32b9074bd135d9
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27021614"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27337087"
 ---
 # <a name="channel-resource-type"></a>チャネル リソースの種類
 
@@ -25,12 +26,12 @@ ms.locfileid: "27021614"
 |[チャネルを更新します。](../api/channel-patch.md) | [チャネル](channel.md) | チャネルのプロパティを更新します。|
 |[チャネルを削除します。](../api/channel-delete.md) | なし | チャネルを削除します。|
 
-## <a name="properties"></a>プロパティ
-| プロパティ     | 型   |説明|
+## <a name="properties"></a>Properties
+| プロパティ     | 種類   |説明|
 |:---------------|:--------|:----------|
 |説明|String|チャネルの省略可能な説明です。|
 |displayName|String|チャネルの名前は、マイクロソフトのチーム内のユーザーに表示されます。|
-|id|String|チャネルの一意の識別子です。 読み取り専用。|
+|id|String|チャネルの一意の識別子です。 読み取り専用です。|
 
 ## <a name="relationships"></a>リレーションシップ
 | リレーションシップ | 型   |説明|

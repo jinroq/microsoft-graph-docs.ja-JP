@@ -1,12 +1,13 @@
 ---
 title: deviceManagement の更新
 description: deviceManagement オブジェクトのプロパティを更新します。
-ms.openlocfilehash: f63e9b717f912e255abccedf809772590eb44d1f
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: d8a84c61751fdbc8267b846a70adb44d2affbfa2
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27021402"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27331669"
 ---
 # <a name="update-devicemanagement"></a>deviceManagement の更新
 
@@ -55,9 +56,9 @@ PATCH /deviceManagement
 
 次の表に、[deviceManagement](../resources/intune-shared-devicemanagement.md) の作成時に必要なプロパティを示します。
 
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
-|id|String|デバイスの一意識別子|
+|ID|String|デバイスの一意識別子|
 |**デバイス構成**|
 |settings|[deviceManagementSettings](../resources/intune-deviceconfig-devicemanagementsettings.md)|アカウント レベルの設定。|
 |**デバイスの管理**|

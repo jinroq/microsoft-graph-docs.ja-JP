@@ -1,12 +1,13 @@
 ---
 title: MobileAppProvisioningConfigGroupAssignment を作成します。
 description: 新しい mobileAppProvisioningConfigGroupAssignment オブジェクトを作成します。
-ms.openlocfilehash: 7ff1377079ea47d7bb809b9b71d1033a4681d19d
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: d97b8cd59a0ad170b93fb5127ab276ef2dd29003
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27074316"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27331004"
 ---
 # <a name="create-mobileappprovisioningconfiggroupassignment"></a>MobileAppProvisioningConfigGroupAssignment を作成します。
 
@@ -44,7 +45,7 @@ POST /deviceAppManagement/iosLobAppProvisioningConfigurations/{iosLobAppProvisio
 
 次の表は、mobileAppProvisioningConfigGroupAssignment を作成するときに必要なプロパティを示します。
 
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
 |targetGroupId|String|構成のプロビジョニング、アプリケーションが対象である AAD グループの ID。|
 |id|String|エンティティのキー。|

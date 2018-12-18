@@ -1,12 +1,13 @@
 ---
 title: DeviceManagementScriptGroupAssignment を作成します。
 description: 新しい deviceManagementScriptGroupAssignment オブジェクトを作成します。
-ms.openlocfilehash: 3a92632ad1ab900ddff8371ce37bedb4f16f6d55
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: f084fb933d4694d9c1dfa43f018fb3ce2d8dd95b
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27067115"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27324781"
 ---
 # <a name="create-devicemanagementscriptgroupassignment"></a>DeviceManagementScriptGroupAssignment を作成します。
 
@@ -44,9 +45,9 @@ POST /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/groupA
 
 次の表は、deviceManagementScriptGroupAssignment を作成するときに必要なプロパティを示します。
 
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
-|id|String|デバイス管理スクリプトのグループの割り当てエンティティのキーです。|
+|ID|String|デバイス管理スクリプトのグループの割り当てエンティティのキーです。|
 |targetGroupId|String|Azure Active Directory グループの Id は、対象としてスクリプトをします。|
 
 

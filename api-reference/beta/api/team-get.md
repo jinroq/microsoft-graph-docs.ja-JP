@@ -1,12 +1,13 @@
 ---
 title: チームを取得します。
 description: プロパティと指定されたチームの関係を取得します。
-ms.openlocfilehash: 1b255e54f4c46f2efe06e59452011b4a1f78ed36
-ms.sourcegitcommit: 72d4da2a6bfaf99fa4edaf6ce3b97b1a6d96d874
+author: nkramer
+ms.openlocfilehash: dfa59948a9bffce77c98a3462f919e75fe18042e
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/11/2018
-ms.locfileid: "27222472"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27329233"
 ---
 # <a name="get-team"></a>チームを取得します。
 

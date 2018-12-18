@@ -1,12 +1,13 @@
 ---
 title: windows10CompliancePolicy の更新
 description: windows10CompliancePolicy オブジェクトのプロパティを更新します。
-ms.openlocfilehash: 5dd0e5f00adc5e14872c5056f083064253000d45
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: d80bcd8852a21a1aac216fdee283fb6ba61b461e
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27073480"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27333398"
 ---
 # <a name="update-windows10compliancepolicy"></a>windows10CompliancePolicy の更新
 
@@ -44,7 +45,7 @@ PATCH /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}
 
 次の表に、[windows10CompliancePolicy](../resources/intune-deviceconfig-windows10compliancepolicy.md) の作成時に必要なプロパティを示します。
 
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
 |roleScopeTagIds|String コレクション|このエンティティ インスタンスのスコープのタグのリストです。 [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md) から継承します|
 |id|String|エンティティのキー。 [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md) から継承します|
@@ -72,17 +73,17 @@ PATCH /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}
 |secureBootEnabled|Boolean|デバイスが Windows デバイス正常性構成証明によって正常と報告される (セキュア ブートが有効である) ことを要求します。|
 |codeIntegrityEnabled|Boolean|デバイスが Windows デバイス正常性構成証明によって正常と報告されることを要求します。|
 |storageRequireEncryption|Boolean|Windows デバイス上での暗号化を要求します。|
-|activeFirewallRequired|ブール値|Windows デバイス上のアクティブなファイアウォールが必要です。|
-|defenderEnabled|ブール値|Windows デバイスで Windows Defender のウイルス対策が必要です。|
+|activeFirewallRequired|ブール型|Windows デバイス上のアクティブなファイアウォールが必要です。|
+|defenderEnabled|ブール型|Windows デバイスで Windows Defender のウイルス対策が必要です。|
 |defenderVersion|String|Windows デバイスの最小バージョンの Windows Defender のウイルス対策が必要です。|
-|signatureOutOfDate|ブール値|Windows デバイスで最新のものに、Windows Defender のウイルス対策署名が必要です。|
-|rtpEnabled|ブール値|Windows デバイスでは、Windows Defender のウイルス対策のリアルタイム保護を必要とします。|
-|antivirusRequired|ブール値|上にある Windows セキュリティ センターに登録され、(例: シマンテック、Windows Defender) を監視するウイルス対策ソリューションが必要です。|
-|antiSpywareRequired|ブール値|任意のウイルス対策ソリューションに Windows セキュリティ センターに登録され、監視 (シマンテック、Windows Defender など) が必要です。|
+|signatureOutOfDate|ブール型|Windows デバイスで最新のものに、Windows Defender のウイルス対策署名が必要です。|
+|rtpEnabled|ブール型|Windows デバイスでは、Windows Defender のウイルス対策のリアルタイム保護を必要とします。|
+|antivirusRequired|ブール型|上にある Windows セキュリティ センターに登録され、(例: シマンテック、Windows Defender) を監視するウイルス対策ソリューションが必要です。|
+|antiSpywareRequired|ブール型|任意のウイルス対策ソリューションに Windows セキュリティ センターに登録され、監視 (シマンテック、Windows Defender など) が必要です。|
 |validOperatingSystemBuildRanges|[operatingSystemVersionRange](../resources/intune-deviceconfig-operatingsystemversionrange.md)コレクション|有効なオペレーティング システムは、Windows デバイス上の範囲を作成します。 このコレクションには、最大で 10000 個の要素を含めることができます。|
 |deviceThreatProtectionEnabled|Boolean|デバイスの脅威保護が有効になっていることを要求します。|
 |deviceThreatProtectionRequiredSecurityLevel|[deviceThreatProtectionLevel](../resources/intune-deviceconfig-devicethreatprotectionlevel.md)|法令遵守の不履行を報告する最小のリスク レベルの脅威のデバイスの保護を必要とします。 使用可能な値: `unavailable`、`secured`、`low`、`medium`、`high`、`notSet`。|
-|configurationManagerComplianceRequired|ブール値|Intune 準拠状態の考慮事項に SCCM の準拠状態を考慮する必要があります。|
+|configurationManagerComplianceRequired|ブール型|Intune 準拠状態の考慮事項に SCCM の準拠状態を考慮する必要があります。|
 
 
 

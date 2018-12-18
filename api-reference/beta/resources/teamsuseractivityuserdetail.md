@@ -1,30 +1,31 @@
 ---
 title: teamsUserActivityUserDetail リソースの種類
 description: リソースの JSON の representaion は、次のようにします。
-ms.openlocfilehash: 4e40ea4adf07450e6b51555df47579955a2a0286
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: nkramer
+ms.openlocfilehash: a1f47bc52c2a0a613598ce663f16023dce208c51
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27073145"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27331942"
 ---
 # <a name="teamsuseractivityuserdetail-resource-type"></a>teamsUserActivityUserDetail リソースの種類
 
-## <a name="properties"></a>プロパティ
+## <a name="properties"></a>Properties
 
-| プロパティ                | 型              |
+| プロパティ                | 種類              |
 | :---------------------- | :---------------- |
-| reportRefreshDate       | Date              |
+| reportRefreshDate       | 日付              |
 | userPrincipalName       | String            |
-| lastActivityDate        | Date              |
-| isDeleted               | ブール値           |
-| deletedDate             | Date              |
+| lastActivityDate        | 日付              |
+| isDeleted               | ブール型           |
+| deletedDate             | 日付              |
 | assignedProducts        | String コレクション |
 | teamChatMessageCount    | Int64             |
 | privateChatMessageCount | Int64             |
 | callCount               | Int64             |
 | meetingCount            | Int64             |
-| hasOtherAction          | ブール値           |
+| hasOtherAction          | ブール型           |
 | reportPeriod            | String            |
 
 ## <a name="json-representation"></a>JSON 表記

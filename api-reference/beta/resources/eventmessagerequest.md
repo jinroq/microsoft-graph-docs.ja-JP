@@ -1,12 +1,13 @@
 ---
 title: eventMessageRequest リソースの種類
 description: 会議出席依頼を表すメッセージ。
-ms.openlocfilehash: b63778d868000c57d8a900b67d0554c6f6bef2bd
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: angelgolfer-ms
+ms.openlocfilehash: f32393e0811543e7630c16e6889b31ce3dbc5920
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27072397"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27335645"
 ---
 # <a name="eventmessagerequest-resource-type"></a>eventMessageRequest リソースの種類
 
@@ -74,7 +75,7 @@ ms.locfileid: "27072397"
 
 ```
 ## <a name="properties"></a>プロパティ
-| プロパティ     | 型   |説明|
+| プロパティ     | 種類   |説明|
 |:---------------|:--------|:----------|
 |bccRecipients|[recipient](recipient.md) collection|メッセージの BCC 受信者。|
 |body|[itemBody](itembody.md)|メッセージの本文。|
@@ -86,15 +87,15 @@ ms.locfileid: "27072397"
 |createdDateTime|DateTimeOffset|メッセージが作成された日時。|
 |endDateTime|[dateTimeTimeZone](datetimetimezone.md)|要求された会議の終了時間です。|
 |from|[recipient](recipient.md)|メッセージのメールボックス所有者と送信者。|
-|hasAttachments|ブール値|メッセージに添付ファイルがあるかどうかを示します。|
+|hasAttachments|Boolean|メッセージに添付ファイルがあるかどうかを示します。|
 |id|String|読み取り専用。|
 |importance|String| メッセージの重要度: `Low`、`Normal`、`High`。|
 |inferenceClassification|String| 使用可能な値は、`Focused`、`Other` です。|
-|isDeliveryReceiptRequested|ブール値|メッセージの開封確認メッセージが要求されているかどうかを示します。|
-|isDraft|ブール値|メッセージが下書きかどうかを示します。メッセージがまだ送信されていなければ下書きです。|
+|isDeliveryReceiptRequested|Boolean|メッセージの開封確認メッセージが要求されているかどうかを示します。|
+|isDraft|ブール型|メッセージが下書きかどうかを示します。メッセージがまだ送信されていなければ下書きです。|
 |isOutOfDate|Boolean|この会議出席要求がより新しい要求によって古くなっているかどうかを示します。|
-|isRead|ブール値|メッセージが開封されたかどうかを示します。|
-|isReadReceiptRequested|ブール値|メッセージの開封確認メッセージが要求されているかどうかを示します。|
+|isRead|Boolean|メッセージが開封されたかどうかを示します。|
+|isReadReceiptRequested|Boolean|メッセージの開封確認メッセージが要求されているかどうかを示します。|
 |lastModifiedDateTime|DateTimeOffset|メッセージが最後に変更された日時。|
 |location|[Location](location.md)|要求された会議の場所です。|
 |meetingMessageType|String| イベント メッセージの種類: `None`、`MeetingRequest`、`MeetingCancelled``MeetingAccepted``MeetingTenativelyAccepted``MeetingDeclined`。|
@@ -126,7 +127,7 @@ ms.locfileid: "27072397"
 | メソッド           | 戻り値の型    |説明|
 |:---------------|:--------|:----------|
 |[eventMessage の取得](../api/eventmessage-get.md) | [eventMessage](eventmessage.md) |eventMessage オブジェクトのプロパティとリレーションシップを読み取ります。|
-|[添付ファイルを作成します。](../api/eventmessage-post-attachments.md) |[Attachment](attachment.md)| 添付ファイル コレクションへの投稿により、新しい添付ファイルを作成します。|
+|[添付ファイルを作成します。](../api/eventmessage-post-attachments.md) |[添付ファイル](attachment.md)| 添付ファイル コレクションへの投稿により、新しい添付ファイルを作成します。|
 |[添付ファイルを一覧表示する](../api/eventmessage-list-attachments.md) |[Attachment](attachment.md) コレクション| 添付ファイルのオブジェクト コレクションを取得します。|
 |[更新する](../api/eventmessage-update.md) | [eventMessage](eventmessage.md)  |eventMessage オブジェクトを更新します。 |
 |[削除](../api/eventmessage-delete.md) | なし |eventMessage オブジェクトを削除します。 |

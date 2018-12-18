@@ -1,12 +1,13 @@
 ---
 title: windowsPhone81CompliancePolicies のリスト
 description: windowsPhone81CompliancePolicy オブジェクトのプロパティとリレーションシップをリストします。
-ms.openlocfilehash: ed17d9e65663080ef77d713666ec8b1e0be31fdd
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: c29426788d8ad045b31364de55880a24c47f6eed
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27021004"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27332754"
 ---
 # <a name="list-windowsphone81compliancepolicies"></a>windowsPhone81CompliancePolicies のリスト
 

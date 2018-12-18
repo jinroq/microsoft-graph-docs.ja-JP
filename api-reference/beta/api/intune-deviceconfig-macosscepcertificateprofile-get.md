@@ -1,12 +1,13 @@
 ---
 title: MacOSScepCertificateProfile を取得します。
 description: MacOSScepCertificateProfile オブジェクトのプロパティと関係を参照してください。
-ms.openlocfilehash: a5d3d274c55e1b0da69aaa3158a61a2a7b7b1355
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 5f44b0eae6f7a1c38897d9f90737c58f5d5e2c8a
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27073218"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27330115"
 ---
 # <a name="get-macosscepcertificateprofile"></a>MacOSScepCertificateProfile を取得します。
 

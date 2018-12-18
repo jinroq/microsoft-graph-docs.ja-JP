@@ -1,12 +1,13 @@
 ---
 title: UserAppInstallStatus を取得します。
 description: UserAppInstallStatus オブジェクトのプロパティと関係を参照してください。
-ms.openlocfilehash: 98716dddb7ad6a649d8e847fa13c5a4eff1f39f4
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 1cb2f6d7b99ea6ebd0efd885cbeb589610c71489
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27072634"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27328155"
 ---
 # <a name="get-userappinstallstatus"></a>UserAppInstallStatus を取得します。
 

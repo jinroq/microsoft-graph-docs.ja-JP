@@ -1,12 +1,13 @@
 ---
 title: Outlooktaskgroup を更新します。
 description: Outlook のタスク グループの書き込み可能なプロパティを更新します。
-ms.openlocfilehash: cbe2ae7248f37d9d243673610550a6a974acffb0
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: angelgolfer-ms
+ms.openlocfilehash: 40d146f90bf512ec9afa8790d7f02d4039dd53cc
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27068695"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27334903"
 ---
 # <a name="update-outlooktaskgroup"></a>Outlooktaskgroup を更新します。
 
@@ -37,7 +38,7 @@ PATCH /users/{id|userPrincipalName}/outlook/taskGroups/{id}
 ## <a name="request-body"></a>要求本文
 要求本文で、更新する関連フィールドの値を指定します。要求本文に含まれない既存のプロパティは、以前の値のままになるか、他のプロパティ値の変化に基づいて再計算されます。最適なパフォーマンスを得るためには、変更されていない既存の値を含めないでください。
 
-| プロパティ     | 型   |説明|
+| プロパティ     | 種類   |説明|
 |:---------------|:--------|:----------|
 |名前|String|タスク グループの名前。|
 

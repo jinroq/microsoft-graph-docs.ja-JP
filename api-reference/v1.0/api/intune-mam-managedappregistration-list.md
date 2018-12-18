@@ -1,12 +1,13 @@
 ---
 title: managedAppRegistrations のリスト
 description: managedAppRegistration オブジェクトのプロパティとリレーションシップをリストします。
-ms.openlocfilehash: 9e5579b604216ebc770858c30f91dbe9a20d5805
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: f51cea4eb5881e8a6d75a60b5877bf1175673e21
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27023912"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27332236"
 ---
 # <a name="list-managedappregistrations"></a>managedAppRegistrations のリスト
 

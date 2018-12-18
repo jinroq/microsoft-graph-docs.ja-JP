@@ -1,12 +1,13 @@
 ---
 title: windows81CompliancePolicy リソース タイプ
 description: このクラスには、Windows 8.1 のコンプライアンス設定が含まれています。
-ms.openlocfilehash: 6a073d9b4e3eeaace80d7982ec9bec4196f7a252
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 43a61c203a74123877264b070c3ed6a0322f3859
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27068304"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27335995"
 ---
 # <a name="windows81compliancepolicy-resource-type"></a>windows81CompliancePolicy リソース タイプ
 
@@ -28,7 +29,7 @@ ms.locfileid: "27068304"
 |[Update windows81CompliancePolicy](../api/intune-deviceconfig-windows81compliancepolicy-update.md)|[windows81CompliancePolicy](../resources/intune-deviceconfig-windows81compliancepolicy.md)|[windows81CompliancePolicy](../resources/intune-deviceconfig-windows81compliancepolicy.md) オブジェクトのプロパティを更新します。|
 
 ## <a name="properties"></a>プロパティ
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
 |roleScopeTagIds|String コレクション|このエンティティ インスタンスのスコープのタグのリストです。 [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md) から継承します|
 |id|String|エンティティのキー。 [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md) から継承します|

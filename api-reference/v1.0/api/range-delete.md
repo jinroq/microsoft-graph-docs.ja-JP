@@ -1,12 +1,13 @@
 ---
 title: '範囲: 削除'
 description: 範囲に関連付けられているセルを削除します。
-ms.openlocfilehash: fef8caad6099e37698db0c501c7fb8e2c7ef452e
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lumine2008
+ms.openlocfilehash: 8abcc24161aef5dbb8fa40e028b21b9e54c0ff39
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27020861"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27335617"
 ---
 # <a name="range-delete"></a>範囲: 削除
 
@@ -37,7 +38,7 @@ POST /workbook/tables/{id|name}/columns/{id|name}/range/delete
 ## <a name="request-body"></a>要求本文
 要求本文で、次のパラメーターを含む JSON オブジェクトを指定します。
 
-| パラメーター    | 型   |説明|
+| パラメーター    | 種類   |説明|
 |:---------------|:--------|:----------|
 |<legacyBold>Shift</legacyBold>|文字列|セルをシフトする方向を指定します。  可能な値: `Up`、 `Left`。|
 

@@ -1,12 +1,13 @@
 ---
 title: managedEBookAssignment の作成
 description: 新しい managedEBookAssignment オブジェクトを作成します。
-ms.openlocfilehash: 74e65f386d4699010924e9ac616b479f14464f66
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: fe8b9eec506b228b1565b0f01a8a1f6edd78f2fb
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27066636"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27330262"
 ---
 # <a name="create-managedebookassignment"></a>managedEBookAssignment の作成
 
@@ -44,9 +45,9 @@ POST /deviceAppManagement/managedEBooks/{managedEBookId}/assignments
 
 次の表に、managedEBookAssignment の作成時に必要なプロパティを示します。
 
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
-|id|String|エンティティのキー。|
+|ID|String|エンティティのキー。|
 |target|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|電子ブックの割り当て先。|
 |installIntent|[installIntent](../resources/intune-shared-installintent.md)|電子ブックのインストールの目的。 可能な値は、`available`、`required`、`uninstall`、`availableWithoutEnrollment` です。|
 

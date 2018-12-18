@@ -1,12 +1,13 @@
 ---
 title: teamsAppDefinition リソースの種類
 description: TeamsApp の 1 つのバージョンの詳細。
-ms.openlocfilehash: b2a5b86de67fa1a4ecf673434b13d09c64ebe678
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: nkramer
+ms.openlocfilehash: 71a1783131661aed120f375f7cc58d55fb0ca0d2
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27073021"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27336835"
 ---
 # <a name="teamsappdefinition-resource-type"></a>teamsAppDefinition リソースの種類
 
@@ -14,12 +15,12 @@ ms.locfileid: "27073021"
 
 の[teamsApp](teamsapp.md)の 1 つのバージョンの詳細。
 
-## <a name="properties"></a>プロパティ
+## <a name="properties"></a>Properties
 
-| プロパティ            | 型     | 説明 |
+| プロパティ            | 種類     | 説明 |
 |:------------------- |:-------- |:----------- |
-| ID                  | 文字列   | 一意の id (チームの appid とは異なる)。 |
-| teamsAppId          | 文字列   | チームのアプリケーション マニフェストの id です。 |
+| ID                  | string   | 一意の id (チームの appid とは異なる)。 |
+| teamsAppId          | string   | チームのアプリケーション マニフェストの id です。 |
 | displayName         | string   | アプリケーション開発者によって提供されるアプリケーションの名前。 |
 | version             | 文字列   | アプリケーションのバージョン番号です。 |
 

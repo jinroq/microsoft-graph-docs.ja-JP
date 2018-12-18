@@ -1,12 +1,13 @@
 ---
 title: registeredUsers を一覧表示する
 description: デバイスの登録ユーザーの一覧を取得します。
-ms.openlocfilehash: 370990b5b9c61b071620fe0df04fd38e98892bd1
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 7b6f861e275ea36eb864aee5958c94055e8e8168
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27023444"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27336800"
 ---
 # <a name="list-registeredusers"></a>registeredUsers を一覧表示する
 
@@ -32,7 +33,7 @@ GET /devices/{id}/registeredUsers
 ## <a name="optional-query-parameters"></a>オプションのクエリ パラメーター
 このメソッドは、応答をカスタマイズするための [OData クエリ パラメーター](https://developer.microsoft.com/graph/docs/concepts/query_parameters)をサポートします。
 ## <a name="request-headers"></a>要求ヘッダー
-| 名前       | 型 | 説明|
+| 名前       | 種類 | 説明|
 |:-----------|:------|:----------|
 | Authorization  | string  | ベアラー {トークン}。必須。 |
 

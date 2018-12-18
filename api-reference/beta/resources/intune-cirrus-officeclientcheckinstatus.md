@@ -1,12 +1,13 @@
 ---
 title: officeClientCheckinStatus リソースの種類
 description: チェックインのテナント統計 (stats) を記述するエンティティです。
-ms.openlocfilehash: a87a085d42ce0754e046b319b270ddf90a3bdba7
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 0c6359d3cb6c776d0f26fdaf88ce7f2f03e5f8c7
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27069091"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27331718"
 ---
 # <a name="officeclientcheckinstatus-resource-type"></a>officeClientCheckinStatus リソースの種類
 
@@ -15,14 +16,14 @@ ms.locfileid: "27069091"
 > **注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
 
 チェックインのテナント統計 (stats) を記述するエンティティです。
-## <a name="properties"></a>プロパティ
-|プロパティ|型|説明|
+## <a name="properties"></a>Properties
+|プロパティ|種類|説明|
 |:---|:---|:---|
 |userPrincipalName|String|ユーザー プリンシパル名は、デバイスを使用します。|
 |deviceName|String|チェックインしようとするデバイスの名前。|
 |devicePlatform|String|デバイスのプラットフォームにチェックインしようとします。|
 |devicePlatformVersion|String|デバイス プラットフォームのバージョンがチェックインをしようとします。|
-|wasSuccessful|ブール値|最後のチェックインが正常に完了しました。 場合、|
+|wasSuccessful|ブール型|最後のチェックインが正常に完了しました。 場合、|
 |userId|String|デバイスを使用してユーザーの識別子です。|
 |checkinDateTime|DateTimeOffset|最後デバイス チェックの時間 (utc) です。|
 |エラー メッセージ|String|最後のチェックインに関連付けられている場合のエラー メッセージです。|

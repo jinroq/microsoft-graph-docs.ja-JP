@@ -1,12 +1,13 @@
 ---
 title: importedWindowsAutopilotDeviceIdentity リソースの種類
 description: インポートした Windows Autopilot デバイス。
-ms.openlocfilehash: c34f83845f0b964bd0b6e4b83b5a2b4b351f35c4
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: f5a0b78b2faf6b76fcfd73dec66b3baee71af135
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27069201"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27326013"
 ---
 # <a name="importedwindowsautopilotdeviceidentity-resource-type"></a>importedWindowsAutopilotDeviceIdentity リソースの種類
 
@@ -25,14 +26,14 @@ ms.locfileid: "27069201"
 |[importedWindowsAutopilotDeviceIdentity の更新](../api/intune-enrollment-importedwindowsautopilotdeviceidentity-update.md)|[importedWindowsAutopilotDeviceIdentity](../resources/intune-enrollment-importedwindowsautopilotdeviceidentity.md)|[importedWindowsAutopilotDeviceIdentity](../resources/intune-enrollment-importedwindowsautopilotdeviceidentity.md) オブジェクトのプロパティを更新します。|
 
 ## <a name="properties"></a>プロパティ
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
-|id|String|オブジェクトの GUID|
+|ID|String|オブジェクトの GUID|
 |orderIdentifier|String|Windows オートパイロット デバイスの受注 ID。|
 |シリアル番号|String|Windows オートパイロット デバイスのシリアル番号。|
 |productKey|String|Windows オートパイロット デバイスのプロダクト キー。|
-|hardwareIdentifier|バイナリ|Windows オートパイロット デバイスのハードウェア BLOB。|
-|状態|[importedWindowsAutopilotDeviceIdentityState](../resources/intune-enrollment-importedwindowsautopilotdeviceidentitystate.md)|インポートしたデバイスの現在の状態。|
+|hardwareIdentifier|Binary|Windows オートパイロット デバイスのハードウェア BLOB。|
+|state|[importedWindowsAutopilotDeviceIdentityState](../resources/intune-enrollment-importedwindowsautopilotdeviceidentitystate.md)|インポートしたデバイスの現在の状態。|
 
 ## <a name="relationships"></a>リレーションシップ
 なし

@@ -1,12 +1,13 @@
 ---
 title: visibilitySetting 列挙型
 description: 汎用的な可視性の状態です。
-ms.openlocfilehash: 1bfaf112111f837270f5f088c78822bf4b98e45a
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: a3a765a2c3404875d047bd81774c204b280b90ac
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27066366"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27333454"
 ---
 # <a name="visibilitysetting-enum-type"></a>visibilitySetting 列挙型
 

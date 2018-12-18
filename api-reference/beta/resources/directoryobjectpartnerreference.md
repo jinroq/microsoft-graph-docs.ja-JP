@@ -1,12 +1,13 @@
 ---
 title: directoryObjectPartnerReference リソースの種類
 description: パートナー テナント内のディレクトリ オブジェクトへの参照を表します。 directoryObject から継承します。
-ms.openlocfilehash: ebdd7380eaa6b59488aca46120339f7175b640fa
-ms.sourcegitcommit: 72d4da2a6bfaf99fa4edaf6ce3b97b1a6d96d874
+author: lleonard-msft
+ms.openlocfilehash: 37a60c126ef74f3073f258ba799cf276fda4f5cf
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/11/2018
-ms.locfileid: "27224128"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27336947"
 ---
 # <a name="directoryobjectpartnerreference-resource-type"></a>directoryObjectPartnerReference リソースの種類
 
@@ -14,15 +15,15 @@ ms.locfileid: "27224128"
 
 パートナー組織内のディレクトリ オブジェクトへの参照を表します。 [directoryObject](directoryobject.md?view=graph-rest-beta) から継承します。
 
-## <a name="properties"></a>プロパティ
+## <a name="properties"></a>Properties
 
 | プロパティ | 種類 | 説明 |
 |:---------------|:--------|:----------|
 |説明|String| オブジェクトの説明が返されます。 読み取り専用です。 |
-|displayName|String| グループまたはアプリケーションのように、返されるディレクトリ オブジェクトの名前です。 取得のみ可能な値です。 |
-|externalPartnerTenantId|Guid| パートナー テナントにテナントの識別子です。 読み取り専用。 |
-|id|String| リソースの一意識別子。 [directoryObject](directoryobject.md?view=graph-rest-beta) から継承されます。 取得のみ可能な値です。 |
-|objectType|String| パートナー テナントで参照されるオブジェクトの型。 取得のみ可能な値です。 |
+|displayName|String| グループまたはアプリケーションのように、返されるディレクトリ オブジェクトの名前です。 読み取り専用です。 |
+|externalPartnerTenantId|Guid| パートナー テナントにテナントの識別子です。 読み取り専用です。 |
+|id|String| リソースの一意識別子。 [directoryObject](directoryobject.md?view=graph-rest-beta) から継承されます。 読み取り専用です。 |
+|objectType|String| パートナー テナントで参照されるオブジェクトの型。 読み取り専用です。 |
 
 ## <a name="json-representation"></a>JSON 表記
 

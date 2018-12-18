@@ -1,12 +1,13 @@
 ---
 title: Update chartlegend
 description: chartlegend オブジェクトのプロパティを更新します。
-ms.openlocfilehash: c9c3d39bda04e178a892c94f2ea533460a7bfad8
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lumine2008
+ms.openlocfilehash: 0d47d674bd96fc92b84b7dbbc064145b20a8827d
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27024319"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27335743"
 ---
 # <a name="update-chartlegend"></a>Update chartlegend
 
@@ -34,7 +35,7 @@ PATCH /workbook/worksheets/{id|name}/charts/{name}/legend
 ## <a name="request-body"></a>要求本文
 要求本文で、更新する関連フィールドの値を指定します。要求本文に含まれない既存のプロパティは、以前の値のままになるか、他のプロパティ値の変化に基づいて再計算されます。最適なパフォーマンスを得るためには、変更されていない既存の値を含めないでください。
 
-| プロパティ     | 型   |説明|
+| プロパティ     | 種類   |説明|
 |:---------------|:--------|:----------|
 |overlay|ブール値|グラフの凡例をグラフの本体に重ねるかどうかを指定するブール型の値です。|
 |position|文字列|グラフの凡例の位置を表します。 可能な値: `Top`、 `Bottom`、 `Left`、 `Right`、 `Corner`、 `Custom`。|

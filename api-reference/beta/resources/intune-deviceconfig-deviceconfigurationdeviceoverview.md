@@ -1,12 +1,13 @@
 ---
 title: deviceConfigurationDeviceOverview リソースの種類
 description: まだ文書化されていません
-ms.openlocfilehash: 3ed4370b06de330238d426b5c77cfbc94a460a54
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 32011d2c354486a3ea9d029970cf57d76843bff3
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27070312"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27332348"
 ---
 # <a name="deviceconfigurationdeviceoverview-resource-type"></a>deviceConfigurationDeviceOverview リソースの種類
 
@@ -22,9 +23,9 @@ ms.locfileid: "27070312"
 |[Update deviceConfigurationDeviceOverview](../api/intune-deviceconfig-deviceconfigurationdeviceoverview-update.md)|[deviceConfigurationDeviceOverview](../resources/intune-deviceconfig-deviceconfigurationdeviceoverview.md)|[deviceConfigurationDeviceOverview](../resources/intune-deviceconfig-deviceconfigurationdeviceoverview.md) オブジェクトのプロパティを更新します。|
 
 ## <a name="properties"></a>プロパティ
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
-|id|String|エンティティのキー。|
+|ID|String|エンティティのキー。|
 |pendingCount|Int32|保留中のデバイスの数|
 |notApplicableCount|Int32|該当しないデバイスの数|
 |notApplicablePlatformCount|Int32|一致していないプラットフォームとポリシーが適用されないデバイスの数|

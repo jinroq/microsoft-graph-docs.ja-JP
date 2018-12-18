@@ -1,12 +1,13 @@
 ---
 title: デバイス グループを一覧表示
 description: このデバイスが直接のメンバーであるグループを取得します。 この操作は、推移的ではありません。
-ms.openlocfilehash: fae373a896a2fc048257a5dc6cd9eb07a85ec677
-ms.sourcegitcommit: 4aebfaefc23e02a98b2fec35958cd2110020f15f
+author: tfitzmac
+ms.openlocfilehash: da0001ab6a609e6f262aa6880306977b9c655b01
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/06/2018
-ms.locfileid: "27184470"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27336492"
 ---
 # <a name="list-device-groups"></a>デバイス グループを一覧表示
 

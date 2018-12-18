@@ -1,12 +1,13 @@
 ---
 title: webApp の作成
 description: 新しい webApp オブジェクトを作成します。
-ms.openlocfilehash: ea048b1beb1c036ea8bc8c1bd4f6e904e446b87c
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 0ebe226b42fb0a35658a08107c9826a7401825db
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27069922"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27330927"
 ---
 # <a name="create-webapp"></a>webApp の作成
 
@@ -44,9 +45,9 @@ POST /deviceAppManagement/mobileApps
 
 次の表に、webApp 作成時に必要なプロパティを示します。
 
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
-|id|String|エンティティのキー。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|
+|ID|String|エンティティのキー。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|
 |displayName|String|管理者が提供またはインポートしたアプリのタイトル。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|
 |説明|String|アプリの説明。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|
 |publisher|String|アプリの発行元。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|

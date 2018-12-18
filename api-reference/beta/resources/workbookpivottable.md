@@ -1,12 +1,13 @@
 ---
 title: ピボットテーブル リソースの種類
 description: Excel のピボットテーブルを表します。
-ms.openlocfilehash: 3cba1263715400def6b66149ecec11eddde5e686
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lumine2008
+ms.openlocfilehash: ac148cf84961aa0b745931351218289c985aceb0
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27072407"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27328967"
 ---
 # <a name="pivottable-resource-type"></a>ピボットテーブル リソースの種類
 
@@ -23,9 +24,9 @@ Excel のピボットテーブルを表します。
 |[Refreshall](../api/workbookpivottable-refreshall.md)|なし|指定したワークシート内のすべてのテーブルを更新します。このアクションは、ピボットテーブルのコレクションでのみ使用できることに注意してください。|
 
 ## <a name="properties"></a>プロパティ
-| プロパティ     | 型   |説明|
+| プロパティ     | 種類   |説明|
 |:---------------|:--------|:----------|
-|id|String| ピボットテーブルの ID。 読み取り専用です。|
+|ID|String| ピボットテーブルの ID。 読み取り専用です。|
 |name|String|ピボットテーブルの名前。    |
 
 ## <a name="relationships"></a>リレーションシップ

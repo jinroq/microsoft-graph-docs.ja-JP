@@ -1,19 +1,20 @@
 ---
 title: WorksheetProtectionOptions リソースの種類
 description: シート保護のオプションを表します。
-ms.openlocfilehash: ef086b911a154df2eddf92ee57b89d570ef12247
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lumine2008
+ms.openlocfilehash: d7217c825e1ac1fef297882ddf984bc94b10cc12
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27023887"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27335190"
 ---
 # <a name="worksheetprotectionoptions-resource-type"></a>WorksheetProtectionOptions リソースの種類
 
 シート保護のオプションを表します。
 
 ## <a name="properties"></a>プロパティ
-| プロパティ     | 型   |説明|
+| プロパティ     | 種類   |説明|
 |:---------------|:--------|:----------|
 |allowAutoFilter|ブール値|自動フィルター機能の使用を可能にするワークシート保護オプションを表します。|
 |allowDeleteColumns|ブール値|列の削除を可能にするワークシート保護オプションを表します。|

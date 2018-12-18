@@ -1,12 +1,13 @@
 ---
 title: mobileAppTroubleshootingHistoryItem リソースの種類
 description: 履歴項目は、モバイル アプリケーションのトラブルシューティング イベントに含まれています。
-ms.openlocfilehash: 8fdeb522cd714f9265bc9f453fb5381bd925c481
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 132039a0b6e457ebd2ca3e545f6f15dd4ad7ac58
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27071905"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27329527"
 ---
 # <a name="mobileapptroubleshootinghistoryitem-resource-type"></a>mobileAppTroubleshootingHistoryItem リソースの種類
 
@@ -15,8 +16,8 @@ ms.locfileid: "27071905"
 > **注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
 
 履歴項目は、モバイル アプリケーションのトラブルシューティング イベントに含まれています。
-## <a name="properties"></a>プロパティ
-|プロパティ|型|説明|
+## <a name="properties"></a>Properties
+|プロパティ|種類|説明|
 |:---|:---|:---|
 |occurrenceDateTime|DateTimeOffset|履歴項目が発生した時刻です。|
 

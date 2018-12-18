@@ -1,12 +1,13 @@
 ---
 title: ユーザーを更新する
 description: ユーザー オブジェクトのプロパティを更新します。
-ms.openlocfilehash: 38d7cba46cde64dc5d83f88063f2de79057ad9f9
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: dkershaw10
+ms.openlocfilehash: 5bd1c858a34cf4afb1b9c61e4550fce05511232e
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27073326"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27334917"
 ---
 # <a name="update-user"></a>ユーザーを更新する
 
@@ -36,10 +37,10 @@ PATCH /users/{id | userPrincipalName}
 ## <a name="request-body"></a>要求本文
 要求本文で、更新する関連フィールドの値を指定します。要求本文に含まれない既存のプロパティは、以前の値のままになるか、他のプロパティ値の変化に基づいて再計算されます。最適なパフォーマンスを得るためには、変更されていない既存の値を含めないでください。
 
-| プロパティ     | 型   |説明|
+| プロパティ     | 種類   |説明|
 |:---------------|:--------|:----------|
 |aboutMe|String|ユーザーが自分自身について記述する、フリー フォームのテキスト入力フィールド。|
-|accountEnabled|ブール値| アカウントが有効な場合は **true**。そうでない場合は **false**。このプロパティは、ユーザーの作成時に必要です。$filter をサポートします。    |
+|accountEnabled|Boolean| アカウントが有効な場合は **true**。そうでない場合は **false**。このプロパティは、ユーザーの作成時に必要です。$filter をサポートします。    |
 |assignedLicenses|[assignedLicense](../resources/assignedlicense.md) collection|ユーザーに割り当てられているライセンス。null 許容ではありません。            |
 |birthday|DateTimeOffset|ユーザーの誕生日。Timestamp 型は、ISO 8601 形式を使用して日付と時刻の情報を表し、必ず UTC 時間です。たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、次のようになります。`'2014-01-01T00:00:00Z'`|
 |city|String|ユーザーがいる都市。$filter をサポートします。|

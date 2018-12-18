@@ -1,12 +1,13 @@
 ---
 title: applePushNotificationCertificate の更新
 description: applePushNotificationCertificate オブジェクトのプロパティを更新します。
-ms.openlocfilehash: 640fae8367813682f890ee41e11614c44d933412
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: b81a6a9dc887ddfea387a904219bba529729d01a
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27022486"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27335344"
 ---
 # <a name="update-applepushnotificationcertificate"></a>applePushNotificationCertificate の更新
 
@@ -42,9 +43,9 @@ PATCH /deviceManagement/applePushNotificationCertificate
 
 次の表に、[applePushNotificationCertificate](../resources/intune-devices-applepushnotificationcertificate.md) の作成時に必要なプロパティを示します。
 
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
-|id|String|証明書の一意識別子|
+|ID|String|証明書の一意識別子|
 |appleIdentifier|String|MDM プッシュ証明書の作成に使用するアカウントの Apple ID。|
 |topicIdentifier|String|トピック ID。|
 |lastModifiedDateTime|DateTimeOffset|Apple プッシュ通知証明書の最終変更日時。|

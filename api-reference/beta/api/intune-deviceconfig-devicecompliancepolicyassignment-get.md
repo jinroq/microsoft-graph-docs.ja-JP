@@ -1,12 +1,13 @@
 ---
 title: Get deviceCompliancePolicyAssignment
 description: deviceCompliancePolicyAssignment オブジェクトのプロパティとリレーションシップを読み取ります。
-ms.openlocfilehash: 8bcfff8722a755803c247dc8d58a1bd9a04628d9
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 64b403ca0b0d23097d08613c5a595ad0a8df2ef0
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27070119"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27330339"
 ---
 # <a name="get-devicecompliancepolicyassignment"></a>Get deviceCompliancePolicyAssignment
 

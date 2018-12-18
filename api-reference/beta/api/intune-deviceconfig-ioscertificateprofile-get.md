@@ -1,12 +1,13 @@
 ---
 title: Get iosCertificateProfile
 description: iosCertificateProfile オブジェクトのプロパティとリレーションシップを読み取ります。
-ms.openlocfilehash: c4ea3241dc5c49bc54490651831c5cc0b068670c
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 8281f5a64a150c9410d71974118dd1b0a9ce3c2c
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27073083"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27327889"
 ---
 # <a name="get-ioscertificateprofile"></a>Get iosCertificateProfile
 

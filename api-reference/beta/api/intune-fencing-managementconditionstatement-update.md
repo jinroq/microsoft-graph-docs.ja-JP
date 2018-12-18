@@ -1,12 +1,13 @@
 ---
 title: ManagementConditionStatement を更新します。
 description: ManagementConditionStatement オブジェクトのプロパティを更新します。
-ms.openlocfilehash: a4fd1ae650f0523a0e56498949c3feafd08b8a25
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 56de75540fa774f32fab7b6edf2795f3ac0d5351
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27073704"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27333447"
 ---
 # <a name="update-managementconditionstatement"></a>ManagementConditionStatement を更新します。
 
@@ -45,9 +46,9 @@ PATCH /deviceManagement/managementConditions/{managementConditionId}/managementC
 
 [ManagementConditionStatement](../resources/intune-fencing-managementconditionstatement.md)を作成するときに必要なプロパティを次の表に示します。
 
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
-|id|String|管理条件付きステートメントの一意の識別子です。 システムでは、作成時に割り当てられた値が生成されます。|
+|ID|String|管理条件付きステートメントの一意の識別子です。 システムでは、作成時に割り当てられた値が生成されます。|
 |displayName|String|管理者は、管理条件ステートメントの名前を定義します。|
 |説明|String|管理者は、管理条件付きステートメントの説明を定義します。|
 |createdDateTime|DateTimeOffset|管理条件付きステートメントが作成された時刻。 サービス側が生成されます。|

@@ -1,12 +1,13 @@
 ---
 title: updateDeviceProfileAssignment アクション
 description: まだ文書化されていません
-ms.openlocfilehash: b42460956f8e39e696bed5a2adc256e37ac7676e
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 9f9fb1b628d12dd1eacb2a30dfefa82a3736c23e
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27068414"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27326706"
 ---
 # <a name="updatedeviceprofileassignment-action"></a>updateDeviceProfileAssignment アクション
 
@@ -44,7 +45,7 @@ POST /deviceManagement/depOnboardingSettings/{depOnboardingSettingId}/enrollment
 
 次の表に、このアクションで使用できるパラメーターを示します。
 
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
 |deviceIds|String コレクション|まだ文書化されていません|
 

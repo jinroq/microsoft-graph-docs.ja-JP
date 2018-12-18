@@ -1,12 +1,13 @@
 ---
 title: deviceAndAppManagementRoleDefinition の削除
 description: deviceAndAppManagementRoleDefinition の削除
-ms.openlocfilehash: ed9f150a23fdf42342f4d45b68cfc2431aa9ed40
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 371e7a965dbaefef10bf6af09b006d2ba3412a60
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27022263"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27331291"
 ---
 # <a name="delete-deviceandappmanagementroledefinition"></a>deviceAndAppManagementRoleDefinition の削除
 

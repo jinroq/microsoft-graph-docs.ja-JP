@@ -1,12 +1,13 @@
 ---
 title: deviceCompliancePolicySettingState リソースの種類
 description: 特定のデバイスに関する、デバイス コンプライアンス ポリシーの設定状態です。
-ms.openlocfilehash: d73cbe591e30e465065e0c446c6d98d7232a049c
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: fbad84edffaeb3abdff0c00fdd55c1451d23a721
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27071784"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27327959"
 ---
 # <a name="devicecompliancepolicysettingstate-resource-type"></a>deviceCompliancePolicySettingState リソースの種類
 
@@ -16,7 +17,7 @@ ms.locfileid: "27071784"
 
 特定のデバイスに関する、デバイス コンプライアンス ポリシーの設定状態です。
 ## <a name="properties"></a>プロパティ
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
 |setting|String|レポートされている設定値です。|
 |settingName|String|レポートされている、ローカライズされた設定名またはユーザー フレンドリな設定名です|

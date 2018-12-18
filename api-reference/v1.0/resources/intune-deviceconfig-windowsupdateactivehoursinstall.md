@@ -1,12 +1,13 @@
 ---
 title: windowsUpdateActiveHoursInstall リソースの種類
 description: まだ文書化されていません
-ms.openlocfilehash: c9647cda65d680629fda57e3dfdcbffb3d5d8625
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: d5ebe214a79e880adc408f3c55c2b9d39f00668d
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27020335"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27327693"
 ---
 # <a name="windowsupdateactivehoursinstall-resource-type"></a>windowsUpdateActiveHoursInstall リソースの種類
 
@@ -17,7 +18,7 @@ ms.locfileid: "27020335"
 [windowsUpdateInstallScheduleType](../resources/intune-deviceconfig-windowsupdateinstallscheduletype.md) からの継承
 
 ## <a name="properties"></a>プロパティ
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
 |activeHoursStart|TimeOfDay|アクティブ時間の開始|
 |activeHoursEnd|TimeOfDay|アクティブ時間の終了|

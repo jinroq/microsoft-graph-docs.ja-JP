@@ -1,12 +1,13 @@
 ---
 title: Delete contactFolder
 description: 既定の contactFolder 以外の contactFolder を削除します。
-ms.openlocfilehash: dd1ed79981051a1fbbc362e8f586281aa2659b57
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: angelgolfer-ms
+ms.openlocfilehash: 26ff5f9a2ef78d33fd60b498e891f031891b6f17
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27070265"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27334014"
 ---
 # <a name="delete-contactfolder"></a>Delete contactFolder
 
@@ -29,7 +30,7 @@ DELETE /me/contactFolders/{id}
 DELETE /users/{id | userPrincipalName}/contactFolders/{id}
 ```
 ## <a name="request-headers"></a>要求ヘッダー
-| 名前       | 型 | 説明|
+| 名前       | 種類 | 説明|
 |:---------------|:--------|:----------|
 | Authorization  | string  | ベアラー {トークン}。必須。 |
 

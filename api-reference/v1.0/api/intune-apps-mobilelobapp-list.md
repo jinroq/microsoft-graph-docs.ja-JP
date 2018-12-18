@@ -1,12 +1,13 @@
 ---
 title: mobileLobApps のリスト
 description: mobileLobApp オブジェクトのプロパティとリレーションシップをリストします。
-ms.openlocfilehash: 370fdf99a3506aa97b10ee1546af2f0b3acc0733
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 2ae7bed1cc876db5df19b620cd9f7aa45b0008b3
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27023083"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27331781"
 ---
 # <a name="list-mobilelobapps"></a>mobileLobApps のリスト
 

@@ -1,12 +1,13 @@
 ---
 title: syncLicenses アクション
 description: 特定の appleVolumePurchaseProgramToken に関連付けられたライセンスを同期します
-ms.openlocfilehash: 167fbb16b9377e3134c1a4403433449341e21562
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 541d974666988a165293f8e4241d0a15d712209a
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27024256"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27336604"
 ---
 # <a name="synclicenses-action"></a>syncLicenses アクション
 

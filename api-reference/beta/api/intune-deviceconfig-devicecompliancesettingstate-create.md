@@ -1,12 +1,13 @@
 ---
 title: deviceComplianceSettingState の作成
 description: 新しい deviceComplianceSettingState オブジェクトを作成します。
-ms.openlocfilehash: cb5f4ba5a71b9c7887dabdbf1c51c7665db26d70
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: ab149e492b133ae2d39805e6ef6e3b6f93e484e6
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27074120"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27332894"
 ---
 # <a name="create-devicecompliancesettingstate"></a>deviceComplianceSettingState の作成
 
@@ -44,9 +45,9 @@ POST /deviceManagement/deviceCompliancePolicySettingStateSummaries/{deviceCompli
 
 次の表に、deviceComplianceSettingState の作成時に必要なプロパティを示します。
 
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
-|id|String|エンティティのキー|
+|ID|String|エンティティのキー|
 |platformType|[deviceType](../resources/intune-shared-devicetype.md)|デバイス プラットフォームのタイプです。 使用可能な値: `desktop`、 `windowsRT`、 `winMO6`、 `nokia`、 `windowsPhone`、 `mac`、 `winCE`、 `winEmbedded`、 `iPhone`、 `iPad`、 `iPod`、 `android`、 `iSocConsumer`、 `unix`、 `macMDM`、 `holoLens`、 `surfaceHub`、 `androidForWork`、 `androidEnterprise`, `blackberry`, `palm`, `unknown`.|
 |setting|String|設定のクラス名とプロパティ名。|
 |settingName|String|レポートされている設定名。|

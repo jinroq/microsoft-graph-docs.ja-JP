@@ -1,12 +1,13 @@
 ---
 title: グループの削除
 description: グループを削除します。
-ms.openlocfilehash: c4a4f1cb370ec24a8b6bb0f5528e9983d47f206f
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: dkershaw10
+ms.openlocfilehash: 6377c3d7865ebcc1ef13a649afbde083163e7048
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27023614"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27326279"
 ---
 # <a name="delete-group"></a>グループの削除
 グループを削除します。
@@ -27,7 +28,7 @@ DELETE /groups/{id}
 ```
 
 ## <a name="request-headers"></a>要求ヘッダー
-| 名前       | 型 | 説明|
+| 名前       | 種類 | 説明|
 |:---------------|:--------|:----------|
 | Authorization  | string  | ベアラー {トークン}。必須。 |
 

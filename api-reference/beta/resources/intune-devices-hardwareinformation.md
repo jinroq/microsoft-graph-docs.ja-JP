@@ -1,12 +1,13 @@
 ---
 title: hardwareInformation リソースの種類
 description: 特定のデバイスのハードウェア情報です。
-ms.openlocfilehash: 90762426ef3d7b550b9a6fe89343e54d797b3a51
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: c483aa800d920a50392d21c326cd20dea7b72e18
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27070883"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27334525"
 ---
 # <a name="hardwareinformation-resource-type"></a>hardwareInformation リソースの種類
 
@@ -15,8 +16,8 @@ ms.locfileid: "27070883"
 > **注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
 
 特定のデバイスのハードウェア情報です。
-## <a name="properties"></a>プロパティ
-|プロパティ|型|説明|
+## <a name="properties"></a>Properties
+|プロパティ|種類|説明|
 |:---|:---|:---|
 |シリアル番号|String|シリアル番号です。|
 |totalStorageSpace|Int64|デバイスの合計容量。|
@@ -31,8 +32,8 @@ ms.locfileid: "27070883"
 |wifiMac|String|デバイスの WiFi の MAC アドレス|
 |operatingSystemLanguage|String|デバイスのオペレーティング システムの言語|
 |isSupervised|Boolean|デバイスのコールを管理モード|
-|isEncrypted|Boolean|デバイスの暗号化の状態|
-|isSharedDevice|ブール値|IPad の共有|
+|isEncrypted|ブール型|デバイスの暗号化の状態|
+|isSharedDevice|ブール型|IPad の共有|
 |sharedDeviceCachedUsers|[sharedAppleDeviceUser](../resources/intune-devices-sharedappledeviceuser.md)コレクション|共有の Apple デバイス上のすべてのユーザー|
 |tpmSpecificationVersion|String|仕様のバージョンを指定する文字列。|
 |operatingSystemEdition|String|OS のエディションを指定する文字列。|

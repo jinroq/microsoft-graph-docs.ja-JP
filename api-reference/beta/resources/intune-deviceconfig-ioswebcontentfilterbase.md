@@ -1,12 +1,13 @@
 ---
 title: iosWebContentFilterBase リソースの種類
 description: IOS の Web コンテンツ フィルター設定の基本型を表します。 空と抽象ベースでは。 呼び出し元は、構成の派生型のいずれかを使用する必要があります。
-ms.openlocfilehash: aa504769ca5dc52d7f4cf60fbf2a0d9dab5e083a
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 2b611be8f2715612447ee84ca2301c4708e8b0cf
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27066495"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27332264"
 ---
 # <a name="ioswebcontentfilterbase-resource-type"></a>iosWebContentFilterBase リソースの種類
 
@@ -15,8 +16,8 @@ ms.locfileid: "27066495"
 > **注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
 
 IOS の Web コンテンツ フィルター設定の基本型を表します。 空と抽象ベースでは。 呼び出し元は、構成の派生型のいずれかを使用する必要があります。
-## <a name="properties"></a>プロパティ
-|プロパティ|型|説明|
+## <a name="properties"></a>Properties
+|プロパティ|種類|説明|
 |:---|:---|:---|
 
 ## <a name="relationships"></a>リレーションシップ

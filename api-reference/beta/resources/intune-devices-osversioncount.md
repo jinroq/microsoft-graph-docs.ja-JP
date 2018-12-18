@@ -1,12 +1,13 @@
 ---
 title: osVersionCount リソースの種類
 description: 各オペレーティング システムのバージョンのマルウェアとデバイスの数
-ms.openlocfilehash: 7892761bd0dc20f09ab2deb47549aeb157e25644
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: ccc031c6060604b36166b4869d02f08854dfdd2c
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27072566"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27331998"
 ---
 # <a name="osversioncount-resource-type"></a>osVersionCount リソースの種類
 
@@ -15,8 +16,8 @@ ms.locfileid: "27072566"
 > **注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
 
 各オペレーティング システムのバージョンのマルウェアとデバイスの数
-## <a name="properties"></a>プロパティ
-|プロパティ|型|説明|
+## <a name="properties"></a>Properties
+|プロパティ|種類|説明|
 |:---|:---|:---|
 |osVersion|String|OS のバージョン|
 |deviceCount|Int32|OS のバージョンのマルウェアとデバイスの数|

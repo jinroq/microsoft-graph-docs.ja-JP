@@ -1,12 +1,13 @@
 ---
 title: 'メッセージ: createForward'
 description: 'コメントを含めるまたはメッセージ プロパティを更新するメッセージを転送の下書きを作成します。  '
-ms.openlocfilehash: 8e7710871000222d1281a274ee270885097351f9
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: angelgolfer-ms
+ms.openlocfilehash: 6630bf8486f3fdbc53106ef334aeb23aa36f93dd
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27070418"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27329779"
 ---
 # <a name="message-createforward"></a>メッセージ: createForward
 
@@ -15,7 +16,7 @@ ms.locfileid: "27070418"
 コメントを含めるまたはメッセージ プロパティを更新するメッセージを転送の下書きを作成します。  
 すべてで 1 つの**createForward**を呼び出します。 [下書きメッセージ[を送信](../api/message-send.md)することができます。
 
-**メモ**
+**注**
 
 - **Body**プロパティまたはコメントのいずれかを指定することができます、`message`のパラメーターです。 両方を指定すると、「HTTP 400 要求が正しくありません」というエラーが返されます。
 - どちらかを指定する必要があります、`toRecipients`の**toRecipients**プロパティは、パラメーター、または、`message`パラメーター。 両方を指定するか、どちらも指定しないと、「HTTP 400 要求が正しくありません」というエラーが返されます。
@@ -38,7 +39,7 @@ POST /me/mailFolders/{id}/messages/{id}/createForward
 POST /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/createForward
 ```
 ## <a name="request-headers"></a>要求ヘッダー
-| 名前       | 型 | 説明|
+| 名前       | 種類 | 説明|
 |:---------------|:--------|:----------|
 | Authorization  | string  | ベアラー {トークン}。必須。 |
 | Content-Type | string  | エンティティ本文内のデータの性質です。必須。 |
@@ -46,7 +47,7 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/createForwar
 ## <a name="request-body"></a>要求本文
 要求本文で、次のパラメーターを含む JSON オブジェクトを指定します。
 
-| パラメーター    | 型   |説明|
+| パラメーター    | 種類   |説明|
 |:---------------|:--------|:----------|
 |comment|String|含めるコメントです。空の文字列にすることができます。|
 |toRecipients|[recipient](../resources/recipient.md) collection|受信者の一覧です。|

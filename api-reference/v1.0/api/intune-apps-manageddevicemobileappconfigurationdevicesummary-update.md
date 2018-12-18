@@ -1,12 +1,13 @@
 ---
 title: managedDeviceMobileAppConfigurationDeviceSummary の更新
 description: managedDeviceMobileAppConfigurationDeviceSummary オブジェクトのプロパティを更新します。
-ms.openlocfilehash: cb1f021ad5c41ac513c5e70ae9053c50a8f9b821
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 35a75cba4d67c23f5c011bfe7e75e23452d4c954
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27020970"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27330185"
 ---
 # <a name="update-manageddevicemobileappconfigurationdevicesummary"></a>managedDeviceMobileAppConfigurationDeviceSummary の更新
 
@@ -42,9 +43,9 @@ PATCH /deviceAppManagement/mobileAppConfigurations/{managedDeviceMobileAppConfig
 
 次の表に、[managedDeviceMobileAppConfigurationDeviceSummary](../resources/intune-apps-manageddevicemobileappconfigurationdevicesummary.md) の作成時に必要なプロパティを示します。
 
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
-|id|String|エンティティのキー。|
+|ID|String|エンティティのキー。|
 |pendingCount|Int32|保留中のデバイスの数|
 |notApplicableCount|Int32|該当しないデバイスの数|
 |successCount|Int32|成功したデバイスの数|

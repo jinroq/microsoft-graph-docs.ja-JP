@@ -1,12 +1,13 @@
 ---
 title: win32LobAppMsiPackageType 列挙型
 description: MSI の Win32LobApp のパッケージの種類を示します。
-ms.openlocfilehash: 64b3c4a3b7b946df9bb4e7e932e4cab2a0b6b97b
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 7caf13d48dda3cf8e1b88605c575ae5f6322c6fe
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27072489"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27335680"
 ---
 # <a name="win32lobappmsipackagetype-enum-type"></a>win32LobAppMsiPackageType 列挙型
 

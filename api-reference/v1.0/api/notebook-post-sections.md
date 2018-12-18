@@ -1,12 +1,13 @@
 ---
 title: セクションを作成する
 description: 指定したノートブックに新しい onenoteSection を作成します。
-ms.openlocfilehash: eb612b4ceea14d2c443dff3c31bf79e95e4bff58
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: Jewan-microsoft
+ms.openlocfilehash: 764102e845329f8ce4f6eb8cfe8732e6d5e54c9a
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27023389"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27336975"
 ---
 # <a name="create-section"></a>セクションを作成する
 
@@ -29,7 +30,7 @@ POST /groups/{id}/onenote/notebooks/{id}/sections
 POST /sites/{id}/onenote/notebooks/{id}/sections
 ```
 ## <a name="request-headers"></a>要求ヘッダー
-| 名前       | 型 | 説明|
+| 名前       | 種類 | 説明|
 |:---------------|:--------|:----------|
 | Authorization  | string  | ベアラー {トークン}。必須。 |
 | Content-Type | string | `application/json` |

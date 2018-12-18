@@ -1,12 +1,13 @@
 ---
 title: sectionGroups を一覧表示する
 description: 指定されたノートブックからセクション グループの一覧を取得します。
-ms.openlocfilehash: cdb5ef5b1c98f9e1632ef1cd7c6c5d5885e8d682
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: Jewan-microsoft
+ms.openlocfilehash: faf096ff101c3c4abaeb95075bcc493910e3c18f
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27069344"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27324382"
 ---
 # <a name="list-sectiongroups"></a>sectionGroups を一覧表示する
 
@@ -38,7 +39,7 @@ GET /sites/{id}/onenote/notebooks/{id}/sectionGroups
 既定のクエリが `parentNotebook` を展開し、`id`、`displayName`、`self` プロパティを選択します。セクション グループで有効な `expand` 値は、`sections`、`sectionGroups`、`parentNotebook`、`parentSectionGroup` です。
 
 ## <a name="request-headers"></a>要求ヘッダー
-| 名前       | 型 | 説明|
+| 名前       | 種類 | 説明|
 |:-----------|:------|:----------|
 | Authorization  | string  | ベアラー {トークン}。必須。 |
 | 承諾 | string | `application/json` |

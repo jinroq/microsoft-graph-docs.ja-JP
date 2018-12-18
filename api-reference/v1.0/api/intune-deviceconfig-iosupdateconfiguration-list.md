@@ -1,12 +1,13 @@
 ---
 title: iosUpdateConfigurations のリスト
 description: iosUpdateConfiguration オブジェクトのプロパティとリレーションシップをリストします。
-ms.openlocfilehash: 58e135927b5ae49ee973704375966e35a61ac4d7
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 31e8cbee1f9c39633386786a66f90b74915920a6
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27020567"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27329989"
 ---
 # <a name="list-iosupdateconfigurations"></a>iosUpdateConfigurations のリスト
 

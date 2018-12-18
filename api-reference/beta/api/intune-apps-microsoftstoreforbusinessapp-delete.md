@@ -1,12 +1,13 @@
 ---
 title: microsoftStoreForBusinessApp の削除
 description: microsoftStoreForBusinessApp を削除します。
-ms.openlocfilehash: 51b7d27ec2dcd256a5ee7479cc6c018c2a47b68f
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: f8619220f575803b78802611ff3a7872f03084d3
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27073497"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27336310"
 ---
 # <a name="delete-microsoftstoreforbusinessapp"></a>microsoftStoreForBusinessApp の削除
 

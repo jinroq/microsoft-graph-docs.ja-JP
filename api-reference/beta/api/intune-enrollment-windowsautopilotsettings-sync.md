@@ -1,12 +1,13 @@
 ---
 title: sync アクション
 description: まだ文書化されていません
-ms.openlocfilehash: e6165822707dd4b37cb47f05a0fc916ee8686d3e
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: fd6814c99b188e6c0e8859d7035a533ce6d0b0e3
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27068430"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27332579"
 ---
 # <a name="sync-action"></a>sync アクション
 

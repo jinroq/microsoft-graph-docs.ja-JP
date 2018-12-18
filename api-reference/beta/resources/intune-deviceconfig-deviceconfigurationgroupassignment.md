@@ -1,12 +1,13 @@
 ---
 title: deviceConfigurationGroupAssignment リソースの種類
 description: デバイス構成のグループの割り当て。
-ms.openlocfilehash: 8e4f5b5d2e90b646e7b3c085b33a9a8c0f2a90c6
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 648edd8122c4e14ad06a6e8b19e5fb83a042affa
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27071696"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27334637"
 ---
 # <a name="deviceconfigurationgroupassignment-resource-type"></a>deviceConfigurationGroupAssignment リソースの種類
 
@@ -24,12 +25,12 @@ ms.locfileid: "27071696"
 |[DeviceConfigurationGroupAssignment を削除します。](../api/intune-deviceconfig-deviceconfigurationgroupassignment-delete.md)|なし|の[deviceConfigurationGroupAssignment](../resources/intune-deviceconfig-deviceconfigurationgroupassignment.md)を削除します。|
 |[DeviceConfigurationGroupAssignment を更新します。](../api/intune-deviceconfig-deviceconfigurationgroupassignment-update.md)|[deviceConfigurationGroupAssignment](../resources/intune-deviceconfig-deviceconfigurationgroupassignment.md)|[DeviceConfigurationGroupAssignment](../resources/intune-deviceconfig-deviceconfigurationgroupassignment.md)オブジェクトのプロパティを更新します。|
 
-## <a name="properties"></a>プロパティ
-|プロパティ|型|説明|
+## <a name="properties"></a>Properties
+|プロパティ|種類|説明|
 |:---|:---|:---|
-|id|String|エンティティのキー。|
+|ID|String|エンティティのキー。|
 |targetGroupId|String|AAD グループの Id は、対象としてデバイスを構成します。|
-|excludeGroup|ブール値|かどうかをこのグループを除外するようにします。 既定のグループが含まれている必要があること|
+|excludeGroup|ブール型|かどうかをこのグループを除外するようにします。 既定のグループが含まれている必要があること|
 
 ## <a name="relationships"></a>リレーションシップ
 |リレーションシップ|型|説明|

@@ -1,12 +1,13 @@
 ---
 title: ChartGridlinesFormat リソースの種類
 description: グラフの目盛線の書式設定プロパティをカプセル化します。
-ms.openlocfilehash: 8286cd1a03188e9f6267b0e4731689c18b868083
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lumine2008
+ms.openlocfilehash: 61e75f644e70174bad04d5ae37b15cd07bc4d4bb
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27023207"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27328960"
 ---
 # <a name="chartgridlinesformat-resource-type"></a>ChartGridlinesFormat リソースの種類
 

@@ -1,12 +1,13 @@
 ---
 title: deviceConfigurationAssignment の更新
 description: deviceConfigurationAssignment オブジェクトのプロパティを更新します。
-ms.openlocfilehash: 7bf756193ef2ce60ccf992b0ee5feb7644a461a1
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 51b0269a72dbded4f8bdd157683bc321b55874d3
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27021577"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27336478"
 ---
 # <a name="update-deviceconfigurationassignment"></a>deviceConfigurationAssignment の更新
 
@@ -42,9 +43,9 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/assignments
 
 次の表に、[deviceConfigurationAssignment](../resources/intune-deviceconfig-deviceconfigurationassignment.md) の作成時に必要なプロパティを示します。
 
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
-|id|String|割り当てのキー。|
+|ID|String|割り当てのキー。|
 |target|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|デバイス構成の割り当て先。|
 
 

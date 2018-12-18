@@ -1,12 +1,13 @@
 ---
 title: 'ChartLineFormat: clear'
 description: グラフ要素の線の書式をクリアします。
-ms.openlocfilehash: 0bb03fc43c9a8b059d384f59c2691b995a4e533e
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lumine2008
+ms.openlocfilehash: 7e68d953ebc68d55c899eec6304255dfca0667a6
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27020191"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27331760"
 ---
 # <a name="chartlineformat-clear"></a>ChartLineFormat: clear
 

@@ -1,12 +1,13 @@
 ---
 title: mobileAppAssignment の作成
 description: 新しい mobileAppAssignment オブジェクトを作成します。
-ms.openlocfilehash: f08335f131c97e67cb93d8dafcbce4c39bbef2e8
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 02fec89a615993bb409fbf3ae6c0a98799311bce
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27020617"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27333349"
 ---
 # <a name="create-mobileappassignment"></a>mobileAppAssignment の作成
 
@@ -42,9 +43,9 @@ POST /deviceAppManagement/mobileApps/{mobileAppId}/assignments
 
 次の表に、mobileAppAssignment の作成時に必要なプロパティを示します。
 
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
-|id|String|エンティティのキー。|
+|ID|String|エンティティのキー。|
 |intent|[installIntent](../resources/intune-shared-installintent.md)|管理者によって定義されたインストールの目的。可能な値は、`available`、`required`、`uninstall`、`availableWithoutEnrollment` です。|
 |target|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|管理者によって定義された、ターゲット グループの割り当て。|
 |settings|[mobileAppAssignmentSettings](../resources/intune-apps-mobileappassignmentsettings.md)|管理者によって定義された、ターゲットの割り当ての設定。|

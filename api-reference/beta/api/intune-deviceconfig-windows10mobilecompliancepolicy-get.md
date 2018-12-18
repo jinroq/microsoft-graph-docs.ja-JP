@@ -1,12 +1,13 @@
 ---
 title: Get windows10MobileCompliancePolicy
 description: windows10MobileCompliancePolicy オブジェクトのプロパティとリレーションシップを読み取ります。
-ms.openlocfilehash: a99b7c8d55c1e9f580b062cfb35d94778766c795
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: e30e61c0e50696079de267debfd9f43da70ed8f4
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27067174"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27336135"
 ---
 # <a name="get-windows10mobilecompliancepolicy"></a>Get windows10MobileCompliancePolicy
 

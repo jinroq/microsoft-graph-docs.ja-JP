@@ -1,12 +1,13 @@
 ---
 title: リスト iosLobAppProvisioningConfigurationAssignments
 description: IosLobAppProvisioningConfigurationAssignment オブジェクトのプロパティと関係を一覧表示します。
-ms.openlocfilehash: 6379ce0c918537e400258b9674bb1be650a778ba
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 7056d64cc59adae5c4289a2fadae498f09137c90
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27068899"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27335484"
 ---
 # <a name="list-ioslobappprovisioningconfigurationassignments"></a>リスト iosLobAppProvisioningConfigurationAssignments
 

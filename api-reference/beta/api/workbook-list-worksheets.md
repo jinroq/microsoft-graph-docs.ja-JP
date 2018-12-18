@@ -1,12 +1,13 @@
 ---
 title: ワークシートを一覧表示する
 description: ワークシート オブジェクトの一覧を取得します。
-ms.openlocfilehash: 37cca19ac3f93e3795f242d7d1cc7da509b3a11d
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lumine2008
+ms.openlocfilehash: 218138a8bb9c15430c3693ab137afea9de91e059
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27074508"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27332992"
 ---
 # <a name="list-worksheets"></a>ワークシートを一覧表示する
 
