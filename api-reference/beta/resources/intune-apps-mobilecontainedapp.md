@@ -1,12 +1,13 @@
 ---
 title: mobileContainedApp リソースの種類
 description: パッケージとして機能する、mobileApp に含まれているアプリケーションを表す抽象クラスです。
-ms.openlocfilehash: abd47e8e9449a111c212d20b4f867a9064f612e4
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 314225c46247bd122c825f0f883378513445ce0a
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27070760"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27340797"
 ---
 # <a name="mobilecontainedapp-resource-type"></a>mobileContainedApp リソースの種類
 
@@ -21,10 +22,10 @@ ms.locfileid: "27070760"
 |[リスト mobileContainedApps](../api/intune-apps-mobilecontainedapp-list.md)|[mobileContainedApp](../resources/intune-apps-mobilecontainedapp.md)コレクション|[MobileContainedApp](../resources/intune-apps-mobilecontainedapp.md)オブジェクトのプロパティと関係を一覧表示します。|
 |[MobileContainedApp を取得します。](../api/intune-apps-mobilecontainedapp-get.md)|[mobileContainedApp](../resources/intune-apps-mobilecontainedapp.md)|[MobileContainedApp](../resources/intune-apps-mobilecontainedapp.md)オブジェクトのプロパティと関係を参照してください。|
 
-## <a name="properties"></a>プロパティ
-|プロパティ|型|説明|
+## <a name="properties"></a>Properties
+|プロパティ|種類|説明|
 |:---|:---|:---|
-|id|String|エンティティのキー。|
+|ID|String|エンティティのキー。|
 
 ## <a name="relationships"></a>リレーションシップ
 なし

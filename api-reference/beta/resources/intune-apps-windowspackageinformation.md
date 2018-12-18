@@ -1,12 +1,13 @@
 ---
 title: windowsPackageInformation リソースの種類
 description: パッケージについては、ビジネス アプリケーションのウィンドウの行のプロパティが含まれています。
-ms.openlocfilehash: a7676320d5aa2eeab1140e6cc631c4061d2c5d14
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: dcc277c610e6ceb27a94ab41993e599a258dd55e
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27070890"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27342827"
 ---
 # <a name="windowspackageinformation-resource-type"></a>windowsPackageInformation リソースの種類
 
@@ -15,8 +16,8 @@ ms.locfileid: "27070890"
 > **注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
 
 パッケージについては、ビジネス アプリケーションのウィンドウの行のプロパティが含まれています。
-## <a name="properties"></a>プロパティ
-|プロパティ|型|説明|
+## <a name="properties"></a>Properties
+|プロパティ|種類|説明|
 |:---|:---|:---|
 |applicableArchitecture|[windowsArchitecture](../resources/intune-apps-windowsarchitecture.md)|Windows のアーキテクチャでこのアプリケーションが実行できます。 可能な値は、`none`、`x86`、`x64`、`arm`、`neutral` です。|
 |displayName|String|表示名。|

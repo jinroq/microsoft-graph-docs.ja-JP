@@ -1,12 +1,13 @@
 ---
 title: windowsInformationProtectionApp リソースの種類
 description: Windows 情報保護用アプリ
-ms.openlocfilehash: 0ea48e087d4a8450ee47b2239b7c67f3b050da85
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 480d9d2b1d8049eebb664923c0b1e31bd86bd9da
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27020877"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27337479"
 ---
 # <a name="windowsinformationprotectionapp-resource-type"></a>windowsInformationProtectionApp リソースの種類
 
@@ -14,7 +15,7 @@ ms.locfileid: "27020877"
 
 Windows 情報保護用アプリ
 ## <a name="properties"></a>プロパティ
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
 |displayName|文字列型 (String)|アプリの表示名。|
 |説明|文字列型 (String)|アプリの説明。|

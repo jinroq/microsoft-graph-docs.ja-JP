@@ -1,12 +1,13 @@
 ---
 title: TableRowCollection を一覧表示する　
 description: tablerow オブジェクトの一覧を取得します。
-ms.openlocfilehash: 5b62a8f4b4d8cf6b58c6315b588c9025af4e99d8
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lumine2008
+ms.openlocfilehash: e59d090e38cea2ae5c2a82338cda4d94148a05be
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27021710"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27341518"
 ---
 # <a name="list-tablerowcollection"></a>TableRowCollection を一覧表示する　
 

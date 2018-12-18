@@ -1,12 +1,13 @@
 ---
 title: '呼び出す: ミュートを解除'
 description: 自体のミュートを解除するアプリケーションを使用できます。
-ms.openlocfilehash: de2029a2fa5abeb777f83e8651c8b6c5a2c15991
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: VinodRavichandran
+ms.openlocfilehash: 7ac86b12363e692930597e3394ca0f78b30b0dee
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27069885"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27343471"
 ---
 # <a name="call-unmute"></a>呼び出す: ミュートを解除
 
@@ -38,7 +39,7 @@ POST /applications/{id}/calls/{id}/unmute
 ## <a name="request-body"></a>要求本文
 要求本文で、次のパラメーターを含む JSON オブジェクトを指定します。
 
-| パラメーター      | 型    |説明|
+| パラメーター      | 種類    |説明|
 |:---------------|:--------|:----------|
 |clientContext|String|クライアントのコンテキスト。|
 

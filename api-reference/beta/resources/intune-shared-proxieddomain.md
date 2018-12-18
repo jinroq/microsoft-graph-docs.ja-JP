@@ -1,12 +1,13 @@
 ---
 title: proxiedDomain リソースの種類
 description: プロキシ化されたドメイン
-ms.openlocfilehash: 310ccb1420ed450c9e7c53d534181720f9051ff4
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: d00dc72d7a7156fb90cbeee914c157f446dda81a
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27067511"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27341987"
 ---
 # <a name="proxieddomain-resource-type"></a>proxiedDomain リソースの種類
 
@@ -17,7 +18,7 @@ ms.locfileid: "27067511"
 プロキシ化されたドメイン
 
 ## <a name="properties"></a>プロパティ
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
 |ipAddressOrFQDN|文字列|IP アドレスまたは完全修飾ドメイン名 (FQDN) です。|
 |プロキシ|文字列|プロキシの IP アドレスまたは FQDN です。|

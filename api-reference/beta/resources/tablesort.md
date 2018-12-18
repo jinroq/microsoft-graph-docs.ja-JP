@@ -1,12 +1,13 @@
 ---
 title: TableSort リソースの種類
 description: テーブル オブジェクトの並べ替え操作を管理します。
-ms.openlocfilehash: 02ee1f72bc53a3097c76cf9bab62a165fe3c56f8
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lumine2008
+ms.openlocfilehash: 52ee5288698b236f7ee4d29eb75fdac5ad14fa0f
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27074396"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27339824"
 ---
 # <a name="tablesort-resource-type"></a>TableSort リソースの種類
 
@@ -20,15 +21,15 @@ ms.locfileid: "27074396"
 | メソッド           | 戻り値の型    |説明|
 |:---------------|:--------|:----------|
 |[TableSort を取得する](../api/tablesort-get.md) | [TableSort](tablesort.md) |tableSort オブジェクトのプロパティと関係を読み取ります。|
-|[適用](../api/tablesort-apply.md)|なし|並べ替え操作を実行します。|
-|[クリア](../api/tablesort-clear.md)|なし|テーブルに現在設定されている並べ替えをクリアします。これにより表の順序が変更されることはありませんが、ヘッダーのボタンの状態がクリアされます。|
+|[Apply](../api/tablesort-apply.md)|なし|並べ替え操作を実行します。|
+|[Clear](../api/tablesort-clear.md)|なし|テーブルに現在設定されている並べ替えをクリアします。これにより表の順序が変更されることはありませんが、ヘッダーのボタンの状態がクリアされます。|
 |[Reapply](../api/tablesort-reapply.md)|なし|テーブルに、現在の並べ替えパラメーターを再適用します。|
 
 ## <a name="properties"></a>プロパティ
-| プロパティ     | 型   |説明|
+| プロパティ     | 種類   |説明|
 |:---------------|:--------|:----------|
 |matchCase|ブール値|大文字小文字の区別が、テーブルの最後の並べ替え操作に影響を与えたかどうかを表します。読み取り専用です。|
-|method|文字列|テーブルの並べ替えで最後に使用した中国語文字の順序付け方法を表します。可能な値は、`PinYin`、`StrokeCount` です。読み取り専用です。|
+|method|string|テーブルの並べ替えで最後に使用した中国語文字の順序付け方法を表します。可能な値は、`PinYin`、`StrokeCount` です。読み取り専用です。|
 
 ## <a name="relationships"></a>リレーションシップ
 | リレーションシップ | 型   |説明|

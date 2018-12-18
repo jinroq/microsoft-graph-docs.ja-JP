@@ -1,12 +1,13 @@
 ---
 title: importedWindowsAutopilotDeviceIdentity の更新
 description: importedWindowsAutopilotDeviceIdentity オブジェクトのプロパティを更新します。
-ms.openlocfilehash: 7b5d79893ec30c203d4272d652ac43a225a37ec5
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 885101518f5d88261a0a0e11cfc509c470b8bf5b
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27073423"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27340510"
 ---
 # <a name="update-importedwindowsautopilotdeviceidentity"></a>importedWindowsAutopilotDeviceIdentity の更新
 
@@ -45,14 +46,14 @@ PATCH /deviceManagement/importedWindowsAutopilotDeviceIdentityUploads/{importedW
 
 次の表に、[importedWindowsAutopilotDeviceIdentity](../resources/intune-enrollment-importedwindowsautopilotdeviceidentity.md) の作成時に必要なプロパティを示します。
 
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
-|id|String|オブジェクトの GUID|
+|ID|String|オブジェクトの GUID|
 |orderIdentifier|String|Windows オートパイロット デバイスの受注 ID。|
 |シリアル番号|String|Windows オートパイロット デバイスのシリアル番号。|
 |productKey|String|Windows オートパイロット デバイスのプロダクト キー。|
-|hardwareIdentifier|バイナリ|Windows オートパイロット デバイスのハードウェア BLOB。|
-|状態|[importedWindowsAutopilotDeviceIdentityState](../resources/intune-enrollment-importedwindowsautopilotdeviceidentitystate.md)|インポートしたデバイスの現在の状態。|
+|hardwareIdentifier|Binary|Windows オートパイロット デバイスのハードウェア BLOB。|
+|state|[importedWindowsAutopilotDeviceIdentityState](../resources/intune-enrollment-importedwindowsautopilotdeviceidentitystate.md)|インポートしたデバイスの現在の状態。|
 
 
 

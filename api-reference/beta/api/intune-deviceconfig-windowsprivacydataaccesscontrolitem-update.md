@@ -1,12 +1,13 @@
 ---
 title: WindowsPrivacyDataAccessControlItem を更新します。
 description: WindowsPrivacyDataAccessControlItem オブジェクトのプロパティを更新します。
-ms.openlocfilehash: 289bb7eaf00d0ac81adf676157e77a16c1fe1d9e
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 38389049c03d822feb4c3791dfee65e327e1afea
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27069714"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27324158"
 ---
 # <a name="update-windowsprivacydataaccesscontrolitem"></a>WindowsPrivacyDataAccessControlItem を更新します。
 
@@ -44,9 +45,9 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 
 [WindowsPrivacyDataAccessControlItem](../resources/intune-deviceconfig-windowsprivacydataaccesscontrolitem.md)を作成するときに必要なプロパティを次の表に示します。
 
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
-|id|String|WindowsPrivacyDataAccessControlItem のキー。|
+|ID|String|WindowsPrivacyDataAccessControlItem のキー。|
 |accessLevel|[windowsPrivacyDataAccessLevel](../resources/intune-deviceconfig-windowsprivacydataaccesslevel.md)|プライバシー データ カテゴリに、指定したアプリケーションを指定するアクセス レベルを示します。 可能な値は、`notConfigured`、`forceAllow`、`forceDeny`、`userInControl` です。|
 |dataCategory|[windowsPrivacyDataCategory](../resources/intune-deviceconfig-windowsprivacydatacategory.md)|これは、特定のアクセス制御が適用されるプライバシー データのカテゴリを示します。 使用可能な値: `notConfigured`、 `accountInfo`、 `appsRunInBackground`、 `calendar`、 `callHistory`、 `camera`、 `contacts`、 `diagnosticsInfo`、 `email`、 `location`、 `messaging`、 `microphone`、 `motion`、 `notifications`、 `phone`、 `radios`、 `tasks`、 `syncWithDevices`、 `trustedDevices`.|
 |appPackageFamilyName|String|Windows アプリケーションのパッケージ ファミリ名です。 アクセス レベルを設定すると、指定したアプリケーションを適用します。|

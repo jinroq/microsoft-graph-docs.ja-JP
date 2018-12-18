@@ -1,12 +1,13 @@
 ---
 title: setDeviceName アクション
 description: デバイスのデバイス名を設定します。
-ms.openlocfilehash: dcdf812e842927bfb7c5e92381b79d92862dcdca
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 9856e9698da807e3bb3af1a3c30fa7e138569f48
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27070045"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27352172"
 ---
 # <a name="setdevicename-action"></a>setDeviceName アクション
 
@@ -47,7 +48,7 @@ POST /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/device
 
 次の表に、このアクションで使用できるパラメーターを示します。
 
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
 |deviceName|String|まだ文書化されていません|
 

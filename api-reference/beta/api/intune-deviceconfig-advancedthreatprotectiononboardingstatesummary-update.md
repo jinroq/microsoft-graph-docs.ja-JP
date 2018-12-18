@@ -1,12 +1,13 @@
 ---
 title: AdvancedThreatProtectionOnboardingStateSummary を更新します。
 description: AdvancedThreatProtectionOnboardingStateSummary オブジェクトのプロパティを更新します。
-ms.openlocfilehash: e39a6086f78db393a3e75a99b475cc5db02ddb3d
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: a31dae3c1f79332ae03324d1ecbb604451bc7959
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27073055"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27340027"
 ---
 # <a name="update-advancedthreatprotectiononboardingstatesummary"></a>AdvancedThreatProtectionOnboardingStateSummary を更新します。
 
@@ -44,9 +45,9 @@ PATCH /deviceManagement/advancedThreatProtectionOnboardingStateSummary
 
 [AdvancedThreatProtectionOnboardingStateSummary](../resources/intune-deviceconfig-advancedthreatprotectiononboardingstatesummary.md)を作成するときに必要なプロパティを次の表に示します。
 
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
-|id|String|一意識別子|
+|ID|String|一意識別子|
 |unknownDeviceCount|Int32|不明なデバイスの数|
 |notApplicableDeviceCount|Int32|該当しないデバイスの数|
 |compliantDeviceCount|Int32|準拠デバイスの数|

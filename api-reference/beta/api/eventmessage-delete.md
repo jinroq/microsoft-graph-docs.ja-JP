@@ -1,12 +1,13 @@
 ---
 title: eventMessage の削除
 description: eventMessage を削除します。
-ms.openlocfilehash: d095fd80b7fed7739c05dafdac4f99ff035c48de
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: angelgolfer-ms
+ms.openlocfilehash: 68d9397f1fc595e864d94b87bdb67d766731411a
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27068308"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27350219"
 ---
 # <a name="delete-eventmessage"></a>eventMessage の削除
 
@@ -32,7 +33,7 @@ DELETE /me/mailFolders/{id}/messages/{id}
 DELETE /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}
 ```
 ## <a name="request-headers"></a>要求ヘッダー
-| 名前       | 型 | 説明|
+| 名前       | 種類 | 説明|
 |:---------------|:--------|:----------|
 | Authorization  | string  | ベアラー {トークン}。必須。 |
 

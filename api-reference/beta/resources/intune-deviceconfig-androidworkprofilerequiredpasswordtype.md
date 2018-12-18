@@ -1,12 +1,13 @@
 ---
 title: androidWorkProfileRequiredPasswordType 列挙型
 description: Android の作業プロファイルには、パスワード入力が必要です。
-ms.openlocfilehash: 8dee8332155cd3d0ba94424090df94d07f214d18
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 8d41b4c516ee4aa393ea3a26034e5f575b58fa02
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27072157"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27330234"
 ---
 # <a name="androidworkprofilerequiredpasswordtype-enum-type"></a>androidWorkProfileRequiredPasswordType 列挙型
 
@@ -20,7 +21,7 @@ Android の作業プロファイルには、パスワード入力が必要です
 |:---|:---|:---|
 |deviceDefault|0|デバイスの既定値でことを目的しません。|
 |lowSecurityBiometric|1|低レベルのセキュリティ ベースの生体認証パスワードが必要です。|
-|必須|2|必須。|
+|必須|2|必須です。|
 |atLeastNumeric|3|数値以上のパスワードが必要です。|
 |numericComplex|4|数値の複雑なパスワードが必要です。|
 |atLeastAlphabetic|5|少なくともアルファベットのパスワードが必要です。|

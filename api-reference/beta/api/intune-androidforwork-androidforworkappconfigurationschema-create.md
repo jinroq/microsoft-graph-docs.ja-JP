@@ -1,12 +1,13 @@
 ---
 title: androidForWorkAppConfigurationSchema の作成
 description: 新しい androidForWorkAppConfigurationSchema オブジェクトを作成します。
-ms.openlocfilehash: 1978bd62d9d2d22d3056a88a246f15902305c390
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 92974019e98a1dc8403d5672f631de7849caebc4
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27067244"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27353187"
 ---
 # <a name="create-androidforworkappconfigurationschema"></a>androidForWorkAppConfigurationSchema の作成
 
@@ -44,9 +45,9 @@ POST /deviceManagement/androidForWorkAppConfigurationSchemas
 
 次の表に、androidForWorkAppConfigurationSchema の作成時に必要なプロパティを示します。
 
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
-|id|String|エンティティのキー。スキーマが対応するアプリケーションの Android パッケージ名です。|
+|ID|String|エンティティのキー。スキーマが対応するアプリケーションの Android パッケージ名です。|
 |exampleJson|Binary|このスキーマに準拠した JSON 文字列の例を含む、UTF8 でエンコードされたバイト配列。このアプリの構成の設定方法を示しています。|
 |schemaItems|[androidForWorkAppConfigurationSchemaItem](../resources/intune-androidforwork-androidforworkappconfigurationschemaitem.md) コレクション|それぞれがスキーマ内の名前付き構成オプションを示すアイテムのコレクションです。|
 

@@ -1,12 +1,13 @@
 ---
 title: リスト roleScopeTags
 description: RoleScopeTag オブジェクトのプロパティと関係を一覧表示します。
-ms.openlocfilehash: 632c40126197ca7905ad4075c3da7688ed258441
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 786276f5e0d74871ebf38fce235f584911bebb20
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27067091"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27337801"
 ---
 # <a name="list-rolescopetags"></a>リスト roleScopeTags
 

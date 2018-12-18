@@ -1,12 +1,13 @@
 ---
 title: educationSubmission リソースの種類
 description: 提出書類は、割り当てによって所有されます。 提出書類は、リソースを表しますが、個人 (またはグループ) および有効にするに割り当て、グレードとフィードバックが返されます。
-ms.openlocfilehash: f0b1cc9ccd169d29c31eb96bb6305f6d7cdcd6b4
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: dipakboyed
+ms.openlocfilehash: 5535aef4db988e0f4c4417128b5b53bbed884cc2
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27067147"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27328022"
 ---
 # <a name="educationsubmission-resource-type"></a>educationSubmission リソースの種類
 
@@ -29,19 +30,19 @@ ms.locfileid: "27067147"
 |[Submit](../api/educationsubmission-submit.md)|[educationSubmission](educationsubmission.md)|受講者にするには、割り当ての使用を送信します。 これは、グレーディングの**submittedResources**フォルダーにリソースをコピーし、ステータスを更新します。|
 |[Unsubmit](../api/educationsubmission-unsubmit.md)|[educationSubmission](educationsubmission.md)|受講者は、作業から提出された提出書類の状態に移動するのには、unsubmit を使用します。 これは、グレーディングの**workingResources**フォルダーにリソースをコピーし、ステータスを更新します。|
 
-## <a name="properties"></a>プロパティ
-| プロパティ     | 型   |説明|
+## <a name="properties"></a>Properties
+| プロパティ     | 種類   |説明|
 |:---------------|:--------|:----------|
 |feedback|[educationFeedback](educationfeedback.md)|受講者に、先生のノートを保存する [フィードバック] プロパティを保持します。|
 |grade|[educationAssignmentGrade](educationassignmentgrade.md)|教師は、この送信に割り当てられますグレード情報を保持するには。|
-|id|String| 読み取り専用。|
+|id|String| 読み取り専用です。|
 |受信者|[educationSubmissionRecipient](educationsubmissionrecipient.md)|この提出書類に割り当てられました。|
 |releasedBy|[identitySet](identityset.md)|リリースには、この送信のステータスを移動したユーザーです。|
 |releasedDateTime|DateTimeOffset|提出書類がリリースされた時点での瞬間。 Timestamp 型は、ISO 8601 形式を使用して日付と時刻の情報を表し、常に UTC 時間です。 たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、次のようになります。`'2014-01-01T00:00:00Z'`|
 |返す|[identitySet](identityset.md)|返されるには、この送信のステータスを移動したユーザーです。|
 |returnedDateTime|DateTimeOffset|提出書類が返された瞬間です。 Timestamp 型は、ISO 8601 形式を使用して日付と時刻の情報を表し、常に UTC 時間です。 たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、次のようになります。`'2014-01-01T00:00:00Z'`|
 |resourcesFolderUrl|String|この送信のためのリソースのすべてのファイル、フォルダーを格納する必要があります。|
-|status|文字列| 読み取り専用。 使用可能な値: `working`、`submitted`、`released`、`returned`。|
+|status|string| 読み取り専用。 使用可能な値: `working`、`submitted`、`released`、`returned`。|
 |submittedBy|[identitySet](identityset.md)|送信済みの状態に、リソースを移動したユーザーです。|
 |submittedDateTime|DateTimeOffset|提出書類を提出済みの状態に移動したときの時点です。 Timestamp 型は、ISO 8601 形式を使用して日付と時刻の情報を表し、常に UTC 時間です。 たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、次のようになります。`'2014-01-01T00:00:00Z'`|
 |unsubmittedBy|[identitySet](identityset.md)|リソースを移動したユーザーからは、作業の状態に送信します。|

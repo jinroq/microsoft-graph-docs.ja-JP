@@ -1,12 +1,13 @@
 ---
 title: CartToClassAssociation を更新します。
 description: CartToClassAssociation オブジェクトのプロパティを更新します。
-ms.openlocfilehash: ecdfdca855920c26e607f24771e41392f74d7095
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 43b272a5fa2871daebbf7cfeea890ba0b9e204e8
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27071616"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27343017"
 ---
 # <a name="update-carttoclassassociation"></a>CartToClassAssociation を更新します。
 
@@ -44,9 +45,9 @@ PATCH /deviceManagement/cartToClassAssociations/{cartToClassAssociationId}
 
 [CartToClassAssociation](../resources/intune-deviceconfig-carttoclassassociation.md)を作成するときに必要なプロパティを次の表に示します。
 
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
-|id|String|エンティティのキー。|
+|ID|String|エンティティのキー。|
 |createdDateTime|DateTimeOffset|オブジェクトが作成された DateTime。|
 |lastModifiedDateTime|DateTimeOffset|オブジェクトが最後に変更された DateTime。|
 |version|Int32|CartToClassAssociation のバージョンです。|

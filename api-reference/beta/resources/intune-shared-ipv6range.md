@@ -1,12 +1,13 @@
 ---
 title: iPv6Range リソースの種類
 description: IP V6 の範囲
-ms.openlocfilehash: ac2834ea68e1ce4aa7e28f7b421ff4e3d031f8fa
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: a821e149768132e0172358268d3ede9f91393dbb
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27074212"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27327812"
 ---
 # <a name="ipv6range-resource-type"></a>iPv6Range リソースの種類
 
@@ -19,7 +20,7 @@ IP V6 の範囲
 [ipRange](../resources/intune-shared-iprange.md) からの継承
 
 ## <a name="properties"></a>プロパティ
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
 |lowerAddress|文字列|低い番号の IP アドレス|
 |upperAddress|文字列|高い番号の IP アドレス|

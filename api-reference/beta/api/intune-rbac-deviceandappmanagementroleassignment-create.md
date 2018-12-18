@@ -1,12 +1,13 @@
 ---
 title: deviceAndAppManagementRoleAssignment の作成
 description: 新しい deviceAndAppManagementRoleAssignment オブジェクトを作成します。
-ms.openlocfilehash: ec8c641ca9d3d4d4f42cfe71f44bcb6f216be273
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 4ed81fdc58a2675be6d5f0b991507914d5c92e89
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27074543"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27323990"
 ---
 # <a name="create-deviceandappmanagementroleassignment"></a>deviceAndAppManagementRoleAssignment の作成
 
@@ -44,9 +45,9 @@ POST /deviceManagement/roleAssignments
 
 次の表に、deviceAndAppManagementRoleAssignment の作成時に必要なプロパティを示します。
 
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
-|id|String|エンティティのキー。 これは読み取り専用で、自動生成されます。 [roleAssignment](../resources/intune-rbac-roleassignment.md) から継承します|
+|ID|String|エンティティのキー。 これは読み取り専用で、自動生成されます。 [roleAssignment](../resources/intune-rbac-roleassignment.md) から継承します|
 |displayName|String|ロール割り当ての表示名またはフレンドリ名。 [roleAssignment](../resources/intune-rbac-roleassignment.md) から継承します|
 |説明|String|ロール割り当ての説明。 [roleAssignment](../resources/intune-rbac-roleassignment.md) から継承します|
 |scopeMembers|String コレクション|役割のスコープ メンバーのセキュリティ グループの ID リスト。  Azure Active Directory の ID。 [roleAssignment](../resources/intune-rbac-roleassignment.md) から継承します|

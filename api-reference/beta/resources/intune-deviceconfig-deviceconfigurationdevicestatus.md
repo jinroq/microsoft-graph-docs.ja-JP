@@ -1,12 +1,13 @@
 ---
 title: deviceConfigurationDeviceStatus リソースの種類
 description: まだ文書化されていません
-ms.openlocfilehash: 667a17956a7ee620275df31f2553c5b50c1f98b1
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 04b8190e5ad61e25fa0d26e420d65b464f6d5d45
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27067954"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27341357"
 ---
 # <a name="deviceconfigurationdevicestatus-resource-type"></a>deviceConfigurationDeviceStatus リソースの種類
 
@@ -25,9 +26,9 @@ ms.locfileid: "27067954"
 |[deviceConfigurationDeviceStatus の更新](../api/intune-deviceconfig-deviceconfigurationdevicestatus-update.md)|[deviceConfigurationDeviceStatus](../resources/intune-deviceconfig-deviceconfigurationdevicestatus.md)|[deviceConfigurationDeviceStatus](../resources/intune-deviceconfig-deviceconfigurationdevicestatus.md) オブジェクトのプロパティを更新します。|
 
 ## <a name="properties"></a>プロパティ
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
-|id|String|エンティティのキー。|
+|ID|String|エンティティのキー。|
 |deviceDisplayName|String|DevicePolicyStatus のデバイス名。|
 |userName|String|レポートされているユーザー名|
 |deviceModel|String|レポートされているデバイス モデル|

@@ -1,12 +1,13 @@
 ---
 title: ChartDataLabels リソースの種類
 description: グラフのポイントにあるすべてのデータ ラベルのコレクションを表します。
-ms.openlocfilehash: d226c5edb3fecc3a2e27fae32060f786f790d7e7
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lumine2008
+ms.openlocfilehash: ef1880fcbf1f74f99f6b323c06b8fd35812f340a
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27071685"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27352179"
 ---
 # <a name="chartdatalabels-resource-type"></a>ChartDataLabels リソースの種類
 
@@ -23,7 +24,7 @@ ms.locfileid: "27071685"
 |[Update](../api/chartdatalabels-update.md) | [ChartDataLabels](chartdatalabels.md) |ChartDataLabels オブジェクトを更新します。 |
 
 ## <a name="properties"></a>プロパティ
-| プロパティ     | 型   |説明|
+| プロパティ     | 種類   |説明|
 |:---------------|:--------|:----------|
 |position|文字列|データ ラベルの位置を表す DataLabelPosition 値。可能な値は、`None`、`Center`、`InsideEnd`、`InsideBase`、`OutsideEnd`、`Left`、`Right`、`Top`、`Bottom`、`BestFit`、`Callout` です。|
 |separator|文字列|グラフのデータ ラベルに使用される区切り文字を表す文字列を設定します。|

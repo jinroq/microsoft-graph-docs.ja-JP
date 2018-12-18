@@ -1,12 +1,13 @@
 ---
 title: イベントを一覧表示する
 description: 予定表のイベント一覧を取得します。一覧には、単一インスタンスの会議と定期的なマスターが含まれています。
-ms.openlocfilehash: 4052f75abf4340d4acddbb79c1d318c7d1ca0f29
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: angelgolfer-ms
+ms.openlocfilehash: 3cf431d600f36350d8654e9624b596222fcbff8b
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27067426"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27341882"
 ---
 # <a name="list-events"></a>イベントを一覧表示する
 
@@ -48,10 +49,10 @@ GET /users/{id | userPrincipalName}/calendarGroups/{id}/calendars/{id}/events
 ## <a name="optional-query-parameters"></a>オプションのクエリ パラメーター
 このメソッドは、応答をカスタマイズするための [OData クエリ パラメーター](https://developer.microsoft.com/graph/docs/concepts/query_parameters)をサポートします。
 ## <a name="request-headers"></a>要求ヘッダー
-| 名前       | 型 | 説明 |
+| 名前       | 種類 | 説明 |
 |:---------------|:--------|:--------|
 | Authorization  | string | ベアラー {トークン}。必須。  |
-| 優先: outlook.timezone  | 文字列 | これを使用して、応答内の開始および終了時刻のタイム ゾーンを指定します。 指定しない場合、これらの時刻値は UTC で返されます。 省略可能。 |
+| 優先: outlook.timezone  | string | これを使用して、応答内の開始および終了時刻のタイム ゾーンを指定します。 指定しない場合、これらの時刻値は UTC で返されます。 省略可能。 |
 
 ## <a name="request-body"></a>要求本文
 このメソッドには、要求本文を指定しません。

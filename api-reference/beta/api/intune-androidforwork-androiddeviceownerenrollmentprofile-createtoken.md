@@ -1,12 +1,13 @@
 ---
 title: createToken アクション
 description: まだ文書化されていません
-ms.openlocfilehash: e5f45df3d8d6fbf29f01c66f47a46e865fde5533
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 52c73a04044935979b21953f8a9496e10da84776
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27069183"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27342554"
 ---
 # <a name="createtoken-action"></a>createToken アクション
 
@@ -44,7 +45,7 @@ POST /deviceManagement/androidDeviceOwnerEnrollmentProfiles/{androidDeviceOwnerE
 
 次の表に、このアクションで使用できるパラメーターを示します。
 
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
 |tokenValidityInSeconds|Int32|まだ文書化されていません|
 

@@ -1,12 +1,13 @@
 ---
 title: WindowsWifiEnterpriseEAPConfiguration を取得します。
 description: WindowsWifiEnterpriseEAPConfiguration オブジェクトのプロパティと関係を参照してください。
-ms.openlocfilehash: 8d4b718bdae430e21386a3fa035fe153340acfa6
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: f46acbf55be1f03d902760cfb523a7f3ce321da4
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27070467"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27339985"
 ---
 # <a name="get-windowswifienterpriseeapconfiguration"></a>WindowsWifiEnterpriseEAPConfiguration を取得します。
 

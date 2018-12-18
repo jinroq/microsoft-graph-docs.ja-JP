@@ -1,12 +1,13 @@
 ---
 title: ChartAxis リソースの種類
 description: グラフの 1 つの軸を表します。
-ms.openlocfilehash: fe29c6820f810158ca4accc864c852b0f00d2dda
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lumine2008
+ms.openlocfilehash: 39c71e9fa832ffb967a1ef147ccd7e07d6b9aaec
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27021365"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27344367"
 ---
 # <a name="chartaxis-resource-type"></a>ChartAxis リソースの種類
 
@@ -21,9 +22,9 @@ ms.locfileid: "27021365"
 |[Update](../api/chartaxis-update.md) | [WorkbookChartAxis](chartaxis.md)   |ChartAxis オブジェクトを更新します。 |
 
 ## <a name="properties"></a>プロパティ
-| プロパティ     | 型   |説明|
+| プロパティ     | 種類   |説明|
 |:---------------|:--------|:----------|
-| ID       |文字列   | 一意の識別子です。 読み取り専用。|
+| ID       |string   | 一意の識別子です。 読み取り専用です。|
 |majorUnit|Json|2 つの大きい目盛の間隔を表します。数値の値または空の文字列を設定できます。戻り値は常に数値です。|
 |maximum|Json|数値軸の最大値を表します。数値の値または空の文字列を設定できます (軸の値が自動の場合)。戻り値は常に数値です。|
 |minimum|Json|数値軸の最小値を表します。数値の値または空の文字列を設定できます (軸の値が自動の場合)。戻り値は常に数値です。|

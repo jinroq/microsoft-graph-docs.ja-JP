@@ -1,12 +1,13 @@
 ---
 title: deviceManagementScriptRunSummary リソースの種類
 description: デバイス管理スクリプトの実行の概要のプロパティが含まれています。
-ms.openlocfilehash: 9269ae5f3f6fc889cb02ad90e2897c9a3e979241
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 347a4e5cd3c4201949841054b69c217ad4f9fa8e
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27072279"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27338998"
 ---
 # <a name="devicemanagementscriptrunsummary-resource-type"></a>deviceManagementScriptRunSummary リソースの種類
 
@@ -21,10 +22,10 @@ ms.locfileid: "27072279"
 |[DeviceManagementScriptRunSummary を取得します。](../api/intune-devices-devicemanagementscriptrunsummary-get.md)|[deviceManagementScriptRunSummary](../resources/intune-devices-devicemanagementscriptrunsummary.md)|[DeviceManagementScriptRunSummary](../resources/intune-devices-devicemanagementscriptrunsummary.md)オブジェクトのプロパティと関係を参照してください。|
 |[DeviceManagementScriptRunSummary を更新します。](../api/intune-devices-devicemanagementscriptrunsummary-update.md)|[deviceManagementScriptRunSummary](../resources/intune-devices-devicemanagementscriptrunsummary.md)|[DeviceManagementScriptRunSummary](../resources/intune-devices-devicemanagementscriptrunsummary.md)オブジェクトのプロパティを更新します。|
 
-## <a name="properties"></a>プロパティ
-|プロパティ|型|説明|
+## <a name="properties"></a>Properties
+|プロパティ|種類|説明|
 |:---|:---|:---|
-|id|String|デバイス管理スクリプトのキーは、エンティティの概要を実行します。|
+|ID|String|デバイス管理スクリプトのキーは、エンティティの概要を実行します。|
 |successDeviceCount|Int32|成功した場合のデバイスの数。|
 |errorDeviceCount|Int32|デバイスのエラーの数です。|
 |successUserCount|Int32|成功ユーザー カウントです。|

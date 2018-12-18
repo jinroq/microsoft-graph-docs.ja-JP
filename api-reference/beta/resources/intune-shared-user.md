@@ -1,12 +1,13 @@
 ---
 title: user リソースの種類
 description: Azure Active Directory ユーザー オブジェクトを表します。
-ms.openlocfilehash: ec28b7ec44eddfa1e1e8b372956d1a29dc78553d
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 88db96c374321f428f40971da530ab8ba82965c2
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27070981"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27329219"
 ---
 # <a name="user-resource-type"></a>user リソースの種類
 
@@ -39,10 +40,10 @@ Azure Active Directory ユーザー オブジェクトを表します。
 |[getManagedDevicesWithAppFailures 関数](../api/intune-shared-user-getmanageddeviceswithappfailures.md)|String コレクション|失敗したアプリを使用してデバイスの一覧を取得します。|
 
 
-## <a name="properties"></a>プロパティ
-|プロパティ|型|説明|
+## <a name="properties"></a>Properties
+|プロパティ|種類|説明|
 |:---|:---|:---|
-|id|String|ユーザーの一意識別子。|
+|ID|String|ユーザーの一意識別子。|
 |**契約時**|
 |deviceEnrollmentLimit|Int32|ユーザーが登録を許可されているデバイスの最大数。 使用できる値は 5 または 1000 です。|
 

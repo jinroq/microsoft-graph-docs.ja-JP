@@ -1,12 +1,13 @@
 ---
 title: revokeDeviceLicense アクション
 description: 取り消しが割り当てられている iOS の VPP デバイスのライセンスは、アプリケーションを指定します。
-ms.openlocfilehash: 4accb28bdc8bc7bcd81631f46eba7d78049c8f4a
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 17ae2ed812d5c5b5a35926934d748fb730aafacf
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27074310"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27353131"
 ---
 # <a name="revokedevicelicense-action"></a>revokeDeviceLicense アクション
 
@@ -46,10 +47,10 @@ POST /deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/{mobileAppInst
 
 次の表に、このアクションで使用できるパラメーターを示します。
 
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
 |managedDeviceId|String|DeviceId は割り当てられているアプリケーションのライセンスを失効させるのには相手|
-|notifyManagedDevices|ブール値|取り消しの通知をデバイスに送信するかどうかであることを示すブール値|
+|notifyManagedDevices|ブール型|取り消しの通知をデバイスに送信するかどうかであることを示すブール値|
 
 
 

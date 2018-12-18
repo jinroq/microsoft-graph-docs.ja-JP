@@ -1,12 +1,13 @@
 ---
 title: managedEBooks のリスト
 description: managedEBook オブジェクトのプロパティとリレーションシップをリストします。
-ms.openlocfilehash: 7dd3c262de01c306205bf99ca26559766586c0e1
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 8cbe6a49aac963c2752f93997185eda0c493637b
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27023230"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27339740"
 ---
 # <a name="list-managedebooks"></a>managedEBooks のリスト
 

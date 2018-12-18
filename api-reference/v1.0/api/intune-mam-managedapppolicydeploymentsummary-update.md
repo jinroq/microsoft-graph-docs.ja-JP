@@ -1,12 +1,13 @@
 ---
 title: managedAppPolicyDeploymentSummary の更新
 description: managedAppPolicyDeploymentSummary オブジェクトのプロパティを更新します。
-ms.openlocfilehash: 66f6e10dda834eca3ffa728ea4cacbbcdd78e9e9
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: e123c07722e9bd4baf2cab7bfd5f53516b37a949
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27022577"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27342960"
 ---
 # <a name="update-managedapppolicydeploymentsummary"></a>managedAppPolicyDeploymentSummary の更新
 
@@ -45,7 +46,7 @@ PATCH /deviceAppManagement/targetedManagedAppConfigurations/{targetedManagedAppC
 
 次の表に、[managedAppPolicyDeploymentSummary](../resources/intune-mam-managedapppolicydeploymentsummary.md) の作成時に必要なプロパティを示します。
 
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
 |displayName|String|まだ文書化されていません|
 |configurationDeployedUserCount|Int32|まだ文書化されていません|

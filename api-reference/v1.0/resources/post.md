@@ -1,12 +1,13 @@
 ---
 title: post リソース タイプ
 description: conversationThread エンティティ内の個々の投稿アイテムを表します。
-ms.openlocfilehash: 11ba79153b8d2a972c952fb3d224832fc1fe2eb5
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: dkershaw10
+ms.openlocfilehash: dcbf62d5415273ebd805fc930c746282519f386a
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27022333"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27340041"
 ---
 # <a name="post-resource-type"></a>post リソース タイプ
 [conversationThread](conversationthread.md) エンティティ内の個々の投稿アイテムを表します。
@@ -43,7 +44,7 @@ ms.locfileid: "27022333"
 |[Get post with multi-value extended property](../api/multivaluelegacyextendedproperty-get.md)  | [post](post.md) | `$expand` を使用して、複数値の拡張プロパティを含む投稿を取得します。 |
 
 ## <a name="properties"></a>プロパティ
-| プロパティ     | 型   |説明|
+| プロパティ     | 種類   |説明|
 |:---------------|:--------|:----------|
 |body|[itemBody](itembody.md)|投稿の内容です。これが既定のプロパティです。このプロパティを null にすることができます。|
 |categories|String コレクション|投稿に関連付けられたカテゴリ。|
@@ -52,8 +53,8 @@ ms.locfileid: "27022333"
 |conversationThreadId|String|会話スレッドの固有 ID です。読み取り専用。|
 |createdDateTime|DateTimeOffset|投稿の作成時刻を示します。DateTimeOffset 型は、ISO 8601 形式を使用して日付と時刻の情報を表し、常に UTC 時間です。たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、次のようになります。`'2014-01-01T00:00:00Z'`|
 |from|[recipient](recipient.md)|代理人アクセスのシナリオで使用されます。他のユーザーの代わりにメッセージを投稿したユーザーを示します。これが既定のプロパティです。|
-|hasAttachments|ブール値|投稿の添付ファイルが 1 つ以上あるかどうかを示します。これが既定のプロパティです。|
-|id|String| 読み取り専用。|
+|hasAttachments|ブール型|投稿の添付ファイルが 1 つ以上あるかどうかを示します。これが既定のプロパティです。|
+|id|String| 読み取り専用です。|
 |lastModifiedDateTime|DateTimeOffset|投稿が最後に修正された日時を指定します。DateTimeOffset 型は、ISO 8601 形式を使用して日付と時刻の情報を表し、常に UTC 時間です。たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、次のようになります。`'2014-01-01T00:00:00Z'`|
 |newParticipants|[recipient](recipient.md) collection|この投稿の一部としてスレッドに追加された会話の参加者です。|
 |receivedDateTime|DateTimeOffset|投稿の受信時刻を示します。DateTimeOffset 型は、ISO 8601 形式を使用して日付と時刻の情報を表し、常に UTC 時間です。たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、次のようになります。`'2014-01-01T00:00:00Z'`|

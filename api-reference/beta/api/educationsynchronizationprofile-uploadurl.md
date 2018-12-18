@@ -1,12 +1,13 @@
 ---
 title: 'educationSynchronizationProfile: uploadUrl'
 description: テナントで特定の学校のデータの同期プロファイルの Azure blob ストレージにソース ファイルをアップロードする共有アクセス署名 (SAS) を取得します。 SAS トークンには、1 時間の有効期限が。
-ms.openlocfilehash: cf685b56718664ca68e0fde697872fe624c7e7b1
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: mmast-msft
+ms.openlocfilehash: 15a4536e21307067ac55783edd9eac675ae4144b
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27072259"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27341063"
 ---
 # <a name="educationsynchronizationprofile-uploadurl"></a>educationSynchronizationProfile: uploadUrl
 
@@ -21,7 +22,7 @@ ms.locfileid: "27072259"
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
 
-| アクセス許可の種類 | Permissions |
+| アクセス許可の種類 | アクセス許可 |
 |:-----------|:----------|
 | 委任 (職場または学校のアカウント) | EduAdministration.ReadWrite |
 |(個人用の Microsoft アカウントを委任します。|サポートされていません。|
@@ -34,7 +35,7 @@ GET /synchronizationProfiles/{id}/uploadUrl
 ```
 
 ## <a name="request-headers"></a>要求ヘッダー
-| 名前       | 型 | 説明|
+| 名前       | 種類 | 説明|
 |:-----------|:------|:----------|
 | Authorization  | string  | ベアラー {トークン}。必須。  |
 

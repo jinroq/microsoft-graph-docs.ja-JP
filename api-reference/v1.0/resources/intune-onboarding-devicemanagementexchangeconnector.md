@@ -1,12 +1,13 @@
 ---
 title: deviceManagementExchangeConnector リソースの種類
 description: Exchange 環境との接続を表すエンティティです。
-ms.openlocfilehash: 09f3738a2a1b40a90724a916e2e48437675f23a6
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 9a75aa16e99970a41b1879b1fc6ff2eba5e917a7
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27023054"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27338844"
 ---
 # <a name="devicemanagementexchangeconnector-resource-type"></a>deviceManagementExchangeConnector リソースの種類
 
@@ -24,9 +25,9 @@ Exchange 環境との接続を表すエンティティです。
 |[同期アクション](../api/intune-onboarding-devicemanagementexchangeconnector-sync.md)|なし|まだ文書化されていません|
 
 ## <a name="properties"></a>プロパティ
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
-|id|String|まだ文書化されていません|
+|ID|String|まだ文書化されていません|
 |lastSyncDateTime|DateTimeOffset|Exchange Connector の最終同期日時|
 |status|[deviceManagementExchangeConnectorStatus](../resources/intune-onboarding-devicemanagementexchangeconnectorstatus.md)|Exchange コネクタの状態です。 可能な値は、`none`、`connectionPending`、`connected`、`disconnected` です。|
 |primarySmtpAddress|String|サービス間の Exchange Connector を構成するときに使用するメール アドレス。|

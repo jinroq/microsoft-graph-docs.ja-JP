@@ -1,12 +1,13 @@
 ---
 title: AdvancedThreatProtectionOnboardingDeviceSettingState を作成します。
 description: 新しい advancedThreatProtectionOnboardingDeviceSettingState オブジェクトを作成します。
-ms.openlocfilehash: 623db746a44792f80255b1f76d3d92fca0ab30cb
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 221ecef8a9aebdd7a04ec889ff2a04d524ac05d7
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27070607"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27342953"
 ---
 # <a name="create-advancedthreatprotectiononboardingdevicesettingstate"></a>AdvancedThreatProtectionOnboardingDeviceSettingState を作成します。
 
@@ -44,9 +45,9 @@ POST /deviceManagement/advancedThreatProtectionOnboardingStateSummary/advancedTh
 
 次の表は、advancedThreatProtectionOnboardingDeviceSettingState を作成するときに必要なプロパティを示します。
 
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
-|id|String|エンティティのキー|
+|ID|String|エンティティのキー|
 |platformType|[deviceType](../resources/intune-shared-devicetype.md)|デバイス プラットフォームのタイプです。 使用可能な値: `desktop`、 `windowsRT`、 `winMO6`、 `nokia`、 `windowsPhone`、 `mac`、 `winCE`、 `winEmbedded`、 `iPhone`、 `iPad`、 `iPod`、 `android`、 `iSocConsumer`、 `unix`、 `macMDM`、 `holoLens`、 `surfaceHub`、 `androidForWork`、 `androidEnterprise`, `blackberry`, `palm`, `unknown`.|
 |setting|String|設定のクラス名とプロパティ名。|
 |settingName|String|レポートされている設定名。|

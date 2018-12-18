@@ -1,12 +1,13 @@
 ---
 title: VPPトークンの更新
 description: vppToken オブジェクトのプロパティを更新します。
-ms.openlocfilehash: 2fdcb0d78b0690b63df429f43976647e93e6f25c
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 420efbc72ae8ef19bde91ca4b7a2ec5592f4e87a
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27066856"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27338753"
 ---
 # <a name="update-vpptoken"></a>VPPトークンの更新
 
@@ -44,9 +45,9 @@ PATCH /deviceAppManagement/vppTokens/{vppTokenId}
 
 次の表に、[VPPトークン](../resources/intune-onboarding-vpptoken.md) の作成時に必要なプロパティを示します。
 
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
-|id|String|appleVolumePurchaseProgramToken 作成時に自動的に生成されます。 エンティティのキーになります。|
+|ID|String|appleVolumePurchaseProgramToken 作成時に自動的に生成されます。 エンティティのキーになります。|
 |organizationName|String|Apple Volume Purchase Program のトークンに関連付けられている組織|
 |vppTokenAccountType|[vppTokenAccountType](../resources/intune-shared-vpptokenaccounttype.md)|特定の Apple Volume Purchase Program のトークンが関連付けられている、ボリューム購入プログラムの種類。 可能な値は、`business`、`education` です。 可能な値は、`business`、`education` です。|
 |appleId|String|特定の Apple Volume Purchase Program のトークンに関連付けられている Apple ID。|
@@ -57,12 +58,12 @@ PATCH /deviceAppManagement/vppTokens/{vppTokenId}
 |state|[vppTokenState](../resources/intune-onboarding-vpptokenstate.md)|Apple Volume Purchase Program のトークンの現在の状態。 可能な値は、`unknown`、`valid`、`expired`、`invalid`、`assignedToExternalMDM` です。 可能な値は、`unknown`、`valid`、`expired`、`invalid`、`assignedToExternalMDM` です。|
 |tokenActionResults|[vppTokenActionResult](../resources/intune-onboarding-vpptokenactionresult.md)コレクション|アクションの状態のコレクションは、Apple ボリューム購入プログラム トークンで実行されます。|
 |lastSyncStatus|[vppTokenSyncStatus](../resources/intune-onboarding-vpptokensyncstatus.md)|Apple Volume Purchase Program のトークンを使用して行われた最後のアプリケーションの同期の現在の同期状態。 可能な値は、`none`、`inProgress`、`completed`、`failed` です。 可能な値は、`none`、`inProgress`、`completed`、`failed` です。|
-|automaticallyUpdateApps|Boolean|VPP トークンのアプリを自動で更新するかどうか。|
+|automaticallyUpdateApps|ブール型|VPP トークンのアプリを自動で更新するかどうか。|
 |countryOrRegion|String|VPP トークンのアプリを自動で更新するかどうか。|
-|dataSharingConsentGranted|ブール値|Apple ボリューム購入プログラムを使用して共有データに確かに同意するものです。|
+|dataSharingConsentGranted|ブール型|Apple ボリューム購入プログラムを使用して共有データに確かに同意するものです。|
 |displayName|String|管理者は、トークンのフレンドリ名を指定します。|
 |locationName|String|アップル VPP から返されるトークンの場所です。|
-|claimTokenManagementFromExternalMdm|ブール値|外部 MDM. からのトークンの管理であると主張できるようにするのには同意するものと管理|
+|claimTokenManagementFromExternalMdm|ブール型|外部 MDM. からのトークンの管理であると主張できるようにするのには同意するものと管理|
 
 
 

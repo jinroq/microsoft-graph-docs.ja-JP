@@ -1,12 +1,13 @@
 ---
 title: Delete calendarGroup
 description: 既定の予定表グループ以外の予定表グループを削除します。
-ms.openlocfilehash: 64fa9069ba54c7549392db4fc2d3d47b4e95ebdc
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: angelgolfer-ms
+ms.openlocfilehash: dcb788f29b9e4b00408f4177f5785e6441084332
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27021955"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27342869"
 ---
 # <a name="delete-calendargroup"></a>Delete calendarGroup
 
@@ -33,7 +34,7 @@ DELETE /users/{id | userPrincipalName}/calendarGroups/{id}
 
 ## <a name="request-headers"></a>要求ヘッダー
 
-| 名前          | 型   | 説明               |
+| 名前          | 種類   | 説明               |
 | :------------ | :----- | :------------------------ |
 | Authorization | string | ベアラー {トークン}。必須。 |
 

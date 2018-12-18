@@ -1,12 +1,13 @@
 ---
 title: childFolders を一覧表示する
 description: 指定した連絡先フォルダーの下の子フォルダーのコレクションを取得します。
-ms.openlocfilehash: 7495d91636ac9c40c8f597cc020ad515b58bd73d
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: angelgolfer-ms
+ms.openlocfilehash: 0df1361fd1f25b2ac6e7793fb78ed1063cc00d84
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27021071"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27340531"
 ---
 # <a name="list-childfolders"></a>childFolders を一覧表示する
 
@@ -29,7 +30,7 @@ GET /users/{id | userPrincipalName}/contactFolders/{id}/childFolders
 ## <a name="optional-query-parameters"></a>オプションのクエリ パラメーター
 このメソッドは、応答をカスタマイズするための [OData クエリ パラメーター](https://developer.microsoft.com/graph/docs/concepts/query_parameters)をサポートします。
 ## <a name="request-headers"></a>要求ヘッダー
-| 名前       | 型 | 説明|
+| 名前       | 種類 | 説明|
 |:-----------|:------|:----------|
 | Authorization  | string  | ベアラー {トークン}。必須。 |
 

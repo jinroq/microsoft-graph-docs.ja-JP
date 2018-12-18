@@ -1,12 +1,13 @@
 ---
 title: domainNameSource 列挙型
 description: ドメイン名のソースです。
-ms.openlocfilehash: dffb35727877996e66d75f519ff7bceaa655fc48
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: b44c5a65df83539bfea66a13dbbbe1195ccd8e6a
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27066806"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27327994"
 ---
 # <a name="domainnamesource-enum-type"></a>domainNameSource 列挙型
 

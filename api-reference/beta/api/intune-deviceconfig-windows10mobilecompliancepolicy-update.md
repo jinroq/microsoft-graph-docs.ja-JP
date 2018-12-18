@@ -1,12 +1,13 @@
 ---
 title: windows10MobileCompliancePolicy の更新
 description: windows10MobileCompliancePolicy オブジェクトのプロパティを更新します。
-ms.openlocfilehash: d98fb9497a59db3e6ef051142df0dd6444679918
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: f9a040ab544d112cbe98e579eebc918c52b6f46b
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27072328"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27341966"
 ---
 # <a name="update-windows10mobilecompliancepolicy"></a>windows10MobileCompliancePolicy の更新
 
@@ -44,7 +45,7 @@ PATCH /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}
 
 次の表に、[windows10MobileCompliancePolicy](../resources/intune-deviceconfig-windows10mobilecompliancepolicy.md) の作成時に必要なプロパティを示します。
 
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
 |roleScopeTagIds|String コレクション|このエンティティ インスタンスのスコープのタグのリストです。 [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md) から継承します|
 |id|String|エンティティのキー。 [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md) から継承します|
@@ -69,7 +70,7 @@ PATCH /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}
 |secureBootEnabled|Boolean|デバイスが Windows デバイス正常性構成証明によって正常と報告される (セキュア ブートが有効である) ことを要求します。|
 |codeIntegrityEnabled|Boolean|デバイスが Windows デバイス正常性構成証明によって正常と報告されることを要求します。|
 |storageRequireEncryption|Boolean|Windows デバイス上での暗号化を要求します。|
-|activeFirewallRequired|ブール値|Windows デバイス上のアクティブなファイアウォールが必要です。|
+|activeFirewallRequired|ブール型|Windows デバイス上のアクティブなファイアウォールが必要です。|
 |validOperatingSystemBuildRanges|[operatingSystemVersionRange](../resources/intune-deviceconfig-operatingsystemversionrange.md)コレクション|有効なオペレーティング システムは、Windows デバイス上の範囲を作成します。 このコレクションには、最大で 10000 個の要素を含めることができます。|
 
 

@@ -1,12 +1,13 @@
 ---
 title: WindowsPhone81AppXBundle を作成します。
 description: 新しい windowsPhone81AppXBundle オブジェクトを作成します。
-ms.openlocfilehash: 1df7a11bedf52d8c0ab685e786beb6b961e9f4dc
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: d1b4c6f92edc6b6b123667ff44f337081550405b
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27073584"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27353096"
 ---
 # <a name="create-windowsphone81appxbundle"></a>WindowsPhone81AppXBundle を作成します。
 
@@ -44,9 +45,9 @@ POST /deviceAppManagement/mobileApps
 
 次の表は、windowsPhone81AppXBundle を作成するときに必要なプロパティを示します。
 
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
-|id|String|エンティティのキー。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|
+|ID|String|エンティティのキー。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|
 |displayName|String|管理者が提供またはインポートしたアプリのタイトル。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|
 |説明|String|アプリの説明。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|
 |publisher|String|アプリの発行元。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|

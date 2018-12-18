@@ -1,12 +1,13 @@
 ---
 title: ImportedAppleDeviceIdentity を作成します。
 description: 新しい importedAppleDeviceIdentity オブジェクトを作成します。
-ms.openlocfilehash: dae2d56990c9f6cdfb5c0adc5c6a457ade52e161
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: f329e520659bea7332a84c78ed32f1abf071744d
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27067202"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27338872"
 ---
 # <a name="create-importedappledeviceidentity"></a>ImportedAppleDeviceIdentity を作成します。
 
@@ -44,9 +45,9 @@ POST /deviceManagement/depOnboardingSettings/{depOnboardingSettingId}/importedAp
 
 次の表は、importedAppleDeviceIdentity を作成するときに必要なプロパティを示します。
 
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
-|id|String|エンティティのキー。|
+|ID|String|エンティティのキー。|
 |シリアル番号|String|デバイスのシリアル番号|
 |requestedEnrollmentProfileId|String|登録プロファイル Id の管理者が、次の登録時にデバイスに適用しようとしています。|
 |requestedEnrollmentProfileAssignmentDateTime|DateTimeOffset|時間登録のプロファイルは、デバイスに割り当てられました。|

@@ -1,12 +1,13 @@
 ---
 title: EmbeddedSIMDeviceState を作成します。
 description: 新しい embeddedSIMDeviceState オブジェクトを作成します。
-ms.openlocfilehash: 3d52c8910d38f72e9c08e27fe694cea49796b884
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: bacf4e0beb240a9c6e60792c7d2a853ac37dcce4
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27072984"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27340972"
 ---
 # <a name="create-embeddedsimdevicestate"></a>EmbeddedSIMDeviceState を作成します。
 
@@ -44,16 +45,16 @@ POST /deviceManagement/embeddedSIMActivationCodePools/{embeddedSIMActivationCode
 
 次の表は、embeddedSIMDeviceState を作成するときに必要なプロパティを示します。
 
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
-|id|String|埋め込みの SIM のデバイスの状態の一意の識別子です。 システムでは、作成時に割り当てられた値が生成されます。|
+|ID|String|埋め込みの SIM のデバイスの状態の一意の識別子です。 システムでは、作成時に割り当てられた値が生成されます。|
 |createdDateTime|DateTimeOffset|埋め込みの SIM のデバイスの状態が作成された時刻。 サービス側が生成されます。|
 |変更された日時|DateTimeOffset|埋め込み SIM デバイスのステータスが最後に修正された時間です。 サービス側を更新します。|
 |lastSyncDateTime|DateTimeOffset|SIM の埋め込みデバイスが最後にチェックインする時間です。 サービス側を更新します。|
 |universalIntegratedCircuitCardIdentifier|String|汎用集積回路カードの識別子 (UICCID) を展開する先となるプロファイルは、ハードウェアを識別します。|
 |deviceName|String|サブスクリプションには、デバイス名などのデスクトップでの準備|
 |userName|String|サブスクリプションが joe@contoso.com などに準備されているユーザー名|
-|ステート|[embeddedSIMDeviceStateValue](../resources/intune-esim-embeddedsimdevicestatevalue.md)|デバイスに適用されるプロファイルの操作の状態。 可能な値は、`notEvaluated`、`failed`、`installing`、`installed`、`deleting`、`error`、`deleted`、`removedByUser` です。|
+|state|[embeddedSIMDeviceStateValue](../resources/intune-esim-embeddedsimdevicestatevalue.md)|デバイスに適用されるプロファイルの操作の状態。 可能な値は、`notEvaluated`、`failed`、`installing`、`installed`、`deleting`、`error`、`deleted`、`removedByUser` です。|
 |stateDetails|String|プロビジョニングの状態の説明の文字列を指定します。|
 
 

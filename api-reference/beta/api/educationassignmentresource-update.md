@@ -1,12 +1,13 @@
 ---
 title: EducationAssignmentResource を更新します。
 description: '割り当てに関連付けられているリソースのプロパティを更新します。 クラスで教師だけでは、割り当てリソースのオブジェクトを変更できます。  '
-ms.openlocfilehash: 761dc4f656a41d8d984443b17d87b1b0961a2a8b
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: dipakboyed
+ms.openlocfilehash: 68c8f471462c489e9e655a1642731be3a8700ba4
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27067362"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27343219"
 ---
 # <a name="update-educationassignmentresource"></a>EducationAssignmentResource を更新します。
 
@@ -37,9 +38,9 @@ PATCH /education/classes/{id}/assignments/{id}/resources/{id}
 ## <a name="request-body"></a>要求本文
 要求本文で、更新する関連フィールドの値を指定します。 要求本文に含まれない既存のプロパティは、以前の値のままになるか、他のプロパティ値の変更に基づいて再計算されます。 最適なパフォーマンスを得るために、変更されていない既存の値を含めないでください。
 
-| プロパティ     | 型   |説明|
+| プロパティ     | 種類   |説明|
 |:---------------|:--------|:----------|
-|distributeForStudentWork|ブール値| 割り当てを発行する際、このリソースを各受講者用のリソース オブジェクトにコピーかどうかを示します。|
+|distributeForStudentWork|ブール型| 割り当てを発行する際、このリソースを各受講者用のリソース オブジェクトにコピーかどうかを示します。|
 |resource|educationResource| リソース オブジェクト。 |
 
 ## <a name="response"></a>応答

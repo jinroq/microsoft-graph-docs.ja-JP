@@ -1,12 +1,13 @@
 ---
 title: ChartTitle リソースの種類
 description: グラフのグラフ タイトル オブジェクトを表します。
-ms.openlocfilehash: ce2091c0cbd2435d96a1a931f7e46d6e2b8fb920
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lumine2008
+ms.openlocfilehash: b3d685c68b14ebe3f49eb3dd9186838c977c1cac
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27074036"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27338102"
 ---
 # <a name="charttitle-resource-type"></a>ChartTitle リソースの種類
 
@@ -23,7 +24,7 @@ ms.locfileid: "27074036"
 |[Update](../api/charttitle-update.md) | [ChartTitle](charttitle.md)    |ChartTitle オブジェクトを更新します。 |
 
 ## <a name="properties"></a>プロパティ
-| プロパティ     | 型   |説明|
+| プロパティ     | 種類   |説明|
 |:---------------|:--------|:----------|
 |overlay|ブール値|グラフのタイトルをグラフに重ねるかどうかを表すブール型の値。|
 |text|文字列|グラフのタイトルのテキストを表します。|

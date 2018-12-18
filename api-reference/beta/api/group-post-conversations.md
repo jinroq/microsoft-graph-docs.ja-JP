@@ -1,12 +1,13 @@
 ---
 title: 会話を作成する
 description: 'スレッドと投稿を含めて、新しい会話を作成します。 '
-ms.openlocfilehash: d7b04e71b4a58c6e1a44931fdf835b5c9770e177
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: dkershaw10
+ms.openlocfilehash: 48907b41362f56467fbb090e75faa8f3e18720c4
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27067277"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27340538"
 ---
 # <a name="create-conversation"></a>会話を作成する
 

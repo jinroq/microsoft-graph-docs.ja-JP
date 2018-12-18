@@ -1,12 +1,13 @@
 ---
 title: ActiveDirectoryWindowsAutopilotDeploymentProfile を削除します。
 description: ActiveDirectoryWindowsAutopilotDeploymentProfile を削除します。
-ms.openlocfilehash: a68a79ec3b360cb64033fee5a17526a061fa94ed
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 0ae86497a437b2064994d82a8e0c04e54ec3d245
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27070050"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27338858"
 ---
 # <a name="delete-activedirectorywindowsautopilotdeploymentprofile"></a>ActiveDirectoryWindowsAutopilotDeploymentProfile を削除します。
 

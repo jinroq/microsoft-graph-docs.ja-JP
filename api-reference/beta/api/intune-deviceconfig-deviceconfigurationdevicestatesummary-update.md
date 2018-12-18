@@ -1,12 +1,13 @@
 ---
 title: deviceConfigurationDeviceStateSummary の更新
 description: deviceConfigurationDeviceStateSummary オブジェクトのプロパティを更新します。
-ms.openlocfilehash: 877fb15d8420933b2a9b87ae0723dd0335a9ff0d
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: f3d7fceee1a13fba2488887c9c83cbc71c2dca93
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27073735"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27339089"
 ---
 # <a name="update-deviceconfigurationdevicestatesummary"></a>deviceConfigurationDeviceStateSummary の更新
 
@@ -44,9 +45,9 @@ PATCH /deviceManagement/deviceConfigurationDeviceStateSummaries
 
 次の表に、[deviceConfigurationDeviceStateSummary](../resources/intune-deviceconfig-deviceconfigurationdevicestatesummary.md) の作成時に必要なプロパティを示します。
 
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
-|id|String|エンティティのキー。|
+|ID|String|エンティティのキー。|
 |unknownDeviceCount|Int32|不明なデバイスの数|
 |notApplicableDeviceCount|Int32|該当しないデバイスの数|
 |compliantDeviceCount|Int32|準拠デバイスの数|

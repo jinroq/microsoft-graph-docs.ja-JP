@@ -1,12 +1,13 @@
 ---
 title: dataSharingConsent リソースの種類
 description: データの共有についてを同意するものとします。
-ms.openlocfilehash: 152b367161dc9a734a20e007ac1b2c0d02d0c99f
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 250ad388a5c619a6fd2753d172734145ea720776
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27074254"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27342936"
 ---
 # <a name="datasharingconsent-resource-type"></a>dataSharingConsent リソースの種類
 
@@ -26,12 +27,12 @@ ms.locfileid: "27074254"
 |[consentToDataSharing アクション](../api/intune-devices-datasharingconsent-consenttodatasharing.md)|[dataSharingConsent](../resources/intune-devices-datasharingconsent.md)|まだ文書化されていません|
 
 ## <a name="properties"></a>プロパティ
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
-|id|String|データ共有同意 Id|
+|ID|String|データ共有同意 Id|
 |serviceDisplayName|String|サービス作業の流れの表示名|
 |termsUrl|String|同意の共有データの TermsUrl|
-|付与|ブール値|同意の共有データに付与されている状態|
+|付与|ブール型|同意の共有データに付与されている状態|
 |grantDateTime|DateTimeOffset|同意は、このアカウントに与えられました。|
 |grantedByUpn|String|このアカウントに許可を付与するユーザーの Upn|
 |grantedByUserId|String|このアカウントに許可を付与するユーザーのユーザー Id|

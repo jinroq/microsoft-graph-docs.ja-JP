@@ -1,12 +1,13 @@
 ---
 title: 名前を一覧表示する
 description: nameditem オブジェクトのリストを取得します。
-ms.openlocfilehash: c2683c8f678d66019a4bb143aa993460687bbf2e
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lumine2008
+ms.openlocfilehash: 3f629e1a4073c63e5a6828588432472225b03f4c
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27070487"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27340846"
 ---
 # <a name="list-names"></a>名前を一覧表示する
 

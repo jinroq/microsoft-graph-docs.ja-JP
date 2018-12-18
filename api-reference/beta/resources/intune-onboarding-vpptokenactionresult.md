@@ -1,12 +1,13 @@
 ---
 title: vppTokenActionResult リソースの種類
 description: アクションのステータスは、Apple ボリューム購入プログラム トークンで実行されます。
-ms.openlocfilehash: d0cb9e21b04ccb8748d1f9e78f0a3e9dd465ce81
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 0b8b074e879321d0aed361373c49e6ed1fd16e62
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27074051"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27341679"
 ---
 # <a name="vpptokenactionresult-resource-type"></a>vppTokenActionResult リソースの種類
 
@@ -15,8 +16,8 @@ ms.locfileid: "27074051"
 > **注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
 
 アクションのステータスは、Apple ボリューム購入プログラム トークンで実行されます。
-## <a name="properties"></a>プロパティ
-|プロパティ|型|説明|
+## <a name="properties"></a>Properties
+|プロパティ|種類|説明|
 |:---|:---|:---|
 |actionName|文字列型 (String)|アクション名|
 |actionState|[actionState](../resources/intune-shared-actionstate.md)|アクションの状態です。 可能な値は、`none`、`pending`、`canceled`、`active`、`done`、`failed`、`notSupported` です。|

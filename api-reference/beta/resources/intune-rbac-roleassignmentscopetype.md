@@ -1,12 +1,13 @@
 ---
 title: roleAssignmentScopeType 列挙型
 description: 役割の割り当てのスコープの種類を指定します。
-ms.openlocfilehash: dcfac7b345dde2d8f107b8ec756d017966a6a94a
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 0a3286b3b7bc583323204ca39ff85e01869ddbe7
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27071698"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27343128"
 ---
 # <a name="roleassignmentscopetype-enum-type"></a>roleAssignmentScopeType 列挙型
 

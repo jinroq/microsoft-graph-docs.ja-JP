@@ -1,12 +1,13 @@
 ---
 title: ディレクトリ ロールのメンバーを削除する
 description: directoryRole からメンバーを削除します。
-ms.openlocfilehash: 5b6416bce2eecff52a71e4ae343e4970b3d858b1
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lleonard-msft
+ms.openlocfilehash: a0c2976fdab3e548e9bf27cc19b7049926562ea7
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27023307"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27350534"
 ---
 # <a name="remove-directory-role-member"></a>ディレクトリ ロールのメンバーを削除する
 
@@ -33,7 +34,7 @@ DELETE /directoryRoles/{id}/members/{id}/$ref
 
 ## <a name="request-headers"></a>要求ヘッダー
 
-| 名前       | 型 | 説明|
+| 名前       | 種類 | 説明|
 |:---------------|:--------|:----------|
 | Authorization  | string  | ベアラー {トークン}。必須。 |
 

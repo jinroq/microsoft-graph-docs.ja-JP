@@ -1,12 +1,13 @@
 ---
 title: getRoleScopeTagsByIds 関数
 description: まだ文書化されていません
-ms.openlocfilehash: 67722ad61a71f8d8572a95c5972992d4e0818931
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: b6708a605ad0c528e691b0a9a3a218e178ff7730
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27071647"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27342491"
 ---
 # <a name="getrolescopetagsbyids-function"></a>getRoleScopeTagsByIds 関数
 
@@ -44,7 +45,7 @@ GET /deviceManagement/getRoleScopeTagsByIds
 要求 URL で、次のクエリ パラメーターに値を指定します。
 次の表に、この関数で使用できるパラメーターを示します。
 
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
 |ids|String コレクション|まだ文書化されていません|
 

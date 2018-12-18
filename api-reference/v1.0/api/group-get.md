@@ -1,12 +1,13 @@
 ---
 title: グループを取得する
 description: グループ オブジェクトのプロパティとリレーションシップを取得します。
-ms.openlocfilehash: fbae878043580a9c5495b0462290e1da7af3bdd5
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: dkershaw10
+ms.openlocfilehash: aed805172759971740d1576b4b3040934116cd66
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27022168"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27340314"
 ---
 # <a name="get-group"></a>グループを取得する
 グループ オブジェクトのプロパティとリレーションシップを取得します。
@@ -65,7 +66,7 @@ GET /groups/{id}
 このメソッドは、応答をカスタマイズするための [OData クエリ パラメーター](/graph/query-parameters)をサポートします。
 
 ## <a name="request-headers"></a>要求ヘッダー
-| 名前       | 型 | 説明|
+| 名前       | 種類 | 説明|
 |:-----------|:------|:----------|
 | Authorization  | string  | ベアラー {トークン}。必須。 |
 

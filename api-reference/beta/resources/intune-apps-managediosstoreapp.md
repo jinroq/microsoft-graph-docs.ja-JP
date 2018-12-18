@@ -1,12 +1,13 @@
 ---
 title: managedIOSStoreApp リソース タイプ
 description: Intune アプリ保護ポリシーで管理できる iOS ストア アプリのプロパティと継承されたプロパティが含まれます。
-ms.openlocfilehash: c043dfa623733beef43de39eb8349017778462b7
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: aacd2ea98e99da1058a22e326f6b95c4f74d7f43
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27069129"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27339005"
 ---
 # <a name="managediosstoreapp-resource-type"></a>managedIOSStoreApp リソース タイプ
 
@@ -28,9 +29,9 @@ Intune アプリ保護ポリシーで管理できる iOS ストア アプリの�
 |[Update managedIOSStoreApp](../api/intune-apps-managediosstoreapp-update.md)|[managedIOSStoreApp](../resources/intune-apps-managediosstoreapp.md)|[managedIOSStoreApp](../resources/intune-apps-managediosstoreapp.md) オブジェクトのプロパティを更新します。|
 
 ## <a name="properties"></a>プロパティ
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
-|id|String|エンティティのキー。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|
+|ID|String|エンティティのキー。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|
 |displayName|String|管理者が提供またはインポートしたアプリのタイトル。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|
 |説明|String|アプリの説明。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|
 |publisher|String|アプリの発行元。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|

@@ -1,12 +1,13 @@
 ---
 title: detectedApp の更新
 description: detectedApp オブジェクトのプロパティを更新します。
-ms.openlocfilehash: 58fa37603b583a4ccf0579d2c6021ed5c1e60cc4
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: bf4a30e83acdadf45babbc2c71799b207ba03506
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27068446"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27324801"
 ---
 # <a name="update-detectedapp"></a>detectedApp の更新
 
@@ -45,9 +46,9 @@ PATCH /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/devic
 
 次の表に、[detectedApp](../resources/intune-devices-detectedapp.md) の作成時に必要なプロパティを示します。
 
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
-|id|String|検出されたアプリケーションの一意識別子。 これは、アプリケーションの作成時に、Intune によって自動的に生成されます。 読み取り専用です。|
+|ID|String|検出されたアプリケーションの一意識別子。 これは、アプリケーションの作成時に、Intune によって自動的に生成されます。 読み取り専用です。|
 |displayName|String|検出されたアプリケーションの名前。 読み取り専用です|
 |version|String|検出されたアプリケーションのバージョン。 読み取り専用です|
 |sizeInByte|Int64|検出されたアプリケーションのサイズ (バイト単位)。 読み取り専用です|

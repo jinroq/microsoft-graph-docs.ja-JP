@@ -1,12 +1,13 @@
 ---
 title: teamsAppInstallation リソースの種類
 description: 'チームでインストールする teamsApp です。 '
-ms.openlocfilehash: 64573e163c0ec5ce9f3282e747dffd4ccc6718de
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: nkramer
+ms.openlocfilehash: cab42c3bc2bde2e20dff3478d432d70e1563d248
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27069479"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27341798"
 ---
 # <a name="teamsappinstallation-resource-type"></a>teamsAppInstallation リソースの種類
 
@@ -23,11 +24,11 @@ ms.locfileid: "27069479"
 |[アプリを抹消します。](../api/teamsappinstallation-delete.md) | なし | 削除 (アンインストール)、チームからのアプリケーションです。|
 |[アプリケーションをアップグレードします。](../api/teamsappinstallation-delete.md) | なし | アプリケーションの最新バージョンにアップグレードします。|
 
-## <a name="properties"></a>プロパティ
+## <a name="properties"></a>Properties
 
-| プロパティ            | 型     | 説明 |
+| プロパティ            | 種類     | 説明 |
 |:------------------- |:-------- |:----------- |
-| ID                  | 文字列   | 一意の id (チームの appid とは異なる)。 |
+| ID                  | string   | 一意の id (チームの appid とは異なる)。 |
 
 ## <a name="relationships"></a>リレーションシップ
 

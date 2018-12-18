@@ -1,12 +1,13 @@
 ---
 title: Json リソースの種類
 description: JSON 形式で返されるデータを表します
-ms.openlocfilehash: a94f83e6d78c67554cd8eeba3bf89e25ac5d3188
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 8bf946e4b9762274fe95de720b178cb1d4e5bb89
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27068580"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27339621"
 ---
 # <a name="json-resource-type"></a>Json リソースの種類
 
@@ -16,7 +17,7 @@ ms.locfileid: "27068580"
 
 JSON 形式で返されるデータを表します
 ## <a name="properties"></a>プロパティ
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
 
 ## <a name="relationships"></a>リレーションシップ

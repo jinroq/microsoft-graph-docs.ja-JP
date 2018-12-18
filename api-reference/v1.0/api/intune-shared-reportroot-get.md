@@ -1,12 +1,13 @@
 ---
 title: Get reportRoot
 description: reportRoot オブジェクトのプロパティとリレーションシップを読み取ります。
-ms.openlocfilehash: 5c23cc4ff2a22077f3298846af1773417cd33c28
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: aa79d3bbc03529c20e0ea66b91c89a92f7782b2d
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27023519"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27339411"
 ---
 # <a name="get-reportroot"></a>Get reportRoot
 

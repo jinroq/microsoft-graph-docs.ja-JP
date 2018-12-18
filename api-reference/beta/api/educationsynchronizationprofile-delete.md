@@ -1,12 +1,13 @@
 ---
 title: EducationSynchronizationProfile を削除します。
 description: 識別子に基づくテナントの学校のデータの同期プロファイルを削除します。
-ms.openlocfilehash: 829b723b48eb9a15750bc9d0e00ba50d432e8ab6
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: mmast-msft
+ms.openlocfilehash: b0287133d579915279e0f9a02bf49dd981ccf419
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27071108"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27343303"
 ---
 # <a name="delete-a-educationsynchronizationprofile"></a>EducationSynchronizationProfile を削除します。
 
@@ -17,7 +18,7 @@ ms.locfileid: "27071108"
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
 
-| アクセス許可の種類 | Permissions |
+| アクセス許可の種類 | アクセス許可 |
 |:-----------|:----------|
 | 委任 (職場または学校のアカウント) | EduAdministration.ReadWrite |
 
@@ -28,7 +29,7 @@ DELETE /synchronizationProfiles/{id}
 ```
 
 ## <a name="request-headers"></a>要求ヘッダー
-| 名前       | 型 | 説明|
+| 名前       | 種類 | 説明|
 |:-----------|:------|:----------|
 | Authorization  | string  | ベアラー {トークン}。必須。  |
 |(個人用の Microsoft アカウントを委任します。|サポートされていません。|

@@ -1,12 +1,13 @@
 ---
 title: DepMacOSEnrollmentProfile を取得します。
 description: DepMacOSEnrollmentProfile オブジェクトのプロパティと関係を参照してください。
-ms.openlocfilehash: 02ec6338bd5cc13c8cff1578c9c66fb6438cb930
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 7d1474e8291eb7d7859750c06bc76964bcdee7a8
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27074021"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27338410"
 ---
 # <a name="get-depmacosenrollmentprofile"></a>DepMacOSEnrollmentProfile を取得します。
 

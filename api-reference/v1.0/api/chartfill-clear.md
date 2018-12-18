@@ -1,12 +1,13 @@
 ---
 title: 'ChartFill: clear'
 description: グラフ要素の塗りつぶしの色をクリアします。
-ms.openlocfilehash: 1703e04ed50a27a057c0d9aa54d4c32f88e2c541
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lumine2008
+ms.openlocfilehash: 440cffba49522621372201cdca8a4ddcdadf5c5f
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27021665"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27341315"
 ---
 # <a name="chartfill-clear"></a>ChartFill: clear
 

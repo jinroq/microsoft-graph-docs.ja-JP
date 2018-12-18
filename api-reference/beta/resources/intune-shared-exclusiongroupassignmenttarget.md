@@ -1,12 +1,13 @@
 ---
 title: exclusionGroupAssignmentTarget リソースの種類
 description: 割り当てから除外するグループを表します。
-ms.openlocfilehash: c5d104af3e87d285f0157a6fe6edbc46949f97bd
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 783231c451668169ba85e8ce1cfecd669b5c0b7d
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27072781"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27343184"
 ---
 # <a name="exclusiongroupassignmenttarget-resource-type"></a>exclusionGroupAssignmentTarget リソースの種類
 
@@ -19,7 +20,7 @@ ms.locfileid: "27072781"
 [groupAssignmentTarget](../resources/intune-shared-groupassignmenttarget.md) からの継承
 
 ## <a name="properties"></a>プロパティ
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
 |groupId|文字列|割り当てのターゲットとなるグループ ID です。 [groupAssignmentTarget](../resources/intune-shared-groupassignmenttarget.md) からの継承|
 

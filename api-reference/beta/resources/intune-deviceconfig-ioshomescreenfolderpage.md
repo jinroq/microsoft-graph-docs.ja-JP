@@ -1,12 +1,13 @@
 ---
 title: iosHomeScreenFolderPage リソースの種類
 description: ホーム画面上のアプリが含まれるフォルダー
-ms.openlocfilehash: 7cf34cd3bbd4f196db70da3a88ba3768c3d4d630
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: fc5f1899a9eadf88a1815558ed9c1dc9eff51114
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27067942"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27340636"
 ---
 # <a name="ioshomescreenfolderpage-resource-type"></a>iosHomeScreenFolderPage リソースの種類
 
@@ -16,7 +17,7 @@ ms.locfileid: "27067942"
 
 ホーム画面上のアプリが含まれるフォルダー
 ## <a name="properties"></a>プロパティ
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
 |displayName|文字列型 (String)|フォルダー ページの名前|
 |apps|[iosHomeScreenApp](../resources/intune-deviceconfig-ioshomescreenapp.md) コレクション|フォルダー内のページに表示されるアプリの一覧。 このコレクションには、最大で 500 個の要素を含めることができます。|

@@ -1,20 +1,21 @@
 ---
 title: alertTrigger リソースの種類
 description: (プロパティがアラートのエンティティに存在する)、検出をトリガーするプロパティについて説明します。
-ms.openlocfilehash: b4af3be67669fd27f27e888cbc28b60b0c1c67a5
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: Preetikr
+ms.openlocfilehash: f0888e6caf78d806909f818a8b72fb21320e7796
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27023539"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27341269"
 ---
 # <a name="alerttrigger-resource-type"></a>alertTrigger リソースの種類
 
 (プロパティがアラートのエンティティに存在する)、検出をトリガーするプロパティについて説明します。
 
-## <a name="properties"></a>プロパティ
+## <a name="properties"></a>Properties
 
-| プロパティ   | 型|説明|
+| プロパティ   | 種類|説明|
 |:---------------|:--------|:----------|
 |名前|String|検出のトリガーとして機能するプロパティの名前です。|
 |type|String|解釈のキーと値のペアのプロパティの型。 たとえば、文字列、ブール値などです。|
@@ -41,7 +42,7 @@ ms.locfileid: "27023539"
 
 ```
 
-## <a name="example"></a>使用例
+## <a name="example"></a>例
 
 ```json
 {

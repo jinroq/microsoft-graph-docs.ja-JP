@@ -1,12 +1,13 @@
 ---
 title: deviceManagementScriptDeviceState リソースの種類
 description: 状態のデバイスの管理スクリプトを実行するデバイスのプロパティが含まれています。
-ms.openlocfilehash: 11c9e574e880df371f45181dd02fdb2292d0cb15
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 5667de5351ea3130ab0c3e00a55013ada66ed01a
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27074259"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27337325"
 ---
 # <a name="devicemanagementscriptdevicestate-resource-type"></a>deviceManagementScriptDeviceState リソースの種類
 
@@ -24,10 +25,10 @@ ms.locfileid: "27074259"
 |[DeviceManagementScriptDeviceState を削除します。](../api/intune-devices-devicemanagementscriptdevicestate-delete.md)|なし|の[deviceManagementScriptDeviceState](../resources/intune-devices-devicemanagementscriptdevicestate.md)を削除します。|
 |[DeviceManagementScriptDeviceState を更新します。](../api/intune-devices-devicemanagementscriptdevicestate-update.md)|[deviceManagementScriptDeviceState](../resources/intune-devices-devicemanagementscriptdevicestate.md)|[DeviceManagementScriptDeviceState](../resources/intune-devices-devicemanagementscriptdevicestate.md)オブジェクトのプロパティを更新します。|
 
-## <a name="properties"></a>プロパティ
-|プロパティ|型|説明|
+## <a name="properties"></a>Properties
+|プロパティ|種類|説明|
 |:---|:---|:---|
-|id|String|デバイス管理スクリプト デバイス状態のエンティティのキーです。|
+|ID|String|デバイス管理スクリプト デバイス状態のエンティティのキーです。|
 |runState|[runState](../resources/intune-shared-runstate.md)|デバイス管理スクリプトの実行を最新の状態です。 可能な値は、`unknown`、`success`、`fail` です。|
 |resultMessage|String|実行結果の詳細です。|
 |lastStateUpdateDateTime|DateTimeOffset|最新の時間、デバイスの管理スクリプトを実行します。|

@@ -1,12 +1,13 @@
 ---
 title: enrollmentConfigurationAssignment の更新
 description: enrollmentConfigurationAssignment オブジェクトのプロパティを更新します。
-ms.openlocfilehash: 4821a0ca1446f900a0f4987beedea2b6dc74302f
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: c05856fbdcd3f5930ac5c40b10c53c7dedbc97ef
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27023791"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27339565"
 ---
 # <a name="update-enrollmentconfigurationassignment"></a>enrollmentConfigurationAssignment の更新
 
@@ -42,10 +43,10 @@ PATCH /deviceManagement/deviceEnrollmentConfigurations/{deviceEnrollmentConfigur
 
 次の表に、[enrollmentConfigurationAssignment](../resources/intune-onboarding-enrollmentconfigurationassignment.md) の作成時に必要なプロパティを示します。
 
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
-|id|String|まだ文書化されていません|
-|target|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|まだ文書化されていません|
+|ID|String|まだ文書化されていません|
+|ターゲット|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|まだ文書化されていません|
 
 
 

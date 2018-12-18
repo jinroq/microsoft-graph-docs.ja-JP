@@ -1,12 +1,13 @@
 ---
 title: リスト windowsVpnConfigurations
 description: WindowsVpnConfiguration オブジェクトのプロパティと関係を一覧表示します。
-ms.openlocfilehash: 763dd7e875c10649204d6cb4e26dd0d5a20d967c
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: bb268cec910efbe0b637fb5b8010c9b38236a723
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27068443"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27342309"
 ---
 # <a name="list-windowsvpnconfigurations"></a>リスト windowsVpnConfigurations
 

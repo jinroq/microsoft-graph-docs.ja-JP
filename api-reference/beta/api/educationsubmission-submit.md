@@ -1,12 +1,13 @@
 ---
 title: 'educationSubmission: 送信'
-description: . 送信中に、すべてのリソースは、submittedResources バケットにコピーされます。 先生はグレーディングの送信済みのリソースの一覧を見ています。
-ms.openlocfilehash: 566948278ffacb1169842c49aa11c78cba0a5f3f
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+description: 学生が作業を行われ、割り当てで入稿する準備ができなことを示す動作です。 この操作は、受講者のみ取得できます。
+author: dipakboyed
+ms.openlocfilehash: 25fc24823081c6f148617ad31d0f7b797b0e2a80
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27068234"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27343331"
 ---
 # <a name="educationsubmission-submit"></a>educationSubmission: 送信
 

@@ -1,12 +1,13 @@
 ---
 title: deviceManagementExchangeConnectors のリスト
 description: deviceManagementExchangeConnector オブジェクトのプロパティとリレーションシップをリストします。
-ms.openlocfilehash: bece85c7bd68adaf0cf3f514c24dc603ac0e33e1
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 7f3709e22dfc9f545be25500c5f1344ade81d6fc
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27023357"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27343485"
 ---
 # <a name="list-devicemanagementexchangeconnectors"></a>deviceManagementExchangeConnectors のリスト
 

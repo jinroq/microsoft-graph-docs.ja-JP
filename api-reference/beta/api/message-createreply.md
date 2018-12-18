@@ -1,12 +1,13 @@
 ---
 title: 'メッセージ: createReply'
 description: 'コメントを含めるか、メッセージ ・ プロパティの更新への返信メッセージの下書きを作成します。 '
-ms.openlocfilehash: 40bdd5792e9d7a018fc8c7b1aca2d5955a8ef807
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: angelgolfer-ms
+ms.openlocfilehash: cf7bfb3ce584a17a3e4105d04c7e781b69c4901c
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27073634"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27338942"
 ---
 # <a name="message-createreply"></a>メッセージ: createReply
 
@@ -14,7 +15,7 @@ ms.locfileid: "27073634"
 
 1 回の **createReply** 呼び出しで下書きの返信メッセージを作成して、コメントを含めるかメッセージのプロパティを更新します。その後、下書きを [更新](../api/message-update.md) または [送信](../api/message-send.md) できます。
 
-**メモ**
+**注**
 
 - **Body**プロパティまたはコメントのいずれかを指定することができます、`message`のパラメーターです。 両方を指定すると、「HTTP 400 要求が正しくありません」というエラーが返されます。
 - **ReplyTo**が元のメッセージのインターネット メッセージ フォーマット ([RFC 2822](https://www.rfc-editor.org/info/rfc2822)) ごとに指定されている場合**から**の**replyTo**、内の受信者と受信者ではありませんへの返信を送信する必要があります。 
@@ -37,7 +38,7 @@ POST /me/mailFolders/{id}/messages/{id}/createReply
 POST /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/createReply
 ```
 ## <a name="request-headers"></a>要求ヘッダー
-| 名前       | 型 | 説明|
+| 名前       | 種類 | 説明|
 |:---------------|:--------|:----------|
 | Authorization  | string  | ベアラー {トークン}。必須。 |
 | Content-Type | string  | エンティティ本文内のデータの性質です。必須。 |
@@ -45,7 +46,7 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/createReply
 ## <a name="request-body"></a>要求本文
 要求本文で、次のパラメーターを含む JSON オブジェクトを指定します。
 
-| パラメーター    | 型   |説明|
+| パラメーター    | 種類   |説明|
 |:---------------|:--------|:----------|
 |comment|String|含めるコメントです。空の文字列にすることができます。|
 |message|[message](../resources/message.md)|返信メッセージで更新する書き込み可能なプロパティです。|

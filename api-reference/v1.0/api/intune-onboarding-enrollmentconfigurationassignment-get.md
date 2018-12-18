@@ -1,12 +1,13 @@
 ---
 title: Get enrollmentConfigurationAssignment
 description: enrollmentConfigurationAssignment オブジェクトのプロパティとリレーションシップを読み取ります。
-ms.openlocfilehash: e9e9be8484770ae55a3daf7ac9114106a3a4846a
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 05b04b29b41ceb2c3e79e9836a3252ae386d59d3
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27022349"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27342722"
 ---
 # <a name="get-enrollmentconfigurationassignment"></a>Get enrollmentConfigurationAssignment
 

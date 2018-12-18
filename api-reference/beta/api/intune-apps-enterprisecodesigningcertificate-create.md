@@ -1,12 +1,13 @@
 ---
 title: EnterpriseCodeSigningCertificate を作成します。
 description: 新しい enterpriseCodeSigningCertificate オブジェクトを作成します。
-ms.openlocfilehash: aa5d92c22a1cd4eb91a41b26ed92f76937ce9dcd
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 337513242ae653a1d18f3ed9460cf26210534ab8
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27066331"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27341098"
 ---
 # <a name="create-enterprisecodesigningcertificate"></a>EnterpriseCodeSigningCertificate を作成します。
 
@@ -44,10 +45,10 @@ POST /deviceAppManagement/enterpriseCodeSigningCertificates
 
 次の表は、enterpriseCodeSigningCertificate を作成するときに必要なプロパティを示します。
 
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
-|id|String|エンティティのキー。|
-|content|バイナリ|生データの形式で Windows エンタープライズ コード署名証明書。|
+|ID|String|エンティティのキー。|
+|content|Binary|生データの形式で Windows エンタープライズ コード署名証明書。|
 |status|[certificateStatus](../resources/intune-apps-certificatestatus.md)|証明書の状態は、準備または準備されていません。 使用可能な値は、`notProvisioned`、`provisioned` です。|
 |subjectName|文字列型 (String)|証明書のサブジェクト名。|
 |subject|String|証明書のサブジェクト値。|

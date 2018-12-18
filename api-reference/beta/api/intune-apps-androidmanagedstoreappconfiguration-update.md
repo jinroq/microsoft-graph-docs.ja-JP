@@ -1,12 +1,13 @@
 ---
 title: AndroidManagedStoreAppConfiguration を更新します。
 description: AndroidManagedStoreAppConfiguration オブジェクトのプロパティを更新します。
-ms.openlocfilehash: 807cdce5e0faa33509bcbf5ab521325a7c577ec7
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: a2643ac3f7ea23b500315a06505f5bb378ee0d58
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27067416"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27341259"
 ---
 # <a name="update-androidmanagedstoreappconfiguration"></a>AndroidManagedStoreAppConfiguration を更新します。
 
@@ -44,9 +45,9 @@ PATCH /deviceAppManagement/mobileAppConfigurations/{managedDeviceMobileAppConfig
 
 [AndroidManagedStoreAppConfiguration](../resources/intune-apps-androidmanagedstoreappconfiguration.md)を作成するときに必要なプロパティを次の表に示します。
 
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
-|id|String|エンティティのキー。 [managedDeviceMobileAppConfiguration](../resources/intune-apps-manageddevicemobileappconfiguration.md) から継承されます|
+|ID|String|エンティティのキー。 [managedDeviceMobileAppConfiguration](../resources/intune-apps-manageddevicemobileappconfiguration.md) から継承されます|
 |targetedMobileApps|String コレクション|関連するアプリです。 [managedDeviceMobileAppConfiguration](../resources/intune-apps-manageddevicemobileappconfiguration.md) から継承されます|
 |roleScopeTagIds|String コレクション|このアプリケーションの構成エンティティのスコープのタグの一覧です。 [managedDeviceMobileAppConfiguration](../resources/intune-apps-manageddevicemobileappconfiguration.md) から継承されます|
 |createdDateTime|DateTimeOffset|オブジェクトが作成された DateTime。 [managedDeviceMobileAppConfiguration](../resources/intune-apps-manageddevicemobileappconfiguration.md) から継承されます|

@@ -1,12 +1,13 @@
 ---
 title: ボックスの一覧のリソース
 description: この送信に関連付けられているリソースを一覧表示します。 **SubmissionResource**は、受講者の実際のリソース オブジェクトのラッパーは、作業です。 ラッパーには、割り当てのリソースへのポインターも含まれていますこれは、割り当て処理中に割り当てからコピーした場合。 これらのリソースは、割り当ての作業用コピーです。 **SubmittedResources**は、採点方式のことを正式に提出したリソースです。
-ms.openlocfilehash: 0035f34b734cb4335fd1fd9ec3eece9183eed67b
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: dipakboyed
+ms.openlocfilehash: d63c731798003a2312ee5fbff534cde88d4b9ecf
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27067982"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27341070"
 ---
 # <a name="list-resources"></a>ボックスの一覧のリソース
 

@@ -1,12 +1,13 @@
 ---
 title: managedDeviceEnrollmentTopFailures 関数
 description: まだ文書化されていません
-ms.openlocfilehash: 455166ddf0e22fc61ad0fab0d64dd2bcfb547a3e
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: dd62bffa153d56c279644eeaa99763c4220f27b1
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27068713"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27337822"
 ---
 # <a name="manageddeviceenrollmenttopfailures-function"></a>managedDeviceEnrollmentTopFailures 関数
 
@@ -44,7 +45,7 @@ GET /reports/managedDeviceEnrollmentTopFailures
 要求 URL で、次のクエリ パラメーターに値を指定します。
 次の表に、この関数で使用できるパラメーターを示します。
 
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
 |period|String|まだ文書化されていません|
 

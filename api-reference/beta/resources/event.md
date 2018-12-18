@@ -1,12 +1,13 @@
 ---
 title: イベント リソースの種類
 description: 予定表内のイベントです。
-ms.openlocfilehash: aa7d667ac35c4e76dab40dca1cce264b9bd7ec96
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: angelgolfer-ms
+ms.openlocfilehash: 45b5131b14e9bf50c8dc0bc3db869b706a3068ba
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27070819"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27340650"
 ---
 # <a name="event-resource-type"></a>イベント リソースの種類
 
@@ -84,7 +85,7 @@ ms.locfileid: "27070819"
 
 ```
 ## <a name="properties"></a>プロパティ
-| プロパティ     | 型   |説明|
+| プロパティ     | 種類   |説明|
 |:---------------|:--------|:----------|
 |attendees|[出席者](attendee.md)コレクション|イベントの参加者のコレクションです。|
 |body|[ItemBody](itembody.md)|イベントに関連付けられたメッセージの本文。HTML 形式またはテキスト形式にできます。|
@@ -103,7 +104,7 @@ ms.locfileid: "27070819"
 |lastModifiedDateTime|DateTimeOffset|Timestamp 型は、ISO 8601 形式を使用して日付と時刻の情報を表し、必ず UTC 時間です。たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、次のようになります。`'2014-01-01T00:00:00Z'`|
 |location|[Location](location.md)|イベントの場所。|
 |locations|[場所](location.md)のコレクション|イベントを開催する場所、または参加者がいる場所。 **location** プロパティと **locations** プロパティは常に互いに一致します。 **location** プロパティを更新すると、**locations** コレクションに含まれる既存のすべての場所が削除されて、**location** の新しい値に置き換えられます。 |
-|onlineMeetingUrl|String|オンライン会議の URL。 会議の開催者として、Skype などのオンライン会議イベントを指定する場合にのみ、プロパティが設定されています。 値の取得のみ可能です。|
+|onlineMeetingUrl|String|オンライン会議の URL。 会議の開催者として、Skype などのオンライン会議イベントを指定する場合にのみ、プロパティが設定されています。 読み取り専用です。|
 |organizer|[Recipient](recipient.md)|イベントの開催者。|
 |originalEndTimeZone|String|イベントの作成時に設定された終了タイム ゾーン。 値 `tzone://Microsoft/Custom` は、デスクトップの Outlook で、従来のカスタム タイム ゾーンが設定されていることを示します。|
 |originalStart|DateTimeOffset|Timestamp 型は、ISO 8601 形式を使用して日付と時刻の情報を表し、必ず UTC 時間です。たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、次のようになります。`'2014-01-01T00:00:00Z'`|
@@ -117,14 +118,14 @@ ms.locfileid: "27070819"
 |showAs|String|表示するステータス。 使用可能な値: `free`、`tentative`、`busy`、`oof`、`workingElsewhere`、`unknown`。|
 |開始|[DateTimeTimeZone](datetimetimezone.md)|イベントの開始時刻です。|
 |subject|String|イベントの件名行のテキスト。|
-|type|String|イベントの種類。 使用可能な値: `singleInstance`、`occurrence`、`exception`、`seriesMaster`。 取得のみ可能です。|
+|type|String|イベントの種類。 使用可能な値: `singleInstance`、`occurrence`、`exception`、`seriesMaster`。 取得のみ可能な値です|
 |uid|String|複数の予定表で 1 つのイベントのすべてのインスタンスによって共有される一意識別子。 **注:** このプロパティと同じ目的を機能する、 `iCalUid` v1.0 のエンドポイント上の[イベントのリソース](/graph/api/resources/event?view=graph-rest-1.0)のプロパティが同じ値を持つことは保証されませんが、します。|
 |webLink|String|Outlook Web App でイベントを開く URL。<br/><br/>Outlook Web App のメールボックスにログインしている場合、ブラウザーでイベントが開きます。まだブラウザーでログインしていない場合、ログインするように求められます。<br/><br/>この URL には、iFrame 内からアクセスできます。|
 
 ## <a name="relationships"></a>リレーションシップ
 | リレーションシップ | 型   |説明|
 |:---------------|:--------|:----------|
-|attachments|[Attachment](attachment.md) コレクション|イベントの[FileAttachment](fileattachment.md)、 [ItemAttachment](itemattachment.md)、および[referenceAttachment](referenceattachment.md)の添付ファイルのコレクションです。 ナビゲーション プロパティ。 読み取り専用。 Null 許容型。|
+|attachments|[Attachment](attachment.md) コレクション|イベントの[FileAttachment](fileattachment.md)、 [ItemAttachment](itemattachment.md)、および[referenceAttachment](referenceattachment.md)の添付ファイルのコレクションです。 ナビゲーション プロパティ。 読み取り専用です。 Null 許容型。|
 |calendar|[Calendar](calendar.md)|イベントを含む予定表。ナビゲーション プロパティ。読み取り専用。|
 |extensions|[Extension](extension.md) コレクション|イベントに対して定義されている、開いている拡張機能のコレクションです。 Null 許容型。|
 |インスタンス|[Event](event.md) collection|イベントのインスタンス。ナビゲーション プロパティ。読み取り専用。Null 許容型。|

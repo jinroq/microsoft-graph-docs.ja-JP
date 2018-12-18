@@ -1,12 +1,13 @@
 ---
 title: windowsUpdateScheduledInstall リソースの種類
 description: まだ文書化されていません
-ms.openlocfilehash: 06e26bfb43691c8774e166a65b36d6ab872d44e1
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 4a8943fa0275d8b9e5a668be207c90304f22a327
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27021692"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27340916"
 ---
 # <a name="windowsupdatescheduledinstall-resource-type"></a>windowsUpdateScheduledInstall リソースの種類
 
@@ -17,7 +18,7 @@ ms.locfileid: "27021692"
 [windowsUpdateInstallScheduleType](../resources/intune-deviceconfig-windowsupdateinstallscheduletype.md) からの継承
 
 ## <a name="properties"></a>プロパティ
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
 |scheduledInstallDay|[weeklySchedule](../resources/intune-deviceconfig-weeklyschedule.md)|スケジュールされたインストールの週の曜日です。 可能な値は、`userDefined`、`everyday`、`sunday`、`monday`、`tuesday`、`wednesday`、`thursday`、`friday`、`saturday` です。|
 |scheduledInstallTime|TimeOfDay|スケジュールされたインストール時刻|

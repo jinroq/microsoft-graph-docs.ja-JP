@@ -1,12 +1,13 @@
 ---
 title: Create managedDevice
 description: 新しい managedDevice オブジェクトを作成します。
-ms.openlocfilehash: 9fa8efe9a4dd1a4ec753c25382f95f383bf0fe8f
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: fa37f7114dac2d990d5d5cd90fd26ae64555661d
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27020688"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27340307"
 ---
 # <a name="create-manageddevice"></a>Create managedDevice
 
@@ -44,9 +45,9 @@ POST /deviceManagement/detectedApps/{detectedAppId}/managedDevices
 
 次の表に、managedDevice の作成時に必要なプロパティを示します。
 
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
-|id|String|デバイスの一意識別子|
+|ID|String|デバイスの一意識別子|
 |userId|String|デバイスに関連付けられているユーザーの一意の識別子|
 |deviceName|String|デバイスの名前|
 |managedDeviceOwnerType|[managedDeviceOwnerType](../resources/intune-devices-manageddeviceownertype.md)|デバイスの所有権。 '会社' または '個人' にすることができます。 可能な値は、`unknown`、`company`、`personal` です。|

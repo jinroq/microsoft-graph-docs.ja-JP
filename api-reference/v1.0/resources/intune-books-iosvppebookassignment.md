@@ -1,12 +1,13 @@
 ---
 title: iosVppEBookAssignment リソースの種類
 description: グループへの iOS VPP 電子ブックの割り当てに使用されるプロパティが含まれています。
-ms.openlocfilehash: 88d120963f0762ab04004cd8b90e3fe44d373edd
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: d2e8bf4e5c3ee7fe626d1af17a97d94e1440f3a1
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27024058"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27342575"
 ---
 # <a name="iosvppebookassignment-resource-type"></a>iosVppEBookAssignment リソースの種類
 
@@ -26,9 +27,9 @@ ms.locfileid: "27024058"
 |[iosVppEBookAssignment の更新](../api/intune-books-iosvppebookassignment-update.md)|[iosVppEBookAssignment](../resources/intune-books-iosvppebookassignment.md)|[iosVppEBookAssignment](../resources/intune-books-iosvppebookassignment.md) のプロパティを更新します。|
 
 ## <a name="properties"></a>プロパティ
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
-|id|String|エンティティのキー。 [managedEBookAssignment](../resources/intune-books-managedebookassignment.md) から継承します|
+|ID|String|エンティティのキー。 [managedEBookAssignment](../resources/intune-books-managedebookassignment.md) から継承します|
 |target|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|電子ブックの割り当て先。 [managedEBookAssignment](../resources/intune-books-managedebookassignment.md) から継承します|
 |installIntent|[installIntent](../resources/intune-shared-installintent.md)|電子ブックのインストールの目的。 [ManagedEBookAssignment](../resources/intune-books-managedebookassignment.md)から継承されます。 可能な値は、`available`、`required`、`uninstall`、`availableWithoutEnrollment` です。|
 

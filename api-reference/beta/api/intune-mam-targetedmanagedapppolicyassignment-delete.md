@@ -1,12 +1,13 @@
 ---
 title: Delete targetedManagedAppPolicyAssignment
 description: targetedManagedAppPolicyAssignment を削除します。
-ms.openlocfilehash: 4bd09b7d5cfe2384a546b9227e104158d621b6cf
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: e620fe0954c5a173bcea492aff8737f5467149a7
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27066381"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27344255"
 ---
 # <a name="delete-targetedmanagedapppolicyassignment"></a>Delete targetedManagedAppPolicyAssignment
 

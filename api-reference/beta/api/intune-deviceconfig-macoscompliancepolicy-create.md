@@ -1,12 +1,13 @@
 ---
 title: macOSCompliancePolicy の作成
 description: 新しい macOSCompliancePolicy オブジェクトを作成します。
-ms.openlocfilehash: b70a8dcea496c49d84ea9b0f2b5c4c897a0243b2
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: bef752d4b296a397aa773e104f18c366883bdc8d
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27068189"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27340258"
 ---
 # <a name="create-macoscompliancepolicy"></a>macOSCompliancePolicy の作成
 
@@ -44,7 +45,7 @@ POST /deviceManagement/deviceCompliancePolicies
 
 次の表に、macOSCompliancePolicy 作成時に必要なプロパティを示します。
 
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
 |roleScopeTagIds|String コレクション|このエンティティ インスタンスのスコープのタグのリストです。 [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md) から継承します|
 |id|String|エンティティのキー。 [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md) から継承します|
@@ -68,9 +69,9 @@ POST /deviceManagement/deviceCompliancePolicies
 |deviceThreatProtectionRequiredSecurityLevel|[deviceThreatProtectionLevel](../resources/intune-deviceconfig-devicethreatprotectionlevel.md)|Mobile Threat Protection に、コンプライアンス違反をレポートするための最小のリスク レベルを要求します。 可能な値は、`unavailable`、`secured`、`low`、`medium`、`high`、`notSet` です。|
 |storageRequireEncryption|Boolean|Mac OS デバイスでの暗号化を要求します。|
 |gatekeeperAllowedAppSource|[macOSGatekeeperAppSources](../resources/intune-deviceconfig-macosgatekeeperappsources.md)|システムは、macOS のデバイスでどのダウンロード場所のアプリケーションから実行できるかを決定するプライバシー設定。 可能な値は、`notConfigured`、`macAppStore`、`macAppStoreAndIdentifiedDevelopers`、`anywhere` です。|
-|firewallEnabled|ブール値|かどうか、か、これらのファイアウォールは有効にする必要があります。|
-|firewallBlockAllIncoming|ブール値|「すべての着信接続をブロックする] オプションに対応します。|
-|firewallEnableStealthMode|ブール値|「有効にするステルス モード」に対応|
+|firewallEnabled|ブール型|かどうか、か、これらのファイアウォールは有効にする必要があります。|
+|firewallBlockAllIncoming|ブール型|「すべての着信接続をブロックする] オプションに対応します。|
+|firewallEnableStealthMode|ブール型|「有効にするステルス モード」に対応|
 
 
 

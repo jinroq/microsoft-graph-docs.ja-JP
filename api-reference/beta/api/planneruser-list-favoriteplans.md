@@ -1,12 +1,13 @@
 ---
 title: リスト favoritePlans
 description: ユーザーがお気に入りとしてマークされている plannerPlans の一覧を取得します。 お気に入りとして計画をマークするには、plannerUser リソースを更新します。
-ms.openlocfilehash: e9e3cf3cd348430a3512d15ac2e0cdc68d24d258
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: TarkanSevilmis
+ms.openlocfilehash: c0f82522c41977df1aa034dbd14a86749b10b803
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27068700"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27324585"
 ---
 # <a name="list-favoriteplans"></a>リスト favoritePlans
 

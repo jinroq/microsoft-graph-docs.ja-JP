@@ -1,12 +1,13 @@
 ---
 title: IosEasEmailProfileConfiguration を更新します。
 description: IosEasEmailProfileConfiguration オブジェクトのプロパティを更新します。
-ms.openlocfilehash: e73b5e441d99831e8b89b897a09a5809dab6d1ea
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: a330d3c56386da5c440bbe58573f977c876d8481
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27071767"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27343290"
 ---
 # <a name="update-ioseasemailprofileconfiguration"></a>IosEasEmailProfileConfiguration を更新します。
 
@@ -46,12 +47,12 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 
 [IosEasEmailProfileConfiguration](../resources/intune-deviceconfig-ioseasemailprofileconfiguration.md)を作成するときに必要なプロパティを次の表に示します。
 
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
-|id|String|エンティティのキー。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
+|ID|String|エンティティのキー。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |lastModifiedDateTime|DateTimeOffset|オブジェクトが最後に変更された DateTime。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |roleScopeTagIds|String コレクション|このエンティティ インスタンスのスコープのタグのリストです。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
-|supportsScopeTags|ブール値|デバイスの構成を基になるスコープのタグの割り当てをサポートしているかどうかを示します。 この値が false であり、エンティティをスコープ指定されたユーザーには表示されませんがある場合、ScopeTags プロパティに割り当てることは許可されていません。 これは、Silverlight で作成されたレガシ ポリシーに対して発生し、削除して、Azure ポータル内のポリシーを再作成することで解決できます。 このプロパティは値の取得のみ可能です。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
+|supportsScopeTags|ブール型|デバイスの構成を基になるスコープのタグの割り当てをサポートしているかどうかを示します。 この値が false であり、エンティティをスコープ指定されたユーザーには表示されませんがある場合、ScopeTags プロパティに割り当てることは許可されていません。 これは、Silverlight で作成されたレガシ ポリシーに対して発生し、削除して、Azure ポータル内のポリシーを再作成することで解決できます。 このプロパティは読み取りのみ可能です。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |createdDateTime|DateTimeOffset|オブジェクトが作成された DateTime。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |説明|String|デバイス構成について管理者が提供した説明。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |displayName|String|デバイス構成について管理者が指定した名前。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
@@ -62,16 +63,16 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 |customDomainName|String|カスタム ドメイン名の値は、デバイスにインストールする前に、電子メール プロファイルを生成する際に使用します。 [EasEmailProfileConfigurationBase](../resources/intune-deviceconfig-easemailprofileconfigurationbase.md)から継承されました。|
 |accountName|String|アカウントの名前です。|
 |authenticationMethod|[easAuthenticationMethod](../resources/intune-deviceconfig-easauthenticationmethod.md)|このメール プロファイルの認証方法です。 使用可能な値は、`usernameAndPassword`、`certificate` です。|
-|blockMovingMessagesToOtherEmailAccounts|ブール値|他の電子メール アカウントにメッセージを移動をブロックするかどうかを示します。|
-|blockSendingEmailFromThirdPartyApps|ブール値|サード パーティ製アプリケーションから電子メールの送信をブロックするかどうかを示します。|
-|blockSyncingRecentlyUsedEmailAddresses|ブール値|新しい電子メールを作成するとき、同期中最近使用した電子メール アドレス、-をブロックするかどうかを示します。|
+|blockMovingMessagesToOtherEmailAccounts|ブール型|他の電子メール アカウントにメッセージを移動をブロックするかどうかを示します。|
+|blockSendingEmailFromThirdPartyApps|ブール型|サード パーティ製アプリケーションから電子メールの送信をブロックするかどうかを示します。|
+|blockSyncingRecentlyUsedEmailAddresses|ブール型|新しい電子メールを作成するとき、同期中最近使用した電子メール アドレス、-をブロックするかどうかを示します。|
 |durationOfEmailToSync|[emailSyncDuration](../resources/intune-deviceconfig-emailsyncduration.md)|戻る時の電子メールの継続時間を同期する必要があります。 . 可能な値は、`userDefined`、`oneDay`、`threeDays`、`oneWeek`、`twoWeeks`、`oneMonth`、`unlimited` です。|
 |emailAddressSource|[userEmailSource](../resources/intune-deviceconfig-useremailsource.md)|AAD から選択され、デバイスにインストールする前に、このプロファイルに挿入されたメール属性です。 使用可能な値は、`userPrincipalName`、`primarySmtpAddress` です。|
 |hostName|String|場所 (URL) の交換、ネイティブのメール アプリケーションに接続します。|
-|requireSmime|ブール値|S/MIME 証明書を使用するかどうかを示します。|
-|smimeEnablePerMessageSwitch|ブール値|暗号化されていない電子メールを許可するかどうかを示します。|
-|requireSsl|ブール値|SSL を使用するかどうかを示します。|
-|useOAuth|ブール値|接続が認証に OAuth を使用する必要があるかどうかを指定します。|
+|requireSmime|ブール型|S/MIME 証明書を使用するかどうかを示します。|
+|smimeEnablePerMessageSwitch|ブール型|暗号化されていない電子メールを許可するかどうかを示します。|
+|requireSsl|ブール型|SSL を使用するかどうかを示します。|
+|useOAuth|ブール型|接続が認証に OAuth を使用する必要があるかどうかを指定します。|
 
 
 

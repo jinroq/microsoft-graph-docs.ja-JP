@@ -1,12 +1,13 @@
 ---
 title: CalendarGroup を更新する　
 description: calendargroup オブジェクトのプロパティを更新します。
-ms.openlocfilehash: 3bcc69702ee74b7b75343eedbb4bc1e1fa0e8706
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: angelgolfer-ms
+ms.openlocfilehash: 24b09f3cd3dc23daf799eac70e59e0c4e32d7079
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27021884"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27324767"
 ---
 # <a name="update-calendargroup"></a>CalendarGroup を更新する　
 
@@ -44,7 +45,7 @@ PATCH /users/{id | userPrincipalName}/calendarGroups/{id}
 
 要求本文で、更新する関連フィールドの値を指定します。要求本文に含まれない既存のプロパティは、以前の値のままになるか、他のプロパティ値の変化に基づいて再計算されます。最適なパフォーマンスを得るためには、変更されていない既存の値を含めないでください。
 
-| プロパティ | 型   | 説明     |
+| プロパティ | 種類   | 説明     |
 | :------- | :----- | :-------------- |
 | 名前     | String | グループの名前。 |
 

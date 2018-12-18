@@ -1,12 +1,13 @@
 ---
 title: managedDeviceMobileAppConfigurationAssignment の作成
 description: 新しい managedDeviceMobileAppConfigurationAssignment オブジェクトを作成します。
-ms.openlocfilehash: 02607c3da0aca7bbd7c9ff7dbfd710c688b10a11
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 8418b853c4d82f0a56d592a90542505f0355df0b
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27068619"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27342778"
 ---
 # <a name="create-manageddevicemobileappconfigurationassignment"></a>managedDeviceMobileAppConfigurationAssignment の作成
 
@@ -44,9 +45,9 @@ POST /deviceAppManagement/mobileAppConfigurations/{managedDeviceMobileAppConfigu
 
 次の表に、managedDeviceMobileAppConfigurationAssignment の作成時に必要なプロパティを示します。
 
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
-|id|String|エンティティの一意識別子。|
+|ID|String|エンティティの一意識別子。|
 |target|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|T & C ポリシーが割り当てられる、割り当て先です。|
 
 

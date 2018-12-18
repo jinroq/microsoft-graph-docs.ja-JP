@@ -1,12 +1,13 @@
 ---
 title: AndroidDeviceOwnerGeneralDeviceConfiguration を更新します。
 description: AndroidDeviceOwnerGeneralDeviceConfiguration オブジェクトのプロパティを更新します。
-ms.openlocfilehash: 463d40f24bb4240eed4fc60078b0fb576a8928b9
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: bf81569d5af7e223ff24e34bc031a19633d22edd
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27071068"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27340097"
 ---
 # <a name="update-androiddeviceownergeneraldeviceconfiguration"></a>AndroidDeviceOwnerGeneralDeviceConfiguration を更新します。
 
@@ -46,56 +47,56 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 
 [AndroidDeviceOwnerGeneralDeviceConfiguration](../resources/intune-deviceconfig-androiddeviceownergeneraldeviceconfiguration.md)を作成するときに必要なプロパティを次の表に示します。
 
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
-|id|String|エンティティのキー。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
+|ID|String|エンティティのキー。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |lastModifiedDateTime|DateTimeOffset|オブジェクトが最後に変更された DateTime。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |roleScopeTagIds|String コレクション|このエンティティ インスタンスのスコープのタグのリストです。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
-|supportsScopeTags|Boolean|デバイスの構成を基になるスコープのタグの割り当てをサポートしているかどうかを示します。 この値が false であり、エンティティをスコープ指定されたユーザーには表示されませんがある場合、ScopeTags プロパティに割り当てることは許可されていません。 これは、Silverlight で作成されたレガシ ポリシーに対して発生し、削除して、Azure ポータル内のポリシーを再作成することで解決できます。 このプロパティは値の取得のみ可能です。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
+|supportsScopeTags|ブール型|デバイスの構成を基になるスコープのタグの割り当てをサポートしているかどうかを示します。 この値が false であり、エンティティをスコープ指定されたユーザーには表示されませんがある場合、ScopeTags プロパティに割り当てることは許可されていません。 これは、Silverlight で作成されたレガシ ポリシーに対して発生し、削除して、Azure ポータル内のポリシーを再作成することで解決できます。 このプロパティは読み取りのみ可能です。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |createdDateTime|DateTimeOffset|オブジェクトが作成された DateTime。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |説明|String|デバイス構成について管理者が提供した説明。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |displayName|String|デバイス構成について管理者が指定した名前。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |version|Int32|デバイス構成のバージョン。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
-|accountsBlockModification|Boolean|追加または削除、アカウントが無効かどうかを示します。|
-|appsAllowInstallFromUnknownSources|Boolean|不明なソースの設定を有効にするユーザーを許可するかどうかを示します。|
+|accountsBlockModification|ブール型|追加または削除、アカウントが無効かどうかを示します。|
+|appsAllowInstallFromUnknownSources|ブール型|不明なソースの設定を有効にするユーザーを許可するかどうかを示します。|
 |appsAutoUpdatePolicy|[androidDeviceOwnerAppAutoUpdatePolicyType](../resources/intune-deviceconfig-androiddeviceownerappautoupdatepolicytype.md)|アプリケーションの自動更新ポリシーの値を示します。 可能な値は、`notConfigured`、`userChoice`、`never`、`wiFiOnly`、`always` です。|
 |appsDefaultPermissionPolicy|[androidDeviceOwnerDefaultAppPermissionPolicyType](../resources/intune-deviceconfig-androiddeviceownerdefaultapppermissionpolicytype.md)|いずれかが定義されていない場合、アプリケーションの具体的には、実行時のアクセス許可の要求のアクセス許可ポリシーを示します。 可能な値は、`deviceDefault`、`prompt`、`autoGrant`、`autoDeny` です。|
-|bluetoothBlockConfiguration|Boolean|Bluetooth の構成からユーザーをブロックするかどうかを示します。|
-|bluetoothBlockContactSharing|Boolean|Bluetooth を使用して連絡先の共有からユーザーをブロックするかどうかを示します。|
+|bluetoothBlockConfiguration|ブール型|Bluetooth の構成からユーザーをブロックするかどうかを示します。|
+|bluetoothBlockContactSharing|ブール型|Bluetooth を使用して連絡先の共有からユーザーをブロックするかどうかを示します。|
 |cameraBlocked|Boolean|カメラの使用を無効にするかどうかを示します。|
 |cellularBlockWiFiTethering|Boolean|Wi-Fi テザリングをブロックするかどうかを示します。|
-|dataRoamingBlocked|Boolean|ユーザーによるデータの移動を禁止するかどうかを示します。|
-|dateTimeConfigurationBlocked|Boolean|日付またはデバイス上の時刻を手動で変更するからユーザーをブロックするかどうかを示します|
+|dataRoamingBlocked|ブール型|ユーザーによるデータの移動を禁止するかどうかを示します。|
+|dateTimeConfigurationBlocked|ブール型|日付またはデバイス上の時刻を手動で変更するからユーザーをブロックするかどうかを示します|
 |factoryResetDeviceAdministratorEmails|String コレクション|デバイスは、工場出荷時を設定する前にリセットした後に認証する必要があります Google アカウントのメールのリストです。|
 |factoryResetBlocked|Boolean|設定の工場出荷時リセット ・ オプションが無効になっているかどうかを示します。|
 |kioskModeApps|[appListItem](../resources/intune-deviceconfig-applistitem.md) コレクション|キオスク モードでは、デバイスに表示される管理対象のアプリケーションの一覧です。 このコレクションには、最大で 500 個の要素を含めることができます。|
-|microphoneForceMute|Boolean|Unmuting デバイスのマイクをブロックするかどうかを示します。|
-|networkEscapeHatchAllowed|Boolean|デバイスがブート時に一時的なネットワーク接続への接続を許可するかどうかを示します。|
-|nfcBlockOutgoingBeam|Boolean|NFC 送信ビームをブロックするかどうかを示します。|
-|passwordBlockKeyguard|Boolean|Keyguard が無効になっているかどうかを示します。|
+|microphoneForceMute|ブール型|Unmuting デバイスのマイクをブロックするかどうかを示します。|
+|networkEscapeHatchAllowed|ブール型|デバイスがブート時に一時的なネットワーク接続への接続を許可するかどうかを示します。|
+|nfcBlockOutgoingBeam|ブール型|NFC 送信ビームをブロックするかどうかを示します。|
+|passwordBlockKeyguard|ブール型|Keyguard が無効になっているかどうかを示します。|
 |passwordExpirationDays|Int32|期限が切れるし、新しいパスワードが必要になる前のパスワードを設定できる時間 (秒) の量を示します。 有効な値は 1 から 365 までです|
 |passwordMinimumLength|Int32|デバイスに必要なパスワードの最小の長さを示します。 有効な値は 4 から 16 までです|
 |passwordMinutesOfInactivityBeforeScreenTimeout|Int32|画面がタイムアウトするまで非アクティブのミリ秒です。|
 |passwordPreviousPasswordCountToBlock|Int32|場所ユーザーことはできませんが、履歴内の任意のパスワードと同じパスワードを入力するのには、パスワードの履歴の長さを示します。 有効な値は 0 から 24 までです|
 |passwordRequiredType|[androidDeviceOwnerRequiredPasswordType](../resources/intune-deviceconfig-androiddeviceownerrequiredpasswordtype.md)|デバイスに必要なパスワードの最小の品質を示します。 可能な値は、`deviceDefault`、`required`、`numeric`、`numericComplex`、`alphabetic`、`alphanumeric`、`alphanumericWithSymbols` です。|
 |passwordSignInFailureCountBeforeFactoryReset|Int32|デバイスをワイプする前に、ユーザーが誤ったパスワードを入力できる回数を示します。 有効な値は 4 から 11 までです|
-|safeBootBlocked|Boolean|セーフ ブート デバイスが無効になってを再起動するかどうかを示します。|
+|safeBootBlocked|ブール型|セーフ ブート デバイスが無効になってを再起動するかどうかを示します。|
 |screenCaptureBlocked|Boolean|スクリーン ショットを実行する機能を無効にするかどうかを示します。|
-|securityAllowDebuggingFeatures|Boolean|デバイスのデバッグ機能を有効にすることからユーザーをブロックするかどうかを示します。|
+|securityAllowDebuggingFeatures|ブール型|デバイスのデバッグ機能を有効にすることからユーザーをブロックするかどうかを示します。|
 |securityRequireVerifyApps|Boolean|示しているかどうかのアプリケーションが必要なことを確認します。|
-|statusBarBlocked|Boolean|示すかどうか、またはステータス バーを無効に、通知、すばやく設定およびその他の画面のオーバーレイを含みます。|
+|statusBarBlocked|ブール型|示すかどうか、またはステータス バーを無効に、通知、すばやく設定およびその他の画面のオーバーレイを含みます。|
 |stayOnModes|[androidDeviceOwnerBatteryPluggedMode](../resources/intune-deviceconfig-androiddeviceownerbatterypluggedmode.md)コレクション|デバイスの表示が残ります電源モードの一覧です。 このコレクションには、最大 4 つの要素を含めることができます。 可能な値は、`notConfigured`、`ac`、`usb`、`wireless` です。|
-|storageAllowUsb|Boolean|USB 大容量記憶装置を許可するかどうかを示します。|
-|storageBlockExternalMedia|Boolean|外部メディアをブロックするかどうかを示します。|
-|storageBlockUsbFileTransfer|Boolean|USB ファイル転送をブロックするかどうかを示します。|
+|storageAllowUsb|ブール型|USB 大容量記憶装置を許可するかどうかを示します。|
+|storageBlockExternalMedia|ブール型|外部メディアをブロックするかどうかを示します。|
+|storageBlockUsbFileTransfer|ブール型|USB ファイル転送をブロックするかどうかを示します。|
 |systemUpdateWindowStartMinutesAfterMidnight|Int32|システム更新プログラムの開始を午前 0 時以降後の分単位の数を示します。 有効な値の 0 から 1440|
 |systemUpdateWindowEndMinutesAfterMidnight|Int32|システムの更新] ウィンドウを終了する午前 0 時以降後の分単位の数を示します。 有効な値の 0 から 1440|
 |systemUpdateInstallType|[androidDeviceOwnerSystemUpdateInstallType](../resources/intune-deviceconfig-androiddeviceownersystemupdateinstalltype.md)|システム更新の構成の型。 可能な値は、`deviceDefault`、`postpone`、`windowed`、`automatic` です。|
-|usersBlockAdd|Boolean|ユーザーとプロファイルを追加することが無効になっているかどうかを示します。|
-|usersBlockRemove|Boolean|デバイスから他のユーザーを削除するを無効にするかどうかを示します。|
-|volumeBlockAdjustment|Boolean|マスター ボリュームが無効になっているを調整するかどうかを示します。|
-|wifiBlockEditConfigurations|Boolean|Wifi 接続の設定を編集することからユーザーをブロックするかどうかを示します。|
-|wifiBlockEditPolicyDefinedConfigurations|Boolean|ポリシーで定義されているネットワークだけを編集するユーザーをブロックするかどうかを示します。|
+|usersBlockAdd|ブール型|ユーザーとプロファイルを追加することが無効になっているかどうかを示します。|
+|usersBlockRemove|ブール型|デバイスから他のユーザーを削除するを無効にするかどうかを示します。|
+|volumeBlockAdjustment|ブール型|マスター ボリュームが無効になっているを調整するかどうかを示します。|
+|wifiBlockEditConfigurations|ブール型|Wifi 接続の設定を編集することからユーザーをブロックするかどうかを示します。|
+|wifiBlockEditPolicyDefinedConfigurations|ブール型|ポリシーで定義されているネットワークだけを編集するユーザーをブロックするかどうかを示します。|
 
 
 

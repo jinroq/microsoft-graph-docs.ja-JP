@@ -1,12 +1,13 @@
 ---
 title: ChartLineFormat リソースの種類
 description: 直線要素の書式設定オプションをカプセル化します。
-ms.openlocfilehash: 6646f985fd106ed738432852fec5a3bad187ab61
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lumine2008
+ms.openlocfilehash: be9d0d3f30deb608aee9873866442e0478c0056a
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27070483"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27352186"
 ---
 # <a name="chartlineformat-resource-type"></a>ChartLineFormat リソースの種類
 
@@ -21,10 +22,10 @@ ms.locfileid: "27070483"
 |:---------------|:--------|:----------|
 |[Get ChartLineFormat](../api/chartlineformat-get.md) | [ChartLineFormat](chartlineformat.md) |chartLineFormat オブジェクトのプロパティと関係を読み取ります。|
 |[Update](../api/chartlineformat-update.md) | [ChartLineFormat](chartlineformat.md) |ChartLineFormat オブジェクトを更新します。 |
-|[クリア](../api/chartlineformat-clear.md)|なし|グラフ要素の線の書式をクリアします。|
+|[Clear](../api/chartlineformat-clear.md)|なし|グラフ要素の線の書式をクリアします。|
 
 ## <a name="properties"></a>プロパティ
-| プロパティ     | 型   |説明|
+| プロパティ     | 種類   |説明|
 |:---------------|:--------|:----------|
 |color|文字列|グラフの線の色を表す HTML カラー コード。|
 

@@ -1,12 +1,13 @@
 ---
 title: educationUser リソースの種類
 description: システム内のユーザーです。 これは教育機関に固有の、Microsoft Graph が教育機関に固有でない `/users` エンドポイントから返すものと同じ `id` を持つユーザーのバリアント型です。
-ms.openlocfilehash: 5e39c88fa25325d561987c04157472e3b02fb27d
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: mmast-msft
+ms.openlocfilehash: 2c89b2a099ea8a21e9b2a5b8cbd4c394ddb7b0b3
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27023983"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27342582"
 ---
 # <a name="educationuser-resource-type"></a>educationUser リソースの種類
 
@@ -26,7 +27,7 @@ ms.locfileid: "27023983"
 |[Delete](../api/educationuser-delete.md) | なし |**educationUser** オブジェクトを削除します。 |
 
 ## <a name="properties"></a>プロパティ
-| プロパティ     | 型   |説明|
+| プロパティ     | 種類   |説明|
 |:---------------|:--------|:----------|
 |accountEnabled|ブール型| アカウントが有効な場合は **true**。それ以外の場合は **false**。 このプロパティは、ユーザーの作成時に必要です。 $filter をサポートします。    |
 |assignedLicenses|[assignedLicense](assignedlicense.md) collection|ユーザーに割り当てられているライセンス。null 許容ではありません。            |

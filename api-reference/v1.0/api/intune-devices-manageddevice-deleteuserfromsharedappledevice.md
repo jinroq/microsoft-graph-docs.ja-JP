@@ -1,12 +1,13 @@
 ---
 title: deleteUserFromSharedAppleDevice アクション
 description: 共有の Apple デバイスからユーザーを削除する
-ms.openlocfilehash: 16c68b43555173bfa21c705132e9c0ead4ead31f
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: e2b2eb30f54c3e1efe53c3b99049cfccb3e3aa98
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27020373"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27329884"
 ---
 # <a name="deleteuserfromsharedappledevice-action"></a>deleteUserFromSharedAppleDevice アクション
 
@@ -44,7 +45,7 @@ POST /deviceManagement/detectedApps/{detectedAppId}/managedDevices/{managedDevic
 
 次の表に、このアクションで使用できるパラメーターを示します。
 
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
 |userPrincipalName|String|まだ文書化されていません|
 

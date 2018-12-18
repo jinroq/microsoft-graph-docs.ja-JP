@@ -1,12 +1,13 @@
 ---
 title: リスト androidWorkProfileCompliancePolicies
 description: AndroidWorkProfileCompliancePolicy オブジェクトのプロパティと関係を一覧表示します。
-ms.openlocfilehash: 5eaa8d8b6bedcfc1e70fb851cd070491689fd583
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 04e270e1ee824625b39b4a7101b95d6c063bbb64
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27067866"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27340468"
 ---
 # <a name="list-androidworkprofilecompliancepolicies"></a>リスト androidWorkProfileCompliancePolicies
 

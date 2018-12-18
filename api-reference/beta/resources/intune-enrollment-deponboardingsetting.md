@@ -1,12 +1,13 @@
 ---
 title: depOnboardingSetting リソースの種類
 description: DepOnboardingSetting は、Intune に onboarded をされている Apple の DEP のサービスのインスタンスを表します。 Onboarded サービスのインスタンスを管理、Apple トークンりんごと Intune の間でデータを同期するために使用します。
-ms.openlocfilehash: 7991b03b8307db10d3a300b1b85be3fc1b825819
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: ac38b1716dd156c95fda9cee8fb76a9f75921b0f
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27073906"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27341161"
 ---
 # <a name="deponboardingsetting-resource-type"></a>depOnboardingSetting リソースの種類
 
@@ -30,21 +31,21 @@ DepOnboardingSetting は、Intune に onboarded をされている Apple の DEP
 |[unshareForSchoolDataSyncService アクション](../api/intune-enrollment-deponboardingsetting-unshareforschooldatasyncservice.md)|なし|まだ文書化されていません|
 
 ## <a name="properties"></a>プロパティ
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
-|id|String|オブジェクトの UUID|
+|ID|String|オブジェクトの UUID|
 |appleIdentifier|String|Apple ID は、現在のトークンを取得するために使用します。|
 |tokenExpirationDateTime|DateTimeOffset|トークンの期限が切れる。|
 |lastModifiedDateTime|DateTimeOffset|Onboarded でした。|
 |lastSuccessfulSyncDateTime|DateTimeOffset|Intune のサービスの最後の syned|
 |lastSyncTriggeredDateTime|DateTimeOffset|Intune が最後に同期を要求された場合。|
-|shareTokenWithSchoolDataSyncService|ブール値|かどうか Dep トークンの共有は学校のデータ同期サービスで有効になります。|
+|shareTokenWithSchoolDataSyncService|ブール型|かどうか Dep トークンの共有は学校のデータ同期サービスで有効になります。|
 |lastSyncErrorCode|Int32|Dep の前回の同期中に、Apple によって報告されたエラー ・ コードです。|
 |tokenType|[depTokenType](../resources/intune-enrollment-deptokentype.md)|Dep のトークンの種類を設定を取得または取得します。 可能な値は、`none`、`dep`、`appleSchoolManager` です。|
 |tokenName|String|Dep のトークンの表示名|
 |syncedDeviceCount|Int32|同期されたデバイスの数を取得|
 |defaultProfileDisplayName|String|同期されたデバイスの数を取得|
-|dataSharingConsentGranted|ブール値|アップル Dep のサービスと共有データの許可に同意するもの|
+|dataSharingConsentGranted|ブール型|アップル Dep のサービスと共有データの許可に同意するもの|
 
 ## <a name="relationships"></a>リレーションシップ
 |リレーションシップ|型|説明|

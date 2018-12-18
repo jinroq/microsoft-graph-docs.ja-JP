@@ -1,12 +1,13 @@
 ---
 title: グループ設定を更新する
 description: 特定のグループ設定オブジェクトのプロパティを更新します。
-ms.openlocfilehash: b3f667de4fc49dfc734298262512bbdc3ddd8639
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: dkershaw10
+ms.openlocfilehash: 07ab3114ce4ed5d8d932ff9183c62823ddfcf632
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27020159"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27339838"
 ---
 # <a name="update-a-group-setting"></a>グループ設定を更新する
 
@@ -41,7 +42,7 @@ PATCH /groups/{id}/settings/{id}
 ## <a name="request-body"></a>要求本文
 要求本文で、更新する関連フィールドの値を指定します。 
 
-| プロパティ | 型 | 説明 |
+| プロパティ | 種類 | 説明 |
 |:---------------|:--------|:----------|
 | values | settingValue コレクション | 更新された値のセットです。注:コレクション セット全体を指定する必要があります。単一の値のセットを更新することはできません。 |
 

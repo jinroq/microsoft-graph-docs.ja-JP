@@ -1,12 +1,13 @@
 ---
 title: configurationManagerClientEnabledFeatures リソースの種類
 description: 構成マネージャーのクライアントに対応した機能
-ms.openlocfilehash: 54d5d40a50b2946fec1c69c619dc76bec1f32502
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: fe975f2e8d537d1231a89eb9f2a44cdd8258fd1a
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27023006"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27325145"
 ---
 # <a name="configurationmanagerclientenabledfeatures-resource-type"></a>configurationManagerClientEnabledFeatures リソースの種類
 
@@ -14,7 +15,7 @@ ms.locfileid: "27023006"
 
 構成マネージャーのクライアントに対応した機能
 ## <a name="properties"></a>プロパティ
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
 |inventory|Boolean|在庫が Intune によって管理されているかどうか|
 |modernApps|Boolean|モダン アプリケーションが Intune によって管理されているかどうか|

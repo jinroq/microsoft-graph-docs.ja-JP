@@ -1,12 +1,13 @@
 ---
 title: roleDefinition の更新
 description: roleDefinition オブジェクトのプロパティを更新します。
-ms.openlocfilehash: debf63b5d0b7116a1e8d1f9274868d97c3cb8931
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 6629467c1756192b0569625b0e684ada0b6b8ae4
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27067110"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27343191"
 ---
 # <a name="update-roledefinition"></a>roleDefinition の更新
 
@@ -45,9 +46,9 @@ PATCH /deviceManagement/roleDefinitions/{roleDefinitionId}/roleAssignments/{role
 
 次の表に、[roleDefinition](../resources/intune-rbac-roledefinition.md) の作成時に必要なプロパティを示します。
 
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
-|id|String|エンティティのキー。 これは読み取り専用で、自動生成されます。|
+|ID|String|エンティティのキー。 これは読み取り専用で、自動生成されます。|
 |displayName|String|ロールの定義の表示名。|
 |説明|String|ロールの定義の説明。|
 |permissions|[rolePermission](../resources/intune-rbac-rolepermission.md) コレクション|このロールに実行が許可されている、ロールのアクセス許可のリスト。 これらは、rolePermission の一部として定義されている actionName と一致する必要があります。|

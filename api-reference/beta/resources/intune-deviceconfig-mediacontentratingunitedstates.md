@@ -1,12 +1,13 @@
 ---
 title: mediaContentRatingUnitedStates リソースの種類
 description: まだ文書化されていません
-ms.openlocfilehash: d62d656c4fbd8744560ab191786d71b732fe6c21
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: ee10df5dd5e3f915e166cb77e747f8b3f7cc2d37
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27066645"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27341322"
 ---
 # <a name="mediacontentratingunitedstates-resource-type"></a>mediaContentRatingUnitedStates リソースの種類
 
@@ -16,7 +17,7 @@ ms.locfileid: "27066645"
 
 まだ文書化されていません
 ## <a name="properties"></a>プロパティ
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
 |movieRating|[ratingUnitedStatesMoviesType](../resources/intune-deviceconfig-ratingunitedstatesmoviestype.md)|評価の米国の選択したムービーです。 可能な値は、`allAllowed`、`allBlocked`、`general`、`parentalGuidance`、`parentalGuidance13`、`restricted`、`adults` です。|
 |tvRating|[ratingUnitedStatesTelevisionType](../resources/intune-deviceconfig-ratingunitedstatestelevisiontype.md)|テレビの視聴制限はアメリカ合衆国を選択します。 可能な値は、`allAllowed`、`allBlocked`、`childrenAll`、`childrenAbove7`、`general`、`parentalGuidance`、`childrenAbove14`、`adults` です。|

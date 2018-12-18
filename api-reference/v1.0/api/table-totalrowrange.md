@@ -1,12 +1,13 @@
 ---
 title: Table:TotalRowRange
 description: テーブルの集計行に関連付けられた範囲オブジェクトを取得します。
-ms.openlocfilehash: aa0eda8306dbe996419862be0fe9431355f9df5b
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lumine2008
+ms.openlocfilehash: 2e71abde4073888b80d3ef8f3603e8d5ed8b9da1
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27020417"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27339579"
 ---
 # <a name="table-totalrowrange"></a>Table:TotalRowRange
 

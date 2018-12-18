@@ -1,12 +1,13 @@
 ---
 title: importDeviceIdentityList アクション
 description: まだ文書化されていません
-ms.openlocfilehash: a99b610e4a781aa6f11aec3517f06646f3b436ae
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: d3f719a9f2b7358acfa413810b6bd091d32f52f3
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27067184"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27338165"
 ---
 # <a name="importdeviceidentitylist-action"></a>importDeviceIdentityList アクション
 
@@ -44,10 +45,10 @@ POST /deviceManagement/importedDeviceIdentities/importDeviceIdentityList
 
 次の表に、このアクションで使用できるパラメーターを示します。
 
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
 |importedDeviceIdentities|[importedDeviceIdentity](../resources/intune-enrollment-importeddeviceidentity.md)コレクション|まだ文書化されていません|
-|overwriteImportedDeviceIdentities|ブール値|まだ文書化されていません|
+|overwriteImportedDeviceIdentities|Boolean|まだ文書化されていません|
 
 
 

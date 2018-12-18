@@ -1,12 +1,13 @@
 ---
 title: WindowsCertificateProfileBase を取得します。
 description: WindowsCertificateProfileBase オブジェクトのプロパティと関係を参照してください。
-ms.openlocfilehash: fc44f98665db8308ede020d52c64130081866fe0
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: e887b1547f62cba87121cad833368146cc58dcd7
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27072110"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27341238"
 ---
 # <a name="get-windowscertificateprofilebase"></a>WindowsCertificateProfileBase を取得します。
 

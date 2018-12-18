@@ -1,12 +1,13 @@
 ---
 title: embeddedSIMActivationCodePoolAssignment リソースの種類
 description: 埋め込み SIM アクティベーション コード プール割り当てエンティティには、AAD のデバイス ・ グループに特定の embeddedSIMActivationCodePool が割り当てられます。
-ms.openlocfilehash: 27a7ed5a524d7033225ec8dfbafdf2f3f74b5ec8
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 67d563a630fb1c1092416f1081c4decda0d9eaf4
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27066623"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27337437"
 ---
 # <a name="embeddedsimactivationcodepoolassignment-resource-type"></a>embeddedSIMActivationCodePoolAssignment リソースの種類
 
@@ -24,11 +25,11 @@ ms.locfileid: "27066623"
 |[EmbeddedSIMActivationCodePoolAssignment を削除します。](../api/intune-esim-embeddedsimactivationcodepoolassignment-delete.md)|なし|の[embeddedSIMActivationCodePoolAssignment](../resources/intune-esim-embeddedsimactivationcodepoolassignment.md)を削除します。|
 |[EmbeddedSIMActivationCodePoolAssignment を更新します。](../api/intune-esim-embeddedsimactivationcodepoolassignment-update.md)|[embeddedSIMActivationCodePoolAssignment](../resources/intune-esim-embeddedsimactivationcodepoolassignment.md)|[EmbeddedSIMActivationCodePoolAssignment](../resources/intune-esim-embeddedsimactivationcodepoolassignment.md)オブジェクトのプロパティを更新します。|
 
-## <a name="properties"></a>プロパティ
-|プロパティ|型|説明|
+## <a name="properties"></a>Properties
+|プロパティ|種類|説明|
 |:---|:---|:---|
-|id|String|埋め込み SIM アクティベーション コードのプール割り当ての一意の識別子です。 システムでは、作成時に割り当てられた値が生成されます。|
-|target|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|SIM のアクティブ化コードの埋め込み、プールの対象となるグループの種類。|
+|ID|String|埋め込み SIM アクティベーション コードのプール割り当ての一意の識別子です。 システムでは、作成時に割り当てられた値が生成されます。|
+|ターゲット|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|SIM のアクティブ化コードの埋め込み、プールの対象となるグループの種類。|
 
 ## <a name="relationships"></a>リレーションシップ
 なし

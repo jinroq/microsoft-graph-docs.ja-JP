@@ -1,12 +1,13 @@
 ---
 title: Delete deviceComplianceActionItem
 description: deviceComplianceActionItem を削除します。
-ms.openlocfilehash: a687e12c09fe980ceda7d5d706e3993b9ce4f3e9
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 5455740172bf77c94db1899edad7bf1e6d8984cc
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27070919"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27337997"
 ---
 # <a name="delete-devicecomplianceactionitem"></a>Delete deviceComplianceActionItem
 

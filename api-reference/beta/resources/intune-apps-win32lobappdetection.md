@@ -1,12 +1,13 @@
 ---
 title: win32LobAppDetection リソースの種類
 description: Win32 アプリケーションを検出するために基本クラス
-ms.openlocfilehash: 2ea5eba5b699ff2b86a7e66f218f31a2d9f9c5e8
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 79f477271ed900003bb77a1c9d85e7c46fc010f9
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27070886"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27324473"
 ---
 # <a name="win32lobappdetection-resource-type"></a>win32LobAppDetection リソースの種類
 
@@ -15,8 +16,8 @@ ms.locfileid: "27070886"
 > **注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
 
 Win32 アプリケーションを検出するために基本クラス
-## <a name="properties"></a>プロパティ
-|プロパティ|型|説明|
+## <a name="properties"></a>Properties
+|プロパティ|種類|説明|
 |:---|:---|:---|
 
 ## <a name="relationships"></a>リレーションシップ

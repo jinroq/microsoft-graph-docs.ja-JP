@@ -1,12 +1,13 @@
 ---
 title: termsAndConditionsAssignment リソース タイプ
 description: C) を指定されたグループのポリシーです。 グループ内のユーザーは、デバイスを Intune に登録するためには使用条件に同意する必要があります。
-ms.openlocfilehash: ab98b7cdbb56a3d92ce5596063d0af03825c9109
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: a7b0e9deb391b9431be1ed4f282cb6e5a63ced6e
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27073027"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27351052"
 ---
 # <a name="termsandconditionsassignment-resource-type"></a>termsAndConditionsAssignment リソース タイプ
 
@@ -25,9 +26,9 @@ termsAndConditionsAssignment エンティティは、特定の使用条件 (T&C)
 |[Update termsAndConditionsAssignment](../api/intune-companyterms-termsandconditionsassignment-update.md)|[termsAndConditionsAssignment](../resources/intune-companyterms-termsandconditionsassignment.md)|[termsAndConditionsAssignment](../resources/intune-companyterms-termsandconditionsassignment.md) オブジェクトのプロパティを更新します。|
 
 ## <a name="properties"></a>プロパティ
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
-|id|String|エンティティの一意識別子。|
+|ID|String|エンティティの一意識別子。|
 |target|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|T & C ポリシーが割り当てられる、割り当て先です。|
 
 ## <a name="relationships"></a>リレーションシップ

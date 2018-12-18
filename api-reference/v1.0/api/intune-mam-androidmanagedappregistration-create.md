@@ -1,12 +1,13 @@
 ---
 title: androidManagedAppRegistration の作成
 description: 新しい androidManagedAppRegistration オブジェクトを作成します。
-ms.openlocfilehash: c1054b5c07784044071f8674a778bb1d4b98a46b
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: c05c698179f2f8fa54ab12282be6e397b9275408
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27020430"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27339509"
 ---
 # <a name="create-androidmanagedappregistration"></a>androidManagedAppRegistration の作成
 
@@ -42,7 +43,7 @@ POST /deviceAppManagement/managedAppRegistrations
 
 次の表に、androidManagedAppRegistration の作成時に必要なプロパティを示します。
 
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
 |createdDateTime|DateTimeOffset|作成日時 ([managedAppRegistration](../resources/intune-mam-managedappregistration.md) から継承)。|
 |lastSyncDateTime|DateTimeOffset|アプリが管理サービスと最後に同期した日時。 [managedAppRegistration](../resources/intune-mam-managedappregistration.md) から継承します|

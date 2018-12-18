@@ -1,12 +1,13 @@
 ---
 title: デバイスを削除する
 description: 登録されているデバイスを削除します。
-ms.openlocfilehash: 9e694eb23e6559e84fb26e549f867b9affb8a1c3
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: ae2f4b458ebd18c366c2b8aecf6b203ff5d42cda
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27022545"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27342904"
 ---
 # <a name="delete-device"></a>デバイスを削除する
 
@@ -30,7 +31,7 @@ DELETE /devices/{id}
 > 注:要求内の"id"は、"deviceId"プロパティではなく、デバイスの id プロパティです。
 
 ## <a name="request-headers"></a>要求ヘッダー
-| 名前       | 型 | 説明|
+| 名前       | 種類 | 説明|
 |:---------------|:--------|:----------|
 | Authorization  | string  | ベアラー {トークン}。必須。 |
 

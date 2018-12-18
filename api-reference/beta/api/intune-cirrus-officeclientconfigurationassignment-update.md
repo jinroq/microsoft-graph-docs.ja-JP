@@ -1,12 +1,13 @@
 ---
 title: OfficeClientConfigurationAssignment を更新します。
 description: OfficeClientConfigurationAssignment オブジェクトのプロパティを更新します。
-ms.openlocfilehash: d97f5378918949786342c8e69b53e7dd4ef08e64
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 78b0ae28bc61bc0d8d8c083502c6f6ef2cf7d0fb
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27069531"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27343037"
 ---
 # <a name="update-officeclientconfigurationassignment"></a>OfficeClientConfigurationAssignment を更新します。
 
@@ -44,10 +45,10 @@ PATCH /officeConfiguration/clientConfigurations/{officeClientConfigurationId}/as
 
 [OfficeClientConfigurationAssignment](../resources/intune-cirrus-officeclientconfigurationassignment.md)を作成するときに必要なプロパティを次の表に示します。
 
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
-|id|String|まだ文書化されていません|
-|target|[officeConfigurationAssignmentTarget](../resources/intune-cirrus-officeconfigurationassignmenttarget.md)|まだ文書化されていません|
+|ID|String|まだ文書化されていません|
+|ターゲット|[officeConfigurationAssignmentTarget](../resources/intune-cirrus-officeconfigurationassignmenttarget.md)|まだ文書化されていません|
 
 
 

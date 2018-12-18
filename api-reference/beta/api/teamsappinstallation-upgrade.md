@@ -1,12 +1,13 @@
 ---
 title: チームでアプリケーションをアップグレードします。
 description: チームで、アプリケーションのインストールをアップグレードします。
-ms.openlocfilehash: 90cec9dcb41b27a239661f3ed1850e073775be71
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: nkramer
+ms.openlocfilehash: 1e3ebffa9786d170424dd60618f553c515154140
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27071172"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27341441"
 ---
 # <a name="upgrade-an-app-in-a-team"></a>チームでアプリケーションをアップグレードします。
 
