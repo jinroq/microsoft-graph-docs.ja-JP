@@ -1,12 +1,13 @@
 ---
 title: 'ユーザー: getMailTips'
 description: サインイン中のユーザーに利用可能な 1 つまたは複数の受信者のメール ヒントを取得します。
-ms.openlocfilehash: 2291c8569d3e283e86598c0fd6fe5a0f487e79e2
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: dkershaw10
+ms.openlocfilehash: 198e45647ce51997a8d92da63a5f63f03d05a675
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27023717"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27332684"
 ---
 # <a name="user-getmailtips"></a>ユーザー: getMailTips
 
@@ -40,7 +41,7 @@ POST /users/{id|userPrincipalName}/getMailTips
 ## <a name="request-body"></a>要求本文
 要求本文で、次のパラメーターを含む JSON オブジェクトを指定します。
 
-| プロパティ     | 型   |説明|
+| プロパティ     | 種類   |説明|
 |:---------------|:--------|:----------|
 |EmailAddresses|String コレクション|メール ヒントを取得する受信者の SMTP アドレスのコレクションです。|
 |MailTipsOptions|String|要求されたメールヒントを表すフラグの列挙型。 使用可能な値: `automaticReplies`、 `customMailTip`、 `deliveryRestriction`、 `externalMemberCount`、 `mailboxFullStatus`、 `maxMessageSize`、 `moderationStatus`、 `recipientScope`、`recipientSuggestions`と`totalMemberCount`。|

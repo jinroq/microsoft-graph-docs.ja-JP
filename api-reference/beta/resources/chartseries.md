@@ -1,12 +1,13 @@
 ---
 title: ChartSeries リソースの種類
 description: グラフのデータ系列を表します。
-ms.openlocfilehash: 301fd3ba3c299108836bbd92497f4d6f6af94b0a
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lumine2008
+ms.openlocfilehash: 443b6b3dfea54b59ff92babc2776d9624bd28b20
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27074384"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27325285"
 ---
 # <a name="chartseries-resource-type"></a>ChartSeries リソースの種類
 
@@ -27,7 +28,7 @@ ms.locfileid: "27074384"
 |[Itemat](../api/chartseriescollection-itemat.md)|[ChartSeries](chartseries.md)|コレクション内の位置に基づいてデータ系列を取得します。|
 
 ## <a name="properties"></a>プロパティ
-| プロパティ     | 型   |説明|
+| プロパティ     | 種類   |説明|
 |:---------------|:--------|:----------|
 |name|文字列|グラフのデータ系列の名前を表します。|
 

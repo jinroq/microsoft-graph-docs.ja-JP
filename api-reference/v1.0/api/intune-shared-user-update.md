@@ -1,12 +1,13 @@
 ---
 title: ユーザーを更新する
 description: ユーザー オブジェクトのプロパティを更新します。
-ms.openlocfilehash: cfb8a7d46d8383cdaae4f012cff4ed0a0ad93594
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: dae6d6d16bfb1f849fa7a3a4e35e4c641718c70e
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27022689"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27329429"
 ---
 # <a name="update-user"></a>user の更新
 
@@ -46,9 +47,9 @@ PATCH /users/{usersId}
 
 次の表に、[user](../resources/intune-shared-user.md) の作成時に必要なプロパティを示します。
 
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
-|id|String|ユーザーの一意識別子。|
+|ID|String|ユーザーの一意識別子。|
 |**契約時**|
 |deviceEnrollmentLimit|Int32|ユーザーが登録を許可されているデバイスの最大数。 使用できる値は 5 または 1000 です。|
 

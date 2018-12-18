@@ -1,12 +1,13 @@
 ---
 title: androidDeviceOwnerRequiredPasswordType 列挙型
 description: Android デバイスの所有者のポリシーでは、パスワード入力が必要です。
-ms.openlocfilehash: 16f4bc59f2b4fa9f37989d1bc1978cdfacb2892c
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: e0903bbf5720350b35bf7e5fe5c9a5f9584810c1
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27070887"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27330227"
 ---
 # <a name="androiddeviceownerrequiredpasswordtype-enum-type"></a>androidDeviceOwnerRequiredPasswordType 列挙型
 

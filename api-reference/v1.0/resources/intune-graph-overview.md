@@ -1,12 +1,13 @@
 ---
 title: Intune Graph API の使用
 description: " Intune ハイブリッド展開はサポートされていません。 "
-ms.openlocfilehash: 23f6550fca708b64357b7b5132a2a42060cfa4bd
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 9ac823fcc1e3c09bfedc57d9caf4901c95aa9142
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27020175"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27332733"
 ---
 # <a name="working-with-intune-in-microsoft-graph"></a>Microsoft Graph での Intune の操作  
 
@@ -14,13 +15,13 @@ ms.locfileid: "27020175"
 
 Intune 用 Microsoft Graph API を使用すると、テナントの Intune の情報へのプログラムによるアクセスが可能となります。API は **Azure Portal** で使用できるものと同じ Intune 操作を実行します。  
 
-モバイル デバイス管理 (MDM) のシナリオの場合、Intune 用 Graph API はスタンドアロンの展開をサポートします。Intune の[ハイブリッド展開](https://docs.microsoft.com/en-us/sccm/mdm/understand/choose-between-standalone-intune-and-hybrid-mobile-device-management)はサポートされていません。 
+モバイル デバイス管理 (MDM) の場合は、Intune の Microsoft グラフ API は、スタンドアロン導入をサポートしています。Intune[ハイブリッド展開](https://docs.microsoft.com/en-us/sccm/mdm/understand/choose-between-standalone-intune-and-hybrid-mobile-device-management)はサポートされていません。 
 
-## <a name="using-the-intune-graph-api"></a>Intune Graph API の使用
+## <a name="using-the-microsoft-graph-api-for-intune"></a>Intune の Graph API を使用します。
 
-Intune は、豊富なエンティティ情報とリレーションシップのナビゲーションを使用して、他のクラウド サービスと同じ方法で Microsoft Graph API にデータを提供します。Microsoft Graph API を使用して、他のサービスからの情報と Intune を結合し、IT プロフェッショナルやエンド ユーザー向けの豊富なサービス間アプリケーションをビルドします。     
+Intune は、豊富なエンティティ情報とリレーションシップのナビゲーションを使用して、他のクラウド サービスと同じ方法で Microsoft Graph API にデータを提供します。Microsoft グラフ API を使用すると、他のサービスや IT プロフェッショナルやエンドユーザーのサービス間の豊富なアプリケーションを構築するのに Intune から情報を結合します。     
 
-以下に、アプリケーションがユーザーのデバイスにインストールされているかどうかを判断する方法の例を示します。 
+次の使用例は、アプリケーションがユーザーのデバイスにインストールされているかどうかを判断する方法を示しています。 
 
 1. Azure Active Directory から、ユーザーに登録されているデバイスのリストを取得します。 
 
@@ -35,11 +36,11 @@ Intune は、豊富なエンティティ情報とリレーションシップの�
     https://graph.microsoft.com/deviceAppManagement/mobileApps/{id}/deviceStatuses/
 
 
-## <a name="using-permission-scopes"></a>アクセス許可のスコープの使用
+## <a name="using-permissions"></a>アクセス許可を使用します。
 
-Microsoft Graph API では、アクセス許可のスコープによってリソースへのアクセスを制御します。 開発者は、Intune リソースにアクセスするために必要となる、アクセス許可のスコープを指定する必要があります。 通常は Azure Active Directory ポータルで必要なアクセス許可のスコープを指定します。 詳細については、「[Microsoft Graph のアクセス許可スコープ](https://developer.microsoft.com/graph/docs/authorization/permission_scopes)」および「[Intune のアクセス許可のスコープ](https://developer.microsoft.com/graph/docs/authorization/permission_scopes#permission-scopes-in-preview)」を参照してください。
+Microsoft グラフ API は、アクセス許可を使用してリソースへのアクセスを制御します。 開発者は、Intune リソースにアクセスするアクセス許可を指定してください。 通常、Active Directory の Azure ポータルのアクセス許可を指定します。 詳細については、 [Microsoft Graph のアクセス許可のリファレンス](https://docs.microsoft.com/en-us/graph/permissions-reference)を参照してください。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 - Intune の Microsoft グラフ API にアクセスするのには[Azure AD を使用する方法](https://docs.microsoft.com/en-us/intune/intune-graph-apis)について説明します。  
-- Intune の作業例のコンテキストでのグラフの API を使用する方法を表示する[PowerShell Intune のサンプル](https://github.com/microsoftgraph/powershell-intune-samples)を表示します。
+- Intune の作業例のコンテキストで Microsoft グラフ API を使用する方法を表示する[PowerShell Intune のサンプル](https://github.com/microsoftgraph/powershell-intune-samples)を表示します。

@@ -1,12 +1,13 @@
 ---
 title: groupSettingTemplates のリスト
 description: グループ設定テンプレートは、テナント内でグループ設定を作成および使用するための一連のテンプレートを表します。この操作は、使用可能な groupSettingTemplates オブジェクトのリストを取得します。
-ms.openlocfilehash: e3a92b174b4d1d95cbbf22385b56484441a6e3eb
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: dkershaw10
+ms.openlocfilehash: b47613093d8efa7fac99a313fff45d846d7a5073
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27023752"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27359361"
 ---
 # <a name="list-groupsettingtemplates"></a>groupSettingTemplates のリスト
 

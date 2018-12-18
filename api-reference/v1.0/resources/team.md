@@ -1,12 +1,13 @@
 ---
 title: チーム リソースの種類
 description: 'マイクロソフトのチームで、チームは、チャネルのコレクションです。 '
-ms.openlocfilehash: 62a20629dc3e62da730a3821395af5cc2417d56f
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: nkramer
+ms.openlocfilehash: 3bb6fde320dbab2c19f151015d7121c3fc840c97
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27021410"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27323871"
 ---
 # <a name="team-resource-type"></a>チーム リソースの種類
 
@@ -35,13 +36,13 @@ ms.locfileid: "27021410"
 |[アプリケーションをチームに追加します。](../api/teamsappinstallation-add.md) | [teamsappinstallation](teamsappinstallation.md) | (インストール) を追加するチームにアプリです。|
 |[チャネルにタブを追加します。](../api/teamstab-add.md) | [teamsTab](../resources/teamstab.md) | (インストール) を追加するチャネル ・ チームのタブです。|
 
-## <a name="properties"></a>プロパティ
+## <a name="properties"></a>Properties
 
-| プロパティ | 型   | 説明 |
+| プロパティ | 種類   | 説明 |
 |:---------------|:--------|:----------|
 |funSettings|[teamFunSettings](teamfunsettings.md) |Giphy、memes、およびチームのステッカーを構成する設定を使用します。|
 |guestSettings|[teamGuestSettings](teamguestsettings.md) |来園者が作成、更新、またはチーム内のチャンネルを削除するかどうかを構成するのに設定します。|
-|isArchived|ブール値|このチームが、読み取り専用モードでかどうかです。 |
+|isArchived|ブール型|このチームが、読み取り専用モードでかどうかです。 |
 |memberSettings|[teamMemberSettings](teammembersettings.md) |など、メンバーが特定のアクションを実行するかどうかを構成する設定は、チャネルを作成し、チームにボットを追加します。|
 |messagingSettings|[teamMessagingSettings](teammessagingsettings.md) |メッセージングを構成する設定は、チーム内の参照。|
 |webUrl|文字列 (読み取り専用) | クライアントの Microsoft のチームにチームに移動するハイパーリンク。 これは、クライアントの Microsoft のチームにチームを右クリックし、**チームへのリンクを取得する**を選択するときに表示される URL です。 この URL は、非透過 blob として扱われます、解析されない必要があります。 |

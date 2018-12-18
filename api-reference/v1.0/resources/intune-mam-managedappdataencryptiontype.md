@@ -1,12 +1,13 @@
 ---
 title: managedAppDataEncryptionType 列挙型
 description: マネージ アプリケーションのアプリケーション データを暗号化するレベルを表します。
-ms.openlocfilehash: 7efda037bc2b4d5794c575823845c0955be46477
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 3cbb733eb578ca839e32851d8a6d217f69d6799d
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27023043"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27330325"
 ---
 # <a name="managedappdataencryptiontype-enum-type"></a>managedAppDataEncryptionType 列挙型
 

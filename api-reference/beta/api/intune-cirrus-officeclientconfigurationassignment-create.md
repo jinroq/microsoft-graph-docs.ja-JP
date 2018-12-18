@@ -1,12 +1,13 @@
 ---
 title: OfficeClientConfigurationAssignment を作成します。
 description: ターゲット グループを既存のポリシーに追加します。
-ms.openlocfilehash: 60416fe200214864c063a9fae739d5f7bd436a69
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 850f82f005f46e15a598dd0e08043cca66ffe6bf
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27069529"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27324837"
 ---
 # <a name="create-officeclientconfigurationassignment"></a>OfficeClientConfigurationAssignment を作成します。
 
@@ -44,10 +45,10 @@ POST /officeConfiguration/clientConfigurations/{key}/assignments
 
 次の表は、officeClientConfigurationAssignment を作成するときに必要なプロパティを示します。
 
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
-|id|String|OfficeConfigurationAssignment の id です。|
-|target|[officeConfigurationAssignmentTarget](../resources/intune-cirrus-officeconfigurationassignmenttarget.md)|Admin によって定義されているターゲットの割り当て|
+|ID|String|OfficeConfigurationAssignment の id です。|
+|ターゲット|[officeConfigurationAssignmentTarget](../resources/intune-cirrus-officeconfigurationassignmenttarget.md)|Admin によって定義されているターゲットの割り当て|
 
 
 

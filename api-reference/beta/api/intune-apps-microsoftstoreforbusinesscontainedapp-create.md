@@ -1,12 +1,13 @@
 ---
 title: MicrosoftStoreForBusinessContainedApp を作成します。
 description: 新しい microsoftStoreForBusinessContainedApp オブジェクトを作成します。
-ms.openlocfilehash: 131e510a1526879ffcb94c3782d9fa263dd4645c
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 7fb904075510dd381ab66346a773af2a960bc67b
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27068620"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27328106"
 ---
 # <a name="create-microsoftstoreforbusinesscontainedapp"></a>MicrosoftStoreForBusinessContainedApp を作成します。
 
@@ -46,9 +47,9 @@ POST /deviceAppManagement/mobileApps/{mobileAppId}/microsoft.graph.windowsUniver
 
 次の表は、microsoftStoreForBusinessContainedApp を作成するときに必要なプロパティを示します。
 
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
-|id|String|エンティティのキー。 [MobileContainedApp](../resources/intune-apps-mobilecontainedapp.md)から継承されました。|
+|ID|String|エンティティのキー。 [MobileContainedApp](../resources/intune-apps-mobilecontainedapp.md)から継承されました。|
 |appUserModelId|String|MicrosoftStoreForBusinessApp の格納されているアプリケーションのアプリケーション ユーザー モデル ID です。|
 
 

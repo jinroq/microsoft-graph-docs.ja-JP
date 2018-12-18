@@ -1,12 +1,13 @@
 ---
 title: Get managedDeviceMobileAppConfigurationAssignment
 description: managedDeviceMobileAppConfigurationAssignment オブジェクトのプロパティとリレーションシップを読み取ります。
-ms.openlocfilehash: 91d4089c93f9490ed654572032a648ab03dce14f
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 935a8559879aa0f697eaf304f8f65b446f9b2c5f
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27072875"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27332950"
 ---
 # <a name="get-manageddevicemobileappconfigurationassignment"></a>Get managedDeviceMobileAppConfigurationAssignment
 

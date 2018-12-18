@@ -1,12 +1,13 @@
 ---
 title: イベントの更新
 description: イベント オブジェクトのプロパティを更新します。
-ms.openlocfilehash: b6ae7d818b68bfa1288a80f24383210e8a5d2909
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: angelgolfer-ms
+ms.openlocfilehash: 05612f50b038f491598b98c5661fac17238419df
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27073356"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27330675"
 ---
 # <a name="update-event"></a>イベントの更新
 
@@ -43,14 +44,14 @@ PATCH /me/calendargroups/{id}/calendars/{id}/events/{id}
 PATCH /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{id}
 ```
 ## <a name="request-headers"></a>要求ヘッダー
-| 名前       | 型 | 説明|
+| 名前       | 種類 | 説明|
 |:-----------|:------|:----------|
 | Authorization  | string  | ベアラー {トークン}。必須。 |
 
 ## <a name="request-body"></a>要求本文
 要求本文で、更新する関連フィールドの値を指定します。要求本文に含まれない既存のプロパティは、以前の値のままになるか、他のプロパティ値の変化に基づいて再計算されます。最適なパフォーマンスを得るためには、変更されていない既存の値を含めないでください。
 
-| プロパティ       | 型    | 説明 |
+| プロパティ       | 種類    | 説明 |
 |:---------------|:--------|:------------|
 | attendees|Attendee|イベントの参加者のコレクションです。|
 | body|ItemBody|イベントに関連付けられたメッセージの本文。|

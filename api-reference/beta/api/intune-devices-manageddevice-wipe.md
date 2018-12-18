@@ -1,12 +1,13 @@
 ---
 title: wipe action
 description: デバイスをワイプする
-ms.openlocfilehash: 841a0c5e968cb3fa9816b604cc3d2e335ca75a4c
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 9e83be9da2fe4b6614f7169a73e47c183590f9da
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27070049"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27326300"
 ---
 # <a name="wipe-action"></a>wipe action
 
@@ -47,10 +48,10 @@ POST /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/device
 
 次の表に、このアクションで使用できるパラメーターを示します。
 
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
 |keepEnrollmentData|ブール値|まだ文書化されていません|
-|keepUserData|ブール値|まだ文書化されていません|
+|keepUserData|Boolean|まだ文書化されていません|
 |macOsUnlockCode|文字列|まだ文書化されていません|
 
 

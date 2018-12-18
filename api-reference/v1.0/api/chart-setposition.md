@@ -1,12 +1,13 @@
 ---
 title: 'Chart: setPosition'
 description: ワークシート上のセルを基準にしてグラフを配置します。
-ms.openlocfilehash: 83b79e446f1398bd4ec5b04f6a31486f3a42a41d
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lumine2008
+ms.openlocfilehash: a83657a4654099dc1b52e55e2e627d14ef8c7aff
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27022588"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27324592"
 ---
 # <a name="chart-setposition"></a>Chart: setPosition
 
@@ -35,7 +36,7 @@ POST /workbook/worksheets/{id|name}/charts/{name}/setPosition
 ## <a name="request-body"></a>要求本文
 要求本文で、次のパラメーターを含む JSON オブジェクトを指定します。
 
-| パラメーター    | 型   |説明|
+| パラメーター    | 種類   |説明|
 |:---------------|:--------|:----------|
 |startCell|Json|開始セル。これは、グラフの移動先です。開始セルは、ユーザーの右から左への表示の設定に応じて、左上のセルか、右上のセルとなります。|
 |endCell|Json|省略可能。終了セル。指定されている場合、グラフの幅と高さは、このセルまたは範囲を完全にカバーするように設定されます。|

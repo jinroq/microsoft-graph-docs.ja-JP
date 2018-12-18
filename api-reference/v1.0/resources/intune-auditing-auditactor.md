@@ -1,12 +1,13 @@
 ---
 title: auditActor リソースの種類
 description: 監査アクターのプロパティが含まれるクラス。
-ms.openlocfilehash: ae784e5ad16b54c553dadaa75ed5a849b692211f
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: de2fc78bcc02565da102beb57c077646effc443b
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27021118"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27325019"
 ---
 # <a name="auditactor-resource-type"></a>auditActor リソースの種類
 
@@ -14,7 +15,7 @@ ms.locfileid: "27021118"
 
 監査アクターのプロパティが含まれるクラス。
 ## <a name="properties"></a>プロパティ
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
 |type|文字列型 (String)|アクターの種類。|
 |userPermissions|String コレクション|監査の実行時におけるユーザーのアクセス許可の一覧。|

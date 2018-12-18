@@ -1,19 +1,20 @@
 ---
 title: educationStudent リソースの種類
 description: ユーザーの primaryRole が `student` の場合に存在する educationUser に追加される、その他の情報。
-ms.openlocfilehash: 4865831872f2ec9fe15c44692ed4e175c01befa5
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: mmast-msft
+ms.openlocfilehash: e24cf9adb9a4e7da70a3011b027e19a9d4cc4808
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27020847"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27344059"
 ---
 # <a name="educationstudent-resource-type"></a>educationStudent リソースの種類
 
 ユーザーの primaryRole が `student` の場合に存在する [educationUser](educationuser.md) に追加される、その他の情報。
 
 ## <a name="properties"></a>プロパティ
-| プロパティ     | 型   |説明|
+| プロパティ     | 種類   |説明|
 |:---------------|:--------|:----------|
 |birthDate|Date| 学生の生年月日。|
 |externalId|String| ソース システムの学生の ID。|

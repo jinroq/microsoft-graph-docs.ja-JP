@@ -1,12 +1,13 @@
 ---
 title: remoteAssistancePartner リソースの種類
 description: remoteAssistPartner リソースは、特定のリモート アシスタンス パートナー サービスのメタデータおよび状態を表します。
-ms.openlocfilehash: 64ba3aacdeeb421f02b5affd94ecdbcb18ffd446
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: d3027ced433112b275d74d8c910553d5001d93ef
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27070151"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27344591"
 ---
 # <a name="remoteassistancepartner-resource-type"></a>remoteAssistancePartner リソースの種類
 
@@ -27,9 +28,9 @@ remoteAssistPartner リソースは、特定のリモート アシスタンス �
 |[disconnect アクション](../api/intune-remoteassistance-remoteassistancepartner-disconnect.md)|なし|まだ文書化されていません|
 
 ## <a name="properties"></a>プロパティ
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
-|id|String|パートナーの一意識別子。|
+|ID|String|パートナーの一意識別子。|
 |displayName|String|パートナーの表示名。|
 |onboardingUrl|String|パートナーのオンボーディング ポータルの URL。このポータルでは、管理者がパートナーのリモート アシスタンス サービスを構成できます。|
 |onboardingStatus|[remoteAssistanceOnboardingStatus](../resources/intune-remoteassistance-remoteassistanceonboardingstatus.md)|未定です。 可能な値は、`notOnboarded`、`onboarding`、`onboarded` です。|

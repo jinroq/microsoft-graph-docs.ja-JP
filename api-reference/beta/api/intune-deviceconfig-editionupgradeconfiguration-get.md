@@ -1,12 +1,13 @@
 ---
 title: Get editionUpgradeConfiguration
 description: editionUpgradeConfiguration オブジェクトのプロパティとリレーションシップを読み取ります。
-ms.openlocfilehash: c09e7f4e40d810750d3f99fc992fe79675c8628c
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: d9bcd252114ee545b31900b929d9e96cb9aca61b
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27071711"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27327462"
 ---
 # <a name="get-editionupgradeconfiguration"></a>Get editionUpgradeConfiguration
 

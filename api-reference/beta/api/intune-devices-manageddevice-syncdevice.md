@@ -1,12 +1,13 @@
 ---
 title: syncDevice アクション
 description: まだ文書化されていません
-ms.openlocfilehash: e66a067c20f7886a7aaf612ae6085ed5bc8994b4
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 43bd44ab25accd01f0c17d6dd1edabd3a716cfd6
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27069964"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27325964"
 ---
 # <a name="syncdevice-action"></a>syncDevice アクション
 

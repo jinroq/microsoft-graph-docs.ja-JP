@@ -1,12 +1,13 @@
 ---
 title: enterpriseCodeSigningCertificate リソースの種類
 description: まだ文書化されていません
-ms.openlocfilehash: 39a33ba019bd5d7e393f38dbb4701374ac7c5304
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: f16dbbf59af238e631e282d7e4d92dad46a7083b
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27068511"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27328701"
 ---
 # <a name="enterprisecodesigningcertificate-resource-type"></a>enterpriseCodeSigningCertificate リソースの種類
 
@@ -24,11 +25,11 @@ ms.locfileid: "27068511"
 |[EnterpriseCodeSigningCertificate を削除します。](../api/intune-apps-enterprisecodesigningcertificate-delete.md)|なし|の[enterpriseCodeSigningCertificate](../resources/intune-apps-enterprisecodesigningcertificate.md)を削除します。|
 |[EnterpriseCodeSigningCertificate を更新します。](../api/intune-apps-enterprisecodesigningcertificate-update.md)|[enterpriseCodeSigningCertificate](../resources/intune-apps-enterprisecodesigningcertificate.md)|[EnterpriseCodeSigningCertificate](../resources/intune-apps-enterprisecodesigningcertificate.md)オブジェクトのプロパティを更新します。|
 
-## <a name="properties"></a>プロパティ
-|プロパティ|型|説明|
+## <a name="properties"></a>Properties
+|プロパティ|種類|説明|
 |:---|:---|:---|
-|id|String|エンティティのキー。|
-|content|バイナリ|生データの形式で Windows エンタープライズ コード署名証明書。|
+|ID|String|エンティティのキー。|
+|content|Binary|生データの形式で Windows エンタープライズ コード署名証明書。|
 |status|[certificateStatus](../resources/intune-apps-certificatestatus.md)|証明書の状態は、準備または準備されていません。 使用可能な値は、`notProvisioned`、`provisioned` です。|
 |subjectName|文字列型 (String)|証明書のサブジェクト名。|
 |subject|String|証明書のサブジェクト値。|

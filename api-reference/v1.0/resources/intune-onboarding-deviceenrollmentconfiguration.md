@@ -1,12 +1,13 @@
 ---
 title: deviceEnrollmentConfiguration リソースの種類
 description: まだ文書化されていません
-ms.openlocfilehash: a748419edcecaeeafae96828048cf74929cb3f94
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 6d3c8b1114a19429f89d5f5b6b466a1dec12eb26
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27024053"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27326580"
 ---
 # <a name="deviceenrollmentconfiguration-resource-type"></a>deviceEnrollmentConfiguration リソースの種類
 
@@ -22,9 +23,9 @@ ms.locfileid: "27024053"
 |[assign アクション](../api/intune-onboarding-deviceenrollmentconfiguration-assign.md)|なし|まだ文書化されていません|
 
 ## <a name="properties"></a>プロパティ
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
-|id|String|まだ文書化されていません|
+|ID|String|まだ文書化されていません|
 |displayName|String|まだ文書化されていません|
 |説明|String|まだ文書化されていません|
 |priority|Int32|まだ文書化されていません|

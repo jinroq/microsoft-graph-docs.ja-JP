@@ -1,12 +1,13 @@
 ---
 title: iosEduCertificateSettings リソースの種類
 description: 信頼されたルートと PFX 証明書 EDU の入出力数のです。
-ms.openlocfilehash: 348b8231ed87c46180c54eb5ebfe24d671c9015b
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 8e373a7c878dd06870b13a32c428f837d741964c
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27068263"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27332327"
 ---
 # <a name="ioseducertificatesettings-resource-type"></a>iosEduCertificateSettings リソースの種類
 
@@ -15,10 +16,10 @@ ms.locfileid: "27068263"
 > **注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
 
 信頼されたルートと PFX 証明書 EDU の入出力数のです。
-## <a name="properties"></a>プロパティ
-|プロパティ|型|説明|
+## <a name="properties"></a>Properties
+|プロパティ|種類|説明|
 |:---|:---|:---|
-|trustedRootCertificate|バイナリ|信頼されたルート証明書です。|
+|trustedRootCertificate|Binary|信頼されたルート証明書です。|
 |します|String|UI に表示するファイル名です。|
 |certificationAuthority|String|PKCS 証明機関。|
 |certificationAuthorityName|String|PKCS 証明機関の名前です。|

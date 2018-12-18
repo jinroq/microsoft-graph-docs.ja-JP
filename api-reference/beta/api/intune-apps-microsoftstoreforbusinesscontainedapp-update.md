@@ -1,12 +1,13 @@
 ---
 title: MicrosoftStoreForBusinessContainedApp を更新します。
 description: MicrosoftStoreForBusinessContainedApp オブジェクトのプロパティを更新します。
-ms.openlocfilehash: b5a946a79b5040778cce24deaee3326f93380e76
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: e4b9e451e5632a8d4b923aae5de86c854febfa2a
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27074130"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27324809"
 ---
 # <a name="update-microsoftstoreforbusinesscontainedapp"></a>MicrosoftStoreForBusinessContainedApp を更新します。
 
@@ -46,9 +47,9 @@ PATCH /deviceAppManagement/mobileApps/{mobileAppId}/microsoft.graph.windowsUnive
 
 [MicrosoftStoreForBusinessContainedApp](../resources/intune-apps-microsoftstoreforbusinesscontainedapp.md)を作成するときに必要なプロパティを次の表に示します。
 
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
-|id|String|エンティティのキー。 [MobileContainedApp](../resources/intune-apps-mobilecontainedapp.md)から継承されました。|
+|ID|String|エンティティのキー。 [MobileContainedApp](../resources/intune-apps-mobilecontainedapp.md)から継承されました。|
 |appUserModelId|String|MicrosoftStoreForBusinessApp の格納されているアプリケーションのアプリケーション ユーザー モデル ID です。|
 
 

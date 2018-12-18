@@ -1,12 +1,13 @@
 ---
 title: Intune でのリソース アクセスの証明書を管理します。
 description: Intune の Microsoft グラフ API を使用して PFX 証明書をインポートすることができます。
-ms.openlocfilehash: 6573ce1f90cd53aaede9ea27279747dad226043c
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: a97c8c6e9f819c4136c09faaf06e3e9979ac6cb8
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27070896"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27344780"
 ---
 # <a name="manage-resource-access-certificates-in-intune"></a>Intune でのリソース アクセスの証明書を管理します。
 

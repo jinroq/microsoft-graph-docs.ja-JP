@@ -1,12 +1,13 @@
 ---
 title: '電話: cancelMediaProcessing'
 description: キャンセル メディアのすべての処理中、PlayPrompt、またはレコードの操作。
-ms.openlocfilehash: 27a978a28c94cc161e2d62137c5afc0e9ff085df
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: VinodRavichandran
+ms.openlocfilehash: 9d7432670030ed1505c9be95a801e6c453087df3
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27066980"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27328274"
 ---
 # <a name="call-cancelmediaprocessing"></a>電話: cancelMediaProcessing
 
@@ -38,9 +39,9 @@ POST /applications/{id}/calls/{id}/cancelMediaProcessing
 ## <a name="request-body"></a>要求本文
 要求本文で、次のパラメーターを含む JSON オブジェクトを指定します。
 
-| パラメーター      | 型    | 説明                                                    |
+| パラメーター      | 種類    | 説明                                                    |
 |:---------------|:--------|:---------------------------------------------------------------|
-| all            | ブール値 | 操作または現在のすべてを停止するかどうかを示すフラグです。 |
+| all            | ブール型 | 操作または現在のすべてを停止するかどうかを示すフラグです。 |
 | clientContext  | String  | クライアントのコンテキスト。                                            |
 
 ## <a name="response"></a>応答

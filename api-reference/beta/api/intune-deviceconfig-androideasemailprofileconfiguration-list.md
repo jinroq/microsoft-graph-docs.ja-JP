@@ -1,12 +1,13 @@
 ---
 title: リスト androidEasEmailProfileConfigurations
 description: AndroidEasEmailProfileConfiguration オブジェクトのプロパティと関係を一覧表示します。
-ms.openlocfilehash: f3c81df1f83a4f5094de3f252242a0fbd6340981
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: b90bd63e06d73f935677a4294768ad7ff6d9205a
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27073922"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27326951"
 ---
 # <a name="list-androideasemailprofileconfigurations"></a>リスト androidEasEmailProfileConfigurations
 

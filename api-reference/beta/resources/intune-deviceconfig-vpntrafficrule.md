@@ -1,12 +1,13 @@
 ---
 title: vpnTrafficRule リソースの種類
 description: VPN トラフィックの規則の定義です。
-ms.openlocfilehash: 564528cf0c0ae39785a2cc43dc800d8dbdf7d285
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 39303510fdfef39cbcb99df3f824ce29bcbfd65c
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27068306"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27324648"
 ---
 # <a name="vpntrafficrule-resource-type"></a>vpnTrafficRule リソースの種類
 
@@ -15,8 +16,8 @@ ms.locfileid: "27068306"
 > **注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
 
 VPN トラフィックの規則の定義です。
-## <a name="properties"></a>プロパティ
-|プロパティ|型|説明|
+## <a name="properties"></a>Properties
+|プロパティ|種類|説明|
 |:---|:---|:---|
 |名前|String|名前です。|
 |プロトコル|Int32|(0 ~ 255) のプロトコル。 0 から 255 までの有効な値|

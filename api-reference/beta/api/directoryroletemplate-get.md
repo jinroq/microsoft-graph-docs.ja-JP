@@ -1,12 +1,13 @@
 ---
 title: directoryRoleTemplate を取得する
 description: directoryroletemplate オブジェクトのプロパティとリレーションシップを取得します。
-ms.openlocfilehash: 007b290d1bf0b33f47977d3c53a5a2ae66700136
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lleonard-msft
+ms.openlocfilehash: 5fcc69572f485c81b39d5e1edef47e2e62060931
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27066977"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27339026"
 ---
 # <a name="get-directoryroletemplate"></a>directoryRoleTemplate を取得する
 
@@ -31,7 +32,7 @@ GET /directoryRoleTemplates/{id}
 このメソッドは、応答をカスタマイズするための [OData クエリ パラメーター](https://developer.microsoft.com/graph/docs/concepts/query_parameters)をサポート**していません** (例: $filter はここではサポートされていません)。
 
 ## <a name="request-headers"></a>要求ヘッダー
-| 名前       | 型 | 説明|
+| 名前       | 種類 | 説明|
 |:-----------|:------|:----------|
 | Authorization  | string  | ベアラー {トークン}。必須。 |
 

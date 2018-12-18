@@ -1,12 +1,13 @@
 ---
 title: termsAndConditionsAssignment の作成
 description: 新しい termsAndConditionsAssignment オブジェクトを作成します。
-ms.openlocfilehash: 9e113ae57c4bebce3f4bcc016ab6afadc3186e0a
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 0a6cc4024487610fe4d243a2957d99a0522d800b
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27021687"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27333335"
 ---
 # <a name="create-termsandconditionsassignment"></a>termsAndConditionsAssignment の作成
 
@@ -42,9 +43,9 @@ POST /deviceManagement/termsAndConditions/{termsAndConditionsId}/assignments
 
 次の表に、termsAndConditionsAssignment の作成時に必要なプロパティを示します。
 
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
-|id|String|エンティティの一意識別子。|
+|ID|String|エンティティの一意識別子。|
 |target|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|T & C ポリシーが割り当てられる、割り当て先です。|
 
 

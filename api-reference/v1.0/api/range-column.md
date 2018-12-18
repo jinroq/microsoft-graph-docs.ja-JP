@@ -1,12 +1,13 @@
 ---
 title: 範囲:列
 description: 範囲に含まれる列を 1 つ取得します。
-ms.openlocfilehash: a445a567209f1d043cecf62b6f368f079ea70ca2
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lumine2008
+ms.openlocfilehash: 4ba85cdfa0920a2da8f25c9cd38502372d1a30c9
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27022597"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27326650"
 ---
 # <a name="range-column"></a>範囲:列
 
@@ -37,7 +38,7 @@ GET /workbook/tables/{id|name}/columns/{id|name}/range/column
 ## <a name="path-parameters"></a>パス パラメーター
 要求のパスには、次のパラメーターを提供します。
 
-| パラメーター    | 型   |説明|
+| パラメーター    | 種類   |説明|
 |:---------------|:--------|:----------|
 |列|Int32|取得する範囲の列番号。0 を起点とする番号になります。|
 

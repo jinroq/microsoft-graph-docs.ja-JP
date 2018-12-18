@@ -1,12 +1,13 @@
 ---
 title: windowsKioskMultipleApps リソースの種類
 description: キオスクの構成のマルチ ・ モード ・ アプリケーションの構成を識別するために使用するクラス
-ms.openlocfilehash: 2b52cbe343c4a8d81391ad448e8f10f64fef295e
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 30591e15d29b06ffb807c8b435d0e3c8a6a1b0fa
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27069116"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27330143"
 ---
 # <a name="windowskioskmultipleapps-resource-type"></a>windowsKioskMultipleApps リソースの種類
 
@@ -18,12 +19,12 @@ ms.locfileid: "27069116"
 
 [WindowsKioskAppConfiguration](../resources/intune-deviceconfig-windowskioskappconfiguration.md)から継承します。
 
-## <a name="properties"></a>プロパティ
-|プロパティ|型|説明|
+## <a name="properties"></a>Properties
+|プロパティ|種類|説明|
 |:---|:---|:---|
 |apps|[windowsKioskAppBase](../resources/intune-deviceconfig-windowskioskappbase.md)コレクション|これらは、[スタート] メニューから起動できる唯一の Windows ストア アプリです。|
-|showTaskBar|ブール値|この設定では、タスク バーを表示するかどうかを指定するのには管理ができます。|
-|disallowDesktopApps|ブール値|この設定は、デスクトップ アプリケーションを許可することを示します。 デフォルトは true になります。|
+|showTaskBar|ブール型|この設定では、タスク バーを表示するかどうかを指定するのには管理ができます。|
+|disallowDesktopApps|ブール型|この設定は、デスクトップ アプリケーションを許可することを示します。 デフォルトは true になります。|
 |startMenuLayoutXml|Binary|開始の既定のレイアウトを変更するのには管理者は、ユーザーが変更できないようにします。レイアウトを変更するには、レイアウト変更スキーマに基づく XML ファイルを指定します。 XML は、バイナリ形式である必要があります。|
 
 ## <a name="relationships"></a>リレーションシップ

@@ -1,12 +1,13 @@
 ---
 title: イベントを作成する
 description: この API を使用して、既定または指定の予定表に新しいイベントを作成します。
-ms.openlocfilehash: da06df89ab4a62a1b767635e3daa928f84f29d9e
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: angelgolfer-ms
+ms.openlocfilehash: 706914499f79e6aa72d3efdf2c37cd20984b9b05
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27022557"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27336051"
 ---
 # <a name="create-event"></a>イベントを作成する
 

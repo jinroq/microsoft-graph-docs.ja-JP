@@ -1,12 +1,13 @@
 ---
 title: Get androidLobApp
 description: androidLobApp オブジェクトのプロパティとリレーションシップを読み取ります。
-ms.openlocfilehash: 191f8ee543bedb09704fb58f81d4053d17fb3a87
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 16773d162232e01296c7859acd626a6ff281027b
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27021485"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27331963"
 ---
 # <a name="get-androidlobapp"></a>Get androidLobApp
 

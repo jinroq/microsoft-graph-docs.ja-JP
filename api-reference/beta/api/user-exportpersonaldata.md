@@ -1,12 +1,12 @@
 ---
 title: 'ユーザー: exportPersonalData'
 description: 組織のユーザーのデータをエクスポートするのには企業の管理者によって行われる、データ ポリシーの操作要求を送信します。
-ms.openlocfilehash: aceab65992bde3092676a2bfa144498f07f06095
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.openlocfilehash: 27a299a4cfa6ccc3016a1f706b452840aa5dc396
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27072694"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27329127"
 ---
 # <a name="user-exportpersonaldata"></a>ユーザー: exportPersonalData
 
@@ -17,9 +17,9 @@ ms.locfileid: "27072694"
 
 |アクセス許可の種類      | アクセス許可 (特権の小さいものから大きいものへ)              |
 |:--------------------|:---------------------------------------------------------|
-|委任 (職場または学校のアカウント) |  User.Export.All  |
+|委任 (職場または学校のアカウント) |  User.Export.All と User.Read.All  |
 |委任 (個人用 Microsoft アカウント) |  該当なし  |
-|アプリケーション | User.Export.All |
+|アプリケーション | User.Export.All と User.Read.All |
 
 >注記: エクスポートのみ実行できます企業の管理者によって委任されたアクセス許可を使用する場合。
 
@@ -37,7 +37,7 @@ POST /users/<id>/exportPersonalData
 ## <a name="request-body"></a>要求本文
 要求本文で、次のパラメーターを含む JSON オブジェクトを指定します。
 
-| パラメーター    | 型   |説明|
+| パラメーター    | 種類   |説明|
 |:---------------|:--------|:----------|
 |storageLocation|String|これは、データをエクスポートする必要があります、Azure ストレージ アカウントに共有アクセス署名 (SA) の URL です。|
 

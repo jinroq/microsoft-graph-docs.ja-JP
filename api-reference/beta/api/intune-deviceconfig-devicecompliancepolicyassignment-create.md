@@ -1,12 +1,13 @@
 ---
 title: deviceCompliancePolicyAssignment の作成
 description: 新しい deviceCompliancePolicyAssignment オブジェクトを作成します。
-ms.openlocfilehash: d2aa0e08c52a0d055080ea0ad33ac8fc2dd53728
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: ee54fecbbddb4fc02b6a6c7b39d8cdc3633d59ce
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27070929"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27325418"
 ---
 # <a name="create-devicecompliancepolicyassignment"></a>deviceCompliancePolicyAssignment の作成
 
@@ -44,9 +45,9 @@ POST /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/assig
 
 次の表に、deviceCompliancePolicyAssignment の作成時に必要なプロパティを示します。
 
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
-|id|String|エンティティのキー。|
+|ID|String|エンティティのキー。|
 |target|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|コンプライアンス ポリシーの割り当て先です。|
 
 

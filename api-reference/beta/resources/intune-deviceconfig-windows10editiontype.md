@@ -1,12 +1,13 @@
 ---
 title: windows10EditionType 列挙型
 description: 10 エディションの Windows の種類です。
-ms.openlocfilehash: ee80bb602ee888f86e2c12c755aec7596c15ff3e
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: cc7d198e523fe01a4e10887bc0a8cbb13bac345a
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27072267"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27327791"
 ---
 # <a name="windows10editiontype-enum-type"></a>windows10EditionType 列挙型
 

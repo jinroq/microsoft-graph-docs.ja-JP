@@ -1,12 +1,13 @@
 ---
 title: windowsInformationProtectionNetworkLearningSummary の更新
 description: windowsInformationProtectionNetworkLearningSummary オブジェクトのプロパティを更新します。
-ms.openlocfilehash: a40cd274b03cd9efeddf053f2e6ed4d81b836752
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 30f5585149a1130a92c203394950c581655cc78b
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27024262"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27329422"
 ---
 # <a name="update-windowsinformationprotectionnetworklearningsummary"></a>windowsInformationProtectionNetworkLearningSummary の更新
 
@@ -42,9 +43,9 @@ PATCH /deviceManagement/windowsInformationProtectionNetworkLearningSummaries/{wi
 
 次の表に、[windowsInformationProtectionNetworkLearningSummary](../resources/intune-wip-windowsinformationprotectionnetworklearningsummary.md) の作成時に必要なプロパティを示します。
 
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
-|id|String|WindowsInformationProtectionNetworkLearningSummary の一意識別子。|
+|ID|String|WindowsInformationProtectionNetworkLearningSummary の一意識別子。|
 |url|String|Web サイト URL|
 |deviceCount|Int32|デバイス数|
 

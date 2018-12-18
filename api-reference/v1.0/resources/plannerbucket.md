@@ -1,12 +1,13 @@
 ---
 title: plannerBucket リソースの種類
 description: ) Office 365 のプランでの作業をします。 PlannerPlan に含まれ、plannerTasks のコレクションを持つことができます。
-ms.openlocfilehash: 44bce1606fa7561bc52098fe0e6ba8f70d737a58
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: TarkanSevilmis
+ms.openlocfilehash: 09c9fab569a819f0545e5c851da12be98b45b150
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27021249"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27331445"
 ---
 # <a name="plannerbucket-resource-type"></a>plannerBucket リソースの種類
 
@@ -25,9 +26,9 @@ ms.locfileid: "27021249"
 |[Delete](../api/plannerbucket-delete.md) | なし |**plannerBucket** オブジェクトを削除します。 |
 
 ## <a name="properties"></a>プロパティ
-| プロパティ     | 型   |説明|
+| プロパティ     | 種類   |説明|
 |:---------------|:--------|:----------|
-|id|String| 読み取り専用。 バケットの ID です。 28 の文字、大文字小文字を区別することをお勧めします。 サービスの[フォーマットの検証](planner-identifiers-disclaimer.md)が行われます。|
+|ID|String| 読み取り専用です。 バケットの ID です。 28 の文字、大文字小文字を区別することをお勧めします。 サービスの[フォーマットの検証](planner-identifiers-disclaimer.md)が行われます。|
 |名前|String|バケットの名前。|
 |orderHint|String|リスト ビューでこの種類の項目の順序付けに使用するヒント。形式は[ここ](planner-order-hint-format.md)の説明に従って定義されます。|
 |planId|String|バケットが所属する計画の ID。|

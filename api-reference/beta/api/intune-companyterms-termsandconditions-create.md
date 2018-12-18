@@ -1,12 +1,13 @@
 ---
 title: termsAndConditions の作成
 description: 新しい termsAndConditions オブジェクトを作成します。
-ms.openlocfilehash: 1947a41ddfe108d8f44c899786d0b0b129ac6939
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 833966122b8b2613e17d43068a4d22af125d7617
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27072622"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27324641"
 ---
 # <a name="create-termsandconditions"></a>termsAndConditions の作成
 
@@ -44,9 +45,9 @@ POST /deviceManagement/termsAndConditions
 
 次の表に、termsAndConditions の作成時に必要なプロパティを示します。
 
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
-|id|String|T&C ポリシーの一意識別子。|
+|ID|String|T&C ポリシーの一意識別子。|
 |createdDateTime|DateTimeOffset|オブジェクトが作成された DateTime。|
 |変更された日時|DateTimeOffset|オブジェクトが最後に変更された DateTime。|
 |lastModifiedDateTime|DateTimeOffset|オブジェクトが最後に変更された DateTime。|

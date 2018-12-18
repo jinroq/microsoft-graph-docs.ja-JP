@@ -1,12 +1,13 @@
 ---
 title: windowsKioskActiveDirectoryGroup リソースの種類
 description: キオスクの構成の Azure ディレクトリ グループを識別するに使用するクラス
-ms.openlocfilehash: 18e876b50bdc8c8946bd511348d6ed3a6fc8fe5c
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 618b93182d17d485a35d2567f45c218c6117658f
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27068259"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27331775"
 ---
 # <a name="windowskioskactivedirectorygroup-resource-type"></a>windowsKioskActiveDirectoryGroup リソースの種類
 
@@ -18,8 +19,8 @@ ms.locfileid: "27068259"
 
 [WindowsKioskUser](../resources/intune-deviceconfig-windowskioskuser.md)から継承します。
 
-## <a name="properties"></a>プロパティ
-|プロパティ|型|説明|
+## <a name="properties"></a>Properties
+|プロパティ|種類|説明|
 |:---|:---|:---|
 |グループ名|String|この構成にキオスクがロックアウトされている AD グループの名前|
 

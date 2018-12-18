@@ -1,12 +1,13 @@
 ---
 title: deviceConfigurationAssignment の作成
 description: 新しい deviceConfigurationAssignment オブジェクトを作成します。
-ms.openlocfilehash: e6b4a1ce1adc67c8dddc66df4158ad7442e79d4d
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: d278c04f0372869bf6b79e63a68d27766ef36485
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27024321"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27329107"
 ---
 # <a name="create-deviceconfigurationassignment"></a>deviceConfigurationAssignment の作成
 
@@ -42,9 +43,9 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/assignments
 
 次の表に、deviceConfigurationAssignment の作成時に必要なプロパティを示します。
 
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
-|id|String|割り当てのキー。|
+|ID|String|割り当てのキー。|
 |target|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|デバイス構成の割り当て先。|
 
 

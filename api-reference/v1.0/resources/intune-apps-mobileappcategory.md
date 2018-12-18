@@ -1,12 +1,13 @@
 ---
 title: mobileAppCategory リソースの種類
 description: Intune のアプリの単一カテゴリのプロパティが含まれています。
-ms.openlocfilehash: 57dfa4d03f8b48fa7e467f04e3529d74082af3d8
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 8da7a0ed8ff136cafef8b575b391897f40be86bd
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27023917"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27323808"
 ---
 # <a name="mobileappcategory-resource-type"></a>mobileAppCategory リソースの種類
 
@@ -23,9 +24,9 @@ Intune のアプリの単一カテゴリのプロパティが含まれていま�
 |[mobileAppCategory の更新](../api/intune-apps-mobileappcategory-update.md)|[mobileAppCategory](../resources/intune-apps-mobileappcategory.md)|[mobileAppCategory](../resources/intune-apps-mobileappcategory.md) オブジェクトのプロパティを更新します。|
 
 ## <a name="properties"></a>プロパティ
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
-|id|String|エンティティのキー。|
+|ID|String|エンティティのキー。|
 |displayName|String|アプリのカテゴリの名前。|
 |lastModifiedDateTime|DateTimeOffset|mobileAppCategory が最後に変更された日時です。|
 

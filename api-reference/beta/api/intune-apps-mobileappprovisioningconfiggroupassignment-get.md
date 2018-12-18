@@ -1,12 +1,13 @@
 ---
 title: MobileAppProvisioningConfigGroupAssignment を取得します。
 description: MobileAppProvisioningConfigGroupAssignment オブジェクトのプロパティと関係を参照してください。
-ms.openlocfilehash: 23f5f1508907aa122d07c01b5d7651e44ceb4e79
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 836e1897e9ff38ef3ca3ef5c1ae55e8874897caa
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27072364"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27330871"
 ---
 # <a name="get-mobileappprovisioningconfiggroupassignment"></a>MobileAppProvisioningConfigGroupAssignment を取得します。
 

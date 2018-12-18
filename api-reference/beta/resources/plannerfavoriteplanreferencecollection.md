@@ -1,12 +1,13 @@
 ---
 title: plannerFavoritePlanReferenceCollection リソースの種類
 description: " 値は、plannerFavoritePlanReference オブジェクトです。"
-ms.openlocfilehash: 78544e17604a0938cc0e88969e2542fc26bdff1b
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: TarkanSevilmis
+ms.openlocfilehash: 056cb7b9ba728aa9dfe44ae4b90e550876461d6b
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27072581"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27344227"
 ---
 # <a name="plannerfavoriteplanreferencecollection-resource-type"></a>plannerFavoritePlanReferenceCollection リソースの種類
 
@@ -15,7 +16,7 @@ ms.locfileid: "27072581"
 **PlannerFavoritePlanReferenceCollection**リソースでは、ユーザーがお気に入りとしてマークされている計画への参照のコレクションを表します。 このリソースは、オープン型であり、 [plannerUser](planneruser.md)オブジェクトの一部であります。 プロパティ名、プロパティ値のペアでは、対応する計画の ID をします。値は、 [plannerFavoritePlanReference](plannerfavoriteplanreference.md)オブジェクトです。
 
 
-## <a name="properties"></a>プロパティ
+## <a name="properties"></a>Properties
 このオープン型のプロパティを定義することができます。 プロパティ名は、 `id` [plannerPlan](plannerplan.md)リソースの値とその値は、 [plannerFavoritePlanReference](plannerfavoriteplanreference.md)オブジェクトをする必要があります。 お気に入りの一覧で項目を削除するのにはプロパティの値を設定します`null`。
 
 

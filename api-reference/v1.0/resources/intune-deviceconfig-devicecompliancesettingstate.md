@@ -1,12 +1,13 @@
 ---
 title: deviceComplianceSettingState リソース タイプ
 description: 特定のデバイスに関する、デバイスのコンプライアンスの設定状態です。
-ms.openlocfilehash: f91e7eb4cdd72899b32419fc9401c055fff0bc3e
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: e4edce4b22b70c6018703e086d606b84781b6b91
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27023208"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27326174"
 ---
 # <a name="devicecompliancesettingstate-resource-type"></a>deviceComplianceSettingState リソース タイプ
 
@@ -23,9 +24,9 @@ ms.locfileid: "27023208"
 |[Update deviceComplianceSettingState](../api/intune-deviceconfig-devicecompliancesettingstate-update.md)|[deviceComplianceSettingState](../resources/intune-deviceconfig-devicecompliancesettingstate.md)|[deviceComplianceSettingState](../resources/intune-deviceconfig-devicecompliancesettingstate.md) オブジェクトのプロパティを更新します。|
 
 ## <a name="properties"></a>プロパティ
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
-|id|String|エンティティのキー|
+|ID|String|エンティティのキー|
 |setting|String|設定のクラス名とプロパティ名。|
 |settingName|String|レポートされている設定名。|
 |deviceId|String|レポートされているデバイス ID。|

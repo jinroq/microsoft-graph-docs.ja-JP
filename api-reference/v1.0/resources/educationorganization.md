@@ -1,19 +1,20 @@
 ---
 title: educationOrganization リソースの種類
 description: 教育セクター内の別の組織の種類との間の共通性をモデル化するために使用する抽象エンティティです。
-ms.openlocfilehash: ed7a01072fe3adf00cb09082ad17954b9a921083
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: mmast-msft
+ms.openlocfilehash: e4c0f69d63108cc88b88f530e99cbd55b23f49ed
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27021067"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27326146"
 ---
 # <a name="educationorganization-resource-type"></a>educationOrganization リソースの種類
 
 教育セクター内の別の組織の種類との間の共通性をモデル化するために使用する抽象エンティティです。
 
-## <a name="properties"></a>プロパティ
-| プロパティ     | 型   |説明|
+## <a name="properties"></a>Properties
+| プロパティ     | 種類   |説明|
 |:---------------|:--------|:----------|
 |説明|String| 組織の説明です。|
 |displayName|String| 組織の表示名です。|

@@ -1,12 +1,13 @@
 ---
 title: androidForWorkAppConfigurationSchema の更新
 description: androidForWorkAppConfigurationSchema オブジェクトのプロパティを更新します。
-ms.openlocfilehash: 8343d1f30d7e9b7e8ef8a7dec984c6af9c51e6a3
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: ba4050ce741e1fdcfd3158e7f9e9d9e47f422882
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27069162"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27333902"
 ---
 # <a name="update-androidforworkappconfigurationschema"></a>androidForWorkAppConfigurationSchema の更新
 
@@ -44,9 +45,9 @@ PATCH /deviceManagement/androidForWorkAppConfigurationSchemas/{androidForWorkApp
 
 次の表に、a[androidForWorkAppConfigurationSchema](../resources/intune-androidforwork-androidforworkappconfigurationschema.md) の作成時に必要なプロパティを示します。
 
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
-|id|String|エンティティのキー。スキーマが対応するアプリケーションの Android パッケージ名です。|
+|ID|String|エンティティのキー。スキーマが対応するアプリケーションの Android パッケージ名です。|
 |exampleJson|Binary|このスキーマに準拠した JSON 文字列の例を含む、UTF8 でエンコードされたバイト配列。このアプリの構成の設定方法を示しています。|
 |schemaItems|[androidForWorkAppConfigurationSchemaItem](../resources/intune-androidforwork-androidforworkappconfigurationschemaitem.md) コレクション|それぞれがスキーマ内の名前付き構成オプションを示すアイテムのコレクションです。|
 

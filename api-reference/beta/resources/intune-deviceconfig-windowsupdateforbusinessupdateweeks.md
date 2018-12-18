@@ -1,12 +1,13 @@
 ---
 title: windowsUpdateForBusinessUpdateWeeks 列挙型
 description: 月の週に更新プログラムのインストールをスケジュールします。
-ms.openlocfilehash: 16c119ebfabcc0249db2faecfb320f2f51aab6d1
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 2d42e9e4951cdcbec1acc89f9478421b1aef0a36
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27067846"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27328812"
 ---
 # <a name="windowsupdateforbusinessupdateweeks-enum-type"></a>windowsUpdateForBusinessUpdateWeeks 列挙型
 

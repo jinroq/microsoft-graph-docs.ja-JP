@@ -1,12 +1,13 @@
 ---
 title: ImportedWindowsAutopilotDeviceIdentityUpload を削除します。
 description: ImportedWindowsAutopilotDeviceIdentityUpload を削除します。
-ms.openlocfilehash: ac171be50e42ef0702e2a77ed9e7c5ba72f79e8f
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 10123532939ba69ee33b8c3cd45d77320cf23836
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27022915"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27343702"
 ---
 # <a name="delete-importedwindowsautopilotdeviceidentityupload"></a>ImportedWindowsAutopilotDeviceIdentityUpload を削除します。
 

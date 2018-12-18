@@ -1,12 +1,13 @@
 ---
 title: グループ設定の取得
 description: 特定のグループ設定オブジェクトのプロパティを取得します。
-ms.openlocfilehash: fd225a5bd2c3906e19ae6f9cac2f720163b09210
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: dkershaw10
+ms.openlocfilehash: 567fc7a38f95f295ca6d896b1aed6c456abbab4c
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27022159"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27339068"
 ---
 # <a name="get-a-group-setting"></a>グループ設定の取得
 

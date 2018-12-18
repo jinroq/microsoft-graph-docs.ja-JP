@@ -1,12 +1,13 @@
 ---
 title: vppTokenSyncStatus 列挙型
 description: Apple ボリューム購入プログラム、トークンに関連付けられている可能性のある同期のステータス。
-ms.openlocfilehash: 443eb87299fbb052edf8788d07b029c68d58c2fe
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 18a0fcf9f4d22d7904cb76d1fc45d80b14dfc7d9
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27072614"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27344241"
 ---
 # <a name="vpptokensyncstatus-enum-type"></a>vppTokenSyncStatus 列挙型
 

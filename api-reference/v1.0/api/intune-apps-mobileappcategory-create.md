@@ -1,12 +1,13 @@
 ---
 title: mobileAppCategory の作成
 description: 新しい mobileAppCategory オブジェクトを作成します。
-ms.openlocfilehash: a26f9f66e045a45abae57a744a1fd91293df72e0
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 17084b8c02421b94b733a9ecb1011d647dab02d4
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27020509"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27326335"
 ---
 # <a name="create-mobileappcategory"></a>mobileAppCategory の作成
 
@@ -43,9 +44,9 @@ POST /deviceAppManagement/mobileApps/{mobileAppId}/categories
 
 次の表に、mobileAppCategory の作成時に必要なプロパティを示します。
 
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
-|id|String|エンティティのキー。|
+|ID|String|エンティティのキー。|
 |displayName|String|アプリのカテゴリの名前。|
 |lastModifiedDateTime|DateTimeOffset|mobileAppCategory が最後に変更された日時。|
 

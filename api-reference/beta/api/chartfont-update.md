@@ -1,12 +1,13 @@
 ---
 title: Update chartfont
 description: chartfont オブジェクトのプロパティを更新します。
-ms.openlocfilehash: 61ed9a6d8c9fc2507defcfe744825e9a0684c6e8
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lumine2008
+ms.openlocfilehash: 335a7eb278ce1d5cd6ffee5a96222ec5a189aefa
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27069601"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27328204"
 ---
 # <a name="update-chartfont"></a>Update chartfont
 
@@ -38,7 +39,7 @@ PATCH /workbook/worksheets/{id|name}/charts(<name>)/axes/categoryaxis/format/fon
 ## <a name="request-body"></a>要求本文
 要求本文で、更新する関連フィールドの値を指定します。要求本文に含まれない既存のプロパティは、以前の値のままになるか、他のプロパティ値の変化に基づいて再計算されます。最適なパフォーマンスを得るためには、変更されていない既存の値を含めないでください。
 
-| プロパティ     | 型   |説明|
+| プロパティ     | 種類   |説明|
 |:---------------|:--------|:----------|
 |bold|ブール値|フォントの太字の状態を表します。|
 |color|文字列|テキストの色の HTML カラー コード表記。たとえば、#FF0000 は赤を表します。|

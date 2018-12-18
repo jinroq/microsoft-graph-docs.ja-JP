@@ -1,12 +1,13 @@
 ---
 title: loggedOnUser リソースの種類
 description: ログオン中のユーザー
-ms.openlocfilehash: 37df6b5343df515a76bc6b755889156cb86c4bf0
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: c2021d51356798dec906331797a2504f779264b3
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27074273"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27327175"
 ---
 # <a name="loggedonuser-resource-type"></a>loggedOnUser リソースの種類
 
@@ -15,8 +16,8 @@ ms.locfileid: "27074273"
 > **注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
 
 ログオン中のユーザー
-## <a name="properties"></a>プロパティ
-|プロパティ|型|説明|
+## <a name="properties"></a>Properties
+|プロパティ|種類|説明|
 |:---|:---|:---|
 |userId|String|ユーザー id|
 |lastLogOnDateTime|DateTimeOffset|ユーザーのログオン時の日付します。|

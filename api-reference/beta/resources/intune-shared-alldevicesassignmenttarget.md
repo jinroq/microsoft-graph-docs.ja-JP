@@ -1,12 +1,13 @@
 ---
 title: allDevicesAssignmentTarget リソースの種類
 description: テナント内のすべての管理されたデバイスへの割り当てを表します。
-ms.openlocfilehash: 31b9caed400c51befddcbb56bd83d144a58cc18c
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 645dbe95c137af2e9ef08c76c42834366c933a53
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27073261"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27326944"
 ---
 # <a name="alldevicesassignmenttarget-resource-type"></a>allDevicesAssignmentTarget リソースの種類
 
@@ -19,7 +20,7 @@ ms.locfileid: "27073261"
 [deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md) からの継承
 
 ## <a name="properties"></a>プロパティ
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
 
 ## <a name="relationships"></a>リレーションシップ

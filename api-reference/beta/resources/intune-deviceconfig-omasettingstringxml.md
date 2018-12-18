@@ -1,12 +1,13 @@
 ---
 title: omaSettingStringXml リソースの種類
 description: OMA 設定文字列の XML 定義です。
-ms.openlocfilehash: bb95041a10a71591c06a55dca39a4377d32376b7
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 5582ca84a9d6c918ce7b8dea5a21f616804da4ca
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27067628"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27323787"
 ---
 # <a name="omasettingstringxml-resource-type"></a>omaSettingStringXml リソースの種類
 
@@ -19,7 +20,7 @@ OMA 設定文字列の XML 定義です。
 [omaSetting](../resources/intune-deviceconfig-omasetting.md) からの継承
 
 ## <a name="properties"></a>プロパティ
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
 |displayName|文字列|表示名。 [omaSetting](../resources/intune-deviceconfig-omasetting.md) からの継承|
 |説明|String|説明。 [omaSetting](../resources/intune-deviceconfig-omasetting.md) からの継承|

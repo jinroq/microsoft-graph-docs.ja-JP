@@ -1,12 +1,13 @@
 ---
 title: audioRoutingGroup リソースの種類
 description: オーディオのルーティング グループでは、通話参加者の間にプライベート オーディオ ルートを格納します。 ソースは参加者自身で、受信者、通話の他の参加者のサブセットであります。
-ms.openlocfilehash: 98c58e39773567f13a2723e94c0413efd2841cd0
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: VinodRavichandran
+ms.openlocfilehash: 0e1db47963576e728a07a6b99ecff09a0f4640d0
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27066832"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27344472"
 ---
 # <a name="audioroutinggroup-resource-type"></a>audioRoutingGroup リソースの種類
 
@@ -22,13 +23,13 @@ ms.locfileid: "27066832"
 |:--------------------------------------------------------|:------------------------------------------|:---------------------------------------------|
 | [AudioRoutingGroup を取得します。](../api/audioroutinggroup-get.md)| [audioRoutingGroup](audioroutinggroup.md) | AudioRoutingGroup オブジェクトのプロパティと関係を参照してください。|
 | [Update](../api/audioroutinggroup-update.md)            | [audioRoutingGroup](audioroutinggroup.md) | 受信者リストを更新します。                       |
-| [削除](../api/audioroutinggroup-delete.md)            | なし                                      | オーディオのルーティング グループを削除します。              |
+| [Delete](../api/audioroutinggroup-delete.md)            | なし                                      | オーディオのルーティング グループを削除します。              |
 
-## <a name="properties"></a>プロパティ
+## <a name="properties"></a>Properties
 
-| プロパティ      | 型              | 説明                                                          |
+| プロパティ      | 種類              | 説明                                                          |
 | :----------   | :---------------- | :--------------------------------------------------------------------|
-| id            | String            | 読み取り専用。 サーバーを生成します。                                         |
+| ID            | String            | 読み取り専用です。 サーバーを生成します。                                         |
 | 受信機     | 文字列コレクション | 参加者の id を受信する] ボックスの一覧です。                                   |
 | routingMode   | String            | ルーティング グループのモードです。  使用可能な値は、`oneToOne`、`multicast` です。   |
 | ソース       | 文字列コレクション | ソースの構成要素の id の一覧です。                                      |

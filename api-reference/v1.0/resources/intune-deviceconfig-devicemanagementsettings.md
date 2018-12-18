@@ -1,12 +1,13 @@
 ---
 title: deviceManagementSettings リソースの種類
 description: まだ文書化されていません
-ms.openlocfilehash: 4a07c879e20139c9138fc7315172655aa48a40eb
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 9e444f0a92a2e28dfa571c51f08c886537701f3a
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27021552"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27343611"
 ---
 # <a name="devicemanagementsettings-resource-type"></a>deviceManagementSettings リソースの種類
 
@@ -14,7 +15,7 @@ ms.locfileid: "27021552"
 
 まだ文書化されていません
 ## <a name="properties"></a>プロパティ
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
 |deviceComplianceCheckinThresholdDays|Int32|デバイスがチェックインせずに移動し、準拠性を維持できる日数です。 有効な値は 0 から 120 までです|
 |isScheduledActionEnabled|Boolean|ルールのスケジュール済みアクションの機能が有効かどうか。|

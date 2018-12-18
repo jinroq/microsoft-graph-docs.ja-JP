@@ -1,12 +1,13 @@
 ---
 title: settingStateDeviceSummary の削除
 description: settingStateDeviceSummary を削除します。
-ms.openlocfilehash: 3f00c115b6956335a412ddd11adfb61156294f6d
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: eced5e319738c93dd9faeb9142755c2e64bf2110
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27070065"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27325180"
 ---
 # <a name="delete-settingstatedevicesummary"></a>settingStateDeviceSummary の削除
 

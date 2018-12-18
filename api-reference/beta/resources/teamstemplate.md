@@ -1,12 +1,13 @@
 ---
 title: teamsTemplate リソースの種類
 description: TeamsTemplate エンティティをについて説明します。
-ms.openlocfilehash: 76b2921e884d38a57097789b1ba64df3309d141c
-ms.sourcegitcommit: 12c6e82f1417022540e534ebadbd0e8d7fb5abde
+author: nkramer
+ms.openlocfilehash: b4e32448f864048fdcb54dc001b21b262df2bba3
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/08/2018
-ms.locfileid: "27210155"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27327714"
 ---
 # <a name="teamstemplate-resource-type"></a>teamsTemplate リソースの種類
 
@@ -14,11 +15,11 @@ ms.locfileid: "27210155"
 
 チーム テンプレートは、マイクロソフトのチームで[チーム](../resources/team.md)を作成するための青写真です。 テンプレートは、テンプレートを使用して作成された新しいチームの構造、設定、および準備する必要があるものコンテンツを指定します。 マイクロソフトは、基本テンプレートのスイートを提供していて、お客様が独自のカスタム テンプレートを保存できます。
 
-## <a name="properties"></a>プロパティ
+## <a name="properties"></a>Properties
 
 | プロパティ            | 種類     | 説明 |
 |:------------------- |:-------- |:----------- |
-| id                  | String   | テンプレートの一意の識別子です。 Null にすることはできません。 |
+| ID                  | String   | テンプレートの一意の識別子です。 Null にすることはできません。 |
 
 ## <a name="json-representation"></a>JSON 表記
 

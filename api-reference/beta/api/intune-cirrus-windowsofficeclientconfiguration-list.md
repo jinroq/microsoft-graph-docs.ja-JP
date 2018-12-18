@@ -1,12 +1,13 @@
 ---
 title: リスト windowsOfficeClientConfigurations
 description: WindowsOfficeClientConfiguration オブジェクトのプロパティと関係を一覧表示します。
-ms.openlocfilehash: 0e14dc2ede95d0b1b5fcb4830e47292d2d604f7e
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 256ad449a12c8188346110d4ba5b7510d9657898
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27066610"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27340573"
 ---
 # <a name="list-windowsofficeclientconfigurations"></a>リスト windowsOfficeClientConfigurations
 

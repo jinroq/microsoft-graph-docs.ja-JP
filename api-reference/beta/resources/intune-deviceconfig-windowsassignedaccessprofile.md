@@ -1,12 +1,13 @@
 ---
 title: windowsAssignedAccessProfile リソースの種類
 description: Windows のアクセスのプロファイルを割り当てられています。
-ms.openlocfilehash: 2fc23bfed54ef850050b177589d5b4c0c79c22cc
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 6b01f362c31f6e2791a00d8ff02a7ecd5b798e3c
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27067746"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27328792"
 ---
 # <a name="windowsassignedaccessprofile-resource-type"></a>windowsAssignedAccessProfile リソースの種類
 
@@ -24,12 +25,12 @@ Windows のアクセスのプロファイルを割り当てられています。
 |[WindowsAssignedAccessProfile を削除します。](../api/intune-deviceconfig-windowsassignedaccessprofile-delete.md)|なし|の[windowsAssignedAccessProfile](../resources/intune-deviceconfig-windowsassignedaccessprofile.md)を削除します。|
 |[WindowsAssignedAccessProfile を更新します。](../api/intune-deviceconfig-windowsassignedaccessprofile-update.md)|[windowsAssignedAccessProfile](../resources/intune-deviceconfig-windowsassignedaccessprofile.md)|[WindowsAssignedAccessProfile](../resources/intune-deviceconfig-windowsassignedaccessprofile.md)オブジェクトのプロパティを更新します。|
 
-## <a name="properties"></a>プロパティ
-|プロパティ|型|説明|
+## <a name="properties"></a>Properties
+|プロパティ|種類|説明|
 |:---|:---|:---|
-|id|String|エンティティのキー。|
+|ID|String|エンティティのキー。|
 |profilename プロパティ|String|これは、[スタート] メニューの [このプレゼンテーションの構成が割り当てられているユーザーにこれらのアプリケーションのレイアウト、アプリケーションのグループを識別するために使用するフレンドリ名です。|
-|showTaskBar|ブール値|この設定では、タスク バーを表示するかどうかを指定するのには管理ができます。|
+|showTaskBar|ブール型|この設定では、タスク バーを表示するかどうかを指定するのには管理ができます。|
 |appUserModelIds|String コレクション|これらは、[スタート] メニューから起動できる唯一の Windows ストア アプリです。|
 |desktopAppPaths|String コレクション|これらは、[スタート] メニューで利用可能なデスクトップ アプリケーションのパスと、唯一のアプリケーション、ユーザーが起動できるようです。|
 |ユーザー アカウント|String コレクション|この構成にキオスクがロックアウトされているユーザー アカウントです。|

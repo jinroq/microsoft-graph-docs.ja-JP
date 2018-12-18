@@ -1,12 +1,13 @@
 ---
 title: iosHomeScreenItem リソースの種類
 description: IOS ホーム画面上のアイテムを表します
-ms.openlocfilehash: 705849569dd91d339633e52187d16dfdd25b5ab3
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 6a8d71e01ca8f2c284bcc3eddd7eb39b87c025d7
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27071786"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27328190"
 ---
 # <a name="ioshomescreenitem-resource-type"></a>iosHomeScreenItem リソースの種類
 
@@ -16,7 +17,7 @@ ms.locfileid: "27071786"
 
 IOS ホーム画面上のアイテムを表します
 ## <a name="properties"></a>プロパティ
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
 |displayName|文字列型 (String)|アプリの名前|
 

@@ -1,12 +1,13 @@
 ---
 title: windowsProtectionState リソースの種類
 description: デバイス保護の状態のエンティティです。
-ms.openlocfilehash: dfdfb5f79f696e2f6f577f59b7597f16c89a5d56
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 636b969ddafde5976939df764ae1180e19a181c0
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27073247"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27328078"
 ---
 # <a name="windowsprotectionstate-resource-type"></a>windowsProtectionState リソースの種類
 
@@ -21,19 +22,19 @@ ms.locfileid: "27073247"
 |[WindowsProtectionState を取得します。](../api/intune-devices-windowsprotectionstate-get.md)|[windowsProtectionState](../resources/intune-devices-windowsprotectionstate.md)|[WindowsProtectionState](../resources/intune-devices-windowsprotectionstate.md)オブジェクトのプロパティと関係を参照してください。|
 |[WindowsProtectionState を更新します。](../api/intune-devices-windowsprotectionstate-update.md)|[windowsProtectionState](../resources/intune-devices-windowsprotectionstate.md)|[WindowsProtectionState](../resources/intune-devices-windowsprotectionstate.md)オブジェクトのプロパティを更新します。|
 
-## <a name="properties"></a>プロパティ
-|プロパティ|型|説明|
+## <a name="properties"></a>Properties
+|プロパティ|種類|説明|
 |:---|:---|:---|
-|id|String|デバイス保護の状態のオブジェクトの一意の識別子です。 これは、デバイスのデバイス id|
-|malwareProtectionEnabled|ブール値|マルウェア対策が有効になっているか|
+|ID|String|デバイス保護の状態のオブジェクトの一意の識別子です。 これは、デバイスのデバイス id|
+|malwareProtectionEnabled|ブール型|マルウェア対策が有効になっているか|
 |deviceState|[windowsDeviceHealthState](../resources/intune-devices-windowsdevicehealthstate.md)|コンピューターの状態 (などのクリーンな保留中の完全なスキャンまたは再起動の保留中など)。 使用可能な値: `clean`、`fullScanPending`、`rebootPending`、`manualStepsPending`、`offlineScanPending`、`critical`。|
-|realTimeProtectionEnabled|ブール値|リアルタイム保護を有効または無効ですか。|
-|networkInspectionSystemEnabled|ブール値|ネットワーク検査システムが有効か無効か。|
-|quickScanOverdue|ブール値|クイック スキャン、か期限切れですか。|
-|fullScanOverdue|ブール値|完全なスキャンの期限切れかどうでしょうか。|
-|signatureUpdateOverdue|ブール値|署名が期限切れかどうか。|
-|rebootRequired|ブール値|しましたか。|
-|fullScanRequired|ブール値|全体を走査するかが必要でしょうか。|
+|realTimeProtectionEnabled|ブール型|リアルタイム保護を有効または無効ですか。|
+|networkInspectionSystemEnabled|ブール型|ネットワーク検査システムが有効か無効か。|
+|quickScanOverdue|ブール型|クイック スキャン、か期限切れですか。|
+|fullScanOverdue|ブール型|完全なスキャンの期限切れかどうでしょうか。|
+|signatureUpdateOverdue|ブール型|署名が期限切れかどうか。|
+|rebootRequired|ブール型|しましたか。|
+|fullScanRequired|ブール型|全体を走査するかが必要でしょうか。|
 |engineVersion|String|現在のエンドポイントの保護エンジンのバージョン|
 |signatureVersion|String|マルウェア定義の現在のバージョン|
 |antiMalwareVersion|String|現在のバージョンのマルウェア対策|

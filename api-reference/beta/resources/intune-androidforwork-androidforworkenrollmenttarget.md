@@ -1,12 +1,13 @@
 ---
 title: androidForWorkEnrollmentTarget 列挙型
 description: アカウントの種類を対象とする作業のデバイス管理のためのアプリ
-ms.openlocfilehash: aa31e5d58b66326659b24022c89b0fef3e759771
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 75c446e65b8af1466bf1eb5988921c3e1a6b3ac9
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27070743"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27333104"
 ---
 # <a name="androidforworkenrollmenttarget-enum-type"></a>androidForWorkEnrollmentTarget 列挙型
 

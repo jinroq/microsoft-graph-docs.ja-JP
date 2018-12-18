@@ -1,12 +1,13 @@
 ---
 title: deviceGeoLocation リソースの種類
 description: デバイスの場所
-ms.openlocfilehash: 2ab7f777d00b891ceb7aae127ac87868aec582cc
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: b3e790809f79d8d943cc12cc0e5065972c9864ff
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27068058"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27328631"
 ---
 # <a name="devicegeolocation-resource-type"></a>deviceGeoLocation リソースの種類
 
@@ -16,7 +17,7 @@ ms.locfileid: "27068058"
 
 デバイスの場所
 ## <a name="properties"></a>プロパティ
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
 |lastCollectedDateTimeUtc|DateTimeOffset|場所が記録された、UTC を基準とする時刻|
 |lastCollectedDateTime|DateTimeOffset|場所が記録された、UTC を基準とする時刻|

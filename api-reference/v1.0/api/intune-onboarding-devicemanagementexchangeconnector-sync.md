@@ -1,12 +1,13 @@
 ---
 title: sync アクション
 description: まだ文書化されていません
-ms.openlocfilehash: 4385656565465ced016b64212c3b312523e44e8f
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 736805eaa569b25b2d6ebfb955279e15318d91d4
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27022625"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27332698"
 ---
 # <a name="sync-action"></a>sync アクション
 
@@ -42,7 +43,7 @@ POST /deviceManagement/exchangeConnectors/{deviceManagementExchangeConnectorId}/
 
 次の表に、このアクションで使用できるパラメーターを示します。
 
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
 |syncType|[deviceManagementExchangeConnectorSyncType](../resources/intune-onboarding-devicemanagementexchangeconnectorsynctype.md)|実行される同期の種類。完全同期またはデルタ同期のどちらかです。|
 

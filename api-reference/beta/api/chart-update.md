@@ -1,12 +1,13 @@
 ---
 title: Update chart
 description: グラフ オブジェクトのプロパティを更新します。
-ms.openlocfilehash: 493207d158088c83c56287511dae26d475a1a7e6
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lumine2008
+ms.openlocfilehash: 086d4a2ea0ce823ace141df0d5576af732bf8c0f
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27070268"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27328183"
 ---
 # <a name="update-chart"></a>Update chart
 
@@ -36,7 +37,7 @@ PATCH /workbook/worksheets/{id|name}/charts(<name>)
 ## <a name="request-body"></a>要求本文
 要求本文で、更新する関連フィールドの値を指定します。要求本文に含まれない既存のプロパティは、以前の値のままになるか、他のプロパティ値の変化に基づいて再計算されます。最適なパフォーマンスを得るためには、変更されていない既存の値を含めないでください。
 
-| プロパティ     | 型   |説明|
+| プロパティ     | 種類   |説明|
 |:---------------|:--------|:----------|
 |height|double|グラフ オブジェクトの高さをポイント単位で表します。|
 |left|double|グラフの左側からワークシートの原点までの距離 (ポイント単位)。|

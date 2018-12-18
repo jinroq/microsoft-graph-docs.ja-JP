@@ -1,12 +1,13 @@
 ---
 title: リスト educationAssignmentResources
 description: この割り当てに関連付けられているすべてのリソースを取得します。
-ms.openlocfilehash: 2092b7a98794bc8eaeac7e65eea5dced8ffa00d2
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: dipakboyed
+ms.openlocfilehash: 31c921e4be2e2d3aed3b247d9fc5f2b55fe6a4f8
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27069224"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27330997"
 ---
 # <a name="list-educationassignmentresources"></a>リスト educationAssignmentResources
 

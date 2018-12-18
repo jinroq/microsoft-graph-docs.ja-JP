@@ -1,12 +1,13 @@
 ---
 title: educationSynchronizationError リソースの種類
 description: 学校データ プロファイルの検証との同期中にエラーを表します。検証や Azure Active Directory (AD の Azure) との同期に失敗したすべてのエントリに対して一意のエラーが生成されます。
-ms.openlocfilehash: 91a633ab4056e8e86854a0e2d45ae13e22da19a8
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: mmast-msft
+ms.openlocfilehash: d950e906a506c3cf1ee5bc5b627200dc79c1d0fb
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27067101"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27336002"
 ---
 # <a name="educationsynchronizationerror-resource-type"></a>educationSynchronizationError リソースの種類
 
@@ -20,16 +21,16 @@ ms.locfileid: "27067101"
 |:-|:-|:-|
 | [同期エラーが発生をします。](../api/educationsynchronizationerrors-get.md) | **educationSynchronizationError**コレクション| プロファイルに関連付けられている同期エラーの一覧を返します。 |
 
-## <a name="properties"></a>プロパティ
+## <a name="properties"></a>Properties
 
-| プロパティ | 型 | 説明 |
+| プロパティ | 種類 | 説明 |
 |:-|:-|:-|
-| **示した** | 文字列 |  (学校、セクション、学生、教師) は、同期エンティティを表します。       |
-| **errorCode** | 文字列 |  このエラーのエラー コードを表します。         |
-| **エラー メッセージ** | 文字列 |  エラーの説明が含まれています。        |
-| **joiningValue** | 文字列 |  エントリの一意の識別子です。         |
+| **示した** | string |  (学校、セクション、学生、教師) は、同期エンティティを表します。       |
+| **errorCode** | string |  このエラーのエラー コードを表します。         |
+| **エラー メッセージ** | string |  エラーの説明が含まれています。        |
+| **joiningValue** | string |  エントリの一意の識別子です。         |
 | **recordedDateTime** | DateTimeOffset | このエラーの発生時刻。         |
-| **reportableIdentifier** | 文字列 | このエラーのエントリの識別子です。       |
+| **reportableIdentifier** | string | このエラーのエントリの識別子です。       |
 
 ## <a name="json-representation"></a>JSON 表記
 <!-- {

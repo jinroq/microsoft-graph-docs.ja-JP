@@ -1,12 +1,13 @@
 ---
 title: Get windows10EnterpriseModernAppManagementConfiguration
 description: windows10EnterpriseModernAppManagementConfiguration オブジェクトのプロパティとリレーションシップを読み取ります。
-ms.openlocfilehash: 70c689db666d71f9bbfebcb8d84510e6c6473938
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 2053d26c8678fadbe0ebee7e3e0b0acac8b2ebea
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27067161"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27327168"
 ---
 # <a name="get-windows10enterprisemodernappmanagementconfiguration"></a>Get windows10EnterpriseModernAppManagementConfiguration
 

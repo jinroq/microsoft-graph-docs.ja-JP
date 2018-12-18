@@ -1,12 +1,13 @@
 ---
 title: Windows10VpnConfiguration を削除します。
 description: Windows10VpnConfiguration を削除します。
-ms.openlocfilehash: 78eca8dca57ad3c24f9896110c4cfae339fe12de
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 3c02b9b8add523137a24f6fd2c3ccfaaea108f4f
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27072127"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27327896"
 ---
 # <a name="delete-windows10vpnconfiguration"></a>Windows10VpnConfiguration を削除します。
 

@@ -1,12 +1,13 @@
 ---
 title: ワークシートを更新する
 description: ワークシート オブジェクトのプロパティを更新します。
-ms.openlocfilehash: 16db37919009dbd935bcd8959111f888ffa97d2e
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lumine2008
+ms.openlocfilehash: ab61b65c03ea69a77253226c5be785d0314117bc
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27070277"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27326440"
 ---
 # <a name="update-worksheet"></a>ワークシートを更新する
 
@@ -36,7 +37,7 @@ PATCH /workbook/worksheets/{id|name}
 ## <a name="request-body"></a>要求本文
 要求本文で、更新する関連フィールドの値を指定します。要求本文に含まれない既存のプロパティは、以前の値のままになるか、他のプロパティ値の変化に基づいて再計算されます。最適なパフォーマンスを得るためには、変更されていない既存の値を含めないでください。
 
-| プロパティ     | 型   |説明|
+| プロパティ     | 種類   |説明|
 |:---------------|:--------|:----------|
 |name|文字列|ワークシートの表示名。|
 |position|int|0 を起点とした、ブック内のワークシートの位置。|

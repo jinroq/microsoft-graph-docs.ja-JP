@@ -1,12 +1,13 @@
 ---
 title: subjectAlternativeNameType 列挙型
 description: サブジェクト代替名のオプションです。
-ms.openlocfilehash: 385ee36111907dd2e48bc18a2efda9552eb61924
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 2c1249c90998a24eca63da7d80e580ac497aa9b8
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27067953"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27326657"
 ---
 # <a name="subjectalternativenametype-enum-type"></a>subjectAlternativeNameType 列挙型
 

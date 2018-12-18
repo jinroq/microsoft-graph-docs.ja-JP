@@ -1,12 +1,13 @@
 ---
 title: user の作成
 description: 新しいユーザー オブジェクトを作成します。
-ms.openlocfilehash: e79fc06543b2f5d6c827b4f0900c4ba972bf6e74
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 9d71aeca95c1a8b3efa676cca80652fb7fd124fa
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27023224"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27331641"
 ---
 # <a name="create-user"></a>user の作成
 
@@ -46,9 +47,9 @@ POST /users
 
 次の表に、user の作成時に必要なプロパティを示します。
 
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
-|id|String|ユーザーの一意識別子。|
+|ID|String|ユーザーの一意識別子。|
 |**契約時**|
 |deviceEnrollmentLimit|Int32|ユーザーが登録を許可されているデバイスの最大数。 使用できる値は 5 または 1000 です。|
 

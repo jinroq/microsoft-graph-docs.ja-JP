@@ -1,12 +1,13 @@
 ---
 title: IosLobAppProvisioningConfiguration を作成します。
 description: 新しい iosLobAppProvisioningConfiguration オブジェクトを作成します。
-ms.openlocfilehash: 0c51201e147ff588c210df2a988568807f7d9dcb
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 80d6b607d514758942ccd5f8334315fd62c0270a
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27068890"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27333650"
 ---
 # <a name="create-ioslobappprovisioningconfiguration"></a>IosLobAppProvisioningConfiguration を作成します。
 
@@ -44,9 +45,9 @@ POST /deviceAppManagement/iosLobAppProvisioningConfigurations
 
 次の表は、iosLobAppProvisioningConfiguration を作成するときに必要なプロパティを示します。
 
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
-|id|String|エンティティのキー。|
+|ID|String|エンティティのキー。|
 |expirationDateTime|DateTimeOffset|省略可能なプロファイルの有効期限の日付と時刻。|
 |payloadFileName|String|ペイロード ファイル名 (*.mobileprovision | *.xml)。|
 |payload|Binary|ペイロード。 (UTF8 でエンコードされたバイト配列)|

@@ -1,12 +1,13 @@
 ---
 title: メンバーを取得します。
 description: 管理単位で特定のメンバー (ユーザーまたはグループ) を取得するのにには、この API を使用します。
-ms.openlocfilehash: 741a24434056783c3f008de6fb7694082b393092
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lleonard-msft
+ms.openlocfilehash: 9e0e8bedc349511c59e304cacfc713d54a0f8335
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27069289"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27328393"
 ---
 # <a name="get-a-member"></a>メンバーを取得します。
 

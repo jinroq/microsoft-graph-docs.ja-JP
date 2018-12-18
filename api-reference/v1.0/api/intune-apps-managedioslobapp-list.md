@@ -1,12 +1,13 @@
 ---
 title: managedIOSLobApps のリスト
 description: managedIOSLobApp オブジェクトのプロパティとリレーションシップをリストします。
-ms.openlocfilehash: 8abe28a64baae857a16f95bd005568602fd6f8f3
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 3dc053035c66fd7be477d6d8991247d5137b23f9
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27022365"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27331452"
 ---
 # <a name="list-managedioslobapps"></a>managedIOSLobApps のリスト
 

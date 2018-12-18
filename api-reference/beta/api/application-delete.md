@@ -1,12 +1,13 @@
 ---
 title: アプリケーションを削除します。
 description: アプリケーションを削除します。
-ms.openlocfilehash: fc1f315de3e12574d51c58c56c1f37f39bdcd980
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lleonard-msft
+ms.openlocfilehash: e19ca94be2d8599f250908ab2aaa33d64b513b8d
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27069290"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27343499"
 ---
 # <a name="delete-application"></a>アプリケーションを削除します。
 
@@ -30,7 +31,7 @@ DELETE /applications/{id}
 ```
 
 ## <a name="request-headers"></a>要求ヘッダー
-| 名前       | 型 | 説明|
+| 名前       | 種類 | 説明|
 |:---------------|:--------|:----------|
 | Authorization  | string  | ベアラー {トークン}。必須。 |
 

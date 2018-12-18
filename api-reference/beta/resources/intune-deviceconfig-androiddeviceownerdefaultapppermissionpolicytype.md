@@ -1,12 +1,13 @@
 ---
 title: androidDeviceOwnerDefaultAppPermissionPolicyType 列挙型
 description: Android デバイスの所有者既定アプリケーションのアクセス許可ポリシーの種類。
-ms.openlocfilehash: 35279cee80dbcdc97f654d08cef848ee72e921d4
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 28b374d9d39bc1b7f8b744bd63759d56f9ebdaf4
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27068521"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27327903"
 ---
 # <a name="androiddeviceownerdefaultapppermissionpolicytype-enum-type"></a>androidDeviceOwnerDefaultAppPermissionPolicyType 列挙型
 
@@ -19,7 +20,7 @@ Android デバイスの所有者既定アプリケーションのアクセス許
 |メンバー|値|説明|
 |:---|:---|:---|
 |deviceDefault|0|デバイスの既定値でことを目的しません。|
-|プロンプト|1|メッセージを表示します。|
+|Prompt|1|メッセージを表示します。|
 |autoGrant|2|自動付与します。|
 |autoDeny|3|自動を拒否します。|
 

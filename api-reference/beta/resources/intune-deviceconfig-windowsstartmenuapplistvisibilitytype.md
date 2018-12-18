@@ -1,12 +1,13 @@
 ---
 title: windowsStartMenuAppListVisibilityType 列挙型
 description: '[スタート] メニューの [アプリケーション] ボックスの一覧の可視性のタイプです。'
-ms.openlocfilehash: 4b8ba665945f93f02fa4cf08a134b7154cbab6a0
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: a3abe3bdc902fc81db781300d4b05cb34c72a67e
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27071686"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27329534"
 ---
 # <a name="windowsstartmenuapplistvisibilitytype-enum-type"></a>windowsStartMenuAppListVisibilityType 列挙型
 

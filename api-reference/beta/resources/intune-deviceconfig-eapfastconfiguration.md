@@ -1,12 +1,13 @@
 ---
 title: eapFastConfiguration 列挙型
 description: EAP-FAST 構成の使用可能な設定です。
-ms.openlocfilehash: b1771668ea627d2e873d54334e388989652736d2
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: ba84adb86e9910df47bd236fd2bd348cbc9c8e6f
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27068901"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27326363"
 ---
 # <a name="eapfastconfiguration-enum-type"></a>eapFastConfiguration 列挙型
 

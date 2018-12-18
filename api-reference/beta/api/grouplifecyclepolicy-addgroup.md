@@ -1,12 +1,13 @@
 ---
 title: 'groupLifecyclePolicy: addGroup'
 description: ライフ サイクル ポリシーにグループを追加します。
-ms.openlocfilehash: 59f49429f65112488f42727cdbb46fc0a4b87800
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: dkershaw10
+ms.openlocfilehash: 57af4383c471832acbffb4136a057c91a1d061d0
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27071614"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27327910"
 ---
 # <a name="grouplifecyclepolicy-addgroup"></a>groupLifecyclePolicy: addGroup
 
@@ -41,7 +42,7 @@ POST /groupLifecyclePolicies/{id}/addGroup
 ## <a name="request-body"></a>要求本文
 要求本文で、次のパラメーターを含む JSON オブジェクトを指定します。
 
-| パラメーター | 型 | 説明 |
+| パラメーター | 種類 | 説明 |
 |:---------------|:--------|:----------|
 |groupId|Guid| ポリシーに追加するグループの ID です。 |
 
