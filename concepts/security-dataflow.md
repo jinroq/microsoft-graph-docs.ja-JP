@@ -1,12 +1,13 @@
 ---
 title: Microsoft Graph セキュリティ API データ フロー
 description: Microsoft Graph セキュリティ API は、Microsoft Graph セキュリティ エコシステムの全プロバイダーに対して要求をフェデレーションします。 これは、次の図に示すように、アプリケーションによって提供されるセキュリティ プロバイダー同意に基づいています。 同意ワークフローは、Microsoft 以外のプロバイダーにのみ適用されます。
-ms.openlocfilehash: 1e8b074e3cf4589ca67364ed7e225a62f40300fd
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: Preetikr
+ms.openlocfilehash: 5e70414409a35cc7fdef6fb85e6454e26a79bd38
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27092457"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27354741"
 ---
 # <a name="microsoft-graph-security-api-data-flow"></a>Microsoft Graph セキュリティ API データ フロー
 

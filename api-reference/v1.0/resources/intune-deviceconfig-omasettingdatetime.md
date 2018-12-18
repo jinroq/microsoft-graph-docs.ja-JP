@@ -1,12 +1,13 @@
 ---
 title: omaSettingDateTime リソースの種類
 description: OMA 設定の DateTime の定義です。
-ms.openlocfilehash: b4ea11c22acb2a4119c2de1934f1ae66c2310658
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 9a525d031c9f24cf18495d83e22467e103bca6d9
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27020918"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27363691"
 ---
 # <a name="omasettingdatetime-resource-type"></a>omaSettingDateTime リソースの種類
 
@@ -17,7 +18,7 @@ OMA 設定の DateTime の定義です。
 [omaSetting](../resources/intune-deviceconfig-omasetting.md) からの継承
 
 ## <a name="properties"></a>プロパティ
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
 |displayName|文字列|表示名。 [omaSetting](../resources/intune-deviceconfig-omasetting.md) からの継承|
 |説明|String|説明。 [omaSetting](../resources/intune-deviceconfig-omasetting.md) からの継承|

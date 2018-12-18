@@ -1,12 +1,13 @@
 ---
 title: deviceCategory リソースの種類
 description: これらのカテゴリは、Intune Azure コンソールでデバイスに適用することも、デバイスの登録時にユーザーが選択することもできます。 レポートをフィルター処理し、デバイス カテゴリに基づく動的な Azure Active Directory デバイス グループを作成できます。
-ms.openlocfilehash: c970cd7d7a95d7a888194a15b37873f5c6a44052
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 9e40f656a7ce4d511cdb4c597c2419e8cf886c12
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27023491"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27353614"
 ---
 # <a name="devicecategory-resource-type"></a>deviceCategory リソースの種類
 
@@ -24,9 +25,9 @@ ms.locfileid: "27023491"
 |[deviceCategory の更新](../api/intune-shared-devicecategory-update.md)|[deviceCategory](../resources/intune-shared-devicecategory.md) オブジェクトのプロパティを更新します。|
 
 ## <a name="properties"></a>プロパティ
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
-|id|String|デバイス カテゴリの一意識別子。 読み取り専用です。|
+|ID|String|デバイス カテゴリの一意識別子。 読み取り専用です。|
 |**契約時**|
 |displayName|String|デバイス カテゴリの表示名。|
 |説明|String|デバイス カテゴリに関するオプションの説明。|

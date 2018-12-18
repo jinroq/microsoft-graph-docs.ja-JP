@@ -1,12 +1,13 @@
 ---
 title: 写真の一覧表示
 description: profilePhoto オブジェクトのリストを取得します。
-ms.openlocfilehash: deb4c6fd414a8408d1287baeeb1e4c227f567665
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: dkershaw10
+ms.openlocfilehash: fda70cc81e0a98f8527e8bd00e980a5092804f6d
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27023000"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27353705"
 ---
 # <a name="list-photos"></a>写真の一覧表示
 [profilePhoto](../resources/profilephoto.md) オブジェクトのリストを取得します。
@@ -30,7 +31,7 @@ GET /users/{id | userPrincipalName}/joinedGroups/{id}/photos
 このメソッドは、応答をカスタマイズするための [OData クエリ パラメーター](/graph/query-parameters)をサポートします。
 
 ## <a name="request-headers"></a>要求ヘッダー
-| 名前       | 型 | 説明|
+| 名前       | 種類 | 説明|
 |:-----------|:------|:----------|
 | Authorization  | string  | ベアラー {トークン}。必須。 |
 

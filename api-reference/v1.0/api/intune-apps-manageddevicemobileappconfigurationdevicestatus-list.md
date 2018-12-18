@@ -1,12 +1,13 @@
 ---
 title: リスト managedDeviceMobileAppConfigurationDeviceStatuses
 description: ManagedDeviceMobileAppConfigurationDeviceStatus オブジェクトのプロパティと関係を一覧表示します。
-ms.openlocfilehash: 0bdbc59ce4aaa32054a8ee8e25535e6dfc03d5eb
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 3f68bccfa51a6783d845b33ffbbb1ca41822aadd
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27022358"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27334535"
 ---
 # <a name="list-manageddevicemobileappconfigurationdevicestatuses"></a>リスト managedDeviceMobileAppConfigurationDeviceStatuses
 

@@ -1,12 +1,13 @@
 ---
 title: AndroidWorkProfileCompliancePolicy を作成します。
 description: 新しい androidWorkProfileCompliancePolicy オブジェクトを作成します。
-ms.openlocfilehash: c823ef27ecd3e55646f010746b577f549510c1bf
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: ef3b9b7d15eea1911a17747b845ca80341ae02a5
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27021706"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27339306"
 ---
 # <a name="create-androidworkprofilecompliancepolicy"></a>AndroidWorkProfileCompliancePolicy を作成します。
 
@@ -42,9 +43,9 @@ POST /deviceManagement/deviceCompliancePolicies
 
 次の表は、androidWorkProfileCompliancePolicy を作成するときに必要なプロパティを示します。
 
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
-|id|String|エンティティのキー。 [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md) から継承します|
+|ID|String|エンティティのキー。 [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md) から継承します|
 |createdDateTime|DateTimeOffset|オブジェクトが作成された DateTime。 [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md) から継承します|
 |説明|String|デバイス構成について管理者が提供した説明。 [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md) から継承します|
 |lastModifiedDateTime|DateTimeOffset|オブジェクトが最後に変更された DateTime。 [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md) から継承します|

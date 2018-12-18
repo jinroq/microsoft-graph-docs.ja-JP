@@ -1,12 +1,13 @@
 ---
 title: windowsInformationProtectionAppLockerFile リソースの種類
 description: Windows 情報保護 AppLocker ファイル
-ms.openlocfilehash: ab6dc6e0cada610f21a09a90193e286f5b555838
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 6bc4a9dde44199ce8552772a47f2f68df0c50810
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27022355"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27345102"
 ---
 # <a name="windowsinformationprotectionapplockerfile-resource-type"></a>windowsInformationProtectionAppLockerFile リソースの種類
 
@@ -23,11 +24,11 @@ Windows 情報保護 AppLocker ファイル
 |[Update windowsInformationProtectionAppLockerFile](../api/intune-mam-windowsinformationprotectionapplockerfile-update.md)|[windowsInformationProtectionAppLockerFile](../resources/intune-mam-windowsinformationprotectionapplockerfile.md)|[windowsInformationProtectionAppLockerFile](../resources/intune-mam-windowsinformationprotectionapplockerfile.md) オブジェクトのプロパティを更新します。|
 
 ## <a name="properties"></a>プロパティ
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
 |displayName|String|フレンドリ名|
 |fileHash|String|ファイルの SHA256 ハッシュ|
-|file|バイナリ型 (Binary)|バイト配列のファイル|
+|file|Binary|バイト配列のファイル|
 |id|String|エンティティのキー。|
 |version|String|エンティティのバージョン。|
 

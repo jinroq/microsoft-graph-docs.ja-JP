@@ -1,12 +1,13 @@
 ---
 title: デバイスを更新する
 description: デバイスのプロパティを更新します。
-ms.openlocfilehash: 2f8a5097aa9ee0413b7868753b5b0a0dfdf9d071
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: df86581c1edb531e822204698486358fac29f106
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27071120"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27356561"
 ---
 # <a name="update-device"></a>デバイスを更新する
 
@@ -34,7 +35,7 @@ PATCH /devices/{id}
 > 注:要求内の"id"は、"deviceId"プロパティではなく、デバイスの id プロパティです。
 
 ## <a name="request-headers"></a>要求ヘッダー
-| 名前       | 型 | 説明|
+| 名前       | 種類 | 説明|
 |:-----------|:------|:----------|
 | Authorization  | string  | ベアラー {トークン}。必須。 |
 
@@ -42,7 +43,7 @@ PATCH /devices/{id}
 
 要求本文で、更新する[デバイス](../resources/device.md) プロパティの値を指定します。 要求本文に含まれない既存のプロパティは、以前の値のままになるか、他のプロパティ値の変更に基づいて再計算されます。 最適なパフォーマンスを得るためには、変更されていない既存の値を含めないでください。
 
-| プロパティ     | 型   |説明|
+| プロパティ     | 種類   |説明|
 |:---------------|:--------|:----------|
 |accountEnabled|ブール値| アカウントが有効な場合は **true**。それ以外の場合は **false**。 |
 |operatingSystem|文字列|デバイス上のオペレーティング システムの種類。|

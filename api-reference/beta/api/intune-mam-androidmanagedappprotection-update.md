@@ -2,12 +2,13 @@
 title: >
   androidManagedAppProtection の更新
 description: androidManagedAppProtection オブジェクトのプロパティを更新します。
-ms.openlocfilehash: 8b01a9b1a3d30a0f141185fa0dae423d345cd3cd
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: d2d601e314dcb2b22d6d659361bc1e605ee7c00b
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27072419"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27338291"
 ---
 # <a name="update-androidmanagedappprotection"></a>androidManagedAppProtection の更新
 
@@ -46,7 +47,7 @@ PATCH /deviceAppManagement/androidManagedAppProtections/{androidManagedAppProtec
 
 次の表に、[androidManagedAppProtection](../resources/intune-mam-androidmanagedappprotection.md) の作成時に必要なプロパティを示します。
 
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
 |displayName|String|ポリシーの表示名。 [managedAppPolicy](../resources/intune-mam-managedapppolicy.md) から継承します|
 |説明|String|ポリシーの説明。 [managedAppPolicy](../resources/intune-mam-managedapppolicy.md) から継承します|

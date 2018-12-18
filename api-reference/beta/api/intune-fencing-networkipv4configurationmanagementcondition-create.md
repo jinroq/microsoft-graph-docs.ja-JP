@@ -1,12 +1,13 @@
 ---
 title: NetworkIPv4ConfigurationManagementCondition を作成します。
 description: 新しい networkIPv4ConfigurationManagementCondition オブジェクトを作成します。
-ms.openlocfilehash: f42bd52da9175192a71ed0be2b36f8f656f6a538
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 60d79584af38ca709d597b4919a7e6dc4171ff73
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27073715"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27356365"
 ---
 # <a name="create-networkipv4configurationmanagementcondition"></a>NetworkIPv4ConfigurationManagementCondition を作成します。
 
@@ -45,9 +46,9 @@ POST /deviceManagement/managementConditions/{managementConditionId}/managementCo
 
 次の表は、networkIPv4ConfigurationManagementCondition を作成するときに必要なプロパティを示します。
 
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
-|id|String|管理条件の一意の識別子です。 システムでは、作成時に割り当てられた値が生成されます。 [ManagementCondition](../resources/intune-fencing-managementcondition.md)から継承されました。|
+|ID|String|管理条件の一意の識別子です。 システムでは、作成時に割り当てられた値が生成されます。 [ManagementCondition](../resources/intune-fencing-managementcondition.md)から継承されました。|
 |一意な名前|String|管理条件の一意の名前です。 管理条件式で使用されます。 [ManagementCondition](../resources/intune-fencing-managementcondition.md)から継承されました。|
 |displayName|String|管理者は、管理の条件の名前を定義します。 [ManagementCondition](../resources/intune-fencing-managementcondition.md)から継承されました。|
 |説明|String|管理者は、管理状態の説明を定義します。 [ManagementCondition](../resources/intune-fencing-managementcondition.md)から継承されました。|

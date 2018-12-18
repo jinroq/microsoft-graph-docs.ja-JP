@@ -1,12 +1,13 @@
 ---
 title: AndroidForWorkGmailEasConfiguration を削除します。
 description: AndroidForWorkGmailEasConfiguration を削除します。
-ms.openlocfilehash: 85572fb447dbcfb9dcc09518cc3c7d510d718991
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 70e4fc9ada4134cadc26ef44d6cdfedb1215d394
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27070956"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27354930"
 ---
 # <a name="delete-androidforworkgmaileasconfiguration"></a>AndroidForWorkGmailEasConfiguration を削除します。
 

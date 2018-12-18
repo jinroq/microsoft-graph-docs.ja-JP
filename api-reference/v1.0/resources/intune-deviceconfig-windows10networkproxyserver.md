@@ -1,12 +1,13 @@
 ---
 title: windows10NetworkProxyServer リソースの種類
 description: ネットワーク プロキシ サーバーのポリシーです。
-ms.openlocfilehash: 2cd9d4ddc84733e3985f718fd2d3ef86481d762e
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: c2eaeaa4d89f981e5fa992e7a79a7863f0848a9f
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27020916"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27344038"
 ---
 # <a name="windows10networkproxyserver-resource-type"></a>windows10NetworkProxyServer リソースの種類
 
@@ -14,7 +15,7 @@ ms.locfileid: "27020916"
 
 ネットワーク プロキシ サーバーのポリシーです。
 ## <a name="properties"></a>プロパティ
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
 |address|String|プロキシ サーバーへのアドレス。 <server>\[“:”<port>\] 形式でアドレスを指定します|
 |exceptions|String コレクション|プロキシ サーバーを使用できないアドレス。 システムは、このノードで指定されたもので始まるアドレスに対してプロキシ サーバーを使用しません。|
