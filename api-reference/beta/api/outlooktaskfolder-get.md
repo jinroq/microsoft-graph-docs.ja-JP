@@ -1,12 +1,13 @@
 ---
 title: OutlookTaskFolder を取得します。
 description: プロパティと指定した Outlook の仕事フォルダーの関係を取得します。
-ms.openlocfilehash: a5719f1fb667ed9e13d3f32cbfd9eef7394a41c7
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: angelgolfer-ms
+ms.openlocfilehash: 093741ebffb8c2bd3305399b61391af1216eef9f
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27067478"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27334063"
 ---
 # <a name="get-outlooktaskfolder"></a>OutlookTaskFolder を取得します。
 

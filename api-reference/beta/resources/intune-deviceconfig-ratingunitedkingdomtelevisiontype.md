@@ -1,12 +1,13 @@
 ---
 title: ratingUnitedKingdomTelevisionType 列挙型
 description: 英国のテレビのコンテンツの規制ラベル
-ms.openlocfilehash: 85b302befde9aeb409b4fc97694d889ad31cad2c
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: f023cc582dc1e73a00694222880d46fc1f3e3a67
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27072658"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27333279"
 ---
 # <a name="ratingunitedkingdomtelevisiontype-enum-type"></a>ratingUnitedKingdomTelevisionType 列挙型
 

@@ -1,12 +1,13 @@
 ---
 title: windowsKioskAutologon リソースの種類
 description: キオスクは、自動ログオンの構成を識別するために使用するクラス
-ms.openlocfilehash: 1e60596860a88f08900fe25e06fe3d9844b0d8c8
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 0c3dd2003ace5d28a7e4807982b865689f7a6825
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27069542"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27362637"
 ---
 # <a name="windowskioskautologon-resource-type"></a>windowsKioskAutologon リソースの種類
 
@@ -18,8 +19,8 @@ ms.locfileid: "27069542"
 
 [WindowsKioskUser](../resources/intune-deviceconfig-windowskioskuser.md)から継承します。
 
-## <a name="properties"></a>プロパティ
-|プロパティ|型|説明|
+## <a name="properties"></a>Properties
+|プロパティ|種類|説明|
 |:---|:---|:---|
 
 ## <a name="relationships"></a>リレーションシップ

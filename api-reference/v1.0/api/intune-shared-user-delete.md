@@ -1,12 +1,13 @@
 ---
 title: ユーザーを削除する
 description: user を削除します。
-ms.openlocfilehash: 3b580e46fe15e81e0325f9b673217e41274b8721
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 8ed00b2967fa04fd23351c7dbc369b25d97cba39
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27022804"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27337318"
 ---
 # <a name="delete-user"></a>ユーザーを削除する
 

@@ -1,12 +1,13 @@
 ---
 title: Update chartdatalabels
 description: chartdatalabels オブジェクトのプロパティを更新します。
-ms.openlocfilehash: e98569645048aced34566c4ca077d9e0ca921118
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lumine2008
+ms.openlocfilehash: ce120b5f00867b337191a8ba0c55e71b93f56a12
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27071138"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27362504"
 ---
 # <a name="update-chartdatalabels"></a>Update chartdatalabels
 
@@ -36,7 +37,7 @@ PATCH /workbook/worksheets/{id|name}/charts(<name>)/datalabels
 ## <a name="request-body"></a>要求本文
 要求本文で、更新する関連フィールドの値を指定します。要求本文に含まれない既存のプロパティは、以前の値のままになるか、他のプロパティ値の変化に基づいて再計算されます。最適なパフォーマンスを得るためには、変更されていない既存の値を含めないでください。
 
-| プロパティ     | 型   |説明|
+| プロパティ     | 種類   |説明|
 |:---------------|:--------|:----------|
 |position|文字列|データ ラベルの位置を表す DataLabelPosition 値。可能な値は、`None`、`Center`、`InsideEnd`、`InsideBase`、`OutsideEnd`、`Left`、`Right`、`Top`、`Bottom`、`BestFit`、`Callout` です。|
 |separator|文字列|グラフのデータ ラベルに使用される区切り文字を表す文字列を設定します。|

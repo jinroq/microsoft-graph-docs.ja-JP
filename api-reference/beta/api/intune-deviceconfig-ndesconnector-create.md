@@ -1,12 +1,13 @@
 ---
 title: NdesConnector を作成します。
 description: 新しい ndesConnector オブジェクトを作成します。
-ms.openlocfilehash: 0dd1ee403a03d72e5bd9c0dd8febcfb28a01a36e
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 16580e9d69850139edd8f268bbaf3688b29d06e7
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27069707"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27333601"
 ---
 # <a name="create-ndesconnector"></a>NdesConnector を作成します。
 
@@ -44,11 +45,11 @@ POST /deviceManagement/ndesConnectors
 
 次の表は、ndesConnector を作成するときに必要なプロパティを示します。
 
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
-|id|String|NDES のコネクタのキー。|
+|ID|String|NDES のコネクタのキー。|
 |lastConnectionDateTime|DateTimeOffset|Ndes コネクタの前回の接続|
-|ステート|[ndesConnectorState](../resources/intune-deviceconfig-ndesconnectorstate.md)|Ndes のコネクタの状態です。 可能な値は、`none`、`active`、`inactive` です。|
+|state|[ndesConnectorState](../resources/intune-deviceconfig-ndesconnectorstate.md)|Ndes のコネクタの状態です。 可能な値は、`none`、`active`、`inactive` です。|
 |displayName|String|Ndes のコネクタの表示名。|
 
 

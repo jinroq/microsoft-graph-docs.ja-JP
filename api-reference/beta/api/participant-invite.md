@@ -1,12 +1,13 @@
 ---
 title: '参加者: 招待'
 description: アクティブな通話に参加者を招待します。
-ms.openlocfilehash: e519cab496294c664046bb3e62f4a049f2970d26
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: VinodRavichandran
+ms.openlocfilehash: 8c09f3981c6af90680cd9e42d00184e28bc65d55
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27072054"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27335281"
 ---
 # <a name="participant-invite"></a>参加者: 招待
 
@@ -38,7 +39,7 @@ POST /applications/{id}/calls/{id}/participants/invite
 ## <a name="request-body"></a>要求本文
 要求本文で、次のパラメーターを含む JSON オブジェクトを指定します。
 
-| パラメーター      | 型    |説明|
+| パラメーター      | 種類    |説明|
 |:---------------|:--------|:----------|
 |participants|[invitationParticipantInfo](../resources/invitationparticipantinfo.md)コレクション| 招待する参加者。|
 |clientContext|String|クライアントのコンテキスト。|

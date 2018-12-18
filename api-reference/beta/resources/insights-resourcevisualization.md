@@ -1,12 +1,13 @@
 ---
 title: resourceVisualization リソースの種類
 description: 複合型のプロパティ情報にはが含まれています。
-ms.openlocfilehash: 3ed61a8547e072938fc073d90f2592baf4c08fba
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: simonhult
+ms.openlocfilehash: d0c54895468fc9a01017e448df57c09c654616e9
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27071539"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27333538"
 ---
 # <a name="resourcevisualization-resource-type"></a>resourceVisualization リソースの種類
 
@@ -33,7 +34,7 @@ ms.locfileid: "27071539"
 
 ## <a name="properties"></a>プロパティ
 
-| プロパティ              | 型          | 説明  |
+| プロパティ              | 種類          | 説明  |
 | -------------         |---------------| -------------|
 | タイトル                 | String        | アイテムのタイトルのテキストです。               |
 | type              | String        | 項目のメディア ・ タイプ。 特定の種類に基づいて特定のファイルをフィルター処理するために使用できます。 サポートされている型の下を参照してください。 |
@@ -54,7 +55,7 @@ ms.locfileid: "27071539"
 -   InfoPath
 -   Visio
 -   Publisher
--   プロジェクト
+-   Project
 -   Access
 -   メール
 -   Csv
@@ -62,14 +63,14 @@ ms.locfileid: "27071539"
 -   Xps
 -   オーディオ
 -   ビデオ
--   画像
+-   イメージ
 -   Web
 -   テキスト
 -   Xml
 -   Story
 -   ExternalContent
 -   フォルダー
--   その他
+-   Other
 
 クエリの例:`https://graph.microsoft.com/beta/me/insights/trending?$filter=ResourceVisualization/Type eq 'PowerPoint'`
 
@@ -77,7 +78,7 @@ ms.locfileid: "27071539"
 サポートされている型が異なりますコンテナーの元となる[情報](insights.md)がファイルを返します。 たとえば、のみ[共有](insights-shared.md)情報を得ることは、'ドロップ ボックス'、'ボックス'、および 'ください' からファイルを返します。
 
 -   OneDriveBusiness
--   サイト
+-   Site
 -   メール
 -   ドロップ ボックス
 -   ボックス

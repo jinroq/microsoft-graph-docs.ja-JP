@@ -1,12 +1,13 @@
 ---
 title: EducationSynchronizationProfile の同期をリセットします。
 description: テナントで特定の学校のデータの同期プロファイルの同期をリセットします。
-ms.openlocfilehash: 4be91b7d6229148c51dc8fb1279a9078fb5cad7b
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: mmast-msft
+ms.openlocfilehash: 29d21318737ceba3bd380eaf20a9500a6a711857
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27071049"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27362441"
 ---
 # <a name="reset-sync-on-an-educationsynchronizationprofile"></a>EducationSynchronizationProfile の同期をリセットします。
 
@@ -19,7 +20,7 @@ ms.locfileid: "27071049"
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
 
-| アクセス許可の種類 | Permissions |
+| アクセス許可の種類 | アクセス許可 |
 |:-----------|:----------|
 | 委任 (職場または学校のアカウント) | EduAdministration.ReadWrite |
 |(個人用の Microsoft アカウントを委任します。|サポートされていません。|
@@ -32,7 +33,7 @@ POST /synchronizationProfiles/{id}/reset
 ```
 
 ## <a name="request-headers"></a>要求ヘッダー
-| 名前       | 型 | 説明|
+| 名前       | 種類 | 説明|
 |:-----------|:------|:----------|
 | Authorization  | string  | ベアラー {トークン}。必須。  |
 

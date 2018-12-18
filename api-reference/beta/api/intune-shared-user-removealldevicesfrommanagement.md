@@ -1,12 +1,13 @@
 ---
 title: removeAllDevicesFromManagement アクション
 description: 対象ユーザーの管理からすべてのデバイスを破棄します
-ms.openlocfilehash: db3c4331f2d61730608275c07fd42c5e189bb28b
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 9c3607a9a61dc1bc4b0d713496dde4eca8dfe023
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27073998"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27333755"
 ---
 # <a name="removealldevicesfrommanagement-action"></a>removeAllDevicesFromManagement アクション
 

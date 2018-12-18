@@ -1,12 +1,13 @@
 ---
 title: verifyWindowsEnrollmentAutoDiscovery 関数
 description: まだ文書化されていません
-ms.openlocfilehash: fa1eaba203b0d2fe77f1f0fb5bdb2d3fce5bb7f3
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: c093490b27db844db434b05725e48464d9792cb7
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27072753"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27344808"
 ---
 # <a name="verifywindowsenrollmentautodiscovery-function"></a>verifyWindowsEnrollmentAutoDiscovery 関数
 
@@ -43,7 +44,7 @@ GET /deviceManagement/verifyWindowsEnrollmentAutoDiscovery
 要求 URL で、次のクエリ パラメーターに値を指定します。
 次の表に、この関数で使用できるパラメーターを示します。
 
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
 |domainName|String|まだ文書化されていません|
 

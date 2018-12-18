@@ -1,12 +1,13 @@
 ---
 title: roleAssignment の作成
 description: 新しい roleAssignment オブジェクトを作成します。
-ms.openlocfilehash: 887e802371c8545baf44bca81da9b79455eb262d
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: ac3a8ee5b007c918a9b655cb2f396c872f9f2d92
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27021297"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27362238"
 ---
 # <a name="create-roleassignment"></a>roleAssignment の作成
 
@@ -42,9 +43,9 @@ POST /deviceManagement/roleDefinitions/{roleDefinitionId}/roleAssignments
 
 次の表に、roleAssignment の作成時に必要になるプロパティを示します。
 
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
-|id|String|エンティティのキー。 これは読み取り専用で、自動生成されます。|
+|ID|String|エンティティのキー。 これは読み取り専用で、自動生成されます。|
 |displayName|String|ロール割り当ての表示名またはフレンドリ名。|
 |説明|String|ロール割り当ての説明。|
 |resourceScopes|String コレクション|役割のスコープ メンバーのセキュリティ グループの ID リスト。  Azure Active Directory の ID。|

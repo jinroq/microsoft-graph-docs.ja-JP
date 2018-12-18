@@ -1,12 +1,13 @@
 ---
 title: メッセージの作成、送信、処理の自動化
 description: Microsoft Graph では、メールは message リソースで表されます。
-ms.openlocfilehash: 9eba9e04426bdf1339d9ae287c1cf085bcf3b500
-ms.sourcegitcommit: f3d479edf03935d0edbbc7668a65f7cde2a56c92
+author: angelgolfer-ms
+ms.openlocfilehash: fa549395ad55f0eb2d2d16748250fda1745d8b92
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/15/2018
-ms.locfileid: "27283690"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27332530"
 ---
 # <a name="automate-creating-sending-and-processing-messages"></a>メッセージの作成、送信、処理の自動化
 

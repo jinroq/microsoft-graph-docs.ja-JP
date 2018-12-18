@@ -1,12 +1,13 @@
 ---
 title: resourceReference リソースの種類
 description: 複合型のプロパティ情報にはが含まれています。
-ms.openlocfilehash: d171151a1c3547aa6863a7f70cc3a42ddec13e5d
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: simonhult
+ms.openlocfilehash: 2f1a44412eebbb7a74895c12db9a07696d6ee409
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27071282"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27363621"
 ---
 # <a name="resourcereference-resource-type"></a>resourceReference リソースの種類
 
@@ -28,7 +29,7 @@ ms.locfileid: "27071282"
 
 ## <a name="properties"></a>プロパティ
 
-| プロパティ      | 型      | 説明  |
+| プロパティ      | 種類      | 説明  |
 | ------------- |-----------| -------------|
 | webUrl        | String    | 参照先の項目に先行する URL です。 |
 | id            | String    | アイテムの一意の識別子です。           |

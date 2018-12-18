@@ -1,12 +1,13 @@
 ---
 title: deviceComplianceActionItem の更新
 description: deviceComplianceActionItem オブジェクトのプロパティを更新します。
-ms.openlocfilehash: 0f2d94411c88bf4e7d377150ebd59d3056b1f6c7
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: f9aca51db300abf9243ef8abe1246c2a0a6b910d
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27067605"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27344129"
 ---
 # <a name="update-devicecomplianceactionitem"></a>deviceComplianceActionItem の更新
 
@@ -44,9 +45,9 @@ PATCH /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/sche
 
 次の表に、[deviceComplianceActionItem](../resources/intune-deviceconfig-devicecomplianceactionitem.md) の作成時に必要なプロパティを示します。
 
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
-|id|String|エンティティのキー。|
+|ID|String|エンティティのキー。|
 |gracePeriodHours|Int32|アクションが実行されるまでの待機時間。 有効な値は 0 から 8760 までです|
 |actionType|[deviceComplianceActionType](../resources/intune-deviceconfig-devicecomplianceactiontype.md)|実行するアクションです。 可能な値は、`noAction`、`notification`、`block`、`retire`、`wipe`、`removeResourceAccessProfiles`、`pushNotification`、`remoteLock` です。|
 |notificationTemplateId|String|使用する通知メッセージ テンプレート|

@@ -1,12 +1,13 @@
 ---
 title: リスト windows81VpnConfigurations
 description: Windows81VpnConfiguration オブジェクトのプロパティと関係を一覧表示します。
-ms.openlocfilehash: 12fdc04cd379f884a24e7070804677873dee27c2
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 3e4452a114b562106d491d5d53e37869bb51d61f
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27069706"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27336457"
 ---
 # <a name="list-windows81vpnconfigurations"></a>リスト windows81VpnConfigurations
 

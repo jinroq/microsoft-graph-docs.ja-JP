@@ -1,12 +1,13 @@
 ---
 title: AndroidDeviceOwnerEnrollmentProfile を更新します。
 description: AndroidDeviceOwnerEnrollmentProfile オブジェクトのプロパティを更新します。
-ms.openlocfilehash: 1bc38368def58c019dc97c44e54deb2bb520624d
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 136b11dd16023b3394d5c5cf084123acbef93c6d
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27066904"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27361881"
 ---
 # <a name="update-androiddeviceownerenrollmentprofile"></a>AndroidDeviceOwnerEnrollmentProfile を更新します。
 
@@ -44,7 +45,7 @@ PATCH /deviceManagement/androidDeviceOwnerEnrollmentProfiles/{androidDeviceOwner
 
 [AndroidDeviceOwnerEnrollmentProfile](../resources/intune-androidforwork-androiddeviceownerenrollmentprofile.md)を作成するときに必要なプロパティを次の表に示します。
 
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
 |accountId|String|登録プロファイルが属するテナント GUID。|
 |id|String|登録プロファイル用の一意な GUID。|

@@ -1,12 +1,13 @@
 ---
 title: Get conversation
 description: 会話オブジェクトのプロパティとリレーションシップを取得します。
-ms.openlocfilehash: 46566229c839e089c415a1728f0ca3d54743df7c
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: dkershaw10
+ms.openlocfilehash: 505ea763be6c9a29cad962939ed59ff3e72f2b2e
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27020891"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27363684"
 ---
 # <a name="get-conversation"></a>Get conversation
 

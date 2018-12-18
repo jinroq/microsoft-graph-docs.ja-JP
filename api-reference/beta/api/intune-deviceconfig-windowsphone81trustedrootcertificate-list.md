@@ -1,12 +1,13 @@
 ---
 title: リスト windowsPhone81TrustedRootCertificates
 description: WindowsPhone81TrustedRootCertificate オブジェクトのプロパティと関係を一覧表示します。
-ms.openlocfilehash: 5d2f6f56a3d6a6731313424e29a66833d9b7721e
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 73a6f00d2ab82ba72570424ef11d49642d802208
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27070481"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27339180"
 ---
 # <a name="list-windowsphone81trustedrootcertificates"></a>リスト windowsPhone81TrustedRootCertificates
 

@@ -1,12 +1,13 @@
 ---
 title: Update windowsInformationProtectionPolicy
 description: windowsInformationProtectionPolicy オブジェクトのプロパティを更新します。
-ms.openlocfilehash: b16084790fcdb4ad613dcedcc04cf5d0bf9ab2ff
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 0b2ab06d8ee197842314a2bd03d4cc457401c4ef
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27071360"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27363768"
 ---
 # <a name="update-windowsinformationprotectionpolicy"></a>Update windowsInformationProtectionPolicy
 
@@ -44,7 +45,7 @@ PATCH /deviceAppManagement/windowsInformationProtectionPolicies/{windowsInformat
 
 次の表に、[windowsInformationProtectionPolicy](../resources/intune-mam-windowsinformationprotectionpolicy.md) の作成時に必要なプロパティを示します。
 
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
 |displayName|String|ポリシーの表示名。 [managedAppPolicy](../resources/intune-mam-managedapppolicy.md) から継承します|
 |説明|String|ポリシーの説明。 [managedAppPolicy](../resources/intune-mam-managedapppolicy.md) から継承します|

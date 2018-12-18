@@ -1,12 +1,13 @@
 ---
 title: チームを作成します。
 description: 新しいチームを作成します。
-ms.openlocfilehash: 3f2fa97af217d6109f169e5b2ef75a0c71bde2e7
-ms.sourcegitcommit: 12c6e82f1417022540e534ebadbd0e8d7fb5abde
+author: nkramer
+ms.openlocfilehash: c77ca5ab76640c9c310b628f4eee106e7443fee7
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/08/2018
-ms.locfileid: "27210158"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27362840"
 ---
 # <a name="create-team"></a>チームを作成します。
 

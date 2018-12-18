@@ -1,12 +1,13 @@
 ---
 title: アイテムを完全に削除する
 description: '[削除済みアイテム] からアイテムを完全に削除します。'
-ms.openlocfilehash: 1665c72f3ff2e9f4105ab12a2c771e428d116c59
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lleonard-msft
+ms.openlocfilehash: cdea85ee1b46b4d3c7156a599081a93f31318eac
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27066358"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27336471"
 ---
 # <a name="permanently-delete-item"></a>アイテムを完全に削除する
 

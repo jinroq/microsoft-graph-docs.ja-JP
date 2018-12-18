@@ -1,12 +1,13 @@
 ---
 title: mobileAppContentFile の更新
 description: mobileAppContentFile オブジェクトのプロパティを更新します。
-ms.openlocfilehash: 224ebd8ad72dfd1b7e205354df17e87ed50eea62
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: ae091b562180c73c71ad9a58522face2c4457d53
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27067405"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27337934"
 ---
 # <a name="update-mobileappcontentfile"></a>mobileAppContentFile の更新
 
@@ -44,7 +45,7 @@ PATCH /deviceAppManagement/mobileApps/{mobileAppId}/contentVersions/{mobileAppCo
 
 次の表に、[mobileAppContentFile](../resources/intune-apps-mobileappcontentfile.md) の作成時に必要なプロパティを示します。
 
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
 |azureStorageUri|String|Azure ストレージ URI。|
 |isCommitted|Boolean|ファイルがコミットされたかどうかを示す値。|
@@ -54,10 +55,10 @@ PATCH /deviceAppManagement/mobileApps/{mobileAppId}/contentVersions/{mobileAppCo
 |size|Int64|暗号化する前のファイルのサイズ。|
 |sizeEncrypted|Int64|暗号化した後のファイルのサイズ。|
 |azureStorageUriExpirationDateTime|DateTimeOffset|Azure ストレージ URI の有効期限が切れる時刻。|
-|manifest|バイナリ|マニフェスト情報。|
+|manifest|Binary|マニフェスト情報。|
 |uploadState|[mobileAppContentFileUploadState](../resources/intune-apps-mobileappcontentfileuploadstate.md)|現在のアップロード要求の状態。 可能な値は、`success`、`transientError`、`error`、`unknown`、`azureStorageUriRequestSuccess`、`azureStorageUriRequestPending`、`azureStorageUriRequestFailed`、`azureStorageUriRequestTimedOut`、`azureStorageUriRenewalSuccess`、`azureStorageUriRenewalPending`、`azureStorageUriRenewalFailed`、`azureStorageUriRenewalTimedOut`、`commitFileSuccess`、`commitFilePending`、`commitFileFailed`、`commitFileTimedOut` です。|
-|isFrameworkFile|ブール値|フレームワーク ファイルのファイルかどうかを示す値です。|
-|isDependency|ブール値|かどうか、コンテンツ ファイルは、メインのコンテンツ ファイルの依存関係です。|
+|isFrameworkFile|ブール型|フレームワーク ファイルのファイルかどうかを示す値です。|
+|isDependency|ブール型|かどうか、コンテンツ ファイルは、メインのコンテンツ ファイルの依存関係です。|
 
 
 

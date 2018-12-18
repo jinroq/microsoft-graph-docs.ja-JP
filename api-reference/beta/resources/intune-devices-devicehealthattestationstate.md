@@ -1,12 +1,13 @@
 ---
 title: deviceHealthAttestationState リソース タイプ
 description: まだ文書化されていません
-ms.openlocfilehash: ad0928ba64fbba8fab14d32ca6ad82209a158f28
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: c4aa43e274097d4b16b2ab3e933d269d2ad37717
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27069681"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27362357"
 ---
 # <a name="devicehealthattestationstate-resource-type"></a>deviceHealthAttestationState リソース タイプ
 
@@ -16,7 +17,7 @@ ms.locfileid: "27069681"
 
 まだ文書化されていません
 ## <a name="properties"></a>プロパティ
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
 |lastUpdateDateTime|String|最終更新のタイムスタンプ。|
 |contentNamespaceUrl|String|DHA レポートのバージョン。 (名前空間のバージョン)|

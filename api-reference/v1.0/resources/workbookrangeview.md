@@ -1,12 +1,13 @@
 ---
 title: rangeView リソースの種類
 description: RangeView は、親の範囲の表示されているセルのセットを表します。
-ms.openlocfilehash: e7a19464e52f694705f2e22795513110ae7cbd89
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lumine2008
+ms.openlocfilehash: 3d8530623a19eb3a5990c0e863e41c169d0b4f72
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27020310"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27334133"
 ---
 # <a name="rangeview-resource-type"></a>rangeView リソースの種類
 RangeView は、親の範囲の表示されているセルのセットを表します。
@@ -20,7 +21,7 @@ RangeView は、親の範囲の表示されているセルのセットを表し�
 |[Range](../api/workbookrangeview-range.md)|[workbookRange](range.md)|範囲ビューに関連付けられた範囲オブジェクトを返します。|
 
 ## <a name="properties"></a>プロパティ
-| プロパティ     | 型   |説明|
+| プロパティ     | 種類   |説明|
 |:---------------|:--------|:----------|
 |cellAddresses|Json|セルのアドレスを表します。
 |columnCount|Int32|表示されている列の数を返します。読み取り専用。|
@@ -31,7 +32,7 @@ RangeView は、親の範囲の表示されているセルのセットを表し�
 |numberFormat|Json|指定したセルの Excel の数値書式コードを表します。読み取り専用です。 |
 |rowCount|Int32|表示されている行の数を返します。読み取り専用。  |
 |text|Json|指定した範囲のテキスト値。テキスト値は、セルの幅には依存しません。Excel UI で発生する # 記号による置換は、この API から返されるテキスト値には影響しません。読み取り専用です。    |
-|valueTypes|Json|各セルのデータの種類を表します。 読み取り専用。 値を指定できます: 不明な空白、文字列、整数、ブール値、エラーでは 2 倍、です。 |
+|valueTypes|Json|各セルのデータの種類を表します。 読み取り専用です。 値を指定できます: 不明な空白、文字列、整数、ブール値、エラーでは 2 倍、です。 |
 |values|Json|指定した範囲ビューの Raw 値を表します。返されるデータの型は、文字列、数値、ブール値のいずれかになります。エラーが含まれているセルは、エラー文字列を返します。   |
 
 ## <a name="relationships"></a>リレーションシップ

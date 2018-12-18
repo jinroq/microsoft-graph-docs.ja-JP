@@ -1,12 +1,13 @@
 ---
 title: roleDefinition の作成
 description: 新しい roleDefinition オブジェクトを作成します。
-ms.openlocfilehash: 6772b065e4d4d73615540667470829b31a2de804
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 03134f270d49002c5882a1e65cb0c4454684cd4a
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27074516"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27337346"
 ---
 # <a name="create-roledefinition"></a>roleDefinition の作成
 
@@ -44,9 +45,9 @@ POST /deviceManagement/roleDefinitions
 
 次の表に、roleDefinition の作成時に必要なプロパティを示します。
 
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
-|id|String|エンティティのキー。 これは読み取り専用で、自動生成されます。|
+|ID|String|エンティティのキー。 これは読み取り専用で、自動生成されます。|
 |displayName|String|ロールの定義の表示名。|
 |説明|String|ロールの定義の説明。|
 |permissions|[rolePermission](../resources/intune-rbac-rolepermission.md) コレクション|このロールに実行が許可されている、ロールのアクセス許可のリスト。 これらは、rolePermission の一部として定義されている actionName と一致する必要があります。|

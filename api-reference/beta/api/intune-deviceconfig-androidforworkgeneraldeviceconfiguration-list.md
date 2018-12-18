@@ -1,12 +1,13 @@
 ---
 title: リスト androidForWorkGeneralDeviceConfigurations
 description: AndroidForWorkGeneralDeviceConfiguration オブジェクトのプロパティと関係を一覧表示します。
-ms.openlocfilehash: f147e027fb182f942143fff355e5d543d29618b1
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 4a09ae6a0cc26c9746fab9e75283bb4a2353b70f
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27067867"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27363635"
 ---
 # <a name="list-androidforworkgeneraldeviceconfigurations"></a>リスト androidForWorkGeneralDeviceConfigurations
 

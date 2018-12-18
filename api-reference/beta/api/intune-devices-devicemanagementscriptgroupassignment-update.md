@@ -1,12 +1,13 @@
 ---
 title: DeviceManagementScriptGroupAssignment を更新します。
 description: DeviceManagementScriptGroupAssignment オブジェクトのプロパティを更新します。
-ms.openlocfilehash: 35313860e7d2dc2d2bd6ef5380245c00c69c53d8
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 552cc4b4c4c90f10640e917c1e2cb55428bf5500
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27066777"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27340692"
 ---
 # <a name="update-devicemanagementscriptgroupassignment"></a>DeviceManagementScriptGroupAssignment を更新します。
 
@@ -44,9 +45,9 @@ PATCH /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/group
 
 [DeviceManagementScriptGroupAssignment](../resources/intune-devices-devicemanagementscriptgroupassignment.md)を作成するときに必要なプロパティを次の表に示します。
 
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
-|id|String|デバイス管理スクリプトのグループの割り当てエンティティのキーです。|
+|ID|String|デバイス管理スクリプトのグループの割り当てエンティティのキーです。|
 |targetGroupId|String|Azure Active Directory グループの Id は、対象としてスクリプトをします。|
 
 

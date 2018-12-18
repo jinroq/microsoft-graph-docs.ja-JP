@@ -1,12 +1,13 @@
 ---
 title: 参加者の一覧
 description: 呼び出し内の構成要素のオブジェクトの一覧を取得します。
-ms.openlocfilehash: a18dc609204712f1b7c7b31150975543277ffa67
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: VinodRavichandran
+ms.openlocfilehash: 0ffb48a862f7c0ba547521eb9e0e96f3c1d38dff
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27068296"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27339120"
 ---
 # <a name="list-participants"></a>参加者の一覧
 

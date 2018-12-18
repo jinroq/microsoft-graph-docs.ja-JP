@@ -1,12 +1,13 @@
 ---
 title: WindowsUniversalAppXContainedApp を削除します。
 description: WindowsUniversalAppXContainedApp を削除します。
-ms.openlocfilehash: 2240b3915fca15eb4ba8ac5c8622625880de4821
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 7974d28bc62d54880efd9c11a24862a6bfcc21bc
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27068225"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27333678"
 ---
 # <a name="delete-windowsuniversalappxcontainedapp"></a>WindowsUniversalAppXContainedApp を削除します。
 

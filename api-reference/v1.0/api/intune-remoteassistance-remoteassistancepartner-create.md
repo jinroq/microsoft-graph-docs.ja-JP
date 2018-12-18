@@ -1,12 +1,13 @@
 ---
 title: remoteAssistancePartner の作成
 description: 新しい remoteAssistancePartner オブジェクトを作成します。
-ms.openlocfilehash: c1ae8b44a6ffc11432c2dce1ab5f98c02abdb0ba
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 477f16ef50828d7248cb75697c59163ab76702f8
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27022954"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27334329"
 ---
 # <a name="create-remoteassistancepartner"></a>remoteAssistancePartner の作成
 
@@ -42,9 +43,9 @@ POST /deviceManagement/remoteAssistancePartners
 
 次の表に、remoteAssistancePartner の作成時に必要なプロパティを示します。
 
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
-|id|String|パートナーの一意識別子。|
+|ID|String|パートナーの一意識別子。|
 |displayName|String|パートナーの表示名。|
 |onboardingUrl|String|パートナーのオンボーディング ポータルの URL。このポータルでは、管理者がパートナーのリモート アシスタンス サービスを構成できます。|
 |onboardingStatus|[remoteAssistanceOnboardingStatus](../resources/intune-remoteassistance-remoteassistanceonboardingstatus.md)|未定です。 可能な値は、`notOnboarded`、`onboarding`、`onboarded` です。|

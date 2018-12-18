@@ -1,12 +1,13 @@
 ---
 title: '呼び出す: 転送'
 description: アクティブな呼び出しを転送します。
-ms.openlocfilehash: d02e028c4d7e3b51f3aee371e22d00b95841d9a0
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: VinodRavichandran
+ms.openlocfilehash: 1dc80e342b873c8ebcdb2051107836201e13fda4
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27071114"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27362483"
 ---
 # <a name="call-transfer"></a>呼び出す: 転送
 
@@ -38,10 +39,10 @@ POST /applications/{id}/calls/{id}/transfer
 ## <a name="request-body"></a>要求本文
 要求本文で、次のパラメーターを含む JSON オブジェクトを指定します。
 
-| パラメーター      | 型    |説明|
+| パラメーター      | 種類    |説明|
 |:---------------|:--------|:----------|
 |transferTarget|[invitationParticipantInfo](../resources/invitationparticipantinfo.md)|転送の対象である構成要素です。|
-|target|[identitySet](../resources/identityset.md)||
+|ターゲット|[identitySet](../resources/identityset.md)||
 |replacesCallId|String|転送中の参加者の元の呼び出しの id。|
 |clientContext|String|クライアントのコンテキスト。|
 

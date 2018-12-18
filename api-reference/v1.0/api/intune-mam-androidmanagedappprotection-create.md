@@ -1,12 +1,13 @@
 ---
 title: Create androidManagedAppProtection
 description: 新しい androidManagedAppProtection オブジェクトを作成します。
-ms.openlocfilehash: 04d54857b9f7d0f0de642e8370df2ccf34de4e70
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: f0b525fb9830963ca6ec0f07944d0378a5114344
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27022624"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27334616"
 ---
 # <a name="create-androidmanagedappprotection"></a>Create androidManagedAppProtection
 
@@ -42,7 +43,7 @@ POST /deviceAppManagement/androidManagedAppProtections
 
 次の表に、androidManagedAppProtection の作成時に必要なプロパティを示します。
 
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
 |displayName|String|ポリシーの表示名。 [managedAppPolicy](../resources/intune-mam-managedapppolicy.md) から継承します|
 |説明|String|ポリシーの説明。 [managedAppPolicy](../resources/intune-mam-managedapppolicy.md) から継承します|

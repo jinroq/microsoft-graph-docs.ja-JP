@@ -1,12 +1,13 @@
 ---
 title: クラウド ソリューション プロバイダーのアプリケーションからの Microsoft Graph の呼び出し
 description: このトピックは、パートナーが管理する顧客のアプリケーションへのアクセスを Microsoft Graph を介し、認証コードの許可のフローまたはサービス間クライアント資格情報フローにより許容する方法を説明します。
-ms.openlocfilehash: a14c610090a1232c72ec2fde4469dd1cd1d6f694
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: jackson-woods
+ms.openlocfilehash: 3640cde7fb3b1c49e87a0e06e293aba8c656e264
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27092450"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27361867"
 ---
 # <a name="call-microsoft-graph-from-a-cloud-solution-provider-application"></a>クラウド ソリューション プロバイダーのアプリケーションからの Microsoft Graph の呼び出し
 

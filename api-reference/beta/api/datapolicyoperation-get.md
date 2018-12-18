@@ -1,12 +1,12 @@
 ---
 title: DataPolicyOperation を取得します。
 description: DataPolicyOperation オブジェクトのプロパティを取得します。
-ms.openlocfilehash: fbc94719f9944adb25f7dd744cf0b15b179f3a5d
-ms.sourcegitcommit: 4a46cfd112c8089fc07e4e5ccdccaf415a3a0e7f
+ms.openlocfilehash: bee3261526914848eea423a30f8f59b0d072a791
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "27156020"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27362084"
 ---
 # <a name="get-datapolicyoperation"></a>DataPolicyOperation を取得します。
 
@@ -17,9 +17,9 @@ DataPolicyOperation オブジェクトのプロパティを取得します。
 
 |アクセス許可の種類      | アクセス許可 (特権の小さいものから大きいものへ)              |
 |:--------------------|:---------------------------------------------------------|
-|委任 (職場または学校のアカウント) |  Directory.Read.All、Directory.ReadWrite.All、Directory.AccessAsUser.All  |
+|委任 (職場または学校のアカウント) |  User.Export.All と User.Read.All  |
 |委任 (個人用 Microsoft アカウント) |  該当なし  |
-|アプリケーション | Directory.Read.All、Directory.ReadWrite.All | 
+|アプリケーション | User.Export.All と User.Read.All | 
 
 ## <a name="http-request"></a>HTTP 要求
 <!-- { "blockType": "ignored" } -->

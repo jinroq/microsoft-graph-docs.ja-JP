@@ -1,12 +1,13 @@
 ---
 title: スレッドを一覧表示する
 description: グループの会話のすべてのスレッドを取得します。
-ms.openlocfilehash: 85d694261b71e0aa6eb68d9c2e2db00794c20f4c
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: dkershaw10
+ms.openlocfilehash: 1f19692f9c5a1510a901fa4c0cc5c60862625179
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27071125"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27334056"
 ---
 # <a name="list-threads"></a>スレッドを一覧表示する
 

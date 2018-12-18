@@ -1,12 +1,13 @@
 ---
 title: updateWindowsDeviceAccountActionParameter リソースの種類
 description: まだ文書化されていません
-ms.openlocfilehash: f6403e4c3b106b318b7d551796911f6bcc0253c2
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: cd69ffa01473a40228d53ad2f68f793cadf838d5
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27022623"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27335463"
 ---
 # <a name="updatewindowsdeviceaccountactionparameter-resource-type"></a>updateWindowsDeviceAccountActionParameter リソースの種類
 
@@ -14,7 +15,7 @@ ms.locfileid: "27022623"
 
 まだ文書化されていません
 ## <a name="properties"></a>プロパティ
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
 |deviceAccount|[windowsDeviceAccount](../resources/intune-devices-windowsdeviceaccount.md)|まだ文書化されていません|
 |passwordRotationEnabled|ブール型 (Boolean)|まだ文書化されていません|

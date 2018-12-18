@@ -1,12 +1,13 @@
 ---
 title: IdentityRiskEvent を取得します。
 description: プロパティと identityriskevent オブジェクトの関係を取得します。
-ms.openlocfilehash: 3e00f93fc80f68799687ba6e9b1ec25d803779dd
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: cloudhandler
+ms.openlocfilehash: 09c33e2d6df33c1a3375f05f44670592ebe1982b
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27069179"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27363698"
 ---
 # <a name="get-identityriskevent"></a>IdentityRiskEvent を取得します。
 

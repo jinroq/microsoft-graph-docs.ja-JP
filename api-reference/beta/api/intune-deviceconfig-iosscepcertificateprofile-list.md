@@ -1,12 +1,13 @@
 ---
 title: リスト iosScepCertificateProfiles
 description: IosScepCertificateProfile オブジェクトのプロパティと関係を一覧表示します。
-ms.openlocfilehash: 7b8772fc8e2c69d073c728f8d897773b53ca6f9e
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 7ce8576405bc9c41eb3a9c17c0ce08401e326930
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27072298"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27337703"
 ---
 # <a name="list-iosscepcertificateprofiles"></a>リスト iosScepCertificateProfiles
 

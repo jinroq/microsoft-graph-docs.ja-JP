@@ -1,12 +1,13 @@
 ---
 title: managedEBookAssignment リソースの種類
 description: グループへの電子ブックの割り当てに使用されるプロパティが含まれています。
-ms.openlocfilehash: ecf79b4055ea87d710cb62ac4446bb5bd65793ee
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: d5b9d7a3d4574c2098dbe694eb208894c4262514
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27023007"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27362763"
 ---
 # <a name="managedebookassignment-resource-type"></a>managedEBookAssignment リソースの種類
 
@@ -23,9 +24,9 @@ ms.locfileid: "27023007"
 |[managedEBookAssignment の更新](../api/intune-books-managedebookassignment-update.md)|[managedEBookAssignment](../resources/intune-books-managedebookassignment.md)|[managedEBookAssignment](../resources/intune-books-managedebookassignment.md) オブジェクトのプロパティを更新します。|
 
 ## <a name="properties"></a>プロパティ
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
-|id|String|エンティティのキー。|
+|ID|String|エンティティのキー。|
 |target|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|電子ブックの割り当て先。|
 |installIntent|[installIntent](../resources/intune-shared-installintent.md)|電子ブックのインストールの目的。 可能な値は、`available`、`required`、`uninstall`、`availableWithoutEnrollment` です。|
 

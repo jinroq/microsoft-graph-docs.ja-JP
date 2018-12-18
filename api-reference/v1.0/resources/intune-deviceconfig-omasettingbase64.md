@@ -1,12 +1,13 @@
 ---
 title: omaSettingBase64 リソースの種類
 description: OMA 設定の Base64 定義。
-ms.openlocfilehash: 891c13a4cfcc8c0cf378cb5c7f9c6449bd876b7c
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 6b0835864d3ec8f8364a15ff293a75dfeded3a0b
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27022822"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27343723"
 ---
 # <a name="omasettingbase64-resource-type"></a>omaSettingBase64 リソースの種類
 
@@ -17,7 +18,7 @@ OMA 設定の Base64 定義。
 [omaSetting](../resources/intune-deviceconfig-omasetting.md) からの継承
 
 ## <a name="properties"></a>プロパティ
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
 |displayName|文字列|表示名。 [omaSetting](../resources/intune-deviceconfig-omasetting.md) からの継承|
 |説明|String|説明。 [omaSetting](../resources/intune-deviceconfig-omasetting.md) からの継承|

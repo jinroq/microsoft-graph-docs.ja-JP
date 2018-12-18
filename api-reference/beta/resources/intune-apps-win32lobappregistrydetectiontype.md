@@ -1,12 +1,13 @@
 ---
 title: win32LobAppRegistryDetectionType 列挙型
 description: すべて含まれているレジストリ データの検出の種類をサポートします。
-ms.openlocfilehash: cd0fc2f2941ae6cbab19222a414c5f52fe2a726c
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: d47d13c01d282d73d65f559e016bde5f74248158
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27067504"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27362490"
 ---
 # <a name="win32lobappregistrydetectiontype-enum-type"></a>win32LobAppRegistryDetectionType 列挙型
 
@@ -21,7 +22,7 @@ ms.locfileid: "27067504"
 |notConfigured|0|構成されていません。|
 |存在します。|1|指定したレジストリ キーまたは値が存在します。|
 |doesNotExist|2|指定したレジストリ キーまたは値が存在しません。|
-|文字列|3|値型の文字列を指定します。|
+|string|3|値型の文字列を指定します。|
 |integer|4|整数値型。|
 |version|5|バージョンの値の型。|
 
