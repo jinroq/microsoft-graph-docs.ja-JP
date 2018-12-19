@@ -1,12 +1,13 @@
 ---
 title: Microsoft Graph セキュリティ API の概要
 description: Microsoft Graph セキュリティ API を使用して Microsoft のセキュリティ製品、サービス、パートナーに接続することで、セキュリティ運用の効率化を図り、脅威の防止、検出、対処の各機能を向上させることができます。 Microsoft Graph セキュリティ API は、単一のプログラム インターフェイスで複数の Microsoft Graph セキュリティ プロバイダー (セキュリティ プロバイダーまたはプロバイダーとも呼ばれる) を接続できる中継サービス (ブローカー) です。 Microsoft Graph セキュリティ API に対する要求は、適用可能なすべてのセキュリティ プロバイダーにフェデレーションされます。 次の図に示すように、結果は集計され、要求元のアプリケーションに共通のスキーマで返されます。 詳細については、「Microsoft Graph セキュリティ API のデータ フロー」を参照してください。
-ms.openlocfilehash: b5e1fb3d60cfc55cb940a217aaba872175887297
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: Preetikr
+ms.openlocfilehash: 2c693643e1b3c9a132e5ba28bd911b18df25c95a
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27092377"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27303060"
 ---
 # <a name="microsoft-graph-security-api-overview"></a>Microsoft Graph セキュリティ API の概要
 
