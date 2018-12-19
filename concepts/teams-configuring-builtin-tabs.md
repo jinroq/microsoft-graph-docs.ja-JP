@@ -1,12 +1,13 @@
 ---
 title: Microsoft Teams の組み込みタブ タイプの構成
-description: 'Microsoft Graph API を使用して Microsoft Teams タブを作成または構成するには、 '
-ms.openlocfilehash: 2485e65ebac0c7201fe8b8210f8e4af9b9c8f164
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+description: Microsoft Graph API を使用して Microsoft Teams タブを作成または構成する
+author: nkramer
+ms.openlocfilehash: 05a7f719cdedad8ea9040721d9411e45529d3c09
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27092409"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27316388"
 ---
 # <a name="configuring-the-built-in-tab-types-in-microsoft-teams"></a>Microsoft Teams の組み込みタブ タイプの構成
 
@@ -15,7 +16,7 @@ Microsoft Graph API を使用して Microsoft Teams タブを[作成](/graph/api
 
 ## <a name="custom-tabs"></a>カスタム タブ
 
-Microsoft Graph を使用して、作成した[タブ プロバイダー](https://docs.microsoft.com/ja-JP/microsoftteams/platform/concepts/tabs/tabs-overview) と関連付けるタブを構成するには、アプリの[構成 UI が Microsoft Teams に提供する](https://docs.microsoft.com/ja-JP/javascript/api/@microsoft/teams-js/microsoftteams.settings.settings?view=msteams-client-js-latest) `entityId`、`contentUrl`、`removeUrl`、`websiteUrl` を識別し、同じ `entityId`、`contentUrl`、`removeUrl`、`websiteUrl` の値を Microsoft Graph に渡します。
+Microsoft Graph を使用して、作成した[タブ プロバイダー](https://docs.microsoft.com/ja-JP/microsoftteams/platform/concepts/tabs/tabs-overview) と関連付けるタブを構成するには、アプリの[構成 UI が Microsoft Teams に提供する](https://docs.microsoft.com/en-us/javascript/api/@microsoft/teams-js/microsoftteams.settings.settings?view=msteams-client-js-latest) `entityId`、`contentUrl`、`removeUrl`、`websiteUrl` を識別し、同じ `entityId`、`contentUrl`、`removeUrl`、`websiteUrl` の値を Microsoft Graph に渡します。
 
 `teamsAppId` は、[Microsoft Teams のアプリ マニフェスト スキーマ](https://docs.microsoft.com/ja-JP/microsoftteams/platform/resources/schema/manifest-schema)の `id` と同じです。
 
