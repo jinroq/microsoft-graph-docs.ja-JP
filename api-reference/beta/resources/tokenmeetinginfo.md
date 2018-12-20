@@ -1,12 +1,13 @@
 ---
 title: tokenMeetingInfo リソースの種類
 description: TokenMeetingInfo 型です。
-ms.openlocfilehash: ddaf9a0c36ce4a8a31c56e4db2e065ef186c4053
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: VinodRavichandran
+ms.openlocfilehash: 6fa66fef6f401db848a9ed3e92c5a1003a5294b6
+ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27067698"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "27380549"
 ---
 # <a name="tokenmeetinginfo-resource-type"></a>tokenMeetingInfo リソースの種類
 
@@ -18,7 +19,7 @@ TokenMeetingInfo 型です。
 
 | プロパティ                     | 型    | 説明                                                                    |
 | :--------------------------- | :------ | :----------------------------------------------------------------------------- |
-| allowConversationWithoutHost | ブール値 | 会話のホストから離れると、会話を続行できるかどうかを示します。 |
+| allowConversationWithoutHost | Boolean | 会話のホストから離れると、会話を続行できるかどうかを示します。 |
 | token                        | String  | 会議を結合またはアクティブにするトークンです。                                        |
 
 ## <a name="json-representation"></a>JSON 表記
@@ -39,7 +40,7 @@ TokenMeetingInfo 型です。
 }
 ```
 
-## <a name="example"></a>使用例
+## <a name="example"></a>例
 
 <!-- {
   "blockType": "example",

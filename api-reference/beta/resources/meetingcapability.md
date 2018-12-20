@@ -1,12 +1,13 @@
 ---
 title: meetingCapability リソースの種類
 description: 会議の機能が含まれています
-ms.openlocfilehash: 438193d08ab5542f07d4cbf61704520d81433e50
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: VinodRavichandran
+ms.openlocfilehash: 1a6f172922c0efbc9ad93e32141e364e2d0fc711
+ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27069750"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "27380248"
 ---
 # <a name="meetingcapability-resource-type"></a>meetingCapability リソースの種類
 
@@ -16,10 +17,11 @@ ms.locfileid: "27069750"
 
 ## <a name="properties"></a>プロパティ
 
-| プロパティ       | 型    | 説明|
-|:---------------|:--------|:----------|
-| allowAnonymousUsersToDialOut | ブール値 | ダイヤルアウトの匿名ユーザーが会議に出席できるかどうかを示します。 |
-| autoAdmittedUsers | String | 使用可能な値は、`everyoneInCompany`、`everyone` です。 |
+| プロパティ                          | 型    | 説明                                                        |
+|:----------------------------------|:--------|:-------------------------------------------------------------------|
+| allowAnonymousUsersToDialOut      | Boolean | ダイヤルアウトの匿名ユーザーが会議に出席できるかどうかを示します。 |
+| allowAnonymousUsersToStartMeeting | Boolean | 匿名ユーザーが会議を開始できるかどうかを示します。  |
+| autoAdmittedUsers                 | String  | 使用可能な値は、`everyoneInCompany`、`everyone` です。              |
 
 ## <a name="json-representation"></a>JSON 表記
 
@@ -35,6 +37,7 @@ ms.locfileid: "27069750"
 ```json
 {
   "allowAnonymousUsersToDialOut": true,
+  "allowAnonymousUsersToStartMeeting": true,
   "autoAdmittedUsers": "everyoneInCompany | everyone"
 }
 ```

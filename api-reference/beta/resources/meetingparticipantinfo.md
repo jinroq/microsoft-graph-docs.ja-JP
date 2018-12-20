@@ -1,16 +1,19 @@
 ---
 title: meetingParticipantInfo リソースの種類
-description: リソースの JSON 表記を次に示します。
-ms.openlocfilehash: 1d9c22924f8f05255b5e01bad4bbcd6ae5957ffe
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+description: 会議の参加者に関する情報です。
+author: VinodRavichandran
+ms.openlocfilehash: 2bbb410ea26640ec05d66b5beb0c4b4ea24a42bd
+ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27070142"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "27380199"
 ---
 # <a name="meetingparticipantinfo-resource-type"></a>meetingParticipantInfo リソースの種類
 
 > **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。
+
+会議の参加者に関する情報です。
 
 ## <a name="properties"></a>プロパティ
 

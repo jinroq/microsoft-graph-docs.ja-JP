@@ -2,12 +2,12 @@
 title: オーディオのルーティング グループを取得します。
 description: プロパティと audioRoutingGroup オブジェクトの関係を取得します。
 author: VinodRavichandran
-ms.openlocfilehash: e6aca0300287e502fd065d69db1ce4855a42b823
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+ms.openlocfilehash: 5f9a7771f31350dc30ed96e9eb81b40cc855b380
+ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27331424"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "27380430"
 ---
 # <a name="get-audio-routing-group"></a>オーディオのルーティング グループを取得します。
 
@@ -22,7 +22,7 @@ ms.locfileid: "27331424"
 |:---------------------------------------|:--------------------------------------------|
 | 委任 (職場または学校のアカウント)     | サポート対象外                               |
 | 委任 (個人用 Microsoft アカウント) | サポート対象外                               |
-| アプリケーション     | Calls.JoinGroupCalls.All、Calls.InitiateGroupCalls.All |
+| アプリケーション                            | Calls.JoinGroupCalls.All、Calls.InitiateGroupCalls.All |
 
 ## <a name="http-request"></a>HTTP 要求
 <!-- { "blockType": "ignored" } -->
@@ -32,7 +32,7 @@ GET /applications/{id}/calls/{id}/audioRoutingGroups/{id}
 ```
 
 ## <a name="optional-query-parameters"></a>オプションのクエリ パラメーター
-このメソッドは、応答をカスタマイズするための [OData クエリ パラメーター](https://developer.microsoft.com/graph/docs/concepts/query_parameters)をサポートします。
+このメソッドは、応答をカスタマイズするために[OData クエリ パラメーター](/graph/query-parameters)をサポートします。
 
 ## <a name="request-headers"></a>要求ヘッダー
 | 名前          | 説明               |
@@ -52,7 +52,7 @@ GET /applications/{id}/calls/{id}/audioRoutingGroups/{id}
 
 <!-- {
   "blockType": "request",
-  "name": "get_audioRoutingGroup"
+  "name": "get-audioRoutingGroup"
 }-->
 ```http
 GET https://graph.microsoft.com/beta/app/calls/{id}/audioRoutingGroups/{id}

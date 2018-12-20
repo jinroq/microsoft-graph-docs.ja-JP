@@ -2,12 +2,12 @@
 title: '呼び出す: リダイレクト'
 description: 着信呼び出しをリダイレクトします。
 author: VinodRavichandran
-ms.openlocfilehash: dd24c1b3841152f8bd088f89c95ff8786cefb47c
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+ms.openlocfilehash: 9fff752f07f66cf3c236982495897234c9a1c38d
+ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27309101"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "27380220"
 ---
 # <a name="call-redirect"></a>呼び出す: リダイレクト
 
@@ -39,13 +39,13 @@ POST /applications/{id}/calls/{id}/redirect
 ## <a name="request-body"></a>要求本文
 要求本文で、次のパラメーターを含む JSON オブジェクトを指定します。
 
-| パラメーター      | 種類    |説明|
+| パラメーター      | 型    |説明|
 |:---------------|:--------|:----------|
 |ターゲット|[invitationParticipantInfo](../resources/invitationparticipantinfo.md)コレクション|リダイレクト操作のターゲットの参加者です。|
 |targetDisposition|String|使用可能な値は次のとおりです。`default`|
 |timeout|Int32|リダイレクト処理を秒単位でタイムアウトします。|
-|maskCallee|ブール型|呼び出し先をマスクするかどうかを示します。|
-|maskCaller|ブール型|呼び出し元をマスクするかどうかを示します。|
+|maskCallee|Boolean|呼び出し先をマスクするかどうかを示します。|
+|maskCaller|Boolean|呼び出し元をマスクするかどうかを示します。|
 
 ## <a name="response"></a>応答
 返します`202 Accepted`応答コード。
@@ -59,7 +59,7 @@ POST /applications/{id}/calls/{id}/redirect
 
 <!-- {
   "blockType": "request",
-  "name": "call_redirect"
+  "name": "call-redirect"
 }-->
 ```http
 POST https://graph.microsoft.com/beta/app/calls/{id}/redirect

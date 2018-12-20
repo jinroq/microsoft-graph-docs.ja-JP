@@ -1,12 +1,13 @@
 ---
 title: オーディオのルーティング グループを一覧表示
 description: '**AudioRoutingGroup**オブジェクトのリストを取得します。'
-ms.openlocfilehash: d188d8478b8bf57f45f0fa15eed9973cafba7b2f
-ms.sourcegitcommit: 4a46cfd112c8089fc07e4e5ccdccaf415a3a0e7f
+author: VinodRavichandran
+ms.openlocfilehash: 7ed00bbd3d000e71afe55a5e663408139174640b
+ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "27156005"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "27380136"
 ---
 # <a name="list-audio-routing-groups"></a>オーディオのルーティング グループを一覧表示
 
@@ -31,7 +32,7 @@ GET /applications/{id}/calls/{id}/audioRoutingGroups
 ```
 
 ## <a name="optional-query-parameters"></a>オプションのクエリ パラメーター
-このメソッドは、応答をカスタマイズするための [OData クエリ パラメーター](https://developer.microsoft.com/graph/docs/concepts/query_parameters)をサポートします。
+このメソッドは、応答をカスタマイズするために[OData クエリ パラメーター](/graph/query-parameters)をサポートします。
 
 ## <a name="request-headers"></a>要求ヘッダー
 | 名前          | 説明               |
@@ -51,7 +52,7 @@ GET /applications/{id}/calls/{id}/audioRoutingGroups
 
 <!-- {
   "blockType": "request",
-  "name": "get_audioRoutingGroups"
+  "name": "get-audioRoutingGroups"
 }-->
 ```http
 GET https://graph.microsoft.com/beta/app/calls/{id}/audioRoutingGroups

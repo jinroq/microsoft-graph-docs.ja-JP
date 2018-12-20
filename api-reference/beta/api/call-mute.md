@@ -2,12 +2,12 @@
 title: '呼び出す: ミュート'
 description: 自体を消すには、アプリケーションを使用できます。
 author: VinodRavichandran
-ms.openlocfilehash: 54de4aa598500d1effa1c66c74e5809ad3570959
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+ms.openlocfilehash: dc1baddb65521f4874f108dd28c7e9ec7b778a25
+ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27341588"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "27380170"
 ---
 # <a name="call-mute"></a>呼び出す: ミュート
 
@@ -39,7 +39,7 @@ POST /applications/{id}/calls/{id}/mute
 ## <a name="request-body"></a>要求本文
 要求本文で、次のパラメーターを含む JSON オブジェクトを指定します。
 
-| パラメーター      | 種類    |説明|
+| パラメーター      | 型    |説明|
 |:---------------|:--------|:----------|
 |clientContext|String|クライアントのコンテキスト。|
 
@@ -54,7 +54,7 @@ POST /applications/{id}/calls/{id}/mute
 
 <!-- {
   "blockType": "request",
-  "name": "call_mute"
+  "name": "call-mute"
 }-->
 ```http
 POST https://graph.microsoft.com/beta/app/calls/{id}/mute

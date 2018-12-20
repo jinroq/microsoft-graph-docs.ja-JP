@@ -2,12 +2,12 @@
 title: '呼び出す: 元に戻す'
 description: 着信呼び出しを拒否します。
 author: VinodRavichandran
-ms.openlocfilehash: 2516ead8d9fa158192a0d9c7c02ac8adb44f764a
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+ms.openlocfilehash: 8354593d32dce9a2b8d917db2dd6702d692a2b3f
+ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27343457"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "27380360"
 ---
 # <a name="call-reject"></a>呼び出す: 元に戻す
 
@@ -39,7 +39,7 @@ POST /applications/{id}/calls/{id}/reject
 ## <a name="request-body"></a>要求本文
 要求本文で、次のパラメーターを含む JSON オブジェクトを指定します。
 
-| パラメーター      | 種類    |説明|
+| パラメーター      | 型    |説明|
 |:---------------|:--------|:----------|
 |理由|String|却下の理由です。|
 
@@ -111,7 +111,7 @@ Content-Type: application/json
 
 <!-- {
   "blockType": "request",
-  "name": "call_reject"
+  "name": "call-reject"
 }-->
 ```http
 POST https://graph.microsoft.com/beta/app/calls/{id}/reject

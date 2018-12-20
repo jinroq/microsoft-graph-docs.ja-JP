@@ -1,12 +1,13 @@
 ---
 title: commsOperation リソースの種類
 description: 特定の実行時間の長い操作のステータス。
-ms.openlocfilehash: d9adf240bff566dc0af5e369da24c7f8658a6c1c
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: VinodRavichandran
+ms.openlocfilehash: 09d3f81e8f6307850d94cfab43f98426dae47a5f
+ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27071187"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "27380353"
 ---
 # <a name="commsoperation-resource-type"></a>commsOperation リソースの種類
 
@@ -25,7 +26,7 @@ ms.locfileid: "27071187"
 | createdDateTime    | DateTimeOffset              | 操作の開始時刻です。                                                |
 | id                 | String                      | 操作 ID です。読み取り専用です。 サーバーを生成します。                                  |
 | lastActionDateTime | DateTimeOffset              | 操作の最後の操作の時間です。                                   |
-| resultInfo         | [resultInfo](resultinfo.md) | 結果の情報です。 読み取り専用。 サーバーを生成します。                            |
+| resultInfo         | [resultInfo](resultinfo.md) | 結果の情報です。 読み取り専用です。 サーバーを生成します。                            |
 | status             | String                      | 使用可能な値: `notStarted`、`running`、`completed`、`failed`。 読み取り専用です。 |
 
 ## <a name="relationships"></a>リレーションシップ
@@ -53,7 +54,7 @@ ms.locfileid: "27071187"
 }
 ```
 
-## <a name="example"></a>使用例
+## <a name="example"></a>例
 
 <!-- {
   "blockType": "example",

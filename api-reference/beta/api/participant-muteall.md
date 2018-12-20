@@ -2,12 +2,12 @@
 title: '参加者: muteAll'
 description: 呼び出しのすべての参加者をミュートします。
 author: VinodRavichandran
-ms.openlocfilehash: 26369f3dc0c6502950c46ed1f9befe80ea1a320a
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+ms.openlocfilehash: fb395fd5a49a0a13616d32de9645f3899e4641d2
+ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27310179"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "27380500"
 ---
 # <a name="participant-muteall"></a>参加者: muteAll
 
@@ -39,7 +39,7 @@ POST /applications/{id}/calls/{id}/participants/muteAll
 ## <a name="request-body"></a>要求本文
 要求本文で、次のパラメーターを含む JSON オブジェクトを指定します。
 
-| パラメーター      | 種類    |説明|
+| パラメーター      | 型    |説明|
 |:---------------|:--------|:----------|
 |participants|String コレクション|参加者をミュートします。|
 |clientContext|String|クライアントのコンテキスト。|
@@ -54,7 +54,7 @@ POST /applications/{id}/calls/{id}/participants/muteAll
 次の例は要求を示しています。
 <!-- {
   "blockType": "request",
-  "name": "participant_muteAll"
+  "name": "participant-muteAll"
 }-->
 ```http
 POST https://graph.microsoft.com/beta/app/calls/{id}/participants/muteAll

@@ -1,12 +1,13 @@
 ---
 title: 参加者のリソースの種類
 description: 参加者のタイプです。
-ms.openlocfilehash: dcb456df0c7269bab91dcf593e674307db5358b8
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: VinodRavichandran
+ms.openlocfilehash: 3fcc5fc5d95ded3b5424370cd180fde38c1a65be
+ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27070976"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "27380395"
 ---
 # <a name="participant-resource-type"></a>参加者のリソースの種類
 
@@ -62,7 +63,7 @@ ms.locfileid: "27070976"
 }
 ```
 
-## <a name="example"></a>使用例
+## <a name="example"></a>例
 
 <!-- {
   "blockType": "example",

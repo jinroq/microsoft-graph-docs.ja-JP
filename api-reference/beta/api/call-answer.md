@@ -2,12 +2,12 @@
 title: '呼び出す: 回答'
 description: 着信呼び出しに応答します。
 author: VinodRavichandran
-ms.openlocfilehash: df864a6a9043853e7c9e5b1f5546c4ae502ec4d6
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+ms.openlocfilehash: c7de038e2323ab844590c884e15a639a3839dd86
+ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27343205"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "27380514"
 ---
 # <a name="call-answer"></a>呼び出す: 回答
 
@@ -39,7 +39,7 @@ POST /applications/{id}/calls/{id}/answer
 ## <a name="request-body"></a>要求本文
 要求本文で、次のパラメーターを含む JSON オブジェクトを指定します。
 
-| パラメーター        | 種類                                     |説明                                                                                                                                    |
+| パラメーター        | 型                                     |説明                                                                                                                                    |
 |:-----------------|:-----------------------------------------|:----------------------------------------------------------------------------------------------------------------------------------------------|
 |callbackUri       |String                                    |コールバックまたはサブスクリプションの ID をコールバックが配信されます。 (必須)                                                               |
 |acceptedModalities|String コレクション                         |一覧には、様相がそのまま使用します。 使用可能な値: `unknown`、 `audio`、 `video`、 `screenSharing`、 `videoBasedScreenSharing`、 `data`。 (必須) |
@@ -56,7 +56,7 @@ POST /applications/{id}/calls/{id}/answer
 
 <!-- {
   "blockType": "request",
-  "name": "call_answer"
+  "name": "call-answer"
 }-->
 ```http
 POST https://graph.microsoft.com/beta/app/calls/{id}/answer
@@ -167,7 +167,7 @@ Content-Type: application/json
 
 <!-- {
   "blockType": "ignored",
-  "name": "call_answer"
+  "name": "call-answer"
 }-->
 ```json
 {
@@ -320,7 +320,7 @@ Content-Type: application/json
 
 <!-- {
   "blockType": "ignored",
-  "name": "call_answer"
+  "name": "call-answer"
 }-->
 ```json
 {

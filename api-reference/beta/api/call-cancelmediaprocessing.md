@@ -2,12 +2,12 @@
 title: '電話: cancelMediaProcessing'
 description: キャンセル メディアのすべての処理中、PlayPrompt、またはレコードの操作。
 author: VinodRavichandran
-ms.openlocfilehash: 9d7432670030ed1505c9be95a801e6c453087df3
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+ms.openlocfilehash: 5e95e4a1b56d7cea806e1a3d588403d81c200923
+ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27328274"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "27380556"
 ---
 # <a name="call-cancelmediaprocessing"></a>電話: cancelMediaProcessing
 
@@ -39,9 +39,9 @@ POST /applications/{id}/calls/{id}/cancelMediaProcessing
 ## <a name="request-body"></a>要求本文
 要求本文で、次のパラメーターを含む JSON オブジェクトを指定します。
 
-| パラメーター      | 種類    | 説明                                                    |
+| パラメーター      | 型    | 説明                                                    |
 |:---------------|:--------|:---------------------------------------------------------------|
-| all            | ブール型 | 操作または現在のすべてを停止するかどうかを示すフラグです。 |
+| all            | Boolean | 操作または現在のすべてを停止するかどうかを示すフラグです。 |
 | clientContext  | String  | クライアントのコンテキスト。                                            |
 
 ## <a name="response"></a>応答
@@ -55,7 +55,7 @@ POST /applications/{id}/calls/{id}/cancelMediaProcessing
 
 <!-- {
   "blockType": "request",
-  "name": "call_cancelMediaProcessing"
+  "name": "call-cancelMediaProcessing"
 }-->
 ```http
 POST https://graph.microsoft.com/beta/app/calls/{id}/cancelMediaProcessing

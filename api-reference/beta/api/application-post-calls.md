@@ -1,13 +1,13 @@
 ---
 title: 呼び出しを作成します。
 description: 新しい呼び出しを作成します。
-author: lleonard-msft
-ms.openlocfilehash: b083c9a40fd1376370f7321111c6fbf89d6ee432
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+author: VinodRavichandran
+ms.openlocfilehash: a2d34ccf3d77d165b8a92114353d5f6cb8bed674
+ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27348770"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "27380388"
 ---
 # <a name="create-call"></a>呼び出しを作成します。
 
@@ -57,7 +57,7 @@ POST /applications/{id}/calls
 
 <!-- {
   "blockType": "request",
-  "name": "create_call_from_application"
+  "name": "create-call-from-application"
 }-->
 ```http
 POST https://graph.microsoft.com/beta/app/calls
@@ -115,6 +115,7 @@ Content-Type: application/json
 ```http
 HTTP/1.1 201 Created
 Content-Type: application/json
+
 
 {
   "id": "57DAB8B1894C409AB240BD8BEAE78896",

@@ -1,16 +1,19 @@
 ---
 title: リソースの種類を確認します。
-description: なし
-ms.openlocfilehash: 74991deb977d04fb92b9f4e1fedc05dacefafeb8
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+description: 基本型の操作を確認します。
+author: VinodRavichandran
+ms.openlocfilehash: 27018cf841641ac3f7fc2eba6f6304d911c3a7cd
+ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27074009"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "27380167"
 ---
 # <a name="prompt-resource-type"></a>リソースの種類を確認します。
 
 > **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。
+
+基本型の操作を確認します。
 
 ## <a name="properties"></a>プロパティ
 

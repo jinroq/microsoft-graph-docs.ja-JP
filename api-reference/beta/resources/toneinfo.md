@@ -1,16 +1,19 @@
 ---
 title: toneInfo リソースの種類
-description: リソースの JSON 表記を次に示します。
-ms.openlocfilehash: b4ed9667c2e2156f52703c6fa15f4937ead5cef4
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+description: 1 つの DTMF イベントです。
+author: VinodRavichandran
+ms.openlocfilehash: 0ae78a9a4721c88767ebc460a99c7cdea30f44c5
+ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27073773"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "27380339"
 ---
 # <a name="toneinfo-resource-type"></a>toneInfo リソースの種類
 
 > **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。
+
+1 つの DTMF イベントです。
 
 ## <a name="properties"></a>プロパティ
 

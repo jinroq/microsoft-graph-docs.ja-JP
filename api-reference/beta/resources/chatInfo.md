@@ -1,12 +1,13 @@
 ---
 title: chatInfo リソースの種類
 description: マイクロソフトのチーム内のメッセージについて説明します。
-ms.openlocfilehash: d7e90cf2cdf5180f6483675d919b4e635a1cd5fa
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: VinodRavichandran
+ms.openlocfilehash: 45af1a7e178286c77ed4bf90528eb602fd48a6bb
+ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27066478"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "27380416"
 ---
 # <a name="chatinfo-resource-type"></a>chatInfo リソースの種類
 

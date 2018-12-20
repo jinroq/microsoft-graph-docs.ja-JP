@@ -2,12 +2,12 @@
 title: '電話: changeScreenSharingRole'
 description: 起動し、画面の呼び出しでの共有を停止します。 この API を使用して、通話や会議の参加者と画面の内容を共有するアプリケーションを許可します。
 author: VinodRavichandran
-ms.openlocfilehash: 4b4c7e0afa452bef414dd466086463aa16c9d9cf
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+ms.openlocfilehash: a0f745fa6af1dbf97c19e95a70ca37350dacc408
+ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27328365"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "27380463"
 ---
 # <a name="call-changescreensharingrole"></a>電話: changeScreenSharingRole
 
@@ -39,7 +39,7 @@ POST /applications/{id}/calls/{id}/changeScreenSharingRole
 ## <a name="request-body"></a>要求本文
 要求本文で、次のパラメーターを含む JSON オブジェクトを指定します。
 
-| パラメーター      | 種類    |説明|
+| パラメーター      | 型    |説明|
 |:---------------|:--------|:----------|
 |role|String|使用可能な値: 'ビューアー'、'共有'|
 
@@ -54,7 +54,7 @@ POST /applications/{id}/calls/{id}/changeScreenSharingRole
 
 <!-- {
   "blockType": "request",
-  "name": "call_changeScreenSharingRole"
+  "name": "call-changeScreenSharingRole"
 }-->
 ```http
 POST https://graph.microsoft.com/beta/app/calls/{id}/changeScreenSharingRole

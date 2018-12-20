@@ -1,12 +1,13 @@
 ---
 title: Get オンライン会議
 description: プロパティと**onlineMeeting**オブジェクトの関係を取得します。
-ms.openlocfilehash: 117b1f76212be0ece00d0e1c82f2106faf1fd275
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: VinodRavichandran
+ms.openlocfilehash: bfae4273aba0583e6c10a7e10f9c67865326bacf
+ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27070393"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "27380381"
 ---
 # <a name="get-online-meeting"></a>Get オンライン会議
 
@@ -35,7 +36,7 @@ GET /applications/{id}/onlineMeetings/{id}
 ```
 
 ## <a name="optional-query-parameters"></a>オプションのクエリ パラメーター
-このメソッドは、応答をカスタマイズするための [OData クエリ パラメーター](https://developer.microsoft.com/graph/docs/concepts/query_parameters)をサポートします。
+このメソッドは、応答をカスタマイズするために[OData クエリ パラメーター](/graph/query-parameters)をサポートします。
 
 ## <a name="request-headers"></a>要求ヘッダー
 | 名前          | 説明               |
@@ -55,7 +56,7 @@ GET /applications/{id}/onlineMeetings/{id}
 
 <!-- {
   "blockType": "request",
-  "name": "get_onlineMeeting"
+  "name": "get-onlineMeeting"
 }-->
 ```http
 GET https://graph.microsoft.com/beta/app/onlineMeetings/{id}

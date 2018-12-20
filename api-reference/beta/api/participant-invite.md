@@ -2,12 +2,12 @@
 title: '参加者: 招待'
 description: アクティブな通話に参加者を招待します。
 author: VinodRavichandran
-ms.openlocfilehash: 8c09f3981c6af90680cd9e42d00184e28bc65d55
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+ms.openlocfilehash: 732bd115fcf473825e1c1e24e10fb2edd6f04f04
+ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27335281"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "27380528"
 ---
 # <a name="participant-invite"></a>参加者: 招待
 
@@ -39,7 +39,7 @@ POST /applications/{id}/calls/{id}/participants/invite
 ## <a name="request-body"></a>要求本文
 要求本文で、次のパラメーターを含む JSON オブジェクトを指定します。
 
-| パラメーター      | 種類    |説明|
+| パラメーター      | 型    |説明|
 |:---------------|:--------|:----------|
 |participants|[invitationParticipantInfo](../resources/invitationparticipantinfo.md)コレクション| 招待する参加者。|
 |clientContext|String|クライアントのコンテキスト。|
@@ -54,7 +54,7 @@ POST /applications/{id}/calls/{id}/participants/invite
 次の例は要求を示しています。
 <!-- {
   "blockType": "request",
-  "name": "participant_invite"
+  "name": "participant-invite"
 }-->
 ```http
 POST https://graph.microsoft.com/beta/app/calls/{id}/participants/invite

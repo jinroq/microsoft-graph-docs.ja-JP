@@ -1,12 +1,13 @@
 ---
 title: serviceHostedMediaConfig リソースの種類
 description: ServiceHostedMediaConfig 型です。
-ms.openlocfilehash: 111988574b1f16a9e53bf9db44e44da12e7bbab5
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: VinodRavichandran
+ms.openlocfilehash: 544c1d3bce934064092e0f9c74b888686e49d426
+ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27069804"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "27380318"
 ---
 # <a name="servicehostedmediaconfig-resource-type"></a>serviceHostedMediaConfig リソースの種類
 
@@ -19,7 +20,7 @@ ServiceHostedMediaConfig 型です。
 | プロパティ                    | 型                                                        | 説明                                       |
 | :-------------------------- | :---------------------------------------------------------- | :-------------------------------------------------|
 | preFetchMedia               | [mediaInfo](mediainfo.md)コレクション                        | 事前に取得するのにはメディアの一覧です。                   |
-| removeFromDefaultAudioGroup | ブール値                                                     | オーディオの既定のグループから、自己の参加者を削除します。 |
+| removeFromDefaultAudioGroup | Boolean                                                     | オーディオの既定のグループから、自己の参加者を削除します。 |
 
 ## <a name="json-representation"></a>JSON 表記
 
@@ -39,7 +40,7 @@ ServiceHostedMediaConfig 型です。
 }
 ```
 
-## <a name="example"></a>使用例
+## <a name="example"></a>例
 
 <!-- {
   "blockType": "example",

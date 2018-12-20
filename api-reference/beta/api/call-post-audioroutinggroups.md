@@ -1,12 +1,13 @@
 ---
 title: オーディオのルーティング グループを作成します。
 description: 新しい**audioRoutingGroup**を作成します。
-ms.openlocfilehash: 0dd506f3cf02e59d5a34c7184f4e596f6ff9e1fd
-ms.sourcegitcommit: 4a46cfd112c8089fc07e4e5ccdccaf415a3a0e7f
+author: VinodRavichandran
+ms.openlocfilehash: 96279e1ee3eb9050c74b2696917af1bf42c4ff1c
+ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "27156041"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "27380535"
 ---
 # <a name="create-audio-routing-group"></a>オーディオのルーティング グループを作成します。
 
@@ -21,7 +22,7 @@ ms.locfileid: "27156041"
 |:---------------------------------------|:--------------------------------------------|
 | 委任 (職場または学校のアカウント)     | サポートされていません。                               |
 | 委任 (個人用 Microsoft アカウント) | サポートされていません。                               |
-| アプリケーション     | Calls.JoinGroupCalls.All、Calls.InitiateGroupCalls.All |
+| アプリケーション                            | Calls.JoinGroupCalls.All、Calls.InitiateGroupCalls.All |
 
 ## <a name="http-request"></a>HTTP 要求
 <!-- { "blockType": "ignored" } -->
@@ -50,7 +51,7 @@ POST /applications/{id}/calls/{id}/audioRoutingGroups
 
 <!-- {
   "blockType": "request",
-  "name": "create_audioRoutingGroup_from_call"
+  "name": "create-audioRoutingGroup-from-call"
 }-->
 ```http
 POST https://graph.microsoft.com/beta/app/calls/{id}/audioRoutingGroups
@@ -109,7 +110,7 @@ Content-Length: 233
 
 <!-- {
   "blockType": "example",
-  "name": "create_audioRoutingGroup_from_call",
+  "name": "create-audioRoutingGroup-from-call",
   "@odata.type": "microsoft.graph.audioRoutingGroup"
 }-->
 

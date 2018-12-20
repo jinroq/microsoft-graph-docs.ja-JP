@@ -2,12 +2,12 @@
 title: '呼び出す: 転送'
 description: アクティブな呼び出しを転送します。
 author: VinodRavichandran
-ms.openlocfilehash: 1dc80e342b873c8ebcdb2051107836201e13fda4
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+ms.openlocfilehash: 71d250453051c705dcc0646a8e4ad298253d0ee6
+ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27362483"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "27380507"
 ---
 # <a name="call-transfer"></a>呼び出す: 転送
 
@@ -39,11 +39,9 @@ POST /applications/{id}/calls/{id}/transfer
 ## <a name="request-body"></a>要求本文
 要求本文で、次のパラメーターを含む JSON オブジェクトを指定します。
 
-| パラメーター      | 種類    |説明|
+| パラメーター      | 型    |説明|
 |:---------------|:--------|:----------|
 |transferTarget|[invitationParticipantInfo](../resources/invitationparticipantinfo.md)|転送の対象である構成要素です。|
-|ターゲット|[identitySet](../resources/identityset.md)||
-|replacesCallId|String|転送中の参加者の元の呼び出しの id。|
 |clientContext|String|クライアントのコンテキスト。|
 
 ## <a name="response"></a>応答
@@ -60,7 +58,7 @@ POST /applications/{id}/calls/{id}/transfer
 
 <!-- {
   "blockType": "request",
-  "name": "call_transfer"
+  "name": "call-transfer"
 }-->
 ```http
 POST https://graph.microsoft.com/beta/app/calls/{id}/transfer
@@ -207,7 +205,7 @@ Content-Type: application/json
 ```
 <!-- {
   "blockType": "ignored",
-  "@odata.type": "call_transfer"
+  "@odata.type": "call-transfer"
 }-->
 ```json
 {

@@ -1,16 +1,19 @@
 ---
 title: recordingInfo リソースの種類
-description: リソースの JSON 表記を次に示します。
-ms.openlocfilehash: 92af3fcb52ab08f3f25a2c16cc720a4053a9bdfa
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+description: 参加者の情報を記録します。
+author: VinodRavichandran
+ms.openlocfilehash: 709edcc6d473ce610cbba7f628e4ebc5057b779c
+ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27069798"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "27380304"
 ---
 # <a name="recordinginfo-resource-type"></a>recordingInfo リソースの種類
 
 > **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。
+
+参加者の情報を記録します。
 
 ## <a name="properties"></a>プロパティ
 

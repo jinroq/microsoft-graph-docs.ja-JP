@@ -1,12 +1,13 @@
 ---
 title: appHostedMediaConfig リソースの種類
 description: メディア スタックは、アプリケーションによってホストされています。
-ms.openlocfilehash: 39080a8fdb5688ed9f1a5a8daba43266a0e7003e
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: VinodRavichandran
+ms.openlocfilehash: b96d6ff836ab36e5561c9ba3958123178e2fbde9
+ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27067773"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "27380129"
 ---
 # <a name="apphostedmediaconfig-resource-type"></a>appHostedMediaConfig リソースの種類
 
@@ -19,7 +20,7 @@ ms.locfileid: "27067773"
 | プロパティ                          | 型    | 説明                                                     |
 | :-------------------------------- | :------ | :---------------------------------------------------------------|
 | blob                              | String  | スマート メディア エージェントによって生成されたメディア構成の blob です。    |
-| removeFromDefaultAudioGroup       | ブール値 | オーディオの既定のグループからのオーディオを削除します。                       |
+| removeFromDefaultAudioGroup       | Boolean | オーディオの既定のグループからのオーディオを削除します。                       |
 
 ## <a name="json-representation"></a>JSON 表記
 

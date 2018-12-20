@@ -2,12 +2,12 @@
 title: 参加者の一覧
 description: 呼び出し内の構成要素のオブジェクトの一覧を取得します。
 author: VinodRavichandran
-ms.openlocfilehash: 0ffb48a862f7c0ba547521eb9e0e96f3c1d38dff
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+ms.openlocfilehash: c22e276f7b7bb1ddd0a082bd54f0b5b8d93226c1
+ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27339120"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "27380444"
 ---
 # <a name="list-participants"></a>参加者の一覧
 
@@ -32,7 +32,7 @@ GET /applications/{id}/calls/{id}/participants
 ```
 
 ## <a name="optional-query-parameters"></a>オプションのクエリ パラメーター
-このメソッドは、応答をカスタマイズするための [OData クエリ パラメーター](https://developer.microsoft.com/graph/docs/concepts/query_parameters)をサポートします。
+このメソッドは、応答をカスタマイズするために[OData クエリ パラメーター](/graph/query-parameters)をサポートします。
 
 ## <a name="request-headers"></a>要求ヘッダー
 | 名前          | 説明               |
@@ -54,7 +54,7 @@ GET /applications/{id}/calls/{id}/participants
 
 <!-- {
   "blockType": "request",
-  "name": "get_participants"
+  "name": "get-participants"
 }-->
 ```http
 GET https://graph.microsoft.com/beta/app/calls/{id}/participants

@@ -2,12 +2,12 @@
 title: 呼び出しを取得します。
 description: プロパティと、呼び出しオブジェクトの関係を取得します。
 author: VinodRavichandran
-ms.openlocfilehash: f2e3ee4b18dadfaeddd4df89745b469648644a36
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+ms.openlocfilehash: df97b69f87a1562e56a96d84de1af740ab0aff65
+ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27316549"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "27380325"
 ---
 # <a name="get-call"></a>呼び出しを取得します。
 
@@ -32,7 +32,7 @@ GET /applications/{id}/calls/{id}
 ```
 
 ## <a name="optional-query-parameters"></a>オプションのクエリ パラメーター
-このメソッドは、応答をカスタマイズするための [OData クエリ パラメーター](https://developer.microsoft.com/graph/docs/concepts/query_parameters)をサポートします。
+このメソッドは、応答をカスタマイズするために[OData クエリ パラメーター](/graph/query-parameters)をサポートします。
 
 ## <a name="request-headers"></a>要求ヘッダー
 | 名前          | 説明               |
@@ -52,7 +52,7 @@ GET /applications/{id}/calls/{id}
 
 <!-- {
   "blockType": "request",
-  "name": "get_call"
+  "name": "get-call"
 }-->
 ```http
 GET https://graph.microsoft.com/beta/app/calls/{id}
@@ -118,6 +118,7 @@ Content-Length: 2821
   },
   "meetingCapability": {
     "allowAnonymousUsersToDialOut": true,
+    "allowAnonymousUsersToStartMeeting": true,
     "autoAdmittedUsers": "everyoneInCompany"
   },
   "meetingInfo": {

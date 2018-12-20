@@ -1,12 +1,13 @@
 ---
 title: mediaStream リソースの種類
 description: MediaStream 型です。
-ms.openlocfilehash: 28eb98a3ab1be67c60c6ebd35deb7618f1618be3
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: VinodRavichandran
+ms.openlocfilehash: f870611700289f0254272b78e18e344d02dd123e
+ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27074058"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "27380297"
 ---
 # <a name="mediastream-resource-type"></a>mediaStream リソースの種類
 
@@ -21,7 +22,7 @@ MediaStream 型です。
 | 方向   | String  | 方向です。 使用可能な値は、 `inactive`、 `sendOnly`、 `receiveOnly`、 `sendReceive`。                  |
 | label       | String  | メディア ストリームのラベルです。                                                                                       |
 | メディアの種類   | String  | メディアは次のとおり入力します。 使用可能な値は、 `unknown`、 `audio`、 `video`、 `videoBasedScreenSharing`、 `data`。        |
-| serverMuted | ブール値 | サーバによってメディアがミュートされている場合。                                                                          |
+| serverMuted | Boolean | サーバによってメディアがミュートされている場合。                                                                          |
 | sourceId    | String  | ソースの id。                                                                                                |
 
 ## <a name="json-representation"></a>JSON 表記
@@ -45,7 +46,7 @@ MediaStream 型です。
 }
 ```
 
-## <a name="example"></a>使用例
+## <a name="example"></a>例
 
 <!-- {
   "blockType": "example",

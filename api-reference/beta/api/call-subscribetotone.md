@@ -1,13 +1,13 @@
 ---
 title: '電話: subscribeToTone'
-description: " 電話です。"
+description: (デュアル トーン多重周波数信号) DTMF を購読します。 これにより、ユーザーは、'プッシュホン' 電話のキーを押したときに通知することができます。
 author: VinodRavichandran
-ms.openlocfilehash: 41c72cdeeb1017313f9f64c4bd268a2184229984
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+ms.openlocfilehash: 82f7632736dc187fae1313224a6cb6f4807e0dd1
+ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27328302"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "27380437"
 ---
 # <a name="call-subscribetotone"></a>電話: subscribeToTone
 
@@ -39,7 +39,7 @@ POST /applications/{id}/calls/{id}/subscribeToTone
 ## <a name="request-body"></a>要求本文
 要求本文で、次のパラメーターを含む JSON オブジェクトを指定します。
 
-| パラメーター      | 種類    | 説明 |
+| パラメーター      | 型    | 説明 |
 |:---------------|:--------|:------------|
 | clientContext  | String  | クライアントのコンテキスト。 |
 
@@ -54,7 +54,7 @@ POST /applications/{id}/calls/{id}/subscribeToTone
 
 <!-- {
   "blockType": "request",
-  "name": "call_subscribeToTone"
+  "name": "call-subscribeToTone"
 }-->
 ```http
 POST https://graph.microsoft.com/beta/app/calls/{id}/subscribeToTone

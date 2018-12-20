@@ -1,22 +1,25 @@
 ---
 title: meetingInfo リソースの種類
-description: リソースの JSON 表記を次に示します。
-ms.openlocfilehash: c89b96be24211c9f9cce84c905a0b2857a92cd5c
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+description: 会議の情報を作成または、ミーティングに参加するために指定します。
+author: VinodRavichandran
+ms.openlocfilehash: f8039f05a2f25e254f7aefd740055babc1598dc1
+ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27070534"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "27380311"
 ---
 # <a name="meetinginfo-resource-type"></a>meetingInfo リソースの種類
 
 > **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。
 
+会議の情報を作成または、ミーティングに参加するために指定します。
+
 ## <a name="properties"></a>プロパティ
 
 | プロパティ       | 型    | 説明|
 |:---------------|:--------|:----------|
-| allowConversationWithoutHost | ブール値 |  |
+| allowConversationWithoutHost | Boolean |  |
 
 ## <a name="json-representation"></a>JSON 表記
 

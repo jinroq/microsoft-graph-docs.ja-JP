@@ -1,12 +1,13 @@
 ---
 title: onlineMeeting リソースの種類
 description: 結合 URL、出席者リスト、説明など、会議に関する情報をキャプチャします。
-ms.openlocfilehash: 73e45f7f2c04df469f2c2fb0faf1c8a0f8680a64
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: VinodRavichandran
+ms.openlocfilehash: 3a2b26ac212bd7a77428dab9f5618db8165de65b
+ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27067419"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "27380479"
 ---
 # <a name="onlinemeeting-resource-type"></a>onlineMeeting リソースの種類
 
@@ -30,10 +31,10 @@ ms.locfileid: "27067419"
 | chatInfo                  | [chatInfo](chatinfo.md)                                | この会議に関連付けられているチャット。 |
 | creationDateTime          | DateTime                                               | ミーティングが作成された時刻。 読み取り専用です。
 | endDateTime               | DateTime                                               | 会議の終了時間です。 |
-| entryExitAnnouncement     | ブール値                                                | オンライン会議の出席のお知らせ状態です。 出勤のお知らせを有効にすると、オンライン会議、発表 participantswho 結合の名前、会議のオーディオを使用します。 |
+| entryExitAnnouncement     | Boolean                                                | オンライン会議の出席のお知らせ状態です。 出勤のお知らせを有効にすると、オンライン会議、発表 participantswho 結合の名前、会議のオーディオを使用します。 |
 | expirationDateTime        | DateTime                                               | 絶対の世界協定時刻 (UTC) の日付と時刻は、オンライン会議を削除できます。 曜日と時間は、1 年前に、および現在の日付と、サーバー上の時刻の後 10 年間する必要があります。 |
-| id                        | String                                                 | オンライン会議に関連付けられている ID です。 HTTP の GET 要求では ID として使用 読み取り専用。 サーバーを生成します。 |
-| isCancelled               | ブール値                                                | かどうか、会議はキャンセルされました。 |
+| id                        | String                                                 | オンライン会議に関連付けられている ID です。 HTTP の GET 要求では ID として使用 読み取り専用です。 サーバーを生成します。 |
+| isCancelled               | Boolean                                                | かどうか、会議はキャンセルされました。 |
 | joinUrl                   | String                                                 | Web サイトからオンライン会議を結合するときに使用される URL です。 |
 | meetingType               | String                                                 | 使用可能な値: `meetNow`、 `scheduled`、 `recurring`、`broadcast` |
 | participants              | [meetingParticipants](meetingparticipants.md)          | 参加者がオンライン会議に関連付けられています。  これには、開催者と出席者が含まれます。 |

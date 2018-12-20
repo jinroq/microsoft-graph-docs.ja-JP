@@ -2,12 +2,12 @@
 title: '参加者: ミュート'
 description: 呼び出しで特定の参加者をミュートします。
 author: VinodRavichandran
-ms.openlocfilehash: ea84b2944b9a9dd75a72f05f6fa5c4327068e271
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+ms.openlocfilehash: 99a993ae67bb7b3cf49d1a4a9a50fd7cb9aee894
+ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27350072"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "27380234"
 ---
 # <a name="participant-mute"></a>参加者: ミュート
 
@@ -39,7 +39,7 @@ POST /applications/{id}/calls/{id}/participants/{id}/mute
 ## <a name="request-body"></a>要求本文
 要求本文で、次のパラメーターを含む JSON オブジェクトを指定します。
 
-| パラメーター      | 種類    |説明|
+| パラメーター      | 型    |説明|
 |:---------------|:--------|:----------|
 |clientContext|String|クライアントのコンテキスト。|
 
@@ -53,7 +53,7 @@ POST /applications/{id}/calls/{id}/participants/{id}/mute
 次の例は要求を示しています。
 <!-- {
   "blockType": "request",
-  "name": "participant_mute"
+  "name": "participant-mute"
 }-->
 ```http
 POST https://graph.microsoft.com/beta/app/calls/{id}/participants/{id}/mute

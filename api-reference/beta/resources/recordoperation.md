@@ -1,12 +1,13 @@
 ---
 title: recordOperation リソースの種類
 description: RecordOperation 型
-ms.openlocfilehash: 5863e5ef84b00c65cd0806af8a3364fe3d1ab73f
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: VinodRavichandran
+ms.openlocfilehash: 54b39f30df1dd53a95260b549ae9fab2eedddfd8
+ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27067828"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "27380423"
 ---
 # <a name="recordoperation-resource-type"></a>recordOperation リソースの種類
 
@@ -19,13 +20,13 @@ RecordOperation 型
 | プロパティ                       | 型                        | 説明                                                                                                                                       |
 | :----------------------------- | :---------------------------| :-------------------------------------------------------------------------------------------------------------------------------------------------|
 | clientContext                  | String                      | クライアントのコンテキスト。                                                                                                                               |
-| completionReason               | String                      | 可能な値は、`operationCanceled`、`stopToneDetected`、`maxRecordDurationReached`、`initialSilenceTimeout`、`maxSilenceTimeout`、`playPromptFailed`、`playBeepFailed`、`mediaReceiveTimeout`、`unspecifiedError` です。 |
+| completionReason               | String                      | 可能な値は、`operationCanceled`、`stopToneDetected`、`maxRecordDurationReached`、`initialSilenceTimeout`、`maxSilenceTimeout`、`playPromptFailed`、`playBeepFailed`、`mediaReceiveTimeout`、`unspecifiedError`、`none` です。 |
 | createdDateTime                | DateTimeOffset              | レコーディングが作成された時刻。                                                                                                          |
 | id                             | String                      | サーバー操作の id です。読み取り専用です。 サーバーを生成します。                                                                                             |
 | lastActionDateTime             | DateTimeOffset              | 操作の最後の操作の時間です。                                                                                                     |
-| recordResourceLocation         | String                      | 記録が保存されている場所です。                                                                                                      |
 | recordResourceAccessToken      | String                      | 記録を取得するために必要なアクセス トークンです。                                                                                              |
-| resultInfo                     | [resultInfo](resultinfo.md) | 結果の情報です。  読み取り専用。 サーバーを生成します。                                                                                             |
+| recordResourceLocation         | String                      | 記録が保存されている場所です。                                                                                                      |
+| resultInfo                     | [resultInfo](resultinfo.md) | 結果の情報です。  読み取り専用です。 サーバーを生成します。                                                                                             |
 | status                         | String                      | 使用可能な値: `notStarted`、`running`、`completed`、`failed`。 読み取り専用です。 サーバーを生成します。                                                 |
 
 ## <a name="relationships"></a>リレーションシップ
@@ -45,18 +46,18 @@ RecordOperation 型
 ```json
 {
   "clientContext": "String",
-  "completionReason": "operationCanceled | stopToneDetected | maxRecordDurationReached | initialSilenceTimeout | maxSilenceTimeout | playPromptFailed | playBeepFailed | mediaReceiveTimeout | unspecifiedError",
+  "completionReason": "operationCanceled | stopToneDetected | maxRecordDurationReached | initialSilenceTimeout | maxSilenceTimeout | playPromptFailed | playBeepFailed | mediaReceiveTimeout | unspecifiedError | none",
   "createdDateTime": "String (timestamp)",
   "id": "String (identifier)",
   "lastActionDateTime": "String (timestamp)",
-  "recordResourceLocation": "String",
   "recordResourceAccessToken": "String",
+  "recordResourceLocation": "String",
   "resultInfo": {"@odata.type": "#microsoft.graph.resultInfo"},
   "status": "notStarted | running | completed | failed"
 }
 ```
 
-## <a name="example"></a>使用例
+## <a name="example"></a>例
 
 <!-- {
   "blockType": "example",
@@ -67,8 +68,8 @@ RecordOperation 型
 {
   "clientContext": "d45324c1-fcb5-430a-902c-f20af696537c",
   "id": "ABB33D04-3A2C-4D78-996F-9EEEF55EF119",
-  "recordResourceLocation": "https://resource.location/ABB33D04-3A2C-4D78-996F-9EEEF55EF119",
   "recordResourceAccessToken": "<access-token>",
+  "recordResourceLocation": "https://resource.location/ABB33D04-3A2C-4D78-996F-9EEEF55EF119",
   "status": "completed"
 }
 ```

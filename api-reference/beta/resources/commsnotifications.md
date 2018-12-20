@@ -1,22 +1,25 @@
 ---
-title: 通知リソースの種類
-description: リソースの JSON 表記を次に示します。
-ms.openlocfilehash: 96246491c386971fe18184f26269d4abe3af6e6e
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+title: commsNotifications リソースの種類
+description: 通信サーバーによって 1 つのバッチで複数の通知を送信するための通知の一覧です。
+author: VinodRavichandran
+ms.openlocfilehash: 052520a99081e5c09cd6e3ec3b74f74e9527d38d
+ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27074166"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "27380451"
 ---
-# <a name="notifications-resource-type"></a>通知リソースの種類
+# <a name="commsnotifications-resource-type"></a>commsNotifications リソースの種類
 
 > **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。
 
+通信サーバーによって 1 つのバッチで複数の通知を送信するための通知の一覧です。
+
 ## <a name="properties"></a>プロパティ
 
-| プロパティ       | 型                                       | 説明 |
-|:---------------|:-------------------------------------------|:------------|
-| value          | [通知](commsnotification.md)のコレクション | リソースに変更を通知します。 |
+| プロパティ       | 型                                                 | 説明                                   |
+|:---------------|:-----------------------------------------------------|:----------------------------------------------|
+| value          | [commsNotification](commsnotification.md)コレクション | リソースに変更を通知します。 |
 
 ## <a name="json-representation"></a>JSON 表記
 
@@ -39,7 +42,7 @@ ms.locfileid: "27074166"
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "notifications resource",
+  "description": "commsNotifications resource",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

@@ -1,22 +1,25 @@
 ---
 title: organizerMeetingInfo リソースの種類
-description: リソースの JSON 表記を次に示します。
-ms.openlocfilehash: 00a7978c44c82ddd6b34802f29188a554e7e0b4f
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+description: 会議については、会議の開催者を含みます。
+author: VinodRavichandran
+ms.openlocfilehash: 296b20125908caf73221c2a8380e91931deb7e61
+ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27070346"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "27380213"
 ---
 # <a name="organizermeetinginfo-resource-type"></a>organizerMeetingInfo リソースの種類
 
 > **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。
 
+会議については、会議の開催者を含みます。
+
 ## <a name="properties"></a>プロパティ
 
 | プロパティ                     | 型                          | 説明                                     |
 | :--------------------------- | :---------------------------- | :-----------------------------------------------|
-| allowConversationWithoutHost | ブール値                       | 会話のホストから離れると、会話を続行できるかどうかを示します。 |
+| allowConversationWithoutHost | Boolean                       | 会話のホストから離れると、会話を続行できるかどうかを示します。 |
 | organizer                    | [identitySet](identityset.md) | 開催者は Azure Active Directory アイデンティティであります。  |
 
 ## <a name="json-representation"></a>JSON 表記
@@ -37,7 +40,7 @@ ms.locfileid: "27070346"
 }
 ```
 
-## <a name="example"></a>使用例
+## <a name="example"></a>例
 
 <!-- {
   "blockType": "example",
