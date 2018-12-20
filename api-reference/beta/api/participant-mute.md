@@ -2,58 +2,58 @@
 title: '参加者: ミュート'
 description: 呼び出しで特定の参加者をミュートします。
 author: VinodRavichandran
-ms.openlocfilehash: ea84b2944b9a9dd75a72f05f6fa5c4327068e271
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+ms.openlocfilehash: 99a993ae67bb7b3cf49d1a4a9a50fd7cb9aee894
+ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27350072"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "27380234"
 ---
-# <a name="participant-mute"></a><span data-ttu-id="febb9-103">参加者: ミュート</span><span class="sxs-lookup"><span data-stu-id="febb9-103">participant: mute</span></span>
+# <a name="participant-mute"></a><span data-ttu-id="f7e5b-103">参加者: ミュート</span><span class="sxs-lookup"><span data-stu-id="f7e5b-103">participant: mute</span></span>
 
-> <span data-ttu-id="febb9-104">**重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。</span><span class="sxs-lookup"><span data-stu-id="febb9-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="febb9-105">実稼働アプリケーションでの、これらの API の使用はサポートされていません。</span><span class="sxs-lookup"><span data-stu-id="febb9-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="f7e5b-104">**重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。</span><span class="sxs-lookup"><span data-stu-id="f7e5b-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="f7e5b-105">実稼働アプリケーションでの、これらの API の使用はサポートされていません。</span><span class="sxs-lookup"><span data-stu-id="f7e5b-105">Use of these APIs in production applications is not supported.</span></span>
 
-<span data-ttu-id="febb9-106">呼び出しで特定の参加者をミュートします。</span><span class="sxs-lookup"><span data-stu-id="febb9-106">Mute a specific participant in the call.</span></span>
+<span data-ttu-id="f7e5b-106">呼び出しで特定の参加者をミュートします。</span><span class="sxs-lookup"><span data-stu-id="f7e5b-106">Mute a specific participant in the call.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="febb9-107">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="febb9-107">Permissions</span></span>
-<span data-ttu-id="febb9-p102">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="febb9-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="f7e5b-107">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="f7e5b-107">Permissions</span></span>
+<span data-ttu-id="f7e5b-p102">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="f7e5b-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="febb9-110">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="febb9-110">Permission type</span></span> | <span data-ttu-id="febb9-111">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="febb9-111">Permissions (from least to most privileged)</span></span> |
+| <span data-ttu-id="f7e5b-110">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="f7e5b-110">Permission type</span></span> | <span data-ttu-id="f7e5b-111">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="f7e5b-111">Permissions (from least to most privileged)</span></span> |
 | :-------------- | :------------------------------------------ |
-| <span data-ttu-id="febb9-112">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="febb9-112">Delegated (work or school account)</span></span>     | <span data-ttu-id="febb9-113">サポート対象外</span><span class="sxs-lookup"><span data-stu-id="febb9-113">Not Supported</span></span>        |
-| <span data-ttu-id="febb9-114">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="febb9-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="febb9-115">サポート対象外</span><span class="sxs-lookup"><span data-stu-id="febb9-115">Not Supported</span></span>        |
-| <span data-ttu-id="febb9-116">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="febb9-116">Application</span></span>     | <span data-ttu-id="febb9-117">なし</span><span class="sxs-lookup"><span data-stu-id="febb9-117">None</span></span>                                        |
+| <span data-ttu-id="f7e5b-112">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="f7e5b-112">Delegated (work or school account)</span></span>     | <span data-ttu-id="f7e5b-113">サポート対象外</span><span class="sxs-lookup"><span data-stu-id="f7e5b-113">Not Supported</span></span>        |
+| <span data-ttu-id="f7e5b-114">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="f7e5b-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="f7e5b-115">サポート対象外</span><span class="sxs-lookup"><span data-stu-id="f7e5b-115">Not Supported</span></span>        |
+| <span data-ttu-id="f7e5b-116">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="f7e5b-116">Application</span></span>     | <span data-ttu-id="f7e5b-117">なし</span><span class="sxs-lookup"><span data-stu-id="f7e5b-117">None</span></span>                                        |
 
-## <a name="http-request"></a><span data-ttu-id="febb9-118">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="febb9-118">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="f7e5b-118">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="f7e5b-118">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /app/calls/{id}/participants/{id}/mute
 POST /applications/{id}/calls/{id}/participants/{id}/mute
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="febb9-119">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="febb9-119">Request headers</span></span>
-| <span data-ttu-id="febb9-120">名前</span><span class="sxs-lookup"><span data-stu-id="febb9-120">Name</span></span>          | <span data-ttu-id="febb9-121">説明</span><span class="sxs-lookup"><span data-stu-id="febb9-121">Description</span></span>               |
+## <a name="request-headers"></a><span data-ttu-id="f7e5b-119">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="f7e5b-119">Request headers</span></span>
+| <span data-ttu-id="f7e5b-120">名前</span><span class="sxs-lookup"><span data-stu-id="f7e5b-120">Name</span></span>          | <span data-ttu-id="f7e5b-121">説明</span><span class="sxs-lookup"><span data-stu-id="f7e5b-121">Description</span></span>               |
 |:--------------|:--------------------------|
-| <span data-ttu-id="febb9-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="febb9-122">Authorization</span></span> | <span data-ttu-id="febb9-p103">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="febb9-p103">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="f7e5b-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="f7e5b-122">Authorization</span></span> | <span data-ttu-id="f7e5b-p103">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="f7e5b-p103">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="febb9-125">要求本文</span><span class="sxs-lookup"><span data-stu-id="febb9-125">Request body</span></span>
-<span data-ttu-id="febb9-126">要求本文で、次のパラメーターを含む JSON オブジェクトを指定します。</span><span class="sxs-lookup"><span data-stu-id="febb9-126">In the request body, provide a JSON object with the following parameters.</span></span>
+## <a name="request-body"></a><span data-ttu-id="f7e5b-125">要求本文</span><span class="sxs-lookup"><span data-stu-id="f7e5b-125">Request body</span></span>
+<span data-ttu-id="f7e5b-126">要求本文で、次のパラメーターを含む JSON オブジェクトを指定します。</span><span class="sxs-lookup"><span data-stu-id="f7e5b-126">In the request body, provide a JSON object with the following parameters.</span></span>
 
-| <span data-ttu-id="febb9-127">パラメーター</span><span class="sxs-lookup"><span data-stu-id="febb9-127">Parameter</span></span>      | <span data-ttu-id="febb9-128">種類</span><span class="sxs-lookup"><span data-stu-id="febb9-128">Type</span></span>    |<span data-ttu-id="febb9-129">説明</span><span class="sxs-lookup"><span data-stu-id="febb9-129">Description</span></span>|
+| <span data-ttu-id="f7e5b-127">パラメーター</span><span class="sxs-lookup"><span data-stu-id="f7e5b-127">Parameter</span></span>      | <span data-ttu-id="f7e5b-128">型</span><span class="sxs-lookup"><span data-stu-id="f7e5b-128">Type</span></span>    |<span data-ttu-id="f7e5b-129">説明</span><span class="sxs-lookup"><span data-stu-id="f7e5b-129">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="febb9-130">clientContext</span><span class="sxs-lookup"><span data-stu-id="febb9-130">clientContext</span></span>|<span data-ttu-id="febb9-131">String</span><span class="sxs-lookup"><span data-stu-id="febb9-131">String</span></span>|<span data-ttu-id="febb9-132">クライアントのコンテキスト。</span><span class="sxs-lookup"><span data-stu-id="febb9-132">The client context.</span></span>|
+|<span data-ttu-id="f7e5b-130">clientContext</span><span class="sxs-lookup"><span data-stu-id="f7e5b-130">clientContext</span></span>|<span data-ttu-id="f7e5b-131">String</span><span class="sxs-lookup"><span data-stu-id="f7e5b-131">String</span></span>|<span data-ttu-id="f7e5b-132">クライアントのコンテキスト。</span><span class="sxs-lookup"><span data-stu-id="f7e5b-132">The client context.</span></span>|
 
-## <a name="response"></a><span data-ttu-id="febb9-133">応答</span><span class="sxs-lookup"><span data-stu-id="febb9-133">Response</span></span>
-<span data-ttu-id="febb9-134">かどうかは成功すると、このメソッドを返します`200 OK`、応答の本体で応答コードと[commsOperation](../resources/commsoperation.md)のオブジェクトです。</span><span class="sxs-lookup"><span data-stu-id="febb9-134">If successful, this method returns `200 OK` response code and [commsOperation](../resources/commsoperation.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="f7e5b-133">応答</span><span class="sxs-lookup"><span data-stu-id="f7e5b-133">Response</span></span>
+<span data-ttu-id="f7e5b-134">かどうかは成功すると、このメソッドを返します`200 OK`、応答の本体で応答コードと[commsOperation](../resources/commsoperation.md)のオブジェクトです。</span><span class="sxs-lookup"><span data-stu-id="f7e5b-134">If successful, this method returns `200 OK` response code and [commsOperation](../resources/commsoperation.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="febb9-135">例</span><span class="sxs-lookup"><span data-stu-id="febb9-135">Example</span></span>
-<span data-ttu-id="febb9-136">次の例は、この API を呼び出す方法を示しています。</span><span class="sxs-lookup"><span data-stu-id="febb9-136">The following example shows how to call this API.</span></span>
+## <a name="example"></a><span data-ttu-id="f7e5b-135">例</span><span class="sxs-lookup"><span data-stu-id="f7e5b-135">Example</span></span>
+<span data-ttu-id="f7e5b-136">次の例は、この API を呼び出す方法を示しています。</span><span class="sxs-lookup"><span data-stu-id="f7e5b-136">The following example shows how to call this API.</span></span>
 
-##### <a name="request"></a><span data-ttu-id="febb9-137">要求</span><span class="sxs-lookup"><span data-stu-id="febb9-137">Request</span></span>
-<span data-ttu-id="febb9-138">次の例は要求を示しています。</span><span class="sxs-lookup"><span data-stu-id="febb9-138">The following example shows the request.</span></span>
+##### <a name="request"></a><span data-ttu-id="f7e5b-137">要求</span><span class="sxs-lookup"><span data-stu-id="f7e5b-137">Request</span></span>
+<span data-ttu-id="f7e5b-138">次の例は要求を示しています。</span><span class="sxs-lookup"><span data-stu-id="f7e5b-138">The following example shows the request.</span></span>
 <!-- {
   "blockType": "request",
-  "name": "participant_mute"
+  "name": "participant-mute"
 }-->
 ```http
 POST https://graph.microsoft.com/beta/app/calls/{id}/participants/{id}/mute
@@ -65,9 +65,9 @@ Content-Length: 46
 }
 ```
 
-##### <a name="response"></a><span data-ttu-id="febb9-139">応答</span><span class="sxs-lookup"><span data-stu-id="febb9-139">Response</span></span>
+##### <a name="response"></a><span data-ttu-id="f7e5b-139">応答</span><span class="sxs-lookup"><span data-stu-id="f7e5b-139">Response</span></span>
 
-> <span data-ttu-id="febb9-p104">**注:** 読みやすくするために、ここに示す応答オブジェクトは短くされている場合があります。実際の呼び出しからは、すべてのプロパティが返されます。</span><span class="sxs-lookup"><span data-stu-id="febb9-p104">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+> <span data-ttu-id="f7e5b-p104">**注:** 読みやすくするために、ここに示す応答オブジェクトは短くされている場合があります。実際の呼び出しからは、すべてのプロパティが返されます。</span><span class="sxs-lookup"><span data-stu-id="f7e5b-p104">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -88,9 +88,9 @@ Content-Length: 259
 }
 ```
 
-## <a name="example---mute-specific-participant"></a><span data-ttu-id="febb9-142">例: 特定の参加者をミュート</span><span class="sxs-lookup"><span data-stu-id="febb9-142">Example - Mute specific participant</span></span>
+## <a name="example---mute-specific-participant"></a><span data-ttu-id="f7e5b-142">例: 特定の参加者をミュート</span><span class="sxs-lookup"><span data-stu-id="f7e5b-142">Example - Mute specific participant</span></span>
 
-##### <a name="request"></a><span data-ttu-id="febb9-143">要求</span><span class="sxs-lookup"><span data-stu-id="febb9-143">Request</span></span>
+##### <a name="request"></a><span data-ttu-id="f7e5b-143">要求</span><span class="sxs-lookup"><span data-stu-id="f7e5b-143">Request</span></span>
 
 ```http
 POST /app/calls/57DAB8B1894C409AB240BD8BEAE78896/participants/0698446E77E24E4D85F80597083CB830/mute
@@ -102,7 +102,7 @@ Content-Type: application/json
 }
 ```
 
-##### <a name="response"></a><span data-ttu-id="febb9-144">応答</span><span class="sxs-lookup"><span data-stu-id="febb9-144">Response</span></span>
+##### <a name="response"></a><span data-ttu-id="f7e5b-144">応答</span><span class="sxs-lookup"><span data-stu-id="f7e5b-144">Response</span></span>
 
 ```http
 HTTP/1.1 200 OK
@@ -125,7 +125,7 @@ Content-Length: 259
 }
 ```
 
-##### <a name="notification---roster-updated-with-participant-muted"></a><span data-ttu-id="febb9-145">名簿の参加者がミュートされている更新の通知-</span><span class="sxs-lookup"><span data-stu-id="febb9-145">Notification - roster updated with participant muted</span></span>
+##### <a name="notification---roster-updated-with-participant-muted"></a><span data-ttu-id="f7e5b-145">名簿の参加者がミュートされている更新の通知-</span><span class="sxs-lookup"><span data-stu-id="f7e5b-145">Notification - roster updated with participant muted</span></span>
 
 ```http
 POST https://bot.contoso.com/api/calls

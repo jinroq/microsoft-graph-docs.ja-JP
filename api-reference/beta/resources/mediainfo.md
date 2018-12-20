@@ -1,26 +1,29 @@
 ---
 title: mediaInfo リソースの種類
-description: リソースの JSON 表記を次に示します。
-ms.openlocfilehash: 961ce2375b742b2a657db28ec11d5439985583d3
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+description: アクションで使用されるメディアの情報には次のメッセージが表示されます。
+author: VinodRavichandran
+ms.openlocfilehash: ea2eaa9e8e85da737df4c0c0170457fb3350820b
+ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27073017"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "27380276"
 ---
-# <a name="mediainfo-resource-type"></a><span data-ttu-id="2385b-103">mediaInfo リソースの種類</span><span class="sxs-lookup"><span data-stu-id="2385b-103">mediaInfo resource type</span></span>
+# <a name="mediainfo-resource-type"></a><span data-ttu-id="45f7c-103">mediaInfo リソースの種類</span><span class="sxs-lookup"><span data-stu-id="45f7c-103">mediaInfo resource type</span></span>
 
-> <span data-ttu-id="2385b-104">**重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。</span><span class="sxs-lookup"><span data-stu-id="2385b-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="2385b-105">実稼働アプリケーションでの、これらの API の使用はサポートされていません。</span><span class="sxs-lookup"><span data-stu-id="2385b-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="45f7c-104">**重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。</span><span class="sxs-lookup"><span data-stu-id="45f7c-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="45f7c-105">実稼働アプリケーションでの、これらの API の使用はサポートされていません。</span><span class="sxs-lookup"><span data-stu-id="45f7c-105">Use of these APIs in production applications is not supported.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="2385b-106">プロパティ</span><span class="sxs-lookup"><span data-stu-id="2385b-106">Properties</span></span>
-| <span data-ttu-id="2385b-107">プロパティ</span><span class="sxs-lookup"><span data-stu-id="2385b-107">Property</span></span>   | <span data-ttu-id="2385b-108">型</span><span class="sxs-lookup"><span data-stu-id="2385b-108">Type</span></span>    |<span data-ttu-id="2385b-109">説明</span><span class="sxs-lookup"><span data-stu-id="2385b-109">Description</span></span>|
-|:---------------|:--------|:----------|
-| <span data-ttu-id="2385b-110">resourceId</span><span class="sxs-lookup"><span data-stu-id="2385b-110">resourceId</span></span>     | <span data-ttu-id="2385b-111">文字列型 (String)</span><span class="sxs-lookup"><span data-stu-id="2385b-111">String</span></span>  |           |
-| <span data-ttu-id="2385b-112">uri</span><span class="sxs-lookup"><span data-stu-id="2385b-112">uri</span></span>            | <span data-ttu-id="2385b-113">String</span><span class="sxs-lookup"><span data-stu-id="2385b-113">String</span></span>  |           |
+<span data-ttu-id="45f7c-106">アクションで使用されるメディアの情報には次のメッセージが表示されます。</span><span class="sxs-lookup"><span data-stu-id="45f7c-106">The media information used in actions for prompts.</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="2385b-114">JSON 表記</span><span class="sxs-lookup"><span data-stu-id="2385b-114">JSON representation</span></span>
+## <a name="properties"></a><span data-ttu-id="45f7c-107">プロパティ</span><span class="sxs-lookup"><span data-stu-id="45f7c-107">Properties</span></span>
+| <span data-ttu-id="45f7c-108">プロパティ</span><span class="sxs-lookup"><span data-stu-id="45f7c-108">Property</span></span>       | <span data-ttu-id="45f7c-109">型</span><span class="sxs-lookup"><span data-stu-id="45f7c-109">Type</span></span>    | <span data-ttu-id="45f7c-110">説明</span><span class="sxs-lookup"><span data-stu-id="45f7c-110">Description</span></span>                      |
+|:---------------|:--------|:---------------------------------|
+| <span data-ttu-id="45f7c-111">resourceId</span><span class="sxs-lookup"><span data-stu-id="45f7c-111">resourceId</span></span>     | <span data-ttu-id="45f7c-112">文字列型 (String)</span><span class="sxs-lookup"><span data-stu-id="45f7c-112">String</span></span>  | <span data-ttu-id="45f7c-113">リソースの一意の id。</span><span class="sxs-lookup"><span data-stu-id="45f7c-113">Unique identity of the resource.</span></span> |
+| <span data-ttu-id="45f7c-114">uri</span><span class="sxs-lookup"><span data-stu-id="45f7c-114">uri</span></span>            | <span data-ttu-id="45f7c-115">String</span><span class="sxs-lookup"><span data-stu-id="45f7c-115">String</span></span>  | <span data-ttu-id="45f7c-116">リソースへのパス。</span><span class="sxs-lookup"><span data-stu-id="45f7c-116">Path to the resource.</span></span>            |
 
-<span data-ttu-id="2385b-115">リソースの JSON 表記を次に示します。</span><span class="sxs-lookup"><span data-stu-id="2385b-115">The following is a JSON representation of the resource.</span></span>
+## <a name="json-representation"></a><span data-ttu-id="45f7c-117">JSON 表記</span><span class="sxs-lookup"><span data-stu-id="45f7c-117">JSON representation</span></span>
+
+<span data-ttu-id="45f7c-118">リソースの JSON 表記を次に示します。</span><span class="sxs-lookup"><span data-stu-id="45f7c-118">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",

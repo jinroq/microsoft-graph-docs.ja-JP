@@ -2,58 +2,58 @@
 title: '呼び出す: 元に戻す'
 description: 着信呼び出しを拒否します。
 author: VinodRavichandran
-ms.openlocfilehash: 2516ead8d9fa158192a0d9c7c02ac8adb44f764a
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+ms.openlocfilehash: 8354593d32dce9a2b8d917db2dd6702d692a2b3f
+ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27343457"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "27380360"
 ---
-# <a name="call-reject"></a><span data-ttu-id="c18e6-103">呼び出す: 元に戻す</span><span class="sxs-lookup"><span data-stu-id="c18e6-103">call: reject</span></span>
+# <a name="call-reject"></a><span data-ttu-id="700d1-103">呼び出す: 元に戻す</span><span class="sxs-lookup"><span data-stu-id="700d1-103">call: reject</span></span>
 
-> <span data-ttu-id="c18e6-104">**重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。</span><span class="sxs-lookup"><span data-stu-id="c18e6-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="c18e6-105">実稼働アプリケーションでの、これらの API の使用はサポートされていません。</span><span class="sxs-lookup"><span data-stu-id="c18e6-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="700d1-104">**重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。</span><span class="sxs-lookup"><span data-stu-id="700d1-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="700d1-105">実稼働アプリケーションでの、これらの API の使用はサポートされていません。</span><span class="sxs-lookup"><span data-stu-id="700d1-105">Use of these APIs in production applications is not supported.</span></span>
 
-<span data-ttu-id="c18e6-106">着信呼び出しを拒否します。</span><span class="sxs-lookup"><span data-stu-id="c18e6-106">Reject an incoming call.</span></span>
+<span data-ttu-id="700d1-106">着信呼び出しを拒否します。</span><span class="sxs-lookup"><span data-stu-id="700d1-106">Reject an incoming call.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="c18e6-107">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="c18e6-107">Permissions</span></span>
-<span data-ttu-id="c18e6-p102">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="c18e6-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="700d1-107">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="700d1-107">Permissions</span></span>
+<span data-ttu-id="700d1-p102">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="700d1-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="c18e6-110">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="c18e6-110">Permission type</span></span> | <span data-ttu-id="c18e6-111">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="c18e6-111">Permissions (from least to most privileged)</span></span>                |
+| <span data-ttu-id="700d1-110">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="700d1-110">Permission type</span></span> | <span data-ttu-id="700d1-111">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="700d1-111">Permissions (from least to most privileged)</span></span>                |
 | :-------------- | :--------------------------------------------------------- |
-| <span data-ttu-id="c18e6-112">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="c18e6-112">Delegated (work or school account)</span></span>     | <span data-ttu-id="c18e6-113">サポート対象外</span><span class="sxs-lookup"><span data-stu-id="c18e6-113">Not Supported</span></span>                       |
-| <span data-ttu-id="c18e6-114">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="c18e6-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="c18e6-115">サポート対象外</span><span class="sxs-lookup"><span data-stu-id="c18e6-115">Not Supported</span></span>                       |
-| <span data-ttu-id="c18e6-116">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="c18e6-116">Application</span></span>     | <span data-ttu-id="c18e6-117">なし</span><span class="sxs-lookup"><span data-stu-id="c18e6-117">None</span></span>                                                       |
+| <span data-ttu-id="700d1-112">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="700d1-112">Delegated (work or school account)</span></span>     | <span data-ttu-id="700d1-113">サポート対象外</span><span class="sxs-lookup"><span data-stu-id="700d1-113">Not Supported</span></span>                       |
+| <span data-ttu-id="700d1-114">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="700d1-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="700d1-115">サポート対象外</span><span class="sxs-lookup"><span data-stu-id="700d1-115">Not Supported</span></span>                       |
+| <span data-ttu-id="700d1-116">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="700d1-116">Application</span></span>     | <span data-ttu-id="700d1-117">なし</span><span class="sxs-lookup"><span data-stu-id="700d1-117">None</span></span>                                                       |
 
-## <a name="http-request"></a><span data-ttu-id="c18e6-118">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="c18e6-118">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="700d1-118">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="700d1-118">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /app/calls/{id}/reject
 POST /applications/{id}/calls/{id}/reject
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="c18e6-119">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="c18e6-119">Request headers</span></span>
-| <span data-ttu-id="c18e6-120">名前</span><span class="sxs-lookup"><span data-stu-id="c18e6-120">Name</span></span>          | <span data-ttu-id="c18e6-121">説明</span><span class="sxs-lookup"><span data-stu-id="c18e6-121">Description</span></span>               |
+## <a name="request-headers"></a><span data-ttu-id="700d1-119">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="700d1-119">Request headers</span></span>
+| <span data-ttu-id="700d1-120">名前</span><span class="sxs-lookup"><span data-stu-id="700d1-120">Name</span></span>          | <span data-ttu-id="700d1-121">説明</span><span class="sxs-lookup"><span data-stu-id="700d1-121">Description</span></span>               |
 |:--------------|:--------------------------|
-| <span data-ttu-id="c18e6-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="c18e6-122">Authorization</span></span> | <span data-ttu-id="c18e6-p103">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="c18e6-p103">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="700d1-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="700d1-122">Authorization</span></span> | <span data-ttu-id="700d1-p103">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="700d1-p103">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="c18e6-125">要求本文</span><span class="sxs-lookup"><span data-stu-id="c18e6-125">Request body</span></span>
-<span data-ttu-id="c18e6-126">要求本文で、次のパラメーターを含む JSON オブジェクトを指定します。</span><span class="sxs-lookup"><span data-stu-id="c18e6-126">In the request body, provide a JSON object with the following parameters.</span></span>
+## <a name="request-body"></a><span data-ttu-id="700d1-125">要求本文</span><span class="sxs-lookup"><span data-stu-id="700d1-125">Request body</span></span>
+<span data-ttu-id="700d1-126">要求本文で、次のパラメーターを含む JSON オブジェクトを指定します。</span><span class="sxs-lookup"><span data-stu-id="700d1-126">In the request body, provide a JSON object with the following parameters.</span></span>
 
-| <span data-ttu-id="c18e6-127">パラメーター</span><span class="sxs-lookup"><span data-stu-id="c18e6-127">Parameter</span></span>      | <span data-ttu-id="c18e6-128">種類</span><span class="sxs-lookup"><span data-stu-id="c18e6-128">Type</span></span>    |<span data-ttu-id="c18e6-129">説明</span><span class="sxs-lookup"><span data-stu-id="c18e6-129">Description</span></span>|
+| <span data-ttu-id="700d1-127">パラメーター</span><span class="sxs-lookup"><span data-stu-id="700d1-127">Parameter</span></span>      | <span data-ttu-id="700d1-128">型</span><span class="sxs-lookup"><span data-stu-id="700d1-128">Type</span></span>    |<span data-ttu-id="700d1-129">説明</span><span class="sxs-lookup"><span data-stu-id="700d1-129">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="c18e6-130">理由</span><span class="sxs-lookup"><span data-stu-id="c18e6-130">reason</span></span>|<span data-ttu-id="c18e6-131">String</span><span class="sxs-lookup"><span data-stu-id="c18e6-131">String</span></span>|<span data-ttu-id="c18e6-132">却下の理由です。</span><span class="sxs-lookup"><span data-stu-id="c18e6-132">The rejection reason.</span></span>|
+|<span data-ttu-id="700d1-130">理由</span><span class="sxs-lookup"><span data-stu-id="700d1-130">reason</span></span>|<span data-ttu-id="700d1-131">String</span><span class="sxs-lookup"><span data-stu-id="700d1-131">String</span></span>|<span data-ttu-id="700d1-132">却下の理由です。</span><span class="sxs-lookup"><span data-stu-id="700d1-132">The rejection reason.</span></span>|
 
-## <a name="response"></a><span data-ttu-id="c18e6-133">応答</span><span class="sxs-lookup"><span data-stu-id="c18e6-133">Response</span></span>
-<span data-ttu-id="c18e6-p104">成功した場合、このメソッドは `200 OK` 応答コードを返します。応答本文には何も返されません。</span><span class="sxs-lookup"><span data-stu-id="c18e6-p104">If successful, this method returns `200 OK` response code. It does not return anything in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="700d1-133">応答</span><span class="sxs-lookup"><span data-stu-id="700d1-133">Response</span></span>
+<span data-ttu-id="700d1-p104">成功した場合、このメソッドは `200 OK` 応答コードを返します。応答本文には何も返されません。</span><span class="sxs-lookup"><span data-stu-id="700d1-p104">If successful, this method returns `200 OK` response code. It does not return anything in the response body.</span></span>
 
 ```http
 Returns `202 Accepted` response code
 ```
 
-## <a name="example"></a><span data-ttu-id="c18e6-136">例</span><span class="sxs-lookup"><span data-stu-id="c18e6-136">Example</span></span>
-<span data-ttu-id="c18e6-137">次の例は、この API を呼び出す方法を示しています。</span><span class="sxs-lookup"><span data-stu-id="c18e6-137">The following example shows how to call this API.</span></span>
+## <a name="example"></a><span data-ttu-id="700d1-136">例</span><span class="sxs-lookup"><span data-stu-id="700d1-136">Example</span></span>
+<span data-ttu-id="700d1-137">次の例は、この API を呼び出す方法を示しています。</span><span class="sxs-lookup"><span data-stu-id="700d1-137">The following example shows how to call this API.</span></span>
 
-##### <a name="notification---incoming"></a><span data-ttu-id="c18e6-138">通知の受信</span><span class="sxs-lookup"><span data-stu-id="c18e6-138">Notification - incoming</span></span>
+##### <a name="notification---incoming"></a><span data-ttu-id="700d1-138">通知の受信</span><span class="sxs-lookup"><span data-stu-id="700d1-138">Notification - incoming</span></span>
 
 ```http
 POST https://bot.contoso.com/api/calls
@@ -106,12 +106,12 @@ Content-Type: application/json
 }
 ```
 
-##### <a name="request"></a><span data-ttu-id="c18e6-139">要求</span><span class="sxs-lookup"><span data-stu-id="c18e6-139">Request</span></span>
-<span data-ttu-id="c18e6-140">次の例は要求を示しています。</span><span class="sxs-lookup"><span data-stu-id="c18e6-140">The following example shows the request.</span></span>
+##### <a name="request"></a><span data-ttu-id="700d1-139">要求</span><span class="sxs-lookup"><span data-stu-id="700d1-139">Request</span></span>
+<span data-ttu-id="700d1-140">次の例は要求を示しています。</span><span class="sxs-lookup"><span data-stu-id="700d1-140">The following example shows the request.</span></span>
 
 <!-- {
   "blockType": "request",
-  "name": "call_reject"
+  "name": "call-reject"
 }-->
 ```http
 POST https://graph.microsoft.com/beta/app/calls/{id}/reject
@@ -123,8 +123,8 @@ Content-Length: 24
 }
 ```
 
-##### <a name="response"></a><span data-ttu-id="c18e6-141">応答</span><span class="sxs-lookup"><span data-stu-id="c18e6-141">Response</span></span>
-<span data-ttu-id="c18e6-142">以下は、応答の例です。</span><span class="sxs-lookup"><span data-stu-id="c18e6-142">Here is an example of the response.</span></span> 
+##### <a name="response"></a><span data-ttu-id="700d1-141">応答</span><span class="sxs-lookup"><span data-stu-id="700d1-141">Response</span></span>
+<span data-ttu-id="700d1-142">以下は、応答の例です。</span><span class="sxs-lookup"><span data-stu-id="700d1-142">Here is an example of the response.</span></span> 
 
 <!-- {
   "blockType": "response",
@@ -135,7 +135,7 @@ Content-Length: 24
 HTTP/1.1 202 Accepted
 ```
 
-##### <a name="notification---deleted"></a><span data-ttu-id="c18e6-143">通知の削除</span><span class="sxs-lookup"><span data-stu-id="c18e6-143">Notification - deleted</span></span>
+##### <a name="notification---deleted"></a><span data-ttu-id="700d1-143">通知の削除</span><span class="sxs-lookup"><span data-stu-id="700d1-143">Notification - deleted</span></span>
 
 ```http
 POST https://bot.contoso.com/api/calls
