@@ -2,12 +2,12 @@
 title: Microsoft Graph の変更ログ
 description: この変更ログでは、Microsoft Graph と、v1.0 およびベータ版のエンドポイント Microsoft Graph API の変更内容について説明します。
 author: jthake-msft
-ms.openlocfilehash: 4e8b70d5af01992e566c2d777db8f8a3c359f838
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+ms.openlocfilehash: 57bdb5da28edb2f3493e8f564316a19399bb9a70
+ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27358563"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "27380598"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Microsoft Graph の変更ログ
 
@@ -16,6 +16,13 @@ ms.locfileid: "27358563"
 Microsoft Graph API に関する既知の問題の詳細については、「[既知の問題](known-issues.md)」を参照してください。
 
 ## <a name="december-2018"></a>2018 年 12 月
+
+### <a name="security-apis"></a>セキュリティ API
+
+| **変更の種類** | **バージョン** | **説明**              |
+| :-------------- | :---------- | :--------------------------------------- |
+| 追加        | ベータ版        | [complianceInformation](/graph/api/complianceInformation/team?view=graph-rest-beta) という新しい複合型を導入しました。|
+| 追加        | ベータ版        | [certificationControl](/graph/api/certificationControl/team?view=graph-rest-beta) という新しい複合型を導入しました。|
 
 ### <a name="data-policy-api"></a>データ ポリシー API
 
@@ -348,7 +355,9 @@ Microsoft Graph API に関する既知の問題の詳細については、「[�
 
 | **変更の種類** | **バージョン** | **説明**              |
 | :-------------- | :---------- | :--------------------------------------- |
-| 追加        | ベータ版       | セキュア スコア API を [セキュリティ API](/graph/api/resources/securescore-api-overview?view=graph-rest-beta) に追加しました。これには次のリソースと操作が含まれています。<br/>[secureScores](/graph/api/resources/securescores?view=graph-rest-beta) (および関連するエンティティ)<br/>[secureScores のリスト](/graph/api/securescores-list?view=graph-rest-beta)<br/>[secureScoreControlProfiles](/graph/api/resources/securescorecontrolprofiles?view=graph-rest-beta)<br/>[secureScoreControlProfiles のリスト](/graph/api/securescorecontrolprofiles-list?view=graph-rest-beta)<br/>[secureScoreControlProfiles の更新](/graph/api/securescorecontrolprofiles-update?view=graph-rest-beta)
+| 追加        | ベータ版       | セキュア スコア API を [セキュリティ API](/graph/api/resources/securescore-api-overview?view=graph-rest-beta) に追加しました。これには次のリソースと操作が含まれています。<br/>[secureScores](/graph/api/resources/securescores?view=graph-rest-beta) (および関連するエンティティ)<br/>[secureScores のリスト](/graph/api/securescores-list?view=graph-rest-beta)<br/>[secureScoreControlProfiles](/graph/api/resources/securescorecontrolprofiles?view=graph-rest-beta)<br/>[secureScoreControlProfiles のリスト](/graph/api/securescorecontrolprofiles-list?view=graph-rest-beta)<br/>[secureScoreControlProfiles の更新](/graph/api/securescorecontrolprofiles-update?view=graph-rest-beta) |
+| 追加        | ベータ版        | [secureScoreControlStateUpdate](/graph/api/resources/secureScoreControlStateUpdate/team?view=graph-rest-beta) という新しい複合型を導入しました |
+
 
 
 ### <a name="onedrive-and-sharepoint-apis"></a>OneDrive と SharePoint の API
