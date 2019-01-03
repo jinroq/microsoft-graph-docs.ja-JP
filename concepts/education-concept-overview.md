@@ -74,7 +74,8 @@ Office 365 の Microsoft Teams は、会話、コンテンツ、およびアプ�
     - [名簿 API を使用する](/graph/api/resources/education-overview?view=graph-rest-1.0)
     - [割り当て API を使用する](/graph/api/resources/educationassignment?view=graph-rest-beta)
     - [SDS 管理 API を使用する](/graph/api/resources/educationsynchronizationprofile?view=graph-rest-beta)
-- [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer) で教育機関向け API を試す。
+- 
+  [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer) で教育機関向け API を試す。
 - 次の教育関連サンプルについて調べる:
     - [SSO および名簿管理についての .NET サンプル](https://github.com/OfficeDev/O365-EDU-AspNetMVC-Samples)
     - [SSO および名簿管理についての Angular ノード サンプル](https://github.com/OfficeDev/O365-EDU-AngularNodeJS-Samples)   

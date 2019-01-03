@@ -95,6 +95,7 @@ Insights API は、[used](/graph/api/resources/insights-used?view=graph-rest-bet
 
 ## <a name="next-steps"></a>次のステップ
 
-* [Graph エクスプローラー](https://developer.microsoft.com/graph/graph-explorer)を使用して、自分のファイルで People および Insights API を試してみてください。 サインインして、左側の列の**サンプルをさらに表示**を選択します。 メニューを使用して **People** と **Insights (beta)** を有効にします。
+* 
+  [Graph エクスプローラー](https://developer.microsoft.com/graph/graph-explorer)を使用して、自分のファイルで People および Insights API を試してみてください。 サインインして、左側の列の**サンプルをさらに表示**を選択します。 メニューを使用して **People** と **Insights (beta)** を有効にします。
 * 詳細については、[People API](people-example.md) および [person](/graph/api/resources/person?view=graph-rest-1.0) エンティティを参照してください。
 * Insights API を使い始めるには、「[Insights API を使用する](/graph/api/resources/insights?view=graph-rest-beta)」を参照してください。

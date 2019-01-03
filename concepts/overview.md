@@ -46,7 +46,8 @@ Microsoft Graph を使用すると、ユーザーの固有のコンテキスト�
 
 Microsoft Graph API を使用すると、これ以上のことができます。
 
->**注:** Microsoft Graph API を使用する場合、「[Microsoft Graph 使用条件](https://developer.microsoft.com/graph/docs/misc/terms-of-use)」と「[Microsoft のプライバシーに関する声明](https://go.microsoft.com/fwlink/?LinkId=521839)」に同意することになります。
+>
+  **注:** Microsoft Graph API を使用する場合、「[Microsoft Graph 使用条件](https://developer.microsoft.com/graph/docs/misc/terms-of-use)」と「[Microsoft のプライバシーに関する声明](https://go.microsoft.com/fwlink/?LinkId=521839)」に同意することになります。
 
 ### <a name="popular-requests"></a>一般的な要求
 
@@ -97,9 +98,12 @@ Microsoft Graph データ接続の詳細については、[Microsoft Graph デ�
 
 ## <a name="next-steps"></a>次のステップ
 
-- [おすすめのシナリオ](https://developer.microsoft.com/graph/examples)を確認します。
-- [Graph エクスプローラー](https://developer.microsoft.com/graph/graph-explorer)でサンプルの要求を試します。
-- [クイック スタート](https://developer.microsoft.com/graph/quick-start)を使用して、すぐに実行できるサンプル アプリをセットアップします。
+- 
+  [おすすめのシナリオ](https://developer.microsoft.com/graph/examples)を確認します。
+- 
+  [Graph エクスプローラー](https://developer.microsoft.com/graph/graph-explorer)でサンプルの要求を試します。
+- 
+  [クイック スタート](https://developer.microsoft.com/graph/quick-start)を使用して、すぐに実行できるサンプル アプリをセットアップします。
 - 目次の「**詳細情報**」を見て、さまざまなシナリオで使用できるサービスや機能についての詳細情報を参照します。 
 - アプリで[認証トークンを取得する](auth-overview.md)方法を検索します。
 - [API の使用](use-the-api.md)を開始します。

@@ -42,5 +42,6 @@ Microsoft 365 管理センターの使用状況レポートを利用すること
 
 ## <a name="next-steps"></a>次のステップ
 
-* [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer) の API について調べる
+* 
+  [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer) の API について調べる
 * [レポート REST API の使用](/graph/api/resources/report?view=graph-rest-1.0)方法の詳細を確認する

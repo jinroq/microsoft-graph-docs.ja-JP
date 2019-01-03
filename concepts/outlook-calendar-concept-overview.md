@@ -85,7 +85,8 @@ Microsoft Graph では、[people API](people-example.md) を使用し、ユー�
 
 ## <a name="next-steps"></a>次の手順
 
-- [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer/?request=me%2Fevents&version=v1.0) でカレンダー サンプル クエリを選択して試行します。
+- 
+  [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer/?request=me%2Fevents&version=v1.0) でカレンダー サンプル クエリを選択して試行します。
 - 以下について調べます。
   - [開催可能な会議日時を Outlook カレンダーで検索する](findmeetingtimes-example.md)
   - [ユーザーとリソースの空き時間スケジュールを取得する (プレビュー)](outlook-get-free-busy-schedule.md)

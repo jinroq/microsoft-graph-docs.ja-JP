@@ -304,4 +304,5 @@ content-length: 96
 ## <a name="use-microsoft-graph-client-libraries"></a>Microsoft Graph クライアント ライブラリを使う
 SDK のパワーと使いやすさは気に入っていただけましたか?REST API を使用していつでも Microsoft Graph を呼び出すことができますが、多数の一般的なプラットフォームのための SDK も用意されています。
 
-[コード サンプルと SDK](https://developer.microsoft.com/graph/code-samples-and-sdks) を参照してください。
+
+  [コード サンプルと SDK](https://developer.microsoft.com/graph/code-samples-and-sdks) を参照してください。

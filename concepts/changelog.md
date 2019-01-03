@@ -2628,7 +2628,8 @@ Microsoft Graph API に関する既知の問題の詳細については、「[�
 
 | **変更の種類** | **バージョン** | **説明**                          |
 | :-------------- | :---------- | :--------------------------------------- |
-| 変更          | ベータ版        | _WebSite_ プロパティの名前が _Websites_ に変更されました。詳細については、「[連絡先および People API で今後予定されている変更](https://developer.microsoft.com/office/blogs/upcoming-changes-to-contacts-and-people-apis/)」をご覧ください。 |
+| 変更          | ベータ版        | 
+  _WebSite_ プロパティの名前が _Websites_ に変更されました。詳細については、「[連絡先および People API で今後予定されている変更](https://developer.microsoft.com/office/blogs/upcoming-changes-to-contacts-and-people-apis/)」をご覧ください。 |
 
 ### <a name="privileged-identity-management"></a>Privileged Identity Management
 

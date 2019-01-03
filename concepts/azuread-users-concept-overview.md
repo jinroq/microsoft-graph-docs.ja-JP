@@ -64,7 +64,8 @@ Microsoft Graph を使用して、サインインしているユーザーと文�
 ## <a name="next-steps"></a>次のステップ
 
 - [ユーザーの操作](/graph/api/resources/users?view=graph-rest-1.0)方法の詳細を確認する
-- [Graph エクスプローラー](https://developer.microsoft.com/graph/graph-explorer)の **user** リソースを使用して自分自身のデータを調べる
+- 
+  [Graph エクスプローラー](https://developer.microsoft.com/graph/graph-explorer)の **user** リソースを使用して自分自身のデータを調べる
 - [ユーザーの代わりに](auth-v2-user.md)、または[管理者の同意を得てデーモンまたはサービスとして](auth-v2-service.md) Microsoft Graph を使用して認証します。
 - [Azure AD API](/graph/api/resources/azure-ad-overview?view=graph-rest-1.0) を使用してユーザーのアクセス制御とポリシーを設定する
 - アプリからユーザー データにアクセスするために必要な[権限](permissions-reference.md)を確認する 

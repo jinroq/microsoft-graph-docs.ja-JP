@@ -61,7 +61,8 @@ Microsoft Graph を利用することにより、アプリ ユーザーに対し
 
 ## <a name="next-steps"></a>次の手順
 
-- [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer/?request=me%2Fmessages&version=v1.0) で Outlook メール サンプル クエリを選択して試行する。 左側の列の **[サンプルをさらに表示]** を選択します。 メニューを使用して **Outlook メール** をオンにします。
+- 
+  [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer/?request=me%2Fmessages&version=v1.0) で Outlook メール サンプル クエリを選択して試行する。 左側の列の **[サンプルをさらに表示]** を選択します。 メニューを使用して **Outlook メール** をオンにします。
 - 以下について調べます。
 
   - [メッセージの作成と送信](outlook-create-send-messages.md)

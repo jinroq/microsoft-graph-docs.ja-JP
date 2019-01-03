@@ -15,15 +15,24 @@ Microsoft Graph チュートリアルは、Azure Active Directory 認証を使�
 
 現在、次のチュートリアルをご利用になれます。
 
-- [Angular](https://docs.microsoft.com/graph/tutorials/angular/)
-- [ASP.NET](https://docs.microsoft.com/graph/tutorials/aspnet/)
-- [Microsoft Flow](https://docs.microsoft.com/graph/tutorials/flow/)
-- [Node.js](https://docs.microsoft.com/graph/tutorials/node/)
-- [PHP](https://docs.microsoft.com/graph/tutorials/php/)
-- [Python](https://docs.microsoft.com/graph/tutorials/python/)
-- [Ruby](https://docs.microsoft.com/graph/tutorials/ruby/)
-- [React](https://docs.microsoft.com/graph/tutorials/react/)
-- [UWP](https://docs.microsoft.com/graph/tutorials/uwp/)
+- 
+  [Angular](https://docs.microsoft.com/graph/tutorials/angular/)
+- 
+  [ASP.NET](https://docs.microsoft.com/graph/tutorials/aspnet/)
+- 
+  [Microsoft Flow](https://docs.microsoft.com/graph/tutorials/flow/)
+- 
+  [Node.js](https://docs.microsoft.com/graph/tutorials/node/)
+- 
+  [PHP](https://docs.microsoft.com/graph/tutorials/php/)
+- 
+  [Python](https://docs.microsoft.com/graph/tutorials/python/)
+- 
+  [Ruby](https://docs.microsoft.com/graph/tutorials/ruby/)
+- 
+  [React](https://docs.microsoft.com/graph/tutorials/react/)
+- 
+  [UWP](https://docs.microsoft.com/graph/tutorials/uwp/)
 
 適切な言語やプラットフォームが表示されない場合 [UserVoice](https://officespdev.uservoice.com/forums/224641-feature-requests-and-feedback/category/101632-microsoft-graph-o365-rest-apis) で、ご希望のチュートリアルをリクエストしてください。
 

@@ -67,5 +67,6 @@ Office 365 グループとは、Microsoft サービス内またはアプリ内�
 
 ## <a name="next-steps"></a>次のステップ
 
-- [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer) で、サンプル API リクエストを試す。 
+- 
+  [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer) で、サンプル API リクエストを試す。 
 - Microsoft Graph で[グループ API を使用する](/graph/api/resources/groups-overview?view=graph-rest-1.0)方法に関する詳細を確認する。

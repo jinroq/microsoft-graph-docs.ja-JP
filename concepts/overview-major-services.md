@@ -125,5 +125,7 @@ Microsoft Graph の一部のサービスは、そこで初めて登場したサ�
 
 - 実際の顧客の問題を解決する、Microsoft Graph のサービスに基づいて構築されたクリエイティブなソリューションの[例](https://developer.microsoft.com/graph/examples)を参照してください。
 - 目次の「**詳細情報**」を見て、さまざまなシナリオで使用できるサービスや機能についての詳細情報を参照します _。_
-- [Graph エクスプローラー](https://developer.microsoft.com/graph/graph-explorer)でサンプルの要求を試します。
-- [クイック スタート](https://developer.microsoft.com/graph/quick-start)を使用して、すぐに実行できるサンプル アプリをセットアップします。
+- 
+  [Graph エクスプローラー](https://developer.microsoft.com/graph/graph-explorer)でサンプルの要求を試します。
+- 
+  [クイック スタート](https://developer.microsoft.com/graph/quick-start)を使用して、すぐに実行できるサンプル アプリをセットアップします。

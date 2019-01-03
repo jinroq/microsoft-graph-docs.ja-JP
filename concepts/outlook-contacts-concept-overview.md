@@ -53,7 +53,8 @@ Outlook [連絡先](/graph/api/resources/contact?view=graph-rest-1.0)のため�
 
 ## <a name="next-steps"></a>次のステップ
 
-- [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer/?request=me%2Fcontacts&version=v1.0) で連絡先サンプル クエリを選択して試行する。 左側の列の **[サンプルをさらに表示]** を選択します。 メニューを使用して **[個人用連絡先]** をオンにします。
+- 
+  [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer/?request=me%2Fcontacts&version=v1.0) で連絡先サンプル クエリを選択して試行する。 左側の列の **[サンプルをさらに表示]** を選択します。 メニューを使用して **[個人用連絡先]** をオンにします。
 - 以下について調べます。
   - [Outlook リソースの不変識別子の取得](outlook-immutable-id.md)
   - [共有の連絡先の取得](outlook-get-shared-contacts-folders.md)
