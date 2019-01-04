@@ -2,12 +2,12 @@
 title: 共有または委任された予定表内の Outlook イベントを取得する
 description: Outlook では、ユーザーが予定表を他のユーザーと共有し、他のユーザーがその予定表でイベントの表示や変更を行うことができます。 また、ユーザーは、会議出席依頼の受信と返信や、予定表項目の作成と変更を自分に代わって実行する代理人を許可することができます。
 author: angelgolfer-ms
-ms.openlocfilehash: 8ceb6a49b971c5ad01f27b53c0f3cd3cf047865d
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+ms.openlocfilehash: ef4de6cedeeb9a5688f250652eef0cd6cd5f5183
+ms.sourcegitcommit: 8feddb85e436be5581557a199f2e46d5b4ebfa21
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27346565"
+ms.lasthandoff: 12/22/2018
+ms.locfileid: "27413149"
 ---
 # <a name="get-outlook-events-in-a-shared-or-delegated-calendar"></a>共有または委任された予定表内の Outlook イベントを取得する
 
@@ -16,6 +16,8 @@ Outlook では、ユーザーが予定表を他のユーザーと共有し、他
 Microsoft Graph では、他のユーザーによって共有された予定表のイベントを取得したり、共有フォルダー自体を取得したりする機能がプログラムとしてサポートされています。 サポートは、委任された予定表にも適用されます。
 
 たとえば、Garth が John と既定の予定表を共有し、John に読み取りアクセス権を与えたとします。 John がアプリにサインインし、委任されたアクセス許可 (Calendars.Read.Shared または Calendars.ReadWrite.Shared) を与えた場合、アプリでは、下記のようにして Garth の既定の予定表フォルダーと、その予定表内にあるイベントにアクセスすることができます。
+
+> **注** 共有アクセス許可 (Calendars.Read.Shared または Calendars.ReadWrite.Shared) が与えられると、共有または委任されたカレンダーでイベントを読み書きできます。 そのようなフォルダーでアイテムの[変更通知をサブスクライブする](webhooks.md)ことはできません。 テナントで共有カレンダー、委任カレンダー、その他のユーザーまたはリソース カレンダーに含まれているイベントに変更通知サブスクリプションを設定するには、アプリケーション アクセス許可の Calendars.Read を使用します。
 
 ## <a name="get-an-event-in-the-shared-calendar"></a>共有予定表内のイベントを取得する
 

@@ -1,13 +1,13 @@
 ---
 title: 共有フォルダー内にある Outlook の連絡先を取得する
-description: " 別名 "
+description: Outlook では、ユーザーがフォルダーを互いに共有し、個々の連絡先フォルダーに対する読み取り、作成、変更、削除のアクセス権を与えることができます。 Outlook では、あるユーザーが、そのユーザーの代わりに操作する権限を別のユーザーに与えることもできます。
 author: angelgolfer-ms
-ms.openlocfilehash: a3dd8cff5cac88d3ef273b63f40bc8af87910aa1
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+ms.openlocfilehash: d0dc5be8df709c3d736ff0baa55667926cfc5936
+ms.sourcegitcommit: 8feddb85e436be5581557a199f2e46d5b4ebfa21
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27315177"
+ms.lasthandoff: 12/22/2018
+ms.locfileid: "27413156"
 ---
 # <a name="get-outlook-contacts-in-a-shared-folder"></a>共有フォルダー内にある Outlook の連絡先を取得する
 
@@ -16,6 +16,8 @@ Outlook では、ユーザーがフォルダーを互いに共有し、個々の
 Microsoft Graph では、他のユーザーによって共有された連絡先フォルダーの連絡先を取得したり、共有フォルダー自体を取得したりする機能がプログラムとしてサポートされています。 また、委任メールボックスのフォルダーにもサポートが適用されます。
 
 たとえば、Garth が John とカスタム連絡先フォルダーを共有し、John に読み取りアクセス権を与えたとします。 John がアプリにサインインし、委任されたアクセス許可 (Contacts.Read.Shared または Contacts.ReadWrite.Shared) を与えた場合、アプリでは、下記のようにして Garth のカスタム連絡先フォルダーと、そのフォルダー内にある連絡先にアクセスすることができます。
+
+> **注** 共有アクセス許可 (Contacts.Read.Shared または Contacts.ReadWrite.Shared) が与えられると、共有または委任されたフォルダーで連絡先を読み書きできます。 そのようなフォルダーでアイテムの[変更通知をサブスクライブする](webhooks.md)ことはできません。 テナントで共有フォルダー、委任フォルダー、その他のユーザーの連絡先フォルダーに含まれている連絡先に変更通知サブスクリプションを設定するには、アプリケーション アクセス許可の Contacts.Read を使用します。
 
 ## <a name="get-a-contact-in-the-shared-folder"></a>共有フォルダー内の連絡先を取得
 
