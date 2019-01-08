@@ -2,24 +2,30 @@
 title: イベント リソースの種類
 description: 予定表内のイベントです。
 author: angelgolfer-ms
-ms.openlocfilehash: 45b5131b14e9bf50c8dc0bc3db869b706a3068ba
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+ms.openlocfilehash: e60b070ab6b02ca0373d4aebcef4202f42a4f1a5
+ms.sourcegitcommit: 37591c2299c80e7675cd2b5f781e1eeeba628a60
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27340650"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "27748487"
 ---
 # <a name="event-resource-type"></a>イベント リソースの種類
 
 > **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。
 
-予定表内のイベントです。
+[ユーザー](user.md)の予定表、または Office 365 の[グループ](group.md)の既定の予定表のイベントです。
 
 このリソースは以下をサポートしています。
 
 - [拡張機能](/graph/extensibility-overview)として、カスタム プロパティに独自のデータを追加します。
 - [変更通知](/graph/webhooks)にサブスクライブします。
 - [デルタ](../api/event-delta.md)関数を提供することにより、[デルタ クエリ](/graph/delta-query-overview)を使用して、増分の追加、削除、更新を追跡します。
+
+> **注:** ユーザーの予定表、グループ予定表、およびそのイベントと対話できるように、いくつかの小さな違いがあります。
+
+ - の[calendarGroup](calendargroup.md)のユーザーの予定表のみを整理することができます。
+ - Outlook は、グループのためのすべての会議出席依頼を自動的に受け入れます。 _ユーザー_の予定表のみの[承諾](../api/event-accept.md)、[仮承諾](../api/event-tentativelyaccept.md)、または会議出席依頼を[辞退する](../api/event-decline.md)ことをがします。
+  - Outlook は、グループのイベントのアラームをサポートしていません。 [再通知](../api/event-snoozereminder.md)や[アラーム](reminder.md)を[消す](../api/event-dismissreminder.md)を_ユーザー_の予定表のみにできます。
 
 ## <a name="json-representation"></a>JSON 表記
 
@@ -85,7 +91,7 @@ ms.locfileid: "27340650"
 
 ```
 ## <a name="properties"></a>プロパティ
-| プロパティ     | 種類   |説明|
+| プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
 |attendees|[出席者](attendee.md)コレクション|イベントの参加者のコレクションです。|
 |body|[ItemBody](itembody.md)|イベントに関連付けられたメッセージの本文。HTML 形式またはテキスト形式にできます。|
@@ -104,7 +110,7 @@ ms.locfileid: "27340650"
 |lastModifiedDateTime|DateTimeOffset|Timestamp 型は、ISO 8601 形式を使用して日付と時刻の情報を表し、必ず UTC 時間です。たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、次のようになります。`'2014-01-01T00:00:00Z'`|
 |location|[Location](location.md)|イベントの場所。|
 |locations|[場所](location.md)のコレクション|イベントを開催する場所、または参加者がいる場所。 **location** プロパティと **locations** プロパティは常に互いに一致します。 **location** プロパティを更新すると、**locations** コレクションに含まれる既存のすべての場所が削除されて、**location** の新しい値に置き換えられます。 |
-|onlineMeetingUrl|String|オンライン会議の URL。 会議の開催者として、Skype などのオンライン会議イベントを指定する場合にのみ、プロパティが設定されています。 読み取り専用です。|
+|onlineMeetingUrl|String|オンライン会議の URL。 会議の開催者として、Skype などのオンライン会議イベントを指定する場合にのみ、プロパティが設定されています。 値の取得のみ可能です。|
 |organizer|[Recipient](recipient.md)|イベントの開催者。|
 |originalEndTimeZone|String|イベントの作成時に設定された終了タイム ゾーン。 値 `tzone://Microsoft/Custom` は、デスクトップの Outlook で、従来のカスタム タイム ゾーンが設定されていることを示します。|
 |originalStart|DateTimeOffset|Timestamp 型は、ISO 8601 形式を使用して日付と時刻の情報を表し、必ず UTC 時間です。たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、次のようになります。`'2014-01-01T00:00:00Z'`|
@@ -118,7 +124,7 @@ ms.locfileid: "27340650"
 |showAs|String|表示するステータス。 使用可能な値: `free`、`tentative`、`busy`、`oof`、`workingElsewhere`、`unknown`。|
 |開始|[DateTimeTimeZone](datetimetimezone.md)|イベントの開始時刻です。|
 |subject|String|イベントの件名行のテキスト。|
-|type|String|イベントの種類。 使用可能な値: `singleInstance`、`occurrence`、`exception`、`seriesMaster`。 取得のみ可能な値です|
+|type|String|イベントの種類。 使用可能な値: `singleInstance`、`occurrence`、`exception`、`seriesMaster`。 取得のみ可能です。|
 |uid|String|複数の予定表で 1 つのイベントのすべてのインスタンスによって共有される一意識別子。 **注:** このプロパティと同じ目的を機能する、 `iCalUid` v1.0 のエンドポイント上の[イベントのリソース](/graph/api/resources/event?view=graph-rest-1.0)のプロパティが同じ値を持つことは保証されませんが、します。|
 |webLink|String|Outlook Web App でイベントを開く URL。<br/><br/>Outlook Web App のメールボックスにログインしている場合、ブラウザーでイベントが開きます。まだブラウザーでログインしていない場合、ログインするように求められます。<br/><br/>この URL には、iFrame 内からアクセスできます。|
 
@@ -142,13 +148,13 @@ ms.locfileid: "27340650"
 |[更新する](../api/event-update.md) | [event](event.md)   |イベント オブジェクトを更新します。 |
 |[削除](../api/event-delete.md) | なし |イベント オブジェクトを削除します。 |
 |[cancel](../api/event-cancel.md) | なし | 開催者から出席者全員にキャンセルについてのメッセージを送信し、指定された会議をキャンセルします。 |
-|[承諾](../api/event-accept.md)|なし|指定したイベントを承諾します。|
-|[tentativelyAccept](../api/event-tentativelyaccept.md)|なし|指定したイベントを仮承諾します。|
-|[辞退](../api/event-decline.md)|なし|指定したイベントへの招待を辞退します。|
+|[承諾](../api/event-accept.md)|なし|ユーザーの予定表で指定したイベントをそのまま使用します。|
+|[tentativelyAccept](../api/event-tentativelyaccept.md)|なし|ユーザーの予定表で指定したイベントを仮承諾します。|
+|[辞退](../api/event-decline.md)|なし|ユーザーの予定表で指定したイベントへの招待を辞退します。|
 |[forward](../api/event-forward.md)|なし|新しい受信者に会議出席依頼を転送の開催者または出席者が会議のイベントのことができます。|
 |[delta](../api/event-delta.md)|[event](event.md) コレクション|ユーザーの標準として設定されている予定表の**calendarView** において追加、削除、更新された一連のイベント (さまざまなイベント) を取得します。|
-|[dismissReminder](../api/event-dismissreminder.md)|なし|指定したイベントのアラームを無視します。|
-|[snoozeReminder](../api/event-snoozereminder.md)|なし|指定したイベントのアラームを再通知します。|
+|[dismissReminder](../api/event-dismissreminder.md)|なし|ユーザーの予定表で指定したイベントの事前通知を無視します。|
+|[snoozeReminder](../api/event-snoozereminder.md)|なし|までは新しいユーザーの予定表で指定したイベントのアラームを延期します。|
 |[インスタンスの一覧表示](../api/event-list-instances.md) |[Event](event.md) collection| Event オブジェクトのコレクションを取得します。|
 |**添付ファイル**| | |
 |[添付ファイルを一覧表示する](../api/event-list-attachments.md) |[Attachment](attachment.md) コレクション| イベントのすべての添付ファイルを取得します。|

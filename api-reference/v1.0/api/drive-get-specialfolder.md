@@ -3,12 +3,12 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
 title: 特殊フォルダーを取得する
-ms.openlocfilehash: 31d8abe09e89f4a040df473682217f2f4fc0b596
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.openlocfilehash: 758d46b8237ecd2ce94d4e3a270a188300817fcf
+ms.sourcegitcommit: 37591c2299c80e7675cd2b5f781e1eeeba628a60
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27022449"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "27748256"
 ---
 # <a name="get-a-special-folder-by-name"></a>名前で特殊フォルダーを取得する
 
@@ -55,7 +55,7 @@ GET /me/drive/special/{name}
 
 このメソッドは、応答をカスタマイズするための `$expand` と `$select` の [OData クエリ パラメーター](/graph/query-parameters)をサポートします。
 
-## <a name="http-response"></a>HTTP 応答
+## <a name="response"></a>応答
 
 このメソッドは `200 OK` 応答コードと、応答本文で [driveItem](../resources/driveitem.md) オブジェクトを返します。
 
@@ -89,7 +89,7 @@ Content-type: application/json
 GET /me/drive/special/{special-folder-name}/children
 ```
 
-### <a name="http-response"></a>HTTP 応答
+### <a name="response"></a>応答
 
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.driveItem", "isCollection": true, "truncated": true} -->
 

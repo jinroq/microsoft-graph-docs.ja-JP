@@ -1,12 +1,12 @@
 ---
 title: 推移的なメンバーのグループ一覧
 description: グループのメンバーの一覧を取得します。 グループでは、メンバーとしてユーザー、連絡先、デバイス、サービス ・ プリンシパル、およびその他のグループを持つことができます。 この操作は推移的もすべての入れ子にされたメンバーの一覧を返します。
-ms.openlocfilehash: a3cdc0048db3b3d1aa90b5d3426d22439a18b298
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.openlocfilehash: 703515f4549e409d3711699c79671ed0b1a93cb3
+ms.sourcegitcommit: 37591c2299c80e7675cd2b5f781e1eeeba628a60
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27069864"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "27748557"
 ---
 # <a name="list-group-transitive-members"></a>推移的なメンバーのグループ一覧
 
@@ -63,7 +63,7 @@ GET /groups/{id}/transitiveMembers
 }-->
 
 ```http
-GET https://graph.microsoft.com/beta/groups/{id}/tranisitiveMembers
+GET https://graph.microsoft.com/beta/groups/{id}/transitiveMembers
 ```
 
 ### <a name="response"></a>応答

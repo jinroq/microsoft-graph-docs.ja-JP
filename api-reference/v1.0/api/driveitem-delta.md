@@ -3,12 +3,12 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
 title: ドライブのコンテンツを同期する
-ms.openlocfilehash: d1fa3cb1e28a22f8cd8b016b9f6a93ff9ec41583
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.openlocfilehash: 0c884c69a7c162fb5009dfda80e8def4ee201033
+ms.sourcegitcommit: 37591c2299c80e7675cd2b5f781e1eeeba628a60
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27022663"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "27748550"
 ---
 # <a name="track-changes-for-a-drive"></a>ドライブの変更履歴を記録する
 
@@ -46,9 +46,9 @@ GET /users/{userId}/drive/root/delta
 
 ## <a name="function-parameters"></a>関数パラメーター
 
-| 名前   | 値  | 説明                                                                                                                          |
+| Parameter   | 種類  | 説明                                                                                                                          |
 |:-------|:-------|:-------------------------------------------------------------------------------------------------------------------------------------|
-| token  | 文字列 | 省略可能。 オプションを指定しない場合は、階層の現在の状態を列挙します。 場合`latest`、最新のデルタ ・ トークンを使用して応答を空にするを返します。 場合、以前のデルタ ・ トークンは、そのトークンから新しい状態を返します。
+| token  | string | 省略可能。 オプションを指定しない場合は、階層の現在の状態を列挙します。 場合`latest`、最新のデルタ ・ トークンを使用して応答を空にするを返します。 場合、以前のデルタ ・ トークンは、そのトークンから新しい状態を返します。
 
 ## <a name="optional-query-parameters"></a>オプションのクエリ パラメーター
 
@@ -205,10 +205,9 @@ Content-type: application/json
 * OneDrive for Business および SharePoint では、`delta` は `root` フォルダーでのみサポートされ、ドライブ内の他のフォルダーではサポートされません。
 
 * Delta は DriveItem の次のプロパティを返しません。
-
-* **cTag**
-* **lastModifiedBy**
-* **size**
+  * **cTag**
+  * **lastModifiedBy**
+  * **size**
 
 ## <a name="error-responses"></a>エラー応答
 

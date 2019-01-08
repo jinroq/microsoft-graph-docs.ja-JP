@@ -3,12 +3,12 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
 title: ドライブのコンテンツを同期する
-ms.openlocfilehash: 4ccaec230d5801f563f81e6a30584db9f7ed5714
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.openlocfilehash: b16787a3939d514e3c84ea0f06b562cd3c689e76
+ms.sourcegitcommit: 37591c2299c80e7675cd2b5f781e1eeeba628a60
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27067957"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "27748431"
 ---
 # <a name="track-changes-for-a-drive"></a>ドライブの変更履歴を記録する
 
@@ -48,9 +48,9 @@ GET /users/{userId}/drive/root/delta
 
 ## <a name="function-parameters"></a>関数パラメーター
 
-| 名前   | 値  | 説明                                                                                                                          |
+| Parameter   | 種類  | 説明                                                                                                                          |
 |:-------|:-------|:-------------------------------------------------------------------------------------------------------------------------------------|
-| token  | 文字列 | 省略可能。 オプションを指定しない場合は、階層の現在の状態を列挙します。 場合`latest`、最新のデルタ ・ トークンを使用して応答を空にするを返します。 場合、以前のデルタ ・ トークンは、そのトークンから新しい状態を返します。
+| token  | string | 省略可能。 オプションを指定しない場合は、階層の現在の状態を列挙します。 場合`latest`、最新のデルタ ・ トークンを使用して応答を空にするを返します。 場合、以前のデルタ ・ トークンは、そのトークンから新しい状態を返します。
 
 ## <a name="optional-query-parameters"></a>オプションのクエリ パラメーター
 

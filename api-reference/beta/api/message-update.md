@@ -2,12 +2,12 @@
 title: メッセージを更新する
 description: メッセージ オブジェクトのプロパティを更新します。
 author: angelgolfer-ms
-ms.openlocfilehash: 9c717e913c641b6dffd582252538965961369a7f
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+ms.openlocfilehash: 04a52e28728eda7d778ac76cdc69080cd5b9edf5
+ms.sourcegitcommit: 37591c2299c80e7675cd2b5f781e1eeeba628a60
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27321477"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "27748543"
 ---
 # <a name="update-message"></a>メッセージを更新する
 
@@ -32,30 +32,32 @@ PATCH /me/mailFolders/{id}/messages/{id}
 PATCH /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}
 ```
 ## <a name="request-headers"></a>要求ヘッダー
-| 名前       | 種類 | 説明|
+| 名前       | 型 | 説明|
 |:-----------|:------|:----------|
 | Authorization  | string  | ベアラー {トークン}。必須。 |
 | Content-Type | string  | エンティティ本文内のデータの性質です。必須。 |
 ## <a name="request-body"></a>要求本文
-要求本文で、更新する関連フィールドの値を指定します。要求本文に含まれない既存のプロパティは、以前の値のままになるか、他のプロパティ値の変化に基づいて再計算されます。最適なパフォーマンスを得るためには、変更されていない既存の値を含めないでください。以下のプロパティは書き込み可能または更新可能です。
+要求本文で、更新する関連フィールドの値を指定します。 要求本文に含まれない既存のプロパティは、以前の値のままになるか、他のプロパティ値の変更に基づいて再計算されます。 最適なパフォーマンスを得るためには、変更されていない既存の値を含めないでください。 次のプロパティを更新することができます。
 
-| プロパティ     | 種類   |説明|
+| プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
-|bccRecipients|Recipient|メッセージの BCC 受信者。 更新可能な場合にのみ isDraft = true です。|
+|bccRecipients|Recipient|メッセージの BCC 受信者。 |
+|body|ItemBody|メッセージの本文。 更新可能な場合にのみ isDraft = true です。|
 |categories|String コレクション|メッセージに関連付けられたカテゴリ。|
-|ccRecipients|Recipient collection|メッセージの CC 受信者。 更新可能な場合にのみ isDraft = true です。|
-|from|Recipient|メッセージのメールボックス所有者と送信者。 更新可能な場合にのみ isDraft = true です。 使用される実際のメールボックスに対応する必要があります。 |
+|ccRecipients|Recipient collection|メッセージの CC 受信者。 |
+|from|Recipient|メッセージのメールボックス所有者と送信者。 使用される実際のメールボックスに対応する必要があります。 |
 |importance|String|メッセージの重要度です。可能な値は、`Low`、`Normal`、`High` です。|
 |inferenceClassification | String | 推定される関連性や重要性、または明示的なオーバーライドに基づく、ユーザーのメッセージの分類です。使用可能な値: `focused` または `other`。 |
 |internetMessageId |String |[RFC2822](https://www.ietf.org/rfc/rfc2822.txt) によって指定された形式のメッセージ ID。 更新可能な場合にのみ isDraft = true です。|
-|isRead|Boolean|メッセージが読み取られたかどうかを示します。|
-|replyTo|Recipient collection|返信時に使用される電子メール アドレス。 更新可能な場合にのみ isDraft = true です。|
-|sender|Recipient|メッセージを生成するために実際に使用されるアカウント。 更新可能な場合にのみ isDraft = true の場合と[共有されているメールボックス](https://docs.microsoft.com/en-us/exchange/collaboration/shared-mailboxes/shared-mailboxes)からメッセージを送信すると[デリゲート](https://support.office.com/en-us/article/allow-someone-else-to-manage-your-mail-and-calendar-41c40c04-3bd1-4d22-963a-28eafec25926)としてメッセージを送信します。 いずれの場合も、値は、使用される実際のメールボックスに対応する必要があります。|
-|toRecipients|Recipient collection|宛先] の受信者のメッセージです。 更新可能な場合にのみ isDraft = true です。|
-|body|ItemBody|メッセージの本文。 更新可能な場合にのみ isDraft = true です。|
 |isDeliveryReceiptRequested|Boolean|メッセージの開封応答が要求されているかどうかを示します。|
-|isReadReceiptRequested|Boolean|メッセージの開封応答が要求されているかどうかを示します。|
+|isRead|Boolean|メッセージが開封されたかどうかを示します。|
+|isReadReceiptRequested|Boolean|メッセージの開封確認メッセージが要求されているかどうかを示します。|
+|multiValueExtendedProperties|[multiValueLegacyExtendedProperty](../resources/multivaluelegacyextendedproperty.md) collection| 複数値のコレクションでは、メッセージに対して定義されたプロパティを拡張します。 Null 許容型。|
+|replyTo|Recipient collection|返信時に使用される電子メール アドレス。 更新可能な場合にのみ isDraft = true です。|
+|sender|Recipient|メッセージを生成するために実際に使用されるアカウント。 [共有されているメールボックス](https://docs.microsoft.com/en-us/exchange/collaboration/shared-mailboxes/shared-mailboxes)、または[委任](https://support.office.com/en-us/article/allow-someone-else-to-manage-your-mail-and-calendar-41c40c04-3bd1-4d22-963a-28eafec25926)としてメッセージを送信するメッセージを送信するときに更新します。 いずれの場合も、値は、使用される実際のメールボックスに対応する必要があります。|
+|singleValueExtendedProperties|[singleValueLegacyExtendedProperty](../resources/singlevaluelegacyextendedproperty.md) collection| 単一値のコレクションでは、メッセージに対して定義されたプロパティを拡張します。 Null 許容型。|
 |subject|String|メッセージの件名。 更新可能な場合にのみ isDraft = true です。|
+|toRecipients|Recipient collection|宛先] の受信者のメッセージです。 |
 
 **メッセージ** リソースは[拡張機能](/graph/extensibility-overview)をサポートしているため、`PATCH` 操作を使用して、既存の**メッセージ** インスタンスで拡張機能のカスタム プロパティにあるアプリ固有のデータを追加、更新、または削除することができます。
 

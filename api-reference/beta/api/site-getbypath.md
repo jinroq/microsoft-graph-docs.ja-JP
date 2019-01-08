@@ -3,12 +3,12 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
 title: パスを使用した SharePoint サイトの取得
-ms.openlocfilehash: 4e037bb066a113962ff35662e781b388c81ca143
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.openlocfilehash: 7d63fd3651ab870318af46a298d6b945f331eda8
+ms.sourcegitcommit: 37591c2299c80e7675cd2b5f781e1eeeba628a60
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27069671"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "27748277"
 ---
 # <a name="get-a-site-resource-by-path"></a>パスを使用したサイト リソースの取得
 
@@ -48,7 +48,7 @@ ms.locfileid: "27069671"
 GET /sites/{hostname}:/{relative-path}
 ```
 
-## <a name="http-response"></a>HTTP 応答
+## <a name="response"></a>応答
 
 このメソッドは、一意の識別子によって参照されるサイトの[サイト][] リソースを返します。
 

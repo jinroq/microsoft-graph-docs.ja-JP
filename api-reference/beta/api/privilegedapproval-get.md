@@ -1,12 +1,12 @@
 ---
 title: PrivilegedApproval を取得します。
 description: プロパティと privilegedapproval オブジェクトの関係を取得します。
-ms.openlocfilehash: 77db18f46bbdfec6a5a9a62e4e481facaab6cb8c
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.openlocfilehash: 9fb7aee3184413aa51dc553e5a2bcd694076d579
+ms.sourcegitcommit: 37591c2299c80e7675cd2b5f781e1eeeba628a60
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27072477"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "27748200"
 ---
 # <a name="get-privilegedapproval"></a>PrivilegedApproval を取得します。
 
@@ -19,7 +19,7 @@ ms.locfileid: "27072477"
 
 |アクセス許可の種類      | アクセス許可 (特権の小さいものから大きいものへ)              |
 |:--------------------|:---------------------------------------------------------|
-|委任 (職場または学校のアカウント) | Directory.AccessAsUser.All    |
+|委任 (職場または学校のアカウント) | PrivilegedAccess.ReadWrite.AzureAD、Directory.AccessAsUser.All   |
 |委任 (個人用 Microsoft アカウント) | サポートされていません。    |
 |アプリケーション | サポートされていません。 |
 

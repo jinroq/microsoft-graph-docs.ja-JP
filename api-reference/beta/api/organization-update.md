@@ -1,19 +1,21 @@
 ---
 title: 組織を更新する
 description: 現在認証されている組織のプロパティを更新します。
-ms.openlocfilehash: 62e03d7bee58f14acc5d5ace12d55f95d1d07a2d
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.openlocfilehash: a7b9521ccd39cb7cb64236c7d563a8a5c08d64a3
+ms.sourcegitcommit: 37591c2299c80e7675cd2b5f781e1eeeba628a60
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27068343"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "27748564"
 ---
 # <a name="update-organization"></a>組織を更新する
 
 > **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。
 
-現在認証されている組織のプロパティを更新します。
+現在認証されている組織のプロパティを更新します。 この例では、 `organization` 、1 つのレコードの集合として定義されている要求の**ID**を指定する必要がありますので。  **ID**は、組織の**tenantId**とも呼ばれます。
+
 ## <a name="permissions"></a>アクセス許可
+
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
 
 |アクセス許可の種類 | アクセス許可 (特権の小さいものから大きいものへ) |
@@ -23,17 +25,21 @@ ms.locfileid: "27068343"
 |アプリケーション | サポートされていません。 |
 
 ## <a name="http-request"></a>HTTP 要求
-<!-- { "blockType": "ignored" } -->
-```http
-PATCH /organization
 
+<!-- { "blockType": "ignored" } -->
+
+```http
+PATCH /organization/{id}
 ```
+
 ## <a name="request-headers"></a>要求ヘッダー
+
 | 名前       | 型 | 説明|
 |:-----------|:------|:----------|
 | Authorization  | string  | ベアラー {トークン}。必須。 |
 
 ## <a name="request-body"></a>要求本文
+
 要求本文で、更新する関連フィールドの値を指定します。要求本文に含まれない既存のプロパティは、以前の値のままになるか、他のプロパティ値の変化に基づいて再計算されます。最適なパフォーマンスを得るためには、変更されていない既存の値を含めないでください。
 
 | プロパティ     | 型   |説明|
@@ -57,8 +63,9 @@ PATCH /organization
   "blockType": "request",
   "name": "update_organization"
 }-->
+
 ```http
-PATCH https://graph.microsoft.com/beta/organization
+PATCH https://graph.microsoft.com/beta/organization/{id}
 Content-type: application/json
 Content-length: 411
 
@@ -74,13 +81,16 @@ Content-length: 411
   "technicalNotificationMails" : ["tech@contoso.com"]
 }
 ```
+
 ##### <a name="response"></a>応答
+
 以下は、応答の例です。
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.administrativeunit"
+  "@odata.type": "microsoft.graph.organization"
 } -->
+
 ```http
 HTTP/1.1 204 No Content
 ```
@@ -89,6 +99,7 @@ HTTP/1.1 204 No Content
 
 - [拡張機能を使用してカスタム データをリソースに追加する](/graph/extensibility-overview)
 - [オープン拡張機能を使用したユーザーへのカスタム データの追加 (プレビュー)](/graph/extensibility-open-users)
+
 <!--
 - [Add custom data to groups using schema extensions (preview)](/graph/extensibility-schema-groups)
 -->

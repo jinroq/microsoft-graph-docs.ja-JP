@@ -3,12 +3,12 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
 title: 再開可能なファイル アップロード
-ms.openlocfilehash: 09f76b4427df446b2f063827029473a11dba6341
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.openlocfilehash: b4519de2a4fb417ce8a0b4524fff6d60547be7ec
+ms.sourcegitcommit: 37591c2299c80e7675cd2b5f781e1eeeba628a60
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27067080"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "27748438"
 ---
 # <a name="upload-large-files-with-an-upload-session"></a>アップロード セッションを使ってサイズが大きいファイルをアップロードする
 
@@ -84,10 +84,10 @@ POST /users/{userId}/drive/items/{itemId}/createUploadSession
 
 ## <a name="parameters"></a>パラメーター
 
-| パラメーター            | 型                          | 説明
+| Parameter            | 種類                          | 説明
 |:---------------------|:------------------------------|:---------------------------------
 | item                 | driveItemUploadableProperties | アップロードされているファイルに関するデータ
-| deferCommit          | ブール値                       | 場合はコピー先のファイルの場合は true、最終の作成に設定するには、明示的な要求が必要となります。 ビジネスの OneDrive でのみ。
+| deferCommit          | Boolean                       | 場合はコピー先のファイルの場合は true、最終の作成に設定するには、明示的な要求が必要となります。 ビジネスの OneDrive でのみ。
 
 ## <a name="item-properties"></a>アイテムのプロパティ
 
@@ -365,7 +365,7 @@ If-Match: {etag or ctag}
 
 **注:** この呼び出しでは、想定どおりに `@microsoft.graph.conflictBehavior` ヘッダーと `if-match` ヘッダーを使用できます。
 
-### <a name="http-response"></a>HTTP 応答
+### <a name="response"></a>応答
 
 新しいメタデータを使用してファイルをコミットできる場合は、`HTTP 201 Created` または `HTTP 200 OK` の応答が、アップロードしたファイルのアイテム メタデータとともに返されます。
 

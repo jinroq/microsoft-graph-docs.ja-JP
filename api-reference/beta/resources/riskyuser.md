@@ -2,12 +2,12 @@
 title: riskyUsers リソースの種類
 description: 危険にさらされている Azure AD ユーザーを表します。 Azure AD を継続的には、さまざまな信号と機械学習に基づくユーザーのリスクを評価します。 この API では、Azure の AD に問題が生じているすべてのユーザーにプログラムによるアクセスを提供します。
 author: cloudhandler
-ms.openlocfilehash: b987b36ce1b695e2f1707a44d628850a39929e80
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+ms.openlocfilehash: bc8b64b93662511fffe709a18fb3e7210f3a941b
+ms.sourcegitcommit: 37591c2299c80e7675cd2b5f781e1eeeba628a60
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27303123"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "27748263"
 ---
 # <a name="riskyusers-resource-type"></a>riskyUsers リソースの種類
 
@@ -26,9 +26,9 @@ ms.locfileid: "27303123"
 |[リスト riskyUsers](../api/riskyusers-list.md) | [riskyUsers](riskyuser.md) |危険なユーザーとそのプロパティを一覧表示します。|
 |[RiskyUsers を取得します。](../api/riskyusers-get.md) | [riskyUsers](riskyuser.md)|特定のリスクの高いユーザーとそのプロパティを取得します。|
 
-## <a name="properties"></a>Properties
+## <a name="properties"></a>プロパティ
 
-| プロパティ   | 種類|説明|
+| プロパティ   | 型|説明|
 |:---------------|:--------|:----------|
 |`id`|`string`|リスクのユーザーの一意の id|
 |`isDeleted`|`bool`|ユーザーを削除するかどうかを示します。 使用可能な値: `true`、`false`|
@@ -71,7 +71,7 @@ ms.locfileid: "27303123"
 "isDeleted": "boolean",
 "riskDetail":  {"@odata.type": "microsoft.graph.riskDetail"},
 "riskLevel":  {"@odata.type": "microsoft.graph.riskLevel"},
-"riskState":  {"@odata.type": "microsoft.graph.riskState"}
+"riskState":  {"@odata.type": "microsoft.graph.riskState"},
 "userDisplayName": "string",
 "userPrincipalName": "string"
 }

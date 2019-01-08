@@ -3,12 +3,12 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
 title: ドライブを取得する
-ms.openlocfilehash: 6ff71104c18a5a9354d18689c62a96be72b7fe12
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.openlocfilehash: 67d5dd612073db96ebcc5bf9c19aa004a034243c
+ms.sourcegitcommit: 37591c2299c80e7675cd2b5f781e1eeeba628a60
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27021489"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "27748424"
 ---
 # <a name="get-drive"></a>ドライブを取得する
 
@@ -58,7 +58,7 @@ GET /users/{idOrUserPrincipalName}/drive
 
 | パラメーター名 | 値  | 説明                                       |
 |:---------------|:-------|:--------------------------------------------------|
-| _idOrUserPrincipalName_     | 文字列 | 必須。 OneDrive を所有するユーザー オブジェクトの識別子。 |
+| _idOrUserPrincipalName_     | string | 必須。 OneDrive を所有するユーザー オブジェクトの識別子。 |
 
 ## <a name="get-the-document-library-associated-with-a-group"></a>グループに関連付けられたドキュメント ライブラリを取得する
 
@@ -76,7 +76,7 @@ GET /groups/{groupId}/drive
 
 | パラメーター名 | 値  | 説明                                       |
 |:---------------|:-------|:--------------------------------------------------|
-| _groupId_      | 文字列 | 必須。 ドキュメント ライブラリを所有するグループの識別子。 |
+| _groupId_      | string | 必須。 ドキュメント ライブラリを所有するグループの識別子。 |
 
 ## <a name="get-the-document-library-for-a-site"></a>サイトのドキュメント ライブラリを取得する
 
@@ -92,7 +92,7 @@ GET /sites/{siteId}/drive
 
 | パラメーター名 | 値  | 説明                                       |
 |:---------------|:-------|:--------------------------------------------------|
-| _siteId_       | 文字列 | 必須。 ドキュメント ライブラリを含むサイトの識別子。 |
+| _siteId_       | string | 必須。 ドキュメント ライブラリを含むサイトの識別子。 |
 
 ## <a name="get-a-drive-by-id"></a>ID によりドライブを取得する
 
@@ -110,13 +110,13 @@ GET /drives/{drive-id}
 
 | パラメーター名 | 値  | 説明                                       |
 |:---------------|:-------|:--------------------------------------------------|
-| _driveId_      | 文字列 | 必須。 要求されるドライブの識別子。 |
+| _driveId_      | string | 必須。 要求されるドライブの識別子。 |
 
 ## <a name="optional-query-parameters"></a>オプションのクエリ パラメーター
 
 応答を形成するため、これらのメソッドは [$select クエリ パラメーター][odata-query-parameters]をサポートしています。
 
-## <a name="http-response"></a>HTTP 応答
+## <a name="response"></a>応答
 
 各メソッドは、一致するドライブに応じた [Drive リソース][drive-resource]を応答本文で返します。
 

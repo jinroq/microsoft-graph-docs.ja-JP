@@ -2,16 +2,16 @@
 title: イベント リソースの種類
 description: 予定表内のイベントです。
 author: angelgolfer-ms
-ms.openlocfilehash: 2caa1cb51da5f9d9ae8808b574e2787fbb63da46
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+ms.openlocfilehash: 3bb597f8e8e157f0a75b2538b233ee57934827c5
+ms.sourcegitcommit: 37591c2299c80e7675cd2b5f781e1eeeba628a60
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27356596"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "27748515"
 ---
 # <a name="event-resource-type"></a>イベント リソースの種類
 
-予定表内のイベントです。
+[ユーザー](user.md)の予定表、または Office 365 の[グループ](group.md)の既定の予定表のイベントです。
 
 このリソースは以下をサポートしています。
 
@@ -19,6 +19,11 @@ ms.locfileid: "27356596"
 - [変更通知](/graph/webhooks)にサブスクライブします。
 - [デルタ](../api/event-delta.md)関数を提供することにより、[デルタ クエリ](/graph/delta-query-overview)を使用して、増分の追加、削除、更新を追跡します。
 
+> **注:** ユーザーの予定表、グループ予定表、およびそのイベントと対話できるように、いくつかの小さな違いがあります。
+
+ - の[calendarGroup](calendargroup.md)のユーザーの予定表のみを整理することができます。
+ - Outlook は、グループのためのすべての会議出席依頼を自動的に受け入れます。 _ユーザー_の予定表のみの[承諾](../api/event-accept.md)、[仮承諾](../api/event-tentativelyaccept.md)、または会議出席依頼を[辞退する](../api/event-decline.md)ことをがします。
+  - Outlook は、グループのイベントのアラームをサポートしていません。 [再通知](../api/event-snoozereminder.md)や[アラーム](reminder.md)を[消す](../api/event-dismissreminder.md)を_ユーザー_の予定表のみにできます。
 
 ## <a name="methods"></a>メソッド
 
@@ -29,12 +34,12 @@ ms.locfileid: "27356596"
 |[イベントの取得](../api/event-get.md) | [event](event.md) |event オブジェクトのプロパティとリレーションシップを読み取ります。|
 |[更新する](../api/event-update.md) | [event](event.md) |イベント オブジェクトを更新します。 |
 |[削除](../api/event-delete.md) | なし |イベント オブジェクトを削除します。 |
-|[承諾](../api/event-accept.md)|なし|指定したイベントを承諾します。|
-|[tentativelyAccept](../api/event-tentativelyaccept.md)|なし|指定したイベントを仮承諾します。|
-|[辞退](../api/event-decline.md)|なし|指定したイベントへの招待を辞退します。|
+|[承諾](../api/event-accept.md)|なし|ユーザーの予定表で指定したイベントをそのまま使用します。|
+|[tentativelyAccept](../api/event-tentativelyaccept.md)|なし|ユーザーの予定表で指定したイベントを仮承諾します。|
+|[辞退](../api/event-decline.md)|なし|ユーザーの予定表で指定したイベントへの招待を辞退します。|
 |[delta](../api/event-delta.md)|[event](event.md) コレクション|ユーザーの標準として設定されている予定表の**calendarView** において追加、削除、更新された一連のイベント (さまざまなイベント) を取得します。|
-|[dismissReminder](../api/event-dismissreminder.md)|なし|指定したイベントのアラームを無視します。|
-|[snoozeReminder](../api/event-snoozereminder.md)|なし|指定したイベントのアラームを再通知します。|
+|[dismissReminder](../api/event-dismissreminder.md)|なし|ユーザーの予定表で指定したイベントの事前通知を無視します。|
+|[snoozeReminder](../api/event-snoozereminder.md)|なし|までは新しいユーザーの予定表で指定したイベントのアラームを延期します。|
 |[インスタンスの一覧表示](../api/event-list-instances.md) |[event](event.md) コレクション| 指定した時間範囲のイベントのインスタンス (発生) を取得します。イベントが `SeriesMaster` タイプである場合、これは指定した時間範囲内のイベントの発生と例外を返します。|
 |**添付ファイル**| | |
 |[添付ファイルを一覧表示する](../api/event-list-attachments.md) |[attachment](attachment.md) コレクション| イベントのすべての添付ファイルを取得します。|
@@ -49,7 +54,7 @@ ms.locfileid: "27356596"
 |[複数値の拡張プロパティを持つイベントの取得](../api/multivaluelegacyextendedproperty-get.md)  | [event](event.md) | `$expand` を使用して、複数値の拡張プロパティを含むイベントを取得します。 |
 
 ## <a name="properties"></a>プロパティ
-| プロパティ     | 種類   |説明|
+| プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
 |attendees|[attendee](attendee.md) コレクション|イベントの出席者のコレクション。|
 |body|[itemBody](itembody.md)|イベントに関連付けられたメッセージの本文。HTML 形式またはテキスト形式にできます。|
@@ -69,7 +74,7 @@ ms.locfileid: "27356596"
 |lastModifiedDateTime|DateTimeOffset|Timestamp 型は、ISO 8601 形式を使用して日付と時刻の情報を表し、必ず UTC 時間です。たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、次のようになります。`'2014-01-01T00:00:00Z'`|
 |location|[location](location.md)|イベントの場所。|
 |locations|[location](location.md) コレクション|イベントを開催する場所、または参加者がいる場所。 **location** プロパティと **locations** プロパティは常に互いに一致します。 **location** プロパティを更新すると、**locations** コレクションに含まれる既存のすべての場所が削除されて、**location** の新しい値に置き換えられます。 |
-|onlineMeetingUrl|String|オンライン会議の URL。 会議の開催者が Skype 会議などのオンラインの会議とイベントを指定するときにのみ、プロパティが設定されています。 読み取り専用です。|
+|onlineMeetingUrl|String|オンライン会議の URL。 会議の開催者が Skype 会議などのオンラインの会議とイベントを指定するときにのみ、プロパティが設定されています。 値の取得のみ可能です。|
 |organizer|[recipient](recipient.md)|イベントの開催者。|
 |originalEndTimeZone|String|イベントの作成時に設定された終了タイム ゾーン。 値 `tzone://Microsoft/Custom` は、デスクトップの Outlook で、従来のカスタム タイム ゾーンが設定されていることを示します。|
 |originalStart|DateTimeOffset|Timestamp 型は、ISO 8601 形式を使用して日付と時刻の情報を表し、必ず UTC 時間です。たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、次のようになります。`'2014-01-01T00:00:00Z'`|

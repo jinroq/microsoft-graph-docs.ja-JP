@@ -1,12 +1,12 @@
 ---
 title: Outlook カテゴリを更新する
 description: '指定した outlookCategory オブジェクトの書き込み可能な **color** プロパティを更新します。 **DisplayName**プロパティを変更することはできません。 '
-ms.openlocfilehash: 1b664ef4414a798fe3f8ee2cd517a75f96ff3dc6
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.openlocfilehash: c69dc260127938bd4afa33e7406ac38862ef837d
+ms.sourcegitcommit: 37591c2299c80e7675cd2b5f781e1eeeba628a60
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27024043"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "27748249"
 ---
 # <a name="update-outlook-category"></a>Outlook カテゴリを更新する
 
@@ -28,8 +28,6 @@ ms.locfileid: "27024043"
 PATCH /me/outlook/masterCategories/{id}
 PATCH /users/{id|userPrincipalName}/outlook/masterCategories/{id}
 ```
-## <a name="optional-query-parameters"></a>オプションのクエリ パラメーター
-このメソッドは、応答をカスタマイズするための [OData クエリ パラメーター](https://developer.microsoft.com/graph/docs/concepts/query_parameters)をサポートします。
 
 ## <a name="request-headers"></a>要求ヘッダー
 | 名前      |説明|

@@ -2,15 +2,15 @@
 title: 'user: reminderView'
 description: '指定した開始時刻と終了時刻内の予定表のアラームの一覧を返します。 '
 author: dkershaw10
-ms.openlocfilehash: 2e0b0e8bb76ee50a9af7246739e4ab8da973d3a8
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+ms.openlocfilehash: 4437e3972c56f8b85f8fe38d3c23a2e3461106f9
+ms.sourcegitcommit: 37591c2299c80e7675cd2b5f781e1eeeba628a60
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27356792"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "27748326"
 ---
 # <a name="user-reminderview"></a>user: reminderView
-指定した開始時刻と終了時刻内の予定表のアラームの一覧を返します。 
+内の指定した開始時刻と終了時刻、ユーザーの予定表のイベント通知の一覧を返します。 
 
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。

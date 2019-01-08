@@ -1,12 +1,12 @@
 ---
 title: リスト privilegedApproval
 description: Privilegedapproval オブジェクトのリストを取得します。
-ms.openlocfilehash: 69e558a734f86dd72b35e61d9f8ceab52b9f981e
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.openlocfilehash: 35b3e2cf6b4034731c8ddf9d1af41e129acbfe3f
+ms.sourcegitcommit: 37591c2299c80e7675cd2b5f781e1eeeba628a60
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27072919"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "27748172"
 ---
 # <a name="list-privilegedapproval"></a>リスト privilegedApproval
 
@@ -21,7 +21,7 @@ Privilegedapproval オブジェクトのリストを取得します。
 
 |アクセス許可の種類      | アクセス許可 (特権の小さいものから大きいものへ)              |
 |:--------------------|:---------------------------------------------------------|
-|委任 (職場または学校のアカウント) | Directory.AccessAsUser.All    |
+|委任 (職場または学校のアカウント) | PrivilegedAccess.ReadWrite.AzureAD、Directory.AccessAsUser.All    |
 |委任 (個人用 Microsoft アカウント) | サポートされていません。    |
 |アプリケーション | サポートされていません。 |
 

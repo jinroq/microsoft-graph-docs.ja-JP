@@ -1,16 +1,17 @@
 ---
 title: 組織を更新する
 description: 現在認証されている組織のプロパティを更新します。
-ms.openlocfilehash: ac07f3ded31f8d6c7169d24208ed7e8cf967e07a
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.openlocfilehash: b9601b9b6fa7e961a807c009e6fd4acb00fd8b47
+ms.sourcegitcommit: 37591c2299c80e7675cd2b5f781e1eeeba628a60
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27023387"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "27748529"
 ---
 # <a name="update-organization"></a>組織を更新する
 
-現在認証されている組織のプロパティを更新します。
+現在認証されている組織のプロパティを更新します。 この例では、 `organization` 、1 つのレコードの集合として定義されている要求の**ID**を指定する必要がありますので。  **ID**は、組織の**tenantId**とも呼ばれます。
+
 
 ## <a name="permissions"></a>アクセス許可
 
@@ -27,7 +28,7 @@ ms.locfileid: "27023387"
 <!-- { "blockType": "ignored" } -->
 
 ```http
-PATCH /organization
+PATCH /organization/{id}
 
 ```
 
@@ -38,6 +39,7 @@ PATCH /organization
 | Authorization  | string  | ベアラー {トークン}。必須。 |
 
 ## <a name="request-body"></a>要求本文
+
 要求本文で、更新する関連フィールドの値を指定します。 要求本文に含まれない既存のプロパティは、以前の値のままになるか、他のプロパティ値の変更に基づいて再計算されます。 最適なパフォーマンスを得るためには、変更されていない既存の値を含めないでください。
 
 | プロパティ     | 型   |説明|
@@ -62,7 +64,7 @@ PATCH /organization
 }-->
 
 ```http
-PATCH https://graph.microsoft.com/v1.0/organization
+PATCH https://graph.microsoft.com/v1.0/organization/{id}
 Content-type: application/json
 Content-length: 411
 
