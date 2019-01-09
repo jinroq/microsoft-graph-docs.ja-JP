@@ -1,12 +1,12 @@
 ---
 title: OutlookTask を取得します。
 description: ユーザーのメールボックスのプロパティと、Outlook のタスクの関係を取得します。
-ms.openlocfilehash: d7d985614a37f0a4a70a074f63f4182130948495
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.openlocfilehash: f528ccbf3fa27b6c4cd6226e63f1feedab1954e4
+ms.sourcegitcommit: 6b1ba9b3be038cd6247de54a255bad560034fe42
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27067015"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "27771682"
 ---
 # <a name="get-outlooktask"></a>OutlookTask を取得します。
 
@@ -17,6 +17,7 @@ ms.locfileid: "27067015"
 既定では、この操作 (および投稿、パッチ、および[完了](../api/outlooktask-complete.md)タスクの操作) は UTC の日付に関連するプロパティを返します。 ヘッダーを使用して、応答内のすべての日付関連プロパティを UTC 以外のタイム ゾーンで表すことができます。`Prefer: outlook.timezone`
 
 ## <a name="permissions"></a>アクセス許可
+
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
 
 |アクセス許可の種類      | アクセス許可 (特権の小さいものから大きいものへ)              |
@@ -26,46 +27,58 @@ ms.locfileid: "27067015"
 |アプリケーション | サポートされていません。 |
 
 ## <a name="http-request"></a>HTTP 要求
+
 <!-- { "blockType": "ignored" } -->
+
 ```http
+GET /me/outlook/tasks/{id}
 GET /users/{id|userPrincipalName}/outlook/tasks/{id}
-GET /users/{id|userPrincipalName}/outlook/taskFolders/{id}/tasks/{id}
-GET /users/{id|userPrincipalName}/outlook/taskGroups/{id}/taskFolders/{id}/tasks/{id}
 ```
+
 ## <a name="optional-query-parameters"></a>オプションのクエリ パラメーター
+
 このメソッドは、応答をカスタマイズするための [OData クエリ パラメーター](https://developer.microsoft.com/graph/docs/concepts/query_parameters)をサポートします。
 
 ## <a name="request-headers"></a>要求ヘッダー
+
 | 名前      |説明|
 |:----------|:----------|
 | Authorization  | ベアラー {トークン}。必須。 |
 | 優先: outlook.timezone | このヘッダーが指定されていない場合は、UTC である応答でタイム ゾーンの時刻のプロパティを指定します。 省略可能。|
 
 ## <a name="request-body"></a>要求本文
+
 このメソッドには、要求本文を指定しません。
 
 ## <a name="response"></a>応答
 
 かどうかは成功すると、このメソッドが返されます、 `200 OK` 、応答の本体で応答コードと[outlookTask](../resources/outlooktask.md)のオブジェクトです。
+
 ## <a name="example-1"></a>例 1
-##### <a name="request"></a>要求
+
+### <a name="request"></a>要求
+
 以下は、要求の例です。
 <!-- {
   "blockType": "request",
   "name": "get_outlooktask"
 }-->
+
 ```http
 GET https://graph.microsoft.com/beta/me/outlook/tasks('AAMkADA1MTrgAAA=')
 ```
-##### <a name="response"></a>応答
-以下は、応答の例です。 既定では、応答に含まれる日時のプロパティは UTC 形式になります。 
 
-注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。
+### <a name="response"></a>応答
+
+以下は、応答の例です。 既定では、応答に含まれる日時のプロパティは UTC 形式になります。
+
+> **注:** 簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。 実際の呼び出しではすべてのプロパティが返されます。
 <!-- {
   "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.outlookTask"
 } -->
+
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
@@ -104,28 +117,32 @@ Content-length: 376
 }
 ```
 
-
 ## <a name="example-2"></a>例 2
-##### <a name="request"></a>要求
-この例では、`Prefer: outlook.timezone`ヘッダーの応答で日付と時刻のプロパティを表示するかを指定するには  
-太平洋標準時です。
+
+### <a name="request"></a>要求
+
+この例では、`Prefer: outlook.timezone`太平洋標準時の応答で日付と時刻のプロパティを表示するかを指定するヘッダー。
 <!-- {
   "blockType": "request",
   "name": "get_outlooktask"
 }-->
+
 ```http
 GET https://graph.microsoft.com/beta/me/outlook/tasks('AAMkADA1MHgwAAA=')
 Prefer: outlook.timezone="Pacific Standard Time"
 ```
-##### <a name="response"></a>応答
-以下は、応答の例です。 指定の太平洋標準時では、応答内の日付と時刻のプロパティが表示されます。 
 
-注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。
+### <a name="response"></a>応答
+
+以下は、応答の例です。 指定の太平洋標準時では、応答内の日付と時刻のプロパティが表示されます。
+
+> **注:** 簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。 実際の呼び出しではすべてのプロパティが返されます。
 <!-- {
   "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.outlookTask"
 } -->
+
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json

@@ -1,12 +1,12 @@
 ---
 title: 組織リソースの種類
 description: " 作成および削除はサポートされていません。 directoryObject から継承します。"
-ms.openlocfilehash: b98455c52d963d4e523253dc2a3b75137be9e854
-ms.sourcegitcommit: 37591c2299c80e7675cd2b5f781e1eeeba628a60
+ms.openlocfilehash: 5651e300c4ebfc7adbbccc7aef485a43263b4830
+ms.sourcegitcommit: 6b1ba9b3be038cd6247de54a255bad560034fe42
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 01/08/2019
-ms.locfileid: "27748333"
+ms.locfileid: "27771738"
 ---
 # <a name="organization-resource-type"></a>組織リソースの種類
 
@@ -38,8 +38,8 @@ ms.locfileid: "27748333"
 |createdDateTime|DateTimeOffset| 組織が作成された日時のタイムスタンプです。 値は変更できず、組織が作成されたときに自動的に設定されます。 Timestamp 型は、ISO 8601 形式を使用して日付と時刻の情報を表し、常に UTC 時間です。 たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、次のようになります。`'2014-01-01T00:00:00Z'` 読み取り専用です。 |
 | deletedDateTime                    | DateTimeOffset                                                    | Azure AD テナントは、ISO 8601 形式を使用して削除されたときの日付と時刻を表すし、は、UTC 時刻では常にします。 たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、次のようになります。`'2014-01-01T00:00:00Z'` 読み取り専用です。                                                                                     |
 | displayName                          | String                                                            | テナントの表示名。                                                                                                                                                                                                                                                     |
-| id                                   | String                                                            | テナントの一意識別子。[directoryObject](directoryobject.md) から継承されます。キー。null 許容ではありません。読み取り専用です。                                                                                                                                                            |
-|isMultipleDataLocationsForServicesEnabled|Boolean|**true の**場合組織は、複数地域で有効になっています。複数地域が有効な場合は**false**の組織ではありません。**null**(既定値)。 値の取得のみ可能です。 詳細については、[オンラインの複数の地域 OneDrive](https://docs.microsoft.com/sharepoint/dev/solution-guidance/multigeo-introduction)を参照してください。|
+| id                                   | String                                                            | テナント ID では、組織 (またはテナント) を表す一意の識別子です。 [directoryObject](directoryobject.md) から継承されます。 キー。 null 許容ではありません。 読み取り専用です。                                                                                                                                                            |
+|isMultipleDataLocationsForServicesEnabled|Boolean|**true の**場合組織は、複数地域で有効になっています。複数地域が有効な場合は**false**の組織ではありません。**null**(既定値)。 読み取り専用です。 詳細については、[オンラインの複数の地域 OneDrive](https://docs.microsoft.com/sharepoint/dev/solution-guidance/multigeo-introduction)を参照してください。|
 | marketingNotificationEmails          | String コレクション                                                 | null 許容ではありません。                                                                                                                                                                                                                                                                        |
 | onPremisesLastSyncDateTime               | DateTimeOffset                                                    | 前回テナントがオンプレミスのディレクトリと同期した日付と時刻。 Timestamp 型は、ISO 8601 形式を使用して日付と時刻の情報を表し、常に UTC 時間です。 たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、次のようになります。`'2014-01-01T00:00:00Z'` 読み取り専用です。 |
 | onPremisesSyncEnabled                       | Boolean                                                           | このオブジェクトがオンプレミスのディレクトリから同期される場合は **true**。このオブジェクトが最初にオンプレミスのディレクトリから同期されていて、今後は同期されない場合は **false**。このオブジェクトがオンプレミスのディレクトリから一度も同期されたことがない場合は **null** (既定値)。                        |

@@ -2,19 +2,21 @@
 title: 添付ファイルを追加する
 description: イベントの添付ファイルを追加するのにには、この API を使用します。 そこから
 author: angelgolfer-ms
-ms.openlocfilehash: 2f55646c8f0f115640ced91a90ef16d40599b3b3
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+ms.openlocfilehash: 071ecdecf3ac7fd835c7c5004463661b685be003
+ms.sourcegitcommit: 6b1ba9b3be038cd6247de54a255bad560034fe42
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27355959"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "27771773"
 ---
 # <a name="add-attachment"></a>添付ファイルを追加する
 
 > **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。
 
 [添付ファイル](../resources/attachment.md)をイベントに追加する場合に、この API を使用します。現在、各 REST 要求の合計サイズは 4 MB に制限されているため、追加できる添付ファイルのサイズは 4 MB 未満に制限されます。
+
 ## <a name="permissions"></a>アクセス許可
+
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
 
 |アクセス許可の種類      | アクセス許可 (特権の小さいものから大きいものへ)              |
@@ -24,47 +26,27 @@ ms.locfileid: "27355959"
 |アプリケーション | Calendars.ReadWrite |
 
 ## <a name="http-request"></a>HTTP 要求
-ユーザーの既定の[予定表](../resources/calendar.md)に[イベント](../resources/event.md)の添付ファイルです。
 
-<!--
-Attachments for an [event](../resources/event.md) in the user's or group's default [calendar](../resources/calendar.md).
--->
 <!-- { "blockType": "ignored" } -->
+
 ```http
 POST /me/events/{id}/attachments
 POST /users/{id | userPrincipalName}/events/{id}/attachments
-
-POST /me/calendar/events/{id}/attachments
-POST /users/{id | userPrincipalName}/calendar/events/{id}/attachments
 ```
 
 <!--
 POST /groups/{id}/events/{id}/attachments
-POST /groups/{id}/calendar/events/{id}/attachments
 -->
 
-ユーザーの既定 [calendarGroup](../resources/calendargroup.md) に属する[カレンダー](../resources/calendar.md)内[イベント](../resources/event.md)の添付ファイル。
-<!-- { "blockType": "ignored" } -->
-```http
-POST /me/calendars/{id}/events/{id}/attachments
-POST /users/{id | userPrincipalName}/calendars/{id}/events/{id}/attachments
-
-POST /me/calendargroup/calendars/{id}/events/{id}/attachments
-POST /users/{id | userPrincipalName}/calendargroup/calendars/{id}/events/{id}/attachments
-```
-ユーザーの [calendarGroup](../resources/calendargroup.md) に属する[カレンダー](../resources/calendar.md)内[イベント](../resources/event.md)の添付ファイル。
-<!-- { "blockType": "ignored" } -->
-```http
-POST /me/calendargroups/{id}/calendars/{id}/events/{id}/attachments
-POST /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{id}/attachments
-```
 ## <a name="request-headers"></a>要求ヘッダー
-| 名前       | 種類 | 説明|
+
+| 名前       | 型 | 説明|
 |:---------------|:--------|:----------|
 | Authorization  | string  | ベアラー {トークン}。必須。 |
 | Content-Type | string  | エンティティ本文内のデータの性質です。必須。 |
 
 ## <a name="request-body"></a>要求本文
+
 要求本文で、[attachment](../resources/attachment.md) オブジェクトの JSON 表記を指定します。
 
 ## <a name="response"></a>応答
@@ -73,33 +55,37 @@ POST /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{
 
 ## <a name="example-file-attachment"></a>例 (添付ファイル)
 
-##### <a name="request"></a>要求
+### <a name="request"></a>要求
+
 以下は、要求の例です。
 <!-- {
   "blockType": "request",
   "name": "create_file_attachment_from_event"
 }-->
+
 ```http
-POST https://graph.microsoft.com/beta/me/events('AAMkAGI1AAAt9AHjAAA=')/attachments 
+POST https://graph.microsoft.com/beta/me/events('AAMkAGI1AAAt9AHjAAA=')/attachments
 Content-type: application/json
 Content-length: 151
 
 {
     "@odata.type": "#microsoft.graph.fileAttachment",
     "name": "menu.txt",
-    "contentBytes": "bWFjIGFuZCBjaGVlc2UgdG9kYXk="   
+    "contentBytes": "bWFjIGFuZCBjaGVlc2UgdG9kYXk="
 }
 ```
 
 要求本文で、[Attachment](../resources/attachment.md) オブジェクトの JSON 表記を指定します。
 
-##### <a name="response"></a>応答
+### <a name="response"></a>応答
+
 以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。
 <!-- {
   "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.attachment"
 } -->
+
 ```http
 HTTP 201 Created
 Content-Length: 735
@@ -121,7 +107,7 @@ Content-Length: 735
 
 ## <a name="example-item-attachment"></a>例 (項目の添付ファイル)
 
-##### <a name="request"></a>要求
+### <a name="request"></a>要求
 
 以下は、アイテムの添付ファイルとしてイベントを別のイベントに添付する例です。
 
@@ -129,6 +115,7 @@ Content-Length: 735
   "blockType": "request",
   "name": "create_item_attachment_from_event"
 }-->
+
 ```http
 POST https://graph.microsoft.com/beta/me/events/{AAMkAGI1AAAt9AHjAAA=}/attachments
 Content-type: application/json
@@ -136,7 +123,7 @@ Content-length: 600
 
 {
   "@odata.type": "#microsoft.graph.itemAttachment",
-  "name": "Holiday event", 
+  "name": "Holiday event",
   "item": {
         "@odata.type": "microsoft.graph.event",
         "subject": "Discuss gifts for children",
@@ -156,13 +143,15 @@ Content-length: 600
 }
 ```
 
-##### <a name="response"></a>応答
+### <a name="response"></a>応答
+
 以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。
 <!-- {
   "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.attachment"
 } -->
+
 ```http
 HTTP 201 Created
 Content-type: application/json
@@ -183,7 +172,8 @@ Content-length: 162
 
 ## <a name="example-reference-attachment"></a>例 (添付ファイルの参照)
 
-##### <a name="request"></a>要求
+### <a name="request"></a>要求
+
 ここでは、既存のイベントへの参照の添付ファイルを追加する要求の例です。
 添付ファイルは、OneDrive 上のフォルダーをポイントします。
 <!-- {
@@ -192,28 +182,30 @@ Content-length: 162
   "@odata.type": "microsoft.graph.referenceAttachment"
 }-->
 
-```
+```http
 POST https://graph.microsoft.com/beta/me/events/AAMkAGE1M88AADUv0uAAAG=/attachments
 Content-type: application/json
 Content-length: 319
 
-{ 
-    "@odata.type": "#microsoft.graph.referenceAttachment", 
-    "name": "Personal pictures", 
-    "sourceUrl": "https://contoso.com/personal/mario_contoso_net/Documents/Pics", 
-    "providerType": "oneDriveConsumer", 
-    "permission": "Edit", 
-    "isFolder": "True" 
-} 
+{
+    "@odata.type": "#microsoft.graph.referenceAttachment",
+    "name": "Personal pictures",
+    "sourceUrl": "https://contoso.com/personal/mario_contoso_net/Documents/Pics",
+    "providerType": "oneDriveConsumer",
+    "permission": "Edit",
+    "isFolder": "True"
+}
 ```
 
-##### <a name="response"></a>応答
+### <a name="response"></a>応答
+
 ここでは、完全な応答の例です。
 <!-- {
   "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.referenceAttachment"
 } -->
+
 ```http
 HTTP 201 Created
 

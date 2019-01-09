@@ -2,12 +2,12 @@
 title: Outlooktask を更新します。
 description: Outlook のタスクの書き込み可能なプロパティを変更します。
 author: angelgolfer-ms
-ms.openlocfilehash: 0a162c81ef32cb35e930b000678234ede20e4874
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+ms.openlocfilehash: 0cd4907c4ab1cb517ab2611cc4dc30431e496440
+ms.sourcegitcommit: 6b1ba9b3be038cd6247de54a255bad560034fe42
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27325705"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "27771731"
 ---
 # <a name="update-outlooktask"></a>Outlooktask を更新します。
 
@@ -20,6 +20,7 @@ Outlook のタスクの書き込み可能なプロパティを変更します。
 既定では、この操作 (および投稿、取得、および[完了](../api/outlooktask-complete.md)タスクの操作) は UTC の日付に関連するプロパティを返します。 ヘッダーを使用して、応答内のすべての日付関連プロパティを UTC 以外のタイム ゾーンで表すことができます。`Prefer: outlook.timezone`
 
 ## <a name="permissions"></a>アクセス許可
+
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
 
 |アクセス許可の種類      | アクセス許可 (特権の小さいものから大きいものへ)              |
@@ -29,22 +30,26 @@ Outlook のタスクの書き込み可能なプロパティを変更します。
 |アプリケーション | サポートされていません。 |
 
 ## <a name="http-request"></a>HTTP 要求
+
 <!-- { "blockType": "ignored" } -->
+
 ```http
+PATCH /me/outlook/tasks/{id}
 PATCH /users/{id|userPrincipalName}/outlook/tasks/{id}
-PATCH /users/{id|userPrincipalName}/outlook/taskFolders/{id}/tasks/{id}
-PATCH /users/{id|userPrincipalName}/outlook/taskGroups/{id}/taskFolders/{id}/tasks/{id}
 ```
-## <a name="optional-request-headers"></a>オプションの要求ヘッダー
+
+## <a name="request-headers"></a>要求ヘッダー
+
 | 名前       | 説明|
 |:-----------|:-----------|
 | Authorization  | ベアラー {トークン}。必須。 |
 | 優先: outlook.timezone | このヘッダーが指定されていない場合は、UTC である応答でタイム ゾーンの時刻のプロパティを指定します。 省略可能。|
 
 ## <a name="request-body"></a>要求本文
+
 要求本文で、更新する関連フィールドの値を指定します。要求本文に含まれない既存のプロパティは、以前の値のままになるか、他のプロパティ値の変化に基づいて再計算されます。最適なパフォーマンスを得るためには、変更されていない既存の値を含めないでください。
 
-| プロパティ     | 種類   |説明|
+| プロパティ | 型 | 説明 |
 |:---------------|:--------|:----------|
 |担当者|String|タスクが割り当てられているユーザーの名前。|
 |body|[itemBody](../resources/itembody.md)|通常はタスクに関する情報を含むタスク本体。HTML 型のみがサポートされていることに注意してください。|
@@ -53,7 +58,7 @@ PATCH /users/{id|userPrincipalName}/outlook/taskGroups/{id}/taskFolders/{id}/tas
 |CompletedDateTime|[dateTimeTimeZone](../resources/datetimetimezone.md)|タスクが終了した日付 (指定のタイム ゾーン)。|
 |createdDateTime|DateTimeOffset|日付と時刻、タスクが作成された日時です。 既定では、UTC であります。 要求ヘッダーにカスタム タイム ゾーンを使用できます。 プロパティの値は、ISO 8601 形式を使用します。 たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、次のようになります。`'2014-01-01T00:00:00Z'`|
 |dueDateTime|[dateTimeTimeZone](../resources/datetimetimezone.md)|タスクが終了する予定の日時 (指定のタイム ゾーン)。|
-|hasAttachments|ブール型|タスクに添付ファイルが含まれている場合、true に設定します。|
+|hasAttachments|Boolean|タスクに添付ファイルが含まれている場合、true に設定します。|
 |importance|string|イベントの重要度。 可能な値は `low`、`normal`、`high` です。|
 |isReminderOn|Boolean|ユーザーにタスクを通知するアラートを設定する場合は、true に設定します。|
 |lastModifiedDateTime|DateTimeOffset|日付と、タスクが最後に修正されました。 既定では、UTC であります。 要求ヘッダーにカスタム タイム ゾーンを使用できます。 プロパティの値は、ISO 8601 形式を使用し、UTC 時刻が常に。 たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、次のようになります。`'2014-01-01T00:00:00Z'`|
@@ -69,13 +74,17 @@ PATCH /users/{id|userPrincipalName}/outlook/taskGroups/{id}/taskFolders/{id}/tas
 ## <a name="response"></a>応答
 
 かどうかは成功すると、このメソッドが返されます、`200 OK`応答コードおよび応答の本文の更新された[outlookTask](../resources/outlooktask.md)オブジェクトです。
+
 ## <a name="example"></a>例
-##### <a name="request"></a>要求
+
+### <a name="request"></a>要求
+
 次の使用例は、 **dueDateTime**プロパティを変更してを使用して、`Prefer: outlook.timezone`の東部標準時 (EST) の応答での日付に関連するプロパティを表現することを指定するヘッダー。
 <!-- {
   "blockType": "request",
   "name": "update_outlooktask"
 }-->
+
 ```http
 PATCH https://graph.microsoft.com/beta/me/outlook/tasks('AAMkADA1MTHgwAAA=')
 
@@ -90,13 +99,16 @@ Content-length: 76
   }
 }
 ```
-##### <a name="response"></a>応答
+
+### <a name="response"></a>応答
+
 以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。
 <!-- {
   "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.outlookTask"
 } -->
+
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json

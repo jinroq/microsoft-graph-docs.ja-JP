@@ -2,12 +2,12 @@
 title: 'ユーザー: translateExchangeIds'
 description: 形式との間、Outlook に関連するリソースの識別子を変換します。
 author: dkershaw10
-ms.openlocfilehash: 6dd18fe041c2a303be4ad333b8beeaef168682b1
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+ms.openlocfilehash: ca8b8b1f587e545c3ebfb46efecd9c1c093a942a
+ms.sourcegitcommit: 6b1ba9b3be038cd6247de54a255bad560034fe42
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27360579"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "27771822"
 ---
 # <a name="user-translateexchangeids"></a>ユーザー: translateExchangeIds
 
@@ -42,7 +42,7 @@ POST /users/{id|userPrincipalName}/translateExchangeIds
 
 ## <a name="request-body"></a>要求本文
 
-| パラメーター | 種類 | 説明 |
+| Parameter | 種類 | 説明 |
 |:----------|:-----|:------------|
 | inputIds | Edm.String コレクション | 変換識別子のコレクションです。 コレクション内のすべての識別子は、同じソース ID の種類を持つ必要があり、同じメールボックス内のアイテムにする必要があります。 このコレクションの最大サイズは、1000 の文字列です。 |
 | sourceIdType | exchangeIdFormat | ID の種類の識別子の`InputIds`のパラメーターです。 |
@@ -54,9 +54,16 @@ POST /users/{id|userPrincipalName}/translateExchangeIds
 |:-------|:------------|
 | エントリ Id | MAPI クライアントによって使用されるバイナリのエントリ ID の形式です。 |
 | ewsId | Exchange Web サービス クライアントによって使用される ID 形式です。 |
-| immutableEntryId | MAPI と互換性のある不変の ID 形式です。 |
+| immutableEntryId | バイナリ MAPI と互換性のある変更不可能な ID 形式です。 |
 | restId | Microsoft Graph で使用される既定の ID 形式です。 |
 | restImmutableEntryId | Microsoft Graph で使用される ID の変更不可能な形式です。 |
+
+バイナリ フォーマット (`entryId`と`immutableEntryId`) は、base64 でエンコードされた URL セーフであります。 URL safeness は、base64 エンコードのバイナリ データの次のように変更することによって実装されます。
+
+- 交換`+`で`-`
+- 交換`/`で`_`
+- 末尾の埋め込み文字を削除する (`=`)
+- 示す数のスペース文字は元の文字列の末尾に整数値を追加する (`0`、 `1`、または`2`)
 
 ## <a name="response"></a>応答
 
@@ -66,7 +73,7 @@ POST /users/{id|userPrincipalName}/translateExchangeIds
 
 次の使用例は、REST API の通常の形式から、複数の識別子を変換する方法を示しています (`restId`) に残りの部分の変更不可能な形式 (`restImmutableEntryId`)。
 
-##### <a name="request"></a>要求
+### <a name="request"></a>要求
 
 要求の例を次に示します。
 <!-- {
@@ -88,7 +95,7 @@ Content-Type: application/json
 }
 ```
 
-##### <a name="response"></a>応答
+### <a name="response"></a>応答
 
 応答の例を次のとおりです。
 <!-- {

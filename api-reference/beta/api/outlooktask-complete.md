@@ -1,12 +1,12 @@
 ---
 title: 'outlookTask: 完全な'
 description: '現在の日付に**completedDateTime**プロパティを設定する Outlook のタスクを完了します。 '
-ms.openlocfilehash: 732da0f3eb03f6a4674e1254586ae21b5f3334bb
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.openlocfilehash: 2a92fa0f95737581275f1b5516d68a7feab9578f
+ms.sourcegitcommit: 6b1ba9b3be038cd6247de54a255bad560034fe42
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27072706"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "27771808"
 ---
 # <a name="outlooktask-complete"></a>outlookTask: 完全な
 
@@ -16,11 +16,12 @@ ms.locfileid: "27072706"
 
 応答では、定期的にタスクを実行している場合、シリーズでは、完了したタスクとデータ系列の次のタスクは、タスクのコレクションが含まれます。
 
-**CompletedDateTime**プロパティは、タスクが完了すると、日付を表します。 **CompletedDateTime**の時刻部分は、UTC の午前 0 時に既定で設定されています。 
+**CompletedDateTime**プロパティは、タスクが完了すると、日付を表します。 **CompletedDateTime**の時刻部分は、UTC の午前 0 時に既定で設定されています。
 
 既定では、この操作 (および投稿、取得、および更新プログラムのタスクの操作) は UTC の日付に関連するプロパティを返します。 ヘッダーを使用して、応答内のすべての日付関連プロパティを UTC 以外のタイム ゾーンで表すことができます。`Prefer: outlook.timezone`
 
 ## <a name="permissions"></a>アクセス許可
+
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
 
 |アクセス許可の種類      | アクセス許可 (特権の小さいものから大きいものへ)              |
@@ -30,14 +31,16 @@ ms.locfileid: "27072706"
 |アプリケーション | サポートされていません。 |
 
 ## <a name="http-request"></a>HTTP 要求
-<!-- { "blockType": "ignored" } -->
-```http
-POST /users/{id|userPrincipalName}/outlook/tasks/{id}/complete
-POST /users/{id|userPrincipalName}/outlook/taskFolders/{id}/tasks/{id}/complete
-POST /users/{id|userPrincipalName}/outlook/taskGroups/{id}/taskFolders/{id}/tasks/{id}/complete
 
+<!-- { "blockType": "ignored" } -->
+
+```http
+POST /me/outlook/tasks/{id}/complete
+POST /users/{id|userPrincipalName}/outlook/tasks/{id}/complete
 ```
+
 ## <a name="request-headers"></a>要求ヘッダー
+
 | 名前       | 説明|
 |:---------------|:----------|
 | Authorization  | ベアラー {トークン}。必須。 |
@@ -45,33 +48,41 @@ POST /users/{id|userPrincipalName}/outlook/taskGroups/{id}/taskFolders/{id}/task
 
 ## <a name="request-body"></a>要求本文
 
+このメソッドには、要求本文を指定しません。
+
 ## <a name="response"></a>応答
 
-かどうかは成功すると、このメソッドを返します`200 OK`、応答の本体で応答コードと[outlookTask](../resources/outlooktask.md)コレクションのオブジェクトです。
+かどうかは成功すると、このメソッドを返します`200 OK`応答コードおよび応答の本文に[outlookTask](../resources/outlooktask.md)オブジェクトです。
 
-## <a name="example"></a>使用例
+## <a name="example"></a>例
+
 次の例では、指定したタスクを終了に設定します。 太平洋標準時 (PST) で指定します`Prefer: outlook.timezone`ヘッダー。
-##### <a name="request"></a>要求
+
+### <a name="request"></a>要求
+
 以下は、要求の例です。
 <!-- {
   "blockType": "request",
   "name": "outlooktask_complete"
 }-->
+
 ```http
 POST https://graph.microsoft.com/beta/me/tasks('AAMkADA1MT15rfAAA=')/complete
 Prefer: outlook.timezone="Pacific Standard Time"
 ```
 
-##### <a name="response"></a>応答
-以下は、応答の例です。 PST では、 **completedDateTime**と他の日付に関連するプロパティに、応答が表されます。 
+### <a name="response"></a>応答
 
-注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。
+以下は、応答の例です。 PST では、 **completedDateTime**と他の日付に関連するプロパティに、応答が表されます。
+
+> **注:** 簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。 実際の呼び出しではすべてのプロパティが返されます。
 <!-- {
   "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.outlookTask",
   "isCollection": true
 } -->
+
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json

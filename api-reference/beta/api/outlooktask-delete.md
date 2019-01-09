@@ -1,19 +1,21 @@
 ---
 title: OutlookTask を削除します。
 description: ユーザーのメールボックスに指定された Outlook タスクを削除します。
-ms.openlocfilehash: 00c2c4d1e5b706b34b531380e32083be55c98776
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.openlocfilehash: cab78b8fea63c5044cc6faa6a1e4f09dd960bfd6
+ms.sourcegitcommit: 6b1ba9b3be038cd6247de54a255bad560034fe42
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27073980"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "27771780"
 ---
 # <a name="delete-outlooktask"></a>OutlookTask を削除します。
 
 > **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。
 
 ユーザーのメールボックスに指定された Outlook タスクを削除します。
+
 ## <a name="permissions"></a>アクセス許可
+
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
 
 |アクセス許可の種類      | アクセス許可 (特権の小さいものから大きいものへ)              |
@@ -23,19 +25,22 @@ ms.locfileid: "27073980"
 |アプリケーション | サポートされていません。 |
 
 ## <a name="http-request"></a>HTTP 要求
-<!-- { "blockType": "ignored" } -->
-```http
-DELETE /users/{id|userPrincipalName}/outlook/tasks/{id}
-DELETE /users/{id|userPrincipalName}/outlook/taskFolders/{id}/tasks/{id}
-DELETE /users/{id|userPrincipalName}/outlook/taskGroups/{id}/taskFolders/{id}/tasks/{id}
 
+<!-- { "blockType": "ignored" } -->
+
+```http
+DELETE /me/outlook/tasks/{id}
+DELETE /users/{id|userPrincipalName}/outlook/tasks/{id}
 ```
+
 ## <a name="request-headers"></a>要求ヘッダー
+
 | 名前       | 説明|
 |:---------------|:----------|
 | Authorization  | ベアラー {トークン}。必須。 |
 
 ## <a name="request-body"></a>要求本文
+
 このメソッドには、要求本文を指定しません。
 
 ## <a name="response"></a>応答
@@ -43,21 +48,27 @@ DELETE /users/{id|userPrincipalName}/outlook/taskGroups/{id}/taskFolders/{id}/ta
 成功した場合、このメソッドは `204 No Content` 応答コードを返します。応答本文には何も返されません。
 
 ## <a name="example"></a>例
-##### <a name="request"></a>要求
+
+### <a name="request"></a>要求
+
 以下は、要求の例です。
 <!-- {
   "blockType": "request",
   "name": "delete_outlooktask"
 }-->
+
 ```http
 DELETE https://graph.microsoft.com/beta/me/outlook/tasks('AAMkADIyAAAhrb_QAAA=')
 ```
-##### <a name="response"></a>応答
-以下は、応答の例です。 
+
+### <a name="response"></a>応答
+
+以下は、応答の例です。
 <!-- {
   "blockType": "response",
   "truncated": true
 } -->
+
 ```http
 HTTP/1.1 204 No Content
 ```

@@ -2,19 +2,21 @@
 title: 添付ファイルを一覧表示する
 description: Outlook のタスクに関連付けられている添付ファイルのオブジェクトの一覧を取得します。
 author: angelgolfer-ms
-ms.openlocfilehash: db27cfa94e90607e64bed0bf71f55dfbea14b7e5
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+ms.openlocfilehash: b998f6f7d3356728400cc7c609dd1014467ae4d6
+ms.sourcegitcommit: 6b1ba9b3be038cd6247de54a255bad560034fe42
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27309934"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "27771794"
 ---
 # <a name="list-attachments"></a>添付ファイルを一覧表示する
 
 > **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。
 
 Outlook のタスクに関連付けられている[添付ファイル](../resources/attachment.md)のオブジェクトの一覧を取得します。
+
 ## <a name="permissions"></a>アクセス許可
+
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
 
 |アクセス許可の種類      | アクセス許可 (特権の小さいものから大きいものへ)              |
@@ -24,37 +26,48 @@ Outlook のタスクに関連付けられている[添付ファイル](../resour
 |アプリケーション | サポートされていません。 |
 
 ## <a name="http-request"></a>HTTP 要求
+
 <!-- { "blockType": "ignored" } -->
+
 ```http
+GET /me/outlook/tasks/{id}/attachments
 GET /users/{id|userPrincipalName}/outlook/tasks/{id}/attachments
-GET /users/{id|userPrincipalName}/outlook/taskFolders/{id}/tasks/{id}/attachments
-GET /users/{id|userPrincipalName}/outlook/taskGroups/{id}/taskFolders/{id}/tasks/{id}/attachments
 ```
+
 ## <a name="optional-query-parameters"></a>オプションのクエリ パラメーター
+
 このメソッドは、応答をカスタマイズするための [OData クエリ パラメーター](https://developer.microsoft.com/graph/docs/concepts/query_parameters)をサポートします。
 
 ## <a name="request-headers"></a>要求ヘッダー
+
 | 名前      |説明|
 |:----------|:----------|
 | Authorization  | ベアラー {トークン}。必須。 |
 
 ## <a name="request-body"></a>要求本文
+
 このメソッドには、要求本文を指定しません。
 
 ## <a name="response"></a>応答
 
 かどうかは成功すると、このメソッドが返されます、`200 OK`応答コードおよび応答の本文の[添付ファイル](../resources/attachment.md)のオブジェクトのコレクションです。
+
 ## <a name="example"></a>例
-##### <a name="request"></a>要求
+
+### <a name="request"></a>要求
+
 以下は、要求の例です。
 <!-- {
   "blockType": "request",
   "name": "get_attachments"
 }-->
+
 ```http
 GET https://graph.microsoft.com/beta/users/{id}/outlook/tasks/{id}/attachments
 ```
-##### <a name="response"></a>応答
+
+### <a name="response"></a>応答
+
 以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。
 <!-- {
   "blockType": "response",
@@ -62,6 +75,7 @@ GET https://graph.microsoft.com/beta/users/{id}/outlook/tasks/{id}/attachments
   "@odata.type": "microsoft.graph.attachment",
   "isCollection": true
 } -->
+
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json

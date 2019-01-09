@@ -1,18 +1,18 @@
 ---
 title: 添付ファイルを取得する
-description: 'プロパティとイベントに関連付けられている添付ファイルの関係を読み取る '
-ms.openlocfilehash: a432e4f3fb98062a701e4c6e7b177145faa65e1e
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+description: プロパティとイベント、メッセージ、Outlook のタスク、または投稿に添付された添付ファイルの関係を参照してください。
+ms.openlocfilehash: 040e6995a24fcff62e8e7f476afdc602a6c9617c
+ms.sourcegitcommit: 6b1ba9b3be038cd6247de54a255bad560034fe42
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27068033"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "27771815"
 ---
 # <a name="get-attachment"></a>添付ファイルを取得する
 
 > **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。
 
-プロパティと[イベント](../resources/event.md)、[メッセージ](../resources/message.md)、 [Outlook の仕事](../resources/outlooktask.md)、または[投稿](../resources/post.md)に添付された添付ファイルの関係を参照してください。 
+プロパティと[イベント](../resources/event.md)、[メッセージ](../resources/message.md)、 [Outlook の仕事](../resources/outlooktask.md)、または[投稿](../resources/post.md)に添付された添付ファイルの関係を参照してください。
 
 添付ファイルは、次の種類のいずれかにできます。
 
@@ -20,100 +20,88 @@ ms.locfileid: "27068033"
 * 項目 ([itemAttachment](../resources/itemattachment.md) リソースで表される連絡先、イベント、またはメッセージ)。`$expand` を使用すると、その項目のプロパティをさらに取得できます。次の[例](#request-2)を参照してください。
 * ファイルへのリンク ([referenceAttachment](../resources/referenceattachment.md) リソース)。
 
-これらの添付ファイル リソースのすべての種類は、[attachment](../resources/attachment.md) リソースから派生します。 
+これらの添付ファイル リソースのすべての種類は、[attachment](../resources/attachment.md) リソースから派生します。
 
 ## <a name="permissions"></a>アクセス許可
+
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
 
 * メッセージの添付ファイルにアクセスする場合: Mail.Read
 * イベントで添付ファイルにアクセスする場合: Calendars.Read
 * Outlook からのタスクの添付ファイルにアクセスする場合: Tasks.Read
 * グループの投稿の添付ファイルにアクセスする場合: Group.Read.All
+
 <!--
 * If accessing attachments in group events or posts: Group.Read.All
 -->
 
 ## <a name="http-request"></a>HTTP 要求
-ユーザーの既定の[予定表](../resources/calendar.md)に[イベント](../resources/event.md)の添付ファイルです。
 
-<!--
-Attachments for an [event](../resources/event.md) in the user's or group's default [calendar](../resources/calendar.md).
--->
+[イベント](../resources/event.md)の添付ファイルです。
+
 <!-- { "blockType": "ignored" } -->
+
 ```http
 GET /me/events/{id}/attachments/{id}
 GET /users/{id | userPrincipalName}/events/{id}/attachments/{id}
-
-GET /me/calendar/{id}/events/{id}/attachments/{id}
-GET /users/{id | userPrincipalName}/calendar/events/{id}/attachments/{id}
 ```
 
 <!--
 GET /groups/{id}/events/{id}/attachments/{id}
-GET /groups/{id}/calendar/events/{id}/attachments/{id}
 -->
 
-ユーザーの既定 [calendarGroup](../resources/calendargroup.md) に属する[カレンダー](../resources/calendar.md)内[イベント](../resources/event.md)の添付ファイル。
-<!-- { "blockType": "ignored" } -->
-```http
-GET /me/calendars/{id}/events/{id}/attachments/{id}
-GET /users/{id | userPrincipalName}/calendars/{id}/events/{id}/attachments/{id}
-
-GET /me/calendargroup/calendars/{id}/events/{id}/attachments/{id}
-GET /users/{id | userPrincipalName}/calendargroup/calendars/{id}/events/{id}/attachments/{id}
-```
-ユーザーの [calendarGroup](../resources/calendargroup.md) に属する[カレンダー](../resources/calendar.md)内[イベント](../resources/event.md)の添付ファイル。
-<!-- { "blockType": "ignored" } -->
-```http
-GET /me/calendargroups/{id}/calendars/{id}/events/{id}/attachments/{id}
-GET /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{id}/attachments/{id}
-```
 ユーザーのメールボックス内の[メッセージ](../resources/message.md)の添付ファイル。
 <!-- { "blockType": "ignored" } -->
+
 ```http
 GET /me/messages/{id}/attachments/{id}
 GET /users/{id | userPrincipalName}/messages/{id}/attachments/{id}
 ```
+
 ユーザーのメールボックスの最上位レベルの [mailFolder](../resources/mailfolder.md) に含まれている[メッセージ](../resources/message.md)の添付ファイル。
 <!-- { "blockType": "ignored" } -->
+
 ```http
 GET /me/mailFolders/{id}/messages/{id}/attachments/{id}
 GET /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/attachments/{id}
 ```
+
 ユーザーのメールボックス内の[mailFolder](../resources/mailfolder.md)の子フォルダーに含まれている[メッセージ](../resources/message.md)の添付ファイルです。  次の例は、入れ子のレベルを 1 つを示していますが、メッセージというように子の子であることができます。
 <!-- { "blockType": "ignored" } -->
+
 ```http
 GET /me/mailFolders/{id}/childFolders/{id}/.../messages/{id}/attachments/{id}
 GET /users/{id | userPrincipalName}/mailFolders/{id}/childFolders/{id}/messages/{id}/attachments/{id}
 ```
 
-[Outlook タスク](../resources/outlooktask.md)またはフォルダーを指定したタスクまたはタスク グループで、ユーザーのメールボックス内の添付ファイルです。
+[Outlook タスク](../resources/outlooktask.md)の添付ファイルです。
 <!-- { "blockType": "ignored" } -->
+
 ```http
 GET /me/outlook/tasks/<id>/attachments/{id}
 GET /users/<id>/outlook/tasks/<id>/attachments/{id}
-
-GET /me/outlook/taskFolders/<id>/tasks/<id>/attachments/{id}
-GET /users/<id>/outlook/taskFolders/<id>/tasks/<id>/attachments/{id}
-
-GET /me/outlook/taskGroups/<id>/taskFolders/<id>/tasks/<id>/attachments/{id}
-GET /users/<id>/outlook/taskGroups/<id>/taskFolders/<id>/tasks/<id>/attachments/{id}
 ```
 
 グループの[会話](../resources/conversation.md)に属する[スレッド](../resources/conversationthread.md)内の[投稿](../resources/post.md)の添付ファイル。
 <!-- { "blockType": "ignored" } -->
+
 ```http
 GET /groups/{id}/threads/{id}/posts/{id}/attachments/{id}
 GET /groups/{id}/conversations/{id}/threads/{id}/posts/{id}/attachments/{id}
 ```
+
 ## <a name="optional-query-parameters"></a>オプションのクエリ パラメーター
+
 このメソッドは、応答をカスタマイズするための [OData クエリ パラメーター](https://developer.microsoft.com/graph/docs/concepts/query_parameters)をサポートします。
+
 ## <a name="request-headers"></a>要求ヘッダー
+
 | 名前       | 型 | 説明|
 |:-----------|:------|:----------|
 | Authorization  | string  | ベアラー {トークン}。必須。 |
 
 ## <a name="request-body"></a>要求本文
+
 このメソッドには、要求本文を指定しません。
 
 ## <a name="response"></a>応答
@@ -122,23 +110,27 @@ GET /groups/{id}/conversations/{id}/threads/{id}/posts/{id}/attachments/{id}
 
 ## <a name="example-file-attachment"></a>例 (添付ファイル)
 
-##### <a name="request"></a>要求
+### <a name="request"></a>要求
+
 以下は、イベントの添付ファイルを取得する要求の例です。
 <!-- {
   "blockType": "request",
   "name": "get_file_attachment"
 }-->
+
 ```http
 GET https://graph.microsoft.com/beta/me/events/{id}/attachments/{id}
 ```
 
-##### <a name="response"></a>応答
+### <a name="response"></a>応答
+
 以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。
 <!-- {
   "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.fileAttachment"
 } -->
+
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
@@ -157,24 +149,29 @@ Content-length: 199
   "size": 99
 }
 ```
+
 ## <a name="example-item-attachment"></a>例 (項目の添付ファイル)
 
-##### <a name="request-1"></a>要求 1
+### <a name="request-1"></a>要求 1
+
 最初の例は、メッセージの項目の添付ファイルを取得する方法を示しています。**itemAttachment** のプロパティが返されます。
 <!-- {
   "blockType": "request",
   "name": "get_item_attachment"
 }-->
+
 ```http
 GET https://graph.microsoft.com/beta/me/messages('AAMkADA1M-zAAA=')/attachments('AAMkADA1M-CJKtzmnlcqVgqI=')
 ```
 
-##### <a name="response-1"></a>応答 1
+### <a name="response-1"></a>応答 1
+
 <!-- {
   "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.itemAttachment"
 } -->
+
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
@@ -191,23 +188,26 @@ Content-type: application/json
 }
 ```
 
+### <a name="request-2"></a>要求 2
 
-##### <a name="request-2"></a>要求 2
 次の例は、`$expand` を使用してメッセージに添付されている項目のプロパティを取得する方法を示しています。この例では、項目はメッセージであり、添付メッセージのプロパティも返されます。
 <!-- {
   "blockType": "request",
   "name": "get_and_expand_item_attachment"
 }-->
+
 ```http
-GET https://graph.microsoft.com/beta/me/messages('AAMkADA1M-zAAA=')/attachments('AAMkADA1M-CJKtzmnlcqVgqI=')/?$expand=microsoft.graph.itemattachment/item 
+GET https://graph.microsoft.com/beta/me/messages('AAMkADA1M-zAAA=')/attachments('AAMkADA1M-CJKtzmnlcqVgqI=')/?$expand=microsoft.graph.itemattachment/item
 ```
 
-##### <a name="response-2"></a>応答 2
+### <a name="response-2"></a>応答 2
+
 <!-- {
   "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.itemAttachment"
 } -->
+
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
@@ -279,25 +279,28 @@ Content-type: application/json
 }
 ```
 
-
 ## <a name="example-reference-attachment"></a>例 (添付ファイルの参照)
 
-##### <a name="request"></a>要求
+### <a name="request"></a>要求
+
 以下は、イベントの添付ファイルの参照を取得する要求の例です。
 <!-- {
   "blockType": "request",
   "name": "get_reference_attachment"
 }-->
+
 ```http
 GET https://graph.microsoft.com/beta/me/events/AAMkAGE1M88AADUv0uAAAG=/attachments/AAMkAGE1Mg72tgf7hJp0PICVGCc0g=
 ```
 
-##### <a name="response"></a>応答
+### <a name="response"></a>応答
+
 <!-- {
   "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.referenceAttachment"
 } -->
+
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json

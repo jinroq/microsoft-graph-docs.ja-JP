@@ -1,12 +1,12 @@
 ---
 title: 組織リソースの種類
 description: 'Azure Active Directory のテナント型を表します。 '
-ms.openlocfilehash: 1d13d10c79d2dfc39ec187265533cb6ea17a683b
-ms.sourcegitcommit: 37591c2299c80e7675cd2b5f781e1eeeba628a60
+ms.openlocfilehash: 2e9a9a32411164e270e2eb3a8830fa811ba5f9cb
+ms.sourcegitcommit: 6b1ba9b3be038cd6247de54a255bad560034fe42
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 01/08/2019
-ms.locfileid: "27748571"
+ms.locfileid: "27771829"
 ---
 # <a name="organization-resource-type"></a>組織リソースの種類
 
@@ -41,8 +41,8 @@ ms.locfileid: "27748571"
 | deletedDateTime                    | DateTimeOffset                                                    | Azure AD テナントは、ISO 8601 形式を使用して削除されたときの日付と時刻を表すし、は、UTC 時刻では常にします。 たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、次のようになります。`'2014-01-01T00:00:00Z'` 読み取り専用です。                                                                                     |
 |dirSyncEnabled|Boolean|このオブジェクトがオンプレミスのディレクトリから同期される場合は **true**。このオブジェクトが最初にオンプレミスのディレクトリから同期されていて、今後は同期されない場合は **false**。このオブジェクトがオンプレミスのディレクトリから一度も同期されたことがない場合は **null** (既定値)。|
 |displayName|String|テナントの表示名。|
-|id|String|テナントの一意識別子。[directoryObject](directoryobject.md) から継承されます。キー。null 許容ではありません。読み取り専用です。|
-|isMultipleDataLocationsForServicesEnabled|Boolean|**true の**場合組織は、複数地域で有効になっています。複数地域が有効な場合は**false**の組織ではありません。**null**(既定値)。 値の取得のみ可能です。 詳細については、[オンラインの複数の地域 OneDrive](https://docs.microsoft.com/sharepoint/dev/solution-guidance/multigeo-introduction)を参照してください。|
+|id|String|テナント ID では、組織 (またはテナント) を表す一意の識別子です。 [directoryObject](directoryobject.md) から継承されます。 キー。 null 許容ではありません。 読み取り専用です。|
+|isMultipleDataLocationsForServicesEnabled|Boolean|**true の**場合組織は、複数地域で有効になっています。複数地域が有効な場合は**false**の組織ではありません。**null**(既定値)。 読み取り専用です。 詳細については、[オンラインの複数の地域 OneDrive](https://docs.microsoft.com/sharepoint/dev/solution-guidance/multigeo-introduction)を参照してください。|
 |marketingNotificationEmails|String コレクション| null 許容ではありません。            |
 |objectType|String|オブジェクトの種類を識別する文字列です。テナントの場合、値は常に「会社」です。 |
 |postalCode|String| 組織の住所の郵便番号 |
