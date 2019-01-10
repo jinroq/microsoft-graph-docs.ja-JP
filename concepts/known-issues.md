@@ -2,12 +2,12 @@
 title: Microsoft Graph に関する既知の問題
 description: この記事では、Microsoft Graph に関する既知の問題について説明します。最新の更新プログラムについては、「Microsoft Graph の変更ログ」を参照してください。
 author: jthake-msft
-ms.openlocfilehash: e39cdb13a93c19a4a4829c69dc4b1090fd67d206
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+ms.openlocfilehash: 314b1cf1adab9f7454b6b7e3a3c3acf492d0648c
+ms.sourcegitcommit: 6e34c6995e4217a471950d76fdcf0731e6a17d0e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27329163"
+ms.lasthandoff: 01/10/2019
+ms.locfileid: "27791660"
 ---
 # <a name="known-issues-with-microsoft-graph"></a>Microsoft Graph に関する既知の問題
 
@@ -38,19 +38,9 @@ ms.locfileid: "27329163"
 
 ## <a name="microsoft-teams"></a>Microsoft Teams
 
-### <a name="application-permissions"></a>アプリケーションのアクセス許可
-
-アプリケーションのアクセス許可を使用するチームとチャネルに変更を加える場合、Microsoft Teams は全般チャネルに投稿されたコントロール メッセージに、アプリケーション名ではなく空白名を表示します。 これは、今後の更新プログラムで修正されます。 修正は、既に投稿されているコントロール メッセージについても適用されます。
-
 ### <a name="create-chat-thread-api"></a>チャット スレッドの作成 API
 
 [チャット スレッドを作成する](/graph/api/channel-post-chatthreads?view=graph-rest-beta)現在の API が、[チャネル メッセージのリスト作成](/graph/api/channel-list-messages?view=graph-rest-beta)のスキーマと整合性のある、より充実した API に置き換えられます。
-
-### <a name="graph-explorer-and-v10"></a>Graph エクスプローラーと v1.0
-
-Graph エクスプローラーのサンプル クエリはまだ、v1.0 向けに更新されていません。
-それでも、v1.0 クエリを上部のテキスト ボックスに入力することができます。
-Graph エクスプローラーに、Group.ReadWrite.All や User.Read.All などの適切なアクセス許可を設定していることを確認してください。
 
 ### <a name="graph-explorer-and-global-admins"></a>Graph エクスプローラーと全体管理者
 
