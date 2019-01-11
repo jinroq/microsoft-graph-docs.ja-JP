@@ -2,12 +2,13 @@
 title: managedAppStatuses のリスト
 description: managedAppStatus オブジェクトのプロパティとリレーションシップをリストします。
 author: tfitzmac
-ms.openlocfilehash: 1cf73098931b4ae0e7f7eddf5169f991d5b3d695
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: b5a01f37045c7c9927604a87441ef6d5e007092c
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27319237"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27855224"
 ---
 # <a name="list-managedappstatuses"></a>managedAppStatuses のリスト
 

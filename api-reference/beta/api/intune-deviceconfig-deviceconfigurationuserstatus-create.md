@@ -2,12 +2,13 @@
 title: deviceConfigurationUserStatus の作成
 description: 新しい deviceConfigurationUserStatus オブジェクトを作成します。
 author: tfitzmac
-ms.openlocfilehash: 2d12b141fd45b89e7330595594f1110c65f8b4d4
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 2b4b0406de54604d09811f4034ae4e3883c91a3c
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27311649"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27858570"
 ---
 # <a name="create-deviceconfigurationuserstatus"></a>deviceConfigurationUserStatus の作成
 

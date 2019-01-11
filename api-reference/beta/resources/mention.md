@@ -2,12 +2,13 @@
 title: リソースの種類を説明します。
 description: 相手の電子メール アドレスに基づいてユーザーに通知を表します。
 author: simonhult
-ms.openlocfilehash: a9c00daed067ecd41f0f687687ac9bf7f86d6f2c
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 4ab60fafe00f14f69d79e482d0616576c73d1092
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27334231"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27858430"
 ---
 # <a name="mention-resource-type"></a>リソースの種類を説明します。
 

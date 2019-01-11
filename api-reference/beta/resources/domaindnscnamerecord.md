@@ -2,12 +2,13 @@
 title: domainDnsCnameRecord リソースの種類
 description: テナント内の特定のドメインの DNS ゾーン ファイルに追加された CNAME レコードを表します。DomainDnsRecord エンティティから継承されます。
 author: lleonard-msft
-ms.openlocfilehash: 0ce5a748d9a1b558b4ac49e104eb9498efe674aa
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 86ce0a1e5336414ef87fb78752e8c252015f724c
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27315842"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27856589"
 ---
 # <a name="domaindnscnamerecord-resource-type"></a>domainDnsCnameRecord リソースの種類
 

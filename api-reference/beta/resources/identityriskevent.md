@@ -2,12 +2,13 @@
 title: identityRiskEvent リソースの種類
 description: Azure Active Directory アイデンティティ保護によって検出されたリスク イベントです。 特定のリスク イベントの種類ごとの基本型です。
 author: cloudhandler
-ms.openlocfilehash: 4abe473b47d3ce52fd5b75b6adfd08dbc4af54fc
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 0735599c260fac178b54ee4ba54a17f5ea027e23
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27351739"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27858997"
 ---
 # <a name="identityriskevent-resource-type"></a>identityRiskEvent リソースの種類
 
@@ -32,19 +33,19 @@ ms.locfileid: "27351739"
 |:---------------|:--------|:----------|
 |[IdentityRiskEvent を取得します。](../api/identityriskevent-get.md) | [identityRiskEvent](identityriskevent.md) |IdentityRiskEvent オブジェクトのプロパティと関係を参照してください。|
 
-## <a name="properties"></a>Properties
+## <a name="properties"></a>プロパティ
 | プロパティ     | 種類   |説明|
 |:---------------|:--------|:----------|
 |closedDateTime|dateTimeOffset| リスク イベントが終了したときの日時|
 |createdDateTime|dateTimeOffset| 日付とイベントが作成された時刻です。 以上のリスク イベント自体の日付と時刻を常にです。 これは、リスク イベントを照会するときにフィルターとして使用する適切なプロパティです。|
-|ID|string| 取得のみ可能な値です|
+|ID|文字列| 読み取り専用です。|
 |riskEventDateTime|dateTimeOffset| リスク イベントが発生したときの日時|
-|riskEventStatus|string| 可能な値は、`active`、`remediated`、`dismissedAsFixed`、`dismissedAsFalsePositive`、`dismissedAsIgnore`、`loginBlocked`、`closedMfaAuto`、`closedMultipleReasons` です。|
-|riskLevel|string| 使用可能な値: `low`、`medium`、`high`。|
-|riskEventType|string| リスクの種類|
-|userDisplayName|string| リスクのユーザーの名前|
-|userId|string| リスクのユーザーの id|
-|userPrincipalName|string| リスクのユーザーのユーザー プリンシパル名|
+|riskEventStatus|文字列| 可能な値は、`active`、`remediated`、`dismissedAsFixed`、`dismissedAsFalsePositive`、`dismissedAsIgnore`、`loginBlocked`、`closedMfaAuto`、`closedMultipleReasons` です。|
+|riskLevel|文字列| 使用可能な値: `low`、`medium`、`high`。|
+|riskEventType|文字列| リスクの種類|
+|userDisplayName|文字列| リスクのユーザーの名前|
+|userId|文字列| リスクのユーザーの id|
+|userPrincipalName|文字列| リスクのユーザーのユーザー プリンシパル名|
 
 ## <a name="relationships"></a>リレーションシップ
 | リレーションシップ | 型   |説明|

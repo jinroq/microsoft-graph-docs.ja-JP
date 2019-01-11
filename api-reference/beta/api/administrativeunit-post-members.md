@@ -2,12 +2,13 @@
 title: メンバーを追加する
 description: 管理単位に (ユーザーまたはグループ) のメンバーを追加するのにはこの API を使用します。
 author: lleonard-msft
-ms.openlocfilehash: be47dbf06c5f59c0a4aaaea4f8c8b4aa8c3ce902
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 222621b37e545a6f2f9dcb9b248bee3cfd6970c2
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27339229"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27860061"
 ---
 # <a name="add-a-member"></a>メンバーを追加する
 

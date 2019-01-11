@@ -2,12 +2,13 @@
 title: iosCompliancePolicy の更新
 description: iosCompliancePolicy オブジェクトのプロパティを更新します。
 author: tfitzmac
-ms.openlocfilehash: 3b6589601622015f589c10f2ed839117b4755269
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 9e87f118033ff4bd72ea6da18f89d9c8698464b5
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27305125"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27858129"
 ---
 # <a name="update-ioscompliancepolicy"></a>iosCompliancePolicy の更新
 

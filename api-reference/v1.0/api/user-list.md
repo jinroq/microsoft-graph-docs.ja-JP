@@ -2,12 +2,13 @@
 title: ユーザーを一覧表示する
 description: ユーザー オブジェクトのリストを取得します。
 author: dkershaw10
-ms.openlocfilehash: ad7feaa1d694f3ae44b125f67e5e72b78b3089f3
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Priority
+ms.openlocfilehash: 16ecb08c5b0780a7d6ec11f11afb24969cecba4d
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27335169"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27857758"
 ---
 # <a name="list-users"></a>ユーザーを一覧表示する
 

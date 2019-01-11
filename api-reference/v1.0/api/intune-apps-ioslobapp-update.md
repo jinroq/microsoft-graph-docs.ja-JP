@@ -2,12 +2,13 @@
 title: iosLobApp の更新
 description: iosLobApp オブジェクトのプロパティを更新します。
 author: tfitzmac
-ms.openlocfilehash: cffa5603cf92bd8e45c95ebb805618c1293851eb
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: f305b2b737db4fbd687eb4cb1c97bf628ef2517b
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27354265"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27857839"
 ---
 # <a name="update-ioslobapp"></a>iosLobApp の更新
 

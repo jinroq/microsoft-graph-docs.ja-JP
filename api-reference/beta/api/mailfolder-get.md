@@ -2,12 +2,13 @@
 title: mailFolder を取得する
 description: メッセージ フォルダー オブジェクトのプロパティとリレーションシップを取得します。
 author: angelgolfer-ms
-ms.openlocfilehash: e1394c6bf97a3c5d65bda0ee7b8f29d8a29643bb
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 8301f5ff1cef7602b3e9d488c67daec8ac277cce
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27357814"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27856651"
 ---
 # <a name="get-mailfolder"></a>mailFolder を取得する
 

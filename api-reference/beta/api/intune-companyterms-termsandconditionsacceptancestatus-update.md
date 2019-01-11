@@ -2,12 +2,13 @@
 title: termsAndConditionsAcceptanceStatus の更新
 description: termsAndConditionsAcceptanceStatus オブジェクトのプロパティを更新します。
 author: tfitzmac
-ms.openlocfilehash: 8c28732beeebd78be6bd5b461b87bbf14550db8e
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 886910cfe2ac0b1bcf6ad1fcbd0a76a79c515aba
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27355063"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27858437"
 ---
 # <a name="update-termsandconditionsacceptancestatus"></a>termsAndConditionsAcceptanceStatus の更新
 

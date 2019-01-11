@@ -1,12 +1,13 @@
 ---
 title: plannerChecklistItems リソースの種類
 description: '**plannerChecklistItemCollection** リソースは、タスクのチェックリスト項目のコレクションを表します。これは、オープン型です。タスクの詳細オブジェクトの一部です。プロパティ/値の組の値は、checklistItem オブジェクトです。'
-ms.openlocfilehash: 44e64872c34a70062e847889576bd226d4fe51fb
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: f958289e22ccc7515fe0e79145bba5fb5188e660
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27070632"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27858626"
 ---
 # <a name="plannerchecklistitems-resource-type"></a>plannerChecklistItems リソースの種類
 

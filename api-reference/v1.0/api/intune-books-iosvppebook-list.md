@@ -2,12 +2,13 @@
 title: iosVppEBooks のリスト
 description: iosVppEBook オブジェクトのプロパティとリレーションシップをリストします。
 author: tfitzmac
-ms.openlocfilehash: 7c9c4de1a427fae18b042105959a4fcf04c8b893
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: b61e483286bf4328135d9b1a3e3b42cdaeb797ae
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27320070"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27860390"
 ---
 # <a name="list-iosvppebooks"></a>iosVppEBooks のリスト
 

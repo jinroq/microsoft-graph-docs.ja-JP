@@ -2,12 +2,13 @@
 title: androidGeneralDeviceConfiguration の削除
 description: androidGeneralDeviceConfiguration を削除します。
 author: tfitzmac
-ms.openlocfilehash: 45912bca710cdf31da09d3db5ceff52bd68bb23e
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 1ca8530e2ed3b803a3bf5e5f743ac8480ea115e2
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27305517"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27856847"
 ---
 # <a name="delete-androidgeneraldeviceconfiguration"></a>androidGeneralDeviceConfiguration の削除
 

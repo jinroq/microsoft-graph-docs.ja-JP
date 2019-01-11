@@ -2,12 +2,13 @@
 title: settingStateDeviceSummary リソースの種類
 description: 設定状態の要約に対する、デバイス コンプライアンス ポリシーおよび構成
 author: tfitzmac
-ms.openlocfilehash: 0394de24fb0dee6ba0df1434ea199b131cf05df8
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 09eb9059255d6236db6347961ad456f3ec3fd93a
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27322499"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27860334"
 ---
 # <a name="settingstatedevicesummary-resource-type"></a>settingStateDeviceSummary リソースの種類
 

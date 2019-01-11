@@ -3,12 +3,13 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
 title: アクセス許可を変更する
-ms.openlocfilehash: 96662cac4a58dcff9ed7faa40f61c8a09bfc88b3
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 44f98d559ab6dc4c81a4efede2f3f60020c2f944
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27066254"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27859683"
 ---
 # <a name="update-sharing-permission"></a>共有アクセス許可を更新する
 
@@ -42,7 +43,7 @@ PATCH /users/{user-id}/drive/items/{item-id}/permissions/{perm-id}
 
 ## <a name="optional-request-headers"></a>オプションの要求ヘッダー
 
-| 名前          | 型   | 説明                                                                                                                                                                                       |
+| 名前          | 種類   | 説明                                                                                                                                                                                       |
 |:--------------|:-------|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | if-match      | 文字列 | この要求ヘッダーが含まれていて、指定された eTag (または cTag) が項目の現在のタグに一致しない場合には、`412 Precondition Failed` 応答が返され、項目は削除されません。 |
 
@@ -53,7 +54,7 @@ PATCH /users/{user-id}/drive/items/{item-id}/permissions/{perm-id}
 要求本文に含まれない既存のプロパティは、以前の値のままになるか、他のプロパティ値の変更に基づいて再計算されます。
 最適なパフォーマンスを得るためには、変更されていない既存の値を含めないでください。
 
-| プロパティ     | 型   | 説明                   |
+| プロパティ     | 種類   | 説明                   |
 |:-------------|:-------|:------------------------------|
 | **roles**    | String | アクセス許可の種類の配列。 |
 

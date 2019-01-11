@@ -1,12 +1,13 @@
 ---
 title: groupSettingTemplate リソースの種類
 description: グループ設定テンプレートは、テナントが使用できるシステム定義の設定を表します。グループ設定は、使用可能な **groupSettingTemplates** に基づいて作成することができ、値は事前設定された既定値から変更することができます。グループ設定テンプレートの作成、更新、削除はできません。これらの設定は、テナント全体の設定または特定のグループ設定を表すことができます。現時点では、利用可能なテンプレートは Office 365 グループのみに適用され、そこでユーザーがグループを作成したり、組織外からゲストをグループのメンバーに招待できるかどうかなどの設定をすることができます。
-ms.openlocfilehash: 3c4111b2727e79e048778063b259611795733de4
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: c2e6b465226b8c1c69438fab37d874735e89ac52
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27023768"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27859347"
 ---
 # <a name="groupsettingtemplate-resource-type"></a>groupSettingTemplate リソースの種類
 
@@ -21,7 +22,7 @@ ms.locfileid: "27023768"
 
 ## <a name="properties"></a>プロパティ
 
-| プロパティ | 型 | 説明 |
+| プロパティ | 種類 | 説明 |
 |:---------------|:--------|:----------|
 |説明|文字列| テンプレートの説明です。 |
 |displayName|文字列| テンプレートの表示名です。 |

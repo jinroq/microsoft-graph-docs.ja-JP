@@ -2,12 +2,13 @@
 title: ディレクトリの役割] ボックスの一覧 scopedMembers
 description: ディレクトリの役割の scopedRoleMembership オブジェクトのリストを取得します。
 author: lleonard-msft
-ms.openlocfilehash: b3d0e8bc67b6ab670b7dc8a149bad0f031b03762
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: dbe294d2f55f7e4c0ee265aa180551e7078a5ab1
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27311719"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27859214"
 ---
 # <a name="list-scopedmembers-for-a-directory-role"></a>ディレクトリの役割] ボックスの一覧 scopedMembers
 

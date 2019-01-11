@@ -1,12 +1,13 @@
 ---
 title: 'ユーザー: invalidateAllRefreshTokens'
 description: '**RefreshTokensValidFromDateTime**ユーザーのプロパティを現在の日付と時刻にリセットすることでアプリケーション (と同様に、ユーザーのブラウザーでセッション cookie) を発行したユーザーの更新のトークンのすべてを無効にします。 通常、この操作は、ユーザーが紛失または盗難に遭ったデバイスを持っている場合、(ユーザーまたは管理者) によって実行されます。  この操作は、任意のユーザーが最初に、もう一度サインインする必要がないデバイス上のアプリケーションを通じてアクセスされる組織のデータにアクセスをできなくなります。 実際には、この操作は強制的にもう一度サインインして、以前に、配信されるすべてのアプリケーションのユーザーは、デバイスに依存しません。'
-ms.openlocfilehash: 23743c4bc372193a5478d79432b7bb4e0a9ec4ce
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 4ece9866e703d47ab8f7b024496f92f30a4a14b8
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27073223"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27858080"
 ---
 # <a name="user-invalidateallrefreshtokens"></a>ユーザー: invalidateAllRefreshTokens
 

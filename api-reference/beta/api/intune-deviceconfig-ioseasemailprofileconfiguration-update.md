@@ -2,12 +2,13 @@
 title: IosEasEmailProfileConfiguration を更新します。
 description: IosEasEmailProfileConfiguration オブジェクトのプロパティを更新します。
 author: tfitzmac
-ms.openlocfilehash: a330d3c56386da5c440bbe58573f977c876d8481
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: a3d31e88c248d57dcba1eb5531751a2d1e213bf3
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27343290"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27858486"
 ---
 # <a name="update-ioseasemailprofileconfiguration"></a>IosEasEmailProfileConfiguration を更新します。
 

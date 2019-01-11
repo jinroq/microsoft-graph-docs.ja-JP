@@ -1,12 +1,13 @@
 ---
 title: 予定表を一覧表示する
 description: 'すべてのユーザーの予定表を取得します (`/calendars` ナビゲーション プロパティ)。また既定の予定表グループまたは特定の予定表グループから予定表を取得します。 '
-ms.openlocfilehash: ca0a494510e8236f21b0700092af3dac926df558
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Priority
+ms.openlocfilehash: 3750f034d501ab06ee0b10e1b567f14f03cc4043
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27022283"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27857030"
 ---
 # <a name="list-calendars"></a>予定表を一覧表示する
 

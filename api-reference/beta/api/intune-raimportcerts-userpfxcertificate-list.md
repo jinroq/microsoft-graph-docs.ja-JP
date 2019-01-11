@@ -2,12 +2,13 @@
 title: リスト userPFXCertificates
 description: UserPFXCertificate オブジェクトのプロパティと関係を一覧表示します。
 author: tfitzmac
-ms.openlocfilehash: a6ff72433bf0861acd891a53b0f8d9fdd37fb364
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 99e72ac2b775438854d45809e424d1113270f515
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27326538"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27857177"
 ---
 # <a name="list-userpfxcertificates"></a>リスト userPFXCertificates
 

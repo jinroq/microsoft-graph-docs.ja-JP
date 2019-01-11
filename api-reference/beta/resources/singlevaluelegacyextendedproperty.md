@@ -1,12 +1,13 @@
 ---
 title: singleValueLegacyExtendedProperty リソースの種類
 description: '単一値が含まれる拡張プロパティ。 '
-ms.openlocfilehash: 1b9eeaa05ee15aab30c1761cd35f70f586dffb24
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 51a42661ea3a19ea8e82ba78115bfa5290d99d15
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27073323"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27857415"
 ---
 # <a name="singlevaluelegacyextendedproperty-resource-type"></a>singleValueLegacyExtendedProperty リソースの種類
 
@@ -25,7 +26,7 @@ ms.locfileid: "27073323"
 |[Get](../api/singlevaluelegacyextendedproperty-get.md) |([メッセージ](../resources/message.md)、 [mailFolder](../resources/mailfolder.md)、[イベント](../resources/event.md)、[予定表](../resources/calendar.md)[にお問い合わせください](../resources/contact.md)、 [contactFolder](../resources/contactfolder.md) [Outlook の仕事](../resources/outlooktask.md)、 [Outlook の仕事フォルダー](../resources/outlooktaskfolder.md)、またはグループの[転記](../resources/post.md))、サポートされているリソースのインスタンスのコレクションの 1 つまたはまたは、このような 1 つのインスタンスは、 [singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md)オブジェクトを使用して展開します。 |`$expand` または `$filter` を使用して拡張プロパティでリソース インスタンスを取得します。|
 
 ## <a name="properties"></a>プロパティ
-| プロパティ     | 型   |説明|
+| プロパティ     | 種類   |説明|
 |:---------------|:--------|:----------|
 |ID|string|プロパティ識別子。読み取り専用です。|
 |value|文字列|プロパティ値。|

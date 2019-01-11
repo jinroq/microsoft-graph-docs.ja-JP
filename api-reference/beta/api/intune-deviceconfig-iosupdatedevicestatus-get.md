@@ -2,12 +2,13 @@
 title: Get iosUpdateDeviceStatus
 description: iosUpdateDeviceStatus オブジェクトのプロパティとリレーションシップを読み取ります。
 author: tfitzmac
-ms.openlocfilehash: e49af975fc6eed33d5b0de506927f3eca4e4741e
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 679cc7de95f6c70bead957a77b7bcac8a3ae8abe
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27332999"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27858745"
 ---
 # <a name="get-iosupdatedevicestatus"></a>Get iosUpdateDeviceStatus
 

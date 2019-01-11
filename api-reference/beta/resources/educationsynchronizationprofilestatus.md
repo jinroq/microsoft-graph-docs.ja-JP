@@ -2,12 +2,13 @@
 title: educationSynchronizationProfileStatus リソースの種類
 description: '学校のデータの同期プロファイルの同期の状態を表します。 '
 author: mmast-msft
-ms.openlocfilehash: c92ba2226b28896f8df89a7aee66602651344154
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 4476ffc7c64fb5d9852c46e2b748587e79d427c1
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27325999"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27858164"
 ---
 # <a name="educationsynchronizationprofilestatus-resource-type"></a>educationSynchronizationProfileStatus リソースの種類
 
@@ -23,11 +24,11 @@ ms.locfileid: "27325999"
 |:-|:-|:-|
 | [同期のステータスを取得します。](../api/educationsynchronizationprofilestatus-get.md) | **educationSynchronizationProfileStatus** | 特定の同期プロファイルの状態を返します。 |
 
-## <a name="properties"></a>Properties
+## <a name="properties"></a>プロパティ
 
 | プロパティ | 種類 | 説明 |
 |:-|:-|:-|
-| **status** | string | 同期の状態です。使用可能な値: `paused`、 `inProgress`、 `success`、 `error`、 `quarantined`、 `validationError`。 |
+| **status** | 文字列 | 同期の状態です。使用可能な値: `paused`、 `inProgress`、 `success`、 `error`、 `quarantined`、 `validationError`。 |
 | **lastSynchronizationDateTime** | DateTimeOffset | ディレクトリ内の最新の変更が確認されて、時間を表します。  |
 
 ## <a name="json-representation"></a>JSON 表記

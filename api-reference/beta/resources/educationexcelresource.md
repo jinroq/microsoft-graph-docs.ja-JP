@@ -2,12 +2,13 @@
 title: educationExcelResource リソースの種類
 description: 'EducationResource のサブクラスです。 この種類のリソースでは、Excel ドキュメントを表します。  '
 author: mmast-msft
-ms.openlocfilehash: 427de6fac1f5f4ad63de8286e2714dd8fad472f9
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 7f772f7911667c76e64c31a856f3a9f8b6f3e6ff
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27315940"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27858101"
 ---
 # <a name="educationexcelresource-resource-type"></a>educationExcelResource リソースの種類
 
@@ -18,7 +19,7 @@ ms.locfileid: "27315940"
 >**注:** Excel ファイルは、このリソースが所属する割り当てまたは提出書類のオブジェクトに関連付けられているリソースのフォルダーにする必要があります。
 
 
-## <a name="properties"></a>Properties
+## <a name="properties"></a>プロパティ
 | プロパティ     | 種類   |説明|
 |:---------------|:--------|:----------|
 |fileUrl|String|Excel ファイルのオブジェクトへのポインター。|

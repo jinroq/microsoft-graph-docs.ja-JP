@@ -2,12 +2,13 @@
 title: IosVpnConfiguration を更新します。
 description: IosVpnConfiguration オブジェクトのプロパティを更新します。
 author: tfitzmac
-ms.openlocfilehash: b45e0d9eb395e93e876cfd874859b595b1ffa1a1
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 7a07d1e60cdc3437aada5296aeefd86a6e45ae9d
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27355644"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27858451"
 ---
 # <a name="update-iosvpnconfiguration"></a>IosVpnConfiguration を更新します。
 

@@ -2,12 +2,13 @@
 title: deviceManagementPartner リソースの種類
 description: デバイス管理パートナーとの接続を表すエンティティです。
 author: tfitzmac
-ms.openlocfilehash: fd3d1b3b921f3aa1b78dba41821a3b64469d8711
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 2b34fc559f71f2f346ba59c5ac5b0c009ce67a83
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27350268"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27856791"
 ---
 # <a name="devicemanagementpartner-resource-type"></a>deviceManagementPartner リソースの種類
 

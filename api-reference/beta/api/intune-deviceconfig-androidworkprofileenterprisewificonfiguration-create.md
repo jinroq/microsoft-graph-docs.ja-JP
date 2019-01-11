@@ -2,12 +2,13 @@
 title: AndroidWorkProfileEnterpriseWiFiConfiguration を作成します。
 description: 新しい androidWorkProfileEnterpriseWiFiConfiguration オブジェクトを作成します。
 author: tfitzmac
-ms.openlocfilehash: 2f095e6749b7b0a39ab0439eefd83531a2c02373
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 44a72c80a0d75f1955a2583cd518b6e310a787e9
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27360761"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27858913"
 ---
 # <a name="create-androidworkprofileenterprisewificonfiguration"></a>AndroidWorkProfileEnterpriseWiFiConfiguration を作成します。
 

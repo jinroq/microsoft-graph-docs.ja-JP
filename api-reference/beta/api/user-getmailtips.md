@@ -2,12 +2,13 @@
 title: 'ユーザー: getMailTips'
 description: サインイン中のユーザーに利用可能な 1 つまたは複数の受信者のメール ヒントを取得します。
 author: dkershaw10
-ms.openlocfilehash: 039d86c728c2394153ebe1a5aebba1243d40d726
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 2577b37f6cbfa3bd6dc5eff712c07562ecdadbf2
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27304047"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27855966"
 ---
 # <a name="user-getmailtips"></a>ユーザー: getMailTips
 

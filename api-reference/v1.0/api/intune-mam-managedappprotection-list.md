@@ -2,12 +2,13 @@
 title: managedAppProtections のリスト
 description: managedAppProtection オブジェクトのプロパティとリレーションシップをリストします。
 author: tfitzmac
-ms.openlocfilehash: ed4ea950c603b8ed8ce6bf350595ca8616bb5343
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: f162993ad97caef36f7721a0d7cf229351968f2a
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27323206"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27859046"
 ---
 # <a name="list-managedappprotections"></a>managedAppProtections のリスト
 

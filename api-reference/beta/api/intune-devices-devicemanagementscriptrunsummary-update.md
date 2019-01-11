@@ -2,12 +2,13 @@
 title: DeviceManagementScriptRunSummary を更新します。
 description: DeviceManagementScriptRunSummary オブジェクトのプロパティを更新します。
 author: tfitzmac
-ms.openlocfilehash: 7acb5406d6806f9c28498f2766b8a92970893af0
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: c7a82b01ccae7e3f5ca1e8c3b3b784791fe08df3
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27338375"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27858325"
 ---
 # <a name="update-devicemanagementscriptrunsummary"></a>DeviceManagementScriptRunSummary を更新します。
 

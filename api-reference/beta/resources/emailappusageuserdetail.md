@@ -1,25 +1,26 @@
 ---
 title: emailAppUsageUserDetail リソースの種類
 description: リソースの JSON 表記を次に示します。
-ms.openlocfilehash: 951d53f7491ff7f2b7721b14ed354d770cfd1730
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 9f1748d6ae3b313fd9f3a87cc211858b5b876b9a
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27067090"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27858948"
 ---
 # <a name="emailappusageuserdetail-resource-type"></a>emailAppUsageUserDetail リソースの種類
 
 ## <a name="properties"></a>プロパティ
 
-| プロパティ          | 型              |
+| プロパティ          | 種類              |
 | :---------------- | :---------------- |
-| reportRefreshDate | Date              |
+| reportRefreshDate | 日付              |
 | userPrincipalName | String            |
 | displayName       | String            |
-| isDeleted         | ブール値           |
-| deletedDate       | Date              |
-| lastActivityDate  | Date              |
+| isDeleted         | ブール型           |
+| deletedDate       | 日付              |
+| lastActivityDate  | 日付              |
 | mailForMac        | String コレクション |
 | outlookForMac     | String コレクション |
 | outlookForWindows | String コレクション |

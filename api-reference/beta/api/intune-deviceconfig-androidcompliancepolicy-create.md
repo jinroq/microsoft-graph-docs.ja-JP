@@ -2,12 +2,13 @@
 title: androidCompliancePolicy の作成
 description: 新しい androidCompliancePolicy オブジェクトを作成します。
 author: tfitzmac
-ms.openlocfilehash: d09040d1db8d2516cf186b72e26ad24782b76328
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: bf6b5d9ca8d509254dab08b420da55700f55351a
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27322569"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27860250"
 ---
 # <a name="create-androidcompliancepolicy"></a>androidCompliancePolicy の作成
 

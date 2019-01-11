@@ -2,12 +2,13 @@
 title: AndroidWorkProfileNineWorkEasConfiguration を更新します。
 description: AndroidWorkProfileNineWorkEasConfiguration オブジェクトのプロパティを更新します。
 author: tfitzmac
-ms.openlocfilehash: e0ecb99966c9966afce379d4c4546bc303f24e42
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: edbdbff87cf2384506aeb7f3527b9dc018e3931c
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27345291"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27858675"
 ---
 # <a name="update-androidworkprofilenineworkeasconfiguration"></a>AndroidWorkProfileNineWorkEasConfiguration を更新します。
 

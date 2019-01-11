@@ -2,12 +2,13 @@
 title: windows10EndpointProtectionConfiguration の更新
 description: windows10EndpointProtectionConfiguration オブジェクトのプロパティを更新します。
 author: tfitzmac
-ms.openlocfilehash: 7116f7a6eef8c3ae26d5588191eec471a53373b7
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: a4391676ad9620210f0cb80339ac986b5229e856
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27313980"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27859382"
 ---
 # <a name="update-windows10endpointprotectionconfiguration"></a>windows10EndpointProtectionConfiguration の更新
 

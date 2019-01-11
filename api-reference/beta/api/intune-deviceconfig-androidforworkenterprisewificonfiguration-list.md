@@ -2,12 +2,13 @@
 title: リスト androidForWorkEnterpriseWiFiConfigurations
 description: AndroidForWorkEnterpriseWiFiConfiguration オブジェクトのプロパティと関係を一覧表示します。
 author: tfitzmac
-ms.openlocfilehash: 210484116d777e876760e2aeed8542ea3e97d4d4
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 66a8e4656897ecec8b6cdddaec89fa961346dd06
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27354909"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27853222"
 ---
 # <a name="list-androidforworkenterprisewificonfigurations"></a>リスト androidForWorkEnterpriseWiFiConfigurations
 

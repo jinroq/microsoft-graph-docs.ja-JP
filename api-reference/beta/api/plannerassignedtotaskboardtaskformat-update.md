@@ -1,12 +1,13 @@
 ---
 title: Update plannerAssignedToTaskBoardTaskFormat
 description: '**plannerAssignedToTaskBoardTaskFormat** オブジェクトのプロパティを更新します。'
-ms.openlocfilehash: 7bf559b5962c895c1ce7b5d3192ab743bca3acb2
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 2586e0d413ce6debcc90b720c2ec45773518507e
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27069004"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27856806"
 ---
 # <a name="update-plannerassignedtotaskboardtaskformat"></a>Update plannerAssignedToTaskBoardTaskFormat
 
@@ -36,7 +37,7 @@ PATCH /planner/tasks/<id>/assignedToTaskBoardFormat
 ## <a name="request-body"></a>要求本文
 要求本文で、更新する関連フィールドの値を指定します。要求本文に含まれない既存のプロパティは、以前の値のままになるか、他のプロパティ値の変化に基づいて再計算されます。最適なパフォーマンスを得るためには、変更されていない既存の値を含めないでください。
 
-| プロパティ     | 型   |説明|
+| プロパティ     | 種類   |説明|
 |:---------------|:--------|:----------|
 |orderHintsByAssignee|[plannerOrderHintsByAssignee](../resources/plannerorderhintsbyassignee.md)|担当者、タスク掲示板のビューでタスクを注文するために使用するヒントのディクショナリ。 タスクが割り当てられているユーザーの 1 つは、各エントリのキーと値は、order ヒントです。 各値の形式が定義されている [プランナー] の [順序のヒントを使用して (../resources/planner_order_hint_format.md)。|
 |unassignedOrderHint|String|すべてのユーザーにタスクが割り当てられていない場合、または orderHintsByAssignee の辞書は、タスクのユーザーの order ヒントを提供していない場合、担当者の作業掲示板のビューでタスクを注文するために使用するヒントの値が割り当てられます。 [プランナーで使用する順序のヒント](../resources/planner-order-hint-format.md)の形式が定義されています。|

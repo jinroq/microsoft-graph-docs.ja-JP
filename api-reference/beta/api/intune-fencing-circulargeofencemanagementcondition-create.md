@@ -2,12 +2,13 @@
 title: CircularGeofenceManagementCondition を作成します。
 description: 新しい circularGeofenceManagementCondition オブジェクトを作成します。
 author: tfitzmac
-ms.openlocfilehash: fe99dd39aeeee3f9db3e15bdb61c0f3df1c937ed
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 8264349e4e3da3adc5cf6c457754f245c61fa8e8
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27352116"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27858171"
 ---
 # <a name="create-circulargeofencemanagementcondition"></a>CircularGeofenceManagementCondition を作成します。
 

@@ -2,12 +2,13 @@
 title: AndroidWorkProfileScepCertificateProfile を作成します。
 description: 新しい androidWorkProfileScepCertificateProfile オブジェクトを作成します。
 author: tfitzmac
-ms.openlocfilehash: 1a8c6afcc040841281205e55b22dce4507395cfc
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: f36e156ed2d2afa23e4162704f2498a10b684439
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27349701"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27858584"
 ---
 # <a name="create-androidworkprofilescepcertificateprofile"></a>AndroidWorkProfileScepCertificateProfile を作成します。
 

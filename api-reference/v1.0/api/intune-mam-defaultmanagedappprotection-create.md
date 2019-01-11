@@ -2,12 +2,13 @@
 title: Create defaultManagedAppProtection
 description: 新しい defaultManagedAppProtection オブジェクトを作成します。
 author: tfitzmac
-ms.openlocfilehash: c76afc8d9c9bd465b40e506117ec80ef1345045c
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 01b701d357675fe598127107d987e570d4126202
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27323192"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27856974"
 ---
 # <a name="create-defaultmanagedappprotection"></a>Create defaultManagedAppProtection
 

@@ -3,12 +3,13 @@ title: >
   managedDevice の更新
 description: managedDevice オブジェクトのプロパティを更新します。
 author: tfitzmac
-ms.openlocfilehash: 9f608f13f7580e76d1e1934d5aea788a2ce6738f
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 31c1b1a497dcd5cabf4b7b97b56811dbbedb2a5a
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27357828"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27858612"
 ---
 # <a name="update-manageddevice"></a>managedDevice の更新
 

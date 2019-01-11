@@ -2,12 +2,13 @@
 title: Get ChartPoint
 description: chartPoint オブジェクトのプロパティと関係を取得します。
 author: lumine2008
-ms.openlocfilehash: da8e920a63507288f392a0cba72881b8e5b52b24
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: c7e08d292a55891ffedcb3e39ad5dfcefeb44656
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27350919"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27858038"
 ---
 # <a name="get-chartpoint"></a>Get ChartPoint
 

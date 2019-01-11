@@ -1,12 +1,13 @@
 ---
 title: リスト governanceRoleAssignments
 description: GovernanceRoleAssignments のコレクションを取得します。
-ms.openlocfilehash: 0f4680c8998191fa07af993e8ee3712557b7010d
-ms.sourcegitcommit: 82f9d0d10388572a3073b2dde8ca0a7b409135b8
+localization_priority: Normal
+ms.openlocfilehash: 51a36cdcd0b565bf1ec7a991fb41af05da19b573
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "27191068"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27859445"
 ---
 # <a name="list-governanceroleassignments"></a>リスト governanceRoleAssignments
 

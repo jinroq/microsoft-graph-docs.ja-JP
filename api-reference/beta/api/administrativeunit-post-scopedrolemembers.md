@@ -1,12 +1,13 @@
 ---
 title: ScopedRoleMember を追加します。
 description: 新しい scopedRoleMembership を追加します。 注:*ユーザー アカウントの管理者*と*ヘルプ デスクの管理者*の役割のみ現在サポートされてスコープ ロールのメンバーシップ。
-ms.openlocfilehash: bab8b1ba5d9093617f1aafb48d84f41badef2566
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: e2ff1803ac0357fa8fef9e1cf68b2ff78f877895
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27067408"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27860019"
 ---
 # <a name="add-a-scopedrolemember"></a>ScopedRoleMember を追加します。
 

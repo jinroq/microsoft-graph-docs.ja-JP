@@ -1,12 +1,13 @@
 ---
 title: chatMessage リソースの種類
 description: チャネルまたはチャットのエンティティ内で個別のチャット メッセージを表します。 メッセージは、ルートのメッセージまたはメッセージ内の**replyToId**プロパティで定義されているスレッドの一部にできます。
-ms.openlocfilehash: 1fba27567d5a1c80a36a5758925ec427735504cf
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Priority
+ms.openlocfilehash: ad381102f7e93a4dcccd7b68435d0687ed6b4837
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27066604"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27855994"
 ---
 # <a name="chatmessage-resource-type"></a>chatMessage リソースの種類
 
@@ -24,9 +25,9 @@ ms.locfileid: "27066604"
 |[メッセージへの応答を取得します。](../api/channel-get-messagereply.md) | [chatmessage](chatmessage.md)| チャネル内のメッセージに 1 つの返信を取得します。|
 
 ## <a name="properties"></a>プロパティ
-| プロパティ     | 型   |説明|
+| プロパティ     | 種類   |説明|
 |:---------------|:--------|:----------|
-|id|String| 読み取り専用。 メッセージの一意の ID です。|
+|ID|String| 読み取り専用です。 メッセージの一意の ID です。|
 |replyToId| 文字列 | スレッドの親メッセージとルートのメッセージの id |
 |from|[identitySet](identityset.md)| メッセージの送信者の詳細|
 |etag| 文字列 | メッセージのバージョン番号 |

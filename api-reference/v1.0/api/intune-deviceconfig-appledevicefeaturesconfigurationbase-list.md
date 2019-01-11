@@ -2,12 +2,13 @@
 title: appleDeviceFeaturesConfigurationBases のリスト
 description: appleDeviceFeaturesConfigurationBase オブジェクトのプロパティとリレーションシップをリストします。
 author: tfitzmac
-ms.openlocfilehash: 969e3eb4067a88302311e8f7680d035567f4f8ec
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 20441242f74ed49a254c77e3311b1900afb0559a
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27332068"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27856149"
 ---
 # <a name="list-appledevicefeaturesconfigurationbases"></a>appleDeviceFeaturesConfigurationBases のリスト
 

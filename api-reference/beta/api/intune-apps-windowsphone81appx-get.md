@@ -2,12 +2,13 @@
 title: WindowsPhone81AppX を取得します。
 description: WindowsPhone81AppX オブジェクトのプロパティと関係を参照してください。
 author: tfitzmac
-ms.openlocfilehash: 5e7c58e88fc701222ae290c9774f5a56f01f7960
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 0d52e5bc6a07f4640325a7565047e411161a6f62
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27304978"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27858717"
 ---
 # <a name="get-windowsphone81appx"></a>WindowsPhone81AppX を取得します。
 

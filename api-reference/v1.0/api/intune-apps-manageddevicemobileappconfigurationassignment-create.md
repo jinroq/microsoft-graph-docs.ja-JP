@@ -2,12 +2,13 @@
 title: managedDeviceMobileAppConfigurationAssignment の作成
 description: 新しい managedDeviceMobileAppConfigurationAssignment オブジェクトを作成します。
 author: tfitzmac
-ms.openlocfilehash: 998ba77acbd34a9aed605502ad833b708a79977d
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 4b36079176a0f181c4a9d63799d8d91dc1e83d5c
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27330122"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27857576"
 ---
 # <a name="create-manageddevicemobileappconfigurationassignment"></a>managedDeviceMobileAppConfigurationAssignment の作成
 

@@ -1,27 +1,28 @@
 ---
 title: skypeForBusinessDeviceUsageUserDetail リソースの種類
 description: リソースの JSON 表記を次に示します。
-ms.openlocfilehash: b62920d124fd52e0f653c128eeb0956cdfe0c680
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 95f2f6cf1f3f6c54c4b6b4b39a7118cd8a94b224
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27068048"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27858381"
 ---
 # <a name="skypeforbusinessdeviceusageuserdetail-resource-type"></a>skypeForBusinessDeviceUsageUserDetail リソースの種類
 
 ## <a name="properties"></a>プロパティ
 
-| プロパティ          | 型    |
+| プロパティ          | 種類    |
 | :---------------- | :------ |
-| reportRefreshDate | Date    |
+| reportRefreshDate | 日付    |
 | userPrincipalName | String  |
-| lastActivityDate  | Date    |
-| usedWindows       | ブール値 |
-| usedWindowsPhone  | ブール値 |
-| usedAndroidPhone  | ブール値 |
-| usediPhone        | ブール値 |
-| usediPad          | ブール値 |
+| lastActivityDate  | 日付    |
+| usedWindows       | ブール型 |
+| usedWindowsPhone  | ブール型 |
+| usedAndroidPhone  | ブール型 |
+| usediPhone        | ブール型 |
+| usediPad          | ブール型 |
 | reportPeriod      | String  |
 
 ## <a name="json-representation"></a>JSON 表記

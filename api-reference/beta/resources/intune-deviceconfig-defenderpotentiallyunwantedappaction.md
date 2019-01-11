@@ -1,12 +1,13 @@
 ---
 title: defenderPotentiallyUnwantedAppAction 列挙型
 description: Defender の動作は、可能性のある不要なアプリケーション (PUA) を検出しました。
-ms.openlocfilehash: c786906046d6a35c026da95246016537e4325aab
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 9b04cd6daeae303910519d0735165171575d8c44
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27068535"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27858647"
 ---
 # <a name="defenderpotentiallyunwantedappaction-enum-type"></a>defenderPotentiallyUnwantedAppAction 列挙型
 

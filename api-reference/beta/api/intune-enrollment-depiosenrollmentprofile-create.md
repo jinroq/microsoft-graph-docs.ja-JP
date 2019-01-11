@@ -2,12 +2,13 @@
 title: DepIOSEnrollmentProfile を作成します。
 description: 新しい depIOSEnrollmentProfile オブジェクトを作成します。
 author: tfitzmac
-ms.openlocfilehash: f06457571a2630c32842a202d45107f768d345f2
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 164cfeef009f63e3318c59f2428483c60673bd10
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27308576"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27858031"
 ---
 # <a name="create-depiosenrollmentprofile"></a>DepIOSEnrollmentProfile を作成します。
 

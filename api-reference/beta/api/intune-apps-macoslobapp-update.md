@@ -2,12 +2,13 @@
 title: MacOSLobApp を更新します。
 description: MacOSLobApp オブジェクトのプロパティを更新します。
 author: tfitzmac
-ms.openlocfilehash: 0e465f84c930362f1607f434388e0c5c108c177f
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 35889053c1bdebcddea9ffd5f69a754530d7ebc5
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27303641"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27859417"
 ---
 # <a name="update-macoslobapp"></a>MacOSLobApp を更新します。
 

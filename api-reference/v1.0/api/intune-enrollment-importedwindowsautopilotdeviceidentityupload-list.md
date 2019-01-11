@@ -2,12 +2,13 @@
 title: リスト importedWindowsAutopilotDeviceIdentityUploads
 description: ImportedWindowsAutopilotDeviceIdentityUpload オブジェクトのプロパティと関係を一覧表示します。
 author: tfitzmac
-ms.openlocfilehash: 2946fa4264e5f1b275ac1c74a769b60032f775fd
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 6fad9ad4fca9dccd1b6aa402795248e5fc67734f
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27353068"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27857317"
 ---
 # <a name="list-importedwindowsautopilotdeviceidentityuploads"></a>リスト importedWindowsAutopilotDeviceIdentityUploads
 

@@ -2,12 +2,13 @@
 title: Update chartfont
 description: chartfont オブジェクトのプロパティを更新します。
 author: lumine2008
-ms.openlocfilehash: 5af44ad188ac8ea19f01595a1f24330e18524df6
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: b9a3a6e3fd29c551ef9b26e8c5d4ac939b0e5dea
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27331767"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27858073"
 ---
 # <a name="update-chartfont"></a>Update chartfont
 

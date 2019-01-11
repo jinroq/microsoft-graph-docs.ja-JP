@@ -2,12 +2,13 @@
 title: binaryManagementConditionExpression リソースの種類
 description: 二項演算を使用して評価される管理条件式です。
 author: tfitzmac
-ms.openlocfilehash: 6f271be2527427daaa04436899552abb4d21475e
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 509e03e7d492289fc9615f7f8ad47bf13d5bead4
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27357520"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27857051"
 ---
 # <a name="binarymanagementconditionexpression-resource-type"></a>binaryManagementConditionExpression リソースの種類
 
@@ -19,7 +20,7 @@ ms.locfileid: "27357520"
 
 [ManagementConditionExpressionModel](../resources/intune-fencing-managementconditionexpressionmodel.md)から継承します。
 
-## <a name="properties"></a>Properties
+## <a name="properties"></a>プロパティ
 |プロパティ|種類|説明|
 |:---|:---|:---|
 |operator|[binaryManagementConditionExpressionOperatorType](../resources/intune-fencing-binarymanagementconditionexpressionoperatortype.md)|二項演算の評価に使用する演算子です。 使用可能な値は、`or`、`and` です。|

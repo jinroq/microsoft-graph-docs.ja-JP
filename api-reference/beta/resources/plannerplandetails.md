@@ -1,12 +1,13 @@
 ---
 title: plannerPlanDetails リソースの種類
 description: '**plannerPlanDetails** リソースは、計画に関する追加情報を表します。各 plan オブジェクトには詳細オブジェクトがあります。'
-ms.openlocfilehash: 1cce5727666bca705da67fccd1a3edf370c68127
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 117a2f69324180a7ef45dcf96c773f510bdbcb9d
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27073090"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27860159"
 ---
 # <a name="plannerplandetails-resource-type"></a>plannerPlanDetails リソースの種類
 
@@ -23,12 +24,12 @@ ms.locfileid: "27073090"
 |[Update](../api/plannerplandetails-update.md) | [plannerPlanDetails](plannerplandetails.md)    |**PlannerPlanDetails**オブジェクトを更新します。 |
 
 ## <a name="properties"></a>プロパティ
-| プロパティ     | 型   |説明|
+| プロパティ     | 種類   |説明|
 |:---------------|:--------|:----------|
 |categoryDescriptions|[plannerCategoryDescriptions](plannercategorydescriptions.md)|計画内のタスクに関連付けられる 6 つのカテゴリの説明を指定するオブジェクト|
-|id|String| 読み取り専用。 計画の ID です。 28 の文字、大文字小文字を区別することをお勧めします。 サービスの[フォーマットの検証](tasks-identifiers-disclaimer.md)が行われます。|
+|id|String| 読み取り専用です。 計画の ID です。 28 の文字、大文字小文字を区別することをお勧めします。 サービスの[フォーマットの検証](tasks-identifiers-disclaimer.md)が行われます。|
 |sharedWith|[plannerUserIds](planneruserids.md)|一連のユーザーと共有は、この計画の Id。 Office 365 のグループを使用する場合は、[グループ](group.md)の計画を共有するグループ メンバーシップを管理するグループの API を使用します。 グループによって所有されているプランにアクセスするために必要はありませんが、このコレクションにグループの既存のメンバーを追加できます。 |
-|contextDetails|[plannerPlanContextDetailsCollection](plannerplancontextdetailscollection.md)|読み取り専用。 [PlannerPlan](plannerplan.md)コンテナーに定義されている[plannerPlanContext](plannerplancontext.md)のエントリに関連付けられているその他の情報のコレクションです。 |
+|contextDetails|[plannerPlanContextDetailsCollection](plannerplancontextdetailscollection.md)|読み取り専用です。 [PlannerPlan](plannerplan.md)コンテナーに定義されている[plannerPlanContext](plannerplancontext.md)のエントリに関連付けられているその他の情報のコレクションです。 |
 
 ## <a name="relationships"></a>リレーションシップ
 なし。

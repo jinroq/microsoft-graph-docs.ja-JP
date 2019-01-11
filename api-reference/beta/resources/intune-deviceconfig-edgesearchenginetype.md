@@ -2,12 +2,13 @@
 title: edgeSearchEngineType 列挙型
 description: MDM 管理対象デバイス用の定義済みの既定の検索エンジンを設定するのには IT admind では、します。
 author: tfitzmac
-ms.openlocfilehash: e08f34e0f01a3facf936b887e89009a05322d963
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 87ebdebbcbbe3aa939595978f202d06b1c727a44
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27356960"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27859620"
 ---
 # <a name="edgesearchenginetype-enum-type"></a>edgeSearchEngineType 列挙型
 

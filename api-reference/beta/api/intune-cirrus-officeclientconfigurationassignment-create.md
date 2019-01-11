@@ -2,12 +2,13 @@
 title: OfficeClientConfigurationAssignment を作成します。
 description: ターゲット グループを既存のポリシーに追加します。
 author: tfitzmac
-ms.openlocfilehash: 850f82f005f46e15a598dd0e08043cca66ffe6bf
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 24eee1797c00fd6ef6e380e2fdde20c5147567af
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27324837"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27858696"
 ---
 # <a name="create-officeclientconfigurationassignment"></a>OfficeClientConfigurationAssignment を作成します。
 

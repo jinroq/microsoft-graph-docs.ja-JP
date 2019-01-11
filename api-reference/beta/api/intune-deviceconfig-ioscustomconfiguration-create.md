@@ -2,12 +2,13 @@
 title: iosCustomConfiguration の作成
 description: 新しい iosCustomConfiguration オブジェクトを作成します。
 author: tfitzmac
-ms.openlocfilehash: e22a670316ca7ffb4216c45cab5e8f3e6d7f3d65
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 55660128a2f962711ddaa33556cee7539e165c06
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27343310"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27858374"
 ---
 # <a name="create-ioscustomconfiguration"></a>iosCustomConfiguration の作成
 

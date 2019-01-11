@@ -2,12 +2,13 @@
 title: Get windowsInformationProtectionNetworkLearningSummary
 description: windowsInformationProtectionNetworkLearningSummary オブジェクトのプロパティとリレーションシップを読み取ります。
 author: tfitzmac
-ms.openlocfilehash: 46c255b5e59ab4245b1945d588bc15b36b55aec8
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 27b25a6a2ed39e5f18acf66df7142b2c6ad3fd96
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27332131"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27858640"
 ---
 # <a name="get-windowsinformationprotectionnetworklearningsummary"></a>Get windowsInformationProtectionNetworkLearningSummary
 

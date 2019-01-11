@@ -1,12 +1,13 @@
 ---
 title: ユーザーのメールボックスの設定を取得する
 description: 'ユーザーの mailboxSettings を取得します。 (時に自動的にユーザーに通知する自動返信の設定が含まれます '
-ms.openlocfilehash: c6c176b278a724f5b4b22428b24915bd37b0b42a
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Priority
+ms.openlocfilehash: 7181a914a34b425653958107d2c10f82f59d0395
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27020220"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27860481"
 ---
 # <a name="get-user-mailbox-settings"></a>ユーザーのメールボックスの設定を取得する
 
@@ -51,7 +52,7 @@ GET /users/{id|userPrincipalName}/mailboxSettings/workingHours
 ## <a name="optional-query-parameters"></a>オプションのクエリ パラメーター
 このメソッドは、応答をカスタマイズするための [OData クエリ パラメーター](https://developer.microsoft.com/graph/docs/concepts/query_parameters)をサポートします。
 ## <a name="request-headers"></a>要求ヘッダー
-| 名前       | 型 | 説明|
+| 名前       | 種類 | 説明|
 |:-----------|:------|:----------|
 | Authorization  | string  | ベアラー {トークン}。必須。 |
 

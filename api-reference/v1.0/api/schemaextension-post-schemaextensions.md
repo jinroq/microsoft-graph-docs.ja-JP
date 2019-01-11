@@ -1,12 +1,13 @@
 ---
 title: schemaExtension の作成
 description: サポートするリソースの種類を拡張するために、schemaExtension 定義を新規作成します。
-ms.openlocfilehash: b66cdc9d589520bbdf3557c4d1ea791f75def984
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Priority
+ms.openlocfilehash: 100602336f32ce7d13318650a7e473b7635f768c
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27021629"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27857429"
 ---
 # <a name="create-schemaextension"></a>schemaExtension の作成
 
@@ -43,7 +44,7 @@ POST /schemaExtensions
 
 次の表に、スキーマ拡張機能の作成時に必要なプロパティを示します。
 
-| パラメーター | 型 | 説明|
+| パラメーター | Type | 説明|
 |:---------------|:--------|:----------|
 |説明|String|スキーマ拡張機能の説明。|
 |id|String|スキーマ拡張機能の定義の一意の識別子。 <br>値の割り当ては、以下の 2 方法のいずれかで行うことができます。 <ul><li>確認されたドメインの内の 1 つの名前とスキーマ拡張機能の名前を連結して、\{_&#65279;domainName_\}\_\{_&#65279;schemaName_\} という形式の一意の文字列を形成します。 次に例 `contoso_mySchema` を示します。 注: 上位ドメイン `.com`、`.net`、`.gov`、`.edu`、`.org` の下では、検証済みのドメインのみがサポートされます。 </li><li>スキーマ名を指定し、Microsoft Graph がそのスキーマ名を使用して **id** 割り当てを完了するには、次の形式を使用します。ext\{_&#65279;8-random-alphanumeric-chars_\}\_\{_&#65279;schema-name_\}。たとえば、`extkvbmkofy_mySchema` です。</li></ul>作成後、このプロパティは変更できません。 |
@@ -207,7 +208,7 @@ Content-length: 420
 
 ## <a name="see-also"></a>関連項目
 
-- [拡張機能を使用してカスタム データをリソースに追加する](/graph/extensibility-overview)
+- [拡張機能を使用したリソースへのカスタム データの追加](/graph/extensibility-overview)
 - [スキーマ拡張機能を使用したグループへのカスタム データの追加](/graph/extensibility-schema-groups)
 
 

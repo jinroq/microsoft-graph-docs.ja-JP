@@ -1,12 +1,13 @@
 ---
 title: 参加者リソースの種類
 description: イベントの参加者です。 これはユーザー、またはテナントの Exchange Server 上でリソースとしてセットアップされている会議室や備品などのリソースとなります。
-ms.openlocfilehash: 7c1a4d5fb483dc722768c9b95885837bdaf6087e
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 95881d0e2f3dfe51b975e60ba6f8d32cda5e222c
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27071206"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27859326"
 ---
 # <a name="attendee-resource-type"></a>参加者リソースの種類
 
@@ -17,7 +18,7 @@ ms.locfileid: "27071206"
 [attendeeBase](attendeebase.md) から派生します。
 
 ## <a name="properties"></a>プロパティ
-| プロパティ     | 型   |説明|
+| プロパティ     | 種類   |説明|
 |:---------------|:--------|:----------|
 |status|[ResponseStatus](responsestatus.md)|イベントに対する参加者からの応答 (なし、承諾、辞退など) と応答が送信された日時。|
 |type|String|参加者のタイプは、`required`、`optional`、`resource` です。|

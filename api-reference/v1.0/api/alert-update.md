@@ -1,12 +1,13 @@
 ---
 title: 警告の更新
 description: アラートの状態および割り当ての同期を保つソリューション全体に統合されたソリューション内で、編集可能な**アラート**のプロパティを更新します。 このメソッドは、id。 参照されているアラートのレコードがどのようなソリューションを更新します。
-ms.openlocfilehash: 6516d00bc7a542c3aa00244664e08194d96a9640
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: dc5c1197e344aa181d827acc654e24bd5a048a06
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27024166"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27858094"
 ---
 # <a name="update-alert"></a>警告の更新
 
@@ -42,7 +43,7 @@ PATCH /security/alerts/{alert_id}
 
 要求の本文には、更新される関連フィールドの値の JSON の形式を指定します。 含まれている**必要があります**本体、`vendorInformation`プロパティに有効な`provider`と`vendor`のフィールドです。 次の表では、アラートの更新可能なフィールドを示します。 要求の本文に含まれていない既存のプロパティの値は変更されません。 最適なパフォーマンスを得るために、変更されていない既存の値を含めないでください。
 
-| プロパティ   | 型 |説明|
+| プロパティ   | 種類 |説明|
 |:---------------|:--------|:----------|
 |担当者|String|アナリスト、警告の名前は、選別、調査、または修復用に割り当てられます。|
 |closedDateTime|DateTimeOffset|時間のアラートが閉じられました。 Timestamp 型は、ISO 8601 形式を使用して日付と時刻の情報を表し、常に UTC 時間です。 たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、次のようになります。`'2014-01-01T00:00:00Z'`|

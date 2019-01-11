@@ -1,12 +1,13 @@
 ---
 title: educationIdentityCreationConfiguration リソースの種類
 description: 学校データ プロファイル id の作成時に設定を定義します。 これらの id には、生徒と教師が含まれます。 これらの設定に基づいて、ユーザーがディレクトリに作成されます。
-ms.openlocfilehash: edbfa03bb574a1d8d9d4faaa2032ec82f6d20f66
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 86624c7203dc6425372556572c40efda2bc1a53f
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27073495"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27858864"
 ---
 ## <a name="educationidentitycreationconfiguration-resource-type"></a>educationIdentityCreationConfiguration リソースの種類
 
@@ -20,7 +21,7 @@ ms.locfileid: "27073495"
 
 ## <a name="properties"></a>プロパティ
 
-| プロパティ | 型 | 説明 |
+| プロパティ | 種類 | 説明 |
 |:-|:-|:-|
 | **userDomains** | [educationIdentityDomain](educationidentitydomain.md)コレクション |  ユーザーの種類ごとに使用するドメインの一覧を設定します。  |
 

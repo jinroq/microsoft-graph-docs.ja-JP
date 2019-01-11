@@ -2,12 +2,13 @@
 title: deviceManagementScriptAssignment リソースの種類
 description: デバイス管理のスクリプトをグループに割り当てるために使用するプロパティが含まれています。
 author: tfitzmac
-ms.openlocfilehash: d0b08363de392a337338bb2cd892359b8b9a9345
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: cc2da31d105ce9a8169607f3910c41801d86eb2a
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27351241"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27858752"
 ---
 # <a name="devicemanagementscriptassignment-resource-type"></a>deviceManagementScriptAssignment リソースの種類
 
@@ -25,7 +26,7 @@ ms.locfileid: "27351241"
 |[DeviceManagementScriptAssignment を削除します。](../api/intune-devices-devicemanagementscriptassignment-delete.md)|なし|の[deviceManagementScriptAssignment](../resources/intune-devices-devicemanagementscriptassignment.md)を削除します。|
 |[DeviceManagementScriptAssignment を更新します。](../api/intune-devices-devicemanagementscriptassignment-update.md)|[deviceManagementScriptAssignment](../resources/intune-devices-devicemanagementscriptassignment.md)|[DeviceManagementScriptAssignment](../resources/intune-devices-devicemanagementscriptassignment.md)オブジェクトのプロパティを更新します。|
 
-## <a name="properties"></a>Properties
+## <a name="properties"></a>プロパティ
 |プロパティ|種類|説明|
 |:---|:---|:---|
 |ID|String|デバイス管理スクリプトのグループの割り当てエンティティのキーです。|

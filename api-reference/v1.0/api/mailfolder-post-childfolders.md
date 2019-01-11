@@ -2,12 +2,13 @@
 title: MailFolder を作成する
 description: この API を使用して、新しい子 mailFolder を作成します。
 author: angelgolfer-ms
-ms.openlocfilehash: 717baa63f3bb15355eaf59387b8fc701ab1288b7
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 44a61fda9120faaac0d8d69590c677896796765e
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27331522"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27860033"
 ---
 # <a name="create-mailfolder"></a>MailFolder を作成する
 
@@ -38,14 +39,14 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/childFolders
 
 | ヘッダー | 値 |
 |:-------|:------|
-| Authorization | `Bearer {token}`. 必須です。 |
-| Content-Type | `application/json`. 必須です。 |
+| Authorization | `Bearer {token}`. 必須。 |
+| Content-Type | `application/json`. 必須。 |
 
 ## <a name="request-body"></a>要求本文
 
 要求本文で、次のパラメーターを含む JSON オブジェクトを指定します。 **表示名**は、 [mailFolder](../resources/mailfolder.md)オブジェクトにのみ書き込み可能なプロパティです。
 
-| パラメーター | 種類 | 説明 |
+| Parameter | Type | 説明 |
 |:----------|:-----|:------------|
 |displayName|String|新しいフォルダーの表示名です。|
 

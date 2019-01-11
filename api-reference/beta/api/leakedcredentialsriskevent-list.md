@@ -1,12 +1,13 @@
 ---
 title: リスト leakedCredentialsRiskEvents
 description: Leakedcredentialsriskevent オブジェクトのリストを取得します。
-ms.openlocfilehash: 49cfd54c580634e43cff50aa7c125ffc79116ea3
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 695499c2db07f108e1f7dd762a97ce95629cca42
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27071653"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27857436"
 ---
 # <a name="list-leakedcredentialsriskevents"></a>リスト leakedCredentialsRiskEvents
 

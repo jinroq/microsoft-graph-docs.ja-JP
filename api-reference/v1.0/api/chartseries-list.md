@@ -2,12 +2,13 @@
 title: List ChartSeriesCollection
 description: chartseries オブジェクトの一覧を取得します。
 author: lumine2008
-ms.openlocfilehash: 44fdaee32cae5150d2364150a02f8a29ad3b64b2
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 9bab289956bf51ae9e520ba1c942fda20daff506
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27307344"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27859025"
 ---
 # <a name="list-chartseriescollection"></a>List ChartSeriesCollection
 
