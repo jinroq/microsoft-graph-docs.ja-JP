@@ -2,12 +2,13 @@
 title: EducationAssignment を削除します。
 description: 既存の割り当てを削除します。 クラス内での教師だけでは、割り当てを削除できます。
 author: dipakboyed
-ms.openlocfilehash: 94d99f65f491d641b74313a3ac9b06841b049731
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 09365c44bef4f12ad9be24f8ed30cfb0efc5c6f3
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27352914"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27874992"
 ---
 # <a name="delete-educationassignment"></a>EducationAssignment を削除します。
 

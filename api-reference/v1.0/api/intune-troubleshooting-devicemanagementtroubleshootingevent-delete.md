@@ -2,12 +2,13 @@
 title: deviceManagementTroubleshootingEvent の削除
 description: deviceManagementTroubleshootingEvent を削除します。
 author: tfitzmac
-ms.openlocfilehash: 41cbe97d5b0ff3e283012cf5d85eff1f0d26d880
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 50f46421a45ce962a6831eb519e7e35d3996b969
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27326587"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27878808"
 ---
 # <a name="delete-devicemanagementtroubleshootingevent"></a>deviceManagementTroubleshootingEvent の削除
 

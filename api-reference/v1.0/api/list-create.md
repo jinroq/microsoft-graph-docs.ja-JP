@@ -3,12 +3,13 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/11/2017
 title: SharePoint リストを作成する
-ms.openlocfilehash: 223c324c132e1e6baf7fb23e57212e0b5fa63b56
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 724a34ea9add74772236b6d0dad90e23c9cac955
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27021983"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27878688"
 ---
 # <a name="create-a-new-list"></a>新しいリストを作成する
 

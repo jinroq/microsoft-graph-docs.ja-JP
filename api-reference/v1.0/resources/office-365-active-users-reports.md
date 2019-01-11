@@ -1,12 +1,13 @@
 ---
 title: Office 365 アクティブ ユーザー レポート
 description: Office 365 アクティブ ユーザー レポートを使用すると、組織内の個人に使用されている製品ライセンスの数を確認し、どのユーザーがどんな製品を使用しているかについて、情報を掘り下げることができます。 これらのレポートによって、管理者は使用率の低い製品や、追加トレーニングや追加情報を必要とする可能性のあるユーザーを特定することができます。
-ms.openlocfilehash: 79f61dad9182b76c38de75b05cd458e2d23550e0
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 31707a5cd3f39f443e3da5c6b169261a75b3986e
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27022984"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27881474"
 ---
 # <a name="office-365-active-users-reports"></a>Office 365 アクティブ ユーザー レポート
 

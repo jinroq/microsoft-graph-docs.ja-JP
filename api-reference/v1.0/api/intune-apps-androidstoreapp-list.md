@@ -2,12 +2,13 @@
 title: androidStoreApps のリスト
 description: androidStoreApp オブジェクトのプロパティとリレーションシップをリストします。
 author: tfitzmac
-ms.openlocfilehash: 78897f4663fd79d1a7c4209239b7807e011cfeb9
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 4f96a07f3502d9dd94b71180e8668e055bbaf5e8
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27323514"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27881264"
 ---
 # <a name="list-androidstoreapps"></a>androidStoreApps のリスト
 

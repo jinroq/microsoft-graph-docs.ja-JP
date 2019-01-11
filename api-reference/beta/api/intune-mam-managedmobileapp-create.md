@@ -2,12 +2,13 @@
 title: managedMobileApp の作成
 description: 新しい managedMobileApp オブジェクトを作成します。
 author: tfitzmac
-ms.openlocfilehash: 07db13e6f38039c153eed44f401f3e2d846840ee
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: e94b95e4dfea69aafdd426fd4c9a5deca676ce42
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27321197"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27881103"
 ---
 # <a name="create-managedmobileapp"></a>managedMobileApp の作成
 

@@ -2,12 +2,13 @@
 title: TermsAndConditionsGroupAssignment を作成します。
 description: 新しい termsAndConditionsGroupAssignment オブジェクトを作成します。
 author: tfitzmac
-ms.openlocfilehash: 54bcf9591cbfc9cd9369e434b11440a8247ea813
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: d02e0f1a2e4f0a79f6baa9fec76a68c45ef3dec7
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27301387"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27878583"
 ---
 # <a name="create-termsandconditionsgroupassignment"></a>TermsAndConditionsGroupAssignment を作成します。
 

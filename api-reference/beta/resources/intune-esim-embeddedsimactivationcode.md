@@ -2,12 +2,13 @@
 title: embeddedSIMActivationCode リソースの種類
 description: 携帯電話会社で提供される、埋め込みコードの SIM のアクティブ化します。
 author: tfitzmac
-ms.openlocfilehash: 4e768a4047b8ddc785b545d3b850128a8e44f256
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 41976b92cfe6b6f695631dbd6c0d928c6ae99271
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27311789"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27878065"
 ---
 # <a name="embeddedsimactivationcode-resource-type"></a>embeddedSIMActivationCode リソースの種類
 
@@ -16,7 +17,7 @@ ms.locfileid: "27311789"
 > **注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
 
 携帯電話会社で提供される、埋め込みコードの SIM のアクティブ化します。
-## <a name="properties"></a>Properties
+## <a name="properties"></a>プロパティ
 |プロパティ|種類|説明|
 |:---|:---|:---|
 |integratedCircuitCardIdentifier|String|この集積回路カードの識別子 (ICCID) では、携帯電話会社によって提供されると、SIM の有効化コードが埋め込まれています。

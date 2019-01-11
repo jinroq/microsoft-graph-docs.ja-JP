@@ -2,12 +2,13 @@
 title: termsAndConditionsAssignment リソース タイプ
 description: C) を指定されたグループのポリシーです。 グループ内のユーザーは、デバイスを Intune に登録するためには使用条件に同意する必要があります。
 author: tfitzmac
-ms.openlocfilehash: a7b0e9deb391b9431be1ed4f282cb6e5a63ced6e
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: ce4a1d77f3a3db1f1faee94c5435730515ff6af6
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27351052"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27875062"
 ---
 # <a name="termsandconditionsassignment-resource-type"></a>termsAndConditionsAssignment リソース タイプ
 

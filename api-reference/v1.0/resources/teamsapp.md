@@ -2,12 +2,13 @@
 title: teamsApp リソースの種類
 description: マイクロソフト チーム アプリケーション カタログのアプリケーションです。
 author: nkramer
-ms.openlocfilehash: 207974800e44e0db29b8c42f260a1ac16a18902f
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Priority
+ms.openlocfilehash: 8f3e5b094b46376bd9ad5e9e888d76f8a995fed3
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27359585"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27880830"
 ---
 # <a name="teamsapp-resource-type"></a>teamsApp リソースの種類
 
@@ -26,18 +27,18 @@ ms.locfileid: "27359585"
 |[発行したアプリケーションを更新します。](../api/teamsapp-update.md) | [teamsApp](teamsapp.md) | 組織のアプリケーションのカタログに公開されたアプリケーションを更新します。|
 |[発行したアプリケーションを削除します。](../api/teamsapp-delete.md) | なし | 発行したアプリケーションを組織のアプリケーションのカタログから削除します。|
 
-## <a name="properties"></a>Properties
+## <a name="properties"></a>プロパティ
 
 | プロパティ            | 種類     | 説明 |
 |:------------------- |:-------- |:----------- |
-| ID                  | string   | カタログ アプリケーションの生成のアプリケーション ID を ([マイクロソフト チーム zip アプリケーション パッケージ](https://docs.microsoft.com/en-us/microsoftteams/platform/concepts/apps/apps-package)の開発者から提供された ID とは異なる。 |
-| externalId          | string   | アプリケーション開発者が、[マイクロソフトのチームは、アプリケーションのパッケージを zip](https://docs.microsoft.com/en-us/microsoftteams/platform/concepts/apps/apps-package)に用意されているカタログの ID です。 |
+| ID                  | 文字列   | カタログ アプリケーションの生成のアプリケーション ID を ([マイクロソフト チーム zip アプリケーション パッケージ](https://docs.microsoft.com/en-us/microsoftteams/platform/concepts/apps/apps-package)の開発者から提供された ID とは異なる。 |
+| externalId          | 文字列   | アプリケーション開発者が、[マイクロソフトのチームは、アプリケーションのパッケージを zip](https://docs.microsoft.com/en-us/microsoftteams/platform/concepts/apps/apps-package)に用意されているカタログの ID です。 |
 | displayName                | string   | アプリケーション開発者が、[マイクロソフトのチームは、アプリケーションのパッケージを zip](https://docs.microsoft.com/en-us/microsoftteams/platform/concepts/apps/apps-package)に用意されているカタログのアプリケーションの名前。 |
 | distributionMethod  | teamsAppDistributionMethod     | アプリケーション配布の方法です。 |
 
 ### <a name="teamsappdistributionmethod-values"></a>teamsAppDistributionMethod 値
 
-|Member|値|説明|
+|メンバー|値|説明|
 |:---|:---|:---|
 |ストア|0| アプリケーションは、マイクロソフトのチームのアプリケーション ストアからのすべてのテナントに使用できます。|
 |組織|1|アプリケーションは、このテナントでのみ使用可能です。|

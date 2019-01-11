@@ -2,12 +2,13 @@
 title: managedAppPolicyDeploymentSummary リソースの種類
 description: ManagedAppEntity は、アプリ管理ワークフロー下にある他のすべてのエンティティ タイプの基本型です。
 author: tfitzmac
-ms.openlocfilehash: 872a5685cce5d7c422035670eb10d72185fd344f
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: edc039f5f5da1b0cf0798fcd7055d5239926acf1
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27305790"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27878079"
 ---
 # <a name="managedapppolicydeploymentsummary-resource-type"></a>managedAppPolicyDeploymentSummary リソースの種類
 

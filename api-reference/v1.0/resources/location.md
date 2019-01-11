@@ -1,12 +1,13 @@
 ---
 title: Location リソースの種類
 description: イベントの場所の情報を表します。
-ms.openlocfilehash: 149af193864c2a0ecab67ab2c722c9c3b46e9293
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 553634aec386798ac17e00b83883c54a99c0f9ca
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27021747"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27879801"
 ---
 # <a name="location-resource-type"></a>Location リソースの種類
 
@@ -22,7 +23,7 @@ ms.locfileid: "27021747"
 | Outlook のユーザー インターフェイス | **locationType** | 以下のいずれか: <ul><li>プレーン テキストとして入力された場所の場合は `default`。</li><li>Outlook の会議室リストで提供された会議室の場合は `conferenceRoom`。</li><li>Bing Autosuggest または Bing ローカル検索による場所の場合は、`homeAddress`、`businessAddress`、`geoCoordinates`、`streetAddress`、`hotel`、`restaurant`、`localBusiness`、`postalAddress` のいずれか。</li></ul> |
 
 ## <a name="properties"></a>プロパティ
-| プロパティ  | 型   | 説明                                                     |
+| プロパティ  | 種類   | 説明                                                     |
 |:----------|:-------|:----------------------------------------------------------------|
 | address | [physicalAddress](physicaladdress.md) |場所の番地。 |
 | coordinates | [outlookGeoCoordinates](outlookgeocoordinates.md) | 場所の地理的座標と標高。 |

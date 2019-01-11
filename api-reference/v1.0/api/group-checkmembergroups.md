@@ -2,12 +2,13 @@
 title: 'グループ: checkMemberGroups'
 description: グループの指定されたリスト内のメンバーシップを確認します。 リストから先のグループを返します。
 author: dkershaw10
-ms.openlocfilehash: 6f31e4f53e99272c456f6bb4263054e9cb5a208f
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Priority
+ms.openlocfilehash: 812377d3fe8677d877ac8faddce75c25732ff471
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27352494"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27861867"
 ---
 # <a name="group-checkmembergroups"></a>グループ: checkMemberGroups
 
@@ -45,7 +46,7 @@ POST /groups/{id}/checkMemberGroups
 
 要求本文で、次のパラメーターを含む JSON オブジェクトを指定します。
 
-| パラメーター | 種類              | 説明           |
+| パラメーター | Type              | 説明           |
 | :-------- | :---------------- | :-------------------- |
 | groupIds  | String コレクション | グループ ID の配列 |
 

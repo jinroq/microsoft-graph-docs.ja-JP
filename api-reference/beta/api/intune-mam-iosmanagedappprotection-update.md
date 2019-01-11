@@ -2,12 +2,13 @@
 title: Update iosManagedAppProtection
 description: iosManagedAppProtection オブジェクトのプロパティを更新します。
 author: tfitzmac
-ms.openlocfilehash: 9890df3112d414eafd383ed7264436ab0490d7b3
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 4e6c7a499a0ec94afcfae432139809925c2e1815
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27326664"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27874530"
 ---
 # <a name="update-iosmanagedappprotection"></a>Update iosManagedAppProtection
 

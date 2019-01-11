@@ -1,19 +1,20 @@
 ---
 title: 受信者リソースの種類
 description: 'イベント、メッセージ、またはグループ投稿の送信側または受信側のユーザーに関する情報を表します。 '
-ms.openlocfilehash: 7ae272d239f44c3d2f709a03438facb2f0247e49
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 89d1ae7703d5b8b0e2a94027e74fbd4c4ebf9ed8
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27020777"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27875293"
 ---
 # <a name="recipient-resource-type"></a>受信者リソースの種類
 
 イベント、メッセージ、またはグループ投稿の送信側または受信側のユーザーに関する情報を表します。 
 
 ## <a name="properties"></a>プロパティ
-| プロパティ     | 型   |説明|
+| プロパティ     | 種類   |説明|
 |:---------------|:--------|:----------|
 |emailAddress|[EmailAddress](emailaddress.md)|受信者の電子メール アドレス。|
 

@@ -2,12 +2,13 @@
 title: managementConditionStatement リソースの種類
 description: 管理条件ステートメントは、管理の条件が含まれている管理のすべての条件が満たされたときにデバイスとアプリケーションの構成を有効または無効のグループです。
 author: tfitzmac
-ms.openlocfilehash: ca0966edd64166479361f42816e36fd278dbc6b1
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: c6281d151555c0c58a0eb608e9dafc754384369f
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27347678"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27878401"
 ---
 # <a name="managementconditionstatement-resource-type"></a>managementConditionStatement リソースの種類
 

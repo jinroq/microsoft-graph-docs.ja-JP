@@ -2,12 +2,13 @@
 title: Update chartdatalabels
 description: chartdatalabels オブジェクトのプロパティを更新します。
 author: lumine2008
-ms.openlocfilehash: 86799ea99bbd4f5e2eecdc5ff72745619a46a5a4
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: cbd519c302c64c78dfbca81ad50d1c142d5e5e92
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27335764"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27874551"
 ---
 # <a name="update-chartdatalabels"></a>Update chartdatalabels
 

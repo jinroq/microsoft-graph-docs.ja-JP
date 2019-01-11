@@ -2,12 +2,13 @@
 title: messageRulePredicates リソースの種類
 description: ルールで使用可能な条件および例外のセットを表します。
 author: angelgolfer-ms
-ms.openlocfilehash: 802edc817a583e6049edb057bd4e2d2e0da268d2
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 13978b4ee09f863ee3f57ac109ee8f3f5adf39c4
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27320483"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27804740"
 ---
 # <a name="messagerulepredicates-resource-type"></a>messageRulePredicates リソースの種類
 

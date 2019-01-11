@@ -2,12 +2,13 @@
 title: リスト androidWorkProfilePkcsCertificateProfiles
 description: AndroidWorkProfilePkcsCertificateProfile オブジェクトのプロパティと関係を一覧表示します。
 author: tfitzmac
-ms.openlocfilehash: 66b724592c604a847e674cacf154b38b14509b47
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: d9bc739b6f8c56760dd4736f938d9e24be6e263f
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27312860"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27878149"
 ---
 # <a name="list-androidworkprofilepkcscertificateprofiles"></a>リスト androidWorkProfilePkcsCertificateProfiles
 

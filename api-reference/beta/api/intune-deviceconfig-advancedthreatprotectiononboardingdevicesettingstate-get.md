@@ -2,12 +2,13 @@
 title: AdvancedThreatProtectionOnboardingDeviceSettingState を取得します。
 description: AdvancedThreatProtectionOnboardingDeviceSettingState オブジェクトのプロパティと関係を参照してください。
 author: tfitzmac
-ms.openlocfilehash: 368cc4ab180fa55930887c68640c6c29ad62fab3
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 9cfe1a0f39096e0c453d500f134ae3d5db86a858
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27303431"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27878289"
 ---
 # <a name="get-advancedthreatprotectiononboardingdevicesettingstate"></a>AdvancedThreatProtectionOnboardingDeviceSettingState を取得します。
 

@@ -1,12 +1,13 @@
 ---
 title: Location リソースの種類
 description: イベントの場所の情報を表します。
-ms.openlocfilehash: fec075d37bfb2d7eca80f5007db53801dda96ed8
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 650876596e2cf9336054957cfd4c95bf4dad16b4
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27066570"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27879402"
 ---
 # <a name="location-resource-type"></a>Location リソースの種類
 
@@ -27,7 +28,7 @@ ms.locfileid: "27066570"
 
 
 ## <a name="properties"></a>プロパティ
-| プロパティ  | 型   | 説明                                                     |
+| プロパティ  | 種類   | 説明                                                     |
 |:----------|:-------|:----------------------------------------------------------------|
 | address | [physicalAddress](physicaladdress.md) |場所の番地。 |
 | coordinates | [outlookGeoCoordinates](outlookgeocoordinates.md) | 場所の地理的座標と標高。 |

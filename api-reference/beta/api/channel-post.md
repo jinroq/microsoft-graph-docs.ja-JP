@@ -1,12 +1,13 @@
 ---
 title: チャネルを作成します。
 description: 要求の本体に指定されている、マイクロソフトのチームでは、新しいチャネルを作成します。
-ms.openlocfilehash: 7f561c13b688d76ec4d45f03c2fd7f73192fe8a8
-ms.sourcegitcommit: 72d4da2a6bfaf99fa4edaf6ce3b97b1a6d96d874
+localization_priority: Normal
+ms.openlocfilehash: f7192c177d79e48a0a9e55c9edc5dbb394539928
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/11/2018
-ms.locfileid: "27222528"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27875048"
 ---
 # <a name="create-channel"></a>チャネルを作成します。
 

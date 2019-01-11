@@ -1,12 +1,13 @@
 ---
 title: referenceAttachment リソースの種類
 description: '接続されているフォルダーや、OneDrive ビジネス クラウド ドライブ、またはその他のサポートされているストレージの場所にテキスト ファイルまたは Word 文書) などのファイルへのリンク '
-ms.openlocfilehash: e9885c3a0e5c7f723303d7d6461f4c07dbed6bf6
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 6a334b303bea7aff768733434b9ba882de237a12
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27072252"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27880053"
 ---
 # <a name="referenceattachment-resource-type"></a>referenceAttachment リソースの種類
 
@@ -24,11 +25,11 @@ ms.locfileid: "27072252"
 |[Delete](../api/attachment-delete.md) | なし |referenceAttachment オブジェクトを削除します。 |
 
 ## <a name="properties"></a>プロパティ
-| プロパティ     | 型   |説明|
+| プロパティ     | 種類   |説明|
 |:---------------|:--------|:----------|
 |contentType|String|添付ファイルのコンテンツ タイプ。 省略可能。|
 |id|String|添付ファイル ID。読み取り専用です。|
-|isFolder|ブール値|添付ファイルがフォルダーへのリンクであるかどうかを指定します。 True を設定**し直すこと**は、フォルダーへのリンクを設定する必要があります。 省略可能。|
+|isFolder|ブール型|添付ファイルがフォルダーへのリンクであるかどうかを指定します。 True を設定**し直すこと**は、フォルダーへのリンクを設定する必要があります。 省略可能。|
 |isInline|ブール値|添付ファイルを埋め込みオブジェクトの本文にインラインで表示する場合は、true に設定します。 省略可能。|
 |lastModifiedDateTime|DateTimeOffset|添付ファイルが最後に変更された日時です。 Timestamp 型は、ISO 8601 形式を使用して日付と時刻の情報を表し、常に UTC 時間です。 たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、次のようになります。`'2014-01-01T00:00:00Z'` 省略可能。|
 |名前|String|埋め込まれた添付ファイルを表すアイコンの下に表示されるテキストです。 これは、実際のファイル名を指定するのには必要ありません。 必須。|

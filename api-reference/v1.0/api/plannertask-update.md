@@ -1,12 +1,13 @@
 ---
 title: Update plannertask
 description: '**plannertask** オブジェクトのプロパティを更新します。'
-ms.openlocfilehash: f804a66f9cb2bac9a281ad6d03d85772da5db154
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 4315d1d069e19f3ae499403410ed9af10d98fdd0
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27022154"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27864534"
 ---
 # <a name="update-plannertask"></a>Update plannertask
 
@@ -34,7 +35,7 @@ PATCH /planner/tasks/{id}
 ## <a name="request-body"></a>要求本文
 要求本文で、更新する関連フィールドの値を指定します。要求本文に含まれない既存のプロパティは、以前の値のままになるか、他のプロパティ値の変化に基づいて再計算されます。最適なパフォーマンスを得るためには、変更されていない既存の値を含めないでください。
 
-| プロパティ     | 型   |説明|
+| プロパティ     | 種類   |説明|
 |:---------------|:--------|:----------|
 |appliedCategories|[plannerAppliedCategories](../resources/plannerappliedcategories.md)|タスクが適用されているカテゴリ。可能な値については、「[適用されるカテゴリ](../resources/plannerappliedcategories.md)」を参照してください。|
 |assigneePriority|String|リスト ビューでこの種類の項目の順序付けに使用するヒント。形式は「[プランナーでの順序のヒントの使用](../resources/planner-order-hint-format.md)」で定義されています。|

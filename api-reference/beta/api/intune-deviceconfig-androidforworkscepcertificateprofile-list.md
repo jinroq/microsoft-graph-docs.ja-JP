@@ -2,12 +2,13 @@
 title: リスト androidForWorkScepCertificateProfiles
 description: AndroidForWorkScepCertificateProfile オブジェクトのプロパティと関係を一覧表示します。
 author: tfitzmac
-ms.openlocfilehash: 5bc3fd447f099a5a5f9d93d76a08361bae592bac
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 426e4c390133214132efe5c167a0adcd96c81306
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27310277"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27878114"
 ---
 # <a name="list-androidforworkscepcertificateprofiles"></a>リスト androidForWorkScepCertificateProfiles
 

@@ -2,12 +2,13 @@
 title: windowsAutopilotSettings リソースの種類
 description: WindowsAutopilotSettings リソースは、Windows デバイスのデータの同期サービスを使用してデータを同期する Windows 自動操縦のアカウントを表します。
 author: tfitzmac
-ms.openlocfilehash: d502af67cc1a68c56e1bdd74965e77224947b5d9
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 7beb1f04efe3b43067eb1cedeed7071561265ce6
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27344633"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27881550"
 ---
 # <a name="windowsautopilotsettings-resource-type"></a>windowsAutopilotSettings リソースの種類
 

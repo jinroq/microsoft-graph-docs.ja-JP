@@ -2,12 +2,13 @@
 title: windowsPhone81CustomConfiguration の作成
 description: 新しい windowsPhone81CustomConfiguration オブジェクトを作成します。
 author: tfitzmac
-ms.openlocfilehash: 02701baa092b32ecdb2519780d05de42c6c73447
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: e4e1113184727d1cd0f03468d182cc32ca81d5e6
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27301352"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27876742"
 ---
 # <a name="create-windowsphone81customconfiguration"></a>windowsPhone81CustomConfiguration の作成
 

@@ -2,12 +2,13 @@
 title: Create windowsUpdateForBusinessConfiguration
 description: 新しい windowsUpdateForBusinessConfiguration オブジェクトを作成します。
 author: tfitzmac
-ms.openlocfilehash: 4f6837cfebcabfea5d91a78f5e89c712622b6a4b
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: a786425e6257528938888f86beb2372abe93abee
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27307883"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27878247"
 ---
 # <a name="create-windowsupdateforbusinessconfiguration"></a>Create windowsUpdateForBusinessConfiguration
 

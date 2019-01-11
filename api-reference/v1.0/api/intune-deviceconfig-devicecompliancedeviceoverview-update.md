@@ -2,12 +2,13 @@
 title: deviceComplianceDeviceOverview の更新
 description: deviceComplianceDeviceOverview オブジェクトのプロパティを更新します。
 author: tfitzmac
-ms.openlocfilehash: a6cf54ad22e1d9f0c961d651149ee109fa4bd865
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 884e8dc786196ff865c4f184a2f20a73926d3855
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27345039"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27876518"
 ---
 # <a name="update-devicecompliancedeviceoverview"></a>deviceComplianceDeviceOverview の更新
 

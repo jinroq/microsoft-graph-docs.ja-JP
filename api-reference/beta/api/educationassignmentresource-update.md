@@ -2,12 +2,13 @@
 title: EducationAssignmentResource を更新します。
 description: '割り当てに関連付けられているリソースのプロパティを更新します。 クラスで教師だけでは、割り当てリソースのオブジェクトを変更できます。  '
 author: dipakboyed
-ms.openlocfilehash: 68c8f471462c489e9e655a1642731be3a8700ba4
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 91321cc124baa87a82f2f1f5fecc65365cafc18d
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27343219"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27879311"
 ---
 # <a name="update-educationassignmentresource"></a>EducationAssignmentResource を更新します。
 

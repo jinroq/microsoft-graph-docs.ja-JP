@@ -2,12 +2,13 @@
 title: macOSCustomConfiguration の更新
 description: macOSCustomConfiguration オブジェクトのプロパティを更新します。
 author: tfitzmac
-ms.openlocfilehash: 08f049395feda3215801f6fc8058300e453eaaf7
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 2d7bda0041cec0ec6854ee0873f120eae2c95e9e
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27350261"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27880949"
 ---
 # <a name="update-macoscustomconfiguration"></a>macOSCustomConfiguration の更新
 

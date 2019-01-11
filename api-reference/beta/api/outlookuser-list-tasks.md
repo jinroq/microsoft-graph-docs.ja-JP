@@ -1,12 +1,13 @@
 ---
 title: List tasks
 description: ユーザーのメールボックス内のすべての Outlook タスクを取得します。
-ms.openlocfilehash: df295b40b0813813733b61c2a09b53903cce0d79
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: e3d0753d639d4051ed03cbebf131e931a58fab30
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27068697"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27877918"
 ---
 # <a name="list-tasks"></a>List tasks
 

@@ -1,12 +1,13 @@
 ---
 title: RangeFormat リソースの種類
 description: 範囲のフォント、塗りつぶし、境界線、配置などのプロパティをカプセル化する、書式設定オブジェクトです。
-ms.openlocfilehash: dc1eb1fd06370dff554e1245245ec24cdf5a6658
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 38844e2f43dcb56021e25ad189529b36cc8eb456
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27069797"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27880767"
 ---
 # <a name="rangeformat-resource-type"></a>RangeFormat リソースの種類
 
@@ -27,7 +28,7 @@ ms.locfileid: "27069797"
 |[Autofitrows](../api/rangeformat-autofitrows.md)|なし|現在の行のデータに基づいて、現在の範囲の行の高さを最適な高さに変更します。|
 
 ## <a name="properties"></a>プロパティ
-| プロパティ     | 型   |説明|
+| プロパティ     | 種類   |説明|
 |:---------------|:--------|:----------|
 |columnWidth|double|範囲内のすべての列の幅を取得または設定します。列の幅が均一でない場合は、null が返されます。|
 |horizontalAlignment|文字列|指定したオブジェクトの水平方向の配置を表します。可能な値は、`General`、`Left`、`Center`、`Right`、`Fill`、`Justify`、`CenterAcrossSelection`、`Distributed` です。|

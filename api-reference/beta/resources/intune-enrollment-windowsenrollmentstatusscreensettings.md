@@ -2,12 +2,13 @@
 title: windowsEnrollmentStatusScreenSettings リソースの種類
 description: 登録ステータス画面の設定
 author: tfitzmac
-ms.openlocfilehash: 8ccf2565d722a09de5f08ebe7333436729ce1b2e
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 7263fdd8ab3d9a39d5081322c62cfcf76a4c7aa0
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27346929"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27877449"
 ---
 # <a name="windowsenrollmentstatusscreensettings-resource-type"></a>windowsEnrollmentStatusScreenSettings リソースの種類
 
@@ -16,7 +17,7 @@ ms.locfileid: "27346929"
 > **注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
 
 登録ステータス画面の設定
-## <a name="properties"></a>Properties
+## <a name="properties"></a>プロパティ
 |プロパティ|種類|説明|
 |:---|:---|:---|
 |hideInstallationProgress|ブール型|ユーザーにインストールの進行状況の表示と非表示を切り替える|

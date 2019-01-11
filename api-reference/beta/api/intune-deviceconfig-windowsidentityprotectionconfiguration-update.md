@@ -2,12 +2,13 @@
 title: WindowsIdentityProtectionConfiguration を更新します。
 description: WindowsIdentityProtectionConfiguration オブジェクトのプロパティを更新します。
 author: tfitzmac
-ms.openlocfilehash: 4131672de21560311ee1c2c1f8c1eb930a3de255
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 77f93941d7b8eb3153d376eb3d3314842672e10a
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27326895"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27881586"
 ---
 # <a name="update-windowsidentityprotectionconfiguration"></a>WindowsIdentityProtectionConfiguration を更新します。
 

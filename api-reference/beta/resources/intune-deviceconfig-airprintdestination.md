@@ -2,12 +2,13 @@
 title: airPrintDestination リソースの種類
 description: AirPrint のリンク先を表します。
 author: tfitzmac
-ms.openlocfilehash: 046f85c65d382b34e6920f30f6b2718f817371a9
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 6d1548737956d35d42fc077afe92de1885a54581
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27361055"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27878590"
 ---
 # <a name="airprintdestination-resource-type"></a>airPrintDestination リソースの種類
 
@@ -16,7 +17,7 @@ ms.locfileid: "27361055"
 > **注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
 
 AirPrint のリンク先を表します。
-## <a name="properties"></a>Properties
+## <a name="properties"></a>プロパティ
 |プロパティ|種類|説明|
 |:---|:---|:---|
 |ipAddress|文字列型 (String)|AirPrint の宛先の IP アドレスです。|

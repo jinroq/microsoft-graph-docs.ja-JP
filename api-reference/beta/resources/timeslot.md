@@ -1,12 +1,13 @@
 ---
 title: timeSlot リソースの種類
 description: 期間です。
-ms.openlocfilehash: c1df6ea458bf6742dc20149e62d9760a8a6510e2
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 1f383a7feafbb3816ef838d8f0667eebdd42443f
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27073139"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27877932"
 ---
 # <a name="timeslot-resource-type"></a>timeSlot リソースの種類
 
@@ -34,7 +35,7 @@ ms.locfileid: "27073139"
 
 ```
 ## <a name="properties"></a>プロパティ
-| プロパティ     | 型   |説明|
+| プロパティ     | 種類   |説明|
 |:---------------|:--------|:----------|
 |end|[dateTimeTimeZone](datetimetimezone.md)|期間の開始時間。|
 |start|[dateTimeTimeZone](datetimetimezone.md)|期間の終了時間。|

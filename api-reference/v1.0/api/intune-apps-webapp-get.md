@@ -2,12 +2,13 @@
 title: Get webApp
 description: webApp オブジェクトのプロパティとリレーションシップを読み取ります。
 author: tfitzmac
-ms.openlocfilehash: faf9c956d26fb9732c75da94f36b616fd2c2b112
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 11a016c2a956618f4a6d52f7388c5e83fa16914d
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27322288"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27877694"
 ---
 # <a name="get-webapp"></a>Get webApp
 

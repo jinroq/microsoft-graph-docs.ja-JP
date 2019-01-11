@@ -2,12 +2,13 @@
 title: リスト androidForWorkTrustedRootCertificates
 description: AndroidForWorkTrustedRootCertificate オブジェクトのプロパティと関係を一覧表示します。
 author: tfitzmac
-ms.openlocfilehash: 03575c91b9b86bac77363537a6987b7221ccc13e
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: b6e5a20f91930ca1a57e32631f0867e2e4713851
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27318068"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27878282"
 ---
 # <a name="list-androidforworktrustedrootcertificates"></a>リスト androidForWorkTrustedRootCertificates
 

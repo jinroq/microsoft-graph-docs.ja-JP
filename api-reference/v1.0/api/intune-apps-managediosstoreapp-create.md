@@ -2,12 +2,13 @@
 title: managedIOSStoreApp の作成
 description: 新しい managedIOSStoreApp オブジェクトを作成します。
 author: tfitzmac
-ms.openlocfilehash: 392d7fee5685afe1804c8832bdd1fcb72ff6d3a9
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 99aa65c7ac0d2adff7546d6909f61d6287cc860a
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27319468"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27881418"
 ---
 # <a name="create-managediosstoreapp"></a>managedIOSStoreApp の作成
 

@@ -2,12 +2,13 @@
 title: audioSourceLevel リソースの種類
 description: その他のソース レベルの構成。
 author: VinodRavichandran
-ms.openlocfilehash: 5d5abe7eba03891427b30ba1c8f63b15b3707e46
-ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
+localization_priority: Normal
+ms.openlocfilehash: adf3c4805271d0a8d02d25fc8e7ecb547db10215
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "27380241"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27880641"
 ---
 # <a name="audiosourcelevel-resource-type"></a>audioSourceLevel リソースの種類
 
@@ -17,9 +18,9 @@ ms.locfileid: "27380241"
 
 ## <a name="properties"></a>プロパティ
 
-| プロパティ               | 型    | 説明                                                                                         |
+| プロパティ               | 種類    | 説明                                                                                         |
 | :--------------------- | :------ | :---------------------------------------------------------------------------------------------------|
-| duckOthers             | Boolean | Duck のアクティブなときに他のソースには、このソースを有効にします。 レベルをかわす、true に設定を設定する場合。|
+| duckOthers             | ブール型 | Duck のアクティブなときに他のソースには、このソースを有効にします。 レベルをかわす、true に設定を設定する場合。|
 | level                  | Int64   | 場合に、ソースのレベルをかわす`duckOthers`に設定されて`true`。                                     |
 | 参加者            | String  | ソースの参加者オーディオ ストリームです。                                                                |
 

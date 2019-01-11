@@ -2,12 +2,13 @@
 title: managedEBookAssignment の作成
 description: 新しい managedEBookAssignment オブジェクトを作成します。
 author: tfitzmac
-ms.openlocfilehash: 839052123c6ff0d4b4345ae8d8d0ad1bb921d674
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: fb172bb321e39d8d75b10f7c695ee02314468585
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27322954"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27875650"
 ---
 # <a name="create-managedebookassignment"></a>managedEBookAssignment の作成
 

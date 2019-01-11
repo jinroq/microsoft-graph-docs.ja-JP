@@ -2,12 +2,13 @@
 title: microsoftStoreForBusinessContainedApp リソースの種類
 description: MicrosoftStoreForBusinessApp の格納されているアプリケーションを表すクラスです。
 author: tfitzmac
-ms.openlocfilehash: a4ba31870ab98c509a16814bd52179e1f2deab63
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: f783475e2f1f49745b29903689e75d854c233352
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27328288"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27876973"
 ---
 # <a name="microsoftstoreforbusinesscontainedapp-resource-type"></a>microsoftStoreForBusinessContainedApp リソースの種類
 
@@ -28,7 +29,7 @@ MicrosoftStoreForBusinessApp の格納されているアプリケーションを
 |[MicrosoftStoreForBusinessContainedApp を削除します。](../api/intune-apps-microsoftstoreforbusinesscontainedapp-delete.md)|なし|の[microsoftStoreForBusinessContainedApp](../resources/intune-apps-microsoftstoreforbusinesscontainedapp.md)を削除します。|
 |[MicrosoftStoreForBusinessContainedApp を更新します。](../api/intune-apps-microsoftstoreforbusinesscontainedapp-update.md)|[microsoftStoreForBusinessContainedApp](../resources/intune-apps-microsoftstoreforbusinesscontainedapp.md)|[MicrosoftStoreForBusinessContainedApp](../resources/intune-apps-microsoftstoreforbusinesscontainedapp.md)オブジェクトのプロパティを更新します。|
 
-## <a name="properties"></a>Properties
+## <a name="properties"></a>プロパティ
 |プロパティ|種類|説明|
 |:---|:---|:---|
 |ID|String|エンティティのキー。 [MobileContainedApp](../resources/intune-apps-mobilecontainedapp.md)から継承されました。|

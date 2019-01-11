@@ -2,12 +2,13 @@
 title: getTopMobileApps 関数
 description: まだ文書化されていません
 author: tfitzmac
-ms.openlocfilehash: 03157e744358f4d76e781d33ae056104cf0a1130
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: d4f9299e2de7dca455d192637eba84ccc553d434
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27322730"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27879500"
 ---
 # <a name="gettopmobileapps-function"></a>getTopMobileApps 関数
 

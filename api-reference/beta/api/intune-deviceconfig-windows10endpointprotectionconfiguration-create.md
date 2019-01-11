@@ -2,12 +2,13 @@
 title: windows10EndpointProtectionConfiguration の作成
 description: 新しい windows10EndpointProtectionConfiguration オブジェクトを作成します。
 author: tfitzmac
-ms.openlocfilehash: 121beda2aa8d8f9da4d652f608511f8ee72364b9
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 0dc84af450130acd68e75e541d8863010a0c8238
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27360992"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27880242"
 ---
 # <a name="create-windows10endpointprotectionconfiguration"></a>windows10EndpointProtectionConfiguration の作成
 

@@ -2,12 +2,13 @@
 title: AndroidWiFiConfiguration を作成します。
 description: 新しい androidWiFiConfiguration オブジェクトを作成します。
 author: tfitzmac
-ms.openlocfilehash: 9b47854db9b7086203bff6a6853095b600830b09
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 04e3ec199b586d894086bd196d15b50ddaa64ec1
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27302094"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27878303"
 ---
 # <a name="create-androidwificonfiguration"></a>AndroidWiFiConfiguration を作成します。
 

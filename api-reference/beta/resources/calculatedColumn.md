@@ -3,12 +3,13 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/11/2017
 title: CalculatedColumn
-ms.openlocfilehash: a5850961e680459af27f3e76965f0d3e1c97e923
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 5433b5b5a76d313f8f34e460400906479e6d3d7c
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27072918"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27876056"
 ---
 # <a name="calculatedcolumn-resource-type"></a>CalculatedColumn リソースの種類
 
@@ -31,7 +32,7 @@ ms.locfileid: "27072918"
 
 ## <a name="properties"></a>プロパティ
 
-| プロパティ名  | 型    | 説明
+| プロパティ名  | Type    | 説明
 |:---------------|:--------|:--------------------------------------------------
 | **format**     | 文字列  | `dateTime` 出力の種類に対する値の形式。 `dateOnly` または `dateTime` のいずれかでなければなりません。
 | **formula**    | 文字列  | この列の値を計算するために使用する数式。

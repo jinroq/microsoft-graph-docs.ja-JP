@@ -2,12 +2,13 @@
 title: ドメインを作成する
 description: テナントにドメインを追加します。
 author: lleonard-msft
-ms.openlocfilehash: eae00bb3da0321d5c06d0fc3e4dc76e3ac410589
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 438b0c555b5e11708bf9390f8905fe9c51c04e7c
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27308891"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27875209"
 ---
 # <a name="create-domain"></a>ドメインを作成する
 

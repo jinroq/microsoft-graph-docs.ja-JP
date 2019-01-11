@@ -2,12 +2,13 @@
 author: chackman
 ms.author: chackman
 title: 次のドライブのアイテム
-ms.openlocfilehash: dcfe05e445baa4d01b2968c417648b6b65a17296
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 5ba37773f552015b6c762b2b10d801b40670a03c
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27067597"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27875034"
 ---
 # <a name="follow-drive-item"></a>次のドライブのアイテム
 
@@ -47,7 +48,7 @@ POST /users/{user-id}/drive/items/{item-id}/follow
 
 このメソッドでは、フォローされている項目については、 [DriveItem](../resources/driveitem.md)を返します。
 
-## <a name="example"></a>使用例
+## <a name="example"></a>例
 
 次の使用例は次によって識別される項目は、 `{item-id}`。
 

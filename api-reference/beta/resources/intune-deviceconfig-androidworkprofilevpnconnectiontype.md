@@ -2,12 +2,13 @@
 title: androidWorkProfileVpnConnectionType 列挙型
 description: Android の作業プロファイルの VPN 接続の種類です。
 author: tfitzmac
-ms.openlocfilehash: 4db1d3a642945d3759c885f9364003092105fe03
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 176b0170580757a891f6d921d4589b629f70c219
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27331158"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27875503"
 ---
 # <a name="androidworkprofilevpnconnectiontype-enum-type"></a>androidWorkProfileVpnConnectionType 列挙型
 

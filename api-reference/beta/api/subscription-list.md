@@ -1,12 +1,13 @@
 ---
 title: リストの購読
 description: " 詳細については以下のシナリオを参照してください。"
-ms.openlocfilehash: ad5e97a9b721a9e557e01dd4743b53a52c6dc8d7
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 1b751b8632d82626e2ba87bf00a054b2be4f25f9
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27073409"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27876987"
 ---
 # <a name="list-subscriptions"></a>リストの購読
 
@@ -59,7 +60,7 @@ GET /subscriptions
 
 ## <a name="request-headers"></a>要求ヘッダー
 
-| 名前       | 型 | 説明|
+| 名前       | 種類 | 説明|
 |:-----------|:------|:----------|
 | Authorization  | string  | ベアラー {トークン}。必須。 |
 

@@ -2,12 +2,13 @@
 title: NetworkManagementCondition を取得します。
 description: NetworkManagementCondition オブジェクトのプロパティと関係を参照してください。
 author: tfitzmac
-ms.openlocfilehash: 0f66b43cb414921d584ccd4c5df22bee88be111a
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: c1244e3407a2a8f10fc9fe9ee557ec04e1ea8183
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27313301"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27874999"
 ---
 # <a name="get-networkmanagementcondition"></a>NetworkManagementCondition を取得します。
 

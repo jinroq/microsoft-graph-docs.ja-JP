@@ -2,12 +2,13 @@
 title: AndroidWorkProfileNineWorkEasConfiguration を取得します。
 description: AndroidWorkProfileNineWorkEasConfiguration オブジェクトのプロパティと関係を参照してください。
 author: tfitzmac
-ms.openlocfilehash: 3a94185aea5a1d246c507898932a634cbfaa1517
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 0b9aa1f149cfa54ee25cb2e8d55580e9add00ac8
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27311138"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27878296"
 ---
 # <a name="get-androidworkprofilenineworkeasconfiguration"></a>AndroidWorkProfileNineWorkEasConfiguration を取得します。
 

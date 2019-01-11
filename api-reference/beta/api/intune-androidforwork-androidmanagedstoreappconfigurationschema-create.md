@@ -2,12 +2,13 @@
 title: AndroidManagedStoreAppConfigurationSchema を作成します。
 description: 新しい androidManagedStoreAppConfigurationSchema オブジェクトを作成します。
 author: tfitzmac
-ms.openlocfilehash: 6e8cb3cc56eb1e6f0cded7539b86aea24194fba1
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: c3cf700bb835df981c419fc15b56ef5fbc905fea
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27327735"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27874544"
 ---
 # <a name="create-androidmanagedstoreappconfigurationschema"></a>AndroidManagedStoreAppConfigurationSchema を作成します。
 

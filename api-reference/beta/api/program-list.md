@@ -1,12 +1,13 @@
 ---
 title: プログラムを一覧表示
 description: Azure AD のレビュー機能にアクセス、プログラムのすべてのオブジェクトを一覧表示します。
-ms.openlocfilehash: fd934ec4dcfe4feb6167a6cf397be3669099c123
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 9ea71e5377b7dcfe7ca6de7cfaf221e2c6dfcd98
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27067767"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27876294"
 ---
 # <a name="list-programs"></a>プログラムを一覧表示
 
@@ -28,7 +29,7 @@ ms.locfileid: "27067767"
 GET /programs
 ```
 ## <a name="request-headers"></a>要求ヘッダー
-| 名前         | 型        | 説明 |
+| 名前         | 種類        | 説明 |
 |:-------------|:------------|:------------|
 | Authorization | string | ベアラー\{トークン\}。 必須。 |
 

@@ -1,12 +1,13 @@
 ---
 title: 'directoryObject: validateProperties'
 description: Office 365 のグループの表示名やメールのニックネームは、命名ポリシーに準拠している場合を検証します。  クライアントは、API を使用して場合は、表示名を確認または、Office 365 のグループ**を作成**する前に、メールのニックネームが無効です。 既存のグループのプロパティを検証するためには、グループの validateProperties 関数を使用します。
-ms.openlocfilehash: 82592eff14829fdd8ae1d74c87f43402a3938adf
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 1f38a30d86cf5b28eea6b9891687c4dbca4b78fd
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27067924"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27879822"
 ---
 # <a name="directoryobject-validateproperties"></a>directoryObject: validateProperties
 
@@ -19,7 +20,7 @@ Office 365 のグループの表示名やメールのニックネームは、命
 
 この API は、最初のエラーが発生しましたを返します。 1 つまたは複数のプロパティには、複数の検証が失敗した場合、最初の検証エラーのプロパティだけが返されます。 ただし、メールのニックネームと表示名の両方を検証し、検証エラーのコレクションが表示される場合は、プレフィックスとサフィックスの名前付けポリシーを検証しているだけです。
 
-## <a name="prerequisites"></a>前提条件
+## <a name="prerequisites"></a>必須条件
 
 この API を実行するために次の**アクセス許可**が必要です: *Group.Read.All*
 
@@ -39,7 +40,7 @@ POST /directoryObjects/validateProperties
 ## <a name="request-body"></a>要求本文
 要求本文で、次のパラメーターを含む JSON オブジェクトを指定します。
 
-| パラメーター    | 型   |説明|
+| パラメーター    | Type   |説明|
 |:---------------|:--------|:----------|
 |entityType|String| `Group`唯一サポートされているエンティティの種類です。 |
 |displayName|String| 検証グループの表示名。 プロパティは、個別に必要ではありません。 ただし、少なくとも 1 つのプロパティ (表示名または mailNickname) は、必要があります。 |

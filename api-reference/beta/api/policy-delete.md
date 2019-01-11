@@ -1,12 +1,13 @@
 ---
 title: ポリシーを削除します。
 description: ポリシーを削除します。
-ms.openlocfilehash: 37ed08e7f53db726a46821c08d68c955afdacc5a
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 66772865fdff5ebf4b111cae91e60b00707bf6a3
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27073776"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27875364"
 ---
 # <a name="delete-policy"></a>ポリシーを削除します。
 
@@ -29,7 +30,7 @@ ms.locfileid: "27073776"
 DELETE /policies/{id}
 ```
 ## <a name="request-headers"></a>要求ヘッダー
-| 名前       | 型 | 説明|
+| 名前       | 種類 | 説明|
 |:---------------|:--------|:----------|
 | Authorization  | string  | ベアラー {トークン}。必須。 |
 
@@ -40,7 +41,7 @@ DELETE /policies/{id}
 
 成功した場合、このメソッドは `204 No Content` 応答コードを返します。 それ以外の場合.
 
-## <a name="example"></a>使用例
+## <a name="example"></a>例
 次の例では、ポリシーを削除します。
 
 ##### <a name="request"></a>要求

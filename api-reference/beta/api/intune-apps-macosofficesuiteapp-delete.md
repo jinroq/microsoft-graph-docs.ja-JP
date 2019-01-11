@@ -2,12 +2,13 @@
 title: macOSOfficeSuiteApp の削除
 description: macOSOfficeSuiteApp を削除します。
 author: tfitzmac
-ms.openlocfilehash: 3deec15b20ed5a12d23f0b353c62550766d45b24
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 445d51a6ad47e4cafbd99324d1c5092d63f154ff
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27349932"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27878898"
 ---
 # <a name="delete-macosofficesuiteapp"></a>macOSOfficeSuiteApp の削除
 

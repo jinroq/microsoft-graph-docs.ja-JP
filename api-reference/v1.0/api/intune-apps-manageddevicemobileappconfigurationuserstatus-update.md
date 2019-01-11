@@ -2,12 +2,13 @@
 title: managedDeviceMobileAppConfigurationUserStatus の更新
 description: managedDeviceMobileAppConfigurationUserStatus オブジェクトのプロパティを更新します。
 author: tfitzmac
-ms.openlocfilehash: 581b332687e591da13dc4705c6d9cede2a524a13
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 5ded212d579fb20cd736a58142457a78e44997a8
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27355441"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27881061"
 ---
 # <a name="update-manageddevicemobileappconfigurationuserstatus"></a>managedDeviceMobileAppConfigurationUserStatus の更新
 

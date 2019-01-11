@@ -2,12 +2,13 @@
 title: recordOperation リソースの種類
 description: RecordOperation 型
 author: VinodRavichandran
-ms.openlocfilehash: 54b39f30df1dd53a95260b549ae9fab2eedddfd8
-ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
+localization_priority: Normal
+ms.openlocfilehash: be6a124fcd7175489679a8c2392218530d510e9e
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "27380423"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27880018"
 ---
 # <a name="recordoperation-resource-type"></a>recordOperation リソースの種類
 
@@ -17,7 +18,7 @@ RecordOperation 型
 
 ## <a name="properties"></a>プロパティ
 
-| プロパティ                       | 型                        | 説明                                                                                                                                       |
+| プロパティ                       | 種類                        | 説明                                                                                                                                       |
 | :----------------------------- | :---------------------------| :-------------------------------------------------------------------------------------------------------------------------------------------------|
 | clientContext                  | String                      | クライアントのコンテキスト。                                                                                                                               |
 | completionReason               | String                      | 可能な値は、`operationCanceled`、`stopToneDetected`、`maxRecordDurationReached`、`initialSilenceTimeout`、`maxSilenceTimeout`、`playPromptFailed`、`playBeepFailed`、`mediaReceiveTimeout`、`unspecifiedError`、`none` です。 |

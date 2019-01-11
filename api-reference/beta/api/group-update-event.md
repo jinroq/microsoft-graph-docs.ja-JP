@@ -2,12 +2,13 @@
 title: イベントの更新
 description: event オブジェクトを更新します。
 author: dkershaw10
-ms.openlocfilehash: dc55ea69ff67a813eeeec853889f19c30d975068
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 1499ab66d698f8f22bde79d0ef3e53fdd8722302
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27345536"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27879227"
 ---
 # <a name="update-event"></a>イベントの更新
 

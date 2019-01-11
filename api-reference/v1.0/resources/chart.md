@@ -2,12 +2,13 @@
 title: グラフ リソースの種類
 description: ブック内のグラフ オブジェクトを表します。
 author: lumine2008
-ms.openlocfilehash: c8cbc297c3906a913a6b5962ea8bb0a048d70005
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 4f412894ffaef07908a41f8f7cc15ab3a52331af
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27311747"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27873403"
 ---
 # <a name="chart-resource-type"></a>グラフ リソースの種類
 
@@ -49,7 +50,7 @@ ms.locfileid: "27311747"
 |legend|[WorkbookChartLegend](chartlegend.md)|グラフの凡例を表します。値の取得のみ可能です。|
 |series|[WorkbookChartSeries](chartseries.md)コレクション|グラフの 1 つのデータ系列またはデータ系列のコレクションを表します。値の取得のみ可能です。|
 |役職|[WorkbookChartTitle](charttitle.md)|指定したグラフのタイトル (タイトルのテキスト、表示/非表示、位置、書式設定など) を表します。値の取得のみ可能です。|
-|ワークシート|[WorkbookWorksheet](worksheet.md)|現在のグラフを含んでいるワークシート。読み取り専用。|
+|worksheet|[WorkbookWorksheet](worksheet.md)|現在のグラフを含んでいるワークシート。読み取り専用。|
 
 ## <a name="json-representation"></a>JSON 表記
 

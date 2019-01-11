@@ -2,12 +2,13 @@
 title: defenderSecurityCenterITContactDisplayType 列挙型
 description: DefenderSecurityCenterITContactDisplay に指定できる値
 author: tfitzmac
-ms.openlocfilehash: 019bce4bc1c5b94da3cf1b8a3044638b0277f432
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: fcdca31f22de0462dbc9020fb2f5fbd7af1c1abf
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27327189"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27881894"
 ---
 # <a name="defendersecuritycenteritcontactdisplaytype-enum-type"></a>defenderSecurityCenterITContactDisplayType 列挙型
 

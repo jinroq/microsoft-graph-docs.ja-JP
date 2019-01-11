@@ -2,12 +2,13 @@
 title: 関連項目
 description: '{これはデバイス リレー モジュールの API レベルの概要です。'
 author: tfitzmac
-ms.openlocfilehash: a398fb25499c838788ae43905d1a7b0d0519167d
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 39b856d95232fc54e85dbefc0f46f5eadbc7a646
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27312202"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27875979"
 ---
 # <a name="use-the-device-relay-api-to-transfer-a-users-experience-across-devices-preview"></a>デバイス リレー API を使用して、複数のデバイス (プレビュー) ユーザーの経験を転送するには
 

@@ -2,12 +2,13 @@
 title: リスト windows10EnrollmentCompletionPageConfigurations
 description: Windows10EnrollmentCompletionPageConfiguration オブジェクトのプロパティと関係を一覧表示します。
 author: tfitzmac
-ms.openlocfilehash: 0a58303efbf97e8f447d0fdd0345d46d559b3c77
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: ec24ae93a913e943706ed26a190cdb10c9bb10db
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27338725"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27877155"
 ---
 # <a name="list-windows10enrollmentcompletionpageconfigurations"></a>リスト windows10EnrollmentCompletionPageConfigurations
 

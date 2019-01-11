@@ -2,12 +2,13 @@
 title: windowsInformationProtectionNetworkLearningSummary リソースの種類
 description: Windows 情報保護のネットワークの学習概要エンティティ。
 author: tfitzmac
-ms.openlocfilehash: ed66e40c9a7358b19fc7a852485e138214a2aad8
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 1cac8ce4b41fd4db3c8eddca617362822ba0aaf5
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27334854"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27879353"
 ---
 # <a name="windowsinformationprotectionnetworklearningsummary-resource-type"></a>windowsInformationProtectionNetworkLearningSummary リソースの種類
 

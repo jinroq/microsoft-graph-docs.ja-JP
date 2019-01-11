@@ -2,12 +2,13 @@
 title: exportMobileConfig 関数
 description: モバイルの構成をエクスポートします。
 author: tfitzmac
-ms.openlocfilehash: d6f663a729e45433c6f56f08ba02bb642749f5f5
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 6a20c5c26e37133588ea5bc6c4abc81fcd38275a
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27350674"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27878905"
 ---
 # <a name="exportmobileconfig-function"></a>exportMobileConfig 関数
 

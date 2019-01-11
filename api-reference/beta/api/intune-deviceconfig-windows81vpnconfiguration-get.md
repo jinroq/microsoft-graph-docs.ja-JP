@@ -2,12 +2,13 @@
 title: Windows81VpnConfiguration を取得します。
 description: Windows81VpnConfiguration オブジェクトのプロパティと関係を参照してください。
 author: tfitzmac
-ms.openlocfilehash: 48dfc98e2b24dc27229d15cf8c9a2edbc41ad8a8
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: fa64e8cfa01ec13cc3328ddcb415112a2cc3577d
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27319902"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27877680"
 ---
 # <a name="get-windows81vpnconfiguration"></a>Windows81VpnConfiguration を取得します。
 

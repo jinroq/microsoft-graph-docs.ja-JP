@@ -1,12 +1,13 @@
 ---
 title: 範囲:セル
 description: 行と列の番号に基づいて、1 つのセルを含んだ範囲オブジェクトを取得します。以外このセルは、ワークシートのグリッド内であれば、親の範囲の境界の外のセルであってもかまいません。返されるセルは、範囲の左上のセルを基準に配置されます。
-ms.openlocfilehash: 641de24869d5a57b08f339b7552d67d07be7b75c
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 2806fdcdc6072067a4fb4012fb9dc908aa3c15f5
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27073782"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27877015"
 ---
 # <a name="range-cell"></a>範囲:セル
 
@@ -39,10 +40,10 @@ GET /workbook/tables/{id|name}/columns/{id|name}/range/Cell
 ## <a name="request-body"></a>要求本文
 要求本文で、次のパラメーターを含む JSON オブジェクトを指定します。
 
-| パラメーター    | 型   |説明|
+| パラメーター    | Type   |説明|
 |:---------------|:--------|:----------|
-|row|数値|取得するセルの行番号。0 を起点とする番号になります。|
-|列|数値|取得セルの列番号。0 を起点とする番号になります。|
+|row|number|取得するセルの行番号。0 を起点とする番号になります。|
+|列|number|取得セルの列番号。0 を起点とする番号になります。|
 
 ## <a name="response"></a>応答
 

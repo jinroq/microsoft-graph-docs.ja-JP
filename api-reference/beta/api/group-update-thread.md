@@ -2,12 +2,13 @@
 title: 会話スレッドを更新する
 description: thread オブジェクトを更新します。
 author: dkershaw10
-ms.openlocfilehash: 5d95beec5eb95d6a62538aba62c57bd367c824a3
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: a54a450064fc886e18687c31bb05ddc25868326c
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27358416"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27878919"
 ---
 # <a name="update-conversation-thread"></a>会話スレッドを更新する
 

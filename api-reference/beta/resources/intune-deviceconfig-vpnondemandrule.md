@@ -2,12 +2,13 @@
 title: vpnOnDemandRule リソースの種類
 description: VPN オンデマンド ルール定義します。
 author: tfitzmac
-ms.openlocfilehash: 72b85971dc9c613026bb9e720ca55165845e0c9e
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: bd6e494975c8626a25380b3f037d702fb81e082b
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27352193"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27875636"
 ---
 # <a name="vpnondemandrule-resource-type"></a>vpnOnDemandRule リソースの種類
 
@@ -16,7 +17,7 @@ ms.locfileid: "27352193"
 > **注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
 
 VPN オンデマンド ルール定義します。
-## <a name="properties"></a>Properties
+## <a name="properties"></a>プロパティ
 |プロパティ|種類|説明|
 |:---|:---|:---|
 |ssid|String コレクション|ネットワーク サービスでは、識別子 (Ssid) を設定します。|

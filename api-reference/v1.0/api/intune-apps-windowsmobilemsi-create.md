@@ -2,12 +2,13 @@
 title: Create windowsMobileMSI
 description: 新しく windowsMobileMSI オブジェクトを作成します。
 author: tfitzmac
-ms.openlocfilehash: a67458a860227f68dac2825fd286bc0a0d18c451
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 868bfa82b8f7b5de70a56d681b8a0a48eee59ec4
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27360698"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27878107"
 ---
 # <a name="create-windowsmobilemsi"></a>Create windowsMobileMSI
 

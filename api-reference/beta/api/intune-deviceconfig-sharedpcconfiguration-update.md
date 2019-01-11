@@ -2,12 +2,13 @@
 title: sharedPCConfiguration の更新
 description: sharedPCConfiguration オブジェクトのプロパティを更新します。
 author: tfitzmac
-ms.openlocfilehash: f9fbaf72531b130e41c01609e4d28eb35a7d5d84
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: ef2807f2c1becdc9f39e5fff1ac70c2a90c01855
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27338732"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27879745"
 ---
 # <a name="update-sharedpcconfiguration"></a>sharedPCConfiguration の更新
 

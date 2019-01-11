@@ -1,12 +1,13 @@
 ---
 title: educationSchool リソースの種類
 description: '学校を表すリソースで、その学校のクラス、教師、学生を管理するために使用します。  '
-ms.openlocfilehash: 8a87b3a0ceebf9a3dd66978da1bdde2d677ef63e
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: b957355bc132fd0b90c4bf623e68619d7ebcd0ec
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27023924"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27877022"
 ---
 # <a name="educationschool-resource-type"></a>educationSchool リソースの種類
 
@@ -28,13 +29,13 @@ ms.locfileid: "27023924"
 |[Delete](../api/educationschool-delete.md) | なし |**educationSchool** オブジェクトを削除します。 |
 
 ## <a name="properties"></a>プロパティ
-| プロパティ     | 型   |説明|
+| プロパティ     | 種類   |説明|
 |:---------------|:--------|:----------|
-|id|String|この学校の GUID。|
+|ID|String|この学校の GUID。|
 |displayName| String| 学校の表示名。| 
 |説明| String | 学校の説明。| 
 |status| 文字列| 読み取り専用。 可能な値: `inactive`、 `active`、 `expired`、 `deleteable`。|
-|externalSource| educationExternalSource| 読み取り専用。  可能な値: `sis`、 `manual`、 `unknownFutureValue`。|
+|externalSource| educationExternalSource| 読み取り専用です。  可能な値: `sis`、 `manual`、 `unknownFutureValue`。|
 |principalEmail| String| プリンシパルの電子メール アドレス。|
 |principalName| String | プリンシパルの名前。|
 |externalPrincipalId| String | 同期システム内のプリンシパルの ID。 |

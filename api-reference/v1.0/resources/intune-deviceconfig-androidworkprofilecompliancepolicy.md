@@ -2,12 +2,13 @@
 title: androidWorkProfileCompliancePolicy リソースの種類
 description: このクラスには、法令遵守の Android の作業プロファイルの設定が含まれています。
 author: tfitzmac
-ms.openlocfilehash: 8e3b458aacea23da7fc0686f90bfa75581af119e
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: bc75edebd1ffa63e3453752f320a115cc0f4eb27
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27319384"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27881901"
 ---
 # <a name="androidworkprofilecompliancepolicy-resource-type"></a>androidWorkProfileCompliancePolicy リソースの種類
 
@@ -26,7 +27,7 @@ ms.locfileid: "27319384"
 |[AndroidWorkProfileCompliancePolicy を削除します。](../api/intune-deviceconfig-androidworkprofilecompliancepolicy-delete.md)|なし|の[androidWorkProfileCompliancePolicy](../resources/intune-deviceconfig-androidworkprofilecompliancepolicy.md)を削除します。|
 |[AndroidWorkProfileCompliancePolicy を更新します。](../api/intune-deviceconfig-androidworkprofilecompliancepolicy-update.md)|[androidWorkProfileCompliancePolicy](../resources/intune-deviceconfig-androidworkprofilecompliancepolicy.md)|[AndroidWorkProfileCompliancePolicy](../resources/intune-deviceconfig-androidworkprofilecompliancepolicy.md)オブジェクトのプロパティを更新します。|
 
-## <a name="properties"></a>Properties
+## <a name="properties"></a>プロパティ
 |プロパティ|種類|説明|
 |:---|:---|:---|
 |ID|String|エンティティのキー。 [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md) から継承します|

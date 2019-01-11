@@ -2,12 +2,13 @@
 title: targetedManagedAppConfiguration リソース タイプ
 description: カスタム設定のセットをそのまま、ターゲット セキュリティ グループのすべてのユーザーに提供するために使用される構成
 author: tfitzmac
-ms.openlocfilehash: 6e1c1c3ccf053752cfd6a664f379a2fd3131bc35
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: e12d51b0925ad2412e86c0bbb1b6b3992204659c
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27316612"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27879325"
 ---
 # <a name="targetedmanagedappconfiguration-resource-type"></a>targetedManagedAppConfiguration リソース タイプ
 

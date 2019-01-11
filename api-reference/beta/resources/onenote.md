@@ -2,12 +2,13 @@
 title: OneNote リソースの種類
 description: OneNote リソースのエントリ ポイントです。
 author: Jewan-microsoft
-ms.openlocfilehash: b145dc36c761d1f389b28454b9900305ac259809
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 7f282147912f5d73d2aa1655055a763c0cec3764
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27323633"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27878016"
 ---
 # <a name="onenote-resource-type"></a>OneNote リソースの種類
 

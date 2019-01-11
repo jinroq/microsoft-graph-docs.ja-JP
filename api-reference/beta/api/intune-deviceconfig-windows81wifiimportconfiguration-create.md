@@ -2,12 +2,13 @@
 title: Windows81WifiImportConfiguration を作成します。
 description: 新しい windows81WifiImportConfiguration オブジェクトを作成します。
 author: tfitzmac
-ms.openlocfilehash: 377f7e44becbcc6e4e3816a843a8898700ac67b7
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 2af2f81e16c33d72eef4e930a7ac26c38980c0a1
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27356498"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27873417"
 ---
 # <a name="create-windows81wifiimportconfiguration"></a>Windows81WifiImportConfiguration を作成します。
 

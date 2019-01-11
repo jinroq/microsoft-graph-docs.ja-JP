@@ -2,12 +2,13 @@
 title: AndroidForWorkGmailEasConfiguration を更新します。
 description: AndroidForWorkGmailEasConfiguration オブジェクトのプロパティを更新します。
 author: tfitzmac
-ms.openlocfilehash: 9da99cb4ecb0d466a8367e2d7b5ad3902956e1c7
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 3d4951721d7aa6998305c812ed4f7a209bac52da
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27317795"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27878877"
 ---
 # <a name="update-androidforworkgmaileasconfiguration"></a>AndroidForWorkGmailEasConfiguration を更新します。
 

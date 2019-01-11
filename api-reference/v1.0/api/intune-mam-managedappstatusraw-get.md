@@ -2,12 +2,13 @@
 title: Get managedAppStatusRaw
 description: managedAppStatusRaw オブジェクトのプロパティとリレーションシップを読み取ります。
 author: tfitzmac
-ms.openlocfilehash: 731df6554e33c05d974bd0850273b485820196c4
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: f6fb4be4c356d50f41c9e0f5c933b6e41922afe0
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27334756"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27876399"
 ---
 # <a name="get-managedappstatusraw"></a>Get managedAppStatusRaw
 

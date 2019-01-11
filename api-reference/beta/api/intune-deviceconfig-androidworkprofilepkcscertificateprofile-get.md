@@ -2,12 +2,13 @@
 title: AndroidWorkProfilePkcsCertificateProfile を取得します。
 description: AndroidWorkProfilePkcsCertificateProfile オブジェクトのプロパティと関係を参照してください。
 author: tfitzmac
-ms.openlocfilehash: 76dcbcc6325f9688c10928422456694354033a55
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: a5f7e237d52f4a8704de983e71c2f4329bdf17f5
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27305601"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27878352"
 ---
 # <a name="get-androidworkprofilepkcscertificateprofile"></a>AndroidWorkProfilePkcsCertificateProfile を取得します。
 

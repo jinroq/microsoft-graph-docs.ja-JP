@@ -2,12 +2,13 @@
 title: importedDeviceIdentityResult リソースの種類
 description: ImportedDeviceIdentityResult リソースでは、デバイスの識別情報をインポートしようとした結果を表します。
 author: tfitzmac
-ms.openlocfilehash: 060ebbebb38cd258e57ca30794e44e5e651d5fe2
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 508a1a91fcbc580cb324285ee4eff4a93a664af0
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27310172"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27879213"
 ---
 # <a name="importeddeviceidentityresult-resource-type"></a>importedDeviceIdentityResult リソースの種類
 
@@ -28,7 +29,7 @@ ImportedDeviceIdentityResult リソースでは、デバイスの識別情報を
 |[ImportedDeviceIdentityResult を削除します。](../api/intune-enrollment-importeddeviceidentityresult-delete.md)|なし|の[importedDeviceIdentityResult](../resources/intune-enrollment-importeddeviceidentityresult.md)を削除します。|
 |[ImportedDeviceIdentityResult を更新します。](../api/intune-enrollment-importeddeviceidentityresult-update.md)|[importedDeviceIdentityResult](../resources/intune-enrollment-importeddeviceidentityresult.md)|[ImportedDeviceIdentityResult](../resources/intune-enrollment-importeddeviceidentityresult.md)オブジェクトのプロパティを更新します。|
 
-## <a name="properties"></a>Properties
+## <a name="properties"></a>プロパティ
 |プロパティ|種類|説明|
 |:---|:---|:---|
 |ID|String|[ImportedDeviceIdentity](../resources/intune-enrollment-importeddeviceidentity.md)から継承されるインポート済みのデバイス id の id|

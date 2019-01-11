@@ -2,12 +2,13 @@
 title: Get detectedApp
 description: detectedApp オブジェクトのプロパティとリレーションシップを読み取ります。
 author: tfitzmac
-ms.openlocfilehash: aeb35370a12a33a6a47f5608db64918ea4c010a6
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: f7801a1ed816bf1736dc361151dd1f91ac8b954e
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27331144"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27878072"
 ---
 # <a name="get-detectedapp"></a>Get detectedApp
 

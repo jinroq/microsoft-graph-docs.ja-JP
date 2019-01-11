@@ -2,12 +2,13 @@
 title: '呼び出す: 回答'
 description: 着信呼び出しに応答します。
 author: VinodRavichandran
-ms.openlocfilehash: c7de038e2323ab844590c884e15a639a3839dd86
-ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
+localization_priority: Normal
+ms.openlocfilehash: 98d3f54e87e36de6c8f492644be1b47486b48d39
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "27380514"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27879535"
 ---
 # <a name="call-answer"></a>呼び出す: 回答
 
@@ -39,7 +40,7 @@ POST /applications/{id}/calls/{id}/answer
 ## <a name="request-body"></a>要求本文
 要求本文で、次のパラメーターを含む JSON オブジェクトを指定します。
 
-| パラメーター        | 型                                     |説明                                                                                                                                    |
+| パラメーター        | Type                                     |説明                                                                                                                                    |
 |:-----------------|:-----------------------------------------|:----------------------------------------------------------------------------------------------------------------------------------------------|
 |callbackUri       |String                                    |コールバックまたはサブスクリプションの ID をコールバックが配信されます。 (必須)                                                               |
 |acceptedModalities|String コレクション                         |一覧には、様相がそのまま使用します。 使用可能な値: `unknown`、 `audio`、 `video`、 `screenSharing`、 `videoBasedScreenSharing`、 `data`。 (必須) |

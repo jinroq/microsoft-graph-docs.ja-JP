@@ -2,12 +2,13 @@
 title: ユーザーを更新する
 description: ユーザー オブジェクトのプロパティを更新します。
 author: tfitzmac
-ms.openlocfilehash: dae6d6d16bfb1f849fa7a3a4e35e4c641718c70e
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 8af523c26ddd799b6084b9596db072cf74e40687
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27329429"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27879066"
 ---
 # <a name="update-user"></a>user の更新
 

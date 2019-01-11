@@ -2,12 +2,13 @@
 title: Create importedWindowsAutopilotDeviceIdentity
 description: 新規で importedWindowsAutopilotDeviceIdentity オブジェクトを作成します。
 author: tfitzmac
-ms.openlocfilehash: 9f4c6519746690290af6ec243d6b309dfeb6782d
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 486e9760fcefb2f92be08c3939c77f3e561b9acb
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27350065"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27877834"
 ---
 # <a name="create-importedwindowsautopilotdeviceidentity"></a>Create importedWindowsAutopilotDeviceIdentity
 

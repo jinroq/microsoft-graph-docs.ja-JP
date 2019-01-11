@@ -2,12 +2,13 @@
 title: Windows81SCEPCertificateProfile を取得します。
 description: Windows81SCEPCertificateProfile オブジェクトのプロパティと関係を参照してください。
 author: tfitzmac
-ms.openlocfilehash: bb2f627738b3ab0e86826979f75f0863855e2142
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 36437eb6d2ce813a972d4df7a4c76e70daee28ec
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27316283"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27878765"
 ---
 # <a name="get-windows81scepcertificateprofile"></a>Windows81SCEPCertificateProfile を取得します。
 

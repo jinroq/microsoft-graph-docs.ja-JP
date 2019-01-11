@@ -2,12 +2,13 @@
 title: 'TableRowCollection: ItemAt'
 description: コレクション内の位置を基に行を取得します。
 author: lumine2008
-ms.openlocfilehash: 653f6154b36036f851ffc39d32e2e551b810dbfd
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 017618e37be33e7f64ce01082e8fe16b23c03f13
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27346817"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27880714"
 ---
 # <a name="tablerowcollection-itemat"></a>TableRowCollection: ItemAt
 
@@ -37,7 +38,7 @@ POST /workbook/worksheets/{id|name}/tables/{id|name}/rows/itemAt
 ## <a name="request-body"></a>要求本文
 要求本文で、次のパラメーターを含む JSON オブジェクトを指定します。
 
-| パラメーター    | 種類   |説明|
+| パラメーター    | Type   |説明|
 |:---------------|:--------|:----------|
 |index|Int32|取得するオブジェクトのインデックス値。0 を起点とする番号になります。|
 

@@ -2,12 +2,13 @@
 title: リスト windowsIdentityProtectionConfigurations
 description: WindowsIdentityProtectionConfiguration オブジェクトのプロパティと関係を一覧表示します。
 author: tfitzmac
-ms.openlocfilehash: 8ce4e97da0477cbc79015271b36b86dfebef6a4b
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 0bc4b871ea2b093867051a76b53d756126006e40
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27331305"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27877666"
 ---
 # <a name="list-windowsidentityprotectionconfigurations"></a>リスト windowsIdentityProtectionConfigurations
 

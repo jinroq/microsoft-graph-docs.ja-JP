@@ -2,12 +2,13 @@
 title: ルールを更新する
 description: messageRule オブジェクトの書き込み可能なプロパティを変更し、変更を保存します。
 author: angelgolfer-ms
-ms.openlocfilehash: 3ff8910130099a53328c2161c34ec3f1186e0fb6
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 7f9263b237d27ba1e938e5e6ecbb7ed558f80a9d
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27309479"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27871287"
 ---
 # <a name="update-rule"></a>ルールを更新する
 

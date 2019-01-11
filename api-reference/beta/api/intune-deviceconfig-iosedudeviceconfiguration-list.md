@@ -2,12 +2,13 @@
 title: リスト iosEduDeviceConfigurations
 description: IosEduDeviceConfiguration オブジェクトのプロパティと関係を一覧表示します。
 author: tfitzmac
-ms.openlocfilehash: b9b068086d24114e7fcebd196c2cda56d19d4b27
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 59ae3c472a1ecb3f89f294db3f9f1508558ea9ce
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27332908"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27877799"
 ---
 # <a name="list-iosedudeviceconfigurations"></a>リスト iosEduDeviceConfigurations
 

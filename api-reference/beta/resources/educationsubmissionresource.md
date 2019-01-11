@@ -2,12 +2,13 @@
 title: educationSubmissionResource リソースの種類
 description: '提出書類に使用するリソースのラッパーです。 ラッパーは、この課題からコピーされた場合、割り当てリソースにポインターを追加します。  '
 author: dipakboyed
-ms.openlocfilehash: bfbf2f522106f5a1e2033898cbb2702223d3e241
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 8703072fccb77a2577db6ce0717647e79a47fdc8
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27361559"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27875986"
 ---
 # <a name="educationsubmissionresource-resource-type"></a>educationSubmissionResource リソースの種類
 
@@ -23,7 +24,7 @@ ms.locfileid: "27361559"
 |[EducationSubmissionResource を取得します。](../api/educationsubmissionresource-get.md) | [educationSubmissionResource](educationsubmissionresource.md) |**EducationSubmissionResource**オブジェクトのプロパティと関係を参照してください。|
 |[Delete](../api/educationsubmissionresource-delete.md) | なし |**EducationSubmissionResource**オブジェクトを削除します。 |
 
-## <a name="properties"></a>Properties
+## <a name="properties"></a>プロパティ
 | プロパティ     | 種類   |説明|
 |:---------------|:--------|:----------|
 |assignmentResourceUrl|String|このリソースのコピー元の割り当てへのポインター。 これが null の場合、受講者は、リソースをアップロードします。|

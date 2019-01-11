@@ -2,12 +2,13 @@
 title: Get managedAppOperation
 description: managedAppOperation オブジェクトのプロパティとリレーションシップを読み取ります。
 author: tfitzmac
-ms.openlocfilehash: e8a70f52ea696dd77957c35cd2206bb24427497d
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: f1c563463a24c7e726d7d574229951945bded13d
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27344199"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27871436"
 ---
 # <a name="get-managedappoperation"></a>Get managedAppOperation
 

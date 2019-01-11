@@ -2,12 +2,13 @@
 title: DeviceManagementScriptGroupAssignment を作成します。
 description: 新しい deviceManagementScriptGroupAssignment オブジェクトを作成します。
 author: tfitzmac
-ms.openlocfilehash: f084fb933d4694d9c1dfa43f018fb3ce2d8dd95b
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 080db816339d544681a8cb6de87ebcc9b7e60b71
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27324781"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27881537"
 ---
 # <a name="create-devicemanagementscriptgroupassignment"></a>DeviceManagementScriptGroupAssignment を作成します。
 

@@ -2,12 +2,13 @@
 title: iosVppEBook リソースの種類
 description: iOS Vpp eBook のプロパティを含むクラスです。
 author: tfitzmac
-ms.openlocfilehash: a54c3a846be339dd1b7dcb98169e249122899d84
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 8a88fa5542bf554ff6c9d23c8dcd1afb569ffc8c
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27362091"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27880963"
 ---
 # <a name="iosvppebook-resource-type"></a>iosVppEBook リソースの種類
 

@@ -2,12 +2,13 @@
 title: 情報リソースの種類
 description: 情報は、関係の高度な解析と機械学習技術を使用して計算です。 OneDrive ドキュメントがユーザーの周りのトレンド分析を識別するなど。
 author: simonhult
-ms.openlocfilehash: f3269134f4a80462359a11d603c3f843be0c62f0
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Priority
+ms.openlocfilehash: 9d7a1f141e3b6834edfa784a509a2de7968650d1
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27318600"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27878093"
 ---
 # <a name="insights-resource-type"></a>情報リソースの種類
 

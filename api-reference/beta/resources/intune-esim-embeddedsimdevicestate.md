@@ -2,12 +2,13 @@
 title: embeddedSIMDeviceState リソースの種類
 description: デバイスに関連して埋め込み SIM アクティベーション コードの展開状態を説明します。
 author: tfitzmac
-ms.openlocfilehash: ef7611e96b1b6f3bba0a3c59dead85ede41b2eda
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 15e969037a93ee11c300f7b18b0c8afcb36d0ce1
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27308457"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27881516"
 ---
 # <a name="embeddedsimdevicestate-resource-type"></a>embeddedSIMDeviceState リソースの種類
 
@@ -25,7 +26,7 @@ ms.locfileid: "27308457"
 |[EmbeddedSIMDeviceState を削除します。](../api/intune-esim-embeddedsimdevicestate-delete.md)|なし|の[embeddedSIMDeviceState](../resources/intune-esim-embeddedsimdevicestate.md)を削除します。|
 |[EmbeddedSIMDeviceState を更新します。](../api/intune-esim-embeddedsimdevicestate-update.md)|[embeddedSIMDeviceState](../resources/intune-esim-embeddedsimdevicestate.md)|[EmbeddedSIMDeviceState](../resources/intune-esim-embeddedsimdevicestate.md)オブジェクトのプロパティを更新します。|
 
-## <a name="properties"></a>Properties
+## <a name="properties"></a>プロパティ
 |プロパティ|種類|説明|
 |:---|:---|:---|
 |ID|String|埋め込みの SIM のデバイスの状態の一意の識別子です。 システムでは、作成時に割り当てられた値が生成されます。|

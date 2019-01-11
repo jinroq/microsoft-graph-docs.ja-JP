@@ -1,12 +1,13 @@
 ---
 title: directoryDefinition リソースの種類
 description: ディレクトリとそのオブジェクトの同期エンジンに関する情報を提供します。 このリソースは、同期エンジンなどのディレクトリが**ユーザー**と**グループ**、それらのオブジェクトとそれらの属性の型の属性はサポートされてをという名前のオブジェクトを持っています。 同期化規則とオブジェクトのマッピングに参加するオブジェクトおよび属性の順序で、ディレクトリの定義の一部としてこれらに定義しなければなりません。
-ms.openlocfilehash: ddc32237efc18d43da23d815aea00ee01b2650be
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: e6b2b55fb9e9e7963b01403c6aed2f0997e2318b
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27074013"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27874523"
 ---
 # <a name="directorydefinition-resource-type"></a>directoryDefinition リソースの種類
 
@@ -20,9 +21,9 @@ ms.locfileid: "27074013"
 
 ## <a name="properties"></a>プロパティ
 
-| プロパティ      | 型      | 説明    |
+| プロパティ      | 種類      | 説明    |
 |:--------------|:----------|:---------------|
-|id           |String     |ディレクトリの識別子です。 null 許容ではありません。|
+|ID           |String     |ディレクトリの識別子です。 null 許容ではありません。|
 |metadata       |metadataEntry コレクション    |プロパティをさらに拡張します。 明示的に記載されている、しない限り、メタデータの値を変更できませんする必要があります。|
 |名前           |String     |ディレクトリの名前です。 [同期スキーマ](synchronization-synchronizationschema.md)内で一意である必要があります。 null 許容ではありません。|
 |オブジェクト        |[objectDefinition](synchronization-objectdefinition.md)コレクション    |ディレクトリでサポートされているオブジェクトのコレクションです。|

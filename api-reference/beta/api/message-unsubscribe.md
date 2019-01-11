@@ -2,12 +2,13 @@
 title: 'メッセージ: 購読の取り消し'
 description: サイン インユーザーに代わって電子メール要求を送信し、電子メール配布リストから登録を解除します。`List-Unsubscribe` ヘッダー内の情報を使用します。
 author: angelgolfer-ms
-ms.openlocfilehash: e516a8aa68bde02f056e503da9c85d4e7a6f62fc
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: f66c24e2900ca4c881d08a402698dacbaf5af5f6
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27357226"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27877687"
 ---
 # <a name="message-unsubscribe"></a>メッセージ: 購読の取り消し
 

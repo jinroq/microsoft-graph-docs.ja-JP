@@ -2,12 +2,13 @@
 title: Delete windowsUniversalAppX
 description: windowsUniversalAppX を削除します。
 author: tfitzmac
-ms.openlocfilehash: c39bcc856640a3990dab59fe015f6b3e10ab5af0
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: b23a5c671a75e52ff4c04ceb3d58f6188dbd35a2
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27339922"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27875664"
 ---
 # <a name="delete-windowsuniversalappx"></a>Delete windowsUniversalAppX
 

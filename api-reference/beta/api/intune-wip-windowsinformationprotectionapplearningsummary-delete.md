@@ -2,12 +2,13 @@
 title: windowsInformationProtectionAppLearningSummary の削除
 description: windowsInformationProtectionAppLearningSummary を削除します。
 author: tfitzmac
-ms.openlocfilehash: b383941b07f943755abdddd3e671cffa13ccef31
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 50a56a7e4df6aced153a4ed1d6de0c401930f0e8
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27330976"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27880865"
 ---
 # <a name="delete-windowsinformationprotectionapplearningsummary"></a>windowsInformationProtectionAppLearningSummary の削除
 

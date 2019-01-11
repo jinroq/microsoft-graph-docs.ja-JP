@@ -2,12 +2,13 @@
 title: IntuneBrandingProfile を作成します。
 description: 新しい intuneBrandingProfile オブジェクトを作成します。
 author: tfitzmac
-ms.openlocfilehash: 4058e30fe858c261a59b105652d198946b630222
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 5e8ec4990b333d18dd761772627665c5ecb04179
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27314876"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27862021"
 ---
 # <a name="create-intunebrandingprofile"></a>IntuneBrandingProfile を作成します。
 

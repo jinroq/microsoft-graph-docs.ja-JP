@@ -2,12 +2,13 @@
 title: チーム リソースの種類
 description: 'マイクロソフトのチームで、チームは、チャネルのコレクションです。 '
 author: nkramer
-ms.openlocfilehash: 3bb6fde320dbab2c19f151015d7121c3fc840c97
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Priority
+ms.openlocfilehash: 85694e18771ac17873f97cedf68d074ee550f787
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27323871"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27878548"
 ---
 # <a name="team-resource-type"></a>チーム リソースの種類
 
@@ -36,7 +37,7 @@ ms.locfileid: "27323871"
 |[アプリケーションをチームに追加します。](../api/teamsappinstallation-add.md) | [teamsappinstallation](teamsappinstallation.md) | (インストール) を追加するチームにアプリです。|
 |[チャネルにタブを追加します。](../api/teamstab-add.md) | [teamsTab](../resources/teamstab.md) | (インストール) を追加するチャネル ・ チームのタブです。|
 
-## <a name="properties"></a>Properties
+## <a name="properties"></a>プロパティ
 
 | プロパティ | 種類   | 説明 |
 |:---------------|:--------|:----------|

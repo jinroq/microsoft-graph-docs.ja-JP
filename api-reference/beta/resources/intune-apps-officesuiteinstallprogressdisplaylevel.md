@@ -2,12 +2,13 @@
 title: officeSuiteInstallProgressDisplayLevel 列挙型
 description: デバイスのインストール中のセットアップの UI の表示のレベルを指定する列挙型です。
 author: tfitzmac
-ms.openlocfilehash: 5e8e8d697df8791fda9734f7c6ffef4ba9d8156f
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 1d6c7ed4dd99fa6fb4595979873233e017c29ff9
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27328918"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27880844"
 ---
 # <a name="officesuiteinstallprogressdisplaylevel-enum-type"></a>officeSuiteInstallProgressDisplayLevel 列挙型
 

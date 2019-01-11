@@ -1,12 +1,13 @@
 ---
 title: 'reportRoot: getEmailActivityCounts'
 description: 組織内の電子メール アクティビティ (送信、読み取り、受信の数) の傾向を把握できます。
-ms.openlocfilehash: beded762ab0f8a7047cbfa02df88d0de1a0c2ebd
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: f3ddc2d1b9a11668ee6d90ac2cfb9b07d1d0ce0e
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27067474"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27873711"
 ---
 # <a name="reportroot-getemailactivitycounts"></a>reportRoot: getEmailActivityCounts
 
@@ -38,7 +39,7 @@ GET /reports/getEmailActivityCounts(period='{period_value}')
 
 要求 URL に、次のパラメーターと有効な値を指定します。
 
-| パラメーター | 型   | 説明                              |
+| パラメーター | Type   | 説明                              |
 | :-------- | :----- | :--------------------------------------- |
 | period    | 文字列 | レポートを集計する期間の長さを指定します。 {period_value} でサポートされている値は D7、D30、D90、D180 です。 これらの値は、D*n* の形式 (*n* はレポートを集計する日数) に従います。 必須。 |
 
@@ -71,7 +72,7 @@ GET /reports/getEmailActivityCounts(period='{period_value}')
 
 かどうかは成功すると、このメソッドが返されます、`200 OK`応答コードおよび応答の本文内の**[emailActivitySummary](../resources/emailactivitysummary.md)** オブジェクトです。
 
-## <a name="example"></a>使用例
+## <a name="example"></a>例
 
 ### <a name="csv"></a>CSV
 

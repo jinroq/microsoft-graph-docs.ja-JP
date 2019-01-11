@@ -2,12 +2,13 @@
 title: リスト importedAppleDeviceIdentityResults
 description: ImportedAppleDeviceIdentityResult オブジェクトのプロパティと関係を一覧表示します。
 author: tfitzmac
-ms.openlocfilehash: a87b4174c74e198da2ef1e6c0e42a5c4973530ce
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: e8696335108045f9b89eef5ab8743db6c5442b21
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27357401"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27877855"
 ---
 # <a name="list-importedappledeviceidentityresults"></a>リスト importedAppleDeviceIdentityResults
 

@@ -2,12 +2,13 @@
 title: officeClientConfiguration リソースの種類
 description: Office クライアントの構成。
 author: tfitzmac
-ms.openlocfilehash: 67a7845a2e0327e2e5de37d424274f6e2ee35604
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 297383f8b7450e6d0df268afc4c009b3110205ee
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27303837"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27879633"
 ---
 # <a name="officeclientconfiguration-resource-type"></a>officeClientConfiguration リソースの種類
 
@@ -24,7 +25,7 @@ Office クライアントの構成。
 |[assign action](../api/intune-cirrus-officeclientconfiguration-assign.md)|[officeClientConfigurationAssignment](../resources/intune-cirrus-officeclientconfigurationassignment.md)コレクション|ポリシーのすべての対象とするグループを交換してください。|
 |[updatePriorities アクション](../api/intune-cirrus-officeclientconfiguration-updatepriorities.md)|なし|ポリシーの優先順位を更新します。|
 
-## <a name="properties"></a>Properties
+## <a name="properties"></a>プロパティ
 |プロパティ|種類|説明|
 |:---|:---|:---|
 |ID|String|Office クライアントの構成のポリシーの id。|

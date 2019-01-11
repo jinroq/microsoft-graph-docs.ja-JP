@@ -2,12 +2,13 @@
 title: managedAppConfigurations のリスト
 description: managedAppConfiguration オブジェクトのプロパティとリレーションシップをリストします。
 author: tfitzmac
-ms.openlocfilehash: 98e8a61a2dc4f5e94bd51ffb993eb3d5a064bdd1
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: f9028ca08a11d17839a7d9292b4473ea8a7179f9
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27335117"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27875006"
 ---
 # <a name="list-managedappconfigurations"></a>managedAppConfigurations のリスト
 

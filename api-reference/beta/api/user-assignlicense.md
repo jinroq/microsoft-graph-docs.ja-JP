@@ -1,12 +1,13 @@
 ---
 title: assignLicense
 description: 追加またはユーザーを有効にするか、マイクロソフトのクラウド サービスの使用を無効にするためのライセンスを削除します。 たとえば、組織は、100 のライセンスを持つ、Office 365 エンタープライズ E3 サブスクリプションを持つことができ、この要求がこれらのライセンスのいずれかを特定のユーザーに割り当てます。 有効にし、サブスクリプションに関連付けられている特定のプランを無効にできます。 サブスクリプションとライセンスに関する詳細については、この Technet の記事を参照してください。
-ms.openlocfilehash: ecfe1f97e2e951998e0a62eea68412279eae524f
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 71287b47a0a42ce4f89635fe6a1769c78874ae36
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27074515"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27876203"
 ---
 # <a name="assignlicense"></a>assignLicense
 
@@ -39,7 +40,7 @@ POST /users/{id | userPrincipalName}/assignLicense
 ## <a name="request-body"></a>要求本文
 要求本文で、次のパラメーターを含む JSON オブジェクトを指定します。
 
-| パラメーター    | 型   |説明|
+| パラメーター    | Type   |説明|
 |:---------------|:--------|:----------|
 |addLicenses|[assignedLicense](../resources/assignedlicense.md) collection|追加するのにはライセンスを指定する[assignedLicense](../resources/assignedlicense.md)オブジェクトのコレクションです。 [AssignedLicense](../resources/assignedlicense.md)オブジェクトの**disabledPlans**プロパティを設定することにより、ライセンスに関連する servicePlans を無効にすることができます。|
 |removeLicenses|Guid|削除するライセンスを識別する skuIds のコレクションです。|
@@ -48,7 +49,7 @@ POST /users/{id | userPrincipalName}/assignLicense
 
 かどうかは成功すると、このメソッドを返します`200 OK`応答コードおよび応答の本体の更新された[ユーザー](../resources/user.md)オブジェクトです。
 
-## <a name="example"></a>使用例
+## <a name="example"></a>例
 ユーザーにライセンスを追加します。
 ##### <a name="request"></a>要求
 <!-- {
@@ -75,7 +76,7 @@ Content-length: 185
 }
 ```
 
-## <a name="example"></a>使用例
+## <a name="example"></a>例
 ユーザーからライセンスを削除します。
 
 #####<a name="request"></a>要求

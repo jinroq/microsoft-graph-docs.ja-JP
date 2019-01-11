@@ -2,12 +2,13 @@
 title: Get macOSCompliancePolicy
 description: macOSCompliancePolicy オブジェクトのプロパティとリレーションシップを読み取ります。
 author: tfitzmac
-ms.openlocfilehash: f3521f07e5bd6249abfdff5f4b1ef59902adf39a
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: dc61a585b2374dd5baefb716c81180d0c21dfba9
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27333489"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27878499"
 ---
 # <a name="get-macoscompliancepolicy"></a>Get macOSCompliancePolicy
 

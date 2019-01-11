@@ -1,12 +1,13 @@
 ---
 title: アプリケーションとサービス ・ プリンシパルに割り当てられている特定のポリシーを一覧表示します。
 description: 割り当てられている指定されたポリシーを使用して、アプリケーションとサービスのプリンシパル オブジェクトを取得します。
-ms.openlocfilehash: 3f281d7c60a506676a78637ad71f1ce26de35e34
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 21a5a9ba4260e306553f53866657a482d814b5f7
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27072913"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27875608"
 ---
 # <a name="list-applications-and-service-principals-with-specific-policy-assigned"></a>アプリケーションとサービス ・ プリンシパルに割り当てられている特定のポリシーを一覧表示します。
 
@@ -29,7 +30,7 @@ GET /policies/{id}/appliesTo
 ```
 
 ## <a name="request-headers"></a>要求ヘッダー
-| 名前       | 型 | 説明|
+| 名前       | 種類 | 説明|
 |:---------------|:--------|:----------|
 | Authorization  | string  | ベアラー {トークン}。必須。 |
 
@@ -40,7 +41,7 @@ GET /policies/{id}/appliesTo
 
 かどうかは成功すると、このメソッドを返します`200 OK`応答本体に応答コードおよび[アプリケーション](../resources/application.md)と[サービス ・ プリンシパル](../resources/serviceprincipal.md)のオブジェクトです。 失敗した場合、`4xx`について、エラーが返されます。
 
-## <a name="example"></a>使用例
+## <a name="example"></a>例
 次の使用例は、割り当てられている特定のポリシーを使用して、アプリケーションとサービス ・ プリンシパルを取得します。
 
 ##### <a name="request"></a>要求

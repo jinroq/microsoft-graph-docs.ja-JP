@@ -1,12 +1,13 @@
 ---
 title: educationIdentityMatchingConfiguration リソースの種類
 description: 学校のデータのプロファイルの id を一致させるための設定を定義します。 これらの id には、生徒と教師が含まれます。 これらの設定に基づいて、ユーザーがディレクトリで更新されます。
-ms.openlocfilehash: b189735340c121a56c48ae21518989cf8e1634f9
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 807029f45875bdcf7691a112d515831f2f2283dc
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27073618"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27877939"
 ---
 ## <a name="educationidentitymatchingconfiguration-resource-type"></a>educationIdentityMatchingConfiguration リソースの種類
 
@@ -18,7 +19,7 @@ ms.locfileid: "27073618"
 
 ## <a name="properties"></a>プロパティ
 
-| プロパティ | 型 | 説明 |
+| プロパティ | 種類 | 説明 |
 |:-|:-|:-|
 | **matchingOptions** | [educationIdentityMatchingOptions](educationidentitymatchingoptions.md)コレクション | ユーザー アカウントを更新するユーザーを一意に識別に使用するオプションの間のマッピングです。 |
 

@@ -2,12 +2,13 @@
 title: teamMessagingSettings リソースの種類
 description: メッセージングを構成する設定は、チーム内の参照。
 author: nkramer
-ms.openlocfilehash: 387c2e3ccedc6f11f17d4868b1b0d3eaf67624fa
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: df80fbb828a400e736b2e8c3b73f949fe6bfd1ca
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27304551"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27878380"
 ---
 # <a name="teammessagingsettings-resource-type"></a>teamMessagingSettings リソースの種類
 
@@ -15,7 +16,7 @@ ms.locfileid: "27304551"
 
 メッセージングを構成する設定は、[チーム](team.md)内の参照。
 
-## <a name="properties"></a>Properties
+## <a name="properties"></a>プロパティ
 | プロパティ     | 種類   |説明|
 |:---------------|:--------|:----------|
 |allowUserEditMessages|ブール型|場合 true の場合、ユーザーに設定するには、自分のメッセージを編集できます。|

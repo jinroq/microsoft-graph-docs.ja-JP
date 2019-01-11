@@ -2,12 +2,13 @@
 title: NetworkIPv6ConfigurationManagementCondition を作成します。
 description: 新しい networkIPv6ConfigurationManagementCondition オブジェクトを作成します。
 author: tfitzmac
-ms.openlocfilehash: b59a194ac7d7853ff958435406ff7e7af01a21b1
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 230c55ae7cce8231c660eed73da01d82a3eae5f4
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27356435"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27881852"
 ---
 # <a name="create-networkipv6configurationmanagementcondition"></a>NetworkIPv6ConfigurationManagementCondition を作成します。
 

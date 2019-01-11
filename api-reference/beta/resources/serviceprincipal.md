@@ -1,12 +1,13 @@
 ---
 title: servicePrincipal リソースの種類
 description: ディレクトリ内のアプリケーションのインスタンスを表します。 directoryObject から継承します。
-ms.openlocfilehash: c3a08efb1dea1109bd32d59a479260e14089783d
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Priority
+ms.openlocfilehash: 2df27225f62e7c2b7b026bb3d829abf546241267
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27071845"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27880207"
 ---
 # <a name="serviceprincipal-resource-type"></a>servicePrincipal リソースの種類
 
@@ -62,12 +63,12 @@ ms.locfileid: "27071845"
 
 ```
 ## <a name="properties"></a>プロパティ
-| プロパティ     | 型 |説明|
+| プロパティ     | 種類 |説明|
 |:---------------|:--------|:----------|
-|accountEnabled|ブール値| **true**サービス プリンシパル アカウントは、有効な場合それ以外の場合、 **false を指定**します。            |
+|accountEnabled|ブール型| **true**サービス プリンシパル アカウントは、有効な場合それ以外の場合、 **false を指定**します。            |
 |appDisplayName|String|関連付けられたアプリケーションによって公開される表示名です。|
 |appId|文字列型 (String)|関連付けられているアプリケーション (その**appId**プロパティの一意の識別子です。|
-|appRoleAssignmentRequired|ブール値|Azure AD アプリケーションに、ユーザーまたはアクセス トークンの発行は前にユーザーまたはグループに、 **appRoleAssignment**が必要かどうかを指定します。 null 許容ではありません。 |
+|appRoleAssignmentRequired|ブール型|Azure AD アプリケーションに、ユーザーまたはアクセス トークンの発行は前にユーザーまたはグループに、 **appRoleAssignment**が必要かどうかを指定します。 null 許容ではありません。 |
 |appRoles|[エンティティ](approle.md)のコレクション|アプリケーション ロールは、関連付けられたアプリケーションによって公開されています。 詳細については、[アプリケーション](application.md)エンティティの**appRoles**プロパティの定義を参照してください。 null 許容ではありません。 |
 |displayName|String|サービス ・ プリンシパルの表示名です。|
 |errorUrl|String|            |
@@ -87,13 +88,13 @@ ms.locfileid: "27071845"
 ## <a name="relationships"></a>リレーションシップ
 | リレーションシップ | 型 |説明|
 |:---------------|:--------|:----------|
-|appRoleAssignedTo|[appRoleAssignment](approleassignment.md)|プリンシパル (ユーザー、グループ、およびサービス プリンシパル) このサービス ・ プリンシパルに割り当てられています。 読み取り専用。|
-|appRoleAssignments|[appRoleAssignment](approleassignment.md)コレクション|サービス ・ プリンシパルが割り当てられているアプリケーションです。 読み取り専用。 Null 許容型。|
-|createdObjects|[directoryObject](directoryobject.md) コレクション|ディレクトリ オブジェクトがこのサービス ・ プリンシパルを作成します。 読み取り専用。 Null 許容型。|
+|appRoleAssignedTo|[appRoleAssignment](approleassignment.md)|プリンシパル (ユーザー、グループ、およびサービス プリンシパル) このサービス ・ プリンシパルに割り当てられています。 読み取り専用です。|
+|appRoleAssignments|[appRoleAssignment](approleassignment.md)コレクション|サービス ・ プリンシパルが割り当てられているアプリケーションです。 読み取り専用です。 Null 許容型。|
+|createdObjects|[directoryObject](directoryobject.md) コレクション|ディレクトリ オブジェクトがこのサービス ・ プリンシパルを作成します。 読み取り専用です。 Null 許容型。|
 |memberOf|[directoryObject](directoryobject.md) コレクション|このサービス主体のメンバーである役割。 : の HTTP メソッドは、読み取り専用を取得します。 Null 許容型。|
-|oauth2PermissionGrants|[oAuth2PermissionGrant](oauth2permissiongrant.md)コレクション|ユーザーの偽装の補助金がこのサービス ・ プリンシパルに関連付けられています。 読み取り専用。 Null 許容型。|
-|ownedObjects|[directoryObject](directoryobject.md) コレクション|このサービス ・ プリンシパルが所有するディレクトリ オブジェクトです。 読み取り専用。 Null 許容型。|
-|owners|[directoryObject](directoryobject.md) コレクション|このサービス ・ プリンシパルの所有者であるディレクトリ オブジェクトです。 所有者は、このオブジェクトを変更するのには許可されている管理者以外のユーザーのセットです。 読み取り専用。 Null 許容型。|
+|oauth2PermissionGrants|[oAuth2PermissionGrant](oauth2permissiongrant.md)コレクション|ユーザーの偽装の補助金がこのサービス ・ プリンシパルに関連付けられています。 読み取り専用です。 Null 許容型。|
+|ownedObjects|[directoryObject](directoryobject.md) コレクション|このサービス ・ プリンシパルが所有するディレクトリ オブジェクトです。 読み取り専用です。 Null 許容型。|
+|owners|[directoryObject](directoryobject.md) コレクション|このサービス ・ プリンシパルの所有者であるディレクトリ オブジェクトです。 所有者は、このオブジェクトを変更するのには許可されている管理者以外のユーザーのセットです。 読み取り専用です。 Null 許容型。|
 |役割|[ポリシー](policy.md)コレクション|このサービス ・ プリンシパルに割り当てられているポリシーです。|
 
 ## <a name="methods"></a>メソッド
@@ -113,7 +114,7 @@ ms.locfileid: "27071845"
 |[Add owner](../api/serviceprincipal-post-owners.md) |[directoryObject](directoryobject.md)| 所有者のコレクションへの投稿には、新しい所有者を作成します。|
 |[所有者を一覧表示する](../api/serviceprincipal-list-owners.md) |[directoryObject](directoryobject.md) コレクション| 所有者のオブジェクトのコレクションを取得します。|
 |[Update](../api/serviceprincipal-update.md) | [servicePrincipal](serviceprincipal.md)  |ServicePrincipal オブジェクトを更新します。 |
-|[削除](../api/serviceprincipal-delete.md) | なし |ServicePrincipal オブジェクトを削除します。 |
+|[Delete](../api/serviceprincipal-delete.md) | なし |ServicePrincipal オブジェクトを削除します。 |
 |[checkMemberGroups](../api/serviceprincipal-checkmembergroups.md)|String コレクション||
 |[getMemberGroups](../api/serviceprincipal-getmembergroups.md)|String コレクション||
 |[getMemberObjects](../api/serviceprincipal-getmemberobjects.md)|String コレクション||

@@ -2,12 +2,13 @@
 title: EmbeddedSIMDeviceState を取得します。
 description: EmbeddedSIMDeviceState オブジェクトのプロパティと関係を参照してください。
 author: tfitzmac
-ms.openlocfilehash: d9ffb9c915d29a096a39b4cc9499eb712def5892
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: de2b5c5d04239eb5d4086c4399043d373bf7de66
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27352011"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27877442"
 ---
 # <a name="get-embeddedsimdevicestate"></a>EmbeddedSIMDeviceState を取得します。
 
