@@ -2,12 +2,13 @@
 title: WindowsPhone81ImportedPFXCertificateProfile を作成します。
 description: 新しい windowsPhone81ImportedPFXCertificateProfile オブジェクトを作成します。
 author: tfitzmac
-ms.openlocfilehash: 925bfb3ded68140a41cce60c1907c3fe91725569
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 23e5b52e69e15dc37f94048a2b9b309d09ec0d32
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27350548"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27852050"
 ---
 # <a name="create-windowsphone81importedpfxcertificateprofile"></a>WindowsPhone81ImportedPFXCertificateProfile を作成します。
 

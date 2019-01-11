@@ -1,12 +1,13 @@
 ---
 title: AccessReview の校閲者を追加します。
 description: 'Azure AD アクセスのレビュー機能では、レビュー担当者として他のユーザーを追加するのには既存の accessReview オブジェクトを更新します。  この操作のみ許可されてはまだ完了していない、アクセスの確認のためや、アクセスの確認にのみ、校閲者が明示的に指定されています。 この操作は、アクセス確認をユーザーが独自のアクセスを確認するには許可されませんし、校閲者として、グループの所有者が割り当てられている、アクセス確認のためではありません。 '
-ms.openlocfilehash: ac7722d1bea30659db6f6defe26c0a08ecd67caf
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: ab339a6538fc41d7e538c51251302c5e589367f2
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27068979"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27838767"
 ---
 # <a name="add-accessreview-reviewer"></a>AccessReview の校閲者を追加します。
 
@@ -30,7 +31,7 @@ ms.locfileid: "27068979"
 POST /accessReviews('{reviewId}')/reviewers
 ```
 ## <a name="request-headers"></a>要求ヘッダー
-| 名前         | 型        | 説明 |
+| 名前         | 種類        | 説明 |
 |:-------------|:------------|:------------|
 | Authorization | string | ベアラー\{トークン\}。 必須。 |
 
@@ -39,7 +40,7 @@ POST /accessReviews('{reviewId}')/reviewers
 
 次の表は、accessReview を更新するときに指定できるプロパティを示しています。
 
-| プロパティ     | 型        | 説明 |
+| プロパティ     | 種類        | 説明 |
 |:-------------|:------------|:------------|
 | `id`             |`String`                                                        | ユーザー id。  |
 
@@ -47,7 +48,7 @@ POST /accessReviews('{reviewId}')/reviewers
 ## <a name="response"></a>応答
 かどうかは成功すると、このメソッドが返されます、`201, Created`応答コード。
 
-## <a name="example"></a>使用例
+## <a name="example"></a>例
 
 これは、1 回限り (繰り返し発生しない) のアクセス確認をその他の校閲者の更新の例です。
 

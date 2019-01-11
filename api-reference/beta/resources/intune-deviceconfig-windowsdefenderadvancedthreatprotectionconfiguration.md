@@ -2,12 +2,13 @@
 title: windowsDefenderAdvancedThreatProtectionConfiguration リソースの種類
 description: Windows Defender AdvancedThreatProtection 構成です。
 author: tfitzmac
-ms.openlocfilehash: 41b04630dde10b5b360530e7a7b5da9887838bfd
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: f4ffc3be8ea8bf2d7132a73767e99022c95f66f6
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27317249"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27851612"
 ---
 # <a name="windowsdefenderadvancedthreatprotectionconfiguration-resource-type"></a>windowsDefenderAdvancedThreatProtectionConfiguration リソースの種類
 

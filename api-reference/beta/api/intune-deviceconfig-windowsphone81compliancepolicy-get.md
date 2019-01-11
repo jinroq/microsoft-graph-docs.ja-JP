@@ -2,12 +2,13 @@
 title: Get windowsPhone81CompliancePolicy
 description: windowsPhone81CompliancePolicy オブジェクトのプロパティとリレーションシップを読み取ります。
 author: tfitzmac
-ms.openlocfilehash: eed5f8ec5fa296d00ec27f4682f6081ac1c26b67
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 39c6c78b6e7d983cdbea3ee03cb5b70d448781e3
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27361538"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27851668"
 ---
 # <a name="get-windowsphone81compliancepolicy"></a>Get windowsPhone81CompliancePolicy
 

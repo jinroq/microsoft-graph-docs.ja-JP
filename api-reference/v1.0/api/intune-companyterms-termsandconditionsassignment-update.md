@@ -2,12 +2,13 @@
 title: termsAndConditionsAssignment の更新
 description: termsAndConditionsAssignment オブジェクトのプロパティを更新します。
 author: tfitzmac
-ms.openlocfilehash: b55ec01c6bac55f9b1d72a5aad5f931bed6b6b2a
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 79b8595015496605711d2304d22381171ef3ef34
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27301408"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27851458"
 ---
 # <a name="update-termsandconditionsassignment"></a>termsAndConditionsAssignment の更新
 

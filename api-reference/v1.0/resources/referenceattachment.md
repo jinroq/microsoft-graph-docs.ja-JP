@@ -1,12 +1,13 @@
 ---
 title: referenceAttachment リソースの種類
 description: OneDrive for Business のクラウド ドライブまたは他のサポートされている保存場所にあり、イベント、メッセージ、または投稿にアタッチされているファイル (テキスト ファイルまたは Word 文書など) へのリンク。
-ms.openlocfilehash: b3604791c7e06d4f765a81263e1f6afe51743390
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 0696ac4b0f93ed4982ec576a15afe071486f9c88
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27024013"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27853124"
 ---
 # <a name="referenceattachment-resource-type"></a>referenceAttachment リソースの種類
 
@@ -22,7 +23,7 @@ OneDrive for Business のクラウド ドライブまたは他のサポートさ
 |[Delete](../api/attachment-delete.md) | なし |referenceAttachment オブジェクトを削除します。 |
 
 ## <a name="properties"></a>プロパティ
-| プロパティ     | 型   |説明|
+| プロパティ     | 種類   |説明|
 |:---------------|:--------|:----------|
 |contentType|String|添付ファイルのコンテンツ タイプ。|
 |id|String|添付ファイル ID。読み取り専用です。|

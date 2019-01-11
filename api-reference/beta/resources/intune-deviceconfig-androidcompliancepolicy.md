@@ -2,12 +2,13 @@
 title: androidCompliancePolicy リソース タイプ
 description: このクラスには、Android のコンプライアンス設定が含まれています。
 author: tfitzmac
-ms.openlocfilehash: 025b0203c36c204e5df853627e9ba2f8cb53b276
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 0c3455767e30b83decdd99e73bb918ed5efcb38a
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27339691"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27851199"
 ---
 # <a name="androidcompliancepolicy-resource-type"></a>androidCompliancePolicy リソース タイプ
 

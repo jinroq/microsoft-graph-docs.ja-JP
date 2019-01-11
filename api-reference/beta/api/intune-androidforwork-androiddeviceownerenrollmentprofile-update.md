@@ -2,12 +2,13 @@
 title: AndroidDeviceOwnerEnrollmentProfile を更新します。
 description: AndroidDeviceOwnerEnrollmentProfile オブジェクトのプロパティを更新します。
 author: tfitzmac
-ms.openlocfilehash: 136b11dd16023b3394d5c5cf084123acbef93c6d
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 18ecb9728cd1f178112bc8542f147edc8af472a7
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27361881"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27814155"
 ---
 # <a name="update-androiddeviceownerenrollmentprofile"></a>AndroidDeviceOwnerEnrollmentProfile を更新します。
 

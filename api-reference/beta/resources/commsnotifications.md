@@ -2,12 +2,13 @@
 title: commsNotifications リソースの種類
 description: 通信サーバーによって 1 つのバッチで複数の通知を送信するための通知の一覧です。
 author: VinodRavichandran
-ms.openlocfilehash: 052520a99081e5c09cd6e3ec3b74f74e9527d38d
-ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
+localization_priority: Normal
+ms.openlocfilehash: 9ce629e17c85806d7e05bce99d6a62f9fa9cbff8
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "27380451"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27851500"
 ---
 # <a name="commsnotifications-resource-type"></a>commsNotifications リソースの種類
 
@@ -17,7 +18,7 @@ ms.locfileid: "27380451"
 
 ## <a name="properties"></a>プロパティ
 
-| プロパティ       | 型                                                 | 説明                                   |
+| プロパティ       | 種類                                                 | 説明                                   |
 |:---------------|:-----------------------------------------------------|:----------------------------------------------|
 | value          | [commsNotification](commsnotification.md)コレクション | リソースに変更を通知します。 |
 

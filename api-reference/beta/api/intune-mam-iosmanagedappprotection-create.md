@@ -2,12 +2,13 @@
 title: Create iosManagedAppProtection
 description: 新しい iosManagedAppProtection オブジェクトを作成します。
 author: tfitzmac
-ms.openlocfilehash: d74419eb9643e4b1b487c40a6d40449467c1a26e
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 6781f4e5b8d50c923685798a80ac2c309ef56ed1
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27327469"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27851213"
 ---
 # <a name="create-iosmanagedappprotection"></a>Create iosManagedAppProtection
 

@@ -2,12 +2,13 @@
 title: managedAppPolicyDeploymentSummary の取得
 description: managedAppPolicyDeploymentSummary オブジェクトのプロパティとリレーションシップを読み取ります。
 author: tfitzmac
-ms.openlocfilehash: 8cff2b8b083ede160c56d499d54980507c38fc85
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 1645ae6ee487a2e8507f73eebc95269781e6d039
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27312097"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27852235"
 ---
 # <a name="get-managedapppolicydeploymentsummary"></a>managedAppPolicyDeploymentSummary の取得
 

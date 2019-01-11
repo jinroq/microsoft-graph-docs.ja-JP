@@ -1,12 +1,13 @@
 ---
 title: targetResourceGroup リソースの種類
 description: '監査活動により影響を受けたグループの種類を示します。 Azure AD と統合されたグループと同じように値が含まれています '
-ms.openlocfilehash: 3427f2401a0e93767f0c563842be323f66d9f21b
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 2cc7e0adb1a93394b64375d05dfb6a6e349bac55
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27069756"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27851185"
 ---
 # <a name="targetresourcegroup-resource-type"></a>targetResourceGroup リソースの種類
 監査活動により影響を受けたグループの種類を示します。 Azure AD と統合されたグループと同じように値が含まれています 
@@ -14,7 +15,7 @@ ms.locfileid: "27069756"
 
 
 ## <a name="properties"></a>プロパティ
-| プロパティ     | 型   |説明|
+| プロパティ     | 種類   |説明|
 |:---------------|:--------|:----------|
 |groupType|String| 可能な値は、`unifiedGroups`、`azureAD`、`unknownFutureValue` です。|
 

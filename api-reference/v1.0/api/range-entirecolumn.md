@@ -2,12 +2,13 @@
 title: 範囲:EntireColumn
 description: 範囲に含まれるすべての列を表すオブジェクトを取得します。
 author: lumine2008
-ms.openlocfilehash: 5754ca40bcb22e7b7bcd05413f1fe2a61ffff437
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 99de7bfff2008702722ba07a84b04c02d50b3e69
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27361811"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27851717"
 ---
 # <a name="range-entirecolumn"></a>範囲:EntireColumn
 

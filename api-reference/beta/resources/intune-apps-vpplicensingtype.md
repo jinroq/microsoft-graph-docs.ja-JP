@@ -2,12 +2,13 @@
 title: vppLicensingType リソースの種類
 description: iOS Volume-Purchase Program (VPP) ライセンスの種類のプロパティが含まれます。
 author: tfitzmac
-ms.openlocfilehash: 83e68cc018b3e3f5948b105118bffbeb93010c2f
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 5d4b7983d20f22be5f8cce24a5c362926d00de55
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27351304"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27851598"
 ---
 # <a name="vpplicensingtype-resource-type"></a>vppLicensingType リソースの種類
 

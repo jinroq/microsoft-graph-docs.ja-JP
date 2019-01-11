@@ -2,12 +2,13 @@
 title: windowsAutopilotDeploymentProfileAssignment リソースの種類
 description: AAD グループに Windows の自動操縦装置の展開のプロファイルの割り当て。
 author: tfitzmac
-ms.openlocfilehash: b9141d9a3126d25dd6de5e342ebb463304e1ae02
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 7fad8f082396598584af0cbb5fe1daee06bfd09e
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27337122"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27851220"
 ---
 # <a name="windowsautopilotdeploymentprofileassignment-resource-type"></a>windowsAutopilotDeploymentProfileAssignment リソースの種類
 
@@ -25,7 +26,7 @@ AAD グループに Windows の自動操縦装置の展開のプロファイル�
 |[WindowsAutopilotDeploymentProfileAssignment を削除します。](../api/intune-enrollment-windowsautopilotdeploymentprofileassignment-delete.md)|なし|の[windowsAutopilotDeploymentProfileAssignment](../resources/intune-enrollment-windowsautopilotdeploymentprofileassignment.md)を削除します。|
 |[WindowsAutopilotDeploymentProfileAssignment を更新します。](../api/intune-enrollment-windowsautopilotdeploymentprofileassignment-update.md)|[windowsAutopilotDeploymentProfileAssignment](../resources/intune-enrollment-windowsautopilotdeploymentprofileassignment.md)|[WindowsAutopilotDeploymentProfileAssignment](../resources/intune-enrollment-windowsautopilotdeploymentprofileassignment.md)オブジェクトのプロパティを更新します。|
 
-## <a name="properties"></a>Properties
+## <a name="properties"></a>プロパティ
 |プロパティ|種類|説明|
 |:---|:---|:---|
 |ID|String|割り当てのキー。|

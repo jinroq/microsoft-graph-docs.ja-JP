@@ -2,12 +2,13 @@
 title: sendCustomNotificationToCompanyPortal アクション
 description: まだ文書化されていません
 author: tfitzmac
-ms.openlocfilehash: 4dac88c0ec9325e5c1b268feda3c98226438f8b2
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: b5a3e4acedb95fe1092a6ef9eaacc2978fedcd9b
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27336450"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27851164"
 ---
 # <a name="sendcustomnotificationtocompanyportal-action"></a>sendCustomNotificationToCompanyPortal アクション
 

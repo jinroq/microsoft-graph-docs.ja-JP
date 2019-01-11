@@ -2,12 +2,13 @@
 title: リスト androidWorkProfileCustomConfigurations
 description: AndroidWorkProfileCustomConfiguration オブジェクトのプロパティと関係を一覧表示します。
 author: tfitzmac
-ms.openlocfilehash: b81e25f4168c41d9859d9e142ddf195ade7fd598
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 566a04b1d732dab6b765876f8b1823a1c640ee6b
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27358885"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27850898"
 ---
 # <a name="list-androidworkprofilecustomconfigurations"></a>リスト androidWorkProfileCustomConfigurations
 

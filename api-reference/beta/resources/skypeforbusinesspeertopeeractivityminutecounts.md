@@ -1,23 +1,24 @@
 ---
 title: skypeForBusinessPeerToPeerActivityMinuteCounts リソースの種類
 description: リソースの JSON 表記を次に示します。
-ms.openlocfilehash: 5377e8d8f2ec145f5aee590409206de75e915d9f
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 695c2fc57ab9d105b2576a9228ccc58d74b0094d
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27073322"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27851619"
 ---
 # <a name="skypeforbusinesspeertopeeractivityminutecounts-resource-type"></a>skypeForBusinessPeerToPeerActivityMinuteCounts リソースの種類
 
 ## <a name="properties"></a>プロパティ
 
-| プロパティ          | 型   |
+| プロパティ          | 種類   |
 | :---------------- | :----- |
 | audio             | Int64  |
 | video             | Int64  |
-| reportRefreshDate | Date   |
-| reportDate        | Date   |
+| reportRefreshDate | 日付   |
+| reportDate        | 日付   |
 | reportPeriod      | String |
 
 ## <a name="json-representation"></a>JSON 表記

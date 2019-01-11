@@ -1,12 +1,13 @@
 ---
 title: AccessReview を作成します。
 description: Azure AD のレビュー機能にアクセス、新しい accessReview オブジェクトを作成します。
-ms.openlocfilehash: 9d8e8b246c3c43e4f69172ea59715a8718d39d1e
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 1ee5ce696f1d71c57adf9e6c5ee30c067536c8ff
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27067041"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27851444"
 ---
 # <a name="create-accessreview"></a>AccessReview を作成します。
 
@@ -33,7 +34,7 @@ ms.locfileid: "27067041"
 POST /accessReviews
 ```
 ## <a name="request-headers"></a>要求ヘッダー
-| 名前         | 型        | 説明 |
+| 名前         | 種類        | 説明 |
 |:-------------|:------------|:------------|
 | Authorization | string | ベアラー\{トークン\}。 必須。 |
 
@@ -42,7 +43,7 @@ POST /accessReviews
 
 次の表は、accessReview を作成するときに必要なプロパティを示します。
 
-| プロパティ     | 型        | 説明 |
+| プロパティ     | 種類        | 説明 |
 |:-------------|:------------|:------------|
 | `displayName`             |`String`                                                        | アクセス確認の名前です。  |
 | `startDateTime`           |`DateTimeOffset`                                                | 日付と時刻と、レビューを開始する予定です。  将来の日付でなければなりません。   |
@@ -61,7 +62,7 @@ POST /accessReviews
 ## <a name="response"></a>応答
 かどうかは成功すると、このメソッドが返されます、`201, Created`応答コードおよび応答の本文内の[accessReview](../resources/accessreview.md)オブジェクトです。
 
-## <a name="example"></a>使用例
+## <a name="example"></a>例
 
 これは、校閲者として、2 人のユーザーを明示的に指定する 1 回限り (定期ではない) アクセス確認を作成する例です。
 

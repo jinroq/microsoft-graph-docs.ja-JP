@@ -1,12 +1,13 @@
 ---
 title: イベントを一覧表示する
 description: 'ユーザーのメールボックスでは、イベント オブジェクトの一覧を取得します。 リストが 1 つ含まれています '
-ms.openlocfilehash: 546e47de6b3d14b911462db19e7c739355445023
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Priority
+ms.openlocfilehash: a4766528e8a8e9ee71075377bccc5dfbeaaa4c06
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27021092"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27852039"
 ---
 # <a name="list-events"></a>イベントを一覧表示する
 
@@ -64,7 +65,7 @@ GET /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events
 ## <a name="optional-query-parameters"></a>オプションのクエリ パラメーター
 このメソッドは、応答をカスタマイズするための [OData クエリ パラメーター](https://developer.microsoft.com/graph/docs/concepts/query_parameters)をサポートします。
 ## <a name="request-headers"></a>要求ヘッダー
-| 名前       | 型 | 説明 |
+| 名前       | 種類 | 説明 |
 |:---------------|:--------|:--------|
 | Authorization  | string | ベアラー {トークン}。必須。  |
 | 優先: outlook.timezone  | 文字列 | これを使用して、応答内の開始および終了時刻のタイム ゾーンを指定します。 指定しない場合、これらの時刻値は UTC で返されます。 省略可能。 |

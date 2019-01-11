@@ -1,12 +1,13 @@
 ---
 title: 契約を更新します。
 description: 契約オブジェクトのプロパティを更新します。
-ms.openlocfilehash: b9405a8c469876a349b5c1b0c00e6f6a5f225e72
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: b16a503b33193fa453ca52481854879ae4dcd121
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27067411"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27838732"
 ---
 # <a name="update-agreement"></a>契約を更新します。
 
@@ -28,17 +29,17 @@ ms.locfileid: "27067411"
 PATCH /agreements/<id>
 ```
 ## <a name="request-headers"></a>要求ヘッダー
-| 名前         | 型        | 説明 |
+| 名前         | 種類        | 説明 |
 |:-------------|:------------|:------------|
 | Authorization | string | ベアラー\{トークン\}。 必須。 |
 
 ## <a name="request-body"></a>要求本文
 要求本文で、更新する関連フィールドの値を指定します。 要求本文に含まれない既存のプロパティは、以前の値のままになるか、他のプロパティ値の変更に基づいて再計算されます。 最適なパフォーマンスを得るために、変更されていない既存の値を含めないでください。
 
-| プロパティ     | 型        | 説明 |
+| プロパティ     | 種類        | 説明 |
 |:-------------|:------------|:------------|
 |displayName|String|契約書の名前を表示します。|
-|isViewingBeforeAcceptanceRequired|ブール値|ユーザーはあるかどうかを展開し、受け入れる前に契約書を表示します。|
+|isViewingBeforeAcceptanceRequired|ブール型|ユーザーはあるかどうかを展開し、受け入れる前に契約書を表示します。|
 
 ## <a name="response"></a>応答
 かどうかは成功すると、このメソッドが返されます、`200 OK`応答コードおよび応答の本体で[契約](../resources/agreement.md)の更新されたオブジェクト。

@@ -1,12 +1,13 @@
 ---
 title: 写真を取得する
 description: 指定した profilePhoto またはそのメタデータ (**profilePhoto**プロパティ) を取得します。
-ms.openlocfilehash: 6374680e37d409a89b61d3e2244b45ccb29869e7
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Priority
+ms.openlocfilehash: be20e243a89d258c8db2105efe0c53cbea0abebf
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27074450"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27851738"
 ---
 # <a name="get-photo"></a>写真を取得する
 
@@ -81,7 +82,7 @@ GET /users/{id | userPrincipalName}/contactfolders/{contactFolderId}/contacts/{i
 このメソッドは、応答をカスタマイズするための [OData クエリ パラメーター](https://developer.microsoft.com/graph/docs/concepts/query_parameters)をサポートします。
 
 ## <a name="request-headers"></a>要求ヘッダー
-| 名前       | 型 | 説明|
+| 名前       | 種類 | 説明|
 |:-----------|:------|:----------|
 | Authorization  | string  | ベアラー {トークン}。必須。 |
 

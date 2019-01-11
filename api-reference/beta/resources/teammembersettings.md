@@ -1,12 +1,13 @@
 ---
 title: teamMemberSettings リソースの種類
 description: など、メンバーが特定のアクションを実行するかどうかを構成する設定は、チャネルを作成し、チームにボットを追加します。
-ms.openlocfilehash: fa673e050ab3362ae7b132f30cfc4caf16d96dcc
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 85f8794ea3564174c75f38228f3891bcd264df2e
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27066892"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27851381"
 ---
 # <a name="teammembersettings-resource-type"></a>teamMemberSettings リソースの種類
 
@@ -15,13 +16,13 @@ ms.locfileid: "27066892"
 など、メンバーが特定のアクションを実行するかどうかを構成する設定は、チャネルを作成し、[チーム](team.md)にボットを追加します。
 
 ## <a name="properties"></a>プロパティ
-| プロパティ     | 型   |説明|
+| プロパティ     | 種類   |説明|
 |:---------------|:--------|:----------|
-|allowCreateUpdateChannels|ブール値|True の場合、メンバー セットを追加したりチャンネルを更新する場合。|
-|allowDeleteChannels|ブール値|場合は true の場合、メンバーに設定するには、チャンネルを削除できます。|
-|allowAddRemoveApps|ブール値|場合は true の場合、メンバー セットは、追加し、アプリケーションを削除できます。|
-|allowCreateUpdateRemoveTabs|ブール値|場合は true の場合、メンバー セットを追加、更新、およびタブを削除します。 |
-|allowCreateUpdateRemoveConnectors|ブール値|場合は true の場合、メンバー セットを追加、更新、およびコネクタを削除します。|
+|allowCreateUpdateChannels|ブール型|True の場合、メンバー セットを追加したりチャンネルを更新する場合。|
+|allowDeleteChannels|ブール型|場合は true の場合、メンバーに設定するには、チャンネルを削除できます。|
+|allowAddRemoveApps|ブール型|場合は true の場合、メンバー セットは、追加し、アプリケーションを削除できます。|
+|allowCreateUpdateRemoveTabs|ブール型|場合は true の場合、メンバー セットを追加、更新、およびタブを削除します。 |
+|allowCreateUpdateRemoveConnectors|ブール型|場合は true の場合、メンバー セットを追加、更新、およびコネクタを削除します。|
 
 ## <a name="json-representation"></a>JSON 表記
 

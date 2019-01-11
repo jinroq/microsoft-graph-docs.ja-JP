@@ -2,12 +2,13 @@
 title: windows81CompliancePolicies のリスト
 description: windows81CompliancePolicy オブジェクトのプロパティとリレーションシップをリストします。
 author: tfitzmac
-ms.openlocfilehash: 217ec11f7c2283d8eae90129896b00823211da81
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 59dce398779185df313768f53eff9d8608b3b569
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27333076"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27852256"
 ---
 # <a name="list-windows81compliancepolicies"></a>windows81CompliancePolicies のリスト
 

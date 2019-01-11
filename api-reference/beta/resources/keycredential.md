@@ -1,12 +1,13 @@
 ---
 title: keyCredential リソースの種類
 description: アプリケーションまたはサービス ・ プリンシパルに関連付けられているキーの資格情報が含まれています。 アプリケーションと servicePrincipal のエンティティの**keyCredentials**プロパティは、 **keyCredential**のコレクションです。
-ms.openlocfilehash: d4509360c0425c255566b9f77b9ecd96cf349dec
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 0319568dad271f13b396d2f75a71839e85c96c40
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27066794"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27851563"
 ---
 # <a name="keycredential-resource-type"></a>keyCredential リソースの種類
 
@@ -40,9 +41,9 @@ ms.locfileid: "27066794"
 
 ```
 ## <a name="properties"></a>プロパティ
-| プロパティ     | 型   |説明|
+| プロパティ     | 種類   |説明|
 |:---------------|:--------|:----------|
-|customKeyIdentifier|バイナリ| カスタム キー識別子 |
+|customKeyIdentifier|Binary| カスタム キー識別子 |
 |endDateTime|DateTimeOffset|日付と、資格情報の有効期限が切れる。Timestamp 型は、ISO 8601 形式を使用して日付と時刻の情報を表し、UTC 時間に常に。 たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、次のようになります。`'2014-01-01T00:00:00Z'`|
 |キー Id|Guid|キーの一意の識別子 (GUID)。|
 |startDateTime|DateTimeOffset|日付と時刻に、資格情報が有効になります。Timestamp 型は、ISO 8601 形式を使用して日付と時刻の情報を表し、UTC 時間に常に。 たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、次のようになります。`'2014-01-01T00:00:00Z'`|

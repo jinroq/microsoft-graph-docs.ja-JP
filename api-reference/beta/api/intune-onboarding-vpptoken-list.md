@@ -2,12 +2,13 @@
 title: List vppTokens
 description: vppToken オブジェクトのプロパティとリレーションシップのリストを作成します。
 author: tfitzmac
-ms.openlocfilehash: 7a3e1d52c91d28b1714b1111f3207942355c5156
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 4a8ca845ac2392a39ae9378300a74288caef6862
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27344332"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27851864"
 ---
 # <a name="list-vpptokens"></a>List vppTokens
 

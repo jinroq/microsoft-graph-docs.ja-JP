@@ -2,12 +2,13 @@
 title: リスト windowsPhoneEASEmailProfileConfigurations
 description: WindowsPhoneEASEmailProfileConfiguration オブジェクトのプロパティと関係を一覧表示します。
 author: tfitzmac
-ms.openlocfilehash: 299752c983a5fc19b39e3d9b33f3786a201dfcb5
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 7cff80f2c1e22cf8c84b872e9d006251225486c4
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27301345"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27807568"
 ---
 # <a name="list-windowsphoneeasemailprofileconfigurations"></a>リスト windowsPhoneEASEmailProfileConfigurations
 

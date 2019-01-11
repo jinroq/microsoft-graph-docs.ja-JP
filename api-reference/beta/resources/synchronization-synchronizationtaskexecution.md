@@ -1,12 +1,13 @@
 ---
 title: synchronizationTaskExecution リソースの種類
 description: 同期ジョブの実行の結果をまとめたものです。
-ms.openlocfilehash: 4aefba4bdf9ab850892344e6e34683e81d1a1afa
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 99b6c66b15577ee4c6cbbf5ffe44e17cf0672696
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27070245"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27851507"
 ---
 # <a name="synchronizationtaskexecution-resource-type"></a>synchronizationTaskExecution リソースの種類
 
@@ -15,7 +16,7 @@ ms.locfileid: "27070245"
 同期ジョブの実行の結果をまとめたものです。
 
 ## <a name="properties"></a>プロパティ
-| プロパティ     | 型   |説明|
+| プロパティ     | 種類   |説明|
 |:---------------|:--------|:----------|
 |activityIdentifier           |String |実行ジョブの識別子です。|
 |countEntitled                |Int64  |このアプリケーションに割り当てられた処理されたエントリの数。|

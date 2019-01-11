@@ -2,12 +2,13 @@
 title: ユーザーを作成する
 description: 新しいユーザーを作成するのにには、この API を使用します。
 author: dkershaw10
-ms.openlocfilehash: d5e85b0538790ce08f2ad36231830ac53cbf6e9d
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Priority
+ms.openlocfilehash: 218752a382da4ccb2bdbe240c8c57d03007b0169
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27342652"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27851654"
 ---
 # <a name="create-user"></a>ユーザーを作成する
 
@@ -37,14 +38,14 @@ POST /users
 
 次の表に、ユーザーの作成時に必要になるプロパティを示します。
 
-| パラメーター | 種類 | 説明|
+| パラメーター | Type | 説明|
 |:---------------|:--------|:----------|
 |accountEnabled |ブール値 |アカウントが有効な場合は true。それ以外の場合は false。|
 |displayName |string |ユーザーのアドレス帳に表示される名前。|
-|onPremisesImmutableId |string |ユーザーの userPrincipalName (UPN) プロパティにフェデレーション ドメインを使用している場合は、新しいユーザー アカウントの作成時にのみ指定する必要があります|
-|mailNickname |string |ユーザーのメール エイリアス。|
+|onPremisesImmutableId |文字列 |ユーザーの userPrincipalName (UPN) プロパティにフェデレーション ドメインを使用している場合は、新しいユーザー アカウントの作成時にのみ指定する必要があります|
+|mailNickname |文字列 |ユーザーのメール エイリアス。|
 |passwordProfile|[PasswordProfile](../resources/passwordprofile.md) |ユーザーのパスワード プロファイル。|
-|userPrincipalName |string |ユーザー プリンシパル名 (someuser@contoso.com)。|
+|userPrincipalName |文字列 |ユーザー プリンシパル名 (someuser@contoso.com)。|
 
 ## <a name="response"></a>応答
 

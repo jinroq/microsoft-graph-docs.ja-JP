@@ -1,12 +1,13 @@
 ---
 title: List buckets
 description: plannerPlan オブジェクトに含まれている **plannerbucket** オブジェクトのリストを取得します。
-ms.openlocfilehash: 735a97b70ce81d07444ca06a861a975ee87b10ab
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: c6b33f74bd21dde1aec6f04870b4fa6348fb2ffb
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27023594"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27837290"
 ---
 # <a name="list-buckets"></a>List buckets
 

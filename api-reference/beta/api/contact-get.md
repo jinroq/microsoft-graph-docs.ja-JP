@@ -2,12 +2,13 @@
 title: 連絡先を取得する
 description: プロパティと関係の連絡先オブジェクトを取得します。
 author: angelgolfer-ms
-ms.openlocfilehash: fceda46729f539081458c1f26c5d385a984ed2d2
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 9bcd9e9a9a5e5a59a31e6ddc548f622ba69c638d
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27322926"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27838277"
 ---
 # <a name="get-contact"></a>連絡先を取得する
 

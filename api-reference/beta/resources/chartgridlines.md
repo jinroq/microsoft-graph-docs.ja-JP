@@ -2,12 +2,13 @@
 title: ChartGridlines リソースの種類
 description: グラフの軸の目盛線または補助目盛線を表します。
 author: lumine2008
-ms.openlocfilehash: 263bbefad519fef8b12080cb7b2bfd74ce1a331f
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 7747564b2f72287ef6ec2c6cc1f912695f58218e
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27319559"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27807827"
 ---
 # <a name="chartgridlines-resource-type"></a>ChartGridlines リソースの種類
 

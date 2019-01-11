@@ -2,12 +2,13 @@
 title: windowsKioskMultipleApps リソースの種類
 description: キオスクの構成のマルチ ・ モード ・ アプリケーションの構成を識別するために使用するクラス
 author: tfitzmac
-ms.openlocfilehash: 30591e15d29b06ffb807c8b435d0e3c8a6a1b0fa
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 01758c66a466b66fcba6b443f80d0350d308756d
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27330143"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27851206"
 ---
 # <a name="windowskioskmultipleapps-resource-type"></a>windowsKioskMultipleApps リソースの種類
 
@@ -19,7 +20,7 @@ ms.locfileid: "27330143"
 
 [WindowsKioskAppConfiguration](../resources/intune-deviceconfig-windowskioskappconfiguration.md)から継承します。
 
-## <a name="properties"></a>Properties
+## <a name="properties"></a>プロパティ
 |プロパティ|種類|説明|
 |:---|:---|:---|
 |apps|[windowsKioskAppBase](../resources/intune-deviceconfig-windowskioskappbase.md)コレクション|これらは、[スタート] メニューから起動できる唯一の Windows ストア アプリです。|

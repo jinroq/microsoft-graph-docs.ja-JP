@@ -1,12 +1,13 @@
 ---
 title: ワークシート リソースの種類
 description: Excel のワークシートは、セルのグリッドになっています。そこに、データ、表、グラフなどを含めることができます。
-ms.openlocfilehash: 513a1fceb8e0b7e2c7667d5fac2e4a5978ed7c04
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 690596bfe6df5f6bfd98f7f5bd37021e47132152
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27067471"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27807799"
 ---
 # <a name="worksheet-resource-type"></a>ワークシート リソースの種類
 
@@ -26,16 +27,16 @@ Excel のワークシートは、セルのグリッドになっています。�
 |[テーブルを作成する](../api/worksheet-post-tables.md) |[Table](table.md)| テーブル コレクションに投稿して、新しいテーブルを作成します。|
 |[テーブルを一覧表示する](../api/worksheet-list-tables.md) |[Table](table.md) コレクション| テーブル オブジェクトのコレクションを取得します。|
 |[Update](../api/worksheet-update.md) | [Worksheet](worksheet.md)   |ワークシート オブジェクトを更新します。 |
-|[Cell](../api/worksheet-cell.md)|[印刷範囲](range.md)|行と列の番号に基づいて、1 つのセルを含んだ範囲オブジェクトを取得します。このセルは、ワークシートのグリッド内であれば、親の範囲の境界の外のセルであってもかまいません。|
+|[Cell](../api/worksheet-cell.md)|[Range](range.md)|行と列の番号に基づいて、1 つのセルを含んだ範囲オブジェクトを取得します。このセルは、ワークシートのグリッド内であれば、親の範囲の境界の外のセルであってもかまいません。|
 |[Range](../api/worksheet-range.md)|[Range](range.md)|アドレスまたは名前で指定された範囲オブジェクトを取得します。|
-|[Usedrange](../api/worksheet-usedrange.md)|[印刷範囲](range.md)|使用範囲とは、値または書式設定が割り当たっているすべてのセルを包含する最小の範囲です。ワークシートが空白の場合、この関数は左上のセルを返します。|
-|[削除](../api/worksheet-delete.md)|なし|ブックからワークシートを削除します。|
+|[Usedrange](../api/worksheet-usedrange.md)|[Range](range.md)|使用範囲とは、値または書式設定が割り当たっているすべてのセルを包含する最小の範囲です。ワークシートが空白の場合、この関数は左上のセルを返します。|
+|[Delete](../api/worksheet-delete.md)|なし|ブックからワークシートを削除します。|
 |[List](../api/worksheet-list.md) | [Worksheet](worksheet.md) コレクション |ワークシート オブジェクトのコレクションを取得します。 |
-|[追加](../api/worksheetcollection-add.md)|[Worksheet](worksheet.md)|新しいワークシートをブックに追加します。ワークシートは、既存のワークシートの末尾に追加されます。 |
+|[Add](../api/worksheetcollection-add.md)|[Worksheet](worksheet.md)|新しいワークシートをブックに追加します。ワークシートは、既存のワークシートの末尾に追加されます。 |
 |[pivotTables を一覧表示する](../api/workbookworksheet-list-pivottables.md) |[workbookPivotTable](workbookpivottable.md) コレクション| workbookPivotTable オブジェクト コレクションを取得します。|
 
 ## <a name="properties"></a>プロパティ
-| プロパティ     | 型   |説明|
+| プロパティ     | 種類   |説明|
 |:---------------|:--------|:----------|
 |ID|文字列|指定されたブックのワークシートを一意に識別する値を返します。この識別子の値は、ワークシートの名前を変更したり移動したりしても同じままです。値の取得のみ可能です。|
 |name|文字列|ワークシートの表示名。|
