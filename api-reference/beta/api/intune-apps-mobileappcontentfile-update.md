@@ -2,12 +2,13 @@
 title: mobileAppContentFile の更新
 description: mobileAppContentFile オブジェクトのプロパティを更新します。
 author: tfitzmac
-ms.openlocfilehash: ae091b562180c73c71ad9a58522face2c4457d53
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 3b404be8c376bfaff89540eb22ce2cde5ddca2b5
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27337934"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27865479"
 ---
 # <a name="update-mobileappcontentfile"></a>mobileAppContentFile の更新
 

@@ -2,12 +2,13 @@
 title: リスト trendingAround
 description: ユーザーの周りのトレンド分析項目の一覧を返す計算の把握。
 author: dkershaw10
-ms.openlocfilehash: 2f2595cbaacc74053b23d6b26b64fb9a17e2924a
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 1fca9fe47d1656b8b499fbf2e1f3fa1ee638f37e
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27333832"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27839460"
 ---
 # <a name="list-trendingaround"></a>リスト trendingAround
 

@@ -2,12 +2,13 @@
 title: IosLobAppProvisioningConfiguration を更新します。
 description: IosLobAppProvisioningConfiguration オブジェクトのプロパティを更新します。
 author: tfitzmac
-ms.openlocfilehash: df3cc8d27bb242998d513e98b8ce9b7ebfb24fd1
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 637c1052f4097c3a33ff4c8fc4949ef48773ce68
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27313322"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27859319"
 ---
 # <a name="update-ioslobappprovisioningconfiguration"></a>IosLobAppProvisioningConfiguration を更新します。
 

@@ -1,12 +1,13 @@
 ---
 title: iosManagedAppRegistration リソースの種類
 description: 特定のユーザーに対する、iOS アプリの管理機能との同期の詳細を示します。
-ms.openlocfilehash: f62024fe2b3222e1595bfd8fd8c15edb424daff3
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: eb36bf1e96a8b7a54daf9d02b4cc2765a1844d4c
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27020962"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27868069"
 ---
 # <a name="iosmanagedappregistration-resource-type"></a>iosManagedAppRegistration リソースの種類
 
@@ -24,7 +25,7 @@ ManagedAppRegistration リソースは、組織のメンバーに使用される
 |[iosManagedAppRegistration の取得](../api/intune-mam-iosmanagedappregistration-get.md)|[iosManagedAppRegistration](../resources/intune-mam-iosmanagedappregistration.md)|[iosManagedAppRegistration](../resources/intune-mam-iosmanagedappregistration.md) オブジェクトのプロパティとリレーションシップを読み取ります。|
 
 ## <a name="properties"></a>プロパティ
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
 |createdDateTime|DateTimeOffset|作成日時 ([managedAppRegistration](../resources/intune-mam-managedappregistration.md) から継承)。|
 |lastSyncDateTime|DateTimeOffset|アプリが管理サービスと最後に同期した日時。 [managedAppRegistration](../resources/intune-mam-managedappregistration.md) から継承します|

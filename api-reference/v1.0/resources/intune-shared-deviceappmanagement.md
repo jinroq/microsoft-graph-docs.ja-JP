@@ -2,12 +2,13 @@
 title: deviceAppManagement リソースの種類
 description: すべてのデバイス アプリの管理機能のコンテナーとして機能する単一のエンティティです。
 author: tfitzmac
-ms.openlocfilehash: 64b884f797001f127c7a55b98670e7f339054442
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 60acbdb63f3bd75bacbc2d2392cbb3ab64cc4b57
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27312258"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27825649"
 ---
 # <a name="deviceappmanagement-resource-type"></a>deviceAppManagement リソースの種類
 

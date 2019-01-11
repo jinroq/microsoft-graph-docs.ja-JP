@@ -2,12 +2,13 @@
 title: childFolders を一覧表示する
 description: '指定したフォルダーの下のフォルダーのコレクションを取得します。 使用することができます、 `.../me/MailFolders` 、最上位レベルを取得するショートカット '
 author: angelgolfer-ms
-ms.openlocfilehash: b852e245ee0b553d83e144eb42a719060837ef68
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 3af208919b1f733e913d8ac374bb72608d8fa1aa
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27351668"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27837437"
 ---
 # <a name="list-childfolders"></a>childFolders を一覧表示する
 

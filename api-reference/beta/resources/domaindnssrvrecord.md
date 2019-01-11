@@ -2,12 +2,13 @@
 title: domainDnsSrvRecord リソースの種類
 description: テナント内の特定のドメインの DNS ゾーン ファイルに追加された SRV レコードを表します。DomainDnsRecord エンティティから継承されます。
 author: lleonard-msft
-ms.openlocfilehash: 73eec36406844ef26b0f0349711258ddcd13f200
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: c06682753b752980530bf8cfd8f6a32b9bbd569a
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27322051"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27810438"
 ---
 # <a name="domaindnssrvrecord-resource-type"></a>domainDnsSrvRecord リソースの種類
 

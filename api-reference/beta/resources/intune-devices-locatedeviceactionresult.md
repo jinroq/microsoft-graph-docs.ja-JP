@@ -2,12 +2,13 @@
 title: locateDeviceActionResult リソースの種類
 description: デバイスの検索アクションの結果
 author: tfitzmac
-ms.openlocfilehash: 82f8b5ba1bd1f1ce1584af50a4a2b3037e588adc
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 4675da8cff8ae8091d9aa61350d0fc329e7eddee
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27345452"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27837542"
 ---
 # <a name="locatedeviceactionresult-resource-type"></a>locateDeviceActionResult リソースの種類
 

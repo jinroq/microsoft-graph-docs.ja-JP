@@ -2,12 +2,13 @@
 title: Administrativeunit を更新します。
 description: AdministrativeUnit オブジェクトのプロパティを更新します。
 author: lleonard-msft
-ms.openlocfilehash: 99ec27bc9a60e25d28202d2ebd82155089963c21
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: b3a7de71e43b81927540c2eb8f85a45ce573e4b1
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27362168"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27865675"
 ---
 # <a name="update-administrativeunit"></a>Administrativeunit を更新します。
 
@@ -42,7 +43,7 @@ PATCH /administrativeUnits/{id}
 
 | プロパティ   | 種類 |説明|
 |:---------------|:--------|:----------|
-|description|string|管理単位の説明です。|
+|description|文字列|管理単位の説明です。|
 |displayName|string|管理単位の名前を表示します。|
 |visibility|文字列|管理単位の表示/非表示にします。 設定されていない場合、既定値はパブリックです。 "HiddenMembership"は、メンバー以外のメンバーのメンバーシップを非表示にするに設定することができます。|
 

@@ -2,12 +2,13 @@
 title: Get Chart
 description: グラフ オブジェクトのプロパティと関係を取得します。
 author: lumine2008
-ms.openlocfilehash: 85a2e92808a4622a539cccf832b87fe2f65324f4
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: c6ece5772bca7c59be949e617b665d30969a5890
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27306042"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27858003"
 ---
 # <a name="get-chart"></a>Get Chart
 

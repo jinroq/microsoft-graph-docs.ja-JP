@@ -2,12 +2,13 @@
 title: revokeUserLicense アクション
 description: Revoke が割り当てられている iOS VPP ユーザー ライセンスは、アプリケーションを指定します。
 author: tfitzmac
-ms.openlocfilehash: 94d8dff027421d5b3b1c763439dbcf4ec3d2391f
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 241306b812615bb804a3139082a439df9eeae059
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27332810"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27837304"
 ---
 # <a name="revokeuserlicense-action"></a>revokeUserLicense アクション
 

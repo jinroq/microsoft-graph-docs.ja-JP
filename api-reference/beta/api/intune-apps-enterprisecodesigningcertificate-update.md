@@ -2,12 +2,13 @@
 title: EnterpriseCodeSigningCertificate を更新します。
 description: EnterpriseCodeSigningCertificate オブジェクトのプロパティを更新します。
 author: tfitzmac
-ms.openlocfilehash: 4cf0eb5607af176e1c0cb0a6418f01339b2bb96f
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 5272c0ff0e18fd7200e85ff51575c10825dbf7f5
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27332803"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27829317"
 ---
 # <a name="update-enterprisecodesigningcertificate"></a>EnterpriseCodeSigningCertificate を更新します。
 

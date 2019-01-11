@@ -2,12 +2,13 @@
 title: WindowsOfficeClientConfiguration を更新します。
 description: セキュリティ以外の特定のポリシーのペイロードにパッチを適用します。
 author: tfitzmac
-ms.openlocfilehash: 728fe7b6ffdb4b964488317551fdbaef139d2803
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: e13228c6fc467fa49b740c02b4b7068efb1ec42e
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27310753"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27863876"
 ---
 # <a name="update-windowsofficeclientconfiguration"></a>WindowsOfficeClientConfiguration を更新します。
 

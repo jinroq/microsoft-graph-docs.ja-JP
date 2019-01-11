@@ -2,12 +2,13 @@
 title: IosTrustedRootCertificate を更新します。
 description: IosTrustedRootCertificate オブジェクトのプロパティを更新します。
 author: tfitzmac
-ms.openlocfilehash: fdd707ad86603c3ef13ee75c27722abb9c85bd1e
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 74023665c8690373a6804cb586fe639b45491ed8
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27355630"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27806805"
 ---
 # <a name="update-iostrustedrootcertificate"></a>IosTrustedRootCertificate を更新します。
 

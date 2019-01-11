@@ -2,12 +2,13 @@
 title: UnsupportedDeviceConfiguration を更新します。
 description: UnsupportedDeviceConfiguration オブジェクトのプロパティを更新します。
 author: tfitzmac
-ms.openlocfilehash: e4e40632932526d18fcf46dcb8173964ca0e7d06
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: a52781f6a018da8780ee052fdcae781ef9bc5480
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27312636"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27858017"
 ---
 # <a name="update-unsupporteddeviceconfiguration"></a>UnsupportedDeviceConfiguration を更新します。
 

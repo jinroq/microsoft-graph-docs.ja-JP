@@ -2,12 +2,13 @@
 title: deviceCompliancePolicySettingStateSummaries のリスト
 description: deviceCompliancePolicySettingStateSummary オブジェクトのプロパティとリレーションシップをリストします。
 author: tfitzmac
-ms.openlocfilehash: 9d509780c04b933b51078df649cdf5067737999b
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: bf3568ccf2659f309e12fb1fb8dacb946f141651
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27322107"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27827980"
 ---
 # <a name="list-devicecompliancepolicysettingstatesummaries"></a>deviceCompliancePolicySettingStateSummaries のリスト
 

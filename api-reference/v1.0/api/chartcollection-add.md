@@ -2,12 +2,13 @@
 title: 'ChartCollection: add'
 description: 新しいグラフを作成します。
 author: lumine2008
-ms.openlocfilehash: bfae5968c6a1131cb58bda80bd2587a68047bed9
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 4aa1a017da88fdd06b8e396130d5b09fbbeaebb5
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27332957"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27867943"
 ---
 # <a name="chartcollection-add"></a>ChartCollection: add
 
@@ -36,9 +37,9 @@ POST /workbook/worksheets/{id|name}/charts/add
 ## <a name="request-body"></a>要求本文
 要求本文で、次のパラメーターを含む JSON オブジェクトを指定します。
 
-| パラメーター    | 種類   |説明|
+| パラメーター    | Type   |説明|
 |:---------------|:--------|:----------|
-|type|string|グラフの種類を表します。  可能な値: `ColumnClustered`、 `ColumnStacked`、 `ColumnStacked100`、 `BarClustered`、 `BarStacked`、 `BarStacked100`、 `LineStacked`、 `LineStacked100`、 `LineMarkers`、 `LineMarkersStacked`、 `LineMarkersStacked100`、 `PieOfPie`、 `etc.`。|
+|type|文字列|グラフの種類を表します。  可能な値: `ColumnClustered`、 `ColumnStacked`、 `ColumnStacked100`、 `BarClustered`、 `BarStacked`、 `BarStacked100`、 `LineStacked`、 `LineStacked100`、 `LineMarkers`、 `LineMarkersStacked`、 `LineMarkersStacked100`、 `PieOfPie`、 `etc.`。|
 |sourceData|Json|データ ソースに対応する Range オブジェクトです。|
 |seriesBy|文字列|省略可能。 方法の列または行がグラフのデータ系列として使用されるかを指定します。  可能な値: `Auto`、 `Columns`、 `Rows`。|
 

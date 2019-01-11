@@ -2,12 +2,13 @@
 title: Windows81TrustedRootCertificate を作成します。
 description: 新しい windows81TrustedRootCertificate オブジェクトを作成します。
 author: tfitzmac
-ms.openlocfilehash: 62703ff94b239b4daca1bca755a85c4ef8755ace
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: a4c69d1b0bdb23da7cd100f0b213eab0a63b1baa
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27350756"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27837164"
 ---
 # <a name="create-windows81trustedrootcertificate"></a>Windows81TrustedRootCertificate を作成します。
 

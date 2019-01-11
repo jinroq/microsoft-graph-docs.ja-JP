@@ -2,12 +2,13 @@
 title: WindowsAutopilotDeviceIdentity を作成します。
 description: 新しい windowsAutopilotDeviceIdentity オブジェクトを作成します。
 author: tfitzmac
-ms.openlocfilehash: 1e4a9d43755fff787efa08a8c727e6ddc35fa904
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 6dbefc09b95aefdb652174cc9a1d1e4af45387cb
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27316017"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27827259"
 ---
 # <a name="create-windowsautopilotdeviceidentity"></a>WindowsAutopilotDeviceIdentity を作成します。
 

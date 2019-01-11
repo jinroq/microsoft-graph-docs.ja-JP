@@ -1,12 +1,13 @@
 ---
 title: Educationassignment を更新します。
 description: 割り当てオブジェクトを更新します。 クラスの先生だけは、これを実行できます。 割り当ての状態を変更するのには、修正プログラムの要求を使用できないことに注意してください。 発行アクションを使用すると、割り当ての状態を変更します。
-ms.openlocfilehash: 8b23b7ac4b971856ed7a96b4991fca2e5220d069
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 78d5b526468fbdf35c3529084f878f8c35216c99
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27069228"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27838291"
 ---
 # <a name="update-educationassignment"></a>Educationassignment を更新します。
 
@@ -37,10 +38,10 @@ PATCH /education/classes/{id}/assignments/{id}
 ## <a name="request-body"></a>要求本文
 要求本文で、更新する関連フィールドの値を指定します。 要求本文に含まれない既存のプロパティは、以前の値のままになるか、他のプロパティ値の変更に基づいて再計算されます。 最適なパフォーマンスを得るために、変更されていない既存の値を含めないでください。
 
-| プロパティ     | 型   |説明|
+| プロパティ     | 種類   |説明|
 |:---------------|:--------|:----------|
-|allowLateSubmissions|ブール値| かどうかの提出書類は、期限より後に送信できます。|
-|allowStudentsToAddResourcesToSubmission|ブール値| かどうか、受講生受講者は、提出書類にリソースを追加できます。 リソースの割り当て] ボックスの一覧から、提出書類の項目のみが付属しているかどうかを指定します。 |
+|allowLateSubmissions|ブール型| かどうかの提出書類は、期限より後に送信できます。|
+|allowStudentsToAddResourcesToSubmission|ブール型| かどうか、受講生受講者は、提出書類にリソースを追加できます。 リソースの割り当て] ボックスの一覧から、提出書類の項目のみが付属しているかどうかを指定します。 |
 |assignDateTime|DateTimeOffset| 日付は受講者に割り当てを発行する必要があります。 |
 |assignTo|educationAssignmentRecipient| 割り当てを取得した受講者です。|
 |displayName|String| 割り当ての名前です。 |

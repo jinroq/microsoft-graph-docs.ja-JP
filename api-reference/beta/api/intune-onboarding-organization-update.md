@@ -2,12 +2,13 @@
 title: 組織を更新する
 description: organization オブジェクトのプロパティを更新します。
 author: tfitzmac
-ms.openlocfilehash: 5037fa0fb14ec327fd24dc3fa12575037487468d
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 67ce9fd0181c3f60f3615a29313e2da642e697ab
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27313133"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27862147"
 ---
 # <a name="update-organization"></a>組織を更新する
 

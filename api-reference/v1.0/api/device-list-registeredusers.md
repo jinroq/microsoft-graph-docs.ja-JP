@@ -2,12 +2,13 @@
 title: registeredUsers を一覧表示する
 description: デバイスの登録ユーザーの一覧を取得します。
 author: tfitzmac
-ms.openlocfilehash: 7b6f861e275ea36eb864aee5958c94055e8e8168
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 58b691bbf71dde1aa6247cfa19164f8cc44b3674
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27336800"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27846390"
 ---
 # <a name="list-registeredusers"></a>registeredUsers を一覧表示する
 

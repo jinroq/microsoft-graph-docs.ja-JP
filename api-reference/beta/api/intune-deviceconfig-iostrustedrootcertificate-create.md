@@ -2,12 +2,13 @@
 title: IosTrustedRootCertificate を作成します。
 description: 新しい iosTrustedRootCertificate オブジェクトを作成します。
 author: tfitzmac
-ms.openlocfilehash: efb1a1107b2e7efcacb108ac3ccb1db9ad347c55
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 6216dcccf2cde30506ee32dbbf612156c2fe3bce
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27305307"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27823416"
 ---
 # <a name="create-iostrustedrootcertificate"></a>IosTrustedRootCertificate を作成します。
 

@@ -2,12 +2,13 @@
 title: Update iosDeviceFeaturesConfiguration
 description: iosDeviceFeaturesConfiguration オブジェクトのプロパティを更新します。
 author: tfitzmac
-ms.openlocfilehash: b2eff78663ce8f666161c653f3845932bbda1fca
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 686c8ac43cd0290325fd3664da0a54ea3b2a7631
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27315569"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27861853"
 ---
 # <a name="update-iosdevicefeaturesconfiguration"></a>Update iosDeviceFeaturesConfiguration
 

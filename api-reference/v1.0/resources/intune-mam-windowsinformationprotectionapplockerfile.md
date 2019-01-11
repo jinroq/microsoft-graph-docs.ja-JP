@@ -2,12 +2,13 @@
 title: windowsInformationProtectionAppLockerFile リソースの種類
 description: Windows 情報保護 AppLocker ファイル
 author: tfitzmac
-ms.openlocfilehash: 6bc4a9dde44199ce8552772a47f2f68df0c50810
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 2b522eba9ddeea6a75b3da555c1bb07aaf709ffe
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27345102"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27844913"
 ---
 # <a name="windowsinformationprotectionapplockerfile-resource-type"></a>windowsInformationProtectionAppLockerFile リソースの種類
 

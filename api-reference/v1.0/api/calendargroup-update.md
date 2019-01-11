@@ -2,12 +2,13 @@
 title: CalendarGroup を更新する　
 description: calendargroup オブジェクトのプロパティを更新します。
 author: angelgolfer-ms
-ms.openlocfilehash: 24b09f3cd3dc23daf799eac70e59e0c4e32d7079
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 18234705606596ff9ce258188877e4146eb2ea25
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27324767"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27857142"
 ---
 # <a name="update-calendargroup"></a>CalendarGroup を更新する　
 

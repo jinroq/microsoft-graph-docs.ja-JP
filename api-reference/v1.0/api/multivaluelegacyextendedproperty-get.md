@@ -1,12 +1,13 @@
 ---
 title: multiValueLegacyExtendedProperty を取得する
 description: 展開 ' です。
-ms.openlocfilehash: c56afa8492954bcb68c5f36df00abdfce51cc2b6
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: c1d95e319637df17f04e706055245d5e19762a87
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27023715"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27866326"
 ---
 # <a name="get-multivaluelegacyextendedproperty"></a>multiValueLegacyExtendedProperty を取得する
 
@@ -96,7 +97,7 @@ GET /groups/{id}/conversations/{id}/threads/{id}/posts/{id}?$expand=multiValueEx
 ```
 
 ## <a name="path-parameters"></a>パス パラメーター
-|パラメーター|型|説明|
+|Parameter|Type|説明|
 |:-----|:-----|:-----|
 |id_value|String|照合する拡張プロパティの ID。サポートされている形式のいずれかに従う必要があります。詳しくは、「[Outlook の拡張プロパティの概要](../resources/extended-properties-overview.md)」を参照してください。必須。|
 

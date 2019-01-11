@@ -1,12 +1,13 @@
 ---
 title: identityProvider リソースの種類
 description: Azure Active Directory (AD の Azure) id プロバイダーを表します。 Id プロバイダーは、マイクロソフト、Google、Facebook、Amazon、または LinkedIn にできます。
-ms.openlocfilehash: 672e2e6225374451a475b69e2ce4ce6adfe65ef0
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 0a465b1c7b4ad7f74e6357e77da3692d64294e7e
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27068513"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27858542"
 ---
 # <a name="identityprovider-resource-type"></a>identityProvider リソースの種類
 
@@ -33,7 +34,7 @@ B2B ゲストの将来のシナリオを有効に、Azure AD テナントの id 
 
 ## <a name="properties"></a>プロパティ
 
-|プロパティ|型|必須|Nullable|説明|
+|プロパティ|種類|必須|Nullable|説明|
 |:---------------|:--------|:--------|:--------|:----------|
 |clientId|String|はい|いいえ|アプリケーションのクライアント ID。 これは、id プロバイダーを持つアプリケーションを登録するときに取得したクライアント ID です。|
 |clientSecret|String|はい|いいえ|アプリケーションのクライアントの機密情報です。 これは、id プロバイダーを持つアプリケーションを登録するときに取得したクライアントの機密情報です。 これは、書き込み専用です。 読み取り操作が返されます"\*\*\*\*」です。|

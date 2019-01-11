@@ -2,12 +2,13 @@
 title: deviceEnrollmentPlatformRestrictionsConfiguration の更新
 description: deviceEnrollmentPlatformRestrictionsConfiguration オブジェクトのプロパティを更新します。
 author: tfitzmac
-ms.openlocfilehash: c654e9b5620dd2812fd1d5793b7574e9f3787f47
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 606bf82b6556f42c661b4cb46d8ddb978cfbbe7b
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27336086"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27813112"
 ---
 # <a name="update-deviceenrollmentplatformrestrictionsconfiguration"></a>deviceEnrollmentPlatformRestrictionsConfiguration の更新
 

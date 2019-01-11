@@ -2,12 +2,13 @@
 title: windows10EnterpriseModernAppManagementConfiguration の作成
 description: 新しい windows10EnterpriseModernAppManagementConfiguration オブジェクトを作成します。
 author: tfitzmac
-ms.openlocfilehash: 83a3d6207858f1d879edd51d873dcc9970fd7c2c
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 4b0432726640c20c612e4747401d458738cb6732
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27321358"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27868930"
 ---
 # <a name="create-windows10enterprisemodernappmanagementconfiguration"></a>windows10EnterpriseModernAppManagementConfiguration の作成
 

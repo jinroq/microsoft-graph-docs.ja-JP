@@ -2,12 +2,13 @@
 title: Windows10NetworkBoundaryConfiguration を更新します。
 description: Windows10NetworkBoundaryConfiguration オブジェクトのプロパティを更新します。
 author: tfitzmac
-ms.openlocfilehash: 20a29a3bf5bcf439e1cc1bc18f85ad9e97df8201
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 5c0a3cdead3bfdaecc3f88965bf3b2cbc9b5cf27
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27361020"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27860131"
 ---
 # <a name="update-windows10networkboundaryconfiguration"></a>Windows10NetworkBoundaryConfiguration を更新します。
 

@@ -2,12 +2,13 @@
 title: AndroidWorkProfileCustomConfiguration を作成します。
 description: 新しい androidWorkProfileCustomConfiguration オブジェクトを作成します。
 author: tfitzmac
-ms.openlocfilehash: 4b33b75e66845652315b91ae70e393e8c76c7ce0
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 0d05aee835dfe98d78b3afc31e0ec2af0e7775be
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27353607"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27850814"
 ---
 # <a name="create-androidworkprofilecustomconfiguration"></a>AndroidWorkProfileCustomConfiguration を作成します。
 

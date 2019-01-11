@@ -2,12 +2,13 @@
 title: IntuneBrandingProfile を更新します。
 description: IntuneBrandingProfile オブジェクトのプロパティを更新します。
 author: tfitzmac
-ms.openlocfilehash: c4321b0197e30126c4d83371a31425af1d8e73bd
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 6408e2c5e3efc8dd989cb109a98756576b974967
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27309948"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27846656"
 ---
 # <a name="update-intunebrandingprofile"></a>IntuneBrandingProfile を更新します。
 

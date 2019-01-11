@@ -2,12 +2,13 @@
 title: UserPFXCertificate を更新します。
 description: UserPFXCertificate オブジェクトのプロパティを更新します。
 author: tfitzmac
-ms.openlocfilehash: 48f60d9a11942fee657eebb5c8bbf33e50d24fe9
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: e806450e5314cec7679a9d634edaff3cc501d911
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27347608"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27862210"
 ---
 # <a name="update-userpfxcertificate"></a>UserPFXCertificate を更新します。
 

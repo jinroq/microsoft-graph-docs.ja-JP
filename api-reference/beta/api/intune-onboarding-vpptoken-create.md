@@ -2,12 +2,13 @@
 title: Create vppToken
 description: 新規にvppToken オブジェクトを作成します。
 author: tfitzmac
-ms.openlocfilehash: ab4c4c061f7a527583768382f309ef8c9adcb709
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 015cb03b806d3cd4fc79f690c4ad5e1aa11a072a
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27353005"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27846922"
 ---
 # <a name="create-vpptoken"></a>Create vppToken
 

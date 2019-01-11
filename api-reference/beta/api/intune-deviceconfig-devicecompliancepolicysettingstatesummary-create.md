@@ -2,12 +2,13 @@
 title: deviceCompliancePolicySettingStateSummary の作成
 description: 新しい deviceCompliancePolicySettingStateSummary オブジェクトを作成します。
 author: tfitzmac
-ms.openlocfilehash: 9184e10a507b0f701b3ce9bb774725c05e82a929
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: f9f64cca9ca75ea8d823e7aa0adedad6d3527666
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27345557"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27832691"
 ---
 # <a name="create-devicecompliancepolicysettingstatesummary"></a>deviceCompliancePolicySettingStateSummary の作成
 

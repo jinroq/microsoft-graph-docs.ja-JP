@@ -2,12 +2,13 @@
 title: deviceComplianceSettingState の作成
 description: 新しい deviceComplianceSettingState オブジェクトを作成します。
 author: tfitzmac
-ms.openlocfilehash: ab149e492b133ae2d39805e6ef6e3b6f93e484e6
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 0ef4061f659429b4e43f40fd502caaad77ef0894
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27332894"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27868755"
 ---
 # <a name="create-devicecompliancesettingstate"></a>deviceComplianceSettingState の作成
 

@@ -1,12 +1,13 @@
 ---
 title: 'reportRoot: getOffice365GroupsActivityDetail'
 description: グループ別の Office 365 グループ アクティビティに関する詳細を取得します。
-ms.openlocfilehash: 18ff1ea1ee3bfc90cbf86bb4e99321198c583f06
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: aa17cb5a286280dddba8b3b40b4e4d1bd6c631e7
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27022885"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27837416"
 ---
 # <a name="reportroot-getoffice365groupsactivitydetail"></a>reportRoot: getOffice365GroupsActivityDetail
 
@@ -37,7 +38,7 @@ GET /reports/getOffice365GroupsActivityDetail(date={date_value})
 
 要求 URL に、次のうちの 1 つのパラメーターと有効な値を指定します。
 
-| パラメーター | 型   | 説明                              |
+| パラメーター | Type   | 説明                              |
 | :-------- | :----- | :--------------------------------------- |
 | period    | 文字列 | レポートを集計する期間の長さを指定します。 {period_value} でサポートされている値は D7、D30、D90、D180 です。 これらの値は、D*n* の形式 (*n* はレポートを集計する日数) に従います。 |
 | date      | 日付   | 何らかのアクティビティを実行したユーザーを表示する日付を指定します。 {date_value} は YYYY-MM-DD の形式にします。 このレポートは、過去 30 日間のみ利用可能であり、{date_value} はその範囲内の日付である必要があります。 |

@@ -1,12 +1,13 @@
 ---
 title: 写真を取得する
 description: 指定した profilePhoto またはそのメタデータ (profilePhoto プロパティ) を取得します。
-ms.openlocfilehash: 11411f3439cf0e85991bbac7d3ccf30ac535651c
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Priority
+ms.openlocfilehash: 6b1a3e54b1145cc2fdcf8ed9e587652d4d7061c8
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27020952"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27833951"
 ---
 # <a name="get-photo"></a>写真を取得する
 
@@ -71,7 +72,7 @@ GET /users/{id | userPrincipalName}/contactfolders/{contactFolderId}/contacts/{i
 
 ## <a name="path-parameters"></a>パス パラメーター
 
-|パラメーター|型|説明|
+|Parameter|Type|説明|
 |:-----|:-----|:-----|
 |size  |String  | 写真のサイズ。 Office 365 上でサポートされている HD Photo のサイズは次のとおりです: '48x48'、'64x64'、'96x96'、'120x120'、'240x240'、'360x360'、'432x432'、'504x504'、'648x648'。 写真が Azure Active Directory に格納されている場合は、サイズに関する制限はありません。 |
 
@@ -79,7 +80,7 @@ GET /users/{id | userPrincipalName}/contactfolders/{contactFolderId}/contacts/{i
 このメソッドは、応答をカスタマイズするための [OData クエリ パラメーター](https://developer.microsoft.com/graph/docs/concepts/query_parameters)をサポートします。
 
 ## <a name="request-headers"></a>要求ヘッダー
-| 名前       | 型 | 説明|
+| 名前       | 種類 | 説明|
 |:-----------|:------|:----------|
 | Authorization  | string  | ベアラー {トークン}。必須。 |
 

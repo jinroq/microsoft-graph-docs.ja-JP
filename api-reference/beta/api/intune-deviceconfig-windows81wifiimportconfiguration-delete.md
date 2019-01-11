@@ -2,12 +2,13 @@
 title: Windows81WifiImportConfiguration を削除します。
 description: Windows81WifiImportConfiguration を削除します。
 author: tfitzmac
-ms.openlocfilehash: 62b742ed30c22ef663a0dd21b28c757babef07d8
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 7be2320d10e053dc2dfe439bc34df024869fba08
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27342344"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27857849"
 ---
 # <a name="delete-windows81wifiimportconfiguration"></a>Windows81WifiImportConfiguration を削除します。
 

@@ -2,12 +2,13 @@
 title: AndroidManagedStoreAppConfiguration を更新します。
 description: AndroidManagedStoreAppConfiguration オブジェクトのプロパティを更新します。
 author: tfitzmac
-ms.openlocfilehash: a2643ac3f7ea23b500315a06505f5bb378ee0d58
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: d2dd800fdc1447f142b6864f92145ada957ccc5b
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27341259"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27859312"
 ---
 # <a name="update-androidmanagedstoreappconfiguration"></a>AndroidManagedStoreAppConfiguration を更新します。
 
