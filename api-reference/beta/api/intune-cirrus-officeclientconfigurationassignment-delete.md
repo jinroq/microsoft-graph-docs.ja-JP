@@ -2,30 +2,31 @@
 title: OfficeClientConfigurationAssignment を削除します。
 description: OfficeClientConfigurationAssignment を削除します。
 author: tfitzmac
-ms.openlocfilehash: 2125a736cdcaa5e5ab6623dd8802380b3ce602d8
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: c2ab631c6b7e864def9abafac183377294a22737
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27322310"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27808128"
 ---
-# <a name="delete-officeclientconfigurationassignment"></a><span data-ttu-id="e50e9-103">OfficeClientConfigurationAssignment を削除します。</span><span class="sxs-lookup"><span data-stu-id="e50e9-103">Delete officeClientConfigurationAssignment</span></span>
+# <a name="delete-officeclientconfigurationassignment"></a><span data-ttu-id="05269-103">OfficeClientConfigurationAssignment を削除します。</span><span class="sxs-lookup"><span data-stu-id="05269-103">Delete officeClientConfigurationAssignment</span></span>
 
-> <span data-ttu-id="e50e9-104">**重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。</span><span class="sxs-lookup"><span data-stu-id="e50e9-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="e50e9-105">実稼働アプリケーションでの、これらの API の使用はサポートされていません。</span><span class="sxs-lookup"><span data-stu-id="e50e9-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="05269-104">**重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。</span><span class="sxs-lookup"><span data-stu-id="05269-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="05269-105">実稼働アプリケーションでの、これらの API の使用はサポートされていません。</span><span class="sxs-lookup"><span data-stu-id="05269-105">Use of these APIs in production applications is not supported.</span></span>
 
-> <span data-ttu-id="e50e9-106">**注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。</span><span class="sxs-lookup"><span data-stu-id="e50e9-106">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
+> <span data-ttu-id="05269-106">**注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。</span><span class="sxs-lookup"><span data-stu-id="05269-106">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
 
-<span data-ttu-id="e50e9-107">の[officeClientConfigurationAssignment](../resources/intune-cirrus-officeclientconfigurationassignment.md)を削除します。</span><span class="sxs-lookup"><span data-stu-id="e50e9-107">Deletes a [officeClientConfigurationAssignment](../resources/intune-cirrus-officeclientconfigurationassignment.md).</span></span>
-## <a name="prerequisites"></a><span data-ttu-id="e50e9-108">前提条件</span><span class="sxs-lookup"><span data-stu-id="e50e9-108">Prerequisites</span></span>
-<span data-ttu-id="e50e9-p102">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="e50e9-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="05269-107">の[officeClientConfigurationAssignment](../resources/intune-cirrus-officeclientconfigurationassignment.md)を削除します。</span><span class="sxs-lookup"><span data-stu-id="05269-107">Deletes a [officeClientConfigurationAssignment](../resources/intune-cirrus-officeclientconfigurationassignment.md).</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="05269-108">前提条件</span><span class="sxs-lookup"><span data-stu-id="05269-108">Prerequisites</span></span>
+<span data-ttu-id="05269-p102">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="05269-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="e50e9-111">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="e50e9-111">Permission type</span></span>|<span data-ttu-id="e50e9-112">アクセス許可 (特権の大きいものから小さいものへ)</span><span class="sxs-lookup"><span data-stu-id="e50e9-112">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="05269-111">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="05269-111">Permission type</span></span>|<span data-ttu-id="05269-112">アクセス許可 (特権の大きいものから小さいものへ)</span><span class="sxs-lookup"><span data-stu-id="05269-112">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="e50e9-113">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="e50e9-113">Delegated (work or school account)</span></span>|<span data-ttu-id="e50e9-114">\* \* TODO: スコープを決定する \* \*</span><span class="sxs-lookup"><span data-stu-id="e50e9-114">\*\*TODO: Determine scopes \*\*</span></span>|
-|<span data-ttu-id="e50e9-115">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="e50e9-115">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="e50e9-116">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="e50e9-116">Not supported.</span></span>|
-|<span data-ttu-id="e50e9-117">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="e50e9-117">Application</span></span>|<span data-ttu-id="e50e9-118">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="e50e9-118">Not supported.</span></span>|
+|<span data-ttu-id="05269-113">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="05269-113">Delegated (work or school account)</span></span>|<span data-ttu-id="05269-114">\* \* TODO: スコープを決定する \* \*</span><span class="sxs-lookup"><span data-stu-id="05269-114">\*\*TODO: Determine scopes \*\*</span></span>|
+|<span data-ttu-id="05269-115">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="05269-115">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="05269-116">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="05269-116">Not supported.</span></span>|
+|<span data-ttu-id="05269-117">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="05269-117">Application</span></span>|<span data-ttu-id="05269-118">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="05269-118">Not supported.</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="e50e9-119">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="e50e9-119">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="05269-119">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="05269-119">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -34,27 +35,27 @@ ms.locfileid: "27322310"
 DELETE /officeConfiguration/clientConfigurations/{officeClientConfigurationId}/assignments/{officeClientConfigurationAssignmentId}
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="e50e9-120">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="e50e9-120">Request headers</span></span>
-|<span data-ttu-id="e50e9-121">ヘッダー</span><span class="sxs-lookup"><span data-stu-id="e50e9-121">Header</span></span>|<span data-ttu-id="e50e9-122">値</span><span class="sxs-lookup"><span data-stu-id="e50e9-122">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="05269-120">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="05269-120">Request headers</span></span>
+|<span data-ttu-id="05269-121">ヘッダー</span><span class="sxs-lookup"><span data-stu-id="05269-121">Header</span></span>|<span data-ttu-id="05269-122">値</span><span class="sxs-lookup"><span data-stu-id="05269-122">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="e50e9-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="e50e9-123">Authorization</span></span>|<span data-ttu-id="e50e9-124">ベアラー &lt;トークン&gt; が必須。</span><span class="sxs-lookup"><span data-stu-id="e50e9-124">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="e50e9-125">Accept</span><span class="sxs-lookup"><span data-stu-id="e50e9-125">Accept</span></span>|<span data-ttu-id="e50e9-126">application/json</span><span class="sxs-lookup"><span data-stu-id="e50e9-126">application/json</span></span>|
+|<span data-ttu-id="05269-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="05269-123">Authorization</span></span>|<span data-ttu-id="05269-124">ベアラー &lt;トークン&gt; が必須。</span><span class="sxs-lookup"><span data-stu-id="05269-124">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="05269-125">Accept</span><span class="sxs-lookup"><span data-stu-id="05269-125">Accept</span></span>|<span data-ttu-id="05269-126">application/json</span><span class="sxs-lookup"><span data-stu-id="05269-126">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="e50e9-127">要求本文</span><span class="sxs-lookup"><span data-stu-id="e50e9-127">Request body</span></span>
-<span data-ttu-id="e50e9-128">このメソッドには、要求本文を指定しません。</span><span class="sxs-lookup"><span data-stu-id="e50e9-128">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="05269-127">要求本文</span><span class="sxs-lookup"><span data-stu-id="05269-127">Request body</span></span>
+<span data-ttu-id="05269-128">このメソッドには、要求本文を指定しません。</span><span class="sxs-lookup"><span data-stu-id="05269-128">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="e50e9-129">応答</span><span class="sxs-lookup"><span data-stu-id="e50e9-129">Response</span></span>
-<span data-ttu-id="e50e9-130">成功した場合、このメソッドは `204 No Content` 応答コードを返します。</span><span class="sxs-lookup"><span data-stu-id="e50e9-130">If successful, this method returns a `204 No Content` response code.</span></span>
+## <a name="response"></a><span data-ttu-id="05269-129">応答</span><span class="sxs-lookup"><span data-stu-id="05269-129">Response</span></span>
+<span data-ttu-id="05269-130">成功した場合、このメソッドは `204 No Content` 応答コードを返します。</span><span class="sxs-lookup"><span data-stu-id="05269-130">If successful, this method returns a `204 No Content` response code.</span></span>
 
-## <a name="example"></a><span data-ttu-id="e50e9-131">例</span><span class="sxs-lookup"><span data-stu-id="e50e9-131">Example</span></span>
-### <a name="request"></a><span data-ttu-id="e50e9-132">要求</span><span class="sxs-lookup"><span data-stu-id="e50e9-132">Request</span></span>
-<span data-ttu-id="e50e9-133">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="e50e9-133">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="05269-131">例</span><span class="sxs-lookup"><span data-stu-id="05269-131">Example</span></span>
+### <a name="request"></a><span data-ttu-id="05269-132">要求</span><span class="sxs-lookup"><span data-stu-id="05269-132">Request</span></span>
+<span data-ttu-id="05269-133">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="05269-133">Here is an example of the request.</span></span>
 ``` http
 DELETE https://graph.microsoft.com/beta/officeConfiguration/clientConfigurations/{officeClientConfigurationId}/assignments/{officeClientConfigurationAssignmentId}
 ```
 
-### <a name="response"></a><span data-ttu-id="e50e9-134">応答</span><span class="sxs-lookup"><span data-stu-id="e50e9-134">Response</span></span>
-<span data-ttu-id="e50e9-p103">以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。</span><span class="sxs-lookup"><span data-stu-id="e50e9-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="05269-134">応答</span><span class="sxs-lookup"><span data-stu-id="05269-134">Response</span></span>
+<span data-ttu-id="05269-p103">以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。</span><span class="sxs-lookup"><span data-stu-id="05269-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 204 No Content
 ```
