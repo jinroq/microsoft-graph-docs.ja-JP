@@ -1,52 +1,53 @@
 ---
 title: メッセージを一覧表示する
 description: サインインしているユーザーのメールボックス内のすべてのメッセージまたはメールボックスまたはドライブに指定したフォルダー内のこれらのメッセージの一覧を表示します。
-ms.openlocfilehash: 8ecbe3df28169ba10deff3369a26cedc78dd3e8b
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: d35489a45e84fdba484e721989900217b23eb08c
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27069072"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27849890"
 ---
-# <a name="list-messages"></a><span data-ttu-id="1818a-103">メッセージを一覧表示する</span><span class="sxs-lookup"><span data-stu-id="1818a-103">List messages</span></span>
+# <a name="list-messages"></a><span data-ttu-id="b2168-103">メッセージを一覧表示する</span><span class="sxs-lookup"><span data-stu-id="b2168-103">List messages</span></span>
 
-> <span data-ttu-id="1818a-104">**重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。</span><span class="sxs-lookup"><span data-stu-id="1818a-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="1818a-105">実稼働アプリケーションでの、これらの API の使用はサポートされていません。</span><span class="sxs-lookup"><span data-stu-id="1818a-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="b2168-104">**重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。</span><span class="sxs-lookup"><span data-stu-id="b2168-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="b2168-105">実稼働アプリケーションでの、これらの API の使用はサポートされていません。</span><span class="sxs-lookup"><span data-stu-id="b2168-105">Use of these APIs in production applications is not supported.</span></span>
 
-<span data-ttu-id="1818a-106">サインインしているユーザーのメールボックス内のすべてのメッセージまたはメールボックスまたはドライブに指定したフォルダー内のこれらのメッセージの一覧を表示します。</span><span class="sxs-lookup"><span data-stu-id="1818a-106">List all the messages in the signed-in user's mailbox, or those messages in a specified folder in the mailbox or drive.</span></span>
+<span data-ttu-id="b2168-106">サインインしているユーザーのメールボックス内のすべてのメッセージまたはメールボックスまたはドライブに指定したフォルダー内のこれらのメッセージの一覧を表示します。</span><span class="sxs-lookup"><span data-stu-id="b2168-106">List all the messages in the signed-in user's mailbox, or those messages in a specified folder in the mailbox or drive.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="1818a-107">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="1818a-107">Permissions</span></span>
-<span data-ttu-id="1818a-p102">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="1818a-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="b2168-107">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="b2168-107">Permissions</span></span>
+<span data-ttu-id="b2168-p102">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="b2168-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="1818a-110">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="1818a-110">Permission type</span></span>      | <span data-ttu-id="1818a-111">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="1818a-111">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="b2168-110">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="b2168-110">Permission type</span></span>      | <span data-ttu-id="b2168-111">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="b2168-111">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="1818a-112">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="1818a-112">Delegated (work or school account)</span></span> | <span data-ttu-id="1818a-113">Mail.Read、Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="1818a-113">Mail.Read, Mail.ReadWrite</span></span>    |
-|<span data-ttu-id="1818a-114">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="1818a-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="1818a-115">Mail.Read、Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="1818a-115">Mail.Read, Mail.ReadWrite</span></span>    |
-|<span data-ttu-id="1818a-116">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="1818a-116">Application</span></span> | <span data-ttu-id="1818a-117">Mail.Read、Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="1818a-117">Mail.Read, Mail.ReadWrite</span></span> |
+|<span data-ttu-id="b2168-112">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="b2168-112">Delegated (work or school account)</span></span> | <span data-ttu-id="b2168-113">Mail.Read、Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="b2168-113">Mail.Read, Mail.ReadWrite</span></span>    |
+|<span data-ttu-id="b2168-114">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="b2168-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="b2168-115">Mail.Read、Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="b2168-115">Mail.Read, Mail.ReadWrite</span></span>    |
+|<span data-ttu-id="b2168-116">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="b2168-116">Application</span></span> | <span data-ttu-id="b2168-117">Mail.Read、Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="b2168-117">Mail.Read, Mail.ReadWrite</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="1818a-118">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="1818a-118">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="b2168-118">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="b2168-118">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/mailFolders/{id}/messages
 GET /users/{id | userPrincipalName}/mailFolders/{id}/messages
 ```
 
-## <a name="optional-query-parameters"></a><span data-ttu-id="1818a-119">オプションのクエリ パラメーター</span><span class="sxs-lookup"><span data-stu-id="1818a-119">Optional query parameters</span></span>
-<span data-ttu-id="1818a-120">このメソッドは、応答をカスタマイズするための [OData クエリ パラメーター](/graph/query-parameters)をサポートします。</span><span class="sxs-lookup"><span data-stu-id="1818a-120">This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="b2168-119">オプションのクエリ パラメーター</span><span class="sxs-lookup"><span data-stu-id="b2168-119">Optional query parameters</span></span>
+<span data-ttu-id="b2168-120">このメソッドは、応答をカスタマイズするための [OData クエリ パラメーター](/graph/query-parameters)をサポートします。</span><span class="sxs-lookup"><span data-stu-id="b2168-120">This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="1818a-121">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="1818a-121">Request headers</span></span>
-| <span data-ttu-id="1818a-122">名前</span><span class="sxs-lookup"><span data-stu-id="1818a-122">Name</span></span>       | <span data-ttu-id="1818a-123">型</span><span class="sxs-lookup"><span data-stu-id="1818a-123">Type</span></span> | <span data-ttu-id="1818a-124">説明</span><span class="sxs-lookup"><span data-stu-id="1818a-124">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="b2168-121">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="b2168-121">Request headers</span></span>
+| <span data-ttu-id="b2168-122">名前</span><span class="sxs-lookup"><span data-stu-id="b2168-122">Name</span></span>       | <span data-ttu-id="b2168-123">種類</span><span class="sxs-lookup"><span data-stu-id="b2168-123">Type</span></span> | <span data-ttu-id="b2168-124">説明</span><span class="sxs-lookup"><span data-stu-id="b2168-124">Description</span></span>|
 |:-----------|:------|:----------|
-| <span data-ttu-id="1818a-125">Authorization</span><span class="sxs-lookup"><span data-stu-id="1818a-125">Authorization</span></span>  | <span data-ttu-id="1818a-126">string</span><span class="sxs-lookup"><span data-stu-id="1818a-126">string</span></span>  | <span data-ttu-id="1818a-p103">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="1818a-p103">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="b2168-125">Authorization</span><span class="sxs-lookup"><span data-stu-id="b2168-125">Authorization</span></span>  | <span data-ttu-id="b2168-126">string</span><span class="sxs-lookup"><span data-stu-id="b2168-126">string</span></span>  | <span data-ttu-id="b2168-p103">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="b2168-p103">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="1818a-129">要求本文</span><span class="sxs-lookup"><span data-stu-id="1818a-129">Request body</span></span>
-<span data-ttu-id="1818a-130">このメソッドには、要求本文を指定しません。</span><span class="sxs-lookup"><span data-stu-id="1818a-130">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="b2168-129">要求本文</span><span class="sxs-lookup"><span data-stu-id="b2168-129">Request body</span></span>
+<span data-ttu-id="b2168-130">このメソッドには、要求本文を指定しません。</span><span class="sxs-lookup"><span data-stu-id="b2168-130">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="1818a-131">応答</span><span class="sxs-lookup"><span data-stu-id="1818a-131">Response</span></span>
-<span data-ttu-id="1818a-132">成功した場合、このメソッドは `200 OK` 応答コードと、応答本文で [Message](../resources/message.md) オブジェクトのコレクションを返します。</span><span class="sxs-lookup"><span data-stu-id="1818a-132">If successful, this method returns a `200 OK` response code and collection of [Message](../resources/message.md) objects in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="b2168-131">応答</span><span class="sxs-lookup"><span data-stu-id="b2168-131">Response</span></span>
+<span data-ttu-id="b2168-132">成功した場合、このメソッドは `200 OK` 応答コードと、応答本文で [Message](../resources/message.md) オブジェクトのコレクションを返します。</span><span class="sxs-lookup"><span data-stu-id="b2168-132">If successful, this method returns a `200 OK` response code and collection of [Message](../resources/message.md) objects in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="1818a-133">例</span><span class="sxs-lookup"><span data-stu-id="1818a-133">Example</span></span>
-#### <a name="request"></a><span data-ttu-id="1818a-134">要求</span><span class="sxs-lookup"><span data-stu-id="1818a-134">Request</span></span>
-<span data-ttu-id="1818a-135">要求の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="1818a-135">The following is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="b2168-133">例</span><span class="sxs-lookup"><span data-stu-id="b2168-133">Example</span></span>
+#### <a name="request"></a><span data-ttu-id="b2168-134">要求</span><span class="sxs-lookup"><span data-stu-id="b2168-134">Request</span></span>
+<span data-ttu-id="b2168-135">要求の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="b2168-135">The following is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "get_messages"
@@ -55,9 +56,9 @@ GET /users/{id | userPrincipalName}/mailFolders/{id}/messages
 GET https://graph.microsoft.com/beta/me/mailFolders/AAMkAGVmMDEzM/messages
 ```
 
-#### <a name="response"></a><span data-ttu-id="1818a-136">応答</span><span class="sxs-lookup"><span data-stu-id="1818a-136">Response</span></span>
-<span data-ttu-id="1818a-137">応答の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="1818a-137">The following is an example of the response.</span></span>
-><span data-ttu-id="1818a-138">**注:** ここに示す応答オブジェクトは、読みやすさの短縮される可能性があります。</span><span class="sxs-lookup"><span data-stu-id="1818a-138">**Note:** The response object shown here might be shortened for readability.</span></span> <span data-ttu-id="1818a-139">実際の呼び出しではすべてのプロパティが返されます。</span><span class="sxs-lookup"><span data-stu-id="1818a-139">All the properties will be returned from an actual call.</span></span>
+#### <a name="response"></a><span data-ttu-id="b2168-136">応答</span><span class="sxs-lookup"><span data-stu-id="b2168-136">Response</span></span>
+<span data-ttu-id="b2168-137">応答の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="b2168-137">The following is an example of the response.</span></span>
+><span data-ttu-id="b2168-138">**注:** ここに示す応答オブジェクトは、読みやすさの短縮される可能性があります。</span><span class="sxs-lookup"><span data-stu-id="b2168-138">**Note:** The response object shown here might be shortened for readability.</span></span> <span data-ttu-id="b2168-139">実際の呼び出しではすべてのプロパティが返されます。</span><span class="sxs-lookup"><span data-stu-id="b2168-139">All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",
