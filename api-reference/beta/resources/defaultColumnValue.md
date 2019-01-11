@@ -3,12 +3,13 @@ author: daspek
 ms.author: dspektor
 ms.date: 09/12/2017
 title: DefaultColumnValue
-ms.openlocfilehash: 3a486b6cc90dffb75343390102ecb3b17576e6fb
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 6ceca45d09654771f161db63707682a4558b0d29
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27070793"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27815548"
 ---
 # <a name="defaultcolumnvalue-resource-type"></a>DefaultColumnValue リソースの種類
 
@@ -31,7 +32,7 @@ ms.locfileid: "27070793"
 
 ## <a name="properties"></a>プロパティ
 
-| プロパティ名 | 型   | 説明
+| プロパティ名 | Type   | 説明
 |:--------------|:-------|:----------------------------------------------------
 | **formula**   | 文字列 | この列の既定値を計算するために使用する数式。
 | **value**     | 文字列 | この列の既定値として使用する直接値。

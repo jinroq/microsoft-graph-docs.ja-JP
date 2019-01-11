@@ -1,12 +1,13 @@
 ---
 title: グループの一覧表示
 description: Office 365 のグループを含み、それに限定されない組織で使用可能なすべてのグループを一覧表示します。
-ms.openlocfilehash: 2b46891a7570a831cd1b38ae29915e59475e8540
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Priority
+ms.openlocfilehash: dd243d1f07b98564bb5aa4751664337c0f0654cc
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27066700"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27813273"
 ---
 # <a name="list-groups"></a>グループを一覧表示する
 
@@ -48,7 +49,7 @@ GET /groups
 このメソッドは、応答をカスタマイズするための [OData クエリ パラメーター](/graph/query-parameters)をサポートします。
 
 ## <a name="request-headers"></a>要求ヘッダー
-| 名前       | 型 | 説明|
+| 名前       | 種類 | 説明|
 |:-----------|:------|:----------|
 | Authorization  | string  | ベアラー {トークン}。必須。 |
 

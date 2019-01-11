@@ -1,12 +1,13 @@
 ---
 title: targetResourcePolicy リソースの種類
 description: '監査活動によって影響を与えたのポリシーを示します。 TargetResource リソースから派生します。   '
-ms.openlocfilehash: 20486c535d0df4b3745f5cfc3414b320a9374075
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 355e6ac11741a2aa7aeb780bdac4b7be373092af
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27071756"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27813140"
 ---
 # <a name="targetresourcepolicy-resource-type"></a>targetResourcePolicy リソースの種類
 監査活動によって影響を与えたのポリシーを示します。 [TargetResource](targetresource.md)リソースから派生します。   
@@ -14,7 +15,7 @@ ms.locfileid: "27071756"
 
 
 ## <a name="properties"></a>プロパティ
-| プロパティ     | 型   |説明|
+| プロパティ     | 種類   |説明|
 |:---------------|:--------|:----------|
 |policyType|String|ポリシーの名前を変更したり、変更の対象にされたことを示します|
 

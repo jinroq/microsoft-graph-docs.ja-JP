@@ -1,12 +1,13 @@
 ---
 title: 'グループ: subscribeByMail'
 description: このメソッドを呼び出すと、そのグループ内のこのグループは、新規投稿、イベント、およびファイルに関する電子メール通知を受信する現在のユーザーが有効になります。 Office 365 のグループのみをサポートします。
-ms.openlocfilehash: 3e43f3805974fa518bf006682e8dd1f211e20417
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 5cbb5d461f5e3cc71790f6546c6ebf638ffa31d7
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27073100"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27813168"
 ---
 # <a name="group-subscribebymail"></a>グループ: subscribeByMail
 

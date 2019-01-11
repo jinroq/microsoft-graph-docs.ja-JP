@@ -2,12 +2,13 @@
 title: AzureADWindowsAutopilotDeploymentProfile を作成します。
 description: 新しい azureADWindowsAutopilotDeploymentProfile オブジェクトを作成します。
 author: tfitzmac
-ms.openlocfilehash: 09e103a1c06ae70d305ca206e1f1387001f22659
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 60a1b3a2718a3c7f14e7fe58cc3a1e5cd6bb71ac
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27323962"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27812342"
 ---
 # <a name="create-azureadwindowsautopilotdeploymentprofile"></a>AzureADWindowsAutopilotDeploymentProfile を作成します。
 

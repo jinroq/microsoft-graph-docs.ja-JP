@@ -1,12 +1,13 @@
 ---
 title: コントラクト リソース型
 description: パートナー テナントがカスタマー テナントとの間で持つ、既存のパートナーシップを表します。
-ms.openlocfilehash: 7465a54c735b7c1e6f9d5ecb8bf79420b8de45c3
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: e502c72003c6d65305430bc1bf5a539d7235b5ef
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27073674"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27815324"
 ---
 # <a name="contract-resource-type"></a>コントラクト リソース型
 
@@ -24,7 +25,7 @@ ms.locfileid: "27073674"
 |[コントラクトを一覧表示する](../api/contract-list.md) | コントラクト コレクション | パートナー テナントのコントラクトの一覧です。 |
 
 ## <a name="properties"></a>プロパティ
-| プロパティ   | 型 | 説明 |
+| プロパティ   | 種類 | 説明 |
 |:---------------|:--------|:----------|
 |contractType|String|コントラクトの型。<br><br>使用可能な値は次のとおりです。<br> *SyndicationPartner* - この顧客に対し O365 と Intune を排他的に再販し管理するパートナーです。再販し、顧客をサポートします。<br> *BreadthPartner* - この顧客に対し管理上のサポートを提供する能力を備えたパートナーです。ただし、パートナーが顧客に再販売することは許されていません。<br>*ResellerPartner* - シンジケーション パートナーに類似していますが、テナントへの排他的アクセスを持たないパートナーです。シンジケーションの場合、顧客は Microsoft またはその他のパートナーから直接に追加のサブスクリプションを購入することはできません。|
 |customerId|Guid|このパートナーシップによって参照されるカスタマー テナントの一意識別子です。カスタマー テナントの組織リソースの ID プロパティに対応します。 |

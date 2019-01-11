@@ -2,12 +2,13 @@
 title: Win32LobApp を取得します。
 description: Win32LobApp オブジェクトのプロパティと関係を参照してください。
 author: tfitzmac
-ms.openlocfilehash: f4ca14ac3205cd4ede825e8817260b815606cf59
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 6f9dc2e655d4c5bcf28840365e8ef26681518ad1
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27310725"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27813728"
 ---
 # <a name="get-win32lobapp"></a>Win32LobApp を取得します。
 

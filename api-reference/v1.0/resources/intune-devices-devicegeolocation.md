@@ -2,12 +2,13 @@
 title: deviceGeoLocation リソースの種類
 description: デバイスの場所
 author: tfitzmac
-ms.openlocfilehash: fe8ffe7684132c9871225747a28905da1983672d
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 68e89b2e63b99324332874a3ad6a2f2e3c335832
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27336996"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27816129"
 ---
 # <a name="devicegeolocation-resource-type"></a>deviceGeoLocation リソースの種類
 

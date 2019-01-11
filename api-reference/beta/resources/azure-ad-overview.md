@@ -1,12 +1,13 @@
 ---
 title: Microsoft Graph での Azure Active Directory リソースの使用
 description: Azure Active Directory (AD の Azure) のグラフは、組織、リソース、および資産を管理するための REST Api を提供します。
-ms.openlocfilehash: 85f44df36057220e4ea26eb8d9342e9fd1df5bb6
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Priority
+ms.openlocfilehash: ac4b927a8420cbf8d654dd7f02ca2c232f717296
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27305384"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27813623"
 ---
 # <a name="working-with-azure-active-directory-resources-in-microsoft-graph"></a>Microsoft Graph での Azure Active Directory リソースの使用
 
@@ -44,7 +45,7 @@ Azure AD リソースに Microsoft Graph API を呼び出すには、アプリ�
 | **デバイスを管理する** | | |
 | 組織に登録されているデバイスを管理します。デバイスはユーザーに登録されており、ノート PC、デスクトップ、タブレット、携帯電話などのアイテムを含みます。デバイスは通常、Device Registration Service を使用するか、Microsoft Intune によって、クラウドで作成されます。これは、多要素認証の条件付きアクセス ポリシーで使用されます。 | [device](../resources/device.md) | [Azure Active Directory のデバイスの登録の概要](https://docs.microsoft.com/azure/active-directory/active-directory-device-registration-overview)<br/><br/>[InTune とは](https://docs.microsoft.com/intune-classic/understand-explore/introduction-to-microsoft-intune)<br/><br/>[Intune における管理用にデバイスを登録する](https://docs.microsoft.com/intune-classic/deploy-use/enroll-devices-in-microsoft-intune) |
 | **アプリケーションの管理** | | |
-| 開発者のテナントにアプリケーションの構成を管理します。 | [application](../resources/application.md) | [アプリケーションと Azure Active Directory 内のサービス プリンシパル オブジェクト](https://docs.microsoft.com/azure/active-directory/develop/active-directory-application-objects) |
+| 開発者のテナントにアプリケーションの構成を管理します。 | [アプリケーション](../resources/application.md) | [アプリケーションと Azure Active Directory 内のサービス プリンシパル オブジェクト](https://docs.microsoft.com/azure/active-directory/develop/active-directory-application-objects) |
 | テナントにインストールされているアプリケーションを管理します。 | [servicePrinicpal](../resources/serviceprincipal.md) | [アプリケーションと Azure Active Directory 内のサービス プリンシパル オブジェクト](https://docs.microsoft.com/azure/active-directory/develop/active-directory-application-objects) |
 | アクセス許可を管理するユーザーとテナントにインストールされているアプリケーションの管理者が同意しました。 | [oAuth2PermissionGrant](../resources/oauth2permissiongrant.md) | N/A |
 | ユーザー、グループ、およびテナントにインストールされているアプリケーションのサービス プリンシパル ロールのメンバーシップを管理します。 | [appRoleAssignment](../resources/approleassignment.md) | N/A |

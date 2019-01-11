@@ -2,12 +2,13 @@
 title: '呼び出す: ミュート'
 description: 自体を消すには、アプリケーションを使用できます。
 author: VinodRavichandran
-ms.openlocfilehash: dc1baddb65521f4874f108dd28c7e9ec7b778a25
-ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
+localization_priority: Normal
+ms.openlocfilehash: 603c0d49f47291ec5050cd08dfbb0cc0faa2bc0e
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "27380170"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27813441"
 ---
 # <a name="call-mute"></a>呼び出す: ミュート
 
@@ -39,7 +40,7 @@ POST /applications/{id}/calls/{id}/mute
 ## <a name="request-body"></a>要求本文
 要求本文で、次のパラメーターを含む JSON オブジェクトを指定します。
 
-| パラメーター      | 型    |説明|
+| パラメーター      | Type    |説明|
 |:---------------|:--------|:----------|
 |clientContext|String|クライアントのコンテキスト。|
 

@@ -2,12 +2,13 @@
 title: deviceComplianceActionItems のリスト
 description: deviceComplianceActionItem オブジェクトのプロパティとリレーションシップをリストします。
 author: tfitzmac
-ms.openlocfilehash: 78aedc180f793938db86c7faa3595052371233a1
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: d3ec9b512fb48114cb58920d109ded1dba13dc77
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27342316"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27813616"
 ---
 # <a name="list-devicecomplianceactionitems"></a>deviceComplianceActionItems のリスト
 

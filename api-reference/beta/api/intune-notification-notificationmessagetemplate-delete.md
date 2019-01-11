@@ -2,12 +2,13 @@
 title: Delete notificationMessageTemplate
 description: notificationMessageTemplate を削除します。
 author: tfitzmac
-ms.openlocfilehash: a9a8a2e8667a854119f31fc4772e91ef0290317e
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 6d40b936678cb6fd8eeaa05ab3136f27731e943c
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27362007"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27816409"
 ---
 # <a name="delete-notificationmessagetemplate"></a>Delete notificationMessageTemplate
 

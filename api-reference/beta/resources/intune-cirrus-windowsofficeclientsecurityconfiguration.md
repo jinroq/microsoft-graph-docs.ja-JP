@@ -2,12 +2,13 @@
 title: windowsOfficeClientSecurityConfiguration リソースの種類
 description: まだ文書化されていません
 author: tfitzmac
-ms.openlocfilehash: 51c07fa58e392523940687dd178dd2aebe94f327
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: b8ade947f562b0b3839afb36c04c1740fc502f07
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27318838"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27815128"
 ---
 # <a name="windowsofficeclientsecurityconfiguration-resource-type"></a>windowsOfficeClientSecurityConfiguration リソースの種類
 
@@ -28,7 +29,7 @@ ms.locfileid: "27318838"
 |[WindowsOfficeClientSecurityConfiguration を削除します。](../api/intune-cirrus-windowsofficeclientsecurityconfiguration-delete.md)|なし|の[windowsOfficeClientSecurityConfiguration](../resources/intune-cirrus-windowsofficeclientsecurityconfiguration.md)を削除します。|
 |[WindowsOfficeClientSecurityConfiguration を更新します。](../api/intune-cirrus-windowsofficeclientsecurityconfiguration-update.md)|[windowsOfficeClientSecurityConfiguration](../resources/intune-cirrus-windowsofficeclientsecurityconfiguration.md)|[WindowsOfficeClientSecurityConfiguration](../resources/intune-cirrus-windowsofficeclientsecurityconfiguration.md)オブジェクトのプロパティを更新します。|
 
-## <a name="properties"></a>Properties
+## <a name="properties"></a>プロパティ
 |プロパティ|種類|説明|
 |:---|:---|:---|
 |ID|String|Office クライアントの構成のポリシーの id。 [OfficeClientConfiguration](../resources/intune-cirrus-officeclientconfiguration.md)から継承されました。|

@@ -1,25 +1,26 @@
 ---
 title: yammerActivityUserDetail リソースの種類
 description: リソースの JSON 表記を次に示します。
-ms.openlocfilehash: a1ca33efe8327b1c1e52de25714df9c0bd45ee05
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: d7869869466dc785b92db23f8b574eb2e77dd786
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27072466"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27816402"
 ---
 # <a name="yammeractivityuserdetail-resource-type"></a>yammerActivityUserDetail リソースの種類
 
 ## <a name="properties"></a>プロパティ
 
-| プロパティ          | 型              |
+| プロパティ          | 種類              |
 | :---------------- | :---------------- |
-| reportRefreshDate | Date              |
+| reportRefreshDate | 日付              |
 | userPrincipalName | String            |
 | displayName       | String            |
 | userState         | String            |
-| stateChangeDate   | Date              |
-| lastActivityDate  | Date              |
+| stateChangeDate   | 日付              |
+| lastActivityDate  | 日付              |
 | postedCount       | Int64             |
 | readCount         | Int64             |
 | likedCount        | Int64             |

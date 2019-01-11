@@ -2,12 +2,13 @@
 title: '電話: updateMetadata'
 description: 呼び出しに関連付けられているアプリケーションのメタデータを更新します。
 author: VinodRavichandran
-ms.openlocfilehash: b81b41b827aee17fbc2ebed2dee56c15c5376a88
-ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
+localization_priority: Normal
+ms.openlocfilehash: 2b736c56a7a517f0b68d656ab96933a34cf4a09d
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "27380542"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27813588"
 ---
 # <a name="call-updatemetadata"></a>電話: updateMetadata
 
@@ -39,7 +40,7 @@ POST /applications/{id}/calls/{id}/updateMetadata
 ## <a name="request-body"></a>要求本文
 要求本文で、次のパラメーターを含む JSON オブジェクトを指定します。
 
-| パラメーター      | 型    |説明|
+| パラメーター      | Type    |説明|
 |:---------------|:--------|:----------|
 |metadata|String|名簿にある参加者が提供するデータの blob です。|
 |clientContext|String|クライアントのコンテキスト。|

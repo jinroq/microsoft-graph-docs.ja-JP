@@ -2,12 +2,13 @@
 title: ルールを取得する
 description: messageRule オブジェクトのプロパティとリレーションシップを取得します。
 author: angelgolfer-ms
-ms.openlocfilehash: cd89c8f3c287ba4df18a2ff42462ed8ef6aa48b8
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: cfc934ffccb5dd4462f7cf51c318bef198d952dd
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27314512"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27814106"
 ---
 # <a name="get-rule"></a>ルールを取得する
 

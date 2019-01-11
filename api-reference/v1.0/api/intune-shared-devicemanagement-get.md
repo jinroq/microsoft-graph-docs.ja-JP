@@ -2,12 +2,13 @@
 title: deviceManagement の取得
 description: deviceManagement オブジェクトのプロパティとリレーションシップを読み取ります。
 author: tfitzmac
-ms.openlocfilehash: 65b13da27c16d6b4d9976eb2f7d0d326dfd872c0
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 89156113d0b357bc0d7a76cadad8c2ab7e2e4b91
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27334341"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27816269"
 ---
 # <a name="get-devicemanagement"></a>deviceManagement の取得
 

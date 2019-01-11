@@ -2,12 +2,13 @@
 title: リスト defaultDeviceCompliancePolicies
 description: DefaultDeviceCompliancePolicy オブジェクトのプロパティと関係を一覧表示します。
 author: tfitzmac
-ms.openlocfilehash: da41612b61383545d6b7e162633406e26ea40547
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 00dd404b9f768efda9b7a153bb11f39057571493
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27329926"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27813791"
 ---
 # <a name="list-defaultdevicecompliancepolicies"></a>リスト defaultDeviceCompliancePolicies
 

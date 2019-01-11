@@ -2,12 +2,13 @@
 title: androidStoreApp の作成
 description: 新しい androidStoreApp オブジェクトを作成します。
 author: tfitzmac
-ms.openlocfilehash: 3a28a00433d6a5cda83892efcc12284f7c10480a
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 73513177a83734618c01e9bd03282f1e20f9efa7
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27358668"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27814589"
 ---
 # <a name="create-androidstoreapp"></a>androidStoreApp の作成
 

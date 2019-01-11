@@ -2,12 +2,13 @@
 title: DataSharingConsent を更新します。
 description: DataSharingConsent オブジェクトのプロパティを更新します。
 author: tfitzmac
-ms.openlocfilehash: 1d7759def9c11165fca0b646f166ac792c14369e
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 8e2486b6d1900369bae17853be399eccb4fe8740
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27317634"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27816437"
 ---
 # <a name="update-datasharingconsent"></a>DataSharingConsent を更新します。
 

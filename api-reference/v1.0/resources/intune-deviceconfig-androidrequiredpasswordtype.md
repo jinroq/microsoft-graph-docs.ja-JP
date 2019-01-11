@@ -2,12 +2,13 @@
 title: androidRequiredPasswordType 列挙型
 description: Android では、パスワード入力が必要です。
 author: tfitzmac
-ms.openlocfilehash: e9b757dc86bf71462f7f987cedfcd9e04497880e
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 06a89256920f143af923e6a3949e61843fa7aa00
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27349218"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27814421"
 ---
 # <a name="androidrequiredpasswordtype-enum-type"></a>androidRequiredPasswordType 列挙型
 

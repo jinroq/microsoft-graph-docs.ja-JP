@@ -1,12 +1,13 @@
 ---
 title: IdentityProvider を取得します。
 description: 既存の identityProvider のプロパティを取得します。
-ms.openlocfilehash: 238e222c820e62685fa7c9e7ca50f5efb33693cf
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: f0d467bde092f84d092dbcee7c54c01e3ef849f7
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27069488"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27812972"
 ---
 # <a name="get-identityprovider"></a>IdentityProvider を取得します。
 
@@ -47,7 +48,7 @@ GET /identityProviders/{id}
 
 かどうかは成功すると、このメソッドを返します`200 OK`応答コードおよび応答の本文に[identityProvider](../resources/identityprovider.md)の JSON 形式です。
 
-## <a name="example"></a>使用例
+## <a name="example"></a>例
 
 次の例では、特定の**identityProvider**を取得します。
 

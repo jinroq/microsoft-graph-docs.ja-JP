@@ -2,12 +2,13 @@
 title: callRoute リソースの種類
 description: CallRoute 型です。
 author: VinodRavichandran
-ms.openlocfilehash: 9538fb8f27f60e869c19edc7bd19d7f6b29e8fff
-ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
+localization_priority: Normal
+ms.openlocfilehash: e417a7e814b5a2a80da1fa9cd7a551f82e0c37db
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "27380157"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27815086"
 ---
 # <a name="callroute-resource-type"></a>callRoute リソースの種類
 
@@ -17,7 +18,7 @@ CallRoute 型です。
 
 ## <a name="properties"></a>プロパティ
 
-| プロパティ            | 型                          | 説明                                                  |
+| プロパティ            | 種類                          | 説明                                                  |
 | :------------------ | :---------------------------- | :----------------------------------------------------------- |
 | 最終的な               | [identitySet](identityset.md) | この id は、呼び出しを解決しました。               |
 | 翻訳元            | [identitySet](identityset.md) | 呼び出しで使用されていた id です。           |

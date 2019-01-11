@@ -2,12 +2,13 @@
 title: Get windows10CustomConfiguration
 description: windows10CustomConfiguration オブジェクトのプロパティとリレーションシップを読み取ります。
 author: tfitzmac
-ms.openlocfilehash: 8a52f9cd7aeefc560ff786a6e51e2bbec3047494
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 5400bce1c3c9e49af9284070a82e7a9cb10bd3f5
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27306371"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27814568"
 ---
 # <a name="get-windows10customconfiguration"></a>Get windows10CustomConfiguration
 

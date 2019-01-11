@@ -2,12 +2,13 @@
 title: 添付ファイルを追加する
 description: '添付ファイルをメッセージに追加する場合に、この API を使用します。 '
 author: angelgolfer-ms
-ms.openlocfilehash: 868ce046a37d027c675b005cef013892deffe2a3
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 089a82883adb1f0e5373d03a55fc0842b791aee3
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27314617"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27814806"
 ---
 # <a name="add-attachment"></a>添付ファイルを追加する
 

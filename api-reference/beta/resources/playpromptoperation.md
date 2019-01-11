@@ -2,12 +2,13 @@
 title: playPromptOperation リソースの種類
 description: PlayPrompt アクションの結果を取得する playPrompt の操作です。
 author: VinodRavichandran
-ms.openlocfilehash: d63b8f6cfa96706104cd7baaa08475974b12ca13
-ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
+localization_priority: Normal
+ms.openlocfilehash: bc18b8f64dedd3fa4d758778bbee37c6bcfd46c6
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "27380953"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27814379"
 ---
 # <a name="playpromptoperation-resource-type"></a>playPromptOperation リソースの種類
 
@@ -15,9 +16,9 @@ ms.locfileid: "27380953"
 
 PlayPrompt アクションの結果を取得する playPrompt の操作です。
 
-## <a name="properties"></a>Properties
+## <a name="properties"></a>プロパティ
 
-| プロパティ            | 型                        | 説明|
+| プロパティ            | 種類                        | 説明|
 |:--------------------|:----------------------------|:-----------------------------------------------------------------------------------|
 | clientContext       | String                      | クライアントのコンテキスト。                                                                |
 | completionReason    | String                      | 可能な値は、`unknown`、`completedSuccessfully`、`mediaOperationCanceled` です。 |

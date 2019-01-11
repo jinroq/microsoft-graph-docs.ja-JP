@@ -2,12 +2,13 @@
 title: セッションを作成する
 description: 'この API を使用して、新しいブック セッションを作成します。 '
 author: lumine2008
-ms.openlocfilehash: 7ce180ccd69aa03c25eb0cd01f197de92c8fc822
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: d4c0094e390ded79bd37cad15e34fefc172cdf7a
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27327413"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27816199"
 ---
 # <a name="create-session"></a>セッションを作成する
 

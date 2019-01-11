@@ -1,12 +1,13 @@
 ---
 title: plannerAppliedCategories リソースの種類
 description: '**AppliedCategoriesCollection**リソースは、タスクに適用されている項目 (またはラベル) のコレクションを表します。 PlannerTask オブジェクトの一部です。'
-ms.openlocfilehash: 77a322ea3c7cd694e8ca42368cac82a639a42440
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 5601c3b0d49e7504c16a8ee517b60f3c98c84fee
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27024009"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27814783"
 ---
 # <a name="plannerappliedcategories-resource-type"></a>plannerAppliedCategories リソースの種類
 

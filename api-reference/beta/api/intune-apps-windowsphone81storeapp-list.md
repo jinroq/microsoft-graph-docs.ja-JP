@@ -2,12 +2,13 @@
 title: リスト windowsPhone81StoreApps
 description: WindowsPhone81StoreApp オブジェクトのプロパティと関係を一覧表示します。
 author: tfitzmac
-ms.openlocfilehash: 39fb1b2f9c7fe766bd294ebc05295f6e1b374034
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 2db06e073229255de104df9733c8935180999d47
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27313385"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27813315"
 ---
 # <a name="list-windowsphone81storeapps"></a>リスト windowsPhone81StoreApps
 

@@ -2,12 +2,13 @@
 title: windows10MobileCompliancePolicy の削除
 description: windows10MobileCompliancePolicy を削除します。
 author: tfitzmac
-ms.openlocfilehash: 46c9b22edfb84e0bb709b7de238c6a09fe82ee3d
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: cb0b2b53343807d3650efc2b869b1e145a4f0d6f
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27301821"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27814323"
 ---
 # <a name="delete-windows10mobilecompliancepolicy"></a>windows10MobileCompliancePolicy の削除
 

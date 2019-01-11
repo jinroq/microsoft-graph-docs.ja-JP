@@ -1,12 +1,13 @@
 ---
 title: ワークシート:UsedRange
 description: 使用範囲とは、値または書式設定が割り当たっているすべてのセルを包含する最小の範囲です。ワークシートが空白の場合、この関数は左上のセルを返します。
-ms.openlocfilehash: 424d8226a8f109242956b139670ed674ae50b43d
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: b3ac4919b9af0a9e655b449a986962838e1b32d7
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27067934"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27815037"
 ---
 # <a name="worksheet-usedrange"></a>ワークシート:UsedRange
 
@@ -30,7 +31,7 @@ GET /workbook/worksheets/{id|name}/UsedRange
 ## <a name="function-parameters"></a>関数パラメーター
 要求の URL では、オプションのクエリ パラメーターを提供します。
 
-| パラメーター    | 型   |説明|
+| パラメーター    | Type   |説明|
 |:---------------|:--------|:----------|
 |valuesOnly|Boolean|省略可能。値の入っているセルのみを使用セルと見なします (書式設定は無視されます)。|
 

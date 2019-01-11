@@ -2,12 +2,13 @@
 title: windows10VpnConfiguration リソースの種類
 description: このプロファイルの構成を提供することによって必要な VPN エンドポイントへの接続に Windows 10 デバイス (デスクトップまたはモバイル) に指示できます。 指定する認証方法とセキュリティの種類必要 VPN エンドポイントで行うことができます、VPN 接続シームレスなエンド ・ ユーザーのです。
 author: tfitzmac
-ms.openlocfilehash: 1dbbdb5a7065214ab6a290215f2c6016f8ad74bb
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 72617e1d91a6a9ce180e63733a209bcee7e204bc
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27340699"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27816067"
 ---
 # <a name="windows10vpnconfiguration-resource-type"></a>windows10VpnConfiguration リソースの種類
 
@@ -28,7 +29,7 @@ ms.locfileid: "27340699"
 |[Windows10VpnConfiguration を削除します。](../api/intune-deviceconfig-windows10vpnconfiguration-delete.md)|なし|の[windows10VpnConfiguration](../resources/intune-deviceconfig-windows10vpnconfiguration.md)を削除します。|
 |[Windows10VpnConfiguration を更新します。](../api/intune-deviceconfig-windows10vpnconfiguration-update.md)|[windows10VpnConfiguration](../resources/intune-deviceconfig-windows10vpnconfiguration.md)|[Windows10VpnConfiguration](../resources/intune-deviceconfig-windows10vpnconfiguration.md)オブジェクトのプロパティを更新します。|
 
-## <a name="properties"></a>Properties
+## <a name="properties"></a>プロパティ
 |プロパティ|種類|説明|
 |:---|:---|:---|
 |ID|String|エンティティのキー。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|

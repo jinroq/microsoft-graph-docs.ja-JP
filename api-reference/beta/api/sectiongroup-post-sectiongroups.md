@@ -1,12 +1,13 @@
 ---
 title: sectionGroup を作成する
 description: 指定されたセクション グループに新しいセクション グループを作成します。
-ms.openlocfilehash: 62e88f65755006fb6cbb4755cd63ef02fbc19556
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 5af01bd2a526d692b568fe121db7933a2887a006
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27069649"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27812958"
 ---
 # <a name="create-sectiongroup"></a>sectionGroup を作成する
 
@@ -31,7 +32,7 @@ POST /groups/{id}/onenote/sectionGroups/{id}/sectionGroups
 POST /sites/{id}/onenote/sectionGroups/{id}/sectionGroups
 ```
 ## <a name="request-headers"></a>要求ヘッダー
-| 名前       | 型 | 説明|
+| 名前       | 種類 | 説明|
 |:---------------|:--------|:----------|
 | Authorization  | string  | ベアラー {トークン}。必須。 |
 | Content-Type | string | `application/json` |

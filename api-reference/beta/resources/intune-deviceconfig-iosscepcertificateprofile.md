@@ -2,12 +2,13 @@
 title: iosScepCertificateProfile リソースの種類
 description: iOS SCEP の証明書プロファイルです。
 author: tfitzmac
-ms.openlocfilehash: 794c805c1e4ee0f6626ac07f3eb2e569212d90ea
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 158a9defdf8291c0e3887c870b351e2732238f43
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27358731"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27814988"
 ---
 # <a name="iosscepcertificateprofile-resource-type"></a>iosScepCertificateProfile リソースの種類
 
@@ -28,7 +29,7 @@ iOS SCEP の証明書プロファイルです。
 |[IosScepCertificateProfile を削除します。](../api/intune-deviceconfig-iosscepcertificateprofile-delete.md)|なし|の[iosScepCertificateProfile](../resources/intune-deviceconfig-iosscepcertificateprofile.md)を削除します。|
 |[IosScepCertificateProfile を更新します。](../api/intune-deviceconfig-iosscepcertificateprofile-update.md)|[iosScepCertificateProfile](../resources/intune-deviceconfig-iosscepcertificateprofile.md)|[IosScepCertificateProfile](../resources/intune-deviceconfig-iosscepcertificateprofile.md)オブジェクトのプロパティを更新します。|
 
-## <a name="properties"></a>Properties
+## <a name="properties"></a>プロパティ
 |プロパティ|種類|説明|
 |:---|:---|:---|
 |ID|String|エンティティのキー。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|

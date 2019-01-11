@@ -2,12 +2,13 @@
 title: EducationSubmission を取得します。
 description: '特定の送信を取得します。 送信オブジェクトは、割り当ての受講者の作業を表します。 リソースに送信は、この作業が関連付けられています。 提出書類が割り当てられている学生だけを参照してくださいでき、提出書類を変更することができます。 教師には、すべての提出書類へのフル アクセスがあります。 '
 author: dipakboyed
-ms.openlocfilehash: 39e3591c0236d7a6fbc4896d4009fe5a00157d9d
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 4eacc6ce261566afdc6d712172d35a46f9d9e595
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27353082"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27813364"
 ---
 # <a name="get-educationsubmission"></a>EducationSubmission を取得します。
 

@@ -2,12 +2,13 @@
 title: 所有者を一覧表示する
 description: DirectoryObject オブジェクトのリストを取得します。
 author: lleonard-msft
-ms.openlocfilehash: 8b8cb478867639afa07f986c86f38e2460a17338
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 37bdd7088460ae5d4ff70f3bbde271778c922115
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27325866"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27814239"
 ---
 # <a name="list-owners"></a>所有者を一覧表示する
 

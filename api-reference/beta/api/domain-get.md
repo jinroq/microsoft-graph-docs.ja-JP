@@ -2,12 +2,13 @@
 title: ドメインを取得する
 description: ドメイン オブジェクトのプロパティとリレーションシップを取得します。
 author: lleonard-msft
-ms.openlocfilehash: 00afe2423dd5c294a701d0a6f38e5f395d890571
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 49458b87f86bc5a7dbf4d7d3c196736050b2d6aa
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27313791"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27813574"
 ---
 # <a name="get-domain"></a>ドメインを取得する
 

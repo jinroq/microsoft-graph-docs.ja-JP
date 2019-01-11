@@ -1,12 +1,13 @@
 ---
 title: 所有者を一覧表示する
 description: 'グループの所有者の一覧を取得します。所有者は、グループ オブジェクトの変更を許可されている管理者以外のユーザーです。 '
-ms.openlocfilehash: 9bb7592827f5dfe9eef2aff0fa8917fe68f683dc
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Priority
+ms.openlocfilehash: a22e751d59d73b7bc3d3c00edafbce6c97f034f8
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27022155"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27814736"
 ---
 # <a name="list-owners"></a>所有者を一覧表示する
 グループの所有者の一覧を取得します。所有者は、グループ オブジェクトの変更を許可されている管理者以外のユーザーです。 
@@ -30,7 +31,7 @@ GET /groups/{id}/owners
 このメソッドは、応答をカスタマイズするための [OData クエリ パラメーター](/graph/query-parameters)をサポートします。
 
 ## <a name="request-headers"></a>要求ヘッダー
-| 名前       | 型 | 説明|
+| 名前       | 種類 | 説明|
 |:-----------|:------|:----------|
 | Authorization  | string  | ベアラー {トークン}。必須。 |
 

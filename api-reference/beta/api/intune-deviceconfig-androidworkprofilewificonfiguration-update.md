@@ -2,12 +2,13 @@
 title: AndroidWorkProfileWiFiConfiguration を更新します。
 description: AndroidWorkProfileWiFiConfiguration オブジェクトのプロパティを更新します。
 author: tfitzmac
-ms.openlocfilehash: 8a14017d7af930e33ad2be4d42e451dd306eac17
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: b160242ec5ae45f2a4af2a3232cdfe355b4ada96
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27363712"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27813875"
 ---
 # <a name="update-androidworkprofilewificonfiguration"></a>AndroidWorkProfileWiFiConfiguration を更新します。
 

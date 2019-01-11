@@ -2,12 +2,13 @@
 title: macOSOfficeSuiteApp の更新
 description: macOSOfficeSuiteApp オブジェクトのプロパティを更新します。
 author: tfitzmac
-ms.openlocfilehash: 2b09e415d19a41128eeb6caf21f06d3617c8322c
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 545a9e6e36ec7860b3cad4f0865d59f397b64079
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27341903"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27813896"
 ---
 # <a name="update-macosofficesuiteapp"></a>macOSOfficeSuiteApp の更新
 

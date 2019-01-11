@@ -1,12 +1,13 @@
 ---
 title: Update plannerbucket
 description: '**plannerbucket** オブジェクトのプロパティを更新します。'
-ms.openlocfilehash: 88c4cd83be2c76ab7f7d220d4a35bd5b90f7edb4
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 84583df95d69f4b7f4beb604cd3cf61270c177ff
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27022603"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27814939"
 ---
 # <a name="update-plannerbucket"></a>Update plannerbucket
 
@@ -34,7 +35,7 @@ PATCH /planner/buckets/{id}
 ## <a name="request-body"></a>要求本文
 要求本文で、更新する関連フィールドの値を指定します。要求本文に含まれない既存のプロパティは、以前の値のままになるか、他のプロパティ値の変化に基づいて再計算されます。最適なパフォーマンスを得るためには、変更されていない既存の値を含めないでください。
 
-| プロパティ     | 型   |説明|
+| プロパティ     | 種類   |説明|
 |:---------------|:--------|:----------|
 |名前|String|バケットの名前。|
 |orderHint|String|リスト ビューでこの種類の項目の順序付けに使用するヒント。形式は[ここ](../resources/planner-order-hint-format.md)の説明に従って定義されます。|

@@ -2,12 +2,13 @@
 title: 組織リソースの種類
 description: organization リソースは、グローバル設定インスタンスと、テナント レベルで操作およびプロビジョニングされるリソースを表わします。
 author: tfitzmac
-ms.openlocfilehash: da2d127dc5ba44187d8a3a066f5fe261d3dee859
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 3b87866520e62850f169861f4fac0a9a2454ea3d
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27322849"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27814435"
 ---
 # <a name="organization-resource-type"></a>organization リソースの種類
 

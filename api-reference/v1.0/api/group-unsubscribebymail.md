@@ -1,12 +1,13 @@
 ---
 title: 'グループ: unsubscribeByMail'
 description: 'このメソッドを呼び出すと、現在のユーザーがそのグループ内の新規投稿、イベント、およびファイルに関するメール通知を受信しなくなります。Office 365 のグループのみをサポートします。 '
-ms.openlocfilehash: 8e5b6c88db6e55f777c7b2a9225731514796f9af
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 13f51b79d06deb9377d3f7c39838143375f399c5
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27021638"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27814575"
 ---
 # <a name="group-unsubscribebymail"></a>グループ: unsubscribeByMail
 このメソッドを呼び出すと、現在のユーザーがそのグループ内の新規投稿、イベント、およびファイルに関するメール通知を受信しなくなります。Office 365 のグループのみをサポートします。 

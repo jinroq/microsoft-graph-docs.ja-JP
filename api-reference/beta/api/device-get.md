@@ -2,12 +2,13 @@
 title: デバイスを取得する
 description: デバイス オブジェクトのプロパティとリレーションシップを取得します。
 author: tfitzmac
-ms.openlocfilehash: 632094db64cce86a965751d97b0ae9c92d439d5c
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: d3845fb2fa7b84a7cf627772e0133c35dd2cd385
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27348266"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27813371"
 ---
 # <a name="get-device"></a>デバイスを取得する
 

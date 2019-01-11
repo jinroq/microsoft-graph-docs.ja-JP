@@ -3,12 +3,13 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
 title: File
-ms.openlocfilehash: bd0cd6ea5f5ee2225392aa61c2dda9b30e2ffbca
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: bd2b0fba75ef54586dcfe8b69043669b0681f6b2
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27072530"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27816325"
 ---
 # <a name="file-resource-type"></a>ファイル リソースの種類
 
@@ -37,7 +38,7 @@ ms.locfileid: "27072530"
 
 ## <a name="properties"></a>プロパティ
 
-| プロパティ | 型                    | 説明                                                                                                                                      |
+| プロパティ | 種類                    | 説明                                                                                                                                      |
 |:---------|:------------------------|:-------------------------------------------------------------------------------------------------------------------------------------------------|
 | hashes   | [HashesType](hashes.md) | ファイルのバイナリ コンテンツのハッシュ (利用可能な場合)。読み取り専用です。                                                                                    |
 | mimeType | 文字列                  | ファイルの MIME の種類。これはサーバーのロジックによって決定されます。またファイルのアップロード時に指定された値でない場合があります。読み取り専用です。 |

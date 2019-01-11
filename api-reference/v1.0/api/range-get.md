@@ -2,12 +2,13 @@
 title: 範囲を取得する
 description: 範囲オブジェクトのプロパティと関係を取得します。
 author: lumine2008
-ms.openlocfilehash: 3914f018da434536dca280fac2536e93e5496ea9
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: a109a83b5e0df294b096864053b7acd033860f7f
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27347251"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27814211"
 ---
 # <a name="get-range"></a>範囲を取得する
 

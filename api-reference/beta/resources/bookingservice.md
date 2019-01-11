@@ -1,12 +1,13 @@
 ---
 title: bookingService リソースの種類
 description: " > **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。"
-ms.openlocfilehash: bb42768cb913abca7c17e6d617670a3a035ec16a
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 63eae84249501426c43ad73326cbf005009753be
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27067822"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27815443"
 ---
 # <a name="bookingservice-resource-type"></a>bookingService リソースの種類
 
@@ -22,10 +23,10 @@ ms.locfileid: "27067822"
 |[BookingService を作成します。](../api/bookingbusiness-post-services.md) | [bookingService](bookingservice.md) | 指定した[bookingbusiness](../resources/bookingbusiness.md)用の**bookingService**を作成します。 |
 |[BookingService を取得します。](../api/bookingservice-get.md) | [bookingService](bookingservice.md) |指定された[bookingbusiness](../resources/bookingbusiness.md)のプロパティと、 **bookingService**オブジェクトの関係を取得します。|
 |[Update](../api/bookingservice-update.md) | [bookingService](bookingservice.md)    |指定された[bookingbusiness](../resources/bookingbusiness.md)で、 **bookingService**オブジェクトを更新します。 |
-|[削除](../api/bookingservice-delete.md) | なし |指定された[bookingbusiness](../resources/bookingbusiness.md)で、 **bookingService**オブジェクトを削除します。 |
+|[Delete](../api/bookingservice-delete.md) | なし |指定された[bookingbusiness](../resources/bookingbusiness.md)で、 **bookingService**オブジェクトを削除します。 |
 
 ## <a name="properties"></a>プロパティ
-| プロパティ     | 型   |説明|
+| プロパティ     | 種類   |説明|
 |:---------------|:--------|:----------|
 |defaultDuration|Duration|日、時間、分、秒単位の数値で表される、サービスの既定の長さです。 たとえば、P11D23H59M59.999999999999S です。 |
 |defaultLocation|[location](location.md)|サービスの既定の物理的な場所です。|
@@ -35,8 +36,8 @@ ms.locfileid: "27067822"
 |説明|String|サービスの説明です。|
 |displayName|String|サービスの名前です。|
 |emailAddress|String|電子メール アドレス|
-|id|String|GUID 形式で、そのサービスの ID です。 読み取り専用。|
-|isHiddenFromCustomers|ブール値|True は、このサービスは予約のお客様に利用できないことを意味します。|
+|id|String|GUID 形式で、そのサービスの ID です。 読み取り専用です。|
+|isHiddenFromCustomers|ブール型|True は、このサービスは予約のお客様に利用できないことを意味します。|
 |notes|String|このサービスに関する追加情報。|
 |事後バッファリング|Duration|このサービスの予定の後のバッファーに時間が終了して、次の前に顧客の予定が予約できます。|
 |事前バッファリング|Duration|このサービスに対する予定を開始する前に、バッファーに格納する時間です。|

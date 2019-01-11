@@ -2,12 +2,13 @@
 title: windowsMinimumOperatingSystem リソースの種類
 description: Windows モバイル アプリに必要な最小オペレーティング システム。
 author: tfitzmac
-ms.openlocfilehash: 2ed80e724c5f53510db5366e82d2e9dea2d90707
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 672bceca692702b4d108b8538626c2b767ffdf56
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27358437"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27814519"
 ---
 # <a name="windowsminimumoperatingsystem-resource-type"></a>windowsMinimumOperatingSystem リソースの種類
 

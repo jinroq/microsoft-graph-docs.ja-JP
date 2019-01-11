@@ -1,12 +1,13 @@
 ---
 title: Get administrativeUnit
 description: この**educationSchool**に対応する単純なディレクトリ**administrativeUnit**を取得します。
-ms.openlocfilehash: 49ac05b44bc89f827091c3b846885a58cb7b8956
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: a088afb50170d1fe43d61dafdd9a711249fddf4a
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27070666"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27813189"
 ---
 # <a name="get-administrativeunit"></a>Get administrativeUnit
 

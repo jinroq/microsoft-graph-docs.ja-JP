@@ -2,12 +2,13 @@
 title: targetedManagedAppConfiguration の更新
 description: targetedManagedAppConfiguration オブジェクトのプロパティを更新します。
 author: tfitzmac
-ms.openlocfilehash: 658a4710ae85c45a1480ee228e1713d2fa59a8e6
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 77f75233ad54e9d26110640946be7cdab014cb8f
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27342001"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27813469"
 ---
 # <a name="update-targetedmanagedappconfiguration"></a>targetedManagedAppConfiguration の更新
 

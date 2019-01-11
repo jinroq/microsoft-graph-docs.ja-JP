@@ -2,12 +2,13 @@
 title: deviceManagementSubscriptions 列挙型
 description: テナントのモバイル デバイス管理のサブスクリプション。
 author: tfitzmac
-ms.openlocfilehash: 064363ff05617b48ffd5ef66d57c315545223910
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 5a68d443be1232dd679afc58a7178a54291b0f14
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27326153"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27814610"
 ---
 # <a name="devicemanagementsubscriptions-enum-type"></a>deviceManagementSubscriptions 列挙型
 

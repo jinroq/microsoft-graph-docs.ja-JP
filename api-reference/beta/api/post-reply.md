@@ -2,12 +2,13 @@
 title: '投稿: 返信'
 description: 'グループ会話の投稿に返信して、指定されたスレッドに新しい投稿を追加します。 指定できます。 '
 author: dkershaw10
-ms.openlocfilehash: 33cd99fd24dc5acfca4b96f232f748a0377d1564
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: c6e0f59901d1948c9152dab40082de76d3ffb056
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27324228"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27816038"
 ---
 # <a name="post-reply"></a>投稿: 返信
 
@@ -39,7 +40,7 @@ POST /groups/{id}/conversations/{id}/threads/{id}/posts/{id}/reply
 ## <a name="request-body"></a>要求本文
 要求本文で、次のパラメーターを含む JSON オブジェクトを指定します。
 
-| パラメーター    | 種類   |説明|
+| パラメーター    | Type   |説明|
 |:---------------|:--------|:----------|
 |post|[post](../resources/post.md)|返信中の新規の投稿。|
 

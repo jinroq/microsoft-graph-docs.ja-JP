@@ -2,12 +2,13 @@
 title: mobileAppIdentifier リソースの種類
 description: モバイル アプリの識別子です。
 author: tfitzmac
-ms.openlocfilehash: ea5e471d7248fd6b919aef4cc02102ce14d21789
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: dac111c6172ad9d8adaa4effe91dc61cea0ca19b
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27314330"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27814400"
 ---
 # <a name="mobileappidentifier-resource-type"></a>mobileAppIdentifier リソースの種類
 

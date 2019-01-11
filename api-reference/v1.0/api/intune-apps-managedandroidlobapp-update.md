@@ -2,12 +2,13 @@
 title: managedAndroidLobApp の更新
 description: managedAndroidLobApp オブジェクトのプロパティを更新します。
 author: tfitzmac
-ms.openlocfilehash: 7d121570b5d1a5de6529dcf5b163354849178366
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 66d94d9bca1d83ba8d99afb218451667848f90e7
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27346264"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27813238"
 ---
 # <a name="update-managedandroidlobapp"></a>managedAndroidLobApp の更新
 

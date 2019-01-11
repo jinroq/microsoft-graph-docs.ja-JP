@@ -2,12 +2,13 @@
 title: RangeSort リソースの種類
 description: Range オブジェクトの並べ替え操作を管理します。
 author: lumine2008
-ms.openlocfilehash: 44aa472b218fa2c5f4f0d0db1af6f9c919283197
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: c52b4c6cc50bce7d518d26798db9f3d3da49cd1c
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27353509"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27816430"
 ---
 # <a name="rangesort-resource-type"></a>RangeSort リソースの種類
 

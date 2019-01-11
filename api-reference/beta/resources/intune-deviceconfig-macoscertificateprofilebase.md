@@ -2,12 +2,13 @@
 title: macOSCertificateProfileBase リソースの種類
 description: Mac OS の証明書のプロファイルです。
 author: tfitzmac
-ms.openlocfilehash: fded8f604afc5d4121cc7d1865db0de2ddb4ee27
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 596fc5a02e70e64f91e6abaabeaee384d16a156a
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27308772"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27813420"
 ---
 # <a name="macoscertificateprofilebase-resource-type"></a>macOSCertificateProfileBase リソースの種類
 
@@ -25,7 +26,7 @@ Mac OS の証明書のプロファイルです。
 |[リスト macOSCertificateProfileBases](../api/intune-deviceconfig-macoscertificateprofilebase-list.md)|[macOSCertificateProfileBase](../resources/intune-deviceconfig-macoscertificateprofilebase.md)コレクション|[MacOSCertificateProfileBase](../resources/intune-deviceconfig-macoscertificateprofilebase.md)オブジェクトのプロパティと関係を一覧表示します。|
 |[MacOSCertificateProfileBase を取得します。](../api/intune-deviceconfig-macoscertificateprofilebase-get.md)|[macOSCertificateProfileBase](../resources/intune-deviceconfig-macoscertificateprofilebase.md)|[MacOSCertificateProfileBase](../resources/intune-deviceconfig-macoscertificateprofilebase.md)オブジェクトのプロパティと関係を参照してください。|
 
-## <a name="properties"></a>Properties
+## <a name="properties"></a>プロパティ
 |プロパティ|種類|説明|
 |:---|:---|:---|
 |ID|String|エンティティのキー。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|

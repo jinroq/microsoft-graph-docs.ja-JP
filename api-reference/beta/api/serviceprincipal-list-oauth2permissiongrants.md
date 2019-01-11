@@ -1,12 +1,13 @@
 ---
 title: 'servicePrincipal: oAuth2Permissiongrants を一覧表示'
 description: OAuth2Permissiongrant オブジェクトのリストを取得します。
-ms.openlocfilehash: 65012a3782f49161e7d9651d25ab895121114f29
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 9e228e3b2b292bda96b3b1698e3898f0b40050b7
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27072895"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27812811"
 ---
 # <a name="serviceprincipal-list-oauth2permissiongrants"></a>servicePrincipal: oAuth2Permissiongrants を一覧表示
 
@@ -32,7 +33,7 @@ GET /servicePrincipals/{id}/oAuth2Permissiongrants
 このメソッドは、応答をカスタマイズするための [OData クエリ パラメーター](https://developer.microsoft.com/graph/docs/concepts/query_parameters)をサポートします。
 
 ## <a name="request-headers"></a>要求ヘッダー
-| 名前       | 型 | 説明|
+| 名前       | 種類 | 説明|
 |:-----------|:------|:----------|
 | Authorization  | string  | ベアラー {トークン}。必須。 |
 

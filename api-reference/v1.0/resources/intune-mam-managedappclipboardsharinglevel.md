@@ -1,12 +1,13 @@
 ---
 title: managedAppClipboardSharingLevel 列挙型
 description: アプリケーションとの間にデバイスのクリップボードを共有する可能性がありますレベルを表します
-ms.openlocfilehash: 7cf7b4a2f6ea6dc129a21167a2d75ba215ff29fd
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 16d6e9154b3d6e683d9ddce0efd70a40c01c8994
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27024233"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27814316"
 ---
 # <a name="managedappclipboardsharinglevel-enum-type"></a>managedAppClipboardSharingLevel 列挙型
 

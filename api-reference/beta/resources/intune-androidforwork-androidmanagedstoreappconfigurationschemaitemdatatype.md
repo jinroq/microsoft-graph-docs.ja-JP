@@ -1,12 +1,13 @@
 ---
 title: androidManagedStoreAppConfigurationSchemaItemDataType 列挙型
 description: Android アプリケーションのカスタム構成スキーマ内の構成項目のデータ型
-ms.openlocfilehash: 4cfaeb1ba02746c7f3307a7d388a2c6a503d3d70
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 185785fec7de9b87342703b41063ad49a0bd1bf5
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27074033"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27814876"
 ---
 # <a name="androidmanagedstoreappconfigurationschemaitemdatatype-enum-type"></a>androidManagedStoreAppConfigurationSchemaItemDataType 列挙型
 
@@ -21,7 +22,7 @@ Android アプリケーションのカスタム構成スキーマ内の構成項
 |bool|0|まだ文書化されていません|
 |integer|1|まだ文書化されていません|
 |文字列|2|まだ文書化されていません|
-|選択|3|まだ文書化されていません|
+|choice|3|まだ文書化されていません|
 |multiselect|4|まだ文書化されていません|
 |バンドル|5|まだ文書化されていません|
 |bundleArray|6|まだ文書化されていません|
