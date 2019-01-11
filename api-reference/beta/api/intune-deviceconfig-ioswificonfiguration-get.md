@@ -2,30 +2,31 @@
 title: IosWiFiConfiguration を取得します。
 description: IosWiFiConfiguration オブジェクトのプロパティと関係を参照してください。
 author: tfitzmac
-ms.openlocfilehash: fa024d1d6b0ba014c9ddc3fb0b3e260631c23abe
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 14574cd20474e64102ba2b276bff3ffbdee8db82
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27302346"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27827973"
 ---
-# <a name="get-ioswificonfiguration"></a><span data-ttu-id="09784-103">IosWiFiConfiguration を取得します。</span><span class="sxs-lookup"><span data-stu-id="09784-103">Get iosWiFiConfiguration</span></span>
+# <a name="get-ioswificonfiguration"></a><span data-ttu-id="190ce-103">IosWiFiConfiguration を取得します。</span><span class="sxs-lookup"><span data-stu-id="190ce-103">Get iosWiFiConfiguration</span></span>
 
-> <span data-ttu-id="09784-104">**重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。</span><span class="sxs-lookup"><span data-stu-id="09784-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="09784-105">実稼働アプリケーションでの、これらの API の使用はサポートされていません。</span><span class="sxs-lookup"><span data-stu-id="09784-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="190ce-104">**重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。</span><span class="sxs-lookup"><span data-stu-id="190ce-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="190ce-105">実稼働アプリケーションでの、これらの API の使用はサポートされていません。</span><span class="sxs-lookup"><span data-stu-id="190ce-105">Use of these APIs in production applications is not supported.</span></span>
 
-> <span data-ttu-id="09784-106">**注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。</span><span class="sxs-lookup"><span data-stu-id="09784-106">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
+> <span data-ttu-id="190ce-106">**注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。</span><span class="sxs-lookup"><span data-stu-id="190ce-106">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
 
-<span data-ttu-id="09784-107">[IosWiFiConfiguration](../resources/intune-deviceconfig-ioswificonfiguration.md)オブジェクトのプロパティと関係を参照してください。</span><span class="sxs-lookup"><span data-stu-id="09784-107">Read properties and relationships of the [iosWiFiConfiguration](../resources/intune-deviceconfig-ioswificonfiguration.md) object.</span></span>
-## <a name="prerequisites"></a><span data-ttu-id="09784-108">前提条件</span><span class="sxs-lookup"><span data-stu-id="09784-108">Prerequisites</span></span>
-<span data-ttu-id="09784-p102">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="09784-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="190ce-107">[IosWiFiConfiguration](../resources/intune-deviceconfig-ioswificonfiguration.md)オブジェクトのプロパティと関係を参照してください。</span><span class="sxs-lookup"><span data-stu-id="190ce-107">Read properties and relationships of the [iosWiFiConfiguration](../resources/intune-deviceconfig-ioswificonfiguration.md) object.</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="190ce-108">前提条件</span><span class="sxs-lookup"><span data-stu-id="190ce-108">Prerequisites</span></span>
+<span data-ttu-id="190ce-p102">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="190ce-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="09784-111">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="09784-111">Permission type</span></span>|<span data-ttu-id="09784-112">アクセス許可 (特権の大きいものから小さいものへ)</span><span class="sxs-lookup"><span data-stu-id="09784-112">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="190ce-111">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="190ce-111">Permission type</span></span>|<span data-ttu-id="190ce-112">アクセス許可 (特権の大きいものから小さいものへ)</span><span class="sxs-lookup"><span data-stu-id="190ce-112">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="09784-113">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="09784-113">Delegated (work or school account)</span></span>|<span data-ttu-id="09784-114">DeviceManagementConfiguration.ReadWrite.All、DeviceManagementConfiguration.Read.All</span><span class="sxs-lookup"><span data-stu-id="09784-114">DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All</span></span>|
-|<span data-ttu-id="09784-115">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="09784-115">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="09784-116">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="09784-116">Not supported.</span></span>|
-|<span data-ttu-id="09784-117">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="09784-117">Application</span></span>|<span data-ttu-id="09784-118">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="09784-118">Not supported.</span></span>|
+|<span data-ttu-id="190ce-113">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="190ce-113">Delegated (work or school account)</span></span>|<span data-ttu-id="190ce-114">DeviceManagementConfiguration.ReadWrite.All、DeviceManagementConfiguration.Read.All</span><span class="sxs-lookup"><span data-stu-id="190ce-114">DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All</span></span>|
+|<span data-ttu-id="190ce-115">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="190ce-115">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="190ce-116">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="190ce-116">Not supported.</span></span>|
+|<span data-ttu-id="190ce-117">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="190ce-117">Application</span></span>|<span data-ttu-id="190ce-118">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="190ce-118">Not supported.</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="09784-119">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="09784-119">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="190ce-119">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="190ce-119">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -36,29 +37,29 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/groupAssignme
 GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.windowsDomainJoinConfiguration/networkAccessConfigurations/{deviceConfigurationId}
 ```
 
-## <a name="optional-query-parameters"></a><span data-ttu-id="09784-120">オプションのクエリ パラメーター</span><span class="sxs-lookup"><span data-stu-id="09784-120">Optional query parameters</span></span>
-<span data-ttu-id="09784-121">このメソッドは、応答をカスタマイズするための [OData クエリ パラメーター](https://developer.microsoft.com/graph/docs/concepts/query_parameters)をサポートします。</span><span class="sxs-lookup"><span data-stu-id="09784-121">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
-## <a name="request-headers"></a><span data-ttu-id="09784-122">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="09784-122">Request headers</span></span>
-|<span data-ttu-id="09784-123">ヘッダー</span><span class="sxs-lookup"><span data-stu-id="09784-123">Header</span></span>|<span data-ttu-id="09784-124">値</span><span class="sxs-lookup"><span data-stu-id="09784-124">Value</span></span>|
+## <a name="optional-query-parameters"></a><span data-ttu-id="190ce-120">オプションのクエリ パラメーター</span><span class="sxs-lookup"><span data-stu-id="190ce-120">Optional query parameters</span></span>
+<span data-ttu-id="190ce-121">このメソッドは、応答をカスタマイズするための [OData クエリ パラメーター](https://developer.microsoft.com/graph/docs/concepts/query_parameters)をサポートします。</span><span class="sxs-lookup"><span data-stu-id="190ce-121">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
+## <a name="request-headers"></a><span data-ttu-id="190ce-122">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="190ce-122">Request headers</span></span>
+|<span data-ttu-id="190ce-123">ヘッダー</span><span class="sxs-lookup"><span data-stu-id="190ce-123">Header</span></span>|<span data-ttu-id="190ce-124">値</span><span class="sxs-lookup"><span data-stu-id="190ce-124">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="09784-125">Authorization</span><span class="sxs-lookup"><span data-stu-id="09784-125">Authorization</span></span>|<span data-ttu-id="09784-126">ベアラー &lt;トークン&gt; が必須。</span><span class="sxs-lookup"><span data-stu-id="09784-126">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="09784-127">Accept</span><span class="sxs-lookup"><span data-stu-id="09784-127">Accept</span></span>|<span data-ttu-id="09784-128">application/json</span><span class="sxs-lookup"><span data-stu-id="09784-128">application/json</span></span>|
+|<span data-ttu-id="190ce-125">Authorization</span><span class="sxs-lookup"><span data-stu-id="190ce-125">Authorization</span></span>|<span data-ttu-id="190ce-126">ベアラー &lt;トークン&gt; が必須。</span><span class="sxs-lookup"><span data-stu-id="190ce-126">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="190ce-127">Accept</span><span class="sxs-lookup"><span data-stu-id="190ce-127">Accept</span></span>|<span data-ttu-id="190ce-128">application/json</span><span class="sxs-lookup"><span data-stu-id="190ce-128">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="09784-129">要求本文</span><span class="sxs-lookup"><span data-stu-id="09784-129">Request body</span></span>
-<span data-ttu-id="09784-130">このメソッドには、要求本文を指定しません。</span><span class="sxs-lookup"><span data-stu-id="09784-130">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="190ce-129">要求本文</span><span class="sxs-lookup"><span data-stu-id="190ce-129">Request body</span></span>
+<span data-ttu-id="190ce-130">このメソッドには、要求本文を指定しません。</span><span class="sxs-lookup"><span data-stu-id="190ce-130">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="09784-131">応答</span><span class="sxs-lookup"><span data-stu-id="09784-131">Response</span></span>
-<span data-ttu-id="09784-132">かどうかは成功すると、このメソッドが返されます、 `200 OK` 、応答の本体で応答コードと[iosWiFiConfiguration](../resources/intune-deviceconfig-ioswificonfiguration.md)のオブジェクトです。</span><span class="sxs-lookup"><span data-stu-id="09784-132">If successful, this method returns a `200 OK` response code and [iosWiFiConfiguration](../resources/intune-deviceconfig-ioswificonfiguration.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="190ce-131">応答</span><span class="sxs-lookup"><span data-stu-id="190ce-131">Response</span></span>
+<span data-ttu-id="190ce-132">かどうかは成功すると、このメソッドが返されます、 `200 OK` 、応答の本体で応答コードと[iosWiFiConfiguration](../resources/intune-deviceconfig-ioswificonfiguration.md)のオブジェクトです。</span><span class="sxs-lookup"><span data-stu-id="190ce-132">If successful, this method returns a `200 OK` response code and [iosWiFiConfiguration](../resources/intune-deviceconfig-ioswificonfiguration.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="09784-133">例</span><span class="sxs-lookup"><span data-stu-id="09784-133">Example</span></span>
-### <a name="request"></a><span data-ttu-id="09784-134">要求</span><span class="sxs-lookup"><span data-stu-id="09784-134">Request</span></span>
-<span data-ttu-id="09784-135">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="09784-135">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="190ce-133">例</span><span class="sxs-lookup"><span data-stu-id="190ce-133">Example</span></span>
+### <a name="request"></a><span data-ttu-id="190ce-134">要求</span><span class="sxs-lookup"><span data-stu-id="190ce-134">Request</span></span>
+<span data-ttu-id="190ce-135">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="190ce-135">Here is an example of the request.</span></span>
 ``` http
 GET https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{deviceConfigurationId}
 ```
 
-### <a name="response"></a><span data-ttu-id="09784-136">応答</span><span class="sxs-lookup"><span data-stu-id="09784-136">Response</span></span>
-<span data-ttu-id="09784-p103">以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。</span><span class="sxs-lookup"><span data-stu-id="09784-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="190ce-136">応答</span><span class="sxs-lookup"><span data-stu-id="190ce-136">Response</span></span>
+<span data-ttu-id="190ce-p103">以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。</span><span class="sxs-lookup"><span data-stu-id="190ce-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
