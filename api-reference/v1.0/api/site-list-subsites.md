@@ -3,30 +3,31 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
 title: SharePoint サイトのサブサイトを一覧表示する
-ms.openlocfilehash: a26c2f592c11760b822c80a7e37749823a5172aa
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Priority
+ms.openlocfilehash: 438394a5a5e55b2352e4e42495f6a626817e128d
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27021300"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27845057"
 ---
-# <a name="enumerate-subsites"></a><span data-ttu-id="2dcbb-102">サブサイトを列挙する</span><span class="sxs-lookup"><span data-stu-id="2dcbb-102">Enumerate subsites</span></span>
+# <a name="enumerate-subsites"></a><span data-ttu-id="127e9-102">サブサイトを列挙する</span><span class="sxs-lookup"><span data-stu-id="127e9-102">Enumerate subsites</span></span>
 
-<span data-ttu-id="2dcbb-103">[サイト][] に定義されているサブサイトのコレクションを取得します。</span><span class="sxs-lookup"><span data-stu-id="2dcbb-103">Get a collection of subsites defined for a [site][].</span></span>
+<span data-ttu-id="127e9-103">[サイト][] に定義されているサブサイトのコレクションを取得します。</span><span class="sxs-lookup"><span data-stu-id="127e9-103">Get a collection of subsites defined for a [site][].</span></span>
 
 [site]: ../resources/site.md
 
-## <a name="permissions"></a><span data-ttu-id="2dcbb-105">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="2dcbb-105">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="127e9-105">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="127e9-105">Permissions</span></span>
 
-<span data-ttu-id="2dcbb-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="2dcbb-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="127e9-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="127e9-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="2dcbb-108">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="2dcbb-108">Permission type</span></span>      | <span data-ttu-id="2dcbb-109">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="2dcbb-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="127e9-108">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="127e9-108">Permission type</span></span>      | <span data-ttu-id="127e9-109">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="127e9-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="2dcbb-110">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="2dcbb-110">Delegated (work or school account)</span></span> | <span data-ttu-id="2dcbb-111">Sites.Read.All、Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="2dcbb-111">Sites.Read.All, Sites.ReadWrite.All</span></span>    |
-|<span data-ttu-id="2dcbb-112">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="2dcbb-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="2dcbb-113">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="2dcbb-113">Not supported.</span></span>    |
-|<span data-ttu-id="2dcbb-114">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="2dcbb-114">Application</span></span> | <span data-ttu-id="2dcbb-115">Sites.Read.All、Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="2dcbb-115">Sites.Read.All, Sites.ReadWrite.All</span></span> |
+|<span data-ttu-id="127e9-110">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="127e9-110">Delegated (work or school account)</span></span> | <span data-ttu-id="127e9-111">Sites.Read.All、Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="127e9-111">Sites.Read.All, Sites.ReadWrite.All</span></span>    |
+|<span data-ttu-id="127e9-112">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="127e9-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="127e9-113">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="127e9-113">Not supported.</span></span>    |
+|<span data-ttu-id="127e9-114">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="127e9-114">Application</span></span> | <span data-ttu-id="127e9-115">Sites.Read.All、Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="127e9-115">Sites.Read.All, Sites.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="2dcbb-116">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="2dcbb-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="127e9-116">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="127e9-116">HTTP request</span></span>
 
 <!-- { "blockType": "request", "name": "list-subsites", "scopes": "sites.read.all", "tags": "service.sharepoint" } -->
 
@@ -34,7 +35,7 @@ ms.locfileid: "27021300"
 GET https://graph.microsoft.com/v1.0/sites/{site-id}/sites
 ```
 
-## <a name="response"></a><span data-ttu-id="2dcbb-117">応答</span><span class="sxs-lookup"><span data-stu-id="2dcbb-117">Response</span></span>
+## <a name="response"></a><span data-ttu-id="127e9-117">応答</span><span class="sxs-lookup"><span data-stu-id="127e9-117">Response</span></span>
 
 <!-- { "blockType": "response", "@type": "microsoft.graph.site", "isCollection": true, "truncated": true } -->
 
