@@ -2,12 +2,13 @@
 title: iosVppEBookAssignment の更新
 description: iosVppEBookAssignment オブジェクトのプロパティを更新します。
 author: tfitzmac
-ms.openlocfilehash: 537c2ef5838dc68881f3de693a6591570219ece4
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: e9abf92f2af9ed0a674f7186ee6ebd2433c9e7a3
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27338151"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27892345"
 ---
 # <a name="update-iosvppebookassignment"></a>iosVppEBookAssignment の更新
 

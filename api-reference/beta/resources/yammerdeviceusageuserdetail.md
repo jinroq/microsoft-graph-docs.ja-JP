@@ -1,31 +1,32 @@
 ---
 title: yammerDeviceUsageUserDetail リソースの種類
 description: リソースの JSON 表記を次に示します。
-ms.openlocfilehash: 8812b61d974815fd1cdf1bbe1549a21193e5a2f4
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 0f4d543ec8a96eaa4e237a1db1367efdc625c4e6
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27073767"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27892016"
 ---
 # <a name="yammerdeviceusageuserdetail-resource-type"></a>yammerDeviceUsageUserDetail リソースの種類
 
 ## <a name="properties"></a>プロパティ
 
-| プロパティ          | 型    |
+| プロパティ          | 種類    |
 | :---------------- | :------ |
-| reportRefreshDate | Date    |
+| reportRefreshDate | 日付    |
 | userPrincipalName | String  |
 | displayName       | String  |
 | userState         | String  |
-| stateChangeDate   | Date    |
-| lastActivityDate  | Date    |
-| usedWeb           | ブール値 |
-| usedWindowsPhone  | ブール値 |
-| usedAndroidPhone  | ブール値 |
-| usediPhone        | ブール値 |
-| usediPad          | ブール値 |
-| usedOthers        | ブール値 |
+| stateChangeDate   | 日付    |
+| lastActivityDate  | 日付    |
+| usedWeb           | ブール型 |
+| usedWindowsPhone  | ブール型 |
+| usedAndroidPhone  | ブール型 |
+| usediPhone        | ブール型 |
+| usediPad          | ブール型 |
+| usedOthers        | ブール型 |
 | reportPeriod      | String  |
 
 ## <a name="json-representation"></a>JSON 表記

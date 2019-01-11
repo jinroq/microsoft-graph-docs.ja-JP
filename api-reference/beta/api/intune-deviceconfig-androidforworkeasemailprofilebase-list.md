@@ -2,12 +2,13 @@
 title: リスト androidForWorkEasEmailProfileBases
 description: AndroidForWorkEasEmailProfileBase オブジェクトのプロパティと関係を一覧表示します。
 author: tfitzmac
-ms.openlocfilehash: b10b5e863cf55715e10dd8f2e009e3f0fb6b7aa8
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: c030372847600ff9c43752cc820ad649bb5d209b
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27302976"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27891841"
 ---
 # <a name="list-androidforworkeasemailprofilebases"></a>リスト androidForWorkEasEmailProfileBases
 

@@ -2,12 +2,13 @@
 title: androidWorkProfileGeneralDeviceConfiguration リソースの種類
 description: Android 作業プロファイル全般的なデバイスを構成します。
 author: tfitzmac
-ms.openlocfilehash: 4b784d2bbcafc01caf7d4fb6129f590641c32d32
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: f640f5a6967a45c6ea83666f94cb239978dbdbe1
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27357912"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27892478"
 ---
 # <a name="androidworkprofilegeneraldeviceconfiguration-resource-type"></a>androidWorkProfileGeneralDeviceConfiguration リソースの種類
 
@@ -28,7 +29,7 @@ Android 作業プロファイル全般的なデバイスを構成します。
 |[AndroidWorkProfileGeneralDeviceConfiguration を削除します。](../api/intune-deviceconfig-androidworkprofilegeneraldeviceconfiguration-delete.md)|なし|の[androidWorkProfileGeneralDeviceConfiguration](../resources/intune-deviceconfig-androidworkprofilegeneraldeviceconfiguration.md)を削除します。|
 |[AndroidWorkProfileGeneralDeviceConfiguration を更新します。](../api/intune-deviceconfig-androidworkprofilegeneraldeviceconfiguration-update.md)|[androidWorkProfileGeneralDeviceConfiguration](../resources/intune-deviceconfig-androidworkprofilegeneraldeviceconfiguration.md)|[AndroidWorkProfileGeneralDeviceConfiguration](../resources/intune-deviceconfig-androidworkprofilegeneraldeviceconfiguration.md)オブジェクトのプロパティを更新します。|
 
-## <a name="properties"></a>Properties
+## <a name="properties"></a>プロパティ
 |プロパティ|種類|説明|
 |:---|:---|:---|
 |ID|String|エンティティのキー。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|

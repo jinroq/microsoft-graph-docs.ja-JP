@@ -2,12 +2,13 @@
 title: AndroidManagedStoreAccountEnterpriseSettings を更新します。
 description: AndroidManagedStoreAccountEnterpriseSettings オブジェクトのプロパティを更新します。
 author: tfitzmac
-ms.openlocfilehash: ee5fda9e9c6ce92cdf44ec878c2c5835ceed2c49
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: e1c6829a855a2d422906a9fbc0ba0527f77d1ac9
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27356029"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27892499"
 ---
 # <a name="update-androidmanagedstoreaccountenterprisesettings"></a>AndroidManagedStoreAccountEnterpriseSettings を更新します。
 

@@ -2,12 +2,13 @@
 title: 'RangeFill: クリア'
 description: 範囲の背景をリセットします。
 author: lumine2008
-ms.openlocfilehash: 5f63b534874def2d7f969a9bcd48e2e1019befd3
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 2fbe387ea285ca9737bebc5010fe53c020c78e82
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27339880"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27890728"
 ---
 # <a name="rangefill-clear"></a>RangeFill: クリア
 

@@ -1,12 +1,13 @@
 ---
 title: 推移的なメンバーのグループ一覧
 description: グループのメンバーの一覧を取得します。 グループでは、メンバーとしてユーザー、連絡先、デバイス、サービス ・ プリンシパル、およびその他のグループを持つことができます。 この操作は推移的もすべての入れ子にされたメンバーの一覧を返します。
-ms.openlocfilehash: 703515f4549e409d3711699c79671ed0b1a93cb3
-ms.sourcegitcommit: 37591c2299c80e7675cd2b5f781e1eeeba628a60
+localization_priority: Normal
+ms.openlocfilehash: a89894bf17d12f7cd23350f466e9e1272fa0cb6a
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "27748557"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27892219"
 ---
 # <a name="list-group-transitive-members"></a>推移的なメンバーのグループ一覧
 
@@ -40,7 +41,7 @@ GET /groups/{id}/transitiveMembers
 
 ## <a name="request-headers"></a>要求ヘッダー
 
-| 名前       | 型 | 説明|
+| 名前       | 種類 | 説明|
 |:-----------|:------|:----------|
 | Authorization  | string  | ベアラー {トークン}。必須。 |
 

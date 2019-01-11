@@ -2,12 +2,13 @@
 title: windows81CompliancePolicy の作成
 description: 新しい windows81CompliancePolicy オブジェクトを作成します。
 author: tfitzmac
-ms.openlocfilehash: 683c6c29cc27d314b00e24fdd6ffbd6d50c03735
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 675c6a7addb6c63e49d85cf226dae3be588b699f
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27359445"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27891722"
 ---
 # <a name="create-windows81compliancepolicy"></a>windows81CompliancePolicy の作成
 

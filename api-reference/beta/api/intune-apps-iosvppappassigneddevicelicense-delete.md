@@ -2,12 +2,13 @@
 title: IosVppAppAssignedDeviceLicense を削除します。
 description: IosVppAppAssignedDeviceLicense を削除します。
 author: tfitzmac
-ms.openlocfilehash: 4446b0497c1f40cc30219853e6a32238b0121065
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 4cfef983c84c823506f697c1c7458077e5fcf535
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27338928"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27892226"
 ---
 # <a name="delete-iosvppappassigneddevicelicense"></a>IosVppAppAssignedDeviceLicense を削除します。
 

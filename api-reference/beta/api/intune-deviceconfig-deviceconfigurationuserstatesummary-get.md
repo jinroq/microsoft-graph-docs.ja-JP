@@ -2,12 +2,13 @@
 title: DeviceConfigurationUserStateSummary を取得します。
 description: DeviceConfigurationUserStateSummary オブジェクトのプロパティと関係を参照してください。
 author: tfitzmac
-ms.openlocfilehash: 8a4a875dd8a909b2c896457b5df5d1edf79edab6
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: a144c22ae9c1a3f1632474b9f3d335e81db4cf7c
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27349680"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27891428"
 ---
 # <a name="get-deviceconfigurationuserstatesummary"></a>DeviceConfigurationUserStateSummary を取得します。
 

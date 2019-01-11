@@ -1,18 +1,19 @@
 ---
 title: " controlScore リソースの種類"
 description: このリソースには、テナントのスコアと個々 のコントロールの説明が含まれています。
-ms.openlocfilehash: 67059c1a7382416411709f02c609c90b20a673b4
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: d8c2d73205f00a9dd5f2f28fcee3c33778bb3276
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27067808"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27891470"
 ---
 #  <a name="controlscore-resource-type"></a>controlScore リソースの種類
 
 このリソースには、テナントのスコアと個々 のコントロールの説明が含まれています。
 
-|名前 |型 |説明 |
+|名前 |種類 |説明 |
 |:--|:--|:--|
 |   controlName |   String  |   コントロールの一意の名前 |
 |   score   |   倍精度浮動小数点数  |  テナントは、コントロールの (日単位によって異なりますコントロール上のテナントの操作) のスコアを達成しました。 |

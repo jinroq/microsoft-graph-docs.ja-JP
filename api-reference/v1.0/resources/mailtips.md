@@ -1,12 +1,13 @@
 ---
 title: リソースの種類のメール ヒント
 description: 'メッセージの作成中にユーザーに表示される、受信者に関する情報メッセージです。 たとえば、不在時のメッセージ '
-ms.openlocfilehash: 6c5d64248aa940b9449a93caad952bc7b4d13ca6
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 0506d10ad4b1c5eb473b04a30eb8d48334685574
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27021227"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27891694"
 ---
 # <a name="mailtips-resource-type"></a>リソースの種類のメール ヒント
 
@@ -14,7 +15,7 @@ ms.locfileid: "27021227"
 
 
 ## <a name="properties"></a>プロパティ
-| プロパティ     | 型   |説明|
+| プロパティ     | 種類   |説明|
 |:---------------|:--------|:----------|
 | automaticReplies | [automaticRepliesMailTips](../resources/automaticrepliesmailtips.md) | 受信者によって設定されている場合の自動応答に関するメールのヒント。 |
 | customMailTip | String | 受信者のメールボックスに設定可能なカスタム メールのヒント。 |

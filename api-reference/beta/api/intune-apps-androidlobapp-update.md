@@ -2,12 +2,13 @@
 title: androidLobApp の更新
 description: androidLobApp オブジェクトのプロパティを更新します。
 author: tfitzmac
-ms.openlocfilehash: 520574fe1ae3fbc2d529839bd16683d7906ccc09
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 361de693801636efde9ef525fb02b6b41e9e541d
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27356463"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27892527"
 ---
 # <a name="update-androidlobapp"></a>androidLobApp の更新
 

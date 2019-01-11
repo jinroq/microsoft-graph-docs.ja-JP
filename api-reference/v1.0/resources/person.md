@@ -2,12 +2,13 @@
 title: person リソースの種類
 description: メール、連絡先、ソーシャル ネットワークからの、人物に関する情報の集約です。人物は、個人の連絡先、ソーシャル ネットワーキングの連絡先、組織のディレクトリ、最近 (メール、Skype などで) 連絡した人などになります。
 author: simonhult
-ms.openlocfilehash: 519f5ade493300bdaaafeade289cbefea687df58
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Priority
+ms.openlocfilehash: d61d1393795408636ac8f5720e018bb4ea885cb5
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27329457"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27890994"
 ---
 # <a name="person-resource-type"></a>person リソースの種類
 

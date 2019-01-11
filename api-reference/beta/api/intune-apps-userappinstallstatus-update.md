@@ -2,12 +2,13 @@
 title: UserAppInstallStatus を更新します。
 description: UserAppInstallStatus オブジェクトのプロパティを更新します。
 author: tfitzmac
-ms.openlocfilehash: 7ce3ec17f443f90bd4d31df1ec0ee46269334b5f
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: c9357d213c7a5acd9836fb3301b57d8d91979f55
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27341532"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27892471"
 ---
 # <a name="update-userappinstallstatus"></a>UserAppInstallStatus を更新します。
 

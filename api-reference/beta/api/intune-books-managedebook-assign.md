@@ -2,12 +2,13 @@
 title: assign アクション
 description: まだ文書化されていません
 author: tfitzmac
-ms.openlocfilehash: 2c23ade05c26f7cefd710b037fa8a8643e2fbec5
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: bf65c21feffc146deb6c6ea603989a601e17fa6e
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27333846"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27892296"
 ---
 # <a name="assign-action"></a>assign アクション
 

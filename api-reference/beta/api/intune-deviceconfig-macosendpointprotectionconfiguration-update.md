@@ -2,12 +2,13 @@
 title: MacOSEndpointProtectionConfiguration を更新します。
 description: MacOSEndpointProtectionConfiguration オブジェクトのプロパティを更新します。
 author: tfitzmac
-ms.openlocfilehash: 27860f298f6b0e2de12af33c8137df07a6fa16f3
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 69b3374c6931e7b7fabbde753bc2aad61313b5c8
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27338606"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27890791"
 ---
 # <a name="update-macosendpointprotectionconfiguration"></a>MacOSEndpointProtectionConfiguration を更新します。
 

@@ -1,12 +1,13 @@
 ---
 title: openTypeExtension リソース タイプ (オープン拡張機能)
 description: (Office 365 のデータ拡張機能と呼ばれていました) 開いているの拡張機能では、直接グラフ内のリソースに型指定されていないプロパティを追加する簡単な方法を提供します。
-ms.openlocfilehash: eedf61ccdda62ab69673a4489b49db782f514ef0
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Priority
+ms.openlocfilehash: e0e7bf992d75ccb8ee04a3cccb90fd42c996d50a
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27021283"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27891687"
 ---
 # <a name="opentypeextension-resource-type-open-extensions"></a>openTypeExtension リソース タイプ (オープン拡張機能)
 
@@ -68,7 +69,7 @@ Outlook のリソースで開いている拡張機能を作成するときは、
 
 ## <a name="properties"></a>プロパティ
 
-|プロパティ | 型 | 説明 |
+|プロパティ | 種類 | 説明 |
 |:---------------|:--------|:----------|
 |extensionName|String|オープン型のオープン拡張機能の一意のテキスト識別子。必須。|
 |id|String| **extensionName** と拡張子タイプを連結する完全修飾識別子。読み取り専用。|

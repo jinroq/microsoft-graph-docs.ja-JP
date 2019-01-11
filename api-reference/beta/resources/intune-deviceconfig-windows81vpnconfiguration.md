@@ -2,12 +2,13 @@
 title: windows81VpnConfiguration リソースの種類
 description: このプロファイルの構成を提供することによって必要な VPN エンドポイントに接続する Windows 8.1 の (およびそれ以降) のデバイスに指示できます。 指定する認証方法とセキュリティの種類必要 VPN エンドポイントで行うことができます、VPN 接続シームレスなエンド ・ ユーザーのです。
 author: tfitzmac
-ms.openlocfilehash: 97bb867fcd97b8d2c219353a2000d73120be4755
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 2e60d6acca8eca7a22fe215b3873a9e5db26a633
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27356078"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27890847"
 ---
 # <a name="windows81vpnconfiguration-resource-type"></a>windows81VpnConfiguration リソースの種類
 
@@ -28,7 +29,7 @@ ms.locfileid: "27356078"
 |[Windows81VpnConfiguration を削除します。](../api/intune-deviceconfig-windows81vpnconfiguration-delete.md)|なし|の[windows81VpnConfiguration](../resources/intune-deviceconfig-windows81vpnconfiguration.md)を削除します。|
 |[Windows81VpnConfiguration を更新します。](../api/intune-deviceconfig-windows81vpnconfiguration-update.md)|[windows81VpnConfiguration](../resources/intune-deviceconfig-windows81vpnconfiguration.md)|[Windows81VpnConfiguration](../resources/intune-deviceconfig-windows81vpnconfiguration.md)オブジェクトのプロパティを更新します。|
 
-## <a name="properties"></a>Properties
+## <a name="properties"></a>プロパティ
 |プロパティ|種類|説明|
 |:---|:---|:---|
 |ID|String|エンティティのキー。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|

@@ -2,12 +2,13 @@
 title: windows10CompliancePolicy の更新
 description: windows10CompliancePolicy オブジェクトのプロパティを更新します。
 author: tfitzmac
-ms.openlocfilehash: 2e1fe8fb9894e15ed1b122760ddb9d6536ca60f6
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: cd56f1f808a16bc05aa3e4f2c3fc4fb4da74a5a4
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27350177"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27892205"
 ---
 # <a name="update-windows10compliancepolicy"></a>windows10CompliancePolicy の更新
 

@@ -1,12 +1,13 @@
 ---
 title: inferenceClassificationOverride を作成する
 description: 'SMTP アドレスによって識別される送信者の受信トレイの中心の上書きを作成します。 その SMTP アドレスからのメッセージは一貫して分類します。 '
-ms.openlocfilehash: e15793bc8c7012628659144bd503bd8cf979ef61
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 1bccea7a585b5b30681d3f71d20340fe146eb6c6
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27069265"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27892415"
 ---
 # <a name="create-inferenceclassificationoverride"></a>inferenceClassificationOverride を作成する
 
@@ -36,7 +37,7 @@ POST /me/inferenceClassification/overrides
 POST /users/{id}/inferenceClassification/overrides
 ```
 ## <a name="request-headers"></a>要求ヘッダー
-| 名前       | 型 | 説明|
+| 名前       | 種類 | 説明|
 |:---------------|:--------|:----------|
 | Authorization  | string  | ベアラー {トークン}。必須。 |
 | Content-Type | string  | エンティティ本文内のデータの性質です。必須。 |

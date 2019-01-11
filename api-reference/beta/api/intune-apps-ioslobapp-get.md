@@ -2,12 +2,13 @@
 title: Get iosLobApp
 description: iosLobApp オブジェクトのプロパティとリレーションシップを読み取ります。
 author: tfitzmac
-ms.openlocfilehash: 62127c46371000db5111d6276d7dfb9fbf11c769
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: a500d5355119ecdcca7d2b0edba3d8a29c848c7c
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27346656"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27891603"
 ---
 # <a name="get-ioslobapp"></a>Get iosLobApp
 

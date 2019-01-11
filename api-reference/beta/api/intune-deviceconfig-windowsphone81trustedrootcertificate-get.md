@@ -2,12 +2,13 @@
 title: WindowsPhone81TrustedRootCertificate を取得します。
 description: WindowsPhone81TrustedRootCertificate オブジェクトのプロパティと関係を参照してください。
 author: tfitzmac
-ms.openlocfilehash: 1bfb8c7e92c40cb6194dbcae1d56add7bbf0fc84
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 6a10578c6d1f70cb088b4d90f1c75207e1b00294
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27355081"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27890665"
 ---
 # <a name="get-windowsphone81trustedrootcertificate"></a>WindowsPhone81TrustedRootCertificate を取得します。
 

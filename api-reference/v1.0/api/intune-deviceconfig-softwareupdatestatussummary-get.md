@@ -2,12 +2,13 @@
 title: softwareUpdateStatusSummary の取得
 description: softwareUpdateStatusSummary オブジェクトのプロパティとリレーションシップを読み取ります。
 author: tfitzmac
-ms.openlocfilehash: 4f490db4042c03233f2613e44b6a6f90460f9345
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 3c03096e64b75df89f131a01344e1adb6a1bee44
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27354027"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27890273"
 ---
 # <a name="get-softwareupdatestatussummary"></a>softwareUpdateStatusSummary の取得
 

@@ -1,12 +1,13 @@
 ---
 title: 'group: getMemberObjects'
 description: このグループがメンバーであるすべてのグループを返します。チェックは推移的です。注:グループは、ディレクトリ ロールのメンバーになれないので、ディレクトリ ロールは返されません。
-ms.openlocfilehash: 59f3408434c77290552080b6b7b99a20e6fe19db
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: fac39adebc8220458b3fcd0a46a5de5f6e27ab4a
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27022337"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27891260"
 ---
 # <a name="group-getmemberobjects"></a>group: getMemberObjects
 このグループがメンバーであるすべてのグループを返します。チェックは推移的です。注:グループは、ディレクトリ ロールのメンバーになれないので、ディレクトリ ロールは返されません。
@@ -27,14 +28,14 @@ POST /groups/{id}/getMemberObjects
 ```
 
 ## <a name="request-headers"></a>要求ヘッダー
-| 名前       | 型 | 説明|
+| 名前       | 種類 | 説明|
 |:---------------|:--------|:----------|
 | Authorization  | string  | ベアラー {トークン}。必須。 |
 
 ## <a name="request-body"></a>要求本文
 要求本文で、次のパラメーターを含む JSON オブジェクトを指定します。
 
-| パラメーター    | 型   |説明|
+| パラメーター    | Type   |説明|
 |:---------------|:--------|:----------|
 |securityEnabledOnly|ブール値| **false** に設定します。セキュリティが有効なグループのみを返すことは、ユーザーに対してのみサポートされます。|
 

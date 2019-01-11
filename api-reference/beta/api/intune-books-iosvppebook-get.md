@@ -2,12 +2,13 @@
 title: Get iosVppEBook
 description: iosVppEBook オブジェクトのプロパティとリレーションシップを読み取ります。
 author: tfitzmac
-ms.openlocfilehash: 7b0b8acd2cbb50bfe2e9674532dc974d24528388
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 674a6433f5bd159f7566320a98af61baa80af489
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27313539"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27892408"
 ---
 # <a name="get-iosvppebook"></a>Get iosVppEBook
 

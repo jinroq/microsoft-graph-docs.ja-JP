@@ -2,12 +2,13 @@
 title: WindowsPhone81VpnConfiguration を削除します。
 description: WindowsPhone81VpnConfiguration を削除します。
 author: tfitzmac
-ms.openlocfilehash: 171c3fafaca7a34ec8482474dd8107dd161f7c4d
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 17566a05d8f9d6c97adfba4e0a71ce37461f9d61
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27333040"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27890707"
 ---
 # <a name="delete-windowsphone81vpnconfiguration"></a>WindowsPhone81VpnConfiguration を削除します。
 

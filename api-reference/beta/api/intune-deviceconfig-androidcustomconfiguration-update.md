@@ -2,12 +2,13 @@
 title: androidCustomConfiguration の更新
 description: androidCustomConfiguration オブジェクトのプロパティを更新します。
 author: tfitzmac
-ms.openlocfilehash: 7b0b631bb87bf2a139a5b184d1fa2c139a4f9f5a
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: c44621c54bcff42f622456f7ac572a4f6f178adf
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27312601"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27891491"
 ---
 # <a name="update-androidcustomconfiguration"></a>androidCustomConfiguration の更新
 

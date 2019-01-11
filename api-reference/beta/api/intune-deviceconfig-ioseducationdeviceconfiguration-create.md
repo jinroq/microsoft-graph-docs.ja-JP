@@ -2,12 +2,13 @@
 title: IosEducationDeviceConfiguration を作成します。
 description: 新しい iosEducationDeviceConfiguration オブジェクトを作成します。
 author: tfitzmac
-ms.openlocfilehash: aa69819f252d5dad1ac8675455fde7c201103e44
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: c1a03aa4919c935a3d910209d53d1b8040a8746a
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27304943"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27891876"
 ---
 # <a name="create-ioseducationdeviceconfiguration"></a>IosEducationDeviceConfiguration を作成します。
 

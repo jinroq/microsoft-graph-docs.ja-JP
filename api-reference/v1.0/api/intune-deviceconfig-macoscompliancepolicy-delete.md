@@ -2,12 +2,13 @@
 title: Delete macOSCompliancePolicy
 description: macOSCompliancePolicy を削除します。
 author: tfitzmac
-ms.openlocfilehash: 5519de87a0148c17b59efcb17acedb392341c999
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: ce40620fff4a10f244f46a4ae2e940d160a5829e
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27349862"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27892191"
 ---
 # <a name="delete-macoscompliancepolicy"></a>Delete macOSCompliancePolicy
 

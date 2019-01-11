@@ -2,12 +2,13 @@
 title: windowsDefenderAdvancedThreatProtectionConfiguration の削除
 description: windowsDefenderAdvancedThreatProtectionConfiguration を削除します。
 author: tfitzmac
-ms.openlocfilehash: 7c70d9995328c7ab70136f8a536765a0635ad5e5
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 70e424306ea3dacd64f120ce8d99e341da699dc1
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27355140"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27890714"
 ---
 # <a name="delete-windowsdefenderadvancedthreatprotectionconfiguration"></a>windowsDefenderAdvancedThreatProtectionConfiguration の削除
 

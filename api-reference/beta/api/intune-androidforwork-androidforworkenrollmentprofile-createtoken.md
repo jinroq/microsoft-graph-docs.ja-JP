@@ -2,12 +2,13 @@
 title: createToken アクション
 description: まだ文書化されていません
 author: tfitzmac
-ms.openlocfilehash: d1e62847aeea37f9d365bc7c66281aba90c0e031
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: a7c39af9c77728e2ccfbc5bc4412058a3b0b8fc2
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27322163"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27892387"
 ---
 # <a name="createtoken-action"></a>createToken アクション
 

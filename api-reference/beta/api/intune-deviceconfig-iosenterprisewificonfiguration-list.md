@@ -2,12 +2,13 @@
 title: リスト iosEnterpriseWiFiConfigurations
 description: IosEnterpriseWiFiConfiguration オブジェクトのプロパティと関係を一覧表示します。
 author: tfitzmac
-ms.openlocfilehash: df091667230849d9bf88ba20bb67bd857e833820
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 1576300986fbb231dc872a47fbfebc1880eb7429
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27352333"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27891673"
 ---
 # <a name="list-iosenterprisewificonfigurations"></a>リスト iosEnterpriseWiFiConfigurations
 

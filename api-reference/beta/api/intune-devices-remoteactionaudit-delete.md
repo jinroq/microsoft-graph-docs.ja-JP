@@ -2,12 +2,13 @@
 title: RemoteActionAudit を削除します。
 description: RemoteActionAudit を削除します。
 author: tfitzmac
-ms.openlocfilehash: ce475fb687d2d0aa465a2535c3f952228dff8420
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 6155e39285b3be9067b76c94005c7d899459639a
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27359858"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27891967"
 ---
 # <a name="delete-remoteactionaudit"></a>RemoteActionAudit を削除します。
 

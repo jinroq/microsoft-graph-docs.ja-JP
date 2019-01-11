@@ -2,12 +2,13 @@
 title: getMobileAppCount 関数
 description: まだ文書化されていません
 author: tfitzmac
-ms.openlocfilehash: 35ff8211fee31938551cc8eb2fce72c79ce39bc9
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: ae67ba630ddd387d1c03cb599c99a7ed38717145
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27358864"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27891862"
 ---
 # <a name="getmobileappcount-function"></a>getMobileAppCount 関数
 

@@ -2,12 +2,13 @@
 title: DepOnboardingSetting を更新します。
 description: DepOnboardingSetting オブジェクトのプロパティを更新します。
 author: tfitzmac
-ms.openlocfilehash: d4a50c485da98a182562ca5bd353d71dd854b4f4
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 05b31f007aece229dacee41af354fdf7ab2807ba
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27326783"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27891120"
 ---
 # <a name="update-deponboardingsetting"></a>DepOnboardingSetting を更新します。
 

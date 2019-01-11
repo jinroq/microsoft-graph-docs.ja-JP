@@ -2,12 +2,13 @@
 title: windowsUniversalAppX の更新
 description: windowsUniversalAppX オブジェクトのプロパティを更新します。
 author: tfitzmac
-ms.openlocfilehash: d23506f39aff998533d662a867e7506c1faa2d5b
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: b47da8672b980b30471f87bbbe4d9cee14eb5089
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27342176"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27892520"
 ---
 # <a name="update-windowsuniversalappx"></a>windowsUniversalAppX の更新
 

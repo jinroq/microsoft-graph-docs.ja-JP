@@ -2,12 +2,13 @@
 title: windows10EnterpriseModernAppManagementConfiguration リソースの種類
 description: Windows 10 Enterprise モダン アプリの管理構成です。
 author: tfitzmac
-ms.openlocfilehash: 8058deba88acb7727d3bac006a869e4d446c1b32
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: dc82db213f8b659b96a89a4f21b9aefa209cc809
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27347685"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27891568"
 ---
 # <a name="windows10enterprisemodernappmanagementconfiguration-resource-type"></a>windows10EnterpriseModernAppManagementConfiguration リソースの種類
 

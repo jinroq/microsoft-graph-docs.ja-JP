@@ -2,12 +2,13 @@
 title: androidWorkProfileEasEmailProfileBase リソースの種類
 description: Android 作業プロファイルの EA は、電子メール プロファイルの基本
 author: tfitzmac
-ms.openlocfilehash: 7a0f21794ef63f612bf87ba491d58c84269a590e
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: a2f496148c72b51441540d66034b81b27decdde7
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27325376"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27891246"
 ---
 # <a name="androidworkprofileeasemailprofilebase-resource-type"></a>androidWorkProfileEasEmailProfileBase リソースの種類
 
@@ -25,7 +26,7 @@ Android 作業プロファイルの EA は、電子メール プロファイル�
 |[リスト androidWorkProfileEasEmailProfileBases](../api/intune-deviceconfig-androidworkprofileeasemailprofilebase-list.md)|[androidWorkProfileEasEmailProfileBase](../resources/intune-deviceconfig-androidworkprofileeasemailprofilebase.md)コレクション|[AndroidWorkProfileEasEmailProfileBase](../resources/intune-deviceconfig-androidworkprofileeasemailprofilebase.md)オブジェクトのプロパティと関係を一覧表示します。|
 |[AndroidWorkProfileEasEmailProfileBase を取得します。](../api/intune-deviceconfig-androidworkprofileeasemailprofilebase-get.md)|[androidWorkProfileEasEmailProfileBase](../resources/intune-deviceconfig-androidworkprofileeasemailprofilebase.md)|[AndroidWorkProfileEasEmailProfileBase](../resources/intune-deviceconfig-androidworkprofileeasemailprofilebase.md)オブジェクトのプロパティと関係を参照してください。|
 
-## <a name="properties"></a>Properties
+## <a name="properties"></a>プロパティ
 |プロパティ|種類|説明|
 |:---|:---|:---|
 |ID|String|エンティティのキー。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|

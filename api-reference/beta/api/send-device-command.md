@@ -1,12 +1,13 @@
 ---
 title: デバイス コマンドを送信します。
 description: 'この API は、Microsoft アカウントに関連付けられているデバイスのコマンドをプロジェクトのローマの機能を使用します。 GET の呼び出しを実行した後は`me/devices`、デバイスにコマンドを実行するデバイスの ID を渡します。 コマンドの 2 つの種類がサポートされている: LaunchURI と AppServices。 LaunchURI を使用している場合は、*型*と*ペイロード*のパラメーターを指定します。 AppService 呼び出しに指定します '
-ms.openlocfilehash: bf330ab1234ef6ce22c6a43711621827b628a7ac
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 54349e2f43a776523614b0cd2abbc209e89305fd
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27070419"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27891988"
 ---
 # <a name="send-device-command"></a>デバイス コマンドを送信します。
 
@@ -77,7 +78,7 @@ HTTP/1.1 201 OK
 ```
 ## <a name="command-properties"></a>コマンドのプロパティ 
 
-|**名前**|**種類**|**説明**|
+|**Name**|**型**|**説明**|
 |:----|:------|:------|
 |payload | microsoft.graph.json| ペイロードのアプリケーション サービスに送信するか、デバイスの URI を起動します。 |
 |responsePayload | microsoft.graph.json| ペイロードは、ターゲット ・ デバイスから返されます。 |

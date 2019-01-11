@@ -1,12 +1,13 @@
 ---
 title: 'reportRoot: getSkypeForBusinessPeerToPeerActivityUserCounts'
 description: 組織内で実施されたピア ツー ピア セッションの一意のユーザー数と種類について、使用傾向を取得します。 ピア ツー ピア セッションでのセッションの種類には IM、オーディオ、ビデオ、アプリケーション共有、ファイル転送があります。
-ms.openlocfilehash: ef3d9e7e9f10930cf383f41aed54a2595d181361
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 466a725b9dd9f357c082d48817b5134e702c8b30
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27072760"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27891869"
 ---
 # <a name="reportroot-getskypeforbusinesspeertopeeractivityusercounts"></a>reportRoot: getSkypeForBusinessPeerToPeerActivityUserCounts
 
@@ -38,7 +39,7 @@ GET /reports/getSkypeForBusinessPeerToPeerActivityUserCounts(period='{period_val
 
 要求 URL に、次のパラメーターと有効な値を指定します。
 
-| パラメーター | 型   | 説明                              |
+| パラメーター | Type   | 説明                              |
 | :-------- | :----- | :--------------------------------------- |
 | period    | 文字列 | レポートを集計する期間の長さを指定します。 {period_value} でサポートされている値は D7、D30、D90、D180 です。 これらの値は、D*n* の形式 (*n* はレポートを集計する日数) に従います。 必須。 |
 
@@ -73,7 +74,7 @@ GET /reports/getSkypeForBusinessPeerToPeerActivityUserCounts(period='{period_val
 
 かどうかは成功すると、このメソッドが返されます、`200 OK`応答コードおよび応答の本文に**[skypeForBusinessPeerToPeerActivityUserCounts](../resources/skypeforbusinesspeertopeeractivityusercounts.md)** オブジェクトです。
 
-## <a name="example"></a>使用例
+## <a name="example"></a>例
 
 ### <a name="csv"></a>CSV
 

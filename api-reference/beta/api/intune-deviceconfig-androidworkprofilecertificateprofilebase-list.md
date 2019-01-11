@@ -2,12 +2,13 @@
 title: リスト androidWorkProfileCertificateProfileBases
 description: AndroidWorkProfileCertificateProfileBase オブジェクトのプロパティと関係を一覧表示します。
 author: tfitzmac
-ms.openlocfilehash: 519a619d8c3702d10a5387a1d9a163d517f6ca0a
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: b73562cfe017d783059ed13a2b1388c0dc43b18c
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27346005"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27891029"
 ---
 # <a name="list-androidworkprofilecertificateprofilebases"></a>リスト androidWorkProfileCertificateProfileBases
 

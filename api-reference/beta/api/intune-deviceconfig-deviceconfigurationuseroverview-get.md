@@ -2,12 +2,13 @@
 title: Get deviceConfigurationUserOverview
 description: deviceConfigurationUserOverview オブジェクトのプロパティとリレーションシップを読み取ります。
 author: tfitzmac
-ms.openlocfilehash: 762aafcf71115d020086b9fdee54d25b288dfb2f
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 5825241cbd1c85e1791a0f6ba007f55a6c680c0c
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27317802"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27891183"
 ---
 # <a name="get-deviceconfigurationuseroverview"></a>Get deviceConfigurationUserOverview
 

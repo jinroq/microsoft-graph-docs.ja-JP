@@ -1,12 +1,13 @@
 ---
 title: androidForWorkEnrollmentProfile リソース タイプ
 description: Google のクラウド管理を使用して COSU デバイスを登録するために使われる登録プロファイルです。
-ms.openlocfilehash: c79c2b63d71caa75941c3bba07832d98e8becdc4
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: a10e3a153cc21837ab015ab0c08e8c8b6ee0ac9b
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27070756"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27890973"
 ---
 # <a name="androidforworkenrollmentprofile-resource-type"></a>androidForWorkEnrollmentProfile リソース タイプ
 
@@ -27,7 +28,7 @@ Google のクラウド管理を使用して COSU デバイスを登録するた�
 |[createToken action](../api/intune-androidforwork-androidforworkenrollmentprofile-createtoken.md)|なし|まだ文書化されていません|
 
 ## <a name="properties"></a>プロパティ
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
 |accountId|String|登録プロファイルが属するテナント GUID。|
 |id|String|登録プロファイル用の一意な GUID。|
