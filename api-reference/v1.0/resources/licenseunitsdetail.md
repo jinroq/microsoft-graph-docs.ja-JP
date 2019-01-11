@@ -1,27 +1,28 @@
 ---
 title: licenseUnitsDetail リソースの種類
 description: subscribedSku エンティティの **prepaidUnits** のプロパティは、**licenseUnitsDetail** 型です。
-ms.openlocfilehash: e8cf5253676dab8a4b31c3ab33faa0af3ddfd527
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 8c2a4e995c7e1afa63b7f9daea6b61cbaf974958
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27020381"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27810697"
 ---
-# <a name="licenseunitsdetail-resource-type"></a><span data-ttu-id="76468-103">licenseUnitsDetail リソースの種類</span><span class="sxs-lookup"><span data-stu-id="76468-103">licenseUnitsDetail resource type</span></span>
+# <a name="licenseunitsdetail-resource-type"></a><span data-ttu-id="cda58-103">licenseUnitsDetail リソースの種類</span><span class="sxs-lookup"><span data-stu-id="cda58-103">licenseUnitsDetail resource type</span></span>
 
-<span data-ttu-id="76468-104">[subscribedSku](subscribedsku.md) エンティティの **prepaidUnits** のプロパティは、**licenseUnitsDetail** 型です。</span><span class="sxs-lookup"><span data-stu-id="76468-104">The **prepaidUnits** property of the [subscribedSku](subscribedsku.md) entity is of type **licenseUnitsDetail**.</span></span>
+<span data-ttu-id="cda58-104">[subscribedSku](subscribedsku.md) エンティティの **prepaidUnits** のプロパティは、**licenseUnitsDetail** 型です。</span><span class="sxs-lookup"><span data-stu-id="cda58-104">The **prepaidUnits** property of the [subscribedSku](subscribedsku.md) entity is of type **licenseUnitsDetail**.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="76468-105">プロパティ</span><span class="sxs-lookup"><span data-stu-id="76468-105">Properties</span></span>
-| <span data-ttu-id="76468-106">プロパティ</span><span class="sxs-lookup"><span data-stu-id="76468-106">Property</span></span>     | <span data-ttu-id="76468-107">型</span><span class="sxs-lookup"><span data-stu-id="76468-107">Type</span></span>   |<span data-ttu-id="76468-108">説明</span><span class="sxs-lookup"><span data-stu-id="76468-108">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="cda58-105">プロパティ</span><span class="sxs-lookup"><span data-stu-id="cda58-105">Properties</span></span>
+| <span data-ttu-id="cda58-106">プロパティ</span><span class="sxs-lookup"><span data-stu-id="cda58-106">Property</span></span>     | <span data-ttu-id="cda58-107">種類</span><span class="sxs-lookup"><span data-stu-id="cda58-107">Type</span></span>   |<span data-ttu-id="cda58-108">説明</span><span class="sxs-lookup"><span data-stu-id="cda58-108">Description</span></span>|
 |:-------------|:-----|:----------|
-|<span data-ttu-id="76468-109">enabled</span><span class="sxs-lookup"><span data-stu-id="76468-109">enabled</span></span>|<span data-ttu-id="76468-110">Int32</span><span class="sxs-lookup"><span data-stu-id="76468-110">Int32</span></span>| <span data-ttu-id="76468-111">有効になっている単位の数です。</span><span class="sxs-lookup"><span data-stu-id="76468-111">The number of units that are enabled.</span></span> |
-|<span data-ttu-id="76468-112">suspended</span><span class="sxs-lookup"><span data-stu-id="76468-112">suspended</span></span>|<span data-ttu-id="76468-113">Int32</span><span class="sxs-lookup"><span data-stu-id="76468-113">Int32</span></span>| <span data-ttu-id="76468-114">利用停止中の単位の数です。</span><span class="sxs-lookup"><span data-stu-id="76468-114">The number of units that are suspended.</span></span> |
-|<span data-ttu-id="76468-115">warning</span><span class="sxs-lookup"><span data-stu-id="76468-115">warning</span></span>|<span data-ttu-id="76468-116">Int32</span><span class="sxs-lookup"><span data-stu-id="76468-116">Int32</span></span>| <span data-ttu-id="76468-117">警告ステータスのユニットの数です。</span><span class="sxs-lookup"><span data-stu-id="76468-117">The number of units that are in warning status.</span></span> |
+|<span data-ttu-id="cda58-109">enabled</span><span class="sxs-lookup"><span data-stu-id="cda58-109">enabled</span></span>|<span data-ttu-id="cda58-110">Int32</span><span class="sxs-lookup"><span data-stu-id="cda58-110">Int32</span></span>| <span data-ttu-id="cda58-111">有効になっている単位の数です。</span><span class="sxs-lookup"><span data-stu-id="cda58-111">The number of units that are enabled.</span></span> |
+|<span data-ttu-id="cda58-112">suspended</span><span class="sxs-lookup"><span data-stu-id="cda58-112">suspended</span></span>|<span data-ttu-id="cda58-113">Int32</span><span class="sxs-lookup"><span data-stu-id="cda58-113">Int32</span></span>| <span data-ttu-id="cda58-114">利用停止中の単位の数です。</span><span class="sxs-lookup"><span data-stu-id="cda58-114">The number of units that are suspended.</span></span> |
+|<span data-ttu-id="cda58-115">warning</span><span class="sxs-lookup"><span data-stu-id="cda58-115">warning</span></span>|<span data-ttu-id="cda58-116">Int32</span><span class="sxs-lookup"><span data-stu-id="cda58-116">Int32</span></span>| <span data-ttu-id="cda58-117">警告ステータスのユニットの数です。</span><span class="sxs-lookup"><span data-stu-id="cda58-117">The number of units that are in warning status.</span></span> |
 
-## <a name="json-representation"></a><span data-ttu-id="76468-118">JSON 表記</span><span class="sxs-lookup"><span data-stu-id="76468-118">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="cda58-118">JSON 表記</span><span class="sxs-lookup"><span data-stu-id="cda58-118">JSON representation</span></span>
 
-<span data-ttu-id="76468-119">以下は、リソースの JSON 表記です</span><span class="sxs-lookup"><span data-stu-id="76468-119">Here is a JSON representation of the resource</span></span>
+<span data-ttu-id="cda58-119">以下は、リソースの JSON 表記です</span><span class="sxs-lookup"><span data-stu-id="cda58-119">Here is a JSON representation of the resource</span></span>
 
 <!-- {
   "blockType": "resource",
