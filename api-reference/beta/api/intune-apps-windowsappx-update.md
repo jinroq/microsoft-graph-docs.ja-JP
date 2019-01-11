@@ -2,12 +2,13 @@
 title: WindowsAppX を更新します。
 description: WindowsAppX オブジェクトのプロパティを更新します。
 author: tfitzmac
-ms.openlocfilehash: f708d15a262eb6bd6efb36f6713021b33d9527b3
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 18bef02e449c46e6a9b5fc35474909a14811280d
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27316031"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27808065"
 ---
 # <a name="update-windowsappx"></a>WindowsAppX を更新します。
 

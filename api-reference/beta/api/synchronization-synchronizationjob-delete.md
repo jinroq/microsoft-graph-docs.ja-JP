@@ -1,12 +1,13 @@
 ---
 title: SynchronizationJob を削除します。
 description: 同期ジョブを停止し、それに関連付けられているすべての状態を完全に削除します。 同期されたアカウントのままには。
-ms.openlocfilehash: d77101e8dfaf55a36dfd7260afb30aade81bbae8
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 95a7d52e9e6fba9bc3f528aedfc5a082d459a003
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27072899"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27835687"
 ---
 # <a name="delete-synchronizationjob"></a>SynchronizationJob を削除します。
 
@@ -31,7 +32,7 @@ DELETE /servicePrincipals/{id}/synchronization/jobs/{jobId}/
 
 ## <a name="request-headers"></a>要求ヘッダー
 
-| 名前           | 型    | 説明|
+| 名前           | 種類    | 説明|
 |:---------------|:--------|:-----------|
 | Authorization  | string  | ベアラー {トークン}。必須。 |
 

@@ -1,12 +1,13 @@
 ---
 title: synchronizationTemplate リソースの種類
 description: " すべてのユーザーは、同期スキーマを含む、既定の設定を表示するテンプレートを取得できます。"
-ms.openlocfilehash: 90850ad43fdd14fc38ff6ae8cfa97f47806a289d
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: e98d3fa16d0a80ac9353aaa75200d8cb24d3e904
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27070566"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27833076"
 ---
 # <a name="synchronizationtemplate-resource-type"></a>synchronizationTemplate リソースの種類
 
@@ -29,11 +30,11 @@ ms.locfileid: "27070566"
 
 ## <a name="properties"></a>プロパティ
 
-| プロパティ      | 型                      | 説明                  |
+| プロパティ      | 種類                      | 説明                  |
 |:--------------|:--------------------------|:-----------------------------|
-|id             |String                     |テンプレートの一意の識別子です。|
+|ID             |String                     |テンプレートの一意の識別子です。|
 |applicationId  |文字列型 (String)                     |このテンプレートが属するアプリケーションの識別子です。|
-|既定値です。        |ブール値                    |`true`場合は、アプリケーションの既定の設定をするのには、このテンプレートをお勧めします。|
+|既定値です。        |ブール型                    |`true`場合は、アプリケーションの既定の設定をするのには、このテンプレートをお勧めします。|
 |説明    |文字列                     |テンプレートの説明です。|
 |検出可能   |String                     |`true`このテンプレートは、アプリケーションのインスタンス (サービス主体) の使用可能なテンプレートのコレクションに表示されます。 場合、|
 |factoryTag     |String                     |同期エンジンでサポートされている既知の工場出荷時のタグの 1 つです。 **FactoryTag**は、このテンプレートに基づいてジョブを処理するときに使用する実装を同期エンジンを指示します。|

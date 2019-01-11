@@ -2,12 +2,13 @@
 title: Get managedMobileApp
 description: managedMobileApp オブジェクトのプロパティとリレーションシップを読み取ります。
 author: tfitzmac
-ms.openlocfilehash: 4bb7e6d0e598f612facbfd0f0b35929150271c42
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: a85e862bd72aa793319f05788d0489794f343c7a
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27324165"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27832817"
 ---
 # <a name="get-managedmobileapp"></a>Get managedMobileApp
 

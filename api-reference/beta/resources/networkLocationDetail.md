@@ -1,12 +1,13 @@
 ---
 title: networkLocationDetail リソースの種類
 description: ネットワーク上の場所に関連付けられている詳細情報を示します。 .
-ms.openlocfilehash: 5dd1410318d380a1b943de6a7dbb0d739172cc76
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: bfa84591f543253ed794016bbc2d25d325cd0bcc
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27070961"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27834322"
 ---
 # <a name="networklocationdetail-resource-type"></a>networkLocationDetail リソースの種類
 ネットワーク上の場所に関連付けられている詳細情報を示します。 .
@@ -14,7 +15,7 @@ ms.locfileid: "27070961"
 
 
 ## <a name="properties"></a>プロパティ
-| プロパティ     | 型   |説明|
+| プロパティ     | 種類   |説明|
 |:---------------|:--------|:----------|
 |networkType|String|ネットワークの種類を提供します。 使用可能な値は、 `intranet`、 `extranet`、`namedNetwork`と`trusted`。|
 |ネットワーク名リソース|String|ネットワークの名前です。|

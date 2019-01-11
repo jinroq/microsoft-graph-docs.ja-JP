@@ -1,12 +1,13 @@
 ---
 title: メンバーを一覧表示する
 description: グループの直接メンバーの一覧を取得します。 グループでは、メンバーとしてユーザー、連絡先、およびその他のグループを持つことができます。
-ms.openlocfilehash: d9e756ecdbedbd17a446b27d33d3fafc23822636
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Priority
+ms.openlocfilehash: d7dfaede0e9deae6806499b504c6a58da2381ef5
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27021636"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27833286"
 ---
 # <a name="list-members"></a>メンバーを一覧表示する
 グループの直接メンバーの一覧を取得します。グループは、ユーザー、連絡先、および他のグループをメンバーとして持つことができます。この操作は推移的ではありません。
@@ -30,7 +31,7 @@ GET /groups/{id}/members
 このメソッドは、応答をカスタマイズするための [OData クエリ パラメーター](/graph/query-parameters)をサポートします。
 
 ## <a name="request-headers"></a>要求ヘッダー
-| 名前       | 型 | 説明|
+| 名前       | 種類 | 説明|
 |:-----------|:------|:----------|
 | Authorization  | string  | ベアラー {トークン}。必須。 |
 

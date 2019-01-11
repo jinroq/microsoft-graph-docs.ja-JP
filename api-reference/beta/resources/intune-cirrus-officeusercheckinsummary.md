@@ -2,12 +2,13 @@
 title: officeUserCheckinSummary リソースの種類
 description: チェックインのテナント統計 (stats) を記述するエンティティです。
 author: tfitzmac
-ms.openlocfilehash: 5064882f74a13feca726a6ebb91c34cf9a85af86
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: c2470b1e531f1b268d6797fe2692baf0031728b3
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27306329"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27834022"
 ---
 # <a name="officeusercheckinsummary-resource-type"></a>officeUserCheckinSummary リソースの種類
 
@@ -16,7 +17,7 @@ ms.locfileid: "27306329"
 > **注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
 
 チェックインのテナント統計 (stats) を記述するエンティティです。
-## <a name="properties"></a>Properties
+## <a name="properties"></a>プロパティ
 |プロパティ|種類|説明|
 |:---|:---|:---|
 |succeededUserCount|Int32|成功したユーザーの合計は、過去 3 か月のアドインを確認します。|

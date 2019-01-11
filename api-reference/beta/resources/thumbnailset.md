@@ -3,12 +3,13 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
 title: ThumbnailSet
-ms.openlocfilehash: d88e19242ea6c271e206a4c1a582fdbbfac8877b
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 145134d6a3ad85134ea2d6c4d72e050bc17b31d1
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27067702"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27830192"
 ---
 # <a name="thumbnailset-resource-type"></a>ThumbnailSet リソースの種類
 
@@ -40,9 +41,9 @@ ms.locfileid: "27067702"
 
 ## <a name="properties"></a>プロパティ
 
-| プロパティ | 型                      | 説明                                                                       |
+| プロパティ | 種類                      | 説明                                                                       |
 |:---------|:--------------------------|:----------------------------------------------------------------------------------|
-| id       | String                    | アイテム内の ID。読み取り専用です。                                                |
+| ID       | String                    | アイテム内の ID。読み取り専用です。                                                |
 | large    | [Thumbnail](thumbnail.md) | 1920 x 1920 にスケーリングされたサムネイル。                                                     |
 | medium   | [Thumbnail](thumbnail.md) | 176x176 にスケーリングされたサムネイル。                                                       |
 | small    | [Thumbnail](thumbnail.md) | 48 x 48 にトリミングされたサムネイル。                                                        |

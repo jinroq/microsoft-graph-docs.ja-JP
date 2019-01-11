@@ -1,12 +1,13 @@
 ---
 title: orgContact リソースの種類
 description: 以下は、リソースの JSON 表記です
-ms.openlocfilehash: 90d25d3ef7688372e4e961220bc454a2b5607344
-ms.sourcegitcommit: f3d479edf03935d0edbbc7668a65f7cde2a56c92
+localization_priority: Normal
+ms.openlocfilehash: bdf63762a4bb632dccc3578963f42b91d7127fe1
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/15/2018
-ms.locfileid: "27283669"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27832971"
 ---
 # <a name="orgcontact-resource-type"></a>orgContact リソースの種類
 
@@ -25,7 +26,7 @@ ms.locfileid: "27283669"
 |[getMemberGroups](../api/orgcontact-getmembergroups.md)|String コレクション| メンバーである、指定した連絡先のすべてのグループを返します。 |
 |[getMemberObjects](../api/orgcontact-getmemberobjects.md)|String コレクション| DirectoryObjects のメンバーである連絡先の一覧を返します。 |
 
-## <a name="properties"></a>Properties
+## <a name="properties"></a>プロパティ
 
 | プロパティ     | 種類   |説明|
 |:---------------|:--------|:----------|
@@ -41,7 +42,7 @@ ms.locfileid: "27283669"
 | mailNickname                 | String                                                     | 電子メール エイリアス (電子メール アドレスの前に保留中の部分、@ 記号) この組織の連絡先の。                                                                                                                                                                                                                                                                                |
 | onPremisesLastSyncDateTime   | DateTimeOffset                                             | 日付と時刻がこの組織のメンバーが前回との同期、オンプレミス AD。 Timestamp 型は、ISO 8601 形式を使用して日付と時刻の情報を表し、常に UTC 時間です。 たとえば、2014 年 1 月 1 日に UTC 午前 0 時が、これのようになります。: ' 2014-01-01T00:00:00Z' です。   |
 | onPremisesProvisioningErrors |[onPremisesProvisioningError](onpremisesprovisioningerror.md)コレクション       | プロビジョニング エラーがこの組織の連絡先の同期の一覧です。                                                                                                                                                                                                                                                                                                |
-|onPremisesSyncEnabled|Boolean|**true の**場合は、オンプレミス ディレクトリからは、このオブジェクトを同期してください。**false**場合は、このオブジェクトがもともと設置ディレクトリからの同期が不要になった同期され、Exchange にもう**null**の場合は、オンプレミス ディレクトリ (既定値) からこのオブジェクトが同期されていません。|
+|onPremisesSyncEnabled|ブール型|**true の**場合は、オンプレミス ディレクトリからは、このオブジェクトを同期してください。**false**場合は、このオブジェクトがもともと設置ディレクトリからの同期が不要になった同期され、Exchange にもう**null**の場合は、オンプレミス ディレクトリ (既定値) からこのオブジェクトが同期されていません。|
 | phones                       | [phone](phone.md) コレクション                            | この組織の連絡先の電話のリストです。 電話の種類は、モバイル、ビジネス、および businessFax にあります。 各タイプの 1 つだけというものは、コレクション内に存在します。                                                                                                                       |
 | proxyAddresses               | String コレクション                                         | たとえば: ["SMTP: bob@contoso.com"、"smtp: bob@sales.contoso.com"]。 **Any**演算子は、複数値を持つプロパティのフィルター式に必要です。 サポートしています\$フィルターです。                                                                                                                                                                               |
 | surname                      | String                                                     | この組織の連絡先の姓を入力します。                          |
@@ -51,8 +52,8 @@ ms.locfileid: "27283669"
 | リレーションシップ | 型   |説明|
 |:---------------|:--------|:----------|
 |directReports|[directoryObject](directoryobject.md) collection| 連絡先の直属の部下。 (、ユーザーおよび連絡先のマネージャー プロパティが設定された連絡先にします。) 読み取り専用です。 Null 許容型。|
-|manager|[directoryObject](directoryobject.md)| ユーザーまたは連絡先は、この連絡先のマネージャーです。 読み取りのみ可能です。|
-|memberOf|[directoryObject](directoryobject.md) コレクション| メンバーである連絡先のグループです。 読み取り専用。 Null 許容型。|
+|manager|[directoryObject](directoryobject.md)| ユーザーまたは連絡先は、この連絡先のマネージャーです。 読み取り専用です。|
+|memberOf|[directoryObject](directoryobject.md) コレクション| メンバーである連絡先のグループです。 読み取り専用です。 Null 許容型。|
 
 ## <a name="json-representation"></a>JSON 表記
 

@@ -2,12 +2,13 @@
 title: エンドポイントのリスト
 description: エンドポイント オブジェクトの一覧を取得します。
 author: dkershaw10
-ms.openlocfilehash: d455cb8a5d1fb07a3d97cea376d9e2e49266892d
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: ce208e34cd4d8401d537a36626eeefc7cb5ae126
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27315947"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27833265"
 ---
 # <a name="list-endpoints"></a>エンドポイントのリスト
 

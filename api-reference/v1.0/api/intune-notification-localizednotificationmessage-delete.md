@@ -2,12 +2,13 @@
 title: Delete localizedNotificationMessage
 description: localizedNotificationMessage を削除します。
 author: tfitzmac
-ms.openlocfilehash: c77aa563734ca9c57a64b2316de87928f571eee7
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 02e20332549df460059ac4f992207d4c426af809
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27346103"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27825964"
 ---
 # <a name="delete-localizednotificationmessage"></a>Delete localizedNotificationMessage
 

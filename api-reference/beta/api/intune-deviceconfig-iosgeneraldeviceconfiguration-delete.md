@@ -2,12 +2,13 @@
 title: Delete iosGeneralDeviceConfiguration
 description: iosGeneralDeviceConfiguration を削除します。
 author: tfitzmac
-ms.openlocfilehash: 3c0c3e846192df19a79ecae1ea07916c3426241b
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 2eee65afe58c61da619f4db5dce56932752d980d
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27301870"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27831888"
 ---
 # <a name="delete-iosgeneraldeviceconfiguration"></a>Delete iosGeneralDeviceConfiguration
 

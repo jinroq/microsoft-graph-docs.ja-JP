@@ -1,12 +1,13 @@
 ---
 title: リスト ポリシー
 description: ディレクトリ内のすべてのポリシー オブジェクトを取得します。
-ms.openlocfilehash: 5abff0973a53dc3bddfd256dbc43faad519e20e4
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: ea97146b646068515ab6fdc7fab4b3cefb16031e
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27073608"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27836058"
 ---
 # <a name="list-policies"></a>リスト ポリシー
 
@@ -29,7 +30,7 @@ ms.locfileid: "27073608"
 GET /policies
 ```
 ## <a name="request-headers"></a>要求ヘッダー
-| 名前       | 型 | 説明|
+| 名前       | 種類 | 説明|
 |:---------------|:--------|:----------|
 | Authorization  | string  | ベアラー {トークン}。必須。 |
 
@@ -40,7 +41,7 @@ GET /policies
 
 かどうかは成功すると、このメソッドを返します`200 OK`応答の本体のコードと[ポリシー](../resources/policy.md)オブジェクトを応答します。 それ以外の場合.
 
-## <a name="example"></a>使用例
+## <a name="example"></a>例
 次の例では、すべてのポリシーを取得します。
 
 ##### <a name="request"></a>要求

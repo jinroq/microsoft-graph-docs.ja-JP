@@ -2,12 +2,13 @@
 title: omaSettingStringXml リソースの種類
 description: OMA 設定文字列の XML 定義です。
 author: tfitzmac
-ms.openlocfilehash: c7f7d07a94550d86e6507e9202195d09e9555f60
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 263325829895c87a3aa8b443970f92df667a04ec
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27332012"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27829589"
 ---
 # <a name="omasettingstringxml-resource-type"></a>omaSettingStringXml リソースの種類
 

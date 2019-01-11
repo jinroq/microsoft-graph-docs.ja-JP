@@ -2,12 +2,13 @@
 title: importedWindowsAutopilotDeviceIdentity リソースの種類
 description: インポートした Windows Autopilot デバイス。
 author: tfitzmac
-ms.openlocfilehash: bca28ef0e57068beef4c6b305c20115dbcdecd51
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 26cc980745b699c53e31aadfff2328150196ac63
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27325990"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27830136"
 ---
 # <a name="importedwindowsautopilotdeviceidentity-resource-type"></a>importedWindowsAutopilotDeviceIdentity リソースの種類
 

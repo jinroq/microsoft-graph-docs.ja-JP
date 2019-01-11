@@ -2,12 +2,13 @@
 title: windowsUpdateForBusinessConfiguration リソースの種類
 description: Windows Update for Business の構成です。
 author: tfitzmac
-ms.openlocfilehash: 9b9573ba3e0d2f4f78b05b9e903e8d2a42d548dd
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: c8376508e701262deca7fdacdd49add179d7dae5
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27343898"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27815478"
 ---
 # <a name="windowsupdateforbusinessconfiguration-resource-type"></a>windowsUpdateForBusinessConfiguration リソースの種類
 
@@ -30,7 +31,7 @@ Windows Update for Business の構成です。
 |[extendFeatureUpdatesPause アクション](../api/intune-deviceconfig-windowsupdateforbusinessconfiguration-extendfeatureupdatespause.md)|なし|ビジネス リング用の Windows Update の更新一時停止の機能を拡張します。|
 |[extendQualityUpdatesPause アクション](../api/intune-deviceconfig-windowsupdateforbusinessconfiguration-extendqualityupdatespause.md)|なし|ビジネス リングの Windows の更新プログラムの品質の更新プログラムの一時停止を拡張します。|
 
-## <a name="properties"></a>Properties
+## <a name="properties"></a>プロパティ
 |プロパティ|種類|説明|
 |:---|:---|:---|
 |ID|String|エンティティのキー。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|

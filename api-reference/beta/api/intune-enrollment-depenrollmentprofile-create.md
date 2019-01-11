@@ -2,12 +2,13 @@
 title: DepEnrollmentProfile を作成します。
 description: 新しい depEnrollmentProfile オブジェクトを作成します。
 author: tfitzmac
-ms.openlocfilehash: 5038013701692611272ffc922c81b37b16a55122
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 3c7936af86b25fbf0c4e022adef0bc387c56b196
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27350737"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27828148"
 ---
 # <a name="create-depenrollmentprofile"></a>DepEnrollmentProfile を作成します。
 

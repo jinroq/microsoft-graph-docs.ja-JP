@@ -1,12 +1,13 @@
 ---
 title: chatThread リソースの種類
 description: ChatThread は、マイクロソフトのチームでの chatMessages のコレクションです。
-ms.openlocfilehash: ef8f118ae4354a5e4197802708aecfa1fb6f8cb8
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Priority
+ms.openlocfilehash: 5060d7ea846f5aedec5551aaf247642a36f73c1c
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27073300"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27833244"
 ---
 # <a name="chatthread-resource-type"></a>chatThread リソースの種類
 
@@ -23,9 +24,9 @@ ChatThread は、マイクロソフトのチームでは、 [chatMessages](chatm
 |[スレッドを作成する](../api/channel-post-chatthreads.md) | [chatThread](chatthread.md) |指定のチャネルでは、最初のメッセージを提供する新しいスレッドを開始します。|
 
 ## <a name="properties"></a>プロパティ
-| プロパティ     | 型   |説明|
+| プロパティ     | 種類   |説明|
 |:---------------|:--------|:----------|
-|id|String| 読み取り専用。|
+|ID|String| 読み取り専用です。|
 
 ## <a name="relationships"></a>リレーションシップ
 | リレーションシップ | 型   |説明|

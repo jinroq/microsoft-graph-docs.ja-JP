@@ -2,12 +2,13 @@
 title: ManagementConditionStatement を更新します。
 description: ManagementConditionStatement オブジェクトのプロパティを更新します。
 author: tfitzmac
-ms.openlocfilehash: 56de75540fa774f32fab7b6edf2795f3ac0d5351
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 33bee3fe6e386d9d426eb0763ccb608cbc6242e3
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27333447"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27829450"
 ---
 # <a name="update-managementconditionstatement"></a>ManagementConditionStatement を更新します。
 

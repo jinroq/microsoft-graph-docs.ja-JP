@@ -1,12 +1,13 @@
 ---
 title: ポリシー リソースの種類
 description: Azure AD ポリシーを表します。 ポリシーは、アプリケーション、サービス ・ プリンシパル、グループ、または組織に割り当てられている全体に適用することができますカスタム ルールです。 現在だけがポリシーの 1 つのタイプがあります。
-ms.openlocfilehash: 05f4539d069c290a410d313102eeb7f87ce7eac2
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: cc82dc32056b9da5c2ca1144e58b5b9e1fe326f1
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27073132"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27830927"
 ---
 # <a name="policy-resource-type"></a>ポリシー リソースの種類
 
@@ -30,11 +31,11 @@ Azure AD ポリシーを表します。 ポリシーは、アプリケーショ�
 |[リストが割り当てられているポリシー](../api/policy-list-assigned.md)|ポリシー コレクション|アプリケーションまたはサービス ・ プリンシパルに割り当てられているすべてのポリシー オブジェクトを取得します。|
 
 ### <a name="common-properties"></a>共通プロパティ
-| プロパティ     | 型   |説明|
+| プロパティ     | 種類   |説明|
 |:---------------|:--------|:----------|
 |definition|String|特定のポリシーの文字列バージョンです。 以下を参照してください。 必須。|
 |displayName|String|ポリシーに独自の名前です。 必須。|
-|IsOrganizationDefault|ブール値|場合に true の場合、このポリシーをアクティブに設定します。 同一のポリシーの種類の多くのポリシーが存在することができますが、組織の既定値として、1 つだけをアクティブにすることができます。 オプション、既定値では、false を指定します。|
+|IsOrganizationDefault|ブール型|場合に true の場合、このポリシーをアクティブに設定します。 同一のポリシーの種類の多くのポリシーが存在することができますが、組織の既定値として、1 つだけをアクティブにすることができます。 オプション、既定値では、false を指定します。|
 |type|String|ポリシーの種類を指定します。 現在"TokenLifetimePolicy"をする必要があります。 必須。|
 
 #### <a name="common-relationships"></a>共通関係
@@ -57,7 +58,7 @@ Azure AD ポリシーを表します。 ポリシーは、アプリケーショ�
 
 >注:「日」で表されるプロパティの最大値は、コンセンサスを表します日数の 1 秒です。 として 1 日の最大値を指定するたとえば、"23: 59:59"です。
 
-| プロパティ     | 型   |説明| 最小値 | 最大値 | 既定値|
+| プロパティ     | 種類   |説明| 最小値 | 最大値 | 既定値|
 |:---------------|:--------|:----------|:--------|:--------|:----|
 |AccessTokenLifetime|String|どのくらいの期間**アクセスと ID のトークンの両方**有効と見なされますを制御します。|10 分|1 日|1 時間|
 |MaxInactiveTime|String|古い更新トークンは、クライアントが使用できなくなりますリソースにアクセスする新しいアクセス/更新トークンのペアを取得する前に制御します。|10 分|90 日間|14 日間|

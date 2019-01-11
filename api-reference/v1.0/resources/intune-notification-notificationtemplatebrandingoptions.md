@@ -2,12 +2,13 @@
 title: notificationTemplateBrandingOptions 列挙型
 description: メッセージ テンプレートのオプションをブランド化します。 ブランド化は、Intune 管理コンソールで定義されます。
 author: tfitzmac
-ms.openlocfilehash: 42e99bc4ca2928daf489f4a1a6e9daa2a3d9838a
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 982aee74888b02fd07bc021f14b6b4c9d7157757
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27353936"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27830080"
 ---
 # <a name="notificationtemplatebrandingoptions-enum-type"></a>notificationTemplateBrandingOptions 列挙型
 

@@ -2,12 +2,13 @@
 title: グラフ:画像
 description: 指定したサイズに合わせてグラフを拡大、縮小することで、グラフを Base64 でエンコードされた画像としてレンダリングします。
 author: lumine2008
-ms.openlocfilehash: ccf2ba82dad05508b0857122f0316be8afcd03bc
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: f79f52e619281817c95f41efd8a96b3dcfa7d6e5
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27318194"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27831613"
 ---
 # <a name="chart-image"></a>グラフ:画像
 
@@ -38,11 +39,11 @@ GET /workbook/worksheets/{id|name}/charts/{name}/image(width=640,height=480,fitt
 ## <a name="path-parameters"></a>パス パラメーター
 要求本文で、次のパラメーターを含む JSON オブジェクトを指定します。
 
-| パラメーター    | 種類   |説明|
+| パラメーター    | Type   |説明|
 |:---------------|:--------|:----------|
 |height|Int32|結果のイメージの高さ。 省略可能。|
 |width|Int32|結果のイメージの幅。 省略可能。|
-|fittingMode|string|メソッド (高さと幅の両方が設定されている) 場合は、グラフを指定のサイズを拡大または縮小するために使用します。」  可能な値: `Fit`、 `FitAndCenter`、 `Fill`。|
+|fittingMode|文字列|メソッド (高さと幅の両方が設定されている) 場合は、グラフを指定のサイズを拡大または縮小するために使用します。」  可能な値: `Fit`、 `FitAndCenter`、 `Fill`。|
 
 ## <a name="response"></a>応答
 

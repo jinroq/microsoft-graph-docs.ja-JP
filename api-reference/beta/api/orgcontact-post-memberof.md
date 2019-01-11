@@ -1,12 +1,13 @@
 ---
 title: 所属するグループを作成します。
 description: 新しいへの後方リンクを作成するのにには、この API を使用します。
-ms.openlocfilehash: f753f2e8f14fb60eb23b10512506bfe6e3b95bdd
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 8862292da568c18ac4952306559e041ba5de31af
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27071640"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27826741"
 ---
 # <a name="create-memberof"></a>所属するグループを作成します。
 
@@ -29,7 +30,7 @@ POST /contacts/{id}/memberOf
 
 ```
 ## <a name="request-headers"></a>要求ヘッダー
-| 名前       | 型 | 説明|
+| 名前       | 種類 | 説明|
 |:---------------|:--------|:----------|
 | Authorization  | string  | ベアラー {トークン}。必須。 |
 

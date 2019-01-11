@@ -2,12 +2,13 @@
 title: EmbeddedSIMDeviceState を作成します。
 description: 新しい embeddedSIMDeviceState オブジェクトを作成します。
 author: tfitzmac
-ms.openlocfilehash: bacf4e0beb240a9c6e60792c7d2a853ac37dcce4
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 27bf12ff0bcb2ed61f5bb689a1994373d9efd551
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27340972"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27832880"
 ---
 # <a name="create-embeddedsimdevicestate"></a>EmbeddedSIMDeviceState を作成します。
 

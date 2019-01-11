@@ -2,12 +2,13 @@
 title: notificationMessageTemplates のリスト
 description: notificationMessageTemplate オブジェクトのプロパティとリレーションシップをリストします。
 author: tfitzmac
-ms.openlocfilehash: 3a62cc773856d3841c0c6f11ac2d13f5b7aea57b
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 0dd41e1b7ffeb8eecbead8399514dbc648cc85dc
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27343008"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27831897"
 ---
 # <a name="list-notificationmessagetemplates"></a>notificationMessageTemplates のリスト
 

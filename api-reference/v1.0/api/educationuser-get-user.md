@@ -1,12 +1,13 @@
 ---
 title: Get user
 description: この **educationUser** に対応する単純なディレクトリ **user** を取得します。
-ms.openlocfilehash: e87fa333ab6a50be3f5222888693b0783dd9b22a
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: ae2cdfa5aed7dadf7e61c275e65c646196f4667d
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27020384"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27836856"
 ---
 # <a name="get-user"></a>Get user
 

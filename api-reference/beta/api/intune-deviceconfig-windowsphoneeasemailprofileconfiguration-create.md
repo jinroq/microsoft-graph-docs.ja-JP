@@ -2,12 +2,13 @@
 title: WindowsPhoneEASEmailProfileConfiguration を作成します。
 description: 新しい windowsPhoneEASEmailProfileConfiguration オブジェクトを作成します。
 author: tfitzmac
-ms.openlocfilehash: 13de3b6a81ee18e170c88e1811d9dd02223eb579
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 5ae12e9cd535e38305c9f41b50f7a2a073858f28
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27329940"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27836177"
 ---
 # <a name="create-windowsphoneeasemailprofileconfiguration"></a>WindowsPhoneEASEmailProfileConfiguration を作成します。
 

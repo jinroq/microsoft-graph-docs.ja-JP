@@ -2,12 +2,13 @@
 title: windows81CertificateProfileBase リソースの種類
 description: デバイス構成です。
 author: tfitzmac
-ms.openlocfilehash: 673db07c56973f8bd44d27904c588327dffef631
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 9536d9d4342d02e406731e046029dee30bc4804c
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27341035"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27831361"
 ---
 # <a name="windows81certificateprofilebase-resource-type"></a>windows81CertificateProfileBase リソースの種類
 
@@ -25,7 +26,7 @@ ms.locfileid: "27341035"
 |[リスト windows81CertificateProfileBases](../api/intune-deviceconfig-windows81certificateprofilebase-list.md)|[windows81CertificateProfileBase](../resources/intune-deviceconfig-windows81certificateprofilebase.md)コレクション|[Windows81CertificateProfileBase](../resources/intune-deviceconfig-windows81certificateprofilebase.md)オブジェクトのプロパティと関係を一覧表示します。|
 |[Windows81CertificateProfileBase を取得します。](../api/intune-deviceconfig-windows81certificateprofilebase-get.md)|[windows81CertificateProfileBase](../resources/intune-deviceconfig-windows81certificateprofilebase.md)|[Windows81CertificateProfileBase](../resources/intune-deviceconfig-windows81certificateprofilebase.md)オブジェクトのプロパティと関係を参照してください。|
 
-## <a name="properties"></a>Properties
+## <a name="properties"></a>プロパティ
 |プロパティ|種類|説明|
 |:---|:---|:---|
 |ID|String|エンティティのキー。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|

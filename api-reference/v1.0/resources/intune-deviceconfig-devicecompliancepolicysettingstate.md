@@ -2,12 +2,13 @@
 title: deviceCompliancePolicySettingState リソースの種類
 description: 特定のデバイスに関する、デバイス コンプライアンス ポリシーの設定状態です。
 author: tfitzmac
-ms.openlocfilehash: 3dcd63327a3518314619cd7add6ac6f23e69396b
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 63c60b2d7d714f7040c894da872c017e06ad0249
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27320371"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27832874"
 ---
 # <a name="devicecompliancepolicysettingstate-resource-type"></a>deviceCompliancePolicySettingState リソースの種類
 

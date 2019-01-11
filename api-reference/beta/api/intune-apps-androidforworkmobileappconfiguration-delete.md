@@ -2,12 +2,13 @@
 title: AndroidForWorkMobileAppConfiguration を削除します。
 description: AndroidForWorkMobileAppConfiguration を削除します。
 author: tfitzmac
-ms.openlocfilehash: b676beff1877421a6db78fc93751b0c4e7c1a789
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 5827de8499252930a34ac34218a56df7da864549
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27360593"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27829303"
 ---
 # <a name="delete-androidforworkmobileappconfiguration"></a>AndroidForWorkMobileAppConfiguration を削除します。
 

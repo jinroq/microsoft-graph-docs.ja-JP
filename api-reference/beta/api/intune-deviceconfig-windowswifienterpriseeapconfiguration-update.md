@@ -2,12 +2,13 @@
 title: WindowsWifiEnterpriseEAPConfiguration を更新します。
 description: WindowsWifiEnterpriseEAPConfiguration オブジェクトのプロパティを更新します。
 author: tfitzmac
-ms.openlocfilehash: 2470ee366991af673e24762f2265c258ffadeee8
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 4daa930e47c20f4a330ed9a860c2bc2c9224e742
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27321743"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27832642"
 ---
 # <a name="update-windowswifienterpriseeapconfiguration"></a>WindowsWifiEnterpriseEAPConfiguration を更新します。
 

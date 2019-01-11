@@ -1,12 +1,13 @@
 ---
 title: provisionedPlan リソースの種類
 description: ユーザー エンティティと組織エンティティの **provisionedPlans** プロパティは、**provisionedPlan** のコレクションです。
-ms.openlocfilehash: 7808e3a17e471123f702381fb52535e53682e276
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: dd8d4f5b406a2291a829d7c11d4948bd9a08d453
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27022837"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27831487"
 ---
 # <a name="provisionedplan-resource-type"></a>provisionedPlan リソースの種類
 
@@ -14,7 +15,7 @@ ms.locfileid: "27022837"
 
 
 ## <a name="properties"></a>プロパティ
-| プロパティ     | 型   |説明|
+| プロパティ     | 種類   |説明|
 |:---------------|:--------|:----------|
 |capabilityStatus|String|「有効」など。|
 |provisioningStatus|String|「成功」など。|

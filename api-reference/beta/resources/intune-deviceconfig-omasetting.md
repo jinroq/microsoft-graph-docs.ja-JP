@@ -2,12 +2,13 @@
 title: omaSetting リソースの種類
 description: OMA 設定の定義。
 author: tfitzmac
-ms.openlocfilehash: fa1fc438ef97357ebd5f13443077384bc98e24f7
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: b9abc7db7b6d2ad16aa13886905c348e6c8f01b6
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27314043"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27826475"
 ---
 # <a name="omasetting-resource-type"></a>omaSetting リソースの種類
 

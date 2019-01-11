@@ -2,12 +2,13 @@
 title: TableSort リソースの種類
 description: テーブル オブジェクトの並べ替え操作を管理します。
 author: lumine2008
-ms.openlocfilehash: 1d40182fbd92da0022136cb694928397e468d7ac
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: d56d739a51b78ad7fdfd9f5cc8033b544ebb87ec
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27346978"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27835078"
 ---
 # <a name="tablesort-resource-type"></a>TableSort リソースの種類
 
@@ -28,7 +29,7 @@ ms.locfileid: "27346978"
 |:---------------|:--------|:----------|
 |fields|[WorkbookSortField](sortfield.md)コレクション|テーブルの最後の並べ替えに使用する現在の条件を表します。読み取り専用です。|
 |matchCase|ブール値|大文字小文字の区別が、テーブルの最後の並べ替え操作に影響を与えたかどうかを表します。読み取り専用です。|
-|method|string|中国語の文字が最後にテーブルの並べ替えに使用するメソッドの順序を表します。 可能な値: `PinYin`、 `StrokeCount`。 読み取り専用です。|
+|method|文字列|中国語の文字が最後にテーブルの並べ替えに使用するメソッドの順序を表します。 可能な値: `PinYin`、 `StrokeCount`。 読み取り専用です。|
 
 ## <a name="json-representation"></a>JSON 表記
 

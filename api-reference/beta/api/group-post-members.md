@@ -1,12 +1,13 @@
 ---
 title: メンバーを追加する
 description: この API を使用して、**members** ナビゲーション プロパティを通じて Office 365 のグループ、セキュリティ グループ、メールが有効なセキュリティ グループにメンバーを追加できます。
-ms.openlocfilehash: 3ebfad3b3e1fe2c3411653108d75d44d0fc53913
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 74ad07ea9012385f896ba4c6c6aa18f44758e5bb
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27066263"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27832866"
 ---
 # <a name="add-member"></a>メンバーを追加する
 
@@ -32,7 +33,7 @@ POST /groups/{id}/members/$ref
 ```
 
 ## <a name="request-headers"></a>要求ヘッダー
-| 名前       | 型 | 説明|
+| 名前       | 種類 | 説明|
 |:---------------|:--------|:----------|
 | Authorization  | string  | ベアラー {トークン}。必須。 |
 

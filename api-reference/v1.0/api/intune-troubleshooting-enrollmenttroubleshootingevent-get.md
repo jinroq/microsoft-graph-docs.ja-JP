@@ -2,12 +2,13 @@
 title: enrollmentTroubleshootingEvent の取得
 description: enrollmentTroubleshootingEvent オブジェクトのプロパティとリレーションシップを読み取ります。
 author: tfitzmac
-ms.openlocfilehash: 145e77a209bb05ee66fabf20c6c7fd03d3b450a5
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 3de08773e2b1f217bf72832b8199daedb9ce280e
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27310837"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27835666"
 ---
 # <a name="get-enrollmenttroubleshootingevent"></a>Get enrollmentTroubleshootingEvent
 

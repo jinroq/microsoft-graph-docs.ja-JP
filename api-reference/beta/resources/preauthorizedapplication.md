@@ -1,12 +1,13 @@
 ---
 title: preAuthorizedApplication リソースの種類
 description: アプリケーションおよび暗黙の同意を要求されたアクセス許可を表します。 管理者がアプリケーションに同意を提供する必要があります。 preAuthorizedApplications では、ユーザーが要求されたアクセス許可に同意するものは必要ありません。 PreAuthorizedApplications に記載されているアクセス許可では、ユーザーの同意は必要ありません。 ただし、preAuthorizedApplications に記載されていない追加の要求されたアクセス許可は、ユーザーの同意を必要とします。
-ms.openlocfilehash: d299aefcac541407e0e42d0b0933e903afa3e84d
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: fa26b8046b81db70300b8ff40abcbd2b84f3f0c8
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27074094"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27832796"
 ---
 # <a name="preauthorizedapplication-resource-type"></a>preAuthorizedApplication リソースの種類
 
@@ -16,7 +17,7 @@ ms.locfileid: "27074094"
 
 ## <a name="properties"></a>プロパティ
 
-| プロパティ | 型 | 説明 |
+| プロパティ | 種類 | 説明 |
 |:---------------|:--------|:----------|
 |appId|文字列型 (String)| アプリケーションの一意の識別子です。 |
 |permissionIds|String コレクション| [PublishedPermissionScope](permissionscope.md)または[エンティティ](approle.md)は、アプリケーションのいずれかの一意の識別子が必要です。 |

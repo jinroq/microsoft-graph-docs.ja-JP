@@ -2,12 +2,13 @@
 title: macOSOfficeSuiteApp の作成
 description: 新しい macOSOfficeSuiteApp オブジェクトを作成します。
 author: tfitzmac
-ms.openlocfilehash: 7d0f71c501e3645f0f8b4f89610094fa9b13dd2a
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: f82ebbaa3b7a5936d45f36a56a929eb6472600a5
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27358871"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27824137"
 ---
 # <a name="create-macosofficesuiteapp"></a>macOSOfficeSuiteApp の作成
 

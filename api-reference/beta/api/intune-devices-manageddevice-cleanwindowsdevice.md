@@ -2,12 +2,13 @@
 title: cleanWindowsDevice アクション
 description: Windows デバイスをクリーンにします
 author: tfitzmac
-ms.openlocfilehash: b1d4d9f232748ec4601e7af6f64980acb7972f40
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 50db329d4396de02235d23350ad251a2ecbecb46
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27347622"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27831921"
 ---
 # <a name="cleanwindowsdevice-action"></a>cleanWindowsDevice アクション
 
@@ -50,7 +51,7 @@ POST /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/device
 
 |プロパティ|種類|説明|
 |:---|:---|:---|
-|keepUserData|Boolean|まだ文書化されていません|
+|keepUserData|ブール値|まだ文書化されていません|
 
 
 

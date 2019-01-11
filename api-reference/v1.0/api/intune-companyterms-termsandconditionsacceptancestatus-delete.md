@@ -2,12 +2,13 @@
 title: Delete termsAndConditionsAcceptanceStatus
 description: termsAndConditionsAcceptanceStatus を削除します。
 author: tfitzmac
-ms.openlocfilehash: 2ceb9d5deeb04e1a48021978e07d7449540bba9c
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 75730a8efee4966a0546d2eec8b9aaffa563a3a3
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27343583"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27831165"
 ---
 # <a name="delete-termsandconditionsacceptancestatus"></a>Delete termsAndConditionsAcceptanceStatus
 

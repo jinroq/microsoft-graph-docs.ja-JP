@@ -2,12 +2,13 @@
 title: managedAppProtection リソース タイプ
 description: 指定した一連のアプリの詳細な管理設定を構成するために使用されるポリシー
 author: tfitzmac
-ms.openlocfilehash: bd67c482ab3f255361f23b290b48a44fdd11dec5
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 97d98a6edea3b03b7d35d68ca1f274e938449990
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27311264"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27832999"
 ---
 # <a name="managedappprotection-resource-type"></a>managedAppProtection リソース タイプ
 

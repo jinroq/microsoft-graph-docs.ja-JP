@@ -2,12 +2,13 @@
 title: scopedAdministratorOf を一覧表示する
 description: ユーザーの scopedRoleMembership の一覧を取得します。
 author: dkershaw10
-ms.openlocfilehash: 48aead850e7f7b90a38229da1016007aeec40a9d
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 2969fcab8f5df4cdf9bfc21d18aa8916b39ca20f
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27357345"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27836149"
 ---
 # <a name="list-scopedadministratorof"></a>scopedAdministratorOf を一覧表示する
 

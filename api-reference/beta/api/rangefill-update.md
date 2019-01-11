@@ -2,12 +2,13 @@
 title: rangefill オブジェクトを更新する
 description: rangefill オブジェクトのプロパティを更新します。
 author: lumine2008
-ms.openlocfilehash: 7e27e523528721478b9aee48802235b50b6b274a
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 166550959cd6ce4b481b85d4dbff344f1a070ae5
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27323955"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27836716"
 ---
 # <a name="update-rangefill"></a>rangefill オブジェクトを更新する
 

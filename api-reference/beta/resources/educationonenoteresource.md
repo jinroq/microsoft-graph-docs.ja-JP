@@ -2,12 +2,13 @@
 title: educationOneNoteResource リソースの種類
 description: 'EducationResource のサブクラスです。 これは、OneNote のページの場所を表します。  '
 author: mmast-msft
-ms.openlocfilehash: dc6fc6a71da12a27cb589e072371814e4bc33cc1
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 9dea19683786d22c48af2eedd6239ffe76441ef2
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27359865"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27825929"
 ---
 # <a name="educationonenoteresource-resource-type"></a>educationOneNoteResource リソースの種類
 
@@ -15,7 +16,7 @@ ms.locfileid: "27359865"
 
 [EducationResource](educationresource.md)のサブクラスです。 これは、OneNote のページの場所を表します。  
 
-## <a name="properties"></a>Properties
+## <a name="properties"></a>プロパティ
 | プロパティ     | 種類   |説明|
 |:---------------|:--------|:----------|
 |pageUrl|String|OneNote のページに Microsoft のグラフの URL です。|

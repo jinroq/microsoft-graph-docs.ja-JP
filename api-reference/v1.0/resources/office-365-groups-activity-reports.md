@@ -1,12 +1,13 @@
 ---
 title: Office 365 グループ アクティビティ レポート
 description: グループ アクティビティ レポートを使用して、組織内の Office 365 グループのアクティビティに関する洞察を得て、作成され、使用されている Office 365 グループの数を確認できます。
-ms.openlocfilehash: eede60c27a9de2eb5d8dcb9636cb6687ffc76c1b
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: c9f7ae5517cf38f3e290db214a6b2f285dce86f4
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27022418"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27832852"
 ---
 # <a name="office-365-groups-activity-reports"></a>Office 365 グループ アクティビティ レポート
 

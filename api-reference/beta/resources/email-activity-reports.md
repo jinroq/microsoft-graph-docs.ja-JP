@@ -1,12 +1,13 @@
 ---
 title: 電子メール アクティビティ レポート
 description: '[レポート] ページから、組織内で電子メール トラフィックの高レベルのビューを取得できます。 傾向と、組織内の電子メール活動のユーザーごとの詳細を理解する電子メール活動のウィジェットにドリルダウンすることもできます。'
-ms.openlocfilehash: 47ff9017216fa3fd333b383f7a603354775d1023
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 90af28ce5136f8b444bcd432e756d08558290977
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27074392"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27835046"
 ---
 # <a name="email-activity-reports"></a>電子メール アクティビティ レポート
 

@@ -3,12 +3,13 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
 title: ファイルまたはフォルダーを移動する
-ms.openlocfilehash: 4fdf9b079068f3a07a74f117c3e3ad6798a2cd1f
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: a6135993d77e4fb23fbbba89757a6bd385ebcd60
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27069223"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27833713"
 ---
 # <a name="move-a-driveitem-to-a-new-folder"></a>DriveItem を新しいフォルダーに移動する
 
@@ -44,7 +45,7 @@ PATCH /users/{user-id}/drive/items/{item-id}
 
 ## <a name="optional-request-headers"></a>オプションの要求ヘッダー
 
-| 名前          | 型   | 説明                                                                                                                                                         |
+| 名前          | 種類   | 説明                                                                                                                                                         |
 |:--------------|:-------|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | if-match      | String | この要求ヘッダーが含まれていて、指定された eTag (または cTag) がフォルダーの現在の eTag に一致しない場合には、`412 Precondition Failed` 応答が返されます。 |
 

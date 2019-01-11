@@ -1,12 +1,13 @@
 ---
 title: リスト orgContacts
 description: この組織の組織の連絡先の一覧を取得します。
-ms.openlocfilehash: 01be5350898bed181f2e1d304bf58f8ec1e4e47f
-ms.sourcegitcommit: f3d479edf03935d0edbbc7668a65f7cde2a56c92
+localization_priority: Normal
+ms.openlocfilehash: 0b4dc4a099562b8817396bee8f3141fa32c28572
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/15/2018
-ms.locfileid: "27283627"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27831977"
 ---
 # <a name="list-orgcontacts"></a>リスト orgContacts
 

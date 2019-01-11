@@ -1,12 +1,13 @@
 ---
 title: AccessReview を更新します。
 description: Azure AD アクセスのレビュー機能では、1 つまたは複数のプロパティを変更するのには既存の accessReview オブジェクトを更新します。
-ms.openlocfilehash: 8913377db8acea17023605f85d01c8c9ecea419b
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 65420b3682eb9d9f72d95beea624eb84429628ae
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27067697"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27833748"
 ---
 # <a name="update-accessreview"></a>AccessReview を更新します。
 
@@ -32,7 +33,7 @@ ms.locfileid: "27067697"
 PATCH /accessReviews('{reviewId}')
 ```
 ## <a name="request-headers"></a>要求ヘッダー
-| 名前         | 型        | 説明 |
+| 名前         | 種類        | 説明 |
 |:-------------|:------------|:------------|
 | Authorization | string | ベアラー\{トークン\}。 必須。 |
 
@@ -41,7 +42,7 @@ PATCH /accessReviews('{reviewId}')
 
 次の表は、accessReview を更新するときに指定できるプロパティを示しています。
 
-| プロパティ     | 型        | 説明 |
+| プロパティ     | 種類        | 説明 |
 |:-------------|:------------|:------------|
 | `displayName`             |`String`                                                        | アクセス確認の名前です。  |
 | `startDateTime`           |`DateTimeOffset`                                                | 日付と時刻と、レビューを開始する予定です。  将来の日付でなければなりません。   |
@@ -53,7 +54,7 @@ PATCH /accessReviews('{reviewId}')
 ## <a name="response"></a>応答
 かどうかは成功すると、このメソッドが返されます、`204, Accepted`応答コードおよび応答の本文内の[accessReview](../resources/accessreview.md)オブジェクトです。
 
-## <a name="example"></a>使用例
+## <a name="example"></a>例
 
 これは、1 回限り (繰り返し発生しない) のアクセス確認の更新の例です。
 

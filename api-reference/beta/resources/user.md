@@ -2,12 +2,13 @@
 title: ユーザー リソースの種類
 description: Azure AD ユーザー アカウントを表します。directoryObject から継承します。
 author: dkershaw10
-ms.openlocfilehash: c9d776091bba18a9459505b7d35d7ff15479cffe
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Priority
+ms.openlocfilehash: 1bec385ef452316e3c7c9eb79989fc10e534de26
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27348203"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27833307"
 ---
 # <a name="user-resource-type"></a>user リソースの種類
 
@@ -82,7 +83,7 @@ Azure AD ユーザー アカウントを表します。[directoryObject](directo
 | プロパティ       | 種類    | 説明 |
 |:---------------|:--------|:------------|
 |aboutMe|String|ユーザーが自分自身について記述する、フリー フォームのテキスト入力フィールド。|
-|accountEnabled|Boolean| アカウントが有効な場合は **true**。そうでない場合は **false**。このプロパティは、ユーザーの作成時に必要です。$filter をサポートします。    |
+|accountEnabled|ブール値| アカウントが有効な場合は **true**。そうでない場合は **false**。このプロパティは、ユーザーの作成時に必要です。$filter をサポートします。    |
 |ageGroup|String|ユーザーの年齢グループを設定します。 使用できる値: `null`、 `minor`、`notAdult`と`adult`。 詳細については[法律の年齢グループのプロパティの定義](#legal-age-group-property-definitions)を参照してください。 |
 |assignedLicenses|[assignedLicense](assignedlicense.md) collection|ユーザーに割り当てられているライセンス。null 許容ではありません。            |
 |assignedPlans|[assignedPlan](assignedplan.md) コレクション|ユーザーに割り当てられているプラン。読み取り専用です。null 許容ではありません。 |

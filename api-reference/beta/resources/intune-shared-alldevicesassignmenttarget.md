@@ -2,12 +2,13 @@
 title: allDevicesAssignmentTarget リソースの種類
 description: テナント内のすべての管理されたデバイスへの割り当てを表します。
 author: tfitzmac
-ms.openlocfilehash: 645dbe95c137af2e9ef08c76c42834366c933a53
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 1f6ffb325aea918d06ea15852bc903b459f36d5d
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27326944"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27833354"
 ---
 # <a name="alldevicesassignmenttarget-resource-type"></a>allDevicesAssignmentTarget リソースの種類
 

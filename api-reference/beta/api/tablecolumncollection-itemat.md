@@ -2,12 +2,13 @@
 title: 'TableColumnCollection: ItemAt'
 description: コレクション内の位置に基づいて列を取得します。
 author: lumine2008
-ms.openlocfilehash: bcb72a511bfed9adcc0219a5b85402b1931a795d
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 0cd2c587c8520fc7c76f98f07d540ab0cd934baf
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27314064"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27836163"
 ---
 # <a name="tablecolumncollection-itemat"></a>TableColumnCollection: ItemAt
 
@@ -39,9 +40,9 @@ POST /workbook/worksheets/{id|name}/tables/{id|name}/columns/ItemAt
 ## <a name="request-body"></a>要求本文
 要求本文で、次のパラメーターを含む JSON オブジェクトを指定します。
 
-| パラメーター    | 種類   |説明|
+| パラメーター    | Type   |説明|
 |:---------------|:--------|:----------|
-|index|数値|取得するオブジェクトのインデックス値。0 を起点とする番号になります。|
+|index|number|取得するオブジェクトのインデックス値。0 を起点とする番号になります。|
 
 ## <a name="response"></a>応答
 

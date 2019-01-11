@@ -1,12 +1,13 @@
 ---
 title: automaticRepliesMailTips リソースの種類
 description: メールボックスに設定されているすべての自動返信のメール ヒントです。
-ms.openlocfilehash: 51657578474710d40cfc3feabdf41e50e7105942
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 80ecaaa9fced0bcb00494b0414a86f0a11fd8996
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27074224"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27833230"
 ---
 # <a name="automaticrepliesmailtips-resource-type"></a>automaticRepliesMailTips リソースの種類
 
@@ -15,7 +16,7 @@ ms.locfileid: "27074224"
 メールボックスに設定されているすべての自動返信の[メール ヒント](../resources/mailtips.md)にします。
 
 ## <a name="properties"></a>プロパティ
-| プロパティ     | 型   |説明|
+| プロパティ     | 種類   |説明|
 |:-----|:-----|:-----|
 | message | String | 自動応答メッセージ。 |
 | messageLanguage | [localeInfo](../resources/localeinfo.md) | 自動応答メッセージの言語。 |

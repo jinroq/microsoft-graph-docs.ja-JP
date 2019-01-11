@@ -2,12 +2,13 @@
 title: windowsVpnConfiguration リソースの種類
 description: Windows VPN 構成のプロファイルです。
 author: tfitzmac
-ms.openlocfilehash: 3e627c54c7841ccd9e3f836c805038f26b0099d2
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: d3601515f62855df79d548c11db9d46438afdb68
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27331858"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27835610"
 ---
 # <a name="windowsvpnconfiguration-resource-type"></a>windowsVpnConfiguration リソースの種類
 
@@ -25,7 +26,7 @@ Windows VPN 構成のプロファイルです。
 |[リスト windowsVpnConfigurations](../api/intune-deviceconfig-windowsvpnconfiguration-list.md)|[windowsVpnConfiguration](../resources/intune-deviceconfig-windowsvpnconfiguration.md)コレクション|[WindowsVpnConfiguration](../resources/intune-deviceconfig-windowsvpnconfiguration.md)オブジェクトのプロパティと関係を一覧表示します。|
 |[WindowsVpnConfiguration を取得します。](../api/intune-deviceconfig-windowsvpnconfiguration-get.md)|[windowsVpnConfiguration](../resources/intune-deviceconfig-windowsvpnconfiguration.md)|[WindowsVpnConfiguration](../resources/intune-deviceconfig-windowsvpnconfiguration.md)オブジェクトのプロパティと関係を参照してください。|
 
-## <a name="properties"></a>Properties
+## <a name="properties"></a>プロパティ
 |プロパティ|種類|説明|
 |:---|:---|:---|
 |ID|String|エンティティのキー。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|

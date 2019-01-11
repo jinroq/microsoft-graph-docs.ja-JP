@@ -2,12 +2,13 @@
 title: テーブルの作成
 description: この API を使用して、新しいテーブルを作成します。
 author: lumine2008
-ms.openlocfilehash: 0964a6ec478bc9263e569f9b759c70335bae3b7a
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 48837631f496d6ab05aafde6b63da769fcaf9531
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27339474"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27836191"
 ---
 # <a name="create-table"></a>テーブルの作成
 
@@ -36,9 +37,9 @@ POST /workbook/tables/{table-id}/add
 ## <a name="request-body"></a>要求本文
 要求本文で、次のパラメーターを含む JSON オブジェクトを指定します。
 
-| パラメーター           | 種類      |説明|
+| パラメーター           | Type      |説明|
 |:---------------|:----------|:----------|
-| Address  | string| 範囲のアドレスです。この API を `worksheets/{id or name}/tables/add` パスから呼び出す場合、アドレスにシート名のプレフィックスを指定する必要はありません。ただし、これを `workbook/tables/add` パスから呼び出す場合は、テーブルを作成する必要のあるシート名を指定する必要があります (例: `sheet1!A1:D4`)。|
+| Address  | 文字列| 範囲のアドレスです。この API を `worksheets/{id or name}/tables/add` パスから呼び出す場合、アドレスにシート名のプレフィックスを指定する必要はありません。ただし、これを `workbook/tables/add` パスから呼び出す場合は、テーブルを作成する必要のあるシート名を指定する必要があります (例: `sheet1!A1:D4`)。|
 | hasHeaders  | boolean|範囲に列ラベルがあるかどうかを示すブール値。ソースにヘッダーが含まれていない場合 (このプロパティが false に設定されている場合)、Excel はデータを下方向に 1 行シフトして、自動的にヘッダーを生成します。|
 
 ## <a name="response"></a>応答

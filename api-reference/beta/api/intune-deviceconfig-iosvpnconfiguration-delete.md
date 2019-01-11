@@ -2,12 +2,13 @@
 title: IosVpnConfiguration を削除します。
 description: IosVpnConfiguration を削除します。
 author: tfitzmac
-ms.openlocfilehash: 5cc3cdb344426122c6a8daa1066c72af0d44cbe1
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 7c597b0006913bc3edd8b53c874e54d22c47ccba
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27338172"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27832264"
 ---
 # <a name="delete-iosvpnconfiguration"></a>IosVpnConfiguration を削除します。
 

@@ -1,12 +1,13 @@
 ---
 title: 組織を更新する
 description: 現在認証されている組織のプロパティを更新します。
-ms.openlocfilehash: b9601b9b6fa7e961a807c009e6fd4acb00fd8b47
-ms.sourcegitcommit: 37591c2299c80e7675cd2b5f781e1eeeba628a60
+localization_priority: Normal
+ms.openlocfilehash: 83b1514831e930e3eabe6e6a78203c44ec3b5b3c
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "27748529"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27834959"
 ---
 # <a name="update-organization"></a>組織を更新する
 
@@ -34,7 +35,7 @@ PATCH /organization/{id}
 
 ## <a name="request-headers"></a>要求ヘッダー
 
-| 名前       | 型 | 説明|
+| 名前       | 種類 | 説明|
 |:-----------|:------|:----------|
 | Authorization  | string  | ベアラー {トークン}。必須。 |
 
@@ -42,7 +43,7 @@ PATCH /organization/{id}
 
 要求本文で、更新する関連フィールドの値を指定します。 要求本文に含まれない既存のプロパティは、以前の値のままになるか、他のプロパティ値の変更に基づいて再計算されます。 最適なパフォーマンスを得るためには、変更されていない既存の値を含めないでください。
 
-| プロパティ     | 型   |説明|
+| プロパティ     | 種類   |説明|
 |:---------------|:--------|:----------|
 |marketingNotificationEmails|String コレクション|                                        **注**: Null は許容されません。            |
 |privacyProfile|[privacyProfile](../resources/privacyprofile.md)|組織のプライバシー プロファイル (statementUrl と contactEmail を設定します)。            |

@@ -2,12 +2,13 @@
 title: mobileThreatDefenseConnector リソースの種類
 description: Mobile Threat Defense パートナーとの接続を表すエンティティです。
 author: tfitzmac
-ms.openlocfilehash: e1f47f534037ed7547c2d0824ead6cdf565b27d6
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 2469440ceff1dc6c301d6ed4cb6c9a4f341eed31
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27311740"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27834406"
 ---
 # <a name="mobilethreatdefenseconnector-resource-type"></a>mobileThreatDefenseConnector リソースの種類
 

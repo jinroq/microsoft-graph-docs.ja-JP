@@ -2,12 +2,13 @@
 title: Create iosCompliancePolicy
 description: 新しい iosCompliancePolicy オブジェクトを作成します。
 author: tfitzmac
-ms.openlocfilehash: fd039005455c94cf55fa1afe21eee33fde9b4588
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: df69e8512a1f8e900f1e3751d5943f4ea8e6a215
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27346173"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27834462"
 ---
 # <a name="create-ioscompliancepolicy"></a>Create iosCompliancePolicy
 

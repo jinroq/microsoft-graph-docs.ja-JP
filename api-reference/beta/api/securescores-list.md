@@ -1,14 +1,15 @@
 ---
-title: リスト secureScores
+title: secureScores のリスト
 description: " > **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。"
-ms.openlocfilehash: f5466e24d6b523809a72f712666063808987e530
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 6bf0a1e1964c93043bad4a81ab812786627ea737
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27068071"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27831816"
 ---
-# <a name="list-securescores"></a>リスト secureScores
+# <a name="list-securescores"></a>secureScores のリスト
 
  > **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。
 

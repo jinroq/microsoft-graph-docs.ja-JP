@@ -1,12 +1,13 @@
 ---
 title: filterGroup リソースの種類
 description: スコープでオブジェクトが満たす必要がある句のセットを定義します。 オブジェクトは、グループのスコープ内と見なされます (グループが評価され、 `true`) にグループのすべての句が評価される場合にのみ`true`。
-ms.openlocfilehash: d49f7a4364f1d8ce3e1c4daba3bb331cf9a9c001
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 174c02518069e949c49887d9e21e778e8455509a
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27072613"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27836114"
 ---
 # <a name="filtergroup-resource-type"></a>filterGroup リソースの種類
 
@@ -15,7 +16,7 @@ ms.locfileid: "27072613"
 スコープでオブジェクトが満たす必要がある句のセットを定義します。 オブジェクトは、グループのスコープ内と見なされます (グループが評価され、 `true`) にグループのすべての句が評価される場合にのみ`true`。
 
 ## <a name="properties"></a>プロパティ
-| プロパティ     | 型   |説明|
+| プロパティ     | 種類   |説明|
 |:---------------|:--------|:----------|
 |句|[filterClause](synchronization-filterclause.md)コレクション|句 (条件) をこのグループのフィルターを適用します。 グループ内のすべての句は、フィルターのグループを評価するために満たす必要があります`true`。|
 |名前|String|フィルター グループの名前を人間が判読できます。|

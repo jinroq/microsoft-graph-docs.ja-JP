@@ -1,12 +1,13 @@
 ---
 title: リスト directorySettingTemplates
 description: テンプレートを設定するディレクトリは、ディレクトリの設定、どのディレクトリから設定を作成し、テナント内で使用されるテンプレートのセットを表します。  この操作は、使用可能な directorySettingTemplates オブジェクトの一覧を取得します。
-ms.openlocfilehash: 964e2cfc9e06b6a996f63c92cae830e03c953cd8
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 288a914da11c09cd39767a48d527510998c9be1d
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27071042"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27833328"
 ---
 # <a name="list-directorysettingtemplates"></a>リスト directorySettingTemplates
 

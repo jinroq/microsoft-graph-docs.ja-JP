@@ -2,12 +2,13 @@
 title: mobileAppContent の作成
 description: 新しい mobileAppContent オブジェクトを作成します。
 author: tfitzmac
-ms.openlocfilehash: 0cc1abf7a1e13a151117db9407b1a03d6f4524c1
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: c59d06f506dd27a8aa7b4731df94e0bed2c5480f
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27312188"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27831200"
 ---
 # <a name="create-mobileappcontent"></a>mobileAppContent の作成
 

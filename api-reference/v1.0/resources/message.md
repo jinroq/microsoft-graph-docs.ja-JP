@@ -2,12 +2,13 @@
 title: メッセージ リソースの種類
 description: mailFolder のメッセージ。
 author: angelgolfer-ms
-ms.openlocfilehash: 57183290f872f56684e8b629b83bb31151bff134
-ms.sourcegitcommit: 37591c2299c80e7675cd2b5f781e1eeeba628a60
+localization_priority: Priority
+ms.openlocfilehash: d7519c98a9a9fd35ed5b1bdcdd85da5e876e5265
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "27748578"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27833020"
 ---
 # <a name="message-resource-type"></a>メッセージ リソースの種類
 
@@ -54,7 +55,7 @@ mailFolder のメッセージ。
 |[複数値の拡張プロパティを持つメッセージの取得](../api/multivaluelegacyextendedproperty-get.md)  | [message](message.md) | `$expand` を使用して、複数値の拡張プロパティを含むメッセージを取得します。 |
 
 ## <a name="properties"></a>プロパティ
-| プロパティ     | 型   |説明|
+| プロパティ     | 種類   |説明|
 |:---------------|:--------|:----------|
 |bccRecipients|[recipient](recipient.md) collection|メッセージの BCC 受信者。|
 |body|[itemBody](itembody.md)|メッセージの本文。 Html 形式またはテキスト形式でことができます。 [メッセージの本文内の安全な HTML](/graph/outlook-create-send-messages#reading-messages-with-control-over-the-body-format-returned)をお探しです。|
@@ -72,10 +73,10 @@ mailFolder のメッセージ。
 |inferenceClassification | inferenceClassificationType | 推論の妥当性や重要度、または明示的なオーバーライドに基づいて、ユーザーに対するメッセージの分類です。 可能な値:`focused`または`other`。 |
 |internetMessageHeaders | [internetMessageHeader](internetmessageheader.md) コレクション | [RFC5322](https://www.ietf.org/rfc/rfc5322.txt)で定義されているメッセージ ヘッダーのコレクションです。 セットには、受信者に送信者からのメッセージを取得するネットワーク パスを示すメッセージのヘッダーが含まれています。 メッセージのアプリケーション データを保持するカスタム メッセージのヘッダーを含めることもできます。 |
 |internetMessageId |String |[RFC2822](https://www.ietf.org/rfc/rfc2822.txt) によって指定された形式のメッセージ ID。 |
-|isDeliveryReceiptRequested|Boolean|メッセージの開封確認メッセージが要求されているかどうかを示します。|
-|isDraft|Boolean|メッセージが下書きかどうかを示します。メッセージがまだ送信されていなければ下書きです。|
-|isRead|Boolean|メッセージが開封されたかどうかを示します。|
-|isReadReceiptRequested|Boolean|メッセージの開封確認メッセージが要求されているかどうかを示します。|
+|isDeliveryReceiptRequested|ブール値|メッセージの開封確認メッセージが要求されているかどうかを示します。|
+|isDraft|ブール型|メッセージが下書きかどうかを示します。メッセージがまだ送信されていなければ下書きです。|
+|isRead|ブール値|メッセージが開封されたかどうかを示します。|
+|isReadReceiptRequested|ブール値|メッセージの開封確認メッセージが要求されているかどうかを示します。|
 |lastModifiedDateTime|DateTimeOffset|メッセージが最後に変更された日時。|
 |parentFolderId|String|メッセージの親 mailFolder の一意識別子。|
 |receivedDateTime|DateTimeOffset|メッセージが受信された日時です。|

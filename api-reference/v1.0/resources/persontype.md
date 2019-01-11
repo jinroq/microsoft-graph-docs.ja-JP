@@ -1,12 +1,13 @@
 ---
 title: personType リソースの種類
 description: 個人の種類を表します。
-ms.openlocfilehash: 3938be8d1dd0bf4a4934de4bbcd7862185971128
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: d30441a9eab3f51b63e31e5c3c627444312449ba
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27021000"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27831494"
 ---
 # <a name="persontype-resource-type"></a>personType リソースの種類
 
@@ -33,7 +34,7 @@ ms.locfileid: "27021000"
 
 ```
 ## <a name="properties"></a>プロパティ
-| プロパティ     | 型   |説明|
+| プロパティ     | 種類   |説明|
 |:---------------|:--------|:----------|
 |クラス|String|データ ソースの種類 (Person など)。|
 |サブクラス|String|データ ソースの 2 番目の種類 (OrganizationUser など)。|
