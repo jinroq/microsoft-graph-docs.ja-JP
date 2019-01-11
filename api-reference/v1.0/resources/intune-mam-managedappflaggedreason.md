@@ -2,12 +2,13 @@
 title: managedAppFlaggedReason 列挙型
 description: ユーザーが設定されている理由
 author: tfitzmac
-ms.openlocfilehash: b22f6a1ddec78e147fc44c786144864813bde491
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: eab844c3a9d3ad35192938cf1f784bb7eaf7874e
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27353026"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27805265"
 ---
 # <a name="managedappflaggedreason-enum-type"></a>managedAppFlaggedReason 列挙型
 

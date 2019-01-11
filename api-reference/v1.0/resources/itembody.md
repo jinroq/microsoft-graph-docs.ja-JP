@@ -1,19 +1,20 @@
 ---
 title: itemBody リソースの種類
 description: メッセージ、イベント、またはグループの投稿など、アイテムの本文のプロパティを表します。
-ms.openlocfilehash: ebcc2797052ac3a5a73547332e37c5e9c1bd3a41
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 2eaf3b5e13833665c452eeecd74169915f5ac2fd
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27022858"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27805230"
 ---
 # <a name="itembody-resource-type"></a>itemBody リソースの種類
 
 メッセージ、イベント、またはグループの投稿など、アイテムの本文のプロパティを表します。
 
 ## <a name="properties"></a>プロパティ
-| プロパティ     | 型   |説明|
+| プロパティ     | 種類   |説明|
 |:---------------|:--------|:----------|
 |content|String|アイテムのコンテンツ。|
 |contentType|bodyType|コンテンツの種類。可能な値は、`Text` と `HTML` です。|

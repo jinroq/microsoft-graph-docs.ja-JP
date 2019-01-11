@@ -2,12 +2,13 @@
 title: depMacOSEnrollmentProfile リソースの種類
 description: DepMacOSEnrollmentProfile リソースでは、macOS の構成を特定の Apple デバイスの登録プログラム (DEP) 登録プロファイルを表します。 このタイプのプロファイルは、DEP. を使用して対応するデバイスを登録する前に、Apple の DEP のシリアル番号を割り当てる必要があります。
 author: tfitzmac
-ms.openlocfilehash: 138acbdbdc8325a15d6532b836c9c8da9b1363de
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: bb0e61681d47da2b3008d2589bfe6720ca89a8f3
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27346089"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27812160"
 ---
 # <a name="depmacosenrollmentprofile-resource-type"></a>depMacOSEnrollmentProfile リソースの種類
 
@@ -28,7 +29,7 @@ DepMacOSEnrollmentProfile リソースでは、macOS の構成を特定の Apple
 |[DepMacOSEnrollmentProfile を削除します。](../api/intune-enrollment-depmacosenrollmentprofile-delete.md)|なし|の[depMacOSEnrollmentProfile](../resources/intune-enrollment-depmacosenrollmentprofile.md)を削除します。|
 |[DepMacOSEnrollmentProfile を更新します。](../api/intune-enrollment-depmacosenrollmentprofile-update.md)|[depMacOSEnrollmentProfile](../resources/intune-enrollment-depmacosenrollmentprofile.md)|[DepMacOSEnrollmentProfile](../resources/intune-enrollment-depmacosenrollmentprofile.md)オブジェクトのプロパティを更新します。|
 
-## <a name="properties"></a>Properties
+## <a name="properties"></a>プロパティ
 |プロパティ|種類|説明|
 |:---|:---|:---|
 |ID|String|[EnrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)から継承されるオブジェクトの GUID|

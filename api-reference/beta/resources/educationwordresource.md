@@ -1,12 +1,13 @@
 ---
 title: educationWordResource リソースの種類
 description: 'EducationResource のサブクラスです。 これは、Word ドキュメント リソースです。 関連付けられている**fileResource**ディレクトリに Word ファイルをアップロードする必要があります、 '
-ms.openlocfilehash: 28df3278a0d97f440014c342d592d2701b348d94
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 0fa366a6fb6de70d10a010cf5e0e11ffd26a3b94
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27071868"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27805139"
 ---
 # <a name="educationwordresource-resource-type"></a>educationWordResource リソースの種類
 
@@ -16,7 +17,7 @@ ms.locfileid: "27071868"
 
 
 ## <a name="properties"></a>プロパティ
-| プロパティ     | 型   |説明|
+| プロパティ     | 種類   |説明|
 |:---------------|:--------|:----------|
 |fileUrl|String|ディスク上のファイルの場所です。|
 
