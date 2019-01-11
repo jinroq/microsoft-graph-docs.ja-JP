@@ -1,12 +1,13 @@
 ---
 title: ポリシーを取得します。
 description: ポリシーのプロパティを取得します。
-ms.openlocfilehash: a6827813193d134f54c3274e2b035e241bb99dc5
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 9b3e23639bdeea673ccbe56bbce0c74443a99480
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27067754"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27870596"
 ---
 # <a name="get-policy"></a>ポリシーを取得します。
 
@@ -29,7 +30,7 @@ ms.locfileid: "27067754"
 GET /policies/{id}
 ```
 ## <a name="request-headers"></a>要求ヘッダー
-| 名前       | 型 | 説明|
+| 名前       | 種類 | 説明|
 |:---------------|:--------|:----------|
 | Authorization  | string  | ベアラー {トークン}。必須。 |
 
@@ -40,7 +41,7 @@ GET /policies/{id}
 
 かどうかは成功すると、このメソッドを返します`200 OK`応答コードおよび応答の本文の[ポリシー](../resources/policy.md)オブジェクトです。 場合 unsucccessful.
 
-## <a name="example"></a>使用例
+## <a name="example"></a>例
 次の例では、特定のポリシーを取得します。
 
 ##### <a name="request"></a>要求

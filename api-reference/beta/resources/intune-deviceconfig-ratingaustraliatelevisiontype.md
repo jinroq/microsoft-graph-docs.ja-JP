@@ -2,12 +2,13 @@
 title: ratingAustraliaTelevisionType 列挙型
 description: オーストラリアのテレビのコンテンツの規制ラベル
 author: tfitzmac
-ms.openlocfilehash: ff2f6292638f8a7be451329ae24c3b479d1a772b
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 207d37884cf56ff31934141ac945042c878b520f
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27326692"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27871037"
 ---
 # <a name="ratingaustraliatelevisiontype-enum-type"></a>ratingAustraliaTelevisionType 列挙型
 

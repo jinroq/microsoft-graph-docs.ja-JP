@@ -1,12 +1,13 @@
 ---
 title: typedEmailAddress リソースの種類
 description: 名前、電子メール アドレス、および連絡先の対応する電子メール アドレス タイプを表します。
-ms.openlocfilehash: 3f40add32fbc219606b6d78041552fc108803d1c
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: c77d3dddc3e2bfcac47e6ed245dad9223fe7f08c
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27074407"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27871268"
 ---
 # <a name="typedemailaddress-resource-type"></a>typedEmailAddress リソースの種類
 
@@ -15,7 +16,7 @@ ms.locfileid: "27074407"
 名前、電子メール アドレス、および、対応する電子メール アドレスの種類[にお問い合わせください](contact.md)を表します。
 
 ## <a name="properties"></a>プロパティ
-| プロパティ     | 型   |説明|
+| プロパティ     | 種類   |説明|
 |:---------------|:--------|:----------|
 |address|String|連絡先の電子メール アドレスです。|
 |名前|String|連絡先の表示名。|

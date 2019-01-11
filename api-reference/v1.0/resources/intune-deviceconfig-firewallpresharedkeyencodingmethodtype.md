@@ -2,12 +2,13 @@
 title: firewallPreSharedKeyEncodingMethodType 列挙型
 description: FirewallPreSharedKeyEncodingMethod に指定できる値
 author: tfitzmac
-ms.openlocfilehash: b8ab119c58aec6e62c0a32ccf310f43eab029573
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: bba6033985f2b960a272134614d98acc7203a9d8
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27343590"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27871751"
 ---
 # <a name="firewallpresharedkeyencodingmethodtype-enum-type"></a>firewallPreSharedKeyEncodingMethodType 列挙型
 

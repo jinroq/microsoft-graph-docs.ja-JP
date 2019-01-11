@@ -2,12 +2,13 @@
 title: DeviceManagementExchangeOnPremisesPolicy を更新します。
 description: DeviceManagementExchangeOnPremisesPolicy オブジェクトのプロパティを更新します。
 author: tfitzmac
-ms.openlocfilehash: 260f20fd73320da901eedd1b95ff9b670f78e001
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 5cd001f6935836537fe06bd44af20ca9e6a6aa7b
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27305748"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27873970"
 ---
 # <a name="update-devicemanagementexchangeonpremisespolicy"></a>DeviceManagementExchangeOnPremisesPolicy を更新します。
 

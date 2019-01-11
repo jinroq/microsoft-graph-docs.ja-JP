@@ -2,12 +2,13 @@
 title: Windows81CertificateProfileBase を取得します。
 description: Windows81CertificateProfileBase オブジェクトのプロパティと関係を参照してください。
 author: tfitzmac
-ms.openlocfilehash: 8c5ff7dd258f69546093d084b8159a5396376621
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: c89185b9211cf502c072a8ba4a3e28a199dcf5e4
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27341938"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27868734"
 ---
 # <a name="get-windows81certificateprofilebase"></a>Windows81CertificateProfileBase を取得します。
 

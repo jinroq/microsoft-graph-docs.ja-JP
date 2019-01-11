@@ -2,12 +2,13 @@
 title: AndroidWorkProfileVpnConfiguration を更新します。
 description: AndroidWorkProfileVpnConfiguration オブジェクトのプロパティを更新します。
 author: tfitzmac
-ms.openlocfilehash: 744838adbcc4dc453bbb6d14b9c9295372918c71
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 6c1ff2e73ce14568d1ce7c725db1ffc3ae206d64
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27321792"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27868895"
 ---
 # <a name="update-androidworkprofilevpnconfiguration"></a>AndroidWorkProfileVpnConfiguration を更新します。
 

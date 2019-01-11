@@ -1,12 +1,13 @@
 ---
 title: コネクタを connectorGroup に追加します。
 description: ConnectorGroup にコネクタを追加するのにには、この API を使用します。
-ms.openlocfilehash: f5e7330dd5476daacda47a78400181ad3ebc0e2b
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 0624356699b5354ddc5f11740e8561a3d6e2d851
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27068941"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27869994"
 ---
 # <a name="add-connector-to-connectorgroup"></a>コネクタを connectorGroup に追加します。
 

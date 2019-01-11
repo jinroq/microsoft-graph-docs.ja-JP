@@ -1,12 +1,13 @@
 ---
 title: fileSecurityState リソースの種類
 description: " > **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。"
-ms.openlocfilehash: cbf535dd6b30387afbe361389fa6bcfca1fc68fe
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 9d18021591b24d26577e41897111b90310746d18
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27073671"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27869504"
 ---
 # <a name="filesecuritystate-resource-type"></a>fileSecurityState リソースの種類
 
@@ -16,7 +17,7 @@ ms.locfileid: "27073671"
 
 ## <a name="properties"></a>プロパティ
 
-| プロパティ   | 型|説明|
+| プロパティ   | 種類|説明|
 |:---------------|:--------|:----------|
 |fileHash|[fileHash](filehash.md)|複合型の暗号化などの場所に依存したファイルのハッシュが含まれています。|
 |名前|String|ファイルの名前 (パス) です。|

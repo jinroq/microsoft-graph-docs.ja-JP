@@ -1,12 +1,13 @@
 ---
 title: fileAttachment リソースの種類
 description: '(テキスト ファイルなどの Word 文書)、イベント、メッセージや投稿の添付ファイルです。 **ContentBytes** '
-ms.openlocfilehash: 97c9b22c379b00fa76a9dee45389e57269e6fc20
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Priority
+ms.openlocfilehash: 81de7a12ca371158d7f6369861a8a197fd544821
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27023646"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27870057"
 ---
 # <a name="fileattachment-resource-type"></a>fileAttachment リソースの種類
 
@@ -27,7 +28,7 @@ ms.locfileid: "27023646"
 |[Delete](../api/attachment-delete.md) | なし |fileAttachment オブジェクトを削除します。 |
 
 ## <a name="properties"></a>プロパティ
-| プロパティ     | 型   |説明|
+| プロパティ     | 種類   |説明|
 |:---------------|:--------|:----------|
 |contentBytes|Binary|base64 でエンコードされたファイルの内容。|
 |contentId|String|Exchange ストア内の添付ファイルの ID。|

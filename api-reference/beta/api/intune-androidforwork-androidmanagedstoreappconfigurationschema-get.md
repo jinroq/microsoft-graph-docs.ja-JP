@@ -2,12 +2,13 @@
 title: AndroidManagedStoreAppConfigurationSchema を取得します。
 description: AndroidManagedStoreAppConfigurationSchema オブジェクトのプロパティと関係を参照してください。
 author: tfitzmac
-ms.openlocfilehash: 1c75c791c4db463eb0d6c796feb2d0e5479c33ac
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: a30d1739239878e0851a6b74df2212b3b6ca46b6
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27360600"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27874649"
 ---
 # <a name="get-androidmanagedstoreappconfigurationschema"></a>AndroidManagedStoreAppConfigurationSchema を取得します。
 

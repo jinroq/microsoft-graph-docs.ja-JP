@@ -2,12 +2,13 @@
 title: androidWorkProfileScepCertificateProfile リソースの種類
 description: Androif 作業プロファイルの SCEP 証明書プロファイル
 author: tfitzmac
-ms.openlocfilehash: a448c4d32dce5d4933b265ecea49443c7bc1075a
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 6dc0f54fca98612a36a45d98ea66c6413a087ac0
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27301968"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27872528"
 ---
 # <a name="androidworkprofilescepcertificateprofile-resource-type"></a>androidWorkProfileScepCertificateProfile リソースの種類
 
@@ -28,7 +29,7 @@ Androif 作業プロファイルの SCEP 証明書プロファイル
 |[AndroidWorkProfileScepCertificateProfile を削除します。](../api/intune-deviceconfig-androidworkprofilescepcertificateprofile-delete.md)|なし|の[androidWorkProfileScepCertificateProfile](../resources/intune-deviceconfig-androidworkprofilescepcertificateprofile.md)を削除します。|
 |[AndroidWorkProfileScepCertificateProfile を更新します。](../api/intune-deviceconfig-androidworkprofilescepcertificateprofile-update.md)|[androidWorkProfileScepCertificateProfile](../resources/intune-deviceconfig-androidworkprofilescepcertificateprofile.md)|[AndroidWorkProfileScepCertificateProfile](../resources/intune-deviceconfig-androidworkprofilescepcertificateprofile.md)オブジェクトのプロパティを更新します。|
 
-## <a name="properties"></a>Properties
+## <a name="properties"></a>プロパティ
 |プロパティ|種類|説明|
 |:---|:---|:---|
 |ID|String|エンティティのキー。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|

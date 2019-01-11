@@ -2,12 +2,13 @@
 title: deviceCategory の更新
 description: deviceCategory オブジェクトのプロパティを更新します。
 author: tfitzmac
-ms.openlocfilehash: 8676067ff4ce34358bcfd8400d28e1d73bd11f68
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 6c9a8babcab2eb49b28dee118a6912fcd8923e09
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27321519"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27872823"
 ---
 # <a name="update-devicecategory"></a>deviceCategory の更新
 

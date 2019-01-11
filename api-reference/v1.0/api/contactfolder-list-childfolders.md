@@ -2,12 +2,13 @@
 title: childFolders を一覧表示する
 description: 指定した連絡先フォルダーの下の子フォルダーのコレクションを取得します。
 author: angelgolfer-ms
-ms.openlocfilehash: 0df1361fd1f25b2ac6e7793fb78ed1063cc00d84
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 7574b1d269a5ebdda0dbcc4549e8669d6540e1a7
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27340531"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27873571"
 ---
 # <a name="list-childfolders"></a>childFolders を一覧表示する
 

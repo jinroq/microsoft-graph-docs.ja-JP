@@ -1,12 +1,13 @@
 ---
 title: diagnosticDataSubmissionMode 列挙型
 description: ワトソンなど、診断および利用状況の遠隔測定データを送信するデバイスを使用できます。
-ms.openlocfilehash: 9cdc76691df0a7a9492524d02c338ee2a42106e3
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 3be69b4be25ece2ced611c028a855347e4dba66e
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27067304"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27871534"
 ---
 # <a name="diagnosticdatasubmissionmode-enum-type"></a>diagnosticDataSubmissionMode 列挙型
 

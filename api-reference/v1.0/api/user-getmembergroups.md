@@ -1,12 +1,13 @@
 ---
 title: 'user: getMemberGroups'
 description: ユーザーがのメンバーであるすべてのグループを返します。 チェックは推移機能が、読み取りとは異なり、
-ms.openlocfilehash: 875228e2c40be7928024e8507416d81e9b80a805
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Priority
+ms.openlocfilehash: 23b05799d6660b2b173f7e5dbd1c8d86f0644fef
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27023383"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27870064"
 ---
 # <a name="user-getmembergroups"></a>user: getMemberGroups
 
@@ -45,7 +46,7 @@ POST /users/{id | userPrincipalName}/getMemberGroups
 
 要求本文で、次のパラメーターを含む JSON オブジェクトを指定します。
 
-| パラメーター           | 型    | 説明                                                                                                                                                                                                                                                                         |
+| パラメーター           | Type    | 説明                                                                                                                                                                                                                                                                         |
 | :------------------ | :------ | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | securityEnabledOnly | Boolean | ユーザーがメンバーであるセキュリティ グループのみを返すように指定するには **true**、ユーザーがメンバーであるすべてのグループとディレクトリ ロールを返すように指定するには **false** を設定します。注:このパラメーターの **true** 設定は、ユーザーに対してこのメソッドを呼び出したときにのみサポートされています。 |
 

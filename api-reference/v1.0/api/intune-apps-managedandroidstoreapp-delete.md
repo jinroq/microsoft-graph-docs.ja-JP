@@ -2,12 +2,13 @@
 title: Delete managedAndroidStoreApp
 description: managedAndroidStoreApp を削除します。
 author: tfitzmac
-ms.openlocfilehash: eb9708a7de3a00d890ba59c15a7e3cb1cf4259f5
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 907fd1e24f37e3febe867c0ac8e64ca7e951c0b6
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27305608"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27872486"
 ---
 # <a name="delete-managedandroidstoreapp"></a>Delete managedAndroidStoreApp
 

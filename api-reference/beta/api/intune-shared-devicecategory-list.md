@@ -2,12 +2,13 @@
 title: deviceCategories のリスト
 description: deviceCategory オブジェクトのプロパティとリレーションシップをリストします。
 author: tfitzmac
-ms.openlocfilehash: c5cc37f375a56d1e1ca005841af83936760deb69
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 9f3b484a3a518028e826f34092e7295a8a9d7d6b
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27327161"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27868531"
 ---
 # <a name="list-devicecategories"></a>deviceCategories のリスト
 

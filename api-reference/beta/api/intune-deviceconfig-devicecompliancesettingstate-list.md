@@ -2,12 +2,13 @@
 title: List deviceComplianceSettingStates
 description: deviceComplianceSettingState オブジェクトのプロパティとリレーションシップをリストします。
 author: tfitzmac
-ms.openlocfilehash: 8e5dd8d24d69b20ad418d255f161646a6a252f50
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 2dfddb77cf258074df20496d9def43f38a013a81
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27308366"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27873858"
 ---
 # <a name="list-devicecompliancesettingstates"></a>List deviceComplianceSettingStates
 

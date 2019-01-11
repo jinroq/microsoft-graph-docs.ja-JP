@@ -2,12 +2,13 @@
 title: iosStoreApp の削除
 description: iosStoreApp を削除します。
 author: tfitzmac
-ms.openlocfilehash: d25d32b4bb4bb4ea5643af374e3dcad3c8296c72
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: e240b9bb10af7c3b73db8f3c06e891b409b9ebf8
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27360516"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27874614"
 ---
 # <a name="delete-iosstoreapp"></a>iosStoreApp の削除
 

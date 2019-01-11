@@ -2,12 +2,13 @@
 title: ワークシート:Range
 description: アドレスまたは名前で指定された範囲オブジェクトを取得します。
 author: lumine2008
-ms.openlocfilehash: fec1ea97be1ca2c094af7e32deac0b6a37f4f086
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: f057b93cbc0bd2e846330b9e5e1e49b2323bf8b2
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27319867"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27873319"
 ---
 # <a name="worksheet-range"></a>ワークシート:Range
 
@@ -35,7 +36,7 @@ GET /workbook/worksheets/{id|name}/range
 
 ## <a name="function-parameters"></a>関数パラメーター
 
-| パラメーター    | 種類   |説明|
+| Parameter    | Type   |説明|
 |:---------------|:--------|:----------|
 |address|文字列|省略可能。範囲のアドレスまたは名前。指定されていない場合は、ワークシート全体の範囲が返されます。|
 

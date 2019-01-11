@@ -2,12 +2,13 @@
 title: windowsKioskUWPApp リソースの種類
 description: アプリケーションの型の基本クラス
 author: tfitzmac
-ms.openlocfilehash: 328a91065692a7b315ade5dae86c15d6def320eb
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 8f456841962b399a1e9687017a0a8eaeb07a4ba7
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27305181"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27871863"
 ---
 # <a name="windowskioskuwpapp-resource-type"></a>windowsKioskUWPApp リソースの種類
 
@@ -19,7 +20,7 @@ ms.locfileid: "27305181"
 
 [WindowsKioskAppBase](../resources/intune-deviceconfig-windowskioskappbase.md)から継承します。
 
-## <a name="properties"></a>Properties
+## <a name="properties"></a>プロパティ
 |プロパティ|種類|説明|
 |:---|:---|:---|
 |startLayoutTileSize|[windowsAppStartLayoutTileSize](../resources/intune-deviceconfig-windowsappstartlayouttilesize.md)|[WindowsKioskAppBase](../resources/intune-deviceconfig-windowskioskappbase.md)から継承される開始レイアウトのアプリケーションのタイルのサイズです。 可能な値は、`hidden`、`small`、`medium`、`wide`、`large` です。|

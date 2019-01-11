@@ -2,12 +2,13 @@
 title: WindowsAppX を取得します。
 description: WindowsAppX オブジェクトのプロパティと関係を参照してください。
 author: tfitzmac
-ms.openlocfilehash: ee4ea8652acd1c64d9ee78e1ee22569c849c8220
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: aa87736626fbd2a26849b67b6993f7706de7cd75
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27338886"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27869798"
 ---
 # <a name="get-windowsappx"></a>WindowsAppX を取得します。
 

@@ -2,12 +2,13 @@
 title: リスト windows10NetworkBoundaryConfigurations
 description: Windows10NetworkBoundaryConfiguration オブジェクトのプロパティと関係を一覧表示します。
 author: tfitzmac
-ms.openlocfilehash: b00f450e05d99c2fad5943093622762fc5b24772
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 1bdc97e04db44abe4edea126a00e3ae247bf5b8a
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27355539"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27873537"
 ---
 # <a name="list-windows10networkboundaryconfigurations"></a>リスト windows10NetworkBoundaryConfigurations
 

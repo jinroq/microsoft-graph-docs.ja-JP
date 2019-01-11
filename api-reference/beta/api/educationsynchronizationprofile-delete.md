@@ -2,12 +2,13 @@
 title: EducationSynchronizationProfile を削除します。
 description: 識別子に基づくテナントの学校のデータの同期プロファイルを削除します。
 author: mmast-msft
-ms.openlocfilehash: b0287133d579915279e0f9a02bf49dd981ccf419
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 09cc19b22cfa433cef39c81a6cbeadeddcf52ace
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27343303"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27870365"
 ---
 # <a name="delete-a-educationsynchronizationprofile"></a>EducationSynchronizationProfile を削除します。
 
@@ -18,7 +19,7 @@ ms.locfileid: "27343303"
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
 
-| アクセス許可の種類 | アクセス許可 |
+| アクセス許可の種類 | Permissions |
 |:-----------|:----------|
 | 委任 (職場または学校のアカウント) | EduAdministration.ReadWrite |
 

@@ -2,12 +2,13 @@
 title: Win32LobApp を作成します。
 description: 新しい win32LobApp オブジェクトを作成します。
 author: tfitzmac
-ms.openlocfilehash: 7eb282ad8c12172e0af960ac71c3a1a5a4ba8fd9
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: edd3e68d71cb2f31bb7b2f3fc0b24bde1e33768a
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27318880"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27874376"
 ---
 # <a name="create-win32lobapp"></a>Win32LobApp を作成します。
 

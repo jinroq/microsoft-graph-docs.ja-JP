@@ -2,12 +2,13 @@
 title: participantMixerLevel リソースの種類
 description: 特定の参加者のオーディオのをレベルをミキサーの設定
 author: VinodRavichandran
-ms.openlocfilehash: 9d5a5d740fbdf250f90b28539221e8231c0bf38c
-ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
+localization_priority: Normal
+ms.openlocfilehash: 8a7b77c07240fbb5face70eb8ea21be55b85f1fd
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "27380143"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27874138"
 ---
 # <a name="participantmixerlevel-resource-type"></a>participantMixerLevel リソースの種類
 
@@ -17,7 +18,7 @@ ms.locfileid: "27380143"
 
 ## <a name="properties"></a>プロパティ
 
-| プロパティ               | 型                                                      | 説明                                                                                         |
+| プロパティ               | 種類                                                      | 説明                                                                                         |
 | :--------------------- | :-------------------------------------------------------- | :---------------------------------------------------------------------------------------------------|
 | ダック                | [audioDuckingConfiguration](audioduckingconfiguration.md) | ダック (段階的に導入と出力) のこの partipant の他のソースのカスタム ミックスの構成です。       |
 | exclusiveMode          | ブール                                                   | かどうか、ミックスから明示的なソース レベルのないソースを削除してください。                       |

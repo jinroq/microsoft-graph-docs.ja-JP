@@ -3,12 +3,13 @@ author: daspek
 ms.author: dspektor
 ms.date: 09/14/2017
 title: ItemActionSet
-ms.openlocfilehash: 3b2f77ea21f2352b0a8fa647af84d9b0af08a2ab
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 194530da1df449d5ba523e084b2e72cd91bbe13d
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27066790"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27873095"
 ---
 # <a name="itemactionset-resource-type"></a>ItemActionSet リソースの種類
 
@@ -49,7 +50,7 @@ ms.locfileid: "27066790"
 現在使用可能なアクションを次に示します。
 将来、新しいアクションがログに記録される可能性があるため、アプリが認識するアクションがなくても、アプリが **itemActionSet** の処理を受け入れることを確認してください。
 
-| プロパティ名 | 型              | 説明
+| プロパティ名 | Type              | 説明
 |:--------------|:------------------|:-----------------------------------------
 | comment       | [commentAction][] | アイテムにコメントが追加されました。
 | create        | [createAction][]  | アイテムが作成されました。

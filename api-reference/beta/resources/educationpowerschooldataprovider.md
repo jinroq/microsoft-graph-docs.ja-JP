@@ -2,12 +2,13 @@
 title: educationPowerSchoolDataProvider リソース
 description: PowerSchool は、入力ソースとして使用すると、学校のデータの同期プロファイルを設定するために使用します。
 author: mmast-msft
-ms.openlocfilehash: 714866d03c70aae8ea03a27b63fb3efbb4fa5ba4
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 48a23a2e2a50e2e235b5722466c67094275236a1
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27312804"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27868783"
 ---
 # <a name="educationpowerschooldataprovider-resource"></a>educationPowerSchoolDataProvider リソース
 
@@ -17,7 +18,7 @@ ms.locfileid: "27312804"
 
 [EducationSynchronizationDataProvider](educationsynchronizationdataprovider.md)から派生します。
 
-## <a name="properties"></a>Properties
+## <a name="properties"></a>プロパティ
 
 | プロパティ | 種類 | 説明 |
 |:-|:-|:-|

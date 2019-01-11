@@ -1,12 +1,13 @@
 ---
 title: managedAppPinCharacterSet 列挙型
 description: 暗証番号 (pin) のユーザーのアプリケーションに使用する文字セット
-ms.openlocfilehash: 65b900828de5ed33dc5e457104d154764291098e
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: dce3d39869a4d41ee88866a1d7c8da0af425849a
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27021414"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27871016"
 ---
 # <a name="managedapppincharacterset-enum-type"></a>managedAppPinCharacterSet 列挙型
 

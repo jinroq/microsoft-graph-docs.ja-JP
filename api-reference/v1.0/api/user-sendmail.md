@@ -2,12 +2,13 @@
 title: メールを送信する
 description: 要求本文に指定されたメッセージを送信します。メッセージは、既定で [送信済みアイテム] フォルダーに保存されます。
 author: dkershaw10
-ms.openlocfilehash: a818ec5cc455b6ca78c920be57ad34155a03a1bc
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Priority
+ms.openlocfilehash: 9187601787fce5b173ce6d22006bc56bec9b83fc
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27333293"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27872150"
 ---
 # <a name="send-mail"></a>メールを送信する
 
@@ -39,10 +40,10 @@ POST /users/{id | userPrincipalName}/sendMail
 ## <a name="request-body"></a>要求本文
 要求本文で、次のパラメーターを含む JSON オブジェクトを指定します。
 
-| パラメーター    | 種類   |説明|
+| パラメーター    | Type   |説明|
 |:---------------|:--------|:----------|
 |message|[Message](../resources/message.md)|送信するメッセージです。必須。|
-|saveToSentItems|Boolean|[送信済みアイテム] 内のメッセージを保存するかどうかを示します。パラメーターを false にする場合にのみ指定します。既定では true です。省略可能。 |
+|saveToSentItems|ブール値|[送信済みアイテム] 内のメッセージを保存するかどうかを示します。パラメーターを false にする場合にのみ指定します。既定では true です。省略可能。 |
 
 ## <a name="response"></a>応答
 

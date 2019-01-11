@@ -2,12 +2,13 @@
 title: ユーザーを取得する
 description: user オブジェクトのプロパティとリレーションシップを読み取ります。
 author: tfitzmac
-ms.openlocfilehash: cf0ee7b2c6d9cf13176f65c174ee4b6ac986984b
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 9e6fac98b30c9a66e159dabd816a5e5bbe350f4a
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27359690"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27869784"
 ---
 # <a name="get-user"></a>ユーザーを取得する
 

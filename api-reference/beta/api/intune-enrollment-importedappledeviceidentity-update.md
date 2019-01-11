@@ -2,12 +2,13 @@
 title: ImportedAppleDeviceIdentity を更新します。
 description: ImportedAppleDeviceIdentity オブジェクトのプロパティを更新します。
 author: tfitzmac
-ms.openlocfilehash: e2248a781ac4f6bb8ce238d12f2679217e7badd6
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 4019621eb6f69b288575a592b59b0018582c0b06
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27352088"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27870505"
 ---
 # <a name="update-importedappledeviceidentity"></a>ImportedAppleDeviceIdentity を更新します。
 

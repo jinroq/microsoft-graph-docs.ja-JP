@@ -1,12 +1,13 @@
 ---
 title: plannerPlan リソースの種類
 description: '**PlannerPlan**リソースでは、Office 365 のプランを表します。 計画は、グループが所有することができ、plannerTasks のコレクションが含まれています。 PlannerBuckets のコレクションもあります。 各プラン オブジェクトには、計画の詳細を含めることができる詳細オブジェクトがあります。 グループ、計画、およびタスク間の関係の詳細については、プランナーを参照してください。'
-ms.openlocfilehash: cd2990bc42929c4c501e676d05d7d643dd6f7d3d
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Priority
+ms.openlocfilehash: cfcc94fab067cc76bb530edbdb8477183ebf3531
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27024030"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27873011"
 ---
 # <a name="plannerplan-resource-type"></a>plannerPlan リソースの種類
 
@@ -22,10 +23,10 @@ ms.locfileid: "27024030"
 |[Update](../api/plannerplan-update.md) | [plannerPlan](plannerplan.md) |**plannerPlan** オブジェクトを更新します。 |
 
 ## <a name="properties"></a>プロパティ
-| プロパティ     | 型   |説明|
+| プロパティ     | 種類   |説明|
 |:---------------|:--------|:----------|
 |createdDateTime|DateTimeOffset|読み取り専用。計画の作成日時。Timestamp 型は、ISO 8601 形式を使用して日付と時刻の情報を表し、必ず UTC 時間です。たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、次のようになります。`'2014-01-01T00:00:00Z'`|
-|id|String| 読み取り専用。 計画の ID です。 28 の文字、大文字小文字を区別することをお勧めします。 サービスの[フォーマットの検証](planner-identifiers-disclaimer.md)が行われます。|
+|id|String| 読み取り専用です。 計画の ID です。 28 の文字、大文字小文字を区別することをお勧めします。 サービスの[フォーマットの検証](planner-identifiers-disclaimer.md)が行われます。|
 |owner|String|計画を所有する[グループ](group.md)の ID です。 このフィールドを設定する前に、有効なグループが存在する必要があります。 設定すると後、は、このプロパティを更新できません。|
 |タイトル|String|必須。計画のタイトル。|
 |createdBy|[identitySet](identityset.md)|読み取り専用です。計画を作成したユーザー。|

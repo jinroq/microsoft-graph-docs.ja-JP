@@ -2,12 +2,13 @@
 title: managementConditionExpressionModel リソースの種類
 description: 管理条件の式のモデルは、管理条件式のモデル表現です。
 author: tfitzmac
-ms.openlocfilehash: 5f580dd7d33ebadc7e7fce0b05fbebf36cb83d58
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: cae69081c1c45a50bd3df83e8ae44ff9f520d822
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27321736"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27869637"
 ---
 # <a name="managementconditionexpressionmodel-resource-type"></a>managementConditionExpressionModel リソースの種類
 
@@ -19,7 +20,7 @@ ms.locfileid: "27321736"
 
 [ManagementConditionExpression](../resources/intune-fencing-managementconditionexpression.md)から継承します。
 
-## <a name="properties"></a>Properties
+## <a name="properties"></a>プロパティ
 |プロパティ|種類|説明|
 |:---|:---|:---|
 

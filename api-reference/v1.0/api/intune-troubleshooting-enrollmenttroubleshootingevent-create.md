@@ -2,12 +2,13 @@
 title: enrollmentTroubleshootingEvent の作成
 description: 新しい enrollmentTroubleshootingEvent オブジェクトを作成します。
 author: tfitzmac
-ms.openlocfilehash: 0ff50de23b6fd39e8e27202fd9b72c690e02aee4
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 633e16f1d21808e55dd3b5d8fe677a8b6bec37d2
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27331795"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27869497"
 ---
 # <a name="create-enrollmenttroubleshootingevent"></a>enrollmentTroubleshootingEvent の作成
 

@@ -2,12 +2,13 @@
 title: resourceOperation リソース タイプ
 description: " AAD のセキュリティ グループに、MobileApp のリソースを割り当てるオペレーションを使用します。  組み込みのロールについては、リソース操作を変更できません。"
 author: tfitzmac
-ms.openlocfilehash: 9108181fe4d1c3cf241d879d5c1e4315d84d4eeb
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 20bdb309883c4aa713e94ac1346441544f67c774
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27323297"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27871702"
 ---
 # <a name="resourceoperation-resource-type"></a>resourceOperation リソース タイプ
 

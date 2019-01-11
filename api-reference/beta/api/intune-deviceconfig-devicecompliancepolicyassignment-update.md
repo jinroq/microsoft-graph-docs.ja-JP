@@ -2,12 +2,13 @@
 title: deviceCompliancePolicyAssignment の更新
 description: deviceCompliancePolicyAssignment オブジェクトのプロパティを更新します。
 author: tfitzmac
-ms.openlocfilehash: 3c968232fdcc629376e5d7cc22758dd626d7f2a8
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: b86a3e338574aa97f463a9c7a52b41a5fea1e4b3
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27327238"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27868797"
 ---
 # <a name="update-devicecompliancepolicyassignment"></a>deviceCompliancePolicyAssignment の更新
 

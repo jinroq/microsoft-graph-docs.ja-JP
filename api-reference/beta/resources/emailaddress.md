@@ -1,12 +1,13 @@
 ---
 title: emailAddress リソースの種類
 description: 名前およびエンティティのインスタンスの SMTP アドレスを表すなど、メッセージの受信者、または予定表の所有者です。
-ms.openlocfilehash: f607fe4ce01b9a3c3f5e7af5aa1638fef3840177
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 5286334378aa5d208cf171ecab0bdc1777a4073b
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27067512"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27871226"
 ---
 # <a name="emailaddress-resource-type"></a>emailAddress リソースの種類
 
@@ -15,7 +16,7 @@ ms.locfileid: "27067512"
 名前およびエンティティのインスタンスの SMTP アドレスを表すなど、メッセージの受信者、または予定表の所有者です。
 
 ## <a name="properties"></a>プロパティ
-| プロパティ     | 型   |説明|
+| プロパティ     | 種類   |説明|
 |:---------------|:--------|:----------|
 |address|String|エンティティ インスタンスの電子メール アドレスです。|
 |名前|String|エンティティ インスタンスの表示名。|

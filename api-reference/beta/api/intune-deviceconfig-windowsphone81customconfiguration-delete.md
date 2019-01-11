@@ -2,12 +2,13 @@
 title: windowsPhone81CustomConfiguration の削除
 description: windowsPhone81CustomConfiguration を削除します。
 author: tfitzmac
-ms.openlocfilehash: 3e09b8ee9d64f13fd26130919d5ba9b069465dfc
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: f307c99ccd7da02ca699ee302bb02f9d326ee714
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27362245"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27873228"
 ---
 # <a name="delete-windowsphone81customconfiguration"></a>windowsPhone81CustomConfiguration の削除
 

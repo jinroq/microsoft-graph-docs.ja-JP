@@ -2,12 +2,13 @@
 title: MacOSTrustedRootCertificate を作成します。
 description: 新しい macOSTrustedRootCertificate オブジェクトを作成します。
 author: tfitzmac
-ms.openlocfilehash: 3ad2d5eaa0daaab6a71972f6aba1f4bca69486fd
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: e8f49ec5a1a3b2d744eb990cd0b43aa09d1ed906
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27321708"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27873894"
 ---
 # <a name="create-macostrustedrootcertificate"></a>MacOSTrustedRootCertificate を作成します。
 

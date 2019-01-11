@@ -2,12 +2,13 @@
 title: auditProperty リソースの種類
 description: 監査のプロパティのプロパティが含まれるクラス。
 author: tfitzmac
-ms.openlocfilehash: 2d7cd7f1fbbf9f813cf447ca53e0d4652eb0feda
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: e91f3771be981f6ff410e8774f6a8ac9fbc121dd
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27312902"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27870918"
 ---
 # <a name="auditproperty-resource-type"></a>auditProperty リソースの種類
 

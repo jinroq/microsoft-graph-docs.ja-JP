@@ -1,12 +1,13 @@
 ---
 title: educationAssignmentResource リソースの種類
 description: 割り当てに関連付けられているリソースを格納するラッパー オブジェクトを返します。 ラッパーが**distributeForStudentWork**プロパティを追加し、このリソースが、あることを示します
-ms.openlocfilehash: 6907af5e4408248487b118c390bb2ec209700124
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 55d978ceb2a3df613ded09682bbdc42009f4e204
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27070558"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27868839"
 ---
 # <a name="educationassignmentresource-resource-type"></a>educationAssignmentResource リソースの種類
 
@@ -21,13 +22,13 @@ ms.locfileid: "27070558"
 |:---------------|:--------|:----------|
 |[EducationAssignmentResource を取得します。](../api/educationassignmentresource-get.md) | [educationAssignmentResource](educationassignmentresource.md) |**EducationAssignmentResource**オブジェクトのプロパティと関係を参照してください。|
 |[Update](../api/educationassignmentresource-update.md) | [educationAssignmentResource](educationassignmentresource.md) |**EducationAssignmentResource**オブジェクトを更新します。 |
-|[削除](../api/educationassignmentresource-delete.md) | なし |**EducationAssignmentResource**オブジェクトを削除します。 |
+|[Delete](../api/educationassignmentresource-delete.md) | なし |**EducationAssignmentResource**オブジェクトを削除します。 |
 
 ## <a name="properties"></a>プロパティ
-| プロパティ     | 型   |説明|
+| プロパティ     | 種類   |説明|
 |:---------------|:--------|:----------|
-|distributeForStudentWork|ブール値|受講生受講者の変更、および送信のため送信するたびにこのリソースをコピーするかどうかを示します。|
-|id|String| このリソースの ID です。 読み取り専用。|
+|distributeForStudentWork|ブール型|受講生受講者の変更、および送信のため送信するたびにこのリソースをコピーするかどうかを示します。|
+|id|String| このリソースの ID です。 読み取り専用です。|
 |resource|[educationResource](educationresource.md)|リソースがこの割り当てに関連付けられているオブジェクト。|
 
 ## <a name="relationships"></a>リレーションシップ

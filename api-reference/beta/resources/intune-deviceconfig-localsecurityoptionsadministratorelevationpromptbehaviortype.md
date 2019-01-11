@@ -2,12 +2,13 @@
 title: localSecurityOptionsAdministratorElevationPromptBehaviorType 列挙型
 description: LocalSecurityOptionsAdministratorElevationPromptBehavior に指定できる値
 author: tfitzmac
-ms.openlocfilehash: 620e2030433bd0f7a72263fa16907ec18c86f5f8
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 424c1193015d688019892d66ed07588358dcb8c2
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27308751"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27870883"
 ---
 # <a name="localsecurityoptionsadministratorelevationpromptbehaviortype-enum-type"></a>localSecurityOptionsAdministratorElevationPromptBehaviorType 列挙型
 

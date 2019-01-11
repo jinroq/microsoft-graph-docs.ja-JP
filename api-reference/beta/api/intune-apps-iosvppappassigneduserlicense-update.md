@@ -2,12 +2,13 @@
 title: IosVppAppAssignedUserLicense を更新します。
 description: IosVppAppAssignedUserLicense オブジェクトのプロパティを更新します。
 author: tfitzmac
-ms.openlocfilehash: ea8384ebeb9f217ef8353896f10e4bcba242aefe
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: ea6aa8383c363744278929a1f1cd84eb1605e055
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27342016"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27870082"
 ---
 # <a name="update-iosvppappassigneduserlicense"></a>IosVppAppAssignedUserLicense を更新します。
 

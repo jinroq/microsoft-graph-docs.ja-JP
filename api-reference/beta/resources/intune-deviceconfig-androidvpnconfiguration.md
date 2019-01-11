@@ -2,12 +2,13 @@
 title: androidVpnConfiguration リソースの種類
 description: このプロファイルの構成を提供することによって必要な VPN エンドポイントに接続するための Android デバイスに指示できます。 指定する認証方法とセキュリティの種類必要 VPN エンドポイントで行うことができます、VPN 接続シームレスなエンド ・ ユーザーのです。
 author: tfitzmac
-ms.openlocfilehash: 9f2328d6d84c6e4b365407f9a0dc60d4fe6aef17
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 3338dec188994919fb680038553355808a39b0a8
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27348063"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27871184"
 ---
 # <a name="androidvpnconfiguration-resource-type"></a>androidVpnConfiguration リソースの種類
 
@@ -28,7 +29,7 @@ ms.locfileid: "27348063"
 |[AndroidVpnConfiguration を削除します。](../api/intune-deviceconfig-androidvpnconfiguration-delete.md)|なし|の[androidVpnConfiguration](../resources/intune-deviceconfig-androidvpnconfiguration.md)を削除します。|
 |[AndroidVpnConfiguration を更新します。](../api/intune-deviceconfig-androidvpnconfiguration-update.md)|[androidVpnConfiguration](../resources/intune-deviceconfig-androidvpnconfiguration.md)|[AndroidVpnConfiguration](../resources/intune-deviceconfig-androidvpnconfiguration.md)オブジェクトのプロパティを更新します。|
 
-## <a name="properties"></a>Properties
+## <a name="properties"></a>プロパティ
 |プロパティ|種類|説明|
 |:---|:---|:---|
 |ID|String|エンティティのキー。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|

@@ -1,12 +1,13 @@
 ---
 title: plannerFavoritePlanReference リソースの種類
 description: '**PlannerFavoritePlanReference**リソースは、ユーザーがお気に入りとしてマークされている plannerPlan への参照の repesents を入力します。 '
-ms.openlocfilehash: bd399572dfce54ee7e46da6af60eb661484519de
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: b17846eaa1b9a9859d23735d18a191cae4872542
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27068344"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27871324"
 ---
 # <a name="plannerfavoriteplanreference-resource-type"></a>plannerFavoritePlanReference リソースの種類
 
@@ -18,7 +19,7 @@ ms.locfileid: "27068344"
 
 
 ## <a name="properties"></a>プロパティ
-| プロパティ     | 型   |説明|
+| プロパティ     | 種類   |説明|
 |:---------------|:--------|:----------|
 |orderHint|String|リスト ビューでこの種類の項目の順序付けに使用するヒント。形式は「[プランナーでの順序のヒントの使用](planner-order-hint-format.md)」で定義されています。|
 |planTitle|String|ユーザーは、お気に入りとしてマークされている時にプランのタイトルです。|

@@ -2,12 +2,13 @@
 title: enrollmentState 列挙型
 description: まだ文書化されていません
 author: tfitzmac
-ms.openlocfilehash: 5e432f73ace1adbd529c910f70b97b7357a406e3
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 94a3790733067598442af615cb90b8ae347fd228
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27301296"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27869021"
 ---
 # <a name="enrollmentstate-enum-type"></a>enrollmentState 列挙型
 

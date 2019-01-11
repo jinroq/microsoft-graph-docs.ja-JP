@@ -2,12 +2,13 @@
 title: exportDeviceAndAppManagementData 関数
 description: まだ文書化されていません
 author: tfitzmac
-ms.openlocfilehash: 3ec79080a2e4f6f5da3622dedfedc486231703ee
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: c7c4bc294d382cf1e1917a2c5a607a7c90107856
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27352221"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27872848"
 ---
 # <a name="exportdeviceandappmanagementdata-function"></a>exportDeviceAndAppManagementData 関数
 

@@ -2,12 +2,13 @@
 title: deviceEnrollmentLimitConfiguration の削除
 description: deviceEnrollmentLimitConfiguration を削除します。
 author: tfitzmac
-ms.openlocfilehash: 3ee55ab33ddbbf076106bb1ef120209061012c12
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: c530107392b766ec98f2765599529e0de2b3da53
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27343576"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27872220"
 ---
 # <a name="delete-deviceenrollmentlimitconfiguration"></a>deviceEnrollmentLimitConfiguration の削除
 

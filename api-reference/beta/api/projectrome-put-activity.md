@@ -1,12 +1,13 @@
 ---
 title: アクティビティを作成または置換する
 description: 新規作成またはアプリケーションが既存のユーザー アクティビティを交換します。 1 つの要求でユーザーの利用状況とその関連する**historyItems**を作成したい場合は、深い挿入を使用できます。
-ms.openlocfilehash: 1a749f0c4303551ab9915c89d84e6757c61bd0a2
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 01fa9fff306dbd07af0964f27dd97b288b6bab67
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27071208"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27871793"
 ---
 # <a name="create-or-replace-an-activity"></a>アクティビティを作成または置換する
 
@@ -37,7 +38,7 @@ PUT /me/activities/{appActivityId}
 
 ## <a name="request-headers"></a>要求ヘッダー
 
-|名前 | 型 | 説明|
+|名前 | 種類 | 説明|
 |:----|:-----|:-----------|
 |Authorization | string | ベアラー {トークン}。必須。|
 

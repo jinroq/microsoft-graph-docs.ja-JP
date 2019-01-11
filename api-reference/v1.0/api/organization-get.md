@@ -1,12 +1,13 @@
 ---
 title: 組織を取得する
 description: 現在認証されている組織のプロパティとリレーションシップを取得します。
-ms.openlocfilehash: 842fe286a83b41f44c64b4c80d0095c20170f0d4
-ms.sourcegitcommit: 37591c2299c80e7675cd2b5f781e1eeeba628a60
+localization_priority: Priority
+ms.openlocfilehash: f2fc708ea2d1841987f8b2a757a5388735227007
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "27748395"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27871198"
 ---
 # <a name="get-organization"></a>組織を取得する
 
@@ -38,7 +39,7 @@ GET /organization
 
 ## <a name="request-headers"></a>要求ヘッダー
 
-| 名前       | 型 | 説明|
+| 名前       | 種類 | 説明|
 |:-----------|:------|:----------|
 | Authorization  | string  | ベアラー {トークン}。必須。 |
 

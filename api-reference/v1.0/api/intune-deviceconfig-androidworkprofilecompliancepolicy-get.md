@@ -2,12 +2,13 @@
 title: AndroidWorkProfileCompliancePolicy を取得します。
 description: AndroidWorkProfileCompliancePolicy オブジェクトのプロパティと関係を参照してください。
 author: tfitzmac
-ms.openlocfilehash: 5426fe184f370c84701913db28ec98d397db10ec
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: e83a7e2404b880d7ada68f5e778ba5acc1186e58
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27322065"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27872031"
 ---
 # <a name="get-androidworkprofilecompliancepolicy"></a>AndroidWorkProfileCompliancePolicy を取得します。
 

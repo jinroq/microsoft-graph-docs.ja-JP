@@ -2,12 +2,13 @@
 title: IosEasEmailProfileConfiguration を作成します。
 description: 新しい iosEasEmailProfileConfiguration オブジェクトを作成します。
 author: tfitzmac
-ms.openlocfilehash: b17b2683d792cfd4044ac4a91d9367ec1f963e15
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: c14913d440720e3d28e83bb267e5218dead82d5e
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27306406"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27868867"
 ---
 # <a name="create-ioseasemailprofileconfiguration"></a>IosEasEmailProfileConfiguration を作成します。
 

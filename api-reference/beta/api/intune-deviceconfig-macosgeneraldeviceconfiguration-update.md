@@ -2,12 +2,13 @@
 title: macOSGeneralDeviceConfiguration の更新
 description: macOSGeneralDeviceConfiguration オブジェクトのプロパティを更新します。
 author: tfitzmac
-ms.openlocfilehash: 84ea867f10a99f985e7789cab2071183b34751c9
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 90dd325d44cd0ac8577ce82aa97ff516180f9cc0
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27348490"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27874103"
 ---
 # <a name="update-macosgeneraldeviceconfiguration"></a>macOSGeneralDeviceConfiguration の更新
 

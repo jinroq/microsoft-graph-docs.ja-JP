@@ -2,12 +2,13 @@
 title: DeviceManagementScript を更新します。
 description: DeviceManagementScript オブジェクトのプロパティを更新します。
 author: tfitzmac
-ms.openlocfilehash: e0eb397960a9ddae4041578761d5001b729f1464
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: aaca6501f0a1c0fd206583af4e976b9afe9ac2cc
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27325313"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27869294"
 ---
 # <a name="update-devicemanagementscript"></a>DeviceManagementScript を更新します。
 

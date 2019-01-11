@@ -1,12 +1,13 @@
 ---
 title: 'privilegedRole: selfActivate'
 description: 依頼者に割り当てられているロールをアクティブにします。
-ms.openlocfilehash: bff445bf1fa5d7c0dfbce080b4361b0479b7dcb7
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 9423d87714fcd4a7b7cce1dd5cd03bcef3e0ef9f
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27072498"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27872129"
 ---
 # <a name="privilegedrole-selfactivate"></a>privilegedRole: selfActivate
 
@@ -44,7 +45,7 @@ POST /privilegedRoles/{id}/selfActivate
 ## <a name="request-body"></a>要求本文
 要求本文で、次のパラメーターを含む JSON オブジェクトを指定します。
 
-| パラメーター    | 型   |説明|
+| パラメーター    | Type   |説明|
 |:---------------|:--------|:----------|
 |理由|文字列|省略可能。 このロールのアクティブ化の理由について説明します。|
 |duration|文字列|省略可能。 有効な値である可能性があります```min```(最低限のライセンス認証の期間)、 ```default``` (アクティブ化の既定の期間、ロール)、または時間数は、ライセンス認証の手続きを指定する double 型の値です。 指定した期間をロールの設定をロールのアクティブ化の期間よりも長いことはできません。 |

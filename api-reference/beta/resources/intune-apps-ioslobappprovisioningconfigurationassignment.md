@@ -2,12 +2,13 @@
 title: iosLobAppProvisioningConfigurationAssignment リソースの種類
 description: LOB アプリケーションのプロビジョニングと構成は、iOS のグループの割り当てに使用するプロパティを含むクラスです。
 author: tfitzmac
-ms.openlocfilehash: 795fe7e07fdd5a79e4d3d99f7d081bd458452473
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: c136689f0b99423445eecb1b9309bf1794f389c7
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27358220"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27868846"
 ---
 # <a name="ioslobappprovisioningconfigurationassignment-resource-type"></a>iosLobAppProvisioningConfigurationAssignment リソースの種類
 
@@ -25,7 +26,7 @@ LOB アプリケーションのプロビジョニングと構成は、iOS のグ
 |[IosLobAppProvisioningConfigurationAssignment を削除します。](../api/intune-apps-ioslobappprovisioningconfigurationassignment-delete.md)|なし|の[iosLobAppProvisioningConfigurationAssignment](../resources/intune-apps-ioslobappprovisioningconfigurationassignment.md)を削除します。|
 |[IosLobAppProvisioningConfigurationAssignment を更新します。](../api/intune-apps-ioslobappprovisioningconfigurationassignment-update.md)|[iosLobAppProvisioningConfigurationAssignment](../resources/intune-apps-ioslobappprovisioningconfigurationassignment.md)|[IosLobAppProvisioningConfigurationAssignment](../resources/intune-apps-ioslobappprovisioningconfigurationassignment.md)オブジェクトのプロパティを更新します。|
 
-## <a name="properties"></a>Properties
+## <a name="properties"></a>プロパティ
 |プロパティ|種類|説明|
 |:---|:---|:---|
 |ID|String|エンティティのキー。|

@@ -1,12 +1,13 @@
 ---
 title: Graph ベータの終了点の参照
 description: このセクションのリファレンスの内容は、Microsoft Graph のベータ版の端点を説明します。 ベータ版のエンドポイントには、プレビューでは、現在ではまだ一般に利用可能な Api が含まれています。 これらの Api を実行してくださいし、次のチャンネルを使用してフィードバックを提供することにご協力します。
-ms.openlocfilehash: 9ed6362405a6ff542b707ac546383a9820a8228d
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Priority
+ms.openlocfilehash: 9f9223c36679865b40303dc3530dee9c2c93950d
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27073359"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27874306"
 ---
 # <a name="microsoft-graph-beta-endpoint-reference"></a>Graph ベータの終了点の参照
 

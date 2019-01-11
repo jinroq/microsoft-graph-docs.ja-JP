@@ -2,12 +2,13 @@
 title: Delete iosVppApp
 description: iosVppApp を削除します。
 author: tfitzmac
-ms.openlocfilehash: 1ada3e59b302f763cc63c5cdc9a11bda86bcac56
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: da40be70f4f6ead60e98c260f23a41cb32a722d0
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27318558"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27869651"
 ---
 # <a name="delete-iosvppapp"></a>Delete iosVppApp
 

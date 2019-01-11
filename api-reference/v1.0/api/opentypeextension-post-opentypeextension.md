@@ -1,12 +1,13 @@
 ---
 title: オープン拡張機能を作成する
 description: オープン拡張機能 (openTypeExtension オブジェクト) を作成し、リソースの新規または既存のインスタンスのカスタム プロパティを追加します。
-ms.openlocfilehash: c30942092bc3d8804af8193658d11fe561f77503
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Priority
+ms.openlocfilehash: a07dddff6347021dabecfff185ddac5c27c5d0a7
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27023202"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27872542"
 ---
 # <a name="create-open-extension"></a>オープン拡張機能を作成する
 
@@ -71,7 +72,7 @@ POST /users/{id|userPrincipalName}/extensions
 要求本文に_拡張機能_を含める方法については、[要求本文](#request-body)のセクションをご覧ください。
 
 ## <a name="path-parameters"></a>パス パラメーター
-|パラメーター|型|説明|
+|Parameter|Type|説明|
 |:-----|:-----|:-----|
 |ID|文字列|該当するコレクション内のオブジェクトの一意識別子。必須。|
 

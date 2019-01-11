@@ -1,12 +1,13 @@
 ---
 title: ServicePrincipal を削除します。
 description: ServicePrincipal を削除します。
-ms.openlocfilehash: 363c6a17a7181d72214329c3e6f50433d84a1786
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 4e2cd3adeacc1e7c1f7e3c955f247800a63673b8
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27069340"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27873837"
 ---
 # <a name="delete-serviceprincipal"></a>ServicePrincipal を削除します。
 
@@ -29,7 +30,7 @@ DELETE /servicePrincipals/{id}
 
 ```
 ## <a name="request-headers"></a>要求ヘッダー
-| 名前       | 型 | 説明|
+| 名前       | 種類 | 説明|
 |:---------------|:--------|:----------|
 | Authorization  | string  | ベアラー {トークン}。必須。 |
 

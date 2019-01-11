@@ -2,12 +2,13 @@
 title: Get groupLifecyclePolicy
 description: groupLifecyclePolicies オブジェクトのプロパティとリレーションシップを取得します。
 author: dkershaw10
-ms.openlocfilehash: 6613d4e1bd996a7ceed44a6520fbd140289d920b
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 0908fea443fbe52185fc3bc2a759cd62cebfa511
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27350954"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27874684"
 ---
 # <a name="get-grouplifecyclepolicy"></a>Get groupLifecyclePolicy
 

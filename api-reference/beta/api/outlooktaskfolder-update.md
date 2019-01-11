@@ -2,12 +2,13 @@
 title: Outlooktaskfolder を更新します。
 description: Outlook の仕事フォルダーの書き込み可能なプロパティを更新します。
 author: angelgolfer-ms
-ms.openlocfilehash: 83b78a7d3ff625a6eaaacd3ac54612e487350cde
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 06dd21cf9da2fab8c0472ac29f477b6a40d2df5c
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27313973"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27874355"
 ---
 # <a name="update-outlooktaskfolder"></a>Outlooktaskfolder を更新します。
 

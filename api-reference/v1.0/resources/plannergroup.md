@@ -1,12 +1,13 @@
 ---
 title: plannerGroup リソースの種類
 description: '**PlannerGroup**リソースでは、グループの計画のリソースへのアクセスを提供します。 使用可能なプロパティが含まれていません。'
-ms.openlocfilehash: 3a2bb9cfd90a36f6b0a2148e0d789ac97b2199fb
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: ac55c0acd3561205654383cbb1b3d264c219d1a3
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27022655"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27871968"
 ---
 # <a name="plannergroup-resource-type"></a>plannerGroup リソースの種類
 
@@ -19,9 +20,9 @@ ms.locfileid: "27022655"
 |[plans を一覧表示する](../api/plannergroup-list-plans.md) |[plannerPlan](plannerplan.md) コレクション| **plannerPlan** オブジェクト コレクションを取得します。|
 
 ## <a name="properties"></a>プロパティ
-| プロパティ     | 型   |説明|
+| プロパティ     | 種類   |説明|
 |:---------------|:--------|:----------|
-|id|String| 読み取り専用です。**plannerGroup** の識別子|
+|ID|String| 読み取り専用です。**plannerGroup** の識別子|
 
 ## <a name="relationships"></a>リレーションシップ
 | リレーションシップ | 型   |説明|

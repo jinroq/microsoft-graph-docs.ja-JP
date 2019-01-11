@@ -1,12 +1,13 @@
 ---
 title: 招待メッセージの構成
 description: invitedUserMessageInfo オブジェクトでは、招待メッセージを構成できます。
-ms.openlocfilehash: 326ca6654fd30da9c36022424b48c4a8f7b82ffe
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: f8a6dd118f1774320e3fe8327d284dac1141fc55
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27068180"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27874124"
 ---
 # <a name="configuring-the-invitation-message"></a>招待メッセージの構成
 
@@ -16,9 +17,9 @@ invitedUserMessageInfo オブジェクトでは、[招待](invitation.md)メッ�
 
 
 ## <a name="properties"></a>プロパティ
-| プロパティ     | 型   |説明|
+| プロパティ     | 種類   |説明|
 |:---------------|:--------|:----------|
-|ccRecipients|[Recipients](recipient.md)|招待メッセージの送信先にする必要がある追加の受信者。現在、サポートされている追加の受信者は 1 人のみです。|
+|ccRecipients|[受信者](recipient.md)|招待メッセージの送信先にする必要がある追加の受信者。現在、サポートされている追加の受信者は 1 人のみです。|
 |customizedMessageBody|String|既定のメッセージを使用しない場合に送信するカスタマイズされたメッセージ本文。|
 |messageLanguage|String|既定のメッセージを送信する言語。customizedMessageBody が指定されている場合、このプロパティは無視され、メッセージは ustomizedMessageBody を使用して送信されます。言語書式は ISO 639 である必要があります。既定では ja-JP です。|
 

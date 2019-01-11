@@ -2,12 +2,13 @@
 title: resultantAppStateDetail 列挙型
 description: アプリケーションが特定には理由について、列挙型を示す追加の詳細は、状態をインストールします。
 author: tfitzmac
-ms.openlocfilehash: e06e8afb6ebb5e22abf11d9cd53150bed5288052
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 5c5eb8c921be7c14a45c979a57ffcaa0704d9b4b
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27352529"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27874145"
 ---
 # <a name="resultantappstatedetail-enum-type"></a>resultantAppStateDetail 列挙型
 

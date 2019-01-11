@@ -1,12 +1,13 @@
 ---
 title: エンドポイント リソースの種類
 description: 'エンドポイントでは、エンティティに関連付けられているリソースの Url を表します。  などの Office 365 の新しいグループが作成されると、追加のリソースは Office 365 のグループの一部として作成も。 会話のグループのメールボックスとドキュメントやファイル グループの OneDrive フォルダーのようなものが含まれます。 これでグループのリソースの種類の*エンドポイント*のナビゲーションを使用して、関連付けられているリソースの Url を含む、Office 365 グループ リソースに関する詳細な情報を読み取ることができます。 これにより、これらのリソースを理解し、自分の経験にも URL が発生したリソースを埋め込むアプリケーションことができます。 '
-ms.openlocfilehash: 8d95cef8e25095512e94d5aed5ec7540562862bd
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 5a342bee0a1918eb142542693198173239d1b3c7
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27068110"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27871286"
 ---
 # <a name="endpoint-resource-type"></a>エンドポイント リソースの種類
 
@@ -22,12 +23,12 @@ ms.locfileid: "27068110"
 |[エンドポイントを取得します。](../api/endpoint-get.md) | [エンドポイント](endpoint.md) |エンドポイント オブジェクトのプロパティと関係を参照してください。|
 
 ## <a name="properties"></a>プロパティ
-| プロパティ     | 型   |説明|
+| プロパティ     | 種類   |説明|
 |:---------------|:--------|:----------|
-| capability     | String  | このリソースに関連付けられている機能をについて説明します。 (例: メッセージ、会話など) Null を許容しません。 読み取り専用。 |
+| capability     | String  | このリソースに関連付けられている機能をについて説明します。 (例: メッセージ、会話など) Null を許容しません。 読み取り専用です。 |
 | id             | String  | エンドポイントの一意の識別子キーです。 null 許容ではありません。 読み取り専用です。|
 | providerId     | String  | アプリケーション id が公開するサービスの基になるのです。 null 許容ではありません。 読み取り専用です。|
-| プロバイダー   | String  | 公開するサービスの基になるの名前です。 読み取り専用。|
+| プロバイダー   | String  | 公開するサービスの基になるの名前です。 読み取り専用です。|
 | providerResourceId|String| Office 365 グループでは、この処理は、リソース (たとえば Yammer.FeedURL など) の既知の名前に設定されます。 null 許容ではありません。 読み取り専用です。|
 | uri            | String  | 公開されたリソースの URL です。 null 許容ではありません。 読み取り専用です。|
 

@@ -1,12 +1,13 @@
 ---
 title: recurrenceRange リソースの種類
 description: '定期的なイベントを繰り返す期間について説明します。 '
-ms.openlocfilehash: 0e255c28ea2d1e72ae3219e082b3e62b166b1f4c
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 4129b698e48b01e0208b88fbdc57fb777835cd4e
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27023138"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27872990"
 ---
 # <a name="recurrencerange-resource-type"></a>recurrenceRange リソースの種類
 
@@ -16,7 +17,7 @@ ms.locfileid: "27023138"
 
 ## <a name="properties"></a>プロパティ
 
-| プロパティ     | 型   |説明|
+| プロパティ     | 種類   |説明|
 |:---------------|:--------|:----------|
 |endDate|Date|定期的なパターンの適用を停止する日付。 イベントの定期的なパターンによっては、最後に会議が発生するのは、この日付にならない可能性があります。 **type** が `endDate` の場合、必要です。|
 |numberOfOccurrences|Int32|イベントを繰り返す回数を指定します。 必須です。**type** が `numbered` の場合、正の値である必要があります。|

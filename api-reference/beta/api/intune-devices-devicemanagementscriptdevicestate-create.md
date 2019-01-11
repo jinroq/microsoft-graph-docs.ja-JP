@@ -2,12 +2,13 @@
 title: DeviceManagementScriptDeviceState を作成します。
 description: 新しい deviceManagementScriptDeviceState オブジェクトを作成します。
 author: tfitzmac
-ms.openlocfilehash: 2b809c82e077bc75c354d3b8b1c09548eaacad64
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: d4f2dcd346aaef4d71b0309f65b7f6a7005c4346
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27304852"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27874257"
 ---
 # <a name="create-devicemanagementscriptdevicestate"></a>DeviceManagementScriptDeviceState を作成します。
 

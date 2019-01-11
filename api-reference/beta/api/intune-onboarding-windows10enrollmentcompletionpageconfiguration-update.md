@@ -2,12 +2,13 @@
 title: Windows10EnrollmentCompletionPageConfiguration を更新します。
 description: Windows10EnrollmentCompletionPageConfiguration オブジェクトのプロパティを更新します。
 author: tfitzmac
-ms.openlocfilehash: bcc62cc4bea069a6a29ce2d321578a86145a0446
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 9cc7d2cff8563d5e720e23c7f49bd88c42f47ec3
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27360047"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27870083"
 ---
 # <a name="update-windows10enrollmentcompletionpageconfiguration"></a>Windows10EnrollmentCompletionPageConfiguration を更新します。
 

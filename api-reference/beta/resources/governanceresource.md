@@ -1,12 +1,13 @@
 ---
 title: governanceResource リソースの種類
 description: 特権を持つユーザー情報管理 (PIM) で管理できるリソースを表します。 Azure のリソースでは、サブスクリプション、リソース グループ、およびなど、仮想マシン、SQL データベースなどのリソースとなります。
-ms.openlocfilehash: 6a048680c3b9bb614287e764d547a20bd09b5d25
-ms.sourcegitcommit: 82f9d0d10388572a3073b2dde8ca0a7b409135b8
+localization_priority: Normal
+ms.openlocfilehash: 263996049753256fd39906dba61138c3ab0f0248
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "27191131"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27869392"
 ---
 # <a name="governanceresource-resource-type"></a>governanceResource リソースの種類
 
@@ -15,7 +16,7 @@ ms.locfileid: "27191131"
 特権を持つユーザー情報管理 (PIM) で管理できるリソースを表します。 Azure のリソースでは、サブスクリプション、リソース グループ、およびなど、仮想マシン、SQL データベースなどのリソースとなります。
 
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>メソッド
 
 | メソッド          | 戻り値の型 |説明|
 |:---------------|:--------|:----------|
@@ -28,7 +29,7 @@ No `POST`、 `PUT`、 `PATCH`、`DELETE`でサポートされている`roleDefin
 ## <a name="properties"></a>プロパティ
 | プロパティ          |種類         |説明|
 |:------------------|:----------|:----------|
-|id                 |String     |リソースの id です。 GUID 形式であります。|
+|ID                 |String     |リソースの id です。 GUID 形式であります。|
 |externalId           |String   |外部システムで、元の id を表すリソースの外部の id です。 たとえば、サブスクリプション リソースの外部 id には、「サブスクリプション/c14ae696-5e0c-4e5d-88cc-bef6637737ac」ができます。 |
 |type               |String     |必須。 リソースの種類。 たとえば、Azure のリソースの種類可能性があります「サブスクリプション」、「リソース グループ」、"Microsoft.Sql/server"など。|
 |displayName        |String     |リソースの表示名。|
@@ -46,7 +47,7 @@ No `POST`、 `PUT`、 `PATCH`、`DELETE`でサポートされている`roleDefin
 |roleDefinitions |[governanceRoleDefinition](../resources/governanceroledefinition.md)コレクション|リソースのロール定義のコレクションです。|
 |roleAssignmentRequests |[governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md)コレクション|リソースの役割の割り当て要求のコレクションです。|
 |roleSettings |[governanceRoleSetting](../resources/governancerolesetting.md)コレクション|リソースのロールの設定のコレクションです。|
-|親          |[governanceResource](../resources/governanceresource.md)           |取得のみ可能な値です。 親リソースです。 `pimforazurerbac`シナリオでは、サブスクリプションに属しているリソースを表すことができます。|
+|親          |[governanceResource](../resources/governanceresource.md)           |読み取り専用です。 親リソースです。 `pimforazurerbac`シナリオでは、サブスクリプションに属しているリソースを表すことができます。|
 
 ## <a name="json-representation"></a>JSON 表記
 

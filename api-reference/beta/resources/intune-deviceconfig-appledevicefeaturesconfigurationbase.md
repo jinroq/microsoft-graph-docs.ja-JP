@@ -2,12 +2,13 @@
 title: appleDeviceFeaturesConfigurationBase リソースの種類
 description: Apple デバイス機能構成のプロファイル。
 author: tfitzmac
-ms.openlocfilehash: bac4446afad385d04f61bc8e96a7dca805c8604c
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 5c404f30ef606aa43f894e6d8f5db03137b671d9
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27336394"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27869420"
 ---
 # <a name="appledevicefeaturesconfigurationbase-resource-type"></a>appleDeviceFeaturesConfigurationBase リソースの種類
 

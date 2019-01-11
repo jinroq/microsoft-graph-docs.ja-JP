@@ -2,12 +2,13 @@
 title: AndroidForWorkTrustedRootCertificate を作成します。
 description: 新しい androidForWorkTrustedRootCertificate オブジェクトを作成します。
 author: tfitzmac
-ms.openlocfilehash: 07d74dbf4b8315ecbc00e6dac54cd5da8d98ba8e
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 9becf2b7f9781977f29d5950d05ab64e6c58376e
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27307414"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27869287"
 ---
 # <a name="create-androidforworktrustedrootcertificate"></a>AndroidForWorkTrustedRootCertificate を作成します。
 

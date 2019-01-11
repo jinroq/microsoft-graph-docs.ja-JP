@@ -2,12 +2,13 @@
 title: managedDevice リソース タイプ
 description: Intune 経由で管理または事前登録されるデバイス
 author: tfitzmac
-ms.openlocfilehash: ac55f444eb4c87f65befbc1ba33c2e9bc65dced2
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: d08b0559065b3977978621004b290a87879cdc70
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27309612"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27869217"
 ---
 # <a name="manageddevice-resource-type"></a>managedDevice リソース タイプ
 
@@ -45,7 +46,7 @@ Intune 経由で管理または事前登録されるデバイス
 |[updateWindowsDeviceAccount action](../api/intune-devices-manageddevice-updatewindowsdeviceaccount.md)|なし|まだ文書化されていません|
 |[revokeAppleVppLicenses アクション](../api/intune-devices-manageddevice-revokeapplevpplicenses.md)|なし|デバイスのすべてのアップル Vpp ライセンスを失効させる|
 
-## <a name="properties"></a>Properties
+## <a name="properties"></a>プロパティ
 |プロパティ|種類|説明|
 |:---|:---|:---|
 |ID|String|デバイスの一意識別子|

@@ -2,12 +2,13 @@
 title: deviceComplianceDeviceStatus の更新
 description: deviceComplianceDeviceStatus オブジェクトのプロパティを更新します。
 author: tfitzmac
-ms.openlocfilehash: 8a19eb26870f41d1a84b977af79feb0947b54073
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: d731a19359854cb39db5980f0b4c5e1b52b52897
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27325334"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27874502"
 ---
 # <a name="update-devicecompliancedevicestatus"></a>deviceComplianceDeviceStatus の更新
 

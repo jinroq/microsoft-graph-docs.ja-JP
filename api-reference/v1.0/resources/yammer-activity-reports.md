@@ -1,12 +1,13 @@
 ---
 title: Yammer アクティビティ レポート
 description: Yammer アクティビティ レポートを使用すると、組織全体での生成アクティビティの数と、Yammar でメッセージを投稿、「いいね!」を設定、メッセージを読み取ったそれぞれ別個のユーザーの数を確認することにより、Yammer への組織の関与のレベルを把握することができます。
-ms.openlocfilehash: ff9eaecf7b51cc5104c517b21fab88990e9a359e
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 98b3172fef6baff0a1ba13f6f78ad92b58829f3d
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27020743"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27871765"
 ---
 # <a name="yammer-activity-reports"></a>Yammer アクティビティ レポート
 

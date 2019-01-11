@@ -2,12 +2,13 @@
 title: certificateDestinationStore 列挙型
 description: 証明書の保存先のストアの使用可能な値です。
 author: tfitzmac
-ms.openlocfilehash: 1e7bfd7f5e6c6b6e2e4e44d461cfccdc09877f47
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 64b57a24749b4f7f64dd1ce0cb852dd23f799f92
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27347559"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27873963"
 ---
 # <a name="certificatedestinationstore-enum-type"></a>certificateDestinationStore 列挙型
 

@@ -2,12 +2,13 @@
 title: MicrosoftStoreForBusinessContainedApp を更新します。
 description: MicrosoftStoreForBusinessContainedApp オブジェクトのプロパティを更新します。
 author: tfitzmac
-ms.openlocfilehash: e4b9e451e5632a8d4b923aae5de86c854febfa2a
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 1250e6fd95caaa4e85761ce21d8db89faa139e81
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27324809"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27870008"
 ---
 # <a name="update-microsoftstoreforbusinesscontainedapp"></a>MicrosoftStoreForBusinessContainedApp を更新します。
 

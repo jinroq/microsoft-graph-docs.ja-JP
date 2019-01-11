@@ -1,12 +1,13 @@
 ---
 title: followupFlag リソースの種類
 description: ユーザーが特定のアイテムを後でフォローアップできるよう、フラグを設定できます。 サポートされているアイテムには、メッセージと連絡先があります。
-ms.openlocfilehash: a996bc05e5297149e587d7372e989580146c1fad
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: aa056d141bfac82b9f039ed705f6de49893783fe
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27070679"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27869379"
 ---
 # <a name="followupflag-resource-type"></a>followupFlag リソースの種類
 
@@ -15,7 +16,7 @@ ms.locfileid: "27070679"
 ユーザーが特定のアイテムを後でフォローアップできるよう、フラグを設定できます。 サポートされているアイテムには、[メッセージ](message.md)と[連絡先](contact.md)があります。
 
 ## <a name="properties"></a>プロパティ
-| プロパティ     | 型   |説明|
+| プロパティ     | 種類   |説明|
 |:---------------|:--------|:----------|
 |CompletedDateTime|[dateTimeTimeZone](datetimetimezone.md)|フォローアップが終了した日時。|
 |dueDateTime|**dateTimeTimeZone**|フォローアップが終了する予定の日時。|

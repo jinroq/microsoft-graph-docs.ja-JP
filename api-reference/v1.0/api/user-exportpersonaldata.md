@@ -1,12 +1,13 @@
 ---
 title: 'ユーザー: exportPersonalData'
 description: 組織のユーザーのデータをエクスポートするのには企業の管理者によって行われる、データ ポリシーの操作要求を送信します。
-ms.openlocfilehash: 9308e955e83ccad5779d8261537306a5220d8086
-ms.sourcegitcommit: 37591c2299c80e7675cd2b5f781e1eeeba628a60
+localization_priority: Normal
+ms.openlocfilehash: db20b0cb7eb11358298ce5b9fc59357a18fcb9be
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "27748214"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27869686"
 ---
 # <a name="user-exportpersonaldata"></a>ユーザー: exportPersonalData
 
@@ -37,7 +38,7 @@ POST /users/{id}/exportPersonalData
 ## <a name="request-body"></a>要求本文
 要求本文で、次のパラメーターを含む JSON オブジェクトを指定します。
 
-| パラメーター    | 種類   |説明|
+| パラメーター    | Type   |説明|
 |:---------------|:--------|:----------|
 |storageLocation|String|これは、データをエクスポートする必要があります、Azure ストレージ アカウントに共有アクセス署名 (SA) の URL です。|
 
