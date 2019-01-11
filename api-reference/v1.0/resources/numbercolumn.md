@@ -3,20 +3,21 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/11/2017
 title: NumberColumn
-ms.openlocfilehash: 3bc5ef0c2764fc941959a69ae58402ce3717e7b3
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 25db21e6495edb6c42746c47d257ae60a4c1cc07
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27023473"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27867411"
 ---
-# <a name="numbercolumn-resource-type"></a><span data-ttu-id="90600-102">numberColumn リソースの種類</span><span class="sxs-lookup"><span data-stu-id="90600-102">NumberColumn resource type</span></span>
+# <a name="numbercolumn-resource-type"></a><span data-ttu-id="fff41-102">numberColumn リソースの種類</span><span class="sxs-lookup"><span data-stu-id="fff41-102">NumberColumn resource type</span></span>
 
-<span data-ttu-id="90600-103">[columnDefinition](columndefinition.md) リソースの **numberColumn** は、列の値が数値であることを示します。</span><span class="sxs-lookup"><span data-stu-id="90600-103">The **numberColumn** on a [columnDefinition](columndefinition.md) resource indicates that the column's values are numbers.</span></span>
+<span data-ttu-id="fff41-103">[columnDefinition](columndefinition.md) リソースの **numberColumn** は、列の値が数値であることを示します。</span><span class="sxs-lookup"><span data-stu-id="fff41-103">The **numberColumn** on a [columnDefinition](columndefinition.md) resource indicates that the column's values are numbers.</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="90600-104">JSON 表記</span><span class="sxs-lookup"><span data-stu-id="90600-104">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="fff41-104">JSON 表記</span><span class="sxs-lookup"><span data-stu-id="fff41-104">JSON representation</span></span>
 
-<span data-ttu-id="90600-105">以下は、**numberColumn** リソースの JSON 表記です。</span><span class="sxs-lookup"><span data-stu-id="90600-105">Here is a JSON representation of a **numberColumn** resource.</span></span>
+<span data-ttu-id="fff41-105">以下は、**numberColumn** リソースの JSON 表記です。</span><span class="sxs-lookup"><span data-stu-id="fff41-105">Here is a JSON representation of a **numberColumn** resource.</span></span>
 <!-- { "blockType": "resource", "@odata.type": "microsoft.graph.numberColumn" } -->
 
 ```json
@@ -28,29 +29,29 @@ ms.locfileid: "27023473"
 }
 ```
 
-## <a name="properties"></a><span data-ttu-id="90600-106">プロパティ</span><span class="sxs-lookup"><span data-stu-id="90600-106">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="fff41-106">プロパティ</span><span class="sxs-lookup"><span data-stu-id="fff41-106">Properties</span></span>
 
-| <span data-ttu-id="90600-107">プロパティ名</span><span class="sxs-lookup"><span data-stu-id="90600-107">Property name</span></span>      | <span data-ttu-id="90600-108">種類</span><span class="sxs-lookup"><span data-stu-id="90600-108">Type</span></span>   | <span data-ttu-id="90600-109">説明</span><span class="sxs-lookup"><span data-stu-id="90600-109">Description</span></span>
+| <span data-ttu-id="fff41-107">プロパティ名</span><span class="sxs-lookup"><span data-stu-id="fff41-107">Property name</span></span>      | <span data-ttu-id="fff41-108">種類</span><span class="sxs-lookup"><span data-stu-id="fff41-108">Type</span></span>   | <span data-ttu-id="fff41-109">説明</span><span class="sxs-lookup"><span data-stu-id="fff41-109">Description</span></span>
 |:-------------------|:-------|:-----------------------------------------------
-| <span data-ttu-id="90600-110">**decimalPlaces**</span><span class="sxs-lookup"><span data-stu-id="90600-110">**decimalPlaces**</span></span>  | <span data-ttu-id="90600-111">string</span><span class="sxs-lookup"><span data-stu-id="90600-111">string</span></span> | <span data-ttu-id="90600-112">表示する小数点以下の桁数です。</span><span class="sxs-lookup"><span data-stu-id="90600-112">How many decimal places to display.</span></span> <span data-ttu-id="90600-113">使用可能な値については、下記を参照してください。</span><span class="sxs-lookup"><span data-stu-id="90600-113">See below for information about the possible values.</span></span>
-| <span data-ttu-id="90600-114">**displayAs**</span><span class="sxs-lookup"><span data-stu-id="90600-114">**displayAs**</span></span>      | <span data-ttu-id="90600-115">string</span><span class="sxs-lookup"><span data-stu-id="90600-115">string</span></span> | <span data-ttu-id="90600-116">UX での値の表示方法です。</span><span class="sxs-lookup"><span data-stu-id="90600-116">How the value should be presented in the UX.</span></span> <span data-ttu-id="90600-117">`number` または `percentage` のいずれかでなければなりません。</span><span class="sxs-lookup"><span data-stu-id="90600-117">Must be one of `number` or `percentage`.</span></span> <span data-ttu-id="90600-118">指定しない場合、`number` として扱われます。</span><span class="sxs-lookup"><span data-stu-id="90600-118">If unspecified, treated as `number`.</span></span>
-| <span data-ttu-id="90600-119">**maximum**</span><span class="sxs-lookup"><span data-stu-id="90600-119">**maximum**</span></span>        | <span data-ttu-id="90600-120">double</span><span class="sxs-lookup"><span data-stu-id="90600-120">double</span></span> | <span data-ttu-id="90600-121">許容最大値です。</span><span class="sxs-lookup"><span data-stu-id="90600-121">The maximum permitted value.</span></span>
-| <span data-ttu-id="90600-122">**minimum**</span><span class="sxs-lookup"><span data-stu-id="90600-122">**minimum**</span></span>        | <span data-ttu-id="90600-123">double</span><span class="sxs-lookup"><span data-stu-id="90600-123">double</span></span> | <span data-ttu-id="90600-124">許容最小値です。</span><span class="sxs-lookup"><span data-stu-id="90600-124">The minimum permitted value.</span></span>
+| <span data-ttu-id="fff41-110">**decimalPlaces**</span><span class="sxs-lookup"><span data-stu-id="fff41-110">**decimalPlaces**</span></span>  | <span data-ttu-id="fff41-111">string</span><span class="sxs-lookup"><span data-stu-id="fff41-111">string</span></span> | <span data-ttu-id="fff41-112">表示する小数点以下の桁数です。</span><span class="sxs-lookup"><span data-stu-id="fff41-112">How many decimal places to display.</span></span> <span data-ttu-id="fff41-113">使用可能な値については、下記を参照してください。</span><span class="sxs-lookup"><span data-stu-id="fff41-113">See below for information about the possible values.</span></span>
+| <span data-ttu-id="fff41-114">**displayAs**</span><span class="sxs-lookup"><span data-stu-id="fff41-114">**displayAs**</span></span>      | <span data-ttu-id="fff41-115">string</span><span class="sxs-lookup"><span data-stu-id="fff41-115">string</span></span> | <span data-ttu-id="fff41-116">UX での値の表示方法です。</span><span class="sxs-lookup"><span data-stu-id="fff41-116">How the value should be presented in the UX.</span></span> <span data-ttu-id="fff41-117">`number` または `percentage` のいずれかでなければなりません。</span><span class="sxs-lookup"><span data-stu-id="fff41-117">Must be one of `number` or `percentage`.</span></span> <span data-ttu-id="fff41-118">指定しない場合、`number` として扱われます。</span><span class="sxs-lookup"><span data-stu-id="fff41-118">If unspecified, treated as `number`.</span></span>
+| <span data-ttu-id="fff41-119">**maximum**</span><span class="sxs-lookup"><span data-stu-id="fff41-119">**maximum**</span></span>        | <span data-ttu-id="fff41-120">double</span><span class="sxs-lookup"><span data-stu-id="fff41-120">double</span></span> | <span data-ttu-id="fff41-121">許容最大値です。</span><span class="sxs-lookup"><span data-stu-id="fff41-121">The maximum permitted value.</span></span>
+| <span data-ttu-id="fff41-122">**minimum**</span><span class="sxs-lookup"><span data-stu-id="fff41-122">**minimum**</span></span>        | <span data-ttu-id="fff41-123">double</span><span class="sxs-lookup"><span data-stu-id="fff41-123">double</span></span> | <span data-ttu-id="fff41-124">許容最小値です。</span><span class="sxs-lookup"><span data-stu-id="fff41-124">The minimum permitted value.</span></span>
 
-## <a name="decimalplaces"></a><span data-ttu-id="90600-125">DecimalPlaces</span><span class="sxs-lookup"><span data-stu-id="90600-125">DecimalPlaces</span></span>
+## <a name="decimalplaces"></a><span data-ttu-id="fff41-125">DecimalPlaces</span><span class="sxs-lookup"><span data-stu-id="fff41-125">DecimalPlaces</span></span>
 
-| <span data-ttu-id="90600-126">値</span><span class="sxs-lookup"><span data-stu-id="90600-126">Value</span></span>          | <span data-ttu-id="90600-127">説明</span><span class="sxs-lookup"><span data-stu-id="90600-127">Description</span></span>
+| <span data-ttu-id="fff41-126">値</span><span class="sxs-lookup"><span data-stu-id="fff41-126">Value</span></span>          | <span data-ttu-id="fff41-127">説明</span><span class="sxs-lookup"><span data-stu-id="fff41-127">Description</span></span>
 |:---------------|:--------------------------------------------------------------
-| <span data-ttu-id="90600-128">**automatic**</span><span class="sxs-lookup"><span data-stu-id="90600-128">**automatic**</span></span>  | <span data-ttu-id="90600-129">既定。</span><span class="sxs-lookup"><span data-stu-id="90600-129">Default.</span></span> <span data-ttu-id="90600-130">必要に応じて自動的に小数点以下の桁を表示します。</span><span class="sxs-lookup"><span data-stu-id="90600-130">Automatically display decimal places as needed.</span></span>
-| <span data-ttu-id="90600-131">**none**</span><span class="sxs-lookup"><span data-stu-id="90600-131">**none**</span></span>       | <span data-ttu-id="90600-132">小数点以下の桁は表示されません。</span><span class="sxs-lookup"><span data-stu-id="90600-132">Do not display any decimal places.</span></span>
-| <span data-ttu-id="90600-133">**one**</span><span class="sxs-lookup"><span data-stu-id="90600-133">**one**</span></span>        | <span data-ttu-id="90600-134">小数第 1 位までを常に表示します。</span><span class="sxs-lookup"><span data-stu-id="90600-134">Always display one decimal place.</span></span>
-| <span data-ttu-id="90600-135">**two**</span><span class="sxs-lookup"><span data-stu-id="90600-135">**two**</span></span>        | <span data-ttu-id="90600-136">小数第 2 位までを常に表示します。</span><span class="sxs-lookup"><span data-stu-id="90600-136">Always display two decimal places.</span></span>
-| <span data-ttu-id="90600-137">**three**</span><span class="sxs-lookup"><span data-stu-id="90600-137">**three**</span></span>      | <span data-ttu-id="90600-138">小数第 3 位までを常に表示します。</span><span class="sxs-lookup"><span data-stu-id="90600-138">Always display three decimal places.</span></span>
-| <span data-ttu-id="90600-139">**four**</span><span class="sxs-lookup"><span data-stu-id="90600-139">**four**</span></span>       | <span data-ttu-id="90600-140">小数第 4 位までを常に表示します。</span><span class="sxs-lookup"><span data-stu-id="90600-140">Always display four decimal places.</span></span>
-| <span data-ttu-id="90600-141">**five**</span><span class="sxs-lookup"><span data-stu-id="90600-141">**five**</span></span>       | <span data-ttu-id="90600-142">小数第 5 位までを常に表示します。</span><span class="sxs-lookup"><span data-stu-id="90600-142">Always display five decimal places.</span></span>
+| <span data-ttu-id="fff41-128">**automatic**</span><span class="sxs-lookup"><span data-stu-id="fff41-128">**automatic**</span></span>  | <span data-ttu-id="fff41-129">既定。</span><span class="sxs-lookup"><span data-stu-id="fff41-129">Default.</span></span> <span data-ttu-id="fff41-130">必要に応じて自動的に小数点以下の桁を表示します。</span><span class="sxs-lookup"><span data-stu-id="fff41-130">Automatically display decimal places as needed.</span></span>
+| <span data-ttu-id="fff41-131">**none**</span><span class="sxs-lookup"><span data-stu-id="fff41-131">**none**</span></span>       | <span data-ttu-id="fff41-132">小数点以下の桁は表示されません。</span><span class="sxs-lookup"><span data-stu-id="fff41-132">Do not display any decimal places.</span></span>
+| <span data-ttu-id="fff41-133">**one**</span><span class="sxs-lookup"><span data-stu-id="fff41-133">**one**</span></span>        | <span data-ttu-id="fff41-134">小数第 1 位までを常に表示します。</span><span class="sxs-lookup"><span data-stu-id="fff41-134">Always display one decimal place.</span></span>
+| <span data-ttu-id="fff41-135">**two**</span><span class="sxs-lookup"><span data-stu-id="fff41-135">**two**</span></span>        | <span data-ttu-id="fff41-136">小数第 2 位までを常に表示します。</span><span class="sxs-lookup"><span data-stu-id="fff41-136">Always display two decimal places.</span></span>
+| <span data-ttu-id="fff41-137">**three**</span><span class="sxs-lookup"><span data-stu-id="fff41-137">**three**</span></span>      | <span data-ttu-id="fff41-138">小数第 3 位までを常に表示します。</span><span class="sxs-lookup"><span data-stu-id="fff41-138">Always display three decimal places.</span></span>
+| <span data-ttu-id="fff41-139">**four**</span><span class="sxs-lookup"><span data-stu-id="fff41-139">**four**</span></span>       | <span data-ttu-id="fff41-140">小数第 4 位までを常に表示します。</span><span class="sxs-lookup"><span data-stu-id="fff41-140">Always display four decimal places.</span></span>
+| <span data-ttu-id="fff41-141">**five**</span><span class="sxs-lookup"><span data-stu-id="fff41-141">**five**</span></span>       | <span data-ttu-id="fff41-142">小数第 5 位までを常に表示します。</span><span class="sxs-lookup"><span data-stu-id="fff41-142">Always display five decimal places.</span></span>
 
-<span data-ttu-id="90600-143">注: **decimalPlaces** と **displayAs** は数値の格納方法ではなく、表示方法に適用されます。</span><span class="sxs-lookup"><span data-stu-id="90600-143">Note: **decimalPlaces** and **displayAs** apply to how numbers are rendered, not stored.</span></span>
-<span data-ttu-id="90600-144">これらのプロパティは更新される場合があります。</span><span class="sxs-lookup"><span data-stu-id="90600-144">These properties may be updated.</span></span>
+<span data-ttu-id="fff41-143">注: **decimalPlaces** と **displayAs** は数値の格納方法ではなく、表示方法に適用されます。</span><span class="sxs-lookup"><span data-stu-id="fff41-143">Note: **decimalPlaces** and **displayAs** apply to how numbers are rendered, not stored.</span></span>
+<span data-ttu-id="fff41-144">これらのプロパティは更新される場合があります。</span><span class="sxs-lookup"><span data-stu-id="fff41-144">These properties may be updated.</span></span>
 
 <!-- {
   "type": "#page.annotation",

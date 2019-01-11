@@ -2,50 +2,51 @@
 title: イベントを取得する
 description: 指定したイベント オブジェクトのプロパティとリレーションシップを取得します。
 author: angelgolfer-ms
-ms.openlocfilehash: 0dc01844049a2022499436518fe71e6b14c4ac9b
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 491bf4c60d8de5f85b8ddff91ebbc0703c7cdd97
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27352522"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27828995"
 ---
-# <a name="get-event"></a><span data-ttu-id="ccdeb-103">イベントを取得する</span><span class="sxs-lookup"><span data-stu-id="ccdeb-103">Get event</span></span>
+# <a name="get-event"></a><span data-ttu-id="32cf0-103">イベントを取得する</span><span class="sxs-lookup"><span data-stu-id="32cf0-103">Get event</span></span>
 
-> <span data-ttu-id="ccdeb-104">**重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。</span><span class="sxs-lookup"><span data-stu-id="ccdeb-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="ccdeb-105">実稼働アプリケーションでの、これらの API の使用はサポートされていません。</span><span class="sxs-lookup"><span data-stu-id="ccdeb-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="32cf0-104">**重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。</span><span class="sxs-lookup"><span data-stu-id="32cf0-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="32cf0-105">実稼働アプリケーションでの、これらの API の使用はサポートされていません。</span><span class="sxs-lookup"><span data-stu-id="32cf0-105">Use of these APIs in production applications is not supported.</span></span>
 
-<span data-ttu-id="ccdeb-106">指定した[イベント](../resources/event.md) オブジェクトのプロパティとリレーションシップを取得します。</span><span class="sxs-lookup"><span data-stu-id="ccdeb-106">Get the properties and relationships of the specified [event](../resources/event.md) object.</span></span>
+<span data-ttu-id="32cf0-106">指定した[イベント](../resources/event.md) オブジェクトのプロパティとリレーションシップを取得します。</span><span class="sxs-lookup"><span data-stu-id="32cf0-106">Get the properties and relationships of the specified [event](../resources/event.md) object.</span></span>
 
-<span data-ttu-id="ccdeb-107">2 つシナリオは、アプリケーションが別のユーザーの予定表でイベントを取得する場所です。</span><span class="sxs-lookup"><span data-stu-id="ccdeb-107">There are two scenarios where an app can get an event in another user's calendar:</span></span>
+<span data-ttu-id="32cf0-107">2 つシナリオは、アプリケーションが別のユーザーの予定表でイベントを取得する場所です。</span><span class="sxs-lookup"><span data-stu-id="32cf0-107">There are two scenarios where an app can get an event in another user's calendar:</span></span>
 
-* <span data-ttu-id="ccdeb-108">アプリケーションは、アプリケーションの権限を持つ場合、または、</span><span class="sxs-lookup"><span data-stu-id="ccdeb-108">If the app has application permissions, or,</span></span>
-* <span data-ttu-id="ccdeb-109">アプリケーションがある場合、適切な 1 人のユーザーから[アクセス許可](#permissions)を委任し、他のユーザーは、そのユーザーとカレンダーを共有するにはまたは、そのユーザーに代理アクセスを与え。</span><span class="sxs-lookup"><span data-stu-id="ccdeb-109">If the app has the appropriate delegated [permissions](#permissions) from one user, and another user has shared a calendar with that user, or, has given delegated access to that user.</span></span> <span data-ttu-id="ccdeb-110">[詳細と例](/graph/outlook-get-shared-events-calendars)を参照してください。</span><span class="sxs-lookup"><span data-stu-id="ccdeb-110">See [details and an example](/graph/outlook-get-shared-events-calendars).</span></span>
+* <span data-ttu-id="32cf0-108">アプリケーションは、アプリケーションの権限を持つ場合、または、</span><span class="sxs-lookup"><span data-stu-id="32cf0-108">If the app has application permissions, or,</span></span>
+* <span data-ttu-id="32cf0-109">アプリケーションがある場合、適切な 1 人のユーザーから[アクセス許可](#permissions)を委任し、他のユーザーは、そのユーザーとカレンダーを共有するにはまたは、そのユーザーに代理アクセスを与え。</span><span class="sxs-lookup"><span data-stu-id="32cf0-109">If the app has the appropriate delegated [permissions](#permissions) from one user, and another user has shared a calendar with that user, or, has given delegated access to that user.</span></span> <span data-ttu-id="32cf0-110">[詳細と例](/graph/outlook-get-shared-events-calendars)を参照してください。</span><span class="sxs-lookup"><span data-stu-id="32cf0-110">See [details and an example](/graph/outlook-get-shared-events-calendars).</span></span>
 
-<span data-ttu-id="ccdeb-111">**イベント** リソースは[拡張機能](/graph/extensibility-overview)をサポートしているため、`GET` 操作を使用して、**イベント** インスタンスでカスタム プロパティと拡張機能データを取得することもできます。</span><span class="sxs-lookup"><span data-stu-id="ccdeb-111">Since the **event** resource supports [extensions](/graph/extensibility-overview), you can also use the `GET` operation to get custom properties and extension data in an **event** instance.</span></span>
+<span data-ttu-id="32cf0-111">**イベント** リソースは[拡張機能](/graph/extensibility-overview)をサポートしているため、`GET` 操作を使用して、**イベント** インスタンスでカスタム プロパティと拡張機能データを取得することもできます。</span><span class="sxs-lookup"><span data-stu-id="32cf0-111">Since the **event** resource supports [extensions](/graph/extensibility-overview), you can also use the `GET` operation to get custom properties and extension data in an **event** instance.</span></span>
 
 
-### <a name="support-various-time-zones"></a><span data-ttu-id="ccdeb-112">さまざまなタイム ゾーンをサポートします。</span><span class="sxs-lookup"><span data-stu-id="ccdeb-112">Support various time zones</span></span>
+### <a name="support-various-time-zones"></a><span data-ttu-id="32cf0-112">さまざまなタイム ゾーンをサポートします。</span><span class="sxs-lookup"><span data-stu-id="32cf0-112">Support various time zones</span></span>
 
-<span data-ttu-id="ccdeb-113">イベントを返す GET 操作の場合は、すべての操作で `Prefer: outlook.timezone` ヘッダーを使用して、応答のイベントの開始時刻と終了時刻のタイム ゾーンを指定できます。</span><span class="sxs-lookup"><span data-stu-id="ccdeb-113">For all GET operations that return events, you can use the `Prefer: outlook.timezone` header to specify the time zone for the event start and end times in the response.</span></span> 
+<span data-ttu-id="32cf0-113">イベントを返す GET 操作の場合は、すべての操作で `Prefer: outlook.timezone` ヘッダーを使用して、応答のイベントの開始時刻と終了時刻のタイム ゾーンを指定できます。</span><span class="sxs-lookup"><span data-stu-id="32cf0-113">For all GET operations that return events, you can use the `Prefer: outlook.timezone` header to specify the time zone for the event start and end times in the response.</span></span> 
 
-<span data-ttu-id="ccdeb-114">たとえば、次の `Prefer: outlook.timezone` ヘッダーは、応答の開始時刻と終了時刻を東部標準時に設定します。</span><span class="sxs-lookup"><span data-stu-id="ccdeb-114">For example, the following `Prefer: outlook.timezone` header sets the start and end times in the response to Eastern Standard Time.</span></span>
+<span data-ttu-id="32cf0-114">たとえば、次の `Prefer: outlook.timezone` ヘッダーは、応答の開始時刻と終了時刻を東部標準時に設定します。</span><span class="sxs-lookup"><span data-stu-id="32cf0-114">For example, the following `Prefer: outlook.timezone` header sets the start and end times in the response to Eastern Standard Time.</span></span>
 ```http
 Prefer: outlook.timezone="Eastern Standard Time"
 ```
 
-<span data-ttu-id="ccdeb-p103">イベントが別のタイム ゾーンで作成された場合は、開始時刻と終了時刻は `Prefer` ヘッダーで指定したタイム ゾーンに合わせて調整されます。サポートされているタイム ゾーン名については、この[一覧](../resources/datetimetimezone.md)を参照してください。`Prefer: outlook.timezone` ヘッダーを指定しない場合、開始時刻と終了時刻は UTC で返されます。</span><span class="sxs-lookup"><span data-stu-id="ccdeb-p103">If the event was created in a different time zone, the start and end times will be adjusted to the time zone specified in that `Prefer` header. See this [list](../resources/datetimetimezone.md) for the supported time zone names. If the `Prefer: outlook.timezone` header is not specified, the start and end times are returned in UTC.</span></span>
+<span data-ttu-id="32cf0-p103">イベントが別のタイム ゾーンで作成された場合は、開始時刻と終了時刻は `Prefer` ヘッダーで指定したタイム ゾーンに合わせて調整されます。サポートされているタイム ゾーン名については、この[一覧](../resources/datetimetimezone.md)を参照してください。`Prefer: outlook.timezone` ヘッダーを指定しない場合、開始時刻と終了時刻は UTC で返されます。</span><span class="sxs-lookup"><span data-stu-id="32cf0-p103">If the event was created in a different time zone, the start and end times will be adjusted to the time zone specified in that `Prefer` header. See this [list](../resources/datetimetimezone.md) for the supported time zone names. If the `Prefer: outlook.timezone` header is not specified, the start and end times are returned in UTC.</span></span>
 
-<span data-ttu-id="ccdeb-118">**イベント**リソース上で **OriginalStartTimeZone** プロパティと **OriginalEndTimeZone** プロパティを使用して、イベント作成時に使用されたタイム ゾーンを検索できます。</span><span class="sxs-lookup"><span data-stu-id="ccdeb-118">You can use the **OriginalStartTimeZone** and **OriginalEndTimeZone** properties on the **event** resource to find out the time zone used when the event was created.</span></span>
+<span data-ttu-id="32cf0-118">**イベント**リソース上で **OriginalStartTimeZone** プロパティと **OriginalEndTimeZone** プロパティを使用して、イベント作成時に使用されたタイム ゾーンを検索できます。</span><span class="sxs-lookup"><span data-stu-id="32cf0-118">You can use the **OriginalStartTimeZone** and **OriginalEndTimeZone** properties on the **event** resource to find out the time zone used when the event was created.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="ccdeb-119">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="ccdeb-119">Permissions</span></span>
-<span data-ttu-id="ccdeb-p104">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="ccdeb-p104">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="32cf0-119">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="32cf0-119">Permissions</span></span>
+<span data-ttu-id="32cf0-p104">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="32cf0-p104">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="ccdeb-122">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="ccdeb-122">Permission type</span></span>      | <span data-ttu-id="ccdeb-123">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="ccdeb-123">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="32cf0-122">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="32cf0-122">Permission type</span></span>      | <span data-ttu-id="32cf0-123">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="32cf0-123">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="ccdeb-124">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="ccdeb-124">Delegated (work or school account)</span></span> | <span data-ttu-id="ccdeb-125">Calendars.Read</span><span class="sxs-lookup"><span data-stu-id="ccdeb-125">Calendars.Read</span></span>    |
-|<span data-ttu-id="ccdeb-126">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="ccdeb-126">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="ccdeb-127">Calendars.Read</span><span class="sxs-lookup"><span data-stu-id="ccdeb-127">Calendars.Read</span></span>    |
-|<span data-ttu-id="ccdeb-128">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="ccdeb-128">Application</span></span> | <span data-ttu-id="ccdeb-129">Calendars.Read</span><span class="sxs-lookup"><span data-stu-id="ccdeb-129">Calendars.Read</span></span> |
+|<span data-ttu-id="32cf0-124">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="32cf0-124">Delegated (work or school account)</span></span> | <span data-ttu-id="32cf0-125">Calendars.Read</span><span class="sxs-lookup"><span data-stu-id="32cf0-125">Calendars.Read</span></span>    |
+|<span data-ttu-id="32cf0-126">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="32cf0-126">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="32cf0-127">Calendars.Read</span><span class="sxs-lookup"><span data-stu-id="32cf0-127">Calendars.Read</span></span>    |
+|<span data-ttu-id="32cf0-128">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="32cf0-128">Application</span></span> | <span data-ttu-id="32cf0-129">Calendars.Read</span><span class="sxs-lookup"><span data-stu-id="32cf0-129">Calendars.Read</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="ccdeb-130">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="ccdeb-130">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="32cf0-130">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="32cf0-130">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/events/{id}
@@ -65,29 +66,29 @@ GET /users/{id | userPrincipalName}/calendargroup/calendars/{id}/events/{id}
 GET /me/calendargroups/{id}/calendars/{id}/events/{id}
 GET /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{id}
 ```
-## <a name="optional-query-parameters"></a><span data-ttu-id="ccdeb-131">オプションのクエリ パラメーター</span><span class="sxs-lookup"><span data-stu-id="ccdeb-131">Optional query parameters</span></span>
-<span data-ttu-id="ccdeb-132">このメソッドは、応答をカスタマイズするための [OData クエリ パラメーター](https://developer.microsoft.com/graph/docs/concepts/query_parameters)をサポートします。</span><span class="sxs-lookup"><span data-stu-id="ccdeb-132">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
-## <a name="request-headers"></a><span data-ttu-id="ccdeb-133">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="ccdeb-133">Request headers</span></span>
-| <span data-ttu-id="ccdeb-134">名前</span><span class="sxs-lookup"><span data-stu-id="ccdeb-134">Name</span></span>       | <span data-ttu-id="ccdeb-135">種類</span><span class="sxs-lookup"><span data-stu-id="ccdeb-135">Type</span></span> | <span data-ttu-id="ccdeb-136">説明</span><span class="sxs-lookup"><span data-stu-id="ccdeb-136">Description</span></span>|
+## <a name="optional-query-parameters"></a><span data-ttu-id="32cf0-131">オプションのクエリ パラメーター</span><span class="sxs-lookup"><span data-stu-id="32cf0-131">Optional query parameters</span></span>
+<span data-ttu-id="32cf0-132">このメソッドは、応答をカスタマイズするための [OData クエリ パラメーター](https://developer.microsoft.com/graph/docs/concepts/query_parameters)をサポートします。</span><span class="sxs-lookup"><span data-stu-id="32cf0-132">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
+## <a name="request-headers"></a><span data-ttu-id="32cf0-133">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="32cf0-133">Request headers</span></span>
+| <span data-ttu-id="32cf0-134">名前</span><span class="sxs-lookup"><span data-stu-id="32cf0-134">Name</span></span>       | <span data-ttu-id="32cf0-135">種類</span><span class="sxs-lookup"><span data-stu-id="32cf0-135">Type</span></span> | <span data-ttu-id="32cf0-136">説明</span><span class="sxs-lookup"><span data-stu-id="32cf0-136">Description</span></span>|
 |:-----------|:------|:----------|
-| <span data-ttu-id="ccdeb-137">Authorization</span><span class="sxs-lookup"><span data-stu-id="ccdeb-137">Authorization</span></span>  | <span data-ttu-id="ccdeb-138">string</span><span class="sxs-lookup"><span data-stu-id="ccdeb-138">string</span></span>  | <span data-ttu-id="ccdeb-p105">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="ccdeb-p105">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="ccdeb-141">優先: outlook.timezone</span><span class="sxs-lookup"><span data-stu-id="ccdeb-141">Prefer: outlook.timezone</span></span> | <span data-ttu-id="ccdeb-142">string</span><span class="sxs-lookup"><span data-stu-id="ccdeb-142">string</span></span> | <span data-ttu-id="ccdeb-143">これを使用して、応答内の開始および終了時刻のタイム ゾーンを指定します。</span><span class="sxs-lookup"><span data-stu-id="ccdeb-143">Use this to specify the time zone for start and end times in the response.</span></span> <span data-ttu-id="ccdeb-144">指定しない場合、これらの時刻値は UTC で返されます。</span><span class="sxs-lookup"><span data-stu-id="ccdeb-144">If not specified, those time values are returned in UTC.</span></span> <span data-ttu-id="ccdeb-145">省略可能。</span><span class="sxs-lookup"><span data-stu-id="ccdeb-145">Optional.</span></span> |
-| <span data-ttu-id="ccdeb-146">Prefer: outlook.body-content-type</span><span class="sxs-lookup"><span data-stu-id="ccdeb-146">Prefer: outlook.body-content-type</span></span> | <span data-ttu-id="ccdeb-147">string</span><span class="sxs-lookup"><span data-stu-id="ccdeb-147">string</span></span> | <span data-ttu-id="ccdeb-148">**body** プロパティが返されるときの形式です。</span><span class="sxs-lookup"><span data-stu-id="ccdeb-148">The format of the **body** property to be returned in.</span></span> <span data-ttu-id="ccdeb-149">値は、"text" または "html" になります。</span><span class="sxs-lookup"><span data-stu-id="ccdeb-149">Values can be "text" or "html".</span></span> <span data-ttu-id="ccdeb-150">この `Prefer` ヘッダーが指定されている場合、`Preference-Applied` ヘッダーが確認として返されます。</span><span class="sxs-lookup"><span data-stu-id="ccdeb-150">A `Preference-Applied` header is returned as confirmation if this `Prefer` header is specified.</span></span> <span data-ttu-id="ccdeb-151">このヘッダーが指定されていない場合は、**body** プロパティが HTML 形式で返されます。</span><span class="sxs-lookup"><span data-stu-id="ccdeb-151">If the header is not specified, the **body** property is returned in HTML format.</span></span> <span data-ttu-id="ccdeb-152">省略可能。</span><span class="sxs-lookup"><span data-stu-id="ccdeb-152">Optional.</span></span> |
+| <span data-ttu-id="32cf0-137">Authorization</span><span class="sxs-lookup"><span data-stu-id="32cf0-137">Authorization</span></span>  | <span data-ttu-id="32cf0-138">string</span><span class="sxs-lookup"><span data-stu-id="32cf0-138">string</span></span>  | <span data-ttu-id="32cf0-p105">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="32cf0-p105">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="32cf0-141">優先: outlook.timezone</span><span class="sxs-lookup"><span data-stu-id="32cf0-141">Prefer: outlook.timezone</span></span> | <span data-ttu-id="32cf0-142">文字列</span><span class="sxs-lookup"><span data-stu-id="32cf0-142">string</span></span> | <span data-ttu-id="32cf0-143">これを使用して、応答内の開始および終了時刻のタイム ゾーンを指定します。</span><span class="sxs-lookup"><span data-stu-id="32cf0-143">Use this to specify the time zone for start and end times in the response.</span></span> <span data-ttu-id="32cf0-144">指定しない場合、これらの時刻値は UTC で返されます。</span><span class="sxs-lookup"><span data-stu-id="32cf0-144">If not specified, those time values are returned in UTC.</span></span> <span data-ttu-id="32cf0-145">省略可能。</span><span class="sxs-lookup"><span data-stu-id="32cf0-145">Optional.</span></span> |
+| <span data-ttu-id="32cf0-146">Prefer: outlook.body-content-type</span><span class="sxs-lookup"><span data-stu-id="32cf0-146">Prefer: outlook.body-content-type</span></span> | <span data-ttu-id="32cf0-147">文字列</span><span class="sxs-lookup"><span data-stu-id="32cf0-147">string</span></span> | <span data-ttu-id="32cf0-148">**body** プロパティが返されるときの形式です。</span><span class="sxs-lookup"><span data-stu-id="32cf0-148">The format of the **body** property to be returned in.</span></span> <span data-ttu-id="32cf0-149">値は、"text" または "html" になります。</span><span class="sxs-lookup"><span data-stu-id="32cf0-149">Values can be "text" or "html".</span></span> <span data-ttu-id="32cf0-150">この `Prefer` ヘッダーが指定されている場合、`Preference-Applied` ヘッダーが確認として返されます。</span><span class="sxs-lookup"><span data-stu-id="32cf0-150">A `Preference-Applied` header is returned as confirmation if this `Prefer` header is specified.</span></span> <span data-ttu-id="32cf0-151">このヘッダーが指定されていない場合は、**body** プロパティが HTML 形式で返されます。</span><span class="sxs-lookup"><span data-stu-id="32cf0-151">If the header is not specified, the **body** property is returned in HTML format.</span></span> <span data-ttu-id="32cf0-152">省略可能。</span><span class="sxs-lookup"><span data-stu-id="32cf0-152">Optional.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="ccdeb-153">要求本文</span><span class="sxs-lookup"><span data-stu-id="ccdeb-153">Request body</span></span>
-<span data-ttu-id="ccdeb-154">このメソッドには、要求本文を指定しません。</span><span class="sxs-lookup"><span data-stu-id="ccdeb-154">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="32cf0-153">要求本文</span><span class="sxs-lookup"><span data-stu-id="32cf0-153">Request body</span></span>
+<span data-ttu-id="32cf0-154">このメソッドには、要求本文を指定しません。</span><span class="sxs-lookup"><span data-stu-id="32cf0-154">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="ccdeb-155">応答</span><span class="sxs-lookup"><span data-stu-id="ccdeb-155">Response</span></span>
+## <a name="response"></a><span data-ttu-id="32cf0-155">応答</span><span class="sxs-lookup"><span data-stu-id="32cf0-155">Response</span></span>
 
-<span data-ttu-id="ccdeb-156">成功した場合、このメソッドは `200 OK` 応答コードと、応答本文で[イベント](../resources/event.md) オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="ccdeb-156">If successful, this method returns a `200 OK` response code and [event](../resources/event.md) object in the response body.</span></span>
-## <a name="example"></a><span data-ttu-id="ccdeb-157">例</span><span class="sxs-lookup"><span data-stu-id="ccdeb-157">Example</span></span>
-##### <a name="request-1"></a><span data-ttu-id="ccdeb-158">要求 1</span><span class="sxs-lookup"><span data-stu-id="ccdeb-158">Request 1</span></span>
-<span data-ttu-id="ccdeb-p108">最初の例では、指定されたイベントを取得します。以下のものを指定します。</span><span class="sxs-lookup"><span data-stu-id="ccdeb-p108">The first example gets the specified event. It specifies the following:</span></span>
+<span data-ttu-id="32cf0-156">成功した場合、このメソッドは `200 OK` 応答コードと、応答本文で[イベント](../resources/event.md) オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="32cf0-156">If successful, this method returns a `200 OK` response code and [event](../resources/event.md) object in the response body.</span></span>
+## <a name="example"></a><span data-ttu-id="32cf0-157">例</span><span class="sxs-lookup"><span data-stu-id="32cf0-157">Example</span></span>
+##### <a name="request-1"></a><span data-ttu-id="32cf0-158">要求 1</span><span class="sxs-lookup"><span data-stu-id="32cf0-158">Request 1</span></span>
+<span data-ttu-id="32cf0-p108">最初の例では、指定されたイベントを取得します。以下のものを指定します。</span><span class="sxs-lookup"><span data-stu-id="32cf0-p108">The first example gets the specified event. It specifies the following:</span></span>
 
-- <span data-ttu-id="ccdeb-161">太平洋標準時で返される日時の値を取得するための `Prefer: outlook.timezone` ヘッダー。</span><span class="sxs-lookup"><span data-stu-id="ccdeb-161">A `Prefer: outlook.timezone` header to get date time values returned in Pacific Standard Time.</span></span> 
-- <span data-ttu-id="ccdeb-p109">特定のプロパティを返すための `$select` クエリ パラメーター。`$select` パラメーターがない場合には、すべてのイベント プロパティが返されます。</span><span class="sxs-lookup"><span data-stu-id="ccdeb-p109">A `$select` query parameter to return specific properties. Without a `$select` parameter, all of the event properties will be returned.</span></span>
+- <span data-ttu-id="32cf0-161">太平洋標準時で返される日時の値を取得するための `Prefer: outlook.timezone` ヘッダー。</span><span class="sxs-lookup"><span data-stu-id="32cf0-161">A `Prefer: outlook.timezone` header to get date time values returned in Pacific Standard Time.</span></span> 
+- <span data-ttu-id="32cf0-p109">特定のプロパティを返すための `$select` クエリ パラメーター。`$select` パラメーターがない場合には、すべてのイベント プロパティが返されます。</span><span class="sxs-lookup"><span data-stu-id="32cf0-p109">A `$select` query parameter to return specific properties. Without a `$select` parameter, all of the event properties will be returned.</span></span>
 
-<span data-ttu-id="ccdeb-164">要求が指定されていません、`Prefer: outlook.body-content-type`ヘッダーが返されたイベントの本文の特定の形式を指定します。</span><span class="sxs-lookup"><span data-stu-id="ccdeb-164">The request does not specify any `Prefer: outlook.body-content-type` header to indicate a specific format for the returned event body.</span></span> 
+<span data-ttu-id="32cf0-164">要求が指定されていません、`Prefer: outlook.body-content-type`ヘッダーが返されたイベントの本文の特定の形式を指定します。</span><span class="sxs-lookup"><span data-stu-id="32cf0-164">The request does not specify any `Prefer: outlook.body-content-type` header to indicate a specific format for the returned event body.</span></span> 
 
 <!-- {
   "blockType": "request",
@@ -97,8 +98,8 @@ GET /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{i
 GET https://graph.microsoft.com/beta/me/events('AAMkAGIAAAoZDOFAAA=')?$select=subject,body,bodyPreview,organizer,attendees,start,end,location 
 Prefer: outlook.timezone="Pacific Standard Time"
 ```
-##### <a name="response-1"></a><span data-ttu-id="ccdeb-165">応答 1</span><span class="sxs-lookup"><span data-stu-id="ccdeb-165">Response 1</span></span>
-<span data-ttu-id="ccdeb-166">以下は、応答の例です。</span><span class="sxs-lookup"><span data-stu-id="ccdeb-166">Here is an example of the response.</span></span> <span data-ttu-id="ccdeb-167">なし`Prefer: outlook.body-content-type`ヘッダーが指定されている**body**プロパティで返される既定の HTML 形式です。</span><span class="sxs-lookup"><span data-stu-id="ccdeb-167">Because no `Prefer: outlook.body-content-type` header was specified, the **body** property is returned in the default HTML format.</span></span> 
+##### <a name="response-1"></a><span data-ttu-id="32cf0-165">応答 1</span><span class="sxs-lookup"><span data-stu-id="32cf0-165">Response 1</span></span>
+<span data-ttu-id="32cf0-166">以下は、応答の例です。</span><span class="sxs-lookup"><span data-stu-id="32cf0-166">Here is an example of the response.</span></span> <span data-ttu-id="32cf0-167">なし`Prefer: outlook.body-content-type`ヘッダーが指定されている**body**プロパティで返される既定の HTML 形式です。</span><span class="sxs-lookup"><span data-stu-id="32cf0-167">Because no `Prefer: outlook.body-content-type` header was specified, the **body** property is returned in the default HTML format.</span></span> 
 
 <!-- {
   "blockType": "response",
@@ -175,10 +176,10 @@ Content-length: 1928
 }
 ```
 
-##### <a name="request-2"></a><span data-ttu-id="ccdeb-168">要求 2</span><span class="sxs-lookup"><span data-stu-id="ccdeb-168">Request 2</span></span>
-<span data-ttu-id="ccdeb-169">2 番目の例を使用する方法を示しています、`Prefer: outlook.body-content-type="text"`ヘッダーをテキスト形式で指定されたイベントの**body**プロパティを取得します。</span><span class="sxs-lookup"><span data-stu-id="ccdeb-169">The second example shows how to use a `Prefer: outlook.body-content-type="text"` header to get the **body** property of the specified event in text format.</span></span>
+##### <a name="request-2"></a><span data-ttu-id="32cf0-168">要求 2</span><span class="sxs-lookup"><span data-stu-id="32cf0-168">Request 2</span></span>
+<span data-ttu-id="32cf0-169">2 番目の例を使用する方法を示しています、`Prefer: outlook.body-content-type="text"`ヘッダーをテキスト形式で指定されたイベントの**body**プロパティを取得します。</span><span class="sxs-lookup"><span data-stu-id="32cf0-169">The second example shows how to use a `Prefer: outlook.body-content-type="text"` header to get the **body** property of the specified event in text format.</span></span>
 
-<span data-ttu-id="ccdeb-170">要求を使用しても、`$select`固有のプロパティを取得するパラメーター クエリを実行します。</span><span class="sxs-lookup"><span data-stu-id="ccdeb-170">The request also uses a `$select` query parameter to return specific properties.</span></span> <span data-ttu-id="ccdeb-171">なし、`$select`パラメーターでは、すべてのイベント プロパティが表示されます。</span><span class="sxs-lookup"><span data-stu-id="ccdeb-171">Without a `$select` parameter, all of the event properties will be returned.</span></span>
+<span data-ttu-id="32cf0-170">要求を使用しても、`$select`固有のプロパティを取得するパラメーター クエリを実行します。</span><span class="sxs-lookup"><span data-stu-id="32cf0-170">The request also uses a `$select` query parameter to return specific properties.</span></span> <span data-ttu-id="32cf0-171">なし、`$select`パラメーターでは、すべてのイベント プロパティが表示されます。</span><span class="sxs-lookup"><span data-stu-id="32cf0-171">Without a `$select` parameter, all of the event properties will be returned.</span></span>
 
 <!-- {
   "blockType": "request",
@@ -188,8 +189,8 @@ Content-length: 1928
 GET https://graph.microsoft.com/beta/me/events('AAMkAGI1AAAoZDOFAAA=')?$select=subject,body,bodyPreview
 Prefer: outlook.body-content-type="text"
 ```
-##### <a name="response-2"></a><span data-ttu-id="ccdeb-172">応答 2</span><span class="sxs-lookup"><span data-stu-id="ccdeb-172">Response 2</span></span>
-<span data-ttu-id="ccdeb-173">以下は、応答の例です。</span><span class="sxs-lookup"><span data-stu-id="ccdeb-173">Here is an example of the response.</span></span> <span data-ttu-id="ccdeb-174">**Body**プロパティは、テキスト形式で返されます。</span><span class="sxs-lookup"><span data-stu-id="ccdeb-174">The **body** property is returned in text format.</span></span> 
+##### <a name="response-2"></a><span data-ttu-id="32cf0-172">応答 2</span><span class="sxs-lookup"><span data-stu-id="32cf0-172">Response 2</span></span>
+<span data-ttu-id="32cf0-173">以下は、応答の例です。</span><span class="sxs-lookup"><span data-stu-id="32cf0-173">Here is an example of the response.</span></span> <span data-ttu-id="32cf0-174">**Body**プロパティは、テキスト形式で返されます。</span><span class="sxs-lookup"><span data-stu-id="32cf0-174">The **body** property is returned in text format.</span></span> 
 
 <!-- {
   "blockType": "response",
@@ -217,9 +218,9 @@ Content-length: 636
 ```
 
 
-##### <a name="request-3"></a><span data-ttu-id="ccdeb-175">要求 3</span><span class="sxs-lookup"><span data-stu-id="ccdeb-175">Request 3</span></span>
+##### <a name="request-3"></a><span data-ttu-id="32cf0-175">要求 3</span><span class="sxs-lookup"><span data-stu-id="32cf0-175">Request 3</span></span>
 
-<span data-ttu-id="ccdeb-176">複数の場所を指定するイベントを取得する 3 番目の例を示しています。</span><span class="sxs-lookup"><span data-stu-id="ccdeb-176">The third example shows getting an event that specifies more than one location.</span></span> <span data-ttu-id="ccdeb-177">この要求では、特定のプロパティを返すように `$select` クエリ パラメーターを指定しています。</span><span class="sxs-lookup"><span data-stu-id="ccdeb-177">The request specifies a `$select` query parameter to return specific properties.</span></span> 
+<span data-ttu-id="32cf0-176">複数の場所を指定するイベントを取得する 3 番目の例を示しています。</span><span class="sxs-lookup"><span data-stu-id="32cf0-176">The third example shows getting an event that specifies more than one location.</span></span> <span data-ttu-id="32cf0-177">この要求では、特定のプロパティを返すように `$select` クエリ パラメーターを指定しています。</span><span class="sxs-lookup"><span data-stu-id="32cf0-177">The request specifies a `$select` query parameter to return specific properties.</span></span> 
 
 <!-- {
   "blockType": "request",
@@ -228,10 +229,10 @@ Content-length: 636
 ```http
 GET https://graph.microsoft.com/beta/me/events('AAMkADAGAADDdm4NAAA=')?$select=subject,body,bodyPreview,organizer,attendees,start,end,location,locations
 ```
-##### <a name="response-3"></a><span data-ttu-id="ccdeb-178">応答 3</span><span class="sxs-lookup"><span data-stu-id="ccdeb-178">Response 3</span></span>
-<span data-ttu-id="ccdeb-179">以下は、応答の例です。</span><span class="sxs-lookup"><span data-stu-id="ccdeb-179">Here is an example of the response.</span></span> <span data-ttu-id="ccdeb-180">**locations** プロパティには、イベントを開催する 3 つの場所の詳細が含まれています。</span><span class="sxs-lookup"><span data-stu-id="ccdeb-180">The **locations** property includes details for the 3 locations that the event is organized for.</span></span> 
+##### <a name="response-3"></a><span data-ttu-id="32cf0-178">応答 3</span><span class="sxs-lookup"><span data-stu-id="32cf0-178">Response 3</span></span>
+<span data-ttu-id="32cf0-179">以下は、応答の例です。</span><span class="sxs-lookup"><span data-stu-id="32cf0-179">Here is an example of the response.</span></span> <span data-ttu-id="32cf0-180">**locations** プロパティには、イベントを開催する 3 つの場所の詳細が含まれています。</span><span class="sxs-lookup"><span data-stu-id="32cf0-180">The **locations** property includes details for the 3 locations that the event is organized for.</span></span> 
 
-<span data-ttu-id="ccdeb-181">要求を指定しないため、`Prefer: outlook.timezone`または`Prefer: outlook.body-content-type`デフォルト UTC タイム ゾーンは、ヘッダー、**開始**と**終了**のプロパティが表示され、本文が HTML 形式の既定では。</span><span class="sxs-lookup"><span data-stu-id="ccdeb-181">Because the request does not specify any `Prefer: outlook.timezone` or `Prefer: outlook.body-content-type` header, the **start** and **end** properties are displayed in the default UTC time zone, and the body is in the default HTML format.</span></span>  
+<span data-ttu-id="32cf0-181">要求を指定しないため、`Prefer: outlook.timezone`または`Prefer: outlook.body-content-type`デフォルト UTC タイム ゾーンは、ヘッダー、**開始**と**終了**のプロパティが表示され、本文が HTML 形式の既定では。</span><span class="sxs-lookup"><span data-stu-id="32cf0-181">Because the request does not specify any `Prefer: outlook.timezone` or `Prefer: outlook.body-content-type` header, the **start** and **end** properties are displayed in the default UTC time zone, and the body is in the default HTML format.</span></span>  
 
 <!-- {
   "blockType": "response",
@@ -331,11 +332,11 @@ Content-length: 1992
 }
 ```
 
-## <a name="see-also"></a><span data-ttu-id="ccdeb-182">関連項目</span><span class="sxs-lookup"><span data-stu-id="ccdeb-182">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="32cf0-182">関連項目</span><span class="sxs-lookup"><span data-stu-id="32cf0-182">See also</span></span>
 
-- [<span data-ttu-id="ccdeb-183">拡張機能を使用してカスタム データをリソースに追加する</span><span class="sxs-lookup"><span data-stu-id="ccdeb-183">Add custom data to resources using extensions</span></span>](/graph/extensibility-overview)
-- [<span data-ttu-id="ccdeb-184">オープン拡張機能を使用したユーザーへのカスタム データの追加 (プレビュー)</span><span class="sxs-lookup"><span data-stu-id="ccdeb-184">Add custom data to users using open extensions (preview)</span></span>](/graph/extensibility-open-users)
-- [<span data-ttu-id="ccdeb-185">スキーマ拡張機能を使用したグループへのカスタム データの追加 (プレビュー)</span><span class="sxs-lookup"><span data-stu-id="ccdeb-185">Add custom data to groups using schema extensions (preview)</span></span>](/graph/extensibility-schema-groups)
+- [<span data-ttu-id="32cf0-183">拡張機能を使用してカスタム データをリソースに追加する</span><span class="sxs-lookup"><span data-stu-id="32cf0-183">Add custom data to resources using extensions</span></span>](/graph/extensibility-overview)
+- [<span data-ttu-id="32cf0-184">オープン拡張機能を使用したユーザーへのカスタム データの追加 (プレビュー)</span><span class="sxs-lookup"><span data-stu-id="32cf0-184">Add custom data to users using open extensions (preview)</span></span>](/graph/extensibility-open-users)
+- [<span data-ttu-id="32cf0-185">スキーマ拡張機能を使用したグループへのカスタム データの追加 (プレビュー)</span><span class="sxs-lookup"><span data-stu-id="32cf0-185">Add custom data to groups using schema extensions (preview)</span></span>](/graph/extensibility-schema-groups)
 
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
