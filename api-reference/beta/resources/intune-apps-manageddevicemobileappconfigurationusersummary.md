@@ -1,12 +1,13 @@
 ---
 title: managedDeviceMobileAppConfigurationUserSummary リソースの種類
 description: MDM モバイル アプリ構成のユーザー状態の要約に関する、プロパティ、継承済みのプロパティ、アクションが含まれています。
-ms.openlocfilehash: b27f4c24dc4b89238ec4e555d9507f36795ebc9b
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 7b409e81e1fe82237d739dc5e8b75ce42e74a783
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27069379"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27805419"
 ---
 # <a name="manageddevicemobileappconfigurationusersummary-resource-type"></a>managedDeviceMobileAppConfigurationUserSummary リソースの種類
 
@@ -22,9 +23,9 @@ MDM モバイル アプリ構成のユーザー状態の要約に関する、プ
 |[managedDeviceMobileAppConfigurationUserSummary の更新](../api/intune-apps-manageddevicemobileappconfigurationusersummary-update.md)|[managedDeviceMobileAppConfigurationUserSummary](../resources/intune-apps-manageddevicemobileappconfigurationusersummary.md)|[managedDeviceMobileAppConfigurationUserSummary](../resources/intune-apps-manageddevicemobileappconfigurationusersummary.md) オブジェクトのプロパティを更新します。|
 
 ## <a name="properties"></a>プロパティ
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
-|id|String|エンティティのキー。|
+|ID|String|エンティティのキー。|
 |pendingCount|Int32|保留中のユーザーの数|
 |notApplicableCount|Int32|適用されないユーザーの数|
 |successCount|Int32|成功したユーザーの数|

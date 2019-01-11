@@ -2,12 +2,13 @@
 title: remoteAssistancePartner の作成
 description: 新しい remoteAssistancePartner オブジェクトを作成します。
 author: tfitzmac
-ms.openlocfilehash: 213898c6778b1700a2a3379bb8cd24689b5e671f
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 2b8d1de08fd8da0be55515fd69717d703fc96e42
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27331109"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27827476"
 ---
 # <a name="create-remoteassistancepartner"></a>remoteAssistancePartner の作成
 

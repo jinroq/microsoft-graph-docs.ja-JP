@@ -1,12 +1,13 @@
 ---
 title: settingTemplateValue リソースの種類
 description: 設定がインスタンス化されていない場合の、設定の既定値を含む個々のテンプレートの設定定義を表します。
-ms.openlocfilehash: afc872f3e3d8d02acae639b967cdaf9375bb60cb
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: e941630ab72363db1c4be40079cf2af9e40ff002
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27069805"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27811866"
 ---
 # <a name="settingtemplatevalue-resource-type"></a>settingTemplateValue リソースの種類
 
@@ -16,12 +17,12 @@ ms.locfileid: "27069805"
 
 
 ## <a name="properties"></a>プロパティ
-| プロパティ     | 型   |説明|
+| プロパティ     | 種類   |説明|
 |:---------------|:--------|:----------|
 |defaultValue|文字列|設定の既定値です。 読み取り専用です。|
-|説明|文字列|設定の説明です。 読み取り専用。|
-|name|文字列|設定の名前。 読み取り専用。|
-|type|文字列|設定の種類です。 読み取り専用。|
+|説明|文字列|設定の説明です。 読み取り専用です。|
+|name|文字列|設定の名前。 読み取り専用です。|
+|type|文字列|設定の種類です。 読み取り専用です。|
 
 ## <a name="json-representation"></a>JSON 表記
 

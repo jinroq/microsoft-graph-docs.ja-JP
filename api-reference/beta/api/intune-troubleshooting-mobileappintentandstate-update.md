@@ -2,12 +2,13 @@
 title: MobileAppIntentAndState を更新します。
 description: MobileAppIntentAndState オブジェクトのプロパティを更新します。
 author: tfitzmac
-ms.openlocfilehash: d219e6d9d146f71c4979973e7f6510010fe2fa92
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: dd43c13d8e166563e60cb36cdcad980e25124aa5
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27303186"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27827098"
 ---
 # <a name="update-mobileappintentandstate"></a>MobileAppIntentAndState を更新します。
 

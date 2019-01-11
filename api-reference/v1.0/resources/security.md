@@ -1,12 +1,13 @@
 ---
 title: セキュリティ リソースの種類
 description: セキュリティ リソースは、セキュリティ オブジェクト モデルのエントリ ポイントです。 シングルトンのセキュリティ リソースを返します。 使用可能なプロパティが含まれていません。
-ms.openlocfilehash: ddf00e46135733ef18c18918c0c365134138671f
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 2486bf9cae2ffad471c1bacb8b7ca01c6bef4ee7
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27021140"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27827014"
 ---
 # <a name="security-resource-type"></a>セキュリティ リソースの種類
 
@@ -43,7 +44,7 @@ ms.locfileid: "27021140"
 }
 ```
 
-## <a name="example"></a>使用例
+## <a name="example"></a>例
 
 **セキュリティ**リソースは、グラフのルートに使用できます。
 

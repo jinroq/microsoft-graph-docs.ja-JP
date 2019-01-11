@@ -2,12 +2,13 @@
 title: AndroidForWorkEnterpriseWiFiConfiguration を更新します。
 description: AndroidForWorkEnterpriseWiFiConfiguration オブジェクトのプロパティを更新します。
 author: tfitzmac
-ms.openlocfilehash: b9bd5987264cced5b7ca90087d2682851aad5f5c
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: af6dee5a2459788a78ad2111123531f0b477213f
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27363754"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27828372"
 ---
 # <a name="update-androidforworkenterprisewificonfiguration"></a>AndroidForWorkEnterpriseWiFiConfiguration を更新します。
 

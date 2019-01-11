@@ -2,12 +2,13 @@
 title: importedWindowsAutopilotDeviceIdentity の取得
 description: importedWindowsAutopilotDeviceIdentity オブジェクトのプロパティとリレーションシップを読み取ります。
 author: tfitzmac
-ms.openlocfilehash: 9e6ef991f8bf50fbc87300673925b6f25fec6e16
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 610e6bcdc3f066c71924621a1718dabc2c52dc2d
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27345326"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27828253"
 ---
 # <a name="get-importedwindowsautopilotdeviceidentity"></a>importedWindowsAutopilotDeviceIdentity の取得
 

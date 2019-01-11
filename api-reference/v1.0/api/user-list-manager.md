@@ -1,12 +1,13 @@
 ---
 title: 上司を一覧表示する
 description: ユーザーの上司を取得します。ユーザーの上司として割り当てられているユーザーまたは連絡先を返します。
-ms.openlocfilehash: eb25449970311ceb7790b54c64191c669daeb004
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Priority
+ms.openlocfilehash: 886e3a0cc85fdf63b46f2b6428520910f30e9efa
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27020226"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27812027"
 ---
 # <a name="list-manager"></a>上司を一覧表示する
 

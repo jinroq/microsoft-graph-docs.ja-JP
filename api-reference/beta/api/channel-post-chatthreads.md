@@ -2,12 +2,13 @@
 title: チャットのスレッドを作成します。
 description: ルート メッセージを指定することによって、指定されたチャネルでチャットの新しいスレッドを作成します。
 author: nkramer
-ms.openlocfilehash: fcd1c08c05b29d2150f4c436eac7765f40900920
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Priority
+ms.openlocfilehash: edd3c99376a93b2c4405d97b6435cfd9a128ae8b
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27325614"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27809073"
 ---
 # <a name="create-chat-thread"></a>チャットのスレッドを作成します。
 

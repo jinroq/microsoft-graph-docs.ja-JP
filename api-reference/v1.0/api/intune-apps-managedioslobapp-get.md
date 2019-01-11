@@ -2,12 +2,13 @@
 title: Get managedIOSLobApp
 description: managedIOSLobApp オブジェクトのプロパティとリレーションシップを読み取ります。
 author: tfitzmac
-ms.openlocfilehash: 1cbd197c3ba7115a2a8ab443c88eb8fa27630b8d
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: ca54af8933542d30d9a9ceea6cf561dacd8c90d0
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27331172"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27808219"
 ---
 # <a name="get-managedioslobapp"></a>Get managedIOSLobApp
 

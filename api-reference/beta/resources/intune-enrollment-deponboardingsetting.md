@@ -2,12 +2,13 @@
 title: depOnboardingSetting リソースの種類
 description: DepOnboardingSetting は、Intune に onboarded をされている Apple の DEP のサービスのインスタンスを表します。 Onboarded サービスのインスタンスを管理、Apple トークンりんごと Intune の間でデータを同期するために使用します。
 author: tfitzmac
-ms.openlocfilehash: ac38b1716dd156c95fda9cee8fb76a9f75921b0f
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 56f49ce8635120b06344abe13376271a3eb0a796
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27341161"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27827994"
 ---
 # <a name="deponboardingsetting-resource-type"></a>depOnboardingSetting リソースの種類
 

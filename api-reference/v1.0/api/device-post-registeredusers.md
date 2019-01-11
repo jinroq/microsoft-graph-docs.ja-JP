@@ -2,12 +2,13 @@
 title: RegisteredUser を作成する
 description: デバイスの登録済みユーザーを追加します。
 author: tfitzmac
-ms.openlocfilehash: 765e82106fdfd23a6805a0bbda176635b279557d
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 00adeaa417c538753121a322c7d6da634f680ade
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27353747"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27811859"
 ---
 # <a name="create-registereduser"></a>RegisteredUser を作成する
 

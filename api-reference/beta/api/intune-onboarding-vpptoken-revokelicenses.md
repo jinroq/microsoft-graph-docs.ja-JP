@@ -2,12 +2,13 @@
 title: revokeLicenses アクション
 description: 特定の appleVolumePurchaseProgramToken に関連付けられているライセンスを失効させる
 author: tfitzmac
-ms.openlocfilehash: 1b5551f29da23aeaf6a024e5ea41588211a69bd0
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: aa439f6dd973b74ab1098cc73755897a55d018c8
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27330787"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27811747"
 ---
 # <a name="revokelicenses-action"></a>revokeLicenses アクション
 
@@ -47,7 +48,7 @@ POST /deviceAppManagement/vppTokens/{vppTokenId}/revokeLicenses
 
 |プロパティ|種類|説明|
 |:---|:---|:---|
-|notifyManagedDevices|Boolean|まだ文書化されていません|
+|notifyManagedDevices|ブール値|まだ文書化されていません|
 
 
 

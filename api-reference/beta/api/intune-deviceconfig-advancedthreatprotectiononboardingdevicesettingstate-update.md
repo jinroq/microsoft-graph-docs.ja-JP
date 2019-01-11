@@ -2,12 +2,13 @@
 title: AdvancedThreatProtectionOnboardingDeviceSettingState を更新します。
 description: AdvancedThreatProtectionOnboardingDeviceSettingState オブジェクトのプロパティを更新します。
 author: tfitzmac
-ms.openlocfilehash: 0194eca0c9d36c7d0e4e24cca6eb276beb7d49e3
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: de136488c24c3de4136b953e120d8ed4fbd3fec6
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27321694"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27828316"
 ---
 # <a name="update-advancedthreatprotectiononboardingdevicesettingstate"></a>AdvancedThreatProtectionOnboardingDeviceSettingState を更新します。
 

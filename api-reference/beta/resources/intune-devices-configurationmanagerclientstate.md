@@ -2,12 +2,13 @@
 title: configurationManagerClientState 列挙型
 description: 構成マネージャーのクライアントの状態
 author: tfitzmac
-ms.openlocfilehash: dc67a5fb1c517e65da937996ed65adaa621fa3c5
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 36abbe4451a6e053387b27fce3e9a4e25dcc1a95
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27354048"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27806252"
 ---
 # <a name="configurationmanagerclientstate-enum-type"></a>configurationManagerClientState 列挙型
 

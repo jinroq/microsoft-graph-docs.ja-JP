@@ -1,12 +1,13 @@
 ---
 title: educationSchool リソースの種類
 description: '学校。 現時点で、**educationSchool** リソースは administrativeUnit リソースと一致していて、同じ ID を共有しています。  '
-ms.openlocfilehash: 6a478428874c7c600f60a6924dc06be5f4e3ba11
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 20eacb87b68cbf490131b98a15d3ab3239d73478
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27071894"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27830451"
 ---
 # <a name="educationschool-resource-type"></a>educationSchool リソースの種類
 
@@ -35,9 +36,9 @@ ms.locfileid: "27071894"
 |[Delete](../api/educationschool-delete.md) | なし |**educationSchool** オブジェクトを削除します。 |
 
 ## <a name="properties"></a>プロパティ
-| プロパティ     | 型   |説明|
+| プロパティ     | 種類   |説明|
 |:---------------|:--------|:----------|
-|id|String|この学校の GUID。|
+|ID|String|この学校の GUID。|
 |displayName| String| 学校の表示名。| 
 |説明| String | 学校の説明。| 
 |status| 文字列| 読み取り専用。 使用可能な値: `inactive`、`active`、`expired`、`deleteable`。|

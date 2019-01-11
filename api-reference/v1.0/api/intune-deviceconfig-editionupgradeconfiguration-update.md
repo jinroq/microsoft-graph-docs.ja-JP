@@ -2,12 +2,13 @@
 title: editionUpgradeConfiguration の更新
 description: editionUpgradeConfiguration オブジェクトのプロパティを更新します。
 author: tfitzmac
-ms.openlocfilehash: 011a9869ae7c15853e246292ac0acb80e7ad650f
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: d7d621099c1749922c4614c9d8c5ea874c5c70f9
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27329114"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27805405"
 ---
 # <a name="update-editionupgradeconfiguration"></a>editionUpgradeConfiguration の更新
 

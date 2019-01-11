@@ -2,12 +2,13 @@
 title: VPPトークンの更新
 description: vppToken オブジェクトのプロパティを更新します。
 author: tfitzmac
-ms.openlocfilehash: 56829adcba15ca1c46e5548212e71e619e339a1a
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 3ee03df791a1ac9c5f5a81a475be9556b70b5b70
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27349001"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27805531"
 ---
 # <a name="update-vpptoken"></a>VPPトークンの更新
 

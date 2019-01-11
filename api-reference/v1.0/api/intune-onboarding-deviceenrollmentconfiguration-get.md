@@ -2,12 +2,13 @@
 title: deviceEnrollmentConfiguration の取得
 description: deviceEnrollmentConfiguration オブジェクトのプロパティとリレーションシップを読み取ります。
 author: tfitzmac
-ms.openlocfilehash: 941f7b9a00c6a8b5be7bb49560e3795ac41ab1f6
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 977daa297229ae84f2991e146db6942453900c54
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27345900"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27826923"
 ---
 # <a name="get-deviceenrollmentconfiguration"></a>deviceEnrollmentConfiguration の取得
 

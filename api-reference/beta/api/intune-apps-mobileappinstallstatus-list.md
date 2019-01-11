@@ -2,12 +2,13 @@
 title: リスト mobileAppInstallStatuses
 description: MobileAppInstallStatus オブジェクトのプロパティと関係を一覧表示します。
 author: tfitzmac
-ms.openlocfilehash: 126e7eda604e012d6d92110129674a11c0eba402
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 3c45ab74b2d204cb2d4f99da9220ae731460764a
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27322688"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27824522"
 ---
 # <a name="list-mobileappinstallstatuses"></a>リスト mobileAppInstallStatuses
 

@@ -2,12 +2,13 @@
 title: AndroidWorkProfileCompliancePolicy を更新します。
 description: AndroidWorkProfileCompliancePolicy オブジェクトのプロパティを更新します。
 author: tfitzmac
-ms.openlocfilehash: 729b4f0a76778b82c9884fdb54c6721a36341320
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 367ea1b74b5f2de0c77b380604103c60b5f13074
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27330640"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27826986"
 ---
 # <a name="update-androidworkprofilecompliancepolicy"></a>AndroidWorkProfileCompliancePolicy を更新します。
 

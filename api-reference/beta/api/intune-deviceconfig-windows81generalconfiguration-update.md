@@ -2,12 +2,13 @@
 title: Update windows81GeneralConfiguration
 description: windows81GeneralConfiguration オブジェクトのプロパティを更新します。
 author: tfitzmac
-ms.openlocfilehash: ccb9f11e8efa96329cf9129b6894aca53419c6a7
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 13aeeab7afe6c7554815dcdb1a6b0d662bc5c0bf
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27308002"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27828407"
 ---
 # <a name="update-windows81generalconfiguration"></a>Update windows81GeneralConfiguration
 

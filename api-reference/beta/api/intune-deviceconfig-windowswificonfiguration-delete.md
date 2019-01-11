@@ -2,12 +2,13 @@
 title: WindowsWifiConfiguration を削除します。
 description: WindowsWifiConfiguration を削除します。
 author: tfitzmac
-ms.openlocfilehash: ef47e32a8a9ff8dffd60f61b29dc89b44d0701e3
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 05a2156059ebe853baf75d0c53c2bbd415373536
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27332488"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27827203"
 ---
 # <a name="delete-windowswificonfiguration"></a>WindowsWifiConfiguration を削除します。
 

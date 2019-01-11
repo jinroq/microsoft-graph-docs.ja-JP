@@ -2,12 +2,13 @@
 title: 'workbookRange: columnsBefore'
 description: 指定した範囲の左にある特定の列数を取得します。
 author: lumine2008
-ms.openlocfilehash: b53b998655b079c0d875efb50263a0492373a696
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 8eff3ffd7291f9e3ae3537fc660760550b3b536e
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27344710"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27830115"
 ---
 # <a name="workbookrange-columnsbefore"></a>workbookRange: columnsBefore
 
@@ -33,7 +34,7 @@ POST /me/drive/root/workbook/worksheets/{id}/range/columnsBefore(count=n)
 
 ## <a name="function-parameters"></a>関数パラメーター
 
-| パラメーター    | 種類   |説明|
+| Parameter    | Type   |説明|
 |:---------------|:--------|:----------|
 |count|Int32|結果の範囲に含める列の数です。通常、正の数値を使用して現在の範囲外に範囲を作成します。負の数値を使用して、現在の範囲内に範囲を作成することもできます。既定値は 1 です。|
 

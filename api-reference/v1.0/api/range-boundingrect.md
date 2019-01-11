@@ -2,12 +2,13 @@
 title: 範囲:BoundingRect
 description: .
 author: lumine2008
-ms.openlocfilehash: fbe8354a8905fde587ec1d30a5dff9a4ceb2238c
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 9c19bf1c77e2173fa0568b3944506c43c87ecaac
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27337367"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27826125"
 ---
 # <a name="range-boundingrect"></a>範囲:BoundingRect
 
@@ -38,9 +39,9 @@ GET /workbook/tables/{id|name}/columns/{id|name}/range/boundingRect
 ## <a name="request-body"></a>要求本文
 要求本文で、次のパラメーターを含む JSON オブジェクトを指定します。
 
-| パラメーター    | 種類   |説明|
+| パラメーター    | Type   |説明|
 |:---------------|:--------|:----------|
-|anotherRange|string|Range オブジェクト、アドレスまたは範囲名。|
+|anotherRange|文字列|Range オブジェクト、アドレスまたは範囲名。|
 
 ## <a name="response"></a>応答
 

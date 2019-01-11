@@ -2,12 +2,13 @@
 title: EmbeddedSIMActivationCodePoolAssignment を更新します。
 description: EmbeddedSIMActivationCodePoolAssignment オブジェクトのプロパティを更新します。
 author: tfitzmac
-ms.openlocfilehash: b0eca7d4cfaa154c48af07eb08e48a2413564da0
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: b893ac21367ba96f66c4a2ba9ee20240225fcea1
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27332425"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27824454"
 ---
 # <a name="update-embeddedsimactivationcodepoolassignment"></a>EmbeddedSIMActivationCodePoolAssignment を更新します。
 

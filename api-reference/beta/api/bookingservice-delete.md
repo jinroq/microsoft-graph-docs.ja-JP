@@ -1,12 +1,13 @@
 ---
 title: BookingService を削除します。
 description: " > **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。"
-ms.openlocfilehash: 0efdce0050c52738b54c6067b222daef89ab619d
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: e7a44932d4b4f5c2287e48c4d821f0b6476615de
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27067037"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27829576"
 ---
 # <a name="delete-bookingservice"></a>BookingService を削除します。
 

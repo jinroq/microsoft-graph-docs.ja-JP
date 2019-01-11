@@ -1,12 +1,13 @@
 ---
 title: historyItem リソースの種類
 description: アプリケーション内のアクティビティの履歴項目を表します。 ユーザーのアクティビティでは、アプリのテレビ番組、ドキュメント、またはビデオ ゲームの現在のキャンペーン内で単一の宛先を表します。 ユーザーは、その活動と連携して、ときに、そのアクティビティの開始と終了時刻を示す履歴項目として契約がキャプチャされます。 ようにユーザーには、再、時間の経過と共にその活動と連携して、1 人のユーザーの活動の複数の項目の履歴が記録されます。
-ms.openlocfilehash: 5687e592a65e162c105d97c90cd7a6f8f578d303
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 7eb6d72b55530d1938c9c092dd5b80f54929a3e8
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27073712"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27825775"
 ---
 # <a name="historyitem-resource-type"></a>historyItem リソースの種類
 
@@ -25,7 +26,7 @@ ms.locfileid: "27073712"
 
 ## <a name="properties"></a>プロパティ
 
-|名前 | 型 | 説明|
+|名前 | 種類 | 説明|
 |:----|:-----|:-----------|
 |status | EnumType | サーバーで設定します。 有効なオブジェクトを識別するために使用する状態コードです。 値: アクティブな場合、更新、削除、無視されます。|
 |userTimezone | String | 省略可能。 活動の作成時に配置されましたユーザーのデバイスのアクティビティを生成するために使用するタイム ゾーンです。 クロスプラット フォーム形式をサポートするために、Olson の Id として指定された値です。|

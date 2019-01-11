@@ -2,12 +2,13 @@
 title: roleAssignment リソースの種類
 description: 役割の割り当てリソースです。 役割の割り当ては、メンバーが含まれるロール定義と範囲を結びつけます。 役割ごとに 1 つまたは複数の役割の割り当てが可能です。 カスタムおよび組み込みの役割に適用されます。
 author: tfitzmac
-ms.openlocfilehash: 5c4b09151a7957f52dbaa525f696b89479a898ef
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 7cb3b07abc47224b2f96a35f4099d3a691b6c901
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27302101"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27825495"
 ---
 # <a name="roleassignment-resource-type"></a>roleAssignment リソースの種類
 

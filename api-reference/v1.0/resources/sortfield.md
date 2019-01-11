@@ -1,19 +1,20 @@
 ---
 title: SortField リソースの種類
 description: 並べ替え操作の条件を表します。
-ms.openlocfilehash: b6fc87e03b63a3e1cc34beef61a7538a913a118a
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 2c1b9a272fd024455d1297c5f59ca7684283e1a1
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27023037"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27825971"
 ---
 # <a name="sortfield-resource-type"></a>SortField リソースの種類
 
 並べ替え操作の条件を表します。
 
 ## <a name="properties"></a>プロパティ
-| プロパティ     | 型   |説明|
+| プロパティ     | 種類   |説明|
 |:---------------|:--------|:----------|
 |ascending|ブール値|昇順の方法で並べ替えを行うかどうかを表します。|
 |color|文字列|並べ替えがフォントまたはセルの色で行われるときに条件の対象となる色を表します。|

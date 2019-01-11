@@ -1,12 +1,13 @@
 ---
 title: SynchronizationSchema を更新します。
 description: やテンプレートの特定のジョブ、同期スキーマを更新します。 このメソッドは、要求で提供されるもので、現在のスキーマを完全に置き換えます。 テンプレートのスキーマを更新するには、アプリケーション オブジェクトの呼び出しを確認します。 アプリケーションの所有者でなければなりません。
-ms.openlocfilehash: 18ad164f0f1860ce954a9d4e1170f71e47f513b5
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: d4f3f3540fe0d304b4edc3a5fcaec7b3366dbb0a
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27072010"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27826139"
 ---
 # <a name="update-synchronizationschema"></a>SynchronizationSchema を更新します。
 
@@ -32,7 +33,7 @@ PUT /applications/{id}/synchronization/templates/{templateId}/schema
 
 ## <a name="request-headers"></a>要求ヘッダー
 
-| 名前           | 型    | 説明|
+| 名前           | 種類    | 説明|
 |:---------------|:--------|:-----------|
 | Authorization  | string  | ベアラー {トークン}。必須。 |
 

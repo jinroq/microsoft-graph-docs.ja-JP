@@ -2,12 +2,13 @@
 title: AndroidWorkProfileTrustedRootCertificate を作成します。
 description: 新しい androidWorkProfileTrustedRootCertificate オブジェクトを作成します。
 author: tfitzmac
-ms.openlocfilehash: e48e1ea77c09e9b0b53883ac68707c5a1ab2efd1
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: e59a3ff49123748cda47112572bd9afd0e225d78
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27360033"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27808149"
 ---
 # <a name="create-androidworkprofiletrustedrootcertificate"></a>AndroidWorkProfileTrustedRootCertificate を作成します。
 

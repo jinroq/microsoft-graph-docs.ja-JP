@@ -1,12 +1,13 @@
 ---
 title: Bookingstaffmember を更新します。
 description: " > **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。"
-ms.openlocfilehash: 99501f31ccd2b810d6a0c7f836d5b70bb98f223b
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 4ba2ea126f916b6bd91b83bdd81e24d30fae8ac4
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27067457"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27824984"
 ---
 # <a name="update-bookingstaffmember"></a>Bookingstaffmember を更新します。
 
@@ -35,14 +36,14 @@ PATCH /bookingBusinesses/{id}/staffMembers/{id}
 ## <a name="request-body"></a>要求本文
 要求本文で、更新する関連フィールドの値を指定します。要求本文に含まれない既存のプロパティは、以前の値のままになるか、他のプロパティ値の変化に基づいて再計算されます。最適なパフォーマンスを得るためには、変更されていない既存の値を含めないでください。
 
-| プロパティ     | 型   |説明|
+| プロパティ     | 種類   |説明|
 |:---------------|:--------|:----------|
-|availabilityIsAffectedByPersonalCalendar|ブール値|True は、スタッフ メンバーが、Office 365 ユーザーの場合は、予約 API は**workingHours**プロパティと同様に Office 365 で、スタッフ メンバーの個人用予定表の可用性を決定します。 |
+|availabilityIsAffectedByPersonalCalendar|ブール型|True は、スタッフ メンバーが、Office 365 ユーザーの場合は、予約 API は**workingHours**プロパティと同様に Office 365 で、スタッフ メンバーの個人用予定表の可用性を決定します。 |
 |colorIndex|Int32|スタッフ メンバーを表す色を識別します。 予約アプリケーションでは、**スタッフの詳細**ページでカラー パレットに色が対応しています。|
 |displayName|String|顧客に表示されるよう、スタッフ メンバーの名前です。|
 |emailAddress|String|スタッフ メンバーの電子メール アドレスです。 ビジネスとして同じ Office 365 テナントにまたは別の電子メール ドメインを指定できます。 **SendConfirmationsToOwner**プロパティが設定されている場合、この電子メール アドレスが使用されるビジネスのスケジュー リング ポリシーの場合は true です。|
 |role|文字列| ビジネスのスタッフの役割です。 可能な値は、`guest`、`administrator`、`viewer`、`externalGuest` です。|
-|useBusinessHours|ブール値|True では、スタッフ メンバーの可用性は、ビジネスの**businessHours**プロパティによって決定されることを意味します。 False は、利用可能時間は、スタッフ メンバーの**workingHouse**プロパティの設定によって決定されますを意味します。|
+|useBusinessHours|ブール型|True では、スタッフ メンバーの可用性は、ビジネスの**businessHours**プロパティによって決定されることを意味します。 False は、利用可能時間は、スタッフ メンバーの**workingHouse**プロパティの設定によって決定されますを意味します。|
 |workingHours|[bookingWorkHours](../resources/bookingworkhours.md)コレクション|スタッフ メンバーは、予約に使用される 1 週間の各日の時間の範囲です。|
 
 ## <a name="response"></a>応答

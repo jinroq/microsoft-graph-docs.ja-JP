@@ -1,12 +1,13 @@
 ---
 title: AccessReview を削除します。
 description: Azure AD のレビュー機能にアクセス、accessReview オブジェクトを削除します。
-ms.openlocfilehash: b9578b575705de909eca99ac70f5efbb70d053cc
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: b062931e58834e1b6a62c83791ec663865fb5c9c
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27067675"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27829457"
 ---
 # <a name="delete-accessreview"></a>AccessReview を削除します。
 
@@ -28,7 +29,7 @@ Azure AD[アクセスの確認](../resources/accessreviews-root.md)機能では�
 DELETE /accessReviews('<id>')
 ```
 ## <a name="request-headers"></a>要求ヘッダー
-| 名前         | 型        | 説明 |
+| 名前         | 種類        | 説明 |
 |:-------------|:------------|:------------|
 | Authorization | string | ベアラー\{トークン\}。 必須。 |
 

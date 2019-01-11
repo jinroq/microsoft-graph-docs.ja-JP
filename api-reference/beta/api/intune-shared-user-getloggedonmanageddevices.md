@@ -2,12 +2,13 @@
 title: getLoggedOnManagedDevices 関数
 description: まだ文書化されていません
 author: tfitzmac
-ms.openlocfilehash: 6e56ff33ce0413e1ccaa8ee4d16245f314e56839
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 0845e9777bac0310e5a3393f982968273b1a5fbe
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27301863"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27811432"
 ---
 # <a name="getloggedonmanageddevices-function"></a>getLoggedOnManagedDevices 関数
 

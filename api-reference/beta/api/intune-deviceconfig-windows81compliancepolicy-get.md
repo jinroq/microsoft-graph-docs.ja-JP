@@ -2,12 +2,13 @@
 title: Get windows81CompliancePolicy
 description: windows81CompliancePolicy オブジェクトのプロパティとリレーションシップを読み取ります。
 author: tfitzmac
-ms.openlocfilehash: 5e191baa2d981b2721c6a271f075cdd9f5184354
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 68d72ff0e8d7a43df7e2622b0781f81b0418a485
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27329744"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27809255"
 ---
 # <a name="get-windows81compliancepolicy"></a>Get windows81CompliancePolicy
 

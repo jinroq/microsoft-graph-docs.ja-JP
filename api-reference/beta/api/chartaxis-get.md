@@ -2,12 +2,13 @@
 title: Get ChartAxis
 description: chartAxis オブジェクトのプロパティと関係を取得します。
 author: lumine2008
-ms.openlocfilehash: 138537d0a2de5609b3901391b259cfbd27b43e3e
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: d826f6d98026afb05ac095ab438b6b00e66ad0a4
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27313952"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27824613"
 ---
 # <a name="get-chartaxis"></a>Get ChartAxis
 

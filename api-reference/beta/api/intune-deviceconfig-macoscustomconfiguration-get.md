@@ -2,12 +2,13 @@
 title: macOSCustomConfiguration の取得
 description: macOSCustomConfiguration オブジェクトのプロパティとリレーションシップを読み取ります。
 author: tfitzmac
-ms.openlocfilehash: 20e5cb57507bee1636fdb4dd299a7b8948ecd4f2
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: ca5f61a1610e6f82eb18cd91d7184800c712b397
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27332859"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27828007"
 ---
 # <a name="get-macoscustomconfiguration"></a>macOSCustomConfiguration の取得
 

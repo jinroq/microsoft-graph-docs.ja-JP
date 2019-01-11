@@ -1,12 +1,13 @@
 ---
 title: リスト businessFlowTemplates
 description: Azure AD のレビュー機能にアクセス、すべての businessFlowTemplate オブジェクトを一覧表示します。
-ms.openlocfilehash: 9c6dc976244c60151cb2c230430ab6b4d0dc4b43
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 021a3c939c6642caf5200b5e9cc4e47b390019b8
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27067040"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27829499"
 ---
 # <a name="list-businessflowtemplates"></a>リスト businessFlowTemplates
 
@@ -28,7 +29,7 @@ Azure AD[アクセスの確認](../resources/accessreviews-root.md)機能では�
 GET /businessFlowTemplates
 ```
 ## <a name="request-headers"></a>要求ヘッダー
-| 名前         | 型        | 説明 |
+| 名前         | 種類        | 説明 |
 |:-------------|:------------|:------------|
 | Authorization | string | ベアラー\{トークン\}。 必須。 |
 

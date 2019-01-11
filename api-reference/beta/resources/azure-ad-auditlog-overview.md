@@ -1,12 +1,13 @@
 ---
 title: Azure AD 監査ログ API の概要
 description: Azure Active Directory (AD の Azure) は、ユーザーの活動およびサインインのメトリックを追跡し、監査を作成、ユーザーのアクセスし、Azure AD サービスを活用するのに役立つログ レポートを理解します。 これらのレポートの基になるデータを分析して、組織の特定のニーズに合わせた独自のソリューションを作成するのには、Azure AD 用の Microsoft グラフ API を使用します。
-ms.openlocfilehash: b25e9820d4f6df0c6a38fc9784a37ce8a82ceeb1
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Priority
+ms.openlocfilehash: 07d285ce4e7fbf736900c1d6d4acdf159b451424
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27067926"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27826223"
 ---
 # <a name="azure-ad-audit-log-api-overview"></a>Azure AD 監査ログ API の概要
 
@@ -58,7 +59,7 @@ Azure AD には、動作状況のログの 2 種類が用意されています�
 
 詳細については、 [Azure AD の価格](https://azure.microsoft.com/pricing/details/active-directory/)を参照してください。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 - 監査ログの必要条件を満たすためには、[アプリの登録](https://docs.microsoft.com/azure/active-directory/active-directory-reporting-api-prerequisites-azure-portal)をします。 
 - [ログを監査](https://docs.microsoft.com/azure/active-directory/active-directory-reporting-api-audit-samples)し、[サインイン用のサンプル](https://docs.microsoft.com/azure/active-directory/active-directory-reporting-api-sign-in-activity-samples)について説明します。  

@@ -2,12 +2,13 @@
 title: WindowsPrivacyDataAccessControlItem を作成します。
 description: 新しい windowsPrivacyDataAccessControlItem オブジェクトを作成します。
 author: tfitzmac
-ms.openlocfilehash: 262f6866c37d3ed624916189a25ce5a5b5fd0634
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 6881d6125e91f18eccfd93079c10dac672167f14
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27337682"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27811989"
 ---
 # <a name="create-windowsprivacydataaccesscontrolitem"></a>WindowsPrivacyDataAccessControlItem を作成します。
 

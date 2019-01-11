@@ -1,12 +1,13 @@
 ---
 title: accessReview リソースの種類
 description: 'Azure AD にアクセス確認機能を`accessReview`、アクセス確認を表します。  '
-ms.openlocfilehash: 1ad1edc9d3909ea2648f2644e1ba5438ce981c2d
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 283fed0f9e96ca9d0f9cdf06fdfee824326c038d
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27067537"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27826076"
 ---
 # <a name="accessreview-resource-type"></a>accessReview リソースの種類
 
@@ -43,7 +44,7 @@ Azure AD[アクセスの確認](accessreviews-root.md)機能で、 `accessReview
 
 
 ## <a name="properties"></a>プロパティ
-| プロパティ     | 型   |説明|
+| プロパティ     | 種類   |説明|
 |:---------------|:--------|:----------|
 | `id`                      |`String`                                                        | 機能に割り当てられた一意の識別子アクセス レビューします。 |
 | `displayName`             |`String`                                                        | アクセス確認の名前です。 必要なを作成します。 |
@@ -113,7 +114,7 @@ Azure AD[アクセスの確認](accessreviews-root.md)機能で、 `accessReview
 
 `accessReviewSettings` 、アクセス確認を開始するときに、機能の動作を制御するのには、アクセス確認を作成するときに追加の設定を提供します。  この型には、次のプロパティがあります。 
 
-| プロパティ                     | 型                      | 説明 |
+| プロパティ                     | 種類                      | 説明 |
 | :--------------------------- | :------------------------ | :---------- |
 | `mailNotificationsEnabled`|`Boolean`                | 校閲者とレビュー作成者にメールの送信が有効になっているかどうかを示すフラグです。                |
 | `remindersEnabled`|`Boolean`       | 校閲者に送信の通知メールが有効になっているかどうかを示すフラグです。       |
@@ -131,7 +132,7 @@ Azure AD[アクセスの確認](accessreviews-root.md)機能で、 `accessReview
 
 `autoReviewSettings`が組み込まれて、アクセス設定の確認、および、アクセス確認が完了したときに、機能の動作を指定します。  型が 1 つのプロパティを持つ`notReviewedResult`。
 
-| プロパティ                     | 型     | 説明                          |
+| プロパティ                     | 種類     | 説明                          |
 | :--------------------------- | :------  | :----------                          |
 | `notReviewedResult`          |`String`  | `Approve`、`Deny`、`Recommendation` のいずれかでなければなりません。 |
 
@@ -140,7 +141,7 @@ Azure AD[アクセスの確認](accessreviews-root.md)機能で、 `accessReview
 
 `accessReviewRecurrenceSettings` 、アクセス設定の確認、内で埋め込まれ、アクセス確認が定期的に繰り返されることを指定します。  この型には、次のプロパティがあります。
 
-| プロパティ                     | 型                                                                                                          | 説明 |
+| プロパティ                     | 種類                                                                                                          | 説明 |
 | :--------------------------- | :------------------------------------------------------------------------------------------------------------ | :---------- |
 | `recurrenceType`|`String`    | 1 つである必要があります、定期的な間隔の`onetime`、 `weekly`、 `monthly`、`quarterly`または`annual`。                                                                   |
 | `recurrenceEndType`|`String` | どのように、定期的なアイテムは終了します。 いずれかのことができます`Never`、定期的な予定の系列の明示的な終了が行われない`Endby`、定期的なアイテムを特定の日付に終了して`occurrences`、レビューのインスタンスの特定の数を完了した後に、シリーズを終了します。 |

@@ -1,12 +1,13 @@
 ---
 title: PlannerUser を取得します。
 description: 'プロパティと、plannerUser オブジェクトの関係を取得します。 返されるプロパティは、ユーザーのお気に入りのプランが含まれ、計画が最近閲覧しました。 '
-ms.openlocfilehash: fca4b37560ad0c6cd7e05aee56ebdeb1e6509101
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 1abffddb2ddbefdcd0aaeddedffe94ae8ad605d8
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27067006"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27810641"
 ---
 # <a name="get-planneruser"></a>PlannerUser を取得します。
 

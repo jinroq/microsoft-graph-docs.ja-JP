@@ -2,12 +2,13 @@
 title: NetworkIPv4ConfigurationManagementCondition を作成します。
 description: 新しい networkIPv4ConfigurationManagementCondition オブジェクトを作成します。
 author: tfitzmac
-ms.openlocfilehash: 60d79584af38ca709d597b4919a7e6dc4171ff73
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 06ec52303deb9bb000441dd0c4c47707a6e41863
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27356365"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27824760"
 ---
 # <a name="create-networkipv4configurationmanagementcondition"></a>NetworkIPv4ConfigurationManagementCondition を作成します。
 

@@ -2,12 +2,13 @@
 title: windows81CompliancePolicy の更新
 description: windows81CompliancePolicy オブジェクトのプロパティを更新します。
 author: tfitzmac
-ms.openlocfilehash: e212739d14b05ea8038bbeb1aeefca7660b6cc3f
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: fa6d62931617eb20fd4bb2fe304ca6422f37fa00
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27332761"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27826517"
 ---
 # <a name="update-windows81compliancepolicy"></a>windows81CompliancePolicy の更新
 

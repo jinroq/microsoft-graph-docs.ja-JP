@@ -1,12 +1,13 @@
 ---
 title: settingTemplateValue リソースの種類
 description: 設定がインスタンス化されていない場合の、設定の既定値を含む個々のテンプレートの設定定義を表します。
-ms.openlocfilehash: 00e424e36338855d8ef603d06c7a9ee52a99c621
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 0cb3376177e3a4efcae54a591a083914db6b56d7
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27023692"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27828323"
 ---
 # <a name="settingtemplatevalue-resource-type"></a>settingTemplateValue リソースの種類
 
@@ -14,7 +15,7 @@ ms.locfileid: "27023692"
 
 ### <a name="properties"></a>プロパティ
 
-| プロパティ | 型 | 説明 |
+| プロパティ | 種類 | 説明 |
 |:---------------|:--------|:----------|
 |defaultValue|文字列| 設定の既定値です。 |
 |説明|文字列| 設定の説明です。 |

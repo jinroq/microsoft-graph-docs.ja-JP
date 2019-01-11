@@ -1,12 +1,13 @@
 ---
 title: ネットワーク接続リソースの種類
 description: アラートに関連するネットワーク接続に関するステートフルな情報が含まれています。
-ms.openlocfilehash: e3352cbda430412691285c209c566fb379045681
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 78ddcfd19d68b8dcd64c74a5beed6d1430f0ca38
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27023898"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27826510"
 ---
 # <a name="networkconnection-resource-type"></a>ネットワーク接続リソースの種類
 
@@ -14,7 +15,7 @@ ms.locfileid: "27023898"
 
 ## <a name="properties"></a>プロパティ
 
-| プロパティ   | 型|説明|
+| プロパティ   | 種類|説明|
 |:---------------|:--------|:----------|
 |applicationName|String|ネットワーク接続 (たとえば、Facebook、SMTP など) を管理するアプリケーションの名前です。|
 |destinationAddress|String|宛先 IP アドレス (ネットワーク接続)。|

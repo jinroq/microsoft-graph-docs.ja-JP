@@ -1,12 +1,13 @@
 ---
 title: SynchronizationJob を開始します。
 description: 既存の同期ジョブを開始します。 ジョブが一時停止状態にある場合は、その一時停止された時点から変更の処理は続行されます。 ジョブは、検疫では、検疫の状態がクリアされます。
-ms.openlocfilehash: c9f326a2c00564f25fb0ff982ede7e8454e14c8c
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 478f29d1c49cf6cc820fcc52393f4721ff94caac
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27073368"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27826216"
 ---
 # <a name="start-synchronizationjob"></a>SynchronizationJob を開始します。
 
@@ -31,7 +32,7 @@ POST /servicePrincipals/{id}/synchronization/jobs/{jobId}/start
 
 ## <a name="request-headers"></a>要求ヘッダー
 
-| 名前           | 型    | 説明|
+| 名前           | 種類    | 説明|
 |:---------------|:--------|:-----------|
 | Authorization  | string  | ベアラー {トークン}。必須。 |
 

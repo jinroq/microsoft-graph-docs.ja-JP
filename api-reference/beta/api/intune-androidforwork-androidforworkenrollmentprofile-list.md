@@ -2,12 +2,13 @@
 title: androidForWorkEnrollmentProfiles のリスト
 description: androidForWorkEnrollmentProfile オブジェクトのプロパティとリレーションシップをリストします。
 author: tfitzmac
-ms.openlocfilehash: f01037e67a87ee38d6458dd8f2612473970e6680
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: ef83136793b21b25827e4b9f16aeeff0a3a7464a
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27340790"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27813126"
 ---
 # <a name="list-androidforworkenrollmentprofiles"></a>androidForWorkEnrollmentProfiles のリスト
 

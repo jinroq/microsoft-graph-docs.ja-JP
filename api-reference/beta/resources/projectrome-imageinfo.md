@@ -1,12 +1,13 @@
 ---
 title: imageInfo リソースの種類
 description: アクティビティ オブジェクトの visualInfo の一部の**属性**のプロパティを表すための複合型です。
-ms.openlocfilehash: dbd04c5350d618540ebdffcb38a2bc11bfef6129
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 9df93e24c2019f246fc9da269b40ab690ae81aa4
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27073314"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27828568"
 ---
 # <a name="imageinfo-resource-type"></a>imageInfo リソースの種類
 
@@ -16,11 +17,11 @@ ms.locfileid: "27073314"
 
 ## <a name="properties"></a>プロパティ
 
-|名前 | 型 | 説明|
+|名前 | 種類 | 説明|
 |:----|:-----|:-----------|
 |iconUrl | String | 省略可能です。活動を生成するために使用するアプリケーションを表すアイコンをポイントする URI|
 |alternateText | String | 省略可能です。イメージの alt テキストのアクセス可能なコンテンツ|
-|addImageQuery | ブール値 | 省略可能です。サーバーを指定するためのパラメーターは、パラメーターへの応答に動的にイメージをレンダリングすることです。 例: ハイコントラスト イメージ|
+|addImageQuery | ブール型 | 省略可能です。サーバーを指定するためのパラメーターは、パラメーターへの応答に動的にイメージをレンダリングすることです。 例: ハイコントラスト イメージ|
 
 ## <a name="json-representation"></a>JSON 表記
 

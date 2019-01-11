@@ -2,12 +2,13 @@
 title: notificationMessageTemplate リソース タイプ
 description: " セクションです。 notificationMessageTemplate オブジェクトを使用して、管理者が非準拠のアクションを構成する際に選択する、独自のカスタム通知を作成します。"
 author: tfitzmac
-ms.openlocfilehash: 110fdfd12c7fc8f556b276581c470d688ae4a35d
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: bf7e15318402a8b2aef24f6a254d12668fda94b4
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27358094"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27805442"
 ---
 # <a name="notificationmessagetemplate-resource-type"></a>notificationMessageTemplate リソース タイプ
 

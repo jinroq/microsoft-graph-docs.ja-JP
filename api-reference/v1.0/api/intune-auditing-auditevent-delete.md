@@ -2,12 +2,13 @@
 title: Delete auditEvent
 description: auditEvent を削除します。
 author: tfitzmac
-ms.openlocfilehash: 1a0393e46ecd54cadc28a603067f3b8c91366812
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 3a871d5c987681bbdd67648fb09d3dd5f2374b9c
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27307092"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27815996"
 ---
 # <a name="delete-auditevent"></a>Delete auditEvent
 

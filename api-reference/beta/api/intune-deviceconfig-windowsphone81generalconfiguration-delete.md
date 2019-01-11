@@ -2,12 +2,13 @@
 title: windowsPhone81GeneralConfiguration の削除
 description: windowsPhone81GeneralConfiguration を削除します。
 author: tfitzmac
-ms.openlocfilehash: 3624be30b79a5a8a146c9b97983235234aa37414
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 77c55325ef0d7edaa1a1b5999c19ef776fd74472
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27317459"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27827420"
 ---
 # <a name="delete-windowsphone81generalconfiguration"></a>windowsPhone81GeneralConfiguration の削除
 

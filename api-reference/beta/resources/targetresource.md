@@ -1,19 +1,20 @@
 ---
 title: targetResource リソースの種類
 description: Audit アクティビティに関連付けられているターゲット ・ リソースの種類のコレクションを表します。 各ターゲット リソースの種類は、次の手順は、このリソースからプロパティを継承します。
-ms.openlocfilehash: ba3bee7ce89f73ed97610d62676c22d14488ed9f
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: f86cfe45870292dae93327859c32d38aa2b252fd
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27066895"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27828680"
 ---
 # <a name="targetresource-resource-type"></a>targetResource リソースの種類
 Audit アクティビティに関連付けられているターゲット ・ リソースの種類のコレクションを表します。 各ターゲット リソースの種類は、次の手順は、このリソースからプロパティを継承します。
 
 
 ## <a name="properties"></a>プロパティ
-| プロパティ     | 型   |説明|
+| プロパティ     | 種類   |説明|
 |:---------------|:--------|:----------|
 |displayName|String|次のターゲット リソースの種類] の下に記載されているリソースの表示名を示します。|
 |id|String|リソースの一意の Id を示します (例: ユーザー Id、AppId を RoleId。)。|
@@ -25,9 +26,9 @@ Audit アクティビティに関連付けられているターゲット ・ リ
 
 |リソース名| リファレンス|
 |-------------|----------|
-デバイス|[targetResourceDevice](targetresourcedevice.md)
+Device|[targetResourceDevice](targetresourcedevice.md)
 ディレクトリ|[targetResourceDirectory](targetresourcedirectory.md]
-グループ化|[targetResourceGroup](targetresourcegroup.md)
+Group|[targetResourceGroup](targetresourcegroup.md)
 ポリシー|[targetResourcePolicy](targetresourcepolicy.md)
 Role|[targetResourceRole](targetresourcerole.md)
 サービス ・ プリンシパル|[targetResourceServicePrincipal](targetresourceserviceprincipal.md)

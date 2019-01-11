@@ -2,12 +2,13 @@
 title: AndroidEasEmailProfileConfiguration を更新します。
 description: AndroidEasEmailProfileConfiguration オブジェクトのプロパティを更新します。
 author: tfitzmac
-ms.openlocfilehash: 824b93f9c53f7a11a19a72b6156b2a7cde196054
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 58542198f24cb39f77a12a3e447de3c416f82215
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27318117"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27828379"
 ---
 # <a name="update-androideasemailprofileconfiguration"></a>AndroidEasEmailProfileConfiguration を更新します。
 

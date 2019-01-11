@@ -2,12 +2,13 @@
 title: WindowsAssignedAccessProfile を取得します。
 description: WindowsAssignedAccessProfile オブジェクトのプロパティと関係を参照してください。
 author: tfitzmac
-ms.openlocfilehash: a4a4fd692c8147283950bb3a2d5de6ebebcd4173
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: e7fa26f3cdbb158991287ea8cdf5440a58bd469b
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27349764"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27827245"
 ---
 # <a name="get-windowsassignedaccessprofile"></a>WindowsAssignedAccessProfile を取得します。
 

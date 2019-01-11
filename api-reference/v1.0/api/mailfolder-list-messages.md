@@ -1,12 +1,13 @@
 ---
 title: メッセージを一覧表示する
 description: サインインしているユーザーのメールボックス内のすべてのメッセージや、メールボックス内の指定したフォルダー内のメッセージを取得します。
-ms.openlocfilehash: deb46ec472bd05c2ae038fdcfbc808ed51b48f30
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Priority
+ms.openlocfilehash: a58d6e3c51cf85992129b3ba9c8e3996fa9841f8
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27022934"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27825369"
 ---
 # <a name="list-messages"></a>メッセージを一覧表示する
 
@@ -29,7 +30,7 @@ GET /users/{id | userPrincipalName}/mailFolders/{id}/messages
 ## <a name="optional-query-parameters"></a>オプションのクエリ パラメーター
 このメソッドは、応答をカスタマイズするための [OData クエリ パラメーター](https://developer.microsoft.com/graph/docs/concepts/query_parameters)をサポートします。
 ## <a name="request-headers"></a>要求ヘッダー
-| 名前       | 型 | 説明|
+| 名前       | 種類 | 説明|
 |:-----------|:------|:----------|
 | Authorization  | string  | ベアラー {トークン}。必須。 |
 

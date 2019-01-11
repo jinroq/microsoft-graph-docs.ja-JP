@@ -1,12 +1,13 @@
 ---
 title: scheduleInformation リソースの種類
 description: " > **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。"
-ms.openlocfilehash: 0b7bbd861a044b28cd22603fd0ccc27d20f46fba
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: e535f5c2b47e810fc767cb29d0b24f28ed3c7bf0
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27069803"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27828708"
 ---
 # <a name="scheduleinformation-resource-type"></a>scheduleInformation リソースの種類
 
@@ -15,7 +16,7 @@ ms.locfileid: "27069803"
 指定された期間内のユーザー、配布リスト、またはリソースの可用性を表します。
 
 ## <a name="properties"></a>プロパティ
-| プロパティ     | 型   |説明|
+| プロパティ     | 種類   |説明|
 |:---------------|:--------|:----------|
 |availabilityView |String |マージされたビュー内のすべての項目の数を表す`scheduleItems`。 ビューは、時間帯で構成されています。 各時間帯の可用性で示されます。:`0`無料 = `1`= 仮の予定、 `2`= ビジー状態か、`3`外出中 = `4`= の別の場所で作業します。|
 |エラー |[freeBusyError](freebusyerror.md) |エラー情報が、ユーザー、配布リスト、またはリソースの可用性を取得しようとしていますから。 |

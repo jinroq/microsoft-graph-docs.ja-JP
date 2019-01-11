@@ -2,12 +2,13 @@
 title: DepIOSEnrollmentProfile を取得します。
 description: DepIOSEnrollmentProfile オブジェクトのプロパティと関係を参照してください。
 author: tfitzmac
-ms.openlocfilehash: 0acc8961969ff341be28e597bede55c58e6d4356
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 4b1e2539e157d815f94a3eb3358665de70de80a5
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27358766"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27808107"
 ---
 # <a name="get-depiosenrollmentprofile"></a>DepIOSEnrollmentProfile を取得します。
 

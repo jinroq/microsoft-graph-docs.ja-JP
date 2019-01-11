@@ -1,12 +1,13 @@
 ---
 title: multiValueLegacyExtendedProperty リソースの種類
 description: 値のコレクションが含まれる拡張プロパティ。
-ms.openlocfilehash: 9aa94465ca1a0fb30c4461b99336040c72e2c5c0
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 87823559bad3e149ef3c4d4d6f21f43cf66c41fa
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27021467"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27827035"
 ---
 # <a name="multivaluelegacyextendedproperty-resource-type"></a>multiValueLegacyExtendedProperty リソースの種類
 
@@ -22,7 +23,7 @@ ms.locfileid: "27021467"
 |[Get](../api/multivaluelegacyextendedproperty-get.md) |[multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md) オブジェクトで拡張されたサポートされているリソースのインスタンス ([メッセージ](../resources/message.md)、[mailFolder](../resources/mailfolder.md)、[イベント](../resources/event.md)、[予定表](../resources/calendar.md)、[連絡先](../resources/contact.md)、[contactFolder](../resources/contactfolder.md)、またはグループ[投稿](../resources/post.md))。 |`$expand` を使用して拡張プロパティでリソース インスタンスを取得します。|
 
 ## <a name="properties"></a>プロパティ
-| プロパティ     | 型   |説明|
+| プロパティ     | 種類   |説明|
 |:---------------|:--------|:----------|
 |ID|文字列|プロパティ識別子。読み取り専用です。|
 |value|string collection|プロパティ値のコレクション。|

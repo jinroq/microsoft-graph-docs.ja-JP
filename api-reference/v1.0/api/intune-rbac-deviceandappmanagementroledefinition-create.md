@@ -2,12 +2,13 @@
 title: deviceAndAppManagementRoleDefinition の作成
 description: 新しい deviceAndAppManagementRoleDefinition オブジェクトを作成します。
 author: tfitzmac
-ms.openlocfilehash: ad338b53aa49d140e36754d36a92f1eda4a6000a
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: f1eb68651a32f10d2b8daaab4fe7eaac0b8b2666
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27348518"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27826034"
 ---
 # <a name="create-deviceandappmanagementroledefinition"></a>deviceAndAppManagementRoleDefinition の作成
 

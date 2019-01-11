@@ -2,12 +2,13 @@
 title: Get androidManagedAppProtection
 description: androidManagedAppProtection オブジェクトのプロパティとリレーションシップを読み取ります。
 author: tfitzmac
-ms.openlocfilehash: 877b7da27203c4fe625d0a5a4a187d62f96d5471
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 6e9da36760c73e8992cd29a2d45a51ff1bf1f2e4
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27340503"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27828365"
 ---
 # <a name="get-androidmanagedappprotection"></a>Get androidManagedAppProtection
 

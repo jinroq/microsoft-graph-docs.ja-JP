@@ -2,12 +2,13 @@
 title: SymantecCodeSigningCertificate を更新します。
 description: SymantecCodeSigningCertificate オブジェクトのプロパティを更新します。
 author: tfitzmac
-ms.openlocfilehash: fe3580f0160c50c2580580ff3515a7842ccf610d
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 7d95627e9a2c678097be0c3cb818a03906e8a06f
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27318061"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27824739"
 ---
 # <a name="update-symanteccodesigningcertificate"></a>SymantecCodeSigningCertificate を更新します。
 

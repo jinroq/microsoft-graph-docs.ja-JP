@@ -1,25 +1,26 @@
 ---
 title: skypeForBusinessActivityUserDetail リソースの種類
 description: リソースの JSON 表記を次に示します。
-ms.openlocfilehash: 7a2438d0c4ecbaf6ae06e240ee6fd456c87c180f
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: e847cbf469db3be55c8c12ebf31056a262962886
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27072688"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27828652"
 ---
 # <a name="skypeforbusinessactivityuserdetail-resource-type"></a>skypeForBusinessActivityUserDetail リソースの種類
 
 ## <a name="properties"></a>プロパティ
 
-| プロパティ                                 | 型              |
+| プロパティ                                 | 種類              |
 | :--------------------------------------- | :---------------- |
 | totalPeerToPeerSessionCount              | Int64             |
 | totalOrganizedConferenceCount            | Int64             |
 | totalParticipatedConferenceCount         | Int64             |
-| peerToPeerLastActivityDate               | Date              |
-| organizedConferenceLastActivityDate      | Date              |
-| participatedConferenceLastActivityDate   | Date              |
+| peerToPeerLastActivityDate               | 日付              |
+| organizedConferenceLastActivityDate      | 日付              |
+| participatedConferenceLastActivityDate   | 日付              |
 | peerToPeerIMCount                        | Int64             |
 | peerToPeerAudioCount                     | Int64             |
 | peerToPeerAudioMinutes                   | Int64             |
@@ -42,11 +43,11 @@ ms.locfileid: "27072688"
 | participatedConferenceAppSharingCount   | Int64             |
 | participatedConferenceWebCount          | Int64             |
 | participatedConferenceDialInOut3rdPartyCount | Int64             |
-| reportRefreshDate                        | Date              |
+| reportRefreshDate                        | 日付              |
 | userPrincipalName                        | String            |
-| isDeleted                                | ブール値           |
-| deletedDate                              | Date              |
-| lastActivityDate                         | Date              |
+| isDeleted                                | ブール型           |
+| deletedDate                              | 日付              |
+| lastActivityDate                         | 日付              |
 | assignedProducts                         | String コレクション |
 | reportPeriod                             | String            |
 

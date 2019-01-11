@@ -2,12 +2,13 @@
 title: DefaultDeviceCompliancePolicy を更新します。
 description: DefaultDeviceCompliancePolicy オブジェクトのプロパティを更新します。
 author: tfitzmac
-ms.openlocfilehash: 6f4dcb134bcb03e3026c1361a34e38f7975ff495
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: a6bad561bc82777c594191a34eb6dec8b3a3e3ea
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27361013"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27817403"
 ---
 # <a name="update-defaultdevicecompliancepolicy"></a>DefaultDeviceCompliancePolicy を更新します。
 

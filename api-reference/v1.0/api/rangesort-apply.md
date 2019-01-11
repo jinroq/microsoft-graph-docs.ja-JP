@@ -2,12 +2,13 @@
 title: 'RangeSort: 適用'
 description: 並べ替え操作を実行します。
 author: lumine2008
-ms.openlocfilehash: 98585be62b8aa227ea5e648d1e24e2a09cb023d9
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 6298bc4368126debc384b4eafcbb05154c35aab6
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27352109"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27825628"
 ---
 # <a name="rangesort-apply"></a>RangeSort: 適用
 
@@ -38,13 +39,13 @@ POST /workbook/tables/{id|name}/columns/{id|name}/range/sort/apply
 ## <a name="request-body"></a>要求本文
 要求本文で、次のパラメーターを含む JSON オブジェクトを指定します。
 
-| パラメーター    | 種類   |説明|
+| パラメーター    | Type   |説明|
 |:---------------|:--------|:----------|
 |fields|WorkbookSortField コレクション|並べ替えに使用する条件の一覧。|
 |matchCase|ブール値|省略可能。大文字小文字の区別が文字列の順序に影響を与えるかどうか。|
 |hasHeaders|ブール値|省略可能。範囲にヘッダーがあるかどうか。|
-|orientation|string|省略可能。 かどうか操作が行または列を並べ替え。  可能な値: `Rows`、 `Columns`。|
-|method|string|省略可能。 中国語の文字に使用される順序の指定方法です。  可能な値: `PinYin`、 `StrokeCount`。|
+|orientation|文字列|省略可能。 かどうか操作が行または列を並べ替え。  可能な値: `Rows`、 `Columns`。|
+|method|文字列|省略可能。 中国語の文字に使用される順序の指定方法です。  可能な値: `PinYin`、 `StrokeCount`。|
 
 ## <a name="response"></a>応答
 

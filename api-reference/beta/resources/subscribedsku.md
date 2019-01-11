@@ -1,12 +1,13 @@
 ---
 title: subscribedSku リソースの種類
 description: " 作成、更新、および削除はサポートされていません。 クエリのフィルター式はサポートされていません。 directoryObject から継承します。"
-ms.openlocfilehash: ab9b64d8de67379aa002ffeec78edd327b15b222
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 07f40c766d7f46974cf99b9954f63a61c2c0c621
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27073101"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27829604"
 ---
 # <a name="subscribedsku-resource-type"></a>subscribedSku リソースの種類
 
@@ -22,7 +23,7 @@ ms.locfileid: "27073101"
 |[リスト subscribedsku](../api/subscribedsku-list.md) | [subscribedSku](subscribedsku.md) コレクション |組織で取得した商用サブスクリプションの一覧を取得します。|
 
 ## <a name="properties"></a>プロパティ
-| プロパティ     | 型   |説明|
+| プロパティ     | 種類   |説明|
 |:---------------|:--------|:----------|
 |appliesTo|String| "User" や "Company" など。 |
 |capabilityStatus|String| 「有効」など。 |

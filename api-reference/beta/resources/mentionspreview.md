@@ -1,12 +1,13 @@
 ---
 title: mentionsPreview リソースの種類
 description: リソースのインスタンスで記載されているオブジェクトに関する情報を表します。
-ms.openlocfilehash: cf6bed3cdfb2d3f541438da0c06fcf8f4873c17e
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 1534b7f0ef48a80d0faaaa09880b91cb270e8eca
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27073098"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27826111"
 ---
 # <a name="mentionspreview-resource-type"></a>mentionsPreview リソースの種類
 
@@ -15,7 +16,7 @@ ms.locfileid: "27073098"
 リソース インスタンス内のオブジェクトの[説明](../resources/mention.md)に関する情報を表します。
 
 ## <a name="properties"></a>プロパティ
-| プロパティ     | 型   |説明|
+| プロパティ     | 種類   |説明|
 |:---------------|:--------|:----------|
 | isMentioned | Boolean | ログインしているユーザーが親リソース インスタンスでメンションされている場合は true です。読み取り専用。フィルターがサポートされています。 |
 

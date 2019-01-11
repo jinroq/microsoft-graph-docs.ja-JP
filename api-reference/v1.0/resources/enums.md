@@ -1,12 +1,13 @@
 ---
 title: timeZoneStandard 値
 description: " 値"
-ms.openlocfilehash: 7212a3ca1394ce73357aa9c22550a79f638ea973
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 6f9a08a7f20ff9b4f5463c6d7e4877568c49eee1
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27021132"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27825733"
 ---
 ### <a name="timezonestandard-values"></a>timeZoneStandard 値
 
@@ -258,9 +259,9 @@ ms.locfileid: "27021132"
 
 | 値
 |:-------------------------
-| 置換
+| Replace
 | 追加
-| 削除
+| Delete
 | Insert
 | 先頭に追加します。
 
