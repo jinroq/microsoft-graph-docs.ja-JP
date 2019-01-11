@@ -2,12 +2,13 @@
 title: EmbeddedSIMDeviceState を削除します。
 description: EmbeddedSIMDeviceState を削除します。
 author: tfitzmac
-ms.openlocfilehash: a99ee168896971e4051f93aaea527aa4c24a1f07
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 9a7acebbf76e0719967582fa5a4922a8d409af2e
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27338963"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27819104"
 ---
 # <a name="delete-embeddedsimdevicestate"></a>EmbeddedSIMDeviceState を削除します。
 

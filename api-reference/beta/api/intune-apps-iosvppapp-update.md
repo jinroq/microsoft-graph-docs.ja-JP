@@ -2,12 +2,13 @@
 title: iosVppApp の更新
 description: iosVppApp オブジェクトのプロパティを更新します。
 author: tfitzmac
-ms.openlocfilehash: 0f95b23bcde4d48e8e17724e6fd5b4b26992df1a
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 0ac3ad93fa6847ce62b6710286fc6eec977c66d5
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27341525"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27819510"
 ---
 # <a name="update-iosvppapp"></a>iosVppApp の更新
 

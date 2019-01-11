@@ -2,12 +2,13 @@
 title: IosWiFiConfiguration を削除します。
 description: IosWiFiConfiguration を削除します。
 author: tfitzmac
-ms.openlocfilehash: 3bbe9fd841c8e19c573d6849827a0e370036e6af
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 5f839a021a2767910a56fe5af19769c5f7fba8a2
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27327441"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27822716"
 ---
 # <a name="delete-ioswificonfiguration"></a>IosWiFiConfiguration を削除します。
 

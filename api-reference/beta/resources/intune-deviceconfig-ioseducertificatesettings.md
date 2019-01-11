@@ -2,12 +2,13 @@
 title: iosEduCertificateSettings リソースの種類
 description: 信頼されたルートと PFX 証明書 EDU の入出力数のです。
 author: tfitzmac
-ms.openlocfilehash: 8e373a7c878dd06870b13a32c428f837d741964c
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: bf6b0da4d3ff7af562ae99e81e10f52351bd735d
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27332327"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27822079"
 ---
 # <a name="ioseducertificatesettings-resource-type"></a>iosEduCertificateSettings リソースの種類
 
@@ -16,7 +17,7 @@ ms.locfileid: "27332327"
 > **注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
 
 信頼されたルートと PFX 証明書 EDU の入出力数のです。
-## <a name="properties"></a>Properties
+## <a name="properties"></a>プロパティ
 |プロパティ|種類|説明|
 |:---|:---|:---|
 |trustedRootCertificate|Binary|信頼されたルート証明書です。|

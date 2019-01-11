@@ -2,12 +2,13 @@
 title: Update androidGeneralDeviceConfiguration
 description: androidGeneralDeviceConfiguration オブジェクトのプロパティを更新します。
 author: tfitzmac
-ms.openlocfilehash: bce3fa318ed7ff0e818c19a6907a34c26b804b35
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 328a719e9791706bbe89d2d68d2e5d4a82472110
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27302444"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27820028"
 ---
 # <a name="update-androidgeneraldeviceconfiguration"></a>Update androidGeneralDeviceConfiguration
 

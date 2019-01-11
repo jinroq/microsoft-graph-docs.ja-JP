@@ -2,12 +2,13 @@
 title: officeSuiteApp リソースの種類
 description: Office365 スイート アプリケーションのプロパティと継承されたプロパティが含まれています。
 author: tfitzmac
-ms.openlocfilehash: b7e4ee38513efeca354d80429409f0ff3349c845
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 65ba9d39b2648ecf47e66c3b907eee50c57e906b
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27306252"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27820560"
 ---
 # <a name="officesuiteapp-resource-type"></a>officeSuiteApp リソースの種類
 
@@ -28,7 +29,7 @@ Office365 スイート アプリケーションのプロパティと継承され
 |[OfficeSuiteApp を削除します。](../api/intune-apps-officesuiteapp-delete.md)|なし|の[officeSuiteApp](../resources/intune-apps-officesuiteapp.md)を削除します。|
 |[OfficeSuiteApp を更新します。](../api/intune-apps-officesuiteapp-update.md)|[officeSuiteApp](../resources/intune-apps-officesuiteapp.md)|[OfficeSuiteApp](../resources/intune-apps-officesuiteapp.md)オブジェクトのプロパティを更新します。|
 
-## <a name="properties"></a>Properties
+## <a name="properties"></a>プロパティ
 |プロパティ|種類|説明|
 |:---|:---|:---|
 |ID|String|エンティティのキー。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|

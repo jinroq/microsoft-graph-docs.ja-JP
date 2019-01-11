@@ -2,12 +2,13 @@
 title: telecomExpenseManagementPartner の取得
 description: telecomExpenseManagementPartner オブジェクトのプロパティとリレーションシップを読み取ります。
 author: tfitzmac
-ms.openlocfilehash: afca2b07c130167783331c1989911ac065c61268
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: ba9e9933424bd63277ecc80acf3d3aaecdd7e4ee
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27354244"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27818159"
 ---
 # <a name="get-telecomexpensemanagementpartner"></a>telecomExpenseManagementPartner の取得
 

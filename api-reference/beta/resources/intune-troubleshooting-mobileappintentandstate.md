@@ -2,12 +2,13 @@
 title: mobileAppIntentAndState リソースの種類
 description: MobileApp の意図と特定のデバイスのインストールの状態です。
 author: tfitzmac
-ms.openlocfilehash: 40ffbac3f86ccce3037a6585fa608dd4055bd428
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 037faeb02f18f304153dbe19fef640cc1183ddcd
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27356057"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27819797"
 ---
 # <a name="mobileappintentandstate-resource-type"></a>mobileAppIntentAndState リソースの種類
 
@@ -25,7 +26,7 @@ MobileApp の意図と特定のデバイスのインストールの状態です�
 |[MobileAppIntentAndState を削除します。](../api/intune-troubleshooting-mobileappintentandstate-delete.md)|なし|の[mobileAppIntentAndState](../resources/intune-troubleshooting-mobileappintentandstate.md)を削除します。|
 |[MobileAppIntentAndState を更新します。](../api/intune-troubleshooting-mobileappintentandstate-update.md)|[mobileAppIntentAndState](../resources/intune-troubleshooting-mobileappintentandstate.md)|[MobileAppIntentAndState](../resources/intune-troubleshooting-mobileappintentandstate.md)オブジェクトのプロパティを更新します。|
 
-## <a name="properties"></a>Properties
+## <a name="properties"></a>プロパティ
 |プロパティ|種類|説明|
 |:---|:---|:---|
 |ID|String|オブジェクトの UUID|

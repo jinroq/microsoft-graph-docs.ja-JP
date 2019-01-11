@@ -2,12 +2,13 @@
 title: Windows10PFXImportCertificateProfile を作成します。
 description: 新しい windows10PFXImportCertificateProfile オブジェクトを作成します。
 author: tfitzmac
-ms.openlocfilehash: f98970b0159e98f101b99e6694fa552b57e203b9
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 5342d1184125497eeab39794c01c51c82327644d
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27338305"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27822814"
 ---
 # <a name="create-windows10pfximportcertificateprofile"></a>Windows10PFXImportCertificateProfile を作成します。
 

@@ -2,12 +2,13 @@
 title: excludedApps リソースの種類
 description: Office365 アプリケーションの除外プロパティが含まれています。
 author: tfitzmac
-ms.openlocfilehash: b8c9eff985783c953ff099dbf4d5ba00826652c4
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: b2ec66c83c13088fb289e271e604154195902ca5
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27344626"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27821883"
 ---
 # <a name="excludedapps-resource-type"></a>excludedApps リソースの種類
 
@@ -16,7 +17,7 @@ ms.locfileid: "27344626"
 > **注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
 
 Office365 アプリケーションの除外プロパティが含まれています。
-## <a name="properties"></a>Properties
+## <a name="properties"></a>プロパティ
 |プロパティ|種類|説明|
 |:---|:---|:---|
 |アクセス|ブール型|値かの MS Office のアクセスを除外する必要があります。|

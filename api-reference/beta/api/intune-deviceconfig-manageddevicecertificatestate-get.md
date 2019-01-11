@@ -2,12 +2,13 @@
 title: ManagedDeviceCertificateState を取得します。
 description: ManagedDeviceCertificateState オブジェクトのプロパティと関係を参照してください。
 author: tfitzmac
-ms.openlocfilehash: 54f276e1639dd5514e7a5ee919a4235d344c6dc4
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 0ae84915623f17d5b79e933028e57459e5e5addf
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27315912"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27822688"
 ---
 # <a name="get-manageddevicecertificatestate"></a>ManagedDeviceCertificateState を取得します。
 

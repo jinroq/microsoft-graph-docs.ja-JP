@@ -2,12 +2,13 @@
 title: CartToClassAssociation を取得します。
 description: CartToClassAssociation オブジェクトのプロパティと関係を参照してください。
 author: tfitzmac
-ms.openlocfilehash: f7a787ef26317993b0bb9c9f0fd67d2e9ff6ab8f
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 38c31d28e361c06e6178a8943a345287d6c5f529
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27333160"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27817102"
 ---
 # <a name="get-carttoclassassociation"></a>CartToClassAssociation を取得します。
 

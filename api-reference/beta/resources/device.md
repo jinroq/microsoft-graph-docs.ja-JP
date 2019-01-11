@@ -1,12 +1,13 @@
 ---
 title: デバイス リソース型
 description: ディレクトリに登録されているデバイスを表します。 デバイスは、Device Registration Service を使用するか、Intune によってクラウドで作成されます。 これは、多要素認証の条件付きアクセス ポリシーで使用されます。 該当するデバイスの範囲は、デスクトップやノート PC から携帯電話やタブレットに及びます。 directoryObject から継承します。
-ms.openlocfilehash: 41fc53790c9c12415606e9f6f993407e97068fe6
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: c39e466d6cf0e1dff3b62ff9acbb2123cafceb0c
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27074374"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27821673"
 ---
 # <a name="device-resource-type"></a>デバイス リソース型
 
@@ -35,7 +36,7 @@ ms.locfileid: "27074374"
 |[スキーマ拡張機能の値を追加する](/graph/extensibility-schema-groups) || スキーマ拡張機能の定義を作成し、それを使用してカスタマイズされた種類のデータをリソースに追加します。|
 
 ## <a name="properties"></a>プロパティ
-| プロパティ     | 型   |説明|
+| プロパティ     | 種類   |説明|
 |:---------------|:--------|:----------|
 |accountEnabled|ブール値| アカウントが有効な場合は **true**。それ以外の場合は **false**。 既定では true を指定します。|
 |alternativeSecurityIds|alternativeSecurityId コレクション| 内部使用専用です。 null 許容ではありません。 |
@@ -54,7 +55,7 @@ ms.locfileid: "27074374"
 |physicalIds|String コレクション| 内部使用専用です。 null 許容ではありません。 |
 |trustType|String| 参加済みデバイスの信頼の種類。 読み取り専用です。 可能な値: <br />**ワークプレース** - *bring your own personal devices* を示します<br />**AzureAd** - クラウド専用の参加済みデバイス<br />**ServerAd** -Azure AD に参加済みのオンプレミスのドメイン参加済みデバイス。 詳細については、「[Azure Active Directory のデバイス管理の概要](https://docs.microsoft.com/en-us/azure/active-directory/device-management-introduction)」を参照してください |
 |名前| String | デバイスのフレンドリ名。 ローマのプロジェクトの一部としてユーザーが Microsoft アカウントを使用して署名かどうかにだけ返されます。 |
-|Status | String| デバイスは、オンラインまたはオフラインです。 ローマのプロジェクトの一部としてユーザーが Microsoft アカウントを使用して署名かどうかにだけ返されます。 |
+|状態 | String| デバイスは、オンラインまたはオフラインです。 ローマのプロジェクトの一部としてユーザーが Microsoft アカウントを使用して署名かどうかにだけ返されます。 |
 |プラットフォーム |String|デバイスのプラットフォームです。 ローマのプロジェクトの一部としてユーザーが Microsoft アカウントを使用して署名かどうかにだけ返されます。 ローマのプロジェクトの一部としてユーザーが Microsoft アカウントを使用して署名かどうかにだけ返されます。|
 |Kind| String| デバイスのフォーム ファクター。 ローマのプロジェクトの一部としてユーザーが Microsoft アカウントを使用して署名かどうかにだけ返されます。 |
 |モデル| String| デバイスのモデルです。 ローマのプロジェクトの一部としてユーザーが Microsoft アカウントを使用して署名かどうかにだけ返されます。 |

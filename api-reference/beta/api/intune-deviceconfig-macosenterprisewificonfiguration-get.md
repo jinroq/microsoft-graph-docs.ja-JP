@@ -2,12 +2,13 @@
 title: MacOSEnterpriseWiFiConfiguration を取得します。
 description: MacOSEnterpriseWiFiConfiguration オブジェクトのプロパティと関係を参照してください。
 author: tfitzmac
-ms.openlocfilehash: c33a2427bf6d576209567df71361a244ef4601c9
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 231a8549546ef84baf5fddd1edeb45ca105cabb4
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27338011"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27822938"
 ---
 # <a name="get-macosenterprisewificonfiguration"></a>MacOSEnterpriseWiFiConfiguration を取得します。
 

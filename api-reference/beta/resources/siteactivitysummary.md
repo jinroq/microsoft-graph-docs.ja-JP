@@ -1,25 +1,26 @@
 ---
 title: siteActivitySummary リソースの種類
 description: リソースの JSON 表記を次に示します。
-ms.openlocfilehash: 354b329f592964249590b2f551d66681f45de485
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 2eb5bdb89924338d1d352ea80bd516b8fb948250
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27070212"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27817767"
 ---
 # <a name="siteactivitysummary-resource-type"></a>siteActivitySummary リソースの種類
 
 ## <a name="properties"></a>プロパティ
 
-| プロパティ          | 型   |
+| プロパティ          | 種類   |
 | :---------------- | :----- |
-| reportRefreshDate | Date   |
+| reportRefreshDate | 日付   |
 | viewedOrEdited    | Int64  |
 | 同期            | Int64  |
 | sharedInternally  | Int64  |
 | sharedExternally  | Int64  |
-| reportDate        | Date   |
+| reportDate        | 日付   |
 | reportPeriod      | String |
 
 ## <a name="json-representation"></a>JSON 表記

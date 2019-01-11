@@ -2,12 +2,13 @@
 title: onenoteEntityBaseModel リソース
 description: これは、OneNote のエンティティの基本型です。
 author: Jewan-microsoft
-ms.openlocfilehash: 25e2da6732fd831c6bbec5ae86bddeae7b702aa5
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 0c6a3d4916bf54eeec5856f51af87fa79e1f6e6c
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27310466"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27821232"
 ---
 # <a name="onenoteentitybasemodel-resource"></a>onenoteEntityBaseModel リソース
 

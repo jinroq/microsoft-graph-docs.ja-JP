@@ -1,12 +1,13 @@
 ---
 title: plannerUser リソースの種類
 description: '**PlannerUser**リソースでは、ユーザーの計画のリソースへのアクセスを提供します。 '
-ms.openlocfilehash: 592a26daacd1bd6d0a780ca0180d3ec5a57b6eb1
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 709b259c88d8fe0f02defaa57e77727a7b967cfd
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27070568"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27820805"
 ---
 # <a name="planneruser-resource-type"></a>plannerUser リソースの種類
 
@@ -26,9 +27,9 @@ ms.locfileid: "27070568"
 
 
 ## <a name="properties"></a>プロパティ
-| プロパティ     | 型   |説明|
+| プロパティ     | 種類   |説明|
 |:---------------|:--------|:----------|
-|id|String| 読み取り専用。 PlannerUser の識別子|
+|ID|String| 読み取り専用です。 PlannerUser の識別子|
 |favoritePlanReferences|[plannerFavoritePlanReferenceCollection](plannerfavoriteplanreferencecollection.md)| ユーザーは、お気に入りとしてマークする計画への参照を格納するコレクション。|
 |recentPlanReferences|[plannerRecentPlanReferenceCollection](plannerrecentplanreferencecollection.md)| 最近の計画をサポートするアプリケーションでユーザーが最近表示された計画への参照を格納するコレクション。|
 
@@ -36,8 +37,8 @@ ms.locfileid: "27070568"
 | リレーションシップ | 型   |説明|
 |:---------------|:--------|:----------|
 |tasks|[plannerTask](plannertask.md) コレクション| 読み取り専用です。Null 許容型。ユーザーに割り当てられている [plannerTasks](plannertask.md) を返します。|
-|favoritePlans|[plannerPlan](plannerplan.md) コレクション| 読み取り専用。 Null 許容型。 ユーザーは、お気に入りとしてマークされている[plannerPlans](plannerplan.md)を返します。|
-|recentPlans|[plannerPlan](plannerplan.md) コレクション| 読み取り専用。 Null 許容型。 最近の計画をサポートするアプリケーションでユーザーが最近表示した[plannerPlans](plannerplan.md)を返します。 |
+|favoritePlans|[plannerPlan](plannerplan.md) コレクション| 読み取り専用です。 Null 許容型。 ユーザーは、お気に入りとしてマークされている[plannerPlans](plannerplan.md)を返します。|
+|recentPlans|[plannerPlan](plannerplan.md) コレクション| 読み取り専用です。 Null 許容型。 最近の計画をサポートするアプリケーションでユーザーが最近表示した[plannerPlans](plannerplan.md)を返します。 |
 
 ## <a name="json-representation"></a>JSON 表記
 リソースの JSON 表記を次に示します。

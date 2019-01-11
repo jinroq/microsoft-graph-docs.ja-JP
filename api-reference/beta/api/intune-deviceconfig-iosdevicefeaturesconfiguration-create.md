@@ -2,12 +2,13 @@
 title: iosDeviceFeaturesConfiguration の作成
 description: 新しい iosDeviceFeaturesConfiguration オブジェクトを作成します。
 author: tfitzmac
-ms.openlocfilehash: dcb9819505cf429f6217dc375fcbd0c3366dee89
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 8d96751ea1c0558d23a6d63741b3e1d7d60580ed
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27310886"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27817207"
 ---
 # <a name="create-iosdevicefeaturesconfiguration"></a>iosDeviceFeaturesConfiguration の作成
 

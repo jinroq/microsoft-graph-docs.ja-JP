@@ -1,12 +1,13 @@
 ---
 title: referencedObject リソースの種類
 description: 同じディレクトリの定義で定義されている別のオブジェクトへの参照について説明します。
-ms.openlocfilehash: 63645048fd8ba6ad949da43baa261b2842ea4016
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 5a2aa2dcc358c856c18ea2ce9871ec634194ce54
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27073705"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27821036"
 ---
 # <a name="referencedobject-resource-type"></a>referencedObject リソースの種類
 
@@ -16,7 +17,7 @@ ms.locfileid: "27073705"
 
 ## <a name="properties"></a>プロパティ
 
-| プロパティ                   | 型                      | 説明    |
+| プロパティ                   | 種類                      | 説明    |
 |:---------------------------|:--------------------------|:---------------|
 |referencedObjectName        |String                     |参照先オブジェクトの名前です。 [ディレクトリの定義](synchronization-directorydefinition.md)内のオブジェクトのいずれかに一致する必要があります。|
 |referencedProperty          |String                     |**サポートされていません**。 対象の値が、参照として使用されるが、参照されるオブジェクトのプロパティの名前です。|

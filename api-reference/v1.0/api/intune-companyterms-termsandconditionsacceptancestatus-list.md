@@ -2,12 +2,13 @@
 title: termsAndConditionsAcceptanceStatuses のリスト
 description: termsAndConditionsAcceptanceStatus オブジェクトのプロパティとリレーションシップをリストします。
 author: tfitzmac
-ms.openlocfilehash: c32cbde73a27ce88fdb6049cf2e3aacf869b1bdd
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 50056f192fb91fb6b2f6922824ab35a5138f5fd7
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27321113"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27816920"
 ---
 # <a name="list-termsandconditionsacceptancestatuses"></a>termsAndConditionsAcceptanceStatuses のリスト
 

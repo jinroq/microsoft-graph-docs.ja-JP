@@ -2,12 +2,13 @@
 title: DeviceConfigurationGroupAssignment を更新します。
 description: DeviceConfigurationGroupAssignment オブジェクトのプロパティを更新します。
 author: tfitzmac
-ms.openlocfilehash: 7ea879c7d267337a247455235f069206b7b3b2a0
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 4742cfb5fb61b94eda6b299927160d0e51f6ab98
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27313882"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27822991"
 ---
 # <a name="update-deviceconfigurationgroupassignment"></a>DeviceConfigurationGroupAssignment を更新します。
 

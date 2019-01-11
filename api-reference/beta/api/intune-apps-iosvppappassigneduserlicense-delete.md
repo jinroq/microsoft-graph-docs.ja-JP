@@ -2,12 +2,13 @@
 title: IosVppAppAssignedUserLicense を削除します。
 description: IosVppAppAssignedUserLicense を削除します。
 author: tfitzmac
-ms.openlocfilehash: 57f736c4d5aaebbfdc9d7efbc1b9a1e394eacc81
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 030a888f7ffda5453b242fd69670d5c4608e0800
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27341819"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27818496"
 ---
 # <a name="delete-iosvppappassigneduserlicense"></a>IosVppAppAssignedUserLicense を削除します。
 

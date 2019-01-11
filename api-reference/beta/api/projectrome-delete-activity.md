@@ -1,12 +1,13 @@
 ---
 title: アクティビティを削除する
 description: アプリの既存のユーザーのアクティビティを削除します。
-ms.openlocfilehash: 9cdd52a2d3f417828e63107465dc28a4791a02e1
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 92b927dbb568221003fdaff108640cf24520d182
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27071181"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27819552"
 ---
 # <a name="delete-an-activity"></a>アクティビティを削除する
 
@@ -35,7 +36,7 @@ DELETE /me/activities/{id}
 
 ## <a name="request-headers"></a>要求ヘッダー
 
-|名前 | 型 | 説明|
+|名前 | 種類 | 説明|
 |:----|:-----|:-----------|
 |Authorization | string | ベアラー {トークン}。必須。|
 

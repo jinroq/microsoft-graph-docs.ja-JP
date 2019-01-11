@@ -3,12 +3,13 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/11/2017
 title: TextColumn
-ms.openlocfilehash: 5ff280b6c969d9832e2f81f77dc32237f9905aad
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 87a5e27544a49613d1d1e44cd6f3e0e3b7fcf8c4
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27069970"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27822569"
 ---
 # <a name="textcolumn-resource-type"></a>TableColumn リソースの種類
 
@@ -33,7 +34,7 @@ ms.locfileid: "27069970"
 
 ## <a name="properties"></a>プロパティ
 
-| プロパティ名                   | 型   | 説明
+| プロパティ名                   | Type   | 説明
 |:--------------------------------|:-------|:-----------------------------------------------
 | **allowMultipleLines**          | 文字列 | 複数行のテキストを許可するかどうか。
 | **appendChangesToExistingText** | 文字列 | この列への更新が既存のテキストを置き換えるか、または追加するか。

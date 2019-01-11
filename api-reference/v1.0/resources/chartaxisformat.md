@@ -2,12 +2,13 @@
 title: ChartAxisFormat リソースの種類
 description: グラフ軸の書式設定プロパティをカプセル化します。
 author: lumine2008
-ms.openlocfilehash: e503b4e62ef7907943f10a395f12eb5d86c1928f
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: a219122141da1f384279d0ff4c612f62226612c9
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27359459"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27821267"
 ---
 # <a name="chartaxisformat-resource-type"></a>ChartAxisFormat リソースの種類
 
@@ -23,7 +24,7 @@ ms.locfileid: "27359459"
 | リレーションシップ | 型   |説明|
 |:---------------|:--------|:----------|
 |font|[WorkbookChartFont](chartfont.md)|グラフ軸要素のフォント属性 (フォント名、フォント サイズ、色など) を表します。値の取得のみ可能です。|
-|line|[WorkbookChartLineFormat](chartlineformat.md)|グラフの線の書式設定を表します。値の取得のみ可能です。|
+|line|[WorkbookChartLineFormat](chartlineformat.md)|グラフの線の書式設定を表します。読み取り専用。|
 
 
 ## <a name="json-representation"></a>JSON 表記

@@ -1,12 +1,13 @@
 ---
 title: エンドポイントを取得します。
 description: プロパティと、特定のエンドポイント オブジェクトの関係を取得します。
-ms.openlocfilehash: fe5e820f18a22762436d8558d501d0250a090aa5
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 77ad5716e8e30a16f95bf62593a6530d5e759861
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27067629"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27820448"
 ---
 # <a name="get-endpoint"></a>エンドポイントを取得します。
 

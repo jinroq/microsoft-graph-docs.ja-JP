@@ -2,12 +2,13 @@
 title: AndroidManagedStoreAppConfiguration を削除します。
 description: AndroidManagedStoreAppConfiguration を削除します。
 author: tfitzmac
-ms.openlocfilehash: a874f3cca2e596f79fd4d30b54c531b9049a702f
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 224b45e4fac0c8b235eaea2ed304fb9df46aba95
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27309143"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27818110"
 ---
 # <a name="delete-androidmanagedstoreappconfiguration"></a>AndroidManagedStoreAppConfiguration を削除します。
 

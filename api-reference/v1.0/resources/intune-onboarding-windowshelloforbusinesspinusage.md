@@ -2,12 +2,13 @@
 title: windowsHelloForBusinessPinUsage 列挙型
 description: Windows Hello ビジネス暗証番号 (pin) の使用方法のオプションについて
 author: tfitzmac
-ms.openlocfilehash: 91581880adbdb4074af7ecfd25f7e2e7387b60eb
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: fd01d4213f28cda0e0a9d1baaa279f4daae659a8
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27336758"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27819895"
 ---
 # <a name="windowshelloforbusinesspinusage-enum-type"></a>windowsHelloForBusinessPinUsage 列挙型
 

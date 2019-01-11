@@ -2,12 +2,13 @@
 title: IosPkcsCertificateProfile を更新します。
 description: IosPkcsCertificateProfile オブジェクトのプロパティを更新します。
 author: tfitzmac
-ms.openlocfilehash: 9e8c7958ab2bb1fddf8562bf7f2b8c64a4d6ffe5
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 1cd5426ad8d07984ff25209326d613add09cc000
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27363726"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27817802"
 ---
 # <a name="update-iospkcscertificateprofile"></a>IosPkcsCertificateProfile を更新します。
 

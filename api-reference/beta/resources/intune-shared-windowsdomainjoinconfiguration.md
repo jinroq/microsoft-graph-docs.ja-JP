@@ -2,12 +2,13 @@
 title: windowsDomainJoinConfiguration リソースの種類
 description: デバイス構成の Windows ドメインに参加します。
 author: tfitzmac
-ms.openlocfilehash: 545c69864c2f325fcf6817941191872746304abc
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 53a3eab41ead346329849be5163452eb9287d94a
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27349358"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27823171"
 ---
 # <a name="windowsdomainjoinconfiguration-resource-type"></a>windowsDomainJoinConfiguration リソースの種類
 
@@ -28,7 +29,7 @@ ms.locfileid: "27349358"
 |[WindowsDomainJoinConfiguration を削除します。](../api/intune-shared-windowsdomainjoinconfiguration-delete.md)|なし|の[windowsDomainJoinConfiguration](../resources/intune-shared-windowsdomainjoinconfiguration.md)を削除します。|[WindowsDomainJoinConfiguration](../resources/intune-shared-windowsdomainjoinconfiguration.md)オブジェクトを削除します。|
 |[WindowsDomainJoinConfiguration を更新します。](../api/intune-shared-windowsdomainjoinconfiguration-update.md)|[windowsDomainJoinConfiguration](../resources/intune-shared-windowsdomainjoinconfiguration.md)|[WindowsDomainJoinConfiguration](../resources/intune-shared-windowsdomainjoinconfiguration.md)オブジェクトのプロパティを更新します。|
 
-## <a name="properties"></a>Properties
+## <a name="properties"></a>プロパティ
 |プロパティ|種類|説明|
 |:---|:---|:---|
 |ID|String|エンティティのキー。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|

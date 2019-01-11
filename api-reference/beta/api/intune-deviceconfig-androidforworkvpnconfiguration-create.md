@@ -2,12 +2,13 @@
 title: AndroidForWorkVpnConfiguration を作成します。
 description: 新しい androidForWorkVpnConfiguration オブジェクトを作成します。
 author: tfitzmac
-ms.openlocfilehash: 1ce7a4a5916a0c815a53994362636fe577310682
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 0e1e6b8bc7374ae6218434dc7b00d7bcd8b8d5c7
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27358003"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27812713"
 ---
 # <a name="create-androidforworkvpnconfiguration"></a>AndroidForWorkVpnConfiguration を作成します。
 

@@ -2,12 +2,13 @@
 title: windows10ImportedPFXCertificateProfile リソースの種類
 description: 10 デスクトップとモバイルの PFX のインポートの証明書プロファイル
 author: tfitzmac
-ms.openlocfilehash: 3fa2fd0824bd8ee9497d61222dd388a6c14543e4
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: cfbf7ae4e82ec1e673608d8e6bb40a201785a576
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27324797"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27820721"
 ---
 # <a name="windows10importedpfxcertificateprofile-resource-type"></a>windows10ImportedPFXCertificateProfile リソースの種類
 
@@ -28,7 +29,7 @@ ms.locfileid: "27324797"
 |[Windows10ImportedPFXCertificateProfile を削除します。](../api/intune-deviceconfig-windows10importedpfxcertificateprofile-delete.md)|なし|の[windows10ImportedPFXCertificateProfile](../resources/intune-deviceconfig-windows10importedpfxcertificateprofile.md)を削除します。|
 |[Windows10ImportedPFXCertificateProfile を更新します。](../api/intune-deviceconfig-windows10importedpfxcertificateprofile-update.md)|[windows10ImportedPFXCertificateProfile](../resources/intune-deviceconfig-windows10importedpfxcertificateprofile.md)|[Windows10ImportedPFXCertificateProfile](../resources/intune-deviceconfig-windows10importedpfxcertificateprofile.md)オブジェクトのプロパティを更新します。|
 
-## <a name="properties"></a>Properties
+## <a name="properties"></a>プロパティ
 |プロパティ|種類|説明|
 |:---|:---|:---|
 |ID|String|エンティティのキー。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|

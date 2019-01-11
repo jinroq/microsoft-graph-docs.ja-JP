@@ -1,12 +1,13 @@
 ---
 title: SynchronizationTemplate を作成します。
 description: 特定のアプリケーション用の新しい同期テンプレートを作成します。
-ms.openlocfilehash: 1c7bc08eee4088796123d3c7fa2cac5c83becac2
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 5b52c2ef180781faf8c93ce335d5f22ca8ae57cd
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27068424"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27822702"
 ---
 # <a name="create-synchronizationtemplate"></a>SynchronizationTemplate を作成します。
 
@@ -31,7 +32,7 @@ POST /applications/{id}/synchronization/templates/
 
 ## <a name="request-headers"></a>要求ヘッダー
 
-| 名前           | 型    | 説明|
+| 名前           | 種類    | 説明|
 |:---------------|:--------|:-----------|
 | Authorization  | string  | ベアラー {トークン}。必須。 |
 

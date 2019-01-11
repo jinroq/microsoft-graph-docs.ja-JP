@@ -2,12 +2,13 @@
 title: mobileAppInstallSummary リソースの種類
 description: モバイル アプリケーションのインストールの概要のプロパティが含まれています。
 author: tfitzmac
-ms.openlocfilehash: d998e0fe5b136afe7aa18741c5c91fcde9adcc37
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 3b730f73b8a86c8acba531ab0d30a67b2f8e7a7f
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27314785"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27820357"
 ---
 # <a name="mobileappinstallsummary-resource-type"></a>mobileAppInstallSummary リソースの種類
 
@@ -22,7 +23,7 @@ ms.locfileid: "27314785"
 |[MobileAppInstallSummary を取得します。](../api/intune-apps-mobileappinstallsummary-get.md)|[mobileAppInstallSummary](../resources/intune-apps-mobileappinstallsummary.md)|[MobileAppInstallSummary](../resources/intune-apps-mobileappinstallsummary.md)オブジェクトのプロパティと関係を参照してください。|
 |[MobileAppInstallSummary を更新します。](../api/intune-apps-mobileappinstallsummary-update.md)|[mobileAppInstallSummary](../resources/intune-apps-mobileappinstallsummary.md)|[MobileAppInstallSummary](../resources/intune-apps-mobileappinstallsummary.md)オブジェクトのプロパティを更新します。|
 
-## <a name="properties"></a>Properties
+## <a name="properties"></a>プロパティ
 |プロパティ|種類|説明|
 |:---|:---|:---|
 |ID|String|エンティティのキー。|

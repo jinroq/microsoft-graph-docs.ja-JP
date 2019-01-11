@@ -2,12 +2,13 @@
 title: windows10AppsUpdateRecurrence 列挙型
 description: Windows10 の定期的な予定のアプリケーションに使用できる値を更新します。
 author: tfitzmac
-ms.openlocfilehash: 940c5ad7affc6b46288942b5d307c0f0dbfece7f
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 447b8334b9db65d37a61278d7ada8b241fbcb576
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27324305"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27821547"
 ---
 # <a name="windows10appsupdaterecurrence-enum-type"></a>windows10AppsUpdateRecurrence 列挙型
 

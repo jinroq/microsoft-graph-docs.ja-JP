@@ -2,12 +2,13 @@
 title: WindowsManagedDevice を更新します。
 description: WindowsManagedDevice オブジェクトのプロパティを更新します。
 author: tfitzmac
-ms.openlocfilehash: d1aa637a513d45ad33a1a5990399cf35f4cb21ae
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 7cef925cc73e28aabe15c29f28676f7c3adfc338
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27347636"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27822730"
 ---
 # <a name="update-windowsmanageddevice"></a>WindowsManagedDevice を更新します。
 

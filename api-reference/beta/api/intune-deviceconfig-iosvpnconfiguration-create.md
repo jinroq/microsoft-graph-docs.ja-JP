@@ -2,12 +2,13 @@
 title: IosVpnConfiguration を作成します。
 description: 新しい iosVpnConfiguration オブジェクトを作成します。
 author: tfitzmac
-ms.openlocfilehash: 12ad6f742f465eeaac7cd0f6dc36fe4c5548e73a
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 9276c36cdc281c7b535ef71e97a407b7848655ec
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27326993"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27819126"
 ---
 # <a name="create-iosvpnconfiguration"></a>IosVpnConfiguration を作成します。
 

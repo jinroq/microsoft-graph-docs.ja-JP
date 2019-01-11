@@ -2,12 +2,13 @@
 title: AndroidForWorkWiFiConfiguration を取得します。
 description: AndroidForWorkWiFiConfiguration オブジェクトのプロパティと関係を参照してください。
 author: tfitzmac
-ms.openlocfilehash: f6967da5049b4765f21996d48f839c20f014b83c
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 15bc2dfa8e60201e2f6feb4fef78fb53d3ce2ac2
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27327014"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27817369"
 ---
 # <a name="get-androidforworkwificonfiguration"></a>AndroidForWorkWiFiConfiguration を取得します。
 

@@ -2,12 +2,13 @@
 title: リスト deviceManagementScriptUserStates
 description: DeviceManagementScriptUserState オブジェクトのプロパティと関係を一覧表示します。
 author: tfitzmac
-ms.openlocfilehash: 8ddf98dc30a71aab2b3efbc4946123e4891954ba
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 1db0da2994d490410b6d0d36d62d6cfad8ca0ec6
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27355454"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27822513"
 ---
 # <a name="list-devicemanagementscriptuserstates"></a>リスト deviceManagementScriptUserStates
 

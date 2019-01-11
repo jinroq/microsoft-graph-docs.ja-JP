@@ -1,12 +1,13 @@
 ---
 title: plannerExternalReference リソースの種類
 description: '**PlannerExternalReference**リソース (ファイル、URL などの添付ファイル) の参照のメタデータを表します。 ExternalReferences オブジェクトのプロパティと値のペアの値です。'
-ms.openlocfilehash: a9d53b487fd2ca6584af934c55388ee66b2071d2
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 696cc61b17776382aa0963d2d6d92f558f033bf1
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27020606"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27821309"
 ---
 # <a name="plannerexternalreference-resource-type"></a>plannerExternalReference リソースの種類
 
@@ -15,7 +16,7 @@ ms.locfileid: "27020606"
 
 
 ## <a name="properties"></a>プロパティ
-| プロパティ     | 型   |説明|
+| プロパティ     | 種類   |説明|
 |:---------------|:--------|:----------|
 |alias|String|参照を記述するエイリアス名。|
 |lastModifiedBy|[identitySet](identityset.md)|読み取り専用です。これを最後に変更したユーザーの ID。|

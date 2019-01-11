@@ -2,12 +2,13 @@
 title: userInstallStateSummary の更新
 description: userInstallStateSummary オブジェクトのプロパティを更新します。
 author: tfitzmac
-ms.openlocfilehash: ead5cbb33e8a03f12ac94c256b67d12a08575d5f
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: cb1a7b16b8b859284b41b35e2e2f1eaafd045c7f
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27303046"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27812167"
 ---
 # <a name="update-userinstallstatesummary"></a>userInstallStateSummary の更新
 

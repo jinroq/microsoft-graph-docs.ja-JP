@@ -2,12 +2,13 @@
 title: androidStoreApp の更新
 description: androidStoreApp オブジェクトのプロパティを更新します。
 author: tfitzmac
-ms.openlocfilehash: 3bb27d6ae14dfdde671ddc799e32b8d2ae66982e
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 8cd9efebe6d7a68c2b0e023e17e881850e01843f
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27330941"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27818838"
 ---
 # <a name="update-androidstoreapp"></a>androidStoreApp の更新
 

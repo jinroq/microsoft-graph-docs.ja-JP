@@ -2,12 +2,13 @@
 title: managedDeviceMobileAppConfigurations のリスト
 description: managedDeviceMobileAppConfiguration オブジェクトのプロパティとリレーションシップをリストします。
 author: tfitzmac
-ms.openlocfilehash: f13edaf3b3281b0a91440452ff9852c23dc142e5
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 070ef484155083b61701999d79e986fe4b180a4e
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27306126"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27822534"
 ---
 # <a name="list-manageddevicemobileappconfigurations"></a>managedDeviceMobileAppConfigurations のリスト
 

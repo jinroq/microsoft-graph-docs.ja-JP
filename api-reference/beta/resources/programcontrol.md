@@ -1,12 +1,13 @@
 ---
 title: デバッギングのリソースの種類
 description: Azure AD にアクセスが機能を確認、プログラムのコントロール オブジェクトは、アクセス確認をプログラムにリンクするコントロールを表します。
-ms.openlocfilehash: 03e70ffdf0607eeb11abaf1b12065b4092294d23
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: ddf6e978277ca1801f9126597ac4b3561fe5bfb7
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27069482"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27817823"
 ---
 # <a name="programcontrol-resource-type"></a>デバッギングのリソースの種類
 
@@ -32,7 +33,7 @@ Azure AD[アクセスの確認](accessreviews-root.md)機能では、プログ�
 |アプリケーション                            | サポートされていません。 |
 
 ## <a name="properties"></a>プロパティ
-| プロパティ     | 型   |説明|
+| プロパティ     | 種類   |説明|
 |:---------------|:--------|:----------|
 | `id`                     |`String`                | プログラムとコントロール間のリンクの機能に割り当てられた識別子                                      |
 | `programId`              |`String`                | プログラムの programId このコントロールは、一部です。 必要なを作成します。                            |
@@ -89,7 +90,7 @@ Azure AD[アクセスの確認](accessreviews-root.md)機能では、プログ�
 
 このタイプから継承`microsoft.graph.identity`があり、1 つの追加のプロパティ。
 
-| プロパティ     | 型   |説明|
+| プロパティ     | 種類   |説明|
 |:---------------|:--------|:----------|
 | `type`               |`String`  | グループ、またはアプリケーションがあるかどうかを示す、リソースの種類です。 |     
 

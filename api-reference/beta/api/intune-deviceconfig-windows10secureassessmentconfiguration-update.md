@@ -2,12 +2,13 @@
 title: windows10SecureAssessmentConfiguration の更新
 description: windows10SecureAssessmentConfiguration オブジェクトのプロパティを更新します。
 author: tfitzmac
-ms.openlocfilehash: 903a5f16f35456aecc6285f87f371a73ebee25ae
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: ae56b06f333b4d172a024f745258afb5ff710011
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27304992"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27817095"
 ---
 # <a name="update-windows10secureassessmentconfiguration"></a>windows10SecureAssessmentConfiguration の更新
 

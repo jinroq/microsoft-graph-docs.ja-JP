@@ -2,12 +2,13 @@
 title: SymantecCodeSigningCertificate を取得します。
 description: SymantecCodeSigningCertificate オブジェクトのプロパティと関係を参照してください。
 author: tfitzmac
-ms.openlocfilehash: 76e965e3f8281bcfc8dab5a56e7f9a7491a31574
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 4ec92d04b65d10dec1ec8cb91aaae01e3323e197
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27361286"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27819318"
 ---
 # <a name="get-symanteccodesigningcertificate"></a>SymantecCodeSigningCertificate を取得します。
 

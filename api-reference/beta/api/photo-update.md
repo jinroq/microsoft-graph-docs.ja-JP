@@ -1,12 +1,13 @@
 ---
 title: 写真を更新する
 description: 写真オブジェクトのプロパティを更新します。
-ms.openlocfilehash: 8071c9e331f9af72c9a288239206f396d9ad3fcb
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 56a8d892ae92f92f5103dc3d88a2f95a5bbb262b
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27066754"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27818383"
 ---
 # <a name="update-photo"></a>写真を更新する
 
@@ -31,14 +32,14 @@ PATCH /drive/root/createdByUser/photo
 ```
 
 ## <a name="request-headers"></a>要求ヘッダー
-| 名前       | 型 | 説明|
+| 名前       | 種類 | 説明|
 |:-----------|:------|:----------|
 | Authorization  | string  | ベアラー {トークン}。必須。 |
 
 ## <a name="request-body"></a>要求本文
 要求本文で、更新する関連フィールドの値を指定します。要求本文に含まれない既存のプロパティは、以前の値のままになるか、他のプロパティ値の変化に基づいて再計算されます。最適なパフォーマンスを得るためには、変更されていない既存の値を含めないでください。
 
-| プロパティ     | 型   |説明|
+| プロパティ     | 種類   |説明|
 |:---------------|:--------|:----------|
 
 ## <a name="response"></a>応答

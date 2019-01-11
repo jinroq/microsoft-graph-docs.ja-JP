@@ -1,14 +1,15 @@
 ---
-title: SecureScoreControlProfiles を更新します。
+title: secureScoreControlProfiles の更新
 description: " > **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。"
-ms.openlocfilehash: afbfcd1889c55dd53241ff8d796bb3ab492b2acf
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: b89a5e147d4882dbe25456cd2acc42b56924d12b
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27066470"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27817655"
 ---
-# <a name="update-securescorecontrolprofiles"></a>SecureScoreControlProfiles を更新します。
+# <a name="update-securescorecontrolprofiles"></a>secureScoreControlProfiles の更新
 
  > **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。
 
@@ -43,7 +44,7 @@ PATCH /security/secureScoreControlProfiles/{id}
 
 要求の本文には、更新される関連フィールドの値の JSON の形式を指定します。 SecureScoreControlProfile に更新可能なフィールドを次の表に一覧します。 要求の本文に含まれていない既存のプロパティの値は変更されません。 最適なパフォーマンスを得るために、変更されていない既存の値を含めないでください。
 
-| プロパティ   | 型 |説明|
+| プロパティ   | 種類 |説明|
 |:---------------|:--------|:----------|
 |担当者|String|アナリストのコントロールの名前は、選別、導入、または修復用に割り当てられます。|
 |tenantNote|String|(顧客管理) のコントロールのアナリストのコメントです。|

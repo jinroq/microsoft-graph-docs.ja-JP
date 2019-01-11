@@ -2,12 +2,13 @@
 title: AndroidWorkProfileGmailEasConfiguration を作成します。
 description: 新しい androidWorkProfileGmailEasConfiguration オブジェクトを作成します。
 author: tfitzmac
-ms.openlocfilehash: 867cd1bf2679746ca3b8e6da01062b9338ec78fa
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 9e39d9df8edabceb782f400b99b6147e93736928
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27360775"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27817494"
 ---
 # <a name="create-androidworkprofilegmaileasconfiguration"></a>AndroidWorkProfileGmailEasConfiguration を作成します。
 

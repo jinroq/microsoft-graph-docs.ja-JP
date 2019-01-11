@@ -2,12 +2,13 @@
 title: EnrollmentProfile を更新します。
 description: EnrollmentProfile オブジェクトのプロパティを更新します。
 author: tfitzmac
-ms.openlocfilehash: 1f268d07e3636682d77edb238c59e2acaa7ec7d2
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 9a5628ad6aff7926d4248e76e5203a9419fc1727
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27308317"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27822597"
 ---
 # <a name="update-enrollmentprofile"></a>EnrollmentProfile を更新します。
 

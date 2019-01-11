@@ -2,12 +2,13 @@
 title: IosScepCertificateProfile を取得します。
 description: IosScepCertificateProfile オブジェクトのプロパティと関係を参照してください。
 author: tfitzmac
-ms.openlocfilehash: a038f619ac9f5cf6d12b3f2506a83a5e07a827d0
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 271daaa6b8845d37746309d0e0afea85d236964b
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27332964"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27823241"
 ---
 # <a name="get-iosscepcertificateprofile"></a>IosScepCertificateProfile を取得します。
 

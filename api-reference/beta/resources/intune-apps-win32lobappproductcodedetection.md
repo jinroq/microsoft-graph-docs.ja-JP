@@ -2,12 +2,13 @@
 title: win32LobAppProductCodeDetection リソースの種類
 description: Win32 アプリケーションを検出するために製品コードとバージョンのプロパティが含まれています
 author: tfitzmac
-ms.openlocfilehash: d66dab5a43a11c480e0e30f70eb8aecbe47e1fa7
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: a3a461661d2b2a37cd7f4e9a37561ea682ea0e0f
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27353985"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27812468"
 ---
 # <a name="win32lobappproductcodedetection-resource-type"></a>win32LobAppProductCodeDetection リソースの種類
 
@@ -19,7 +20,7 @@ Win32 アプリケーションを検出するために製品コードとバー�
 
 [Win32LobAppDetection](../resources/intune-apps-win32lobappdetection.md)から継承します。
 
-## <a name="properties"></a>Properties
+## <a name="properties"></a>プロパティ
 |プロパティ|種類|説明|
 |:---|:---|:---|
 |productCode|String|Win32 基幹業務 (LoB) アプリケーションの製品コードです。|

@@ -2,12 +2,13 @@
 title: MobileAppInstallSummary を取得します。
 description: MobileAppInstallSummary オブジェクトのプロパティと関係を参照してください。
 author: tfitzmac
-ms.openlocfilehash: 6f44cb4ae473ad8306f2fa3a4e61f93da900b380
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: aaf1d3a0a1c64fb71e336de4e2a9c37142e72b86
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27345802"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27818117"
 ---
 # <a name="get-mobileappinstallsummary"></a>MobileAppInstallSummary を取得します。
 

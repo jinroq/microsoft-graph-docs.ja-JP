@@ -2,12 +2,13 @@
 title: unsupportedDeviceConfiguration リソースの種類
 description: UnsupportedDeviceConfiguration は、deviceConfiguration の別のモデルに準拠したサブタイプにエンティティをマッピングできない場合に使用されます。
 author: tfitzmac
-ms.openlocfilehash: 18ed2926aaf321a39b8f2aa42e6ebf931bb42b3d
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 8f4f61da8dfb38f2cdc958eaf6767ab38e11adf6
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27345305"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27821540"
 ---
 # <a name="unsupporteddeviceconfiguration-resource-type"></a>unsupportedDeviceConfiguration リソースの種類
 
@@ -28,7 +29,7 @@ UnsupportedDeviceConfiguration は、deviceConfiguration の別のモデルに�
 |[UnsupportedDeviceConfiguration を削除します。](../api/intune-deviceconfig-unsupporteddeviceconfiguration-delete.md)|なし|の[unsupportedDeviceConfiguration](../resources/intune-deviceconfig-unsupporteddeviceconfiguration.md)を削除します。|
 |[UnsupportedDeviceConfiguration を更新します。](../api/intune-deviceconfig-unsupporteddeviceconfiguration-update.md)|[unsupportedDeviceConfiguration](../resources/intune-deviceconfig-unsupporteddeviceconfiguration.md)|[UnsupportedDeviceConfiguration](../resources/intune-deviceconfig-unsupporteddeviceconfiguration.md)オブジェクトのプロパティを更新します。|
 
-## <a name="properties"></a>Properties
+## <a name="properties"></a>プロパティ
 |プロパティ|種類|説明|
 |:---|:---|:---|
 |ID|String|エンティティのキー。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|

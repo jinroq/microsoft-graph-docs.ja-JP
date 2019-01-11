@@ -1,12 +1,13 @@
 ---
 title: conditionalAccessPolicy リソースの種類
 description: 対応する記号の活動によってトリガーされる条件付きのアクセス ポリシーまたはポリシーに関連する属性を示します。
-ms.openlocfilehash: 56a06d6b5fcba96dc472eb63fe24ba3920b0dd09
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 7b043e739f84715fb02fbdbd25599e5cfccc284a
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27074208"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27820644"
 ---
 # <a name="conditionalaccesspolicy-resource-type"></a>conditionalAccessPolicy リソースの種類
 対応する記号の活動によってトリガーされる条件付きのアクセス ポリシーまたはポリシーに関連する属性を示します。
@@ -14,7 +15,7 @@ ms.locfileid: "27074208"
 
 
 ## <a name="properties"></a>プロパティ
-| プロパティ     | 型   |説明|
+| プロパティ     | 種類   |説明|
 |:---------------|:--------|:----------|
 |displayName|String|条件付きのアクセス ポリシーの名前 (例:「が必要な MFA の Salesforce」).|
 |enforcedGrantControls|String コレクション|条件付きアクセス ポリシーによって適用される許可のコントロールを参照 (例:「多要素認証を必要とする])。|

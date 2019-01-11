@@ -2,12 +2,13 @@
 title: iosVppEBookAssignment リソースの種類
 description: グループへの iOS VPP 電子ブックの割り当てに使用されるプロパティが含まれています。
 author: tfitzmac
-ms.openlocfilehash: 1383c3370c7074e615d9b95300bbd57d940fc81f
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: d9f366e4f698e4b04911b89a0e65ee9e9ddd8e35
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27314274"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27818327"
 ---
 # <a name="iosvppebookassignment-resource-type"></a>iosVppEBookAssignment リソースの種類
 

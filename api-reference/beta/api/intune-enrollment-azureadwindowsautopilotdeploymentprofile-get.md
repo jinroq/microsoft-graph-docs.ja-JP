@@ -2,12 +2,13 @@
 title: AzureADWindowsAutopilotDeploymentProfile を取得します。
 description: AzureADWindowsAutopilotDeploymentProfile オブジェクトのプロパティと関係を参照してください。
 author: tfitzmac
-ms.openlocfilehash: ac9f1fa8ea4fad943402839645ff61bf8db921f2
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: c01fa71c71b82eca568e6e762a0c43346aba8070
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27338473"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27812384"
 ---
 # <a name="get-azureadwindowsautopilotdeploymentprofile"></a>AzureADWindowsAutopilotDeploymentProfile を取得します。
 

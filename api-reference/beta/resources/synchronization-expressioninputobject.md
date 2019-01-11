@@ -1,12 +1,13 @@
 ---
 title: expressionInputObject リソースの種類
 description: 'テストの入力データとして使用するオブジェクトを表すとき、 [synchronizationSchema: parseExpression](../api/synchronization_synchronizationschema_parseexpression.md)式の評価を実行するアクションです。'
-ms.openlocfilehash: 06b7344f7e6418db0557f2b12dfa7e964b9d5ab7
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: acf0fa5125d863224de6df76d46109b9888f8ddf
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27073332"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27820112"
 ---
 # <a name="expressioninputobject-resource-type"></a>expressionInputObject リソースの種類
 
@@ -15,7 +16,7 @@ ms.locfileid: "27073332"
 テストの入力データとして使用するオブジェクトを表すとき、 [synchronizationSchema: parseExpression](../api/synchronization_synchronizationschema_parseexpression.md)式の評価を実行するアクションです。
 
 ## <a name="properties"></a>プロパティ
-| プロパティ     | 型   |説明|
+| プロパティ     | 種類   |説明|
 |:---------------|:--------|:----------|
 |definition|[objectDefinition](synchronization-objectdefinition.md)|テスト オブジェクトの定義です。|
 |プロパティ|[stringKeyObjectValuePair](synchronization-stringkeyobjectvaluepair.md)コレクション|テスト オブジェクトのプロパティの値です。|

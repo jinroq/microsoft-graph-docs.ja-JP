@@ -2,12 +2,13 @@
 title: AndroidDeviceOwnerGeneralDeviceConfiguration を作成します。
 description: 新しい androidDeviceOwnerGeneralDeviceConfiguration オブジェクトを作成します。
 author: tfitzmac
-ms.openlocfilehash: 404233f1c9eba62021b5ba019a9f3bb049c272c5
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: a7802762fc88e45a434614a8101f4690f8c4bc1a
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27333259"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27812691"
 ---
 # <a name="create-androiddeviceownergeneraldeviceconfiguration"></a>AndroidDeviceOwnerGeneralDeviceConfiguration を作成します。
 

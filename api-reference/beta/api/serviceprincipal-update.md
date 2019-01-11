@@ -1,12 +1,13 @@
 ---
 title: Serviceprincipal を更新します。
 description: Serviceprincipal オブジェクトのプロパティを更新します。
-ms.openlocfilehash: a24a8c949d48f577a3d7fe6208a1422819772801
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: a8d4eebe64ac9c0c658ae9c43e2e92045be67424
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27074002"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27813028"
 ---
 # <a name="update-serviceprincipal"></a>Serviceprincipal を更新します。
 
@@ -28,19 +29,19 @@ Serviceprincipal オブジェクトのプロパティを更新します。
 PATCH /servicePrincipals/{id}
 ```
 ## <a name="request-headers"></a>要求ヘッダー
-| 名前       | 型 | 説明|
+| 名前       | 種類 | 説明|
 |:-----------|:------|:----------|
 | Authorization  | string  | ベアラー {トークン}。必須。 |
 
 ## <a name="request-body"></a>要求本文
 要求本文で、更新する関連フィールドの値を指定します。要求本文に含まれない既存のプロパティは、以前の値のままになるか、他のプロパティ値の変化に基づいて再計算されます。最適なパフォーマンスを得るためには、変更されていない既存の値を含めないでください。
 
-| プロパティ     | 型   |説明|
+| プロパティ     | 種類   |説明|
 |:---------------|:--------|:----------|
-|accountEnabled|Boolean|                **true**サービス プリンシパル アカウントは、有効な場合それ以外の場合、 **false を指定**します。            |
+|accountEnabled|ブール型|                **true**サービス プリンシパル アカウントは、有効な場合それ以外の場合、 **false を指定**します。            |
 |appDisplayName|String|関連付けられたアプリケーションによって公開される表示名です。|
 |appId|文字列型 (String)|関連付けられているアプリケーション (その**appId**プロパティの一意の識別子です。|
-|appRoleAssignmentRequired|Boolean|Azure AD アプリケーションに、ユーザーまたはアクセス トークンの発行は前にユーザーまたはグループに、 **appRoleAssignment**が必要かどうかを指定します。                            **メモ**: バージョン 1.5 が必要ですか、null を許容しません。            |
+|appRoleAssignmentRequired|ブール型|Azure AD アプリケーションに、ユーザーまたはアクセス トークンの発行は前にユーザーまたはグループに、 **appRoleAssignment**が必要かどうかを指定します。                            **メモ**: バージョン 1.5 が必要ですか、null を許容しません。            |
 |appRoles|エンティティ|アプリケーション ロールは、関連付けられたアプリケーションによって公開されています。 詳細についてはアプリケーション エンティティ**のノート**で**appRoles**プロパティの定義を参照してください: バージョン 1.5 が必要ですか、null を許容しません。            |
 |displayName|String|サービス ・ プリンシパルの表示名です。|
 |errorUrl|String|            |

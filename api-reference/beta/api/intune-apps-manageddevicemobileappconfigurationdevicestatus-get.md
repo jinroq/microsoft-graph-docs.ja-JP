@@ -2,12 +2,13 @@
 title: ManagedDeviceMobileAppConfigurationDeviceStatus を取得します。
 description: ManagedDeviceMobileAppConfigurationDeviceStatus オブジェクトのプロパティと関係を参照してください。
 author: tfitzmac
-ms.openlocfilehash: 86a0bcf94cdfb06b3d6c70352983321a8d91a7c9
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: fccf60e5ba74c6d110742e8cea9209735316a247
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27352879"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27818313"
 ---
 # <a name="get-manageddevicemobileappconfigurationdevicestatus"></a>ManagedDeviceMobileAppConfigurationDeviceStatus を取得します。
 

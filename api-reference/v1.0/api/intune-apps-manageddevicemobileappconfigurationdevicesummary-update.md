@@ -2,12 +2,13 @@
 title: managedDeviceMobileAppConfigurationDeviceSummary の更新
 description: managedDeviceMobileAppConfigurationDeviceSummary オブジェクトのプロパティを更新します。
 author: tfitzmac
-ms.openlocfilehash: 35a75cba4d67c23f5c011bfe7e75e23452d4c954
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: ad4845445e59105c1f304e8e90d67d97f153ed5e
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27330185"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27818243"
 ---
 # <a name="update-manageddevicemobileappconfigurationdevicesummary"></a>managedDeviceMobileAppConfigurationDeviceSummary の更新
 

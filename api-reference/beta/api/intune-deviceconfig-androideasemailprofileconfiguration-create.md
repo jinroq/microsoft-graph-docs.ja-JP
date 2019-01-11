@@ -2,12 +2,13 @@
 title: AndroidEasEmailProfileConfiguration を作成します。
 description: 新しい androidEasEmailProfileConfiguration オブジェクトを作成します。
 author: tfitzmac
-ms.openlocfilehash: 38e4e36917ac1679420261746713205f77693b73
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 8b59a1e551aaad0e4ad23c1001ca3fea515333ff
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27361972"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27817781"
 ---
 # <a name="create-androideasemailprofileconfiguration"></a>AndroidEasEmailProfileConfiguration を作成します。
 

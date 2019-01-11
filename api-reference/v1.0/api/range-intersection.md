@@ -2,12 +2,13 @@
 title: 範囲:Intersection
 description: 指定した範囲の長方形の交差を表す範囲オブジェクトを取得します。
 author: lumine2008
-ms.openlocfilehash: e35bf93a07930b34e984df4a84d5ed30b907ea15
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 7f954e377ff051f9063fc210d795b5b6d87981bc
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27309689"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27820350"
 ---
 # <a name="range-intersection"></a>範囲:Intersection
 
@@ -38,9 +39,9 @@ GET /workbook/tables/{id|name}/columns/{id|name}/range/intersection
 ## <a name="request-body"></a>要求本文
 要求本文で、次のパラメーターを含む JSON オブジェクトを指定します。
 
-| パラメーター    | 種類   |説明|
+| パラメーター    | Type   |説明|
 |:---------------|:--------|:----------|
-|anotherRange|string|範囲の交差を判断するために使用される、Range オブジェクトまたは Range アドレス。|
+|anotherRange|文字列|範囲の交差を判断するために使用される、Range オブジェクトまたは Range アドレス。|
 
 ## <a name="response"></a>応答
 

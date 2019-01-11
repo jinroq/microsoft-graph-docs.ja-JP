@@ -1,12 +1,13 @@
 ---
 title: 組織リソースの種類
 description: 'Azure Active Directory のテナント型を表します。 '
-ms.openlocfilehash: 2e9a9a32411164e270e2eb3a8830fa811ba5f9cb
-ms.sourcegitcommit: 6b1ba9b3be038cd6247de54a255bad560034fe42
+localization_priority: Normal
+ms.openlocfilehash: a3912039a5cd51cbe0b170a866d1a2b35a57e924
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "27771829"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27823143"
 ---
 # <a name="organization-resource-type"></a>組織リソースの種類
 
@@ -29,7 +30,7 @@ ms.locfileid: "27771829"
 |[スキーマ拡張機能の値を追加する](/graph/extensibility-schema-groups) || スキーマ拡張機能の定義を作成し、それを使用してカスタマイズされた種類のデータをリソースに追加します。|
 
 ## <a name="properties"></a>プロパティ
-| プロパティ     | 型   |説明|
+| プロパティ     | 種類   |説明|
 |:---------------|:--------|:----------|
 |assignedPlans|[assignedPlan](assignedplan.md) コレクション|テナントに関連付けられているサービス プランのコレクション。null 許容ではありません。            |
 | businessPhones                      | String コレクション                                         | 組織の電話番号です。 **メモ:** 文字列コレクションですが、このプロパティに設定できるのは 1 つの数字のみです。                                                                                            |
@@ -42,7 +43,7 @@ ms.locfileid: "27771829"
 |dirSyncEnabled|Boolean|このオブジェクトがオンプレミスのディレクトリから同期される場合は **true**。このオブジェクトが最初にオンプレミスのディレクトリから同期されていて、今後は同期されない場合は **false**。このオブジェクトがオンプレミスのディレクトリから一度も同期されたことがない場合は **null** (既定値)。|
 |displayName|String|テナントの表示名。|
 |id|String|テナント ID では、組織 (またはテナント) を表す一意の識別子です。 [directoryObject](directoryobject.md) から継承されます。 キー。 null 許容ではありません。 読み取り専用です。|
-|isMultipleDataLocationsForServicesEnabled|Boolean|**true の**場合組織は、複数地域で有効になっています。複数地域が有効な場合は**false**の組織ではありません。**null**(既定値)。 読み取り専用です。 詳細については、[オンラインの複数の地域 OneDrive](https://docs.microsoft.com/sharepoint/dev/solution-guidance/multigeo-introduction)を参照してください。|
+|isMultipleDataLocationsForServicesEnabled|ブール型|**true の**場合組織は、複数地域で有効になっています。複数地域が有効な場合は**false**の組織ではありません。**null**(既定値)。 読み取り専用です。 詳細については、[オンラインの複数の地域 OneDrive](https://docs.microsoft.com/sharepoint/dev/solution-guidance/multigeo-introduction)を参照してください。|
 |marketingNotificationEmails|String コレクション| null 許容ではありません。            |
 |objectType|String|オブジェクトの種類を識別する文字列です。テナントの場合、値は常に「会社」です。 |
 |postalCode|String| 組織の住所の郵便番号 |

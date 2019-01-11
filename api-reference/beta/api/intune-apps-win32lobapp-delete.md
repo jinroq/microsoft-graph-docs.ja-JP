@@ -2,12 +2,13 @@
 title: Win32LobApp を削除します。
 description: Win32LobApp を削除します。
 author: tfitzmac
-ms.openlocfilehash: a5bd43c7196ddd8aa9bf769878eddbda69582415
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 83596e3118fb53e4d70c3c23dea60ebca7ef7fe1
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27356449"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27818355"
 ---
 # <a name="delete-win32lobapp"></a>Win32LobApp を削除します。
 

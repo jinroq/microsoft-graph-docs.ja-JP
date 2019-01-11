@@ -1,12 +1,13 @@
 ---
 title: convertIdResult リソースの種類
 description: TranslateExchangeIds 関数によって実行される ID 形式変換の結果です。
-ms.openlocfilehash: 3a17399ffe44c43c78f7b50933b2e847a3e64f32
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 7e1878de3d3b7ddee36d799c928d6a130b578200
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27067806"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27821456"
 ---
 # <a name="convertidresult-resource-type"></a>convertIdResult リソースの種類
 
@@ -16,7 +17,7 @@ ms.locfileid: "27067806"
 
 ## <a name="properties"></a>プロパティ
 
-| プロパティ | 型 | 説明 |
+| プロパティ | 種類 | 説明 |
 |:---------|:-----|:------------|
 | sourceId | String | 変換された識別子です。 この値は、元、変換されていない識別子です。 |
 | targetId | String | 変換後の識別子です。 この値は、変換が失敗した場合ではありません。 |

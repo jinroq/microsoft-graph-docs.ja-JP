@@ -2,12 +2,13 @@
 title: WindowsPhone81AppX を更新します。
 description: WindowsPhone81AppX オブジェクトのプロパティを更新します。
 author: tfitzmac
-ms.openlocfilehash: 7ebd110bd76797682ebd9a53b72e661e9e71d583
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 2d7f295c5d2e6441c550b74c316f598d7c1ffed1
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27321617"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27823262"
 ---
 # <a name="update-windowsphone81appx"></a>WindowsPhone81AppX を更新します。
 

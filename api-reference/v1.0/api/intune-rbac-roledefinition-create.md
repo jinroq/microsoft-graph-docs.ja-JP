@@ -2,12 +2,13 @@
 title: roleDefinition の作成
 description: 新しい roleDefinition オブジェクトを作成します。
 author: tfitzmac
-ms.openlocfilehash: 0ad52c78b6b414fc0419078cd44bcbca2b82ed83
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 87bbcab49645f8ea98b778bc5fcbb81e84e45caa
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27322401"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27819923"
 ---
 # <a name="create-roledefinition"></a>roleDefinition の作成
 

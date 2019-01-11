@@ -1,12 +1,14 @@
 ---
 title: テーブル リソースの種類
 description: Excel の表を表します。
-ms.openlocfilehash: 029f2477570b6ad1c85f6c92d64fd25d3ae8dac0
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lumine2008
+localization_priority: Priority
+ms.openlocfilehash: ad5bb13960dba1308553b8162c13795e477adce6
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27022441"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27820035"
 ---
 # <a name="table-resource-type"></a>テーブル リソースの種類
 
@@ -35,7 +37,7 @@ Excel の表を表します。
 |[Add](../api/tablecollection-add.md)|[WorkbookTable](table.md)|新しいテーブルを作成します。範囲のソース アドレスにより、テーブルが追加されるワークシートが判断されます。テーブルが追加できない場合 (たとえば、アドレスが無効な場合や、テーブルが別のテーブルと重複している場合) は、エラーがスローされます。|
 
 ## <a name="properties"></a>プロパティ
-| プロパティ     | 型   |説明|
+| プロパティ     | 種類   |説明|
 |:---------------|:--------|:----------|
 |ID|文字列|指定されたブックのテーブルを一意に識別する値を返します。 識別子の値は、テーブルの名前が変更された場合も変わりません。 このプロパティは符号化文字列値として解釈し、その他の型に解析すべきではありません。 読み取り専用。|
 |name|文字列|テーブルの名前。|
@@ -55,7 +57,7 @@ Excel の表を表します。
 |columns|[WorkbookTableColumn](tablecolumn.md)コレクション|テーブルに含まれるすべての列のコレクションを表します。読み取り専用です。|
 |rows|[WorkbookTableRow](tablerow.md)コレクション|テーブルに含まれるすべての行のコレクションを表します。読み取り専用です。|
 |sort|[WorkbookTableSort](tablesort.md)|テーブル内の並べ替えを表します。読み取り専用。|
-|ワークシート|[WorkbookWorksheet](worksheet.md)|現在のテーブルを含んでいるワークシート。読み取り専用です。|
+|worksheet|[WorkbookWorksheet](worksheet.md)|現在のテーブルを含んでいるワークシート。読み取り専用です。|
 
 ## <a name="json-representation"></a>JSON 表記
 

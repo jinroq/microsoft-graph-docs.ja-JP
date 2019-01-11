@@ -2,12 +2,13 @@
 title: DefaultDeviceCompliancePolicy を取得します。
 description: DefaultDeviceCompliancePolicy オブジェクトのプロパティと関係を参照してください。
 author: tfitzmac
-ms.openlocfilehash: 9d25f9074475f627d88449917fbe1615a0880119
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 0a50151857a5acdbbf34ccb0d8cc7b2386bbd162
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27318222"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27817151"
 ---
 # <a name="get-defaultdevicecompliancepolicy"></a>DefaultDeviceCompliancePolicy を取得します。
 

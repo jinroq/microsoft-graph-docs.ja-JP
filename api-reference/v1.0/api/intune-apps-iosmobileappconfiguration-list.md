@@ -2,12 +2,13 @@
 title: iosMobileAppConfiguration のリスト
 description: iosMobileAppConfiguration オブジェクトのプロパティとリレーションシップのリストを作成します。
 author: tfitzmac
-ms.openlocfilehash: ecf23edce97954f0c6305e9a49503b857479728a
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 4af324de29c6ecaceb6a2f13da86d8337a008cdd
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27302241"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27822331"
 ---
 # <a name="list-iosmobileappconfigurations"></a>iosMobileAppConfiguration のリスト
 

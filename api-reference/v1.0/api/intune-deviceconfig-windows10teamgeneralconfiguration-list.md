@@ -2,12 +2,13 @@
 title: windows10TeamGeneralConfigurations のリスト
 description: windows10TeamGeneralConfiguration オブジェクトのプロパティとリレーションシップをリストします。
 author: tfitzmac
-ms.openlocfilehash: bd438432e5d7cfc97ddd4945e3c2c7ab27d2c9c0
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: daccb2e813e1283f51d8b69070c6f43eba5fa500
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27329898"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27821197"
 ---
 # <a name="list-windows10teamgeneralconfigurations"></a>windows10TeamGeneralConfigurations のリスト
 

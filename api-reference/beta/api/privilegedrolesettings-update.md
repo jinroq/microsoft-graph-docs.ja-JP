@@ -1,12 +1,13 @@
 ---
 title: PrivilegedRoleSettings を更新します。
 description: 役割の設定を特定の役割の設定を更新します。 PrivilegedRoleSettings オブジェクトが返されます。
-ms.openlocfilehash: 0e0f6b7253a1c1d8570c0b91fac4b08bbd39dfff
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 7c117abfe774eae60e42dcbc5f748c10cacf5cd6
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27073710"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27819321"
 ---
 # <a name="update-privilegedrolesettings"></a>PrivilegedRoleSettings を更新します。
 
@@ -41,18 +42,18 @@ PUT /privilegedRoles/{id}/settings
 
 役割の設定を更新するときは指定するプロパティを次の表に一覧します。
 
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---------------|:--------|:----------|
 |elevationDuration|duration|ロールが有効な場合の期間です。 必須。|
-|ID|文字列|ロールの設定の一意の識別子です。 読み取り専用。 必須。|
+|ID|文字列|ロールの設定の一意の識別子です。 読み取り専用です。 必須。|
 |isMfaOnElevationConfigurable|ブール|**真**mfaOnElevation は、構成可能な場合です。 場合は**false を指定**mfaOnElevation は構成できません。 必須。|
-|lastGlobalAdmin|ブール値|内部使用のみ。|
+|lastGlobalAdmin|ブール型|内部使用のみ。|
 |maxElavationDuration|duration|アクティブ化されたロールの最大の期間です。 必須。|
-|mfaOnElevation|ブール値|**true** MFA は、ロールをアクティブにするために必要な場合です。 **false**場合は、MFA は、ロールをアクティブにする必要はありません。 必須。|
+|mfaOnElevation|ブール型|**true** MFA は、ロールをアクティブにするために必要な場合です。 **false**場合は、MFA は、ロールをアクティブにする必要はありません。 必須。|
 |minElevationDuration|duration|アクティブ化されたロールの最小の期間です。 必須。|
-|notificationToUserOnElevation|ブール値|**true**の場合、ロールがアクティブになったときは、エンド ・ ユーザーに通知を送信します。 **false**場合は、ロールがアクティブになったときに通知を送信できません。 必須。|
-|ticketingInfoOnElevation|ブール値|**true の**場合は、チケット情報が必要な場合は、ロールをアクティブにします。 **false**場合、チケットの情報が必要ない場合は、ロールをアクティブにします。 必須。|
-|approvalOnElevation|ブール値|**true の**場合は、承認が必要な場合は、ロールをアクティブにします。 **false を指定**する場合、承認が必要ない場合は、ロールをアクティブにします。 必須。|
+|notificationToUserOnElevation|ブール型|**true**の場合、ロールがアクティブになったときは、エンド ・ ユーザーに通知を送信します。 **false**場合は、ロールがアクティブになったときに通知を送信できません。 必須。|
+|ticketingInfoOnElevation|ブール型|**true の**場合は、チケット情報が必要な場合は、ロールをアクティブにします。 **false**場合、チケットの情報が必要ない場合は、ロールをアクティブにします。 必須。|
+|approvalOnElevation|ブール型|**true の**場合は、承認が必要な場合は、ロールをアクティブにします。 **false を指定**する場合、承認が必要ない場合は、ロールをアクティブにします。 必須。|
 |approverIds|配列|承認 Id、ライセンス認証の必要な場合は承認の一覧です。|
 
 ## <a name="response"></a>応答

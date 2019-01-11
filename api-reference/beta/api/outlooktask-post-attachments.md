@@ -2,12 +2,13 @@
 title: 添付ファイルを作成します。
 description: OutlookTask の添付ファイルを追加するのにには、この API を使用します。
 author: angelgolfer-ms
-ms.openlocfilehash: 3b3cc5d6d4357e74c0b63166a492eafe97813b06
-ms.sourcegitcommit: 6b1ba9b3be038cd6247de54a255bad560034fe42
+localization_priority: Normal
+ms.openlocfilehash: 55d9615e138d6eb87bd4a7b12a72c0d915825fdf
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "27771675"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27816906"
 ---
 # <a name="create-attachment"></a>添付ファイルを作成する
 
@@ -39,7 +40,7 @@ POST /users/{id|userPrincipalName}/outlook/tasks/{id}/attachments
 | 名前       | 説明|
 |:---------------|:----------|
 | Authorization  | ベアラー {トークン}。必須。 |
-| Content-Type | エンティティの本文内のデータの種類を表す文字列。 必須です。 |
+| Content-Type | エンティティの本文内のデータの種類を表す文字列。 必須。 |
 
 ## <a name="request-body"></a>要求本文
 

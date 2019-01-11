@@ -2,12 +2,13 @@
 title: 添付ファイルを一覧表示する
 description: Outlook のタスクに関連付けられている添付ファイルのオブジェクトの一覧を取得します。
 author: angelgolfer-ms
-ms.openlocfilehash: b998f6f7d3356728400cc7c609dd1014467ae4d6
-ms.sourcegitcommit: 6b1ba9b3be038cd6247de54a255bad560034fe42
+localization_priority: Normal
+ms.openlocfilehash: c76a11b960b8c1bb30e943cdc59205d2e0c3d4d2
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "27771794"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27818908"
 ---
 # <a name="list-attachments"></a>添付ファイルを一覧表示する
 

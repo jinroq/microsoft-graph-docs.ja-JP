@@ -2,12 +2,13 @@
 title: androidStoreApp リソース タイプ
 description: Android ストア アプリのプロパティと継承されるプロパティを含みます。
 author: tfitzmac
-ms.openlocfilehash: cdcd0c40751713b4fefa59e53b955321acaaf230
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 7f2f3047e28b4a9d198589f8ddf1904f598c67f8
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27340384"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27820385"
 ---
 # <a name="androidstoreapp-resource-type"></a>androidStoreApp リソース タイプ
 

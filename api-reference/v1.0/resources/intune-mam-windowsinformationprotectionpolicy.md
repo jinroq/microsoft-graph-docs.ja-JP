@@ -2,12 +2,13 @@
 title: windowsInformationProtectionPolicy リソース タイプ
 description: MDM を使用しない、Windows 情報保護のポリシー
 author: tfitzmac
-ms.openlocfilehash: 85527b04541ad86d6f1423bc78b2b64c6da1d7c7
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 81c5b825b81f72d6a164df1177a55fbd98f812d9
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27352557"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27816514"
 ---
 # <a name="windowsinformationprotectionpolicy-resource-type"></a>windowsInformationProtectionPolicy リソース タイプ
 

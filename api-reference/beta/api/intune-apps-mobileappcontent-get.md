@@ -2,12 +2,13 @@
 title: Get mobileAppContent
 description: mobileAppContent オブジェクトのプロパティとリレーションシップを読み取ります。
 author: tfitzmac
-ms.openlocfilehash: 332eaf13e64eb6b68eaa41c8ad69d4675692a868
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 3ceeccb24512564c8b6a5ae9a6c7724c61881247
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27356421"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27823151"
 ---
 # <a name="get-mobileappcontent"></a>Get mobileAppContent
 

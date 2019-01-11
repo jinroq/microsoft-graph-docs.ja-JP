@@ -1,12 +1,13 @@
 ---
 title: rankedEmailAddress リソースの種類
 description: ランクの電子メール アドレスを表します。
-ms.openlocfilehash: 9234f527ecba6dc83f2e4f80911442d4a083503a
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: bb3b906929bddcb52a57a478647000e7e16fa0be
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27073313"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27818516"
 ---
 # <a name="rankedemailaddress-resource-type"></a>rankedEmailAddress リソースの種類
 
@@ -16,7 +17,7 @@ ms.locfileid: "27073313"
 
 
 ## <a name="properties"></a>プロパティ
-| プロパティ     | 型   |説明|
+| プロパティ     | 種類   |説明|
 |:---------------|:--------|:----------|
 |address|文字列|電子メール アドレス。|
 |rank|double|電子メール アドレスのランキングです。 ランクは、他の返される結果に関連して、並べ替えキーとして使用されます。 上位の値は、関連性の高い結果に対応します。 関連性は、通信、コラボレーション、取引関係のシグナルによって決定されます。|

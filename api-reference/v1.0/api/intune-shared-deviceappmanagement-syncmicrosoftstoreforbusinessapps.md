@@ -2,12 +2,13 @@
 title: syncMicrosoftStoreForBusinessApps アクション
 description: ビジネス向け Microsoft Store と Intune アカウントを同期します
 author: tfitzmac
-ms.openlocfilehash: b26b379631cf5b28594e3cf247b735d6118e9b40
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: bba25378dae6f74104cb3ecc3a336404181b9a79
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27354335"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27821645"
 ---
 # <a name="syncmicrosoftstoreforbusinessapps-action"></a>syncMicrosoftStoreForBusinessApps アクション
 

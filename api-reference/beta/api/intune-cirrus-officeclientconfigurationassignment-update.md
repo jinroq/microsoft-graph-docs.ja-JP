@@ -2,12 +2,13 @@
 title: OfficeClientConfigurationAssignment を更新します。
 description: OfficeClientConfigurationAssignment オブジェクトのプロパティを更新します。
 author: tfitzmac
-ms.openlocfilehash: 78b0ae28bc61bc0d8d8c083502c6f6ef2cf7d0fb
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: f3d2fab5dc8793f566973e2d3e2d9bf968cbf30a
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27343037"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27817529"
 ---
 # <a name="update-officeclientconfigurationassignment"></a>OfficeClientConfigurationAssignment を更新します。
 

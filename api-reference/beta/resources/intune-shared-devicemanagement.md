@@ -1,12 +1,13 @@
 ---
 title: deviceManagement リソースの種類
 description: 'DeviceManagement リソースが、ワークフローに従って、内容を変更するコンテナーを表しますを含みます。  '
-ms.openlocfilehash: 14303da517e26158d1432a67076e64424a40253c
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 72c8cde688e95d3ffda07e6e698e8fd5f0f08fc0
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27070215"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27823248"
 ---
 # <a name="devicemanagement-resource-type"></a>deviceManagement リソースの種類
 
@@ -49,12 +50,12 @@ DeviceManagement リソースが、ワークフローに従って、内容を変
 
 
 ## <a name="properties"></a>プロパティ
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
-|id|String|デバイスに関連付けられている一意の識別子です。|
+|ID|String|デバイスに関連付けられている一意の識別子です。|
 |**デバイス構成**|
 |intuneAccountId|Guid|Intune アカウント ID にはテナントが指定されました。|
-|legacyPcManangementEnabled|Boolean|非 MDM を有効にするプロパティは、このアカウントの従来の PC の管理を管理します。 このプロパティは値の取得のみ可能です。|
+|legacyPcManangementEnabled|ブール型|非 MDM を有効にするプロパティは、このアカウントの従来の PC の管理を管理します。 このプロパティは読み取りのみ可能です。|
 |maximumDepTokens|Int32|DEP のトークンの最大数では、テナントごとに許可されます。|
 |settings|[deviceManagementSettings](../resources/intune-deviceconfig-devicemanagementsettings.md)|アカウント レベルの設定。|
 |**デバイスの管理**|

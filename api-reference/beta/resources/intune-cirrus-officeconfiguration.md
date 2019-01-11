@@ -2,12 +2,13 @@
 title: officeConfiguration リソースの種類
 description: すべてのデバイス管理機能のコンテナーとして機能する単一のエンティティです。
 author: tfitzmac
-ms.openlocfilehash: bf74789d4debda00b21173ff2974db8224cd15f0
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 096a54db296181e58020bb9bc694056c0b9e949a
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27305545"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27817260"
 ---
 # <a name="officeconfiguration-resource-type"></a>officeConfiguration リソースの種類
 
@@ -22,7 +23,7 @@ ms.locfileid: "27305545"
 |OfficeConfiguration を取得します。|[officeConfiguration](../resources/intune-cirrus-officeconfiguration.md)|[OfficeConfiguration](../resources/intune-cirrus-officeconfiguration.md)オブジェクトのプロパティと関係を参照してください。|
 |OfficeConfiguration を更新します。|[officeConfiguration](../resources/intune-cirrus-officeconfiguration.md)|[OfficeConfiguration](../resources/intune-cirrus-officeconfiguration.md)オブジェクトのプロパティを更新します。|
 
-## <a name="properties"></a>Properties
+## <a name="properties"></a>プロパティ
 |プロパティ|種類|説明|
 |:---|:---|:---|
 |ID|String|Office の構成の id です。|

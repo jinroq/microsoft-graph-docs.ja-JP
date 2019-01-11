@@ -1,12 +1,13 @@
 ---
 title: planner リソースの種類
 description: '**planner** リソースは Planner オブジェクト モデルのエントリ ポイントです。単一の **planner** リソースを返します。使用可能なプロパティは含まれていません。'
-ms.openlocfilehash: e5980f6f4037b57e977b12ef223e8a5a2cf7c77c
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 35088001ca2e444c1f375426fc40ff13bd2eaaec
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27023523"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27821257"
 ---
 # <a name="planner-resource-type"></a>planner リソースの種類
 
@@ -42,7 +43,7 @@ ms.locfileid: "27023523"
 }
 ```
 
-## <a name="example"></a>使用例
+## <a name="example"></a>例
 
 **プランナー**のリソースは、グラフのルートに使用できます。
 

@@ -1,12 +1,13 @@
 ---
 title: passwordProfile リソースの種類
 description: ユーザーに関連付けられているパスワードのプロファイルが含まれています。ユーザー エンティティの **PasswordProfile** プロパティは、**passwordProfile** オブジェクトです。
-ms.openlocfilehash: ee933b75b3dc536cbfcb33502cdda0d63680174c
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Priority
+ms.openlocfilehash: 80d774906fb4897f57b943af827cfbc32e90511f
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27022970"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27819664"
 ---
 # <a name="passwordprofile-resource-type"></a>passwordProfile リソースの種類
 
@@ -14,7 +15,7 @@ ms.locfileid: "27022970"
 
 
 ## <a name="properties"></a>プロパティ
-| プロパティ     | 型   |説明|
+| プロパティ     | 種類   |説明|
 |:---------------|:--------|:----------|
 |forceChangePasswordNextSignIn|Boolean| ユーザーが次回のログインでパスワードを変更する必要がある場合は **true**、それ以外の場合は **false**。 |
 |password|String|ユーザーのパスワード。このプロパティは、ユーザーの作成時に必要です。このプロパティは更新できますが、ユーザーは次回のログインでパスワードを変更する必要があります。パスワードは、ユーザーの **passwordPolicies** プロパティによって指定されているとおりの最小要件を満たす必要があります。既定では、強力なパスワードが必要です。|

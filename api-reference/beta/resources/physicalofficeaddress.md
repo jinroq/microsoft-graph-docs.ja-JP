@@ -1,18 +1,19 @@
 ---
 title: physicalOfficeAddress リソースの種類
 description: 連絡先やイベントなどのリソースの会社の住所を表します。
-ms.openlocfilehash: 472e4dfd03670f5fd4ff6b5c5c53342fff5c391a
-ms.sourcegitcommit: f3d479edf03935d0edbbc7668a65f7cde2a56c92
+localization_priority: Normal
+ms.openlocfilehash: bd4274e29b2ef0f9e7e8318528d18103be19fabc
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/15/2018
-ms.locfileid: "27284099"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27817788"
 ---
 # <a name="physicalofficeaddress-resource-type"></a>physicalOfficeAddress リソースの種類
 
 リソース、組織の連絡先などの会社の住所を表します。
 
-## <a name="properties"></a>Properties
+## <a name="properties"></a>プロパティ
 
 | プロパティ     | 種類   |説明|
 |:---------------|:--------|:----------|

@@ -2,12 +2,13 @@
 title: AndroidWorkProfileGmailEasConfiguration を取得します。
 description: AndroidWorkProfileGmailEasConfiguration オブジェクトのプロパティと関係を参照してください。
 author: tfitzmac
-ms.openlocfilehash: 74f2313ea6092732445c65543a1be2c145201111
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 8785fd27a3c56a38cbbfa88295fc91f89e999f7b
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27338326"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27818001"
 ---
 # <a name="get-androidworkprofilegmaileasconfiguration"></a>AndroidWorkProfileGmailEasConfiguration を取得します。
 

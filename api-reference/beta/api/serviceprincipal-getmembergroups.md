@@ -1,12 +1,13 @@
 ---
 title: 'servicePrincipal: getMemberGroups'
 description: このサービス主体のメンバーであるグループの一覧を取得します。  チェック、推移的です。
-ms.openlocfilehash: 3ea35e86269f370a3f4fc500555ae04705c038fc
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 6d552b410da23e5675257340ddc61cb4abbcd5e8
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27066748"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27817648"
 ---
 # <a name="serviceprincipal-getmembergroups"></a>servicePrincipal: getMemberGroups
 
@@ -31,14 +32,14 @@ POST /servicePrincipals/{id}/getMemberGroups
 
 ```
 ## <a name="request-headers"></a>要求ヘッダー
-| 名前       | 型 | 説明|
+| 名前       | 種類 | 説明|
 |:---------------|:--------|:----------|
 | Authorization  | string  | ベアラー {トークン}。必須。 |
 
 ## <a name="request-body"></a>要求本文
 要求本文で、次のパラメーターを含む JSON オブジェクトを指定します。
 
-| パラメーター    | 型   |説明|
+| パラメーター    | Type   |説明|
 |:---------------|:--------|:----------|
 |securityEnabledOnly|ブール値|**false** に設定します。セキュリティが有効なグループのみを返すことは、ユーザーに対してのみサポートされます。|
 

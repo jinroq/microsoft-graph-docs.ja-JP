@@ -2,12 +2,13 @@
 title: リスト androidForWorkVpnConfigurations
 description: AndroidForWorkVpnConfiguration オブジェクトのプロパティと関係を一覧表示します。
 author: tfitzmac
-ms.openlocfilehash: ca56e8033563166f80aa5e364f716b9bc4c38c0b
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 81816923c27d604b9002c49e88ed573a4e126713
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27344724"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27817501"
 ---
 # <a name="list-androidforworkvpnconfigurations"></a>リスト androidForWorkVpnConfigurations
 

@@ -1,12 +1,13 @@
 ---
 title: 単一値の拡張プロパティを作成する
 description: 'リソースの新規または既存のインスタンスに、1 つ以上の単一値の拡張プロパティを作成します。 '
-ms.openlocfilehash: 3dee727cb238241aba971cb077495f02514b77dc
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: cf98c3e2b43192e5c8b636d2f67fc471af82da6b
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27022584"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27819867"
 ---
 # <a name="create-single-value-extended-property"></a>単一値の拡張プロパティを作成する
 
@@ -120,7 +121,7 @@ PATCH /groups/{id}/events/{id}
 
 リソース インスタンスの **singleValueExtendedProperties** コレクション プロパティに、各 [singleValueLegacyExtendedProperty](../resources/singlevaluelegacyextendedproperty.md) オブジェクトの JSON 本文を指定します。
 
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:-----|:-----|:-----|
 |singleValueExtendedProperties|[singleValueLegacyExtendedProperty](../resources/singlevaluelegacyextendedproperty.md) collection| 1 つ以上の単一値を持つ拡張プロパティの配列。 |
 |id|String|**singleValueExtendedProperties** コレクションの各プロパティに対して、これを指定することでプロパティを特定します。サポートされている形式のいずれかに従う必要があります。詳しくは、「[Outlook の拡張プロパティの概要](../resources/extended-properties-overview.md)」を参照してください。必須。|

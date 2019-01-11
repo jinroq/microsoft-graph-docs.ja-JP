@@ -2,12 +2,13 @@
 title: アプリケーションを更新します。
 description: アプリケーション オブジェクトのプロパティを更新します。
 author: lleonard-msft
-ms.openlocfilehash: e664e212f81bab9f4e8b49bce60b4ec045fa5787
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: fafc1a339b96bfffdfbce24566b69bbd776825db
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27316689"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27819006"
 ---
 # <a name="update-application"></a>アプリケーションを更新します。
 

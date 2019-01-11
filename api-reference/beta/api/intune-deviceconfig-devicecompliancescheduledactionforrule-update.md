@@ -2,12 +2,13 @@
 title: deviceComplianceScheduledActionForRule の更新
 description: deviceComplianceScheduledActionForRule オブジェクトのプロパティを更新します。
 author: tfitzmac
-ms.openlocfilehash: 811029446591b33ac38dad5e4a9aaca045d6e9dc
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: c4f2e985a236f5afa2f36fb4a9fc41230764d45c
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27330843"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27822919"
 ---
 # <a name="update-devicecompliancescheduledactionforrule"></a>deviceComplianceScheduledActionForRule の更新
 

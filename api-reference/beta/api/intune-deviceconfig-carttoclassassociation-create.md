@@ -2,12 +2,13 @@
 title: CartToClassAssociation を作成します。
 description: 新しい cartToClassAssociation オブジェクトを作成します。
 author: tfitzmac
-ms.openlocfilehash: 3ed7ef088acca7908ece1e0b5e61797bb54a2e9b
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 6e3582f3f38258db75236b6cc877a64471da4b85
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27330654"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27822709"
 ---
 # <a name="create-carttoclassassociation"></a>CartToClassAssociation を作成します。
 

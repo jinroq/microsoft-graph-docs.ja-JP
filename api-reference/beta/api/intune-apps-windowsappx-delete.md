@@ -2,12 +2,13 @@
 title: WindowsAppX を削除します。
 description: WindowsAppX を削除します。
 author: tfitzmac
-ms.openlocfilehash: 7d8e0f059e679cd79ffe8be752e3f077b8fe4adf
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 055f342cc2c3ad143dbcbf0b6c1af0d8dad120d3
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27348469"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27819272"
 ---
 # <a name="delete-windowsappx"></a>WindowsAppX を削除します。
 

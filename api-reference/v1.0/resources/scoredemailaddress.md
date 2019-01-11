@@ -1,12 +1,13 @@
 ---
 title: scoredEmailAddress リソースの種類
 description: スコアの付いたメール アドレスを表します。
-ms.openlocfilehash: 9cdd33a6df9eefca0f7a00c5fe8b17832e0056d9
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 740173e7d5f93dc875c08508bf73100727fdf415
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27024282"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27819475"
 ---
 # <a name="scoredemailaddress-resource-type"></a>scoredEmailAddress リソースの種類
 
@@ -14,7 +15,7 @@ ms.locfileid: "27024282"
 
 
 ## <a name="properties"></a>プロパティ
-| プロパティ     | 型   |説明|
+| プロパティ     | 種類   |説明|
 |:---------------|:--------|:----------|
 |address|文字列|電子メール アドレス。|
 |relevanceScore|double|電子メール アドレスの関連性スコア。関連性スコアは他の返された結果に関連して、並べ替えキーとして使用されます。関連性スコア値が高いほど、関連性の高い結果に対応します。関連性は、ユーザーのコミュニケーションとコラボレーション パターン、およびビジネスのリレーションシップによって決定されます。 |

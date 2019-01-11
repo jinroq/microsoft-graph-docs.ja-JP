@@ -2,12 +2,13 @@
 title: WindowsWifiEnterpriseEAPConfiguration を作成します。
 description: 新しい windowsWifiEnterpriseEAPConfiguration オブジェクトを作成します。
 author: tfitzmac
-ms.openlocfilehash: 03d8c3d44fb6782017e41571980e87ab6973e326
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: f371a8311d860c443a13e81b92f0851d2f8c9709
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27310354"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27821961"
 ---
 # <a name="create-windowswifienterpriseeapconfiguration"></a>WindowsWifiEnterpriseEAPConfiguration を作成します。
 

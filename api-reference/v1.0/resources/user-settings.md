@@ -2,12 +2,13 @@
 title: 設定リソースの種類
 description: '現在のユーザー設定します。 '
 author: dkershaw10
-ms.openlocfilehash: c6a130dc9232114110735ebb0a98b0beeecbf835
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Priority
+ms.openlocfilehash: 0ba342ba7644e005fd8711616625957bc4a1f284
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27314498"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27821141"
 ---
 # <a name="settings-resource-type"></a>設定リソースの種類
 
@@ -24,7 +25,7 @@ ms.locfileid: "27314498"
 |[ユーザー設定を取得する](../api/user-get-settings.md) |[設定](../resources/user-settings.md)| ユーザーと組織の設定を取得します。 |
 |[ユーザー設定の更新](../api/user-update-settings.md) |[設定](../resources/user-settings.md)| ユーザーの現在の設定を更新します。 |
 
-## <a name="properties"></a>Properties
+## <a name="properties"></a>プロパティ
 
 | プロパティ     | 種類   |説明|
 |:---------------|:--------|:----------|
