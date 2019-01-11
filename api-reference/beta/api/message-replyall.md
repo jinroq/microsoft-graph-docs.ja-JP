@@ -2,12 +2,13 @@
 title: 'メッセージ: replyAll'
 description: 'コメントを指定して、更新可能なプロパティを変更することによって、メッセージの受信者全員に返信します。 '
 author: angelgolfer-ms
-ms.openlocfilehash: 035212224bca5cb6d173be9ea447cf16406ebf36
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 5377de8737445f61d34e1d1148af9376cb7e9658
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27307190"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27843303"
 ---
 # <a name="message-replyall"></a>メッセージ: replyAll
 
@@ -50,7 +51,7 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/replyAll
 ## <a name="request-body"></a>要求本文
 要求本文で、次のパラメーターを含む JSON オブジェクトを指定します。
 
-| パラメーター    | 種類   |説明|
+| パラメーター    | Type   |説明|
 |:---------------|:--------|:----------|
 |comment|String|含めるコメントです。空の文字列にすることができます。|
 |message|[message](../resources/message.md)|返信メッセージで更新する書き込み可能なプロパティです。|

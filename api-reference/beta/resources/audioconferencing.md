@@ -2,12 +2,13 @@
 title: audioConferencing リソースの種類
 description: OnlineMeeting には、電話アクセス情報を表します。
 author: VinodRavichandran
-ms.openlocfilehash: 4e2ee26e6f9a86d50efcb21cd95b84b207488ef1
-ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
+localization_priority: Normal
+ms.openlocfilehash: 9bd8343f29a797a24044f02aa2a00bd098c35007
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "27380227"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27843625"
 ---
 # <a name="audioconferencing-resource-type"></a>audioConferencing リソースの種類
 
@@ -17,7 +18,7 @@ ms.locfileid: "27380227"
 
 ## <a name="properties"></a>プロパティ
 
-| プロパティ            | 型    | 説明                                                                    |
+| プロパティ            | 種類    | 説明                                                                    |
 |:--------------------|:--------|:-------------------------------------------------------------------------------|
 | dialinUrl           | String  | ダイヤルイン情報を含む外部からアクセス可能な web ページの URL です。 |
 | leaderPasscode      | String  | オーディオ会議プロバイダーへの接続に必要なリーダーのパスワードです。      |

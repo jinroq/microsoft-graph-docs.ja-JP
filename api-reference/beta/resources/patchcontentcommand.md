@@ -1,12 +1,13 @@
 ---
 title: patchContentCommand リソースの種類
 description: PATCH 要求で OneNote ページに加える変更。
-ms.openlocfilehash: fb559a96aa5eef94dd07280b888da0df989b2363
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 2e94f67a2a4e2e549d7367f0c48e31745d3bf659
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27073273"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27842729"
 ---
 # <a name="patchcontentcommand-resource-type"></a>patchContentCommand リソースの種類
 
@@ -37,7 +38,7 @@ PATCH 要求で OneNote ページに加える変更。
 ```
 
 ## <a name="properties"></a>プロパティ
-| プロパティ     | 型   |説明|
+| プロパティ     | 種類   |説明|
 |:---------------|:--------|:----------|
 |action|String|ターゲット要素で実行するアクション。使用可能な値: `replace`、`append`、`delete`、`insert`、`prepend`。|
 |content|String|ページに追加する整形式 HTML の文字列と画像またはファイル バイナリ データ。コンテンツにバイナリ データが含まれている場合、コンテンツ タイプとして `multipart/form-data` を利用し、"Commands" パートを含む要求を送信する必要があります。 |

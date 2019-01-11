@@ -1,12 +1,13 @@
 ---
 title: 'bookingAppointment: キャンセル'
 description: " > **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。"
-ms.openlocfilehash: 4cd7b511f997f32c134f70a976cd94c2ed910fb1
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: ffb800b5084177b05b62e1ba14b475b8a760d766
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27066424"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27844479"
 ---
 # <a name="bookingappointment-cancel"></a>bookingAppointment: キャンセル
 
@@ -37,7 +38,7 @@ POST /bookingBusinesses/{id}/appointments/{id}/cancel
 ## <a name="request-body"></a>要求本文
 要求本文で、次のパラメーターを含む JSON オブジェクトを指定します。
 
-| パラメーター    | 型   |説明|
+| パラメーター    | Type   |説明|
 |:---------------|:--------|:----------|
 |cancellationMessage|String|予定が取り消されましたことをお客様と確認のメッセージです。|
 

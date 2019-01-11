@@ -2,12 +2,13 @@
 title: Update iosStoreApp
 description: iosStoreApp オブジェクトのプロパティを更新します。
 author: tfitzmac
-ms.openlocfilehash: 8d1195120e1eab46f1e7a1b3ad95e6734d74e57f
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: d41f3d19971337b9745f3720232a3300c9a0cf13
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27360502"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27843345"
 ---
 # <a name="update-iosstoreapp"></a>Update iosStoreApp
 

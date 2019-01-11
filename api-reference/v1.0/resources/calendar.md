@@ -1,12 +1,13 @@
 ---
 title: calendar リソース型
 description: イベントのコンテナーである予定表です。 ユーザーの予定表、または Office 365 グループの既定の予定表のいずれかを指定できます。
-ms.openlocfilehash: 1c1797897c0efcd7d7196977f93b6a8c611f83f6
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Priority
+ms.openlocfilehash: c567a37be651987f2ca5af08cf9837ba6f41076f
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27023585"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27843247"
 ---
 # <a name="calendar-resource-type"></a>calendar リソース型
 
@@ -37,7 +38,7 @@ ms.locfileid: "27023585"
 |[複数値の拡張プロパティを持つ予定表を取得する](../api/multivaluelegacyextendedproperty-get.md)  | [calendar](calendar.md) | `$expand` を使用して、複数値の拡張プロパティを含む予定表を取得します。 |
 
 ## <a name="properties"></a>プロパティ
-| プロパティ     | 型   |説明|
+| プロパティ     | 種類   |説明|
 |:---------------|:--------|:----------|
 |canEdit |ブール値 |ユーザーが予定表に書き込むことができる場合は true、それ以外の場合は false です。予定表を作成したユーザーの場合は、このプロパティは true です。予定表を共有していて、書き込みアクセスが付与されているユーザーの場合も、このプロパティは true です。 |
 |canShare |ブール値 |ユーザーに予定表を共有するためのアクセス許可がある場合は true、それ以外の場合は false です。予定表を作成したユーザーのみがその予定表を共有できます。 |

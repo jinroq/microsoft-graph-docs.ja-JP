@@ -2,12 +2,13 @@
 title: windowsInformationProtection リソース タイプ
 description: 詳細な管理設定を構成するための Windows 情報保護のポリシー
 author: tfitzmac
-ms.openlocfilehash: 5d4d36e0b4be5c5549c9ff1120756f8e851c2869
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: ea46d80d2d1c94be92dff92cc7c40eb01135254a
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27304320"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27845102"
 ---
 # <a name="windowsinformationprotection-resource-type"></a>windowsInformationProtection リソース タイプ
 

@@ -1,12 +1,13 @@
 ---
 title: リスト programControls
 description: Azure AD アクセスのレビュー機能では、テナント内のすべてのプログラム間でデバッギング オブジェクトがすべてを一覧表示します。
-ms.openlocfilehash: 7e1dcb197a546e3aa823b731a9e7954803b36c2a
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: bc56fd5013bcf0013007b9d4264ab89eca02d43b
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27067468"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27843954"
 ---
 # <a name="list-programcontrols"></a>リスト programControls
 
@@ -28,7 +29,7 @@ ms.locfileid: "27067468"
 GET /programControls
 ```
 ## <a name="request-headers"></a>要求ヘッダー
-| 名前         | 型        | 説明 |
+| 名前         | 種類        | 説明 |
 |:-------------|:------------|:------------|
 | Authorization | string | ベアラー\{トークン\}。 必須。 |
 

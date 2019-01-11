@@ -2,12 +2,13 @@
 title: runState 列挙型
 description: デバイスの管理スクリプトの実行ステータスの種類を示します。
 author: tfitzmac
-ms.openlocfilehash: 87c845c02bd5a1571ab2f6382acbcc92cf81170d
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 38831625e5f3fc5f3e05b599054c738482b0a6cb
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27349274"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27845004"
 ---
 # <a name="runstate-enum-type"></a>runState 列挙型
 

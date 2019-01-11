@@ -1,12 +1,13 @@
 ---
 title: Update plannerplandetails
 description: '**plannerplandetails** オブジェクトのプロパティを更新します。'
-ms.openlocfilehash: 418dac7a44a3ea7b8ad48ca6a087294818b64ab4
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 45675e4c45e14b8574a66edda581e59203159608
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27070410"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27843996"
 ---
 # <a name="update-plannerplandetails"></a>Update plannerplandetails
 
@@ -36,7 +37,7 @@ PATCH /planner/plans/<id>/details
 ## <a name="request-body"></a>要求本文
 要求本文で、更新する関連フィールドの値を指定します。要求本文に含まれない既存のプロパティは、以前の値のままになるか、他のプロパティ値の変化に基づいて再計算されます。最適なパフォーマンスを得るためには、変更されていない既存の値を含めないでください。
 
-| プロパティ     | 型   |説明|
+| プロパティ     | 種類   |説明|
 |:---------------|:--------|:----------|
 |categoryDescriptions|[plannerCategoryDescriptions](../resources/plannercategorydescriptions.md)|計画内のタスクに関連付けられる 6 つのカテゴリの説明を指定するオブジェクト|
 |sharedWith|[plannerUserIds](../resources/planneruserids.md)|この計画を共有するユーザー ID を設定します。Office 365 グループを活用している場合は、グループの API を使用してグループのメンバーシップを管理し、[グループの](../resources/group.md)計画を共有します。グループの既存のメンバーもこのコレクションに追加できますが、このグループが所有する計画へのアクセスは必要とされません。|

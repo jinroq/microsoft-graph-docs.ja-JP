@@ -2,12 +2,13 @@
 title: symantecCodeSigningCertificate リソースの種類
 description: まだ文書化されていません
 author: tfitzmac
-ms.openlocfilehash: 979502f51674b32f10627762d08d8216a466dff9
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: a2e4f53e0ca7329f163b507677e2b91a4c02fe12
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27357240"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27845011"
 ---
 # <a name="symanteccodesigningcertificate-resource-type"></a>symantecCodeSigningCertificate リソースの種類
 
@@ -22,7 +23,7 @@ ms.locfileid: "27357240"
 |[SymantecCodeSigningCertificate を取得します。](../api/intune-apps-symanteccodesigningcertificate-get.md)|[symantecCodeSigningCertificate](../resources/intune-apps-symanteccodesigningcertificate.md)|[SymantecCodeSigningCertificate](../resources/intune-apps-symanteccodesigningcertificate.md)オブジェクトのプロパティと関係を参照してください。|
 |[SymantecCodeSigningCertificate を更新します。](../api/intune-apps-symanteccodesigningcertificate-update.md)|[symantecCodeSigningCertificate](../resources/intune-apps-symanteccodesigningcertificate.md)|[SymantecCodeSigningCertificate](../resources/intune-apps-symanteccodesigningcertificate.md)オブジェクトのプロパティを更新します。|
 
-## <a name="properties"></a>Properties
+## <a name="properties"></a>プロパティ
 |プロパティ|種類|説明|
 |:---|:---|:---|
 |ID|String|エンティティのキー。|

@@ -2,12 +2,13 @@
 title: AndroidForWorkGeneralDeviceConfiguration を作成します。
 description: 新しい androidForWorkGeneralDeviceConfiguration オブジェクトを作成します。
 author: tfitzmac
-ms.openlocfilehash: f87cf28580cbdb69de2dfb7208efe0bf38e22d0d
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 0ab08c27e3ebe998f0e163c49afa29dd93d69f12
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27321638"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27842911"
 ---
 # <a name="create-androidforworkgeneraldeviceconfiguration"></a>AndroidForWorkGeneralDeviceConfiguration を作成します。
 

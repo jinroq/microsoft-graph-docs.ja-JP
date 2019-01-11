@@ -1,12 +1,13 @@
 ---
 title: ConnectorGroups を更新します。
 description: Connectorgroup オブジェクトのプロパティを更新します。
-ms.openlocfilehash: a9777394a3ecfc65a7c03c07643359ef3c763aca
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 9a4db622328edd4d3aea348fd078acdc832a9c52
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27066706"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27843800"
 ---
 # <a name="update-connectorgroups"></a>ConnectorGroups を更新します。
 
@@ -35,7 +36,7 @@ PATCH /connectorGroups/{id}
 ## <a name="request-body"></a>要求本文
 要求本文で、更新する関連フィールドの値を指定します。要求本文に含まれない既存のプロパティは、以前の値のままになるか、他のプロパティ値の変化に基づいて再計算されます。最適なパフォーマンスを得るためには、変更されていない既存の値を含めないでください。
 
-| プロパティ     | 型   |説明|
+| プロパティ     | 種類   |説明|
 |:---------------|:--------|:----------|
 |connectorGroupType|文字列| 使用可能な値: `applicationProxy`。|
 |名前|String|ConnectorGroup の名前です。|

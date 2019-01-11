@@ -2,12 +2,13 @@
 title: 'TableSort: apply　'
 description: 並べ替え操作を実行します。
 author: lumine2008
-ms.openlocfilehash: ed5b862227986e9e280462d0118f2286dd1c9107
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 2dc8d9c0619e434d3799ae03e0ef54354c868852
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27333125"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27844101"
 ---
 # <a name="tablesort-apply"></a>TableSort: apply　
 
@@ -39,11 +40,11 @@ POST /workbook/worksheets/{id|name}/tables/{id|name}/sort/apply
 ## <a name="request-body"></a>要求本文
 要求本文で、次のパラメーターを含む JSON オブジェクトを指定します。
 
-| パラメーター    | 種類   |説明|
+| パラメーター    | Type   |説明|
 |:---------------|:--------|:----------|
 |fields|SortField|並べ替えに使用する条件の一覧。|
 |matchCase|ブール値|省略可能。大文字小文字の区別が文字列の順序に影響を与えるかどうか。|
-|method|string|省略可能。中国語文字に使用される順序付けの方法です。可能な値は、`PinYin`、`StrokeCount` です。|
+|method|文字列|省略可能。中国語文字に使用される順序付けの方法です。可能な値は、`PinYin`、`StrokeCount` です。|
 
 ## <a name="response"></a>応答
 

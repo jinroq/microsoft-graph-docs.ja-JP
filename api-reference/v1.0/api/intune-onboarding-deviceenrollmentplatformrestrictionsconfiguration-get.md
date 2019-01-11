@@ -2,12 +2,13 @@
 title: Get deviceEnrollmentPlatformRestrictionsConfiguration
 description: deviceEnrollmentPlatformRestrictionsConfiguration オブジェクトのプロパティとリレーションシップを読み取ります。
 author: tfitzmac
-ms.openlocfilehash: a597b1cefb9db784c79e9ba5fc182a7cb410b161
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: a468a38edc5dfd45b5e0c2cc10b42f7d09130f3a
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27315317"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27845116"
 ---
 # <a name="get-deviceenrollmentplatformrestrictionsconfiguration"></a>Get deviceEnrollmentPlatformRestrictionsConfiguration
 

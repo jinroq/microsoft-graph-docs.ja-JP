@@ -2,12 +2,13 @@
 title: Windows81TrustedRootCertificate を取得します。
 description: Windows81TrustedRootCertificate オブジェクトのプロパティと関係を参照してください。
 author: tfitzmac
-ms.openlocfilehash: bc3013a8925ff30f31652d458a4e5236ab169982
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 35bf33bcc9002e8b8f42d34a13ddcf52604297e0
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27320357"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27842862"
 ---
 # <a name="get-windows81trustedrootcertificate"></a>Windows81TrustedRootCertificate を取得します。
 

@@ -1,12 +1,13 @@
 ---
 title: プログラムを作成します。
 description: Azure AD のレビュー機能にアクセス、新しいプログラム オブジェクトを作成します。
-ms.openlocfilehash: 1ac3fa1f0b555fc92449adf0e57217d0a7d50375
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: b982242bbdddb9769d64c9757d9041fddc215d53
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27072486"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27844017"
 ---
 # <a name="create-program"></a>プログラムを作成します。
 
@@ -28,7 +29,7 @@ ms.locfileid: "27072486"
 POST /programs
 ```
 ## <a name="request-headers"></a>要求ヘッダー
-| 名前         | 型        | 説明 |
+| 名前         | 種類        | 説明 |
 |:-------------|:------------|:------------|
 | Authorization | string | ベアラー\{トークン\}。 必須。 |
 
@@ -37,7 +38,7 @@ POST /programs
 
 プログラムを作成するときに必要なプロパティを次の表に示します。
 
-| プロパティ     | 型        | 説明 |
+| プロパティ     | 種類        | 説明 |
 |:-------------|:------------|:------------|
 | `displayName`               |`String`                              |  プログラムの名前です。                   |
 | `description`               |`String`                              |  プログラムの説明です。           |

@@ -2,12 +2,13 @@
 title: managedDeviceMobileAppConfiguration の取得
 description: managedDeviceMobileAppConfiguration オブジェクトのプロパティとリレーションシップを読み取ります。
 author: tfitzmac
-ms.openlocfilehash: 7cd22bcd319c4cef7cc2781ac16435917ef8c8b1
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 8a1eba97f75926ed22bd19762e5a44d3d070aa63
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27308779"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27843842"
 ---
 # <a name="get-manageddevicemobileappconfiguration"></a>managedDeviceMobileAppConfiguration の取得
 

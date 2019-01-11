@@ -1,12 +1,13 @@
 ---
 title: Create educationClass
 description: 新しいクラスを作成します。 これはユニバーサル グループも作成します。 クラスを作成するのにはこの API を使用すると特別なプロパティがどのグループに追加されます。
-ms.openlocfilehash: 81b72b5b252c323a6a91152deaafaf8a927c8bf9
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: b75ce58b1d56fe1ba231299b9c2c943ca28e0403
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27066361"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27843471"
 ---
 # <a name="create-educationclass"></a>Create educationClass
 

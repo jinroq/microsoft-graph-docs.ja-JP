@@ -3,12 +3,13 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
 title: Permission
-ms.openlocfilehash: 195d4840fdb25339eda3858c0bac2395ee9b1c4a
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 34798437f1bf27c68c390b0f04618985de5cecf3
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27073304"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27843317"
 ---
 # <a name="permission-resource-type"></a>リソースのアクセス許可の種類
 
@@ -59,18 +60,18 @@ ms.locfileid: "27073304"
 
 ## <a name="properties"></a>プロパティ
 
-| プロパティ            | 型                        | 説明
+| プロパティ            | 種類                        | 説明
 |:--------------------|:----------------------------|:-------------------------
-| id                  | String                      | 項目の全アクセス許可の中の、アクセス許可の一意の識別子です。読み取り専用。
+| ID                  | String                      | 項目の全アクセス許可の中の、アクセス許可の一意の識別子です。読み取り専用。
 | grantedTo           | [IdentitySet][]             | ユーザー タイプのアクセス許可、ユーザーとこのアクセス許可のアプリケーションの詳細。読み取り専用。
-| grantedToIdentities | コレクション ([IdentitySet][]) | リンクの種類のアクセス許可のアクセス許可の付与先ユーザーの詳細です。 読み取り専用。
+| grantedToIdentities | コレクション ([IdentitySet][]) | リンクの種類のアクセス許可のアクセス許可の付与先ユーザーの詳細です。 読み取り専用です。
 | invitation          | [SharingInvitation][]       | このアクセス許可に任意に関連付けられた共有招待状の詳細情報です。読み取り専用。
 | inheritedFrom       | [ItemReference][]           | 現在のアクセス許可が先祖から継承されている場合、その先祖への参照を提供します。読み取り専用。
 | link                | [SharingLink][]             | 現在のアクセス許可がリンク タイプのアクセス許可である場合は、そのリンクの詳細を提供します。読み取り専用。
 | roles               | Collection(String)          | `read` など、アクセス許可の種類。ロールの完全なリストは以下を参照してください。読み取り専用。
-| shareId             | String                      | この**[API の共有][]** を使用して共有アイテムにアクセスするために使用できる一意なトークンです。 読み取り専用。
+| shareId             | String                      | この**[API の共有][]** を使用して共有アイテムにアクセスするために使用できる一意なトークンです。 読み取り専用です。
 | expirationDateTime  | DateTimeOffset              | Yyyy の形式で MM の DateTimeOffset の ddTHH:mm:ssZ は、アクセス許可の有効期限を示します。 DateTime.MinValue を示しますがこのアクセス許可の有効期限が設定されていません。 省略可能。
-| hasPassword         | ブール値                     | これは、応答でのみ表示されてパスワードがこのアクセス許可の設定があるかどうかを示します。 オプションおよび読み取り専用であり、OneDrive 個人のみです。
+| hasPassword         | ブール型                     | これは、応答でのみ表示されてパスワードがこのアクセス許可の設定があるかどうかを示します。 オプションおよび読み取り専用であり、OneDrive 個人のみです。
 
 ### <a name="roles-enumeration-values"></a>ロールの列挙値
 
@@ -218,14 +219,14 @@ permission リソースは、_ファセット_ を使用して、リソースに
 
 ## <a name="methods"></a>メソッド
 
-| メソッド                                                   | REST パス
+| Method                                                   | REST パス
 |:---------------------------------------------------------|:-----------------------
 | [アクセス許可を一覧表示する](../api/driveitem-list-permissions.md) | `GET /drive/items/{item-id}/permissions`
 | [アクセス許可を取得する](../api/permission-get.md)               | `GET /drive/items/{item-id}/permissions/{id}`
 | [[作成] リンク][createLink]                                | `POST /drive/items/{item-id}/createLink`
 | [人を招待][招待]                                  | `POST /drive/items/{item-id}/invite`
 | [Update](../api/permission-update.md)                    | `PATCH /drive/items/{item-id}/permissions/{id}`
-| [削除](../api/permission-delete.md)                    | `DELETE /drive/items/{item-id}/permissions/{id}`
+| [Delete](../api/permission-delete.md)                    | `DELETE /drive/items/{item-id}/permissions/{id}`
 
 
 

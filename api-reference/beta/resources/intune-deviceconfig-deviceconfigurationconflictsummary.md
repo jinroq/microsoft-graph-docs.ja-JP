@@ -2,12 +2,13 @@
 title: deviceConfigurationConflictSummary リソースの種類
 description: 競合デバイスの構成のポリシーのセットの概要です。
 author: tfitzmac
-ms.openlocfilehash: 1c0caefc497c18fe7a8504324e048cec0e53bd3c
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: f8d84a4240059ff9772fefd9737ad27d8fbae7a8
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27308989"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27843338"
 ---
 # <a name="deviceconfigurationconflictsummary-resource-type"></a>deviceConfigurationConflictSummary リソースの種類
 
@@ -25,7 +26,7 @@ ms.locfileid: "27308989"
 |[DeviceConfigurationConflictSummary を削除します。](../api/intune-deviceconfig-deviceconfigurationconflictsummary-delete.md)|なし|の[deviceConfigurationConflictSummary](../resources/intune-deviceconfig-deviceconfigurationconflictsummary.md)を削除します。|
 |[DeviceConfigurationConflictSummary を更新します。](../api/intune-deviceconfig-deviceconfigurationconflictsummary-update.md)|[deviceConfigurationConflictSummary](../resources/intune-deviceconfig-deviceconfigurationconflictsummary.md)|[DeviceConfigurationConflictSummary](../resources/intune-deviceconfig-deviceconfigurationconflictsummary.md)オブジェクトのプロパティを更新します。|
 
-## <a name="properties"></a>Properties
+## <a name="properties"></a>プロパティ
 |プロパティ|種類|説明|
 |:---|:---|:---|
 |conflictingDeviceConfigurations|[settingSource](../resources/intune-deviceconfig-settingsource.md) コレクション|一連のポリシーを指定された設定と競合していません。|

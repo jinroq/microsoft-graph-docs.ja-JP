@@ -2,12 +2,13 @@
 title: Create managedIOSLobApp
 description: 新しい managedIOSLobApp オブジェクトを作成します。
 author: tfitzmac
-ms.openlocfilehash: c40e43864395c7bb7c86b1a424837f2b129468a6
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 308e9e9c204dd6b81d3b0f90451879a32ca910af
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27342813"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27844248"
 ---
 # <a name="create-managedioslobapp"></a>Create managedIOSLobApp
 

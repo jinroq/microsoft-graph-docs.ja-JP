@@ -2,12 +2,13 @@
 title: WindowsIdentityProtectionConfiguration を作成します。
 description: 新しい windowsIdentityProtectionConfiguration オブジェクトを作成します。
 author: tfitzmac
-ms.openlocfilehash: a0d588943f75694af159cfd835fc2e3a09b052e0
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 1478b5b84175d74a0b13bc4ee073b46838028422
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27355392"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27844521"
 ---
 # <a name="create-windowsidentityprotectionconfiguration"></a>WindowsIdentityProtectionConfiguration を作成します。
 

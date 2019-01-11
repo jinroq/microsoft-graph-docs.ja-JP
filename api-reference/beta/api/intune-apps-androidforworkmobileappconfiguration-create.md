@@ -2,12 +2,13 @@
 title: AndroidForWorkMobileAppConfiguration を作成します。
 description: 新しい androidForWorkMobileAppConfiguration オブジェクトを作成します。
 author: tfitzmac
-ms.openlocfilehash: 25f6f82c04ddd1f2d451a5e16769f48d3e48799c
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 013c4856bc40614b49108715b0d66b4af8f93890
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27308835"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27844414"
 ---
 # <a name="create-androidforworkmobileappconfiguration"></a>AndroidForWorkMobileAppConfiguration を作成します。
 

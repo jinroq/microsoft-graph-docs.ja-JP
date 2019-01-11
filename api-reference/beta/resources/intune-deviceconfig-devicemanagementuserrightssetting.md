@@ -2,12 +2,13 @@
 title: deviceManagementUserRightsSetting リソースの種類
 description: ユーザー権限の設定を表します。
 author: tfitzmac
-ms.openlocfilehash: c58a1d3e9a352561a1abec87fa4efa90c599fd7a
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: b12dc0c1c682b59ef741b3d49083fd0739d27abb
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27313700"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27844808"
 ---
 # <a name="devicemanagementuserrightssetting-resource-type"></a>deviceManagementUserRightsSetting リソースの種類
 
@@ -16,7 +17,7 @@ ms.locfileid: "27313700"
 > **注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
 
 ユーザー権限の設定を表します。
-## <a name="properties"></a>Properties
+## <a name="properties"></a>プロパティ
 |プロパティ|種類|説明|
 |:---|:---|:---|
 |state|[stateManagementSetting](../resources/intune-deviceconfig-statemanagementsetting.md)|このユーザーの現在の状態を表す権限を設定します。 可能な値は、`notConfigured`、`blocked`、`allowed` です。|

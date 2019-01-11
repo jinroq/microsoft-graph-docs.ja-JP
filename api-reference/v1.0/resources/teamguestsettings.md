@@ -1,12 +1,13 @@
 ---
 title: teamGuestSettings リソースの種類
 description: 来園者が作成、更新、またはチーム内のチャンネルを削除するかどうかを構成するのに設定します。
-ms.openlocfilehash: 3c59c84e0baa9db580a81eeb72a405ec5097c478
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: f0947101fc8de83d1a56ffa922d9b1e2d79d520f
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27022869"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27844878"
 ---
 # <a name="teamguestsettings-resource-type"></a>teamGuestSettings リソースの種類
 
@@ -15,10 +16,10 @@ ms.locfileid: "27022869"
 来園者が作成、更新、または[チーム](team.md)内のチャンネルを削除するかどうかを構成するのに設定します。
 
 ## <a name="properties"></a>プロパティ
-| プロパティ     | 型   |説明|
+| プロパティ     | 種類   |説明|
 |:---------------|:--------|:----------|
-|allowCreateUpdateChannels|ブール値|True の場合、来園者のセットを追加したりチャンネルを更新する場合。|
-|allowDeleteChannels|ブール値|場合は true を指定すると、来園者に設定するには、チャンネルを削除できます。|
+|allowCreateUpdateChannels|ブール型|True の場合、来園者のセットを追加したりチャンネルを更新する場合。|
+|allowDeleteChannels|ブール型|場合は true を指定すると、来園者に設定するには、チャンネルを削除できます。|
 
 ## <a name="json-representation"></a>JSON 表記
 

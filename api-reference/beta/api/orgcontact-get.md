@@ -1,12 +1,13 @@
 ---
 title: OrgContact を取得します。
 description: プロパティと orgcontact オブジェクトの関係を取得します。
-ms.openlocfilehash: 9297297bf341d622070c6ca200d99087588a8ce6
-ms.sourcegitcommit: f3d479edf03935d0edbbc7668a65f7cde2a56c92
+localization_priority: Normal
+ms.openlocfilehash: 4a806c48ef7fc9adc4a8eb94bc7c28e3add78d14
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/15/2018
-ms.locfileid: "27283613"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27842932"
 ---
 # <a name="get-orgcontact"></a>OrgContact を取得します。
 

@@ -2,12 +2,13 @@
 title: Create windows10GeneralConfiguration
 description: 新しい windows10GeneralConfiguration オブジェクトを作成します。
 author: tfitzmac
-ms.openlocfilehash: dbaf6ca944295b0bba4786ef55174db57c178360
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 6abaa9a330c564b38a1c30457b0c0bf3dcd491c7
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27352865"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27844829"
 ---
 # <a name="create-windows10generalconfiguration"></a>Create windows10GeneralConfiguration
 

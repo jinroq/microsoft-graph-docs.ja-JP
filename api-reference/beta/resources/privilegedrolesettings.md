@@ -1,12 +1,13 @@
 ---
 title: privilegedRoleSettings リソースの種類
 description: 特権を持つロールの設定を表します。
-ms.openlocfilehash: 14b4919d653de80c97f06aff507c011162c3c0e4
-ms.sourcegitcommit: 2532b8dd7f2533d956e2600855b3daeabdd9b8ff
+localization_priority: Normal
+ms.openlocfilehash: 971c48ce3ecdd2a219a111f3a11884377e20430c
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/30/2018
-ms.locfileid: "27074559"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27842743"
 ---
 # <a name="privilegedrolesettings-resource-type"></a>privilegedRoleSettings リソースの種類
 
@@ -22,10 +23,10 @@ ms.locfileid: "27074559"
 |[PrivilegedRoleSettings を取得します。](../api/privilegedrolesettings-get.md) | [privilegedRoleSettings](privilegedrolesettings.md) |PrivilegedRoleSettings オブジェクトのプロパティと関係を参照してください。|
 |[PrivilegedRoleSettings を更新します。](../api/privilegedrolesettings-update.md) | [privilegedRoleSettings](privilegedrolesettings.md) |PrivilegedRoleSettings オブジェクトを更新します。|
 ## <a name="properties"></a>プロパティ
-| プロパティ     | 型   |説明|
+| プロパティ     | 種類   |説明|
 |:---------------|:--------|:----------|
 |elevationDuration|duration|ロールが有効な場合の期間です。|
-|ID|文字列| ロールの設定の一意の識別子です。 読み取り専用。|
+|ID|文字列| ロールの設定の一意の識別子です。 読み取り専用です。|
 |isMfaOnElevationConfigurable|ブール|**真**mfaOnElevation は、構成可能な場合です。 場合は**false を指定**mfaOnElevation は構成できません。|
 |lastGlobalAdmin|ブール|内部エラーのみを使用します。|
 |maxElavationDuration|duration|アクティブ化されたロールの最大の期間です。|

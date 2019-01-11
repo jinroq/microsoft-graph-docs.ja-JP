@@ -1,12 +1,13 @@
 ---
 title: 所有者の削除
 description: この API を使用して、owners ナビゲーション プロパティを通じて Office 365 のグループ、セキュリティ グループ、メールが有効なセキュリティ グループから所有者を削除できます。
-ms.openlocfilehash: 7ed56ae78f99c583e382b25652702f4189b7842e
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: af45706e6f42f3442e28dd8a04fe6863f957a6fa
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27071003"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27843359"
 ---
 # <a name="remove-owner"></a>所有者の削除
 
@@ -30,7 +31,7 @@ DELETE /groups/{id}/owners/{id}/$ref
 ```
 
 ## <a name="request-headers"></a>要求ヘッダー
-| 名前       | 型 | 説明|
+| 名前       | 種類 | 説明|
 |:---------------|:--------|:----------|
 | Authorization  | string  | ベアラー {トークン}。必須。 |
 

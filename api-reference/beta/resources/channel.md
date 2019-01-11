@@ -2,12 +2,13 @@
 title: チャネル リソースの種類
 description: 'チャネルは、チーム内での chatMessages のコレクションです。 '
 author: nkramer
-ms.openlocfilehash: 18a3293b757e641eab98b166a43ce023762ccc6d
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Priority
+ms.openlocfilehash: 058632c9f56462195db0cd268fd0af262d4292f3
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27326776"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27842687"
 ---
 # <a name="channel-resource-type"></a>チャネル リソースの種類
 
@@ -28,7 +29,7 @@ ms.locfileid: "27326776"
 |[リストからチャネルのメッセージ](../api/channel-list-messages.md)  | [chatMessage](../resources/chatmessage.md) | チャネルでメッセージを取得します。 |
 |[チャットのスレッドを作成します。](../api/channel-post-chatthreads.md) | [chatThread](chatthread.md)コレクション| 指定したチャンネルでのチャットのスレッドを作成します。|
 
-## <a name="properties"></a>Properties
+## <a name="properties"></a>プロパティ
 | プロパティ     | 種類   |説明|
 |:---------------|:--------|:----------|
 |説明|String|チャネルの省略可能な説明です。|

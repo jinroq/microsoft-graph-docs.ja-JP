@@ -2,12 +2,13 @@
 title: win32LobApp リソースの種類
 description: プロパティと Win32 アプリケーションの継承されたプロパティが含まれています。
 author: tfitzmac
-ms.openlocfilehash: c0941db87aeb5f2414d7e1c06729461de3483bc9
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 6cd1a0d715ba4c9ebcd26d88edcefcd0136bf919
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27323094"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27842771"
 ---
 # <a name="win32lobapp-resource-type"></a>win32LobApp リソースの種類
 
@@ -28,7 +29,7 @@ ms.locfileid: "27323094"
 |[Win32LobApp を削除します。](../api/intune-apps-win32lobapp-delete.md)|なし|の[win32LobApp](../resources/intune-apps-win32lobapp.md)を削除します。|
 |[Win32LobApp を更新します。](../api/intune-apps-win32lobapp-update.md)|[win32LobApp](../resources/intune-apps-win32lobapp.md)|[Win32LobApp](../resources/intune-apps-win32lobapp.md)オブジェクトのプロパティを更新します。|
 
-## <a name="properties"></a>Properties
+## <a name="properties"></a>プロパティ
 |プロパティ|種類|説明|
 |:---|:---|:---|
 |ID|String|エンティティのキー。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|

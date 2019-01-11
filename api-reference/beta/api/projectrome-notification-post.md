@@ -1,12 +1,13 @@
 ---
 title: 作成し、通知を送信します。
 description: '作成し、Microsoft Graph を使用してユーザーを対象とする通知を送信します。 通知は、フィード ストア、Microsoft Graph の通知に格納され、ユーザーがサインインしてデバイスのすべてのエンドポイント上のすべてのアプリケーション クライアントに送信されます。  '
-ms.openlocfilehash: 7855d8b369a2efc6dada33c66c12ae76384a2760
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 67906aa56ace21d9d03cfe47c17acda38d8c680f
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27071834"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27843899"
 ---
 # <a name="create-and-send-a-notification"></a>作成し、通知を送信します。
 > **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。
@@ -28,7 +29,7 @@ ms.locfileid: "27071834"
 POST /me/notifications/
 ```
 ## <a name="request-headers"></a>要求ヘッダー
-|名前 | 型 | 説明|
+|名前 | 種類 | 説明|
 |:----|:-----|:-----------|
 |Authorization | string |承認ヘッダーを使用して、呼び出し元の関係者の資格情報を渡します。 ベアラー {トークンが記述されています。 必須。 |
 ## <a name="request-body"></a>要求本文

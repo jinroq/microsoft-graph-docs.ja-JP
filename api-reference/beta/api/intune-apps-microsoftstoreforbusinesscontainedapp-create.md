@@ -2,12 +2,13 @@
 title: MicrosoftStoreForBusinessContainedApp を作成します。
 description: 新しい microsoftStoreForBusinessContainedApp オブジェクトを作成します。
 author: tfitzmac
-ms.openlocfilehash: 7fb904075510dd381ab66346a773af2a960bc67b
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: ac782261c00008bf9b4ab552932f8f841a9965bc
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27328106"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27843296"
 ---
 # <a name="create-microsoftstoreforbusinesscontainedapp"></a>MicrosoftStoreForBusinessContainedApp を作成します。
 
