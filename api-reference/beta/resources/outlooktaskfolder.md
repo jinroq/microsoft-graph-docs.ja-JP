@@ -2,12 +2,13 @@
 title: outlookTaskFolder リソースの種類
 description: 'Outlook のタスク (outlookTask オブジェクトのコレクション) を含むフォルダーです。 '
 author: angelgolfer-ms
-ms.openlocfilehash: 505b6bf0fe172d701d85230b907727663595d9d3
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 4b4c4bade46022b30c6e4e1f50aae58d32656f0b
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27306210"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27882930"
 ---
 # <a name="outlooktaskfolder-resource-type"></a>outlookTaskFolder リソースの種類
 
@@ -33,7 +34,7 @@ Outlook では、既定のタスク グループ `My Tasks` には、ユーザ�
 |[複数値の拡張プロパティを作成する](../api/multivaluelegacyextendedproperty-post-multivalueextendedproperties.md) | [outlookTaskFolder](outlooktaskfolder.md) | 新規または既存の Outlook タスク フォルダー内の 1 つまたは複数の値を複数の拡張プロパティを作成します。  |
 |[拡張プロパティ値を複数の作業フォルダーを取得します。](../api/multivaluelegacyextendedproperty-get.md)  | [outlookTaskFolder](outlooktaskfolder.md) | 使用して複数の値の拡張プロパティを含む Outlook の仕事フォルダーを取得する`$expand`。 |
 
-## <a name="properties"></a>Properties
+## <a name="properties"></a>プロパティ
 | プロパティ     | 種類   |説明|
 |:---------------|:--------|:----------|
 |changeKey|String|タスク フォルダーのバージョン。|

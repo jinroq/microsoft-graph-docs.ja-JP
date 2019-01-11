@@ -2,12 +2,13 @@
 title: ManagedDeviceMobileAppConfigurationDeviceStatus を作成します。
 description: 新しい managedDeviceMobileAppConfigurationDeviceStatus オブジェクトを作成します。
 author: tfitzmac
-ms.openlocfilehash: c98ee7ebbade4f5b32edf51f860b55c8de5db391
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: ba758e1e7beb9d665c63da575a5011c41a0b95f1
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27309213"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27887886"
 ---
 # <a name="create-manageddevicemobileappconfigurationdevicestatus"></a>ManagedDeviceMobileAppConfigurationDeviceStatus を作成します。
 

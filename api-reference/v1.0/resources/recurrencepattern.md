@@ -1,12 +1,13 @@
 ---
 title: recurrencePattern リソースの種類
 description: '定期的なイベントを繰り返す頻度について説明します。 '
-ms.openlocfilehash: 7cd783748d9e1de5b62ee3677040616162b3c1ea
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: ebdb8a71d9f3acfb40191a7148f55999f6158aa1
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27021263"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27892184"
 ---
 # <a name="recurrencepattern-resource-type"></a>recurrencePattern リソースの種類
 
@@ -29,7 +30,7 @@ ms.locfileid: "27021263"
 
 
 ## <a name="properties"></a>プロパティ
-| プロパティ     | 型   |説明|
+| プロパティ     | 種類   |説明|
 |:---------------|:--------|:----------|
 |dayOfMonth|Int32|イベントが発生する月の日付。 **type** が、`absoluteMonthly` または `absoluteYearly` の場合、必要です。 |
 |daysOfWeek|dayOfWeek コレクション|イベントが発生する曜日のコレクションです。 可能な値: `sunday`、 `monday`、 `tuesday`、 `wednesday`、 `thursday`、 `friday`、 `saturday`。 <br>**type** が `relativeMonthly` または `relativeYearly` であり、**daysOfWeek** で 1 日以上を指定する場合、パターンを満たす最初の日にイベントが発生します。 <br> **type** が `weekly`、`relativeMonthly`、`relativeYearly` の場合、必要です。|

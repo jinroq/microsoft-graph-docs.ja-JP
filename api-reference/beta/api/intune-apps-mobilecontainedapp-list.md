@@ -2,12 +2,13 @@
 title: リスト mobileContainedApps
 description: MobileContainedApp オブジェクトのプロパティと関係を一覧表示します。
 author: tfitzmac
-ms.openlocfilehash: 66c361e6e6a3e4935722a72389e38b9bbda5811c
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 74aa7d04975c6098b0368d916d0c86f019359dae
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27315709"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27887480"
 ---
 # <a name="list-mobilecontainedapps"></a>リスト mobileContainedApps
 

@@ -2,12 +2,13 @@
 title: mobileAppContentFile リソース タイプ
 description: 特定の mobileAppContent バージョンに関連付けられている単一のインストーラー ファイルのプロパティが含まれています。
 author: tfitzmac
-ms.openlocfilehash: 3ab62a5aa49062209fb18add293344fe68730c66
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: b27f34830c4266b35deafbc67b5c5536f10aec1c
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27337185"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27891477"
 ---
 # <a name="mobileappcontentfile-resource-type"></a>mobileAppContentFile リソース タイプ
 

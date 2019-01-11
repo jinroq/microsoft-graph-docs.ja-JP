@@ -1,12 +1,13 @@
 ---
 title: synchronizationJob リソースの種類
 description: バック グラウンドで定期的に実行している、1 つのディレクトリと別のディレクトリにプッシュすることで変更をポーリングして同期を実行します。 同期ジョブは、テナントにアプリケーションの特定のインスタンスに固有では常にします。 同期ジョブの設定の一部として、ターゲット ディレクトリにオブジェクトを読み書きするための承認を与えると、ジョブの同期スキーマをカスタマイズする必要があります。
-ms.openlocfilehash: 0e6428f2a088e5326f4412e743489c4d94b10296
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 4d65f39cd63357c8fc7c1e22d3d3871eb1646d53
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27073911"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27892149"
 ---
 # <a name="synchronizationjob-resource-type"></a>synchronizationJob リソースの種類
 
@@ -20,21 +21,21 @@ ms.locfileid: "27073911"
 |:--------------|:--------------------------|:-----------------------------|
 |[List](../api/synchronization-synchronizationjob-list.md)             |[synchronizationJob](synchronization-synchronizationjob.md)コレクション  |特定のアプリケーションのインスタンス (サービス主体) の既存のジョブを一覧表示します。|
 |[SynchronizationJob を取得します。](../api/synchronization-synchronizationjob-get.md) | [synchronizationJob](synchronization-synchronizationjob.md) |SynchronizationJob オブジェクトのプロパティと関係を参照してください。|
-|[作成](../api/synchronization-synchronizationjob-post.md)         |[synchronizationJob](synchronization-synchronizationjob.md)   |特定のアプリケーション用の新しいジョブを作成します。|
+|[Create](../api/synchronization-synchronizationjob-post.md)         |[synchronizationJob](synchronization-synchronizationjob.md)   |特定のアプリケーション用の新しいジョブを作成します。|
 |[Start](../api/synchronization-synchronizationjob-start.md)          |なし   |同期を開始します。 ジョブが一時停止状態にある場合は、ジョブが一時停止された時点から続行します。 ジョブは、検疫では、検疫の状態がクリアされます。|
 |[Restart](../api/synchronization-synchronizationjob-restart.md)      |なし   |上で起動し、ディレクトリ内のすべてのオブジェクトを再処理するジョブを強制します。|
 |[Pause](../api/synchronization-synchronizationjob-pause.md)          |なし   |同期を一時的に停止します。 ジョブの状態を含むすべての進捗が保持され、ジョブが[起動](../api/synchronization-synchronizationjob-start.md)の呼び出しが行われる場合停止した位置から続行されます。|
-|[削除](../api/synchronization-synchronizationjob-delete.md)        |なし   |同期を停止し、ジョブに関連付けられているすべての状態を完全に削除します。|
+|[Delete](../api/synchronization-synchronizationjob-delete.md)        |なし   |同期を停止し、ジョブに関連付けられているすべての状態を完全に削除します。|
 |[SynchrnoizationSchema を取得します。](../api/synchronization-synchronizationschema-get.md)    |[synchronizationSchema](synchronization-synchronizationschema.md)   |ジョブの効果的な同期スキーマを取得します。|
 |[SynchroizationSchema を更新します。](../api/synchronization-synchronizationschema-update.md)    |なし   |ジョブの同期のスキーマを更新します。 |
 |[資格情報を検証します。](../api/synchronization-synchronizationjob-validatecredentials.md)|なし|ターゲット ディレクトリに対して指定された資格情報をテストします。|
 
 ## <a name="properties"></a>プロパティ
 
-| プロパティ      | 型      | 説明    |
+| プロパティ      | 種類      | 説明    |
 |:--------------|:----------|:---------------|
-|id             |String                     |固有の同期ジョブの識別子です。 読み取り専用。|
-|スケジュール       |[synchronizationSchedule](synchronization-synchronizationschedule.md)|スケジュールがジョブを実行するために使用します。 読み取り専用。|
+|ID             |String                     |固有の同期ジョブの識別子です。 読み取り専用です。|
+|スケジュール       |[synchronizationSchedule](synchronization-synchronizationschedule.md)|スケジュールがジョブを実行するために使用します。 読み取り専用です。|
 |status         |[synchronizationStatus](synchronization-synchronizationstatus.md)     |ジョブが前回実行されたときに、ジョブ、ジョブの現在の状態およびエラーの状態です。|
 |templateId     |文字列    |このジョブで使用する[同期テンプレート](synchronization-synchronizationtemplate.md)の識別子です。|
 

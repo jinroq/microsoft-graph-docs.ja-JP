@@ -2,12 +2,13 @@
 title: ユーザーを一覧表示する
 description: ユーザーとの関連 (ユーザーのコミュニケーションとコラボレーション パターン、およびビジネスのリレーションシップによって決まる) によって配列された人物オブジェクトのコレクションを取得します。
 author: simonhult
-ms.openlocfilehash: 52f3dade14af76732381bf71f0d8556f543287fb
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Priority
+ms.openlocfilehash: c1152990e23a931f246c5319e795ef7568aadd76
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27350114"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27881600"
 ---
 # <a name="list-people"></a>ユーザーを一覧表示する
 
@@ -42,7 +43,7 @@ GET /users/{id | userPrincipalName}/people
 |:---------------|:--------|:-------|
 |$filter|文字列|応答を、指定した条件に等しいレコードを持つ人物のみに制限します。|
 |$orderby|文字列|既定では、応答に含まれる人物は、クエリとの関連性で並べ替えられます。 応答に含まれる人物の順序は、*$orderby* パラメーターを使用することで変更できます。|
-|$search|string|名またはエイリアスで人物を検索します。 ファジー マッチをサポートします。 パラメーターだけが、他のユーザーに関連する人の検索ではなく、サインインしているユーザーの関連するユーザーを検索します。 サポートしており、`topic`その人と電子メールのやり取りなどから抽出された項目に基づいて、ユーザーを検索するキーワードです。 例については、[人の関連情報を取得](/graph/people-example#perform-a-fuzzy-search)することで*あいまい検索を実行する*セクションを参照してください。 |
+|$search|文字列|名またはエイリアスで人物を検索します。 ファジー マッチをサポートします。 パラメーターだけが、他のユーザーに関連する人の検索ではなく、サインインしているユーザーの関連するユーザーを検索します。 サポートしており、`topic`その人と電子メールのやり取りなどから抽出された項目に基づいて、ユーザーを検索するキーワードです。 例については、[人の関連情報を取得](/graph/people-example#perform-a-fuzzy-search)することで*あいまい検索を実行する*セクションを参照してください。 |
 |$select|文字列|応答に含めるプロパティを示すコンマ区切りのリスト。最適なパフォーマンスを得るには、必要なプロパティのサブセットのみを選択します。|
 |$skip|int|最初の n 個の結果をスキップします。これはページングに役立ちます。これは *$search* の使用時にはサポートされません。|
 |$top|int|返される結果の数。|

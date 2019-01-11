@@ -2,12 +2,13 @@
 title: 'イベント: 承諾'
 description: ユーザーの予定表で指定したイベントをそのまま使用します。
 author: angelgolfer-ms
-ms.openlocfilehash: 62ca800a118331ce36ca22cc26c26391d9f186c6
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: afff4a9eebb72fa9c624decb55d2677d4c5d41fb
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27320961"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27894468"
 ---
 # <a name="event-accept"></a>イベント: 承諾
 
@@ -51,7 +52,7 @@ POST /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{
 ## <a name="request-body"></a>要求本文
 要求本文で、次のパラメーターを含む JSON オブジェクトを指定します。
 
-| パラメーター    | 種類   |説明|
+| パラメーター    | Type   |説明|
 |:---------------|:--------|:----------|
 |comment|String|応答に含まれるテキスト。省略可。|
 |sendResponse|ブール型|応答が開催者に送信される場合は、`true`。それ以外の場合は、`false`。省略可。既定値は `true` です。|

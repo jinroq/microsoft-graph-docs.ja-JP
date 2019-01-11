@@ -2,12 +2,13 @@
 title: 'ノートブック: getRecentNotebooks'
 description: サインインしたユーザーによってアクセスされた recentNotebook インスタンスの一覧を取得します。
 author: Jewan-microsoft
-ms.openlocfilehash: ca0f39b3a7184e667b8ed848ac89ffd78ae096f4
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 6c6d6920636f3d5aa6201bb1183437906bad6cfd
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27354139"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27894293"
 ---
 # <a name="notebook-getrecentnotebooks"></a>ノートブック: getRecentNotebooks
 
@@ -34,7 +35,7 @@ GET /users/{id | userPrincipalName}/onenote/notebooks/getRecentNotebooks(include
 
 ## <a name="function-parameters"></a>関数パラメーター
 
-| パラメーター    | 種類   |説明|
+| Parameter    | Type   |説明|
 |:---------------|:--------|:----------|
 |includePersonalNotebooks|Boolean|ユーザーが所有しているノートブックを含みます。 ユーザーが所有しているノートブックを含むには、`true` に設定します。そうでない場合は、`false` に設定します。 `includePersonalNotebooks` パラメーターを含めない場合、要求は `400` エラー応答を返します。|
 

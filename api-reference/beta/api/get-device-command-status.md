@@ -1,12 +1,13 @@
 ---
 title: デバイス コマンドのステータスを取得します。
 description: デバイス上には、コマンドのステータスを取得します。 ステータス コードの完全なリスト、actionStatus のリストを参照してください。
-ms.openlocfilehash: 1e51d3b4366e87d9802518a50fe348d3ba0f250d
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 9dca743a50f248abee76fb4d54352df3d400ada1
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27066355"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27883133"
 ---
 # <a name="get-device-command-status"></a>デバイス コマンドのステータスを取得します。
 
@@ -79,7 +80,7 @@ HTTP/1.1 200 OK
 - エラー、または内部またはコマンドの処理中にエラー
 - カスタム/カスタム/ステータス
 
-## <a name="example"></a>使用例
+## <a name="example"></a>例
 
 この例では、デバイスの ID とデバイスに発行されたコマンドの ID を必要があります。 GET を発行するときに ID が返されるデバイスの呼び出しの`/me/devices`の投稿を行うときに ID が返されるコマンドを呼び出すと`/me/devices/{id}/command`。
 
@@ -173,7 +174,7 @@ HTTP/1.1 200 OK
 }
 ```
 
-### <a name="example"></a>使用例
+### <a name="example"></a>例
 
 この例では、デバイスの ID とデバイスに発行されたコマンドの ID を必要があります。 に対して GET を発行するときに ID が返されるデバイスを呼び出す`/me/devices`の投稿を行うときに ID が返されるコマンドを呼び出すと`/me/devices/{id}/command`。
 

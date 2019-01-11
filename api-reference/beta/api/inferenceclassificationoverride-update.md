@@ -1,12 +1,13 @@
 ---
 title: InferenceClassificationOverride を更新します。
 description: '重点を置いて [受信トレイ] の [ **classifyAs** ] フィールドの変更は、指定されたオーバーライドします。 '
-ms.openlocfilehash: 696b3826bf09d3e0f706a3c3fdfba620e416ef22
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: b9d462bc09f69b07d5b6b4bce031932e1b702b44
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27073547"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27887907"
 ---
 # <a name="update-inferenceclassificationoverride"></a>InferenceClassificationOverride を更新します。
 
@@ -37,7 +38,7 @@ PATCH /users/{id}/inferenceClassification/overrides/{id}
 ```
 
 ## <a name="request-headers"></a>要求ヘッダー
-| 名前       | 型 | 説明|
+| 名前       | 種類 | 説明|
 |:---------------|:--------|:----------|
 | Authorization  | string  | ベアラー {トークン}。必須。 |
 | Content-Type | string  | エンティティ本文内のデータの性質です。必須。 |
@@ -45,7 +46,7 @@ PATCH /users/{id}/inferenceClassification/overrides/{id}
 ## <a name="request-body"></a>要求本文
 要求の本文内に、**classifyAs** の新しい値を指定します。最適なパフォーマンスを得るためには、変更されない既存の値を含めないでください。
 
-| プロパティ     | 型   |説明|
+| プロパティ     | 種類   |説明|
 |:---------------|:--------|:----------|
 |classifyAs|文字列| 特定の差出人からの着信メッセージを常時分類する方法を指定します。可能な値は、`focused`、`other` です。|
 

@@ -1,12 +1,13 @@
 ---
 title: '投稿: 転送'
 description: '受信者に投稿を転送します。 要求に親スレッドとスレッドの両方を指定することができます。 '
-ms.openlocfilehash: 736b23aaf90cb7e4af243129e52a014ae623b8f4
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 64b7d87745cf897ea827d37a9cd4f4c60d197068
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27069585"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27889440"
 ---
 # <a name="post-forward"></a>投稿: 転送
 
@@ -38,7 +39,7 @@ POST /groups/{id}/conversations/{id}/threads/{id}/posts/{id}/forward
 ## <a name="request-body"></a>要求本文
 要求本文で、次のパラメーターを含む JSON オブジェクトを指定します。
 
-| パラメーター    | 型   |説明|
+| パラメーター    | Type   |説明|
 |:---------------|:--------|:----------|
 |comment|String|投稿と共に転送されるオプションのコメント。|
 |toRecipients|[recipient](../resources/recipient.md) collection|スレッドの転送先となる受信者。|

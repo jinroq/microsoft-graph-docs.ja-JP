@@ -1,12 +1,13 @@
 ---
 title: inferenceClassificationOverride リソースの種類
 description: 特定の差出人からの着信メッセージを常時分類するためのユーザーのオーバーライドを表します。
-ms.openlocfilehash: 3f3f07e870a4ba549062197a380633ab591c54fe
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 8df0f1e5fa34c630c51de7c73234e6092448f867
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27022021"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27885065"
 ---
 # <a name="inferenceclassificationoverride-resource-type"></a>inferenceClassificationOverride リソースの種類
 
@@ -18,10 +19,10 @@ ms.locfileid: "27022021"
 | メソッド           | 戻り値の型    |説明|
 |:---------------|:--------|:----------|
 |[Update](../api/inferenceclassificationoverride-update.md) | [inferenceClassificationOverride](inferenceclassificationoverride.md) |指定のとおり、オーバーライドの **ClassifyAs** フィールドを変更します。 |
-|[削除](../api/inferenceclassificationoverride-delete.md) | なし |その ID で指定されたオーバーライドを削除します。 |
+|[Delete](../api/inferenceclassificationoverride-delete.md) | なし |その ID で指定されたオーバーライドを削除します。 |
 
 ## <a name="properties"></a>プロパティ
-| プロパティ     | 型   |説明|
+| プロパティ     | 種類   |説明|
 |:---------------|:--------|:----------|
 |classifyAs|inferenceClassificationType| 特定の差出人からの着信メッセージを常時分類する方法を指定します。 可能な値: `focused`、 `other`。|
 |ID|文字列| オーバーライドの一意識別子。読み取り専用です。|

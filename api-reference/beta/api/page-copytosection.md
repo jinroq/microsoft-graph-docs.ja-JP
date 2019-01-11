@@ -1,12 +1,13 @@
 ---
 title: 'page: copyToSection'
 description: 特定のセクションにページをコピーします。
-ms.openlocfilehash: d725c72eb78613845e808a3ec3694513730bb01f
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 10d0eecd2f84a33e66209f8297b72b8a4630b100
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27072030"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27892506"
 ---
 # <a name="page-copytosection"></a>page: copyToSection
 
@@ -34,7 +35,7 @@ POST /groups/{id}/onenote/pages/{id}/copyToSection
 POST /sites/{id}/onenote/pages/{id}/copyToSection
 ```
 ## <a name="request-headers"></a>要求ヘッダー
-| 名前       | 型 | 説明|
+| 名前       | 種類 | 説明|
 |:---------------|:--------|:----------|
 | Authorization  | string  | ベアラー {トークン}。必須。 |
 | Content-Type | string | `application/json` |
@@ -42,7 +43,7 @@ POST /sites/{id}/onenote/pages/{id}/copyToSection
 ## <a name="request-body"></a>要求本文
 要求本文では、操作に必要なパラメーターを格納する JSON オブジェクトを指定します。
 
-| パラメーター    | 型   |説明|
+| パラメーター    | Type   |説明|
 |:---------------|:--------|:----------|
 |siteCollectionId|String|コピーする SharePoint サイトの id です。 Office 365 チーム サイトにコピーするときにのみを使用します。|
 |siteId|String|コピーする SharePoint web の id です。 Office 365 チーム サイトにコピーするときにのみを使用します。|

@@ -2,12 +2,13 @@
 title: ratingUnitedStatesMoviesType 列挙型
 description: 映画が米国でのラベルの評価
 author: tfitzmac
-ms.openlocfilehash: d408d16dd0f026a6e2ab3711a9600f1423db7f6a
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 22861c0b05fc6a3dacbf520d03ee04b516dad3e5
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27317228"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27887844"
 ---
 # <a name="ratingunitedstatesmoviestype-enum-type"></a>ratingUnitedStatesMoviesType 列挙型
 

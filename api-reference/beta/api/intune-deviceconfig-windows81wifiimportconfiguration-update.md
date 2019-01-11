@@ -2,12 +2,13 @@
 title: Windows81WifiImportConfiguration を更新します。
 description: Windows81WifiImportConfiguration オブジェクトのプロパティを更新します。
 author: tfitzmac
-ms.openlocfilehash: 043d68ef67d495ddde96bb7dc4066a7e122e718d
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: d0d37ec614030b4864aeefff1fe1aab50c4dfa82
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27327917"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27880676"
 ---
 # <a name="update-windows81wifiimportconfiguration"></a>Windows81WifiImportConfiguration を更新します。
 

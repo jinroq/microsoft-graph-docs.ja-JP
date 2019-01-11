@@ -1,18 +1,19 @@
 ---
 title: dataPolicyOperation リソースの種類
 description: 送信されたデータ ポリシー操作を表します。 操作のステータスを追跡するために必要な情報が含まれています。 など、企業の管理者は、従業員の会社のデータをエクスポートするのにはデータのポリシーの操作要求を送信し、その要求を後で追跡できます。
-ms.openlocfilehash: 6e896fdfa60b733dd91e9da573d998c1949f0d9c
-ms.sourcegitcommit: 4a46cfd112c8089fc07e4e5ccdccaf415a3a0e7f
+localization_priority: Normal
+ms.openlocfilehash: b56cfe766bbfcae9339805dd61ce816e372d02f4
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "27156034"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27876007"
 ---
 # <a name="datapolicyoperation-resource-type"></a>dataPolicyOperation リソースの種類
 
 送信されたデータ ポリシー操作を表します。 操作のステータスを追跡するために必要な情報が含まれています。 など、企業の管理者は、従業員の会社のデータをエクスポートするのにはデータのポリシーの操作要求を送信し、その要求を後で追跡できます。
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>メソッド
 
 | メソッド           | 戻り値の型    |説明|
 |:---------------|:--------|:----------|

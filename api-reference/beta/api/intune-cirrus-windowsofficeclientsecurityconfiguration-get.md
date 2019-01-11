@@ -2,12 +2,13 @@
 title: WindowsOfficeClientSecurityConfiguration を取得します。
 description: 特定のセキュリティ ポリシーの windowsOfficeClientSecurityConfiguration オブジェクトを取得します。
 author: tfitzmac
-ms.openlocfilehash: 6d549adaf511eff18b890b1fff16a3bfed08a054
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: c088f5a588d68a462adc6e7918336f687ae92137
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27358444"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27891295"
 ---
 # <a name="get-windowsofficeclientsecurityconfiguration"></a>WindowsOfficeClientSecurityConfiguration を取得します。
 

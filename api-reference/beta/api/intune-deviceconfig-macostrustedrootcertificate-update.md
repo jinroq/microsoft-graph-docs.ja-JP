@@ -2,12 +2,13 @@
 title: MacOSTrustedRootCertificate を更新します。
 description: MacOSTrustedRootCertificate オブジェクトのプロパティを更新します。
 author: tfitzmac
-ms.openlocfilehash: d36b31d5211d0c4233ba6dd5811e5f98de9dd6fb
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 38e0d22621dfb7fa59d55ffc292fc4ea18addb73
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27312853"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27890833"
 ---
 # <a name="update-macostrustedrootcertificate"></a>MacOSTrustedRootCertificate を更新します。
 

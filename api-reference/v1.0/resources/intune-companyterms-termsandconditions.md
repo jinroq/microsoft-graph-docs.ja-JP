@@ -1,12 +1,13 @@
 ---
 title: termsAndConditions リソース タイプ
 description: C ポリシーの内容は、管理者が再承認を必要な場所 Intune に登録するのには、最初の試行時に、その後の編集時にユーザーに提示されます。 それらを使用して、管理者は、デバイスを Intune に登録するためにユーザーが同意しなければならない規定を伝えることができます。
-ms.openlocfilehash: 73a79a4e0684f04cb7c8caaff1e9ed944af7fe80
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 2f435f08c306f8dadd76257e19a53c9a6cee95d7
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27023149"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27881579"
 ---
 # <a name="termsandconditions-resource-type"></a>termsAndConditions リソース タイプ
 
@@ -23,9 +24,9 @@ termsAndConditions エンティティは、特定の使用条件 (T&C) ポリシ
 |[Update termsAndConditions](../api/intune-companyterms-termsandconditions-update.md)|[termsAndConditions](../resources/intune-companyterms-termsandconditions.md)|[termsAndConditions](../resources/intune-companyterms-termsandconditions.md) オブジェクトのプロパティを更新します。|
 
 ## <a name="properties"></a>プロパティ
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
-|id|String|T&C ポリシーの一意識別子。|
+|ID|String|T&C ポリシーの一意識別子。|
 |createdDateTime|DateTimeOffset|オブジェクトが作成された DateTime。|
 |lastModifiedDateTime|DateTimeOffset|オブジェクトが最後に変更された DateTime。|
 |displayName|String|T&C ポリシー用に管理者が提供した名前。 |

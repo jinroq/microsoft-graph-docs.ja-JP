@@ -1,12 +1,13 @@
 ---
 title: mailboxSettings リソースの種類
 description: サインイン ユーザーのプライマリ メールボックスの設定。
-ms.openlocfilehash: 79a01c59ec0a891c13107095a950a7cc8ae0b547
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 83bb3fffce2c4d61c92b9110c88d05fbba86893a
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27066543"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27887725"
 ---
 # <a name="mailboxsettings-resource-type"></a>mailboxSettings リソースの種類
 
@@ -16,7 +17,7 @@ ms.locfileid: "27066543"
 
 
 ## <a name="properties"></a>プロパティ
-| プロパティ     | 型   |説明|
+| プロパティ     | 種類   |説明|
 |:---------------|:--------|:----------|
 |archiveFolder|文字列|ユーザーのアーカイブ フォルダーのフォルダー ID。|
 |automaticRepliesSetting|[automaticRepliesSetting](automaticrepliessetting.md)|サインイン ユーザーからのメッセージを使用して、着信メールの送信者に自動的に通知する構成設定。|

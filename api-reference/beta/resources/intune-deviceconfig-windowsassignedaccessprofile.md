@@ -2,12 +2,13 @@
 title: windowsAssignedAccessProfile リソースの種類
 description: Windows のアクセスのプロファイルを割り当てられています。
 author: tfitzmac
-ms.openlocfilehash: 6b01f362c31f6e2791a00d8ff02a7ecd5b798e3c
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 93f71952c45f4fd8bbd397f0ea115abbe3faafac
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27328792"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27890609"
 ---
 # <a name="windowsassignedaccessprofile-resource-type"></a>windowsAssignedAccessProfile リソースの種類
 
@@ -25,7 +26,7 @@ Windows のアクセスのプロファイルを割り当てられています。
 |[WindowsAssignedAccessProfile を削除します。](../api/intune-deviceconfig-windowsassignedaccessprofile-delete.md)|なし|の[windowsAssignedAccessProfile](../resources/intune-deviceconfig-windowsassignedaccessprofile.md)を削除します。|
 |[WindowsAssignedAccessProfile を更新します。](../api/intune-deviceconfig-windowsassignedaccessprofile-update.md)|[windowsAssignedAccessProfile](../resources/intune-deviceconfig-windowsassignedaccessprofile.md)|[WindowsAssignedAccessProfile](../resources/intune-deviceconfig-windowsassignedaccessprofile.md)オブジェクトのプロパティを更新します。|
 
-## <a name="properties"></a>Properties
+## <a name="properties"></a>プロパティ
 |プロパティ|種類|説明|
 |:---|:---|:---|
 |ID|String|エンティティのキー。|
