@@ -2,12 +2,13 @@
 title: mobileAppIntentAndStateDetail リソースの種類
 description: モバイル アプリケーションの目的および特定のデバイスのインストールの状態です。
 author: tfitzmac
-ms.openlocfilehash: 6a0a52d1cf8576778060c6f7b5e337e6e7a115e5
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: ad20ef00cbc8e5295a96107fbce2f5e7f1cb978a
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27339222"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27805811"
 ---
 # <a name="mobileappintentandstatedetail-resource-type"></a>mobileAppIntentAndStateDetail リソースの種類
 
@@ -16,7 +17,7 @@ ms.locfileid: "27339222"
 > **注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
 
 モバイル アプリケーションの目的および特定のデバイスのインストールの状態です。
-## <a name="properties"></a>Properties
+## <a name="properties"></a>プロパティ
 |プロパティ|種類|説明|
 |:---|:---|:---|
 |applicationId|文字列型 (String)|MobieApp の識別子です。|

@@ -2,12 +2,13 @@
 title: AndroidWorkProfileScepCertificateProfile を取得します。
 description: AndroidWorkProfileScepCertificateProfile オブジェクトのプロパティと関係を参照してください。
 author: tfitzmac
-ms.openlocfilehash: 709740d5646e2c0b4241ab15a1677cb4a69bc73b
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: c75567a0cdbb66ae329c4250db393d4c46601f57
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27303011"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27822870"
 ---
 # <a name="get-androidworkprofilescepcertificateprofile"></a>AndroidWorkProfileScepCertificateProfile を取得します。
 

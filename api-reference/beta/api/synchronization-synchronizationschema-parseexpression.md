@@ -1,12 +1,13 @@
 ---
 title: 'synchronizationSchema: parseExpression'
 description: '(../resources/synchronization_attributemappingsource.md) オブジェクト。 '
-ms.openlocfilehash: d6cc929681458ff00a806150aa8db9daf115548a
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: dbde03b9ae85377801ad894c8b8ca22c6baebc85
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27070006"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27811026"
 ---
 # <a name="synchronizationschema-parseexpression"></a>synchronizationSchema: parseExpression
 
@@ -40,7 +41,7 @@ POST /servicePrincipals/{id}/synchronization/templates/{id}/schema/parseExpressi
 ## <a name="request-body"></a>要求本文
 要求本文で、次のパラメーターを含む JSON オブジェクトを指定します。
 
-| パラメーター    | 型   |説明|
+| パラメーター    | Type   |説明|
 |:---------------|:--------|:----------|
 |式               |String               |解析する式を指定します。|
 |testInputObject          |[expressionInputObject](../resources/synchronization-expressioninputobject.md)|に対して式を評価するためにデータ オブジェクトをテストします。 省略可能。|

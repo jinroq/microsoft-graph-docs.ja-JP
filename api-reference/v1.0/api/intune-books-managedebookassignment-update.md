@@ -2,12 +2,13 @@
 title: managedEBookAssignment の更新
 description: managedEBookAssignment オブジェクトのプロパティを更新します。
 author: tfitzmac
-ms.openlocfilehash: 041d1b16754c7c3f8047a40073590d5647e91f3c
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: cad8ce31a9de355b79407ee4658ea13ef0415732
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27326503"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27804964"
 ---
 # <a name="update-managedebookassignment"></a>managedEBookAssignment の更新
 

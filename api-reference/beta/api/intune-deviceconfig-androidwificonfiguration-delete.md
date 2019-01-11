@@ -2,12 +2,13 @@
 title: AndroidWiFiConfiguration を削除します。
 description: AndroidWiFiConfiguration を削除します。
 author: tfitzmac
-ms.openlocfilehash: 5280daf445d7fdf62bffc90701aefd461ccdea79
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 2ff7ad06a89b2853c5daf83bd6b3abe7da4e1140
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27324340"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27807932"
 ---
 # <a name="delete-androidwificonfiguration"></a>AndroidWiFiConfiguration を削除します。
 

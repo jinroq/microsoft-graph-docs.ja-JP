@@ -2,12 +2,13 @@
 title: windowsKioskProfile リソースの種類
 description: まだ文書化されていません
 author: tfitzmac
-ms.openlocfilehash: ce57b18e86f40a46053a5e0a0f41652763a6d055
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: c082b5fb9421af36bbc742051989492a5a3b19d0
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27345354"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27807652"
 ---
 # <a name="windowskioskprofile-resource-type"></a>windowsKioskProfile リソースの種類
 

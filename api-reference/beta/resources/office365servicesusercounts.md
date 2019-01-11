@@ -1,20 +1,21 @@
 ---
 title: office365ServicesUserCounts リソースの種類
 description: リソースの JSON 表記を次に示します。
-ms.openlocfilehash: 975a70b040ac5886ea36219a5407f580a42aeadc
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 18282aaa8dcd176a6eaa3a8176154670bfd6da9e
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27067407"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27808016"
 ---
 # <a name="office365servicesusercounts-resource-type"></a>office365ServicesUserCounts リソースの種類
 
 ## <a name="properties"></a>プロパティ
 
-| プロパティ                 | 型   | 説明                              |
+| プロパティ                 | 種類   | 説明                              |
 | :----------------------- | :----- | ---------------------------------------- |
-| reportRefreshDate        | Date   | コンテンツの最新の日付。          |
+| reportRefreshDate        | 日付   | コンテンツの最新の日付。          |
 | exchangeActive           | Int64  | Exchange 上のアクティブ ユーザーの数です。 読み取りし、電子メールを送信できるユーザーは、アクティブなユーザーと見なされます。 |
 | exchangeInactive         | Int64  | Exchange 上のアクティブでないユーザーの数です。 |
 | oneDriveActive           | Int64  | OneDrive のアクティブなユーザーの数です。 表示または編集したファイルを内部または外部でファイルを共有またはファイルを同期するユーザーは、アクティブなユーザーと見なされます。 |

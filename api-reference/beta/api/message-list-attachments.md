@@ -2,12 +2,13 @@
 title: 添付ファイルを一覧表示する
 description: メッセージに添付された添付ファイル オブジェクトのリストを取得します。
 author: angelgolfer-ms
-ms.openlocfilehash: 9f083af679335eb0bf54fa9bd0eadfaa7a5a1250
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 0d89d05c80a8d2437f4940ace2a046f93ba67b82
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27350867"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27806686"
 ---
 # <a name="list-attachments"></a>添付ファイルを一覧表示する
 

@@ -2,12 +2,13 @@
 title: getAssignedRoleIdsForLoggedInUser 関数
 description: 現在認証されているユーザーのロールの割り当てと割り当てられているロールの定義を取得します。
 author: tfitzmac
-ms.openlocfilehash: ccfa8c3eff38854f3576aa0cb50688c80fdacdcf
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 3385d43eb8ee2680d5e2684ffc21690f627a5034
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27335064"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27823605"
 ---
 # <a name="getassignedroleidsforloggedinuser-function"></a>getAssignedRoleIdsForLoggedInUser 関数
 

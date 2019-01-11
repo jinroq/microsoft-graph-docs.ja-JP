@@ -2,12 +2,13 @@
 title: AndroidManagedStoreAccountEnterpriseSettings を取得します。
 description: AndroidManagedStoreAccountEnterpriseSettings オブジェクトのプロパティと関係を参照してください。
 author: tfitzmac
-ms.openlocfilehash: 5e47c9c1456d35932fb040561c8d54cdfd78932e
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: feb0b27e1e89e485cb89dd461ae4afb5a5a84140
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27306644"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27808641"
 ---
 # <a name="get-androidmanagedstoreaccountenterprisesettings"></a>AndroidManagedStoreAccountEnterpriseSettings を取得します。
 

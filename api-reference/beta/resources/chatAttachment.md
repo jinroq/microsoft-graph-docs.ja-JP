@@ -1,12 +1,13 @@
 ---
 title: chatMessageAttachment リソースの種類
 description: チャット メッセージのエンティティの添付ファイルを表します。
-ms.openlocfilehash: 65390caa417b6130a84fada2a089b31125da288a
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 83574a7dbbb35f9c8b95474fac1154154f413470
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27067816"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27805559"
 ---
 # <a name="chatmessageattachment-resource-type"></a>chatMessageAttachment リソースの種類
 
@@ -17,7 +18,7 @@ ms.locfileid: "27067816"
 エンティティの種類の`chatMessageAttachment` [chatMessage](chatmessage.md)エンティティの一部として、[チャネルのメッセージを取得する](../api/channel-list-messages.md)API の一部として返されます。
 
 ## <a name="properties"></a>プロパティ
-| プロパティ     | 型   |説明|
+| プロパティ     | 種類   |説明|
 |:---------------|:--------|:----------|
 |ID|文字列| 読み取り専用です。 添付ファイルの一意の id|
 |contentType| 文字列 | コンテンツの添付ファイルのメディア ・ タイプ。 次の値を持つ、ことができます。 <br><ul><li>参照: 添付ファイルは、別のファイルへのリンクです。 オブジェクトへのリンクに contentURL を設定します。<br></li><li>ファイル: Raw ファイルの添付ファイルです。 データ内のファイルの base64 エンコードを使用して contenturl フィールドを設定します書式設定。<br></li><li>イメージ/: ex 指定したイメージの種類のイメージの種類: イメージまたは png、jpeg のイメージと、イメージまたは gif です。 データ内のファイルの base64 エンコードを使用して contentUrl フィールドを設定します書式設定。<br></li><li>ビデオと: 指定された形式でビデオの種類です。 Ex: ビデオと mp4 です。 データ内のファイルの base64 エンコードを使用して contentUrl フィールドを設定します書式設定。<br></li><li>オーディオ/: 指定された形式でのオーディオの種類です。 Ex: オーディオ/wmw。 データ内のファイルの base64 エンコードを使用して contentUrl フィールドを設定します書式設定。<br></li><li>アプリケーションとカードの種類: カードを使用するカードの正確な形式を指定するカードの種類の添付ファイルの種類の豊富な。 カードの json 形式のコンテンツを設定します。 カードの種類でサポートされる値は次のとおりです。<br><ul><li>application/vnd.microsoft.card.adaptive: テキスト、音声、画像、ボタン、および入力フィールドの任意の組み合わせを含めることができる豊富なカードです。 AdaptiveCard オブジェクトには、コンテンツのプロパティを設定します。</li><li>application/vnd.microsoft.card.animation: アニメーションを再生する豊富なカードです。 AnimationCardobject に、コンテンツのプロパティを設定します。</li><li>application/vnd.microsoft.card.audio: オーディオ ファイルを再生する豊富なカードです。 AudioCard オブジェクトに、コンテンツのプロパティを設定します。</li><li>application/vnd.microsoft.card.video: ビデオを再生する豊富なカードです。 使いのビデオカードのオブジェクトをコンテンツのプロパティを設定します。</li><li>application/vnd.microsoft.card.hero: 英雄カードです。 HeroCard オブジェクトには、コンテンツのプロパティを設定します。</li><li>application/vnd.microsoft.card.thumbnail: サムネイルのカードです。 ThumbnailCard オブジェクトには、コンテンツのプロパティを設定します。</li><li>application/vnd.microsoft.com.card.receipt: レシートのカードです。 ReceiptCard オブジェクトには、コンテンツのプロパティを設定します。</li><li>application/vnd.microsoft.com.card.signin: ユーザーのサインインのカードです。 SignInCard オブジェクトには、コンテンツのプロパティを設定します。</ul></ul>|

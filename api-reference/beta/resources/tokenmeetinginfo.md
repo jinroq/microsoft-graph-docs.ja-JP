@@ -2,12 +2,13 @@
 title: tokenMeetingInfo リソースの種類
 description: TokenMeetingInfo 型です。
 author: VinodRavichandran
-ms.openlocfilehash: 6fa66fef6f401db848a9ed3e92c5a1003a5294b6
-ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
+localization_priority: Normal
+ms.openlocfilehash: 9a618906df450ce58f7428a76367e896b315591a
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "27380549"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27806980"
 ---
 # <a name="tokenmeetinginfo-resource-type"></a>tokenMeetingInfo リソースの種類
 
@@ -17,9 +18,9 @@ TokenMeetingInfo 型です。
 
 ## <a name="properties"></a>プロパティ
 
-| プロパティ                     | 型    | 説明                                                                    |
+| プロパティ                     | 種類    | 説明                                                                    |
 | :--------------------------- | :------ | :----------------------------------------------------------------------------- |
-| allowConversationWithoutHost | Boolean | 会話のホストから離れると、会話を続行できるかどうかを示します。 |
+| allowConversationWithoutHost | ブール型 | 会話のホストから離れると、会話を続行できるかどうかを示します。 |
 | token                        | String  | 会議を結合またはアクティブにするトークンです。                                        |
 
 ## <a name="json-representation"></a>JSON 表記

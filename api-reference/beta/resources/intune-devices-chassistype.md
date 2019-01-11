@@ -2,12 +2,13 @@
 title: chassisType 列挙型
 description: シャーシを入力します。
 author: tfitzmac
-ms.openlocfilehash: 2c65df4e324d186413936c44e611165b447df242
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: e2010957c48623fc5e01eeb87a95251d743f29b3
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27327875"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27806399"
 ---
 # <a name="chassistype-enum-type"></a>chassisType 列挙型
 

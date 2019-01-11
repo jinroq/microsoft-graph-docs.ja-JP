@@ -2,12 +2,13 @@
 title: WindowsPhone81AppX を作成します。
 description: 新しい windowsPhone81AppX オブジェクトを作成します。
 author: tfitzmac
-ms.openlocfilehash: ac8501c6c68f1efe2fb99a39c659868944254048
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 6ad7aa7f33fca7222e9cafbe431c3773ffadfdb5
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27325712"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27808583"
 ---
 # <a name="create-windowsphone81appx"></a>WindowsPhone81AppX を作成します。
 

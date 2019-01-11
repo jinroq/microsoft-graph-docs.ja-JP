@@ -2,12 +2,13 @@
 title: UnsupportedDeviceConfiguration を取得します。
 description: UnsupportedDeviceConfiguration オブジェクトのプロパティと関係を参照してください。
 author: tfitzmac
-ms.openlocfilehash: 9b6b350356d59b3792ca533c3fa65053e7113fa7
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: ebff30e34436239a5c7ffec4d03cb83966a59d98
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27355938"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27817412"
 ---
 # <a name="get-unsupporteddeviceconfiguration"></a>UnsupportedDeviceConfiguration を取得します。
 

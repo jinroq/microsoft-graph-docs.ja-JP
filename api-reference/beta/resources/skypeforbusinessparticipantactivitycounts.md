@@ -1,26 +1,27 @@
 ---
 title: skypeForBusinessParticipantActivityCounts リソースの種類
 description: リソースの JSON 表記を次に示します。
-ms.openlocfilehash: 1e61526b281a87370835e8f6558ab3f0cb5707a4
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: de86c49da34c9af48478a912a6ab042a354a7bf5
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27070210"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27808191"
 ---
 # <a name="skypeforbusinessparticipantactivitycounts-resource-type"></a>skypeForBusinessParticipantActivityCounts リソースの種類
 
 ## <a name="properties"></a>プロパティ
 
-| プロパティ          | 型   |
+| プロパティ          | 種類   |
 | :---------------- | :----- |
 | im                | Int64  |
 | audioVideo        | Int64  |
 | appSharing        | Int64  |
 | web               | Int64  |
 | dialInOut3rdParty | Int64  |
-| reportRefreshDate | Date   |
-| reportDate        | Date   |
+| reportRefreshDate | 日付   |
+| reportDate        | 日付   |
 | reportPeriod      | String |
 
 ## <a name="json-representation"></a>JSON 表記

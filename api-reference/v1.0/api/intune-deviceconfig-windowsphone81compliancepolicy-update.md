@@ -2,12 +2,13 @@
 title: windowsPhone81CompliancePolicy の更新
 description: windowsPhone81CompliancePolicy オブジェクトのプロパティを更新します。
 author: tfitzmac
-ms.openlocfilehash: b017d25570b3cd220fa150b1be49516c02e3467a
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 4032364954e6b38e35915d24959f194fdb3344cf
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27362343"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27815625"
 ---
 # <a name="update-windowsphone81compliancepolicy"></a>windowsPhone81CompliancePolicy の更新
 

@@ -2,12 +2,13 @@
 title: Windows10PkcsCertificateProfile を取得します。
 description: Windows10PkcsCertificateProfile オブジェクトのプロパティと関係を参照してください。
 author: tfitzmac
-ms.openlocfilehash: 4c731d5181e8a7fcb4f92b8d0fb44c93329344d2
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: c4794f727558a869c678a4a36b0b038eaf19240e
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27345522"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27822457"
 ---
 # <a name="get-windows10pkcscertificateprofile"></a>Windows10PkcsCertificateProfile を取得します。
 

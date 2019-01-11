@@ -2,12 +2,13 @@
 title: リスト androidImportedPFXCertificateProfiles
 description: AndroidImportedPFXCertificateProfile オブジェクトのプロパティと関係を一覧表示します。
 author: tfitzmac
-ms.openlocfilehash: b92ce652296d69d0a6db8b71e22badd6558e9f17
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 3327c1d30c67ef86d563a44e9d456a6a8d348427
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27302255"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27807484"
 ---
 # <a name="list-androidimportedpfxcertificateprofiles"></a>リスト androidImportedPFXCertificateProfiles
 

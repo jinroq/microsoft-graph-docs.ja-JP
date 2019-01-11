@@ -2,12 +2,13 @@
 title: Windows10PkcsCertificateProfile を作成します。
 description: 新しい windows10PkcsCertificateProfile オブジェクトを作成します。
 author: tfitzmac
-ms.openlocfilehash: 4ca3199e8c0865ed3a68320b2d46ee9f0bf084f9
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: d93477adb0358196f0bfa2bedd8ef35a555ee7e4
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27338186"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27809276"
 ---
 # <a name="create-windows10pkcscertificateprofile"></a>Windows10PkcsCertificateProfile を作成します。
 

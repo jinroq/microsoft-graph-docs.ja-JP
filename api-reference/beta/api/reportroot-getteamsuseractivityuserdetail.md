@@ -1,12 +1,13 @@
 ---
 title: 'reportRoot: getTeamsUserActivityUserDetail'
 description: ユーザーごとに、Microsoft Teams ユーザー アクティビティの詳細を取得します。
-ms.openlocfilehash: a28848e94df9bfeb759277b92542cdf7626aad39
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 7c007acc9988db8dc9e4e7bfdf2440178b1ca445
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27066279"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27815338"
 ---
 # <a name="reportroot-getteamsuseractivityuserdetail"></a>reportRoot: getTeamsUserActivityUserDetail
 
@@ -37,7 +38,7 @@ GET /reports/getTeamsUserActivityUserDetail(date=2017-09-01)
 
 要求 URL に、次のうちの 1 つのパラメーターと有効な値を指定します。
 
-| パラメーター | 型   | 説明                              |
+| パラメーター | Type   | 説明                              |
 | :-------- | :----- | :--------------------------------------- |
 | period    | 文字列 | レポートを集計する期間の長さを指定します。 {period_value} でサポートされている値は D7、D30、D90、D180 です。 これらの値は、D*n* の形式 (*n* はレポートを集計する日数) に従います。 |
 | date      | 日付   | 何らかのアクティビティを実行したユーザーを表示する日付を指定します。 {date_value} は YYYY-MM-DD の形式にします。 このレポートは、過去 30 日間のみ利用可能であり、{date_value} はその範囲内の日付である必要があります。 |
@@ -81,7 +82,7 @@ GET /reports/getTeamsUserActivityUserDetail(date=2017-09-01)
 
 この要求の既定のページ サイズは、2000 のアイテムです。
 
-## <a name="example"></a>使用例
+## <a name="example"></a>例
 
 ### <a name="csv"></a>CSV
 

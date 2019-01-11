@@ -2,12 +2,13 @@
 title: intuneBrandingProfile リソースの種類
 description: このエンティティには、会社のポータル アプリケーションとエンド ・ ユーザーの web ポータルのテナントのレベルの外観をカスタマイズするために使用するデータが含まれています。
 author: tfitzmac
-ms.openlocfilehash: e37105653f441da6aeb8d549b7690b8044de3186
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: d2ee2fee902b4aca542810dc058b7d16aaedb9c6
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27357156"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27820609"
 ---
 # <a name="intunebrandingprofile-resource-type"></a>intuneBrandingProfile リソースの種類
 
@@ -25,7 +26,7 @@ ms.locfileid: "27357156"
 |[IntuneBrandingProfile を削除します。](../api/intune-wip-intunebrandingprofile-delete.md)|なし|の[intuneBrandingProfile](../resources/intune-wip-intunebrandingprofile.md)を削除します。|
 |[IntuneBrandingProfile を更新します。](../api/intune-wip-intunebrandingprofile-update.md)|[intuneBrandingProfile](../resources/intune-wip-intunebrandingprofile.md)|[IntuneBrandingProfile](../resources/intune-wip-intunebrandingprofile.md)オブジェクトのプロパティを更新します。|
 
-## <a name="properties"></a>Properties
+## <a name="properties"></a>プロパティ
 |プロパティ|種類|説明|
 |:---|:---|:---|
 |ID|String|プロファイル キー|

@@ -2,12 +2,13 @@
 title: microsoftStoreForBusinessAppAssignmentSettings リソースの種類
 description: グループに、ビジネス向け Microsoft Store モバイル アプリを割り当てるためのプロパティが含まれます。
 author: tfitzmac
-ms.openlocfilehash: 3a6d33eac4ee03a54e99a24cfde3b15c82cb0bad
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 8ef23919912d8a91beceefeb034de7cc09cb941c
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27342911"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27805027"
 ---
 # <a name="microsoftstoreforbusinessappassignmentsettings-resource-type"></a>microsoftStoreForBusinessAppAssignmentSettings リソースの種類
 

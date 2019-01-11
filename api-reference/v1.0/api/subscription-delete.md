@@ -1,12 +1,13 @@
 ---
 title: サブスクリプションを削除する
 description: サブスクリプションを削除します。
-ms.openlocfilehash: 249393cef11e2768eec0a6435a8485b51cf6921c
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: a5bd1998df3a7e3a8896fa770c0dbdd72cd59940
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27024092"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27805594"
 ---
 # <a name="delete-subscription"></a>サブスクリプションを削除する
 
@@ -22,8 +23,8 @@ ms.locfileid: "27024092"
 | スレッド               | Group.Read.All      |
 | イベント                      | Calendars.Read      |
 | メッセージ                    | Mail.Read           |
-| Groups                      | Group.Read.All      |
-| Users                       | User.Read.All       |
+| グループ                      | Group.Read.All      |
+| ユーザー                       | User.Read.All       |
 | ドライブ (ユーザーの OneDrive)    | Files.ReadWrite     |
 | ドライブ (共有、SharePoint コンテンツおよびドライブ) | Files.ReadWrite.All |
 |セキュリティの警告| SecurityEvents.ReadWrite.All |
@@ -38,7 +39,7 @@ DELETE /subscriptions/{id}
 
 ## <a name="request-headers"></a>要求ヘッダー
 
-| 名前       | 型 | 説明|
+| 名前       | 種類 | 説明|
 |:-----------|:------|:----------|
 | Authorization  | string  | ベアラー {トークン}。必須。 |
 

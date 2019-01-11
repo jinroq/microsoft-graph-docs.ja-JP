@@ -1,12 +1,13 @@
 ---
 title: OAuth2PermissionGrant を更新します。
 description: OAuth2PermissionGrant オブジェクトのプロパティを更新します。
-ms.openlocfilehash: fdf196e672b19a2775644dada4a33b036df83bf8
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 3c01d62dfb7c0c6906ff860656ee87b5f6d40aed
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27067486"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27822352"
 ---
 # <a name="update-oauth2permissiongrant"></a>OAuth2PermissionGrant を更新します。
 
@@ -33,14 +34,14 @@ PATCH /users/{id | userPrincipalName}/oAuth2Permissiongrants/{id}
 PATCH /drive/root/createdByUser/oAuth2Permissiongrants/{id}
 ```
 ## <a name="request-headers"></a>要求ヘッダー
-| 名前       | 型 | 説明|
+| 名前       | 種類 | 説明|
 |:-----------|:------|:----------|
 | Authorization  | string  | ベアラー {トークン}。必須。 |
 
 ## <a name="request-body"></a>要求本文
 要求本文で、更新する関連フィールドの値を指定します。要求本文に含まれない既存のプロパティは、以前の値のままになるか、他のプロパティ値の変化に基づいて再計算されます。最適なパフォーマンスを得るためには、変更されていない既存の値を含めないでください。
 
-| プロパティ     | 型   |説明|
+| プロパティ     | 種類   |説明|
 |:---------------|:--------|:----------|
 |scope|String| OAuth 2.0 のアクセス トークンには、リソース アプリケーションが期待するスコープの要求の値を指定します。 |
 

@@ -1,12 +1,13 @@
 ---
 title: genericError リソースの種類
 description: 汎用のエラーです。
-ms.openlocfilehash: caf3fbb99ad521fd807138ab230f6a1b8ae7bb16
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 744266ef8ffb17c4af4168d6239e5a5a30561936
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27067166"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27823570"
 ---
 # <a name="genericerror-resource-type"></a>genericError リソースの種類
 
@@ -16,7 +17,7 @@ ms.locfileid: "27067166"
 
 ## <a name="properties"></a>プロパティ
 
-| プロパティ | 型 | 説明 |
+| プロパティ | 種類 | 説明 |
 |:---------|:-----|:------------|
 | message | String | エラー メッセージ。 |
 | code | String | エラー コード。 |

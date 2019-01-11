@@ -2,12 +2,13 @@
 title: 'educationSubmission: 送信'
 description: 学生が作業を行われ、割り当てで入稿する準備ができなことを示す動作です。 この操作は、受講者のみ取得できます。
 author: dipakboyed
-ms.openlocfilehash: 25fc24823081c6f148617ad31d0f7b797b0e2a80
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: ef2ef84819a6bfbeeb83a012b4c26fe7cb56662c
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27343331"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27808576"
 ---
 # <a name="educationsubmission-submit"></a>educationSubmission: 送信
 

@@ -2,12 +2,13 @@
 title: deviceConfigurationUserActivity 関数
 description: デバイス構成のユーザー アクティビティ レポートのメタデータ
 author: tfitzmac
-ms.openlocfilehash: 3cf73f5b8df21d7675ceeeed1b11bd1705e19c1c
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 4b403fa45e228d1393127943dcbf9011b91ab18f
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27305496"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27806364"
 ---
 # <a name="deviceconfigurationuseractivity-function"></a>deviceConfigurationUserActivity 関数
 

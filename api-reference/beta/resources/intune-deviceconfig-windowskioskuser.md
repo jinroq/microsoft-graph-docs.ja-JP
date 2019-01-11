@@ -2,12 +2,13 @@
 title: windowsKioskUser リソースの種類
 description: キオスクの構成のアカウント情報を識別するために使用するユーザーの基本クラス
 author: tfitzmac
-ms.openlocfilehash: 40814a24607f8aa378767080b9107e3c1e4abafe
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 5dade4885d2d39089ddf4888227280a1abfbba86
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27306526"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27805965"
 ---
 # <a name="windowskioskuser-resource-type"></a>windowsKioskUser リソースの種類
 
@@ -16,7 +17,7 @@ ms.locfileid: "27306526"
 > **注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
 
 キオスクの構成のアカウント情報を識別するために使用するユーザーの基本クラス
-## <a name="properties"></a>Properties
+## <a name="properties"></a>プロパティ
 |プロパティ|種類|説明|
 |:---|:---|:---|
 

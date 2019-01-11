@@ -1,12 +1,13 @@
 ---
 title: アプリケーション リソースの種類
 description: ブックを管理する Excel アプリケーションを表します。
-ms.openlocfilehash: 1772d69b55d03bf62d983a6dfb818dca651ebbd6
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: a8e2124910301818e753b1f90a3168da3a072862
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27069705"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27804439"
 ---
 # <a name="application-resource-type"></a>アプリケーション リソースの種類
 
@@ -23,9 +24,9 @@ ms.locfileid: "27069705"
 |[Calculate](../api/excelapplication-calculate.md)|なし|Excel で現在開いているすべてのブックを再計算します。|
 
 ## <a name="properties"></a>プロパティ
-| プロパティ     | 型   |説明|
+| プロパティ     | 種類   |説明|
 |:---------------|:--------|:----------|
-|calculationMode|文字列|ブックで使用される計算モードを返します。 可能な値は、`Automatic`、`AutomaticExceptTables`、`Manual` です。 読み取り専用。|
+|calculationMode|文字列|ブックで使用される計算モードを返します。 可能な値は、`Automatic`、`AutomaticExceptTables`、`Manual` です。 読み取り専用です。|
 
 ## <a name="relationships"></a>リレーションシップ
 なし

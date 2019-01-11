@@ -2,12 +2,13 @@
 title: deviceManagementScriptUserState リソースの種類
 description: 状態のデバイスの管理スクリプトを実行するユーザーのプロパティが含まれています。
 author: tfitzmac
-ms.openlocfilehash: acce3d40d390c22d848b9ee3f8c94c997ae6da12
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: bf355a6ab2c217fa802288f6d2f4f062a3c47f4b
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27301212"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27806028"
 ---
 # <a name="devicemanagementscriptuserstate-resource-type"></a>deviceManagementScriptUserState リソースの種類
 
@@ -25,7 +26,7 @@ ms.locfileid: "27301212"
 |[DeviceManagementScriptUserState を削除します。](../api/intune-devices-devicemanagementscriptuserstate-delete.md)|なし|の[deviceManagementScriptUserState](../resources/intune-devices-devicemanagementscriptuserstate.md)を削除します。|
 |[DeviceManagementScriptUserState を更新します。](../api/intune-devices-devicemanagementscriptuserstate-update.md)|[deviceManagementScriptUserState](../resources/intune-devices-devicemanagementscriptuserstate.md)|[DeviceManagementScriptUserState](../resources/intune-devices-devicemanagementscriptuserstate.md)オブジェクトのプロパティを更新します。|
 
-## <a name="properties"></a>Properties
+## <a name="properties"></a>プロパティ
 |プロパティ|種類|説明|
 |:---|:---|:---|
 |ID|String|デバイス管理スクリプト ユーザー状態のエンティティのキーです。|

@@ -2,12 +2,13 @@
 title: messageRule を削除する
 description: 指定した messageRule オブジェクトを削除します。
 author: angelgolfer-ms
-ms.openlocfilehash: e10cebf6b2758a21a8bf70e505edcebb7f27082c
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 85f48f1f293b898cf911488961dade4a1e9962cc
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27305377"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27807295"
 ---
 # <a name="delete-messagerule"></a>messageRule を削除する
 

@@ -2,12 +2,13 @@
 title: bitLockerRecoveryOptions リソースの種類
 description: BitLocker の回復オプションです。
 author: tfitzmac
-ms.openlocfilehash: c85ce3111ed88ce8e8bf54c98d5fd3122571a0be
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: eae2052f71d1b1d048072c70dc76437811c1cd8f
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27310606"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27806455"
 ---
 # <a name="bitlockerrecoveryoptions-resource-type"></a>bitLockerRecoveryOptions リソースの種類
 
@@ -16,7 +17,7 @@ ms.locfileid: "27310606"
 > **注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
 
 BitLocker の回復オプションです。
-## <a name="properties"></a>Properties
+## <a name="properties"></a>プロパティ
 |プロパティ|種類|説明|
 |:---|:---|:---|
 |blockDataRecoveryAgent|ブール型|回復エージェントの証明書ベースのデータをブロックするかどうかを示します。|

@@ -2,12 +2,13 @@
 title: リスト windows81TrustedRootCertificates
 description: Windows81TrustedRootCertificate オブジェクトのプロパティと関係を一覧表示します。
 author: tfitzmac
-ms.openlocfilehash: 294166b736d50ef53a2045fcaba4cfab97c40f73
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: b0f2bd38e2d481cef1e90ea3251755117388ee4c
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27336443"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27807379"
 ---
 # <a name="list-windows81trustedrootcertificates"></a>リスト windows81TrustedRootCertificates
 

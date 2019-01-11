@@ -2,12 +2,13 @@
 title: microsoftStoreForBusinessApp の更新
 description: microsoftStoreForBusinessApp オブジェクトのプロパティを更新します。
 author: tfitzmac
-ms.openlocfilehash: 763de1d2b2ff5478bfa56d0aab98081e7ec4ffb5
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 7cee8cd4d4b75e189679d73d8a265ae414533a94
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27346866"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27805748"
 ---
 # <a name="update-microsoftstoreforbusinessapp"></a>microsoftStoreForBusinessApp の更新
 

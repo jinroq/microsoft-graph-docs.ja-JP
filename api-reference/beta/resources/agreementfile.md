@@ -1,12 +1,13 @@
 ---
 title: agreementFile リソースの種類
 description: Azure Active Directory (AD の Azure) とテナントを管理する使用許諾契約書ファイルのカスタマイズ可能な条件を表します。 契約書のファイルについてのメタデータが含まれています (たとえば、名前、言語、既定のファイルであるかどうかと)。
-ms.openlocfilehash: f099715fd25fbae9d7b2a94d6de841b8766c30e2
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: f06792d63deabf25659a09e8aec5ed0e8f036472
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27070279"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27804509"
 ---
 # <a name="agreementfile-resource-type"></a>agreementFile リソースの種類
 
@@ -25,13 +26,13 @@ Azure Active Directory (AD の Azure) とテナントを管理する使用許諾
 -->
 
 ## <a name="properties"></a>プロパティ
-| プロパティ     | 型        | 説明 |
+| プロパティ     | 種類        | 説明 |
 |:-------------|:------------|:------------|
-|fileData|[agreementFileData](agreementfiledata.md)|PDF 文書の使用の条件を表すデータです。 読み取り専用。|
-|fileName|String|契約ファイル (TOU.pdf など) の名前です。 読み取り専用。|
-|id|String|読み取り専用。|
-|isDefault|ブール値|クライアント基本設定と一致する、カルチャの場合、既定の契約書ファイルはかどうかを示します。 ファイルの [なし] は既定値としてマークすると、1 つ目は既定値として扱われます。 読み取り専用。|
-|language|String|形式 languagecode2 の国と regioncode2 の契約書ファイルのカルチャです。 languagecode2 は、小文字の ISO 639-1 から派生した 2 文字コードです。 国/regioncode2 では、ISO 3166 から派生し、通常は、2 つの大文字、または BCP 47 言語タグ (たとえば、EN-US)。 読み取り専用。|
+|fileData|[agreementFileData](agreementfiledata.md)|PDF 文書の使用の条件を表すデータです。 読み取り専用です。|
+|fileName|String|契約ファイル (TOU.pdf など) の名前です。 読み取り専用です。|
+|id|String|読み取り専用です。|
+|isDefault|ブール型|クライアント基本設定と一致する、カルチャの場合、既定の契約書ファイルはかどうかを示します。 ファイルの [なし] は既定値としてマークすると、1 つ目は既定値として扱われます。 読み取り専用です。|
+|language|String|形式 languagecode2 の国と regioncode2 の契約書ファイルのカルチャです。 languagecode2 は、小文字の ISO 639-1 から派生した 2 文字コードです。 国/regioncode2 では、ISO 3166 から派生し、通常は、2 つの大文字、または BCP 47 言語タグ (たとえば、EN-US)。 読み取り専用です。|
 
 ## <a name="relationships"></a>リレーションシップ
 なし。

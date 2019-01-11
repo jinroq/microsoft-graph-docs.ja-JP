@@ -2,12 +2,13 @@
 title: List groupLifecyclePolicies
 description: すべての groupLifecyclePolicies を一覧表示します。
 author: dkershaw10
-ms.openlocfilehash: dade0f0a11670c5ecb5eeb6626d479b4d4c4be63
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 746b6961be84a93201d506639cdf5d586fc5eaf5
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27349232"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27804649"
 ---
 # <a name="list-grouplifecyclepolicies"></a>List groupLifecyclePolicies
 

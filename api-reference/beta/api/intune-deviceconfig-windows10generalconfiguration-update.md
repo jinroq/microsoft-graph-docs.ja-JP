@@ -2,12 +2,13 @@
 title: Update windows10GeneralConfiguration
 description: windows10GeneralConfiguration オブジェクトのプロパティを更新します。
 author: tfitzmac
-ms.openlocfilehash: c135256fa93c202537729048caeac12ec169ba17
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 5713bd4c3093887350d8626cba2bb0af29deebc0
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27322737"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27823528"
 ---
 # <a name="update-windows10generalconfiguration"></a>Update windows10GeneralConfiguration
 

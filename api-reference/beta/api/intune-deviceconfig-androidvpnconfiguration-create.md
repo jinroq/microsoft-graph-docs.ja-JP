@@ -2,12 +2,13 @@
 title: AndroidVpnConfiguration を作成します。
 description: 新しい androidVpnConfiguration オブジェクトを作成します。
 author: tfitzmac
-ms.openlocfilehash: 60fdba1b25f90213d7b25194e9278ca11e9324d9
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 86dfd3b33ae0247f5679b199af0e3cfa2c245a12
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27355567"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27807421"
 ---
 # <a name="create-androidvpnconfiguration"></a>AndroidVpnConfiguration を作成します。
 

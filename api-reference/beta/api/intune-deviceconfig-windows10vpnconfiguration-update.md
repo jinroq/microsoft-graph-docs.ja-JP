@@ -2,12 +2,13 @@
 title: Windows10VpnConfiguration を更新します。
 description: Windows10VpnConfiguration オブジェクトのプロパティを更新します。
 author: tfitzmac
-ms.openlocfilehash: 24112120dd414bc7929d9223094b528b32ad818a
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 2cdda69c06c0c204a69d14100adc0abbf7ecdc3f
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27305069"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27807771"
 ---
 # <a name="update-windows10vpnconfiguration"></a>Windows10VpnConfiguration を更新します。
 

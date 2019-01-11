@@ -2,12 +2,13 @@
 title: windowsPhone81StoreApp リソースの種類
 description: プロパティと 8.1 ストアの Windows Phone アプリの継承されたプロパティが含まれています。
 author: tfitzmac
-ms.openlocfilehash: 0ce242fd2337a9db602d361f8fceb05c126478fd
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 9bb1eec02fcd2958926f431b2a118b215048ca37
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27321218"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27807547"
 ---
 # <a name="windowsphone81storeapp-resource-type"></a>windowsPhone81StoreApp リソースの種類
 
@@ -28,7 +29,7 @@ ms.locfileid: "27321218"
 |[WindowsPhone81StoreApp を削除します。](../api/intune-apps-windowsphone81storeapp-delete.md)|なし|の[windowsPhone81StoreApp](../resources/intune-apps-windowsphone81storeapp.md)を削除します。|
 |[WindowsPhone81StoreApp を更新します。](../api/intune-apps-windowsphone81storeapp-update.md)|[windowsPhone81StoreApp](../resources/intune-apps-windowsphone81storeapp.md)|[WindowsPhone81StoreApp](../resources/intune-apps-windowsphone81storeapp.md)オブジェクトのプロパティを更新します。|
 
-## <a name="properties"></a>Properties
+## <a name="properties"></a>プロパティ
 |プロパティ|種類|説明|
 |:---|:---|:---|
 |ID|String|エンティティのキー。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|

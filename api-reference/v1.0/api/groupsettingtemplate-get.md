@@ -1,12 +1,13 @@
 ---
 title: グループ設定テンプレートを取得する
 description: グループ設定テンプレートは、テナント内で作成できる設定に基づいた設定のテンプレートを表します。この操作により、利用可能な設定とその既定値を含む、groupSettingTemplate オブジェクトのプロパティを取得できるようになります。
-ms.openlocfilehash: 1c0d7dffb3d786dd6acd27745f95be4d3b69a077
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 17e385c564337fcaa1255685e2b5808caec5cba4
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27023945"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27804999"
 ---
 # <a name="get-a-group-setting-template"></a>グループ設定テンプレートを取得する
 

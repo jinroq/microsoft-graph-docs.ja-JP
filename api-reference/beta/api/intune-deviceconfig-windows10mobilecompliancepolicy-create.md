@@ -2,12 +2,13 @@
 title: Create windows10MobileCompliancePolicy
 description: 新しい windows10MobileCompliancePolicy オブジェクトを作成します。
 author: tfitzmac
-ms.openlocfilehash: 83212832e52014635d6ea577ade775f823a76e59
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: a22eb77108963f7ecf023f335816a4f309deadda
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27352893"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27807120"
 ---
 # <a name="create-windows10mobilecompliancepolicy"></a>Create windows10MobileCompliancePolicy
 

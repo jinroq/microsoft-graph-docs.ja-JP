@@ -2,12 +2,13 @@
 title: TableRow リソースの種類
 description: 表の行を表します。
 author: lumine2008
-ms.openlocfilehash: de83ec8cae87f159c6f1f9687bd093873558c150
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: fe95b62236322451893e3859f9d6599cc637848c
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27309885"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27807176"
 ---
 # <a name="tablerow-resource-type"></a>TableRow リソースの種類
 

@@ -2,12 +2,13 @@
 title: WindowsPhone81AppXBundle を更新します。
 description: WindowsPhone81AppXBundle オブジェクトのプロパティを更新します。
 author: tfitzmac
-ms.openlocfilehash: 7e377b7ec81d16df768c42555cbdd17b9f2fdd64
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 14f221eae60a64629eea3fd5e9a2246a36e76ae3
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27336674"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27808597"
 ---
 # <a name="update-windowsphone81appxbundle"></a>WindowsPhone81AppXBundle を更新します。
 

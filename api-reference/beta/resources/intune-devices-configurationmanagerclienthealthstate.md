@@ -2,12 +2,13 @@
 title: configurationManagerClientHealthState リソースの種類
 description: 構成マネージャー クライアントの正常性状態
 author: tfitzmac
-ms.openlocfilehash: 8361d74f675cf1eaf70b78e2350aae2fc6e83554
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 9eedca9f3ab7ddf10ab73c62d986fed393dcfa48
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27302787"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27806070"
 ---
 # <a name="configurationmanagerclienthealthstate-resource-type"></a>configurationManagerClientHealthState リソースの種類
 
@@ -16,7 +17,7 @@ ms.locfileid: "27302787"
 > **注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
 
 構成マネージャー クライアントの正常性状態
-## <a name="properties"></a>Properties
+## <a name="properties"></a>プロパティ
 |プロパティ|種類|説明|
 |:---|:---|:---|
 |state|[configurationManagerClientState](../resources/intune-devices-configurationmanagerclientstate.md)|現在の構成マネージャー クライアントの状態です。 可能な値は、`unknown`、`installed`、`healthy`、`installFailed`、`updateFailed`、`communicationError` です。|

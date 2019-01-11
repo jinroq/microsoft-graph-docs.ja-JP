@@ -3,12 +3,13 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
 title: PublicationFacet
-ms.openlocfilehash: 60dff1e0dd97073ccb7eccd7be0f51b6b77fc273
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 4cb3a56b5bdb4c3e7c9fc9fe69c0b34cae134a0d
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27070571"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27805608"
 ---
 # <a name="publicationfacet-resource-type"></a>PublicationFacet リソースの種類
 
@@ -33,7 +34,7 @@ ms.locfileid: "27070571"
 
 ## <a name="properties"></a>プロパティ
 
-|   プロパティ    |  型  | 説明 |
+|   プロパティ    |  種類  | 説明 |
 | :------------ | :----- | :---------- |
 | **level**     | String | このドキュメントの公開状況。 `published` または `checkout` のどちらかです。 読み取り専用です。  |
 | **versionId** | String | 現在の呼び出し元に表示されているバージョンの一意識別子です。 読み取り専用です。  |

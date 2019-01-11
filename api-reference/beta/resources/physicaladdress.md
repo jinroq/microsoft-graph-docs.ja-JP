@@ -1,12 +1,13 @@
 ---
 title: physicalAddress リソースの種類
 description: 連絡先やイベントなどのリソースの番地を表します。
-ms.openlocfilehash: 819240be3eb9a088fde43390fbb1d1d4af1fd30c
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 3a656046cc23394fc8cff9100eb5ad2289050b25
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27073075"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27823584"
 ---
 # <a name="physicaladdress-resource-type"></a>physicalAddress リソースの種類
 
@@ -14,7 +15,7 @@ ms.locfileid: "27073075"
 
 
 ## <a name="properties"></a>プロパティ
-| プロパティ     | 型   |説明|
+| プロパティ     | 種類   |説明|
 |:---------------|:--------|:----------|
 |type|String|アドレスの種類。 可能な値は、`unknown`、`home`、`business`、`other` です。|
 |postOfficeBox|String|私書箱番号です。|

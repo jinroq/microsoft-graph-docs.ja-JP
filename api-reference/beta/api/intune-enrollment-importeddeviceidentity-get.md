@@ -2,12 +2,13 @@
 title: ImportedDeviceIdentity を取得します。
 description: ImportedDeviceIdentity オブジェクトのプロパティと関係を参照してください。
 author: tfitzmac
-ms.openlocfilehash: efa2ee66cd06b536d86f4abba894bf5349ed4ed5
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: b6ba6070673fa9ad6d220a45cf16855d43d6d333
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27304033"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27822184"
 ---
 # <a name="get-importeddeviceidentity"></a>ImportedDeviceIdentity を取得します。
 

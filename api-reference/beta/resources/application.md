@@ -1,12 +1,13 @@
 ---
 title: アプリケーション リソースの種類
 description: 'アプリケーションを表します。 Azure Active Directory (AD の Azure) への認証をアウトソースするすべてのアプリケーションは、ディレクトリに登録してください。 Azure AD を示す URL は、場所、アプリケーション、および詳細を識別する URI の認証の後に応答を送信する URL を含む、アプリケーションに関するアプリケーションの登録が含まれます。 詳細については、基本のアプリケーションを登録する Azure AD で参照してください。 directoryObject から継承します。 '
-ms.openlocfilehash: 66da35183b84d42d69d603cc840ba948d60d7bed
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Priority
+ms.openlocfilehash: b64de5670ccb9deebbabe32bb691d15b5a621f30
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27071132"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27805671"
 ---
 # <a name="application-resource-type"></a>アプリケーション リソースの種類
 
@@ -38,7 +39,7 @@ ms.locfileid: "27071132"
 
 ## <a name="properties"></a>プロパティ
 
-| プロパティ | 型 | 説明 |
+| プロパティ | 種類 | 説明 |
 |:---------------|:--------|:----------|
 |api|[api](api.md)| API アプリケーションの設定を指定します。 |
 |appId| 文字列型 (String) | Azure AD でアプリケーションに割り当てられているアプリケーションの一意の識別子です。 null 許容ではありません。 読み取り専用です。 |
@@ -49,7 +50,7 @@ ms.locfileid: "27071132"
 |id|String|アプリケーションの一意の識別子です。 [directoryObject](directoryobject.md) から継承されます。 キー。 null 許容ではありません。 読み取り専用です。 |
 |identifierUris|String コレクション| アプリケーションを識別する Uri。 詳細情報は、「[アプリケーションのオブジェクトおよびオブジェクトのサービス プリンシパル](https://azure.microsoft.com/documentation/articles/active-directory-application-objects/)です。 *Any*演算子は、複数値を持つプロパティのフィルター式に必要です。 null 許容ではありません。 |
 |情報|[informationalUrl](informationalurl.md)| アプリケーションの基本的なプロファイル情報です。 |
-|isFallbackPublicClient|ブール値| パブリック クライアント モバイル デバイスで実行されているインストール済みのアプリケーションとして、代替のアプリケーションの種類を指定します。 既定値は*false*フォールバックのアプリケーションの種類は、web アプリケーションなどの機密性の高いクライアントです。 Azure AD がクライアント アプリケーションの種類 (例: リダイレクト URI を指定することがなく構成されている[ROPC](https://tools.ietf.org/html/rfc6749#section-4.3)フロー) を判断できない特定のシナリオがあります。 このような場合に、Azure AD がこのプロパティの値に基づいてアプリケーションの種類を解釈します。|
+|isFallbackPublicClient|ブール型| パブリック クライアント モバイル デバイスで実行されているインストール済みのアプリケーションとして、代替のアプリケーションの種類を指定します。 既定値は*false*フォールバックのアプリケーションの種類は、web アプリケーションなどの機密性の高いクライアントです。 Azure AD がクライアント アプリケーションの種類 (例: リダイレクト URI を指定することがなく構成されている[ROPC](https://tools.ietf.org/html/rfc6749#section-4.3)フロー) を判断できない特定のシナリオがあります。 このような場合に、Azure AD がこのプロパティの値に基づいてアプリケーションの種類を解釈します。|
 |keyCredentials|[keyCredential](keycredential.md)コレクション|しないアプリケーションに関連付けられているキーの資格情報のコレクション null 許容型です。 |
 |logo|Stream|アプリケーションのメインのロゴです。 null 許容ではありません。 |
 |optionalClaims|optionalClaims| 将来の使用のために予約されています。 |
@@ -57,7 +58,7 @@ ms.locfileid: "27071132"
 |parentalControlSettings|[parentalControlSettings](parentalcontrolsettings.md) |アプリケーションの視聴制限の設定を指定します。|
 |passwordCredentials|[passwordCredential](passwordcredential.md)コレクション|アプリケーションに関連付けられているパスワード資格情報のコレクションです。 null 許容ではありません。|
 |publicClient|[publicClient](publicclient.md)| デスクトップやモバイル デバイスなどのインストールされているクライアントの設定を指定します。 |
-|publisherDomain| String | アプリケーションの確認された発行元のドメイン。 読み取り専用。|
+|publisherDomain| String | アプリケーションの確認された発行元のドメイン。 読み取り専用です。|
 |requiredResourceAccess|[requiredResourceAccess](requiredresourceaccess.md)コレクション|このアプリケーションへのアクセスと、OAuth アクセス許可のスコープおよび各リソースの下に必要なアプリケーション ロールのセットを必要とするリソースを指定します。 必要なリソースへのアクセスのこの前の構成では、同意の経験をドライブします。 null 許容ではありません。|
 |signInAudience | String | 現在のアプリケーションのサポートはどのような Microsoft アカウントを指定します。 サポートされている値は次のとおりです。<ul><li>**AzureADMyOrg**: microsoft のユーザーまたは組織の Azure AD テナント (つまり単一のテナント) でアカウントの学校</li><li>**AzureADMultipleOrgs**: microsoft ユーザーは、作業や、学校でどのような組織の Azure AD テナント (マルチ テナント型など) のアカウント</li> <li>**AzureADandPersonalMicrosoftAccount**: Microsoft の個人アカウントでは、またはどのような組織の Azure AD テナントで、職場、学校のアカウントを持つユーザー</li></ul> | `AzureADandPersonalMicrosoftAccount` |
 |タグの前に追加されるマークアップ|String コレクション| 分類し、アプリケーションの識別に使用できるカスタム文字列。 |
@@ -69,9 +70,9 @@ ms.locfileid: "27071132"
 |:---------------|:--------|:----------|
 |呼び出し           |コレクションの[呼び出し](call.md)                  |読み取り専用。Null 許容型。|
 |connectorGroup|[connectorGroup](connectorgroup.md)| ConnectorGroup アプリケーションは、Azure AD アプリケーション プロキシを使用しています。 Null 許容型。|
-|createdOnBehalfOf|[directoryObject](directoryobject.md)| 読み取り専用。|
+|createdOnBehalfOf|[directoryObject](directoryobject.md)| 読み取り専用です。|
 |onlineMeetings  |[onlineMeeting](onlinemeeting.md)コレクション|読み取り専用。Null 許容型。|
-|owners|[directoryObject](directoryobject.md) コレクション|ディレクトリ オブジェクト、アプリケーションの所有者であります。 所有者は、このオブジェクトを変更するのには許可されている管理者以外のユーザーのセットです。 2013-11-08 のバージョンが必要ですまたはそれ以降です。 読み取り専用。 Null 許容型。|
+|owners|[directoryObject](directoryobject.md) コレクション|ディレクトリ オブジェクト、アプリケーションの所有者であります。 所有者は、このオブジェクトを変更するのには許可されている管理者以外のユーザーのセットです。 2013-11-08 のバージョンが必要ですまたはそれ以降です。 読み取り専用です。 Null 許容型。|
 |役割|[ポリシー](policy.md)コレクション|このアプリケーションに割り当てられているポリシーです。|
 
 ## <a name="json-representation"></a>JSON 表記

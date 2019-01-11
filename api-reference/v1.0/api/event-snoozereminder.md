@@ -2,12 +2,13 @@
 title: 'イベント: snoozeReminder'
 description: までは新しいユーザーの予定表にイベントのアラームを延期します。
 author: angelgolfer-ms
-ms.openlocfilehash: 9e78e917190847fe1121c71a0ba185d11b697676
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: c432eda53b575e1aaf1b48bfb8f6f38db9693ab6
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27313070"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27821694"
 ---
 # <a name="event-snoozereminder"></a>イベント: snoozeReminder
 
@@ -49,7 +50,7 @@ POST /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{
 ## <a name="request-body"></a>要求本文
 要求本文で、次のパラメーターを含む JSON オブジェクトを指定します。
 
-| パラメーター    | 種類   |説明|
+| パラメーター    | Type   |説明|
 |:---------------|:--------|:----------|
 |newReminderTime|DateTimeTimeZone|アラームをトリガーする新しい日付と時刻。|
 

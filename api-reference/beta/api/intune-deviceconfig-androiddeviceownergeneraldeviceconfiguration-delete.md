@@ -2,12 +2,13 @@
 title: AndroidDeviceOwnerGeneralDeviceConfiguration を削除します。
 description: AndroidDeviceOwnerGeneralDeviceConfiguration を削除します。
 author: tfitzmac
-ms.openlocfilehash: a557c378f0956e7bb1e8babcb4048eaffa072afa
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: db7af88e47f17dad7829a7cb2872a5335b8df119
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27335260"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27807596"
 ---
 # <a name="delete-androiddeviceownergeneraldeviceconfiguration"></a>AndroidDeviceOwnerGeneralDeviceConfiguration を削除します。
 

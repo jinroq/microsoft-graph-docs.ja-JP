@@ -1,12 +1,13 @@
 ---
 title: 'reportRoot: getMailboxUsageStorage'
 description: 組織で使用されているストレージの量を取得します。
-ms.openlocfilehash: 08d7b3a1acf892b3c15c9aa5933213f87ea9c2b5
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 4fa3b10d2f654389d07f751513e2fed2e2c329ab
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27022427"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27822744"
 ---
 # <a name="reportroot-getmailboxusagestorage"></a>reportRoot: getMailboxUsageStorage
 
@@ -36,7 +37,7 @@ GET /reports/getMailboxUsageStorage(period='{period_value}')
 
 要求 URL に、次のパラメーターと有効な値を指定します。
 
-| パラメーター | 型   | 説明                              |
+| パラメーター | Type   | 説明                              |
 | :-------- | :----- | :--------------------------------------- |
 | period    | 文字列 | レポートを集計する期間の長さを指定します。 {period_value} でサポートされている値は D7、D30、D90、D180 です。 これらの値は、D*n* の形式 (*n* はレポートを集計する日数) に従います。 必須。 |
 

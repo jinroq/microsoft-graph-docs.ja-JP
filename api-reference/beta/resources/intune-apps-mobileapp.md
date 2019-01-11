@@ -2,12 +2,13 @@
 title: mobileApp リソースの種類
 description: Intune モバイル アプリの基本プロパティを含む抽象クラスです。
 author: tfitzmac
-ms.openlocfilehash: e07f3d3c103ec5c6b2c03205f1d7ad5ef5cf2d09
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 01bde6a94c0d16b26b20d1ba30e69bec0457972e
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27338956"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27812538"
 ---
 # <a name="mobileapp-resource-type"></a>mobileApp リソースの種類
 

@@ -2,12 +2,13 @@
 title: AndroidImportedPFXCertificateProfile を削除します。
 description: AndroidImportedPFXCertificateProfile を削除します。
 author: tfitzmac
-ms.openlocfilehash: d6a8b08748c4926c78d6759335a1aff3413b669b
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: aca61d96a7412c67150eb9a0495accc899857302
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27335918"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27812489"
 ---
 # <a name="delete-androidimportedpfxcertificateprofile"></a>AndroidImportedPFXCertificateProfile を削除します。
 

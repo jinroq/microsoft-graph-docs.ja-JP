@@ -2,12 +2,13 @@
 title: macOSEndpointProtectionConfiguration リソースの種類
 description: MacOS のエンドポイントの保護の構成のプロファイルです。
 author: tfitzmac
-ms.openlocfilehash: 3cf6e9fd4c46eaef61e6f539be145a145981f3e5
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: c94580ba513383403eafba6f24ebc9c2d5aa9e13
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27326272"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27808485"
 ---
 # <a name="macosendpointprotectionconfiguration-resource-type"></a>macOSEndpointProtectionConfiguration リソースの種類
 
@@ -28,7 +29,7 @@ MacOS のエンドポイントの保護の構成のプロファイルです。
 |[MacOSEndpointProtectionConfiguration を削除します。](../api/intune-deviceconfig-macosendpointprotectionconfiguration-delete.md)|なし|の[macOSEndpointProtectionConfiguration](../resources/intune-deviceconfig-macosendpointprotectionconfiguration.md)を削除します。|
 |[MacOSEndpointProtectionConfiguration を更新します。](../api/intune-deviceconfig-macosendpointprotectionconfiguration-update.md)|[macOSEndpointProtectionConfiguration](../resources/intune-deviceconfig-macosendpointprotectionconfiguration.md)|[MacOSEndpointProtectionConfiguration](../resources/intune-deviceconfig-macosendpointprotectionconfiguration.md)オブジェクトのプロパティを更新します。|
 
-## <a name="properties"></a>Properties
+## <a name="properties"></a>プロパティ
 |プロパティ|種類|説明|
 |:---|:---|:---|
 |ID|String|エンティティのキー。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|

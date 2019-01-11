@@ -2,12 +2,13 @@
 title: deviceComplianceSettingState リソース タイプ
 description: 特定のデバイスに関する、デバイスのコンプライアンスの設定状態です。
 author: tfitzmac
-ms.openlocfilehash: e4edce4b22b70c6018703e086d606b84781b6b91
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: bf9c4ae52b4bf3ff98599cdf8d71efcd0c229b14
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27326174"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27811054"
 ---
 # <a name="devicecompliancesettingstate-resource-type"></a>deviceComplianceSettingState リソース タイプ
 

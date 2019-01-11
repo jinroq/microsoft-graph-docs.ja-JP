@@ -2,12 +2,13 @@
 title: DepMacOSEnrollmentProfile を作成します。
 description: 新しい depMacOSEnrollmentProfile オブジェクトを作成します。
 author: tfitzmac
-ms.openlocfilehash: 9b9d05045139dc83477760923fcc8924e1f83b1e
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: e17a5798f35301691c0f475866d8ffe06cd020d3
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27338515"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27807050"
 ---
 # <a name="create-depmacosenrollmentprofile"></a>DepMacOSEnrollmentProfile を作成します。
 

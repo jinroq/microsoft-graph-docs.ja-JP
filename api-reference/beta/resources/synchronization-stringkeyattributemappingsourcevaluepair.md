@@ -1,12 +1,13 @@
 ---
 title: stringKeyAttributeMappingSourceValuePair リソースの種類
 description: キーが文字列であり、値は、attributeMappingSource は、キー/値ペアを表します。
-ms.openlocfilehash: 875c593ae652ce763f420d29e5dd4e5e2601bc88
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 24695cc64fd3c240d5416a7b37e9a5d373e5a88a
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27073529"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27805090"
 ---
 # <a name="stringkeyattributemappingsourcevaluepair-resource-type"></a>stringKeyAttributeMappingSourceValuePair リソースの種類
 
@@ -15,7 +16,7 @@ ms.locfileid: "27073529"
 キーが文字列であり、値は、 [attributeMappingSource](synchronization-attributemappingsource.md)は、キー/値ペアを表します。
 
 ## <a name="properties"></a>プロパティ
-| プロパティ     | 型   |説明|
+| プロパティ     | 種類   |説明|
 |:---------------|:--------|:----------|
 |Key|String|パラメーターの名前です。|
 |value|[attributeMappingSource](synchronization-attributemappingsource.md)|パラメーターの値です。|

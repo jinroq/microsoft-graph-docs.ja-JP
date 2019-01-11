@@ -2,12 +2,13 @@
 title: AndroidDeviceOwnerEnrollmentProfile を取得します。
 description: AndroidDeviceOwnerEnrollmentProfile オブジェクトのプロパティと関係を参照してください。
 author: tfitzmac
-ms.openlocfilehash: af18430221961faf765ddb91c35fb0375c3dd45c
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 6947171c5d7a366cc5c5fab30bf3143e002c92a7
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27353047"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27818600"
 ---
 # <a name="get-androiddeviceownerenrollmentprofile"></a>AndroidDeviceOwnerEnrollmentProfile を取得します。
 

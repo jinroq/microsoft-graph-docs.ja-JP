@@ -2,12 +2,13 @@
 title: AndroidTrustedRootCertificate を作成します。
 description: 新しい androidTrustedRootCertificate オブジェクトを作成します。
 author: tfitzmac
-ms.openlocfilehash: bd2272b71b562584f880b538d4b2fc412374dda8
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 2c4e7037180f4d27c89e763fdef2a0c7d5b45164
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27354944"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27822667"
 ---
 # <a name="create-androidtrustedrootcertificate"></a>AndroidTrustedRootCertificate を作成します。
 

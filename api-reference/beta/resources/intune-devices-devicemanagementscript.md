@@ -2,12 +2,13 @@
 title: deviceManagementScript リソースの種類
 description: Intune は、10 の登録されている windows Azure Active Directory が参加しているデバイスで、Powershell スクリプトを実行する機能を顧客に提供します。 スクリプトは、1 回だけまたは定期的に実行できます。
 author: tfitzmac
-ms.openlocfilehash: f35a0b4159c84535c4696f7b57c8486b866504b6
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 321d525aaf9de386ba639bc904915a06eda56a75
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27351423"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27811047"
 ---
 # <a name="devicemanagementscript-resource-type"></a>deviceManagementScript リソースの種類
 

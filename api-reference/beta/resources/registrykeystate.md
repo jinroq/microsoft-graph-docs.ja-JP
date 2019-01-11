@@ -1,12 +1,13 @@
 ---
 title: registryKeyState リソースの種類
 description: アラート、およびレジストリ キーを変更するプロセスに関連するレジストリ キーの変更に関する情報が含まれています。
-ms.openlocfilehash: 37654aab2bf8f0afae0f7ec6ed544aed8634dacc
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 688c690083e24dc6c8ee7229498910befd0fdf3e
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27067144"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27804677"
 ---
 # <a name="registrykeystate-resource-type"></a>registryKeyState リソースの種類
 
@@ -14,7 +15,7 @@ ms.locfileid: "27067144"
 
 ## <a name="properties"></a>プロパティ
 
-| プロパティ     | 型        | 説明 |
+| プロパティ     | 種類        | 説明 |
 |:-------------|:------------|:------------|
 |ハイブ|registryHive|[Windows レジストリ ハイブ](https://docs.microsoft.com/en-us/windows/desktop/sysinfo/registry-hives)。 <ul><li>HKEY_CURRENT_CONFIG</li> <li>HKEY_CURRENT_USER</li> <li>HKEY_LOCAL_MACHINE\SAM</li> <li>\Security</li> <li>HKEY_LOCAL_MACHINE\Software</li> <li>HKEY_LOCAL_MACHINE\System</li> <li>HKEY_USERS\\。既定値です。</li></ul> 可能な値は、`unknown`、`currentConfig`、`currentUser`、`localMachineSam`、`localMachineSamSoftware`、`localMachineSystem`、`usersDefault` です。|
 |Key|String|現在の (変更されているなど) のレジストリ キー (ハイブを除く)。|

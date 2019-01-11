@@ -2,12 +2,13 @@
 title: セッションを更新する
 description: 'この API を使用して、既存のブックのセッションを更新します。 '
 author: lumine2008
-ms.openlocfilehash: 4f039b0dd32cbcf5ba0e0a0346a593abc4078df3
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 2f4d454214d2f21d1f6447ee224f3013cebb9078
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27336156"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27822338"
 ---
 # <a name="refresh-session"></a>セッションを更新する
 

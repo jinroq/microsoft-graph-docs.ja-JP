@@ -2,12 +2,13 @@
 title: windowsKioskLocalGroup リソースの種類
 description: キオスクの構成にローカル グループを識別するために使用するクラス
 author: tfitzmac
-ms.openlocfilehash: bb2e0cddd1c9b2530e1f146e966d707466c737d1
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: dcc4f6ae47abf07ae259562b2aee72d187abd476
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27306847"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27807715"
 ---
 # <a name="windowskiosklocalgroup-resource-type"></a>windowsKioskLocalGroup リソースの種類
 
@@ -19,7 +20,7 @@ ms.locfileid: "27306847"
 
 [WindowsKioskUser](../resources/intune-deviceconfig-windowskioskuser.md)から継承します。
 
-## <a name="properties"></a>Properties
+## <a name="properties"></a>プロパティ
 |プロパティ|種類|説明|
 |:---|:---|:---|
 |グループ名|String|この構成にキオスクがロックアウトされているローカル グループの名前|

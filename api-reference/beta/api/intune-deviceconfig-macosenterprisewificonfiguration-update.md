@@ -2,12 +2,13 @@
 title: MacOSEnterpriseWiFiConfiguration を更新します。
 description: MacOSEnterpriseWiFiConfiguration オブジェクトのプロパティを更新します。
 author: tfitzmac
-ms.openlocfilehash: 9ebf8f6b67a9fc7914bda24e3ad857be7025dc8a
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: a5dcf7400bd0f8efbdc57751c15c5666e4478529
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27338648"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27808422"
 ---
 # <a name="update-macosenterprisewificonfiguration"></a>MacOSEnterpriseWiFiConfiguration を更新します。
 

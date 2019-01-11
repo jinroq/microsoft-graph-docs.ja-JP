@@ -2,12 +2,13 @@
 title: iosStoreApp リソース タイプ
 description: iOS ストア アプリのプロパティと継承されるプロパティを含みます。
 author: tfitzmac
-ms.openlocfilehash: 423aff297e9f445371b7182e9d736dcb6410090b
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: ca3267507c2c03a6fd5129d57bd5792b35e442df
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27309983"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27806431"
 ---
 # <a name="iosstoreapp-resource-type"></a>iosStoreApp リソース タイプ
 

@@ -2,12 +2,13 @@
 title: WindowsPhoneEASEmailProfileConfiguration を更新します。
 description: WindowsPhoneEASEmailProfileConfiguration オブジェクトのプロパティを更新します。
 author: tfitzmac
-ms.openlocfilehash: 91d6a96b0ee15b8207ee6edad087aee6d5155d34
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 0dbbe1074185ed27512662ec8af0d6c053b9bb69
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27358458"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27808240"
 ---
 # <a name="update-windowsphoneeasemailprofileconfiguration"></a>WindowsPhoneEASEmailProfileConfiguration を更新します。
 

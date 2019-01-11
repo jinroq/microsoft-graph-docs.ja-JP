@@ -2,12 +2,13 @@
 title: webApp の作成
 description: 新しい webApp オブジェクトを作成します。
 author: tfitzmac
-ms.openlocfilehash: 0ebe226b42fb0a35658a08107c9826a7401825db
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 87a293f1f4839fd02eac072a38ca1f91a2c3f7b9
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27330927"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27823430"
 ---
 # <a name="create-webapp"></a>webApp の作成
 
