@@ -2,12 +2,13 @@
 title: Get deviceAppManagement
 description: deviceAppManagement オブジェクトのプロパティとリレーションシップを読み取ります。
 author: tfitzmac
-ms.openlocfilehash: 269e749c7fae0b2eeb397d86907a7cf2d6653ee7
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: f6e862fa3b0e82d70907fbe903c144c4511fb278
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27314197"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27837773"
 ---
 # <a name="get-deviceappmanagement"></a>Get deviceAppManagement
 

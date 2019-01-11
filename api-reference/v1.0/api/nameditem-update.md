@@ -1,12 +1,13 @@
 ---
 title: NamedItem オブジェクトを更新する
 description: nameditem オブジェクトのプロパティを更新します。
-ms.openlocfilehash: 9ec62a87d007d7647aba89fddd7d9a7705434588
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 59919e030d06e4c84242396d61c68d601433cc7a
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27023586"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27838711"
 ---
 # <a name="update-nameditem"></a>NamedItem オブジェクトを更新する
 
@@ -34,7 +35,7 @@ PATCH /workbook/names/{name}
 ## <a name="request-body"></a>要求本文
 要求本文で、更新する関連フィールドの値を指定します。要求本文に含まれない既存のプロパティは、以前の値のままになるか、他のプロパティ値の変化に基づいて再計算されます。最適なパフォーマンスを得るためには、変更されていない既存の値を含めないでください。
 
-| プロパティ     | 型   |説明|
+| プロパティ     | 種類   |説明|
 |:---------------|:--------|:----------|
 |visible|ブール値|オブジェクトを表示するかどうかを指定します。|
 |comment|   文字列  |この名前に関連付けられているコメントを表します。|

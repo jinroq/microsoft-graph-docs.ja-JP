@@ -2,12 +2,13 @@
 title: 'ドメイン: forceDelete'
 description: 非同期操作を使用してドメインを削除します。
 author: lleonard-msft
-ms.openlocfilehash: 4af5b70fca7600538d4212768243d8de82eb79ed
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: e90b960bc2e2ff63068b1d91029371044075be27
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27316213"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27838060"
 ---
 # <a name="domain-forcedelete"></a>ドメイン: forceDelete
 
@@ -60,7 +61,7 @@ POST /domains/{id}/forceDelete
 
 要求本文で、次のパラメーターを含む JSON オブジェクトを指定します。
 
-| パラメーター    | 種類   |説明|
+| パラメーター    | Type   |説明|
 |:---------------|:--------|:----------|
 |disableUserAccounts|ブール型| 名前を変更したユーザー アカウントを無効にするオプションです。 ユーザー アカウントを無効にすると、ユーザーはサインインするのには使用できません。<br>*場合は true。*(デフォルト) - ユーザーがこの操作の一部として名前が変更されたアカウントが無効になります。<br>*False* - この操作の一部として名前を変更するユーザー アカウントは無効になっていません。 |
 

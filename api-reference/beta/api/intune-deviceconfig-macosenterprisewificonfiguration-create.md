@@ -2,12 +2,13 @@
 title: MacOSEnterpriseWiFiConfiguration を作成します。
 description: 新しい macOSEnterpriseWiFiConfiguration オブジェクトを作成します。
 author: tfitzmac
-ms.openlocfilehash: ee7bc76c445679b163053885d815205672d3a30f
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: c1f923c88bd53f8de41083696f669cd823c0085d
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27352270"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27837276"
 ---
 # <a name="create-macosenterprisewificonfiguration"></a>MacOSEnterpriseWiFiConfiguration を作成します。
 

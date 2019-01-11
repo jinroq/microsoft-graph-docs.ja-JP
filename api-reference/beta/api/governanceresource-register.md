@@ -1,12 +1,13 @@
 ---
 title: 登録 governanceResource
 description: PIM では、アンマネージの governanceResource オブジェクトを登録します。
-ms.openlocfilehash: 53452202b58c2d2187b6876eabfaae1ae646710d
-ms.sourcegitcommit: 82f9d0d10388572a3073b2dde8ca0a7b409135b8
+localization_priority: Normal
+ms.openlocfilehash: ce439d53eb9f017340f561ca509e8da43dbafbfc
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "27195301"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27837752"
 ---
 # <a name="register-governanceresource"></a>登録 governanceResource
 
@@ -19,7 +20,7 @@ ms.locfileid: "27195301"
 
 >**注:** この API には、依頼者にあるリソースに 1 つ以上のアクティブなロールの割り当てが必要です。
 
-|アクセス許可の種類      | アクセス許可              |
+|アクセス許可の種類      | Permissions              |
 |:--------------------|:---------------------------------------------------------|
 |委任 (職場または学校のアカウント) | PrivilegedAccess.ReadWrite.AzureResources  |
 |委任 (個人用 Microsoft アカウント) | サポートされていません。    |

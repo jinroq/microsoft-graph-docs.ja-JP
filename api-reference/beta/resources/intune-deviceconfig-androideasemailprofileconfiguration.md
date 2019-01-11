@@ -1,12 +1,13 @@
 ---
 title: androidEasEmailProfileConfiguration リソースの種類
 description: このプロファイルの構成を提供することによって、Exchange サーバーと通信し、電子メール、連絡先、カレンダー、タスク、およびメモを取得する連盟ノックス ・ デバイスでネイティブの電子メール クライアントに指示できます。 さらに、同期とデバイスを同期する必要がありますどのくらいの頻度にどのくらいのメールを指定することもできます。
-ms.openlocfilehash: e8945563eeba5652b8a3d2f878c6951d68257a48
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: e1170db88d7794a301f29b3c385ce77af0738f05
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27072119"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27833706"
 ---
 # <a name="androideasemailprofileconfiguration-resource-type"></a>androidEasEmailProfileConfiguration リソースの種類
 
@@ -28,28 +29,28 @@ ms.locfileid: "27072119"
 |[AndroidEasEmailProfileConfiguration を更新します。](../api/intune-deviceconfig-androideasemailprofileconfiguration-update.md)|[androidEasEmailProfileConfiguration](../resources/intune-deviceconfig-androideasemailprofileconfiguration.md)|[AndroidEasEmailProfileConfiguration](../resources/intune-deviceconfig-androideasemailprofileconfiguration.md)オブジェクトのプロパティを更新します。|
 
 ## <a name="properties"></a>プロパティ
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
-|id|String|エンティティのキー。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
+|ID|String|エンティティのキー。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |lastModifiedDateTime|DateTimeOffset|オブジェクトが最後に変更された DateTime。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |roleScopeTagIds|String コレクション|このエンティティ インスタンスのスコープのタグのリストです。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
-|supportsScopeTags|ブール値|デバイスの構成を基になるスコープのタグの割り当てをサポートしているかどうかを示します。 この値が false であり、エンティティをスコープ指定されたユーザーには表示されませんがある場合、ScopeTags プロパティに割り当てることは許可されていません。 これは、Silverlight で作成されたレガシ ポリシーに対して発生し、削除して、Azure ポータル内のポリシーを再作成することで解決できます。 このプロパティは値の取得のみ可能です。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
+|supportsScopeTags|ブール型|デバイスの構成を基になるスコープのタグの割り当てをサポートしているかどうかを示します。 この値が false であり、エンティティをスコープ指定されたユーザーには表示されませんがある場合、ScopeTags プロパティに割り当てることは許可されていません。 これは、Silverlight で作成されたレガシ ポリシーに対して発生し、削除して、Azure ポータル内のポリシーを再作成することで解決できます。 このプロパティは読み取りのみ可能です。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |createdDateTime|DateTimeOffset|オブジェクトが作成された DateTime。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |説明|String|デバイス構成について管理者が提供した説明。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |displayName|String|デバイス構成について管理者が指定した名前。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |version|Int32|デバイス構成のバージョン。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |accountName|String|Exchange ActiveSync アカウント名、EA (this) プロファイルの名前としてユーザーに表示されます。|
 |authenticationMethod|[easAuthenticationMethod](../resources/intune-deviceconfig-easauthenticationmethod.md)|Exchange ActiveSync の認証方法です。 使用可能な値は、`usernameAndPassword`、`certificate` です。|
-|syncCalendar|ブール値|カレンダーの同期を切り替えます。 場合は、デバイスで予定表の場合は false に設定がオフになっているとなります。|
-|syncContacts|ブール値|連絡先の同期を切り替えます。 場合は取引先担当者の場合は false に設定は、デバイスの電源が切れます。|
-|syncTasks|ブール値|タスクの同期を切り替えます。 場合はタスクの場合は false に設定は、デバイスの電源が切れます。|
-|syncNotes|ブール値|メモの同期を切り替えます。 場合はメモを false に設定は、デバイスの電源が切れます。|
+|syncCalendar|ブール型|カレンダーの同期を切り替えます。 場合は、デバイスで予定表の場合は false に設定がオフになっているとなります。|
+|syncContacts|ブール型|連絡先の同期を切り替えます。 場合は取引先担当者の場合は false に設定は、デバイスの電源が切れます。|
+|syncTasks|ブール型|タスクの同期を切り替えます。 場合はタスクの場合は false に設定は、デバイスの電源が切れます。|
+|syncNotes|ブール型|メモの同期を切り替えます。 場合はメモを false に設定は、デバイスの電源が切れます。|
 |durationOfEmailToSync|[emailSyncDuration](../resources/intune-deviceconfig-emailsyncduration.md)|電子メールの時間の期間に同期する必要があります。 可能な値は、`userDefined`、`oneDay`、`threeDays`、`oneWeek`、`twoWeeks`、`oneMonth`、`unlimited` です。|
 |emailAddressSource|[userEmailSource](../resources/intune-deviceconfig-useremailsource.md)|AAD から選択され、デバイスにインストールする前に、このプロファイルに挿入されたメール属性です。 使用可能な値は、`userPrincipalName`、`primarySmtpAddress` です。|
 |emailSyncSchedule|[emailSyncSchedule](../resources/intune-deviceconfig-emailsyncschedule.md)|電子メールの同期のスケジュールです。 可能な値は、`userDefined`、`asMessagesArrive`、`manual`、`fifteenMinutes`、`thirtyMinutes`、`sixtyMinutes`、`basedOnMyUsage` です。|
 |hostName|String|Exchange の場所 (URL) ネイティブのメール アプリケーションに接続します。|
-|requireSmime|ブール値|S/MIME 証明書を使用するかどうかを示します。|
-|requireSsl|ブール値|SSL を使用するかどうかを示します。|
+|requireSmime|ブール型|S/MIME 証明書を使用するかどうかを示します。|
+|requireSsl|ブール型|SSL を使用するかどうかを示します。|
 |usernameSource|[androidUsernameSource](../resources/intune-deviceconfig-androidusernamesource.md)|AAD から選択され、デバイスにインストールする前に、このプロファイルに挿入されたユーザー名の属性です。 可能な値は、`username`、`userPrincipalName`、`samAccountName`、`primarySmtpAddress` です。|
 |userDomainNameSource|[domainNameSource](../resources/intune-deviceconfig-domainnamesource.md)|AAD から選択され、デバイスにインストールする前に、このプロファイルに挿入されたユーザー ドメイン名属性です。 使用可能な値は、`fullDomainName`、`netBiosDomainName` です。|
 |customDomainName|String|カスタム ドメイン名の値は、デバイスにインストールする前に、電子メール プロファイルを生成する際に使用します。|

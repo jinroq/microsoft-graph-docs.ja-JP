@@ -2,12 +2,13 @@
 title: deviceManagementExchangeDeviceClass リソースの種類
 description: Exchange でのデバイスのクラスです。
 author: tfitzmac
-ms.openlocfilehash: 01e0877388391deaebbda18e48247f4e3585a63a
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 80142f4e05752a37c324cd20ce96e4c8e6668c03
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27316780"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27839026"
 ---
 # <a name="devicemanagementexchangedeviceclass-resource-type"></a>deviceManagementExchangeDeviceClass リソースの種類
 
@@ -16,7 +17,7 @@ ms.locfileid: "27316780"
 > **注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
 
 Exchange でのデバイスのクラスです。
-## <a name="properties"></a>Properties
+## <a name="properties"></a>プロパティ
 |プロパティ|種類|説明|
 |:---|:---|:---|
 |名前|String|このルールの影響を受けるデバイス クラスの名前です。|

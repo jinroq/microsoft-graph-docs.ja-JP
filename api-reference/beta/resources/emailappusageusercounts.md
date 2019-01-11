@@ -1,20 +1,21 @@
 ---
 title: emailAppUsageUserCounts リソースの種類
 description: リソースの JSON 表記を次に示します。
-ms.openlocfilehash: c8669c8a34987bc1e71152ae717f9be3ba101107
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: a018776f092e9b7f378e8069666d015e1cd3e4a0
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27071881"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27835449"
 ---
 # <a name="emailappusageusercounts-resource-type"></a>emailAppUsageUserCounts リソースの種類
 
 ## <a name="properties"></a>プロパティ
 
-| プロパティ          | 型   |
+| プロパティ          | 種類   |
 | :---------------- | :----- |
-| reportRefreshDate | Date   |
+| reportRefreshDate | 日付   |
 | mailForMac        | Int64  |
 | outlookForMac     | Int64  |
 | outlookForWindows | Int64  |
@@ -24,7 +25,7 @@ ms.locfileid: "27071881"
 | pop3App           | Int64  |
 | imap4App          | Int64  |
 | smtpApp           | Int64  |
-| reportDate        | Date   |
+| reportDate        | 日付   |
 | reportPeriod      | String |
 
 ## <a name="json-representation"></a>JSON 表記

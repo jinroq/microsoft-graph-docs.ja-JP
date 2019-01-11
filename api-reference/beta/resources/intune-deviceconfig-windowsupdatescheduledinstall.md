@@ -2,12 +2,13 @@
 title: windowsUpdateScheduledInstall リソースの種類
 description: まだ文書化されていません
 author: tfitzmac
-ms.openlocfilehash: 55a53c169f60361af1f695aa07452c4e4a60bedf
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 47518277f54526e84cc3152a96ba3b49ec8a199e
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27301646"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27836002"
 ---
 # <a name="windowsupdatescheduledinstall-resource-type"></a>windowsUpdateScheduledInstall リソースの種類
 

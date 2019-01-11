@@ -2,12 +2,13 @@
 title: MobileAppProvisioningConfigGroupAssignment を作成します。
 description: 新しい mobileAppProvisioningConfigGroupAssignment オブジェクトを作成します。
 author: tfitzmac
-ms.openlocfilehash: d97b8cd59a0ad170b93fb5127ab276ef2dd29003
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 0cc03def8a3df440c1a4d98ee60dd30554a7086d
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27331004"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27838039"
 ---
 # <a name="create-mobileappprovisioningconfiggroupassignment"></a>MobileAppProvisioningConfigGroupAssignment を作成します。
 

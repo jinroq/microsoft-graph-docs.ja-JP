@@ -2,12 +2,13 @@
 title: Update windowsInformationProtectionPolicy
 description: windowsInformationProtectionPolicy オブジェクトのプロパティを更新します。
 author: tfitzmac
-ms.openlocfilehash: a785d7ff5f8a9f8d98dabe6e71843499a4917860
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: b378150fff4a2860a3e74cc0e99e09368200cad4
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27356827"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27835323"
 ---
 # <a name="update-windowsinformationprotectionpolicy"></a>Update windowsInformationProtectionPolicy
 

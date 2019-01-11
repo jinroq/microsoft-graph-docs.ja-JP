@@ -2,12 +2,13 @@
 title: managedMobileLobApp のリソースの種類
 description: ビジネス アプリの管理対象のすべての携帯電話回線のプロパティを含む抽象基本クラス。
 author: tfitzmac
-ms.openlocfilehash: a89ebc3af31bdbc119808115305962e36c92f4be
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 2d78c12aeb99ba45508886a56dc20c939d47913f
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27346341"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27836233"
 ---
 # <a name="managedmobilelobapp-resource-type"></a>managedMobileLobApp のリソースの種類
 

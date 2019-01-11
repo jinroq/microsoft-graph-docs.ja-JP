@@ -2,12 +2,13 @@
 title: ユーザーを一覧表示する
 description: ユーザー オブジェクトのリストを取得します。 これらのユーザーオブジェクトには、教育機関に固有のプロパティが含まれます。
 author: mmast-msft
-ms.openlocfilehash: dd7d086b4471b2938cb5480f9d351a46a27e1f06
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 757193b03758d1caab081718c3d565c65747f19d
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27338501"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27838116"
 ---
 # <a name="list-users"></a>ユーザーを一覧表示する
 

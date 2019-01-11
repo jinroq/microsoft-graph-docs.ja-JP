@@ -2,12 +2,13 @@
 title: androidPkcsCertificateProfile リソースの種類
 description: Android PKCS 証明書プロファイル
 author: tfitzmac
-ms.openlocfilehash: 334d55a7e15b2821558540520c13588250de955c
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: ceb1ed0566e98d7b2bd698eb929062f3bd829a6b
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27320175"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27835820"
 ---
 # <a name="androidpkcscertificateprofile-resource-type"></a>androidPkcsCertificateProfile リソースの種類
 
@@ -28,7 +29,7 @@ Android PKCS 証明書プロファイル
 |[AndroidPkcsCertificateProfile を削除します。](../api/intune-deviceconfig-androidpkcscertificateprofile-delete.md)|なし|の[androidPkcsCertificateProfile](../resources/intune-deviceconfig-androidpkcscertificateprofile.md)を削除します。|
 |[AndroidPkcsCertificateProfile を更新します。](../api/intune-deviceconfig-androidpkcscertificateprofile-update.md)|[androidPkcsCertificateProfile](../resources/intune-deviceconfig-androidpkcscertificateprofile.md)|[AndroidPkcsCertificateProfile](../resources/intune-deviceconfig-androidpkcscertificateprofile.md)オブジェクトのプロパティを更新します。|
 
-## <a name="properties"></a>Properties
+## <a name="properties"></a>プロパティ
 |プロパティ|種類|説明|
 |:---|:---|:---|
 |ID|String|エンティティのキー。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|

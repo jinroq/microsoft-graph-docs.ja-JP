@@ -2,12 +2,13 @@
 title: 設定の更新
 description: '設定オブジェクトのプロパティを更新します。 '
 author: dkershaw10
-ms.openlocfilehash: 571acf47852e703ee3bb20bd0c37cc5736cc4f1f
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: f39c0a2e98951bb61b0a9af1b5a1a196248d6118
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27320252"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27836247"
 ---
 # <a name="update-settings"></a>設定の更新
 

@@ -2,12 +2,13 @@
 title: リスト windowsPhone81VpnConfigurations
 description: WindowsPhone81VpnConfiguration オブジェクトのプロパティと関係を一覧表示します。
 author: tfitzmac
-ms.openlocfilehash: ba72ae3fd409dcc08cef51b7b66767691923b44e
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: a25937c9b4f98a9fa54de4459b9e8228db1b23e3
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27305027"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27836520"
 ---
 # <a name="list-windowsphone81vpnconfigurations"></a>リスト windowsPhone81VpnConfigurations
 

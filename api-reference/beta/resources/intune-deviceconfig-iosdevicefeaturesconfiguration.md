@@ -2,12 +2,13 @@
 title: iosDeviceFeaturesConfiguration リソースの種類
 description: iOS デバイス機能構成のプロファイル。
 author: tfitzmac
-ms.openlocfilehash: 114221bdb6390b80f7dd9b86edc7dac30d2bee46
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 1a3ac4ef0d2743a81ac5b3f02822677c264e02fd
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27349267"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27835491"
 ---
 # <a name="iosdevicefeaturesconfiguration-resource-type"></a>iosDeviceFeaturesConfiguration リソースの種類
 

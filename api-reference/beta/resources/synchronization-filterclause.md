@@ -1,12 +1,13 @@
 ---
 title: filterClause リソースの種類
 description: いずれかに候補オブジェクトが満たす必要があります、評価される 1 つのアサーションを表します`true`(オブジェクトでは、アサーションを満たしている) または`false`(オブジェクトでは、アサーションを満たしていません)。
-ms.openlocfilehash: 0861324849f224c4e750f0c7b926464280b9a377
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 89807a6086f661388c8d5b1d5f82bfe973c3af39
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27067699"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27833860"
 ---
 # <a name="filterclause-resource-type"></a>filterClause リソースの種類
 
@@ -15,7 +16,7 @@ ms.locfileid: "27067699"
 いずれかに候補オブジェクトが満たす必要があります、評価される 1 つのアサーションを表します`true`(オブジェクトでは、アサーションを満たしている) または`false`(オブジェクトでは、アサーションを満たしていません)。
 
 ## <a name="properties"></a>プロパティ
-| プロパティ     | 型   |説明|
+| プロパティ     | 種類   |説明|
 |:---------------|:--------|:----------|
 |operatorName|String|ソースとターゲットのオペランドに適用する演算子の名前です。 サポートされている演算子のいずれかをする必要があります。 サポートされている演算子を検出することができます。|
 |sourceOperandName|String|ソース オペランド (テスト中のオペランド) の名前です。 ソース オペランドの名前は、ソース オブジェクトの属性の名前のいずれかに一致しなければなりません。|

@@ -2,12 +2,13 @@
 title: Get ChartLegend
 description: chartlegend オブジェクトのプロパティと関係を取得します。
 author: lumine2008
-ms.openlocfilehash: 27b1680adb36222e9d05ca01619d87e73f1a6d8c
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 2b29b3a4a83070000693c23bcfc6d7df001b17f1
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27321890"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27835330"
 ---
 # <a name="get-chartlegend"></a>Get ChartLegend
 

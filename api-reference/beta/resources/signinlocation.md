@@ -1,12 +1,13 @@
 ---
 title: signInLocation リソースの種類
 description: 市、州、および記号の発生場所からの国を提供します。
-ms.openlocfilehash: a3d4f6ca5ec18e70960f45a3da1bb06d51ee1e65
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 49d6dfb07c635ac3754b3e873d75911a43593a73
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27070574"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27839138"
 ---
 # <a name="signinlocation-resource-type"></a>signInLocation リソースの種類
 市、州、および記号の発生場所からの国を提供します。
@@ -14,7 +15,7 @@ ms.locfileid: "27070574"
 
 
 ## <a name="properties"></a>プロパティ
-| プロパティ     | 型   |説明|
+| プロパティ     | 種類   |説明|
 |:---------------|:--------|:----------|
 |city|String|サインインが発生した場所の市区町村を提供します。 これは、サインインの活動からの緯度/経度情報を使用して計算されます。|
 |countryOrRegion|String|サインインが発生した場所 (2 文字のコード) の国コード情報を提供します。  これは、サインインの活動からの緯度/経度情報を使用して計算されます。|

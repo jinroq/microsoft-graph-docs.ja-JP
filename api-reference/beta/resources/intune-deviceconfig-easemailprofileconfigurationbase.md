@@ -2,12 +2,13 @@
 title: easEmailProfileConfigurationBase リソースの種類
 description: Apple デバイス機能構成のプロファイル。
 author: tfitzmac
-ms.openlocfilehash: 3c7be03c09a1aaebaf9b11e2e33eb91493f39e57
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: c8a2fa699b8f7a458f2c70c74424d8dbc7197a76
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27352123"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27835897"
 ---
 # <a name="easemailprofileconfigurationbase-resource-type"></a>easEmailProfileConfigurationBase リソースの種類
 
@@ -25,7 +26,7 @@ Apple デバイス機能構成のプロファイル。
 |[リスト easEmailProfileConfigurationBases](../api/intune-deviceconfig-easemailprofileconfigurationbase-list.md)|[easEmailProfileConfigurationBase](../resources/intune-deviceconfig-easemailprofileconfigurationbase.md)コレクション|[EasEmailProfileConfigurationBase](../resources/intune-deviceconfig-easemailprofileconfigurationbase.md)オブジェクトのプロパティと関係を一覧表示します。|
 |[EasEmailProfileConfigurationBase を取得します。](../api/intune-deviceconfig-easemailprofileconfigurationbase-get.md)|[easEmailProfileConfigurationBase](../resources/intune-deviceconfig-easemailprofileconfigurationbase.md)|[EasEmailProfileConfigurationBase](../resources/intune-deviceconfig-easemailprofileconfigurationbase.md)オブジェクトのプロパティと関係を参照してください。|
 
-## <a name="properties"></a>Properties
+## <a name="properties"></a>プロパティ
 |プロパティ|種類|説明|
 |:---|:---|:---|
 |ID|String|エンティティのキー。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|

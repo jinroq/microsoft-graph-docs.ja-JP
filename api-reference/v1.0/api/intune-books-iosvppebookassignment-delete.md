@@ -2,12 +2,13 @@
 title: iosVppEBookAssignment の削除
 description: iosVppEBookAssignment を削除します。
 author: tfitzmac
-ms.openlocfilehash: cda2654ba20e04f27fd9e38a4d3708d11ba9df7f
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: d234d44d9ecb31efb9fb2d0f50538ec39c5bf2a0
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27301856"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27835351"
 ---
 # <a name="delete-iosvppebookassignment"></a>iosVppEBookAssignment の削除
 

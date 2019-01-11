@@ -2,12 +2,13 @@
 title: ImportedAppleDeviceIdentityResult を更新します。
 description: ImportedAppleDeviceIdentityResult オブジェクトのプロパティを更新します。
 author: tfitzmac
-ms.openlocfilehash: 283626d0b3f87faccfac4531e060debc6ba210fc
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 0b977063c362646cee7051e742729f63fccecf9e
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27355637"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27836541"
 ---
 # <a name="update-importedappledeviceidentityresult"></a>ImportedAppleDeviceIdentityResult を更新します。
 

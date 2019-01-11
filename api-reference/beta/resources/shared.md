@@ -3,12 +3,13 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
 title: Shared
-ms.openlocfilehash: 38bc8604ba2528a24e2193a2fb521428b2b5c2d3
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: cae69a60691d388570d29176fc20aac429907f8a
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27072222"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27838991"
 ---
 # <a name="shared-resource-type"></a>Shared リソースの種類
 
@@ -37,7 +38,7 @@ ms.locfileid: "27072222"
 
 ## <a name="properties"></a>プロパティ
 
-| プロパティ       | 型                          | 説明
+| プロパティ       | 種類                          | 説明
 | :------------- |:------------------------------|:----------------------------
 | owner          | [IdentitySet](identityset.md) | 共有項目の所有者の ID。読み取り専用。
 | scope          | String                        | `anonymous`、`organization`、や `users` など、項目がどのように共有されているかのスコープを示します。 読み取り専用です。

@@ -2,12 +2,13 @@
 title: Delete defaultManagedAppProtection
 description: defaultManagedAppProtection を削除します。
 author: tfitzmac
-ms.openlocfilehash: d9e9e4909d420fcf6747c6cfdba1d9c85a4d8667
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 14ad936589522672a726f9ea5415e82f5edf404c
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27319923"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27837829"
 ---
 # <a name="delete-defaultmanagedappprotection"></a>Delete defaultManagedAppProtection
 

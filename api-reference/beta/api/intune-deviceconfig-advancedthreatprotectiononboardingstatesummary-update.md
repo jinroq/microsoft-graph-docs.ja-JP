@@ -2,12 +2,13 @@
 title: AdvancedThreatProtectionOnboardingStateSummary を更新します。
 description: AdvancedThreatProtectionOnboardingStateSummary オブジェクトのプロパティを更新します。
 author: tfitzmac
-ms.openlocfilehash: a31dae3c1f79332ae03324d1ecbb604451bc7959
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 67d127ae3fb4545857dca2719fd2ae8417a400fe
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27340027"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27837071"
 ---
 # <a name="update-advancedthreatprotectiononboardingstatesummary"></a>AdvancedThreatProtectionOnboardingStateSummary を更新します。
 

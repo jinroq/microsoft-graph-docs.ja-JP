@@ -2,12 +2,13 @@
 title: macOSFirewallApplication リソースの種類
 description: MacOS ファイアウォール アプリケーションの一覧でアプリケーションを表します。
 author: tfitzmac
-ms.openlocfilehash: 0d248194eed1b6e1841d2e4533aa1f79b772ccc0
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 536f2f596286f6b5457557f575ba018c65001bfe
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27302724"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27835221"
 ---
 # <a name="macosfirewallapplication-resource-type"></a>macOSFirewallApplication リソースの種類
 
@@ -16,7 +17,7 @@ ms.locfileid: "27302724"
 > **注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
 
 MacOS ファイアウォール アプリケーションの一覧でアプリケーションを表します。
-## <a name="properties"></a>Properties
+## <a name="properties"></a>プロパティ
 |プロパティ|種類|説明|
 |:---|:---|:---|
 |bundleId|String|アプリケーションのメニューです。|

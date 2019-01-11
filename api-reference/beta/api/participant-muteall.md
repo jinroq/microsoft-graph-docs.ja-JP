@@ -2,12 +2,13 @@
 title: '参加者: muteAll'
 description: 呼び出しのすべての参加者をミュートします。
 author: VinodRavichandran
-ms.openlocfilehash: fb395fd5a49a0a13616d32de9645f3899e4641d2
-ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
+localization_priority: Normal
+ms.openlocfilehash: 7141c5f8ee190fd3df8cca3f30f14c537165986b
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "27380500"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27837808"
 ---
 # <a name="participant-muteall"></a>参加者: muteAll
 
@@ -39,7 +40,7 @@ POST /applications/{id}/calls/{id}/participants/muteAll
 ## <a name="request-body"></a>要求本文
 要求本文で、次のパラメーターを含む JSON オブジェクトを指定します。
 
-| パラメーター      | 型    |説明|
+| パラメーター      | Type    |説明|
 |:---------------|:--------|:----------|
 |participants|String コレクション|参加者をミュートします。|
 |clientContext|String|クライアントのコンテキスト。|

@@ -2,12 +2,13 @@
 title: deviceManagementTroubleshootingEvent の更新
 description: deviceManagementTroubleshootingEvent オブジェクトのプロパティを更新します。
 author: tfitzmac
-ms.openlocfilehash: ec4cf8d98d51ec369739158c3cf8f6daf2e2ac8e
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 0319e9ad7a56c0fb6214731694b7dd529db8e8e4
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27358808"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27836485"
 ---
 # <a name="update-devicemanagementtroubleshootingevent"></a>deviceManagementTroubleshootingEvent の更新
 

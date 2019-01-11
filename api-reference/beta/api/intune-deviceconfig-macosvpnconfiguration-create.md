@@ -2,12 +2,13 @@
 title: MacOSVpnConfiguration を作成します。
 description: 新しい macOSVpnConfiguration オブジェクトを作成します。
 author: tfitzmac
-ms.openlocfilehash: bc5f01ef506564165252c16336f157d14af7f1ed
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: d88b4fe6b0489168536acdad01dc4e32f26f68f7
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27319664"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27837661"
 ---
 # <a name="create-macosvpnconfiguration"></a>MacOSVpnConfiguration を作成します。
 

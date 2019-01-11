@@ -2,12 +2,13 @@
 title: List deviceComplianceDeviceStatuses
 description: deviceComplianceDeviceStatus オブジェクトのプロパティとリレーションシップをリストします。
 author: tfitzmac
-ms.openlocfilehash: 0cf160e98be194bdbdbde29d3e06e3269db40bbb
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 9d5a869083b8a0dceea57a644962af9196563599
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27330332"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27836758"
 ---
 # <a name="list-devicecompliancedevicestatuses"></a>List deviceComplianceDeviceStatuses
 

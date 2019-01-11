@@ -1,12 +1,13 @@
 ---
 title: MailFolder を作成する
 description: この API を使用して、ユーザーのメールボックスのルート フォルダーに新しいメール フォルダーを作成します。
-ms.openlocfilehash: 6e6b42197dcb5b968a59303d2e9c8c8b1ddf6feb
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: fd625e221eea67d08407dc332d47880ce21f21e5
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27072924"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27838424"
 ---
 # <a name="create-mailfolder"></a>MailFolder を作成する
 
@@ -36,7 +37,7 @@ POST /users/{id | userPrincipalName}/mailFolders
 ## <a name="request-body"></a>要求本文
 要求本文で、次のパラメーターを含む JSON オブジェクトを指定します。[MailFolder](../resources/mailfolder.md) オブジェクトに対して書き込み可能なプロパティは **displayName** のみです。
 
-| パラメーター    | 型   |説明|
+| パラメーター    | Type   |説明|
 |:---------------|:--------|:----------|
 |displayName|String|新しいフォルダーの表示名です。|
 

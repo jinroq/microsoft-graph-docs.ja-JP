@@ -1,12 +1,13 @@
 ---
 title: directory リソースの種類 (削除済みアイテム)
 description: . 削除されたアイテムは、最大 30 日間、復元可能な状態に維持されます。 30 日が経過すると、アイテムは完全に削除されます。
-ms.openlocfilehash: e83ace1a50998b6645e059fe0f63e3922497c1cd
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: e8ccecfd0d8cffa383ecc96cc908d31452db5fb0
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27023269"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27835771"
 ---
 # <a name="directory-resource-type-deleted-items"></a>directory リソースの種類 (削除済みアイテム)
 
@@ -43,7 +44,7 @@ ms.locfileid: "27023269"
 }
 ```
 
-## <a name="example"></a>使用例
+## <a name="example"></a>例
 
 <!--{"blockType": "request"}-->
 ```http

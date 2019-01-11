@@ -2,12 +2,13 @@
 title: iosVppEBook の更新
 description: iosVppEBook オブジェクトのプロパティを更新します。
 author: tfitzmac
-ms.openlocfilehash: d73542adf39948979e0287be6a566ae8ddb7f829
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: ac75fef4b902c77f36f3a8559b40bad252a5336a
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27309675"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27836093"
 ---
 # <a name="update-iosvppebook"></a>iosVppEBook の更新
 

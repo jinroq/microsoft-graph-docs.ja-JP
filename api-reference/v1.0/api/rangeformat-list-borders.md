@@ -2,12 +2,13 @@
 title: 境界線を一覧表示する
 description: rangeborder オブジェクトのリストを取得します。
 author: lumine2008
-ms.openlocfilehash: 606dc6d3be61ca13d103cef496a2f34154de9b2a
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 7f117d2192ac4b8157f870cb6c870d564e64c545
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27323892"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27836765"
 ---
 # <a name="list-borders"></a>境界線を一覧表示する
 

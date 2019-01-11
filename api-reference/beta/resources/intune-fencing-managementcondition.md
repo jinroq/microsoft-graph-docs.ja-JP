@@ -1,12 +1,13 @@
 ---
 title: managementCondition リソースの種類
 description: 管理条件は、geo の囲いのように動的に発生することをイベントのタイム ・ フェンスとネットワーク フェンスです。
-ms.openlocfilehash: 3c2bc1d7594e61642b96398bfb55d6aa38f3283d
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: a836aeaa660de8f02c4e441e9eb390e1513c917c
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27068509"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27834112"
 ---
 # <a name="managementcondition-resource-type"></a>managementCondition リソースの種類
 
@@ -23,9 +24,9 @@ ms.locfileid: "27068509"
 |[getManagementConditionsForPlatform 関数](../api/intune-fencing-managementcondition-getmanagementconditionsforplatform.md)|[managementCondition](../resources/intune-fencing-managementcondition.md)コレクション|まだ文書化されていません|
 
 ## <a name="properties"></a>プロパティ
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
-|id|String|管理条件の一意の識別子です。 システムでは、作成時に割り当てられた値が生成されます。|
+|ID|String|管理条件の一意の識別子です。 システムでは、作成時に割り当てられた値が生成されます。|
 |一意な名前|String|管理条件の一意の名前です。 管理条件式で使用されます。|
 |displayName|String|管理者は、管理の条件の名前を定義します。|
 |説明|String|管理者は、管理状態の説明を定義します。|

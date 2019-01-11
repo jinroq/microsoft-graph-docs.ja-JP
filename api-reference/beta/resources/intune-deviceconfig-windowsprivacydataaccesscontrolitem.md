@@ -2,12 +2,13 @@
 title: windowsPrivacyDataAccessControlItem リソースの種類
 description: プライバシー データのカテゴリごとのアクセス制御レベルを指定します。
 author: tfitzmac
-ms.openlocfilehash: 3655282d7b3b6ff31268f9fe536a4a8f6ac85341
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: b3672ff7bd0c968f60cc80797545aa8bb13d2bb5
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27314988"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27837423"
 ---
 # <a name="windowsprivacydataaccesscontrolitem-resource-type"></a>windowsPrivacyDataAccessControlItem リソースの種類
 
@@ -25,7 +26,7 @@ ms.locfileid: "27314988"
 |[WindowsPrivacyDataAccessControlItem を削除します。](../api/intune-deviceconfig-windowsprivacydataaccesscontrolitem-delete.md)|なし|の[windowsPrivacyDataAccessControlItem](../resources/intune-deviceconfig-windowsprivacydataaccesscontrolitem.md)を削除します。|
 |[WindowsPrivacyDataAccessControlItem を更新します。](../api/intune-deviceconfig-windowsprivacydataaccesscontrolitem-update.md)|[windowsPrivacyDataAccessControlItem](../resources/intune-deviceconfig-windowsprivacydataaccesscontrolitem.md)|[WindowsPrivacyDataAccessControlItem](../resources/intune-deviceconfig-windowsprivacydataaccesscontrolitem.md)オブジェクトのプロパティを更新します。|
 
-## <a name="properties"></a>Properties
+## <a name="properties"></a>プロパティ
 |プロパティ|種類|説明|
 |:---|:---|:---|
 |ID|String|WindowsPrivacyDataAccessControlItem のキー。|

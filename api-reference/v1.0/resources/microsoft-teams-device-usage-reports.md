@@ -1,12 +1,13 @@
 ---
 title: Microsoft Teams デバイスの使用状況レポート
 description: Microsoft Teams デバイスの使用状況レポートを使用して、組織内の Microsoft Teams デバイスの使用状況に関する情報を取得します。
-ms.openlocfilehash: b6da6128dce8da3b9833d78a9fcf725736bdeca1
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 788f3da7fade0ec87e1298c2cfdd693a0f831e0e
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27020461"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27838559"
 ---
 # <a name="microsoft-teams-device-usage-reports"></a>Microsoft Teams デバイスの使用状況レポート
 

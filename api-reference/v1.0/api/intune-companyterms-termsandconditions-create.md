@@ -2,12 +2,13 @@
 title: termsAndConditions の作成
 description: 新しい termsAndConditions オブジェクトを作成します。
 author: tfitzmac
-ms.openlocfilehash: 1eaa9f8a24082813abb3ffbda2c188a1a4e632b4
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: f2cd2350f3faa04883e3e65312b103c7cef96d41
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27334413"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27835848"
 ---
 # <a name="create-termsandconditions"></a>termsAndConditions の作成
 

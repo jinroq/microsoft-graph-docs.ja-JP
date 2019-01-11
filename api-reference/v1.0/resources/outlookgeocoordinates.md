@@ -1,12 +1,13 @@
 ---
 title: outlookGeoCoordinates リソースの種類
 description: 物理的な場所に関する地理的な座標と標高、およびそれらの値の精度を表します。
-ms.openlocfilehash: 232c40bde9484c74500370a321f0f465150061d9
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: b6c3c8d6336cd301caba0def2853f498f488816b
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27022648"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27837430"
 ---
 # <a name="outlookgeocoordinates-resource-type"></a>outlookGeoCoordinates リソースの種類
 
@@ -35,7 +36,7 @@ ms.locfileid: "27022648"
 
 ```
 ## <a name="properties"></a>プロパティ
-| プロパティ     | 型   |説明|
+| プロパティ     | 種類   |説明|
 |:---------------|:--------|:----------|
 |accuracy|double|緯度と経度の精度です。 一例として、緯度と経度の精度が 50 メートル以内となるように、精度をメートル単位で測定することができます。|
 |altitude|double|場所の標高です。|

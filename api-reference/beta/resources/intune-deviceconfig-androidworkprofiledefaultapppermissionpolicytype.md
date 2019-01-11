@@ -2,12 +2,13 @@
 title: androidWorkProfileDefaultAppPermissionPolicyType 列挙型
 description: Android 作業プロファイル既定アプリケーションのアクセス許可ポリシーの種類。
 author: tfitzmac
-ms.openlocfilehash: 2c038adc67a83b98885af1b46c4c29c45aaaf0ba
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 2a2ba4bca2fd9a91b47ec4c4d986f2554ff4d3d6
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27327182"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27836065"
 ---
 # <a name="androidworkprofiledefaultapppermissionpolicytype-enum-type"></a>androidWorkProfileDefaultAppPermissionPolicyType 列挙型
 
@@ -20,7 +21,7 @@ Android 作業プロファイル既定アプリケーションのアクセス許
 |メンバー|値|説明|
 |:---|:---|:---|
 |deviceDefault|0|デバイスの既定値でことを目的しません。|
-|Prompt|1|メッセージを表示します。|
+|プロンプト|1|メッセージを表示します。|
 |autoGrant|2|自動付与します。|
 |autoDeny|3|自動を拒否します。|
 

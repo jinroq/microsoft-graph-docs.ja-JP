@@ -2,12 +2,13 @@
 title: windowsDefenderScan アクション
 description: まだ文書化されていません
 author: tfitzmac
-ms.openlocfilehash: d64ce1e595717d99608547ff4622d35d22d18552
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 2dc9f1abd2b9d938b286e2f585b427e97b0b54cf
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27305090"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27836548"
 ---
 # <a name="windowsdefenderscan-action"></a>windowsDefenderScan アクション
 

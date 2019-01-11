@@ -1,12 +1,13 @@
 ---
 title: リスト riskyUsers
 description: プロパティと、 **riskyUsers**オブジェクトの関係を取得します。
-ms.openlocfilehash: d800f37c1e7e2d03edc0273d30e2be37c799d0d4
-ms.sourcegitcommit: ba6b1d1a12dcb54916b4d3e529c856f6514e01e7
+localization_priority: Normal
+ms.openlocfilehash: bc5023df014e2abc1e7b510bc10a051f6b725e3b
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/12/2018
-ms.locfileid: "27241042"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27835239"
 ---
 # <a name="list-riskyusers"></a>リスト riskyUsers
 

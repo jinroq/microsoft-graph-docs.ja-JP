@@ -2,12 +2,13 @@
 title: WindowsPrivacyDataAccessControlItem を更新します。
 description: WindowsPrivacyDataAccessControlItem オブジェクトのプロパティを更新します。
 author: tfitzmac
-ms.openlocfilehash: 38389049c03d822feb4c3791dfee65e327e1afea
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 3a989f4c05bff61f86c93873ad817013b6fab2bf
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27324158"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27807127"
 ---
 # <a name="update-windowsprivacydataaccesscontrolitem"></a>WindowsPrivacyDataAccessControlItem を更新します。
 

@@ -1,12 +1,13 @@
 ---
 title: 'synchronizationJob: validateCredentials'
 description: 資格情報は、テナントの有効なことを検証します。
-ms.openlocfilehash: b4f488787474158172800fe23d7d0ae78ef6a366
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: b78d6f7b3ff197607897fbdce123aa1e7e646afc
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27068072"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27834921"
 ---
 # <a name="synchronizationjob-validatecredentials"></a>synchronizationJob: validateCredentials
 
@@ -37,9 +38,9 @@ POST /servicePrincipals/{id}/synchronization/jobs/{id}/validateCredentials
 ## <a name="request-body"></a>要求本文
 要求本文で、次のパラメーターを含む JSON オブジェクトを指定します。
 
-| パラメーター    | 型   |説明|
+| パラメーター    | Type   |説明|
 |:---------------|:--------|:----------|
-|useSavedCredentials|ブール値|`true`、`credentials`パラメーターは無視され、代わりに (存在する場合) には、以前に保存した資格情報が検証されます。 |
+|useSavedCredentials|ブール型|`true`、`credentials`パラメーターは無視され、代わりに (存在する場合) には、以前に保存した資格情報が検証されます。 |
 |資格情報|[synchronizationSecretKeyStringValuePair](../resources/synchronization-secretkeystringvaluepair.md)コレクション|検証する資格情報。 無視する場合、`useSavedCredentials`のパラメーターは、 `true`。|
 
 ## <a name="response"></a>応答

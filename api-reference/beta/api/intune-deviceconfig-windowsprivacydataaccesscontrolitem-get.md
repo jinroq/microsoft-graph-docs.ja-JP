@@ -2,12 +2,13 @@
 title: WindowsPrivacyDataAccessControlItem を取得します。
 description: WindowsPrivacyDataAccessControlItem オブジェクトのプロパティと関係を参照してください。
 author: tfitzmac
-ms.openlocfilehash: 8f609db5e3e56e91c716dcce127c14b8de0db793
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 400dd4ab11f6a5885f0bf141459843ed4f407bd7
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27326839"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27836450"
 ---
 # <a name="get-windowsprivacydataaccesscontrolitem"></a>WindowsPrivacyDataAccessControlItem を取得します。
 

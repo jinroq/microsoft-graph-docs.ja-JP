@@ -2,12 +2,13 @@
 title: リソースの種類を確認します。
 description: 基本型の操作を確認します。
 author: VinodRavichandran
-ms.openlocfilehash: 27018cf841641ac3f7fc2eba6f6304d911c3a7cd
-ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
+localization_priority: Normal
+ms.openlocfilehash: 2ea047ce21cb339f65bd6af8f361b2e91cd443f3
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "27380167"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27837563"
 ---
 # <a name="prompt-resource-type"></a>リソースの種類を確認します。
 

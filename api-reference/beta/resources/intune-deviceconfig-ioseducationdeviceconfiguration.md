@@ -2,12 +2,13 @@
 title: iosEducationDeviceConfiguration リソースの種類
 description: iOS 構成プロファイルの教育
 author: tfitzmac
-ms.openlocfilehash: 2a40e05bf37c7a2fb288cc836b46c91679de3264
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: b2e4e4584539a81fe9ff2c5369b332ddad6dc327
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27358514"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27835087"
 ---
 # <a name="ioseducationdeviceconfiguration-resource-type"></a>iosEducationDeviceConfiguration リソースの種類
 
@@ -28,7 +29,7 @@ iOS 構成プロファイルの教育
 |[IosEducationDeviceConfiguration を削除します。](../api/intune-deviceconfig-ioseducationdeviceconfiguration-delete.md)|なし|の[iosEducationDeviceConfiguration](../resources/intune-deviceconfig-ioseducationdeviceconfiguration.md)を削除します。|
 |[IosEducationDeviceConfiguration を更新します。](../api/intune-deviceconfig-ioseducationdeviceconfiguration-update.md)|[iosEducationDeviceConfiguration](../resources/intune-deviceconfig-ioseducationdeviceconfiguration.md)|[IosEducationDeviceConfiguration](../resources/intune-deviceconfig-ioseducationdeviceconfiguration.md)オブジェクトのプロパティを更新します。|
 
-## <a name="properties"></a>Properties
+## <a name="properties"></a>プロパティ
 |プロパティ|種類|説明|
 |:---|:---|:---|
 |ID|String|エンティティのキー。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|

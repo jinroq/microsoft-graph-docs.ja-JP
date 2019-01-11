@@ -2,12 +2,13 @@
 title: vpnTrafficRuleAppType 列挙型
 description: VPN トラフィックの規則が関連付けられているアプリケーションの種類を示します。
 author: tfitzmac
-ms.openlocfilehash: 3ab20bf62029e57c93c80d5f49d964abb58a883d
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 71e0af722c690188b3bb0e9dc33327f443cc9086
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27347356"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27835813"
 ---
 # <a name="vpntrafficruleapptype-enum-type"></a>vpnTrafficRuleAppType 列挙型
 

@@ -2,12 +2,13 @@
 title: iosVppEBookAssignments のリスト
 description: iosVppEBookAssignment オブジェクトのプロパティとリレーションシップをリストします。
 author: tfitzmac
-ms.openlocfilehash: ec1540956ef9972dd4dddc75921bec006953a8b3
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: bbc8a9f380912fcbc594b2cd869b87b6101ddc65
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27309255"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27836569"
 ---
 # <a name="list-iosvppebookassignments"></a>iosVppEBookAssignments のリスト
 

@@ -2,12 +2,13 @@
 title: DeviceManagementScript を作成します。
 description: 新しい deviceManagementScript オブジェクトを作成します。
 author: tfitzmac
-ms.openlocfilehash: 862b9c3ba50f879e92e47b50e6efaf0bcf41927a
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 4a9f62c4e67b73dd5dc37e6cd5c46c2e6a4ad396
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27315436"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27838032"
 ---
 # <a name="create-devicemanagementscript"></a>DeviceManagementScript を作成します。
 

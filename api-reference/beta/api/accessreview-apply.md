@@ -1,12 +1,13 @@
 ---
 title: AccessReview を適用します。
 description: 'Azure AD のレビュー機能にアクセス、完成した accessReview の決定を適用します。  ターゲット オブジェクトは、1 回限りのアクセスの確認、または定期的なアクセス確認のインスタンスのいずれかにできます。  '
-ms.openlocfilehash: 2a5675eee989e21fcc275ddf859738af46742610
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 762acb3dde490ea8867fb008d07b9914326f20fe
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27067996"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27838886"
 ---
 # <a name="apply-accessreview"></a>AccessReview を適用します。
 
@@ -37,7 +38,7 @@ ms.locfileid: "27067996"
 POST /accessReviews('<id>')/applyDecisions()
 ```
 ## <a name="request-headers"></a>要求ヘッダー
-| 名前         | 型        | 説明 |
+| 名前         | 種類        | 説明 |
 |:-------------|:------------|:------------|
 | Authorization | string | ベアラー\{トークン\}。 必須。 |
 

@@ -2,12 +2,13 @@
 title: AndroidScepCertificateProfile を更新します。
 description: AndroidScepCertificateProfile オブジェクトのプロパティを更新します。
 author: tfitzmac
-ms.openlocfilehash: 0728abf6983593de11afb6d0a08b8451b8fa5474
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 437a1ab0e8d257b0e9216782abf118f5af50671a
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27348154"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27836933"
 ---
 # <a name="update-androidscepcertificateprofile"></a>AndroidScepCertificateProfile を更新します。
 

@@ -2,12 +2,13 @@
 title: AndroidWorkProfileGeneralDeviceConfiguration を更新します。
 description: AndroidWorkProfileGeneralDeviceConfiguration オブジェクトのプロパティを更新します。
 author: tfitzmac
-ms.openlocfilehash: 7ea8e4b56e8572586412f865cfa148fe83a2a0a0
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 73e0d7fc05266a84b4b8aea7e1c0401bb6a99435
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27312818"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27837633"
 ---
 # <a name="update-androidworkprofilegeneraldeviceconfiguration"></a>AndroidWorkProfileGeneralDeviceConfiguration を更新します。
 

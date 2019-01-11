@@ -2,12 +2,13 @@
 title: オーディオのルーティング グループを更新します。
 description: ソースと、audioRoutingGroup の受信機を変更します。
 author: VinodRavichandran
-ms.openlocfilehash: f1fac21e2d52818ee068bfe64e8db7853332d993
-ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
+localization_priority: Normal
+ms.openlocfilehash: b12d93d3cd8255cb735beaba7c78684a2b3b3a9b
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "27380367"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27833839"
 ---
 # <a name="update-audio-routing-group"></a>オーディオのルーティング グループを更新します。
 
@@ -39,7 +40,7 @@ PATCH /applications/{id}/calls/{id}/audioRoutingGroups/{id}
 ## <a name="request-body"></a>要求本文
 要求本文で、更新する関連フィールドの値を指定します。 要求本文に含まれない既存のプロパティは、以前の値のままになるか、他のプロパティ値の変更に基づいて再計算されます。 最適なパフォーマンスを得るために、変更されていない既存の値を含めないでください。
 
-| プロパティ       | 型    |説明|
+| プロパティ       | 種類    |説明|
 |:---------------|:--------|:----------|
 | 受信機 | String コレクション | ターゲットの参加者、audioRoutingGroup。 |
 | routingMode | String | 使用可能な値は、`oneToOne`、`multicast` です。 |

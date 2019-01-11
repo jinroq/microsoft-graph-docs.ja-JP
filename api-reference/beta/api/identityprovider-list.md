@@ -1,12 +1,13 @@
 ---
 title: リスト identityProviders
 description: ディレクトリ内のすべての identityProviders を取得します。
-ms.openlocfilehash: fd5662690b644bc7a34587a5bdfc519188a3d4ff
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 43442a0bf354816c8c104d57d9720940d83bc0d0
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27072621"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27837969"
 ---
 # <a name="list-identityproviders"></a>リスト identityProviders
 
@@ -47,7 +48,7 @@ GET /identityProviders
 
 かどうかは成功すると、このメソッドを返します`200 OK`応答コードおよび応答の本文に JSON 形式で[identityProviders](../resources/identityprovider.md)のコレクションです。
 
-## <a name="example"></a>使用例
+## <a name="example"></a>例
 
 次の例では、すべての**identityProvider**を取得します。
 

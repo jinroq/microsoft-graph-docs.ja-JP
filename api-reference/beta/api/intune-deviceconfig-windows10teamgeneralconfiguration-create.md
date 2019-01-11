@@ -2,12 +2,13 @@
 title: windows10TeamGeneralConfiguration の作成
 description: 新しい windows10TeamGeneralConfiguration オブジェクトを作成します。
 author: tfitzmac
-ms.openlocfilehash: aa796f7896ce2cd30f93978daf60744710a2caf1
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: b1b1061e1aba8f1f3aaccc8cdc2d85565a52dadf
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27311054"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27836618"
 ---
 # <a name="create-windows10teamgeneralconfiguration"></a>windows10TeamGeneralConfiguration の作成
 
