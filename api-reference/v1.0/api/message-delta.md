@@ -1,12 +1,13 @@
 ---
 title: 'message: delta'
 description: 指定したフォルダーで追加、削除、更新されたメッセージのセットを取得します。
-ms.openlocfilehash: 31d8c1c0129257d2cd125ce7e349f9f361eff5ef
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Priority
+ms.openlocfilehash: b0e5e5a295d7be92e1d4d45f2e079493f1633a45
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27021991"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27888362"
 ---
 # <a name="message-delta"></a>message: delta
 
@@ -49,7 +50,7 @@ GET /users/{id}/mailFolders/{id}/messages/delta
 - `$search` はサポートされていません。
 
 ## <a name="request-headers"></a>要求ヘッダー
-| 名前       | 型 | 説明 |
+| 名前       | 種類 | 説明 |
 |:---------------|:----------|:----------|
 | Authorization  | string  | ベアラー {トークン}。必須。 |
 | Content-Type  | string  | application/json. Required. |

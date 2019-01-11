@@ -2,12 +2,13 @@
 title: omaSettingFloatingPoint リソースの種類
 description: OMA 設定の浮動小数点の定義です。
 author: tfitzmac
-ms.openlocfilehash: efed2112f85ee0600fcbe499616a7f3e787beb59
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: a36d30cb62862b469d7b32d742275d399ed36db0
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27360754"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27888131"
 ---
 # <a name="omasettingfloatingpoint-resource-type"></a>omaSettingFloatingPoint リソースの種類
 

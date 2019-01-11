@@ -2,12 +2,13 @@
 title: TableColumnCollection を一覧表示する
 description: tablecolumn オブジェクトのリストを取得します。
 author: lumine2008
-ms.openlocfilehash: 02b04e619dddc352bc5af2da486cee843e941bb3
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 56b4722c69589d8474bee10bed4fdec01dbc72bc
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27302024"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27889711"
 ---
 # <a name="list-tablecolumncollection"></a>TableColumnCollection を一覧表示する
 

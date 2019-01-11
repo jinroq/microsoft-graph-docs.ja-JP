@@ -1,12 +1,13 @@
 ---
 title: 'mailFolder: delta'
 description: ユーザーのメールボックスで追加または削除された一連のメール フォルダーを取得します。
-ms.openlocfilehash: 7acb50a8d4f32ba6f193fdb18c688622fc5e56dd
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: c26d11426c2b2066a4f5fc93b46b8e9b5b79973a
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27071762"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27889349"
 ---
 # <a name="mailfolder-delta"></a>mailFolder: delta
 
@@ -47,7 +48,7 @@ GET /users/<id>/mailFolders/delta
 任意の GET リクエストと同様に `$select` クエリ パラメーターを使用して、最善のパフォーマンスを得るために必要なプロパティのみを指定することができます。_Id_ プロパティは常に返されます。 
 
 ## <a name="request-headers"></a>要求ヘッダー
-| 名前       | 型 | 説明 |
+| 名前       | 種類 | 説明 |
 |:---------------|:----------|:----------|
 | Authorization  | string  | ベアラー {トークン}。必須。 |
 | Content-Type  | string  | application/json. Required. |

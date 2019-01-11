@@ -1,12 +1,13 @@
 ---
 title: ディレクトリ設定のテンプレートを取得します。
 description: ディレクトリ設定のテンプレートでは、テナント内で元の設定を作成する可能性があります設定のテンプレートを表します。 この操作には、使用可能な設定とその既定値を含む directorySettingTemplate オブジェクトのプロパティの取得が可能します。
-ms.openlocfilehash: 1928642883632a672ddaccb9181f6366ade5ce04
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 55312fd4d7e2a77821dc7ad18ca3f67bded261df
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27066984"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27888173"
 ---
 # <a name="get-a-directory-setting-template"></a>ディレクトリ設定のテンプレートを取得します。
 

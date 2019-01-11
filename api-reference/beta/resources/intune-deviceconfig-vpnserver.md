@@ -2,12 +2,13 @@
 title: vpnServer のリソースの種類
 description: VPN サーバーの定義です。
 author: tfitzmac
-ms.openlocfilehash: a8f0e6bd38f243d0066da231ef07d1723961987b
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: b48daa95cc2227f6d1691902a75614446c93a10a
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27328778"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27889874"
 ---
 # <a name="vpnserver-resource-type"></a>vpnServer のリソースの種類
 
@@ -16,7 +17,7 @@ ms.locfileid: "27328778"
 > **注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
 
 VPN サーバーの定義です。
-## <a name="properties"></a>Properties
+## <a name="properties"></a>プロパティ
 |プロパティ|種類|説明|
 |:---|:---|:---|
 |説明|String|説明。|

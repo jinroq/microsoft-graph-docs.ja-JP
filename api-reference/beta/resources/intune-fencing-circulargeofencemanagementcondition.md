@@ -1,12 +1,13 @@
 ---
 title: circularGeofenceManagementCondition リソースの種類
 description: Geo フェンス-循環管理の条件を監視するのには、興味のあるエリアを定義するための情報が含まれています。
-ms.openlocfilehash: 0ae10d226b48772bb70e975496295afd2d67229d
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: de1f924cf1e56cbb1084122b01b001e21dd6b5f5
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27070553"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27828890"
 ---
 # <a name="circulargeofencemanagementcondition-resource-type"></a>circularGeofenceManagementCondition リソースの種類
 
@@ -28,9 +29,9 @@ Geo フェンス-循環管理の条件を監視するのには、興味のある
 |[CircularGeofenceManagementCondition を更新します。](../api/intune-fencing-circulargeofencemanagementcondition-update.md)|[circularGeofenceManagementCondition](../resources/intune-fencing-circulargeofencemanagementcondition.md)|[CircularGeofenceManagementCondition](../resources/intune-fencing-circulargeofencemanagementcondition.md)オブジェクトのプロパティを更新します。|
 
 ## <a name="properties"></a>プロパティ
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
-|id|String|管理条件の一意の識別子です。 システムでは、作成時に割り当てられた値が生成されます。 [ManagementCondition](../resources/intune-fencing-managementcondition.md)から継承されました。|
+|ID|String|管理条件の一意の識別子です。 システムでは、作成時に割り当てられた値が生成されます。 [ManagementCondition](../resources/intune-fencing-managementcondition.md)から継承されました。|
 |一意な名前|String|管理条件の一意の名前です。 管理条件式で使用されます。 [ManagementCondition](../resources/intune-fencing-managementcondition.md)から継承されました。|
 |displayName|String|管理者は、管理の条件の名前を定義します。 [ManagementCondition](../resources/intune-fencing-managementcondition.md)から継承されました。|
 |説明|String|管理者は、管理状態の説明を定義します。 [ManagementCondition](../resources/intune-fencing-managementcondition.md)から継承されました。|

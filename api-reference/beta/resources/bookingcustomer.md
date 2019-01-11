@@ -1,12 +1,13 @@
 ---
 title: bookingCustomer リソースの種類
 description: " > **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。"
-ms.openlocfilehash: 1eef44dfe994238d654a21c5f26ec102dcf1881d
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 02439b16235b3ff1560b5a74b15cd6ce2cb3075b
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27067530"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27888978"
 ---
 # <a name="bookingcustomer-resource-type"></a>bookingCustomer リソースの種類
 
@@ -23,14 +24,14 @@ ms.locfileid: "27067530"
 |[BookingCustomer を作成します。](../api/bookingbusiness-post-customers.md) | [bookingCustomer](bookingcustomer.md) | 新しい**bookingCustomer**オブジェクトを作成します。 |
 |[BookingCustomer を取得します。](../api/bookingcustomer-get.md) | [bookingCustomer](bookingcustomer.md) |プロパティと、 **bookingCustomer**オブジェクトの関係を参照してください。|
 |[Update](../api/bookingcustomer-update.md) | [bookingCustomer](bookingcustomer.md) |**BookingCustomer**オブジェクトを更新します。 |
-|[削除](../api/bookingcustomer-delete.md) | なし |**BookingCustomer**オブジェクトを削除します。 |
+|[Delete](../api/bookingcustomer-delete.md) | なし |**BookingCustomer**オブジェクトを削除します。 |
 
 ## <a name="properties"></a>プロパティ
-| プロパティ     | 型   |説明|
+| プロパティ     | 種類   |説明|
 |:---------------|:--------|:----------|
 |displayName|String|顧客の名前。|
 |emailAddress|String|お客様の SMTP アドレスです。|
-|id|String| 顧客の ID です。 読み取り専用。|
+|id|String| 顧客の ID です。 読み取り専用です。|
 
 ## <a name="relationships"></a>リレーションシップ
 なし

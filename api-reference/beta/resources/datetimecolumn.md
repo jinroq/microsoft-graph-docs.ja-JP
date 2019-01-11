@@ -3,12 +3,13 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/11/2017
 title: DateTimeColumn
-ms.openlocfilehash: 9854ad35c602ff474604f2ca88e7182c325e797d
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 03ebb78adda52a9f98aec6635bbda48dd61e37e2
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27067197"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27889216"
 ---
 # <a name="datetimecolumn-resource-type"></a>DateTimeColumn リソースの種類
 
@@ -30,7 +31,7 @@ ms.locfileid: "27067197"
 
 ## <a name="properties"></a>プロパティ
 
-| プロパティ名      | 型               | 説明
+| プロパティ名      | Type               | 説明
 |:-------------------|:-------------------|:----------------------------------------------
 | **displayAs**      | 文字列             | UX での値の表示方法です。 `default`、`friendly`、`standard` のいずれかでなければなりません。 詳細については、後述します。 指定しない場合、`default` として扱われます。
 | **format**         | 文字列             | 値を日付のみで表示するか、日付と時刻で表示するかを示します。 `dateOnly` または `dateTime` のいずれかでなければなりません。

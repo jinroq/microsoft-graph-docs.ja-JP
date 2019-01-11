@@ -2,12 +2,13 @@
 title: iosCustomConfiguration の更新
 description: iosCustomConfiguration オブジェクトのプロパティを更新します。
 author: tfitzmac
-ms.openlocfilehash: d79b50003f1a60c3cc0074abefbf0e1907042351
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 3d2271c70fd0f194c9f84b5d8e1b77568595ecb9
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27321974"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27808114"
 ---
 # <a name="update-ioscustomconfiguration"></a>iosCustomConfiguration の更新
 

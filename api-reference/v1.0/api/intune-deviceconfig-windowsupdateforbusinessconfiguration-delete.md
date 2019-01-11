@@ -2,12 +2,13 @@
 title: windowsUpdateForBusinessConfiguration の削除
 description: windowsUpdateForBusinessConfiguration を削除します。
 author: tfitzmac
-ms.openlocfilehash: 24ecae6bfa1fd00fa3a8c220e084db6062b67e6b
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 69648a827287a244540e6845f477a4f8fa5849b9
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27301590"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27889454"
 ---
 # <a name="delete-windowsupdateforbusinessconfiguration"></a>windowsUpdateForBusinessConfiguration の削除
 

@@ -1,12 +1,13 @@
 ---
 title: educationAssignmentGrade リソースの種類
 description: " ただし、このサブクラスは、すべてのタイプ (点、合格/不合格、) のグレーディングの"
-ms.openlocfilehash: c9cd043f8887fda9427d7b56cf832001361d03a9
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 371346c6ff23623a118b9ee169e563e75e2429f9
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27071877"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27889013"
 ---
 # <a name="educationassignmentgrade-resource-type"></a>educationAssignmentGrade リソースの種類
 
@@ -16,7 +17,7 @@ ms.locfileid: "27071877"
 
 
 ## <a name="properties"></a>プロパティ
-| プロパティ     | 型   |説明|
+| プロパティ     | 種類   |説明|
 |:---------------|:--------|:----------|
 |gradedBy|[identitySet](identityset.md)| グレーディングをしたユーザーです。 |
 |gradedDateTime|DateTimeOffset| グレードがこの送信オブジェクトに適用されたときの時点です。 Timestamp 型は、ISO 8601 形式を使用して日付と時刻の情報を表し、常に UTC 時間です。 たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、次のようになります。`'2014-01-01T00:00:00Z'`|

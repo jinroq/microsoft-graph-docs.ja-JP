@@ -2,12 +2,13 @@
 title: ワークシートを更新する
 description: ワークシート オブジェクトのプロパティを更新します。
 author: lumine2008
-ms.openlocfilehash: 249fb16fea3c7086411bfa9f11a2ea23926b4b5b
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: edf8f11bf446f28f63a27397865b873b69d76b20
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27344080"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27889671"
 ---
 # <a name="update-worksheet"></a>ワークシートを更新する
 

@@ -2,12 +2,13 @@
 title: deviceCategory リソースの種類
 description: これらのカテゴリは、Intune Azure コンソールでデバイスに適用することも、デバイスの登録時にユーザーが選択することもできます。 レポートをフィルター処理し、デバイス カテゴリに基づく動的な Azure Active Directory デバイス グループを作成できます。
 author: tfitzmac
-ms.openlocfilehash: 4416dc1557cdae38313aa8aa1e73cda82d764e9b
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: b61927b5d4c6e8c85ba454d241a0d61a20185579
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27359543"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27888823"
 ---
 # <a name="devicecategory-resource-type"></a>deviceCategory リソースの種類
 

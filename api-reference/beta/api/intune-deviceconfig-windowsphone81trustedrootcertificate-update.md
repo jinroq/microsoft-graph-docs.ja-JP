@@ -2,12 +2,13 @@
 title: WindowsPhone81TrustedRootCertificate を更新します。
 description: WindowsPhone81TrustedRootCertificate オブジェクトのプロパティを更新します。
 author: tfitzmac
-ms.openlocfilehash: 052bf31f8e0c20231ca657ec5ebb99eb303f4fcc
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 52a70eefc11a68ed440a2c1533fde57c41f78a16
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27327840"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27890504"
 ---
 # <a name="update-windowsphone81trustedrootcertificate"></a>WindowsPhone81TrustedRootCertificate を更新します。
 

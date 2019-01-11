@@ -2,12 +2,13 @@
 title: mediaStream リソースの種類
 description: MediaStream 型です。
 author: VinodRavichandran
-ms.openlocfilehash: f870611700289f0254272b78e18e344d02dd123e
-ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
+localization_priority: Normal
+ms.openlocfilehash: 7e56448c2c6d284e7a5904f1b0af414166782907
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "27380297"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27889615"
 ---
 # <a name="mediastream-resource-type"></a>mediaStream リソースの種類
 
@@ -17,12 +18,12 @@ MediaStream 型です。
 
 ## <a name="properties"></a>プロパティ
 
-| プロパティ    | 型    | 説明                                                                                                   |
+| プロパティ    | 種類    | 説明                                                                                                   |
 | :---------- | :------ | :------------------------------------------------------------------------------------------------------------ |
 | 方向   | String  | 方向です。 使用可能な値は、 `inactive`、 `sendOnly`、 `receiveOnly`、 `sendReceive`。                  |
 | label       | String  | メディア ストリームのラベルです。                                                                                       |
 | メディアの種類   | String  | メディアは次のとおり入力します。 使用可能な値は、 `unknown`、 `audio`、 `video`、 `videoBasedScreenSharing`、 `data`。        |
-| serverMuted | Boolean | サーバによってメディアがミュートされている場合。                                                                          |
+| serverMuted | ブール型 | サーバによってメディアがミュートされている場合。                                                                          |
 | sourceId    | String  | ソースの id。                                                                                                |
 
 ## <a name="json-representation"></a>JSON 表記

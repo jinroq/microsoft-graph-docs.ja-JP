@@ -2,12 +2,13 @@
 title: configurationManagerClientEnabledFeatures リソースの種類
 description: 構成マネージャーのクライアントに対応した機能
 author: tfitzmac
-ms.openlocfilehash: e0d704fddc084a455c83c5b55ea9b3911f3f232a
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 9517bb807ad257ddba94b991223b781e91bbbc68
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27343940"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27890091"
 ---
 # <a name="configurationmanagerclientenabledfeatures-resource-type"></a>configurationManagerClientEnabledFeatures リソースの種類
 

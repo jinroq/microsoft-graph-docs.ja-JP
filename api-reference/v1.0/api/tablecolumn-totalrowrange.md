@@ -2,12 +2,13 @@
 title: 'TableColumn: TotalRowRange'
 description: 列の集計行に関連付けられた範囲オブジェクトを取得します。
 author: lumine2008
-ms.openlocfilehash: 01e172aa5c7d5faba8b0a8d74de3bb411b82c8b1
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 76fd4de67c3346f0891c11b28a08cee430a0adbe
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27334847"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27889622"
 ---
 # <a name="tablecolumn-totalrowrange"></a>TableColumn: TotalRowRange
 

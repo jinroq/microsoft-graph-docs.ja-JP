@@ -3,12 +3,13 @@ author: daspek
 ms.author: dspektor
 ms.date: 09/12/2017
 title: ColumnLink
-ms.openlocfilehash: edb8d97094b4d26dbbcc008664bf5dfee3a4ddf9
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 226666875b9364f33954e7f932227562a9734267
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27067809"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27888572"
 ---
 # <a name="columnlink-resource-type"></a>ColumnLink リソースの種類
 
@@ -32,7 +33,7 @@ ms.locfileid: "27067809"
 
 ## <a name="properties"></a>プロパティ
 
-| プロパティ名 | 型   | 説明
+| プロパティ名 | Type   | 説明
 |:--------------|:-------|:----------------------------------------------------
 | **id**        | string | 列の一意識別子。
 | **name**      | 文字列 | このコンテンツ タイプの列の名前。

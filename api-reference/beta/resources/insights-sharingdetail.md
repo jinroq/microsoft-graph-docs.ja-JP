@@ -2,12 +2,13 @@
 title: sharingDetail リソースの種類
 description: '共有アイテムのプロパティを格納する複合型。 '
 author: simonhult
-ms.openlocfilehash: 8454fd451f0659ff3ccad270df3414a850bee180
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 463ba207d7b160bffb96319a994b82ee82f14b8d
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27353376"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27888460"
 ---
 # <a name="sharingdetail-resource-type"></a>sharingDetail リソースの種類
 

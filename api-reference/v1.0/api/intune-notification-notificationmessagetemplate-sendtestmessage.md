@@ -2,12 +2,13 @@
 title: sendTestMessage アクション
 description: 既定のロケールで、指定された notificationMessageTemplate を使用して、テスト メッセージを送信する
 author: tfitzmac
-ms.openlocfilehash: 4495b4064f18739744d0f1f5f8709f28373d5f89
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 8ca3eda7f085e80090c172d7612936ec7cd1275e
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27362756"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27889888"
 ---
 # <a name="sendtestmessage-action"></a>sendTestMessage アクション
 

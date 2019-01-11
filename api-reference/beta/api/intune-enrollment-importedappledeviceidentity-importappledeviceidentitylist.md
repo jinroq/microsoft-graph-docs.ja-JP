@@ -2,12 +2,13 @@
 title: importAppleDeviceIdentityList アクション
 description: まだ文書化されていません
 author: tfitzmac
-ms.openlocfilehash: 9ddd4ea6be25faaba089ee8e8d8b9a40edfbf9a5
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 75a40be8d2ea3ddafadb78f95662dcadf7a9ac01
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27325495"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27890602"
 ---
 # <a name="importappledeviceidentitylist-action"></a>importAppleDeviceIdentityList アクション
 
@@ -48,7 +49,7 @@ POST /deviceManagement/depOnboardingSettings/{depOnboardingSettingId}/importedAp
 |プロパティ|種類|説明|
 |:---|:---|:---|
 |importedAppleDeviceIdentities|[importedAppleDeviceIdentity](../resources/intune-enrollment-importedappledeviceidentity.md)コレクション|まだ文書化されていません|
-|overwriteImportedDeviceIdentities|Boolean|まだ文書化されていません|
+|overwriteImportedDeviceIdentities|ブール値|まだ文書化されていません|
 
 
 

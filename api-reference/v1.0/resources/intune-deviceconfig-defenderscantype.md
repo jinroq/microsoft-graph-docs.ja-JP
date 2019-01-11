@@ -2,12 +2,13 @@
 title: defenderScanType 列挙型
 description: システムに使用できる値の種類をスキャンします。
 author: tfitzmac
-ms.openlocfilehash: 985b63061f084e76aa2c90d116a4a5c90a0e120c
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 4fb262bdd32d1c576a0c7cec4262dedfef1d3f63
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27344311"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27889363"
 ---
 # <a name="defenderscantype-enum-type"></a>defenderScanType 列挙型
 

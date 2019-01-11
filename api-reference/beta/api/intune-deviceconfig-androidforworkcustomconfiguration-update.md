@@ -2,12 +2,13 @@
 title: AndroidForWorkCustomConfiguration を更新します。
 description: AndroidForWorkCustomConfiguration オブジェクトのプロパティを更新します。
 author: tfitzmac
-ms.openlocfilehash: e719ed88b7a8e1915bb9d8e34d6c10e3a9892bfb
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 53238ad41d4f6ac91e3018cd3da831c6a2ec8ea3
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27327301"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27807939"
 ---
 # <a name="update-androidforworkcustomconfiguration"></a>AndroidForWorkCustomConfiguration を更新します。
 

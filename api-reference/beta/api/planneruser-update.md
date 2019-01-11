@@ -1,12 +1,13 @@
 ---
 title: PlannerUser を更新します。
 description: PlannerUser オブジェクトのプロパティを更新します。 追加またはユーザーのお気に入りのプランの一覧からプランを削除するこの操作を使用することができ、ユーザーを計画することを示すには、最近表示しました。
-ms.openlocfilehash: 872bdaed0aff174abe01d350fa4d5304d4bcc620
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: ae09deff65c5de08d80e34140abacd43d43a94b0
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27067781"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27889055"
 ---
 # <a name="update-planneruser"></a>PlannerUser を更新します。
 
@@ -37,7 +38,7 @@ PATCH /me/planner
 ## <a name="request-body"></a>要求本文
 要求本文で、更新する関連フィールドの値を指定します。 要求本文に含まれない既存のプロパティは、以前の値のままになるか、他のプロパティ値の変更に基づいて再計算されます。 最適なパフォーマンスを得るために、変更されていない既存の値を含めないでください。
 
-| プロパティ     | 型   |説明|
+| プロパティ     | 種類   |説明|
 |:---------------|:--------|:----------|
 |favoritePlanReferences|[plannerFavoritePlanReferenceCollection](../resources/plannerfavoriteplanreferencecollection.md)|ユーザーは、お気に入りとしてマークする計画への参照が含まれているコレクションに変更します。|
 |recentPlanReferences|[plannerRecentPlanReferenceCollection](../resources/plannerrecentplanreferencecollection.md)|ユーザーが最近閲覧した計画への参照を含むコレクションを変更します。|

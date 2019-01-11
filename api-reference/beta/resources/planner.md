@@ -1,12 +1,13 @@
 ---
 title: planner リソースの種類
 description: '**planner** リソースは Planner オブジェクト モデルのエントリ ポイントです。単一の **planner** リソースを返します。使用可能なプロパティは含まれていません。'
-ms.openlocfilehash: c076eda1660cef9e31f584e5fe439f916eba81d0
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 9dc6904da25d7612b94649264001dcae98859925
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27074330"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27889097"
 ---
 # <a name="planner-resource-type"></a>planner リソースの種類
 
@@ -24,9 +25,9 @@ ms.locfileid: "27074330"
 |[Create plannerTask](../api/planner-post-tasks.md) |[plannerTask](plannertask.md)| タスク コレクションの投稿によって新しい **plannerTask** を作成します。|
 
 ## <a name="properties"></a>プロパティ
-| プロパティ     | 型   |説明|
+| プロパティ     | 種類   |説明|
 |:---------------|:--------|:----------|
-|id|String| 読み取り専用です。**planner** リソースの識別子。|
+|ID|String| 読み取り専用です。**planner** リソースの識別子。|
 
 ## <a name="relationships"></a>リレーションシップ
 | リレーションシップ | 型   |説明|

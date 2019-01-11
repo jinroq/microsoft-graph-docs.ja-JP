@@ -2,12 +2,13 @@
 title: EmbeddedSIMActivationCodePoolAssignment を取得します。
 description: EmbeddedSIMActivationCodePoolAssignment オブジェクトのプロパティと関係を参照してください。
 author: tfitzmac
-ms.openlocfilehash: 7663b0f5c57359e3fa9f1f0bff1c746914fae49c
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: a1bb76adcb48a3cf6d31ffd3921b1316bc9c5a12
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27321155"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27827912"
 ---
 # <a name="get-embeddedsimactivationcodepoolassignment"></a>EmbeddedSIMActivationCodePoolAssignment を取得します。
 

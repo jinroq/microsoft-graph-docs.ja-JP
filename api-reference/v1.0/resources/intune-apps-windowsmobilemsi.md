@@ -2,12 +2,13 @@
 title: windowsMobileMSI リソース タイプ
 description: Windows Mobile MSI 基幹業務アプリケーションのプロパティと継承されたプロパティが含まれます。
 author: tfitzmac
-ms.openlocfilehash: cb1a7cc2077ea7f02d2581c4dee2ce1ab8ba0ed7
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 123b449e2dd94582bbd2c485a121a81f91f58e94
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27329198"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27888341"
 ---
 # <a name="windowsmobilemsi-resource-type"></a>windowsMobileMSI リソース タイプ
 

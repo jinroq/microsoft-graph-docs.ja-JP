@@ -2,12 +2,13 @@
 title: 範囲:UsedRange
 description: 指定した範囲オブジェクトのうち使用されている範囲を返します。
 author: lumine2008
-ms.openlocfilehash: 108c19b5af6fcaf5b4c0792d9a71b8f32f1d6148
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 980d0cc8ac59c28e148a50c25b90b52baad51110
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27301716"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27889930"
 ---
 # <a name="range-usedrange"></a>範囲:UsedRange
 
@@ -36,7 +37,7 @@ GET /workbook/tables/{id|name}/columns/{id|name}/range/usedRange
 | Workbook-Session-Id  | 変更を保持するかどうかを決定するブック セッション ID。省略可能。|
 
 ## <a name="path-parameters"></a>パス パラメーター
-| パラメーター    | 種類   |説明|
+| Parameter    | Type   |説明|
 |:---------------|:--------|:----------|
 |valuesOnly|ブール値|省略可能。値の入っているセルのみを使用セルと見なします。|
 

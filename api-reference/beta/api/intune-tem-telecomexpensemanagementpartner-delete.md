@@ -2,12 +2,13 @@
 title: telecomExpenseManagementPartner の削除
 description: telecomExpenseManagementPartner を削除します。
 author: tfitzmac
-ms.openlocfilehash: d79296283b57097d2aa46ae062f4391e93e3ba46
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: dcf35d5187d1360470984555212fc3f4112916f6
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27318978"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27889881"
 ---
 # <a name="delete-telecomexpensemanagementpartner"></a>telecomExpenseManagementPartner の削除
 

@@ -2,12 +2,13 @@
 title: windowsInformationProtections のリスト
 description: windowsInformationProtection オブジェクトのプロパティとリレーションシップをリストします。
 author: tfitzmac
-ms.openlocfilehash: e26ab1c5d67e775ce0be04039892f153b73d42f6
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: dc8b9245bf71b8c7c81ea3a51e260ff3bca557da
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27353803"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27889832"
 ---
 # <a name="list-windowsinformationprotections"></a>windowsInformationProtections のリスト
 

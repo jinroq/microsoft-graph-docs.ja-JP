@@ -2,12 +2,13 @@
 title: deviceExchangeAccessStateSummary リソースの種類
 description: デバイスの Exchange アクセス状態の要約
 author: tfitzmac
-ms.openlocfilehash: cb04de02e44f16534e9a57383e48d989a16f8582
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: b8ca08b026b8e1cdbac4bd0dc73331a9d5df80fc
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27326601"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27889986"
 ---
 # <a name="deviceexchangeaccessstatesummary-resource-type"></a>deviceExchangeAccessStateSummary リソースの種類
 

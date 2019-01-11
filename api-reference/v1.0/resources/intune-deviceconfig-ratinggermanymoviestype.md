@@ -2,12 +2,13 @@
 title: ratingGermanyMoviesType 列挙型
 description: 映画のドイツのラベルの評価
 author: tfitzmac
-ms.openlocfilehash: b5d158a596d6a89ae0751419aceac7d2f9a7ffeb
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: a65408d7c16943c40d635fc7cc5713ace21478f8
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27309199"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27888503"
 ---
 # <a name="ratinggermanymoviestype-enum-type"></a>ratingGermanyMoviesType 列挙型
 

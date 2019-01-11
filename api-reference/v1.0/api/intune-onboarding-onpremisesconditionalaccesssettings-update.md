@@ -2,12 +2,13 @@
 title: onPremisesConditionalAccessSettings の更新
 description: onPremisesConditionalAccessSettings オブジェクトのプロパティを更新します。
 author: tfitzmac
-ms.openlocfilehash: 255693dfa1bb53083f792da950333a5c05717f1b
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 761da1d549430c1f49f2d68b05194bffea661618
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27346803"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27889783"
 ---
 # <a name="update-onpremisesconditionalaccesssettings"></a>onPremisesConditionalAccessSettings の更新
 

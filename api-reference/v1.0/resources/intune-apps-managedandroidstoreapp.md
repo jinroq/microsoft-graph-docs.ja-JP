@@ -2,12 +2,13 @@
 title: managedAndroidStoreApp リソース タイプ
 description: Intune アプリ保護ポリシーで管理できる Android ストア アプリのプロパティと継承されたプロパティが含まれます。
 author: tfitzmac
-ms.openlocfilehash: 4f8dca27c795b30330bccbf81f71ee59bf300655
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: b81b40b383504bc4ad0b4f4844467322729dc2f8
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27356799"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27890056"
 ---
 # <a name="managedandroidstoreapp-resource-type"></a>managedAndroidStoreApp リソース タイプ
 

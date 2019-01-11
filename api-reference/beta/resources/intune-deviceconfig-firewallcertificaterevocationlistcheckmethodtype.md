@@ -2,12 +2,13 @@
 title: firewallCertificateRevocationListCheckMethodType 列挙型
 description: FirewallCertificateRevocationListCheckMethod に指定できる値
 author: tfitzmac
-ms.openlocfilehash: 302037187addfb8606c6c1e60a9369eb1f7c2ed5
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: c300b1d3c73cc4ae19ef1282c00d00800243b4b7
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27320714"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27889279"
 ---
 # <a name="firewallcertificaterevocationlistcheckmethodtype-enum-type"></a>firewallCertificateRevocationListCheckMethodType 列挙型
 

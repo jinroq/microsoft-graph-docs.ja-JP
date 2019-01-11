@@ -1,12 +1,13 @@
 ---
 title: ユーザー ・ アクティビティを取得します。
 description: 特定のユーザーのアクティビティを取得します。 異なり、**最近使用した**OData 機能、履歴のない活動が返されます。 アクセス許可 UserActivity.ReadWrite.CreatedByApp はフィルターを適用余分な応答に、アプリケーションによって作成された活動のみが返されるようにします。 このサーバー側のフィルター処理が発生空のページでユーザーが特に作業中であり、他のアプリケーションが最新の活動を作成します。 アプリケーションのアクティビティを取得するには、改ページ調整**nextLink**プロパティを使用します。
-ms.openlocfilehash: 7c0efad4927aa8bbf96c3d3609668f1e563f770c
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 7339805d4ef45cc9b0806c2ce6c14e7316bdba85
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27022601"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27889685"
 ---
 # <a name="get-user-activities"></a>ユーザー ・ アクティビティを取得します。
 
@@ -50,7 +51,7 @@ GET /me/activities
 
 ## <a name="request-headers"></a>要求ヘッダー
 
-|名前 | 型 | 説明|
+|名前 | 種類 | 説明|
 |:----|:-----|:-----------|
 |Authorization | string | ベアラー {トークン}。必須。|
 

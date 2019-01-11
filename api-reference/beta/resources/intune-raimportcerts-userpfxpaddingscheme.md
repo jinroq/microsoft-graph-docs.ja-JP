@@ -2,12 +2,13 @@
 title: userPfxPaddingScheme 列挙型
 description: 暗号化プロバイダーで使用される埋め込みスキームの値をサポートします。
 author: tfitzmac
-ms.openlocfilehash: aa2c2e67419b92c17a6fdb62df108847964f49a9
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 2c588b31e4bfe6f78dbc09c199b56cabdef72198
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27337164"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27889657"
 ---
 # <a name="userpfxpaddingscheme-enum-type"></a>userPfxPaddingScheme 列挙型
 

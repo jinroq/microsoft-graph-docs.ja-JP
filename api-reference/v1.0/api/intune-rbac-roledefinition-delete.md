@@ -2,12 +2,13 @@
 title: Delete roleDefinition
 description: roleDefinition を削除します。
 author: tfitzmac
-ms.openlocfilehash: ab6dab16c5f81f1d531ec8a331e7660e287f5785
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: c7722a5a9c6b92636b79f0891f224aa00cd24ee5
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27324179"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27889993"
 ---
 # <a name="delete-roledefinition"></a>Delete roleDefinition
 

@@ -2,12 +2,13 @@
 title: Windows10EasEmailProfileConfiguration を更新します。
 description: Windows10EasEmailProfileConfiguration オブジェクトのプロパティを更新します。
 author: tfitzmac
-ms.openlocfilehash: 2a548a528542ab82c05bab177dda19c39cd0681b
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: ca8493733dfa0c30b46cfb1bb739056ced5b0557
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27360313"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27828057"
 ---
 # <a name="update-windows10easemailprofileconfiguration"></a>Windows10EasEmailProfileConfiguration を更新します。
 

@@ -2,12 +2,13 @@
 title: windowsDeliveryOptimizationMode 列挙型
 description: ピア配布の配信最適化モード
 author: tfitzmac
-ms.openlocfilehash: ae61d7dde5fc02ff329eaf9cc970ee7078c3a254
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: af266b55fd58f788965d33d0d807511d263f6195
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27360159"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27888180"
 ---
 # <a name="windowsdeliveryoptimizationmode-enum-type"></a>windowsDeliveryOptimizationMode 列挙型
 

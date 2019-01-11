@@ -2,12 +2,13 @@
 title: Microsoft Intune でのデバイス構成
 description: Microsoft Intune のデバイス構成のワークロードを使用して、管理するすべてのデバイスの設定と機能を管理します。
 author: tfitzmac
-ms.openlocfilehash: 981a7fee59ebfcf302b5325f33beb9abd6a2a1c5
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 358e432f595f58a950466bc18ebe4347b50dc04d
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27329254"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27889335"
 ---
 # <a name="device-configuration-in-microsoft-intune"></a>Microsoft Intune でのデバイス構成
 

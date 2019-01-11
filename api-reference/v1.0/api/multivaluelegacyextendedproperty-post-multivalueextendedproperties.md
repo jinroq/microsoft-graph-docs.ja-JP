@@ -1,12 +1,13 @@
 ---
 title: 複数値の拡張プロパティを作成する
 description: 'リソースの新規または既存のインスタンスに、1 つ以上の複数値の拡張プロパティを作成します。 '
-ms.openlocfilehash: 2eb3c337b89be8dc6109dc26de35fcaea88d6609
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: ded36690cdbe684f78bed6af6aee9dba0b09854d
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27024135"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27889195"
 ---
 # <a name="create-multi-value-extended-property"></a>複数値の拡張プロパティを作成する
 
@@ -120,7 +121,7 @@ PATCH /groups/{id}/events/{id}
 
 リソース インスタンスの **multiValueExtendedProperties** コレクション プロパティに、各 [multiValueLegacyExtendedProperty](../resources/multivaluelegacyextendedproperty.md) オブジェクトの JSON 本文を指定します。
 
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:-----|:-----|:-----|
 |multiValueExtendedProperties|[multiValueLegacyExtendedProperty](../resources/multivaluelegacyextendedproperty.md) collection| 1 つ以上の複数値を持つ拡張プロパティの配列。 |
 |id|String|**multiValueExtendedProperties** コレクションの各プロパティに対してこれを指定し、プロパティを特定します。サポートされている形式のいずれかに従う必要があります。詳しくは、[「Outlook の拡張プロパティの概要」](../resources/extended-properties-overview.md)をご覧ください。必須。|

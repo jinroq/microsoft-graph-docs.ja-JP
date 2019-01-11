@@ -2,12 +2,13 @@
 title: windowsAppX リソースの種類
 description: プロパティと Windows AppX の業務アプリケーションの継承されたプロパティが含まれています。
 author: tfitzmac
-ms.openlocfilehash: 372c1c2827e3d873d0266715502a837dca27d76b
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: a39c93aaec3d27a75775a3760eedf9a85bcb8fd5
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27336030"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27889342"
 ---
 # <a name="windowsappx-resource-type"></a>windowsAppX リソースの種類
 
@@ -28,7 +29,7 @@ ms.locfileid: "27336030"
 |[WindowsAppX を削除します。](../api/intune-apps-windowsappx-delete.md)|なし|の[windowsAppX](../resources/intune-apps-windowsappx.md)を削除します。|
 |[WindowsAppX を更新します。](../api/intune-apps-windowsappx-update.md)|[windowsAppX](../resources/intune-apps-windowsappx.md)|[WindowsAppX](../resources/intune-apps-windowsappx.md)オブジェクトのプロパティを更新します。|
 
-## <a name="properties"></a>Properties
+## <a name="properties"></a>プロパティ
 |プロパティ|種類|説明|
 |:---|:---|:---|
 |ID|String|エンティティのキー。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|

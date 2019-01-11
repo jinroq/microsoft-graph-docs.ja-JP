@@ -2,12 +2,13 @@
 title: deviceManagementExchangeAccessState 列挙型
 description: デバイスの Exchange のアクセスの状態です。
 author: tfitzmac
-ms.openlocfilehash: 37db054314375411dc237746ca6ca3bdb99e9016
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 73559bf01cfc619e38a30b0393a7d7f3a8754321
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27328722"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27889090"
 ---
 # <a name="devicemanagementexchangeaccessstate-enum-type"></a>deviceManagementExchangeAccessState 列挙型
 

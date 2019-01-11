@@ -1,12 +1,13 @@
 ---
 title: サインイン リソースの種類
 description: 'このリソースは、ユーザーまたはアプリケーションにサインイン活動、ディレクトリ内を詳しく説明します。 '
-ms.openlocfilehash: e1975b7f690e340931cb2a4f00c29cc95b805a2e
-ms.sourcegitcommit: ba6b1d1a12dcb54916b4d3e529c856f6514e01e7
+localization_priority: Priority
+ms.openlocfilehash: a2ccb84daee642d207919217aa2857745846c769
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/12/2018
-ms.locfileid: "27241077"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27889069"
 ---
 # <a name="signin-resource-type"></a>サインイン リソースの種類
 このリソースは、ユーザーまたはアプリケーションにサインイン活動、ディレクトリ内を詳しく説明します。 
@@ -25,9 +26,9 @@ ms.locfileid: "27241077"
 |appId|文字列型 (String)|Azure Active Directory 内のアプリケーションの Id を表す一意の GUID を参照します。|
 |clientAppUsed|String|Activty.E.g サインインに使用されるレガシ クライアントを提供します。 ブラウザー、作業中の同期を Exchange、IMAP、MAPI、SMTP、POP の最近のクライアントが含まれています。|
 |appliedConditionalAccessPolicy|[conditionalAccessPolicy](conditionalaccesspolicy.md)コレクション|対応する記号の活動によってトリガーされる条件付きのアクセス ポリシーの一覧を示します。|
-|conditionalAccessStatus|string| トリガーの条件付きのアクセス ポリシーのステータスを提供します。 可能な値は、`success`、`failure`、`notApplied`、`unknownFutureValue` です。|
+|conditionalAccessStatus|文字列| トリガーの条件付きのアクセス ポリシーのステータスを提供します。 可能な値は、`success`、`failure`、`notApplied`、`unknownFutureValue` です。|
 |originalRequestId|String|認証シーケンス内の最初の要求の要求 id です。|
-|isInteractive|Boolean|サインインがインタラクティブかどうかを示します。|
+|isInteractive|ブール型|サインインがインタラクティブかどうかを示します。|
 |tokenIssuerName|String|Id プロバイダー (例えば sts.microsoft.com) の名前|
 |tokenIssuerType|String|IdentityProvider の種類を提供します。 使用可能な値は、 `AzureAD`、 `ADFederationServices`、 `UnknownFutureValue`。|
 |correlationId|String|サインインが開始されると、クライアントから送信される ID を参照します。 ヘルプ デスクやサポートを呼び出すときに、対応する記号の活動をトラブルシューティングに使用されます。|
@@ -44,7 +45,7 @@ ms.locfileid: "27241077"
 |riskState|`riskState`|危険なユーザー、サインインまたはリスク イベントの 'リスク状態' を提供します。 可能な値: `none`、 `confirmedSafe`、 `remediated`、 `dismissed`、 `atRisk`、 `confirmedCompromised`、 `unknownFutureValue`。|
 |mfaDetail|[mfaDetail](mfadetail.md)|関連する MFA を提供情報が必要な MFA、MFA の状態に対応する記号のようにします。|
 |networkLocationDetail|[networkLocationDetail](networklocationdetail.md)|ネットワーク上の場所に関する詳細情報を提供します。|
-|riskLevel|string| 記号に関連付けられているリスクのレベルを提供します。使用可能な値: `low`、 `medium`、 `high`。|
+|riskLevel|文字列| 記号に関連付けられているリスクのレベルを提供します。使用可能な値: `low`、 `medium`、 `high`。|
 |status|[signInStatus](signinstatus.md)|サインイン状態を提供します。 可能な値は`Success`と`Failure`。|
 |userDisplayName|String|表示、ユーザーの名前を示します。|
 |userId|String|ユーザーのユーザー Id を示します。|

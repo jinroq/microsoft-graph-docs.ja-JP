@@ -2,12 +2,13 @@
 title: iosCompliancePolicies のリスト
 description: iosCompliancePolicy オブジェクトのプロパティとリレーションシップをリストします。
 author: tfitzmac
-ms.openlocfilehash: 909278a4f749f6d3f54309391dc65353924dc010
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 5b6d50a1dd19620b86526e301bc17a4d092a5971
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27359949"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27889175"
 ---
 # <a name="list-ioscompliancepolicies"></a>iosCompliancePolicies のリスト
 
