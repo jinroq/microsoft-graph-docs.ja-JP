@@ -2,28 +2,29 @@
 title: alertTrigger リソースの種類
 description: (プロパティがアラートのエンティティに存在する)、検出をトリガーするプロパティについて説明します。
 author: Preetikr
-ms.openlocfilehash: f0888e6caf78d806909f818a8b72fb21320e7796
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 1dc8bb2b18380da50134aa67e742da89dea3c057
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27341269"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27894342"
 ---
-# <a name="alerttrigger-resource-type"></a><span data-ttu-id="bd1e3-103">alertTrigger リソースの種類</span><span class="sxs-lookup"><span data-stu-id="bd1e3-103">alertTrigger resource type</span></span>
+# <a name="alerttrigger-resource-type"></a><span data-ttu-id="b6fe4-103">alertTrigger リソースの種類</span><span class="sxs-lookup"><span data-stu-id="b6fe4-103">alertTrigger resource type</span></span>
 
-<span data-ttu-id="bd1e3-104">(プロパティがアラートのエンティティに存在する)、検出をトリガーするプロパティについて説明します。</span><span class="sxs-lookup"><span data-stu-id="bd1e3-104">Contains information about the properties that triggered a detection (properties exist in the alert entity).</span></span>
+<span data-ttu-id="b6fe4-104">(プロパティがアラートのエンティティに存在する)、検出をトリガーするプロパティについて説明します。</span><span class="sxs-lookup"><span data-stu-id="b6fe4-104">Contains information about the properties that triggered a detection (properties exist in the alert entity).</span></span>
 
-## <a name="properties"></a><span data-ttu-id="bd1e3-105">Properties</span><span class="sxs-lookup"><span data-stu-id="bd1e3-105">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="b6fe4-105">プロパティ</span><span class="sxs-lookup"><span data-stu-id="b6fe4-105">Properties</span></span>
 
-| <span data-ttu-id="bd1e3-106">プロパティ</span><span class="sxs-lookup"><span data-stu-id="bd1e3-106">Property</span></span>   | <span data-ttu-id="bd1e3-107">種類</span><span class="sxs-lookup"><span data-stu-id="bd1e3-107">Type</span></span>|<span data-ttu-id="bd1e3-108">説明</span><span class="sxs-lookup"><span data-stu-id="bd1e3-108">Description</span></span>|
+| <span data-ttu-id="b6fe4-106">プロパティ</span><span class="sxs-lookup"><span data-stu-id="b6fe4-106">Property</span></span>   | <span data-ttu-id="b6fe4-107">種類</span><span class="sxs-lookup"><span data-stu-id="b6fe4-107">Type</span></span>|<span data-ttu-id="b6fe4-108">説明</span><span class="sxs-lookup"><span data-stu-id="b6fe4-108">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="bd1e3-109">名前</span><span class="sxs-lookup"><span data-stu-id="bd1e3-109">name</span></span>|<span data-ttu-id="bd1e3-110">String</span><span class="sxs-lookup"><span data-stu-id="bd1e3-110">String</span></span>|<span data-ttu-id="bd1e3-111">検出のトリガーとして機能するプロパティの名前です。</span><span class="sxs-lookup"><span data-stu-id="bd1e3-111">Name of the property serving as a detection trigger.</span></span>|
-|<span data-ttu-id="bd1e3-112">type</span><span class="sxs-lookup"><span data-stu-id="bd1e3-112">type</span></span>|<span data-ttu-id="bd1e3-113">String</span><span class="sxs-lookup"><span data-stu-id="bd1e3-113">String</span></span>|<span data-ttu-id="bd1e3-114">解釈のキーと値のペアのプロパティの型。</span><span class="sxs-lookup"><span data-stu-id="bd1e3-114">Type of the property in the key:value pair for interpretation.</span></span> <span data-ttu-id="bd1e3-115">たとえば、文字列、ブール値などです。</span><span class="sxs-lookup"><span data-stu-id="bd1e3-115">For example, String, Boolean, etc.</span></span>|
-|<span data-ttu-id="bd1e3-116">value</span><span class="sxs-lookup"><span data-stu-id="bd1e3-116">value</span></span>|<span data-ttu-id="bd1e3-117">文字列</span><span class="sxs-lookup"><span data-stu-id="bd1e3-117">String</span></span>|<span data-ttu-id="bd1e3-118">検出のトリガーとして機能するプロパティの値です。</span><span class="sxs-lookup"><span data-stu-id="bd1e3-118">Value of the property serving as a detection trigger.</span></span>|
+|<span data-ttu-id="b6fe4-109">名前</span><span class="sxs-lookup"><span data-stu-id="b6fe4-109">name</span></span>|<span data-ttu-id="b6fe4-110">String</span><span class="sxs-lookup"><span data-stu-id="b6fe4-110">String</span></span>|<span data-ttu-id="b6fe4-111">検出のトリガーとして機能するプロパティの名前です。</span><span class="sxs-lookup"><span data-stu-id="b6fe4-111">Name of the property serving as a detection trigger.</span></span>|
+|<span data-ttu-id="b6fe4-112">type</span><span class="sxs-lookup"><span data-stu-id="b6fe4-112">type</span></span>|<span data-ttu-id="b6fe4-113">String</span><span class="sxs-lookup"><span data-stu-id="b6fe4-113">String</span></span>|<span data-ttu-id="b6fe4-114">解釈のキーと値のペアのプロパティの型。</span><span class="sxs-lookup"><span data-stu-id="b6fe4-114">Type of the property in the key:value pair for interpretation.</span></span> <span data-ttu-id="b6fe4-115">たとえば、文字列、ブール値などです。</span><span class="sxs-lookup"><span data-stu-id="b6fe4-115">For example, String, Boolean, etc.</span></span>|
+|<span data-ttu-id="b6fe4-116">value</span><span class="sxs-lookup"><span data-stu-id="b6fe4-116">value</span></span>|<span data-ttu-id="b6fe4-117">文字列</span><span class="sxs-lookup"><span data-stu-id="b6fe4-117">String</span></span>|<span data-ttu-id="b6fe4-118">検出のトリガーとして機能するプロパティの値です。</span><span class="sxs-lookup"><span data-stu-id="b6fe4-118">Value of the property serving as a detection trigger.</span></span>|
 
-## <a name="json-representation"></a><span data-ttu-id="bd1e3-119">JSON 表記</span><span class="sxs-lookup"><span data-stu-id="bd1e3-119">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="b6fe4-119">JSON 表記</span><span class="sxs-lookup"><span data-stu-id="b6fe4-119">JSON representation</span></span>
 
-<span data-ttu-id="bd1e3-120">リソースの JSON 表記を次に示します。</span><span class="sxs-lookup"><span data-stu-id="bd1e3-120">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="b6fe4-120">リソースの JSON 表記を次に示します。</span><span class="sxs-lookup"><span data-stu-id="b6fe4-120">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -42,7 +43,7 @@ ms.locfileid: "27341269"
 
 ```
 
-## <a name="example"></a><span data-ttu-id="bd1e3-121">例</span><span class="sxs-lookup"><span data-stu-id="bd1e3-121">Example</span></span>
+## <a name="example"></a><span data-ttu-id="b6fe4-121">例</span><span class="sxs-lookup"><span data-stu-id="b6fe4-121">Example</span></span>
 
 ```json
 {

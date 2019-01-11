@@ -2,53 +2,54 @@
 title: パッチ チャネル
 description: 指定されたチャネルのプロパティを更新します。
 author: nkramer
-ms.openlocfilehash: 267cc6bc148259bc573625fdb2775ac8b581a988
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 78f2d8eebf70d52b6067612c715939d7463b17f5
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27328351"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27894083"
 ---
-# <a name="patch-channel"></a><span data-ttu-id="33f8e-103">パッチ チャネル</span><span class="sxs-lookup"><span data-stu-id="33f8e-103">Patch channel</span></span>
+# <a name="patch-channel"></a><span data-ttu-id="5b48a-103">パッチ チャネル</span><span class="sxs-lookup"><span data-stu-id="5b48a-103">Patch channel</span></span>
 
-> <span data-ttu-id="33f8e-104">**重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。</span><span class="sxs-lookup"><span data-stu-id="33f8e-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="33f8e-105">実稼働アプリケーションでの、これらの API の使用はサポートされていません。</span><span class="sxs-lookup"><span data-stu-id="33f8e-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="5b48a-104">**重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。</span><span class="sxs-lookup"><span data-stu-id="5b48a-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="5b48a-105">実稼働アプリケーションでの、これらの API の使用はサポートされていません。</span><span class="sxs-lookup"><span data-stu-id="5b48a-105">Use of these APIs in production applications is not supported.</span></span>
 
-<span data-ttu-id="33f8e-106">指定された[チャネル](../resources/channel.md)のプロパティを更新します。</span><span class="sxs-lookup"><span data-stu-id="33f8e-106">Update the properties of the specified [channel](../resources/channel.md).</span></span>
+<span data-ttu-id="5b48a-106">指定された[チャネル](../resources/channel.md)のプロパティを更新します。</span><span class="sxs-lookup"><span data-stu-id="5b48a-106">Update the properties of the specified [channel](../resources/channel.md).</span></span>
 
-> <span data-ttu-id="33f8e-107">**注**: アプリケーションのアクセス許可とこの API に関する既知の問題があります。</span><span class="sxs-lookup"><span data-stu-id="33f8e-107">**Note**: There is a known issue with application permissions and this API.</span></span> <span data-ttu-id="33f8e-108">詳細についてはの[既知の問題点のリスト](/graph/known-issues#application-permissions)を参照してください。</span><span class="sxs-lookup"><span data-stu-id="33f8e-108">For details, see the [known issues list](/graph/known-issues#application-permissions).</span></span>
+> <span data-ttu-id="5b48a-107">**注**: アプリケーションのアクセス許可とこの API に関する既知の問題があります。</span><span class="sxs-lookup"><span data-stu-id="5b48a-107">**Note**: There is a known issue with application permissions and this API.</span></span> <span data-ttu-id="5b48a-108">詳細についてはの[既知の問題点のリスト](/graph/known-issues#application-permissions)を参照してください。</span><span class="sxs-lookup"><span data-stu-id="5b48a-108">For details, see the [known issues list](/graph/known-issues#application-permissions).</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="33f8e-109">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="33f8e-109">Permissions</span></span>
-<span data-ttu-id="33f8e-p103">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="33f8e-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="5b48a-109">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="5b48a-109">Permissions</span></span>
+<span data-ttu-id="5b48a-p103">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="5b48a-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="33f8e-112">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="33f8e-112">Permission type</span></span>      | <span data-ttu-id="33f8e-113">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="33f8e-113">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="5b48a-112">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="5b48a-112">Permission type</span></span>      | <span data-ttu-id="5b48a-113">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="5b48a-113">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="33f8e-114">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="33f8e-114">Delegated (work or school account)</span></span> | <span data-ttu-id="33f8e-115">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="33f8e-115">Group.ReadWrite.All</span></span>    |
-|<span data-ttu-id="33f8e-116">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="33f8e-116">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="33f8e-117">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="33f8e-117">Not supported.</span></span>    |
-|<span data-ttu-id="33f8e-118">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="33f8e-118">Application</span></span> | <span data-ttu-id="33f8e-119">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="33f8e-119">Group.ReadWrite.All</span></span> |
+|<span data-ttu-id="5b48a-114">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="5b48a-114">Delegated (work or school account)</span></span> | <span data-ttu-id="5b48a-115">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="5b48a-115">Group.ReadWrite.All</span></span>    |
+|<span data-ttu-id="5b48a-116">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="5b48a-116">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="5b48a-117">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="5b48a-117">Not supported.</span></span>    |
+|<span data-ttu-id="5b48a-118">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="5b48a-118">Application</span></span> | <span data-ttu-id="5b48a-119">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="5b48a-119">Group.ReadWrite.All</span></span> |
 
-> <span data-ttu-id="33f8e-120">**注**: この API は、管理者のアクセス許可をサポートしています。</span><span class="sxs-lookup"><span data-stu-id="33f8e-120">**Note**: This API supports admin permissions.</span></span> <span data-ttu-id="33f8e-121">グローバル管理者とサービス管理者のマイクロソフトのチームのメンバーではないことをチームにアクセスできます。</span><span class="sxs-lookup"><span data-stu-id="33f8e-121">Global admins and Microsoft Teams service admins can access teams that they are not a member of.</span></span>
+> <span data-ttu-id="5b48a-120">**注**: この API は、管理者のアクセス許可をサポートしています。</span><span class="sxs-lookup"><span data-stu-id="5b48a-120">**Note**: This API supports admin permissions.</span></span> <span data-ttu-id="5b48a-121">グローバル管理者とサービス管理者のマイクロソフトのチームのメンバーではないことをチームにアクセスできます。</span><span class="sxs-lookup"><span data-stu-id="5b48a-121">Global admins and Microsoft Teams service admins can access teams that they are not a member of.</span></span>
 
-## <a name="http-request"></a><span data-ttu-id="33f8e-122">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="33f8e-122">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="5b48a-122">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="5b48a-122">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 PATCH /teams/{id}/channels/{id}
 ```
-## <a name="request-headers"></a><span data-ttu-id="33f8e-123">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="33f8e-123">Request headers</span></span>
-| <span data-ttu-id="33f8e-124">ヘッダー</span><span class="sxs-lookup"><span data-stu-id="33f8e-124">Header</span></span>       | <span data-ttu-id="33f8e-125">値</span><span class="sxs-lookup"><span data-stu-id="33f8e-125">Value</span></span> |
+## <a name="request-headers"></a><span data-ttu-id="5b48a-123">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="5b48a-123">Request headers</span></span>
+| <span data-ttu-id="5b48a-124">ヘッダー</span><span class="sxs-lookup"><span data-stu-id="5b48a-124">Header</span></span>       | <span data-ttu-id="5b48a-125">値</span><span class="sxs-lookup"><span data-stu-id="5b48a-125">Value</span></span> |
 |:---------------|:--------|
-| <span data-ttu-id="33f8e-126">Authorization</span><span class="sxs-lookup"><span data-stu-id="33f8e-126">Authorization</span></span>  | <span data-ttu-id="33f8e-p105">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="33f8e-p105">Bearer {token}. Required.</span></span>  |
-| <span data-ttu-id="33f8e-129">Content-Type</span><span class="sxs-lookup"><span data-stu-id="33f8e-129">Content-Type</span></span>  | <span data-ttu-id="33f8e-130">application/json</span><span class="sxs-lookup"><span data-stu-id="33f8e-130">application/json</span></span>  |
+| <span data-ttu-id="5b48a-126">Authorization</span><span class="sxs-lookup"><span data-stu-id="5b48a-126">Authorization</span></span>  | <span data-ttu-id="5b48a-p105">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="5b48a-p105">Bearer {token}. Required.</span></span>  |
+| <span data-ttu-id="5b48a-129">Content-Type</span><span class="sxs-lookup"><span data-stu-id="5b48a-129">Content-Type</span></span>  | <span data-ttu-id="5b48a-130">application/json</span><span class="sxs-lookup"><span data-stu-id="5b48a-130">application/json</span></span>  |
 
-## <a name="request-body"></a><span data-ttu-id="33f8e-131">要求本文</span><span class="sxs-lookup"><span data-stu-id="33f8e-131">Request body</span></span>
-<span data-ttu-id="33f8e-132">要求の本文には、[チャネル](../resources/channel.md)オブジェクトの JSON 表現を指定します。</span><span class="sxs-lookup"><span data-stu-id="33f8e-132">In the request body, supply a JSON representation of [channel](../resources/channel.md) object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="5b48a-131">要求本文</span><span class="sxs-lookup"><span data-stu-id="5b48a-131">Request body</span></span>
+<span data-ttu-id="5b48a-132">要求の本文には、[チャネル](../resources/channel.md)オブジェクトの JSON 表現を指定します。</span><span class="sxs-lookup"><span data-stu-id="5b48a-132">In the request body, supply a JSON representation of [channel](../resources/channel.md) object.</span></span>
 
-## <a name="response"></a><span data-ttu-id="33f8e-133">応答</span><span class="sxs-lookup"><span data-stu-id="33f8e-133">Response</span></span>
+## <a name="response"></a><span data-ttu-id="5b48a-133">応答</span><span class="sxs-lookup"><span data-stu-id="5b48a-133">Response</span></span>
 
-<span data-ttu-id="33f8e-134">成功した場合、このメソッドは `204 No Content` 応答コードを返します。</span><span class="sxs-lookup"><span data-stu-id="33f8e-134">If successful, this method returns a `204 No Content` response code.</span></span>
+<span data-ttu-id="5b48a-134">成功した場合、このメソッドは `204 No Content` 応答コードを返します。</span><span class="sxs-lookup"><span data-stu-id="5b48a-134">If successful, this method returns a `204 No Content` response code.</span></span>
 
-## <a name="example"></a><span data-ttu-id="33f8e-135">例</span><span class="sxs-lookup"><span data-stu-id="33f8e-135">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="33f8e-136">要求</span><span class="sxs-lookup"><span data-stu-id="33f8e-136">Request</span></span>
-<span data-ttu-id="33f8e-137">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="33f8e-137">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="5b48a-135">例</span><span class="sxs-lookup"><span data-stu-id="5b48a-135">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="5b48a-136">要求</span><span class="sxs-lookup"><span data-stu-id="5b48a-136">Request</span></span>
+<span data-ttu-id="5b48a-137">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="5b48a-137">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "patch_channel"
@@ -56,8 +57,8 @@ PATCH /teams/{id}/channels/{id}
 ```http
 PATCH https://graph.microsoft.com/beta/teams/{id}/channels/{id}
 ```
-##### <a name="response"></a><span data-ttu-id="33f8e-138">応答</span><span class="sxs-lookup"><span data-stu-id="33f8e-138">Response</span></span>
-<span data-ttu-id="33f8e-p106">以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。</span><span class="sxs-lookup"><span data-stu-id="33f8e-p106">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="5b48a-138">応答</span><span class="sxs-lookup"><span data-stu-id="5b48a-138">Response</span></span>
+<span data-ttu-id="5b48a-p106">以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。</span><span class="sxs-lookup"><span data-stu-id="5b48a-p106">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
