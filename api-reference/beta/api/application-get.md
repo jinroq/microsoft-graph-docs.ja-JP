@@ -2,12 +2,13 @@
 title: アプリケーションを取得します。
 description: プロパティとアプリケーションのオブジェクトの関係を取得します。
 author: lleonard-msft
-ms.openlocfilehash: a041cbc4e97a59500106542b88e754b9c495f985
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Priority
+ms.openlocfilehash: 0b83a2ee5ed94d9e793a8f1a37f5fb41acaedaf3
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27303494"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27849708"
 ---
 # <a name="get-application"></a>アプリケーションを取得します。
 

@@ -1,12 +1,13 @@
 ---
 title: デバッギングを削除します。
 description: Azure AD のレビュー機能にアクセス、デバッギング オブジェクトを削除します。  プログラムからのアクセス レビューのリンクを解除します。
-ms.openlocfilehash: a7f21cd4c18ecda2ce15a6dd76d87322f75e4af0
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 782cc8f336e84f82d937e3180d7de6af69e67e52
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27069007"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27843919"
 ---
 # <a name="delete-programcontrol"></a>デバッギングを削除します。
 
@@ -28,7 +29,7 @@ Azure AD[アクセスの確認](../resources/accessreviews-root.md)機能では�
 DELETE /programControls('<id>')
 ```
 ## <a name="request-headers"></a>要求ヘッダー
-| 名前         | 型        | 説明 |
+| 名前         | 種類        | 説明 |
 |:-------------|:------------|:------------|
 | Authorization | string | ベアラー\{トークン\}。 必須。 |
 

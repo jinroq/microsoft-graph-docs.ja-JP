@@ -2,12 +2,13 @@
 title: AndroidTrustedRootCertificate を更新します。
 description: AndroidTrustedRootCertificate オブジェクトのプロパティを更新します。
 author: tfitzmac
-ms.openlocfilehash: c096af286e74e628bbf4ecd8b045b4fc71a2738a
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: a38b8b0172f5b1c38e114f32364f78b5d8347392
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27312846"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27842106"
 ---
 # <a name="update-androidtrustedrootcertificate"></a>AndroidTrustedRootCertificate を更新します。
 

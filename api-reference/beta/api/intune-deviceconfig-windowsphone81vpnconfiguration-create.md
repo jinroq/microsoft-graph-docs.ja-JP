@@ -2,12 +2,13 @@
 title: WindowsPhone81VpnConfiguration を作成します。
 description: 新しい windowsPhone81VpnConfiguration オブジェクトを作成します。
 author: tfitzmac
-ms.openlocfilehash: 3880742f3c0ccafcf647b7747cba1d63d90def73
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 0dfaa4f7c6a40f3acaa83583093291db6196cf79
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27352921"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27844626"
 ---
 # <a name="create-windowsphone81vpnconfiguration"></a>WindowsPhone81VpnConfiguration を作成します。
 

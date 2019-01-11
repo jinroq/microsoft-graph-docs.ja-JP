@@ -2,12 +2,13 @@
 title: managedDeviceCertificateState リソースの種類
 description: まだ文書化されていません
 author: tfitzmac
-ms.openlocfilehash: f26eb40d371c59a65f58bc87ac5a24d38f47a959
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 087bd1e6ed1eb9c065d1c2f0f3a03941d77cc7bc
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27358388"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27844045"
 ---
 # <a name="manageddevicecertificatestate-resource-type"></a>managedDeviceCertificateState リソースの種類
 
@@ -25,7 +26,7 @@ ms.locfileid: "27358388"
 |[ManagedDeviceCertificateState を削除します。](../api/intune-deviceconfig-manageddevicecertificatestate-delete.md)|なし|の[managedDeviceCertificateState](../resources/intune-deviceconfig-manageddevicecertificatestate.md)を削除します。|
 |[ManagedDeviceCertificateState を更新します。](../api/intune-deviceconfig-manageddevicecertificatestate-update.md)|[managedDeviceCertificateState](../resources/intune-deviceconfig-manageddevicecertificatestate.md)|[ManagedDeviceCertificateState](../resources/intune-deviceconfig-manageddevicecertificatestate.md)オブジェクトのプロパティを更新します。|
 
-## <a name="properties"></a>Properties
+## <a name="properties"></a>プロパティ
 |プロパティ|種類|説明|
 |:---|:---|:---|
 |ID|String|エンティティのキー。|

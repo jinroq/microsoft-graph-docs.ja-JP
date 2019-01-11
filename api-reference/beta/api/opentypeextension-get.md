@@ -1,12 +1,13 @@
 ---
 title: オープン拡張機能を取得する
 description: 名前または完全修飾名で識別されたオープン拡張機能 (openTypeExtension オブジェクト) を取得します。
-ms.openlocfilehash: 599422384ed7e821f0ca50235fd164594bccd4d1
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: ca2acb78d5a4731b57614476f11a6235a3b784bd
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27073427"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27844003"
 ---
 # <a name="get-open-extension"></a>オープン拡張機能を取得する
 
@@ -104,14 +105,14 @@ GET /users/{Id|userPrincipalName}/contacts?$filter=Extensions/any(f:f/id eq '{ex
 ## <a name="path-parameters"></a>パス パラメーター
 |**パラメーター**|**型**|**説明**|
 |:-----|:-----|:-----|
-|Id|文字列|メッセージ、イベント、連絡先などの対応するコレクションに含まれるオブジェクトの一意識別子を格納するプレースホルダー。必須。**openTypeExtension** の **id** プロパティと混同しないこと。|
+|ID|文字列|メッセージ、イベント、連絡先などの対応するコレクションに含まれるオブジェクトの一意識別子を格納するプレースホルダー。必須。**openTypeExtension** の **id** プロパティと混同しないこと。|
 |extensionId|文字列|拡張情報名を表すプレースホルダー。これは、拡張情報の一意のテキスト識別子であるか、拡張情報の種類と一意のテキスト識別子を連結した完全修飾名のいずれかです。完全修飾名は、拡張情報の作成時に **id** プロパティに入れて返されます。必須。|
 
 ## <a name="optional-query-parameters"></a>オプションのクエリ パラメーター
 
 `$filter` 文字列内のスペース文字には必ず [URL エンコード](https://www.w3schools.com/tags/ref_urlencode.asp)を適用してください。
 
-|**名前**|**値**|**説明**|
+|**名前**|**Value**|**説明**|
 |:---------------|:--------|:-------|
 |$filter|文字列|**id** が `extensionId` パラメーターの値と一致する拡張情報を返します。|
 |$filter with **any** operator|文字列|**id** が `extensionId` パラメーターの値と一致する拡張情報を含むリソース コレクションのインスタンスを返します。|

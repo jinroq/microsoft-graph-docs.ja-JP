@@ -2,12 +2,13 @@
 title: Get microsoftStoreForBusinessApp
 description: microsoftStoreForBusinessApp オブジェクトのプロパティとリレーションシップを読み取ります。
 author: tfitzmac
-ms.openlocfilehash: 52bd1170d0f310dae2401f261fe5f92dd3444787
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 8067e61e1184ff4a9de271ee94e924fc36b67783
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27343744"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27841434"
 ---
 # <a name="get-microsoftstoreforbusinessapp"></a>Get microsoftStoreForBusinessApp
 

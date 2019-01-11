@@ -2,12 +2,13 @@
 title: Get managedAppConfiguration
 description: managedAppConfiguration オブジェクトのプロパティとリレーションシップを読み取ります。
 author: tfitzmac
-ms.openlocfilehash: 2b2ece1b57107bc4c1749c6503b6f63c7e3b4266
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: a572e0cac7870fafcddabf6704b3053b7a862cf2
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27307239"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27840972"
 ---
 # <a name="get-managedappconfiguration"></a>Get managedAppConfiguration
 

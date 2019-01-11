@@ -2,12 +2,13 @@
 title: グループを作成する
 description: この API を使用して、要求本文で指定した新しいグループを作成します。次に示す 3 種類のグループのうちの 1 つを作成できます。
 author: dkershaw10
-ms.openlocfilehash: 2fff86d3bc86a8e78c295b1a4553006ac416ddd1
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Priority
+ms.openlocfilehash: 3f6a73b6fd2dcf76bb1ebd0fab4c02a673a1be8e
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27322961"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27849421"
 ---
 # <a name="create-group"></a>グループを作成する
 この API を使用して、要求本文で指定した新しいグループを作成します。次に示す 3 種類のグループのうちの 1 つを作成できます。
@@ -43,10 +44,10 @@ POST /groups
 
 | プロパティ | 種類 | 説明|
 |:---------------|:--------|:----------|
-| displayName | string | アドレス帳に表示するグループの名前。 必須です。 |
-| mailEnabled | ブール値 | メールが有効なグループの場合は、**true** に設定します。 Office 365 グループを作成する場合**は true**に設定します。 **False**場合は、動的に作成するグループまたはセキュリティ グループを設定します。 必須です。 |
-| mailNickname | string | グループの電子メール エイリアス。 必須です。 |
-| securityEnabled | ブール値 | **真**のセキュリティが有効なグループを設定します。 動的またはセキュリティ グループを作成する場合**は true**に設定します。 Office 365 グループを作成する場合**は false**に設定します。 必須です。 |
+| displayName | string | アドレス帳に表示するグループの名前。 必須。 |
+| mailEnabled | ブール値 | メールが有効なグループの場合は、**true** に設定します。 Office 365 グループを作成する場合**は true**に設定します。 **False**場合は、動的に作成するグループまたはセキュリティ グループを設定します。 必須。 |
+| mailNickname | 文字列 | グループの電子メール エイリアス。 必須。 |
+| securityEnabled | ブール値 | **真**のセキュリティが有効なグループを設定します。 動的またはセキュリティ グループを作成する場合**は true**に設定します。 Office 365 グループを作成する場合**は false**に設定します。 必須。 |
 | owners | string collection | このプロパティは、作成時に、グループの所有者を表します。 省略可能。 |
 | メンバー | string collection | このプロパティは、作成時にグループのメンバーを表します。 省略可能。 |
 

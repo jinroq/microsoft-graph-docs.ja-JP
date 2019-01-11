@@ -2,12 +2,13 @@
 title: DeviceManagementScriptDeviceState を取得します。
 description: DeviceManagementScriptDeviceState オブジェクトのプロパティと関係を参照してください。
 author: tfitzmac
-ms.openlocfilehash: 4a050737c4e4aedd9c42228fc685ebfeb3bc02f2
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: fb82aec0d1e1a93f66986a8c2673ad92b7791d01
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27349757"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27849442"
 ---
 # <a name="get-devicemanagementscriptdevicestate"></a>DeviceManagementScriptDeviceState を取得します。
 

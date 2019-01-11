@@ -2,12 +2,13 @@
 title: Delete deviceConfigurationAssignment
 description: deviceConfigurationAssignment を削除します。
 author: tfitzmac
-ms.openlocfilehash: e056b2ab6a4f5e6ba84ab6aa3bc48f47473d3763
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: efb420b3e53e801344ac65de16b9ef43caca2b2c
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27301534"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27839320"
 ---
 # <a name="delete-deviceconfigurationassignment"></a>Delete deviceConfigurationAssignment
 

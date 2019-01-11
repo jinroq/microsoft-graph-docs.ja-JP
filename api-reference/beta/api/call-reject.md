@@ -2,12 +2,13 @@
 title: '呼び出す: 元に戻す'
 description: 着信呼び出しを拒否します。
 author: VinodRavichandran
-ms.openlocfilehash: 8354593d32dce9a2b8d917db2dd6702d692a2b3f
-ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
+localization_priority: Normal
+ms.openlocfilehash: 06037d86be99e162a57b54f77d7b4363062f5858
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "27380360"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27849477"
 ---
 # <a name="call-reject"></a>呼び出す: 元に戻す
 
@@ -39,7 +40,7 @@ POST /applications/{id}/calls/{id}/reject
 ## <a name="request-body"></a>要求本文
 要求本文で、次のパラメーターを含む JSON オブジェクトを指定します。
 
-| パラメーター      | 型    |説明|
+| パラメーター      | Type    |説明|
 |:---------------|:--------|:----------|
 |理由|String|却下の理由です。|
 

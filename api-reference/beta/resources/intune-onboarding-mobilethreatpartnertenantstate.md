@@ -2,12 +2,13 @@
 title: mobileThreatPartnerTenantState 列挙型
 description: このテナントのパートナーの状態です。
 author: tfitzmac
-ms.openlocfilehash: 2be8a36de88e4393347ab28e98afafcd791853d0
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 98db7e3fab7f2f256fc8e1c13cd77dd1268e11f8
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27301961"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27849428"
 ---
 # <a name="mobilethreatpartnertenantstate-enum-type"></a>mobileThreatPartnerTenantState 列挙型
 

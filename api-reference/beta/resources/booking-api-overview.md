@@ -1,12 +1,13 @@
 ---
 title: Microsoft Graph では、Microsoft 予約 API を使用します。
 description: " > **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。"
-ms.openlocfilehash: 5e553e2814c6e5554ea7bb2f4daef8c62057aff3
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Priority
+ms.openlocfilehash: def9260654baafe1953d629265c4b76a2afd2748
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27071092"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27845536"
 ---
 # <a name="use-the-microsoft-bookings-api-in-microsoft-graph"></a>Microsoft Graph では、Microsoft 予約 API を使用します。
 
@@ -90,6 +91,7 @@ Authorization: Bearer {access token}
 
 ## <a name="see-also"></a>関連項目
 
-- [Graph エクスプローラー](https://developer.microsoft.com/graph/graph-explorer)で API をお試しください。
+- 
+  [Graph エクスプローラー](https://developer.microsoft.com/graph/graph-explorer)で API をお試しください。
 - [Microsoft Graph を使ってパートナーのいくつかの方法](https://developer.microsoft.com/graph/graph/examples#partners)を参照してください。
 - Graph で[のアクセス許可](/graph/permissions-reference)を選択する方法について説明します。

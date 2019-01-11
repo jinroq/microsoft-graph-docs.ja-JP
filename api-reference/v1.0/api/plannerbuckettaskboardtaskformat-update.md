@@ -1,12 +1,13 @@
 ---
 title: Update plannerBucketTaskBoardTaskFormat
 description: '**plannerBucketTaskBoardTaskFormat** オブジェクトのプロパティを更新します。'
-ms.openlocfilehash: 3931492f1bafafaa269fb926afbc2cc431ba3b3f
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: c021c6bf3191f99c27ed16e504b2e87c416dced3
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27022130"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27844500"
 ---
 # <a name="update-plannerbuckettaskboardtaskformat"></a>Update plannerBucketTaskBoardTaskFormat
 
@@ -34,7 +35,7 @@ PATCH /planner/tasks/{id}/bucketTaskBoardFormat
 ## <a name="request-body"></a>要求本文
 要求本文で、更新する関連フィールドの値を指定します。要求本文に含まれない既存のプロパティは、以前の値のままになるか、他のプロパティ値の変化に基づいて再計算されます。最適なパフォーマンスを得るためには、変更されていない既存の値を含めないでください。
 
-| プロパティ     | 型   |説明|
+| プロパティ     | 種類   |説明|
 |:---------------|:--------|:----------|
 |orderHint|String|タスク ボードのバケット ビューでタスクの順序付けに使用するヒント。形式は[ここ](../resources/planner-order-hint-format.md)の説明に従って定義されます。|
 

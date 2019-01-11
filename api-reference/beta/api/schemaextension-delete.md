@@ -1,12 +1,13 @@
 ---
 title: schemaExtension を削除する
 description: スキーマ拡張機能の定義を削除します。
-ms.openlocfilehash: 77c8cb689245d498d988ab6fe7c043e8d13b419d
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 8641b00b984380592f14ae366b9cc20ab11dc7b7
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27071162"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27842197"
 ---
 # <a name="delete-schemaextension"></a>schemaExtension を削除する
 
@@ -67,7 +68,7 @@ HTTP/1.1 204 No Content
 
 ## <a name="see-also"></a>関連項目
 
-- [拡張機能を使用してカスタム データをリソースに追加する](/graph/extensibility-overview)
+- [拡張機能を使用したリソースへのカスタム データの追加](/graph/extensibility-overview)
 - [スキーマ拡張機能を使用したグループへのカスタム データの追加](/graph/extensibility-schema-groups)
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

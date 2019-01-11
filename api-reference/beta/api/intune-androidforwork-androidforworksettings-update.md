@@ -2,12 +2,13 @@
 title: Update androidForWorkSettings
 description: androidForWorkSettings オブジェクトのプロパティを更新します。
 author: tfitzmac
-ms.openlocfilehash: 5514de226d138291743c5b017a50682e91e1e9ce
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: b46daa868d240b7ae50c83d708b8bf744e8079be
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27352543"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27849764"
 ---
 # <a name="update-androidforworksettings"></a>Update androidForWorkSettings
 

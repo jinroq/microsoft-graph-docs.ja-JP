@@ -2,12 +2,13 @@
 title: androidTrustedRootCertificate リソースの種類
 description: Android のルート証明書の信頼関係の構成プロファイル
 author: tfitzmac
-ms.openlocfilehash: 064500dc27c7b76a2d6d77bb04d64e2e25c0ff36
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 63f4b71525d334dc83376f171bf573242e84cb40
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27336037"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27850240"
 ---
 # <a name="androidtrustedrootcertificate-resource-type"></a>androidTrustedRootCertificate リソースの種類
 
@@ -28,7 +29,7 @@ Android のルート証明書の信頼関係の構成プロファイル
 |[AndroidTrustedRootCertificate を削除します。](../api/intune-deviceconfig-androidtrustedrootcertificate-delete.md)|なし|の[androidTrustedRootCertificate](../resources/intune-deviceconfig-androidtrustedrootcertificate.md)を削除します。|
 |[AndroidTrustedRootCertificate を更新します。](../api/intune-deviceconfig-androidtrustedrootcertificate-update.md)|[androidTrustedRootCertificate](../resources/intune-deviceconfig-androidtrustedrootcertificate.md)|[AndroidTrustedRootCertificate](../resources/intune-deviceconfig-androidtrustedrootcertificate.md)オブジェクトのプロパティを更新します。|
 
-## <a name="properties"></a>Properties
+## <a name="properties"></a>プロパティ
 |プロパティ|種類|説明|
 |:---|:---|:---|
 |ID|String|エンティティのキー。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|

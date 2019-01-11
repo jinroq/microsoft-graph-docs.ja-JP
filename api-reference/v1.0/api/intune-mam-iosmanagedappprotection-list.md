@@ -2,12 +2,13 @@
 title: iosManagedAppProtections のリスト
 description: iosManagedAppProtection オブジェクトのプロパティとリレーションシップをリストします。
 author: tfitzmac
-ms.openlocfilehash: 9ad080988c5cfab0fc2314871a4df7e97ce516df
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: c5147f45aee8febe0039502c5cebf320b98a2de3
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27319706"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27845648"
 ---
 # <a name="list-iosmanagedappprotections"></a>iosManagedAppProtections のリスト
 

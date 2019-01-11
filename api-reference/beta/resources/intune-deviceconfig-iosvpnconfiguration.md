@@ -2,12 +2,13 @@
 title: iosVpnConfiguration リソースの種類
 description: このプロファイルの構成を提供することによって必要な VPN エンドポイントに接続するための iOS デバイスに指示できます。 指定する認証方法とセキュリティの種類必要 VPN エンドポイントで行うことができます、VPN 接続シームレスなエンド ・ ユーザーのです。
 author: tfitzmac
-ms.openlocfilehash: 8dac46c9ef413e3699613b7f3da5a6e19c93c76e
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 4ab5b53c47022b106bbe337254d6f0b1043f83c4
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27313623"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27849519"
 ---
 # <a name="iosvpnconfiguration-resource-type"></a>iosVpnConfiguration リソースの種類
 
@@ -28,7 +29,7 @@ ms.locfileid: "27313623"
 |[IosVpnConfiguration を削除します。](../api/intune-deviceconfig-iosvpnconfiguration-delete.md)|なし|の[iosVpnConfiguration](../resources/intune-deviceconfig-iosvpnconfiguration.md)を削除します。|
 |[IosVpnConfiguration を更新します。](../api/intune-deviceconfig-iosvpnconfiguration-update.md)|[iosVpnConfiguration](../resources/intune-deviceconfig-iosvpnconfiguration.md)|[IosVpnConfiguration](../resources/intune-deviceconfig-iosvpnconfiguration.md)オブジェクトのプロパティを更新します。|
 
-## <a name="properties"></a>Properties
+## <a name="properties"></a>プロパティ
 |プロパティ|種類|説明|
 |:---|:---|:---|
 |ID|String|エンティティのキー。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|

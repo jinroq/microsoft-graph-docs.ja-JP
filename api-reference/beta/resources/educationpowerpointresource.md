@@ -1,12 +1,13 @@
 ---
 title: educationPowerPointResource リソースの種類
 description: 'EducationResource のサブクラスです。 これは、PowerPoint のリソースです。 関連付けられている**fileResource**ディレクトリに、PowerPoint ファイルをアップロードする必要があります、 '
-ms.openlocfilehash: a83a78449ecb7c64f62557ddfa642ab02b55c206
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 763a529e97b12c93d8f10aa6855c20818c02da67
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27071875"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27845459"
 ---
 # <a name="educationpowerpointresource-resource-type"></a>educationPowerPointResource リソースの種類
 
@@ -16,7 +17,7 @@ ms.locfileid: "27071875"
 
 
 ## <a name="properties"></a>プロパティ
-| プロパティ     | 型   |説明|
+| プロパティ     | 種類   |説明|
 |:---------------|:--------|:----------|
 |fileUrl|String|ディスク上のファイルの場所です。|
 

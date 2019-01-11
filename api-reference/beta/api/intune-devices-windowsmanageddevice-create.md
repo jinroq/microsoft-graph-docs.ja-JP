@@ -2,12 +2,13 @@
 title: WindowsManagedDevice を作成します。
 description: 新しい windowsManagedDevice オブジェクトを作成します。
 author: tfitzmac
-ms.openlocfilehash: 21626854a52ed305dbf237562e151e168330f170
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: e23b24365d30954c4da1597ca9d7c14c554a73ae
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27324445"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27842659"
 ---
 # <a name="create-windowsmanageddevice"></a>WindowsManagedDevice を作成します。
 

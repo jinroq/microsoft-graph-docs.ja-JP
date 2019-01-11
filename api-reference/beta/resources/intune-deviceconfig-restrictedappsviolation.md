@@ -2,12 +2,13 @@
 title: restrictedAppsViolation リソースの種類
 description: 各ユーザーごとのデバイスの制限されたアプリケーションの構成プロファイルの違反
 author: tfitzmac
-ms.openlocfilehash: cb614bc56f27281198fcecb73bae2b7beddfa266
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: aefd9996805f0ee454bebc8871662b0ceac05a9b
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27304936"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27849379"
 ---
 # <a name="restrictedappsviolation-resource-type"></a>restrictedAppsViolation リソースの種類
 
@@ -25,7 +26,7 @@ ms.locfileid: "27304936"
 |[RestrictedAppsViolation を削除します。](../api/intune-deviceconfig-restrictedappsviolation-delete.md)|なし|の[restrictedAppsViolation](../resources/intune-deviceconfig-restrictedappsviolation.md)を削除します。|
 |[RestrictedAppsViolation を更新します。](../api/intune-deviceconfig-restrictedappsviolation-update.md)|[restrictedAppsViolation](../resources/intune-deviceconfig-restrictedappsviolation.md)|[RestrictedAppsViolation](../resources/intune-deviceconfig-restrictedappsviolation.md)オブジェクトのプロパティを更新します。|
 
-## <a name="properties"></a>Properties
+## <a name="properties"></a>プロパティ
 |プロパティ|種類|説明|
 |:---|:---|:---|
 |ID|String|オブジェクトの一意の識別子です。 "Accountid"、deviceId、policyId、およびユーザー Id から構成されます。|

@@ -2,12 +2,13 @@
 title: defenderAttackSurfaceType 列挙型
 description: Defender 攻撃面の削減ルールで使用できる値
 author: tfitzmac
-ms.openlocfilehash: 40970d9070065c6481e4ed8dfbf99b794878db6f
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 035d646e4c325b217547caf7b09eb6c8072a4f61
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27328974"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27850296"
 ---
 # <a name="defenderattacksurfacetype-enum-type"></a>defenderAttackSurfaceType 列挙型
 

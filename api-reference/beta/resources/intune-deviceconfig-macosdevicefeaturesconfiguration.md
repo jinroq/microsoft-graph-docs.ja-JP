@@ -2,12 +2,13 @@
 title: macOSDeviceFeaturesConfiguration リソースの種類
 description: MacOS デバイス機能構成のプロファイル。
 author: tfitzmac
-ms.openlocfilehash: d6f3d5634fd2fb050e8d68341f9198dc751173e5
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: c17f70e277bb98afe8f4d270bf99be0449a29654
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27348168"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27841525"
 ---
 # <a name="macosdevicefeaturesconfiguration-resource-type"></a>macOSDeviceFeaturesConfiguration リソースの種類
 

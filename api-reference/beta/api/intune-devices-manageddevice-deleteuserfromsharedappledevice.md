@@ -2,12 +2,13 @@
 title: deleteUserFromSharedAppleDevice アクション
 description: 共有の Apple デバイスからユーザーを削除する
 author: tfitzmac
-ms.openlocfilehash: 68b3e9b700e70c9c5d16c97d20edf6471f7d1fbb
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: a4ed5a58f73bc219a092e6972821bb1d84040941
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27347986"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27841728"
 ---
 # <a name="deleteuserfromsharedappledevice-action"></a>deleteUserFromSharedAppleDevice アクション
 

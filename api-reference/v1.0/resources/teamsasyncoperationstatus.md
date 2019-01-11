@@ -2,12 +2,13 @@
 title: teamsAsyncOperationStatus 列挙型
 description: TeamsAsyncOperation の現在の状態について説明します。
 author: nkramer
-ms.openlocfilehash: fbf66ac0c93fd616793ebb4dc62fb63a2559374f
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: becbef6e5ca76197413154df170cbaae0466fa8e
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27309969"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27850534"
 ---
 # <a name="teamsasyncoperationstatus-enum-type"></a>teamsAsyncOperationStatus 列挙型
 

@@ -2,12 +2,13 @@
 title: unsupportedDeviceConfigurationDetail リソースの種類
 description: エンティティがサポートされている理由の説明です。
 author: tfitzmac
-ms.openlocfilehash: 4cccf49366a803e5f964605a4dc4ba7f56707823
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 0a213961e6b816917b061bc56c792cf9a60e3a2a
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27344052"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27839474"
 ---
 # <a name="unsupporteddeviceconfigurationdetail-resource-type"></a>unsupportedDeviceConfigurationDetail リソースの種類
 
@@ -16,7 +17,7 @@ ms.locfileid: "27344052"
 > **注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
 
 エンティティがサポートされている理由の説明です。
-## <a name="properties"></a>Properties
+## <a name="properties"></a>プロパティ
 |プロパティ|種類|説明|
 |:---|:---|:---|
 |message|String|エンティティがサポートされている理由を説明するメッセージ。|

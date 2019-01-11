@@ -2,12 +2,13 @@
 title: AndroidWorkProfileCustomConfiguration を更新します。
 description: AndroidWorkProfileCustomConfiguration オブジェクトのプロパティを更新します。
 author: tfitzmac
-ms.openlocfilehash: a8a16a0e4fd9cb8e2f6970a63b723dae6fdebb25
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 6febed5f031789075e126c33e5e864ce719ef62e
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27357821"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27842078"
 ---
 # <a name="update-androidworkprofilecustomconfiguration"></a>AndroidWorkProfileCustomConfiguration を更新します。
 

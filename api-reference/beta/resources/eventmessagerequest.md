@@ -2,12 +2,13 @@
 title: eventMessageRequest リソースの種類
 description: 会議出席依頼を表すメッセージ。
 author: angelgolfer-ms
-ms.openlocfilehash: f32393e0811543e7630c16e6889b31ce3dbc5920
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 6a4af3bef767213c977dde1195c89d1de02a0cf8
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27335645"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27844024"
 ---
 # <a name="eventmessagerequest-resource-type"></a>eventMessageRequest リソースの種類
 
@@ -87,15 +88,15 @@ ms.locfileid: "27335645"
 |createdDateTime|DateTimeOffset|メッセージが作成された日時。|
 |endDateTime|[dateTimeTimeZone](datetimetimezone.md)|要求された会議の終了時間です。|
 |from|[recipient](recipient.md)|メッセージのメールボックス所有者と送信者。|
-|hasAttachments|Boolean|メッセージに添付ファイルがあるかどうかを示します。|
+|hasAttachments|ブール値|メッセージに添付ファイルがあるかどうかを示します。|
 |id|String|読み取り専用。|
 |importance|String| メッセージの重要度: `Low`、`Normal`、`High`。|
 |inferenceClassification|String| 使用可能な値は、`Focused`、`Other` です。|
-|isDeliveryReceiptRequested|Boolean|メッセージの開封確認メッセージが要求されているかどうかを示します。|
+|isDeliveryReceiptRequested|ブール値|メッセージの開封確認メッセージが要求されているかどうかを示します。|
 |isDraft|ブール型|メッセージが下書きかどうかを示します。メッセージがまだ送信されていなければ下書きです。|
 |isOutOfDate|Boolean|この会議出席要求がより新しい要求によって古くなっているかどうかを示します。|
-|isRead|Boolean|メッセージが開封されたかどうかを示します。|
-|isReadReceiptRequested|Boolean|メッセージの開封確認メッセージが要求されているかどうかを示します。|
+|isRead|ブール値|メッセージが開封されたかどうかを示します。|
+|isReadReceiptRequested|ブール値|メッセージの開封確認メッセージが要求されているかどうかを示します。|
 |lastModifiedDateTime|DateTimeOffset|メッセージが最後に変更された日時。|
 |location|[Location](location.md)|要求された会議の場所です。|
 |meetingMessageType|String| イベント メッセージの種類: `None`、`MeetingRequest`、`MeetingCancelled``MeetingAccepted``MeetingTenativelyAccepted``MeetingDeclined`。|

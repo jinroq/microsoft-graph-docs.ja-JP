@@ -1,12 +1,13 @@
 ---
 title: リストの購読
 description: プロパティとアプリケーション ID、ユーザー、およびテナントのユーザーのロールに基づいて、webhook サブスクリプションの関係を取得します。
-ms.openlocfilehash: df52fd51de120002a7eff57b32715b281744be93
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Priority
+ms.openlocfilehash: 663586cc769f04be631e1f3c1bdf86bc4f798022
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27023807"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27850415"
 ---
 # <a name="list-subscriptions"></a>リストの購読
 
@@ -57,7 +58,7 @@ GET /subscriptions
 
 ## <a name="request-headers"></a>要求ヘッダー
 
-| 名前       | 型 | 説明|
+| 名前       | 種類 | 説明|
 |:-----------|:------|:----------|
 | Authorization  | string  | ベアラー {トークン}。必須。 |
 

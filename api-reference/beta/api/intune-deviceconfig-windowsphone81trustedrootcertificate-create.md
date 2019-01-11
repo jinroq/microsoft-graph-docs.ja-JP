@@ -2,12 +2,13 @@
 title: WindowsPhone81TrustedRootCertificate を作成します。
 description: 新しい windowsPhone81TrustedRootCertificate オブジェクトを作成します。
 author: tfitzmac
-ms.openlocfilehash: fcac922765e2d9f9c09030ca511d9f6a24b41e1b
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 55c36c25ab8eaa4895df21d0b7c60dc37179462d
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27352102"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27844374"
 ---
 # <a name="create-windowsphone81trustedrootcertificate"></a>WindowsPhone81TrustedRootCertificate を作成します。
 

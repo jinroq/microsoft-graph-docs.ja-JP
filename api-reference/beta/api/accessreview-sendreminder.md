@@ -1,12 +1,13 @@
 ---
 title: SendReminder accessReview
 description: 'Azure AD のレビュー機能をアクセスは、現在アクティブな accessReview のレビュー担当者に通知を送信します。  ターゲット オブジェクトは、1 回限りのアクセスの確認、または定期的なアクセス確認のインスタンスのいずれかにできます。 '
-ms.openlocfilehash: fd8c204db207ae9f58c4dd5e6337e65efe160824
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 3fa5c648a1b159a54560ad03f70a4f0251624119
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27069287"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27844199"
 ---
 # <a name="sendreminder-accessreview"></a>SendReminder accessReview
 
@@ -29,7 +30,7 @@ ms.locfileid: "27069287"
 POST /accessReviews('<id>')/sendReminder()
 ```
 ## <a name="request-headers"></a>要求ヘッダー
-| 名前         | 型        | 説明 |
+| 名前         | 種類        | 説明 |
 |:-------------|:------------|:------------|
 | Authorization | string | ベアラー\{トークン\}。 必須。 |
 

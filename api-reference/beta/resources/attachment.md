@@ -1,12 +1,13 @@
 ---
 title: 添付ファイル リソースの種類
 description: イベントに関連するコンテンツを追加します。
-ms.openlocfilehash: f0bb9ec37d2fe3d034dce9532ad316d371c4937e
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 5648194b0f636c8757d1b20c492abc099dce377d
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27073811"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27842792"
 ---
 # <a name="attachment-resource-type"></a>添付ファイル リソースの種類
 
@@ -41,7 +42,7 @@ ms.locfileid: "27073811"
 
 次に、添付ファイル リソースの基本プロパティを示します。他のプロパティについては、特定の種類の添付ファイル ([fileAttachment](../resources/fileattachment.md)、[itemAttachment](../resources/itemattachment.md)、または [referenceAttachment](../resources/referenceattachment.md)) を参照してください。
 
-| プロパティ     | 型   |説明|
+| プロパティ     | 種類   |説明|
 |:---------------|:--------|:----------|
 |contentType|String|MIME タイプ。|
 |id|String| 読み取り専用。|

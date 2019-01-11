@@ -1,12 +1,13 @@
 ---
 title: educationUser プロパティを更新する
 description: '**educationuser** オブジェクトのプロパティを更新します。'
-ms.openlocfilehash: bd8d8f95cf1c8475a5c52946d0cf0d1eaa5240ed
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: a6479095abbb1884acf98377e8fef9d115d4a6c2
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27068262"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27843513"
 ---
 # <a name="update-educationuser-properties"></a>educationUser プロパティを更新する
 
@@ -37,7 +38,7 @@ PATCH /education/users/{id}
 ## <a name="request-body"></a>要求本文
 要求本文で、更新する関連フィールドの値を指定します。 要求本文に含まれない既存のプロパティは、以前の値のままになるか、他のプロパティ値の変更に基づいて再計算されます。 最適なパフォーマンスを得るために、変更されていない既存の値を含めないでください。
 
-| プロパティ     | 型   |説明|
+| プロパティ     | 種類   |説明|
 |:---------------|:--------|:----------|
 |displayName| String| ユーザーの表示名|
 |givenName| String | 名 |

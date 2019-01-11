@@ -1,12 +1,13 @@
 ---
 title: リストの accessReview の決定
 description: Azure AD のレビュー機能にアクセス、accessReview オブジェクトの決定を取得します。
-ms.openlocfilehash: d8cf89706f053dfee6e98cdf23d2539874ac6997
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: ade39abbf63c4e1eb71a6fa25fd3febd8a24c41b
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27067685"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27849750"
 ---
 # <a name="list-accessreview-decisions"></a>リストの accessReview の決定
 
@@ -31,7 +32,7 @@ Azure AD[アクセスの確認](../resources/accessreviews-root.md)機能では�
 GET /accessReviews('{reviewId}')/decisions
 ```
 ## <a name="request-headers"></a>要求ヘッダー
-| 名前         | 型        | 説明 |
+| 名前         | 種類        | 説明 |
 |:-------------|:------------|:------------|
 | Authorization | string | ベアラー\{トークン\}。 必須。 |
 

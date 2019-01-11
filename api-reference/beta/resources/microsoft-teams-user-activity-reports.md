@@ -1,12 +1,13 @@
 ---
 title: Microsoft Teams ユーザー アクティビティ レポート
 description: 組織でマイクロソフトのチームのユーザーの利用状況の洞察を取得するのにには、マイクロソフト チームのユーザー アクティビティ レポートを使用します。
-ms.openlocfilehash: 26af58ad88541fb4e9e0f64159505846bfe90bb5
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 2fc2eee8243a338204687114d2f1de3d2e794a9f
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27067385"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27845522"
 ---
 # <a name="microsoft-teams-user-activity-reports"></a>Microsoft Teams ユーザー アクティビティ レポート
 

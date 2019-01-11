@@ -2,12 +2,13 @@
 title: win32LobAppReturnCode リソースの種類
 description: Win32 アプリケーションのプロパティ戻り値のコードにはが含まれています
 author: tfitzmac
-ms.openlocfilehash: 1ac6b01240e25d1a0163148e61851d6e9405aa44
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: f635c49ece6a1083ef3a89271faf76e01206e9ed
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27346236"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27849820"
 ---
 # <a name="win32lobappreturncode-resource-type"></a>win32LobAppReturnCode リソースの種類
 
@@ -16,7 +17,7 @@ ms.locfileid: "27346236"
 > **注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
 
 Win32 アプリケーションのプロパティ戻り値のコードにはが含まれています
-## <a name="properties"></a>Properties
+## <a name="properties"></a>プロパティ
 |プロパティ|種類|説明|
 |:---|:---|:---|
 |リターン コード|Int32|コードを返します。|

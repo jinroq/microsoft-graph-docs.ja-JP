@@ -2,12 +2,13 @@
 title: MobileAppProvisioningConfigGroupAssignment を更新します。
 description: MobileAppProvisioningConfigGroupAssignment オブジェクトのプロパティを更新します。
 author: tfitzmac
-ms.openlocfilehash: c113c16234cb51146aa2e627d39405f740d6aab3
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: b341de06c1bd5d504e4835ebef8fce2aa3a5aac7
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27359144"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27848343"
 ---
 # <a name="update-mobileappprovisioningconfiggroupassignment"></a>MobileAppProvisioningConfigGroupAssignment を更新します。
 

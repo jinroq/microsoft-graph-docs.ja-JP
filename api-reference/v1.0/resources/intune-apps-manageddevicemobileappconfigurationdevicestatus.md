@@ -1,12 +1,13 @@
 ---
 title: managedDeviceMobileAppConfigurationDeviceStatus リソースの種類
 description: プロパティ、継承されたプロパティ、およびデバイスの MDM モバイル アプリケーションの構成状態のアクションが含まれています。
-ms.openlocfilehash: 439be36b7658c7975f3e458520098e8cbd4e849b
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 9698c249d8075a7567c3f54defa3d20a475174ac
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27021014"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27841441"
 ---
 # <a name="manageddevicemobileappconfigurationdevicestatus-resource-type"></a>managedDeviceMobileAppConfigurationDeviceStatus リソースの種類
 
@@ -23,9 +24,9 @@ ms.locfileid: "27021014"
 |[ManagedDeviceMobileAppConfigurationDeviceStatus を更新します。](../api/intune-apps-manageddevicemobileappconfigurationdevicestatus-update.md)|[managedDeviceMobileAppConfigurationDeviceStatus](../resources/intune-apps-manageddevicemobileappconfigurationdevicestatus.md)|[ManagedDeviceMobileAppConfigurationDeviceStatus](../resources/intune-apps-manageddevicemobileappconfigurationdevicestatus.md)オブジェクトのプロパティを更新します。|
 
 ## <a name="properties"></a>プロパティ
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
-|id|String|エンティティのキー。|
+|ID|String|エンティティのキー。|
 |deviceDisplayName|String|DevicePolicyStatus のデバイス名。|
 |userName|String|レポートされているユーザー名|
 |deviceModel|String|レポートされているデバイス モデル|

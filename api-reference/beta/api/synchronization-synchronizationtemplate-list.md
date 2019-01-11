@@ -1,12 +1,13 @@
 ---
 title: 同期の既存のテンプレートを一覧表示します。
 description: 特定のアプリケーションまたはサービス ・ プリンシパルに関連付けられている同期テンプレートを一覧表示します。
-ms.openlocfilehash: 0842d5923368fa0df72af03e51d45dc3444e6dce
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 49e9e257322886fe294807207276f8b6d6919909
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27071998"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27839439"
 ---
 # <a name="list-existing-synchronization-templates"></a>同期の既存のテンプレートを一覧表示します。
 
@@ -32,7 +33,7 @@ GET applications/{id}/synchronization/templates
 
 ## <a name="request-headers"></a>要求ヘッダー
 
-| 名前           | 型    | 説明|
+| 名前           | 種類    | 説明|
 |:---------------|:--------|:-----------|
 | Authorization  | string  | ベアラー {トークン}。必須。 |
 

@@ -3,12 +3,13 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/11/2017
 title: ColumnDefinition
-ms.openlocfilehash: 9b99abe78b009786d489ec7f0c0fdce1e2945b1d
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 5db835b9720f9fa711d683dd505e8325b27d79d8
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27066611"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27844493"
 ---
 # <a name="columndefinition-resource-type"></a>columnDefinition リソースの種類
 
@@ -58,7 +59,7 @@ ColumnDefinition リソースの JSON 表現は、ここで。
 次のプロパティは、列に保持されるデータの種類と、そのデータに関する追加の設定を示します。
 タイプに関連するプロパティ (ブール値、計算された、選択、通貨、日時、検索、番号、personOrGroup、テキスト) は相互に排他的な--列のみが指定されているそれらの 1 つです。
 
-| プロパティ名           | 型    | 説明
+| プロパティ名           | Type    | 説明
 |:------------------------|:--------|:-----------------------------------------
 | **columnGroup**         | 文字列  | サイト列の場合、この列が属するグループの名前。 関連する列を整理するのに役立ちます。
 | **description**         | 文字列  | 列に関するユーザー向けの説明。

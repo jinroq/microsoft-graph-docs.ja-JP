@@ -2,12 +2,13 @@
 title: pivotTables を一覧表示する
 description: workbookpivottable オブジェクトの一覧を取得します。
 author: lumine2008
-ms.openlocfilehash: 4056d901c39db51589cc622e83b51fe294ee7ccd
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: c9aac1b23045ee6f6e751e75dccdc57f61a95203
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27320422"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27845228"
 ---
 # <a name="list-pivottables"></a>pivotTables を一覧表示する
 

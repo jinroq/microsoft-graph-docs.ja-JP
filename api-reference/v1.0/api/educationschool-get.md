@@ -2,12 +2,13 @@
 title: educationSchool を取得する
 description: 学校オブジェクトのプロパティと関係を取得します。
 author: mmast-msft
-ms.openlocfilehash: 4b4d68c2c71725f2ed3be1adb9067eea6d7d87bd
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 7fe3e094ca06286a8a89768185ed131dd27e1fa3
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27336779"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27839075"
 ---
 # <a name="get-educationschool"></a>educationSchool を取得する
 

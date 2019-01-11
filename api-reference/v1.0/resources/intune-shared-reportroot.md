@@ -2,12 +2,13 @@
 title: reportRoot リソースの種類
 description: 履歴レポートのインスタンスを表すリソースです。
 author: tfitzmac
-ms.openlocfilehash: 46b4844487a1cb714dde791e6867c277c1693f66
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 53fedc78575e48d77419a598b73e1760c8c6457c
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27303970"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27850289"
 ---
 # <a name="reportroot-resource-type"></a>reportRoot リソースの種類
 
@@ -27,7 +28,7 @@ ms.locfileid: "27303970"
 |[managedDeviceEnrollmentTopFailures 関数](../api/intune-shared-reportroot-manageddeviceenrollmenttopfailures.md)|[レポート](../resources/intune-shared-report.md)|まだ記載されていません。|
 
 
-## <a name="properties"></a>Properties
+## <a name="properties"></a>プロパティ
 |プロパティ|種類|説明|
 |:---|:---|:---|
 |ID|String|このエンティティの一意識別子です。|

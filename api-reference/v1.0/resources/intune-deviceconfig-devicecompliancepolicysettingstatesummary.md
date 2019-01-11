@@ -2,12 +2,13 @@
 title: deviceCompliancePolicySettingStateSummary リソースの種類
 description: アカウント全体における、デバイス コンプライアンスのポリシー設定状態の要約です。
 author: tfitzmac
-ms.openlocfilehash: d059574e1286bdcc1cc7199e0e1cbea1c7f9e9ac
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: afe2b1518aa2ac9c803cc41fce2efffabf4c44d3
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27352319"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27844843"
 ---
 # <a name="devicecompliancepolicysettingstatesummary-resource-type"></a>deviceCompliancePolicySettingStateSummary リソースの種類
 

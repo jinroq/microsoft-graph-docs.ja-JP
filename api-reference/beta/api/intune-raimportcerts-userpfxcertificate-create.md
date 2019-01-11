@@ -2,12 +2,13 @@
 title: UserPFXCertificate を作成します。
 description: 新しい userPFXCertificate オブジェクトを作成します。
 author: tfitzmac
-ms.openlocfilehash: 1f577189dc2e8a420bc4f62d0c7d59510c610ac9
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: a20143e12098d246a65477400341409a79ad64ae
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27337738"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27844570"
 ---
 # <a name="create-userpfxcertificate"></a>UserPFXCertificate を作成します。
 

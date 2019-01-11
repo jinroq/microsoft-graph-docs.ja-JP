@@ -2,12 +2,13 @@
 title: mobileAppContent リソースの種類
 description: 特定のアプリのバージョンに関するコンテンツのプロパティが含まれています。 各 mobileAppContent には、複数の mobileAppContentFile を含めることができます。
 author: tfitzmac
-ms.openlocfilehash: 8cc5bd6e3c7aa5f08236d2662821a9a5d03707d0
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: aa68d0a07de4f0e85ee15acc189e003c4f4120a0
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27360348"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27845816"
 ---
 # <a name="mobileappcontent-resource-type"></a>mobileAppContent リソースの種類
 

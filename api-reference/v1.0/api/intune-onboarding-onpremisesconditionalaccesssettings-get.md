@@ -2,12 +2,13 @@
 title: onPremisesConditionalAccessSettings の取得
 description: onPremisesConditionalAccessSettings オブジェクトのプロパティとリレーションシップを読み取ります。
 author: tfitzmac
-ms.openlocfilehash: 31f5bb9804c8a4a469d877727f073919dfdff73e
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 7339b0546abcf0ef9bc4f476b0958428d0fb5ab9
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27332355"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27839390"
 ---
 # <a name="get-onpremisesconditionalaccesssettings"></a>onPremisesConditionalAccessSettings の取得
 

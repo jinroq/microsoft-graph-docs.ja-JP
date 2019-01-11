@@ -1,12 +1,13 @@
 ---
 title: 'reportRoot: getOffice365ActiveUserCounts'
 description: レポート期間中の日ごとのアクティブ ユーザー数を製品別に取得します。
-ms.openlocfilehash: 29cb7a18520774b192d5e9e71b62a7ca86fa9be5
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 0213ee12ec73fc43a0a321fa77d4c0d2495e4210
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27069030"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27844486"
 ---
 # <a name="reportroot-getoffice365activeusercounts"></a>reportRoot: getOffice365ActiveUserCounts
 
@@ -38,7 +39,7 @@ GET /reports/getOffice365ActiveUserCounts(period='{period_value}')
 
 要求 URL に、次のパラメーターと有効な値を指定します。
 
-| パラメーター | 型   | 説明                              |
+| パラメーター | Type   | 説明                              |
 | :-------- | :----- | :--------------------------------------- |
 | period    | 文字列 | レポートを集計する期間の長さを指定します。 {period_value} でサポートされている値は D7、D30、D90、D180 です。 これらの値は、D*n* の形式 (*n* はレポートを集計する日数) に従います。 必須。 |
 
@@ -85,7 +86,7 @@ GET /reports/getOffice365ActiveUserCounts(period='{period_value}')
 - yammer
 - チーム
 
-## <a name="example"></a>使用例
+## <a name="example"></a>例
 
 ### <a name="csv"></a>CSV
 

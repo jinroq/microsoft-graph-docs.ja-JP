@@ -1,12 +1,13 @@
 ---
 title: 'カレンダー: getSchedule'
 description: コレクションの空き時間情報の可用性の情報をユーザー、配布リスト、または、リソースの指定された時間を取得します。
-ms.openlocfilehash: 5122cf34530f18f872e80863f259f348193d252e
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Priority
+ms.openlocfilehash: 08a584d4ce8cb9967856610408aebedc08f7b123
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27068014"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27844563"
 ---
 # <a name="calendar-getschedule"></a>カレンダー: getSchedule
 
@@ -31,7 +32,7 @@ POST /users/{id|userPrincipalName}/calendar/getSchedule
 ```
 
 ## <a name="request-headers"></a>要求ヘッダー
-| 名前       | 型 | 説明|
+| 名前       | 種類 | 説明|
 |:-----------|:------|:----------|
 | Authorization  | string  | ベアラー {トークン}。必須。 |
 | Content-Type  | string | アプリケーションと json では、エンティティの本文内のデータの性質です。 必須。  |
@@ -40,7 +41,7 @@ POST /users/{id|userPrincipalName}/calendar/getSchedule
 ## <a name="request-body"></a>要求本文
 要求本文で、次のパラメーターを含む JSON オブジェクトを指定します。
 
-| プロパティ     | 型   |説明|
+| プロパティ     | 種類   |説明|
 |:---------------|:--------|:----------|
 |availabilityViewInterval|String|応答では、 **availabilityView**の時間帯の期間を表します。 既定値は 30 分、最小値は 6、最大値は 1440 です。 省略可能。|
 |endTime|[dateTimeTimeZone](../resources/datetimetimezone.md)|日付、時刻、および期間を終了するタイム ゾーンです。|

@@ -2,12 +2,13 @@
 title: androidManagedAppProtection リソース タイプ
 description: Android デバイス上の特定のセキュリティ グループおよびアプリの特定のセットを対象とした、管理設定の詳細を構成するために使用するポリシー
 author: tfitzmac
-ms.openlocfilehash: b6a5289cf4ac5f2a478300fb5e43c5acbec55d79
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 8edd8bed2ca9630b08e811b1f80c0077c38271b4
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27329877"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27849386"
 ---
 # <a name="androidmanagedappprotection-resource-type"></a>androidManagedAppProtection リソース タイプ
 

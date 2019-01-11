@@ -2,12 +2,13 @@
 title: termsAndConditionsAcceptanceStatus リソース タイプ
 description: C) 特定のユーザーがポリシーです。 ポータル サイトへのアクセスを保持するには、ユーザーは最新バージョンの使用条件を承諾する必要があります。
 author: tfitzmac
-ms.openlocfilehash: 9e7788cb34cb6c4e2a173af9bae77e66adb549da
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 17d76be4db1f790d00fb90322307ff04152291be
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27360712"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27849393"
 ---
 # <a name="termsandconditionsacceptancestatus-resource-type"></a>termsAndConditionsAcceptanceStatus リソース タイプ
 

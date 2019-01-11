@@ -2,12 +2,13 @@
 title: windows10EnrollmentCompletionPageConfiguration リソースの種類
 description: まだ文書化されていません
 author: tfitzmac
-ms.openlocfilehash: 975fd7adeb33a0fd3f2c638087558beca76551b1
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: f843a36c5852f3a565894e5ea7e2d6f0ff70954e
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27356568"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27844717"
 ---
 # <a name="windows10enrollmentcompletionpageconfiguration-resource-type"></a>windows10EnrollmentCompletionPageConfiguration リソースの種類
 
@@ -28,7 +29,7 @@ ms.locfileid: "27356568"
 |[Windows10EnrollmentCompletionPageConfiguration を削除します。](../api/intune-onboarding-windows10enrollmentcompletionpageconfiguration-delete.md)|なし|の[windows10EnrollmentCompletionPageConfiguration](../resources/intune-onboarding-windows10enrollmentcompletionpageconfiguration.md)を削除します。|
 |[Windows10EnrollmentCompletionPageConfiguration を更新します。](../api/intune-onboarding-windows10enrollmentcompletionpageconfiguration-update.md)|[windows10EnrollmentCompletionPageConfiguration](../resources/intune-onboarding-windows10enrollmentcompletionpageconfiguration.md)|[Windows10EnrollmentCompletionPageConfiguration](../resources/intune-onboarding-windows10enrollmentcompletionpageconfiguration.md)オブジェクトのプロパティを更新します。|
 
-## <a name="properties"></a>Properties
+## <a name="properties"></a>プロパティ
 |プロパティ|種類|説明|
 |:---|:---|:---|
 |ID|String|まだ文書化されていません。[deviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md) から継承します|

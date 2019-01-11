@@ -2,12 +2,13 @@
 title: getEffectivePermissions 関数
 description: 現在の認証ユーザーの有効なアクセス許可を取得します
 author: tfitzmac
-ms.openlocfilehash: 3d4b277b0a5a3d5cc0584b602ad28c2e2e96e2b5
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 5c887aebdba69048ded387371ad2534ce4173668
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27317004"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27850779"
 ---
 # <a name="geteffectivepermissions-function"></a>getEffectivePermissions 関数
 

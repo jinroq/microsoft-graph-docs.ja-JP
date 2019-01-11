@@ -2,12 +2,13 @@
 title: androidCertificateProfileBase リソースの種類
 description: Android の証明書のプロファイルが基本です。
 author: tfitzmac
-ms.openlocfilehash: 7baa4eefb9628462da41c6c4828508ead458c32a
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 1a4e09b6ff000161c70dc554e3e33e0817d9bd29
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27327609"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27849015"
 ---
 # <a name="androidcertificateprofilebase-resource-type"></a>androidCertificateProfileBase リソースの種類
 
@@ -25,7 +26,7 @@ Android の証明書のプロファイルが基本です。
 |[リスト androidCertificateProfileBases](../api/intune-deviceconfig-androidcertificateprofilebase-list.md)|[androidCertificateProfileBase](../resources/intune-deviceconfig-androidcertificateprofilebase.md)コレクション|[AndroidCertificateProfileBase](../resources/intune-deviceconfig-androidcertificateprofilebase.md)オブジェクトのプロパティと関係を一覧表示します。|
 |[AndroidCertificateProfileBase を取得します。](../api/intune-deviceconfig-androidcertificateprofilebase-get.md)|[androidCertificateProfileBase](../resources/intune-deviceconfig-androidcertificateprofilebase.md)|[AndroidCertificateProfileBase](../resources/intune-deviceconfig-androidcertificateprofilebase.md)オブジェクトのプロパティと関係を参照してください。|
 
-## <a name="properties"></a>Properties
+## <a name="properties"></a>プロパティ
 |プロパティ|種類|説明|
 |:---|:---|:---|
 |ID|String|エンティティのキー。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|

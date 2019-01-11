@@ -2,12 +2,13 @@
 title: 範囲を更新する
 description: 範囲オブジェクトのプロパティを更新します。
 author: lumine2008
-ms.openlocfilehash: de084bd15ad448d6723b62fde4ea7761e2b5607a
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 2e92138aca64df0b39ee5afc04adeba2ab9f9eae
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27347433"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27846005"
 ---
 # <a name="update-range"></a>範囲を更新する
 

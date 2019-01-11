@@ -2,18 +2,19 @@
 title: userSecurityState リソースの種類
 description: ユーザー アカウントに関するステートフルな情報が含まれています。
 author: dkershaw10
-ms.openlocfilehash: 5347ec599b88ffa65138c44cfb294339585484c8
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 9d972ee674fbd1553e2b76a52876bc50274466c8
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27319489"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27845851"
 ---
 # <a name="usersecuritystate-resource-type"></a>userSecurityState リソースの種類
 
 ユーザー アカウントに関するステートフルな情報が含まれています。
 
-## <a name="properties"></a>Properties
+## <a name="properties"></a>プロパティ
 
 | プロパティ   | 種類 |説明|
 |:---------------|:--------|:----------|
@@ -26,7 +27,7 @@ ms.locfileid: "27319489"
 |logonId|String|ユーザーのサインイン ID|
 |logonIp|String|IP アドレスは、サインイン要求が出されたからです。|
 |logonLocation|String|(IP アドレスのマッピング) によって場所がこのユーザー、ユーザーのサインインがイベントに関連付けられています。|
-|示します|示します|ユーザーのサインインの方法です。 使用可能な値: `unknown`、`interactive`、`remoteInteractive`、`network`、`batch`、`service`。|
+|logonType|logonType|ユーザーのサインインの方法です。 使用可能な値: `unknown`、`interactive`、`remoteInteractive`、`network`、`batch`、`service`。|
 |onPremisesSecurityIdentifier|String|アクティブなディレクトリ (設置型) のセキュリティ識別子 (SID) ユーザーの。|
 |riskScore|String|ユーザー アカウントのプロバイダーによって生成されると計算されるリスク ・ スコアです。 0 - 1 パーセントに相当する値の範囲をお勧めします。|
 |userAccountType|userAccountSecurityType|ユーザー アカウントの種類 (グループ) は、Windows の定義ごと。 可能な値は、`unknown`、`standard`、`power`、`administrator` です。|
