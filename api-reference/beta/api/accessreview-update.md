@@ -1,64 +1,65 @@
 ---
 title: AccessReview を更新します。
 description: Azure AD アクセスのレビュー機能では、1 つまたは複数のプロパティを変更するのには既存の accessReview オブジェクトを更新します。
-ms.openlocfilehash: 8913377db8acea17023605f85d01c8c9ecea419b
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 65420b3682eb9d9f72d95beea624eb84429628ae
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27067697"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27833748"
 ---
-# <a name="update-accessreview"></a><span data-ttu-id="70474-103">AccessReview を更新します。</span><span class="sxs-lookup"><span data-stu-id="70474-103">Update accessReview</span></span>
+# <a name="update-accessreview"></a><span data-ttu-id="f90ed-103">AccessReview を更新します。</span><span class="sxs-lookup"><span data-stu-id="f90ed-103">Update accessReview</span></span>
 
-> <span data-ttu-id="70474-104">**重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。</span><span class="sxs-lookup"><span data-stu-id="70474-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="70474-105">実稼働アプリケーションでの、これらの API の使用はサポートされていません。</span><span class="sxs-lookup"><span data-stu-id="70474-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="f90ed-104">**重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。</span><span class="sxs-lookup"><span data-stu-id="f90ed-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="f90ed-105">実稼働アプリケーションでの、これらの API の使用はサポートされていません。</span><span class="sxs-lookup"><span data-stu-id="f90ed-105">Use of these APIs in production applications is not supported.</span></span>
 
-<span data-ttu-id="70474-106">機能では、Azure AD[アクセスの確認](../resources/accessreviews-root.md)、1 つまたは複数のプロパティを変更するのには既存の[accessReview](../resources/accessreview.md)オブジェクトを更新します。</span><span class="sxs-lookup"><span data-stu-id="70474-106">In the Azure AD [access reviews](../resources/accessreviews-root.md) feature, update an existing [accessReview](../resources/accessreview.md) object to change one or more of its properties.</span></span>
+<span data-ttu-id="f90ed-106">機能では、Azure AD[アクセスの確認](../resources/accessreviews-root.md)、1 つまたは複数のプロパティを変更するのには既存の[accessReview](../resources/accessreview.md)オブジェクトを更新します。</span><span class="sxs-lookup"><span data-stu-id="f90ed-106">In the Azure AD [access reviews](../resources/accessreviews-root.md) feature, update an existing [accessReview](../resources/accessreview.md) object to change one or more of its properties.</span></span>
 
-<span data-ttu-id="70474-107">レビュー担当者やレビューの決定を変更するのには、この API は想定されていません。</span><span class="sxs-lookup"><span data-stu-id="70474-107">This API is not intended to change the reviewers or decisions of a review.</span></span>  <span data-ttu-id="70474-108">レビュー担当者を変更するには、 [addReviewer](accessreview-addreviewer.md)または[removeReviewer](accessreview-removereviewer.md) Api を使用します。</span><span class="sxs-lookup"><span data-stu-id="70474-108">To change the reviewers, use the [addReviewer](accessreview-addreviewer.md) or [removeReviewer](accessreview-removereviewer.md) APIs.</span></span>  <span data-ttu-id="70474-109">すでに開始された 1 回限りのレビュー、または定期的なレビューの既に起動インスタンスを停止、[停止](accessreview-stop.md)API を使用して、初期の段階では、ターゲット ・ グループまたはアプリケーション アクセス権の決定に適用する、[適用](accessreview-apply.md)API を使用して、します。</span><span class="sxs-lookup"><span data-stu-id="70474-109">To stop an already-started one-time review, or an already-started instance of a recurring review, early, use the [stop](accessreview-stop.md) API, and to apply the decisions to the target group or app access rights, use the [apply](accessreview-apply.md) API.</span></span> 
+<span data-ttu-id="f90ed-107">レビュー担当者やレビューの決定を変更するのには、この API は想定されていません。</span><span class="sxs-lookup"><span data-stu-id="f90ed-107">This API is not intended to change the reviewers or decisions of a review.</span></span>  <span data-ttu-id="f90ed-108">レビュー担当者を変更するには、 [addReviewer](accessreview-addreviewer.md)または[removeReviewer](accessreview-removereviewer.md) Api を使用します。</span><span class="sxs-lookup"><span data-stu-id="f90ed-108">To change the reviewers, use the [addReviewer](accessreview-addreviewer.md) or [removeReviewer](accessreview-removereviewer.md) APIs.</span></span>  <span data-ttu-id="f90ed-109">すでに開始された 1 回限りのレビュー、または定期的なレビューの既に起動インスタンスを停止、[停止](accessreview-stop.md)API を使用して、初期の段階では、ターゲット ・ グループまたはアプリケーション アクセス権の決定に適用する、[適用](accessreview-apply.md)API を使用して、します。</span><span class="sxs-lookup"><span data-stu-id="f90ed-109">To stop an already-started one-time review, or an already-started instance of a recurring review, early, use the [stop](accessreview-stop.md) API, and to apply the decisions to the target group or app access rights, use the [apply](accessreview-apply.md) API.</span></span> 
 
 
-## <a name="permissions"></a><span data-ttu-id="70474-110">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="70474-110">Permissions</span></span>
-<span data-ttu-id="70474-p103">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="70474-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="f90ed-110">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="f90ed-110">Permissions</span></span>
+<span data-ttu-id="f90ed-p103">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="f90ed-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="70474-113">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="70474-113">Permission type</span></span>                        | <span data-ttu-id="70474-114">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="70474-114">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="f90ed-113">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="f90ed-113">Permission type</span></span>                        | <span data-ttu-id="f90ed-114">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="f90ed-114">Permissions (from least to most privileged)</span></span>              |
 |:--------------------------------------|:---------------------------------------------------------|
-|<span data-ttu-id="70474-115">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="70474-115">Delegated (work or school account)</span></span>     | <span data-ttu-id="70474-116">AccessReview.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="70474-116">AccessReview.ReadWrite.All</span></span> |
-|<span data-ttu-id="70474-117">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="70474-117">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="70474-118">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="70474-118">Not supported.</span></span> |
-|<span data-ttu-id="70474-119">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="70474-119">Application</span></span>                            | <span data-ttu-id="70474-120">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="70474-120">Not supported.</span></span> |
+|<span data-ttu-id="f90ed-115">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="f90ed-115">Delegated (work or school account)</span></span>     | <span data-ttu-id="f90ed-116">AccessReview.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="f90ed-116">AccessReview.ReadWrite.All</span></span> |
+|<span data-ttu-id="f90ed-117">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="f90ed-117">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="f90ed-118">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="f90ed-118">Not supported.</span></span> |
+|<span data-ttu-id="f90ed-119">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="f90ed-119">Application</span></span>                            | <span data-ttu-id="f90ed-120">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="f90ed-120">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="70474-121">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="70474-121">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="f90ed-121">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="f90ed-121">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 PATCH /accessReviews('{reviewId}')
 ```
-## <a name="request-headers"></a><span data-ttu-id="70474-122">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="70474-122">Request headers</span></span>
-| <span data-ttu-id="70474-123">名前</span><span class="sxs-lookup"><span data-stu-id="70474-123">Name</span></span>         | <span data-ttu-id="70474-124">型</span><span class="sxs-lookup"><span data-stu-id="70474-124">Type</span></span>        | <span data-ttu-id="70474-125">説明</span><span class="sxs-lookup"><span data-stu-id="70474-125">Description</span></span> |
+## <a name="request-headers"></a><span data-ttu-id="f90ed-122">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="f90ed-122">Request headers</span></span>
+| <span data-ttu-id="f90ed-123">名前</span><span class="sxs-lookup"><span data-stu-id="f90ed-123">Name</span></span>         | <span data-ttu-id="f90ed-124">種類</span><span class="sxs-lookup"><span data-stu-id="f90ed-124">Type</span></span>        | <span data-ttu-id="f90ed-125">説明</span><span class="sxs-lookup"><span data-stu-id="f90ed-125">Description</span></span> |
 |:-------------|:------------|:------------|
-| <span data-ttu-id="70474-126">Authorization</span><span class="sxs-lookup"><span data-stu-id="70474-126">Authorization</span></span> | <span data-ttu-id="70474-127">string</span><span class="sxs-lookup"><span data-stu-id="70474-127">string</span></span> | <span data-ttu-id="70474-128">ベアラー\{トークン\}。</span><span class="sxs-lookup"><span data-stu-id="70474-128">Bearer \{token\}.</span></span> <span data-ttu-id="70474-129">必須。</span><span class="sxs-lookup"><span data-stu-id="70474-129">Required.</span></span> |
+| <span data-ttu-id="f90ed-126">Authorization</span><span class="sxs-lookup"><span data-stu-id="f90ed-126">Authorization</span></span> | <span data-ttu-id="f90ed-127">string</span><span class="sxs-lookup"><span data-stu-id="f90ed-127">string</span></span> | <span data-ttu-id="f90ed-128">ベアラー\{トークン\}。</span><span class="sxs-lookup"><span data-stu-id="f90ed-128">Bearer \{token\}.</span></span> <span data-ttu-id="f90ed-129">必須。</span><span class="sxs-lookup"><span data-stu-id="f90ed-129">Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="70474-130">要求本文</span><span class="sxs-lookup"><span data-stu-id="70474-130">Request body</span></span>
-<span data-ttu-id="70474-131">要求の本体の[accessReview](../resources/accessreview.md)オブジェクトのパラメーターの JSON の形式を指定します。</span><span class="sxs-lookup"><span data-stu-id="70474-131">In the request body, supply a JSON representation of a parameters of an [accessReview](../resources/accessreview.md) object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="f90ed-130">要求本文</span><span class="sxs-lookup"><span data-stu-id="f90ed-130">Request body</span></span>
+<span data-ttu-id="f90ed-131">要求の本体の[accessReview](../resources/accessreview.md)オブジェクトのパラメーターの JSON の形式を指定します。</span><span class="sxs-lookup"><span data-stu-id="f90ed-131">In the request body, supply a JSON representation of a parameters of an [accessReview](../resources/accessreview.md) object.</span></span>
 
-<span data-ttu-id="70474-132">次の表は、accessReview を更新するときに指定できるプロパティを示しています。</span><span class="sxs-lookup"><span data-stu-id="70474-132">The following table shows the properties that can be supplied when you update an accessReview.</span></span>
+<span data-ttu-id="f90ed-132">次の表は、accessReview を更新するときに指定できるプロパティを示しています。</span><span class="sxs-lookup"><span data-stu-id="f90ed-132">The following table shows the properties that can be supplied when you update an accessReview.</span></span>
 
-| <span data-ttu-id="70474-133">プロパティ</span><span class="sxs-lookup"><span data-stu-id="70474-133">Property</span></span>     | <span data-ttu-id="70474-134">型</span><span class="sxs-lookup"><span data-stu-id="70474-134">Type</span></span>        | <span data-ttu-id="70474-135">説明</span><span class="sxs-lookup"><span data-stu-id="70474-135">Description</span></span> |
+| <span data-ttu-id="f90ed-133">プロパティ</span><span class="sxs-lookup"><span data-stu-id="f90ed-133">Property</span></span>     | <span data-ttu-id="f90ed-134">種類</span><span class="sxs-lookup"><span data-stu-id="f90ed-134">Type</span></span>        | <span data-ttu-id="f90ed-135">説明</span><span class="sxs-lookup"><span data-stu-id="f90ed-135">Description</span></span> |
 |:-------------|:------------|:------------|
-| `displayName`             |`String`                                                        | <span data-ttu-id="70474-136">アクセス確認の名前です。</span><span class="sxs-lookup"><span data-stu-id="70474-136">The access review name.</span></span>  |
-| `startDateTime`           |`DateTimeOffset`                                                | <span data-ttu-id="70474-137">日付と時刻と、レビューを開始する予定です。</span><span class="sxs-lookup"><span data-stu-id="70474-137">The DateTime when the review is scheduled to be start.</span></span>  <span data-ttu-id="70474-138">将来の日付でなければなりません。</span><span class="sxs-lookup"><span data-stu-id="70474-138">This must be a date in the future.</span></span>   |
-| `endDateTime`             |`DateTimeOffset`                                                | <span data-ttu-id="70474-139">レビューの終了がスケジュールされているときの日時。</span><span class="sxs-lookup"><span data-stu-id="70474-139">The DateTime when the review is scheduled to end.</span></span> <span data-ttu-id="70474-140">これは、少なくとも 1 つの日を開始日より後でなければなりません。</span><span class="sxs-lookup"><span data-stu-id="70474-140">This must be at least one day later than the start date.</span></span>   |
-| `description`             |`String`                                                        | <span data-ttu-id="70474-141">校閲者を表示する説明します。</span><span class="sxs-lookup"><span data-stu-id="70474-141">The description, to show to the reviewers.</span></span> |
+| `displayName`             |`String`                                                        | <span data-ttu-id="f90ed-136">アクセス確認の名前です。</span><span class="sxs-lookup"><span data-stu-id="f90ed-136">The access review name.</span></span>  |
+| `startDateTime`           |`DateTimeOffset`                                                | <span data-ttu-id="f90ed-137">日付と時刻と、レビューを開始する予定です。</span><span class="sxs-lookup"><span data-stu-id="f90ed-137">The DateTime when the review is scheduled to be start.</span></span>  <span data-ttu-id="f90ed-138">将来の日付でなければなりません。</span><span class="sxs-lookup"><span data-stu-id="f90ed-138">This must be a date in the future.</span></span>   |
+| `endDateTime`             |`DateTimeOffset`                                                | <span data-ttu-id="f90ed-139">レビューの終了がスケジュールされているときの日時。</span><span class="sxs-lookup"><span data-stu-id="f90ed-139">The DateTime when the review is scheduled to end.</span></span> <span data-ttu-id="f90ed-140">これは、少なくとも 1 つの日を開始日より後でなければなりません。</span><span class="sxs-lookup"><span data-stu-id="f90ed-140">This must be at least one day later than the start date.</span></span>   |
+| `description`             |`String`                                                        | <span data-ttu-id="f90ed-141">校閲者を表示する説明します。</span><span class="sxs-lookup"><span data-stu-id="f90ed-141">The description, to show to the reviewers.</span></span> |
 
 
 
-## <a name="response"></a><span data-ttu-id="70474-142">応答</span><span class="sxs-lookup"><span data-stu-id="70474-142">Response</span></span>
-<span data-ttu-id="70474-143">かどうかは成功すると、このメソッドが返されます、`204, Accepted`応答コードおよび応答の本文内の[accessReview](../resources/accessreview.md)オブジェクトです。</span><span class="sxs-lookup"><span data-stu-id="70474-143">If successful, this method returns a `204, Accepted` response code and an [accessReview](../resources/accessreview.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="f90ed-142">応答</span><span class="sxs-lookup"><span data-stu-id="f90ed-142">Response</span></span>
+<span data-ttu-id="f90ed-143">かどうかは成功すると、このメソッドが返されます、`204, Accepted`応答コードおよび応答の本文内の[accessReview](../resources/accessreview.md)オブジェクトです。</span><span class="sxs-lookup"><span data-stu-id="f90ed-143">If successful, this method returns a `204, Accepted` response code and an [accessReview](../resources/accessreview.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="70474-144">使用例</span><span class="sxs-lookup"><span data-stu-id="70474-144">Example</span></span>
+## <a name="example"></a><span data-ttu-id="f90ed-144">例</span><span class="sxs-lookup"><span data-stu-id="f90ed-144">Example</span></span>
 
-<span data-ttu-id="70474-145">これは、1 回限り (繰り返し発生しない) のアクセス確認の更新の例です。</span><span class="sxs-lookup"><span data-stu-id="70474-145">This is an example of updating a one-time (not reoccurring) access review.</span></span>
+<span data-ttu-id="f90ed-145">これは、1 回限り (繰り返し発生しない) のアクセス確認の更新の例です。</span><span class="sxs-lookup"><span data-stu-id="f90ed-145">This is an example of updating a one-time (not reoccurring) access review.</span></span>
 
-##### <a name="request"></a><span data-ttu-id="70474-146">要求</span><span class="sxs-lookup"><span data-stu-id="70474-146">Request</span></span>
-<span data-ttu-id="70474-147">要求の本文には、 [accessReview](../resources/accessreview.md)オブジェクトの新しいプロパティの JSON 表現を指定します。</span><span class="sxs-lookup"><span data-stu-id="70474-147">In the request body, supply a JSON representation of the new properties of the [accessReview](../resources/accessreview.md) object.</span></span>
+##### <a name="request"></a><span data-ttu-id="f90ed-146">要求</span><span class="sxs-lookup"><span data-stu-id="f90ed-146">Request</span></span>
+<span data-ttu-id="f90ed-147">要求の本文には、 [accessReview](../resources/accessreview.md)オブジェクトの新しいプロパティの JSON 表現を指定します。</span><span class="sxs-lookup"><span data-stu-id="f90ed-147">In the request body, supply a JSON representation of the new properties of the [accessReview](../resources/accessreview.md) object.</span></span>
 
 <!-- {
   "blockType": "request",
@@ -73,8 +74,8 @@ Content-type: application/json
 }
 ```
 
-##### <a name="response"></a><span data-ttu-id="70474-148">応答</span><span class="sxs-lookup"><span data-stu-id="70474-148">Response</span></span>
-><span data-ttu-id="70474-p107">**注:** 読みやすくするために、ここに示す応答オブジェクトは短くされている場合があります。実際の呼び出しからは、すべてのプロパティが返されます。</span><span class="sxs-lookup"><span data-stu-id="70474-p107">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="f90ed-148">応答</span><span class="sxs-lookup"><span data-stu-id="f90ed-148">Response</span></span>
+><span data-ttu-id="f90ed-p107">**注:** 読みやすくするために、ここに示す応答オブジェクトは短くされている場合があります。実際の呼び出しからは、すべてのプロパティが返されます。</span><span class="sxs-lookup"><span data-stu-id="f90ed-p107">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
