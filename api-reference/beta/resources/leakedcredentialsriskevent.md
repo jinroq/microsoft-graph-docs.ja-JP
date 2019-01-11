@@ -1,12 +1,13 @@
 ---
 title: leakedCredentialsRiskEvent リソースの種類
 description: Azure Active ディレクトリ Id 保護野生のアカウントの資格情報が検出された場所で検出されたリスク イベントです。 リスク イベントの詳細については、Azure AD のアイデンティティ保護のマニュアルを参照しています。
-ms.openlocfilehash: 2404564726c3ca7ee1f577b3d81daaa339941406
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 7a8f2a8cf72b713fab30887fcc4d81b8a88e71ae
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27072816"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27815982"
 ---
 # <a name="leakedcredentialsriskevent-resource-type"></a>leakedCredentialsRiskEvent リソースの種類
 
@@ -22,11 +23,11 @@ ms.locfileid: "27072816"
 |[LeakedCredentialsRiskEvent を取得します。](../api/leakedcredentialsriskevent-get.md) | [leakedCredentialsRiskEvent](leakedcredentialsriskevent.md) |LeakedCredentialsRiskEvent オブジェクトのプロパティと関係を参照してください。|
 
 ## <a name="properties"></a>プロパティ
-| プロパティ     | 型   |説明|
+| プロパティ     | 種類   |説明|
 |:---------------|:--------|:----------|
 |closedDateTime|dateTimeOffset| リスク イベントが終了したときの日時|
 |createdDateTime|dateTimeOffset| 日付とイベントが作成された時刻です。 以上のリスク イベント自体の日付と時刻を常にです。 これは、リスク イベントを照会するときにフィルターとして使用する適切なプロパティです。|
-|ID|文字列| 読み取り専用|
+|ID|文字列| 読み取り専用です。|
 |riskEventDateTime|dateTimeOffset| リスク イベントが発生したときの日時|
 |riskEventStatus|文字列| 可能な値は、`active`、`remediated`、`dismissedAsFixed`、`dismissedAsFalsePositive`、`dismissedAsIgnore`、`loginBlocked`、`closedMfaAuto`、`closedMultipleReasons` です。|
 |riskLevel|文字列| 使用可能な値: `low`、`medium`、`high`。|

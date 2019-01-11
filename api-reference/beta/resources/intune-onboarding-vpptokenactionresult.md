@@ -2,12 +2,13 @@
 title: vppTokenActionResult リソースの種類
 description: アクションのステータスは、Apple ボリューム購入プログラム トークンで実行されます。
 author: tfitzmac
-ms.openlocfilehash: 0b8b074e879321d0aed361373c49e6ed1fd16e62
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: d3cf05c566367acb6def9576eadb1f02e31fb155
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27341679"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27835246"
 ---
 # <a name="vpptokenactionresult-resource-type"></a>vppTokenActionResult リソースの種類
 
@@ -16,7 +17,7 @@ ms.locfileid: "27341679"
 > **注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
 
 アクションのステータスは、Apple ボリューム購入プログラム トークンで実行されます。
-## <a name="properties"></a>Properties
+## <a name="properties"></a>プロパティ
 |プロパティ|種類|説明|
 |:---|:---|:---|
 |actionName|文字列型 (String)|アクション名|

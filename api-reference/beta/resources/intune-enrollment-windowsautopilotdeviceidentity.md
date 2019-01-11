@@ -2,12 +2,13 @@
 title: windowsAutopilotDeviceIdentity リソースの種類
 description: WindowsAutopilotDeviceIdentity リソースでは、Windows の自動操縦装置のデバイスを表します。
 author: tfitzmac
-ms.openlocfilehash: 79c685258417ab0cd7a1531b1661f03cf5be1bea
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 9fd7ac1f6cc97c16fc5ab393cc9b893386eb9e65
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27306504"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27851155"
 ---
 # <a name="windowsautopilotdeviceidentity-resource-type"></a>windowsAutopilotDeviceIdentity リソースの種類
 
@@ -27,7 +28,7 @@ WindowsAutopilotDeviceIdentity リソースでは、Windows の自動操縦装�
 |[assignUserToDevice アクション](../api/intune-enrollment-windowsautopilotdeviceidentity-assignusertodevice.md)|なし|自動操縦装置のデバイスをユーザーに割り当てます。|
 |[unassignUserFromDevice アクション](../api/intune-enrollment-windowsautopilotdeviceidentity-unassignuserfromdevice.md)|なし|自動操縦デバイスからユーザーの割り当てが解除されます。|
 
-## <a name="properties"></a>Properties
+## <a name="properties"></a>プロパティ
 |プロパティ|種類|説明|
 |:---|:---|:---|
 |ID|String|オブジェクトの GUID|

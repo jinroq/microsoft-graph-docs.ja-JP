@@ -2,12 +2,13 @@
 title: assignLicense
 description: ユーザーのサブスクリプションを追加または削除します。また、サブスクリプションに関連付けられている特定のプランを有効または無効にすることもできます。
 author: dkershaw10
-ms.openlocfilehash: 26c65c0597d5c066af1388087aef07e181076e7b
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Priority
+ms.openlocfilehash: a32ca24157581c04c2a1dd591d438769956bd43a
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27326398"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27835204"
 ---
 # <a name="assignlicense"></a>assignLicense
 ユーザーのサブスクリプションを追加または削除します。また、サブスクリプションに関連付けられている特定のプランを有効または無効にすることもできます。
@@ -35,7 +36,7 @@ POST /users/{id | userPrincipalName}/assignLicense
 ## <a name="request-body"></a>要求本文
 要求本文で、次のパラメーターを含む JSON オブジェクトを指定します。
 
-| パラメーター    | 種類   |説明|
+| パラメーター    | Type   |説明|
 |:---------------|:--------|:----------|
 |addLicenses|AssignedLicense コレクション|追加するライセンスを指定する [assignedLicense](../resources/assignedlicense.md) オブジェクトのコレクションです。[assignedLicense](../resources/assignedlicense.md) オブジェクト上で **disabledPlans** プロパティを設定すると、ライセンスに関連付けられたプランを無効にできます。|
 |removeLicenses|Guid コレクション|削除するライセンスを識別する GUID のコレクションです。|

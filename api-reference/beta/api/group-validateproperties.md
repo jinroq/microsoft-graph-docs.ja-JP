@@ -1,12 +1,13 @@
 ---
 title: 'グループ: validateProperties'
 description: Office 365 のグループの表示名やメールのニックネームは、命名ポリシーに準拠している場合を検証します。 クライアントは、API を使用して場合は、表示名を確認または、Office 365 のグループ**を更新**する前に、メールのニックネームが無効です。 プロパティを検証グループを作成する前に、ディレクトリ オブジェクトの validateProperties 関数を使用します。
-ms.openlocfilehash: d7f2767908e6cbf9116bec769a1abc32731e4758
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 0ffdf44f687ad047d952e00c268239432244006d
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27067279"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27833902"
 ---
 # <a name="group-validateproperties"></a>グループ: validateProperties
 
@@ -45,7 +46,7 @@ POST /groups/<id>/validateProperties
 
 要求本文で、次のパラメーターを含む JSON オブジェクトを指定します。
 
-| パラメーター    | 型   |説明|
+| パラメーター    | Type   |説明|
 |:---------------|:--------|:----------|
 |displayName|String| 検証グループの表示名。 プロパティは、個別に必要ではありません。 ただし、少なくとも 1 つのプロパティ (表示名または mailNickname) は、必要があります。 |
 |mailNickname|String| 検証するためにグループのメール ニックネーム。 プロパティは、個別に必要ではありません。 ただし、少なくとも 1 つのプロパティ (表示名または mailNickname) は、必要があります。 |

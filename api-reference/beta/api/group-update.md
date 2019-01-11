@@ -2,12 +2,13 @@
 title: グループを更新する
 description: グループ オブジェクトのプロパティを更新します。
 author: dkershaw10
-ms.openlocfilehash: 801143f0bb0a0e5012cf946e52cf4fd4cff34556
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 87a9c167b3ba697831ad8b992fc38cb2fc4e7c47
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27348434"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27848994"
 ---
 # <a name="update-group"></a>グループを更新する
 
@@ -45,8 +46,8 @@ PATCH /groups/{id}
 
 | プロパティ   | 種類 |説明|
 |:---------------|:--------|:----------|
-|allowExternalSenders|Boolean|既定値は **false** です。組織外部のユーザーがグループにメッセージを送信できるかどうかを示します。|
-|autoSubscribeNewMembers|Boolean|既定値は **false** です。グループに追加された新しいメンバーが、電子メールの通知を受信するように自動的にサブスクライブされるかどうかを示します。|
+|allowExternalSenders|ブール値|既定値は **false** です。組織外部のユーザーがグループにメッセージを送信できるかどうかを示します。|
+|autoSubscribeNewMembers|ブール値|既定値は **false** です。グループに追加された新しいメンバーが、電子メールの通知を受信するように自動的にサブスクライブされるかどうかを示します。|
 |説明|String|グループに関するオプションの説明。 |
 |displayName|String|グループの表示名。このプロパティは、グループの作成時の必須プロパティであり、更新時にクリアすることはできません。$filter および $orderby をサポートします。|
 |groupTypes|String collection|作成するグループの種類を指定します。使用可能な値は **Unified** (Office 365 のグループを作成する場合) または **DynamicMembership** (動的なグループを作成する場合) です。その他のグループの種類 (セキュリティが有効なグループやメールが有効なセキュリティ グループなど) の場合、このプロパティは設定しないでください。|

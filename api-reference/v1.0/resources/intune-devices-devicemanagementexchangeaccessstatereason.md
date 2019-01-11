@@ -2,12 +2,13 @@
 title: deviceManagementExchangeAccessStateReason 列挙型
 description: デバイスの Exchange のアクセス状態の理由です。
 author: tfitzmac
-ms.openlocfilehash: d51e9656c841a86d282eb1b5654da042f91866fd
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 96bcc60daa0ec69788856413bf1d253d8b0cabfc
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27323444"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27834795"
 ---
 # <a name="devicemanagementexchangeaccessstatereason-enum-type"></a>deviceManagementExchangeAccessStateReason 列挙型
 

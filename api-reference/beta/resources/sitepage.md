@@ -3,12 +3,13 @@ author: rahmit
 ms.author: rahmit
 ms.date: 03/15/2018
 title: SitePage
-ms.openlocfilehash: 65cfe61dadd1708abffe2d01abbbb15f40d158ef
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: d4673138106e23afedb5ff0f28d8ce72fa2797b6
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27072136"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27871492"
 ---
 # <a name="sitepage-resource"></a>sitePage リソース
 
@@ -26,13 +27,13 @@ ms.locfileid: "27072136"
 |:--------------------------------|:------------------------------
 | [List pages][]                  | /Pages を取得します。
 | [Get page][]                    | /Pages/{ページの id を取得します。
-| [作成][]                      | 投稿/pages
-| [削除][]                      | /Pages/{ページの id を削除します。
+| [Create][]                      | 投稿/pages
+| [Delete][]                      | /Pages/{ページの id を削除します。
 | [Publish][]                     | /Pages/{ページ id} の投稿し、公開
 
 [List pages]: ../api/sitepage-list.md
 [Get page]: ../api/sitepage-get.md
-[作成]: ../api/sitepage-create.md
+[Create]: ../api/sitepage-create.md
 [Delete]: ../api/sitepage-delete.md
 [Publish]: ../api/sitepage-publish.md
 
@@ -75,7 +76,7 @@ ms.locfileid: "27072136"
 
 **SitePage**リソースでは、次のプロパティがあります。
 
-| プロパティ名    | 型                         | 説明
+| プロパティ名    | Type                         | 説明
 |:-----------------|:-----------------------------|:---------------------------
 | contentType      | [contentTypeInfo][]          | ページのコンテンツの種類です。
 
@@ -83,7 +84,7 @@ ms.locfileid: "27072136"
 
 **SitePage**リソースでは、次のコンテンツのフィールドがあります。
 
-| プロパティ名      | 型                       | 説明
+| プロパティ名      | Type                       | 説明
 |:-------------------|:---------------------------|:---------------------------
 | タイトル              | 文字列                     | ページのタイトル。
 | pageLayout         | 文字列                     | ページのページ レイアウトの名前。
@@ -93,13 +94,13 @@ ms.locfileid: "27072136"
 
 **SitePage**のリソースには、次の作成に関連するメタデータがあります。 PublishingState プロパティは、このようなチェック アウトされているか、公開の状態を作成するページに反映されます。
 
-| プロパティ名          | 型                   | 説明
+| プロパティ名          | Type                   | 説明
 |:-----------------------|:-----------------------|:---------------------------
 | publishingState        | [publicationFacet][]   | 発行のステータスと MM.mm バージョンのページです。
 
 次のプロパティは、**[baseItem][]** から継承しています。
 
-| プロパティ名        | 型              | 説明
+| プロパティ名        | Type              | 説明
 |:---------------------|:------------------|:----------------------------------
 | ID                   | 文字列            | アイテムの一意識別子。読み取り専用です。
 | name                 | 文字列            | アイテムの名前/タイトル。
