@@ -1,12 +1,13 @@
 ---
 title: ディレクトリの設定を作成します。
 description: DirectorySettingTemplates で利用可能なテンプレートに基づいて、新しい設定を作成するのにには、この API を使用します。 テナント レベルまたはオブジェクト レベルでこれらの設定ができます (現在のグループに対してのみ)。 テンプレートで定義されているすべての設定の作成の要求に settingValues を入力してください。 グループに固有の設定のみの設定を制御するグループのメンバーは、ゲスト ユーザーを招待できるかどうかを設定できます。 ゲスト ユーザーをグループに追加することが一般的に使用できるとは、この動作が適用されます。
-ms.openlocfilehash: 40e90f66c43032deea8ee866b13508fd73c0f17f
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 692ca0d68522b5b268e9ee670c694e5a5c6bee90
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27068905"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27848721"
 ---
 # <a name="create-a-directory-setting"></a>ディレクトリの設定を作成します。
 

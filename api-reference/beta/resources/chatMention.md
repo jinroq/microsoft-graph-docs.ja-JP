@@ -1,12 +1,13 @@
 ---
 title: chatMessageMention リソースの種類
 description: 'ChatMessage エンティティの参照を表します。 ユーザー、チーム、ボットまたはチャネルをことができます。 '
-ms.openlocfilehash: 5f1e427b0ed2b8ffcfbc86417beb4719dc6fb2a3
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 7b24d2af6f61f3da69480557e1c5b5f32c009c25
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27066765"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27876140"
 ---
 # <a name="chatmessagemention-resource-type"></a>chatMessageMention リソースの種類
 
@@ -15,7 +16,7 @@ ms.locfileid: "27066765"
 [ChatMessage](chatmessage.md)エンティティの参照を表します。 ユーザー、チーム、ボットまたはチャネルをことができます。 
 
 ## <a name="properties"></a>プロパティ
-| プロパティ     | 型   |説明|
+| プロパティ     | 種類   |説明|
 |:---------------|:--------|:----------|
 |ID|文字列|記載されているエンティティの id|
 |mentionText|文字列|Ex の説明を表すために使用する文字列: ユーザーの表示名、チーム名等|

@@ -2,12 +2,13 @@
 title: iosUpdateDeviceStatuses のリスト
 description: iosUpdateDeviceStatus オブジェクトのプロパティとリレーションシップをリストします。
 author: tfitzmac
-ms.openlocfilehash: 3069a34a9170180a5de543e11280ea0d8920656c
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: c022549b138292544936b25c3ae9dc450e7c68ef
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27312293"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27847951"
 ---
 # <a name="list-iosupdatedevicestatuses"></a>iosUpdateDeviceStatuses のリスト
 

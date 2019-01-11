@@ -2,12 +2,13 @@
 title: WindowsAutopilotDeviceIdentity を取得します。
 description: WindowsAutopilotDeviceIdentity オブジェクトのプロパティと関係を参照してください。
 author: tfitzmac
-ms.openlocfilehash: ca2f3aa3716b038d66ee7cb5f81755da24f75b9b
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: aba8b16b9704497f259fc1f931827f499bd3263c
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27335316"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27873074"
 ---
 # <a name="get-windowsautopilotdeviceidentity"></a>WindowsAutopilotDeviceIdentity を取得します。
 

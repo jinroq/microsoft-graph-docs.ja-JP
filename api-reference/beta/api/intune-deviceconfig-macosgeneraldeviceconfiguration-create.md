@@ -2,12 +2,13 @@
 title: Create macOSGeneralDeviceConfiguration
 description: 新しい macOSGeneralDeviceConfiguration オブジェクトを作成します。
 author: tfitzmac
-ms.openlocfilehash: 38d1ba01fda9b568a37779e6ff20c75172eb9d69
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 00169427419d56abc34326b156940e21cda3ea50
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27324942"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27853166"
 ---
 # <a name="create-macosgeneraldeviceconfiguration"></a>Create macOSGeneralDeviceConfiguration
 

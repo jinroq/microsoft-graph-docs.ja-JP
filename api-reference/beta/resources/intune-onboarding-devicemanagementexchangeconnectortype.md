@@ -2,12 +2,13 @@
 title: deviceManagementExchangeConnectorType 列挙型
 description: Exchange コネクタの種類です。
 author: tfitzmac
-ms.openlocfilehash: 31459d4053e2ba1ef22a516995796baef2407dbf
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 49e61dc3a2a6ba7eee80891846cd2f58c2a22485
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27301730"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27876105"
 ---
 # <a name="devicemanagementexchangeconnectortype-enum-type"></a>deviceManagementExchangeConnectorType 列挙型
 

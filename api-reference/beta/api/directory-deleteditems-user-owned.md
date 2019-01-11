@@ -1,13 +1,14 @@
 ---
-title: アクセス許可
+title: Permissions
 description: '指定されたユーザーによって所有されている、最近削除したアイテムの一覧を取得します。  '
 author: lleonard-msft
-ms.openlocfilehash: 5363adb943ac8c240e0f168246f7d17b3addf086
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: da497fb3e919061db222c2247b59edadfca2d649
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27348483"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27829177"
 ---
 # <a name="list-deleted-items-owned-by-a-user"></a>**ユーザーによって所有されている削除済みのアイテムを一覧表示します。**
 
@@ -50,7 +51,7 @@ POST /directory/deletedItems/getUserOwnedObjects
 
 要求の本体には、次のパラメーターが必要です。
 
-| パラメーター    | 種類 |説明|
+| Parameter    | Type |説明|
 |:---------------|:--------|:----------|
 |userId|String|所有者の ID です。|
 |type|String|返される所有しているオブジェクトの種類`Group`は、現在サポートされている値だけです。|

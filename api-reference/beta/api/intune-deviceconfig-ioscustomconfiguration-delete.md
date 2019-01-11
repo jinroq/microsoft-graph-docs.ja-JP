@@ -2,12 +2,13 @@
 title: Delete iosCustomConfiguration
 description: iosCustomConfiguration を削除します。
 author: tfitzmac
-ms.openlocfilehash: 1ecb833e434ffbc0366a12b9d7af7b4e65c0a806
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: c3c7c4500644a00e10f6342147da481cd6978c79
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27356092"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27847720"
 ---
 # <a name="delete-ioscustomconfiguration"></a>Delete iosCustomConfiguration
 

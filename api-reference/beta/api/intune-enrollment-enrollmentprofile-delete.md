@@ -2,12 +2,13 @@
 title: EnrollmentProfile を削除します。
 description: EnrollmentProfile を削除します。
 author: tfitzmac
-ms.openlocfilehash: b1560c2972193934484cae3e1a81f977418d3d22
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: af058a998d20248ab226e08a281566e2e4a116ed
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27351885"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27852305"
 ---
 # <a name="delete-enrollmentprofile"></a>EnrollmentProfile を削除します。
 

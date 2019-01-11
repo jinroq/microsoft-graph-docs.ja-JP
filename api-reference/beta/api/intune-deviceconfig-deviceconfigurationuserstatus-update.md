@@ -2,12 +2,13 @@
 title: deviceConfigurationUserStatus の更新
 description: deviceConfigurationUserStatus オブジェクトのプロパティを更新します。
 author: tfitzmac
-ms.openlocfilehash: 11ad78aa074eb42e57d8c74af6d20b039e164a28
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: a530d3ea918a4b3e2b0d52cfdc3f8cfa87310fdf
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27317816"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27863645"
 ---
 # <a name="update-deviceconfigurationuserstatus"></a>deviceConfigurationUserStatus の更新
 

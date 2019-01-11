@@ -2,12 +2,13 @@
 title: win32LobAppFileSystemDetection リソースの種類
 description: Win32 アプリケーションを検出するためにファイルまたはフォルダーのパスが含まれています
 author: tfitzmac
-ms.openlocfilehash: 26d65c8a1fcf70032c780b3e6e00a198a8ff2c30
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 13a994d39ec42ddcb45bc71aac739864a6ef6dc4
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27306875"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27849274"
 ---
 # <a name="win32lobappfilesystemdetection-resource-type"></a>win32LobAppFileSystemDetection リソースの種類
 
@@ -19,7 +20,7 @@ Win32 アプリケーションを検出するためにファイルまたはフ�
 
 [Win32LobAppDetection](../resources/intune-apps-win32lobappdetection.md)から継承します。
 
-## <a name="properties"></a>Properties
+## <a name="properties"></a>プロパティ
 |プロパティ|種類|説明|
 |:---|:---|:---|
 |path|String|Win32 基幹業務 (LoB) アプリケーションを検出するためにファイルまたはフォルダーのパス|

@@ -2,12 +2,13 @@
 title: Get termsAndConditions
 description: termsAndConditions オブジェクトのプロパティとリレーションシップを読み取ります。
 author: tfitzmac
-ms.openlocfilehash: 36b3bae881558a0f0122cc887cd6e5373a988894
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: d4de7078e4e56d06d05ad183a83d4857da45e7d7
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27354279"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27863071"
 ---
 # <a name="get-termsandconditions"></a>Get termsAndConditions
 

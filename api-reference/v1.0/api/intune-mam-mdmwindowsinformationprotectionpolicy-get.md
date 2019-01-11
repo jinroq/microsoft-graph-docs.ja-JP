@@ -2,12 +2,13 @@
 title: Get mdmWindowsInformationProtectionPolicy
 description: mdmWindowsInformationProtectionPolicy オブジェクトのプロパティとリレーションシップを読み取ります。
 author: tfitzmac
-ms.openlocfilehash: fed75b8d224f80a497f73c0fe3c5dd0eef6dd31c
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 23cc326de96c1ff3f7a103f15b535babf21aea0d
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27314393"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27849358"
 ---
 # <a name="get-mdmwindowsinformationprotectionpolicy"></a>Get mdmWindowsInformationProtectionPolicy
 

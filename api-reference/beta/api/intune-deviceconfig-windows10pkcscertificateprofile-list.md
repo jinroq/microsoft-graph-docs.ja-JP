@@ -2,12 +2,13 @@
 title: リスト windows10PkcsCertificateProfiles
 description: Windows10PkcsCertificateProfile オブジェクトのプロパティと関係を一覧表示します。
 author: tfitzmac
-ms.openlocfilehash: ca2cddc5459a61c18d0afbea38fcb61c0aa9cccb
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 73528f84ddd4c7b871888d764ebe7b0cc6fcd754
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27308254"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27827896"
 ---
 # <a name="list-windows10pkcscertificateprofiles"></a>リスト windows10PkcsCertificateProfiles
 

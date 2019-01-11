@@ -1,12 +1,13 @@
 ---
 title: locationConstraint リソースの種類
 description: 会議の場所に関して、クライアントが表明している条件です。
-ms.openlocfilehash: d151ea97aa65aabdb759be4cb90b577606c648a5
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: b1ff078efd5608fa388587003cf904c2b995f12e
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27068182"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27851528"
 ---
 # <a name="locationconstraint-resource-type"></a>locationConstraint リソースの種類
 
@@ -35,7 +36,7 @@ ms.locfileid: "27068182"
 
 ```
 ## <a name="properties"></a>プロパティ
-| プロパティ     | 型   |説明|
+| プロパティ     | 種類   |説明|
 |:---------------|:--------|:----------|
 |isRequired|Boolean|クライアントは、応答に会議の場所を含めるようにサービスに要求します。この値が true で、すべてのリソースがビジー状態の場合、[findMeetingTimes](../api/user-findmeetingtimes.md) は会議時間の提案を返しません。この値が false で、すべてのリソースがビジー状態の場合は、**findMeetingTimes** は位置指定のないまま会議時間を検索します。 |
 |locations|[locationConstraintItem](locationconstraintitem.md) コレクション|クライアントが会議のために要求する 1 つ以上の場所に関する制約情報。|

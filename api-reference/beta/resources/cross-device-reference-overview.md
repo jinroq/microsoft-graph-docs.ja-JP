@@ -1,12 +1,13 @@
 ---
 title: Microsoft Graph API を使用してクロスデバイス エクスペリエンスを有効にする
 description: '{これはベータ版です。 コンテンツが既存の project_rome_overview.md に似ています。'
-ms.openlocfilehash: b1ded917ddb2f623c0317a8fb85c390a7f9ff784
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 5379c6690d23167f1b0743b83ca555c146b9a70d
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27073286"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27852851"
 ---
 # <a name="use-the-microsoft-graph-api-to-enable-cross-device-experiences"></a>Microsoft Graph API を使用してクロスデバイス エクスペリエンスを有効にする
 
@@ -14,7 +15,7 @@ ms.locfileid: "27073286"
 
 {これはベータ版です。 コンテンツが既存の project_rome_overview.md に似ています。
 
-# <a name="next-steps"></a>次の手順
+# <a name="next-steps"></a>次のステップ
 
 - [アクティビティ フィードの graph API を使用して発生するクロス デバイスを有効化の概要](/graph/activity-feed-concept-overview)
 - [アクティビティ フィード API の利用によりデバイスが変わってもユーザー アクティビティを再開できる](activity-feed-api-overview.md)

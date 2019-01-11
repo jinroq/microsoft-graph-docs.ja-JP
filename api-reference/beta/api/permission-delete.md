@@ -3,12 +3,13 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
 title: アイテムへのアクセスの削除
-ms.openlocfilehash: 726818b14a694380e46bfd38280e4cba9effb67d
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 784f67b8e376398d32ad66af2e0f38b9cf9d7f20
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27071641"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27829296"
 ---
 # <a name="delete-a-sharing-permission-from-a-file-or-folder"></a>ファイルまたはフォルダーの共有アクセス許可を削除する
 
@@ -41,7 +42,7 @@ DELETE /users/{user-id}/drive/items/{item-id}/permissions/{perm-id}
 
 ## <a name="optional-request-headers"></a>オプションの要求ヘッダー
 
-| 名前          | 型   | 説明                                                                                                                                                                                       |
+| 名前          | 種類   | 説明                                                                                                                                                                                       |
 |:--------------|:-------|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | if-match      | 文字列 | この要求ヘッダーが含まれていて、指定された eTag (または cTag) が項目の現在のタグに一致しない場合には、`412 Precondition Failed` 応答が返され、項目は削除されません。 |
 

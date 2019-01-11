@@ -2,12 +2,13 @@
 title: internetSiteSecurityLevel 列挙型
 description: インターネット サイトのセキュリティ レベルの使用可能な値です。
 author: tfitzmac
-ms.openlocfilehash: 57457a9ed222c07b7a1c82b9b9c20fae2653f673
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 738777bd32ae0b102a7e4bf27e91c381eb87023f
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27303865"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27859690"
 ---
 # <a name="internetsitesecuritylevel-enum-type"></a>internetSiteSecurityLevel 列挙型
 

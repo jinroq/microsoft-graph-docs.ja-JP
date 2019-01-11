@@ -2,12 +2,13 @@
 title: windowsCertificateProfileBase リソースの種類
 description: デバイス構成です。
 author: tfitzmac
-ms.openlocfilehash: c10a0a38f7acc6ffb7ffab8567a19348ff02035b
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 0daca24e9a90ce45fbcc5b9f19cb0170ddb5f653
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27307687"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27825642"
 ---
 # <a name="windowscertificateprofilebase-resource-type"></a>windowsCertificateProfileBase リソースの種類
 
@@ -25,7 +26,7 @@ ms.locfileid: "27307687"
 |[リスト windowsCertificateProfileBases](../api/intune-deviceconfig-windowscertificateprofilebase-list.md)|[windowsCertificateProfileBase](../resources/intune-deviceconfig-windowscertificateprofilebase.md)コレクション|[WindowsCertificateProfileBase](../resources/intune-deviceconfig-windowscertificateprofilebase.md)オブジェクトのプロパティと関係を一覧表示します。|
 |[WindowsCertificateProfileBase を取得します。](../api/intune-deviceconfig-windowscertificateprofilebase-get.md)|[windowsCertificateProfileBase](../resources/intune-deviceconfig-windowscertificateprofilebase.md)|[WindowsCertificateProfileBase](../resources/intune-deviceconfig-windowscertificateprofilebase.md)オブジェクトのプロパティと関係を参照してください。|
 
-## <a name="properties"></a>Properties
+## <a name="properties"></a>プロパティ
 |プロパティ|種類|説明|
 |:---|:---|:---|
 |ID|String|エンティティのキー。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|

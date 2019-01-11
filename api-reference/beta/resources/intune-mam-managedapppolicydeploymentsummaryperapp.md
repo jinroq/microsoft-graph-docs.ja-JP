@@ -2,12 +2,13 @@
 title: managedAppPolicyDeploymentSummaryPerApp リソースの種類
 description: アプリごとのポリシーの展開の概要を表します。
 author: tfitzmac
-ms.openlocfilehash: 8786ff0600b59a2cb729d1d7b5b4c692ab1704de
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 23966e2017780d3dcfde592d7159576403fe3192
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27351339"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27829751"
 ---
 # <a name="managedapppolicydeploymentsummaryperapp-resource-type"></a>managedAppPolicyDeploymentSummaryPerApp リソースの種類
 

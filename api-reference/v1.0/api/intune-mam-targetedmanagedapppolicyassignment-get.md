@@ -2,12 +2,13 @@
 title: Get targetedManagedAppPolicyAssignment
 description: targetedManagedAppPolicyAssignment オブジェクトのプロパティとリレーションシップを読み取ります。
 author: tfitzmac
-ms.openlocfilehash: d70a0897c2d750ac02ccd4fec9a7e7d97882e0e9
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 758239b246ed3f7f4610fdd0f27104e3d60a5c56
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27339544"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27846446"
 ---
 # <a name="get-targetedmanagedapppolicyassignment"></a>Get targetedManagedAppPolicyAssignment
 

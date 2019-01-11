@@ -2,12 +2,13 @@
 title: deviceManagementExchangeOnPremisesPolicy リソースの種類
 description: テナント用に構成された Exchange OnPremises ポリシーを表す単一のエンティティです。
 author: tfitzmac
-ms.openlocfilehash: 84ef0e5794ed6cf7986bde7d08b876e54e7a6c8b
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: da4e17bc6051b8b03158da19ddb876457c7853d7
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27337213"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27855000"
 ---
 # <a name="devicemanagementexchangeonpremisespolicy-resource-type"></a>deviceManagementExchangeOnPremisesPolicy リソースの種類
 
@@ -22,7 +23,7 @@ ms.locfileid: "27337213"
 |[DeviceManagementExchangeOnPremisesPolicy を取得します。](../api/intune-onboarding-devicemanagementexchangeonpremisespolicy-get.md)|[deviceManagementExchangeOnPremisesPolicy](../resources/intune-onboarding-devicemanagementexchangeonpremisespolicy.md)|[DeviceManagementExchangeOnPremisesPolicy](../resources/intune-onboarding-devicemanagementexchangeonpremisespolicy.md)オブジェクトのプロパティと関係を参照してください。|
 |[DeviceManagementExchangeOnPremisesPolicy を更新します。](../api/intune-onboarding-devicemanagementexchangeonpremisespolicy-update.md)|[deviceManagementExchangeOnPremisesPolicy](../resources/intune-onboarding-devicemanagementexchangeonpremisespolicy.md)|[DeviceManagementExchangeOnPremisesPolicy](../resources/intune-onboarding-devicemanagementexchangeonpremisespolicy.md)オブジェクトのプロパティを更新します。|
 
-## <a name="properties"></a>Properties
+## <a name="properties"></a>プロパティ
 |プロパティ|種類|説明|
 |:---|:---|:---|
 |ID|String|まだ文書化されていません|

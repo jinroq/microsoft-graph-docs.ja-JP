@@ -2,12 +2,13 @@
 title: Outlooktaskgroup を更新します。
 description: Outlook のタスク グループの書き込み可能なプロパティを更新します。
 author: angelgolfer-ms
-ms.openlocfilehash: 40d146f90bf512ec9afa8790d7f02d4039dd53cc
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 0287d7a94dcfb74e43e22571b20fd52d5f888740
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27334903"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27827350"
 ---
 # <a name="update-outlooktaskgroup"></a>Outlooktaskgroup を更新します。
 

@@ -2,12 +2,13 @@
 title: Delete iosManagedAppProtection
 description: iosManagedAppProtection を削除します。
 author: tfitzmac
-ms.openlocfilehash: 0de0f993da11f9c06f3853a615928906989a63c5
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 901073d54c7c8e154f5b757228d8a813a99dbfea
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27320826"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27825026"
 ---
 # <a name="delete-iosmanagedappprotection"></a>Delete iosManagedAppProtection
 

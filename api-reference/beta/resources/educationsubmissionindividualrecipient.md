@@ -2,12 +2,13 @@
 title: educationSubmissionIndividualRecipient リソースの種類
 description: '提出書類がクラス内の個人に割り当てられていることを示す educationSubmissionRecipient のサブクラスです。  '
 author: dipakboyed
-ms.openlocfilehash: 3447c91fe4f387508a3afdf80a7337786d46f860
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 109919afbbc9fced24b46dede09c3a92df4f8c17
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27318803"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27866795"
 ---
 # <a name="educationsubmissionindividualrecipient-resource-type"></a>educationSubmissionIndividualRecipient リソースの種類
 
@@ -16,7 +17,7 @@ ms.locfileid: "27318803"
 提出書類がクラス内の個人に割り当てられていることを示す[educationSubmissionRecipient](educationsubmissionrecipient.md)のサブクラスです。  
 
 
-## <a name="properties"></a>Properties
+## <a name="properties"></a>プロパティ
 | プロパティ     | 種類   |説明|
 |:---------------|:--------|:----------|
 |userId|String|提出書類が割り当てられているユーザーのユーザー ID です。|

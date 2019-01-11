@@ -2,12 +2,13 @@
 title: windowsInformationProtectionAppLearningSummaries のリスト
 description: windowsInformationProtectionAppLearningSummary オブジェクトのプロパティとリレーションシップをリストします。
 author: tfitzmac
-ms.openlocfilehash: 6fb2a4a9378ab7e5e0ce06ad896409cff95d0fdf
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: a17427af37bf5adbc4c4511d08434df6db87397e
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27319314"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27830633"
 ---
 # <a name="list-windowsinformationprotectionapplearningsummaries"></a>windowsInformationProtectionAppLearningSummaries のリスト
 

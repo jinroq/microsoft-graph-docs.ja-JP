@@ -2,12 +2,13 @@
 title: ManagedEBookCategory を更新します。
 description: ManagedEBookCategory オブジェクトのプロパティを更新します。
 author: tfitzmac
-ms.openlocfilehash: 5dea4bce1750617367f972f64a734ac151d2676f
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: ef8970fb32b94b17b9277c3d30fc72bbc582ea87
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27333657"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27853194"
 ---
 # <a name="update-managedebookcategory"></a>ManagedEBookCategory を更新します。
 

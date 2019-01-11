@@ -2,12 +2,13 @@
 title: 参加者のリソースの種類
 description: 参加者のタイプです。
 author: VinodRavichandran
-ms.openlocfilehash: 3fcc5fc5d95ded3b5424370cd180fde38c1a65be
-ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
+localization_priority: Normal
+ms.openlocfilehash: c125589506dbd529d2b45df4171e9d54b346cbba
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "27380395"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27869833"
 ---
 # <a name="participant-resource-type"></a>参加者のリソースの種類
 
@@ -27,9 +28,9 @@ ms.locfileid: "27380395"
 
 ## <a name="properties"></a>プロパティ
 
-| プロパティ             | 型                                     | 説明                                                  |
+| プロパティ             | 種類                                     | 説明                                                  |
 | :------------------- | :--------------------------------------- | :------------------------------------------------------------|
-| id                   | String                                   | 参加者の id です。                                          |
+| ID                   | String                                   | 参加者の id です。                                          |
 | 情報                 | [participantInfo](participantinfo.md)    | 参加者の参加者です。                          |
 | isInLobby            | ブール                                  | 参加者がロビーに入っている場合は true。                          |
 | isMuted              | ブール                                  | 参加者がミュートされている場合は true (クライアントまたはサーバーがミュートになって)    |

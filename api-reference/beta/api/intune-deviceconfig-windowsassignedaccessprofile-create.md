@@ -2,12 +2,13 @@
 title: WindowsAssignedAccessProfile を作成します。
 description: 新しい windowsAssignedAccessProfile オブジェクトを作成します。
 author: tfitzmac
-ms.openlocfilehash: 626b0815234153f585d74edcdad65f7ad2dfd3a4
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 4db64578ec2d03f81d10110951a4caf93dc564c8
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27304544"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27827357"
 ---
 # <a name="create-windowsassignedaccessprofile"></a>WindowsAssignedAccessProfile を作成します。
 

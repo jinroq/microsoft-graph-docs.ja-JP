@@ -2,12 +2,13 @@
 title: remoteLock アクション
 description: リモート ロック
 author: tfitzmac
-ms.openlocfilehash: d601ad92b37bdf2b4b943588c47414373904eaee
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 148b3691b357fb3655f736625b21728612cf6413
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27337731"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27852151"
 ---
 # <a name="remotelock-action"></a>remoteLock アクション
 

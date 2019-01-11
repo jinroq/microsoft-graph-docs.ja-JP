@@ -2,12 +2,13 @@
 title: AndroidForWorkVpnConfiguration を取得します。
 description: AndroidForWorkVpnConfiguration オブジェクトのプロパティと関係を参照してください。
 author: tfitzmac
-ms.openlocfilehash: 8eee69d5304e72bfcbd27ede1bccb25368eba518
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 0260905d52cda7a73847f1cf1dfee026da5ba1c7
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27350443"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27847650"
 ---
 # <a name="get-androidforworkvpnconfiguration"></a>AndroidForWorkVpnConfiguration を取得します。
 

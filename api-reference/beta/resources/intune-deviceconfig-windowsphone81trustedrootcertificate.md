@@ -2,12 +2,13 @@
 title: windowsPhone81TrustedRootCertificate リソースの種類
 description: " 信頼されたルート証明書の構成プロファイル"
 author: tfitzmac
-ms.openlocfilehash: 4c0f2aee5e48c4bb0f83e14e25f556cdfb5176aa
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 333806b37c0ca2b65548e48d26df5b673f8a73dd
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27304040"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27846278"
 ---
 # <a name="windowsphone81trustedrootcertificate-resource-type"></a>windowsPhone81TrustedRootCertificate リソースの種類
 
@@ -28,7 +29,7 @@ Windows Phone 8.1 + ルート証明書の信頼関係の構成プロファイル
 |[WindowsPhone81TrustedRootCertificate を削除します。](../api/intune-deviceconfig-windowsphone81trustedrootcertificate-delete.md)|なし|の[windowsPhone81TrustedRootCertificate](../resources/intune-deviceconfig-windowsphone81trustedrootcertificate.md)を削除します。|
 |[WindowsPhone81TrustedRootCertificate を更新します。](../api/intune-deviceconfig-windowsphone81trustedrootcertificate-update.md)|[windowsPhone81TrustedRootCertificate](../resources/intune-deviceconfig-windowsphone81trustedrootcertificate.md)|[WindowsPhone81TrustedRootCertificate](../resources/intune-deviceconfig-windowsphone81trustedrootcertificate.md)オブジェクトのプロパティを更新します。|
 
-## <a name="properties"></a>Properties
+## <a name="properties"></a>プロパティ
 |プロパティ|種類|説明|
 |:---|:---|:---|
 |ID|String|エンティティのキー。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|

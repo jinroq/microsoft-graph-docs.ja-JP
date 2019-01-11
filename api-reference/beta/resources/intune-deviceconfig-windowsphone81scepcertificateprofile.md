@@ -2,12 +2,13 @@
 title: windowsPhone81SCEPCertificateProfile リソースの種類
 description: " SCEP 証明書プロファイル"
 author: tfitzmac
-ms.openlocfilehash: 28e78ef6e9b0e5cc1c54c2af88a05b913b7fdf70
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 8db7f851e6512def415dbdc8be834ce654b8f55b
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27345879"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27873333"
 ---
 # <a name="windowsphone81scepcertificateprofile-resource-type"></a>windowsPhone81SCEPCertificateProfile リソースの種類
 
@@ -28,7 +29,7 @@ Windows Phone 8.1 + SCEP の証明書プロファイル
 |[WindowsPhone81SCEPCertificateProfile を削除します。](../api/intune-deviceconfig-windowsphone81scepcertificateprofile-delete.md)|なし|の[windowsPhone81SCEPCertificateProfile](../resources/intune-deviceconfig-windowsphone81scepcertificateprofile.md)を削除します。|
 |[WindowsPhone81SCEPCertificateProfile を更新します。](../api/intune-deviceconfig-windowsphone81scepcertificateprofile-update.md)|[windowsPhone81SCEPCertificateProfile](../resources/intune-deviceconfig-windowsphone81scepcertificateprofile.md)|[WindowsPhone81SCEPCertificateProfile](../resources/intune-deviceconfig-windowsphone81scepcertificateprofile.md)オブジェクトのプロパティを更新します。|
 
-## <a name="properties"></a>Properties
+## <a name="properties"></a>プロパティ
 |プロパティ|種類|説明|
 |:---|:---|:---|
 |ID|String|エンティティのキー。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|

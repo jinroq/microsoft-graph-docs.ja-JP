@@ -2,12 +2,13 @@
 title: win32LobAppMsiInformation リソースの種類
 description: Win32 アプリケーションの MSI アプリケーションのプロパティが含まれています。
 author: tfitzmac
-ms.openlocfilehash: 1753df68ab1f4b0e1649c16a4a7fa0ad49941bf9
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: e43b3dc9e46ed193b7547a7ce85863253445d30c
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27326139"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27846516"
 ---
 # <a name="win32lobappmsiinformation-resource-type"></a>win32LobAppMsiInformation リソースの種類
 
@@ -16,7 +17,7 @@ ms.locfileid: "27326139"
 > **注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
 
 Win32 アプリケーションの MSI アプリケーションのプロパティが含まれています。
-## <a name="properties"></a>Properties
+## <a name="properties"></a>プロパティ
 |プロパティ|種類|説明|
 |:---|:---|:---|
 |productCode|String|MSI の製品コードです。|

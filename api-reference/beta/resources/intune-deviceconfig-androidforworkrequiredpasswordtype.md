@@ -2,12 +2,13 @@
 title: androidForWorkRequiredPasswordType 列挙型
 description: Android の作業には、パスワード入力が必要です。
 author: tfitzmac
-ms.openlocfilehash: cefb41dea7a92f1b1a640d8c9bf701a321ad9ead
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 5b7d64ce762b3c07af74e02ed0aa37accf615ef7
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27357282"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27850212"
 ---
 # <a name="androidforworkrequiredpasswordtype-enum-type"></a>androidForWorkRequiredPasswordType 列挙型
 
@@ -21,7 +22,7 @@ Android の作業には、パスワード入力が必要です。
 |:---|:---|:---|
 |deviceDefault|0|デバイスの既定値でことを目的しません。|
 |lowSecurityBiometric|1|低レベルのセキュリティ ベースの生体認証パスワードが必要です。|
-|必須|2|必須です。|
+|必須|2|必須。|
 |atLeastNumeric|3|数値以上のパスワードが必要です。|
 |numericComplex|4|数値の複雑なパスワードが必要です。|
 |atLeastAlphabetic|5|少なくともアルファベットのパスワードが必要です。|

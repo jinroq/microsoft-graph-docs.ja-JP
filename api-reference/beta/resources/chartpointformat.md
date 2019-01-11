@@ -2,12 +2,13 @@
 title: ChartPointFormat リソースの種類
 description: グラフのポイントの書式設定オブジェクトを表します。
 author: lumine2008
-ms.openlocfilehash: 193733c70fc05b9dd88b77d1ea8e0ccce76f18a3
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: d9dca13d220a71482ab148a5afc644bfdff40f34
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27347209"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27825621"
 ---
 # <a name="chartpointformat-resource-type"></a>ChartPointFormat リソースの種類
 

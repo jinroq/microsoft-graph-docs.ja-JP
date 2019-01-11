@@ -2,12 +2,13 @@
 title: androidForWorkApp リソースの種類
 description: 含まれているプロパティと継承されたプロパティの Android 用の作業 (AFW) アプリケーション。
 author: tfitzmac
-ms.openlocfilehash: 1e754d6f893d536fbc52e492c87e163766afaffb
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: d62dded43d1ea622bd27a122d6535d71fae0cd6e
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27340629"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27861440"
 ---
 # <a name="androidforworkapp-resource-type"></a>androidForWorkApp リソースの種類
 
@@ -28,7 +29,7 @@ ms.locfileid: "27340629"
 |[AndroidForWorkApp を削除します。](../api/intune-apps-androidforworkapp-delete.md)|なし|の[androidForWorkApp](../resources/intune-apps-androidforworkapp.md)を削除します。|
 |[AndroidForWorkApp を更新します。](../api/intune-apps-androidforworkapp-update.md)|[androidForWorkApp](../resources/intune-apps-androidforworkapp.md)|[AndroidForWorkApp](../resources/intune-apps-androidforworkapp.md)オブジェクトのプロパティを更新します。|
 
-## <a name="properties"></a>Properties
+## <a name="properties"></a>プロパティ
 |プロパティ|種類|説明|
 |:---|:---|:---|
 |ID|String|エンティティのキー。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|

@@ -2,12 +2,13 @@
 title: deviceAndAppManagementRoleAssignment の取得
 description: deviceAndAppManagementRoleAssignment オブジェクトのプロパティとリレーションシップを読み取ります。
 author: tfitzmac
-ms.openlocfilehash: 8e6c279a50ee70caebf31c484774bc747e6f1b2d
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 7e45c10cb612edc9731b0ed197728956c96717bd
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27331270"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27866900"
 ---
 # <a name="get-deviceandappmanagementroleassignment"></a>deviceAndAppManagementRoleAssignment の取得
 

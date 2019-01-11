@@ -1,12 +1,13 @@
 ---
 title: eventMessage リソースの種類
 description: 'メッセージは会議出席依頼、キャンセル、応答 (承諾、仮受諾、辞退のいずれか) を表します。 '
-ms.openlocfilehash: ab63a2d216b5ff12e88e887cb054ca3cb562620e
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 2a6b1768a97d07ed534699f6bbef7f4f1337a2b0
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27068205"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27872682"
 ---
 # <a name="eventmessage-resource-type"></a>eventMessage リソースの種類
 
@@ -86,7 +87,7 @@ ms.locfileid: "27068205"
 ```
 
 ## <a name="properties"></a>プロパティ
-| プロパティ     | 型   |説明|
+| プロパティ     | 種類   |説明|
 |:---------------|:--------|:----------|
 |bccRecipients|[recipient](recipient.md) collection|メッセージの BCC 受信者。|
 |body|[itemBody](itembody.md)|メッセージの本文。HTML 形式またはテキスト形式にできます。|
@@ -100,18 +101,18 @@ ms.locfileid: "27068205"
 |endDateTime|[dateTimeTimeZone](datetimetimezone.md)|要求された会議の終了時間です。|
 |flag|[followUpFlag](followupflag.md)|メッセージのステータス、開始日、期限、または完了日を示すフラグ値。|
 |from|[recipient](recipient.md)|メッセージのメールボックス所有者と送信者。|
-|hasAttachments|Boolean|メッセージに添付ファイルがあるかどうかを示します。|
+|hasAttachments|ブール値|メッセージに添付ファイルがあるかどうかを示します。|
 |id|String||
 |importance|String| メッセージの重要度: `low`、`normal`、`high`。|
 |inferenceClassification|String| 使用可能な値は、`focused`、`other` です。|
 |internetMessageHeaders | [internetMessageHeader](internetmessageheader.md) コレクション | [RFC5322](https://www.ietf.org/rfc/rfc5322.txt) によって定義された、メッセージ ヘッダーのコレクション。メッセージが送信者から受信者に到達するまでに辿ったネットワーク パスの詳細を説明します。 読み取り専用。|
 |internetMessageId |String |[RFC5322](https://www.ietf.org/rfc/rfc5322.txt)で指定された形式でメッセージの ID です。 |
-|isAllDay |Boolean|イベントが 1 日中続くかどうかを示します。 このプロパティを調整するには、イベントにも**させる**し、 **endDateTime**プロパティを調整する必要があります。|
-|isDeliveryReceiptRequested|Boolean|メッセージの開封確認メッセージが要求されているかどうかを示します。|
-|isDraft|Boolean|メッセージが下書きかどうかを示します。メッセージがまだ送信されていなければ下書きです。|
+|isAllDay |ブール値|イベントが 1 日中続くかどうかを示します。 このプロパティを調整するには、イベントにも**させる**し、 **endDateTime**プロパティを調整する必要があります。|
+|isDeliveryReceiptRequested|ブール値|メッセージの開封確認メッセージが要求されているかどうかを示します。|
+|isDraft|ブール型|メッセージが下書きかどうかを示します。メッセージがまだ送信されていなければ下書きです。|
 |isOutOfDate|Boolean|この会議出席要求がより新しい要求によって古くなっているかどうかを示します。|
-|isRead|Boolean|メッセージが開封されたかどうかを示します。|
-|isReadReceiptRequested|Boolean|メッセージの開封確認メッセージが要求されているかどうかを示します。|
+|isRead|ブール値|メッセージが開封されたかどうかを示します。|
+|isReadReceiptRequested|ブール値|メッセージの開封確認メッセージが要求されているかどうかを示します。|
 |lastModifiedDateTime|DateTimeOffset|メッセージが最後に変更された日時。|
 |location|[location](location.md)|要求された会議の場所です。|
 |meetingMessageType|String| イベント メッセージの種類: `none`、`meetingRequest`、`meetingCancelled``meetingAccepted``meetingTenativelyAccepted``meetingDeclined`。|
@@ -133,7 +134,7 @@ ms.locfileid: "27068205"
 ## <a name="relationships"></a>リレーションシップ
 | リレーションシップ | 型   |説明|
 |:---------------|:--------|:----------|
-|attachments|[attachment](attachment.md) コレクション|メッセージの[fileAttachment](fileattachment.md)、 [itemAttachment](itemattachment.md)、および[referenceAttachment](referenceattachment.md)の添付ファイルのコレクションです。 読み取り専用。 Null 許容型。|
+|attachments|[attachment](attachment.md) コレクション|メッセージの[fileAttachment](fileattachment.md)、 [itemAttachment](itemattachment.md)、および[referenceAttachment](referenceattachment.md)の添付ファイルのコレクションです。 読み取り専用です。 Null 許容型。|
 |event|[event](event.md)| イベント メッセージに関連付けられたイベント。参加者または部屋リソースの前提は、会議出席依頼イベント メッセージが届いたときにイベントを含む予定表を自動的に更新するようにカレンダー アテンダントが設定されていることです。ナビゲーション プロパティ。読み取り専用。|
 |extensions|[extension](extension.md) コレクション| eventMessage に対して定義されているオープン拡張機能のコレクション。読み取り専用。Null 許容型。|
 |multiValueExtendedProperties|[multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md) collection| eventMessage に対して定義された、複数値の拡張プロパティのコレクション。読み取り専用。Null 許容型。|

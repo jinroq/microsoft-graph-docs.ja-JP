@@ -2,12 +2,13 @@
 title: androidLobApp の作成
 description: 新しい androidLobApp オブジェクトを作成します。
 author: tfitzmac
-ms.openlocfilehash: 67e75c3eb8e482530a00ea7efe37a2a4ca4cb2b2
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: d6a8e741164135b9223aea55fc8a074e3d764619
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27327988"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27828988"
 ---
 # <a name="create-androidlobapp"></a>androidLobApp の作成
 

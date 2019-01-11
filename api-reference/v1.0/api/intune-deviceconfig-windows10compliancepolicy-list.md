@@ -2,12 +2,13 @@
 title: windows10CompliancePolicies のリスト
 description: windows10CompliancePolicy オブジェクトのプロパティとリレーションシップをリストします。
 author: tfitzmac
-ms.openlocfilehash: 273c62ea6f7bd8fb2e6d1288083dc7a3c2307f34
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 001772c72acf72bc21c427456bae3ca893703856
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27338263"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27870792"
 ---
 # <a name="list-windows10compliancepolicies"></a>windows10CompliancePolicies のリスト
 

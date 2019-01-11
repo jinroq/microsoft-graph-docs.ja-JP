@@ -2,12 +2,13 @@
 title: iosTrustedRootCertificate リソースの種類
 description: iOS 構成プロファイルのルート証明書を信頼します。
 author: tfitzmac
-ms.openlocfilehash: 0ce68cc840e509b89b08698b2006370b60589f6a
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 2e4018d251bc7b509c7715465e2e71c414fcb8b4
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27350800"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27826895"
 ---
 # <a name="iostrustedrootcertificate-resource-type"></a>iosTrustedRootCertificate リソースの種類
 
@@ -28,7 +29,7 @@ iOS 構成プロファイルのルート証明書を信頼します。
 |[IosTrustedRootCertificate を削除します。](../api/intune-deviceconfig-iostrustedrootcertificate-delete.md)|なし|の[iosTrustedRootCertificate](../resources/intune-deviceconfig-iostrustedrootcertificate.md)を削除します。|
 |[IosTrustedRootCertificate を更新します。](../api/intune-deviceconfig-iostrustedrootcertificate-update.md)|[iosTrustedRootCertificate](../resources/intune-deviceconfig-iostrustedrootcertificate.md)|[IosTrustedRootCertificate](../resources/intune-deviceconfig-iostrustedrootcertificate.md)オブジェクトのプロパティを更新します。|
 
-## <a name="properties"></a>Properties
+## <a name="properties"></a>プロパティ
 |プロパティ|種類|説明|
 |:---|:---|:---|
 |ID|String|エンティティのキー。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|

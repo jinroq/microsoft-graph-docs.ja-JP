@@ -2,12 +2,13 @@
 title: windows81WifiImportConfiguration リソースの種類
 description: " Wi-fi インポートの構成です。 このプロファイルを構成することによって必要な Wi-fi のエンドポイントに接続する Windows 8.1 (およびそれ以降) のデバイスに指示できます。 Windows 8.1 のデバイスを Wi-fi ネットワークに接続し、後でこの Wi-fi プロファイルを埋め込むには、そのデバイスから XML ファイルを展開します。"
 author: tfitzmac
-ms.openlocfilehash: c9cfc42217b4b3484791a79a761e64b4b6369395
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 4c567d9b82c301e262c83d69d013b459ed6a1636
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27355882"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27826839"
 ---
 # <a name="windows81wifiimportconfiguration-resource-type"></a>windows81WifiImportConfiguration リソースの種類
 
@@ -28,7 +29,7 @@ Windows 8.1 + の Wi-fi 構成のインポートします。 このプロファ�
 |[Windows81WifiImportConfiguration を削除します。](../api/intune-deviceconfig-windows81wifiimportconfiguration-delete.md)|なし|の[windows81WifiImportConfiguration](../resources/intune-deviceconfig-windows81wifiimportconfiguration.md)を削除します。|
 |[Windows81WifiImportConfiguration を更新します。](../api/intune-deviceconfig-windows81wifiimportconfiguration-update.md)|[windows81WifiImportConfiguration](../resources/intune-deviceconfig-windows81wifiimportconfiguration.md)|[Windows81WifiImportConfiguration](../resources/intune-deviceconfig-windows81wifiimportconfiguration.md)オブジェクトのプロパティを更新します。|
 
-## <a name="properties"></a>Properties
+## <a name="properties"></a>プロパティ
 |プロパティ|種類|説明|
 |:---|:---|:---|
 |ID|String|エンティティのキー。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|

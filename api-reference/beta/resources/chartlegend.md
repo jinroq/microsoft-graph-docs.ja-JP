@@ -2,12 +2,13 @@
 title: ChartLegend リソースの種類
 description: グラフに凡例を表します。
 author: lumine2008
-ms.openlocfilehash: 67a55f0286bcf57157cd9912bb03ba0bd6506517
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: db5c4531143df52c86e310c1d3670ab72b6e938c
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27326405"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27853775"
 ---
 # <a name="chartlegend-resource-type"></a>ChartLegend リソースの種類
 

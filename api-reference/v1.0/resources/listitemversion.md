@@ -1,12 +1,13 @@
 ---
 title: ListItemVersion リソースの種類
 description: '**listItemVersion** リソースは、ListItem リソースの旧バージョンを表しています。'
-ms.openlocfilehash: f036ea217abe766806e7f3c6b24bee4394f54889
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 41dcbeee3f098b6c156a7ddfe484ef42cca8b6d8
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27020312"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27810683"
 ---
 # <a name="listitemversion-resource-type"></a>ListItemVersion リソースの種類
 
@@ -48,7 +49,7 @@ listItemVersion リソースで使用可能なタスクを次に示します。
 
 ## <a name="properties"></a>プロパティ
 
-|      プロパティ名       |                         型                         |                               説明                               |
+|      プロパティ名       |                         Type                         |                               説明                               |
 | :----------------------- | :--------------------------------------------------- | :---------------------------------------------------------------------- |
 | **id**                   | string                                               | バージョンの ID。 読み取り専用です。                                       |
 | **lastModifiedBy**       | [IdentitySet](../resources/identityset.md)           | 最後にバージョンを変更したユーザーの ID。 読み取り専用です。        |

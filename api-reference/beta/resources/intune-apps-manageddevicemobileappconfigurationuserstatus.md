@@ -1,12 +1,13 @@
 ---
 title: managedDeviceMobileAppConfigurationUserStatus リソースの種類
 description: ユーザー向け MDM モバイル アプリ構成状態の要約に関する、プロパティ、継承済みのプロパティ、アクションが含まれています。
-ms.openlocfilehash: d3533e4b98523493f1b7ff033cbcf87d9200654d
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 719f784b2b135d58950892c185614a1247b5d25b
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27067627"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27846754"
 ---
 # <a name="manageddevicemobileappconfigurationuserstatus-resource-type"></a>managedDeviceMobileAppConfigurationUserStatus リソースの種類
 
@@ -25,9 +26,9 @@ ms.locfileid: "27067627"
 |[managedDeviceMobileAppConfigurationUserStatus の更新](../api/intune-apps-manageddevicemobileappconfigurationuserstatus-update.md)|[managedDeviceMobileAppConfigurationUserStatus](../resources/intune-apps-manageddevicemobileappconfigurationuserstatus.md)|[managedDeviceMobileAppConfigurationUserStatus](../resources/intune-apps-manageddevicemobileappconfigurationuserstatus.md) オブジェクトのプロパティを更新します。|
 
 ## <a name="properties"></a>プロパティ
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
-|id|String|エンティティのキー。|
+|ID|String|エンティティのキー。|
 |userDisplayName|String|DevicePolicyStatus のユーザー名。|
 |devicesCount|Int32|そのユーザーのデバイスの数。|
 |status|[complianceStatus](../resources/intune-shared-compliancestatus.md)|ポリシー レポートのコンプライアンスの状態。 可能な値は、`unknown`、`notApplicable`、`compliant`、`remediated`、`nonCompliant`、`error`、`conflict`、`notAssigned` です。|

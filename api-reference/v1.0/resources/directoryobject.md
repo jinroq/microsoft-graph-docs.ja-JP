@@ -1,12 +1,13 @@
 ---
 title: directoryObject リソースの種類
 description: Azure Active Directory オブジェクトを表します。**directoryObject** 型は、他の多くのディレクトリ エンティティ型の基本型です。
-ms.openlocfilehash: 0981584bb86b71d06e29de4efc379c84bacac51d
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Priority
+ms.openlocfilehash: 0da74c8f034de37bf442fba6d1609623e81da372
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27023916"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27851704"
 ---
 # <a name="directoryobject-resource-type"></a>directoryObject リソースの種類
 
@@ -25,9 +26,9 @@ Azure Active Directory オブジェクトを表します。**directoryObject** �
 
 ## <a name="properties"></a>プロパティ
 
-| プロパティ   | 型 |説明|
+| プロパティ   | 種類 |説明|
 |:---------------|:--------|:----------|
-|id|String|オブジェクトの一意識別子である Guid。例: 12345678-9abc-def0-1234-56789abcde。キー。null 許容ではありません。読み取り専用です。|
+|ID|String|オブジェクトの一意識別子である Guid。例: 12345678-9abc-def0-1234-56789abcde。キー。null 許容ではありません。読み取り専用です。|
 
 ## <a name="relationships"></a>リレーションシップ
 

@@ -2,12 +2,13 @@
 title: windowsDeviceAccount リソースの種類
 description: まだ文書化されていません
 author: tfitzmac
-ms.openlocfilehash: 9ba97e6eadfe188b0e8c9f3ef90a56f738bf1993
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: c9625f702bda3057f0cfe2e4b376e0adb1523238
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27326965"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27876994"
 ---
 # <a name="windowsdeviceaccount-resource-type"></a>windowsDeviceAccount リソースの種類
 

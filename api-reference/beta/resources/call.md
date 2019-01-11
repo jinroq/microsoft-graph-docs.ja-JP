@@ -2,12 +2,13 @@
 title: リソースの種類を呼び出す
 description: アプリケーション宛ての着信呼び出しがあるか、アプリケーションを使用して新しい送信呼び出しを作成するときに、**呼び出す**リソースが作成された、`POST`の`app/calls`。
 author: VinodRavichandran
-ms.openlocfilehash: 3acc0b04a5cb4357857c948a4b28feef22863a02
-ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
+localization_priority: Priority
+ms.openlocfilehash: d2748b410352effb7119a569bdf48c86f2f7c2ad
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "27380570"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27810704"
 ---
 # <a name="call-resource-type"></a>リソースの種類を呼び出す
 
@@ -50,7 +51,7 @@ ms.locfileid: "27380570"
 
 ## <a name="properties"></a>プロパティ
 
-| プロパティ            | 型                                                                                                   | 説明                                                                                                                                                                                         |
+| プロパティ            | 種類                                                                                                   | 説明                                                                                                                                                                                         |
 | :------------------ | :------------------------------------------------------------------------------------------------------| :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | activeModalities    | 文字列コレクション                                                                                      | アクティブな様相の一覧です。 可能な値は、`unknown`、`audio`、`video`、`videoBasedScreenSharing`、`data` です。 読み取り専用です。 サーバーを生成します。                                                    |
 | answeredBy          | [participantInfo](participantinfo.md)                                                                  | 参加者の呼び出しに応答をします。 読み取り専用です。 サーバーを生成します。                                                                                                                                |

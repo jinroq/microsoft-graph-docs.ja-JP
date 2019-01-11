@@ -2,12 +2,13 @@
 title: Windows81VpnConfiguration を作成します。
 description: 新しい windows81VpnConfiguration オブジェクトを作成します。
 author: tfitzmac
-ms.openlocfilehash: bf44310a218bdc04021d4a47b5a6c7a45c63eb49
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 47a8a4dab23952e83b8485b5193010199690ab79
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27336464"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27851836"
 ---
 # <a name="create-windows81vpnconfiguration"></a>Windows81VpnConfiguration を作成します。
 

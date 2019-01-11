@@ -2,12 +2,13 @@
 title: deviceCompliancePolicySettingStateSummary の更新
 description: deviceCompliancePolicySettingStateSummary オブジェクトのプロパティを更新します。
 author: tfitzmac
-ms.openlocfilehash: 87fb75ea6e0a059a83f17a06697131e6efa77a97
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 97eec7bba67552c21c208ed087aab40a096d47b7
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27351045"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27830024"
 ---
 # <a name="update-devicecompliancepolicysettingstatesummary"></a>deviceCompliancePolicySettingStateSummary の更新
 

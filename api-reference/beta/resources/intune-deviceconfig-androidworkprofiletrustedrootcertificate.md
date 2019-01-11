@@ -2,12 +2,13 @@
 title: androidWorkProfileTrustedRootCertificate リソースの種類
 description: Android の作業プロファイル信頼されたルートの証明書の構成プロファイル
 author: tfitzmac
-ms.openlocfilehash: 7932216362e52ff58fa2d77f30d991e32c147b9c
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 62075141423016a2f3df783de8f17ecd1382abbf
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27344115"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27853061"
 ---
 # <a name="androidworkprofiletrustedrootcertificate-resource-type"></a>androidWorkProfileTrustedRootCertificate リソースの種類
 
@@ -28,7 +29,7 @@ Android の作業プロファイル信頼されたルートの証明書の構成
 |[AndroidWorkProfileTrustedRootCertificate を削除します。](../api/intune-deviceconfig-androidworkprofiletrustedrootcertificate-delete.md)|なし|の[androidWorkProfileTrustedRootCertificate](../resources/intune-deviceconfig-androidworkprofiletrustedrootcertificate.md)を削除します。|
 |[AndroidWorkProfileTrustedRootCertificate を更新します。](../api/intune-deviceconfig-androidworkprofiletrustedrootcertificate-update.md)|[androidWorkProfileTrustedRootCertificate](../resources/intune-deviceconfig-androidworkprofiletrustedrootcertificate.md)|[AndroidWorkProfileTrustedRootCertificate](../resources/intune-deviceconfig-androidworkprofiletrustedrootcertificate.md)オブジェクトのプロパティを更新します。|
 
-## <a name="properties"></a>Properties
+## <a name="properties"></a>プロパティ
 |プロパティ|種類|説明|
 |:---|:---|:---|
 |ID|String|エンティティのキー。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|

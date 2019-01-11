@@ -2,12 +2,13 @@
 title: windowsUpdateForBusinessConfiguration の更新
 description: windowsUpdateForBusinessConfiguration オブジェクトのプロパティを更新します。
 author: tfitzmac
-ms.openlocfilehash: 2b53fb170e0b399f5b42e6e5212f3ad0cb2a75a7
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 55166d68f8f9f3044c89e798a650ce34fc00bb5e
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27302178"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27867397"
 ---
 # <a name="update-windowsupdateforbusinessconfiguration"></a>windowsUpdateForBusinessConfiguration の更新
 

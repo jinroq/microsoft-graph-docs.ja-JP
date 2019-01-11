@@ -2,12 +2,13 @@
 title: Get calendarGroup
 description: 予定表グループ オブジェクトのプロパティとリレーションシップを取得します。
 author: angelgolfer-ms
-ms.openlocfilehash: fce49730733537b14eff145a6f6acd9fe4d82485
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: c29290064ec877f3e8dafd7173292fefb4c2e958
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27358318"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27848385"
 ---
 # <a name="get-calendargroup"></a>Get calendarGroup
 

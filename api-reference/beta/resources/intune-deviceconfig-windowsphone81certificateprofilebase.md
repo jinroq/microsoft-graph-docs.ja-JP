@@ -2,12 +2,13 @@
 title: windowsPhone81CertificateProfileBase リソースの種類
 description: " 証明書プロファイルです。"
 author: tfitzmac
-ms.openlocfilehash: db312402463afe9d5071ee171a0cd6af2f091edc
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 5896a4596e040a6915e889504b8110f9d32c75d5
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27360572"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27848574"
 ---
 # <a name="windowsphone81certificateprofilebase-resource-type"></a>windowsPhone81CertificateProfileBase リソースの種類
 
@@ -25,7 +26,7 @@ Windows Phone 8.1 + 証明書プロファイルを基にします。
 |[リスト windowsPhone81CertificateProfileBases](../api/intune-deviceconfig-windowsphone81certificateprofilebase-list.md)|[windowsPhone81CertificateProfileBase](../resources/intune-deviceconfig-windowsphone81certificateprofilebase.md)コレクション|[WindowsPhone81CertificateProfileBase](../resources/intune-deviceconfig-windowsphone81certificateprofilebase.md)オブジェクトのプロパティと関係を一覧表示します。|
 |[WindowsPhone81CertificateProfileBase を取得します。](../api/intune-deviceconfig-windowsphone81certificateprofilebase-get.md)|[windowsPhone81CertificateProfileBase](../resources/intune-deviceconfig-windowsphone81certificateprofilebase.md)|[WindowsPhone81CertificateProfileBase](../resources/intune-deviceconfig-windowsphone81certificateprofilebase.md)オブジェクトのプロパティと関係を参照してください。|
 
-## <a name="properties"></a>Properties
+## <a name="properties"></a>プロパティ
 |プロパティ|種類|説明|
 |:---|:---|:---|
 |ID|String|エンティティのキー。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|

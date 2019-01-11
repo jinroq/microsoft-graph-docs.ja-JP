@@ -3,12 +3,13 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/11/2017
 title: List
-ms.openlocfilehash: b1538fd3eadd3cd00193519a32effdd7c3b61247
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 03121447e0b9d7d091005283ed12ef7d93e68108
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27068229"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27870463"
 ---
 # <a name="list-resource"></a>list リソース
 
@@ -82,7 +83,7 @@ list リソースで使用可能なタスクを次に示します。
 
 **list** リソースには以下のプロパティがあります。
 
-| プロパティ名    | 型                             | 説明
+| プロパティ名    | Type                             | 説明
 |:-----------------|:---------------------------------|:---------------------------
 | **columns**      | Collection([columnDefinition][]) | このリストのフィールド定義のコレクションです。
 | **contentTypes** | Collection([contentType][])      | このリスト内に存在するコンテンツ タイプのコレクションです。
@@ -92,7 +93,7 @@ list リソースで使用可能なタスクを次に示します。
 
 次のプロパティは、**[baseItem][]** から継承しています。
 
-| プロパティ名            | 型             | 説明
+| プロパティ名            | Type             | 説明
 |:-------------------------|:-----------------|:-------------------------------
 | **id**                   | string           | アイテムの一意識別子。読み取り専用です。
 | **name**                 | 文字列           | アイテムの名前。

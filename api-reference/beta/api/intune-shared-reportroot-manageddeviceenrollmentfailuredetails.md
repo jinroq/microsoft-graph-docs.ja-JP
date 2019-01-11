@@ -2,12 +2,13 @@
 title: managedDeviceEnrollmentFailureDetails 関数
 description: まだ文書化されていません
 author: tfitzmac
-ms.openlocfilehash: f9dc6f0a1a0a211de1cbfb1443dc4393796bd2d4
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 6902a10d7558426d1547bfb590922c225414ad54
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27337584"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27827336"
 ---
 # <a name="manageddeviceenrollmentfailuredetails-function"></a>managedDeviceEnrollmentFailureDetails 関数
 

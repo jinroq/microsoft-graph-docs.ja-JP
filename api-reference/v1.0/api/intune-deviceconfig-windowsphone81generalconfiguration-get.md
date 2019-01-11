@@ -2,12 +2,13 @@
 title: Get windowsPhone81GeneralConfiguration
 description: windowsPhone81GeneralConfiguration オブジェクトのプロパティとリレーションシップを読み取ります。
 author: tfitzmac
-ms.openlocfilehash: aff275e4498910cecc6e14a4e7034df6edbab260
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 053896bcb30e83a888847fdd70d34b00fc940429
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27337829"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27876749"
 ---
 # <a name="get-windowsphone81generalconfiguration"></a>Get windowsPhone81GeneralConfiguration
 

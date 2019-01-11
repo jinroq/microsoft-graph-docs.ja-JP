@@ -2,12 +2,13 @@
 title: managedDeviceMobileAppConfigurationAssignments のリスト
 description: managedDeviceMobileAppConfigurationAssignment オブジェクトのプロパティとリレーションシップをリストします。
 author: tfitzmac
-ms.openlocfilehash: db0a64dec86aa6dac0d869509de1e5a1abd5648e
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 96d37f3b58caf94dbaebae5ae77dc4386039f365
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27323269"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27828967"
 ---
 # <a name="list-manageddevicemobileappconfigurationassignments"></a>managedDeviceMobileAppConfigurationAssignments のリスト
 

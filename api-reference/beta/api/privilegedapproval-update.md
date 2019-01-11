@@ -1,12 +1,13 @@
 ---
 title: Privilegedapproval を更新します。
 description: Privilegedapproval オブジェクトのプロパティを更新します。
-ms.openlocfilehash: b50f5fb5e50bc47c94b759ea1253c9c9117bfe5d
-ms.sourcegitcommit: 37591c2299c80e7675cd2b5f781e1eeeba628a60
+localization_priority: Normal
+ms.openlocfilehash: 0ddab7d7a628be8513c27114e1e4ec3d13477784
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "27748354"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27866886"
 ---
 # <a name="update-privilegedapproval"></a>Privilegedapproval を更新します。
 
@@ -36,10 +37,10 @@ PATCH /privilegedApproval/<id>
 ## <a name="request-body"></a>要求本文
 要求本文で、更新する関連フィールドの値を指定します。要求本文に含まれない既存のプロパティは、以前の値のままになるか、他のプロパティ値の変化に基づいて再計算されます。最適なパフォーマンスを得るためには、変更されていない既存の値を含めないでください。
 
-| プロパティ     | 型   |説明|
+| プロパティ     | 種類   |説明|
 |:---------------|:--------|:----------|
 |approvalDuration|Duration||
-|approvalState|string| 可能な値は、`pending`、`approved`、`denied`、`aborted`、`canceled` です。|
+|approvalState|文字列| 可能な値は、`pending`、`approved`、`denied`、`aborted`、`canceled` です。|
 |approvalType|String||
 |approverReason|String||
 |endDateTime|DateTimeOffset||

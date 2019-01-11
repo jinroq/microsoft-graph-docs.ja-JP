@@ -2,12 +2,13 @@
 title: DepIOSEnrollmentProfile を更新します。
 description: DepIOSEnrollmentProfile オブジェクトのプロパティを更新します。
 author: tfitzmac
-ms.openlocfilehash: 4c492955c17e20948b6088e8f87ed260bf6b07fd
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 6b6f9bf083a0f1d760f49b1cd41b3c6bc187c5c0
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27358640"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27847993"
 ---
 # <a name="update-depiosenrollmentprofile"></a>DepIOSEnrollmentProfile を更新します。
 

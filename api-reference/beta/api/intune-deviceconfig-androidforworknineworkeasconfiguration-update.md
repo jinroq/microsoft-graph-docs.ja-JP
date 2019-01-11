@@ -2,12 +2,13 @@
 title: AndroidForWorkNineWorkEasConfiguration を更新します。
 description: AndroidForWorkNineWorkEasConfiguration オブジェクトのプロパティを更新します。
 author: tfitzmac
-ms.openlocfilehash: 1779f81cc89681805305c7bb2bbe16f7a570accb
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 44661e21fec5d4dc764b5ef3ea87dcef02753a00
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27328211"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27828302"
 ---
 # <a name="update-androidforworknineworkeasconfiguration"></a>AndroidForWorkNineWorkEasConfiguration を更新します。
 

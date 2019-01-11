@@ -2,12 +2,13 @@
 title: リスト windowsDomainJoinConfigurations
 description: WindowsDomainJoinConfiguration オブジェクトのプロパティと関係を一覧表示します。
 author: tfitzmac
-ms.openlocfilehash: 8509cdaf97f98d55ec73fe010ded3d8f086af685
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 36620c4b4d03bb883d5b69fd1707f2fe384f9347
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27317102"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27867733"
 ---
 # <a name="list-windowsdomainjoinconfigurations"></a>リスト windowsDomainJoinConfigurations
 

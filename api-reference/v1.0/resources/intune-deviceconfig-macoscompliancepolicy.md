@@ -2,12 +2,13 @@
 title: macOSCompliancePolicy リソースの種類
 description: このクラスには、Mac OS のコンプライアンス設定が含まれています。
 author: tfitzmac
-ms.openlocfilehash: d8b210c5c8c0b5f961bc5a6079ed165667884fb5
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 93fa2f617a22a63524572193cb02fbb1e370e17e
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27340881"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27810991"
 ---
 # <a name="macoscompliancepolicy-resource-type"></a>macOSCompliancePolicy リソースの種類
 

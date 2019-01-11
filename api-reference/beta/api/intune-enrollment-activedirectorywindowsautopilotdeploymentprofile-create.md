@@ -2,12 +2,13 @@
 title: ActiveDirectoryWindowsAutopilotDeploymentProfile を作成します。
 description: 新しい activeDirectoryWindowsAutopilotDeploymentProfile オブジェクトを作成します。
 author: tfitzmac
-ms.openlocfilehash: 50959427a9634d2b8376cece9c3c33c908c69365
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 3d8e94a6110716c826808b1c4ace85a11bc0e0fd
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27324088"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27847615"
 ---
 # <a name="create-activedirectorywindowsautopilotdeploymentprofile"></a>ActiveDirectoryWindowsAutopilotDeploymentProfile を作成します。
 

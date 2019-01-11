@@ -2,12 +2,13 @@
 title: deviceComplianceUserStatus の作成
 description: 新しい deviceComplianceUserStatus オブジェクトを作成します。
 author: tfitzmac
-ms.openlocfilehash: 7b5627999c3cbb3d895c7433fc71b6db2effd418
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: b4e82a3ead9e4ab36fd5f94a71afc5558f7482de
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27353698"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27849323"
 ---
 # <a name="create-devicecomplianceuserstatus"></a>deviceComplianceUserStatus の作成
 

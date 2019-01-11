@@ -1,12 +1,13 @@
 ---
 title: メッセージを一覧表示する
 description: サインイン中のユーザーのメールボックス内のメッセージを取得します (削除済みアイテムと低優先メール フォルダーを含む)。
-ms.openlocfilehash: 861d56850a8a4a4a167540b221bd94b7b8e62ae0
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Priority
+ms.openlocfilehash: 5ded8cef8142bdeeaa17eabc1f78a8bfa0f0d019
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27020348"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27862707"
 ---
 # <a name="list-messages"></a>メッセージを一覧表示する
 
@@ -49,7 +50,7 @@ GET /users/{id | userPrincipalName}/mailFolders/{id}/messages
 ## <a name="optional-query-parameters"></a>オプションのクエリ パラメーター
 このメソッドは、応答をカスタマイズするための [OData クエリ パラメーター](https://developer.microsoft.com/graph/docs/concepts/query_parameters)をサポートします。
 ## <a name="request-headers"></a>要求ヘッダー
-| 名前       | 型 | 説明|
+| 名前       | 種類 | 説明|
 |:-----------|:------|:----------|
 | Authorization  | string  | ベアラー {トークン}。必須。 |
 | Prefer: outlook.body-content-type | 文字列 | **body** プロパティと **uniqueBody** プロパティが返されるときの形式です。 値は、"text" または "html" になります。 ヘッダーが指定されていない場合は、**body** プロパティと **uniqueBody** プロパティは HTML 形式で返されます。 省略可能。 |

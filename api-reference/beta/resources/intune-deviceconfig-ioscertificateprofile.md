@@ -2,12 +2,13 @@
 title: iosCertificateProfile リソースの種類
 description: デバイス構成です。
 author: tfitzmac
-ms.openlocfilehash: 209d21210e9210f033ff188c720890e5a95148e0
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 58bddac4d44aa1e778460e3e208bb9b791dcd647
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27334980"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27866935"
 ---
 # <a name="ioscertificateprofile-resource-type"></a>iosCertificateProfile リソースの種類
 

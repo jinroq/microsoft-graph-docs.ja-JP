@@ -1,12 +1,13 @@
 ---
 title: クラスをリストする
 description: 'クラス オブジェクトのリストを取得します。 委任されたトークンを使用した場合、メンバーは自分のクラスに関する情報以外を参照できません。 '
-ms.openlocfilehash: 3df6b8115e68e341b45e5755dfff587f8f5e20d1
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: f40169a9d9fcefff6ceb5231810bed1864f88001
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27021586"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27829996"
 ---
 # <a name="list-classes"></a>クラスをリストする
 

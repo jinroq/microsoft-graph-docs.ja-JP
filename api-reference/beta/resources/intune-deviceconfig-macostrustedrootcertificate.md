@@ -2,12 +2,13 @@
 title: macOSTrustedRootCertificate リソースの種類
 description: OS X 信頼されたルートの証明書の構成のプロファイルです。
 author: tfitzmac
-ms.openlocfilehash: 6823baee9f7ec4b0e1605441430dc09cf891f5a5
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 1c7c39be9a4c09b5235ef10e17eab3c0bbfac2f7
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27327602"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27851409"
 ---
 # <a name="macostrustedrootcertificate-resource-type"></a>macOSTrustedRootCertificate リソースの種類
 
@@ -28,7 +29,7 @@ OS X 信頼されたルートの証明書の構成のプロファイルです。
 |[MacOSTrustedRootCertificate を削除します。](../api/intune-deviceconfig-macostrustedrootcertificate-delete.md)|なし|の[macOSTrustedRootCertificate](../resources/intune-deviceconfig-macostrustedrootcertificate.md)を削除します。|
 |[MacOSTrustedRootCertificate を更新します。](../api/intune-deviceconfig-macostrustedrootcertificate-update.md)|[macOSTrustedRootCertificate](../resources/intune-deviceconfig-macostrustedrootcertificate.md)|[MacOSTrustedRootCertificate](../resources/intune-deviceconfig-macostrustedrootcertificate.md)オブジェクトのプロパティを更新します。|
 
-## <a name="properties"></a>Properties
+## <a name="properties"></a>プロパティ
 |プロパティ|種類|説明|
 |:---|:---|:---|
 |ID|String|エンティティのキー。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|

@@ -2,12 +2,13 @@
 title: administratorConfiguredDeviceComplianceState 列挙型
 description: 管理者には、デバイス準拠状態の列挙型が構成されています。
 author: tfitzmac
-ms.openlocfilehash: e1b76c40f0e5f815e42efa0a4fef776aeb3e0b00
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: dee68ef312d54410b0a1be6c97ac338c6a240916
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27314869"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27829135"
 ---
 # <a name="administratorconfigureddevicecompliancestate-enum-type"></a>administratorConfiguredDeviceComplianceState 列挙型
 
