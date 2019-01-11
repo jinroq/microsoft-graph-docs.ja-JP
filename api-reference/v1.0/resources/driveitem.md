@@ -3,12 +3,13 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
 title: DriveItem
-ms.openlocfilehash: 4cf9766c81f1b1676d82c78e2f248b8d8c91e5b3
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Priority
+ms.openlocfilehash: 9de5de7f945177b1ab5c9f9107a32129f0f38c10
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27024200"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27894559"
 ---
 # <a name="driveitem-resource-type"></a>DriveItem リソースの種類
 
@@ -138,17 +139,17 @@ ms.locfileid: "27024200"
 | children           | driveItem コレクション        | アイテムの直接の子のアイテム オブジェクトを格納するコレクション。子が含まれるのは、フォルダーを表すアイテムのみです。読み取り専用です。Null 許容型。
 | createdByUser      | [user][]                    | アイテムを作成したユーザーの ID です。 読み取り専用です。
 | lastModifiedByUser | [user][]                    | アイテムを最後に変更したユーザーの ID です。 読み取り専用です。
-| listItem           | [listItem][]                | SharePoint 内のドライブ、関連するドキュメント ライブラリのアイテムをリストします。 読み取り専用。 Null 許容型。
+| listItem           | [listItem][]                | SharePoint 内のドライブ、関連するドキュメント ライブラリのアイテムをリストします。 読み取り専用です。 Null 許容型。
 | permissions        | [permission][] コレクション   | アイテムのアクセス許可のセット。読み取り専用です。Null 許容型。
 | thumbnails         | [thumbnailSet][] コレクション | アイテムに関連付けられた [ThumbnailSet][] オブジェクトを格納するコレクション。詳細については、[サムネイルの取得][]についてのページをご覧ください。読み取り専用です。Null 許容型。
-| versions           | [driveItemVersion][]コレクション | アイテムの以前のバージョンの一覧です。 詳細については、[以前のバージョンを取得する][]を参照してください。 読み取り専用。 Null 許容型。
+| versions           | [driveItemVersion][]コレクション | アイテムの以前のバージョンの一覧です。 詳細については、[以前のバージョンを取得する][]を参照してください。 読み取り専用です。 Null 許容型。
 | ブック           | [workbook][]                | ファイルは、Excel のスプレッドシートには、ブックのワークシートの内容を操作する API にアクセスします。 Null 許容型。
 
 ## <a name="instance-attributes"></a>インスタンスの属性
 
 インスタンスの属性は、動作が特殊なプロパティです。これらのプロパティは一時的なものであり、a) サービスの動作を定義するか、b) 短期的なプロパティの値 (有効期限を持つアイテムのダウンロード URL など) を提供します。
 
-| プロパティ名                     | 型   | 説明
+| プロパティ名                     | Type   | 説明
 |:----------------------------------|:-------|:--------------------------------
 | @microsoft.graph.conflictBehavior | 文字列 | 新しいアイテムを作成するアクションの競合を解決する動作。*fail*、*replace*、*rename* という値を使用できます。PUT の既定値は *replace* です。この注釈とともにアイテムが返されることはありません。書き込み専用です。
 | @microsoft.graph.downloadUrl      | 文字列 | このファイルのコンテンツをダウンロードするために使用できる URL。この URL では認証は必要ありません。読み取り専用です。
@@ -158,7 +159,7 @@ ms.locfileid: "27024200"
 
 ## <a name="methods"></a>メソッド
 
-| メソッド                                                   | REST パス
+| Method                                                   | REST パス
 |:---------------------------------------------------------|:------------------
 | [アイテムを取得する](../api/driveitem-get.md)                      | `GET /drive/items/{item-id}`
 | [子を一覧表示する](../api/driveitem-list-children.md)       | `GET /drive/items/{item-id}/children`

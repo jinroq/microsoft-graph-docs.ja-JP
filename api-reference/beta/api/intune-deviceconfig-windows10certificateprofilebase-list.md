@@ -2,12 +2,13 @@
 title: リスト windows10CertificateProfileBases
 description: Windows10CertificateProfileBase オブジェクトのプロパティと関係を一覧表示します。
 author: tfitzmac
-ms.openlocfilehash: 6efda26760ecbcb50bba6334f8934489f75bab31
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 152c8920fecfc34e5ff3b69dc2b94d6f8ce38dc6
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27347874"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27881068"
 ---
 # <a name="list-windows10certificateprofilebases"></a>リスト windows10CertificateProfileBases
 

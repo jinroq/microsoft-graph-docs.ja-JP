@@ -1,24 +1,25 @@
 ---
 title: office365GroupsActivityDetail リソースの種類
 description: リソースの JSON 表記を次に示します。
-ms.openlocfilehash: a849932d646be61f3cedec76ecdafdaca941baaf
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 94dc10064c0005770294c8f783c77d41ce0c479b
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27067253"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27894272"
 ---
 # <a name="office365groupsactivitydetail-resource-type"></a>office365GroupsActivityDetail リソースの種類
 
 ## <a name="properties"></a>プロパティ
 
-| プロパティ                          | 型    | 説明                              |
+| プロパティ                          | 種類    | 説明                              |
 | :-------------------------------- | :------ | ---------------------------------------- |
-| reportRefreshDate                 | Date    | コンテンツの最新の日付。          |
+| reportRefreshDate                 | 日付    | コンテンツの最新の日付。          |
 | groupDisplayName                  | String  | グループの表示名。           |
-| isDeleted                         | ブール値 | このユーザーが削除されたか、またはソフトをされてかどうかを削除します。 |
+| isDeleted                         | ブール型 | このユーザーが削除されたか、またはソフトをされてかどうかを削除します。 |
 | ownerPrincipalName                | String  | グループの所有者のプリンシパル名です。          |
-| lastActivityDate                  | Date    | 次のシナリオの最後のアクティビティの日付: グループのメールボックスに受信した電子メールです。ユーザーを表示、編集、共有、または SharePoint ドキュメント ライブラリ内のファイルの同期ユーザーが SharePoint ページを表示ユーザーは、投稿、読み取り、または、Yammer グループ内のメッセージを気に入られました。 |
+| lastActivityDate                  | 日付    | 次のシナリオの最後のアクティビティの日付: グループのメールボックスに受信した電子メールです。ユーザーを表示、編集、共有、または SharePoint ドキュメント ライブラリ内のファイルの同期ユーザーが SharePoint ページを表示ユーザーは、投稿、読み取り、または、Yammer グループ内のメッセージを気に入られました。 |
 | groupType                         | String  | グループの種類。 使用可能な値:**パブリック**または**プライベート**です。 |
 | membercount プロパティ                       | Int64   | グループ メンバーの数です。                  |
 | externalMemberCount               | Int64   | グループ外部のメンバーの数です。         |

@@ -2,12 +2,13 @@
 title: EnrollmentProfile を取得します。
 description: EnrollmentProfile オブジェクトのプロパティと関係を参照してください。
 author: tfitzmac
-ms.openlocfilehash: 19cc27203e7676414862bcd5587cb054fc7d7014
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 24e3e591ee0ccc9faf23cfaa718f05dceadb3699
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27327756"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27894384"
 ---
 # <a name="get-enrollmentprofile"></a>EnrollmentProfile を取得します。
 

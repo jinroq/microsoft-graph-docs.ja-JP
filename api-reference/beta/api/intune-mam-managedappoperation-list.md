@@ -2,12 +2,13 @@
 title: managedAppOperations のリスト
 description: managedAppOperation オブジェクトのプロパティとリレーションシップをリストします。
 author: tfitzmac
-ms.openlocfilehash: 9d9b24bca1f19a672dcb99aedcf7efa9b200d660
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: cd698bcabbd285583826a280db54c3ad45798a4f
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27318660"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27894090"
 ---
 # <a name="list-managedappoperations"></a>managedAppOperations のリスト
 

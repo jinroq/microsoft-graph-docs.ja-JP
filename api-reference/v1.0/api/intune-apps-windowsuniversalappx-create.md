@@ -2,12 +2,13 @@
 title: Create windowsUniversalAppX
 description: 新しい windowsUniversalAppX オブジェクトを作成します。
 author: tfitzmac
-ms.openlocfilehash: bd1c58c56a3d2801bc5d4aaa9ca34286d6bacedb
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: d5e0a3d209b23377adfd50b4880b29c854761da3
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27348427"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27894524"
 ---
 # <a name="create-windowsuniversalappx"></a>Create windowsUniversalAppX
 

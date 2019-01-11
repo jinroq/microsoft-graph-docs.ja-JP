@@ -1,12 +1,13 @@
 ---
 title: リソースの種類のフィルター
 description: アプリケーション オブジェクトを準備する必要がありますを決定します。 たとえば、米国内にあるユーザーのみを提供する可能性があります。 スコープ フィルターが存在する場合、フィルターを満たしていないオブジェクトは同期中にスキップされます。
-ms.openlocfilehash: 72885cfbd49083ce80b96cd389286d5c50937ffb
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 754271e9d33159a14d1abf356280dd619643002f
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27069842"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27894412"
 ---
 # <a name="filter-resource-type"></a>リソースの種類のフィルター
 
@@ -21,7 +22,7 @@ ms.locfileid: "27069842"
 詳細については、[属性ベースのアプリケーションのスコープ フィルターを使用してプロビジョニング](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-saas-scoping-filters)を参照してください。
 
 ## <a name="properties"></a>プロパティ
-| プロパティ     | 型   |説明|
+| プロパティ     | 種類   |説明|
 |:---------------|:--------|:----------|
 |categoryFilterGroups|[filterGroup](synchronization-filtergroup.md)コレクション|`*Experimental*`かどうか特定のオブジェクトが所属するグループのセットをフィルター処理し、このオブジェクトのマッピングの一部として処理する必要があります。 オブジェクトがスコープ内と見なされる*場合は、コレクション内のグループのいずれかが評価され、 `true` *。|
 |グループ|[filterGroup](synchronization-filtergroup.md)コレクション|プロビジョニング用のスコープ、オブジェクトが指定されているかどうかを決定するために使用するグループ セットをフィルター処理します。 **これは、ほとんどの場合に使用するフィルター**です。 そのフィルターではありませんので、特定の時点でこのフィルターを満たすために使用されるオブジェクトと、オブジェクトまたはフィルターが変更された場合はそのようなオブジェクトで満足できなくなった場合、* はプロビジョニング解除」します。 オブジェクトがスコープ内と見なされる*場合は、コレクション内のグループのいずれかが評価され、 `true` *。|

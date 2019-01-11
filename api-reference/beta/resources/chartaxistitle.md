@@ -2,12 +2,13 @@
 title: ChartAxisTitle リソースの種類
 description: グラフ軸のタイトルを表します。
 author: lumine2008
-ms.openlocfilehash: f787e4572c0b0f499740e2ba1e790fec1ce7ba61
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: a78219e5833f7f85cde571dc984959b642ebe4d4
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27357296"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27894181"
 ---
 # <a name="chartaxistitle-resource-type"></a>ChartAxisTitle リソースの種類
 

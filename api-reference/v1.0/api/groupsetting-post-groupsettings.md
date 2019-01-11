@@ -1,12 +1,13 @@
 ---
 title: グループ設定を作成する
 description: この API を使用して、groupSettingTemplates で使用可能なテンプレートに基づいて新しい設定を作成します。これらの設定は、テナント レベルまたはグループ レベルで行うことができます。作成要求は、テンプレートに定義されているすべての設定の settingValues を提供する必要があります。グループ固有の設定では、グループのメンバーがゲスト ユーザーを招待できるかどうかの管理のみが設定できます。グループにゲスト ユーザーを追加する機能が一般的に利用可能になると、上記の動作は制御されます。
-ms.openlocfilehash: b17ccd32934e1b26475175ec89da48fb8ea4b744
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: c5ba428380e6503f8d54682709d36e12b7ff4de3
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27022163"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27894538"
 ---
 # <a name="create-a-group-setting"></a>グループ設定を作成する
 

@@ -2,12 +2,13 @@
 title: managedEBookAssignment リソースの種類
 description: グループへの電子ブックの割り当てに使用されるプロパティが含まれています。
 author: tfitzmac
-ms.openlocfilehash: 26694093b320be1518f92e97877a7331f3f78866
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: a9ff543bf87e73a9aea02ac73b5f9ee0bf8e9c6f
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27308464"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27894349"
 ---
 # <a name="managedebookassignment-resource-type"></a>managedEBookAssignment リソースの種類
 

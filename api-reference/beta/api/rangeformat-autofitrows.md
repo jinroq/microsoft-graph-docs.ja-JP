@@ -1,12 +1,13 @@
 ---
 title: 'RangeFormat: autofitRows'
-description: 現在の列のデータに基づいて、現在の範囲の行の高さを最適な高さに変更します。
-ms.openlocfilehash: 428e405cad1464fad6e1e90940d9f9016fafdb48
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+description: 現在の行のデータに基づいて、現在の範囲の行の高さを最適な高さに変更します。
+localization_priority: Normal
+ms.openlocfilehash: 1a915a3af5a0d0300f957ebf27ef0415c0d00465
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27068719"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27894286"
 ---
 # <a name="rangeformat-autofitrows"></a>RangeFormat: autofitRows
 

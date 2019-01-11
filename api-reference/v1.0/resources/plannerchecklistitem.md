@@ -1,12 +1,13 @@
 ---
 title: plannerChecklistItem リソースの種類
 description: '**PlannerChecklistItem**リソースは、タスクのチェックリストの項目を表します。 タスクのチェックリストは、checklistItems オブジェクトによって表されます。'
-ms.openlocfilehash: b3c4f9c7e7429487c1a9d44ba76ce1ef0a551f9c
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 6b1f2002b37fc38ae4a57857c01d188d787cc84f
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27024186"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27894216"
 ---
 # <a name="plannerchecklistitem-resource-type"></a>plannerChecklistItem リソースの種類
 
@@ -15,7 +16,7 @@ ms.locfileid: "27024186"
 
 
 ## <a name="properties"></a>プロパティ
-| プロパティ     | 型   |説明|
+| プロパティ     | 種類   |説明|
 |:---------------|:--------|:----------|
 |isChecked|Boolean|項目がチェックされた場合は `true`、それ以外の場合は `false` です。|
 |lastModifiedBy|[identitySet](identityset.md)| 読み取り専用です。これを最後に変更したユーザーの ID。|

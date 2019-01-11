@@ -1,12 +1,13 @@
 ---
 title: メッセージを一覧表示する
 description: 'サインイン中のユーザーのメールボックス内のメッセージを取得します (削除済みアイテムと低優先メール フォルダーを含む)。 '
-ms.openlocfilehash: 6647b1c171bc415844d5154438469122161487eb
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: cc361c3f6a4f41d96eb058fdd5f1fd8ac1d015a1
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27072231"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27894601"
 ---
 # <a name="list-messages"></a>メッセージを一覧表示する
 
@@ -65,7 +66,7 @@ GET /users/{id | userPrincipalName}/messages?$filter=mentionsPreview/isMentioned
 使用することができます、 `$filter` 、サインイン中のユーザーに言及するこれらのメッセージを取得するための**mentionsPreview**プロパティにパラメーター クエリを実行します。
 
 ## <a name="request-headers"></a>要求ヘッダー
-| 名前       | 型 | 説明|
+| 名前       | 種類 | 説明|
 |:-----------|:------|:----------|
 | Authorization  | string  | ベアラー {トークン}。必須。 |
 | Prefer: outlook.body-content-type | 文字列 | **body** プロパティと **uniqueBody** プロパティが返されるときの形式です。 値は、"text" または "html" になります。 ヘッダーが指定されていない場合は、**body** プロパティと **uniqueBody** プロパティは HTML 形式で返されます。 省略可能。 |

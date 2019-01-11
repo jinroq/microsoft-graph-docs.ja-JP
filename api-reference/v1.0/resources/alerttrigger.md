@@ -2,18 +2,19 @@
 title: alertTrigger リソースの種類
 description: (プロパティがアラートのエンティティに存在する)、検出をトリガーするプロパティについて説明します。
 author: Preetikr
-ms.openlocfilehash: f0888e6caf78d806909f818a8b72fb21320e7796
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 1dc8bb2b18380da50134aa67e742da89dea3c057
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27341269"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27894342"
 ---
 # <a name="alerttrigger-resource-type"></a>alertTrigger リソースの種類
 
 (プロパティがアラートのエンティティに存在する)、検出をトリガーするプロパティについて説明します。
 
-## <a name="properties"></a>Properties
+## <a name="properties"></a>プロパティ
 
 | プロパティ   | 種類|説明|
 |:---------------|:--------|:----------|

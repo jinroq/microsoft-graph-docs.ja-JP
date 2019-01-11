@@ -1,12 +1,13 @@
 ---
 title: Get conversationThread
 description: 'グループに属している特定のスレッドを取得します。 親スレッドと、スレッドの両方を指定することができますか、 '
-ms.openlocfilehash: 1c4e0da5a85464c07844c976140425a70fd48b76
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 61ec38651274cf71e87f362927de66873a6cca24
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27021885"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27894244"
 ---
 # <a name="get-conversationthread"></a>Get conversationThread
 

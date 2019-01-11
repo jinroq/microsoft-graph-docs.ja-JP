@@ -1,12 +1,13 @@
 ---
 title: governanceRuleSetting リソースの種類
 description: ロールの設定で構成されたルールを表します。
-ms.openlocfilehash: 486b5163c59772c971cfc1d61a98817b7f0c16f5
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 7554c96daec70a95cde5ab0c3faedfba74764cff
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27070678"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27894258"
 ---
 # <a name="governancerulesetting-resource-type"></a>governanceRuleSetting リソースの種類
 
@@ -16,7 +17,7 @@ ms.locfileid: "27070678"
 
 
 ## <a name="properties"></a>プロパティ
-|プロパティ      | 型         |説明|
+|プロパティ      | 種類         |説明|
 |:-------------|:-------------|:----------|
 |ruleIdentifier|String        |ルールの id です。 たとえば、``ExpirationRule``と``MfaRule``。|
 |setting       |String        |ルールの設定をします。 値は、Parameter_Name:Parameter_Value の形式でのペアの一覧を JSON 文字列です。 たとえば、`{"permanentAssignment":false,"maximumGrantPeriodInMinutes":129600}` では、|

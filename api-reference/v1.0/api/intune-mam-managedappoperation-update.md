@@ -2,12 +2,13 @@
 title: managedAppOperation の更新
 description: managedAppOperation オブジェクトのプロパティを更新します。
 author: tfitzmac
-ms.openlocfilehash: 2bd0d326a4300bdae29484b547bbd5aa429728ed
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: d4ddc127c6d35a44f10e6ad9ff6f1fef82462392
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27311978"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27875580"
 ---
 # <a name="update-managedappoperation"></a>managedAppOperation の更新
 

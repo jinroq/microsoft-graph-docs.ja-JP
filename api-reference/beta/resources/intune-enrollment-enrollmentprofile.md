@@ -1,12 +1,13 @@
 ---
 title: enrollmentProfile リソースの種類
 description: EnrollmentProfile リソースでは、プレステージされて id が特定のデバイスの登録を有効にするのには事前登録を提供する必要がある構成のコレクションを表します。 ステージング済みのデバイスの id は、対応するデバイスの登録時のプロファイルの構成を適用するのには、このタイプのプロファイルに割り当てられます。
-ms.openlocfilehash: 884fee5c6851e79d96cd036294e5e5485d6df66a
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 43aa6f5f3e8093da0c066012d763e5f0f6455da6
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27070132"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27894307"
 ---
 # <a name="enrollmentprofile-resource-type"></a>enrollmentProfile リソースの種類
 
@@ -28,14 +29,14 @@ EnrollmentProfile リソースでは、プレステージされて id が特定�
 |[updateDeviceProfileAssignment アクション](../api/intune-enrollment-enrollmentprofile-updatedeviceprofileassignment.md)|なし|まだ文書化されていません|
 
 ## <a name="properties"></a>プロパティ
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
-|id|String|オブジェクトの GUID|
+|ID|String|オブジェクトの GUID|
 |displayName|String|プロファイルの名前|
 |説明|String|プロファイルの説明|
-|requiresUserAuthentication|ブール値|プロファイルにユーザー認証が必要なかどうかを示します|
+|requiresUserAuthentication|ブール型|プロファイルにユーザー認証が必要なかどうかを示します|
 |configurationEndpointUrl|String|登録に使用するエンドポイントの url を構成|
-|enableAuthenticationViaCompanyPortal|ブール値|アップルらくらく企業ポータルではなくを使用して認証することを示します。|
+|enableAuthenticationViaCompanyPortal|ブール型|アップルらくらく企業ポータルではなくを使用して認証することを示します。|
 
 ## <a name="relationships"></a>リレーションシップ
 なし

@@ -1,12 +1,13 @@
 ---
 title: directoryRole をアクティブにする
 description: ディレクトリ ロールをアクティブにします。 ディレクトリのロールの読み取りや、そのメンバーにする必要があります最初でアクティブにするテナントです。 会社の管理者とユーザー ディレクトリの暗黙の役割は、既定でアクティブ化されます。 アクセスし、ディレクトリの別のロールにメンバーを割り当てる、する必要があります最初をアクティブに対応するディレクトリのロール テンプレート (directoryRoleTemplate) を使用。
-ms.openlocfilehash: 2a81bedaf4998e44825abc5e2cf0a93ec8708f96
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 6045b4307b571d84ac28467af21f7aa89b6ee7fe
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27068903"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27894391"
 ---
 # <a name="activate-directoryrole"></a>directoryRole をアクティブにする
 
@@ -30,7 +31,7 @@ POST /directoryRoles
 
 ```
 ## <a name="request-headers"></a>要求ヘッダー
-| 名前       | 型 | 説明|
+| 名前       | 種類 | 説明|
 |:---------------|:--------|:----------|
 | Authorization  | string  | ベアラー {トークン}。必須。 |
 

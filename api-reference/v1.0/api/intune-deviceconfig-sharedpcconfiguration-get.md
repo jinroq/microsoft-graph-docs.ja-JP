@@ -2,12 +2,13 @@
 title: Get sharedPCConfiguration
 description: sharedPCConfiguration オブジェクトのプロパティとリレーションシップを読み取ります。
 author: tfitzmac
-ms.openlocfilehash: 477103638c0d0315ee285c21b4572328038759fa
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: e727f30beb46d58aa64051d4470f9f168fc38bc3
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27344759"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27894069"
 ---
 # <a name="get-sharedpcconfiguration"></a>Get sharedPCConfiguration
 

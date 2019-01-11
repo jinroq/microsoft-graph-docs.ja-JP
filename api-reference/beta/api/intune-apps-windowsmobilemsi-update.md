@@ -2,12 +2,13 @@
 title: windowsMobileMSI の更新
 description: windowsMobileMSI オブジェクトのプロパティを更新します。
 author: tfitzmac
-ms.openlocfilehash: 859d32fbf053ba22c0bd59afe8ad24d6b05c84a1
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 6632343b7a85b6f3444908b6dc3699d11bf4673a
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27310746"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27894580"
 ---
 # <a name="update-windowsmobilemsi"></a>windowsMobileMSI の更新
 
