@@ -1,28 +1,29 @@
 ---
 title: Web サイトのリソースの種類
 description: Web サイトを表します。
-ms.openlocfilehash: 14934aae418581f4c75c880be67bf51fd0bc293c
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 1ffbee8a67527aac97bb4f60b7f8b1637ba1ebe5
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27020744"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27851367"
 ---
-# <a name="website-resource-type"></a><span data-ttu-id="2b112-103">Web サイトのリソースの種類</span><span class="sxs-lookup"><span data-stu-id="2b112-103">website resource type</span></span>
+# <a name="website-resource-type"></a><span data-ttu-id="a157f-103">Web サイトのリソースの種類</span><span class="sxs-lookup"><span data-stu-id="a157f-103">website resource type</span></span>
 
-<span data-ttu-id="2b112-104">Web サイトを表します。</span><span class="sxs-lookup"><span data-stu-id="2b112-104">Represents a website.</span></span>
+<span data-ttu-id="a157f-104">Web サイトを表します。</span><span class="sxs-lookup"><span data-stu-id="a157f-104">Represents a website.</span></span>
 
 
-## <a name="properties"></a><span data-ttu-id="2b112-105">プロパティ</span><span class="sxs-lookup"><span data-stu-id="2b112-105">Properties</span></span>
-| <span data-ttu-id="2b112-106">プロパティ</span><span class="sxs-lookup"><span data-stu-id="2b112-106">Property</span></span>     | <span data-ttu-id="2b112-107">型</span><span class="sxs-lookup"><span data-stu-id="2b112-107">Type</span></span>   |<span data-ttu-id="2b112-108">説明</span><span class="sxs-lookup"><span data-stu-id="2b112-108">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="a157f-105">プロパティ</span><span class="sxs-lookup"><span data-stu-id="a157f-105">Properties</span></span>
+| <span data-ttu-id="a157f-106">プロパティ</span><span class="sxs-lookup"><span data-stu-id="a157f-106">Property</span></span>     | <span data-ttu-id="a157f-107">種類</span><span class="sxs-lookup"><span data-stu-id="a157f-107">Type</span></span>   |<span data-ttu-id="a157f-108">説明</span><span class="sxs-lookup"><span data-stu-id="a157f-108">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="2b112-109">type</span><span class="sxs-lookup"><span data-stu-id="2b112-109">type</span></span>|<span data-ttu-id="2b112-110">websiteType</span><span class="sxs-lookup"><span data-stu-id="2b112-110">websiteType</span></span>| <span data-ttu-id="2b112-111">可能な値: `other`、 `home`、 `work`、 `blog`、 `profile`。</span><span class="sxs-lookup"><span data-stu-id="2b112-111">The possible values are: `other`, `home`, `work`, `blog`, `profile`.</span></span>|
-|<span data-ttu-id="2b112-112">address</span><span class="sxs-lookup"><span data-stu-id="2b112-112">address</span></span>|<span data-ttu-id="2b112-113">文字列</span><span class="sxs-lookup"><span data-stu-id="2b112-113">string</span></span>|<span data-ttu-id="2b112-114">Web サイトの URL。</span><span class="sxs-lookup"><span data-stu-id="2b112-114">The URL of the website.</span></span>|
-|<span data-ttu-id="2b112-115">displayName</span><span class="sxs-lookup"><span data-stu-id="2b112-115">displayName</span></span>|<span data-ttu-id="2b112-116">string</span><span class="sxs-lookup"><span data-stu-id="2b112-116">string</span></span>|<span data-ttu-id="2b112-117">Web サイトの表示名。</span><span class="sxs-lookup"><span data-stu-id="2b112-117">The display name of the web site.</span></span>|
+|<span data-ttu-id="a157f-109">type</span><span class="sxs-lookup"><span data-stu-id="a157f-109">type</span></span>|<span data-ttu-id="a157f-110">websiteType</span><span class="sxs-lookup"><span data-stu-id="a157f-110">websiteType</span></span>| <span data-ttu-id="a157f-111">可能な値: `other`、 `home`、 `work`、 `blog`、 `profile`。</span><span class="sxs-lookup"><span data-stu-id="a157f-111">The possible values are: `other`, `home`, `work`, `blog`, `profile`.</span></span>|
+|<span data-ttu-id="a157f-112">address</span><span class="sxs-lookup"><span data-stu-id="a157f-112">address</span></span>|<span data-ttu-id="a157f-113">文字列</span><span class="sxs-lookup"><span data-stu-id="a157f-113">string</span></span>|<span data-ttu-id="a157f-114">Web サイトの URL。</span><span class="sxs-lookup"><span data-stu-id="a157f-114">The URL of the website.</span></span>|
+|<span data-ttu-id="a157f-115">displayName</span><span class="sxs-lookup"><span data-stu-id="a157f-115">displayName</span></span>|<span data-ttu-id="a157f-116">string</span><span class="sxs-lookup"><span data-stu-id="a157f-116">string</span></span>|<span data-ttu-id="a157f-117">Web サイトの表示名。</span><span class="sxs-lookup"><span data-stu-id="a157f-117">The display name of the web site.</span></span>|
 
-## <a name="json-representation"></a><span data-ttu-id="2b112-118">JSON 表記</span><span class="sxs-lookup"><span data-stu-id="2b112-118">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="a157f-118">JSON 表記</span><span class="sxs-lookup"><span data-stu-id="a157f-118">JSON representation</span></span>
 
-<span data-ttu-id="2b112-119">リソースの JSON 表記を次に示します。</span><span class="sxs-lookup"><span data-stu-id="2b112-119">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="a157f-119">リソースの JSON 表記を次に示します。</span><span class="sxs-lookup"><span data-stu-id="a157f-119">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
