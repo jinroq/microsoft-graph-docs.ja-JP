@@ -2,53 +2,54 @@
 title: '投稿: 返信'
 description: 'グループ会話の投稿に返信して、指定されたスレッドに新しい投稿を追加します。 指定できます。 '
 author: dkershaw10
-ms.openlocfilehash: d20d7411a2456d30fc5c45f93a194db5574f2672
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: f4692680833b45e0b2542a7d55c5bda3a861af07
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27353789"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27814820"
 ---
-# <a name="post-reply"></a><span data-ttu-id="e10d9-104">投稿: 返信</span><span class="sxs-lookup"><span data-stu-id="e10d9-104">post: reply</span></span>
+# <a name="post-reply"></a><span data-ttu-id="879b3-104">投稿: 返信</span><span class="sxs-lookup"><span data-stu-id="879b3-104">post: reply</span></span>
 
-<span data-ttu-id="e10d9-p102">グループ会話の投稿に返信して、指定されたスレッドに新しい投稿を追加します。要求内で親の会話とスレッドの両方を指定するか、または親の会話を使用せずに親スレッドだけを指定することができます。</span><span class="sxs-lookup"><span data-stu-id="e10d9-p102">Reply to a post and add a new post to the specified thread in a group conversation. You can specify both the parent conversation and thread in the request, or, you can specify just the parent thread without the parent conversation.</span></span>
+<span data-ttu-id="879b3-p102">グループ会話の投稿に返信して、指定されたスレッドに新しい投稿を追加します。要求内で親の会話とスレッドの両方を指定するか、または親の会話を使用せずに親スレッドだけを指定することができます。</span><span class="sxs-lookup"><span data-stu-id="879b3-p102">Reply to a post and add a new post to the specified thread in a group conversation. You can specify both the parent conversation and thread in the request, or, you can specify just the parent thread without the parent conversation.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="e10d9-107">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="e10d9-107">Permissions</span></span>
-<span data-ttu-id="e10d9-p103">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="e10d9-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="879b3-107">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="879b3-107">Permissions</span></span>
+<span data-ttu-id="879b3-p103">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="879b3-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="e10d9-110">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="e10d9-110">Permission type</span></span>      | <span data-ttu-id="e10d9-111">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="e10d9-111">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="879b3-110">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="879b3-110">Permission type</span></span>      | <span data-ttu-id="879b3-111">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="879b3-111">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="e10d9-112">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="e10d9-112">Delegated (work or school account)</span></span> | <span data-ttu-id="e10d9-113">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="e10d9-113">Group.ReadWrite.All</span></span>    |
-|<span data-ttu-id="e10d9-114">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="e10d9-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="e10d9-115">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="e10d9-115">Not supported.</span></span>    |
-|<span data-ttu-id="e10d9-116">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="e10d9-116">Application</span></span> | <span data-ttu-id="e10d9-117">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="e10d9-117">Group.ReadWrite.All</span></span> |
+|<span data-ttu-id="879b3-112">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="879b3-112">Delegated (work or school account)</span></span> | <span data-ttu-id="879b3-113">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="879b3-113">Group.ReadWrite.All</span></span>    |
+|<span data-ttu-id="879b3-114">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="879b3-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="879b3-115">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="879b3-115">Not supported.</span></span>    |
+|<span data-ttu-id="879b3-116">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="879b3-116">Application</span></span> | <span data-ttu-id="879b3-117">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="879b3-117">Group.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="e10d9-118">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="e10d9-118">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="879b3-118">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="879b3-118">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /groups/{id}/threads/{id}/posts/{id}/reply
 POST /groups/{id}/conversations/{id}/threads/{id}/posts/{id}/reply
 
 ```
-## <a name="request-headers"></a><span data-ttu-id="e10d9-119">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="e10d9-119">Request headers</span></span>
-| <span data-ttu-id="e10d9-120">ヘッダー</span><span class="sxs-lookup"><span data-stu-id="e10d9-120">Header</span></span>       | <span data-ttu-id="e10d9-121">値</span><span class="sxs-lookup"><span data-stu-id="e10d9-121">Value</span></span> |
+## <a name="request-headers"></a><span data-ttu-id="879b3-119">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="879b3-119">Request headers</span></span>
+| <span data-ttu-id="879b3-120">ヘッダー</span><span class="sxs-lookup"><span data-stu-id="879b3-120">Header</span></span>       | <span data-ttu-id="879b3-121">値</span><span class="sxs-lookup"><span data-stu-id="879b3-121">Value</span></span> |
 |:---------------|:--------|
-| <span data-ttu-id="e10d9-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="e10d9-122">Authorization</span></span>  | <span data-ttu-id="e10d9-p104">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="e10d9-p104">Bearer {token}. Required.</span></span>  |
+| <span data-ttu-id="879b3-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="879b3-122">Authorization</span></span>  | <span data-ttu-id="879b3-p104">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="879b3-p104">Bearer {token}. Required.</span></span>  |
 
-## <a name="request-body"></a><span data-ttu-id="e10d9-125">要求本文</span><span class="sxs-lookup"><span data-stu-id="e10d9-125">Request body</span></span>
-<span data-ttu-id="e10d9-126">要求本文で、次のパラメーターを含む JSON オブジェクトを指定します。</span><span class="sxs-lookup"><span data-stu-id="e10d9-126">In the request body, provide a JSON object with the following parameters.</span></span>
+## <a name="request-body"></a><span data-ttu-id="879b3-125">要求本文</span><span class="sxs-lookup"><span data-stu-id="879b3-125">Request body</span></span>
+<span data-ttu-id="879b3-126">要求本文で、次のパラメーターを含む JSON オブジェクトを指定します。</span><span class="sxs-lookup"><span data-stu-id="879b3-126">In the request body, provide a JSON object with the following parameters.</span></span>
 
-| <span data-ttu-id="e10d9-127">パラメーター</span><span class="sxs-lookup"><span data-stu-id="e10d9-127">Parameter</span></span>    | <span data-ttu-id="e10d9-128">種類</span><span class="sxs-lookup"><span data-stu-id="e10d9-128">Type</span></span>   |<span data-ttu-id="e10d9-129">説明</span><span class="sxs-lookup"><span data-stu-id="e10d9-129">Description</span></span>|
+| <span data-ttu-id="879b3-127">パラメーター</span><span class="sxs-lookup"><span data-stu-id="879b3-127">Parameter</span></span>    | <span data-ttu-id="879b3-128">Type</span><span class="sxs-lookup"><span data-stu-id="879b3-128">Type</span></span>   |<span data-ttu-id="879b3-129">説明</span><span class="sxs-lookup"><span data-stu-id="879b3-129">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="e10d9-130">post</span><span class="sxs-lookup"><span data-stu-id="e10d9-130">post</span></span>|[<span data-ttu-id="e10d9-131">post</span><span class="sxs-lookup"><span data-stu-id="e10d9-131">post</span></span>](../resources/post.md)|<span data-ttu-id="e10d9-132">返信中の新規の投稿。</span><span class="sxs-lookup"><span data-stu-id="e10d9-132">The new post that is being replied with.</span></span>|
+|<span data-ttu-id="879b3-130">post</span><span class="sxs-lookup"><span data-stu-id="879b3-130">post</span></span>|[<span data-ttu-id="879b3-131">post</span><span class="sxs-lookup"><span data-stu-id="879b3-131">post</span></span>](../resources/post.md)|<span data-ttu-id="879b3-132">返信中の新規の投稿。</span><span class="sxs-lookup"><span data-stu-id="879b3-132">The new post that is being replied with.</span></span>|
 
-## <a name="response"></a><span data-ttu-id="e10d9-133">応答</span><span class="sxs-lookup"><span data-stu-id="e10d9-133">Response</span></span>
+## <a name="response"></a><span data-ttu-id="879b3-133">応答</span><span class="sxs-lookup"><span data-stu-id="879b3-133">Response</span></span>
 
-<span data-ttu-id="e10d9-p105">成功した場合、このメソッドは `200 OK` 応答コードを返します。応答本文には何も返されません。</span><span class="sxs-lookup"><span data-stu-id="e10d9-p105">If successful, this method returns `200 OK` response code. It does not return anything in the response body.</span></span>
+<span data-ttu-id="879b3-p105">成功した場合、このメソッドは `200 OK` 応答コードを返します。応答本文には何も返されません。</span><span class="sxs-lookup"><span data-stu-id="879b3-p105">If successful, this method returns `200 OK` response code. It does not return anything in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="e10d9-136">例</span><span class="sxs-lookup"><span data-stu-id="e10d9-136">Example</span></span>
-<span data-ttu-id="e10d9-137">以下は、この API を呼び出す方法の例です。</span><span class="sxs-lookup"><span data-stu-id="e10d9-137">Here is an example of how to call this API.</span></span>
-##### <a name="request"></a><span data-ttu-id="e10d9-138">要求</span><span class="sxs-lookup"><span data-stu-id="e10d9-138">Request</span></span>
-<span data-ttu-id="e10d9-139">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="e10d9-139">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="879b3-136">例</span><span class="sxs-lookup"><span data-stu-id="879b3-136">Example</span></span>
+<span data-ttu-id="879b3-137">以下は、この API を呼び出す方法の例です。</span><span class="sxs-lookup"><span data-stu-id="879b3-137">Here is an example of how to call this API.</span></span>
+##### <a name="request"></a><span data-ttu-id="879b3-138">要求</span><span class="sxs-lookup"><span data-stu-id="879b3-138">Request</span></span>
+<span data-ttu-id="879b3-139">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="879b3-139">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "post_reply"
@@ -111,8 +112,8 @@ Content-length: 1131
 }
 ```
 
-##### <a name="response"></a><span data-ttu-id="e10d9-140">応答</span><span class="sxs-lookup"><span data-stu-id="e10d9-140">Response</span></span>
-<span data-ttu-id="e10d9-141">以下は、応答の例です。</span><span class="sxs-lookup"><span data-stu-id="e10d9-141">Here is an example of the response.</span></span>
+##### <a name="response"></a><span data-ttu-id="879b3-140">応答</span><span class="sxs-lookup"><span data-stu-id="879b3-140">Response</span></span>
+<span data-ttu-id="879b3-141">以下は、応答の例です。</span><span class="sxs-lookup"><span data-stu-id="879b3-141">Here is an example of the response.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true
