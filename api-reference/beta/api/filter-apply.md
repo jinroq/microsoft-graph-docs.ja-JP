@@ -1,12 +1,13 @@
 ---
 title: 'フィルター: 適用'
 description: 指定した列に指定されたフィルター条件を適用します。
-ms.openlocfilehash: e799b4e4b5f94664e9420e810075205691e1bd96
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 3b37344ae3047b54488fa0dd95944c0f34e3bd2b
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27066356"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27882902"
 ---
 # <a name="filter-apply"></a>フィルター: 適用
 
@@ -37,7 +38,7 @@ POST /workbook/worksheets/{id|name}/tables/{id|name}/columns/{id|name}/filter/ap
 ## <a name="request-body"></a>要求本文
 要求本文で、次のパラメーターを含む JSON オブジェクトを指定します。
 
-| パラメーター    | 型   |説明|
+| パラメーター    | Type   |説明|
 |:---------------|:--------|:----------|
 |criteria|FilterCriteria|適用する基準。|
 

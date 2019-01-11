@@ -2,12 +2,13 @@
 title: NetworkIPv4ConfigurationManagementCondition を更新します。
 description: NetworkIPv4ConfigurationManagementCondition オブジェクトのプロパティを更新します。
 author: tfitzmac
-ms.openlocfilehash: 15ced5b6e4f92d25945ab76144e5a30438bb258f
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: fc9662e812909bb78a0a9441c5fd0cb6929d26db
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27317284"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27867824"
 ---
 # <a name="update-networkipv4configurationmanagementcondition"></a>NetworkIPv4ConfigurationManagementCondition を更新します。
 

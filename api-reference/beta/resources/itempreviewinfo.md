@@ -3,12 +3,13 @@ author: kevinlam
 ms.author: kevinlam
 ms.date: 3/16/2018
 title: ItemPreviewInfo - OneDrive API
-ms.openlocfilehash: 3fa9d10ae3aade7be96e81168b34df84698da1c1
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 0f2a161b9b43a8d372b90530b1b9d9244f77d8e9
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27068136"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27857345"
 ---
 # <a name="itempreviewinfo-resource-type"></a>ItemPreviewInfo リソースの種類
 
@@ -28,7 +29,7 @@ ms.locfileid: "27068136"
 
 ## <a name="properties"></a>プロパティ
 
-| 名前           | 型   | 説明
+| 名前           | 種類   | 説明
 |:---------------|:-------|:---------------------------------------------------
 | getUrl         | 文字列 | HTTP の GET (iframe など) を使用して埋め込みの適切な URL
 | postUrl        | 文字列 | HTTP POST を使用して埋め込みの適切な URL (フォーム ポスト、JS など)。
@@ -36,7 +37,7 @@ ms.locfileid: "27068136"
 
 GetUrl、postUrl、またはその両方は、指定したオプションのサポートの現在の状態によって返される可能性があります。
 
-として書式設定された文字列は、postParameters`application/x-www-form-urlencoded`と postUrl のコンテンツの種類へのポストを実行し、それに応じて設定する必要があります。 例:
+として書式設定された文字列は、postParameters`application/x-www-form-urlencoded`と postUrl のコンテンツの種類へのポストを実行し、それに応じて設定する必要があります。 次に例を示します。
 ```
 POST https://www.onedrive.com/embed_by_post
 Content-Type: application/x-www-form-urlencoded

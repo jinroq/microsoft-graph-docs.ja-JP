@@ -2,12 +2,13 @@
 title: rolePermission リソースの種類
 description: まだ文書化されていません
 author: tfitzmac
-ms.openlocfilehash: c33af6af3bc06a53bd24ddf97576551a5eea6e9c
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 0669a0e169a71ea3806b21a125a4921b5161d516
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27349106"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27855574"
 ---
 # <a name="rolepermission-resource-type"></a>rolePermission リソースの種類
 

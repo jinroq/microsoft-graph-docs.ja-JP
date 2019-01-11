@@ -2,12 +2,13 @@
 title: Create windowsPhone81GeneralConfiguration
 description: 新しい windowsPhone81GeneralConfiguration オブジェクトを作成します。
 author: tfitzmac
-ms.openlocfilehash: 23e98acd93fc5851df690b7f06ee0bac3a16ce70
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 594dc82a4be7e939bd04d937cbf4d2ed583d7ddd
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27307085"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27867082"
 ---
 # <a name="create-windowsphone81generalconfiguration"></a>Create windowsPhone81GeneralConfiguration
 

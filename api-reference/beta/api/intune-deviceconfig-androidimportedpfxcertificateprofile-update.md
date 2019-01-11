@@ -2,12 +2,13 @@
 title: AndroidImportedPFXCertificateProfile を更新します。
 description: AndroidImportedPFXCertificateProfile オブジェクトのプロパティを更新します。
 author: tfitzmac
-ms.openlocfilehash: f8f4f78dbefaa3ed2b9e945d2d5eece5046a5bba
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 7b7a70297a093c714fe6c28998bb8e708f34276a
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27352536"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27863799"
 ---
 # <a name="update-androidimportedpfxcertificateprofile"></a>AndroidImportedPFXCertificateProfile を更新します。
 

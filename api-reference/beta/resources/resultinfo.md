@@ -2,12 +2,13 @@
 title: resultInfo リソースの種類
 description: ResultInfo 型です。
 author: VinodRavichandran
-ms.openlocfilehash: db208ed214213ec906dac18b65140f010014fc6c
-ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
+localization_priority: Normal
+ms.openlocfilehash: ca814fd5c44f0f811099faed53354d08ce8befdc
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "27380409"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27855280"
 ---
 # <a name="resultinfo-resource-type"></a>resultInfo リソースの種類
 
@@ -17,7 +18,7 @@ ResultInfo 型です。
 
 ## <a name="properties"></a>プロパティ
 
-| プロパティ | 型   | 説明          |
+| プロパティ | 種類   | 説明          |
 | :------- | :----- | :------------------  |
 | code     | String | 結果コード。     |
 | message  | String | メッセージ。         |

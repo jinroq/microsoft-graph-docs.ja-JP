@@ -1,12 +1,13 @@
 ---
 title: localeInfo リソースの種類
 description: サインインしているユーザーの優先言語および国/地域を含むロケールに関する情報。
-ms.openlocfilehash: f61f1af1d4ad49b1083403576ac4069d97d694cb
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 0c89a133ba31965b99099555ad18f185495fe4c8
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27024187"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27862588"
 ---
 # <a name="localeinfo-resource-type"></a>localeInfo リソースの種類
 
@@ -14,7 +15,7 @@ ms.locfileid: "27024187"
 
 
 ## <a name="properties"></a>プロパティ
-| プロパティ     | 型   |説明|
+| プロパティ     | 種類   |説明|
 |:---------------|:--------|:----------|
 |locale|文字列|ユーザーのロケールを表します。ユーザーの優先言語および国/地域が含まれます。たとえば、"en-us"。言語のコンポーネントは [ISO 639-1](https://www.iso.org/iso/home/standards/language_codes.htm) で定義されている 2 文字のコードに従い、国のコンポーネントは [ISO 3166-1 alpha-2](https://www.iso.org/iso/country_codes.htm) で定義されている 2 文字のコードに従います。|
 |displayName|string|たとえば "English (United States)" のように、ユーザーのロケールを自然言語で表す名前。|

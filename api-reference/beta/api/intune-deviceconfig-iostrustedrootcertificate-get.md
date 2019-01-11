@@ -2,12 +2,13 @@
 title: IosTrustedRootCertificate を取得します。
 description: IosTrustedRootCertificate オブジェクトのプロパティと関係を参照してください。
 author: tfitzmac
-ms.openlocfilehash: 605acc30d19144cda121790b5f5b32d58712b543
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 1c8030414ac5fd41a61c56107429933fb7b08b60
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27312286"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27863141"
 ---
 # <a name="get-iostrustedrootcertificate"></a>IosTrustedRootCertificate を取得します。
 

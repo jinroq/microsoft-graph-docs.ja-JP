@@ -2,12 +2,13 @@
 title: iosCertificateProfileBase リソースの種類
 description: iOS 証明書プロファイルが基本です。
 author: tfitzmac
-ms.openlocfilehash: 9f5fd22d67e01ab16f794945afd429757ab8a180
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: f3b958affd9c4660b1c56e97a7510addf9b0b340
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27361181"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27861860"
 ---
 # <a name="ioscertificateprofilebase-resource-type"></a>iosCertificateProfileBase リソースの種類
 
@@ -25,7 +26,7 @@ iOS 証明書プロファイルが基本です。
 |[リスト iosCertificateProfileBases](../api/intune-deviceconfig-ioscertificateprofilebase-list.md)|[iosCertificateProfileBase](../resources/intune-deviceconfig-ioscertificateprofilebase.md)コレクション|[IosCertificateProfileBase](../resources/intune-deviceconfig-ioscertificateprofilebase.md)オブジェクトのプロパティと関係を一覧表示します。|
 |[IosCertificateProfileBase を取得します。](../api/intune-deviceconfig-ioscertificateprofilebase-get.md)|[iosCertificateProfileBase](../resources/intune-deviceconfig-ioscertificateprofilebase.md)|[IosCertificateProfileBase](../resources/intune-deviceconfig-ioscertificateprofilebase.md)オブジェクトのプロパティと関係を参照してください。|
 
-## <a name="properties"></a>Properties
+## <a name="properties"></a>プロパティ
 |プロパティ|種類|説明|
 |:---|:---|:---|
 |ID|String|エンティティのキー。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|

@@ -1,12 +1,13 @@
 ---
 title: ServicePrincipal への後方リンクの一覧
 description: このサービス ・ プリンシパルが直接のメンバーであるグループおよびディレクトリの役割を取得します。 この操作は、推移的ではありません。
-ms.openlocfilehash: 54376d80fdb3cc5084ac19aa331b94d40ac3103f
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 34f80b2741ac6fe9ac6f5b77fe84ae518bcb34c6
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27074541"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27863407"
 ---
 # <a name="list-serviceprincipal-memberof"></a>ServicePrincipal への後方リンクの一覧
 
@@ -36,7 +37,7 @@ GET /servicePrincipals/{id}/memberOf
 このメソッドは、応答をカスタマイズするための [OData クエリ パラメーター](https://developer.microsoft.com/graph/docs/concepts/query_parameters)をサポートします。
 
 ## <a name="request-headers"></a>要求ヘッダー
-| 名前       | 型 | 説明|
+| 名前       | 種類 | 説明|
 |:-----------|:------|:----------|
 | Authorization  | string  | ベアラー {トークン}。必須。 |
 

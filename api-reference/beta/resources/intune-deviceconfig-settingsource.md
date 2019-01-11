@@ -2,12 +2,13 @@
 title: settingSource リソースの種類
 description: まだ文書化されていません
 author: tfitzmac
-ms.openlocfilehash: 7e5fef3e780f6f72e1bd95867e0d5d2c59228ba2
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 0bdddb4ce49b1288f5c3d6302c3bee7c61cf7c9e
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27359522"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27870330"
 ---
 # <a name="settingsource-resource-type"></a>settingSource リソースの種類
 

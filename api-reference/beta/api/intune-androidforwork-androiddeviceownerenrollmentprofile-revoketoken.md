@@ -2,12 +2,13 @@
 title: revokeToken アクション
 description: まだ文書化されていません
 author: tfitzmac
-ms.openlocfilehash: 4c37265b937f865c56e43c0669b5195349b885fc
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 9f664343ec99bf66485f0013c51e051bede3921a
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27333888"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27838018"
 ---
 # <a name="revoketoken-action"></a>revokeToken アクション
 

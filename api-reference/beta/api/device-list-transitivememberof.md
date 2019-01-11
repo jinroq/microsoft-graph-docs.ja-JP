@@ -1,12 +1,13 @@
 ---
 title: デバイスの推移的なグループを一覧表示
 description: メンバーであるデバイスのグループを取得します。 この API 要求は、推移的ともデバイスでは、入れ子にされたメンバーのすべてのグループを返します。
-ms.openlocfilehash: 39589ec7c1858d773ed0907950142ec3b1f4cdef
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: c15080fa3af336ec0a2bd14f0dd7812719bff52a
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27066933"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27874971"
 ---
 # <a name="list-device-transitive-groups"></a>デバイスの推移的なグループを一覧表示
 

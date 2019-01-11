@@ -2,12 +2,13 @@
 title: iosManagedAppRegistrations のリスト
 description: iosManagedAppRegistration オブジェクトのプロパティとリレーションシップをリストします。
 author: tfitzmac
-ms.openlocfilehash: 9247548a2075e5567b1ae44487ab266b3fa1d05e
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: ab55aeb568d2c25e7909bad39898a0059597f3f6
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27311817"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27857359"
 ---
 # <a name="list-iosmanagedappregistrations"></a>iosManagedAppRegistrations のリスト
 

@@ -1,12 +1,13 @@
 ---
 title: ユーザー デバイスの一覧表示
 description: プロジェクト ローマの機能をサポートしているユーザーのデバイスの一覧を取得します。 または、アプリケーションを起動またはアプリケーションにデータを送信する機能が含まれます。 した後に GET 呼び出しを行うし、デバイスが、デバイスにコマンドを送信するデバイスの ID を渡します。
-ms.openlocfilehash: b9e6132af0e16deae1a4175bfc811f74c18e1ae6
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 455a134b2edcf64255a2818887c6ff68959a1202
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27073610"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27855924"
 ---
 # <a name="list-user-devices"></a>ユーザー デバイスの一覧表示
 
@@ -72,7 +73,7 @@ HTTP/1.1 200 OK
 }
 ```
 
-## <a name="example"></a>使用例
+## <a name="example"></a>例
 この例では、ユーザーのデバイスの一覧を返します。 コマンドを使用してをデバイスに`me/devices/{id}/command`、返されたデバイスの ID を取得する必要があります。
 
 #### <a name="request"></a>要求

@@ -2,12 +2,13 @@
 title: 'TableColumnCollection: 追加'
 description: テーブルに新しい列を追加します。
 author: lumine2008
-ms.openlocfilehash: a0897dc4eff387d14643b0a067ef92ad79755614
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: bd3c1a2b1cbfcb8d0e47f9d7ec93b0695e9854c3
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27350023"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27870239"
 ---
 # <a name="tablecolumncollection-add"></a>TableColumnCollection: 追加
 
@@ -39,9 +40,9 @@ POST /workbook/worksheets/{id|name}/tables/{id|name}/columns/add
 ## <a name="request-body"></a>要求本文
 要求本文で、次のパラメーターを含む JSON オブジェクトを指定します。
 
-| パラメーター    | 種類   |説明|
+| パラメーター    | Type   |説明|
 |:---------------|:--------|:----------|
-|index|数値|新しい列の相対位置を指定します。この位置の前の列は右にシフトされます。インデックス値は、最後の列のインデックス値と等しいか、小さくなります。そのため、テーブルの末尾に列を追加するためには使用できません。0 を起点とする番号になります。|
+|index|number|新しい列の相対位置を指定します。この位置の前の列は右にシフトされます。インデックス値は、最後の列のインデックス値と等しいか、小さくなります。そのため、テーブルの末尾に列を追加するためには使用できません。0 を起点とする番号になります。|
 |values|(boolean、string、または number)|省略可能。テーブルの列の、書式設定されていない値の 2 次元の配列。|
 
 ## <a name="response"></a>応答

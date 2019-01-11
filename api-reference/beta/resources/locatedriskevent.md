@@ -1,12 +1,13 @@
 ---
 title: locatedRiskEvent リソースの種類
 description: Azure Active ディレクトリ Id 保護場所データに基づくによって検出されたリスク イベントです。 あるリスク イベントの種類は次のとおりです。
-ms.openlocfilehash: e84cff5985905977b6b1eeb75a9ef9703a2a2078
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 256c7a980fb9540e7e80337a5b8aad29fe73f26a
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27069398"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27867558"
 ---
 # <a name="locatedriskevent-resource-type"></a>locatedRiskEvent リソースの種類
 
@@ -27,11 +28,11 @@ ms.locfileid: "27069398"
 |[LocatedRiskEvent を取得します。](../api/locatedriskevent-get.md) | [locatedRiskEvent](locatedriskevent.md) |LocatedRiskEvent オブジェクトのプロパティと関係を参照してください。|
 
 ## <a name="properties"></a>プロパティ
-| プロパティ     | 型   |説明|
+| プロパティ     | 種類   |説明|
 |:---------------|:--------|:----------|
 |closedDateTime|dateTimeOffset| リスク イベントが終了したときの日時|
 |createdDateTime|dateTimeOffset| 日付とイベントが作成された時刻です。 以上のリスク イベント自体の日付と時刻を常にです。 これは、リスク イベントを照会するときにフィルターとして使用する適切なプロパティです。|
-|ID|文字列| 読み取り専用|
+|ID|文字列| 読み取り専用です。|
 |ipAddress|文字列| サインイン用の IP アドレス|
 |location|文字列| サインイン用の IP アドレスに接続されている場所|
 |riskEventDateTime|dateTimeOffset| リスク イベントが発生したときの日時|

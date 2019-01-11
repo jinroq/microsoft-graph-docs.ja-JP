@@ -1,12 +1,13 @@
 ---
 title: subscribedSku を取得する
 description: 組織で取得した特定の商用サブスクリプションを取得します。
-ms.openlocfilehash: 72516fd527a268239aba7bb8e5e57757984af25a
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: a031e22e937f1c2b88538c70eb9456fb8c57b277
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27070402"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27863463"
 ---
 # <a name="get-subscribedsku"></a>subscribedSku を取得する
 
@@ -32,7 +33,7 @@ GET /subscribedSkus/{id}
 ## <a name="optional-query-parameters"></a>オプションのクエリ パラメーター
 このメソッドは、応答をカスタマイズするための [OData クエリ パラメーター](https://developer.microsoft.com/graph/docs/concepts/query_parameters)をサポートします。
 ## <a name="request-headers"></a>要求ヘッダー
-| 名前       | 型 | 説明|
+| 名前       | 種類 | 説明|
 |:-----------|:------|:----------|
 | Authorization  | string  | ベアラー {トークン}。必須。 |
 

@@ -2,12 +2,13 @@
 title: MacOSWiFiConfiguration を更新します。
 description: MacOSWiFiConfiguration オブジェクトのプロパティを更新します。
 author: tfitzmac
-ms.openlocfilehash: 59422770cf3d6877829492485b9ed11cd30bda1e
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 56a19dc34c7116e8db0af2d12f97f6e87bbf1dd9
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27322940"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27886703"
 ---
 # <a name="update-macoswificonfiguration"></a>MacOSWiFiConfiguration を更新します。
 

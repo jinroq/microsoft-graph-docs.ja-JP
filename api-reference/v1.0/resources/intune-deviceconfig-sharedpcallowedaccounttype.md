@@ -2,12 +2,13 @@
 title: sharedPCAllowedAccountType 列挙型
 description: PC の共有を許可するアカウントの種類です。
 author: tfitzmac
-ms.openlocfilehash: c85940d71c60a909ff0eda6cef4b1dd2c0942c3f
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 2fd7861987990a058ebac0c5b1543debb4522aa4
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27314568"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27859991"
 ---
 # <a name="sharedpcallowedaccounttype-enum-type"></a>sharedPCAllowedAccountType 列挙型
 

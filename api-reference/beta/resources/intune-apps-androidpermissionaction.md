@@ -2,12 +2,13 @@
 title: androidPermissionAction リソースの種類
 description: Android アプリケーションのアクセス許可とアプリの操作の間のマッピングは、そのアクセス許可が要求されたときにかかります。
 author: tfitzmac
-ms.openlocfilehash: 90117b30dae765151e79d8ad1c2ae1afaa5a42ff
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: daf72bbc5f8d1e32480adeda72c3f759255f54db
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27331137"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27860537"
 ---
 # <a name="androidpermissionaction-resource-type"></a>androidPermissionAction リソースの種類
 
@@ -16,7 +17,7 @@ ms.locfileid: "27331137"
 > **注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
 
 Android アプリケーションのアクセス許可とアプリの操作の間のマッピングは、そのアクセス許可が要求されたときにかかります。
-## <a name="properties"></a>Properties
+## <a name="properties"></a>プロパティ
 |プロパティ|種類|説明|
 |:---|:---|:---|
 |アクセス許可|String|Android のアクセス許可の文字列、公式の Android のドキュメントで定義されています。  'Android.permission.READ_CONTACTS' の使用例です。|

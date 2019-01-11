@@ -2,12 +2,13 @@
 title: sharedPCAccountDeletionPolicyType 列挙型
 description: 共有の PC でアカウントが削除されたときに指定できる値です。
 author: tfitzmac
-ms.openlocfilehash: 626bc7ee4006639396a7959c4f09bec47c2d7f68
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: d7f51f76e6164c973b213eb53526d5961bb2b627
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27335050"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27861034"
 ---
 # <a name="sharedpcaccountdeletionpolicytype-enum-type"></a>sharedPCAccountDeletionPolicyType 列挙型
 

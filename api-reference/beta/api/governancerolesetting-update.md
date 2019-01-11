@@ -1,12 +1,13 @@
 ---
 title: GovernanceRoleSetting を更新します。
 description: GovernanceRoleSetting のプロパティを更新します。
-ms.openlocfilehash: 2d9417c99e63b1b4c7302c2afdda4c272b2fce82
-ms.sourcegitcommit: 82f9d0d10388572a3073b2dde8ca0a7b409135b8
+localization_priority: Normal
+ms.openlocfilehash: e76d7955576d9d514a70b52b31f4d034362aac1f
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "27191117"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27874908"
 ---
 # <a name="update-governancerolesetting"></a>GovernanceRoleSetting を更新します。
 

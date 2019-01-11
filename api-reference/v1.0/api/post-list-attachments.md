@@ -2,12 +2,13 @@
 title: 添付ファイルを一覧表示する
 description: 投稿に添付された添付ファイル オブジェクトのリストを取得します。
 author: dkershaw10
-ms.openlocfilehash: ea17702c3fed76fafcbb75e3f1ecd543d79c5242
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 408d54049e74b017e1b57e2c810f2d32aadfff98
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27334364"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27859935"
 ---
 # <a name="list-attachments"></a>添付ファイルを一覧表示する
 

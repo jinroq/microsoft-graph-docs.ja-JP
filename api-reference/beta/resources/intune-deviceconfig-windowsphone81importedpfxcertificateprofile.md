@@ -2,12 +2,13 @@
 title: windowsPhone81ImportedPFXCertificateProfile リソースの種類
 description: 証明書プロファイルの Windows 8.1 の電話および携帯 PFX のインポート
 author: tfitzmac
-ms.openlocfilehash: 39268c92b83b46df457f792f68fd4504427271f4
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 8b66bb8e32c05546349a69da80120005cdfe351a
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27358759"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27867313"
 ---
 # <a name="windowsphone81importedpfxcertificateprofile-resource-type"></a>windowsPhone81ImportedPFXCertificateProfile リソースの種類
 
@@ -28,7 +29,7 @@ ms.locfileid: "27358759"
 |[WindowsPhone81ImportedPFXCertificateProfile を削除します。](../api/intune-deviceconfig-windowsphone81importedpfxcertificateprofile-delete.md)|なし|の[windowsPhone81ImportedPFXCertificateProfile](../resources/intune-deviceconfig-windowsphone81importedpfxcertificateprofile.md)を削除します。|
 |[WindowsPhone81ImportedPFXCertificateProfile を更新します。](../api/intune-deviceconfig-windowsphone81importedpfxcertificateprofile-update.md)|[windowsPhone81ImportedPFXCertificateProfile](../resources/intune-deviceconfig-windowsphone81importedpfxcertificateprofile.md)|[WindowsPhone81ImportedPFXCertificateProfile](../resources/intune-deviceconfig-windowsphone81importedpfxcertificateprofile.md)オブジェクトのプロパティを更新します。|
 
-## <a name="properties"></a>Properties
+## <a name="properties"></a>プロパティ
 |プロパティ|種類|説明|
 |:---|:---|:---|
 |ID|String|エンティティのキー。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|

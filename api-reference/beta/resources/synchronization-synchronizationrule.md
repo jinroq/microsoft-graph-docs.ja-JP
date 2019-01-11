@@ -1,12 +1,13 @@
 ---
 title: synchronizationRule リソースの種類
 description: 同期する対象のオブジェクトを含む、同期エンジンと、方向の同期の実行方法を定義するソース ディレクトリからオブジェクトをコピー先のディレクトリ内のオブジェクトと一致する方法、および属性先のディレクトリにソースから同期されている場合は変換する必要があります。
-ms.openlocfilehash: c860228637a6cc3ad9137851408379bd7f779c75
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: a739db59a68ece026f9f13dfd22bafce8112f6b4
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27068412"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27856155"
 ---
 # <a name="synchronizationrule-resource-type"></a>synchronizationRule リソースの種類
 
@@ -20,9 +21,9 @@ ms.locfileid: "27068412"
 
 ## <a name="properties"></a>プロパティ
 
-| プロパティ      | 型      | 説明    |
+| プロパティ      | 種類      | 説明    |
 |:--------------|:----------|:---------------|
-|編集可能です       |ブール値    |`true`場合は同期ルールをカスタマイズすることができます。`false`場合は、これは読み取り専用で、変更してはなりません。|
+|編集可能です       |ブール型    |`true`場合は同期ルールをカスタマイズすることができます。`false`場合は、これは読み取り専用で、変更してはなりません。|
 |id             |String     |同期規則の識別子です。 同期エンジンによって認識される識別子の 1 つである必要があります。 ルールの識別子を参照して、API によって返される同期テンプレートをサポートします。|
 |metadata       |[stringKeyStringValuePair](synchronization-stringkeystringvaluepair.md)コレクション |プロパティをさらに拡張します。 サポート チームによって明示的に指示しない限り、メタデータの値を変更できませんする必要があります。|
 |名前           |String     |同期規則の名前を人間が判読できます。 null 許容ではありません。|

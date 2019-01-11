@@ -1,12 +1,13 @@
 ---
 title: publicClient リソースの種類
 description: 以外の Web アプリケーションまたは Web Api の設定を指定します。 (モバイルやデスクトップ デバイスで実行されているインストール済みのアプリケーションなどの他のパブリック クライアント)
-ms.openlocfilehash: ba921fecb554a8749a9020508c538c68a7ff342e
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: c466c91f90ac8adc2bf3806fa212e0b01e6d2507
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27067116"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27864198"
 ---
 # <a name="publicclient-resource-type"></a>publicClient リソースの種類
 
@@ -16,7 +17,7 @@ ms.locfileid: "27067116"
 
 ## <a name="properties"></a>プロパティ
 
-| プロパティ | 型 | 説明 |
+| プロパティ | 種類 | 説明 |
 |:---------------|:--------|:----------|
 |redirectUris|String コレクション| ユーザー トークンは、サインイン用に送信される Url または Uri を OAuth 2.0 の認証コードとアクセス トークンに送信のリダイレクトを指定します。 |
 

@@ -2,12 +2,13 @@
 title: ratingIrelandTelevisionType 列挙型
 description: アイルランドのテレビのコンテンツの規制ラベル
 author: tfitzmac
-ms.openlocfilehash: 40bff39bc943257267a03fdc0ddf1b99fa06dd18
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 37485c407a5261bbf23434ad524f95b28e8f1e48
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27360768"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27860985"
 ---
 # <a name="ratingirelandtelevisiontype-enum-type"></a>ratingIrelandTelevisionType 列挙型
 

@@ -2,12 +2,13 @@
 title: MacOSVpnConfiguration を更新します。
 description: MacOSVpnConfiguration オブジェクトのプロパティを更新します。
 author: tfitzmac
-ms.openlocfilehash: fc28d344f29ba6a5dfe32ea67d2d3f45fb757bfa
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: fd511b2ede79e7ca78b7b3a86d5eed54747d18f0
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27330885"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27863477"
 ---
 # <a name="update-macosvpnconfiguration"></a>MacOSVpnConfiguration を更新します。
 

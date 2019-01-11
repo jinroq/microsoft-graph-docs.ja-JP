@@ -2,12 +2,13 @@
 title: AndroidForWorkWiFiConfiguration を作成します。
 description: 新しい androidForWorkWiFiConfiguration オブジェクトを作成します。
 author: tfitzmac
-ms.openlocfilehash: bc3bf4b5bb85207c42540e4e0bc02d93d3d473d6
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 7538929270794de8b7611011867eb1381d47d00b
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27319636"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27863491"
 ---
 # <a name="create-androidforworkwificonfiguration"></a>AndroidForWorkWiFiConfiguration を作成します。
 

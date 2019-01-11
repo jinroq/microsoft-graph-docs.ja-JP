@@ -1,12 +1,13 @@
 ---
 title: OneNoteResource リソースの種類
 description: 'イメージまたは OneNote のページ上の他のファイル リソースです。 '
-ms.openlocfilehash: a5be2602e2a015b278ed7c3e01c573a543c7c6a1
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: ed2fb0dd4b6e68c24da1f2441a157f734a5025f6
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27021810"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27855105"
 ---
 # <a name="onenoteresource-resource-type"></a>OneNoteResource リソースの種類
 
@@ -61,7 +62,7 @@ GET ../onenote/pages/{id}/content
 
 ## <a name="properties"></a>プロパティ
 
-| プロパティ             | 型            | 説明
+| プロパティ             | 種類            | 説明
 |:---------------------|:----------------|:---------------------------------
 | content              | Stream          | コンテンツ ストリーム
 | contentUrl           | 文字列 (url)    | コンテンツをダウンロードするための URL

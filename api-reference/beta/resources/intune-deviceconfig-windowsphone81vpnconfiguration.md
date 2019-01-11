@@ -2,12 +2,13 @@
 title: windowsPhone81VpnConfiguration リソースの種類
 description: このプロファイルの構成を提供することにより、必要な VPN エンドポイントへの接続に Windows Phone の 8.1 を指示できます。 指定する認証方法とセキュリティの種類必要 VPN エンドポイントで行うことができます、VPN 接続シームレスなエンド ・ ユーザーのです。
 author: tfitzmac
-ms.openlocfilehash: 309a848965d666d8d89ee619441af8f5ca25b6fa
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: b415c41d41f9b29dbaf9eb5019bdf53e50f54192
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27317200"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27850793"
 ---
 # <a name="windowsphone81vpnconfiguration-resource-type"></a>windowsPhone81VpnConfiguration リソースの種類
 
@@ -28,7 +29,7 @@ ms.locfileid: "27317200"
 |[WindowsPhone81VpnConfiguration を削除します。](../api/intune-deviceconfig-windowsphone81vpnconfiguration-delete.md)|なし|の[windowsPhone81VpnConfiguration](../resources/intune-deviceconfig-windowsphone81vpnconfiguration.md)を削除します。|
 |[WindowsPhone81VpnConfiguration を更新します。](../api/intune-deviceconfig-windowsphone81vpnconfiguration-update.md)|[windowsPhone81VpnConfiguration](../resources/intune-deviceconfig-windowsphone81vpnconfiguration.md)|[WindowsPhone81VpnConfiguration](../resources/intune-deviceconfig-windowsphone81vpnconfiguration.md)オブジェクトのプロパティを更新します。|
 
-## <a name="properties"></a>Properties
+## <a name="properties"></a>プロパティ
 |プロパティ|種類|説明|
 |:---|:---|:---|
 |ID|String|エンティティのキー。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|

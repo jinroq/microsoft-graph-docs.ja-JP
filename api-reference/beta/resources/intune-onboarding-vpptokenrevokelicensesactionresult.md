@@ -2,12 +2,13 @@
 title: vppTokenRevokeLicensesActionResult リソースの種類
 description: 取り消しライセンスのステータスは、Apple ボリューム購入プログラムのトークンで実行されます。
 author: tfitzmac
-ms.openlocfilehash: a4188a269f9273b955fd29b32348dec82023b181
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: d7df9472be177bb52eba22ebf54f24e75c9a3539
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27351458"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27866494"
 ---
 # <a name="vpptokenrevokelicensesactionresult-resource-type"></a>vppTokenRevokeLicensesActionResult リソースの種類
 
@@ -19,7 +20,7 @@ ms.locfileid: "27351458"
 
 [VppTokenActionResult](../resources/intune-onboarding-vpptokenactionresult.md)から継承します。
 
-## <a name="properties"></a>Properties
+## <a name="properties"></a>プロパティ
 |プロパティ|種類|説明|
 |:---|:---|:---|
 |actionName|String|[VppTokenActionResult](../resources/intune-onboarding-vpptokenactionresult.md)からアクション名継承|

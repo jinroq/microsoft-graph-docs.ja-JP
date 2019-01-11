@@ -1,12 +1,13 @@
 ---
 title: 'reportRoot: getOffice365ActivationCounts'
 description: デスクトップとデバイスでの Office 365 のライセンス認証の数を取得します。
-ms.openlocfilehash: c75b957f02eb5d5fa77f5e3dfa696f3086f9d817
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: aff0459cc1ea88fb67d182cdfdbd4e0536619bea
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27068074"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27855959"
 ---
 # <a name="reportroot-getoffice365activationcounts"></a>reportRoot: getOffice365ActivationCounts
 
@@ -66,7 +67,7 @@ GET /reports/getOffice365ActivationCounts
 
 かどうかは成功すると、このメソッドが返されます、`200 OK`応答コードおよび応答の本文内の**[office365ActivationCounts](../resources/office365activationcounts.md)** オブジェクトです。
 
-## <a name="example"></a>使用例
+## <a name="example"></a>例
 
 ### <a name="csv"></a>CSV
 

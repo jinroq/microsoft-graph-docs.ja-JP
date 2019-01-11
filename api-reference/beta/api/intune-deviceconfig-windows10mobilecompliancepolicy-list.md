@@ -2,12 +2,13 @@
 title: windows10MobileCompliancePolicies のリスト
 description: windows10MobileCompliancePolicy オブジェクトのプロパティとリレーションシップをリストします。
 author: tfitzmac
-ms.openlocfilehash: 5a92a7a4eb4fdae72c7d04ebeec95ce0bb15d738
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: f37f0e757a8e4fece27925786dbfa163b6814903
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27338039"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27862924"
 ---
 # <a name="list-windows10mobilecompliancepolicies"></a>windows10MobileCompliancePolicies のリスト
 

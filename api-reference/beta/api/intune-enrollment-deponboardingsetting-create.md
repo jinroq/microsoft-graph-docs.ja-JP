@@ -2,12 +2,13 @@
 title: DepOnboardingSetting を作成します。
 description: 新しい depOnboardingSetting オブジェクトを作成します。
 author: tfitzmac
-ms.openlocfilehash: 11f2e5217e4040a7d4345c9271b459e608075498
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 89e46c715b5f888ae3c9f1fb02a0566da8485944
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27330661"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27854902"
 ---
 # <a name="create-deponboardingsetting"></a>DepOnboardingSetting を作成します。
 

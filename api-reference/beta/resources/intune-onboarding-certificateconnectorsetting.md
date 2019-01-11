@@ -2,12 +2,13 @@
 title: certificateConnectorSetting リソースの種類
 description: コネクタの設定を証明書です。
 author: tfitzmac
-ms.openlocfilehash: 8c993634eb4f41e16643ae3f40be74ecc3eb392f
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 56f12600b6aa78982dc51732d685dcd7c962d0b0
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27326307"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27888600"
 ---
 # <a name="certificateconnectorsetting-resource-type"></a>certificateConnectorSetting リソースの種類
 
@@ -16,7 +17,7 @@ ms.locfileid: "27326307"
 > **注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
 
 コネクタの設定を証明書です。
-## <a name="properties"></a>Properties
+## <a name="properties"></a>プロパティ
 |プロパティ|種類|説明|
 |:---|:---|:---|
 |status|Int32|証明書のコネクタの状態|

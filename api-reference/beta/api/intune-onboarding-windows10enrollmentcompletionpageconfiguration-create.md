@@ -2,12 +2,13 @@
 title: Windows10EnrollmentCompletionPageConfiguration を作成します。
 description: 新しい windows10EnrollmentCompletionPageConfiguration オブジェクトを作成します。
 author: tfitzmac
-ms.openlocfilehash: f9e9fa454f7a48c31b8568bba8d7e63a80e99f81
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: aa459255e48323c5f4e614dc9d12f8ae89d2f4e4
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27321526"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27862728"
 ---
 # <a name="create-windows10enrollmentcompletionpageconfiguration"></a>Windows10EnrollmentCompletionPageConfiguration を作成します。
 

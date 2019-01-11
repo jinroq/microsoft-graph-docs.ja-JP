@@ -1,12 +1,13 @@
 ---
 title: BookingAppointment を作成します。
 description: " > **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。"
-ms.openlocfilehash: 436e0121a36fbc0dd0bf0d7cd3302d7999776d9e
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: df8d1ab3d4eeb93de37e51085935b121609dd023
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27068678"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27855077"
 ---
 # <a name="create-bookingappointment"></a>BookingAppointment を作成します。
 

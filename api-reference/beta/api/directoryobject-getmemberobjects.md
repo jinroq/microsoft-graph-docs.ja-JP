@@ -1,12 +1,13 @@
 ---
 title: メンバー オブジェクトを取得する
 description: " すべてのグループ、管理単位、およびディレクトリの役割のメンバーであるユーザー、グループ、サービス ・ プリンシパルまたはディレクトリ オブジェクトを返します。 この関数は、推移的です。 "
-ms.openlocfilehash: f1bf68276fc4ed7d4694fadc73a08ae328047222
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: f63c077414f656df168db5c5af498cec0f79e703
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27066660"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27874803"
 ---
 # <a name="get-member-objects"></a>メンバー オブジェクトを取得する
 
@@ -36,7 +37,7 @@ POST /directoryObjects/{id}/getMemberObjects
 
 ```
 ## <a name="request-headers"></a>要求ヘッダー
-| 名前       | 型 | 説明|
+| 名前       | 種類 | 説明|
 |:---------------|:--------|:----------|
 | Authorization  | string  | ベアラー {トークン}。必須。 |
 | Content-Type  | application/json  |
@@ -44,7 +45,7 @@ POST /directoryObjects/{id}/getMemberObjects
 ## <a name="request-body"></a>要求本文
 要求本文で、次のパラメーターを含む JSON オブジェクトを指定します。
 
-| パラメーター    | 型   |説明|
+| パラメーター    | Type   |説明|
 |:---------------|:--------|:----------|
 |securityEnabledOnly|ブール型| エンティティがメンバーであるセキュリティ グループのみを返すように指定するには **true**、がメンバーであるすべてのグループとディレクトリ ロールを返すように指定するには **false** を設定します。**注**:パラメーターが **true** の場合、関数はユーザーでのみ呼び出せます。 |
 

@@ -2,12 +2,13 @@
 title: NdesConnector を削除します。
 description: NdesConnector を削除します。
 author: tfitzmac
-ms.openlocfilehash: ea890f4ca2a4951f670473def343a58ebe4a0a9b
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 664ce3b02d9f6dd2001af3cedbd8277500a7b44f
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27338403"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27891449"
 ---
 # <a name="delete-ndesconnector"></a>NdesConnector を削除します。
 

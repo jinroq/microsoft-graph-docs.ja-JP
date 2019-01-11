@@ -1,12 +1,13 @@
 ---
 title: リスト signIns
 description: テナントの Azure AD ユーザーのサインインを取得します。 インタラクティブ (ユーザー名とパスワードは認証トークンの一部として渡す) 性質およびフェデレーション サインインが成功には、サインインの問題は現在、サインインがログに含まれます。  最新の signIns が最初に返されます。
-ms.openlocfilehash: 3abca59187dcc9667789e33bcefc1bcc51d5ab10
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Priority
+ms.openlocfilehash: 8596bd168a3e10cbea9e15e2f61d6bd668fd27b5
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27068090"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27861790"
 ---
 # <a name="list-signins"></a>リスト signIns
 
@@ -41,7 +42,7 @@ GET auditLogs/signIns
 ### <a name="list-of-attributes-supported-by-filter-parameter"></a>$Filter パラメーターでサポートされている属性の一覧
 |属性名 |サポートされる演算子|
 |:----------------|:------|
-|id|eq|
+|ID|eq|
 |userId|eq|
 |appId|eq|
 |createdDateTime| eq、le、ge|

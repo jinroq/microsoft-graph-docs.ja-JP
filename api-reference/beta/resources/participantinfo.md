@@ -2,12 +2,13 @@
 title: participantInfo リソースの種類
 description: 参加者のアイデンティティについての追加のプロパティが含まれています
 author: VinodRavichandran
-ms.openlocfilehash: 335626d1c34e2c54a86b0494e931c2da3fe283e7
-ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
+localization_priority: Normal
+ms.openlocfilehash: 94bbc587f26f8b5122571899eb235d9c1fc27e90
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "27380493"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27870666"
 ---
 # <a name="participantinfo-resource-type"></a>participantInfo リソースの種類
 
@@ -17,7 +18,7 @@ ms.locfileid: "27380493"
 
 ## <a name="properties"></a>プロパティ
 
-| プロパティ       | 型                          | 説明  |
+| プロパティ       | 種類                          | 説明  |
 |:---------------|:------------------------------|:-------------|
 | identity       | [identitySet](identityset.md) | この構成要素に関連付けられている[identitySet](identityset.md) 。 |
 | languageId     | String                        | 言語カルチャの文字列です。 |

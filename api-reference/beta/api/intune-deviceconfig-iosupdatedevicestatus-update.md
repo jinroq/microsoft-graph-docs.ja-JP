@@ -2,12 +2,13 @@
 title: iosUpdateDeviceStatus の更新
 description: iosUpdateDeviceStatus オブジェクトのプロパティを更新します。
 author: tfitzmac
-ms.openlocfilehash: d2fab69e918d92e07ed28f3e12aa59db9d50c53b
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: a7b9d44c13e4432d3b09e72ad91ce1c357778616
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27350212"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27863400"
 ---
 # <a name="update-iosupdatedevicestatus"></a>iosUpdateDeviceStatus の更新
 

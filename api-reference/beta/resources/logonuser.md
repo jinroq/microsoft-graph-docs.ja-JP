@@ -1,12 +1,13 @@
 ---
 title: logonUser のリソースの種類
 description: このホスト上のログオン中のユーザーに関するステートフルな情報が含まれています
-ms.openlocfilehash: 80ff69453e99f5cd5103f85cd7d8c45696057f7c
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 3b7862555c62eb16aaceaa53d4df58541426e08a
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27073458"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27855595"
 ---
 # <a name="logonuser-resource-type"></a>logonUser のリソースの種類
 
@@ -14,7 +15,7 @@ ms.locfileid: "27073458"
 
 ## <a name="properties"></a>プロパティ
 
-| プロパティ   | 型 |説明|
+| プロパティ   | 種類 |説明|
 |:---------------|:--------|:----------|
 |accountDomain|String|使用するユーザー アカウントのドメインにログオンします。|
 |accountName|String|使用するユーザー アカウントのアカウント名をログオンします。|

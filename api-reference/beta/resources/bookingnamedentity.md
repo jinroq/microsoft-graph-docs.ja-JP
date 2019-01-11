@@ -1,12 +1,13 @@
 ---
 title: bookingNamedEntity リソースの種類
 description: " > **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。"
-ms.openlocfilehash: 1d82fcf6fcf7ffad6e60baea3f3e1118ec60345d
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: fa307d0ee07b43a44210fc6ceaf4c74a29999caa
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27066944"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27860502"
 ---
 # <a name="bookingnamedentity-resource-type"></a>bookingNamedEntity リソースの種類
 
@@ -15,10 +16,10 @@ ms.locfileid: "27066944"
 これは、たとえば、表示名を提供する Microsoft の予約のエンティティ、 [bookingBusiness](bookingbusiness.md)、 [bookingPerson](bookingperson.md)、 [bookingService](bookingservice.md)の基本型です。
 
 ## <a name="properties"></a>プロパティ
-| プロパティ     | 型   |説明|
+| プロパティ     | 種類   |説明|
 |:---------------|:--------|:----------|
 |displayName|String|派生のエンティティは、顧客とのインターフェイスの名前です。|
-|id|String| 派生エンティティの ID です。 読み取り専用。|
+|id|String| 派生エンティティの ID です。 読み取り専用です。|
 
 ## <a name="relationships"></a>リレーションシップ
 なし

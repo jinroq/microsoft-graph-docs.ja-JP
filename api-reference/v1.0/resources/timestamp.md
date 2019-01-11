@@ -1,12 +1,13 @@
 ---
 title: タイムスタンプのリソースの種類
 description: 時間のポイントの日付と時刻情報です。
-ms.openlocfilehash: 4f392e880bb165841fd8a9a31b6ed00bf2ba36fb
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: c63b3bba93f4b108a8eb9943d3fc2a1b2961f06c
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27020938"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27888803"
 ---
 # <a name="timestamp-resource-type"></a>タイムスタンプのリソースの種類
 
@@ -33,7 +34,7 @@ ms.locfileid: "27020938"
 
 ```
 ## <a name="properties"></a>プロパティ
-| プロパティ       | 型    |説明|
+| プロパティ       | 種類    |説明|
 |:---------------|:--------|:----------|
 |date|日付|タイムスタンプの日付部分。|
 |time|TimeOfDay|タイムスタンプの時刻部分。|

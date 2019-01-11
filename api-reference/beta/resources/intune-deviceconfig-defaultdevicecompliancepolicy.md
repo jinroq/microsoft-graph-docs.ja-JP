@@ -2,12 +2,13 @@
 title: defaultDeviceCompliancePolicy リソースの種類
 description: 既定デバイス コンプライアンスのポリシー規則が適用されているは、さまざまな勘定です。
 author: tfitzmac
-ms.openlocfilehash: fb5b10153e9684287e43140c4196835869431c57
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 4629a5fb4dbf49c9ff94a7a9606ac2ec36c71986
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27336408"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27891456"
 ---
 # <a name="defaultdevicecompliancepolicy-resource-type"></a>defaultDeviceCompliancePolicy リソースの種類
 
@@ -28,7 +29,7 @@ ms.locfileid: "27336408"
 |[DefaultDeviceCompliancePolicy を削除します。](../api/intune-deviceconfig-defaultdevicecompliancepolicy-delete.md)|なし|の[defaultDeviceCompliancePolicy](../resources/intune-deviceconfig-defaultdevicecompliancepolicy.md)を削除します。|
 |[DefaultDeviceCompliancePolicy を更新します。](../api/intune-deviceconfig-defaultdevicecompliancepolicy-update.md)|[defaultDeviceCompliancePolicy](../resources/intune-deviceconfig-defaultdevicecompliancepolicy.md)|[DefaultDeviceCompliancePolicy](../resources/intune-deviceconfig-defaultdevicecompliancepolicy.md)オブジェクトのプロパティを更新します。|
 
-## <a name="properties"></a>Properties
+## <a name="properties"></a>プロパティ
 |プロパティ|種類|説明|
 |:---|:---|:---|
 |roleScopeTagIds|String コレクション|このエンティティ インスタンスのスコープのタグのリストです。 [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md) から継承します|

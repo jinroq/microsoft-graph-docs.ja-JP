@@ -2,12 +2,13 @@
 title: AppleVpnConfiguration を取得します。
 description: AppleVpnConfiguration オブジェクトのプロパティと関係を参照してください。
 author: tfitzmac
-ms.openlocfilehash: 0a3b9b82adfef4ce3deb3ce267e7993153571fdf
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 8e4ce8cc77eac328effccf9b89a8a9923ea6d48e
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27315492"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27863610"
 ---
 # <a name="get-applevpnconfiguration"></a>AppleVpnConfiguration を取得します。
 

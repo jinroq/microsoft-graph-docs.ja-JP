@@ -2,12 +2,13 @@
 title: managedDeviceModelsAndManufacturers リソースの種類
 description: モデルと、アカウントで管理されているデバイスのメーカーの meatadata
 author: tfitzmac
-ms.openlocfilehash: 42611b0c14aa583d2871d97b66ce116a0b835268
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 86d9f9dd0642abab73f6b750b997c75851f6be02
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27352935"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27875622"
 ---
 # <a name="manageddevicemodelsandmanufacturers-resource-type"></a>managedDeviceModelsAndManufacturers リソースの種類
 
@@ -16,7 +17,7 @@ ms.locfileid: "27352935"
 > **注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
 
 モデルと、アカウントで管理されているデバイスのメーカーの meatadata
-## <a name="properties"></a>Properties
+## <a name="properties"></a>プロパティ
 |プロパティ|種類|説明|
 |:---|:---|:---|
 |deviceModels|String コレクション|アカウントで管理されているデバイスのモデルの一覧|

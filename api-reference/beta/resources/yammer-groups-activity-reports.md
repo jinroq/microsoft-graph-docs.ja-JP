@@ -1,12 +1,13 @@
 ---
 title: Yammer グループ アクティビティ レポート
 description: 組織で Yammer グループの活動の洞察を獲得でき、Yammer グループの数が表示されるを参照してください作成され、使用されます。
-ms.openlocfilehash: faaf270d53108892870a32b7c7296b51f0022fea
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 90be4037871480b7d694f4f9089d5f62064c9d2b
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27069981"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27890672"
 ---
 # <a name="yammer-groups-activity-reports"></a>Yammer グループ アクティビティ レポート
 

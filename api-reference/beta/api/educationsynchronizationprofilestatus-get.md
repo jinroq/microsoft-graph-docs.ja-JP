@@ -2,12 +2,13 @@
 title: EducationSynchronizationProfile のステータスを取得します。
 description: テナント内には、特定の学校のデータの同期プロファイルの状態を取得します。 応答は、同期のステータスを示します。
 author: mmast-msft
-ms.openlocfilehash: 8c48565e22df54e81f17110bb0b13654e0e69cd7
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: f371d86d188068a90b3a9503adea12fd38ba8e8d
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27313574"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27869957"
 ---
 # <a name="get-the-status-of-an-educationsynchronizationprofile"></a>EducationSynchronizationProfile のステータスを取得します。
 

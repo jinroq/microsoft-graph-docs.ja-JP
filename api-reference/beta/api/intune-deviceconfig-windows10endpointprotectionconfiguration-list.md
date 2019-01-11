@@ -2,12 +2,13 @@
 title: windows10EndpointProtectionConfigurations のリスト
 description: windows10EndpointProtectionConfiguration オブジェクトのプロパティとリレーションシップをリストします。
 author: tfitzmac
-ms.openlocfilehash: 87d32d8a9d8339e59a5363cdbdab3c5664c642bb
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 427860ed3576f580fbc7c3fcc42f80bf9f798fa5
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27355371"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27827952"
 ---
 # <a name="list-windows10endpointprotectionconfigurations"></a>windows10EndpointProtectionConfigurations のリスト
 

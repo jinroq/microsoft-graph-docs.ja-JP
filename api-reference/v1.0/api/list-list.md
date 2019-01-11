@@ -3,12 +3,13 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/11/2017
 title: サイト内の SharePoint リストを一覧表示する
-ms.openlocfilehash: 4171947eb2a7ac6be18ba385de39c5befd762f26
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Priority
+ms.openlocfilehash: baccdaee1bd584ebe92c1c10a151ce1ce9fc1ff6
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27023260"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27861111"
 ---
 # <a name="enumerate-lists-in-a-site"></a>サイト内のリストを列挙する
 

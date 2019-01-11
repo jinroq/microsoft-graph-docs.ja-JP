@@ -2,12 +2,13 @@
 title: roleDefinition の更新
 description: roleDefinition オブジェクトのプロパティを更新します。
 author: tfitzmac
-ms.openlocfilehash: a25c78e9ce6de976627c7a073eb9716ae22546e0
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: ee8e773f01aeeb6a3190b4de9c0f0b0d99e8977f
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27322338"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27861622"
 ---
 # <a name="update-roledefinition"></a>roleDefinition の更新
 

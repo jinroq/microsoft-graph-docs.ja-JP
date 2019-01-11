@@ -2,12 +2,13 @@
 title: androidForWorkCustomConfiguration リソースの種類
 description: Android の作業のカスタム構成
 author: tfitzmac
-ms.openlocfilehash: ebc60403a6a11fc941a5c9e4418e96e8b9ebf0d4
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: d4f65a1f509fbe17f853ec23cac4484dd3f87a70
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27331382"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27861482"
 ---
 # <a name="androidforworkcustomconfiguration-resource-type"></a>androidForWorkCustomConfiguration リソースの種類
 
@@ -28,7 +29,7 @@ Android の作業のカスタム構成
 |[AndroidForWorkCustomConfiguration を削除します。](../api/intune-deviceconfig-androidforworkcustomconfiguration-delete.md)|なし|の[androidForWorkCustomConfiguration](../resources/intune-deviceconfig-androidforworkcustomconfiguration.md)を削除します。|
 |[AndroidForWorkCustomConfiguration を更新します。](../api/intune-deviceconfig-androidforworkcustomconfiguration-update.md)|[androidForWorkCustomConfiguration](../resources/intune-deviceconfig-androidforworkcustomconfiguration.md)|[AndroidForWorkCustomConfiguration](../resources/intune-deviceconfig-androidforworkcustomconfiguration.md)オブジェクトのプロパティを更新します。|
 
-## <a name="properties"></a>Properties
+## <a name="properties"></a>プロパティ
 |プロパティ|種類|説明|
 |:---|:---|:---|
 |ID|String|エンティティのキー。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|

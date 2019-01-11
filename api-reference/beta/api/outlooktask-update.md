@@ -2,12 +2,13 @@
 title: Outlooktask を更新します。
 description: Outlook のタスクの書き込み可能なプロパティを変更します。
 author: angelgolfer-ms
-ms.openlocfilehash: 0cd4907c4ab1cb517ab2611cc4dc30431e496440
-ms.sourcegitcommit: 6b1ba9b3be038cd6247de54a255bad560034fe42
+localization_priority: Normal
+ms.openlocfilehash: 13426446fec4e7d33ea0f7fe35cd28d12e4e61d0
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "27771731"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27874754"
 ---
 # <a name="update-outlooktask"></a>Outlooktask を更新します。
 
@@ -49,7 +50,7 @@ PATCH /users/{id|userPrincipalName}/outlook/tasks/{id}
 
 要求本文で、更新する関連フィールドの値を指定します。要求本文に含まれない既存のプロパティは、以前の値のままになるか、他のプロパティ値の変化に基づいて再計算されます。最適なパフォーマンスを得るためには、変更されていない既存の値を含めないでください。
 
-| プロパティ | 型 | 説明 |
+| プロパティ | 種類 | 説明 |
 |:---------------|:--------|:----------|
 |担当者|String|タスクが割り当てられているユーザーの名前。|
 |body|[itemBody](../resources/itembody.md)|通常はタスクに関する情報を含むタスク本体。HTML 型のみがサポートされていることに注意してください。|
@@ -58,17 +59,17 @@ PATCH /users/{id|userPrincipalName}/outlook/tasks/{id}
 |CompletedDateTime|[dateTimeTimeZone](../resources/datetimetimezone.md)|タスクが終了した日付 (指定のタイム ゾーン)。|
 |createdDateTime|DateTimeOffset|日付と時刻、タスクが作成された日時です。 既定では、UTC であります。 要求ヘッダーにカスタム タイム ゾーンを使用できます。 プロパティの値は、ISO 8601 形式を使用します。 たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、次のようになります。`'2014-01-01T00:00:00Z'`|
 |dueDateTime|[dateTimeTimeZone](../resources/datetimetimezone.md)|タスクが終了する予定の日時 (指定のタイム ゾーン)。|
-|hasAttachments|Boolean|タスクに添付ファイルが含まれている場合、true に設定します。|
-|importance|string|イベントの重要度。 可能な値は `low`、`normal`、`high` です。|
-|isReminderOn|Boolean|ユーザーにタスクを通知するアラートを設定する場合は、true に設定します。|
+|hasAttachments|ブール型|タスクに添付ファイルが含まれている場合、true に設定します。|
+|importance|文字列|イベントの重要度。 可能な値は `low`、`normal`、`high` です。|
+|isReminderOn|ブール値|ユーザーにタスクを通知するアラートを設定する場合は、true に設定します。|
 |lastModifiedDateTime|DateTimeOffset|日付と、タスクが最後に修正されました。 既定では、UTC であります。 要求ヘッダーにカスタム タイム ゾーンを使用できます。 プロパティの値は、ISO 8601 形式を使用し、UTC 時刻が常に。 たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、次のようになります。`'2014-01-01T00:00:00Z'`|
 |owner|String|タスクを作成したユーザーの名前。|
 |parentFolderId|String|タスクの親フォルダーの一意の識別子。|
 |recurrence|[patternedRecurrence](../resources/patternedrecurrence.md)|タスクの繰り返しパターン。|
 |reminderDateTime|[dateTimeTimeZone](../resources/datetimetimezone.md)|タスクのアラーム通知を行う日時。|
-|sensitivity|string|タスクのプライバシーのレベルを示します。 可能な値は、`normal`、`personal`、`private`、`confidential` です。|
+|sensitivity|文字列|タスクのプライバシーのレベルを示します。 可能な値は、`normal`、`personal`、`private`、`confidential` です。|
 |startDateTime|[dateTimeTimeZone](../resources/datetimetimezone.md)|タスクを開始する日付 (指定のタイム ゾーン)。|
-|status|string|状態またはタスクの進行状況を示します。 可能な値は、`notStarted`、`inProgress`、`completed`、`waitingOnOthers`、`deferred` です。|
+|status|文字列|状態またはタスクの進行状況を示します。 可能な値は、`notStarted`、`inProgress`、`completed`、`waitingOnOthers`、`deferred` です。|
 |subject|String|タスクのタイトルまたは簡単な説明。|
 
 ## <a name="response"></a>応答

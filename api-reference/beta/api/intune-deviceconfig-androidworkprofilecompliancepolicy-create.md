@@ -2,12 +2,13 @@
 title: AndroidWorkProfileCompliancePolicy を作成します。
 description: 新しい androidWorkProfileCompliancePolicy オブジェクトを作成します。
 author: tfitzmac
-ms.openlocfilehash: 6b6fa1f7633c6d17b40e042a04b3e14f13c9b3be
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 71435ca13e35562b0c553aa05b4fd168dfa6db32
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27349813"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27863680"
 ---
 # <a name="create-androidworkprofilecompliancepolicy"></a>AndroidWorkProfileCompliancePolicy を作成します。
 

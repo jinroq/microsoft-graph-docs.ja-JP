@@ -2,12 +2,13 @@
 title: deviceHealthAttestationState リソース タイプ
 description: まだ文書化されていません
 author: tfitzmac
-ms.openlocfilehash: c4aa43e274097d4b16b2ab3e933d269d2ad37717
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 74d802e531757455dbd315785b86f0c13d4e06e9
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27362357"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27861797"
 ---
 # <a name="devicehealthattestationstate-resource-type"></a>deviceHealthAttestationState リソース タイプ
 

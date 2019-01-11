@@ -2,12 +2,13 @@
 title: MobileAppTroubleshootingEvent を更新します。
 description: MobileAppTroubleshootingEvent オブジェクトのプロパティを更新します。
 author: tfitzmac
-ms.openlocfilehash: 58e5b67329fb044f19c6f216fbb25f60ada44e9d
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 1dee1ecb19f58412acbdcf529991f2491e0deabb
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27333594"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27862807"
 ---
 # <a name="update-mobileapptroubleshootingevent"></a>MobileAppTroubleshootingEvent を更新します。
 

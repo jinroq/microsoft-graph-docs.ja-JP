@@ -2,12 +2,13 @@
 title: RemoteActionAudit を取得します。
 description: RemoteActionAudit オブジェクトのプロパティと関係を参照してください。
 author: tfitzmac
-ms.openlocfilehash: d5400eefe34419a725681d8870bfae513d192237
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 43a35a52ef379960652326279fa7c90b95ac8900
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27349540"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27859781"
 ---
 # <a name="get-remoteactionaudit"></a>RemoteActionAudit を取得します。
 

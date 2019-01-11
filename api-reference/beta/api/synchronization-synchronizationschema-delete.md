@@ -1,12 +1,13 @@
 ---
 title: SynchronizationSchema を削除します。
 description: カスタマイズされたスキーマを削除し、スキーマがデフォルト設定にリセットします。 テンプレートのコンテキストでは、スキーマが削除されると、リセット、スキーマとテンプレートのいずれかに関連付けられた既定値に`factoryTag`。
-ms.openlocfilehash: 81c1a918b10e8f4553b3e99312f20bb538bfbe4f
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 281911d34355f598f4a3fe57b20c701dde36d4b9
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27072487"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27855889"
 ---
 # <a name="delete-synchronizationschema"></a>SynchronizationSchema を削除します。
 
@@ -32,7 +33,7 @@ DELETE /applications/{id}/synchronization/templates/{templateId}/schema
 
 ## <a name="request-headers"></a>要求ヘッダー
 
-| 名前           | 型    | 説明|
+| 名前           | 種類    | 説明|
 |:---------------|:--------|:-----------|
 | Authorization  | string  | ベアラー {トークン}。必須。 |
 

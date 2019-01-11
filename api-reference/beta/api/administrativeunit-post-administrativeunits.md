@@ -2,12 +2,13 @@
 title: AdministrativeUnit を作成します。
 description: この API を使用すると、新しい administrativeUnit を作成します。
 author: lleonard-msft
-ms.openlocfilehash: 320fe1b2269213d8fc4a0a8295f7ae84e0714cb1
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 9ec6d1579e1a27317bd7d4e126a73a1b4175ec86
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27351157"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27859872"
 ---
 # <a name="create-administrativeunit"></a>AdministrativeUnit を作成します。
 

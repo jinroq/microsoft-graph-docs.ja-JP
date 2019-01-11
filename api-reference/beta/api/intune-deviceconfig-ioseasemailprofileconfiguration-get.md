@@ -2,12 +2,13 @@
 title: IosEasEmailProfileConfiguration を取得します。
 description: IosEasEmailProfileConfiguration オブジェクトのプロパティと関係を参照してください。
 author: tfitzmac
-ms.openlocfilehash: 3d5b253e2469e05fda63ef3a3a0fbb5b4aae14e0
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 53340389e882b1a42d988fceb3856acd1cd5b16d
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27328071"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27873851"
 ---
 # <a name="get-ioseasemailprofileconfiguration"></a>IosEasEmailProfileConfiguration を取得します。
 

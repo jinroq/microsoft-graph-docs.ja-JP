@@ -2,12 +2,13 @@
 title: deviceInstallState の更新
 description: deviceInstallState オブジェクトのプロパティを更新します。
 author: tfitzmac
-ms.openlocfilehash: ad7a840021e2d18ea73f4e7d010768e8f24e6220
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: a0962abe32198d684a158547a3af390cccfab22d
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27306728"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27855644"
 ---
 # <a name="update-deviceinstallstate"></a>deviceInstallState の更新
 

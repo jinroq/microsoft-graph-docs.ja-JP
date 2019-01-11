@@ -3,12 +3,13 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/11/2017
 title: NumberColumn
-ms.openlocfilehash: 27d17d3e9b9d3d1debcd20f2beb916222801ebe9
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: a0f5d13381c82a42159d0802d850d9996aaf8b54
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27074099"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27855182"
 ---
 # <a name="numbercolumn-resource-type"></a>numberColumn リソースの種類
 
@@ -32,7 +33,7 @@ ms.locfileid: "27074099"
 
 ## <a name="properties"></a>プロパティ
 
-| プロパティ名      | 型   | 説明
+| プロパティ名      | Type   | 説明
 |:-------------------|:-------|:-----------------------------------------------
 | **decimalPlaces**  | 文字列 | 表示する小数点以下の桁数です。 使用可能な値については、下記を参照してください。
 | **displayAs**      | 文字列 | UX での値の表示方法です。 `number` または `percentage` のいずれかでなければなりません。 指定しない場合、`number` として扱われます。
@@ -43,7 +44,7 @@ ms.locfileid: "27074099"
 
 | 値          | 説明
 |:---------------|:--------------------------------------------------------------
-| **automatic**  | 既定。 必要に応じて自動的に小数点以下の桁を表示します。
+| **automatic**  | 既定値。 必要に応じて自動的に小数点以下の桁を表示します。
 | **none**       | 小数点以下の桁は表示されません。
 | **one**        | 小数第 1 位までを常に表示します。
 | **two**        | 小数第 2 位までを常に表示します。

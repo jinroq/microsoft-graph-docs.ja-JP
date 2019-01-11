@@ -1,17 +1,18 @@
 ---
 title: " secureScoreControlStateUpdate リソースの種類"
 description: このリソースには、ユーザーによって更新されたコントロールの状態の履歴が含まれています (コントロールの状態は、既定、無視、サード ・ パーティ、レビュー済み)。
-ms.openlocfilehash: ba98f2fc85f3f8e12355f9acf5d232599a7f29f7
-ms.sourcegitcommit: 8feddb85e436be5581557a199f2e46d5b4ebfa21
+localization_priority: Normal
+ms.openlocfilehash: 8d8c3122a6263ebc7b10b5edfb823953e2d587fc
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/22/2018
-ms.locfileid: "27428841"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27888922"
 ---
  #  <a name="securescorecontrolstateupdate-resource-type"></a>secureScoreControlStateUpdate リソースの種類
 ユーザーによって更新されたコントロールの状態の履歴が含まれています (コントロールの状態は、既定、無視、サード ・ パーティ、レビュー済み)。
 
-|プロパティ |型 |説明 |
+|プロパティ |種類 |説明 |
 |:--|:--|:--|
 |担当者 | 文字列 | 処理はユーザーにコントロールを割り当てる |
 |comment | 文字列 | コントロールに関するオプションのコメントを提供します。 |

@@ -1,12 +1,13 @@
 ---
 title: bookingAppointment リソースの種類
 description: " > **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。"
-ms.openlocfilehash: d7ae5aa0a8a228bc4453742147ca9c858e093a8a
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: aed5f26d69835c69021e8c3c8c5e27f5180d6c69
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27066870"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27856113"
 ---
 # <a name="bookingappointment-resource-type"></a>bookingAppointment リソースの種類
 
@@ -23,11 +24,11 @@ ms.locfileid: "27066870"
 |[BookingAppointment を作成します。](../api/bookingbusiness-post-appointments.md) |  [bookingAppointment](bookingappointment.md) | 指定した[bookingbusiness](../resources/bookingbusiness.md)用の新しい**bookingAppointment**を作成します。 |
 |[BookingAppointment を取得します。](../api/bookingappointment-get.md) | [bookingAppointment](bookingappointment.md) |プロパティと**bookingAppointment**オブジェクトの関係を参照してください。|
 |[Update](../api/bookingappointment-update.md) | [bookingAppointment](bookingappointment.md)    |**BookingAppointment**オブジェクトを更新します。 |
-|[削除](../api/bookingappointment-delete.md) | なし |**BookingAppointment**オブジェクトを削除します。 |
-|[キャンセル](../api/bookingappointment-cancel.md)|なし| **BookingAppointment**オブジェクトをキャンセルします。|
+|[Delete](../api/bookingappointment-delete.md) | なし |**BookingAppointment**オブジェクトを削除します。 |
+|[Cancel](../api/bookingappointment-cancel.md)|なし| **BookingAppointment**オブジェクトをキャンセルします。|
 
 ## <a name="properties"></a>プロパティ
-| プロパティ     | 型   |説明|
+| プロパティ     | 種類   |説明|
 |:---------------|:--------|:----------|
 |customerEmailAddress|String|予定を予約する、 [bookingCustomer](bookingcustomer.md)の SMTP アドレスです。|
 |customerId|String|この予定の[bookingCustomer](bookingcustomer.md)の ID です。 ID が指定されていない場合、予定を作成するとき、新しい**bookingCustomer**オブジェクトが作成されます。 1 回に設定する必要があります **[得意先コード]** 不変です。|
@@ -37,13 +38,13 @@ ms.locfileid: "27066870"
 |customerPhone|String|お客様の電話番号です。|
 |duration|Duration|[ISO8601](https://www.iso.org/iso-8601-date-and-time-format.html)形式で表される、予定の長さです。 |
 |end|[dateTimeTimeZone](datetimetimezone.md)|日付、時刻、およびタイム ゾーンの予定を終了します。|
-|id|String| **BookingAppointment**の ID です。 読み取り専用。|
+|id|String| **BookingAppointment**の ID です。 読み取り専用です。|
 |invoiceAmount|倍精度浮動小数点数|請求書の請求金額です。|
 |invoiceDate|[dateTimeTimeZone](datetimetimezone.md)|日付、時刻、および請求書のこの予定のタイム ゾーンです。|
 |invoiceId|String|請求書の ID。|
 |invoiceStatus|文字列| 請求書の状態です。 使用可能な値: `draft`、`reviewing`、`open`、`canceled`、`paid`、`corrective`。|
 |invoiceUrl|String|Microsoft の予約で請求書の URL です。|
-|optOutOfCustomerEmail|ブール値|True は、この予定の[bookingCustomer](bookingcustomer.md)は、この予定の確認メッセージを表示するのには望んでいないことを示します。|
+|optOutOfCustomerEmail|ブール型|True は、この予定の[bookingCustomer](bookingcustomer.md)は、この予定の確認メッセージを表示するのには望んでいないことを示します。|
 |事後バッファリング|Duration|クリーンアップ、例として、予定が終了した後に予約する時間の量。 値は、 [ISO8601](https://www.iso.org/iso-8601-date-and-time-format.html)形式で表されます。 |
 |事前バッファリング|Duration|例として、準備のため、予定の開始前に予約する時間の量。 値は、 [ISO8601](https://www.iso.org/iso-8601-date-and-time-format.html)形式で表されます。|
 |価格|倍精度浮動小数点数|指定された[bookingService](bookingservice.md)の予定の正規の価格です。|

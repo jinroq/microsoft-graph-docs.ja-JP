@@ -2,12 +2,13 @@
 title: networkIPv6ConfigurationManagementCondition リソースの種類
 description: 構成ベースの管理条件を定義することも、デバイスが特定の IP を検出したときにトリガーとなる IPv6 はネットワークの設定です。 IP 構成の管理の条件だと考えてよい真のネットワーク接続がアクティブなときです。
 author: tfitzmac
-ms.openlocfilehash: de74fddad090993f6829180ba6f5eaea9cdaf59a
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: a5bb68ac270082df51e5d91b1e7f08bc9c1a7cbf
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27305741"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27879556"
 ---
 # <a name="networkipv6configurationmanagementcondition-resource-type"></a>networkIPv6ConfigurationManagementCondition リソースの種類
 
@@ -29,7 +30,7 @@ IPv6 DHCP サーバーのアドレスが一致しない場合があります。 
 |[NetworkIPv6ConfigurationManagementCondition を削除します。](../api/intune-fencing-networkipv6configurationmanagementcondition-delete.md)|なし|の[networkIPv6ConfigurationManagementCondition](../resources/intune-fencing-networkipv6configurationmanagementcondition.md)を削除します。|
 |[NetworkIPv6ConfigurationManagementCondition を更新します。](../api/intune-fencing-networkipv6configurationmanagementcondition-update.md)|[networkIPv6ConfigurationManagementCondition](../resources/intune-fencing-networkipv6configurationmanagementcondition.md)|[NetworkIPv6ConfigurationManagementCondition](../resources/intune-fencing-networkipv6configurationmanagementcondition.md)オブジェクトのプロパティを更新します。|
 
-## <a name="properties"></a>Properties
+## <a name="properties"></a>プロパティ
 |プロパティ|種類|説明|
 |:---|:---|:---|
 |ID|String|管理条件の一意の識別子です。 システムでは、作成時に割り当てられた値が生成されます。 [ManagementCondition](../resources/intune-fencing-managementcondition.md)から継承されました。|

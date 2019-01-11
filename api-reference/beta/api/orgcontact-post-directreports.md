@@ -1,12 +1,13 @@
 ---
 title: DirectReport を作成します。
 description: この API を使用すると、新しい directReport を作成します。
-ms.openlocfilehash: e99c2dcbc2a75e19f298a6bf2e655f302ca9137e
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 8119ea6972f1ea5b4e94e68ff4acd0dc8771c99f
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27074379"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27862560"
 ---
 # <a name="create-directreport"></a>DirectReport を作成します。
 
@@ -29,7 +30,7 @@ POST /contacts/{id}/directReports
 
 ```
 ## <a name="request-headers"></a>要求ヘッダー
-| 名前       | 型 | 説明|
+| 名前       | 種類 | 説明|
 |:---------------|:--------|:----------|
 | Authorization  | string  | ベアラー {トークン}。必須。 |
 

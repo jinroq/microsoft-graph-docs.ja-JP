@@ -1,12 +1,13 @@
 ---
 title: Outlook カテゴリを更新する
 description: '指定した outlookCategory オブジェクトの書き込み可能な **color** プロパティを更新します。 **DisplayName**プロパティを変更することはできません。 '
-ms.openlocfilehash: c69dc260127938bd4afa33e7406ac38862ef837d
-ms.sourcegitcommit: 37591c2299c80e7675cd2b5f781e1eeeba628a60
+localization_priority: Normal
+ms.openlocfilehash: 93e89b616863e6a09717540ef169e0188700b1cc
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "27748249"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27861007"
 ---
 # <a name="update-outlook-category"></a>Outlook カテゴリを更新する
 
@@ -37,7 +38,7 @@ PATCH /users/{id|userPrincipalName}/outlook/masterCategories/{id}
 ## <a name="request-body"></a>要求本文
 要求本文で、更新する関連フィールドの値を指定します。要求本文に含まれない既存のプロパティは、以前の値のままになるか、他のプロパティ値の変化に基づいて再計算されます。最適なパフォーマンスを得るためには、変更されていない既存の値を含めないでください。
 
-| プロパティ     | 型   |説明|
+| プロパティ     | 種類   |説明|
 |:---------------|:--------|:----------|
 |color|String|カテゴリを特徴付ける、あらかじめ設定された色の定数。定数は、事前定義された 25 種類の色のいずれか 1 つにマッピングされています。 |
 

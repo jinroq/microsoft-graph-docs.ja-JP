@@ -2,12 +2,13 @@
 title: windows10EnterpriseModernAppManagementConfiguration の削除
 description: windows10EnterpriseModernAppManagementConfiguration を削除します。
 author: tfitzmac
-ms.openlocfilehash: 41343f6c4914b5dae264c5e6403635d54464895f
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: eee5ac0b4848f745b0c943c681c59c4fc54470f2
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27302191"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27863694"
 ---
 # <a name="delete-windows10enterprisemodernappmanagementconfiguration"></a>windows10EnterpriseModernAppManagementConfiguration の削除
 

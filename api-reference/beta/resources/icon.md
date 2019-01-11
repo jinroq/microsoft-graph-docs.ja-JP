@@ -1,12 +1,13 @@
 ---
 title: アイコン リソースの種類
 description: セルのアイコンを表します。
-ms.openlocfilehash: fd3e0682a7eb73dd4e3286e11d9f9680755db265
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: e1b31632884c757d40be4a7c9639933439028382
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27068504"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27861692"
 ---
 # <a name="icon-resource-type"></a>アイコン リソースの種類
 
@@ -23,7 +24,7 @@ ms.locfileid: "27068504"
 |[Update](../api/icon-update.md) | [Icon](icon.md)  |アイコン オブジェクトを更新します。 |
 
 ## <a name="properties"></a>プロパティ
-| プロパティ     | 型   |説明|
+| プロパティ     | 種類   |説明|
 |:---------------|:--------|:----------|
 |index|int|指定したセット内のアイコンのインデックスを表します。|
 |set|文字列|アイコンがその一部であるセットを表します。可能な値は、`Invalid`、`ThreeArrows`、`ThreeArrowsGray`、`ThreeFlags`、`ThreeTrafficLights1`、`ThreeTrafficLights2`、`ThreeSigns`、`ThreeSymbols`、`ThreeSymbols2`、`FourArrows`、`FourArrowsGray`、`FourRedToBlack`、`FourRating`、`FourTrafficLights`、`FiveArrows`、`FiveArrowsGray`、`FiveRating`、`FiveQuarters`、`ThreeStars`、`ThreeTriangles`、`FiveBoxes` です。|

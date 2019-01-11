@@ -1,12 +1,13 @@
 ---
 title: eventMessage リソースの種類
 description: メッセージは会議出席依頼、キャンセル、応答 (承諾、仮受諾、辞退のいずれか) を表します。
-ms.openlocfilehash: c93f642d80fec8514af6a80afd8c47cd82569cd9
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 83a7c0fa48f48536b468afe5f5e4f22031be50e0
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27024041"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27862749"
 ---
 # <a name="eventmessage-resource-type"></a>eventMessage リソースの種類
 
@@ -49,7 +50,7 @@ ms.locfileid: "27024041"
 |[複数値の拡張プロパティを持つ eventMessage の取得](../api/multivaluelegacyextendedproperty-get.md)  | [eventMessage](eventmessage.md) | `$expand` を使用して、複数値の拡張プロパティを含む eventMessage を取得します。 |
 
 ## <a name="properties"></a>プロパティ
-| プロパティ     | 型   |説明|
+| プロパティ     | 種類   |説明|
 |:---------------|:--------|:----------|
 |bccRecipients|[recipient](recipient.md) collection|メッセージの BCC 受信者。|
 |body|[itemBody](itembody.md)|メッセージの本文。HTML 形式またはテキスト形式にできます。|
@@ -68,7 +69,7 @@ ms.locfileid: "27024041"
 |internetMessageHeaders | [internetMessageHeader](internetmessageheader.md) コレクション | [RFC5322](https://www.ietf.org/rfc/rfc5322.txt) によって定義された、メッセージ ヘッダーのコレクション。メッセージが送信者から受信者に到達するまでに辿ったネットワーク パスの詳細を説明します。 読み取り専用。|
 |internetMessageId |String |[RFC2822](https://www.ietf.org/rfc/rfc2822.txt) によって指定された形式のメッセージ ID。 |
 |isDeliveryReceiptRequested|Boolean|メッセージの開封確認メッセージが要求されているかどうかを示します。|
-|isDraft|ブール値|メッセージが下書きかどうかを示します。メッセージがまだ送信されていなければ下書きです。|
+|isDraft|ブール型|メッセージが下書きかどうかを示します。メッセージがまだ送信されていなければ下書きです。|
 |isRead|Boolean|メッセージが開封されたかどうかを示します。|
 |isReadReceiptRequested|ブール値|メッセージの開封確認メッセージが要求されているかどうかを示します。|
 |lastModifiedDateTime|DateTimeOffset|メッセージが最後に変更された日時。|

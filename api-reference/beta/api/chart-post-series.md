@@ -2,12 +2,13 @@
 title: Create ChartSeries
 description: この API を使用して、新しい ChartSeries を作成します。
 author: lumine2008
-ms.openlocfilehash: abf5f6a62d80592c3268996fb7d040c31172ae32
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: a86ccc050d9cde4cc8f7fc37222b3401bbb0d768
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27346194"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27859809"
 ---
 # <a name="create-chartseries"></a>Create ChartSeries
 

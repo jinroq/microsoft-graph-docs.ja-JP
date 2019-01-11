@@ -1,12 +1,13 @@
 ---
 title: resourceAccess リソースの種類
 description: OAuth 2.0 のためのアクセス許可のスコープまたはアプリケーションを必要とするアプリケーションの役割を指定します。 RequiredResourceAccess 型の**resourceAccess**プロパティは、 **ResourceAccess**のコレクションです。
-ms.openlocfilehash: 56e9b2b006d63d2a9abebc9e9585744b08438800
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: f5389915897c3aab8b8277a45b54042bc861b290
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27071867"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27862336"
 ---
 # <a name="resourceaccess-resource-type"></a>resourceAccess リソースの種類
 
@@ -35,7 +36,7 @@ OAuth 2.0 のためのアクセス許可のスコープまたはアプリケー�
 
 ```
 ## <a name="properties"></a>プロパティ
-| プロパティ     | 型   |説明|
+| プロパティ     | 種類   |説明|
 |:---------------|:--------|:----------|
 |ID|Guid|リソースのアプリケーションを公開する[oAuth2Permission](oauth2permission.md)または[エンティティ](approle.md)のインスタンスの 1 つの一意の識別子です。|
 |type|String|[OAuth2Permission](oauth2permission.md)または[エンティティ](approle.md)の**id**プロパティを参照するかどうかを指定します。 使用可能な値は、「スコープ」または「ロール」です。|

@@ -2,12 +2,13 @@
 title: omaSettingBase64 リソースの種類
 description: OMA 設定の Base64 定義。
 author: tfitzmac
-ms.openlocfilehash: ee25db94cc1426194166a7c66b9a8a626d62c3e4
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: f5b21705d4cabedc24009df794d958c6187af473
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27304075"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27869819"
 ---
 # <a name="omasettingbase64-resource-type"></a>omaSettingBase64 リソースの種類
 

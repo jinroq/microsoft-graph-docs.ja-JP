@@ -2,12 +2,13 @@
 title: Create managedDevice
 description: 新しい managedDevice オブジェクトを作成します。
 author: tfitzmac
-ms.openlocfilehash: fa37f7114dac2d990d5d5cd90fd26ae64555661d
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: b3dc59421e8419b0c8f861e8e9c09fab473ea5c6
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27340307"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27873396"
 ---
 # <a name="create-manageddevice"></a>Create managedDevice
 

@@ -2,12 +2,13 @@
 title: windows10NetworkBoundaryConfiguration リソースの種類
 description: Windows10 のネットワーク境界の構成
 author: tfitzmac
-ms.openlocfilehash: 7716eeaafc1b6821d31497ed8a8c9cdf9b887009
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: e4a1082044aeff3b55fe5f99a30f2943c3104b1e
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27311831"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27866018"
 ---
 # <a name="windows10networkboundaryconfiguration-resource-type"></a>windows10NetworkBoundaryConfiguration リソースの種類
 
@@ -28,7 +29,7 @@ Windows10 のネットワーク境界の構成
 |[Windows10NetworkBoundaryConfiguration を削除します。](../api/intune-deviceconfig-windows10networkboundaryconfiguration-delete.md)|なし|の[windows10NetworkBoundaryConfiguration](../resources/intune-deviceconfig-windows10networkboundaryconfiguration.md)を削除します。|
 |[Windows10NetworkBoundaryConfiguration を更新します。](../api/intune-deviceconfig-windows10networkboundaryconfiguration-update.md)|[windows10NetworkBoundaryConfiguration](../resources/intune-deviceconfig-windows10networkboundaryconfiguration.md)|[Windows10NetworkBoundaryConfiguration](../resources/intune-deviceconfig-windows10networkboundaryconfiguration.md)オブジェクトのプロパティを更新します。|
 
-## <a name="properties"></a>Properties
+## <a name="properties"></a>プロパティ
 |プロパティ|種類|説明|
 |:---|:---|:---|
 |ID|String|エンティティのキー。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|

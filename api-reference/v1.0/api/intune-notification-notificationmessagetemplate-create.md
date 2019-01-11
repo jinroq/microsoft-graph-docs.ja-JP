@@ -2,12 +2,13 @@
 title: notificationMessageTemplate の作成
 description: 新しい notificationMessageTemplate オブジェクトを作成します。
 author: tfitzmac
-ms.openlocfilehash: ac5a91d6a53719eac38f91e402a6f36f63ebdc36
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: f97f16298c48b787977330781e3aa95e68e4d28a
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27315597"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27861771"
 ---
 # <a name="create-notificationmessagetemplate"></a>notificationMessageTemplate の作成
 

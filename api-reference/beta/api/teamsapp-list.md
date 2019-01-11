@@ -2,12 +2,13 @@
 title: マイクロソフト チーム アプリケーション カタログから公開されているアプリケーションを一覧表示します。
 description: 'マイクロソフト チーム アプリケーション カタログからアプリケーションを一覧表示します。 '
 author: nkramer
-ms.openlocfilehash: 77867d5b75721fcb169da6ad6a8ff39c46de196e
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 4cd3d8d66caa384a064711987f4fcd7473083089
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27326468"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27863456"
 ---
 # <a name="list-the-published-apps-from-the-microsoft-teams-app-catalog"></a>マイクロソフト チーム アプリケーション カタログから公開されているアプリケーションを一覧表示します。
 

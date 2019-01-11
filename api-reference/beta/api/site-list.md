@@ -1,12 +1,13 @@
 ---
 title: サイトを列挙します。
 description: 指定されたフィルター条件に一致し、オプションのクエリを実行している組織で利用できる [サイト] の一覧を表示します。
-ms.openlocfilehash: 4e7d9d12f7b18df84a8b23cc3272084b310edb3a
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 87ce5b68ccadffa6e0422c413ab79ee784f361c7
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27071161"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27855819"
 ---
 # <a name="enumerate-sites"></a>サイトを列挙します。
 

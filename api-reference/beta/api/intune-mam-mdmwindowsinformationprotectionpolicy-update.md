@@ -2,12 +2,13 @@
 title: Update mdmWindowsInformationProtectionPolicy
 description: mdmWindowsInformationProtectionPolicy オブジェクトのプロパティを更新します。
 author: tfitzmac
-ms.openlocfilehash: e4b05831f91336cb5adafb6840b77a2120e6a42b
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: bd018cda0db5b803baa9134e29eff761affacf17
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27308632"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27863134"
 ---
 # <a name="update-mdmwindowsinformationprotectionpolicy"></a>Update mdmWindowsInformationProtectionPolicy
 

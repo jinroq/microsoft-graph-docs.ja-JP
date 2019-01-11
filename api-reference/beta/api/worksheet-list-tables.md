@@ -2,12 +2,13 @@
 title: テーブルを一覧表示する
 description: テーブル オブジェクトの一覧を取得します。
 author: lumine2008
-ms.openlocfilehash: d84c8ac2c17021eb930074e733c56e1aa3bb25dc
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: e0b0d64d86ff723889c06dfdd06673f4198f45d3
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27318999"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27855679"
 ---
 # <a name="list-tables"></a>テーブルを一覧表示する
 

@@ -2,12 +2,13 @@
 title: win32LobAppRegistryDetection リソースの種類
 description: Win32 アプリケーションを検出するためにレジストリのプロパティが含まれています
 author: tfitzmac
-ms.openlocfilehash: 5adeca1b569531d15657acc2a8960bab60580dc6
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: faccc030a9f15b511af4123c94687c904e60ff10
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27347741"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27867138"
 ---
 # <a name="win32lobappregistrydetection-resource-type"></a>win32LobAppRegistryDetection リソースの種類
 
@@ -19,7 +20,7 @@ Win32 アプリケーションを検出するためにレジストリのプロ�
 
 [Win32LobAppDetection](../resources/intune-apps-win32lobappdetection.md)から継承します。
 
-## <a name="properties"></a>Properties
+## <a name="properties"></a>プロパティ
 |プロパティ|種類|説明|
 |:---|:---|:---|
 |check32BitOn64System|ブール型|このレジストリ パスが 64 ビット システムで 32 ビット アプリケーションをチェックするかどうかを示す値|

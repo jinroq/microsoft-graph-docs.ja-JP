@@ -2,12 +2,13 @@
 title: Windows10PkcsCertificateProfile を更新します。
 description: Windows10PkcsCertificateProfile オブジェクトのプロパティを更新します。
 author: tfitzmac
-ms.openlocfilehash: c7f5919fb65403bc48d9a4bcfc0472b9828bcaba
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: c27ae0d2d6b422b90a9bd5d48a5dc9ccdb701b91
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27342064"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27863148"
 ---
 # <a name="update-windows10pkcscertificateprofile"></a>Windows10PkcsCertificateProfile を更新します。
 

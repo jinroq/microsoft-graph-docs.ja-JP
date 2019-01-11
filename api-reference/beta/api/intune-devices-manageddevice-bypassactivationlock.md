@@ -2,12 +2,13 @@
 title: bypassActivationLock アクション
 description: アクティベーション ロックをバイパスする
 author: tfitzmac
-ms.openlocfilehash: faf627a3f2c0d635398c11b1a7a82431884152a5
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 27fc3bac809ca501a669c1a00e4fda3e4ed425ae
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27306056"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27870575"
 ---
 # <a name="bypassactivationlock-action"></a>bypassActivationLock アクション
 

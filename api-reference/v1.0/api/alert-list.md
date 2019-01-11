@@ -2,12 +2,13 @@
 title: 警告の一覧表示
 description: オブジェクトのアラートの一覧を取得します。
 author: Preetikr
-ms.openlocfilehash: 64589fa04d4b6b11fb2ec435f6531df2e2f58a8a
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Priority
+ms.openlocfilehash: eac124cfd49f333c2c44053f21894f90f6d47582
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27324032"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27859053"
 ---
 # <a name="list-alerts"></a>警告の一覧表示
 

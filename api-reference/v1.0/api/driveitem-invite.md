@@ -3,12 +3,13 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
 title: アイテムにアクセスするために招待状を送信する
-ms.openlocfilehash: db089fcd0a3f948d8e43f366a4e6674c2505fa2d
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 1ba3bc3465274c6e1525d54c1ba1b59041b1e59f
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27021172"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27855581"
 ---
 # <a name="send-a-sharing-invitation"></a>共有の招待状を送信する
 
@@ -56,7 +57,7 @@ POST /users/{userId}/drive/items/{itemId}/invite
 }
 ```
 
-| パラメーター        | 型                           | 説明
+| パラメーター        | Type                           | 説明
 |:-----------------|:-------------------------------|:-------------------------
 | Recipients       | Collection([DriveRecipient][]) | アクセスおよび共有の招待状を受信する、受信者のコレクション。
 | message          | String                         | 共有の招待状に含まれるプレーンテキスト形式のメッセージ。最大の長さは 2000 文字です。
@@ -64,7 +65,7 @@ POST /users/{userId}/drive/items/{itemId}/invite
 | sendInvitation   | ブール値                        | True の場合、[リンクを共有する][]は、受信者に送信されます。 それ以外の場合、通知を送信せずに直接アクセス許可が与えられます。
 | roles            | Collection(String)             | 共有への招待の受信者に許可するロールを指定します。
 
-## <a name="example"></a>使用例
+## <a name="example"></a>例
 
 次の使用例は、共同作業中のファイルについてのメッセージには、"ryan@contoso.com"の電子メール アドレスを持つユーザーに共有への招待を送信します。
 この招待により、Ryan にはファイルへの読み取り/書き込みアクセス権が付与されます。

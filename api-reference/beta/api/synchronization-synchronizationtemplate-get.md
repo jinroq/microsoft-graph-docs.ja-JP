@@ -1,12 +1,13 @@
 ---
 title: SynchronizationTemplate を取得します。
 description: Id によって同期テンプレートを取得します。
-ms.openlocfilehash: 1ff3f11cf42f5a861e379c8fba2b491fbee2225e
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 9754b1fbc8c86f05d22f0ada57b8b97e0b1efbed
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27068398"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27863813"
 ---
 # <a name="get-synchronizationtemplate"></a>SynchronizationTemplate を取得します。
 
@@ -32,7 +33,7 @@ GET servicePrincipals/{id}/synchronization/templates/{templateId}
 
 ## <a name="request-headers"></a>要求ヘッダー
 
-| 名前           | 型    | 説明|
+| 名前           | 種類    | 説明|
 |:---------------|:--------|:-----------|
 | Authorization  | string  | ベアラー {トークン}。必須。 |
 

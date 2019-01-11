@@ -2,12 +2,13 @@
 title: Delete managedIOSStoreApp
 description: managedIOSStoreApp を削除します。
 author: tfitzmac
-ms.openlocfilehash: 6c52637cf5e74e9006dc703689e7ad1a64f0123f
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 83ff556d005b410658ae2885bd1ff7294d9dcdcd
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27337948"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27866424"
 ---
 # <a name="delete-managediosstoreapp"></a>Delete managedIOSStoreApp
 

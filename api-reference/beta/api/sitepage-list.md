@@ -3,12 +3,13 @@ author: rahmit
 ms.author: rahmit
 ms.date: 03/15/2018
 title: サイト内のページを一覧表示します。
-ms.openlocfilehash: 51177558d938400a5e559e83d6e1d2333de318cb
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 57c63ac897ed2a59059f85cf5c32412bd18f07db
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27072484"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27871408"
 ---
 # <a name="list-the-pages-in-the-site-pages-list-of-a-site"></a>サイトのサイトのページ一覧でページを一覧表示します。
 

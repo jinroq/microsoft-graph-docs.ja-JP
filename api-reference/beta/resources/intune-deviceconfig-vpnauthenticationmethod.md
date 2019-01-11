@@ -2,12 +2,13 @@
 title: vpnAuthenticationMethod 列挙型
 description: VPN 認証方法です。
 author: tfitzmac
-ms.openlocfilehash: 975649ec9b8fc3d6ce6d69dbc5a5a59baba44aef
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: c6954360a273a30457819dd865b34d771d1344b7
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27351605"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27888726"
 ---
 # <a name="vpnauthenticationmethod-enum-type"></a>vpnAuthenticationMethod 列挙型
 

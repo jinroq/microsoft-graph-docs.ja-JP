@@ -2,12 +2,13 @@
 title: vpnTrafficRuleRoutingPolicyType 列挙型
 description: VPN トラフィックの規則のルーティング ポリシーを指定します。
 author: tfitzmac
-ms.openlocfilehash: 5aa3f44f0e4ccf177154f97e9849093c52728b2e
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 2b44a2b58cc42e9f3f88964d79473327f4ca2b74
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27343422"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27855322"
 ---
 # <a name="vpntrafficruleroutingpolicytype-enum-type"></a>vpnTrafficRuleRoutingPolicyType 列挙型
 

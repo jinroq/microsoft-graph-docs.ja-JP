@@ -1,12 +1,13 @@
 ---
 title: group リソースの種類
 description: Office 365 のグループ、動的グループ、またはセキュリティ グループは、Azure Active Directory (AD の Azure) のグループを表します。
-ms.openlocfilehash: e9e6d652bba485a28a36a5efa8d670d9f4a6053f
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Priority
+ms.openlocfilehash: f4d4de207cdc8e3f9fbd312ad08639b85cbc87a1
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27021828"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27828015"
 ---
 # <a name="group-resource-type"></a>group リソースの種類
 
@@ -90,7 +91,7 @@ Office 365 グループ、動的なグループ、セキュリティ グルー�
 |[resetUnseenCount](../api/group-resetunseencount.md)|なし|現在のユーザーが最後の訪問以降見ていない、すべての投稿の unseenCount を 0 にリセットします。Office 365 のグループのみをサポートします。|
 
 ## <a name="properties"></a>プロパティ
-| プロパティ     | 型   |説明|
+| プロパティ     | 種類   |説明|
 |:---------------|:--------|:----------|
 |allowExternalSenders|ブール値|既定値は **false** です。組織外部のユーザーがグループにメッセージを送信できるかどうかを示します。|
 |autoSubscribeNewMembers|Boolean|既定値は **false** です。グループに追加された新しいメンバーが、電子メールの通知を受信するように自動的にサブスクライブされるかどうかを示します。グループの PATCH 要求でこのプロパティを設定できます。グループを作成する最初の POST 要求では設定しないでください。|
@@ -134,11 +135,11 @@ Office 365 グループ、動的なグループ、セキュリティ グルー�
 |calendarView|[event](event.md) コレクション|予定表のカレンダー ビュー。読み取り専用です。|
 |conversations|[conversation](conversation.md) コレクション|グループの会話。|
 |createdOnBehalfOf|[directoryObject](directoryobject.md)| グループを作成したユーザー (またはアプリケーション)。注: ユーザーが管理者である場合、これは設定されません。読み取り専用です。|
-|ドライブ|[drive](drive.md)|グループの既定のドライブです。 読み取り専用。|
-|drives|[drive](drive.md) コレクション|グループのドライブです。 読み取り専用。|
+|ドライブ|[drive](drive.md)|グループの既定のドライブです。 読み取り専用です。|
+|drives|[drive](drive.md) コレクション|グループのドライブです。 読み取り専用です。|
 |events|[event](event.md) コレクション|グループの予定表イベント。|
 |extensions|[extension](extension.md) コレクション|グループに対して定義されているオープン拡張機能のコレクション。読み取り専用です。Null 許容型。|
-|groupLifecyclePolicies|[groupLifecyclePolicy](grouplifecyclepolicy.md) コレクション|このグループのライフ サイクル ポリシーのコレクションです。 読み取り専用。 Null 許容型。|
+|groupLifecyclePolicies|[groupLifecyclePolicy](grouplifecyclepolicy.md) コレクション|このグループのライフ サイクル ポリシーのコレクションです。 読み取り専用です。 Null 許容型。|
 |memberOf|[directoryObject](directoryobject.md) コレクション|このグループがメンバーとして含まれているグループ。HTTP メソッド:GET (すべてのグループでサポートされます)。読み取り専用です。Null 許容型。|
 |members|[directoryObject](directoryobject.md) コレクション| このグループのメンバーであるユーザーとグループ。HTTP メソッド:GET (すべてのグループでサポートされます)、POST (Office 365 グループ、セキュリティ グループ、およびメールが有効なセキュリティ グループでサポートされます)、DELETE (Office 365 グループとセキュリティ グループでサポートされます)。Null 許容型。|
 |onenote|[Onenote](onenote.md)| 読み取り専用です。|

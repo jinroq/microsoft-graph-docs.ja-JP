@@ -1,12 +1,13 @@
 ---
 title: 'reportRoot: getSkypeForBusinessParticipantActivityMinuteCounts'
 description: 組織からユーザーが参加した会議セッションの長さ (分) と種類について、使用傾向を取得します。 会議セッションの種類には、オーディオ/ビデオがあります。
-ms.openlocfilehash: 5d6b43d9fb989a57c206f95b9c4ee28dda439503
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: a744308b934a374362a8f2e8fd78d73fe57e5e3c
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27068409"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27862553"
 ---
 # <a name="reportroot-getskypeforbusinessparticipantactivityminutecounts"></a>reportRoot: getSkypeForBusinessParticipantActivityMinuteCounts
 
@@ -38,7 +39,7 @@ GET /reports/getSkypeForBusinessParticipantActivityMinuteCounts(period='{period_
 
 要求 URL に、次のパラメーターと有効な値を指定します。
 
-| パラメーター | 型   | 説明                              |
+| パラメーター | Type   | 説明                              |
 | :-------- | :----- | :--------------------------------------- |
 | period    | 文字列 | レポートを集計する期間の長さを指定します。 {period_value} でサポートされている値は D7、D30、D90、D180 です。 これらの値は、D*n* の形式 (*n* はレポートを集計する日数) に従います。 必須。 |
 
@@ -69,7 +70,7 @@ GET /reports/getSkypeForBusinessParticipantActivityMinuteCounts(period='{period_
 
 かどうかは成功すると、このメソッドが返されます、`200 OK`応答コードおよび応答の本文に**[skypeForBusinessParticipantActivityMinuteCounts](../resources/skypeforbusinessparticipantactivityminutecounts.md)** オブジェクトです。
 
-## <a name="example"></a>使用例
+## <a name="example"></a>例
 
 ### <a name="csv"></a>CSV
 

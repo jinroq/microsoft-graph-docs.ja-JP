@@ -2,12 +2,13 @@
 title: アプリケーション一覧
 description: この組織内のアプリケーションの一覧を取得します。
 author: lleonard-msft
-ms.openlocfilehash: 138a9e6d238fde44d5b5c47781bbd93cb2b73f98
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Priority
+ms.openlocfilehash: 5443010f613f1978c3b88a9cc57237ca7b844805
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27336695"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27854979"
 ---
 # <a name="list-applications"></a>アプリケーション一覧
 

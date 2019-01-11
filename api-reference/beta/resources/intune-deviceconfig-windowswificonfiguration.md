@@ -2,12 +2,13 @@
 title: windowsWifiConfiguration リソースの種類
 description: デバイス構成です。
 author: tfitzmac
-ms.openlocfilehash: 5c8f7df3ef1c80e2d6204ca4acb2996200af5fa2
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 50f73a6a736aea5cac06c05d360c8f0c80bb41ce
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27359186"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27872717"
 ---
 # <a name="windowswificonfiguration-resource-type"></a>windowsWifiConfiguration リソースの種類
 
@@ -28,7 +29,7 @@ ms.locfileid: "27359186"
 |[WindowsWifiConfiguration を削除します。](../api/intune-deviceconfig-windowswificonfiguration-delete.md)|なし|の[windowsWifiConfiguration](../resources/intune-deviceconfig-windowswificonfiguration.md)を削除します。|
 |[WindowsWifiConfiguration を更新します。](../api/intune-deviceconfig-windowswificonfiguration-update.md)|[windowsWifiConfiguration](../resources/intune-deviceconfig-windowswificonfiguration.md)|[WindowsWifiConfiguration](../resources/intune-deviceconfig-windowswificonfiguration.md)オブジェクトのプロパティを更新します。|
 
-## <a name="properties"></a>Properties
+## <a name="properties"></a>プロパティ
 |プロパティ|種類|説明|
 |:---|:---|:---|
 |ID|String|エンティティのキー。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|

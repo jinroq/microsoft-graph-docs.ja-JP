@@ -2,12 +2,13 @@
 title: Create mobileThreatDefenseConnector
 description: 新しい mobileThreatDefenseConnector オブジェクトを作成します。
 author: tfitzmac
-ms.openlocfilehash: e77b4684f2f330441b8d9ec1f7b14e8e788835a9
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: a1ead3e352723e8dc345c94eee513c8fb0c1aaa7
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27330983"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27854895"
 ---
 # <a name="create-mobilethreatdefenseconnector"></a>Create mobileThreatDefenseConnector
 

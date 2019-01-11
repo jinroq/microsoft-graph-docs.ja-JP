@@ -2,12 +2,13 @@
 title: managedAppConfiguration リソースの種類
 description: 構成の対象であるユーザーに対して、一連のカスタム設定を現状のままアプリに配信するために使用する構成です。
 author: tfitzmac
-ms.openlocfilehash: e4b20c642f49b2f110ced2f72a5a54a6583b561f
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 2b3acf921f76e34e21427364ef84d1647cc7d0f3
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27346908"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27861321"
 ---
 # <a name="managedappconfiguration-resource-type"></a>managedAppConfiguration リソースの種類
 

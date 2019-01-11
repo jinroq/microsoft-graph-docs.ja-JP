@@ -2,12 +2,13 @@
 title: deviceEnrollmentWindowsHelloForBusinessConfigurations のリスト
 description: deviceEnrollmentWindowsHelloForBusinessConfiguration オブジェクトのプロパティとリレーションシップをリストします。
 author: tfitzmac
-ms.openlocfilehash: a3cb02ce561ccd618269eaee1e0d8495d7ff7f6c
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 0f40a646e18e5cecb40361952c14021331902644
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27304299"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27861398"
 ---
 # <a name="list-deviceenrollmentwindowshelloforbusinessconfigurations"></a>deviceEnrollmentWindowsHelloForBusinessConfigurations のリスト
 

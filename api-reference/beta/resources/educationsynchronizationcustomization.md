@@ -2,12 +2,13 @@
 title: educationSynchronizationCustomization リソースの種類
 description: 'リソース エンティティの学校データ プロファイルの同期をカスタマイズするための設定を提供します。 同期されているすべてのエンティティには、カスタマイズを適用できます。 '
 author: mmast-msft
-ms.openlocfilehash: d4f67c9f56198350731c18fe3da8b512522c4d71
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 9294af5796daeefb394ed1625a9a36128ae7b2a4
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27350637"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27860901"
 ---
 # <a name="educationsynchronizationcustomization-resource-type"></a>educationSynchronizationCustomization リソースの種類
 
@@ -17,7 +18,7 @@ ms.locfileid: "27350637"
 
 >**注:****SynchronizationStartDate**プロパティは、 **StudentEnrollment**のエンティティにのみ適用されます。
 
-## <a name="properties"></a>Properties
+## <a name="properties"></a>プロパティ
 
 | プロパティ | 種類 | 説明 |
 |:-|:-|:-|

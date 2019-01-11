@@ -2,12 +2,13 @@
 title: 'メッセージ: reply'
 description: メッセージの送信者に返信します。その後、メッセージは送信済みアイテム フォルダーに保存されます。
 author: angelgolfer-ms
-ms.openlocfilehash: e52dc393edf92f4fecfda93166392be0249ca4c3
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 2ba3df6551aab9138e90fa5e3fc452f2929b4815
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27363628"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27856323"
 ---
 # <a name="message-reply"></a>メッセージ: reply
 
@@ -39,7 +40,7 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/reply
 ## <a name="request-body"></a>要求本文
 要求本文で、次のパラメーターを含む JSON オブジェクトを指定します。
 
-| パラメーター    | 種類   |説明|
+| パラメーター    | Type   |説明|
 |:---------------|:--------|:----------|
 |comment|String|含めるコメントです。空の文字列にすることができます。|
 

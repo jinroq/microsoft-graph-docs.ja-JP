@@ -1,12 +1,13 @@
 ---
 title: educationAssignmentPointsGrade リソースの種類
 description: ポイント グレード タイプに割り当てを設定すると、各提出書類は、このオブジェクトの**submission.grade**プロパティに関連付けられているがあります。 これから educationAssignmentGrade、サブクラスを作成します。
-ms.openlocfilehash: 2439ac8946fea588bd7bc1afe7f1ff1042b9179a
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 2084a1bda6784165576c3ec454fa9ee88601c952
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27068503"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27861405"
 ---
 # <a name="educationassignmentpointsgrade-resource-type"></a>educationAssignmentPointsGrade リソースの種類
 
@@ -16,7 +17,7 @@ ms.locfileid: "27068503"
 
 
 ## <a name="properties"></a>プロパティ
-| プロパティ     | 型   |説明|
+| プロパティ     | 種類   |説明|
 |:---------------|:--------|:----------|
 |points|単精度浮動小数点型 (Single)|先生をポイント数では、この送信オブジェクト、といいます。|
 

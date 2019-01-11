@@ -3,12 +3,13 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
 title: SearchResult
-ms.openlocfilehash: 7e6bd6e6ff48ae34e197955d16a3df1d539a3c05
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 6b7376fcfcfc15ea2ce5807a828854e5bdf9c719
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27071799"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27884652"
 ---
 # <a name="searchresult-resource-type"></a>SearchResult リソースの種類
 
@@ -32,7 +33,7 @@ ms.locfileid: "27071799"
 
 ## <a name="properties"></a>プロパティ
 
-| プロパティ            | 型   | 説明
+| プロパティ            | 種類   | 説明
 |:--------------------|:-------|:----------------------------------------------
 | onClickTelemetryUrl | String | テレメトリ情報の記録に使用できるコールバックの URL。ユーザーがより正確な結果を得るためにこのアイテムを操作する場合は、アプリケーションからこの URL に対して GET を発行する必要があります。
 

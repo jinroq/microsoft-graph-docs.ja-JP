@@ -2,12 +2,13 @@
 title: EducationSubmissionResource を作成します。
 description: 'リソースを [リソース] リストに追加します。 このアクションは、この送信が割り当てられている受講者にのみ実行できます。 **AllowStudentsToAddResources**フラグが設定されていない場合、この操作は成功しません true に設定します。 呼び出し元は、ファイル ベースのリソースを新規作成する必要がある場合は、提出書類に関連付けられているリソース] フォルダーにファイルをアップロードする必要があります。 ファイルが存在しないか、そのフォルダーでは、POST 要求は失敗します。 '
 author: dipakboyed
-ms.openlocfilehash: 71d06e996213c133ed9c48d5d3e320a785e122ae
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 585ece0dd8239c5a3107420b88cf2103fe5fb7eb
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27321302"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27888117"
 ---
 # <a name="create-educationsubmissionresource"></a>EducationSubmissionResource を作成します。
 

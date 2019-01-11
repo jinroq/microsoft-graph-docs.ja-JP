@@ -1,12 +1,13 @@
 ---
 title: 'orgContact: 所属するグループ] ボックスの一覧'
 description: グループおよび管理の単位のメンバーである連絡先の一覧を取得します。
-ms.openlocfilehash: 9b33cf9a4849ed4d97ab11d4791c703005115a5a
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 318936a49c4eeb56f05c685fc1a1ddd1eaad1a62
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27074376"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27862687"
 ---
 # <a name="orgcontact-list-memberof"></a>orgContact: 所属するグループ] ボックスの一覧
 
@@ -32,7 +33,7 @@ GET /contacts/{id}/memberOf
 このメソッドは、応答をカスタマイズするための [OData クエリ パラメーター](https://developer.microsoft.com/graph/docs/concepts/query_parameters)をサポートします。
 
 ## <a name="request-headers"></a>要求ヘッダー
-| 名前       | 型 | 説明|
+| 名前       | 種類 | 説明|
 |:-----------|:------|:----------|
 | Authorization  | string  | ベアラー {トークン}。必須。 |
 

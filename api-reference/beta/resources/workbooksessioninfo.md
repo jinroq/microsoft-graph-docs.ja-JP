@@ -2,12 +2,13 @@
 title: workbookSessionInfo リソース型
 description: ブック セッションについての情報を提供します。
 author: lumine2008
-ms.openlocfilehash: 5a86fd4dfd653f16445eeccad8478db56db0ac5f
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 25812d48626c7dc5e468915f7308941a4f74b38e
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27316843"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27860964"
 ---
 # <a name="workbooksessioninfo-resource-type"></a>workbookSessionInfo リソース型
 
@@ -35,6 +36,6 @@ ms.locfileid: "27316843"
 
 | プロパティ | 種類  | 説明                               |
 |:---------|:------|:------------------------------------------|
-| ID  | string | ブック セッションの ID。 |
-| persistChanges | string |  `true`: 永続セッションの場合。 `false`: 非永続セッション (表示モード) の場合。 |
+| ID  | 文字列 | ブック セッションの ID。 |
+| persistChanges | 文字列 |  `true`: 永続セッションの場合。 `false`: 非永続セッション (表示モード) の場合。 |
 

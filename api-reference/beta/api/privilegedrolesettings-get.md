@@ -1,12 +1,13 @@
 ---
 title: PrivilegedRoleSettings を取得します。
 description: 指定したロールのロールの設定を取得します。 PrivilegedRoleSettings オブジェクトが返されます。
-ms.openlocfilehash: c064e2eb11a4e91247894338c43c7c6dd9f9dcc3
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: a80c4027ace009292e7a57b8104e94e114175f1d
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27067763"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27879815"
 ---
 # <a name="get-privilegedrolesettings"></a>PrivilegedRoleSettings を取得します。
 

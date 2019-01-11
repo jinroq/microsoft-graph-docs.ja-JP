@@ -2,12 +2,13 @@
 title: win32LobAppPowerShellScriptDetection リソースの種類
 description: Win32 アプリケーションを検出する PowerShell スクリプトのプロパティが含まれています
 author: tfitzmac
-ms.openlocfilehash: 7f69b2c066ae90cfcd805b3d3cfe57193046d440
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: bdd3c0e6864a3568b4f1efb7c1c18a25f3e7c84d
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27327574"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27863029"
 ---
 # <a name="win32lobapppowershellscriptdetection-resource-type"></a>win32LobAppPowerShellScriptDetection リソースの種類
 
@@ -19,7 +20,7 @@ Win32 アプリケーションを検出する PowerShell スクリプトのプ�
 
 [Win32LobAppDetection](../resources/intune-apps-win32lobappdetection.md)から継承します。
 
-## <a name="properties"></a>Properties
+## <a name="properties"></a>プロパティ
 |プロパティ|種類|説明|
 |:---|:---|:---|
 |enforceSignatureCheck|ブール型|署名チェックを強制するかどうかを示す値|

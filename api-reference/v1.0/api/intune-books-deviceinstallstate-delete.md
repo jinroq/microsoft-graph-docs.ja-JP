@@ -2,12 +2,13 @@
 title: Delete deviceInstallState
 description: deviceInstallState を削除します。
 author: tfitzmac
-ms.openlocfilehash: 75088da181233ad764250fe9bfb6a4bd54bf0cc2
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 461b4481dbfdfebff2ebcf2718707330ee4d5f0b
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27350009"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27856022"
 ---
 # <a name="delete-deviceinstallstate"></a>Delete deviceInstallState
 

@@ -2,12 +2,13 @@
 title: Outlook カテゴリを取得する
 description: 指定した outlookCategory オブジェクトのプロパティとリレーションシップを取得します。
 author: angelgolfer-ms
-ms.openlocfilehash: c3d60ced7213176936d79574445b62eb525304ad
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 45327a6143104b4507a8e573b5cba01b605abd00
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27345683"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27863008"
 ---
 # <a name="get-outlook-category"></a>Outlook カテゴリを取得する
 

@@ -1,12 +1,13 @@
 ---
 title: Microsoft Graph API を使用して Microsoft Teams で作業する
 description: マイクロソフト チームは、特定のチームの予定表、ファイル、ノート、プランナーの計画に組み込みのアクセスを提供する Office 365 でチャット ベース ワークスペースです。
-ms.openlocfilehash: b42c33a34e0191eae236f675f29762834dfc29da
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Priority
+ms.openlocfilehash: 196b7e3726609fe64f1621c0c1030dc6bfdd83be
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27022106"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27866613"
 ---
 # <a name="use-the-microsoft-graph-api-to-work-with-microsoft-teams"></a>Microsoft Graph API を使用して Microsoft Teams で作業する
 
@@ -50,9 +51,9 @@ Microsoft Graph では、マイクロソフトのチームは、[グループ](.
 | 使用例      | Verb      | URL |
 | ------------------------------------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
 | [メンバーを追加する](../api/group-post-members.md)    | POST      | /groups/{id}/members/$ ref  |
-| [メンバーを削除する](../api/group-delete-members.md)   | Delete    | /groups/{id}/members/{ユーザー Id}/$ref |
+| [メンバーを削除する](../api/group-delete-members.md)   | DELETE    | /groups/{id}/members/{ユーザー Id}/$ref |
 | [Add owner](../api/group-post-owners.md)     | POST       | /groups/{id}/owners/$ ref |
-| [所有者を削除する](../api/group-delete-owners.md) | Delete    | /groups/{id}/owners/{ユーザー Id}/$ref |
+| [所有者を削除する](../api/group-delete-owners.md) | DELETE    | /groups/{id}/owners/{ユーザー Id}/$ref |
 | [チームを更新します。](../api/team-update.md)  | PATCH     | /teams/{id} |
 
 所有者を追加するとするもそのユーザーのメンバーとして追加することをお勧めします。 チームの所有者は、メンバーではない場合は、所有権およびメンバーシップの変更がすぐに表示されないマイクロソフトのチームで。 さらに、別のアプリケーションと Api を処理するとは異なる。 たとえば、マイクロソフトのチームが表示されますチームのユーザーであるの所有者またはメンバーのいずれかマイクロソフト チームの PowerShell コマンドレットと私/joinedTeams API は、ユーザーのメンバーがチームを表示のみ。 混乱を避けるためには、メンバーの一覧にすべての所有者を追加します。 
@@ -78,5 +79,5 @@ Microsoft Graph では、マイクロソフトのチームは、[グループ](.
 
 ## <a name="see-also"></a>関連項目
 
-- [マイクロソフト チームの API の概要](/graph/teams-concept-overview)
+- [Microsoft Teams API の概要](/graph/teams-concept-overview)
 - サンプル コード: [contoso 社の航空会社](https://github.com/microsoftgraph/contoso-airlines-teams-sample)、 [C# サンプル ミニ](https://github.com/microsoftgraph/csharp-teams-sample-graph)

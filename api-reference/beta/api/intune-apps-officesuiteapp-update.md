@@ -2,12 +2,13 @@
 title: OfficeSuiteApp を更新します。
 description: OfficeSuiteApp オブジェクトのプロパティを更新します。
 author: tfitzmac
-ms.openlocfilehash: 444bf90622d47d803a311e29d504dd8517369768
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 0fddae997d026702c450a5fea15d38aedbf589ed
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27337941"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27859760"
 ---
 # <a name="update-officesuiteapp"></a>OfficeSuiteApp を更新します。
 

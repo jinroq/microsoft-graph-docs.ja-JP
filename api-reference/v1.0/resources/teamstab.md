@@ -1,12 +1,13 @@
 ---
 title: teamsTab リソースの種類
 description: 'タブでは、teamsTab をチーム内でのチャネル (接続) を固定しました。 '
-ms.openlocfilehash: 4e9773fa2e4ea6a114c1f2695906c09d84b3f043
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: a1c3302251ac9b68be1cd8d6a011b7e0a7d216b1
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27022094"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27860845"
 ---
 # <a name="teamstab-resource-type"></a>teamsTab リソースの種類
 
@@ -27,7 +28,7 @@ ms.locfileid: "27022094"
 
 ## <a name="properties"></a>プロパティ
 
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---------------|:--------|:----------|
 |  ID              |   文字列                  |  チャネル タブ読み取りのみの特定のインスタンスを一意に識別する識別子です。     |
 |  displayName            |   string                  |  タブの名前です。     |

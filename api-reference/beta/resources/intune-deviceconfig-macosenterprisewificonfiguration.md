@@ -2,12 +2,13 @@
 title: macOSEnterpriseWiFiConfiguration リソースの種類
 description: MacOS Wi-fi WPA-エンタープライズまたは WPA2-エンタープライズ構成のプロファイルです。
 author: tfitzmac
-ms.openlocfilehash: 639f0c8f075a080be334a28ffbcc17413064c1b0
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 132701b0d3bb666d8b58bed59a0f0e28b7d062c1
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27350709"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27890763"
 ---
 # <a name="macosenterprisewificonfiguration-resource-type"></a>macOSEnterpriseWiFiConfiguration リソースの種類
 
@@ -28,7 +29,7 @@ MacOS Wi-fi WPA-エンタープライズまたは WPA2-エンタープライズ�
 |[MacOSEnterpriseWiFiConfiguration を削除します。](../api/intune-deviceconfig-macosenterprisewificonfiguration-delete.md)|なし|の[macOSEnterpriseWiFiConfiguration](../resources/intune-deviceconfig-macosenterprisewificonfiguration.md)を削除します。|
 |[MacOSEnterpriseWiFiConfiguration を更新します。](../api/intune-deviceconfig-macosenterprisewificonfiguration-update.md)|[macOSEnterpriseWiFiConfiguration](../resources/intune-deviceconfig-macosenterprisewificonfiguration.md)|[MacOSEnterpriseWiFiConfiguration](../resources/intune-deviceconfig-macosenterprisewificonfiguration.md)オブジェクトのプロパティを更新します。|
 
-## <a name="properties"></a>Properties
+## <a name="properties"></a>プロパティ
 |プロパティ|種類|説明|
 |:---|:---|:---|
 |ID|String|エンティティのキー。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|

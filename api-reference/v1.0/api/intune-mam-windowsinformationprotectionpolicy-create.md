@@ -2,12 +2,13 @@
 title: Create windowsInformationProtectionPolicy
 description: 新しい windowsInformationProtectionPolicy オブジェクトを作成します。
 author: tfitzmac
-ms.openlocfilehash: 95a2d01f92b7636a927e25281d820e2e4e03d58c
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 27c46dc08e2fe2bdb1e9c66e11f0694c94faeaf6
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27344500"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27873732"
 ---
 # <a name="create-windowsinformationprotectionpolicy"></a>Create windowsInformationProtectionPolicy
 

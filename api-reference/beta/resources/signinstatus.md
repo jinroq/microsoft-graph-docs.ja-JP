@@ -1,12 +1,13 @@
 ---
 title: signInStatus リソースの種類
 description: サインインの状態 (成功または失敗) の記号では、します。
-ms.openlocfilehash: cafa0dffe1b1d798d87225ac82901cf041d5e4fa
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 96bcee62bac24701254f56bee41422ca91501d9e
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27073321"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27878639"
 ---
 # <a name="signinstatus-resource-type"></a>signInStatus リソースの種類
 サインインの状態 (成功または失敗) の記号では、します。
@@ -14,7 +15,7 @@ ms.locfileid: "27073321"
 
 
 ## <a name="properties"></a>プロパティ
-| プロパティ     | 型   |説明|
+| プロパティ     | 種類   |説明|
 |:---------------|:--------|:----------|
 |additionalDetails|String|サインインの活動の詳細を説明します。|
 |errorCode|Int32|サインインに失敗した時に生成される 5 6digit のエラー コードを提供します。 [エラー コードとメッセージの一覧](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-reporting-activity-sign-ins-errors)を確認してください。|

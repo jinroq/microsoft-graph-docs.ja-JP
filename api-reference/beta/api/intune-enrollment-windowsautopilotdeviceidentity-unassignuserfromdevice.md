@@ -2,12 +2,13 @@
 title: unassignUserFromDevice アクション
 description: 自動操縦デバイスからユーザーの割り当てが解除されます。
 author: tfitzmac
-ms.openlocfilehash: 9374111b9a73bdaa9ef25391c62bb1a5fbb38d8c
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 88e530fd1820b0be95d8eabc80ec244b54c3f33c
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27329737"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27870519"
 ---
 # <a name="unassignuserfromdevice-action"></a>unassignUserFromDevice アクション
 

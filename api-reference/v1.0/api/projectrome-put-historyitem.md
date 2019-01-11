@@ -1,12 +1,13 @@
 ---
 title: 作成するか、historyItem を置き換える
 description: 新規作成または既存のユーザー アクティビティの既存の履歴項目を置換します。
-ms.openlocfilehash: a33c5cb295ce0cd954c37154bc85eac0322937e0
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: b3462edef2c210399e4dd653e9b3c7d91bb67875
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27023808"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27856295"
 ---
 # <a name="create-or-replace-a-historyitem"></a>作成するか、historyItem を置き換える
 
@@ -35,7 +36,7 @@ Id は GUID である必要があります。
 
 ## <a name="request-headers"></a>要求ヘッダー
 
-|名前 | 型 | 説明|
+|名前 | 種類 | 説明|
 |:----|:-----|:-----------|
 |Authorization | string | ベアラー {トークン}。必須。|
 

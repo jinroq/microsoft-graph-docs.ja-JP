@@ -1,12 +1,13 @@
 ---
 title: リスト programControlTypes
 description: Azure AD のレビュー機能にアクセス、すべての programControlType オブジェクトを一覧表示します。
-ms.openlocfilehash: 9e3b8efccd8d8be96ef1295dfba1a5c2e329c756
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: ae5a2298d3c0f542f7d8fd766f412b8cf5648730
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27074445"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27860887"
 ---
 # <a name="list-programcontroltypes"></a>リスト programControlTypes
 
@@ -28,7 +29,7 @@ Azure AD[アクセスの確認](../resources/accessreviews-root.md)機能では�
 GET /programControlTypes
 ```
 ## <a name="request-headers"></a>要求ヘッダー
-| 名前         | 型        | 説明 |
+| 名前         | 種類        | 説明 |
 |:-------------|:------------|:------------|
 | Authorization | string | ベアラー\{トークン\}。 必須。 |
 

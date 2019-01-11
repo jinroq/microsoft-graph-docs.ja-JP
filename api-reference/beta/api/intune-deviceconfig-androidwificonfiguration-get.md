@@ -2,12 +2,13 @@
 title: AndroidWiFiConfiguration を取得します。
 description: AndroidWiFiConfiguration オブジェクトのプロパティと関係を参照してください。
 author: tfitzmac
-ms.openlocfilehash: 770f550554a29c47bc9142767c44f2ad98266315
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 570510ff45af1da25fe27586a2ecbf46be517b92
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27340741"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27863442"
 ---
 # <a name="get-androidwificonfiguration"></a>AndroidWiFiConfiguration を取得します。
 

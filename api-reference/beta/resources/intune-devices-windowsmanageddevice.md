@@ -2,12 +2,13 @@
 title: windowsManagedDevice リソースの種類
 description: 管理または整いました Intune を使用されている Windows のデバイス
 author: tfitzmac
-ms.openlocfilehash: d432e4cdc4552117de56362df0fd632f6bc1719e
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: fc1b55694881b913fac57edeff3d9e1f9e48f099
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27328939"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27872731"
 ---
 # <a name="windowsmanageddevice-resource-type"></a>windowsManagedDevice リソースの種類
 
@@ -28,7 +29,7 @@ ms.locfileid: "27328939"
 |[WindowsManagedDevice を削除します。](../api/intune-devices-windowsmanageddevice-delete.md)|なし|の[windowsManagedDevice](../resources/intune-devices-windowsmanageddevice.md)を削除します。|
 |[WindowsManagedDevice を更新します。](../api/intune-devices-windowsmanageddevice-update.md)|[windowsManagedDevice](../resources/intune-devices-windowsmanageddevice.md)|[WindowsManagedDevice](../resources/intune-devices-windowsmanageddevice.md)オブジェクトのプロパティを更新します。|
 
-## <a name="properties"></a>Properties
+## <a name="properties"></a>プロパティ
 |プロパティ|種類|説明|
 |:---|:---|:---|
 |ID|String|[ManagedDevice](../resources/intune-devices-manageddevice.md)から継承されるデバイスの一意の識別子|

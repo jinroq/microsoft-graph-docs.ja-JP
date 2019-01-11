@@ -2,12 +2,13 @@
 title: RestrictedAppsViolation を削除します。
 description: RestrictedAppsViolation を削除します。
 author: tfitzmac
-ms.openlocfilehash: 0a5a746074f743d583f6512e12bd85419786146f
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 18f57161d6ac299aa16a1cdfc12b46a9358de259
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27312958"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27863169"
 ---
 # <a name="delete-restrictedappsviolation"></a>RestrictedAppsViolation を削除します。
 

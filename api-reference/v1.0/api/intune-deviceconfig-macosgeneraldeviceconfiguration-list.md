@@ -2,12 +2,13 @@
 title: macOSGeneralDeviceConfigurations のリスト
 description: macOSGeneralDeviceConfiguration オブジェクトのプロパティとリレーションシップをリストします。
 author: tfitzmac
-ms.openlocfilehash: 27acd8306ab473e2d176856163359e954fa3b0a3
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 6c11cc0f1fef43297fd585dc5c9e30ecd361d04e
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27359221"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27855217"
 ---
 # <a name="list-macosgeneraldeviceconfigurations"></a>macOSGeneralDeviceConfigurations のリスト
 

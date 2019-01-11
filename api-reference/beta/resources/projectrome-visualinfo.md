@@ -1,12 +1,13 @@
 ---
 title: visualInfo リソースの種類
 description: アクティビティ オブジェクトの**visualElements**プロパティを表すための複合型です。
-ms.openlocfilehash: ac895e854051cb487fa9afd0ff9ada972b97aa19
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 3e1dd3d7e4ecfaf5053f839f0ac0d0039692b2a4
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27070577"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27855315"
 ---
 # <a name="visualinfo-resource-type"></a>visualInfo リソースの種類
 
@@ -22,7 +23,7 @@ ms.locfileid: "27070577"
 
 ## <a name="properties"></a>プロパティ
 
-|名前 | 型 | 説明|
+|名前 | 種類 | 説明|
 |:----|:------|:-----------|
 |表示テキスト | String | 必須。 ユーザーの一意のアクティビティ (たとえば、アクティビティがドキュメントの作成を参照する場所の場合の文書名) の説明文を短く|
 |説明 | String | 省略可能。 ユーザーの固有の活動の長いテキストの説明 (例: ドキュメントの名前、最初の文、またはメタデータ)|

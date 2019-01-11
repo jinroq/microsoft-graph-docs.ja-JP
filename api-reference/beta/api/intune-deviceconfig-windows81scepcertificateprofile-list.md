@@ -2,12 +2,13 @@
 title: リスト windows81SCEPCertificateProfiles
 description: Windows81SCEPCertificateProfile オブジェクトのプロパティと関係を一覧表示します。
 author: tfitzmac
-ms.openlocfilehash: b9f05ef49cb6e5cc5f347c419595276ce8164cdf
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 4e63efa3730f75a7c7d48fc2d7a2855e6078d2fe
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27304502"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27863232"
 ---
 # <a name="list-windows81scepcertificateprofiles"></a>リスト windows81SCEPCertificateProfiles
 

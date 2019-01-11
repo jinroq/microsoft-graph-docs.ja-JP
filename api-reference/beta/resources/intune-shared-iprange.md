@@ -1,12 +1,13 @@
 ---
 title: ipRange リソースの種類
 description: IPV4、IPV6 アドレス範囲を表す、IP 範囲基底クラス
-ms.openlocfilehash: e287ea24c3b144cd3188fa0ae3b6bb5eff6e729f
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 3281f42d563a5c702700d10fdc2acd60142935b0
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27070897"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27872847"
 ---
 # <a name="iprange-resource-type"></a>ipRange リソースの種類
 
@@ -16,7 +17,7 @@ ms.locfileid: "27070897"
 
 IPV4、IPV6 アドレス範囲を表す、IP 範囲基底クラス
 ## <a name="properties"></a>プロパティ
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
 
 ## <a name="relationships"></a>リレーションシップ

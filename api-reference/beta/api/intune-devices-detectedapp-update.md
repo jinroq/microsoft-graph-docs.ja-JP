@@ -2,12 +2,13 @@
 title: detectedApp の更新
 description: detectedApp オブジェクトのプロパティを更新します。
 author: tfitzmac
-ms.openlocfilehash: bf4a30e83acdadf45babbc2c71799b207ba03506
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 550bbcfd422f12bc3c11102e3438ffab0162680b
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27324801"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27862952"
 ---
 # <a name="update-detectedapp"></a>detectedApp の更新
 

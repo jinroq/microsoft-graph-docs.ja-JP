@@ -2,12 +2,13 @@
 title: windowsUserType 列挙型
 description: まだ文書化されていません
 author: tfitzmac
-ms.openlocfilehash: 145c0f007001621bc4e6e9e68fc06905615c8b21
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 08d360ddbfcfa5ddbdf036b4b149898a71fd38a5
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27305146"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27856897"
 ---
 # <a name="windowsusertype-enum-type"></a>windowsUserType 列挙型
 

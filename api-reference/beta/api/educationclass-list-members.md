@@ -1,12 +1,13 @@
 ---
 title: メンバーを一覧表示する
 description: クラスの教師と学生を取得します。 委任されたトークンを使用した場合、メンバーを参照できるのはクラスの他のメンバーのみになります。
-ms.openlocfilehash: e8f31720733fec3942d4ddb35fa7f2fdac1b26f0
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 13484a6a20f1b35e69a8957eb05bb93c9666ee75
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27067005"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27874894"
 ---
 # <a name="list-members"></a>メンバーを一覧表示する
 

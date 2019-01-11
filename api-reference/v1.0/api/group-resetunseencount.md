@@ -2,12 +2,13 @@
 title: 'グループ: resetUnseenCount'
 description: 現在のユーザーが最後の訪問以降見ていない、すべての投稿の unseenCount をリセットします。Office 365 のグループのみをサポートします。
 author: dkershaw10
-ms.openlocfilehash: 6cb7533dc44ff86b2e1dbec5c99f4038ed03d224
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 360f3aef68cb8ddd44f68982f3da494b42b616c6
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27337458"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27874852"
 ---
 # <a name="group-resetunseencount"></a>グループ: resetUnseenCount
 現在のユーザーが最後の訪問以降見ていない、すべての投稿の unseenCount をリセットします。Office 365 のグループのみをサポートします。

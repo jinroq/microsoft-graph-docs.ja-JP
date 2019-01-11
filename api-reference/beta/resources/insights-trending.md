@@ -2,12 +2,13 @@
 title: トレンド ・ リソースの種類
 description: ユーザー (は、ユーザーに関連する) 傾向を示しているドキュメントへのユーザーの接続の豊富な関係です。 OneDrive ファイルでは、チームの SharePoint サイトにファイルを保存できるユーザー傾向があるとします。
 author: simonhult
-ms.openlocfilehash: ae3c3a876dba6c22a629cce5db8e5b4baa5fb5bf
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: dc0154d3985e5f6e1e4770bb7d10bc727a0eb0ae
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27348000"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27862385"
 ---
 # <a name="trending-resource-type"></a>トレンド ・ リソースの種類
 
@@ -21,7 +22,7 @@ ms.locfileid: "27348000"
 |:---------------|:--------|:----------|
 |[リストのトレンド分析](../api/insights-list-trending.md) |[insights_trending](insights-trending.md)コレクション| トレンド ・ ファイルの一覧を取得します。|
 
-## <a name="properties"></a>Properties
+## <a name="properties"></a>プロパティ
 
 | プロパティ      | 種類                              | 説明  |
 | ------------- |---------------                    | -------------|

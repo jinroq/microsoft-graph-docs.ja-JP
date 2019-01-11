@@ -1,12 +1,13 @@
 ---
 title: physicalAddress リソースの種類
 description: 連絡先やイベントなどのリソースの番地を表します。
-ms.openlocfilehash: eb2c1ea6a73d7f6eb5d3d43b877f50dc39a2b17e
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 2bbfc3f38d4d353d370b9c8ba859b06cc2e4398b
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27022085"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27866011"
 ---
 # <a name="physicaladdress-resource-type"></a>physicalAddress リソースの種類
 
@@ -14,7 +15,7 @@ ms.locfileid: "27022085"
 
 
 ## <a name="properties"></a>プロパティ
-| プロパティ     | 型   |説明|
+| プロパティ     | 種類   |説明|
 |:---------------|:--------|:----------|
 |city|String|市区町村。|
 |countryOrRegion|String|国または地域。自由形式の文字列値です。例: 「米国」。|

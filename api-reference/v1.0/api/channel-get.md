@@ -2,12 +2,13 @@
 title: チャネルを取得します。
 description: プロパティとチャネルの関係を取得します。
 author: nkramer
-ms.openlocfilehash: 38081fbc23e0f77dc69d1dbb6beba64b8f6d0a82
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Priority
+ms.openlocfilehash: b942f2a3cfdca2b33b282fc5720a9d467c2eb0ad
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27324774"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27856078"
 ---
 # <a name="get-channel"></a>チャネルを取得します。
 

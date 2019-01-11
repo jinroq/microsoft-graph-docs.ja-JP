@@ -2,12 +2,13 @@
 title: UserPFXCertificate を取得します。
 description: UserPFXCertificate オブジェクトのプロパティと関係を参照してください。
 author: tfitzmac
-ms.openlocfilehash: 19dd8ac9216585857524419d3da03a7f9784adb5
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 044ee2b822420d0996c8191438801557857b52cc
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27304495"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27862574"
 ---
 # <a name="get-userpfxcertificate"></a>UserPFXCertificate を取得します。
 

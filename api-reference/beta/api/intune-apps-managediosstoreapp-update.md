@@ -2,12 +2,13 @@
 title: managedIOSStoreApp の更新
 description: managedIOSStoreApp オブジェクトのプロパティを更新します。
 author: tfitzmac
-ms.openlocfilehash: 27c91f6c22031ac7d4bfe9a69a339652104e025c
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: e7f46d334eb1842b96d764d1e7865a6840978965
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27305104"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27825061"
 ---
 # <a name="update-managediosstoreapp"></a>managedIOSStoreApp の更新
 

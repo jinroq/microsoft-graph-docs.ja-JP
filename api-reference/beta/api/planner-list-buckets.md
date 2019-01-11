@@ -1,12 +1,13 @@
 ---
 title: List buckets
 description: '**plannerbucket** オブジェクトのリストを取得します。'
-ms.openlocfilehash: fe5882faac32550a8611fa0a70fa677468ea891e
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 0dcf8e50351a0f1ec3d7238d6e6ba8d30bb35ddc
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27070720"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27861328"
 ---
 # <a name="list-buckets"></a>List buckets
 

@@ -2,12 +2,13 @@
 title: リスト windowsAutopilotDeviceIdentities
 description: WindowsAutopilotDeviceIdentity オブジェクトのプロパティと関係を一覧表示します。
 author: tfitzmac
-ms.openlocfilehash: 998a1af97c4ae6173fdfed8b36a84c91ccd20f80
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: a3519dbd27086c8d22ec03f201512f6d15283075
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27316066"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27891351"
 ---
 # <a name="list-windowsautopilotdeviceidentities"></a>リスト windowsAutopilotDeviceIdentities
 

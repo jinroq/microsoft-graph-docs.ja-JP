@@ -1,12 +1,13 @@
 ---
 title: singleValueLegacyExtendedProperty を取得する
 description: 特定の拡張プロパティ、またはリソースのインスタンスのコレクションに展開されている 1 つのリソースのインスタンスを取得します。
-ms.openlocfilehash: e9859adf2eea35037c82f36100a8fcb147f9ca3f
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 49df9dcc6142086cead43731243c50911e2a7cc7
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27022626"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27867250"
 ---
 # <a name="get-singlevaluelegacyextendedproperty"></a>singleValueLegacyExtendedProperty を取得する
 
@@ -201,7 +202,7 @@ GET /groups/{id}/events?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '
 ```
 
 ## <a name="path-parameters"></a>パス パラメーター
-|パラメーター|型|説明|
+|Parameter|Type|説明|
 |:-----|:-----|:-----|
 |id_value|String|照合する拡張プロパティの ID。サポートされている形式のいずれかに従う必要があります。詳しくは、「[Outlook の拡張プロパティの概要](../resources/extended-properties-overview.md)」を参照してください。必須。|
 |property_value |文字列|照合する拡張プロパティの値。 前述の「**HTTP 要求**」セクションに示した一覧で必要になります。 {property_value} が文字列ではない場合、`ep/value` を {property_value} と比較するときに、適切な Edm データ型に明示的にキャストしてください。 例については、以下の[要求 4](#request-4) を参照してください。 |

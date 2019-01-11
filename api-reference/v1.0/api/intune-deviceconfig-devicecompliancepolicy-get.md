@@ -2,12 +2,13 @@
 title: Get deviceCompliancePolicy
 description: deviceCompliancePolicy オブジェクトのプロパティとリレーションシップを読み取ります。
 author: tfitzmac
-ms.openlocfilehash: b53e72ee3f571a46facd3d186bea8c098ddea8e2
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: a1399da88a21486797c11bb7684155d795aa428d
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27350002"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27856211"
 ---
 # <a name="get-devicecompliancepolicy"></a>Get deviceCompliancePolicy
 

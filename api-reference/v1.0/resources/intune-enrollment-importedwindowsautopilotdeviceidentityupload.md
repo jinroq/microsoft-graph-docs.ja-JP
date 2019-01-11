@@ -2,12 +2,13 @@
 title: importedWindowsAutopilotDeviceIdentityUpload リソースの種類
 description: アップロードを使用して windows 自動操縦装置のデバイスをインポートします。
 author: tfitzmac
-ms.openlocfilehash: 7009454d859f3151d6bd2635c4cc146692602644
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: da4a543dcc3275dd2c68943bab54c0ef7120a1b5
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27348889"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27861244"
 ---
 # <a name="importedwindowsautopilotdeviceidentityupload-resource-type"></a>importedWindowsAutopilotDeviceIdentityUpload リソースの種類
 
@@ -24,7 +25,7 @@ ms.locfileid: "27348889"
 |[ImportedWindowsAutopilotDeviceIdentityUpload を更新します。](../api/intune-enrollment-importedwindowsautopilotdeviceidentityupload-update.md)|[importedWindowsAutopilotDeviceIdentityUpload](../resources/intune-enrollment-importedwindowsautopilotdeviceidentityupload.md)|[ImportedWindowsAutopilotDeviceIdentityUpload](../resources/intune-enrollment-importedwindowsautopilotdeviceidentityupload.md)オブジェクトのプロパティを更新します。|
 |[autopilotDeviceStream 関数](../api/intune-enrollment-importedwindowsautopilotdeviceidentityupload-autopilotdevicestream.md)|String|自動操縦デバイスのストリーム内でのアップロード要求を作成します。|
 
-## <a name="properties"></a>Properties
+## <a name="properties"></a>プロパティ
 |プロパティ|種類|説明|
 |:---|:---|:---|
 |ID|String|オブジェクトの GUID|

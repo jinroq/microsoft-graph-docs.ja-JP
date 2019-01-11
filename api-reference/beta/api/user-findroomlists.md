@@ -2,12 +2,13 @@
 title: 'ユーザー: findRoomLists'
 description: テナントで定義された部屋の一覧を取得します。
 author: dkershaw10
-ms.openlocfilehash: f96f8e5c6349e87d2d71820b7b7cd3b0367908f9
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Priority
+ms.openlocfilehash: 55ff393e828d324035050e33cf194cb49d302080
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27310774"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27855735"
 ---
 # <a name="user-findroomlists"></a>ユーザー: findRoomLists
 

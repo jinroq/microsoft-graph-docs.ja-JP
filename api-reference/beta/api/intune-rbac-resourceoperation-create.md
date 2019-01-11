@@ -2,12 +2,13 @@
 title: resourceOperation の作成
 description: 新しい resourceOperation オブジェクトを作成します。
 author: tfitzmac
-ms.openlocfilehash: bc3b0c8193d77177b83f139827fad1a3a9686fb4
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: ea0a77b56cbbfd68a7886e220b29222b794cf932
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27317837"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27862602"
 ---
 # <a name="create-resourceoperation"></a>resourceOperation の作成
 

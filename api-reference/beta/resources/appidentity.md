@@ -1,19 +1,20 @@
 ---
 title: appIdentity リソースの種類
 description: アクションを実行するか、変更されているアプリケーションの id を示します。 アプリケーション Id、名、サービス ・ プリンシパルの ID および名前が含まれています。 このリソースは、directoryAudit API によって呼び出されます。
-ms.openlocfilehash: 6fcbe8dbb1e17139111c5f1fa9e8681cd1b996a7
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: ec61782fca0ab4004fab5a55bd4774c0d64afb3a
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27070296"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27855784"
 ---
 # <a name="appidentity-resource-type"></a>appIdentity リソースの種類
 アクションを実行するか、変更されているアプリケーションの id を示します。 アプリケーション Id、名、サービス ・ プリンシパルの ID および名前が含まれています。 このリソースは、 [directoryAudit](../api/directoryaudit-get.md) API によって呼び出されます。
 
 
 ## <a name="properties"></a>プロパティ
-| プロパティ     | 型   |説明|
+| プロパティ     | 種類   |説明|
 |:---------------|:--------|:----------|
 |appId|文字列型 (String)|Azure Active Directory 内のアプリケーションの Id を表す一意の GUID を参照します。|
 |displayName|String|Azure ポータルに表示されるアプリケーション名を参照します。|
