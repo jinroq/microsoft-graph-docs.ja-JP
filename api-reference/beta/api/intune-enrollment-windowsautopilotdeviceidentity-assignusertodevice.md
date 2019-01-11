@@ -2,12 +2,13 @@
 title: assignUserToDevice アクション
 description: 自動操縦装置のデバイスをユーザーに割り当てます。
 author: tfitzmac
-ms.openlocfilehash: 8446aa7e49905875b629287fd4847f761fec25c0
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 33145d5852d80eef529cc58e34524c170bba62cb
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27329765"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27859459"
 ---
 # <a name="assignusertodevice-action"></a>assignUserToDevice アクション
 

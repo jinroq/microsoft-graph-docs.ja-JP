@@ -2,12 +2,13 @@
 title: androidForWorkScepCertificateProfile リソースの種類
 description: Android の作業 SCEP 証明書プロファイル
 author: tfitzmac
-ms.openlocfilehash: 31be22aeffa892c91c02a30dd55a1bc9e1cb48c6
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 8e1a3c8c3254f360920aaab7a139efee342f6060
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27328610"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27868980"
 ---
 # <a name="androidforworkscepcertificateprofile-resource-type"></a>androidForWorkScepCertificateProfile リソースの種類
 
@@ -28,7 +29,7 @@ Android の作業 SCEP 証明書プロファイル
 |[AndroidForWorkScepCertificateProfile を削除します。](../api/intune-deviceconfig-androidforworkscepcertificateprofile-delete.md)|なし|の[androidForWorkScepCertificateProfile](../resources/intune-deviceconfig-androidforworkscepcertificateprofile.md)を削除します。|
 |[AndroidForWorkScepCertificateProfile を更新します。](../api/intune-deviceconfig-androidforworkscepcertificateprofile-update.md)|[androidForWorkScepCertificateProfile](../resources/intune-deviceconfig-androidforworkscepcertificateprofile.md)|[AndroidForWorkScepCertificateProfile](../resources/intune-deviceconfig-androidforworkscepcertificateprofile.md)オブジェクトのプロパティを更新します。|
 
-## <a name="properties"></a>Properties
+## <a name="properties"></a>プロパティ
 |プロパティ|種類|説明|
 |:---|:---|:---|
 |ID|String|エンティティのキー。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|

@@ -2,12 +2,13 @@
 title: Get deviceComplianceUserOverview
 description: deviceComplianceUserOverview オブジェクトのプロパティとリレーションシップを読み取ります。
 author: tfitzmac
-ms.openlocfilehash: 38eccb78c8f40e356a41de3f54a411294ac6c321
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: abaa3315bef477c821f7d00d5abff017f286126c
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27327518"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27868909"
 ---
 # <a name="get-devicecomplianceuseroverview"></a>Get deviceComplianceUserOverview
 

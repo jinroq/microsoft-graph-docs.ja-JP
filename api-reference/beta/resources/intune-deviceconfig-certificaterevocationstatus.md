@@ -2,12 +2,13 @@
 title: certificateRevocationStatus 列挙型
 description: 証明書失効の状態です。
 author: tfitzmac
-ms.openlocfilehash: d41845ba882136c15d944c8a7f91083e6fa47cdb
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 8d24d515f992ed396c3530595240a107852d83e1
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27358227"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27868307"
 ---
 # <a name="certificaterevocationstatus-enum-type"></a>certificateRevocationStatus 列挙型
 

@@ -1,12 +1,13 @@
 ---
 title: schemaExtensions を一覧表示する
 description: '(ことができる現在のテナントで自分が所有する任意のアプリケーションによって作成された schemaExtension オブジェクトのリストを取得します。 '
-ms.openlocfilehash: 9e366ae62276198ad08f322646c920816d25ec64
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: f9d34552229f5b18035a2ba5d84b0ac0a4de5b4d
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27071239"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27868419"
 ---
 # <a name="list-schemaextensions"></a>schemaExtensions を一覧表示する
 
@@ -90,7 +91,7 @@ Content-length: 274
 
 ## <a name="see-also"></a>関連項目
 
-- [拡張機能を使用してカスタム データをリソースに追加する](/graph/extensibility-overview)
+- [拡張機能を使用したリソースへのカスタム データの追加](/graph/extensibility-overview)
 - [スキーマ拡張機能を使用したグループへのカスタム データの追加](/graph/extensibility-schema-groups)
 
 

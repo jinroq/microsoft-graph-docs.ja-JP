@@ -2,12 +2,13 @@
 title: チームのクローンを作成します。
 description: チームのコピーを作成します。 この操作では、対応するグループのコピーも作成します。
 author: nkramer
-ms.openlocfilehash: 21671ccbe440a57f6d745f9587c09b4432e25c35
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 9239e58f28e4214ee82acad3d2c893f52fafefde
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27321834"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27805755"
 ---
 # <a name="clone-a-team"></a>チームのクローンを作成します。
 

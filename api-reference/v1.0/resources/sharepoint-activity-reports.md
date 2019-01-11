@@ -1,12 +1,13 @@
 ---
 title: SharePoint アクティビティ レポート
 description: SharePoint アクティビティ レポートを使用すると、ファイルの操作を参照して、SharePoint のすべてのライセンス ユーザーのアクティビティを取得できます。 共有されたファイル数に基づいて、進行中のコラボレーションのレベルを確認することもできます。
-ms.openlocfilehash: b180a098cdec6ef432ec2837c576192e7aa80b1c
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 00cc158fee8b5ec108af99c57c089c2259106a73
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27020937"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27869042"
 ---
 # <a name="sharepoint-activity-reports"></a>SharePoint アクティビティ レポート
 

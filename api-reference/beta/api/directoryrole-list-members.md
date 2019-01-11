@@ -2,12 +2,13 @@
 title: メンバーを一覧表示する
 description: ディレクトリ ロールに割り当てられているユーザーの一覧を取得します。ディレクトリに割り当てることができるのはユーザーのみです。
 author: lleonard-msft
-ms.openlocfilehash: 8bd0f67d6ca565dac6dfae501f5bc5c829f4db3b
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 3d7f0ee776646933743cd1fefb63eaa620ffe7ee
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27359102"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27824809"
 ---
 # <a name="list-members"></a>メンバーを一覧表示する
 

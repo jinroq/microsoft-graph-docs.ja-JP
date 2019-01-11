@@ -2,12 +2,13 @@
 title: Get managedAppStatus
 description: managedAppStatus オブジェクトのプロパティとリレーションシップを読み取ります。
 author: tfitzmac
-ms.openlocfilehash: a8663224c98b1dad72672f6271181459ca86c02e
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 99d765ad51080fec87c2eb2f67fe94853d30e6ba
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27342092"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27859487"
 ---
 # <a name="get-managedappstatus"></a>Get managedAppStatus
 

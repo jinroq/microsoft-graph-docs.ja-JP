@@ -1,12 +1,13 @@
 ---
 title: 名前付きアイテム FormulaLocal の追加
 description: ユーザーのロケールを数式に使用して、新しい名前を指定したスコープのコレクションに追加します。
-ms.openlocfilehash: 931a6b928678802cc6bc60c42e4df73d09833ed4
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 064bc4a6e8183b58242522dfe663d2585eed09b5
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27068715"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27859571"
 ---
 # <a name="add-named-item-formulalocal"></a>名前付きアイテム FormulaLocal の追加
 ユーザーのロケールを数式に使用して、新しい名前を指定したスコープのコレクションに追加します。
@@ -36,7 +37,7 @@ POST /workbook/worksheets({id|name})/names/add
 ## <a name="request-body"></a>要求本文
 要求本文で、次のパラメーターを含む JSON オブジェクトを指定します。
 
-| パラメーター    | 型   |説明|
+| パラメーター    | Type   |説明|
 |:---------------|:--------|:----------|
 |name|文字列|名前付きのアイテムの名前。|
 |formula|文字列|名前が参照する数式または範囲。|

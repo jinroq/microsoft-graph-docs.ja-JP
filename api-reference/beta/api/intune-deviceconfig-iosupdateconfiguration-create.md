@@ -2,12 +2,13 @@
 title: iosUpdateConfiguration の作成
 description: 新しい iosUpdateConfiguration オブジェクトを作成します。
 author: tfitzmac
-ms.openlocfilehash: 1b3077496ad606906ff842c0983632184e88c6c3
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: cab02b7a3788f55d657b93453fc074bd63d4d918
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27357555"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27852340"
 ---
 # <a name="create-iosupdateconfiguration"></a>iosUpdateConfiguration の作成
 

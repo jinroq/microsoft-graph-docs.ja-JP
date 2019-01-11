@@ -2,12 +2,13 @@
 title: Windows10PFXImportCertificateProfile を更新します。
 description: Windows10PFXImportCertificateProfile オブジェクトのプロパティを更新します。
 author: tfitzmac
-ms.openlocfilehash: d5bc43583050bd0f48167360f360c656b0860a5e
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: d2186938982575469ef00ba5dc80c8ee215aaf77
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27302703"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27823479"
 ---
 # <a name="update-windows10pfximportcertificateprofile"></a>Windows10PFXImportCertificateProfile を更新します。
 

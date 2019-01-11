@@ -2,12 +2,13 @@
 title: deviceConfigurationDeviceStateSummary の取得
 description: deviceConfigurationDeviceStateSummary オブジェクトのプロパティとリレーションシップを読み取ります。
 author: tfitzmac
-ms.openlocfilehash: 09162fadf577a1218784b1564fc048f4f5e59d26
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 34941c4608a2aa734ed408e0467c252a08847a24
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27317676"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27827959"
 ---
 # <a name="get-deviceconfigurationdevicestatesummary"></a>deviceConfigurationDeviceStateSummary の取得
 

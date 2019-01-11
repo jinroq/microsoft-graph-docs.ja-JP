@@ -2,12 +2,13 @@
 title: Get windowsInformationProtection
 description: windowsInformationProtection オブジェクトのプロパティとリレーションシップを読み取ります。
 author: tfitzmac
-ms.openlocfilehash: 99eaaa0ae6decd32ee95097c435a5ab6313cdb31
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 599725a5399e49394b1ef0a494f834e9b7dd2b4c
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27341224"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27859494"
 ---
 # <a name="get-windowsinformationprotection"></a>Get windowsInformationProtection
 

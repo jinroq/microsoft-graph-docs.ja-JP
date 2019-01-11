@@ -2,12 +2,13 @@
 title: Windows10CertificateProfileBase を取得します。
 description: Windows10CertificateProfileBase オブジェクトのプロパティと関係を参照してください。
 author: tfitzmac
-ms.openlocfilehash: 851cc94f1c2820c7a4c329b463ecd4d2e2cba10c
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: eae4bab910220e8f25152de45bdfd128cb7f23af
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27340930"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27868944"
 ---
 # <a name="get-windows10certificateprofilebase"></a>Windows10CertificateProfileBase を取得します。
 

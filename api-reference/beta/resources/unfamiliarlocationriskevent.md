@@ -1,12 +1,13 @@
 ---
 title: unfamiliarLocationRiskEvent リソースの種類
 description: Azure Active ディレクトリ Id 保護場所、アカウントでサインインしようとするとそのユーザーの新しい場所からによって検出されたリスク イベントです。 リスク イベントの詳細については、Azure AD のアイデンティティ保護のマニュアルを参照しています。
-ms.openlocfilehash: 7fa75c28fcc6432a5f8e32bff695e32d76c5acdc
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 130d68bfb23bdb23b6a9de81fa988d38db1d8c10
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27067726"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27868741"
 ---
 # <a name="unfamiliarlocationriskevent-resource-type"></a>unfamiliarLocationRiskEvent リソースの種類
 
@@ -22,11 +23,11 @@ ms.locfileid: "27067726"
 |[UnfamiliarLocationRiskEvent を取得します。](../api/unfamiliarlocationriskevent-get.md) | [unfamiliarLocationRiskEvent](unfamiliarlocationriskevent.md) |UnfamiliarLocationRiskEvent オブジェクトのプロパティと関係を参照してください。|
 
 ## <a name="properties"></a>プロパティ
-| プロパティ     | 型   |説明|
+| プロパティ     | 種類   |説明|
 |:---------------|:--------|:----------|
 |closedDateTime|dateTimeOffset| リスク イベントが終了したときの日時|
 |createdDateTime|dateTimeOffset| 日付とイベントが作成された時刻です。 以上のリスク イベント自体の日付と時刻を常にです。 これは、リスク イベントを照会するときにフィルターとして使用する適切なプロパティです。|
-|ID|文字列| 読み取り専用|
+|ID|文字列| 読み取り専用です。|
 |ipAddress|文字列| サインイン用の IP アドレス|
 |location|文字列| サインイン用の IP アドレスに接続されている場所|
 |riskEventDateTime|dateTimeOffset| リスク イベントが発生したときの日時|

@@ -2,12 +2,13 @@
 title: androidManagedStoreAccountEnterpriseSettings リソースの種類
 description: Android のエンタープライズの設定は、ストア アカウントを管理します。
 author: tfitzmac
-ms.openlocfilehash: c0dfea72e9d6a24b4d76cc839259acd642d51fa9
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: db31210da358a8b6b7ebc674699dab4c622ae670
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27326293"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27869035"
 ---
 # <a name="androidmanagedstoreaccountenterprisesettings-resource-type"></a>androidManagedStoreAccountEnterpriseSettings リソースの種類
 
@@ -27,7 +28,7 @@ Android のエンタープライズの設定は、ストア アカウントを�
 |[unbind action](../api/intune-androidforwork-androidmanagedstoreaccountenterprisesettings-unbind.md)|なし|まだ文書化されていません|
 |[createGooglePlayWebToken アクション](../api/intune-androidforwork-androidmanagedstoreaccountenterprisesettings-creategoogleplaywebtoken.md)|String|組み込み可能なコンポーネントで使用される web トークンを生成します。|
 
-## <a name="properties"></a>Properties
+## <a name="properties"></a>プロパティ
 |プロパティ|種類|説明|
 |:---|:---|:---|
 |ID|String|アカウントのエンタープライズ設定の識別子を格納する、アプリ|
