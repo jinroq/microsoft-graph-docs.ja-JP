@@ -2,12 +2,13 @@
 title: ManagedDeviceMobileAppConfigurationDeviceStatus を削除します。
 description: ManagedDeviceMobileAppConfigurationDeviceStatus を削除します。
 author: tfitzmac
-ms.openlocfilehash: 72b23666d80c77ae85a8dbdb39e16508323d6b9d
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 9053b3f86b8809f4920b7d10c157e40fe58ba4f9
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27319524"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27867320"
 ---
 # <a name="delete-manageddevicemobileappconfigurationdevicestatus"></a>ManagedDeviceMobileAppConfigurationDeviceStatus を削除します。
 

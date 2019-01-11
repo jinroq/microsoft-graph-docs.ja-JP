@@ -2,12 +2,13 @@
 title: AndroidForWorkGeneralDeviceConfiguration を取得します。
 description: AndroidForWorkGeneralDeviceConfiguration オブジェクトのプロパティと関係を参照してください。
 author: tfitzmac
-ms.openlocfilehash: 88478f99c69a197e6648c27fa90a3793b4620cb3
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: a926ffdd3954d5a3d56626103b22a319f54e7c61
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27354895"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27817333"
 ---
 # <a name="get-androidforworkgeneraldeviceconfiguration"></a>AndroidForWorkGeneralDeviceConfiguration を取得します。
 

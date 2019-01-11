@@ -2,12 +2,13 @@
 title: iosImportedPFXCertificateProfile リソースの種類
 description: iOS PFX インポート証明書プロファイル
 author: tfitzmac
-ms.openlocfilehash: 32f88e982e193516269aa8715c4f7e2274295f70
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 4a4e96e0e7e0f39f0e0223bfe25561b4545cfb8d
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27314722"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27865195"
 ---
 # <a name="iosimportedpfxcertificateprofile-resource-type"></a>iosImportedPFXCertificateProfile リソースの種類
 
@@ -28,7 +29,7 @@ iOS PFX インポート証明書プロファイル
 |[IosImportedPFXCertificateProfile を削除します。](../api/intune-deviceconfig-iosimportedpfxcertificateprofile-delete.md)|なし|の[iosImportedPFXCertificateProfile](../resources/intune-deviceconfig-iosimportedpfxcertificateprofile.md)を削除します。|
 |[IosImportedPFXCertificateProfile を更新します。](../api/intune-deviceconfig-iosimportedpfxcertificateprofile-update.md)|[iosImportedPFXCertificateProfile](../resources/intune-deviceconfig-iosimportedpfxcertificateprofile.md)|[IosImportedPFXCertificateProfile](../resources/intune-deviceconfig-iosimportedpfxcertificateprofile.md)オブジェクトのプロパティを更新します。|
 
-## <a name="properties"></a>Properties
+## <a name="properties"></a>プロパティ
 |プロパティ|種類|説明|
 |:---|:---|:---|
 |ID|String|エンティティのキー。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|

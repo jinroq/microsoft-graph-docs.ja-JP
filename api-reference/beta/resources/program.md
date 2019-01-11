@@ -1,12 +1,13 @@
 ---
 title: プログラムのリソースの種類
 description: 'Azure AD にアクセスが機能を確認、プログラムは、プログラムのコントロールを保持しているコンテナーです。 テナントは、1 つまたは複数のプログラムを持つことができます。  各コントロールは、アクセス確認をプログラムにリンク、関連のアクセスを見つけやすくすることを確認します。  '
-ms.openlocfilehash: cb08d0edb7487be95e159ed5e2a2546a92e7bce7
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: a342fd159bba3f7e31c55ffab9a64a72353bc7ac
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27073665"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27863904"
 ---
 # <a name="program-resource-type"></a>プログラムのリソースの種類
 
@@ -37,7 +38,7 @@ Azure AD[アクセスの確認](accessreviews-root.md)機能では、プログ�
 
 
 ## <a name="properties"></a>プロパティ
-| プロパティ     | 型   |説明|
+| プロパティ     | 種類   |説明|
 |:---------------|:--------|:----------|
 | `id`                        |`String`                              |  プログラムの機能に割り当てられる識別子です。                    |
 | `displayName`               |`String`                              |  プログラムの名前です。  必要なを作成します。                  |

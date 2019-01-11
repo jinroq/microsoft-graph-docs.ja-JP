@@ -2,12 +2,13 @@
 title: targetedManagedAppPolicyAssignments のリスト
 description: targetedManagedAppPolicyAssignment オブジェクトのプロパティとリレーションシップをリストします。
 author: tfitzmac
-ms.openlocfilehash: bc482707ee2c58e5778df68926f997f20ef68801
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 829ba67b6e9cf75c9c6cd6d03a367a4e051757a1
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27362567"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27867166"
 ---
 # <a name="list-targetedmanagedapppolicyassignments"></a>targetedManagedAppPolicyAssignments のリスト
 

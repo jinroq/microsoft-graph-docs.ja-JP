@@ -2,12 +2,13 @@
 title: getEffectivePermissions 関数
 description: まだ文書化されていません
 author: tfitzmac
-ms.openlocfilehash: a4e188e9d8ec098f66274e9dbeecb852bb34914b
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: f0eca9494d98ca1e572d80eac6957c49f07ea702
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27317858"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27868027"
 ---
 # <a name="geteffectivepermissions-function"></a>getEffectivePermissions 関数
 

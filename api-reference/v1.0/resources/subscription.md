@@ -1,12 +1,13 @@
 ---
 title: サブスクリプション リソースの種類
 description: サブスクリプションは、Microsoft Graph でデータへの変更に関する通知を受信するクライアント アプリケーションを許可します。 現時点では、サブスクリプションが有効になって次のリソース。
-ms.openlocfilehash: 5ece39954d661c6b7ef948d0ed7d514782fbceae
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Priority
+ms.openlocfilehash: b70daca8eb0f7c303173945b3cacf2cf53af56ec
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27024033"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27867012"
 ---
 # <a name="subscription-resource-type"></a>サブスクリプション リソースの種類
 
@@ -58,7 +59,7 @@ ms.locfileid: "27024033"
 
 ## <a name="properties"></a>プロパティ
 
-| プロパティ | 型 | 説明 |
+| プロパティ | 種類 | 説明 |
 |:---------|:-----|:------------|
 | changeType | string | 必須。 登録しているリソース内の、通知を上げる変更の種類を示します。 サポートされている値は `created`、`updated`、`deleted` です。 コンマ区切りのリストを使用して複数値を結合できます。<br><br>メモ: ドライブのルート アイテムの通知だけをサポートして、 `updated` changeType です。 ユーザーとグループの通知をサポートして`updated`と`deleted`changeType です。|
 | notificationUrl | 文字列 | 必須。 通知を受信するエンドポイントの URL。 この URL が、HTTPS を使用する必要がありますプロトコルです。 |
@@ -66,8 +67,8 @@ ms.locfileid: "27024033"
 | expirationDateTime | [dateTime](https://tools.ietf.org/html/rfc3339) | 必須。 webhook サブスクリプションの有効期限が切れる日時を指定します。 時刻は UTC 表示で、登録したリソースごとに異なるサブスクリプション作成からの経過時間にもできます。  サポートされているサブスクリプションの最長時間については、次の表をご覧ください。 |
 | clientState | string | 省略可能。 各通知内のサービスによって送信される `clientState` プロパティの値を指定します。 最大の長さは 128 文字です。 クライアントは、サブスクリプションと共に送信された `clientState` プロパティの値と、各通知と共に受信された `clientState` プロパティの値を比較することで、その通知がサービスから来たことを確認できます。 |
 | ID | 文字列 | サブスクリプションの一意の識別子です。読み取り専用です。 |
-| applicationId | 文字列 | サブスクリプションを作成するために使用するアプリケーションの識別子です。 読み取り専用。 |
-| creatorId | 文字列 | ユーザーまたはサブスクリプションを作成するサービス ・ プリンシパルの識別子です。 使用するアプリケーションがサブスクリプションを作成するアクセス許可を委任する場合、このフィールドは、サインイン中のユーザーの代理で、アプリケーションが呼び出されるの id を含みます。 アプリケーションは、アプリケーションのアクセス許可を使用する場合、このフィールドには、アプリケーションに対応するサービス ・ プリンシパルの id が含まれています。 読み取り専用。 |
+| applicationId | 文字列 | サブスクリプションを作成するために使用するアプリケーションの識別子です。 読み取り専用です。 |
+| creatorId | 文字列 | ユーザーまたはサブスクリプションを作成するサービス ・ プリンシパルの識別子です。 使用するアプリケーションがサブスクリプションを作成するアクセス許可を委任する場合、このフィールドは、サインイン中のユーザーの代理で、アプリケーションが呼び出されるの id を含みます。 アプリケーションは、アプリケーションのアクセス許可を使用する場合、このフィールドには、アプリケーションに対応するサービス ・ プリンシパルの id が含まれています。 読み取り専用です。 |
 
 ## <a name="maximum-length-of-subscription-per-resource-type"></a>リソースの種類別のサブスクリプションの最大の長さ
 

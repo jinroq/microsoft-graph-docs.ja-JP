@@ -2,12 +2,13 @@
 title: Get auditEvent
 description: auditEvent オブジェクトのプロパティとリレーションシップを読み取ります。
 author: tfitzmac
-ms.openlocfilehash: b47d376994ec6bd1e344234b6f08039f1ab35915
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 6ac6ccc3f1faccd6c158ae14f0a2696ec5e8684f
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27324627"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27864835"
 ---
 # <a name="get-auditevent"></a>Get auditEvent
 

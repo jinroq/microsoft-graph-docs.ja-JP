@@ -3,12 +3,13 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
 title: 再開可能なファイル アップロード
-ms.openlocfilehash: b4519de2a4fb417ce8a0b4524fff6d60547be7ec
-ms.sourcegitcommit: 37591c2299c80e7675cd2b5f781e1eeeba628a60
+localization_priority: Normal
+ms.openlocfilehash: c8ab45f9915b16f75e8b44ad50215c4e73c13fff
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "27748438"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27865181"
 ---
 # <a name="upload-large-files-with-an-upload-session"></a>アップロード セッションを使ってサイズが大きいファイルをアップロードする
 
@@ -84,14 +85,14 @@ POST /users/{userId}/drive/items/{itemId}/createUploadSession
 
 ## <a name="parameters"></a>パラメーター
 
-| Parameter            | 種類                          | 説明
+| Parameter            | Type                          | 説明
 |:---------------------|:------------------------------|:---------------------------------
 | item                 | driveItemUploadableProperties | アップロードされているファイルに関するデータ
-| deferCommit          | Boolean                       | 場合はコピー先のファイルの場合は true、最終の作成に設定するには、明示的な要求が必要となります。 ビジネスの OneDrive でのみ。
+| deferCommit          | ブール型                       | 場合はコピー先のファイルの場合は true、最終の作成に設定するには、明示的な要求が必要となります。 ビジネスの OneDrive でのみ。
 
 ## <a name="item-properties"></a>アイテムのプロパティ
 
-| プロパティ             | 型               | 説明
+| プロパティ             | 種類               | 説明
 |:---------------------|:-------------------|:---------------------------------
 | 説明          | String             | ユーザーに表示されている項目の説明を提供します。 読み取り/書き込み。 上でのみ OneDrive 個人。
 | 名前                 | String             | アイテムの名前 (ファイル名と拡張子)。読み取り/書き込み。

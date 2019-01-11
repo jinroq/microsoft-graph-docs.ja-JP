@@ -2,12 +2,13 @@
 title: リスト macOSWiFiConfigurations
 description: MacOSWiFiConfiguration オブジェクトのプロパティと関係を一覧表示します。
 author: tfitzmac
-ms.openlocfilehash: 10b5611aa09423d670598d012760bc99f4b49cc4
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 6fa386562ac9ccb6d39744de8baba4a7816e0752
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27335673"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27841581"
 ---
 # <a name="list-macoswificonfigurations"></a>リスト macOSWiFiConfigurations
 

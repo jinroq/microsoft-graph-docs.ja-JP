@@ -2,12 +2,13 @@
 title: MacOSLobApp を作成します。
 description: 新しい macOSLobApp オブジェクトを作成します。
 author: tfitzmac
-ms.openlocfilehash: 749aedf714a6b7319f92a1159fd522a1f2a8580e
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 8bd7d5f632e481b3fd8552cb516757f17dff5d55
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27345564"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27865122"
 ---
 # <a name="create-macoslobapp"></a>MacOSLobApp を作成します。
 

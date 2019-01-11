@@ -2,12 +2,13 @@
 title: Update deviceAppManagement
 description: deviceAppManagement オブジェクトのプロパティを更新します。
 author: tfitzmac
-ms.openlocfilehash: d5a4b3cfa1af7eb4a465c951a4a10f4c19944d8a
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: cb9e1864c48cf652f2a59dd3146c0f28eb05312c
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27324025"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27868146"
 ---
 # <a name="update-deviceappmanagement"></a>Update deviceAppManagement
 

@@ -2,12 +2,13 @@
 title: MobileAppInstallSummary を更新します。
 description: MobileAppInstallSummary オブジェクトのプロパティを更新します。
 author: tfitzmac
-ms.openlocfilehash: 94dc7fa5023d26de91b4d64efda27332dd51de63
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 19bd1e61359c5d2bdaff6ee87e807bae7dba0f05
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27315639"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27864800"
 ---
 # <a name="update-mobileappinstallsummary"></a>MobileAppInstallSummary を更新します。
 

@@ -2,12 +2,13 @@
 title: ratingNewZealandMoviesType 列挙型
 description: 映画がニュージーランドでのラベルの評価
 author: tfitzmac
-ms.openlocfilehash: 3c647b2b5713de611b3ac321cce541efaff557ad
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 7ebcb0022d8f898d36e1a0e124503771dd924b2a
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27327679"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27866102"
 ---
 # <a name="ratingnewzealandmoviestype-enum-type"></a>ratingNewZealandMoviesType 列挙型
 

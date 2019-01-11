@@ -1,12 +1,13 @@
 ---
 title: MailSearchFolder を更新します。
 description: MailSearchFolder オブジェクトの書き込み可能なプロパティを更新します。
-ms.openlocfilehash: abe32817c45ee1e05fbb251bd46a31941eb4218b
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 843dbe4d4312fdeb3485b0eb9e441a76b761dd46
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27074513"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27867230"
 ---
 # <a name="update-mailsearchfolder"></a>MailSearchFolder を更新します。
 
@@ -39,10 +40,10 @@ PATCH /users/{id | userPrincipalName}/mailFolders/{id}
 ## <a name="request-body"></a>要求本文
 要求本文で、更新する関連フィールドの値を指定します。要求本文に含まれない既存のプロパティは、以前の値のままになるか、他のプロパティ値の変化に基づいて再計算されます。最適なパフォーマンスを得るためには、変更されていない既存の値を含めないでください。
 
-| プロパティ     | 型   |説明|
+| プロパティ     | 種類   |説明|
 |:---------------|:--------|:----------|
 | displayName | String | [MailFolder](../resources/mailfolder.md)の表示名です。|
-| includeNestedFolders | ブール値 | どのメールボックス フォルダー階層を走査する必要があります。 `true`詳細検索をする必要があることを意味時に`false`簡易検索を代わりに行う必要があることを意味します。 |
+| includeNestedFolders | ブール型 | どのメールボックス フォルダー階層を走査する必要があります。 `true`詳細検索をする必要があることを意味時に`false`簡易検索を代わりに行う必要があることを意味します。 |
 | sourceFolderIDs | String コレクション | メールボックス フォルダーをマイニングする必要があります。 |
 | filterQuery | String | メッセージをフィルタ リングする OData クエリです。 |
 

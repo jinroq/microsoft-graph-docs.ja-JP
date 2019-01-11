@@ -1,12 +1,13 @@
 ---
 title: ポリシーを割り当てる
 description: アプリケーションまたはサービス主体にポリシーを割り当てます。
-ms.openlocfilehash: 25dee4ac43716949125795114318d2571d5b8647
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 30ba92c1d0308f9c4846702008a203821ae2b7b0
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27072914"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27865458"
 ---
 # <a name="assign-policy"></a>ポリシーを割り当てる
 
@@ -35,7 +36,7 @@ POST /serviceprincipals/{id}/policies/$ref
 > 注意: 要求で"id"は、アプリケーションまたはサービス ・ プリンシパル"appid"プロパティではなく"id"プロパティです。
 
 ## <a name="request-headers"></a>要求ヘッダー
-| 名前       | 型 | 説明|
+| 名前       | 種類 | 説明|
 |:---------------|:--------|:----------|
 | Authorization  | string  | ベアラー {トークン}。必須。 |
 | Content-Type | application/json  | エンティティ本文内のデータの性質です。必須。 |
@@ -47,7 +48,7 @@ POST /serviceprincipals/{id}/policies/$ref
 
 成功した場合、このメソッドは `204 No Content` 応答コードを返します。 失敗した場合、`4xx`について、エラーが返されます。
 
-## <a name="example"></a>使用例
+## <a name="example"></a>例
 次の例では、アプリケーションにポリシーが割り当てられます。
 
 ##### <a name="request"></a>要求

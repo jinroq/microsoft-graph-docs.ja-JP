@@ -2,12 +2,13 @@
 title: iosPkcsCertificateProfile リソースの種類
 description: iOS PKCS の証明書プロファイルです。
 author: tfitzmac
-ms.openlocfilehash: c2ccef7f519b7302c93e04480f0310da432b36c4
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: c5398e0bacc082da4f47d5ff265902cd83c5a8e2
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27328148"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27865815"
 ---
 # <a name="iospkcscertificateprofile-resource-type"></a>iosPkcsCertificateProfile リソースの種類
 
@@ -28,7 +29,7 @@ iOS PKCS の証明書プロファイルです。
 |[IosPkcsCertificateProfile を削除します。](../api/intune-deviceconfig-iospkcscertificateprofile-delete.md)|なし|の[iosPkcsCertificateProfile](../resources/intune-deviceconfig-iospkcscertificateprofile.md)を削除します。|
 |[IosPkcsCertificateProfile を更新します。](../api/intune-deviceconfig-iospkcscertificateprofile-update.md)|[iosPkcsCertificateProfile](../resources/intune-deviceconfig-iospkcscertificateprofile.md)|[IosPkcsCertificateProfile](../resources/intune-deviceconfig-iospkcscertificateprofile.md)オブジェクトのプロパティを更新します。|
 
-## <a name="properties"></a>Properties
+## <a name="properties"></a>プロパティ
 |プロパティ|種類|説明|
 |:---|:---|:---|
 |ID|String|エンティティのキー。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|

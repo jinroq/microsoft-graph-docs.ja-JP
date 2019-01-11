@@ -2,12 +2,13 @@
 title: iosUpdateConfiguration の更新
 description: iosUpdateConfiguration オブジェクトのプロパティを更新します。
 author: tfitzmac
-ms.openlocfilehash: 87b9e113c82adf31ee21e026a71268d65da84a25
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: c8c7b8324ab9c765373dd063d58789b4aebc8a7f
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27329856"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27823255"
 ---
 # <a name="update-iosupdateconfiguration"></a>iosUpdateConfiguration の更新
 

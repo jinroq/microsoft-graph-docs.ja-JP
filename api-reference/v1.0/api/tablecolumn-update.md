@@ -2,12 +2,13 @@
 title: tablecolumn を更新する
 description: tablecolumn オブジェクトのプロパティを更新します。
 author: lumine2008
-ms.openlocfilehash: b33c25deea629fceb18a5c5b00fa91e932ce98cc
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 794c3a8d050afb42811feacf135af6c706cea6b9
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27353733"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27864338"
 ---
 # <a name="update-tablecolumn"></a>tablecolumn を更新する
 

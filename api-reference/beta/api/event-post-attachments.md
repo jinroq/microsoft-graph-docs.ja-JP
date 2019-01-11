@@ -2,12 +2,13 @@
 title: 添付ファイルを追加する
 description: イベントの添付ファイルを追加するのにには、この API を使用します。 そこから
 author: angelgolfer-ms
-ms.openlocfilehash: 071ecdecf3ac7fd835c7c5004463661b685be003
-ms.sourcegitcommit: 6b1ba9b3be038cd6247de54a255bad560034fe42
+localization_priority: Normal
+ms.openlocfilehash: 09ca8f38dd2c69d2cb1b10b213bd0a5c5f4a25bb
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "27771773"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27866179"
 ---
 # <a name="add-attachment"></a>添付ファイルを追加する
 
@@ -40,7 +41,7 @@ POST /groups/{id}/events/{id}/attachments
 
 ## <a name="request-headers"></a>要求ヘッダー
 
-| 名前       | 型 | 説明|
+| 名前       | 種類 | 説明|
 |:---------------|:--------|:----------|
 | Authorization  | string  | ベアラー {トークン}。必須。 |
 | Content-Type | string  | エンティティ本文内のデータの性質です。必須。 |

@@ -2,12 +2,13 @@
 title: mobileThreatDefenseConnector の更新
 description: mobileThreatDefenseConnector オブジェクトのプロパティを更新します。
 author: tfitzmac
-ms.openlocfilehash: bd53fb377adb160db1700b088e293217bdee5292
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 451e0451e7fbbce35f90c348d5f162cc401a7ed4
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27313945"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27866977"
 ---
 # <a name="update-mobilethreatdefenseconnector"></a>mobileThreatDefenseConnector の更新
 

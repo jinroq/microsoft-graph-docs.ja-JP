@@ -2,12 +2,13 @@
 title: AzureADWindowsAutopilotDeploymentProfile を更新します。
 description: AzureADWindowsAutopilotDeploymentProfile オブジェクトのプロパティを更新します。
 author: tfitzmac
-ms.openlocfilehash: e47ef4aa80254ca7f08ef40c9bda9d43006f0d49
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 1f9d2f73dd1b1d9f81c04d8b31eaa09e7317d1d1
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27315212"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27865129"
 ---
 # <a name="update-azureadwindowsautopilotdeploymentprofile"></a>AzureADWindowsAutopilotDeploymentProfile を更新します。
 

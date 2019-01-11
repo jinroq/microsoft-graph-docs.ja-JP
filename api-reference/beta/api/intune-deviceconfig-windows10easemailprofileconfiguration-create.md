@@ -2,12 +2,13 @@
 title: Windows10EasEmailProfileConfiguration を作成します。
 description: 新しい windows10EasEmailProfileConfiguration オブジェクトを作成します。
 author: tfitzmac
-ms.openlocfilehash: a806605605b331d94e674e4a2035ea604f7d94cb
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 11c6cec4bf75c02bfac51c4398091de59ae03a06
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27302409"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27864345"
 ---
 # <a name="create-windows10easemailprofileconfiguration"></a>Windows10EasEmailProfileConfiguration を作成します。
 

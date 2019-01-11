@@ -2,12 +2,13 @@
 title: deviceInstallState の作成
 description: 新しい deviceInstallState オブジェクトを作成します。
 author: tfitzmac
-ms.openlocfilehash: c9fd02e51f9b78473762d99763ea37cdaeffb197
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 49979b883ffef895124d8bb57837d5c5103a0d67
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27350401"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27825481"
 ---
 # <a name="create-deviceinstallstate"></a>deviceInstallState の作成
 

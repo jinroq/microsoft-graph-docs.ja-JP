@@ -1,12 +1,13 @@
 ---
 title: connectorGroup リソースの種類
 description: 以下は、リソースの JSON 表記です。
-ms.openlocfilehash: a3131b887216f1f400f70ed8d607477f65793cc7
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 211efe5d8caae57457a6a5cc4fa95d145cd176f3
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27071541"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27823192"
 ---
 # <a name="connectorgroup-resource-type"></a>connectorGroup リソースの種類
 
@@ -17,19 +18,19 @@ ms.locfileid: "27071541"
 | メソッド           | 戻り値の型    |説明|
 |:---------------|:--------|:----------|
 |[ConnectorGroup を取得します。](../api/connectorgroup-get.md) | [connectorGroup](connectorgroup.md) |ConnectorGroup オブジェクトのプロパティと関係を参照してください。|
-|[アプリケーションを作成します。](../api/connectorgroup-post-applications.md) |[application](application.md)| コネクタ グループにアプリケーションを関連付けるアプリケーションのコレクションへの投稿。|
+|[アプリケーションを作成します。](../api/connectorgroup-post-applications.md) |[アプリケーション](application.md)| コネクタ グループにアプリケーションを関連付けるアプリケーションのコレクションへの投稿。|
 |[アプリケーション一覧](../api/connectorgroup-list-applications.md) |[アプリケーション](application.md)コレクション| 関連付けられているアプリケーション オブジェクトのコレクションを取得します。|
 |[コネクタを作成します。](../api/connectorgroup-post-members.md) |[コネクタ](connector.md)| 図形をグループ化するメンバーのコレクションへの投稿、コネクタを追加します。|
 |[メンバーを一覧表示する](../api/connectorgroup-list-members.md) |[コネクタ](connector.md)のコレクション| コネクタ オブジェクトのコレクションを取得します。|
 |[Update](../api/connectorgroup-update.md) | [connectorGroup](connectorgroup.md)    |ConnectorGroup オブジェクトを更新します。 |
-|[削除](../api/connectorgroup-delete.md) | なし |ConnectorGroup オブジェクトを削除します。 すべてのコネクタは、コネクタのグループを削除する前に削除をする必要があります。 |
+|[Delete](../api/connectorgroup-delete.md) | なし |ConnectorGroup オブジェクトを削除します。 すべてのコネクタは、コネクタのグループを削除する前に削除をする必要があります。 |
 
 ## <a name="properties"></a>プロパティ
-| プロパティ     | 型   |説明|
+| プロパティ     | 種類   |説明|
 |:---------------|:--------|:----------|
 |connectorGroupType|文字列| グループで使用するコネクタの種類です。 使用可能な値: `applicationProxy`。|
 |id|String| ConnectorGroup のオブジェクト id|
-|isDefault|ブール値| ConnectorGroup がコネクタの既定のグループであるかどうかを示します。 のみ、1 つのコネクタ グループはデフォルトの connectorGroup をすることができ、システムによって設定されます。|
+|isDefault|ブール型| ConnectorGroup がコネクタの既定のグループであるかどうかを示します。 のみ、1 つのコネクタ グループはデフォルトの connectorGroup をすることができ、システムによって設定されます。|
 |名前|String| ConnectorGroup に関連付けられている名前です。|
 
 ## <a name="relationships"></a>リレーションシップ

@@ -2,12 +2,13 @@
 title: advancedThreatProtectionOnboardingDeviceSettingState リソースの種類
 description: 特定のデバイスに対する ATP 契約時の状態です。
 author: tfitzmac
-ms.openlocfilehash: eecdcc1cbaf9c783da6dcf902281aa6394a842a2
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 3a83581faa921fc4216cd81f1fbabb026210db34
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27310872"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27863848"
 ---
 # <a name="advancedthreatprotectiononboardingdevicesettingstate-resource-type"></a>advancedThreatProtectionOnboardingDeviceSettingState リソースの種類
 
@@ -25,7 +26,7 @@ ms.locfileid: "27310872"
 |[AdvancedThreatProtectionOnboardingDeviceSettingState を削除します。](../api/intune-deviceconfig-advancedthreatprotectiononboardingdevicesettingstate-delete.md)|なし|の[advancedThreatProtectionOnboardingDeviceSettingState](../resources/intune-deviceconfig-advancedthreatprotectiononboardingdevicesettingstate.md)を削除します。|
 |[AdvancedThreatProtectionOnboardingDeviceSettingState を更新します。](../api/intune-deviceconfig-advancedthreatprotectiononboardingdevicesettingstate-update.md)|[advancedThreatProtectionOnboardingDeviceSettingState](../resources/intune-deviceconfig-advancedthreatprotectiononboardingdevicesettingstate.md)|[AdvancedThreatProtectionOnboardingDeviceSettingState](../resources/intune-deviceconfig-advancedthreatprotectiononboardingdevicesettingstate.md)オブジェクトのプロパティを更新します。|
 
-## <a name="properties"></a>Properties
+## <a name="properties"></a>プロパティ
 |プロパティ|種類|説明|
 |:---|:---|:---|
 |ID|String|エンティティのキー|

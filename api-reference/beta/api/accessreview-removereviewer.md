@@ -1,12 +1,13 @@
 ---
 title: AccessReview のレビュー担当者を削除します。
 description: 'Azure AD アクセスのレビュー機能では、レビュー担当者として、ユーザーを削除するのには既存の accessReview オブジェクトを更新します。  この操作のみ許可されてはまだ完了していない、アクセスの確認のためや、アクセスの確認にのみ、校閲者が明示的に指定されています。 この操作は、アクセス確認をユーザーが独自のアクセスを確認するには許可されませんし、校閲者として、グループの所有者が割り当てられている、アクセス確認のためではありません。 '
-ms.openlocfilehash: 2f2e1be904b98ed4dc2b3b34088b344e05b03473
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: d33c1c2409b866a48d0684612f8c878e14dedb68
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27067986"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27866025"
 ---
 # <a name="remove-accessreview-reviewer"></a>AccessReview のレビュー担当者を削除します。
 
@@ -30,7 +31,7 @@ ms.locfileid: "27067986"
 DELETE /accessReviews('{reviewId}')/reviewers('{userId'})
 ```
 ## <a name="request-headers"></a>要求ヘッダー
-| 名前         | 型        | 説明 |
+| 名前         | 種類        | 説明 |
 |:-------------|:------------|:------------|
 | Authorization | string | ベアラー\{トークン\}。 必須。 |
 
@@ -41,7 +42,7 @@ DELETE /accessReviews('{reviewId}')/reviewers('{userId'})
 ## <a name="response"></a>応答
 成功した場合、このメソッドは、200 シリーズの応答コードを返します。
 
-## <a name="example"></a>使用例
+## <a name="example"></a>例
 
 これは、不要なのレビュー担当者を削除するのには 1 回限り (繰り返し発生しない) アクセス レビューの更新の例です。
 

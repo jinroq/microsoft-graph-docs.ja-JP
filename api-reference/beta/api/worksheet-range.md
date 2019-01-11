@@ -2,12 +2,13 @@
 title: ワークシート:Range
 description: アドレスまたは名前で指定された範囲オブジェクトを取得します。
 author: lumine2008
-ms.openlocfilehash: 449851fca7d6f5f57193bf456f7358b76e68e3b0
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 78865ab8f7e4aa7d59bb6f3c782731bae058ae80
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27308275"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27860670"
 ---
 # <a name="worksheet-range"></a>ワークシート:Range
 
@@ -38,7 +39,7 @@ POST /workbook/worksheets/{id|name}/Range
 ## <a name="request-body"></a>要求本文
 要求本文で、次のパラメーターを含む JSON オブジェクトを指定します。
 
-| パラメーター    | 種類   |説明|
+| パラメーター    | Type   |説明|
 |:---------------|:--------|:----------|
 |address|文字列|省略可能。範囲のアドレスまたは名前。指定されていない場合は、ワークシート全体の範囲が返されます。|
 

@@ -2,12 +2,13 @@
 title: リスト win32LobApps
 description: Win32LobApp オブジェクトのプロパティと関係を一覧表示します。
 author: tfitzmac
-ms.openlocfilehash: 1b26ac4dffa7e93598a16189086a51f9f8663d15
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 809bdf388d33641e6b797c7dd934d856dcdd227b
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27333636"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27864611"
 ---
 # <a name="list-win32lobapps"></a>リスト win32LobApps
 

@@ -2,12 +2,13 @@
 title: IosVppAppAssignedUserLicense を作成します。
 description: 新しい iosVppAppAssignedUserLicense オブジェクトを作成します。
 author: tfitzmac
-ms.openlocfilehash: 93b92d28a73e253eb598d03d3171318d95d3fd8a
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 2e6178570da6e89ef50c933d027daa2a9d7e1adf
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27308982"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27864653"
 ---
 # <a name="create-iosvppappassigneduserlicense"></a>IosVppAppAssignedUserLicense を作成します。
 

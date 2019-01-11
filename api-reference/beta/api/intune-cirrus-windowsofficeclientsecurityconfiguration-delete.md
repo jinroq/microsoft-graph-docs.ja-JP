@@ -2,12 +2,13 @@
 title: WindowsOfficeClientSecurityConfiguration を削除します。
 description: セキュリティ ポリシーの windowsOfficeClientSecurityConfiguration を削除します。
 author: tfitzmac
-ms.openlocfilehash: 779ded74f3b07934db9fa10f1495bb6f3baf35e1
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 7fbfb6ab9c38935ae5dd738baad4dd5b480c728b
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27324851"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27865234"
 ---
 # <a name="delete-windowsofficeclientsecurityconfiguration"></a>WindowsOfficeClientSecurityConfiguration を削除します。
 

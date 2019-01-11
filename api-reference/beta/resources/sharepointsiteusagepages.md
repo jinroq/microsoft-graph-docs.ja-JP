@@ -1,23 +1,24 @@
 ---
 title: sharePointSiteUsagePages リソースの種類
 description: リソースの JSON 表記を次に示します。
-ms.openlocfilehash: c66a41393f1842a66c8e57c3d9ba77e6cf863cfa
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 625dc6ff15a7a9efb8a2b2b545fcc78a4e7e9407
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27066511"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27865640"
 ---
 # <a name="sharepointsiteusagepages-resource-type"></a>sharePointSiteUsagePages リソースの種類
 
 ## <a name="properties"></a>プロパティ
 
-| プロパティ          | 型   |
+| プロパティ          | 種類   |
 | :---------------- | :----- |
-| reportRefreshDate | Date   |
+| reportRefreshDate | 日付   |
 | ある          | String |
 | pageViewCount     | Int64  |
-| reportDate        | Date   |
+| reportDate        | 日付   |
 | reportPeriod      | String |
 
 ## <a name="json-representation"></a>JSON 表記

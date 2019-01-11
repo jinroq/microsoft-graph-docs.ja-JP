@@ -1,12 +1,13 @@
 ---
 title: 招待状の作成
 description: この API を使用して、新しい 招待状 を作成します。招待状によって外部ユーザーが組織に追加されます。
-ms.openlocfilehash: 220b90cafdd7825dbb6dff9bb8635a51de2ee267
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 94b02335c123529a9f797c4003a2743e4c074c32
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27073786"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27864282"
 ---
 # <a name="create-invitation"></a>招待状の作成
 
@@ -45,7 +46,7 @@ POST /invitations
 
 次の表に、招待状の作成時に必要になるプロパティを示します。
 
-| パラメーター | 型 | 説明|
+| パラメーター | Type | 説明|
 |:---------------|:--------|:----------|
 |invitedUserEmailAddress |文字列 | 招待するユーザーのメール アドレス。|
 |inviteRedirectUrl |文字列 |引き換え後にユーザーがリダイレクトされる URL。|

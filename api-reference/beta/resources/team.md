@@ -2,12 +2,13 @@
 title: チーム リソースの種類
 description: 'マイクロソフトのチームで、チームは、チャネルのコレクションです。 '
 author: nkramer
-ms.openlocfilehash: 0ed654bf4c8d627dd9466f9263b121f85800b853
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Priority
+ms.openlocfilehash: bf76f7b4b6cd06afb80b17e82fb8d10675b744a2
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27345484"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27862265"
 ---
 # <a name="team-resource-type"></a>チーム リソースの種類
 
@@ -38,13 +39,13 @@ ms.locfileid: "27345484"
 |[チャネルにタブを追加します。](../api/teamstab-add.md) | [teamsTab](../resources/teamstab.md) | (インストール) を追加するチャネル ・ チームのタブです。|
 |[リストからチャネルのメッセージ](../api/channel-list-messages.md)  | [chatMessage](../resources/chatmessage.md) | [チャネルでメッセージを取得します。](../api/channel-list-messages.md) |
 
-## <a name="properties"></a>Properties
+## <a name="properties"></a>プロパティ
 
 | プロパティ | 種類   | 説明 |
 |:---------------|:--------|:----------|
 |displayName|string| チームの名前。 |
-|description|string| チームの説明 (オプション)。 |
-|分類|string| オプションのラベル。 通常、チームのデータやビジネスの重要度についても説明します。 テナントのディレクトリに定義済みのセットのいずれかに一致する必要があります。 |
+|description|文字列| チームの説明 (オプション)。 |
+|分類|文字列| オプションのラベル。 通常、チームのデータやビジネスの重要度についても説明します。 テナントのディレクトリに定義済みのセットのいずれかに一致する必要があります。 |
 |特殊化|[teamSpecialization](teamspecialization.md)| 省略可能。 チームが特定のユース ケースの目的として かどうかを示します。  各チームの特殊化では、固有の動作とその使用例を対象としての経験へのアクセスを持ちます。 |
 |visibility|[teamVisibilityType](teamvisibilitytype.md)| 可視性、グループとチームです。 パブリックの既定値です。 |
 |funSettings|[teamFunSettings](teamfunsettings.md) |Giphy、memes、およびチームのステッカーを構成する設定を使用します。|

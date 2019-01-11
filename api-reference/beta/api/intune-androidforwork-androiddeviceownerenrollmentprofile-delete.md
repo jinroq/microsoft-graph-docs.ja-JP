@@ -2,12 +2,13 @@
 title: AndroidDeviceOwnerEnrollmentProfile を削除します。
 description: AndroidDeviceOwnerEnrollmentProfile を削除します。
 author: tfitzmac
-ms.openlocfilehash: 7ccd34f7d4afc1254c1665e881c28fa3ef04119e
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 11dd6edfeb052cd0cc8901c01b271be7c3359284
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27342926"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27866718"
 ---
 # <a name="delete-androiddeviceownerenrollmentprofile"></a>AndroidDeviceOwnerEnrollmentProfile を削除します。
 

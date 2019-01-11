@@ -2,12 +2,13 @@
 title: bitLockerSystemDrivePolicy リソースの種類
 description: BitLocker 暗号化の基本ポリシーです。
 author: tfitzmac
-ms.openlocfilehash: ba1199970099bb841fc363a747abb5b8dcac2ec1
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 030051faf1405cf15c138384c1b6ab8891fbae95
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27332285"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27867432"
 ---
 # <a name="bitlockersystemdrivepolicy-resource-type"></a>bitLockerSystemDrivePolicy リソースの種類
 
@@ -16,7 +17,7 @@ ms.locfileid: "27332285"
 > **注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
 
 BitLocker 暗号化の基本ポリシーです。
-## <a name="properties"></a>Properties
+## <a name="properties"></a>プロパティ
 |プロパティ|種類|説明|
 |:---|:---|:---|
 |encryptionMethod|[bitLockerEncryptionMethod](../resources/intune-deviceconfig-bitlockerencryptionmethod.md)|オペレーティング システム ドライブの暗号化方法を選択します。 可能な値は、`aesCbc128`、`aesCbc256`、`xtsAes128`、`xtsAes256` です。|

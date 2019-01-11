@@ -2,12 +2,13 @@
 title: Delete windows81CompliancePolicy
 description: windows81CompliancePolicy を削除します。
 author: tfitzmac
-ms.openlocfilehash: 849905dcf678039c68eb501d822ca2301f514fbf
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: cee736fadddec348916bbbcf53433b60024aa687
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27304600"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27862175"
 ---
 # <a name="delete-windows81compliancepolicy"></a>Delete windows81CompliancePolicy
 

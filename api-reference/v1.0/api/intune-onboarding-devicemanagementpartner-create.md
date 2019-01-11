@@ -2,12 +2,13 @@
 title: deviceManagementPartner の作成
 description: 新しい deviceManagementPartner オブジェクトを作成します。
 author: tfitzmac
-ms.openlocfilehash: 11c8da3a5073f17e6bf104de4fc4fb081c36811b
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: f9b3d09c3c22bf13e887a17ef9eb62c8d3a786de
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27337073"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27866158"
 ---
 # <a name="create-devicemanagementpartner"></a>deviceManagementPartner の作成
 

@@ -2,12 +2,13 @@
 title: eventMessage の更新
 description: eventMessage オブジェクトのプロパティを更新します。
 author: angelgolfer-ms
-ms.openlocfilehash: 20c910ae2d6562a4bb9a593a0fac32269dbd413f
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 128849b2b0a1a156ef68498b345ca30833922d82
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27320425"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27867698"
 ---
 # <a name="update-eventmessage"></a>eventMessage の更新
 
@@ -42,9 +43,9 @@ PATCH /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}
 |:---------------|:--------|:----------|
 |categories|String|メッセージに関連付けられたカテゴリ。|
 |importance|String|メッセージの重要性。 可能な値: `Low`、 `Normal`、 `High`。|
-|isDeliveryReceiptRequested|Boolean|メッセージの開封応答が要求されているかどうかを示します。|
-|isRead|Boolean|メッセージが開封されたかどうかを示します。|
-|isReadReceiptRequested|Boolean|メッセージの開封応答が要求されているかどうかを示します。|
+|isDeliveryReceiptRequested|ブール値|メッセージの開封応答が要求されているかどうかを示します。|
+|isRead|ブール値|メッセージが開封されたかどうかを示します。|
+|isReadReceiptRequested|ブール値|メッセージの開封応答が要求されているかどうかを示します。|
 
 ## <a name="response"></a>応答
 

@@ -2,12 +2,13 @@
 title: Delete androidStoreApp
 description: androidStoreApp を削除します。
 author: tfitzmac
-ms.openlocfilehash: c72a512e9d9c6a147e7c4671710b4821a0d2227d
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 1b97349f34ef4b7882ea061fbfb48d55fdfff746
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27329086"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27867936"
 ---
 # <a name="delete-androidstoreapp"></a>Delete androidStoreApp
 

@@ -2,12 +2,13 @@
 title: DepEnrollmentProfile を更新します。
 description: DepEnrollmentProfile オブジェクトのプロパティを更新します。
 author: tfitzmac
-ms.openlocfilehash: 06d6fc12379a7f26ed8baf0e24bf23ef696c067a
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 2d444f6c94eb8dd047e000004f5dbf58dc3c302d
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27322512"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27866186"
 ---
 # <a name="update-depenrollmentprofile"></a>DepEnrollmentProfile を更新します。
 

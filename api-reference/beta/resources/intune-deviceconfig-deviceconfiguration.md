@@ -2,12 +2,13 @@
 title: deviceConfiguration リソースの種類
 description: デバイス構成です。
 author: tfitzmac
-ms.openlocfilehash: 7d1c765ff643950947f23192969078dd12028c2c
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: c789c114f422a6e541762fb33c311cfb75ffca85
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27315737"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27865843"
 ---
 # <a name="deviceconfiguration-resource-type"></a>deviceConfiguration リソースの種類
 

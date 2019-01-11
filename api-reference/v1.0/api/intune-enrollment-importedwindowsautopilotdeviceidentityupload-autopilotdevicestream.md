@@ -2,12 +2,13 @@
 title: autopilotDeviceStream 関数
 description: 自動操縦デバイスのストリーム内でのアップロード要求を作成します。
 author: tfitzmac
-ms.openlocfilehash: 6de8f8620ec5f4e189701a51644c55417118b868
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 5e11b4f66b68bcb5e7de083d0894567d8752d746
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27350856"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27867157"
 ---
 # <a name="autopilotdevicestream-function"></a>autopilotDeviceStream 関数
 

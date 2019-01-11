@@ -2,12 +2,13 @@
 title: macOSLobApp リソースの種類
 description: MacOS の LOB アプリケーションのプロパティと継承されたプロパティが含まれています。
 author: tfitzmac
-ms.openlocfilehash: 0494c46f770d1e46821ce23a7cedff22e0c087a1
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 25306bb02ad9bdb52b2df92af84b2e5a644efba6
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27309563"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27866144"
 ---
 # <a name="macoslobapp-resource-type"></a>macOSLobApp リソースの種類
 
@@ -28,7 +29,7 @@ MacOS の LOB アプリケーションのプロパティと継承されたプロ
 |[MacOSLobApp を削除します。](../api/intune-apps-macoslobapp-delete.md)|なし|の[macOSLobApp](../resources/intune-apps-macoslobapp.md)を削除します。|
 |[MacOSLobApp を更新します。](../api/intune-apps-macoslobapp-update.md)|[macOSLobApp](../resources/intune-apps-macoslobapp.md)|[MacOSLobApp](../resources/intune-apps-macoslobapp.md)オブジェクトのプロパティを更新します。|
 
-## <a name="properties"></a>Properties
+## <a name="properties"></a>プロパティ
 |プロパティ|種類|説明|
 |:---|:---|:---|
 |ID|String|エンティティのキー。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|

@@ -1,12 +1,13 @@
 ---
 title: schemaExtension を更新する
 description: 指定された schemaExtension の定義に含まれるプロパティを更新します。
-ms.openlocfilehash: 783999a22f41300f8ea086d98e755d72b3520685
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 4e9ebcb020fe5aa8a549a79405963feb462b61e3
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27072750"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27823563"
 ---
 # <a name="update-schemaextension"></a>schemaExtension を更新する
 
@@ -47,7 +48,7 @@ PATCH /schemaExtensions/{id}
 
 要求本文で、更新する関連フィールドの値を指定します。要求本文に含まれない既存のプロパティは、以前の値のままになるか、他のプロパティ値の変化に基づいて再計算されます。最適なパフォーマンスを得るためには、変更されていない既存の値を含めないでください。
 
-| プロパティ   | 型 |説明|
+| プロパティ   | 種類 |説明|
 |:---------------|:--------|:----------|
 |説明|String|スキーマ拡張機能の説明。|
 |properties|[extensionSchemaProperty](../resources/extensionschemaproperty.md) コレクション|スキーマ拡張機能の定義を構成するプロパティの名前と種類のコレクション。付加的な変更のみが許可されます。 |
@@ -99,7 +100,7 @@ HTTP/1.1 204 No Content
 
 ## <a name="see-also"></a>関連項目
 
-- [拡張機能を使用してカスタム データをリソースに追加する](/graph/extensibility-overview)
+- [拡張機能を使用したリソースへのカスタム データの追加](/graph/extensibility-overview)
 - [スキーマ拡張機能を使用したグループへのカスタム データの追加](/graph/extensibility-schema-groups)
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

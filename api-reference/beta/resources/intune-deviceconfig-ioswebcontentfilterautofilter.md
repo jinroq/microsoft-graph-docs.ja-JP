@@ -1,12 +1,13 @@
 ---
 title: iosWebContentFilterAutoFilter リソースの種類
 description: IOS iOS の自動フィルター機能を有効にし、その他の URL のアクセス制御では、Web コンテンツ フィルター設定の種類を表します。 構築すると、プロパティ値を持たない、iOS デバイスは、自動でフィルター処理に関係なく有効になります。
-ms.openlocfilehash: 04a221ac512ab3934702a2a9e3178ba23a2ac3ef
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 02576565ecf764d33312477531d6a76c61911cb6
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27072080"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27868132"
 ---
 # <a name="ioswebcontentfilterautofilter-resource-type"></a>iosWebContentFilterAutoFilter リソースの種類
 
@@ -19,7 +20,7 @@ IOS iOS の自動フィルター機能を有効にし、その他の URL のア�
 [IosWebContentFilterBase](../resources/intune-deviceconfig-ioswebcontentfilterbase.md)から継承します。
 
 ## <a name="properties"></a>プロパティ
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
 |allowedUrls|String コレクション|追加の Url のアクセス許可|
 |blockedUrls|String コレクション|追加の Url アクセスのブロック|

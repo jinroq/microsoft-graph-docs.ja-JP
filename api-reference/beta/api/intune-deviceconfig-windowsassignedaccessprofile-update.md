@@ -2,12 +2,13 @@
 title: WindowsAssignedAccessProfile を更新します。
 description: WindowsAssignedAccessProfile オブジェクトのプロパティを更新します。
 author: tfitzmac
-ms.openlocfilehash: 84cbc1aaaebf9383c3d113d7f309c61de0cdeb67
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 4bfa70208a456d7b7d2a2d0ae524d9edd9508cab
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27331361"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27867047"
 ---
 # <a name="update-windowsassignedaccessprofile"></a>WindowsAssignedAccessProfile を更新します。
 

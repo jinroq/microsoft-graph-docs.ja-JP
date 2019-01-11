@@ -2,12 +2,13 @@
 title: 範囲:UsedRange
 description: 指定した範囲オブジェクトのうち使用されている範囲を返します。
 author: lumine2008
-ms.openlocfilehash: a2a4d4a2de3b86b8682421a62e4e0b6b2cb7c2b6
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 3ace6df8491945e405dab1f33cf628e9b97fabe4
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27340706"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27862014"
 ---
 # <a name="range-usedrange"></a>範囲:UsedRange
 
@@ -40,7 +41,7 @@ GET /workbook/tables/{id|name}/columns/{id|name}/range/UsedRange
 ## <a name="request-body"></a>要求本文
 要求本文で、次のパラメーターを含む JSON オブジェクトを指定します。
 
-| パラメーター    | 種類   |説明|
+| パラメーター    | Type   |説明|
 |:---------------|:--------|:----------|
 |valuesOnly|ブール値|省略可能。値の入っているセルのみを使用セルと見なします。|
 

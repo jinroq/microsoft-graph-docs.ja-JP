@@ -2,12 +2,13 @@
 title: deviceConfigurationDeviceOverview の更新
 description: deviceConfigurationDeviceOverview オブジェクトのプロパティを更新します。
 author: tfitzmac
-ms.openlocfilehash: a6ff0247fbc242aeb230e351e974baaa60f58e55
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: b91138cfd3a63a44cfe8b5cda502f165705fad7b
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27308947"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27863967"
 ---
 # <a name="update-deviceconfigurationdeviceoverview"></a>deviceConfigurationDeviceOverview の更新
 

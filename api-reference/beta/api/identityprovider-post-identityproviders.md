@@ -1,12 +1,13 @@
 ---
 title: IdentityProvider を作成します。
 description: 新しい identityProvider を作成するには、表示名、identityProvider の種類、クライアント ID とクライアント シークレットを指定します。
-ms.openlocfilehash: 8786cbf6676567a0c6aaef5bf497f50cff1ce9a4
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 50ead5acbbda7725e44de55865d6fe2184c89647
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27071025"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27866235"
 ---
 # <a name="create-identityprovider"></a>IdentityProvider を作成します。
 
@@ -44,7 +45,7 @@ POST /identityProviders
 
 要求の本文には、 [identityProvider](../resources/identityprovider.md)オブジェクトの JSON 表現を提供します。 次の表に記載されているすべてのプロパティは、必要があります。
 
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---------------|:--------|:----------|
 |clientId|String|アプリケーションのクライアント ID。 これは、id プロバイダーを持つアプリケーションを登録するときに取得したクライアント ID です。|
 |clientSecret|String|アプリケーションのクライアントの機密情報です。 これは、id プロバイダーを持つアプリケーションを登録するときに取得したクライアントの機密情報です。|
@@ -55,7 +56,7 @@ POST /identityProviders
 
 かどうかは成功すると、このメソッドを返します`201 Created`、応答の本体で応答コードと[identityProvider](../resources/identityprovider.md)のオブジェクトです。 失敗した場合、`4xx`について、エラーが返されます。
 
-## <a name="example"></a>使用例
+## <a name="example"></a>例
 
 次の使用例は、 **identityProvider**を作成します。
 

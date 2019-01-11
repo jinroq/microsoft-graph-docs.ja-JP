@@ -2,12 +2,13 @@
 title: audioRoutingGroup リソースの種類
 description: オーディオのルーティング グループでは、通話参加者の間にプライベート オーディオ ルートを格納します。 ソースは参加者自身で、受信者、通話の他の参加者のサブセットであります。
 author: VinodRavichandran
-ms.openlocfilehash: 0e1db47963576e728a07a6b99ecff09a0f4640d0
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: cb1b8b67404ef6a3c8f397a6b5debe9acc252b5f
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27344472"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27860649"
 ---
 # <a name="audioroutinggroup-resource-type"></a>audioRoutingGroup リソースの種類
 
@@ -25,7 +26,7 @@ ms.locfileid: "27344472"
 | [Update](../api/audioroutinggroup-update.md)            | [audioRoutingGroup](audioroutinggroup.md) | 受信者リストを更新します。                       |
 | [Delete](../api/audioroutinggroup-delete.md)            | なし                                      | オーディオのルーティング グループを削除します。              |
 
-## <a name="properties"></a>Properties
+## <a name="properties"></a>プロパティ
 
 | プロパティ      | 種類              | 説明                                                          |
 | :----------   | :---------------- | :--------------------------------------------------------------------|

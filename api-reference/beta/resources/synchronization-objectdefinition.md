@@ -1,12 +1,13 @@
 ---
 title: objectDefinition リソースの種類
 description: オブジェクトとその属性について説明します。 オブジェクトの定義は、directoryDefinition、synchronizationSchema の一部として更新の一部です。
-ms.openlocfilehash: c4c2d54eb33f5140464e3e8aa479aa6baec72df8
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 2d5e7a12f06886ae3cbdad6a5f2f98907aafca74
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27073932"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27866081"
 ---
 # <a name="objectdefinition-resource-type"></a>objectDefinition リソースの種類
 
@@ -16,7 +17,7 @@ ms.locfileid: "27073932"
 
 ## <a name="properties"></a>プロパティ
 
-| プロパティ      | 型      | 説明    |
+| プロパティ      | 種類      | 説明    |
 |:--------------|:----------|:---------------|
 |属性     |[attributeDefinition](synchronization-attributedefinition.md)コレクション    | オブジェクトの属性を定義します。 |
 |metadata       |[metadataEntry](synchronization-metadataentry.md)コレクション   |プロパティをさらに拡張します。 明示的に記載されている、しない限り、メタデータの値を変更できませんする必要があります。|

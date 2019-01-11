@@ -2,12 +2,13 @@
 title: DataSharingConsent を作成します。
 description: 新しい dataSharingConsent オブジェクトを作成します。
 author: tfitzmac
-ms.openlocfilehash: 07d76bbd92d2741571683bb7614b3336c10d9058
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: cf45db12a9876d9be89d20fa3328e89eeea82013
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27349673"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27862287"
 ---
 # <a name="create-datasharingconsent"></a>DataSharingConsent を作成します。
 

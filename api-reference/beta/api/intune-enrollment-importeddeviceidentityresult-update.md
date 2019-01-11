@@ -2,12 +2,13 @@
 title: ImportedDeviceIdentityResult を更新します。
 description: ImportedDeviceIdentityResult オブジェクトのプロパティを更新します。
 author: tfitzmac
-ms.openlocfilehash: 4c698810bb3fe88f52d8fcba11d8c29aeb508fe6
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 7fe9472b0f63ada966c61dd8fc56a7865cf94408
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27332439"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27827574"
 ---
 # <a name="update-importeddeviceidentityresult"></a>ImportedDeviceIdentityResult を更新します。
 

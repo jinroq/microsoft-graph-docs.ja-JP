@@ -1,12 +1,13 @@
 ---
 title: secureScoreControlProfiles リソースの種類
 description: コントロールのデータごとのテナントのセキュリティで保護されたスコアを表します。 既定では、テナントのすべてのコントロールを返し、個々 のコントロールを明示的に取得できます。
-ms.openlocfilehash: 3e7dc463d7521e1980b41034ae4121ab610dd8f5
-ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
+localization_priority: Normal
+ms.openlocfilehash: 866b2086ff5160744f848292cedf30c3cedf6daa
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "27380584"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27866221"
 ---
 # <a name="securescorecontrolprofiles-resource-type"></a>secureScoreControlProfiles リソースの種類
 
@@ -24,7 +25,7 @@ ms.locfileid: "27380584"
 
 ## <a name="properties"></a>プロパティ
 
-|名前 |型 |説明 |
+|名前 |種類 |説明 |
 |:--|:--|:--|
 |   azureTenantId   |   String  |   テナントの GUID の文字列 id。  |
 |   controlName |   String  |   コントロールの名前です。 |
@@ -39,7 +40,7 @@ ms.locfileid: "27380584"
 |   implementationCost |    String  |   Implemmentating コントロール (低、中、高) のリソースのコストです。 |
 |   rank |  Int32   |   マイクロソフトのコントロールのレベルを調整します。   |
 |   脅威 |   文字列コレクション   |   コントロールを軽減する脅威の一覧 (accountBreach、dataDeletion、dataExfiltration、dataSpillage、elevationOfPrivilege、maliciousInsider、passwordCracking、phishingOrWhaling、なりすましが行われる)。 |
-|   非推奨 |    Boolean |   コントロールで減価償却されるかどうかを示すためにフラグを設定します。   |
+|   非推奨 |    ブール型 |   コントロールで減価償却されるかどうかを示すためにフラグを設定します。   |
 |   改善計画 |   String  |   どのようなコントロールの説明は、改善に役立ちます。 |
 |   remediationImpact | String  |   改善のユーザーへの影響の説明です。 |
 |   actionUrl | String  |   URL は、コントロールが対象になることです。 |

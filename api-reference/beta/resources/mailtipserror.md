@@ -1,12 +1,13 @@
 ---
 title: mailTipsError リソースの種類
 description: 操作中に発生するエラーです。
-ms.openlocfilehash: 94ab795d5cb12c2ff8490806326968d363e1a761
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 7df13bb45471d89fdf25b4a251e441bbf2dfad9e
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27073019"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27865625"
 ---
 # <a name="mailtipserror-resource-type"></a>mailTipsError リソースの種類
 
@@ -15,7 +16,7 @@ ms.locfileid: "27073019"
 操作中に発生するエラーです。
 
 ## <a name="properties"></a>プロパティ
-| プロパティ     | 型   |説明|
+| プロパティ     | 種類   |説明|
 |:-----|:-----|:-----|
 | message | String | エラー メッセージ。 |
 | code | String | エラー コード。 |

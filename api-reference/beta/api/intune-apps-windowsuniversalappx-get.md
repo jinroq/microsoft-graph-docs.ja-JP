@@ -2,12 +2,13 @@
 title: Get windowsUniversalAppX
 description: windowsUniversalAppX オブジェクトのプロパティとリレーションシップを読み取ります。
 author: tfitzmac
-ms.openlocfilehash: 11b09ba6b276e36d50c1fe860b4bd3cd4115dbf4
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: a31c9e6303c26fe9bcc19629b740edcafea271e4
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27358507"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27863778"
 ---
 # <a name="get-windowsuniversalappx"></a>Get windowsUniversalAppX
 

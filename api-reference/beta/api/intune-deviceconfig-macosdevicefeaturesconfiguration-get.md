@@ -2,12 +2,13 @@
 title: macOSDeviceFeaturesConfiguration の取得
 description: macOSDeviceFeaturesConfiguration オブジェクトのプロパティとリレーションシップを読み取ります。
 author: tfitzmac
-ms.openlocfilehash: 358d7e1e1632fa2ece22a2ef1ad346a5f10902ed
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 41bc1f0ae3abf6f6d52e96e0a34354468bd6b5ed
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27301898"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27863974"
 ---
 # <a name="get-macosdevicefeaturesconfiguration"></a>macOSDeviceFeaturesConfiguration の取得
 

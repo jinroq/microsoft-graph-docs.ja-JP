@@ -1,12 +1,13 @@
 ---
 title: リスト impossibleTravelRiskEvents
 description: Impossibletravelriskevent オブジェクトのリストを取得します。
-ms.openlocfilehash: 39eb9ebc231b7da87dca2fa022b0702e1c1e6c16
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 358aa31305a36a67b84850128af6f6a94e3e5e9f
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27069172"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27864632"
 ---
 # <a name="list-impossibletravelriskevents"></a>リスト impossibleTravelRiskEvents
 

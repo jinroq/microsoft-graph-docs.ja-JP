@@ -3,12 +3,13 @@ title: >
   androidManagedAppProtection の更新
 description: androidManagedAppProtection オブジェクトのプロパティを更新します。
 author: tfitzmac
-ms.openlocfilehash: f3ab5195005dc92e4e58f13218b551cc0369f96e
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 9f054ac800320becbe133032ed4e630a2c5ff980
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27336184"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27863939"
 ---
 # <a name="update-androidmanagedappprotection"></a>androidManagedAppProtection の更新
 

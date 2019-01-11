@@ -2,12 +2,13 @@
 title: Win32LobApp を更新します。
 description: Win32LobApp オブジェクトのプロパティを更新します。
 author: tfitzmac
-ms.openlocfilehash: 8c05da48719aa2e923ae767faec4979f23976e14
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: c2deac829d1aad6cf0b1a1f3ec4a2a91e7b07c6c
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27348623"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27864933"
 ---
 # <a name="update-win32lobapp"></a>Win32LobApp を更新します。
 

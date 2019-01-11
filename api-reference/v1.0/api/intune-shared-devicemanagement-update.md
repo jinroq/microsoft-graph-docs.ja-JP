@@ -2,12 +2,13 @@
 title: deviceManagement の更新
 description: deviceManagement オブジェクトのプロパティを更新します。
 author: tfitzmac
-ms.openlocfilehash: d8a84c61751fdbc8267b846a70adb44d2affbfa2
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: e88b6379e340865adeb41bb0430fd8eecc8f0b69
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27331669"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27860684"
 ---
 # <a name="update-devicemanagement"></a>deviceManagement の更新
 

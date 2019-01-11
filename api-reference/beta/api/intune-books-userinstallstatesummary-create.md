@@ -2,12 +2,13 @@
 title: userInstallStateSummary の作成
 description: 新しい userInstallStateSummary オブジェクトを作成します。
 author: tfitzmac
-ms.openlocfilehash: 1f90c76382379f1e448c02d5b83a415c9a97fc82
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 8346d64a550d1e13edb939fb8d79e4e60272cbd9
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27350289"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27864709"
 ---
 # <a name="create-userinstallstatesummary"></a>userInstallStateSummary の作成
 
