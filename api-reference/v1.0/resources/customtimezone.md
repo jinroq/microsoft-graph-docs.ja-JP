@@ -1,30 +1,31 @@
 ---
 title: customTimeZone リソースの種類
 description: 標準時から夏時間またはその逆への切り替えが標準となっていないタイム ゾーンを表します。
-ms.openlocfilehash: 36d497e3e6ad52ca5a59f4bc322410ee271e73bf
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 7d43de045b99a1163ae8fc74e40d659d10cabe63
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27021532"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27806525"
 ---
-# <a name="customtimezone-resource-type"></a><span data-ttu-id="875f0-103">customTimeZone リソースの種類</span><span class="sxs-lookup"><span data-stu-id="875f0-103">customTimeZone resource type</span></span>
+# <a name="customtimezone-resource-type"></a><span data-ttu-id="88242-103">customTimeZone リソースの種類</span><span class="sxs-lookup"><span data-stu-id="88242-103">customTimeZone resource type</span></span>
 
-<span data-ttu-id="875f0-104">標準時から夏時間またはその逆への切り替えが標準となっていないタイム ゾーンを表します。</span><span class="sxs-lookup"><span data-stu-id="875f0-104">Represents a time zone where the transition from standard to daylight saving time, or vice versa is not standard.</span></span>
+<span data-ttu-id="88242-104">標準時から夏時間またはその逆への切り替えが標準となっていないタイム ゾーンを表します。</span><span class="sxs-lookup"><span data-stu-id="88242-104">Represents a time zone where the transition from standard to daylight saving time, or vice versa is not standard.</span></span>
 
 
-## <a name="properties"></a><span data-ttu-id="875f0-105">プロパティ</span><span class="sxs-lookup"><span data-stu-id="875f0-105">Properties</span></span>
-| <span data-ttu-id="875f0-106">プロパティ</span><span class="sxs-lookup"><span data-stu-id="875f0-106">Property</span></span>     | <span data-ttu-id="875f0-107">型</span><span class="sxs-lookup"><span data-stu-id="875f0-107">Type</span></span>   |<span data-ttu-id="875f0-108">説明</span><span class="sxs-lookup"><span data-stu-id="875f0-108">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="88242-105">プロパティ</span><span class="sxs-lookup"><span data-stu-id="88242-105">Properties</span></span>
+| <span data-ttu-id="88242-106">プロパティ</span><span class="sxs-lookup"><span data-stu-id="88242-106">Property</span></span>     | <span data-ttu-id="88242-107">種類</span><span class="sxs-lookup"><span data-stu-id="88242-107">Type</span></span>   |<span data-ttu-id="88242-108">説明</span><span class="sxs-lookup"><span data-stu-id="88242-108">Description</span></span>|
 |:---------------|:--------|:----------|
-| <span data-ttu-id="875f0-109">bias</span><span class="sxs-lookup"><span data-stu-id="875f0-109">bias</span></span> | <span data-ttu-id="875f0-110">Edm.Int32</span><span class="sxs-lookup"><span data-stu-id="875f0-110">Edm.Int32</span></span> | <span data-ttu-id="875f0-111">タイム ゾーンの協定世界時 (UTC) からの時間オフセットです。</span><span class="sxs-lookup"><span data-stu-id="875f0-111">The time offset of the time zone from Coordinated Universal Time (UTC).</span></span> <span data-ttu-id="875f0-112">この値は分単位です。</span><span class="sxs-lookup"><span data-stu-id="875f0-112">This value is in minutes.</span></span><span data-ttu-id="875f0-113">UTC より時間が進んでいるタイム　ゾーンには正のオフセット、UTC より時間が遅れているタイム ゾーンには負のオフセットを設定します。</span><span class="sxs-lookup"><span data-stu-id="875f0-113"> Time zones that are ahead of UTC have a positive offset; time zones that are behind UTC have a negative offset.</span></span>|
-| <span data-ttu-id="875f0-114">daylightOffset</span><span class="sxs-lookup"><span data-stu-id="875f0-114">daylightOffset</span></span> | [<span data-ttu-id="875f0-115">daylightTimeZoneOffset</span><span class="sxs-lookup"><span data-stu-id="875f0-115">daylightTimeZoneOffset</span></span>](daylighttimezoneoffset.md) | <span data-ttu-id="875f0-116">タイム ゾーンが標準時から夏時間に切り替わるタイミングを指定します。</span><span class="sxs-lookup"><span data-stu-id="875f0-116">Specifies when the time zone switches from standard time to daylight saving time.</span></span> |
-| <span data-ttu-id="875f0-117">name</span><span class="sxs-lookup"><span data-stu-id="875f0-117">name</span></span> | <span data-ttu-id="875f0-118">文字列</span><span class="sxs-lookup"><span data-stu-id="875f0-118">string</span></span> | <span data-ttu-id="875f0-119">カスタム タイム ゾーンの名前。</span><span class="sxs-lookup"><span data-stu-id="875f0-119">The name of the custom time zone.</span></span> |
-| <span data-ttu-id="875f0-120">standardOffset</span><span class="sxs-lookup"><span data-stu-id="875f0-120">standardOffset</span></span> | [<span data-ttu-id="875f0-121">standardTimeZoneOffset</span><span class="sxs-lookup"><span data-stu-id="875f0-121">standardTimeZoneOffset</span></span>](standardtimezoneoffset.md) | <span data-ttu-id="875f0-122">タイム ゾーンが夏時間から標準時に切り替わるタイミングを指定します。</span><span class="sxs-lookup"><span data-stu-id="875f0-122">Specifies when the time zone switches from daylight saving time to standard time.</span></span> |
+| <span data-ttu-id="88242-109">bias</span><span class="sxs-lookup"><span data-stu-id="88242-109">bias</span></span> | <span data-ttu-id="88242-110">Edm.Int32</span><span class="sxs-lookup"><span data-stu-id="88242-110">Edm.Int32</span></span> | <span data-ttu-id="88242-111">タイム ゾーンの協定世界時 (UTC) からの時間オフセットです。</span><span class="sxs-lookup"><span data-stu-id="88242-111">The time offset of the time zone from Coordinated Universal Time (UTC).</span></span> <span data-ttu-id="88242-112">この値は分単位です。</span><span class="sxs-lookup"><span data-stu-id="88242-112">This value is in minutes.</span></span><span data-ttu-id="88242-113">UTC より時間が進んでいるタイム　ゾーンには正のオフセット、UTC より時間が遅れているタイム ゾーンには負のオフセットを設定します。</span><span class="sxs-lookup"><span data-stu-id="88242-113"> Time zones that are ahead of UTC have a positive offset; time zones that are behind UTC have a negative offset.</span></span>|
+| <span data-ttu-id="88242-114">daylightOffset</span><span class="sxs-lookup"><span data-stu-id="88242-114">daylightOffset</span></span> | [<span data-ttu-id="88242-115">daylightTimeZoneOffset</span><span class="sxs-lookup"><span data-stu-id="88242-115">daylightTimeZoneOffset</span></span>](daylighttimezoneoffset.md) | <span data-ttu-id="88242-116">タイム ゾーンが標準時から夏時間に切り替わるタイミングを指定します。</span><span class="sxs-lookup"><span data-stu-id="88242-116">Specifies when the time zone switches from standard time to daylight saving time.</span></span> |
+| <span data-ttu-id="88242-117">name</span><span class="sxs-lookup"><span data-stu-id="88242-117">name</span></span> | <span data-ttu-id="88242-118">文字列</span><span class="sxs-lookup"><span data-stu-id="88242-118">string</span></span> | <span data-ttu-id="88242-119">カスタム タイム ゾーンの名前。</span><span class="sxs-lookup"><span data-stu-id="88242-119">The name of the custom time zone.</span></span> |
+| <span data-ttu-id="88242-120">standardOffset</span><span class="sxs-lookup"><span data-stu-id="88242-120">standardOffset</span></span> | [<span data-ttu-id="88242-121">standardTimeZoneOffset</span><span class="sxs-lookup"><span data-stu-id="88242-121">standardTimeZoneOffset</span></span>](standardtimezoneoffset.md) | <span data-ttu-id="88242-122">タイム ゾーンが夏時間から標準時に切り替わるタイミングを指定します。</span><span class="sxs-lookup"><span data-stu-id="88242-122">Specifies when the time zone switches from daylight saving time to standard time.</span></span> |
 
 
-## <a name="json-representation"></a><span data-ttu-id="875f0-123">JSON 表記</span><span class="sxs-lookup"><span data-stu-id="875f0-123">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="88242-123">JSON 表記</span><span class="sxs-lookup"><span data-stu-id="88242-123">JSON representation</span></span>
 
-<span data-ttu-id="875f0-124">以下は、リソースの JSON 表記です。</span><span class="sxs-lookup"><span data-stu-id="875f0-124">Here is a JSON representation of the resource.</span></span>
+<span data-ttu-id="88242-124">以下は、リソースの JSON 表記です。</span><span class="sxs-lookup"><span data-stu-id="88242-124">Here is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
