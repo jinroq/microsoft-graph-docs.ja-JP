@@ -1,12 +1,13 @@
 ---
 title: 予約予定表ビューを一覧表示します。
 description: " > **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。"
-ms.openlocfilehash: fed5cb09985ad00a3233899662148f5c4ce8ecd2
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 5abf88b4d0f0f5721ba3bcbf467406cfedfbe9f0
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27067047"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27809465"
 ---
 # <a name="list-bookings-calendarview"></a>予約予定表ビューを一覧表示します。
 
@@ -37,7 +38,7 @@ GET /bookingBusinesses/{id}/calendarView?start={start-value}&end={end-value}
 ## <a name="request-body"></a>要求本文
 要求 URL に、次のクエリ パラメーターを値で指定します。
 
-| パラメーター    | 型   |説明|
+| パラメーター    | Type   |説明|
 |:---------------|:--------|:----------|
 |開始|DateTimeOffset|時間範囲の開始日時は UTC、または UTC からのオフセットとしての ISO 8601 形式で表されます。 など、2018 年 1 月 1 日に UTC 午前 0 時が、これのようになります。: '2018-01-01T00:00:00Z'、PST で同時には次のように、:' 2017-12-31T16:00:00-08:00 ' です。|
 |end|DateTimeOffset|時間範囲の終了日時は UTC、または UTC からのオフセットとしての ISO 8601 形式で表されます。 例では、3 am UTC、2018 年 1 月 1日には次のように: '2018-01-01T03:00:00Z'、PST で同時には次のように、:' 2017-12-31T19:00:00-08時 00分 ' です。|

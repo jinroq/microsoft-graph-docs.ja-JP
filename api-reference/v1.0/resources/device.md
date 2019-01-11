@@ -1,12 +1,13 @@
 ---
 title: デバイス リソース型
 description: 組織に登録されているデバイスを表します。 デバイスは、Device Registration Service を使用するか、Intune によってクラウドで作成されます。 これは、多要素認証の条件付きアクセス ポリシーで使用されます。 該当するデバイスの範囲は、デスクトップやノート PC から携帯電話やタブレットに及びます。 directoryObject から継承します。
-ms.openlocfilehash: c32267001b309b0f701ed17d30b29f93f64f0936
-ms.sourcegitcommit: 82f9d0d10388572a3073b2dde8ca0a7b409135b8
+localization_priority: Normal
+ms.openlocfilehash: 4b28b27439f911ff98f13e7d1ae88b873b1286f4
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "27191166"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27811712"
 ---
 # <a name="device-resource-type"></a>デバイス リソース型
 

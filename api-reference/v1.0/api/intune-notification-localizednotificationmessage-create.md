@@ -2,12 +2,13 @@
 title: localizedNotificationMessage の作成
 description: 新しい localizedNotificationMessage オブジェクトを作成します。
 author: tfitzmac
-ms.openlocfilehash: 8bc782f69e769e32acd29932b4f224c7cf764c04
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 10794b8f6a37a49650dd9e3dbd419b4ea1bf3f3f
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27353544"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27811264"
 ---
 # <a name="create-localizednotificationmessage"></a>localizedNotificationMessage の作成
 

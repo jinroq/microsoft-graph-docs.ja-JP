@@ -3,12 +3,13 @@ author: daspek
 ms.author: dspektor
 ms.date: 09/14/2017
 title: ItemActivityTimeSet
-ms.openlocfilehash: 7a8852af9fc9c99f69b8d61f53037be91f35b31e
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 2ff3e1a2356c43457fe251928728632bd2228b10
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27074098"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27809893"
 ---
 # <a name="itemactivitytimeset-resource-type"></a>ItemActivityTimeSet リソースの種類
 
@@ -38,7 +39,7 @@ ms.locfileid: "27074098"
 
 ## <a name="properties"></a>プロパティ
 
-| プロパティ名    | 型           | 説明
+| プロパティ名    | Type           | 説明
 |:-----------------|:---------------|:-----------------------------------------
 | observedDateTime | DateTimeOffset | アクティビティの発生が確認されたとき。
 | recordedDateTime | DateTimeOffset | アクティビティの確認がサービスに記録されたとき。

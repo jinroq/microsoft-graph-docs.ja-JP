@@ -2,12 +2,13 @@
 title: AndroidForWorkGmailEasConfiguration を作成します。
 description: 新しい androidForWorkGmailEasConfiguration オブジェクトを作成します。
 author: tfitzmac
-ms.openlocfilehash: 7da73972b4738c23f9f5cff5c7d80ea29d7561d3
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 5c2093421fd4d6dcb2828678cb823c388abef6d8
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27355532"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27812776"
 ---
 # <a name="create-androidforworkgmaileasconfiguration"></a>AndroidForWorkGmailEasConfiguration を作成します。
 

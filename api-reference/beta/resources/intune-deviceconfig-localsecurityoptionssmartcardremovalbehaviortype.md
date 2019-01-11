@@ -2,12 +2,13 @@
 title: localSecurityOptionsSmartCardRemovalBehaviorType 列挙型
 description: LocalSecurityOptionsSmartCardRemovalBehaviorType に指定できる値
 author: tfitzmac
-ms.openlocfilehash: 91b55d4ba3b1fc8b27a5ab85e6f5ff7df74e9a59
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: ab8ead80cc98a8036c4f874c61d541af09cbaaae
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27308737"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27809969"
 ---
 # <a name="localsecurityoptionssmartcardremovalbehaviortype-enum-type"></a>localSecurityOptionsSmartCardRemovalBehaviorType 列挙型
 

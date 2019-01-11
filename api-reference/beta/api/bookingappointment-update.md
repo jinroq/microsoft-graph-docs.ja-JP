@@ -1,12 +1,13 @@
 ---
 title: Bookingappointment を更新します。
 description: " > **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。"
-ms.openlocfilehash: fd63d11bf7a33751b6a271c57d0f871b5e6d474f
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: baedaf0e894dfdda96c43ff9dc0cb47ce796db9e
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27069008"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27809682"
 ---
 # <a name="update-bookingappointment"></a>Bookingappointment を更新します。
 
@@ -35,7 +36,7 @@ PATCH /bookingBusinesses/{id}/appointments/{id}
 ## <a name="request-body"></a>要求本文
 要求本文で、更新する関連フィールドの値を指定します。要求本文に含まれない既存のプロパティは、以前の値のままになるか、他のプロパティ値の変化に基づいて再計算されます。最適なパフォーマンスを得るためには、変更されていない既存の値を含めないでください。
 
-| プロパティ     | 型   |説明|
+| プロパティ     | 種類   |説明|
 |:---------------|:--------|:----------|
 |customerEmailAddress|String|予定を予約する、 [bookingCustomer](../resources/bookingcustomer.md)の SMTP アドレスです。|
 |customerId|String|この予定の[bookingCustomer](../resources/bookingcustomer.md)の ID です。 ID が指定されていない場合、予定を作成するとき、新しい**bookingCustomer**オブジェクトが作成されます。 1 回に設定する必要があります **[得意先コード]** 不変です。|
@@ -50,7 +51,7 @@ PATCH /bookingBusinesses/{id}/appointments/{id}
 |invoiceId|String|請求書の ID。|
 |invoiceStatus|文字列| 請求書の状態です。 使用可能な値: `draft`、`reviewing`、`open`、`canceled`、`paid`、`corrective`。|
 |invoiceUrl|String|Microsoft の予約で請求書の URL です。|
-|optOutOfCustomerEmail|Boolean|True は、この予定の[bookingCustomer](../resources/bookingcustomer.md)は、この予定の確認メッセージを表示するのには望んでいないことを示します。|
+|optOutOfCustomerEmail|ブール型|True は、この予定の[bookingCustomer](../resources/bookingcustomer.md)は、この予定の確認メッセージを表示するのには望んでいないことを示します。|
 |事後バッファリング|Duration|クリーンアップ、例として、予定が終了した後に予約する時間の量。 値は、 [ISO8601](https://www.iso.org/iso-8601-date-and-time-format.html)形式で表されます。 |
 |事前バッファリング|Duration|例として、準備のため、予定の開始前に予約する時間の量。 値は、 [ISO8601](https://www.iso.org/iso-8601-date-and-time-format.html)形式で表されます。|
 |価格|倍精度浮動小数点数|指定された[bookingService](../resources/bookingservice.md)の予定の正規の価格です。|

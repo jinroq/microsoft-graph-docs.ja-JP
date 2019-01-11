@@ -2,12 +2,13 @@
 title: user リソースの種類
 description: Azure Active Directory ユーザー オブジェクトを表します。
 author: tfitzmac
-ms.openlocfilehash: 88db96c374321f428f40971da530ab8ba82965c2
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: d5aef878787f0bf9b8a7a2cd95810e54d1e8f166
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27329219"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27811880"
 ---
 # <a name="user-resource-type"></a>user リソースの種類
 
@@ -40,7 +41,7 @@ Azure Active Directory ユーザー オブジェクトを表します。
 |[getManagedDevicesWithAppFailures 関数](../api/intune-shared-user-getmanageddeviceswithappfailures.md)|String コレクション|失敗したアプリを使用してデバイスの一覧を取得します。|
 
 
-## <a name="properties"></a>Properties
+## <a name="properties"></a>プロパティ
 |プロパティ|種類|説明|
 |:---|:---|:---|
 |ID|String|ユーザーの一意識別子。|

@@ -2,12 +2,13 @@
 title: WindowsPhoneXAP を作成します。
 description: 新しい windowsPhoneXAP オブジェクトを作成します。
 author: tfitzmac
-ms.openlocfilehash: f20a1cc210f87bc9a2bad31cc6d79eac6aa892bd
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: b219870d1d3539ee9b29b221af45fc38210c777e
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27312965"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27808828"
 ---
 # <a name="create-windowsphonexap"></a>WindowsPhoneXAP を作成します。
 

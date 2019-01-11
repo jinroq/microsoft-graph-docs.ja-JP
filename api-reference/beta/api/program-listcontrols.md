@@ -1,12 +1,13 @@
 ---
 title: プログラムのリスト programControls
 description: Azure AD にアクセスが機能を確認し、すべてのデバッギング オブジェクト、特定のプログラムにリンクされています。
-ms.openlocfilehash: 78b28851dadfa1c24bc5bc0556b1c471e7bc09e9
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 8895634b098474cdbeab695cbe730a1e2fd02e2c
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27066465"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27809337"
 ---
 # <a name="list-programcontrols-of-a-program"></a>プログラムのリスト programControls
 
@@ -28,7 +29,7 @@ ms.locfileid: "27066465"
 GET /programs('{programId}')/controls
 ```
 ## <a name="request-headers"></a>要求ヘッダー
-| 名前         | 型        | 説明 |
+| 名前         | 種類        | 説明 |
 |:-------------|:------------|:------------|
 | Authorization | string | ベアラー\{トークン\}。 必須。 |
 

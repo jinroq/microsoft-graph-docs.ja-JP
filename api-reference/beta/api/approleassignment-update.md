@@ -1,12 +1,13 @@
 ---
 title: Approleassignment を更新します。
 description: Approleassignment オブジェクトのプロパティを更新します。
-ms.openlocfilehash: 3c861afde396d9cab2f745c15c7de1d9a81c5dcc
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 3d0f95e5413354a28e7b9b26e9b440f147c45931
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27067044"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27809633"
 ---
 # <a name="update-approleassignment"></a>Approleassignment を更新します。
 
@@ -30,14 +31,14 @@ PATCH /servicePrincipals/{id}/appRoleAssignedTo
 PATCH /groups/{id}/appRoleAssignments/{id}
 ```
 ## <a name="request-headers"></a>要求ヘッダー
-| 名前       | 型 | 説明|
+| 名前       | 種類 | 説明|
 |:-----------|:------|:----------|
 | Authorization  | string  | ベアラー {トークン}。必須。 |
 
 ## <a name="request-body"></a>要求本文
 要求本文で、更新する関連フィールドの値を指定します。要求本文に含まれない既存のプロパティは、以前の値のままになるか、他のプロパティ値の変化に基づいて再計算されます。最適なパフォーマンスを得るためには、変更されていない既存の値を含めないでください。
 
-| プロパティ     | 型   |説明|
+| プロパティ     | 種類   |説明|
 |:---------------|:--------|:----------|
 |creationTimestamp|DateTimeOffset|交付が作成された時刻。|
 |ID|Guid|プリンシパルに割り当てられたロールの id です。  この役割は、 **appRoles**プロパティにターゲットのリソース アプリケーション**引数 resourceId**で宣言されなければなりません。 リソースですべてのアクセス許可が宣言されていない場合は、デフォルトの id (GUID は 0) を指定してください。                            **注**: Null は許容されません。            |

@@ -1,12 +1,13 @@
 ---
 title: アクティビティ フィードの REST API を使用します。
 description: 'Graph API のフィード アクティビティを使用するにはデバイスやプラットフォーム間でユーザーの actiity を再開します。 アクティビティ フィードの API 要求は、委任されたアクセス許可とユーザーのアクティビティ権限、個人または仕事や学校のアカウントで使用できるユーザーの代わりに実行されます。 '
-ms.openlocfilehash: 25b7af22671256a6dd48536a7da232f16251184f
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 2c6da0e93b24914b5ca443b0b3617c04001a58dc
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27020698"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27811824"
 ---
 # <a name="use-the-activity-feed-rest-api"></a>アクティビティ フィードの REST API を使用します。
 
@@ -57,11 +58,12 @@ Each activity represents a unique...
 ## Common use cases 
 -->
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 - [アクティビティのリソース](https://developer.microsoft.com/graph/docs/api-reference/v1.0/resources/projectrome_activity)を参照してくださいし、の重要なタスクを再開するユーザーを支援するアプリのアクティビティを定義します。
 - 活動**pop**にするアイデアの[アダプティブ ・ カードのサンプル](https://adaptivecards.io/samples/)のサンプルを表示します。  
-- [Graph エクスプローラー](https://developer.microsoft.com/graph/graph-explorer)で API をお試しください。
+- 
+  [Graph エクスプローラー](https://developer.microsoft.com/graph/graph-explorer)で API をお試しください。
 
 **詳細については調べていますか。** 
 

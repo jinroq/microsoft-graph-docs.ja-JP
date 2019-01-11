@@ -2,12 +2,13 @@
 title: windows81TrustedRootCertificate リソースの種類
 description: Windows 8.1 の信頼された証明書の構成プロファイル
 author: tfitzmac
-ms.openlocfilehash: 91c741ef1366bb8990db8a3cf5789cdf5ef7820e
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 52380091787470247545954e7561739a13ee8ef4
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27339488"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27810515"
 ---
 # <a name="windows81trustedrootcertificate-resource-type"></a>windows81TrustedRootCertificate リソースの種類
 
@@ -28,7 +29,7 @@ Windows 8.1 の信頼された証明書の構成プロファイル
 |[Windows81TrustedRootCertificate を削除します。](../api/intune-deviceconfig-windows81trustedrootcertificate-delete.md)|なし|の[windows81TrustedRootCertificate](../resources/intune-deviceconfig-windows81trustedrootcertificate.md)を削除します。|
 |[Windows81TrustedRootCertificate を更新します。](../api/intune-deviceconfig-windows81trustedrootcertificate-update.md)|[windows81TrustedRootCertificate](../resources/intune-deviceconfig-windows81trustedrootcertificate.md)|[Windows81TrustedRootCertificate](../resources/intune-deviceconfig-windows81trustedrootcertificate.md)オブジェクトのプロパティを更新します。|
 
-## <a name="properties"></a>Properties
+## <a name="properties"></a>プロパティ
 |プロパティ|種類|説明|
 |:---|:---|:---|
 |ID|String|エンティティのキー。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|

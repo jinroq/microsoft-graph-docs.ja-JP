@@ -2,12 +2,13 @@
 title: リスト androidDeviceOwnerWiFiConfigurations
 description: AndroidDeviceOwnerWiFiConfiguration オブジェクトのプロパティと関係を一覧表示します。
 author: tfitzmac
-ms.openlocfilehash: 5fd46f7f2de0477c94d7e5afe042bf7a891dc4e9
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: ed61bcd56c7a6c5307bd398385c7e53ce77cb4c6
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27312797"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27809451"
 ---
 # <a name="list-androiddeviceownerwificonfigurations"></a>リスト androidDeviceOwnerWiFiConfigurations
 

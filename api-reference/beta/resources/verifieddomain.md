@@ -1,12 +1,13 @@
 ---
 title: verifiedDomain リソースの種類
 description: テナントのドメインを指定します。組織 エンティティの **VerifiedDomains** プロパティは、**VerifiedDomain** のコレクションです。
-ms.openlocfilehash: 810b5fea0fbaf82eeb452c0f5c6032679590ff49
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: d912103f95677491d88bcb3f0b556bb1678c3049
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27071765"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27810445"
 ---
 # <a name="verifieddomain-resource-type"></a>verifiedDomain リソースの種類
 
@@ -16,7 +17,7 @@ ms.locfileid: "27071765"
 
 
 ## <a name="properties"></a>プロパティ
-| プロパティ     | 型   |説明|
+| プロパティ     | 種類   |説明|
 |:---------------|:--------|:----------|
 |capabilities|String|「電子メール」、「OfficeCommunicationsOnline」など。|
 |isDefault|Boolean|                これがテナントに関連付けられている既定のドメインの場合は **true**、それ以外の場合は **false**。            |

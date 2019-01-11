@@ -1,12 +1,13 @@
 ---
 title: daylightTimeZoneOffset リソースの種類
 description: タイム ゾーンが標準時から夏時間に切り替わるタイミングを指定します。
-ms.openlocfilehash: bab5be49e88de1c71c7d13f53c15158e4a253a6a
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 740b6da9a934c1a30a382d46e64377f9a73ffaa1
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27020198"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27811586"
 ---
 # <a name="daylighttimezoneoffset-resource-type"></a>daylightTimeZoneOffset リソースの種類
 
@@ -23,7 +24,7 @@ ms.locfileid: "27020198"
 
 
 ## <a name="properties"></a>プロパティ
-| プロパティ     | 型   |説明|
+| プロパティ     | 種類   |説明|
 |:---------------|:--------|:----------|
 | daylightBias | Edm.Int32 | 夏時間の協定世界時 (UTC) からの時間オフセットです。 この値は分単位です。  |
 | dayOccurrence | Edm.Int32 | 標準時から夏時間への切り替えが月の何番目の曜日に行われるかを表します。 |

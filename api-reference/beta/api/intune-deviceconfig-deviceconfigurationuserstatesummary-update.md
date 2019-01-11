@@ -2,12 +2,13 @@
 title: DeviceConfigurationUserStateSummary を更新します。
 description: DeviceConfigurationUserStateSummary オブジェクトのプロパティを更新します。
 author: tfitzmac
-ms.openlocfilehash: a11c4447fee84116b68416ba78f610e8067a6104
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 36d9065e906a7a4da9f61b30cc4588e494389401
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27301569"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27812755"
 ---
 # <a name="update-deviceconfigurationuserstatesummary"></a>DeviceConfigurationUserStateSummary を更新します。
 

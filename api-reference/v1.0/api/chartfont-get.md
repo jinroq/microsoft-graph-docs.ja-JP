@@ -2,12 +2,13 @@
 title: Get ChartFont
 description: chartfont オブジェクトのプロパティと関係を取得します。
 author: lumine2008
-ms.openlocfilehash: 4cb305da907b210be8a48efe66c0253074e07068
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 3a0b3e401770a87a94a61667c67fd67b86884211
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27360257"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27810522"
 ---
 # <a name="get-chartfont"></a>Get ChartFont
 

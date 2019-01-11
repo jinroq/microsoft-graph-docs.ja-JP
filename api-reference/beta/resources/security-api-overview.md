@@ -1,14 +1,15 @@
 ---
-title: Graph セキュリティ API を使用します。
+title: Microsoft Graph セキュリティ API を使用する
 description: " > **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。"
-ms.openlocfilehash: dff91665fc288bf1714d1975f3ec2e109f576530
-ms.sourcegitcommit: 4aebfaefc23e02a98b2fec35958cd2110020f15f
+localization_priority: Priority
+ms.openlocfilehash: be07bf3bbc2c09efc4ed9e918e6b8296fcf0ff37
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/06/2018
-ms.locfileid: "27184533"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27811922"
 ---
-# <a name="use-the-microsoft-graph-security-api"></a>Graph セキュリティ API を使用します。
+# <a name="use-the-microsoft-graph-security-api"></a>Microsoft Graph セキュリティ API を使用する
 
  > **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。
 
@@ -62,7 +63,8 @@ Microsoft グラフ セキュリティ API を使用するための最も一般�
 Microsoft グラフ セキュリティ API は、Microsoft およびパートナーからのさまざまなセキュリティ ソリューションと連携するための新しい方法を開くことができます。 開始する次の手順に従います。
 
 - [アラート](alert.md)にドリル ・ ダウンし、 [secureScore](securescores.md) (プレビュー)、 [secureScoreControlProfiles](securescorecontrolprofiles.md) (プレビュー)。
-- [Graph エクスプローラー](https://developer.microsoft.com/graph/graph-explorer)で API をお試しください。 [**サンプル クエリ**] は、**多くのサンプルを表示する**を選択し、セキュリティ カテゴリを**オン**に設定します。
+- 
+  [Graph エクスプローラー](https://developer.microsoft.com/graph/graph-explorer)で API をお試しください。 [**サンプル クエリ**] は、**多くのサンプルを表示する**を選択し、セキュリティ カテゴリを**オン**に設定します。
 - エンティティの変更[をサブスクライブして、受信通知](/graph/webhooks)を実行してください。
 
 さらに情報が必要な場合「[パートナーによる Microsoft Graph の活用方法](https://developer.microsoft.com/graph/graph/examples#partners)」を参照してください。

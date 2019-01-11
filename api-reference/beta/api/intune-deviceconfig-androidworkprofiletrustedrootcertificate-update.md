@@ -2,12 +2,13 @@
 title: AndroidWorkProfileTrustedRootCertificate を更新します。
 description: AndroidWorkProfileTrustedRootCertificate オブジェクトのプロパティを更新します。
 author: tfitzmac
-ms.openlocfilehash: 1078a0724908c7b28845303a1392f19c27ab9a42
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: abf730ed938ff3db514de7502f7c5a571febdef3
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27341294"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27812474"
 ---
 # <a name="update-androidworkprofiletrustedrootcertificate"></a>AndroidWorkProfileTrustedRootCertificate を更新します。
 

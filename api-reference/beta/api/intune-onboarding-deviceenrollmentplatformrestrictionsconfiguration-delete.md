@@ -2,12 +2,13 @@
 title: deviceEnrollmentPlatformRestrictionsConfiguration の削除
 description: deviceEnrollmentPlatformRestrictionsConfiguration を削除します。
 author: tfitzmac
-ms.openlocfilehash: 730436a4e04b4ccb9480d712e99cb538ff5149ba
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: d4d433d2a9a616f1de07504d0af560de01143316
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27329506"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27809423"
 ---
 # <a name="delete-deviceenrollmentplatformrestrictionsconfiguration"></a>deviceEnrollmentPlatformRestrictionsConfiguration の削除
 

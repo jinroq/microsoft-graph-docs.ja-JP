@@ -2,12 +2,13 @@
 title: ChartPoint リソースの種類
 description: グラフの系列のポイントを表します。
 author: lumine2008
-ms.openlocfilehash: b2d1fab0c76100aae1a5606690772a0aa3854f42
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 245d6cf538488c567df00129deb9b594ff22018a
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27316227"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27811705"
 ---
 # <a name="chartpoint-resource-type"></a>ChartPoint リソースの種類
 
@@ -26,7 +27,7 @@ ms.locfileid: "27316227"
 | プロパティ     | 種類   |説明|
 |:---------------|:--------|:----------|
 |value|Json|グラフのポイントの値を返します。値の取得のみ可能です。|
-|ID|string|一意識別子|
+|ID|文字列|一意識別子|
 
 ## <a name="relationships"></a>リレーションシップ
 | リレーションシップ | 型   |説明|

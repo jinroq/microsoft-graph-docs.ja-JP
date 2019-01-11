@@ -1,12 +1,13 @@
 ---
 title: 招待マネージャー
 description: '招待マネージャーを使用して、組織に外部ユーザーを追加するための招待状を作成します。 '
-ms.openlocfilehash: 3f179df6c11dfc815ffbfc42c39aae5407a66a93
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: ffe09e5043b60b01728d497b88034b289bdc5131
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27066273"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27811243"
 ---
 # <a name="invitation-manager"></a>招待マネージャー
 
@@ -30,7 +31,7 @@ ms.locfileid: "27066273"
 |[招待状の作成](../api/invitation-post.md) | invitation | 招待状オブジェクトのプロパティと関係を書き込みます。|
 
 ## <a name="properties"></a>プロパティ
-| プロパティ     | 型   |説明|
+| プロパティ     | 種類   |説明|
 |:---------------|:--------|:----------|
 |invitedUserDisplayName|String|招待されるユーザーの表示名。|
 |invitedUserEmailAddress|String|招待されるユーザーのメール アドレス。必須。|

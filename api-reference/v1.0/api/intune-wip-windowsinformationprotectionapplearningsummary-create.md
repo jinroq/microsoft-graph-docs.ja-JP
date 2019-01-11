@@ -2,12 +2,13 @@
 title: windowsInformationProtectionAppLearningSummary の作成
 description: 新しい windowsInformationProtectionAppLearningSummary オブジェクトを作成します。
 author: tfitzmac
-ms.openlocfilehash: fdcf4be10f26036c06f4cfd0a67f98601c296ec7
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 498b6da245cbf805ef4c106447f73e56837a43e9
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27354300"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27810557"
 ---
 # <a name="create-windowsinformationprotectionapplearningsummary"></a>windowsInformationProtectionAppLearningSummary の作成
 

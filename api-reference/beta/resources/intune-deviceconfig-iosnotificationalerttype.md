@@ -2,12 +2,13 @@
 title: iosNotificationAlertType 列挙型
 description: 通知の設定の警告の種類。
 author: tfitzmac
-ms.openlocfilehash: 4f2321515cc243edc9c14a79bb90713b124d16e5
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 6286d2016428f2146ab9b9e123b5bceaa153f27f
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27347258"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27810599"
 ---
 # <a name="iosnotificationalerttype-enum-type"></a>iosNotificationAlertType 列挙型
 

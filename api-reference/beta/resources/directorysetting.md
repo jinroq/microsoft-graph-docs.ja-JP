@@ -1,12 +1,13 @@
 ---
 title: directorySetting リソースの種類
 description: ディレクトリの設定は、使用可能な directorySettingTemplates を基に作成し、事前に設定された既定値から変更できます。 これらの設定には、エンティティまたは機能の動作、テナント全体のレベルまたは特定のエンティティ レベルの両方を管理できます。 テナント全体、特定のエンティティ レベルの両方で同じ設定が定義されると、特定のエンティティ レベルの設定可能性があります脱退テナント全体の設定から。  たとえば、テナント全体の設定は、グループの既存のメンバーから招待されるには、来園者を許可する可能性がありますが、特定のグループの設定可能性があります脱退グループのメンバーから招待されるには、来園者を許可しません。 現在定義されているシステムの設定は Office グループの動作を制御するだけ。
-ms.openlocfilehash: 4a807d22bfd5d6651b4064542d33fe285b637a3f
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 2687df732896abfb8ecf3b0651682228b84fa17b
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27070117"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27810139"
 ---
 # <a name="directorysetting-resource-type"></a>directorySetting リソースの種類
 
@@ -27,9 +28,9 @@ ms.locfileid: "27070117"
 |[設定を削除する](../api/directorysetting-delete.md) | なし |設定オブジェクトを削除します。 |
 
 ## <a name="properties"></a>プロパティ
-| プロパティ     | 型   |説明|
+| プロパティ     | 種類   |説明|
 |:---------------|:--------|:----------|
-|displayName|string|関連するテンプレートに由来する設定グループの名前を表示します。 読み取り専用。|
+|displayName|string|関連するテンプレートに由来する設定グループの名前を表示します。 読み取り専用です。|
 |ID|文字列| 設定の一意識別子です。読み取り専用です。|
 |templateId|文字列| 設定グループの作成に使用されるテンプレートの一意識別子です。読み取り専用です。|
 |値|[settingValue](settingvalue.md) コレクション| 名前と値の組のコレクションです。テンプレートに定義されているすべての設定を含める必要があります。|

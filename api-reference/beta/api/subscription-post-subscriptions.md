@@ -1,12 +1,13 @@
 ---
 title: サブスクリプションを作成する
 description: Graph リソース上のデータが変更されたときに通知を受信するリスナー アプリケーションをサブスクライブします。
-ms.openlocfilehash: f524213871f8a9216ad7f7ec8da4ffb521a4a2aa
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 5b7f465e556d1fb752bcb2d3c962fd6444d462c5
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27073984"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27805055"
 ---
 # <a name="create-subscription"></a>サブスクリプションを作成する
 
@@ -24,8 +25,8 @@ Graph リソース上のデータが変更されたときに通知を受信す�
 | スレッド               | Group.Read.All      |
 | イベント                      | Calendars.Read      |
 | メッセージ                    | Mail.Read           |
-| Groups                      | Group.Read.All      |
-| Users                       | User.Read.All       |
+| グループ                      | Group.Read.All      |
+| ユーザー                       | User.Read.All       |
 | ドライブ (ユーザーの OneDrive)    | Files.ReadWrite     |
 | ドライブ (共有、SharePoint コンテンツおよびドライブ) | Files.ReadWrite.All |
 | セキュリティの警告              | SecurityEvents.ReadWrite.All |
@@ -42,7 +43,7 @@ POST /subscriptions
 
 ## <a name="request-headers"></a>要求ヘッダー
 
-| 名前       | 型 | 説明|
+| 名前       | 種類 | 説明|
 |:-----------|:------|:----------|
 | Authorization  | string  | ベアラー {トークン}。必須。 |
 
@@ -83,8 +84,8 @@ Content-type: application/json
 |メール|me/mailfolders('inbox')/messages<br />me/messages|
 |連絡先|me/contacts|
 |カレンダー|me/events|
-|Users|users|
-|Groups|グループ|
+|ユーザー|users|
+|グループ|グループ|
 |会話|groups('*{id}*')/conversations|
 |ドライブ|me/drive/root|
 |セキュリティの警告|セキュリティと警告? $filter eq のステータスを 'New' =|

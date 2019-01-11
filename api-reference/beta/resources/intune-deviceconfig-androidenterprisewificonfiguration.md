@@ -2,12 +2,13 @@
 title: androidEnterpriseWiFiConfiguration リソースの種類
 description: このプロファイルの構成を提供することによって必要な Wi-fi のエンドポイントに接続するための Android デバイスに指示できます。 指定する認証方法とセキュリティの種類必要 Wi-fi エンドポイントで行うことができます Wi-fi 接続シームレスなエンド ・ ユーザーのです。
 author: tfitzmac
-ms.openlocfilehash: ae1fbb63a87280c7c46b9c62da102d58064bcc56
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: bdb2fd80c37ef7662801473bea53c1af6fbac363
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27354601"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27805902"
 ---
 # <a name="androidenterprisewificonfiguration-resource-type"></a>androidEnterpriseWiFiConfiguration リソースの種類
 
@@ -28,7 +29,7 @@ ms.locfileid: "27354601"
 |[AndroidEnterpriseWiFiConfiguration を削除します。](../api/intune-deviceconfig-androidenterprisewificonfiguration-delete.md)|なし|の[androidEnterpriseWiFiConfiguration](../resources/intune-deviceconfig-androidenterprisewificonfiguration.md)を削除します。|
 |[AndroidEnterpriseWiFiConfiguration を更新します。](../api/intune-deviceconfig-androidenterprisewificonfiguration-update.md)|[androidEnterpriseWiFiConfiguration](../resources/intune-deviceconfig-androidenterprisewificonfiguration.md)|[AndroidEnterpriseWiFiConfiguration](../resources/intune-deviceconfig-androidenterprisewificonfiguration.md)オブジェクトのプロパティを更新します。|
 
-## <a name="properties"></a>Properties
+## <a name="properties"></a>プロパティ
 |プロパティ|種類|説明|
 |:---|:---|:---|
 |ID|String|エンティティのキー。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|

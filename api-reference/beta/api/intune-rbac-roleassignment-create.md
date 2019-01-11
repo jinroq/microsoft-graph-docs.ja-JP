@@ -2,12 +2,13 @@
 title: roleAssignment の作成
 description: 新しい roleAssignment オブジェクトを作成します。
 author: tfitzmac
-ms.openlocfilehash: bf255b0d2c077cbba2e34e81d9730e51c4f5d813
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 486aaf7a47631f99c86150e08c8672f513e04337
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27359746"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27806679"
 ---
 # <a name="create-roleassignment"></a>roleAssignment の作成
 

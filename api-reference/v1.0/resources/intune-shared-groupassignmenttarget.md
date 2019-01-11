@@ -2,12 +2,13 @@
 title: groupAssignmentTarget リソースの種類
 description: グループへの割り当てを表します。
 author: tfitzmac
-ms.openlocfilehash: 6dbcb5cd55fcddd22fdf205d7fc8fc50e6b397c4
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 7218fc69564ea08a7302cfb0af7856360cd9a330
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27319797"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27809045"
 ---
 # <a name="groupassignmenttarget-resource-type"></a>groupAssignmentTarget リソースの種類
 

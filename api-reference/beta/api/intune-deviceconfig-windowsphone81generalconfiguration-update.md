@@ -2,12 +2,13 @@
 title: Update windowsPhone81GeneralConfiguration
 description: windowsPhone81GeneralConfiguration オブジェクトのプロパティを更新します。
 author: tfitzmac
-ms.openlocfilehash: a83c0432a524b8deb89c9ae05739fe52c7a6b974
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 2f839c6f0e6d622044d2ca926f2613964b778198
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27343004"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27812097"
 ---
 # <a name="update-windowsphone81generalconfiguration"></a>Update windowsPhone81GeneralConfiguration
 

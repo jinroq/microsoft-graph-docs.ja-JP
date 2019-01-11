@@ -2,12 +2,13 @@
 title: Create androidManagedAppProtection
 description: 新しい androidManagedAppProtection オブジェクトを作成します。
 author: tfitzmac
-ms.openlocfilehash: f0b525fb9830963ca6ec0f07944d0378a5114344
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 66918bce06e4afc4cad3b12a8b534d196b95d01c
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27334616"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27805912"
 ---
 # <a name="create-androidmanagedappprotection"></a>Create androidManagedAppProtection
 

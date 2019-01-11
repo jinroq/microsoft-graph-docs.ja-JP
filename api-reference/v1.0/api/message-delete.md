@@ -1,12 +1,13 @@
 ---
 title: メッセージを削除する
 description: 指定したユーザーのメールボックス内のメッセージを削除または、メッセージの関連付けを削除します。
-ms.openlocfilehash: 5bfcb57f3f9c82f79147c30c982f59172e48b51f
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: a88a5699d7f5243f8a48d98f71a36aeaa316e388
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27023301"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27809353"
 ---
 # <a name="delete-message"></a>メッセージを削除する
 
@@ -32,7 +33,7 @@ DELETE /me/mailFolders/{id}/messages/{id}
 DELETE /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}
 ```
 ## <a name="request-headers"></a>要求ヘッダー
-| 名前       | 型 | 説明|
+| 名前       | 種類 | 説明|
 |:---------------|:--------|:----------|
 | Authorization  | string  | ベアラー {トークン}。必須。 |
 

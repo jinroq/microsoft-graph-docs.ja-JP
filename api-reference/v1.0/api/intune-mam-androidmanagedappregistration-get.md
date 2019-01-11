@@ -2,12 +2,13 @@
 title: Get androidManagedAppRegistration
 description: androidManagedAppRegistration オブジェクトのプロパティとリレーションシップを読み取ります。
 author: tfitzmac
-ms.openlocfilehash: 659c90b92a82da4e12b48679bcf33493ba5d6292
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 0d1d2bfc1f55ac90335cb9f37a03474a469b372f
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27317585"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27809535"
 ---
 # <a name="get-androidmanagedappregistration"></a>Get androidManagedAppRegistration
 

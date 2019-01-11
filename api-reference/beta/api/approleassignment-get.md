@@ -1,12 +1,13 @@
 ---
 title: AppRoleAssignment を取得します。
 description: プロパティと approleassignment オブジェクトの関係を取得します。
-ms.openlocfilehash: f61ea33a2625b06d4e121429946fa87d3acfecb6
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Priority
+ms.openlocfilehash: 465ef0365bee8c1dd002fa423232cc615fc45635
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27067992"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27809661"
 ---
 # <a name="get-approleassignment"></a>AppRoleAssignment を取得します。
 
@@ -33,7 +34,7 @@ GET /groups/{id}/appRoleAssignments/{id}
 このメソッドは、応答をカスタマイズするための [OData クエリ パラメーター](https://developer.microsoft.com/graph/docs/concepts/query_parameters)をサポートします。
 
 ## <a name="request-headers"></a>要求ヘッダー
-| 名前       | 型 | 説明|
+| 名前       | 種類 | 説明|
 |:-----------|:------|:----------|
 | Authorization  | string  | ベアラー {トークン}。必須。 |
 

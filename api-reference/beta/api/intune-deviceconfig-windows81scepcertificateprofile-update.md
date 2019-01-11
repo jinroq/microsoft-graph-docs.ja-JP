@@ -2,12 +2,13 @@
 title: Windows81SCEPCertificateProfile を更新します。
 description: Windows81SCEPCertificateProfile オブジェクトのプロパティを更新します。
 author: tfitzmac
-ms.openlocfilehash: 39571d85a1eb7d9a2d5d0a18f178fb2cb1be7e02
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 1f39c9571db6834abfcaa221eda2269c02a3ee4a
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27338221"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27809395"
 ---
 # <a name="update-windows81scepcertificateprofile"></a>Windows81SCEPCertificateProfile を更新します。
 

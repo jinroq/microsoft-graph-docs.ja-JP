@@ -2,12 +2,13 @@
 title: deviceConfigurationTargetedUserAndDevice リソースの種類
 description: 競合デバイスの構成のポリシーのセットの概要です。
 author: tfitzmac
-ms.openlocfilehash: 04b0e31d0f3f099389e4901eb654139d286f4bd8
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 46355f78f23060ecc901c3f98f0e3f7d13101d1e
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27345242"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27809626"
 ---
 # <a name="deviceconfigurationtargeteduseranddevice-resource-type"></a>deviceConfigurationTargetedUserAndDevice リソースの種類
 
@@ -16,7 +17,7 @@ ms.locfileid: "27345242"
 > **注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
 
 競合デバイスの構成のポリシーのセットの概要です。
-## <a name="properties"></a>Properties
+## <a name="properties"></a>プロパティ
 |プロパティ|種類|説明|
 |:---|:---|:---|
 |deviceId|String|チェックインで、デバイスの id です。|

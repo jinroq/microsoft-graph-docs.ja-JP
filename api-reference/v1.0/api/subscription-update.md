@@ -1,12 +1,13 @@
 ---
 title: サブスクリプションを更新する
 description: サブスクリプションを更新するには、サブスクリプションの有効期限を延長します。
-ms.openlocfilehash: 75b01a72310f9e9d227f4d185d13f6ee7dfdf835
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: f0804421c2e178d176975317ba82bb0aac0ae212
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27021304"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27809717"
 ---
 # <a name="update-subscription"></a>サブスクリプションを更新する
 
@@ -24,8 +25,8 @@ ms.locfileid: "27021304"
 | スレッド               | Group.Read.All      |
 | イベント                      | Calendars.Read      |
 | メッセージ                    | Mail.Read           |
-| Groups                      | Group.Read.All      |
-| Users                       | User.Read.All       |
+| グループ                      | Group.Read.All      |
+| ユーザー                       | User.Read.All       |
 | ドライブ (ユーザーの OneDrive)    | Files.ReadWrite     |
 | ドライブ (共有、SharePoint コンテンツおよびドライブ) | Files.ReadWrite.All |
 |セキュリティの警告| SecurityEvents.ReadWrite.All |
@@ -40,7 +41,7 @@ PATCH /subscriptions/{id}
 
 ## <a name="request-headers"></a>要求ヘッダー
 
-| 名前       | 型 | 説明|
+| 名前       | 種類 | 説明|
 |:-----------|:------|:----------|
 | Authorization  | string  | ベアラー {トークン}。必須。 |
 

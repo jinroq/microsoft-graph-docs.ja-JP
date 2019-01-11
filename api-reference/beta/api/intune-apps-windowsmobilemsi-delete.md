@@ -2,12 +2,13 @@
 title: Delete windowsMobileMSI
 description: windowsMobileMSI を削除します。
 author: tfitzmac
-ms.openlocfilehash: cb88ea22f0f9d5e8aa6205c2827f1bc1eb646f97
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: f44e1811c0391be194151159a00dae5aad67ebb1
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27333685"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27808744"
 ---
 # <a name="delete-windowsmobilemsi"></a>Delete windowsMobileMSI
 

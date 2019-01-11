@@ -2,12 +2,13 @@
 title: mobileAppAssignments のリスト
 description: mobileAppAssignment オブジェクトのプロパティとリレーションシップをリストします。
 author: tfitzmac
-ms.openlocfilehash: f4cac347aec66a6b41e260941b72cd71514e4a95
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: fa626e56cea6bae1cb43a8e607ecc3701a17946e
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27318019"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27811278"
 ---
 # <a name="list-mobileappassignments"></a>mobileAppAssignments のリスト
 

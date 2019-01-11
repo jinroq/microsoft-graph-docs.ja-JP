@@ -2,12 +2,13 @@
 title: webApps のリスト
 description: webApp オブジェクトのプロパティとリレーションシップをリストします。
 author: tfitzmac
-ms.openlocfilehash: 8170786b5bd3bf8af5276c40674a8e7e8d8bf664
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 9cad99ae50f1181d88caa9ac6b416ebce5b920a3
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27328323"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27811189"
 ---
 # <a name="list-webapps"></a>webApps のリスト
 

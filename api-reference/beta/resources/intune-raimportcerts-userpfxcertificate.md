@@ -1,12 +1,13 @@
 ---
 title: userPFXCertificate リソースの種類
 description: PFX 証明書のユーザーのために必要なすべての情報をカプセル化するエンティティです。
-ms.openlocfilehash: 89040cafa976c88ce84cb8f73bc8a68e2cdfbdf2
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 87516c48e53c8117c9efa119fb6cab62844e6b68
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27070921"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27809997"
 ---
 # <a name="userpfxcertificate-resource-type"></a>userPFXCertificate リソースの種類
 
@@ -25,9 +26,9 @@ PFX 証明書のユーザーのために必要なすべての情報をカプセ�
 |[UserPFXCertificate を更新します。](../api/intune-raimportcerts-userpfxcertificate-update.md)|[userPFXCertificate](../resources/intune-raimportcerts-userpfxcertificate.md)|[UserPFXCertificate](../resources/intune-raimportcerts-userpfxcertificate.md)オブジェクトのプロパティを更新します。|
 
 ## <a name="properties"></a>プロパティ
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
-|id|String|PFX 証明書の一意の識別子です。|
+|ID|String|PFX 証明書の一意の識別子です。|
 |拇印|String|PFX 証明書の拇印を sha-1 です。|
 |intendedPurpose|[userPfxIntendedPurpose](../resources/intune-raimportcerts-userpfxintendedpurpose.md)|証明書からのポイントからのビューの展開の目的のものです。 可能な値は、`unassigned`、`smimeEncryption`、`smimeSigning`、`vpn`、`wifi` です。|
 |userPrincipalName|String|PFX 証明書のユーザー プリンシパル名です。|
@@ -36,7 +37,7 @@ PFX 証明書のユーザーのために必要なすべての情報をカプセ�
 |プロバイダー|String|暗号サービス プロバイダーがこの blob の暗号化に使用します。|
 |キー名|String|(プロバイダー) 内のキーの名前が blob の暗号化に使用します。|
 |paddingScheme|[userPfxPaddingScheme](../resources/intune-raimportcerts-userpfxpaddingscheme.md)|暗号化/復号化中に、プロバイダーによって使用されるスキームをパディングします。 使用可能な値: `none`、`pkcs1`、`oaepSha1`、`oaepSha256`、`oaepSha384`、`oaepSha512`。|
-|encryptedPfxBlob|バイナリ|PFX の暗号化された blob です。|
+|encryptedPfxBlob|Binary|PFX の暗号化された blob です。|
 |encryptedPfxPassword|String|PFX パスワードを暗号化します。|
 |createdDateTime|DateTimeOffset|PFX 証明書がインポートされたときに、日付と時刻。|
 |lastModifiedDateTime|DateTimeOffset|PFX 証明書が最後に修正された日時です。|

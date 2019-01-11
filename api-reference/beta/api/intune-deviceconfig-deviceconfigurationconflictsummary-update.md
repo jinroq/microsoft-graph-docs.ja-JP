@@ -2,12 +2,13 @@
 title: DeviceConfigurationConflictSummary を更新します。
 description: DeviceConfigurationConflictSummary オブジェクトのプロパティを更新します。
 author: tfitzmac
-ms.openlocfilehash: 46290062b73a13cad575535cf28cb073f3a952be
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 4fb01b5fe7321d25e6b1d7e346a029e830375247
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27311502"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27812762"
 ---
 # <a name="update-deviceconfigurationconflictsummary"></a>DeviceConfigurationConflictSummary を更新します。
 

@@ -2,12 +2,13 @@
 title: deviceAndAppManagementRoleDefinition の更新
 description: deviceAndAppManagementRoleDefinition オブジェクトのプロパティを更新します。
 author: tfitzmac
-ms.openlocfilehash: ee118a2593a968557f8ccf9103d6f50af014a491
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: f11266051e85e92d10eecded661f69c40626776b
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27362805"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27809336"
 ---
 # <a name="update-deviceandappmanagementroledefinition"></a>deviceAndAppManagementRoleDefinition の更新
 

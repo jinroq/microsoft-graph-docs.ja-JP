@@ -2,12 +2,13 @@
 title: windows81GeneralConfigurations のリスト
 description: windows81GeneralConfiguration オブジェクトのプロパティとリレーションシップをリストします。
 author: tfitzmac
-ms.openlocfilehash: 2a208d0d487d96b6c82af67df4dbc830b45e127d
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 9168fad91d1e69536cdfbd424647c4621077a169
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27349666"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27809416"
 ---
 # <a name="list-windows81generalconfigurations"></a>windows81GeneralConfigurations のリスト
 

@@ -2,12 +2,13 @@
 title: androidForWorkImportedPFXCertificateProfile リソースの種類
 description: Android 作業 PFX インポート用の証明書プロファイル
 author: tfitzmac
-ms.openlocfilehash: d12f7324e1229ed8c8a280f1df90f6f9c60ff464
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 9ba8f7a1e792273fbc821ed243e0e8cec96bd8de
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27356946"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27810060"
 ---
 # <a name="androidforworkimportedpfxcertificateprofile-resource-type"></a>androidForWorkImportedPFXCertificateProfile リソースの種類
 
@@ -28,7 +29,7 @@ Android 作業 PFX インポート用の証明書プロファイル
 |[AndroidForWorkImportedPFXCertificateProfile を削除します。](../api/intune-deviceconfig-androidforworkimportedpfxcertificateprofile-delete.md)|なし|の[androidForWorkImportedPFXCertificateProfile](../resources/intune-deviceconfig-androidforworkimportedpfxcertificateprofile.md)を削除します。|
 |[AndroidForWorkImportedPFXCertificateProfile を更新します。](../api/intune-deviceconfig-androidforworkimportedpfxcertificateprofile-update.md)|[androidForWorkImportedPFXCertificateProfile](../resources/intune-deviceconfig-androidforworkimportedpfxcertificateprofile.md)|[AndroidForWorkImportedPFXCertificateProfile](../resources/intune-deviceconfig-androidforworkimportedpfxcertificateprofile.md)オブジェクトのプロパティを更新します。|
 
-## <a name="properties"></a>Properties
+## <a name="properties"></a>プロパティ
 |プロパティ|種類|説明|
 |:---|:---|:---|
 |ID|String|エンティティのキー。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|

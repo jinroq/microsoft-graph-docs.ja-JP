@@ -2,12 +2,13 @@
 title: Microsoft Intune で会社のアプリ データを保護する方法
 description: Microsoft Intune のアプリ保護ポリシーは、会社のデータを保護し、データの損失を防ぐのに役立ちます。
 author: tfitzmac
-ms.openlocfilehash: d50b86b8ef1afe1cc6ddec125b3679c605979c88
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 03b0db7a2bc2b79edf0156939b9ddb8e89f84dbd
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27340321"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27810046"
 ---
 # <a name="how-to-protect-your-company-app-data-with-microsoft-intune"></a>Microsoft Intune で会社のアプリ データを保護する方法
 

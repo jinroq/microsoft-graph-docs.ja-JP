@@ -1,12 +1,13 @@
 ---
 title: customTimeZone リソースの種類
 description: 標準時から夏時間またはその逆への切り替えが標準となっていないタイム ゾーンを表します。
-ms.openlocfilehash: 36d497e3e6ad52ca5a59f4bc322410ee271e73bf
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 7d43de045b99a1163ae8fc74e40d659d10cabe63
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27021532"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27806525"
 ---
 # <a name="customtimezone-resource-type"></a>customTimeZone リソースの種類
 
@@ -14,7 +15,7 @@ ms.locfileid: "27021532"
 
 
 ## <a name="properties"></a>プロパティ
-| プロパティ     | 型   |説明|
+| プロパティ     | 種類   |説明|
 |:---------------|:--------|:----------|
 | bias | Edm.Int32 | タイム ゾーンの協定世界時 (UTC) からの時間オフセットです。 この値は分単位です。UTC より時間が進んでいるタイム　ゾーンには正のオフセット、UTC より時間が遅れているタイム ゾーンには負のオフセットを設定します。|
 | daylightOffset | [daylightTimeZoneOffset](daylighttimezoneoffset.md) | タイム ゾーンが標準時から夏時間に切り替わるタイミングを指定します。 |

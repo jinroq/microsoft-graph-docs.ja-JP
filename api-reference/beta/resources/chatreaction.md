@@ -1,12 +1,13 @@
 ---
 title: chatMessageReaction リソースの種類
 description: 'ChatMessage エンティティへの対応を表します。 '
-ms.openlocfilehash: 1ad1f7948405a8891ec9aa13065b71108e9c47c5
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 5020653ef02c1604aece46f3ff2c7ea1c82a75ec
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27074185"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27810067"
 ---
 # <a name="chatmessagereaction-resource-type"></a>chatMessageReaction リソースの種類
 
@@ -15,7 +16,7 @@ ms.locfileid: "27074185"
 エンティティの種類の`chatMessageReaction` [chatMessage](chatmessage.md)エンティティの一部として、[チャネルのメッセージを取得する](../api/channel-get-message.md)API の一部として返されます。
 
 ## <a name="properties"></a>プロパティ
-| プロパティ     | 型   |説明|
+| プロパティ     | 種類   |説明|
 |:---------------|:--------|:----------|
 |reactionType|文字列| 反応の型。 計画値は次のとおりです。 <br><ul><li>-のようなメッセージのようなコンテンツは空白でもです。</li><li>Emoji の Emoji の反力です。 コンテンツは、絵文字の unicode 値に設定されています。</li><li>ラベルの内容は、ラベル内の文字列に設定されます。</li></ul>|
 |createdDateTime|dateTimeOffset|ISO 8601 形式のメッセージ ルートの utc 形式のタイムスタンプです。|

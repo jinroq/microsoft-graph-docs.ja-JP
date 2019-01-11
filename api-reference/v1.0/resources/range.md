@@ -1,12 +1,13 @@
 ---
 title: 範囲リソースの種類
 description: 範囲は、1 つ以上の隣接するセル (セル、行、列、セルのブロックなど) のセットを表します。
-ms.openlocfilehash: d0b46587379383350fd6714b3c532dc191b641fa
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Priority
+ms.openlocfilehash: 65cbea6b0e025d5d4d574ebf1db3b924e042f497
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27023392"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27806539"
 ---
 # <a name="range-resource-type"></a>範囲リソースの種類
 
@@ -17,34 +18,34 @@ ms.locfileid: "27023392"
 
 | メソッド           | 戻り値の型    |説明|
 |:---------------|:--------|:----------|
-|[範囲を取得する](../api/range-get.md) | [印刷範囲](range.md) |範囲オブジェクトのプロパティと関係を読み取ります。|
-|[Update](../api/range-update.md) | [印刷範囲](range.md)   |範囲オブジェクトを更新します。 |
+|[範囲を取得する](../api/range-get.md) | [Range](range.md) |範囲オブジェクトのプロパティと関係を読み取ります。|
+|[Update](../api/range-update.md) | [Range](range.md)   |範囲オブジェクトを更新します。 |
 |[Boundingrect](../api/range-boundingrect.md)|[Range](range.md)|指定した範囲を包含する、最小の範囲オブジェクトを取得します。たとえば、"B2:C5" と "D10:E15" の GetBoundingRect は、"B2:E16" になります。|
 |[Cell](../api/range-cell.md)|[Range](range.md)|行と列の番号に基づいて、1 つのセルを含んだ範囲オブジェクトを取得します。以外このセルは、ワークシートのグリッド内であれば、親の範囲の境界の外のセルであってもかまいません。返されるセルは、範囲の左上のセルを基準に配置されます。|
 |[列](../api/range-column.md)|[Range](range.md)|範囲に含まれる列を 1 つ取得します。|
 |[Columnsafter](../api/workbookrange-columnsafter.md)|[workbookRangeView](workbookrangeview.md)|指定した範囲の右にある特定の列数を取得します。|
 |[Columnsbefore](../api/workbookrange-columnsbefore.md)|[workbookRangeView](workbookrangeview.md)|指定した範囲の左にある特定の列数を取得します。|
-|[Entirecolumn](../api/range-entirecolumn.md)|[印刷範囲](range.md)|範囲に含まれるすべての列を表すオブジェクトを取得します。|
-|[Entirerow](../api/range-entirerow.md)|[印刷範囲](range.md)|範囲に含まれるすべての行を表すオブジェクトを取得します。|
+|[Entirecolumn](../api/range-entirecolumn.md)|[Range](range.md)|範囲に含まれるすべての列を表すオブジェクトを取得します。|
+|[Entirerow](../api/range-entirerow.md)|[Range](range.md)|範囲に含まれるすべての行を表すオブジェクトを取得します。|
 |[Intersection](../api/range-intersection.md)|[Range](range.md)|指定した範囲の長方形の交差部分を表す範囲オブジェクトを取得します。|
 |[Lastcell](../api/range-lastcell.md)|[Range](range.md)|範囲内の最後のセルを取得します。たとえば、"B2:D5" の最後のセルは "D5" になります。|
 |[Lastcolumn](../api/range-lastcolumn.md)|[Range](range.md)|範囲内の最後の列を取得します。たとえば、"B2:D5" の最後の列は "D2:D5" になります。|
 |[Lastrow](../api/range-lastrow.md)|[Range](range.md)|範囲内の最後の行を取得します。たとえば、"B2:D5" の最後の行は "B5:D5" になります。|
-|[Offsetrange](../api/range-offsetrange.md)|[印刷範囲](range.md)|指定した範囲からのオフセットで範囲を表すオブジェクトを取得します。返される範囲のディメンションは、この範囲と一致します。結果の範囲が、ワークシートのグリッドの境界線の外にはみ出る場合は、例外がスローされます。|
+|[Offsetrange](../api/range-offsetrange.md)|[Range](range.md)|指定した範囲からのオフセットで範囲を表すオブジェクトを取得します。返される範囲のディメンションは、この範囲と一致します。結果の範囲が、ワークシートのグリッドの境界線の外にはみ出る場合は、例外がスローされます。|
 |[行](../api/range-row.md)|[Range](range.md)|範囲に含まれている行を 1 つ取得します。|
 |[Rowsabove](../api/workbookrange-rowsabove.md)|[workbookRangeView](workbookrangeview.md)|指定した範囲の上にある特定の行数を取得します。|
 |[Rowsbelow](../api/workbookrange-rowsbelow.md)|[workbookRangeView](workbookrangeview.md)|指定した範囲の下にある特定の行数を取得します。|
-|[Usedrange](../api/range-usedrange.md)|[印刷範囲](range.md)|指定した範囲オブジェクトのうち使用されている範囲を返します。|
-|[クリア](../api/range-clear.md)|なし|範囲の値、書式、塗りつぶし、罫線などをクリアします。|
-|[削除](../api/range-delete.md)|なし|範囲に関連付けられているセルを削除します。|
-|[挿入](../api/range-insert.md)|[Range](range.md)|この範囲を占めるセルまたはセルの範囲をワークシートに挿入し、領域を空けるために他のセルをシフトします。この時点で空き領域に位置する、新しい Range オブジェクトが返されます。|
-|[Merge](../api/range-merge.md)|なし|範囲内のセルをワークシートの 1 つの領域にマージします。|
+|[Usedrange](../api/range-usedrange.md)|[Range](range.md)|指定した範囲オブジェクトのうち使用されている範囲を返します。|
+|[Clear](../api/range-clear.md)|なし|範囲の値、書式、塗りつぶし、罫線などをクリアします。|
+|[Delete](../api/range-delete.md)|なし|範囲に関連付けられているセルを削除します。|
+|[Insert](../api/range-insert.md)|[Range](range.md)|この範囲を占めるセルまたはセルの範囲をワークシートに挿入し、領域を空けるために他のセルをシフトします。この時点で空き領域に位置する、新しい Range オブジェクトが返されます。|
+|[Merge](../api/range-merge.md)|なし|範囲内のセルをワークシートの 1 つの領域に結合します。|
 |[Resizedrange](../api/workbookrange-resizedrange.md)|[workbookRangeView](workbookrangeview.md)|現在の範囲オブジェクトに似た (ただし、右下隅がいくつかの行と列で拡張 (または縮小) されている) 範囲オブジェクトを取得します。|
 |[Unmerge](../api/range-unmerge.md)|なし|範囲内のセルを結合解除して別々のセルにします。|
 |[Visibleview](../api/workbookrange-visibleview.md)|[workbookRangeView](workbookrangeview.md)|フィルター済み範囲から、表示されている範囲を取得します。|
 
 ## <a name="properties"></a>プロパティ
-| プロパティ     | 型   |説明|
+| プロパティ     | 種類   |説明|
 |:---------------|:--------|:----------|
 |address|文字列|A1 スタイルの範囲参照を表します。アドレス値には、シート参照が格納されます (例: Sheet1!A1:B4)。読み取り専用です。|
 |addressLocal|文字列|ユーザーの言語で指定された範囲の範囲参照を表します。読み取り専用です。|
@@ -61,7 +62,7 @@ ms.locfileid: "27023392"
 |rowHidden|ブール値|現在の範囲のすべての行が非表示になっているかどうかを表します。|
 |rowIndex|int|範囲に含まれる最初のセルの行番号を返します。0 を起点とする番号になります。読み取り専用です。|
 |text|Json|指定した範囲のテキスト値。テキスト値は、セルの幅には依存しません。Excel UI で発生する # 記号による置換は、この API から返されるテキスト値には影響しません。読み取り専用です。|
-|valueTypes|Json|各セルのデータの種類を表します。 可能な値: `Unknown`、 `Empty`、 `String`、 `Integer`、 `Double`、 `Boolean`、 `Error`。 読み取り専用。|
+|valueTypes|Json|各セルのデータの種類を表します。 可能な値: `Unknown`、 `Empty`、 `String`、 `Integer`、 `Double`、 `Boolean`、 `Error`。 読み取り専用です。|
 |values|Json|指定した範囲の Raw 値を表します。返されるデータの型は、文字列、数値、またはブール値のいずれかになります。エラーが含まれているセルは、エラー文字列を返します。|
 
 ## <a name="relationships"></a>関係
@@ -69,7 +70,7 @@ ms.locfileid: "27023392"
 |:---------------|:--------|:----------|
 |format|[WorkbookRangeFormat](rangeformat.md)|Format オブジェクト (範囲のフォント、塗りつぶし、罫線、配置などのプロパティをカプセル化するオブジェクト) を返します。読み取り専用です。|
 |sort|[WorkbookRangeSort](rangesort.md)|現在の範囲を含んでいるワークシート。読み取り専用です。|
-|ワークシート|[WorkbookWorksheet](worksheet.md)|現在の範囲を含んでいるワークシート。読み取り専用です。|
+|worksheet|[WorkbookWorksheet](worksheet.md)|現在の範囲を含んでいるワークシート。読み取り専用です。|
 
 ## <a name="json-representation"></a>JSON 表記
 

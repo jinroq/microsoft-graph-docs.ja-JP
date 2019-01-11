@@ -2,12 +2,13 @@
 title: createGooglePlayWebToken アクション
 description: 組み込み可能なコンポーネントで使用される web トークンを生成します。
 author: tfitzmac
-ms.openlocfilehash: 206113b445d8b190e02b292dd661bc3c207de288
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 4eaf622d10eb631b45694e23313443b444068e7f
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27338543"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27808961"
 ---
 # <a name="creategoogleplaywebtoken-action"></a>createGooglePlayWebToken アクション
 

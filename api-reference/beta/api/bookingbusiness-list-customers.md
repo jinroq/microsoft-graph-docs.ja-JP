@@ -1,12 +1,13 @@
 ---
 title: 顧客のリスト
 description: " > **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。"
-ms.openlocfilehash: a46e8dcc39b69e8391829c176eb01d075d23fccf
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 71b873492d4a711f3510756ef644a834cdc7a042
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27068360"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27809570"
 ---
 # <a name="list-customers"></a>顧客のリスト
 

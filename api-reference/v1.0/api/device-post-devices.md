@@ -2,12 +2,13 @@
 title: デバイスを作成する
 description: 新しいデバイスを作成し、組織に登録します。
 author: tfitzmac
-ms.openlocfilehash: 99fb7e7b8cb5ad9fc80b28403e1f4fb41c667376
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: e0dafeb56b6551070bc157ee53b4a9f7f6ac984e
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27314302"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27811810"
 ---
 # <a name="create-device"></a>デバイスを作成する
 
@@ -33,7 +34,7 @@ POST /devices
 | 名前       | 種類 | 説明|
 |:---------------|:--------|:----------|
 | Authorization  | string  | ベアラー {トークン}。必須。 |
-| Content-type | string | application/json |
+| Content-type | 文字列 | application/json |
 
 ## <a name="request-body"></a>要求本文
 要求本文で、[デバイス](../resources/device.md) オブジェクトの JSON 表記を指定します。

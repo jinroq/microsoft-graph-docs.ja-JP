@@ -1,12 +1,13 @@
 ---
 title: DataPolicyOperation を取得します。
 description: DataPolicyOperation オブジェクトのプロパティを取得します。
-ms.openlocfilehash: bee3261526914848eea423a30f8f59b0d072a791
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 00ecde916a2b0632305c6e09437ce3138dc3344d
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27362084"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27808982"
 ---
 # <a name="get-datapolicyoperation"></a>DataPolicyOperation を取得します。
 

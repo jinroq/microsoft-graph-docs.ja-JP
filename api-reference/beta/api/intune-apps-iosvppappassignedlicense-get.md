@@ -2,12 +2,13 @@
 title: IosVppAppAssignedLicense を取得します。
 description: IosVppAppAssignedLicense オブジェクトのプロパティと関係を参照してください。
 author: tfitzmac
-ms.openlocfilehash: 5a7098bfbb4f9945f202d0d9f356c4590a27bb7a
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 2d45eb37ea2471c83743dbb6b5bfe497d9c89537
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27352886"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27808933"
 ---
 # <a name="get-iosvppappassignedlicense"></a>IosVppAppAssignedLicense を取得します。
 
