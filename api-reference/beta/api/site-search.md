@@ -3,32 +3,33 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
 title: キーワードで SharePoint サイトを検索する
-ms.openlocfilehash: c3c5ba005521e3405018e9b9403976297046f242
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: e811dc54f37a55331e0b6c4f25c95f4ce89be142
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27074502"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27821442"
 ---
-# <a name="search-for-sites"></a><span data-ttu-id="d7c79-102">サイトを検索する</span><span class="sxs-lookup"><span data-stu-id="d7c79-102">Search for sites</span></span>
+# <a name="search-for-sites"></a><span data-ttu-id="49001-102">サイトを検索する</span><span class="sxs-lookup"><span data-stu-id="49001-102">Search for sites</span></span>
 
-> <span data-ttu-id="d7c79-103">**重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。</span><span class="sxs-lookup"><span data-stu-id="d7c79-103">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="d7c79-104">実稼働アプリケーションでの、これらの API の使用はサポートされていません。</span><span class="sxs-lookup"><span data-stu-id="d7c79-104">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="49001-103">**重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。</span><span class="sxs-lookup"><span data-stu-id="49001-103">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="49001-104">実稼働アプリケーションでの、これらの API の使用はサポートされていません。</span><span class="sxs-lookup"><span data-stu-id="49001-104">Use of these APIs in production applications is not supported.</span></span>
 
-<span data-ttu-id="d7c79-105">SharePoint テナント全体で、指定したキーワードと一致する[サイト][]を検索します。</span><span class="sxs-lookup"><span data-stu-id="d7c79-105">Search across a SharePoint tenant for [sites][] that match provided keywords.</span></span>
+<span data-ttu-id="49001-105">SharePoint テナント全体で、指定したキーワードと一致する[サイト][]を検索します。</span><span class="sxs-lookup"><span data-stu-id="49001-105">Search across a SharePoint tenant for [sites][] that match provided keywords.</span></span>
 
 [sites]: ../resources/site.md
 
-## <a name="permissions"></a><span data-ttu-id="d7c79-107">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="d7c79-107">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="49001-107">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="49001-107">Permissions</span></span>
 
-<span data-ttu-id="d7c79-p102">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="d7c79-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="49001-p102">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="49001-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="d7c79-110">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="d7c79-110">Permission type</span></span>                        | <span data-ttu-id="d7c79-111">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="d7c79-111">Permissions (from least to most privileged)</span></span>
+|<span data-ttu-id="49001-110">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="49001-110">Permission type</span></span>                        | <span data-ttu-id="49001-111">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="49001-111">Permissions (from least to most privileged)</span></span>
 |:--------------------------------------|:-------------------------------------
-|<span data-ttu-id="d7c79-112">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="d7c79-112">Delegated (work or school account)</span></span>     | <span data-ttu-id="d7c79-113">Sites.Read.All、Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="d7c79-113">Sites.Read.All, Sites.ReadWrite.All</span></span>
-|<span data-ttu-id="d7c79-114">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="d7c79-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="d7c79-115">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="d7c79-115">Not supported.</span></span>
-|<span data-ttu-id="d7c79-116">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="d7c79-116">Application</span></span>                            | <span data-ttu-id="d7c79-117">Sites.Read.All、Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="d7c79-117">Sites.Read.All, Sites.ReadWrite.All</span></span>
+|<span data-ttu-id="49001-112">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="49001-112">Delegated (work or school account)</span></span>     | <span data-ttu-id="49001-113">Sites.Read.All、Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="49001-113">Sites.Read.All, Sites.ReadWrite.All</span></span>
+|<span data-ttu-id="49001-114">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="49001-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="49001-115">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="49001-115">Not supported.</span></span>
+|<span data-ttu-id="49001-116">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="49001-116">Application</span></span>                            | <span data-ttu-id="49001-117">Sites.Read.All、Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="49001-117">Sites.Read.All, Sites.ReadWrite.All</span></span>
 
-## <a name="http-request"></a><span data-ttu-id="d7c79-118">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="d7c79-118">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="49001-118">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="49001-118">HTTP request</span></span>
 
 <!-- { "blockType": "request", "name": "search-sites", "scopes": "service.sharepoint sites.readwrite.all" } -->
 
@@ -36,7 +37,7 @@ ms.locfileid: "27074502"
 GET https://graph.microsoft.com/beta/sites?search={query}
 ```
 
-## <a name="response"></a><span data-ttu-id="d7c79-119">応答</span><span class="sxs-lookup"><span data-stu-id="d7c79-119">Response</span></span>
+## <a name="response"></a><span data-ttu-id="49001-119">応答</span><span class="sxs-lookup"><span data-stu-id="49001-119">Response</span></span>
 
 <!-- { "blockType": "response", "@type": "Collection(microsoft.graph.site)", "truncated": true } -->
 

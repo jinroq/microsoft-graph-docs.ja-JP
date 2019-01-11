@@ -2,49 +2,50 @@
 title: TableRow を取得する　
 description: tablerow オブジェクトのプロパティと関係を取得します。
 author: lumine2008
-ms.openlocfilehash: 26fe5cd6292b93df956f34876120dbfe4861ca2c
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 296c019810fdaad0f64d94474d71f89760a9460b
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27345109"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27819573"
 ---
-# <a name="get-tablerow"></a><span data-ttu-id="afb30-103">TableRow を取得する　</span><span class="sxs-lookup"><span data-stu-id="afb30-103">Get TableRow</span></span>
+# <a name="get-tablerow"></a><span data-ttu-id="1b245-103">TableRow を取得する　</span><span class="sxs-lookup"><span data-stu-id="1b245-103">Get TableRow</span></span>
 
-<span data-ttu-id="afb30-104">tablerow オブジェクトのプロパティと関係を取得します。</span><span class="sxs-lookup"><span data-stu-id="afb30-104">Retrieve the properties and relationships of tablerow object.</span></span>
-## <a name="permissions"></a><span data-ttu-id="afb30-105">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="afb30-105">Permissions</span></span>
-<span data-ttu-id="afb30-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="afb30-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="1b245-104">tablerow オブジェクトのプロパティと関係を取得します。</span><span class="sxs-lookup"><span data-stu-id="1b245-104">Retrieve the properties and relationships of tablerow object.</span></span>
+## <a name="permissions"></a><span data-ttu-id="1b245-105">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="1b245-105">Permissions</span></span>
+<span data-ttu-id="1b245-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="1b245-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="afb30-108">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="afb30-108">Permission type</span></span>      | <span data-ttu-id="afb30-109">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="afb30-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="1b245-108">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="1b245-108">Permission type</span></span>      | <span data-ttu-id="1b245-109">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="1b245-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="afb30-110">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="afb30-110">Delegated (work or school account)</span></span> | <span data-ttu-id="afb30-111">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="afb30-111">Files.ReadWrite</span></span>    |
-|<span data-ttu-id="afb30-112">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="afb30-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="afb30-113">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="afb30-113">Not supported.</span></span>    |
-|<span data-ttu-id="afb30-114">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="afb30-114">Application</span></span> | <span data-ttu-id="afb30-115">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="afb30-115">Not supported.</span></span> |
+|<span data-ttu-id="1b245-110">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="1b245-110">Delegated (work or school account)</span></span> | <span data-ttu-id="1b245-111">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="1b245-111">Files.ReadWrite</span></span>    |
+|<span data-ttu-id="1b245-112">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="1b245-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="1b245-113">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="1b245-113">Not supported.</span></span>    |
+|<span data-ttu-id="1b245-114">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="1b245-114">Application</span></span> | <span data-ttu-id="1b245-115">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="1b245-115">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="afb30-116">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="afb30-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="1b245-116">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="1b245-116">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /workbook/tables/{id|name}/rows/{index}
 GET /workbook/worksheets/{id|name}/tables/{id|name}/rows/{index}
 ```
-## <a name="optional-query-parameters"></a><span data-ttu-id="afb30-117">オプションのクエリ パラメーター</span><span class="sxs-lookup"><span data-stu-id="afb30-117">Optional query parameters</span></span>
-<span data-ttu-id="afb30-118">このメソッドは、応答をカスタマイズするための [OData クエリ パラメーター](https://developer.microsoft.com/graph/docs/concepts/query_parameters)をサポートします。</span><span class="sxs-lookup"><span data-stu-id="afb30-118">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="1b245-117">オプションのクエリ パラメーター</span><span class="sxs-lookup"><span data-stu-id="1b245-117">Optional query parameters</span></span>
+<span data-ttu-id="1b245-118">このメソッドは、応答をカスタマイズするための [OData クエリ パラメーター](https://developer.microsoft.com/graph/docs/concepts/query_parameters)をサポートします。</span><span class="sxs-lookup"><span data-stu-id="1b245-118">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="afb30-119">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="afb30-119">Request headers</span></span>
-| <span data-ttu-id="afb30-120">名前</span><span class="sxs-lookup"><span data-stu-id="afb30-120">Name</span></span>      |<span data-ttu-id="afb30-121">説明</span><span class="sxs-lookup"><span data-stu-id="afb30-121">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="1b245-119">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="1b245-119">Request headers</span></span>
+| <span data-ttu-id="1b245-120">名前</span><span class="sxs-lookup"><span data-stu-id="1b245-120">Name</span></span>      |<span data-ttu-id="1b245-121">説明</span><span class="sxs-lookup"><span data-stu-id="1b245-121">Description</span></span>|
 |:----------|:----------|
-| <span data-ttu-id="afb30-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="afb30-122">Authorization</span></span>  | <span data-ttu-id="afb30-p102">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="afb30-p102">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="afb30-125">Workbook-Session-Id</span><span class="sxs-lookup"><span data-stu-id="afb30-125">Workbook-Session-Id</span></span>  | <span data-ttu-id="afb30-p103">変更を保持するかどうかを決定するブック セッション ID。省略可能。</span><span class="sxs-lookup"><span data-stu-id="afb30-p103">Workbook session Id that determines if changes are persisted or not. Optional.</span></span>|
+| <span data-ttu-id="1b245-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="1b245-122">Authorization</span></span>  | <span data-ttu-id="1b245-p102">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="1b245-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="1b245-125">Workbook-Session-Id</span><span class="sxs-lookup"><span data-stu-id="1b245-125">Workbook-Session-Id</span></span>  | <span data-ttu-id="1b245-p103">変更を保持するかどうかを決定するブック セッション ID。省略可能。</span><span class="sxs-lookup"><span data-stu-id="1b245-p103">Workbook session Id that determines if changes are persisted or not. Optional.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="afb30-128">要求本文</span><span class="sxs-lookup"><span data-stu-id="afb30-128">Request body</span></span>
-<span data-ttu-id="afb30-129">このメソッドには、要求本文を指定しません。</span><span class="sxs-lookup"><span data-stu-id="afb30-129">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="1b245-128">要求本文</span><span class="sxs-lookup"><span data-stu-id="1b245-128">Request body</span></span>
+<span data-ttu-id="1b245-129">このメソッドには、要求本文を指定しません。</span><span class="sxs-lookup"><span data-stu-id="1b245-129">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="afb30-130">応答</span><span class="sxs-lookup"><span data-stu-id="afb30-130">Response</span></span>
+## <a name="response"></a><span data-ttu-id="1b245-130">応答</span><span class="sxs-lookup"><span data-stu-id="1b245-130">Response</span></span>
 
-<span data-ttu-id="afb30-131">かどうかは成功すると、このメソッドが返されます、`200 OK`応答コードおよび応答の本文に[WorkbookTableRow](../resources/tablerow.md)オブジェクトです。</span><span class="sxs-lookup"><span data-stu-id="afb30-131">If successful, this method returns a `200 OK` response code and [WorkbookTableRow](../resources/tablerow.md) object in the response body.</span></span>
-## <a name="example"></a><span data-ttu-id="afb30-132">例</span><span class="sxs-lookup"><span data-stu-id="afb30-132">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="afb30-133">要求</span><span class="sxs-lookup"><span data-stu-id="afb30-133">Request</span></span>
-<span data-ttu-id="afb30-134">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="afb30-134">Here is an example of the request.</span></span>
+<span data-ttu-id="1b245-131">かどうかは成功すると、このメソッドが返されます、`200 OK`応答コードおよび応答の本文に[WorkbookTableRow](../resources/tablerow.md)オブジェクトです。</span><span class="sxs-lookup"><span data-stu-id="1b245-131">If successful, this method returns a `200 OK` response code and [WorkbookTableRow](../resources/tablerow.md) object in the response body.</span></span>
+## <a name="example"></a><span data-ttu-id="1b245-132">例</span><span class="sxs-lookup"><span data-stu-id="1b245-132">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="1b245-133">要求</span><span class="sxs-lookup"><span data-stu-id="1b245-133">Request</span></span>
+<span data-ttu-id="1b245-134">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="1b245-134">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "get_tablerow"
@@ -52,8 +53,8 @@ GET /workbook/worksheets/{id|name}/tables/{id|name}/rows/{index}
 ```http
 GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/tables/{id|name}/rows/{index}
 ```
-##### <a name="response"></a><span data-ttu-id="afb30-135">応答</span><span class="sxs-lookup"><span data-stu-id="afb30-135">Response</span></span>
-<span data-ttu-id="afb30-p104">以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。</span><span class="sxs-lookup"><span data-stu-id="afb30-p104">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="1b245-135">応答</span><span class="sxs-lookup"><span data-stu-id="1b245-135">Response</span></span>
+<span data-ttu-id="1b245-p104">以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。</span><span class="sxs-lookup"><span data-stu-id="1b245-p104">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
