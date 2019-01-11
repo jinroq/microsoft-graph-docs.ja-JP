@@ -2,12 +2,13 @@
 title: deviceConfigurationAssignments のリスト
 description: deviceConfigurationAssignment オブジェクトのプロパティとリレーションシップをリストします。
 author: tfitzmac
-ms.openlocfilehash: 531e9bbdbae61b7ef86dad8c558cee9e20a015e3
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 88ae5ad2e007096eb8853d522f780d272d71a3a9
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27343947"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27867404"
 ---
 # <a name="list-deviceconfigurationassignments"></a>deviceConfigurationAssignments のリスト
 

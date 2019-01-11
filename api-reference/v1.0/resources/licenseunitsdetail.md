@@ -1,19 +1,20 @@
 ---
 title: licenseUnitsDetail リソースの種類
 description: subscribedSku エンティティの **prepaidUnits** のプロパティは、**licenseUnitsDetail** 型です。
-ms.openlocfilehash: e8cf5253676dab8a4b31c3ab33faa0af3ddfd527
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 8c2a4e995c7e1afa63b7f9daea6b61cbaf974958
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27020381"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27810697"
 ---
 # <a name="licenseunitsdetail-resource-type"></a>licenseUnitsDetail リソースの種類
 
 [subscribedSku](subscribedsku.md) エンティティの **prepaidUnits** のプロパティは、**licenseUnitsDetail** 型です。
 
 ## <a name="properties"></a>プロパティ
-| プロパティ     | 型   |説明|
+| プロパティ     | 種類   |説明|
 |:-------------|:-----|:----------|
 |enabled|Int32| 有効になっている単位の数です。 |
 |suspended|Int32| 利用停止中の単位の数です。 |

@@ -3,12 +3,13 @@ author: daspek
 ms.author: dspektor
 ms.date: 09/14/2017
 title: DeleteAction
-ms.openlocfilehash: 041552f88561981338fa2ea5719d5af102fb3574
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: a845a6609991041f12266cd97e95460f96bf742f
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27068983"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27876763"
 ---
 # <a name="deleteaction-resource-type"></a>DeleteAction リソースの種類
 
@@ -35,7 +36,7 @@ ms.locfileid: "27068983"
 
 ## <a name="properties"></a>プロパティ
 
-| プロパティ名 | 型   | 説明
+| プロパティ名 | Type   | 説明
 |:--------------|:-------|:----------------------------------------------------
 | name          | 文字列 | 削除されたアイテムの名前。
 | objectType    | 文字列 | `File`または`Folder`に削除された項目の種類に依存します。

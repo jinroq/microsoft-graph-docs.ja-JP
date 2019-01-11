@@ -2,12 +2,13 @@
 title: リスト enterpriseCodeSigningCertificates
 description: EnterpriseCodeSigningCertificate オブジェクトのプロパティと関係を一覧表示します。
 author: tfitzmac
-ms.openlocfilehash: 60790e451ac72f03e61286a1a12d1a2bcc8c9bd7
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 648b58e12ebd314366ff171ee5a4304b8aac59bc
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27361510"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27824434"
 ---
 # <a name="list-enterprisecodesigningcertificates"></a>リスト enterpriseCodeSigningCertificates
 

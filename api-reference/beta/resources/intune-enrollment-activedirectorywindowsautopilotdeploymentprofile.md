@@ -2,12 +2,13 @@
 title: activeDirectoryWindowsAutopilotDeploymentProfile リソースの種類
 description: Windows 自動操縦装置の配置のプロファイル
 author: tfitzmac
-ms.openlocfilehash: 65f3708fc59b3f9a125423e254285e825f95502f
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: a7928487cf0377407738e88f8a4da6a994cb0bba
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27340146"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27866753"
 ---
 # <a name="activedirectorywindowsautopilotdeploymentprofile-resource-type"></a>activeDirectoryWindowsAutopilotDeploymentProfile リソースの種類
 
@@ -28,7 +29,7 @@ Windows 自動操縦装置の配置のプロファイル
 |[ActiveDirectoryWindowsAutopilotDeploymentProfile を削除します。](../api/intune-enrollment-activedirectorywindowsautopilotdeploymentprofile-delete.md)|なし|の[activeDirectoryWindowsAutopilotDeploymentProfile](../resources/intune-enrollment-activedirectorywindowsautopilotdeploymentprofile.md)を削除します。|
 |[ActiveDirectoryWindowsAutopilotDeploymentProfile を更新します。](../api/intune-enrollment-activedirectorywindowsautopilotdeploymentprofile-update.md)|[activeDirectoryWindowsAutopilotDeploymentProfile](../resources/intune-enrollment-activedirectorywindowsautopilotdeploymentprofile.md)|[ActiveDirectoryWindowsAutopilotDeploymentProfile](../resources/intune-enrollment-activedirectorywindowsautopilotdeploymentprofile.md)オブジェクトのプロパティを更新します。|
 
-## <a name="properties"></a>Properties
+## <a name="properties"></a>プロパティ
 |プロパティ|種類|説明|
 |:---|:---|:---|
 |ID|String|プロファイル キーは、 [windowsAutopilotDeploymentProfile](../resources/intune-enrollment-windowsautopilotdeploymentprofile.md)から継承されました。|

@@ -1,12 +1,13 @@
 ---
 title: onPremisesExtensionAttributes リソースの種類
 description: ユーザー エンティティの**onPremisesExtensionAttributes**プロパティには、15 個のカスタム拡張機能属性のプロパティが含まれています。 このプロパティのセットをオンプレミスの Active Directory のマスターし、Azure AD は、同期**onPremisesSyncEnabled**のユーザーは読み取り専用とします。 クラウド専用 ( **onPremisesSyncEnabled**は false)、ユーザーに対してこれらのプロパティは作成時に設定するか、更新します。
-ms.openlocfilehash: 547fc8ac19059611f5983a8b5ee0bd905f130f79
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 44589338e25e01cb483df6bfa3c1e078e352f5ed
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27071969"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27868160"
 ---
 # <a name="onpremisesextensionattributes-resource-type"></a>onPremisesExtensionAttributes リソースの種類
 
@@ -16,7 +17,7 @@ ms.locfileid: "27071969"
 
 
 ## <a name="properties"></a>プロパティ
-| プロパティ     | 型   |説明|
+| プロパティ     | 種類   |説明|
 |:---------------|:--------|:----------|
 |extensionAttribute1|String| 最初の拡張機能のカスタマイズ可能な属性です。 |
 |extensionAttribute2|String| 2 つ目の拡張機能のカスタマイズ可能な属性です。 |

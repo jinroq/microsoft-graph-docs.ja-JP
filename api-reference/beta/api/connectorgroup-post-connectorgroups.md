@@ -1,12 +1,13 @@
 ---
 title: ConnectorGroup を作成します。
 description: この API を使用すると、新しい connectorGroup を作成します。
-ms.openlocfilehash: 8983222f91dfe0c1d68d14d8f382c5e954787ab9
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 65fe6dd901de6238c450b4896b37d56fa8ea602f
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27066649"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27824298"
 ---
 # <a name="create-connectorgroup"></a>ConnectorGroup を作成します。
 

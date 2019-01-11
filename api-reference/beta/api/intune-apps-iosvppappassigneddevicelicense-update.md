@@ -2,12 +2,13 @@
 title: IosVppAppAssignedDeviceLicense を更新します。
 description: IosVppAppAssignedDeviceLicense オブジェクトのプロパティを更新します。
 author: tfitzmac
-ms.openlocfilehash: 69ccb35896864a29bf594da74afeb702a4b963bf
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: d8e22eed756a0c1946ae13ce6dac9cf2c63cd3a5
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27353229"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27828757"
 ---
 # <a name="update-iosvppappassigneddevicelicense"></a>IosVppAppAssignedDeviceLicense を更新します。
 

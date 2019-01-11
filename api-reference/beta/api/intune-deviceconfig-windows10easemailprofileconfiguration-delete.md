@@ -2,12 +2,13 @@
 title: Windows10EasEmailProfileConfiguration を削除します。
 description: Windows10EasEmailProfileConfiguration を削除します。
 author: tfitzmac
-ms.openlocfilehash: ca709bc7a1d2ffde0c0eb3f4da9188d98681906b
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 3489cd01c73cded23baa9fa4986b7804c752cedf
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27338340"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27847657"
 ---
 # <a name="delete-windows10easemailprofileconfiguration"></a>Windows10EasEmailProfileConfiguration を削除します。
 

@@ -2,12 +2,13 @@
 title: mobileAppCategory の更新
 description: mobileAppCategory オブジェクトのプロパティを更新します。
 author: tfitzmac
-ms.openlocfilehash: ac7bc0d0efab32f659e3e171a2585af8ff992ea1
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: dbaef8f7d5274da1f19291251a25076dd642f896
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27346320"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27876133"
 ---
 # <a name="update-mobileappcategory"></a>mobileAppCategory の更新
 

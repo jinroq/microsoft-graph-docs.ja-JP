@@ -1,12 +1,13 @@
 ---
 title: 写真を削除する
 description: 写真を削除します。
-ms.openlocfilehash: 3a227ceb503caf947786adfb35265755e6059b0a
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 117f4acbf5a45d9db64ccc5d3fc0ccc4d1c64896
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27071490"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27829261"
 ---
 # <a name="delete-photo"></a>写真を削除する
 
@@ -31,7 +32,7 @@ DELETE /drive/root/createdByUser/photo
 
 ```
 ## <a name="request-headers"></a>要求ヘッダー
-| 名前       | 型 | 説明|
+| 名前       | 種類 | 説明|
 |:---------------|:--------|:----------|
 | if-match  | 文字列  | この要求ヘッダーが含まれていて、指定された eTag (または cTag) が項目の現在のタグに一致しない場合には、`412 Precondition Failed` 応答が返され、項目は削除されません。|
 | Authorization  | string  | ベアラー {トークン}。必須。 |

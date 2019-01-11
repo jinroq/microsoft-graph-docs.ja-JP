@@ -2,12 +2,13 @@
 title: AndroidForWorkApp を取得します。
 description: AndroidForWorkApp オブジェクトのプロパティと関係を参照してください。
 author: tfitzmac
-ms.openlocfilehash: 5eb9a3233ebdd2df86aff677e82ac629bfa18bb6
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 496251dbdf0b303dc5597d14572e91b44a3c8918
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27334049"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27829002"
 ---
 # <a name="get-androidforworkapp"></a>AndroidForWorkApp を取得します。
 

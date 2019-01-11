@@ -1,12 +1,13 @@
 ---
 title: sizeRange リソースの種類
 description: '条件または例外を適用するために、受信メッセージに想定される最小サイズと最大サイズ (単位: キロバイト) を指定します。'
-ms.openlocfilehash: c84843116055c8ef13b7961b6ee180c4c896c80f
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 14dd86502feb0a5082d3af142202f77ec9eac75c
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27071992"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27876406"
 ---
 # <a name="sizerange-resource-type"></a>sizeRange リソースの種類
 
@@ -15,7 +16,7 @@ ms.locfileid: "27071992"
 条件または例外を適用するために、受信メッセージに想定される最小サイズと最大サイズ (単位: キロバイト) を指定します。
 
 ## <a name="properties"></a>プロパティ
-| プロパティ     | 型   |説明|
+| プロパティ     | 種類   |説明|
 |:---------------|:--------|:----------|
 | maximumSize | Int32 | 条件または例外を適用するために、受信メッセージに想定される最大サイズ (単位: キロバイト)。 |
 | minimumSize | Int32 | 条件または例外を適用するために、受信メッセージに想定される最小サイズ (単位: キロバイト)。 |

@@ -2,12 +2,13 @@
 title: managedEBookAssignments のリスト
 description: managedEBookAssignment オブジェクトのプロパティとリレーションシップをリストします。
 author: tfitzmac
-ms.openlocfilehash: bb4f824c22a8d72a2b083606b8c9367bd15579a0
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 141d01a21a09f0706f5689cae527db072b9fb6a8
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27303537"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27825404"
 ---
 # <a name="list-managedebookassignments"></a>managedEBookAssignments のリスト
 

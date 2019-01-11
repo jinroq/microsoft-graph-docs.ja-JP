@@ -2,12 +2,13 @@
 title: createdObjects を一覧表示する　
 description: ユーザーによって作成されたディレクトリ オブジェクトの一覧を取得します。
 author: dkershaw10
-ms.openlocfilehash: e24e4de1d7d17e6c3a2fda95c484f82c91bb8189
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: b999f4f9c5de484bd23e42497cc40ef0d3547b0c
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27316885"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27876945"
 ---
 # <a name="list-createdobjects"></a>createdObjects を一覧表示する　
 

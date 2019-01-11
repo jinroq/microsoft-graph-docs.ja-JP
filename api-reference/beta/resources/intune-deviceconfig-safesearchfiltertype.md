@@ -2,12 +2,13 @@
 title: safeSearchFilterType 列挙型
 description: (成人向けコンテンツのフィルタ リング)、安全な検索のレベルが必要なを指定します。
 author: tfitzmac
-ms.openlocfilehash: 7bec68919b6af5d773c34caadaf0c1d85b0f5224
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 477f0b52342ca1b27d844a5f03aedd806cdd8b5d
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27351416"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27875832"
 ---
 # <a name="safesearchfiltertype-enum-type"></a>safeSearchFilterType 列挙型
 

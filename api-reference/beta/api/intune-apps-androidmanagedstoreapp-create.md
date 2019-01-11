@@ -2,12 +2,13 @@
 title: AndroidManagedStoreApp を作成します。
 description: 新しい androidManagedStoreApp オブジェクトを作成します。
 author: tfitzmac
-ms.openlocfilehash: 3d0766a7ebb285feec9fb6733c504fa72b028385
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 6278ed99a41bdf80af2e43579974855ce8fc145b
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27346887"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27824437"
 ---
 # <a name="create-androidmanagedstoreapp"></a>AndroidManagedStoreApp を作成します。
 

@@ -2,12 +2,13 @@
 title: WindowsWifiConfiguration を作成します。
 description: 新しい windowsWifiConfiguration オブジェクトを作成します。
 author: tfitzmac
-ms.openlocfilehash: 0d09897844acd0e0ea52103a371ff6825df10379
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 1dcb2254c5f73f3e223d2d36d6911ab33f07bb3b
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27305013"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27826419"
 ---
 # <a name="create-windowswificonfiguration"></a>WindowsWifiConfiguration を作成します。
 

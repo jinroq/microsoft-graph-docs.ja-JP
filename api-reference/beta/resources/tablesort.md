@@ -2,12 +2,13 @@
 title: TableSort リソースの種類
 description: テーブル オブジェクトの並べ替え操作を管理します。
 author: lumine2008
-ms.openlocfilehash: 52ee5288698b236f7ee4d29eb75fdac5ad14fa0f
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 7e3eae5ef21bc8d8ea1fba395b369ea35d1f80b9
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27339824"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27873046"
 ---
 # <a name="tablesort-resource-type"></a>TableSort リソースの種類
 
@@ -29,7 +30,7 @@ ms.locfileid: "27339824"
 | プロパティ     | 種類   |説明|
 |:---------------|:--------|:----------|
 |matchCase|ブール値|大文字小文字の区別が、テーブルの最後の並べ替え操作に影響を与えたかどうかを表します。読み取り専用です。|
-|method|string|テーブルの並べ替えで最後に使用した中国語文字の順序付け方法を表します。可能な値は、`PinYin`、`StrokeCount` です。読み取り専用です。|
+|method|文字列|テーブルの並べ替えで最後に使用した中国語文字の順序付け方法を表します。可能な値は、`PinYin`、`StrokeCount` です。読み取り専用です。|
 
 ## <a name="relationships"></a>リレーションシップ
 | リレーションシップ | 型   |説明|

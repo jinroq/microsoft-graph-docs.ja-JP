@@ -2,12 +2,13 @@
 title: OutlookTaskFolder を作成します。
 description: 指定された outlookTaskGroup の下の Outlook タスク フォルダーを作成します。
 author: angelgolfer-ms
-ms.openlocfilehash: e1e45cce9d047086d9aee025d38ca883fcda6fad
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 4d6d6f103c1dd002f4c01e0dbdd71d1ebd7ddd10
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27339194"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27823836"
 ---
 # <a name="create-outlooktaskfolder"></a>OutlookTaskFolder を作成します。
 

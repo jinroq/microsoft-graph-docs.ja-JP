@@ -2,12 +2,13 @@
 title: appListItem リソースの種類
 description: 管理対象アプリケーションの一覧にあるアプリを表します
 author: tfitzmac
-ms.openlocfilehash: 825e88dd5bd32cadfd9a8bfa291ab67036c8180b
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 7aab42e778ffb78db2fc85cec786d2cc25437b74
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27343227"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27876715"
 ---
 # <a name="applistitem-resource-type"></a>appListItem リソースの種類
 

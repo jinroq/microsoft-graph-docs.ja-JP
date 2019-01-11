@@ -2,12 +2,13 @@
 title: managedDeviceReportedApp リソースの種類
 description: 報告のためのアプリケーション データ
 author: tfitzmac
-ms.openlocfilehash: 7fd01c5fd7553769653abd6e16ecc9ec40a79b8a
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 676b89e98f5d54367916a3f3219ab5fc02ddbd80
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27359494"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27877218"
 ---
 # <a name="manageddevicereportedapp-resource-type"></a>managedDeviceReportedApp リソースの種類
 
@@ -16,7 +17,7 @@ ms.locfileid: "27359494"
 > **注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
 
 報告のためのアプリケーション データ
-## <a name="properties"></a>Properties
+## <a name="properties"></a>プロパティ
 |プロパティ|種類|説明|
 |:---|:---|:---|
 |appId|文字列型 (String)|アプリケーションのアプリケーションまたはバンドルの識別子|

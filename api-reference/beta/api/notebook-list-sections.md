@@ -2,12 +2,13 @@
 title: セクションを一覧表示する
 description: 指定されたノートブックからセクション オブジェクトの一覧を取得します。
 author: Jewan-microsoft
-ms.openlocfilehash: ab1f531e687f3b17c18b2b61067eee5e9283acb7
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 9bb7889bbcee720b914b89219642b781af2debed
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27332397"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27870302"
 ---
 # <a name="list-sections"></a>セクションを一覧表示する
 

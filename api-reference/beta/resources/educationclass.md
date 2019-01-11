@@ -1,12 +1,13 @@
 ---
 title: educationClass リソース タイプ
 description: '学校内のクラスを表します。 **educationClass** リソースは Office 365 グループに相当し、同じ ID を共有します。 学生はクラスの通常のメンバーであり、教師は所有者であり適切な権限を持ちます。 Office の操作性が適切に機能するために、教師は、teachers コレクションと members コレクションの両方のメンバーになっている必要があります。  '
-ms.openlocfilehash: 49b307cb59b6e1a3002f70f9a1b367251040250b
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 1c657a1eba131a9bcfa8dd4f84e2ba2141a4750a
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27066505"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27866788"
 ---
 # <a name="educationclass-resource-type"></a>educationClass リソース タイプ
 
@@ -34,9 +35,9 @@ ms.locfileid: "27066505"
 |[Delete](../api/educationclass-delete.md) | なし |**educationClass** オブジェクトを削除します。 |
 
 ## <a name="properties"></a>プロパティ
-| プロパティ     | 型   |説明|
+| プロパティ     | 種類   |説明|
 |:---------------|:--------|:----------|
-|id| String| クラスの一意の識別子。|
+|ID| String| クラスの一意の識別子。|
 |説明|String| クラスの説明。|
 |displayName|String| クラスの名前。|
 |mailNickname|String| すべてのメンバーに電子メールを送信する際のメール名 (この機能が有効な場合)。 |

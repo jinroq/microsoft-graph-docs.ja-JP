@@ -2,12 +2,13 @@
 title: windowsFirewallNetworkProfile リソース タイプ
 description: Windows ファイアウォールのプロファイルのポリシーです。
 author: tfitzmac
-ms.openlocfilehash: ff128f004626d846ae27815b656522607cb3a07c
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 8f6431d1a19c2e74dd2cf009ee433f10dc9ecb51
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27358360"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27877064"
 ---
 # <a name="windowsfirewallnetworkprofile-resource-type"></a>windowsFirewallNetworkProfile リソース タイプ
 

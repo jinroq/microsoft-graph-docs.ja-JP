@@ -1,12 +1,13 @@
 ---
 title: impossibleTravelRiskEvent リソースの種類
 description: Azure Active ディレクトリ Id 保護、ユーザーの典型的な場所から 2 つのアカウントのサインインの問題が発生して、に関する該当の記号の完全な情報の間の期間内の場所の間を移動することはできませんが検出されたリスク イベントリスク イベントは、Azure AD のアイデンティティ保護のマニュアルを参照しています。
-ms.openlocfilehash: 38e61927121f520e79fd1fec8b8e6443fa8b76e7
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: e9ce064a5ea724b498f3290f630a4169b1aef897
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27066785"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27846453"
 ---
 # <a name="impossibletravelriskevent-resource-type"></a>impossibleTravelRiskEvent リソースの種類
 
@@ -22,12 +23,12 @@ ms.locfileid: "27066785"
 |[ImpossibleTravelRiskEvent を取得します。](../api/impossibletravelriskevent-get.md) | [impossibleTravelRiskEvent](impossibletravelriskevent.md) |ImpossibleTravelRiskEvent オブジェクトのプロパティと関係を参照してください。|
 
 ## <a name="properties"></a>プロパティ
-| プロパティ     | 型   |説明|
+| プロパティ     | 種類   |説明|
 |:---------------|:--------|:----------|
 |closedDateTime|dateTimeOffset| リスク イベントが終了したときの日時|
 |createdDateTime|dateTimeOffset| 日付とイベントが作成された時刻です。 以上のリスク イベント自体の日付と時刻を常にです。 これは、リスク イベントを照会するときにフィルターとして使用する適切なプロパティです。|
 |deviceInformation|文字列| デバイスに関する情報|
-|ID|文字列| 読み取り専用|
+|ID|文字列| 読み取り専用です。|
 |ipAddress|文字列| 2 つ目のサインインの IP アドレス|
 |isAtypicalLocation|ブール| ユーザーの典型的な場所のいずれかの場合|
 |location|文字列| 2 つ目のサインインの IP アドレスに接続されている場所|

@@ -2,12 +2,13 @@
 title: certificateValidityPeriodScale 列挙型
 description: 証明書の有効性の期間のオプションです。
 author: tfitzmac
-ms.openlocfilehash: 669b3cf929ec8daee21e99516d1511f84b85b646
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 4bba8d87c1b3d0759e221531b3b9ed9d81f1a765
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27354804"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27876700"
 ---
 # <a name="certificatevalidityperiodscale-enum-type"></a>certificateValidityPeriodScale 列挙型
 

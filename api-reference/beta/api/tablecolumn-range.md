@@ -2,12 +2,13 @@
 title: TableColumn:Range
 description: 列全体に関連付けられた範囲オブジェクトを取得します。
 author: lumine2008
-ms.openlocfilehash: ef3615d78ca4c4121d69db68e7cb3cdb6840ad01
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: fa8c471f4c884e159b7194e2012b4af894a82bf2
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27328932"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27868398"
 ---
 # <a name="tablecolumn-range"></a>TableColumn:Range
 

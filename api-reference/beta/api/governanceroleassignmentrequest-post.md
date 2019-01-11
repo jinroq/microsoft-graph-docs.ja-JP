@@ -1,12 +1,13 @@
 ---
 title: GovernanceRoleAssignmentRequest を作成します。
 description: 役割の割り当てで必要な操作を表すロールの割り当て要求を作成します。 次の表に、操作をします。
-ms.openlocfilehash: 775cc8e22e7d273bfe387e5be2cc183d3d919a38
-ms.sourcegitcommit: 82f9d0d10388572a3073b2dde8ca0a7b409135b8
+localization_priority: Normal
+ms.openlocfilehash: 09adb824147dba745649efc7589ca763f815278d
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "27191173"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27823773"
 ---
 # <a name="create-governanceroleassignmentrequest"></a>GovernanceRoleAssignmentRequest を作成します。
 
@@ -173,7 +174,7 @@ Content-length: 226
 |resourceId|String|はい|\<とります\>|
 |roleDefinitionId|String|はい|\<roleDefinitionId\>|
 |subjectId|String|はい|\<subjectId\>|
-|assignmentState|String|はい| アクティブ|
+|assignmentState|String|はい| Active|
 |type|String|はい| UserAdd|
 |理由|String| ロールの設定によって異なります||
 |スケジュール|[governanceSchedule](../resources/governanceschedule.md)|はい|        |
@@ -268,7 +269,7 @@ Content-type: application/json
 |resourceId|String|はい|\<とります\>|
 |roleDefinitionId|String|はい|\<roleDefinitionId\>|
 |subjectId|String|はい|\<subjectId\>|
-|assignmentState|String|はい| アクティブ|
+|assignmentState|String|はい| Active|
 |type|String|はい| UserRemove|
 |理由|String| いいえ||
 |スケジュール|[governanceSchedule](../resources/governanceschedule.md)|いいえ|        |

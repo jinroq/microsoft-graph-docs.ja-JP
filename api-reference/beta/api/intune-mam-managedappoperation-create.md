@@ -2,12 +2,13 @@
 title: managedAppOperation の作成
 description: 新しい managedAppOperation オブジェクトを作成します。
 author: tfitzmac
-ms.openlocfilehash: 21b9fdd862b72b6935e694f3a7937e675dcd5343
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: eac205f4e8bd443ed90784e85e623869b440b204
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27313343"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27877246"
 ---
 # <a name="create-managedappoperation"></a>managedAppOperation の作成
 

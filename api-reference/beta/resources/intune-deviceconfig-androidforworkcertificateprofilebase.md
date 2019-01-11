@@ -2,12 +2,13 @@
 title: androidForWorkCertificateProfileBase リソースの種類
 description: Android の作業証明書のプロファイルが基本です。
 author: tfitzmac
-ms.openlocfilehash: a4a664473c22a7e90fa43dc19e7343c358cc0d56
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 4b197ff66dcee5576de2a2ab25b329917b519814
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27326888"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27875895"
 ---
 # <a name="androidforworkcertificateprofilebase-resource-type"></a>androidForWorkCertificateProfileBase リソースの種類
 
@@ -25,7 +26,7 @@ Android の作業証明書のプロファイルが基本です。
 |[リスト androidForWorkCertificateProfileBases](../api/intune-deviceconfig-androidforworkcertificateprofilebase-list.md)|[androidForWorkCertificateProfileBase](../resources/intune-deviceconfig-androidforworkcertificateprofilebase.md)コレクション|[AndroidForWorkCertificateProfileBase](../resources/intune-deviceconfig-androidforworkcertificateprofilebase.md)オブジェクトのプロパティと関係を一覧表示します。|
 |[AndroidForWorkCertificateProfileBase を取得します。](../api/intune-deviceconfig-androidforworkcertificateprofilebase-get.md)|[androidForWorkCertificateProfileBase](../resources/intune-deviceconfig-androidforworkcertificateprofilebase.md)|[AndroidForWorkCertificateProfileBase](../resources/intune-deviceconfig-androidforworkcertificateprofilebase.md)オブジェクトのプロパティと関係を参照してください。|
 
-## <a name="properties"></a>Properties
+## <a name="properties"></a>プロパティ
 |プロパティ|種類|説明|
 |:---|:---|:---|
 |ID|String|エンティティのキー。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|

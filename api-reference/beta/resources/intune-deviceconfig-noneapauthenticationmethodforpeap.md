@@ -2,12 +2,13 @@
 title: nonEapAuthenticationMethodForPeap 列挙型
 description: 選択した EAP が PEAP の認証のための非 EAP メソッドを入力します。
 author: tfitzmac
-ms.openlocfilehash: 6925547b3effbfe505d5586589e4f97a6f5c5662
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: ed6fab695f461ffe35ac201fe70aa1b2f5703faa
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27326986"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27870309"
 ---
 # <a name="noneapauthenticationmethodforpeap-enum-type"></a>nonEapAuthenticationMethodForPeap 列挙型
 

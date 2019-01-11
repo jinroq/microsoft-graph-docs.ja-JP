@@ -1,12 +1,13 @@
 ---
 title: Update conversationthread
 description: スレッドへの以降の投稿を許可あるいは拒否するために、スレッドをロックまたはロック解除します。
-ms.openlocfilehash: 7fe8ded506246125d9e61f9c9d84c990a9838dbd
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: a7f0738314bc071d5d084903fdc46b7fac1cf8cd
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27022593"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27846495"
 ---
 # <a name="update-conversationthread"></a>Update conversationthread
 
@@ -36,7 +37,7 @@ PATCH /groups/{id}/conversations/{id}/threads/{id}
 ## <a name="request-body"></a>要求本文
 要求本文で、更新する関連フィールドの値を指定します。要求本文に含まれない既存のプロパティは、以前の値のままになるか、他のプロパティ値の変化に基づいて再計算されます。最適なパフォーマンスを得るためには、変更されていない既存の値を含めないでください。
 
-| プロパティ     | 型   |説明|
+| プロパティ     | 種類   |説明|
 |:---------------|:--------|:----------|
 |isLocked|Boolean|スレッドがロックされているかどうかを示します。転記を禁止するために `true` に設定します。|
 

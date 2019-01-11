@@ -2,12 +2,13 @@
 title: 'WorksheetCollection: add'
 description: 上に .activate()。
 author: lumine2008
-ms.openlocfilehash: fc22e4b45732c9ef197ad9b1172ec87c8becbfc5
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 9b841198071e4ab0f4e5b30f3cc4ec8b2538ef7e
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27346600"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27810977"
 ---
 # <a name="worksheetcollection-add"></a>WorksheetCollection: add
 
@@ -36,7 +37,7 @@ POST /workbook/worksheets/
 ## <a name="request-body"></a>要求本文
 要求本文で、次のパラメーターを含む JSON オブジェクトを指定します。
 
-| パラメーター    | 種類   |説明|
+| パラメーター    | Type   |説明|
 |:---------------|:--------|:----------|
 |name|文字列|省略可能。追加するワークシートの名前。指定する場合、名前は一意である必要があります。指定されていない場合は、Excel が新しいワークシートの名前を決定します。|
 

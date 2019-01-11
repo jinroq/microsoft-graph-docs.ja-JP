@@ -1,12 +1,13 @@
 ---
 title: mfaDetail リソースの種類
 description: '特定のサインインの MFA の詳細を示します。 サインインで認証の詳細と、使用する認証方法が含まれています (例: 電話、SMS、またはボイス メール) '
-ms.openlocfilehash: a377c8648ebc8a6e3eb10fb6b0b87df066f8f2cc
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 5069045fd202d443a94a80f7333f12ab5e707ada
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27069753"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27883742"
 ---
 # <a name="mfadetail-resource-type"></a>mfaDetail リソースの種類
 特定のサインインの MFA の詳細を示します。 サインインで認証の詳細と、使用する認証方法が含まれています (例: 電話、SMS、またはボイス メール) 
@@ -14,7 +15,7 @@ ms.locfileid: "27069753"
 
 
 ## <a name="properties"></a>プロパティ
-| プロパティ     | 型   |説明|
+| プロパティ     | 種類   |説明|
 |:---------------|:--------|:----------|
 |authDetail|String|必要な MFA は、[はい] とは、対応する記号の活動の MFA の認証の詳細を示します。|
 |authMethod|String|MFA のために必要なフィールドは、[はい] をするときに、対応する記号の活動の MFA の認証方法 (SMS、電話、ユーザー認証システムのアプリケーションは、いくつかの値) を示します。|

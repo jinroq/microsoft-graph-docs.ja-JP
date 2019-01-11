@@ -1,12 +1,13 @@
 ---
 title: attributeMapping リソースの種類
 description: 特定のターゲット属性の値が同期中にフローは方法を定義します。
-ms.openlocfilehash: e4fd8ba0aece448f358d51373dfca0157759a23e
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 6c7a6367684b3e11013355b6d4726afe3346dab9
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27069846"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27825278"
 ---
 # <a name="attributemapping-resource-type"></a>attributeMapping リソースの種類
 
@@ -16,7 +17,7 @@ ms.locfileid: "27069846"
 
 ## <a name="properties"></a>プロパティ
 
-| プロパティ                  | 型                      | 説明    |
+| プロパティ                  | 種類                      | 説明    |
 |:--------------------------|:--------------------------|:---------------|
 |defaultValue               | 文字列                    |既定値に、 **source**プロパティが評価された場合に使用する`null`。 省略可能。|
 |exportMissingReferences    |String                     |内部使用のみ。|

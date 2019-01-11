@@ -2,12 +2,13 @@
 title: DeviceManagementScriptDeviceState を更新します。
 description: DeviceManagementScriptDeviceState オブジェクトのプロパティを更新します。
 author: tfitzmac
-ms.openlocfilehash: a5dee56ac260642d1a0c105d62ee26499d7276df
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 15c9a951d63f99f02af5fc676176237323cc4864
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27305314"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27827343"
 ---
 # <a name="update-devicemanagementscriptdevicestate"></a>DeviceManagementScriptDeviceState を更新します。
 

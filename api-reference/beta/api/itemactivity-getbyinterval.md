@@ -3,12 +3,13 @@ author: daspek
 ms.author: dspektor
 ms.date: 10/06/2017
 title: 間隔によって項目のアクティビティの統計 (stats) を取得します。
-ms.openlocfilehash: 3b3c7139678715a11365f2551c318dcf66e68e7a
-ms.sourcegitcommit: 37591c2299c80e7675cd2b5f781e1eeeba628a60
+localization_priority: Normal
+ms.openlocfilehash: 7ca0e4e4767073d37ebeabbab10e1f50ce323599
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "27748193"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27826867"
 ---
 # <a name="get-item-activity-stats-by-interval"></a>間隔によって項目のアクティビティの統計 (stats) を取得します。
 
@@ -44,11 +45,11 @@ GET /sites/{site-id}/lists/{list-id}/items/{item-id}/getActivitiesByInterval(sta
 
 ## <a name="function-parameters"></a>関数パラメーター
 
-| Parameter      | 種類               | 説明
+| Parameter      | Type               | 説明
 |:---------------|:-------------------|:---------------------------------------
 | startDateTime  | 文字列 (タイムスタンプ) | 集計の活動に使用される開始時刻。
 | endDateTime    | 文字列 (タイムスタンプ) | 集計の活動に使用される終了時間です。
-| interval       | string             | 集計間隔です。
+| interval       | 文字列             | 集計間隔です。
 
 ## <a name="example"></a>例
 

@@ -2,12 +2,13 @@
 title: mobileAppTroubleshootingEvent リソースの種類
 description: ユーザー デバイスのアプリケーションを表すイベントは、状態をインストールします。
 author: tfitzmac
-ms.openlocfilehash: 92b16d0dd3678aed8cec810f27172e05f37f1ad8
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 8441015f594d227066db39f3f643cc8136637668
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27314402"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27846369"
 ---
 # <a name="mobileapptroubleshootingevent-resource-type"></a>mobileAppTroubleshootingEvent リソースの種類
 
@@ -28,7 +29,7 @@ ms.locfileid: "27314402"
 |[MobileAppTroubleshootingEvent を削除します。](../api/intune-troubleshooting-mobileapptroubleshootingevent-delete.md)|なし|の[mobileAppTroubleshootingEvent](../resources/intune-troubleshooting-mobileapptroubleshootingevent.md)を削除します。|
 |[MobileAppTroubleshootingEvent を更新します。](../api/intune-troubleshooting-mobileapptroubleshootingevent-update.md)|[mobileAppTroubleshootingEvent](../resources/intune-troubleshooting-mobileapptroubleshootingevent.md)|[MobileAppTroubleshootingEvent](../resources/intune-troubleshooting-mobileapptroubleshootingevent.md)オブジェクトのプロパティを更新します。|
 
-## <a name="properties"></a>Properties
+## <a name="properties"></a>プロパティ
 |プロパティ|種類|説明|
 |:---|:---|:---|
 |ID|String|オブジェクトの UUID。[deviceManagementTroubleshootingEvent](../resources/intune-troubleshooting-devicemanagementtroubleshootingevent.md) から継承|

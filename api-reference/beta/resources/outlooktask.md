@@ -1,15 +1,16 @@
 ---
-title: outlookTask リソースの種類
+title: outlookTask リソース型
 description: '作業項目を追跡することができる Outlook のアイテム。 '
 author: angelgolfer-ms
-ms.openlocfilehash: 959e7ee7d6b1844d4b66b8ab53747e26aa91d492
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Priority
+ms.openlocfilehash: 71f649c0ef5fd23caafc9bcd3e35282287d35372
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27335232"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27865563"
 ---
-# <a name="outlooktask-resource-type"></a>outlookTask リソースの種類
+# <a name="outlooktask-resource-type"></a>outlookTask リソース型
 
 > **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。
 
@@ -49,7 +50,7 @@ Prefer: outlook.timezone="Eastern Standard Time"
 |[複数値の拡張プロパティを作成する](../api/multivaluelegacyextendedproperty-post-multivalueextendedproperties.md) | [outlookTask](outlooktask.md) | 新規または既存の Outlook タスクの 1 つまたは複数の値を複数の拡張プロパティを作成します。  |
 |[複数値の拡張プロパティを使用してタスクを取得します。](../api/multivaluelegacyextendedproperty-get.md)  | [outlookTask](outlooktask.md) | 使用して複数の値の拡張プロパティを含む Outlook のタスクを取得する`$expand`。 |
 
-## <a name="properties"></a>Properties
+## <a name="properties"></a>プロパティ
 | プロパティ     | 種類   |説明|
 |:---------------|:--------|:----------|
 |担当者|String|タスクが割り当てられているユーザーの名前。|
@@ -61,16 +62,16 @@ Prefer: outlook.timezone="Eastern Standard Time"
 |dueDateTime|[dateTimeTimeZone](datetimetimezone.md)|タスクが終了する予定の日時 (指定のタイム ゾーン)。|
 |hasAttachments|ブール型|タスクに添付ファイルが含まれている場合、true に設定します。|
 |id|String|タスクの一意識別子。 読み取り専用。|
-|importance|string|イベントの重要度。 可能な値は `low`、`normal`、`high` です。|
-|isReminderOn|Boolean|ユーザーにタスクを通知するアラートを設定する場合は、true に設定します。|
+|importance|文字列|イベントの重要度。 可能な値は `low`、`normal`、`high` です。|
+|isReminderOn|ブール値|ユーザーにタスクを通知するアラートを設定する場合は、true に設定します。|
 |lastModifiedDateTime|DateTimeOffset|日付と、タスクが最後に修正されました。 既定では、UTC であります。 要求ヘッダーにカスタム タイム ゾーンを使用できます。 プロパティの値は、ISO 8601 形式を使用し、UTC 時刻が常に。 たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、次のようになります。`'2014-01-01T00:00:00Z'`|
 |owner|String|タスクを作成したユーザーの名前。|
 |parentFolderId|String|タスクの親フォルダーの一意の識別子。|
 |recurrence|[patternedRecurrence](patternedrecurrence.md)|タスクの繰り返しパターン。|
 |reminderDateTime|[dateTimeTimeZone](datetimetimezone.md)|タスクのアラーム通知を行う日時。|
-|sensitivity|string|タスクのプライバシーのレベルを示します。 可能な値は、`normal`、`personal`、`private`、`confidential` です。|
+|sensitivity|文字列|タスクのプライバシーのレベルを示します。 可能な値は、`normal`、`personal`、`private`、`confidential` です。|
 |startDateTime|[dateTimeTimeZone](datetimetimezone.md)|タスクを開始する日付 (指定のタイム ゾーン)。|
-|status|string|状態またはタスクの進行状況を示します。 可能な値は、`notStarted`、`inProgress`、`completed`、`waitingOnOthers`、`deferred` です。|
+|status|文字列|状態またはタスクの進行状況を示します。 可能な値は、`notStarted`、`inProgress`、`completed`、`waitingOnOthers`、`deferred` です。|
 |subject|String|タスクのタイトルまたは簡単な説明。|
 
 ## <a name="relationships"></a>リレーションシップ

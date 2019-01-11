@@ -2,12 +2,13 @@
 title: WindowsKioskConfiguration を作成します。
 description: 新しい windowsKioskConfiguration オブジェクトを作成します。
 author: tfitzmac
-ms.openlocfilehash: 35630494206a234e248935a75483afa2da969ed4
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 75e500ae8cf8ce272ee8571de24f18723f0594e5
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27327539"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27868377"
 ---
 # <a name="create-windowskioskconfiguration"></a>WindowsKioskConfiguration を作成します。
 

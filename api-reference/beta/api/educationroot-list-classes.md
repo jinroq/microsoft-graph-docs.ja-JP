@@ -2,12 +2,13 @@
 title: クラスをリストする
 description: 'すべてのクラス オブジェクトのリストを取得します。 '
 author: mmast-msft
-ms.openlocfilehash: 73496c478525f0068438070afc3dcc836b8382ee
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 74639acd39ee6b11a7338692b23e5e14a7020eda
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27348497"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27823927"
 ---
 # <a name="list-classes"></a>クラスをリストする
 

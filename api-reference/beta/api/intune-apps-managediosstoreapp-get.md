@@ -2,12 +2,13 @@
 title: Get managedIOSStoreApp
 description: managedIOSStoreApp オブジェクトのプロパティとリレーションシップを読み取ります。
 author: tfitzmac
-ms.openlocfilehash: f29c91fdde4da55f82d18fc283b1b3cae2e156ce
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 814deb6485b504a285ed9858998fb8a3c28ddad9
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27306273"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27824039"
 ---
 # <a name="get-managediosstoreapp"></a>Get managedIOSStoreApp
 

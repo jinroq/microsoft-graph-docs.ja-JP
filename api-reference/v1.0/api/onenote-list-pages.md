@@ -2,12 +2,13 @@
 title: pages を一覧表示する
 description: ページ オブジェクトの一覧を取得します。
 author: Jewan-microsoft
-ms.openlocfilehash: aeb2fe975a6a058ebf4165dcdec0fd1f133c02ca
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: f06404437fbd5dc34cef6d81e5b3d692bf5ce101
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27345501"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27829366"
 ---
 # <a name="list-pages"></a>pages を一覧表示する
 
