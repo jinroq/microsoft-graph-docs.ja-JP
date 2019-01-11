@@ -2,12 +2,13 @@
 title: managedAndroidStoreApp の更新
 description: managedAndroidStoreApp オブジェクトのプロパティを更新します。
 author: tfitzmac
-ms.openlocfilehash: c592238c7c48939b47dfc772a93dea4f07f7bf06
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: a64bfba70dbd48afb363ca31844ef2f9154376a7
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27327644"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27830640"
 ---
 # <a name="update-managedandroidstoreapp"></a>managedAndroidStoreApp の更新
 

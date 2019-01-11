@@ -2,12 +2,13 @@
 title: Get deviceManagementExchangeConnector
 description: deviceManagementExchangeConnector オブジェクトのプロパティとリレーションシップを読み取ります。
 author: tfitzmac
-ms.openlocfilehash: 98507354a3f0501d22d24e28177c9769f744153b
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: ea85262c7f32deec653c9118cc2986c9f5ca024b
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27351829"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27832600"
 ---
 # <a name="get-devicemanagementexchangeconnector"></a>Get deviceManagementExchangeConnector
 

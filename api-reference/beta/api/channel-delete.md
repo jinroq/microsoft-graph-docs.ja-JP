@@ -2,12 +2,13 @@
 title: チャネルを削除します。
 description: チャネルを削除します。
 author: nkramer
-ms.openlocfilehash: 9eb4378920a652529ec99129cca50c7b2e7ad565
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 2ff974205c20ea8a50778f04c741dc3f7e39a7e1
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27309045"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27833426"
 ---
 # <a name="delete-channel"></a>チャネルを削除します。
 

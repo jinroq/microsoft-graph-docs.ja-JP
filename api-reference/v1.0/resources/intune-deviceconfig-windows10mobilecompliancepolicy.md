@@ -2,12 +2,13 @@
 title: windows10MobileCompliancePolicy リソースの種類
 description: このクラスには、Windows 10 Mobile のコンプライアンス設定が含まれています。
 author: tfitzmac
-ms.openlocfilehash: 53a6ac9398660a909cef03909945b29048b14e29
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: f0a954866645403546fd18779a64c0a4ebc130c9
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27347027"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27831347"
 ---
 # <a name="windows10mobilecompliancepolicy-resource-type"></a>windows10MobileCompliancePolicy リソースの種類
 

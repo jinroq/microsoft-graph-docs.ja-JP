@@ -2,12 +2,13 @@
 title: WindowsDomainJoinConfiguration を取得します。
 description: WindowsDomainJoinConfiguration オブジェクトのプロパティと関係を参照してください。
 author: tfitzmac
-ms.openlocfilehash: 94c3b69d13b3b4d4d14a1af9c78f858e1eb50879
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: d0c4aedf07e8a6e95dc81f440975809e75b85160
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27342239"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27831333"
 ---
 # <a name="get-windowsdomainjoinconfiguration"></a>WindowsDomainJoinConfiguration を取得します。
 

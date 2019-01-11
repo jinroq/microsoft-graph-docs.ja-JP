@@ -1,19 +1,20 @@
 ---
 title: targetResourceUser リソースの種類
 description: 追加、更新または監査活動の一環として、管理者によって削除されたユーザー オブジェクトを示します。 TargetResource リソースから派生します。
-ms.openlocfilehash: 632d0551b3aba434c3309c8c874947708eb9a9f5
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 9c71ead1b358b72a1b531abac56018fa71d084e8
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27069763"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27831929"
 ---
 # <a name="targetresourceuser-resource-type"></a>targetResourceUser リソースの種類
 追加、更新または監査活動の一環として、管理者によって削除されたユーザー オブジェクトを示します。 [TargetResource](targetresource.md)リソースから派生します。
 
 
 ## <a name="properties"></a>プロパティ
-| プロパティ     | 型   |説明|
+| プロパティ     | 種類   |説明|
 |:---------------|:--------|:----------|
 |userPrincipalName|String|ユーザーの一意の Id を示します。 特定のユーザーのユーザー Id を参照します。|
 

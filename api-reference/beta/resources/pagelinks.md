@@ -1,12 +1,13 @@
 ---
 title: pageLinks リソースの種類
 description: OneNote のページを開くためのリンクです。
-ms.openlocfilehash: 598e39f5cf2b6bbd722b07b72f4fa63ad7fd8302
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 9bee1b4d3d327118dbf1deec83a37787bd4b18e2
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27073265"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27832628"
 ---
 # <a name="pagelinks-resource-type"></a>pageLinks リソースの種類
 
@@ -34,7 +35,7 @@ OneNote のページを開くためのリンクです。
 
 ```
 ## <a name="properties"></a>プロパティ
-| プロパティ     | 型   |説明|
+| プロパティ     | 種類   |説明|
 |:---------------|:--------|:----------|
 |oneNoteClientUrl|[externalLink](externallink.md)|OneNote のネイティブ クライアントでページを開きます (インストールされている場合)。|
 |oneNoteWebUrl|[externalLink](externallink.md)|OneNote Online でページを開きます。|

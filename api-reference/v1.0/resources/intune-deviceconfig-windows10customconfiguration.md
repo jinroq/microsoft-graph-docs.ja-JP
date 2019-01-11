@@ -1,12 +1,13 @@
 ---
 title: windows10CustomConfiguration リソースの種類
 description: このトピックでは、windows10CustomConfiguration リソースによって公開された、宣言されたメソッド、プロパティ、リレーションシップについて説明します。
-ms.openlocfilehash: 79b67d85a3602556abf13fc35814618c16546076
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 10e220081a6dce55a321ab430a417c641de24286
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27020475"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27831291"
 ---
 # <a name="windows10customconfiguration-resource-type"></a>windows10CustomConfiguration リソースの種類
 
@@ -26,9 +27,9 @@ ms.locfileid: "27020475"
 |[windows10CustomConfiguration の更新](../api/intune-deviceconfig-windows10customconfiguration-update.md)|[windows10CustomConfiguration](../resources/intune-deviceconfig-windows10customconfiguration.md)|[windows10CustomConfiguration](../resources/intune-deviceconfig-windows10customconfiguration.md) オブジェクトのプロパティを更新します。|
 
 ## <a name="properties"></a>プロパティ
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
-|id|String|エンティティのキー。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
+|ID|String|エンティティのキー。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |lastModifiedDateTime|DateTimeOffset|オブジェクトが最後に変更された DateTime。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |createdDateTime|DateTimeOffset|オブジェクトが作成された DateTime。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |説明|String|デバイス構成について管理者が提供した説明。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|

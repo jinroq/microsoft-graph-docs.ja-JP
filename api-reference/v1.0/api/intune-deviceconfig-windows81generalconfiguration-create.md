@@ -2,12 +2,13 @@
 title: Create windows81GeneralConfiguration
 description: 新しい windows81GeneralConfiguration オブジェクトを作成します。
 author: tfitzmac
-ms.openlocfilehash: a289e987732964c2427736f868eb42219bd04ec5
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 30da5227531696056730ec184f9d0ce7881541aa
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27344339"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27830969"
 ---
 # <a name="create-windows81generalconfiguration"></a>Create windows81GeneralConfiguration
 

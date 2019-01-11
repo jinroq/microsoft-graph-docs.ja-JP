@@ -1,12 +1,13 @@
 ---
 title: onPremisesProvisioningError リソースの種類
 description: Azure Active Directory への設置型のディレクトリを同期するときは、ユーザーとグループのエンティティのディレクトリ同期のエラーを表します。
-ms.openlocfilehash: 7d5b15d99559ddf5b7692b7eac9664de7ec50f1e
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: c8989a78dfb60a6c7c25a66a9f1e619dcbdca15d
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27024193"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27830668"
 ---
 # <a name="onpremisesprovisioningerror-resource-type"></a>onPremisesProvisioningError リソースの種類
 
@@ -14,7 +15,7 @@ ms.locfileid: "27024193"
 
 ## <a name="properties"></a>プロパティ
 
-| プロパティ | 型 | 説明 |
+| プロパティ | 種類 | 説明 |
 |:---------------|:--------|:----------|
 |category|String| プロビジョニングのエラーのカテゴリです。 注意: 現時点が 1 つだけ使用可能な値です。 使用可能な値: *PropertyConflict* - は、プロパティの値が一意でないことを示します。 その他のオブジェクトには、プロパティに対して同じ値が含まれています。 |
 |occurredDateTime|DateTimeOffset| 日付と時刻、エラーが発生しました。 |

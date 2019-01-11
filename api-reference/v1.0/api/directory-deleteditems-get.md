@@ -2,12 +2,13 @@
 title: 削除済みアイテムを取得する
 description: '[削除済みアイテム] から、最近削除されたアイテムのプロパティを取得します。'
 author: lleonard-msft
-ms.openlocfilehash: e3a42fffba9a447661010ac9f6f5cff19df880c1
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 928ec2c303567afc7edc8e50b52f3a9ac327af80
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27353712"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27831340"
 ---
 # <a name="get-deleted-item"></a>削除済みアイテムを取得する
 

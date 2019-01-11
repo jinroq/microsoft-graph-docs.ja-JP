@@ -2,12 +2,13 @@
 title: WindowsKioskConfiguration を更新します。
 description: WindowsKioskConfiguration オブジェクトのプロパティを更新します。
 author: tfitzmac
-ms.openlocfilehash: e399daa1f57ac7ddcbbd1add9e414392bb8e3789
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 5c9c80f6279879750d282d5b75aea6064447f0d6
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27360054"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27832677"
 ---
 # <a name="update-windowskioskconfiguration"></a>WindowsKioskConfiguration を更新します。
 

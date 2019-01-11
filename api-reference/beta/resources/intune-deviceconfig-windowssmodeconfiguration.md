@@ -2,12 +2,13 @@
 title: windowsSModeConfiguration 列挙型
 description: S モードを構成するのには使用可能なオプションのロックを解除します。
 author: tfitzmac
-ms.openlocfilehash: 592eb58a13d1f78caadb5b46acac5b43e6c97384
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 9e37bd51be1b5476e8b4590b92b3caeeed92ac45
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27344703"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27830738"
 ---
 # <a name="windowssmodeconfiguration-enum-type"></a>windowsSModeConfiguration 列挙型
 

@@ -2,12 +2,13 @@
 title: windowsInformationProtectionNetworkLearningSummary の更新
 description: windowsInformationProtectionNetworkLearningSummary オブジェクトのプロパティを更新します。
 author: tfitzmac
-ms.openlocfilehash: 30f5585149a1130a92c203394950c581655cc78b
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 663b13d803e1205de07dc2f8a1311c82f5376cb8
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27329422"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27830479"
 ---
 # <a name="update-windowsinformationprotectionnetworklearningsummary"></a>windowsInformationProtectionNetworkLearningSummary の更新
 

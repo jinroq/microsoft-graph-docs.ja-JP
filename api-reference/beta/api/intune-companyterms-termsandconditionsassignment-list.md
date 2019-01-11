@@ -2,12 +2,13 @@
 title: termsAndConditionsAssignments のリスト
 description: termsAndConditionsAssignment オブジェクトのプロパティとリレーションシップをリストします。
 author: tfitzmac
-ms.openlocfilehash: 8f32698a82447e18b6086f565e0acf2f07055662
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: b4ce40bf4ec49ea4b534f82455464fa259085abf
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27340237"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27832778"
 ---
 # <a name="list-termsandconditionsassignments"></a>termsAndConditionsAssignments のリスト
 

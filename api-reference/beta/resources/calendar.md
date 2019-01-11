@@ -1,12 +1,13 @@
 ---
 title: calendar リソース型
 description: イベントのコンテナーである予定表です。 ユーザーの予定表、または Office 365 グループの既定の予定表のいずれかを指定できます。
-ms.openlocfilehash: 90be98acace678b45626f812150362dfeed1f52d
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Priority
+ms.openlocfilehash: baa681d57109654aa29eed11cef4768d1599ba13
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27074234"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27830675"
 ---
 # <a name="calendar-resource-type"></a>calendar リソース型
 
@@ -40,7 +41,7 @@ ms.locfileid: "27074234"
 |[複数値の拡張プロパティを持つ予定表を取得する](../api/multivaluelegacyextendedproperty-get.md)  | [calendar](calendar.md) | `$expand` を使用して、複数値の拡張プロパティを含む予定表を取得します。 |
 
 ## <a name="properties"></a>プロパティ
-| プロパティ     | 型   |説明|
+| プロパティ     | 種類   |説明|
 |:---------------|:--------|:----------|
 |canEdit |ブール値 |ユーザーが予定表に書き込むことができる場合は true、それ以外の場合は false です。予定表を作成したユーザーの場合は、このプロパティは true です。予定表を共有していて、書き込みアクセスが付与されているユーザーの場合も、このプロパティは true です。 |
 |canShare |ブール値 |ユーザーに予定表を共有するためのアクセス許可がある場合は true、それ以外の場合は false です。予定表を作成したユーザーのみがその予定表を共有できます。 |
@@ -50,7 +51,7 @@ ms.locfileid: "27074234"
 |hexColor|String|カレンダーを表す色。 色は、6 桁、3 バイトの 16 進数で表されます。 各バイトは、FF を 16 進数で 00 の範囲で、色の赤、緑、および青のコンポーネントの 1 つを表します。 |
 |id|String|グループの一意識別子。読み取り専用です。|
 |isDefaultCalendar|Boolean|この予定表がユーザーの既定の予定表であれば True、そうでなければ False。|
-|IsShared |Boolean |True を設定すると、ユーザーがカレンダーを共有、他のユーザーでは、false それ以外の場合。 予定表を作成したユーザーのみが共有できるため、 **isShared**と**isSharedWithMe**が同じユーザーの場合はできません。 |
+|IsShared |ブール型 |True を設定すると、ユーザーがカレンダーを共有、他のユーザーでは、false それ以外の場合。 予定表を作成したユーザーのみが共有できるため、 **isShared**と**isSharedWithMe**が同じユーザーの場合はできません。 |
 |isSharedWithMe |Boolean |ユーザーが予定表を共有している場合は true、それ以外の場合は false です。予定表の所有者の場合は、このプロパティは常に false です。  |
 |名前|String|予定表の名前。|
 |owner |[emailAddress](emailaddress.md) | 設定すると、これは予定表を作成または追加したユーザーを表します。ユーザーが作成または追加した予定表の場合、**owner** プロパティがユーザーに設定されます。ユーザーと共有されている予定表の場合は、**owner** プロパティがその予定表をユーザーと共有した人に設定されます。 |

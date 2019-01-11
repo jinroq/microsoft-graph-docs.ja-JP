@@ -1,12 +1,13 @@
 ---
 title: ポリシーを作成します。
 description: 表示名、ポリシーの種類、およびポリシーの説明を指定することにより、新しいポリシー オブジェクトを作成します。
-ms.openlocfilehash: fca6201d7afa6a78f15da0d37fb611e4114783e4
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 4850b2899bfd9add703af912f16602960b2657f4
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27073613"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27831235"
 ---
 # <a name="create-policy"></a>ポリシーを作成します。
 
@@ -31,7 +32,7 @@ ms.locfileid: "27073613"
 POST /policies
 ```
 ## <a name="request-headers"></a>要求ヘッダー
-| 名前       | 型 | 説明|
+| 名前       | 種類 | 説明|
 |:---------------|:--------|:----------|
 | Authorization  | string  | ベアラー {トークン}。必須。 |
 | Content-Type | application/json  | エンティティ本文内のデータの性質です。必須。 |
@@ -41,7 +42,7 @@ POST /policies
 
 ポリシーを作成するときに必要なプロパティを次の表に示します。
 
-| パラメーター    | 型   |説明|
+| Parameter    | Type   |説明|
 |:---------------|:--------|:----------|
 |definition|String|[ポリシー](../resources/policy.md)オブジェクトの文字列形式。|
 |displayName|String|ポリシーに独自の名前です。|
@@ -51,7 +52,7 @@ POST /policies
 
 かどうかは成功すると、このメソッドを返します`201 Created`応答本体に応答コードおよび[ポリシー](../resources/policy.md)のオブジェクトです。 失敗した場合、`4xx`について、エラーが返されます。  
 
-## <a name="example"></a>使用例
+## <a name="example"></a>例
 次の使用例は、新しいトークンの有効期間ポリシーを作成します。 文字列定義のパラメーターは二重引用符をエスケープしたことを確認します。
 
 ##### <a name="request"></a>要求

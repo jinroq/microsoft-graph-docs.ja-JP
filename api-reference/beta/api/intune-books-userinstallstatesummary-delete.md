@@ -2,12 +2,13 @@
 title: userInstallStateSummary の削除
 description: userInstallStateSummary を削除します。
 author: tfitzmac
-ms.openlocfilehash: 854be19ec7c1def053992b3b690bdc8acd15cd94
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 6706513076e45eb021eb972196afc2c9afea7078
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27327252"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27832705"
 ---
 # <a name="delete-userinstallstatesummary"></a>userInstallStateSummary の削除
 

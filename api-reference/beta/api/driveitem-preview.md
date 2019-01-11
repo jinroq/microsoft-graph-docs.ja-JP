@@ -1,12 +1,13 @@
 ---
 title: 'driveItem: プレビュー'
 description: このアクションを使用すると、一時的なプレビューをレンダリングするためにアイテムを短時間の埋め込み可能な Url を取得できます。
-ms.openlocfilehash: 51432e53d6986e680dda8508ef0069c7713b3a9d
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 4487e18ed1921f4164c335ba477e0ae5b74e456a
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27067932"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27833174"
 ---
 # <a name="driveitem-preview"></a>driveItem: プレビュー
 
@@ -48,13 +49,13 @@ POST /shares/{shareId}/driveItem/preview
 要求の本文では、アプリケーションが要求する埋め込み可能な URL のプロパティを定義します。
 要求は、次のプロパティを含む JSON オブジェクトである必要があります。
 
-|   名前      |  型         | 説明
+|   名前      |  種類         | 説明
 |:------------|:--------------|:-----------------------------------------------
 | ビューアー      | 文字列        | 省略可能。 使用するアプリケーションをプレビューします。 `onedrive` や `office` などになります。 Null の場合、適切なビューアーが自動的に選択されます。
 | クロムレス  | ブール       | 省略可能。 場合`true`(既定値)、組み込みのビューのコントロールは含まれません。
 | allowEdit   | ブール       | 省略可能。 場合`true`、埋め込まれた UI からファイルを編集することができます。
 | page        | 文字列と番号 | 省略可能。 該当する場合に、開始するドキュメントのページ数です。 将来使用する場合は、ZIP などのファイルの種類を文字列として指定します。
-| ズーム        | 数値        | 省略可能。 該当する場合に、開始するレベルを拡大します。
+| ズーム        | number        | 省略可能。 該当する場合に、開始するレベルを拡大します。
 
 ## <a name="response"></a>応答
 
@@ -68,7 +69,7 @@ POST /shares/{shareId}/driveItem/preview
 
 応答は、次のプロパティを含む JSON オブジェクトになります。
 
-| 名前           | 型   | 説明
+| 名前           | 種類   | 説明
 |:---------------|:-------|:---------------------------------------------------
 | getUrl         | 文字列 | HTTP の GET (iframe など) を使用して埋め込みの適切な URL
 | postUrl        | 文字列 | HTTP POST を使用して埋め込みの適切な URL (フォーム ポスト、JS など)。
@@ -76,7 +77,7 @@ POST /shares/{shareId}/driveItem/preview
 
 GetUrl、postUrl、またはその両方は、指定したオプションの埋め込みのサポートの現在の状態によって返される可能性があります。
 
-として書式設定された文字列は、postParameters`application/x-www-form-urlencoded`と postUrl のコンテンツの種類へのポストを実行し、それに応じて設定する必要があります。 例:
+として書式設定された文字列は、postParameters`application/x-www-form-urlencoded`と postUrl のコンテンツの種類へのポストを実行し、それに応じて設定する必要があります。 次に例を示します。
 ```
 POST https://www.onedrive.com/embed_by_post
 Content-Type: application/x-www-form-urlencoded

@@ -2,12 +2,13 @@
 title: リスト androidVpnConfigurations
 description: AndroidVpnConfiguration オブジェクトのプロパティと関係を一覧表示します。
 author: tfitzmac
-ms.openlocfilehash: a26fe24e4680153075a54614b241ce7103d3caf2
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 4d4fbe96a6463e81d010af19295bb57b46c41c8c
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27354832"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27833391"
 ---
 # <a name="list-androidvpnconfigurations"></a>リスト androidVpnConfigurations
 

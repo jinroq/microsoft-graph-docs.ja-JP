@@ -2,12 +2,13 @@
 title: '電話: subscribeToTone'
 description: (デュアル トーン多重周波数信号) DTMF を購読します。 これにより、ユーザーは、'プッシュホン' 電話のキーを押したときに通知することができます。
 author: VinodRavichandran
-ms.openlocfilehash: 82f7632736dc187fae1313224a6cb6f4807e0dd1
-ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
+localization_priority: Normal
+ms.openlocfilehash: 226edd59e7d826dd7304ae45ec58c360e8ef3191
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "27380437"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27833433"
 ---
 # <a name="call-subscribetotone"></a>電話: subscribeToTone
 
@@ -39,7 +40,7 @@ POST /applications/{id}/calls/{id}/subscribeToTone
 ## <a name="request-body"></a>要求本文
 要求本文で、次のパラメーターを含む JSON オブジェクトを指定します。
 
-| パラメーター      | 型    | 説明 |
+| パラメーター      | Type    | 説明 |
 |:---------------|:--------|:------------|
 | clientContext  | String  | クライアントのコンテキスト。 |
 

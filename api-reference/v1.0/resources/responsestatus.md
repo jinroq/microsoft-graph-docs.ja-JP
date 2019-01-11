@@ -1,12 +1,13 @@
 ---
 title: responseStatus リソースの種類
 description: 会議出席依頼の応答状態です。
-ms.openlocfilehash: 95f525bae387520888f006d6496a56dab9148145
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 110b0eb158043b9573deb3e3ced792119bfa91a7
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27021115"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27830780"
 ---
 # <a name="responsestatus-resource-type"></a>responseStatus リソースの種類
 
@@ -14,7 +15,7 @@ ms.locfileid: "27021115"
 
 ## <a name="properties"></a>プロパティ
 
-| プロパティ | 型           | 説明 |
+| プロパティ | 種類           | 説明 |
 |:---------|:---------------|:------------|
 | response | responseType   | 応答の種類。 可能な値: `None`、 `Organizer`、 `TentativelyAccepted`、 `Accepted`、 `Declined`、 `NotResponded`。
 | time     | DateTimeOffset | 応答が返された日時。ISO 8601 形式を使って表され、常に UTC 時間です。たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、次のようになります。`'2014-01-01T00:00:00Z'`

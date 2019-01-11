@@ -2,12 +2,13 @@
 title: androidLobApps のリスト
 description: androidLobApp オブジェクトのプロパティとリレーションシップをリストします。
 author: tfitzmac
-ms.openlocfilehash: 0fc6231d21b3a33b7fc9e4afec2b2a6bc9ee4e47
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 9b7338dfecfacf732816af2f2b6867485930ad8b
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27326517"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27833594"
 ---
 # <a name="list-androidlobapps"></a>androidLobApps のリスト
 

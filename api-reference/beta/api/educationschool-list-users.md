@@ -2,12 +2,13 @@
 title: educationUsers をリストする
 description: 学校のユーザーのリストを取得します。
 author: mmast-msft
-ms.openlocfilehash: 6e642792b8cb3d7463b13288b0ed95838590ec52
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: fed061fd5afc867126c7cc70ee702e937a8eba4a
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27336415"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27833580"
 ---
 # <a name="list-educationusers"></a>educationUsers をリストする
 

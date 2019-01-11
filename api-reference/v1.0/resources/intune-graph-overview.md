@@ -2,12 +2,13 @@
 title: Intune Graph API の使用
 description: " Intune ハイブリッド展開はサポートされていません。 "
 author: tfitzmac
-ms.openlocfilehash: 9ac823fcc1e3c09bfedc57d9caf4901c95aa9142
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Priority
+ms.openlocfilehash: 1222f064b075c8884f5c66c101ae0e15256221c5
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27332733"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27830682"
 ---
 # <a name="working-with-intune-in-microsoft-graph"></a>Microsoft Graph での Intune の操作  
 
