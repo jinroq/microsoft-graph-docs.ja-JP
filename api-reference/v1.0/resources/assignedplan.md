@@ -1,29 +1,30 @@
 ---
 title: assignedPlan リソースの種類
 description: ユーザー エンティティと組織エンティティの両方の **assignedPlans** プロパティは、**assignedPlan** のコレクションです。
-ms.openlocfilehash: 306c485b31189e7693075735ceda0812d3259251
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: d1f3df6a88ab688206d26db6fc0afe1e1d4a4f60
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27021206"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27852998"
 ---
-# <a name="assignedplan-resource-type"></a><span data-ttu-id="d9ffd-103">assignedPlan リソースの種類</span><span class="sxs-lookup"><span data-stu-id="d9ffd-103">assignedPlan resource type</span></span>
+# <a name="assignedplan-resource-type"></a><span data-ttu-id="75050-103">assignedPlan リソースの種類</span><span class="sxs-lookup"><span data-stu-id="75050-103">assignedPlan resource type</span></span>
 
-<span data-ttu-id="d9ffd-104">[ユーザー](user.md) エンティティと[組織](organization.md)エンティティの両方の **assignedPlans** プロパティは、**assignedPlan** のコレクションです。</span><span class="sxs-lookup"><span data-stu-id="d9ffd-104">The **assignedPlans** property of both the [user](user.md) entity and the [organization](organization.md) entity is a collection of **assignedPlan**.</span></span>
+<span data-ttu-id="75050-104">[ユーザー](user.md) エンティティと[組織](organization.md)エンティティの両方の **assignedPlans** プロパティは、**assignedPlan** のコレクションです。</span><span class="sxs-lookup"><span data-stu-id="75050-104">The **assignedPlans** property of both the [user](user.md) entity and the [organization](organization.md) entity is a collection of **assignedPlan**.</span></span>
 
 
-## <a name="properties"></a><span data-ttu-id="d9ffd-105">プロパティ</span><span class="sxs-lookup"><span data-stu-id="d9ffd-105">Properties</span></span>
-| <span data-ttu-id="d9ffd-106">プロパティ</span><span class="sxs-lookup"><span data-stu-id="d9ffd-106">Property</span></span>     | <span data-ttu-id="d9ffd-107">型</span><span class="sxs-lookup"><span data-stu-id="d9ffd-107">Type</span></span>   |<span data-ttu-id="d9ffd-108">説明</span><span class="sxs-lookup"><span data-stu-id="d9ffd-108">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="75050-105">プロパティ</span><span class="sxs-lookup"><span data-stu-id="75050-105">Properties</span></span>
+| <span data-ttu-id="75050-106">プロパティ</span><span class="sxs-lookup"><span data-stu-id="75050-106">Property</span></span>     | <span data-ttu-id="75050-107">種類</span><span class="sxs-lookup"><span data-stu-id="75050-107">Type</span></span>   |<span data-ttu-id="75050-108">説明</span><span class="sxs-lookup"><span data-stu-id="75050-108">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="d9ffd-109">assignedDateTime</span><span class="sxs-lookup"><span data-stu-id="d9ffd-109">assignedDateTime</span></span>|<span data-ttu-id="d9ffd-110">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="d9ffd-110">DateTimeOffset</span></span>|<span data-ttu-id="d9ffd-p101">プランが割り当てられた日時です。例:2013-01-02T19:32:30Z。Timestamp 型は、ISO 8601 形式を使用して日付と時刻の情報を表し、必ず UTC 時間です。たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、次のようになります。`'2014-01-01T00:00:00Z'`</span><span class="sxs-lookup"><span data-stu-id="d9ffd-p101">The date and time at which the plan was assigned; for example: 2013-01-02T19:32:30Z. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`</span></span>|
-|<span data-ttu-id="d9ffd-114">capabilityStatus</span><span class="sxs-lookup"><span data-stu-id="d9ffd-114">capabilityStatus</span></span>|<span data-ttu-id="d9ffd-115">String</span><span class="sxs-lookup"><span data-stu-id="d9ffd-115">String</span></span>|<span data-ttu-id="d9ffd-116">「有効」など。</span><span class="sxs-lookup"><span data-stu-id="d9ffd-116">For example, “Enabled”.</span></span>|
-|<span data-ttu-id="d9ffd-117">service</span><span class="sxs-lookup"><span data-stu-id="d9ffd-117">service</span></span>|<span data-ttu-id="d9ffd-118">String</span><span class="sxs-lookup"><span data-stu-id="d9ffd-118">String</span></span>|<span data-ttu-id="d9ffd-119">サービスの名前。「Exchange」など。</span><span class="sxs-lookup"><span data-stu-id="d9ffd-119">The name of the service; for example, “Exchange”.</span></span>|
-|<span data-ttu-id="d9ffd-120">servicePlanId</span><span class="sxs-lookup"><span data-stu-id="d9ffd-120">servicePlanId</span></span>|<span data-ttu-id="d9ffd-121">Guid</span><span class="sxs-lookup"><span data-stu-id="d9ffd-121">Guid</span></span>|<span data-ttu-id="d9ffd-122">サービス プランを識別する GUID。</span><span class="sxs-lookup"><span data-stu-id="d9ffd-122">A GUID that identifies the service plan.</span></span>|
+|<span data-ttu-id="75050-109">assignedDateTime</span><span class="sxs-lookup"><span data-stu-id="75050-109">assignedDateTime</span></span>|<span data-ttu-id="75050-110">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="75050-110">DateTimeOffset</span></span>|<span data-ttu-id="75050-p101">プランが割り当てられた日時です。例:2013-01-02T19:32:30Z。Timestamp 型は、ISO 8601 形式を使用して日付と時刻の情報を表し、必ず UTC 時間です。たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、次のようになります。`'2014-01-01T00:00:00Z'`</span><span class="sxs-lookup"><span data-stu-id="75050-p101">The date and time at which the plan was assigned; for example: 2013-01-02T19:32:30Z. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`</span></span>|
+|<span data-ttu-id="75050-114">capabilityStatus</span><span class="sxs-lookup"><span data-stu-id="75050-114">capabilityStatus</span></span>|<span data-ttu-id="75050-115">String</span><span class="sxs-lookup"><span data-stu-id="75050-115">String</span></span>|<span data-ttu-id="75050-116">「有効」など。</span><span class="sxs-lookup"><span data-stu-id="75050-116">For example, “Enabled”.</span></span>|
+|<span data-ttu-id="75050-117">service</span><span class="sxs-lookup"><span data-stu-id="75050-117">service</span></span>|<span data-ttu-id="75050-118">String</span><span class="sxs-lookup"><span data-stu-id="75050-118">String</span></span>|<span data-ttu-id="75050-119">サービスの名前。「Exchange」など。</span><span class="sxs-lookup"><span data-stu-id="75050-119">The name of the service; for example, “Exchange”.</span></span>|
+|<span data-ttu-id="75050-120">servicePlanId</span><span class="sxs-lookup"><span data-stu-id="75050-120">servicePlanId</span></span>|<span data-ttu-id="75050-121">Guid</span><span class="sxs-lookup"><span data-stu-id="75050-121">Guid</span></span>|<span data-ttu-id="75050-122">サービス プランを識別する GUID。</span><span class="sxs-lookup"><span data-stu-id="75050-122">A GUID that identifies the service plan.</span></span>|
 
-## <a name="json-representation"></a><span data-ttu-id="d9ffd-123">JSON 表記</span><span class="sxs-lookup"><span data-stu-id="d9ffd-123">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="75050-123">JSON 表記</span><span class="sxs-lookup"><span data-stu-id="75050-123">JSON representation</span></span>
 
-<span data-ttu-id="d9ffd-124">以下は、リソースの JSON 表記です</span><span class="sxs-lookup"><span data-stu-id="d9ffd-124">Here is a JSON representation of the resource</span></span>
+<span data-ttu-id="75050-124">以下は、リソースの JSON 表記です</span><span class="sxs-lookup"><span data-stu-id="75050-124">Here is a JSON representation of the resource</span></span>
 
 <!-- {
   "blockType": "resource",

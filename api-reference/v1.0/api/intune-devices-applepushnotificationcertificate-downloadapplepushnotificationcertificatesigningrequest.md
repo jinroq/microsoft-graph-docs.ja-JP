@@ -2,28 +2,29 @@
 title: downloadApplePushNotificationCertificateSigningRequest 関数
 description: Apple プッシュ通知の証明書署名要求をダウンロードします
 author: tfitzmac
-ms.openlocfilehash: 99a62c456dd8d4f0e0779c44b800169e5de57164
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: affb3866d54aaad356a1bb4d04c3954e07d8a192
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27315520"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27853012"
 ---
-# <a name="downloadapplepushnotificationcertificatesigningrequest-function"></a><span data-ttu-id="e35b8-103">downloadApplePushNotificationCertificateSigningRequest 関数</span><span class="sxs-lookup"><span data-stu-id="e35b8-103">downloadApplePushNotificationCertificateSigningRequest function</span></span>
+# <a name="downloadapplepushnotificationcertificatesigningrequest-function"></a><span data-ttu-id="cbeec-103">downloadApplePushNotificationCertificateSigningRequest 関数</span><span class="sxs-lookup"><span data-stu-id="cbeec-103">downloadApplePushNotificationCertificateSigningRequest function</span></span>
 
-> <span data-ttu-id="e35b8-104">**注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。</span><span class="sxs-lookup"><span data-stu-id="e35b8-104">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
+> <span data-ttu-id="cbeec-104">**注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。</span><span class="sxs-lookup"><span data-stu-id="cbeec-104">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
 
-<span data-ttu-id="e35b8-105">Apple プッシュ通知の証明書署名要求をダウンロードします</span><span class="sxs-lookup"><span data-stu-id="e35b8-105">Download Apple push notification certificate signing request</span></span>
-## <a name="prerequisites"></a><span data-ttu-id="e35b8-106">前提条件</span><span class="sxs-lookup"><span data-stu-id="e35b8-106">Prerequisites</span></span>
-<span data-ttu-id="e35b8-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="e35b8-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="cbeec-105">Apple プッシュ通知の証明書署名要求をダウンロードします</span><span class="sxs-lookup"><span data-stu-id="cbeec-105">Download Apple push notification certificate signing request</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="cbeec-106">前提条件</span><span class="sxs-lookup"><span data-stu-id="cbeec-106">Prerequisites</span></span>
+<span data-ttu-id="cbeec-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="cbeec-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="e35b8-109">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="e35b8-109">Permission type</span></span>|<span data-ttu-id="e35b8-110">アクセス許可 (特権の大きいものから小さいものへ)</span><span class="sxs-lookup"><span data-stu-id="e35b8-110">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="cbeec-109">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="cbeec-109">Permission type</span></span>|<span data-ttu-id="cbeec-110">アクセス許可 (特権の大きいものから小さいものへ)</span><span class="sxs-lookup"><span data-stu-id="cbeec-110">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="e35b8-111">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="e35b8-111">Delegated (work or school account)</span></span>|<span data-ttu-id="e35b8-112">DeviceManagementManagedDevices.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="e35b8-112">DeviceManagementManagedDevices.ReadWrite.All</span></span>|
-|<span data-ttu-id="e35b8-113">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="e35b8-113">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="e35b8-114">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="e35b8-114">Not supported.</span></span>|
-|<span data-ttu-id="e35b8-115">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="e35b8-115">Application</span></span>|<span data-ttu-id="e35b8-116">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="e35b8-116">Not supported.</span></span>|
+|<span data-ttu-id="cbeec-111">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="cbeec-111">Delegated (work or school account)</span></span>|<span data-ttu-id="cbeec-112">DeviceManagementManagedDevices.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="cbeec-112">DeviceManagementManagedDevices.ReadWrite.All</span></span>|
+|<span data-ttu-id="cbeec-113">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="cbeec-113">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="cbeec-114">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="cbeec-114">Not supported.</span></span>|
+|<span data-ttu-id="cbeec-115">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="cbeec-115">Application</span></span>|<span data-ttu-id="cbeec-116">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="cbeec-116">Not supported.</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="e35b8-117">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="e35b8-117">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="cbeec-117">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="cbeec-117">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -32,27 +33,27 @@ ms.locfileid: "27315520"
 GET /deviceManagement/applePushNotificationCertificate/downloadApplePushNotificationCertificateSigningRequest
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="e35b8-118">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="e35b8-118">Request headers</span></span>
-|<span data-ttu-id="e35b8-119">ヘッダー</span><span class="sxs-lookup"><span data-stu-id="e35b8-119">Header</span></span>|<span data-ttu-id="e35b8-120">値</span><span class="sxs-lookup"><span data-stu-id="e35b8-120">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="cbeec-118">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="cbeec-118">Request headers</span></span>
+|<span data-ttu-id="cbeec-119">ヘッダー</span><span class="sxs-lookup"><span data-stu-id="cbeec-119">Header</span></span>|<span data-ttu-id="cbeec-120">値</span><span class="sxs-lookup"><span data-stu-id="cbeec-120">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="e35b8-121">Authorization</span><span class="sxs-lookup"><span data-stu-id="e35b8-121">Authorization</span></span>|<span data-ttu-id="e35b8-122">ベアラー &lt;トークン&gt; が必須。</span><span class="sxs-lookup"><span data-stu-id="e35b8-122">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="e35b8-123">Accept</span><span class="sxs-lookup"><span data-stu-id="e35b8-123">Accept</span></span>|<span data-ttu-id="e35b8-124">application/json</span><span class="sxs-lookup"><span data-stu-id="e35b8-124">application/json</span></span>|
+|<span data-ttu-id="cbeec-121">Authorization</span><span class="sxs-lookup"><span data-stu-id="cbeec-121">Authorization</span></span>|<span data-ttu-id="cbeec-122">ベアラー &lt;トークン&gt; が必須。</span><span class="sxs-lookup"><span data-stu-id="cbeec-122">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="cbeec-123">Accept</span><span class="sxs-lookup"><span data-stu-id="cbeec-123">Accept</span></span>|<span data-ttu-id="cbeec-124">application/json</span><span class="sxs-lookup"><span data-stu-id="cbeec-124">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="e35b8-125">要求本文</span><span class="sxs-lookup"><span data-stu-id="e35b8-125">Request body</span></span>
-<span data-ttu-id="e35b8-126">このメソッドには、要求本文を指定しません。</span><span class="sxs-lookup"><span data-stu-id="e35b8-126">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="cbeec-125">要求本文</span><span class="sxs-lookup"><span data-stu-id="cbeec-125">Request body</span></span>
+<span data-ttu-id="cbeec-126">このメソッドには、要求本文を指定しません。</span><span class="sxs-lookup"><span data-stu-id="cbeec-126">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="e35b8-127">応答</span><span class="sxs-lookup"><span data-stu-id="e35b8-127">Response</span></span>
-<span data-ttu-id="e35b8-128">成功した場合、この関数は `200 OK` 応答コードと、応答本文で String を返します。</span><span class="sxs-lookup"><span data-stu-id="e35b8-128">If successful, this function returns a `200 OK` response code and a String in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="cbeec-127">応答</span><span class="sxs-lookup"><span data-stu-id="cbeec-127">Response</span></span>
+<span data-ttu-id="cbeec-128">成功した場合、この関数は `200 OK` 応答コードと、応答本文で String を返します。</span><span class="sxs-lookup"><span data-stu-id="cbeec-128">If successful, this function returns a `200 OK` response code and a String in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="e35b8-129">例</span><span class="sxs-lookup"><span data-stu-id="e35b8-129">Example</span></span>
-### <a name="request"></a><span data-ttu-id="e35b8-130">要求</span><span class="sxs-lookup"><span data-stu-id="e35b8-130">Request</span></span>
-<span data-ttu-id="e35b8-131">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="e35b8-131">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="cbeec-129">例</span><span class="sxs-lookup"><span data-stu-id="cbeec-129">Example</span></span>
+### <a name="request"></a><span data-ttu-id="cbeec-130">要求</span><span class="sxs-lookup"><span data-stu-id="cbeec-130">Request</span></span>
+<span data-ttu-id="cbeec-131">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="cbeec-131">Here is an example of the request.</span></span>
 ``` http
 GET https://graph.microsoft.com/v1.0/deviceManagement/applePushNotificationCertificate/downloadApplePushNotificationCertificateSigningRequest
 ```
 
-### <a name="response"></a><span data-ttu-id="e35b8-132">応答</span><span class="sxs-lookup"><span data-stu-id="e35b8-132">Response</span></span>
-<span data-ttu-id="e35b8-p102">以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。</span><span class="sxs-lookup"><span data-stu-id="e35b8-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="cbeec-132">応答</span><span class="sxs-lookup"><span data-stu-id="cbeec-132">Response</span></span>
+<span data-ttu-id="cbeec-p102">以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。</span><span class="sxs-lookup"><span data-stu-id="cbeec-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
