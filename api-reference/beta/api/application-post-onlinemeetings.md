@@ -2,12 +2,13 @@
 title: オンライン会議を作成します。
 description: 要求の本文で指定されたユーザーの代わりにオンライン会議を作成します。
 author: VinodRavichandran
-ms.openlocfilehash: 7b40bd2b9bedcee4777138403eb895f972bab9fb
-ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
+localization_priority: Priority
+ms.openlocfilehash: bd16b6979eed2c7d9386313f2ca07cb9ea2c5c6c
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "27380332"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27838949"
 ---
 # <a name="create-online-meeting"></a>オンライン会議を作成します。
 

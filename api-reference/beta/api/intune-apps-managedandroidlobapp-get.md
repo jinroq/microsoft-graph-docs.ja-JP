@@ -2,12 +2,13 @@
 title: Get managedAndroidLobApp
 description: managedAndroidLobApp オブジェクトのプロパティとリレーションシップを読み取ります。
 author: tfitzmac
-ms.openlocfilehash: a5ac7007105d8fe609b5530e3f86dc135ade8393
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 06604421b274b6ba5900f5e7cba636f8a8e41bb9
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27330829"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27838235"
 ---
 # <a name="get-managedandroidlobapp"></a>Get managedAndroidLobApp
 

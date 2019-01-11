@@ -2,12 +2,13 @@
 title: windowsStartMenuModeType 列挙型
 description: '[スタート] メニューの表示モードの種類です。'
 author: tfitzmac
-ms.openlocfilehash: 175353bbde9b516fc13cd19394774234ad329dad
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 5a1c9ed3d223e81330411a164b545e2e64ee4fb1
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27320903"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27838879"
 ---
 # <a name="windowsstartmenumodetype-enum-type"></a>windowsStartMenuModeType 列挙型
 

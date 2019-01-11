@@ -2,12 +2,13 @@
 title: enrollmentTroubleshootingEvent の削除
 description: enrollmentTroubleshootingEvent を削除します。
 author: tfitzmac
-ms.openlocfilehash: 91ccff92e22bc6598a46b244b2852ec466c36bfb
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: c34e53f7c23d4eb6c7c281b02d7fc77a945313f2
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27301905"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27839656"
 ---
 # <a name="delete-enrollmenttroubleshootingevent"></a>enrollmentTroubleshootingEvent の削除
 

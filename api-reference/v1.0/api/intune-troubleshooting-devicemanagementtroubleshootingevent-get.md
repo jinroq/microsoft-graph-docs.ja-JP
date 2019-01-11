@@ -2,12 +2,13 @@
 title: Get deviceManagementTroubleshootingEvent
 description: deviceManagementTroubleshootingEvent オブジェクトのプロパティとリレーションシップを読み取ります。
 author: tfitzmac
-ms.openlocfilehash: 63600c8d6ca01ecbbafaf8d85c2b169192c12426
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 1704536a527e78d3a49e577e487e2f5f417c7514
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27349547"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27839684"
 ---
 # <a name="get-devicemanagementtroubleshootingevent"></a>Get deviceManagementTroubleshootingEvent
 

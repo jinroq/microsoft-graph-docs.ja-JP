@@ -2,12 +2,13 @@
 title: AndroidImportedPFXCertificateProfile を取得します。
 description: AndroidImportedPFXCertificateProfile オブジェクトのプロパティと関係を参照してください。
 author: tfitzmac
-ms.openlocfilehash: 2e78fee1989cc911b1fc12871d81c21c1b349c9d
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 1bfe1d30a6299f5de3cab1be81bb35936305f399
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27360432"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27838382"
 ---
 # <a name="get-androidimportedpfxcertificateprofile"></a>AndroidImportedPFXCertificateProfile を取得します。
 

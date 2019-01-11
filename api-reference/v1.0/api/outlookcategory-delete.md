@@ -2,12 +2,13 @@
 title: Outlook カテゴリを削除する
 description: 指定した outlookCategory オブジェクトを削除します。
 author: angelgolfer-ms
-ms.openlocfilehash: b82125c33c7b11274bfee80d9d1949ea776745c4
-ms.sourcegitcommit: 37591c2299c80e7675cd2b5f781e1eeeba628a60
+localization_priority: Normal
+ms.openlocfilehash: c54c35347f26a957e2779aa90f7f6a951ef48ada
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "27748494"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27839698"
 ---
 # <a name="delete-outlook-category"></a>Outlook カテゴリを削除する
 

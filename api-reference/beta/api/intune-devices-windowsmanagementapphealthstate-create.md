@@ -2,12 +2,13 @@
 title: WindowsManagementAppHealthState を作成します。
 description: 新しい windowsManagementAppHealthState オブジェクトを作成します。
 author: tfitzmac
-ms.openlocfilehash: 5fec23dec7510c0b7b1a53b0be7d2dfe507959f3
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: b3df0880168c4b4ccb15b11e39124ec8ee7ab708
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27359081"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27838627"
 ---
 # <a name="create-windowsmanagementapphealthstate"></a>WindowsManagementAppHealthState を作成します。
 

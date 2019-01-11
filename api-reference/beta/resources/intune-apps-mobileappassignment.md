@@ -2,12 +2,13 @@
 title: mobileAppAssignment リソース タイプ
 description: モバイル アプリのグループ割り当て用に使用されるプロパティを含むクラスです。
 author: tfitzmac
-ms.openlocfilehash: 5f1413bc973d3721c7e9b01aa29e513028af9926
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 3eefc11d0e0df41ea452d903bcc159a2fbe2865e
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27320573"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27839511"
 ---
 # <a name="mobileappassignment-resource-type"></a>mobileAppAssignment リソース タイプ
 

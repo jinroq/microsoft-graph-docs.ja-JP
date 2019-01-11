@@ -2,12 +2,13 @@
 title: TableRow を取得する　
 description: tablerow オブジェクトのプロパティと関係を取得します。
 author: lumine2008
-ms.openlocfilehash: 472906f105a4f43de938e903c43b73adf6cb8045
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: e36cdfc54f42dcdee619637952252c43d5ccc82a
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27329366"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27838375"
 ---
 # <a name="get-tablerow"></a>TableRow を取得する　
 

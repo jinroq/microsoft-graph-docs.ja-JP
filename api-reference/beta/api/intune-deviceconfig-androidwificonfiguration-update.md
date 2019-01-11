@@ -2,12 +2,13 @@
 title: AndroidWiFiConfiguration を更新します。
 description: AndroidWiFiConfiguration オブジェクトのプロパティを更新します。
 author: tfitzmac
-ms.openlocfilehash: 31a91925ea406945800490f3385a6aea8ab27449
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: c399db7c4e8f2af8ff8ef8224d84aec764506956
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27307694"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27837143"
 ---
 # <a name="update-androidwificonfiguration"></a>AndroidWiFiConfiguration を更新します。
 

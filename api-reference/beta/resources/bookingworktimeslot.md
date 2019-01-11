@@ -1,12 +1,13 @@
 ---
 title: bookingWorkTimeSlot リソースの種類
 description: " > **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。"
-ms.openlocfilehash: 61436ca3e94ab15c44fc1898827a3de511c8ee94
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 69a802e4addd3c0cb821a630707a62724ea984a2
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27069418"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27839558"
 ---
 # <a name="bookingworktimeslot-resource-type"></a>bookingWorkTimeSlot リソースの種類
 
@@ -16,7 +17,7 @@ ms.locfileid: "27069418"
 
 
 ## <a name="properties"></a>プロパティ
-| プロパティ     | 型   |説明|
+| プロパティ     | 種類   |説明|
 |:---------------|:--------|:----------|
 |end|TimeOfDay|起動時に動作する 1 日の時間。 たとえば、08:00:00.0000000 です。|
 |開始|TimeOfDay|1 日の時間が停止するを作業です。 たとえば、17:00:00.0000000 です。|
