@@ -2,28 +2,29 @@
 title: macOSGeneralDeviceConfigurations のリスト
 description: macOSGeneralDeviceConfiguration オブジェクトのプロパティとリレーションシップをリストします。
 author: tfitzmac
-ms.openlocfilehash: 27acd8306ab473e2d176856163359e954fa3b0a3
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 6c11cc0f1fef43297fd585dc5c9e30ecd361d04e
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27359221"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27855217"
 ---
-# <a name="list-macosgeneraldeviceconfigurations"></a><span data-ttu-id="10333-103">macOSGeneralDeviceConfigurations のリスト</span><span class="sxs-lookup"><span data-stu-id="10333-103">List macOSGeneralDeviceConfigurations</span></span>
+# <a name="list-macosgeneraldeviceconfigurations"></a><span data-ttu-id="d2fdb-103">macOSGeneralDeviceConfigurations のリスト</span><span class="sxs-lookup"><span data-stu-id="d2fdb-103">List macOSGeneralDeviceConfigurations</span></span>
 
-> <span data-ttu-id="10333-104">**注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。</span><span class="sxs-lookup"><span data-stu-id="10333-104">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
+> <span data-ttu-id="d2fdb-104">**注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。</span><span class="sxs-lookup"><span data-stu-id="d2fdb-104">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
 
-<span data-ttu-id="10333-105">[macOSGeneralDeviceConfiguration](../resources/intune-deviceconfig-macosgeneraldeviceconfiguration.md) オブジェクトのプロパティとリレーションシップをリストします。</span><span class="sxs-lookup"><span data-stu-id="10333-105">List properties and relationships of the [macOSGeneralDeviceConfiguration](../resources/intune-deviceconfig-macosgeneraldeviceconfiguration.md) objects.</span></span>
-## <a name="prerequisites"></a><span data-ttu-id="10333-106">前提条件</span><span class="sxs-lookup"><span data-stu-id="10333-106">Prerequisites</span></span>
-<span data-ttu-id="10333-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="10333-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="d2fdb-105">[macOSGeneralDeviceConfiguration](../resources/intune-deviceconfig-macosgeneraldeviceconfiguration.md) オブジェクトのプロパティとリレーションシップをリストします。</span><span class="sxs-lookup"><span data-stu-id="d2fdb-105">List properties and relationships of the [macOSGeneralDeviceConfiguration](../resources/intune-deviceconfig-macosgeneraldeviceconfiguration.md) objects.</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="d2fdb-106">前提条件</span><span class="sxs-lookup"><span data-stu-id="d2fdb-106">Prerequisites</span></span>
+<span data-ttu-id="d2fdb-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="d2fdb-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="10333-109">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="10333-109">Permission type</span></span>|<span data-ttu-id="10333-110">アクセス許可 (特権の大きいものから小さいものへ)</span><span class="sxs-lookup"><span data-stu-id="10333-110">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="d2fdb-109">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="d2fdb-109">Permission type</span></span>|<span data-ttu-id="d2fdb-110">アクセス許可 (特権の大きいものから小さいものへ)</span><span class="sxs-lookup"><span data-stu-id="d2fdb-110">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="10333-111">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="10333-111">Delegated (work or school account)</span></span>|<span data-ttu-id="10333-112">DeviceManagementConfiguration.ReadWrite.All、DeviceManagementConfiguration.Read.All</span><span class="sxs-lookup"><span data-stu-id="10333-112">DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All</span></span>|
-|<span data-ttu-id="10333-113">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="10333-113">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="10333-114">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="10333-114">Not supported.</span></span>|
-|<span data-ttu-id="10333-115">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="10333-115">Application</span></span>|<span data-ttu-id="10333-116">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="10333-116">Not supported.</span></span>|
+|<span data-ttu-id="d2fdb-111">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="d2fdb-111">Delegated (work or school account)</span></span>|<span data-ttu-id="d2fdb-112">DeviceManagementConfiguration.ReadWrite.All、DeviceManagementConfiguration.Read.All</span><span class="sxs-lookup"><span data-stu-id="d2fdb-112">DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All</span></span>|
+|<span data-ttu-id="d2fdb-113">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="d2fdb-113">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="d2fdb-114">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="d2fdb-114">Not supported.</span></span>|
+|<span data-ttu-id="d2fdb-115">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="d2fdb-115">Application</span></span>|<span data-ttu-id="d2fdb-116">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="d2fdb-116">Not supported.</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="10333-117">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="10333-117">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="d2fdb-117">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="d2fdb-117">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -32,27 +33,27 @@ ms.locfileid: "27359221"
 GET /deviceManagement/deviceConfigurations
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="10333-118">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="10333-118">Request headers</span></span>
-|<span data-ttu-id="10333-119">ヘッダー</span><span class="sxs-lookup"><span data-stu-id="10333-119">Header</span></span>|<span data-ttu-id="10333-120">値</span><span class="sxs-lookup"><span data-stu-id="10333-120">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="d2fdb-118">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="d2fdb-118">Request headers</span></span>
+|<span data-ttu-id="d2fdb-119">ヘッダー</span><span class="sxs-lookup"><span data-stu-id="d2fdb-119">Header</span></span>|<span data-ttu-id="d2fdb-120">値</span><span class="sxs-lookup"><span data-stu-id="d2fdb-120">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="10333-121">Authorization</span><span class="sxs-lookup"><span data-stu-id="10333-121">Authorization</span></span>|<span data-ttu-id="10333-122">ベアラー &lt;トークン&gt; が必須。</span><span class="sxs-lookup"><span data-stu-id="10333-122">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="10333-123">Accept</span><span class="sxs-lookup"><span data-stu-id="10333-123">Accept</span></span>|<span data-ttu-id="10333-124">application/json</span><span class="sxs-lookup"><span data-stu-id="10333-124">application/json</span></span>|
+|<span data-ttu-id="d2fdb-121">Authorization</span><span class="sxs-lookup"><span data-stu-id="d2fdb-121">Authorization</span></span>|<span data-ttu-id="d2fdb-122">ベアラー &lt;トークン&gt; が必須。</span><span class="sxs-lookup"><span data-stu-id="d2fdb-122">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="d2fdb-123">Accept</span><span class="sxs-lookup"><span data-stu-id="d2fdb-123">Accept</span></span>|<span data-ttu-id="d2fdb-124">application/json</span><span class="sxs-lookup"><span data-stu-id="d2fdb-124">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="10333-125">要求本文</span><span class="sxs-lookup"><span data-stu-id="10333-125">Request body</span></span>
-<span data-ttu-id="10333-126">このメソッドには、要求本文を指定しません。</span><span class="sxs-lookup"><span data-stu-id="10333-126">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="d2fdb-125">要求本文</span><span class="sxs-lookup"><span data-stu-id="d2fdb-125">Request body</span></span>
+<span data-ttu-id="d2fdb-126">このメソッドには、要求本文を指定しません。</span><span class="sxs-lookup"><span data-stu-id="d2fdb-126">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="10333-127">応答</span><span class="sxs-lookup"><span data-stu-id="10333-127">Response</span></span>
-<span data-ttu-id="10333-128">成功した場合、このメソッドは `200 OK` 応答コードと、応答本文で [macOSGeneralDeviceConfiguration](../resources/intune-deviceconfig-macosgeneraldeviceconfiguration.md) オブジェクトのコレクションを返します。</span><span class="sxs-lookup"><span data-stu-id="10333-128">If successful, this method returns a `200 OK` response code and a collection of [macOSGeneralDeviceConfiguration](../resources/intune-deviceconfig-macosgeneraldeviceconfiguration.md) objects in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="d2fdb-127">応答</span><span class="sxs-lookup"><span data-stu-id="d2fdb-127">Response</span></span>
+<span data-ttu-id="d2fdb-128">成功した場合、このメソッドは `200 OK` 応答コードと、応答本文で [macOSGeneralDeviceConfiguration](../resources/intune-deviceconfig-macosgeneraldeviceconfiguration.md) オブジェクトのコレクションを返します。</span><span class="sxs-lookup"><span data-stu-id="d2fdb-128">If successful, this method returns a `200 OK` response code and a collection of [macOSGeneralDeviceConfiguration](../resources/intune-deviceconfig-macosgeneraldeviceconfiguration.md) objects in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="10333-129">例</span><span class="sxs-lookup"><span data-stu-id="10333-129">Example</span></span>
-### <a name="request"></a><span data-ttu-id="10333-130">要求</span><span class="sxs-lookup"><span data-stu-id="10333-130">Request</span></span>
-<span data-ttu-id="10333-131">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="10333-131">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="d2fdb-129">例</span><span class="sxs-lookup"><span data-stu-id="d2fdb-129">Example</span></span>
+### <a name="request"></a><span data-ttu-id="d2fdb-130">要求</span><span class="sxs-lookup"><span data-stu-id="d2fdb-130">Request</span></span>
+<span data-ttu-id="d2fdb-131">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="d2fdb-131">Here is an example of the request.</span></span>
 ``` http
 GET https://graph.microsoft.com/v1.0/deviceManagement/deviceConfigurations
 ```
 
-### <a name="response"></a><span data-ttu-id="10333-132">応答</span><span class="sxs-lookup"><span data-stu-id="10333-132">Response</span></span>
-<span data-ttu-id="10333-p102">以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。</span><span class="sxs-lookup"><span data-stu-id="10333-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="d2fdb-132">応答</span><span class="sxs-lookup"><span data-stu-id="d2fdb-132">Response</span></span>
+<span data-ttu-id="d2fdb-p102">以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。</span><span class="sxs-lookup"><span data-stu-id="d2fdb-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json

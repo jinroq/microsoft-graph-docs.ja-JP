@@ -3,20 +3,21 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
 title: UploadSession
-ms.openlocfilehash: 48dbe479fbe69f8c93e168b86ca66853f5a012c7
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: fc03a25a790786c6d25d160a8b7f867c726dfc1b
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27021070"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27860705"
 ---
-# <a name="uploadsession-resource"></a><span data-ttu-id="68847-102">UploadSession リソース</span><span class="sxs-lookup"><span data-stu-id="68847-102">UploadSession resource</span></span>
+# <a name="uploadsession-resource"></a><span data-ttu-id="72ee1-102">UploadSession リソース</span><span class="sxs-lookup"><span data-stu-id="72ee1-102">UploadSession resource</span></span>
 
-<span data-ttu-id="68847-103">**UploadSession** リソースは、OneDrive、OneDrive for Business、または SharePoint のドキュメント ライブラリに、大容量ファイルをアップロードする方法に関する情報を提供します。</span><span class="sxs-lookup"><span data-stu-id="68847-103">The **UploadSession** resource provides information about how to upload large files to OneDrive, OneDrive for Business, or SharePoint document libraries.</span></span>
+<span data-ttu-id="72ee1-103">**UploadSession** リソースは、OneDrive、OneDrive for Business、または SharePoint のドキュメント ライブラリに、大容量ファイルをアップロードする方法に関する情報を提供します。</span><span class="sxs-lookup"><span data-stu-id="72ee1-103">The **UploadSession** resource provides information about how to upload large files to OneDrive, OneDrive for Business, or SharePoint document libraries.</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="68847-104">JSON 表記</span><span class="sxs-lookup"><span data-stu-id="68847-104">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="72ee1-104">JSON 表記</span><span class="sxs-lookup"><span data-stu-id="72ee1-104">JSON representation</span></span>
 
-<span data-ttu-id="68847-105">以下は、リソースの JSON 表記です</span><span class="sxs-lookup"><span data-stu-id="68847-105">Here is a JSON representation of the resource</span></span>
+<span data-ttu-id="72ee1-105">以下は、リソースの JSON 表記です</span><span class="sxs-lookup"><span data-stu-id="72ee1-105">Here is a JSON representation of the resource</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -32,18 +33,18 @@ ms.locfileid: "27021070"
 }
 ```
 
-## <a name="properties"></a><span data-ttu-id="68847-106">プロパティ</span><span class="sxs-lookup"><span data-stu-id="68847-106">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="72ee1-106">プロパティ</span><span class="sxs-lookup"><span data-stu-id="72ee1-106">Properties</span></span>
 
 
-| <span data-ttu-id="68847-107">プロパティ</span><span class="sxs-lookup"><span data-stu-id="68847-107">Property</span></span>       | <span data-ttu-id="68847-108">型</span><span class="sxs-lookup"><span data-stu-id="68847-108">Type</span></span>              |<span data-ttu-id="68847-109">説明</span><span class="sxs-lookup"><span data-stu-id="68847-109">Description</span></span>
+| <span data-ttu-id="72ee1-107">プロパティ</span><span class="sxs-lookup"><span data-stu-id="72ee1-107">Property</span></span>       | <span data-ttu-id="72ee1-108">型</span><span class="sxs-lookup"><span data-stu-id="72ee1-108">Type</span></span>              |<span data-ttu-id="72ee1-109">説明</span><span class="sxs-lookup"><span data-stu-id="72ee1-109">Description</span></span>
 |:-------------------|:------------------|:------------------------------------
-| <span data-ttu-id="68847-110">expirationDateTime</span><span class="sxs-lookup"><span data-stu-id="68847-110">expirationDateTime</span></span> | <span data-ttu-id="68847-111">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="68847-111">DateTimeOffset</span></span>    | <span data-ttu-id="68847-p101">アップロード セッションの有効期限が切れる日時の UTC 表示。この有効期限に達する前に、完全なファイルをアップロードする必要があります。</span><span class="sxs-lookup"><span data-stu-id="68847-p101">The date and time in UTC that the upload session will expire. The complete file must be uploaded before this expiration time is reached.</span></span>
-| <span data-ttu-id="68847-114">nextExpectedRanges</span><span class="sxs-lookup"><span data-stu-id="68847-114">nextExpectedRanges</span></span> | <span data-ttu-id="68847-115">String collection</span><span class="sxs-lookup"><span data-stu-id="68847-115">String collection</span></span> | <span data-ttu-id="68847-p102">サーバーのファイルに足りないバイト範囲のコレクションです。これらの範囲は 0 インデックスが作成されており、「開始-終了」形式のものです (例、「0-26」でファイルの最初の 27 バイトを示す)。</span><span class="sxs-lookup"><span data-stu-id="68847-p102">A collection of byte ranges that the server is missing for the file. These ranges are zero indexed and of the format "start-end" (e.g. "0-26" to indicate the first 27 bytes of the file).</span></span>
-| <span data-ttu-id="68847-118">uploadUrl</span><span class="sxs-lookup"><span data-stu-id="68847-118">uploadUrl</span></span>          | <span data-ttu-id="68847-119">String</span><span class="sxs-lookup"><span data-stu-id="68847-119">String</span></span>            | <span data-ttu-id="68847-120">ファイルのバイト範囲の PUT 要求を受け付ける URL エンドポイントです。</span><span class="sxs-lookup"><span data-stu-id="68847-120">The URL endpoint that accepts PUT requests for byte ranges of the file.</span></span>
+| <span data-ttu-id="72ee1-110">expirationDateTime</span><span class="sxs-lookup"><span data-stu-id="72ee1-110">expirationDateTime</span></span> | <span data-ttu-id="72ee1-111">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="72ee1-111">DateTimeOffset</span></span>    | <span data-ttu-id="72ee1-p101">アップロード セッションの有効期限が切れる日時の UTC 表示。この有効期限に達する前に、完全なファイルをアップロードする必要があります。</span><span class="sxs-lookup"><span data-stu-id="72ee1-p101">The date and time in UTC that the upload session will expire. The complete file must be uploaded before this expiration time is reached.</span></span>
+| <span data-ttu-id="72ee1-114">nextExpectedRanges</span><span class="sxs-lookup"><span data-stu-id="72ee1-114">nextExpectedRanges</span></span> | <span data-ttu-id="72ee1-115">String collection</span><span class="sxs-lookup"><span data-stu-id="72ee1-115">String collection</span></span> | <span data-ttu-id="72ee1-p102">サーバーのファイルに足りないバイト範囲のコレクションです。これらの範囲は 0 インデックスが作成されており、「開始-終了」形式のものです (例、「0-26」でファイルの最初の 27 バイトを示す)。</span><span class="sxs-lookup"><span data-stu-id="72ee1-p102">A collection of byte ranges that the server is missing for the file. These ranges are zero indexed and of the format "start-end" (e.g. "0-26" to indicate the first 27 bytes of the file).</span></span>
+| <span data-ttu-id="72ee1-118">uploadUrl</span><span class="sxs-lookup"><span data-stu-id="72ee1-118">uploadUrl</span></span>          | <span data-ttu-id="72ee1-119">String</span><span class="sxs-lookup"><span data-stu-id="72ee1-119">String</span></span>            | <span data-ttu-id="72ee1-120">ファイルのバイト範囲の PUT 要求を受け付ける URL エンドポイントです。</span><span class="sxs-lookup"><span data-stu-id="72ee1-120">The URL endpoint that accepts PUT requests for byte ranges of the file.</span></span>
 
-## <a name="see-also"></a><span data-ttu-id="68847-121">関連項目</span><span class="sxs-lookup"><span data-stu-id="68847-121">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="72ee1-121">関連項目</span><span class="sxs-lookup"><span data-stu-id="72ee1-121">See also</span></span>
 
-- [<span data-ttu-id="68847-122">アップロード セッションを使ってサイズの大きなファイルをアップロードする</span><span class="sxs-lookup"><span data-stu-id="68847-122">Upload large files with an upload session</span></span>](../api/driveitem-createuploadsession.md)
+- [<span data-ttu-id="72ee1-122">アップロード セッションを使ってサイズの大きなファイルをアップロードする</span><span class="sxs-lookup"><span data-stu-id="72ee1-122">Upload large files with an upload session</span></span>](../api/driveitem-createuploadsession.md)
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

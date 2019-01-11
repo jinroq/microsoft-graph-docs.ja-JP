@@ -1,28 +1,29 @@
 ---
 title: stringKeyStringValuePair リソースの種類
 description: キーが文字列、値は、文字列キーと値のペアを表します。
-ms.openlocfilehash: 012625d78c8e07b3d38acba063acb57c751ced32
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 8f9c0f5c87dfd2080d24d31d304cfce4197c34de
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27073528"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27855952"
 ---
-# <a name="stringkeystringvaluepair-resource-type"></a><span data-ttu-id="1db05-103">stringKeyStringValuePair リソースの種類</span><span class="sxs-lookup"><span data-stu-id="1db05-103">stringKeyStringValuePair resource type</span></span>
+# <a name="stringkeystringvaluepair-resource-type"></a><span data-ttu-id="eb758-103">stringKeyStringValuePair リソースの種類</span><span class="sxs-lookup"><span data-stu-id="eb758-103">stringKeyStringValuePair resource type</span></span>
 
-> <span data-ttu-id="1db05-104">**重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。</span><span class="sxs-lookup"><span data-stu-id="1db05-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="1db05-105">実稼働アプリケーションでの、これらの API の使用はサポートされていません。</span><span class="sxs-lookup"><span data-stu-id="1db05-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="eb758-104">**重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。</span><span class="sxs-lookup"><span data-stu-id="eb758-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="eb758-105">実稼働アプリケーションでの、これらの API の使用はサポートされていません。</span><span class="sxs-lookup"><span data-stu-id="eb758-105">Use of these APIs in production applications is not supported.</span></span>
 
-<span data-ttu-id="1db05-106">キーが文字列、値は、文字列キーと値のペアを表します。</span><span class="sxs-lookup"><span data-stu-id="1db05-106">Represents a key-value pair where the key is a string and the value is a string.</span></span>
+<span data-ttu-id="eb758-106">キーが文字列、値は、文字列キーと値のペアを表します。</span><span class="sxs-lookup"><span data-stu-id="eb758-106">Represents a key-value pair where the key is a string and the value is a string.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="1db05-107">プロパティ</span><span class="sxs-lookup"><span data-stu-id="1db05-107">Properties</span></span>
-| <span data-ttu-id="1db05-108">プロパティ</span><span class="sxs-lookup"><span data-stu-id="1db05-108">Property</span></span>     | <span data-ttu-id="1db05-109">型</span><span class="sxs-lookup"><span data-stu-id="1db05-109">Type</span></span>   |<span data-ttu-id="1db05-110">説明</span><span class="sxs-lookup"><span data-stu-id="1db05-110">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="eb758-107">プロパティ</span><span class="sxs-lookup"><span data-stu-id="eb758-107">Properties</span></span>
+| <span data-ttu-id="eb758-108">プロパティ</span><span class="sxs-lookup"><span data-stu-id="eb758-108">Property</span></span>     | <span data-ttu-id="eb758-109">種類</span><span class="sxs-lookup"><span data-stu-id="eb758-109">Type</span></span>   |<span data-ttu-id="eb758-110">説明</span><span class="sxs-lookup"><span data-stu-id="eb758-110">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="1db05-111">Key</span><span class="sxs-lookup"><span data-stu-id="1db05-111">key</span></span>|<span data-ttu-id="1db05-112">String</span><span class="sxs-lookup"><span data-stu-id="1db05-112">String</span></span>|<span data-ttu-id="1db05-113">キー。</span><span class="sxs-lookup"><span data-stu-id="1db05-113">Key.</span></span>|
-|<span data-ttu-id="1db05-114">value</span><span class="sxs-lookup"><span data-stu-id="1db05-114">value</span></span>|<span data-ttu-id="1db05-115">文字列</span><span class="sxs-lookup"><span data-stu-id="1db05-115">String</span></span>|<span data-ttu-id="1db05-116">値。</span><span class="sxs-lookup"><span data-stu-id="1db05-116">Value.</span></span>|
+|<span data-ttu-id="eb758-111">Key</span><span class="sxs-lookup"><span data-stu-id="eb758-111">key</span></span>|<span data-ttu-id="eb758-112">String</span><span class="sxs-lookup"><span data-stu-id="eb758-112">String</span></span>|<span data-ttu-id="eb758-113">キー。</span><span class="sxs-lookup"><span data-stu-id="eb758-113">Key.</span></span>|
+|<span data-ttu-id="eb758-114">value</span><span class="sxs-lookup"><span data-stu-id="eb758-114">value</span></span>|<span data-ttu-id="eb758-115">文字列</span><span class="sxs-lookup"><span data-stu-id="eb758-115">String</span></span>|<span data-ttu-id="eb758-116">値。</span><span class="sxs-lookup"><span data-stu-id="eb758-116">Value.</span></span>|
 
-## <a name="json-representation"></a><span data-ttu-id="1db05-117">JSON 表記</span><span class="sxs-lookup"><span data-stu-id="1db05-117">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="eb758-117">JSON 表記</span><span class="sxs-lookup"><span data-stu-id="eb758-117">JSON representation</span></span>
 
-<span data-ttu-id="1db05-118">リソースの JSON 表記を次に示します。</span><span class="sxs-lookup"><span data-stu-id="1db05-118">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="eb758-118">リソースの JSON 表記を次に示します。</span><span class="sxs-lookup"><span data-stu-id="eb758-118">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
