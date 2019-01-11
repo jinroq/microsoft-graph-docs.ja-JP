@@ -2,12 +2,13 @@
 title: wipeManagedAppRegistrationsByDeviceTag アクション
 description: 指定されたデバイス タグが含まれるアプリ登録でワイプ操作を実行します。
 author: tfitzmac
-ms.openlocfilehash: 227d702d217669215894c6e6c0cfd3fa67075277
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 5613a3e80acf8e6091cfb37c9e9818231854321b
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27326384"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27851115"
 ---
 # <a name="wipemanagedappregistrationsbydevicetag-action"></a>wipeManagedAppRegistrationsByDeviceTag アクション
 

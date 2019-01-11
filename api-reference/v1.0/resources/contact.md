@@ -2,12 +2,13 @@
 title: contact リソース型
 description: 連絡先は、連絡を取り合う人や組織に関する情報を編成および保存できる Outlook のアイテムです。連絡先は連絡先フォルダーに格納されます。
 author: angelgolfer-ms
-ms.openlocfilehash: 13eb3b1e3f88c5018031176cffbcc89a038073ed
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Priority
+ms.openlocfilehash: 6ff19278e6cf120404b892bb95881326ce281a72
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27334973"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27854377"
 ---
 # <a name="contact-resource-type"></a>contact リソース型
 

@@ -2,12 +2,13 @@
 title: TableSort を取得する　
 description: tablesort オブジェクトのプロパティと関係を取得します。
 author: lumine2008
-ms.openlocfilehash: 2968a0c5639acb84245db6c4816ce17cb8f0616f
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 6df858ef44e04526062f633a833bc6d29dc6e1ee
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27325075"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27851010"
 ---
 # <a name="get-tablesort"></a>TableSort を取得する　
 

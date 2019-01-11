@@ -1,12 +1,13 @@
 ---
 title: 'directoryObject: デルタ'
 description: 'Get を新規作成、更新、または、次の種類のディレクトリ オブジェクトを削除: ユーザー、グループ、および 1 つのデルタのクエリで、組織の連絡先です。 詳細については変更の履歴を参照してください。'
-ms.openlocfilehash: 98674a141c0567defb06da7b1ccd95a209aaa4f5
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 823107bce56d77c4e9c29a77405ac014443f5190
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27068350"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27854496"
 ---
 # <a name="directoryobject-delta"></a>directoryObject: デルタ
 

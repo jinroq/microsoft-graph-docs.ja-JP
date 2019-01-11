@@ -2,12 +2,13 @@
 title: chatInfo リソースの種類
 description: マイクロソフトのチーム内のメッセージについて説明します。
 author: VinodRavichandran
-ms.openlocfilehash: 45af1a7e178286c77ed4bf90528eb602fd48a6bb
-ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
+localization_priority: Normal
+ms.openlocfilehash: c2cc0dd288abdab7852017600c4c55b9a40b0aa7
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "27380416"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27852942"
 ---
 # <a name="chatinfo-resource-type"></a>chatInfo リソースの種類
 
@@ -17,7 +18,7 @@ ms.locfileid: "27380416"
 
 ## <a name="properties"></a>プロパティ
 
-| プロパティ            | 型    | 説明|
+| プロパティ            | 種類    | 説明|
 |:--------------------|:--------|:-----------|
 | メッセージ Id           | String  | マイクロソフト チームのチャネルでのメッセージの一意の識別子です。 |
 | replyChainMessageId | String  | 返信メッセージの ID です。 |

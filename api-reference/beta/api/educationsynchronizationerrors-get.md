@@ -2,12 +2,13 @@
 title: EducationSynchronizationErrors を取得します。
 description: '検証中に、テナントの特定の学校のデータの同期プロファイルの同期中に発生したエラーを取得します。 '
 author: mmast-msft
-ms.openlocfilehash: afd494f77e8298007c70643321c05660569ee1ad
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 1b0504ae8ef7c463afb4041a89bfb4229833b63e
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27322156"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27854006"
 ---
 # <a name="get-educationsynchronizationerrors"></a>EducationSynchronizationErrors を取得します。
 

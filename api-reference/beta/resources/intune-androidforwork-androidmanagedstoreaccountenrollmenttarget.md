@@ -2,12 +2,13 @@
 title: androidManagedStoreAccountEnrollmentTarget 列挙型
 description: アカウントの種類を対象とする作業のデバイス管理のためのアプリ
 author: tfitzmac
-ms.openlocfilehash: c6de12afa46d5b3cb32c2492db4c7f6dd683bb59
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 0c37b234e128f27694aafbf75b5083622bf39fe7
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27327511"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27852431"
 ---
 # <a name="androidmanagedstoreaccountenrollmenttarget-enum-type"></a>androidManagedStoreAccountEnrollmentTarget 列挙型
 

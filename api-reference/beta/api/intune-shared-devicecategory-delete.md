@@ -2,12 +2,13 @@
 title: Delete deviceCategory
 description: deviceCategory を削除します。
 author: tfitzmac
-ms.openlocfilehash: ea8f8860f79cc0c14e985c64a1457b114d30b6b4
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: b9630b5f3b86ec22a4a1be735fde91d14550fc1e
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27321295"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27853397"
 ---
 # <a name="delete-devicecategory"></a>Delete deviceCategory
 

@@ -1,12 +1,13 @@
 ---
 title: alternativeSecurityId リソースの種類
 description: 内部使用のみ。
-ms.openlocfilehash: 9d941469da133d9a3e7149dfca55c813f60b3ce8
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 23ef74085a4a3cc383f0854e9139c9a0b63e3d40
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27020227"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27853803"
 ---
 # <a name="alternativesecurityid-resource-type"></a>alternativeSecurityId リソースの種類
 
@@ -28,7 +29,7 @@ ms.locfileid: "27020227"
 ```
 
 ## <a name="properties"></a>プロパティ
-| プロパティ         | 型       | 説明
+| プロパティ         | 種類       | 説明
 |:-----------------|:-----------|:---------------------
 | type             | Int32      | 内部使用のみ。 
 | identityProvider | 文字列     | 内部使用のみ。 

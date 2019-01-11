@@ -2,12 +2,13 @@
 title: MacOSTrustedRootCertificate を削除します。
 description: MacOSTrustedRootCertificate を削除します。
 author: tfitzmac
-ms.openlocfilehash: 449c7155d3ea58679c272f01bcfc5dac063366cc
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: a95ae56945fc4bee4f6ff1c54ff6bc439d2cd8a1
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27355854"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27853348"
 ---
 # <a name="delete-macostrustedrootcertificate"></a>MacOSTrustedRootCertificate を削除します。
 

@@ -2,12 +2,13 @@
 title: windowsInformationProtectionAppLockerFile の作成
 description: 新しい windowsInformationProtectionAppLockerFile オブジェクトを作成します。
 author: tfitzmac
-ms.openlocfilehash: f2cbed922d6f2ac130169e5d9c85e3a5231184a5
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 13b6d9a0e8fc6e23b2a5b7b85e257ef8d3ac9c34
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27317123"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27853320"
 ---
 # <a name="create-windowsinformationprotectionapplockerfile"></a>windowsInformationProtectionAppLockerFile の作成
 

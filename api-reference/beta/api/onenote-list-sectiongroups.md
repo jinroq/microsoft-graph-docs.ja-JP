@@ -2,12 +2,13 @@
 title: sectionGroups を一覧表示する
 description: sectionGroup オブジェクトの一覧を取得します。
 author: Jewan-microsoft
-ms.openlocfilehash: eeadff91bab167ae9e3be2f4e80d42f1515d7c8e
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: d9f2846d9737010fd26f7d853eeca47273a8be00
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27305454"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27854517"
 ---
 # <a name="list-sectiongroups"></a>sectionGroups を一覧表示する
 

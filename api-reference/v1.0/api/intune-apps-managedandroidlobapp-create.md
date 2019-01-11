@@ -2,12 +2,13 @@
 title: Create managedAndroidLobApp
 description: 新しい managedAndroidLobApp オブジェクトを作成します。
 author: tfitzmac
-ms.openlocfilehash: 2a86720eb942821bfd8ff47dbc71b934f12d9e7d
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: d3fc6ab24162b63a79a3d0844cd2b8cdb91e0cb6
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27302374"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27853796"
 ---
 # <a name="create-managedandroidlobapp"></a>Create managedAndroidLobApp
 

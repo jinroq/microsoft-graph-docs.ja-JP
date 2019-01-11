@@ -1,12 +1,13 @@
 ---
 title: 'educationAssignment: 発行'
 description: この操作では、公開済みのステータスに、元のドラフト状態から、割り当ての状態を変更します。 クラスの先生だけでは、この呼び出しを行うことができます。 割り当ては、下書きの状態では、受講者は、割り当ては表示されませんも、提出書類の任意のオブジェクトになります。 この API を呼び出すときは、送信オブジェクトは作成され、割り当ては、受講者のリストに表示されます。
-ms.openlocfilehash: d5de5a45d437662dbcd2bf869aef93502a3669f6
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 09261da506113f53c6b6b9ff98af69c7dba4c784
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27067329"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27854741"
 ---
 # <a name="educationassignment-publish"></a>educationAssignment: 発行
 

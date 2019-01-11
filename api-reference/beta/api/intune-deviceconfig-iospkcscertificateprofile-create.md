@@ -2,12 +2,13 @@
 title: IosPkcsCertificateProfile を作成します。
 description: 新しい iosPkcsCertificateProfile オブジェクトを作成します。
 author: tfitzmac
-ms.openlocfilehash: dcfd75460e370d02dcb05c54a99685cfe148459d
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: c07e2d297a5fa0cafe64c5730b54e6af0963e782
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27305405"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27852445"
 ---
 # <a name="create-iospkcscertificateprofile"></a>IosPkcsCertificateProfile を作成します。
 

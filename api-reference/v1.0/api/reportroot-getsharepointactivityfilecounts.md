@@ -1,12 +1,13 @@
 ---
 title: 'reportRoot: getSharePointActivityFileCounts'
 description: SharePoint サイトに保存されているファイルを操作した、それぞれ別個のライセンス ユーザーの数を取得します。
-ms.openlocfilehash: cacc2b99b841a9775aa6b2b6a67ed03cf0cd82a7
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 46e522b620fed3f7a9da3b4d8e707f38abc07817
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27020559"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27853187"
 ---
 # <a name="reportroot-getsharepointactivityfilecounts"></a>reportRoot: getSharePointActivityFileCounts
 
@@ -36,7 +37,7 @@ GET /reports/getSharePointActivityFileCounts(period='{period_value}')
 
 要求 URL に、次のパラメーターと有効な値を指定します。
 
-| パラメーター | 型   | 説明                              |
+| パラメーター | Type   | 説明                              |
 | :-------- | :----- | :--------------------------------------- |
 | period    | 文字列 | レポートを集計する期間の長さを指定します。 {period_value} でサポートされている値は D7、D30、D90、D180 です。 これらの値は、D*n* の形式 (*n* はレポートを集計する日数) に従います。 必須。 |
 

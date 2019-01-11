@@ -1,12 +1,13 @@
 ---
 title: Microsoft Intune 内の共有リソース
 description: これらのエンドポイントは、Intune ワークフローの複数の Microsoft グラフ API で使用されます。  意図、目的、および特定のリソースを使用する必要なアクセス許可は、特定のワークフローと基になる呼び出しのコンテキストによって異なります。  さらに、特定のメソッド、プロパティ、およびアクションが特定のワークフローに対してのみサポートします。
-ms.openlocfilehash: a0e896b2aed219679ec45804dc94b22b7cb9d727
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: c381ba84c9240a2b8e7428a3c055b8baf35fb243
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27073899"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27852627"
 ---
 # <a name="shared-resources-in-microsoft-intune"></a>Microsoft Intune 内の共有リソース
 
@@ -47,7 +48,7 @@ Intune ワークフローとの間は、次のグラフのリソースを共有�
 - [状態を実行します。](intune-shared-runstate.md)
 - [UI 状態の生成オプションを保存](intune-shared-saveduistategenerationoptions.md)
 - [URI](intune-shared-uri.md)
-- [User](intune-shared-user.md)
+- [ユーザー](intune-shared-user.md)
 - [VPP トークン アカウントの種類](intune-shared-vpptokenaccounttype.md)
 - [VPP トークンの操作の失敗の理由](intune-shared-vpptokenactionfailurereason.md)
 - [Windows ドメインの結合の構成](intune-shared-windowsdomainjoinconfiguration.md)

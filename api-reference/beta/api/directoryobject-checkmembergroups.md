@@ -1,12 +1,13 @@
 ---
 title: メンバー グループをチェックする
 description: メンバーシップのグループ、およびそのリストから指定されたリスト内のそれらのグループを確認します。
-ms.openlocfilehash: b7baccd19b9d5a84ecbca4d75bca053eb51bc3f6
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: cfa9f1a50ffd284233707799a8d05d6b5c46dfc1
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27066362"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27854041"
 ---
 # <a name="check-member-groups"></a>メンバー グループをチェックする
 
@@ -34,7 +35,7 @@ POST /servciePrincipals/{id}/checkMemberGroups
 POST /directoryObjects/{id}/checkMemberGroups
 ```
 ## <a name="request-headers"></a>要求ヘッダー
-| 名前       | 型 | 説明|
+| 名前       | 種類 | 説明|
 |:---------------|:--------|:----------|
 | Authorization  | string  | ベアラー {トークン}。必須。 |
 | Content-Type  | application/json  |
@@ -42,7 +43,7 @@ POST /directoryObjects/{id}/checkMemberGroups
 ## <a name="request-body"></a>要求本文
 要求本文で、次のパラメーターを含む JSON オブジェクトを指定します。
 
-| パラメーター    | 型   |説明|
+| パラメーター    | Type   |説明|
 |:---------------|:--------|:----------|
 |groupIds|String|メンバーシップを確認するためのグループのオブジェクト ID を含むコレクションです。最大 20 グループを指定することが可能です。|
 

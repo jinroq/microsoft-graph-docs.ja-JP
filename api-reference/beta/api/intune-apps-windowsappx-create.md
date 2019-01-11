@@ -2,12 +2,13 @@
 title: WindowsAppX を作成します。
 description: 新しい windowsAppX オブジェクトを作成します。
 author: tfitzmac
-ms.openlocfilehash: 9a7f2f0327fb8b0b8f2971efe58c6d3bdb5e03ba
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: cd6e79a3dfda5d222a56646901a4efe07101aec5
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27361951"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27854244"
 ---
 # <a name="create-windowsappx"></a>WindowsAppX を作成します。
 

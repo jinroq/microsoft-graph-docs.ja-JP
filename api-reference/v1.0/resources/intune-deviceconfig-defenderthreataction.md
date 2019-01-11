@@ -1,12 +1,13 @@
 ---
 title: defenderThreatAction 列挙型
 description: Defender の既定のアクション実行するには、マルウェアの脅威が検出されました。
-ms.openlocfilehash: a5eb108a3ab26596eec9abe838e3bbfe853d96d8
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: ed84a16dbac493a3e962e37ba246d8d418782a91
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27023095"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27852823"
 ---
 # <a name="defenderthreataction-enum-type"></a>defenderThreatAction 列挙型
 

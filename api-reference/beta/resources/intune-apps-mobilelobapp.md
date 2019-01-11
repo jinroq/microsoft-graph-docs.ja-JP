@@ -2,12 +2,13 @@
 title: mobileLobApp リソースの種類
 description: ビジネス アプリのすべての携帯電話回線のプロパティを含む抽象基本クラス。
 author: tfitzmac
-ms.openlocfilehash: 6ceaefd0b48fa824847a2fd6b613dc6cd2cdd5f7
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: f4232a178badf9036eda18ae1798b174032e029c
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27355707"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27851388"
 ---
 # <a name="mobilelobapp-resource-type"></a>mobileLobApp リソースの種類
 

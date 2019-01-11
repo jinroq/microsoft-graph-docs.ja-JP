@@ -2,12 +2,13 @@
 title: windows10PkcsCertificateProfile リソースの種類
 description: 10 デスクトップとモバイルの PKCS の証明書プロファイル
 author: tfitzmac
-ms.openlocfilehash: 0bc420b9c031df41515e99d088e095bd125db38b
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: bef3eebbff70daccdbf6abf17e1dc8ed4e275721
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27315674"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27850835"
 ---
 # <a name="windows10pkcscertificateprofile-resource-type"></a>windows10PkcsCertificateProfile リソースの種類
 
@@ -28,7 +29,7 @@ ms.locfileid: "27315674"
 |[Windows10PkcsCertificateProfile を削除します。](../api/intune-deviceconfig-windows10pkcscertificateprofile-delete.md)|なし|の[windows10PkcsCertificateProfile](../resources/intune-deviceconfig-windows10pkcscertificateprofile.md)を削除します。|
 |[Windows10PkcsCertificateProfile を更新します。](../api/intune-deviceconfig-windows10pkcscertificateprofile-update.md)|[windows10PkcsCertificateProfile](../resources/intune-deviceconfig-windows10pkcscertificateprofile.md)|[Windows10PkcsCertificateProfile](../resources/intune-deviceconfig-windows10pkcscertificateprofile.md)オブジェクトのプロパティを更新します。|
 
-## <a name="properties"></a>Properties
+## <a name="properties"></a>プロパティ
 |プロパティ|種類|説明|
 |:---|:---|:---|
 |ID|String|エンティティのキー。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|

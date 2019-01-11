@@ -2,12 +2,13 @@
 title: appleVpnConfiguration リソースの種類
 description: Apple 社の VPN 構成のプロファイルです。
 author: tfitzmac
-ms.openlocfilehash: 7a893fd481764daa8f98e33c153c2c451777f063
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 85a70322a601fd09c9b944fcfd1d07885fa8f1fd
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27332572"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27853257"
 ---
 # <a name="applevpnconfiguration-resource-type"></a>appleVpnConfiguration リソースの種類
 
@@ -25,7 +26,7 @@ Apple 社の VPN 構成のプロファイルです。
 |[リスト appleVpnConfigurations](../api/intune-deviceconfig-applevpnconfiguration-list.md)|[appleVpnConfiguration](../resources/intune-deviceconfig-applevpnconfiguration.md)コレクション|[AppleVpnConfiguration](../resources/intune-deviceconfig-applevpnconfiguration.md)オブジェクトのプロパティと関係を一覧表示します。|
 |[AppleVpnConfiguration を取得します。](../api/intune-deviceconfig-applevpnconfiguration-get.md)|[appleVpnConfiguration](../resources/intune-deviceconfig-applevpnconfiguration.md)|[AppleVpnConfiguration](../resources/intune-deviceconfig-applevpnconfiguration.md)オブジェクトのプロパティと関係を参照してください。|
 
-## <a name="properties"></a>Properties
+## <a name="properties"></a>プロパティ
 |プロパティ|種類|説明|
 |:---|:---|:---|
 |ID|String|エンティティのキー。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|

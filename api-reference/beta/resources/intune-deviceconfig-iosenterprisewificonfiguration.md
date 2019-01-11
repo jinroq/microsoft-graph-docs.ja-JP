@@ -2,12 +2,13 @@
 title: iosEnterpriseWiFiConfiguration リソースの種類
 description: このプロファイルの構成を提供することによって必要な Wi-fi のエンドポイントに接続するための iOS デバイスに指示できます。 指定する認証方法とセキュリティの種類必要 Wi-fi エンドポイントで行うことができます Wi-fi 接続シームレスなエンド ・ ユーザーのです。
 author: tfitzmac
-ms.openlocfilehash: e13e4290c0f9c459cf6f1dd0917eada8c29ecf46
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: e270454ed4b384a926fed083c65f9fc8d37137bf
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27320105"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27851017"
 ---
 # <a name="iosenterprisewificonfiguration-resource-type"></a>iosEnterpriseWiFiConfiguration リソースの種類
 
@@ -28,7 +29,7 @@ ms.locfileid: "27320105"
 |[IosEnterpriseWiFiConfiguration を削除します。](../api/intune-deviceconfig-iosenterprisewificonfiguration-delete.md)|なし|の[iosEnterpriseWiFiConfiguration](../resources/intune-deviceconfig-iosenterprisewificonfiguration.md)を削除します。|
 |[IosEnterpriseWiFiConfiguration を更新します。](../api/intune-deviceconfig-iosenterprisewificonfiguration-update.md)|[iosEnterpriseWiFiConfiguration](../resources/intune-deviceconfig-iosenterprisewificonfiguration.md)|[IosEnterpriseWiFiConfiguration](../resources/intune-deviceconfig-iosenterprisewificonfiguration.md)オブジェクトのプロパティを更新します。|
 
-## <a name="properties"></a>Properties
+## <a name="properties"></a>プロパティ
 |プロパティ|種類|説明|
 |:---|:---|:---|
 |ID|String|エンティティのキー。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|

@@ -2,12 +2,13 @@
 title: リスト mobileAppProvisioningConfigGroupAssignments
 description: MobileAppProvisioningConfigGroupAssignment オブジェクトのプロパティと関係を一覧表示します。
 author: tfitzmac
-ms.openlocfilehash: f7385bc27209140380ab40895ff499d678866da3
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: d34b005a246ae5f896f80800cf176047bce4954c
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27308569"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27854559"
 ---
 # <a name="list-mobileappprovisioningconfiggroupassignments"></a>リスト mobileAppProvisioningConfigGroupAssignments
 

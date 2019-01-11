@@ -1,12 +1,13 @@
 ---
 title: PrivilegedRoleAssignment を作成します。
 description: この API を使用すると、新しい privilegedRoleAssignment を作成します。
-ms.openlocfilehash: cee00a71ff9ff233902ba19fb1f3f699ab746f98
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 7957aa964361890572de11c375753a49a3a9e9e6
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27070382"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27852214"
 ---
 # <a name="create-privilegedroleassignment"></a>PrivilegedRoleAssignment を作成します。
 

@@ -2,12 +2,13 @@
 title: Create mdmWindowsInformationProtectionPolicy
 description: 新しい mdmWindowsInformationProtectionPolicy オブジェクトを作成します。
 author: tfitzmac
-ms.openlocfilehash: ed717b6e91c2b919938fb62c4141b8bc47c15a1b
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 6d69ab787e7a643b99ff6ec3176a78b4f46f538c
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27347524"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27854153"
 ---
 # <a name="create-mdmwindowsinformationprotectionpolicy"></a>Create mdmWindowsInformationProtectionPolicy
 

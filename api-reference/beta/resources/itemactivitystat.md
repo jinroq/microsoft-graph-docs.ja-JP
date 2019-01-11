@@ -3,12 +3,13 @@ author: daspek
 ms.author: dspektor
 ms.date: 09/14/2017
 title: ItemActivityStat
-ms.openlocfilehash: 067cf88773b5f5d69b2b3538a2ddeab6741631a8
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: d0917d0100d33abee1095e2a7d06a4732d382937
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27066801"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27854251"
 ---
 # <a name="itemactivitystat-resource-type"></a>itemActivityStat リソースの種類
 
@@ -42,17 +43,17 @@ ms.locfileid: "27066801"
 
 ## <a name="properties"></a>プロパティ
 
-| プロパティ         | 型                    | 説明
+| プロパティ         | 種類                    | 説明
 |:-----------------|:------------------------|:----------------------------------------
-| incompleteData   | [incompleteData][]      | この間隔で統計情報が不完全なデータに基づいていることを示します。 読み取り専用。
-| isTrending       | ブール値                 | かどうか、アイテムは「トレンド。」ことを示します。 読み取り専用。
-| startDateTime    | DateTimeOffset          | 間隔の開始時。 読み取り専用。
-| endDateTime      | DateTimeOffset          | 間隔が終了します。 読み取り専用。
-| create           | [itemActionStat][]      | この間隔内のアクションの**作成**についての統計情報です。 読み取り専用。
-| edit             | [itemActionStat][]      | この範囲の**編集**処理に関する統計情報です。 読み取り専用。
-| delete           | [itemActionStat][]      | この間隔で**削除**の操作に関する統計情報です。 読み取り専用。
-| move             | [itemActionStat][]      | この間隔内の**移動**操作に関する統計情報です。 読み取り専用。
-| アクセス           | [itemActionStat][]      | この間隔で**のアクセス**の操作に関する統計情報です。 読み取り専用。
+| incompleteData   | [incompleteData][]      | この間隔で統計情報が不完全なデータに基づいていることを示します。 読み取り専用です。
+| isTrending       | ブール型                 | かどうか、アイテムは「トレンド。」ことを示します。 読み取り専用です。
+| startDateTime    | DateTimeOffset          | 間隔の開始時。 読み取り専用です。
+| endDateTime      | DateTimeOffset          | 間隔が終了します。 読み取り専用です。
+| create           | [itemActionStat][]      | この間隔内のアクションの**作成**についての統計情報です。 読み取り専用です。
+| edit             | [itemActionStat][]      | この範囲の**編集**処理に関する統計情報です。 読み取り専用です。
+| delete           | [itemActionStat][]      | この間隔で**削除**の操作に関する統計情報です。 読み取り専用です。
+| move             | [itemActionStat][]      | この間隔内の**移動**操作に関する統計情報です。 読み取り専用です。
+| アクセス           | [itemActionStat][]      | この間隔で**のアクセス**の操作に関する統計情報です。 読み取り専用です。
 
 [itemActionStat]: itemactionstat.md
 [incompleteData]: incompletedata.md

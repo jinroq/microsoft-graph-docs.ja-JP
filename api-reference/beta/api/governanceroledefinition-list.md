@@ -1,12 +1,13 @@
 ---
 title: リスト governanceRoleDefinitions
 description: リソースの governanceRoleDefinitions のコレクションを取得します。
-ms.openlocfilehash: ed1d4e7b51d20ed6687c52364399385054db9912
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 6586a1fec0be4610aa18d204cb8049a012aa7a04
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27071113"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27854748"
 ---
 # <a name="list-governanceroledefinitions"></a>リスト governanceRoleDefinitions
 > **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。
@@ -42,7 +43,7 @@ GET /privilegedAccess/azureResources/roleDefinitions?$filter=resourceId+eq+'{res
 このメソッドには、要求本文を指定しません。
 ## <a name="response"></a>応答
 かどうかは成功すると、このメソッドが返されます、`200 OK`応答コードおよび応答の本文内の[governanceRoleDefinition](../resources/governanceroledefinition.md)オブジェクトのコレクションです。
-## <a name="example"></a>使用例
+## <a name="example"></a>例
 <!-- {
   "blockType": "request",
   "name": "get_governanceroledefinitions"

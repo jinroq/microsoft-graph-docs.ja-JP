@@ -2,12 +2,13 @@
 title: androidWorkProfileCrossProfileDataSharingType 列挙型
 description: Android の作業プロファイルは、プロファイル データの種類の共有を横断します。
 author: tfitzmac
-ms.openlocfilehash: 960e43f2c4c479f759be496fffeed9e256065bb6
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 60457390dd2da553b7d45e08b6600f768cf10478
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27306378"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27850758"
 ---
 # <a name="androidworkprofilecrossprofiledatasharingtype-enum-type"></a>androidWorkProfileCrossProfileDataSharingType 列挙型
 

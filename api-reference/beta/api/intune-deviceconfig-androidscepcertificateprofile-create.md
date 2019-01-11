@@ -2,12 +2,13 @@
 title: AndroidScepCertificateProfile を作成します。
 description: 新しい androidScepCertificateProfile オブジェクトを作成します。
 author: tfitzmac
-ms.openlocfilehash: 7e00bd8e4b65c1785ea9ab27ec723f773ec220fb
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: a17667834e01a75415838b5f84d1197d9ec2bc96
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27349722"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27854769"
 ---
 # <a name="create-androidscepcertificateprofile"></a>AndroidScepCertificateProfile を作成します。
 

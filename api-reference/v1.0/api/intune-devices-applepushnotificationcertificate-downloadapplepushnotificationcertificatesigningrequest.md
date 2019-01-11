@@ -2,12 +2,13 @@
 title: downloadApplePushNotificationCertificateSigningRequest 関数
 description: Apple プッシュ通知の証明書署名要求をダウンロードします
 author: tfitzmac
-ms.openlocfilehash: 99a62c456dd8d4f0e0779c44b800169e5de57164
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: affb3866d54aaad356a1bb4d04c3954e07d8a192
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27315520"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27853012"
 ---
 # <a name="downloadapplepushnotificationcertificatesigningrequest-function"></a>downloadApplePushNotificationCertificateSigningRequest 関数
 

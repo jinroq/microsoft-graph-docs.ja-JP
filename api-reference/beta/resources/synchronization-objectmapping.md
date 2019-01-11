@@ -1,12 +1,13 @@
 ---
 title: objectMapping リソースの種類
 description: どのように特定のオブジェクト同期する必要があるソース ディレクトリからコピー先のディレクトリを定義します。 ソース ディレクトリ内のオブジェクトのコピー先のディレクトリ内のオブジェクトとの照合方法を定義する具体的には、どのような (もしあれば) フィルターのスコープを使用するかどうかは、特定のオブジェクトを準備して、変換からのオブジェクトの属性がどのようにする必要がありますかを決定する必要があります先のディレクトリにソースです。
-ms.openlocfilehash: 5ecf406c3dab2f8d6fdcecadda4d5ff7bbb4f4d1
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 21e996b72be7df93c86f9e5f78a0033c9203cd2c
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27068413"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27851752"
 ---
 # <a name="objectmapping-resource-type"></a>objectMapping リソースの種類
 
@@ -18,10 +19,10 @@ ms.locfileid: "27068413"
 
 ## <a name="properties"></a>プロパティ
 
-| プロパティ      | 型      | 説明    |
+| プロパティ      | 種類      | 説明    |
 |:--------------|:----------|:---------------|
 |attributeMappings  |[attributeMapping](synchronization-attributemapping.md)コレクション    | 属性のマッピングは、ソース オブジェクトからターゲット オブジェクトとフローの方法にマップする属性を定義します。 元のソースの値の変換をサポートするために多くの機能を利用できます。|
-|enabled        |Boolean    |`true`、このオブジェクトのマッピングが同期中に処理されます。 `false`、このオブジェクトのマッピングはスキップされます。|
+|enabled        |ブール型    |`true`、このオブジェクトのマッピングが同期中に処理されます。 `false`、このオブジェクトのマッピングはスキップされます。|
 |flowTypes      |objectFlowType    |どのフローの種類では、このオブジェクトのマッピングは有効です。 `Add`コピー先のディレクトリに新しいオブジェクトを作成`Update`、既存のオブジェクトを変更し、`Delete`既存のユーザーを deprovisions。 既定値は `Add, Update, Delete` です。 |
 |metadata       |metadataEntry コレクション    |プロパティをさらに拡張します。 明示的に記載されている、しない限り、メタデータの値を変更できませんする必要があります。|
 |名前           |String     |オブジェクトのマッピングのわかりやすい名前です。|

@@ -1,12 +1,13 @@
 ---
 title: cloudAppSecurityState リソースの種類
 description: ステートフル (destinationServiceName、destinationServiceIp) は、クラウド アプリケーションについてを説明します。
-ms.openlocfilehash: 915044c3084e3d9a9435d602ecc7ec809d2168f2
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: ff76adf1d3879c3dac3f19ae122d82c9523d5193
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27070902"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27850870"
 ---
 # <a name="cloudappsecuritystate-resource-type"></a>cloudAppSecurityState リソースの種類
 
@@ -14,7 +15,7 @@ ms.locfileid: "27070902"
 
 ## <a name="properties"></a>プロパティ
 
-| プロパティ     | 型        | 説明 |
+| プロパティ     | 種類        | 説明 |
 |:-------------|:------------|:------------|
 |destinationServiceIp|String|クラウド アプリケーションやサービスへの接続の宛先の IP アドレス。|
 |destinationServiceName|String|クラウド アプリケーションとサービスの名前 (たとえば「Salesforce」、「ドロップ ボックス」など)。|

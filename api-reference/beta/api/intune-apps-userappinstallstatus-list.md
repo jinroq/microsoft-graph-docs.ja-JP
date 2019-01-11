@@ -2,12 +2,13 @@
 title: リスト userAppInstallStatuses
 description: UserAppInstallStatus オブジェクトのプロパティと関係を一覧表示します。
 author: tfitzmac
-ms.openlocfilehash: 0aeef4d97e63c42e11fefdb84a4dfb6138fdc6a3
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 6d6c0fb5a35dc2bdd712df53305020102cd82e15
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27325425"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27853761"
 ---
 # <a name="list-userappinstallstatuses"></a>リスト userAppInstallStatuses
 

@@ -2,12 +2,13 @@
 title: windowsPhone81GeneralConfigurations のリスト
 description: windowsPhone81GeneralConfiguration オブジェクトのプロパティとリレーションシップをリストします。
 author: tfitzmac
-ms.openlocfilehash: 9b6bd1faa1a6c4460c97374d90967b8fc7b18e25
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: b28530a6b6b7a070c0a03a51a161242c84159722
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27346880"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27852935"
 ---
 # <a name="list-windowsphone81generalconfigurations"></a>windowsPhone81GeneralConfigurations のリスト
 

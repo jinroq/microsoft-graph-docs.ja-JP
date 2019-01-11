@@ -2,12 +2,13 @@
 title: AndroidForWorkGeneralDeviceConfiguration を更新します。
 description: AndroidForWorkGeneralDeviceConfiguration オブジェクトのプロパティを更新します。
 author: tfitzmac
-ms.openlocfilehash: 09f4dd4d17e00ec3515144ad925beeab971ac5a3
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 9f678a722071c233c2f58016cfa548837d551e37
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27338529"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27853201"
 ---
 # <a name="update-androidforworkgeneraldeviceconfiguration"></a>AndroidForWorkGeneralDeviceConfiguration を更新します。
 

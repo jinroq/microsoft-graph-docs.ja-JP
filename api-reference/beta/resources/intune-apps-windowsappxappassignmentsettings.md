@@ -2,12 +2,13 @@
 title: windowsAppXAppAssignmentSettings リソースの種類
 description: Windows AppX のモバイル アプリケーションをグループに割り当てるときに使用するプロパティが含まれています。
 author: tfitzmac
-ms.openlocfilehash: 84103a91c3c670ef3da8a0ea2a2e38a95cff79a6
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 2ee4079bcaf25802fe2e1ceac5bbba5eb47c8da4
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27311621"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27854265"
 ---
 # <a name="windowsappxappassignmentsettings-resource-type"></a>windowsAppXAppAssignmentSettings リソースの種類
 

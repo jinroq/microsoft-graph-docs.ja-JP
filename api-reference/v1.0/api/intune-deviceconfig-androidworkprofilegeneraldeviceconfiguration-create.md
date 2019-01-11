@@ -2,12 +2,13 @@
 title: AndroidWorkProfileGeneralDeviceConfiguration を作成します。
 description: 新しい androidWorkProfileGeneralDeviceConfiguration オブジェクトを作成します。
 author: tfitzmac
-ms.openlocfilehash: 6e59d79c7da9647cf85181d72998cf7f196f3d46
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: f50d028de9695ecda22339ef5e9da5b579188440
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27328771"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27851521"
 ---
 # <a name="create-androidworkprofilegeneraldeviceconfiguration"></a>AndroidWorkProfileGeneralDeviceConfiguration を作成します。
 

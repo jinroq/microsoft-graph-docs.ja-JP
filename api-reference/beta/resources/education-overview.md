@@ -1,12 +1,13 @@
 ---
 title: Microsoft Graph での教育機関 API の操作
 description: 教育 graph Api では、Office 365 のリソースとは、学校、学生、教師、クラス、登録、および割り当てを含む、教育のシナリオに関連する情報を使用してデータを強化します。 これにより、教育関連のリソースと統合するソリューションのビルドが簡単になります。
-ms.openlocfilehash: 610a16af6993397ae9162fb27add97cd6c5af0ed
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 3f04ee2817a7346710608df0e97a89251103acc9
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27073474"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27852473"
 ---
 # <a name="working-with-education-apis-in-microsoft-graph"></a>Microsoft Graph での教育機関 API の操作
 
@@ -120,7 +121,7 @@ client_id={clientId}&state=12345&redirect_uri={redirectUrl}
 - [同期エラーが発生をします。](../api/educationsynchronizationerrors-get.md)
 
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 Graph 教育 Api を使用すると、受講生受講者の割り当てと、学校の名簿にアクセスするための教育ソリューションを構築できます。 詳細情報
 
 - 自分のシナリオに最も役立つリソースと方法を検討する。

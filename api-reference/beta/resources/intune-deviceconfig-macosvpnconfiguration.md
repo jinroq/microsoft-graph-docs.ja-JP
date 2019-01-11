@@ -2,12 +2,13 @@
 title: macOSVpnConfiguration リソースの種類
 description: このプロファイルの構成を提供することによって必要な VPN エンドポイントに接続するのには Mac のデバイスに指示できます。 指定する認証方法とセキュリティの種類必要 VPN エンドポイントで行うことができます、VPN 接続シームレスなエンド ・ ユーザーのです。
 author: tfitzmac
-ms.openlocfilehash: 94eccf6ee98acc4160797956518a80020baa36ad
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 2bc4ae56f7b355cec5edc27007ece27f2b3a7d9c
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27315443"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27851633"
 ---
 # <a name="macosvpnconfiguration-resource-type"></a>macOSVpnConfiguration リソースの種類
 
@@ -28,7 +29,7 @@ ms.locfileid: "27315443"
 |[MacOSVpnConfiguration を削除します。](../api/intune-deviceconfig-macosvpnconfiguration-delete.md)|なし|の[macOSVpnConfiguration](../resources/intune-deviceconfig-macosvpnconfiguration.md)を削除します。|
 |[MacOSVpnConfiguration を更新します。](../api/intune-deviceconfig-macosvpnconfiguration-update.md)|[macOSVpnConfiguration](../resources/intune-deviceconfig-macosvpnconfiguration.md)|[MacOSVpnConfiguration](../resources/intune-deviceconfig-macosvpnconfiguration.md)オブジェクトのプロパティを更新します。|
 
-## <a name="properties"></a>Properties
+## <a name="properties"></a>プロパティ
 |プロパティ|種類|説明|
 |:---|:---|:---|
 |ID|String|エンティティのキー。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|

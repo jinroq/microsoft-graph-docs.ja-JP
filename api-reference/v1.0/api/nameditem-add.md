@@ -1,12 +1,13 @@
 ---
 title: 名前付きアイテムの追加
 description: ユーザーのロケールを数式に使用して、新しい名前を指定したスコープのコレクションに追加します。
-ms.openlocfilehash: f97d9589cc29203d660eedf6b323d1ba90794b22
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: eab6116768523d021577bef345151c3e62681fe5
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27022932"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27852613"
 ---
 # <a name="add-named-item"></a>名前付きアイテムの追加
 
@@ -37,7 +38,7 @@ POST /workbook/worksheets({id|name})/names/add
 ## <a name="request-body"></a>要求本文
 要求本文で、次のパラメーターを含む JSON オブジェクトを指定します。
 
-| パラメーター    | 型   |説明|
+| パラメーター    | Type   |説明|
 |:---------------|:--------|:----------|
 |name|文字列|名前付きの項目の名前。|
 |reference|Json|名前が参照する数式または範囲。|

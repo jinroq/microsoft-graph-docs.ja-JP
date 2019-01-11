@@ -1,12 +1,13 @@
 ---
 title: デバッギングを作成します。
 description: Azure AD のレビュー機能にアクセス、デバッギング オブジェクトを新規作成します。  アクセス確認をプログラムにリンクします。
-ms.openlocfilehash: fa6a93b13391fd4b9e3c5816bb2a27259e730c0d
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 4dfbb76244a41867b8a57faa42f63dc728f59136
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27072034"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27851535"
 ---
 # <a name="create-programcontrol"></a>デバッギングを作成します。
 
@@ -36,7 +37,7 @@ ms.locfileid: "27072034"
 POST /programControls
 ```
 ## <a name="request-headers"></a>要求ヘッダー
-| 名前         | 型        | 説明 |
+| 名前         | 種類        | 説明 |
 |:-------------|:------------|:------------|
 | Authorization | string | ベアラー\{トークン\}。 必須。 |
 
@@ -45,7 +46,7 @@ POST /programControls
 
 プログラムのコントロールを作成するときに必要なプロパティを次の表に示します。
 
-| プロパティ     | 型        | 説明 |
+| プロパティ     | 種類        | 説明 |
 |:-------------|:------------|:------------|
 | `programId`              |`String`                | プログラムの programId コントロールしようの一部になります。                             |
 | `controlId`              |`String`                | コントロールの処理、特にアクセスの id を確認します。                                                |

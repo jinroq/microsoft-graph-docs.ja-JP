@@ -2,12 +2,13 @@
 title: 'ChartCollection: ItemAt'
 description: コレクション内での位置を基にグラフを取得します。
 author: lumine2008
-ms.openlocfilehash: 6490958908e7f6093e2d307764dd422026205f46
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 7ebb673d3b9f1ffc5cdcbe0f64d3a9365818c707
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27303739"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27854566"
 ---
 # <a name="chartcollection-itemat"></a>ChartCollection: ItemAt
 
@@ -38,9 +39,9 @@ POST /workbook/worksheets/{id|name}/charts/ItemAt
 ## <a name="request-body"></a>要求本文
 要求本文で、次のパラメーターを含む JSON オブジェクトを指定します。
 
-| パラメーター    | 種類   |説明|
+| パラメーター    | Type   |説明|
 |:---------------|:--------|:----------|
-|index|数値|取得するオブジェクトのインデックス値。0 を起点とする番号になります。|
+|index|number|取得するオブジェクトのインデックス値。0 を起点とする番号になります。|
 
 ## <a name="response"></a>応答
 

@@ -1,12 +1,13 @@
 ---
 title: schemaExtension を取得する
 description: 指定された schemaExtension 定義のプロパティを取得します。
-ms.openlocfilehash: 32376d6afd0d6171362db1978b708610d9f4d056
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 090fb2131aa5cbbea845c3b9bfed2f807b4c8659
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27072277"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27852781"
 ---
 # <a name="get-schemaextension"></a>schemaExtension を取得する
 
@@ -85,7 +86,7 @@ Content-length: 201
 
 ## <a name="see-also"></a>関連項目
 
-- [拡張機能を使用してカスタム データをリソースに追加する](/graph/extensibility-overview)
+- [拡張機能を使用したリソースへのカスタム データの追加](/graph/extensibility-overview)
 - [スキーマ拡張機能を使用したグループへのカスタム データの追加](/graph/extensibility-schema-groups)
 
 

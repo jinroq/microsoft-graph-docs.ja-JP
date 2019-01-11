@@ -2,12 +2,13 @@
 title: リスト educationSynchronizationProfiles
 description: テナントの学校のデータの同期プロファイルのコレクションを取得します。
 author: mmast-msft
-ms.openlocfilehash: d7ee2b643259eec6c9106ab6ff89245ab79a3044
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 9b234ac8a6a99f5cc32a3f4416975ea77f4c66ad
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27303102"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27853670"
 ---
 # <a name="list-educationsynchronizationprofiles"></a>リスト educationSynchronizationProfiles
 

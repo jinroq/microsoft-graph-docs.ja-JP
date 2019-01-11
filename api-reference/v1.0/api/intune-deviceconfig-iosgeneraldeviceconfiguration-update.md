@@ -2,12 +2,13 @@
 title: Update iosGeneralDeviceConfiguration
 description: iosGeneralDeviceConfiguration オブジェクトのプロパティを更新します。
 author: tfitzmac
-ms.openlocfilehash: 3919b743cae86d40a30c03e39b7bdc89312c1cca
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 3e27e6eb825addab784e1aeb35aac881e69a6c48
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27334340"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27851626"
 ---
 # <a name="update-iosgeneraldeviceconfiguration"></a>Update iosGeneralDeviceConfiguration
 

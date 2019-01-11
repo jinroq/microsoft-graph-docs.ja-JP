@@ -1,12 +1,13 @@
 ---
 title: bookingReminder リソースの種類
 description: " > **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。"
-ms.openlocfilehash: f5f7b30c296433dd96ffa14a75e3f0286e8a16a1
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 1f1708d4ac9606ad5c862cb9b1bc73e1ddcfec4a
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27070674"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27853866"
 ---
 # <a name="bookingreminder-resource-type"></a>bookingReminder リソースの種類
 
@@ -16,7 +17,7 @@ ms.locfileid: "27070674"
 
 
 ## <a name="properties"></a>プロパティ
-| プロパティ     | 型   |説明|
+| プロパティ     | 種類   |説明|
 |:---------------|:--------|:----------|
 |message|String|アラームのメッセージです。|
 |オフセット|Duration|アラームを送信する予定の開始までの時間の量。 それは、 [ISO 8601](https://www.iso.org/iso-8601-date-and-time-format.html)形式で表されます。|

@@ -2,12 +2,13 @@
 title: Windows81SCEPCertificateProfile を作成します。
 description: 新しい windows81SCEPCertificateProfile オブジェクトを作成します。
 author: tfitzmac
-ms.openlocfilehash: c2345979f47b2eda8074417c652a203fdb16fd0e
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 8d4b1bf9a48733f0b4f396804a4dd8bce0ebd06e
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27319097"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27852557"
 ---
 # <a name="create-windows81scepcertificateprofile"></a>Windows81SCEPCertificateProfile を作成します。
 

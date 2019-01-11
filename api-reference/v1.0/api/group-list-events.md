@@ -2,12 +2,13 @@
 title: イベントを一覧表示する
 description: イベント オブジェクトのリストを取得します。
 author: dkershaw10
-ms.openlocfilehash: 12ad3cd2704d31b68aec033381b9c6c5bc23a7fb
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Priority
+ms.openlocfilehash: a224f50ebda1e6e2eac4a99b3ea49011bfcdb714
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27349162"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27852648"
 ---
 # <a name="list-events"></a>イベントを一覧表示する
 [イベント](../resources/event.md) オブジェクトのリストを取得します。
@@ -35,8 +36,8 @@ GET /groups/{id}/calendar/events
 | 名前       | 種類 | 説明 |
 |:---------------|:--------|:--------|
 | Authorization  | string | ベアラー {トークン}。必須。  |
-| 優先: outlook.timezone  | string | これを使用して、応答内の開始および終了時刻のタイム ゾーンを指定します。 指定しない場合、これらの時刻値は UTC で返されます。 省略可能。 |
-| Prefer: outlook.body-content-type | string | **body** プロパティが返されるときの形式です。 値は、"text" または "html" になります。 この `Prefer` ヘッダーが指定されている場合、`Preference-Applied` ヘッダーが確認として返されます。 このヘッダーが指定されていない場合は、**body** プロパティが HTML 形式で返されます。 省略可能。 |
+| 優先: outlook.timezone  | 文字列 | これを使用して、応答内の開始および終了時刻のタイム ゾーンを指定します。 指定しない場合、これらの時刻値は UTC で返されます。 省略可能。 |
+| Prefer: outlook.body-content-type | 文字列 | **body** プロパティが返されるときの形式です。 値は、"text" または "html" になります。 この `Prefer` ヘッダーが指定されている場合、`Preference-Applied` ヘッダーが確認として返されます。 このヘッダーが指定されていない場合は、**body** プロパティが HTML 形式で返されます。 省略可能。 |
 
 ## <a name="request-body"></a>要求本文
 このメソッドには、要求本文を指定しません。

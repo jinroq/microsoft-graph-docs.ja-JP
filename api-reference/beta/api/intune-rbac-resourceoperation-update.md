@@ -2,12 +2,13 @@
 title: resourceOperation の更新
 description: resourceOperation オブジェクトのプロパティを更新します。
 author: tfitzmac
-ms.openlocfilehash: 8050b91aee679f9dd29e78cbbad62f9f6352343e
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 41702941a5de5869b13e4b1616448f34fcc6daf1
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27317823"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27851794"
 ---
 # <a name="update-resourceoperation"></a>resourceOperation の更新
 

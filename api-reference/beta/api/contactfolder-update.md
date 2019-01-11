@@ -2,12 +2,13 @@
 title: Update contactfolder
 description: contactfolder オブジェクトのプロパティを更新します。
 author: angelgolfer-ms
-ms.openlocfilehash: 5b61758309e8489312d2f8360625d6d12566fae0
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 155a8fb17f0423e2a4718dde8fc9743d8c1f0342
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27330992"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27854762"
 ---
 # <a name="update-contactfolder"></a>Update contactfolder
 
@@ -42,7 +43,7 @@ PATCH /users/{id | userPrincipalName}/contactFolders/{id}
 |:---------------|:--------|:----------|
 |displayName|String|フォルダーの表示名。|
 |parentFolderId|String|フォルダーの親フォルダーの ID。|
-|wellKnownName|string|フォルダーが認識されているフォルダーである場合、フォルダーの名前。現在、認識されている連絡先フォルダーは `contacts` のみです。|
+|wellKnownName|文字列|フォルダーが認識されているフォルダーである場合、フォルダーの名前。現在、認識されている連絡先フォルダーは `contacts` のみです。|
 
 ## <a name="response"></a>応答
 

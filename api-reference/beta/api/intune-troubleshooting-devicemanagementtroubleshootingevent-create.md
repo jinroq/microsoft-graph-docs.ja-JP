@@ -2,12 +2,13 @@
 title: deviceManagementTroubleshootingEvent の作成
 description: 新しい deviceManagementTroubleshootingEvent オブジェクトを作成します。
 author: tfitzmac
-ms.openlocfilehash: cef96acd7db28fd9b686c01e748532e775cf5f01
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 25253b9851c675417801b41692ffaa90a1fe1039
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27356407"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27851780"
 ---
 # <a name="create-devicemanagementtroubleshootingevent"></a>deviceManagementTroubleshootingEvent の作成
 

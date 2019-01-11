@@ -2,12 +2,13 @@
 title: managedDeviceMobileAppConfigurationAssignment の削除
 description: managedDeviceMobileAppConfigurationAssignment を削除します。
 author: tfitzmac
-ms.openlocfilehash: e228fdd54b8b7bdeaaf0c80f37b84679f5a6659b
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 9e8a161275e2f56642d8b84cab630f4767c4da86
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27313427"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27854258"
 ---
 # <a name="delete-manageddevicemobileappconfigurationassignment"></a>managedDeviceMobileAppConfigurationAssignment の削除
 

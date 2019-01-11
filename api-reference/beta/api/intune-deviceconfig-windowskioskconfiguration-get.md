@@ -2,12 +2,13 @@
 title: WindowsKioskConfiguration を取得します。
 description: WindowsKioskConfiguration オブジェクトのプロパティと関係を参照してください。
 author: tfitzmac
-ms.openlocfilehash: 4596eeaba219227048a81a9f4ecc6693a7c20204
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 4860924b415ef71913792a2f96c7a4ac934c25cd
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27339138"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27851724"
 ---
 # <a name="get-windowskioskconfiguration"></a>WindowsKioskConfiguration を取得します。
 

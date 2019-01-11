@@ -2,12 +2,13 @@
 title: officeClientConfigurationAssignment リソースの種類
 description: Office クライアントの構成の割り当てです。
 author: tfitzmac
-ms.openlocfilehash: c2b8dc231fb390cbb2bd5dbb93b5226540b84f5f
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: e8f730a405207dbec9b08d80ec403ced4f257c36
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27315996"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27851787"
 ---
 # <a name="officeclientconfigurationassignment-resource-type"></a>officeClientConfigurationAssignment リソースの種類
 
@@ -25,7 +26,7 @@ Office クライアントの構成の割り当てです。
 |[OfficeClientConfigurationAssignment を削除します。](../api/intune-cirrus-officeclientconfigurationassignment-delete.md)|なし|の[officeClientConfigurationAssignment](../resources/intune-cirrus-officeclientconfigurationassignment.md)を削除します。|
 |[OfficeClientConfigurationAssignment を更新します。](../api/intune-cirrus-officeclientconfigurationassignment-update.md)|[officeClientConfigurationAssignment](../resources/intune-cirrus-officeclientconfigurationassignment.md)|[OfficeClientConfigurationAssignment](../resources/intune-cirrus-officeclientconfigurationassignment.md)オブジェクトのプロパティを更新します。|
 
-## <a name="properties"></a>Properties
+## <a name="properties"></a>プロパティ
 |プロパティ|種類|説明|
 |:---|:---|:---|
 |ID|String|OfficeConfigurationAssignment の id です。|
