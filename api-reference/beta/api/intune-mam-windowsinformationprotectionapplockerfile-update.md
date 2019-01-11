@@ -2,12 +2,13 @@
 title: windowsInformationProtectionAppLockerFile の更新
 description: windowsInformationProtectionAppLockerFile オブジェクトのプロパティを更新します。
 author: tfitzmac
-ms.openlocfilehash: ff0f0ae2d546c67c08a1d4928f8301aff476c776
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: a81a42b1245a8723935ac8497e69539b1e5c1df8
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27332257"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27885676"
 ---
 # <a name="update-windowsinformationprotectionapplockerfile"></a>windowsInformationProtectionAppLockerFile の更新
 

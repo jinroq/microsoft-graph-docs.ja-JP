@@ -2,12 +2,13 @@
 title: macOSCompliancePolicy の更新
 description: macOSCompliancePolicy オブジェクトのプロパティを更新します。
 author: tfitzmac
-ms.openlocfilehash: 08b256fc12dcfd7d2d5e79f0dc0b277244214a2d
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 09bba9c19d912d1d4065f390ed35cc209f1879a0
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27321064"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27886766"
 ---
 # <a name="update-macoscompliancepolicy"></a>macOSCompliancePolicy の更新
 

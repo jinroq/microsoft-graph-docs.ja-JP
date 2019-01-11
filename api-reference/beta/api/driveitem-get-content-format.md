@@ -3,12 +3,13 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
 title: 他の形式に変換する
-ms.openlocfilehash: 70558e7c0497c71f620481ff67b7d07cc255cd95
-ms.sourcegitcommit: 12c6e82f1417022540e534ebadbd0e8d7fb5abde
+localization_priority: Normal
+ms.openlocfilehash: d27420153a295eac9d3f880910d63bd701525427
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/08/2018
-ms.locfileid: "27209720"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27887438"
 ---
 # <a name="download-a-file-in-another-format"></a>別の形式でファイルをダウンロードする
 
@@ -34,7 +35,7 @@ GET /drive/root:/{path and filename}:/content?format={format}
 
 ## <a name="query-parameters"></a>クエリ パラメーター
 
-| パラメーター      | Type  | 説明                                                    |
+| Parameter      | Type  | 説明                                                    |
 |:----------|:-------|:---------------------------------------------------------------|
 | _format_  | 文字列 | アイテムのコンテンツをダウンロードする形式を指定します。 |
 

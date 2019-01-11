@@ -2,12 +2,13 @@
 title: settingStateDeviceSummaries のリスト
 description: settingStateDeviceSummary オブジェクトのプロパティとリレーションシップをリストします。
 author: tfitzmac
-ms.openlocfilehash: 5a18bb843e11eaf8d87ba9b6977cbd4f47e9d23b
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 10ffa86bb266b4757a986174ee993eda156b6f0d
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27308331"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27882006"
 ---
 # <a name="list-settingstatedevicesummaries"></a>settingStateDeviceSummaries のリスト
 

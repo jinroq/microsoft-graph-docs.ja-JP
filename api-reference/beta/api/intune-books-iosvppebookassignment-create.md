@@ -2,12 +2,13 @@
 title: iosVppEBookAssignment の作成
 description: 新しい iosVppEBookAssignment オブジェクトを作成します。
 author: tfitzmac
-ms.openlocfilehash: dd829dfd22b38a6ca4b88e1fc110db4f9e2128ea
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 22f1290231f481c8cc6bfc55850afdf1fb90f4a3
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27302465"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27883399"
 ---
 # <a name="create-iosvppebookassignment"></a>iosVppEBookAssignment の作成
 

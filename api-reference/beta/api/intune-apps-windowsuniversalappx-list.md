@@ -2,12 +2,13 @@
 title: windowsUniversalAppXs のリスト
 description: windowsUniversalAppX オブジェクトのプロパティとリレーションシップをリストします。
 author: tfitzmac
-ms.openlocfilehash: 90e69af996a07ddcc9f435e389761e3c01cc4319
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 4adc2762b3584e72fdb3dfa253a836cac1d54d50
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27345606"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27883336"
 ---
 # <a name="list-windowsuniversalappxs"></a>windowsUniversalAppXs のリスト
 

@@ -1,12 +1,13 @@
 ---
 title: deviceDetail リソースの種類
 description: サインインに使用するデバイスに関連付けられているデバイスの詳細を示します。 デバイスが管理される Azure の AD の場合は、デバイスのブラウザーおよび OS の情報などの情報に含まれています。
-ms.openlocfilehash: d7c1830ee5c99fc139a937fcee3896e2a9926592
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: ca4679a8c484b6dc5b36ef39d3d6d039537cbdbb
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27067473"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27884841"
 ---
 # <a name="devicedetail-resource-type"></a>deviceDetail リソースの種類
 サインインに使用するデバイスに関連付けられているデバイスの詳細を示します。 デバイスが管理される Azure の AD の場合は、デバイスのブラウザーおよび OS の情報などの情報に含まれています。
@@ -14,7 +15,7 @@ ms.locfileid: "27067473"
 
 
 ## <a name="properties"></a>プロパティ
-| プロパティ     | 型   |説明|
+| プロパティ     | 種類   |説明|
 |:---------------|:--------|:----------|
 |ブラウザー|String|使用のブラウザー情報の署名に。|
 |deviceId|String|署名に使用するデバイスの UniqueID を意味します。|

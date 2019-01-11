@@ -2,12 +2,13 @@
 title: WindowsManagementApp を更新します。
 description: WindowsManagementApp オブジェクトのプロパティを更新します。
 author: tfitzmac
-ms.openlocfilehash: 4e14dc250167fed09969cea82b8291ce4bd9bf97
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 182dd2ef39a322c38497dd8b714945724bf5b12e
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27337521"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27886752"
 ---
 # <a name="update-windowsmanagementapp"></a>WindowsManagementApp を更新します。
 

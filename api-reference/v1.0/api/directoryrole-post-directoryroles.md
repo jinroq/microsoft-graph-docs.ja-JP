@@ -1,12 +1,13 @@
 ---
 title: directoryRole をアクティブにする
 description: ディレクトリ ロールをアクティブ化します。ディレクトリ ロールを読み取る場合や、そのメンバーを更新する場合は、まず、そのディレクトリ ロールをテナントでアクティブにする必要があります。既定では、会社の管理者 (Company Administrators) とユーザー (Users) のディレクトリ ロールのみがアクティブ化されています。アクセスしてメンバーを別のディレクトリ ロールに割り当てるには、まずそのディレクトリ ロールを対応するディレクトリ ロール テンプレート (directoryRoleTemplate) でアクティブにする必要があります。
-ms.openlocfilehash: 2d2f51aab33520c95bda88eab8f98af12af36083
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 9e3e962de4e25422cbf35f9efa8a83499cfe81bc
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27023192"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27885149"
 ---
 # <a name="activate-directoryrole"></a>directoryRole をアクティブにする
 
@@ -28,7 +29,7 @@ POST /directoryRoles
 
 ```
 ## <a name="request-headers"></a>要求ヘッダー
-| 名前       | 型 | 説明|
+| 名前       | 種類 | 説明|
 |:---------------|:--------|:----------|
 | Authorization  | string  | ベアラー {トークン}。必須。 |
 | Content-Type  | string  | application/json  |
@@ -38,7 +39,7 @@ POST /directoryRoles
 
 次の表に、ディレクトリ ロールをアクティブにする際に必要になるプロパティを示します。
 
-|パラメーター | 型 | 説明|
+|Parameter | Type | 説明|
 |:---------|:---------|:---------|
 |roleTemplateId | 文字列 | 必須。 ロールは、に基づいて[directoryRoleTemplate](../resources/directoryroletemplate.md)の ID です。 これは、要求内で指定できる唯一のプロパティです。|
 

@@ -1,12 +1,13 @@
 ---
 title: synchronizationProgress リソースの種類
 description: 完了するまで、synchronizationJob の進行状況を表します。
-ms.openlocfilehash: 412b7754dac97a36efe082026ab360569c0fe789
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 3c1168cdac6a073842cb5e08d165572591d2d8e0
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27074097"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27885387"
 ---
 # <a name="synchronizationprogress-resource-type"></a>synchronizationProgress リソースの種類
 
@@ -16,7 +17,7 @@ ms.locfileid: "27074097"
 
 ## <a name="properties"></a>プロパティ
 
-| プロパティ                              | 型      | 説明    |
+| プロパティ                              | 種類      | 説明    |
 |:--------------------------------------|:----------|:---------------|
 |completedUnits|Int32|分子の進行状況の比率です。既に処理された変更単位の数です。|
 |progressObservationDateTime|DateTimeOffset|分 UTC からのオフセットとしての進行状況の監視の時間です。|

@@ -2,12 +2,13 @@
 title: リスト windowsCertificateProfileBases
 description: WindowsCertificateProfileBase オブジェクトのプロパティと関係を一覧表示します。
 author: tfitzmac
-ms.openlocfilehash: 9fc17abe0b874cd360e94d1a28115823724c6f2d
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 770a17633b531c63e9defea6f3858b137e5155b0
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27344878"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27886283"
 ---
 # <a name="list-windowscertificateprofilebases"></a>リスト windowsCertificateProfileBases
 

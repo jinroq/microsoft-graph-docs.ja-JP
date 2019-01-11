@@ -2,12 +2,13 @@
 title: TableColumn リソースの種類
 description: テーブル内にある 1 つの列を表します。
 author: lumine2008
-ms.openlocfilehash: b68051403bf57d84b51850255c8f98c0b76ea9c0
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 8534a2f47478a68c305f2acbe98b87df032982e6
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27354650"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27885492"
 ---
 # <a name="tablecolumn-resource-type"></a>TableColumn リソースの種類
 

@@ -3,12 +3,13 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
 title: Quota
-ms.openlocfilehash: f4518021da8ad180b91472feb52199678c2edc83
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: a63b41253569dbb3d666a76b0a7495839ef61b12
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27072526"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27882412"
 ---
 # <a name="quota-resource-type"></a>クォータのリソースの種類
 
@@ -41,7 +42,7 @@ ms.locfileid: "27072526"
 
 ## <a name="properties"></a>プロパティ
 
-| プロパティ名 | 型   | 説明                                                                 |
+| プロパティ名 | Type   | 説明                                                                 |
 |:--------------|:-------|:----------------------------------------------------------------------------|
 | total         | Int64  | 許可されている記憶域の合計 (バイト単位)。読み取り専用です。                           |
 | used          | Int64  | 使用領域の合計 (バイト単位)。読み取り専用です。                                      |

@@ -2,12 +2,13 @@
 title: windowsInformationProtectionAppLockerFile の取得
 description: windowsInformationProtectionAppLockerFile オブジェクトのプロパティとリレーションシップを読み取ります。
 author: tfitzmac
-ms.openlocfilehash: c4c23d4aacfdba6bc6dd2482c583bc160462f646
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 0cc27ac6cf8ef55515ce09e97324136cfdffe945
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27323549"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27884213"
 ---
 # <a name="get-windowsinformationprotectionapplockerfile"></a>windowsInformationProtectionAppLockerFile の取得
 

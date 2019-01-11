@@ -1,12 +1,13 @@
 ---
 title: securityVendorInformation リソースの種類
 description: " > **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。"
-ms.openlocfilehash: 4016e274a82ad6a28101dbf5b053124b439a3cbf
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 34e565a69f716f0d167240ab753e5d192758508a
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27072234"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27884386"
 ---
 # <a name="securityvendorinformation-resource-type"></a>securityVendorInformation リソースの種類
 
@@ -16,7 +17,7 @@ ms.locfileid: "27072234"
 
 ## <a name="properties"></a>プロパティ
 
-| プロパティ   | 型|説明|
+| プロパティ   | 種類|説明|
 |:---------------|:--------|:----------|
 |プロバイダー |String|特定のプロバイダー (製品やサービスの仕入先会社ではありません)。たとえば、WindowsDefenderATP です。|
 |providerVersion|String|Subprovider、それが存在する場合は、アラートを生成したプロバイダーのバージョンです。 *Required*|

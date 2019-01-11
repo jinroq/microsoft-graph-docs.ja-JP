@@ -2,12 +2,13 @@
 title: iosUpdateDeviceStatus の作成
 description: 新しい iosUpdateDeviceStatus オブジェクトを作成します。
 author: tfitzmac
-ms.openlocfilehash: 7927912d236058128a9e5263d1d6a9090ce394a6
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: d99ed6726ad8b3ae0e07600afe0fd66e8789f9d1
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27358150"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27886570"
 ---
 # <a name="create-iosupdatedevicestatus"></a>iosUpdateDeviceStatus の作成
 

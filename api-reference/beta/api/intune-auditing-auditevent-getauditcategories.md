@@ -2,12 +2,13 @@
 title: getAuditCategories function
 description: まだ文書化されていません
 author: tfitzmac
-ms.openlocfilehash: da8313c49b37af077d0ba22e1f51204b7f8a2771
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: edf493fb454ebd906f305feab42d363a5c6f377c
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27314001"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27883168"
 ---
 # <a name="getauditcategories-function"></a>getAuditCategories function
 

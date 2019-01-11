@@ -2,12 +2,13 @@
 title: directoryObjectPartnerReference リソースの種類
 description: パートナー テナント内のディレクトリ オブジェクトへの参照を表します。 directoryObject から継承します。
 author: lleonard-msft
-ms.openlocfilehash: 37a60c126ef74f3073f258ba799cf276fda4f5cf
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 46d0f749ac77e7d51e03314e78cfccf494dcc6fe
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27336947"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27884862"
 ---
 # <a name="directoryobjectpartnerreference-resource-type"></a>directoryObjectPartnerReference リソースの種類
 
@@ -15,7 +16,7 @@ ms.locfileid: "27336947"
 
 パートナー組織内のディレクトリ オブジェクトへの参照を表します。 [directoryObject](directoryobject.md?view=graph-rest-beta) から継承します。
 
-## <a name="properties"></a>Properties
+## <a name="properties"></a>プロパティ
 
 | プロパティ | 種類 | 説明 |
 |:---------------|:--------|:----------|

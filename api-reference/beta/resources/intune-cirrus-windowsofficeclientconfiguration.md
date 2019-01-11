@@ -2,12 +2,13 @@
 title: windowsOfficeClientConfiguration リソースの種類
 description: Windows 用の office ポリシーの設定について説明するエンティティです。
 author: tfitzmac
-ms.openlocfilehash: f88868bca7165bc60f534c54f9d0ded19cd8f30c
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: b294cdd82a51818409972c4e93ba31101d78ffdd
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27353873"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27882426"
 ---
 # <a name="windowsofficeclientconfiguration-resource-type"></a>windowsOfficeClientConfiguration リソースの種類
 
@@ -28,7 +29,7 @@ Windows 用の office ポリシーの設定について説明するエンティ�
 |[WindowsOfficeClientConfiguration を削除します。](../api/intune-cirrus-windowsofficeclientconfiguration-delete.md)|なし|の[windowsOfficeClientConfiguration](../resources/intune-cirrus-windowsofficeclientconfiguration.md)を削除します。|
 |[WindowsOfficeClientConfiguration を更新します。](../api/intune-cirrus-windowsofficeclientconfiguration-update.md)|[windowsOfficeClientConfiguration](../resources/intune-cirrus-windowsofficeclientconfiguration.md)|[WindowsOfficeClientConfiguration](../resources/intune-cirrus-windowsofficeclientconfiguration.md)オブジェクトのプロパティを更新します。|
 
-## <a name="properties"></a>Properties
+## <a name="properties"></a>プロパティ
 |プロパティ|種類|説明|
 |:---|:---|:---|
 |ID|String|Office クライアントの構成のポリシーの id。 [OfficeClientConfiguration](../resources/intune-cirrus-officeclientconfiguration.md)から継承されました。|

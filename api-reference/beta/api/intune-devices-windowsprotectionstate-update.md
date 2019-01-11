@@ -2,12 +2,13 @@
 title: WindowsProtectionState を更新します。
 description: WindowsProtectionState オブジェクトのプロパティを更新します。
 author: tfitzmac
-ms.openlocfilehash: 8bdbe3d1841eb29f7616edcc5063cd025f282974
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 97a11b8a3a26bea6f59cf0791bc8f5356f6fdb85
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27308709"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27886871"
 ---
 # <a name="update-windowsprotectionstate"></a>WindowsProtectionState を更新します。
 

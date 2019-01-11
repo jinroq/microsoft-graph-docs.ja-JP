@@ -1,12 +1,13 @@
 ---
 title: Azure AD 同期 API の概要
 description: )、作成を自動化することにより、保守、および id の削除クラウド (ソフトウェア、サービス、または saas のどちらとして) アプリケーションをドロップ ボックス、セールス、ServiceNow などです。 使用できます同期 Api Graph でプログラムを使用して、id の同期を管理するのになど。
-ms.openlocfilehash: ff3acb00801c9b04b8257345b06100297e11710c
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: aada94f39c67fb1174924d49c6e57650f4961cc8
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27073126"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27884687"
 ---
 # <a name="azure-ad-synchronization-api-overview"></a>Azure AD 同期 API の概要
 

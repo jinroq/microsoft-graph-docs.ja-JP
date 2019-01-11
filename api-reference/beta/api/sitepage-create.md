@@ -3,12 +3,13 @@ author: rahmit
 ms.author: rahmit
 ms.date: 05/07/2018
 title: SharePoint サイトに新しいページを作成します。
-ms.openlocfilehash: 142b34a56f4971d8228ba6761bc7a3a9e2f48caf
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 8b3c1f6cabbacd62e671a27c03658c68b237ef92
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27072900"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27885597"
 ---
 # <a name="create-a-page-in-the-site-pages-list-of-a-site"></a>サイトのサイトのページ一覧でページを作成します。
 
@@ -38,7 +39,7 @@ POST /sites/{site-id}/pages
 
 要求の本体を作成する[sitePage][]リソースの JSON 表現を指定します。
 
-## <a name="example"></a>使用例
+## <a name="example"></a>例
 
 次の例では、新しいページを作成する方法を示します。
 

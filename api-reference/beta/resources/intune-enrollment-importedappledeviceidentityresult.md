@@ -2,12 +2,13 @@
 title: importedAppleDeviceIdentityResult リソースの種類
 description: ImportedAppleDeviceIdentityResult リソースでは、Apple のデバイス id をインポートしようとした結果を表します。
 author: tfitzmac
-ms.openlocfilehash: 650dfca3cba7800c2cdc9eb0087e9d67b8dc0b29
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 47d9087bde8a0ff8fdc5a605fe6eb98cb05007bb
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27344563"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27886199"
 ---
 # <a name="importedappledeviceidentityresult-resource-type"></a>importedAppleDeviceIdentityResult リソースの種類
 
@@ -28,7 +29,7 @@ ImportedAppleDeviceIdentityResult リソースでは、Apple のデバイス id 
 |[ImportedAppleDeviceIdentityResult を削除します。](../api/intune-enrollment-importedappledeviceidentityresult-delete.md)|なし|の[importedAppleDeviceIdentityResult](../resources/intune-enrollment-importedappledeviceidentityresult.md)を削除します。|
 |[ImportedAppleDeviceIdentityResult を更新します。](../api/intune-enrollment-importedappledeviceidentityresult-update.md)|[importedAppleDeviceIdentityResult](../resources/intune-enrollment-importedappledeviceidentityresult.md)|[ImportedAppleDeviceIdentityResult](../resources/intune-enrollment-importedappledeviceidentityresult.md)オブジェクトのプロパティを更新します。|
 
-## <a name="properties"></a>Properties
+## <a name="properties"></a>プロパティ
 |プロパティ|種類|説明|
 |:---|:---|:---|
 |ID|String|エンティティのキー。 [ImportedAppleDeviceIdentity](../resources/intune-enrollment-importedappledeviceidentity.md)から継承されました。|

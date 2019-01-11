@@ -2,12 +2,13 @@
 title: deviceManagementUserRightsLocalUserOrGroup リソースの種類
 description: ローカル ユーザーまたはグループのユーザー権利の設定の使用に関する情報を表します。
 author: tfitzmac
-ms.openlocfilehash: baabd2f3bb9e3bce44d172cd83f61f57c5c2c98d
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: d795e2b259c71612b1d0720796b6ad76145bb36d
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27303732"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27885744"
 ---
 # <a name="devicemanagementuserrightslocaluserorgroup-resource-type"></a>deviceManagementUserRightsLocalUserOrGroup リソースの種類
 
@@ -16,7 +17,7 @@ ms.locfileid: "27303732"
 > **注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
 
 ローカル ユーザーまたはグループのユーザー権利の設定の使用に関する情報を表します。
-## <a name="properties"></a>Properties
+## <a name="properties"></a>プロパティ
 |プロパティ|種類|説明|
 |:---|:---|:---|
 |名前|String|ローカル ユーザーまたはグループの名前です。|

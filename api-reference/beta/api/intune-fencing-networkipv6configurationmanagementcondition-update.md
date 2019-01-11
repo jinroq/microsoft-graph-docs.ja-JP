@@ -2,12 +2,13 @@
 title: NetworkIPv6ConfigurationManagementCondition を更新します。
 description: NetworkIPv6ConfigurationManagementCondition オブジェクトのプロパティを更新します。
 author: tfitzmac
-ms.openlocfilehash: 10014f1ddde4914b97f52e92901266e06ae07c99
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 9b9e75b9f09c162b41bb1c48c7933319060fbd88
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27357317"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27882699"
 ---
 # <a name="update-networkipv6configurationmanagementcondition"></a>NetworkIPv6ConfigurationManagementCondition を更新します。
 

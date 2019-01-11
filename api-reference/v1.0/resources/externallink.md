@@ -1,12 +1,13 @@
 ---
 title: externalLink リソースの種類
 description: OneNote のページまたはノートブックを開く URL です。
-ms.openlocfilehash: ae25c6220545ff55259a18b6180225cc602e129b
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 8151a0579ccbc0f151fba4cba1bfc8391ccfe123
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27021064"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27883441"
 ---
 # <a name="externallink-resource-type"></a>externalLink リソースの種類
 
@@ -31,7 +32,7 @@ OneNote のページまたはノートブックを開く URL です。
 
 ```
 ## <a name="properties"></a>プロパティ
-| プロパティ     | 型   |説明|
+| プロパティ     | 種類   |説明|
 |:---------------|:--------|:----------|
 |href|String|そのリンクの URL です。|
 

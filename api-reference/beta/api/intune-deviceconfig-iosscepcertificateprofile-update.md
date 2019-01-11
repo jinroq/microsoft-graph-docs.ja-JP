@@ -2,12 +2,13 @@
 title: IosScepCertificateProfile を更新します。
 description: IosScepCertificateProfile オブジェクトのプロパティを更新します。
 author: tfitzmac
-ms.openlocfilehash: c0e43039696317b2db4f85715c98846a049275e7
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 5f8ee6b856e2b8351059cd47de7bf8e9d2dddfd5
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27347748"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27887200"
 ---
 # <a name="update-iosscepcertificateprofile"></a>IosScepCertificateProfile を更新します。
 

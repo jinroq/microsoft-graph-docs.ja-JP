@@ -1,12 +1,13 @@
 ---
 title: GovernanceRoleAssignmentRequest を取得します。
 description: 'GovernanceRoleAssignmentRequest を取得します。 '
-ms.openlocfilehash: aac41bd8443d6066a7866462624a072db57b35da
-ms.sourcegitcommit: 82f9d0d10388572a3073b2dde8ca0a7b409135b8
+localization_priority: Normal
+ms.openlocfilehash: 190e79787b32e7e21e9d321ee6f3d90dc27605ea
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "27191096"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27887452"
 ---
 # <a name="get-governanceroleassignmentrequest"></a>GovernanceRoleAssignmentRequest を取得します。
 

@@ -2,12 +2,13 @@
 title: discoverySource 列挙型
 description: まだ文書化されていません
 author: tfitzmac
-ms.openlocfilehash: 3e680e231a3bb701a4c1b66347078d49463172de
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: ec4c7c9f29ef116b851f925fecdaf1de0f79cf2e
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27309773"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27885975"
 ---
 # <a name="discoverysource-enum-type"></a>discoverySource 列挙型
 

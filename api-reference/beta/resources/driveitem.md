@@ -3,12 +3,13 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
 title: DriveItem
-ms.openlocfilehash: 1344d9a82459704354fc20a07c329949c4f5fc23
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 255b9de7ad565228da093a9a40d23c3360df28b2
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27072346"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27882265"
 ---
 # <a name="driveitem-resource-type"></a>driveItem リソースの種類
 
@@ -96,7 +97,7 @@ ms.locfileid: "27072346"
 
 ## <a name="properties"></a>プロパティ
 
-| プロパティ             | 型               | 説明
+| プロパティ             | 種類               | 説明
 |:---------------------|:-------------------|:---------------------------------
 | audio                | [audio][]          | オーディオのメタデータ (アイテムがオーディオ ファイルである場合)。読み取り専用です。
 | createdBy            | [identitySet][]    | そのアイテムを作成したユーザーの ID、デバイス、アプリケーション。読み取り専用です。
@@ -139,16 +140,16 @@ ms.locfileid: "27072346"
 | 分析          | [itemAnalytics][]リソース      | この項目に対して行われた活動の表示について分析します。
 | content            | Stream                          | コンテンツのストリーム (アイテムがファイルを表す場合)。
 | children           | driveitem コレクション            | アイテムの直接の子のアイテム オブジェクトを格納するコレクション。子が含まれるのは、フォルダーを表すアイテムのみです。読み取り専用です。Null 許容型。
-| listItem           | [listItem][]                    | SharePoint 内のドライブ、関連するドキュメント ライブラリのアイテムをリストします。 読み取り専用。 Null 許容型。
+| listItem           | [listItem][]                    | SharePoint 内のドライブ、関連するドキュメント ライブラリのアイテムをリストします。 読み取り専用です。 Null 許容型。
 | permissions        | [permission][] コレクション       | アイテムのアクセス許可のセット。読み取り専用です。Null 許容型。
 | thumbnails         | [thumbnailSet][] コレクション     | アイテムに関連付けられた [ThumbnailSet][] オブジェクトを格納するコレクション。詳細については、[サムネイルの取得][]についてのページをご覧ください。読み取り専用です。Null 許容型。
-| versions           | [driveItemVersion][]コレクション | アイテムの以前のバージョンの一覧です。 詳細については、[以前のバージョンを取得する][]を参照してください。 読み取り専用。 Null 許容型。
+| versions           | [driveItemVersion][]コレクション | アイテムの以前のバージョンの一覧です。 詳細については、[以前のバージョンを取得する][]を参照してください。 読み取り専用です。 Null 許容型。
 
 ## <a name="instance-attributes"></a>インスタンスの属性
 
 インスタンスの属性は、動作が特殊なプロパティです。これらのプロパティは一時的なものであり、a) サービスの動作を定義するか、b) 短期的なプロパティの値 (有効期限を持つアイテムのダウンロード URL など) を提供します。
 
-| プロパティ名                     | 型   | 説明
+| プロパティ名                     | Type   | 説明
 |:----------------------------------|:-------|:--------------------------------
 | @microsoft.graph.conflictBehavior | 文字列 | 新しいアイテムを作成するアクションの競合を解決する動作。*fail*、*replace*、*rename* という値を使用できます。PUT の既定値は *replace* です。この注釈とともにアイテムが返されることはありません。書き込み専用です。
 | @microsoft.graph.downloadUrl      | 文字列 | このファイルのコンテンツをダウンロードするために使用できる URL。この URL では認証は必要ありません。読み取り専用です。
@@ -159,7 +160,7 @@ URL は、短時間 (1 時間) が無効になる前にのみ使用できます�
 
 ## <a name="methods"></a>メソッド
 
-| メソッド                                                   | REST パス
+| Method                                                   | REST パス
 |:---------------------------------------------------------|:------------------
 | [アイテムを取得する](../api/driveitem-get.md)                      | `GET /drive/items/{item-id}`
 | [アクティビティを一覧表示する](../api/activities-list.md)             | `GET /drive/items/{item-id}/activities`

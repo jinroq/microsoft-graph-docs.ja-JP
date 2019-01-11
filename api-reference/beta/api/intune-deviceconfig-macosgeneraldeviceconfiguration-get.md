@@ -2,12 +2,13 @@
 title: Get macOSGeneralDeviceConfiguration
 description: macOSGeneralDeviceConfiguration オブジェクトのプロパティとリレーションシップを読み取ります。
 author: tfitzmac
-ms.openlocfilehash: 44db02a9a7e30ddd48c6ad4de2c74e7ea9619dcc
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 392ca97505434aaedb9c235900134bd30ec7501c
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27340454"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27886822"
 ---
 # <a name="get-macosgeneraldeviceconfiguration"></a>Get macOSGeneralDeviceConfiguration
 

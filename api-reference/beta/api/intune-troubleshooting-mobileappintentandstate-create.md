@@ -2,12 +2,13 @@
 title: MobileAppIntentAndState を作成します。
 description: 新しい mobileAppIntentAndState オブジェクトを作成します。
 author: tfitzmac
-ms.openlocfilehash: 590cbb01e8b1f41ce1a1c43be7c3a97872ea737a
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: bbd6e6053054045e2a95aebfc92acfd8a5d25052
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27308702"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27886458"
 ---
 # <a name="create-mobileappintentandstate"></a>MobileAppIntentAndState を作成します。
 

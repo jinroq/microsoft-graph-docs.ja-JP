@@ -2,12 +2,13 @@
 title: AndroidWorkProfileGmailEasConfiguration を更新します。
 description: AndroidWorkProfileGmailEasConfiguration オブジェクトのプロパティを更新します。
 author: tfitzmac
-ms.openlocfilehash: a3de985759cb4f9630593e5d86082421a5f3b937
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 37d1b966f3476994a97bc72b5d751c2e0bde1e4c
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27324186"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27887487"
 ---
 # <a name="update-androidworkprofilegmaileasconfiguration"></a>AndroidWorkProfileGmailEasConfiguration を更新します。
 

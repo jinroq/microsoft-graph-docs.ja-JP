@@ -2,12 +2,13 @@
 title: ManagedEBookCategory を削除します。
 description: ManagedEBookCategory を削除します。
 author: tfitzmac
-ms.openlocfilehash: 1333a93081ebc77f53345e07b68af6c30de19d7f
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 4123c596129eca9666f951bc7dbbee4c69575e5a
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27334007"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27883055"
 ---
 # <a name="delete-managedebookcategory"></a>ManagedEBookCategory を削除します。
 

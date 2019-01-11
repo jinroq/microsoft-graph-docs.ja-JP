@@ -2,12 +2,13 @@
 title: テーブルの作成
 description: この API を使用して、新しいテーブルを作成します。
 author: lumine2008
-ms.openlocfilehash: 54118ab3904918200617dbb55c983975817519f9
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 7e259e8a2d8cb6e725027baca803e94288dd3060
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27348294"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27882825"
 ---
 # <a name="create-table"></a>テーブルの作成
 
@@ -38,9 +39,9 @@ POST /workbook/worksheets/{id|name}/tables/add
 ## <a name="request-body"></a>要求本文
 要求本文で、次のパラメーターを含む JSON オブジェクトを指定します。 
 
-| パラメーター       | 種類|説明|
+| パラメーター       | Type|説明|
 |:---------------|:----------|:----------|
-| Address  | string| 範囲のアドレスです。API を次から呼び出す場合: `worksheets/{id|name}/tables/add` path, there is no need to support the sheet name prefix in the address. However, if you are calling this off of `workbook/tables/add` path, then supply the sheet name on which the table needs to be created (example: `sheet1!A1:D4`)|
+| Address  | 文字列| 範囲のアドレスです。API を次から呼び出す場合: `worksheets/{id|name}/tables/add` path, there is no need to support the sheet name prefix in the address. However, if you are calling this off of `workbook/tables/add` path, then supply the sheet name on which the table needs to be created (example: `sheet1!A1:D4`)|
 | hasHeaders  | boolean|範囲に列ラベルがあるかどうかを示すブール値。ソースにヘッダーが含まれていない場合 (このプロパティが false に設定されている場合)、Excel はデータを下方向に 1 行シフトして、自動的にヘッダーを生成します。|
 
 ## <a name="response"></a>応答

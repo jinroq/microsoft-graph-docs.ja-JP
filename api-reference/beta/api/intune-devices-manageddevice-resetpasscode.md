@@ -2,12 +2,13 @@
 title: resetPasscode アクション
 description: パスコードのリセット
 author: tfitzmac
-ms.openlocfilehash: 89a8cbd6bfc1d0208d22ea4e43b48f2e1c6963da
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: be84428cde043885d67509a6e023f16cccd03f64
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27315205"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27882174"
 ---
 # <a name="resetpasscode-action"></a>resetPasscode アクション
 

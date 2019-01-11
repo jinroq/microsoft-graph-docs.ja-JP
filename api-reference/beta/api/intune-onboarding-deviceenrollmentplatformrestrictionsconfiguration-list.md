@@ -2,12 +2,13 @@
 title: deviceEnrollmentPlatformRestrictionsConfigurations のリスト
 description: deviceEnrollmentPlatformRestrictionsConfiguration オブジェクトのプロパティとリレーションシップをリストします。
 author: tfitzmac
-ms.openlocfilehash: 028d138536a1c11b8251006e1905aa7aa69dc4d5
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: b86d9643251429cb86844c9a48d07162ce19ae61
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27345620"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27886276"
 ---
 # <a name="list-deviceenrollmentplatformrestrictionsconfigurations"></a>deviceEnrollmentPlatformRestrictionsConfigurations のリスト
 

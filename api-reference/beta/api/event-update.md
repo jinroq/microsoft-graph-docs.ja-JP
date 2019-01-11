@@ -2,12 +2,13 @@
 title: イベントの更新
 description: イベント オブジェクトのプロパティを更新します。
 author: angelgolfer-ms
-ms.openlocfilehash: 05612f50b038f491598b98c5661fac17238419df
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 09ebb87d33a7fe3d32281e6b83fde3bd7b3efefc
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27330675"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27883063"
 ---
 # <a name="update-event"></a>イベントの更新
 
@@ -58,13 +59,13 @@ PATCH /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/
 | categories|String|イベントに関連付けられたカテゴリ。|
 | end|DateTimeTimeZone|イベントが終了する日時。<br/><br/>既定で、終了時刻は UTC 単位です。EndTimeZone でオプションのタイム ゾーンを指定して、そのタイム ゾーンで終了時刻を表現し、UTC からの時間オフセットを含めることができます。EndTimeZone を使用する場合、StartTimeZone の値も指定する必要があります。<br/><br/>この例では、太平洋標準時で 2015 年 2 月 25 日午後 9:34 を指定します ("2015-02-25T21:34:00-08:00")。 |
 | importance|String|イベントの重要度。 可能な値は `low`、`normal`、`high` です。|
-| isAllDay|Boolean|イベントが一日中続く場合に、true に設定します。|
-| isReminderOn|Boolean|ユーザーにイベントを通知するアラートを設定する場合は、true に設定します。|
+| isAllDay|ブール値|イベントが一日中続く場合に、true に設定します。|
+| isReminderOn|ブール値|ユーザーにイベントを通知するアラートを設定する場合は、true に設定します。|
 | location|Location|イベントの場所。|
 |locations|[場所](../resources/location.md)のコレクション|イベントを開催する場所、または参加者がいる場所。 **location** プロパティと **locations** プロパティは常に互いに一致します。 **location** プロパティを更新すると、**locations** コレクションに含まれる既存のすべての場所が削除されて、**location** の新しい値に置き換えられます。 |
 | recurrence|PatternedRecurrence|イベントの繰り返しパターン。|
 | reminderMinutesBeforeStart|Int32|アラーム通知を行う、イベント開始時間前の分数。|
-| responseRequested|Boolean|イベントが承諾または辞退されたときに、送信者が応答を要求する場合に、true に設定します。|
+| responseRequested|ブール値|イベントが承諾または辞退されたときに、送信者が応答を要求する場合に、true に設定します。|
 | sensitivity|String| 可能な値は、`normal`、`personal`、`private`、`confidential` です。|
 | showAs|String|表示するステータス。 使用可能な値: `free` 、 `tentative`、 `busy`、 `oof`、 `workingElsewhere`、 `unknown`。|
 | 開始|DateTimeTimeZone|イベントの開始時刻です。 <br/><br/>既定で、開始時刻は UTC 単位です。EndTimeZone でオプションのタイム ゾーンを指定して、そのタイム ゾーンで開始時刻を表現し、UTC からの時間オフセットを含めることができます。StartTimeZone を使用する場合、EndTimeZone の値も指定する必要があります。<br/><br/>この例では、太平洋標準時で 2015 年 2 月 25 日午後 7:34 を指定します "2015-02-25T19:34:00-08:00".  |

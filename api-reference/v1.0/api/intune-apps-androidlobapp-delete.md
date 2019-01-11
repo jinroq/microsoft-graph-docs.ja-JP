@@ -2,12 +2,13 @@
 title: Delete androidLobApp
 description: androidLobApp を削除します。
 author: tfitzmac
-ms.openlocfilehash: 9ca89f328dcc459b767ef81e9c02b5d3607816b6
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 587114c54d0d90c6a023d379bc0c48bde787e6dc
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27362644"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27884008"
 ---
 # <a name="delete-androidlobapp"></a>Delete androidLobApp
 

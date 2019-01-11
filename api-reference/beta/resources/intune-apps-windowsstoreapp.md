@@ -2,12 +2,13 @@
 title: windowsStoreApp リソースの種類
 description: プロパティと Windows ストア アプリの継承されたプロパティが含まれています。
 author: tfitzmac
-ms.openlocfilehash: 7c02681dcc8538116967a4b45e01485f9b69b75c
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 331ed1d6b6f22d3bf93ed23d4bf51aea4edf80c5
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27346495"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27886234"
 ---
 # <a name="windowsstoreapp-resource-type"></a>windowsStoreApp リソースの種類
 
@@ -28,7 +29,7 @@ ms.locfileid: "27346495"
 |[WindowsStoreApp を削除します。](../api/intune-apps-windowsstoreapp-delete.md)|なし|の[windowsStoreApp](../resources/intune-apps-windowsstoreapp.md)を削除します。|
 |[WindowsStoreApp を更新します。](../api/intune-apps-windowsstoreapp-update.md)|[windowsStoreApp](../resources/intune-apps-windowsstoreapp.md)|[WindowsStoreApp](../resources/intune-apps-windowsstoreapp.md)オブジェクトのプロパティを更新します。|
 
-## <a name="properties"></a>Properties
+## <a name="properties"></a>プロパティ
 |プロパティ|種類|説明|
 |:---|:---|:---|
 |ID|String|エンティティのキー。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|

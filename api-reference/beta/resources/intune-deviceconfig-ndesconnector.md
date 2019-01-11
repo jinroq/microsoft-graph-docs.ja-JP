@@ -2,12 +2,13 @@
 title: ndesConnector リソースの種類
 description: Ndes の OnPrem コネクタを表すエンティティです。
 author: tfitzmac
-ms.openlocfilehash: e37a20c440546094424d0284bd1d7ffbbeb60bdd
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 582d49ccd9a5d61c144e3ef915994302515dbe40
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27332292"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27884918"
 ---
 # <a name="ndesconnector-resource-type"></a>ndesConnector リソースの種類
 
@@ -25,7 +26,7 @@ Ndes の OnPrem コネクタを表すエンティティです。
 |[NdesConnector を削除します。](../api/intune-deviceconfig-ndesconnector-delete.md)|なし|の[ndesConnector](../resources/intune-deviceconfig-ndesconnector.md)を削除します。|
 |[NdesConnector を更新します。](../api/intune-deviceconfig-ndesconnector-update.md)|[ndesConnector](../resources/intune-deviceconfig-ndesconnector.md)|[NdesConnector](../resources/intune-deviceconfig-ndesconnector.md)オブジェクトのプロパティを更新します。|
 
-## <a name="properties"></a>Properties
+## <a name="properties"></a>プロパティ
 |プロパティ|種類|説明|
 |:---|:---|:---|
 |ID|String|NDES のコネクタのキー。|

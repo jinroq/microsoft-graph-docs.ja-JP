@@ -1,12 +1,13 @@
 ---
 title: 招待メッセージの構成
 description: invitedUserMessageInfo オブジェクトでは、招待メッセージを構成できます。
-ms.openlocfilehash: c8258d2b90d1aa5f5081b271ccc70fcb7408b132
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 06be157e61fd6d466cc2b18546bb29762d0133a8
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27023416"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27885870"
 ---
 # <a name="configuring-the-invitation-message"></a>招待メッセージの構成
 
@@ -14,7 +15,7 @@ invitedUserMessageInfo オブジェクトでは、[招待](invitation.md)メッ�
 
 
 ## <a name="properties"></a>プロパティ
-| プロパティ     | 型   |説明|
+| プロパティ     | 種類   |説明|
 |:---------------|:--------|:----------|
 |ccRecipients|[Recipient](recipient.md) collection|招待メッセージの送信先にする必要がある追加の受信者。現在、サポートされている追加の受信者は 1 人のみです。|
 |customizedMessageBody|String|既定のメッセージを使用しない場合に送信するカスタマイズされたメッセージ本文。|

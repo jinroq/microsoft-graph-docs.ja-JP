@@ -2,12 +2,13 @@
 title: AndroidDeviceOwnerGeneralDeviceConfiguration を更新します。
 description: AndroidDeviceOwnerGeneralDeviceConfiguration オブジェクトのプロパティを更新します。
 author: tfitzmac
-ms.openlocfilehash: bf81569d5af7e223ff24e34bc031a19633d22edd
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: bb4ce71c059f9fdcfa971237b46a28473059e742
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27340097"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27887606"
 ---
 # <a name="update-androiddeviceownergeneraldeviceconfiguration"></a>AndroidDeviceOwnerGeneralDeviceConfiguration を更新します。
 

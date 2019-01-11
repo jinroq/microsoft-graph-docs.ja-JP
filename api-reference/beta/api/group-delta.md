@@ -1,12 +1,13 @@
 ---
 title: 'group: delta'
 description: Get を新しく作成するには、更新、またはグループ メンバーシップの変更を含むグループ全体のコレクションのすべての読み取りを実行しなくても、グループを削除します。 詳細については、デルタのクエリを使用するを参照してください。
-ms.openlocfilehash: 562321ddff9e5c9d2840c1c1178aa8e4f2fd4114
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 5645fa950faca9f5a49b9db6288eb138553aad0a
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27072769"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27887872"
 ---
 # <a name="group-delta"></a>group: delta
 

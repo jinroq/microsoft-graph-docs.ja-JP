@@ -2,12 +2,13 @@
 title: windowsInformationProtectionAppLockerFiles のリスト
 description: windowsInformationProtectionAppLockerFile オブジェクトのプロパティとリレーションシップをリストします。
 author: tfitzmac
-ms.openlocfilehash: d0c33fc5b529e4ab1028e811f6f0024c5ea8f63b
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 37595c8ba1f64fa55204a5a614c140af7bf44e7e
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27309556"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27885302"
 ---
 # <a name="list-windowsinformationprotectionapplockerfiles"></a>windowsInformationProtectionAppLockerFiles のリスト
 

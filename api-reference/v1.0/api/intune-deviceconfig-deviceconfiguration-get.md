@@ -2,12 +2,13 @@
 title: Get deviceConfiguration
 description: deviceConfiguration オブジェクトのプロパティとリレーションシップを読み取ります。
 author: tfitzmac
-ms.openlocfilehash: 147b102bb276b5c79840e565e1ba74edfcb3da12
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: ee502af04c1e00edd37ade9f8f29b5b27320f940
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27331474"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27884295"
 ---
 # <a name="get-deviceconfiguration"></a>Get deviceConfiguration
 

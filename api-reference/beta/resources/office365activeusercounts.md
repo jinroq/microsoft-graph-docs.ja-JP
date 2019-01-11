@@ -1,20 +1,21 @@
 ---
 title: office365ActiveUserCounts リソースの種類
 description: リソースの JSON 表記を次に示します。
-ms.openlocfilehash: 63d0469f5531d68a7b81c37014103a02e977e870
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 887f9b08d7f46aac023fbd0f34e6174e5f422760
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27069853"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27882720"
 ---
 # <a name="office365activeusercounts-resource-type"></a>office365ActiveUserCounts リソースの種類
 
 ## <a name="properties"></a>プロパティ
 
-| プロパティ          | 型   | 説明                              |
+| プロパティ          | 種類   | 説明                              |
 | :---------------- | :----- | ---------------------------------------- |
-| reportRefreshDate | Date   | コンテンツの最新の日付。          |
+| reportRefreshDate | 日付   | コンテンツの最新の日付。          |
 | office365         | Int64  | Office 365 のアクティブ ユーザーの数です。 この数値には、Exchange、OneDrive、SharePoint、Skype のビジネス、Yammer、およびマイクロソフトのチームで作業中のすべてのユーザーが含まれます。 それぞれのプロパティの説明では、各製品のアクティブなユーザーの定義が表示されます。 |
 | 交換          | Int64  | Exchange 内のアクティブ ユーザーの数です。 読み取りし、電子メールを送信できるユーザーは、アクティブなユーザーと見なされます。 |
 | oneDrive          | Int64  | OneDrive でアクティブなユーザーの数です。 表示または編集したファイルを内部または外部でファイルを共有またはファイルを同期するユーザーは、アクティブなユーザーと見なされます。 |
@@ -22,7 +23,7 @@ ms.locfileid: "27069853"
 | skypeForBusiness  | Int64  | Skype のビジネスでのアクティブ ユーザーの数です。 整理または会議に参加またはピア ツー ピア セッションに参加しているユーザーは、アクティブなユーザーと見なされます。 |
 | yammer            | Int64  | Yammer のアクティブ ユーザーの数です。 投稿、読み取り、またはメッセージのようなユーザーは、アクティブなユーザーと見なされます。 |
 | チーム             | Int64  | マイクロソフトのチームで作業中のユーザーの数です。 チームのチャネルでメッセージを投稿、プライベート チャットのセッションにメッセージを送信、または会議や通話に参加したユーザーは、アクティブなユーザーと見なされます。 |
-| reportDate        | Date   | 複数のユーザーがアクティブだった日付。 |
+| reportDate        | 日付   | 複数のユーザーがアクティブだった日付。 |
 | reportPeriod      | String | レポートの対象日数です。    |
 
 ## <a name="json-representation"></a>JSON 表記

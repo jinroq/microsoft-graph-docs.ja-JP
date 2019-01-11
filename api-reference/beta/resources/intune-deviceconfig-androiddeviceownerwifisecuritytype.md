@@ -2,12 +2,13 @@
 title: androidDeviceOwnerWiFiSecurityType 列挙型
 description: Android デバイスの所有者の Wi-fi セキュリティの種類です。
 author: tfitzmac
-ms.openlocfilehash: 02f3830d82e08a10f6726cf1ebd2e7f04a2e8f2e
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: ad844d2ff61cddee7fa686438009b7c46387439d
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27306686"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27884399"
 ---
 # <a name="androiddeviceownerwifisecuritytype-enum-type"></a>androidDeviceOwnerWiFiSecurityType 列挙型
 

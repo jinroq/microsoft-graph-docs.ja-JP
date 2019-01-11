@@ -2,12 +2,13 @@
 title: page を作成する
 description: 既定のノートブックの既定のセクションで OneNote の新しいページを作成します。
 author: Jewan-microsoft
-ms.openlocfilehash: 7d8faf66d95bdeaf5e566a70026f1bc894cc2803
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 373ed0a8e63014efe853843fc111c638617b868a
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27303221"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27884442"
 ---
 # <a name="create-page"></a>page を作成する
 

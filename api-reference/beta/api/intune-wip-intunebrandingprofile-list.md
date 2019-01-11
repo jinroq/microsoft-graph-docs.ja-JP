@@ -2,12 +2,13 @@
 title: リスト intuneBrandingProfiles
 description: IntuneBrandingProfile オブジェクトのプロパティと関係を一覧表示します。
 author: tfitzmac
-ms.openlocfilehash: 864cdd86eac9f0b22eb66ecc930a1f900e9e83e3
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: c697f39c03e509c28fe44a074f0e40e6a4adadc1
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27336261"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27885336"
 ---
 # <a name="list-intunebrandingprofiles"></a>リスト intuneBrandingProfiles
 

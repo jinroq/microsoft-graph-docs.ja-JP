@@ -2,12 +2,13 @@
 title: deviceConfigurationUserOverview リソースの種類
 description: まだ文書化されていません
 author: tfitzmac
-ms.openlocfilehash: 74f56723702b50e855cc99f108950c708545fa5c
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 0103d6eda14e2411a3ece16a7dcff8eef50d9b9b
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27303781"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27883973"
 ---
 # <a name="deviceconfigurationuseroverview-resource-type"></a>deviceConfigurationUserOverview リソースの種類
 

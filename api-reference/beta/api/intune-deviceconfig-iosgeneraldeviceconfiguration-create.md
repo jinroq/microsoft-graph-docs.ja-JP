@@ -2,12 +2,13 @@
 title: Create iosGeneralDeviceConfiguration
 description: 新しい iosGeneralDeviceConfiguration オブジェクトを作成します。
 author: tfitzmac
-ms.openlocfilehash: 0d53f5f5289c21223c0b8e73f0c0eba81bb74731
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 5345fd88837726a0275e0a32e0c7894300cfe6a3
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27332943"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27882475"
 ---
 # <a name="create-iosgeneraldeviceconfiguration"></a>Create iosGeneralDeviceConfiguration
 

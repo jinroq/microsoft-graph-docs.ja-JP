@@ -1,12 +1,13 @@
 ---
 title: plannerCategoryDescriptions リソースの種類
 description: '**PlannerCategoryDescriptions** リソースは、計画に定義されているカテゴリを説明するラベルを表します。これは、計画の詳細オブジェクトに含まれています。最大 6 つのカテゴリを定義できます。 '
-ms.openlocfilehash: eb54a42cd3e86a9f2c39ff46d45c71fb04142dad
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: ebfe1fc69ccd143d6f84afab9c5c2ed2054df3d9
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27068346"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27882755"
 ---
 # <a name="plannercategorydescriptions-resource-type"></a>plannerCategoryDescriptions リソースの種類
 
@@ -16,7 +17,7 @@ ms.locfileid: "27068346"
 
 
 ## <a name="properties"></a>プロパティ
-| プロパティ     | 型   |説明|
+| プロパティ     | 種類   |説明|
 |:---------------|:--------|:----------|
 |category1|String|Category 1 に関連付けられているラベル|
 |category2|String|Category 2 に関連付けられているラベル|

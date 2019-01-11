@@ -2,12 +2,13 @@
 title: enrollmentConfigurationAssignments のリスト
 description: enrollmentConfigurationAssignment オブジェクトのプロパティとリレーションシップをリストします。
 author: tfitzmac
-ms.openlocfilehash: d266cb9782e8be4e7e99fd10eef18680adbf4e40
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 8800bce134225e226890a812cacbae879d68220c
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27303872"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27885359"
 ---
 # <a name="list-enrollmentconfigurationassignments"></a>enrollmentConfigurationAssignments のリスト
 

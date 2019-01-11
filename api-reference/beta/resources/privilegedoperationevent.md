@@ -1,12 +1,13 @@
 ---
 title: privilegedOperationEvent リソースの種類
 description: 監査イベントによって生成される特権 Id 管理の役割の操作など、管理者特権を持つロールを管理する、ユーザーが自分の役割を有効にユーザーが自分のロールを非アクティブ化を表します。
-ms.openlocfilehash: e35e0744a8a8d54ad9f1cc8cd536b05283eaa9fb
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: cc7374f4cf3bc18fbf2f3c36ee4f57e6d703434b
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27071374"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27882685"
 ---
 # <a name="privilegedoperationevent-resource-type"></a>privilegedOperationEvent リソースの種類
 
@@ -22,12 +23,12 @@ ms.locfileid: "27071374"
 |[リスト privilegedOperationEvent](../api/privilegedoperationevent-list.md) | [privilegedOperationEvent](privilegedoperationevent.md)コレクションです。 |PrivilegedOperationEvent オブジェクトのコレクションを取得します。|
 
 ## <a name="properties"></a>プロパティ
-| プロパティ     | 型   |説明|
+| プロパティ     | 種類   |説明|
 |:---------------|:--------|:----------|
 |について|文字列|詳細情報イベントです。|
 |creationDateTime|dateTimeOffset|イベントが作成されたときの時刻を示します。|
 |expirationDateTime|dateTimeOffset|修飾子の一覧は、「Activate」、およびロールのアクティブ化の有効期限を示します場合にのみ使用されます。|
-|ID|文字列|PrivilegedOperationEvent の一意の識別子です。 読み取り専用。|
+|ID|文字列|PrivilegedOperationEvent の一意の識別子です。 読み取り専用です。|
 |referenceKey|文字列|ロールのアクティブ化中に問題と要求のチケット番号です。 ロールのアクティブ化時にチケット番号を指定した場合にのみ値が表示されます。|
 |referenceSystem|文字列|チケット tole のライセンス認証中に提供されたシステム要求問題です。 ロールのアクティブ化時にチケット システムが用意されている場合にのみ値が表示されます。|
 |修飾子の一覧|文字列|要求された操作の種類です。 修飾子の一覧を指定できます: ```Assign``` (ロールの割り当て)、 ```Activate``` (ロールのアクティブ化)、 ```Unassign``` (ロールの割り当てを削除する)、 ```Deactivate``` (ロールの無効化)、 ```ScanAlersNow``` (セキュリティの警告をスキャンする)、 ```DismissAlert``` (セキュリティの警告を無視する)、 ```FixAlertItem``` (セキュリティの修正アラートの問題)、 ```AccessReview_Review``` (確認のアクセスを確認する)、 ```AccessReview_Create``` (、アクセス確認を作成する) ```AccessReview_Update``` (更新のアクセスを確認する)、および```AccessReview_Delete```(削除、アクセスを確認)。|

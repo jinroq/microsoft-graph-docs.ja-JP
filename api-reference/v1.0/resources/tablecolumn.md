@@ -2,12 +2,13 @@
 title: TableColumn リソースの種類
 description: テーブル内にある 1 つの列を表します。
 author: lumine2008
-ms.openlocfilehash: d2d83859c15a24624d8711a7ef86e3b0c89448e1
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 7c2506c34e25ba4b3754e1fd7b13557b21176e09
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27315128"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27882118"
 ---
 # <a name="tablecolumn-resource-type"></a>TableColumn リソースの種類
 
@@ -32,7 +33,7 @@ ms.locfileid: "27315128"
 ## <a name="properties"></a>プロパティ
 | プロパティ     | 種類   |説明|
 |:---------------|:--------|:----------|
-|ID|string|テーブル内の列を識別する一意のキーを返します。 このプロパティは符号化文字列値として解釈し、その他の型に解析すべきではありません。 読み取り専用。|
+|ID|文字列|テーブル内の列を識別する一意のキーを返します。 このプロパティは符号化文字列値として解釈し、その他の型に解析すべきではありません。 読み取り専用。|
 |index|int|テーブルの列コレクション内の列のインデックス番号を返します。0 を起点とする番号になります。読み取り専用です。|
 |name|文字列|テーブル列の名前を取得します。読み取り専用です。|
 |values|Json|指定した範囲の Raw 値を表します。返されるデータの型は、文字列、数値、またはブール値のいずれかになります。エラーが含まれているセルは、エラー文字列を返します。|

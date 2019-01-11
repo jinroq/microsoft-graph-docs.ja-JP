@@ -1,12 +1,13 @@
 ---
 title: filterOperand リソースの種類
 description: オペランドの値のコレクションが含まれています。
-ms.openlocfilehash: 8fa4d12efd9fc2b5afa7f250d2ed3f98ed092d06
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 5c2154eda43a95ce2c7e5966e43c0b6a1fafe68e
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27073169"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27884421"
 ---
 # <a name="filteroperand-resource-type"></a>filterOperand リソースの種類
 
@@ -15,7 +16,7 @@ ms.locfileid: "27073169"
 オペランドの値のコレクションが含まれています。
 
 ## <a name="properties"></a>プロパティ
-| プロパティ     | 型   |説明|
+| プロパティ     | 種類   |説明|
 |:---------------|:--------|:----------|
 |values|String コレクション|値のコレクションです。|
 

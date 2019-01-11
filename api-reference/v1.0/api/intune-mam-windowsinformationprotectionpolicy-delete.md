@@ -2,12 +2,13 @@
 title: windowsInformationProtectionPolicy の削除
 description: windowsInformationProtectionPolicy を削除します。
 author: tfitzmac
-ms.openlocfilehash: e6958773428c9ea6d420cf6561a952cafe59592c
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: fa7cf18266c9e619c2d194286272640a5fdfd4bc
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27354412"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27884141"
 ---
 # <a name="delete-windowsinformationprotectionpolicy"></a>windowsInformationProtectionPolicy の削除
 

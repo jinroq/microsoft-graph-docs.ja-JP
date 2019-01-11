@@ -2,12 +2,13 @@
 title: イベントを削除する
 description: event オブジェクトを削除します。
 author: dkershaw10
-ms.openlocfilehash: cda4cac58ef1a925aa54d63e7ba0f975a44935be
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 6aeb0259760f75fe28d1453d7b6a690a847792c0
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27301604"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27886661"
 ---
 # <a name="delete-event"></a>イベントを削除する
 [event](../resources/event.md) オブジェクトを削除します。

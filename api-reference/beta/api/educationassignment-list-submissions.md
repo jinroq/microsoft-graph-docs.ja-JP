@@ -2,12 +2,13 @@
 title: ボックスの一覧の送信
 description: この割り当てに関連付けられているすべての提出書類の一覧を表示します。 教師は、学生はそれらに関連付けられている送信しか取得中に、すべての提出書類を取得できます。
 author: dipakboyed
-ms.openlocfilehash: ac7bd47b4cbc4549f38239c4a68504bd20b3a2e8
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 0b807a1b19bdb47e3b184ffdce4a15b38740c574
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27308429"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27883215"
 ---
 # <a name="list-submissions"></a>ボックスの一覧の送信
 

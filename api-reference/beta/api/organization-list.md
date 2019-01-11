@@ -1,12 +1,13 @@
 ---
 title: 組織を一覧表示する
 description: 組織オブジェクトのリストを取得します。
-ms.openlocfilehash: 01a6b08b241fcf28edc9b387a00693acfa7beb71
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 7087ea0ef7e3885334b33d53416d5e4b6fc750a7
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27073361"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27882797"
 ---
 # <a name="list-organization"></a>組織を一覧表示する
 
@@ -30,7 +31,7 @@ GET /organization
 ## <a name="optional-query-parameters"></a>オプションのクエリ パラメーター
 このメソッドは、応答をカスタマイズするための [OData クエリ パラメーター](https://developer.microsoft.com/graph/docs/concepts/query_parameters)をサポートします。
 ## <a name="request-headers"></a>要求ヘッダー
-| 名前       | 型 | 説明|
+| 名前       | 種類 | 説明|
 |:-----------|:------|:----------|
 | Authorization  | string  | ベアラー {トークン}。必須。 |
 

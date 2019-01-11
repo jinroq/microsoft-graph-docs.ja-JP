@@ -2,12 +2,13 @@
 title: チームのアーカイブ
 description: '指定されたチームをアーカイブします。 '
 author: nkramer
-ms.openlocfilehash: bd673db676bebad2213710b8005abd28d074f1ca
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Priority
+ms.openlocfilehash: 5a364fe025688bf082de187940e40acdee22d6a2
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27301247"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27882853"
 ---
 # <a name="archive-team"></a>チームのアーカイブ
 

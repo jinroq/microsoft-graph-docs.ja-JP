@@ -2,12 +2,13 @@
 title: Get notificationMessageTemplate
 description: notificationMessageTemplate オブジェクトのプロパティとリレーションシップを読み取ります。
 author: tfitzmac
-ms.openlocfilehash: 1c0b30043aabe1d5f1ded67a11907ea5f86a4fb8
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: f30bf3b54070f7a8ab37745639f58d16f6a99aa2
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27337640"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27884036"
 ---
 # <a name="get-notificationmessagetemplate"></a>Get notificationMessageTemplate
 

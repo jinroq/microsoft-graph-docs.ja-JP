@@ -2,12 +2,13 @@
 title: WindowsUniversalAppXContainedApp を更新します。
 description: WindowsUniversalAppXContainedApp オブジェクトのプロパティを更新します。
 author: tfitzmac
-ms.openlocfilehash: f39046e10917a45ba880777992247748e89a24e4
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 642921c66bfbc996c5c3b0f3f16cf812c75a5618
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27339110"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27882342"
 ---
 # <a name="update-windowsuniversalappxcontainedapp"></a>WindowsUniversalAppXContainedApp を更新します。
 

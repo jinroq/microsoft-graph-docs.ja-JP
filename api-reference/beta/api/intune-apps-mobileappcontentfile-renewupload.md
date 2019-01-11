@@ -2,12 +2,13 @@
 title: renewUpload アクション
 description: アプリケーション ファイルのアップロード用の SAS URI を更新します。
 author: tfitzmac
-ms.openlocfilehash: c952b6e43121e7ad36b8b30d6b915477191840f3
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 48c3c4efeae4e82404303c1a5baba9243ce6f23e
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27303830"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27882433"
 ---
 # <a name="renewupload-action"></a>renewUpload アクション
 

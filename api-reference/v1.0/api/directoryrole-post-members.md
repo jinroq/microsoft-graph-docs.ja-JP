@@ -2,12 +2,13 @@
 title: ディレクトリ ロールのメンバーを追加する
 description: この API を使用して、新しいディレクトリ ロールのメンバーを作成します。
 author: lleonard-msft
-ms.openlocfilehash: e82907c47667072fa7234a6d7444298a5e4546f5
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 11b06eac57d0850e8df5233bba47966f6b7932d8
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27347125"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27886640"
 ---
 # <a name="add-directory-role-member"></a>ディレクトリ ロールのメンバーを追加する
 

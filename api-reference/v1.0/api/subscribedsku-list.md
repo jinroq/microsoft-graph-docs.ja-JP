@@ -1,12 +1,13 @@
 ---
 title: subscribedSkus を一覧表示する
 description: 組織で取得した商用サブスクリプションの一覧を取得します。
-ms.openlocfilehash: f166f72bda0353d59c99a161b8b89694f13df5d8
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Priority
+ms.openlocfilehash: bf382b697976ba264b610afb2946abb094f8ac4f
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27020846"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27885240"
 ---
 # <a name="list-subscribedskus"></a>subscribedSkus を一覧表示する
 組織で取得した商用サブスクリプションの一覧を取得します。
@@ -30,7 +31,7 @@ GET /subscribedSkus
 このメソッドは、応答をカスタマイズするための [OData クエリ パラメーター](https://developer.microsoft.com/graph/docs/concepts/query_parameters)をサポート**していません** (例: $filter はここではサポートされていません)。
 
 ## <a name="request-headers"></a>要求ヘッダー
-| 名前       | 型 | 説明|
+| 名前       | 種類 | 説明|
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer &lt;token&gt;。*必須* |
 

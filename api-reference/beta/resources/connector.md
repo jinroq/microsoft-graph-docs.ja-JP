@@ -1,12 +1,13 @@
 ---
 title: コネクタ リソースの種類
 description: 以下は、リソースの JSON 表記です。
-ms.openlocfilehash: 6d4cb7e5ca1a5384dbb6c8be92e7ce4eb107388a
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 98fa998a37b01ad64e556b229912932f4d1cfc75
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27072932"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27884624"
 ---
 # <a name="connector-resource-type"></a>コネクタ リソースの種類
 
@@ -27,17 +28,17 @@ ms.locfileid: "27072932"
 |[memberOf を一覧表示する](../api/connector-list-memberof.md) |[connectorGroup](connectorgroup.md)コレクション| コネクタに関連付けられている connectorGroup オブジェクトを取得します。|
 
 ## <a name="properties"></a>プロパティ
-| プロパティ     | 型   |説明|
+| プロパティ     | 種類   |説明|
 |:---------------|:--------|:----------|
-|externalIp|String|コネクタ コンピューターのサービスによって検出されたと外部の IP アドレスです。 読み取り専用|
-|id|String| コネクタのオブジェクト id です。 <BR>読み取り専用。|
-|マシン名|String| コネクタが実行されているマシンの名前です。 <BR>読み取り専用|
-|status|文字列| コネクタの状態を示します。 使用可能な値は、`active`、`inactive` です。 読み取り専用 |
+|externalIp|String|コネクタ コンピューターのサービスによって検出されたと外部の IP アドレスです。 読み取り専用です。|
+|id|String| コネクタのオブジェクト id です。 <BR>読み取り専用です。|
+|マシン名|String| コネクタが実行されているマシンの名前です。 <BR>読み取り専用です。|
+|status|文字列| コネクタの状態を示します。 使用可能な値は、`active`、`inactive` です。 読み取り専用です。 |
 
 ## <a name="relationships"></a>リレーションシップ
 | リレーションシップ | 型   |説明|
 |:---------------|:--------|:----------|
-|memberOf|[connectorGroup](connectorgroup.md)コレクション| 接続がのメンバーである connectorGroup。<br>読み取り専用。 |
+|memberOf|[connectorGroup](connectorgroup.md)コレクション| 接続がのメンバーである connectorGroup。<br>読み取り専用です。 |
 
 ## <a name="json-representation"></a>JSON 表記
 

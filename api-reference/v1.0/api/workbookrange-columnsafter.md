@@ -2,12 +2,13 @@
 title: 'workbookRange: columnsAfter'
 description: 指定した範囲の右にある特定の列数を取得します。
 author: lumine2008
-ms.openlocfilehash: b80657c6afb7709049a1e0ccaa3c3b232f5501c7
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 49d2f19622d55297abe9748dff4b91a7a219fda8
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27304236"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27886171"
 ---
 # <a name="workbookrange-columnsafter"></a>workbookRange: columnsAfter
 
@@ -31,7 +32,7 @@ POST /me/drive/root/workbook/worksheets/{id}/range/columnsAfter(count=n)
 
 ## <a name="function-parameters"></a>関数パラメーター
 
-| パラメーター    | 種類   |説明|
+| Parameter    | Type   |説明|
 |:---------------|:--------|:----------|
 |count|Int32|省略可能。 結果の範囲に含まれる列の数です。 一般に、現在の範囲外の範囲を作成するのには正の数値を使用します。 現在の範囲内の範囲を作成するのには負の値を使用することもできます。 既定値は 1|
 

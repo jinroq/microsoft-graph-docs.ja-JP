@@ -2,12 +2,13 @@
 title: UnsupportedDeviceConfiguration を作成します。
 description: 新しい unsupportedDeviceConfiguration オブジェクトを作成します。
 author: tfitzmac
-ms.openlocfilehash: ef26adf5a6f7f704c32b27d1a5fb78282c874372
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: aa776cee2504a3383db862ab4aea59fd19347f1f
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27324711"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27882783"
 ---
 # <a name="create-unsupporteddeviceconfiguration"></a>UnsupportedDeviceConfiguration を作成します。
 

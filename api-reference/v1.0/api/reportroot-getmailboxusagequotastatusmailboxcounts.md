@@ -1,12 +1,13 @@
 ---
 title: 'reportRoot: getMailboxUsageQuotaStatusMailboxCounts'
 description: 各クォータ カテゴリのユーザーのメールボックス数を取得します。
-ms.openlocfilehash: 40c4f9b11eb1ddf99aad4a20b887b140656bef06
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: c7d8cd367e741538f723b4189a1c9cbbf64fd3d7
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27022452"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27884407"
 ---
 # <a name="reportroot-getmailboxusagequotastatusmailboxcounts"></a>reportRoot: getMailboxUsageQuotaStatusMailboxCounts
 
@@ -36,7 +37,7 @@ GET /reports/getMailboxUsageQuotaStatusMailboxCounts(period='{period_value}')
 
 要求 URL に、次のパラメーターと有効な値を指定します。
 
-| パラメーター | 型   | 説明                              |
+| パラメーター | Type   | 説明                              |
 | :-------- | :----- | :--------------------------------------- |
 | period    | 文字列 | レポートを集計する期間の長さを指定します。 {period_value} でサポートされている値は D7、D30、D90、D180 です。 これらの値は、D*n* の形式 (*n* はレポートを集計する日数) に従います。 必須。 |
 

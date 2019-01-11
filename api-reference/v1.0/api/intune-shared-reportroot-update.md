@@ -2,12 +2,13 @@
 title: reportRoot の更新
 description: reportRoot オブジェクトのプロパティを更新します。
 author: tfitzmac
-ms.openlocfilehash: a8beb97dc236ec9a4db4584619184613268ce071
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: ba6c192b69975eef2f60b09f5bb2fc43e43d51b7
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27326342"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27885191"
 ---
 # <a name="update-reportroot"></a>reportRoot の更新
 

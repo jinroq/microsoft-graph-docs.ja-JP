@@ -2,12 +2,13 @@
 title: bitLockerFixedDrivePolicy リソースの種類
 description: BitLocker は、ドライブのポリシーを修正します。
 author: tfitzmac
-ms.openlocfilehash: 71fc28fc88689165cdcd187542460432948f78c2
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: f55c2b81f1649c1292c4a54209480583147c9c23
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27342617"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27886941"
 ---
 # <a name="bitlockerfixeddrivepolicy-resource-type"></a>bitLockerFixedDrivePolicy リソースの種類
 
@@ -16,7 +17,7 @@ ms.locfileid: "27342617"
 > **注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
 
 BitLocker は、ドライブのポリシーを修正します。
-## <a name="properties"></a>Properties
+## <a name="properties"></a>プロパティ
 |プロパティ|種類|説明|
 |:---|:---|:---|
 |encryptionMethod|[bitLockerEncryptionMethod](../resources/intune-deviceconfig-bitlockerencryptionmethod.md)|固定のドライブの暗号化方法を選択します。 可能な値は、`aesCbc128`、`aesCbc256`、`xtsAes128`、`xtsAes256` です。|

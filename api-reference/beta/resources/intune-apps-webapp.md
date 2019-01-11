@@ -2,12 +2,13 @@
 title: webApp リソースの種類
 description: Web アプリのプロパティと継承されるプロパティを含みます。
 author: tfitzmac
-ms.openlocfilehash: dfdf64f8fd6e6efa64c1ad6b5baa727c518461df
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: aae2944915def903fb6a95076b0caa2afa26180c
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27360355"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27887025"
 ---
 # <a name="webapp-resource-type"></a>webApp リソースの種類
 

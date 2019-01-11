@@ -1,12 +1,13 @@
 ---
 title: oneNoteIdentity リソースの種類
 description: '**準備中のサポート**'
-ms.openlocfilehash: 09c4ee9882a420fb07c6a51be5f361b601573969
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 80d0719bd2770b715902b5c600fe65012e0064d9
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27073080"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27883889"
 ---
 # <a name="onenoteidentity-resource-type"></a>oneNoteIdentity リソースの種類
 
@@ -39,7 +40,7 @@ OneNoteIdentity 型は、_ユーザー_の id を表します。
 
 ```
 ## <a name="properties"></a>プロパティ
-| プロパティ     | 型   |説明|
+| プロパティ     | 種類   |説明|
 |:---------------|:--------|:----------|
 |displayName|string|Id の表示名です。|
 |ID|文字列|ID の一意識別子。|

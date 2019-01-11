@@ -2,12 +2,13 @@
 title: outOfBoxExperienceSettings リソースの種類
 description: ボックスの設定が発生します。
 author: tfitzmac
-ms.openlocfilehash: 545fbe5c27063397a4d08c40729227804ebfc56d
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: af276dd520df9ee3b257650e703813de355bed9a
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27308408"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27882734"
 ---
 # <a name="outofboxexperiencesettings-resource-type"></a>outOfBoxExperienceSettings リソースの種類
 
@@ -16,7 +17,7 @@ ms.locfileid: "27308408"
 > **注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
 
 ボックスの設定が発生します。
-## <a name="properties"></a>Properties
+## <a name="properties"></a>プロパティ
 |プロパティ|種類|説明|
 |:---|:---|:---|
 |hidePrivacySettings|ブール型|ユーザーのプライバシー設定の表示と非表示を切り替える|

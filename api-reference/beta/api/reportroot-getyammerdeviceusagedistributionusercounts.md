@@ -1,12 +1,13 @@
 ---
 title: 'reportRoot: getYammerDeviceUsageDistributionUserCounts'
 description: デバイスの種類別にユーザーの数を取得します。
-ms.openlocfilehash: 722abbb0211344be1a505d621304198407792e43
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 96e379c63f2f00ef3c6616df0405ae779f6bc8ff
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27068993"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27886178"
 ---
 # <a name="reportroot-getyammerdeviceusagedistributionusercounts"></a>reportRoot: getYammerDeviceUsageDistributionUserCounts
 
@@ -38,7 +39,7 @@ GET /reports/getYammerDeviceUsageDistributionUserCounts(period='{period_value}')
 
 要求 URL に、次のパラメーターと有効な値を指定します。
 
-| パラメーター | 型   | 説明                              |
+| パラメーター | Type   | 説明                              |
 | :-------- | :----- | :--------------------------------------- |
 | period    | 文字列 | レポートを集計する期間の長さを指定します。 {period_value} でサポートされている値は D7、D30、D90、D180 です。 これらの値は、D*n* の形式 (*n* はレポートを集計する日数) に従います。 必須。 |
 
@@ -73,7 +74,7 @@ GET /reports/getYammerDeviceUsageDistributionUserCounts(period='{period_value}')
 
 かどうかは成功すると、このメソッドが返されます、`200 OK`応答コードおよび応答の本文に**[yammerDeviceUsageDistributionUserCounts](../resources/yammerdeviceusagedistributionusercounts.md)** オブジェクトです。
 
-## <a name="example"></a>使用例
+## <a name="example"></a>例
 
 ### <a name="csv"></a>CSV
 

@@ -1,12 +1,13 @@
 ---
 title: GovernanceRoleAssignment を取得します。
 description: プロパティと、governanceRoleAssignment の関係を取得します。
-ms.openlocfilehash: 622fb890422ed0a4cf00542fede5ebaf662e5e71
-ms.sourcegitcommit: 82f9d0d10388572a3073b2dde8ca0a7b409135b8
+localization_priority: Normal
+ms.openlocfilehash: 838c096ccb8b719d9a07741aa80f3e132071a0c9
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "27191075"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27887571"
 ---
 # <a name="get-governanceroleassignment"></a>GovernanceRoleAssignment を取得します。
 

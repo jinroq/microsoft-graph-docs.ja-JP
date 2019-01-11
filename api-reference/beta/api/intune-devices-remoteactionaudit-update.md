@@ -2,12 +2,13 @@
 title: RemoteActionAudit を更新します。
 description: RemoteActionAudit オブジェクトのプロパティを更新します。
 author: tfitzmac
-ms.openlocfilehash: a27cd54246aaa1badc9bdbf54379c5d9d2a5a218
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 147f526218e70c788bdb3c60312e1ebe8591b125
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27352130"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27886948"
 ---
 # <a name="update-remoteactionaudit"></a>RemoteActionAudit を更新します。
 

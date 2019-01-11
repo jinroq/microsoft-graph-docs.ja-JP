@@ -2,12 +2,13 @@
 title: IosEduDeviceConfiguration を更新します。
 description: IosEduDeviceConfiguration オブジェクトのプロパティを更新します。
 author: tfitzmac
-ms.openlocfilehash: afeb9c6a93a3af2d64f59e2613e86462a2914158
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 5cc4076f3888a162db345ddf83ac7f506abdbf3a
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27307582"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27882447"
 ---
 # <a name="update-iosedudeviceconfiguration"></a>IosEduDeviceConfiguration を更新します。
 

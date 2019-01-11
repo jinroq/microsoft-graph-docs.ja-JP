@@ -2,12 +2,13 @@
 title: Windows81TrustedRootCertificate を更新します。
 description: Windows81TrustedRootCertificate オブジェクトのプロパティを更新します。
 author: tfitzmac
-ms.openlocfilehash: ce95eda15d57a4e44b5c3c4756205638e2eb9cbb
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 676387f2c02debf399235baff2cd2733b36982a6
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27307428"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27886255"
 ---
 # <a name="update-windows81trustedrootcertificate"></a>Windows81TrustedRootCertificate を更新します。
 

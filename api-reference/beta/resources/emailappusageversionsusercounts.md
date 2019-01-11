@@ -1,20 +1,21 @@
 ---
 title: emailAppUsageVersionsUserCounts リソースの種類
 description: リソースの JSON 表記を次に示します。
-ms.openlocfilehash: 7b4a59a1e15ddf41f0e4204efc4d3e0c6549e587
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 2aff22c0ae1d3042859f3457f398ef5d0a5ffbe7
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27071873"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27884848"
 ---
 # <a name="emailappusageversionsusercounts-resource-type"></a>emailAppUsageVersionsUserCounts リソースの種類
 
 ## <a name="properties"></a>プロパティ
 
-| プロパティ          | 型   |
+| プロパティ          | 種類   |
 | :---------------- | :----- |
-| reportRefreshDate | Date   |
+| reportRefreshDate | 日付   |
 | outlook2016       | Int64  |
 | outlook2013       | Int64  |
 | outlook2010       | Int64  |

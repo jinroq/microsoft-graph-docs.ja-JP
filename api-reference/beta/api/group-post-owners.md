@@ -1,12 +1,13 @@
 ---
 title: グループ所有者の追加
 description: グループ所有者にユーザーを追加します。所有者は、グループ オブジェクトの変更を許可されている管理者以外のユーザーです。
-ms.openlocfilehash: 903c659722877263038860c7d2ff47b301b6d5c0
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 3fe136b0ea76ae2d6f535af421d016bf27c58a6b
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27308898"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27883196"
 ---
 # <a name="add-group-owner"></a>グループ所有者の追加
 

@@ -2,12 +2,13 @@
 title: macOSDeviceFeaturesConfigurations のリスト
 description: macOSDeviceFeaturesConfiguration オブジェクトのプロパティとリレーションシップをリストします。
 author: tfitzmac
-ms.openlocfilehash: 5fb6d0c2e8068cf5fe2adb45f9bfd9ff8c26139a
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 7ff3369ef4348a4a677fff8c708cbefa09f8beab
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27314085"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27884996"
 ---
 # <a name="list-macosdevicefeaturesconfigurations"></a>macOSDeviceFeaturesConfigurations のリスト
 

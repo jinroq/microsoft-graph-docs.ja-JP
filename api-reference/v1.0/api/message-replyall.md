@@ -2,12 +2,13 @@
 title: 'メッセージ: replyAll'
 description: メッセージの受信者すべてに返信します。その後、メッセージは送信済みアイテム フォルダーに保存されます。
 author: angelgolfer-ms
-ms.openlocfilehash: cefe4d92d23cb9531f6fa66f74d1c9af87ef429e
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 8e2d9b2481e4fb0fc4e6e166dae1189baa77b7e5
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27348987"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27884309"
 ---
 # <a name="message-replyall"></a>メッセージ: replyAll
 
@@ -39,7 +40,7 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/replyAll
 ## <a name="request-body"></a>要求本文
 要求本文で、次のパラメーターを含む JSON オブジェクトを指定します。
 
-| パラメーター    | 種類   |説明|
+| パラメーター    | Type   |説明|
 |:---------------|:--------|:----------|
 |comment|String|含めるコメントです。空の文字列にすることができます。|
 

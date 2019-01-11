@@ -2,12 +2,13 @@
 title: ドメインを削除する
 description: テナントからドメインを削除します。
 author: lleonard-msft
-ms.openlocfilehash: bf5e509b36491ab6eb05aec2b7207d9bbed01bc3
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 2ad4a8b66861c7f9e461e49004be3722e841bef0
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27338984"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27887613"
 ---
 # <a name="delete-domain"></a>ドメインを削除する
 

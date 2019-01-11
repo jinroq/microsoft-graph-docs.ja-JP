@@ -2,12 +2,13 @@
 title: TableColumn を取得する
 description: tablecolumn オブジェクトのプロパティと関係を取得します。
 author: lumine2008
-ms.openlocfilehash: 7c43afbc7d1e90883ce26657d3b74b0bb53eb768
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 98edaa9a8e8b956eb81e672011045e687a69ee63
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27348658"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27882251"
 ---
 # <a name="get-tablecolumn"></a>TableColumn を取得する
 

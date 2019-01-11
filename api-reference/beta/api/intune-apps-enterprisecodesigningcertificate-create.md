@@ -2,12 +2,13 @@
 title: EnterpriseCodeSigningCertificate を作成します。
 description: 新しい enterpriseCodeSigningCertificate オブジェクトを作成します。
 author: tfitzmac
-ms.openlocfilehash: 337513242ae653a1d18f3ed9460cf26210534ab8
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: ec84f55fc94d1cdbf29e0cc65d6da029a3435315
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27341098"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27883364"
 ---
 # <a name="create-enterprisecodesigningcertificate"></a>EnterpriseCodeSigningCertificate を作成します。
 

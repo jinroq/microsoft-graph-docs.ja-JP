@@ -2,12 +2,13 @@
 title: windowsUpdateType 列挙型
 description: 分岐デバイスから更新を受け取ります。
 author: tfitzmac
-ms.openlocfilehash: b41fea0254cbbb6a590d240c2db9e4fb7aa0e6eb
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 15d2d46684d38b57690cc9c12d9c49eccd652e6f
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27309626"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27887039"
 ---
 # <a name="windowsupdatetype-enum-type"></a>windowsUpdateType 列挙型
 

@@ -2,12 +2,13 @@
 title: mobileAppTroubleshootingAppStateHistory リソースの種類
 description: 履歴項目は、モバイル アプリケーションのトラブルシューティング イベントに含まれています。
 author: tfitzmac
-ms.openlocfilehash: ebe38b852c6c6926b69e75379bc1a029ade0bb98
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 65ee72ed0c265f2e989e82dfdcc28d27605d4753
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27332159"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27885569"
 ---
 # <a name="mobileapptroubleshootingappstatehistory-resource-type"></a>mobileAppTroubleshootingAppStateHistory リソースの種類
 
@@ -19,7 +20,7 @@ ms.locfileid: "27332159"
 
 [MobileAppTroubleshootingHistoryItem](../resources/intune-troubleshooting-mobileapptroubleshootinghistoryitem.md)から継承します。
 
-## <a name="properties"></a>Properties
+## <a name="properties"></a>プロパティ
 |プロパティ|種類|説明|
 |:---|:---|:---|
 |occurrenceDateTime|DateTimeOffset|履歴項目が発生した時刻です。 [MobileAppTroubleshootingHistoryItem](../resources/intune-troubleshooting-mobileapptroubleshootinghistoryitem.md)から継承されました。|

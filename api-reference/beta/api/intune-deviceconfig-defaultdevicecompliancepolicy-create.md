@@ -2,12 +2,13 @@
 title: DefaultDeviceCompliancePolicy を作成します。
 description: 新しい defaultDeviceCompliancePolicy オブジェクトを作成します。
 author: tfitzmac
-ms.openlocfilehash: 7e58ac41c1839429d2a15a4590a6ce765a5341a3
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: a69c83e9de07f2e809e53f449d3f9686e238a138
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27327098"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27886780"
 ---
 # <a name="create-defaultdevicecompliancepolicy"></a>DefaultDeviceCompliancePolicy を作成します。
 

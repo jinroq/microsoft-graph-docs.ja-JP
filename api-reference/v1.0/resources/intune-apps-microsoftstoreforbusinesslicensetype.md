@@ -2,12 +2,13 @@
 title: microsoftStoreForBusinessLicenseType 列挙型
 description: まだ文書化されていません
 author: tfitzmac
-ms.openlocfilehash: 65d880fd85997ca8440484f5d22c00ad4a1919f1
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: ebf5fe1a4ddaa13fa10481e0b883b834c05b5aca
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27354636"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27885723"
 ---
 # <a name="microsoftstoreforbusinesslicensetype-enum-type"></a>microsoftStoreForBusinessLicenseType 列挙型
 

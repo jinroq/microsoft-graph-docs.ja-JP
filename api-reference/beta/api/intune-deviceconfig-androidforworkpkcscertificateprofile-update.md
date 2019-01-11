@@ -2,12 +2,13 @@
 title: AndroidForWorkPkcsCertificateProfile を更新します。
 description: AndroidForWorkPkcsCertificateProfile オブジェクトのプロパティを更新します。
 author: tfitzmac
-ms.openlocfilehash: c76449b171cefb97fba2c3f858f0658218db3bbe
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 28f2b67f858b95b934c8578f34565e20a4d79d59
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27363775"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27887172"
 ---
 # <a name="update-androidforworkpkcscertificateprofile"></a>AndroidForWorkPkcsCertificateProfile を更新します。
 

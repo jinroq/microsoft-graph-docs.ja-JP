@@ -2,12 +2,13 @@
 title: SideLoadingKey を更新します。
 description: SideLoadingKey オブジェクトのプロパティを更新します。
 author: tfitzmac
-ms.openlocfilehash: 6d616db947defb8e08926e40df23590c7d27e84d
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 6f4a6348df539924bdccbf3cacf8411442f877eb
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27337381"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27885632"
 ---
 # <a name="update-sideloadingkey"></a>SideLoadingKey を更新します。
 

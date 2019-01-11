@@ -3,12 +3,13 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/11/2017
 title: LookupColumn
-ms.openlocfilehash: 92eb43dad2ceca173fba79ad7d40f51f488a992c
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 1c7ab364777e1e3f82bb78d8e0940cf4f85576a0
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27066541"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27885709"
 ---
 # <a name="lookupcolumn-resource-type"></a>LookupColumn リソースの種類
 
@@ -33,7 +34,7 @@ ms.locfileid: "27066541"
 
 ## <a name="properties"></a>プロパティ
 
-| プロパティ名             | 型    | 説明
+| プロパティ名             | Type    | 説明
 |:--------------------------|:--------|:---------------------------------------
 | **allowMultipleValues**   | boolean | ソースから複数の値を選択できるかどうかを示します。
 | **allowUnlimitedLength**  | boolean | 列の値が標準の 255 文字の制限を超えることができるかどうかを示します。

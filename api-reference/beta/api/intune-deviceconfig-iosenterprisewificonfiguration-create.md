@@ -2,12 +2,13 @@
 title: IosEnterpriseWiFiConfiguration を作成します。
 description: 新しい iosEnterpriseWiFiConfiguration オブジェクトを作成します。
 author: tfitzmac
-ms.openlocfilehash: 2e11b506df4fde586aa181602e25da4c499ab6bb
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 9017873be0175f08a17641787b3f84de2e3bc160
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27320700"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27881964"
 ---
 # <a name="create-iosenterprisewificonfiguration"></a>IosEnterpriseWiFiConfiguration を作成します。
 

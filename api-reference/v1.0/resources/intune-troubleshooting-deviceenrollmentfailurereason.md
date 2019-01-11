@@ -2,12 +2,13 @@
 title: deviceEnrollmentFailureReason 列挙型
 description: 登録の最上位レベルの障害のカテゴリ。
 author: tfitzmac
-ms.openlocfilehash: 6adf8918762832dd961a7cd3f2b625f2394c54cb
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 5dd7ba949c95d507d956dd7f315b3c19e0759c20
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27343954"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27885527"
 ---
 # <a name="deviceenrollmentfailurereason-enum-type"></a>deviceEnrollmentFailureReason 列挙型
 

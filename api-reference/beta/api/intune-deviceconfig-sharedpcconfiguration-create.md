@@ -2,12 +2,13 @@
 title: Create sharedPCConfiguration
 description: 新しい sharedPCConfiguration オブジェクトを作成します。
 author: tfitzmac
-ms.openlocfilehash: a9a4dce6a0ab13d8f28b9b7c532c02baf180bfa2
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 454f70ba8a89bd502e541638a9ba8b3d24ae4f7a
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27336100"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27882055"
 ---
 # <a name="create-sharedpcconfiguration"></a>Create sharedPCConfiguration
 

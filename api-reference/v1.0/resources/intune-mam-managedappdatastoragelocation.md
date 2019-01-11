@@ -2,12 +2,13 @@
 title: managedAppDataStorageLocation 列挙型
 description: マネージ アプリケーションによってデータが保存される可能性があります、記憶域の場所
 author: tfitzmac
-ms.openlocfilehash: 4521a209e499185d07dec5edef9e89ff7c6e5f5d
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 3ae5b5a77f6fae9d1043993a4e464920b1d6127a
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27312538"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27888096"
 ---
 # <a name="managedappdatastoragelocation-enum-type"></a>managedAppDataStorageLocation 列挙型
 

@@ -1,12 +1,13 @@
 ---
 title: governanceRoleAssignment リソースの種類
 description: ロールにユーザーまたはグループの割り当てを表します。
-ms.openlocfilehash: 3b0520f4641c961358b2db990914fbdf8de254f8
-ms.sourcegitcommit: 82f9d0d10388572a3073b2dde8ca0a7b409135b8
+localization_priority: Normal
+ms.openlocfilehash: d873b122f319ca82882727f065818b33f7f9d44d
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "27191138"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27882692"
 ---
 # <a name="governanceroleassignment-resource-type"></a>governanceRoleAssignment リソースの種類
 > **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。
@@ -18,7 +19,7 @@ ms.locfileid: "27191138"
 1. アクティブな割り当てでは、リソースに対してダイレクト/有効化済アクセスを表します。
 2. 対象となる割り当てのないアクセスと直接アクセスの間でのリソースへのアクセス権限の中間の段階を表します。 管理者はユーザーまたはグループに割り当てることができます`eligible assignment`アクセス権が必要な事前に、必ず`activation`に、`eligible assignment`は、いくつかの時間のリソースへのインスタント アクセスを得るために必要な。 ライセンス認証の後、`active assignment`のアクティブ化の状態を示すためにユーザーまたはグループのメンバーが作成されます。
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>メソッド
 
 | メソッド          | 戻り値の型 |説明|
 |:------------|:--------|:--------|
@@ -31,7 +32,7 @@ No `POST`、 `PUT`、 `PATCH`、または`DELETE`の操作はサポートされ�
 ## <a name="properties"></a>プロパティ
 | プロパティ  | 種類      |説明|
 |:----------|:----------|:----------|
-|id         |String     |役割の割り当ての ID です。 GUID 形式であります。|
+|ID         |String     |役割の割り当ての ID です。 GUID 形式であります。|
 |resourceId |String     |必須。 ロールの割り当てに関連付けられているリソースの ID です。 |
 |roleDefinitionId|String|必須。 ロールの割り当てに関連付けられている役割の定義の ID です。 |
 |subjectId|String       |必須。 ロールの割り当てに関連付けられているサブジェクトの ID です。 |
@@ -46,10 +47,10 @@ No `POST`、 `PUT`、 `PATCH`、または`DELETE`の操作はサポートされ�
 ## <a name="relationships"></a>リレーションシップ
 | リレーションシップ | 型   |説明|
 |:---------------|:--------|:----------|
-|リソース|[governanceResource](../resources/governanceresource.md)|取得のみ可能な値です。 ロールの割り当てに関連付けられているリソースです。 |
-|roleDefinition|[governanceRoleDefinition](../resources/governanceroledefinition.md)|取得のみ可能な値です。 ロールの割り当てに関連付けられているロールの定義。 |
-|subject|[governanceSubject](../resources/governancesubject.md)|取得のみ可能な値です。 ロールの割り当てに関連付けられている件名です。 |
-|linkedEligibleRoleAssignment|[governanceRoleAssignment](../resources/governanceroleassignment.md)|取得のみ可能な値です。 場合は、`active assignment`のアクティブ化のために作成されると、 `eligible assignment`、そのオブジェクトを表す`eligible assignment`です。値は、それ以外の場合、 `null`。 |
+|リソース|[governanceResource](../resources/governanceresource.md)|読み取り専用です。 ロールの割り当てに関連付けられているリソースです。 |
+|roleDefinition|[governanceRoleDefinition](../resources/governanceroledefinition.md)|読み取り専用です。 ロールの割り当てに関連付けられているロールの定義。 |
+|subject|[governanceSubject](../resources/governancesubject.md)|読み取り専用です。 ロールの割り当てに関連付けられている件名です。 |
+|linkedEligibleRoleAssignment|[governanceRoleAssignment](../resources/governanceroleassignment.md)|読み取り専用です。 場合は、`active assignment`のアクティブ化のために作成されると、 `eligible assignment`、そのオブジェクトを表す`eligible assignment`です。値は、それ以外の場合、 `null`。 |
 
 ## <a name="json-representation"></a>JSON 表記
 

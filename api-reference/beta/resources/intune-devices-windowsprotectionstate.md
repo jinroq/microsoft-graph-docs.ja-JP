@@ -2,12 +2,13 @@
 title: windowsProtectionState リソースの種類
 description: デバイス保護の状態のエンティティです。
 author: tfitzmac
-ms.openlocfilehash: 636b969ddafde5976939df764ae1180e19a181c0
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 5a21cc27039f3119836e0027b2558cadadab1b5d
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27328078"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27884106"
 ---
 # <a name="windowsprotectionstate-resource-type"></a>windowsProtectionState リソースの種類
 
@@ -22,7 +23,7 @@ ms.locfileid: "27328078"
 |[WindowsProtectionState を取得します。](../api/intune-devices-windowsprotectionstate-get.md)|[windowsProtectionState](../resources/intune-devices-windowsprotectionstate.md)|[WindowsProtectionState](../resources/intune-devices-windowsprotectionstate.md)オブジェクトのプロパティと関係を参照してください。|
 |[WindowsProtectionState を更新します。](../api/intune-devices-windowsprotectionstate-update.md)|[windowsProtectionState](../resources/intune-devices-windowsprotectionstate.md)|[WindowsProtectionState](../resources/intune-devices-windowsprotectionstate.md)オブジェクトのプロパティを更新します。|
 
-## <a name="properties"></a>Properties
+## <a name="properties"></a>プロパティ
 |プロパティ|種類|説明|
 |:---|:---|:---|
 |ID|String|デバイス保護の状態のオブジェクトの一意の識別子です。 これは、デバイスのデバイス id|

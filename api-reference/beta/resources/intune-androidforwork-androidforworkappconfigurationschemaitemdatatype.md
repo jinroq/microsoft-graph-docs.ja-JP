@@ -1,12 +1,13 @@
 ---
 title: androidForWorkAppConfigurationSchemaItemDataType 列挙型
 description: 作業アプリケーションのカスタム構成スキーマに対して、Android 内の構成項目のデータ型
-ms.openlocfilehash: cda4a7fe0d26050c9d8422cb5cfa866347ca9810
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: ff5ca9fedd3632960bf249dd40fb3e8a98ab23a5
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27068104"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27886626"
 ---
 # <a name="androidforworkappconfigurationschemaitemdatatype-enum-type"></a>androidForWorkAppConfigurationSchemaItemDataType 列挙型
 
@@ -21,7 +22,7 @@ ms.locfileid: "27068104"
 |bool|0|まだ文書化されていません|
 |integer|1|まだ文書化されていません|
 |文字列|2|まだ文書化されていません|
-|選択|3|まだ文書化されていません|
+|choice|3|まだ文書化されていません|
 |multiselect|4|まだ文書化されていません|
 |バンドル|5|まだ文書化されていません|
 |bundleArray|6|まだ文書化されていません|
