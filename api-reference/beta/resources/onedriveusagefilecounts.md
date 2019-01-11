@@ -1,29 +1,30 @@
 ---
 title: oneDriveUsageFileCounts リソースの種類
 description: リソースの JSON 表記を次に示します。
-ms.openlocfilehash: 98e387b97687a4aab55e8d94e72fdbfa585a0e84
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: ec428179cb35755e545aded70929eccd9d558fec
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27067384"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27829534"
 ---
-# <a name="onedriveusagefilecounts-resource-type"></a><span data-ttu-id="369f5-103">oneDriveUsageFileCounts リソースの種類</span><span class="sxs-lookup"><span data-stu-id="369f5-103">oneDriveUsageFileCounts resource type</span></span>
+# <a name="onedriveusagefilecounts-resource-type"></a><span data-ttu-id="0affa-103">oneDriveUsageFileCounts リソースの種類</span><span class="sxs-lookup"><span data-stu-id="0affa-103">oneDriveUsageFileCounts resource type</span></span>
 
-## <a name="properties"></a><span data-ttu-id="369f5-104">プロパティ</span><span class="sxs-lookup"><span data-stu-id="369f5-104">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="0affa-104">プロパティ</span><span class="sxs-lookup"><span data-stu-id="0affa-104">Properties</span></span>
 
-| <span data-ttu-id="369f5-105">プロパティ</span><span class="sxs-lookup"><span data-stu-id="369f5-105">Property</span></span>          | <span data-ttu-id="369f5-106">型</span><span class="sxs-lookup"><span data-stu-id="369f5-106">Type</span></span>   |
+| <span data-ttu-id="0affa-105">プロパティ</span><span class="sxs-lookup"><span data-stu-id="0affa-105">Property</span></span>          | <span data-ttu-id="0affa-106">種類</span><span class="sxs-lookup"><span data-stu-id="0affa-106">Type</span></span>   |
 | :---------------- | :----- |
-| <span data-ttu-id="369f5-107">reportRefreshDate</span><span class="sxs-lookup"><span data-stu-id="369f5-107">reportRefreshDate</span></span> | <span data-ttu-id="369f5-108">Date</span><span class="sxs-lookup"><span data-stu-id="369f5-108">Date</span></span>   |
-| <span data-ttu-id="369f5-109">ある</span><span class="sxs-lookup"><span data-stu-id="369f5-109">siteType</span></span>          | <span data-ttu-id="369f5-110">String</span><span class="sxs-lookup"><span data-stu-id="369f5-110">String</span></span> |
-| <span data-ttu-id="369f5-111">total</span><span class="sxs-lookup"><span data-stu-id="369f5-111">total</span></span>             | <span data-ttu-id="369f5-112">Int64</span><span class="sxs-lookup"><span data-stu-id="369f5-112">Int64</span></span>  |
-| <span data-ttu-id="369f5-113">アクティブです</span><span class="sxs-lookup"><span data-stu-id="369f5-113">active</span></span>            | <span data-ttu-id="369f5-114">Int64</span><span class="sxs-lookup"><span data-stu-id="369f5-114">Int64</span></span>  |
-| <span data-ttu-id="369f5-115">reportDate</span><span class="sxs-lookup"><span data-stu-id="369f5-115">reportDate</span></span>        | <span data-ttu-id="369f5-116">Date</span><span class="sxs-lookup"><span data-stu-id="369f5-116">Date</span></span>   |
-| <span data-ttu-id="369f5-117">reportPeriod</span><span class="sxs-lookup"><span data-stu-id="369f5-117">reportPeriod</span></span>      | <span data-ttu-id="369f5-118">String</span><span class="sxs-lookup"><span data-stu-id="369f5-118">String</span></span> |
+| <span data-ttu-id="0affa-107">reportRefreshDate</span><span class="sxs-lookup"><span data-stu-id="0affa-107">reportRefreshDate</span></span> | <span data-ttu-id="0affa-108">日付</span><span class="sxs-lookup"><span data-stu-id="0affa-108">Date</span></span>   |
+| <span data-ttu-id="0affa-109">ある</span><span class="sxs-lookup"><span data-stu-id="0affa-109">siteType</span></span>          | <span data-ttu-id="0affa-110">String</span><span class="sxs-lookup"><span data-stu-id="0affa-110">String</span></span> |
+| <span data-ttu-id="0affa-111">total</span><span class="sxs-lookup"><span data-stu-id="0affa-111">total</span></span>             | <span data-ttu-id="0affa-112">Int64</span><span class="sxs-lookup"><span data-stu-id="0affa-112">Int64</span></span>  |
+| <span data-ttu-id="0affa-113">アクティブです</span><span class="sxs-lookup"><span data-stu-id="0affa-113">active</span></span>            | <span data-ttu-id="0affa-114">Int64</span><span class="sxs-lookup"><span data-stu-id="0affa-114">Int64</span></span>  |
+| <span data-ttu-id="0affa-115">reportDate</span><span class="sxs-lookup"><span data-stu-id="0affa-115">reportDate</span></span>        | <span data-ttu-id="0affa-116">日付</span><span class="sxs-lookup"><span data-stu-id="0affa-116">Date</span></span>   |
+| <span data-ttu-id="0affa-117">reportPeriod</span><span class="sxs-lookup"><span data-stu-id="0affa-117">reportPeriod</span></span>      | <span data-ttu-id="0affa-118">String</span><span class="sxs-lookup"><span data-stu-id="0affa-118">String</span></span> |
 
-## <a name="json-representation"></a><span data-ttu-id="369f5-119">JSON 表記</span><span class="sxs-lookup"><span data-stu-id="369f5-119">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="0affa-119">JSON 表記</span><span class="sxs-lookup"><span data-stu-id="0affa-119">JSON representation</span></span>
 
-<span data-ttu-id="369f5-120">リソースの JSON 表記を次に示します。</span><span class="sxs-lookup"><span data-stu-id="369f5-120">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="0affa-120">リソースの JSON 表記を次に示します。</span><span class="sxs-lookup"><span data-stu-id="0affa-120">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",

@@ -2,28 +2,29 @@
 title: managedAppPolicyDeploymentSummary の更新
 description: managedAppPolicyDeploymentSummary オブジェクトのプロパティを更新します。
 author: tfitzmac
-ms.openlocfilehash: e123c07722e9bd4baf2cab7bfd5f53516b37a949
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: e1d0c06a3a7bcb2e909cc3a0f0195342a5038d42
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27342960"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27825292"
 ---
-# <a name="update-managedapppolicydeploymentsummary"></a><span data-ttu-id="95228-103">managedAppPolicyDeploymentSummary の更新</span><span class="sxs-lookup"><span data-stu-id="95228-103">Update managedAppPolicyDeploymentSummary</span></span>
+# <a name="update-managedapppolicydeploymentsummary"></a><span data-ttu-id="eed97-103">managedAppPolicyDeploymentSummary の更新</span><span class="sxs-lookup"><span data-stu-id="eed97-103">Update managedAppPolicyDeploymentSummary</span></span>
 
-> <span data-ttu-id="95228-104">**注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。</span><span class="sxs-lookup"><span data-stu-id="95228-104">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
+> <span data-ttu-id="eed97-104">**注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。</span><span class="sxs-lookup"><span data-stu-id="eed97-104">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
 
-<span data-ttu-id="95228-105">[managedAppPolicyDeploymentSummary](../resources/intune-mam-managedapppolicydeploymentsummary.md) オブジェクトのプロパティを更新します。</span><span class="sxs-lookup"><span data-stu-id="95228-105">Update the properties of a [managedAppPolicyDeploymentSummary](../resources/intune-mam-managedapppolicydeploymentsummary.md) object.</span></span>
-## <a name="prerequisites"></a><span data-ttu-id="95228-106">前提条件</span><span class="sxs-lookup"><span data-stu-id="95228-106">Prerequisites</span></span>
-<span data-ttu-id="95228-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="95228-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="eed97-105">[managedAppPolicyDeploymentSummary](../resources/intune-mam-managedapppolicydeploymentsummary.md) オブジェクトのプロパティを更新します。</span><span class="sxs-lookup"><span data-stu-id="eed97-105">Update the properties of a [managedAppPolicyDeploymentSummary](../resources/intune-mam-managedapppolicydeploymentsummary.md) object.</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="eed97-106">前提条件</span><span class="sxs-lookup"><span data-stu-id="eed97-106">Prerequisites</span></span>
+<span data-ttu-id="eed97-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="eed97-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="95228-109">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="95228-109">Permission type</span></span>|<span data-ttu-id="95228-110">アクセス許可 (特権の大きいものから小さいものへ)</span><span class="sxs-lookup"><span data-stu-id="95228-110">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="eed97-109">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="eed97-109">Permission type</span></span>|<span data-ttu-id="eed97-110">アクセス許可 (特権の大きいものから小さいものへ)</span><span class="sxs-lookup"><span data-stu-id="eed97-110">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="95228-111">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="95228-111">Delegated (work or school account)</span></span>|<span data-ttu-id="95228-112">DeviceManagementApps.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="95228-112">DeviceManagementApps.ReadWrite.All</span></span>|
-|<span data-ttu-id="95228-113">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="95228-113">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="95228-114">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="95228-114">Not supported.</span></span>|
-|<span data-ttu-id="95228-115">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="95228-115">Application</span></span>|<span data-ttu-id="95228-116">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="95228-116">Not supported.</span></span>|
+|<span data-ttu-id="eed97-111">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="eed97-111">Delegated (work or school account)</span></span>|<span data-ttu-id="eed97-112">DeviceManagementApps.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="eed97-112">DeviceManagementApps.ReadWrite.All</span></span>|
+|<span data-ttu-id="eed97-113">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="eed97-113">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="eed97-114">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="eed97-114">Not supported.</span></span>|
+|<span data-ttu-id="eed97-115">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="eed97-115">Application</span></span>|<span data-ttu-id="eed97-116">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="eed97-116">Not supported.</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="95228-117">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="95228-117">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="eed97-117">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="eed97-117">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -35,34 +36,34 @@ PATCH /deviceAppManagement/defaultManagedAppProtections/{defaultManagedAppProtec
 PATCH /deviceAppManagement/targetedManagedAppConfigurations/{targetedManagedAppConfigurationId}/deploymentSummary
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="95228-118">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="95228-118">Request headers</span></span>
-|<span data-ttu-id="95228-119">ヘッダー</span><span class="sxs-lookup"><span data-stu-id="95228-119">Header</span></span>|<span data-ttu-id="95228-120">値</span><span class="sxs-lookup"><span data-stu-id="95228-120">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="eed97-118">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="eed97-118">Request headers</span></span>
+|<span data-ttu-id="eed97-119">ヘッダー</span><span class="sxs-lookup"><span data-stu-id="eed97-119">Header</span></span>|<span data-ttu-id="eed97-120">値</span><span class="sxs-lookup"><span data-stu-id="eed97-120">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="95228-121">Authorization</span><span class="sxs-lookup"><span data-stu-id="95228-121">Authorization</span></span>|<span data-ttu-id="95228-122">ベアラー &lt;トークン&gt; が必須。</span><span class="sxs-lookup"><span data-stu-id="95228-122">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="95228-123">Accept</span><span class="sxs-lookup"><span data-stu-id="95228-123">Accept</span></span>|<span data-ttu-id="95228-124">application/json</span><span class="sxs-lookup"><span data-stu-id="95228-124">application/json</span></span>|
+|<span data-ttu-id="eed97-121">Authorization</span><span class="sxs-lookup"><span data-stu-id="eed97-121">Authorization</span></span>|<span data-ttu-id="eed97-122">ベアラー &lt;トークン&gt; が必須。</span><span class="sxs-lookup"><span data-stu-id="eed97-122">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="eed97-123">Accept</span><span class="sxs-lookup"><span data-stu-id="eed97-123">Accept</span></span>|<span data-ttu-id="eed97-124">application/json</span><span class="sxs-lookup"><span data-stu-id="eed97-124">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="95228-125">要求本文</span><span class="sxs-lookup"><span data-stu-id="95228-125">Request body</span></span>
-<span data-ttu-id="95228-126">要求本文で、[managedAppPolicyDeploymentSummary](../resources/intune-mam-managedapppolicydeploymentsummary.md) オブジェクトの JSON 表記を指定します。</span><span class="sxs-lookup"><span data-stu-id="95228-126">In the request body, supply a JSON representation for the [managedAppPolicyDeploymentSummary](../resources/intune-mam-managedapppolicydeploymentsummary.md) object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="eed97-125">要求本文</span><span class="sxs-lookup"><span data-stu-id="eed97-125">Request body</span></span>
+<span data-ttu-id="eed97-126">要求本文で、[managedAppPolicyDeploymentSummary](../resources/intune-mam-managedapppolicydeploymentsummary.md) オブジェクトの JSON 表記を指定します。</span><span class="sxs-lookup"><span data-stu-id="eed97-126">In the request body, supply a JSON representation for the [managedAppPolicyDeploymentSummary](../resources/intune-mam-managedapppolicydeploymentsummary.md) object.</span></span>
 
-<span data-ttu-id="95228-127">次の表に、[managedAppPolicyDeploymentSummary](../resources/intune-mam-managedapppolicydeploymentsummary.md) の作成時に必要なプロパティを示します。</span><span class="sxs-lookup"><span data-stu-id="95228-127">The following table shows the properties that are required when you create the [managedAppPolicyDeploymentSummary](../resources/intune-mam-managedapppolicydeploymentsummary.md).</span></span>
+<span data-ttu-id="eed97-127">次の表に、[managedAppPolicyDeploymentSummary](../resources/intune-mam-managedapppolicydeploymentsummary.md) の作成時に必要なプロパティを示します。</span><span class="sxs-lookup"><span data-stu-id="eed97-127">The following table shows the properties that are required when you create the [managedAppPolicyDeploymentSummary](../resources/intune-mam-managedapppolicydeploymentsummary.md).</span></span>
 
-|<span data-ttu-id="95228-128">プロパティ</span><span class="sxs-lookup"><span data-stu-id="95228-128">Property</span></span>|<span data-ttu-id="95228-129">種類</span><span class="sxs-lookup"><span data-stu-id="95228-129">Type</span></span>|<span data-ttu-id="95228-130">説明</span><span class="sxs-lookup"><span data-stu-id="95228-130">Description</span></span>|
+|<span data-ttu-id="eed97-128">プロパティ</span><span class="sxs-lookup"><span data-stu-id="eed97-128">Property</span></span>|<span data-ttu-id="eed97-129">種類</span><span class="sxs-lookup"><span data-stu-id="eed97-129">Type</span></span>|<span data-ttu-id="eed97-130">説明</span><span class="sxs-lookup"><span data-stu-id="eed97-130">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="95228-131">displayName</span><span class="sxs-lookup"><span data-stu-id="95228-131">displayName</span></span>|<span data-ttu-id="95228-132">String</span><span class="sxs-lookup"><span data-stu-id="95228-132">String</span></span>|<span data-ttu-id="95228-133">まだ文書化されていません</span><span class="sxs-lookup"><span data-stu-id="95228-133">Not yet documented</span></span>|
-|<span data-ttu-id="95228-134">configurationDeployedUserCount</span><span class="sxs-lookup"><span data-stu-id="95228-134">configurationDeployedUserCount</span></span>|<span data-ttu-id="95228-135">Int32</span><span class="sxs-lookup"><span data-stu-id="95228-135">Int32</span></span>|<span data-ttu-id="95228-136">まだ文書化されていません</span><span class="sxs-lookup"><span data-stu-id="95228-136">Not yet documented</span></span>|
-|<span data-ttu-id="95228-137">lastRefreshTime</span><span class="sxs-lookup"><span data-stu-id="95228-137">lastRefreshTime</span></span>|<span data-ttu-id="95228-138">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="95228-138">DateTimeOffset</span></span>|<span data-ttu-id="95228-139">まだ文書化されていません</span><span class="sxs-lookup"><span data-stu-id="95228-139">Not yet documented</span></span>|
-|<span data-ttu-id="95228-140">configurationDeploymentSummaryPerApp</span><span class="sxs-lookup"><span data-stu-id="95228-140">configurationDeploymentSummaryPerApp</span></span>|<span data-ttu-id="95228-141">[managedAppPolicyDeploymentSummaryPerApp](../resources/intune-mam-managedapppolicydeploymentsummaryperapp.md) コレクション</span><span class="sxs-lookup"><span data-stu-id="95228-141">[managedAppPolicyDeploymentSummaryPerApp](../resources/intune-mam-managedapppolicydeploymentsummaryperapp.md) collection</span></span>|<span data-ttu-id="95228-142">まだ文書化されていません</span><span class="sxs-lookup"><span data-stu-id="95228-142">Not yet documented</span></span>|
-|<span data-ttu-id="95228-143">id</span><span class="sxs-lookup"><span data-stu-id="95228-143">id</span></span>|<span data-ttu-id="95228-144">String</span><span class="sxs-lookup"><span data-stu-id="95228-144">String</span></span>|<span data-ttu-id="95228-145">エンティティのキー。</span><span class="sxs-lookup"><span data-stu-id="95228-145">Key of the entity.</span></span>|
-|<span data-ttu-id="95228-146">version</span><span class="sxs-lookup"><span data-stu-id="95228-146">version</span></span>|<span data-ttu-id="95228-147">String</span><span class="sxs-lookup"><span data-stu-id="95228-147">String</span></span>|<span data-ttu-id="95228-148">エンティティのバージョン。</span><span class="sxs-lookup"><span data-stu-id="95228-148">Version of the entity.</span></span>|
+|<span data-ttu-id="eed97-131">displayName</span><span class="sxs-lookup"><span data-stu-id="eed97-131">displayName</span></span>|<span data-ttu-id="eed97-132">String</span><span class="sxs-lookup"><span data-stu-id="eed97-132">String</span></span>|<span data-ttu-id="eed97-133">まだ文書化されていません</span><span class="sxs-lookup"><span data-stu-id="eed97-133">Not yet documented</span></span>|
+|<span data-ttu-id="eed97-134">configurationDeployedUserCount</span><span class="sxs-lookup"><span data-stu-id="eed97-134">configurationDeployedUserCount</span></span>|<span data-ttu-id="eed97-135">Int32</span><span class="sxs-lookup"><span data-stu-id="eed97-135">Int32</span></span>|<span data-ttu-id="eed97-136">まだ文書化されていません</span><span class="sxs-lookup"><span data-stu-id="eed97-136">Not yet documented</span></span>|
+|<span data-ttu-id="eed97-137">lastRefreshTime</span><span class="sxs-lookup"><span data-stu-id="eed97-137">lastRefreshTime</span></span>|<span data-ttu-id="eed97-138">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="eed97-138">DateTimeOffset</span></span>|<span data-ttu-id="eed97-139">まだ文書化されていません</span><span class="sxs-lookup"><span data-stu-id="eed97-139">Not yet documented</span></span>|
+|<span data-ttu-id="eed97-140">configurationDeploymentSummaryPerApp</span><span class="sxs-lookup"><span data-stu-id="eed97-140">configurationDeploymentSummaryPerApp</span></span>|<span data-ttu-id="eed97-141">[managedAppPolicyDeploymentSummaryPerApp](../resources/intune-mam-managedapppolicydeploymentsummaryperapp.md) コレクション</span><span class="sxs-lookup"><span data-stu-id="eed97-141">[managedAppPolicyDeploymentSummaryPerApp](../resources/intune-mam-managedapppolicydeploymentsummaryperapp.md) collection</span></span>|<span data-ttu-id="eed97-142">まだ文書化されていません</span><span class="sxs-lookup"><span data-stu-id="eed97-142">Not yet documented</span></span>|
+|<span data-ttu-id="eed97-143">id</span><span class="sxs-lookup"><span data-stu-id="eed97-143">id</span></span>|<span data-ttu-id="eed97-144">String</span><span class="sxs-lookup"><span data-stu-id="eed97-144">String</span></span>|<span data-ttu-id="eed97-145">エンティティのキー。</span><span class="sxs-lookup"><span data-stu-id="eed97-145">Key of the entity.</span></span>|
+|<span data-ttu-id="eed97-146">version</span><span class="sxs-lookup"><span data-stu-id="eed97-146">version</span></span>|<span data-ttu-id="eed97-147">String</span><span class="sxs-lookup"><span data-stu-id="eed97-147">String</span></span>|<span data-ttu-id="eed97-148">エンティティのバージョン。</span><span class="sxs-lookup"><span data-stu-id="eed97-148">Version of the entity.</span></span>|
 
 
 
-## <a name="response"></a><span data-ttu-id="95228-149">応答</span><span class="sxs-lookup"><span data-stu-id="95228-149">Response</span></span>
-<span data-ttu-id="95228-150">成功した場合、このメソッドは `200 OK` 応答コードと、応答本文で更新された [managedAppPolicyDeploymentSummary](../resources/intune-mam-managedapppolicydeploymentsummary.md) オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="95228-150">If successful, this method returns a `200 OK` response code and an updated [managedAppPolicyDeploymentSummary](../resources/intune-mam-managedapppolicydeploymentsummary.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="eed97-149">応答</span><span class="sxs-lookup"><span data-stu-id="eed97-149">Response</span></span>
+<span data-ttu-id="eed97-150">成功した場合、このメソッドは `200 OK` 応答コードと、応答本文で更新された [managedAppPolicyDeploymentSummary](../resources/intune-mam-managedapppolicydeploymentsummary.md) オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="eed97-150">If successful, this method returns a `200 OK` response code and an updated [managedAppPolicyDeploymentSummary](../resources/intune-mam-managedapppolicydeploymentsummary.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="95228-151">例</span><span class="sxs-lookup"><span data-stu-id="95228-151">Example</span></span>
-### <a name="request"></a><span data-ttu-id="95228-152">要求</span><span class="sxs-lookup"><span data-stu-id="95228-152">Request</span></span>
-<span data-ttu-id="95228-153">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="95228-153">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="eed97-151">例</span><span class="sxs-lookup"><span data-stu-id="eed97-151">Example</span></span>
+### <a name="request"></a><span data-ttu-id="eed97-152">要求</span><span class="sxs-lookup"><span data-stu-id="eed97-152">Request</span></span>
+<span data-ttu-id="eed97-153">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="eed97-153">Here is an example of the request.</span></span>
 ``` http
 PATCH https://graph.microsoft.com/v1.0/deviceAppManagement/iosManagedAppProtections/{iosManagedAppProtectionId}/deploymentSummary
 Content-type: application/json
@@ -87,8 +88,8 @@ Content-length: 588
 }
 ```
 
-### <a name="response"></a><span data-ttu-id="95228-154">応答</span><span class="sxs-lookup"><span data-stu-id="95228-154">Response</span></span>
-<span data-ttu-id="95228-p102">以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。</span><span class="sxs-lookup"><span data-stu-id="95228-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="eed97-154">応答</span><span class="sxs-lookup"><span data-stu-id="eed97-154">Response</span></span>
+<span data-ttu-id="eed97-p102">以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。</span><span class="sxs-lookup"><span data-stu-id="eed97-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
