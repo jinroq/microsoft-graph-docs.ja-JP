@@ -2,31 +2,32 @@
 title: educationOrganization リソースの種類
 description: 教育セクター内の別の組織の種類との間の共通性をモデル化するために使用する抽象エンティティです。
 author: mmast-msft
-ms.openlocfilehash: e4c0f69d63108cc88b88f530e99cbd55b23f49ed
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: b0b65978b3b415af407c886095c4b31c7aaffab9
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27326146"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27831935"
 ---
-# <a name="educationorganization-resource-type"></a><span data-ttu-id="8a547-103">educationOrganization リソースの種類</span><span class="sxs-lookup"><span data-stu-id="8a547-103">educationOrganization resource type</span></span>
+# <a name="educationorganization-resource-type"></a><span data-ttu-id="4b1ce-103">educationOrganization リソースの種類</span><span class="sxs-lookup"><span data-stu-id="4b1ce-103">educationOrganization resource type</span></span>
 
-<span data-ttu-id="8a547-104">教育セクター内の別の組織の種類との間の共通性をモデル化するために使用する抽象エンティティです。</span><span class="sxs-lookup"><span data-stu-id="8a547-104">Abstract entity used to model the commonality between different organization types within the education sector.</span></span>
+<span data-ttu-id="4b1ce-104">教育セクター内の別の組織の種類との間の共通性をモデル化するために使用する抽象エンティティです。</span><span class="sxs-lookup"><span data-stu-id="4b1ce-104">Abstract entity used to model the commonality between different organization types within the education sector.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="8a547-105">Properties</span><span class="sxs-lookup"><span data-stu-id="8a547-105">Properties</span></span>
-| <span data-ttu-id="8a547-106">プロパティ</span><span class="sxs-lookup"><span data-stu-id="8a547-106">Property</span></span>     | <span data-ttu-id="8a547-107">種類</span><span class="sxs-lookup"><span data-stu-id="8a547-107">Type</span></span>   |<span data-ttu-id="8a547-108">説明</span><span class="sxs-lookup"><span data-stu-id="8a547-108">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="4b1ce-105">プロパティ</span><span class="sxs-lookup"><span data-stu-id="4b1ce-105">Properties</span></span>
+| <span data-ttu-id="4b1ce-106">プロパティ</span><span class="sxs-lookup"><span data-stu-id="4b1ce-106">Property</span></span>     | <span data-ttu-id="4b1ce-107">種類</span><span class="sxs-lookup"><span data-stu-id="4b1ce-107">Type</span></span>   |<span data-ttu-id="4b1ce-108">説明</span><span class="sxs-lookup"><span data-stu-id="4b1ce-108">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="8a547-109">説明</span><span class="sxs-lookup"><span data-stu-id="8a547-109">description</span></span>|<span data-ttu-id="8a547-110">String</span><span class="sxs-lookup"><span data-stu-id="8a547-110">String</span></span>| <span data-ttu-id="8a547-111">組織の説明です。</span><span class="sxs-lookup"><span data-stu-id="8a547-111">Organization description.</span></span>|
-|<span data-ttu-id="8a547-112">displayName</span><span class="sxs-lookup"><span data-stu-id="8a547-112">displayName</span></span>|<span data-ttu-id="8a547-113">String</span><span class="sxs-lookup"><span data-stu-id="8a547-113">String</span></span>| <span data-ttu-id="8a547-114">組織の表示名です。</span><span class="sxs-lookup"><span data-stu-id="8a547-114">Organization display name.</span></span>|
-|<span data-ttu-id="8a547-115">externalSource</span><span class="sxs-lookup"><span data-stu-id="8a547-115">externalSource</span></span>|<span data-ttu-id="8a547-116">educationExternalSource</span><span class="sxs-lookup"><span data-stu-id="8a547-116">educationExternalSource</span></span>| <span data-ttu-id="8a547-117">この組織が作成されたソースです。</span><span class="sxs-lookup"><span data-stu-id="8a547-117">Source where this organization was created from.</span></span> <span data-ttu-id="8a547-118">可能な値: `sis`、 `manual`、 `unknownFutureValue`。</span><span class="sxs-lookup"><span data-stu-id="8a547-118">The possible values are: `sis`, `manual`, `unknownFutureValue`.</span></span>|
+|<span data-ttu-id="4b1ce-109">説明</span><span class="sxs-lookup"><span data-stu-id="4b1ce-109">description</span></span>|<span data-ttu-id="4b1ce-110">String</span><span class="sxs-lookup"><span data-stu-id="4b1ce-110">String</span></span>| <span data-ttu-id="4b1ce-111">組織の説明です。</span><span class="sxs-lookup"><span data-stu-id="4b1ce-111">Organization description.</span></span>|
+|<span data-ttu-id="4b1ce-112">displayName</span><span class="sxs-lookup"><span data-stu-id="4b1ce-112">displayName</span></span>|<span data-ttu-id="4b1ce-113">String</span><span class="sxs-lookup"><span data-stu-id="4b1ce-113">String</span></span>| <span data-ttu-id="4b1ce-114">組織の表示名です。</span><span class="sxs-lookup"><span data-stu-id="4b1ce-114">Organization display name.</span></span>|
+|<span data-ttu-id="4b1ce-115">externalSource</span><span class="sxs-lookup"><span data-stu-id="4b1ce-115">externalSource</span></span>|<span data-ttu-id="4b1ce-116">educationExternalSource</span><span class="sxs-lookup"><span data-stu-id="4b1ce-116">educationExternalSource</span></span>| <span data-ttu-id="4b1ce-117">この組織が作成されたソースです。</span><span class="sxs-lookup"><span data-stu-id="4b1ce-117">Source where this organization was created from.</span></span> <span data-ttu-id="4b1ce-118">可能な値: `sis`、 `manual`、 `unknownFutureValue`。</span><span class="sxs-lookup"><span data-stu-id="4b1ce-118">The possible values are: `sis`, `manual`, `unknownFutureValue`.</span></span>|
 
-## <a name="relationships"></a><span data-ttu-id="8a547-119">リレーションシップ</span><span class="sxs-lookup"><span data-stu-id="8a547-119">Relationships</span></span>
-<span data-ttu-id="8a547-120">なし。</span><span class="sxs-lookup"><span data-stu-id="8a547-120">None.</span></span>
+## <a name="relationships"></a><span data-ttu-id="4b1ce-119">リレーションシップ</span><span class="sxs-lookup"><span data-stu-id="4b1ce-119">Relationships</span></span>
+<span data-ttu-id="4b1ce-120">なし。</span><span class="sxs-lookup"><span data-stu-id="4b1ce-120">None.</span></span>
 
 
-## <a name="json-representation"></a><span data-ttu-id="8a547-121">JSON 表記</span><span class="sxs-lookup"><span data-stu-id="8a547-121">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="4b1ce-121">JSON 表記</span><span class="sxs-lookup"><span data-stu-id="4b1ce-121">JSON representation</span></span>
 
-<span data-ttu-id="8a547-122">リソースの JSON 表記を次に示します。</span><span class="sxs-lookup"><span data-stu-id="8a547-122">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="4b1ce-122">リソースの JSON 表記を次に示します。</span><span class="sxs-lookup"><span data-stu-id="4b1ce-122">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
