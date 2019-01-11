@@ -1,12 +1,13 @@
 ---
 title: inferenceClassification リソースの種類
 description: 'ユーザーにとって、より関連性や重要性があるメッセージに注意が向けられるようにするためのユーザー メッセージの分類です。 '
-ms.openlocfilehash: 0fb1e01ad9710a0ff5f2de7f63808a6f3e988c13
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 8dfd76b31e452532181b46cdb0b5c321e92273a7
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27021068"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27840727"
 ---
 # <a name="inferenceclassification-resource-type"></a>inferenceClassification リソースの種類
 
@@ -23,7 +24,7 @@ ms.locfileid: "27021068"
 |[オーバーライドを一覧表示する](../api/inferenceclassification-list-overrides.md) |[inferenceClassificationOverride](inferenceclassificationoverride.md) コレクション| ユーザーが設定したオーバーライドを取得して、特定の送信者からのメッセージを常に一定の方法で分類します。|
 
 ## <a name="properties"></a>プロパティ
-| プロパティ     | 型   |説明|
+| プロパティ     | 種類   |説明|
 |:---------------|:--------|:----------|
 |ID|文字列| 読み取り専用です。|
 

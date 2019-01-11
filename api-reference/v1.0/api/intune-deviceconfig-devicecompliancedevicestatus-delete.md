@@ -2,12 +2,13 @@
 title: deviceComplianceDeviceStatus の削除
 description: deviceComplianceDeviceStatus を削除します。
 author: tfitzmac
-ms.openlocfilehash: e84ab67867834cc5311015bc823ad39a7db15a7a
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: cb1b60260c3275f8fb0af2f38a4f935e20878748
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27304705"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27804943"
 ---
 # <a name="delete-devicecompliancedevicestatus"></a>deviceComplianceDeviceStatus の削除
 

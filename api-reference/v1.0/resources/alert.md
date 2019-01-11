@@ -1,12 +1,13 @@
 ---
 title: 通知リソースの種類
 description: マイクロソフトまたはパートナーのセキュリティ ・ ソリューションを特定の顧客のテナント内の潜在的なセキュリティ問題を表します。 統一し、すべての統合されたソリューションのセキュリティ問題の管理を合理化するには、アラートを使用します。 詳細については、グラフのエクスプ ローラー内のサンプル クエリを参照してください。
-ms.openlocfilehash: 6ee0018f44c6c512934a78567879a0ba4e0f48d7
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Priority
+ms.openlocfilehash: b7821fbbec382b5829275682bf697985787616e7
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27020285"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27840440"
 ---
 # <a name="alert-resource-type"></a>通知リソースの種類
 
@@ -24,7 +25,7 @@ ms.locfileid: "27020285"
 
 ## <a name="properties"></a>プロパティ
 
-| プロパティ   | 型|説明|
+| プロパティ   | 種類|説明|
 |:---------------|:--------|:----------|
 |activityGroupName|String|アクティビティ グループ (攻撃者) の名前またはエイリアスにこのアラートが属する。|
 |担当者|String|アナリスト、警告の名前は、選別、調査、または ([更新](../api/alert-update.md)がサポートされています) の改善のために割り当てられます。|
@@ -42,7 +43,7 @@ ms.locfileid: "27020285"
 |feedback|alertFeedback|アナリストのフィードバック通知をします。 可能な値は、`unknown`、`truePositive`、`falsePositive`、`benignPositive` です。 ([更新](../api/alert-update.md)がサポートされています)|
 |fileStates|[fileSecurityState](filesecuritystate.md)コレクション|セキュリティに関連するステートフルな情報については、このアラートに関連するファイルのプロバイダーによって生成されます。|
 |hostStates|[hostSecurityState](hostsecuritystate.md)コレクション|セキュリティに関連するステートフルな情報については、このアラートに関連するホスト プロバイダーによって生成されます。|
-|id |String|プロバイダーによって生成された GUID または一意の識別子。 読み取り専用。 必須。|
+|id |String|プロバイダーによって生成された GUID または一意の識別子。 読み取り専用です。 必須。|
 |lastModifiedDateTime|DateTimeOffset|アラートのエンティティが最後に修正された時間です。 Timestamp 型は、ISO 8601 形式を使用して日付と時刻の情報を表し、常に UTC 時間です。 たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、次のようになります。`'2014-01-01T00:00:00Z'`|
 |malwareStates|[malwareState](malwarestate.md)コレクション|このアラートに関連するマルウェアに関連する脅威インテリジェンスです。|
 |networkConnections|[ネットワーク接続](networkconnection.md)のコレクション|セキュリティに関連するステートフルな情報については、このアラートに関連するネットワーク接続のプロバイダーによって生成されます。|

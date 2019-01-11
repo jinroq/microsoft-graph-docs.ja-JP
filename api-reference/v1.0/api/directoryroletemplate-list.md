@@ -2,12 +2,13 @@
 title: directoryRoleTemplates を一覧表示する
 description: directoryRoleTemplate オブジェクトのリストを取得します。
 author: lleonard-msft
-ms.openlocfilehash: 0e43bdb3217827c8369ebe226a9aacea54996be2
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 018339d67e24a7707a0baf0a4f4678c7bd9e0650
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27301527"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27840342"
 ---
 # <a name="list-directoryroletemplates"></a>directoryRoleTemplates を一覧表示する
 

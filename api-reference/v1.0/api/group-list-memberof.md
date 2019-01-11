@@ -2,12 +2,13 @@
 title: memberOf を一覧表示する
 description: 'グループが直接メンバーであるグループを取得します。 '
 author: dkershaw10
-ms.openlocfilehash: 5cd563c8697a0d93ca2d11c42b3b8c19b0ce7ec9
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Priority
+ms.openlocfilehash: d7cfb9e21b05abc24b792e5e1288953c41492901
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27323584"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27840293"
 ---
 # <a name="list-memberof"></a>memberOf を一覧表示する
 グループが直接メンバーであるグループを取得します。 

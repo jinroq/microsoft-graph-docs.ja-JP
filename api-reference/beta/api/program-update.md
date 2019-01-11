@@ -1,12 +1,13 @@
 ---
 title: 更新プログラム
 description: Azure AD のレビュー機能にアクセス、既存のプログラム オブジェクトを更新します。
-ms.openlocfilehash: e3d8ca75683a076f156e359431204517b60e7c6d
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: a9abe10a2a672984d14f1da821b7ae6244cbdf39
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27071833"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27840335"
 ---
 # <a name="update-program"></a>更新プログラム
 
@@ -28,7 +29,7 @@ ms.locfileid: "27071833"
 PATCH /programs('{programId}')
 ```
 ## <a name="request-headers"></a>要求ヘッダー
-| 名前         | 型        | 説明 |
+| 名前         | 種類        | 説明 |
 |:-------------|:------------|:------------|
 | Authorization | string | ベアラー\{トークン\}。 必須。 |
 
@@ -37,7 +38,7 @@ PATCH /programs('{programId}')
 
 プログラムを更新するときに指定できるプロパティを次の表に示します。
 
-| プロパティ     | 型        | 説明 |
+| プロパティ     | 種類        | 説明 |
 |:-------------|:------------|:------------|
 | `displayName`               |`String`                              |  プログラムの名前です。                   |
 | `description`               |`String`                              |  プログラムの説明です。           |

@@ -2,12 +2,13 @@
 title: Create microsoftStoreForBusinessApp
 description: 新しい microsoftStoreForBusinessApp オブジェクトを作成します。
 author: tfitzmac
-ms.openlocfilehash: d27c5eed5d541d762e77b4eb45e2fe468b4529f4
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: eff4f4e03c69d866c879aec746c9b4e47d3dbe93
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27356064"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27840482"
 ---
 # <a name="create-microsoftstoreforbusinessapp"></a>Create microsoftStoreForBusinessApp
 

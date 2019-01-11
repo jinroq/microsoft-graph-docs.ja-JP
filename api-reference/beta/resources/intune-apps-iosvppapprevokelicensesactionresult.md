@@ -1,12 +1,13 @@
 ---
 title: iosVppAppRevokeLicensesActionResult リソースの種類
 description: ActionResult の継承されたプロパティが含まれています、iOS Vpp のアプリケーションでの操作の結果を定義します。
-ms.openlocfilehash: 1c6c1486d63ba5ce7c866dc2697d1a3eb2ee8e38
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 8ed57465e263245cfc18ca22899c2142d949855d
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27073227"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27842085"
 ---
 # <a name="iosvppapprevokelicensesactionresult-resource-type"></a>iosVppAppRevokeLicensesActionResult リソースの種類
 
@@ -16,7 +17,7 @@ ms.locfileid: "27073227"
 
 ActionResult の継承されたプロパティが含まれています、iOS Vpp のアプリケーションでの操作の結果を定義します。
 ## <a name="properties"></a>プロパティ
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |:---|:---|:---|
 |userId|String|アクションに関連付けられているユーザーの Id。|
 |managedDeviceId|String|DeviceId はアクションに関連付けられています。|

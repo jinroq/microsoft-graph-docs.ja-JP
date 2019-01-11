@@ -2,12 +2,13 @@
 title: windowsPhone81AppXBundle リソースの種類
 description: プロパティと Windows Phone 8.1 AppX バンドルの業務アプリケーションの継承されたプロパティが含まれています。
 author: tfitzmac
-ms.openlocfilehash: 76bdf536ba7b895e347555fbd84d4af23bde3ff9
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: c12bcc3afa8e7e7e681c786f5a24e9448ba3e18a
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27331284"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27825033"
 ---
 # <a name="windowsphone81appxbundle-resource-type"></a>windowsPhone81AppXBundle リソースの種類
 
@@ -28,7 +29,7 @@ ms.locfileid: "27331284"
 |[WindowsPhone81AppXBundle を削除します。](../api/intune-apps-windowsphone81appxbundle-delete.md)|なし|の[windowsPhone81AppXBundle](../resources/intune-apps-windowsphone81appxbundle.md)を削除します。|
 |[WindowsPhone81AppXBundle を更新します。](../api/intune-apps-windowsphone81appxbundle-update.md)|[windowsPhone81AppXBundle](../resources/intune-apps-windowsphone81appxbundle.md)|[WindowsPhone81AppXBundle](../resources/intune-apps-windowsphone81appxbundle.md)オブジェクトのプロパティを更新します。|
 
-## <a name="properties"></a>Properties
+## <a name="properties"></a>プロパティ
 |プロパティ|種類|説明|
 |:---|:---|:---|
 |ID|String|エンティティのキー。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|

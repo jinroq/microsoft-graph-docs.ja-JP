@@ -2,12 +2,13 @@
 title: Create androidGeneralDeviceConfiguration
 description: 新しい androidGeneralDeviceConfiguration オブジェクトを作成します。
 author: tfitzmac
-ms.openlocfilehash: 8ee12d81dc3728a6bf3d21529222a0e7a8d389a3
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 779b93ce25eb9fe5044a166a78ac7d02ab77201c
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27340216"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27842442"
 ---
 # <a name="create-androidgeneraldeviceconfiguration"></a>Create androidGeneralDeviceConfiguration
 

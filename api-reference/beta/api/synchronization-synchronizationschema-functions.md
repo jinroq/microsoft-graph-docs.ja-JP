@@ -1,12 +1,13 @@
 ---
 title: 'synchronizationSchema: 関数'
 description: 現在、attributeMappingSource でサポートされているすべての関数の一覧を表示します。
-ms.openlocfilehash: c9f33e47bf3fcfc35c8fef34be036272ec270a1b
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 5dc7734e9d747ac1e832aebb7d9c7355c2fbb52f
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27073981"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27841008"
 ---
 # <a name="synchronizationschema-functions"></a>synchronizationSchema: 関数
 
@@ -33,7 +34,7 @@ GET /applications/{id}/synchronization/templates/{templateId}/schema/functions
 
 ## <a name="request-headers"></a>要求ヘッダー
 
-| 名前           | 型    | 説明|
+| 名前           | 種類    | 説明|
 |:---------------|:--------|:-----------|
 | Authorization  | string  | ベアラー {トークン}。必須。 |
 

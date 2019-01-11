@@ -1,12 +1,13 @@
 ---
 title: Microsoft グラフ API を使用して、ローマのプロジェクトを操作するには
 description: プロジェクトのローマは、デバイス間を構築するマイクロソフトの方針が発生したプラットフォームです。 ローマのプロジェクトでは、ユーザーがクライアント デバイス上でサインインに使用する同じ Microsoft アカウントを使用して署名する場合のアプリケーションと対話するには、ローカルのクライアントまたはサービスのアプリケーションとリモート ・ ホスト上のサービスを有効にします。 デバイスではなく、ユーザーの作業の中心は、プログラムのデバイス間およびプラットフォーム間での経験をできます。
-ms.openlocfilehash: ab703ff76d3da4ec1c6a8cd1189f3d85e57bac65
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: d103bb68560a39cc4491460969a36bb81bb6da44
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27022308"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27840965"
 ---
 # <a name="use-the-microsoft-graph-api-to-work-with-project-rome"></a>Microsoft グラフ API を使用して、ローマのプロジェクトを操作するには
 

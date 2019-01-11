@@ -2,12 +2,13 @@
 title: managedAppPolicy リソースの種類
 description: ManagedAppPolicy リソースは、プラットフォーム特有のポリシーの基本型を表します。
 author: tfitzmac
-ms.openlocfilehash: d971f99c4f081d5b40179d406f6a50acf5812e4f
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 3cea81d492e708c1d21039c6286fe01e70a590b4
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27313462"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27840734"
 ---
 # <a name="managedapppolicy-resource-type"></a>managedAppPolicy リソースの種類
 

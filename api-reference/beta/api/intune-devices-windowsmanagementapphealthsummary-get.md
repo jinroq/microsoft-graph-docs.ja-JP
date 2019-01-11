@@ -2,12 +2,13 @@
 title: WindowsManagementAppHealthSummary を取得します。
 description: WindowsManagementAppHealthSummary オブジェクトのプロパティと関係を参照してください。
 author: tfitzmac
-ms.openlocfilehash: 36114684b03f1945fe6a302c44b6b04af751f938
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 6d6f86303130f9e25e77b016854eea81ead05e09
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27335176"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27842127"
 ---
 # <a name="get-windowsmanagementapphealthsummary"></a>WindowsManagementAppHealthSummary を取得します。
 

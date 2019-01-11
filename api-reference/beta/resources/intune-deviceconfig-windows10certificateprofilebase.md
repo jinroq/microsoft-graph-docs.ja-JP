@@ -2,12 +2,13 @@
 title: windows10CertificateProfileBase リソースの種類
 description: Windows 10 証明書のプロファイルで使用する基本クラスです。
 author: tfitzmac
-ms.openlocfilehash: be43fa91432520e95dffafaac3bd582840c46d72
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: e55098f3178b4557c5b99b32fd5f00deb733963d
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27362532"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27841077"
 ---
 # <a name="windows10certificateprofilebase-resource-type"></a>windows10CertificateProfileBase リソースの種類
 
@@ -25,7 +26,7 @@ Windows 10 証明書のプロファイルで使用する基本クラスです。
 |[リスト windows10CertificateProfileBases](../api/intune-deviceconfig-windows10certificateprofilebase-list.md)|[windows10CertificateProfileBase](../resources/intune-deviceconfig-windows10certificateprofilebase.md)コレクション|[Windows10CertificateProfileBase](../resources/intune-deviceconfig-windows10certificateprofilebase.md)オブジェクトのプロパティと関係を一覧表示します。|
 |[Windows10CertificateProfileBase を取得します。](../api/intune-deviceconfig-windows10certificateprofilebase-get.md)|[windows10CertificateProfileBase](../resources/intune-deviceconfig-windows10certificateprofilebase.md)|[Windows10CertificateProfileBase](../resources/intune-deviceconfig-windows10certificateprofilebase.md)オブジェクトのプロパティと関係を参照してください。|
 
-## <a name="properties"></a>Properties
+## <a name="properties"></a>プロパティ
 |プロパティ|種類|説明|
 |:---|:---|:---|
 |ID|String|エンティティのキー。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|

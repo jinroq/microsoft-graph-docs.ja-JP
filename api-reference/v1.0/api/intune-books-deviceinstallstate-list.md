@@ -2,12 +2,13 @@
 title: deviceInstallStates のリスト
 description: deviceInstallState オブジェクトのプロパティとリレーションシップをリストします。
 author: tfitzmac
-ms.openlocfilehash: 94c4039e2605ab6139623cfac50343aac5b0b925
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 9d85c822bfb4dbd7ee355ace90150a1ab418e242
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27350786"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27839824"
 ---
 # <a name="list-deviceinstallstates"></a>deviceInstallStates のリスト
 

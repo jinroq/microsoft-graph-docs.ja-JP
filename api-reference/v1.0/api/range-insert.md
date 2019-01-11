@@ -1,12 +1,13 @@
 ---
 title: '範囲: 挿入'
 description: この範囲を占めるセルまたはセルの範囲をワークシートに挿入し、領域を空けるために他のセルをシフトします。この時点で空き領域に位置する、新しい Range オブジェクトが返されます。
-ms.openlocfilehash: 242db28474965493ceb8a584e8d9fb01679f13d2
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 78cd2d4018a96428b7e5336d00ca20bada4abd36
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27020283"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27804873"
 ---
 # <a name="range-insert"></a>範囲: 挿入
 
@@ -37,7 +38,7 @@ POST /workbook/tables/{id|name}/columns/{id|name}/range/insert
 ## <a name="request-body"></a>要求本文
 要求本文で、次のパラメーターを含む JSON オブジェクトを指定します。
 
-| パラメーター    | 型   |説明|
+| パラメーター    | Type   |説明|
 |:---------------|:--------|:----------|
 |<legacyBold>Shift</legacyBold>|文字列|セルをシフトする方向を指定します。  可能な値: `Down`、 `Right`。|
 

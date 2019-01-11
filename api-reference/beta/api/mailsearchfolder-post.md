@@ -1,12 +1,13 @@
 ---
 title: MailSearchFolder を作成します。
 description: 指定されたユーザーのメールボックスに新しい mailSearchFolder を作成するのにには、この API を使用します。
-ms.openlocfilehash: a35827a6b9164c8d4c1c0fe54a1897b2271fc5d6
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 07c6b96bc2dec35d06b5563673012ca0eafb3885
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27072482"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27840188"
 ---
 # <a name="create-mailsearchfolder"></a>MailSearchFolder を作成します。
 
@@ -46,11 +47,11 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/childFolders
 
 要求本文で、次のパラメーターを含む JSON オブジェクトを指定します。
 
-| パラメーター | 型 | 説明 |
+| パラメーター | Type | 説明 |
 |:----------|:-----|:------------|
 | @odata.type | String | 作成するフォルダーの種類。 "Microsoft.graph.mailSearchFolder"に設定します。 |
 | displayName | String | 新しいフォルダーの表示名です。|
-| includeNestedFolders | ブール値 | どのメールボックス フォルダー階層を走査する必要があります。 `true`詳細検索をする必要があることを意味時に`false`簡易検索を代わりに行う必要があることを意味します。 |
+| includeNestedFolders | ブール型 | どのメールボックス フォルダー階層を走査する必要があります。 `true`詳細検索をする必要があることを意味時に`false`簡易検索を代わりに行う必要があることを意味します。 |
 | sourceFolderIDs | String コレクション | メールボックス フォルダーをマイニングする必要があります。 |
 | filterQuery | String | メッセージをフィルタ リングする OData クエリです。 |
 

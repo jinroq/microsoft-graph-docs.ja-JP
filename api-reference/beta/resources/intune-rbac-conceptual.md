@@ -1,12 +1,13 @@
 ---
 title: Microsoft Intune での役割ベースのアクセス制御
 description: 'Intune の役割ベースのアクセス制御により、だれが Intune オブジェクトに対してアクションを実行し、管理対象アプリケーション、ユーザー、デバイスを変更できるかが決まります。   '
-ms.openlocfilehash: 02172a87c865a8e858725e6526f9f3959bac28c0
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 7772ad42d96f6c8907f813e8e62cfb4429fe2cc2
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27073892"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27804887"
 ---
 # <a name="role-based-access-control-in-microsoft-intune"></a>Microsoft Intune での役割ベースのアクセス制御
 

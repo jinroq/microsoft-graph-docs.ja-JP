@@ -1,12 +1,13 @@
 ---
 title: attributeMappingSource リソースの種類
 description: '定義の値がどのようにする必要があります抽出 (変換)、ソース オブジェクトからです。 ソース オブジェクトの特定の属性から取得した単純な値であることなど、文字列の連結/抽出/交換のいくつかのソース属性に基づいたより複雑な式であることができます。 '
-ms.openlocfilehash: aeb39c829d7be081fe9ee08aa5845e6ced1194dc
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: a7c1493f27f34230d4305fe95b2d2f03a5ad25e2
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27069825"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27825012"
 ---
 # <a name="attributemappingsource-resource-type"></a>attributeMappingSource リソースの種類
 
@@ -16,7 +17,7 @@ ms.locfileid: "27069825"
 
 ## <a name="properties"></a>プロパティ
 
-| プロパティ              | 型                      | 説明               |
+| プロパティ              | 種類                      | 説明               |
 |:----------------------|:--------------------------|:--------------------------|
 |式             |String                     |この**attributeMappingSource**オブジェクトの同等の式表現です。|
 |名前                   |String                     |マッピングのソースの名前のパラメーター。 **型**のプロパティの値によって、関数の場合、基になる属性、または使用する定数の値の名前の名前できます。 |

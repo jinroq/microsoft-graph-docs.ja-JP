@@ -2,12 +2,13 @@
 title: iosManagedAppProtection リソース タイプ
 description: iOS デバイス上の特定のセキュリティ グループおよびアプリの特定のセットを対象とした、管理設定の詳細を構成するために使用するポリシー
 author: tfitzmac
-ms.openlocfilehash: b0323564851548b31533f9ee0c4c6cd38ae25984
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 3e4cc50cc1f06609139b99b30688a9a88fafd9c9
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27359956"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27841105"
 ---
 # <a name="iosmanagedappprotection-resource-type"></a>iosManagedAppProtection リソース タイプ
 

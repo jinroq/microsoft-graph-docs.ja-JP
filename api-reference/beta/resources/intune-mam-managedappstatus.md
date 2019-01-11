@@ -2,12 +2,13 @@
 title: managedAppStatus リソースの種類
 description: 組織のアプリ保護と構成の状態を表します。
 author: tfitzmac
-ms.openlocfilehash: 9a685b8eca9e276bd88bc9643a4ee07029ed4778
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 05b2117f441fd60f92970cc506245d177a618fce
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27318383"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27840748"
 ---
 # <a name="managedappstatus-resource-type"></a>managedAppStatus リソースの種類
 

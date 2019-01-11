@@ -1,19 +1,20 @@
 ---
 title: FilterDatetime リソースの種類
 description: 値をフィルター処理するときに日付をフィルター処理する方法を表します。
-ms.openlocfilehash: 8156b9f5779dd8d70ff3a839d8a6ef4f5753bacd
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 26d42b45a2e9b9cdd279f33330a877a64ea1c8d0
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27020349"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27840363"
 ---
 # <a name="filterdatetime-resource-type"></a>FilterDatetime リソースの種類
 
 値をフィルター処理するときに日付をフィルター処理する方法を表します。
 
 ## <a name="properties"></a>プロパティ
-| プロパティ     | 型   |説明|
+| プロパティ     | 種類   |説明|
 |:---------------|:--------|:----------|
 |date|文字列|データをフィルターをかけるための ISO8601 形式の日付です。|
 |specificity|文字列|特定日付に使用するデータを保持します。 など、この日 2005-04-02 では、specifity は、「月」に設定されて場合は、フィルター操作は 2009 年 4 月の月の日付を含むすべての行が保持されます。 可能な値: `Year`、 `Monday`、 `Day`、 `Hour`、 `Minute`、 `Second`。|

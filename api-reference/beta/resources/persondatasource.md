@@ -1,12 +1,13 @@
 ---
 title: personDataSource リソースの種類
 description: ディレクトリと Outlook の連絡先は、ユーザー データ ソースを表します。
-ms.openlocfilehash: 1c5aeb2cbb36398eb3c7184550235fc7194f5e1c
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 80e61bd1cd91c0b2a780936a5a311b0916743a17
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27068655"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27824970"
 ---
 # <a name="persondatasource-resource-type"></a>personDataSource リソースの種類
 
@@ -33,7 +34,7 @@ ms.locfileid: "27068655"
 
 ```
 ## <a name="properties"></a>プロパティ
-| プロパティ     | 型   |説明|
+| プロパティ     | 種類   |説明|
 |:---------------|:--------|:----------|
 |type|String|データ ソースの種類です。|
 

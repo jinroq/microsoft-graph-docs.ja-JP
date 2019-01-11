@@ -1,12 +1,13 @@
 ---
 title: governanceRoleDefinition リソースの種類
 description: 役割の定義を表します。 Azure のリソースの所有者、閲覧者、投稿者など、Azure の RBAC の役割を表すことができます。
-ms.openlocfilehash: 057d74276b41abad47eb60ce48a99f1160c401ef
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 3f94dd1a741545760951875fbc064307823a65dd
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27068113"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27842451"
 ---
 # <a name="governanceroledefinition-resource-type"></a>governanceRoleDefinition リソースの種類
 
@@ -24,9 +25,9 @@ ms.locfileid: "27068113"
 |[Get](../api/governanceroledefinition-get.md) | [governanceRoleDefinition](../resources/governanceroledefinition.md) |Id で指定されたロールの定義のエンティティのプロパティと関係を参照してください。|
 No `POST`、 `PUT`、 `PATCH`、`DELETE`でサポートされています`roleDefinitions`ここではエンティティのセットです。
 ## <a name="properties"></a>プロパティ
-| プロパティ  | 型      |説明|
+| プロパティ  | 種類      |説明|
 |:----|:----------|:----------|:----------|
-|id         |String     |役割の定義の id です。 |
+|ID         |String     |役割の定義の id です。 |
 |resourceId |String     |必須。 役割の定義に関連付けられているリソースの id です。 |
 |externalId   |String     |役割の定義の外部の id です。|
 |displayName|String     |役割の定義の表示名。|
@@ -38,7 +39,7 @@ No `POST`、 `PUT`、 `PATCH`、`DELETE`でサポートされています`roleDe
 ## <a name="relationships"></a>リレーションシップ
 | リレーションシップ | 型   |説明|
 |:---------------|:--------|:----------|
-|リソース|[governanceResource](../resources/governanceresource.md)|読み取り専用。 役割の定義に関連付けられているリソースです。|
+|リソース|[governanceResource](../resources/governanceresource.md)|読み取り専用です。 役割の定義に関連付けられているリソースです。|
 |roleSetting|[governanceRoleSetting](../resources/governancerolesetting.md)|役割の定義に関連付けられている役割の設定をします。|
 
 ## <a name="json-representation"></a>JSON 表記

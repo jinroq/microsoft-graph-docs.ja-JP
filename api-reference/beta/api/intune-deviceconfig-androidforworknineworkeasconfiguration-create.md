@@ -2,12 +2,13 @@
 title: AndroidForWorkNineWorkEasConfiguration を作成します。
 description: 新しい androidForWorkNineWorkEasConfiguration オブジェクトを作成します。
 author: tfitzmac
-ms.openlocfilehash: f30d9edc6b86de56b5ab283ac9301fbb199ba454
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: f6dca00ea419ae3ea18d66a089204b494ae37b40
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27310970"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27842526"
 ---
 # <a name="create-androidforworknineworkeasconfiguration"></a>AndroidForWorkNineWorkEasConfiguration を作成します。
 

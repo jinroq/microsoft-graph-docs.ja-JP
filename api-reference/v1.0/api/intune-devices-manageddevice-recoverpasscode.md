@@ -2,12 +2,13 @@
 title: recoverPasscode アクション
 description: パスコードの回復
 author: tfitzmac
-ms.openlocfilehash: c767c0fa657880b722d839dfd5aa0ea9279ce309
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: d9d5792e5f4d8e79da29356f5631ddc3f45a9430
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27348910"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27805076"
 ---
 # <a name="recoverpasscode-action"></a>recoverPasscode アクション
 

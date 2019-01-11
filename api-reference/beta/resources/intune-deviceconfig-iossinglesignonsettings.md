@@ -2,12 +2,13 @@
 title: iosSingleSignOnSettings リソースの種類
 description: iOS は単一のサインオンでの Kerberos 認証の設定
 author: tfitzmac
-ms.openlocfilehash: 6bde13865c1d6b34c433a92005681b247b99d984
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 17c2e100f9762334173ca6ca7049d1e5933f8616
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27347370"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27841063"
 ---
 # <a name="iossinglesignonsettings-resource-type"></a>iosSingleSignOnSettings リソースの種類
 
@@ -16,7 +17,7 @@ ms.locfileid: "27347370"
 > **注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
 
 iOS は単一のサインオンでの Kerberos 認証の設定
-## <a name="properties"></a>Properties
+## <a name="properties"></a>プロパティ
 |プロパティ|種類|説明|
 |:---|:---|:---|
 |allowedAppsList|[appListItem](../resources/intune-deviceconfig-applistitem.md) コレクション|このログインを使用するのには許可されているアプリケーションの識別子の一覧です。 このフィールドを省略すると、ログインは、デバイス上のすべてのアプリケーションに適用されます。 このコレクションには、最大で 500 個の要素を含めることができます。|

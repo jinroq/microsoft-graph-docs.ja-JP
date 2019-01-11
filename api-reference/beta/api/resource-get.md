@@ -1,12 +1,13 @@
 ---
 title: リソースを取得する
 description: ファイルまたは画像のリソース オブジェクトのバイナリ データを取得します。
-ms.openlocfilehash: 81c07dca78381ede096c62eba73b0842ae294d55
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 1f8150e0449009eef4d1afe2ce014ae848153382
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27067073"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27841259"
 ---
 # <a name="get-resource"></a>リソースを取得する
 
@@ -32,7 +33,7 @@ GET /sites/{id}/onenote/resources/{id}/content
 ```
 
 ## <a name="request-headers"></a>要求ヘッダー
-| 名前       | 型 | 説明|
+| 名前       | 種類 | 説明|
 |:-----------|:------|:----------|
 | Authorization  | string  | ベアラー {トークン}。必須。 |
 

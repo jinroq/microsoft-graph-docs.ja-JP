@@ -2,12 +2,13 @@
 title: LocationManagementCondition を取得します。
 description: LocationManagementCondition オブジェクトのプロパティと関係を参照してください。
 author: tfitzmac
-ms.openlocfilehash: 86f64b039e99611d0bd0da913d68c9a897fbc4d2
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 1bf6476fb1dad5db06f239df5594205f859b34df
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27352718"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27841238"
 ---
 # <a name="get-locationmanagementcondition"></a>LocationManagementCondition を取得します。
 

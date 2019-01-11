@@ -2,12 +2,13 @@
 title: DefaultDeviceCompliancePolicy を削除します。
 description: DefaultDeviceCompliancePolicy を削除します。
 author: tfitzmac
-ms.openlocfilehash: ed6bddf1b09dfedd59c75499c39ca7d39c0044ac
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 39d2ba382e22aeca0705c8c0eec0f09ec332eb0e
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27356085"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27841945"
 ---
 # <a name="delete-defaultdevicecompliancepolicy"></a>DefaultDeviceCompliancePolicy を削除します。
 

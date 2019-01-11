@@ -2,12 +2,13 @@
 title: ManagementCondition を取得します。
 description: ManagementCondition オブジェクトのプロパティと関係を参照してください。
 author: tfitzmac
-ms.openlocfilehash: ead4d2643644c79f84704b87c3a71d0d302ebd0a
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: a6935796d429b478eca53d058690d2e0dcc6ea75
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27330962"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27841847"
 ---
 # <a name="get-managementcondition"></a>ManagementCondition を取得します。
 

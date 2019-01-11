@@ -2,12 +2,13 @@
 title: windows10CompliancePolicy リソース タイプ
 description: このクラスには、Windows 10 のコンプライアンス設定が含まれています。
 author: tfitzmac
-ms.openlocfilehash: a2a88ee828204ff1ee5bdd8bfb22431b3e3de0f1
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 786898d47cc574ce07d59d267293496b226f846d
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27308534"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27841168"
 ---
 # <a name="windows10compliancepolicy-resource-type"></a>windows10CompliancePolicy リソース タイプ
 

@@ -2,12 +2,13 @@
 title: iosCompliancePolicy リソースの種類
 description: このクラスには、iOS のコンプライアンス設定が含まれています。
 author: tfitzmac
-ms.openlocfilehash: ae7c5c1df55236c7232e34e377a1b55e947e84ca
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: dbfff1a4dee9d9875c7bfe4fd27ddc3589ea0697
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27336380"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27830276"
 ---
 # <a name="ioscompliancepolicy-resource-type"></a>iosCompliancePolicy リソースの種類
 

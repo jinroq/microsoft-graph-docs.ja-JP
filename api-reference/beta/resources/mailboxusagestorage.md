@@ -1,22 +1,23 @@
 ---
 title: mailboxUsageStorage リソースの種類
 description: リソースの JSON 表記を次に示します。
-ms.openlocfilehash: 8cc26c5d3cc30529857ed3273f8ee66c7373327a
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: dcabfab0e8a64f2d74442f7d7464708501a59b95
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27068171"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27840741"
 ---
 # <a name="mailboxusagestorage-resource-type"></a>mailboxUsageStorage リソースの種類
 
 ## <a name="properties"></a>プロパティ
 
-| プロパティ           | 型   |
+| プロパティ           | 種類   |
 | :----------------- | :----- |
-| reportRefreshDate  | Date   |
+| reportRefreshDate  | 日付   |
 | storageUsedInBytes | Int64  |
-| reportDate         | Date   |
+| reportDate         | 日付   |
 | reportPeriod       | String |
 
 ## <a name="json-representation"></a>JSON 表記

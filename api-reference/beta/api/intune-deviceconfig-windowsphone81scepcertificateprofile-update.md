@@ -2,12 +2,13 @@
 title: WindowsPhone81SCEPCertificateProfile を更新します。
 description: WindowsPhone81SCEPCertificateProfile オブジェクトのプロパティを更新します。
 author: tfitzmac
-ms.openlocfilehash: 595041128c49a5efc5f71ee991717df25f1da81e
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: ffa02d096b5a493cc64acb53764fb992afcd20ed
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27321680"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27806770"
 ---
 # <a name="update-windowsphone81scepcertificateprofile"></a>WindowsPhone81SCEPCertificateProfile を更新します。
 

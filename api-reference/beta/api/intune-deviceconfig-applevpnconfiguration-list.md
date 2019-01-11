@@ -2,12 +2,13 @@
 title: リスト appleVpnConfigurations
 description: AppleVpnConfiguration オブジェクトのプロパティと関係を一覧表示します。
 author: tfitzmac
-ms.openlocfilehash: d18baf41cd66309207850d155ee5e383808f6205
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 3229b1744423652abaa5c65c3b781ff6736edeb0
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27322284"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27841980"
 ---
 # <a name="list-applevpnconfigurations"></a>リスト appleVpnConfigurations
 

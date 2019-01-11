@@ -2,12 +2,13 @@
 title: 社員のリソースの種類
 description: 定期的なデバイスの管理スクリプトの実行スケジュールを日単位です。
 author: tfitzmac
-ms.openlocfilehash: 86a3dda75c0aecef6ba0672bc114092bd301a582
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 5321bce51f0f682591c6b27a0acec4ed95d0e2e8
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27351129"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27840559"
 ---
 # <a name="dailyschedule-resource-type"></a>社員のリソースの種類
 
@@ -19,7 +20,7 @@ ms.locfileid: "27351129"
 
 [RunSchedule](../resources/intune-devices-runschedule.md)から継承します。
 
-## <a name="properties"></a>Properties
+## <a name="properties"></a>プロパティ
 |プロパティ|種類|説明|
 |:---|:---|:---|
 |interval|Int32|間隔の日数|

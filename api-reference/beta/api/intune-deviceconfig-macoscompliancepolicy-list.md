@@ -2,12 +2,13 @@
 title: macOSCompliancePolicies のリスト
 description: macOSCompliancePolicy オブジェクトのプロパティとリレーションシップをリストします。
 author: tfitzmac
-ms.openlocfilehash: f64e35d6e9db1473f36dc1ea53e976752be9e47f
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: a1ee81fb007a6d60b50e01e46d2e270cbb7b95f8
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27342043"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27842337"
 ---
 # <a name="list-macoscompliancepolicies"></a>macOSCompliancePolicies のリスト
 

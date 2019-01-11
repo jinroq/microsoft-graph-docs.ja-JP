@@ -2,12 +2,13 @@
 title: IosScepCertificateProfile を作成します。
 description: 新しい iosScepCertificateProfile オブジェクトを作成します。
 author: tfitzmac
-ms.openlocfilehash: b81cec3750739fc5e1534af2c8c86d2e05301830
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 9ef2ab2b9d93ca5a343ecc7836a5e22f1660f899
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27357646"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27842141"
 ---
 # <a name="create-iosscepcertificateprofile"></a>IosScepCertificateProfile を作成します。
 

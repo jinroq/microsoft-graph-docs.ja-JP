@@ -2,12 +2,13 @@
 title: windowsDefenderAdvancedThreatProtectionConfigurations のリスト
 description: windowsDefenderAdvancedThreatProtectionConfiguration オブジェクトのプロパティとリレーションシップをリストします。
 author: tfitzmac
-ms.openlocfilehash: 463b4420da2077a46a90f90ddea69c57869e7603
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: ce4b7e55d97571b290be7eb4d1dbff67916d3b70
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27341469"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27841406"
 ---
 # <a name="list-windowsdefenderadvancedthreatprotectionconfigurations"></a>windowsDefenderAdvancedThreatProtectionConfigurations のリスト
 

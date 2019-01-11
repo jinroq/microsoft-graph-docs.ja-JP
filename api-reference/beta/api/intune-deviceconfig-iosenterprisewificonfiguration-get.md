@@ -2,12 +2,13 @@
 title: IosEnterpriseWiFiConfiguration を取得します。
 description: IosEnterpriseWiFiConfiguration オブジェクトのプロパティと関係を参照してください。
 author: tfitzmac
-ms.openlocfilehash: c9e75d76b9c4deac53894268e6a7c9a8682d0061
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 9707e8daa6b987c2e36a34a6a4b66a501e2be874
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27362511"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27841735"
 ---
 # <a name="get-iosenterprisewificonfiguration"></a>IosEnterpriseWiFiConfiguration を取得します。
 

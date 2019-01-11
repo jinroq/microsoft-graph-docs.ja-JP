@@ -2,12 +2,13 @@
 title: MobileAppIntentAndState を削除します。
 description: MobileAppIntentAndState を削除します。
 author: tfitzmac
-ms.openlocfilehash: dfc9b0f39a6933dd4972e47d09d652a4cc85107c
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 73f42ba38463c827f9863ab655f719996ac18cb8
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27323983"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27840720"
 ---
 # <a name="delete-mobileappintentandstate"></a>MobileAppIntentAndState を削除します。
 

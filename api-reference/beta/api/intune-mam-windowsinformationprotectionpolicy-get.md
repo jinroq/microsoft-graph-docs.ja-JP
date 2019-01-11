@@ -2,12 +2,13 @@
 title: windowsInformationProtectionPolicy の取得
 description: windowsInformationProtectionPolicy オブジェクトのプロパティとリレーションシップを読み取ります。
 author: tfitzmac
-ms.openlocfilehash: bd7a456187ee2c8687ac1850042dbc119bfbaceb
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: c4fec7b07cb2044536b510394a96b9710e4ca2c8
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27337780"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27840874"
 ---
 # <a name="get-windowsinformationprotectionpolicy"></a>windowsInformationProtectionPolicy の取得
 

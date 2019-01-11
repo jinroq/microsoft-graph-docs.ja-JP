@@ -2,12 +2,13 @@
 title: targetedManagedAppProtection リソース タイプ
 description: 特定のセキュリティ グループを対象とした管理設定の詳細を構成するために使用するポリシー
 author: tfitzmac
-ms.openlocfilehash: 041d8d5db29940304f637e622c42fbd0664d7667
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: f6817d8d73cdd392da23c98286fc089a357bf99c
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27327154"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27841091"
 ---
 # <a name="targetedmanagedappprotection-resource-type"></a>targetedManagedAppProtection リソース タイプ
 

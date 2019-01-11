@@ -2,12 +2,13 @@
 title: remoteActionAudit リソースの種類
 description: 特定のテナントに属するデバイス上で初期化されたリモートの操作のレポートです。
 author: tfitzmac
-ms.openlocfilehash: 48d74cb088a2e16e244898834e3d717302713e6f
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 7624610ed35a583e0ec11582caa1dccda5ce4ce7
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27323479"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27840811"
 ---
 # <a name="remoteactionaudit-resource-type"></a>remoteActionAudit リソースの種類
 
@@ -25,7 +26,7 @@ ms.locfileid: "27323479"
 |[RemoteActionAudit を削除します。](../api/intune-devices-remoteactionaudit-delete.md)|なし|の[remoteActionAudit](../resources/intune-devices-remoteactionaudit.md)を削除します。|
 |[RemoteActionAudit を更新します。](../api/intune-devices-remoteactionaudit-update.md)|[remoteActionAudit](../resources/intune-devices-remoteactionaudit.md)|[RemoteActionAudit](../resources/intune-devices-remoteactionaudit.md)オブジェクトのプロパティを更新します。|
 
-## <a name="properties"></a>Properties
+## <a name="properties"></a>プロパティ
 |プロパティ|種類|説明|
 |:---|:---|:---|
 |ID|String|レポートの id。|

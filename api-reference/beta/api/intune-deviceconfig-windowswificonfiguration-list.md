@@ -2,12 +2,13 @@
 title: リスト windowsWifiConfigurations
 description: WindowsWifiConfiguration オブジェクトのプロパティと関係を一覧表示します。
 author: tfitzmac
-ms.openlocfilehash: 4e35f4e29237d8f20371553a1d4a5f4815744c0d
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: e04b6d6e0f29bf76e4ac1b00f03b560380cb2d50
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27312384"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27842092"
 ---
 # <a name="list-windowswificonfigurations"></a>リスト windowsWifiConfigurations
 

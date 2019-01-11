@@ -2,12 +2,13 @@
 title: managedDeviceEnrollmentAbandonmentDetails 関数
 description: 登録放棄の詳細レポートのメタデータ
 author: tfitzmac
-ms.openlocfilehash: 187f5389bbea761555f4067081d4e0557f2ce5bd
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 0f3913bee2e3adae3932ff1ad6b036a3f96482ea
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27317956"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27840790"
 ---
 # <a name="manageddeviceenrollmentabandonmentdetails-function"></a>managedDeviceEnrollmentAbandonmentDetails 関数
 

@@ -2,12 +2,13 @@
 title: Update windows10TeamGeneralConfiguration
 description: windows10TeamGeneralConfiguration オブジェクトのプロパティを更新します。
 author: tfitzmac
-ms.openlocfilehash: 03b1c264207c79ccc06bcbd52b9b239fe0ed4f3a
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 43d2019e6a96245efb94c06880c68acffff81fb2
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27329786"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27842183"
 ---
 # <a name="update-windows10teamgeneralconfiguration"></a>Update windows10TeamGeneralConfiguration
 

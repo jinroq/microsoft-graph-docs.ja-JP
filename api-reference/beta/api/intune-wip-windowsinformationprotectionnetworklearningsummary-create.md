@@ -2,12 +2,13 @@
 title: windowsInformationProtectionNetworkLearningSummary の作成
 description: 新しい windowsInformationProtectionNetworkLearningSummary オブジェクトを作成します。
 author: tfitzmac
-ms.openlocfilehash: 6fa02c28f18a4a8ab9fdfa2ba3b68647bcc537d4
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: f3cb295fd24b70b4d40464218532fd1298fd2ab1
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27317067"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27841504"
 ---
 # <a name="create-windowsinformationprotectionnetworklearningsummary"></a>windowsInformationProtectionNetworkLearningSummary の作成
 

@@ -2,12 +2,13 @@
 title: 'TableColumnCollection: 追加'
 description: テーブルに新しい列を追加します。
 author: lumine2008
-ms.openlocfilehash: c63b4007631aae5d53290a487c8252c32b1532c4
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: b736f5bb6bcfac78701fbfd0aae75c0d84e34416
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27343352"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27840146"
 ---
 # <a name="tablecolumncollection-add"></a>TableColumnCollection: 追加
 
@@ -37,7 +38,7 @@ POST /workbook/worksheets/{id|name}/tables/{id|name}/columns/add
 ## <a name="request-body"></a>要求本文
 要求本文で、次のパラメーターを含む JSON オブジェクトを指定します。
 
-| パラメーター    | 種類   |説明|
+| パラメーター    | Type   |説明|
 |:---------------|:--------|:----------|
 |index|Int32|新しい列の相対位置を指定します。この位置の前の列は右にシフトされます。インデックス値は、最後の列のインデックス値と等しいか、小さくなります。そのため、テーブルの末尾に列を追加するためには使用できません。0 を起点とする番号になります。|
 |values|Json|省略可能。テーブルの列の、書式設定されていない値の 2 次元の配列。|

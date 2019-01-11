@@ -2,12 +2,13 @@
 title: グループ設定を更新する
 description: 特定のグループ設定オブジェクトのプロパティを更新します。
 author: dkershaw10
-ms.openlocfilehash: 07ab3114ce4ed5d8d932ff9183c62823ddfcf632
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: a1b677e9d1a00dc01aaf2455ac075fe20cbe4d1b
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27339838"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27804957"
 ---
 # <a name="update-a-group-setting"></a>グループ設定を更新する
 
