@@ -2,12 +2,13 @@
 title: WindowsWifiConfiguration を更新します。
 description: WindowsWifiConfiguration オブジェクトのプロパティを更新します。
 author: tfitzmac
-ms.openlocfilehash: 0cd1d8ba372daf63561bf94763994fedafb24f46
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: c58ede51940c1d913632668919532ba6d61ad201
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27310284"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27847111"
 ---
 # <a name="update-windowswificonfiguration"></a>WindowsWifiConfiguration を更新します。
 

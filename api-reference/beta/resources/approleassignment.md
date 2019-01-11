@@ -1,12 +1,13 @@
 ---
 title: appRoleAssignment リソースの種類
 description: ユーザーまたはグループがアプリケーションに割り当てられるときの記録に使用します。 この例では、ロールの割り当てと、アプリケーション タイルは、ユーザーのアプリケーションのアクセス パネルを表示します。 このエンティティは、特定のロールで、リソース アプリケーションに別の (サービスの主体としてモデル化された) アプリケーションのアクセス権を付与するも使用できます。 ことができます作成、読み取り、更新、およびロールの割り当てを削除します。
-ms.openlocfilehash: 97155bde12735ebd8a7674e0dbf20dae30e53f14
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Priority
+ms.openlocfilehash: 3276c1f34b91dc628ed00f2ffbc64ffe56899bdf
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27067936"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27845473"
 ---
 # <a name="approleassignment-resource-type"></a>appRoleAssignment リソースの種類
 
@@ -40,7 +41,7 @@ ms.locfileid: "27067936"
 
 ```
 ## <a name="properties"></a>プロパティ
-| プロパティ     | 型   |説明|
+| プロパティ     | 種類   |説明|
 |:---------------|:--------|:----------|
 |creationTimestamp|DateTimeOffset|交付が作成された時刻。Timestamp 型は、ISO 8601 形式を使用して日付と時刻の情報を表し、UTC 時間に常に。 たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、次のようになります。`'2014-01-01T00:00:00Z'`|
 |ID|Guid|プリンシパルに割り当てられたロールの id です。  この役割は、 **appRoles**プロパティにターゲットのリソース アプリケーション**引数 resourceId**で宣言されなければなりません。 リソースですべてのアクセス許可が宣言されていない場合は、デフォルトの id (GUID は 0) を指定してください。 キー。 null 許容ではありません。 |
@@ -60,7 +61,7 @@ ms.locfileid: "27067936"
 |:---------------|:--------|:----------|
 |[AppRoleAssignment を取得します。](../api/approleassignment-get.md) | [appRoleAssignment](approleassignment.md) |AppRoleAssignment オブジェクトのプロパティと関係を参照してください。|
 |[Update](../api/approleassignment-update.md) | [appRoleAssignment](approleassignment.md)   |AppRoleAssignment オブジェクトを更新します。 |
-|[削除](../api/approleassignment-delete.md) | なし |AppRoleAssignment オブジェクトを削除します。 |
+|[Delete](../api/approleassignment-delete.md) | なし |AppRoleAssignment オブジェクトを削除します。 |
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

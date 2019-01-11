@@ -2,12 +2,13 @@
 title: managedAppDataTransferLevel 列挙型
 description: これらのクラスのアプリケーションにデータを転送できます。
 author: tfitzmac
-ms.openlocfilehash: 41e813e9ea3450a349966ec8a212fa45dd419625
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 218888cb9b122e9017e24d77df3e5a8cb93d1bfe
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27331914"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27847783"
 ---
 # <a name="managedappdatatransferlevel-enum-type"></a>managedAppDataTransferLevel 列挙型
 

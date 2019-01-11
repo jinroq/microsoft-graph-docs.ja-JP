@@ -2,12 +2,13 @@
 title: セクションを一覧表示する
 description: OnenoteSection オブジェクトのリストを取得します。
 author: Jewan-microsoft
-ms.openlocfilehash: ea81becff41f6560e7674b209d72b50666588c74
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 044f0ae49c3f69c4a7a5d4a33af1d4aeab609213
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27331634"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27845305"
 ---
 # <a name="list-sections"></a>セクションを一覧表示する
 

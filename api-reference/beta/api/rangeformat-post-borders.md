@@ -2,12 +2,13 @@
 title: RangeBorder を作成する
 description: この API を使用して、新しい RangeBorder を作成します。
 author: lumine2008
-ms.openlocfilehash: d5908c149b91aa81e30482fdc995cca0126ada2b
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 3d6ed5337d3dc4c674739f7c3f70838757799566
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27337416"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27845466"
 ---
 # <a name="create-rangeborder"></a>RangeBorder を作成する
 

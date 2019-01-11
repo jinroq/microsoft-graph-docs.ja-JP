@@ -2,12 +2,13 @@
 title: WindowsPhone81ImportedPFXCertificateProfile を更新します。
 description: WindowsPhone81ImportedPFXCertificateProfile オブジェクトのプロパティを更新します。
 author: tfitzmac
-ms.openlocfilehash: b259c646f691c68dc6398aaa82fdfd798b6168bc
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: ad8fbeed07a433dcf07de118e1884bf9281376d9
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27361034"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27849148"
 ---
 # <a name="update-windowsphone81importedpfxcertificateprofile"></a>WindowsPhone81ImportedPFXCertificateProfile を更新します。
 

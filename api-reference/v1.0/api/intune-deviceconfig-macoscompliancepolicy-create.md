@@ -2,12 +2,13 @@
 title: macOSCompliancePolicy の作成
 description: 新しい macOSCompliancePolicy オブジェクトを作成します。
 author: tfitzmac
-ms.openlocfilehash: 615d60cc91d4ca463331b6352d29734640d6f5fc
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: b489aaabca59513e6f14baf52bbfb0e046ac223d
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27302234"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27811425"
 ---
 # <a name="create-macoscompliancepolicy"></a>macOSCompliancePolicy の作成
 

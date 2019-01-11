@@ -2,12 +2,13 @@
 title: deviceCompliancePolicyAssignment の作成
 description: 新しい deviceCompliancePolicyAssignment オブジェクトを作成します。
 author: tfitzmac
-ms.openlocfilehash: ee54fecbbddb4fc02b6a6c7b39d8cdc3633d59ce
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 3c181e7362528fe0231e2e744f59ac82d7ee333e
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27325418"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27847958"
 ---
 # <a name="create-devicecompliancepolicyassignment"></a>deviceCompliancePolicyAssignment の作成
 

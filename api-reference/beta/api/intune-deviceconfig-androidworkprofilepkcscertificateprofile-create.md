@@ -2,12 +2,13 @@
 title: AndroidWorkProfilePkcsCertificateProfile を作成します。
 description: 新しい androidWorkProfilePkcsCertificateProfile オブジェクトを作成します。
 author: tfitzmac
-ms.openlocfilehash: 8515702654af3f495807dd20746009824eadcd98
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 781b6f53d5530d68c19fb205f5c8f55b44bc0588
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27326818"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27849099"
 ---
 # <a name="create-androidworkprofilepkcscertificateprofile"></a>AndroidWorkProfilePkcsCertificateProfile を作成します。
 

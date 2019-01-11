@@ -1,12 +1,13 @@
 ---
 title: bookingPerson リソースの種類
 description: " > **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。"
-ms.openlocfilehash: d20f6ee9e14723a80f012cfffb1e4b8214f89739
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 606e0e0d1d851fac16b25310b278ca524124eb00
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27071436"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27845578"
 ---
 # <a name="bookingperson-resource-type"></a>bookingPerson リソースの種類
 
@@ -15,11 +16,11 @@ ms.locfileid: "27071436"
 これは、 [bookingCustomer](bookingcustomer.md)または[bookingStaffMember](bookingstaffmember.md)であることができます、Microsoft の予約のビジネス ユーザーの基本型です。
 
 ## <a name="properties"></a>プロパティ
-| プロパティ     | 型   |説明|
+| プロパティ     | 種類   |説明|
 |:---------------|:--------|:----------|
 |displayName|String|派生のエンティティは、顧客とのインターフェイスの名前です。|
 |emailAddress|String|ユーザーの電子メール アドレスです。|
-|id|String| 派生エンティティの ID です。 読み取り専用。|
+|id|String| 派生エンティティの ID です。 読み取り専用です。|
 
 ## <a name="relationships"></a>リレーションシップ
 なし

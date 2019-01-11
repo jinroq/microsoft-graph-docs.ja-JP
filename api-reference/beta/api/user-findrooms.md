@@ -1,12 +1,13 @@
 ---
 title: 'ユーザー: findRooms'
 description: 'すべての会議室ユーザーのテナントや、特定の場所] ボックスの一覧を取得します。 '
-ms.openlocfilehash: 3169202f83af0696cbd2aaadd83d3beb9a3c01d8
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Priority
+ms.openlocfilehash: 12ddd4c6956d743322ff86c93c5d445f6966e29a
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27071827"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27845417"
 ---
 # <a name="user-findrooms"></a>ユーザー: findRooms
 
@@ -51,7 +52,7 @@ GET /users/<id>/findRooms(RoomList='{room_list}')
 | RoomList | 文字列 | ルームのリストに関連付けられている SMTP アドレスです。 [EmailAddress](../resources/emailaddress.md)インスタンス、SMTP アドレスが含まれている各部屋の一覧が表示されます。 |
 
 ## <a name="request-headers"></a>要求ヘッダー
-| 名前       | 型 | 説明 |
+| 名前       | 種類 | 説明 |
 |:---------------|:----------|:----------|
 | Authorization  | string  | ベアラー {トークン}。必須。 |
 | Content-Type  | string  | application/json. Required. |

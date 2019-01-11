@@ -1,12 +1,13 @@
 ---
 title: BookingCustomer を削除します。
 description: " > **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。"
-ms.openlocfilehash: c4ba9267e2a3fde3ac43460160ffd4bb37cfb56d
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 3f0618f03234a0a4b1c31c9ac81fc3eb120f40fc
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27068355"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27849183"
 ---
 # <a name="delete-bookingcustomer"></a>BookingCustomer を削除します。
 

@@ -1,12 +1,13 @@
 ---
 title: Outlook の拡張プロパティの概要
 description: '拡張プロパティは、カスタム データを格納できるようにして、アプリケーションにアクセスするためのフォールバック メカニズムとしてサービスの提供に '
-ms.openlocfilehash: a15c44c832971d0fc91cd1cc9e9c29db80715130
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: e78b70dc4978cbee05215cffd7a2af1205ba5c69
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27071467"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27846201"
 ---
 # <a name="outlook-extended-properties-overview"></a>Outlook の拡張プロパティの概要
 

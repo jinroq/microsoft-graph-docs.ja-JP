@@ -2,16 +2,17 @@
 title: userActivationCounts リソースの種類
 description: リソースの JSON 表記を次に示します。
 author: dkershaw10
-ms.openlocfilehash: 396f6182d000df6d701e8c0cbad3dd02a258c4c0
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: cae194545f13d312ee78b572659017752e43a6a6
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27322919"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27845291"
 ---
 # <a name="useractivationcounts-resource-type"></a>userActivationCounts リソースの種類
 
-## <a name="properties"></a>Properties
+## <a name="properties"></a>プロパティ
 
 | プロパティ          | 種類   | 説明                              |
 | :---------------- | :----- | ---------------------------------------- |

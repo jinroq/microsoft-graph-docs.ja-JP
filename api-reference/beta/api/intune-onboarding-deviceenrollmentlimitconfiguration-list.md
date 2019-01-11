@@ -2,12 +2,13 @@
 title: deviceEnrollmentLimitConfigurations のリスト
 description: deviceEnrollmentLimitConfiguration オブジェクトのプロパティとリレーションシップをリストします。
 author: tfitzmac
-ms.openlocfilehash: a0a69a87a2fb9ebebf7a26cc5095982c7bacd5fa
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: ed0970122783f7c134268db7910ab03e15029ba7
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27346054"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27848710"
 ---
 # <a name="list-deviceenrollmentlimitconfigurations"></a>deviceEnrollmentLimitConfigurations のリスト
 

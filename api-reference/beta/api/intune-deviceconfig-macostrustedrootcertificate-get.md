@@ -2,12 +2,13 @@
 title: MacOSTrustedRootCertificate を取得します。
 description: MacOSTrustedRootCertificate オブジェクトのプロパティと関係を参照してください。
 author: tfitzmac
-ms.openlocfilehash: 519d30222be929eb4094a69a4d6c69da42c027df
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 5a388cf36e0f4e59766b4a22785ea49cfa388958
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27330353"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27817571"
 ---
 # <a name="get-macostrustedrootcertificate"></a>MacOSTrustedRootCertificate を取得します。
 

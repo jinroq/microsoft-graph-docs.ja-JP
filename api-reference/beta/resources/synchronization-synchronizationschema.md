@@ -1,12 +1,13 @@
 ---
 title: synchronizationSchema リソースの種類
 description: オブジェクトがどのようになるかを定義する同期し、同期する方法です。 同期スキーマには、特定の同期ジョブのセットアップ情報のほとんどが含まれています。 通常にするいくつかの属性のマッピングをカスタマイズするかを特定の条件を満たすオブジェクトのみを同期するスコープのフィルターを追加します。
-ms.openlocfilehash: 13e57db5f78af2d3f0a8243d247fe5c3f3d5e0af
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 696bdbbc6fa2d96965d11a12fb09fdfc0ce16106
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27069795"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27847321"
 ---
 # <a name="synchronizationschema-resource-type"></a>synchronizationSchema リソースの種類
 
@@ -42,7 +43,7 @@ ms.locfileid: "27069795"
 
 ## <a name="properties"></a>プロパティ
 
-| プロパティ      | 型      | 説明    |
+| プロパティ      | 種類      | 説明    |
 |:--------------|:----------|:---------------|
 |directories            |[directoryDefinition](synchronization-directorydefinition.md)コレクション   |ディレクトリおよび[synchronizationJob](synchronization-synchronizationjob.md)または[synchronizationTemplate](synchronization-synchronizationtemplate.md)の一部であるオブジェクトについて説明します。 |
 |synchronizationRules   |[synchronizationRule](synchronization-synchronizationrule.md)コレクション   |[SynchronizationJob](synchronization-synchronizationjob.md)または[synchronizationTemplate](synchronization-synchronizationtemplate.md)、用に構成された同期規則のコレクション |

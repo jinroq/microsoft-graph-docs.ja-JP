@@ -2,12 +2,13 @@
 title: ImportedAppleDeviceIdentity を削除します。
 description: ImportedAppleDeviceIdentity を削除します。
 author: tfitzmac
-ms.openlocfilehash: c1b7cd86bfd0a61a846da23e9bb0e2b34d989da0
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 2654baebd60e30085381f020afc7ff40118fb87b
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27330598"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27847839"
 ---
 # <a name="delete-importedappledeviceidentity"></a>ImportedAppleDeviceIdentity を削除します。
 

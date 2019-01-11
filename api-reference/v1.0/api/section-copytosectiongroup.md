@@ -1,12 +1,13 @@
 ---
 title: 'section: copyToSectionGroup'
 description: 特定のセクション グループにセクションをコピーします。
-ms.openlocfilehash: 675805d97bbf196b0bbdd656c92cbf7dbeea5959
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 671cd28db66517b0b04d8b9d99cc1dccba17206e
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27024057"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27846572"
 ---
 # <a name="section-copytosectiongroup"></a>section: copyToSectionGroup
 特定のセクション グループにセクションをコピーします。
@@ -30,7 +31,7 @@ POST /users/{id | userPrincipalName}/onenote/sections/{id}/copyToSectionGroup
 POST /groups/{id}/onenote/sections/{id}/copyToSectionGroup
 ```
 ## <a name="request-headers"></a>要求ヘッダー
-| 名前       | 型 | 説明|
+| 名前       | 種類 | 説明|
 |:---------------|:--------|:----------|
 | Authorization  | string  | ベアラー {トークン}。必須。 |
 | Content-Type | string | `application/json` |
@@ -38,7 +39,7 @@ POST /groups/{id}/onenote/sections/{id}/copyToSectionGroup
 ## <a name="request-body"></a>要求本文
 要求本文では、操作に必要なパラメーターを格納する JSON オブジェクトを指定します。
 
-| パラメーター    | 型   |説明|
+| パラメーター    | Type   |説明|
 |:---------------|:--------|:----------|
 |groupId|String|コピー先グループの ID。Office 365 グループにコピーする場合にのみ使用します。|
 |id|String|必須。目的のセクション グループの ID。 |

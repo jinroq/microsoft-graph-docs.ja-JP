@@ -2,12 +2,13 @@
 title: 連絡先を作成する
 description: 連絡先をルート連絡先フォルダーまたは別の連絡先フォルダーの連絡先エンドポイントに追加します。
 author: dkershaw10
-ms.openlocfilehash: cb95f9affa637dfb04109fc7192c6ddafe61362a
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 7f412310bac1f8767fdb62857d050ebcdc236fc5
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27318992"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27846985"
 ---
 # <a name="create-contact"></a>連絡先を作成する
 

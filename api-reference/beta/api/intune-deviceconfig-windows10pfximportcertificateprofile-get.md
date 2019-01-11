@@ -2,12 +2,13 @@
 title: Windows10PFXImportCertificateProfile を取得します。
 description: Windows10PFXImportCertificateProfile オブジェクトのプロパティと関係を参照してください。
 author: tfitzmac
-ms.openlocfilehash: d41b8cf15edbe2569fda5245ecd556eab6f6d5ae
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 7db9692d814a4e04b709c63242df409511d2d9ff
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27315716"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27847608"
 ---
 # <a name="get-windows10pfximportcertificateprofile"></a>Windows10PFXImportCertificateProfile を取得します。
 

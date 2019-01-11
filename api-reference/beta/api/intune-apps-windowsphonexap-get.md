@@ -2,12 +2,13 @@
 title: WindowsPhoneXAP を取得します。
 description: WindowsPhoneXAP オブジェクトのプロパティと関係を参照してください。
 author: tfitzmac
-ms.openlocfilehash: 710cfa237685d9db313f4f20710d070e100f1312
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: ef9085128b5cdb0c10738625cea9765266a226fb
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27362476"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27848252"
 ---
 # <a name="get-windowsphonexap"></a>WindowsPhoneXAP を取得します。
 

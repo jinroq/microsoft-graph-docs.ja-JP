@@ -2,12 +2,13 @@
 title: 参加チームのリストを作成する
 description: ユーザーの直接のメンバーでは、マイクロソフトのチームで、チームを取得します。
 author: dkershaw10
-ms.openlocfilehash: 1e29b21adbf37128ccf8fe7ff9d70596c7b72499
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Priority
+ms.openlocfilehash: fb77d2be45956cbe1b125285863e1a1a3505187a
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27317746"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27846432"
 ---
 # <a name="list-joinedteams"></a>参加チームのリストを作成する
 

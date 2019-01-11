@@ -2,12 +2,13 @@
 title: iosStoreApp の作成
 description: 新しい iosStoreApp オブジェクトを作成します。
 author: tfitzmac
-ms.openlocfilehash: 9c7b39239861a29f640077c10188c84493d1a6b4
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: a600146fac5e1f9af704bd9acfb65cb622fea08a
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27332817"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27825252"
 ---
 # <a name="create-iosstoreapp"></a>iosStoreApp の作成
 

@@ -1,12 +1,13 @@
 ---
 title: リスト servicePrincipal 推移的な所属するグループ
 description: このサービス主体のメンバーであるグループおよびディレクトリの役割を取得します。 この操作では、推移的では、このサービス ・ プリンシパルには、入れ子にされたメンバーのすべてのグループが含まれます。
-ms.openlocfilehash: e08185e15f583173e585bf392f628a8d9c0800eb
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 814059a5abb0c98098436134d8e60e21e22b4b9d
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27071169"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27848149"
 ---
 # <a name="list-serviceprincipal-transitive-memberof"></a>リスト servicePrincipal 推移的な所属するグループ
 
@@ -32,7 +33,7 @@ GET /servicePrincipals/{id}/memberOf
 このメソッドは、応答をカスタマイズするための [OData クエリ パラメーター](https://developer.microsoft.com/graph/docs/concepts/query_parameters)をサポートします。
 
 ## <a name="request-headers"></a>要求ヘッダー
-| 名前       | 型 | 説明|
+| 名前       | 種類 | 説明|
 |:-----------|:------|:----------|
 | Authorization  | string  | ベアラー {トークン}。必須。 |
 

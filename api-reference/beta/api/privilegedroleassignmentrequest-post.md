@@ -1,12 +1,13 @@
 ---
 title: PrivilegedRoleAssignmentRequest を作成します。
 description: Privilegedroleassignmentrequest オブジェクトを作成します。
-ms.openlocfilehash: e262682b5a5e8bffa7fb089ae783f3bb7e67803c
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 3f1b88415e5671e38ad557cc28200569a42a9630
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27070403"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27847770"
 ---
 # <a name="create-privilegedroleassignmentrequest"></a>PrivilegedRoleAssignmentRequest を作成します。
 
@@ -37,7 +38,7 @@ POST /privilegedRoleAssignmentRequests
 ## <a name="request-body"></a>要求本文
 要求の本文には、 [privilegedroleassignmentrequest](../resources/privilegedroleassignmentrequest.md)オブジェクトの JSON 表現を指定します。 
 
-| プロパティ     | 型    |  説明|
+| プロパティ     | 種類    |  説明|
 |:---------------|:--------|:----------|
 |roleId|String|ロールの ID です。 必須。|
 |type|String|表す、ロールの割り当ての操作の種類です。 値は、 `AdminAdd`: 管理者のユーザー ロールを追加します。`UserAdd`: ユーザーは、役割の割り当てを追加します。 必須。|

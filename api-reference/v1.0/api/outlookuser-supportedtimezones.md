@@ -1,12 +1,13 @@
 ---
 title: 'outlookUser: supportedTimeZones'
 description: ユーザーに対してサポートされている (ユーザーのメールボックス サーバーで構成されている) タイム ゾーンのリストを取得します。
-ms.openlocfilehash: dccaeb2181ba6459ec4b4337c74701f3d2b1d8db
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 01ee7d7df928e68bd34793ced3b6d3e2a8cc5502
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27023112"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27848203"
 ---
 # <a name="outlookuser-supportedtimezones"></a>outlookUser: supportedTimeZones
 
@@ -37,12 +38,12 @@ GET /users/{id|userPrincipalName}/outlook/supportedTimeZones(TimeZoneStandard=mi
 ```
 
 ## <a name="function-parameters"></a>関数パラメーター
-| パラメーター       | 型 | 説明|
+| Parameter       | Type | 説明|
 |:---------------|:--------|:----------|
 | TimeZoneStandard  | timeZoneStandard  | タイム ゾーンの形式。 サポートされている値は `Windows` および `Iana` です。 省略可能。 |
 
 ## <a name="request-headers"></a>要求ヘッダー
-| 名前       | 型 | 説明|
+| 名前       | 種類 | 説明|
 |:---------------|:--------|:----------|
 | Authorization  | string  | ベアラー {トークン}。必須。 |
 

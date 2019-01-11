@@ -2,12 +2,13 @@
 title: windows10MobileCompliancePolicy の更新
 description: windows10MobileCompliancePolicy オブジェクトのプロパティを更新します。
 author: tfitzmac
-ms.openlocfilehash: f9a040ab544d112cbe98e579eebc918c52b6f46b
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 3956af618a5d6ed52e5385a0d09b4326ac9ef367
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27341966"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27849449"
 ---
 # <a name="update-windows10mobilecompliancepolicy"></a>windows10MobileCompliancePolicy の更新
 

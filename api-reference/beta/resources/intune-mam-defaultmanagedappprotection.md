@@ -2,12 +2,13 @@
 title: defaultManagedAppProtection リソース タイプ
 description: TargetedManagedAppProtection ポリシーの対象とされていないすべてのユーザーに対して、アプリの指定したセットに関する管理設定の詳細を構成するために使用するポリシー
 author: tfitzmac
-ms.openlocfilehash: 17f5377df623d439fbd68342f26d9a570c676f55
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 907a313e9a5dd399ece3deec2be171b0a87e4713
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27317046"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27849246"
 ---
 # <a name="defaultmanagedappprotection-resource-type"></a>defaultManagedAppProtection リソース タイプ
 

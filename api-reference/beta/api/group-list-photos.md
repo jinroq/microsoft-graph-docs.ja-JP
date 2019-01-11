@@ -2,12 +2,13 @@
 title: 写真の一覧表示
 description: profilePhoto オブジェクトのリストを取得します。
 author: dkershaw10
-ms.openlocfilehash: 2597d532d28614bb595ffe44aa6705187619aa44
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: e9628d03fb0986ee073f7a3eedccd37e67dd82bd
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27315821"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27848553"
 ---
 # <a name="list-photos"></a>写真の一覧表示
 

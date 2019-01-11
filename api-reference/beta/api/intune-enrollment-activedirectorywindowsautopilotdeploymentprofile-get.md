@@ -2,12 +2,13 @@
 title: ActiveDirectoryWindowsAutopilotDeploymentProfile を取得します。
 description: ActiveDirectoryWindowsAutopilotDeploymentProfile オブジェクトのプロパティと関係を参照してください。
 author: tfitzmac
-ms.openlocfilehash: cddb09b39dbf8a95be627e77c244fd507a477b33
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 05cb2d6a85522748a481d985e73a69e03e6a5033
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27337724"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27847454"
 ---
 # <a name="get-activedirectorywindowsautopilotdeploymentprofile"></a>ActiveDirectoryWindowsAutopilotDeploymentProfile を取得します。
 

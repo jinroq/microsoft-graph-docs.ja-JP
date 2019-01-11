@@ -1,12 +1,13 @@
 ---
 title: permissionScope リソースの種類
 description: OAuth 2.0 を表しますは、アクセス許可のスコープを委任します。 (Application オブジェクトの**requiredResourceAccess**コレクション) をクライアント アプリケーションで、委任されたアクセス許可のスコープを要求することが指定された OAuth 2.0 リソース アプリケーションを呼び出すときにします。 ServicePrincipal エンティティおよびアプリケーション エンティティの**oauth2Permissions**プロパティは、 **OAuth2Permission**のコレクションです。
-ms.openlocfilehash: b15ee9901632fca113d944000847c953e85be58c
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: a294316f5c6255d0873ce0dbe809c33dad89ae08
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27071975"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27818152"
 ---
 # <a name="permissionscope-resource-type"></a>permissionScope リソースの種類
 
@@ -16,7 +17,7 @@ OAuth 2.0 を表しますは、アクセス許可のスコープを委任しま�
 
 ## <a name="properties"></a>プロパティ
 
-| プロパティ | 型 | 説明 |
+| プロパティ | 種類 | 説明 |
 |:---------------|:--------|:----------|
 |adminConsentDescription|String| 管理者同意し、アプリケーションの割り当てのエクスペリエンスに表示されるアクセス許可のヘルプ テキストです。 |
 |adminConsentDisplayName|String| 管理者同意し、アプリケーションの割り当ての経験で表示されるアクセス許可の名前を表示します。 |

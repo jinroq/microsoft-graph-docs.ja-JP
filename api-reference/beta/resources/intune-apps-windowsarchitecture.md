@@ -2,12 +2,13 @@
 title: windowsArchitecture 列挙型
 description: Windows アーキテクチャのプロパティが含まれています。
 author: tfitzmac
-ms.openlocfilehash: 4b62c31083ac2952507faad6836f8d5c8a484d50
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: b594179f978c772b91ef6eb50ca1f78a36fbd07a
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27346670"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27848546"
 ---
 # <a name="windowsarchitecture-enum-type"></a>windowsArchitecture 列挙型
 

@@ -2,12 +2,13 @@
 title: ImportedAppleDeviceIdentityResult を作成します。
 description: 新しい importedAppleDeviceIdentityResult オブジェクトを作成します。
 author: tfitzmac
-ms.openlocfilehash: 1560f8e05057327a6aafc5258e7c5c46b9bcb781
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 4d8a585aa2e6745d563d1a886fa5c7870ced9a87
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27316052"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27817417"
 ---
 # <a name="create-importedappledeviceidentityresult"></a>ImportedAppleDeviceIdentityResult を作成します。
 

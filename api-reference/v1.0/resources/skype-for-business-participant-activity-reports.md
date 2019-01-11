@@ -1,12 +1,13 @@
 ---
 title: Skype for Business 参加者アクティビティ レポート
 description: Skype for Business 参加者アクティビティ レポートを使用して、組織全体の参加者アクティビティの詳細を取得できます。 これらの詳細は、組織のための調査、計画、その他のビジネスの意思決定の際に非常に役立ちます。
-ms.openlocfilehash: 5e4c571ccbf5b6890c981c50ea36b7baa01f5107
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 05e0ffb222696f66e9c1a4fce49c01076805d893
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27020959"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27847832"
 ---
 # <a name="skype-for-business-participant-activity-reports"></a>Skype for Business 参加者アクティビティ レポート
 

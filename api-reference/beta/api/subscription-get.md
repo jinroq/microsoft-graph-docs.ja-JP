@@ -1,12 +1,13 @@
 ---
 title: サブスクリプションを取得する
 description: サブスクリプションのプロパティとリレーションシップを取得します。
-ms.openlocfilehash: 5694015fe7e8cbf87b5d62f7ae4af35d1773532b
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 0feb4ffd49099eabb92e5519b25233100f2acbe5
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27069664"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27846838"
 ---
 # <a name="get-subscription"></a>サブスクリプションを取得する
 
@@ -24,8 +25,8 @@ ms.locfileid: "27069664"
 | スレッド               | Group.Read.All      |
 | イベント                      | Calendars.Read      |
 | メッセージ                    | Mail.Read           |
-| Groups                      | Group.Read.All      |
-| Users                       | User.Read.All       |
+| グループ                      | Group.Read.All      |
+| ユーザー                       | User.Read.All       |
 | ドライブ (ユーザーの OneDrive)    | Files.ReadWrite     |
 | ドライブ (共有、SharePoint コンテンツおよびドライブ) | Files.ReadWrite.All |
 | セキュリティの警告              | SecurityEvents.ReadWrite.All |
@@ -46,7 +47,7 @@ GET /subscriptions/{id}
 
 ## <a name="request-headers"></a>要求ヘッダー
 
-| 名前       | 型 | 説明|
+| 名前       | 種類 | 説明|
 |:-----------|:-----|:-----------|
 | Authorization  | string  | ベアラー {トークン}。必須。 |
 

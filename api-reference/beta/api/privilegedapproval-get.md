@@ -1,12 +1,13 @@
 ---
 title: PrivilegedApproval を取得します。
 description: プロパティと privilegedapproval オブジェクトの関係を取得します。
-ms.openlocfilehash: 9fb7aee3184413aa51dc553e5a2bcd694076d579
-ms.sourcegitcommit: 37591c2299c80e7675cd2b5f781e1eeeba628a60
+localization_priority: Normal
+ms.openlocfilehash: eef213416232db67bb0c1134e35d4af94734b468
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "27748200"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27847622"
 ---
 # <a name="get-privilegedapproval"></a>PrivilegedApproval を取得します。
 

@@ -2,12 +2,13 @@
 title: deviceEnrollmentWindowsHelloForBusinessConfiguration の削除
 description: deviceEnrollmentWindowsHelloForBusinessConfiguration を削除します。
 author: tfitzmac
-ms.openlocfilehash: 7e2490006abfb2af82a1d39439dd2c829d73a52a
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 9896c891a7399f9931736688308f48259ee33d28
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27344528"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27849092"
 ---
 # <a name="delete-deviceenrollmentwindowshelloforbusinessconfiguration"></a>deviceEnrollmentWindowsHelloForBusinessConfiguration の削除
 

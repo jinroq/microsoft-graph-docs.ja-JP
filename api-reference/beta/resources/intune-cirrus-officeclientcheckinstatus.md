@@ -2,12 +2,13 @@
 title: officeClientCheckinStatus リソースの種類
 description: チェックインのテナント統計 (stats) を記述するエンティティです。
 author: tfitzmac
-ms.openlocfilehash: 0c6359d3cb6c776d0f26fdaf88ce7f2f03e5f8c7
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: ff75c5d73db35c5c2ff70ad3a3dc3e4509745188
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27331718"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27825234"
 ---
 # <a name="officeclientcheckinstatus-resource-type"></a>officeClientCheckinStatus リソースの種類
 
@@ -16,7 +17,7 @@ ms.locfileid: "27331718"
 > **注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
 
 チェックインのテナント統計 (stats) を記述するエンティティです。
-## <a name="properties"></a>Properties
+## <a name="properties"></a>プロパティ
 |プロパティ|種類|説明|
 |:---|:---|:---|
 |userPrincipalName|String|ユーザー プリンシパル名は、デバイスを使用します。|

@@ -2,12 +2,13 @@
 title: WindowsPhone81SCEPCertificateProfile を削除します。
 description: WindowsPhone81SCEPCertificateProfile を削除します。
 author: tfitzmac
-ms.openlocfilehash: 4e956326bae372edf013097a22a77b19045f541a
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 3e7eb00b1708f05e11935aad070303eb2d89f651
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27324333"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27847412"
 ---
 # <a name="delete-windowsphone81scepcertificateprofile"></a>WindowsPhone81SCEPCertificateProfile を削除します。
 

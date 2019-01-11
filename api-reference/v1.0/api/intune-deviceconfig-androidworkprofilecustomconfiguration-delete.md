@@ -2,12 +2,13 @@
 title: AndroidWorkProfileCustomConfiguration を削除します。
 description: AndroidWorkProfileCustomConfiguration を削除します。
 author: tfitzmac
-ms.openlocfilehash: 91df3e95903621b603c30fc403f37e9e8c7b8ff3
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: fd0105bdf7e311f6fdf5a22a38e6a3a2dc2400f1
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27303704"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27850555"
 ---
 # <a name="delete-androidworkprofilecustomconfiguration"></a>AndroidWorkProfileCustomConfiguration を削除します。
 

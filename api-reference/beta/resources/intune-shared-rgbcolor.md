@@ -2,12 +2,13 @@
 title: rgbColor リソースの種類
 description: RGB 色。
 author: tfitzmac
-ms.openlocfilehash: 0452d8c275e7568df6b304613d8619f04add0548
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: fd734d2cb7c1c03cfdab62b8a8f1acd9acac6814
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27307113"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27846726"
 ---
 # <a name="rgbcolor-resource-type"></a>rgbColor リソースの種類
 

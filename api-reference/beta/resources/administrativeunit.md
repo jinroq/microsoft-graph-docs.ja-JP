@@ -1,12 +1,13 @@
 ---
 title: administrativeUnit リソースの種類
 description: 管理単位は、ユーザーとグループのディレクトリ オブジェクトの概念的なコンテナーを提供します。 管理単位を使用すると、企業の管理者はユーザーを管理する管理責任を委任できるようになりましたと、グループ内に含まれている、地域や部門の管理者に管理単位にスコープを設定しました。
-ms.openlocfilehash: 8c0acd25c231707d2a7188ab2e1c2b0d2035816f
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 523214d7bd319d940f042d461b4903ff1f1475e1
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27066518"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27845410"
 ---
 # <a name="administrativeunit-resource-type"></a>administrativeUnit リソースの種類
 
@@ -45,11 +46,11 @@ ms.locfileid: "27066518"
 |[スキーマ拡張機能の値を追加する](/graph/extensibility-schema-groups) || スキーマ拡張機能の定義を作成し、それを使用してカスタマイズされた種類のデータをリソースに追加します。|
 
 ## <a name="properties"></a>プロパティ
-| プロパティ     | 型   |説明|
+| プロパティ     | 種類   |説明|
 |:---------------|:--------|:----------|
 |description|文字列|管理単位のオプションの説明です。|
 |displayName|string|管理単位の名前を表示します。|
-|ID|文字列|管理単位の一意の識別子です。 読み取り専用。|
+|ID|文字列|管理単位の一意の識別子です。 読み取り専用です。|
 |visibility|文字列|またはパブリック フォルダー管理の単位とそのメンバーが非表示かどうかを制御します。 HiddenMembership またはパブリックに設定できます。 ない場合、既定の動作のセット公開。 管理の単位のメンバーだけの HiddenMembership に設定すると、管理単位の他のメンバーが一覧表示できます。|
 
 ## <a name="relationships"></a>リレーションシップ

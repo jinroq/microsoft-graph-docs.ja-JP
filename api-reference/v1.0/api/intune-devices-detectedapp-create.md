@@ -2,12 +2,13 @@
 title: detectedApp の作成
 description: 新しい detectedApp オブジェクトを作成します。
 author: tfitzmac
-ms.openlocfilehash: 60c47746e49429e37a5a40a5c86714d209ff6c3d
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 41d7cd2c7b078baae265ecd9a9c4244b7191fedc
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27355483"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27846327"
 ---
 # <a name="create-detectedapp"></a>detectedApp の作成
 

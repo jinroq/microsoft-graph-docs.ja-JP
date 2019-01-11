@@ -2,12 +2,13 @@
 title: ActiveDirectoryWindowsAutopilotDeploymentProfile を更新します。
 description: ActiveDirectoryWindowsAutopilotDeploymentProfile オブジェクトのプロパティを更新します。
 author: tfitzmac
-ms.openlocfilehash: 001d7a162a6fe357b70c92ef14977575ddc5c275
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 025daeb85fd4bd5036da5dadf64ee2928d8616c3
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27313644"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27847636"
 ---
 # <a name="update-activedirectorywindowsautopilotdeploymentprofile"></a>ActiveDirectoryWindowsAutopilotDeploymentProfile を更新します。
 

@@ -2,12 +2,13 @@
 title: iosMinimumOperatingSystem リソースの種類
 description: iOS モバイル アプリに必要な最小限のオペレーティング システムのプロパティが含まれます。
 author: tfitzmac
-ms.openlocfilehash: 867679282db71df4f50c119e4734796790ddc210
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: c1107b8f59cbbe185468c02e7716aaad56481553
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27301849"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27845823"
 ---
 # <a name="iosminimumoperatingsystem-resource-type"></a>iosMinimumOperatingSystem リソースの種類
 

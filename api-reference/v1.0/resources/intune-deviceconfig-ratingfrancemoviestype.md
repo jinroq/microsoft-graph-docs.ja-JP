@@ -2,12 +2,13 @@
 title: ratingFranceMoviesType 列挙型
 description: 映画がフランスでのラベルの評価
 author: tfitzmac
-ms.openlocfilehash: 33289d4419f1dc9bcf0a1115765e9b21c51353fb
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: ffe18a6335a156bce9850de8d0de68ec9b42a819
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27304845"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27850611"
 ---
 # <a name="ratingfrancemoviestype-enum-type"></a>ratingFranceMoviesType 列挙型
 

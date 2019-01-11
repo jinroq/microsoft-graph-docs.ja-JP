@@ -2,12 +2,13 @@
 title: windows10CompliancePolicy の作成
 description: 新しい windows10CompliancePolicy オブジェクトを作成します。
 author: tfitzmac
-ms.openlocfilehash: 50d1230a6e1580008e501745f9c7918da5031187
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: ee738bc07ab0d246ecb5a61df244b08287a58d4c
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27360915"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27847804"
 ---
 # <a name="create-windows10compliancepolicy"></a>windows10CompliancePolicy の作成
 

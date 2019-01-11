@@ -2,12 +2,13 @@
 title: Get deviceCompliancePolicySettingStateSummary
 description: deviceCompliancePolicySettingStateSummary オブジェクトのプロパティとリレーションシップを読み取ります。
 author: tfitzmac
-ms.openlocfilehash: 7e70538f26be1e20ea6a6ae94761b042b79f1828
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 31752bf109ec23dabbf54255d2574d805cff6e29
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27341692"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27847629"
 ---
 # <a name="get-devicecompliancepolicysettingstatesummary"></a>Get deviceCompliancePolicySettingStateSummary
 

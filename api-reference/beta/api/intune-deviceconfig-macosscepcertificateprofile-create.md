@@ -2,12 +2,13 @@
 title: MacOSScepCertificateProfile を作成します。
 description: 新しい macOSScepCertificateProfile オブジェクトを作成します。
 author: tfitzmac
-ms.openlocfilehash: 30d6ea30d2fb7eaa9a3603f46143d8015e593eeb
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 44afadca83c5151d23866268f2d54e8f39d16cee
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27355357"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27847734"
 ---
 # <a name="create-macosscepcertificateprofile"></a>MacOSScepCertificateProfile を作成します。
 

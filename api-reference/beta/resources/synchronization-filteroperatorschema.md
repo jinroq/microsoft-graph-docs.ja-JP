@@ -1,12 +1,13 @@
 ---
 title: filterOperatorSchema リソースの種類
 description: フィルターで使用できる演算子をについて説明します。
-ms.openlocfilehash: 1a4e21aea2b65073a00c9797065f6788a66e2334
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 0d26fb58b77369b70ab185fa8ad5214d6b6c1e71
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27067703"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27848280"
 ---
 # <a name="filteroperatorschema-resource-type"></a>filterOperatorSchema リソースの種類
 
@@ -16,7 +17,7 @@ ms.locfileid: "27067703"
 
 ## <a name="properties"></a>プロパティ
 
-| プロパティ                   | 型                      | 説明    |
+| プロパティ                   | 種類                      | 説明    |
 |:---------------------------|:--------------------------|:---------------|
 |アリティ                       |String          |演算子のアリティ。 使用可能な値は、`Binary`、`Unary` です。 既定値は `Binary` です。|
 |multivaluedComparisonType   |scopeOperatorMultiValuedComparisonType          |使用可能な値は、`All`、`Any` です。 複数値を持つ属性にのみ適用されます。 `All`すべての値が条件を満たす必要があることを意味します。 `Any`条件を満たすために、少なくとも 1 つの値が含まれていることを意味します。 既定値は `All` です。|

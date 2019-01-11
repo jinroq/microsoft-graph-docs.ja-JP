@@ -2,12 +2,13 @@
 title: リスト windowsPhone81SCEPCertificateProfiles
 description: WindowsPhone81SCEPCertificateProfile オブジェクトのプロパティと関係を一覧表示します。
 author: tfitzmac
-ms.openlocfilehash: b2b99031363f08238e048ef1d918fa731a6217e3
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: b842026f6ba8fab51161324c752d510d72115653
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27312692"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27847181"
 ---
 # <a name="list-windowsphone81scepcertificateprofiles"></a>リスト windowsPhone81SCEPCertificateProfiles
 
