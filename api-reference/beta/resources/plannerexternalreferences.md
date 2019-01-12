@@ -2,26 +2,28 @@
 title: plannerExternalReferences リソースの種類
 description: '**PlannerExternalReferences** リソースは、タスク上での参照のコレクションを表します。これはオープン型です。タスクの詳細オブジェクトの一部です。プロパティ/値の組の値は、externalReference オブジェクトです。'
 localization_priority: Normal
-ms.openlocfilehash: 7f32c0d7acc54f4bd96fd3b34478f80c882d55da
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: TarkanSevilmis
+ms.prod: planner
+ms.openlocfilehash: ddd3b3d4887aa5794dee26ea8a5aed4a7c2895e8
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27888789"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27935375"
 ---
-# <a name="plannerexternalreferences-resource-type"></a><span data-ttu-id="baffa-106">plannerExternalReferences リソースの種類</span><span class="sxs-lookup"><span data-stu-id="baffa-106">plannerExternalReferences resource type</span></span>
+# <a name="plannerexternalreferences-resource-type"></a><span data-ttu-id="26b15-106">plannerExternalReferences リソースの種類</span><span class="sxs-lookup"><span data-stu-id="26b15-106">plannerExternalReferences resource type</span></span>
 
-> <span data-ttu-id="baffa-107">**重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。</span><span class="sxs-lookup"><span data-stu-id="baffa-107">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="baffa-108">実稼働アプリケーションでの、これらの API の使用はサポートされていません。</span><span class="sxs-lookup"><span data-stu-id="baffa-108">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="26b15-107">**重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。</span><span class="sxs-lookup"><span data-stu-id="26b15-107">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="26b15-108">実稼働アプリケーションでの、これらの API の使用はサポートされていません。</span><span class="sxs-lookup"><span data-stu-id="26b15-108">Use of these APIs in production applications is not supported.</span></span>
 
-<span data-ttu-id="baffa-p103">**PlannerExternalReferences** リソースは、タスク上での参照のコレクションを表します。これはオープン型です。[タスクの詳細](plannertaskdetails.md)オブジェクトの一部です。プロパティ/値の組の値は、[externalReference](plannerexternalreference.md) オブジェクトです。</span><span class="sxs-lookup"><span data-stu-id="baffa-p103">The **plannerExternalReferences** resource represents the collection of references on a task. This is an Open Type. It is part of the [task details](plannertaskdetails.md) object. The value in the property-value pair is the [externalReference](plannerexternalreference.md) object.</span></span>
+<span data-ttu-id="26b15-p103">**PlannerExternalReferences** リソースは、タスク上での参照のコレクションを表します。これはオープン型です。[タスクの詳細](plannertaskdetails.md)オブジェクトの一部です。プロパティ/値の組の値は、[externalReference](plannerexternalreference.md) オブジェクトです。</span><span class="sxs-lookup"><span data-stu-id="26b15-p103">The **plannerExternalReferences** resource represents the collection of references on a task. This is an Open Type. It is part of the [task details](plannertaskdetails.md) object. The value in the property-value pair is the [externalReference](plannerexternalreference.md) object.</span></span>
 
 
-## <a name="properties"></a><span data-ttu-id="baffa-113">プロパティ</span><span class="sxs-lookup"><span data-stu-id="baffa-113">Properties</span></span>
-<span data-ttu-id="baffa-p104">クライアントは、オープン型のプロパティを定義できます。この例では、プロパティとその値を [externalReference](plannerexternalreference.md) オブジェクトにする必要があるため、クライアントは **HTTP/HTTPS** プロトコルに基づいて **有効な URL** を指定する必要があります。OData に基づき、オープン型のプロパティ名には、`.`、`:`、`%` の文字を含めることができないため、エンコードする必要があります。以下に例を示します。参照を削除するには、プロパティの値を `null` に設定します。</span><span class="sxs-lookup"><span data-stu-id="baffa-p104">Properties of an Open Type can be defined by the client. In this case, the client must provide **valid URLs** based on the **HTTP/HTTPS** protocols as properties and their values must be the [externalReference](plannerexternalreference.md) objects. Based on OData, property names in Open Types cannot contain the following characters: `.`, `:`, `%`  so they need to be encoded. Example is shown below. To remove a reference, set the value of the property to `null`.</span></span>
+## <a name="properties"></a><span data-ttu-id="26b15-113">プロパティ</span><span class="sxs-lookup"><span data-stu-id="26b15-113">Properties</span></span>
+<span data-ttu-id="26b15-p104">クライアントは、オープン型のプロパティを定義できます。この例では、プロパティとその値を [externalReference](plannerexternalreference.md) オブジェクトにする必要があるため、クライアントは **HTTP/HTTPS** プロトコルに基づいて **有効な URL** を指定する必要があります。OData に基づき、オープン型のプロパティ名には、`.`、`:`、`%` の文字を含めることができないため、エンコードする必要があります。以下に例を示します。参照を削除するには、プロパティの値を `null` に設定します。</span><span class="sxs-lookup"><span data-stu-id="26b15-p104">Properties of an Open Type can be defined by the client. In this case, the client must provide **valid URLs** based on the **HTTP/HTTPS** protocols as properties and their values must be the [externalReference](plannerexternalreference.md) objects. Based on OData, property names in Open Types cannot contain the following characters: `.`, `:`, `%`  so they need to be encoded. Example is shown below. To remove a reference, set the value of the property to `null`.</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="baffa-119">JSON 表記</span><span class="sxs-lookup"><span data-stu-id="baffa-119">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="26b15-119">JSON 表記</span><span class="sxs-lookup"><span data-stu-id="26b15-119">JSON representation</span></span>
 
-<span data-ttu-id="baffa-120">以下は、リソースの JSON 表記です</span><span class="sxs-lookup"><span data-stu-id="baffa-120">Here is a JSON representation of the resource</span></span>
+<span data-ttu-id="26b15-120">以下は、リソースの JSON 表記です</span><span class="sxs-lookup"><span data-stu-id="26b15-120">Here is a JSON representation of the resource</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -45,7 +47,7 @@ ms.locfileid: "27888789"
 }
 ```
 
-<span data-ttu-id="baffa-121">// 例</span><span class="sxs-lookup"><span data-stu-id="baffa-121">// Example</span></span>
+<span data-ttu-id="26b15-121">// 例</span><span class="sxs-lookup"><span data-stu-id="26b15-121">// Example</span></span>
 
 ```json
 {
