@@ -3,12 +3,13 @@ title: androidForWorkSettings リソース タイプ
 description: Android for Work の設定です。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: d96ebd30985b4bea50cf236b3315114db4c3e216
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: c2bbcb9f21750d1f1f3a07a1567bbf2f8f822e53
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27873794"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27933569"
 ---
 # <a name="androidforworksettings-resource-type"></a>androidForWorkSettings リソース タイプ
 
@@ -28,7 +29,7 @@ Android for Work の設定です。
 |[unbind action](../api/intune-androidforwork-androidforworksettings-unbind.md)|なし|まだ文書化されていません|
 
 ## <a name="properties"></a>プロパティ
-|プロパティ|種類|説明|
+|プロパティ|型|説明|
 |:---|:---|:---|
 |ID|String|Android for Work 設定の識別子|
 |bindStatus|[androidForWorkBindStatus](../resources/intune-androidforwork-androidforworkbindstatus.md)|Google の EMM の API を使用してテナントの状態をバインドします。 可能な値は、`notBound`、`bound`、`boundAndValidated`、`unbinding` です。|
@@ -39,7 +40,7 @@ Android for Work の設定です。
 |lastModifiedDateTime|DateTimeOffset|Android for Work 設定の最終変更時刻|
 |enrollmentTarget|[androidForWorkEnrollmentTarget](../resources/intune-androidforwork-androidforworkenrollmenttarget.md)|ワーク デバイス管理のアプリでデバイスを登録できるユーザーを示します。 可能な値は、`none`、`all`、`targeted`、`targetedAsEnrollmentRestrictions` です。|
 |targetGroupIds|String コレクション|enrollmentTarget が 'Targeted' に設定されている場合、どの AAD グループが Android for Work デバイス管理にデバイスを登録できるかを指定します。|
-|deviceOwnerManagementEnabled|ブール型|このアカウントを CloudDPC に Android のデバイスの所有者の管理の flighting かどうかを示します。|
+|deviceOwnerManagementEnabled|Boolean|このアカウントを CloudDPC に Android のデバイスの所有者の管理の flighting かどうかを示します。|
 
 ## <a name="relationships"></a>リレーションシップ
 なし

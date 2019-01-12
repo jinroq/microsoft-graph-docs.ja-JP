@@ -3,12 +3,13 @@ title: managedMobileApp の作成
 description: 新しい managedMobileApp オブジェクトを作成します。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: e94b95e4dfea69aafdd426fd4c9a5deca676ce42
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: d2a0fb739d8c7f2be507bdb63d069bcb3e0cf247
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27881103"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27933296"
 ---
 # <a name="create-managedmobileapp"></a>managedMobileApp の作成
 
@@ -49,7 +50,7 @@ POST /deviceAppManagement/targetedManagedAppConfigurations/{targetedManagedAppCo
 
 次の表に、managedMobileApp の作成時に必要なプロパティを示します。
 
-|プロパティ|種類|説明|
+|プロパティ|型|説明|
 |:---|:---|:---|
 |mobileAppIdentifier|[mobileAppIdentifier](../resources/intune-mam-mobileappidentifier.md)|対象のオペレーティング システムの種類のアプリの識別子。|
 |id|String|エンティティのキー。|

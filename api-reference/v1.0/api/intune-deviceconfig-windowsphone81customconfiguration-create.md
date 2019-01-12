@@ -3,12 +3,13 @@ title: windowsPhone81CustomConfiguration の作成
 description: 新しい windowsPhone81CustomConfiguration オブジェクトを作成します。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: e4e1113184727d1cd0f03468d182cc32ca81d5e6
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 65e9f8dfd631fed0fb8ae3d8cf5c232ec83ab4f7
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27876742"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27932421"
 ---
 # <a name="create-windowsphone81customconfiguration"></a>windowsPhone81CustomConfiguration の作成
 
@@ -44,7 +45,7 @@ POST /deviceManagement/deviceConfigurations
 
 次の表に、windowsPhone81CustomConfiguration の作成時に必要なプロパティを示します。
 
-|プロパティ|種類|説明|
+|プロパティ|型|説明|
 |:---|:---|:---|
 |ID|String|エンティティのキー。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |lastModifiedDateTime|DateTimeOffset|オブジェクトが最後に変更された DateTime。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|

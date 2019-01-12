@@ -2,12 +2,14 @@
 title: 組織を取得する
 description: 現在認証されている組織のプロパティとリレーションシップを取得します。
 localization_priority: Priority
-ms.openlocfilehash: f2fc708ea2d1841987f8b2a757a5388735227007
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: lleonard-msft
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: 749fd17c6b76864728519f407e8d3c06dc6ad902
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27871198"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27930293"
 ---
 # <a name="get-organization"></a>組織を取得する
 
@@ -39,7 +41,7 @@ GET /organization
 
 ## <a name="request-headers"></a>要求ヘッダー
 
-| 名前       | 種類 | 説明|
+| 名前       | 型 | 説明|
 |:-----------|:------|:----------|
 | Authorization  | string  | ベアラー {トークン}。必須。 |
 

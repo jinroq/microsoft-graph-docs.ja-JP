@@ -3,12 +3,13 @@ title: deviceManagementScript リソースの種類
 description: Intune は、10 の登録されている windows Azure Active Directory が参加しているデバイスで、Powershell スクリプトを実行する機能を顧客に提供します。 スクリプトは、1 回だけまたは定期的に実行できます。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 321d525aaf9de386ba639bc904915a06eda56a75
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 0f2747b966384e5e0abaf165ca463174b60ced8b
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27811047"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27932309"
 ---
 # <a name="devicemanagementscript-resource-type"></a>deviceManagementScript リソースの種類
 
@@ -28,7 +29,7 @@ Intune は、10 の登録されている windows Azure Active Directory が参�
 |[assign action](../api/intune-devices-devicemanagementscript-assign.md)|なし|まだ文書化されていません|
 
 ## <a name="properties"></a>プロパティ
-|プロパティ|種類|説明|
+|プロパティ|型|説明|
 |:---|:---|:---|
 |ID|String|デバイス管理スクリプト用の一意の識別子。|
 |displayName|String|デバイスの管理スクリプトの名前です。|
@@ -38,7 +39,7 @@ Intune は、10 の登録されている windows Azure Active Directory が参�
 |createdDateTime|DateTimeOffset|デバイス管理スクリプトが作成された日時です。|
 |lastModifiedDateTime|DateTimeOffset|日付と時刻、デバイス管理のスクリプトが最後に修正されました。|
 |runAsAccount|[runAsAccountType](../resources/intune-shared-runasaccounttype.md)|デバイス管理のスクリプトで実行される実行コンテキストの種類を示します。 使用可能な値は、`system`、`user` です。|
-|enforceSignatureCheck|ブール型|スクリプト署名をチェックする必要があるかどうかを指定します。|
+|enforceSignatureCheck|Boolean|スクリプト署名をチェックする必要があるかどうかを指定します。|
 |fileName|String|スクリプト ファイルの名前です。|
 
 ## <a name="relationships"></a>リレーションシップ

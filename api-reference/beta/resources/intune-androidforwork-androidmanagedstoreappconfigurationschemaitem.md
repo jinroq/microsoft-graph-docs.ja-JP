@@ -2,12 +2,14 @@
 title: androidManagedStoreAppConfigurationSchemaItem リソースの種類
 description: Android アプリケーションのカスタム構成スキーマ内の項目を 1 つ構成します。
 localization_priority: Normal
-ms.openlocfilehash: 05bf7e945ef645368c4b421b2180e4f4c342ec69
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: tfitzmac
+ms.prod: intune
+ms.openlocfilehash: 08c73a177e176ddf82ae64c4eb6b8efd0c662c97
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27886647"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27927969"
 ---
 # <a name="androidmanagedstoreappconfigurationschemaitem-resource-type"></a>androidManagedStoreAppConfigurationSchemaItem リソースの種類
 
@@ -17,7 +19,7 @@ ms.locfileid: "27886647"
 
 Android アプリケーションのカスタム構成スキーマ内の項目を 1 つ構成します。
 ## <a name="properties"></a>プロパティ
-|プロパティ|種類|説明|
+|プロパティ|型|説明|
 |:---|:---|:---|
 |schemaItemKey|String|アイテムを識別するためにアプリケーションが使用する一意のキー|
 |displayName|String|人間が判読できる名前|

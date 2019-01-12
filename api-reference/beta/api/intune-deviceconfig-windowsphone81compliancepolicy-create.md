@@ -3,12 +3,13 @@ title: windowsPhone81CompliancePolicy の作成
 description: 新しい windowsPhone81CompliancePolicy オブジェクトを作成します。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 6ba95411610b8cc71917e344ad9d1d41b402be16
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 8c03ca815b01c2b05d26c9a642a09d54005005e7
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27812034"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27929964"
 ---
 # <a name="create-windowsphone81compliancepolicy"></a>windowsPhone81CompliancePolicy の作成
 
@@ -46,7 +47,7 @@ POST /deviceManagement/deviceCompliancePolicies
 
 次の表に、windowsPhone81CompliancePolicy の作成時に必要なプロパティを示します。
 
-|プロパティ|種類|説明|
+|プロパティ|型|説明|
 |:---|:---|:---|
 |roleScopeTagIds|String コレクション|このエンティティ インスタンスのスコープのタグのリストです。 [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md) から継承します|
 |id|String|エンティティのキー。 [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md) から継承します|

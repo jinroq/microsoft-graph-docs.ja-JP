@@ -3,12 +3,13 @@ title: deviceCompliancePolicySettingStateSummary リソースの種類
 description: アカウント全体における、デバイス コンプライアンスのポリシー設定状態の要約です。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: e86527327560c7683f46fe1c0888d2ff295fe86d
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: a41a76299f4460daf5bb0e856b4d2779589789ef
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27830031"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27933086"
 ---
 # <a name="devicecompliancepolicysettingstatesummary-resource-type"></a>deviceCompliancePolicySettingStateSummary リソースの種類
 
@@ -27,7 +28,7 @@ ms.locfileid: "27830031"
 |[deviceCompliancePolicySettingStateSummary の更新](../api/intune-deviceconfig-devicecompliancepolicysettingstatesummary-update.md)|[deviceCompliancePolicySettingStateSummary](../resources/intune-deviceconfig-devicecompliancepolicysettingstatesummary.md)|[deviceCompliancePolicySettingStateSummary](../resources/intune-deviceconfig-devicecompliancepolicysettingstatesummary.md) オブジェクトのプロパティを更新します。|
 
 ## <a name="properties"></a>プロパティ
-|プロパティ|種類|説明|
+|プロパティ|型|説明|
 |:---|:---|:---|
 |ID|String|エンティティのキー。|
 |setting|String|設定のクラス名とプロパティ名。|

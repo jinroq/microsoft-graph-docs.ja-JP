@@ -3,12 +3,13 @@ title: managementConditionStatement リソースの種類
 description: 管理条件ステートメントは、管理の条件が含まれている管理のすべての条件が満たされたときにデバイスとアプリケーションの構成を有効または無効のグループです。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: c6281d151555c0c58a0eb608e9dafc754384369f
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 82a99e878337cf04659b8bc7da7e821bd8afb6aa
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27878401"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27929985"
 ---
 # <a name="managementconditionstatement-resource-type"></a>managementConditionStatement リソースの種類
 
@@ -29,7 +30,7 @@ ms.locfileid: "27878401"
 |[getManagementConditionStatementsForPlatform 関数](../api/intune-fencing-managementconditionstatement-getmanagementconditionstatementsforplatform.md)|[managementConditionStatement](../resources/intune-fencing-managementconditionstatement.md)コレクション|まだ文書化されていません|
 
 ## <a name="properties"></a>プロパティ
-|プロパティ|種類|説明|
+|プロパティ|型|説明|
 |:---|:---|:---|
 |ID|String|管理条件付きステートメントの一意の識別子です。 システムでは、作成時に割り当てられた値が生成されます。|
 |displayName|String|管理者は、管理条件ステートメントの名前を定義します。|

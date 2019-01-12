@@ -2,12 +2,14 @@
 title: 'section: copyToNotebook'
 description: 特定のノートブックにセクションをコピーします。
 localization_priority: Normal
-ms.openlocfilehash: 7213220711051f0d4edd926305bcdc983cfa259a
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: jewan-microsoft
+ms.prod: onenote
+ms.openlocfilehash: 65a3dd079f0ed67e7c754f22f805de8ed8368c87
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27878037"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27928207"
 ---
 # <a name="section-copytonotebook"></a>section: copyToNotebook
 
@@ -34,7 +36,7 @@ POST /groups/{id}/onenote/sections/{id}/copyToNotebook
 POST /sites/{id}/onenote/sections/{id}/copyToNotebook
 ```
 ## <a name="request-headers"></a>要求ヘッダー
-| 名前       | 種類 | 説明|
+| 名前       | 型 | 説明|
 |:---------------|:--------|:----------|
 | Authorization  | string  | ベアラー {トークン}。必須。 |
 | Content-Type | string | `application/json` |
@@ -42,7 +44,7 @@ POST /sites/{id}/onenote/sections/{id}/copyToNotebook
 ## <a name="request-body"></a>要求本文
 要求本文では、操作に必要なパラメーターを格納する JSON オブジェクトを指定します。
 
-| パラメーター    | Type   |説明|
+| パラメーター    | 型   |説明|
 |:---------------|:--------|:----------|
 |siteCollectionId|String|コピーする SharePoint サイトの id です。 Office 365 チーム サイトにコピーするときにのみを使用します。|
 |siteId|String|コピーする SharePoint web の id です。 Office 365 チーム サイトにコピーするときにのみを使用します。|

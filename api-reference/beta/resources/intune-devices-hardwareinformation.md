@@ -3,12 +3,13 @@ title: hardwareInformation リソースの種類
 description: 特定のデバイスのハードウェア情報です。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 2684f1ff7e7a6407942ac61fae7d45ead16820d2
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 0665152e3cc483f2303f458b79c891658651d91f
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27831824"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27930314"
 ---
 # <a name="hardwareinformation-resource-type"></a>hardwareInformation リソースの種類
 
@@ -18,7 +19,7 @@ ms.locfileid: "27831824"
 
 特定のデバイスのハードウェア情報です。
 ## <a name="properties"></a>プロパティ
-|プロパティ|種類|説明|
+|プロパティ|型|説明|
 |:---|:---|:---|
 |シリアル番号|String|シリアル番号です。|
 |totalStorageSpace|Int64|デバイスの合計容量。|
@@ -33,8 +34,8 @@ ms.locfileid: "27831824"
 |wifiMac|String|デバイスの WiFi の MAC アドレス|
 |operatingSystemLanguage|String|デバイスのオペレーティング システムの言語|
 |isSupervised|Boolean|デバイスのコールを管理モード|
-|isEncrypted|ブール型|デバイスの暗号化の状態|
-|isSharedDevice|ブール型|IPad の共有|
+|isEncrypted|Boolean|デバイスの暗号化の状態|
+|isSharedDevice|Boolean|IPad の共有|
 |sharedDeviceCachedUsers|[sharedAppleDeviceUser](../resources/intune-devices-sharedappledeviceuser.md)コレクション|共有の Apple デバイス上のすべてのユーザー|
 |tpmSpecificationVersion|String|仕様のバージョンを指定する文字列。|
 |operatingSystemEdition|String|OS のエディションを指定する文字列。|

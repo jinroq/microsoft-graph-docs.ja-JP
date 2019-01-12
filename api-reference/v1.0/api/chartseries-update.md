@@ -3,12 +3,13 @@ title: Update chartseries
 description: chartseries オブジェクトのプロパティを更新します。
 author: lumine2008
 localization_priority: Normal
-ms.openlocfilehash: 1772265a833d60cc20fdd55e2b6d1755687bd1ca
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: excel
+ms.openlocfilehash: 5c0d2e802b082be1578cbe4a56185681fd06156b
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27823731"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27932197"
 ---
 # <a name="update-chartseries"></a>Update chartseries
 
@@ -36,7 +37,7 @@ PATCH /workbook/worksheets/{id|name}/charts/{name}/series/{series-id}
 ## <a name="request-body"></a>要求本文
 要求本文で、更新する関連フィールドの値を指定します。要求本文に含まれない既存のプロパティは、以前の値のままになるか、他のプロパティ値の変化に基づいて再計算されます。最適なパフォーマンスを得るためには、変更されていない既存の値を含めないでください。
 
-| プロパティ     | 種類   |説明|
+| プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
 |name|文字列|グラフのデータ系列の名前を表します。|
 

@@ -3,12 +3,13 @@ title: iosVppEBook の作成
 description: 新しい iosVppEBook オブジェクトを作成します。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 810efd73c1c0559fa3e885b19bf22af189d771b6
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 96fb518c3ecc9434aaa1c0bd4da1cf18271a8a57
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27823122"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27930006"
 ---
 # <a name="create-iosvppebook"></a>iosVppEBook の作成
 
@@ -46,7 +47,7 @@ POST /deviceAppManagement/managedEBooks
 
 次の表に、iosVppEBook の作成時に必要になるプロパティを示します。
 
-|プロパティ|種類|説明|
+|プロパティ|型|説明|
 |:---|:---|:---|
 |ID|String|エンティティのキー。 [managedEBook](../resources/intune-books-managedebook.md) から継承します|
 |displayName|String|電子ブックの名前。 [managedEBook](../resources/intune-books-managedebook.md) から継承します|

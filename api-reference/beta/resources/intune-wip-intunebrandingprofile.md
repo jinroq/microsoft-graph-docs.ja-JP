@@ -3,12 +3,13 @@ title: intuneBrandingProfile リソースの種類
 description: このエンティティには、会社のポータル アプリケーションとエンド ・ ユーザーの web ポータルのテナントのレベルの外観をカスタマイズするために使用するデータが含まれています。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: d2ee2fee902b4aca542810dc058b7d16aaedb9c6
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: eb52fd3eabda300dff92bac35a0e6aae50974d15
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27820609"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27930265"
 ---
 # <a name="intunebrandingprofile-resource-type"></a>intuneBrandingProfile リソースの種類
 
@@ -27,12 +28,12 @@ ms.locfileid: "27820609"
 |[IntuneBrandingProfile を更新します。](../api/intune-wip-intunebrandingprofile-update.md)|[intuneBrandingProfile](../resources/intune-wip-intunebrandingprofile.md)|[IntuneBrandingProfile](../resources/intune-wip-intunebrandingprofile.md)オブジェクトのプロパティを更新します。|
 
 ## <a name="properties"></a>プロパティ
-|プロパティ|種類|説明|
+|プロパティ|型|説明|
 |:---|:---|:---|
 |ID|String|プロファイル キー|
 |profilename プロパティ|String|プロファイルの名前|
 |profileDescription|String|プロファイルの説明|
-|isDefaultProfile|ブール型|既定のプロファイルが使用される場合について説明します。|
+|isDefaultProfile|Boolean|既定のプロファイルが使用される場合について説明します。|
 |createdDateTime|DateTimeOffset|BrandingProfile が作成された日時です。|
 |lastModifiedDateTime|DateTimeOffset|BrandingProfile の最終変更日時。|
 |displayName|String|エンド ユーザーに表示される会社名または組織名。|

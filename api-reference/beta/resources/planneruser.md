@@ -2,12 +2,14 @@
 title: plannerUser リソースの種類
 description: '**PlannerUser**リソースでは、ユーザーの計画のリソースへのアクセスを提供します。 '
 localization_priority: Normal
-ms.openlocfilehash: 709b259c88d8fe0f02defaa57e77727a7b967cfd
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: TarkanSevilmis
+ms.prod: planner
+ms.openlocfilehash: 1b240092e7476884399f88fad61551763f33fe69
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27820805"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27928284"
 ---
 # <a name="planneruser-resource-type"></a>plannerUser リソースの種類
 
@@ -27,7 +29,7 @@ ms.locfileid: "27820805"
 
 
 ## <a name="properties"></a>プロパティ
-| プロパティ     | 種類   |説明|
+| プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
 |ID|String| 読み取り専用です。 PlannerUser の識別子|
 |favoritePlanReferences|[plannerFavoritePlanReferenceCollection](plannerfavoriteplanreferencecollection.md)| ユーザーは、お気に入りとしてマークする計画への参照を格納するコレクション。|

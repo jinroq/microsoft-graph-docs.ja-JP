@@ -1,14 +1,15 @@
 ---
 title: notebook リソースの種類
 description: OneNote ノートブックです。
-author: Jewan-microsoft
+author: jewan-microsoft
 localization_priority: Normal
-ms.openlocfilehash: c39ac85dcfacb332a72c81d1d5f075a7a5021047
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: onenote
+ms.openlocfilehash: 5038e1c79e85275afbb65e41a57768e83b0d2e16
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27876560"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27933345"
 ---
 # <a name="notebook-resource-type"></a>notebook リソースの種類
 
@@ -48,13 +49,13 @@ OneNote ノートブックです。
 
 ```
 ## <a name="properties"></a>プロパティ
-| プロパティ     | 種類   |説明|
+| プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
 |createdBy|[identitySet](identityset.md)|そのアイテムを作成したユーザーの ID、デバイス、アプリケーション。読み取り専用です。|
 |createdDateTime|DateTimeOffset|ノートブックが作成された日時。Timestamp は、ISO 8601 形式を使用した日付と時刻の情報を表し、必ず UTC 時間です。たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、次のようになります。`'2014-01-01T00:00:00Z'`読み取り専用です。|
 |id|String|ノートブックの一意識別子。読み取り専用です。|
-|isDefault|ブール型|これがユーザーの既定のノートブックであるかどうかを示します。読み取り専用です。|
-|IsShared|ブール型|ノートブックを共有するかどうかを示します。True の場合、所有者以外のユーザーにノートブックのコンテンツが表示されます。読み取り専用です。|
+|isDefault|Boolean|これがユーザーの既定のノートブックであるかどうかを示します。読み取り専用です。|
+|IsShared|Boolean|ノートブックを共有するかどうかを示します。True の場合、所有者以外のユーザーにノートブックのコンテンツが表示されます。読み取り専用です。|
 |lastModifiedBy|[identitySet](identityset.md)|そのアイテムを作成したユーザーの ID、デバイス、アプリケーション。読み取り専用です。|
 |lastModifiedDateTime|DateTimeOffset|ノートブックが最後に変更された日時。Timestamp は、ISO 8601 形式を使用した日付と時刻の情報を表し、必ず UTC 時間です。たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、次のようになります。`'2014-01-01T00:00:00Z'`読み取り専用です。|
 |links|[NotebookLinks](notebooklinks.md)|ノートブックを開くためのリンク。`oneNoteClientURL` リンクが OneNote のネイティブ クライアントでノートブックを開きます (インストールされている場合)。`oneNoteWebURL` リンクでは、OneNote Online でノートブックを開きます。|

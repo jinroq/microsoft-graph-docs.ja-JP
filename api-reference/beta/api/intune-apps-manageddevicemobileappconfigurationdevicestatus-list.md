@@ -3,12 +3,13 @@ title: リスト managedDeviceMobileAppConfigurationDeviceStatuses
 description: ManagedDeviceMobileAppConfigurationDeviceStatus オブジェクトのプロパティと関係を一覧表示します。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 346525606117bd0de1646c0d5a1529b78c8baf11
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: c0a1075b9e622b55f7e99f9b9493c7e13015b0f1
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27838081"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27930188"
 ---
 # <a name="list-manageddevicemobileappconfigurationdevicestatuses"></a>リスト managedDeviceMobileAppConfigurationDeviceStatuses
 
