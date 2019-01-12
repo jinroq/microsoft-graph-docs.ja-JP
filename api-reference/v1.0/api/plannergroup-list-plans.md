@@ -2,12 +2,14 @@
 title: plans を一覧表示する
 description: グループ オブジェクトによって所有されている**plannerPlan**オブジェクトのリストを取得します。
 localization_priority: Priority
-ms.openlocfilehash: aa8466231ef580dabfb83aaaf4a0368b548495f1
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: TarkanSevilmis
+ms.prod: planner
+ms.openlocfilehash: 0212968b0882c4090044519d12157a52c85b421b
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27815387"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27972489"
 ---
 # <a name="list-plans"></a>plans を一覧表示する
 

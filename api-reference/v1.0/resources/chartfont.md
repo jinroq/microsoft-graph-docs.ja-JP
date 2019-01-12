@@ -2,12 +2,14 @@
 title: ChartFont リソースの種類
 description: このオブジェクトは、グラフ オブジェクトのフォント属性 (フォント名、フォント サイズ、色など) を表します。
 localization_priority: Normal
-ms.openlocfilehash: 9b2d6e07f5049449d71be45b41585ed3bd300b7b
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: lumine2008
+ms.prod: excel
+ms.openlocfilehash: 85a11d59e58d6968154a4ede12fa978b1f061de1
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27850786"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27972790"
 ---
 # <a name="chartfont-resource-type"></a>ChartFont リソースの種類
 
@@ -22,7 +24,7 @@ ms.locfileid: "27850786"
 |[Update](../api/chartfont-update.md) | [WorkbookChartFont](chartfont.md)   |ChartFont オブジェクトを更新します。 |
 
 ## <a name="properties"></a>プロパティ
-| プロパティ     | 種類   |説明|
+| プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
 |bold|ブール値|フォントの太字の状態を表します。|
 |color|文字列|テキストの色の HTML カラー コード表記。たとえば、#FF0000 は赤を表します。|

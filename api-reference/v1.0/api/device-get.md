@@ -1,14 +1,15 @@
 ---
 title: デバイスを取得する
 description: デバイス オブジェクトのプロパティとリレーションシップを取得します。
-author: tfitzmac
+author: lleonard-msft
 localization_priority: Normal
-ms.openlocfilehash: 1402b74f9af411a6d41ac9b37c5c54b4736de499
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: 110453fde3545128bb75c840e831959e31f971d0
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27811229"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27972741"
 ---
 # <a name="get-device"></a>デバイスを取得する
 
@@ -34,7 +35,7 @@ GET /devices/{id}
 このメソッドは、応答をカスタマイズするための [OData クエリ パラメーター](https://developer.microsoft.com/graph/docs/concepts/query_parameters)をサポートします。
 
 ## <a name="request-headers"></a>要求ヘッダー
-| 名前       | 種類 | 説明|
+| 名前       | 型 | 説明|
 |:-----------|:------|:----------|
 | Authorization  | string  | ベアラー {トークン}。必須。 |
 

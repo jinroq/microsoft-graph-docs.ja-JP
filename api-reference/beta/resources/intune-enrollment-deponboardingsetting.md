@@ -3,12 +3,13 @@ title: depOnboardingSetting リソースの種類
 description: DepOnboardingSetting は、Intune に onboarded をされている Apple の DEP のサービスのインスタンスを表します。 Onboarded サービスのインスタンスを管理、Apple トークンりんごと Intune の間でデータを同期するために使用します。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 56f49ce8635120b06344abe13376271a3eb0a796
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: e4b45c4a14258fbe53e8cdfd8c5e83b8c858966b
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27827994"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27970683"
 ---
 # <a name="deponboardingsetting-resource-type"></a>depOnboardingSetting リソースの種類
 
@@ -32,7 +33,7 @@ DepOnboardingSetting は、Intune に onboarded をされている Apple の DEP
 |[unshareForSchoolDataSyncService アクション](../api/intune-enrollment-deponboardingsetting-unshareforschooldatasyncservice.md)|なし|まだ文書化されていません|
 
 ## <a name="properties"></a>プロパティ
-|プロパティ|種類|説明|
+|プロパティ|型|説明|
 |:---|:---|:---|
 |ID|String|オブジェクトの UUID|
 |appleIdentifier|String|Apple ID は、現在のトークンを取得するために使用します。|
@@ -40,13 +41,13 @@ DepOnboardingSetting は、Intune に onboarded をされている Apple の DEP
 |lastModifiedDateTime|DateTimeOffset|Onboarded でした。|
 |lastSuccessfulSyncDateTime|DateTimeOffset|Intune のサービスの最後の syned|
 |lastSyncTriggeredDateTime|DateTimeOffset|Intune が最後に同期を要求された場合。|
-|shareTokenWithSchoolDataSyncService|ブール型|かどうか Dep トークンの共有は学校のデータ同期サービスで有効になります。|
+|shareTokenWithSchoolDataSyncService|Boolean|かどうか Dep トークンの共有は学校のデータ同期サービスで有効になります。|
 |lastSyncErrorCode|Int32|Dep の前回の同期中に、Apple によって報告されたエラー ・ コードです。|
 |tokenType|[depTokenType](../resources/intune-enrollment-deptokentype.md)|Dep のトークンの種類を設定を取得または取得します。 可能な値は、`none`、`dep`、`appleSchoolManager` です。|
 |tokenName|String|Dep のトークンの表示名|
 |syncedDeviceCount|Int32|同期されたデバイスの数を取得|
 |defaultProfileDisplayName|String|同期されたデバイスの数を取得|
-|dataSharingConsentGranted|ブール型|アップル Dep のサービスと共有データの許可に同意するもの|
+|dataSharingConsentGranted|Boolean|アップル Dep のサービスと共有データの許可に同意するもの|
 
 ## <a name="relationships"></a>リレーションシップ
 |リレーションシップ|型|説明|

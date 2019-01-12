@@ -3,12 +3,13 @@ title: iosStoreAppAssignmentSettings リソースの種類
 description: グループへの iOS ストア モバイル アプリの割り当てに使用されるプロパティが、含まれています。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 34776d6002926486baa05d0720ce1c7eeecee927
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 1adb547aaa1a1690c43ca0ed491e205c3c2585bd
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27822233"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27971397"
 ---
 # <a name="iosstoreappassignmentsettings-resource-type"></a>iosStoreAppAssignmentSettings リソースの種類
 
@@ -19,7 +20,7 @@ ms.locfileid: "27822233"
 [mobileAppAssignmentSettings](../resources/intune-apps-mobileappassignmentsettings.md) からの継承
 
 ## <a name="properties"></a>プロパティ
-|プロパティ|種類|説明|
+|プロパティ|型|説明|
 |:---|:---|:---|
 |vpnConfigurationId|文字列型 (String)|このアプリに適用するための VPN 構成 ID。|
 

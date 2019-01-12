@@ -2,12 +2,14 @@
 title: 'グループ: removeFavorite'
 description: 現在のユーザーのお気に入りのグループ一覧からグループを削除します。Office 365 のグループのみをサポートします。
 localization_priority: Normal
-ms.openlocfilehash: 6f35f11e5c2a0cc011c522952bda99fc431d53d8
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: dkershaw10
+ms.prod: groups
+ms.openlocfilehash: 9f569349126b9651f7b0050f84df9db89dc2e47f
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27865577"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27971691"
 ---
 # <a name="group-removefavorite"></a>グループ: removeFavorite
 現在のユーザーのお気に入りのグループ一覧からグループを削除します。Office 365 のグループのみをサポートします。

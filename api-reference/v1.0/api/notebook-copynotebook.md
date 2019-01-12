@@ -2,12 +2,14 @@
 title: 'notebook: copyNotebook'
 description: コピー先ドキュメント ライブラリの [ノートブック] フォルダーにノートブックをコピーします。フォルダーが存在しない場合は、そのフォルダーが作成されます。
 localization_priority: Normal
-ms.openlocfilehash: 927cdd95a1cf39b27ac18faeeae11ccc56cfff6f
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: jewan-microsoft
+ms.prod: onenote
+ms.openlocfilehash: aa684dcaa01f2a8c16be1c75a7b973ee8adb8eea
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27812769"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27972930"
 ---
 # <a name="notebook-copynotebook"></a>notebook: copyNotebook
 コピー先ドキュメント ライブラリの [ノートブック] フォルダーにノートブックをコピーします。フォルダーが存在しない場合は、そのフォルダーが作成されます。
@@ -31,7 +33,7 @@ POST /users/{id | userPrincipalName}/onenote/notebooks/{id}/copyNotebook
 POST /groups/{id}/onenote/notebooks/{id}/copyNotebook
 ```
 ## <a name="request-headers"></a>要求ヘッダー
-| 名前       | 種類 | 説明|
+| 名前       | 型 | 説明|
 |:---------------|:--------|:----------|
 | Authorization  | string  | ベアラー {トークン}。必須。 |
 | Content-Type | string | `application/json` |
@@ -39,7 +41,7 @@ POST /groups/{id}/onenote/notebooks/{id}/copyNotebook
 ## <a name="request-body"></a>要求本文
 要求本文では、操作に必要なパラメーターを格納する JSON オブジェクトを指定します。パラメーターが必要ない場合は、空の要求本文を送信してもかまいません。
 
-| パラメーター    | Type   |説明|
+| パラメーター    | 型   |説明|
 |:---------------|:--------|:----------|
 |groupId|String|コピー先グループの ID。Office 365 グループにコピーする場合にのみ使用します。|
 |renameAs|String|コピーの名前。既定値は、既存のアイテムの名前になります。 |

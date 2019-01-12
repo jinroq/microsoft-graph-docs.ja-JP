@@ -3,12 +3,13 @@ title: TableRow リソースの種類
 description: 表の行を表します。
 author: lumine2008
 localization_priority: Normal
-ms.openlocfilehash: fe95b62236322451893e3859f9d6599cc637848c
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: excel
+ms.openlocfilehash: 2d96ef5c23361cd8b15b47af54a0584e21c48b95
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27807176"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27971663"
 ---
 # <a name="tablerow-resource-type"></a>TableRow リソースの種類
 
@@ -30,7 +31,7 @@ ms.locfileid: "27807176"
 |[Add](../api/tablerowcollection-add.md)|[TableRow](tablerow.md)|新しい行をテーブルに追加します。|
 
 ## <a name="properties"></a>プロパティ
-| プロパティ     | 種類   |説明|
+| プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
 |index|int|テーブルの行コレクション内の行のインデックス番号を返します。0 を起点とする番号になります。読み取り専用。|
 |values|json|指定した範囲の Raw 値を表します。返されるデータの型は、文字列、数値、またはブール値のいずれかになります。エラーが含まれているセルは、エラー文字列を返します。|

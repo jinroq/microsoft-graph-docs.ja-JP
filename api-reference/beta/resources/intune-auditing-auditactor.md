@@ -3,12 +3,13 @@ title: auditActor リソースの種類
 description: 監査アクターのプロパティが含まれるクラス。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 4c6dddd2863f881c026eb848c643bdc55cbbb372
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: f7d93f3a14f3f6fd1515de9232d26718b7ec0af6
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27873914"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27971432"
 ---
 # <a name="auditactor-resource-type"></a>auditActor リソースの種類
 
@@ -18,7 +19,7 @@ ms.locfileid: "27873914"
 
 監査アクターのプロパティが含まれるクラス。
 ## <a name="properties"></a>プロパティ
-|プロパティ|種類|説明|
+|プロパティ|型|説明|
 |:---|:---|:---|
 |type|文字列型 (String)|アクターの種類。|
 |userPermissions|String コレクション|監査の実行時におけるユーザーのアクセス許可の一覧。|

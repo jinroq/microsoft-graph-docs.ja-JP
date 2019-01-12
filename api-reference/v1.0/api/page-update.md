@@ -2,12 +2,14 @@
 title: ページを更新する
 description: OneNote ページの内容を更新します。
 localization_priority: Normal
-ms.openlocfilehash: ee5e55ce206ac1f3069c5629f8c0f674f209363c
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: jewan-microsoft
+ms.prod: onenote
+ms.openlocfilehash: ef51342aba7bab49fde6d69ea0c77c62dc841b7d
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27850177"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27971712"
 ---
 # <a name="update-page"></a>ページを更新する
 
@@ -30,7 +32,7 @@ PATCH /groups/{id}/onenote/pages/{id}/content
 PATCH /sites/{id}/onenote/pages/{id}/content
 ```
 ## <a name="request-headers"></a>要求ヘッダー
-| 名前       | 種類 | 説明|
+| 名前       | 型 | 説明|
 |:-----------|:------|:----------|
 | Authorization  | string  | ベアラー {トークン}。必須。 |
 | Content-Type | string | `application/json` |

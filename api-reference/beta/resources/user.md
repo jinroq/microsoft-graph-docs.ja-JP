@@ -3,12 +3,13 @@ title: ユーザー リソースの種類
 description: Azure AD ユーザー アカウントを表します。directoryObject から継承します。
 author: dkershaw10
 localization_priority: Priority
-ms.openlocfilehash: 1bec385ef452316e3c7c9eb79989fc10e534de26
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: a9d3ca1c6f9c67cc2e41907dc22b9f1ec7d28b0a
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27833307"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27972650"
 ---
 # <a name="user-resource-type"></a>user リソースの種類
 
@@ -80,10 +81,10 @@ Azure AD ユーザー アカウントを表します。[directoryObject](directo
 
 ## <a name="properties"></a>プロパティ
 
-| プロパティ       | 種類    | 説明 |
+| プロパティ       | 型    | 説明 |
 |:---------------|:--------|:------------|
 |aboutMe|String|ユーザーが自分自身について記述する、フリー フォームのテキスト入力フィールド。|
-|accountEnabled|ブール値| アカウントが有効な場合は **true**。そうでない場合は **false**。このプロパティは、ユーザーの作成時に必要です。$filter をサポートします。    |
+|accountEnabled|Boolean| アカウントが有効な場合は **true**。そうでない場合は **false**。このプロパティは、ユーザーの作成時に必要です。$filter をサポートします。    |
 |ageGroup|String|ユーザーの年齢グループを設定します。 使用できる値: `null`、 `minor`、`notAdult`と`adult`。 詳細については[法律の年齢グループのプロパティの定義](#legal-age-group-property-definitions)を参照してください。 |
 |assignedLicenses|[assignedLicense](assignedlicense.md) collection|ユーザーに割り当てられているライセンス。null 許容ではありません。            |
 |assignedPlans|[assignedPlan](assignedplan.md) コレクション|ユーザーに割り当てられているプラン。読み取り専用です。null 許容ではありません。 |
@@ -135,7 +136,7 @@ Azure AD ユーザー アカウントを表します。[directoryObject](directo
 |refreshTokensValidFromDateTime|DateTimeOffset| トークンの更新やセッション トークン (セッション cookie) は、この時間が有効でないと、アプリケーションはトークンを取得するエラー、無効な更新やセッション トークンを使用して、委任されたアクセスを取得するとき (Api にアクセスする Microsoft のグラフなど) の前に発行されます。  このような場合は、アプリケーションが承認エンドポイントを要求することによって、新しい更新のトークンを取得する必要があります。 読み取り専用です。 リセットするには、 [invalidateAllRefreshTokens](../api/user-invalidateallrefreshtokens.md)を使用します。|
 |responsibilities|String コレクション|ユーザーが自分の責任の範囲を列挙する一覧。|
 |schools|String コレクション|ユーザーが在籍した学校を列挙する一覧。|
-|showInAddressList|ブール型|**true の**場合、Outlook のグローバル アドレス一覧は、このユーザー、それ以外の場合は**false**を含める必要があります。 かどうかが設定されていないこのとして扱われます**場合は true**です。 招待マネージャーによって参加を要請するユーザー、このプロパティは**false**に設定されます。|
+|showInAddressList|Boolean|**true の**場合、Outlook のグローバル アドレス一覧は、このユーザー、それ以外の場合は**false**を含める必要があります。 かどうかが設定されていないこのとして扱われます**場合は true**です。 招待マネージャーによって参加を要請するユーザー、このプロパティは**false**に設定されます。|
 |skills|String コレクション|ユーザーが自分のスキルを列挙する一覧。|
 |state|String|ユーザーの住所の都道府県。$filter をサポートします。|
 |streetAddress|String|ユーザーの勤務先の番地。|

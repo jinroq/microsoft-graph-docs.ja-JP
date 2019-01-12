@@ -3,12 +3,13 @@ title: リスト importedAppleDeviceIdentityResults
 description: ImportedAppleDeviceIdentityResult オブジェクトのプロパティと関係を一覧表示します。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: e8696335108045f9b89eef5ab8743db6c5442b21
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 1437470bc125e5cf2ec3e42622981421cab7df7f
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27877855"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27973105"
 ---
 # <a name="list-importedappledeviceidentityresults"></a>リスト importedAppleDeviceIdentityResults
 

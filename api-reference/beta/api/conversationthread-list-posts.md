@@ -2,12 +2,14 @@
 title: 投稿を一覧表示する
 description: '指定したスレッドの投稿を取得します。 親スレッドと、スレッドの両方を指定することができますか、 '
 localization_priority: Normal
-ms.openlocfilehash: da2fb8dadd18445cab051421d2c614bbbe9ec384
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: dkershaw10
+ms.prod: groups
+ms.openlocfilehash: 9275540b933a87f266d040e25c37ab22e0371736
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27808758"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27970886"
 ---
 # <a name="list-posts"></a>投稿を一覧表示する
 

@@ -3,12 +3,13 @@ title: WindowsStoreApp を更新します。
 description: WindowsStoreApp オブジェクトのプロパティを更新します。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 098af04c29e27188ef20712fe46982d09e96697f
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: b564c5109153cf0409e97829444d927dd6d6e2ef
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27842778"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27971208"
 ---
 # <a name="update-windowsstoreapp"></a>WindowsStoreApp を更新します。
 
@@ -48,7 +49,7 @@ PATCH /deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/{mobileAppIns
 
 [WindowsStoreApp](../resources/intune-apps-windowsstoreapp.md)を作成するときに必要なプロパティを次の表に示します。
 
-|プロパティ|種類|説明|
+|プロパティ|型|説明|
 |:---|:---|:---|
 |ID|String|エンティティのキー。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|
 |displayName|String|管理者が提供またはインポートしたアプリのタイトル。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|

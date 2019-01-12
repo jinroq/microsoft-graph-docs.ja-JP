@@ -3,12 +3,13 @@ title: windowsInformationProtectionAppLearningSummary の削除
 description: windowsInformationProtectionAppLearningSummary を削除します。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 3e3ed783dfab34ad4f441e16b5cae40137818cab
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 0bf4b378f756e6f6c634484c24cdc396b734feef
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27852970"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27970774"
 ---
 # <a name="delete-windowsinformationprotectionapplearningsummary"></a>windowsInformationProtectionAppLearningSummary の削除
 

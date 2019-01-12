@@ -3,12 +3,13 @@ title: windowsAssignedAccessProfile リソースの種類
 description: Windows のアクセスのプロファイルを割り当てられています。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 93f71952c45f4fd8bbd397f0ea115abbe3faafac
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 893e81e544286c6877b9443d96f610acb939e934
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27890609"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27972853"
 ---
 # <a name="windowsassignedaccessprofile-resource-type"></a>windowsAssignedAccessProfile リソースの種類
 
@@ -27,11 +28,11 @@ Windows のアクセスのプロファイルを割り当てられています。
 |[WindowsAssignedAccessProfile を更新します。](../api/intune-deviceconfig-windowsassignedaccessprofile-update.md)|[windowsAssignedAccessProfile](../resources/intune-deviceconfig-windowsassignedaccessprofile.md)|[WindowsAssignedAccessProfile](../resources/intune-deviceconfig-windowsassignedaccessprofile.md)オブジェクトのプロパティを更新します。|
 
 ## <a name="properties"></a>プロパティ
-|プロパティ|種類|説明|
+|プロパティ|型|説明|
 |:---|:---|:---|
 |ID|String|エンティティのキー。|
 |profilename プロパティ|String|これは、[スタート] メニューの [このプレゼンテーションの構成が割り当てられているユーザーにこれらのアプリケーションのレイアウト、アプリケーションのグループを識別するために使用するフレンドリ名です。|
-|showTaskBar|ブール型|この設定では、タスク バーを表示するかどうかを指定するのには管理ができます。|
+|showTaskBar|Boolean|この設定では、タスク バーを表示するかどうかを指定するのには管理ができます。|
 |appUserModelIds|String コレクション|これらは、[スタート] メニューから起動できる唯一の Windows ストア アプリです。|
 |desktopAppPaths|String コレクション|これらは、[スタート] メニューで利用可能なデスクトップ アプリケーションのパスと、唯一のアプリケーション、ユーザーが起動できるようです。|
 |ユーザー アカウント|String コレクション|この構成にキオスクがロックアウトされているユーザー アカウントです。|

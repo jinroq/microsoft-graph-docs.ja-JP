@@ -3,12 +3,13 @@ title: グループへの後方リンクの一覧
 description: グループとグループの直接メンバーである管理の単位を取得します。
 author: dkershaw10
 localization_priority: Normal
-ms.openlocfilehash: 8a1badf9e52c9d0bc3319178f36d62d1327d3c63
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: groups
+ms.openlocfilehash: 3a9f35774bd626a8ed33ba351c7e388579aebf80
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27853334"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27970851"
 ---
 # <a name="list-group-memberof"></a>グループへの後方リンクの一覧
 
@@ -38,7 +39,7 @@ GET /groups/{id}/memberOf
 このメソッドは、応答をカスタマイズするための [OData クエリ パラメーター](/graph/query-parameters)をサポートします。
 
 ## <a name="request-headers"></a>要求ヘッダー
-| 名前       | 種類 | 説明|
+| 名前       | 型 | 説明|
 |:-----------|:------|:----------|
 | Authorization  | string  | ベアラー {トークン}。必須。 |
 

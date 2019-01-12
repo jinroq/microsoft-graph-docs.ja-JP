@@ -3,12 +3,13 @@ title: onPremisesConditionalAccessSettings リソースの種類
 description: テナントの Exchange OnPremises 条件付きアクセス設定を表す単一エンティティ。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 88d513cc59b9570b355e67fa417a9856519cf551
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 4d39d7da372c562c12dd15c702d7f7e6f161a67a
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27875993"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27970291"
 ---
 # <a name="onpremisesconditionalaccesssettings-resource-type"></a>onPremisesConditionalAccessSettings リソースの種類
 
@@ -22,7 +23,7 @@ ms.locfileid: "27875993"
 |[Update onPremisesConditionalAccessSettings](../api/intune-onboarding-onpremisesconditionalaccesssettings-update.md)|[onPremisesConditionalAccessSettings](../resources/intune-onboarding-onpremisesconditionalaccesssettings.md)|[onPremisesConditionalAccessSettings](../resources/intune-onboarding-onpremisesconditionalaccesssettings.md) オブジェクトのプロパティを更新します。|
 
 ## <a name="properties"></a>プロパティ
-|プロパティ|種類|説明|
+|プロパティ|型|説明|
 |:---|:---|:---|
 |ID|String|まだ文書化されていません|
 |enabled|Boolean|対象組織で、オンプレミスの条件付きアクセスが有効かどうかを示します。|

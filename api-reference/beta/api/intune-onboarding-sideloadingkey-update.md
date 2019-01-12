@@ -3,12 +3,13 @@ title: SideLoadingKey を更新します。
 description: SideLoadingKey オブジェクトのプロパティを更新します。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 6f4a6348df539924bdccbf3cacf8411442f877eb
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 116034afff02ac41647d781bbd85ec6f8dcaeec4
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27885632"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27969934"
 ---
 # <a name="update-sideloadingkey"></a>SideLoadingKey を更新します。
 
@@ -46,7 +47,7 @@ PATCH /deviceAppManagement/sideLoadingKeys/{sideLoadingKeyId}
 
 [SideLoadingKey](../resources/intune-onboarding-sideloadingkey.md)を作成するときに必要なプロパティを次の表に示します。
 
-|プロパティ|種類|説明|
+|プロパティ|型|説明|
 |:---|:---|:---|
 |ID|String|側のキーの一意の id の読み込み|
 |value|文字列|側の読み込みキー] の値は 5 列 5 行値、hiphens によって区切られています。|

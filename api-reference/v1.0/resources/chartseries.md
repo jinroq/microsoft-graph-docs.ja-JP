@@ -3,12 +3,13 @@ title: ChartSeries リソースの種類
 description: グラフのデータ系列を表します。
 author: lumine2008
 localization_priority: Normal
-ms.openlocfilehash: a3a19793629a5e100830565e224541930e2180de
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: excel
+ms.openlocfilehash: b9a857f127848f1ed0da8de673902527e3858ffe
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27834896"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27970389"
 ---
 # <a name="chartseries-resource-type"></a>ChartSeries リソースの種類
 
@@ -27,7 +28,7 @@ ms.locfileid: "27834896"
 |[ItemAt](../api/chartseriescollection-itemat.md)|[WorkbookChartSeries](chartseries.md)|コレクション内の位置に基づいてデータ系列を取得します。|
 
 ## <a name="properties"></a>プロパティ
-| プロパティ     | 種類   |説明|
+| プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
 |name|文字列|グラフのデータ系列の名前を表します。|
 

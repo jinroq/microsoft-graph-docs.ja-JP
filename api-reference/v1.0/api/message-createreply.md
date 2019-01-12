@@ -2,12 +2,14 @@
 title: 'メッセージ: createReply'
 description: 指定したメッセージに対する返信の下書きを作成します。 **本文**への返信の内容を追加またはその他のメッセージのプロパティを変更するのには下書きを更新したり、単に下書きを送信できます。
 localization_priority: Normal
-ms.openlocfilehash: 92fc487ad4fe57a7439e367e4238aeff3ddfd7ed
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: angelgolfer-ms
+ms.prod: outlook
+ms.openlocfilehash: 566b267e192d9f23d63ba9b15f6318ad0ca33843
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27874205"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27971684"
 ---
 # <a name="message-createreply"></a>メッセージ: createReply
 
@@ -31,7 +33,7 @@ POST /me/mailFolders/{id}/messages/{id}/createReply
 POST /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/createReply
 ```
 ## <a name="request-headers"></a>要求ヘッダー
-| 名前       | 種類 | 説明|
+| 名前       | 型 | 説明|
 |:---------------|:--------|:----------|
 | Authorization  | string  | ベアラー {トークン}。必須。 |
 
