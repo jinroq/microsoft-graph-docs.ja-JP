@@ -3,12 +3,13 @@ title: importedAppleDeviceIdentityResult リソースの種類
 description: ImportedAppleDeviceIdentityResult リソースでは、Apple のデバイス id をインポートしようとした結果を表します。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 47d9087bde8a0ff8fdc5a605fe6eb98cb05007bb
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: af503c48707bd234c35916ea63eb3fbe5775958f
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27886199"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27912366"
 ---
 # <a name="importedappledeviceidentityresult-resource-type"></a>importedAppleDeviceIdentityResult リソースの種類
 

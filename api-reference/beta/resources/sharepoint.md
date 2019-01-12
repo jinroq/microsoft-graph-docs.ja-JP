@@ -2,12 +2,13 @@
 title: Microsoft Graph で SharePoint サイトを開く
 description: Microsoft Graph の SharePoint API は、以下の基本的なシナリオをサポートしています。
 localization_priority: Priority
-ms.openlocfilehash: 6b579ef911e0c4149882c6dc4b0c142f1b8938c7
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: sharepoint
+ms.openlocfilehash: 9edab0f8e4207dac2a88943a0a2cd1cbe58b97e3
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27823745"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27945735"
 ---
 # <a name="working-with-sharepoint-sites-in-microsoft-graph"></a>Microsoft Graph で SharePoint サイトを開く
 

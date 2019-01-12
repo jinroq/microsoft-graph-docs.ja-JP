@@ -2,12 +2,14 @@
 title: windows10CustomConfiguration リソースの種類
 description: このトピックでは、windows10CustomConfiguration リソースによって公開された、宣言されたメソッド、プロパティ、リレーションシップについて説明します。
 localization_priority: Normal
-ms.openlocfilehash: cebc68c6d4e0e7da0231d664b9bbb9478016a929
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: tfitzmac
+ms.prod: intune
+ms.openlocfilehash: 5fd7a35586b2bc179ca2c43555607c87ea6a4eb0
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27835631"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27937755"
 ---
 # <a name="windows10customconfiguration-resource-type"></a>windows10CustomConfiguration リソースの種類
 

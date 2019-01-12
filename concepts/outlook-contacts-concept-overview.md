@@ -2,12 +2,14 @@
 title: Outlook 個人用連絡先 API の概要
 description: Outlook の連絡先を利用すると、個人用連絡先のデータを保存することができます。これは、Office 365 の Outlook メッセージング ハブの一部です。 Outlook により、メールの管理、会議のスケジュール管理、組織内のユーザーに関する情報の検索、オンライン会話の開始、ファイルの共有、およびグループでの共同作業をすることができます。
 author: angelgolfer-ms
-ms.openlocfilehash: bccf32fd0cc3022a146e16590d915c4b85d60127
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Priority
+ms.prod: outlook
+ms.openlocfilehash: 6991845e05373a1c874553b8b195f77fb79757b7
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27347517"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27937321"
 ---
 # <a name="outlook-personal-contacts-api-overview"></a>Outlook 個人用連絡先 API の概要
 
@@ -53,8 +55,7 @@ Outlook [連絡先](/graph/api/resources/contact?view=graph-rest-1.0)のため�
 
 ## <a name="next-steps"></a>次のステップ
 
-- 
-  [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer/?request=me%2Fcontacts&version=v1.0) で連絡先サンプル クエリを選択して試行する。 左側の列の **[サンプルをさらに表示]** を選択します。 メニューを使用して **[個人用連絡先]** をオンにします。
+- [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer/?request=me%2Fcontacts&version=v1.0) で連絡先サンプル クエリを選択して試行する。 左側の列の **[サンプルをさらに表示]** を選択します。 メニューを使用して **[個人用連絡先]** をオンにします。
 - 以下について調べます。
   - [Outlook リソースの不変識別子の取得](outlook-immutable-id.md)
   - [共有の連絡先の取得](outlook-get-shared-contacts-folders.md)

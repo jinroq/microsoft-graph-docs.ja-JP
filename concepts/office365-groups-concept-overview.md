@@ -2,12 +2,14 @@
 title: Microsoft Graph での Office 365 グループの概要
 description: 'Office 365 グループは、ユーザーが会話、ファイル、ノート、予定表、プラン、その他の多くのアセットを共有するための基本メンバーシップ サービスを提供します。 '
 author: dkershaw10
-ms.openlocfilehash: 7dcb13210a69737ae5f7889fe797afd9fec19c81
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Priority
+ms.prod: reports
+ms.openlocfilehash: 3706c7373a80992cec1f920dbfdf5e8829829d10
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27320462"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27932711"
 ---
 # <a name="overview-of-office-365-groups-in-microsoft-graph"></a>Microsoft Graph での Office 365 グループの概要
 
@@ -67,6 +69,5 @@ Office 365 グループとは、Microsoft サービス内またはアプリ内�
 
 ## <a name="next-steps"></a>次のステップ
 
-- 
-  [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer) で、サンプル API リクエストを試す。 
+- [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer) で、サンプル API リクエストを試す。 
 - Microsoft Graph で[グループ API を使用する](/graph/api/resources/groups-overview?view=graph-rest-1.0)方法に関する詳細を確認する。

@@ -2,12 +2,14 @@
 title: iosWebContentFilterSpecificWebsitesAccess リソースの種類
 description: IOS iOS の組み込みブラウザーに URL のブックマークをインストールする Web コンテンツのフィルター設定の種類を表します。 先生が受講者が、iOS デバイスと他のサイトへのアクセスなしで構成されているブラウザーのブックマークから web サイトを移動するようには教室では、シナリオの例です。
 localization_priority: Normal
-ms.openlocfilehash: 0dc3023c37311dc5fdeb2700b8a0fec58bdb4725
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: tfitzmac
+ms.prod: intune
+ms.openlocfilehash: 3b117aca95c43f36c216d6249221d689ae2da325
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27844955"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27942697"
 ---
 # <a name="ioswebcontentfilterspecificwebsitesaccess-resource-type"></a>iosWebContentFilterSpecificWebsitesAccess リソースの種類
 

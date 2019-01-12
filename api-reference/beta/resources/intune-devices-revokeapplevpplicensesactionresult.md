@@ -3,12 +3,13 @@ title: revokeAppleVppLicensesActionResult リソースの種類
 description: アップル Vpp ライセンスのアクションの結果を取り消す
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: b7e578ee695e171a1a91167b61e47af717dd82c0
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: dfb2c18f89dde36ef0fbda7a6ad3221e2ad3728f
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27879101"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27944482"
 ---
 # <a name="revokeapplevpplicensesactionresult-resource-type"></a>revokeAppleVppLicensesActionResult リソースの種類
 

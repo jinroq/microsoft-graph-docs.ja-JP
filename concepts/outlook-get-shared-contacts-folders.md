@@ -2,12 +2,14 @@
 title: 共有フォルダー内にある Outlook の連絡先を取得する
 description: Outlook では、ユーザーがフォルダーを互いに共有し、個々の連絡先フォルダーに対する読み取り、作成、変更、削除のアクセス権を与えることができます。 Outlook では、あるユーザーが、そのユーザーの代わりに操作する権限を別のユーザーに与えることもできます。
 author: angelgolfer-ms
-ms.openlocfilehash: d0dc5be8df709c3d736ff0baa55667926cfc5936
-ms.sourcegitcommit: 8feddb85e436be5581557a199f2e46d5b4ebfa21
+localization_priority: Normal
+ms.prod: outlook
+ms.openlocfilehash: 86533a28c0af206458b63fd19f32f01c5b68710b
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/22/2018
-ms.locfileid: "27413156"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27932155"
 ---
 # <a name="get-outlook-contacts-in-a-shared-folder"></a>共有フォルダー内にある Outlook の連絡先を取得する
 

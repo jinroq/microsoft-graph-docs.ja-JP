@@ -3,12 +3,13 @@ title: educationSynchronizationProfile リソースの種類
 description: 教育エンティティと、ソース ディレクトリから Azure Active directory (AD の Azure) の名簿の情報を同期するために使用する構成のセットを表します。 このリソースは、学校のデータの同期で使用されるプログラムの表現を提供します。
 author: mmast-msft
 localization_priority: Normal
-ms.openlocfilehash: 7ed8cf39ff8ccd2b8cb4c5b5e31350fec6202d01
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: education
+ms.openlocfilehash: a9976538923d35c38bda001d73cabc1b4c3f6814
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27882923"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27940898"
 ---
 # <a name="educationsynchronizationprofile-resource-type"></a>educationSynchronizationProfile リソースの種類
 

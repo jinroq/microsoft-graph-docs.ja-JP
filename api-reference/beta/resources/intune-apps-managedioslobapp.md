@@ -3,12 +3,13 @@ title: managedIOSLobApp リソース タイプ
 description: 管理対象 iOS 基幹業務アプリのプロパティと継承されたプロパティが含まれます。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 09f84a8864a31eaf81f8bb59fe5d50b5ecb85bcf
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 2cebdb40511a208bf957aa29e2e70d0b89832780
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27876476"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27933828"
 ---
 # <a name="managedioslobapp-resource-type"></a>managedIOSLobApp リソース タイプ
 

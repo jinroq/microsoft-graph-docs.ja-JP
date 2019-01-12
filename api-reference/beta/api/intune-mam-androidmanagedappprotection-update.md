@@ -4,12 +4,13 @@ title: >
 description: androidManagedAppProtection オブジェクトのプロパティを更新します。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 4b642a4c7fbc57b7fbf166ac93494df0316594c4
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: af739f624fbc2ea5f38232a6e4a41fdc1ba68b60
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27838263"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27914676"
 ---
 # <a name="update-androidmanagedappprotection"></a>androidManagedAppProtection の更新
 

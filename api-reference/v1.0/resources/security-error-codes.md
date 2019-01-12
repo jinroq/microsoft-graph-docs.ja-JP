@@ -1,20 +1,21 @@
 ---
 title: Microsoft グラフ セキュリティ API のエラー応答
 description: セキュリティ api には、Microsoft のグラフのエラーは、標準の HTTP 206 部分的なコンテンツのステータス コードを使用して返され、警告ヘッダーを経由して配信。
-author: Preetikr
+author: preetikr
 localization_priority: Normal
-ms.openlocfilehash: 16a7153f460b57a74901b0d5c48bdd9004e06bc4
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: security
+ms.openlocfilehash: 52b7c375bd3e0c6a367f1150a21bb96ef84437ff
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27830766"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27939953"
 ---
 # <a name="microsoft-graph-security-api-error-responses"></a>Microsoft グラフ セキュリティ API のエラー応答
 
 セキュリティ api には、Microsoft のグラフのエラーは、標準の HTTP 206 部分的なコンテンツのステータス コードを使用して返され、警告ヘッダーを経由して配信。
 
-## <a name="errors"></a>Errors
+## <a name="errors"></a>エラー
 
 Microsoft グラフ セキュリティ API は、すべてのデータ プロバイダーから複数の応答を受信するフェデレーション サービスです。 Microsoft グラフ セキュリティ API が HTTP エラーを受信したを送信します戻る警告ヘッダーで次の形式。<!-- { "blockType": "ignored" } -->
 
@@ -22,7 +23,7 @@ Microsoft グラフ セキュリティ API は、すべてのデータ プロバ
 {Vendor}/{Provider}/{StatusCode}/{LatencyInMs}
 ```
 
-この警告ヘッダーはデータ プロバイダーの 1 つ以外の 2 xx または 404 エラー コードが返されるときにクライアントにのみ送信されます。 次に例を示します。
+この警告ヘッダーはデータ プロバイダーの 1 つ以外の 2 xx または 404 エラー コードが返されるときにクライアントにのみ送信されます。 例:
 
 - HttpStatusCode.Forbidden (403) は、リソースへのアクセスが与えられていない場合に返される可能性があります。
 - プロバイダーがタイムアウトになった場合は、警告ヘッダーの HttpStatusCode.GatewayTimeout (504) が返されます。

@@ -2,12 +2,14 @@
 title: windows10TeamGeneralConfiguration の削除
 description: windows10TeamGeneralConfiguration を削除します。
 author: tfitzmac
-ms.openlocfilehash: b4badd2b6a4718519a40bbce06fee138fad80e08
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.prod: intune
+ms.openlocfilehash: bcac7d19109e7d7545f59a404545db74f13008a7
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27302458"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27940562"
 ---
 # <a name="delete-windows10teamgeneralconfiguration"></a>windows10TeamGeneralConfiguration の削除
 

@@ -2,12 +2,14 @@
 title: iosEasEmailProfileConfiguration リソースの種類
 description: このプロファイルの構成を提供することで Exchange サーバーと通信し、電子メール、連絡先、カレンダー、アラーム、およびメモに iOS デバイス上のネイティブの電子メール クライアントに指示できます。 さらに、同期とデバイスを同期する必要がありますどのくらいの頻度にどのくらいのメールを指定することもできます。
 localization_priority: Normal
-ms.openlocfilehash: 32758fb8dd9aa02b93eb8129894f60a1fabce768
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: tfitzmac
+ms.prod: intune
+ms.openlocfilehash: 050970bc5b1e3835d0b3ad801969d42c79505992
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27814995"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27938343"
 ---
 # <a name="ioseasemailprofileconfiguration-resource-type"></a>iosEasEmailProfileConfiguration リソースの種類
 

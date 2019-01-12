@@ -1,12 +1,15 @@
 ---
 title: Microsoft Graph のデバイス リレー API (プレビュー)
 description: '今日のユーザーは日常的に複数のデバイスを操作しています。 多くの場合、ユーザーは生産性タスクやエンターテイメント活動をあるデバイスで開始し、別のデバイスで継続します。 顧客のニーズを満たすには、複数のデバイスやプラットフォームにまたがってアプリをシームレスに使用できる必要があります。 '
-ms.openlocfilehash: aa3bdd3401be9d26f55d5b3dcc792ed81e7dae87
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+author: lleonard-msft
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: cd50302d81b5985d6d89cc505264deab1ca154cf
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27092445"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27940107"
 ---
 # <a name="device-relay-api-in-microsoft-graph-preview"></a>Microsoft Graph のデバイス リレー API (プレビュー)
 

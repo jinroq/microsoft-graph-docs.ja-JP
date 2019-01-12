@@ -3,12 +3,13 @@ title: deviceAndAppManagementRoleDefinition の作成
 description: 新しい deviceAndAppManagementRoleDefinition オブジェクトを作成します。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: f1eb68651a32f10d2b8daaab4fe7eaac0b8b2666
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 712d8a84cd70bda889aaae83fa9138a635e10acb
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27826034"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27938301"
 ---
 # <a name="create-deviceandappmanagementroledefinition"></a>deviceAndAppManagementRoleDefinition の作成
 

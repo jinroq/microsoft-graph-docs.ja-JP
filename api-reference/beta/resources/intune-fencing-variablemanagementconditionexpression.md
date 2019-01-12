@@ -3,12 +3,13 @@ title: variableManagementConditionExpression リソースの種類
 description: 管理条件の状態は、ブール式として評価されます。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 5d0805f7c698f90cbcb10bfffdce9c95ce6705b2
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 8fc3e49e7ba55cf10a1dac36690d0b1e419890a8
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27890154"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27939764"
 ---
 # <a name="variablemanagementconditionexpression-resource-type"></a>variableManagementConditionExpression リソースの種類
 

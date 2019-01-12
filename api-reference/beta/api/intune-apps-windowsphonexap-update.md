@@ -3,12 +3,13 @@ title: WindowsPhoneXAP を更新します。
 description: WindowsPhoneXAP オブジェクトのプロパティを更新します。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: eb99e9a504121d062eb4127f6137752f28c9d2bb
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 55bd6c3df68dbe76b0ce36e94f49e2a7c8d50f10
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27823157"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27944335"
 ---
 # <a name="update-windowsphonexap"></a>WindowsPhoneXAP を更新します。
 
