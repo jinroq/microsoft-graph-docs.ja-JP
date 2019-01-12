@@ -2,30 +2,31 @@
 title: 'reportRoot: getSkypeForBusinessParticipantActivityUserCounts'
 description: 組織からユーザーが参加したそれぞれ別個のユーザーの数と会議セッションの種類について、使用傾向を取得します。 会議セッションの種類には、IM、オーディオ/ビデオ、アプリケーション共有、Web、サードパーティへのダイヤルイン/ダイヤルアウトなどがあります。
 localization_priority: Normal
-ms.openlocfilehash: fdb22aba9ecaf74e8e4cb463b71e5344ce64090c
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: reports
+ms.openlocfilehash: 62b48d8433ffc067eef05e46d256e4ad919e415a
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27807960"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27936222"
 ---
-# <a name="reportroot-getskypeforbusinessparticipantactivityusercounts"></a><span data-ttu-id="69aa3-104">reportRoot: getSkypeForBusinessParticipantActivityUserCounts</span><span class="sxs-lookup"><span data-stu-id="69aa3-104">reportRoot: getSkypeForBusinessParticipantActivityUserCounts</span></span>
+# <a name="reportroot-getskypeforbusinessparticipantactivityusercounts"></a><span data-ttu-id="7377b-104">reportRoot: getSkypeForBusinessParticipantActivityUserCounts</span><span class="sxs-lookup"><span data-stu-id="7377b-104">reportRoot: getSkypeForBusinessParticipantActivityUserCounts</span></span>
 
-<span data-ttu-id="69aa3-105">組織からユーザーが参加したそれぞれ別個のユーザーの数と会議セッションの種類について、使用傾向を取得します。</span><span class="sxs-lookup"><span data-stu-id="69aa3-105">Get usage trends on the number of unique users and type of conference sessions that users from your organization participated in.</span></span> <span data-ttu-id="69aa3-106">会議セッションの種類には、IM、オーディオ/ビデオ、アプリケーション共有、Web、サードパーティへのダイヤルイン/ダイヤルアウトなどがあります。</span><span class="sxs-lookup"><span data-stu-id="69aa3-106">Types of conference sessions include IM, audio/video, application sharing, web, and dial-in/out - 3rd party.</span></span>
+<span data-ttu-id="7377b-105">組織からユーザーが参加したそれぞれ別個のユーザーの数と会議セッションの種類について、使用傾向を取得します。</span><span class="sxs-lookup"><span data-stu-id="7377b-105">Get usage trends on the number of unique users and type of conference sessions that users from your organization participated in.</span></span> <span data-ttu-id="7377b-106">会議セッションの種類には、IM、オーディオ/ビデオ、アプリケーション共有、Web、サードパーティへのダイヤルイン/ダイヤルアウトなどがあります。</span><span class="sxs-lookup"><span data-stu-id="7377b-106">Types of conference sessions include IM, audio/video, application sharing, web, and dial-in/out - 3rd party.</span></span>
 
-> <span data-ttu-id="69aa3-107">**注:** 別のレポートのビューとレポート名についての詳細は、「[Office 365 レポート: Skype for Business 電話会議の参加者のアクティビティ](https://support.office.com/client/Skype-for-Business-Online-conference-participant-activity-c3c89995-65dd-4715-9e38-bb244c742c6b)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="69aa3-107">**Note:** For details about different report views and names, see [Office 365 Reports - Skype for Business conference participant activity](https://support.office.com/client/Skype-for-Business-Online-conference-participant-activity-c3c89995-65dd-4715-9e38-bb244c742c6b).</span></span>
+> <span data-ttu-id="7377b-107">**注:** 別のレポートのビューとレポート名についての詳細は、「[Office 365 レポート: Skype for Business 電話会議の参加者のアクティビティ](https://support.office.com/client/Skype-for-Business-Online-conference-participant-activity-c3c89995-65dd-4715-9e38-bb244c742c6b)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="7377b-107">**Note:** For details about different report views and names, see [Office 365 Reports - Skype for Business conference participant activity](https://support.office.com/client/Skype-for-Business-Online-conference-participant-activity-c3c89995-65dd-4715-9e38-bb244c742c6b).</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="69aa3-108">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="69aa3-108">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="7377b-108">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="7377b-108">Permissions</span></span>
 
-<span data-ttu-id="69aa3-p103">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="69aa3-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="7377b-p103">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="7377b-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="69aa3-111">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="69aa3-111">Permission type</span></span>                        | <span data-ttu-id="69aa3-112">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="69aa3-112">Permissions (from least to most privileged)</span></span> |
+| <span data-ttu-id="7377b-111">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="7377b-111">Permission type</span></span>                        | <span data-ttu-id="7377b-112">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="7377b-112">Permissions (from least to most privileged)</span></span> |
 | :------------------------------------- | :--------------------------------------- |
-| <span data-ttu-id="69aa3-113">委任 (職場または学校アカウント)</span><span class="sxs-lookup"><span data-stu-id="69aa3-113">Delegated (work or school account)</span></span>     | <span data-ttu-id="69aa3-114">Reports.Read.All</span><span class="sxs-lookup"><span data-stu-id="69aa3-114">Reports.Read.All</span></span>                         |
-| <span data-ttu-id="69aa3-115">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="69aa3-115">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="69aa3-116">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="69aa3-116">Not supported.</span></span>                           |
-| <span data-ttu-id="69aa3-117">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="69aa3-117">Application</span></span>                            | <span data-ttu-id="69aa3-118">Reports.Read.All</span><span class="sxs-lookup"><span data-stu-id="69aa3-118">Reports.Read.All</span></span>                         |
+| <span data-ttu-id="7377b-113">委任 (職場または学校アカウント)</span><span class="sxs-lookup"><span data-stu-id="7377b-113">Delegated (work or school account)</span></span>     | <span data-ttu-id="7377b-114">Reports.Read.All</span><span class="sxs-lookup"><span data-stu-id="7377b-114">Reports.Read.All</span></span>                         |
+| <span data-ttu-id="7377b-115">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="7377b-115">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="7377b-116">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="7377b-116">Not supported.</span></span>                           |
+| <span data-ttu-id="7377b-117">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="7377b-117">Application</span></span>                            | <span data-ttu-id="7377b-118">Reports.Read.All</span><span class="sxs-lookup"><span data-stu-id="7377b-118">Reports.Read.All</span></span>                         |
 
-## <a name="http-request"></a><span data-ttu-id="69aa3-119">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="69aa3-119">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="7377b-119">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="7377b-119">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } --> 
 
@@ -33,43 +34,43 @@ ms.locfileid: "27807960"
 GET /reports/getSkypeForBusinessParticipantActivityUserCounts(period='{period_value}')
 ```
 
-## <a name="function-parameters"></a><span data-ttu-id="69aa3-120">関数パラメーター</span><span class="sxs-lookup"><span data-stu-id="69aa3-120">Function parameters</span></span>
+## <a name="function-parameters"></a><span data-ttu-id="7377b-120">関数パラメーター</span><span class="sxs-lookup"><span data-stu-id="7377b-120">Function parameters</span></span>
 
-<span data-ttu-id="69aa3-121">要求 URL に、次のパラメーターと有効な値を指定します。</span><span class="sxs-lookup"><span data-stu-id="69aa3-121">In the request URL, provide the following parameter with a valid value.</span></span>
+<span data-ttu-id="7377b-121">要求 URL に、次のパラメーターと有効な値を指定します。</span><span class="sxs-lookup"><span data-stu-id="7377b-121">In the request URL, provide the following parameter with a valid value.</span></span>
 
-| <span data-ttu-id="69aa3-122">パラメーター</span><span class="sxs-lookup"><span data-stu-id="69aa3-122">Parameter</span></span> | <span data-ttu-id="69aa3-123">Type</span><span class="sxs-lookup"><span data-stu-id="69aa3-123">Type</span></span>   | <span data-ttu-id="69aa3-124">説明</span><span class="sxs-lookup"><span data-stu-id="69aa3-124">Description</span></span>                              |
+| <span data-ttu-id="7377b-122">パラメーター</span><span class="sxs-lookup"><span data-stu-id="7377b-122">Parameter</span></span> | <span data-ttu-id="7377b-123">型</span><span class="sxs-lookup"><span data-stu-id="7377b-123">Type</span></span>   | <span data-ttu-id="7377b-124">説明</span><span class="sxs-lookup"><span data-stu-id="7377b-124">Description</span></span>                              |
 | :-------- | :----- | :--------------------------------------- |
-| <span data-ttu-id="69aa3-125">period</span><span class="sxs-lookup"><span data-stu-id="69aa3-125">period</span></span>    | <span data-ttu-id="69aa3-126">文字列</span><span class="sxs-lookup"><span data-stu-id="69aa3-126">string</span></span> | <span data-ttu-id="69aa3-127">レポートを集計する期間の長さを指定します。</span><span class="sxs-lookup"><span data-stu-id="69aa3-127">Specifies the length of time over which the report is aggregated.</span></span> <span data-ttu-id="69aa3-128">{period_value} でサポートされている値は D7、D30、D90、D180 です。</span><span class="sxs-lookup"><span data-stu-id="69aa3-128">The supported values for {period_value} are: D7, D30, D90, and D180.</span></span> <span data-ttu-id="69aa3-129">これらの値は、D*n* の形式 (*n* はレポートを集計する日数) に従います。</span><span class="sxs-lookup"><span data-stu-id="69aa3-129">These values follow the format D*n* where *n* represents the number of days over which the report is aggregated.</span></span> <span data-ttu-id="69aa3-130">必須。</span><span class="sxs-lookup"><span data-stu-id="69aa3-130">Required.</span></span> |
+| <span data-ttu-id="7377b-125">period</span><span class="sxs-lookup"><span data-stu-id="7377b-125">period</span></span>    | <span data-ttu-id="7377b-126">文字列</span><span class="sxs-lookup"><span data-stu-id="7377b-126">string</span></span> | <span data-ttu-id="7377b-127">レポートを集計する期間の長さを指定します。</span><span class="sxs-lookup"><span data-stu-id="7377b-127">Specifies the length of time over which the report is aggregated.</span></span> <span data-ttu-id="7377b-128">{period_value} でサポートされている値は D7、D30、D90、D180 です。</span><span class="sxs-lookup"><span data-stu-id="7377b-128">The supported values for {period_value} are: D7, D30, D90, and D180.</span></span> <span data-ttu-id="7377b-129">これらの値は、D*n* の形式 (*n* はレポートを集計する日数) に従います。</span><span class="sxs-lookup"><span data-stu-id="7377b-129">These values follow the format D*n* where *n* represents the number of days over which the report is aggregated.</span></span> <span data-ttu-id="7377b-130">必須。</span><span class="sxs-lookup"><span data-stu-id="7377b-130">Required.</span></span> |
 
-## <a name="request-headers"></a><span data-ttu-id="69aa3-131">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="69aa3-131">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="7377b-131">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="7377b-131">Request headers</span></span>
 
-| <span data-ttu-id="69aa3-132">名前</span><span class="sxs-lookup"><span data-stu-id="69aa3-132">Name</span></span>          | <span data-ttu-id="69aa3-133">説明</span><span class="sxs-lookup"><span data-stu-id="69aa3-133">Description</span></span>                              |
+| <span data-ttu-id="7377b-132">名前</span><span class="sxs-lookup"><span data-stu-id="7377b-132">Name</span></span>          | <span data-ttu-id="7377b-133">説明</span><span class="sxs-lookup"><span data-stu-id="7377b-133">Description</span></span>                              |
 | :------------ | :--------------------------------------- |
-| <span data-ttu-id="69aa3-134">Authorization</span><span class="sxs-lookup"><span data-stu-id="69aa3-134">Authorization</span></span> | <span data-ttu-id="69aa3-p105">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="69aa3-p105">Bearer {token}. Required.</span></span>                |
-| <span data-ttu-id="69aa3-137">If-None-Match</span><span class="sxs-lookup"><span data-stu-id="69aa3-137">If-None-Match</span></span> | <span data-ttu-id="69aa3-138">この要求ヘッダーが含まれている場合、指定された eTag がファイルの現在のタグに一致すると、`304 Not Modified` 応答コードが返されます。</span><span class="sxs-lookup"><span data-stu-id="69aa3-138">If this request header is included and the eTag provided matches the current tag on the file, a `304 Not Modified` response code is returned.</span></span> <span data-ttu-id="69aa3-139">省略可能。</span><span class="sxs-lookup"><span data-stu-id="69aa3-139">Optional.</span></span> |
+| <span data-ttu-id="7377b-134">Authorization</span><span class="sxs-lookup"><span data-stu-id="7377b-134">Authorization</span></span> | <span data-ttu-id="7377b-p105">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="7377b-p105">Bearer {token}. Required.</span></span>                |
+| <span data-ttu-id="7377b-137">If-None-Match</span><span class="sxs-lookup"><span data-stu-id="7377b-137">If-None-Match</span></span> | <span data-ttu-id="7377b-138">この要求ヘッダーが含まれている場合、指定された eTag がファイルの現在のタグに一致すると、`304 Not Modified` 応答コードが返されます。</span><span class="sxs-lookup"><span data-stu-id="7377b-138">If this request header is included and the eTag provided matches the current tag on the file, a `304 Not Modified` response code is returned.</span></span> <span data-ttu-id="7377b-139">省略可能。</span><span class="sxs-lookup"><span data-stu-id="7377b-139">Optional.</span></span> |
 
-## <a name="response"></a><span data-ttu-id="69aa3-140">応答</span><span class="sxs-lookup"><span data-stu-id="69aa3-140">Response</span></span>
+## <a name="response"></a><span data-ttu-id="7377b-140">応答</span><span class="sxs-lookup"><span data-stu-id="7377b-140">Response</span></span>
 
-<span data-ttu-id="69aa3-141">成功すると、レポートの事前認証されたダウンロード URL にリダイレクトする `302 Found` 応答が返されます。</span><span class="sxs-lookup"><span data-stu-id="69aa3-141">If successful, this method returns a `302 Found` response that redirects to a preauthenticated download URL for the report.</span></span> <span data-ttu-id="69aa3-142">その URL は、応答の `Location` ヘッダー内にあります。</span><span class="sxs-lookup"><span data-stu-id="69aa3-142">That URL can be found in the `Location` header in the response.</span></span>
+<span data-ttu-id="7377b-141">成功すると、レポートの事前認証されたダウンロード URL にリダイレクトする `302 Found` 応答が返されます。</span><span class="sxs-lookup"><span data-stu-id="7377b-141">If successful, this method returns a `302 Found` response that redirects to a preauthenticated download URL for the report.</span></span> <span data-ttu-id="7377b-142">その URL は、応答の `Location` ヘッダー内にあります。</span><span class="sxs-lookup"><span data-stu-id="7377b-142">That URL can be found in the `Location` header in the response.</span></span>
 
-<span data-ttu-id="69aa3-143">事前認証されたダウンロード URL は、短期間 (数分) のみ有効で、`Authorization` ヘッダーを必要としません。</span><span class="sxs-lookup"><span data-stu-id="69aa3-143">Preauthenticated download URLs are only valid for a short period of time (a few minutes) and do not require an `Authorization` header.</span></span>
+<span data-ttu-id="7377b-143">事前認証されたダウンロード URL は、短期間 (数分) のみ有効で、`Authorization` ヘッダーを必要としません。</span><span class="sxs-lookup"><span data-stu-id="7377b-143">Preauthenticated download URLs are only valid for a short period of time (a few minutes) and do not require an `Authorization` header.</span></span>
 
-<span data-ttu-id="69aa3-144">この CSV ファイルには、次の列ヘッダーがあります。</span><span class="sxs-lookup"><span data-stu-id="69aa3-144">The CSV file has the following headers for columns.</span></span>
+<span data-ttu-id="7377b-144">この CSV ファイルには、次の列ヘッダーがあります。</span><span class="sxs-lookup"><span data-stu-id="7377b-144">The CSV file has the following headers for columns.</span></span>
 
-- <span data-ttu-id="69aa3-145">レポートの更新日</span><span class="sxs-lookup"><span data-stu-id="69aa3-145">Report Refresh Date</span></span>
-- <span data-ttu-id="69aa3-146">レポート日付</span><span class="sxs-lookup"><span data-stu-id="69aa3-146">Report Date</span></span>
-- <span data-ttu-id="69aa3-147">レポート期間</span><span class="sxs-lookup"><span data-stu-id="69aa3-147">Report Period</span></span>
-- <span data-ttu-id="69aa3-148">IM</span><span class="sxs-lookup"><span data-stu-id="69aa3-148">IM</span></span>
-- <span data-ttu-id="69aa3-149">オーディオ/ビデオ</span><span class="sxs-lookup"><span data-stu-id="69aa3-149">Audio/Video</span></span>
-- <span data-ttu-id="69aa3-150">アプリ共有</span><span class="sxs-lookup"><span data-stu-id="69aa3-150">App Sharing</span></span>
-- <span data-ttu-id="69aa3-151">Web</span><span class="sxs-lookup"><span data-stu-id="69aa3-151">Web</span></span>
-- <span data-ttu-id="69aa3-152">サード パーティのダイヤルイン/アウト</span><span class="sxs-lookup"><span data-stu-id="69aa3-152">Dial-in/out 3rd Party</span></span>
+- <span data-ttu-id="7377b-145">レポートの更新日</span><span class="sxs-lookup"><span data-stu-id="7377b-145">Report Refresh Date</span></span>
+- <span data-ttu-id="7377b-146">レポート日付</span><span class="sxs-lookup"><span data-stu-id="7377b-146">Report Date</span></span>
+- <span data-ttu-id="7377b-147">レポート期間</span><span class="sxs-lookup"><span data-stu-id="7377b-147">Report Period</span></span>
+- <span data-ttu-id="7377b-148">IM</span><span class="sxs-lookup"><span data-stu-id="7377b-148">IM</span></span>
+- <span data-ttu-id="7377b-149">オーディオ/ビデオ</span><span class="sxs-lookup"><span data-stu-id="7377b-149">Audio/Video</span></span>
+- <span data-ttu-id="7377b-150">アプリ共有</span><span class="sxs-lookup"><span data-stu-id="7377b-150">App Sharing</span></span>
+- <span data-ttu-id="7377b-151">Web</span><span class="sxs-lookup"><span data-stu-id="7377b-151">Web</span></span>
+- <span data-ttu-id="7377b-152">サード パーティのダイヤルイン/アウト</span><span class="sxs-lookup"><span data-stu-id="7377b-152">Dial-in/out 3rd Party</span></span>
 
-## <a name="example"></a><span data-ttu-id="69aa3-153">例</span><span class="sxs-lookup"><span data-stu-id="69aa3-153">Example</span></span>
+## <a name="example"></a><span data-ttu-id="7377b-153">例</span><span class="sxs-lookup"><span data-stu-id="7377b-153">Example</span></span>
 
-#### <a name="request"></a><span data-ttu-id="69aa3-154">要求</span><span class="sxs-lookup"><span data-stu-id="69aa3-154">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="7377b-154">要求</span><span class="sxs-lookup"><span data-stu-id="7377b-154">Request</span></span>
 
-<span data-ttu-id="69aa3-155">要求の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="69aa3-155">The following is an example of the request.</span></span>
+<span data-ttu-id="7377b-155">要求の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="7377b-155">The following is an example of the request.</span></span>
 
 <!--{
   "blockType": "request",
@@ -81,9 +82,9 @@ GET /reports/getSkypeForBusinessParticipantActivityUserCounts(period='{period_va
 GET https://graph.microsoft.com/v1.0/reports/getSkypeForBusinessParticipantActivityUserCounts(period='D7')
 ```
 
-#### <a name="response"></a><span data-ttu-id="69aa3-156">応答</span><span class="sxs-lookup"><span data-stu-id="69aa3-156">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="7377b-156">応答</span><span class="sxs-lookup"><span data-stu-id="7377b-156">Response</span></span>
 
-<span data-ttu-id="69aa3-157">応答の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="69aa3-157">The following is an example of the response.</span></span>
+<span data-ttu-id="7377b-157">応答の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="7377b-157">The following is an example of the response.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -97,7 +98,7 @@ Content-Type: text/plain
 Location: https://reports.office.com/data/download/JDFKdf2_eJXKS034dbc7e0t__XDe
 ```
 
-<span data-ttu-id="69aa3-158">302 リダイレクトに従うと、ダウンロードされる CSV ファイルは次のスキーマを持つことになります。</span><span class="sxs-lookup"><span data-stu-id="69aa3-158">Follow the 302 redirection and the CSV file that downloads will have the following schema.</span></span>
+<span data-ttu-id="7377b-158">302 リダイレクトに従うと、ダウンロードされる CSV ファイルは次のスキーマを持つことになります。</span><span class="sxs-lookup"><span data-stu-id="7377b-158">Follow the 302 redirection and the CSV file that downloads will have the following schema.</span></span>
 
 <!-- { "blockType": "ignored" } --> 
 

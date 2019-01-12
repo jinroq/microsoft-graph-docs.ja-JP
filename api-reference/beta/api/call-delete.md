@@ -3,51 +3,52 @@ title: 呼び出しを削除します。
 description: 削除またはアクティブな呼び出しを切断します。
 author: VinodRavichandran
 localization_priority: Normal
-ms.openlocfilehash: 1d7c1ef73282a74c1934a0dbaebf1743bdff44ba
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: microsoft-teams
+ms.openlocfilehash: 0163f7eee4933406999e283378f31d7f5aeb92b8
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27848686"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27946766"
 ---
-# <a name="delete-call"></a><span data-ttu-id="dd836-103">呼び出しを削除します。</span><span class="sxs-lookup"><span data-stu-id="dd836-103">Delete call</span></span>
+# <a name="delete-call"></a><span data-ttu-id="1c7cc-103">呼び出しを削除します。</span><span class="sxs-lookup"><span data-stu-id="1c7cc-103">Delete call</span></span>
 
-> <span data-ttu-id="dd836-104">**重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。</span><span class="sxs-lookup"><span data-stu-id="dd836-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="dd836-105">実稼働アプリケーションでの、これらの API の使用はサポートされていません。</span><span class="sxs-lookup"><span data-stu-id="dd836-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="1c7cc-104">**重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。</span><span class="sxs-lookup"><span data-stu-id="1c7cc-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="1c7cc-105">実稼働アプリケーションでの、これらの API の使用はサポートされていません。</span><span class="sxs-lookup"><span data-stu-id="1c7cc-105">Use of these APIs in production applications is not supported.</span></span>
 
-<span data-ttu-id="dd836-106">削除またはアクティブな呼び出しを切断します。</span><span class="sxs-lookup"><span data-stu-id="dd836-106">Delete or hang up an active call.</span></span>
+<span data-ttu-id="1c7cc-106">削除またはアクティブな呼び出しを切断します。</span><span class="sxs-lookup"><span data-stu-id="1c7cc-106">Delete or hang up an active call.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="dd836-107">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="dd836-107">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="1c7cc-107">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="1c7cc-107">Permissions</span></span>
 
-<span data-ttu-id="dd836-p102">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="dd836-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="1c7cc-p102">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="1c7cc-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="dd836-110">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="dd836-110">Permission type</span></span> | <span data-ttu-id="dd836-111">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="dd836-111">Permissions (from least to most privileged)</span></span>                  |
+| <span data-ttu-id="1c7cc-110">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="1c7cc-110">Permission type</span></span> | <span data-ttu-id="1c7cc-111">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="1c7cc-111">Permissions (from least to most privileged)</span></span>                  |
 | :-------------- | :----------------------------------------------------------- |
-| <span data-ttu-id="dd836-112">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="dd836-112">Delegated (work or school account)</span></span>     | <span data-ttu-id="dd836-113">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="dd836-113">Not Supported.</span></span>                         |
-| <span data-ttu-id="dd836-114">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="dd836-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="dd836-115">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="dd836-115">Not Supported.</span></span>                         |
-| <span data-ttu-id="dd836-116">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="dd836-116">Application</span></span>                            | <span data-ttu-id="dd836-117">なし。</span><span class="sxs-lookup"><span data-stu-id="dd836-117">None.</span></span>                                  |
+| <span data-ttu-id="1c7cc-112">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="1c7cc-112">Delegated (work or school account)</span></span>     | <span data-ttu-id="1c7cc-113">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="1c7cc-113">Not Supported.</span></span>                         |
+| <span data-ttu-id="1c7cc-114">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="1c7cc-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="1c7cc-115">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="1c7cc-115">Not Supported.</span></span>                         |
+| <span data-ttu-id="1c7cc-116">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="1c7cc-116">Application</span></span>                            | <span data-ttu-id="1c7cc-117">なし。</span><span class="sxs-lookup"><span data-stu-id="1c7cc-117">None.</span></span>                                  |
 
-## <a name="http-request"></a><span data-ttu-id="dd836-118">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="dd836-118">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="1c7cc-118">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="1c7cc-118">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 DELETE /app/calls/{id}
 DELETE /applications/{id}/calls/{id}
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="dd836-119">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="dd836-119">Request headers</span></span>
-| <span data-ttu-id="dd836-120">名前</span><span class="sxs-lookup"><span data-stu-id="dd836-120">Name</span></span>          | <span data-ttu-id="dd836-121">説明</span><span class="sxs-lookup"><span data-stu-id="dd836-121">Description</span></span>               |
+## <a name="request-headers"></a><span data-ttu-id="1c7cc-119">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="1c7cc-119">Request headers</span></span>
+| <span data-ttu-id="1c7cc-120">名前</span><span class="sxs-lookup"><span data-stu-id="1c7cc-120">Name</span></span>          | <span data-ttu-id="1c7cc-121">説明</span><span class="sxs-lookup"><span data-stu-id="1c7cc-121">Description</span></span>               |
 |:--------------|:--------------------------|
-| <span data-ttu-id="dd836-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="dd836-122">Authorization</span></span> | <span data-ttu-id="dd836-p103">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="dd836-p103">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="1c7cc-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="1c7cc-122">Authorization</span></span> | <span data-ttu-id="1c7cc-p103">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="1c7cc-p103">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="dd836-125">要求本文</span><span class="sxs-lookup"><span data-stu-id="dd836-125">Request body</span></span>
-<span data-ttu-id="dd836-126">このメソッドには、要求本文を指定しません。</span><span class="sxs-lookup"><span data-stu-id="dd836-126">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="1c7cc-125">要求本文</span><span class="sxs-lookup"><span data-stu-id="1c7cc-125">Request body</span></span>
+<span data-ttu-id="1c7cc-126">このメソッドには、要求本文を指定しません。</span><span class="sxs-lookup"><span data-stu-id="1c7cc-126">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="dd836-127">応答</span><span class="sxs-lookup"><span data-stu-id="dd836-127">Response</span></span>
-<span data-ttu-id="dd836-p104">成功した場合、このメソッドは `204 No Content` 応答コードを返します。応答本文には何も返されません。</span><span class="sxs-lookup"><span data-stu-id="dd836-p104">If successful, this method returns `204 No Content` response code. It does not return anything in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="1c7cc-127">応答</span><span class="sxs-lookup"><span data-stu-id="1c7cc-127">Response</span></span>
+<span data-ttu-id="1c7cc-p104">成功した場合、このメソッドは `204 No Content` 応答コードを返します。応答本文には何も返されません。</span><span class="sxs-lookup"><span data-stu-id="1c7cc-p104">If successful, this method returns `204 No Content` response code. It does not return anything in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="dd836-130">例</span><span class="sxs-lookup"><span data-stu-id="dd836-130">Example</span></span>
+## <a name="example"></a><span data-ttu-id="1c7cc-130">例</span><span class="sxs-lookup"><span data-stu-id="1c7cc-130">Example</span></span>
 
-##### <a name="request"></a><span data-ttu-id="dd836-131">要求</span><span class="sxs-lookup"><span data-stu-id="dd836-131">Request</span></span>
-<span data-ttu-id="dd836-132">次の例は要求を示しています。</span><span class="sxs-lookup"><span data-stu-id="dd836-132">The following example shows the request.</span></span>
+##### <a name="request"></a><span data-ttu-id="1c7cc-131">要求</span><span class="sxs-lookup"><span data-stu-id="1c7cc-131">Request</span></span>
+<span data-ttu-id="1c7cc-132">次の例は要求を示しています。</span><span class="sxs-lookup"><span data-stu-id="1c7cc-132">The following example shows the request.</span></span>
 
 <!-- {
   "blockType": "request",
@@ -57,9 +58,9 @@ DELETE /applications/{id}/calls/{id}
 DELETE https://graph.microsoft.com/beta/app/calls/{id}
 ```
 
-##### <a name="response"></a><span data-ttu-id="dd836-133">応答</span><span class="sxs-lookup"><span data-stu-id="dd836-133">Response</span></span>
+##### <a name="response"></a><span data-ttu-id="1c7cc-133">応答</span><span class="sxs-lookup"><span data-stu-id="1c7cc-133">Response</span></span>
 
-> <span data-ttu-id="dd836-p105">**注:** 読みやすくするために、ここに示す応答オブジェクトは短くされている場合があります。実際の呼び出しからは、すべてのプロパティが返されます。</span><span class="sxs-lookup"><span data-stu-id="dd836-p105">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+> <span data-ttu-id="1c7cc-p105">**注:** 読みやすくするために、ここに示す応答オブジェクトは短くされている場合があります。実際の呼び出しからは、すべてのプロパティが返されます。</span><span class="sxs-lookup"><span data-stu-id="1c7cc-p105">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -69,7 +70,7 @@ DELETE https://graph.microsoft.com/beta/app/calls/{id}
 HTTP/1.1 204 No Content
 ```
 
-##### <a name="notification---terminating"></a><span data-ttu-id="dd836-136">通知の終了</span><span class="sxs-lookup"><span data-stu-id="dd836-136">Notification - terminating</span></span>
+##### <a name="notification---terminating"></a><span data-ttu-id="1c7cc-136">通知の終了</span><span class="sxs-lookup"><span data-stu-id="1c7cc-136">Notification - terminating</span></span>
 
 ```http
 POST https://bot.contoso.com/api/calls
@@ -98,7 +99,7 @@ Content-Type: application/json
 }
 ```
 
-##### <a name="notification---terminated"></a><span data-ttu-id="dd836-137">終了の通知-</span><span class="sxs-lookup"><span data-stu-id="dd836-137">Notification - terminated</span></span>
+##### <a name="notification---terminated"></a><span data-ttu-id="1c7cc-137">終了の通知-</span><span class="sxs-lookup"><span data-stu-id="1c7cc-137">Notification - terminated</span></span>
 
 ```http
 POST https://bot.contoso.com/api/calls

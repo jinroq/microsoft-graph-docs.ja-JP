@@ -2,31 +2,33 @@
 title: 'section: copyToSectionGroup'
 description: 特定のセクション グループにセクションをコピーします。
 localization_priority: Normal
-ms.openlocfilehash: 58907c479096843cdde82ab27eeb318a00fcd32f
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: jewan-microsoft
+ms.prod: onenote
+ms.openlocfilehash: 382828d1ce22fbfa6d1983893ee2349d4f061ecc
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27858682"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27942970"
 ---
-# <a name="section-copytosectiongroup"></a><span data-ttu-id="e2638-103">section: copyToSectionGroup</span><span class="sxs-lookup"><span data-stu-id="e2638-103">section: copyToSectionGroup</span></span>
+# <a name="section-copytosectiongroup"></a><span data-ttu-id="1e3dc-103">section: copyToSectionGroup</span><span class="sxs-lookup"><span data-stu-id="1e3dc-103">section: copyToSectionGroup</span></span>
 
-> <span data-ttu-id="e2638-104">**重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。</span><span class="sxs-lookup"><span data-stu-id="e2638-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="e2638-105">実稼働アプリケーションでの、これらの API の使用はサポートされていません。</span><span class="sxs-lookup"><span data-stu-id="e2638-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="1e3dc-104">**重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。</span><span class="sxs-lookup"><span data-stu-id="1e3dc-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="1e3dc-105">実稼働アプリケーションでの、これらの API の使用はサポートされていません。</span><span class="sxs-lookup"><span data-stu-id="1e3dc-105">Use of these APIs in production applications is not supported.</span></span>
 
-<span data-ttu-id="e2638-106">特定のセクション グループにセクションをコピーします。</span><span class="sxs-lookup"><span data-stu-id="e2638-106">Copies a section to a specific section group.</span></span>
+<span data-ttu-id="1e3dc-106">特定のセクション グループにセクションをコピーします。</span><span class="sxs-lookup"><span data-stu-id="1e3dc-106">Copies a section to a specific section group.</span></span>
 
-<span data-ttu-id="e2638-107">Copy 操作では、非同期の呼び出しパターンに従います。まず Copy 操作を呼び出し、次に結果の操作エンドポイントをポーリングします。</span><span class="sxs-lookup"><span data-stu-id="e2638-107">For Copy operations, you follow an asynchronous calling pattern:  First call the Copy action, and then poll the operation endpoint for the result.</span></span>
+<span data-ttu-id="1e3dc-107">Copy 操作では、非同期の呼び出しパターンに従います。まず Copy 操作を呼び出し、次に結果の操作エンドポイントをポーリングします。</span><span class="sxs-lookup"><span data-stu-id="1e3dc-107">For Copy operations, you follow an asynchronous calling pattern:  First call the Copy action, and then poll the operation endpoint for the result.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="e2638-108">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="e2638-108">Permissions</span></span>
-<span data-ttu-id="e2638-p102">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="e2638-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="1e3dc-108">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="1e3dc-108">Permissions</span></span>
+<span data-ttu-id="1e3dc-p102">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="1e3dc-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="e2638-111">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="e2638-111">Permission type</span></span>      | <span data-ttu-id="e2638-112">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="e2638-112">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="1e3dc-111">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="1e3dc-111">Permission type</span></span>      | <span data-ttu-id="1e3dc-112">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="1e3dc-112">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="e2638-113">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="e2638-113">Delegated (work or school account)</span></span> | <span data-ttu-id="e2638-114">Notes.Create、Notes.ReadWrite、Notes.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="e2638-114">Notes.Create, Notes.ReadWrite, Notes.ReadWrite.All</span></span>    |
-|<span data-ttu-id="e2638-115">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="e2638-115">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="e2638-116">Notes.Create、Notes.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="e2638-116">Notes.Create, Notes.ReadWrite</span></span>    |
-|<span data-ttu-id="e2638-117">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="e2638-117">Application</span></span> | <span data-ttu-id="e2638-118">Notes.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="e2638-118">Notes.ReadWrite.All</span></span> |
+|<span data-ttu-id="1e3dc-113">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="1e3dc-113">Delegated (work or school account)</span></span> | <span data-ttu-id="1e3dc-114">Notes.Create、Notes.ReadWrite、Notes.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="1e3dc-114">Notes.Create, Notes.ReadWrite, Notes.ReadWrite.All</span></span>    |
+|<span data-ttu-id="1e3dc-115">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="1e3dc-115">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="1e3dc-116">Notes.Create、Notes.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="1e3dc-116">Notes.Create, Notes.ReadWrite</span></span>    |
+|<span data-ttu-id="1e3dc-117">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="1e3dc-117">Application</span></span> | <span data-ttu-id="1e3dc-118">Notes.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="1e3dc-118">Notes.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="e2638-119">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="e2638-119">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="1e3dc-119">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="1e3dc-119">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /me/onenote/sections/{id}/copyToSectionGroup
@@ -34,35 +36,35 @@ POST /users/{id | userPrincipalName}/onenote/sections/{id}/copyToSectionGroup
 POST /groups/{id}/onenote/sections/{id}/copyToSectionGroup
 POST /sites/{id}/onenote/sections/{id}/copyToSectionGroup
 ```
-## <a name="request-headers"></a><span data-ttu-id="e2638-120">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="e2638-120">Request headers</span></span>
-| <span data-ttu-id="e2638-121">名前</span><span class="sxs-lookup"><span data-stu-id="e2638-121">Name</span></span>       | <span data-ttu-id="e2638-122">種類</span><span class="sxs-lookup"><span data-stu-id="e2638-122">Type</span></span> | <span data-ttu-id="e2638-123">説明</span><span class="sxs-lookup"><span data-stu-id="e2638-123">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="1e3dc-120">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="1e3dc-120">Request headers</span></span>
+| <span data-ttu-id="1e3dc-121">名前</span><span class="sxs-lookup"><span data-stu-id="1e3dc-121">Name</span></span>       | <span data-ttu-id="1e3dc-122">型</span><span class="sxs-lookup"><span data-stu-id="1e3dc-122">Type</span></span> | <span data-ttu-id="1e3dc-123">説明</span><span class="sxs-lookup"><span data-stu-id="1e3dc-123">Description</span></span>|
 |:---------------|:--------|:----------|
-| <span data-ttu-id="e2638-124">Authorization</span><span class="sxs-lookup"><span data-stu-id="e2638-124">Authorization</span></span>  | <span data-ttu-id="e2638-125">string</span><span class="sxs-lookup"><span data-stu-id="e2638-125">string</span></span>  | <span data-ttu-id="e2638-p103">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="e2638-p103">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="e2638-128">Content-Type</span><span class="sxs-lookup"><span data-stu-id="e2638-128">Content-Type</span></span> | <span data-ttu-id="e2638-129">string</span><span class="sxs-lookup"><span data-stu-id="e2638-129">string</span></span> | `application/json` |
+| <span data-ttu-id="1e3dc-124">Authorization</span><span class="sxs-lookup"><span data-stu-id="1e3dc-124">Authorization</span></span>  | <span data-ttu-id="1e3dc-125">string</span><span class="sxs-lookup"><span data-stu-id="1e3dc-125">string</span></span>  | <span data-ttu-id="1e3dc-p103">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="1e3dc-p103">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="1e3dc-128">Content-Type</span><span class="sxs-lookup"><span data-stu-id="1e3dc-128">Content-Type</span></span> | <span data-ttu-id="1e3dc-129">string</span><span class="sxs-lookup"><span data-stu-id="1e3dc-129">string</span></span> | `application/json` |
 
-## <a name="request-body"></a><span data-ttu-id="e2638-130">要求本文</span><span class="sxs-lookup"><span data-stu-id="e2638-130">Request body</span></span>
-<span data-ttu-id="e2638-131">要求本文では、操作に必要なパラメーターを格納する JSON オブジェクトを指定します。</span><span class="sxs-lookup"><span data-stu-id="e2638-131">In the request body, provide a JSON object that contains the parameters that your operation needs.</span></span>
+## <a name="request-body"></a><span data-ttu-id="1e3dc-130">要求本文</span><span class="sxs-lookup"><span data-stu-id="1e3dc-130">Request body</span></span>
+<span data-ttu-id="1e3dc-131">要求本文では、操作に必要なパラメーターを格納する JSON オブジェクトを指定します。</span><span class="sxs-lookup"><span data-stu-id="1e3dc-131">In the request body, provide a JSON object that contains the parameters that your operation needs.</span></span>
 
-| <span data-ttu-id="e2638-132">パラメーター</span><span class="sxs-lookup"><span data-stu-id="e2638-132">Parameter</span></span>    | <span data-ttu-id="e2638-133">Type</span><span class="sxs-lookup"><span data-stu-id="e2638-133">Type</span></span>   |<span data-ttu-id="e2638-134">説明</span><span class="sxs-lookup"><span data-stu-id="e2638-134">Description</span></span>|
+| <span data-ttu-id="1e3dc-132">パラメーター</span><span class="sxs-lookup"><span data-stu-id="1e3dc-132">Parameter</span></span>    | <span data-ttu-id="1e3dc-133">型</span><span class="sxs-lookup"><span data-stu-id="1e3dc-133">Type</span></span>   |<span data-ttu-id="1e3dc-134">説明</span><span class="sxs-lookup"><span data-stu-id="1e3dc-134">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="e2638-135">siteCollectionId</span><span class="sxs-lookup"><span data-stu-id="e2638-135">siteCollectionId</span></span>|<span data-ttu-id="e2638-136">String</span><span class="sxs-lookup"><span data-stu-id="e2638-136">String</span></span>|<span data-ttu-id="e2638-137">コピーする SharePoint サイトの id です。</span><span class="sxs-lookup"><span data-stu-id="e2638-137">The id of the SharePoint site to copy to.</span></span> <span data-ttu-id="e2638-138">Office 365 チーム サイトにコピーするときにのみを使用します。</span><span class="sxs-lookup"><span data-stu-id="e2638-138">Use only when copying to an Office 365 team site.</span></span>|
-|<span data-ttu-id="e2638-139">siteId</span><span class="sxs-lookup"><span data-stu-id="e2638-139">siteId</span></span>|<span data-ttu-id="e2638-140">String</span><span class="sxs-lookup"><span data-stu-id="e2638-140">String</span></span>|<span data-ttu-id="e2638-141">コピーする SharePoint web の id です。</span><span class="sxs-lookup"><span data-stu-id="e2638-141">The id of the SharePoint web to copy to.</span></span> <span data-ttu-id="e2638-142">Office 365 チーム サイトにコピーするときにのみを使用します。</span><span class="sxs-lookup"><span data-stu-id="e2638-142">Use only when copying to an Office 365 team site.</span></span>|
-|<span data-ttu-id="e2638-143">グループ Id</span><span class="sxs-lookup"><span data-stu-id="e2638-143">groupId</span></span>|<span data-ttu-id="e2638-144">String</span><span class="sxs-lookup"><span data-stu-id="e2638-144">String</span></span>|<span data-ttu-id="e2638-p106">コピー先グループの ID。Office 365 グループにコピーする場合にのみ使用します。</span><span class="sxs-lookup"><span data-stu-id="e2638-p106">The id of the group to copy to. Use only when copying to an Office 365 group.</span></span>|
-|<span data-ttu-id="e2638-147">id</span><span class="sxs-lookup"><span data-stu-id="e2638-147">id</span></span>|<span data-ttu-id="e2638-148">String</span><span class="sxs-lookup"><span data-stu-id="e2638-148">String</span></span>|<span data-ttu-id="e2638-p107">必須。目的のセクション グループの ID。</span><span class="sxs-lookup"><span data-stu-id="e2638-p107">Required. The id of the destination section group.</span></span> |
-|<span data-ttu-id="e2638-151">renameAs</span><span class="sxs-lookup"><span data-stu-id="e2638-151">renameAs</span></span>|<span data-ttu-id="e2638-152">String</span><span class="sxs-lookup"><span data-stu-id="e2638-152">String</span></span>|<span data-ttu-id="e2638-p108">コピーの名前。既定値は、既存のアイテムの名前になります。</span><span class="sxs-lookup"><span data-stu-id="e2638-p108">The name of the copy. Defaults to the name of the existing item.</span></span> |
+|<span data-ttu-id="1e3dc-135">siteCollectionId</span><span class="sxs-lookup"><span data-stu-id="1e3dc-135">siteCollectionId</span></span>|<span data-ttu-id="1e3dc-136">String</span><span class="sxs-lookup"><span data-stu-id="1e3dc-136">String</span></span>|<span data-ttu-id="1e3dc-137">コピーする SharePoint サイトの id です。</span><span class="sxs-lookup"><span data-stu-id="1e3dc-137">The id of the SharePoint site to copy to.</span></span> <span data-ttu-id="1e3dc-138">Office 365 チーム サイトにコピーするときにのみを使用します。</span><span class="sxs-lookup"><span data-stu-id="1e3dc-138">Use only when copying to an Office 365 team site.</span></span>|
+|<span data-ttu-id="1e3dc-139">siteId</span><span class="sxs-lookup"><span data-stu-id="1e3dc-139">siteId</span></span>|<span data-ttu-id="1e3dc-140">String</span><span class="sxs-lookup"><span data-stu-id="1e3dc-140">String</span></span>|<span data-ttu-id="1e3dc-141">コピーする SharePoint web の id です。</span><span class="sxs-lookup"><span data-stu-id="1e3dc-141">The id of the SharePoint web to copy to.</span></span> <span data-ttu-id="1e3dc-142">Office 365 チーム サイトにコピーするときにのみを使用します。</span><span class="sxs-lookup"><span data-stu-id="1e3dc-142">Use only when copying to an Office 365 team site.</span></span>|
+|<span data-ttu-id="1e3dc-143">グループ Id</span><span class="sxs-lookup"><span data-stu-id="1e3dc-143">groupId</span></span>|<span data-ttu-id="1e3dc-144">String</span><span class="sxs-lookup"><span data-stu-id="1e3dc-144">String</span></span>|<span data-ttu-id="1e3dc-p106">コピー先グループの ID。Office 365 グループにコピーする場合にのみ使用します。</span><span class="sxs-lookup"><span data-stu-id="1e3dc-p106">The id of the group to copy to. Use only when copying to an Office 365 group.</span></span>|
+|<span data-ttu-id="1e3dc-147">id</span><span class="sxs-lookup"><span data-stu-id="1e3dc-147">id</span></span>|<span data-ttu-id="1e3dc-148">String</span><span class="sxs-lookup"><span data-stu-id="1e3dc-148">String</span></span>|<span data-ttu-id="1e3dc-p107">必須。目的のセクション グループの ID。</span><span class="sxs-lookup"><span data-stu-id="1e3dc-p107">Required. The id of the destination section group.</span></span> |
+|<span data-ttu-id="1e3dc-151">renameAs</span><span class="sxs-lookup"><span data-stu-id="1e3dc-151">renameAs</span></span>|<span data-ttu-id="1e3dc-152">String</span><span class="sxs-lookup"><span data-stu-id="1e3dc-152">String</span></span>|<span data-ttu-id="1e3dc-p108">コピーの名前。既定値は、既存のアイテムの名前になります。</span><span class="sxs-lookup"><span data-stu-id="1e3dc-p108">The name of the copy. Defaults to the name of the existing item.</span></span> |
 
 <!--groupId missing-->
 <!--|siteCollectionId|String||
 |siteId|String||-->
 
-## <a name="response"></a><span data-ttu-id="e2638-155">応答</span><span class="sxs-lookup"><span data-stu-id="e2638-155">Response</span></span>
+## <a name="response"></a><span data-ttu-id="1e3dc-155">応答</span><span class="sxs-lookup"><span data-stu-id="1e3dc-155">Response</span></span>
 
-<span data-ttu-id="e2638-p109">成功した場合、このメソッドは `202 Accepted` 応答コードと `Operation-Location` ヘッダーを返します。Operation-Location エンドポイントをポーリングして、[コピー操作の状態を取得します](onenoteoperation-get.md)。</span><span class="sxs-lookup"><span data-stu-id="e2638-p109">If successful, this method returns a `202 Accepted` response code and an `Operation-Location` header. Poll the Operation-Location endpoint to [get the status of the copy operation](onenoteoperation-get.md).</span></span>
+<span data-ttu-id="1e3dc-p109">成功した場合、このメソッドは `202 Accepted` 応答コードと `Operation-Location` ヘッダーを返します。Operation-Location エンドポイントをポーリングして、[コピー操作の状態を取得します](onenoteoperation-get.md)。</span><span class="sxs-lookup"><span data-stu-id="1e3dc-p109">If successful, this method returns a `202 Accepted` response code and an `Operation-Location` header. Poll the Operation-Location endpoint to [get the status of the copy operation](onenoteoperation-get.md).</span></span>
 
-## <a name="example"></a><span data-ttu-id="e2638-158">例</span><span class="sxs-lookup"><span data-stu-id="e2638-158">Example</span></span>
-<span data-ttu-id="e2638-159">以下は、この API を呼び出す方法の例です。</span><span class="sxs-lookup"><span data-stu-id="e2638-159">Here is an example of how to call this API.</span></span>
-##### <a name="request"></a><span data-ttu-id="e2638-160">要求</span><span class="sxs-lookup"><span data-stu-id="e2638-160">Request</span></span>
-<span data-ttu-id="e2638-161">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="e2638-161">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="1e3dc-158">例</span><span class="sxs-lookup"><span data-stu-id="1e3dc-158">Example</span></span>
+<span data-ttu-id="1e3dc-159">以下は、この API を呼び出す方法の例です。</span><span class="sxs-lookup"><span data-stu-id="1e3dc-159">Here is an example of how to call this API.</span></span>
+##### <a name="request"></a><span data-ttu-id="1e3dc-160">要求</span><span class="sxs-lookup"><span data-stu-id="1e3dc-160">Request</span></span>
+<span data-ttu-id="1e3dc-161">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="1e3dc-161">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "section_copytosectiongroup"
@@ -79,8 +81,8 @@ Content-length: 84
 }
 ```
 
-##### <a name="response"></a><span data-ttu-id="e2638-162">応答</span><span class="sxs-lookup"><span data-stu-id="e2638-162">Response</span></span>
-<span data-ttu-id="e2638-163">以下は、応答の例です。</span><span class="sxs-lookup"><span data-stu-id="e2638-163">Here is an example of the response.</span></span>
+##### <a name="response"></a><span data-ttu-id="1e3dc-162">応答</span><span class="sxs-lookup"><span data-stu-id="1e3dc-162">Response</span></span>
+<span data-ttu-id="1e3dc-163">以下は、応答の例です。</span><span class="sxs-lookup"><span data-stu-id="1e3dc-163">Here is an example of the response.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
