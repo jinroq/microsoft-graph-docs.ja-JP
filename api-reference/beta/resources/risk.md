@@ -2,12 +2,14 @@
 title: リソースの種類のリスク
 description: レベルのリスク、リスクの状態を集約して、リスクの詳細、リスクの高いユーザーのサインイン、または、イベントのリスクです。
 localization_priority: Normal
-ms.openlocfilehash: da198ba27ca6cd0b762f322863f8c9bfd56a5cb7
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: cloudhandler
+ms.prod: security
+ms.openlocfilehash: 6f8fb05b39c14e3d56ddff211a5d35d77b87b814
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27810669"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27927269"
 ---
 # <a name="risk-resource-type"></a>リソースの種類のリスク
 

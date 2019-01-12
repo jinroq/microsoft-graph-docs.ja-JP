@@ -2,12 +2,14 @@
 title: registeredOwners を一覧表示する
 description: デバイスの登録済み所有者の一覧を取得します。 登録済み所有者は、デバイスがクラウドに参加済みか、または個人用デバイスが登録済みのユーザーです。 登録済み所有者は、登録時に設定されます。 現在、所有者は 1 人しかいることができません。
 localization_priority: Normal
-ms.openlocfilehash: a0b4fac3ef36ac3137307186ab736b812e5f0274
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: lleonard-msft
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: ebf6350de33d2dfa70f9c098cd618abf7d7df4ce
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27833342"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27931714"
 ---
 # <a name="list-registeredowners"></a>registeredOwners を一覧表示する
 

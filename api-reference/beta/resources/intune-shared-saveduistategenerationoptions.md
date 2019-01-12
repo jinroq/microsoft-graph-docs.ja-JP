@@ -3,12 +3,13 @@ title: savedUIStateGenerationOptions 列挙型
 description: まだ文書化されていません
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: c7be5f3cb3ddc8d166c6979448420c0430ba5366
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 6cbd7ea22a690fc102efb2b3c012bbdce83c6ab4
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27838200"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27933254"
 ---
 # <a name="saveduistategenerationoptions-enum-type"></a>savedUIStateGenerationOptions 列挙型
 

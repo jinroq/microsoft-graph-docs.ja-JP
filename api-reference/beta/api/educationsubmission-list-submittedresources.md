@@ -3,12 +3,13 @@ title: リスト submittedResources
 description: グレーディングを正式に提出したリソースの一覧を表示します。 提出書類を所有している受講生受講者は、割り当てを再実行せず、提出済みのリストを変更できません。 これは実際のリソースのラッパーであり、このリソースは割り当てからコピーされた場合、実際の割り当てのリソースに戻るポインターを含めることができます。
 author: dipakboyed
 localization_priority: Normal
-ms.openlocfilehash: da036713e6683aaef6576145dfe32b3b6eeaf11e
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: education
+ms.openlocfilehash: a798ea45ca88520954bbde20a264fff9455f3102
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27824144"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27934990"
 ---
 # <a name="list-submittedresources"></a>リスト submittedResources
 

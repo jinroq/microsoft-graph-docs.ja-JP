@@ -3,12 +3,13 @@ title: managedIOSStoreApp の更新
 description: managedIOSStoreApp オブジェクトのプロパティを更新します。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: e7f46d334eb1842b96d764d1e7865a6840978965
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: d6b756561e88d41350422e1d1c1c8a9a4bc81478
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27825061"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27936005"
 ---
 # <a name="update-managediosstoreapp"></a>managedIOSStoreApp の更新
 

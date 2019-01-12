@@ -3,12 +3,13 @@ title: person リソースの種類
 description: メール、連絡先、ソーシャル ネットワークの間でのユーザーに関する情報を集計します。 ユーザーは、個人用の連絡先、ソーシャル ネットワー キングの連絡先、組織のディレクトリ、およびユーザーの最新の通信 (電子メール、Skype など) を使用できます。
 author: simonhult
 localization_priority: Normal
-ms.openlocfilehash: c0318986b01704501a2b7910888d6a5e962a5dca
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: insights
+ms.openlocfilehash: 7f0f3c71769d2ad8927f634b065253cf118316b4
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27865381"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27929383"
 ---
 # <a name="person-resource-type"></a>person リソースの種類
 

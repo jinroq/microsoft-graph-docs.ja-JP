@@ -3,12 +3,13 @@ title: conversationThread リソースの種類
 description: onversationThread は、投稿のコレクションです。
 author: dkershaw10
 localization_priority: Normal
-ms.openlocfilehash: 1101bb56e69b6418cfd57e719cf1633fa76b161c
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: groups
+ms.openlocfilehash: d541d4ac47272c2825602b28526b2b7c9d5f3fcb
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27845270"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27933555"
 ---
 # <a name="conversationthread-resource-type"></a>conversationThread リソースの種類
 

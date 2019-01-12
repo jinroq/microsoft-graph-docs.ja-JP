@@ -3,12 +3,13 @@ title: windows81GeneralConfiguration の取得
 description: windows81GeneralConfiguration オブジェクトのプロパティとリレーションシップを読み取ります。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: af82b508083a1bb7f90633822438129f337525f7
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: dd89ffdb06343679958768a86df678fdcdc6602e
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27847482"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27938504"
 ---
 # <a name="get-windows81generalconfiguration"></a>windows81GeneralConfiguration の取得
 

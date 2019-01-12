@@ -3,12 +3,13 @@ title: WindowsAppX を作成します。
 description: 新しい windowsAppX オブジェクトを作成します。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: cd6e79a3dfda5d222a56646901a4efe07101aec5
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: d9534e1a85e77e320e14cabb1a0473c37c1be1ec
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27854244"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27939799"
 ---
 # <a name="create-windowsappx"></a>WindowsAppX を作成します。
 

@@ -2,12 +2,14 @@
 title: メンバーを一覧表示する
 description: グループの直接メンバーの一覧を取得します。 グループでは、メンバーとしてユーザー、連絡先、およびその他のグループを持つことができます。
 localization_priority: Priority
-ms.openlocfilehash: d7dfaede0e9deae6806499b504c6a58da2381ef5
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: dkershaw10
+ms.prod: groups
+ms.openlocfilehash: 70bf3040402c03dc1918d271a2abb8e4adb5d40b
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27833286"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27936530"
 ---
 # <a name="list-members"></a>メンバーを一覧表示する
 グループの直接メンバーの一覧を取得します。グループは、ユーザー、連絡先、および他のグループをメンバーとして持つことができます。この操作は推移的ではありません。

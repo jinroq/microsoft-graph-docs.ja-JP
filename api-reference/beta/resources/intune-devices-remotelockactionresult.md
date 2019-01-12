@@ -3,12 +3,13 @@ title: remoteLockActionResult リソースの種類
 description: ロック解除するためのピンが含まれるアクション結果のロック。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 0feb3c4474e543b4da462ddab499c4e8fff5f0cf
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 0ed8931153c70cea877e8db82ed794301664cbd6
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27875342"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27937776"
 ---
 # <a name="remotelockactionresult-resource-type"></a>remoteLockActionResult リソースの種類
 

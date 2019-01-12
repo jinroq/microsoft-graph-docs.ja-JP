@@ -3,12 +3,13 @@ title: androidForWorkScepCertificateProfile リソースの種類
 description: Android の作業 SCEP 証明書プロファイル
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 8e1a3c8c3254f360920aaab7a139efee342f6060
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 9d3cf559345c59f5ce79ce694ac9fe6a4e80a5aa
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27868980"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27932862"
 ---
 # <a name="androidforworkscepcertificateprofile-resource-type"></a>androidForWorkScepCertificateProfile リソースの種類
 

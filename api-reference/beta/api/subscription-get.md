@@ -2,12 +2,13 @@
 title: サブスクリプションを取得する
 description: サブスクリプションのプロパティとリレーションシップを取得します。
 localization_priority: Normal
-ms.openlocfilehash: 0feb4ffd49099eabb92e5519b25233100f2acbe5
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: piotrci
+ms.openlocfilehash: 165fd990d7dbec64eb61b9e06d05b51b40bf1212
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27846838"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27934885"
 ---
 # <a name="get-subscription"></a>サブスクリプションを取得する
 

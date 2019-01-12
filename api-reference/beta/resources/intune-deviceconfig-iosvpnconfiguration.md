@@ -3,12 +3,13 @@ title: iosVpnConfiguration リソースの種類
 description: このプロファイルの構成を提供することによって必要な VPN エンドポイントに接続するための iOS デバイスに指示できます。 指定する認証方法とセキュリティの種類必要 VPN エンドポイントで行うことができます、VPN 接続シームレスなエンド ・ ユーザーのです。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 4ab5b53c47022b106bbe337254d6f0b1043f83c4
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 2cc9269a7e1c096b9378ed8baac32f91e4652858
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27849519"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27939078"
 ---
 # <a name="iosvpnconfiguration-resource-type"></a>iosVpnConfiguration リソースの種類
 

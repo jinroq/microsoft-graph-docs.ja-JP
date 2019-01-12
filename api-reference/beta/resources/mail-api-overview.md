@@ -2,12 +2,14 @@
 title: Outlook メールの REST API を使用します。
 description: Graph では、個人または組織のアカウントのユーザーの Outlook のメール データへのアクセスの認証を取得するアプリを使用できます。
 localization_priority: Priority
-ms.openlocfilehash: 3e81e83389dec5177cc135188889014581504223
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: angelgolfer-ms
+ms.prod: outlook
+ms.openlocfilehash: 96d2924846adebaae0ed435aed7dcf65934db81a
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27827119"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27933016"
 ---
 # <a name="use-the-outlook-mail-rest-api"></a>Outlook メールの REST API を使用します。
 
