@@ -3,12 +3,13 @@ title: androidManagedStoreAccountEnterpriseSettings リソースの種類
 description: Android のエンタープライズの設定は、ストア アカウントを管理します。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: db31210da358a8b6b7ebc674699dab4c622ae670
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: a14f0327c4a4c4cf2bc78e56b63686208e97d4b1
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27869035"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27933815"
 ---
 # <a name="androidmanagedstoreaccountenterprisesettings-resource-type"></a>androidManagedStoreAccountEnterpriseSettings リソースの種類
 
@@ -29,7 +30,7 @@ Android のエンタープライズの設定は、ストア アカウントを�
 |[createGooglePlayWebToken アクション](../api/intune-androidforwork-androidmanagedstoreaccountenterprisesettings-creategoogleplaywebtoken.md)|String|組み込み可能なコンポーネントで使用される web トークンを生成します。|
 
 ## <a name="properties"></a>プロパティ
-|プロパティ|種類|説明|
+|プロパティ|型|説明|
 |:---|:---|:---|
 |ID|String|アカウントのエンタープライズ設定の識別子を格納する、アプリ|
 |bindStatus|[androidManagedStoreAccountBindStatus](../resources/intune-androidforwork-androidmanagedstoreaccountbindstatus.md)|Google の EMM の API を使用してテナントの状態をバインドします。 可能な値は、`notBound`、`bound`、`boundAndValidated`、`unbinding` です。|
@@ -40,7 +41,7 @@ Android のエンタープライズの設定は、ストア アカウントを�
 |lastModifiedDateTime|DateTimeOffset|Android エンタープライズ設定の最終変更時刻|
 |enrollmentTarget|[androidManagedStoreAccountEnrollmentTarget](../resources/intune-androidforwork-androidmanagedstoreaccountenrollmenttarget.md)|Android エンタープライズ デバイスの管理デバイスを登録できるユーザーを示します。 可能な値は、`none`、`all`、`targeted`、`targetedAsEnrollmentRestrictions` です。|
 |targetGroupIds|String コレクション|enrollmentTarget が 'Targeted' に設定されている場合、どの AAD グループが Android for Work デバイス管理にデバイスを登録できるかを指定します。|
-|deviceOwnerManagementEnabled|ブール型|このアカウントを CloudDPC に Android のデバイスの所有者の管理の flighting かどうかを示します。|
+|deviceOwnerManagementEnabled|Boolean|このアカウントを CloudDPC に Android のデバイスの所有者の管理の flighting かどうかを示します。|
 
 ## <a name="relationships"></a>リレーションシップ
 なし

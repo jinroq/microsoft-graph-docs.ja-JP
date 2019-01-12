@@ -2,12 +2,14 @@
 title: 'メッセージ: createReplyAll'
 description: 指定したメッセージの差出人とすべの受信者に対して返信するための下書きを作成します。 **本文**への返信の内容を追加またはその他のメッセージのプロパティを変更するのには下書きを更新したり、単に下書きを送信できます。
 localization_priority: Normal
-ms.openlocfilehash: d09de032dc515173219a00b19a64d64ba0b72195
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: angelgolfer-ms
+ms.prod: outlook
+ms.openlocfilehash: 29bfb2b7d8e24619e5d5be53d88ce3ae3ee1ce9e
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27804782"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27938707"
 ---
 # <a name="message-createreplyall"></a>メッセージ: createReplyAll
 
@@ -31,7 +33,7 @@ POST /me/mailFolders/{id}/messages/{id}/createReplyAll
 POST /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/createReplyAll
 ```
 ## <a name="request-headers"></a>要求ヘッダー
-| 名前       | 種類 | 説明|
+| 名前       | 型 | 説明|
 |:---------------|:--------|:----------|
 | Authorization  | string  | ベアラー {トークン}。必須。 |
 

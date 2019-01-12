@@ -3,12 +3,13 @@ title: IosLobAppProvisioningConfigurationAssignment を更新します。
 description: IosLobAppProvisioningConfigurationAssignment オブジェクトのプロパティを更新します。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: aa713ab3293cfcb922d8e85306bcf2645b549450
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 17611395a64007475c457e76ddce309c3b1f9306
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27832579"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27939855"
 ---
 # <a name="update-ioslobappprovisioningconfigurationassignment"></a>IosLobAppProvisioningConfigurationAssignment を更新します。
 
@@ -46,7 +47,7 @@ PATCH /deviceAppManagement/iosLobAppProvisioningConfigurations/{iosLobAppProvisi
 
 [IosLobAppProvisioningConfigurationAssignment](../resources/intune-apps-ioslobappprovisioningconfigurationassignment.md)を作成するときに必要なプロパティを次の表に示します。
 
-|プロパティ|種類|説明|
+|プロパティ|型|説明|
 |:---|:---|:---|
 |ID|String|エンティティのキー。|
 |target|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|管理者によって定義された、ターゲット グループの割り当て。|

@@ -2,12 +2,14 @@
 title: ディレクトリ設定のテンプレートを取得します。
 description: ディレクトリ設定のテンプレートでは、テナント内で元の設定を作成する可能性があります設定のテンプレートを表します。 この操作には、使用可能な設定とその既定値を含む directorySettingTemplate オブジェクトのプロパティの取得が可能します。
 localization_priority: Normal
-ms.openlocfilehash: 55312fd4d7e2a77821dc7ad18ca3f67bded261df
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: lleonard-msft
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: 2fb9f8edbc374760f16496bd9ec5bcf666a09883
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27888173"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27935676"
 ---
 # <a name="get-a-directory-setting-template"></a>ディレクトリ設定のテンプレートを取得します。
 

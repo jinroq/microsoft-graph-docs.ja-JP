@@ -2,12 +2,14 @@
 title: AccessReview を停止します。
 description: Azure AD のレビュー機能にアクセス、現在アクティブな accessReview を停止します。  ターゲット オブジェクトは、1 回限りのアクセスの確認、または定期的なアクセス確認のインスタンスのいずれかにできます。  (定期的なアクセス確認が将来のインスタンスを開始しないように、更新のスケジュールされた終了日を変更するのには)。  アクセスの後、停止を確認、レビュー担当者は、入力を与えることが不要になったアクセス レビューの決定を適用することができます。
 localization_priority: Normal
-ms.openlocfilehash: 57c0473b58b8ca4bbbb4e9f182b7da4582af4c38
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: lleonard-msft
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: 8d71796272cf9852683688a47f3d78eebd849357
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27860117"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27941465"
 ---
 # <a name="stop-accessreview"></a>AccessReview を停止します。
 
@@ -29,7 +31,7 @@ Azure AD[アクセスの確認](../resources/accessreviews-root.md)機能では�
 POST /accessReviews('<id>')/stop()
 ```
 ## <a name="request-headers"></a>要求ヘッダー
-| 名前         | 種類        | 説明 |
+| 名前         | 型        | 説明 |
 |:-------------|:------------|:------------|
 | Authorization | string | ベアラー\{トークン\}。 必須。 |
 

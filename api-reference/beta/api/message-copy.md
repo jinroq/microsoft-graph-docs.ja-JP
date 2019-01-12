@@ -3,12 +3,13 @@ title: 'メッセージ: copy'
 description: メッセージをフォルダーにコピーします。
 author: angelgolfer-ms
 localization_priority: Normal
-ms.openlocfilehash: a713238abe0ab4ccd4ef3ec032e73fe2d83a062e
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: outlook
+ms.openlocfilehash: cacc827079089cf977a28f5bb45bb1ac62884275
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27846707"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27934717"
 ---
 # <a name="message-copy"></a>メッセージ: copy
 
@@ -48,7 +49,7 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/copy
 
 要求本文で、次のパラメーターを含む JSON オブジェクトを指定します。
 
-| パラメーター | Type | 説明 |
+| パラメーター | 型 | 説明 |
 |:----------|:-----|:------------|
 |destinationId|String|移動先のフォルダー ID、またはよく知られているフォルダー名です。 サポートされている既知のフォルダー名の一覧については、「[mailFolder リソースの種類](../resources/mailfolder.md)」を参照してください。|
 

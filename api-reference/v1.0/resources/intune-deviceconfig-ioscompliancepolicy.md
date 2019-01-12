@@ -3,12 +3,13 @@ title: iosCompliancePolicy リソースの種類
 description: このクラスには、iOS のコンプライアンス設定が含まれています。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 45cea2abeae99f918ff15bcc5fae9e40b9fc7e34
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 1e5a2ef72769694d2dd4c5d7ae6e296d429c49b5
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27872710"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27935956"
 ---
 # <a name="ioscompliancepolicy-resource-type"></a>iosCompliancePolicy リソースの種類
 
@@ -28,7 +29,7 @@ ms.locfileid: "27872710"
 |[iosCompliancePolicy の更新](../api/intune-deviceconfig-ioscompliancepolicy-update.md)|[iosCompliancePolicy](../resources/intune-deviceconfig-ioscompliancepolicy.md)|[iosCompliancePolicy](../resources/intune-deviceconfig-ioscompliancepolicy.md) オブジェクトのプロパティを更新します。|
 
 ## <a name="properties"></a>プロパティ
-|プロパティ|種類|説明|
+|プロパティ|型|説明|
 |:---|:---|:---|
 |ID|String|エンティティのキー。 [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md) から継承します|
 |createdDateTime|DateTimeOffset|オブジェクトが作成された DateTime。 [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md) から継承します|

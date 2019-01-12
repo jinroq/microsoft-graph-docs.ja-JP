@@ -3,12 +3,13 @@ title: 'ChartSeriesCollection: ItemAt'
 description: コレクション内の位置に基づいてデータ系列を取得します。
 author: lumine2008
 localization_priority: Normal
-ms.openlocfilehash: 31a5f3608bdbad379584dec26b6551009fd7fa6c
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: excel
+ms.openlocfilehash: a564a23161cac3a8c750223a75c6fee4ad429b1a
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27813924"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27936432"
 ---
 # <a name="chartseriescollection-itemat"></a>ChartSeriesCollection: ItemAt
 
@@ -39,7 +40,7 @@ POST /workbook/worksheets/{id|name}/charts(<name>)/series/ItemAt
 ## <a name="request-body"></a>要求本文
 要求本文で、次のパラメーターを含む JSON オブジェクトを指定します。
 
-| パラメーター    | Type   |説明|
+| パラメーター    | 型   |説明|
 |:---------------|:--------|:----------|
 |index|number|取得するオブジェクトのインデックス値。0 を起点とする番号になります。|
 

@@ -2,12 +2,14 @@
 title: androidCustomConfiguration リソースの種類
 description: このトピックでは、androidCustomConfiguration リソースによって公開された、宣言されたメソッド、プロパティ、リレーションシップについて説明します。
 localization_priority: Normal
-ms.openlocfilehash: 0f707f8369cfd1b56dd3c0a7d941a2ab9b7c12dd
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: tfitzmac
+ms.prod: intune
+ms.openlocfilehash: d500abaccf38af998c64bd756075d4b0f8d2ca94
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27811082"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27941948"
 ---
 # <a name="androidcustomconfiguration-resource-type"></a>androidCustomConfiguration リソースの種類
 
@@ -27,7 +29,7 @@ ms.locfileid: "27811082"
 |[androidCustomConfiguration の更新](../api/intune-deviceconfig-androidcustomconfiguration-update.md)|[androidCustomConfiguration](../resources/intune-deviceconfig-androidcustomconfiguration.md)|[androidCustomConfiguration](../resources/intune-deviceconfig-androidcustomconfiguration.md) オブジェクトのプロパティを更新します。|
 
 ## <a name="properties"></a>プロパティ
-|プロパティ|種類|説明|
+|プロパティ|型|説明|
 |:---|:---|:---|
 |ID|String|エンティティのキー。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |lastModifiedDateTime|DateTimeOffset|オブジェクトが最後に変更された DateTime。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|

@@ -2,12 +2,14 @@
 title: Bookingservice を更新します。
 description: " > **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。"
 localization_priority: Normal
-ms.openlocfilehash: 6eee5949d5d8cee23821d726563b4687febd77a7
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: angelgolfer-ms
+ms.prod: bookings
+ms.openlocfilehash: 6830ebc8fc101c4c9ce60f6157ed6bfdab82748c
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27838921"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27937041"
 ---
 # <a name="update-bookingservice"></a>Bookingservice を更新します。
 
@@ -44,7 +46,7 @@ PATCH /bookingBusinesses/{id}/services/{id}
 ## <a name="request-body"></a>要求本文
 要求本文で、更新する関連フィールドの値を指定します。要求本文に含まれない既存のプロパティは、以前の値のままになるか、他のプロパティ値の変化に基づいて再計算されます。最適なパフォーマンスを得るためには、変更されていない既存の値を含めないでください。
 
-| プロパティ     | 種類   |説明|
+| プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
 |defaultDuration|Duration|日、時間、分、秒単位の数値で表される、サービスの既定の長さです。 たとえば、P11D23H59M59.999999999999S です。 |
 |defaultLocation|[location](../resources/location.md)|サービスの既定の物理的な場所です。|
@@ -55,7 +57,7 @@ PATCH /bookingBusinesses/{id}/services/{id}
 |displayName|String|サービスの名前です。|
 |emailAddress|String|電子メール アドレス|
 |id|String| 読み取り専用です。|
-|isHiddenFromCustomers|ブール型|True は、このサービスは予約のお客様に利用できないことを意味します。|
+|isHiddenFromCustomers|Boolean|True は、このサービスは予約のお客様に利用できないことを意味します。|
 |notes|String|このサービスに関する追加情報。|
 |事後バッファリング|Duration|このサービスの予定の後のバッファーに時間が終了して、次の前に顧客の予定が予約できます。|
 |事前バッファリング|Duration|このサービスに対する予定を開始する前に、バッファーに格納する時間です。|

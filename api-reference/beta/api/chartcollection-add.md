@@ -3,12 +3,13 @@ title: 'ChartCollection: add'
 description: 新しいグラフを作成します。
 author: lumine2008
 localization_priority: Normal
-ms.openlocfilehash: 51ad28568abe7445a85f813698736130f04ac48e
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: excel
+ms.openlocfilehash: 19ab5936b563fc491e08923d257d334d9932af98
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27892422"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27936579"
 ---
 # <a name="chartcollection-add"></a>ChartCollection: add
 
@@ -39,7 +40,7 @@ POST /workbook/worksheets/{id|name}/charts/add
 ## <a name="request-body"></a>要求本文
 要求本文で、次のパラメーターを含む JSON オブジェクトを指定します。
 
-| パラメーター    | Type   |説明|
+| パラメーター    | 型   |説明|
 |:---------------|:--------|:----------|
 |type|文字列|グラフの種類を表します。可能な値は、`ColumnClustered`、`ColumnStacked`、`ColumnStacked100`、`BarClustered`、`BarStacked`、`BarStacked100`、`LineStacked`、`LineStacked100`、`LineMarkers`、`LineMarkersStacked`、`LineMarkersStacked100`、`PieOfPie`、`etc.` です。|
 |sourceData|文字列|データ ソースに対応する Range オブジェクトです。|

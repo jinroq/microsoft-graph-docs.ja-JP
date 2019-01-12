@@ -3,12 +3,13 @@ title: localizedNotificationMessage リソースの種類
 description: 指定されたロケールの通知メッセージ テンプレートのテキスト コンテンツ。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: dc4bf6df2d4ec8d19c80b5b2b12d7f2af3b6a9c9
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 90a8212abc0ae1cd2f504ffb5419e16a713aa2aa
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27860285"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27946960"
 ---
 # <a name="localizednotificationmessage-resource-type"></a>localizedNotificationMessage リソースの種類
 
@@ -25,7 +26,7 @@ ms.locfileid: "27860285"
 |[Update localizedNotificationMessage](../api/intune-notification-localizednotificationmessage-update.md)|[localizedNotificationMessage](../resources/intune-notification-localizednotificationmessage.md)|[localizedNotificationMessage](../resources/intune-notification-localizednotificationmessage.md) オブジェクトのプロパティを更新します。|
 
 ## <a name="properties"></a>プロパティ
-|プロパティ|種類|説明|
+|プロパティ|型|説明|
 |:---|:---|:---|
 |ID|String|エンティティのキー。|
 |lastModifiedDateTime|DateTimeOffset|オブジェクトの最終更新の DateTime。|

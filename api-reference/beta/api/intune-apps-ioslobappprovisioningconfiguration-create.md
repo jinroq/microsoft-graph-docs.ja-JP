@@ -3,12 +3,13 @@ title: IosLobAppProvisioningConfiguration を作成します。
 description: 新しい iosLobAppProvisioningConfiguration オブジェクトを作成します。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 7879cc256a041b960f8d4e728e19bfa5f4f0ffe7
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: d5a39a91156ebba649a3463568517d9b55a7fdfa
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27809101"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27944762"
 ---
 # <a name="create-ioslobappprovisioningconfiguration"></a>IosLobAppProvisioningConfiguration を作成します。
 
@@ -46,7 +47,7 @@ POST /deviceAppManagement/iosLobAppProvisioningConfigurations
 
 次の表は、iosLobAppProvisioningConfiguration を作成するときに必要なプロパティを示します。
 
-|プロパティ|種類|説明|
+|プロパティ|型|説明|
 |:---|:---|:---|
 |ID|String|エンティティのキー。|
 |expirationDateTime|DateTimeOffset|省略可能なプロファイルの有効期限の日付と時刻。|

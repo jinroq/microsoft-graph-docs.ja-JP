@@ -3,12 +3,13 @@ title: MobileAppInstallStatus を更新します。
 description: MobileAppInstallStatus オブジェクトのプロパティを更新します。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: a60bcf69ded37ea0b4a04430c6a837bb6df95100
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: efd71732f0a61f807be71ac4657eafdb921fd0f6
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27817949"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27934563"
 ---
 # <a name="update-mobileappinstallstatus"></a>MobileAppInstallStatus を更新します。
 
@@ -47,7 +48,7 @@ PATCH /deviceAppManagement/mobileApps/{mobileAppId}/userStatuses/{userAppInstall
 
 [MobileAppInstallStatus](../resources/intune-apps-mobileappinstallstatus.md)を作成するときに必要なプロパティを次の表に示します。
 
-|プロパティ|種類|説明|
+|プロパティ|型|説明|
 |:---|:---|:---|
 |ID|String|エンティティのキー。|
 |deviceName|String|デバイス名|

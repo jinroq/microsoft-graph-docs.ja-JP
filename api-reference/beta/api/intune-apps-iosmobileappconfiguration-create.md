@@ -3,12 +3,13 @@ title: iosMobileAppConfiguration の作成
 description: 新しい iosMobileAppConfiguration オブジェクトを作成します。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: dd5c5aabb8e23e4e9d4adf781c59847f5edc10eb
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 3e9668794b582479fdc4ab0cee50519a1c1e12ca
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27854363"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27939946"
 ---
 # <a name="create-iosmobileappconfiguration"></a>iosMobileAppConfiguration の作成
 
@@ -46,7 +47,7 @@ POST /deviceAppManagement/mobileAppConfigurations
 
 次の表に、iosMobileAppConfiguration の作成時に必要なプロパティを示します。
 
-|プロパティ|種類|説明|
+|プロパティ|型|説明|
 |:---|:---|:---|
 |ID|String|エンティティのキー。 [managedDeviceMobileAppConfiguration](../resources/intune-apps-manageddevicemobileappconfiguration.md) から継承されます|
 |targetedMobileApps|String コレクション|関連するアプリです。 [managedDeviceMobileAppConfiguration](../resources/intune-apps-manageddevicemobileappconfiguration.md) から継承されます|

@@ -3,12 +3,13 @@ title: managedDeviceEnrollmentAbandonmentDetails 関数
 description: 登録放棄の詳細レポートのメタデータ
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 0f3913bee2e3adae3932ff1ad6b036a3f96482ea
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 8e2031657c3aff7d09d126b6eff01beaf34813a0
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27840790"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27939911"
 ---
 # <a name="manageddeviceenrollmentabandonmentdetails-function"></a>managedDeviceEnrollmentAbandonmentDetails 関数
 
@@ -46,7 +47,7 @@ GET /reports/managedDeviceEnrollmentAbandonmentDetails
 要求 URL で、次のクエリ パラメーターに値を指定します。
 次の表に、この関数で使用できるパラメーターを示します。
 
-|プロパティ|種類|説明|
+|プロパティ|型|説明|
 |:---|:---|:---|
 |skip|Int32|まだ文書化されていません|
 |top|Int32|まだ文書化されていません|

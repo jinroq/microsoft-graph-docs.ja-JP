@@ -4,12 +4,13 @@ ms.author: rgregg
 ms.date: 09/10/2017
 title: ファイルをリンクで共有する
 localization_priority: Normal
-ms.openlocfilehash: 03da273e25791e57ca3eaede86559a4e02675e16
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: sharepoint
+ms.openlocfilehash: 75403c44a0d69269d7fe11b947da2f17b013dd3f
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27875314"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27940408"
 ---
 # <a name="create-a-sharing-link-for-a-driveitem"></a>DriveItem の共有リンクを作成する
 
@@ -48,7 +49,7 @@ POST /users/{userId}/drive/items/{itemId}/createLink
 要求本文はアプリケーションが要求する共有リンクのプロパティを定義します。
 要求は、次のプロパティを含む JSON オブジェクトである必要があります。
 
-|   名前    |  種類  |                                 説明                                  |
+|   名前    |  型  |                                 説明                                  |
 | :-------- | :----- | :--------------------------------------------------------------------------- |
 | **type**  | string | 作成する共有リンクの種類。`view`、`edit`、または `embed` です。       |
 | **scope** | string | 省略可能。 作成するリンクのスコープ。 `anonymous` または `organization` のどちらかです。 |

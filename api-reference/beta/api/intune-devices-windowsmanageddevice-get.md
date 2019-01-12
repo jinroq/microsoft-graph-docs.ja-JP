@@ -3,12 +3,13 @@ title: WindowsManagedDevice を取得します。
 description: WindowsManagedDevice オブジェクトのプロパティと関係を参照してください。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 639b67d9feddb83835c5da5f2a39a3454f47d19b
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: de8a60fd27e884c3e3d205bef39b86218b402d48
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27886598"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27944580"
 ---
 # <a name="get-windowsmanageddevice"></a>WindowsManagedDevice を取得します。
 

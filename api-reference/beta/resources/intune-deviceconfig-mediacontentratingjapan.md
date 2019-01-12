@@ -3,12 +3,13 @@ title: mediaContentRatingJapan リソースの種類
 description: まだ文書化されていません
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 8877e1b5f2c6031725c07a02b387da4ce5bc9136
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 202b778fefe1236577f61058025714ea0f337826
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27856530"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27943019"
 ---
 # <a name="mediacontentratingjapan-resource-type"></a>mediaContentRatingJapan リソースの種類
 
@@ -18,7 +19,7 @@ ms.locfileid: "27856530"
 
 まだ文書化されていません
 ## <a name="properties"></a>プロパティ
-|プロパティ|種類|説明|
+|プロパティ|型|説明|
 |:---|:---|:---|
 |movieRating|[ratingJapanMoviesType](../resources/intune-deviceconfig-ratingjapanmoviestype.md)|評価日本の選択したムービーです。 使用可能な値: `allAllowed`、`allBlocked`、`general`、`parentalGuidance`、`agesAbove15`、`agesAbove18`。|
 |tvRating|[ratingJapanTelevisionType](../resources/intune-deviceconfig-ratingjapantelevisiontype.md)|テレビの視聴制限が日本用に選択します。 可能な値は、`allAllowed`、`allBlocked`、`explicitAllowed` です。|

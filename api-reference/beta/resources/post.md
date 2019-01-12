@@ -3,12 +3,13 @@ title: post リソース タイプ
 description: ConverstaionThread エンティティ内の個々 の投稿アイテムを表します。
 author: dkershaw10
 localization_priority: Normal
-ms.openlocfilehash: 1912917347697a6f78876175e6fe9f9c160869e6
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: groups
+ms.openlocfilehash: 46e33021d0929e1bd665f8256f0874e8e8c92809
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27834042"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27942417"
 ---
 # <a name="post-resource-type"></a>post リソース タイプ
 
@@ -61,7 +62,7 @@ ms.locfileid: "27834042"
 
 ```
 ## <a name="properties"></a>プロパティ
-| プロパティ     | 種類   |説明|
+| プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
 |body|[itemBody](itembody.md)|投稿の内容です。これが既定のプロパティです。このプロパティを null にすることができます。|
 |categories|String コレクション|投稿に関連付けられたカテゴリ。 各カテゴリは、ユーザーが定義されている[outlookCategory](outlookcategory.md)の**表示名**のプロパティに対応します。|
@@ -70,7 +71,7 @@ ms.locfileid: "27834042"
 |conversationThreadId|String|会話スレッドの固有 ID です。読み取り専用。|
 |createdDateTime|DateTimeOffset|投稿の作成時刻を示します。DateTimeOffset 型は、ISO 8601 形式を使用して日付と時刻の情報を表し、常に UTC 時間です。たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、次のようになります。`'2014-01-01T00:00:00Z'`|
 |from|[recipient](recipient.md)|代理人アクセスのシナリオで使用されます。他のユーザーの代わりにメッセージを投稿したユーザーを示します。これが既定のプロパティです。|
-|hasAttachments|ブール型|投稿の添付ファイルが 1 つ以上あるかどうかを示します。これが既定のプロパティです。|
+|hasAttachments|Boolean|投稿の添付ファイルが 1 つ以上あるかどうかを示します。これが既定のプロパティです。|
 |id|String| 読み取り専用。|
 |importance | String | グループのポストの重要性: `low`、 `normal`、 `high`。 |
 |lastModifiedDateTime|DateTimeOffset|投稿が最後に修正された日時を指定します。DateTimeOffset 型は、ISO 8601 形式を使用して日付と時刻の情報を表し、常に UTC 時間です。たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、次のようになります。`'2014-01-01T00:00:00Z'`|

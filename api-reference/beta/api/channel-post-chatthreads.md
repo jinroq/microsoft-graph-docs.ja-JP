@@ -3,12 +3,13 @@ title: チャットのスレッドを作成します。
 description: ルート メッセージを指定することによって、指定されたチャネルでチャットの新しいスレッドを作成します。
 author: nkramer
 localization_priority: Priority
-ms.openlocfilehash: edd3c99376a93b2c4405d97b6435cfd9a128ae8b
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: microsoft-teams
+ms.openlocfilehash: d748826b98336feffcded345f356663f8fb80f4f
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27809073"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27946358"
 ---
 # <a name="create-chat-thread"></a>チャットのスレッドを作成します。
 
@@ -33,7 +34,7 @@ ms.locfileid: "27809073"
 POST /teams/{id}/channels/{id}/chatThreads
 ```
 ## <a name="request-headers"></a>要求ヘッダー
-| 名前       | 種類 | 説明|
+| 名前       | 型 | 説明|
 |:---------------|:--------|:----------|
 | Authorization  | string  | ベアラー {トークン}。必須。 |
 

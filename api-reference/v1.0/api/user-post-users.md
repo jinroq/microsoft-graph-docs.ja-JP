@@ -3,12 +3,13 @@ title: ユーザーを作成する
 description: 新しいユーザーを作成するのにには、この API を使用します。
 author: dkershaw10
 localization_priority: Priority
-ms.openlocfilehash: 218752a382da4ccb2bdbe240c8c57d03007b0169
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: 66499d47fc2458debc8d2c234738e6a7b0a18c64
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27851654"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27945595"
 ---
 # <a name="create-user"></a>ユーザーを作成する
 
@@ -38,7 +39,7 @@ POST /users
 
 次の表に、ユーザーの作成時に必要になるプロパティを示します。
 
-| パラメーター | Type | 説明|
+| パラメーター | 型 | 説明|
 |:---------------|:--------|:----------|
 |accountEnabled |ブール値 |アカウントが有効な場合は true。それ以外の場合は false。|
 |displayName |string |ユーザーのアドレス帳に表示される名前。|

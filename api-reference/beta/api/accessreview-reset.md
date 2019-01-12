@@ -2,12 +2,14 @@
 title: AccessReview をリセットします。
 description: Azure AD アクセスでは、レビュー機能は、現在アクティブな accessReview の決定をリセットします。  ターゲット オブジェクトは、1 回限りのアクセスの確認、または定期的なアクセス確認のインスタンスのいずれかにできます。  以前の決定は記録されなくが、校閲者が意思決定を更新するのには続行できます。
 localization_priority: Normal
-ms.openlocfilehash: 750b9e4da130a087350b7b78c53e71c835d12be1
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: lleonard-msft
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: 0b1f107733543380dbd6ad095133f09befc03736
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27809577"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27941493"
 ---
 # <a name="reset-accessreview"></a>AccessReview をリセットします。
 
@@ -30,7 +32,7 @@ Azure AD では、 [access](../resources/accessreviews-root.md)の機能は、�
 POST /accessReviews('<id>')/resetDecisions()
 ```
 ## <a name="request-headers"></a>要求ヘッダー
-| 名前         | 種類        | 説明 |
+| 名前         | 型        | 説明 |
 |:-------------|:------------|:------------|
 | Authorization | string | ベアラー\{トークン\}。 必須。 |
 

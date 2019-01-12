@@ -3,12 +3,13 @@ title: enableLostMode アクション
 description: 失われるモードを有効にします。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: f8ba6a21466c2a612920754e18a0252ef8f2b826
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 0bd7d58a70d60b040b25dcb38574e16edb309599
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27807246"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27934325"
 ---
 # <a name="enablelostmode-action"></a>enableLostMode アクション
 
@@ -49,7 +50,7 @@ POST /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/device
 
 次の表に、このアクションで使用できるパラメーターを示します。
 
-|プロパティ|種類|説明|
+|プロパティ|型|説明|
 |:---|:---|:---|
 |message|String|まだ文書化されていません|
 |phoneNumber|String|まだ文書化されていません|

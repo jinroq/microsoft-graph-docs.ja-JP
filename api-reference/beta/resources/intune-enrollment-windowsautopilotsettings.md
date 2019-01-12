@@ -3,12 +3,13 @@ title: windowsAutopilotSettings リソースの種類
 description: WindowsAutopilotSettings リソースは、Windows デバイスのデータの同期サービスを使用してデータを同期する Windows 自動操縦のアカウントを表します。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 7beb1f04efe3b43067eb1cedeed7071561265ce6
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 4bf9a39d6a5078362c966edde38ec98deec037b0
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27881550"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27939554"
 ---
 # <a name="windowsautopilotsettings-resource-type"></a>windowsAutopilotSettings リソースの種類
 
@@ -25,7 +26,7 @@ WindowsAutopilotSettings リソースは、Windows デバイスのデータの�
 |[同期アクション](../api/intune-enrollment-windowsautopilotsettings-sync.md)|なし|まだ文書化されていません|
 
 ## <a name="properties"></a>プロパティ
-|プロパティ|種類|説明|
+|プロパティ|型|説明|
 |:---|:---|:---|
 |ID|String|オブジェクトの GUID|
 |lastSyncDateTime|DateTimeOffset|最後のデータは、DDS のサービスでの日付の時刻を同期します。|

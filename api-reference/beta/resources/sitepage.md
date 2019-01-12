@@ -4,12 +4,13 @@ ms.author: rahmit
 ms.date: 03/15/2018
 title: SitePage
 localization_priority: Normal
-ms.openlocfilehash: d4673138106e23afedb5ff0f28d8ce72fa2797b6
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: sharepoint
+ms.openlocfilehash: a756929212dbca04f16e9e4701e34bbd8d4de28f
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27871492"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27939239"
 ---
 # <a name="sitepage-resource"></a>sitePage リソース
 
@@ -76,7 +77,7 @@ ms.locfileid: "27871492"
 
 **SitePage**リソースでは、次のプロパティがあります。
 
-| プロパティ名    | Type                         | 説明
+| プロパティ名    | 型                         | 説明
 |:-----------------|:-----------------------------|:---------------------------
 | contentType      | [contentTypeInfo][]          | ページのコンテンツの種類です。
 
@@ -84,7 +85,7 @@ ms.locfileid: "27871492"
 
 **SitePage**リソースでは、次のコンテンツのフィールドがあります。
 
-| プロパティ名      | Type                       | 説明
+| プロパティ名      | 型                       | 説明
 |:-------------------|:---------------------------|:---------------------------
 | タイトル              | 文字列                     | ページのタイトル。
 | pageLayout         | 文字列                     | ページのページ レイアウトの名前。
@@ -94,13 +95,13 @@ ms.locfileid: "27871492"
 
 **SitePage**のリソースには、次の作成に関連するメタデータがあります。 PublishingState プロパティは、このようなチェック アウトされているか、公開の状態を作成するページに反映されます。
 
-| プロパティ名          | Type                   | 説明
+| プロパティ名          | 型                   | 説明
 |:-----------------------|:-----------------------|:---------------------------
 | publishingState        | [publicationFacet][]   | 発行のステータスと MM.mm バージョンのページです。
 
 次のプロパティは、**[baseItem][]** から継承しています。
 
-| プロパティ名        | Type              | 説明
+| プロパティ名        | 型              | 説明
 |:---------------------|:------------------|:----------------------------------
 | ID                   | 文字列            | アイテムの一意識別子。読み取り専用です。
 | name                 | 文字列            | アイテムの名前/タイトル。

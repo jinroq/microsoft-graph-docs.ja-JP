@@ -3,12 +3,13 @@ title: educationSynchronizationDataProvider リソースの種類
 description: 'ソース SIS のスキーマを表します。 これにより、受信データを Azure Active Directory (AD の Azure) スキーマにマップする方法を把握するシステムです。 '
 author: mmast-msft
 localization_priority: Normal
-ms.openlocfilehash: 692b0c17fe14dc63e0f6b3bceb0eb5291d307685
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: education
+ms.openlocfilehash: f49d263703751b5dabd82ab904b6d572e5a7b263
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27818040"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27940723"
 ---
 # <a name="educationsynchronizationdataprovider-resource-type"></a>educationSynchronizationDataProvider リソースの種類
 
@@ -19,7 +20,7 @@ ms.locfileid: "27818040"
 > **注:** この複合型は抽象です。 特定の種類の一覧のデータ プロバイダーを参照してください。
 
 ## <a name="derived-types"></a>派生型
-| Type | 説明 | 
+| 型 | 説明 | 
 |:-|:-|:-|
 | [educationcsvdataprovider](educationcsvdataprovider.md) | 入力ソースとして CSV ファイルを使用します。 |
 | [educationpowerschooldataprovider](educationpowerschooldataprovider.md) | 入力ソースとして PowerSchool を使用します。 |

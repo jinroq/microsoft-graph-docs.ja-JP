@@ -2,12 +2,14 @@
 title: 'orgContact: Get のマネージャー'
 description: 連絡先のマネージャーを取得します。
 localization_priority: Normal
-ms.openlocfilehash: 18839c2184bb92dae1e23f125885541408696c98
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: lleonard-msft
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: 8b660fabfe03d6e34897375f7f36470774f95450
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27826545"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27942893"
 ---
 # <a name="orgcontact-get-manager"></a>orgContact: Get のマネージャー
 
@@ -36,7 +38,7 @@ GET /contacts/{id}/manager
 このメソッドは、応答をカスタマイズするための [OData クエリ パラメーター](https://developer.microsoft.com/graph/docs/concepts/query_parameters)をサポートします。
 
 ## <a name="request-headers"></a>要求ヘッダー
-| 名前       | 種類 | 説明|
+| 名前       | 型 | 説明|
 |:-----------|:------|:----------|
 | Authorization  | string  | ベアラー {トークン}。必須。 |
 

@@ -3,12 +3,13 @@ title: mobileAppCategory の作成
 description: 新しい mobileAppCategory オブジェクトを作成します。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: a84d141a15a55d95d5429511a8db208f24ed984c
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 04224a40982a0802af88ceed61d3e121c531827b
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27887284"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27941304"
 ---
 # <a name="create-mobileappcategory"></a>mobileAppCategory の作成
 
@@ -47,7 +48,7 @@ POST /deviceAppManagement/mobileApps/{mobileAppId}/categories
 
 次の表に、mobileAppCategory の作成時に必要なプロパティを示します。
 
-|プロパティ|種類|説明|
+|プロパティ|型|説明|
 |:---|:---|:---|
 |ID|String|エンティティのキー。|
 |displayName|String|アプリのカテゴリの名前。|

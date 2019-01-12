@@ -3,12 +3,13 @@ title: iosCertificateProfile リソースの種類
 description: デバイス構成です。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 22220a327cdaf15943d749427dca3c8a39faa68d
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 9b5d2d84debc5aab8a4dce42d860a9232bc20fcb
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27823052"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27947394"
 ---
 # <a name="ioscertificateprofile-resource-type"></a>iosCertificateProfile リソースの種類
 
@@ -25,7 +26,7 @@ ms.locfileid: "27823052"
 |[iosCertificateProfile の取得](../api/intune-deviceconfig-ioscertificateprofile-get.md)|[iosCertificateProfile](../resources/intune-deviceconfig-ioscertificateprofile.md)|[iosCertificateProfile](../resources/intune-deviceconfig-ioscertificateprofile.md) オブジェクトのプロパティとリレーションシップを読み取ります。|
 
 ## <a name="properties"></a>プロパティ
-|プロパティ|種類|説明|
+|プロパティ|型|説明|
 |:---|:---|:---|
 |ID|String|エンティティのキー。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |lastModifiedDateTime|DateTimeOffset|オブジェクトが最後に変更された DateTime。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|

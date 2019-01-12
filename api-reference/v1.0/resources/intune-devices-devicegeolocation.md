@@ -3,12 +3,13 @@ title: deviceGeoLocation リソースの種類
 description: デバイスの場所
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 68e89b2e63b99324332874a3ad6a2f2e3c335832
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 248af3f66a78e3197a3f966225e864f5583f8597
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27816129"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27940954"
 ---
 # <a name="devicegeolocation-resource-type"></a>deviceGeoLocation リソースの種類
 
@@ -16,7 +17,7 @@ ms.locfileid: "27816129"
 
 デバイスの場所
 ## <a name="properties"></a>プロパティ
-|プロパティ|種類|説明|
+|プロパティ|型|説明|
 |:---|:---|:---|
 |lastCollectedDateTime|DateTimeOffset|場所が記録された、UTC を基準とする時刻|
 |longitude|Double|デバイスの場所の経度座標|

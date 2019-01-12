@@ -3,12 +3,13 @@ title: Create importedWindowsAutopilotDeviceIdentity
 description: 新規で importedWindowsAutopilotDeviceIdentity オブジェクトを作成します。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 486e9760fcefb2f92be08c3939c77f3e561b9acb
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: fe0b127db8309daddfc000d3c985a687739b68d4
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27877834"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27939253"
 ---
 # <a name="create-importedwindowsautopilotdeviceidentity"></a>Create importedWindowsAutopilotDeviceIdentity
 
@@ -47,7 +48,7 @@ POST /deviceManagement/importedWindowsAutopilotDeviceIdentityUploads/{importedWi
 
 次の表に、importedWindowsAutopilotDeviceIdentity の作成時に必要なプロパティを示します。
 
-|プロパティ|種類|説明|
+|プロパティ|型|説明|
 |:---|:---|:---|
 |ID|String|オブジェクトの GUID|
 |orderIdentifier|String|Windows オートパイロット デバイスの受注 ID。|

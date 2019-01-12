@@ -2,12 +2,14 @@
 title: PlannerPlan を更新します。
 description: '**PlannerPlan**オブジェクトのプロパティを更新します。'
 localization_priority: Normal
-ms.openlocfilehash: 6e15ff81f48a7e98a53cefea0bee5c33be24b34f
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: TarkanSevilmis
+ms.prod: planner
+ms.openlocfilehash: 46c4c5707d4e602b75e48a989e6e67136c12387a
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27876448"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27945231"
 ---
 # <a name="update-plannerplan"></a>PlannerPlan を更新します。
 
@@ -40,7 +42,7 @@ PATCH /planner/plans/<id>
 ## <a name="request-body"></a>要求本文
 要求本文で、更新する関連フィールドの値を指定します。要求本文に含まれない既存のプロパティは、以前の値のままになるか、他のプロパティ値の変化に基づいて再計算されます。最適なパフォーマンスを得るためには、変更されていない既存の値を含めないでください。
 
-| プロパティ     | 種類   |説明|
+| プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
 |owner|String|計画を所有する [グループ](../resources/group.md) `id`。このフィールドを設定するためには、有効なグループが存在していなければなりません。一度設定したら、所有者のみが更新できます。|
 |タイトル|String|計画のタイトル。|

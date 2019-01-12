@@ -3,12 +3,13 @@ title: enterpriseCodeSigningCertificate リソースの種類
 description: まだ文書化されていません
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 14ed023a831257dc28a9922e1e698a79ec13c951
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 84fe89d77901c330924c57937f9bb334beab979d
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27842134"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27945896"
 ---
 # <a name="enterprisecodesigningcertificate-resource-type"></a>enterpriseCodeSigningCertificate リソースの種類
 
@@ -27,7 +28,7 @@ ms.locfileid: "27842134"
 |[EnterpriseCodeSigningCertificate を更新します。](../api/intune-apps-enterprisecodesigningcertificate-update.md)|[enterpriseCodeSigningCertificate](../resources/intune-apps-enterprisecodesigningcertificate.md)|[EnterpriseCodeSigningCertificate](../resources/intune-apps-enterprisecodesigningcertificate.md)オブジェクトのプロパティを更新します。|
 
 ## <a name="properties"></a>プロパティ
-|プロパティ|種類|説明|
+|プロパティ|型|説明|
 |:---|:---|:---|
 |ID|String|エンティティのキー。|
 |content|Binary|生データの形式で Windows エンタープライズ コード署名証明書。|

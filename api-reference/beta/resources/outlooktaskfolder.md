@@ -3,12 +3,13 @@ title: outlookTaskFolder リソースの種類
 description: 'Outlook のタスク (outlookTask オブジェクトのコレクション) を含むフォルダーです。 '
 author: angelgolfer-ms
 localization_priority: Normal
-ms.openlocfilehash: 4b4c4bade46022b30c6e4e1f50aae58d32656f0b
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: outlook
+ms.openlocfilehash: 6e5b1297bfae4d03c42988329e661979e899e2bc
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27882930"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27937692"
 ---
 # <a name="outlooktaskfolder-resource-type"></a>outlookTaskFolder リソースの種類
 
@@ -35,11 +36,11 @@ Outlook では、既定のタスク グループ `My Tasks` には、ユーザ�
 |[拡張プロパティ値を複数の作業フォルダーを取得します。](../api/multivaluelegacyextendedproperty-get.md)  | [outlookTaskFolder](outlooktaskfolder.md) | 使用して複数の値の拡張プロパティを含む Outlook の仕事フォルダーを取得する`$expand`。 |
 
 ## <a name="properties"></a>プロパティ
-| プロパティ     | 種類   |説明|
+| プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
 |changeKey|String|タスク フォルダーのバージョン。|
 |id|String|タスク フォルダーでは、ユーザーのメールボックス内で一意の識別子です。 読み取り専用です。|
-|isDefaultFolder|ブール型|フォルダーが既定のタスク フォルダーである場合は true。|
+|isDefaultFolder|Boolean|フォルダーが既定のタスク フォルダーである場合は true。|
 |名前|String|タスク フォルダーの名前。|
 |parentGroupKey|Guid|タスク フォルダーの親グループの一意の GUID 識別子。|
 

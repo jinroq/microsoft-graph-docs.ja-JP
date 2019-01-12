@@ -3,12 +3,13 @@ title: reportRoot の更新
 description: reportRoot オブジェクトのプロパティを更新します。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: ba6c192b69975eef2f60b09f5bb2fc43e43d51b7
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: a902d341761cf56ced39a8309479ca27611ec5ce
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27885191"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27934556"
 ---
 # <a name="update-reportroot"></a>reportRoot の更新
 
@@ -46,7 +47,7 @@ PATCH /reports
 
 次の表に、[reportRoot](../resources/intune-shared-reportroot.md) の作成時に必要なプロパティを示します。
 
-|プロパティ|種類|説明|
+|プロパティ|型|説明|
 |:---|:---|:---|
 |ID|String|このエンティティの一意識別子。|
 

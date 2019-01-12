@@ -3,12 +3,13 @@ title: windows10EndpointProtectionConfiguration の作成
 description: 新しい windows10EndpointProtectionConfiguration オブジェクトを作成します。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 0dc84af450130acd68e75e541d8863010a0c8238
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: e0a9ccd6e6e675614e21ddcca947db87cf76b52b
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27880242"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27940779"
 ---
 # <a name="create-windows10endpointprotectionconfiguration"></a>windows10EndpointProtectionConfiguration の作成
 
@@ -47,12 +48,12 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 
 次の表に、windows10EndpointProtectionConfiguration の作成時に必要なプロパティを示します。
 
-|プロパティ|種類|説明|
+|プロパティ|型|説明|
 |:---|:---|:---|
 |ID|String|エンティティのキー。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |lastModifiedDateTime|DateTimeOffset|オブジェクトが最後に変更された DateTime。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |roleScopeTagIds|String コレクション|このエンティティ インスタンスのスコープのタグのリストです。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
-|supportsScopeTags|ブール型|デバイスの構成を基になるスコープのタグの割り当てをサポートしているかどうかを示します。 この値が false であり、エンティティをスコープ指定されたユーザーには表示されませんがある場合、ScopeTags プロパティに割り当てることは許可されていません。 これは、Silverlight で作成されたレガシ ポリシーに対して発生し、削除して、Azure ポータル内のポリシーを再作成することで解決できます。 このプロパティは読み取りのみ可能です。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
+|supportsScopeTags|Boolean|デバイスの構成を基になるスコープのタグの割り当てをサポートしているかどうかを示します。 この値が false であり、エンティティをスコープ指定されたユーザーには表示されませんがある場合、ScopeTags プロパティに割り当てることは許可されていません。 これは、Silverlight で作成されたレガシ ポリシーに対して発生し、削除して、Azure ポータル内のポリシーを再作成することで解決できます。 このプロパティは読み取りのみ可能です。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |createdDateTime|DateTimeOffset|オブジェクトが作成された DateTime。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |説明|String|デバイス構成について管理者が提供した説明。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |displayName|String|デバイス構成について管理者が指定した名前。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
@@ -86,69 +87,69 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 |userRightsRestoreData|[deviceManagementUserRightsSetting](../resources/intune-deviceconfig-devicemanagementuserrightssetting.md)|このユーザー権利では、ファイル、ディレクトリ、レジストリ、およびその他の永続的なオブジェクトのファイルおよびディレクトリをバックアップ、復元するときのアクセス許可を回避できるユーザーを決定し、オブジェクトの所有者として有効なセキュリティ プリンシパルを設定できるユーザーを決定します。 NotConfigured と許可の状態のみがサポートされています。|
 |userRightsTakeOwnership|[deviceManagementUserRightsSetting](../resources/intune-deviceconfig-devicemanagementuserrightssetting.md)|所有権をユーザーのセキュリティ保護可能なオブジェクトの Active Directory オブジェクト、ファイル、フォルダー、プリンター、レジストリ キー、プロセス、およびスレッドを含め、システムでこのユーザー権利を決定します。 NotConfigured と許可の状態のみがサポートされています。|
 |userRightsRegisterProcessAsService|[deviceManagementUserRightsSetting](../resources/intune-deviceconfig-devicemanagementuserrightssetting.md)|このセキュリティ設定は、サービスとしてプロセスを登録できないサービス アカウントを決定します。 注: このセキュリティ設定は、システム、ローカル サービス、またはネットワーク サービス アカウントには適用されません。 ブロックがサポートされているだけの状態です。|
-|xboxServicesEnableXboxGameSaveTask|ブール型|この設定は、xbox ゲームの保存が有効 (1) または無効 (0) かどうかを判断します。|
+|xboxServicesEnableXboxGameSaveTask|Boolean|この設定は、xbox ゲームの保存が有効 (1) または無効 (0) かどうかを判断します。|
 |xboxServicesAccessoryManagementServiceStartupMode|[serviceStartType](../resources/intune-deviceconfig-servicestarttype.md)|この設定は、付属品の管理サービスの開始の種類は、Automatic(2)、Manual(3)、Disabled(4) かどうかを決定します。 既定: マニュアルです。 可能な値は、`manual`、`automatic`、`disabled` です。|
 |xboxServicesLiveAuthManagerServiceStartupMode|[serviceStartType](../resources/intune-deviceconfig-servicestarttype.md)|この設定は、認証マネージャーの Live サービスの開始の種類は、Automatic(2)、Manual(3)、Disabled(4) かどうかを決定します。 既定: マニュアルです。 可能な値は、`manual`、`automatic`、`disabled` です。|
 |xboxServicesLiveGameSaveServiceStartupMode|[serviceStartType](../resources/intune-deviceconfig-servicestarttype.md)|保存サービスの開始のタイプのゲームのライブは Automatic(2)、Manual(3)、Disabled(4) であるかどうかを決定します。 既定: マニュアルです。 可能な値は、`manual`、`automatic`、`disabled` です。|
 |xboxServicesLiveNetworkingServiceStartupMode|[serviceStartType](../resources/intune-deviceconfig-servicestarttype.md)|この設定は、ネットワーク サービスの開始の種類は、Automatic(2)、Manual(3)、Disabled(4) かどうかを決定します。 既定: マニュアルです。 可能な値は、`manual`、`automatic`、`disabled` です。|
-|localSecurityOptionsBlockMicrosoftAccounts|ブール型|ユーザーがこのコンピューターに Microsoft の新しいアカウントを追加するを防ぐ。|
-|localSecurityOptionsBlockRemoteLogonWithBlankPassword|ブール型|物理デバイス以外の場所からのログオンにパスワードで保護していないローカルのアカウントを有効にします。既定値が有効になっています。|
-|localSecurityOptionsEnableAdministratorAccount|ブール型|ローカル管理者アカウントを有効または無効にするかどうかを決定します。|
+|localSecurityOptionsBlockMicrosoftAccounts|Boolean|ユーザーがこのコンピューターに Microsoft の新しいアカウントを追加するを防ぐ。|
+|localSecurityOptionsBlockRemoteLogonWithBlankPassword|Boolean|物理デバイス以外の場所からのログオンにパスワードで保護していないローカルのアカウントを有効にします。既定値が有効になっています。|
+|localSecurityOptionsEnableAdministratorAccount|Boolean|ローカル管理者アカウントを有効または無効にするかどうかを決定します。|
 |localSecurityOptionsAdministratorAccountName|String|"Administrator"アカウントのセキュリティ識別子 (SID) に関連する別のアカウント名を定義します。|
-|localSecurityOptionsEnableGuestAccount|ブール型|Guest アカウントが有効か無効になっているかどうかを決定します。|
+|localSecurityOptionsEnableGuestAccount|Boolean|Guest アカウントが有効か無効になっているかどうかを決定します。|
 |localSecurityOptionsGuestAccountName|String|"Guest"アカウントのセキュリティ識別子 (SID) に関連する別のアカウント名を定義します。|
-|localSecurityOptionsAllowUndockWithoutHavingToLogon|ブール型|ポータブル コンピューターを防ぐため、ログインしなくても接続されているからです。|
-|localSecurityOptionsBlockUsersInstallingPrinterDrivers|ブール型|管理者だけが使用する共有プリンターへの接続の一部としてプリンター ドライバーをインストールを制限します。|
-|localSecurityOptionsBlockRemoteOpticalDriveAccess|ブール型|CD-ROM メディアにアクセスする唯一の対話形式でログオンしているユーザーは、この設定を有効にできます。|
+|localSecurityOptionsAllowUndockWithoutHavingToLogon|Boolean|ポータブル コンピューターを防ぐため、ログインしなくても接続されているからです。|
+|localSecurityOptionsBlockUsersInstallingPrinterDrivers|Boolean|管理者だけが使用する共有プリンターへの接続の一部としてプリンター ドライバーをインストールを制限します。|
+|localSecurityOptionsBlockRemoteOpticalDriveAccess|Boolean|CD-ROM メディアにアクセスする唯一の対話形式でログオンしているユーザーは、この設定を有効にできます。|
 |localSecurityOptionsFormatAndEjectOfRemovableMediaAllowedUser|[localSecurityOptionsFormatAndEjectOfRemovableMediaAllowedUserType](../resources/intune-deviceconfig-localsecurityoptionsformatandejectofremovablemediaallowedusertype.md)|リムーバブル NTFS メディアを取り出すことができるユーザーを定義します。 可能な値は、`notConfigured`、`administrators`、`administratorsAndPowerUsers`、`administratorsAndInteractiveUsers` です。|
 |localSecurityOptionsMachineInactivityLimit|Int32|対話型デスクトップのログイン画面でスクリーン セーバーの実行まで最大分続くとを定義します。 有効な値の 0 から 9999 まで|
 |localSecurityOptionsMachineInactivityLimitInMinutes|Int32|対話型デスクトップのログイン画面でスクリーン セーバーの実行まで最大分続くとを定義します。 有効な値の 0 から 9999 まで|
-|localSecurityOptionsDoNotRequireCtrlAltDel|ブール型|CTRL + ALT + DEL を押す前に、ユーザーがログオンできる必要があります。|
-|localSecurityOptionsHideLastSignedInUser|ブール型|このデバイス上で最後署名した人のユーザー名は表示されません。|
-|localSecurityOptionsHideUsernameAtSignIn|ブール型|資格情報を入力した後、デバイスのデスクトップが表示される前にこのデバイスに署名した人のユーザー名は表示されません。|
+|localSecurityOptionsDoNotRequireCtrlAltDel|Boolean|CTRL + ALT + DEL を押す前に、ユーザーがログオンできる必要があります。|
+|localSecurityOptionsHideLastSignedInUser|Boolean|このデバイス上で最後署名した人のユーザー名は表示されません。|
+|localSecurityOptionsHideUsernameAtSignIn|Boolean|資格情報を入力した後、デバイスのデスクトップが表示される前にこのデバイスに署名した人のユーザー名は表示されません。|
 |localSecurityOptionsLogOnMessageTitle|String|ログオン ユーザーのメッセージのタイトルを設定します。|
 |localSecurityOptionsLogOnMessageText|String|ログオン ユーザーのメッセージ テキストを設定します。|
-|localSecurityOptionsAllowPKU2UAuthenticationRequests|ブール型|ブロック PKU2U 認証要求をこのデバイスにオンライン id を使用します。|
-|localSecurityOptionsAllowRemoteCallsToSecurityAccountsManagerHelperBool|ブール型|UI ヘルパー LocalSecurityOptionsAllowRemoteCallsToSecurityAccountsManager エンティティのブール値|
+|localSecurityOptionsAllowPKU2UAuthenticationRequests|Boolean|ブロック PKU2U 認証要求をこのデバイスにオンライン id を使用します。|
+|localSecurityOptionsAllowRemoteCallsToSecurityAccountsManagerHelperBool|Boolean|UI ヘルパー LocalSecurityOptionsAllowRemoteCallsToSecurityAccountsManager エンティティのブール値|
 |localSecurityOptionsAllowRemoteCallsToSecurityAccountsManager|String|または、SAM にリモート呼び出しを行うには、ユーザーとグループを拒否する既定のセキュリティ記述子定義言語の文字列を編集します。|
 |localSecurityOptionsMinimumSessionSecurityForNtlmSspBasedClients|[localSecurityOptionsMinimumSessionSecurity](../resources/intune-deviceconfig-localsecurityoptionsminimumsessionsecurity.md)|このセキュリティ設定では、クライアントが 128 ビット暗号化、または NTLMv2 セッション セキュリティのネゴシエーションを必要とすることができます。 可能な値は、`none`、`requireNtmlV2SessionSecurity`、`require128BitEncryption`、`ntlmV2And128BitEncryption` です。|
 |localSecurityOptionsMinimumSessionSecurityForNtlmSspBasedServers|[localSecurityOptionsMinimumSessionSecurity](../resources/intune-deviceconfig-localsecurityoptionsminimumsessionsecurity.md)|このセキュリティ設定は、128 ビット暗号化、または NTLMv2 セッション セキュリティのネゴシエーションを必要とするサーバーです。 可能な値は、`none`、`requireNtmlV2SessionSecurity`、`require128BitEncryption`、`ntlmV2And128BitEncryption` です。|
 |lanManagerAuthenticationLevel|[lanManagerAuthenticationLevel](../resources/intune-deviceconfig-lanmanagerauthenticationlevel.md)|このセキュリティ設定は、ネットワーク ログオン時に使用するチャレンジ/レスポンス認証プロトコルを決定します。 使用可能な値: `lmAndNltm`、`lmNtlmAndNtlmV2`、`lmAndNtlmOnly`、`lmAndNtlmV2`、`lmNtlmV2AndNotLm`、`lmNtlmV2AndNotLmOrNtm`。|
-|lanManagerWorkstationEnableInsecureGuestLogons|ブール型|有効な場合、SMB クライアントはセキュリティ保護されていないゲスト ログオンを使用できます。 構成されていない場合、SMB クライアントはセキュリティ保護されていないゲスト ログオンを拒否します。|
-|localSecurityOptionsClearVirtualMemoryPageFile|ブール型|このセキュリティ設定は、システムのシャット ダウン時に仮想メモリのページファイルがオフになっているかどうかを決定します。|
-|localSecurityOptionsAllowSystemToBeShutDownWithoutHavingToLogOn|ブール型|このセキュリティ設定は、Windows にログオンしなくてもコンピューターをシャット ダウンできるかどうかを決定します。|
-|localSecurityOptionsAllowUIAccessApplicationElevation|ブール型|UIAccess アプリケーションをセキュリティで保護されたデスクトップを使用せず、昇格のプロンプトを許可します。|
-|localSecurityOptionsVirtualizeFileAndRegistryWriteFailuresToPerUserLocations|ブール型|ファイルとレジストリの書き込みエラーをユーザーの場所ごとに仮想化します。|
-|localSecurityOptionsOnlyElevateSignedExecutables|ブール型|実行が許可される前に、実行可能ファイルに、PKI 証明書パス検証を強制します。|
+|lanManagerWorkstationEnableInsecureGuestLogons|Boolean|有効な場合、SMB クライアントはセキュリティ保護されていないゲスト ログオンを使用できます。 構成されていない場合、SMB クライアントはセキュリティ保護されていないゲスト ログオンを拒否します。|
+|localSecurityOptionsClearVirtualMemoryPageFile|Boolean|このセキュリティ設定は、システムのシャット ダウン時に仮想メモリのページファイルがオフになっているかどうかを決定します。|
+|localSecurityOptionsAllowSystemToBeShutDownWithoutHavingToLogOn|Boolean|このセキュリティ設定は、Windows にログオンしなくてもコンピューターをシャット ダウンできるかどうかを決定します。|
+|localSecurityOptionsAllowUIAccessApplicationElevation|Boolean|UIAccess アプリケーションをセキュリティで保護されたデスクトップを使用せず、昇格のプロンプトを許可します。|
+|localSecurityOptionsVirtualizeFileAndRegistryWriteFailuresToPerUserLocations|Boolean|ファイルとレジストリの書き込みエラーをユーザーの場所ごとに仮想化します。|
+|localSecurityOptionsOnlyElevateSignedExecutables|Boolean|実行が許可される前に、実行可能ファイルに、PKI 証明書パス検証を強制します。|
 |localSecurityOptionsAdministratorElevationPromptBehavior|[localSecurityOptionsAdministratorElevationPromptBehaviorType](../resources/intune-deviceconfig-localsecurityoptionsadministratorelevationpromptbehaviortype.md)|管理者承認モードでは、管理者に対する昇格時のプロンプトの動作を定義します。 可能な値は、`notConfigured`、`elevateWithoutPrompting`、`promptForCredentialsOnTheSecureDesktop`、`promptForConsentOnTheSecureDesktop`、`promptForCredentials`、`promptForConsent`、`promptForConsentForNonWindowsBinaries` です。|
 |localSecurityOptionsStandardUserElevationPromptBehavior|[localSecurityOptionsStandardUserElevationPromptBehaviorType](../resources/intune-deviceconfig-localsecurityoptionsstandarduserelevationpromptbehaviortype.md)|標準ユーザーに対する昇格時のプロンプトの動作を定義します。 可能な値は、`notConfigured`、`automaticallyDenyElevationRequests`、`promptForCredentialsOnTheSecureDesktop`、`promptForCredentials` です。|
-|localSecurityOptionsSwitchToSecureDesktopWhenPromptingForElevation|ブール型|セキュリティで保護されたデスクトップではなく、対話ユーザーのデスクトップに移動するすべての昇格要求を有効にします。 管理者および標準ユーザーに対するプロンプトの動作ポリシー設定が使用されます。|
-|localSecurityOptionsDetectApplicationInstallationsAndPromptForElevation|ブール型|システム特権を必要とするアプリケーションのインストールは、管理者の資格情報を求められます。既定値が有効になっています。|
-|localSecurityOptionsAllowUIAccessApplicationsForSecureLocations|ブール型|UIAccess アプリケーションをセキュリティで保護されたデスクトップを使用せず、昇格のプロンプトを許可します。既定値が有効になっています。|
-|localSecurityOptionsUseAdminApprovalMode|ブール型|ビルトイン管理者アカウントが管理者承認モードを使用して、または完全な管理者特権を持つすべてのアプリケーションを実行するかどうかを定義します。既定値が有効になっています。|
-|localSecurityOptionsUseAdminApprovalModeForAdministrators|ブール型|管理者承認モードおよびすべての UAC ポリシー設定を有効にするかどうかを定義する既定値が有効になっています。|
+|localSecurityOptionsSwitchToSecureDesktopWhenPromptingForElevation|Boolean|セキュリティで保護されたデスクトップではなく、対話ユーザーのデスクトップに移動するすべての昇格要求を有効にします。 管理者および標準ユーザーに対するプロンプトの動作ポリシー設定が使用されます。|
+|localSecurityOptionsDetectApplicationInstallationsAndPromptForElevation|Boolean|システム特権を必要とするアプリケーションのインストールは、管理者の資格情報を求められます。既定値が有効になっています。|
+|localSecurityOptionsAllowUIAccessApplicationsForSecureLocations|Boolean|UIAccess アプリケーションをセキュリティで保護されたデスクトップを使用せず、昇格のプロンプトを許可します。既定値が有効になっています。|
+|localSecurityOptionsUseAdminApprovalMode|Boolean|ビルトイン管理者アカウントが管理者承認モードを使用して、または完全な管理者特権を持つすべてのアプリケーションを実行するかどうかを定義します。既定値が有効になっています。|
+|localSecurityOptionsUseAdminApprovalModeForAdministrators|Boolean|管理者承認モードおよびすべての UAC ポリシー設定を有効にするかどうかを定義する既定値が有効になっています。|
 |localSecurityOptionsInformationShownOnLockScreen|[localSecurityOptionsInformationShownOnLockScreenType](../resources/intune-deviceconfig-localsecurityoptionsinformationshownonlockscreentype.md)|セッションがロックされているときに表示されるユーザー情報を構成します。 構成されていない場合は、ユーザーの表示名、ドメインおよびユーザー名が表示されます。 可能な値は、`notConfigured`、`userDisplayNameDomainUser`、`userDisplayNameOnly`、`doNotDisplayUser` です。|
 |localSecurityOptionsInformationDisplayedOnLockScreen|[localSecurityOptionsInformationDisplayedOnLockScreenType](../resources/intune-deviceconfig-localsecurityoptionsinformationdisplayedonlockscreentype.md)|セッションがロックされているときに表示されるユーザー情報を構成します。 構成されていない場合は、ユーザーの表示名、ドメインおよびユーザー名が表示されます。 可能な値は、`notConfigured`、`administrators`、`administratorsAndPowerUsers`、`administratorsAndInteractiveUsers` です。|
-|localSecurityOptionsDisableClientDigitallySignCommunicationsIfServerAgrees|ブール型|このセキュリティ設定は、SMB クライアントが SMB パケット署名をネゴシエートしようとしたかどうかを決定します。|
-|localSecurityOptionsClientDigitallySignCommunicationsAlways|ブール型|このセキュリティ設定は、SMB クライアント コンポーネントでパケット署名が必要かどうかを決定します。|
-|localSecurityOptionsClientSendUnencryptedPasswordToThirdPartySMBServers|ブール型|このセキュリティ設定が有効の場合、サーバー メッセージ ブロック (SMB) リダイレクターは、認証時にパスワード暗号化をサポートしない Microsoft 以外の SMB サーバーにプレーン テキスト パスワードを送信するのには。|
-|localSecurityOptionsDisableServerDigitallySignCommunicationsAlways|ブール型|このセキュリティ設定は、SMB サーバー コンポーネントがパケット署名が必要かどうかを決定します。|
-|localSecurityOptionsDisableServerDigitallySignCommunicationsIfClientAgrees|ブール型|このセキュリティ設定は、SMB サーバーが SMB パケット署名を要求するクライアントをネゴシエートするかどうかを決定します。|
-|localSecurityOptionsRestrictAnonymousAccessToNamedPipesAndShares|ブール型|既定では、このセキュリティ設定は共有とパイプは匿名でアクセスできる名前付きパイプおよび匿名でアクセスできる共有の設定に匿名アクセスを制限します。|
-|localSecurityOptionsDoNotAllowAnonymousEnumerationOfSAMAccounts|ブール型|このセキュリティ設定は、どのような追加のアクセス許可をコンピューターへの匿名接続を許可しますを指定します。|
-|localSecurityOptionsAllowAnonymousEnumerationOfSAMAccountsAndShares|ブール型|このセキュリティ設定は、ドメイン アカウントやネットワーク共有の名前の列挙など、特定の操作を実行するのには匿名ユーザーを許可するかどうかを決定します。|
-|localSecurityOptionsDoNotStoreLANManagerHashValueOnNextPasswordChange|ブール型|このセキュリティ設定は、かどうかは、次のパスワードの変更で新しいパスワードの LAN Manager (LM) ハッシュ値が格納されているを決定します。 既定では格納されません。|
+|localSecurityOptionsDisableClientDigitallySignCommunicationsIfServerAgrees|Boolean|このセキュリティ設定は、SMB クライアントが SMB パケット署名をネゴシエートしようとしたかどうかを決定します。|
+|localSecurityOptionsClientDigitallySignCommunicationsAlways|Boolean|このセキュリティ設定は、SMB クライアント コンポーネントでパケット署名が必要かどうかを決定します。|
+|localSecurityOptionsClientSendUnencryptedPasswordToThirdPartySMBServers|Boolean|このセキュリティ設定が有効の場合、サーバー メッセージ ブロック (SMB) リダイレクターは、認証時にパスワード暗号化をサポートしない Microsoft 以外の SMB サーバーにプレーン テキスト パスワードを送信するのには。|
+|localSecurityOptionsDisableServerDigitallySignCommunicationsAlways|Boolean|このセキュリティ設定は、SMB サーバー コンポーネントがパケット署名が必要かどうかを決定します。|
+|localSecurityOptionsDisableServerDigitallySignCommunicationsIfClientAgrees|Boolean|このセキュリティ設定は、SMB サーバーが SMB パケット署名を要求するクライアントをネゴシエートするかどうかを決定します。|
+|localSecurityOptionsRestrictAnonymousAccessToNamedPipesAndShares|Boolean|既定では、このセキュリティ設定は共有とパイプは匿名でアクセスできる名前付きパイプおよび匿名でアクセスできる共有の設定に匿名アクセスを制限します。|
+|localSecurityOptionsDoNotAllowAnonymousEnumerationOfSAMAccounts|Boolean|このセキュリティ設定は、どのような追加のアクセス許可をコンピューターへの匿名接続を許可しますを指定します。|
+|localSecurityOptionsAllowAnonymousEnumerationOfSAMAccountsAndShares|Boolean|このセキュリティ設定は、ドメイン アカウントやネットワーク共有の名前の列挙など、特定の操作を実行するのには匿名ユーザーを許可するかどうかを決定します。|
+|localSecurityOptionsDoNotStoreLANManagerHashValueOnNextPasswordChange|Boolean|このセキュリティ設定は、かどうかは、次のパスワードの変更で新しいパスワードの LAN Manager (LM) ハッシュ値が格納されているを決定します。 既定では格納されません。|
 |localSecurityOptionsSmartCardRemovalBehavior|[localSecurityOptionsSmartCardRemovalBehaviorType](../resources/intune-deviceconfig-localsecurityoptionssmartcardremovalbehaviortype.md)|このセキュリティ設定は、ユーザーのログオン用のスマート カードがスマート カード リーダーから削除されたときの動作を決定します。 可能な値は、`lockWorkstation`、`noAction`、`forceLogoff`、`disconnectRemoteDesktopSession` です。|
-|defenderSecurityCenterDisableAppBrowserUI|ブール型|アプリケーションとブラウザーの保護領域の表示を無効にする場合に使用されます。|
-|defenderSecurityCenterDisableFamilyUI|ブール型|ファミリのオプション領域の表示を無効にするために使用します。|
-|defenderSecurityCenterDisableHealthUI|ブール型|デバイスのパフォーマンスと稼働状態の領域の表示を無効にするために使用します。|
-|defenderSecurityCenterDisableNetworkUI|ブール型|ファイアウォールとネットワークの保護領域の表示を無効にする場合に使用されます。|
-|defenderSecurityCenterDisableVirusUI|ブール型|ウイルスと脅威の保護領域の表示を無効にする場合に使用されます。|
-|defenderSecurityCenterDisableAccountUI|ブール型|アカウントの保護領域の表示を無効にする場合に使用されます。|
-|defenderSecurityCenterDisableHardwareUI|ブール型|ハードウェアの保護領域の表示を無効にする場合に使用されます。|
-|defenderSecurityCenterDisableRansomwareUI|ブール型|Ransomware 保護領域の表示を無効にする場合に使用されます。 |
-|defenderSecurityCenterDisableSecureBootUI|ブール型|[デバイスのセキュリティ、セキュリティで保護されたブート領域の表示を無効にする場合に使用されます。|
-|defenderSecurityCenterDisableTroubleshootingUI|ブール型|[デバイスのセキュリティのトラブルシューティング、セキュリティ プロセスの表示を無効にする場合に使用されます。|
+|defenderSecurityCenterDisableAppBrowserUI|Boolean|アプリケーションとブラウザーの保護領域の表示を無効にする場合に使用されます。|
+|defenderSecurityCenterDisableFamilyUI|Boolean|ファミリのオプション領域の表示を無効にするために使用します。|
+|defenderSecurityCenterDisableHealthUI|Boolean|デバイスのパフォーマンスと稼働状態の領域の表示を無効にするために使用します。|
+|defenderSecurityCenterDisableNetworkUI|Boolean|ファイアウォールとネットワークの保護領域の表示を無効にする場合に使用されます。|
+|defenderSecurityCenterDisableVirusUI|Boolean|ウイルスと脅威の保護領域の表示を無効にする場合に使用されます。|
+|defenderSecurityCenterDisableAccountUI|Boolean|アカウントの保護領域の表示を無効にする場合に使用されます。|
+|defenderSecurityCenterDisableHardwareUI|Boolean|ハードウェアの保護領域の表示を無効にする場合に使用されます。|
+|defenderSecurityCenterDisableRansomwareUI|Boolean|Ransomware 保護領域の表示を無効にする場合に使用されます。 |
+|defenderSecurityCenterDisableSecureBootUI|Boolean|[デバイスのセキュリティ、セキュリティで保護されたブート領域の表示を無効にする場合に使用されます。|
+|defenderSecurityCenterDisableTroubleshootingUI|Boolean|[デバイスのセキュリティのトラブルシューティング、セキュリティ プロセスの表示を無効にする場合に使用されます。|
 |defenderSecurityCenterOrganizationDisplayName|String|ユーザーに表示される会社名です。|
 |defenderSecurityCenterHelpEmail|String|ユーザーに表示される電子メール アドレスです。|
 |defenderSecurityCenterHelpPhone|String|電話番号または Skype ID のユーザーに表示されます。|
@@ -200,8 +201,8 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 |defenderSecurityCenterBlockExploitProtectionOverride|Boolean|ユーザーによる Exploit Protection の設定の上書きを禁止するかどうかを示します。|
 |appLockerApplicationControl|[appLockerApplicationControlType](../resources/intune-deviceconfig-applockerapplicationcontroltype.md)|管理者がデバイスで許可するアプリの種類を選択できるようにします。 可能な値は、`notConfigured`、`enforceComponentsAndStoreApps`、`auditComponentsAndStoreApps`、`enforceComponentsStoreAppsAndSmartlocker`、`auditComponentsStoreAppsAndSmartlocker` です。|
 |deviceGuardLocalSystemAuthorityCredentialGuardSettings|[deviceGuardLocalSystemAuthorityCredentialGuardType](../resources/intune-deviceconfig-deviceguardlocalsystemauthoritycredentialguardtype.md)|プラットフォームのセキュリティ レベルとセキュリティで保護されたブートし、仮想化ベースのセキュリティの両方が有効である場合は、資格情報の保護にします。 可能な値は、`notConfigured`、`enableWithUEFILock`、`enableWithoutUEFILock` です。|
-|deviceGuardEnableVirtualizationBasedSecurity|ブール型|Security(VBS) を仮想化をオンに基づいています。|
-|deviceGuardEnableSecureBootWithDMA|ブール型|プラットフォームのセキュリティ レベルが次の再起動時に有効になっているかどうかを指定します。|
+|deviceGuardEnableVirtualizationBasedSecurity|Boolean|Security(VBS) を仮想化をオンに基づいています。|
+|deviceGuardEnableSecureBootWithDMA|Boolean|プラットフォームのセキュリティ レベルが次の再起動時に有効になっているかどうかを指定します。|
 |smartScreenEnableInShell|Boolean|IT 管理者が Windows 用の SmartScreen を構成することを許可します。|
 |smartScreenBlockOverrideForFiles|Boolean|ユーザーが SmartScreen 警告を無視し、悪意のあるファイルを実行できるかどうかを IT 管理者が制御することを許可します。|
 |applicationGuardEnabled|Boolean|Windows Defender Application Guard を有効にします|
@@ -215,8 +216,8 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 |applicationGuardAllowPrintToXPS|Boolean|コンテナーから XPS への出力を許可します|
 |applicationGuardAllowPrintToLocalPrinters|Boolean|コンテナーからローカル プリンターへの出力を許可します|
 |applicationGuardAllowPrintToNetworkPrinters|Boolean|コンテナーからネットワーク プリンターへの出力を許可します|
-|applicationGuardAllowVirtualGPU|ブール型|仮想 GPU を使用するアプリケーションの保護を許可します。|
-|applicationGuardAllowFileSaveOnHost|ブール型|アプリケーション ガード コンテナーの端からファイルをダウンロードし、ホスト上でファイル システムを保存するユーザーを許可します。|
+|applicationGuardAllowVirtualGPU|Boolean|仮想 GPU を使用するアプリケーションの保護を許可します。|
+|applicationGuardAllowFileSaveOnHost|Boolean|アプリケーション ガード コンテナーの端からファイルをダウンロードし、ホスト上でファイル システムを保存するユーザーを許可します。|
 |bitLockerDisableWarningForOtherDiskEncryption|Boolean|管理者がユーザーのマシンで他のディスクの暗号化に関する警告プロンプトを無効にすることを許可します。|
 |bitLockerEnableStorageCardEncryptionOnMobile|Boolean|管理者が BitLocker を使用して暗号化をオンにすることを許可します。 このポリシーは、モバイルの SKU に対してのみ有効です。
 |

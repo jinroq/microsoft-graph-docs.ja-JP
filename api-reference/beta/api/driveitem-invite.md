@@ -4,12 +4,13 @@ ms.author: rgregg
 ms.date: 09/10/2017
 title: アイテムにアクセスするために招待状を送信する
 localization_priority: Normal
-ms.openlocfilehash: 93fa30cc3e7999ba00bbcf591876c90253b77a7f
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: sharepoint
+ms.openlocfilehash: f428fe7b8a61fc158d4175f50fb287760e25d524
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27823934"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27945980"
 ---
 # <a name="send-a-sharing-invitation"></a>共有の招待状を送信する
 
@@ -58,12 +59,12 @@ POST /users/{userId}/drive/items/{itemId}/invite
 }
 ```
 
-| パラメーター        | Type                                            | 説明                                                                                                |
+| パラメーター        | 型                                            | 説明                                                                                                |
 |:-----------------|:------------------------------------------------|:-----------------------------------------------------------------------------------------------------------|
 | Recipients       | Collection([DriveRecipient](../resources/driverecipient.md)) | アクセスおよび共有の招待状を受信する、受信者のコレクション。                                            |
 | message          | String                                          | 共有の招待状に含まれるプレーンテキスト形式のメッセージ。最大の長さは 2000 文字です。 |
-| requireSignIn    | ブール値                                         | 共有アイテムを表示するために、招待状の受信者がサインインする必要のある場所を指定します。            |
-| sendInvitation   | ブール値                                         | 電子メールまたは投稿が生成されるのか (false)、アクセス許可のみが作成されるのか (true) を指定します。            |
+| requireSignIn    | Boolean                                         | 共有アイテムを表示するために、招待状の受信者がサインインする必要のある場所を指定します。            |
+| sendInvitation   | Boolean                                         | 電子メールまたは投稿が生成されるのか (false)、アクセス許可のみが作成されるのか (true) を指定します。            |
 | roles            | Collection(String)                              | 共有の招待状の受信者に付与されるロールを指定します。                         |
 
 ## <a name="example"></a>例

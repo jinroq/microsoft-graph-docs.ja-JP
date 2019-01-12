@@ -3,12 +3,13 @@ title: ManagementConditionStatement を更新します。
 description: ManagementConditionStatement オブジェクトのプロパティを更新します。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 33bee3fe6e386d9d426eb0763ccb608cbc6242e3
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 800d40bda342ea23b55e7dc9bf62a99f1e41e3df
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27829450"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27935417"
 ---
 # <a name="update-managementconditionstatement"></a>ManagementConditionStatement を更新します。
 
@@ -47,7 +48,7 @@ PATCH /deviceManagement/managementConditions/{managementConditionId}/managementC
 
 [ManagementConditionStatement](../resources/intune-fencing-managementconditionstatement.md)を作成するときに必要なプロパティを次の表に示します。
 
-|プロパティ|種類|説明|
+|プロパティ|型|説明|
 |:---|:---|:---|
 |ID|String|管理条件付きステートメントの一意の識別子です。 システムでは、作成時に割り当てられた値が生成されます。|
 |displayName|String|管理者は、管理条件ステートメントの名前を定義します。|

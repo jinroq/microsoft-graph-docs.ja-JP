@@ -3,12 +3,13 @@ title: ドメイン リソースの種類
 description: テナントに関連付けられているドメインを表します。
 author: lleonard-msft
 localization_priority: Normal
-ms.openlocfilehash: 3aeede3a796bfdf6019e4cb840e6b7a949d96b20
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: 5d8dabf29285aea0b24613e584184dc13e02e499
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27849512"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27942396"
 ---
 # <a name="domain-resource-type"></a>ドメイン リソースの種類
 
@@ -46,7 +47,7 @@ ms.locfileid: "27849512"
 
 ## <a name="properties"></a>プロパティ
 
-| プロパティ   | 種類 | 説明 |
+| プロパティ   | 型 | 説明 |
 |:---------------|:--------|:----------|
 |authenticationType|String| ドメインに対して構成されている認証の種類を示します。値は、*Managed* または *Federated* のいずれかです。<br> *Managed* の場合、Azure AD がユーザー認証を実行するクラウド管理のドメインを表します。<br>*Federated* の場合、Active Directory フェデレーション サービスを経由したテナントのオンプレミスの Active Directory のように、認証が ID プロバイダーとフェデレーションを行うことを表します。null 許容ではありません |
 |availabilityStatus|String| [確認](../api/domain-verify.md)操作を使用する場合を除き、このプロパティは常に null です。[確認](../api/domain-verify.md)操作を使用する場合、応答で**ドメイン** エンティティが返されます。応答内の、**ドメイン** エンティティの **availabilityStatus** プロパティは、*AvailableImmediately* または *EmailVerifiedDomainTakeoverScheduled* のいずれかです。|

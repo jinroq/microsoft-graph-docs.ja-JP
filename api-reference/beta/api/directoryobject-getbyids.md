@@ -3,12 +3,13 @@ title: ID のリストからディレクトリ オブジェクトを取得しま
 description: 選択 ' クエリ オプションはこの操作に使用できません。
 author: lleonard-msft
 localization_priority: Normal
-ms.openlocfilehash: 4c63ea85113ec54dec8e5d818c3add1005aebb19
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: 256292a1610972b8a8cbe6026344300af29b1c55
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27888061"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27945974"
 ---
 # <a name="get-directory-objects-from-a-list-of-ids"></a>ID のリストからディレクトリ オブジェクトを取得します。
 
@@ -42,7 +43,7 @@ POST /directoryObjects/getByIds
 
 ## <a name="request-headers"></a>要求ヘッダー
 
-| 名前       | 種類 | 説明|
+| 名前       | 型 | 説明|
 |:---------------|:--------|:----------|
 | Authorization  | string  | ベアラー {トークン}。必須。 |
 | Content-Type  | application/json  |
@@ -51,7 +52,7 @@ POST /directoryObjects/getByIds
 
 要求本文で、次のパラメーターを含む JSON オブジェクトを指定します。
 
-| パラメーター   | Type |説明|
+| パラメーター   | 型 |説明|
 |:---------------|:--------|:----------|
 |ids|String コレクション| オブジェクトを戻す ID のコレクション。最大 1000 ID まで指定できます。 |
 |types|String コレクション| 検索するリソースのコレクションのセットを指定するリソースの種類のコレクションです。 指定しない場合、既定では[directoryObject](/graph/api/resources/directoryobject?view=graph-rest-beta)、すべてのディレクトリで定義されているリソースの種類が含まれています。 [DirectoryObject](/graph/api/resources/directoryobject?view=graph-rest-beta)から派生した任意のオブジェクトをコレクションに指定する場合があります。例:[ユーザー](/graph/api/resources/user?view=graph-rest-beta)、[グループ](/graph/api/resources/group?view=graph-rest-beta)、[デバイス](/graph/api/resources/device?view=graph-rest-beta)、およびようにします。 [クラウド ソリューション プロバイダー](https://partner.microsoft.com/en-us/cloud-solution-provider)パートナーへの参照を検索するのには、組織は、 [directoryObjectPartnerReference](/graph/api/resources/directoryobjectpartnerreference?view=graph-rest-beta)を指定します。 指定しない場合、既定では[directoryObject](/graph/api/resources/directoryobject?view=graph-rest-beta)、すべての[クラウド ソリューション プロバイダー](https://partner.microsoft.com/en-us/cloud-solution-provider)パートナーの組織への参照を除いて、ディレクトリで定義されているリソースの種類が含まれています。 値は、大文字小文字を区別しません。|

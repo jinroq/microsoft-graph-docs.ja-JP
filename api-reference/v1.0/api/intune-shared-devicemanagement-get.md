@@ -3,12 +3,13 @@ title: deviceManagement の取得
 description: deviceManagement オブジェクトのプロパティとリレーションシップを読み取ります。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 89156113d0b357bc0d7a76cadad8c2ab7e2e4b91
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: af4dc08832b09387774ad3ad1642b0103b3b7db9
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27816269"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27936929"
 ---
 # <a name="get-devicemanagement"></a>deviceManagement の取得
 

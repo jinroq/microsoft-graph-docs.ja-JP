@@ -2,12 +2,14 @@
 title: Orgcontact を更新します。
 description: Orgcontact オブジェクトのプロパティを更新します。
 localization_priority: Normal
-ms.openlocfilehash: f48795bef6ea1a4833379f54747cbf2c291b2454
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: lleonard-msft
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: 2f7943234dbff62da070b51a3ae6d92d2bdb28d9
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27859067"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27938819"
 ---
 # <a name="update-orgcontact"></a>Orgcontact を更新します。
 
@@ -29,19 +31,19 @@ Orgcontact オブジェクトのプロパティを更新します。
 PATCH /contacts/{id}
 ```
 ## <a name="request-headers"></a>要求ヘッダー
-| 名前       | 種類 | 説明|
+| 名前       | 型 | 説明|
 |:-----------|:------|:----------|
 | Authorization  | string  | ベアラー {トークン}。必須。 |
 
 ## <a name="request-body"></a>要求本文
 要求本文で、更新する関連フィールドの値を指定します。要求本文に含まれない既存のプロパティは、以前の値のままになるか、他のプロパティ値の変化に基づいて再計算されます。最適なパフォーマンスを得るためには、変更されていない既存の値を含めないでください。
 
-| プロパティ     | 種類   |説明|
+| プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
 |city|String||
 |country|String||
 |department|String||
-|onPremisesSyncEnabled|ブール型||
+|onPremisesSyncEnabled|Boolean||
 |displayName|String||
 |givenName|String||
 |jobTitle|String||

@@ -2,12 +2,14 @@
 title: subscribedSku リソースの種類
 description: 会社が購読しているサービス SKU に関する情報が含まれています。
 localization_priority: Normal
-ms.openlocfilehash: 17290890ff27fded1aaf5d7fdb2c0cdacee09b0c
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: lleonard-msft
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: e9e61fba199d6d3e509700fe61e75bde240c7f16
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27873718"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27937440"
 ---
 # <a name="subscribedsku-resource-type"></a>subscribedSku リソースの種類
 
@@ -22,7 +24,7 @@ ms.locfileid: "27873718"
 |[リスト subscribedsku](../api/subscribedsku-list.md) | [subscribedSku](subscribedsku.md) コレクション |組織で取得した商用サブスクリプションの一覧を取得します。|
 
 ## <a name="properties"></a>プロパティ
-| プロパティ     | 種類   |説明|
+| プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
 |appliesTo|String| "User" や "Company" など。 |
 |capabilityStatus|String| 「有効」など。 |

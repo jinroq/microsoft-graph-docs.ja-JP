@@ -4,12 +4,13 @@ ms.author: rgregg
 ms.date: 09/10/2017
 title: Site
 localization_priority: Priority
-ms.openlocfilehash: bdb8387c49e76e3f326cffe595397e6277d40738
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: sharepoint
+ms.openlocfilehash: cd0631d8426dffa6ea731fabe024a1028e080f1c
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27821099"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27937013"
 ---
 # <a name="site-resource"></a>Site リソース
 
@@ -84,7 +85,7 @@ ms.locfileid: "27821099"
 
 ## <a name="properties"></a>プロパティ
 
-| プロパティ名            | Type                                | 説明                                                                                    |
+| プロパティ名            | 型                                | 説明                                                                                    |
 | :----------------------- | :---------------------------------- | :--------------------------------------------------------------------------------------------- |
 | **id**                   | string                              | アイテムの一意識別子。読み取り専用です。                                                  |
 | **createdDateTime**      | DateTimeOffset                      | アイテムが作成された日時。読み取り専用です。                                             |

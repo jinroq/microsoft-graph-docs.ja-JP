@@ -3,12 +3,13 @@ title: getMobileAppCount 関数
 description: まだ文書化されていません
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: ae67ba630ddd387d1c03cb599c99a7ed38717145
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 727e4454e3b4ad2cfa6fe44c90b23ea89c911d7b
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27891862"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27946575"
 ---
 # <a name="getmobileappcount-function"></a>getMobileAppCount 関数
 
@@ -45,7 +46,7 @@ GET /deviceAppManagement/mobileApps/getMobileAppCount
 要求 URL で、次のクエリ パラメーターに値を指定します。
 次の表に、この関数で使用できるパラメーターを示します。
 
-|プロパティ|種類|説明|
+|プロパティ|型|説明|
 |:---|:---|:---|
 |status|String|まだ文書化されていません|
 

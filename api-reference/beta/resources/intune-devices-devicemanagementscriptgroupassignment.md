@@ -3,12 +3,13 @@ title: deviceManagementScriptGroupAssignment リソースの種類
 description: デバイス管理のスクリプトをグループに割り当てるために使用するプロパティが含まれています。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 6dfeca71b20ffae27f99fdd4af0909332338b4f9
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 8c1077cb3892cad210033abcd21a7abf2ee2e397
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27832208"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27934759"
 ---
 # <a name="devicemanagementscriptgroupassignment-resource-type"></a>deviceManagementScriptGroupAssignment リソースの種類
 
@@ -27,7 +28,7 @@ ms.locfileid: "27832208"
 |[DeviceManagementScriptGroupAssignment を更新します。](../api/intune-devices-devicemanagementscriptgroupassignment-update.md)|[deviceManagementScriptGroupAssignment](../resources/intune-devices-devicemanagementscriptgroupassignment.md)|[DeviceManagementScriptGroupAssignment](../resources/intune-devices-devicemanagementscriptgroupassignment.md)オブジェクトのプロパティを更新します。|
 
 ## <a name="properties"></a>プロパティ
-|プロパティ|種類|説明|
+|プロパティ|型|説明|
 |:---|:---|:---|
 |ID|String|デバイス管理スクリプトのグループの割り当てエンティティのキーです。|
 |targetGroupId|String|Azure Active Directory グループの Id は、対象としてスクリプトをします。|

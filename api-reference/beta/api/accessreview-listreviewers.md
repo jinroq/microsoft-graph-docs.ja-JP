@@ -1,12 +1,15 @@
 ---
 title: AccessReview の校閲者の一覧
 description: Azure AD にアクセスが機能を確認、校閲者の accessReview オブジェクトを取得します。
-ms.openlocfilehash: 24c8b3dacbbe1a5868c9ba82141f37b006dc7a75
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+author: lleonard-msft
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: 8dca759f71f13af18c291f1af9843da6729ef701
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27067990"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27946813"
 ---
 # <a name="list-accessreview-reviewers"></a>AccessReview の校閲者の一覧
 

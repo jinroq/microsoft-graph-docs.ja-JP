@@ -3,12 +3,13 @@ title: IosVppAppAssignedLicense を作成します。
 description: 新しい iosVppAppAssignedLicense オブジェクトを作成します。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 225b7168d584faa2e5ff1ec2910fe0e3e53fda8a
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 65c0b449b1b9add9697d5c1453245efbd1b2e213
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27887102"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27936320"
 ---
 # <a name="create-iosvppappassignedlicense"></a>IosVppAppAssignedLicense を作成します。
 
@@ -46,7 +47,7 @@ POST /deviceAppManagement/mobileApps/{mobileAppId}/microsoft.graph.iosVppApp/ass
 
 次の表は、iosVppAppAssignedLicense を作成するときに必要なプロパティを示します。
 
-|プロパティ|種類|説明|
+|プロパティ|型|説明|
 |:---|:---|:---|
 |ID|String|エンティティのキー。|
 |userEmailAddress|String|ユーザーの電子メール アドレスです。|

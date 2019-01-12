@@ -2,12 +2,14 @@
 title: 'グループ: getMemberGroups'
 description: 指定されたグループがメンバーであるすべてのグループを返します。チェックは推移的であり、グループが直接メンバーであるグループのみを返す memberOf ナビゲーション プロパティの読み取りとは異なります。
 localization_priority: Priority
-ms.openlocfilehash: 3af6672b38271cea3fea94de535b91d2efee9b45
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: dkershaw10
+ms.prod: groups
+ms.openlocfilehash: 578caa1660ee86f24483cff9143a9153ca448526
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27875657"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27934283"
 ---
 # <a name="group-getmembergroups"></a>グループ: getMemberGroups
 
@@ -37,7 +39,7 @@ POST /groups/{id}/getMemberGroups
 
 ## <a name="request-headers"></a>要求ヘッダー
 
-| 名前          | 種類   | 説明               |
+| 名前          | 型   | 説明               |
 | :------------ | :----- | :------------------------ |
 | Authorization | string | ベアラー {トークン}。必須。 |
 
@@ -45,9 +47,9 @@ POST /groups/{id}/getMemberGroups
 
 要求本文で、次のパラメーターを含む JSON オブジェクトを指定します。
 
-| パラメーター           | Type    | 説明                                                                           |
+| パラメーター           | 型    | 説明                                                                           |
 | :------------------ | :------ | :------------------------------------------------------------------------------------ |
-| securityEnabledOnly | ブール値 | **false** に設定します。セキュリティが有効なグループのみを返すことは、ユーザーに対してのみサポートされます。 |
+| securityEnabledOnly | Boolean | **false** に設定します。セキュリティが有効なグループのみを返すことは、ユーザーに対してのみサポートされます。 |
 
 ## <a name="response"></a>応答
 

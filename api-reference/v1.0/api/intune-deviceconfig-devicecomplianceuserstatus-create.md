@@ -3,12 +3,13 @@ title: deviceComplianceUserStatus の作成
 description: 新しい deviceComplianceUserStatus オブジェクトを作成します。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: b4e82a3ead9e4ab36fd5f94a71afc5558f7482de
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 36eafe56981148489ad6ac791192251490fab490
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27849323"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27936551"
 ---
 # <a name="create-devicecomplianceuserstatus"></a>deviceComplianceUserStatus の作成
 
@@ -44,7 +45,7 @@ POST /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/userS
 
 次の表に、deviceComplianceUserStatus の作成時に必要なプロパティを示します。
 
-|プロパティ|種類|説明|
+|プロパティ|型|説明|
 |:---|:---|:---|
 |ID|String|エンティティのキー。|
 |userDisplayName|String|DevicePolicyStatus のユーザー名。|

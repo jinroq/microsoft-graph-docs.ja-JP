@@ -2,12 +2,14 @@
 title: educationClass を削除する
 description: クラスを削除します。 クラスもユニバーサル グループなので、クラスを削除するとグループも削除されます。
 localization_priority: Normal
-ms.openlocfilehash: f042d7290b99f54efc6809162647ecbb6395f006
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: mmast-msft
+ms.prod: education
+ms.openlocfilehash: 9b25e95dfa109ef48d67374ba7569a32af22ba50
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27864639"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27935067"
 ---
 # <a name="delete-educationclass"></a>educationClass を削除する
 

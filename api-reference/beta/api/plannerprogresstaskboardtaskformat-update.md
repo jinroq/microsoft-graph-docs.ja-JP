@@ -2,12 +2,14 @@
 title: Update plannerProgressTaskBoardTaskFormat
 description: '**plannerProgressTaskBoardTaskFormat** オブジェクトのプロパティを更新します。'
 localization_priority: Normal
-ms.openlocfilehash: 4fedbf9bc5edf90b78545a7e7dec29257b471fd5
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: TarkanSevilmis
+ms.prod: planner
+ms.openlocfilehash: 63654112e2a8192d2f84ea42252491f03a839602
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27846397"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27945189"
 ---
 # <a name="update-plannerprogresstaskboardtaskformat"></a>Update plannerProgressTaskBoardTaskFormat
 
@@ -37,7 +39,7 @@ PATCH /planner/tasks/<id>/progressTaskBoardFormat
 ## <a name="request-body"></a>要求本文
 要求本文で、更新する関連フィールドの値を指定します。要求本文に含まれない既存のプロパティは、以前の値のままになるか、他のプロパティ値の変化に基づいて再計算されます。最適なパフォーマンスを得るためには、変更されていない既存の値を含めないでください。
 
-| プロパティ     | 種類   |説明|
+| プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
 |orderHint|String|ヒントの値を使用してタスクの掲示板の進行状況のビューで、タスクを注文します。 [プランナーで使用する順序のヒント](../resources/planner-order-hint-format.md)の形式が定義されています。|
 

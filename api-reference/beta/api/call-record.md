@@ -3,12 +3,13 @@ title: '呼び出す: レコード'
 description: 呼び出しを記録します。
 author: VinodRavichandran
 localization_priority: Normal
-ms.openlocfilehash: afb74bb656eb6fcc09fdab71477843748bc5616d
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: microsoft-teams
+ms.openlocfilehash: 9afd607ca15c2bac16d2aba4d0ab2c5b52f71864
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27859578"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27936369"
 ---
 # <a name="call-record"></a>呼び出す: レコード
 
@@ -40,15 +41,15 @@ POST /applications/{id}/calls/{id}/record
 ## <a name="request-body"></a>要求本文
 要求本文で、次のパラメーターを含む JSON オブジェクトを指定します。
 
-| パラメーター      | Type    |説明|
+| パラメーター      | 型    |説明|
 |:---------------|:--------|:----------|
 |メッセージが表示されます。|[mediaprompt](../resources/mediaprompt.md)コレクション | レコーディングの前に (もしあれば) を再生するメッセージのコレクションを開始します。 ユーザー"playPrompt"のアクションを個別に指定、またはほとんどすべてのレコードは、前のプロンプトに「記録」の一部として指定することができます。 |
-|bargeInAllowed|ブール型| プロンプトが終了する前に、選択肢を入力できるようにします。                                                                 |
+|bargeInAllowed|Boolean| プロンプトが終了する前に、選択肢を入力できるようにします。                                                                 |
 |initialSilenceTimeoutInSeconds | Int32| 最大初期無音タイムアウトし、操作が失敗、私たちの前にレコードの操作を始める時から使用します。 プロンプトを再生していることは、プロンプトが終了するとこのタイマーが開始されます。 |
 |maxSilenceTimeoutInSeconds|Int32| 無音部分の最大のタイムアウト (秒) です。|
 |maxRecordDurationInSeconds|Int32| 秒単位で最大のレコードの期間です。|
-|playBeep|ブール型| プロンプトを再生した後、ビープ音を再生します。|
-|streamWhileRecording|ブール型|True の場合、リソースの場所に設定する場合、録画の開始と同時に提供されます。 |
+|playBeep|Boolean| プロンプトを再生した後、ビープ音を再生します。|
+|streamWhileRecording|Boolean|True の場合、リソースの場所に設定する場合、録画の開始と同時に提供されます。 |
 |stopTones|String コレクション|音の録音を終了するために指定を停止します。|
 |clientContext|String|クライアントのコンテキスト。|
 

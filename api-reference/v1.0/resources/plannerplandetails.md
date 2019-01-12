@@ -2,12 +2,14 @@
 title: plannerPlanDetails リソースの種類
 description: '**plannerPlanDetails** リソースは、計画に関する追加情報を表します。各 plan オブジェクトには詳細オブジェクトがあります。'
 localization_priority: Normal
-ms.openlocfilehash: 59064093b485b6c82bd5b2e0b59ca1868e8517e4
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: TarkanSevilmis
+ms.prod: planner
+ms.openlocfilehash: 5661477ff59036e633eb82c23e9c50d7c2c8b4a9
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27867740"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27934675"
 ---
 # <a name="plannerplandetails-resource-type"></a>plannerPlanDetails リソースの種類
 
@@ -23,7 +25,7 @@ ms.locfileid: "27867740"
 |[Update](../api/plannerplandetails-update.md) | [plannerPlanDetails](plannerplandetails.md)    |**plannerPlanDetails** オブジェクトを更新します。 |
 
 ## <a name="properties"></a>プロパティ
-| プロパティ     | 種類   |説明|
+| プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
 |categoryDescriptions|[plannerCategoryDescriptions](plannercategorydescriptions.md)|計画内のタスクに関連付けられる 6 つのカテゴリの説明を指定するオブジェクト|
 |id|String| 読み取り専用です。 計画の ID です。 28 の文字、大文字小文字を区別することをお勧めします。 サービスの[フォーマットの検証](planner-identifiers-disclaimer.md)が行われます。|

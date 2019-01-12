@@ -3,12 +3,13 @@ title: targetedManagedAppConfiguration の作成
 description: 新しい targetedManagedAppConfiguration オブジェクトを作成します。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: b846caa7a9e626830423e8a5e8b8138a08a11bcc
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: dc7175a3ad6f43393e52de2c55a2dc6cbc7bea65
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27812146"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27934724"
 ---
 # <a name="create-targetedmanagedappconfiguration"></a>targetedManagedAppConfiguration の作成
 
@@ -44,7 +45,7 @@ POST /deviceAppManagement/targetedManagedAppConfigurations
 
 次の表に、targetedManagedAppConfiguration の作成時に必要なプロパティを示します。
 
-|プロパティ|種類|説明|
+|プロパティ|型|説明|
 |:---|:---|:---|
 |displayName|String|ポリシーの表示名。 [managedAppPolicy](../resources/intune-mam-managedapppolicy.md) から継承します|
 |説明|String|ポリシーの説明。 [managedAppPolicy](../resources/intune-mam-managedapppolicy.md) から継承します|

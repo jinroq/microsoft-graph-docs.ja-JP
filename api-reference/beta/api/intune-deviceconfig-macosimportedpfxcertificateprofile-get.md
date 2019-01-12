@@ -3,12 +3,13 @@ title: MacOSImportedPFXCertificateProfile を取得します。
 description: MacOSImportedPFXCertificateProfile オブジェクトのプロパティと関係を参照してください。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 29276a61e1979caca1171e10a8ed073146c01092
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 56e5da4e68a7d11a8a2e4f4afb15107092444a2e
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27862994"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27938574"
 ---
 # <a name="get-macosimportedpfxcertificateprofile"></a>MacOSImportedPFXCertificateProfile を取得します。
 

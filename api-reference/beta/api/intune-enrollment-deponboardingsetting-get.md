@@ -3,12 +3,13 @@ title: DepOnboardingSetting を取得します。
 description: DepOnboardingSetting オブジェクトのプロパティと関係を参照してください。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: ac62febaa515f4ccb3cf5396c20c7336a7c88787
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 362d48ecd1f0f3ec40a65673d55cc38ea452d112
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27847692"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27935501"
 ---
 # <a name="get-deponboardingsetting"></a>DepOnboardingSetting を取得します。
 

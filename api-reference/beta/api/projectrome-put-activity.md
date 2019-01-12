@@ -2,12 +2,13 @@
 title: アクティビティを作成または置換する
 description: 新規作成またはアプリケーションが既存のユーザー アクティビティを交換します。 1 つの要求でユーザーの利用状況とその関連する**historyItems**を作成したい場合は、深い挿入を使用できます。
 localization_priority: Normal
-ms.openlocfilehash: 01fa9fff306dbd07af0964f27dd97b288b6bab67
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: project-rome
+ms.openlocfilehash: eca8e03e45a5a2d4ae6c4c08218189edcf98a03a
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27871793"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27944748"
 ---
 # <a name="create-or-replace-an-activity"></a>アクティビティを作成または置換する
 
@@ -38,7 +39,7 @@ PUT /me/activities/{appActivityId}
 
 ## <a name="request-headers"></a>要求ヘッダー
 
-|名前 | 種類 | 説明|
+|名前 | 型 | 説明|
 |:----|:-----|:-----------|
 |Authorization | string | ベアラー {トークン}。必須。|
 

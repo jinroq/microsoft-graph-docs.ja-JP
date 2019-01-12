@@ -2,12 +2,14 @@
 title: マイ accessReview の決定事項を表示します。
 description: Azure AD アクセスのレビュー機能をレビュー担当者として、accessReview オブジェクトの呼び出し元のユーザーの意思決定を取得します。
 localization_priority: Normal
-ms.openlocfilehash: 27ae3129810b6019ecf47e23f1e4cc48362df6fe
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: lleonard-msft
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: 037b916bca45c74d1918b45e4e9e21b685bd8ae0
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27819013"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27941500"
 ---
 # <a name="list-my-accessreview-decisions"></a>マイ accessReview の決定事項を表示します。
 
@@ -29,7 +31,7 @@ ms.locfileid: "27819013"
 GET /accessReviews('{reviewId}')/myDecisions
 ```
 ## <a name="request-headers"></a>要求ヘッダー
-| 名前         | 種類        | 説明 |
+| 名前         | 型        | 説明 |
 |:-------------|:------------|:------------|
 | Authorization | string | ベアラー\{トークン\}。 必須。 |
 

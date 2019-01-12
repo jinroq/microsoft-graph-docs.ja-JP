@@ -3,12 +3,13 @@ title: eventMessage の更新
 description: eventMessage オブジェクトのプロパティを更新します。
 author: angelgolfer-ms
 localization_priority: Normal
-ms.openlocfilehash: 128849b2b0a1a156ef68498b345ca30833922d82
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: outlook
+ms.openlocfilehash: a906dbbdb9a82e78a49ea41399e3791c9d52645b
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27867698"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27943887"
 ---
 # <a name="update-eventmessage"></a>eventMessage の更新
 
@@ -32,20 +33,20 @@ PATCH /me/mailFolders/{id}/messages/{id}
 PATCH /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}
 ```
 ## <a name="request-headers"></a>要求ヘッダー
-| 名前       | 種類 | 説明|
+| 名前       | 型 | 説明|
 |:-----------|:------|:----------|
 | Authorization  | string  | ベアラー {トークン}。必須。 |
 | Content-Type | string  | エンティティ本文内のデータの性質です。必須。 |
 ## <a name="request-body"></a>要求本文
 要求本文で、更新する関連フィールドの値を指定します。要求本文に含まれない既存のプロパティは、以前の値のままになるか、他のプロパティ値の変化に基づいて再計算されます。最適なパフォーマンスを得るためには、変更されていない既存の値を含めないでください。以下のプロパティは書き込み可能または更新可能です。
 
-| プロパティ     | 種類   |説明|
+| プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
 |categories|String|メッセージに関連付けられたカテゴリ。|
 |importance|String|メッセージの重要性。 可能な値: `Low`、 `Normal`、 `High`。|
-|isDeliveryReceiptRequested|ブール値|メッセージの開封応答が要求されているかどうかを示します。|
-|isRead|ブール値|メッセージが開封されたかどうかを示します。|
-|isReadReceiptRequested|ブール値|メッセージの開封応答が要求されているかどうかを示します。|
+|isDeliveryReceiptRequested|Boolean|メッセージの開封応答が要求されているかどうかを示します。|
+|isRead|Boolean|メッセージが開封されたかどうかを示します。|
+|isReadReceiptRequested|Boolean|メッセージの開封応答が要求されているかどうかを示します。|
 
 ## <a name="response"></a>応答
 

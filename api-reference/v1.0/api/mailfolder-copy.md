@@ -3,12 +3,13 @@ title: 'mailFolder: コピー'
 description: mailFolder とその内容を別の mailFolder にコピーします。
 author: angelgolfer-ms
 localization_priority: Normal
-ms.openlocfilehash: 94470a21a1a640f4333419620e79eaf7b8d1130b
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: outlook
+ms.openlocfilehash: 37160f5b6f62ce29d605e84a93a7748f426bd240
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27844093"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27940737"
 ---
 # <a name="mailfolder-copy"></a>mailFolder: コピー
 
@@ -43,7 +44,7 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/copy
 
 要求本文で、次のパラメーターを含む JSON オブジェクトを指定します。
 
-| パラメーター | Type | 説明 |
+| パラメーター | 型 | 説明 |
 |:----------|:-----|:------------|
 |destinationId|String|フォルダー ID、またはよく知られているフォルダー名です。 サポートされている既知のフォルダー名の一覧については、「[mailFolder リソースの種類](../resources/mailfolder.md)」を参照してください。|
 

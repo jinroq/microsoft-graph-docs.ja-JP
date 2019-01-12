@@ -2,12 +2,14 @@
 title: windowsInformationProtectionAppLearningSummary の取得
 description: windowsInformationProtectionAppLearningSummary オブジェクトのプロパティとリレーションシップを読み取ります。
 author: tfitzmac
-ms.openlocfilehash: fce6f6d4238b1f28c792fbfa025148c0b6d2eb96
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.prod: intune
+ms.openlocfilehash: 5425c981a4e6ee0903c2bd2f64e3228df8360a8a
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27333545"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27935305"
 ---
 # <a name="get-windowsinformationprotectionapplearningsummary"></a>windowsInformationProtectionAppLearningSummary の取得
 

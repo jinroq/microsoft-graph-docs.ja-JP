@@ -2,12 +2,14 @@
 title: 'メッセージ: createReply'
 description: 'コメントを含めるか、メッセージ ・ プロパティの更新への返信メッセージの下書きを作成します。 '
 author: angelgolfer-ms
-ms.openlocfilehash: cf7bfb3ce584a17a3e4105d04c7e781b69c4901c
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.prod: outlook
+ms.openlocfilehash: 27e6aabe05cb732cd40242f3c17c822c920c062e
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27338942"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27943740"
 ---
 # <a name="message-createreply"></a>メッセージ: createReply
 
@@ -38,7 +40,7 @@ POST /me/mailFolders/{id}/messages/{id}/createReply
 POST /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/createReply
 ```
 ## <a name="request-headers"></a>要求ヘッダー
-| 名前       | 種類 | 説明|
+| 名前       | 型 | 説明|
 |:---------------|:--------|:----------|
 | Authorization  | string  | ベアラー {トークン}。必須。 |
 | Content-Type | string  | エンティティ本文内のデータの性質です。必須。 |
@@ -46,7 +48,7 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/createReply
 ## <a name="request-body"></a>要求本文
 要求本文で、次のパラメーターを含む JSON オブジェクトを指定します。
 
-| パラメーター    | 種類   |説明|
+| パラメーター    | 型   |説明|
 |:---------------|:--------|:----------|
 |comment|String|含めるコメントです。空の文字列にすることができます。|
 |message|[message](../resources/message.md)|返信メッセージで更新する書き込み可能なプロパティです。|

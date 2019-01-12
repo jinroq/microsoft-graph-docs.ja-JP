@@ -4,12 +4,13 @@ ms.author: rgregg
 ms.date: 09/10/2017
 title: ファイルへのアクセス権を持つユーザーを一覧表示する
 localization_priority: Normal
-ms.openlocfilehash: 814c2a40e017c3a7d779f4df344498a7f9dc2bbb
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: sharepoint
+ms.openlocfilehash: c85ca498cbdfce27e5fff549b3d75c89a805109d
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27840062"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27938287"
 ---
 # <a name="list-sharing-permissions-on-a-driveitem"></a>DriveItem の共有アクセス許可を一覧表示する
 
@@ -52,7 +53,7 @@ GET /users/{userId}/drive/items/{itemId}/permissions
 
 ## <a name="optional-request-headers"></a>オプションの要求ヘッダー
 
-| 名前          | 種類   | 説明                                                                                                                                     |
+| 名前          | 型   | 説明                                                                                                                                     |
 |:--------------|:-------|:------------------------------------------------------------------------------------------------------------------------------------------------|
 | if-none-match | 文字列 | この要求ヘッダーが含まれている場合、指定された etag がアイテムの現在の etag に一致すると、`HTTP 304 Not Modified` 応答が返されます。 |
 

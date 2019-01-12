@@ -3,12 +3,13 @@ title: deviceCategory の作成
 description: 新しい deviceCategory オブジェクトを作成します。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 61a114e86b50e5992c7614d14ae4734bfc879657
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: fe2d928f784eaa370c964761e54c9ea4e2c4d006
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27861629"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27942963"
 ---
 # <a name="create-devicecategory"></a>deviceCategory の作成
 
@@ -51,7 +52,7 @@ POST /deviceManagement/deviceCategories
 
 次の表に、deviceCategory の作成時に必要なプロパティを示します。
 
-|プロパティ|種類|説明|
+|プロパティ|型|説明|
 |:---|:---|:---|
 |ID|String|デバイス カテゴリの一意識別子。 読み取り専用です。|
 |**Obboarding**|

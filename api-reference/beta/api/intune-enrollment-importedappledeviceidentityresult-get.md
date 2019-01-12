@@ -2,12 +2,14 @@
 title: ImportedAppleDeviceIdentityResult を取得します。
 description: ImportedAppleDeviceIdentityResult オブジェクトのプロパティと関係を参照してください。
 author: tfitzmac
-ms.openlocfilehash: 99054c68f82f6da3d0d45f14ab51b116dd62394b
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.prod: intune
+ms.openlocfilehash: 0dcca0b1da7d377f8d39efa96a3961151600999a
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27322275"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27934983"
 ---
 # <a name="get-importedappledeviceidentityresult"></a>ImportedAppleDeviceIdentityResult を取得します。
 
