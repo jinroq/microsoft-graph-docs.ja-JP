@@ -3,30 +3,31 @@ title: MailFolder を作成します。
 description: 新しい子 mailFolder を作成するのにには、この API を使用します。
 author: angelgolfer-ms
 localization_priority: Normal
-ms.openlocfilehash: c031f0bd621778fc38801a80788f977d45fbaffb
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: outlook
+ms.openlocfilehash: d466de7ae3952c85891c1798afa03b96aa887de0
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27816424"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27962752"
 ---
-# <a name="create-mailfolder"></a><span data-ttu-id="1f906-103">MailFolder を作成します。</span><span class="sxs-lookup"><span data-stu-id="1f906-103">Create mailFolder</span></span>
+# <a name="create-mailfolder"></a><span data-ttu-id="0f92c-103">MailFolder を作成します。</span><span class="sxs-lookup"><span data-stu-id="0f92c-103">Create mailFolder</span></span>
 
-> <span data-ttu-id="1f906-104">**重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。</span><span class="sxs-lookup"><span data-stu-id="1f906-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="1f906-105">実稼働アプリケーションでの、これらの API の使用はサポートされていません。</span><span class="sxs-lookup"><span data-stu-id="1f906-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="0f92c-104">**重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。</span><span class="sxs-lookup"><span data-stu-id="0f92c-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="0f92c-105">実稼働アプリケーションでの、これらの API の使用はサポートされていません。</span><span class="sxs-lookup"><span data-stu-id="0f92c-105">Use of these APIs in production applications is not supported.</span></span>
 
-<span data-ttu-id="1f906-106">新しい子[mailFolder](../resources/mailfolder.md)を作成するのにには、この API を使用します。</span><span class="sxs-lookup"><span data-stu-id="1f906-106">Use this API to create a new child [mailFolder](../resources/mailfolder.md).</span></span>
+<span data-ttu-id="0f92c-106">新しい子[mailFolder](../resources/mailfolder.md)を作成するのにには、この API を使用します。</span><span class="sxs-lookup"><span data-stu-id="0f92c-106">Use this API to create a new child [mailFolder](../resources/mailfolder.md).</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="1f906-107">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="1f906-107">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="0f92c-107">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="0f92c-107">Permissions</span></span>
 
-<span data-ttu-id="1f906-p102">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="1f906-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="0f92c-p102">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="0f92c-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="1f906-110">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="1f906-110">Permission type</span></span> | <span data-ttu-id="1f906-111">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="1f906-111">Permissions (from least to most privileged)</span></span> |
+| <span data-ttu-id="0f92c-110">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="0f92c-110">Permission type</span></span> | <span data-ttu-id="0f92c-111">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="0f92c-111">Permissions (from least to most privileged)</span></span> |
 |:----------------|:--------------------------------------------|
-|<span data-ttu-id="1f906-112">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="1f906-112">Delegated (work or school account)</span></span> | <span data-ttu-id="1f906-113">Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="1f906-113">Mail.ReadWrite</span></span>    |
-|<span data-ttu-id="1f906-114">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="1f906-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="1f906-115">Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="1f906-115">Mail.ReadWrite</span></span>    |
-|<span data-ttu-id="1f906-116">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="1f906-116">Application</span></span> | <span data-ttu-id="1f906-117">Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="1f906-117">Mail.ReadWrite</span></span> |
+|<span data-ttu-id="0f92c-112">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="0f92c-112">Delegated (work or school account)</span></span> | <span data-ttu-id="0f92c-113">Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="0f92c-113">Mail.ReadWrite</span></span>    |
+|<span data-ttu-id="0f92c-114">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="0f92c-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="0f92c-115">Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="0f92c-115">Mail.ReadWrite</span></span>    |
+|<span data-ttu-id="0f92c-116">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="0f92c-116">Application</span></span> | <span data-ttu-id="0f92c-117">Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="0f92c-117">Mail.ReadWrite</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="1f906-118">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="1f906-118">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="0f92c-118">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="0f92c-118">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -35,32 +36,32 @@ POST /me/mailFolders/{id}/childFolders
 POST /users/{id | userPrincipalName}/mailFolders/{id}/childFolders
 ```
 
-<span data-ttu-id="1f906-119">フォルダー ID の場合、またはよく知られているフォルダー名とクエリの URL では、親フォルダーを指定します。</span><span class="sxs-lookup"><span data-stu-id="1f906-119">Specify the parent folder in the query URL as a folder ID, or a well-known folder name.</span></span> <span data-ttu-id="1f906-120">サポートされている既知のフォルダー名の一覧については、「[mailFolder リソースの種類](../resources/mailfolder.md)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="1f906-120">For a list of supported well-known folder names, see [mailFolder resource type](../resources/mailfolder.md).</span></span>
+<span data-ttu-id="0f92c-119">フォルダー ID の場合、またはよく知られているフォルダー名とクエリの URL では、親フォルダーを指定します。</span><span class="sxs-lookup"><span data-stu-id="0f92c-119">Specify the parent folder in the query URL as a folder ID, or a well-known folder name.</span></span> <span data-ttu-id="0f92c-120">サポートされている既知のフォルダー名の一覧については、「[mailFolder リソースの種類](../resources/mailfolder.md)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="0f92c-120">For a list of supported well-known folder names, see [mailFolder resource type](../resources/mailfolder.md).</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="1f906-121">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="1f906-121">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="0f92c-121">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="0f92c-121">Request headers</span></span>
 
-| <span data-ttu-id="1f906-122">ヘッダー</span><span class="sxs-lookup"><span data-stu-id="1f906-122">Header</span></span> | <span data-ttu-id="1f906-123">値</span><span class="sxs-lookup"><span data-stu-id="1f906-123">Value</span></span> |
+| <span data-ttu-id="0f92c-122">ヘッダー</span><span class="sxs-lookup"><span data-stu-id="0f92c-122">Header</span></span> | <span data-ttu-id="0f92c-123">値</span><span class="sxs-lookup"><span data-stu-id="0f92c-123">Value</span></span> |
 |:-------|:------|
-| <span data-ttu-id="1f906-124">Authorization</span><span class="sxs-lookup"><span data-stu-id="1f906-124">Authorization</span></span> | <span data-ttu-id="1f906-125">`Bearer {token}`.</span><span class="sxs-lookup"><span data-stu-id="1f906-125"></span></span> <span data-ttu-id="1f906-126">必須。</span><span class="sxs-lookup"><span data-stu-id="1f906-126">Required.</span></span> |
-| <span data-ttu-id="1f906-127">Content-Type</span><span class="sxs-lookup"><span data-stu-id="1f906-127">Content-Type</span></span> | <span data-ttu-id="1f906-128">`application/json`.</span><span class="sxs-lookup"><span data-stu-id="1f906-128"></span></span> <span data-ttu-id="1f906-129">必須。</span><span class="sxs-lookup"><span data-stu-id="1f906-129">Required.</span></span> |
+| <span data-ttu-id="0f92c-124">Authorization</span><span class="sxs-lookup"><span data-stu-id="0f92c-124">Authorization</span></span> | <span data-ttu-id="0f92c-125">`Bearer {token}`.</span><span class="sxs-lookup"><span data-stu-id="0f92c-125"></span></span> <span data-ttu-id="0f92c-126">必須。</span><span class="sxs-lookup"><span data-stu-id="0f92c-126">Required.</span></span> |
+| <span data-ttu-id="0f92c-127">Content-Type</span><span class="sxs-lookup"><span data-stu-id="0f92c-127">Content-Type</span></span> | <span data-ttu-id="0f92c-128">`application/json`.</span><span class="sxs-lookup"><span data-stu-id="0f92c-128"></span></span> <span data-ttu-id="0f92c-129">必須。</span><span class="sxs-lookup"><span data-stu-id="0f92c-129">Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="1f906-130">要求本文</span><span class="sxs-lookup"><span data-stu-id="1f906-130">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="0f92c-130">要求本文</span><span class="sxs-lookup"><span data-stu-id="0f92c-130">Request body</span></span>
 
-<span data-ttu-id="1f906-p106">要求本文で、次のパラメーターを含む JSON オブジェクトを指定します。[MailFolder](../resources/mailfolder.md) オブジェクトに対して書き込み可能なプロパティは **displayName** のみです。</span><span class="sxs-lookup"><span data-stu-id="1f906-p106">In the request body, provide a JSON object with the following parameters. **displayName** is the only writable property for a [MailFolder](../resources/mailfolder.md) object.</span></span>
+<span data-ttu-id="0f92c-p106">要求本文で、次のパラメーターを含む JSON オブジェクトを指定します。[MailFolder](../resources/mailfolder.md) オブジェクトに対して書き込み可能なプロパティは **displayName** のみです。</span><span class="sxs-lookup"><span data-stu-id="0f92c-p106">In the request body, provide a JSON object with the following parameters. **displayName** is the only writable property for a [MailFolder](../resources/mailfolder.md) object.</span></span>
 
-| <span data-ttu-id="1f906-133">パラメーター</span><span class="sxs-lookup"><span data-stu-id="1f906-133">Parameter</span></span> | <span data-ttu-id="1f906-134">Type</span><span class="sxs-lookup"><span data-stu-id="1f906-134">Type</span></span> | <span data-ttu-id="1f906-135">説明</span><span class="sxs-lookup"><span data-stu-id="1f906-135">Description</span></span> |
+| <span data-ttu-id="0f92c-133">パラメーター</span><span class="sxs-lookup"><span data-stu-id="0f92c-133">Parameter</span></span> | <span data-ttu-id="0f92c-134">Type</span><span class="sxs-lookup"><span data-stu-id="0f92c-134">Type</span></span> | <span data-ttu-id="0f92c-135">説明</span><span class="sxs-lookup"><span data-stu-id="0f92c-135">Description</span></span> |
 |:----------|:-----|:------------|
-|<span data-ttu-id="1f906-136">displayName</span><span class="sxs-lookup"><span data-stu-id="1f906-136">displayName</span></span>|<span data-ttu-id="1f906-137">String</span><span class="sxs-lookup"><span data-stu-id="1f906-137">String</span></span>|<span data-ttu-id="1f906-138">新しいフォルダーの表示名です。</span><span class="sxs-lookup"><span data-stu-id="1f906-138">The display name of the new folder.</span></span>|
+|<span data-ttu-id="0f92c-136">displayName</span><span class="sxs-lookup"><span data-stu-id="0f92c-136">displayName</span></span>|<span data-ttu-id="0f92c-137">String</span><span class="sxs-lookup"><span data-stu-id="0f92c-137">String</span></span>|<span data-ttu-id="0f92c-138">新しいフォルダーの表示名です。</span><span class="sxs-lookup"><span data-stu-id="0f92c-138">The display name of the new folder.</span></span>|
 
-## <a name="response"></a><span data-ttu-id="1f906-139">応答</span><span class="sxs-lookup"><span data-stu-id="1f906-139">Response</span></span>
+## <a name="response"></a><span data-ttu-id="0f92c-139">応答</span><span class="sxs-lookup"><span data-stu-id="0f92c-139">Response</span></span>
 
-<span data-ttu-id="1f906-140">かどうかは成功すると、このメソッドを返します`201 Created`応答コードおよび応答の本文に[mailFolder](../resources/mailfolder.md)オブジェクトです。</span><span class="sxs-lookup"><span data-stu-id="1f906-140">If successful, this method returns `201 Created` response code and a [mailFolder](../resources/mailfolder.md) object in the response body.</span></span>
+<span data-ttu-id="0f92c-140">かどうかは成功すると、このメソッドを返します`201 Created`応答コードおよび応答の本文に[mailFolder](../resources/mailfolder.md)オブジェクトです。</span><span class="sxs-lookup"><span data-stu-id="0f92c-140">If successful, this method returns `201 Created` response code and a [mailFolder](../resources/mailfolder.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="1f906-141">例</span><span class="sxs-lookup"><span data-stu-id="1f906-141">Example</span></span>
+## <a name="example"></a><span data-ttu-id="0f92c-141">例</span><span class="sxs-lookup"><span data-stu-id="0f92c-141">Example</span></span>
 
-#### <a name="request"></a><span data-ttu-id="1f906-142">要求</span><span class="sxs-lookup"><span data-stu-id="1f906-142">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="0f92c-142">要求</span><span class="sxs-lookup"><span data-stu-id="0f92c-142">Request</span></span>
 
-<span data-ttu-id="1f906-143">要求の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="1f906-143">The following is an example of the request.</span></span>
+<span data-ttu-id="0f92c-143">要求の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="0f92c-143">The following is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "create_mailfolder_from_mailfolder"
@@ -76,11 +77,11 @@ Content-length: 159
 }
 ```
 
-#### <a name="response"></a><span data-ttu-id="1f906-144">応答</span><span class="sxs-lookup"><span data-stu-id="1f906-144">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="0f92c-144">応答</span><span class="sxs-lookup"><span data-stu-id="0f92c-144">Response</span></span>
 
-<span data-ttu-id="1f906-145">応答の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="1f906-145">The following is an example of the response.</span></span>
+<span data-ttu-id="0f92c-145">応答の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="0f92c-145">The following is an example of the response.</span></span>
 
-> <span data-ttu-id="1f906-146">**注:** ここに示す応答オブジェクトは、読みやすさの短縮される可能性があります。</span><span class="sxs-lookup"><span data-stu-id="1f906-146">**Note:** The response object shown here might be shortened for readability.</span></span> <span data-ttu-id="1f906-147">実際の呼び出しではすべてのプロパティが返されます。</span><span class="sxs-lookup"><span data-stu-id="1f906-147">All the properties will be returned from an actual call.</span></span>
+> <span data-ttu-id="0f92c-146">**注:** ここに示す応答オブジェクトは、読みやすさの短縮される可能性があります。</span><span class="sxs-lookup"><span data-stu-id="0f92c-146">**Note:** The response object shown here might be shortened for readability.</span></span> <span data-ttu-id="0f92c-147">実際の呼び出しではすべてのプロパティが返されます。</span><span class="sxs-lookup"><span data-stu-id="0f92c-147">All the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,

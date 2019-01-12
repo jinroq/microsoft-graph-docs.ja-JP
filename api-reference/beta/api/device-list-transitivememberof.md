@@ -2,30 +2,32 @@
 title: デバイスの推移的なグループを一覧表示
 description: メンバーであるデバイスのグループを取得します。 この API 要求は、推移的ともデバイスでは、入れ子にされたメンバーのすべてのグループを返します。
 localization_priority: Normal
-ms.openlocfilehash: c15080fa3af336ec0a2bd14f0dd7812719bff52a
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: lleonard-msft
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: 4fe6d404c16b592be7aa931e294a3229355e9ab0
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27874971"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27966357"
 ---
-# <a name="list-device-transitive-groups"></a><span data-ttu-id="bc2b0-104">デバイスの推移的なグループを一覧表示</span><span class="sxs-lookup"><span data-stu-id="bc2b0-104">List device transitive groups</span></span>
+# <a name="list-device-transitive-groups"></a><span data-ttu-id="7ea94-104">デバイスの推移的なグループを一覧表示</span><span class="sxs-lookup"><span data-stu-id="7ea94-104">List device transitive groups</span></span>
 
-> <span data-ttu-id="bc2b0-105">**重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。</span><span class="sxs-lookup"><span data-stu-id="bc2b0-105">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="bc2b0-106">実稼働アプリケーションでの、これらの API の使用はサポートされていません。</span><span class="sxs-lookup"><span data-stu-id="bc2b0-106">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="7ea94-105">**重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。</span><span class="sxs-lookup"><span data-stu-id="7ea94-105">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="7ea94-106">実稼働アプリケーションでの、これらの API の使用はサポートされていません。</span><span class="sxs-lookup"><span data-stu-id="7ea94-106">Use of these APIs in production applications is not supported.</span></span>
 
-<span data-ttu-id="bc2b0-107">メンバーであるデバイスのグループを取得します。</span><span class="sxs-lookup"><span data-stu-id="bc2b0-107">Get groups that the device is a member of.</span></span> <span data-ttu-id="bc2b0-108">この API 要求は、推移的ともデバイスでは、入れ子にされたメンバーのすべてのグループを返します。</span><span class="sxs-lookup"><span data-stu-id="bc2b0-108">This API request is transitive, and will also return all groups the device is a nested member of.</span></span>
+<span data-ttu-id="7ea94-107">メンバーであるデバイスのグループを取得します。</span><span class="sxs-lookup"><span data-stu-id="7ea94-107">Get groups that the device is a member of.</span></span> <span data-ttu-id="7ea94-108">この API 要求は、推移的ともデバイスでは、入れ子にされたメンバーのすべてのグループを返します。</span><span class="sxs-lookup"><span data-stu-id="7ea94-108">This API request is transitive, and will also return all groups the device is a nested member of.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="bc2b0-109">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="bc2b0-109">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="7ea94-109">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="7ea94-109">Permissions</span></span>
 
-<span data-ttu-id="bc2b0-p104">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="bc2b0-p104">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="7ea94-p104">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="7ea94-p104">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="bc2b0-112">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="bc2b0-112">Permission type</span></span>      | <span data-ttu-id="bc2b0-113">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="bc2b0-113">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="7ea94-112">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="7ea94-112">Permission type</span></span>      | <span data-ttu-id="7ea94-113">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="7ea94-113">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="bc2b0-114">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="bc2b0-114">Delegated (work or school account)</span></span> | <span data-ttu-id="bc2b0-115">Directory.Read.All、Directory.ReadWrite.All、Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="bc2b0-115">Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All</span></span>    |
-|<span data-ttu-id="bc2b0-116">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="bc2b0-116">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="bc2b0-117">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="bc2b0-117">Not supported.</span></span>    |
-|<span data-ttu-id="bc2b0-118">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="bc2b0-118">Application</span></span> | <span data-ttu-id="bc2b0-119">Directory.Read.All、Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="bc2b0-119">Directory.Read.All, Directory.ReadWrite.All</span></span> |
+|<span data-ttu-id="7ea94-114">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="7ea94-114">Delegated (work or school account)</span></span> | <span data-ttu-id="7ea94-115">Directory.Read.All、Directory.ReadWrite.All、Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="7ea94-115">Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All</span></span>    |
+|<span data-ttu-id="7ea94-116">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="7ea94-116">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="7ea94-117">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="7ea94-117">Not supported.</span></span>    |
+|<span data-ttu-id="7ea94-118">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="7ea94-118">Application</span></span> | <span data-ttu-id="7ea94-119">Directory.Read.All、Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="7ea94-119">Directory.Read.All, Directory.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="bc2b0-120">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="bc2b0-120">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="7ea94-120">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="7ea94-120">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -33,30 +35,30 @@ ms.locfileid: "27874971"
 GET /devices/{id | userPrincipalName}/transitiveMemberOf
 ```
 
-## <a name="optional-query-parameters"></a><span data-ttu-id="bc2b0-121">オプションのクエリ パラメーター</span><span class="sxs-lookup"><span data-stu-id="bc2b0-121">Optional query parameters</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="7ea94-121">オプションのクエリ パラメーター</span><span class="sxs-lookup"><span data-stu-id="7ea94-121">Optional query parameters</span></span>
 
-<span data-ttu-id="bc2b0-122">このメソッドは、応答をカスタマイズするための [OData クエリ パラメーター](https://developer.microsoft.com/graph/docs/concepts/query_parameters)をサポートします。</span><span class="sxs-lookup"><span data-stu-id="bc2b0-122">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
+<span data-ttu-id="7ea94-122">このメソッドは、応答をカスタマイズするための [OData クエリ パラメーター](https://developer.microsoft.com/graph/docs/concepts/query_parameters)をサポートします。</span><span class="sxs-lookup"><span data-stu-id="7ea94-122">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="bc2b0-123">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="bc2b0-123">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="7ea94-123">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="7ea94-123">Request headers</span></span>
 
-| <span data-ttu-id="bc2b0-124">ヘッダー</span><span class="sxs-lookup"><span data-stu-id="bc2b0-124">Header</span></span>       | <span data-ttu-id="bc2b0-125">値</span><span class="sxs-lookup"><span data-stu-id="bc2b0-125">Value</span></span> |
+| <span data-ttu-id="7ea94-124">ヘッダー</span><span class="sxs-lookup"><span data-stu-id="7ea94-124">Header</span></span>       | <span data-ttu-id="7ea94-125">値</span><span class="sxs-lookup"><span data-stu-id="7ea94-125">Value</span></span> |
 |:---------------|:--------|
-| <span data-ttu-id="bc2b0-126">Authorization</span><span class="sxs-lookup"><span data-stu-id="bc2b0-126">Authorization</span></span>  | <span data-ttu-id="bc2b0-p105">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="bc2b0-p105">Bearer {token}. Required.</span></span>  |
-| <span data-ttu-id="bc2b0-129">承諾</span><span class="sxs-lookup"><span data-stu-id="bc2b0-129">Accept</span></span>  | <span data-ttu-id="bc2b0-130">application/json</span><span class="sxs-lookup"><span data-stu-id="bc2b0-130">application/json</span></span>|
+| <span data-ttu-id="7ea94-126">Authorization</span><span class="sxs-lookup"><span data-stu-id="7ea94-126">Authorization</span></span>  | <span data-ttu-id="7ea94-p105">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="7ea94-p105">Bearer {token}. Required.</span></span>  |
+| <span data-ttu-id="7ea94-129">承諾</span><span class="sxs-lookup"><span data-stu-id="7ea94-129">Accept</span></span>  | <span data-ttu-id="7ea94-130">application/json</span><span class="sxs-lookup"><span data-stu-id="7ea94-130">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="bc2b0-131">要求本文</span><span class="sxs-lookup"><span data-stu-id="bc2b0-131">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="7ea94-131">要求本文</span><span class="sxs-lookup"><span data-stu-id="7ea94-131">Request body</span></span>
 
-<span data-ttu-id="bc2b0-132">このメソッドには、要求本文を指定しません。</span><span class="sxs-lookup"><span data-stu-id="bc2b0-132">Do not supply a request body for this method.</span></span>
+<span data-ttu-id="7ea94-132">このメソッドには、要求本文を指定しません。</span><span class="sxs-lookup"><span data-stu-id="7ea94-132">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="bc2b0-133">応答</span><span class="sxs-lookup"><span data-stu-id="bc2b0-133">Response</span></span>
+## <a name="response"></a><span data-ttu-id="7ea94-133">応答</span><span class="sxs-lookup"><span data-stu-id="7ea94-133">Response</span></span>
 
-<span data-ttu-id="bc2b0-134">成功した場合、このメソッドは `200 OK` 応答コードと、応答本文で [directoryObject](../resources/directoryobject.md) オブジェクトのコレクションを返します。</span><span class="sxs-lookup"><span data-stu-id="bc2b0-134">If successful, this method returns a `200 OK` response code and collection of [directoryObject](../resources/directoryobject.md) objects in the response body.</span></span>
+<span data-ttu-id="7ea94-134">成功した場合、このメソッドは `200 OK` 応答コードと、応答本文で [directoryObject](../resources/directoryobject.md) オブジェクトのコレクションを返します。</span><span class="sxs-lookup"><span data-stu-id="7ea94-134">If successful, this method returns a `200 OK` response code and collection of [directoryObject](../resources/directoryobject.md) objects in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="bc2b0-135">例</span><span class="sxs-lookup"><span data-stu-id="bc2b0-135">Example</span></span>
+## <a name="example"></a><span data-ttu-id="7ea94-135">例</span><span class="sxs-lookup"><span data-stu-id="7ea94-135">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="bc2b0-136">要求</span><span class="sxs-lookup"><span data-stu-id="bc2b0-136">Request</span></span>
+### <a name="request"></a><span data-ttu-id="7ea94-136">要求</span><span class="sxs-lookup"><span data-stu-id="7ea94-136">Request</span></span>
 
-<span data-ttu-id="bc2b0-137">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="bc2b0-137">Here is an example of the request.</span></span>
+<span data-ttu-id="7ea94-137">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="7ea94-137">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "get_devices_transitivememberof"
@@ -66,9 +68,9 @@ GET /devices/{id | userPrincipalName}/transitiveMemberOf
 GET https://graph.microsoft.com/beta/devices/{id}/transitiveMemberOf
 ```
 
-### <a name="response"></a><span data-ttu-id="bc2b0-138">応答</span><span class="sxs-lookup"><span data-stu-id="bc2b0-138">Response</span></span>
+### <a name="response"></a><span data-ttu-id="7ea94-138">応答</span><span class="sxs-lookup"><span data-stu-id="7ea94-138">Response</span></span>
 
-<span data-ttu-id="bc2b0-p106">以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。</span><span class="sxs-lookup"><span data-stu-id="bc2b0-p106">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+<span data-ttu-id="7ea94-p106">以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。</span><span class="sxs-lookup"><span data-stu-id="7ea94-p106">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",

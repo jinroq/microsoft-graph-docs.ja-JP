@@ -3,28 +3,29 @@ title: Delete mobileAppCategory
 description: mobileAppCategory を削除します。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 4df1e889ab4a28683032d7f4cd07dacc54648298
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 463991607d9936987041f54a75792b522c41edb3
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27884512"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27967967"
 ---
-# <a name="delete-mobileappcategory"></a><span data-ttu-id="ab12c-103">Delete mobileAppCategory</span><span class="sxs-lookup"><span data-stu-id="ab12c-103">Delete mobileAppCategory</span></span>
+# <a name="delete-mobileappcategory"></a><span data-ttu-id="fd86f-103">Delete mobileAppCategory</span><span class="sxs-lookup"><span data-stu-id="fd86f-103">Delete mobileAppCategory</span></span>
 
-> <span data-ttu-id="ab12c-104">**注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。</span><span class="sxs-lookup"><span data-stu-id="ab12c-104">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
+> <span data-ttu-id="fd86f-104">**注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。</span><span class="sxs-lookup"><span data-stu-id="fd86f-104">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
 
-<span data-ttu-id="ab12c-105">[mobileAppCategory](../resources/intune-apps-mobileappcategory.md) を削除します。</span><span class="sxs-lookup"><span data-stu-id="ab12c-105">Deletes a [mobileAppCategory](../resources/intune-apps-mobileappcategory.md).</span></span>
-## <a name="prerequisites"></a><span data-ttu-id="ab12c-106">前提条件</span><span class="sxs-lookup"><span data-stu-id="ab12c-106">Prerequisites</span></span>
-<span data-ttu-id="ab12c-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="ab12c-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="fd86f-105">[mobileAppCategory](../resources/intune-apps-mobileappcategory.md) を削除します。</span><span class="sxs-lookup"><span data-stu-id="fd86f-105">Deletes a [mobileAppCategory](../resources/intune-apps-mobileappcategory.md).</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="fd86f-106">前提条件</span><span class="sxs-lookup"><span data-stu-id="fd86f-106">Prerequisites</span></span>
+<span data-ttu-id="fd86f-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="fd86f-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="ab12c-109">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="ab12c-109">Permission type</span></span>|<span data-ttu-id="ab12c-110">アクセス許可 (特権の大きいものから小さいものへ)</span><span class="sxs-lookup"><span data-stu-id="ab12c-110">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="fd86f-109">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="fd86f-109">Permission type</span></span>|<span data-ttu-id="fd86f-110">アクセス許可 (特権の大きいものから小さいものへ)</span><span class="sxs-lookup"><span data-stu-id="fd86f-110">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="ab12c-111">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="ab12c-111">Delegated (work or school account)</span></span>|<span data-ttu-id="ab12c-112">DeviceManagementApps.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="ab12c-112">DeviceManagementApps.ReadWrite.All</span></span>|
-|<span data-ttu-id="ab12c-113">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="ab12c-113">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="ab12c-114">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="ab12c-114">Not supported.</span></span>|
-|<span data-ttu-id="ab12c-115">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="ab12c-115">Application</span></span>|<span data-ttu-id="ab12c-116">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="ab12c-116">Not supported.</span></span>|
+|<span data-ttu-id="fd86f-111">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="fd86f-111">Delegated (work or school account)</span></span>|<span data-ttu-id="fd86f-112">DeviceManagementApps.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="fd86f-112">DeviceManagementApps.ReadWrite.All</span></span>|
+|<span data-ttu-id="fd86f-113">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="fd86f-113">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="fd86f-114">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="fd86f-114">Not supported.</span></span>|
+|<span data-ttu-id="fd86f-115">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="fd86f-115">Application</span></span>|<span data-ttu-id="fd86f-116">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="fd86f-116">Not supported.</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="ab12c-117">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="ab12c-117">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="fd86f-117">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="fd86f-117">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -34,27 +35,27 @@ DELETE /deviceAppManagement/mobileAppCategories/{mobileAppCategoryId}
 DELETE /deviceAppManagement/mobileApps/{mobileAppId}/categories/{mobileAppCategoryId}
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="ab12c-118">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="ab12c-118">Request headers</span></span>
-|<span data-ttu-id="ab12c-119">ヘッダー</span><span class="sxs-lookup"><span data-stu-id="ab12c-119">Header</span></span>|<span data-ttu-id="ab12c-120">値</span><span class="sxs-lookup"><span data-stu-id="ab12c-120">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="fd86f-118">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="fd86f-118">Request headers</span></span>
+|<span data-ttu-id="fd86f-119">ヘッダー</span><span class="sxs-lookup"><span data-stu-id="fd86f-119">Header</span></span>|<span data-ttu-id="fd86f-120">値</span><span class="sxs-lookup"><span data-stu-id="fd86f-120">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="ab12c-121">Authorization</span><span class="sxs-lookup"><span data-stu-id="ab12c-121">Authorization</span></span>|<span data-ttu-id="ab12c-122">ベアラー &lt;トークン&gt; が必須。</span><span class="sxs-lookup"><span data-stu-id="ab12c-122">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="ab12c-123">Accept</span><span class="sxs-lookup"><span data-stu-id="ab12c-123">Accept</span></span>|<span data-ttu-id="ab12c-124">application/json</span><span class="sxs-lookup"><span data-stu-id="ab12c-124">application/json</span></span>|
+|<span data-ttu-id="fd86f-121">Authorization</span><span class="sxs-lookup"><span data-stu-id="fd86f-121">Authorization</span></span>|<span data-ttu-id="fd86f-122">ベアラー &lt;トークン&gt; が必須。</span><span class="sxs-lookup"><span data-stu-id="fd86f-122">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="fd86f-123">Accept</span><span class="sxs-lookup"><span data-stu-id="fd86f-123">Accept</span></span>|<span data-ttu-id="fd86f-124">application/json</span><span class="sxs-lookup"><span data-stu-id="fd86f-124">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="ab12c-125">要求本文</span><span class="sxs-lookup"><span data-stu-id="ab12c-125">Request body</span></span>
-<span data-ttu-id="ab12c-126">このメソッドには、要求本文を指定しません。</span><span class="sxs-lookup"><span data-stu-id="ab12c-126">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="fd86f-125">要求本文</span><span class="sxs-lookup"><span data-stu-id="fd86f-125">Request body</span></span>
+<span data-ttu-id="fd86f-126">このメソッドには、要求本文を指定しません。</span><span class="sxs-lookup"><span data-stu-id="fd86f-126">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="ab12c-127">応答</span><span class="sxs-lookup"><span data-stu-id="ab12c-127">Response</span></span>
-<span data-ttu-id="ab12c-128">成功した場合、このメソッドは `204 No Content` 応答コードを返します。</span><span class="sxs-lookup"><span data-stu-id="ab12c-128">If successful, this method returns a `204 No Content` response code.</span></span>
+## <a name="response"></a><span data-ttu-id="fd86f-127">応答</span><span class="sxs-lookup"><span data-stu-id="fd86f-127">Response</span></span>
+<span data-ttu-id="fd86f-128">成功した場合、このメソッドは `204 No Content` 応答コードを返します。</span><span class="sxs-lookup"><span data-stu-id="fd86f-128">If successful, this method returns a `204 No Content` response code.</span></span>
 
-## <a name="example"></a><span data-ttu-id="ab12c-129">例</span><span class="sxs-lookup"><span data-stu-id="ab12c-129">Example</span></span>
-### <a name="request"></a><span data-ttu-id="ab12c-130">要求</span><span class="sxs-lookup"><span data-stu-id="ab12c-130">Request</span></span>
-<span data-ttu-id="ab12c-131">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="ab12c-131">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="fd86f-129">例</span><span class="sxs-lookup"><span data-stu-id="fd86f-129">Example</span></span>
+### <a name="request"></a><span data-ttu-id="fd86f-130">要求</span><span class="sxs-lookup"><span data-stu-id="fd86f-130">Request</span></span>
+<span data-ttu-id="fd86f-131">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="fd86f-131">Here is an example of the request.</span></span>
 ``` http
 DELETE https://graph.microsoft.com/v1.0/deviceAppManagement/mobileAppCategories/{mobileAppCategoryId}
 ```
 
-### <a name="response"></a><span data-ttu-id="ab12c-132">応答</span><span class="sxs-lookup"><span data-stu-id="ab12c-132">Response</span></span>
-<span data-ttu-id="ab12c-p102">以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。</span><span class="sxs-lookup"><span data-stu-id="ab12c-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="fd86f-132">応答</span><span class="sxs-lookup"><span data-stu-id="fd86f-132">Response</span></span>
+<span data-ttu-id="fd86f-p102">以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。</span><span class="sxs-lookup"><span data-stu-id="fd86f-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 204 No Content
 ```

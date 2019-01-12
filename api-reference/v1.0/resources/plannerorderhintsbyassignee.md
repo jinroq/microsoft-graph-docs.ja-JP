@@ -2,21 +2,23 @@
 title: plannerOrderHintsByAssignee リソースの種類
 description: '**PlannerOrderHintsByAssignee**は、タスクの掲示板のビューに割り当てられているタスクの順序を示すために、plannerTask のリソースの割り当て先の命令のヒントを含むリソースです。'
 localization_priority: Normal
-ms.openlocfilehash: 2de8b7d7fac6b524cccbed8ed2117754060c0d4c
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: TarkanSevilmis
+ms.prod: planner
+ms.openlocfilehash: b285c4a04d045c8a4e70a574c88772a0981c95e4
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27816535"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27967750"
 ---
-# <a name="plannerorderhintsbyassignee-resource-type"></a><span data-ttu-id="b853c-103">plannerOrderHintsByAssignee リソースの種類</span><span class="sxs-lookup"><span data-stu-id="b853c-103">plannerOrderHintsByAssignee resource type</span></span>
+# <a name="plannerorderhintsbyassignee-resource-type"></a><span data-ttu-id="ffce4-103">plannerOrderHintsByAssignee リソースの種類</span><span class="sxs-lookup"><span data-stu-id="ffce4-103">plannerOrderHintsByAssignee resource type</span></span>
 
-<span data-ttu-id="b853c-p101">**plannerOrderHintsByAssignee** には、タスク ボードの [割り当て先ユーザー/グループ] ビューのタスクの順序を示す、[plannerTask](plannertask.md) リソースの担当者の[順序に関するヒント](planner-order-hint-format.md)が含まれます。この型はオープン型です。プロパティは、タスクに割り当てられているユーザーの ID で、値は順序のヒントです。</span><span class="sxs-lookup"><span data-stu-id="b853c-p101">The **plannerOrderHintsByAssignee** is a resource that contains [ordering hints](planner-order-hint-format.md) for assignees in a [plannerTask](plannertask.md) resource, to indicate the order of the task in Assigned To view of the Task Board. This type is an open type. The properties are the ids of users assigned to the task, and the values are order hints.</span></span>
+<span data-ttu-id="ffce4-p101">**plannerOrderHintsByAssignee** には、タスク ボードの [割り当て先ユーザー/グループ] ビューのタスクの順序を示す、[plannerTask](plannertask.md) リソースの担当者の[順序に関するヒント](planner-order-hint-format.md)が含まれます。この型はオープン型です。プロパティは、タスクに割り当てられているユーザーの ID で、値は順序のヒントです。</span><span class="sxs-lookup"><span data-stu-id="ffce4-p101">The **plannerOrderHintsByAssignee** is a resource that contains [ordering hints](planner-order-hint-format.md) for assignees in a [plannerTask](plannertask.md) resource, to indicate the order of the task in Assigned To view of the Task Board. This type is an open type. The properties are the ids of users assigned to the task, and the values are order hints.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="b853c-107">プロパティ</span><span class="sxs-lookup"><span data-stu-id="b853c-107">Properties</span></span>
-<span data-ttu-id="b853c-p102">クライアントは、オープン型のプロパティを定義できます。この場合、クライアントは、タスクに割り当てられているユーザーの ID をプロパティ名として指定し、有効な[順序のヒント](planner-order-hint-format.md)を値として指定する必要があります。プロパティは、この型から削除できません。サービスは、含まれている [plannerTask](plannertask.md) の割り当てが更新されると、値を自動的に削除します</span><span class="sxs-lookup"><span data-stu-id="b853c-p102">Properties of an Open Type can be defined by the client. In this case, the client must provide ids of users assigned to the task as property names, and a valid [order hint](planner-order-hint-format.md) as the value. Properties cannot be removed from this type. The service will automatically remove values as the assignments on the containing [plannerTask](plannertask.md) are updated.</span></span>
+## <a name="properties"></a><span data-ttu-id="ffce4-107">プロパティ</span><span class="sxs-lookup"><span data-stu-id="ffce4-107">Properties</span></span>
+<span data-ttu-id="ffce4-p102">クライアントは、オープン型のプロパティを定義できます。この場合、クライアントは、タスクに割り当てられているユーザーの ID をプロパティ名として指定し、有効な[順序のヒント](planner-order-hint-format.md)を値として指定する必要があります。プロパティは、この型から削除できません。サービスは、含まれている [plannerTask](plannertask.md) の割り当てが更新されると、値を自動的に削除します</span><span class="sxs-lookup"><span data-stu-id="ffce4-p102">Properties of an Open Type can be defined by the client. In this case, the client must provide ids of users assigned to the task as property names, and a valid [order hint](planner-order-hint-format.md) as the value. Properties cannot be removed from this type. The service will automatically remove values as the assignments on the containing [plannerTask](plannertask.md) are updated.</span></span>
 
-<span data-ttu-id="b853c-112">例:</span><span class="sxs-lookup"><span data-stu-id="b853c-112">Example:</span></span>
+<span data-ttu-id="ffce4-112">例:</span><span class="sxs-lookup"><span data-stu-id="ffce4-112">Example:</span></span>
 
 <!-- {
   "blockType": "resource",
