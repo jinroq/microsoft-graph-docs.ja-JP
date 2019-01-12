@@ -3,12 +3,13 @@ title: importedAppleDeviceIdentity リソースの種類
 description: ImportedAppleDeviceIdentity リソースでは、アップル デバイスのインポートされたデバイス id を表します。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: b7ad629721190b67e001ea56ca732eb325358768
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: bf6c13e4bb34141e2f1ee7e98556cf0e4a8fb6e3
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27887445"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27977480"
 ---
 # <a name="importedappledeviceidentity-resource-type"></a>importedAppleDeviceIdentity リソースの種類
 
@@ -28,7 +29,7 @@ ImportedAppleDeviceIdentity リソースでは、アップル デバイスのイ
 |[importAppleDeviceIdentityList アクション](../api/intune-enrollment-importedappledeviceidentity-importappledeviceidentitylist.md)|[importedAppleDeviceIdentityResult](../resources/intune-enrollment-importedappledeviceidentityresult.md)コレクション|まだ文書化されていません|
 
 ## <a name="properties"></a>プロパティ
-|プロパティ|種類|説明|
+|プロパティ|型|説明|
 |:---|:---|:---|
 |ID|String|エンティティのキー。|
 |シリアル番号|String|デバイスのシリアル番号|

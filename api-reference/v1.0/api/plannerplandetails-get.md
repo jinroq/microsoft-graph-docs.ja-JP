@@ -2,12 +2,14 @@
 title: Get plannerPlanDetails
 description: '**plannerplandetails** オブジェクトのプロパティと関係を取得します。'
 localization_priority: Normal
-ms.openlocfilehash: 8546bdc167e3488f2a7cb2e43b7031b08f5d1594
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: TarkanSevilmis
+ms.prod: planner
+ms.openlocfilehash: 3c2c27492d42ca9919931ba3e67df5fdcf8c61d2
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27894195"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27976297"
 ---
 # <a name="get-plannerplandetails"></a>Get plannerPlanDetails
 

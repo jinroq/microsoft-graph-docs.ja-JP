@@ -4,12 +4,13 @@ ms.author: rgregg
 ms.date: 09/10/2017
 title: ファイルを検索する
 localization_priority: Priority
-ms.openlocfilehash: c51706bc3f8eb18ba571cc6896d9b350b2daf1c7
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: sharepoint
+ms.openlocfilehash: bf387d7c0b3ef3b161610bd8ba1d44685dd45764
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27868538"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27976906"
 ---
 # <a name="search-for-a-driveitems-within-a-drive"></a>ドライブ内の DriveItems を検索する
 
@@ -44,9 +45,9 @@ GET /users/{user-id}/drive/root/search(q='{search-text}')
 
 ## <a name="function-parameters"></a>関数パラメーター
 
-| Parameter | Type  | 説明                                                                                                                          |
+| パラメーター | 型  | 説明                                                                                                                          |
 |:-----|:-------|:-------------------------------------------------------------------------------------------------------------------------------------|
-| q  | 文字列 | アイテムの検索に使用するクエリ テキスト。値は、ファイル名、メタデータ、およびファイルのコンテンツを含む複数のフィールドに渡って照合できます。 |
+| q  | string | アイテムの検索に使用するクエリ テキスト。値は、ファイル名、メタデータ、およびファイルのコンテンツを含む複数のフィールドに渡って照合できます。 |
 
 ## <a name="example"></a>例
 

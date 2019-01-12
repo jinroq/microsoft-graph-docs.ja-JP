@@ -3,12 +3,13 @@ title: androidManagedStoreAccountBindStatus 列挙型
 description: Google の EMM の API を使用してテナントの状態をバインドします。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 54db1a86e691196ca55aed49afe4357d1026f8ce
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 26d1f32bafeca056706e4164151c20b44760b3b6
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27868916"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27977305"
 ---
 # <a name="androidmanagedstoreaccountbindstatus-enum-type"></a>androidManagedStoreAccountBindStatus 列挙型
 

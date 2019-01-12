@@ -2,12 +2,14 @@
 title: メッセージを作成する
 description: この API を使用して、新しいメッセージの下書きを作成します。下書きを任意のフォルダーに作成し、必要に応じて送信前に更新できます。[下書き] フォルダーに保存するには、/messages ショートカットを使用します。
 localization_priority: Priority
-ms.openlocfilehash: 151c555e1195fcef243879c638fa36015395dc20
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: dkershaw10
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: 295397e4c85e2096d69e7ba14432cc866b4094a4
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27816234"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27976143"
 ---
 # <a name="create-message"></a>メッセージを作成する
 

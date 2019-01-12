@@ -2,12 +2,14 @@
 title: 招待マネージャー
 description: '招待マネージャーを使用して、組織に外部ユーザーを追加するための招待状を作成します。 '
 localization_priority: Priority
-ms.openlocfilehash: 4e47131fd7e3128366d482c314c059d833c8e101
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: lleonard-msft
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: 0a0ee3ba23cb0c323a660b9afd26fa044a50897c
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27867439"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27976738"
 ---
 # <a name="invitation-manager"></a>招待マネージャー
 
@@ -29,12 +31,12 @@ ms.locfileid: "27867439"
 |[招待状の作成](../api/invitation-post.md) | invitation | 招待状オブジェクトのプロパティと関係を書き込みます。|
 
 ## <a name="properties"></a>プロパティ
-| プロパティ     | 種類   |説明|
+| プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
 |invitedUserDisplayName|String|招待されるユーザーの表示名。|
 |invitedUserEmailAddress|String|招待されるユーザーのメール アドレス。必須。|
 |invitedUserMessageInfo|[invitedUserMessageInfo](invitedusermessageinfo.md)|メッセージ テキスト、言語、および cc 受信者リストのカスタマイズなど、招待ユーザーに送信されるメッセージの追加構成。|
-|sendInvitationMessage|ブール値|招待されるユーザーにメールを送信するかどうかを示します。既定値は false です。|
+|sendInvitationMessage|Boolean|招待されるユーザーにメールを送信するかどうかを示します。既定値は false です。|
 |inviteRedirectUrl|String|招待状が引き換えられるとにユーザーがリダイレクトされる URL。必須。|
 |inviteRedeemUrl|String|ユーザーが招待状の引き換えに使用できる URL。読み取り専用|
 |invitedUserType|String|招待されるユーザーの userType。 既定では Guest です。 会社の管理者の場合は、Member として招待できます。 |

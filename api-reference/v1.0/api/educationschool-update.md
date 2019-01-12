@@ -3,12 +3,13 @@ title: educationschool プロパティを更新する
 description: 学校オブジェクトのプロパティを更新します。
 author: mmast-msft
 localization_priority: Normal
-ms.openlocfilehash: a0a3ee2ea291cf48224d6dfa6294f0a1e521435c
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: education
+ms.openlocfilehash: aa26a34013ddd20925c7063595d5d57980e0c516
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27862280"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27977641"
 ---
 # <a name="update-educationschool-properties"></a>educationschool プロパティを更新する
 
@@ -37,7 +38,7 @@ PATCH /education/schools/{id}
 ## <a name="request-body"></a>要求本文
 要求本文で、更新する関連フィールドの値を指定します。 要求本文に含まれない既存のプロパティは、以前の値のままになるか、他のプロパティ値の変更に基づいて再計算されます。 最適なパフォーマンスを得るために、変更されていない既存の値を含めないでください。
 
-| プロパティ     | 種類   |説明|
+| プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
 |displayName| String| 学校の表示名| 
 |説明| String | 学校の説明| 

@@ -3,12 +3,13 @@ title: windowsManagementAppHealthState リソースの種類
 description: Windows 管理アプリケーションの正常性の状態エンティティです。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 23381aed47ade8f42937f6bc48cfff33b36d1fa7
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 8cf679cf1a5ac86c47354db2fc9f800647d309c1
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27875300"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27976472"
 ---
 # <a name="windowsmanagementapphealthstate-resource-type"></a>windowsManagementAppHealthState リソースの種類
 
@@ -27,7 +28,7 @@ Windows 管理アプリケーションの正常性の状態エンティティで
 |[WindowsManagementAppHealthState を更新します。](../api/intune-devices-windowsmanagementapphealthstate-update.md)|[windowsManagementAppHealthState](../resources/intune-devices-windowsmanagementapphealthstate.md)|[WindowsManagementAppHealthState](../resources/intune-devices-windowsmanagementapphealthstate.md)オブジェクトのプロパティを更新します。|
 
 ## <a name="properties"></a>プロパティ
-|プロパティ|種類|説明|
+|プロパティ|型|説明|
 |:---|:---|:---|
 |ID|String|Windows 管理アプリケーションの正常性状態の一意の識別子|
 |healthState|[healthState](../resources/intune-devices-healthstate.md)|Windows 管理アプリケーションの正常性状態。 可能な値は、`unknown`、`healthy`、`unhealthy` です。|

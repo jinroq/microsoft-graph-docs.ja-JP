@@ -3,12 +3,13 @@ title: 'メッセージ: move'
 description: メッセージをフォルダーに移動します。 これは、先のフォルダーにメッセージの新しいコピーを作成し、元のメッセージを削除します。
 author: angelgolfer-ms
 localization_priority: Priority
-ms.openlocfilehash: 342c11e844d93ec9bf91b2a40db601e7c4a6b049
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: outlook
+ms.openlocfilehash: 0a6631bd6c8313751f9d34efc68d48fa0c38ffa9
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27870589"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27977158"
 ---
 # <a name="message-move"></a>メッセージ: move
 
@@ -46,7 +47,7 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/move
 
 要求本文で、次のパラメーターを含む JSON オブジェクトを指定します。
 
-| パラメーター   | Type |説明|
+| パラメーター   | 型 |説明|
 |:---------------|:--------|:----------|
 |destinationId|String|移動先のフォルダー ID、またはよく知られているフォルダー名です。 サポートされている既知のフォルダー名の一覧については、「[mailFolder リソースの種類](../resources/mailfolder.md)」を参照してください。|
 

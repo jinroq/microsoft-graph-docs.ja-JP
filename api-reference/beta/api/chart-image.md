@@ -3,12 +3,13 @@ title: グラフ:画像
 description: 指定したサイズに合わせてグラフを拡大、縮小することで、グラフを Base64 でエンコードされた画像としてレンダリングします。
 author: lumine2008
 localization_priority: Normal
-ms.openlocfilehash: d7d3b0bc33be46301a4abffa90d37c53c553e37d
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: excel
+ms.openlocfilehash: 5ee56b38ca75162a760be54e58dacb6ced6bbc16
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27854237"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27976409"
 ---
 # <a name="chart-image"></a>グラフ:画像
 
@@ -39,7 +40,7 @@ GET /workbook/worksheets/{id|name}/charts(<name>)/Image(width=0,height=0,fitting
 ## <a name="request-body"></a>要求本文
 要求本文で、次のパラメーターを含む JSON オブジェクトを指定します。
 
-| パラメーター    | Type   |説明|
+| パラメーター    | 型   |説明|
 |:---------------|:--------|:----------|
 |height|number|省略可能。結果の画像の希望する高さ。|
 |width|number|省略可能。結果の画像の希望する幅。|

@@ -3,12 +3,13 @@ title: windowsKioskProfile リソースの種類
 description: まだ文書化されていません
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: c082b5fb9421af36bbc742051989492a5a3b19d0
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 6fc462bdf6548f0f281082ba1cb228796899896d
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27807652"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27977053"
 ---
 # <a name="windowskioskprofile-resource-type"></a>windowsKioskProfile リソースの種類
 
@@ -18,7 +19,7 @@ ms.locfileid: "27807652"
 
 まだ文書化されていません
 ## <a name="properties"></a>プロパティ
-|プロパティ|種類|説明|
+|プロパティ|型|説明|
 |:---|:---|:---|
 |プロファイル Id|String|エンティティのキー。|
 |profilename プロパティ|String|これは、[スタート] メニューの [このプレゼンテーションの構成が割り当てられているユーザーにこれらのアプリケーションのレイアウト、アプリケーションのグループを識別するために使用するフレンドリ名です。|

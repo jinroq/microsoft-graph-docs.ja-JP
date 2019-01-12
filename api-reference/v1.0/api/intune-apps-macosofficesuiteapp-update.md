@@ -3,12 +3,13 @@ title: macOSOfficeSuiteApp の更新
 description: macOSOfficeSuiteApp オブジェクトのプロパティを更新します。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 020f5090c85458619eb599e519dae0605ccb310a
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 7e1986f96b120605cc99aef9fbf8a8c321d041e6
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27830570"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27975940"
 ---
 # <a name="update-macosofficesuiteapp"></a>macOSOfficeSuiteApp の更新
 
@@ -44,7 +45,7 @@ PATCH /deviceAppManagement/mobileApps/{mobileAppId}
 
 次の表に、[macOSOfficeSuiteApp](../resources/intune-apps-macosofficesuiteapp.md) の作成時に必要なプロパティを示します。
 
-|プロパティ|種類|説明|
+|プロパティ|型|説明|
 |:---|:---|:---|
 |ID|String|エンティティのキー。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|
 |displayName|String|管理者が提供またはインポートしたアプリのタイトル。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|

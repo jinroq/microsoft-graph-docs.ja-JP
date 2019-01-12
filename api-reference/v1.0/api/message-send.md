@@ -2,12 +2,14 @@
 title: 'メッセージ: send'
 description: 下書きフォルダーにメッセージを送信します。 下書きメッセージは、新しいメッセージの下書き、ドラフトの返信、全員に返信、下書き、または
 localization_priority: Priority
-ms.openlocfilehash: cd98c4965f7eee3e53fc24bad551a1b14e8c7521
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: angelgolfer-ms
+ms.prod: outlook
+ms.openlocfilehash: 3f9740f74238012571abcfa7f406fd12ed58c9e8
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27867446"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27977060"
 ---
 # <a name="message-send"></a>メッセージ: send
 
@@ -34,7 +36,7 @@ POST /users/{id | userPrincipalName}/messages/{id}/send
 
 ## <a name="request-headers"></a>要求ヘッダー
 
-| 名前       | 種類 | 説明|
+| 名前       | 型 | 説明|
 |:---------------|:--------|:----------|
 | Authorization  | string  | ベアラー {トークン}。必須。 |
 | Content-Length | number | 0 が必要です。 |

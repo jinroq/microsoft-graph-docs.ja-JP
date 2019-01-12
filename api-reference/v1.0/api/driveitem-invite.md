@@ -4,12 +4,13 @@ ms.author: rgregg
 ms.date: 09/10/2017
 title: アイテムにアクセスするために招待状を送信する
 localization_priority: Normal
-ms.openlocfilehash: 1ba3bc3465274c6e1525d54c1ba1b59041b1e59f
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: sharepoint
+ms.openlocfilehash: 23e58c063e31f8ad68ac887a4fd1d2cd4dcd5274
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27855581"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27976962"
 ---
 # <a name="send-a-sharing-invitation"></a>共有の招待状を送信する
 
@@ -57,12 +58,12 @@ POST /users/{userId}/drive/items/{itemId}/invite
 }
 ```
 
-| パラメーター        | Type                           | 説明
+| パラメーター        | 型                           | 説明
 |:-----------------|:-------------------------------|:-------------------------
 | Recipients       | Collection([DriveRecipient][]) | アクセスおよび共有の招待状を受信する、受信者のコレクション。
 | message          | String                         | 共有の招待状に含まれるプレーンテキスト形式のメッセージ。最大の長さは 2000 文字です。
-| requireSignIn    | ブール値                        | 招待の受信者は、共有アイテムを表示するのにはサインインする必要かどうかを指定します。
-| sendInvitation   | ブール値                        | True の場合、[リンクを共有する][]は、受信者に送信されます。 それ以外の場合、通知を送信せずに直接アクセス許可が与えられます。
+| requireSignIn    | Boolean                        | 招待の受信者は、共有アイテムを表示するのにはサインインする必要かどうかを指定します。
+| sendInvitation   | Boolean                        | True の場合、[リンクを共有する][]は、受信者に送信されます。 それ以外の場合、通知を送信せずに直接アクセス許可が与えられます。
 | roles            | Collection(String)             | 共有への招待の受信者に許可するロールを指定します。
 
 ## <a name="example"></a>例

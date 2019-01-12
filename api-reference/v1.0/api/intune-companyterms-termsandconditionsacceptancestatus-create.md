@@ -3,12 +3,13 @@ title: termsAndConditionsAcceptanceStatus の作成
 description: 新しい termsAndConditionsAcceptanceStatus オブジェクトを作成します。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: c7ab313bb58e83c2d5ca9804fb84d95e807a4841
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 35ad3e0aebd675a316e4163ba1eafdea6bc4a309
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27863197"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27976864"
 ---
 # <a name="create-termsandconditionsacceptancestatus"></a>termsAndConditionsAcceptanceStatus の作成
 
@@ -44,7 +45,7 @@ POST /deviceManagement/termsAndConditions/{termsAndConditionsId}/acceptanceStatu
 
 次の表に、termsAndConditionsAcceptanceStatus の作成時に必要なプロパティを示します。
 
-|プロパティ|種類|説明|
+|プロパティ|型|説明|
 |:---|:---|:---|
 |ID|String|エンティティの一意識別子。|
 |userDisplayName|String|エンティティによって承諾が示されているユーザーの表示名。|
