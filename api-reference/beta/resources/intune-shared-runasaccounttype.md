@@ -3,12 +3,13 @@ title: runAsAccountType 列挙型
 description: デバイス管理スクリプトまたはアプリケーションの実行コンテキストを示します。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 1f0fbd29b0f50320da4979f4274e0dd58a79b84b
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 41a37aede909e905260f3759c2d0908d24aee2bc
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27874096"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27961099"
 ---
 # <a name="runasaccounttype-enum-type"></a>runAsAccountType 列挙型
 

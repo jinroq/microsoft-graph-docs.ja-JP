@@ -2,12 +2,14 @@
 title: educationClass リソース タイプ
 description: '学校内のクラスを表します。 **educationClass** リソースは Office 365 グループに相当し、同じ ID を共有します。 学生はクラスの通常のメンバーであり、教師は所有者であり適切な権限を持ちます。 Office の操作性が適切に機能するために、教師は、teachers コレクションと members コレクションの両方のメンバーになっている必要があります。  '
 localization_priority: Normal
-ms.openlocfilehash: 1c657a1eba131a9bcfa8dd4f84e2ba2141a4750a
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: mmast-msft
+ms.prod: education
+ms.openlocfilehash: f651e695ddf0b7139a31d077dcf021fced91293a
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27866788"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27962920"
 ---
 # <a name="educationclass-resource-type"></a>educationClass リソース タイプ
 

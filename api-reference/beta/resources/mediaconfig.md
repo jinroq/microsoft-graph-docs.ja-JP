@@ -3,12 +3,13 @@ title: mediaConfig リソースの種類
 description: メディア構成は、呼び出しに接続するために使用します。
 author: VinodRavichandran
 localization_priority: Normal
-ms.openlocfilehash: ec76adf2d3a508ebe2518ed0010a1c653daca546
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: microsoft-teams
+ms.openlocfilehash: 74b3b5dc4c71db80e94216756a3513a03011572a
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27867349"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27948920"
 ---
 # <a name="mediaconfig-resource-type"></a>mediaConfig リソースの種類
 

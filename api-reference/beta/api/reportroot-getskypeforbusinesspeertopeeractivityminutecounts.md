@@ -2,12 +2,13 @@
 title: 'reportRoot: getSkypeForBusinessPeerToPeerActivityMinuteCounts'
 description: 組織内で実施されたピア ツー ピア セッションの長さ (分数) と種類についての使用傾向を取得します。 セッションの種類には、オーディオとビデオが含まれます。
 localization_priority: Normal
-ms.openlocfilehash: 05523dd497abff5a6034e9fee669f463696b13b7
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: reports
+ms.openlocfilehash: 357c3d2e972cc70be4d517556946a6c08d56b447
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27842485"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27945084"
 ---
 # <a name="reportroot-getskypeforbusinesspeertopeeractivityminutecounts"></a>reportRoot: getSkypeForBusinessPeerToPeerActivityMinuteCounts
 

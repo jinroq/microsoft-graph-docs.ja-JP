@@ -3,12 +3,13 @@ title: windowsAppX リソースの種類
 description: プロパティと Windows AppX の業務アプリケーションの継承されたプロパティが含まれています。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: a39c93aaec3d27a75775a3760eedf9a85bcb8fd5
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 2884dfce6d53d2138fca7e1f89d555a56088bd5b
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27889342"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27965699"
 ---
 # <a name="windowsappx-resource-type"></a>windowsAppX リソースの種類
 

@@ -3,12 +3,13 @@ title: Win32LobApp を取得します。
 description: Win32LobApp オブジェクトのプロパティと関係を参照してください。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 6f9dc2e655d4c5bcf28840365e8ef26681518ad1
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 124a341fd071e06936a6f8da4d05d428f3b2d5fe
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27813728"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27944132"
 ---
 # <a name="get-win32lobapp"></a>Win32LobApp を取得します。
 

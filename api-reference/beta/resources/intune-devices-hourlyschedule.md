@@ -3,12 +3,13 @@ title: hourlySchedule リソースの種類
 description: 定期的なデバイスの管理スクリプトのスケジュールを 1 時間ごとに実行します。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 2f22cc44fdd9017ef6db6f014e4a9b756d46d034
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 004481786fd21ad04e0adbe4e16d3174fc6cc2f4
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27811292"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27951888"
 ---
 # <a name="hourlyschedule-resource-type"></a>hourlySchedule リソースの種類
 

@@ -2,12 +2,14 @@
 title: plannerPlanContext リソースの種類
 description: '**PlannerPlanContext**リソースでは、プランナーの外部のユーザー エクスペリエンスの plannerPlan との関係を表します。 プランナーでプランは、その経験のコンテキストで作業を追跡するために、マイクロソフトのチームなど、他の経験で提示されることができます。'
 localization_priority: Normal
-ms.openlocfilehash: fb86dc2e6fb16fe4e8c2a77d52b3a03f94a1d08a
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: TarkanSevilmis
+ms.prod: planner
+ms.openlocfilehash: e118e32ea74332f0d8d0f958f7c55cd9980acb8f
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27820980"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27962892"
 ---
 # <a name="plannerplancontext-resource-type"></a>plannerPlanContext リソースの種類
 

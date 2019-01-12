@@ -2,12 +2,14 @@
 title: directorySettingTemplate リソースの種類
 description: ディレクトリ設定のテンプレートでは、テナントの使用可能なシステム定義の設定を表します。 ディレクトリの設定は、使用可能な directorySettingTemplates と事前に設定された既定値から変更された値に基づいて作成できます。 ディレクトリ設定のテンプレートを作成、更新または削除することはできません。 これらの設定では、テナント全体の設定を表すことができますか、特定のエンティティの設定を表すことができます。  現在、使用可能な唯一のテンプレートは、Office グループに適用され、ユーザーのグループを作成またはグループのメンバーになることを組織外からのゲストを招待できるかどうかなどの設定が含まれます。
 localization_priority: Normal
-ms.openlocfilehash: e0df923854059723ee83380f7aa0f6425cf2afb9
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: lleonard-msft
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: d950b94c71bae70474bf9cdb9eee76fb8a3d9134
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27806147"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27957635"
 ---
 # <a name="directorysettingtemplate-resource-type"></a>directorySettingTemplate リソースの種類
 

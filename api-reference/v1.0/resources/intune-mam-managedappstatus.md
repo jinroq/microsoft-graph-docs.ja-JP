@@ -3,12 +3,13 @@ title: managedAppStatus リソースの種類
 description: 組織のアプリ保護と構成の状態を表します。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 13bf28c0244a3288b949ebf718e3d5ce97ceb60c
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: b06e52d34cbbfb1e358ee2353c3420f8d129a61e
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27890385"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27956935"
 ---
 # <a name="managedappstatus-resource-type"></a>managedAppStatus リソースの種類
 

@@ -3,12 +3,13 @@ title: リスト deviceConfigurationConflictSummaries
 description: DeviceConfigurationConflictSummary オブジェクトのプロパティと関係を一覧表示します。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 19677c1de67b53f1d0c127f237e6e9a8de7748d3
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: e10d5521c8ab0f47fee24a60f8a2d9240fb2217b
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27827924"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27939379"
 ---
 # <a name="list-deviceconfigurationconflictsummaries"></a>リスト deviceConfigurationConflictSummaries
 

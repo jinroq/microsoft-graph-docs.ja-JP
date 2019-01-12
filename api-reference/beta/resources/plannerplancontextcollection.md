@@ -2,12 +2,14 @@
 title: plannerPlanContextCollection リソースの種類
 description: '**PlannerPlanContextCollection**リソースでは、プランがリンクされている外部のコンテキストのコレクションを表します。 このリソースは、オープン型であり、plannerPlan オブジェクトの一部であります。 プロパティと値のペアの値は、plannerPlanContext オブジェクトです。'
 localization_priority: Normal
-ms.openlocfilehash: 51a09353993a61324f31a03c8ffadd5462cac692
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: TarkanSevilmis
+ms.prod: planner
+ms.openlocfilehash: 3281a7664561ac32c3908ca059209a1b89b4ea7d
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27805454"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27951811"
 ---
 # <a name="plannerplancontextcollection-resource-type"></a>plannerPlanContextCollection リソースの種類
 
