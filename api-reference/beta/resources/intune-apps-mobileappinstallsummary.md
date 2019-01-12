@@ -3,12 +3,13 @@ title: mobileAppInstallSummary リソースの種類
 description: モバイル アプリケーションのインストールの概要のプロパティが含まれています。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 3b730f73b8a86c8acba531ab0d30a67b2f8e7a7f
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: a75dba8303d254aff911cc66931d52abb8b76c07
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27820357"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27916027"
 ---
 # <a name="mobileappinstallsummary-resource-type"></a>mobileAppInstallSummary リソースの種類
 
@@ -24,7 +25,7 @@ ms.locfileid: "27820357"
 |[MobileAppInstallSummary を更新します。](../api/intune-apps-mobileappinstallsummary-update.md)|[mobileAppInstallSummary](../resources/intune-apps-mobileappinstallsummary.md)|[MobileAppInstallSummary](../resources/intune-apps-mobileappinstallsummary.md)オブジェクトのプロパティを更新します。|
 
 ## <a name="properties"></a>プロパティ
-|プロパティ|種類|説明|
+|プロパティ|型|説明|
 |:---|:---|:---|
 |ID|String|エンティティのキー。|
 |installedDeviceCount|Int32|このアプリケーションを正常にインストールするデバイスの数です。|

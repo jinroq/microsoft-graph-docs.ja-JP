@@ -3,12 +3,13 @@ title: macOSWiFiConfiguration リソースの種類
 description: このプロファイルの構成を提供することによって必要な Wi-fi エンドポイントへの接続に macOS デバイスに指示できます。 指定する認証方法とセキュリティの種類必要 Wi-fi エンドポイントで行うことができます Wi-fi 接続シームレスなエンド ・ ユーザーのです。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: bd7847ce55faebe02699a8ac342a5a83303ccd5a
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 0715665ffbe0cfa3d5511f05b2a2019fd975e46e
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27889237"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27967505"
 ---
 # <a name="macoswificonfiguration-resource-type"></a>macOSWiFiConfiguration リソースの種類
 

@@ -3,12 +3,13 @@ title: outlookTaskGroup リソースの種類
 description: 'Outlook のタスク (outlookTask オブジェクトのコレクション) を含むフォルダー (outlookTaskFolder) のグループです。 '
 author: angelgolfer-ms
 localization_priority: Normal
-ms.openlocfilehash: 5e885c4c8cc2abe4b3890635e010d495267dc877
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: outlook
+ms.openlocfilehash: d1392e07f76d508fe30307294a54429a692f34e8
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27878772"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27923909"
 ---
 # <a name="outlooktaskgroup-resource-type"></a>outlookTaskGroup リソースの種類
 
@@ -30,12 +31,12 @@ Outlook には、名前を変更または削除することができない既定
 |[Delete](../api/outlooktaskgroup-delete.md) | なし |指定された Outlook タスク グループを削除します。 |
 
 ## <a name="properties"></a>プロパティ
-| プロパティ     | 種類   |説明|
+| プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
 |changeKey|String|タスク グループのバージョン。|
 |groupKey|Edm.Guid|タスク グループの一意の GUID 識別子。|
 |id|String|タスク グループの一意の文字列識別子です。 読み取り専用です。|
-|isDefaultGroup|ブール型|タスク グループが既定のタスク グループの場合は true。|
+|isDefaultGroup|Boolean|タスク グループが既定のタスク グループの場合は true。|
 |名前|String|タスク グループの名前。|
 
 ## <a name="relationships"></a>リレーションシップ

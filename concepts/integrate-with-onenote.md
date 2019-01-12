@@ -2,12 +2,13 @@
 title: OneNote API の概要
 description: OneNote は、顧客が Web、電話、タブレット、またはデスクトップ上で文字、スケッチ、音声を入力することで、家庭、学校、または職場用のアイデアやメモを追跡できるデジタル ノートブックです。 自由にメモを整理し、デバイスを切り替えて作業の中断箇所から再開し、他のユーザーとリアルタイムでメモの共同作業を行えます。
 author: Jewan-microsoft
-ms.openlocfilehash: aa4f102d0e3db455fe41801b852bcc68d12f26ab
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Priority
+ms.openlocfilehash: a3ca57e9bac52613fbe884368f79b31b5b5165e0
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27335393"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27825719"
 ---
 # <a name="onenote-api-overview"></a>OneNote API の概要
 
@@ -95,8 +96,7 @@ OneNote サービス固有の REST エンドポイントにのみ公開されて
 
 ## <a name="next-steps"></a>次のステップ
 
-
-  [Microsoft Graph Explorer](https://developer.microsoft.com/graph/graph-explorer) を使用して、自分の OneNote ノートブックで OneNote API を試してみます。
+[Microsoft Graph Explorer](https://developer.microsoft.com/graph/graph-explorer) を使用して、自分の OneNote ノートブックで OneNote API を試してみます。
 
 Graph Explorer から OneNote API 呼び出しを行うには、左側の列にある **[その他のサンプルを表示]** を選択します。 メニューを使用して、OneNote を **[オン]** に切り替えます。 また、適切なアクセス許可を有効にする必要があります。 左側のメニューのアカウント名の下で、**[アクセス許可の修正]** を選択します。 OneNote のアクセス許可の詳細については、「[メモのアクセス許可](permissions-reference.md#notes-permissions)」を参照してください。
 

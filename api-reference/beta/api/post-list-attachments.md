@@ -3,12 +3,13 @@ title: 添付ファイルを一覧表示する
 description: 投稿に添付された添付ファイル オブジェクトのリストを取得します。
 author: dkershaw10
 localization_priority: Normal
-ms.openlocfilehash: 50d41b94300eaf93c6d0cd595e64facc982cb461
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: groups
+ms.openlocfilehash: 690b4ab540982dc9b7febcd1ea302afbcf8429ab
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27872108"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27916300"
 ---
 # <a name="list-attachments"></a>添付ファイルを一覧表示する
 
@@ -33,7 +34,7 @@ GET /groups/{id}/conversations/{id}/threads/{id}/posts/{id}/attachments
 ## <a name="optional-query-parameters"></a>オプションのクエリ パラメーター
 このメソッドは、応答をカスタマイズするための [OData クエリ パラメーター](https://developer.microsoft.com/graph/docs/concepts/query_parameters)をサポートします。
 
-$ を使用する具体的には、すべての投稿のプロパティの残りの部分と投稿の添付ファイルのインラインを含むようにクエリ パラメーターを展開します。 次に例を示します。
+$ を使用する具体的には、すべての投稿のプロパティの残りの部分と投稿の添付ファイルのインラインを含むようにクエリ パラメーターを展開します。 例:
 
 ```
 GET https://graph.microsoft.com/beta/groups/{id}/threads/{id}/posts/{id}?$expand=attachments

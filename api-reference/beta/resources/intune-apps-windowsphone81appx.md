@@ -3,12 +3,13 @@ title: windowsPhone81AppX リソースの種類
 description: プロパティと Windows Phone 8.1 AppX の業務アプリケーションの継承されたプロパティが含まれています。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 535eb9e82241870418826711b76421c6c6b2d0ec
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 1d356cd21b4fb268588636483b8c9a655a545536
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27878212"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27916006"
 ---
 # <a name="windowsphone81appx-resource-type"></a>windowsPhone81AppX リソースの種類
 
@@ -30,7 +31,7 @@ ms.locfileid: "27878212"
 |[WindowsPhone81AppX を更新します。](../api/intune-apps-windowsphone81appx-update.md)|[windowsPhone81AppX](../resources/intune-apps-windowsphone81appx.md)|[WindowsPhone81AppX](../resources/intune-apps-windowsphone81appx.md)オブジェクトのプロパティを更新します。|
 
 ## <a name="properties"></a>プロパティ
-|プロパティ|種類|説明|
+|プロパティ|型|説明|
 |:---|:---|:---|
 |ID|String|エンティティのキー。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|
 |displayName|String|管理者が提供またはインポートしたアプリのタイトル。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|

@@ -3,12 +3,13 @@ title: CartToClassAssociation を更新します。
 description: CartToClassAssociation オブジェクトのプロパティを更新します。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: da569d1452cff24b5e93d92eb96cbd5047fe6e0d
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: a140aa3e14895cf0fc7dd5ca2be54afdb1d86052
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27883994"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27967680"
 ---
 # <a name="update-carttoclassassociation"></a>CartToClassAssociation を更新します。
 

@@ -3,12 +3,13 @@ title: Get androidGeneralDeviceConfiguration
 description: androidGeneralDeviceConfiguration オブジェクトのプロパティとリレーションシップを読み取ります。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: b79a179cc260ea51d913efb0f82dcb41c9bddffa
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: d238b81aca86d678210bf5f63ec155e9a7ebeb36
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27818348"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27963550"
 ---
 # <a name="get-androidgeneraldeviceconfiguration"></a>Get androidGeneralDeviceConfiguration
 

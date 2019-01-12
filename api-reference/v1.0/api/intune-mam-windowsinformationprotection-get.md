@@ -3,12 +3,13 @@ title: Get windowsInformationProtection
 description: windowsInformationProtection オブジェクトのプロパティとリレーションシップを読み取ります。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: a3f1e77bc5d9a2c0f43d987b98fc1798e416f547
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: b9439ebc078b1bf5a70350398662ffdcb1cab192
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27871576"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27968037"
 ---
 # <a name="get-windowsinformationprotection"></a>Get windowsInformationProtection
 

@@ -3,12 +3,13 @@ title: easEmailProfileConfigurationBase リソースの種類
 description: Apple デバイス機能構成のプロファイル。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: c8a2fa699b8f7a458f2c70c74424d8dbc7197a76
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 07456bd457d25fa5a0904bc99dc20ede375b3de5
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27835897"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27966441"
 ---
 # <a name="easemailprofileconfigurationbase-resource-type"></a>easEmailProfileConfigurationBase リソースの種類
 

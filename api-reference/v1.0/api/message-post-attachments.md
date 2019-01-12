@@ -3,12 +3,13 @@ title: 添付ファイルを追加する
 description: '添付ファイルをメッセージに追加する場合に、この API を使用します。 '
 author: angelgolfer-ms
 localization_priority: Normal
-ms.openlocfilehash: 089a82883adb1f0e5373d03a55fc0842b791aee3
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: outlook
+ms.openlocfilehash: 8a55331752eb435400b19b02760d974dea972a3e
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27814806"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27954989"
 ---
 # <a name="add-attachment"></a>添付ファイルを追加する
 
@@ -51,7 +52,7 @@ POST /me/mailFolders/{id}/childFolders/{id}/.../messages/{id}/attachments/{id}
 POST /users/{id | userPrincipalName}/mailFolders/{id}/childFolders/{id}/messages/{id}/attachments/{id}
 ```
 ## <a name="request-headers"></a>要求ヘッダー
-| 名前       | 種類 | 説明|
+| 名前       | 型 | 説明|
 |:---------------|:--------|:----------|
 | Authorization  | string  | ベアラー {トークン}。必須。 |
 | Content-Type | string  | エンティティ本文内のデータの性質です。必須。 |

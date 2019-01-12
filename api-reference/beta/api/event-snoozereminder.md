@@ -3,12 +3,13 @@ title: 'イベント: snoozeReminder'
 description: までは新しいユーザーの予定表にイベントのアラームを延期します。
 author: angelgolfer-ms
 localization_priority: Normal
-ms.openlocfilehash: 440b46b3cb2bebff8f3586e201a0503edcc59000
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: outlook
+ms.openlocfilehash: 4197a231872341b7ba9c14057e32569b5c0f0c8e
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27874985"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27966077"
 ---
 # <a name="event-snoozereminder"></a>イベント: snoozeReminder
 

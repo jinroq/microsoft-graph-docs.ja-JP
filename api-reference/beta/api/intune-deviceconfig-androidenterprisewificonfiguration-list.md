@@ -3,12 +3,13 @@ title: リスト androidEnterpriseWiFiConfigurations
 description: AndroidEnterpriseWiFiConfiguration オブジェクトのプロパティと関係を一覧表示します。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 5e2777a11fd6189fdd720bf37b2f1f7a3e77ac7c
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 7687224cc13c45e35d3518bd8e8ee35d5b695e21
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27873746"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27968184"
 ---
 # <a name="list-androidenterprisewificonfigurations"></a>リスト androidEnterpriseWiFiConfigurations
 

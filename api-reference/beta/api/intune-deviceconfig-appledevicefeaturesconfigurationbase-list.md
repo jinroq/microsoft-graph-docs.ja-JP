@@ -3,12 +3,13 @@ title: appleDeviceFeaturesConfigurationBases のリスト
 description: appleDeviceFeaturesConfigurationBase オブジェクトのプロパティとリレーションシップをリストします。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 10eb2b70d3d61071597ba03a4097369271442672
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: e984b676500db8f3648e9ef700602a14fc7a25ab
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27858136"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27967708"
 ---
 # <a name="list-appledevicefeaturesconfigurationbases"></a>appleDeviceFeaturesConfigurationBases のリスト
 

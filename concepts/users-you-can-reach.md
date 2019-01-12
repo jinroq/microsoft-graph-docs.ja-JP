@@ -2,12 +2,14 @@
 title: Microsoft Graph により到達可能なユーザー
 description: 'Microsoft では、今の時代の作業や生活を拡張するさまざまなサービスやソリューションを提供しています。 '
 author: dkershaw10
-ms.openlocfilehash: 65510fafc91d13fbea68463f699bc0e8cbcef3f4
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Priority
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: 1f68023bb86ee08defb10c9b955e5691e07ea3ff
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27331935"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27948402"
 ---
 # <a name="users-you-can-reach-with-microsoft-graph"></a>Microsoft Graph により到達可能なユーザー
 
@@ -43,12 +45,9 @@ Microsoft Graph を使用することにより、教育機関用 Microsoft 365 �
 
 ## <a name="next-steps"></a>次のステップ
 
-- 
-  [おすすめのシナリオ](https://developer.microsoft.com/graph/examples)を確認します。
-- 
-  [Graph エクスプローラー](https://developer.microsoft.com/graph/graph-explorer)でサンプルの要求を試します。
-- 
-  [クイック スタート](https://developer.microsoft.com/graph/quick-start)を使用して、すぐに実行できるサンプル アプリをセットアップします。
+- [おすすめのシナリオ](https://developer.microsoft.com/graph/examples)を確認します。
+- [Graph エクスプローラー](https://developer.microsoft.com/graph/graph-explorer)でサンプルの要求を試します。
+- [クイック スタート](https://developer.microsoft.com/graph/quick-start)を使用して、すぐに実行できるサンプル アプリをセットアップします。
 - 目次の「**詳細情報**」を見て、さまざまなシナリオで使用できるサービスや機能についての詳細情報を参照します。 
 - アプリで[認証トークンを取得する](auth-overview.md)方法を検索します。
 - [API の使用](use-the-api.md)を開始します。

@@ -3,12 +3,13 @@ title: webApp の作成
 description: 新しい webApp オブジェクトを作成します。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 87a293f1f4839fd02eac072a38ca1f91a2c3f7b9
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: f3b1efe0c5e3057457d64ba62db57821883dc9fd
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27823430"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27959490"
 ---
 # <a name="create-webapp"></a>webApp の作成
 

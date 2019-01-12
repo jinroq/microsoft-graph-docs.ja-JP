@@ -2,12 +2,14 @@
 title: plannerOrderHintsByAssignee リソースの種類
 description: '**PlannerOrderHintsByAssignee**は、タスクの掲示板のビューに割り当てられているタスクの順序を示すために、plannerTask のリソースの割り当て先の命令のヒントを含むリソースです。'
 localization_priority: Normal
-ms.openlocfilehash: 2de8b7d7fac6b524cccbed8ed2117754060c0d4c
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: TarkanSevilmis
+ms.prod: planner
+ms.openlocfilehash: b285c4a04d045c8a4e70a574c88772a0981c95e4
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27816535"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27967750"
 ---
 # <a name="plannerorderhintsbyassignee-resource-type"></a>plannerOrderHintsByAssignee リソースの種類
 

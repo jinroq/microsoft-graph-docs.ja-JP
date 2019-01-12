@@ -3,12 +3,13 @@ title: deviceCompliancePolicy リソース タイプ
 description: 'これは、コンプライアンス ポリシーの基本クラスです。 コンプライアンス ポリシーはプラットフォーム固有のものであり、個々のプラットフォームごとのコンプライアンス ポリシーはここから継承されます。 '
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 8bf029c65d086e8389d5f4cd1a108cc795a785e4
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: dd282f30e36ab659b37306a7793b6d6aae1ddd21
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27810123"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27965433"
 ---
 # <a name="devicecompliancepolicy-resource-type"></a>deviceCompliancePolicy リソース タイプ
 

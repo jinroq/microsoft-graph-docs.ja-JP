@@ -2,12 +2,14 @@
 title: 'directoryRole: デルタ'
 description: Get を新しく作成するには、更新、または全体のリソースのコレクションのすべての読み取りを実行することがなくディレクトリの役割を削除します。 詳細については、デルタのクエリを使用するを参照してください。
 localization_priority: Normal
-ms.openlocfilehash: 9eb847f390b4f05f56945a6496325bbeaccdf410
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: lleonard-msft
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: c5f17ed70426d8102870537354edf3cea9a723b0
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27809122"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27916748"
 ---
 # <a name="directoryrole-delta"></a>directoryRole: デルタ
 
@@ -41,8 +43,8 @@ GET /directoryRoles/delta
 
 | クエリ パラメーター      | 種類   |説明|
 |:---------------|:--------|:----------|
-| $deltatoken | 文字列 | 返される[トークンの状態](/graph/delta-query-overview)、`deltaLink`の変更の追跡には、そのラウンドの完了を示す前の**デルタ**関数呼び出し、同じリソースを収集するための URL です。 保存し、全体を適用する`deltaLink`コレクションの変更履歴の次のラウンドの最初の要求にこのトークンを含む URL です。|
-| $skiptoken | 文字列 | 返される[トークンの状態](/graph/delta-query-overview)、`nextLink`で同じリソースのコレクションを追跡するにさらに変更が加えられたことを示す前の**デルタ**関数の呼び出しの URL です。 |
+| $deltatoken | string | 返される[トークンの状態](/graph/delta-query-overview)、`deltaLink`の変更の追跡には、そのラウンドの完了を示す前の**デルタ**関数呼び出し、同じリソースを収集するための URL です。 保存し、全体を適用する`deltaLink`コレクションの変更履歴の次のラウンドの最初の要求にこのトークンを含む URL です。|
+| $skiptoken | string | 返される[トークンの状態](/graph/delta-query-overview)、`nextLink`で同じリソースのコレクションを追跡するにさらに変更が加えられたことを示す前の**デルタ**関数の呼び出しの URL です。 |
 
 ## <a name="optional-query-parameters"></a>オプションのクエリ パラメーター
 

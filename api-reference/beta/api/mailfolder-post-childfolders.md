@@ -3,12 +3,13 @@ title: MailFolder を作成します。
 description: 新しい子 mailFolder を作成するのにには、この API を使用します。
 author: angelgolfer-ms
 localization_priority: Normal
-ms.openlocfilehash: c031f0bd621778fc38801a80788f977d45fbaffb
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: outlook
+ms.openlocfilehash: d466de7ae3952c85891c1798afa03b96aa887de0
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27816424"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27962752"
 ---
 # <a name="create-mailfolder"></a>MailFolder を作成します。
 

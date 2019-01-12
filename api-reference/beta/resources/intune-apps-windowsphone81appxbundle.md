@@ -3,12 +3,13 @@ title: windowsPhone81AppXBundle リソースの種類
 description: プロパティと Windows Phone 8.1 AppX バンドルの業務アプリケーションの継承されたプロパティが含まれています。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: c12bcc3afa8e7e7e681c786f5a24e9448ba3e18a
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 3d986ae104be823e4587476d3990164a1d1c17ae
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27825033"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27959644"
 ---
 # <a name="windowsphone81appxbundle-resource-type"></a>windowsPhone81AppXBundle リソースの種類
 

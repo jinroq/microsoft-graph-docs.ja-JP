@@ -3,12 +3,13 @@ title: auditEvent リソース タイプ
 description: 監査イベントのプロパティが含まれるクラス。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: e39d6fb744ee1af2289efec8a7dec722672029d3
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: b659367c9274e8564116eea9351058be59b6dd68
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27864121"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27960767"
 ---
 # <a name="auditevent-resource-type"></a>auditEvent リソース タイプ
 

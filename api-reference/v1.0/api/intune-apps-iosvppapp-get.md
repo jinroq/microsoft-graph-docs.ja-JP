@@ -3,12 +3,13 @@ title: Get iosVppApp
 description: iosVppApp オブジェクトのプロパティとリレーションシップを読み取ります。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: fdfb2e6e6c116058eea43d92a15adb886d73a463
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: be8117c72c3edb8410c4e5f2f9e6287469c3d33c
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27834987"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27960722"
 ---
 # <a name="get-iosvppapp"></a>Get iosVppApp
 

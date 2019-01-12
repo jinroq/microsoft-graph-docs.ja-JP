@@ -2,12 +2,14 @@
 title: 連絡先を削除する
 description: 連絡先を削除します。
 author: angelgolfer-ms
-ms.openlocfilehash: 17c82b895b1e2011c8efbd15fa9394cf6434fbd8
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.prod: outlook
+ms.openlocfilehash: 43e7518958a2352fa44b988d96a37e781ad88f75
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27354223"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27967197"
 ---
 # <a name="delete-contact"></a>連絡先を削除する
 

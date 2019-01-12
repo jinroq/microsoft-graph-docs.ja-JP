@@ -2,12 +2,13 @@
 title: Microsoft Graph の主要なサービスおよび機能
 description: 'Microsoft Graph では、REST API とクライアント ライブラリを使用して、非常に優れた Office 365、Windows 10、および Microsoft 365 の Enterprise Mobility and Security のサービスを統合することができます。 さらに、ユーザーの生産性、創造性、チーム共同作業を促進し、ビジネス リソースおよびユーザー データを保護することのできるセキュリティおよびソーシャル インテリジェンスが提供されます。 '
 author: jthake-msft
-ms.openlocfilehash: 6f4403db3179afadb39dfb20613f284381650112
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Priority
+ms.openlocfilehash: 0d164dc95b4ae5de683180de1b6f186dcd98f5f2
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27353551"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27820686"
 ---
 # <a name="major-services-and-features-in-microsoft-graph"></a>Microsoft Graph の主要なサービスおよび機能
 
@@ -125,7 +126,5 @@ Microsoft Graph の一部のサービスは、そこで初めて登場したサ�
 
 - 実際の顧客の問題を解決する、Microsoft Graph のサービスに基づいて構築されたクリエイティブなソリューションの[例](https://developer.microsoft.com/graph/examples)を参照してください。
 - 目次の「**詳細情報**」を見て、さまざまなシナリオで使用できるサービスや機能についての詳細情報を参照します _。_
-- 
-  [Graph エクスプローラー](https://developer.microsoft.com/graph/graph-explorer)でサンプルの要求を試します。
-- 
-  [クイック スタート](https://developer.microsoft.com/graph/quick-start)を使用して、すぐに実行できるサンプル アプリをセットアップします。
+- [Graph エクスプローラー](https://developer.microsoft.com/graph/graph-explorer)でサンプルの要求を試します。
+- [クイック スタート](https://developer.microsoft.com/graph/quick-start)を使用して、すぐに実行できるサンプル アプリをセットアップします。

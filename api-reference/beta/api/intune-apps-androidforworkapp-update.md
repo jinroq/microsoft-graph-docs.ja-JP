@@ -3,12 +3,13 @@ title: AndroidForWorkApp を更新します。
 description: AndroidForWorkApp オブジェクトのプロパティを更新します。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 757a095733aeb69cf3b92027c1927b09f929cd71
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 2bab6f4e9f042bff37284258eb025baf5077bf97
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27824088"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27960141"
 ---
 # <a name="update-androidforworkapp"></a>AndroidForWorkApp を更新します。
 

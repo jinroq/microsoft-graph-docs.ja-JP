@@ -3,12 +3,13 @@ title: 'メッセージ: forward'
 description: メッセージを転送します。メッセージは [送信済みアイテム] フォルダーに保存されます。
 author: angelgolfer-ms
 localization_priority: Normal
-ms.openlocfilehash: c547b34cdafc3b9706cd5704dd84fb0866c38a50
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: outlook
+ms.openlocfilehash: 12409685e21b338a86b392f32449b006a0e958f7
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27884778"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27960547"
 ---
 # <a name="message-forward"></a>メッセージ: forward
 

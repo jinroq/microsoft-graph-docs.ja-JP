@@ -2,12 +2,14 @@
 title: ワークシート:セル
 description: 行と列の番号に基づいて、1 つのセルを含んだ範囲オブジェクトを取得します。このセルは、ワークシートのグリッド内であれば、親の範囲の境界の外のセルであってもかまいません。
 localization_priority: Normal
-ms.openlocfilehash: 94abdb533e64ef1b6fd94e9e7f0b5b149c0c2666
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: lumine2008
+ms.prod: excel
+ms.openlocfilehash: 96069c11d8e520b64854eb7a2a72dc9d5f6de25b
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27831382"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27967302"
 ---
 # <a name="worksheet-cell"></a>ワークシート:セル
 
@@ -31,7 +33,7 @@ GET /workbook/worksheets/{id|name}/cell(row={row},column={column})
 ## <a name="function-parameters"></a>関数パラメーター
 要求のパスには、次のパラメーターを提供します。
 
-| Parameter    | Type   |説明|
+| パラメーター    | Type   |説明|
 |:---------------|:--------|:----------|
 |row|Int32|取得するセルの行番号。0 を起点とする番号になります。|
 |列|Int32|取得セルの列番号。0 を起点とする番号になります。|

@@ -2,12 +2,14 @@
 title: アプリケーションのパスワードを追加します。
 description: 強力なパスワードをアプリケーションに追加します。
 author: lleonard-msft
-ms.openlocfilehash: 88aa499cd478511aacba94c0d28c96592c79a5d5
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: 565fbab9ff2cde34bcccbe760692df9d3c0d1a14
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27348742"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27966763"
 ---
 # <a name="add-application-password"></a>アプリケーションのパスワードを追加します。
 

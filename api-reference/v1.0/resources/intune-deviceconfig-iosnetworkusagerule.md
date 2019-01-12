@@ -2,12 +2,14 @@
 title: iosNetworkUsageRule リソースの種類
 description: ネットワーク使用規則により、企業は管理対象アプリで携帯電話会社の回線などのネットワークをどのように使用するかを指定できます。
 localization_priority: Normal
-ms.openlocfilehash: 85b01c4cca324c0c344cc837da117efa05ae0ae4
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: tfitzmac
+ms.prod: intune
+ms.openlocfilehash: 057ddb8027835702cdb487387efafb73cb986c2e
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27845768"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27964845"
 ---
 # <a name="iosnetworkusagerule-resource-type"></a>iosNetworkUsageRule リソースの種類
 

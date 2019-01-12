@@ -2,12 +2,14 @@
 title: educationUser リソースの種類
 description: システム内のユーザーです。 これは教育機関に固有の、Microsoft Graph が教育機関に固有でない `/users` エンドポイントから返すものと同じ `id` を持つユーザーのバリアント型です。
 author: mmast-msft
-ms.openlocfilehash: 2c89b2a099ea8a21e9b2a5b8cbd4c394ddb7b0b3
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.prod: education
+ms.openlocfilehash: 6c0dce86c06036424e7be64f1864d900fef368fd
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27342582"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27968170"
 ---
 # <a name="educationuser-resource-type"></a>educationUser リソースの種類
 

@@ -2,12 +2,14 @@
 title: groupLifecyclePolicy リソース タイプ
 description: Office 365 グループのライフサイクル ポリシーを表します。 グループのライフサイクル ポリシーにより、管理者はグループに対して有効期限を設定できます。 たとえば、180 日後にグループの有効期限が切れます。 グループの有効期限に達すると、グループの所有者は、管理者が定義した時間間隔内でグループを更新する必要があります。 更新されると、グループの有効期限はポリシーで定義された日数、延長されます。 たとえば、グループの新しい有効期限は、更新後 180 日です。 グループが更新されない場合、グループの有効期限が切れ、削除されます。 グループは、削除から 30 日以内に復元できます。
 localization_priority: Normal
-ms.openlocfilehash: cbc499bdf31a50873a2c2e1131630da4472b970d
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: dkershaw10
+ms.prod: groups
+ms.openlocfilehash: 65cf8d5d06262f1d5700de26b4c4f62b005020d2
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27865171"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27964166"
 ---
 # <a name="grouplifecyclepolicy-resource-type"></a>groupLifecyclePolicy リソース タイプ
 

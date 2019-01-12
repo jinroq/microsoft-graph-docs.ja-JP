@@ -3,12 +3,13 @@ title: sideLoadingKey リソースの種類
 description: SideLoadingKey エンティティは、Windows 8 とテナントのビジネス アプリケーションのインストールの行に 8.1 のデバイスに必要です。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: b08715ebc8cd19ab4086fd82013301ed89efd183
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: a58b835706826362e0165282234872bc77d62e78
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27814253"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27960344"
 ---
 # <a name="sideloadingkey-resource-type"></a>sideLoadingKey リソースの種類
 

@@ -2,12 +2,14 @@
 title: group リソースの種類
 description: Office 365 のグループ、マイクロソフトのチームで、チーム、動的グループ、またはセキュリティ グループは、Azure Active Directory (AD の Azure) のグループを表します。
 localization_priority: Priority
-ms.openlocfilehash: 928eb9887665b117535bcf4fa13cf6a95b8ff283
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: dkershaw10
+ms.prod: groups
+ms.openlocfilehash: 84f4f1121c6ca407fcf6064d63970aa4fc5f663e
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27866893"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27960148"
 ---
 # <a name="group-resource-type"></a>group リソースの種類
 

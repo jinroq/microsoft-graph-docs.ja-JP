@@ -3,12 +3,13 @@ title: win32LobAppMsiInformation リソースの種類
 description: Win32 アプリケーションの MSI アプリケーションのプロパティが含まれています。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: e43b3dc9e46ed193b7547a7ce85863253445d30c
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 04972e9e7fa909c220fe55ca6337be3ac44138ad
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27846516"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27967876"
 ---
 # <a name="win32lobappmsiinformation-resource-type"></a>win32LobAppMsiInformation リソースの種類
 

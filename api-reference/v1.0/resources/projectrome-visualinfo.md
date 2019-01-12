@@ -2,12 +2,13 @@
 title: visualInfo リソースの種類
 description: アクティビティ オブジェクトの**visualElements**プロパティを表すための複合型です。
 localization_priority: Normal
-ms.openlocfilehash: be40c4718944f1a739a9532a02c3d249514a2a13
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: project-rome
+ms.openlocfilehash: 416109bb1bb6625330ddfbbb32b8fb688b223134
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27816479"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27962647"
 ---
 # <a name="visualinfo-resource-type"></a>visualInfo リソースの種類
 

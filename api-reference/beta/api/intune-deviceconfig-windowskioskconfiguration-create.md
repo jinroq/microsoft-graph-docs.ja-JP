@@ -3,12 +3,13 @@ title: WindowsKioskConfiguration を作成します。
 description: 新しい windowsKioskConfiguration オブジェクトを作成します。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 75e500ae8cf8ce272ee8571de24f18723f0594e5
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: d17f1af1ca96c077810d2c5c64427ed40751b988
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27868377"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27925554"
 ---
 # <a name="create-windowskioskconfiguration"></a>WindowsKioskConfiguration を作成します。
 
@@ -47,21 +48,21 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 
 次の表は、windowsKioskConfiguration を作成するときに必要なプロパティを示します。
 
-|プロパティ|種類|説明|
+|プロパティ|型|説明|
 |:---|:---|:---|
 |ID|String|エンティティのキー。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |lastModifiedDateTime|DateTimeOffset|オブジェクトが最後に変更された DateTime。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |roleScopeTagIds|String コレクション|このエンティティ インスタンスのスコープのタグのリストです。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
-|supportsScopeTags|ブール型|デバイスの構成を基になるスコープのタグの割り当てをサポートしているかどうかを示します。 この値が false であり、エンティティをスコープ指定されたユーザーには表示されませんがある場合、ScopeTags プロパティに割り当てることは許可されていません。 これは、Silverlight で作成されたレガシ ポリシーに対して発生し、削除して、Azure ポータル内のポリシーを再作成することで解決できます。 このプロパティは読み取りのみ可能です。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
+|supportsScopeTags|Boolean|デバイスの構成を基になるスコープのタグの割り当てをサポートしているかどうかを示します。 この値が false であり、エンティティをスコープ指定されたユーザーには表示されませんがある場合、ScopeTags プロパティに割り当てることは許可されていません。 これは、Silverlight で作成されたレガシ ポリシーに対して発生し、削除して、Azure ポータル内のポリシーを再作成することで解決できます。 このプロパティは読み取りのみ可能です。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |createdDateTime|DateTimeOffset|オブジェクトが作成された DateTime。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |説明|String|デバイス構成について管理者が提供した説明。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |displayName|String|デバイス構成について管理者が指定した名前。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |version|Int32|デバイス構成のバージョン。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |kioskProfiles|[windowsKioskProfile](../resources/intune-deviceconfig-windowskioskprofile.md)コレクション|このポリシー設定は、構成のキオスクのキオスクのプロファイルの一覧を定義します。 このコレクションには、最大で 500 個の要素を含めることができます。|
 |kioskBrowserDefaultUrl|String|起動時にブラウザーが移動する必要があります既定の URL を指定します。|
-|kioskBrowserEnableHomeButton|ブール型|キオスク ブラウザーの [ホーム] ボタンを有効にします。 既定では、[ホーム] ボタンは無効になります。|
-|kioskBrowserEnableNavigationButtons|ブール型|キオスク ブラウザーのナビゲーションの buttons(forward/back) を有効にします。 既定では、ナビゲーション ボタンは無効になります。|
-|kioskBrowserEnableEndSessionButton|ブール型|キオスク ブラウザーの最後のセッションのボタンを有効にします。 既定では、セッションの終了] ボタンは無効になります。|
+|kioskBrowserEnableHomeButton|Boolean|キオスク ブラウザーの [ホーム] ボタンを有効にします。 既定では、[ホーム] ボタンは無効になります。|
+|kioskBrowserEnableNavigationButtons|Boolean|キオスク ブラウザーのナビゲーションの buttons(forward/back) を有効にします。 既定では、ナビゲーション ボタンは無効になります。|
+|kioskBrowserEnableEndSessionButton|Boolean|キオスク ブラウザーの最後のセッションのボタンを有効にします。 既定では、セッションの終了] ボタンは無効になります。|
 |kioskBrowserRestartOnIdleTimeInMinutes|Int32|キオスク ブラウザーを最新の状態で再起動するまで、セッションがアイドル状態の分数を指定します。  有効な値は、1 ~ 1440 です。 1 から 1440 の有効な値|
 |kioskBrowserBlockedURLs|String コレクション|キオスクのブラウザーの移動先のない Url を指定します。|
 |kioskBrowserBlockedUrlExceptions|String コレクション|キオスクのブラウザーに移動するのには許可されている Url を指定します。|

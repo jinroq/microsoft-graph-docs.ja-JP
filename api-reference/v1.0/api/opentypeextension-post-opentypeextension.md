@@ -2,12 +2,13 @@
 title: オープン拡張機能を作成する
 description: オープン拡張機能 (openTypeExtension オブジェクト) を作成し、リソースの新規または既存のインスタンスのカスタム プロパティを追加します。
 localization_priority: Priority
-ms.openlocfilehash: a07dddff6347021dabecfff185ddac5c27c5d0a7
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: dkershaw10
+ms.openlocfilehash: 0823cb549527f7e5851e9d47e328b427eb64539f
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27872542"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27962346"
 ---
 # <a name="create-open-extension"></a>オープン拡張機能を作成する
 

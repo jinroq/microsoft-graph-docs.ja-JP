@@ -3,12 +3,13 @@ title: EasEmailProfileConfigurationBase を取得します。
 description: EasEmailProfileConfigurationBase オブジェクトのプロパティと関係を参照してください。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 91e60829772a13a6d7a8e1fa242cdb769c4e8fe1
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 5049e643175a5ea0cbf8788abe98ae1527238327
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27863337"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27963158"
 ---
 # <a name="get-easemailprofileconfigurationbase"></a>EasEmailProfileConfigurationBase を取得します。
 

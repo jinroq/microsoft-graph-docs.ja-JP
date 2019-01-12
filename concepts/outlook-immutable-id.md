@@ -2,12 +2,14 @@
 title: Outlook リソースの不変 ID の取得
 description: Outlook アイテム (メッセージ、イベント、連絡先、タスク) には、ユーザーは気づいていないか、大きな不満を感じている可能性のある、興味深い動作があります。それは、ID の変更です。 これは頻繁に発生するものではなく、アイテムが移動された場合のみ発生します。ただし、後で使用するために ID をオフラインで格納するアプリの場合、これは深刻な問題になることがあります。 不変 ID を使用すると、お使いのアプリケーションで、アイテムの有効期間中は変更のない ID を取得できます。
 author: angelgolfer-ms
-ms.openlocfilehash: 34d88ed2cbc39902f1240757367beb112cc007b4
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Priority
+ms.prod: outlook
+ms.openlocfilehash: e88f4d457f76990dc3e6145ebf2730087ad2a74e
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27315198"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27961716"
 ---
 # <a name="get-immutable-identifiers-for-outlook-resources"></a>Outlook リソースの不変 ID の取得
 

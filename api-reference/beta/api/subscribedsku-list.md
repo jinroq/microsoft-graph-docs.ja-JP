@@ -2,12 +2,14 @@
 title: subscribedSkus を一覧表示する
 description: 組織で取得した商用サブスクリプションの一覧を取得します。
 localization_priority: Normal
-ms.openlocfilehash: 6439fde92c4f8f520d172969fd1c7b2fa2c09282
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: lleonard-msft
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: 8a4463ba12f538cb7796e3d7e33e0e41ca7ca1b9
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27830186"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27959000"
 ---
 # <a name="list-subscribedskus"></a>subscribedSkus を一覧表示する
 

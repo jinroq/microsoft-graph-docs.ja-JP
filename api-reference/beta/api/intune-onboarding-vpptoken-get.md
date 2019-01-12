@@ -3,12 +3,13 @@ title: Get vppToken
 description: vppToken オブジェクトのプロパティとリレーションシップを読み取ります。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 8fa3ceb27733e30e13f400ece02bac6d937e5d11
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: ce6b0257e6f0aac8a5c6251e95181fd23c84036b
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27849463"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27963179"
 ---
 # <a name="get-vpptoken"></a>Get vppToken
 

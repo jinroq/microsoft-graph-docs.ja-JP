@@ -2,12 +2,14 @@
 title: securityNetworkProtocol 列挙型
 description: ネットワーク プロトコルの使用可能な値です。
 localization_priority: Normal
-ms.openlocfilehash: 49437c67ec84bf90403658e9a188675c22a4e369
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: preetikr
+ms.prod: security
+ms.openlocfilehash: f5ab5497676360b96d51220d00e106169eba1df3
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27884631"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27960435"
 ---
 # <a name="securitynetworkprotocol-enum-type"></a>securityNetworkProtocol 列挙型
 

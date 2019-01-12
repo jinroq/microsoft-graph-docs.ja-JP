@@ -2,12 +2,14 @@
 title: Microsoft Teams API の概要
 description: 'Microsoft Teams は、チームワークおよびインテリジェントな通信のための究極のハブです。 '
 author: nkramer
-ms.openlocfilehash: 2297f92cb44c8a12512e4e06ffc2392d75626952
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Priority
+ms.prod: microsoft-teams
+ms.openlocfilehash: eb87d270822193632fde376950ab4d52515237b6
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27358857"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27967981"
 ---
 # <a name="microsoft-teams-api-overview"></a>Microsoft Teams API の概要
 
@@ -83,8 +85,7 @@ Microsoft Teams API は、Teams 内部および外部のどちらのアプリも
 - [概要ビデオ](http://aka.ms/teamsgraph/v1/video)を見る。
 - [Microsoft Teams API の使用](/graph/api/resources/teams-api-overview?view=graph-rest-1.0)方法を確認する。
 - [チーム](/graph/api/resources/team?view=graph-rest-1.0)、[チャネル](/graph/api/resources/channel?view=graph-rest-1.0)、および [グループ](/graph/api/resources/group?view=graph-rest-1.0)のリソースのメソッド、プロパティ、およびリレーションシップについて詳しく調べる。
-- 
-  [Graph エクスプローラー](https://developer.microsoft.com/graph/graph-explorer)で API をお試しください。
+- [Graph エクスプローラー](https://developer.microsoft.com/graph/graph-explorer)で API をお試しください。
 - [Microsoft Teams プログラミング モデル](https://docs.microsoft.com/ja-JP/microsoftteams/platform/concepts/concepts-overview)に関する詳細を読む。
 - [通話およびオンライン会議 API](/graph/api/resources/calls-api-overview?view=graph-rest-beta)を調べる。
 - サンプル コードですぐに開始する: [Contoso エアライン](https://github.com/microsoftgraph/contoso-airlines-teams-sample)、[C# ミニサンプル](https://github.com/microsoftgraph/csharp-teams-sample-graph)

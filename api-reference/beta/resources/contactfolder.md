@@ -3,12 +3,13 @@ title: contactFolder リソース型
 description: 連絡先が格納されたフォルダーです。
 author: angelgolfer-ms
 localization_priority: Normal
-ms.openlocfilehash: 87276ced9a1b333eb502feab122bca88e86b5349
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: outlook
+ms.openlocfilehash: 450c683d91eeb789c8c54b2bbfd38db695fbbba2
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27810158"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27967547"
 ---
 # <a name="contactfolder-resource-type"></a>contactFolder リソース型
 
@@ -43,7 +44,7 @@ ms.locfileid: "27810158"
 |displayName|String|フォルダーの表示名。|
 |id|String|連絡先フォルダーの一意識別子。読み取り専用。|
 |parentFolderId|String|フォルダーの親フォルダーの ID。|
-|wellKnownName|文字列|フォルダーが認識されているフォルダーである場合、フォルダーの名前。現在、認識されている連絡先フォルダーは `contacts` のみです。|
+|wellKnownName|string|フォルダーが認識されているフォルダーである場合、フォルダーの名前。現在、認識されている連絡先フォルダーは `contacts` のみです。|
 
 ## <a name="relationships"></a>リレーションシップ
 | リレーションシップ | 型   |説明|
