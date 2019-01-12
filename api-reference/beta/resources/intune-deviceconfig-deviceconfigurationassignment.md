@@ -3,12 +3,13 @@ title: deviceConfigurationAssignment リソースの種類
 description: デバイス構成の割り当てエンティティは、特定のデバイス構成に AAD グループを割り当てます。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 086ff1f3c9d06a1afe394afff0bd7ee6c543804d
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 7860a7526fc3b0251f4d9b07974170039d4c3312
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27888698"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27991973"
 ---
 # <a name="deviceconfigurationassignment-resource-type"></a>deviceConfigurationAssignment リソースの種類
 
@@ -27,7 +28,7 @@ ms.locfileid: "27888698"
 |[deviceConfigurationAssignment の更新](../api/intune-deviceconfig-deviceconfigurationassignment-update.md)|[deviceConfigurationAssignment](../resources/intune-deviceconfig-deviceconfigurationassignment.md)|[deviceConfigurationAssignment](../resources/intune-deviceconfig-deviceconfigurationassignment.md) オブジェクトのプロパティを更新します。|
 
 ## <a name="properties"></a>プロパティ
-|プロパティ|種類|説明|
+|プロパティ|型|説明|
 |:---|:---|:---|
 |ID|String|割り当てのキー。|
 |target|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|デバイス構成の割り当て先です。|

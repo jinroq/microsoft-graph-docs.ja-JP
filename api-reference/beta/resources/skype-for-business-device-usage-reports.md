@@ -2,12 +2,13 @@
 title: Skype for Business デバイス使用状況レポート
 description: 組織全体にわたってクライアントと使用されているデバイスの種類の詳細を取得できます。 これらの詳細は、組織のための調査、計画、その他のビジネスの意思決定の際に非常に役立ちます。
 localization_priority: Normal
-ms.openlocfilehash: 9b9d0204bb7536f0a567aef006ed48a38cb6fe29
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: reports
+ms.openlocfilehash: c007ade392ec70a1c8358d843c6eb72daadcdaf7
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27825019"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27929397"
 ---
 # <a name="skype-for-business-device-usage-reports"></a>Skype for Business デバイス使用状況レポート
 

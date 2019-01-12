@@ -3,12 +3,13 @@ title: userSecurityState リソースの種類
 description: ユーザー アカウントに関するステートフルな情報が含まれています。
 author: dkershaw10
 localization_priority: Normal
-ms.openlocfilehash: 9d972ee674fbd1553e2b76a52876bc50274466c8
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: 9f451f2bc42500eee15bd59809c124a79186916f
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27845851"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27992057"
 ---
 # <a name="usersecuritystate-resource-type"></a>userSecurityState リソースの種類
 
@@ -16,13 +17,13 @@ ms.locfileid: "27845851"
 
 ## <a name="properties"></a>プロパティ
 
-| プロパティ   | 種類 |説明|
+| プロパティ   | 型 |説明|
 |:---------------|:--------|:----------|
 |aadUserId|String|AAD のユーザーは、物理/マルチ account ユーザー エンティティを表すオブジェクト識別子 (GUID) をします。|
 |accountName|String|(せずに Active Directory ドメインまたは DNS ドメイン) のユーザー アカウントのアカウント名 (とも呼ばれる`mailNickName`)。|
 |domainName|String|ユーザー アカウント (ドメイン \ アカウントの形式は、) の NetBIOS と Active Directory ドメイン。|
 |emailRole|emailRole|電子メール関連のアラートをユーザー アカウントの電子メール 'ロール'。 可能な値は、`unknown`、`sender`、`recipient` です。|
-|isVpn|ブール型|VPN 経由でユーザーをログオンするかどうかを示します。|
+|isVpn|Boolean|VPN 経由でユーザーをログオンするかどうかを示します。|
 |logonDateTime|DateTimeOffset|サインインが発生した時刻。 Timestamp 型は、ISO 8601 形式を使用して日付と時刻の情報を表し、常に UTC 時間です。 たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、次のようになります。`'2014-01-01T00:00:00Z'`|
 |logonId|String|ユーザーのサインイン ID|
 |logonIp|String|IP アドレスは、サインイン要求が出されたからです。|

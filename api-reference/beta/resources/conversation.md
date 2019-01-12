@@ -2,12 +2,14 @@
 title: 会話リソースの種類
 description: 会話はスレッドのコレクションです。スレッドにはそのスレッドへの投稿が含まれています。会話のすべてのスレッドと投稿は同じ件名を共有します。
 localization_priority: Normal
-ms.openlocfilehash: 69ae0a8ca7d5040ae1701a52cec007e3ad55449e
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: dkershaw10
+ms.prod: groups
+ms.openlocfilehash: 5cacad2b9539c398251ffd07899df7beb3c2f378
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27815002"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27991441"
 ---
 # <a name="conversation-resource-type"></a>会話リソースの種類
 
@@ -29,9 +31,9 @@ ms.locfileid: "27815002"
 |[会話スレッドを作成する](../api/conversation-post-threads.md) |[conversationThread](conversationthread.md) コレクション| 指定した会話にスレッドを作成します。|
 
 ## <a name="properties"></a>プロパティ
-| プロパティ     | 種類   |説明|
+| プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
-|hasAttachments|ブール値|この会話内のいずれかの投稿に添付ファイルが 1 つ以上あるかどうかを示します。|
+|hasAttachments|Boolean|この会話内のいずれかの投稿に添付ファイルが 1 つ以上あるかどうかを示します。|
 |id|String|会話の一意識別子。読み取り専用です。|
 |lastDeliveredDateTime|DateTimeOffset|Timestamp 型は、ISO 8601 形式を使用して日付と時刻の情報を表し、必ず UTC 時間です。たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、次のようになります。`'2014-01-01T00:00:00Z'`|
 |preview|String|この会話における最新投稿の本文からの短い概要。|

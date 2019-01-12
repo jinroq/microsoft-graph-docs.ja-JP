@@ -3,12 +3,13 @@ title: WindowsOfficeClientSecurityConfiguration を作成します。
 description: 新しい windowsOfficeClientSecurityConfiguration オブジェクトを作成します。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 930d12432ec4b21e2293f1ded48a0a07625734cf
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: b52cd6ac3f5eb58be38ee45413fe234ed654923c
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27837122"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27991966"
 ---
 # <a name="create-windowsofficeclientsecurityconfiguration"></a>WindowsOfficeClientSecurityConfiguration を作成します。
 
@@ -46,7 +47,7 @@ POST /officeConfiguration/clientConfigurations
 
 [WindowsOfficeClientSecurityConfiguration](../resources/intune-cirrus-windowsofficeclientsecurityconfiguration.md)を作成するときに必要なプロパティを次の表に示します。
 
-|プロパティ|種類|説明|
+|プロパティ|型|説明|
 |:---|:---|:---|
 |ID|String|Office クライアントの構成のポリシーの id。 [OfficeClientConfiguration](../resources/intune-cirrus-officeclientconfiguration.md)から継承されました。|
 |userPreferencePayload|Stream|JSON の環境設定は、バイナリ形式の文字列は、ユーザーがこれらの値をオーバーライドすることができます。 [OfficeClientConfiguration](../resources/intune-cirrus-officeclientconfiguration.md)から継承されました。|

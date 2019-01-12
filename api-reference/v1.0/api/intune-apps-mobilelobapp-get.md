@@ -3,12 +3,13 @@ title: Get mobileLobApp
 description: mobileLobApp オブジェクトのプロパティとリレーションシップを読み取ります。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 54a7337fc83ed4d9cb715def2e5404c7208ac27b
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: d0001b928e77cd350ffeb62c3f01c2087c0b3e1b
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27855497"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27991448"
 ---
 # <a name="get-mobilelobapp"></a>Get mobileLobApp
 

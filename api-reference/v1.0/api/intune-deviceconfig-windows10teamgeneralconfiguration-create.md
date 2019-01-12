@@ -3,12 +3,13 @@ title: windows10TeamGeneralConfiguration の作成
 description: 新しい windows10TeamGeneralConfiguration オブジェクトを作成します。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 8ef95d24823abd5a125ad210a4eed81a61e1de1b
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 6380e27306f7144a53f6e70e201d37e3d701faec
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27846614"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27992019"
 ---
 # <a name="create-windows10teamgeneralconfiguration"></a>windows10TeamGeneralConfiguration の作成
 
@@ -44,7 +45,7 @@ POST /deviceManagement/deviceConfigurations
 
 次の表に、windows10TeamGeneralConfiguration の作成時に必要なプロパティを示します。
 
-|プロパティ|種類|説明|
+|プロパティ|型|説明|
 |:---|:---|:---|
 |ID|String|エンティティのキー。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |lastModifiedDateTime|DateTimeOffset|オブジェクトが最後に変更された DateTime。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|

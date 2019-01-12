@@ -3,12 +3,13 @@ title: androidLobApp の作成
 description: 新しい androidLobApp オブジェクトを作成します。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 25ccd06df28c5c75f348d74aeb06d6dd192bce26
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 8a16fd332dda41e7b538f60118ec34eda538c0c6
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27829093"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27991574"
 ---
 # <a name="create-androidlobapp"></a>androidLobApp の作成
 
@@ -44,7 +45,7 @@ POST /deviceAppManagement/mobileApps
 
 次の表に、androidLobApp の作成時に必要なプロパティを示します。
 
-|プロパティ|種類|説明|
+|プロパティ|型|説明|
 |:---|:---|:---|
 |ID|String|エンティティのキー。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|
 |displayName|String|管理者が提供またはインポートしたアプリのタイトル。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|
