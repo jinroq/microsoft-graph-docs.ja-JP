@@ -2,47 +2,49 @@
 title: リスト staffMembers
 description: " > **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。"
 localization_priority: Normal
-ms.openlocfilehash: fdbf1c60731627e518bc5d13ad46abfbf6f39b69
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: angelgolfer-ms
+ms.prod: bookings
+ms.openlocfilehash: 81f170e101ad2aa600991cb79eaccdc65db8e4be
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27809563"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27951384"
 ---
-# <a name="list-staffmembers"></a><span data-ttu-id="70b6e-104">リスト staffMembers</span><span class="sxs-lookup"><span data-stu-id="70b6e-104">List staffMembers</span></span>
+# <a name="list-staffmembers"></a><span data-ttu-id="1f3dc-104">リスト staffMembers</span><span class="sxs-lookup"><span data-stu-id="1f3dc-104">List staffMembers</span></span>
 
- > <span data-ttu-id="70b6e-105">**重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。</span><span class="sxs-lookup"><span data-stu-id="70b6e-105">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="70b6e-106">実稼働アプリケーションでの、これらの API の使用はサポートされていません。</span><span class="sxs-lookup"><span data-stu-id="70b6e-106">Use of these APIs in production applications is not supported.</span></span>
+ > <span data-ttu-id="1f3dc-105">**重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。</span><span class="sxs-lookup"><span data-stu-id="1f3dc-105">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="1f3dc-106">実稼働アプリケーションでの、これらの API の使用はサポートされていません。</span><span class="sxs-lookup"><span data-stu-id="1f3dc-106">Use of these APIs in production applications is not supported.</span></span>
  
-<span data-ttu-id="70b6e-107">指定された[bookingbusiness](../resources/bookingbusiness.md)では、 [bookingStaffMember](../resources/bookingstaffmember.md)オブジェクトのリストを取得します。</span><span class="sxs-lookup"><span data-stu-id="70b6e-107">Get a list of [bookingStaffMember](../resources/bookingstaffmember.md) objects in the specified [bookingbusiness](../resources/bookingbusiness.md).</span></span>
-## <a name="permissions"></a><span data-ttu-id="70b6e-108">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="70b6e-108">Permissions</span></span>
-<span data-ttu-id="70b6e-p103">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="70b6e-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="1f3dc-107">指定された[bookingbusiness](../resources/bookingbusiness.md)では、 [bookingStaffMember](../resources/bookingstaffmember.md)オブジェクトのリストを取得します。</span><span class="sxs-lookup"><span data-stu-id="1f3dc-107">Get a list of [bookingStaffMember](../resources/bookingstaffmember.md) objects in the specified [bookingbusiness](../resources/bookingbusiness.md).</span></span>
+## <a name="permissions"></a><span data-ttu-id="1f3dc-108">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="1f3dc-108">Permissions</span></span>
+<span data-ttu-id="1f3dc-p103">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="1f3dc-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="70b6e-111">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="70b6e-111">Permission type</span></span>      | <span data-ttu-id="70b6e-112">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="70b6e-112">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="1f3dc-111">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="1f3dc-111">Permission type</span></span>      | <span data-ttu-id="1f3dc-112">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="1f3dc-112">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="70b6e-113">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="70b6e-113">Delegated (work or school account)</span></span> |  <span data-ttu-id="70b6e-114">Bookings.Read.All、BookingsAppointment.ReadWrite.All、Bookings.ReadWrite.All、Bookings.Manage.All</span><span class="sxs-lookup"><span data-stu-id="70b6e-114">Bookings.Read.All, BookingsAppointment.ReadWrite.All, Bookings.ReadWrite.All, Bookings.Manage.All</span></span>   |
-|<span data-ttu-id="70b6e-115">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="70b6e-115">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="70b6e-116">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="70b6e-116">Not supported.</span></span>   |
-|<span data-ttu-id="70b6e-117">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="70b6e-117">Application</span></span> | <span data-ttu-id="70b6e-118">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="70b6e-118">Not supported.</span></span>  |
+|<span data-ttu-id="1f3dc-113">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="1f3dc-113">Delegated (work or school account)</span></span> |  <span data-ttu-id="1f3dc-114">Bookings.Read.All、BookingsAppointment.ReadWrite.All、Bookings.ReadWrite.All、Bookings.Manage.All</span><span class="sxs-lookup"><span data-stu-id="1f3dc-114">Bookings.Read.All, BookingsAppointment.ReadWrite.All, Bookings.ReadWrite.All, Bookings.Manage.All</span></span>   |
+|<span data-ttu-id="1f3dc-115">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="1f3dc-115">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="1f3dc-116">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="1f3dc-116">Not supported.</span></span>   |
+|<span data-ttu-id="1f3dc-117">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="1f3dc-117">Application</span></span> | <span data-ttu-id="1f3dc-118">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="1f3dc-118">Not supported.</span></span>  |
 
-## <a name="http-request"></a><span data-ttu-id="70b6e-119">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="70b6e-119">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="1f3dc-119">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="1f3dc-119">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /bookingBusinesses/{id}/staffMembers
 ```
-## <a name="optional-query-parameters"></a><span data-ttu-id="70b6e-120">オプションのクエリ パラメーター</span><span class="sxs-lookup"><span data-stu-id="70b6e-120">Optional query parameters</span></span>
-<span data-ttu-id="70b6e-121">このメソッドは、応答をカスタマイズするための [OData クエリ パラメーター](https://developer.microsoft.com/graph/docs/concepts/query_parameters)をサポートします。</span><span class="sxs-lookup"><span data-stu-id="70b6e-121">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="1f3dc-120">オプションのクエリ パラメーター</span><span class="sxs-lookup"><span data-stu-id="1f3dc-120">Optional query parameters</span></span>
+<span data-ttu-id="1f3dc-121">このメソッドは、応答をカスタマイズするための [OData クエリ パラメーター](https://developer.microsoft.com/graph/docs/concepts/query_parameters)をサポートします。</span><span class="sxs-lookup"><span data-stu-id="1f3dc-121">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="70b6e-122">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="70b6e-122">Request headers</span></span>
-| <span data-ttu-id="70b6e-123">名前</span><span class="sxs-lookup"><span data-stu-id="70b6e-123">Name</span></span>      |<span data-ttu-id="70b6e-124">説明</span><span class="sxs-lookup"><span data-stu-id="70b6e-124">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="1f3dc-122">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="1f3dc-122">Request headers</span></span>
+| <span data-ttu-id="1f3dc-123">名前</span><span class="sxs-lookup"><span data-stu-id="1f3dc-123">Name</span></span>      |<span data-ttu-id="1f3dc-124">説明</span><span class="sxs-lookup"><span data-stu-id="1f3dc-124">Description</span></span>|
 |:----------|:----------|
-| <span data-ttu-id="70b6e-125">Authorization</span><span class="sxs-lookup"><span data-stu-id="70b6e-125">Authorization</span></span>  | <span data-ttu-id="70b6e-126">Bearer {code}</span><span class="sxs-lookup"><span data-stu-id="70b6e-126">Bearer {code}</span></span>|
+| <span data-ttu-id="1f3dc-125">Authorization</span><span class="sxs-lookup"><span data-stu-id="1f3dc-125">Authorization</span></span>  | <span data-ttu-id="1f3dc-126">Bearer {code}</span><span class="sxs-lookup"><span data-stu-id="1f3dc-126">Bearer {code}</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="70b6e-127">要求本文</span><span class="sxs-lookup"><span data-stu-id="70b6e-127">Request body</span></span>
-<span data-ttu-id="70b6e-128">このメソッドには、要求本文を指定しません。</span><span class="sxs-lookup"><span data-stu-id="70b6e-128">Do not supply a request body for this method.</span></span>
-## <a name="response"></a><span data-ttu-id="70b6e-129">応答</span><span class="sxs-lookup"><span data-stu-id="70b6e-129">Response</span></span>
-<span data-ttu-id="70b6e-130">かどうかは成功すると、このメソッドが返されます、`200 OK`応答コードおよび応答の本文内の[bookingStaffMember](../resources/bookingstaffmember.md)オブジェクトのコレクションです。</span><span class="sxs-lookup"><span data-stu-id="70b6e-130">If successful, this method returns a `200 OK` response code and collection of [bookingStaffMember](../resources/bookingstaffmember.md) objects in the response body.</span></span>
-## <a name="example"></a><span data-ttu-id="70b6e-131">例</span><span class="sxs-lookup"><span data-stu-id="70b6e-131">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="70b6e-132">要求</span><span class="sxs-lookup"><span data-stu-id="70b6e-132">Request</span></span>
-<span data-ttu-id="70b6e-133">要求の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="70b6e-133">The following is an example of the request.</span></span>
+## <a name="request-body"></a><span data-ttu-id="1f3dc-127">要求本文</span><span class="sxs-lookup"><span data-stu-id="1f3dc-127">Request body</span></span>
+<span data-ttu-id="1f3dc-128">このメソッドには、要求本文を指定しません。</span><span class="sxs-lookup"><span data-stu-id="1f3dc-128">Do not supply a request body for this method.</span></span>
+## <a name="response"></a><span data-ttu-id="1f3dc-129">応答</span><span class="sxs-lookup"><span data-stu-id="1f3dc-129">Response</span></span>
+<span data-ttu-id="1f3dc-130">かどうかは成功すると、このメソッドが返されます、`200 OK`応答コードおよび応答の本文内の[bookingStaffMember](../resources/bookingstaffmember.md)オブジェクトのコレクションです。</span><span class="sxs-lookup"><span data-stu-id="1f3dc-130">If successful, this method returns a `200 OK` response code and collection of [bookingStaffMember](../resources/bookingstaffmember.md) objects in the response body.</span></span>
+## <a name="example"></a><span data-ttu-id="1f3dc-131">例</span><span class="sxs-lookup"><span data-stu-id="1f3dc-131">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="1f3dc-132">要求</span><span class="sxs-lookup"><span data-stu-id="1f3dc-132">Request</span></span>
+<span data-ttu-id="1f3dc-133">要求の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="1f3dc-133">The following is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "get_staffmembers"
@@ -50,8 +52,8 @@ GET /bookingBusinesses/{id}/staffMembers
 ```http
 GET https://graph.microsoft.com/beta/bookingBusinesses/Contosolunchdelivery@M365B489948.onmicrosoft.com/staffMembers
 ```
-##### <a name="response"></a><span data-ttu-id="70b6e-134">応答</span><span class="sxs-lookup"><span data-stu-id="70b6e-134">Response</span></span>
-<span data-ttu-id="70b6e-135">応答の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="70b6e-135">The following is an example of the response.</span></span> <span data-ttu-id="70b6e-136">注: 簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。</span><span class="sxs-lookup"><span data-stu-id="70b6e-136">Note: The response object shown here may be truncated for brevity.</span></span> <span data-ttu-id="70b6e-137">実際の呼び出しではすべてのプロパティが返されます。</span><span class="sxs-lookup"><span data-stu-id="70b6e-137">All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="1f3dc-134">応答</span><span class="sxs-lookup"><span data-stu-id="1f3dc-134">Response</span></span>
+<span data-ttu-id="1f3dc-135">応答の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="1f3dc-135">The following is an example of the response.</span></span> <span data-ttu-id="1f3dc-136">注: 簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。</span><span class="sxs-lookup"><span data-stu-id="1f3dc-136">Note: The response object shown here may be truncated for brevity.</span></span> <span data-ttu-id="1f3dc-137">実際の呼び出しではすべてのプロパティが返されます。</span><span class="sxs-lookup"><span data-stu-id="1f3dc-137">All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,

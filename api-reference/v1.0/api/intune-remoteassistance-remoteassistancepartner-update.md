@@ -3,28 +3,29 @@ title: remoteAssistancePartner の更新
 description: remoteAssistancePartner オブジェクトのプロパティを更新します。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 16b7c3f9d3125ca688f08faa22772c4335e02a8f
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: e98212ee51352dc205c4b1aeb9533775707d2d9c
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27871401"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27951293"
 ---
-# <a name="update-remoteassistancepartner"></a><span data-ttu-id="1191c-103">remoteAssistancePartner の更新</span><span class="sxs-lookup"><span data-stu-id="1191c-103">Update remoteAssistancePartner</span></span>
+# <a name="update-remoteassistancepartner"></a><span data-ttu-id="58cd3-103">remoteAssistancePartner の更新</span><span class="sxs-lookup"><span data-stu-id="58cd3-103">Update remoteAssistancePartner</span></span>
 
-> <span data-ttu-id="1191c-104">**注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。</span><span class="sxs-lookup"><span data-stu-id="1191c-104">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
+> <span data-ttu-id="58cd3-104">**注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。</span><span class="sxs-lookup"><span data-stu-id="58cd3-104">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
 
-<span data-ttu-id="1191c-105">[remoteAssistancePartner](../resources/intune-remoteassistance-remoteassistancepartner.md) オブジェクトのプロパティを更新します。</span><span class="sxs-lookup"><span data-stu-id="1191c-105">Update the properties of a [remoteAssistancePartner](../resources/intune-remoteassistance-remoteassistancepartner.md) object.</span></span>
-## <a name="prerequisites"></a><span data-ttu-id="1191c-106">前提条件</span><span class="sxs-lookup"><span data-stu-id="1191c-106">Prerequisites</span></span>
-<span data-ttu-id="1191c-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="1191c-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="58cd3-105">[remoteAssistancePartner](../resources/intune-remoteassistance-remoteassistancepartner.md) オブジェクトのプロパティを更新します。</span><span class="sxs-lookup"><span data-stu-id="58cd3-105">Update the properties of a [remoteAssistancePartner](../resources/intune-remoteassistance-remoteassistancepartner.md) object.</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="58cd3-106">前提条件</span><span class="sxs-lookup"><span data-stu-id="58cd3-106">Prerequisites</span></span>
+<span data-ttu-id="58cd3-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="58cd3-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="1191c-109">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="1191c-109">Permission type</span></span>|<span data-ttu-id="1191c-110">アクセス許可 (特権の大きいものから小さいものへ)</span><span class="sxs-lookup"><span data-stu-id="1191c-110">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="58cd3-109">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="58cd3-109">Permission type</span></span>|<span data-ttu-id="58cd3-110">アクセス許可 (特権の大きいものから小さいものへ)</span><span class="sxs-lookup"><span data-stu-id="58cd3-110">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="1191c-111">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="1191c-111">Delegated (work or school account)</span></span>|<span data-ttu-id="1191c-112">DeviceManagementServiceConfig.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="1191c-112">DeviceManagementServiceConfig.ReadWrite.All</span></span>|
-|<span data-ttu-id="1191c-113">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="1191c-113">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="1191c-114">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="1191c-114">Not supported.</span></span>|
-|<span data-ttu-id="1191c-115">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="1191c-115">Application</span></span>|<span data-ttu-id="1191c-116">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="1191c-116">Not supported.</span></span>|
+|<span data-ttu-id="58cd3-111">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="58cd3-111">Delegated (work or school account)</span></span>|<span data-ttu-id="58cd3-112">DeviceManagementServiceConfig.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="58cd3-112">DeviceManagementServiceConfig.ReadWrite.All</span></span>|
+|<span data-ttu-id="58cd3-113">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="58cd3-113">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="58cd3-114">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="58cd3-114">Not supported.</span></span>|
+|<span data-ttu-id="58cd3-115">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="58cd3-115">Application</span></span>|<span data-ttu-id="58cd3-116">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="58cd3-116">Not supported.</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="1191c-117">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="1191c-117">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="58cd3-117">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="58cd3-117">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -33,33 +34,33 @@ ms.locfileid: "27871401"
 PATCH /deviceManagement/remoteAssistancePartners/{remoteAssistancePartnerId}
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="1191c-118">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="1191c-118">Request headers</span></span>
-|<span data-ttu-id="1191c-119">ヘッダー</span><span class="sxs-lookup"><span data-stu-id="1191c-119">Header</span></span>|<span data-ttu-id="1191c-120">値</span><span class="sxs-lookup"><span data-stu-id="1191c-120">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="58cd3-118">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="58cd3-118">Request headers</span></span>
+|<span data-ttu-id="58cd3-119">ヘッダー</span><span class="sxs-lookup"><span data-stu-id="58cd3-119">Header</span></span>|<span data-ttu-id="58cd3-120">値</span><span class="sxs-lookup"><span data-stu-id="58cd3-120">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="1191c-121">Authorization</span><span class="sxs-lookup"><span data-stu-id="1191c-121">Authorization</span></span>|<span data-ttu-id="1191c-122">ベアラー &lt;トークン&gt; が必須。</span><span class="sxs-lookup"><span data-stu-id="1191c-122">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="1191c-123">Accept</span><span class="sxs-lookup"><span data-stu-id="1191c-123">Accept</span></span>|<span data-ttu-id="1191c-124">application/json</span><span class="sxs-lookup"><span data-stu-id="1191c-124">application/json</span></span>|
+|<span data-ttu-id="58cd3-121">Authorization</span><span class="sxs-lookup"><span data-stu-id="58cd3-121">Authorization</span></span>|<span data-ttu-id="58cd3-122">ベアラー &lt;トークン&gt; が必須。</span><span class="sxs-lookup"><span data-stu-id="58cd3-122">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="58cd3-123">Accept</span><span class="sxs-lookup"><span data-stu-id="58cd3-123">Accept</span></span>|<span data-ttu-id="58cd3-124">application/json</span><span class="sxs-lookup"><span data-stu-id="58cd3-124">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="1191c-125">要求本文</span><span class="sxs-lookup"><span data-stu-id="1191c-125">Request body</span></span>
-<span data-ttu-id="1191c-126">要求本文で、[remoteAssistancePartner](../resources/intune-remoteassistance-remoteassistancepartner.md) オブジェクトの JSON 表記を指定します。</span><span class="sxs-lookup"><span data-stu-id="1191c-126">In the request body, supply a JSON representation for the [remoteAssistancePartner](../resources/intune-remoteassistance-remoteassistancepartner.md) object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="58cd3-125">要求本文</span><span class="sxs-lookup"><span data-stu-id="58cd3-125">Request body</span></span>
+<span data-ttu-id="58cd3-126">要求本文で、[remoteAssistancePartner](../resources/intune-remoteassistance-remoteassistancepartner.md) オブジェクトの JSON 表記を指定します。</span><span class="sxs-lookup"><span data-stu-id="58cd3-126">In the request body, supply a JSON representation for the [remoteAssistancePartner](../resources/intune-remoteassistance-remoteassistancepartner.md) object.</span></span>
 
-<span data-ttu-id="1191c-127">次の表に、[remoteAssistancePartner](../resources/intune-remoteassistance-remoteassistancepartner.md) の作成時に必要なプロパティを示します。</span><span class="sxs-lookup"><span data-stu-id="1191c-127">The following table shows the properties that are required when you create the [remoteAssistancePartner](../resources/intune-remoteassistance-remoteassistancepartner.md).</span></span>
+<span data-ttu-id="58cd3-127">次の表に、[remoteAssistancePartner](../resources/intune-remoteassistance-remoteassistancepartner.md) の作成時に必要なプロパティを示します。</span><span class="sxs-lookup"><span data-stu-id="58cd3-127">The following table shows the properties that are required when you create the [remoteAssistancePartner](../resources/intune-remoteassistance-remoteassistancepartner.md).</span></span>
 
-|<span data-ttu-id="1191c-128">プロパティ</span><span class="sxs-lookup"><span data-stu-id="1191c-128">Property</span></span>|<span data-ttu-id="1191c-129">種類</span><span class="sxs-lookup"><span data-stu-id="1191c-129">Type</span></span>|<span data-ttu-id="1191c-130">説明</span><span class="sxs-lookup"><span data-stu-id="1191c-130">Description</span></span>|
+|<span data-ttu-id="58cd3-128">プロパティ</span><span class="sxs-lookup"><span data-stu-id="58cd3-128">Property</span></span>|<span data-ttu-id="58cd3-129">種類</span><span class="sxs-lookup"><span data-stu-id="58cd3-129">Type</span></span>|<span data-ttu-id="58cd3-130">説明</span><span class="sxs-lookup"><span data-stu-id="58cd3-130">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="1191c-131">ID</span><span class="sxs-lookup"><span data-stu-id="1191c-131">id</span></span>|<span data-ttu-id="1191c-132">String</span><span class="sxs-lookup"><span data-stu-id="1191c-132">String</span></span>|<span data-ttu-id="1191c-133">パートナーの一意識別子。</span><span class="sxs-lookup"><span data-stu-id="1191c-133">Unique identifier of the partner.</span></span>|
-|<span data-ttu-id="1191c-134">displayName</span><span class="sxs-lookup"><span data-stu-id="1191c-134">displayName</span></span>|<span data-ttu-id="1191c-135">String</span><span class="sxs-lookup"><span data-stu-id="1191c-135">String</span></span>|<span data-ttu-id="1191c-136">パートナーの表示名。</span><span class="sxs-lookup"><span data-stu-id="1191c-136">Display name of the partner.</span></span>|
-|<span data-ttu-id="1191c-137">onboardingUrl</span><span class="sxs-lookup"><span data-stu-id="1191c-137">onboardingUrl</span></span>|<span data-ttu-id="1191c-138">String</span><span class="sxs-lookup"><span data-stu-id="1191c-138">String</span></span>|<span data-ttu-id="1191c-139">パートナーのオンボーディング ポータルの URL。このポータルでは、管理者がパートナーのリモート アシスタンス サービスを構成できます。</span><span class="sxs-lookup"><span data-stu-id="1191c-139">URL of the partner's onboarding portal, where an administrator can configure their Remote Assistance service.</span></span>|
-|<span data-ttu-id="1191c-140">onboardingStatus</span><span class="sxs-lookup"><span data-stu-id="1191c-140">onboardingStatus</span></span>|[<span data-ttu-id="1191c-141">remoteAssistanceOnboardingStatus</span><span class="sxs-lookup"><span data-stu-id="1191c-141">remoteAssistanceOnboardingStatus</span></span>](../resources/intune-remoteassistance-remoteassistanceonboardingstatus.md)|<span data-ttu-id="1191c-142">未定です。</span><span class="sxs-lookup"><span data-stu-id="1191c-142">TBD.</span></span> <span data-ttu-id="1191c-143">可能な値は、`notOnboarded`、`onboarding`、`onboarded` です。</span><span class="sxs-lookup"><span data-stu-id="1191c-143">Possible values are: `notOnboarded`, `onboarding`, `onboarded`.</span></span>|
-|<span data-ttu-id="1191c-144">lastConnectionDateTime</span><span class="sxs-lookup"><span data-stu-id="1191c-144">lastConnectionDateTime</span></span>|<span data-ttu-id="1191c-145">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="1191c-145">DateTimeOffset</span></span>|<span data-ttu-id="1191c-146">TEM パートナーによって Intune に最後に送信された要求のタイムスタンプ。</span><span class="sxs-lookup"><span data-stu-id="1191c-146">Timestamp of the last request sent to Intune by the TEM partner.</span></span>|
+|<span data-ttu-id="58cd3-131">ID</span><span class="sxs-lookup"><span data-stu-id="58cd3-131">id</span></span>|<span data-ttu-id="58cd3-132">String</span><span class="sxs-lookup"><span data-stu-id="58cd3-132">String</span></span>|<span data-ttu-id="58cd3-133">パートナーの一意識別子。</span><span class="sxs-lookup"><span data-stu-id="58cd3-133">Unique identifier of the partner.</span></span>|
+|<span data-ttu-id="58cd3-134">displayName</span><span class="sxs-lookup"><span data-stu-id="58cd3-134">displayName</span></span>|<span data-ttu-id="58cd3-135">String</span><span class="sxs-lookup"><span data-stu-id="58cd3-135">String</span></span>|<span data-ttu-id="58cd3-136">パートナーの表示名。</span><span class="sxs-lookup"><span data-stu-id="58cd3-136">Display name of the partner.</span></span>|
+|<span data-ttu-id="58cd3-137">onboardingUrl</span><span class="sxs-lookup"><span data-stu-id="58cd3-137">onboardingUrl</span></span>|<span data-ttu-id="58cd3-138">String</span><span class="sxs-lookup"><span data-stu-id="58cd3-138">String</span></span>|<span data-ttu-id="58cd3-139">パートナーのオンボーディング ポータルの URL。このポータルでは、管理者がパートナーのリモート アシスタンス サービスを構成できます。</span><span class="sxs-lookup"><span data-stu-id="58cd3-139">URL of the partner's onboarding portal, where an administrator can configure their Remote Assistance service.</span></span>|
+|<span data-ttu-id="58cd3-140">onboardingStatus</span><span class="sxs-lookup"><span data-stu-id="58cd3-140">onboardingStatus</span></span>|[<span data-ttu-id="58cd3-141">remoteAssistanceOnboardingStatus</span><span class="sxs-lookup"><span data-stu-id="58cd3-141">remoteAssistanceOnboardingStatus</span></span>](../resources/intune-remoteassistance-remoteassistanceonboardingstatus.md)|<span data-ttu-id="58cd3-142">未定です。</span><span class="sxs-lookup"><span data-stu-id="58cd3-142">TBD.</span></span> <span data-ttu-id="58cd3-143">可能な値は、`notOnboarded`、`onboarding`、`onboarded` です。</span><span class="sxs-lookup"><span data-stu-id="58cd3-143">Possible values are: `notOnboarded`, `onboarding`, `onboarded`.</span></span>|
+|<span data-ttu-id="58cd3-144">lastConnectionDateTime</span><span class="sxs-lookup"><span data-stu-id="58cd3-144">lastConnectionDateTime</span></span>|<span data-ttu-id="58cd3-145">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="58cd3-145">DateTimeOffset</span></span>|<span data-ttu-id="58cd3-146">TEM パートナーによって Intune に最後に送信された要求のタイムスタンプ。</span><span class="sxs-lookup"><span data-stu-id="58cd3-146">Timestamp of the last request sent to Intune by the TEM partner.</span></span>|
 
 
 
-## <a name="response"></a><span data-ttu-id="1191c-147">応答</span><span class="sxs-lookup"><span data-stu-id="1191c-147">Response</span></span>
-<span data-ttu-id="1191c-148">成功した場合、このメソッドは `200 OK` 応答コードと、応答本文で更新された [remoteAssistancePartner](../resources/intune-remoteassistance-remoteassistancepartner.md) オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="1191c-148">If successful, this method returns a `200 OK` response code and an updated [remoteAssistancePartner](../resources/intune-remoteassistance-remoteassistancepartner.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="58cd3-147">応答</span><span class="sxs-lookup"><span data-stu-id="58cd3-147">Response</span></span>
+<span data-ttu-id="58cd3-148">成功した場合、このメソッドは `200 OK` 応答コードと、応答本文で更新された [remoteAssistancePartner](../resources/intune-remoteassistance-remoteassistancepartner.md) オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="58cd3-148">If successful, this method returns a `200 OK` response code and an updated [remoteAssistancePartner](../resources/intune-remoteassistance-remoteassistancepartner.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="1191c-149">例</span><span class="sxs-lookup"><span data-stu-id="1191c-149">Example</span></span>
-### <a name="request"></a><span data-ttu-id="1191c-150">要求</span><span class="sxs-lookup"><span data-stu-id="1191c-150">Request</span></span>
-<span data-ttu-id="1191c-151">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="1191c-151">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="58cd3-149">例</span><span class="sxs-lookup"><span data-stu-id="58cd3-149">Example</span></span>
+### <a name="request"></a><span data-ttu-id="58cd3-150">要求</span><span class="sxs-lookup"><span data-stu-id="58cd3-150">Request</span></span>
+<span data-ttu-id="58cd3-151">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="58cd3-151">Here is an example of the request.</span></span>
 ``` http
 PATCH https://graph.microsoft.com/v1.0/deviceManagement/remoteAssistancePartners/{remoteAssistancePartnerId}
 Content-type: application/json
@@ -74,8 +75,8 @@ Content-length: 266
 }
 ```
 
-### <a name="response"></a><span data-ttu-id="1191c-152">応答</span><span class="sxs-lookup"><span data-stu-id="1191c-152">Response</span></span>
-<span data-ttu-id="1191c-p103">以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。</span><span class="sxs-lookup"><span data-stu-id="1191c-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="58cd3-152">応答</span><span class="sxs-lookup"><span data-stu-id="58cd3-152">Response</span></span>
+<span data-ttu-id="58cd3-p103">以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。</span><span class="sxs-lookup"><span data-stu-id="58cd3-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json

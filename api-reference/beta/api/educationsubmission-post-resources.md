@@ -3,50 +3,51 @@ title: EducationSubmissionResource を作成します。
 description: 'リソースを [リソース] リストに追加します。 このアクションは、この送信が割り当てられている受講者にのみ実行できます。 **AllowStudentsToAddResources**フラグが設定されていない場合、この操作は成功しません true に設定します。 呼び出し元は、ファイル ベースのリソースを新規作成する必要がある場合は、提出書類に関連付けられているリソース] フォルダーにファイルをアップロードする必要があります。 ファイルが存在しないか、そのフォルダーでは、POST 要求は失敗します。 '
 author: dipakboyed
 localization_priority: Normal
-ms.openlocfilehash: 585ece0dd8239c5a3107420b88cf2103fe5fb7eb
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: education
+ms.openlocfilehash: a3c7592614eb1987df6730cd7f029bc84bb422cf
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27888117"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27950649"
 ---
-# <a name="create-educationsubmissionresource"></a><span data-ttu-id="6c843-107">EducationSubmissionResource を作成します。</span><span class="sxs-lookup"><span data-stu-id="6c843-107">Create educationSubmissionResource</span></span>
+# <a name="create-educationsubmissionresource"></a><span data-ttu-id="db603-107">EducationSubmissionResource を作成します。</span><span class="sxs-lookup"><span data-stu-id="db603-107">Create educationSubmissionResource</span></span>
 
-> <span data-ttu-id="6c843-108">**重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。</span><span class="sxs-lookup"><span data-stu-id="6c843-108">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="6c843-109">実稼働アプリケーションでの、これらの API の使用はサポートされていません。</span><span class="sxs-lookup"><span data-stu-id="6c843-109">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="db603-108">**重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。</span><span class="sxs-lookup"><span data-stu-id="db603-108">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="db603-109">実稼働アプリケーションでの、これらの API の使用はサポートされていません。</span><span class="sxs-lookup"><span data-stu-id="db603-109">Use of these APIs in production applications is not supported.</span></span>
 
-<span data-ttu-id="6c843-110">リソースを [リソース] リストに追加します。</span><span class="sxs-lookup"><span data-stu-id="6c843-110">Adds a resource to the resources list.</span></span> <span data-ttu-id="6c843-111">このアクションは、この送信が割り当てられている受講者にのみ実行できます。</span><span class="sxs-lookup"><span data-stu-id="6c843-111">This action can only be done by the student to whom this submission is assigned.</span></span> <span data-ttu-id="6c843-112">**AllowStudentsToAddResources**フラグが設定されていない場合、この操作は成功しません true に設定します。</span><span class="sxs-lookup"><span data-stu-id="6c843-112">This action will not succeed if the **allowStudentsToAddResources** flag is not set to true.</span></span> <span data-ttu-id="6c843-113">呼び出し元は、ファイル ベースのリソースを新規作成する必要がある場合は、提出書類に関連付けられているリソース] フォルダーにファイルをアップロードする必要があります。</span><span class="sxs-lookup"><span data-stu-id="6c843-113">If the caller wants to create a new file-based resource, the file must be uploaded to the resources folder that is associated with the submission.</span></span> <span data-ttu-id="6c843-114">ファイルが存在しないか、そのフォルダーでは、POST 要求は失敗します。</span><span class="sxs-lookup"><span data-stu-id="6c843-114">If the file does not exist or is not in that folder, the POST request will fail.</span></span> 
+<span data-ttu-id="db603-110">リソースを [リソース] リストに追加します。</span><span class="sxs-lookup"><span data-stu-id="db603-110">Adds a resource to the resources list.</span></span> <span data-ttu-id="db603-111">このアクションは、この送信が割り当てられている受講者にのみ実行できます。</span><span class="sxs-lookup"><span data-stu-id="db603-111">This action can only be done by the student to whom this submission is assigned.</span></span> <span data-ttu-id="db603-112">**AllowStudentsToAddResources**フラグが設定されていない場合、この操作は成功しません true に設定します。</span><span class="sxs-lookup"><span data-stu-id="db603-112">This action will not succeed if the **allowStudentsToAddResources** flag is not set to true.</span></span> <span data-ttu-id="db603-113">呼び出し元は、ファイル ベースのリソースを新規作成する必要がある場合は、提出書類に関連付けられているリソース] フォルダーにファイルをアップロードする必要があります。</span><span class="sxs-lookup"><span data-stu-id="db603-113">If the caller wants to create a new file-based resource, the file must be uploaded to the resources folder that is associated with the submission.</span></span> <span data-ttu-id="db603-114">ファイルが存在しないか、そのフォルダーでは、POST 要求は失敗します。</span><span class="sxs-lookup"><span data-stu-id="db603-114">If the file does not exist or is not in that folder, the POST request will fail.</span></span> 
 
-## <a name="permissions"></a><span data-ttu-id="6c843-115">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="6c843-115">Permissions</span></span>
-<span data-ttu-id="6c843-p104">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="6c843-p104">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="db603-115">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="db603-115">Permissions</span></span>
+<span data-ttu-id="db603-p104">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="db603-p104">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="6c843-118">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="6c843-118">Permission type</span></span>      | <span data-ttu-id="6c843-119">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="6c843-119">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="db603-118">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="db603-118">Permission type</span></span>      | <span data-ttu-id="db603-119">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="db603-119">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="6c843-120">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="6c843-120">Delegated (work or school account)</span></span> |  <span data-ttu-id="6c843-121">EduAssignments.ReadWriteBasic、EduAssignments.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="6c843-121">EduAssignments.ReadWriteBasic, EduAssignments.ReadWrite</span></span>  |
-|<span data-ttu-id="6c843-122">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="6c843-122">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="6c843-123">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="6c843-123">Not supported.</span></span>  |
-|<span data-ttu-id="6c843-124">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="6c843-124">Application</span></span> | <span data-ttu-id="6c843-125">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="6c843-125">Not supported.</span></span> | 
+|<span data-ttu-id="db603-120">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="db603-120">Delegated (work or school account)</span></span> |  <span data-ttu-id="db603-121">EduAssignments.ReadWriteBasic、EduAssignments.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="db603-121">EduAssignments.ReadWriteBasic, EduAssignments.ReadWrite</span></span>  |
+|<span data-ttu-id="db603-122">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="db603-122">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="db603-123">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="db603-123">Not supported.</span></span>  |
+|<span data-ttu-id="db603-124">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="db603-124">Application</span></span> | <span data-ttu-id="db603-125">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="db603-125">Not supported.</span></span> | 
 
-## <a name="http-request"></a><span data-ttu-id="6c843-126">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="6c843-126">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="db603-126">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="db603-126">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /education/classes/{id}/assignments/{id}/submissions/{id}/resources
 
 ```
-## <a name="request-headers"></a><span data-ttu-id="6c843-127">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="6c843-127">Request headers</span></span>
-| <span data-ttu-id="6c843-128">ヘッダー</span><span class="sxs-lookup"><span data-stu-id="6c843-128">Header</span></span>       | <span data-ttu-id="6c843-129">値</span><span class="sxs-lookup"><span data-stu-id="6c843-129">Value</span></span> |
+## <a name="request-headers"></a><span data-ttu-id="db603-127">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="db603-127">Request headers</span></span>
+| <span data-ttu-id="db603-128">ヘッダー</span><span class="sxs-lookup"><span data-stu-id="db603-128">Header</span></span>       | <span data-ttu-id="db603-129">値</span><span class="sxs-lookup"><span data-stu-id="db603-129">Value</span></span> |
 |:---------------|:--------|
-| <span data-ttu-id="6c843-130">Authorization</span><span class="sxs-lookup"><span data-stu-id="6c843-130">Authorization</span></span>  | <span data-ttu-id="6c843-p105">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="6c843-p105">Bearer {token}. Required.</span></span>  |
-| <span data-ttu-id="6c843-133">Content-Type</span><span class="sxs-lookup"><span data-stu-id="6c843-133">Content-Type</span></span>  | <span data-ttu-id="6c843-134">application/json</span><span class="sxs-lookup"><span data-stu-id="6c843-134">application/json</span></span>  |
+| <span data-ttu-id="db603-130">Authorization</span><span class="sxs-lookup"><span data-stu-id="db603-130">Authorization</span></span>  | <span data-ttu-id="db603-p105">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="db603-p105">Bearer {token}. Required.</span></span>  |
+| <span data-ttu-id="db603-133">Content-Type</span><span class="sxs-lookup"><span data-stu-id="db603-133">Content-Type</span></span>  | <span data-ttu-id="db603-134">application/json</span><span class="sxs-lookup"><span data-stu-id="db603-134">application/json</span></span>  |
 
-## <a name="request-body"></a><span data-ttu-id="6c843-135">要求本文</span><span class="sxs-lookup"><span data-stu-id="6c843-135">Request body</span></span>
-<span data-ttu-id="6c843-136">要求の本文には、 [educationSubmissionResource](../resources/educationsubmissionresource.md)オブジェクトの JSON 表現を指定します。</span><span class="sxs-lookup"><span data-stu-id="6c843-136">In the request body, supply a JSON representation of the [educationSubmissionResource](../resources/educationsubmissionresource.md) object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="db603-135">要求本文</span><span class="sxs-lookup"><span data-stu-id="db603-135">Request body</span></span>
+<span data-ttu-id="db603-136">要求の本文には、 [educationSubmissionResource](../resources/educationsubmissionresource.md)オブジェクトの JSON 表現を指定します。</span><span class="sxs-lookup"><span data-stu-id="db603-136">In the request body, supply a JSON representation of the [educationSubmissionResource](../resources/educationsubmissionresource.md) object.</span></span>
 
 
-## <a name="response"></a><span data-ttu-id="6c843-137">応答</span><span class="sxs-lookup"><span data-stu-id="6c843-137">Response</span></span>
-<span data-ttu-id="6c843-138">かどうかは成功すると、このメソッドが返されます、`201 Created`応答コードおよび応答の本文内の[educationSubmissionResource](../resources/educationsubmissionresource.md)オブジェクトです。</span><span class="sxs-lookup"><span data-stu-id="6c843-138">If successful, this method returns a `201 Created` response code and an [educationSubmissionResource](../resources/educationsubmissionresource.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="db603-137">応答</span><span class="sxs-lookup"><span data-stu-id="db603-137">Response</span></span>
+<span data-ttu-id="db603-138">かどうかは成功すると、このメソッドが返されます、`201 Created`応答コードおよび応答の本文内の[educationSubmissionResource](../resources/educationsubmissionresource.md)オブジェクトです。</span><span class="sxs-lookup"><span data-stu-id="db603-138">If successful, this method returns a `201 Created` response code and an [educationSubmissionResource](../resources/educationsubmissionresource.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="6c843-139">例</span><span class="sxs-lookup"><span data-stu-id="6c843-139">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="6c843-140">要求</span><span class="sxs-lookup"><span data-stu-id="6c843-140">Request</span></span>
-<span data-ttu-id="6c843-141">要求の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="6c843-141">The following is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="db603-139">例</span><span class="sxs-lookup"><span data-stu-id="db603-139">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="db603-140">要求</span><span class="sxs-lookup"><span data-stu-id="db603-140">Request</span></span>
+<span data-ttu-id="db603-141">要求の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="db603-141">The following is an example of the request.</span></span>
 <!-- {
   "blockType": "ignored",
   "name": "create_educationsubmissionresource_from_educationsubmission"
@@ -86,10 +87,10 @@ Content-length: 1097
 
 ```
 
-##### <a name="response"></a><span data-ttu-id="6c843-142">応答</span><span class="sxs-lookup"><span data-stu-id="6c843-142">Response</span></span>
-<span data-ttu-id="6c843-143">応答の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="6c843-143">The following is an example of the response.</span></span> 
+##### <a name="response"></a><span data-ttu-id="db603-142">応答</span><span class="sxs-lookup"><span data-stu-id="db603-142">Response</span></span>
+<span data-ttu-id="db603-143">応答の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="db603-143">The following is an example of the response.</span></span> 
 
-><span data-ttu-id="6c843-p106">**注:** 読みやすくするために、ここに示す応答オブジェクトは短くされている場合があります。実際の呼び出しからは、すべてのプロパティが返されます。</span><span class="sxs-lookup"><span data-stu-id="6c843-p106">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+><span data-ttu-id="db603-p106">**注:** 読みやすくするために、ここに示す応答オブジェクトは短くされている場合があります。実際の呼び出しからは、すべてのプロパティが返されます。</span><span class="sxs-lookup"><span data-stu-id="db603-p106">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "ignored",

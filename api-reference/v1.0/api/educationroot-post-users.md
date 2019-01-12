@@ -3,49 +3,50 @@ title: educationUser を作成する
 description: 新しいユーザーを作成します。
 author: mmast-msft
 localization_priority: Normal
-ms.openlocfilehash: b0f8a4d8b40e2e21e3067b8757532df3a71bb10d
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: education
+ms.openlocfilehash: 29785bdc2a3afe8bce1521f7321da53eda66ff0b
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27847154"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27947359"
 ---
-# <a name="create-educationuser"></a><span data-ttu-id="72ff8-103">educationUser を作成する</span><span class="sxs-lookup"><span data-stu-id="72ff8-103">Create educationUser</span></span>
+# <a name="create-educationuser"></a><span data-ttu-id="286d9-103">educationUser を作成する</span><span class="sxs-lookup"><span data-stu-id="286d9-103">Create educationUser</span></span>
 
-<span data-ttu-id="72ff8-104">新しいユーザーを作成します。</span><span class="sxs-lookup"><span data-stu-id="72ff8-104">Create a new user.</span></span>
+<span data-ttu-id="286d9-104">新しいユーザーを作成します。</span><span class="sxs-lookup"><span data-stu-id="286d9-104">Create a new user.</span></span>
 
 <!-- Add some additional text to better distinguish this method from the user_post_users (https://developer.microsoft.com/graph/docs/api-reference/v1.0/api/user_post_users) topic. -->
 
-## <a name="permissions"></a><span data-ttu-id="72ff8-105">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="72ff8-105">Permissions</span></span>
-<span data-ttu-id="72ff8-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="72ff8-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="286d9-105">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="286d9-105">Permissions</span></span>
+<span data-ttu-id="286d9-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="286d9-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="72ff8-108">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="72ff8-108">Permission type</span></span>      | <span data-ttu-id="72ff8-109">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="72ff8-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="286d9-108">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="286d9-108">Permission type</span></span>      | <span data-ttu-id="286d9-109">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="286d9-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="72ff8-110">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="72ff8-110">Delegated (work or school account)</span></span> |  <span data-ttu-id="72ff8-111">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="72ff8-111">Not supported.</span></span>  |
-|<span data-ttu-id="72ff8-112">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="72ff8-112">Delegated (personal Microsoft account)</span></span> |  <span data-ttu-id="72ff8-113">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="72ff8-113">Not supported.</span></span>  |
-|<span data-ttu-id="72ff8-114">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="72ff8-114">Application</span></span> | <span data-ttu-id="72ff8-115">EduRoster.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="72ff8-115">EduRoster.ReadWrite.All</span></span> | 
+|<span data-ttu-id="286d9-110">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="286d9-110">Delegated (work or school account)</span></span> |  <span data-ttu-id="286d9-111">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="286d9-111">Not supported.</span></span>  |
+|<span data-ttu-id="286d9-112">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="286d9-112">Delegated (personal Microsoft account)</span></span> |  <span data-ttu-id="286d9-113">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="286d9-113">Not supported.</span></span>  |
+|<span data-ttu-id="286d9-114">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="286d9-114">Application</span></span> | <span data-ttu-id="286d9-115">EduRoster.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="286d9-115">EduRoster.ReadWrite.All</span></span> | 
 
-## <a name="http-request"></a><span data-ttu-id="72ff8-116">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="72ff8-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="286d9-116">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="286d9-116">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /education/users
 ```
-## <a name="request-headers"></a><span data-ttu-id="72ff8-117">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="72ff8-117">Request headers</span></span>
-| <span data-ttu-id="72ff8-118">ヘッダー</span><span class="sxs-lookup"><span data-stu-id="72ff8-118">Header</span></span>       | <span data-ttu-id="72ff8-119">値</span><span class="sxs-lookup"><span data-stu-id="72ff8-119">Value</span></span> |
+## <a name="request-headers"></a><span data-ttu-id="286d9-117">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="286d9-117">Request headers</span></span>
+| <span data-ttu-id="286d9-118">ヘッダー</span><span class="sxs-lookup"><span data-stu-id="286d9-118">Header</span></span>       | <span data-ttu-id="286d9-119">値</span><span class="sxs-lookup"><span data-stu-id="286d9-119">Value</span></span> |
 |:---------------|:--------|
-| <span data-ttu-id="72ff8-120">Authorization</span><span class="sxs-lookup"><span data-stu-id="72ff8-120">Authorization</span></span>  | <span data-ttu-id="72ff8-p102">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="72ff8-p102">Bearer {token}. Required.</span></span>  |
-| <span data-ttu-id="72ff8-123">Content-Type</span><span class="sxs-lookup"><span data-stu-id="72ff8-123">Content-Type</span></span>  | <span data-ttu-id="72ff8-124">application/json</span><span class="sxs-lookup"><span data-stu-id="72ff8-124">application/json</span></span>  |
+| <span data-ttu-id="286d9-120">Authorization</span><span class="sxs-lookup"><span data-stu-id="286d9-120">Authorization</span></span>  | <span data-ttu-id="286d9-p102">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="286d9-p102">Bearer {token}. Required.</span></span>  |
+| <span data-ttu-id="286d9-123">Content-Type</span><span class="sxs-lookup"><span data-stu-id="286d9-123">Content-Type</span></span>  | <span data-ttu-id="286d9-124">application/json</span><span class="sxs-lookup"><span data-stu-id="286d9-124">application/json</span></span>  |
 
-## <a name="request-body"></a><span data-ttu-id="72ff8-125">要求本文</span><span class="sxs-lookup"><span data-stu-id="72ff8-125">Request body</span></span>
-<span data-ttu-id="72ff8-126">要求本文で、[educationUser](../resources/educationuser.md) オブジェクトの JSON 表記を指定します。</span><span class="sxs-lookup"><span data-stu-id="72ff8-126">In the request body, supply a JSON representation of an [educationUser](../resources/educationuser.md) object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="286d9-125">要求本文</span><span class="sxs-lookup"><span data-stu-id="286d9-125">Request body</span></span>
+<span data-ttu-id="286d9-126">要求本文で、[educationUser](../resources/educationuser.md) オブジェクトの JSON 表記を指定します。</span><span class="sxs-lookup"><span data-stu-id="286d9-126">In the request body, supply a JSON representation of an [educationUser](../resources/educationuser.md) object.</span></span>
 
 
-## <a name="response"></a><span data-ttu-id="72ff8-127">応答</span><span class="sxs-lookup"><span data-stu-id="72ff8-127">Response</span></span>
-<span data-ttu-id="72ff8-128">成功した場合、このメソッドは `201 Created` 応答コードと、応答本文で [educationUser](../resources/educationuser.md) オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="72ff8-128">If successful, this method returns a `201 Created` response code and an [educationUser](../resources/educationuser.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="286d9-127">応答</span><span class="sxs-lookup"><span data-stu-id="286d9-127">Response</span></span>
+<span data-ttu-id="286d9-128">成功した場合、このメソッドは `201 Created` 応答コードと、応答本文で [educationUser](../resources/educationuser.md) オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="286d9-128">If successful, this method returns a `201 Created` response code and an [educationUser](../resources/educationuser.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="72ff8-129">例</span><span class="sxs-lookup"><span data-stu-id="72ff8-129">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="72ff8-130">要求</span><span class="sxs-lookup"><span data-stu-id="72ff8-130">Request</span></span>
-<span data-ttu-id="72ff8-131">要求の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="72ff8-131">The following is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="286d9-129">例</span><span class="sxs-lookup"><span data-stu-id="286d9-129">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="286d9-130">要求</span><span class="sxs-lookup"><span data-stu-id="286d9-130">Request</span></span>
+<span data-ttu-id="286d9-131">要求の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="286d9-131">The following is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "create_educationuser_from_educationroot"
@@ -87,10 +88,10 @@ Content-length: 508
 }
 ```
 
-##### <a name="response"></a><span data-ttu-id="72ff8-132">応答</span><span class="sxs-lookup"><span data-stu-id="72ff8-132">Response</span></span>
-<span data-ttu-id="72ff8-133">応答の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="72ff8-133">The following is an example of the response.</span></span> 
+##### <a name="response"></a><span data-ttu-id="286d9-132">応答</span><span class="sxs-lookup"><span data-stu-id="286d9-132">Response</span></span>
+<span data-ttu-id="286d9-133">応答の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="286d9-133">The following is an example of the response.</span></span> 
 
-><span data-ttu-id="72ff8-p103">**注:** 読みやすくするために、ここに示す応答オブジェクトは短くされている場合があります。実際の呼び出しからは、すべてのプロパティが返されます。</span><span class="sxs-lookup"><span data-stu-id="72ff8-p103">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+><span data-ttu-id="286d9-p103">**注:** 読みやすくするために、ここに示す応答オブジェクトは短くされている場合があります。実際の呼び出しからは、すべてのプロパティが返されます。</span><span class="sxs-lookup"><span data-stu-id="286d9-p103">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",

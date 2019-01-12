@@ -2,26 +2,28 @@
 title: 範囲:セル
 description: 行と列の番号に基づいて、1 つのセルを含んだ範囲オブジェクトを取得します。以外このセルは、ワークシートのグリッド内であれば、親の範囲の境界の外のセルであってもかまいません。返されるセルは、範囲の左上のセルを基準に配置されます。
 localization_priority: Normal
-ms.openlocfilehash: 3d72f78b6767dffe52e42ae210c24b9d96cc87d1
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: lumine2008
+ms.prod: excel
+ms.openlocfilehash: a46f0e43a9eb1099c2df615b88f15576afa30e9c
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27862980"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27951482"
 ---
-# <a name="range-cell"></a><span data-ttu-id="4760e-105">範囲:セル</span><span class="sxs-lookup"><span data-stu-id="4760e-105">Range: Cell</span></span>
+# <a name="range-cell"></a><span data-ttu-id="e9729-105">範囲:セル</span><span class="sxs-lookup"><span data-stu-id="e9729-105">Range: Cell</span></span>
 
-<span data-ttu-id="4760e-p102">行と列の番号に基づいて、1 つのセルを含んだ範囲オブジェクトを取得します。以外このセルは、ワークシートのグリッド内であれば、親の範囲の境界の外のセルであってもかまいません。返されるセルは、範囲の左上のセルを基準に配置されます。</span><span class="sxs-lookup"><span data-stu-id="4760e-p102">Gets the range object containing the single cell based on row and column numbers. The cell can be outside the bounds of its parent range, so long as it's stays within the worksheet grid. The returned cell is located relative to the top left cell of the range.</span></span>
-## <a name="permissions"></a><span data-ttu-id="4760e-109">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="4760e-109">Permissions</span></span>
-<span data-ttu-id="4760e-p103">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="4760e-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="e9729-p102">行と列の番号に基づいて、1 つのセルを含んだ範囲オブジェクトを取得します。以外このセルは、ワークシートのグリッド内であれば、親の範囲の境界の外のセルであってもかまいません。返されるセルは、範囲の左上のセルを基準に配置されます。</span><span class="sxs-lookup"><span data-stu-id="e9729-p102">Gets the range object containing the single cell based on row and column numbers. The cell can be outside the bounds of its parent range, so long as it's stays within the worksheet grid. The returned cell is located relative to the top left cell of the range.</span></span>
+## <a name="permissions"></a><span data-ttu-id="e9729-109">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="e9729-109">Permissions</span></span>
+<span data-ttu-id="e9729-p103">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="e9729-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="4760e-112">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="4760e-112">Permission type</span></span>      | <span data-ttu-id="4760e-113">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="4760e-113">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="e9729-112">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="e9729-112">Permission type</span></span>      | <span data-ttu-id="e9729-113">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="e9729-113">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="4760e-114">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="4760e-114">Delegated (work or school account)</span></span> | <span data-ttu-id="4760e-115">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="4760e-115">Files.ReadWrite</span></span>    |
-|<span data-ttu-id="4760e-116">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="4760e-116">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="4760e-117">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="4760e-117">Not supported.</span></span>    |
-|<span data-ttu-id="4760e-118">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="4760e-118">Application</span></span> | <span data-ttu-id="4760e-119">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="4760e-119">Not supported.</span></span> |
+|<span data-ttu-id="e9729-114">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="e9729-114">Delegated (work or school account)</span></span> | <span data-ttu-id="e9729-115">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="e9729-115">Files.ReadWrite</span></span>    |
+|<span data-ttu-id="e9729-116">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="e9729-116">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="e9729-117">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="e9729-117">Not supported.</span></span>    |
+|<span data-ttu-id="e9729-118">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="e9729-118">Application</span></span> | <span data-ttu-id="e9729-119">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="e9729-119">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="4760e-120">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="4760e-120">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="e9729-120">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="e9729-120">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /workbook/names/{name}/range/cell
@@ -29,28 +31,28 @@ GET /workbook/worksheets/{id|name}/range(address='<address>')/cell
 GET /workbook/tables/{id|name}/columns/{id|name}/range/cell
 
 ```
-## <a name="request-headers"></a><span data-ttu-id="4760e-121">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="4760e-121">Request headers</span></span>
-| <span data-ttu-id="4760e-122">名前</span><span class="sxs-lookup"><span data-stu-id="4760e-122">Name</span></span>       | <span data-ttu-id="4760e-123">説明</span><span class="sxs-lookup"><span data-stu-id="4760e-123">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="e9729-121">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="e9729-121">Request headers</span></span>
+| <span data-ttu-id="e9729-122">名前</span><span class="sxs-lookup"><span data-stu-id="e9729-122">Name</span></span>       | <span data-ttu-id="e9729-123">説明</span><span class="sxs-lookup"><span data-stu-id="e9729-123">Description</span></span>|
 |:---------------|:----------|
-| <span data-ttu-id="4760e-124">Authorization</span><span class="sxs-lookup"><span data-stu-id="4760e-124">Authorization</span></span>  | <span data-ttu-id="4760e-p104">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="4760e-p104">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="4760e-127">Workbook-Session-Id</span><span class="sxs-lookup"><span data-stu-id="4760e-127">Workbook-Session-Id</span></span>  | <span data-ttu-id="4760e-p105">変更を保持するかどうかを決定するブック セッション ID。省略可能。</span><span class="sxs-lookup"><span data-stu-id="4760e-p105">Workbook session Id that determines if changes are persisted or not. Optional.</span></span>|
+| <span data-ttu-id="e9729-124">Authorization</span><span class="sxs-lookup"><span data-stu-id="e9729-124">Authorization</span></span>  | <span data-ttu-id="e9729-p104">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="e9729-p104">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="e9729-127">Workbook-Session-Id</span><span class="sxs-lookup"><span data-stu-id="e9729-127">Workbook-Session-Id</span></span>  | <span data-ttu-id="e9729-p105">変更を保持するかどうかを決定するブック セッション ID。省略可能。</span><span class="sxs-lookup"><span data-stu-id="e9729-p105">Workbook session Id that determines if changes are persisted or not. Optional.</span></span>|
 
-## <a name="path-parameters"></a><span data-ttu-id="4760e-130">パス パラメーター</span><span class="sxs-lookup"><span data-stu-id="4760e-130">Path parameters</span></span>
-<span data-ttu-id="4760e-131">パスでは、次のパラメーターを提供します。</span><span class="sxs-lookup"><span data-stu-id="4760e-131">In the path, provide the following parameters.</span></span>
+## <a name="path-parameters"></a><span data-ttu-id="e9729-130">パス パラメーター</span><span class="sxs-lookup"><span data-stu-id="e9729-130">Path parameters</span></span>
+<span data-ttu-id="e9729-131">パスでは、次のパラメーターを提供します。</span><span class="sxs-lookup"><span data-stu-id="e9729-131">In the path, provide the following parameters.</span></span>
 
-| <span data-ttu-id="4760e-132">Parameter</span><span class="sxs-lookup"><span data-stu-id="4760e-132">Parameter</span></span>    | <span data-ttu-id="4760e-133">Type</span><span class="sxs-lookup"><span data-stu-id="4760e-133">Type</span></span>   |<span data-ttu-id="4760e-134">説明</span><span class="sxs-lookup"><span data-stu-id="4760e-134">Description</span></span>|
+| <span data-ttu-id="e9729-132">パラメーター</span><span class="sxs-lookup"><span data-stu-id="e9729-132">Parameter</span></span>    | <span data-ttu-id="e9729-133">Type</span><span class="sxs-lookup"><span data-stu-id="e9729-133">Type</span></span>   |<span data-ttu-id="e9729-134">説明</span><span class="sxs-lookup"><span data-stu-id="e9729-134">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="4760e-135">row</span><span class="sxs-lookup"><span data-stu-id="4760e-135">row</span></span>|<span data-ttu-id="4760e-136">Int32</span><span class="sxs-lookup"><span data-stu-id="4760e-136">Int32</span></span>|<span data-ttu-id="4760e-p106">取得するセルの行番号。0 を起点とする番号になります。</span><span class="sxs-lookup"><span data-stu-id="4760e-p106">Row number of the cell to be retrieved. Zero-indexed.</span></span>|
-|<span data-ttu-id="4760e-139">列</span><span class="sxs-lookup"><span data-stu-id="4760e-139">column</span></span>|<span data-ttu-id="4760e-140">Int32</span><span class="sxs-lookup"><span data-stu-id="4760e-140">Int32</span></span>|<span data-ttu-id="4760e-p107">取得セルの列番号。0 を起点とする番号になります。</span><span class="sxs-lookup"><span data-stu-id="4760e-p107">Column number of the cell to be retrieved. Zero-indexed.</span></span>|
+|<span data-ttu-id="e9729-135">row</span><span class="sxs-lookup"><span data-stu-id="e9729-135">row</span></span>|<span data-ttu-id="e9729-136">Int32</span><span class="sxs-lookup"><span data-stu-id="e9729-136">Int32</span></span>|<span data-ttu-id="e9729-p106">取得するセルの行番号。0 を起点とする番号になります。</span><span class="sxs-lookup"><span data-stu-id="e9729-p106">Row number of the cell to be retrieved. Zero-indexed.</span></span>|
+|<span data-ttu-id="e9729-139">列</span><span class="sxs-lookup"><span data-stu-id="e9729-139">column</span></span>|<span data-ttu-id="e9729-140">Int32</span><span class="sxs-lookup"><span data-stu-id="e9729-140">Int32</span></span>|<span data-ttu-id="e9729-p107">取得セルの列番号。0 を起点とする番号になります。</span><span class="sxs-lookup"><span data-stu-id="e9729-p107">Column number of the cell to be retrieved. Zero-indexed.</span></span>|
 
-## <a name="response"></a><span data-ttu-id="4760e-143">応答</span><span class="sxs-lookup"><span data-stu-id="4760e-143">Response</span></span>
+## <a name="response"></a><span data-ttu-id="e9729-143">応答</span><span class="sxs-lookup"><span data-stu-id="e9729-143">Response</span></span>
 
-<span data-ttu-id="4760e-144">成功した場合、このメソッドは `200 OK` 応答コードと、応答本文で [Range](../resources/range.md) オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="4760e-144">If successful, this method returns `200 OK` response code and [Range](../resources/range.md) object in the response body.</span></span>
+<span data-ttu-id="e9729-144">成功した場合、このメソッドは `200 OK` 応答コードと、応答本文で [Range](../resources/range.md) オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="e9729-144">If successful, this method returns `200 OK` response code and [Range](../resources/range.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="4760e-145">例</span><span class="sxs-lookup"><span data-stu-id="4760e-145">Example</span></span>
-<span data-ttu-id="4760e-146">以下は、この API を呼び出す方法の例です。</span><span class="sxs-lookup"><span data-stu-id="4760e-146">Here is an example of how to call this API.</span></span>
-##### <a name="request"></a><span data-ttu-id="4760e-147">要求</span><span class="sxs-lookup"><span data-stu-id="4760e-147">Request</span></span>
-<span data-ttu-id="4760e-148">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="4760e-148">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="e9729-145">例</span><span class="sxs-lookup"><span data-stu-id="e9729-145">Example</span></span>
+<span data-ttu-id="e9729-146">以下は、この API を呼び出す方法の例です。</span><span class="sxs-lookup"><span data-stu-id="e9729-146">Here is an example of how to call this API.</span></span>
+##### <a name="request"></a><span data-ttu-id="e9729-147">要求</span><span class="sxs-lookup"><span data-stu-id="e9729-147">Request</span></span>
+<span data-ttu-id="e9729-148">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="e9729-148">Here is an example of the request.</span></span>
 <!--{
   "blockType": "request",
   "isComposable": true,
@@ -60,8 +62,8 @@ GET /workbook/tables/{id|name}/columns/{id|name}/range/cell
 GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/names/{name}/range/cell(row=5,column=6)
 ```
 
-##### <a name="response"></a><span data-ttu-id="4760e-149">応答</span><span class="sxs-lookup"><span data-stu-id="4760e-149">Response</span></span>
-<span data-ttu-id="4760e-p108">以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。</span><span class="sxs-lookup"><span data-stu-id="4760e-p108">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="e9729-149">応答</span><span class="sxs-lookup"><span data-stu-id="e9729-149">Response</span></span>
+<span data-ttu-id="e9729-p108">以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。</span><span class="sxs-lookup"><span data-stu-id="e9729-p108">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
