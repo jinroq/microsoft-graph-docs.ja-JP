@@ -3,28 +3,29 @@ title: 'RangeSort: 適用'
 description: 並べ替え操作を実行します。
 author: lumine2008
 localization_priority: Normal
-ms.openlocfilehash: 563e12db5716bbc49072043578e2412b6079df03
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: excel
+ms.openlocfilehash: 66006bafdc26ecca85dda3dc0eb0999a387dddc5
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27850912"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27968366"
 ---
-# <a name="rangesort-apply"></a><span data-ttu-id="62e88-103">RangeSort: 適用</span><span class="sxs-lookup"><span data-stu-id="62e88-103">RangeSort: apply</span></span>
+# <a name="rangesort-apply"></a><span data-ttu-id="9d567-103">RangeSort: 適用</span><span class="sxs-lookup"><span data-stu-id="9d567-103">RangeSort: apply</span></span>
 
-> <span data-ttu-id="62e88-104">**重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。</span><span class="sxs-lookup"><span data-stu-id="62e88-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="62e88-105">実稼働アプリケーションでの、これらの API の使用はサポートされていません。</span><span class="sxs-lookup"><span data-stu-id="62e88-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="9d567-104">**重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。</span><span class="sxs-lookup"><span data-stu-id="9d567-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="9d567-105">実稼働アプリケーションでの、これらの API の使用はサポートされていません。</span><span class="sxs-lookup"><span data-stu-id="9d567-105">Use of these APIs in production applications is not supported.</span></span>
 
-<span data-ttu-id="62e88-106">並べ替え操作を実行します。</span><span class="sxs-lookup"><span data-stu-id="62e88-106">Perform a sort operation.</span></span>
-## <a name="permissions"></a><span data-ttu-id="62e88-107">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="62e88-107">Permissions</span></span>
-<span data-ttu-id="62e88-p102">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="62e88-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="9d567-106">並べ替え操作を実行します。</span><span class="sxs-lookup"><span data-stu-id="9d567-106">Perform a sort operation.</span></span>
+## <a name="permissions"></a><span data-ttu-id="9d567-107">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="9d567-107">Permissions</span></span>
+<span data-ttu-id="9d567-p102">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="9d567-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="62e88-110">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="62e88-110">Permission type</span></span>      | <span data-ttu-id="62e88-111">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="62e88-111">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="9d567-110">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="9d567-110">Permission type</span></span>      | <span data-ttu-id="9d567-111">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="9d567-111">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="62e88-112">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="62e88-112">Delegated (work or school account)</span></span> | <span data-ttu-id="62e88-113">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="62e88-113">Files.ReadWrite</span></span>    |
-|<span data-ttu-id="62e88-114">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="62e88-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="62e88-115">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="62e88-115">Files.ReadWrite</span></span>    |
-|<span data-ttu-id="62e88-116">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="62e88-116">Application</span></span> | <span data-ttu-id="62e88-117">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="62e88-117">Not supported.</span></span> |
+|<span data-ttu-id="9d567-112">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="9d567-112">Delegated (work or school account)</span></span> | <span data-ttu-id="9d567-113">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="9d567-113">Files.ReadWrite</span></span>    |
+|<span data-ttu-id="9d567-114">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="9d567-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="9d567-115">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="9d567-115">Files.ReadWrite</span></span>    |
+|<span data-ttu-id="9d567-116">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="9d567-116">Application</span></span> | <span data-ttu-id="9d567-117">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="9d567-117">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="62e88-118">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="62e88-118">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="9d567-118">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="9d567-118">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /workbook/names(<name>)/range/sort/apply
@@ -32,31 +33,31 @@ POST /workbook/worksheets/{id|name}/range(address='<address>')/sort/apply
 POST /workbook/tables/{id|name}/columns/{id|name}/range/sort/apply
 
 ```
-## <a name="request-headers"></a><span data-ttu-id="62e88-119">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="62e88-119">Request headers</span></span>
-| <span data-ttu-id="62e88-120">名前</span><span class="sxs-lookup"><span data-stu-id="62e88-120">Name</span></span>       | <span data-ttu-id="62e88-121">説明</span><span class="sxs-lookup"><span data-stu-id="62e88-121">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="9d567-119">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="9d567-119">Request headers</span></span>
+| <span data-ttu-id="9d567-120">名前</span><span class="sxs-lookup"><span data-stu-id="9d567-120">Name</span></span>       | <span data-ttu-id="9d567-121">説明</span><span class="sxs-lookup"><span data-stu-id="9d567-121">Description</span></span>|
 |:---------------|:----------|
-| <span data-ttu-id="62e88-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="62e88-122">Authorization</span></span>  | <span data-ttu-id="62e88-p103">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="62e88-p103">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="62e88-125">Workbook-Session-Id</span><span class="sxs-lookup"><span data-stu-id="62e88-125">Workbook-Session-Id</span></span>  | <span data-ttu-id="62e88-p104">変更を保持するかどうかを決定するブック セッション ID。省略可能。</span><span class="sxs-lookup"><span data-stu-id="62e88-p104">Workbook session Id that determines if changes are persisted or not. Optional.</span></span>|
+| <span data-ttu-id="9d567-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="9d567-122">Authorization</span></span>  | <span data-ttu-id="9d567-p103">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="9d567-p103">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="9d567-125">Workbook-Session-Id</span><span class="sxs-lookup"><span data-stu-id="9d567-125">Workbook-Session-Id</span></span>  | <span data-ttu-id="9d567-p104">変更を保持するかどうかを決定するブック セッション ID。省略可能。</span><span class="sxs-lookup"><span data-stu-id="9d567-p104">Workbook session Id that determines if changes are persisted or not. Optional.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="62e88-128">要求本文</span><span class="sxs-lookup"><span data-stu-id="62e88-128">Request body</span></span>
-<span data-ttu-id="62e88-129">要求本文で、次のパラメーターを含む JSON オブジェクトを指定します。</span><span class="sxs-lookup"><span data-stu-id="62e88-129">In the request body, provide a JSON object with the following parameters.</span></span>
+## <a name="request-body"></a><span data-ttu-id="9d567-128">要求本文</span><span class="sxs-lookup"><span data-stu-id="9d567-128">Request body</span></span>
+<span data-ttu-id="9d567-129">要求本文で、次のパラメーターを含む JSON オブジェクトを指定します。</span><span class="sxs-lookup"><span data-stu-id="9d567-129">In the request body, provide a JSON object with the following parameters.</span></span>
 
-| <span data-ttu-id="62e88-130">パラメーター</span><span class="sxs-lookup"><span data-stu-id="62e88-130">Parameter</span></span>    | <span data-ttu-id="62e88-131">Type</span><span class="sxs-lookup"><span data-stu-id="62e88-131">Type</span></span>   |<span data-ttu-id="62e88-132">説明</span><span class="sxs-lookup"><span data-stu-id="62e88-132">Description</span></span>|
+| <span data-ttu-id="9d567-130">パラメーター</span><span class="sxs-lookup"><span data-stu-id="9d567-130">Parameter</span></span>    | <span data-ttu-id="9d567-131">Type</span><span class="sxs-lookup"><span data-stu-id="9d567-131">Type</span></span>   |<span data-ttu-id="9d567-132">説明</span><span class="sxs-lookup"><span data-stu-id="9d567-132">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="62e88-133">fields</span><span class="sxs-lookup"><span data-stu-id="62e88-133">fields</span></span>|<span data-ttu-id="62e88-134">SortField</span><span class="sxs-lookup"><span data-stu-id="62e88-134">SortField</span></span>|<span data-ttu-id="62e88-135">並べ替えに使用する条件の一覧。</span><span class="sxs-lookup"><span data-stu-id="62e88-135">The list of conditions to sort on.</span></span>|
-|<span data-ttu-id="62e88-136">matchCase</span><span class="sxs-lookup"><span data-stu-id="62e88-136">matchCase</span></span>|<span data-ttu-id="62e88-137">ブール値</span><span class="sxs-lookup"><span data-stu-id="62e88-137">boolean</span></span>|<span data-ttu-id="62e88-p105">省略可能。大文字小文字の区別が文字列の順序に影響を与えるかどうか。</span><span class="sxs-lookup"><span data-stu-id="62e88-p105">Optional. Whether to have the casing impact string ordering.</span></span>|
-|<span data-ttu-id="62e88-140">hasHeaders</span><span class="sxs-lookup"><span data-stu-id="62e88-140">hasHeaders</span></span>|<span data-ttu-id="62e88-141">ブール値</span><span class="sxs-lookup"><span data-stu-id="62e88-141">boolean</span></span>|<span data-ttu-id="62e88-p106">省略可能。範囲にヘッダーがあるかどうか。</span><span class="sxs-lookup"><span data-stu-id="62e88-p106">Optional. Whether the range has a header.</span></span>|
-|<span data-ttu-id="62e88-144">orientation</span><span class="sxs-lookup"><span data-stu-id="62e88-144">orientation</span></span>|<span data-ttu-id="62e88-145">文字列</span><span class="sxs-lookup"><span data-stu-id="62e88-145">string</span></span>|<span data-ttu-id="62e88-p107">省略可能。操作が行と列のどちらの並べ替えかを示します。可能な値は、`Rows`、`Columns` です。</span><span class="sxs-lookup"><span data-stu-id="62e88-p107">Optional. Whether the operation is sorting rows or columns.  Possible values are: `Rows`, `Columns`.</span></span>|
-|<span data-ttu-id="62e88-149">method</span><span class="sxs-lookup"><span data-stu-id="62e88-149">method</span></span>|<span data-ttu-id="62e88-150">文字列</span><span class="sxs-lookup"><span data-stu-id="62e88-150">string</span></span>|<span data-ttu-id="62e88-p108">省略可能。中国語文字に使用される順序付けの方法です。可能な値は、`PinYin`、`StrokeCount` です。</span><span class="sxs-lookup"><span data-stu-id="62e88-p108">Optional. The ordering method used for Chinese characters.  Possible values are: `PinYin`, `StrokeCount`.</span></span>|
+|<span data-ttu-id="9d567-133">fields</span><span class="sxs-lookup"><span data-stu-id="9d567-133">fields</span></span>|<span data-ttu-id="9d567-134">SortField</span><span class="sxs-lookup"><span data-stu-id="9d567-134">SortField</span></span>|<span data-ttu-id="9d567-135">並べ替えに使用する条件の一覧。</span><span class="sxs-lookup"><span data-stu-id="9d567-135">The list of conditions to sort on.</span></span>|
+|<span data-ttu-id="9d567-136">matchCase</span><span class="sxs-lookup"><span data-stu-id="9d567-136">matchCase</span></span>|<span data-ttu-id="9d567-137">ブール値</span><span class="sxs-lookup"><span data-stu-id="9d567-137">boolean</span></span>|<span data-ttu-id="9d567-p105">省略可能。大文字小文字の区別が文字列の順序に影響を与えるかどうか。</span><span class="sxs-lookup"><span data-stu-id="9d567-p105">Optional. Whether to have the casing impact string ordering.</span></span>|
+|<span data-ttu-id="9d567-140">hasHeaders</span><span class="sxs-lookup"><span data-stu-id="9d567-140">hasHeaders</span></span>|<span data-ttu-id="9d567-141">ブール値</span><span class="sxs-lookup"><span data-stu-id="9d567-141">boolean</span></span>|<span data-ttu-id="9d567-p106">省略可能。範囲にヘッダーがあるかどうか。</span><span class="sxs-lookup"><span data-stu-id="9d567-p106">Optional. Whether the range has a header.</span></span>|
+|<span data-ttu-id="9d567-144">orientation</span><span class="sxs-lookup"><span data-stu-id="9d567-144">orientation</span></span>|<span data-ttu-id="9d567-145">文字列</span><span class="sxs-lookup"><span data-stu-id="9d567-145">string</span></span>|<span data-ttu-id="9d567-p107">省略可能。操作が行と列のどちらの並べ替えかを示します。可能な値は、`Rows`、`Columns` です。</span><span class="sxs-lookup"><span data-stu-id="9d567-p107">Optional. Whether the operation is sorting rows or columns.  Possible values are: `Rows`, `Columns`.</span></span>|
+|<span data-ttu-id="9d567-149">method</span><span class="sxs-lookup"><span data-stu-id="9d567-149">method</span></span>|<span data-ttu-id="9d567-150">文字列</span><span class="sxs-lookup"><span data-stu-id="9d567-150">string</span></span>|<span data-ttu-id="9d567-p108">省略可能。中国語文字に使用される順序付けの方法です。可能な値は、`PinYin`、`StrokeCount` です。</span><span class="sxs-lookup"><span data-stu-id="9d567-p108">Optional. The ordering method used for Chinese characters.  Possible values are: `PinYin`, `StrokeCount`.</span></span>|
 
-## <a name="response"></a><span data-ttu-id="62e88-154">応答</span><span class="sxs-lookup"><span data-stu-id="62e88-154">Response</span></span>
+## <a name="response"></a><span data-ttu-id="9d567-154">応答</span><span class="sxs-lookup"><span data-stu-id="9d567-154">Response</span></span>
 
-<span data-ttu-id="62e88-p109">成功した場合、このメソッドは `200 OK` 応答コードを返します。応答本文には何も返されません。</span><span class="sxs-lookup"><span data-stu-id="62e88-p109">If successful, this method returns `200 OK` response code. It does not return anything in the response body.</span></span>
+<span data-ttu-id="9d567-p109">成功した場合、このメソッドは `200 OK` 応答コードを返します。応答本文には何も返されません。</span><span class="sxs-lookup"><span data-stu-id="9d567-p109">If successful, this method returns `200 OK` response code. It does not return anything in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="62e88-157">例</span><span class="sxs-lookup"><span data-stu-id="62e88-157">Example</span></span>
-<span data-ttu-id="62e88-158">以下は、この API を呼び出す方法の例です。</span><span class="sxs-lookup"><span data-stu-id="62e88-158">Here is an example of how to call this API.</span></span>
-##### <a name="request"></a><span data-ttu-id="62e88-159">要求</span><span class="sxs-lookup"><span data-stu-id="62e88-159">Request</span></span>
-<span data-ttu-id="62e88-160">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="62e88-160">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="9d567-157">例</span><span class="sxs-lookup"><span data-stu-id="9d567-157">Example</span></span>
+<span data-ttu-id="9d567-158">以下は、この API を呼び出す方法の例です。</span><span class="sxs-lookup"><span data-stu-id="9d567-158">Here is an example of how to call this API.</span></span>
+##### <a name="request"></a><span data-ttu-id="9d567-159">要求</span><span class="sxs-lookup"><span data-stu-id="9d567-159">Request</span></span>
+<span data-ttu-id="9d567-160">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="9d567-160">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "rangesort_apply"
@@ -87,8 +88,8 @@ Content-length: 358
 }
 ```
 
-##### <a name="response"></a><span data-ttu-id="62e88-161">応答</span><span class="sxs-lookup"><span data-stu-id="62e88-161">Response</span></span>
-<span data-ttu-id="62e88-162">以下は、応答の例です。</span><span class="sxs-lookup"><span data-stu-id="62e88-162">Here is an example of the response.</span></span> 
+##### <a name="response"></a><span data-ttu-id="9d567-161">応答</span><span class="sxs-lookup"><span data-stu-id="9d567-161">Response</span></span>
+<span data-ttu-id="9d567-162">以下は、応答の例です。</span><span class="sxs-lookup"><span data-stu-id="9d567-162">Here is an example of the response.</span></span> 
 <!-- {
   "blockType": "response",
   "truncated": true,
