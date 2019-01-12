@@ -2,12 +2,13 @@
 title: ユーザーに対する増分の変更を取得する
 description: デルタ クエリでは、一連のデルタ関数呼び出しを使用して、ユーザーへの追加、削除、または更新に対してクエリを実行できます。デルタ クエリを使用すると、Microsoft Graph からユーザーのセット全体をフェッチして、変更を比較せずに、ユーザーへの変更を検出できます。
 author: piotrci
-ms.openlocfilehash: 7e00ea6b305cad379b618c4a3410bf832c29a298
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Priority
+ms.openlocfilehash: b4f79951f79393e22c40ef9a4f55e29e0145ccea
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27346474"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27850478"
 ---
 # <a name="get-incremental-changes-for-users"></a>ユーザーに対する増分の変更を取得する
 

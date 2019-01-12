@@ -2,12 +2,13 @@
 title: 'カレンダー ビューのイベントへの増分の変更を取得する '
 description: 'カレンダー ビューは、既定のカレンダー (../me/calendarview) からの日付/時刻範囲内にあるイベントのコレクションです。 '
 author: piotrci
-ms.openlocfilehash: adfc8e8fb595e721781901f80c7d730b06112b72
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Priority
+ms.openlocfilehash: ba5f2726cf6fe27024bfa29bf75dd82075c6fa29
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27334840"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27830717"
 ---
 # <a name="get-incremental-changes-to-events-in-a-calendar-view"></a>カレンダー ビューのイベントへの増分の変更を取得する 
 

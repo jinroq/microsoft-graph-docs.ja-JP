@@ -3,12 +3,13 @@ title: getAssignedRoleIdsForLoggedInUser 関数
 description: 現在認証されているユーザーのロールの割り当てと割り当てられているロールの定義を取得します。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 532438aa67afff2a0f215ec951e9d3eaa933b80b
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: b74991cfa2bd7a099adfd333129c16c796c5f9bd
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27806693"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27924630"
 ---
 # <a name="getassignedroleidsforloggedinuser-function"></a>getAssignedRoleIdsForLoggedInUser 関数
 

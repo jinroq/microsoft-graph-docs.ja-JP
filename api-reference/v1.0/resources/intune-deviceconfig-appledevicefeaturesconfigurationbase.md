@@ -3,12 +3,13 @@ title: appleDeviceFeaturesConfigurationBase リソースの種類
 description: Apple デバイス機能構成のプロファイル。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 3fdbdd9990a11f8f6c6087bf1c583abb72255957
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 261dbbfc124c050b818c390765e40a4d3790a7a5
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27860593"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27927031"
 ---
 # <a name="appledevicefeaturesconfigurationbase-resource-type"></a>appleDeviceFeaturesConfigurationBase リソースの種類
 

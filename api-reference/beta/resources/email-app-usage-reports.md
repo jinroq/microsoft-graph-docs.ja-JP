@@ -2,12 +2,14 @@
 title: メール アプリ使用状況レポート
 description: 電子メール アプリケーションの数を使用して Exchange Online に接続を確認できます。 また、サポート対象の Outlook バージョンにアップグレードする必要のあるユーザーをフォローアップするために、どの Outlook アプリのバージョンが使用されているかも確認できます。
 localization_priority: Normal
-ms.openlocfilehash: 019f510901cdf508e8373dc1f2dffb9090961ed1
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: angelgolfer-ms
+ms.prod: reports
+ms.openlocfilehash: 6a75b494705c56e63d4b7d5b2f58d76de64b9bce
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27843016"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27912919"
 ---
 # <a name="email-app-usage-reports"></a>メール アプリ使用状況レポート
 

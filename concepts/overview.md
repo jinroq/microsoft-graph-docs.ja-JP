@@ -2,12 +2,13 @@
 title: Microsoft Graph の概要
 description: Microsoft Graph は、Microsoft 365 のデータとインテリジェンスにアクセスするための入り口です。 Microsoft Graph は、Office 365、Enterprise Mobility + Security、および Windows 10 の大量のデータを活用するために使用できる統合型プログラミング モデルを提供します。
 author: jthake-msft
-ms.openlocfilehash: 754580e0f5a6af628a2bf18c11a0a20d3c2d1329
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Priority
+ms.openlocfilehash: d4cb238090abd5b8b78f5589b36db75ef090506f
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27349043"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27879913"
 ---
 # <a name="overview-of-microsoft-graph"></a>Microsoft Graph の概要
 
@@ -46,8 +47,7 @@ Microsoft Graph を使用すると、ユーザーの固有のコンテキスト�
 
 Microsoft Graph API を使用すると、これ以上のことができます。
 
->
-  **注:** Microsoft Graph API を使用する場合、「[Microsoft Graph 使用条件](https://developer.microsoft.com/graph/docs/misc/terms-of-use)」と「[Microsoft のプライバシーに関する声明](https://go.microsoft.com/fwlink/?LinkId=521839)」に同意することになります。
+>**注:** Microsoft Graph API を使用する場合、「[Microsoft Graph 使用条件](https://developer.microsoft.com/graph/docs/misc/terms-of-use)」と「[Microsoft のプライバシーに関する声明](https://go.microsoft.com/fwlink/?LinkId=521839)」に同意することになります。
 
 ### <a name="popular-requests"></a>一般的な要求
 
@@ -98,12 +98,9 @@ Microsoft Graph データ接続の詳細については、[Microsoft Graph デ�
 
 ## <a name="next-steps"></a>次のステップ
 
-- 
-  [おすすめのシナリオ](https://developer.microsoft.com/graph/examples)を確認します。
-- 
-  [Graph エクスプローラー](https://developer.microsoft.com/graph/graph-explorer)でサンプルの要求を試します。
-- 
-  [クイック スタート](https://developer.microsoft.com/graph/quick-start)を使用して、すぐに実行できるサンプル アプリをセットアップします。
+- [おすすめのシナリオ](https://developer.microsoft.com/graph/examples)を確認します。
+- [Graph エクスプローラー](https://developer.microsoft.com/graph/graph-explorer)でサンプルの要求を試します。
+- [クイック スタート](https://developer.microsoft.com/graph/quick-start)を使用して、すぐに実行できるサンプル アプリをセットアップします。
 - 目次の「**詳細情報**」を見て、さまざまなシナリオで使用できるサービスや機能についての詳細情報を参照します。 
 - アプリで[認証トークンを取得する](auth-overview.md)方法を検索します。
 - [API の使用](use-the-api.md)を開始します。

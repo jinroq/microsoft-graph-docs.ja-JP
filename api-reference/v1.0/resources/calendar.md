@@ -2,12 +2,14 @@
 title: calendar リソース型
 description: イベントのコンテナーである予定表です。 ユーザーの予定表、または Office 365 グループの既定の予定表のいずれかを指定できます。
 localization_priority: Priority
-ms.openlocfilehash: c567a37be651987f2ca5af08cf9837ba6f41076f
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: angelgolfer-ms
+ms.prod: outlook
+ms.openlocfilehash: 6d7f926c26b0fdcf0c70e7f6d02593cff8bb46a6
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27843247"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27917623"
 ---
 # <a name="calendar-resource-type"></a>calendar リソース型
 

@@ -1,12 +1,15 @@
 ---
 title: Microsoft Graph で Excel のブック関数を使用する
 description: どのブック関数も、`POST /workbook/functions/{function-name}` という構文を使用することにより呼び出すことができます 本文の中で関数の引数は、JSON オブジェクトを使用して指定します。 関数の結果としての `value` および任意の `error` 文字列が、関数の結果のオブジェクトに返されます。 `null` の `error` 値は、関数の実行が成功したことを示します。
-ms.openlocfilehash: 36b07277123ccb04de5607a513cee6f576be5550
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+author: lumine2008
+ms.prod: excel
+ms.openlocfilehash: 868695eb6f3ab4ddd7354512477d4abcf0708d8d
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27092540"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27929978"
 ---
 # <a name="use-workbook-functions-in-excel-with-microsoft-graph"></a>Microsoft Graph で Excel のブック関数を使用する
 

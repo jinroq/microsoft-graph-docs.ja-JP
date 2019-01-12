@@ -2,12 +2,13 @@
 title: Microsoft Graph の変更ログ
 description: この変更ログでは、Microsoft Graph と、v1.0 およびベータ版のエンドポイント Microsoft Graph API の変更内容について説明します。
 author: jthake-msft
-ms.openlocfilehash: e4afc0f2b3a0302493f2d4d25f5c90777d5ffe73
-ms.sourcegitcommit: 8feddb85e436be5581557a199f2e46d5b4ebfa21
+localization_priority: Priority
+ms.openlocfilehash: a4d1250297b4bb0fc03915acbd3adf7dd41b7df3
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/22/2018
-ms.locfileid: "27413198"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27882860"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Microsoft Graph の変更ログ
 
@@ -2628,8 +2629,7 @@ Microsoft Graph API に関する既知の問題の詳細については、「[�
 
 | **変更の種類** | **バージョン** | **説明**                          |
 | :-------------- | :---------- | :--------------------------------------- |
-| 変更          | ベータ版        | 
-  _WebSite_ プロパティの名前が _Websites_ に変更されました。詳細については、「[連絡先および People API で今後予定されている変更](https://developer.microsoft.com/office/blogs/upcoming-changes-to-contacts-and-people-apis/)」をご覧ください。 |
+| 変更          | ベータ版        | _WebSite_ プロパティの名前が _Websites_ に変更されました。詳細については、「[連絡先および People API で今後予定されている変更](https://developer.microsoft.com/office/blogs/upcoming-changes-to-contacts-and-people-apis/)」をご覧ください。 |
 
 ### <a name="privileged-identity-management"></a>Privileged Identity Management
 

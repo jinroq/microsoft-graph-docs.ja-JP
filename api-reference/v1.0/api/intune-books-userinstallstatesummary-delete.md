@@ -3,12 +3,13 @@ title: userInstallStateSummary の削除
 description: userInstallStateSummary を削除します。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: c91eee1f5365ec55dbf957da4f7c562501f1d703
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 48eefe56312e4a1bc553e677842f01b389cc2ee4
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27883868"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27921774"
 ---
 # <a name="delete-userinstallstatesummary"></a>userInstallStateSummary の削除
 

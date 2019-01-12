@@ -3,12 +3,13 @@ title: Create vppToken
 description: 新規にvppToken オブジェクトを作成します。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 015cb03b806d3cd4fc79f690c4ad5e1aa11a072a
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: fc4313f5e1d83a8ed202eac47ed070cf8dc1804c
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27846922"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27914912"
 ---
 # <a name="create-vpptoken"></a>Create vppToken
 

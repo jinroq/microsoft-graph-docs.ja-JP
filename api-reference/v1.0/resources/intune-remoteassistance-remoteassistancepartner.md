@@ -3,12 +3,13 @@ title: remoteAssistancePartner リソースの種類
 description: remoteAssistPartner リソースは、特定のリモート アシスタンス パートナー サービスのメタデータおよび状態を表します。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: da82d42d3ddfe673b912477aaacd034380c96be3
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: dc0f788d9a083b1d1b6dda30170a06fd62d80908
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27889405"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27915579"
 ---
 # <a name="remoteassistancepartner-resource-type"></a>remoteAssistancePartner リソースの種類
 

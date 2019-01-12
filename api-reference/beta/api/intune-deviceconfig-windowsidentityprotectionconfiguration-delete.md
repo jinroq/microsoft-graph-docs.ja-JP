@@ -3,12 +3,13 @@ title: WindowsIdentityProtectionConfiguration を削除します。
 description: WindowsIdentityProtectionConfiguration を削除します。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: b26f654519f4d715ad16aa75eb7155254fc87fda
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: a3736aea3962b726e6a47a29346ecee8960d958b
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27816745"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27926002"
 ---
 # <a name="delete-windowsidentityprotectionconfiguration"></a>WindowsIdentityProtectionConfiguration を削除します。
 

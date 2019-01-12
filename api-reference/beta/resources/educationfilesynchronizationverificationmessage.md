@@ -3,12 +3,13 @@ title: educationFileSynchronizationVerificationMessage リソースの種類
 description: CSV ベースの学校のデータのプロファイルの同期を開始する要求への応答としてクライアントに返されるエラーを表します。 リソースの検証エラーが含まれます。 ユーザーは Azure Active Directory (AD の Azure) との同期を要求を再起動する前にソース データを修正する必要があります。
 author: mmast-msft
 localization_priority: Normal
-ms.openlocfilehash: ae09ec3f208adfee64a6392db9732841fc7a0808
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: education
+ms.openlocfilehash: cda1d5d3ac56c50cdeb94ada091e8ae2975b8813
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27845515"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27914480"
 ---
 # <a name="educationfilesynchronizationverificationmessage-resource-type"></a>educationFileSynchronizationVerificationMessage リソースの種類
 

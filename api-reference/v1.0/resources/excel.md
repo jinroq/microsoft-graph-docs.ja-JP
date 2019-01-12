@@ -2,12 +2,14 @@
 title: Microsoft Graph での Excel の操作
 description: 'Microsoft Graph を使用すると、OneDrive for Business、SharePoint サイト、またはグループ ドライブに保存されている Excel ブックを、Web アプリケーションやモバイル アプリケーションで読み取ったり変更したりすることができます。`Workbook` (つまり Excel ファイル) リソースには、リレーションシップを介するその他のすべての Excel リソースが含まれています。ファイルの場所を URL で指定すれば、ドライブ API でブックにアクセスできます。例:'
 localization_priority: Priority
-ms.openlocfilehash: 30129637586b9bfdd6e06ca48f9612d0d067268e
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: lumine2008
+ms.prod: excel
+ms.openlocfilehash: 0010a7244d9ba6e629849f55dfc793bf6b875b38
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27849932"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27917686"
 ---
 # <a name="working-with-excel-in-microsoft-graph"></a>Microsoft Graph での Excel の操作
 

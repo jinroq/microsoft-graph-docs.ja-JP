@@ -2,12 +2,14 @@
 title: アプリを Azure AD v2.0 エンドポイントに登録する
 description: 'アプリは、Azure AD に登録する必要があります。アプリを登録すると、トークンの取得のための Azure AD での認証でアプリケーションが使用する一意のアプリケーション ID と他の値が確定します。Azure AD v2.0 エンドポイントの場合は、Microsoft アプリ登録ポータルでアプリを登録します。アプリを登録するには、Microsoft アカウントのほか、職場または学校のアカウントを使用できます。開発するアプリケーションの種類によっては、アプリケーションの認証と承認の設定で 1 つまたは複数のプロパティをコピーする必要があります。 '
 author: jackson-woods
-ms.openlocfilehash: 10f955e63cbf6fd53dc357fd8772ac3364b8c84a
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Priority
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: 87bff46dcb18585ba0814a5848f3cd67deb855d1
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27348833"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27930559"
 ---
 # <a name="register-your-app-with-the-azure-ad-v20-endpoint"></a>アプリを Azure AD v2.0 エンドポイントに登録する
 

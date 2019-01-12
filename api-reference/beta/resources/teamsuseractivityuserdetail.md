@@ -3,12 +3,13 @@ title: teamsUserActivityUserDetail リソースの種類
 description: リソースの JSON の representaion は、次のようにします。
 author: nkramer
 localization_priority: Normal
-ms.openlocfilehash: 2e3f64c7065343712f6a9d9c6a114bf95f24c171
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: microsoft-teams
+ms.openlocfilehash: 32b611ee9ec01b0339389256b8c8dff9eac99fa9
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27823654"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27913430"
 ---
 # <a name="teamsuseractivityuserdetail-resource-type"></a>teamsUserActivityUserDetail リソースの種類
 

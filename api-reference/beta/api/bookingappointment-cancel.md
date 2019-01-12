@@ -2,12 +2,14 @@
 title: 'bookingAppointment: キャンセル'
 description: " > **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。"
 localization_priority: Normal
-ms.openlocfilehash: ffb800b5084177b05b62e1ba14b475b8a760d766
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: angelgolfer-ms
+ms.prod: bookings
+ms.openlocfilehash: 2ea1baae613188037ab806a81a6341daecaddc65
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27844479"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27917252"
 ---
 # <a name="bookingappointment-cancel"></a>bookingAppointment: キャンセル
 

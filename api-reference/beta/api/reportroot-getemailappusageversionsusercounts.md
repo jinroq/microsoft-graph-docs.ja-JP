@@ -2,12 +2,13 @@
 title: 'reportRoot: getEmailAppUsageVersionsUserCounts'
 description: Outlook デスクトップ版ごとの、それぞれ別個のユーザー数を取得します。
 localization_priority: Normal
-ms.openlocfilehash: 5ff2451ac4b3e50d7cd5ef2c6c31163c2e15235a
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: reports
+ms.openlocfilehash: a42325da3ee664099e7aab97be972b8467510658
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27827916"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27925764"
 ---
 # <a name="reportroot-getemailappusageversionsusercounts"></a>reportRoot: getEmailAppUsageVersionsUserCounts
 

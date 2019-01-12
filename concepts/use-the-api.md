@@ -2,12 +2,13 @@
 title: Microsoft Graph API を使用する
 description: Microsoft Graph は、Microsoft Cloud サービス リソースへのアクセスを可能にする RESTful Web API です。アプリを登録 して、サービス または ユーザーの認証トークンを取得する と、Microsoft Graph API に対して要求を行うことができます。
 author: jackson-woods
-ms.openlocfilehash: 6f319540853e94497c6553b1bd44f7a8d3a33575
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Priority
+ms.openlocfilehash: 0d4c49e2b2961b99afac2445976c3d56234262bc
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27340055"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27832839"
 ---
 # <a name="use-the-microsoft-graph-api"></a>Microsoft Graph API を使用する
 

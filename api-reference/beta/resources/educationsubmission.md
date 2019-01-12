@@ -3,12 +3,13 @@ title: educationSubmission リソースの種類
 description: 提出書類は、割り当てによって所有されます。 提出書類は、リソースを表しますが、個人 (またはグループ) および有効にするに割り当て、グレードとフィードバックが返されます。
 author: dipakboyed
 localization_priority: Normal
-ms.openlocfilehash: 92d0799b0052383d1ec12511ce98b3263245da9e
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: education
+ms.openlocfilehash: 9cbfaa46d979e3796ae9128e212bfaa1f6bf8453
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27847818"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27920878"
 ---
 # <a name="educationsubmission-resource-type"></a>educationSubmission リソースの種類
 

@@ -2,12 +2,13 @@
 title: オープン拡張機能を使用してカスタム データをユーザーに追加する
 description: '*オープン拡張機能*の使用方法について、具体例を使ってデモンストレーションします。 '
 author: dkershaw10
-ms.openlocfilehash: 37df1bd03e68b00be41496ee9f66a076d8758149
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Priority
+ms.openlocfilehash: 69b0918dba3159a552e2b00d4f54b21e67d017e4
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27337171"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27867264"
 ---
 # <a name="add-custom-data-to-users-using-open-extensions"></a>オープン拡張機能を使用してカスタム データをユーザーに追加する
 *オープン拡張機能*の使用方法について、具体例を使ってデモンストレーションします。 

@@ -3,12 +3,13 @@ title: windowsDefenderScanActionResult リソースの種類
 description: Windows Defender の最後のスキャン結果
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 407db79fa0caf333dfb092620320aeb339e1b195
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 8a323b0438c7edf50d745b3b21498ad5c50f6424
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27812153"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27911687"
 ---
 # <a name="windowsdefenderscanactionresult-resource-type"></a>windowsDefenderScanActionResult リソースの種類
 

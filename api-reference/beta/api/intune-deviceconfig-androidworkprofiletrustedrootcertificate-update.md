@@ -3,12 +3,13 @@ title: AndroidWorkProfileTrustedRootCertificate を更新します。
 description: AndroidWorkProfileTrustedRootCertificate オブジェクトのプロパティを更新します。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: abf730ed938ff3db514de7502f7c5a571febdef3
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 390e93dbde9d29caa31d2084aec6ba92cbd37b18
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27812474"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27924546"
 ---
 # <a name="update-androidworkprofiletrustedrootcertificate"></a>AndroidWorkProfileTrustedRootCertificate を更新します。
 

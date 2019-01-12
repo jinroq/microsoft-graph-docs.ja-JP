@@ -2,12 +2,14 @@
 title: Intune のデバイスとアプリの API の概要
 description: 'Microsoft Intune は、企業が組織内のデバイスとアプリを管理するのに役立ちます。 Microsoft Graph で Intune API を使用して、デバイスとアプリを管理したり、好みのツールを使用しながら Intune を構成したりできます。 '
 author: tfitzmac
-ms.openlocfilehash: 0eac57d7434e85faae86a7f1042cc6bb61783e52
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Priority
+ms.prod: intune
+ms.openlocfilehash: 3fc51a81bce93de3b17b8107158998a3b5764da4
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27332852"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27913666"
 ---
 # <a name="intune-devices-and-apps-api-overview"></a>Intune のデバイスとアプリの API の概要
 

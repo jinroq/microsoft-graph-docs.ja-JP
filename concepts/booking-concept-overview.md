@@ -2,12 +2,14 @@
 title: Microsoft Bookings API の概要 (プレビュー)
 description: Microsoft Bookings は、小規模企業およびその顧客を対象とした、シンプルかつ効率的な予約スケジュールのためのオンラインおよびモバイルのアプリを提供します。 自動車修理工場、美容院、法律事務所など、予約を扱うサービスを提供する小規模企業で予約管理機能を活用すれば、それによって空いた時間を、事業拡大に向けたより重要な作業に当てることができます。 Microsoft Bookings は、Office 365 Business Premium サブスクリプションを取得した企業がご利用いただけます。
 author: angelgolfer-ms
-ms.openlocfilehash: 7e76c72950ea889b0c6029568ef287ee1ae5eedb
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Priority
+ms.prod: bookings
+ms.openlocfilehash: af9fa2b993a3ed4a55c5c526f31e0582b18ea837
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27339817"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27917336"
 ---
 # <a name="microsoft-bookings-api-overview-preview"></a>Microsoft Bookings API の概要 (プレビュー)
 

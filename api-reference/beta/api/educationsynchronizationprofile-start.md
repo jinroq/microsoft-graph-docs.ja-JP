@@ -2,12 +2,14 @@
 title: EducationSynchronizationProfile にファイルをアップロードした後に同期を開始します。
 description: テナントで特定の学校のデータの同期プロファイルをファイルのアップロードを確認します。 検証が成功した場合は、プロファイルの同期が開始されます。 それ以外の場合、エラーおよび警告の応答が含まれます。 応答にエラーが含まれている場合、同期は開始されません。 応答には、警告のみが含まれている場合、は、同期が開始されます。
 localization_priority: Normal
-ms.openlocfilehash: 465ab6a807fc6af10067d048459c440c7c567361
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: mmast-msft
+ms.prod: education
+ms.openlocfilehash: efdc0863a1de58f7ebf46492b662e632972275c0
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27866739"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27915250"
 ---
 # <a name="start-sync-after-uploading-files-to-an-educationsynchronizationprofile"></a>EducationSynchronizationProfile にファイルをアップロードした後に同期を開始します。
 

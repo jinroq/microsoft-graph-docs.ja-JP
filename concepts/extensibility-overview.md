@@ -2,12 +2,13 @@
 title: 拡張機能を使用してカスタム データをリソースに追加する
 description: Microsoft Graph は、ユーザーやメッセージなどの数多くのリソースを通じて、多用なユーザー中心のデータと分析情報にアクセスするための単一の API エンドポイントを提供しますします。独自のアプリケーション データを Microsoft Graph で拡張することもできます。外部にデータの保存を必要とせず、Microsoft Graph のリソースにカスタム プロパティを追加できます。
 author: dkershaw10
-ms.openlocfilehash: ccbd86fda648bf30d46c9ad3c92afa92bed1f6a4
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Priority
+ms.openlocfilehash: 7b1789fb12a971dab3b5ad591bc65fc49b85c76e
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27334959"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27865094"
 ---
 # <a name="add-custom-data-to-resources-using-extensions"></a>拡張機能を使用してカスタム データをリソースに追加する
 

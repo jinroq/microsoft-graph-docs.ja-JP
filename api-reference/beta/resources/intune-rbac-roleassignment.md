@@ -3,12 +3,13 @@ title: roleAssignment リソースの種類
 description: 役割の割り当てリソースです。 役割の割り当ては、メンバーが含まれるロール定義と範囲を結びつけます。 役割ごとに 1 つまたは複数の役割の割り当てが可能です。 カスタムおよび組み込みの役割に適用されます。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 7cb3b07abc47224b2f96a35f4099d3a691b6c901
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: d3f50e028bed17daf9acfe0eaf62776476b1bb61
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27825495"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27927570"
 ---
 # <a name="roleassignment-resource-type"></a>roleAssignment リソースの種類
 

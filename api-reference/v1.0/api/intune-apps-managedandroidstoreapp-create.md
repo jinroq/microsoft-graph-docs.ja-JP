@@ -3,12 +3,13 @@ title: managedAndroidStoreApp の作成
 description: 新しい managedAndroidStoreApp オブジェクトを作成します。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: bdd3e9638aac85e6631597286cb43a4ec5fc4fc0
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 0f0ae6851514419ea77e4ccce6ae9c8abf790368
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27831172"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27922761"
 ---
 # <a name="create-managedandroidstoreapp"></a>managedAndroidStoreApp の作成
 

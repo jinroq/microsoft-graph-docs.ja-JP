@@ -2,12 +2,14 @@
 title: windows10TeamGeneralConfiguration リソース タイプ
 description: このトピックでは、windows10TeamGeneralConfiguration リソースによって公開された、宣言されたメソッド、プロパティ、リレーションシップについて説明します。
 localization_priority: Normal
-ms.openlocfilehash: 0f54791f88cb9f77f0a036cf27000e0f9c9b39aa
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: tfitzmac
+ms.prod: intune
+ms.openlocfilehash: c361e139e0763122ee88627e3164e62f24e8d3c3
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27882996"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27926198"
 ---
 # <a name="windows10teamgeneralconfiguration-resource-type"></a>windows10TeamGeneralConfiguration リソース タイプ
 

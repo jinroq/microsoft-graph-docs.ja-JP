@@ -3,12 +3,13 @@ title: sharedPCAccountManagerPolicy リソース タイプ
 description: 共有 PC アカウント マネージャー ポリシーです。 アカウント マネージャーが有効になっている場合にのみ適用されます。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 4c8e66f64f316b0fd0a31ab17d143e3da2375ee4
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 42b8824f3f9b18722f69db4f3d0d116b2f46dfd2
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27856603"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27914886"
 ---
 # <a name="sharedpcaccountmanagerpolicy-resource-type"></a>sharedPCAccountManagerPolicy リソース タイプ
 

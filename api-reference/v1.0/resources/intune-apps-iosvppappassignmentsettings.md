@@ -3,12 +3,13 @@ title: iosVppAppAssignmentSettings リソースの種類
 description: グループへの iOS VPP モバイル アプリの割り当てに使用されるプロパティが、含まれています。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 4c9a5196be760204af682c1a7318318920284a40
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: e221ceb67789f9d96195a31bd7eba8f37a9df6bc
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27886115"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27917644"
 ---
 # <a name="iosvppappassignmentsettings-resource-type"></a>iosVppAppAssignmentSettings リソースの種類
 

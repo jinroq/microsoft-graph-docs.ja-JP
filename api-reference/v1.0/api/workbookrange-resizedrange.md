@@ -2,12 +2,14 @@
 title: 'workbookRange: resizedRange'
 description: 現在の範囲オブジェクトに似た (ただし、右下隅がいくつかの行と列で拡張 (または縮小) されている) 範囲オブジェクトを取得します。
 localization_priority: Normal
-ms.openlocfilehash: 7cdc1f06487a28bf80b4091c5d287fb3086801fa
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: lumine2008
+ms.prod: excel
+ms.openlocfilehash: 4eb5aad208ecd7c60e45b2419b61570915bb7338
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27885030"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27931294"
 ---
 # <a name="workbookrange-resizedrange"></a>workbookRange: resizedRange
 現在の範囲オブジェクトに似た (ただし、右下隅がいくつかの行と列で拡張 (または縮小) されている) 範囲オブジェクトを取得します。

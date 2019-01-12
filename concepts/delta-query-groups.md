@@ -2,12 +2,13 @@
 title: グループに対する増分の変更を取得する
 description: デルタ クエリでは、一連のデルタ関数呼び出しを使用して、グループへの追加、削除、または更新に対してクエリを実行できます。 デルタ クエリによりグループへの変更の検出が可能になる
 author: piotrci
-ms.openlocfilehash: c5c9e712ecbe5e4f82fb56cbcb2795d1cfffb354
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Priority
+ms.openlocfilehash: 358af439fb69525b75dc2810f890a91dc54f2789
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27302038"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27891281"
 ---
 # <a name="get-incremental-changes-for-groups"></a>グループに対する増分の変更を取得する
 

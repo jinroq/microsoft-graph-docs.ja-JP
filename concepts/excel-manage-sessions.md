@@ -1,12 +1,15 @@
 ---
 title: Microsoft Graph によって Excel のセッションと永続化を管理する
 description: アプリケーションで Excel API の呼び出しを 1 回以上行う必要がある場合は、セッションを作成し、要求ごとにセッション ID を渡す必要がります。 要求にセッション ID を含めると、Excel API を最も効率的な方法で使用できるようになります。
-ms.openlocfilehash: 6fe869aaab62b47934c91194eeb75229d8215e9a
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+author: lumine2008
+ms.prod: excel
+ms.openlocfilehash: 151119a2a2861b64db126c8f49d0b916a6f563e8
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27092375"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27921690"
 ---
 # <a name="manage-sessions-and-persistence-in-excel-with-microsoft-graph"></a>Microsoft Graph によって Excel のセッションと永続化を管理する
 

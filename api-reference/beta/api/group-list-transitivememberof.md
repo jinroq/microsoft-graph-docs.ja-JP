@@ -2,12 +2,14 @@
 title: リスト グループの推移的な memberOf
 description: グループとグループのメンバーである管理の単位を取得します。  この操作では、推移的では、このグループの入れ子にされたメンバーであるすべてのグループにも含まれます。 ユーザーの Office 365 のグループを取得するとは異なり、グループのすべての種類を返しますこれだけではなく Office 365 のグループです。
 localization_priority: Normal
-ms.openlocfilehash: 2dececa36b96cfae866afe2f03d4ebb926467ae0
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: dkershaw10
+ms.prod: groups
+ms.openlocfilehash: ec03ca6fce354f2a0b81cf0f81bf3061db504365
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27887403"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27921669"
 ---
 # <a name="list-group-transitive-memberof"></a>リスト グループの推移的な memberOf
 

@@ -1,12 +1,13 @@
 ---
 title: 国内クラウドの展開
 description: Microsoft のデータセンターのグローバル ネットワークに加えて、Microsoft クラウド サービスは 3 つの独立した国内クラウドで利用できます。 これらの国内クラウド バージョンは、Microsoft エンタープライズ クラウド サービスの物理的および論理的ネットワークの独立したインスタンスで、特定の国の地理的な境界内に限定され、ローカル スタッフによって運営されます。 詳細については、「Microsoft National Clouds」 (Microsoft の国内クラウド) を参照してください。
-ms.openlocfilehash: b0f2ab257773faa14fe59566992bb1ed0dd77959
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Priority
+ms.openlocfilehash: b22fce675bc97d0f22833d89dab01afd18e06032
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27092366"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27840419"
 ---
 # <a name="national-cloud-deployments"></a>国内クラウドの展開
 

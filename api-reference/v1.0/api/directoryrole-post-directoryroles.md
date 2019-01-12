@@ -2,12 +2,14 @@
 title: directoryRole をアクティブにする
 description: ディレクトリ ロールをアクティブ化します。ディレクトリ ロールを読み取る場合や、そのメンバーを更新する場合は、まず、そのディレクトリ ロールをテナントでアクティブにする必要があります。既定では、会社の管理者 (Company Administrators) とユーザー (Users) のディレクトリ ロールのみがアクティブ化されています。アクセスしてメンバーを別のディレクトリ ロールに割り当てるには、まずそのディレクトリ ロールを対応するディレクトリ ロール テンプレート (directoryRoleTemplate) でアクティブにする必要があります。
 localization_priority: Normal
-ms.openlocfilehash: 9e3e962de4e25422cbf35f9efa8a83499cfe81bc
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: lleonard-msft
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: 5d127580c0a4851c5a991ccc0646007ddf1298a5
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27885149"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27924917"
 ---
 # <a name="activate-directoryrole"></a>directoryRole をアクティブにする
 

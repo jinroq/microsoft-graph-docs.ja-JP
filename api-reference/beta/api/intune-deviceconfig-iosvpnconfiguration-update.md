@@ -3,12 +3,13 @@ title: IosVpnConfiguration を更新します。
 description: IosVpnConfiguration オブジェクトのプロパティを更新します。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 7a07d1e60cdc3437aada5296aeefd86a6e45ae9d
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 49004ef3bf7cd3efeb82dffc462161b80ef2f3ef
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27858451"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27924651"
 ---
 # <a name="update-iosvpnconfiguration"></a>IosVpnConfiguration を更新します。
 

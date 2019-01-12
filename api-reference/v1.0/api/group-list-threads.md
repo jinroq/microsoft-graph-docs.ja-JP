@@ -3,12 +3,13 @@ title: スレッドを一覧表示する
 description: グループのすべてのスレッドを取得します。
 author: dkershaw10
 localization_priority: Normal
-ms.openlocfilehash: 4317ddb197832993bec589bf0c0d402317d0d862
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: groups
+ms.openlocfilehash: 860d9bc88aff010bbb8a563017474698f93535b9
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27866151"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27917217"
 ---
 # <a name="list-threads"></a>スレッドを一覧表示する
 グループのすべてのスレッドを取得します。

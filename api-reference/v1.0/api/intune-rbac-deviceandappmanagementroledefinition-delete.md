@@ -3,12 +3,13 @@ title: deviceAndAppManagementRoleDefinition の削除
 description: deviceAndAppManagementRoleDefinition の削除
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 6bed7d7262973d4565e0efe0dd11304af0684cb2
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: cb7c85aa11c11a748f3d870e93b90f028c6070b6
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27829974"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27921347"
 ---
 # <a name="delete-deviceandappmanagementroledefinition"></a>deviceAndAppManagementRoleDefinition の削除
 

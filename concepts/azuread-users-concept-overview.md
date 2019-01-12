@@ -2,12 +2,13 @@
 title: Microsoft Graph におけるユーザーの概要
 description: ユーザーは、Microsoft Graph における Azure Active Directory (Azure AD) の職場または学校のユーザー アカウント、または Microsoft アカウントの表現です。 Microsoft Graph の **user** リソースは、ユーザーと関連性のあるリレーションシップやリソースにアクセスする際に使用できるハブです。
 author: dkershaw10
-ms.openlocfilehash: f9e64ecd3f3a46a74b7a6bcd65955419fd102296
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Priority
+ms.openlocfilehash: b9854da9225f6ce254d44672e015e07908e09294
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27337304"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27855252"
 ---
 # <a name="overview-of-users-in-microsoft-graph"></a>Microsoft Graph におけるユーザーの概要
 
@@ -64,8 +65,7 @@ Microsoft Graph を使用して、サインインしているユーザーと文�
 ## <a name="next-steps"></a>次のステップ
 
 - [ユーザーの操作](/graph/api/resources/users?view=graph-rest-1.0)方法の詳細を確認する
-- 
-  [Graph エクスプローラー](https://developer.microsoft.com/graph/graph-explorer)の **user** リソースを使用して自分自身のデータを調べる
+- [Graph エクスプローラー](https://developer.microsoft.com/graph/graph-explorer)の **user** リソースを使用して自分自身のデータを調べる
 - [ユーザーの代わりに](auth-v2-user.md)、または[管理者の同意を得てデーモンまたはサービスとして](auth-v2-service.md) Microsoft Graph を使用して認証します。
 - [Azure AD API](/graph/api/resources/azure-ad-overview?view=graph-rest-1.0) を使用してユーザーのアクセス制御とポリシーを設定する
 - アプリからユーザー データにアクセスするために必要な[権限](permissions-reference.md)を確認する 

@@ -3,12 +3,13 @@ title: ratingGermanyTelevisionType 列挙型
 description: ドイツのテレビのコンテンツの規制ラベル
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 8a1f0e16d43fe9a97f18b2bc02f2cacc8d54c7ac
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: dafa3b5b3bfec5c67b87dc10d3162f2c9e24b4bf
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27841357"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27911617"
 ---
 # <a name="ratinggermanytelevisiontype-enum-type"></a>ratingGermanyTelevisionType 列挙型
 

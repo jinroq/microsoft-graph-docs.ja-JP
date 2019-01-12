@@ -1,12 +1,13 @@
 ---
 title: Microsoft Graph のスキャン
 description: Microsoft Graph API を使用してデータの読み取りと書き込みを行うだけでなく、多数の要求パターンを使用して Microsoft Graph のリソースをスキャンすることができます。また、メタデータ ドキュメントによって、リソースのデータ モデル、および Microsoft Graph 内のリレーションシップを理解することができます。
-ms.openlocfilehash: 33f9ace57c7a0c3166e43a6ca1264174962752e1
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Priority
+ms.openlocfilehash: dc4cafc00516f4222ba6ec860dd45ff96d608dd8
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27092389"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27863834"
 ---
 # <a name="traverse-microsoft-graph"></a>Microsoft Graph のスキャン
 

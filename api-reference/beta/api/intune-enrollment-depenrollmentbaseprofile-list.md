@@ -3,12 +3,13 @@ title: リスト depEnrollmentBaseProfiles
 description: DepEnrollmentBaseProfile オブジェクトのプロパティと関係を一覧表示します。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 549868f78db6b8e5b130bf03d8b588fb767a3a26
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 53c87c58720210c669ec47bdb378c985c410d0a0
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27806826"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27913038"
 ---
 # <a name="list-depenrollmentbaseprofiles"></a>リスト depEnrollmentBaseProfiles
 

@@ -3,12 +3,13 @@ title: deviceComplianceScheduledActionForRule の更新
 description: deviceComplianceScheduledActionForRule オブジェクトのプロパティを更新します。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: e12282024216582941ac4ed63108194a863cdc03
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: ad688779451f0320f7296ff91946ee1a7bcecb61
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27818306"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27916419"
 ---
 # <a name="update-devicecompliancescheduledactionforrule"></a>deviceComplianceScheduledActionForRule の更新
 

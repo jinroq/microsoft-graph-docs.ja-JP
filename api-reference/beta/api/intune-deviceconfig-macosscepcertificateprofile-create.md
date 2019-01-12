@@ -3,12 +3,13 @@ title: MacOSScepCertificateProfile を作成します。
 description: 新しい macOSScepCertificateProfile オブジェクトを作成します。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 44afadca83c5151d23866268f2d54e8f39d16cee
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: b62fb3e8be2c83bfedacabda12f29c6f4ee89afe
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27847734"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27924987"
 ---
 # <a name="create-macosscepcertificateprofile"></a>MacOSScepCertificateProfile を作成します。
 

@@ -1,12 +1,13 @@
 ---
 title: 'Microsoft Graph のバージョン管理、サポートと重大な変更の方針 '
 description: この記事は Microsoft Graph のサポート重大な変更の方針と、現在使用可能な Microsoft Graph API のバージョンについて説明します。
-ms.openlocfilehash: 2a2c7f338e4bc26dc61d9cf88855b9760ff22d6f
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Priority
+ms.openlocfilehash: 273772aaf72031ca27801e54ede744960c601fd4
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27092535"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27812839"
 ---
 # <a name="versioning-support-and-breaking-change-policies-for-microsoft-graph"></a>Microsoft Graph のバージョン管理、サポートと重大な変更の方針 
 

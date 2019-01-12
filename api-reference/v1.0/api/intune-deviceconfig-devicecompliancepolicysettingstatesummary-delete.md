@@ -3,12 +3,13 @@ title: deviceCompliancePolicySettingStateSummary の削除
 description: deviceCompliancePolicySettingStateSummary を削除します。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: cf2640671a0f632e4eaa80822aee0884cac8ff3e
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: d06fdf60582ab7b30166dbc3a621eecb5edd3394
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27839523"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27927619"
 ---
 # <a name="delete-devicecompliancepolicysettingstatesummary"></a>deviceCompliancePolicySettingStateSummary の削除
 
