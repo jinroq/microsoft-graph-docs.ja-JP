@@ -3,52 +3,53 @@ title: Delete groupLifecyclePolicy
 description: groupLifecyclePolicy を削除します。
 author: dkershaw10
 localization_priority: Normal
-ms.openlocfilehash: 758d78f3f0d844d8913f73a1018206d3e3c14602
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: groups
+ms.openlocfilehash: 9d58eca82c72008cb30095fe4fbfacf5a382111a
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27839110"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27922782"
 ---
-# <a name="delete-grouplifecyclepolicy"></a><span data-ttu-id="35d63-103">Delete groupLifecyclePolicy</span><span class="sxs-lookup"><span data-stu-id="35d63-103">Delete groupLifecyclePolicy</span></span>
+# <a name="delete-grouplifecyclepolicy"></a><span data-ttu-id="ab251-103">Delete groupLifecyclePolicy</span><span class="sxs-lookup"><span data-stu-id="ab251-103">Delete groupLifecyclePolicy</span></span>
 
-<span data-ttu-id="35d63-104">[groupLifecyclePolicy](../resources/grouplifecyclepolicy.md) を削除します。</span><span class="sxs-lookup"><span data-stu-id="35d63-104">Deletes a [groupLifecyclePolicy](../resources/grouplifecyclepolicy.md).</span></span>
+<span data-ttu-id="ab251-104">[groupLifecyclePolicy](../resources/grouplifecyclepolicy.md) を削除します。</span><span class="sxs-lookup"><span data-stu-id="ab251-104">Deletes a [groupLifecyclePolicy](../resources/grouplifecyclepolicy.md).</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="35d63-105">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="35d63-105">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="ab251-105">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="ab251-105">Permissions</span></span>
 
-<span data-ttu-id="35d63-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="35d63-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="ab251-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="ab251-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="35d63-108">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="35d63-108">Permission type</span></span>      | <span data-ttu-id="35d63-109">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="35d63-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="ab251-108">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="ab251-108">Permission type</span></span>      | <span data-ttu-id="ab251-109">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="ab251-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="35d63-110">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="35d63-110">Delegated (work or school account)</span></span> | <span data-ttu-id="35d63-111">Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="35d63-111">Directory.ReadWrite.All</span></span>    |
-|<span data-ttu-id="35d63-112">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="35d63-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="35d63-113">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="35d63-113">Not supported.</span></span>    |
-|<span data-ttu-id="35d63-114">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="35d63-114">Application</span></span> | <span data-ttu-id="35d63-115">Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="35d63-115">Directory.ReadWrite.All</span></span> |
+|<span data-ttu-id="ab251-110">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="ab251-110">Delegated (work or school account)</span></span> | <span data-ttu-id="ab251-111">Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="ab251-111">Directory.ReadWrite.All</span></span>    |
+|<span data-ttu-id="ab251-112">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="ab251-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="ab251-113">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="ab251-113">Not supported.</span></span>    |
+|<span data-ttu-id="ab251-114">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="ab251-114">Application</span></span> | <span data-ttu-id="ab251-115">Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="ab251-115">Directory.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="35d63-116">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="35d63-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="ab251-116">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="ab251-116">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 DELETE /groupLifecyclePolicies/{id}
 
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="35d63-117">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="35d63-117">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="ab251-117">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="ab251-117">Request headers</span></span>
 
-| <span data-ttu-id="35d63-118">名前</span><span class="sxs-lookup"><span data-stu-id="35d63-118">Name</span></span> | <span data-ttu-id="35d63-119">説明</span><span class="sxs-lookup"><span data-stu-id="35d63-119">Description</span></span> |
+| <span data-ttu-id="ab251-118">名前</span><span class="sxs-lookup"><span data-stu-id="ab251-118">Name</span></span> | <span data-ttu-id="ab251-119">説明</span><span class="sxs-lookup"><span data-stu-id="ab251-119">Description</span></span> |
 |:---------------|:----------|
-| <span data-ttu-id="35d63-120">Authorization</span><span class="sxs-lookup"><span data-stu-id="35d63-120">Authorization</span></span> | <span data-ttu-id="35d63-p102">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="35d63-p102">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="35d63-123">Content-Type</span><span class="sxs-lookup"><span data-stu-id="35d63-123">Content-Type</span></span>  | <span data-ttu-id="35d63-124">application/json</span><span class="sxs-lookup"><span data-stu-id="35d63-124">application/json</span></span> |
+| <span data-ttu-id="ab251-120">Authorization</span><span class="sxs-lookup"><span data-stu-id="ab251-120">Authorization</span></span> | <span data-ttu-id="ab251-p102">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="ab251-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="ab251-123">Content-Type</span><span class="sxs-lookup"><span data-stu-id="ab251-123">Content-Type</span></span>  | <span data-ttu-id="ab251-124">application/json</span><span class="sxs-lookup"><span data-stu-id="ab251-124">application/json</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="35d63-125">要求本文</span><span class="sxs-lookup"><span data-stu-id="35d63-125">Request body</span></span>
-<span data-ttu-id="35d63-126">このメソッドには、要求本文を指定しません。</span><span class="sxs-lookup"><span data-stu-id="35d63-126">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="ab251-125">要求本文</span><span class="sxs-lookup"><span data-stu-id="ab251-125">Request body</span></span>
+<span data-ttu-id="ab251-126">このメソッドには、要求本文を指定しません。</span><span class="sxs-lookup"><span data-stu-id="ab251-126">Do not supply a request body for this method.</span></span>
 
 
-## <a name="response"></a><span data-ttu-id="35d63-127">応答</span><span class="sxs-lookup"><span data-stu-id="35d63-127">Response</span></span>
+## <a name="response"></a><span data-ttu-id="ab251-127">応答</span><span class="sxs-lookup"><span data-stu-id="ab251-127">Response</span></span>
 
-<span data-ttu-id="35d63-p103">成功した場合、このメソッドは `204 No Content` 応答コードを返します。応答本文には何も返されません。</span><span class="sxs-lookup"><span data-stu-id="35d63-p103">If successful, this method returns `204 No Content` response code. It does not return anything in the response body.</span></span>
+<span data-ttu-id="ab251-p103">成功した場合、このメソッドは `204 No Content` 応答コードを返します。応答本文には何も返されません。</span><span class="sxs-lookup"><span data-stu-id="ab251-p103">If successful, this method returns `204 No Content` response code. It does not return anything in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="35d63-130">例</span><span class="sxs-lookup"><span data-stu-id="35d63-130">Example</span></span>
+## <a name="example"></a><span data-ttu-id="ab251-130">例</span><span class="sxs-lookup"><span data-stu-id="ab251-130">Example</span></span>
 
-##### <a name="request"></a><span data-ttu-id="35d63-131">要求</span><span class="sxs-lookup"><span data-stu-id="35d63-131">Request</span></span>
+##### <a name="request"></a><span data-ttu-id="ab251-131">要求</span><span class="sxs-lookup"><span data-stu-id="ab251-131">Request</span></span>
 
 <!-- {
   "blockType": "request",
@@ -57,7 +58,7 @@ DELETE /groupLifecyclePolicies/{id}
 ```http
 DELETE https://graph.microsoft.com/v1.0/groupLifecyclePolicies/{id}
 ```
-##### <a name="response"></a><span data-ttu-id="35d63-132">応答</span><span class="sxs-lookup"><span data-stu-id="35d63-132">Response</span></span>
+##### <a name="response"></a><span data-ttu-id="ab251-132">応答</span><span class="sxs-lookup"><span data-stu-id="ab251-132">Response</span></span>
 
 <!-- {
   "blockType": "response",

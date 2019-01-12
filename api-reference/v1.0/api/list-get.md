@@ -4,43 +4,44 @@ ms.author: rgregg
 ms.date: 09/11/2017
 title: SharePoint リストを取得する
 localization_priority: Priority
-ms.openlocfilehash: 0485a8bf3c37af3c659e7a630b65a5fd8f1849f7
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: sharepoint
+ms.openlocfilehash: 63b6fc4d2324c44c20e25fabe7ce0a89ce503ae3
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27809885"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27916118"
 ---
-# <a name="get-metadata-for-a-list"></a><span data-ttu-id="091ec-102">リストのメタデータを取得する</span><span class="sxs-lookup"><span data-stu-id="091ec-102">Get metadata for a list</span></span>
+# <a name="get-metadata-for-a-list"></a><span data-ttu-id="13d59-102">リストのメタデータを取得する</span><span class="sxs-lookup"><span data-stu-id="13d59-102">Get metadata for a list</span></span>
 
-<span data-ttu-id="091ec-103">[list][] のメタデータを返します。</span><span class="sxs-lookup"><span data-stu-id="091ec-103">Returns the metadata for a [list][].</span></span>
+<span data-ttu-id="13d59-103">[list][] のメタデータを返します。</span><span class="sxs-lookup"><span data-stu-id="13d59-103">Returns the metadata for a [list][].</span></span>
 
 [list]: ../resources/list.md
 
-## <a name="permissions"></a><span data-ttu-id="091ec-105">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="091ec-105">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="13d59-105">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="13d59-105">Permissions</span></span>
 
-<span data-ttu-id="091ec-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="091ec-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="13d59-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="13d59-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="091ec-108">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="091ec-108">Permission type</span></span>      | <span data-ttu-id="091ec-109">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="091ec-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="13d59-108">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="13d59-108">Permission type</span></span>      | <span data-ttu-id="13d59-109">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="13d59-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="091ec-110">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="091ec-110">Delegated (work or school account)</span></span> | <span data-ttu-id="091ec-111">Sites.Read.All、Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="091ec-111">Sites.Read.All, Sites.ReadWrite.All</span></span>    |
-|<span data-ttu-id="091ec-112">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="091ec-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="091ec-113">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="091ec-113">Not supported.</span></span>    |
-|<span data-ttu-id="091ec-114">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="091ec-114">Application</span></span> | <span data-ttu-id="091ec-115">Sites.Read.All、Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="091ec-115">Sites.Read.All, Sites.ReadWrite.All</span></span> |
+|<span data-ttu-id="13d59-110">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="13d59-110">Delegated (work or school account)</span></span> | <span data-ttu-id="13d59-111">Sites.Read.All、Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="13d59-111">Sites.Read.All, Sites.ReadWrite.All</span></span>    |
+|<span data-ttu-id="13d59-112">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="13d59-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="13d59-113">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="13d59-113">Not supported.</span></span>    |
+|<span data-ttu-id="13d59-114">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="13d59-114">Application</span></span> | <span data-ttu-id="13d59-115">Sites.Read.All、Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="13d59-115">Sites.Read.All, Sites.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="091ec-116">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="091ec-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="13d59-116">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="13d59-116">HTTP request</span></span>
 
 ```http
 GET https://graph.microsoft.com/v1.0/sites/{site-id}/lists/{list-id}
 GET https://graph.microsoft.com/v1.0/sites/{site-id}/lists/{list-id}?expand=columns,items(expand=fields)
 ```
 
-## <a name="request-body"></a><span data-ttu-id="091ec-117">要求本文</span><span class="sxs-lookup"><span data-stu-id="091ec-117">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="13d59-117">要求本文</span><span class="sxs-lookup"><span data-stu-id="13d59-117">Request body</span></span>
 
-<span data-ttu-id="091ec-118">このメソッドには、要求本文を指定しません。</span><span class="sxs-lookup"><span data-stu-id="091ec-118">Do not supply a request body with this method.</span></span>
+<span data-ttu-id="13d59-118">このメソッドには、要求本文を指定しません。</span><span class="sxs-lookup"><span data-stu-id="13d59-118">Do not supply a request body with this method.</span></span>
 
-## <a name="example"></a><span data-ttu-id="091ec-119">例</span><span class="sxs-lookup"><span data-stu-id="091ec-119">Example</span></span>
+## <a name="example"></a><span data-ttu-id="13d59-119">例</span><span class="sxs-lookup"><span data-stu-id="13d59-119">Example</span></span>
 
-#### <a name="request"></a><span data-ttu-id="091ec-120">要求</span><span class="sxs-lookup"><span data-stu-id="091ec-120">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="13d59-120">要求</span><span class="sxs-lookup"><span data-stu-id="13d59-120">Request</span></span>
 
 <!-- { "blockType": "request", "name": "get-list", "scopes": "sites.read.all" } -->
 
@@ -48,7 +49,7 @@ GET https://graph.microsoft.com/v1.0/sites/{site-id}/lists/{list-id}?expand=colu
 GET /sites/{site-id}/lists/{list-id}
 ```
 
-#### <a name="response"></a><span data-ttu-id="091ec-121">応答</span><span class="sxs-lookup"><span data-stu-id="091ec-121">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="13d59-121">応答</span><span class="sxs-lookup"><span data-stu-id="13d59-121">Response</span></span>
 
 <!-- { "blockType": "response", "@type": "microsoft.graph.list", "truncated": true, "scopes": "sites.read.all", "tags": "service.sharepoint" } -->
 
@@ -68,9 +69,9 @@ Content-type: application/json
 }
 ```
 
-<span data-ttu-id="091ec-122">`select` ステートメントと `expand` ステートメントを使用すれば、リストのメタデータ、列定義、リスト アイテムを単一の要求で取得できます。</span><span class="sxs-lookup"><span data-stu-id="091ec-122">With `select` and `expand` statements, you can retrieve list metadata, column definitions, and list items in a single request.</span></span>
+<span data-ttu-id="13d59-122">`select` ステートメントと `expand` ステートメントを使用すれば、リストのメタデータ、列定義、リスト アイテムを単一の要求で取得できます。</span><span class="sxs-lookup"><span data-stu-id="13d59-122">With `select` and `expand` statements, you can retrieve list metadata, column definitions, and list items in a single request.</span></span>
 
-#### <a name="request"></a><span data-ttu-id="091ec-123">要求</span><span class="sxs-lookup"><span data-stu-id="091ec-123">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="13d59-123">要求</span><span class="sxs-lookup"><span data-stu-id="13d59-123">Request</span></span>
 
 <!-- { "blockType": "request", "name": "get-list-multi-expand", "scopes": "sites.read.all" } -->
 
@@ -78,7 +79,7 @@ Content-type: application/json
 GET /sites/{site-id}/lists/{list-id}?select=id,name,lastModifiedDateTime&expand=columns(select=name,description),items(expand=fields(select=Name,Color,Quantity))
 ```
 
-#### <a name="response"></a><span data-ttu-id="091ec-124">応答</span><span class="sxs-lookup"><span data-stu-id="091ec-124">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="13d59-124">応答</span><span class="sxs-lookup"><span data-stu-id="13d59-124">Response</span></span>
 
 <!-- { "blockType": "response", "@type": "microsoft.graph.list", "truncated": true, "scopes": "sites.read.all", "tags": "service.sharepoint" } -->
 
