@@ -3,12 +3,13 @@ title: depEnrollmentProfile リソースの種類
 description: DepEnrollmentProfile リソースでは、アップル デバイスの登録プログラム (DEP) の登録プロファイルを表します。 このタイプのプロファイルは、DEP. を使用して対応するデバイスを登録する前に、Apple の DEP のシリアル番号を割り当てる必要があります。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: da2bd0415abfeefb6e7a330663ed51cb9e5de271
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 852bc809250cf8372be44674be458b122a561f15
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27849085"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27933121"
 ---
 # <a name="depenrollmentprofile-resource-type"></a>depEnrollmentProfile リソースの種類
 

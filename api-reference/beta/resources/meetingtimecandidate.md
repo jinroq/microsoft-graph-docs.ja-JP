@@ -2,12 +2,14 @@
 title: meetingTimeCandidate リソースの種類
 description: '提案された会議の時間、出勤の可能性、個人情報が含まれる会議 '
 localization_priority: Normal
-ms.openlocfilehash: bbd237e9bfebac0b6d3f27b343ec1294d9e21881
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: VinodRavichandran
+ms.prod: microsoft-teams
+ms.openlocfilehash: 13a4b9af442c8cde7a6db48d651946bbb88416e1
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27853033"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27922355"
 ---
 # <a name="meetingtimecandidate-resource-type"></a>meetingTimeCandidate リソースの種類
 

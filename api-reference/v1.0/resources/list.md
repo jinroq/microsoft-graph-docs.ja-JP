@@ -3,12 +3,14 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/11/2017
 title: List
-ms.openlocfilehash: 3439443090e27c5ef48c2877fe9ea74a9c00cf42
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Priority
+ms.prod: sharepoint
+ms.openlocfilehash: 6bfd46e0822045869074cb0d78f14e3f0be0c994
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27022581"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27984389"
 ---
 # <a name="list-resource"></a>list リソース
 
@@ -85,7 +87,7 @@ list リソースで使用可能なタスクを次に示します。
 
 **list** リソースには以下のプロパティがあります。
 
-| プロパティ名    | 型                             | 説明
+| プロパティ名    | Type                             | 説明
 |:-----------------|:---------------------------------|:---------------------------
 | **displayName**  | 文字列                           | リストの表示可能なタイトルです。
 | **list**         | [listInfo][]                     | リストに関する追加の詳細を示します。
@@ -93,7 +95,7 @@ list リソースで使用可能なタスクを次に示します。
 
 次のプロパティは、**[baseItem][]** から継承しています。
 
-| プロパティ名            | 型              | 説明
+| プロパティ名            | Type              | 説明
 |:-------------------------|:------------------|:------------------------------
 | **id**                   | string            | アイテムの一意識別子。読み取り専用です。
 | **name**                 | 文字列            | アイテムの名前。

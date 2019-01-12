@@ -3,12 +3,13 @@ title: iosManagedAppProtection の取得
 description: iosManagedAppProtection オブジェクトのプロパティとリレーションシップを読み取ります。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 79f2f81544fc6b213bece5410a899ec7bde6e445
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 547f3313f77b0700b46505afd44a3ef5ba8fc4e4
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27890175"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27928837"
 ---
 # <a name="get-iosmanagedappprotection"></a>iosManagedAppProtection の取得
 

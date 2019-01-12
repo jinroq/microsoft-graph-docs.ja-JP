@@ -2,12 +2,14 @@
 title: iosCustomConfigurations のリスト
 description: iosCustomConfiguration オブジェクトのプロパティとリレーションシップをリストします。
 author: tfitzmac
-ms.openlocfilehash: 120864b720b645d7ef430cf7ecfc28afac97851d
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.prod: intune
+ms.openlocfilehash: 099bebe3f89f38310c1fee3fb5290cddb7d47871
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27335652"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27928879"
 ---
 # <a name="list-ioscustomconfigurations"></a>iosCustomConfigurations のリスト
 

@@ -3,12 +3,13 @@ title: AndroidForWorkNineWorkEasConfiguration を作成します。
 description: 新しい androidForWorkNineWorkEasConfiguration オブジェクトを作成します。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: f6dca00ea419ae3ea18d66a089204b494ae37b40
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: b186f446400455c4e969fc22074ecf2f9f3b9104
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27842526"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27929502"
 ---
 # <a name="create-androidforworknineworkeasconfiguration"></a>AndroidForWorkNineWorkEasConfiguration を作成します。
 

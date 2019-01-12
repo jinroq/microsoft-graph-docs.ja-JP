@@ -2,12 +2,14 @@
 title: Educationassignment を更新します。
 description: 割り当てオブジェクトを更新します。 クラスの先生だけは、これを実行できます。 割り当ての状態を変更するのには、修正プログラムの要求を使用できないことに注意してください。 発行アクションを使用すると、割り当ての状態を変更します。
 localization_priority: Normal
-ms.openlocfilehash: 78d5b526468fbdf35c3529084f878f8c35216c99
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: dipakboyed
+ms.prod: education
+ms.openlocfilehash: f8d79e11628e3a02a20c9ecdcd46bcd1bff05e7f
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27838291"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27960351"
 ---
 # <a name="update-educationassignment"></a>Educationassignment を更新します。
 

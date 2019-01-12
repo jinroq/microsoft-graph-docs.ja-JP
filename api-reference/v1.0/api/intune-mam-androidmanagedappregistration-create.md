@@ -3,12 +3,13 @@ title: androidManagedAppRegistration の作成
 description: 新しい androidManagedAppRegistration オブジェクトを作成します。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 84fc753a055e64549b0042d24acedf83827271df
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 4485ab59a2a1bc4658a12e9bff4fae57fae2c898
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27841554"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27931994"
 ---
 # <a name="create-androidmanagedappregistration"></a>androidManagedAppRegistration の作成
 

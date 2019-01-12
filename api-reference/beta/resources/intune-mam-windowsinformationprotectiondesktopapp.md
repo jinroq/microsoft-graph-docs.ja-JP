@@ -3,12 +3,13 @@ title: windowsInformationProtectionDesktopApp リソースの種類
 description: Windows 情報保護用デスクトップ アプリ
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 2cfcca1f4ce8338c2fd7f894e6b0b7a23fbe66e6
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 17be54f6f38f86161539b80ad41d5e1d20b16e35
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27855266"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27927052"
 ---
 # <a name="windowsinformationprotectiondesktopapp-resource-type"></a>windowsInformationProtectionDesktopApp リソースの種類
 

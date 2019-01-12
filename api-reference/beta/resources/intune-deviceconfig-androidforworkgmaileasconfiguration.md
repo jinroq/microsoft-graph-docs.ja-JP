@@ -2,12 +2,14 @@
 title: androidForWorkGmailEasConfiguration リソースの種類
 description: このプロファイルの構成を提供することで Exchange サーバーと通信し、電子メール、連絡先、カレンダー、タスク、およびメモを表示するデバイスの Android の作業で Gmail の電子メール クライアントに指示できます。 さらに、同期とデバイスを同期する必要がありますどのくらいの頻度にどのくらいのメールを指定することもできます。
 localization_priority: Normal
-ms.openlocfilehash: e912ad1db2aaff82333c69f7fede37d4f16bf0e4
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: tfitzmac
+ms.prod: intune
+ms.openlocfilehash: f974da3c84a0db18517b7d9210623f631c30c037
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27849232"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27928634"
 ---
 # <a name="androidforworkgmaileasconfiguration-resource-type"></a>androidForWorkGmailEasConfiguration リソースの種類
 

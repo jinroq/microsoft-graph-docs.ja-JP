@@ -3,12 +3,13 @@ title: microsoftStoreForBusinessPortalSelectionOptions 列挙型
 description: ポータル管理者は、ビジネス アプリケーションで使用可能なマイクロソフトのストアを同期します。 これは、Intune 管理コンソールで使用できます。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 2b1178780145c9d446052b3e047114f731a15f93
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 929a7149aacf226b9dc62a9561bc259f9af28ef7
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27819097"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27959385"
 ---
 # <a name="microsoftstoreforbusinessportalselectionoptions-enum-type"></a>microsoftStoreForBusinessPortalSelectionOptions 列挙型
 

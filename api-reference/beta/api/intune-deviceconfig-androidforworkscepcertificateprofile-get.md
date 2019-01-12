@@ -3,12 +3,13 @@ title: AndroidForWorkScepCertificateProfile を取得します。
 description: AndroidForWorkScepCertificateProfile オブジェクトのプロパティと関係を参照してください。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 97473548b30017a355c5fbb5c2fd26f921926f17
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 881284218e69fdd436462c4a39d8a850564df7b5
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27817382"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27928984"
 ---
 # <a name="get-androidforworkscepcertificateprofile"></a>AndroidForWorkScepCertificateProfile を取得します。
 

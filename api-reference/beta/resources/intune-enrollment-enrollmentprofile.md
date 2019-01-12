@@ -2,12 +2,14 @@
 title: enrollmentProfile リソースの種類
 description: EnrollmentProfile リソースでは、プレステージされて id が特定のデバイスの登録を有効にするのには事前登録を提供する必要がある構成のコレクションを表します。 ステージング済みのデバイスの id は、対応するデバイスの登録時のプロファイルの構成を適用するのには、このタイプのプロファイルに割り当てられます。
 localization_priority: Normal
-ms.openlocfilehash: 43aa6f5f3e8093da0c066012d763e5f0f6455da6
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: tfitzmac
+ms.prod: intune
+ms.openlocfilehash: b88745c060e71e32199a96b23f94fa0d3229d451
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27894307"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27935592"
 ---
 # <a name="enrollmentprofile-resource-type"></a>enrollmentProfile リソースの種類
 

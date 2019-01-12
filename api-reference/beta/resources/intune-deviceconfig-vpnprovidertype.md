@@ -3,12 +3,13 @@ title: vpnProviderType 列挙型
 description: アプリケーションごとの vpn プロバイダーの種類。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: ea3e3fcac5fc84270fcdb63b6ab673cb9f55aea9
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 1eeb0acf2f6e7b0773cbf4697e5a27699d1f2f27
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27861286"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27937727"
 ---
 # <a name="vpnprovidertype-enum-type"></a>vpnProviderType 列挙型
 

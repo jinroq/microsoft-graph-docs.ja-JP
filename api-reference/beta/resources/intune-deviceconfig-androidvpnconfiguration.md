@@ -3,12 +3,13 @@ title: androidVpnConfiguration リソースの種類
 description: このプロファイルの構成を提供することによって必要な VPN エンドポイントに接続するための Android デバイスに指示できます。 指定する認証方法とセキュリティの種類必要 VPN エンドポイントで行うことができます、VPN 接続シームレスなエンド ・ ユーザーのです。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 3338dec188994919fb680038553355808a39b0a8
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 86414a355f95858bcb6f6ab67c67d5ec068e53a6
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27871184"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27948262"
 ---
 # <a name="androidvpnconfiguration-resource-type"></a>androidVpnConfiguration リソースの種類
 

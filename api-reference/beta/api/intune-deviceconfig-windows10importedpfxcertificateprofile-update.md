@@ -3,12 +3,13 @@ title: Windows10ImportedPFXCertificateProfile を更新します。
 description: Windows10ImportedPFXCertificateProfile オブジェクトのプロパティを更新します。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 8216613b6854501d602f529b4447cb49f7583219
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 2bd45a3030447acc6358cf7812b578a9468a713b
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27838690"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27925072"
 ---
 # <a name="update-windows10importedpfxcertificateprofile"></a>Windows10ImportedPFXCertificateProfile を更新します。
 

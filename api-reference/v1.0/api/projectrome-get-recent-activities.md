@@ -2,12 +2,13 @@
 title: ユーザーの最近の活動を取得します。
 description: " API です。 サービスはの最も最近の historyItems では、クエリを実行し、それらの関連の活動を引き出します。 アクティビティは、 **historyItem**で、最新の**lastModified**に従って並べ替えられます。 これは、なしで**historyItems**が応答に含まれないことを意味します。 UserActivity.ReadWrite.CreatedByApp アクセス許可も適用されます応答に追加のフィルタ リング、アプリケーションによって作成された活動のみが返されるようにします。 このサーバー側のフィルター処理が発生空のページでユーザーが特に作業中であり、他のアプリケーションが最新の活動を作成します。 アプリケーションのアクティビティを取得するには、改ページ調整**nextLink**プロパティを使用します。"
 localization_priority: Normal
-ms.openlocfilehash: 9ae67169395b3667e8ba6ef34ce6a4b9c4567ac5
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: project-rome
+ms.openlocfilehash: d7d119f5a80e86a47c8f61756cad99542d0b3b0b
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27844255"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27947841"
 ---
 # <a name="get-recent-user-activities"></a>ユーザーの最近の活動を取得します。
 

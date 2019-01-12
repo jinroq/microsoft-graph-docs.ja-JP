@@ -3,12 +3,13 @@ title: ディレクトリ ロールのメンバーを削除する
 description: directoryRole からメンバーを削除します。
 author: lleonard-msft
 localization_priority: Normal
-ms.openlocfilehash: 57b99ec59765d58a96ae43919e7907d480e8817a
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: 0c218351d9c8e556220630f150f5e43592c626f0
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27843324"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27956143"
 ---
 # <a name="remove-directory-role-member"></a>ディレクトリ ロールのメンバーを削除する
 

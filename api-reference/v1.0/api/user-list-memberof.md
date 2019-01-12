@@ -3,12 +3,13 @@ title: memberOf を一覧表示する
 description: 'ユーザーがダイレクト メンバーになっているグループとディレクトリ ロールを取得します。 '
 author: dkershaw10
 localization_priority: Priority
-ms.openlocfilehash: cd43e3853d25a55ac8c41f170736a8c37477906e
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: 389cbe5a62b75e9396077d9710c0b92a497e8bd0
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27811376"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27962528"
 ---
 # <a name="list-memberof"></a>memberOf を一覧表示する
 

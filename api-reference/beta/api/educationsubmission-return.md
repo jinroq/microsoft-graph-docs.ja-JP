@@ -3,12 +3,13 @@ title: 'educationSubmission: 戻る'
 description: この操作によって、評価とフィードバックを受講者に利用可能なこの送信に関連付けられています。
 author: dipakboyed
 localization_priority: Normal
-ms.openlocfilehash: e4e5802e819543679158a3940fcf35ca624bad71
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: education
+ms.openlocfilehash: 39e57044571b43df0515755035e23a38980376fe
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27887732"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27930650"
 ---
 # <a name="educationsubmission-return"></a>educationSubmission: 戻る
 

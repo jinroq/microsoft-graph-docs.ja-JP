@@ -3,12 +3,13 @@ title: windowsNetworkIsolationPolicy リソースの種類
 description: Windows ネットワークの分離のポリシー
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 82026ba4d82b85a0275f83bb729b495e17ff5d5c
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 5bb427d519cf1f981997b70242095af22bf705df
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27834616"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27940163"
 ---
 # <a name="windowsnetworkisolationpolicy-resource-type"></a>windowsNetworkIsolationPolicy リソースの種類
 

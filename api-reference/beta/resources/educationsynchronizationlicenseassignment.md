@@ -3,12 +3,13 @@ title: educationSynchronizationLicenseAssignment リソースの種類
 description: ユーザー アカウントに割り当てるにはライセンス情報を表します。 新しいユーザー アカウントを作成するときに、ライセンスの割り当てを設定するのには、リソースが使用されます。
 author: mmast-msft
 localization_priority: Normal
-ms.openlocfilehash: 9100ba799c8981d5defdd74d6346a66859b2d53e
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: education
+ms.openlocfilehash: 757e080a8b2c6f3f01fa1663f10c9b0b98eaf4d3
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27804908"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27948276"
 ---
 # <a name="educationsynchronizationlicenseassignment-resource-type"></a>educationSynchronizationLicenseAssignment リソースの種類
 

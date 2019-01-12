@@ -3,12 +3,13 @@ title: networkManagementCondition リソースの種類
 description: ネットワーク管理の条件を定義するための情報が含まれています。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 7d91ac60ae52f3317e8148e8bb4adcaf82afac53
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 00ccc045892290ff03e68a109ccc01c4d5dbf8a1
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27806511"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27927045"
 ---
 # <a name="networkmanagementcondition-resource-type"></a>networkManagementCondition リソースの種類
 

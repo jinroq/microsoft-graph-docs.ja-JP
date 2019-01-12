@@ -2,12 +2,14 @@
 title: bookingAppointment リソースの種類
 description: " > **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。"
 localization_priority: Normal
-ms.openlocfilehash: aed5f26d69835c69021e8c3c8c5e27f5180d6c69
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: angelgolfer-ms
+ms.prod: bookings
+ms.openlocfilehash: 0314c8a4d451625c2ee1df332c342c1871a098ad
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27856113"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27934094"
 ---
 # <a name="bookingappointment-resource-type"></a>bookingAppointment リソースの種類
 

@@ -3,12 +3,13 @@ title: win32LobAppReturnCode リソースの種類
 description: Win32 アプリケーションのプロパティ戻り値のコードにはが含まれています
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: f635c49ece6a1083ef3a89271faf76e01206e9ed
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 0728ee3c029331b37369172373ef1400dde37991
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27849820"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27927864"
 ---
 # <a name="win32lobappreturncode-resource-type"></a>win32LobAppReturnCode リソースの種類
 

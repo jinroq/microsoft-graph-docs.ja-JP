@@ -2,12 +2,13 @@
 title: 'reportRoot: getEmailActivityCounts'
 description: 組織内の電子メール アクティビティ (送信、読み取り、受信の数) の傾向を把握できます。
 localization_priority: Normal
-ms.openlocfilehash: 8ebc17f81eddcb0519c6a49ab29d777ab4ee1cd7
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: reports
+ms.openlocfilehash: ef017a77efc8efaaa1729f6080d77c4aeeff25b6
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27863309"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27955108"
 ---
 # <a name="reportroot-getemailactivitycounts"></a>reportRoot: getEmailActivityCounts
 

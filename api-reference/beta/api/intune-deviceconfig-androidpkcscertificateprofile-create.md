@@ -3,12 +3,13 @@ title: AndroidPkcsCertificateProfile を作成します。
 description: 新しい androidPkcsCertificateProfile オブジェクトを作成します。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: cfdb80fbe0c4d31d5b7d7b48870208e7385dfd11
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 9b23a029c3e802e2c4206afd499d4592c32097c4
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27852683"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27933373"
 ---
 # <a name="create-androidpkcscertificateprofile"></a>AndroidPkcsCertificateProfile を作成します。
 

@@ -3,12 +3,13 @@ title: MailFolder を更新する
 description: mailFolder オブジェクトのプロパティを更新します。
 author: angelgolfer-ms
 localization_priority: Normal
-ms.openlocfilehash: e2ce809c75a911b7d68ed80692a14a537c659d37
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: outlook
+ms.openlocfilehash: 849b5e99f96b3ca891ef719e6ae45e8a2bcdd372
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27871632"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27938651"
 ---
 # <a name="update-mailfolder"></a>MailFolder を更新する
 

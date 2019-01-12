@@ -3,12 +3,13 @@ title: mobileLobApp リソースの種類
 description: ビジネス アプリのすべての携帯電話回線のプロパティを含む抽象基本クラス。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 4c36fbccf3549367cb0f6d58c5b50d6fc46a018a
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 7f87769fa7d56bcd97dca165f40d1277ffa0dcd7
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27860761"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27932666"
 ---
 # <a name="mobilelobapp-resource-type"></a>mobileLobApp リソースの種類
 

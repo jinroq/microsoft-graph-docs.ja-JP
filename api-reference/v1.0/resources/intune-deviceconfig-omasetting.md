@@ -3,12 +3,13 @@ title: omaSetting リソースの種類
 description: OMA 設定の定義。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 86cb06b35a0f64052860c268764696a1db8459e3
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 42b6d5fcea7b3b46acf8d0a119213f679d99aed6
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27888383"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27961485"
 ---
 # <a name="omasetting-resource-type"></a>omaSetting リソースの種類
 

@@ -2,12 +2,14 @@
 title: educationAssignmentClassRecipient リソースの種類
 description: 'Assignment.assignTo プロパティ内で使用します。 クラスの受信者に設定すると、クラスのすべての受講者用のします。 '
 localization_priority: Normal
-ms.openlocfilehash: 66ccbd4d0105fa88c67645f1a153df288d4989ec
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: dipakboyed
+ms.prod: education
+ms.openlocfilehash: db5ddb1875b9c149d400c74c9fffdd37935853e2
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27856967"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27934297"
 ---
 # <a name="educationassignmentclassrecipient-resource-type"></a>educationAssignmentClassRecipient リソースの種類
 

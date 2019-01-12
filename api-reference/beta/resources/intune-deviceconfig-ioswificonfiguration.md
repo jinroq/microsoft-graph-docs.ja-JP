@@ -3,12 +3,13 @@ title: iosWiFiConfiguration リソースの種類
 description: このプロファイルの構成を提供することによって必要な Wi-fi のエンドポイントに接続するための iOS デバイスに指示できます。 指定する認証方法とセキュリティの種類必要 Wi-fi エンドポイントで行うことができます Wi-fi 接続シームレスなエンド ・ ユーザーのです。 このプロファイルは、エンタープライズ Wi-fi プロファイルよりも制限し、簡単なセキュリティの種類を提供します。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 039b50674604d2d8a108ff08ce7f865beec1f69b
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: a0d08c131a33c5a1a33853d7eb37b563a7723637
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27856617"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27927927"
 ---
 # <a name="ioswificonfiguration-resource-type"></a>iosWiFiConfiguration リソースの種類
 

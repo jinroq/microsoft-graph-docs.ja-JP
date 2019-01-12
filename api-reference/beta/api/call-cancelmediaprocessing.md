@@ -3,12 +3,13 @@ title: '電話: cancelMediaProcessing'
 description: キャンセル メディアのすべての処理中、PlayPrompt、またはレコードの操作。
 author: VinodRavichandran
 localization_priority: Normal
-ms.openlocfilehash: 9885e05bdca0d04daf597190eb118c81b8774c0a
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: microsoft-teams
+ms.openlocfilehash: db5a918f630fc54cc6eb574896e9e42af179c05a
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27859452"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27921998"
 ---
 # <a name="call-cancelmediaprocessing"></a>電話: cancelMediaProcessing
 

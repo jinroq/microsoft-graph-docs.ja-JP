@@ -2,12 +2,14 @@
 title: 会話リソースの種類
 description: 会話はスレッドのコレクションです。スレッドにはそのスレッドへの投稿が含まれています。会話のすべてのスレッドと投稿は同じ件名を共有します。
 localization_priority: Normal
-ms.openlocfilehash: c1d4bdda7efebb890458be2146dc72cdb9c76389
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: dkershaw10
+ms.prod: groups
+ms.openlocfilehash: 0066a636d2b36e74443380598c2ca6e8daf826c1
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27862959"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27928158"
 ---
 # <a name="conversation-resource-type"></a>会話リソースの種類
 

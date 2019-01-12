@@ -3,12 +3,13 @@ title: AndroidForWorkEnterpriseWiFiConfiguration を削除します。
 description: AndroidForWorkEnterpriseWiFiConfiguration を削除します。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 2a37c935ab17512cb40ebd81cdb245d68c0289cd
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: c8049fb840ddbc80490dee5e19d4dcb9969e5fec
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27807736"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27929313"
 ---
 # <a name="delete-androidforworkenterprisewificonfiguration"></a>AndroidForWorkEnterpriseWiFiConfiguration を削除します。
 

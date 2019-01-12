@@ -3,12 +3,13 @@ title: educationSynchronizationProfileStatus リソースの種類
 description: '学校のデータの同期プロファイルの同期の状態を表します。 '
 author: mmast-msft
 localization_priority: Normal
-ms.openlocfilehash: 4476ffc7c64fb5d9852c46e2b748587e79d427c1
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: education
+ms.openlocfilehash: d16619b0cf1e2c09358cf585b896b0c7c7d4f318
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27858164"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27928928"
 ---
 # <a name="educationsynchronizationprofilestatus-resource-type"></a>educationSynchronizationProfileStatus リソースの種類
 

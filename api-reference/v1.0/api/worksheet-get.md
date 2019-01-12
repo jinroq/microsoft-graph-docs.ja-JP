@@ -3,12 +3,13 @@ title: ワークシートを取得する
 description: ワークシート オブジェクトのプロパティと関係を取得します。
 author: lumine2008
 localization_priority: Normal
-ms.openlocfilehash: 916179517e307acddaaf2e393ed85036eb58341a
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: excel
+ms.openlocfilehash: d477efb6566690885310d7a521ea0eee66fb6edf
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27821302"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27921571"
 ---
 # <a name="get-worksheet"></a>ワークシートを取得する
 

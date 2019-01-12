@@ -1,14 +1,15 @@
 ---
 title: デバイス グループを一覧表示
 description: このデバイスが直接のメンバーであるグループを取得します。 この操作は、推移的ではありません。
-author: tfitzmac
+author: lleonard-msft
 localization_priority: Normal
-ms.openlocfilehash: a189b6fc0c06862b444d741767c20a46f0fa115a
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: 1642b6ee758af5d2ab4004ea5b7a5293f33f7d01
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27804810"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27912380"
 ---
 # <a name="list-device-groups"></a>デバイス グループを一覧表示
 

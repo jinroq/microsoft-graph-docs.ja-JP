@@ -2,12 +2,14 @@
 title: directoryRole リソース型
 description: Azure AD ディレクトリの役割を表します。 Azure AD ディレクトリの役割は、*管理者の役割*とも呼ばれます。 ディレクトリ (管理者) の役割の詳細については、Azure AD の管理者の役割の割り当てを参照してください。 Graph とには、ターゲットのロールのアクセス許可を付与するディレクトリのロールにユーザーを割り当てることができます。 ディレクトリのロールの読み取りや、そのメンバーにする必要があります最初でアクティブにするテナントです。 会社の管理者のディレクトリの役割のみが既定でアクティブにします。 その他の利用可能なディレクトリの役割を有効にするのにはディレクトリの役割の基になる directoryRoleTemplate の ID で POST 要求を送信します。 directoryObject から継承します。
 localization_priority: Normal
-ms.openlocfilehash: 30f9b56652d3e4c7ebb1466941930cea0cf12ebf
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: lleonard-msft
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: e6753369be070ab04419cab0c870aec7e96b1fb2
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27876224"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27927745"
 ---
 # <a name="directoryrole-resource-type"></a>directoryRole リソース型
 

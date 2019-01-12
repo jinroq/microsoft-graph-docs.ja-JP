@@ -3,12 +3,13 @@ title: educationTerm リソースの種類
 description: 用語。 これは学年度の指定された部分を示します。 educationClass 内で使用します。
 author: mmast-msft
 localization_priority: Normal
-ms.openlocfilehash: af11aa6b4a110417152c76dd606245a18ad51c28
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: education
+ms.openlocfilehash: 9c26565b552471fe2601d8e3cb629fd933d72937
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27851451"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27947583"
 ---
 # <a name="educationterm-resource-type"></a>educationTerm リソースの種類
 

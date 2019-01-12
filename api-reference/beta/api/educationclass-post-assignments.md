@@ -2,12 +2,14 @@
 title: EducationAssignment を作成します。
 description: '新しい割り当てを作成します。 クラスで教師だけでは、割り当てを作成できます。 割り当ては、エントリの公開が呼び出されるまで、受講者は、割り当てが表示されないことを意味する下書きの状態で起動します。  '
 localization_priority: Normal
-ms.openlocfilehash: 6bcc1f44be9d811335d24cea7502c0752052c5ab
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: mmast-msft
+ms.prod: education
+ms.openlocfilehash: f86c6c3cc94ada7865038a0e8ae4aff90285719e
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27824186"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27950159"
 ---
 # <a name="create-educationassignment"></a>EducationAssignment を作成します。
 

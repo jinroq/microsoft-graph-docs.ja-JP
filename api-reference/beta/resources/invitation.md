@@ -2,12 +2,14 @@
 title: 招待マネージャー
 description: '招待マネージャーを使用して、組織に外部ユーザーを追加するための招待状を作成します。 '
 localization_priority: Normal
-ms.openlocfilehash: ffe09e5043b60b01728d497b88034b289bdc5131
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: lleonard-msft
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: 72ff2ca13a0de314697961504da9a4203afdb2b1
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27811243"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27981050"
 ---
 # <a name="invitation-manager"></a>招待マネージャー
 

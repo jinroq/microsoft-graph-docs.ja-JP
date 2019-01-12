@@ -3,12 +3,13 @@ title: EducationSynchronizationProfile を更新します。
 description: テナント内の既存校のデータの同期プロファイルのプロパティを更新します。
 author: mmast-msft
 localization_priority: Normal
-ms.openlocfilehash: b9f5ee2866d1e898035355a389b0358347d4d00b
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: education
+ms.openlocfilehash: 07947127b0346a33528136921580646623576d28
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27818530"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27935088"
 ---
 # <a name="update-an-educationsynchronizationprofile"></a>EducationSynchronizationProfile を更新します。
 

@@ -3,12 +3,13 @@ title: setMobileDeviceManagementAuthority アクション
 description: モバイル デバイス管理権限の設定
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 8b488b500ac203dfed0582eadc738c15ecf41950
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 921f0c0d6f6012f7cf9dac0545bb97392cd5b998
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27889797"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27950474"
 ---
 # <a name="setmobiledevicemanagementauthority-action"></a>setMobileDeviceManagementAuthority アクション
 

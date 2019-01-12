@@ -2,12 +2,14 @@
 title: windowsPhoneEASEmailProfileConfiguration リソースの種類
 description: このプロファイルの構成を提供することによって、Exchange サーバーと通信し、電子メール、連絡先、カレンダー、およびタスクを取得する Windows Phone 上のネイティブの電子メール クライアントに指示できます。 さらに、同期とデバイスを同期する必要がありますどのくらいの頻度にどのくらいのメールを指定することもできます。
 localization_priority: Normal
-ms.openlocfilehash: 03442c352d0868ee8d75a16ce2934d9b8c22a992
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: tfitzmac
+ms.prod: intune
+ms.openlocfilehash: e48ad65da5c91278460dea2c8c6a74707f7b3f41
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27809822"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27932498"
 ---
 # <a name="windowsphoneeasemailprofileconfiguration-resource-type"></a>windowsPhoneEASEmailProfileConfiguration リソースの種類
 

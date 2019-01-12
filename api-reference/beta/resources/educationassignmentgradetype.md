@@ -2,12 +2,14 @@
 title: educationAssignmentGradeType リソースの種類
 description: 割り当てに採点する方式を表します。 **Assignments.grading**プロパティ内で使用されます。
 localization_priority: Normal
-ms.openlocfilehash: 42ad1789ca7340466f89bf480904ebcd524507b2
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: dipakboyed
+ms.prod: education
+ms.openlocfilehash: 214d54e8def3749186d90a92c37635c966fb8686
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27873361"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27944720"
 ---
 # <a name="educationassignmentgradetype-resource-type"></a>educationAssignmentGradeType リソースの種類
 
