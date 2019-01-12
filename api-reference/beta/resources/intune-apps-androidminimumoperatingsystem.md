@@ -3,12 +3,13 @@ title: androidMinimumOperatingSystem リソースの種類
 description: Android モバイル アプリに必要な最小限のオペレーティング システムのプロパティが含まれます。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 96b68aa12a1cbd0abe2b7761b44a0ef9a5863048
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 94f11678ab43e5f8785cb6cc0eddf073105b3ce8
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27875867"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27975611"
 ---
 # <a name="androidminimumoperatingsystem-resource-type"></a>androidMinimumOperatingSystem リソースの種類
 
@@ -28,9 +29,9 @@ Android モバイル アプリに必要な最小限のオペレーティング �
 |v4_4|ブール型 (Boolean)|バージョン 4.4 以降。|
 |v5_0|ブール型 (Boolean)|バージョン 5.0 以降。|
 |v5_1|ブール型 (Boolean)|バージョン 5.1 以降。|
-|v6_0|ブール型|6.0 またはそれ以降のバージョンです。|
-|v7_0|ブール型|7.0 またはそれ以降のバージョンです。|
-|v7_1|ブール型|7.1 以降のバージョンです。|
+|v6_0|Boolean|6.0 またはそれ以降のバージョンです。|
+|v7_0|Boolean|7.0 またはそれ以降のバージョンです。|
+|v7_1|Boolean|7.1 以降のバージョンです。|
 |v8_0|ブール型 (Boolean)|バージョン 8.0 以降。|
 |v8_1|ブール型 (Boolean)|8.1 またはそれ以降のバージョンです。|
 |v9_0|ブール型 (Boolean)|バージョン 9.0 以降。|

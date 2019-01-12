@@ -3,12 +3,13 @@ title: AndroidWorkProfileScepCertificateProfile を作成します。
 description: 新しい androidWorkProfileScepCertificateProfile オブジェクトを作成します。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: f36e156ed2d2afa23e4162704f2498a10b684439
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 3b77568aa698451cc86634c60331c9f8c618cb56
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27858584"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27958769"
 ---
 # <a name="create-androidworkprofilescepcertificateprofile"></a>AndroidWorkProfileScepCertificateProfile を作成します。
 

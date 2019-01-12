@@ -3,12 +3,13 @@ title: editionUpgradeConfiguration リソースの種類
 description: Windows 10 エディションのアップグレード構成です。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: d82f05c1c64bbe3c5006798607dbd627cbf6630d
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 93dc21db940afe5fe79ae0a76904f3e350f019d4
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27874187"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27977067"
 ---
 # <a name="editionupgradeconfiguration-resource-type"></a>editionUpgradeConfiguration リソースの種類
 

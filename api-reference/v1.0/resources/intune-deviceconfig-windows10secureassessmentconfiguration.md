@@ -2,12 +2,14 @@
 title: windows10SecureAssessmentConfiguration リソースの種類
 description: このトピックでは、secureAssessment リソースによって公開された、宣言されたメソッド、プロパティ、リレーションシップについて説明します。
 localization_priority: Normal
-ms.openlocfilehash: 954bc43a6b179e2b5a680dfe4f6368b5990312e5
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: tfitzmac
+ms.prod: intune
+ms.openlocfilehash: 5e0f2cafde26603b50e488d4ab634b19ce631e7b
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27846026"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27961513"
 ---
 # <a name="windows10secureassessmentconfiguration-resource-type"></a>windows10SecureAssessmentConfiguration リソースの種類
 

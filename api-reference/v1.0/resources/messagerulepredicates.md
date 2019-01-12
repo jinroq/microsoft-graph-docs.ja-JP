@@ -3,12 +3,13 @@ title: messageRulePredicates リソースの種類
 description: ルールで使用可能な条件および例外のセットを表します。
 author: angelgolfer-ms
 localization_priority: Normal
-ms.openlocfilehash: 13978b4ee09f863ee3f57ac109ee8f3f5adf39c4
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: outlook
+ms.openlocfilehash: e3f423cdc1c00bdaa7be410fc755b8fe3a065dd3
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27804740"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27968387"
 ---
 # <a name="messagerulepredicates-resource-type"></a>messageRulePredicates リソースの種類
 
@@ -22,13 +23,13 @@ ms.locfileid: "27804740"
 | bodyOrSubjectContains | Collection(String) | 条件または例外を適用するために、受信メッセージの本文または件名に表示される文字列を表します。 |
 | categories | Collection(String) | 条件または例外を適用するために、受信メッセージにラベルを付けるカテゴリを表します。 |
 | fromAddresses | コレクション ([受信者](recipient.md)) | 条件または例外を適用するために、受信メッセージの特定の送信者のメール アドレスを表します。 |
-| hasAttachments | ブール型 | 条件または例外を適用するために、受信メッセージに添付ファイルがあるかどうかを示します。 |
+| hasAttachments | Boolean | 条件または例外を適用するために、受信メッセージに添付ファイルがあるかどうかを示します。 |
 | headerContains | Collection(String) | 条件または例外を適用するために、受信メッセージのヘッダーに表示される文字列を表します。 |
 | importance | importance | 条件または例外を適用するために、受信メッセージに記録される重要性: `low`、`normal`、`high`。 |
 | isApprovalRequest | Boolean | 条件または例外を適用するために、受信メッセージが承認要求であるかどうかを示します。 |
 | isAutomaticForward | Boolean | 条件または例外を適用するために、受信メッセージが自動的に転送されるかどうかを示します。 |
 | isAutomaticReply | Boolean | 条件または例外を適用するために、受信メッセージが自動返信であるかどうかを示します。 |
-| isEncrypted | ブール型 | 条件または例外を適用するために、受信メッセージが暗号化されるかどうかを示します。 |
+| isEncrypted | Boolean | 条件または例外を適用するために、受信メッセージが暗号化されるかどうかを示します。 |
 | isMeetingRequest | Boolean | 条件または例外を適用するために、受信メッセージが会議出席依頼であるかどうかを示します。 |
 | isMeetingResponse | Boolean | 条件または例外を適用するために、受信メッセージが会議出席依頼の返信であるかどうかを示します。 |
 | isNonDeliveryReport | Boolean | 条件または例外を適用するために、受信メッセージが配信不能レポートであるかどうかを示します。 |

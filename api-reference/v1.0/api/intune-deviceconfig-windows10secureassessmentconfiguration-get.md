@@ -3,12 +3,13 @@ title: Get windows10SecureAssessmentConfiguration
 description: windows10SecureAssessmentConfiguration オブジェクトのプロパティとリレーションシップを読み取ります。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 54573c361c2242c071278dad0d6f715f52f5a9cf
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: b42023e1e631de94cd09468ae687c65e32a008ee
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27874370"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27974267"
 ---
 # <a name="get-windows10secureassessmentconfiguration"></a>Get windows10SecureAssessmentConfiguration
 

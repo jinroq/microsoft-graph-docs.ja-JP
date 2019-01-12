@@ -3,12 +3,13 @@ title: installIntent 列挙型
 description: 管理者が選択したインストールの目的に使用できる値
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: fd64622fd9471c0aff9f9d50ef9c0ad1a9e2ef63
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: ff15f72c3f746eb433b050df61fc8f1bd73b7e89
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27874978"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27967057"
 ---
 # <a name="installintent-enum-type"></a>installIntent 列挙型
 

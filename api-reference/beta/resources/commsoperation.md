@@ -3,12 +3,13 @@ title: commsOperation リソースの種類
 description: 特定の実行時間の長い操作のステータス。
 author: VinodRavichandran
 localization_priority: Normal
-ms.openlocfilehash: d70ad6535d5ae829de4b9bac3c5b9fea9b53188b
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: microsoft-teams
+ms.openlocfilehash: 79fc6801e95854b2530f8a28c13f7180ed02203f
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27821449"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27957726"
 ---
 # <a name="commsoperation-resource-type"></a>commsOperation リソースの種類
 

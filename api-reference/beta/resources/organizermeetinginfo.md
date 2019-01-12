@@ -3,12 +3,13 @@ title: organizerMeetingInfo リソースの種類
 description: 会議については、会議の開催者を含みます。
 author: VinodRavichandran
 localization_priority: Normal
-ms.openlocfilehash: fd096a55762892ca9b2fd72c883a544e503c5f90
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: microsoft-teams
+ms.openlocfilehash: 66a08b30741d488edf2d514568a17f292e588c23
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27870733"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27957705"
 ---
 # <a name="organizermeetinginfo-resource-type"></a>organizerMeetingInfo リソースの種類
 

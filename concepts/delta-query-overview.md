@@ -2,12 +2,13 @@
 title: デルタ クエリを使用して、Microsoft Graph データの変更を追跡する
 description: デルタ クエリを使用すると、アプリケーションは、要求ごとにターゲット リソースをすべて読み取ることなく、新しく作成、更新、または削除されたエンティティを検出できます。Microsoft Graph アプリケーションはデルタ クエリを使用して、変更をローカル データ ストアと効率的に同期させることができます。
 author: piotrci
-ms.openlocfilehash: d01a40ee0abf9bde10334debe2692f165307b345
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Priority
+ms.openlocfilehash: 77f5a4eae74e40655d858fb839697aca80851afb
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27334770"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27823867"
 ---
 # <a name="use-delta-query-to-track-changes-in-microsoft-graph-data"></a>デルタ クエリを使用して、Microsoft Graph データの変更を追跡する
 

@@ -3,12 +3,13 @@ title: win32LobAppRegistryDetectionType 列挙型
 description: すべて含まれているレジストリ データの検出の種類をサポートします。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 60e27e01825c54677bfb88727b8dcbc16a808278
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 0098f0aec6b23f9660fe69064c0c3131b009cab1
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27831854"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27965867"
 ---
 # <a name="win32lobappregistrydetectiontype-enum-type"></a>win32LobAppRegistryDetectionType 列挙型
 

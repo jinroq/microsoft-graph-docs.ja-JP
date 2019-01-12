@@ -3,12 +3,13 @@ title: domainDnsTxtRecord リソースの種類
 description: テナント内の特定のドメインの DNS ゾーン ファイルに追加された TXT レコードを表します。DomainDnsRecord エンティティから継承されます。
 author: lleonard-msft
 localization_priority: Normal
-ms.openlocfilehash: 81b55bafc07dda0900c57505805c5ac1ed2ebf51
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: 6838c868785c753b127c9cacbd9f4ff7355158c8
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27890028"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27983171"
 ---
 # <a name="domaindnstxtrecord-resource-type"></a>domainDnsTxtRecord リソースの種類
 

@@ -3,12 +3,13 @@ title: officeClientCheckinStatus リソースの種類
 description: チェックインのテナント統計 (stats) を記述するエンティティです。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: ff75c5d73db35c5c2ff70ad3a3dc3e4509745188
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: a387e04b9ebc15d65eb8dd883ecd4a9bae78ad6d
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27825234"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27969290"
 ---
 # <a name="officeclientcheckinstatus-resource-type"></a>officeClientCheckinStatus リソースの種類
 
@@ -24,7 +25,7 @@ ms.locfileid: "27825234"
 |deviceName|String|チェックインしようとするデバイスの名前。|
 |devicePlatform|String|デバイスのプラットフォームにチェックインしようとします。|
 |devicePlatformVersion|String|デバイス プラットフォームのバージョンがチェックインをしようとします。|
-|wasSuccessful|ブール型|最後のチェックインが正常に完了しました。 場合、|
+|wasSuccessful|Boolean|最後のチェックインが正常に完了しました。 場合、|
 |userId|String|デバイスを使用してユーザーの識別子です。|
 |checkinDateTime|DateTimeOffset|最後デバイス チェックの時間 (utc) です。|
 |エラー メッセージ|String|最後のチェックインに関連付けられている場合のエラー メッセージです。|

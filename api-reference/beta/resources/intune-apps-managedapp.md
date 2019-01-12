@@ -3,12 +3,13 @@ title: managedApp リソースの種類
 description: Intune アプリ保護ポリシーで管理できるアプリの、プロパティと継承済みプロパティを含む抽象クラス。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 3390671b67366cfea52ffa0c8442c3b2857d1471
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 50c54aaa3bae11259523a7a9d4167919b20a0f0b
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27862966"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27957607"
 ---
 # <a name="managedapp-resource-type"></a>managedApp リソースの種類
 

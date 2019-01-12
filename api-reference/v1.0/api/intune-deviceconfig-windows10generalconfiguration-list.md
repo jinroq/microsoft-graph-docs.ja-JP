@@ -3,12 +3,13 @@ title: windows10GeneralConfigurations のリスト
 description: windows10GeneralConfiguration オブジェクトのプロパティとリレーションシップをリストします。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 5d988b02c7fce0c3ef11f0c4ac4b3c12360fff1a
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 61152396259a81202b5002dc34a04bb66edc3732
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27809668"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27962318"
 ---
 # <a name="list-windows10generalconfigurations"></a>windows10GeneralConfigurations のリスト
 

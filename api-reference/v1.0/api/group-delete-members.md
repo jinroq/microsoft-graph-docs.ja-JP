@@ -2,12 +2,14 @@
 title: メンバーを削除する
 description: この API を使用して、**members** ナビゲーション プロパティを通じて Office 365 のグループ、セキュリティ グループ、メールが有効なセキュリティ グループからメンバーを削除できます。ユーザーや他のグループを削除できます。
 localization_priority: Priority
-ms.openlocfilehash: 1dec6bc3ed58a9052e7cac0f063303d789aa938d
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: dkershaw10
+ms.prod: groups
+ms.openlocfilehash: 0f93449f5fdebfce3388f20418174b03b91615d6
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27825537"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27966742"
 ---
 # <a name="remove-member"></a>メンバーを削除する
 この API を使用して、**members** ナビゲーション プロパティを通じて Office 365 のグループ、セキュリティ グループ、メールが有効なセキュリティ グループからメンバーを削除できます。ユーザーや他のグループを削除できます。

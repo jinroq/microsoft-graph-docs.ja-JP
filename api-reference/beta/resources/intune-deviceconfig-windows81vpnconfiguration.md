@@ -3,12 +3,13 @@ title: windows81VpnConfiguration リソースの種類
 description: このプロファイルの構成を提供することによって必要な VPN エンドポイントに接続する Windows 8.1 の (およびそれ以降) のデバイスに指示できます。 指定する認証方法とセキュリティの種類必要 VPN エンドポイントで行うことができます、VPN 接続シームレスなエンド ・ ユーザーのです。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 2e60d6acca8eca7a22fe215b3873a9e5db26a633
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: afed5e7fa1cc049c67341da7a9ffb37dd48af0bd
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27890847"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27967344"
 ---
 # <a name="windows81vpnconfiguration-resource-type"></a>windows81VpnConfiguration リソースの種類
 

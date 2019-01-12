@@ -3,12 +3,13 @@ title: ownedObjects を一覧表示する　
 description: ユーザーが所有しているディレクトリ オブジェクトの一覧を取得します。
 author: dkershaw10
 localization_priority: Normal
-ms.openlocfilehash: fc9a39ef672d62cb0f68a8cca09aecf8d6507b90
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: 43ee92b27522157ccd691435812e59da24041f7f
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27811502"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27955751"
 ---
 # <a name="list-ownedobjects"></a>ownedObjects を一覧表示する　
 

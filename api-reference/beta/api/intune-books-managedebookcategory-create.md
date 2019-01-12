@@ -3,12 +3,13 @@ title: ManagedEBookCategory を作成します。
 description: 新しい managedEBookCategory オブジェクトを作成します。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 5fff69b39e3197983b88057397c1352abd3b9bad
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: f86f3570f63a6aa3982e9cb2ffbf659d1a9a752c
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27869518"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27990251"
 ---
 # <a name="create-managedebookcategory"></a>ManagedEBookCategory を作成します。
 

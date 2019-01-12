@@ -2,12 +2,14 @@
 title: AccessReview のレビュー担当者を削除します。
 description: 'Azure AD アクセスのレビュー機能では、レビュー担当者として、ユーザーを削除するのには既存の accessReview オブジェクトを更新します。  この操作のみ許可されてはまだ完了していない、アクセスの確認のためや、アクセスの確認にのみ、校閲者が明示的に指定されています。 この操作は、アクセス確認をユーザーが独自のアクセスを確認するには許可されませんし、校閲者として、グループの所有者が割り当てられている、アクセス確認のためではありません。 '
 localization_priority: Normal
-ms.openlocfilehash: d33c1c2409b866a48d0684612f8c878e14dedb68
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: lleonard-msft
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: 84bf3d973820067e0d4561e9647f688c025d957f
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27866025"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27956690"
 ---
 # <a name="remove-accessreview-reviewer"></a>AccessReview のレビュー担当者を削除します。
 

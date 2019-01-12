@@ -3,12 +3,13 @@ title: リソースの種類を使用
 description: 特定のユーザーによって使用されるドキュメントを表すの把握。 詳細情報は、ユーザーが表示またはアクセスする最も適切なドキュメントを返します。
 author: simonhult
 localization_priority: Normal
-ms.openlocfilehash: cb41fcb7cef5c9e39f9100ebd1d8c2640f06e2d0
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: insights
+ms.openlocfilehash: 2f8479896f8c06fdc6193cfa8c18a0c3d8293bc7
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27885534"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27976059"
 ---
 # <a name="used-resource-type"></a>リソースの種類を使用
 

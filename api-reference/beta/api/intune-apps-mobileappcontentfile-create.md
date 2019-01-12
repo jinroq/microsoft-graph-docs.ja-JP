@@ -3,12 +3,13 @@ title: mobileAppContentFile の作成
 description: 新しい mobileAppContentFile オブジェクトを作成します。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: f6b8098a4311c723627d671980bfb006d4cab036
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 712af333021d02ca043771b79ad88b493a3b1ae3
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27883245"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27974978"
 ---
 # <a name="create-mobileappcontentfile"></a>mobileAppContentFile の作成
 
@@ -58,8 +59,8 @@ POST /deviceAppManagement/mobileApps/{mobileAppId}/contentVersions/{mobileAppCon
 |azureStorageUriExpirationDateTime|DateTimeOffset|Azure ストレージ URI の有効期限が切れる時刻。|
 |manifest|Binary|マニフェスト情報。|
 |uploadState|[mobileAppContentFileUploadState](../resources/intune-apps-mobileappcontentfileuploadstate.md)|現在のアップロード要求の状態。 可能な値は、`success`、`transientError`、`error`、`unknown`、`azureStorageUriRequestSuccess`、`azureStorageUriRequestPending`、`azureStorageUriRequestFailed`、`azureStorageUriRequestTimedOut`、`azureStorageUriRenewalSuccess`、`azureStorageUriRenewalPending`、`azureStorageUriRenewalFailed`、`azureStorageUriRenewalTimedOut`、`commitFileSuccess`、`commitFilePending`、`commitFileFailed`、`commitFileTimedOut` です。|
-|isFrameworkFile|ブール型|フレームワーク ファイルのファイルかどうかを示す値です。|
-|isDependency|ブール型|かどうか、コンテンツ ファイルは、メインのコンテンツ ファイルの依存関係です。|
+|isFrameworkFile|Boolean|フレームワーク ファイルのファイルかどうかを示す値です。|
+|isDependency|Boolean|かどうか、コンテンツ ファイルは、メインのコンテンツ ファイルの依存関係です。|
 
 
 

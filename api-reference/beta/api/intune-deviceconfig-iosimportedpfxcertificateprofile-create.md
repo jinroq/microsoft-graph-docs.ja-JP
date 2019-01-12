@@ -3,12 +3,13 @@ title: IosImportedPFXCertificateProfile を作成します。
 description: 新しい iosImportedPFXCertificateProfile オブジェクトを作成します。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 3d82542bc6185a0f7592e7ac226bcdaeb9dc0211
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: d78ca980e4d3d4283a9d1d23752507062eb00bfa
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27873844"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27958132"
 ---
 # <a name="create-iosimportedpfxcertificateprofile"></a>IosImportedPFXCertificateProfile を作成します。
 

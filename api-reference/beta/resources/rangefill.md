@@ -3,12 +3,13 @@ title: RangeFill リソースの種類
 description: 範囲オブジェクトの背景を表します。
 author: lumine2008
 localization_priority: Normal
-ms.openlocfilehash: 8ceab66373331b6e144b69119d521a3e5ddccdc7
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: excel
+ms.openlocfilehash: 4043122f4c35c3e7f1c6f9d3919687833d35b9b3
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27817760"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27974344"
 ---
 # <a name="rangefill-resource-type"></a>RangeFill リソースの種類
 

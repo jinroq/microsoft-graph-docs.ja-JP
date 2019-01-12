@@ -2,12 +2,14 @@
 title: Outlook メール API の概要
 description: Outlook は、Office 365 のメッセージング通信ハブです。 連絡先の管理、会議のスケジュール管理、組織内のユーザーに関する情報の検索にも使用できます。
 author: angelgolfer-ms
-ms.openlocfilehash: 7cf498c91464ae14dcf8bf3c3d5dba4bdf030455
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Priority
+ms.prod: outlook
+ms.openlocfilehash: 462e00825a9dd54a6628ca638b06fb56c6cb5c8b
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27306616"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27976626"
 ---
 # <a name="outlook-mail-api-overview"></a>Outlook メール API の概要
 
@@ -61,8 +63,7 @@ Microsoft Graph を利用することにより、アプリ ユーザーに対し
 
 ## <a name="next-steps"></a>次の手順
 
-- 
-  [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer/?request=me%2Fmessages&version=v1.0) で Outlook メール サンプル クエリを選択して試行する。 左側の列の **[サンプルをさらに表示]** を選択します。 メニューを使用して **Outlook メール** をオンにします。
+- [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer/?request=me%2Fmessages&version=v1.0) で Outlook メール サンプル クエリを選択して試行する。 左側の列の **[サンプルをさらに表示]** を選択します。 メニューを使用して **Outlook メール** をオンにします。
 - 以下について調べます。
 
   - [メッセージの作成と送信](outlook-create-send-messages.md)

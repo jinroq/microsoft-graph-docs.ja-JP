@@ -3,12 +3,13 @@ title: windows10CustomConfiguration の作成
 description: 新しい windows10CustomConfiguration オブジェクトを作成します。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 22d14022efcf689de10f28fecd4bfd8d78170ea8
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 3a6f98eb704f2fedea0310ca34b53c417a761c22
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27881523"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27955780"
 ---
 # <a name="create-windows10customconfiguration"></a>windows10CustomConfiguration の作成
 

@@ -2,12 +2,13 @@
 title: ユーザー ・ アクティビティを取得します。
 description: 特定のユーザーのアクティビティを取得します。 異なり、**最近使用した**OData 機能、履歴のない活動が返されます。 アクセス許可 UserActivity.ReadWrite.CreatedByApp はフィルターを適用余分な応答に、アプリケーションによって作成された活動のみが返されるようにします。 このサーバー側のフィルター処理が発生空のページでユーザーが特に作業中であり、他のアプリケーションが最新の活動を作成します。 アプリケーションのアクティビティを取得するには、改ページ調整**nextLink**プロパティを使用します。
 localization_priority: Normal
-ms.openlocfilehash: 7339805d4ef45cc9b0806c2ce6c14e7316bdba85
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: project-rome
+ms.openlocfilehash: dce6420e33a5d57eb78d8ea4842ed759ebcdd11c
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27889685"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27971796"
 ---
 # <a name="get-user-activities"></a>ユーザー ・ アクティビティを取得します。
 

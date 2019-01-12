@@ -2,12 +2,14 @@
 title: plannerAssignedToTaskBoardTaskFormat リソースの種類
 description: '**PlannerAssignedToTaskBoardTaskFormat** リソースは、タスク ボードの AssignedTo ビューを正しく表示するための情報を示します (ビューはタスクが割り当てられているユーザーごとに整理されます)。各 task にはそれぞれ **plannerAssignedToTaskBoardTaskFormat** オブジェクトが 1 つ関連付けられています。'
 localization_priority: Normal
-ms.openlocfilehash: bae551e009faeb40418f10a082bb8955846e8901
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: TarkanSevilmis
+ms.prod: planner
+ms.openlocfilehash: e86517f2b90cf1c76ca975b3a31a8766b7e86bd7
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27818082"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27955794"
 ---
 # <a name="plannerassignedtotaskboardtaskformat-resource-type"></a>plannerAssignedToTaskBoardTaskFormat リソースの種類
 

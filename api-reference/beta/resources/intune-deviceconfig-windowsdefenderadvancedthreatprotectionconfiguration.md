@@ -3,12 +3,13 @@ title: windowsDefenderAdvancedThreatProtectionConfiguration リソースの種�
 description: Windows Defender AdvancedThreatProtection 構成です。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: f4ffc3be8ea8bf2d7132a73767e99022c95f66f6
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 430ba37b65602138b1fc3f1625679670832cf0ad
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27851612"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27977088"
 ---
 # <a name="windowsdefenderadvancedthreatprotectionconfiguration-resource-type"></a>windowsDefenderAdvancedThreatProtectionConfiguration リソースの種類
 

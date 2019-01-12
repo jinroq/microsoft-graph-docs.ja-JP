@@ -3,12 +3,13 @@ title: チームのクローンを作成します。
 description: チームのコピーを作成します。 この操作では、対応するグループのコピーも作成します。
 author: nkramer
 localization_priority: Normal
-ms.openlocfilehash: 262cbe4bd17cc1ab3abded49b65868d0b8039e70
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: microsoft-teams
+ms.openlocfilehash: 4fb3769db0df6d2fc30d995098daee19b49e83b7
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27854594"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27958342"
 ---
 # <a name="clone-a-team"></a>チームのクローンを作成します。
 

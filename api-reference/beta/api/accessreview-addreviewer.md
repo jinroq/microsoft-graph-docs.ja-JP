@@ -2,12 +2,14 @@
 title: AccessReview の校閲者を追加します。
 description: 'Azure AD アクセスのレビュー機能では、レビュー担当者として他のユーザーを追加するのには既存の accessReview オブジェクトを更新します。  この操作のみ許可されてはまだ完了していない、アクセスの確認のためや、アクセスの確認にのみ、校閲者が明示的に指定されています。 この操作は、アクセス確認をユーザーが独自のアクセスを確認するには許可されませんし、校閲者として、グループの所有者が割り当てられている、アクセス確認のためではありません。 '
 localization_priority: Normal
-ms.openlocfilehash: ab339a6538fc41d7e538c51251302c5e589367f2
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: lleonard-msft
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: a7745cf6424f3aa8b9bca16f4db961801d203431
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27838767"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27956865"
 ---
 # <a name="add-accessreview-reviewer"></a>AccessReview の校閲者を追加します。
 

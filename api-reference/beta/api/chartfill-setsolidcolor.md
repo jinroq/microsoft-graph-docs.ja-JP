@@ -3,12 +3,13 @@ title: 'ChartFill: setSolidColor'
 description: グラフ要素の塗りつぶしの書式設定を均一な色に設定します。
 author: lumine2008
 localization_priority: Normal
-ms.openlocfilehash: ffd5d4f954fea72963c7d443a5df6de12f1dc516
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: excel
+ms.openlocfilehash: e5c0a120becc53b6b7d06fdc1e5c43130b5a414b
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27854643"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27975919"
 ---
 # <a name="chartfill-setsolidcolor"></a>ChartFill: setSolidColor
 

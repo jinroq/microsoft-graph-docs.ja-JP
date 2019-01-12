@@ -2,12 +2,14 @@
 title: managedDeviceMobileAppConfigurationUserSummary リソースの種類
 description: MDM モバイル アプリ構成のユーザー状態の要約に関する、プロパティ、継承済みのプロパティ、アクションが含まれています。
 localization_priority: Normal
-ms.openlocfilehash: 7b409e81e1fe82237d739dc5e8b75ce42e74a783
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: tfitzmac
+ms.prod: intune
+ms.openlocfilehash: e919a758d68c847b1ff4fe6be08890bbcf2ab902
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27805419"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27977186"
 ---
 # <a name="manageddevicemobileappconfigurationusersummary-resource-type"></a>managedDeviceMobileAppConfigurationUserSummary リソースの種類
 

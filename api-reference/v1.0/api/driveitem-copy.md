@@ -3,12 +3,14 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
 title: ファイルまたはフォルダーをコピーする
-ms.openlocfilehash: 453a407775f6dc3b7afa8cb5d4d122f351c0a75f
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.prod: sharepoint
+ms.openlocfilehash: db953e3221c03cbf094f84e2e36eb1e5b2d7d24b
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27022783"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27961989"
 ---
 # <a name="copy-a-driveitem"></a>DriveItem をコピーする
 

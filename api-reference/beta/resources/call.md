@@ -3,12 +3,13 @@ title: リソースの種類を呼び出す
 description: アプリケーション宛ての着信呼び出しがあるか、アプリケーションを使用して新しい送信呼び出しを作成するときに、**呼び出す**リソースが作成された、`POST`の`app/calls`。
 author: VinodRavichandran
 localization_priority: Priority
-ms.openlocfilehash: d2748b410352effb7119a569bdf48c86f2f7c2ad
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: microsoft-teams
+ms.openlocfilehash: 6c303ebe01e6051a29a932d9547f20293cb07a53
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27810704"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27958559"
 ---
 # <a name="call-resource-type"></a>リソースの種類を呼び出す
 

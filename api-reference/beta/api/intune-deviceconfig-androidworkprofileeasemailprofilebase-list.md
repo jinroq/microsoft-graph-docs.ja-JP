@@ -3,12 +3,13 @@ title: リスト androidWorkProfileEasEmailProfileBases
 description: AndroidWorkProfileEasEmailProfileBase オブジェクトのプロパティと関係を一覧表示します。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 54dfe18b37dd5f0324106f0070b65fb9e82efb1e
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: ceded26bf698d5400992494acd90df77a1ab2374
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27887837"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27966519"
 ---
 # <a name="list-androidworkprofileeasemailprofilebases"></a>リスト androidWorkProfileEasEmailProfileBases
 

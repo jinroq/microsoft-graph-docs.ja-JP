@@ -3,12 +3,13 @@ title: ユーザー リソースの種類
 description: Azure AD ユーザー アカウントを表します。directoryObject から継承します。
 author: dkershaw10
 localization_priority: Priority
-ms.openlocfilehash: d9f15cd6f0b3169370257578f841a1821593f351
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: 1845bdbc349712141c5e356acaaafb8ba1c49aba
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27862497"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27964460"
 ---
 # <a name="user-resource-type"></a>ユーザー リソースの種類
 
