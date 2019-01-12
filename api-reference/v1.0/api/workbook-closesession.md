@@ -3,48 +3,49 @@ title: セッションを閉じる
 description: 'この API を使用して、既存のブック セッションを閉じます。 '
 author: lumine2008
 localization_priority: Normal
-ms.openlocfilehash: 0e4d00b1ebf9ba90f6085f8dc7fc1005375efc0d
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: excel
+ms.openlocfilehash: 9fbbaea28f93b757881550f36d76540fb6cfb388
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27818635"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27972860"
 ---
-# <a name="close-session"></a><span data-ttu-id="f534c-103">セッションを閉じる</span><span class="sxs-lookup"><span data-stu-id="f534c-103">Close Session</span></span>
+# <a name="close-session"></a><span data-ttu-id="5713a-103">セッションを閉じる</span><span class="sxs-lookup"><span data-stu-id="5713a-103">Close Session</span></span>
 
-<span data-ttu-id="f534c-104">この API を使用して、既存のブック セッションを閉じます。</span><span class="sxs-lookup"><span data-stu-id="f534c-104">Use this API to close an existing workbook session.</span></span> 
+<span data-ttu-id="5713a-104">この API を使用して、既存のブック セッションを閉じます。</span><span class="sxs-lookup"><span data-stu-id="5713a-104">Use this API to close an existing workbook session.</span></span> 
 
-## <a name="permissions"></a><span data-ttu-id="f534c-105">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="f534c-105">Permissions</span></span>
-<span data-ttu-id="f534c-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="f534c-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="5713a-105">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="5713a-105">Permissions</span></span>
+<span data-ttu-id="5713a-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="5713a-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="f534c-108">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="f534c-108">Permission type</span></span>      | <span data-ttu-id="f534c-109">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="f534c-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="5713a-108">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="5713a-108">Permission type</span></span>      | <span data-ttu-id="5713a-109">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="5713a-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="f534c-110">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="f534c-110">Delegated (work or school account)</span></span> | <span data-ttu-id="f534c-111">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="f534c-111">Files.ReadWrite</span></span>    |
-|<span data-ttu-id="f534c-112">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="f534c-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="f534c-113">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="f534c-113">Not supported.</span></span>    |
-|<span data-ttu-id="f534c-114">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="f534c-114">Application</span></span> | <span data-ttu-id="f534c-115">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="f534c-115">Not supported.</span></span> |
+|<span data-ttu-id="5713a-110">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="5713a-110">Delegated (work or school account)</span></span> | <span data-ttu-id="5713a-111">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="5713a-111">Files.ReadWrite</span></span>    |
+|<span data-ttu-id="5713a-112">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="5713a-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="5713a-113">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="5713a-113">Not supported.</span></span>    |
+|<span data-ttu-id="5713a-114">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="5713a-114">Application</span></span> | <span data-ttu-id="5713a-115">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="5713a-115">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="f534c-116">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="f534c-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="5713a-116">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="5713a-116">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /workbook/closeSession
 workbook-session-id: {session-id}
 ```
-## <a name="request-headers"></a><span data-ttu-id="f534c-117">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="f534c-117">Request headers</span></span>
-| <span data-ttu-id="f534c-118">名前</span><span class="sxs-lookup"><span data-stu-id="f534c-118">Name</span></span>       | <span data-ttu-id="f534c-119">説明</span><span class="sxs-lookup"><span data-stu-id="f534c-119">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="5713a-117">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="5713a-117">Request headers</span></span>
+| <span data-ttu-id="5713a-118">名前</span><span class="sxs-lookup"><span data-stu-id="5713a-118">Name</span></span>       | <span data-ttu-id="5713a-119">説明</span><span class="sxs-lookup"><span data-stu-id="5713a-119">Description</span></span>|
 |:---------------|:----------|
-| <span data-ttu-id="f534c-120">Authorization</span><span class="sxs-lookup"><span data-stu-id="f534c-120">Authorization</span></span>  | <span data-ttu-id="f534c-p102">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="f534c-p102">Bearer {token}. Required.</span></span> | | <span data-ttu-id="f534c-123">Workbook-Session-Id</span><span class="sxs-lookup"><span data-stu-id="f534c-123">Workbook-Session-Id</span></span>  | <span data-ttu-id="f534c-p103">変更を保持するかどうかを決定するブック セッション ID。省略可能。</span><span class="sxs-lookup"><span data-stu-id="f534c-p103">Workbook session Id that determines if changes are persisted or not. Optional.</span></span>|
-| <span data-ttu-id="f534c-126">workbook-session-id</span><span class="sxs-lookup"><span data-stu-id="f534c-126">workbook-session-id</span></span> | <span data-ttu-id="f534c-127">閉じるブック セッションの ID</span><span class="sxs-lookup"><span data-stu-id="f534c-127">Workbook session Id to be closed</span></span> |
+| <span data-ttu-id="5713a-120">Authorization</span><span class="sxs-lookup"><span data-stu-id="5713a-120">Authorization</span></span>  | <span data-ttu-id="5713a-p102">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="5713a-p102">Bearer {token}. Required.</span></span> | | <span data-ttu-id="5713a-123">Workbook-Session-Id</span><span class="sxs-lookup"><span data-stu-id="5713a-123">Workbook-Session-Id</span></span>  | <span data-ttu-id="5713a-p103">変更を保持するかどうかを決定するブック セッション ID。省略可能。</span><span class="sxs-lookup"><span data-stu-id="5713a-p103">Workbook session Id that determines if changes are persisted or not. Optional.</span></span>|
+| <span data-ttu-id="5713a-126">workbook-session-id</span><span class="sxs-lookup"><span data-stu-id="5713a-126">workbook-session-id</span></span> | <span data-ttu-id="5713a-127">閉じるブック セッションの ID</span><span class="sxs-lookup"><span data-stu-id="5713a-127">Workbook session Id to be closed</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="f534c-128">要求本文</span><span class="sxs-lookup"><span data-stu-id="f534c-128">Request body</span></span>
-<span data-ttu-id="f534c-129">この API は、要求本文を必要としません。</span><span class="sxs-lookup"><span data-stu-id="f534c-129">This API does not require any request body.</span></span>
+## <a name="request-body"></a><span data-ttu-id="5713a-128">要求本文</span><span class="sxs-lookup"><span data-stu-id="5713a-128">Request body</span></span>
+<span data-ttu-id="5713a-129">この API は、要求本文を必要としません。</span><span class="sxs-lookup"><span data-stu-id="5713a-129">This API does not require any request body.</span></span>
 
-## <a name="response"></a><span data-ttu-id="f534c-130">応答</span><span class="sxs-lookup"><span data-stu-id="f534c-130">Response</span></span>
+## <a name="response"></a><span data-ttu-id="5713a-130">応答</span><span class="sxs-lookup"><span data-stu-id="5713a-130">Response</span></span>
 
-<span data-ttu-id="f534c-131">成功した場合、このメソッドは `204 No Content` 応答コードを返します。</span><span class="sxs-lookup"><span data-stu-id="f534c-131">If successful, this method returns `204 No Content` response code.</span></span>
+<span data-ttu-id="5713a-131">成功した場合、このメソッドは `204 No Content` 応答コードを返します。</span><span class="sxs-lookup"><span data-stu-id="5713a-131">If successful, this method returns `204 No Content` response code.</span></span>
 
-## <a name="example"></a><span data-ttu-id="f534c-132">例</span><span class="sxs-lookup"><span data-stu-id="f534c-132">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="f534c-133">要求</span><span class="sxs-lookup"><span data-stu-id="f534c-133">Request</span></span>
-<span data-ttu-id="f534c-134">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="f534c-134">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="5713a-132">例</span><span class="sxs-lookup"><span data-stu-id="5713a-132">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="5713a-133">要求</span><span class="sxs-lookup"><span data-stu-id="5713a-133">Request</span></span>
+<span data-ttu-id="5713a-134">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="5713a-134">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "close_excel_session"
@@ -60,11 +61,11 @@ Content-length: 0
 }
 ```
 
-<span data-ttu-id="f534c-135">workbook-session-id ヘッダーが必要となることに注意してください。</span><span class="sxs-lookup"><span data-stu-id="f534c-135">Note that workbook-session-id header is required.</span></span> 
+<span data-ttu-id="5713a-135">workbook-session-id ヘッダーが必要となることに注意してください。</span><span class="sxs-lookup"><span data-stu-id="5713a-135">Note that workbook-session-id header is required.</span></span> 
 
 
-##### <a name="response"></a><span data-ttu-id="f534c-136">応答</span><span class="sxs-lookup"><span data-stu-id="f534c-136">Response</span></span>
-<span data-ttu-id="f534c-137">以下は、応答の例です。</span><span class="sxs-lookup"><span data-stu-id="f534c-137">Here is an example of the response.</span></span> 
+##### <a name="response"></a><span data-ttu-id="5713a-136">応答</span><span class="sxs-lookup"><span data-stu-id="5713a-136">Response</span></span>
+<span data-ttu-id="5713a-137">以下は、応答の例です。</span><span class="sxs-lookup"><span data-stu-id="5713a-137">Here is an example of the response.</span></span> 
 
 <!-- {
   "blockType": "response",
