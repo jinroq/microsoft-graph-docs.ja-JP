@@ -3,12 +3,13 @@ title: actionState 列挙型
 description: デバイス上のアクションの状態
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: af8bb3869171faee5907b4a3f1921bcb70044aec
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 14ec93848deccb7d6bb21331095f9ecf4a881815
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27829905"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27990853"
 ---
 # <a name="actionstate-enum-type"></a>actionState 列挙型
 

@@ -3,12 +3,13 @@ title: embeddedSIMActivationCode リソースの種類
 description: 携帯電話会社で提供される、埋め込みコードの SIM のアクティブ化します。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 41976b92cfe6b6f695631dbd6c0d928c6ae99271
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: af8bf020953dbc014f42aa6d363d3ca9e30db8a2
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27878065"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27987406"
 ---
 # <a name="embeddedsimactivationcode-resource-type"></a>embeddedSIMActivationCode リソースの種類
 

@@ -3,12 +3,13 @@ title: メールを送信する
 description: 要求本文に指定されたメッセージを送信します。メッセージは、既定で [送信済みアイテム] フォルダーに保存されます。
 author: dkershaw10
 localization_priority: Priority
-ms.openlocfilehash: 9187601787fce5b173ce6d22006bc56bec9b83fc
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: 542c36f4d52c461b5a423d9a7fb93a06b94b9b70
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27872150"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27975807"
 ---
 # <a name="send-mail"></a>メールを送信する
 
@@ -42,8 +43,8 @@ POST /users/{id | userPrincipalName}/sendMail
 
 | パラメーター    | Type   |説明|
 |:---------------|:--------|:----------|
-|message|[Message](../resources/message.md)|送信するメッセージです。必須。|
-|saveToSentItems|ブール値|[送信済みアイテム] 内のメッセージを保存するかどうかを示します。パラメーターを false にする場合にのみ指定します。既定では true です。省略可能。 |
+|message|[メッセージ](../resources/message.md)|送信するメッセージです。必須。|
+|saveToSentItems|Boolean|[送信済みアイテム] 内のメッセージを保存するかどうかを示します。パラメーターを false にする場合にのみ指定します。既定では true です。省略可能。 |
 
 ## <a name="response"></a>応答
 

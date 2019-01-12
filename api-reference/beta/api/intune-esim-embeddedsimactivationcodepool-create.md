@@ -3,12 +3,13 @@ title: EmbeddedSIMActivationCodePool を作成します。
 description: 新しい embeddedSIMActivationCodePool オブジェクトを作成します。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: a5d01b376c886ef5753abbb59d0be557702e394f
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: a46245cb8f0a246363b5b1112298c360c3a4c24d
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27891358"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27973700"
 ---
 # <a name="create-embeddedsimactivationcodepool"></a>EmbeddedSIMActivationCodePool を作成します。
 

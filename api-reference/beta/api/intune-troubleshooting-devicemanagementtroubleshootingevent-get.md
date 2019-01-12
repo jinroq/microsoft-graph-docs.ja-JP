@@ -3,12 +3,13 @@ title: Get deviceManagementTroubleshootingEvent
 description: deviceManagementTroubleshootingEvent オブジェクトのプロパティとリレーションシップを読み取ります。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 3c3b89cbbff89493320bdc9f91951318f3e92fc5
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 2f1a11b1c494ca5d233bcf962d053a11379edce3
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27851024"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27975828"
 ---
 # <a name="get-devicemanagementtroubleshootingevent"></a>Get deviceManagementTroubleshootingEvent
 

@@ -3,12 +3,13 @@ title: WindowsPhone81SCEPCertificateProfile を取得します。
 description: WindowsPhone81SCEPCertificateProfile オブジェクトのプロパティと関係を参照してください。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 2f7c933b2dbbf19b4d332a98fc34fc6cadc2a9c4
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 51dbdb1439b64cab13902a1443d6c25b602f3308
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27812293"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27970053"
 ---
 # <a name="get-windowsphone81scepcertificateprofile"></a>WindowsPhone81SCEPCertificateProfile を取得します。
 

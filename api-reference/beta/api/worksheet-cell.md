@@ -2,12 +2,14 @@
 title: ワークシート:セル
 description: 行と列の番号に基づいて、1 つのセルを含んだ範囲オブジェクトを取得します。このセルは、ワークシートのグリッド内であれば、親の範囲の境界の外のセルであってもかまいません。
 localization_priority: Normal
-ms.openlocfilehash: 7338e2a7f079d37e783afeb99f50429e30b6c005
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: lumine2008
+ms.prod: excel
+ms.openlocfilehash: 5b4771283922c4c41aeb3210040b3e95823cad81
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27823129"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27976066"
 ---
 # <a name="worksheet-cell"></a>ワークシート:セル
 

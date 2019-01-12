@@ -3,12 +3,13 @@ title: windows81CompliancePolicy リソース タイプ
 description: このクラスには、Windows 8.1 のコンプライアンス設定が含まれています。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 0cd2c40b4278161bd31d9e295e6b6c718da5ef1f
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: c1715ed036f9b8465ac6494292fc6bbd6942b7ad
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27819167"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27970816"
 ---
 # <a name="windows81compliancepolicy-resource-type"></a>windows81CompliancePolicy リソース タイプ
 

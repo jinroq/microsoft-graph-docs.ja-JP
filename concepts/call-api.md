@@ -1,12 +1,15 @@
 ---
 title: Microsoft Graph API を呼び出す
 description: 'Microsoft Graph リソースにアクセスして操作するには、次の操作のいずれを使用して、リソース URL を呼び出して指定します。   '
-ms.openlocfilehash: c8b678ce41488d6854e436e7dc5fc97989b54aee
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+author: VinodRavichandran
+ms.prod: microsoft-teams
+ms.openlocfilehash: 627fb614f8084abe6980ed095a7a55adfa6a3f12
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27092438"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27970417"
 ---
 # <a name="calling-the-microsoft-graph-api"></a>Microsoft Graph API を呼び出す
 
@@ -304,5 +307,4 @@ content-length: 96
 ## <a name="use-microsoft-graph-client-libraries"></a>Microsoft Graph クライアント ライブラリを使う
 SDK のパワーと使いやすさは気に入っていただけましたか?REST API を使用していつでも Microsoft Graph を呼び出すことができますが、多数の一般的なプラットフォームのための SDK も用意されています。
 
-
-  [コード サンプルと SDK](https://developer.microsoft.com/graph/code-samples-and-sdks) を参照してください。
+[コード サンプルと SDK](https://developer.microsoft.com/graph/code-samples-and-sdks) を参照してください。

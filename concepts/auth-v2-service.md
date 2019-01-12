@@ -2,12 +2,14 @@
 title: ユーザーなしでアクセスを取得
 description: '一部のアプリでは、ユーザーの代わりに独自の ID を使用して Microsoft Graph を呼び出します。多くの場合、これらは、サインインしたユーザーが存在しないサーバー上で実行される、バックグラウンド サービスかデーモンです。この種のアプリの例として、夜間に起動して実行される電子メール アーカイブ サービスがあります。場合によっては、サインインしているユーザーが存在するアプリでも、独自の ID で Microsoft Graph を呼び出す必要があります。たとえば、サインインしたユーザーが所有している組織内の特権よりも高い特権を必要とする機能をアプリが使用する必要がある場合があります。  '
 author: jackson-woods
-ms.openlocfilehash: 7798afd402e0ebc6fb70f8f0cc056b484f559dc5
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Priority
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: ca003bc10551c03dd781db05aad7170b799304b0
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27320875"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27977501"
 ---
 # <a name="get-access-without-a-user"></a>ユーザーなしでアクセスを取得
 

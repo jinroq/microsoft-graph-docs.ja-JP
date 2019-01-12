@@ -3,12 +3,13 @@ title: Win32LobApp を作成します。
 description: 新しい win32LobApp オブジェクトを作成します。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: edd3e68d71cb2f31bb7b2f3fc0b24bde1e33768a
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 3ac82ba6d546fe64cb472686af2fcd0ee642d1eb
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27874376"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27979265"
 ---
 # <a name="create-win32lobapp"></a>Win32LobApp を作成します。
 

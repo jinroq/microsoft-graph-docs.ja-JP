@@ -3,12 +3,13 @@ title: アイテムを完全に削除する
 description: '[削除済みアイテム] からアイテムを完全に削除します。'
 author: lleonard-msft
 localization_priority: Normal
-ms.openlocfilehash: 00f44be1c89b35b81f3665d4bd568939ed309e22
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: 12b1970601bf2e938ecaee8ff63a1ce9f1ada90d
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27805188"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27991931"
 ---
 # <a name="permanently-delete-item"></a>アイテムを完全に削除する
 

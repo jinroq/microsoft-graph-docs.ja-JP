@@ -3,12 +3,13 @@ title: チーム リソースの種類
 description: 'マイクロソフトのチームで、チームは、チャネルのコレクションです。 '
 author: nkramer
 localization_priority: Priority
-ms.openlocfilehash: bf76f7b4b6cd06afb80b17e82fb8d10675b744a2
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: microsoft-teams
+ms.openlocfilehash: 921b1367afe8e12d10d69cb16577ce73ba70c9f2
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27862265"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27972510"
 ---
 # <a name="team-resource-type"></a>チーム リソースの種類
 

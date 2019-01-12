@@ -3,12 +3,13 @@ title: deviceComplianceUserOverview リソースの種類
 description: まだ文書化されていません
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 31b5666fd7d99c3ff71819ef06c144dd14550167
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 01596e7b4e5c4d5a661befadbffa00529d3314d3
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27817564"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27973196"
 ---
 # <a name="devicecomplianceuseroverview-resource-type"></a>deviceComplianceUserOverview リソースの種類
 

@@ -3,12 +3,13 @@ title: Create windowsUniversalAppX
 description: 新しい windowsUniversalAppX オブジェクトを作成します。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 324935bc9e72c3da05251c16171a68e1f1b08773
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 0c652a0cbd7a5472663d5e748ec7c738838e55d0
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27875566"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27949851"
 ---
 # <a name="create-windowsuniversalappx"></a>Create windowsUniversalAppX
 

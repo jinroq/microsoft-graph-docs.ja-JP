@@ -4,12 +4,13 @@ ms.author: rgregg
 ms.date: 09/11/2017
 title: ListItem
 localization_priority: Normal
-ms.openlocfilehash: b2e151937d5e8db633edeb5d521d6e0c875b6d78
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: sharepoint
+ms.openlocfilehash: fbac6451ff08e2176b1893c8604db8957c826572
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27866088"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27950726"
 ---
 # <a name="listitem-resource"></a>ListItem リソース
 
@@ -90,12 +91,12 @@ ms.locfileid: "27866088"
 
 | プロパティ名        | Type              | 説明
 |:---------------------|:------------------|:----------------------------------
-| ID                   | 文字列            | アイテムの一意識別子。読み取り専用です。
+| ID                   | string            | アイテムの一意識別子。読み取り専用です。
 | name                 | 文字列            | アイテムの名前/タイトル。
 | createdBy            | [identitySet][]   | このアイテムの作成者の ID です。 読み取り専用です。
 | createdDateTime      | DateTimeOffset    | アイテムが作成された日時。読み取り専用です。
-| description          | 文字列            | アイテムの説明テキストです。
-| eTag                 | 文字列            | アイテムの ETag。読み取り専用です。                                                          |
+| description          | string            | アイテムの説明テキストです。
+| eTag                 | string            | アイテムの ETag。読み取り専用です。                                                          |
 | lastModifiedBy       | [identitySet][]   | このアイテムの最終変更者の ID です。 読み取り専用です。
 | lastModifiedDateTime | DateTimeOffset    | アイテムが最後に変更された日時。読み取り専用です。
 | parentReference      | [itemReference][] | 親の情報 (アイテムに親がある場合)。読み取り/書き込み。

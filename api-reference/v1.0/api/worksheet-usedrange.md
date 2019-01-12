@@ -2,12 +2,14 @@
 title: ワークシート:UsedRange
 description: 使用範囲とは、値または書式設定が割り当たっているすべてのセルを包含する最小の範囲です。ワークシートが空白の場合、この関数は左上のセルを返します。
 localization_priority: Normal
-ms.openlocfilehash: edbe1a45f22ec07b0225be70549a2a7d59faf7eb
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: lumine2008
+ms.prod: excel
+ms.openlocfilehash: 444a88dfaad3983948a139f2a3db304c200a1153
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27894363"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27975303"
 ---
 # <a name="worksheet-usedrange"></a>ワークシート:UsedRange
 

@@ -3,12 +3,13 @@ title: educationSynchronizationConnectionSettings リソースの種類
 description: 'プロバイダー接続の設定を表します。 これにより、Api のプロバイダーに接続する方法を把握するシステムです。 '
 author: mmast-msft
 localization_priority: Normal
-ms.openlocfilehash: 17fedb5094016bd3df3bd8262390eaa7eeb37537
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: education
+ms.openlocfilehash: f9bb19ec9c09b06dd007eb2031f3dbb176eb12d3
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27841770"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27978229"
 ---
 # <a name="educationsynchronizationconnectionsettings-resource-type"></a>educationSynchronizationConnectionSettings リソースの種類
 

@@ -3,12 +3,13 @@ title: OfficeSuiteApp を作成します。
 description: 新しい officeSuiteApp オブジェクトを作成します。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 6cc3aaff3a206d12d589372a3edc769cb9dc369d
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 5ab96d73869678a264fed17ba3df3c9bdbdbab2d
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27837955"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27971201"
 ---
 # <a name="create-officesuiteapp"></a>OfficeSuiteApp を作成します。
 

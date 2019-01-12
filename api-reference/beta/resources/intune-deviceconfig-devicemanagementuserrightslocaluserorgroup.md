@@ -3,12 +3,13 @@ title: deviceManagementUserRightsLocalUserOrGroup リソースの種類
 description: ローカル ユーザーまたはグループのユーザー権利の設定の使用に関する情報を表します。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: d795e2b259c71612b1d0720796b6ad76145bb36d
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 63e2dc3d16d17b76c4437e76eae642976711071c
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27885744"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27972895"
 ---
 # <a name="devicemanagementuserrightslocaluserorgroup-resource-type"></a>deviceManagementUserRightsLocalUserOrGroup リソースの種類
 

@@ -3,12 +3,13 @@ title: AndroidEnterpriseWiFiConfiguration を作成します。
 description: 新しい androidEnterpriseWiFiConfiguration オブジェクトを作成します。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 90d76a29168cda4b7dab8f16b0e26eec7532c227
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 1664ce0b553f08bcd621f219fa063424336b5418
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27848134"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27990839"
 ---
 # <a name="create-androidenterprisewificonfiguration"></a>AndroidEnterpriseWiFiConfiguration を作成します。
 

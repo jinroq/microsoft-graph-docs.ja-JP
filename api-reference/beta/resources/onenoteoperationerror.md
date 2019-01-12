@@ -1,14 +1,15 @@
 ---
 title: onenoteOperationError リソースの種類
 description: 失敗した OneNote 操作によるエラー。
-author: Jewan-microsoft
+author: jewan-microsoft
 localization_priority: Normal
-ms.openlocfilehash: cfe859bea40f15311a631e8b1d2b3c3a3c179d0c
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: onenote
+ms.openlocfilehash: 42f9f4777a98081a3fa18c010c301ba19a34b750
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27891533"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27975506"
 ---
 # <a name="onenoteoperationerror-resource-type"></a>onenoteOperationError リソースの種類
 
@@ -39,7 +40,7 @@ ms.locfileid: "27891533"
 | プロパティ     | 種類   |説明|
 |:---------------|:--------|:----------|
 |code|文字列|エラー コード。|
-|message|文字列|エラー メッセージ。|
+|message|string|エラー メッセージ。|
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

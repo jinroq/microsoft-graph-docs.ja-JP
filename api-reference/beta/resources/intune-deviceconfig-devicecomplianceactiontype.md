@@ -3,12 +3,13 @@ title: deviceComplianceActionType 列挙型
 description: 列挙型の操作をスケジュールします。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: e2b89dbdaa3e67918b1b0c3e76eb6638e492994c
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: f1856847cb8a8ecf48ee6d13067bd24515326d89
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27881873"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27973210"
 ---
 # <a name="devicecomplianceactiontype-enum-type"></a>deviceComplianceActionType 列挙型
 

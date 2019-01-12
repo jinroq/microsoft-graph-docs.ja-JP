@@ -3,12 +3,13 @@ title: AndroidDeviceOwnerGeneralDeviceConfiguration を作成します。
 description: 新しい androidDeviceOwnerGeneralDeviceConfiguration オブジェクトを作成します。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: a7802762fc88e45a434614a8101f4690f8c4bc1a
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: ff413da3f1c2d8062527f18efb38d74ecebdfa47
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27812691"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27973518"
 ---
 # <a name="create-androiddeviceownergeneraldeviceconfiguration"></a>AndroidDeviceOwnerGeneralDeviceConfiguration を作成します。
 

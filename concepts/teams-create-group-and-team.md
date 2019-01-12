@@ -2,12 +2,14 @@
 title: Microsoft Teams チームを含めたグループの作成
 description: 'チームを含めてグループを作成するには、2 つの手順が必要です。 '
 author: nkramer
-ms.openlocfilehash: ea11d0ee7ee4e6e1d0bf6dc10ab8c9d064aa3610
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Priority
+ms.prod: microsoft-teams
+ms.openlocfilehash: 06b25a6da159030407c904622ffebde09c704d98
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27313889"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27970480"
 ---
 # <a name="creating-a-group-with-a-microsoft-teams-team"></a>Microsoft Teams チームを含めたグループの作成
 

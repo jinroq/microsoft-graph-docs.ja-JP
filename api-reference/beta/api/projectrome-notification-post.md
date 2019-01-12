@@ -2,12 +2,13 @@
 title: 作成し、通知を送信します。
 description: '作成し、Microsoft Graph を使用してユーザーを対象とする通知を送信します。 通知は、フィード ストア、Microsoft Graph の通知に格納され、ユーザーがサインインしてデバイスのすべてのエンドポイント上のすべてのアプリケーション クライアントに送信されます。  '
 localization_priority: Normal
-ms.openlocfilehash: 67906aa56ace21d9d03cfe47c17acda38d8c680f
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: project-rome
+ms.openlocfilehash: d8258e0da04f199a0f40bdb2a2ec85e01d5d5faf
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27843899"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27975933"
 ---
 # <a name="create-and-send-a-notification"></a>作成し、通知を送信します。
 > **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。

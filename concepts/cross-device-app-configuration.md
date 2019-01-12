@@ -1,12 +1,14 @@
 ---
 title: 'Project Rome を利用したクロスデバイス アプリのビルド '
 description: 'Project Rome を使用することにより、デバイスやプラットフォームをシームレスに超えて利用できるエクスペリエンスを構築できます。これにより、ユーザーのストレスが少なくなり、アプリの利用が推進されます。 アプリケーションが Project Rome API を利用して複数のデバイスやプラットフォーム間でデータを共有するには、プラットフォーム固有のアプリに関する情報を含むクロスデバイス アプリを構成する必要があります。 '
-ms.openlocfilehash: b555356fd523605837cd339630f64757fa8106bf
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.prod: project-rome
+ms.openlocfilehash: f54f38c5d047d2b5d790e5bea48fdb27f54b4004
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27092479"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27987084"
 ---
 # <a name="build-cross-device-apps-powered-by-project-rome"></a>Project Rome を利用したクロスデバイス アプリのビルド 
 

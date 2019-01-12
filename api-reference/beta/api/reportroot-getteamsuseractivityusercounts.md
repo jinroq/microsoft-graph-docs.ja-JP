@@ -2,12 +2,13 @@
 title: 'reportRoot: getTeamsUserActivityUserCounts'
 description: アクティビティの種類ごとに、Microsoft Teams ユーザーの数を取得します。 アクティビティの種類は、チーム チャット メッセージ、非公開チャット メッセージ、通話、または会議の数です。
 localization_priority: Normal
-ms.openlocfilehash: 6df1ba5bd813839c965dbd8c2f6c77cd195a3e82
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: reports
+ms.openlocfilehash: 1cc651d1237ca9455ff6f6ab402ba3c6332f9873
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27872696"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27975863"
 ---
 # <a name="reportroot-getteamsuseractivityusercounts"></a>reportRoot: getTeamsUserActivityUserCounts
 

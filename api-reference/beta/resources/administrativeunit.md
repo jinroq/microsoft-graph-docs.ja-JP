@@ -2,12 +2,14 @@
 title: administrativeUnit リソースの種類
 description: 管理単位は、ユーザーとグループのディレクトリ オブジェクトの概念的なコンテナーを提供します。 管理単位を使用すると、企業の管理者はユーザーを管理する管理責任を委任できるようになりましたと、グループ内に含まれている、地域や部門の管理者に管理単位にスコープを設定しました。
 localization_priority: Normal
-ms.openlocfilehash: 523214d7bd319d940f042d461b4903ff1f1475e1
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: lleonard-msft
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: a4fb81c9a9d605dd155facefb263ff4a310442c3
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27845410"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27955318"
 ---
 # <a name="administrativeunit-resource-type"></a>administrativeUnit リソースの種類
 

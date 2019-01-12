@@ -3,12 +3,13 @@ title: Educationsubmission を更新します。
 description: 評価とフィードバックを提出書類に追加します。 教師だけでは、この操作を実行できます。 基本アクセス権はグレードのプロパティへのアクセス権がないと、評価やご意見を書き込むことができませんので注意してください。 このアクションでは、グレードと、受講生受講者へのフィードバックは解放されません。 教師では、受講者に返される成績データの明示的な解放アクションを実行する必要があります。
 author: dipakboyed
 localization_priority: Normal
-ms.openlocfilehash: 516940f9a6dd43460aa0ceb9b955c41dc89196c6
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: education
+ms.openlocfilehash: 7ebe8445a6537333ed17f3626a58258a952ee844
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27828785"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27975338"
 ---
 # <a name="update-educationsubmission"></a>Educationsubmission を更新します。
 

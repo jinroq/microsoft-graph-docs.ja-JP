@@ -3,12 +3,13 @@ title: OfficeClientConfigurationAssignment を取得します。
 description: OfficeClientConfigurationAssignment オブジェクトのプロパティと関係を参照してください。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: d74d2982c06a11a71825882d4b3c652ed983ccce
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 10bad7093545d872001d79ce31e86fe578d7c659
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27817809"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27991623"
 ---
 # <a name="get-officeclientconfigurationassignment"></a>OfficeClientConfigurationAssignment を取得します。
 

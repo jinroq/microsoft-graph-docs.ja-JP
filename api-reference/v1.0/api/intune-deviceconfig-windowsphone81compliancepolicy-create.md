@@ -2,12 +2,14 @@
 title: windowsPhone81CompliancePolicy の作成
 description: 新しい windowsPhone81CompliancePolicy オブジェクトを作成します。
 author: tfitzmac
-ms.openlocfilehash: 689421dcc1a38d43fe6ebeef667df7d89312df9b
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.prod: intune
+ms.openlocfilehash: 4e467dfe1537eb081129bdbb3e745da035defa4e
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27302395"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27976710"
 ---
 # <a name="create-windowsphone81compliancepolicy"></a>windowsPhone81CompliancePolicy の作成
 

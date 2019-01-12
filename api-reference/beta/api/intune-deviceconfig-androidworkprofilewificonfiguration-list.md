@@ -3,12 +3,13 @@ title: リスト androidWorkProfileWiFiConfigurations
 description: AndroidWorkProfileWiFiConfiguration オブジェクトのプロパティと関係を一覧表示します。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 8a89b0830813b2babbc109f5828642ebd5eb0858
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 843828309dda03236b4d5ab516928ae1af9d4853
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27890966"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27973798"
 ---
 # <a name="list-androidworkprofilewificonfigurations"></a>リスト androidWorkProfileWiFiConfigurations
 

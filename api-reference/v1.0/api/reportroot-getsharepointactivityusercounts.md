@@ -2,12 +2,13 @@
 title: 'reportRoot: getSharePointActivityUserCounts'
 description: アクティブ ユーザーの数の傾向を取得します。 ユーザーが一定期間中にファイル アクティビティ (保存、同期、変更、共有) を実行するか、またはページにアクセスすると、そのユーザーはアクティブとみなされます。
 localization_priority: Normal
-ms.openlocfilehash: 369083472795194f2110f4e94fd02d5ab40b5feb
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: reports
+ms.openlocfilehash: 94ab980789d6a8466ef83269249e49f2388e124a
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27846159"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27970795"
 ---
 # <a name="reportroot-getsharepointactivityusercounts"></a>reportRoot: getSharePointActivityUserCounts
 

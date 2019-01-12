@@ -3,12 +3,13 @@ title: educationSchools をリストする
 description: すべての学校オブジェクトのリストを取得します。
 author: mmast-msft
 localization_priority: Normal
-ms.openlocfilehash: 0bef367932b89ba998405f5da8b27b7af54efb94
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: education
+ms.openlocfilehash: dd42cd302876ad0f6a2d7dcab1a6bec5a86e61e0
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27813581"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27975289"
 ---
 # <a name="list-educationschools"></a>educationSchools をリストする
 

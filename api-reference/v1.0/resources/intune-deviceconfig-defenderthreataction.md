@@ -2,12 +2,14 @@
 title: defenderThreatAction 列挙型
 description: Defender の既定のアクション実行するには、マルウェアの脅威が検出されました。
 localization_priority: Normal
-ms.openlocfilehash: ed84a16dbac493a3e962e37ba246d8d418782a91
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: tfitzmac
+ms.prod: intune
+ms.openlocfilehash: 51aa26483ac6b79d48567f7e5950733def31f01e
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27852823"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27976647"
 ---
 # <a name="defenderthreataction-enum-type"></a>defenderThreatAction 列挙型
 

@@ -3,12 +3,13 @@ title: binaryManagementConditionExpression リソースの種類
 description: 二項演算を使用して評価される管理条件式です。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 509e03e7d492289fc9615f7f8ad47bf13d5bead4
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: b15938d0bb29fdfdad8abb1b37b02ad1e6468cf9
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27857051"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27978537"
 ---
 # <a name="binarymanagementconditionexpression-resource-type"></a>binaryManagementConditionExpression リソースの種類
 

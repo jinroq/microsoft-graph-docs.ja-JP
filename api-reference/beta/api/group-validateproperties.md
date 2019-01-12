@@ -2,12 +2,14 @@
 title: 'グループ: validateProperties'
 description: Office 365 のグループの表示名やメールのニックネームは、命名ポリシーに準拠している場合を検証します。 クライアントは、API を使用して場合は、表示名を確認または、Office 365 のグループ**を更新**する前に、メールのニックネームが無効です。 プロパティを検証グループを作成する前に、ディレクトリ オブジェクトの validateProperties 関数を使用します。
 localization_priority: Normal
-ms.openlocfilehash: 0ffdf44f687ad047d952e00c268239432244006d
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: dkershaw10
+ms.prod: groups
+ms.openlocfilehash: 5361e05d2a58e2d4c27bd662f158d4f185c447fe
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27833902"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27990891"
 ---
 # <a name="group-validateproperties"></a>グループ: validateProperties
 

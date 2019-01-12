@@ -3,12 +3,13 @@ title: mobileAppAssignment リソース タイプ
 description: モバイル アプリのグループ割り当て用に使用されるプロパティを含むクラスです。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 3eefc11d0e0df41ea452d903bcc159a2fbe2865e
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: cc7fae4134c4566d3530e7ec06ade57d03c6b352
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27839511"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27991364"
 ---
 # <a name="mobileappassignment-resource-type"></a>mobileAppAssignment リソース タイプ
 

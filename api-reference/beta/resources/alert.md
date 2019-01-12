@@ -2,12 +2,14 @@
 title: 通知リソースの種類
 description: マイクロソフトまたはパートナーのセキュリティ ・ ソリューションを特定の顧客のテナント内の潜在的なセキュリティ問題を表します。 統一し、すべての統合されたソリューションのセキュリティ問題の管理を合理化するには、アラートを使用します。 詳細については、グラフのエクスプ ローラー内のサンプル クエリを参照してください。
 localization_priority: Normal
-ms.openlocfilehash: 1a2eed114fe3634262fe705450170713ba9d2fee
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: preetikr
+ms.prod: security
+ms.openlocfilehash: 29e431aee372d1ddd41232a58bc204e9c836d77e
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27844472"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27991553"
 ---
 # <a name="alert-resource-type"></a>通知リソースの種類
 

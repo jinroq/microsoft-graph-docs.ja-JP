@@ -3,12 +3,13 @@ title: deviceHealthAttestationState リソース タイプ
 description: まだ文書化されていません
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: cb4f539bdcad96b1e87cf5f736846dbe8b7555f2
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 7d246e5bd4235a3bc121d2809e95a59788bf9441
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27839173"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27972153"
 ---
 # <a name="devicehealthattestationstate-resource-type"></a>deviceHealthAttestationState リソース タイプ
 

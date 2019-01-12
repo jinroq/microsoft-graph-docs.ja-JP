@@ -2,12 +2,13 @@
 title: アクティビティのリソースの種類
 description: -テレビ番組、ドキュメント、ビデオ ゲームの現在のキャンペーンなど、アプリケーション内で 1 つのアクティビティを表します。 ユーザーは、その活動と連携して、ときに、そのアクティビティの開始と終了時刻を示す履歴項目として契約がキャプチャされます。 ようにユーザーには、再、時間の経過と共にその活動と連携して、1 人のユーザーの活動の複数の項目の履歴が記録されます。
 localization_priority: Normal
-ms.openlocfilehash: 79ed44ef0f6a38fbef8ead233debce3fc9e66b42
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: project-rome
+ms.openlocfilehash: eade448e9585ac3678c81548c242bd467e71df40
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27877071"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27991077"
 ---
 # <a name="activity-resource-type"></a>アクティビティのリソースの種類
 

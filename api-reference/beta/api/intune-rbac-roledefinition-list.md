@@ -3,12 +3,13 @@ title: roleDefinitions のリスト
 description: roleDefinition オブジェクトのプロパティとリレーションシップをリストします。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: bb6280c1d106ed8b93da3a0b80894200f5afa4fc
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 274c3e9b9e88e4d32b81e3c1a0c6c09a48181bf0
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27851871"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27978244"
 ---
 # <a name="list-roledefinitions"></a>roleDefinitions のリスト
 
