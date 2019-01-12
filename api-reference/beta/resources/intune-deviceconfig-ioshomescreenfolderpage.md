@@ -3,12 +3,13 @@ title: iosHomeScreenFolderPage リソースの種類
 description: ホーム画面上のアプリが含まれるフォルダー
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 5bcfc7f44399de72c27a631eb0d0f04ab76bd6a5
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 38b1d898cb4bc1eacaa427ed412b536ba40cd0f9
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27813861"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27941962"
 ---
 # <a name="ioshomescreenfolderpage-resource-type"></a>iosHomeScreenFolderPage リソースの種類
 

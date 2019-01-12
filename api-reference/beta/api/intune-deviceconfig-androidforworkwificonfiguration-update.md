@@ -3,12 +3,13 @@ title: AndroidForWorkWiFiConfiguration を更新します。
 description: AndroidForWorkWiFiConfiguration オブジェクトのプロパティを更新します。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: cba85f8cbee69bd6c480553001dbabff701285f3
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 5a7cc4df196acd7d18e6ef543029c1d05a1d2ae1
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27881565"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27954191"
 ---
 # <a name="update-androidforworkwificonfiguration"></a>AndroidForWorkWiFiConfiguration を更新します。
 

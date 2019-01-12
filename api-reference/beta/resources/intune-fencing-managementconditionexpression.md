@@ -2,12 +2,14 @@
 title: managementConditionExpression リソースの種類
 description: 管理の条件式は、評価されるとき、つまり true または管理の条件付きステートメントがアクティブ/非アクティブであることを示す false のいずれかのブール値を生成する式です。 管理条件式は、式の変数とブール値の式の演算子の組み合わせで構成されます。
 localization_priority: Normal
-ms.openlocfilehash: f7f370b348ab13ef964eab1cc7025868e4380bac
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: tfitzmac
+ms.prod: intune
+ms.openlocfilehash: b25469c3efb9f7985bf21ad47e83c34b47f96b64
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27857065"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27941878"
 ---
 # <a name="managementconditionexpression-resource-type"></a>managementConditionExpression リソースの種類
 

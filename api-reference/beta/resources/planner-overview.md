@@ -3,12 +3,13 @@ title: プランナーの REST API を使用します。
 description: Graph でプランナーの API を使用するにはタスクを作成し、Office 365 で、グループ内のユーザーに割り当てます。
 author: TarkanSevilmis
 localization_priority: Priority
-ms.openlocfilehash: bf6af385e2d03eb59a41459dcf7fdd4454f1e00d
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: planner
+ms.openlocfilehash: 2995cfe32e921889a55ec56c67989ecdfc9716ed
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27808205"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27942571"
 ---
 # <a name="use-the-planner-rest-api"></a>プランナーの REST API を使用します。
 

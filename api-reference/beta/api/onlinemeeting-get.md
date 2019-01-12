@@ -2,12 +2,14 @@
 title: Get オンライン会議
 description: プロパティと**onlineMeeting**オブジェクトの関係を取得します。
 author: VinodRavichandran
-ms.openlocfilehash: bfae4273aba0583e6c10a7e10f9c67865326bacf
-ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
+localization_priority: Normal
+ms.prod: microsoft-teams
+ms.openlocfilehash: 4e287c3848b6ae18c206980b745a39e5b6b45cc3
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "27380381"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27944692"
 ---
 # <a name="get-online-meeting"></a>Get オンライン会議
 

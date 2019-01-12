@@ -3,12 +3,13 @@ title: EducationSubmissionResource を取得します。
 description: 提出書類に関連付けられている特定のリソースのプロパティを取得します。 このリソースでは、'作業' リソースの一覧では、学生によってプロセスでの作業を考慮する必要があります。 割り当てからコピーされた場合、このリソースは割り当てのリソースに使用可能なポインターがラップされます。
 author: dipakboyed
 localization_priority: Normal
-ms.openlocfilehash: 95a44b2a2e354060a718827ba1c13b9c60391d58
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: education
+ms.openlocfilehash: 47dd803e4a8503017d68f00c0e95c78ad271c870
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27866074"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27940352"
 ---
 # <a name="get-educationsubmissionresource"></a>EducationSubmissionResource を取得します。
 

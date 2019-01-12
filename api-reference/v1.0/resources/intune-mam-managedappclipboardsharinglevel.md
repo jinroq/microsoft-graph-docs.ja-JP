@@ -2,12 +2,14 @@
 title: managedAppClipboardSharingLevel 列挙型
 description: アプリケーションとの間にデバイスのクリップボードを共有する可能性がありますレベルを表します
 localization_priority: Normal
-ms.openlocfilehash: 16d6e9154b3d6e683d9ddce0efd70a40c01c8994
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: tfitzmac
+ms.prod: intune
+ms.openlocfilehash: 349f0ee08b8e3bff4e627c58318e2c21fa00847c
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27814316"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27946785"
 ---
 # <a name="managedappclipboardsharinglevel-enum-type"></a>managedAppClipboardSharingLevel 列挙型
 
