@@ -3,49 +3,50 @@ title: リスト taskFolders
 description: 特定の outlookTaskGroup では、Outlook の仕事フォルダーを取得します。
 author: angelgolfer-ms
 localization_priority: Normal
-ms.openlocfilehash: 66f755a994ea04a862051b6b32ce3ae9e6b39d0a
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: outlook
+ms.openlocfilehash: baeba1a4dd0e046e59ce85a9a323dbf17fc48450
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27857653"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27944251"
 ---
-# <a name="list-taskfolders"></a><span data-ttu-id="a53e8-103">リスト taskFolders</span><span class="sxs-lookup"><span data-stu-id="a53e8-103">List taskFolders</span></span>
+# <a name="list-taskfolders"></a><span data-ttu-id="4cc85-103">リスト taskFolders</span><span class="sxs-lookup"><span data-stu-id="4cc85-103">List taskFolders</span></span>
 
-> <span data-ttu-id="a53e8-104">**重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。</span><span class="sxs-lookup"><span data-stu-id="a53e8-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="a53e8-105">実稼働アプリケーションでの、これらの API の使用はサポートされていません。</span><span class="sxs-lookup"><span data-stu-id="a53e8-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="4cc85-104">**重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。</span><span class="sxs-lookup"><span data-stu-id="4cc85-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="4cc85-105">実稼働アプリケーションでの、これらの API の使用はサポートされていません。</span><span class="sxs-lookup"><span data-stu-id="4cc85-105">Use of these APIs in production applications is not supported.</span></span>
 
-<span data-ttu-id="a53e8-106">特定の[outlookTaskGroup](../resources/outlooktaskgroup.md)では、Outlook の仕事フォルダーを取得します。</span><span class="sxs-lookup"><span data-stu-id="a53e8-106">Get Outlook task folders in a specific [outlookTaskGroup](../resources/outlooktaskgroup.md).</span></span>
-## <a name="permissions"></a><span data-ttu-id="a53e8-107">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="a53e8-107">Permissions</span></span>
-<span data-ttu-id="a53e8-p102">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="a53e8-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="4cc85-106">特定の[outlookTaskGroup](../resources/outlooktaskgroup.md)では、Outlook の仕事フォルダーを取得します。</span><span class="sxs-lookup"><span data-stu-id="4cc85-106">Get Outlook task folders in a specific [outlookTaskGroup](../resources/outlooktaskgroup.md).</span></span>
+## <a name="permissions"></a><span data-ttu-id="4cc85-107">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="4cc85-107">Permissions</span></span>
+<span data-ttu-id="4cc85-p102">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="4cc85-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="a53e8-110">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="a53e8-110">Permission type</span></span>      | <span data-ttu-id="a53e8-111">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="a53e8-111">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="4cc85-110">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="4cc85-110">Permission type</span></span>      | <span data-ttu-id="4cc85-111">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="4cc85-111">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="a53e8-112">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="a53e8-112">Delegated (work or school account)</span></span> | <span data-ttu-id="a53e8-113">Tasks.Read</span><span class="sxs-lookup"><span data-stu-id="a53e8-113">Tasks.Read</span></span>    |
-|<span data-ttu-id="a53e8-114">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="a53e8-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="a53e8-115">Tasks.Read</span><span class="sxs-lookup"><span data-stu-id="a53e8-115">Tasks.Read</span></span>    |
-|<span data-ttu-id="a53e8-116">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="a53e8-116">Application</span></span> | <span data-ttu-id="a53e8-117">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="a53e8-117">Not supported.</span></span> |
+|<span data-ttu-id="4cc85-112">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="4cc85-112">Delegated (work or school account)</span></span> | <span data-ttu-id="4cc85-113">Tasks.Read</span><span class="sxs-lookup"><span data-stu-id="4cc85-113">Tasks.Read</span></span>    |
+|<span data-ttu-id="4cc85-114">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="4cc85-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="4cc85-115">Tasks.Read</span><span class="sxs-lookup"><span data-stu-id="4cc85-115">Tasks.Read</span></span>    |
+|<span data-ttu-id="4cc85-116">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="4cc85-116">Application</span></span> | <span data-ttu-id="4cc85-117">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="4cc85-117">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="a53e8-118">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="a53e8-118">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="4cc85-118">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="4cc85-118">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /users/{id|userPrincipalName}/outlook/taskGroups/{id}/taskFolders
 ```
-## <a name="optional-query-parameters"></a><span data-ttu-id="a53e8-119">オプションのクエリ パラメーター</span><span class="sxs-lookup"><span data-stu-id="a53e8-119">Optional query parameters</span></span>
-<span data-ttu-id="a53e8-120">このメソッドは、応答をカスタマイズするための [OData クエリ パラメーター](https://developer.microsoft.com/graph/docs/concepts/query_parameters)をサポートします。</span><span class="sxs-lookup"><span data-stu-id="a53e8-120">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="4cc85-119">オプションのクエリ パラメーター</span><span class="sxs-lookup"><span data-stu-id="4cc85-119">Optional query parameters</span></span>
+<span data-ttu-id="4cc85-120">このメソッドは、応答をカスタマイズするための [OData クエリ パラメーター](https://developer.microsoft.com/graph/docs/concepts/query_parameters)をサポートします。</span><span class="sxs-lookup"><span data-stu-id="4cc85-120">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="a53e8-121">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="a53e8-121">Request headers</span></span>
-| <span data-ttu-id="a53e8-122">名前</span><span class="sxs-lookup"><span data-stu-id="a53e8-122">Name</span></span>      |<span data-ttu-id="a53e8-123">説明</span><span class="sxs-lookup"><span data-stu-id="a53e8-123">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="4cc85-121">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="4cc85-121">Request headers</span></span>
+| <span data-ttu-id="4cc85-122">名前</span><span class="sxs-lookup"><span data-stu-id="4cc85-122">Name</span></span>      |<span data-ttu-id="4cc85-123">説明</span><span class="sxs-lookup"><span data-stu-id="4cc85-123">Description</span></span>|
 |:----------|:----------|
-| <span data-ttu-id="a53e8-124">Authorization</span><span class="sxs-lookup"><span data-stu-id="a53e8-124">Authorization</span></span>  | <span data-ttu-id="a53e8-p103">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="a53e8-p103">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="4cc85-124">Authorization</span><span class="sxs-lookup"><span data-stu-id="4cc85-124">Authorization</span></span>  | <span data-ttu-id="4cc85-p103">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="4cc85-p103">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="a53e8-127">要求本文</span><span class="sxs-lookup"><span data-stu-id="a53e8-127">Request body</span></span>
-<span data-ttu-id="a53e8-128">このメソッドには、要求本文を指定しません。</span><span class="sxs-lookup"><span data-stu-id="a53e8-128">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="4cc85-127">要求本文</span><span class="sxs-lookup"><span data-stu-id="4cc85-127">Request body</span></span>
+<span data-ttu-id="4cc85-128">このメソッドには、要求本文を指定しません。</span><span class="sxs-lookup"><span data-stu-id="4cc85-128">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="a53e8-129">応答</span><span class="sxs-lookup"><span data-stu-id="a53e8-129">Response</span></span>
+## <a name="response"></a><span data-ttu-id="4cc85-129">応答</span><span class="sxs-lookup"><span data-stu-id="4cc85-129">Response</span></span>
 
-<span data-ttu-id="a53e8-130">かどうかは成功すると、このメソッドが返されます、`200 OK`応答コードおよび応答の本文内の[outlookTaskFolder](../resources/outlooktaskfolder.md)オブジェクトのコレクションです。</span><span class="sxs-lookup"><span data-stu-id="a53e8-130">If successful, this method returns a `200 OK` response code and collection of [outlookTaskFolder](../resources/outlooktaskfolder.md) objects in the response body.</span></span>
-## <a name="example"></a><span data-ttu-id="a53e8-131">例</span><span class="sxs-lookup"><span data-stu-id="a53e8-131">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="a53e8-132">要求</span><span class="sxs-lookup"><span data-stu-id="a53e8-132">Request</span></span>
-<span data-ttu-id="a53e8-133">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="a53e8-133">Here is an example of the request.</span></span>
+<span data-ttu-id="4cc85-130">かどうかは成功すると、このメソッドが返されます、`200 OK`応答コードおよび応答の本文内の[outlookTaskFolder](../resources/outlooktaskfolder.md)オブジェクトのコレクションです。</span><span class="sxs-lookup"><span data-stu-id="4cc85-130">If successful, this method returns a `200 OK` response code and collection of [outlookTaskFolder](../resources/outlooktaskfolder.md) objects in the response body.</span></span>
+## <a name="example"></a><span data-ttu-id="4cc85-131">例</span><span class="sxs-lookup"><span data-stu-id="4cc85-131">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="4cc85-132">要求</span><span class="sxs-lookup"><span data-stu-id="4cc85-132">Request</span></span>
+<span data-ttu-id="4cc85-133">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="4cc85-133">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "get_taskfolders"
@@ -53,8 +54,8 @@ GET /users/{id|userPrincipalName}/outlook/taskGroups/{id}/taskFolders
 ```http
 GET https://graph.microsoft.com/beta/me/outlook/taskGroups('AAMkADIyAAAhrbe-AAA=')/taskFolders
 ```
-##### <a name="response"></a><span data-ttu-id="a53e8-134">応答</span><span class="sxs-lookup"><span data-stu-id="a53e8-134">Response</span></span>
-<span data-ttu-id="a53e8-p104">以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。</span><span class="sxs-lookup"><span data-stu-id="a53e8-p104">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="4cc85-134">応答</span><span class="sxs-lookup"><span data-stu-id="4cc85-134">Response</span></span>
+<span data-ttu-id="4cc85-p104">以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。</span><span class="sxs-lookup"><span data-stu-id="4cc85-p104">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
