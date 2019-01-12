@@ -3,59 +3,60 @@ title: '呼び出す: 転送'
 description: アクティブな呼び出しを転送します。
 author: VinodRavichandran
 localization_priority: Normal
-ms.openlocfilehash: 5e1a26a1b3da1af8666d8fc5bcbba619c9fad97b
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: microsoft-teams
+ms.openlocfilehash: 34ddf14ae7a49aa8a0aeae1c1bc98b8a79c16384
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27824900"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27921613"
 ---
-# <a name="call-transfer"></a><span data-ttu-id="2c192-103">呼び出す: 転送</span><span class="sxs-lookup"><span data-stu-id="2c192-103">call: transfer</span></span>
+# <a name="call-transfer"></a><span data-ttu-id="9c8f4-103">呼び出す: 転送</span><span class="sxs-lookup"><span data-stu-id="9c8f4-103">call: transfer</span></span>
 
-> <span data-ttu-id="2c192-104">**重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。</span><span class="sxs-lookup"><span data-stu-id="2c192-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="2c192-105">実稼働アプリケーションでの、これらの API の使用はサポートされていません。</span><span class="sxs-lookup"><span data-stu-id="2c192-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="9c8f4-104">**重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。</span><span class="sxs-lookup"><span data-stu-id="9c8f4-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="9c8f4-105">実稼働アプリケーションでの、これらの API の使用はサポートされていません。</span><span class="sxs-lookup"><span data-stu-id="9c8f4-105">Use of these APIs in production applications is not supported.</span></span>
 
-<span data-ttu-id="2c192-106">アクティブな呼び出しを転送します。</span><span class="sxs-lookup"><span data-stu-id="2c192-106">Transfer an active call.</span></span>
+<span data-ttu-id="9c8f4-106">アクティブな呼び出しを転送します。</span><span class="sxs-lookup"><span data-stu-id="9c8f4-106">Transfer an active call.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="2c192-107">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="2c192-107">Permissions</span></span>
-<span data-ttu-id="2c192-p102">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="2c192-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="9c8f4-107">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="9c8f4-107">Permissions</span></span>
+<span data-ttu-id="9c8f4-p102">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="9c8f4-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="2c192-110">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="2c192-110">Permission type</span></span> | <span data-ttu-id="2c192-111">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="2c192-111">Permissions (from least to most privileged)</span></span>         |
+| <span data-ttu-id="9c8f4-110">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="9c8f4-110">Permission type</span></span> | <span data-ttu-id="9c8f4-111">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="9c8f4-111">Permissions (from least to most privileged)</span></span>         |
 | :-------------- | :-------------------------------------------------- |
-| <span data-ttu-id="2c192-112">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="2c192-112">Delegated (work or school account)</span></span>     | <span data-ttu-id="2c192-113">サポート対象外</span><span class="sxs-lookup"><span data-stu-id="2c192-113">Not Supported</span></span>                |
-| <span data-ttu-id="2c192-114">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="2c192-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="2c192-115">サポート対象外</span><span class="sxs-lookup"><span data-stu-id="2c192-115">Not Supported</span></span>                |
-| <span data-ttu-id="2c192-116">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="2c192-116">Application</span></span>     | <span data-ttu-id="2c192-117">Calls.Initiate.All</span><span class="sxs-lookup"><span data-stu-id="2c192-117">Calls.Initiate.All</span></span>                                  |
+| <span data-ttu-id="9c8f4-112">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="9c8f4-112">Delegated (work or school account)</span></span>     | <span data-ttu-id="9c8f4-113">サポート対象外</span><span class="sxs-lookup"><span data-stu-id="9c8f4-113">Not Supported</span></span>                |
+| <span data-ttu-id="9c8f4-114">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="9c8f4-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="9c8f4-115">サポート対象外</span><span class="sxs-lookup"><span data-stu-id="9c8f4-115">Not Supported</span></span>                |
+| <span data-ttu-id="9c8f4-116">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="9c8f4-116">Application</span></span>     | <span data-ttu-id="9c8f4-117">Calls.Initiate.All</span><span class="sxs-lookup"><span data-stu-id="9c8f4-117">Calls.Initiate.All</span></span>                                  |
 
-## <a name="http-request"></a><span data-ttu-id="2c192-118">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="2c192-118">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="9c8f4-118">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="9c8f4-118">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /app/calls/{id}/transfer
 POST /applications/{id}/calls/{id}/transfer
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="2c192-119">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="2c192-119">Request headers</span></span>
-| <span data-ttu-id="2c192-120">名前</span><span class="sxs-lookup"><span data-stu-id="2c192-120">Name</span></span>          | <span data-ttu-id="2c192-121">説明</span><span class="sxs-lookup"><span data-stu-id="2c192-121">Description</span></span>               |
+## <a name="request-headers"></a><span data-ttu-id="9c8f4-119">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="9c8f4-119">Request headers</span></span>
+| <span data-ttu-id="9c8f4-120">名前</span><span class="sxs-lookup"><span data-stu-id="9c8f4-120">Name</span></span>          | <span data-ttu-id="9c8f4-121">説明</span><span class="sxs-lookup"><span data-stu-id="9c8f4-121">Description</span></span>               |
 |:--------------|:--------------------------|
-| <span data-ttu-id="2c192-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="2c192-122">Authorization</span></span> | <span data-ttu-id="2c192-p103">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="2c192-p103">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="9c8f4-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="9c8f4-122">Authorization</span></span> | <span data-ttu-id="9c8f4-p103">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="9c8f4-p103">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="2c192-125">要求本文</span><span class="sxs-lookup"><span data-stu-id="2c192-125">Request body</span></span>
-<span data-ttu-id="2c192-126">要求本文で、次のパラメーターを含む JSON オブジェクトを指定します。</span><span class="sxs-lookup"><span data-stu-id="2c192-126">In the request body, provide a JSON object with the following parameters.</span></span>
+## <a name="request-body"></a><span data-ttu-id="9c8f4-125">要求本文</span><span class="sxs-lookup"><span data-stu-id="9c8f4-125">Request body</span></span>
+<span data-ttu-id="9c8f4-126">要求本文で、次のパラメーターを含む JSON オブジェクトを指定します。</span><span class="sxs-lookup"><span data-stu-id="9c8f4-126">In the request body, provide a JSON object with the following parameters.</span></span>
 
-| <span data-ttu-id="2c192-127">パラメーター</span><span class="sxs-lookup"><span data-stu-id="2c192-127">Parameter</span></span>      | <span data-ttu-id="2c192-128">Type</span><span class="sxs-lookup"><span data-stu-id="2c192-128">Type</span></span>    |<span data-ttu-id="2c192-129">説明</span><span class="sxs-lookup"><span data-stu-id="2c192-129">Description</span></span>|
+| <span data-ttu-id="9c8f4-127">パラメーター</span><span class="sxs-lookup"><span data-stu-id="9c8f4-127">Parameter</span></span>      | <span data-ttu-id="9c8f4-128">型</span><span class="sxs-lookup"><span data-stu-id="9c8f4-128">Type</span></span>    |<span data-ttu-id="9c8f4-129">説明</span><span class="sxs-lookup"><span data-stu-id="9c8f4-129">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="2c192-130">transferTarget</span><span class="sxs-lookup"><span data-stu-id="2c192-130">transferTarget</span></span>|[<span data-ttu-id="2c192-131">invitationParticipantInfo</span><span class="sxs-lookup"><span data-stu-id="2c192-131">invitationParticipantInfo</span></span>](../resources/invitationparticipantinfo.md)|<span data-ttu-id="2c192-132">転送の対象である構成要素です。</span><span class="sxs-lookup"><span data-stu-id="2c192-132">The participant which is the target of the transfer.</span></span>|
-|<span data-ttu-id="2c192-133">clientContext</span><span class="sxs-lookup"><span data-stu-id="2c192-133">clientContext</span></span>|<span data-ttu-id="2c192-134">String</span><span class="sxs-lookup"><span data-stu-id="2c192-134">String</span></span>|<span data-ttu-id="2c192-135">クライアントのコンテキスト。</span><span class="sxs-lookup"><span data-stu-id="2c192-135">The client context.</span></span>|
+|<span data-ttu-id="9c8f4-130">transferTarget</span><span class="sxs-lookup"><span data-stu-id="9c8f4-130">transferTarget</span></span>|[<span data-ttu-id="9c8f4-131">invitationParticipantInfo</span><span class="sxs-lookup"><span data-stu-id="9c8f4-131">invitationParticipantInfo</span></span>](../resources/invitationparticipantinfo.md)|<span data-ttu-id="9c8f4-132">転送の対象である構成要素です。</span><span class="sxs-lookup"><span data-stu-id="9c8f4-132">The participant which is the target of the transfer.</span></span>|
+|<span data-ttu-id="9c8f4-133">clientContext</span><span class="sxs-lookup"><span data-stu-id="9c8f4-133">clientContext</span></span>|<span data-ttu-id="9c8f4-134">String</span><span class="sxs-lookup"><span data-stu-id="9c8f4-134">String</span></span>|<span data-ttu-id="9c8f4-135">クライアントのコンテキスト。</span><span class="sxs-lookup"><span data-stu-id="9c8f4-135">The client context.</span></span>|
 
-## <a name="response"></a><span data-ttu-id="2c192-136">応答</span><span class="sxs-lookup"><span data-stu-id="2c192-136">Response</span></span>
-<span data-ttu-id="2c192-137">返します。`202 Accepted`応答コード。</span><span class="sxs-lookup"><span data-stu-id="2c192-137">Returns `202 Accepted` response code.</span></span>
+## <a name="response"></a><span data-ttu-id="9c8f4-136">応答</span><span class="sxs-lookup"><span data-stu-id="9c8f4-136">Response</span></span>
+<span data-ttu-id="9c8f4-137">返します。`202 Accepted`応答コード。</span><span class="sxs-lookup"><span data-stu-id="9c8f4-137">Returns `202 Accepted` response code.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="2c192-138">例</span><span class="sxs-lookup"><span data-stu-id="2c192-138">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="9c8f4-138">例</span><span class="sxs-lookup"><span data-stu-id="9c8f4-138">Examples</span></span>
 
-### <a name="transfer-call-directly-with-no-user-involvement"></a><span data-ttu-id="2c192-139">ユーザーの関与なしに直接、電話を転送します。</span><span class="sxs-lookup"><span data-stu-id="2c192-139">Transfer call directly, with no user involvement</span></span>
+### <a name="transfer-call-directly-with-no-user-involvement"></a><span data-ttu-id="9c8f4-139">ユーザーの関与なしに直接、電話を転送します。</span><span class="sxs-lookup"><span data-stu-id="9c8f4-139">Transfer call directly, with no user involvement</span></span>
 
-<span data-ttu-id="2c192-140">次の例は、この API を呼び出す方法を示しています。</span><span class="sxs-lookup"><span data-stu-id="2c192-140">The following example shows how to call this API.</span></span>
+<span data-ttu-id="9c8f4-140">次の例は、この API を呼び出す方法を示しています。</span><span class="sxs-lookup"><span data-stu-id="9c8f4-140">The following example shows how to call this API.</span></span>
 
-##### <a name="request"></a><span data-ttu-id="2c192-141">要求</span><span class="sxs-lookup"><span data-stu-id="2c192-141">Request</span></span>
-<span data-ttu-id="2c192-142">次の例は要求を示しています。</span><span class="sxs-lookup"><span data-stu-id="2c192-142">The following example shows the request.</span></span>
+##### <a name="request"></a><span data-ttu-id="9c8f4-141">要求</span><span class="sxs-lookup"><span data-stu-id="9c8f4-141">Request</span></span>
+<span data-ttu-id="9c8f4-142">次の例は要求を示しています。</span><span class="sxs-lookup"><span data-stu-id="9c8f4-142">The following example shows the request.</span></span>
 
 <!-- {
   "blockType": "request",
@@ -84,9 +85,9 @@ Content-Length: 430
 }
 ```
 
-##### <a name="response"></a><span data-ttu-id="2c192-143">応答</span><span class="sxs-lookup"><span data-stu-id="2c192-143">Response</span></span>
+##### <a name="response"></a><span data-ttu-id="9c8f4-143">応答</span><span class="sxs-lookup"><span data-stu-id="9c8f4-143">Response</span></span>
 
-> <span data-ttu-id="2c192-p104">**注:** 読みやすくするために、ここに示す応答オブジェクトは短くされている場合があります。実際の呼び出しからは、すべてのプロパティが返されます。</span><span class="sxs-lookup"><span data-stu-id="2c192-p104">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+> <span data-ttu-id="9c8f4-p104">**注:** 読みやすくするために、ここに示す応答オブジェクトは短くされている場合があります。実際の呼び出しからは、すべてのプロパティが返されます。</span><span class="sxs-lookup"><span data-stu-id="9c8f4-p104">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -97,7 +98,7 @@ Content-Length: 430
 HTTP/1.1 202 Accepted
 ```
 
-##### <a name="notification---transferring"></a><span data-ttu-id="2c192-146">通知を転送します。</span><span class="sxs-lookup"><span data-stu-id="2c192-146">Notification - transferring</span></span>
+##### <a name="notification---transferring"></a><span data-ttu-id="9c8f4-146">通知を転送します。</span><span class="sxs-lookup"><span data-stu-id="9c8f4-146">Notification - transferring</span></span>
 
 ```http
 POST https://bot.contoso.com/api/calls
@@ -131,7 +132,7 @@ Content-Type: application/json
 }
 ```
 
-##### <a name="notification---transfer-accepted"></a><span data-ttu-id="2c192-147">通知の転送を許可</span><span class="sxs-lookup"><span data-stu-id="2c192-147">Notification - transfer accepted</span></span>
+##### <a name="notification---transfer-accepted"></a><span data-ttu-id="9c8f4-147">通知の転送を許可</span><span class="sxs-lookup"><span data-stu-id="9c8f4-147">Notification - transfer accepted</span></span>
 
 ```http
 POST https://bot.contoso.com/api/calls
@@ -165,7 +166,7 @@ Content-Type: application/json
 }
 ```
 
-##### <a name="notification---terminated"></a><span data-ttu-id="2c192-148">終了の通知-</span><span class="sxs-lookup"><span data-stu-id="2c192-148">Notification - terminated</span></span>
+##### <a name="notification---terminated"></a><span data-ttu-id="9c8f4-148">終了の通知-</span><span class="sxs-lookup"><span data-stu-id="9c8f4-148">Notification - terminated</span></span>
 
 ```http
 POST https://bot.contoso.com/api/calls
@@ -195,9 +196,9 @@ Content-Type: application/json
 }
 ```
 
-### <a name="consultative-transfer"></a><span data-ttu-id="2c192-149">提案型の転送</span><span class="sxs-lookup"><span data-stu-id="2c192-149">Consultative transfer</span></span>
+### <a name="consultative-transfer"></a><span data-ttu-id="9c8f4-149">提案型の転送</span><span class="sxs-lookup"><span data-stu-id="9c8f4-149">Consultative transfer</span></span>
 
-##### <a name="request"></a><span data-ttu-id="2c192-150">要求</span><span class="sxs-lookup"><span data-stu-id="2c192-150">Request</span></span>
+##### <a name="request"></a><span data-ttu-id="9c8f4-150">要求</span><span class="sxs-lookup"><span data-stu-id="9c8f4-150">Request</span></span>
 
 ```http
 POST /app/calls/57DAB8B1894C409AB240BD8BEAE78896/transfer
@@ -227,15 +228,15 @@ Content-Type: application/json
 }
 ```
 
-##### <a name="response"></a><span data-ttu-id="2c192-151">応答</span><span class="sxs-lookup"><span data-stu-id="2c192-151">Response</span></span>
+##### <a name="response"></a><span data-ttu-id="9c8f4-151">応答</span><span class="sxs-lookup"><span data-stu-id="9c8f4-151">Response</span></span>
 
-> <span data-ttu-id="2c192-p105">**注:** 読みやすくするために、ここに示す応答オブジェクトは短くされている場合があります。実際の呼び出しからは、すべてのプロパティが返されます。</span><span class="sxs-lookup"><span data-stu-id="2c192-p105">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+> <span data-ttu-id="9c8f4-p105">**注:** 読みやすくするために、ここに示す応答オブジェクトは短くされている場合があります。実際の呼び出しからは、すべてのプロパティが返されます。</span><span class="sxs-lookup"><span data-stu-id="9c8f4-p105">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 
 ```http
 HTTP/1.1 202 Accepted
 ```
 
-##### <a name="notification---transferring"></a><span data-ttu-id="2c192-154">通知を転送します。</span><span class="sxs-lookup"><span data-stu-id="2c192-154">Notification - transferring</span></span>
+##### <a name="notification---transferring"></a><span data-ttu-id="9c8f4-154">通知を転送します。</span><span class="sxs-lookup"><span data-stu-id="9c8f4-154">Notification - transferring</span></span>
 
 ```http
 POST https://bot.contoso.com/api/calls
@@ -269,7 +270,7 @@ Content-Type: application/json
 }
 ```
 
-##### <a name="notification---transfer-accepted"></a><span data-ttu-id="2c192-155">通知の転送を許可</span><span class="sxs-lookup"><span data-stu-id="2c192-155">Notification - transfer accepted</span></span>
+##### <a name="notification---transfer-accepted"></a><span data-ttu-id="9c8f4-155">通知の転送を許可</span><span class="sxs-lookup"><span data-stu-id="9c8f4-155">Notification - transfer accepted</span></span>
 
 ```http
 POST https://bot.contoso.com/api/calls
@@ -303,7 +304,7 @@ Content-Type: application/json
 }
 ```
 
-##### <a name="notification---terminated"></a><span data-ttu-id="2c192-156">終了の通知-</span><span class="sxs-lookup"><span data-stu-id="2c192-156">Notification - terminated</span></span>
+##### <a name="notification---terminated"></a><span data-ttu-id="9c8f4-156">終了の通知-</span><span class="sxs-lookup"><span data-stu-id="9c8f4-156">Notification - terminated</span></span>
 
 ```http
 POST https://bot.contoso.com/api/calls
