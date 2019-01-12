@@ -3,30 +3,31 @@ title: 添付ファイルを一覧表示する
 description: イベントに添付された添付ファイル オブジェクトのリストを取得します。
 author: angelgolfer-ms
 localization_priority: Normal
-ms.openlocfilehash: d05bb4194a60346b97e6be368d6790fdebf8e12b
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: outlook
+ms.openlocfilehash: 9100788d30c4d9dcaacbb00e6fb72f8368bc0473
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27854706"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27990391"
 ---
-# <a name="list-attachments"></a><span data-ttu-id="05975-103">添付ファイルを一覧表示する</span><span class="sxs-lookup"><span data-stu-id="05975-103">List attachments</span></span>
+# <a name="list-attachments"></a><span data-ttu-id="565f6-103">添付ファイルを一覧表示する</span><span class="sxs-lookup"><span data-stu-id="565f6-103">List attachments</span></span>
 
-> <span data-ttu-id="05975-104">**重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。</span><span class="sxs-lookup"><span data-stu-id="05975-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="05975-105">実稼働アプリケーションでの、これらの API の使用はサポートされていません。</span><span class="sxs-lookup"><span data-stu-id="05975-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="565f6-104">**重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。</span><span class="sxs-lookup"><span data-stu-id="565f6-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="565f6-105">実稼働アプリケーションでの、これらの API の使用はサポートされていません。</span><span class="sxs-lookup"><span data-stu-id="565f6-105">Use of these APIs in production applications is not supported.</span></span>
 
-<span data-ttu-id="05975-106">イベントに添付された[添付ファイル](../resources/attachment.md) オブジェクトのリストを取得します。</span><span class="sxs-lookup"><span data-stu-id="05975-106">Retrieve a list of [attachment](../resources/attachment.md) objects attached to an event.</span></span>
+<span data-ttu-id="565f6-106">イベントに添付された[添付ファイル](../resources/attachment.md) オブジェクトのリストを取得します。</span><span class="sxs-lookup"><span data-stu-id="565f6-106">Retrieve a list of [attachment](../resources/attachment.md) objects attached to an event.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="05975-107">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="05975-107">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="565f6-107">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="565f6-107">Permissions</span></span>
 
-<span data-ttu-id="05975-p102">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="05975-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="565f6-p102">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="565f6-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="05975-110">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="05975-110">Permission type</span></span>      | <span data-ttu-id="05975-111">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="05975-111">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="565f6-110">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="565f6-110">Permission type</span></span>      | <span data-ttu-id="565f6-111">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="565f6-111">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="05975-112">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="05975-112">Delegated (work or school account)</span></span> | <span data-ttu-id="05975-113">Calendars.Read</span><span class="sxs-lookup"><span data-stu-id="05975-113">Calendars.Read</span></span>    |
-|<span data-ttu-id="05975-114">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="05975-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="05975-115">Calendars.Read</span><span class="sxs-lookup"><span data-stu-id="05975-115">Calendars.Read</span></span>    |
-|<span data-ttu-id="05975-116">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="05975-116">Application</span></span> | <span data-ttu-id="05975-117">Calendars.Read</span><span class="sxs-lookup"><span data-stu-id="05975-117">Calendars.Read</span></span> |
+|<span data-ttu-id="565f6-112">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="565f6-112">Delegated (work or school account)</span></span> | <span data-ttu-id="565f6-113">Calendars.Read</span><span class="sxs-lookup"><span data-stu-id="565f6-113">Calendars.Read</span></span>    |
+|<span data-ttu-id="565f6-114">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="565f6-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="565f6-115">Calendars.Read</span><span class="sxs-lookup"><span data-stu-id="565f6-115">Calendars.Read</span></span>    |
+|<span data-ttu-id="565f6-116">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="565f6-116">Application</span></span> | <span data-ttu-id="565f6-117">Calendars.Read</span><span class="sxs-lookup"><span data-stu-id="565f6-117">Calendars.Read</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="05975-118">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="05975-118">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="565f6-118">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="565f6-118">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -39,35 +40,35 @@ GET /users/{id|userPrincipalName}/events/{id}/attachments
 GET /groups/{id}/events/{id}/attachments
 -->
 
-## <a name="optional-query-parameters"></a><span data-ttu-id="05975-119">オプションのクエリ パラメーター</span><span class="sxs-lookup"><span data-stu-id="05975-119">Optional query parameters</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="565f6-119">オプションのクエリ パラメーター</span><span class="sxs-lookup"><span data-stu-id="565f6-119">Optional query parameters</span></span>
 
-<span data-ttu-id="05975-120">このメソッドは、応答をカスタマイズするための [OData クエリ パラメーター](https://developer.microsoft.com/graph/docs/concepts/query_parameters)をサポートします。</span><span class="sxs-lookup"><span data-stu-id="05975-120">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
+<span data-ttu-id="565f6-120">このメソッドは、応答をカスタマイズするための [OData クエリ パラメーター](https://developer.microsoft.com/graph/docs/concepts/query_parameters)をサポートします。</span><span class="sxs-lookup"><span data-stu-id="565f6-120">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
 
-<span data-ttu-id="05975-121">具体的には、使用することができます、 `$expand` 、イベントの添付ファイルにインライン イベント プロパティの残りの部分のすべてのパラメーターのクエリを実行します。</span><span class="sxs-lookup"><span data-stu-id="05975-121">In particular, you can use the `$expand` query parameter to include all of the event attachments inline with the rest of the event properties.</span></span> <span data-ttu-id="05975-122">次に例を示します。</span><span class="sxs-lookup"><span data-stu-id="05975-122">For example:</span></span>
+<span data-ttu-id="565f6-121">具体的には、使用することができます、 `$expand` 、イベントの添付ファイルにインライン イベント プロパティの残りの部分のすべてのパラメーターのクエリを実行します。</span><span class="sxs-lookup"><span data-stu-id="565f6-121">In particular, you can use the `$expand` query parameter to include all of the event attachments inline with the rest of the event properties.</span></span> <span data-ttu-id="565f6-122">例:</span><span class="sxs-lookup"><span data-stu-id="565f6-122">For example:</span></span>
 
 ```http
 GET https://graph.microsoft.com/beta/me/events/{id}?$expand=attachments
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="05975-123">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="05975-123">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="565f6-123">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="565f6-123">Request headers</span></span>
 
-| <span data-ttu-id="05975-124">名前</span><span class="sxs-lookup"><span data-stu-id="05975-124">Name</span></span>       | <span data-ttu-id="05975-125">種類</span><span class="sxs-lookup"><span data-stu-id="05975-125">Type</span></span> | <span data-ttu-id="05975-126">説明</span><span class="sxs-lookup"><span data-stu-id="05975-126">Description</span></span>|
+| <span data-ttu-id="565f6-124">名前</span><span class="sxs-lookup"><span data-stu-id="565f6-124">Name</span></span>       | <span data-ttu-id="565f6-125">種類</span><span class="sxs-lookup"><span data-stu-id="565f6-125">Type</span></span> | <span data-ttu-id="565f6-126">説明</span><span class="sxs-lookup"><span data-stu-id="565f6-126">Description</span></span>|
 |:-----------|:------|:----------|
-| <span data-ttu-id="05975-127">Authorization</span><span class="sxs-lookup"><span data-stu-id="05975-127">Authorization</span></span>  | <span data-ttu-id="05975-128">string</span><span class="sxs-lookup"><span data-stu-id="05975-128">string</span></span>  | <span data-ttu-id="05975-p104">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="05975-p104">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="565f6-127">Authorization</span><span class="sxs-lookup"><span data-stu-id="565f6-127">Authorization</span></span>  | <span data-ttu-id="565f6-128">string</span><span class="sxs-lookup"><span data-stu-id="565f6-128">string</span></span>  | <span data-ttu-id="565f6-p104">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="565f6-p104">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="05975-131">要求本文</span><span class="sxs-lookup"><span data-stu-id="05975-131">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="565f6-131">要求本文</span><span class="sxs-lookup"><span data-stu-id="565f6-131">Request body</span></span>
 
-<span data-ttu-id="05975-132">このメソッドには、要求本文を指定しません。</span><span class="sxs-lookup"><span data-stu-id="05975-132">Do not supply a request body for this method.</span></span>
+<span data-ttu-id="565f6-132">このメソッドには、要求本文を指定しません。</span><span class="sxs-lookup"><span data-stu-id="565f6-132">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="05975-133">応答</span><span class="sxs-lookup"><span data-stu-id="05975-133">Response</span></span>
+## <a name="response"></a><span data-ttu-id="565f6-133">応答</span><span class="sxs-lookup"><span data-stu-id="565f6-133">Response</span></span>
 
-<span data-ttu-id="05975-134">成功した場合、このメソッドは `200 OK` 応答コードと、応答本文で [Attachment](../resources/attachment.md) オブジェクトのコレクションを返します。</span><span class="sxs-lookup"><span data-stu-id="05975-134">If successful, this method returns a `200 OK` response code and collection of [Attachment](../resources/attachment.md) objects in the response body.</span></span>
+<span data-ttu-id="565f6-134">成功した場合、このメソッドは `200 OK` 応答コードと、応答本文で [Attachment](../resources/attachment.md) オブジェクトのコレクションを返します。</span><span class="sxs-lookup"><span data-stu-id="565f6-134">If successful, this method returns a `200 OK` response code and collection of [Attachment](../resources/attachment.md) objects in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="05975-135">例</span><span class="sxs-lookup"><span data-stu-id="05975-135">Example</span></span>
+## <a name="example"></a><span data-ttu-id="565f6-135">例</span><span class="sxs-lookup"><span data-stu-id="565f6-135">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="05975-136">要求</span><span class="sxs-lookup"><span data-stu-id="05975-136">Request</span></span>
+### <a name="request"></a><span data-ttu-id="565f6-136">要求</span><span class="sxs-lookup"><span data-stu-id="565f6-136">Request</span></span>
 
-<span data-ttu-id="05975-137">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="05975-137">Here is an example of the request.</span></span>
+<span data-ttu-id="565f6-137">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="565f6-137">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "get_attachments"
@@ -77,9 +78,9 @@ GET https://graph.microsoft.com/beta/me/events/{id}?$expand=attachments
 GET https://graph.microsoft.com/beta/me/events/{id}/attachments
 ```
 
-### <a name="response"></a><span data-ttu-id="05975-138">応答</span><span class="sxs-lookup"><span data-stu-id="05975-138">Response</span></span>
+### <a name="response"></a><span data-ttu-id="565f6-138">応答</span><span class="sxs-lookup"><span data-stu-id="565f6-138">Response</span></span>
 
-<span data-ttu-id="05975-p105">以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。</span><span class="sxs-lookup"><span data-stu-id="05975-p105">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+<span data-ttu-id="565f6-p105">以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。</span><span class="sxs-lookup"><span data-stu-id="565f6-p105">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,

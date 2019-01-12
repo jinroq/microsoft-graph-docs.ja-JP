@@ -3,48 +3,49 @@ title: 'educationSubmission: リコール'
 description: '受講者が提出書類を取り戻すしようとしたことを示します。 このアクションは、学生によってのみ実行できます。 '
 author: dipakboyed
 localization_priority: Normal
-ms.openlocfilehash: a94d1c66764128d15c1017b664f9d4a6bd3f57fc
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: education
+ms.openlocfilehash: 9e9155244522d7f1f8c61263aff6de4c87faab4e
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27828764"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27984410"
 ---
-# <a name="educationsubmission-recall"></a><span data-ttu-id="2cde2-104">educationSubmission: リコール</span><span class="sxs-lookup"><span data-stu-id="2cde2-104">educationSubmission: recall</span></span>
+# <a name="educationsubmission-recall"></a><span data-ttu-id="c42a4-104">educationSubmission: リコール</span><span class="sxs-lookup"><span data-stu-id="c42a4-104">educationSubmission: recall</span></span>
 
-> <span data-ttu-id="2cde2-105">**重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。</span><span class="sxs-lookup"><span data-stu-id="2cde2-105">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="2cde2-106">実稼働アプリケーションでの、これらの API の使用はサポートされていません。</span><span class="sxs-lookup"><span data-stu-id="2cde2-106">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="c42a4-105">**重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。</span><span class="sxs-lookup"><span data-stu-id="c42a4-105">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="c42a4-106">実稼働アプリケーションでの、これらの API の使用はサポートされていません。</span><span class="sxs-lookup"><span data-stu-id="c42a4-106">Use of these APIs in production applications is not supported.</span></span>
 
-<span data-ttu-id="2cde2-107">受講者が提出書類を取り戻すしようとしたことを示します。</span><span class="sxs-lookup"><span data-stu-id="2cde2-107">Indicates that a student wants to take back a submission.</span></span> <span data-ttu-id="2cde2-108">このアクションは、学生によってのみ実行できます。</span><span class="sxs-lookup"><span data-stu-id="2cde2-108">This action can only be done by a student.</span></span> <span data-ttu-id="2cde2-109">「送信」からの提出書類のステータスを変更すると、「処理中」に戻るには。</span><span class="sxs-lookup"><span data-stu-id="2cde2-109">It will change the status of the submission from "submitted" back to "working".</span></span>
+<span data-ttu-id="c42a4-107">受講者が提出書類を取り戻すしようとしたことを示します。</span><span class="sxs-lookup"><span data-stu-id="c42a4-107">Indicates that a student wants to take back a submission.</span></span> <span data-ttu-id="c42a4-108">このアクションは、学生によってのみ実行できます。</span><span class="sxs-lookup"><span data-stu-id="c42a4-108">This action can only be done by a student.</span></span> <span data-ttu-id="c42a4-109">「送信」からの提出書類のステータスを変更すると、「処理中」に戻るには。</span><span class="sxs-lookup"><span data-stu-id="c42a4-109">It will change the status of the submission from "submitted" back to "working".</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="2cde2-110">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="2cde2-110">Permissions</span></span>
-<span data-ttu-id="2cde2-p104">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="2cde2-p104">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="c42a4-110">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="c42a4-110">Permissions</span></span>
+<span data-ttu-id="c42a4-p104">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="c42a4-p104">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="2cde2-113">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="2cde2-113">Permission type</span></span>      | <span data-ttu-id="2cde2-114">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="2cde2-114">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="c42a4-113">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="c42a4-113">Permission type</span></span>      | <span data-ttu-id="c42a4-114">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="c42a4-114">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="2cde2-115">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="2cde2-115">Delegated (work or school account)</span></span> |  <span data-ttu-id="2cde2-116">EduAssignments.ReadWriteBasic、EduAssignments.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="2cde2-116">EduAssignments.ReadWriteBasic, EduAssignments.ReadWrite</span></span>  |
-|<span data-ttu-id="2cde2-117">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="2cde2-117">Delegated (personal Microsoft account)</span></span> |  <span data-ttu-id="2cde2-118">サポートされていません</span><span class="sxs-lookup"><span data-stu-id="2cde2-118">Not supported</span></span>  |
-|<span data-ttu-id="2cde2-119">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="2cde2-119">Application</span></span> |<span data-ttu-id="2cde2-120">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="2cde2-120">Not supported.</span></span>  | 
+|<span data-ttu-id="c42a4-115">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="c42a4-115">Delegated (work or school account)</span></span> |  <span data-ttu-id="c42a4-116">EduAssignments.ReadWriteBasic、EduAssignments.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="c42a4-116">EduAssignments.ReadWriteBasic, EduAssignments.ReadWrite</span></span>  |
+|<span data-ttu-id="c42a4-117">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="c42a4-117">Delegated (personal Microsoft account)</span></span> |  <span data-ttu-id="c42a4-118">サポートされていません</span><span class="sxs-lookup"><span data-stu-id="c42a4-118">Not supported</span></span>  |
+|<span data-ttu-id="c42a4-119">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="c42a4-119">Application</span></span> |<span data-ttu-id="c42a4-120">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="c42a4-120">Not supported.</span></span>  | 
 
-## <a name="http-request"></a><span data-ttu-id="2cde2-121">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="2cde2-121">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="c42a4-121">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="c42a4-121">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /education/classes/<id>/assignments/{id}/submissions/{id}/recall
 
 ```
-## <a name="request-headers"></a><span data-ttu-id="2cde2-122">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="2cde2-122">Request headers</span></span>
-| <span data-ttu-id="2cde2-123">ヘッダー</span><span class="sxs-lookup"><span data-stu-id="2cde2-123">Header</span></span>       | <span data-ttu-id="2cde2-124">値</span><span class="sxs-lookup"><span data-stu-id="2cde2-124">Value</span></span> |
+## <a name="request-headers"></a><span data-ttu-id="c42a4-122">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="c42a4-122">Request headers</span></span>
+| <span data-ttu-id="c42a4-123">ヘッダー</span><span class="sxs-lookup"><span data-stu-id="c42a4-123">Header</span></span>       | <span data-ttu-id="c42a4-124">値</span><span class="sxs-lookup"><span data-stu-id="c42a4-124">Value</span></span> |
 |:---------------|:--------|
-| <span data-ttu-id="2cde2-125">Authorization</span><span class="sxs-lookup"><span data-stu-id="2cde2-125">Authorization</span></span>  | <span data-ttu-id="2cde2-p105">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="2cde2-p105">Bearer {token}. Required.</span></span>  |
+| <span data-ttu-id="c42a4-125">Authorization</span><span class="sxs-lookup"><span data-stu-id="c42a4-125">Authorization</span></span>  | <span data-ttu-id="c42a4-p105">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="c42a4-p105">Bearer {token}. Required.</span></span>  |
 
-## <a name="request-body"></a><span data-ttu-id="2cde2-128">要求本文</span><span class="sxs-lookup"><span data-stu-id="2cde2-128">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="c42a4-128">要求本文</span><span class="sxs-lookup"><span data-stu-id="c42a4-128">Request body</span></span>
 
-## <a name="response"></a><span data-ttu-id="2cde2-129">応答</span><span class="sxs-lookup"><span data-stu-id="2cde2-129">Response</span></span>
-<span data-ttu-id="2cde2-p106">成功した場合、このメソッドは `204 No Content` 応答コードを返します。応答本文には何も返されません。</span><span class="sxs-lookup"><span data-stu-id="2cde2-p106">If successful, this method returns a `204 No Content` response code. It does not return anything in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="c42a4-129">応答</span><span class="sxs-lookup"><span data-stu-id="c42a4-129">Response</span></span>
+<span data-ttu-id="c42a4-p106">成功した場合、このメソッドは `204 No Content` 応答コードを返します。応答本文には何も返されません。</span><span class="sxs-lookup"><span data-stu-id="c42a4-p106">If successful, this method returns a `204 No Content` response code. It does not return anything in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="2cde2-132">例</span><span class="sxs-lookup"><span data-stu-id="2cde2-132">Example</span></span>
-<span data-ttu-id="2cde2-133">次の例は、この API を呼び出す方法を示しています。</span><span class="sxs-lookup"><span data-stu-id="2cde2-133">The following example shows how to call this API.</span></span>
-##### <a name="request"></a><span data-ttu-id="2cde2-134">要求</span><span class="sxs-lookup"><span data-stu-id="2cde2-134">Request</span></span>
-<span data-ttu-id="2cde2-135">要求の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="2cde2-135">The following is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="c42a4-132">例</span><span class="sxs-lookup"><span data-stu-id="c42a4-132">Example</span></span>
+<span data-ttu-id="c42a4-133">次の例は、この API を呼び出す方法を示しています。</span><span class="sxs-lookup"><span data-stu-id="c42a4-133">The following example shows how to call this API.</span></span>
+##### <a name="request"></a><span data-ttu-id="c42a4-134">要求</span><span class="sxs-lookup"><span data-stu-id="c42a4-134">Request</span></span>
+<span data-ttu-id="c42a4-135">要求の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="c42a4-135">The following is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "educationsubmission_recall"
@@ -53,8 +54,8 @@ POST /education/classes/<id>/assignments/{id}/submissions/{id}/recall
 POST https://graph.microsoft.com/beta/education/classes/11021/assignments/19002/submissions/850f51b7/recall
 ```
 
-##### <a name="response"></a><span data-ttu-id="2cde2-136">応答</span><span class="sxs-lookup"><span data-stu-id="2cde2-136">Response</span></span>
-<span data-ttu-id="2cde2-137">応答の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="2cde2-137">The following is an example of the response.</span></span>
+##### <a name="response"></a><span data-ttu-id="c42a4-136">応答</span><span class="sxs-lookup"><span data-stu-id="c42a4-136">Response</span></span>
+<span data-ttu-id="c42a4-137">応答の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="c42a4-137">The following is an example of the response.</span></span>
 
 <!-- {
   "blockType": "response",
