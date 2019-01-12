@@ -3,12 +3,13 @@ title: networkIPv4ConfigurationManagementCondition リソースの種類
 description: 構成ベースの管理条件を定義することも、デバイスが特定の IP を検出したときにトリガーとなる IPv4 ネットワークの設定です。 IP 構成の管理の条件だと考えてよい真のネットワーク接続がアクティブなときです。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 6964f3e84deacdd20a1c5909fb6bd8c87ddcd8f3
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 412f5de452e23eeb58f536655c4678526e996e07
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27847300"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27962108"
 ---
 # <a name="networkipv4configurationmanagementcondition-resource-type"></a>networkIPv4ConfigurationManagementCondition リソースの種類
 

@@ -3,12 +3,13 @@ title: 呼び出しと Microsoft Graph のオンライン会議の API を使用
 description: Microsoft Graph を呼び出すし、オンライン会議の API は、どのアプリやサービスがユーザーと対話する音声機能とビデオ機能を有効にして新しいディメンションを追加します。 API を使用すると、呼び出しを作成し、ユーザーとマイクロソフトのチームでのアプリケーションからの呼び出しを受信できます。 これらの Api を使用するには、通話や会議の参加者として機能するサービス アプリケーション (bot) を構築します。
 author: VinodRavichandran
 localization_priority: Priority
-ms.openlocfilehash: d7912f587dcc0181a2edd4072f0e07aa643d66be
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: microsoft-teams
+ms.openlocfilehash: bde47093496e70d0113f9d3a522c845148748f42
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27876532"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27956361"
 ---
 # <a name="working-with-the-calls-and-online-meetings-api-in-microsoft-graph"></a>呼び出しと Microsoft Graph のオンライン会議の API を使用します。
 

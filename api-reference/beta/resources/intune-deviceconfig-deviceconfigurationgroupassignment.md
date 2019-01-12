@@ -3,12 +3,13 @@ title: deviceConfigurationGroupAssignment リソースの種類
 description: デバイス構成のグループの割り当て。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: b670ffd828634e244053b8a83e5f1f05f79ebbe1
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 53e998044760dba40f40f3658b141d8aa05d7082
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27883980"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27943117"
 ---
 # <a name="deviceconfigurationgroupassignment-resource-type"></a>deviceConfigurationGroupAssignment リソースの種類
 

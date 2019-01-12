@@ -3,12 +3,13 @@ title: Windows10VpnConfiguration を更新します。
 description: Windows10VpnConfiguration オブジェクトのプロパティを更新します。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 2cdda69c06c0c204a69d14100adc0abbf7ecdc3f
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 91a7daaaafc4c938074b58a2daaf1faef8b99df2
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27807771"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27952749"
 ---
 # <a name="update-windows10vpnconfiguration"></a>Windows10VpnConfiguration を更新します。
 

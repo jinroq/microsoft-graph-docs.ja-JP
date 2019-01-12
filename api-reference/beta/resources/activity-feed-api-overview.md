@@ -2,12 +2,13 @@
 title: アクティビティ フィードの REST API を使用します。
 description: 'Graph API のフィード アクティビティを使用するにはデバイスやプラットフォーム間でユーザーのアクティビティを再開します。 アクティビティ フィードの API 要求は、委任されたアクセス許可とユーザーのアクティビティ権限、個人または仕事や学校のアカウントで使用できるユーザーの代わりに実行されます。 '
 localization_priority: Normal
-ms.openlocfilehash: 677d98d8658c282c5db822c46a78fc664a34fbc8
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: project-rome
+ms.openlocfilehash: 7b921114dd5ff8d7bffba77fa2191fde5fa33bdb
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27842855"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27943397"
 ---
 # <a name="use-the-activity-feed-rest-api"></a>アクティビティ フィードの REST API を使用します。
 

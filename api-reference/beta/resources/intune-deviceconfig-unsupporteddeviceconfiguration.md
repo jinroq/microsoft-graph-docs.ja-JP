@@ -3,12 +3,13 @@ title: unsupportedDeviceConfiguration リソースの種類
 description: UnsupportedDeviceConfiguration は、deviceConfiguration の別のモデルに準拠したサブタイプにエンティティをマッピングできない場合に使用されます。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 8f4f61da8dfb38f2cdc958eaf6767ab38e11adf6
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: e51ad1118a86216efbce2d0f585a7173ef6d42ba
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27821540"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27944825"
 ---
 # <a name="unsupporteddeviceconfiguration-resource-type"></a>unsupportedDeviceConfiguration リソースの種類
 

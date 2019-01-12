@@ -2,12 +2,13 @@
 title: Skype for Business ピア ツー ピア アクティビティ レポート
 description: 組織全体でピア ツー ピア アクティビティの詳細を取得できます。 これらの詳細は、組織のための調査、計画、その他のビジネスの意思決定の際に非常に役立ちます。
 localization_priority: Normal
-ms.openlocfilehash: 40ab1cc9f35de449ce5853b28c54606ceb089b22
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: reports
+ms.openlocfilehash: cba222e792f020cc1dac6829bd2600117caa87ac
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27882741"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27961695"
 ---
 # <a name="skype-for-business-peer-to-peer-activity-reports"></a>Skype for Business ピア ツー ピア アクティビティ レポート
 

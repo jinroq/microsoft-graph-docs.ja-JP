@@ -3,12 +3,13 @@ title: ratingFranceTelevisionType 列挙型
 description: フランスのテレビのコンテンツの規制ラベル
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 082591b7208e5fff3ed856aebe6d8f7a3e478051
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: cde73b7b39c9d85ec74c311e9971365f385fa3b2
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27826342"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27942438"
 ---
 # <a name="ratingfrancetelevisiontype-enum-type"></a>ratingFranceTelevisionType 列挙型
 

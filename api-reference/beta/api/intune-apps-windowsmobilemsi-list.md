@@ -3,12 +3,13 @@ title: windowsMobileMSIs のリスト
 description: windowsMobileMSI オブジェクトのプロパティとリレーションシップをリストします。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 2e38f15d08636f33854fc95d1ae6215b547bc587
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 03a6d8dd816ca5d36f1eb3cab48f86ec22eef42a
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27883287"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27955304"
 ---
 # <a name="list-windowsmobilemsis"></a>windowsMobileMSIs のリスト
 

@@ -3,12 +3,13 @@ title: meteredConnectionLimitType 列挙型
 description: 接続制限の設定を計測します。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 0bed25406ddc61cb67331092d06e0e2881c7014c
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 29ac92097712d3d145ad14d682ea47502b148c4e
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27875713"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27947996"
 ---
 # <a name="meteredconnectionlimittype-enum-type"></a>meteredConnectionLimitType 列挙型
 

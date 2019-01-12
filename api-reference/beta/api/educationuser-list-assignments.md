@@ -2,12 +2,14 @@
 title: リストの割り当て
 description: クラスのすべてのユーザーに割り当てられている割り当ての一覧を返します。 このユーティリティの名前空間は、呼び出し元が各クラスからの割り当てを要求することのではなく、1 回の呼び出しで、学生のすべての割り当てを検索できます。 クラスの名前空間内での割り当ての詳細な情報を取得するために必要な割り当ての一覧が含まれます。 割り当ての他のすべての操作は、クラスの名前空間を使用してください。
 localization_priority: Normal
-ms.openlocfilehash: 92a52f38a305515824a34e87bc3d23d16a2be4c7
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: mmast-msft
+ms.prod: education
+ms.openlocfilehash: 0366a159e3e28e9ad3933ec4d1eea6799c1f65c2
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27883203"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27940842"
 ---
 # <a name="list-assignments"></a>リストの割り当て
 

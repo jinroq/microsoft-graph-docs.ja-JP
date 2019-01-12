@@ -3,12 +3,13 @@ title: タブを取得します。
 description: 'プロパティと指定したタブの関係を取得します。 '
 author: nkramer
 localization_priority: Normal
-ms.openlocfilehash: ff4fe753a087870b2f8562669b23045a34af6465
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: microsoft-teams
+ms.openlocfilehash: 70782682e2e87de50459384d782a56ccb7e6cfe8
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27829968"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27945602"
 ---
 # <a name="get-tab"></a>タブを取得します。
 

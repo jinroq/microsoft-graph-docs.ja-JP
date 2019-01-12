@@ -3,12 +3,13 @@ title: リスト androidManagedStoreApps
 description: AndroidManagedStoreApp オブジェクトのプロパティと関係を一覧表示します。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 8a64981dc6709d7abb58b56721d71c6f1da02b24
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 02cd5236a3cf1ef8047b9c8144eea578eaf7b4ca
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27809584"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27940660"
 ---
 # <a name="list-androidmanagedstoreapps"></a>リスト androidManagedStoreApps
 

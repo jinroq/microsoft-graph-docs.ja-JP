@@ -2,12 +2,14 @@
 title: OneNote REST API を使用する
 description: 'Graph では、個人または組織のアカウントのユーザーの OneNote ノートブック、セクション、およびページへのアクセスの認証を取得するアプリを使用できます。 適切な委任またはアプリケーションのアクセス許可をアプリがサインインしているユーザーや、テナント内のユーザーの OneNote のデータにアクセスできます。 '
 localization_priority: Normal
-ms.openlocfilehash: 25817280fff570f0d87722fc8f3fadc9cf1c24d9
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: jewan-microsoft
+ms.prod: onenote
+ms.openlocfilehash: ff17f7fbe5f15752bc272b79f3f741180f8d6417
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27815238"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27953001"
 ---
 # <a name="use-the-onenote-rest-api"></a>OneNote REST API を使用する
 

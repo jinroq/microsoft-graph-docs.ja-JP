@@ -3,12 +3,13 @@ title: educationSynchronizationError リソースの種類
 description: 学校データ プロファイルの検証との同期中にエラーを表します。検証や Azure Active Directory (AD の Azure) との同期に失敗したすべてのエントリに対して一意のエラーが生成されます。
 author: mmast-msft
 localization_priority: Normal
-ms.openlocfilehash: e5cf502c76aca816e75293ec8ac64cc544eeef7b
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: education
+ms.openlocfilehash: 2808ba0fd633fcdcbbaa32ce63162ac1cd4531ff
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27852396"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27944727"
 ---
 # <a name="educationsynchronizationerror-resource-type"></a>educationSynchronizationError リソースの種類
 

@@ -3,12 +3,13 @@ title: プラットフォームの列挙型
 description: まだ文書化されていません
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 70703bd3c962def0d10099986ebe07ff2923ee8f
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 833aec8527d77ae8b4cc40e0b34a664331b2e939
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27891904"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27958398"
 ---
 # <a name="platform-enum-type"></a>プラットフォームの列挙型
 
