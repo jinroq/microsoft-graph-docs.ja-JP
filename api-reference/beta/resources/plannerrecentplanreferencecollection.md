@@ -2,12 +2,14 @@
 title: plannerRecentPlanReferenceCollection リソースの種類
 description: '**PlannerRecentPlanReferenceCollection**リソースでは、ユーザーが最近表示されたプランへの参照のコレクションを表します。 このリソースは、オープン型であり、plannerUser オブジェクトの一部であります。 プロパティ名は、対応する計画の ID です。 プロパティと値のペアの値は、plannerRecentPlanReference オブジェクトです。'
 localization_priority: Normal
-ms.openlocfilehash: e77769cbe3a7e53dce518c73cd7c5228d1077dac
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: TarkanSevilmis
+ms.prod: planner
+ms.openlocfilehash: 84eaedb2f37aefae32b5efac1e5a4a5dfb38e0d2
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27877344"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27980763"
 ---
 # <a name="plannerrecentplanreferencecollection-resource-type"></a>plannerRecentPlanReferenceCollection リソースの種類
 

@@ -2,12 +2,14 @@
 title: Update plannerAssignedToTaskBoardTaskFormat
 description: '**plannerAssignedToTaskBoardTaskFormat** オブジェクトのプロパティを更新します。'
 localization_priority: Normal
-ms.openlocfilehash: 9efb07bd8bda108497f77d4f982b42eb3c8e53b7
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: TarkanSevilmis
+ms.prod: planner
+ms.openlocfilehash: 9133a12b93d1bfa3c8c9406711510f7061f6d8b2
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27855637"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27987630"
 ---
 # <a name="update-plannerassignedtotaskboardtaskformat"></a>Update plannerAssignedToTaskBoardTaskFormat
 

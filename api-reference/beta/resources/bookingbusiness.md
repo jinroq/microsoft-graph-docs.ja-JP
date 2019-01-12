@@ -2,12 +2,14 @@
 title: bookingBusiness リソースの種類
 description: " > **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。"
 localization_priority: Normal
-ms.openlocfilehash: fb8b79b4c728236ebc8231bae5da74e65466c20c
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: angelgolfer-ms
+ms.prod: bookings
+ms.openlocfilehash: cf00239802cec9a705c24548649e38f3022383a0
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27861636"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27986216"
 ---
 # <a name="bookingbusiness-resource-type"></a>bookingBusiness リソースの種類
 

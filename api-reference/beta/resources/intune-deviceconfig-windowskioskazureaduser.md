@@ -3,12 +3,13 @@ title: windowsKioskAzureADUser リソースの種類
 description: キオスクの構成の AzureAD ユーザー アカウントの識別に使用するクラス
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 57b48bcdbac3f95da37704222cded29ba61cd32d
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 4497c6d42db45f518e3ef93e78e50d25f473ac00
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27845886"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27984144"
 ---
 # <a name="windowskioskazureaduser-resource-type"></a>windowsKioskAzureADUser リソースの種類
 

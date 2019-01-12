@@ -2,12 +2,13 @@
 title: office365ActivationsUserDetail リソースの種類
 description: リソースの JSON 表記を次に示します。
 localization_priority: Normal
-ms.openlocfilehash: f87a5b32b08466428f0f6f0246a4b8d4c20e97be
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: reports
+ms.openlocfilehash: 3e2b7d5fb3c42db02407a187649544b2560f898a
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27877337"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27982856"
 ---
 # <a name="office365activationsuserdetail-resource-type"></a>office365ActivationsUserDetail リソースの種類
 

@@ -3,12 +3,13 @@ title: WindowsDomainJoinConfiguration を取得します。
 description: WindowsDomainJoinConfiguration オブジェクトのプロパティと関係を参照してください。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: d0c4aedf07e8a6e95dc81f440975809e75b85160
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 64a295ae105a69865e304c45d08e339eadbf7936
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27831333"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27950243"
 ---
 # <a name="get-windowsdomainjoinconfiguration"></a>WindowsDomainJoinConfiguration を取得します。
 

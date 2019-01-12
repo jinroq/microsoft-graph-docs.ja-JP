@@ -2,12 +2,13 @@
 title: imageInfo リソースの種類
 description: アクティビティ オブジェクトの visualInfo の一部の**属性**のプロパティを表すための複合型です。
 localization_priority: Normal
-ms.openlocfilehash: 2bac97ff945c0e0975ffa19636a954308b895e88
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: project-rome
+ms.openlocfilehash: a17fe40f53308a0b1b1f587425d2afb019f84bb5
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27856463"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27982366"
 ---
 # <a name="imageinfo-resource-type"></a>imageInfo リソースの種類
 

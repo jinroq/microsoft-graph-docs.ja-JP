@@ -3,12 +3,13 @@ title: チームからアプリケーションを削除します。
 description: 指定されたチームからアプリケーションをアンインストールします。
 author: nkramer
 localization_priority: Normal
-ms.openlocfilehash: b0d1c7d8344218d6eba4165e94b09158d60846ec
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: microsoft-teams
+ms.openlocfilehash: 55e5b1a87c010a0e9a36353d8da82a8433dd3ebd
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27852494"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27983577"
 ---
 # <a name="delete-app-from-team"></a>チームからアプリケーションを削除します。
 

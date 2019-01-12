@@ -3,12 +3,13 @@ title: 'イベント: dismissReminder'
 description: ユーザーの予定表でイベントをトリガーされたアラームを閉じます。
 author: angelgolfer-ms
 localization_priority: Normal
-ms.openlocfilehash: 1165dbf036848ee01ad80a1080a01e9b344fc399
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: outlook
+ms.openlocfilehash: cf2421db56babd394a3c011fb9bd4db9f83cb823
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27811572"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27990321"
 ---
 # <a name="event-dismissreminder"></a>イベント: dismissReminder
 

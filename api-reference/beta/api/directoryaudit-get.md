@@ -2,12 +2,14 @@
 title: DirectoryAudit を取得します。
 description: Azure Active Directory の特定の監査ログ項目を提供 (または取得)。 ユーザー、アプリケーション、デバイスとグループの管理、管理者の Id 管理、アクセスのレビュー、使用条件、アイデンティティの保護、パスワードの管理 (SSPR と管理者パスワードのリセットと同様に、Azure Active Directory 内のさまざまなサービスによって生成された監査ログが含まれています)、グループの管理などをセルフ サービスしています.
 localization_priority: Normal
-ms.openlocfilehash: e85c0c14e4f6c6a0aa3b8beca1ef9d05f4b82aa0
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: lleonard-msft
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: 43b478aed8ac6beb28d9db53d0c97c01b34f173a
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27809271"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27956319"
 ---
 # <a name="get-directoryaudit"></a>DirectoryAudit を取得します。
 Azure Active Directory の特定の監査ログ項目を提供 (または取得)。 ユーザー、アプリケーション、デバイスとグループの管理、管理者の Id 管理、アクセスのレビュー、使用条件、アイデンティティの保護、パスワードの管理 (SSPR と管理者パスワードのリセットと同様に、Azure Active Directory 内のさまざまなサービスによって生成された監査ログが含まれています)、グループの管理などをセルフ サービスしています.

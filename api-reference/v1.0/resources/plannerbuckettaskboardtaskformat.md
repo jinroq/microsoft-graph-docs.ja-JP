@@ -2,12 +2,14 @@
 title: plannerBucketTaskBoardTaskFormat リソースの種類
 description: '**plannerBucketTaskBoardTaskFormat** リソースは、タスク ボードのバケット ビューでタスクを正しく表示するための情報を示します (ビューは割り当てられているバケット内のタスクごとに整理されます)。各 task にはそれぞれ **plannerBucketTaskBoardTaskFormat** オブジェクトが 1 つ関連付けられています。'
 localization_priority: Normal
-ms.openlocfilehash: a4fae04147bb97a7128f7b8ad881ac9b34cb7d8c
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: TarkanSevilmis
+ms.prod: planner
+ms.openlocfilehash: 4982b0b539412058d6d598893b698f12d88bd671
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27836079"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27986223"
 ---
 # <a name="plannerbuckettaskboardtaskformat-resource-type"></a>plannerBucketTaskBoardTaskFormat リソースの種類
 

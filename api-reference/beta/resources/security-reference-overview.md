@@ -2,12 +2,14 @@
 title: Microsoft グラフ API を使用して、セキュリティ脅威の検出と保護 (プレビュー)
 description: セキュリティ上の脅威の巧妙化は、世界経済に影響を与えず、エスカレートし続けます。 企業があっても認識する前に長い間、破損がよく行われます。 ビルドまたはビルドの統合、複数のソースからのセキュリティの警告を関連付けると、ユーザーの識別情報を侵害する、通知、調査、および自動化するコンテキストのデータのロックを解除しようとする脅威を検出するセキュリティ ・ ソリューションを拡張する Microsoft Graph を使用することができます。セキュリティ ・ オペレーションによって効率が向上します。
 localization_priority: Normal
-ms.openlocfilehash: f728ddbee32a25742b5e0062ff442c552121c353
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: preetikr
+ms.prod: security
+ms.openlocfilehash: 42891aa53da23cc27b046f6d282fd2add3015739
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27804453"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27980287"
 ---
 # <a name="use-the-microsoft-graph-api-for-security-threat-detection-and-protection-preview"></a>Microsoft グラフ API を使用して、セキュリティ脅威の検出と保護 (プレビュー)
 

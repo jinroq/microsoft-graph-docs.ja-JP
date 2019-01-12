@@ -3,12 +3,13 @@ title: deviceManagementExchangeOnPremisesPolicy リソースの種類
 description: テナント用に構成された Exchange OnPremises ポリシーを表す単一のエンティティです。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: da4e17bc6051b8b03158da19ddb876457c7853d7
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 1c4f513242694228b53268772d9b2910fa40bbd2
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27855000"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27990335"
 ---
 # <a name="devicemanagementexchangeonpremisespolicy-resource-type"></a>deviceManagementExchangeOnPremisesPolicy リソースの種類
 

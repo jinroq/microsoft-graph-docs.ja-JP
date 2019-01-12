@@ -2,12 +2,14 @@
 title: plannerUserIds リソースの種類
 description: '**PlannerUserIds**リソースは、plan を共有するユーザー ID のリストを表します。これはオープン型です。Office 365 グループを活用している場合は、グループの API を使用してグループのメンバーシップを管理し、グループの計画を共有します。グループの既存のメンバーもこのコレクションに追加できますが、このグループが所有する計画へのアクセスは必要とされません。'
 localization_priority: Normal
-ms.openlocfilehash: b553d7bdfc2a0a041681b200d3e07f3899acf1c3
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: TarkanSevilmis
+ms.prod: planner
+ms.openlocfilehash: 150e36910da5ed6bc8c3eccd3647f487a1e3438e
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27885968"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27984746"
 ---
 # <a name="planneruserids-resource-type"></a>plannerUserIds リソースの種類
 

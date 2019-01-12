@@ -2,12 +2,14 @@
 title: calendarView を一覧表示する
 description: 'ユーザーの既定の予定表からの時間の範囲で定義されている予定表ビューで出現する、例外、およびイベントの 1 つのインスタンスを取得します。 '
 localization_priority: Priority
-ms.openlocfilehash: 301573e5ecde07623c17dcf511ea70036f9a06ed
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: dkershaw10
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: 2f90f1f5d3af6da0e84919128b362777268f4e0e
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27874383"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27984228"
 ---
 # <a name="list-calendarview"></a>calendarView を一覧表示する
 

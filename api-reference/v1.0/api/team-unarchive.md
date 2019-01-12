@@ -2,12 +2,14 @@
 title: チームを unarchive します。
 description: アーカイブされたチームを復元します。 これは、メッセージを送信し、テナントとチームの設定に従いながら、チームを編集するユーザーの機能を復元します。 チームは、アーカイブの API を使用してアーカイブされます。
 localization_priority: Normal
-ms.openlocfilehash: f203e10c4f82379efcc6da3aff96bc1bc5bf702e
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: nkramer
+ms.prod: microsoft-teams
+ms.openlocfilehash: 36e4183f53afab6ba836bacd909b616910dc0c42
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27840083"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27982079"
 ---
 # <a name="unarchive-team"></a>チームを unarchive します。
 

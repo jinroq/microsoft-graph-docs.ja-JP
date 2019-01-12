@@ -1,13 +1,15 @@
 ---
 title: OneNote ページ コンテンツを更新する
 description: " Office 365 のエンタープライズ ノートブック"
-author: Jewan-microsoft
-ms.openlocfilehash: 0472e6ad96061c1d1ba2932819bca784c50a4741
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+author: jewan-microsoft
+localization_priority: Normal
+ms.prod: onenote
+ms.openlocfilehash: 97a9acb8244446191b09d99753e30d94c47c4f1e
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27324543"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27981470"
 ---
 # <a name="update-onenote-page-content"></a>OneNote ページ コンテンツを更新する
 

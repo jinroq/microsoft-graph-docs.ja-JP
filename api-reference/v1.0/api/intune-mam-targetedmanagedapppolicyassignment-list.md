@@ -3,12 +3,13 @@ title: targetedManagedAppPolicyAssignments のリスト
 description: targetedManagedAppPolicyAssignment オブジェクトのプロパティとリレーションシップをリストします。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 829ba67b6e9cf75c9c6cd6d03a367a4e051757a1
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 76391441b068048ffc8e81be2cb1f3f5ac443704
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27867166"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27983339"
 ---
 # <a name="list-targetedmanagedapppolicyassignments"></a>targetedManagedAppPolicyAssignments のリスト
 

@@ -3,12 +3,13 @@ title: EducationSynchronizationProfile の同期を再開します。
 description: テナントで特定の学校のデータの同期プロファイルの同期を再開します。
 author: mmast-msft
 localization_priority: Normal
-ms.openlocfilehash: c68fb6d042d92fd0f1334dc498b175c27cbc4ced
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: education
+ms.openlocfilehash: 0a74d85bd902c21f3af6e8aa506438471f142600
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27894209"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27984669"
 ---
 # <a name="resume-sync-on-an-educationsynchronizationprofile"></a>EducationSynchronizationProfile の同期を再開します。
 
@@ -19,7 +20,7 @@ ms.locfileid: "27894209"
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
 
-| アクセス許可の種類 | Permissions |
+| アクセス許可の種類 | アクセス許可 |
 |:-----------|:----------|
 | 委任 (職場または学校のアカウント) | EduAdministration.ReadWrite |
 |(個人用の Microsoft アカウントを委任します。|サポートされていません。|

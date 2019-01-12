@@ -3,12 +3,13 @@ title: androidWorkProfileWiFiConfiguration リソースの種類
 description: このプロファイルの構成を提供することによって必要な Wi-fi のエンドポイントに接続する作業プロファイルを Android デバイスに指示できます。 指定する認証方法とセキュリティの種類必要 Wi-fi エンドポイントで行うことができます Wi-fi 接続シームレスなエンド ・ ユーザーのです。 このプロファイルは、エンタープライズ Wi-fi プロファイルよりも制限し、簡単なセキュリティの種類を提供します。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: b4b95e6c80d892d14001e8dc2d6c60125971ad51
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: b874f4f1d1ba20cfe588c88895cded13e114ad45
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27851255"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27980462"
 ---
 # <a name="androidworkprofilewificonfiguration-resource-type"></a>androidWorkProfileWiFiConfiguration リソースの種類
 

@@ -2,12 +2,14 @@
 title: インスタンスの一覧表示
 description: 指定の時間範囲のイベントのインスタンス (文字列) を取得します。 イベントの場合、`SeriesMaster`を入力、これが返されます、
 localization_priority: Normal
-ms.openlocfilehash: 79f6f5832a30f37a4f66e07eb44c2d31a39f7546
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: angelgolfer-ms
+ms.prod: outlook
+ms.openlocfilehash: 7a40e6f468c8541748adbc7d8dd588541318c30c
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27843443"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27980931"
 ---
 # <a name="list-instances"></a>インスタンスの一覧表示
 

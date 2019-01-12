@@ -3,12 +3,13 @@ title: serviceHostedMediaConfig リソースの種類
 description: ServiceHostedMediaConfig 型です。
 author: VinodRavichandran
 localization_priority: Normal
-ms.openlocfilehash: ec2ff24ef0bb45a9b49ecf2d0dc5e7419318b5af
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: microsoft-teams
+ms.openlocfilehash: d3b1ac252f13e023f56bb419625a35769570337a
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27828701"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27991987"
 ---
 # <a name="servicehostedmediaconfig-resource-type"></a>serviceHostedMediaConfig リソースの種類
 

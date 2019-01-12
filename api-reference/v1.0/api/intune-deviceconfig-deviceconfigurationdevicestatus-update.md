@@ -3,12 +3,13 @@ title: deviceConfigurationDeviceStatus の更新
 description: deviceConfigurationDeviceStatus オブジェクトのプロパティを更新します。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: e3abc82ff02506ca9d51660c966ffeaeac23c5e0
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: bcda20f9b3886a84d82157caf3f36f91b7ad1fc6
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27848840"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27987105"
 ---
 # <a name="update-deviceconfigurationdevicestatus"></a>deviceConfigurationDeviceStatus の更新
 

@@ -2,12 +2,14 @@
 title: Outlook メッセージを整理する
 description: Outlook を利用することによりユーザーは、自分の好みの方法でメッセージを整理できます。同じ受信トレイ フォルダーに全メッセージを入れたままにしたり、受信トレイの下に各自の必要に合うようなフォルダーのツリー構造を作成してその中にメッセージを分類保存したりできます。 ユーザーのメッセージに対してフィルター処理、検索、またはソートを便利に実行することができます。
 author: angelgolfer-ms
-ms.openlocfilehash: cb75da8e800fccf13c639188b04b07b62c3c6431
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Priority
+ms.prod: outlook
+ms.openlocfilehash: 6be52f7a2d0b97b9ff03a2fde0d2a7ff32e317ef
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27307540"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27981680"
 ---
 # <a name="organize-outlook-messages"></a>Outlook メッセージを整理する
 

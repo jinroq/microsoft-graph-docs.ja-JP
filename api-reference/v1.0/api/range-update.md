@@ -3,12 +3,13 @@ title: 範囲を更新する
 description: 範囲オブジェクトのプロパティを更新します。
 author: lumine2008
 localization_priority: Normal
-ms.openlocfilehash: 086dd7271ade9d3ab3e853692b3f1d084a53bbed
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: excel
+ms.openlocfilehash: fda18c3632874cd60da881ec82ff174c5ede5b7d
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27821988"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27987602"
 ---
 # <a name="update-range"></a>範囲を更新する
 

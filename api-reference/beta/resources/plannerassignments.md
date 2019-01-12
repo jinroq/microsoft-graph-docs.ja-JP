@@ -2,12 +2,14 @@
 title: plannerAssignments リソースの種類
 description: '**PlannerAssignments**リソースでは、plannerTask のリソースの割り当てを表します。 この型は、オープン型です。 このタイプの場合は、各プロパティ名 '
 localization_priority: Normal
-ms.openlocfilehash: b858aa15181a53f4bb2abf58d16662a27a8230fe
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: TarkanSevilmis
+ms.prod: planner
+ms.openlocfilehash: 294e247346d25304a78b35e16530bf6e8791e485
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27856008"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27957831"
 ---
 # <a name="plannerassignments-resource-type"></a>plannerAssignments リソースの種類
 

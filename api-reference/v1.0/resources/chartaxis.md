@@ -3,12 +3,13 @@ title: ChartAxis リソースの種類
 description: グラフの 1 つの軸を表します。
 author: lumine2008
 localization_priority: Normal
-ms.openlocfilehash: 57c8e28633d4fc60f60f456e34a6a0cafef22252
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: excel
+ms.openlocfilehash: 88066c356306a619ee620a13eefb6592d7b5f100
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27829086"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27984312"
 ---
 # <a name="chartaxis-resource-type"></a>ChartAxis リソースの種類
 

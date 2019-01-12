@@ -2,12 +2,14 @@
 title: ユーザーとリソースの空き時間スケジュールを取得する (プレビュー)
 description: 職場または学校の環境で一般的なシナリオとして、ユーザーが会議に出席できる時間を確認する場合や、ある期間内にチーム、部屋、または備品の空き時間情報を参照する場合があります。
 author: angelgolfer-ms
-ms.openlocfilehash: 2f201ed552200f7c8dd55b368a504b4eca1e3ba5
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Priority
+ms.prod: outlook
+ms.openlocfilehash: 18497a7178086fea25fb581fb2ba7c5c82fbe204
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27317760"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27981267"
 ---
 # <a name="get-freebusy-schedule-of-users-and-resources-preview"></a>ユーザーとリソースの空き時間スケジュールを取得する (プレビュー)
 

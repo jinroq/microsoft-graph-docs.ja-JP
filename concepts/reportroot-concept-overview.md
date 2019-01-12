@@ -1,12 +1,14 @@
 ---
 title: Microsoft Graph レポート API の概要
 description: Microsoft 365 管理センターの使用状況レポートを利用することにより管理者は、会社における Office 365 のサービスの利用状況を理解することができます。 Microsoft Graph のレポート API を使用することにより、Office 365 使用状況レポートと統合することができます。
-ms.openlocfilehash: d923d0003a276be15620998c53693a9bab7116d5
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Priority
+ms.prod: reports
+ms.openlocfilehash: 065a32d9c86ab4e353d876bef3fdf76ecdd535e6
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27092489"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27981316"
 ---
 # <a name="microsoft-graph-reports-api-overview"></a>Microsoft Graph レポート API の概要
 
@@ -42,6 +44,5 @@ Microsoft 365 管理センターの使用状況レポートを利用すること
 
 ## <a name="next-steps"></a>次のステップ
 
-* 
-  [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer) の API について調べる
+* [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer) の API について調べる
 * [レポート REST API の使用](/graph/api/resources/report?view=graph-rest-1.0)方法の詳細を確認する

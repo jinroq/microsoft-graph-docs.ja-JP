@@ -3,12 +3,13 @@ title: eBookInstallSummary の更新
 description: eBookInstallSummary オブジェクトのプロパティを更新します。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 7198daad26b4409808e1e1a84e0b180f47fedfd4
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: de522ea7a86c1bec192404870a2aa117a2fa1fe6
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27811369"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27986643"
 ---
 # <a name="update-ebookinstallsummary"></a>eBookInstallSummary の更新
 

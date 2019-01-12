@@ -3,12 +3,13 @@ title: windowsUniversalAppXAppAssignmentSettings リソースの種類
 description: Windows ユニバーサル AppX のモバイル アプリケーションをグループに割り当てるときに使用するプロパティが含まれています。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 0c4112f04f6dc957bb6692ccc397fcf724563049
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: ebb9649460fbfa6da717ba099786eb7d4c2807da
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27829023"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27987007"
 ---
 # <a name="windowsuniversalappxappassignmentsettings-resource-type"></a>windowsUniversalAppXAppAssignmentSettings リソースの種類
 

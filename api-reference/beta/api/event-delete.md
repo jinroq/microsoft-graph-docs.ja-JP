@@ -3,12 +3,13 @@ title: イベントの削除
 description: イベントを削除します。
 author: angelgolfer-ms
 localization_priority: Normal
-ms.openlocfilehash: 8754e210e90300398dbd38ce5e391ae2410d8316
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: outlook
+ms.openlocfilehash: 830568c5abbd02f0083cf45d5172266c2bf20e41
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27848910"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27956564"
 ---
 # <a name="delete-event"></a>イベントを削除する
 

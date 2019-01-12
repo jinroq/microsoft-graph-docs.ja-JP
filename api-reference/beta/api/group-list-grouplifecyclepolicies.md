@@ -3,12 +3,13 @@ title: List groupLifecyclePolicies
 description: グループが属する groupLifecyclePolicy オブジェクトのリストを取得します。
 author: dkershaw10
 localization_priority: Normal
-ms.openlocfilehash: 1b9559078e7859dc8b90240e513a8f4e03bccb69
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: groups
+ms.openlocfilehash: 3a569c2c82205b59eda127f06a7cbef8fde17eed
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27883224"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27985320"
 ---
 # <a name="list-grouplifecyclepolicies"></a>List groupLifecyclePolicies
 

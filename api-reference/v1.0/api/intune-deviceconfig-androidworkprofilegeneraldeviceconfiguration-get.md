@@ -3,12 +3,13 @@ title: AndroidWorkProfileGeneralDeviceConfiguration を取得します。
 description: AndroidWorkProfileGeneralDeviceConfiguration オブジェクトのプロパティと関係を参照してください。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: d1ce36a8684a269be92523c590f07b2065673def
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: b2ff9672b3e571586db584b10cd9e0486cdfbdb4
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27883840"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27985873"
 ---
 # <a name="get-androidworkprofilegeneraldeviceconfiguration"></a>AndroidWorkProfileGeneralDeviceConfiguration を取得します。
 

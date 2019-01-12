@@ -2,12 +2,14 @@
 title: domainDnsUnavailableRecord リソースの種類
 description: ドメイン エンティティのナビゲーション プロパティの**serviceConfigurationRecords**のクエリを実行すると、1 つ以上の DomainDnsCnameRecord、DomainDnsMxRecord、DomainDnsSrvRecord、および DomainDnsTxtRecord のエンティティが表示されます。 これらのエンティティは、Microsoft Online Services で使用するドメインに、ドメインのゾーン ファイルに追加する必要がありますどのような DNS レコードを指定します。 このようなエンティティを生成できない場合は、DomainDnsUnavailableRecord のエンティティが返されます。 DomainDnsRecord エンティティから継承されます。
 localization_priority: Normal
-ms.openlocfilehash: 3b23eab8f4efe1d23d3a179384dbab6e9c7e7773
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: lleonard-msft
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: 99da0448d75375b84bb37c05102c1f702c222a25
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27873424"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27982793"
 ---
 # <a name="domaindnsunavailablerecord-resource-type"></a>domainDnsUnavailableRecord リソースの種類
 

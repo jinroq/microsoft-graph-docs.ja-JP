@@ -3,12 +3,13 @@ title: リスト androidForWorkTrustedRootCertificates
 description: AndroidForWorkTrustedRootCertificate オブジェクトのプロパティと関係を一覧表示します。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: b6e5a20f91930ca1a57e32631f0867e2e4713851
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 5ae49872d83792673a7fd509d08864ea7a83f89c
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27878282"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27990062"
 ---
 # <a name="list-androidforworktrustedrootcertificates"></a>リスト androidForWorkTrustedRootCertificates
 

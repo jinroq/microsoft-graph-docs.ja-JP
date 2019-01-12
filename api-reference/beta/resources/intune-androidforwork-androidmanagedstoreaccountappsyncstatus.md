@@ -3,12 +3,13 @@ title: androidManagedStoreAccountAppSyncStatus 列挙型
 description: Google の EMM の API を使用してテナントの同期の状態
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 5ff3f0bdba77a7451d141799aa2f60212983d4db
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 79d812a49aed06451bce01bc650c6d1b06fe6918
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27873459"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27982247"
 ---
 # <a name="androidmanagedstoreaccountappsyncstatus-enum-type"></a>androidManagedStoreAccountAppSyncStatus 列挙型
 

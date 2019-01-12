@@ -3,12 +3,13 @@ title: androidStoreApp の作成
 description: 新しい androidStoreApp オブジェクトを作成します。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 3a7145cc1fb8219e88195a0a951110b91afd18fe
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 2dce89405d6eb3951cd1ea42832d54555d6828c9
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27894489"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27987000"
 ---
 # <a name="create-androidstoreapp"></a>androidStoreApp の作成
 

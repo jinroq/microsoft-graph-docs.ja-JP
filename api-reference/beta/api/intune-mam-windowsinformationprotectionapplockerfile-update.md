@@ -3,12 +3,13 @@ title: windowsInformationProtectionAppLockerFile の更新
 description: windowsInformationProtectionAppLockerFile オブジェクトのプロパティを更新します。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: a81a42b1245a8723935ac8497e69539b1e5c1df8
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 1787544bd84ca1037dafae5c26ec5f19e80fc2d0
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27885676"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27990314"
 ---
 # <a name="update-windowsinformationprotectionapplockerfile"></a>windowsInformationProtectionAppLockerFile の更新
 

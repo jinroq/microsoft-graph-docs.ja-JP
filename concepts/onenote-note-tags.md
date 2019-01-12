@@ -1,13 +1,15 @@
 ---
 title: OneNote ページでノート シールを使用する
 description: " Office 365 のエンタープライズ ノートブック"
-author: Jewan-microsoft
-ms.openlocfilehash: acef890384ffc5474ec4fdbef27d77905347c7d2
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+author: jewan-microsoft
+localization_priority: Normal
+ms.prod: onenote
+ms.openlocfilehash: fb1067b2b564e8431aaa8a4bf8ca094a2b5d127d
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27334623"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27981281"
 ---
 # <a name="use-note-tags-in-onenote-pages"></a>OneNote ページでノート シールを使用する
 

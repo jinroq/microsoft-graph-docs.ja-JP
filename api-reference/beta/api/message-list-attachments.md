@@ -3,12 +3,13 @@ title: 添付ファイルを一覧表示する
 description: メッセージに添付された添付ファイル オブジェクトのリストを取得します。
 author: angelgolfer-ms
 localization_priority: Normal
-ms.openlocfilehash: 0d89d05c80a8d2437f4940ace2a046f93ba67b82
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: outlook
+ms.openlocfilehash: 584b01114f22466673568d991c824a94c6d73dd2
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27806686"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27983485"
 ---
 # <a name="list-attachments"></a>添付ファイルを一覧表示する
 
@@ -43,7 +44,7 @@ GET /users/{id | userPrincipalName}/mailFolders/{id}/childFolders/{id}/messages/
 ## <a name="optional-query-parameters"></a>オプションのクエリ パラメーター
 このメソッドは、応答をカスタマイズするための [OData クエリ パラメーター](https://developer.microsoft.com/graph/docs/concepts/query_parameters)をサポートします。
 
-$ を使用する具体的には、メッセージのプロパティの残りの部分にインラインでメッセージの添付ファイルをすべてのクエリ パラメーターを展開します。 次に例を示します。
+$ を使用する具体的には、メッセージのプロパティの残りの部分にインラインでメッセージの添付ファイルをすべてのクエリ パラメーターを展開します。 例:
 
 ```
 GET https://graph.microsoft.com/beta/me/messages/{id}?$expand=attachments

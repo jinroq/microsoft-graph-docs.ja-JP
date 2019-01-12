@@ -4,12 +4,13 @@ ms.author: rgregg
 ms.date: 09/10/2017
 title: 旧バージョンの SharePoint リスト アイテムを復元する
 localization_priority: Normal
-ms.openlocfilehash: 0df91bfb33ba395de4724c1ac1a72dc69f8d15e1
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: sharepoint
+ms.openlocfilehash: b7c81022ebcb4f7afe02520c48f7cfbf103b2943
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27811390"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27983003"
 ---
 # <a name="restore-a-previous-version-of-a-listitem"></a>旧バージョンのリスト アイテムを復元する
 

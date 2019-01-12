@@ -3,12 +3,13 @@ title: 添付ファイルを一覧表示する
 description: イベントに添付された添付ファイル オブジェクトのリストを取得します。
 author: angelgolfer-ms
 localization_priority: Normal
-ms.openlocfilehash: d05bb4194a60346b97e6be368d6790fdebf8e12b
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: outlook
+ms.openlocfilehash: 9100788d30c4d9dcaacbb00e6fb72f8368bc0473
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27854706"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27990391"
 ---
 # <a name="list-attachments"></a>添付ファイルを一覧表示する
 
@@ -43,7 +44,7 @@ GET /groups/{id}/events/{id}/attachments
 
 このメソッドは、応答をカスタマイズするための [OData クエリ パラメーター](https://developer.microsoft.com/graph/docs/concepts/query_parameters)をサポートします。
 
-具体的には、使用することができます、 `$expand` 、イベントの添付ファイルにインライン イベント プロパティの残りの部分のすべてのパラメーターのクエリを実行します。 次に例を示します。
+具体的には、使用することができます、 `$expand` 、イベントの添付ファイルにインライン イベント プロパティの残りの部分のすべてのパラメーターのクエリを実行します。 例:
 
 ```http
 GET https://graph.microsoft.com/beta/me/events/{id}?$expand=attachments

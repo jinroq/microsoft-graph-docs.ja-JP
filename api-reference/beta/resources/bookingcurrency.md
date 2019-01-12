@@ -2,12 +2,14 @@
 title: bookingCurrency リソースの種類
 description: " > **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。"
 localization_priority: Normal
-ms.openlocfilehash: 96a5e04f705cca04e926ce25fd7e674528a60ccb
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: angelgolfer-ms
+ms.prod: bookings
+ms.openlocfilehash: 7e2289bfa6c6aac62f12d7321d06caaafbc41f8c
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27843674"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27956004"
 ---
 # <a name="bookingcurrency-resource-type"></a>bookingCurrency リソースの種類
 
