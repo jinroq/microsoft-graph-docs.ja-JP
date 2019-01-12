@@ -2,18 +2,19 @@
 title: OneNote クライアントを開く
 description: 'ページまたはノートブックの **links** プロパティを使用して、OneNote アプリケーションで特定のぺージまたはノートブックを開きます。 '
 author: Jewan-microsoft
-ms.openlocfilehash: df1aa569eb4f097bc4ca7ea6da191b72d40296cc
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 21f6d07c4a32f3e25c715172a2d18aa09c042920
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27324606"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27858346"
 ---
-# <a name="open-the-onenote-client"></a><span data-ttu-id="b1a5c-103">OneNote クライアントを開く</span><span class="sxs-lookup"><span data-stu-id="b1a5c-103">Open the OneNote client</span></span>
+# <a name="open-the-onenote-client"></a><span data-ttu-id="0ab79-103">OneNote クライアントを開く</span><span class="sxs-lookup"><span data-stu-id="0ab79-103">Open the OneNote client</span></span>
 
-<span data-ttu-id="b1a5c-104">ページまたはノートブックの **links** プロパティを使用して、OneNote アプリケーションで特定のぺージまたはノートブックを開きます。</span><span class="sxs-lookup"><span data-stu-id="b1a5c-104">You can use the **links** property of a page or notebook to open a OneNote application to a particular page or notebook.</span></span> 
+<span data-ttu-id="0ab79-104">ページまたはノートブックの **links** プロパティを使用して、OneNote アプリケーションで特定のぺージまたはノートブックを開きます。</span><span class="sxs-lookup"><span data-stu-id="0ab79-104">You can use the **links** property of a page or notebook to open a OneNote application to a particular page or notebook.</span></span> 
 
-<span data-ttu-id="b1a5c-105">**links** プロパティは 2 つの URL を含む JSON オブジェクトです。</span><span class="sxs-lookup"><span data-stu-id="b1a5c-105">The **links** property is a JSON object that contains two URLs.</span></span> <span data-ttu-id="b1a5c-106">これらの URL は、OneNote クライアント アプリケーションまたは OneNote Online のページまたはノートブックを開きます。</span><span class="sxs-lookup"><span data-stu-id="b1a5c-106">The URLs will open the page or notebook in the OneNote client application or in OneNote Online.</span></span>
+<span data-ttu-id="0ab79-105">**links** プロパティは 2 つの URL を含む JSON オブジェクトです。</span><span class="sxs-lookup"><span data-stu-id="0ab79-105">The **links** property is a JSON object that contains two URLs.</span></span> <span data-ttu-id="0ab79-106">これらの URL は、OneNote クライアント アプリケーションまたは OneNote Online のページまたはノートブックを開きます。</span><span class="sxs-lookup"><span data-stu-id="0ab79-106">The URLs will open the page or notebook in the OneNote client application or in OneNote Online.</span></span>
 
 ```json
 { 
@@ -28,32 +29,32 @@ ms.locfileid: "27324606"
 }
 ```
 
-- <span data-ttu-id="b1a5c-107">**oneNoteClientUrl**</span><span class="sxs-lookup"><span data-stu-id="b1a5c-107">**oneNoteClientUrl**</span></span> 
+- <span data-ttu-id="0ab79-107">**oneNoteClientUrl**</span><span class="sxs-lookup"><span data-stu-id="0ab79-107">**oneNoteClientUrl**</span></span> 
 
-    - <span data-ttu-id="b1a5c-108">OneNote クライアントがデバイスにインストールされている場合は、そのクライアントを開きます。</span><span class="sxs-lookup"><span data-stu-id="b1a5c-108">Opens the OneNote client if it is already installed on the device.</span></span> <span data-ttu-id="b1a5c-109">この URL には、*onenote* プレフィックスが含まれています。</span><span class="sxs-lookup"><span data-stu-id="b1a5c-109">This URL includes the *onenote* prefix.</span></span>
-    - <span data-ttu-id="b1a5c-110">言語固有のバージョンがデバイスにインストールされている場合は、そのバージョンを開きます。</span><span class="sxs-lookup"><span data-stu-id="b1a5c-110">Opens the language-specific version if one is installed on the device.</span></span> <span data-ttu-id="b1a5c-111">それ以外の場合は、プラットフォームの言語の設定を使用します。</span><span class="sxs-lookup"><span data-stu-id="b1a5c-111">Otherwise, uses the platform language setting.</span></span>
+    - <span data-ttu-id="0ab79-108">OneNote クライアントがデバイスにインストールされている場合は、そのクライアントを開きます。</span><span class="sxs-lookup"><span data-stu-id="0ab79-108">Opens the OneNote client if it is already installed on the device.</span></span> <span data-ttu-id="0ab79-109">この URL には、*onenote* プレフィックスが含まれています。</span><span class="sxs-lookup"><span data-stu-id="0ab79-109">This URL includes the *onenote* prefix.</span></span>
+    - <span data-ttu-id="0ab79-110">言語固有のバージョンがデバイスにインストールされている場合は、そのバージョンを開きます。</span><span class="sxs-lookup"><span data-stu-id="0ab79-110">Opens the language-specific version if one is installed on the device.</span></span> <span data-ttu-id="0ab79-111">それ以外の場合は、プラットフォームの言語の設定を使用します。</span><span class="sxs-lookup"><span data-stu-id="0ab79-111">Otherwise, uses the platform language setting.</span></span>
 
-- <span data-ttu-id="b1a5c-112">**oneNoteWebUrl**</span><span class="sxs-lookup"><span data-stu-id="b1a5c-112">**oneNoteWebUrl**</span></span> 
+- <span data-ttu-id="0ab79-112">**oneNoteWebUrl**</span><span class="sxs-lookup"><span data-stu-id="0ab79-112">**oneNoteWebUrl**</span></span> 
 
-    - <span data-ttu-id="b1a5c-113">デバイスの既定のブラウザーが OneNote Online をサポートしている場合は、OneNote Online を開きます。</span><span class="sxs-lookup"><span data-stu-id="b1a5c-113">Opens OneNote Online if the default browser on the device supports it.</span></span> 
-    - <span data-ttu-id="b1a5c-114">ブラウザーの言語設定を使用します。</span><span class="sxs-lookup"><span data-stu-id="b1a5c-114">Uses the browser language setting.</span></span>
+    - <span data-ttu-id="0ab79-113">デバイスの既定のブラウザーが OneNote Online をサポートしている場合は、OneNote Online を開きます。</span><span class="sxs-lookup"><span data-stu-id="0ab79-113">Opens OneNote Online if the default browser on the device supports it.</span></span> 
+    - <span data-ttu-id="0ab79-114">ブラウザーの言語設定を使用します。</span><span class="sxs-lookup"><span data-stu-id="0ab79-114">Uses the browser language setting.</span></span>
 
 
-<span data-ttu-id="b1a5c-115">OneNote API は、次の操作の HTTP 応答で **links** プロパティを返します。</span><span class="sxs-lookup"><span data-stu-id="b1a5c-115">The OneNote API returns the **links** property in the HTTP response for the following operations:</span></span>
+<span data-ttu-id="0ab79-115">OneNote API は、次の操作の HTTP 応答で **links** プロパティを返します。</span><span class="sxs-lookup"><span data-stu-id="0ab79-115">The OneNote API returns the **links** property in the HTTP response for the following operations:</span></span>
 
-- <span data-ttu-id="b1a5c-116">[`POST pages`](/graph/api/section-post-pages?view=graph-rest-1.0) 要求を送信してページを作成する。</span><span class="sxs-lookup"><span data-stu-id="b1a5c-116">Create a page by sending a [`POST pages`](/graph/api/section-post-pages?view=graph-rest-1.0) request.</span></span>
+- <span data-ttu-id="0ab79-116">[`POST pages`](/graph/api/section-post-pages?view=graph-rest-1.0) 要求を送信してページを作成する。</span><span class="sxs-lookup"><span data-stu-id="0ab79-116">Create a page by sending a [`POST pages`](/graph/api/section-post-pages?view=graph-rest-1.0) request.</span></span>
 
-- <span data-ttu-id="b1a5c-117">[`POST notebooks`](/graph/api/onenote-post-notebooks?view=graph-rest-1.0) 要求を送信してノートブックを作成する。</span><span class="sxs-lookup"><span data-stu-id="b1a5c-117">Create a notebook by sending a [`POST notebooks`](/graph/api/onenote-post-notebooks?view=graph-rest-1.0) request.</span></span>
+- <span data-ttu-id="0ab79-117">[`POST notebooks`](/graph/api/onenote-post-notebooks?view=graph-rest-1.0) 要求を送信してノートブックを作成する。</span><span class="sxs-lookup"><span data-stu-id="0ab79-117">Create a notebook by sending a [`POST notebooks`](/graph/api/onenote-post-notebooks?view=graph-rest-1.0) request.</span></span>
 
-- <span data-ttu-id="b1a5c-118">[`GET pages`](/graph/api/page-get?view=graph-rest-1.0) または [`GET pages/{id}`](/graph/api/page-get?view=graph-rest-1.0) 要求を送信してページ メタデータを取得する。</span><span class="sxs-lookup"><span data-stu-id="b1a5c-118">Get page metadata by sending a [`GET pages`](/graph/api/page-get?view=graph-rest-1.0) or [`GET pages/{id}`](/graph/api/page-get?view=graph-rest-1.0) request.</span></span>
+- <span data-ttu-id="0ab79-118">[`GET pages`](/graph/api/page-get?view=graph-rest-1.0) または [`GET pages/{id}`](/graph/api/page-get?view=graph-rest-1.0) 要求を送信してページ メタデータを取得する。</span><span class="sxs-lookup"><span data-stu-id="0ab79-118">Get page metadata by sending a [`GET pages`](/graph/api/page-get?view=graph-rest-1.0) or [`GET pages/{id}`](/graph/api/page-get?view=graph-rest-1.0) request.</span></span>
 
-- <span data-ttu-id="b1a5c-119">[`GET notebooks`](/graph/api/notebook-get?view=graph-rest-1.0) または [`GET notebooks/{id}`](/graph/api/notebook-get?view=graph-rest-1.0) 要求を送信してノートブック メタデータを取得する。</span><span class="sxs-lookup"><span data-stu-id="b1a5c-119">Get notebook metadata by sending a [`GET notebooks`](/graph/api/notebook-get?view=graph-rest-1.0) or [`GET notebooks/{id}`](/graph/api/notebook-get?view=graph-rest-1.0) request.</span></span>
+- <span data-ttu-id="0ab79-119">[`GET notebooks`](/graph/api/notebook-get?view=graph-rest-1.0) または [`GET notebooks/{id}`](/graph/api/notebook-get?view=graph-rest-1.0) 要求を送信してノートブック メタデータを取得する。</span><span class="sxs-lookup"><span data-stu-id="0ab79-119">Get notebook metadata by sending a [`GET notebooks`](/graph/api/notebook-get?view=graph-rest-1.0) or [`GET notebooks/{id}`](/graph/api/notebook-get?view=graph-rest-1.0) request.</span></span>
 
-<span data-ttu-id="b1a5c-120">次の例では、応答の状態コードを確認し、JSON を解析して URL を抽出し、OneNote クライアントを開く方法を示しています。</span><span class="sxs-lookup"><span data-stu-id="b1a5c-120">The following examples show how to check the status code of the response, parse the JSON to extract the URLs, and then open the OneNote client.</span></span>
+<span data-ttu-id="0ab79-120">次の例では、応答の状態コードを確認し、JSON を解析して URL を抽出し、OneNote クライアントを開く方法を示しています。</span><span class="sxs-lookup"><span data-stu-id="0ab79-120">The following examples show how to check the status code of the response, parse the JSON to extract the URLs, and then open the OneNote client.</span></span>
 
-## <a name="ios-example"></a><span data-ttu-id="b1a5c-121">iOS の例</span><span class="sxs-lookup"><span data-stu-id="b1a5c-121">iOS example</span></span>
+## <a name="ios-example"></a><span data-ttu-id="0ab79-121">iOS の例</span><span class="sxs-lookup"><span data-stu-id="0ab79-121">iOS example</span></span>
 
-<span data-ttu-id="b1a5c-122">次の例では、JSON 応答から OneNote クライアントの URL を取得します。</span><span class="sxs-lookup"><span data-stu-id="b1a5c-122">The following example gets the OneNote client URLs from the JSON response.</span></span> <span data-ttu-id="b1a5c-123">AFNetworking ライブラリ (https://afnetworking.com/)) を使用して、2 つの URL を抽出します。</span><span class="sxs-lookup"><span data-stu-id="b1a5c-123">It uses the AFNetworking library (https://afnetworking.com/) to extract the two URLs.</span></span> <span data-ttu-id="b1a5c-124">この例では、`created` は、応答値を格納するために使用される **ONSCPSStandardResponse** オブジェクトへのポインターであり、`responseObject` は解析された JSON を保持します。</span><span class="sxs-lookup"><span data-stu-id="b1a5c-124">In the example, `created` is a pointer to the **ONSCPSStandardResponse** object used to store the response values, and `responseObject` holds the parsed JSON.</span></span>
+<span data-ttu-id="0ab79-122">次の例では、JSON 応答から OneNote クライアントの URL を取得します。</span><span class="sxs-lookup"><span data-stu-id="0ab79-122">The following example gets the OneNote client URLs from the JSON response.</span></span> <span data-ttu-id="0ab79-123">AFNetworking ライブラリ (https://afnetworking.com/)) を使用して、2 つの URL を抽出します。</span><span class="sxs-lookup"><span data-stu-id="0ab79-123">It uses the AFNetworking library (https://afnetworking.com/) to extract the two URLs.</span></span> <span data-ttu-id="0ab79-124">この例では、`created` は、応答値を格納するために使用される **ONSCPSStandardResponse** オブジェクトへのポインターであり、`responseObject` は解析された JSON を保持します。</span><span class="sxs-lookup"><span data-stu-id="0ab79-124">In the example, `created` is a pointer to the **ONSCPSStandardResponse** object used to store the response values, and `responseObject` holds the parsed JSON.</span></span>
 
 ```objc
     /* Import the JSON library */
@@ -95,16 +96,16 @@ ms.locfileid: "27324606"
 
 <br/>
 
-<span data-ttu-id="b1a5c-125">応答から URL を解析した後は、次のコードを使用して OneNote を開くことができるようになります。</span><span class="sxs-lookup"><span data-stu-id="b1a5c-125">After you parse the URLs from the response, you can open OneNote by using the following code.</span></span> <span data-ttu-id="b1a5c-126">インストール済みの OneNote クライアントを開くには `oneNoteClientUrl`、OneNote Online を開くには `oneNoteWebURL` を使用します。</span><span class="sxs-lookup"><span data-stu-id="b1a5c-126">Use `oneNoteClientUrl` to open the installed OneNote client or `oneNoteWebURL` to open OneNote Online.</span></span>
+<span data-ttu-id="0ab79-125">応答から URL を解析した後は、次のコードを使用して OneNote を開くことができるようになります。</span><span class="sxs-lookup"><span data-stu-id="0ab79-125">After you parse the URLs from the response, you can open OneNote by using the following code.</span></span> <span data-ttu-id="0ab79-126">インストール済みの OneNote クライアントを開くには `oneNoteClientUrl`、OneNote Online を開くには `oneNoteWebURL` を使用します。</span><span class="sxs-lookup"><span data-stu-id="0ab79-126">Use `oneNoteClientUrl` to open the installed OneNote client or `oneNoteWebURL` to open OneNote Online.</span></span>
 
 ```objc
 NSURL *url = [NSURL URLWithString:standardResponse.oneNoteWebUrl];
 [[UIApplication sharedApplication] openURL:url];
 ```
 
-## <a name="android-example"></a><span data-ttu-id="b1a5c-127">Android の例</span><span class="sxs-lookup"><span data-stu-id="b1a5c-127">Android example</span></span>
+## <a name="android-example"></a><span data-ttu-id="0ab79-127">Android の例</span><span class="sxs-lookup"><span data-stu-id="0ab79-127">Android example</span></span>
 
-<span data-ttu-id="b1a5c-128">まず成功状態コードを確認し、次に JSON を解析します。</span><span class="sxs-lookup"><span data-stu-id="b1a5c-128">First, check for the success status code, and then parse the JSON.</span></span> <span data-ttu-id="b1a5c-129">この例では POST 要求が送信されていることを前提としているので、`201 Created` 状態コードが確認されます。</span><span class="sxs-lookup"><span data-stu-id="b1a5c-129">The example assumes a POST request was sent, so it checks for a `201 Created` status code.</span></span> <span data-ttu-id="b1a5c-130">`GET` 要求を行った場合は、代わりに `200` 状態コードを確認します。</span><span class="sxs-lookup"><span data-stu-id="b1a5c-130">If you made a `GET` request, check for a `200` status code instead.</span></span>
+<span data-ttu-id="0ab79-128">まず成功状態コードを確認し、次に JSON を解析します。</span><span class="sxs-lookup"><span data-stu-id="0ab79-128">First, check for the success status code, and then parse the JSON.</span></span> <span data-ttu-id="0ab79-129">この例では POST 要求が送信されていることを前提としているので、`201 Created` 状態コードが確認されます。</span><span class="sxs-lookup"><span data-stu-id="0ab79-129">The example assumes a POST request was sent, so it checks for a `201 Created` status code.</span></span> <span data-ttu-id="0ab79-130">`GET` 要求を行った場合は、代わりに `200` 状態コードを確認します。</span><span class="sxs-lookup"><span data-stu-id="0ab79-130">If you made a `GET` request, check for a `200` status code instead.</span></span>
 
 ```java
 public ApiResponse getResponse() throws Exception {
@@ -163,7 +164,7 @@ public ApiResponse getResponse() throws Exception {
 
 <br/>
 
-<span data-ttu-id="b1a5c-131">次の例に示すように、応答プロパティを使用すると、アプリで OneNote Online を開くことができます。</span><span class="sxs-lookup"><span data-stu-id="b1a5c-131">Using the response properties, your app can open OneNote Online, as shown in the following example.</span></span>
+<span data-ttu-id="0ab79-131">次の例に示すように、応答プロパティを使用すると、アプリで OneNote Online を開くことができます。</span><span class="sxs-lookup"><span data-stu-id="0ab79-131">Using the response properties, your app can open OneNote Online, as shown in the following example.</span></span>
 
 ```java 
 if (response.getResponseCode() == 201) {
@@ -175,7 +176,7 @@ if (response.getResponseCode() == 201) {
 
 <br/>
 
-<span data-ttu-id="b1a5c-132">または、アプリで Android デバイスの OneNote クライアントを開くことができます。</span><span class="sxs-lookup"><span data-stu-id="b1a5c-132">Or your app can open the OneNote client on an Android device.</span></span> <span data-ttu-id="b1a5c-133">`oneNoteClientUrl` プロパティを使用するときには、Intent を開始する前に、中かっこ `{ }` で GUID 文字列を囲む必要があります。</span><span class="sxs-lookup"><span data-stu-id="b1a5c-133">When using the `oneNoteClientUrl` property, you must surround the GUID strings with braces `{ }` before starting the Intent.</span></span> <span data-ttu-id="b1a5c-134">次の例に方法を示します。</span><span class="sxs-lookup"><span data-stu-id="b1a5c-134">The following example shows how to do that.</span></span>
+<span data-ttu-id="0ab79-132">または、アプリで Android デバイスの OneNote クライアントを開くことができます。</span><span class="sxs-lookup"><span data-stu-id="0ab79-132">Or your app can open the OneNote client on an Android device.</span></span> <span data-ttu-id="0ab79-133">`oneNoteClientUrl` プロパティを使用するときには、Intent を開始する前に、中かっこ `{ }` で GUID 文字列を囲む必要があります。</span><span class="sxs-lookup"><span data-stu-id="0ab79-133">When using the `oneNoteClientUrl` property, you must surround the GUID strings with braces `{ }` before starting the Intent.</span></span> <span data-ttu-id="0ab79-134">次の例に方法を示します。</span><span class="sxs-lookup"><span data-stu-id="0ab79-134">The following example shows how to do that.</span></span>
 
 ```java 
 if (response.getResponseCode() == 201) {
@@ -194,7 +195,7 @@ if (response.getResponseCode() == 201) {
 }
 ```
 
-## <a name="see-also"></a><span data-ttu-id="b1a5c-135">関連項目</span><span class="sxs-lookup"><span data-stu-id="b1a5c-135">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="0ab79-135">関連項目</span><span class="sxs-lookup"><span data-stu-id="0ab79-135">See also</span></span>
 
-- [<span data-ttu-id="b1a5c-136">OneNote コンテンツと構造を取得する</span><span class="sxs-lookup"><span data-stu-id="b1a5c-136">Get OneNote content and structure</span></span>](onenote-get-content.md)
-- [<span data-ttu-id="b1a5c-137">OneNote ページを作成する</span><span class="sxs-lookup"><span data-stu-id="b1a5c-137">Create OneNote pages</span></span>](onenote-create-page.md)
+- [<span data-ttu-id="0ab79-136">OneNote コンテンツと構造を取得する</span><span class="sxs-lookup"><span data-stu-id="0ab79-136">Get OneNote content and structure</span></span>](onenote-get-content.md)
+- [<span data-ttu-id="0ab79-137">OneNote ページを作成する</span><span class="sxs-lookup"><span data-stu-id="0ab79-137">Create OneNote pages</span></span>](onenote-create-page.md)

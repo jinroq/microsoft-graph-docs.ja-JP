@@ -3,53 +3,54 @@ title: オーディオのルーティング グループを取得します。
 description: プロパティと audioRoutingGroup オブジェクトの関係を取得します。
 author: VinodRavichandran
 localization_priority: Normal
-ms.openlocfilehash: ebb0887f071fe24056903af9eae1e3f55ab6ede3
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: microsoft-teams
+ms.openlocfilehash: 08c86e0a88cb77ddf42f8b7feee2f55093723d35
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27814183"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27922558"
 ---
-# <a name="get-audio-routing-group"></a><span data-ttu-id="77c59-103">オーディオのルーティング グループを取得します。</span><span class="sxs-lookup"><span data-stu-id="77c59-103">Get audio routing group</span></span>
+# <a name="get-audio-routing-group"></a><span data-ttu-id="bfe50-103">オーディオのルーティング グループを取得します。</span><span class="sxs-lookup"><span data-stu-id="bfe50-103">Get audio routing group</span></span>
 
-> <span data-ttu-id="77c59-104">**重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。</span><span class="sxs-lookup"><span data-stu-id="77c59-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="77c59-105">実稼働アプリケーションでの、これらの API の使用はサポートされていません。</span><span class="sxs-lookup"><span data-stu-id="77c59-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="bfe50-104">**重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。</span><span class="sxs-lookup"><span data-stu-id="bfe50-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="bfe50-105">実稼働アプリケーションでの、これらの API の使用はサポートされていません。</span><span class="sxs-lookup"><span data-stu-id="bfe50-105">Use of these APIs in production applications is not supported.</span></span>
 
-<span data-ttu-id="77c59-106">プロパティと[audioRoutingGroup](../resources/audioroutinggroup.md)オブジェクトの関係を取得します。</span><span class="sxs-lookup"><span data-stu-id="77c59-106">Retrieve the properties and relationships of an [audioRoutingGroup](../resources/audioroutinggroup.md) object.</span></span>
+<span data-ttu-id="bfe50-106">プロパティと[audioRoutingGroup](../resources/audioroutinggroup.md)オブジェクトの関係を取得します。</span><span class="sxs-lookup"><span data-stu-id="bfe50-106">Retrieve the properties and relationships of an [audioRoutingGroup](../resources/audioroutinggroup.md) object.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="77c59-107">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="77c59-107">Permissions</span></span>
-<span data-ttu-id="77c59-p102">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="77c59-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="bfe50-107">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="bfe50-107">Permissions</span></span>
+<span data-ttu-id="bfe50-p102">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="bfe50-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="77c59-110">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="77c59-110">Permission type</span></span>                        | <span data-ttu-id="77c59-111">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="77c59-111">Permissions (from least to most privileged)</span></span> |
+| <span data-ttu-id="bfe50-110">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="bfe50-110">Permission type</span></span>                        | <span data-ttu-id="bfe50-111">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="bfe50-111">Permissions (from least to most privileged)</span></span> |
 |:---------------------------------------|:--------------------------------------------|
-| <span data-ttu-id="77c59-112">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="77c59-112">Delegated (work or school account)</span></span>     | <span data-ttu-id="77c59-113">サポート対象外</span><span class="sxs-lookup"><span data-stu-id="77c59-113">Not Supported</span></span>                               |
-| <span data-ttu-id="77c59-114">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="77c59-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="77c59-115">サポート対象外</span><span class="sxs-lookup"><span data-stu-id="77c59-115">Not Supported</span></span>                               |
-| <span data-ttu-id="77c59-116">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="77c59-116">Application</span></span>                            | <span data-ttu-id="77c59-117">Calls.JoinGroupCalls.All、Calls.InitiateGroupCalls.All</span><span class="sxs-lookup"><span data-stu-id="77c59-117">Calls.JoinGroupCalls.All, Calls.InitiateGroupCalls.All</span></span> |
+| <span data-ttu-id="bfe50-112">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="bfe50-112">Delegated (work or school account)</span></span>     | <span data-ttu-id="bfe50-113">サポート対象外</span><span class="sxs-lookup"><span data-stu-id="bfe50-113">Not Supported</span></span>                               |
+| <span data-ttu-id="bfe50-114">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="bfe50-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="bfe50-115">サポート対象外</span><span class="sxs-lookup"><span data-stu-id="bfe50-115">Not Supported</span></span>                               |
+| <span data-ttu-id="bfe50-116">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="bfe50-116">Application</span></span>                            | <span data-ttu-id="bfe50-117">Calls.JoinGroupCalls.All、Calls.InitiateGroupCalls.All</span><span class="sxs-lookup"><span data-stu-id="bfe50-117">Calls.JoinGroupCalls.All, Calls.InitiateGroupCalls.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="77c59-118">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="77c59-118">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="bfe50-118">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="bfe50-118">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /app/calls/{id}/audioRoutingGroups/{id}
 GET /applications/{id}/calls/{id}/audioRoutingGroups/{id}
 ```
 
-## <a name="optional-query-parameters"></a><span data-ttu-id="77c59-119">オプションのクエリ パラメーター</span><span class="sxs-lookup"><span data-stu-id="77c59-119">Optional query parameters</span></span>
-<span data-ttu-id="77c59-120">このメソッドは、応答をカスタマイズするために[OData クエリ パラメーター](/graph/query-parameters)をサポートします。</span><span class="sxs-lookup"><span data-stu-id="77c59-120">This method supports the [OData query parameters](/graph/query-parameters) to help customize the response.</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="bfe50-119">オプションのクエリ パラメーター</span><span class="sxs-lookup"><span data-stu-id="bfe50-119">Optional query parameters</span></span>
+<span data-ttu-id="bfe50-120">このメソッドは、応答をカスタマイズするために[OData クエリ パラメーター](/graph/query-parameters)をサポートします。</span><span class="sxs-lookup"><span data-stu-id="bfe50-120">This method supports the [OData query parameters](/graph/query-parameters) to help customize the response.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="77c59-121">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="77c59-121">Request headers</span></span>
-| <span data-ttu-id="77c59-122">名前</span><span class="sxs-lookup"><span data-stu-id="77c59-122">Name</span></span>          | <span data-ttu-id="77c59-123">説明</span><span class="sxs-lookup"><span data-stu-id="77c59-123">Description</span></span>               |
+## <a name="request-headers"></a><span data-ttu-id="bfe50-121">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="bfe50-121">Request headers</span></span>
+| <span data-ttu-id="bfe50-122">名前</span><span class="sxs-lookup"><span data-stu-id="bfe50-122">Name</span></span>          | <span data-ttu-id="bfe50-123">説明</span><span class="sxs-lookup"><span data-stu-id="bfe50-123">Description</span></span>               |
 |:--------------|:--------------------------|
-| <span data-ttu-id="77c59-124">Authorization</span><span class="sxs-lookup"><span data-stu-id="77c59-124">Authorization</span></span> | <span data-ttu-id="77c59-p103">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="77c59-p103">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="bfe50-124">Authorization</span><span class="sxs-lookup"><span data-stu-id="bfe50-124">Authorization</span></span> | <span data-ttu-id="bfe50-p103">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="bfe50-p103">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="77c59-127">要求本文</span><span class="sxs-lookup"><span data-stu-id="77c59-127">Request body</span></span>
-<span data-ttu-id="77c59-128">このメソッドには、要求本文を指定しません。</span><span class="sxs-lookup"><span data-stu-id="77c59-128">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="bfe50-127">要求本文</span><span class="sxs-lookup"><span data-stu-id="bfe50-127">Request body</span></span>
+<span data-ttu-id="bfe50-128">このメソッドには、要求本文を指定しません。</span><span class="sxs-lookup"><span data-stu-id="bfe50-128">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="77c59-129">応答</span><span class="sxs-lookup"><span data-stu-id="77c59-129">Response</span></span>
-<span data-ttu-id="77c59-130">かどうかは成功すると、このメソッドが返されます、`200 OK`応答コードおよび応答の本文内の[audioRoutingGroup](../resources/audioroutinggroup.md)オブジェクトです。</span><span class="sxs-lookup"><span data-stu-id="77c59-130">If successful, this method returns a `200 OK` response code and an [audioRoutingGroup](../resources/audioroutinggroup.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="bfe50-129">応答</span><span class="sxs-lookup"><span data-stu-id="bfe50-129">Response</span></span>
+<span data-ttu-id="bfe50-130">かどうかは成功すると、このメソッドが返されます、`200 OK`応答コードおよび応答の本文内の[audioRoutingGroup](../resources/audioroutinggroup.md)オブジェクトです。</span><span class="sxs-lookup"><span data-stu-id="bfe50-130">If successful, this method returns a `200 OK` response code and an [audioRoutingGroup](../resources/audioroutinggroup.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="77c59-131">例</span><span class="sxs-lookup"><span data-stu-id="77c59-131">Example</span></span>
+## <a name="example"></a><span data-ttu-id="bfe50-131">例</span><span class="sxs-lookup"><span data-stu-id="bfe50-131">Example</span></span>
 
-##### <a name="request"></a><span data-ttu-id="77c59-132">要求</span><span class="sxs-lookup"><span data-stu-id="77c59-132">Request</span></span>
-<span data-ttu-id="77c59-133">次の例は要求を示しています。</span><span class="sxs-lookup"><span data-stu-id="77c59-133">The following example shows the request.</span></span>
+##### <a name="request"></a><span data-ttu-id="bfe50-132">要求</span><span class="sxs-lookup"><span data-stu-id="bfe50-132">Request</span></span>
+<span data-ttu-id="bfe50-133">次の例は要求を示しています。</span><span class="sxs-lookup"><span data-stu-id="bfe50-133">The following example shows the request.</span></span>
 
 <!-- {
   "blockType": "request",
@@ -59,9 +60,9 @@ GET /applications/{id}/calls/{id}/audioRoutingGroups/{id}
 GET https://graph.microsoft.com/beta/app/calls/{id}/audioRoutingGroups/{id}
 ```
 
-##### <a name="response"></a><span data-ttu-id="77c59-134">応答</span><span class="sxs-lookup"><span data-stu-id="77c59-134">Response</span></span>
+##### <a name="response"></a><span data-ttu-id="bfe50-134">応答</span><span class="sxs-lookup"><span data-stu-id="bfe50-134">Response</span></span>
 
-> <span data-ttu-id="77c59-p104">**注:** 読みやすくするために、ここに示す応答オブジェクトは短くされている場合があります。実際の呼び出しからは、すべてのプロパティが返されます。</span><span class="sxs-lookup"><span data-stu-id="77c59-p104">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+> <span data-ttu-id="bfe50-p104">**注:** 読みやすくするために、ここに示す応答オブジェクトは短くされている場合があります。実際の呼び出しからは、すべてのプロパティが返されます。</span><span class="sxs-lookup"><span data-stu-id="bfe50-p104">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",
