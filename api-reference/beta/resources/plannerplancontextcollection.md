@@ -2,27 +2,29 @@
 title: plannerPlanContextCollection リソースの種類
 description: '**PlannerPlanContextCollection**リソースでは、プランがリンクされている外部のコンテキストのコレクションを表します。 このリソースは、オープン型であり、plannerPlan オブジェクトの一部であります。 プロパティと値のペアの値は、plannerPlanContext オブジェクトです。'
 localization_priority: Normal
-ms.openlocfilehash: 51a09353993a61324f31a03c8ffadd5462cac692
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: TarkanSevilmis
+ms.prod: planner
+ms.openlocfilehash: 3281a7664561ac32c3908ca059209a1b89b4ea7d
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27805454"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27951811"
 ---
-# <a name="plannerplancontextcollection-resource-type"></a><span data-ttu-id="90865-105">plannerPlanContextCollection リソースの種類</span><span class="sxs-lookup"><span data-stu-id="90865-105">plannerPlanContextCollection resource type</span></span>
+# <a name="plannerplancontextcollection-resource-type"></a><span data-ttu-id="86b63-105">plannerPlanContextCollection リソースの種類</span><span class="sxs-lookup"><span data-stu-id="86b63-105">plannerPlanContextCollection resource type</span></span>
 
-> <span data-ttu-id="90865-106">**重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。</span><span class="sxs-lookup"><span data-stu-id="90865-106">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="90865-107">実稼働アプリケーションでの、これらの API の使用はサポートされていません。</span><span class="sxs-lookup"><span data-stu-id="90865-107">Use of these APIs in production applications is not supported.</span></span>
-
-
-<span data-ttu-id="90865-108">**PlannerPlanContextCollection**リソースでは、プランがリンクされている外部のコンテキストのコレクションを表します。</span><span class="sxs-lookup"><span data-stu-id="90865-108">The **plannerPlanContextCollection** resource represents the collection of external contexts to which a plan is linked.</span></span> <span data-ttu-id="90865-109">このリソースは、オープン型であり、 [plannerPlan](plannerplan.md)オブジェクトの一部であります。</span><span class="sxs-lookup"><span data-stu-id="90865-109">This resource is an open type and is part of the [plannerPlan](plannerplan.md) object.</span></span> <span data-ttu-id="90865-110">プロパティと値のペアの値は、 [plannerPlanContext](plannerplancontext.md)オブジェクトです。</span><span class="sxs-lookup"><span data-stu-id="90865-110">The value in the property-value pair is the [plannerPlanContext](plannerplancontext.md) object.</span></span>
+> <span data-ttu-id="86b63-106">**重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。</span><span class="sxs-lookup"><span data-stu-id="86b63-106">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="86b63-107">実稼働アプリケーションでの、これらの API の使用はサポートされていません。</span><span class="sxs-lookup"><span data-stu-id="86b63-107">Use of these APIs in production applications is not supported.</span></span>
 
 
-## <a name="properties"></a><span data-ttu-id="90865-111">プロパティ</span><span class="sxs-lookup"><span data-stu-id="90865-111">Properties</span></span>
-<span data-ttu-id="90865-112">このオープン型のプロパティを定義することができます。</span><span class="sxs-lookup"><span data-stu-id="90865-112">You can define the properties of this open type.</span></span> <span data-ttu-id="90865-113">プロパティの値はプロパティ名と外部のコンテキストを表す特徴的な識別子である必要があります。</span><span class="sxs-lookup"><span data-stu-id="90865-113">The property values should be distinctive identifier that represents the external context as the property name.</span></span> <span data-ttu-id="90865-114">プロパティの値は、 [plannerPlanContext](plannerplancontext.md)オブジェクトである必要があります。</span><span class="sxs-lookup"><span data-stu-id="90865-114">The property values must be [plannerPlanContext](plannerplancontext.md) objects.</span></span> <span data-ttu-id="90865-115">OData の要件に基づき、オープン型のプロパティ名は次の文字を含めることはできません: `.`、 `:`、 `%`、 `@`。</span><span class="sxs-lookup"><span data-stu-id="90865-115">Based on OData requirements, property names in open types cannot contain the following characters: `.`, `:`, `%`, `@`.</span></span> <span data-ttu-id="90865-116">これらの文字は、URL エンコーディングを使用してエンコードする必要があります。</span><span class="sxs-lookup"><span data-stu-id="90865-116">These characters need to be encoded using URL encoding.</span></span> <span data-ttu-id="90865-117">お気に入りの一覧で項目を削除するのにはプロパティの値を設定します`null`。</span><span class="sxs-lookup"><span data-stu-id="90865-117">To remove an item in the favorites list, set the value of the property to `null`.</span></span>
+<span data-ttu-id="86b63-108">**PlannerPlanContextCollection**リソースでは、プランがリンクされている外部のコンテキストのコレクションを表します。</span><span class="sxs-lookup"><span data-stu-id="86b63-108">The **plannerPlanContextCollection** resource represents the collection of external contexts to which a plan is linked.</span></span> <span data-ttu-id="86b63-109">このリソースは、オープン型であり、 [plannerPlan](plannerplan.md)オブジェクトの一部であります。</span><span class="sxs-lookup"><span data-stu-id="86b63-109">This resource is an open type and is part of the [plannerPlan](plannerplan.md) object.</span></span> <span data-ttu-id="86b63-110">プロパティと値のペアの値は、 [plannerPlanContext](plannerplancontext.md)オブジェクトです。</span><span class="sxs-lookup"><span data-stu-id="86b63-110">The value in the property-value pair is the [plannerPlanContext](plannerplancontext.md) object.</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="90865-118">JSON 表記</span><span class="sxs-lookup"><span data-stu-id="90865-118">JSON representation</span></span>
 
-<span data-ttu-id="90865-119">リソースの JSON 表記を次に示します。</span><span class="sxs-lookup"><span data-stu-id="90865-119">The following is a JSON representation of the resource.</span></span>
+## <a name="properties"></a><span data-ttu-id="86b63-111">プロパティ</span><span class="sxs-lookup"><span data-stu-id="86b63-111">Properties</span></span>
+<span data-ttu-id="86b63-112">このオープン型のプロパティを定義することができます。</span><span class="sxs-lookup"><span data-stu-id="86b63-112">You can define the properties of this open type.</span></span> <span data-ttu-id="86b63-113">プロパティの値はプロパティ名と外部のコンテキストを表す特徴的な識別子である必要があります。</span><span class="sxs-lookup"><span data-stu-id="86b63-113">The property values should be distinctive identifier that represents the external context as the property name.</span></span> <span data-ttu-id="86b63-114">プロパティの値は、 [plannerPlanContext](plannerplancontext.md)オブジェクトである必要があります。</span><span class="sxs-lookup"><span data-stu-id="86b63-114">The property values must be [plannerPlanContext](plannerplancontext.md) objects.</span></span> <span data-ttu-id="86b63-115">OData の要件に基づき、オープン型のプロパティ名は次の文字を含めることはできません: `.`、 `:`、 `%`、 `@`。</span><span class="sxs-lookup"><span data-stu-id="86b63-115">Based on OData requirements, property names in open types cannot contain the following characters: `.`, `:`, `%`, `@`.</span></span> <span data-ttu-id="86b63-116">これらの文字は、URL エンコーディングを使用してエンコードする必要があります。</span><span class="sxs-lookup"><span data-stu-id="86b63-116">These characters need to be encoded using URL encoding.</span></span> <span data-ttu-id="86b63-117">お気に入りの一覧で項目を削除するのにはプロパティの値を設定します`null`。</span><span class="sxs-lookup"><span data-stu-id="86b63-117">To remove an item in the favorites list, set the value of the property to `null`.</span></span>
+
+## <a name="json-representation"></a><span data-ttu-id="86b63-118">JSON 表記</span><span class="sxs-lookup"><span data-stu-id="86b63-118">JSON representation</span></span>
+
+<span data-ttu-id="86b63-119">リソースの JSON 表記を次に示します。</span><span class="sxs-lookup"><span data-stu-id="86b63-119">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",

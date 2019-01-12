@@ -3,26 +3,27 @@ title: firewallPacketQueueingMethodType 列挙型
 description: FirewallPacketQueueingMethod に指定できる値
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 1303287e521cf0b542047e8acaf122bc08a770a6
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 3700df6d2eaf0dd0d2dde8a3f4a90be2e3684951
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27823220"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27940100"
 ---
-# <a name="firewallpacketqueueingmethodtype-enum-type"></a><span data-ttu-id="7f555-103">firewallPacketQueueingMethodType 列挙型</span><span class="sxs-lookup"><span data-stu-id="7f555-103">firewallPacketQueueingMethodType enum type</span></span>
+# <a name="firewallpacketqueueingmethodtype-enum-type"></a><span data-ttu-id="ed93f-103">firewallPacketQueueingMethodType 列挙型</span><span class="sxs-lookup"><span data-stu-id="ed93f-103">firewallPacketQueueingMethodType enum type</span></span>
 
-> <span data-ttu-id="7f555-104">**注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。</span><span class="sxs-lookup"><span data-stu-id="7f555-104">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
+> <span data-ttu-id="ed93f-104">**注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。</span><span class="sxs-lookup"><span data-stu-id="ed93f-104">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
 
-<span data-ttu-id="7f555-105">FirewallPacketQueueingMethod に指定できる値</span><span class="sxs-lookup"><span data-stu-id="7f555-105">Possible values for firewallPacketQueueingMethod</span></span>
-## <a name="members"></a><span data-ttu-id="7f555-106">メンバー</span><span class="sxs-lookup"><span data-stu-id="7f555-106">Members</span></span>
-|<span data-ttu-id="7f555-107">メンバー</span><span class="sxs-lookup"><span data-stu-id="7f555-107">Member</span></span>|<span data-ttu-id="7f555-108">値</span><span class="sxs-lookup"><span data-stu-id="7f555-108">Value</span></span>|<span data-ttu-id="7f555-109">説明</span><span class="sxs-lookup"><span data-stu-id="7f555-109">Description</span></span>|
+<span data-ttu-id="ed93f-105">FirewallPacketQueueingMethod に指定できる値</span><span class="sxs-lookup"><span data-stu-id="ed93f-105">Possible values for firewallPacketQueueingMethod</span></span>
+## <a name="members"></a><span data-ttu-id="ed93f-106">メンバー</span><span class="sxs-lookup"><span data-stu-id="ed93f-106">Members</span></span>
+|<span data-ttu-id="ed93f-107">メンバー</span><span class="sxs-lookup"><span data-stu-id="ed93f-107">Member</span></span>|<span data-ttu-id="ed93f-108">値</span><span class="sxs-lookup"><span data-stu-id="ed93f-108">Value</span></span>|<span data-ttu-id="ed93f-109">説明</span><span class="sxs-lookup"><span data-stu-id="ed93f-109">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="7f555-110">deviceDefault</span><span class="sxs-lookup"><span data-stu-id="7f555-110">deviceDefault</span></span>|<span data-ttu-id="7f555-111">0</span><span class="sxs-lookup"><span data-stu-id="7f555-111">0</span></span>|<span data-ttu-id="7f555-112">Intune で構成されている値は、デバイスのユーザーが設定した既定値をオーバーライドしない場合</span><span class="sxs-lookup"><span data-stu-id="7f555-112">No value configured by Intune, do not override the user-configured device default value</span></span>|
-|<span data-ttu-id="7f555-113">無効になっています。</span><span class="sxs-lookup"><span data-stu-id="7f555-113">disabled</span></span>|<span data-ttu-id="7f555-114">1</span><span class="sxs-lookup"><span data-stu-id="7f555-114">1</span></span>|<span data-ttu-id="7f555-115">パケットのキューを無効にします。</span><span class="sxs-lookup"><span data-stu-id="7f555-115">Disable packet queuing</span></span>|
-|<span data-ttu-id="7f555-116">queueInbound</span><span class="sxs-lookup"><span data-stu-id="7f555-116">queueInbound</span></span>|<span data-ttu-id="7f555-117">2</span><span class="sxs-lookup"><span data-stu-id="7f555-117">2</span></span>|<span data-ttu-id="7f555-118">キューが暗号化されたパケットを受信</span><span class="sxs-lookup"><span data-stu-id="7f555-118">Queue inbound encrypted packets</span></span>|
-|<span data-ttu-id="7f555-119">queueOutbound</span><span class="sxs-lookup"><span data-stu-id="7f555-119">queueOutbound</span></span>|<span data-ttu-id="7f555-120">3</span><span class="sxs-lookup"><span data-stu-id="7f555-120">3</span></span>|<span data-ttu-id="7f555-121">キューは、転送のためのアウト バウンド パケットを復号化</span><span class="sxs-lookup"><span data-stu-id="7f555-121">Queue decrypted outbound packets for forwarding</span></span>|
-|<span data-ttu-id="7f555-122">queueBoth</span><span class="sxs-lookup"><span data-stu-id="7f555-122">queueBoth</span></span>|<span data-ttu-id="7f555-123">4</span><span class="sxs-lookup"><span data-stu-id="7f555-123">4</span></span>|<span data-ttu-id="7f555-124">着信および発信パケットをキューします。</span><span class="sxs-lookup"><span data-stu-id="7f555-124">Queue both inbound and outbound packets</span></span>|
+|<span data-ttu-id="ed93f-110">deviceDefault</span><span class="sxs-lookup"><span data-stu-id="ed93f-110">deviceDefault</span></span>|<span data-ttu-id="ed93f-111">0</span><span class="sxs-lookup"><span data-stu-id="ed93f-111">0</span></span>|<span data-ttu-id="ed93f-112">Intune で構成されている値は、デバイスのユーザーが設定した既定値をオーバーライドしない場合</span><span class="sxs-lookup"><span data-stu-id="ed93f-112">No value configured by Intune, do not override the user-configured device default value</span></span>|
+|<span data-ttu-id="ed93f-113">無効になっています。</span><span class="sxs-lookup"><span data-stu-id="ed93f-113">disabled</span></span>|<span data-ttu-id="ed93f-114">1</span><span class="sxs-lookup"><span data-stu-id="ed93f-114">1</span></span>|<span data-ttu-id="ed93f-115">パケットのキューを無効にします。</span><span class="sxs-lookup"><span data-stu-id="ed93f-115">Disable packet queuing</span></span>|
+|<span data-ttu-id="ed93f-116">queueInbound</span><span class="sxs-lookup"><span data-stu-id="ed93f-116">queueInbound</span></span>|<span data-ttu-id="ed93f-117">2</span><span class="sxs-lookup"><span data-stu-id="ed93f-117">2</span></span>|<span data-ttu-id="ed93f-118">キューが暗号化されたパケットを受信</span><span class="sxs-lookup"><span data-stu-id="ed93f-118">Queue inbound encrypted packets</span></span>|
+|<span data-ttu-id="ed93f-119">queueOutbound</span><span class="sxs-lookup"><span data-stu-id="ed93f-119">queueOutbound</span></span>|<span data-ttu-id="ed93f-120">3</span><span class="sxs-lookup"><span data-stu-id="ed93f-120">3</span></span>|<span data-ttu-id="ed93f-121">キューは、転送のためのアウト バウンド パケットを復号化</span><span class="sxs-lookup"><span data-stu-id="ed93f-121">Queue decrypted outbound packets for forwarding</span></span>|
+|<span data-ttu-id="ed93f-122">queueBoth</span><span class="sxs-lookup"><span data-stu-id="ed93f-122">queueBoth</span></span>|<span data-ttu-id="ed93f-123">4</span><span class="sxs-lookup"><span data-stu-id="ed93f-123">4</span></span>|<span data-ttu-id="ed93f-124">着信および発信パケットをキューします。</span><span class="sxs-lookup"><span data-stu-id="ed93f-124">Queue both inbound and outbound packets</span></span>|
 
 
 

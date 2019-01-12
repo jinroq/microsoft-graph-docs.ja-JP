@@ -3,31 +3,32 @@ title: getManagedAppDiagnosticStatuses 関数
 description: 特定のユーザーの診断検証状態を取得します。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 6879509d2ffac4c0d01d451f6efcddd973f846c4
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: cb8beac36b1f0892164fad41de4bdc11aee00094
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27867810"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27939890"
 ---
-# <a name="getmanagedappdiagnosticstatuses-function"></a><span data-ttu-id="13dcc-103">getManagedAppDiagnosticStatuses 関数</span><span class="sxs-lookup"><span data-stu-id="13dcc-103">getManagedAppDiagnosticStatuses function</span></span>
+# <a name="getmanagedappdiagnosticstatuses-function"></a><span data-ttu-id="17bc0-103">getManagedAppDiagnosticStatuses 関数</span><span class="sxs-lookup"><span data-stu-id="17bc0-103">getManagedAppDiagnosticStatuses function</span></span>
 
-> <span data-ttu-id="13dcc-104">**重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。</span><span class="sxs-lookup"><span data-stu-id="13dcc-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="13dcc-105">実稼働アプリケーションでの、これらの API の使用はサポートされていません。</span><span class="sxs-lookup"><span data-stu-id="13dcc-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="17bc0-104">**重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。</span><span class="sxs-lookup"><span data-stu-id="17bc0-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="17bc0-105">実稼働アプリケーションでの、これらの API の使用はサポートされていません。</span><span class="sxs-lookup"><span data-stu-id="17bc0-105">Use of these APIs in production applications is not supported.</span></span>
 
-> <span data-ttu-id="13dcc-106">**注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。</span><span class="sxs-lookup"><span data-stu-id="13dcc-106">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
+> <span data-ttu-id="17bc0-106">**注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。</span><span class="sxs-lookup"><span data-stu-id="17bc0-106">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
 
-<span data-ttu-id="13dcc-107">特定のユーザーの診断検証状態を取得します。</span><span class="sxs-lookup"><span data-stu-id="13dcc-107">Gets diagnostics validation status for a given user.</span></span>
-## <a name="prerequisites"></a><span data-ttu-id="13dcc-108">前提条件</span><span class="sxs-lookup"><span data-stu-id="13dcc-108">Prerequisites</span></span>
-<span data-ttu-id="13dcc-p102">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="13dcc-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="17bc0-107">特定のユーザーの診断検証状態を取得します。</span><span class="sxs-lookup"><span data-stu-id="17bc0-107">Gets diagnostics validation status for a given user.</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="17bc0-108">前提条件</span><span class="sxs-lookup"><span data-stu-id="17bc0-108">Prerequisites</span></span>
+<span data-ttu-id="17bc0-p102">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="17bc0-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="13dcc-111">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="13dcc-111">Permission type</span></span>|<span data-ttu-id="13dcc-112">アクセス許可 (特権の大きいものから小さいものへ)</span><span class="sxs-lookup"><span data-stu-id="13dcc-112">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="17bc0-111">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="17bc0-111">Permission type</span></span>|<span data-ttu-id="17bc0-112">アクセス許可 (特権の大きいものから小さいものへ)</span><span class="sxs-lookup"><span data-stu-id="17bc0-112">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="13dcc-113">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="13dcc-113">Delegated (work or school account)</span></span>||
-| <span data-ttu-id="13dcc-114">&nbsp;&nbsp; **MAM**</span><span class="sxs-lookup"><span data-stu-id="13dcc-114">&nbsp; &nbsp; **MAM**</span></span> | <span data-ttu-id="13dcc-115">DeviceManagementApps.ReadWrite.All、DeviceManagementApps.Read.All</span><span class="sxs-lookup"><span data-stu-id="13dcc-115">DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All</span></span>|
-|<span data-ttu-id="13dcc-116">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="13dcc-116">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="13dcc-117">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="13dcc-117">Not supported.</span></span>|
-|<span data-ttu-id="13dcc-118">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="13dcc-118">Application</span></span>|<span data-ttu-id="13dcc-119">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="13dcc-119">Not supported.</span></span>|
+|<span data-ttu-id="17bc0-113">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="17bc0-113">Delegated (work or school account)</span></span>||
+| <span data-ttu-id="17bc0-114">&nbsp;&nbsp; **MAM**</span><span class="sxs-lookup"><span data-stu-id="17bc0-114">&nbsp; &nbsp; **MAM**</span></span> | <span data-ttu-id="17bc0-115">DeviceManagementApps.ReadWrite.All、DeviceManagementApps.Read.All</span><span class="sxs-lookup"><span data-stu-id="17bc0-115">DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All</span></span>|
+|<span data-ttu-id="17bc0-116">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="17bc0-116">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="17bc0-117">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="17bc0-117">Not supported.</span></span>|
+|<span data-ttu-id="17bc0-118">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="17bc0-118">Application</span></span>|<span data-ttu-id="17bc0-119">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="17bc0-119">Not supported.</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="13dcc-120">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="13dcc-120">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="17bc0-120">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="17bc0-120">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -36,27 +37,27 @@ ms.locfileid: "27867810"
 GET /users/{usersId}/getManagedAppDiagnosticStatuses
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="13dcc-121">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="13dcc-121">Request headers</span></span>
-|<span data-ttu-id="13dcc-122">ヘッダー</span><span class="sxs-lookup"><span data-stu-id="13dcc-122">Header</span></span>|<span data-ttu-id="13dcc-123">値</span><span class="sxs-lookup"><span data-stu-id="13dcc-123">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="17bc0-121">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="17bc0-121">Request headers</span></span>
+|<span data-ttu-id="17bc0-122">ヘッダー</span><span class="sxs-lookup"><span data-stu-id="17bc0-122">Header</span></span>|<span data-ttu-id="17bc0-123">値</span><span class="sxs-lookup"><span data-stu-id="17bc0-123">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="13dcc-124">Authorization</span><span class="sxs-lookup"><span data-stu-id="13dcc-124">Authorization</span></span>|<span data-ttu-id="13dcc-125">ベアラー &lt;トークン&gt; が必須。</span><span class="sxs-lookup"><span data-stu-id="13dcc-125">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="13dcc-126">Accept</span><span class="sxs-lookup"><span data-stu-id="13dcc-126">Accept</span></span>|<span data-ttu-id="13dcc-127">application/json</span><span class="sxs-lookup"><span data-stu-id="13dcc-127">application/json</span></span>|
+|<span data-ttu-id="17bc0-124">Authorization</span><span class="sxs-lookup"><span data-stu-id="17bc0-124">Authorization</span></span>|<span data-ttu-id="17bc0-125">ベアラー &lt;トークン&gt; が必須。</span><span class="sxs-lookup"><span data-stu-id="17bc0-125">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="17bc0-126">Accept</span><span class="sxs-lookup"><span data-stu-id="17bc0-126">Accept</span></span>|<span data-ttu-id="17bc0-127">application/json</span><span class="sxs-lookup"><span data-stu-id="17bc0-127">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="13dcc-128">要求本文</span><span class="sxs-lookup"><span data-stu-id="13dcc-128">Request body</span></span>
-<span data-ttu-id="13dcc-129">このメソッドには、要求本文を指定しません。</span><span class="sxs-lookup"><span data-stu-id="13dcc-129">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="17bc0-128">要求本文</span><span class="sxs-lookup"><span data-stu-id="17bc0-128">Request body</span></span>
+<span data-ttu-id="17bc0-129">このメソッドには、要求本文を指定しません。</span><span class="sxs-lookup"><span data-stu-id="17bc0-129">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="13dcc-130">応答</span><span class="sxs-lookup"><span data-stu-id="13dcc-130">Response</span></span>
-<span data-ttu-id="13dcc-131">成功した場合、この関数は `200 OK` 応答コードと、応答本文で [managedAppDiagnosticStatus](../resources/intune-mam-managedappdiagnosticstatus.md) コレクションを返します。</span><span class="sxs-lookup"><span data-stu-id="13dcc-131">If successful, this function returns a `200 OK` response code and a [managedAppDiagnosticStatus](../resources/intune-mam-managedappdiagnosticstatus.md) collection in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="17bc0-130">応答</span><span class="sxs-lookup"><span data-stu-id="17bc0-130">Response</span></span>
+<span data-ttu-id="17bc0-131">成功した場合、この関数は `200 OK` 応答コードと、応答本文で [managedAppDiagnosticStatus](../resources/intune-mam-managedappdiagnosticstatus.md) コレクションを返します。</span><span class="sxs-lookup"><span data-stu-id="17bc0-131">If successful, this function returns a `200 OK` response code and a [managedAppDiagnosticStatus](../resources/intune-mam-managedappdiagnosticstatus.md) collection in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="13dcc-132">例</span><span class="sxs-lookup"><span data-stu-id="13dcc-132">Example</span></span>
-### <a name="request"></a><span data-ttu-id="13dcc-133">要求</span><span class="sxs-lookup"><span data-stu-id="13dcc-133">Request</span></span>
-<span data-ttu-id="13dcc-134">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="13dcc-134">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="17bc0-132">例</span><span class="sxs-lookup"><span data-stu-id="17bc0-132">Example</span></span>
+### <a name="request"></a><span data-ttu-id="17bc0-133">要求</span><span class="sxs-lookup"><span data-stu-id="17bc0-133">Request</span></span>
+<span data-ttu-id="17bc0-134">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="17bc0-134">Here is an example of the request.</span></span>
 ``` http
 GET https://graph.microsoft.com/beta/users/{usersId}/getManagedAppDiagnosticStatuses
 ```
 
-### <a name="response"></a><span data-ttu-id="13dcc-135">応答</span><span class="sxs-lookup"><span data-stu-id="13dcc-135">Response</span></span>
-<span data-ttu-id="13dcc-p103">以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。</span><span class="sxs-lookup"><span data-stu-id="13dcc-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="17bc0-135">応答</span><span class="sxs-lookup"><span data-stu-id="17bc0-135">Response</span></span>
+<span data-ttu-id="17bc0-p103">以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。</span><span class="sxs-lookup"><span data-stu-id="17bc0-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
