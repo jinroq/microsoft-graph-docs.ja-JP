@@ -3,12 +3,13 @@ title: DepOnboardingSetting を更新します。
 description: DepOnboardingSetting オブジェクトのプロパティを更新します。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 05b31f007aece229dacee41af354fdf7ab2807ba
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: a7624c99b812f67e76551e9f082da0af49c03bc5
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27891120"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27924238"
 ---
 # <a name="update-deponboardingsetting"></a>DepOnboardingSetting を更新します。
 
@@ -46,7 +47,7 @@ PATCH /deviceManagement/depOnboardingSettings/{depOnboardingSettingId}
 
 [DepOnboardingSetting](../resources/intune-enrollment-deponboardingsetting.md)を作成するときに必要なプロパティを次の表に示します。
 
-|プロパティ|種類|説明|
+|プロパティ|型|説明|
 |:---|:---|:---|
 |ID|String|オブジェクトの UUID|
 |appleIdentifier|String|Apple ID は、現在のトークンを取得するために使用します。|
@@ -54,13 +55,13 @@ PATCH /deviceManagement/depOnboardingSettings/{depOnboardingSettingId}
 |lastModifiedDateTime|DateTimeOffset|Onboarded でした。|
 |lastSuccessfulSyncDateTime|DateTimeOffset|Intune のサービスの最後の syned|
 |lastSyncTriggeredDateTime|DateTimeOffset|Intune が最後に同期を要求された場合。|
-|shareTokenWithSchoolDataSyncService|ブール型|かどうか Dep トークンの共有は学校のデータ同期サービスで有効になります。|
+|shareTokenWithSchoolDataSyncService|Boolean|かどうか Dep トークンの共有は学校のデータ同期サービスで有効になります。|
 |lastSyncErrorCode|Int32|Dep の前回の同期中に、Apple によって報告されたエラー ・ コードです。|
 |tokenType|[depTokenType](../resources/intune-enrollment-deptokentype.md)|Dep のトークンの種類を設定を取得または取得します。 可能な値は、`none`、`dep`、`appleSchoolManager` です。|
 |tokenName|String|Dep のトークンの表示名|
 |syncedDeviceCount|Int32|同期されたデバイスの数を取得|
 |defaultProfileDisplayName|String|同期されたデバイスの数を取得|
-|dataSharingConsentGranted|ブール型|アップル Dep のサービスと共有データの許可に同意するもの|
+|dataSharingConsentGranted|Boolean|アップル Dep のサービスと共有データの許可に同意するもの|
 
 
 

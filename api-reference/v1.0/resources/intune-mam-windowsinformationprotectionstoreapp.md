@@ -3,12 +3,13 @@ title: windowsInformationProtectionStoreApp リソースの種類
 description: Windows 情報保護のストア アプリ
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 4e78aa854b15763cade9a4d6020f1737bbca1642
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 90f89f46c81676a3f51b019df26eb042d3f5bd79
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27814477"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27919422"
 ---
 # <a name="windowsinformationprotectionstoreapp-resource-type"></a>windowsInformationProtectionStoreApp リソースの種類
 
@@ -19,7 +20,7 @@ Windows 情報保護のストア アプリ
 [windowsInformationProtectionApp](../resources/intune-mam-windowsinformationprotectionapp.md) からの継承
 
 ## <a name="properties"></a>プロパティ
-|プロパティ|種類|説明|
+|プロパティ|型|説明|
 |:---|:---|:---|
 |displayName|文字列型 (String)|アプリの表示名。 [windowsInformationProtectionApp](../resources/intune-mam-windowsinformationprotectionapp.md) からの継承|
 |説明|文字列型 (String)|アプリの説明。 [windowsInformationProtectionApp](../resources/intune-mam-windowsinformationprotectionapp.md) からの継承|

@@ -2,12 +2,13 @@
 title: office365GroupsActivityCounts リソースの種類
 description: リソースの JSON 表記を次に示します。
 localization_priority: Normal
-ms.openlocfilehash: 87867071545a36f7aca1833a369f919317153bc6
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: reports
+ms.openlocfilehash: 7e9f983d131d3b213689a48e10d8d23d3f99085b
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27874110"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27968289"
 ---
 # <a name="office365groupsactivitycounts-resource-type"></a>office365GroupsActivityCounts リソースの種類
 

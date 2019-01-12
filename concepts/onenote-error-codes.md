@@ -1,13 +1,15 @@
 ---
 title: Microsoft Graph の OneNote API のエラー コード
 description: この記事では、API を通して送信した要求が失敗した場合に、Microsoft Graph の OneNote API から返されるエラー コードについて説明します。
-author: Jewan-microsoft
-ms.openlocfilehash: 9c715b25e9b3114d6db21a3b935a266123ca0601
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+author: jewan-microsoft
+localization_priority: Normal
+ms.prod: onenote
+ms.openlocfilehash: f74f9be52756e068aa3e197f2de526b38c187266
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27352466"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27987854"
 ---
 # <a name="error-codes-for-onenote-apis-in-microsoft-graph"></a>Microsoft Graph の OneNote API のエラー コード
 

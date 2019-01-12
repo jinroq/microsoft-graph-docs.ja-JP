@@ -2,12 +2,14 @@
 title: accessReviewDecision リソースの種類
 description: Azure AD にアクセス確認機能を`accessReviewDecision`、Azure AD アクセス確認意思決定の特定のエンティティへのアクセスを表します。  アクセス レビューの場合、または定期的なアクセス確認のインスタンスの中であり、1 つ`accessReviewDecision`確認済みのユーザー 1 人あたり。  などの 2 つのゲストと 1 つ、ゲスト、メンバー、および、アクセス レビュー来園者のグループがある場合は、そのグループのアクセス確認意思決定の 2 つのオブジェクトがありますし。  校閲者が自分の意思決定を変更または別の校閲者が、それらをオーバーライドする場合、`accessReviewDecision`を更新します。
 localization_priority: Normal
-ms.openlocfilehash: 208337f3427fad65499b400dee769d379c38dcb8
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: lleonard-msft
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: b6b10a53726e12c37a598f8df735a3f70174c807
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27870050"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27977557"
 ---
 # <a name="accessreviewdecision-resource-type"></a>accessReviewDecision リソースの種類
 
@@ -24,7 +26,7 @@ Azure AD[アクセスの確認](accessreviews-root.md)機能で、 `accessReview
 
 次の表は、この型のオブジェクトの基本プロパティを示しています。 
 
-| プロパティ                        | 種類                         | 説明                                                                                            |
+| プロパティ                        | 型                         | 説明                                                                                            |
 | :------------------------------ | :-----------------------     | :----------------------------------------------------------------------------------------------------- |
 | `id`                            |`String`                      | アクセス レビュー内での意思決定の id です。                                                                                     |
 | `accessReviewId`                |`String`                      | アクセス レビューの機能によって生成された id です。                                                                                       |
@@ -40,7 +42,7 @@ Azure AD[アクセスの確認](accessreviews-root.md)機能で、 `accessReview
 
 さらに、追加のプロパティが決定されているアクセス権を持つオブジェクトのオブジェクトの種類によって表示されます。  たとえば、アクセス確認の意思決定が特定のユーザーのグループ メンバーシップ、またはアプリケーションへのアクセスの場合は、これらのプロパティを使用した可能性があるかのアクセスを削除するユーザーが識別されます。
 
-| プロパティ                        | 種類                         | 説明                                                                                            |
+| プロパティ                        | 型                         | 説明                                                                                            |
 | :------------------------------ | :-----------------------     | :----------------------------------------------------------------------------------------------------- |
 | `userId`                            |`String`                      | アクセス権が確認されたユーザーの id です。                                                                                    |
 | `userDisplayName`                            |`String`                      | アクセス権が確認されたユーザーの表示名。                                                                                     |

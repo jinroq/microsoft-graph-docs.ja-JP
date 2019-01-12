@@ -2,12 +2,14 @@
 title: outlookGeoCoordinates リソースの種類
 description: 物理的な場所に関する地理的な座標と標高、およびそれらの値の精度を表します。
 localization_priority: Normal
-ms.openlocfilehash: b6c3c8d6336cd301caba0def2853f498f488816b
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: angelgolfer-ms
+ms.prod: outlook
+ms.openlocfilehash: 59b5055118cd4a213d59fdcb4921544e3b84608e
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27837430"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27976493"
 ---
 # <a name="outlookgeocoordinates-resource-type"></a>outlookGeoCoordinates リソースの種類
 

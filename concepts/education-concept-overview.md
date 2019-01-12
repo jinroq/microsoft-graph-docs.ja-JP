@@ -2,12 +2,14 @@
 title: 教育機関向け API の概要
 description: Microsoft Graph の教育機関向け API は、教育のさまざまなシナリオに関係する情報によって Office 365 のリソースを拡張します。それには、学校、クラス、ユーザー (学生と教師)、課題、および提出に関する情報が含まれます。 これにより、学校やクラスルームのさまざまなシナリオのための教育関連リソースの統合ソリューションを容易に構築できます。
 author: mmast-msft
-ms.openlocfilehash: 2085c9be619e3de5eb4df457579461445423113a
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Priority
+ms.prod: education
+ms.openlocfilehash: 0d3f5360d0ef40283021a1e037c40df66d90dd92
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27344990"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27985488"
 ---
 # <a name="education-api-overview"></a>教育機関向け API の概要
 
@@ -74,8 +76,7 @@ Office 365 の Microsoft Teams は、会話、コンテンツ、およびアプ�
     - [名簿 API を使用する](/graph/api/resources/education-overview?view=graph-rest-1.0)
     - [割り当て API を使用する](/graph/api/resources/educationassignment?view=graph-rest-beta)
     - [SDS 管理 API を使用する](/graph/api/resources/educationsynchronizationprofile?view=graph-rest-beta)
-- 
-  [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer) で教育機関向け API を試す。
+- [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer) で教育機関向け API を試す。
 - 次の教育関連サンプルについて調べる:
     - [SSO および名簿管理についての .NET サンプル](https://github.com/OfficeDev/O365-EDU-AspNetMVC-Samples)
     - [SSO および名簿管理についての Angular ノード サンプル](https://github.com/OfficeDev/O365-EDU-AngularNodeJS-Samples)   

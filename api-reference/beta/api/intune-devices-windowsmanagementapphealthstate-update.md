@@ -3,12 +3,13 @@ title: WindowsManagementAppHealthState を更新します。
 description: WindowsManagementAppHealthState オブジェクトのプロパティを更新します。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 4af20e28e47fa65c0e57ae5030c84bd23e74e3e4
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: b52762bf13a7ff534c3c76b8b0c94561744b15fe
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27838634"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27924231"
 ---
 # <a name="update-windowsmanagementapphealthstate"></a>WindowsManagementAppHealthState を更新します。
 
@@ -46,7 +47,7 @@ PATCH /deviceAppManagement/windowsManagementApp/healthStates/{windowsManagementA
 
 [WindowsManagementAppHealthState](../resources/intune-devices-windowsmanagementapphealthstate.md)を作成するときに必要なプロパティを次の表に示します。
 
-|プロパティ|種類|説明|
+|プロパティ|型|説明|
 |:---|:---|:---|
 |ID|String|Windows 管理アプリケーションの正常性状態の一意の識別子|
 |healthState|[healthState](../resources/intune-devices-healthstate.md)|Windows 管理アプリケーションの正常性状態。 可能な値は、`unknown`、`healthy`、`unhealthy` です。|

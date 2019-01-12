@@ -3,12 +3,13 @@ title: AndroidWorkProfileGmailEasConfiguration を削除します。
 description: AndroidWorkProfileGmailEasConfiguration を削除します。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 49777d423928bf62fbd2080fa5d9937f3914e396
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 31414ca7f76601f5e0127b206b7dbc9380807557
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27828005"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27968324"
 ---
 # <a name="delete-androidworkprofilegmaileasconfiguration"></a>AndroidWorkProfileGmailEasConfiguration を削除します。
 

@@ -2,12 +2,13 @@
 title: 'driveItem: プレビュー'
 description: このアクションを使用すると、一時的なプレビューをレンダリングするためにアイテムを短時間の埋め込み可能な Url を取得できます。
 localization_priority: Normal
-ms.openlocfilehash: c04a73d514dfb5a92030c4c2016579d469063f9d
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: sharepoint
+ms.openlocfilehash: ae5140bf6164aedd051f04c2c43c361f16517e7a
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27850772"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27986076"
 ---
 # <a name="driveitem-preview"></a>driveItem: プレビュー
 
@@ -72,7 +73,7 @@ POST /shares/{shareId}/driveItem/preview
 
 GetUrl、postUrl、またはその両方は、指定したオプションの埋め込みのサポートの現在の状態によって返される可能性があります。
 
-として書式設定された文字列は、postParameters`application/x-www-form-urlencoded`と postUrl のコンテンツの種類へのポストを実行し、それに応じて設定する必要があります。 次に例を示します。
+として書式設定された文字列は、postParameters`application/x-www-form-urlencoded`と postUrl のコンテンツの種類へのポストを実行し、それに応じて設定する必要があります。 例:
 ```
 POST https://www.onedrive.com/embed_by_post
 Content-Type: application/x-www-form-urlencoded

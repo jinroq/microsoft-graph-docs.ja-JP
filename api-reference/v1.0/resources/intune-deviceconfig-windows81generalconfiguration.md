@@ -2,12 +2,14 @@
 title: windows81GeneralConfiguration リソース タイプ
 description: このトピックでは、windows81GeneralConfiguration リソースによって公開された、宣言されたメソッド、プロパティ、リレーションシップについて説明します。
 localization_priority: Normal
-ms.openlocfilehash: 20358aac3483985a3508f27737e15de612f56796
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: tfitzmac
+ms.prod: intune
+ms.openlocfilehash: a7709906c1dceec98d5e87073769be7bc96b2d5d
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27841588"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27977795"
 ---
 # <a name="windows81generalconfiguration-resource-type"></a>windows81GeneralConfiguration リソース タイプ
 

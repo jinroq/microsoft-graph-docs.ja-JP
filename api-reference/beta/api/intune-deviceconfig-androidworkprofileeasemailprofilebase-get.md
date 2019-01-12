@@ -3,12 +3,13 @@ title: AndroidWorkProfileEasEmailProfileBase を取得します。
 description: AndroidWorkProfileEasEmailProfileBase オブジェクトのプロパティと関係を参照してください。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 6f57a739e2a6588ceefd5a3e2cc9ad11aac3fcfa
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 0c261193453631de90e05dd0d445027a6bc97b73
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27807400"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27968961"
 ---
 # <a name="get-androidworkprofileeasemailprofilebase"></a>AndroidWorkProfileEasEmailProfileBase を取得します。
 

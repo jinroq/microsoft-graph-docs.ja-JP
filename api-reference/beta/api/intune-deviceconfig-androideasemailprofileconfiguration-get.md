@@ -3,12 +3,13 @@ title: AndroidEasEmailProfileConfiguration を取得します。
 description: AndroidEasEmailProfileConfiguration オブジェクトのプロパティと関係を参照してください。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: b00a3aa67646abe9c2d8263ab1ddda088f200e9c
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 592121b78070592beca18b465d7b1a4bc188c7c6
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27879493"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27976500"
 ---
 # <a name="get-androideasemailprofileconfiguration"></a>AndroidEasEmailProfileConfiguration を取得します。
 

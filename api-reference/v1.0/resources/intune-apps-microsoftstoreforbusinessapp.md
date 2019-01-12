@@ -2,12 +2,14 @@
 title: microsoftStoreForBusinessApp リソースの種類
 description: ビジネス向け Microsoft Store のアプリです。 このクラスは、作成、削除、更新をサポートしていません。
 localization_priority: Normal
-ms.openlocfilehash: 08f0fd30fc642100a1ca81f79a795bcd575a6135
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: tfitzmac
+ms.prod: intune
+ms.openlocfilehash: 329872a116fad871f121784af0269377782c2b17
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27878134"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27978670"
 ---
 # <a name="microsoftstoreforbusinessapp-resource-type"></a>microsoftStoreForBusinessApp リソースの種類
 

@@ -2,12 +2,14 @@
 title: ユーザーのメールボックスの設定を更新する
 description: ユーザーのメールボックスの設定を 1 つ以上更新します。これには、自動応答 (電子メールの受信時に自動的にユーザーに通知)、ロケール (言語と国/地域)、タイム ゾーン、就業時間の設定が含まれます。
 localization_priority: Normal
-ms.openlocfilehash: cfc19337ed96a3cfefcfe5778807bc81e4c72fc7
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: dkershaw10
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: 78547e19335a65410e201b872e9514abf4656096
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27840644"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27983801"
 ---
 # <a name="update-user-mailbox-settings"></a>ユーザーのメールボックスの設定を更新する
 

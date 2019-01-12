@@ -2,12 +2,13 @@
 title: 'reportRoot: getSkypeForBusinessDeviceUsageUserCounts'
 description: Skype for Business アプリを使用して接続した組織内のユーザー数について、使用傾向を取得します。 組織内で Skype for Business クライアント アプリをインストールし、使用したデバイスの種類 (Windows、Windows スマートフォン、Android スマートフォン、iPhone、iPad) の詳細も取得できます。
 localization_priority: Normal
-ms.openlocfilehash: 9b4f86079a1ce4a12ce3e480c148c588361bd9b3
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: reports
+ms.openlocfilehash: 4ed52939486348046b2b3c2d1000aa1024e041a6
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27875816"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27968604"
 ---
 # <a name="reportroot-getskypeforbusinessdeviceusageusercounts"></a>reportRoot: getSkypeForBusinessDeviceUsageUserCounts
 

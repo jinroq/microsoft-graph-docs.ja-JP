@@ -3,12 +3,13 @@ title: windowsSpotlightEnablementSettings 列挙型
 description: MDM 管理対象デバイス用の定義済みの既定の検索エンジンを設定するのには IT admind では、します。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 014ebc4aae67af4617a66822e4d5a3cbee7acabc
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 4327f60cb5f5154ed3f1c6754e693b5809c610b3
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27810550"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27923048"
 ---
 # <a name="windowsspotlightenablementsettings-enum-type"></a>windowsSpotlightEnablementSettings 列挙型
 

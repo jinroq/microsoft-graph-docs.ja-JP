@@ -2,12 +2,13 @@
 title: 'reportRoot: getMailboxUsageMailboxCounts'
 description: 組織内のユーザー メールボックスの合計数と、レポート期間中の各日にアクティブなメールボックス数を取得します。 メールボックスは、ユーザーが何らかの電子メールを送信するか、読んだ場合にアクティブとみなされます。
 localization_priority: Normal
-ms.openlocfilehash: 6e62bd5fb8145a2db941048c7b645f76a9f66619
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: reports
+ms.openlocfilehash: 621c3897b7e97043d93852f14909713309164a58
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27804824"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27968870"
 ---
 # <a name="reportroot-getmailboxusagemailboxcounts"></a>reportRoot: getMailboxUsageMailboxCounts
 
