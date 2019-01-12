@@ -3,12 +3,13 @@ title: AndroidManagedStoreAppConfigurationSchema を取得します。
 description: AndroidManagedStoreAppConfigurationSchema オブジェクトのプロパティと関係を参照してください。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: a30d1739239878e0851a6b74df2212b3b6ca46b6
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 7ce9bcdd264db0593349d5ef5421f0cedbe22224
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27874649"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27921844"
 ---
 # <a name="get-androidmanagedstoreappconfigurationschema"></a>AndroidManagedStoreAppConfigurationSchema を取得します。
 

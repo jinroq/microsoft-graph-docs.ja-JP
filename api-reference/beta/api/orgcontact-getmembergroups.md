@@ -2,12 +2,14 @@
 title: 'orgContact: getMemberGroups'
 description: この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「アクセス許可」を参照してください。
 localization_priority: Normal
-ms.openlocfilehash: 77ec78708a7f1647133e85ae521417cf358996b8
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: lleonard-msft
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: 8da8f91a925c7a4fe783ba570a712819b4fff9cf
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27836051"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27915474"
 ---
 # <a name="orgcontact-getmembergroups"></a>orgContact: getMemberGroups
 
@@ -29,16 +31,16 @@ POST /contacts/{id}/getMemberGroups
 
 ```
 ## <a name="request-headers"></a>要求ヘッダー
-| 名前       | 種類 | 説明|
+| 名前       | 型 | 説明|
 |:---------------|:--------|:----------|
 | Authorization  | string  | ベアラー {トークン}。必須。 |
 
 ## <a name="request-body"></a>要求本文
 要求本文で、次のパラメーターを含む JSON オブジェクトを指定します。
 
-| パラメーター    | Type   |説明|
+| パラメーター    | 型   |説明|
 |:---------------|:--------|:----------|
-|securityEnabledOnly|ブール型||
+|securityEnabledOnly|Boolean||
 
 ## <a name="response"></a>応答
 

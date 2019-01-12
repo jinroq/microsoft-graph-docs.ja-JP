@@ -2,12 +2,14 @@
 title: orgContact リソースの種類
 description: 以下は、リソースの JSON 表記です
 localization_priority: Normal
-ms.openlocfilehash: bdf63762a4bb632dccc3578963f42b91d7127fe1
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: lleonard-msft
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: 34f929e1b49c60269845d27bf0d8781a6d17b32c
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27832971"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27918575"
 ---
 # <a name="orgcontact-resource-type"></a>orgContact リソースの種類
 
@@ -28,7 +30,7 @@ ms.locfileid: "27832971"
 
 ## <a name="properties"></a>プロパティ
 
-| プロパティ     | 種類   |説明|
+| プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
 | アドレス                    | [physicalOfficeAddress](physicalofficeaddress.md)            | この組織の連絡先の郵送先住所です。 ここでは、取引先担当者は、1 つの物理アドレスにだけ配置できます。 |
 | companyName                  | String                                                    | この組織の連絡先が所属する会社の名前です。                                                                                                                                                                                                                                                                                                                 |
@@ -42,7 +44,7 @@ ms.locfileid: "27832971"
 | mailNickname                 | String                                                     | 電子メール エイリアス (電子メール アドレスの前に保留中の部分、@ 記号) この組織の連絡先の。                                                                                                                                                                                                                                                                                |
 | onPremisesLastSyncDateTime   | DateTimeOffset                                             | 日付と時刻がこの組織のメンバーが前回との同期、オンプレミス AD。 Timestamp 型は、ISO 8601 形式を使用して日付と時刻の情報を表し、常に UTC 時間です。 たとえば、2014 年 1 月 1 日に UTC 午前 0 時が、これのようになります。: ' 2014-01-01T00:00:00Z' です。   |
 | onPremisesProvisioningErrors |[onPremisesProvisioningError](onpremisesprovisioningerror.md)コレクション       | プロビジョニング エラーがこの組織の連絡先の同期の一覧です。                                                                                                                                                                                                                                                                                                |
-|onPremisesSyncEnabled|ブール型|**true の**場合は、オンプレミス ディレクトリからは、このオブジェクトを同期してください。**false**場合は、このオブジェクトがもともと設置ディレクトリからの同期が不要になった同期され、Exchange にもう**null**の場合は、オンプレミス ディレクトリ (既定値) からこのオブジェクトが同期されていません。|
+|onPremisesSyncEnabled|Boolean|**true の**場合は、オンプレミス ディレクトリからは、このオブジェクトを同期してください。**false**場合は、このオブジェクトがもともと設置ディレクトリからの同期が不要になった同期され、Exchange にもう**null**の場合は、オンプレミス ディレクトリ (既定値) からこのオブジェクトが同期されていません。|
 | phones                       | [phone](phone.md) コレクション                            | この組織の連絡先の電話のリストです。 電話の種類は、モバイル、ビジネス、および businessFax にあります。 各タイプの 1 つだけというものは、コレクション内に存在します。                                                                                                                       |
 | proxyAddresses               | String コレクション                                         | たとえば: ["SMTP: bob@contoso.com"、"smtp: bob@sales.contoso.com"]。 **Any**演算子は、複数値を持つプロパティのフィルター式に必要です。 サポートしています\$フィルターです。                                                                                                                                                                               |
 | surname                      | String                                                     | この組織の連絡先の姓を入力します。                          |

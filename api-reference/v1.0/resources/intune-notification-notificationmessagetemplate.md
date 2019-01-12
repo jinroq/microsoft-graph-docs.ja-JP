@@ -3,12 +3,13 @@ title: notificationMessageTemplate リソース タイプ
 description: " セクションです。 notificationMessageTemplate オブジェクトを使用して、管理者が非準拠のアクションを構成する際に選択する、独自のカスタム通知を作成します。"
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: bf7e15318402a8b2aef24f6a254d12668fda94b4
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 5b9f298da4a4f37cde60ddc93402bf6d08d3f4f3
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27805442"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27912436"
 ---
 # <a name="notificationmessagetemplate-resource-type"></a>notificationMessageTemplate リソース タイプ
 
@@ -26,7 +27,7 @@ ms.locfileid: "27805442"
 |[sendTestMessage action](../api/intune-notification-notificationmessagetemplate-sendtestmessage.md)|なし|既定のロケールで、指定された notificationMessageTemplate を使用して、テスト メッセージを送信します|
 
 ## <a name="properties"></a>プロパティ
-|プロパティ|種類|説明|
+|プロパティ|型|説明|
 |:---|:---|:---|
 |ID|String|エンティティのキー。|
 |lastModifiedDateTime|DateTimeOffset|オブジェクトが最後に変更された DateTime。|

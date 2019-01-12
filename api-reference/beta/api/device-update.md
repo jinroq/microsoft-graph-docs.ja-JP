@@ -1,14 +1,15 @@
 ---
 title: デバイスを更新する
 description: デバイスのプロパティを更新します。
-author: tfitzmac
+author: lleonard-msft
 localization_priority: Normal
-ms.openlocfilehash: 37c9dc2d363ad2b2b6f91bc04879250bab6f0ad2
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: 42471e32eac050b84e36477c1cd48fd06feb4244
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27849568"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27916377"
 ---
 # <a name="update-device"></a>デバイスを更新する
 
@@ -36,7 +37,7 @@ PATCH /devices/{id}
 > 注:要求内の"id"は、"deviceId"プロパティではなく、デバイスの id プロパティです。
 
 ## <a name="request-headers"></a>要求ヘッダー
-| 名前       | 種類 | 説明|
+| 名前       | 型 | 説明|
 |:-----------|:------|:----------|
 | Authorization  | string  | ベアラー {トークン}。必須。 |
 
@@ -44,7 +45,7 @@ PATCH /devices/{id}
 
 要求本文で、更新する[デバイス](../resources/device.md) プロパティの値を指定します。 要求本文に含まれない既存のプロパティは、以前の値のままになるか、他のプロパティ値の変更に基づいて再計算されます。 最適なパフォーマンスを得るためには、変更されていない既存の値を含めないでください。
 
-| プロパティ     | 種類   |説明|
+| プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
 |accountEnabled|ブール値| アカウントが有効な場合は **true**。それ以外の場合は **false**。 |
 |operatingSystem|文字列|デバイス上のオペレーティング システムの種類。|

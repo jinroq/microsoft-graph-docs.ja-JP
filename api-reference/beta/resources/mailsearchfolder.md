@@ -2,12 +2,14 @@
 title: mailSearchFolder リソースの種類
 description: MailSearchFolder は、指定した検索条件に一致するすべてのメール アイテムが含まれているユーザーのメールボックス内の仮想フォルダーです。 mailSearchFolder は、mailFolder から継承します。
 localization_priority: Normal
-ms.openlocfilehash: 62d4d8569977c99690e317a39a43bbc9d9dca3f1
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: angelgolfer-ms
+ms.prod: outlook
+ms.openlocfilehash: 1ba9ce248071e3d806383b4cd7e7550c1e3aa145
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27870393"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27920913"
 ---
 # <a name="mailsearchfolder-resource-type"></a>mailSearchFolder リソースの種類
 
@@ -28,10 +30,10 @@ MailSearchFolder は、指定した検索条件に一致するすべてのメー
 
 ## <a name="properties"></a>プロパティ
 
-| プロパティ | 種類 | 説明 |
+| プロパティ | 型 | 説明 |
 |:---------------|:--------|:----------|
-| 参照して | ブール型 | 検索フォルダーは、REST Api を使用して編集可能かどうかを示します。 |
-| includeNestedFolders | ブール型 | メールボックス フォルダー階層を走査する方法を示します。 `true`詳細検索をする必要があることを意味時に`false`簡易検索を代わりに行う必要があることを意味します。 |
+| 参照して | Boolean | 検索フォルダーは、REST Api を使用して編集可能かどうかを示します。 |
+| includeNestedFolders | Boolean | メールボックス フォルダー階層を走査する方法を示します。 `true`詳細検索をする必要があることを意味時に`false`簡易検索を代わりに行う必要があることを意味します。 |
 | sourceFolderIDs | String コレクション | メールボックス フォルダーをマイニングする必要があります。 |
 | filterQuery | String | メッセージをフィルタ リングする OData クエリです。 |
 

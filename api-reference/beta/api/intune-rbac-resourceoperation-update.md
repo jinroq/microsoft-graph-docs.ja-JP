@@ -3,12 +3,13 @@ title: resourceOperation の更新
 description: resourceOperation オブジェクトのプロパティを更新します。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 41702941a5de5869b13e4b1616448f34fcc6daf1
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: b5d65fb9394ba1bf33ce657941f2807d3dda44a4
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27851794"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27919065"
 ---
 # <a name="update-resourceoperation"></a>resourceOperation の更新
 
@@ -46,14 +47,14 @@ PATCH /deviceManagement/resourceOperations/{resourceOperationId}
 
 次の表に、[resourceOperation](../resources/intune-rbac-resourceoperation.md) の作成時に必要なプロパティを示します。
 
-|プロパティ|種類|説明|
+|プロパティ|型|説明|
 |:---|:---|:---|
 |ID|String|リソース操作のキー。 読み取り専用で、自動生成されます。|
 |resource|String|この操作が所属しているリソースのカテゴリです。|
 |resourceName|String|この操作が実行されるリソースの名前。|
 |actionName|String|この操作が実行するアクションの種類。 actionName は簡潔で、できるだけ少ない単語にする必要があります。|
 |説明|String|リソース操作の説明。 Azure Portal で操作にマウス ポインターを合わせると、その操作の説明がテキストで表示されます。|
-|enabledForScopeValidation|ブール型|ロールの割り当てごとに定義されたスコープのアクセス許可を検証するかどうかを決定します。|
+|enabledForScopeValidation|Boolean|ロールの割り当てごとに定義されたスコープのアクセス許可を検証するかどうかを決定します。|
 
 
 

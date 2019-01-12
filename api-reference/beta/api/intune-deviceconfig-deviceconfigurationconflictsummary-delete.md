@@ -3,12 +3,13 @@ title: DeviceConfigurationConflictSummary を削除します。
 description: DeviceConfigurationConflictSummary を削除します。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 25491d368cb63daf9968415ee0eb15120e11a0a3
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 5fca139f31426e040f492d8987395b9db626ab92
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27882370"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27916706"
 ---
 # <a name="delete-deviceconfigurationconflictsummary"></a>DeviceConfigurationConflictSummary を削除します。
 

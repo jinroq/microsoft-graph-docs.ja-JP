@@ -2,12 +2,13 @@
 title: 'reportRoot: getOneDriveActivityFileCounts'
 description: いずれかの OneDrive アカウントに対してファイル操作を実行した、一意のライセンス ユーザーの数を取得します。
 localization_priority: Normal
-ms.openlocfilehash: 0d88e4922922ff5d399852c5bc842aee66c1a82f
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: reports
+ms.openlocfilehash: 6f7b791a361beca03c65a97a59bbd0c15881924d
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27858479"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27924063"
 ---
 # <a name="reportroot-getonedriveactivityfilecounts"></a>reportRoot: getOneDriveActivityFileCounts
 
@@ -39,7 +40,7 @@ GET /reports/getOneDriveActivityFileCounts(period='{period_value}')
 
 要求 URL に、次のパラメーターと有効な値を指定します。
 
-| パラメーター | Type   | 説明                              |
+| パラメーター | 型   | 説明                              |
 | :-------- | :----- | :--------------------------------------- |
 | period    | 文字列 | レポートを集計する期間の長さを指定します。 {period_value} でサポートされている値は D7、D30、D90、D180 です。 これらの値は、D*n* の形式 (*n* はレポートを集計する日数) に従います。 必須。 |
 

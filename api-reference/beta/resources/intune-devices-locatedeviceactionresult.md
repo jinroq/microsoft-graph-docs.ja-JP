@@ -3,12 +3,13 @@ title: locateDeviceActionResult リソースの種類
 description: デバイスの検索アクションの結果
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 4675da8cff8ae8091d9aa61350d0fc329e7eddee
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: f342f26916b1144a317d02871364e25da2d8c4d7
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27837542"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27912457"
 ---
 # <a name="locatedeviceactionresult-resource-type"></a>locateDeviceActionResult リソースの種類
 
@@ -21,7 +22,7 @@ ms.locfileid: "27837542"
 [deviceActionResult](../resources/intune-devices-deviceactionresult.md) からの継承
 
 ## <a name="properties"></a>プロパティ
-|プロパティ|種類|説明|
+|プロパティ|型|説明|
 |:---|:---|:---|
 |actionName|String|[deviceActionResult](../resources/intune-devices-deviceactionresult.md) から継承されるアクション名|
 |actionState|[actionState](../resources/intune-shared-actionstate.md)|[DeviceActionResult](../resources/intune-devices-deviceactionresult.md)から継承される、アクションの状態です。 可能な値は、`none`、`pending`、`canceled`、`active`、`done`、`failed`、`notSupported` です。|

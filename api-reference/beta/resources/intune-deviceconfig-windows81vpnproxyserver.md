@@ -3,12 +3,13 @@ title: windows81VpnProxyServer リソースの種類
 description: VPN プロキシ サーバーです。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 3b694206fd65bad46c9176a9fc01586f00237bdc
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: d276ee7ac84bfe86c197025c05bf1a119b85e06c
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27834714"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27917965"
 ---
 # <a name="windows81vpnproxyserver-resource-type"></a>windows81VpnProxyServer リソースの種類
 
@@ -21,13 +22,13 @@ VPN プロキシ サーバーです。
 [VpnProxyServer](../resources/intune-deviceconfig-vpnproxyserver.md)から継承します。
 
 ## <a name="properties"></a>プロパティ
-|プロパティ|種類|説明|
+|プロパティ|型|説明|
 |:---|:---|:---|
 |automaticConfigurationScriptUrl|String|プロキシの自動構成スクリプトの url です。 [VpnProxyServer](../resources/intune-deviceconfig-vpnproxyserver.md)から継承されました。|
 |address|String|アドレスです。 [VpnProxyServer](../resources/intune-deviceconfig-vpnproxyserver.md)から継承されました。|
 |port|Int32|ポートです。 有効な値は[vpnProxyServer](../resources/intune-deviceconfig-vpnproxyserver.md)から 0 から 65535 までの継承|
-|automaticallyDetectProxySettings|ブール型|プロキシの設定を自動的に検出します。|
-|bypassProxyServerForLocalAddress|ブール型|ローカル アドレスに対してプロキシ サーバーをバイパスします。|
+|automaticallyDetectProxySettings|Boolean|プロキシの設定を自動的に検出します。|
+|bypassProxyServerForLocalAddress|Boolean|ローカル アドレスに対してプロキシ サーバーをバイパスします。|
 
 ## <a name="relationships"></a>リレーションシップ
 なし

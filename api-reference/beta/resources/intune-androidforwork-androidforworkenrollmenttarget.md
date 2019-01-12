@@ -3,12 +3,13 @@ title: androidForWorkEnrollmentTarget 列挙型
 description: アカウントの種類を対象とする作業のデバイス管理のためのアプリ
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: ec9ba5522871821bd84e7c3c8399dc3d9888b962
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: aaea4ad4f1c1106cecafcf8db4cdb6d3cdbc71cd
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27852382"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27918064"
 ---
 # <a name="androidforworkenrollmenttarget-enum-type"></a>androidForWorkEnrollmentTarget 列挙型
 

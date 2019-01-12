@@ -3,12 +3,13 @@ title: 'イベント: 辞退'
 description: ユーザーの予定表で指定したイベントへの招待を辞退します。
 author: angelgolfer-ms
 localization_priority: Normal
-ms.openlocfilehash: 218ca79b05507fc63ba6f45e2fcb5dd4a0835361
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: outlook
+ms.openlocfilehash: b59d6717d51dc2f72e49c8e4f971f54950674bc6
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27866956"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27916501"
 ---
 # <a name="event-decline"></a>イベント: 辞退
 
@@ -50,7 +51,7 @@ POST /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{
 
 ## <a name="request-headers"></a>要求ヘッダー
 
-| 名前       | 種類 | 説明|
+| 名前       | 型 | 説明|
 |:---------------|:--------|:----------|
 | Authorization  | string  | ベアラー {トークン}。必須。 |
 | Content-Type | string  | エンティティ本文内のデータの性質です。必須。 |
@@ -59,7 +60,7 @@ POST /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{
 
 要求本文で、次のパラメーターを含む JSON オブジェクトを指定します。
 
-| パラメーター    | Type   |説明|
+| パラメーター    | 型   |説明|
 |:---------------|:--------|:----------|
 |comment|String|応答に含まれるテキスト。省略可。|
 |sendResponse|ブール型|応答が開催者に送信される場合は、`true`。それ以外の場合は、`false`。省略可。既定値は `true` です。|

@@ -1,14 +1,15 @@
 ---
-title: Permissions
+title: アクセス許可
 description: 'マイクロソフト チーム アプリケーション カタログにアプリケーションを発行します。 '
 author: nkramer
 localization_priority: Normal
-ms.openlocfilehash: 7d6ad2d06db89f0f516cfe6a5fa37effe2af4f36
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: microsoft-teams
+ms.openlocfilehash: 7faf5847b78d6221b5167c775def75ae9a2ce629
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27840034"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27911876"
 ---
 # <a name="publish-apps-to-your-organizations-app-catalog"></a>アプリケーションを組織のアプリケーションのカタログに発行します。
 

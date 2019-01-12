@@ -3,12 +3,13 @@ title: deviceManagementPartner の作成
 description: 新しい deviceManagementPartner オブジェクトを作成します。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: f9b3d09c3c22bf13e887a17ef9eb62c8d3a786de
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: a7d90bc5beb9aef5483bccb2827ce637f166ea11
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27866158"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27912653"
 ---
 # <a name="create-devicemanagementpartner"></a>deviceManagementPartner の作成
 
@@ -44,7 +45,7 @@ POST /deviceManagement/deviceManagementPartners
 
 次の表に、deviceManagementPartner の作成時に必要なプロパティを示します。
 
-|プロパティ|種類|説明|
+|プロパティ|型|説明|
 |:---|:---|:---|
 |ID|String|まだ文書化されていません|
 |lastHeartbeatDateTime|DateTimeOffset|管理者が [デバイス管理パートナーに接続] オプションを有効にした後の最終ハートビートのタイムスタンプ|

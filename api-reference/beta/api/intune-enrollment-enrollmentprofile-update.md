@@ -3,12 +3,13 @@ title: EnrollmentProfile を更新します。
 description: EnrollmentProfile オブジェクトのプロパティを更新します。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 9a5628ad6aff7926d4248e76e5203a9419fc1727
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: a642ab15427f29cec3a7535022135f9cc931856e
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27822597"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27924252"
 ---
 # <a name="update-enrollmentprofile"></a>EnrollmentProfile を更新します。
 
@@ -46,14 +47,14 @@ PATCH /deviceManagement/depOnboardingSettings/{depOnboardingSettingId}/enrollmen
 
 [EnrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)を作成するときに必要なプロパティを次の表に示します。
 
-|プロパティ|種類|説明|
+|プロパティ|型|説明|
 |:---|:---|:---|
 |ID|String|オブジェクトの GUID|
 |displayName|String|プロファイルの名前|
 |説明|String|プロファイルの説明|
-|requiresUserAuthentication|ブール型|プロファイルにユーザー認証が必要なかどうかを示します|
+|requiresUserAuthentication|Boolean|プロファイルにユーザー認証が必要なかどうかを示します|
 |configurationEndpointUrl|String|登録に使用するエンドポイントの url を構成|
-|enableAuthenticationViaCompanyPortal|ブール型|アップルらくらく企業ポータルではなくを使用して認証することを示します。|
+|enableAuthenticationViaCompanyPortal|Boolean|アップルらくらく企業ポータルではなくを使用して認証することを示します。|
 
 
 

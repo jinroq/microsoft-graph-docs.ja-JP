@@ -3,12 +3,13 @@ title: '呼び出す: 転送'
 description: アクティブな呼び出しを転送します。
 author: VinodRavichandran
 localization_priority: Normal
-ms.openlocfilehash: 5e1a26a1b3da1af8666d8fc5bcbba619c9fad97b
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: microsoft-teams
+ms.openlocfilehash: 34ddf14ae7a49aa8a0aeae1c1bc98b8a79c16384
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27824900"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27921613"
 ---
 # <a name="call-transfer"></a>呼び出す: 転送
 
@@ -40,7 +41,7 @@ POST /applications/{id}/calls/{id}/transfer
 ## <a name="request-body"></a>要求本文
 要求本文で、次のパラメーターを含む JSON オブジェクトを指定します。
 
-| パラメーター      | Type    |説明|
+| パラメーター      | 型    |説明|
 |:---------------|:--------|:----------|
 |transferTarget|[invitationParticipantInfo](../resources/invitationparticipantinfo.md)|転送の対象である構成要素です。|
 |clientContext|String|クライアントのコンテキスト。|

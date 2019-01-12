@@ -2,12 +2,14 @@
 title: domainDnsRecord リソースの種類
 description: テナント内の各ドメインのドメインは、Microsoft Online Services で使用できるようにするドメインの DNS ゾーン ファイルを DNS レコードを追加する必要があります。 **DomainDnsRecord**エンティティを使用して、このような DNS レコードを表示します。 DomainDnsCnameRecord、DomainDnsMxRecord、DomainDnsSrvRecord および DomainDnsSrvRecord のエンティティの基本エンティティです。
 localization_priority: Normal
-ms.openlocfilehash: 30c5f63f4ecac2c716f7884ccf82fd129125c8b1
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: lleonard-msft
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: ce154f97757ad7900388986f9809007acb516c4a
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27822345"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27915628"
 ---
 # <a name="domaindnsrecord-resource-type"></a>domainDnsRecord リソースの種類
 
@@ -17,7 +19,7 @@ ms.locfileid: "27822345"
 このリソースへの直接クエリはサポートされていません。ドメイン サービス レコードのクエリを実行する方法の詳細については、[ドメイン](domain.md)のトピックを参照してください。
 
 ## <a name="properties"></a>プロパティ
-| プロパティ     | 種類   |説明|
+| プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
 |ID|String| このエンティティに割り当てられた一意の識別子。null 許容ではありません。読み取り専用です。|
 |isOptional|Boolean| False の場合、このレコードは Microsoft オンライン サービスでドメインを正しく操作するために、DNS ホストで顧客によって構成されている必要があります。 |

@@ -3,12 +3,13 @@ title: deviceManagementExchangeConnector リソースの種類
 description: Exchange 環境との接続を表すエンティティです。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: db632a46b1c7154bf973eb88dabb122d11534e9a
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 98bb0d065b773d91ed41da1d3c624eb558f663b7
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27804992"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27913444"
 ---
 # <a name="devicemanagementexchangeconnector-resource-type"></a>deviceManagementExchangeConnector リソースの種類
 
@@ -28,7 +29,7 @@ Exchange 環境との接続を表すエンティティです。
 |[同期アクション](../api/intune-onboarding-devicemanagementexchangeconnector-sync.md)|なし|まだ文書化されていません|
 
 ## <a name="properties"></a>プロパティ
-|プロパティ|種類|説明|
+|プロパティ|型|説明|
 |:---|:---|:---|
 |ID|String|まだ文書化されていません|
 |lastSyncDateTime|DateTimeOffset|Exchange Connector の最終同期日時|

@@ -2,12 +2,14 @@
 title: meetingTimeSuggestionsResult リソースの種類
 description: 会議の提案がある場合にはそのコレクションを、ない場合にはその理由を示します。
 localization_priority: Normal
-ms.openlocfilehash: 85a0c3ade54204cb78957e81325869197f403c5d
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: VinodRavichandran
+ms.prod: microsoft-teams
+ms.openlocfilehash: ed3af37ba48a48f3bc864dc8d9ad67e729999398
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27823696"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27914186"
 ---
 # <a name="meetingtimesuggestionsresult-resource-type"></a>meetingTimeSuggestionsResult リソースの種類
 
@@ -43,7 +45,7 @@ ms.locfileid: "27823696"
 
 ```
 ## <a name="properties"></a>プロパティ
-| プロパティ     | 種類   |説明|
+| プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
 |emptySuggestionsReason|String|会議提案が 1 つも返されない理由。 可能な値: `attendeesUnavailable`、 `attendeesUnavailableOrUnknown`、 `locationsUnavailable`、 `organizerUnavailable`、または`unknown`。 **MeetingTimeSuggestions**プロパティは、会議の提案を含める場合、このプロパティは空の文字列をします。|
 |meetingTimeSuggestions|[meetingTimeSuggestion](meetingtimesuggestion.md) コレクション|会議提案の配列。|

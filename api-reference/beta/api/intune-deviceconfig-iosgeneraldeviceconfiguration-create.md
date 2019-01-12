@@ -3,12 +3,13 @@ title: Create iosGeneralDeviceConfiguration
 description: 新しい iosGeneralDeviceConfiguration オブジェクトを作成します。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 5345fd88837726a0275e0a32e0c7894300cfe6a3
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: d80dd2be597965ae89065c1e2c92316c7672537e
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27882475"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27917203"
 ---
 # <a name="create-iosgeneraldeviceconfiguration"></a>Create iosGeneralDeviceConfiguration
 
@@ -47,12 +48,12 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 
 次の表に、iosGeneralDeviceConfiguration の作成時に必要なプロパティを示します。
 
-|プロパティ|種類|説明|
+|プロパティ|型|説明|
 |:---|:---|:---|
 |ID|String|エンティティのキー。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |lastModifiedDateTime|DateTimeOffset|オブジェクトが最後に変更された DateTime。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |roleScopeTagIds|String コレクション|このエンティティ インスタンスのスコープのタグのリストです。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
-|supportsScopeTags|ブール型|デバイスの構成を基になるスコープのタグの割り当てをサポートしているかどうかを示します。 この値が false であり、エンティティをスコープ指定されたユーザーには表示されませんがある場合、ScopeTags プロパティに割り当てることは許可されていません。 これは、Silverlight で作成されたレガシ ポリシーに対して発生し、削除して、Azure ポータル内のポリシーを再作成することで解決できます。 このプロパティは読み取りのみ可能です。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
+|supportsScopeTags|Boolean|デバイスの構成を基になるスコープのタグの割り当てをサポートしているかどうかを示します。 この値が false であり、エンティティをスコープ指定されたユーザーには表示されませんがある場合、ScopeTags プロパティに割り当てることは許可されていません。 これは、Silverlight で作成されたレガシ ポリシーに対して発生し、削除して、Azure ポータル内のポリシーを再作成することで解決できます。 このプロパティは読み取りのみ可能です。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |createdDateTime|DateTimeOffset|オブジェクトが作成された DateTime。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |説明|String|デバイス構成について管理者が提供した説明。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |displayName|String|デバイス構成について管理者が指定した名前。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
@@ -189,18 +190,18 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 |voiceDialingBlocked|Boolean|音声ダイヤルをブロックするかどうかを示します。|
 |wallpaperBlockModification|Boolean|監視対象デバイスでの壁紙の変更を許可するかどうかを示します (iOS 9.0 以降)。|
 |wiFiConnectOnlyToConfiguredNetworks|Boolean|デバイスが監視モードのときに、構成プロファイルからの Wi-Fi ネットワークのみを使用するようデバイスに強制するかどうかを示します。|
-|classroomForceRequestPermissionToLeaveClasses|ブール型|かどうか、受講者用の教室を使用してアンマネージのコースに登録されているアクセス許可を要求、教師コース (iOS 11.3 とそれ以降) のままにしようとしていますを示します。|
-|keychainBlockCloudSync|ブール型|ICloud キーチェーンの同期をブロックするかどうかを示します。|
-|pkiBlockOTAUpdates|ブール型|地上の PKI の更新プログラムがブロックされているかどうかを示します。 False の場合、CRL および OCSP のチェック (iOS 7.0 およびそれ以降) は無効に、この制限を設定します。|
-|privacyForceLimitAdTracking|ブール型|広告の追跡が限られたかどうかを示します。(iOS から 7.0 およびそれ以降)。|
-|enterpriseBookBlockBackup|ブール型|企業がバックアップを予約するかどうかがブロックされていることを示します。|
-|enterpriseBookBlockMetadataSync|ブール型|エンタープライズ帳に関する注意事項を示し、同期がブロックされているかどうかを示します。|
-|airPrintBlocked|ブール型|AirPrint がブロックされている (iOS 11.0 とそれ以降) であるかどうかを示します。|
-|airPrintBlockCredentialsStorage|ブール型|ユーザー名とパスワードの Airprint のキーチェーンの記憶域がブロックされている (iOS 11.0 とそれ以降) かどうかを示します。|
-|airPrintForceTrustedTLS|ブール型|信頼された証明書が TLS 印刷通信 (iOS 11.0 とそれ以降) に必要なかどうかを示します。|
-|airPrintBlockiBeaconDiscovery|ブール型|AirPrint プリンターの検出を iBeacon がブロックされているかどうかを示します。 これには、ネットワーク トラフィック (iOS 11.0 とそれ以降) のフィッシング詐欺からの見かけ上の AirPrint Bluetooth ビーコンができなくなります。|
-|blockSystemAppRemoval|ブール型|コールを管理デバイス (iOS 11.0 とそれ以降) で、デバイスからシステムのアプリケーションの削除がブロックされているかどうかを示します。|
-|vpnBlockCreation|ブール型|VPN 構成の作成がブロックされている (iOS 11.0 とそれ以降) であるかどうかを示します。|
+|classroomForceRequestPermissionToLeaveClasses|Boolean|かどうか、受講者用の教室を使用してアンマネージのコースに登録されているアクセス許可を要求、教師コース (iOS 11.3 とそれ以降) のままにしようとしていますを示します。|
+|keychainBlockCloudSync|Boolean|ICloud キーチェーンの同期をブロックするかどうかを示します。|
+|pkiBlockOTAUpdates|Boolean|地上の PKI の更新プログラムがブロックされているかどうかを示します。 False の場合、CRL および OCSP のチェック (iOS 7.0 およびそれ以降) は無効に、この制限を設定します。|
+|privacyForceLimitAdTracking|Boolean|広告の追跡が限られたかどうかを示します。(iOS から 7.0 およびそれ以降)。|
+|enterpriseBookBlockBackup|Boolean|企業がバックアップを予約するかどうかがブロックされていることを示します。|
+|enterpriseBookBlockMetadataSync|Boolean|エンタープライズ帳に関する注意事項を示し、同期がブロックされているかどうかを示します。|
+|airPrintBlocked|Boolean|AirPrint がブロックされている (iOS 11.0 とそれ以降) であるかどうかを示します。|
+|airPrintBlockCredentialsStorage|Boolean|ユーザー名とパスワードの Airprint のキーチェーンの記憶域がブロックされている (iOS 11.0 とそれ以降) かどうかを示します。|
+|airPrintForceTrustedTLS|Boolean|信頼された証明書が TLS 印刷通信 (iOS 11.0 とそれ以降) に必要なかどうかを示します。|
+|airPrintBlockiBeaconDiscovery|Boolean|AirPrint プリンターの検出を iBeacon がブロックされているかどうかを示します。 これには、ネットワーク トラフィック (iOS 11.0 とそれ以降) のフィッシング詐欺からの見かけ上の AirPrint Bluetooth ビーコンができなくなります。|
+|blockSystemAppRemoval|Boolean|コールを管理デバイス (iOS 11.0 とそれ以降) で、デバイスからシステムのアプリケーションの削除がブロックされているかどうかを示します。|
+|vpnBlockCreation|Boolean|VPN 構成の作成がブロックされている (iOS 11.0 とそれ以降) であるかどうかを示します。|
 
 
 

@@ -3,12 +3,13 @@ title: managedApp リソースの種類
 description: Intune アプリ保護ポリシーで管理できるアプリの、プロパティと継承済みプロパティを含む抽象クラス。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 32094696c2e2c84c9c40cfb1c1c3df525159f4ed
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 526e7edef9a4661a0be93b83acc9faa78871c344
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27835736"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27917595"
 ---
 # <a name="managedapp-resource-type"></a>managedApp リソースの種類
 
@@ -25,7 +26,7 @@ Intune アプリ保護ポリシーで管理できるアプリの、プロパテ�
 |[managedApp の取得](../api/intune-apps-managedapp-get.md)|[managedApp](../resources/intune-apps-managedapp.md)|[managedApp](../resources/intune-apps-managedapp.md) オブジェクトのプロパティとリレーションシップを読み取ります。|
 
 ## <a name="properties"></a>プロパティ
-|プロパティ|種類|説明|
+|プロパティ|型|説明|
 |:---|:---|:---|
 |ID|String|エンティティのキー。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|
 |displayName|String|管理者が提供またはインポートしたアプリのタイトル。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|

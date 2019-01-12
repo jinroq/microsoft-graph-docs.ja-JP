@@ -3,12 +3,13 @@ title: 'user: reminderView'
 description: '指定した開始時刻と終了時刻内の予定表のアラームの一覧を返します。 '
 author: dkershaw10
 localization_priority: Normal
-ms.openlocfilehash: 4edcc4a6a46cbdee1233ad7496fa231bba8bfd27
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: 3fb0283aaae4f814f06b59a8a6ad6183cc18fec1
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27886080"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27918211"
 ---
 # <a name="user-reminderview"></a>user: reminderView
 
@@ -34,7 +35,7 @@ GET /users/{id | userPrincipalName}/reminderView(startDateTime=startDateTime-val
 ## <a name="function-parameters"></a>関数パラメーター
 要求 URL に、次の関数パラメーターを値で指定します。
 
-| パラメーター    | Type   |説明|
+| パラメーター    | 型   |説明|
 |:---------------|:--------|:----------|
 |startDateTime|String|アラームを設定するイベントの開始日時です。値は ISO 8601 形式で表されます。例: "2015-11-08T19:00:00.0000000"。|
 |endDateTime|String|アラームを設定するイベントの終了日時です。値は ISO 8601 形式で表されます。例: "2015-11-08T20:00:00.0000000"。|

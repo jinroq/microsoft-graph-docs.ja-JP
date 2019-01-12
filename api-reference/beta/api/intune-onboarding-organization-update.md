@@ -3,12 +3,13 @@ title: 組織を更新する
 description: organization オブジェクトのプロパティを更新します。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 67ce9fd0181c3f60f3615a29313e2da642e697ab
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 4adff643537c8497fe4bf9c0a5ee5633e80df1df
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27862147"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27925344"
 ---
 # <a name="update-organization"></a>組織を更新する
 
@@ -46,7 +47,7 @@ PATCH /organization/{organizationId}
 
 次の表に、[organization](../resources/intune-onboarding-organization.md) の作成時に必要なプロパティを示します。
 
-|プロパティ|種類|説明|
+|プロパティ|型|説明|
 |:---|:---|:---|
 |ID|String|オブジェクトの GUID。|
 |mobileDeviceManagementAuthority|[mdmAuthority](../resources/intune-onboarding-mdmauthority.md)|モバイル デバイス管理権限。 可能な値は、`unknown`、`intune`、`sccm`、`office365` です。|

@@ -3,12 +3,13 @@ title: イベントを作成する
 description: この API を使用して、新しいイベントを作成します。
 author: dkershaw10
 localization_priority: Normal
-ms.openlocfilehash: 4b7e0803b6eb59a2446da658815c19d08256587b
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: groups
+ms.openlocfilehash: 83d41f083a19ce813205dccc0056b2de16935541
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27883910"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27915180"
 ---
 # <a name="create-event"></a>イベントを作成する
 

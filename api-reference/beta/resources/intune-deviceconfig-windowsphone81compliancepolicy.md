@@ -3,12 +3,13 @@ title: windowsPhone81CompliancePolicy リソースの種類
 description: このクラスには、Windows 8.1 Mobile のコンプライアンス設定が含まれています。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 7c590b17865cab6ca745582947431ecbd2b7fed0
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: f800780560050ace543627b7348869b9daac0f94
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27865618"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27912506"
 ---
 # <a name="windowsphone81compliancepolicy-resource-type"></a>windowsPhone81CompliancePolicy リソースの種類
 
@@ -30,7 +31,7 @@ ms.locfileid: "27865618"
 |[windowsPhone81CompliancePolicy の更新](../api/intune-deviceconfig-windowsphone81compliancepolicy-update.md)|[windowsPhone81CompliancePolicy](../resources/intune-deviceconfig-windowsphone81compliancepolicy.md)|[windowsPhone81CompliancePolicy](../resources/intune-deviceconfig-windowsphone81compliancepolicy.md) オブジェクトのプロパティを更新します。|
 
 ## <a name="properties"></a>プロパティ
-|プロパティ|種類|説明|
+|プロパティ|型|説明|
 |:---|:---|:---|
 |roleScopeTagIds|String コレクション|このエンティティ インスタンスのスコープのタグのリストです。 [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md) から継承します|
 |id|String|エンティティのキー。 [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md) から継承します|

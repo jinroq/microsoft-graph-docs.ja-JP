@@ -2,12 +2,14 @@
 title: 'メッセージ: createReplyAll'
 description: 'コメントを含めるか、メッセージのプロパティを更新するすべての返信メッセージの下書きを作成します。 '
 localization_priority: Normal
-ms.openlocfilehash: 2d56f79b415232954434841d89cbdc95bafc1c6b
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: angelgolfer-ms
+ms.prod: outlook
+ms.openlocfilehash: 7f0b2631f02a94a7627e96e24308b135d70d20e1
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27816927"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27922173"
 ---
 # <a name="message-createreplyall"></a>メッセージ: createReplyAll
 
@@ -40,7 +42,7 @@ POST /me/mailFolders/{id}/messages/{id}/createReplyAll
 POST /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/createReplyAll
 ```
 ## <a name="request-headers"></a>要求ヘッダー
-| 名前       | 種類 | 説明|
+| 名前       | 型 | 説明|
 |:---------------|:--------|:----------|
 | Authorization  | string  | ベアラー {トークン}。必須。 |
 | Content-Type | string  | エンティティ本文内のデータの性質です。必須。 |
@@ -48,7 +50,7 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/createReplyA
 ## <a name="request-body"></a>要求本文
 要求本文で、次のパラメーターを含む JSON オブジェクトを指定します。
 
-| パラメーター    | Type   |説明|
+| パラメーター    | 型   |説明|
 |:---------------|:--------|:----------|
 |comment|String|含めるコメントです。空の文字列にすることができます。|
 |message|[message](../resources/message.md)|全員に返信メッセージで更新する書き込み可能なプロパティです。|

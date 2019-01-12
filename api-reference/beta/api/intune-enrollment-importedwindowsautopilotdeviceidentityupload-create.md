@@ -3,12 +3,13 @@ title: ImportedWindowsAutopilotDeviceIdentityUpload を作成します。
 description: 新しい importedWindowsAutopilotDeviceIdentityUpload オブジェクトを作成します。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 31c9aed97f5b0b4505e348db85db798fa9fa9bd5
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 414191348a6654e59a81c8e46c48bb3e7728a303
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27851822"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27913891"
 ---
 # <a name="create-importedwindowsautopilotdeviceidentityupload"></a>ImportedWindowsAutopilotDeviceIdentityUpload を作成します。
 
@@ -46,7 +47,7 @@ POST /deviceManagement/importedWindowsAutopilotDeviceIdentityUploads
 
 次の表は、importedWindowsAutopilotDeviceIdentityUpload を作成するときに必要なプロパティを示します。
 
-|プロパティ|種類|説明|
+|プロパティ|型|説明|
 |:---|:---|:---|
 |ID|String|オブジェクトの GUID|
 |createdDateTimeUtc|DateTimeOffset|日時を設定すると、エンティティを作成します。|

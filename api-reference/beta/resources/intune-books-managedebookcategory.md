@@ -3,12 +3,13 @@ title: managedEBookCategory リソースの種類
 description: Intune eBook の分類項目を 1 つのプロパティが含まれています。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: b415554d47c33f06a917c10327dad983db762578
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 7f4136fbfb93db6e7e9dee4a81dcc44a613a7226
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27894188"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27915957"
 ---
 # <a name="managedebookcategory-resource-type"></a>managedEBookCategory リソースの種類
 
@@ -27,7 +28,7 @@ Intune eBook の分類項目を 1 つのプロパティが含まれています�
 |[ManagedEBookCategory を更新します。](../api/intune-books-managedebookcategory-update.md)|[managedEBookCategory](../resources/intune-books-managedebookcategory.md)|[ManagedEBookCategory](../resources/intune-books-managedebookcategory.md)オブジェクトのプロパティを更新します。|
 
 ## <a name="properties"></a>プロパティ
-|プロパティ|種類|説明|
+|プロパティ|型|説明|
 |:---|:---|:---|
 |ID|String|エンティティのキー。|
 |displayName|String|EBook カテゴリの名前です。|

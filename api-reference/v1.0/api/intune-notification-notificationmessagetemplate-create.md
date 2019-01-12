@@ -3,12 +3,13 @@ title: notificationMessageTemplate の作成
 description: 新しい notificationMessageTemplate オブジェクトを作成します。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: f97f16298c48b787977330781e3aa95e68e4d28a
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 4d7e8fb5f7e718ec2ec1c0a0f5b35241ef408aaf
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27861771"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27912352"
 ---
 # <a name="create-notificationmessagetemplate"></a>notificationMessageTemplate の作成
 
@@ -44,7 +45,7 @@ POST /deviceManagement/notificationMessageTemplates
 
 次の表に、notificationMessageTemplate の作成時に必要なプロパティを示します。
 
-|プロパティ|種類|説明|
+|プロパティ|型|説明|
 |:---|:---|:---|
 |ID|String|エンティティのキー。|
 |lastModifiedDateTime|DateTimeOffset|オブジェクトが最後に変更された DateTime。|

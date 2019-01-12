@@ -2,12 +2,14 @@
 title: 上司を割り当てる
 description: この API を使用して、ユーザーの上司を割り当てます。
 localization_priority: Normal
-ms.openlocfilehash: 7391cef6b632df00a65f683855a5d088f69a43bb
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: dkershaw10
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: 770fad522e505abbd9f689540e6a28e875ba063d
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27811957"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27912072"
 ---
 # <a name="assign-a-manager"></a>上司を割り当てる
 
@@ -31,7 +33,7 @@ ms.locfileid: "27811957"
 PUT /users/{id}/manager/$ref
 ```
 ## <a name="request-headers"></a>要求ヘッダー
-| 名前       | 種類 | 説明|
+| 名前       | 型 | 説明|
 |:---------------|:--------|:----------|
 | Authorization  | string  | ベアラー {トークン}。必須。 |
 

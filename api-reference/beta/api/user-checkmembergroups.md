@@ -3,12 +3,13 @@ title: checkMemberGroups
 description: グループの指定されたリスト内のメンバーシップを確認します。 リストから先のグループを返します。
 author: dkershaw10
 localization_priority: Normal
-ms.openlocfilehash: 1c9f4da03eee8cf0bc5f1ae15a0886aa42267c7d
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: 18ae4e88eb9f80255ee8cda2ce0c353be9b28580
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27845236"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27923608"
 ---
 # <a name="checkmembergroups"></a>checkMemberGroups
 
@@ -49,7 +50,7 @@ POST /users/{id | userPrincipalName}/checkMemberGroups
 
 要求本文で、次のパラメーターを含む JSON オブジェクトを指定します。
 
-| パラメーター | Type   | 説明           |
+| パラメーター | 型   | 説明           |
 | :-------- | :----- | :-------------------- |
 | groupIds  | String | グループ ID の配列 |
 

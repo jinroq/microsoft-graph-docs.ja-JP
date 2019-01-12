@@ -3,12 +3,13 @@ title: DeviceManagementScript を作成します。
 description: 新しい deviceManagementScript オブジェクトを作成します。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 4a9f62c4e67b73dd5dc37e6cd5c46c2e6a4ad396
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 3ef3f9436de79b5839912a44915238267f0c26dd
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27838032"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27924028"
 ---
 # <a name="create-devicemanagementscript"></a>DeviceManagementScript を作成します。
 
@@ -46,7 +47,7 @@ POST /deviceManagement/deviceManagementScripts
 
 次の表は、deviceManagementScript を作成するときに必要なプロパティを示します。
 
-|プロパティ|種類|説明|
+|プロパティ|型|説明|
 |:---|:---|:---|
 |ID|String|デバイス管理スクリプト用の一意の識別子。|
 |displayName|String|デバイスの管理スクリプトの名前です。|
@@ -56,7 +57,7 @@ POST /deviceManagement/deviceManagementScripts
 |createdDateTime|DateTimeOffset|デバイス管理スクリプトが作成された日時です。|
 |lastModifiedDateTime|DateTimeOffset|日付と時刻、デバイス管理のスクリプトが最後に修正されました。|
 |runAsAccount|[runAsAccountType](../resources/intune-shared-runasaccounttype.md)|デバイス管理のスクリプトで実行される実行コンテキストの種類を示します。 使用可能な値は、`system`、`user` です。|
-|enforceSignatureCheck|ブール型|スクリプト署名をチェックする必要があるかどうかを指定します。|
+|enforceSignatureCheck|Boolean|スクリプト署名をチェックする必要があるかどうかを指定します。|
 |fileName|String|スクリプト ファイルの名前です。|
 
 

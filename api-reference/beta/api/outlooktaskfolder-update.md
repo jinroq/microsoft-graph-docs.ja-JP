@@ -3,12 +3,13 @@ title: Outlooktaskfolder を更新します。
 description: Outlook の仕事フォルダーの書き込み可能なプロパティを更新します。
 author: angelgolfer-ms
 localization_priority: Normal
-ms.openlocfilehash: 06dd21cf9da2fab8c0472ac29f477b6a40d2df5c
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: outlook
+ms.openlocfilehash: af86b85df5529f7f8c15ce2e4977d4b0fe2f00ad
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27874355"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27925680"
 ---
 # <a name="update-outlooktaskfolder"></a>Outlooktaskfolder を更新します。
 
@@ -40,7 +41,7 @@ PATCH /users/{id|userPrincipalName}/outlook/taskGroups/{id}/taskFolders/{id}
 ## <a name="request-body"></a>要求本文
 要求本文で、更新する関連フィールドの値を指定します。要求本文に含まれない既存のプロパティは、以前の値のままになるか、他のプロパティ値の変化に基づいて再計算されます。最適なパフォーマンスを得るためには、変更されていない既存の値を含めないでください。
 
-| プロパティ     | 種類   |説明|
+| プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
 |名前|String|タスク フォルダーの名前。|
 

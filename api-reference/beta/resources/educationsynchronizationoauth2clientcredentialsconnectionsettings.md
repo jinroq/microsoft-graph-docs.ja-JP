@@ -2,12 +2,14 @@
 title: educationSynchronizationOAuth2ClientCredentialsConnectionSettings リソース
 description: OAuth2 クライアントの資格情報の付与は、データ プロバイダーへの接続に使用するが、プロファイルを設定するのにはこの接続の設定の種類を使用してください。
 localization_priority: Normal
-ms.openlocfilehash: 49a0a267ddb3a8f3a954888679806ea7913e24f0
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: mmast-msft
+ms.prod: education
+ms.openlocfilehash: 8976c3a3a6088abd88cf70182040d4b3a6cc3f7d
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27822583"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27912891"
 ---
 # <a name="educationsynchronizationoauth2clientcredentialsconnectionsettings-resource"></a>educationSynchronizationOAuth2ClientCredentialsConnectionSettings リソース
 
@@ -19,7 +21,7 @@ ms.locfileid: "27822583"
 
 ## <a name="properties"></a>プロパティ
 
-| プロパティ | 種類 | 説明 |
+| プロパティ | 型 | 説明 |
 |:-|:-|:-|
 | **tokenUrl** | String | データ プロバイダーのアクセス トークンを取得する URL です。 |
 | **scope** | String | [アクセス要求のスコープ](https://tools.ietf.org/html/rfc6749#section-3.3)です。 |

@@ -3,12 +3,13 @@ title: deviceComplianceUserStatus リソースの種類
 description: まだ文書化されていません
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 2c312912c70f90063af3ef2e4512f232bb0be999
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 1cc7118ff2397e5e64e26ecc97047746bc1bd85f
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27863428"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27911757"
 ---
 # <a name="devicecomplianceuserstatus-resource-type"></a>deviceComplianceUserStatus リソースの種類
 
@@ -27,7 +28,7 @@ ms.locfileid: "27863428"
 |[deviceComplianceUserStatus の更新](../api/intune-deviceconfig-devicecomplianceuserstatus-update.md)|[deviceComplianceUserStatus](../resources/intune-deviceconfig-devicecomplianceuserstatus.md)|[deviceComplianceUserStatus](../resources/intune-deviceconfig-devicecomplianceuserstatus.md) オブジェクトのプロパティを更新します。|
 
 ## <a name="properties"></a>プロパティ
-|プロパティ|種類|説明|
+|プロパティ|型|説明|
 |:---|:---|:---|
 |ID|String|エンティティのキー。|
 |userDisplayName|String|DevicePolicyStatus のユーザー名。|

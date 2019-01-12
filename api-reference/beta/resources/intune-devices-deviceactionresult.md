@@ -3,12 +3,13 @@ title: deviceActionResult リソースの種類
 description: デバイス アクションの結果
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 051d5f381e27e4901f7e2fb9280cea3dc0bb71c4
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 22fd8e1bc338191bba54ba9f655f03899054ae86
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27806105"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27912303"
 ---
 # <a name="deviceactionresult-resource-type"></a>deviceActionResult リソースの種類
 
@@ -18,7 +19,7 @@ ms.locfileid: "27806105"
 
 デバイス アクションの結果
 ## <a name="properties"></a>プロパティ
-|プロパティ|種類|説明|
+|プロパティ|型|説明|
 |:---|:---|:---|
 |actionName|文字列型 (String)|アクション名|
 |actionState|[actionState](../resources/intune-shared-actionstate.md)|アクションの状態です。 可能な値は、`none`、`pending`、`canceled`、`active`、`done`、`failed`、`notSupported` です。|

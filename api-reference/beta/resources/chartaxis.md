@@ -3,12 +3,13 @@ title: ChartAxis リソースの種類
 description: グラフの 1 つの軸を表します。
 author: lumine2008
 localization_priority: Normal
-ms.openlocfilehash: 077afe6a384b77c9b4bb3b1bab6a0e257a9175a7
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: excel
+ms.openlocfilehash: c6344f2bbb102e2e2402dba267538cb46d4c0fbe
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27842722"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27914193"
 ---
 # <a name="chartaxis-resource-type"></a>ChartAxis リソースの種類
 
@@ -25,7 +26,7 @@ ms.locfileid: "27842722"
 |[Update](../api/chartaxis-update.md) | [ChartAxis](chartaxis.md)   |ChartAxis オブジェクトを更新します。 |
 
 ## <a name="properties"></a>プロパティ
-| プロパティ     | 種類   |説明|
+| プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
 |majorUnit|object|2 つの大きい目盛の間隔を表します。数値の値または空の文字列を設定できます。戻り値は常に数値です。|
 |maximum|object|数値軸の最大値を表します。数値の値または空の文字列を設定できます (軸の値が自動の場合)。戻り値は常に数値です。|

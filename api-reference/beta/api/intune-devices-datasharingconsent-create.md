@@ -3,12 +3,13 @@ title: DataSharingConsent を作成します。
 description: 新しい dataSharingConsent オブジェクトを作成します。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: cf45db12a9876d9be89d20fa3328e89eeea82013
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 83d329072b6e18f8ecbb745769e872c76fdae86b
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27862287"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27919079"
 ---
 # <a name="create-datasharingconsent"></a>DataSharingConsent を作成します。
 
@@ -46,12 +47,12 @@ POST /deviceManagement/dataSharingConsents
 
 次の表は、dataSharingConsent を作成するときに必要なプロパティを示します。
 
-|プロパティ|種類|説明|
+|プロパティ|型|説明|
 |:---|:---|:---|
 |ID|String|データ共有同意 Id|
 |serviceDisplayName|String|サービス作業の流れの表示名|
 |termsUrl|String|同意の共有データの TermsUrl|
-|付与|ブール型|同意の共有データに付与されている状態|
+|付与|Boolean|同意の共有データに付与されている状態|
 |grantDateTime|DateTimeOffset|同意は、このアカウントに与えられました。|
 |grantedByUpn|String|このアカウントに許可を付与するユーザーの Upn|
 |grantedByUserId|String|このアカウントに許可を付与するユーザーのユーザー Id|

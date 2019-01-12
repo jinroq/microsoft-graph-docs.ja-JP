@@ -2,12 +2,14 @@
 title: iosVppAppAssignedUserLicense リソースの種類
 description: iOS ボリューム購入プログラムのユーザー ライセンスの割り当て。 このクラスは、作成、削除、更新をサポートしていません。
 localization_priority: Normal
-ms.openlocfilehash: 3217fc338b2f0bb072de19cf0807a718a4998efa
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: tfitzmac
+ms.prod: intune
+ms.openlocfilehash: 9adfe00c4f679bd68e175cb7e4a76c2e605a0f68
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27806896"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27926289"
 ---
 # <a name="iosvppappassigneduserlicense-resource-type"></a>iosVppAppAssignedUserLicense リソースの種類
 
@@ -29,7 +31,7 @@ iOS ボリューム購入プログラムのユーザー ライセンスの割り
 |[IosVppAppAssignedUserLicense を更新します。](../api/intune-apps-iosvppappassigneduserlicense-update.md)|[iosVppAppAssignedUserLicense](../resources/intune-apps-iosvppappassigneduserlicense.md)|[IosVppAppAssignedUserLicense](../resources/intune-apps-iosvppappassigneduserlicense.md)オブジェクトのプロパティを更新します。|
 
 ## <a name="properties"></a>プロパティ
-|プロパティ|種類|説明|
+|プロパティ|型|説明|
 |:---|:---|:---|
 |ID|String|エンティティのキー。 [IosVppAppAssignedLicense](../resources/intune-apps-iosvppappassignedlicense.md)から継承されました。|
 |userEmailAddress|String|ユーザーの電子メール アドレスです。 [IosVppAppAssignedLicense](../resources/intune-apps-iosvppappassignedlicense.md)から継承されました。|

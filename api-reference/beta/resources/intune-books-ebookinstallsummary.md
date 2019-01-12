@@ -3,12 +3,13 @@ title: eBookInstallSummary リソース タイプ
 description: デバイスのブックのインストール要約のプロパティが含まれています。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 41e9752707cfdca974162b097ad4e6fc96b3b43a
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 3d3a5d1ce5c05d0a8c20a79aea2fd3562ab2170c
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27815891"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27915943"
 ---
 # <a name="ebookinstallsummary-resource-type"></a>eBookInstallSummary リソース タイプ
 
@@ -24,7 +25,7 @@ ms.locfileid: "27815891"
 |[Update eBookInstallSummary](../api/intune-books-ebookinstallsummary-update.md)|[eBookInstallSummary](../resources/intune-books-ebookinstallsummary.md)|[eBookInstallSummary](../resources/intune-books-ebookinstallsummary.md) オブジェクトのプロパティを更新します。|
 
 ## <a name="properties"></a>プロパティ
-|プロパティ|種類|説明|
+|プロパティ|型|説明|
 |:---|:---|:---|
 |ID|String|エンティティのキー。|
 |installedDeviceCount|Int32|このブックが正常にインストールされたデバイスの数。|

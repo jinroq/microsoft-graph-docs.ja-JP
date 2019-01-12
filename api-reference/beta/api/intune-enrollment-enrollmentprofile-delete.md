@@ -3,12 +3,13 @@ title: EnrollmentProfile を削除します。
 description: EnrollmentProfile を削除します。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: af058a998d20248ab226e08a281566e2e4a116ed
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 269053b3dc6bf8bd26013a14ce110b2b5dec341f
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27852305"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27913010"
 ---
 # <a name="delete-enrollmentprofile"></a>EnrollmentProfile を削除します。
 

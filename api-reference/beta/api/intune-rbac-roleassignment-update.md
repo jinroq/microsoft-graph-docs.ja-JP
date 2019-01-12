@@ -3,12 +3,13 @@ title: roleAssignment の更新
 description: roleAssignment オブジェクトのプロパティを更新します。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: e4b5cde12d464d2b92f9348445bb793e4114833b
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: f35f7ee957250a546d721a615036f18648d28ff7
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27852018"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27913877"
 ---
 # <a name="update-roleassignment"></a>roleAssignment の更新
 
@@ -46,7 +47,7 @@ PATCH /deviceManagement/roleDefinitions/{roleDefinitionId}/roleAssignments/{role
 
 次の表に、[roleAssignment](../resources/intune-rbac-roleassignment.md) の作成時に必要になるプロパティを示します。
 
-|プロパティ|種類|説明|
+|プロパティ|型|説明|
 |:---|:---|:---|
 |ID|String|エンティティのキー。 これは読み取り専用で、自動生成されます。|
 |displayName|String|ロール割り当ての表示名またはフレンドリ名。|

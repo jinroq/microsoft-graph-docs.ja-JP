@@ -2,12 +2,13 @@
 title: サブスクリプション リソースの種類
 description: サブスクリプションは、Microsoft Graph でデータへの変更に関する通知を受信するクライアント アプリケーションを許可します。 現時点では、サブスクリプションが有効になって次のリソース。
 localization_priority: Priority
-ms.openlocfilehash: b70daca8eb0f7c303173945b3cacf2cf53af56ec
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: piotrci
+ms.openlocfilehash: 7837524f2ce20a24154b84a82537ec6a4149bfe9
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27867012"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27917819"
 ---
 # <a name="subscription-resource-type"></a>サブスクリプション リソースの種類
 
@@ -59,7 +60,7 @@ ms.locfileid: "27867012"
 
 ## <a name="properties"></a>プロパティ
 
-| プロパティ | 種類 | 説明 |
+| プロパティ | 型 | 説明 |
 |:---------|:-----|:------------|
 | changeType | string | 必須。 登録しているリソース内の、通知を上げる変更の種類を示します。 サポートされている値は `created`、`updated`、`deleted` です。 コンマ区切りのリストを使用して複数値を結合できます。<br><br>メモ: ドライブのルート アイテムの通知だけをサポートして、 `updated` changeType です。 ユーザーとグループの通知をサポートして`updated`と`deleted`changeType です。|
 | notificationUrl | 文字列 | 必須。 通知を受信するエンドポイントの URL。 この URL が、HTTPS を使用する必要がありますプロトコルです。 |

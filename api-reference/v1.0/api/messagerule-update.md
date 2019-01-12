@@ -3,12 +3,13 @@ title: ルールを更新する
 description: messageRule オブジェクトの書き込み可能なプロパティを変更し、変更を保存します。
 author: angelgolfer-ms
 localization_priority: Normal
-ms.openlocfilehash: 7f9263b237d27ba1e938e5e6ecbb7ed558f80a9d
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: outlook
+ms.openlocfilehash: db0bd06dfe4ae65e977f5489939178a8eda664f0
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27871287"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27914543"
 ---
 # <a name="update-rule"></a>ルールを更新する
 
@@ -39,7 +40,7 @@ PATCH /users/{id | userPrincipalName}/mailFolders/inbox/messageRules/{id}
 ## <a name="request-body"></a>要求本文
 要求本文で、更新する関連フィールドの値を指定します。要求本文に含まれない既存のプロパティは、以前の値のままになるか、他のプロパティ値の変化に基づいて再計算されます。最適なパフォーマンスを得るためには、変更されていない既存の値を含めないでください。
 
-| プロパティ     | 種類   |説明|
+| プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
 | actions | [messageRuleActions](../resources/messageruleactions.md) | 該当する条件が満たされた場合にメッセージに対して実行されるアクション。 |
 | conditions | [messageRulePredicates](../resources/messagerulepredicates.md) | 該当するルール アクションをトリガーするために満たす必要のある条件。 |

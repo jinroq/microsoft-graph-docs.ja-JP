@@ -2,12 +2,14 @@
 title: bookingSchedulingPolicy リソースの種類
 description: " > **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。"
 localization_priority: Normal
-ms.openlocfilehash: 15f9e0dea22a7cfb5eab437bcc023fe3387bb2ea
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: angelgolfer-ms
+ms.prod: bookings
+ms.openlocfilehash: 039d76b00787c9bf2e4f0bee4eb927a7628a9e76
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27805363"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27914639"
 ---
 # <a name="bookingschedulingpolicy-resource-type"></a>bookingSchedulingPolicy リソースの種類
 
@@ -16,12 +18,12 @@ ms.locfileid: "27805363"
 Microsoft 予約カレンダーで予定を作成する方法を決定するポリシーのセットを表します。
 
 ## <a name="properties"></a>プロパティ
-| プロパティ     | 種類   |説明|
+| プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
-|allowStaffSelection|ブール型|顧客が予約の特定の人を選択できるようにする場合は true です。|
+|allowStaffSelection|Boolean|顧客が予約の特定の人を選択できるようにする場合は true です。|
 |maximumAdvance|Duration|日の事前に、予約が可能な最大数です。 [ISO 8601](https://www.iso.org/iso-8601-date-and-time-format.html)形式に依存します。|
 |minimumLeadTime|Duration|最小限の時間の前にある予約とキャンセル行う必要があります。 [ISO 8601](https://www.iso.org/iso-8601-date-and-time-format.html)形式に依存します。|
-|sendConfirmationsToOwner|ブール型| 予約を作成または変更されたときに電子メール経由でビジネスを通知する場合は true です。 ビジネスの**bookingBusiness**エンティティの**email**プロパティで指定された電子メール アドレスを使用します。 |
+|sendConfirmationsToOwner|Boolean| 予約を作成または変更されたときに電子メール経由でビジネスを通知する場合は true です。 ビジネスの**bookingBusiness**エンティティの**email**プロパティで指定された電子メール アドレスを使用します。 |
 |timeSlotInterval|Duration|[ISO 8601](https://www.iso.org/iso-8601-date-and-time-format.html)形式で表される、各時間帯の期間です。|
 
 ## <a name="json-representation"></a>JSON 表記

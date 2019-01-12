@@ -3,12 +3,13 @@ title: 'Chart: setData'
 description: グラフのソース データをリセットします。
 author: lumine2008
 localization_priority: Normal
-ms.openlocfilehash: 83d74036019ffe1f58e86778859d5123dc3df8c9
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: excel
+ms.openlocfilehash: a92fe8e0c43b5dff4a406efbe0c2238ff0cab0ba
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27883756"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27921662"
 ---
 # <a name="chart-setdata"></a>Chart: setData
 
@@ -39,7 +40,7 @@ POST /workbook/worksheets/{id|name}/charts(<name>)/setData
 ## <a name="request-body"></a>要求本文
 要求本文で、次のパラメーターを含む JSON オブジェクトを指定します。
 
-| パラメーター    | Type   |説明|
+| パラメーター    | 型   |説明|
 |:---------------|:--------|:----------|
 |sourceData|文字列|データ ソースに対応する Range オブジェクトです。|
 |seriesBy|文字列|省略可能。列や行がグラフのデータ系列として使用される方法を指定します。次のいずれかを指定できます。自動 (既定)、行、列。可能な値は、`Auto`、`Columns`、`Rows` です。|

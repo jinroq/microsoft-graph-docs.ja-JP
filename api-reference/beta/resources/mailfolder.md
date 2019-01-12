@@ -2,12 +2,14 @@
 title: mailFolder リソースの種類
 description: 受信トレイや下書きなどの、ユーザーのメールボックス内のメール フォルダーです。 メール フォルダーには、メッセージ、他の Outlook アイテム、子メール フォルダーを含めることができます。
 localization_priority: Normal
-ms.openlocfilehash: a44819f0248e8d6e410e2c6bd57e727ae719b1d2
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: angelgolfer-ms
+ms.prod: outlook
+ms.openlocfilehash: eaccaf02a3d81d184b3c0bf9eae737790c2709d7
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27881621"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27923258"
 ---
 # <a name="mailfolder-resource-type"></a>mailFolder リソースの種類
 
@@ -70,7 +72,7 @@ GET /me/mailFolders/drafts
 
 ## <a name="properties"></a>プロパティ
 
-| プロパティ | 種類 | 説明 |
+| プロパティ | 型 | 説明 |
 |:---------|:-----|:------------|
 |childFolderCount|Int32|現在の mailFolder の直下の子 mailFolder の数。|
 |displayName|String|mailFolder の表示名。|

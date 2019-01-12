@@ -2,12 +2,14 @@
 title: ワークシート リソースの種類
 description: Excel のワークシートは、セルのグリッドになっています。そこに、データ、表、グラフなどを含めることができます。
 localization_priority: Normal
-ms.openlocfilehash: 690596bfe6df5f6bfd98f7f5bd37021e47132152
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: lumine2008
+ms.prod: excel
+ms.openlocfilehash: d04ebafda64f9a081096fbf0fd94461b9765a6db
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27807799"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27926527"
 ---
 # <a name="worksheet-resource-type"></a>ワークシート リソースの種類
 
@@ -36,7 +38,7 @@ Excel のワークシートは、セルのグリッドになっています。�
 |[pivotTables を一覧表示する](../api/workbookworksheet-list-pivottables.md) |[workbookPivotTable](workbookpivottable.md) コレクション| workbookPivotTable オブジェクト コレクションを取得します。|
 
 ## <a name="properties"></a>プロパティ
-| プロパティ     | 種類   |説明|
+| プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
 |ID|文字列|指定されたブックのワークシートを一意に識別する値を返します。この識別子の値は、ワークシートの名前を変更したり移動したりしても同じままです。値の取得のみ可能です。|
 |name|文字列|ワークシートの表示名。|

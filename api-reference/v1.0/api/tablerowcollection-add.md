@@ -2,12 +2,14 @@
 title: 'TableRowCollection: add　'
 description: 'テーブルの末尾に行を追加します。 API がこの API を使用して複数の行データを受け入れることができることに注意してください。 一度に 1 行を追加すると、パフォーマンスが低下する可能性があります。 推奨されるアプローチは、1 つの行の挿入を行うのではなく、1 回の呼び出しでまとめて行をバッチ処理することです。 最良の結果を得るには、収集アプリケーション側で挿入して、1 つの行を実行する行操作を追加します。 理想的な 1 つの API 呼び出しで使用する行の数を決定する行の番号を試してください。 '
 localization_priority: Normal
-ms.openlocfilehash: 131f574186a1c9813a6c9fb8ab6bd4a068da0b3d
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: lumine2008
+ms.prod: excel
+ms.openlocfilehash: f51e7b9ff52c728a7ac2446d538b939d8d5be57a
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27870925"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27912562"
 ---
 # <a name="tablerowcollection-add"></a>TableRowCollection: add　
 
@@ -42,7 +44,7 @@ POST /workbook/worksheets/{id|name}/tables/{id|name}/rows/add
 ## <a name="request-body"></a>要求本文
 要求本文で、次のパラメーターを含む JSON オブジェクトを指定します。
 
-| パラメーター    | Type   |説明|
+| パラメーター    | 型   |説明|
 |:---------------|:--------|:----------|
 |index|Int32|省略可能。新しい行の相対位置を指定します。null の場合、最後に追加が行われます。挿入した行の下のすべての行が下方向にシフトします。0 を起点とする番号になります。|
 |values|Json|省略可能。テーブルの行の書式設定されていない値の 2 次元の配列。|

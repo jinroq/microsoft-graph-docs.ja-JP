@@ -2,12 +2,14 @@
 title: 'アプリケーション: 計算'
 description: Excel で現在開いているすべてのブックを再計算します。
 localization_priority: Normal
-ms.openlocfilehash: 3d80fc89c002d7c89fcc5d68920895b9b1fe1c4e
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: lumine2008
+ms.prod: excel
+ms.openlocfilehash: b5db5efda5da15d006188ae55f45b85e1325c38e
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27818334"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27921942"
 ---
 # <a name="application-calculate"></a>アプリケーション: 計算
 
@@ -37,7 +39,7 @@ POST /workbook/application/calculate
 ## <a name="request-body"></a>要求本文
 要求本文で、次のパラメーターを含む JSON オブジェクトを指定します。
 
-| パラメーター    | Type   |説明|
+| パラメーター    | 型   |説明|
 |:---------------|:--------|:----------|
 |calculationType|文字列|使用する計算の種類を指定します。  可能な値は、`Recalculate`、`Full`、`FullRebuild` です。|
 

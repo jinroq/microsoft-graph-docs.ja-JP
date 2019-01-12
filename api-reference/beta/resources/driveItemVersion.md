@@ -4,12 +4,13 @@ ms.author: rgregg
 ms.date: 09/17/2017
 title: DriveItemVersion
 localization_priority: Normal
-ms.openlocfilehash: 4267a82cc2dee7f0b9b301e13073f32cf95c6844
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: sharepoint
+ms.openlocfilehash: 3f33c59da4a748c176c6044e4db3bac70eac71cb
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27841742"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27923615"
 ---
 # <a name="driveitemversion-resource-type"></a>DriveItemVersion リソースの種類
 
@@ -52,7 +53,7 @@ driveItemVersion リソースで使用可能なタスクを次に示します。
 
 ## <a name="properties"></a>プロパティ
 
-|      プロパティ名       |                         Type                         |                               説明                               |
+|      プロパティ名       |                         型                         |                               説明                               |
 | :----------------------- | :--------------------------------------------------- | :---------------------------------------------------------------------- |
 | **id**                   | string                                               | バージョンの ID。 読み取り専用です。                                       |
 | **lastModifiedBy**       | [IdentitySet](../resources/identityset.md)           | 最後にバージョンを変更したユーザーの ID。 読み取り専用です。        |

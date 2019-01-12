@@ -3,12 +3,13 @@ title: managedEBook リソースの種類
 description: 管理対象電子ブックの基本プロパティを含む抽象クラスです。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 61a4098850f9b3b4a6b82f2fcee5d1ce89b0696d
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: a2da2254b5d86a16d3a0e60fae0c0ea4215d54a2
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27830255"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27917861"
 ---
 # <a name="managedebook-resource-type"></a>managedEBook リソースの種類
 
@@ -23,7 +24,7 @@ ms.locfileid: "27830255"
 |[アクションの割り当て](../api/intune-books-managedebook-assign.md)|なし|まだ文書化されていません|
 
 ## <a name="properties"></a>プロパティ
-|プロパティ|種類|説明|
+|プロパティ|型|説明|
 |:---|:---|:---|
 |ID|String|エンティティのキー。|
 |displayName|String|電子ブックの名前。|

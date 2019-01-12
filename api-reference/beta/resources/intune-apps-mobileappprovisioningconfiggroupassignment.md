@@ -3,12 +3,13 @@ title: mobileAppProvisioningConfigGroupAssignment リソースの種類
 description: アプリケーションのプロビジョニングの構成をグループに割り当てるためのプロパティが含まれています。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 32c5bb83fc3991d36c4e52a4350b0e05496b32fb
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 6996bf29776910d8af3da08d63003889b817cfbf
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27840783"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27912135"
 ---
 # <a name="mobileappprovisioningconfiggroupassignment-resource-type"></a>mobileAppProvisioningConfigGroupAssignment リソースの種類
 
@@ -27,7 +28,7 @@ ms.locfileid: "27840783"
 |[MobileAppProvisioningConfigGroupAssignment を更新します。](../api/intune-apps-mobileappprovisioningconfiggroupassignment-update.md)|[mobileAppProvisioningConfigGroupAssignment](../resources/intune-apps-mobileappprovisioningconfiggroupassignment.md)|[MobileAppProvisioningConfigGroupAssignment](../resources/intune-apps-mobileappprovisioningconfiggroupassignment.md)オブジェクトのプロパティを更新します。|
 
 ## <a name="properties"></a>プロパティ
-|プロパティ|種類|説明|
+|プロパティ|型|説明|
 |:---|:---|:---|
 |targetGroupId|String|構成のプロビジョニング、アプリケーションが対象である AAD グループの ID。|
 |id|String|エンティティのキー。|

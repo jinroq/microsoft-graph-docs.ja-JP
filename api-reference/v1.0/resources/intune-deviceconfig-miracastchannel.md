@@ -3,12 +3,13 @@ title: miracastChannel 列挙型
 description: Miracast チャネルの使用可能な値です。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 20182ef1a9d5ca28f99343a0150390e1c26762a5
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 468ee857968951171eef24087aec710657a413b4
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27873102"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27922691"
 ---
 # <a name="miracastchannel-enum-type"></a>miracastChannel 列挙型
 

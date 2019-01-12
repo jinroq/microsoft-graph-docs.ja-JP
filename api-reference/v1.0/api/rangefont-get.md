@@ -3,12 +3,13 @@ title: RangeFont を取得する
 description: rangefont オブジェクトのプロパティと関係を取得します。
 author: lumine2008
 localization_priority: Normal
-ms.openlocfilehash: 6a81709def18a07cfd0c5a802553cacc8e185eb0
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: excel
+ms.openlocfilehash: 0b9d93a88b18255c590e13a77b4bacb93f06e521
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27807953"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27919555"
 ---
 # <a name="get-rangefont"></a>RangeFont を取得する
 

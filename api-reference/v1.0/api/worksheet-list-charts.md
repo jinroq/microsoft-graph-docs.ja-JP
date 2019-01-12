@@ -3,12 +3,13 @@ title: グラフを一覧表示する
 description: グラフ オブジェクトの一覧を取得します。
 author: lumine2008
 localization_priority: Normal
-ms.openlocfilehash: d61d243108f557870330b5c9a7a689f2b1a027fa
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: excel
+ms.openlocfilehash: dc7fcbb6ed80c057d748cbf85ca41cfe269901cf
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27808730"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27915663"
 ---
 # <a name="list-charts"></a>グラフを一覧表示する
 

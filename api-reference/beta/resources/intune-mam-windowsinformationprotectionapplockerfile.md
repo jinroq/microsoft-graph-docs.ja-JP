@@ -3,12 +3,13 @@ title: windowsInformationProtectionAppLockerFile リソースの種類
 description: Windows 情報保護 AppLocker ファイル
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 4328112d0d1eddf95f735aa1c25dc2b3730c4c9c
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: f55a8955897096338ffdc5ba862ad25447225b20
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27829597"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27911988"
 ---
 # <a name="windowsinformationprotectionapplockerfile-resource-type"></a>windowsInformationProtectionAppLockerFile リソースの種類
 
@@ -27,7 +28,7 @@ Windows 情報保護 AppLocker ファイル
 |[Update windowsInformationProtectionAppLockerFile](../api/intune-mam-windowsinformationprotectionapplockerfile-update.md)|[windowsInformationProtectionAppLockerFile](../resources/intune-mam-windowsinformationprotectionapplockerfile.md)|[windowsInformationProtectionAppLockerFile](../resources/intune-mam-windowsinformationprotectionapplockerfile.md) オブジェクトのプロパティを更新します。|
 
 ## <a name="properties"></a>プロパティ
-|プロパティ|種類|説明|
+|プロパティ|型|説明|
 |:---|:---|:---|
 |displayName|String|フレンドリ名|
 |fileHash|String|ファイルの SHA256 ハッシュ|

@@ -3,12 +3,13 @@ title: managedAppStatusRaw リソースの種類
 description: 組織アプリの保護と構成についての型指定されていない進捗レポートを表します。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 975f43d064718b8457b40be707a54a0ea0eb69f7
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 4497f0dc1b7be59b08c7b07d9cd381746544ef47
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27884015"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27922117"
 ---
 # <a name="managedappstatusraw-resource-type"></a>managedAppStatusRaw リソースの種類
 
@@ -27,7 +28,7 @@ ms.locfileid: "27884015"
 |[managedAppStatusRaw の取得](../api/intune-mam-managedappstatusraw-get.md)|[managedAppStatusRaw](../resources/intune-mam-managedappstatusraw.md)|[managedAppStatusRaw](../resources/intune-mam-managedappstatusraw.md) オブジェクトのプロパティとリレーションシップを読み取ります。|
 
 ## <a name="properties"></a>プロパティ
-|プロパティ|種類|説明|
+|プロパティ|型|説明|
 |:---|:---|:---|
 |displayName|String|進捗レポートのフレンドリ名。 [managedAppStatus](../resources/intune-mam-managedappstatus.md) から継承します|
 |id|String|エンティティのキー。 [managedAppStatus](../resources/intune-mam-managedappstatus.md) から継承します|

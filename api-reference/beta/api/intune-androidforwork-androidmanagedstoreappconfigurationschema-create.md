@@ -3,12 +3,13 @@ title: AndroidManagedStoreAppConfigurationSchema を作成します。
 description: 新しい androidManagedStoreAppConfigurationSchema オブジェクトを作成します。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: c3cf700bb835df981c419fc15b56ef5fbc905fea
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 63657f618a2a90f54c547d937c9f1d6459d81a03
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27874544"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27926394"
 ---
 # <a name="create-androidmanagedstoreappconfigurationschema"></a>AndroidManagedStoreAppConfigurationSchema を作成します。
 
@@ -46,7 +47,7 @@ POST /deviceManagement/androidManagedStoreAppConfigurationSchemas
 
 次の表は、androidManagedStoreAppConfigurationSchema を作成するときに必要なプロパティを示します。
 
-|プロパティ|種類|説明|
+|プロパティ|型|説明|
 |:---|:---|:---|
 |ID|String|エンティティのキー。スキーマが対応するアプリケーションの Android パッケージ名です。|
 |exampleJson|Binary|このスキーマに準拠した JSON 文字列の例を含む、UTF8 でエンコードされたバイト配列。このアプリの構成の設定方法を示しています。|

@@ -3,12 +3,13 @@ title: requestSignupUrl アクション
 description: まだ文書化されていません
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 71133b79f810690da2d3c4c537fbe681829c83d3
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 5eab1e241eddbcb4ac49002b8ae411932dee4b1b
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27828694"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27921928"
 ---
 # <a name="requestsignupurl-action"></a>requestSignupUrl アクション
 
@@ -46,7 +47,7 @@ POST /deviceManagement/androidManagedStoreAccountEnterpriseSettings/requestSignu
 
 次の表に、このアクションで使用できるパラメーターを示します。
 
-|プロパティ|種類|説明|
+|プロパティ|型|説明|
 |:---|:---|:---|
 |hostName|String|まだ文書化されていません|
 

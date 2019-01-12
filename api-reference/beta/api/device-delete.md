@@ -1,14 +1,15 @@
 ---
 title: デバイスを削除する
 description: 登録されているデバイスを削除します。
-author: tfitzmac
+author: lleonard-msft
 localization_priority: Normal
-ms.openlocfilehash: c2b34cffbff6b3c627ed13d6e4b2917f6f36f4f9
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: 6088f7667346e472531b065b5c13eb2953529aea
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27854573"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27921340"
 ---
 # <a name="delete-device"></a>デバイスを削除する
 
@@ -36,7 +37,7 @@ DELETE /devices/{id}
 > 注:要求内の"id"は、"deviceId"プロパティではなく、デバイスの id プロパティです。
 
 ## <a name="request-headers"></a>要求ヘッダー
-| 名前       | 種類 | 説明|
+| 名前       | 型 | 説明|
 |:---------------|:--------|:----------|
 | Authorization  | string  | ベアラー {トークン}。必須。 |
 

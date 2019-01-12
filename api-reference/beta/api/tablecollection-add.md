@@ -2,12 +2,14 @@
 title: 'TableCollection: 追加'
 description: 新しいテーブルを作成します。範囲のソース アドレスにより、テーブルが追加されるワークシートが判断されます。テーブルが追加できない場合 (たとえば、アドレスが無効な場合や、テーブルが別のテーブルと重複している場合) は、エラーがスローされます。
 localization_priority: Normal
-ms.openlocfilehash: 8053ce8e8d0ac62e096fa70255064e82a03630f6
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: lumine2008
+ms.prod: excel
+ms.openlocfilehash: 75d39b32c651ad1633b48aa91514d4b2e118b136
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27868447"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27912926"
 ---
 # <a name="tablecollection-add"></a>TableCollection: 追加
 
@@ -44,7 +46,7 @@ POST /workbook/worksheets/{id|name}/tables/add
 ## <a name="request-body"></a>要求本文
 要求本文で、次のパラメーターを含む JSON オブジェクトを指定します。
 
-| パラメーター    | Type   |説明|
+| パラメーター    | 型   |説明|
 |:---------------|:--------|:----------|
 |address|文字列|データ ソースを表す Range オブジェクトのアドレスまたは名前。アドレスにシート名が含まれていない場合は、現在作業中のシートが使用されます。|
 |hasHeaders|ブール値|インポートされたデータに列ラベルがあるかどうかを示すブール値。ソースにヘッダーが含まれていない場合 (このプロパティが false に設定されている場合)、Excel はデータを下方向に 1 行シフトして、自動的にヘッダーを生成します。|

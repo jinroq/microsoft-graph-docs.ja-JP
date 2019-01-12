@@ -2,12 +2,13 @@
 title: サブスクリプションを作成する
 description: Graph リソース上のデータが変更されたときに通知を受信するリスナー アプリケーションをサブスクライブします。
 localization_priority: Normal
-ms.openlocfilehash: 5b7f465e556d1fb752bcb2d3c962fd6444d462c5
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: piotrci
+ms.openlocfilehash: 0640a8de441a07e1abcc02a152f5a9812832db27
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27805055"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27916545"
 ---
 # <a name="create-subscription"></a>サブスクリプションを作成する
 
@@ -15,7 +16,7 @@ ms.locfileid: "27805055"
 
 Graph リソース上のデータが変更されたときに通知を受信するリスナー アプリケーションをサブスクライブします。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>アクセス許可
 
 サブスクリプションを作成するには、アプリケーションが通知を受信するリソースの読み取り権限が必要です。 たとえば、メッセージに関する通知を取得するには、アプリが必要な`Mail.Read`のアクセス許可。 次の表に、各リソースに必要な、推奨されるアクセス許可を示します。 アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
 
@@ -43,7 +44,7 @@ POST /subscriptions
 
 ## <a name="request-headers"></a>要求ヘッダー
 
-| 名前       | 種類 | 説明|
+| 名前       | 型 | 説明|
 |:-----------|:------|:----------|
 | Authorization  | string  | ベアラー {トークン}。必須。 |
 

@@ -3,12 +3,13 @@ title: userInstallStateSummary の更新
 description: userInstallStateSummary オブジェクトのプロパティを更新します。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 336b4bf9bd51148b1902fb6fadb3c3068b476573
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 89b1971823c7ce79d50c00b621d9c202d420169b
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27832781"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27915348"
 ---
 # <a name="update-userinstallstatesummary"></a>userInstallStateSummary の更新
 
@@ -46,7 +47,7 @@ PATCH /deviceAppManagement/managedEBooks/{managedEBookId}/userStateSummary/{user
 
 次の表に、[userInstallStateSummary](../resources/intune-books-userinstallstatesummary.md) の作成時に必要なプロパティを示します。
 
-|プロパティ|種類|説明|
+|プロパティ|型|説明|
 |:---|:---|:---|
 |ID|String|エンティティのキー。|
 |userName|String|ユーザー名です。|

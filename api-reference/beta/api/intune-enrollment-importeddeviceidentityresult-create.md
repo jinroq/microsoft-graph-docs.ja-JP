@@ -3,12 +3,13 @@ title: ImportedDeviceIdentityResult を作成します。
 description: 新しい importedDeviceIdentityResult オブジェクトを作成します。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: d5c9494b4170493ef25bee0d72091c49ecde098d
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 19ba119298fad8899445b81952d17e66f2b93a31
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27829443"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27915364"
 ---
 # <a name="create-importeddeviceidentityresult"></a>ImportedDeviceIdentityResult を作成します。
 
@@ -46,7 +47,7 @@ POST /deviceManagement/importedDeviceIdentities
 
 次の表は、importedDeviceIdentityResult を作成するときに必要なプロパティを示します。
 
-|プロパティ|種類|説明|
+|プロパティ|型|説明|
 |:---|:---|:---|
 |ID|String|[ImportedDeviceIdentity](../resources/intune-enrollment-importeddeviceidentity.md)から継承されるインポート済みのデバイス id の id|
 |importedDeviceIdentifier|String|インポートされたデバイスの識別子から継承された[importedDeviceIdentity](../resources/intune-enrollment-importeddeviceidentity.md)|
@@ -57,7 +58,7 @@ POST /deviceManagement/importedDeviceIdentities
 |説明|String|[ImportedDeviceIdentity](../resources/intune-enrollment-importeddeviceidentity.md)から継承される、デバイスの説明|
 |enrollmentState|[enrollmentState](../resources/intune-enrollment-enrollmentstate.md)|Intune 継承で[importedDeviceIdentity](../resources/intune-enrollment-importeddeviceidentity.md)からのデバイスの状態。 使用可能な値: `unknown`、`enrolled`、`pendingReset`、`failed`、`notContacted`、`blocked`。|
 |platform|[プラットフォーム](../resources/intune-enrollment-platform.md)|デバイスのプラットフォームです。 [ImportedDeviceIdentity](../resources/intune-enrollment-importeddeviceidentity.md)から継承されます。 使用可能な値: `unknown`、`ios`、`android`、`windows`、`windowsMobile`、`macOS`。|
-|status|ブール型|インポートされたデバイス id のステータス|
+|status|Boolean|インポートされたデバイス id のステータス|
 
 
 

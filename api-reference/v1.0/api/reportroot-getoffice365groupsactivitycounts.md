@@ -2,12 +2,13 @@
 title: 'reportRoot: getOffice365GroupsActivityCounts'
 description: グループ ワークロード全体のグループ活動の数を取得します。
 localization_priority: Normal
-ms.openlocfilehash: d63655d136acee1d5d911e8e7b437560826043cf
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: reports
+ms.openlocfilehash: 5610e5c2151e28b6b84533c011010a1a0a3126b4
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27846173"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27924497"
 ---
 # <a name="reportroot-getoffice365groupsactivitycounts"></a>reportRoot: getOffice365GroupsActivityCounts
 
@@ -37,7 +38,7 @@ GET /reports/getOffice365GroupsActivityCounts(period='{period_value}')
 
 要求 URL に、次のパラメーターと有効な値を指定します。
 
-| パラメーター | Type   | 説明                              |
+| パラメーター | 型   | 説明                              |
 | :-------- | :----- | :--------------------------------------- |
 | period    | 文字列 | レポートを集計する期間の長さを指定します。 {period_value} でサポートされている値は D7、D30、D90、D180 です。 これらの値は、D*n* の形式 (*n* はレポートを集計する日数) に従います。 必須。 |
 

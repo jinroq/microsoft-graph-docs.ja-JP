@@ -2,12 +2,14 @@
 title: 'メッセージ: createForward'
 description: 指定したメッセージを転送するための下書きを作成します。 下書きを更新して**本文**にコンテンツを追加したり、その他のメッセージのプロパティを変更することも、下書きをそのまま送信することもできます。
 localization_priority: Normal
-ms.openlocfilehash: 230fdfd4a1700e5bcbe2e1cb364de08d86c7be39
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: angelgolfer-ms
+ms.prod: outlook
+ms.openlocfilehash: 484eb33c3cfe7dc9c1dc3ec896e45cff9ecce61d
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27888264"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27921144"
 ---
 # <a name="message-createforward"></a>メッセージ: createForward
 
@@ -36,7 +38,7 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/createForwar
 
 ## <a name="request-headers"></a>要求ヘッダー
 
-| 名前       | 種類 | 説明|
+| 名前       | 型 | 説明|
 |:---------------|:--------|:----------|
 | Authorization  | string  | ベアラー {トークン}。必須。 |
 
