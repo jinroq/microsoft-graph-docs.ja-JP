@@ -3,12 +3,13 @@ title: AndroidWorkProfileVpnConfiguration を取得します。
 description: AndroidWorkProfileVpnConfiguration オブジェクトのプロパティと関係を参照してください。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 806e42cf74a09c4e7fe5442d7942bbb03255e8c1
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 4df4dbde4ea0deba705c8ece001567ee66281a69
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27837010"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27953764"
 ---
 # <a name="get-androidworkprofilevpnconfiguration"></a>AndroidWorkProfileVpnConfiguration を取得します。
 

@@ -3,12 +3,13 @@ title: getManagementConditionStatementsForPlatform 関数
 description: まだ文書化されていません
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: fb658989b3be4870a4dcfcb7c65b172e00070b6a
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 4592d06a8c9da0e2b3535bcab2d9e42696499867
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27838746"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27950194"
 ---
 # <a name="getmanagementconditionstatementsforplatform-function"></a>getManagementConditionStatementsForPlatform 関数
 

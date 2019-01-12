@@ -3,12 +3,13 @@ title: deviceConfigurationAssignments のリスト
 description: deviceConfigurationAssignment オブジェクトのプロパティとリレーションシップをリストします。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 88ae5ad2e007096eb8853d522f780d272d71a3a9
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: f1adb5d0cd505c9d65b3e3917b12c0377da6b966
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27867404"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27954478"
 ---
 # <a name="list-deviceconfigurationassignments"></a>deviceConfigurationAssignments のリスト
 

@@ -3,12 +3,13 @@ title: usageDetails リソースの種類
 description: 複合型を使用する項目のプロパティが含まれています。 リソースが最後にアクセスしたときに情報 (表示)、ユーザーが (編集) を変更します。
 author: simonhult
 localization_priority: Normal
-ms.openlocfilehash: 8729973c2393a918d26314ec3b27a2c68079dbfd
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: insights
+ms.openlocfilehash: 466308ad1b6290c2b96335f94c586eb35c6cac28
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27858955"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27950019"
 ---
 # <a name="usagedetails-resource-type"></a>usageDetails リソースの種類
 

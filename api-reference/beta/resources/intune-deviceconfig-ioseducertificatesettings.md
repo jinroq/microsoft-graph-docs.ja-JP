@@ -3,12 +3,13 @@ title: iosEduCertificateSettings リソースの種類
 description: 信頼されたルートと PFX 証明書 EDU の入出力数のです。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: bf6b0da4d3ff7af562ae99e81e10f52351bd735d
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 8c48883caa9479638b1a727272abdd0bc5762db9
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27822079"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27948676"
 ---
 # <a name="ioseducertificatesettings-resource-type"></a>iosEduCertificateSettings リソースの種類
 

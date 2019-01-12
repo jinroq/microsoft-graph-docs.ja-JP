@@ -1,14 +1,15 @@
 ---
-title: Permissions
+title: アクセス許可
 description: '前にチームの Microsoft アプリケーションのカタログを発行したアプリケーションを更新します。 '
 author: nkramer
 localization_priority: Normal
-ms.openlocfilehash: 305711206200e7f515ecdb4caff290e8a5a27269
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: microsoft-teams
+ms.openlocfilehash: 44ca5870fd585ef7cd5aa0c0282eac42d41c1a18
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27814645"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27948523"
 ---
 # <a name="update-apps-published-to-your-organizations-app-catalog"></a>組織のアプリケーションのカタログに公開するアプリケーションを更新します。
 

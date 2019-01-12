@@ -2,12 +2,13 @@
 title: オープン拡張機能を削除する
 description: '指定されたリソースのインスタンスからオープン拡張機能 (openTypeExtension オブジェクト) を削除します。 '
 localization_priority: Normal
-ms.openlocfilehash: c51870b7e302971d27a894f0e724d0dec6fe5cf1
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: dkershaw10
+ms.openlocfilehash: de0e609ba0d10d8d0b96e64f650347fb4f6fded8
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27894461"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27949809"
 ---
 # <a name="delete-open-extension"></a>オープン拡張機能を削除する
 
@@ -48,10 +49,10 @@ DELETE /users/{id|userPrincipalName}/extensions/{extensionId}
 >**注:** 上記の構文は、拡張機能の削除元となるリソース インスタンスを特定する一般的な方法を示しています。こうしたリソース インスタンスを特定するために使用できる他の構文すべても、同様の方法でオープン拡張機能を削除できます。
 
 ## <a name="path-parameters"></a>パス パラメーター
-|Parameter|Type|説明|
+|パラメーター|Type|説明|
 |:-----|:-----|:-----|
-|ID|文字列|対応するコレクションのインスタンスの一意識別子。必須。|
-|extensionId|文字列|これは、拡張情報の一意のテキスト識別子である拡張情報名、または拡張情報の種類と一意のテキスト識別子を連結した完全修飾名になります。完全修飾名は、拡張情報を作成したときに、`id` プロパティで返されます。必須。|
+|ID|string|対応するコレクションのインスタンスの一意識別子。必須。|
+|extensionId|string|これは、拡張情報の一意のテキスト識別子である拡張情報名、または拡張情報の種類と一意のテキスト識別子を連結した完全修飾名になります。完全修飾名は、拡張情報を作成したときに、`id` プロパティで返されます。必須。|
 
 ## <a name="request-headers"></a>要求ヘッダー
 | 名前       | 値 |

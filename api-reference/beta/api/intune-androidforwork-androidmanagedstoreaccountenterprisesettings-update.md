@@ -3,12 +3,13 @@ title: AndroidManagedStoreAccountEnterpriseSettings を更新します。
 description: AndroidManagedStoreAccountEnterpriseSettings オブジェクトのプロパティを更新します。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: e1c6829a855a2d422906a9fbc0ba0527f77d1ac9
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 82c0ee245b7db91d0a145439018c411493a83efb
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27892499"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27951083"
 ---
 # <a name="update-androidmanagedstoreaccountenterprisesettings"></a>AndroidManagedStoreAccountEnterpriseSettings を更新します。
 
@@ -57,7 +58,7 @@ PATCH /deviceManagement/androidManagedStoreAccountEnterpriseSettings
 |lastModifiedDateTime|DateTimeOffset|Android エンタープライズ設定の最終変更時刻|
 |enrollmentTarget|[androidManagedStoreAccountEnrollmentTarget](../resources/intune-androidforwork-androidmanagedstoreaccountenrollmenttarget.md)|Android エンタープライズ デバイスの管理デバイスを登録できるユーザーを示します。 可能な値は、`none`、`all`、`targeted`、`targetedAsEnrollmentRestrictions` です。|
 |targetGroupIds|String コレクション|enrollmentTarget が 'Targeted' に設定されている場合、どの AAD グループが Android for Work デバイス管理にデバイスを登録できるかを指定します。|
-|deviceOwnerManagementEnabled|ブール型|このアカウントを CloudDPC に Android のデバイスの所有者の管理の flighting かどうかを示します。|
+|deviceOwnerManagementEnabled|Boolean|このアカウントを CloudDPC に Android のデバイスの所有者の管理の flighting かどうかを示します。|
 
 
 

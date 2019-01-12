@@ -2,12 +2,14 @@
 title: plannerPlan リソースの種類
 description: '**PlannerPlan**リソースでは、Office 365 のプランを表します。 計画は、グループが所有することができ、plannerTasks のコレクションが含まれています。 PlannerBuckets のコレクションもあります。 各プラン オブジェクトには、計画の詳細を含めることができる詳細オブジェクトがあります。 グループ、計画、およびタスク間の関係の詳細については、プランナーを参照してください。'
 localization_priority: Normal
-ms.openlocfilehash: 4890daa6ad221a36cf0029b49ce39560fc80afcd
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: TarkanSevilmis
+ms.prod: planner
+ms.openlocfilehash: b5d95b1bfab7404007c3139833e54f155c10d9aa
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27888103"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27950523"
 ---
 # <a name="plannerplan-resource-type"></a>plannerPlan リソースの種類
 

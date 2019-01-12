@@ -2,12 +2,13 @@
 title: office365GroupsActivityDetail リソースの種類
 description: リソースの JSON 表記を次に示します。
 localization_priority: Normal
-ms.openlocfilehash: 94dc10064c0005770294c8f783c77d41ce0c479b
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: reports
+ms.openlocfilehash: 2968a3a5459f286e4aac69e2fd606adc1b38e39b
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27894272"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27951825"
 ---
 # <a name="office365groupsactivitydetail-resource-type"></a>office365GroupsActivityDetail リソースの種類
 
@@ -17,7 +18,7 @@ ms.locfileid: "27894272"
 | :-------------------------------- | :------ | ---------------------------------------- |
 | reportRefreshDate                 | 日付    | コンテンツの最新の日付。          |
 | groupDisplayName                  | String  | グループの表示名。           |
-| isDeleted                         | ブール型 | このユーザーが削除されたか、またはソフトをされてかどうかを削除します。 |
+| isDeleted                         | Boolean | このユーザーが削除されたか、またはソフトをされてかどうかを削除します。 |
 | ownerPrincipalName                | String  | グループの所有者のプリンシパル名です。          |
 | lastActivityDate                  | 日付    | 次のシナリオの最後のアクティビティの日付: グループのメールボックスに受信した電子メールです。ユーザーを表示、編集、共有、または SharePoint ドキュメント ライブラリ内のファイルの同期ユーザーが SharePoint ページを表示ユーザーは、投稿、読み取り、または、Yammer グループ内のメッセージを気に入られました。 |
 | groupType                         | String  | グループの種類。 使用可能な値:**パブリック**または**プライベート**です。 |

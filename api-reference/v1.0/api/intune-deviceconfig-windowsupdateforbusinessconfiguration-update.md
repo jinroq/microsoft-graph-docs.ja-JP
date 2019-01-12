@@ -3,12 +3,13 @@ title: windowsUpdateForBusinessConfiguration の更新
 description: windowsUpdateForBusinessConfiguration オブジェクトのプロパティを更新します。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 55166d68f8f9f3044c89e798a650ce34fc00bb5e
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: d02bbb949e25d587e267130d5f3ebd110a626534
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27867397"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27931280"
 ---
 # <a name="update-windowsupdateforbusinessconfiguration"></a>windowsUpdateForBusinessConfiguration の更新
 

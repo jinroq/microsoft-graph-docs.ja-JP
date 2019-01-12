@@ -2,12 +2,14 @@
 title: diagnosticDataSubmissionMode 列挙型
 description: ワトソンなど、診断および利用状況の遠隔測定データを送信するデバイスを使用できます。
 localization_priority: Normal
-ms.openlocfilehash: 3be69b4be25ece2ced611c028a855347e4dba66e
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: tfitzmac
+ms.prod: intune
+ms.openlocfilehash: d1ba4d2cd9be740b23502ec4c0154caa2be07f3c
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27871534"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27948531"
 ---
 # <a name="diagnosticdatasubmissionmode-enum-type"></a>diagnosticDataSubmissionMode 列挙型
 

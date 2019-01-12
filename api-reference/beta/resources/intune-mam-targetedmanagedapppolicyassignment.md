@@ -3,12 +3,13 @@ title: targetedManagedAppPolicyAssignment リソースの種類
 description: グループまたはアプリの展開の種類。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: ebc6d6a0c90dd9ddb521887ce8bf6b749c615dbb
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 75090a45f7a9b56946df28b8328704cb58cfcbde
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27838550"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27951244"
 ---
 # <a name="targetedmanagedapppolicyassignment-resource-type"></a>targetedManagedAppPolicyAssignment リソースの種類
 

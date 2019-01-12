@@ -3,12 +3,13 @@ title: EducationSynchronizationProfile の同期を一時停止
 description: テナントで特定の学校のデータの同期プロファイルの同期を一時停止します。
 author: mmast-msft
 localization_priority: Normal
-ms.openlocfilehash: 97ded3f4fdf30e6bc56345abcc71f3466ef4ff61
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: education
+ms.openlocfilehash: 4979ed19c9a01d6a7ff2d43f7f3755d03b4b070c
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27892320"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27950684"
 ---
 # <a name="pause-sync-on-an-educationsynchronizationprofile"></a>EducationSynchronizationProfile の同期を一時停止
 
@@ -19,7 +20,7 @@ ms.locfileid: "27892320"
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
 
-| アクセス許可の種類 | Permissions |
+| アクセス許可の種類 | アクセス許可 |
 |:-----------|:----------|
 | 委任 (職場または学校のアカウント) | EduAdministration.ReadWrite |
 |(個人用の Microsoft アカウントを委任します。|サポートされていません。|

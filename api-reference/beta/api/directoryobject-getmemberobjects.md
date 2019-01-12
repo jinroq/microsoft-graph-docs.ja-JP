@@ -2,12 +2,14 @@
 title: メンバー オブジェクトを取得する
 description: " すべてのグループ、管理単位、およびディレクトリの役割のメンバーであるユーザー、グループ、サービス ・ プリンシパルまたはディレクトリ オブジェクトを返します。 この関数は、推移的です。 "
 localization_priority: Normal
-ms.openlocfilehash: f63c077414f656df168db5c5af498cec0f79e703
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: lleonard-msft
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: 00709d0a71b5c13a07d1f07ba41d1273ea0fb034
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27874803"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27946365"
 ---
 # <a name="get-member-objects"></a>メンバー オブジェクトを取得する
 

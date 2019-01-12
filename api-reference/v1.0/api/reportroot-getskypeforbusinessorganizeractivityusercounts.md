@@ -2,12 +2,13 @@
 title: 'reportRoot: getSkypeForBusinessOrganizerActivityUserCounts'
 description: 一意のユーザー数と組織内のユーザーが開催、企画した電話会議セッションの数と種類に関する使用傾向を取得します。 会議セッションの種類には、IM、オーディオ/ビデオ、アプリケーション共有、Web、サード パーティへのダイヤルイン/ダイヤルアウト、Microsoft へのダイヤルイン/ダイヤルアウトなどがあります。
 localization_priority: Normal
-ms.openlocfilehash: 6677b6eab3f381ea244bb677c09c2c6ecf361bd2
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: reports
+ms.openlocfilehash: 41bfdee51f7fc941de5be0c8d766ea0fcbed2c04
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27870971"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27930741"
 ---
 # <a name="reportroot-getskypeforbusinessorganizeractivityusercounts"></a>reportRoot: getSkypeForBusinessOrganizerActivityUserCounts
 

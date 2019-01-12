@@ -2,12 +2,14 @@
 title: リスト staffMembers
 description: " > **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。"
 localization_priority: Normal
-ms.openlocfilehash: fdbf1c60731627e518bc5d13ad46abfbf6f39b69
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: angelgolfer-ms
+ms.prod: bookings
+ms.openlocfilehash: 81f170e101ad2aa600991cb79eaccdc65db8e4be
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27809563"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27951384"
 ---
 # <a name="list-staffmembers"></a>リスト staffMembers
 

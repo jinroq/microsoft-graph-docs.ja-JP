@@ -3,12 +3,13 @@ title: calendarGroup リソースの種類
 description: ユーザーの予定表のグループです。
 author: angelgolfer-ms
 localization_priority: Normal
-ms.openlocfilehash: 1acc95f95c550c2bd48f8c6d3a117666b666b20f
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: outlook
+ms.openlocfilehash: 5b75ebf253276876129859be7d37ecb6748fc0d9
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27818579"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27949627"
 ---
 # <a name="calendargroup-resource-type"></a>calendarGroup リソースの種類
 

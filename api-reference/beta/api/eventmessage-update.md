@@ -3,12 +3,13 @@ title: eventMessage の更新
 description: eventMessage オブジェクトのプロパティを更新します。
 author: angelgolfer-ms
 localization_priority: Normal
-ms.openlocfilehash: 6af0d681c9e0de820dd34cf659991df648c2e7f5
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: outlook
+ms.openlocfilehash: dbfb68954acb93e66ea09c3b71ec405d9754e407
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27809220"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27951300"
 ---
 # <a name="update-eventmessage"></a>eventMessage の更新
 
@@ -45,10 +46,10 @@ PATCH /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}
 |:---------------|:--------|:----------|
 |categories|String|メッセージに関連付けられたカテゴリ。|
 |importance|String|メッセージの重要度です。可能な値は、`Low`、`Normal`、`High` です。|
-|isAllDay |ブール値|イベントが 1 日中続くかどうかを示します。 このプロパティを調整するには、イベントにも**させる**し、 **endDateTime**プロパティを調整する必要があります。|
-|isDeliveryReceiptRequested|ブール値|メッセージの開封応答が要求されているかどうかを示します。|
-|isRead|ブール値|メッセージが開封されたかどうかを示します。|
-|isReadReceiptRequested|ブール値|メッセージの開封応答が要求されているかどうかを示します。|
+|isAllDay |Boolean|イベントが 1 日中続くかどうかを示します。 このプロパティを調整するには、イベントにも**させる**し、 **endDateTime**プロパティを調整する必要があります。|
+|isDeliveryReceiptRequested|Boolean|メッセージの開封応答が要求されているかどうかを示します。|
+|isRead|Boolean|メッセージが開封されたかどうかを示します。|
+|isReadReceiptRequested|Boolean|メッセージの開封応答が要求されているかどうかを示します。|
 
 ## <a name="response"></a>応答
 

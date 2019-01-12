@@ -3,12 +3,13 @@ title: WindowsWifiConfiguration を更新します。
 description: WindowsWifiConfiguration オブジェクトのプロパティを更新します。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: c58ede51940c1d913632668919532ba6d61ad201
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 7e640befb9cc7e4d0b2df52c2f35aba8ed4a0fbc
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27847111"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27946435"
 ---
 # <a name="update-windowswificonfiguration"></a>WindowsWifiConfiguration を更新します。
 

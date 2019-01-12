@@ -3,12 +3,13 @@ title: 'メッセージ: createForward'
 description: 'コメントを含めるまたはメッセージ プロパティを更新するメッセージを転送の下書きを作成します。  '
 author: angelgolfer-ms
 localization_priority: Normal
-ms.openlocfilehash: 7d8fa7fa70970e2bb1a5b506d768b3d04311c911
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: outlook
+ms.openlocfilehash: 56f73ac798ef3440b66cb4c0de1192d3248d3a61
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27817669"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27949074"
 ---
 # <a name="message-createforward"></a>メッセージ: createForward
 

@@ -2,12 +2,14 @@
 title: Planner の識別子
 description: プランナー] の [オブジェクトの識別子は、サービスによって生成された文字列値です。 値は 28 文字以内であり、大文字小文字を区別します。 渡されると、サービスは、形式検証が失敗した場合、呼び出し元は応答が正しくない要求 (400) エラーこの問題を示す場合に識別子の単純な形式の検証を行います。 このエラーが発生すると、呼び出し元のアプリケーション内のバグは次のようを示します。
 localization_priority: Normal
-ms.openlocfilehash: 6efb1192de87082cae99fbcc058607a2239a618c
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: TarkanSevilmis
+ms.prod: planner
+ms.openlocfilehash: 75c284d576ed6f03691828309fab7ed899c1c066
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27816591"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27951859"
 ---
 # <a name="identifiers-in-planner"></a>Planner の識別子
 

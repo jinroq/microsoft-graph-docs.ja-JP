@@ -2,12 +2,14 @@
 title: WindowsPhone81VpnConfiguration を更新します。
 description: WindowsPhone81VpnConfiguration オブジェクトのプロパティを更新します。
 author: tfitzmac
-ms.openlocfilehash: 5decc13b53ba632dd8ee37134ff245c2e9c18ba2
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.prod: intune
+ms.openlocfilehash: 2fe278fbfd3a9a9da623edac1e6a452c0306ebfd
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27317543"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27950335"
 ---
 # <a name="update-windowsphone81vpnconfiguration"></a>WindowsPhone81VpnConfiguration を更新します。
 

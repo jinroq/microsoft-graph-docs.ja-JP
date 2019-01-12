@@ -3,12 +3,13 @@ title: 'WorksheetProtection: protect'
 description: ワークシートを保護します。ワークシートが保護されている場合はスローします。
 author: lumine2008
 localization_priority: Normal
-ms.openlocfilehash: ba6909ce9a6a1bd025eb5364bf1a6ad100105134
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: excel
+ms.openlocfilehash: d72d81b181c6e2fb82df991baaca7c12bb72c721
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27830234"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27930573"
 ---
 # <a name="worksheetprotection-protect"></a>WorksheetProtection: protect
 

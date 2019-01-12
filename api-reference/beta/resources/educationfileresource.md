@@ -2,12 +2,14 @@
 title: educationFileResource リソースの種類
 description: 送信または割り当てに関連付けられているファイル オブジェクトを表す educationResource のサブクラスです。  この例では、ファイルは特別なファイル (Word、Excel、およびなど) のいずれかがファイル システム内で特別な処理がないです。 このリソースに接続されている送信または割り当てに関連付けられている**resourceFolder**では、ファイル リソースを格納してください。
 localization_priority: Normal
-ms.openlocfilehash: 5fda86b80030a2bc0c885b4dd90a384b7ede7fff
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: mmast-msft
+ms.prod: education
+ms.openlocfilehash: 96c03dc1571e0f8686116f169706aa35003f92a3
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27858087"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27953659"
 ---
 # <a name="educationfileresource-resource-type"></a>educationFileResource リソースの種類
 

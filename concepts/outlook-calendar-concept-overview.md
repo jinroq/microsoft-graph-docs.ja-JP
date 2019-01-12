@@ -2,12 +2,14 @@
 title: Outlook カレンダー API の概要
 description: Outlook カレンダーは、Office 365 の Outlook メッセージング ハブの一部です。Outlook カレンダーを使用して、メールや連絡先を管理したり、組織内のユーザーに関する情報を検索したりすることもできます。
 author: angelgolfer-ms
-ms.openlocfilehash: 44578d5ec37e25b66cceb11692a4519f6198ca1d
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Priority
+ms.prod: outlook
+ms.openlocfilehash: f147f3b8edf67940cbb3d0d86a3c3b3c1018895f
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27304306"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27952952"
 ---
 # <a name="outlook-calendar-api-overview"></a>Outlook カレンダー API の概要
 
@@ -85,8 +87,7 @@ Microsoft Graph では、[people API](people-example.md) を使用し、ユー�
 
 ## <a name="next-steps"></a>次の手順
 
-- 
-  [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer/?request=me%2Fevents&version=v1.0) でカレンダー サンプル クエリを選択して試行します。
+- [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer/?request=me%2Fevents&version=v1.0) でカレンダー サンプル クエリを選択して試行します。
 - 以下について調べます。
   - [開催可能な会議日時を Outlook カレンダーで検索する](findmeetingtimes-example.md)
   - [ユーザーとリソースの空き時間スケジュールを取得する (プレビュー)](outlook-get-free-busy-schedule.md)

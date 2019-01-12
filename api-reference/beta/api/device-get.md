@@ -1,14 +1,15 @@
 ---
 title: デバイスを取得する
 description: デバイス オブジェクトのプロパティとリレーションシップを取得します。
-author: tfitzmac
+author: lleonard-msft
 localization_priority: Normal
-ms.openlocfilehash: d3845fb2fa7b84a7cf627772e0133c35dd2cd385
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: 93c2569703de83d70c2e73c861ebf754e6e5820b
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27813371"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27951153"
 ---
 # <a name="get-device"></a>デバイスを取得する
 

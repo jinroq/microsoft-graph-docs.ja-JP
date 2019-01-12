@@ -3,12 +3,13 @@ title: '範囲: 削除'
 description: 範囲に関連付けられているセルを削除します。
 author: lumine2008
 localization_priority: Normal
-ms.openlocfilehash: 1817a1c1481d86e08de4146215da6f6fc8de6a8c
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: excel
+ms.openlocfilehash: 2a3ea63884964f1c1eb2b423c459fcae3ba6bfb1
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27871786"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27931343"
 ---
 # <a name="range-delete"></a>範囲: 削除
 

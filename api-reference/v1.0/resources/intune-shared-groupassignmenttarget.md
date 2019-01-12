@@ -3,12 +3,13 @@ title: groupAssignmentTarget リソースの種類
 description: グループへの割り当てを表します。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 7218fc69564ea08a7302cfb0af7856360cd9a330
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: e2928817a4d8bf287c3a941ddea80e7a3c4e19fd
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27809045"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27951720"
 ---
 # <a name="groupassignmenttarget-resource-type"></a>groupAssignmentTarget リソースの種類
 

@@ -3,12 +3,13 @@ title: Delete targetedManagedAppPolicyAssignment
 description: targetedManagedAppPolicyAssignment を削除します。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: a96da25371fd96a3b177931c3454ca336c5f84e8
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: be753e2d6783e9b5ec71550973b2268e81d65b39
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27825593"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27952196"
 ---
 # <a name="delete-targetedmanagedapppolicyassignment"></a>Delete targetedManagedAppPolicyAssignment
 

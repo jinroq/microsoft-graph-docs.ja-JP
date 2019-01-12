@@ -3,12 +3,13 @@ title: remoteAssistancePartner の更新
 description: remoteAssistancePartner オブジェクトのプロパティを更新します。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 16b7c3f9d3125ca688f08faa22772c4335e02a8f
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: e98212ee51352dc205c4b1aeb9533775707d2d9c
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27871401"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27951293"
 ---
 # <a name="update-remoteassistancepartner"></a>remoteAssistancePartner の更新
 

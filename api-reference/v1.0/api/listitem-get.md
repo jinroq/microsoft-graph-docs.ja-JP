@@ -4,12 +4,13 @@ ms.author: rgregg
 ms.date: 09/11/2017
 title: SharePoint リストからエントリを取得する
 localization_priority: Priority
-ms.openlocfilehash: ab263c074497d43bb03ea7c69748bb1c64fd9425
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: sharepoint
+ms.openlocfilehash: 1a1117717a0afc0d715da2297d69b0453ef2025e
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27881131"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27950544"
 ---
 # <a name="get-an-item-in-a-list"></a>リスト内のアイテムを取得する
 

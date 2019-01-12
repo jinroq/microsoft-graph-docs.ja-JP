@@ -3,12 +3,13 @@ title: managedIOSStoreApp リソース タイプ
 description: Intune アプリ保護ポリシーで管理できる iOS ストア アプリのプロパティと継承されたプロパティが含まれます。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: e3a85448aeb32c7778532a16e8082f5e54683686
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 4abbdca72153e99cf0e16f1899103676872446d8
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27811887"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27947540"
 ---
 # <a name="managediosstoreapp-resource-type"></a>managedIOSStoreApp リソース タイプ
 

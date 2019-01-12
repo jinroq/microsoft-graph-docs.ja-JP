@@ -3,12 +3,13 @@ title: Win32LobApp を更新します。
 description: Win32LobApp オブジェクトのプロパティを更新します。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: c2deac829d1aad6cf0b1a1f3ec4a2a91e7b07c6c
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 91c4ac890cf82f034cbffc13bdee12f94160ff96
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27864933"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27946323"
 ---
 # <a name="update-win32lobapp"></a>Win32LobApp を更新します。
 

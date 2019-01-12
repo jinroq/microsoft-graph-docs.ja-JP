@@ -3,12 +3,13 @@ title: windowsAutopilotDeploymentProfile リソースの種類
 description: Windows 自動操縦装置の配置のプロファイル
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 1538497dc5105dcd2e7f0c9ff7fdf83c3ddec56e
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 60d72a63cfd4e062c312aeda89a37937b7e03041
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27892198"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27949396"
 ---
 # <a name="windowsautopilotdeploymentprofile-resource-type"></a>windowsAutopilotDeploymentProfile リソースの種類
 
@@ -34,7 +35,7 @@ Windows 自動操縦装置の配置のプロファイル
 |lastModifiedDateTime|DateTimeOffset|プロファイルの最終更新時刻|
 |outOfBoxExperienceSettings|[outOfBoxExperienceSettings](../resources/intune-enrollment-outofboxexperiencesettings.md)|ボックスの設定が発生します。|
 |enrollmentStatusScreenSettings|[windowsEnrollmentStatusScreenSettings](../resources/intune-enrollment-windowsenrollmentstatusscreensettings.md)|登録ステータス画面の設定|
-|extractHardwareHash|ブール型|プロファイルの HardwareHash の抽出|
+|extractHardwareHash|Boolean|プロファイルの HardwareHash の抽出|
 |deviceNameTemplate|String|自動操縦装置のデバイスの名前を指定するために使用するテンプレートです。 これは、ユーザー設定のテキスト、デバイスのシリアル番号またはランダムに生成された番号のいずれかが含まれていることもできます。 テンプレートによって生成されたテキストの長さの合計は、15 個以内の文字を使用できます。|
 
 ## <a name="relationships"></a>リレーションシップ

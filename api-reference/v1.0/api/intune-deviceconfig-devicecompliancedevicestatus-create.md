@@ -3,12 +3,13 @@ title: deviceComplianceDeviceStatus の作成
 description: 新しい deviceComplianceDeviceStatus オブジェクトを作成します。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 060cfccf7de96d05a548c49a7e9df8c7560fe223
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 9e75a0a89ff16bafdf3f4b4fc6cd4cb9fbd0260b
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27821225"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27952420"
 ---
 # <a name="create-devicecompliancedevicestatus"></a>deviceComplianceDeviceStatus の作成
 

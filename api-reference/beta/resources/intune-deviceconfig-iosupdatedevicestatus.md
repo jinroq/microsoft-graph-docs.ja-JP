@@ -3,12 +3,13 @@ title: iosUpdateDeviceStatus リソースの種類
 description: まだ文書化されていません
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 924f355508d0be83a0d524eff5c01e0bacef201f
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 854b78ce7bc520d1d8d534ca92da16abd2cbc2df
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27871870"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27954870"
 ---
 # <a name="iosupdatedevicestatus-resource-type"></a>iosUpdateDeviceStatus リソースの種類
 

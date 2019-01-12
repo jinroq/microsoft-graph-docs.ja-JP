@@ -2,12 +2,14 @@
 title: 範囲:セル
 description: 行と列の番号に基づいて、1 つのセルを含んだ範囲オブジェクトを取得します。以外このセルは、ワークシートのグリッド内であれば、親の範囲の境界の外のセルであってもかまいません。返されるセルは、範囲の左上のセルを基準に配置されます。
 localization_priority: Normal
-ms.openlocfilehash: 3d72f78b6767dffe52e42ae210c24b9d96cc87d1
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: lumine2008
+ms.prod: excel
+ms.openlocfilehash: a46f0e43a9eb1099c2df615b88f15576afa30e9c
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27862980"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27951482"
 ---
 # <a name="range-cell"></a>範囲:セル
 
@@ -38,7 +40,7 @@ GET /workbook/tables/{id|name}/columns/{id|name}/range/cell
 ## <a name="path-parameters"></a>パス パラメーター
 パスでは、次のパラメーターを提供します。
 
-| Parameter    | Type   |説明|
+| パラメーター    | Type   |説明|
 |:---------------|:--------|:----------|
 |row|Int32|取得するセルの行番号。0 を起点とする番号になります。|
 |列|Int32|取得セルの列番号。0 を起点とする番号になります。|

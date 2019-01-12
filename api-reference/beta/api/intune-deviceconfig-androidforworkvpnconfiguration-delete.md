@@ -3,12 +3,13 @@ title: AndroidForWorkVpnConfiguration を削除します。
 description: AndroidForWorkVpnConfiguration を削除します。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 085cbdb63c1d7a801f06b73e22b737fa158bce15
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 951d111866699a81e68b0fd5eb681aa43867c07a
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27891855"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27948241"
 ---
 # <a name="delete-androidforworkvpnconfiguration"></a>AndroidForWorkVpnConfiguration を削除します。
 

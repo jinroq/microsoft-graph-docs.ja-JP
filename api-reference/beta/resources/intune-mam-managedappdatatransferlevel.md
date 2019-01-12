@@ -3,12 +3,13 @@ title: managedAppDataTransferLevel 列挙型
 description: これらのクラスのアプリケーションにデータを転送できます。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 218888cb9b122e9017e24d77df3e5a8cb93d1bfe
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 094f27cbc8bdde38c5ef95bcbac9209485463096
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27847783"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27947177"
 ---
 # <a name="managedappdatatransferlevel-enum-type"></a>managedAppDataTransferLevel 列挙型
 

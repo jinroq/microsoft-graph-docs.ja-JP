@@ -3,12 +3,13 @@ title: androidMinimumOperatingSystem リソースの種類
 description: Android モバイル アプリに必要な最小限のオペレーティング システムのプロパティが含まれます。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 79a59104d2cfc062852b3f6e8e39627b49072a31
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 764d075489930cacea6463af2d0687a5a92227a4
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27808835"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27952028"
 ---
 # <a name="androidminimumoperatingsystem-resource-type"></a>androidMinimumOperatingSystem リソースの種類
 

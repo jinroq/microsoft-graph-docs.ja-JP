@@ -3,12 +3,13 @@ title: チャネル リソースの種類
 description: 'チャネルは、チーム内での chatMessages のコレクションです。 '
 author: nkramer
 localization_priority: Priority
-ms.openlocfilehash: 058632c9f56462195db0cd268fd0af262d4292f3
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: microsoft-teams
+ms.openlocfilehash: 6529c555e418589cb757a1bc52bda520bd792745
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27842687"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27952329"
 ---
 # <a name="channel-resource-type"></a>チャネル リソースの種類
 

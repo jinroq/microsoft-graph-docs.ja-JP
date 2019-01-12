@@ -3,12 +3,13 @@ title: unsupportedDeviceConfigurationDetail リソースの種類
 description: エンティティがサポートされている理由の説明です。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 0a213961e6b816917b061bc56c792cf9a60e3a2a
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 6b82dcf28652cbe54a4932a641579101cb392639
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27839474"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27949774"
 ---
 # <a name="unsupporteddeviceconfigurationdetail-resource-type"></a>unsupportedDeviceConfigurationDetail リソースの種類
 

@@ -3,12 +3,13 @@ title: Create mobileThreatDefenseConnector
 description: 新しい mobileThreatDefenseConnector オブジェクトを作成します。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 5b4c85bda5c32b829ede20b68bfd5a8d185daeb6
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 3336c03f86ac7b6d9b926780fccd5cc9e60d5db2
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27860103"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27950677"
 ---
 # <a name="create-mobilethreatdefenseconnector"></a>Create mobileThreatDefenseConnector
 

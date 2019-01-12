@@ -3,12 +3,13 @@ title: Get ChartLineFormat
 description: chartlineformat オブジェクトのプロパティと関係を読み取ります。
 author: lumine2008
 localization_priority: Normal
-ms.openlocfilehash: 71e8f64cf3572ae92ebf350682274741a06a9eb7
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: excel
+ms.openlocfilehash: 3d2cff07b2f8142565fcfd4ee5d677f7f1796a5b
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27831914"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27950957"
 ---
 # <a name="get-chartlineformat"></a>Get ChartLineFormat
 

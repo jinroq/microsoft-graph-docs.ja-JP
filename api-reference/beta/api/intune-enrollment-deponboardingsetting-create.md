@@ -3,12 +3,13 @@ title: DepOnboardingSetting を作成します。
 description: 新しい depOnboardingSetting オブジェクトを作成します。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 89e46c715b5f888ae3c9f1fb02a0566da8485944
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: e9a5ed92f1a0ce656c1baa7af8a3cb23299395a9
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27854902"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27949487"
 ---
 # <a name="create-deponboardingsetting"></a>DepOnboardingSetting を作成します。
 
@@ -54,13 +55,13 @@ POST /deviceManagement/depOnboardingSettings
 |lastModifiedDateTime|DateTimeOffset|Onboarded でした。|
 |lastSuccessfulSyncDateTime|DateTimeOffset|Intune のサービスの最後の syned|
 |lastSyncTriggeredDateTime|DateTimeOffset|Intune が最後に同期を要求された場合。|
-|shareTokenWithSchoolDataSyncService|ブール型|かどうか Dep トークンの共有は学校のデータ同期サービスで有効になります。|
+|shareTokenWithSchoolDataSyncService|Boolean|かどうか Dep トークンの共有は学校のデータ同期サービスで有効になります。|
 |lastSyncErrorCode|Int32|Dep の前回の同期中に、Apple によって報告されたエラー ・ コードです。|
 |tokenType|[depTokenType](../resources/intune-enrollment-deptokentype.md)|Dep のトークンの種類を設定を取得または取得します。 可能な値は、`none`、`dep`、`appleSchoolManager` です。|
 |tokenName|String|Dep のトークンの表示名|
 |syncedDeviceCount|Int32|同期されたデバイスの数を取得|
 |defaultProfileDisplayName|String|同期されたデバイスの数を取得|
-|dataSharingConsentGranted|ブール型|アップル Dep のサービスと共有データの許可に同意するもの|
+|dataSharingConsentGranted|Boolean|アップル Dep のサービスと共有データの許可に同意するもの|
 
 
 

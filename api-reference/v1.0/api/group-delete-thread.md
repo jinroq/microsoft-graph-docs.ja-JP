@@ -3,12 +3,13 @@ title: 会話スレッドを削除する
 description: thread オブジェクトを削除します。
 author: dkershaw10
 localization_priority: Normal
-ms.openlocfilehash: ce9be63bc3bc90986886e9b2c49be7cf5e21a50e
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: groups
+ms.openlocfilehash: 24e779b528391e82f452f7bbe3153e39a3975b93
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27810788"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27946757"
 ---
 # <a name="delete-conversation-thread"></a>会話スレッドを削除する
 [thread](../resources/conversationthread.md) オブジェクトを削除します。

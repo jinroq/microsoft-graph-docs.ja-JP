@@ -3,12 +3,13 @@ title: Azure AD id 保護 API (プレビュー) を使用します。
 description: Azure AD のアイデンティティ保護によって検出されたリスク イベントの種類ごとに identityRiskEvent リソースを照会するのにには、Microsoft Graph を使用します。 Azure AD プレミアム p2 のお客様にこれらのイベントを利用できます。 イベントのサブセットでは、Azure AD プレミアム P1 で使用可能です。
 author: cloudhandler
 localization_priority: Normal
-ms.openlocfilehash: 8ae87a13565f660b06179712220806f11f611d47
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: security
+ms.openlocfilehash: 9c92be83fd3248ad10578446f91b38176913da1a
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27849778"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27953624"
 ---
 # <a name="use-the-azure-ad-identity-protection-api-preview"></a>Azure AD id 保護 API (プレビュー) を使用します。
 

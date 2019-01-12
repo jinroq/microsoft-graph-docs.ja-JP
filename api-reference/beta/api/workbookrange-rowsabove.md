@@ -3,12 +3,13 @@ title: 'workbookRange: rowsAbove'
 description: 指定した範囲の上にある特定の行数を取得します。
 author: lumine2008
 localization_priority: Normal
-ms.openlocfilehash: e714148b6c6e87974b4f2ee5444c9b62c5e9b8f6
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: excel
+ms.openlocfilehash: 54663aeda88f29b89202dbac6ac5962788192815
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27840573"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27947688"
 ---
 # <a name="workbookrange-rowsabove"></a>workbookRange: rowsAbove
 
@@ -34,7 +35,7 @@ POST /me/drive/root/workbook/worksheets/{id}/range/rowsAbove(count=n)
 
 ## <a name="function-parameters"></a>関数パラメーター
 
-| Parameter    | Type   |説明|
+| パラメーター    | Type   |説明|
 |:---------------|:--------|:----------|
 |count|Int32|省略可能。結果の範囲に含める行の数です。通常、正の数値を使用して現在の範囲外に範囲を作成します。負の数値を使用して、現在の範囲内に範囲を作成することもできます。既定値は 1 です。|
 

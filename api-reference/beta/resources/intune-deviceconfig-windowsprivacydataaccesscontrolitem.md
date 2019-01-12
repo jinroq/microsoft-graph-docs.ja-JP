@@ -3,12 +3,13 @@ title: windowsPrivacyDataAccessControlItem リソースの種類
 description: プライバシー データのカテゴリごとのアクセス制御レベルを指定します。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: b3672ff7bd0c968f60cc80797545aa8bb13d2bb5
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: dfce1de413168da685d7460f56a8ee98972c27e1
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27837423"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27952119"
 ---
 # <a name="windowsprivacydataaccesscontrolitem-resource-type"></a>windowsPrivacyDataAccessControlItem リソースの種類
 
