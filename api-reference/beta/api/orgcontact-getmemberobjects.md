@@ -2,52 +2,54 @@
 title: 'orgContact: getMemberObjects'
 description: この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「アクセス許可」を参照してください。
 localization_priority: Normal
-ms.openlocfilehash: ac6c8fddf4cedae156ec25933ea8d9f95bf8020a
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: lleonard-msft
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: 597dfeaa1870aab74d8bc813b50aebc2891dc430
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27856575"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27938854"
 ---
-# <a name="orgcontact-getmemberobjects"></a><span data-ttu-id="ddab3-104">orgContact: getMemberObjects</span><span class="sxs-lookup"><span data-stu-id="ddab3-104">orgContact: getMemberObjects</span></span>
+# <a name="orgcontact-getmemberobjects"></a><span data-ttu-id="0c8af-104">orgContact: getMemberObjects</span><span class="sxs-lookup"><span data-stu-id="0c8af-104">orgContact: getMemberObjects</span></span>
 
-> <span data-ttu-id="ddab3-105">**重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。</span><span class="sxs-lookup"><span data-stu-id="ddab3-105">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="ddab3-106">実稼働アプリケーションでの、これらの API の使用はサポートされていません。</span><span class="sxs-lookup"><span data-stu-id="ddab3-106">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="0c8af-105">**重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。</span><span class="sxs-lookup"><span data-stu-id="0c8af-105">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="0c8af-106">実稼働アプリケーションでの、これらの API の使用はサポートされていません。</span><span class="sxs-lookup"><span data-stu-id="0c8af-106">Use of these APIs in production applications is not supported.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="ddab3-107">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="ddab3-107">Permissions</span></span>
-<span data-ttu-id="ddab3-p103">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="ddab3-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="0c8af-107">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="0c8af-107">Permissions</span></span>
+<span data-ttu-id="0c8af-p103">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="0c8af-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="ddab3-110">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="ddab3-110">Permission type</span></span>      | <span data-ttu-id="ddab3-111">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="ddab3-111">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="0c8af-110">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="0c8af-110">Permission type</span></span>      | <span data-ttu-id="0c8af-111">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="0c8af-111">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="ddab3-112">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="ddab3-112">Delegated (work or school account)</span></span> | <span data-ttu-id="ddab3-113">Directory.Read.All、Directory.ReadWrite.All、Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="ddab3-113">Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All</span></span>    |
-|<span data-ttu-id="ddab3-114">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="ddab3-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="ddab3-115">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="ddab3-115">Not supported.</span></span>    |
-|<span data-ttu-id="ddab3-116">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="ddab3-116">Application</span></span> | <span data-ttu-id="ddab3-117">Directory.Read.All、Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="ddab3-117">Directory.Read.All, Directory.ReadWrite.All</span></span> |
+|<span data-ttu-id="0c8af-112">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="0c8af-112">Delegated (work or school account)</span></span> | <span data-ttu-id="0c8af-113">Directory.Read.All、Directory.ReadWrite.All、Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="0c8af-113">Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All</span></span>    |
+|<span data-ttu-id="0c8af-114">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="0c8af-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="0c8af-115">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="0c8af-115">Not supported.</span></span>    |
+|<span data-ttu-id="0c8af-116">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="0c8af-116">Application</span></span> | <span data-ttu-id="0c8af-117">Directory.Read.All、Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="0c8af-117">Directory.Read.All, Directory.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="ddab3-118">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="ddab3-118">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="0c8af-118">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="0c8af-118">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /contacts/{id}/getMemberObjects
 
 ```
-## <a name="request-headers"></a><span data-ttu-id="ddab3-119">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="ddab3-119">Request headers</span></span>
-| <span data-ttu-id="ddab3-120">名前</span><span class="sxs-lookup"><span data-stu-id="ddab3-120">Name</span></span>       | <span data-ttu-id="ddab3-121">種類</span><span class="sxs-lookup"><span data-stu-id="ddab3-121">Type</span></span> | <span data-ttu-id="ddab3-122">説明</span><span class="sxs-lookup"><span data-stu-id="ddab3-122">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="0c8af-119">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="0c8af-119">Request headers</span></span>
+| <span data-ttu-id="0c8af-120">名前</span><span class="sxs-lookup"><span data-stu-id="0c8af-120">Name</span></span>       | <span data-ttu-id="0c8af-121">種類</span><span class="sxs-lookup"><span data-stu-id="0c8af-121">Type</span></span> | <span data-ttu-id="0c8af-122">説明</span><span class="sxs-lookup"><span data-stu-id="0c8af-122">Description</span></span>|
 |:---------------|:--------|:----------|
-| <span data-ttu-id="ddab3-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="ddab3-123">Authorization</span></span>  | <span data-ttu-id="ddab3-124">string</span><span class="sxs-lookup"><span data-stu-id="ddab3-124">string</span></span>  | <span data-ttu-id="ddab3-p104">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="ddab3-p104">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="0c8af-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="0c8af-123">Authorization</span></span>  | <span data-ttu-id="0c8af-124">string</span><span class="sxs-lookup"><span data-stu-id="0c8af-124">string</span></span>  | <span data-ttu-id="0c8af-p104">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="0c8af-p104">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="ddab3-127">要求本文</span><span class="sxs-lookup"><span data-stu-id="ddab3-127">Request body</span></span>
-<span data-ttu-id="ddab3-128">要求本文で、次のパラメーターを含む JSON オブジェクトを指定します。</span><span class="sxs-lookup"><span data-stu-id="ddab3-128">In the request body, provide a JSON object with the following parameters.</span></span>
+## <a name="request-body"></a><span data-ttu-id="0c8af-127">要求本文</span><span class="sxs-lookup"><span data-stu-id="0c8af-127">Request body</span></span>
+<span data-ttu-id="0c8af-128">要求本文で、次のパラメーターを含む JSON オブジェクトを指定します。</span><span class="sxs-lookup"><span data-stu-id="0c8af-128">In the request body, provide a JSON object with the following parameters.</span></span>
 
-| <span data-ttu-id="ddab3-129">パラメーター</span><span class="sxs-lookup"><span data-stu-id="ddab3-129">Parameter</span></span>    | <span data-ttu-id="ddab3-130">Type</span><span class="sxs-lookup"><span data-stu-id="ddab3-130">Type</span></span>   |<span data-ttu-id="ddab3-131">説明</span><span class="sxs-lookup"><span data-stu-id="ddab3-131">Description</span></span>|
+| <span data-ttu-id="0c8af-129">パラメーター</span><span class="sxs-lookup"><span data-stu-id="0c8af-129">Parameter</span></span>    | <span data-ttu-id="0c8af-130">Type</span><span class="sxs-lookup"><span data-stu-id="0c8af-130">Type</span></span>   |<span data-ttu-id="0c8af-131">説明</span><span class="sxs-lookup"><span data-stu-id="0c8af-131">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="ddab3-132">securityEnabledOnly</span><span class="sxs-lookup"><span data-stu-id="ddab3-132">securityEnabledOnly</span></span>|<span data-ttu-id="ddab3-133">ブール型</span><span class="sxs-lookup"><span data-stu-id="ddab3-133">Boolean</span></span>||
+|<span data-ttu-id="0c8af-132">securityEnabledOnly</span><span class="sxs-lookup"><span data-stu-id="0c8af-132">securityEnabledOnly</span></span>|<span data-ttu-id="0c8af-133">ブール型</span><span class="sxs-lookup"><span data-stu-id="0c8af-133">Boolean</span></span>||
 
-## <a name="response"></a><span data-ttu-id="ddab3-134">応答</span><span class="sxs-lookup"><span data-stu-id="ddab3-134">Response</span></span>
+## <a name="response"></a><span data-ttu-id="0c8af-134">応答</span><span class="sxs-lookup"><span data-stu-id="0c8af-134">Response</span></span>
 
-<span data-ttu-id="ddab3-135">成功した場合、このメソッドは `200 OK` 応答コードと、応答本文で文字列コレクション オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="ddab3-135">If successful, this method returns `200 OK` response code and String collection object in the response body.</span></span>
+<span data-ttu-id="0c8af-135">成功した場合、このメソッドは `200 OK` 応答コードと、応答本文で文字列コレクション オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="0c8af-135">If successful, this method returns `200 OK` response code and String collection object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="ddab3-136">例</span><span class="sxs-lookup"><span data-stu-id="ddab3-136">Example</span></span>
-<span data-ttu-id="ddab3-137">以下は、この API を呼び出す方法の例です。</span><span class="sxs-lookup"><span data-stu-id="ddab3-137">Here is an example of how to call this API.</span></span>
-##### <a name="request"></a><span data-ttu-id="ddab3-138">要求</span><span class="sxs-lookup"><span data-stu-id="ddab3-138">Request</span></span>
-<span data-ttu-id="ddab3-139">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="ddab3-139">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="0c8af-136">例</span><span class="sxs-lookup"><span data-stu-id="0c8af-136">Example</span></span>
+<span data-ttu-id="0c8af-137">以下は、この API を呼び出す方法の例です。</span><span class="sxs-lookup"><span data-stu-id="0c8af-137">Here is an example of how to call this API.</span></span>
+##### <a name="request"></a><span data-ttu-id="0c8af-138">要求</span><span class="sxs-lookup"><span data-stu-id="0c8af-138">Request</span></span>
+<span data-ttu-id="0c8af-139">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="0c8af-139">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "orgcontact_getmemberobjects"
@@ -62,8 +64,8 @@ Content-length: 33
 }
 ```
 
-##### <a name="response"></a><span data-ttu-id="ddab3-140">応答</span><span class="sxs-lookup"><span data-stu-id="ddab3-140">Response</span></span>
-<span data-ttu-id="ddab3-p105">以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。</span><span class="sxs-lookup"><span data-stu-id="ddab3-p105">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="0c8af-140">応答</span><span class="sxs-lookup"><span data-stu-id="0c8af-140">Response</span></span>
+<span data-ttu-id="0c8af-p105">以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。</span><span class="sxs-lookup"><span data-stu-id="0c8af-p105">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,

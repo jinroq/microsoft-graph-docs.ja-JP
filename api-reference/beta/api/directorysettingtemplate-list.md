@@ -2,52 +2,54 @@
 title: リスト directorySettingTemplates
 description: テンプレートを設定するディレクトリは、ディレクトリの設定、どのディレクトリから設定を作成し、テナント内で使用されるテンプレートのセットを表します。  この操作は、使用可能な directorySettingTemplates オブジェクトの一覧を取得します。
 localization_priority: Normal
-ms.openlocfilehash: 288a914da11c09cd39767a48d527510998c9be1d
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: lleonard-msft
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: 918e7072c4c4006a6853de584e994a1e5d72e14d
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27833328"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27931021"
 ---
-# <a name="list-directorysettingtemplates"></a><span data-ttu-id="a3711-104">リスト directorySettingTemplates</span><span class="sxs-lookup"><span data-stu-id="a3711-104">List directorySettingTemplates</span></span>
+# <a name="list-directorysettingtemplates"></a><span data-ttu-id="edae1-104">リスト directorySettingTemplates</span><span class="sxs-lookup"><span data-stu-id="edae1-104">List directorySettingTemplates</span></span>
 
-> <span data-ttu-id="a3711-105">**重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。</span><span class="sxs-lookup"><span data-stu-id="a3711-105">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="a3711-106">実稼働アプリケーションでの、これらの API の使用はサポートされていません。</span><span class="sxs-lookup"><span data-stu-id="a3711-106">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="edae1-105">**重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。</span><span class="sxs-lookup"><span data-stu-id="edae1-105">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="edae1-106">実稼働アプリケーションでの、これらの API の使用はサポートされていません。</span><span class="sxs-lookup"><span data-stu-id="edae1-106">Use of these APIs in production applications is not supported.</span></span>
 
-<span data-ttu-id="a3711-107">テンプレートを設定するディレクトリは、ディレクトリの設定、どのディレクトリから設定を作成し、テナント内で使用されるテンプレートのセットを表します。</span><span class="sxs-lookup"><span data-stu-id="a3711-107">Directory setting templates represents a set of templates of directory settings, from which directory settings may be created and used within a tenant.</span></span>  <span data-ttu-id="a3711-108">この操作は、使用可能な directorySettingTemplates オブジェクトの一覧を取得します。</span><span class="sxs-lookup"><span data-stu-id="a3711-108">This operation retrieves the list of available directorySettingTemplates objects.</span></span>
+<span data-ttu-id="edae1-107">テンプレートを設定するディレクトリは、ディレクトリの設定、どのディレクトリから設定を作成し、テナント内で使用されるテンプレートのセットを表します。</span><span class="sxs-lookup"><span data-stu-id="edae1-107">Directory setting templates represents a set of templates of directory settings, from which directory settings may be created and used within a tenant.</span></span>  <span data-ttu-id="edae1-108">この操作は、使用可能な directorySettingTemplates オブジェクトの一覧を取得します。</span><span class="sxs-lookup"><span data-stu-id="edae1-108">This operation retrieves the list of available directorySettingTemplates objects.</span></span>
 
-> <span data-ttu-id="a3711-109">**注**: この API の/beta バージョンは、のみのグループに適用されます。</span><span class="sxs-lookup"><span data-stu-id="a3711-109">**Note**: The /beta version of this API is only applies to groups.</span></span> <span data-ttu-id="a3711-110">この API の/v1.0 のバージョンは*groupSettingTemplate のリスト*に名前変更されました。</span><span class="sxs-lookup"><span data-stu-id="a3711-110">The /v1.0 version of this API has been renamed to *List groupSettingTemplate*.</span></span>
+> <span data-ttu-id="edae1-109">**注**: この API の/beta バージョンは、のみのグループに適用されます。</span><span class="sxs-lookup"><span data-stu-id="edae1-109">**Note**: The /beta version of this API is only applies to groups.</span></span> <span data-ttu-id="edae1-110">この API の/v1.0 のバージョンは*groupSettingTemplate のリスト*に名前変更されました。</span><span class="sxs-lookup"><span data-stu-id="edae1-110">The /v1.0 version of this API has been renamed to *List groupSettingTemplate*.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="a3711-111">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="a3711-111">Permissions</span></span>
-<span data-ttu-id="a3711-p105">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="a3711-p105">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="edae1-111">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="edae1-111">Permissions</span></span>
+<span data-ttu-id="edae1-p105">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="edae1-p105">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="a3711-114">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="a3711-114">Permission type</span></span>      | <span data-ttu-id="a3711-115">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="a3711-115">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="edae1-114">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="edae1-114">Permission type</span></span>      | <span data-ttu-id="edae1-115">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="edae1-115">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="a3711-116">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="a3711-116">Delegated (work or school account)</span></span> | <span data-ttu-id="a3711-117">Directory.Read.All、Directory.ReadWrite.All、Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="a3711-117">Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All</span></span>    |
-|<span data-ttu-id="a3711-118">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="a3711-118">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="a3711-119">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="a3711-119">Not supported.</span></span>    |
-|<span data-ttu-id="a3711-120">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="a3711-120">Application</span></span> | <span data-ttu-id="a3711-121">Directory.Read.All、Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="a3711-121">Directory.Read.All, Directory.ReadWrite.All</span></span> |
+|<span data-ttu-id="edae1-116">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="edae1-116">Delegated (work or school account)</span></span> | <span data-ttu-id="edae1-117">Directory.Read.All、Directory.ReadWrite.All、Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="edae1-117">Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All</span></span>    |
+|<span data-ttu-id="edae1-118">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="edae1-118">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="edae1-119">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="edae1-119">Not supported.</span></span>    |
+|<span data-ttu-id="edae1-120">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="edae1-120">Application</span></span> | <span data-ttu-id="edae1-121">Directory.Read.All、Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="edae1-121">Directory.Read.All, Directory.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="a3711-122">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="a3711-122">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="edae1-122">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="edae1-122">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /directorySettingTemplates
 ```
-## <a name="optional-query-parameters"></a><span data-ttu-id="a3711-123">オプションのクエリ パラメーター</span><span class="sxs-lookup"><span data-stu-id="a3711-123">Optional query parameters</span></span>
-<span data-ttu-id="a3711-124">このメソッドは、応答をカスタマイズするための [OData クエリ パラメーター](https://developer.microsoft.com/graph/docs/concepts/query_parameters)をサポートします。</span><span class="sxs-lookup"><span data-stu-id="a3711-124">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="edae1-123">オプションのクエリ パラメーター</span><span class="sxs-lookup"><span data-stu-id="edae1-123">Optional query parameters</span></span>
+<span data-ttu-id="edae1-124">このメソッドは、応答をカスタマイズするための [OData クエリ パラメーター](https://developer.microsoft.com/graph/docs/concepts/query_parameters)をサポートします。</span><span class="sxs-lookup"><span data-stu-id="edae1-124">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="a3711-125">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="a3711-125">Request headers</span></span>
-| <span data-ttu-id="a3711-126">名前</span><span class="sxs-lookup"><span data-stu-id="a3711-126">Name</span></span>      |<span data-ttu-id="a3711-127">説明</span><span class="sxs-lookup"><span data-stu-id="a3711-127">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="edae1-125">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="edae1-125">Request headers</span></span>
+| <span data-ttu-id="edae1-126">名前</span><span class="sxs-lookup"><span data-stu-id="edae1-126">Name</span></span>      |<span data-ttu-id="edae1-127">説明</span><span class="sxs-lookup"><span data-stu-id="edae1-127">Description</span></span>|
 |:----------|:----------|
-| <span data-ttu-id="a3711-128">Authorization</span><span class="sxs-lookup"><span data-stu-id="a3711-128">Authorization</span></span>  | <span data-ttu-id="a3711-p106">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="a3711-p106">Bearer {token}. Required.</span></span>|
+| <span data-ttu-id="edae1-128">Authorization</span><span class="sxs-lookup"><span data-stu-id="edae1-128">Authorization</span></span>  | <span data-ttu-id="edae1-p106">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="edae1-p106">Bearer {token}. Required.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="a3711-131">要求本文</span><span class="sxs-lookup"><span data-stu-id="a3711-131">Request body</span></span>
-<span data-ttu-id="a3711-132">このメソッドには、要求本文を指定しません。</span><span class="sxs-lookup"><span data-stu-id="a3711-132">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="edae1-131">要求本文</span><span class="sxs-lookup"><span data-stu-id="edae1-131">Request body</span></span>
+<span data-ttu-id="edae1-132">このメソッドには、要求本文を指定しません。</span><span class="sxs-lookup"><span data-stu-id="edae1-132">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="a3711-133">応答</span><span class="sxs-lookup"><span data-stu-id="a3711-133">Response</span></span>
+## <a name="response"></a><span data-ttu-id="edae1-133">応答</span><span class="sxs-lookup"><span data-stu-id="edae1-133">Response</span></span>
 
-<span data-ttu-id="a3711-134">かどうかは成功すると、このメソッドが返されます、`200 OK`応答コードおよび応答の本文内の[directorySettingTemplate](../resources/directorysettingtemplate.md)オブジェクトのコレクションです。</span><span class="sxs-lookup"><span data-stu-id="a3711-134">If successful, this method returns a `200 OK` response code and collection of [directorySettingTemplate](../resources/directorysettingtemplate.md) objects in the response body.</span></span>
-## <a name="example"></a><span data-ttu-id="a3711-135">例</span><span class="sxs-lookup"><span data-stu-id="a3711-135">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="a3711-136">要求</span><span class="sxs-lookup"><span data-stu-id="a3711-136">Request</span></span>
-<span data-ttu-id="a3711-137">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="a3711-137">Here is an example of the request.</span></span>
+<span data-ttu-id="edae1-134">かどうかは成功すると、このメソッドが返されます、`200 OK`応答コードおよび応答の本文内の[directorySettingTemplate](../resources/directorysettingtemplate.md)オブジェクトのコレクションです。</span><span class="sxs-lookup"><span data-stu-id="edae1-134">If successful, this method returns a `200 OK` response code and collection of [directorySettingTemplate](../resources/directorysettingtemplate.md) objects in the response body.</span></span>
+## <a name="example"></a><span data-ttu-id="edae1-135">例</span><span class="sxs-lookup"><span data-stu-id="edae1-135">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="edae1-136">要求</span><span class="sxs-lookup"><span data-stu-id="edae1-136">Request</span></span>
+<span data-ttu-id="edae1-137">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="edae1-137">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "get_directorysettingtemplates"
@@ -55,8 +57,8 @@ GET /directorySettingTemplates
 ```http
 GET https://graph.microsoft.com/beta/directorySettingTemplates
 ```
-##### <a name="response"></a><span data-ttu-id="a3711-138">応答</span><span class="sxs-lookup"><span data-stu-id="a3711-138">Response</span></span>
-<span data-ttu-id="a3711-p107">以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。</span><span class="sxs-lookup"><span data-stu-id="a3711-p107">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="edae1-138">応答</span><span class="sxs-lookup"><span data-stu-id="edae1-138">Response</span></span>
+<span data-ttu-id="edae1-p107">以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。</span><span class="sxs-lookup"><span data-stu-id="edae1-p107">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,

@@ -3,28 +3,29 @@ title: mdmWindowsInformationProtectionPolicy の削除
 description: mdmWindowsInformationProtectionPolicy を削除します。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 53e3d582ba44a2b5f409b709c677963d3d257d44
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 68b70fa3cc0865c9faa60f27a2d9ad40ee0711cc
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27810725"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27932526"
 ---
-# <a name="delete-mdmwindowsinformationprotectionpolicy"></a><span data-ttu-id="f6a06-103">mdmWindowsInformationProtectionPolicy の削除</span><span class="sxs-lookup"><span data-stu-id="f6a06-103">Delete mdmWindowsInformationProtectionPolicy</span></span>
+# <a name="delete-mdmwindowsinformationprotectionpolicy"></a><span data-ttu-id="17569-103">mdmWindowsInformationProtectionPolicy の削除</span><span class="sxs-lookup"><span data-stu-id="17569-103">Delete mdmWindowsInformationProtectionPolicy</span></span>
 
-> <span data-ttu-id="f6a06-104">**注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。</span><span class="sxs-lookup"><span data-stu-id="f6a06-104">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
+> <span data-ttu-id="17569-104">**注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。</span><span class="sxs-lookup"><span data-stu-id="17569-104">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
 
-<span data-ttu-id="f6a06-105">[mdmWindowsInformationProtectionPolicy](../resources/intune-mam-mdmwindowsinformationprotectionpolicy.md) を削除します。</span><span class="sxs-lookup"><span data-stu-id="f6a06-105">Deletes a [mdmWindowsInformationProtectionPolicy](../resources/intune-mam-mdmwindowsinformationprotectionpolicy.md).</span></span>
-## <a name="prerequisites"></a><span data-ttu-id="f6a06-106">前提条件</span><span class="sxs-lookup"><span data-stu-id="f6a06-106">Prerequisites</span></span>
-<span data-ttu-id="f6a06-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="f6a06-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="17569-105">[mdmWindowsInformationProtectionPolicy](../resources/intune-mam-mdmwindowsinformationprotectionpolicy.md) を削除します。</span><span class="sxs-lookup"><span data-stu-id="17569-105">Deletes a [mdmWindowsInformationProtectionPolicy](../resources/intune-mam-mdmwindowsinformationprotectionpolicy.md).</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="17569-106">前提条件</span><span class="sxs-lookup"><span data-stu-id="17569-106">Prerequisites</span></span>
+<span data-ttu-id="17569-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="17569-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="f6a06-109">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="f6a06-109">Permission type</span></span>|<span data-ttu-id="f6a06-110">アクセス許可 (特権の大きいものから小さいものへ)</span><span class="sxs-lookup"><span data-stu-id="f6a06-110">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="17569-109">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="17569-109">Permission type</span></span>|<span data-ttu-id="17569-110">アクセス許可 (特権の大きいものから小さいものへ)</span><span class="sxs-lookup"><span data-stu-id="17569-110">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="f6a06-111">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="f6a06-111">Delegated (work or school account)</span></span>|<span data-ttu-id="f6a06-112">DeviceManagementApps.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="f6a06-112">DeviceManagementApps.ReadWrite.All</span></span>|
-|<span data-ttu-id="f6a06-113">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="f6a06-113">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="f6a06-114">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="f6a06-114">Not supported.</span></span>|
-|<span data-ttu-id="f6a06-115">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="f6a06-115">Application</span></span>|<span data-ttu-id="f6a06-116">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="f6a06-116">Not supported.</span></span>|
+|<span data-ttu-id="17569-111">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="17569-111">Delegated (work or school account)</span></span>|<span data-ttu-id="17569-112">DeviceManagementApps.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="17569-112">DeviceManagementApps.ReadWrite.All</span></span>|
+|<span data-ttu-id="17569-113">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="17569-113">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="17569-114">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="17569-114">Not supported.</span></span>|
+|<span data-ttu-id="17569-115">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="17569-115">Application</span></span>|<span data-ttu-id="17569-116">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="17569-116">Not supported.</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="f6a06-117">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="f6a06-117">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="17569-117">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="17569-117">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -33,27 +34,27 @@ ms.locfileid: "27810725"
 DELETE /deviceAppManagement/mdmWindowsInformationProtectionPolicies/{mdmWindowsInformationProtectionPolicyId}
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="f6a06-118">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="f6a06-118">Request headers</span></span>
-|<span data-ttu-id="f6a06-119">ヘッダー</span><span class="sxs-lookup"><span data-stu-id="f6a06-119">Header</span></span>|<span data-ttu-id="f6a06-120">値</span><span class="sxs-lookup"><span data-stu-id="f6a06-120">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="17569-118">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="17569-118">Request headers</span></span>
+|<span data-ttu-id="17569-119">ヘッダー</span><span class="sxs-lookup"><span data-stu-id="17569-119">Header</span></span>|<span data-ttu-id="17569-120">値</span><span class="sxs-lookup"><span data-stu-id="17569-120">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="f6a06-121">Authorization</span><span class="sxs-lookup"><span data-stu-id="f6a06-121">Authorization</span></span>|<span data-ttu-id="f6a06-122">ベアラー &lt;トークン&gt; が必須。</span><span class="sxs-lookup"><span data-stu-id="f6a06-122">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="f6a06-123">Accept</span><span class="sxs-lookup"><span data-stu-id="f6a06-123">Accept</span></span>|<span data-ttu-id="f6a06-124">application/json</span><span class="sxs-lookup"><span data-stu-id="f6a06-124">application/json</span></span>|
+|<span data-ttu-id="17569-121">Authorization</span><span class="sxs-lookup"><span data-stu-id="17569-121">Authorization</span></span>|<span data-ttu-id="17569-122">ベアラー &lt;トークン&gt; が必須。</span><span class="sxs-lookup"><span data-stu-id="17569-122">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="17569-123">Accept</span><span class="sxs-lookup"><span data-stu-id="17569-123">Accept</span></span>|<span data-ttu-id="17569-124">application/json</span><span class="sxs-lookup"><span data-stu-id="17569-124">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="f6a06-125">要求本文</span><span class="sxs-lookup"><span data-stu-id="f6a06-125">Request body</span></span>
-<span data-ttu-id="f6a06-126">このメソッドには、要求本文を指定しません。</span><span class="sxs-lookup"><span data-stu-id="f6a06-126">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="17569-125">要求本文</span><span class="sxs-lookup"><span data-stu-id="17569-125">Request body</span></span>
+<span data-ttu-id="17569-126">このメソッドには、要求本文を指定しません。</span><span class="sxs-lookup"><span data-stu-id="17569-126">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="f6a06-127">応答</span><span class="sxs-lookup"><span data-stu-id="f6a06-127">Response</span></span>
-<span data-ttu-id="f6a06-128">成功した場合、このメソッドは `204 No Content` 応答コードを返します。</span><span class="sxs-lookup"><span data-stu-id="f6a06-128">If successful, this method returns a `204 No Content` response code.</span></span>
+## <a name="response"></a><span data-ttu-id="17569-127">応答</span><span class="sxs-lookup"><span data-stu-id="17569-127">Response</span></span>
+<span data-ttu-id="17569-128">成功した場合、このメソッドは `204 No Content` 応答コードを返します。</span><span class="sxs-lookup"><span data-stu-id="17569-128">If successful, this method returns a `204 No Content` response code.</span></span>
 
-## <a name="example"></a><span data-ttu-id="f6a06-129">例</span><span class="sxs-lookup"><span data-stu-id="f6a06-129">Example</span></span>
-### <a name="request"></a><span data-ttu-id="f6a06-130">要求</span><span class="sxs-lookup"><span data-stu-id="f6a06-130">Request</span></span>
-<span data-ttu-id="f6a06-131">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="f6a06-131">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="17569-129">例</span><span class="sxs-lookup"><span data-stu-id="17569-129">Example</span></span>
+### <a name="request"></a><span data-ttu-id="17569-130">要求</span><span class="sxs-lookup"><span data-stu-id="17569-130">Request</span></span>
+<span data-ttu-id="17569-131">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="17569-131">Here is an example of the request.</span></span>
 ``` http
 DELETE https://graph.microsoft.com/v1.0/deviceAppManagement/mdmWindowsInformationProtectionPolicies/{mdmWindowsInformationProtectionPolicyId}
 ```
 
-### <a name="response"></a><span data-ttu-id="f6a06-132">応答</span><span class="sxs-lookup"><span data-stu-id="f6a06-132">Response</span></span>
-<span data-ttu-id="f6a06-p102">以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。</span><span class="sxs-lookup"><span data-stu-id="f6a06-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="17569-132">応答</span><span class="sxs-lookup"><span data-stu-id="17569-132">Response</span></span>
+<span data-ttu-id="17569-p102">以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。</span><span class="sxs-lookup"><span data-stu-id="17569-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 204 No Content
 ```

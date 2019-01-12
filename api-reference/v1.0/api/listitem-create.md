@@ -4,28 +4,29 @@ ms.author: rgregg
 ms.date: 09/11/2017
 title: SharePoint リストに新しいエントリを作成する
 localization_priority: Priority
-ms.openlocfilehash: 9456a8d7a8cb7561487a5a6bf08e5fd08082cf05
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: sharepoint
+ms.openlocfilehash: 9a7b81c17f7d0e56bb076fe3e351e8ba9c68e29f
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27876413"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27963368"
 ---
-# <a name="create-a-new-item-in-a-list"></a><span data-ttu-id="49a68-102">リストに新しいアイテムを作成する</span><span class="sxs-lookup"><span data-stu-id="49a68-102">Create a new item in a list</span></span>
+# <a name="create-a-new-item-in-a-list"></a><span data-ttu-id="866ee-102">リストに新しいアイテムを作成する</span><span class="sxs-lookup"><span data-stu-id="866ee-102">Create a new item in a list</span></span>
 
-<span data-ttu-id="49a68-103">[list][] に新しい [listItem][] を作成します。</span><span class="sxs-lookup"><span data-stu-id="49a68-103">Create a new [listItem][] in a [list][].</span></span>
+<span data-ttu-id="866ee-103">[list][] に新しい [listItem][] を作成します。</span><span class="sxs-lookup"><span data-stu-id="866ee-103">Create a new [listItem][] in a [list][].</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="49a68-104">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="49a68-104">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="866ee-104">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="866ee-104">Permissions</span></span>
 
-<span data-ttu-id="49a68-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="49a68-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="866ee-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="866ee-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="49a68-107">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="49a68-107">Permission type</span></span>      | <span data-ttu-id="49a68-108">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="49a68-108">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="866ee-107">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="866ee-107">Permission type</span></span>      | <span data-ttu-id="866ee-108">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="866ee-108">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="49a68-109">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="49a68-109">Delegated (work or school account)</span></span> | <span data-ttu-id="49a68-110">Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="49a68-110">Sites.ReadWrite.All</span></span>    |
-|<span data-ttu-id="49a68-111">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="49a68-111">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="49a68-112">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="49a68-112">Not supported.</span></span>    |
-|<span data-ttu-id="49a68-113">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="49a68-113">Application</span></span> | <span data-ttu-id="49a68-114">Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="49a68-114">Sites.ReadWrite.All</span></span> |
+|<span data-ttu-id="866ee-109">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="866ee-109">Delegated (work or school account)</span></span> | <span data-ttu-id="866ee-110">Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="866ee-110">Sites.ReadWrite.All</span></span>    |
+|<span data-ttu-id="866ee-111">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="866ee-111">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="866ee-112">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="866ee-112">Not supported.</span></span>    |
+|<span data-ttu-id="866ee-113">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="866ee-113">Application</span></span> | <span data-ttu-id="866ee-114">Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="866ee-114">Sites.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="49a68-115">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="49a68-115">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="866ee-115">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="866ee-115">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -33,13 +34,13 @@ ms.locfileid: "27876413"
 POST https://graph.microsoft.com/v1.0/sites/{site-id}/lists/{list-id}/items
 ```
 
-## <a name="request-body"></a><span data-ttu-id="49a68-116">要求本文</span><span class="sxs-lookup"><span data-stu-id="49a68-116">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="866ee-116">要求本文</span><span class="sxs-lookup"><span data-stu-id="866ee-116">Request body</span></span>
 
-<span data-ttu-id="49a68-117">要求本文で、作成する [listItem][] リソースの JSON 表記を指定します。</span><span class="sxs-lookup"><span data-stu-id="49a68-117">In the request body, supply a JSON representation of the [listItem][] resource to create.</span></span>
+<span data-ttu-id="866ee-117">要求本文で、作成する [listItem][] リソースの JSON 表記を指定します。</span><span class="sxs-lookup"><span data-stu-id="866ee-117">In the request body, supply a JSON representation of the [listItem][] resource to create.</span></span>
 
-## <a name="example"></a><span data-ttu-id="49a68-118">例</span><span class="sxs-lookup"><span data-stu-id="49a68-118">Example</span></span>
+## <a name="example"></a><span data-ttu-id="866ee-118">例</span><span class="sxs-lookup"><span data-stu-id="866ee-118">Example</span></span>
 
-<span data-ttu-id="49a68-119">新しい汎用リスト アイテムを作成する方法の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="49a68-119">Here is an example of how to create a new generic list item.</span></span>
+<span data-ttu-id="866ee-119">新しい汎用リスト アイテムを作成する方法の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="866ee-119">Here is an example of how to create a new generic list item.</span></span>
 
 <!-- { "blockType": "request", "name": "create-listitem", "scopes": "sites.readwrite.all" } -->
 
@@ -56,9 +57,9 @@ Content-Type: application/json
 }
 ```
 
-## <a name="response"></a><span data-ttu-id="49a68-120">応答</span><span class="sxs-lookup"><span data-stu-id="49a68-120">Response</span></span>
+## <a name="response"></a><span data-ttu-id="866ee-120">応答</span><span class="sxs-lookup"><span data-stu-id="866ee-120">Response</span></span>
 
-<span data-ttu-id="49a68-121">成功した場合、このメソッドは作成されたリスト アイテムの応答本文で [listItem][] を返します。</span><span class="sxs-lookup"><span data-stu-id="49a68-121">If successful, this method returns a [listItem][] in the response body for the created list item.</span></span>
+<span data-ttu-id="866ee-121">成功した場合、このメソッドは作成されたリスト アイテムの応答本文で [listItem][] を返します。</span><span class="sxs-lookup"><span data-stu-id="866ee-121">If successful, this method returns a [listItem][] in the response body for the created list item.</span></span>
 
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.listItem", "truncated": true } -->
 
@@ -85,7 +86,7 @@ Content-type: application/json
 }
 ```
 
-<span data-ttu-id="49a68-122">**注:** 応答オブジェクトは、わかりやすくするために切り詰められています。</span><span class="sxs-lookup"><span data-stu-id="49a68-122">**Note:** The response object is truncated for clarity.</span></span> <span data-ttu-id="49a68-123">実際の呼び出しでは、既定のプロパティが返されます。</span><span class="sxs-lookup"><span data-stu-id="49a68-123">Default properties will be returned from the actual call.</span></span>
+<span data-ttu-id="866ee-122">**注:** 応答オブジェクトは、わかりやすくするために切り詰められています。</span><span class="sxs-lookup"><span data-stu-id="866ee-122">**Note:** The response object is truncated for clarity.</span></span> <span data-ttu-id="866ee-123">実際の呼び出しでは、既定のプロパティが返されます。</span><span class="sxs-lookup"><span data-stu-id="866ee-123">Default properties will be returned from the actual call.</span></span>
 
 [list]: ../resources/list.md
 [listItem]: ../resources/listitem.md
