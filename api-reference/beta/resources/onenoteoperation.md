@@ -1,14 +1,15 @@
 ---
 title: onenoteOperation リソースの種類
 description: OneNote の特定の長時間操作の状態。
-author: Jewan-microsoft
+author: jewan-microsoft
 localization_priority: Normal
-ms.openlocfilehash: 7632186c3e44afbfe0d6cbf3d079ad0758514b38
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: onenote
+ms.openlocfilehash: 9fb490d38b975291b8f3b710f5e2f702f0fee7df
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27860264"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27962262"
 ---
 # <a name="onenoteoperation-resource-type"></a>onenoteOperation リソースの種類
 
@@ -42,7 +43,7 @@ OneNote の特定の長時間操作の状態。
 
 ```
 ## <a name="properties"></a>プロパティ
-| プロパティ     | 種類   |説明|
+| プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
 |createdDateTime| DateTimeOffset |操作の開始時刻です。|
 |error|[onenoteOperationError](onenoteoperationerror.md)|操作によって返されるエラーです。|

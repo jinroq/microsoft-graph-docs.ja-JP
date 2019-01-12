@@ -3,12 +3,13 @@ title: windowsInformationProtectionNetworkLearningSummary リソースの種類
 description: Windows 情報保護のネットワークの学習概要エンティティ。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 1cac8ce4b41fd4db3c8eddca617362822ba0aaf5
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 4c8a52d2e28a3b06ef5ffe69987a6cf25b3e95b8
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27879353"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27956074"
 ---
 # <a name="windowsinformationprotectionnetworklearningsummary-resource-type"></a>windowsInformationProtectionNetworkLearningSummary リソースの種類
 
@@ -27,7 +28,7 @@ Windows 情報保護のネットワークの学習概要エンティティ。
 |[Update windowsInformationProtectionNetworkLearningSummary](../api/intune-wip-windowsinformationprotectionnetworklearningsummary-update.md)|[windowsInformationProtectionNetworkLearningSummary](../resources/intune-wip-windowsinformationprotectionnetworklearningsummary.md)|[windowsInformationProtectionNetworkLearningSummary](../resources/intune-wip-windowsinformationprotectionnetworklearningsummary.md) オブジェクトのプロパティを更新します。|
 
 ## <a name="properties"></a>プロパティ
-|プロパティ|種類|説明|
+|プロパティ|型|説明|
 |:---|:---|:---|
 |ID|String|WindowsInformationProtectionNetworkLearningSummary の一意識別子。|
 |url|String|Web サイト URL|

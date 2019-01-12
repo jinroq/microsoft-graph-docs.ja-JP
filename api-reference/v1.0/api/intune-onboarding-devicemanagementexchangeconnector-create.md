@@ -3,12 +3,13 @@ title: deviceManagementExchangeConnector の作成
 description: 新しい deviceManagementExchangeConnector オブジェクトを作成します。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: b243e6e3790ff4984c138355f9a684d2a7a6ae9f
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: e9c3e25ea7a48bc957840b43bb6be0d256f308a7
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27823977"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27956025"
 ---
 # <a name="create-devicemanagementexchangeconnector"></a>deviceManagementExchangeConnector の作成
 
@@ -44,7 +45,7 @@ POST /deviceManagement/exchangeConnectors
 
 次の表に、deviceManagementExchangeConnector の作成時に必要なプロパティを示します。
 
-|プロパティ|種類|説明|
+|プロパティ|型|説明|
 |:---|:---|:---|
 |ID|String|まだ文書化されていません|
 |lastSyncDateTime|DateTimeOffset|Exchange Connector の最終同期日時|

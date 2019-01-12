@@ -3,12 +3,13 @@ title: eapFastConfiguration 列挙型
 description: EAP-FAST 構成の使用可能な設定です。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 499d6595980bcb6bca1ea93687399e8988a3bed7
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 65165929d388ed57f2651a0d277996e56d2f046e
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27811089"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27954457"
 ---
 # <a name="eapfastconfiguration-enum-type"></a>eapFastConfiguration 列挙型
 

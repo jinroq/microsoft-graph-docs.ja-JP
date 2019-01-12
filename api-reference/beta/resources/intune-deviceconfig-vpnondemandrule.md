@@ -3,12 +3,13 @@ title: vpnOnDemandRule リソースの種類
 description: VPN オンデマンド ルール定義します。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: bd6e494975c8626a25380b3f037d702fb81e082b
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 43908a55ff43c533d02ace629a80b96dc09c10ef
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27875636"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27955416"
 ---
 # <a name="vpnondemandrule-resource-type"></a>vpnOnDemandRule リソースの種類
 
@@ -18,7 +19,7 @@ ms.locfileid: "27875636"
 
 VPN オンデマンド ルール定義します。
 ## <a name="properties"></a>プロパティ
-|プロパティ|種類|説明|
+|プロパティ|型|説明|
 |:---|:---|:---|
 |ssid|String コレクション|ネットワーク サービスでは、識別子 (Ssid) を設定します。|
 |dnsSearchDomains|String コレクション|DNS ドメインを検索します。|

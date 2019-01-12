@@ -3,12 +3,13 @@ title: macOSCustomConfiguration の作成
 description: 新しい macOSCustomConfiguration オブジェクトを作成します。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: b543b7106fae24713d37dffc9a9a2fdf09df3c45
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 1e39435d63e48aca44ffde8a9c3cdaaa80a8b169
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27886136"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27961821"
 ---
 # <a name="create-macoscustomconfiguration"></a>macOSCustomConfiguration の作成
 
@@ -44,7 +45,7 @@ POST /deviceManagement/deviceConfigurations
 
 次の表に、macOSCustomConfiguration 作成時に必要なプロパティを示します。
 
-|プロパティ|種類|説明|
+|プロパティ|型|説明|
 |:---|:---|:---|
 |ID|String|エンティティのキー。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |lastModifiedDateTime|DateTimeOffset|オブジェクトが最後に変更された DateTime。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|

@@ -2,12 +2,14 @@
 title: androidForWorkAppConfigurationSchema リソース タイプ
 description: Android for Work アプリケーションのカスタム構成を記述するスキーマです。
 localization_priority: Normal
-ms.openlocfilehash: fecb4c3983254643704e6c5966212272f8f1d65e
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: tfitzmac
+ms.prod: intune
+ms.openlocfilehash: 48b153fa23e1ca72918bf6651c2948978c05d46b
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27882895"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27955934"
 ---
 # <a name="androidforworkappconfigurationschema-resource-type"></a>androidForWorkAppConfigurationSchema リソース タイプ
 
@@ -26,7 +28,7 @@ Android for Work アプリケーションのカスタム構成を記述するス
 |[Update androidForWorkAppConfigurationSchema](../api/intune-androidforwork-androidforworkappconfigurationschema-update.md)|[androidForWorkAppConfigurationSchema](../resources/intune-androidforwork-androidforworkappconfigurationschema.md)|[androidForWorkAppConfigurationSchema](../resources/intune-androidforwork-androidforworkappconfigurationschema.md) オブジェクトのプロパティを更新します。|
 
 ## <a name="properties"></a>プロパティ
-|プロパティ|種類|説明|
+|プロパティ|型|説明|
 |:---|:---|:---|
 |ID|String|エンティティのキー。スキーマが対応するアプリケーションの Android パッケージ名です。|
 |exampleJson|Binary|このスキーマに準拠した JSON 文字列の例を含む、UTF8 でエンコードされたバイト配列。このアプリの構成の設定方法を示しています。|

@@ -2,12 +2,14 @@
 title: plannerTaskDetails リソースの種類
 description: '**plannerTaskDetails** リソースは、タスクに関する追加情報を表します。各 task オブジェクトには詳細オブジェクトがあります。'
 localization_priority: Normal
-ms.openlocfilehash: a183ba0f9b19ea2de700913d29e9586442ba2c03
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: TarkanSevilmis
+ms.prod: planner
+ms.openlocfilehash: 75e17200dc52fff385c7be8fb0269a3da20464b8
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27806575"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27956011"
 ---
 # <a name="plannertaskdetails-resource-type"></a>plannerTaskDetails リソースの種類
 
@@ -22,12 +24,12 @@ ms.locfileid: "27806575"
 |[Update](../api/plannertaskdetails-update.md) | [plannerTaskDetails](plannertaskdetails.md)    |**plannerTaskDetails** オブジェクトを更新します。 |
 
 ## <a name="properties"></a>プロパティ
-| プロパティ     | 種類   |説明|
+| プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
 |checklist|[plannerChecklistItems](plannerchecklistitems.md)|タスク上のチェックリスト項目のコレクション。|
 |説明|String|タスクの説明|
 |id|String| 読み取り専用です。 タスクの詳細の ID です。 28 の文字、大文字小文字を区別することをお勧めします。 サービスの[フォーマットの検証](planner-identifiers-disclaimer.md)が行われます。|
-|previewType|文字列|タスクに表示されるプレビューの種類を設定します。 可能な値: `automatic`、 `noPreview`、 `checklist`、 `description`、 `reference`。 設定すると`automatic`、タスクを表示するアプリケーションで表示されているプレビューを選択します。|
+|previewType|string|タスクに表示されるプレビューの種類を設定します。 可能な値: `automatic`、 `noPreview`、 `checklist`、 `description`、 `reference`。 設定すると`automatic`、タスクを表示するアプリケーションで表示されているプレビューを選択します。|
 |references|[plannerExternalReferences](plannerexternalreferences.md)|タスク上の参照のコレクションです。|
 
 ## <a name="relationships"></a>リレーションシップ

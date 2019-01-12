@@ -2,12 +2,13 @@
 title: 'reportRoot: getOffice365ServicesUserCounts'
 description: アクティビティの種類とサービス別のユーザー数を取得します。
 localization_priority: Normal
-ms.openlocfilehash: dd196e971a55acd3c3beebe8d8e526f443fbe62b
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: reports
+ms.openlocfilehash: 1911b570d046f192d57435d58c7473333aa53e60
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27827581"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27956172"
 ---
 # <a name="reportroot-getoffice365servicesusercounts"></a>reportRoot: getOffice365ServicesUserCounts
 
@@ -39,7 +40,7 @@ GET /reports/getOffice365ServicesUserCounts(period='{period_value}')
 
 要求 URL に、次のパラメーターと有効な値を指定します。
 
-| パラメーター | Type   | 説明                              |
+| パラメーター | 型   | 説明                              |
 | :-------- | :----- | :--------------------------------------- |
 | period    | 文字列 | レポートを集計する期間の長さを指定します。 {period_value} でサポートされている値は D7、D30、D90、D180 です。 これらの値は、D*n* の形式 (*n* はレポートを集計する日数) に従います。 必須。 |
 

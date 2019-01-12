@@ -3,12 +3,13 @@ title: DefaultDeviceCompliancePolicy を作成します。
 description: 新しい defaultDeviceCompliancePolicy オブジェクトを作成します。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: a69c83e9de07f2e809e53f449d3f9686e238a138
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 79911794adf153a18b7af7f58cec72baf56f3015
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27886780"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27964425"
 ---
 # <a name="create-defaultdevicecompliancepolicy"></a>DefaultDeviceCompliancePolicy を作成します。
 
@@ -46,7 +47,7 @@ POST /deviceManagement/deviceCompliancePolicies
 
 次の表は、defaultDeviceCompliancePolicy を作成するときに必要なプロパティを示します。
 
-|プロパティ|種類|説明|
+|プロパティ|型|説明|
 |:---|:---|:---|
 |roleScopeTagIds|String コレクション|このエンティティ インスタンスのスコープのタグのリストです。 [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md) から継承します|
 |id|String|エンティティのキー。 [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md) から継承します|

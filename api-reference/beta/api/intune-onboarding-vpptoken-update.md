@@ -3,12 +3,13 @@ title: VPPトークンの更新
 description: vppToken オブジェクトのプロパティを更新します。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 521d62ab5e4b66bda5307fbb52da842e54301bc5
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: d1e38660c1fa83ced205b0bbcc506303a3968c41
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27855070"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27954149"
 ---
 # <a name="update-vpptoken"></a>VPPトークンの更新
 
@@ -46,7 +47,7 @@ PATCH /deviceAppManagement/vppTokens/{vppTokenId}
 
 次の表に、[VPPトークン](../resources/intune-onboarding-vpptoken.md) の作成時に必要なプロパティを示します。
 
-|プロパティ|種類|説明|
+|プロパティ|型|説明|
 |:---|:---|:---|
 |ID|String|appleVolumePurchaseProgramToken 作成時に自動的に生成されます。 エンティティのキーになります。|
 |organizationName|String|Apple Volume Purchase Program のトークンに関連付けられている組織|
@@ -61,10 +62,10 @@ PATCH /deviceAppManagement/vppTokens/{vppTokenId}
 |lastSyncStatus|[vppTokenSyncStatus](../resources/intune-onboarding-vpptokensyncstatus.md)|Apple Volume Purchase Program のトークンを使用して行われた最後のアプリケーションの同期の現在の同期状態。 可能な値は、`none`、`inProgress`、`completed`、`failed` です。 可能な値は、`none`、`inProgress`、`completed`、`failed` です。|
 |automaticallyUpdateApps|ブール型|VPP トークンのアプリを自動で更新するかどうか。|
 |countryOrRegion|String|VPP トークンのアプリを自動で更新するかどうか。|
-|dataSharingConsentGranted|ブール型|Apple ボリューム購入プログラムを使用して共有データに確かに同意するものです。|
+|dataSharingConsentGranted|Boolean|Apple ボリューム購入プログラムを使用して共有データに確かに同意するものです。|
 |displayName|String|管理者は、トークンのフレンドリ名を指定します。|
 |locationName|String|アップル VPP から返されるトークンの場所です。|
-|claimTokenManagementFromExternalMdm|ブール型|外部 MDM. からのトークンの管理であると主張できるようにするのには同意するものと管理|
+|claimTokenManagementFromExternalMdm|Boolean|外部 MDM. からのトークンの管理であると主張できるようにするのには同意するものと管理|
 
 
 

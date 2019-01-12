@@ -2,12 +2,14 @@
 title: 'contact: delta'
 description: 指定したフォルダーで追加、削除、更新された連絡先のセットを取得します。
 localization_priority: Normal
-ms.openlocfilehash: eae0e5cd4f96678ad2bced2fa5d403ed1d0142aa
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: angelgolfer-ms
+ms.prod: outlook
+ms.openlocfilehash: c369460fea021e1487560e5893fc0527dd542358
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27886745"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27954198"
 ---
 # <a name="contact-delta"></a>contact: delta
 
@@ -46,7 +48,7 @@ GET /users/{id}/contactFolders/{id}/contacts/delta
 
 
 ## <a name="request-headers"></a>要求ヘッダー
-| 名前       | 種類 | 説明 |
+| 名前       | 型 | 説明 |
 |:---------------|:----------|:----------|
 | Authorization  | string  | ベアラー {トークン}。必須。 |
 | Content-Type  | string  | application/json. Required. |

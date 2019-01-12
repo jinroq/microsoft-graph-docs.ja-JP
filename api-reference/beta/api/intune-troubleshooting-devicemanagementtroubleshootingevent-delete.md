@@ -2,12 +2,14 @@
 title: deviceManagementTroubleshootingEvent の削除
 description: deviceManagementTroubleshootingEvent を削除します。
 author: tfitzmac
-ms.openlocfilehash: 7195eecf4676ca8eae5b87b5123957ba22a71989
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.prod: intune
+ms.openlocfilehash: 25f820997350069a341138e8c1eb22cae113c322
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27309962"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27964446"
 ---
 # <a name="delete-devicemanagementtroubleshootingevent"></a>deviceManagementTroubleshootingEvent の削除
 

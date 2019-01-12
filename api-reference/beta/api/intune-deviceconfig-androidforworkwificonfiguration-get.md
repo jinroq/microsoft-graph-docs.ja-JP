@@ -3,12 +3,13 @@ title: AndroidForWorkWiFiConfiguration を取得します。
 description: AndroidForWorkWiFiConfiguration オブジェクトのプロパティと関係を参照してください。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 15bc2dfa8e60201e2f6feb4fef78fb53d3ce2ac2
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 724623657bd6cf46f437cea7022c52cfd0f79cfd
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27817369"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27964110"
 ---
 # <a name="get-androidforworkwificonfiguration"></a>AndroidForWorkWiFiConfiguration を取得します。
 

@@ -3,12 +3,13 @@ title: getRoleScopeTagsByIds 関数
 description: まだ文書化されていません
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 586c6a3612fefaf45e55883b106aeaa5e543386c
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: b51482b8cdc320e4f273400d7fa78891d1449c67
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27892023"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27964096"
 ---
 # <a name="getrolescopetagsbyids-function"></a>getRoleScopeTagsByIds 関数
 
@@ -46,7 +47,7 @@ GET /deviceManagement/getRoleScopeTagsByIds
 要求 URL で、次のクエリ パラメーターに値を指定します。
 次の表に、この関数で使用できるパラメーターを示します。
 
-|プロパティ|種類|説明|
+|プロパティ|型|説明|
 |:---|:---|:---|
 |ids|String コレクション|まだ文書化されていません|
 

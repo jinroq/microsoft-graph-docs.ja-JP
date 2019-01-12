@@ -3,12 +3,13 @@ title: windowsProtectionState リソースの種類
 description: デバイス保護の状態のエンティティです。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 5a21cc27039f3119836e0027b2558cadadab1b5d
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 7f15044f597fb04e98571de7aec8796e9a9ddf74
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27884106"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27954527"
 ---
 # <a name="windowsprotectionstate-resource-type"></a>windowsProtectionState リソースの種類
 
@@ -24,18 +25,18 @@ ms.locfileid: "27884106"
 |[WindowsProtectionState を更新します。](../api/intune-devices-windowsprotectionstate-update.md)|[windowsProtectionState](../resources/intune-devices-windowsprotectionstate.md)|[WindowsProtectionState](../resources/intune-devices-windowsprotectionstate.md)オブジェクトのプロパティを更新します。|
 
 ## <a name="properties"></a>プロパティ
-|プロパティ|種類|説明|
+|プロパティ|型|説明|
 |:---|:---|:---|
 |ID|String|デバイス保護の状態のオブジェクトの一意の識別子です。 これは、デバイスのデバイス id|
-|malwareProtectionEnabled|ブール型|マルウェア対策が有効になっているか|
+|malwareProtectionEnabled|Boolean|マルウェア対策が有効になっているか|
 |deviceState|[windowsDeviceHealthState](../resources/intune-devices-windowsdevicehealthstate.md)|コンピューターの状態 (などのクリーンな保留中の完全なスキャンまたは再起動の保留中など)。 使用可能な値: `clean`、`fullScanPending`、`rebootPending`、`manualStepsPending`、`offlineScanPending`、`critical`。|
-|realTimeProtectionEnabled|ブール型|リアルタイム保護を有効または無効ですか。|
-|networkInspectionSystemEnabled|ブール型|ネットワーク検査システムが有効か無効か。|
-|quickScanOverdue|ブール型|クイック スキャン、か期限切れですか。|
-|fullScanOverdue|ブール型|完全なスキャンの期限切れかどうでしょうか。|
-|signatureUpdateOverdue|ブール型|署名が期限切れかどうか。|
-|rebootRequired|ブール型|しましたか。|
-|fullScanRequired|ブール型|全体を走査するかが必要でしょうか。|
+|realTimeProtectionEnabled|Boolean|リアルタイム保護を有効または無効ですか。|
+|networkInspectionSystemEnabled|Boolean|ネットワーク検査システムが有効か無効か。|
+|quickScanOverdue|Boolean|クイック スキャン、か期限切れですか。|
+|fullScanOverdue|Boolean|完全なスキャンの期限切れかどうでしょうか。|
+|signatureUpdateOverdue|Boolean|署名が期限切れかどうか。|
+|rebootRequired|Boolean|しましたか。|
+|fullScanRequired|Boolean|全体を走査するかが必要でしょうか。|
 |engineVersion|String|現在のエンドポイントの保護エンジンのバージョン|
 |signatureVersion|String|マルウェア定義の現在のバージョン|
 |antiMalwareVersion|String|現在のバージョンのマルウェア対策|

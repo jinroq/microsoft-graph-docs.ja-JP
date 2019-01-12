@@ -3,12 +3,13 @@ title: MobileAppProvisioningConfigGroupAssignment を更新します。
 description: MobileAppProvisioningConfigGroupAssignment オブジェクトのプロパティを更新します。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: b341de06c1bd5d504e4835ebef8fce2aa3a5aac7
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 7d2526c69091c9d41a1b9ebb181f4abbbc01bf23
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27848343"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27954996"
 ---
 # <a name="update-mobileappprovisioningconfiggroupassignment"></a>MobileAppProvisioningConfigGroupAssignment を更新します。
 
@@ -46,7 +47,7 @@ PATCH /deviceAppManagement/iosLobAppProvisioningConfigurations/{iosLobAppProvisi
 
 [MobileAppProvisioningConfigGroupAssignment](../resources/intune-apps-mobileappprovisioningconfiggroupassignment.md)を作成するときに必要なプロパティを次の表に示します。
 
-|プロパティ|種類|説明|
+|プロパティ|型|説明|
 |:---|:---|:---|
 |targetGroupId|String|構成のプロビジョニング、アプリケーションが対象である AAD グループの ID。|
 |id|String|エンティティのキー。|

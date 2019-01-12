@@ -2,12 +2,13 @@
 title: 'reportRoot: getMailboxUsageDetail'
 description: メールボックスの使用状況に関する詳細を取得します。
 localization_priority: Priority
-ms.openlocfilehash: e49fd304acd79c37e76eb96a929eb824c57376c0
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: reports
+ms.openlocfilehash: a4f412d8acdb32648ceb47e4aed6f2b7ff83268d
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27857611"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27953484"
 ---
 # <a name="reportroot-getmailboxusagedetail"></a>reportRoot: getMailboxUsageDetail
 
@@ -37,7 +38,7 @@ GET /reports/getMailboxUsageDetail(period='{period_value}')
 
 要求 URL に、次のパラメーターと有効な値を指定します。
 
-| パラメーター | Type   | 説明                              |
+| パラメーター | 型   | 説明                              |
 | :-------- | :----- | :--------------------------------------- |
 | period    | 文字列 | レポートを集計する期間の長さを指定します。 {period_value} でサポートされている値は D7、D30、D90、D180 です。 これらの値は、D*n* の形式 (*n* はレポートを集計する日数) に従います。 必須。 |
 

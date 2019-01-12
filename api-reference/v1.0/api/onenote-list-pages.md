@@ -1,14 +1,15 @@
 ---
 title: pages を一覧表示する
 description: ページ オブジェクトの一覧を取得します。
-author: Jewan-microsoft
+author: jewan-microsoft
 localization_priority: Normal
-ms.openlocfilehash: f06404437fbd5dc34cef6d81e5b3d692bf5ce101
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: onenote
+ms.openlocfilehash: 5a7796bad3afbb7f30b6200f20b667fe53cc0c89
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27829366"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27955647"
 ---
 # <a name="list-pages"></a>pages を一覧表示する
 
@@ -38,7 +39,7 @@ GET /sites/{id}/onenote/pages
 既定の応答は、`parentSection` を展開し、セクションの `id`、`displayName`、`self` プロパティを選択します。ページの有効な `expand` 値は、`parentNotebook` と `parentSection` です。
 
 ## <a name="request-headers"></a>要求ヘッダー
-| 名前       | 種類 | 説明|
+| 名前       | 型 | 説明|
 |:-----------|:------|:----------|
 | Authorization  | string  | ベアラー {トークン}。必須。 |
 | 承諾 | string | `application/json` |

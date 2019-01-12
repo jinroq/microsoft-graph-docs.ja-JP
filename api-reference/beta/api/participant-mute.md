@@ -3,12 +3,13 @@ title: '参加者: ミュート'
 description: 呼び出しで特定の参加者をミュートします。
 author: VinodRavichandran
 localization_priority: Normal
-ms.openlocfilehash: ab8c0ee24b1175a77ad157f51437a29b99404392
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: microsoft-teams
+ms.openlocfilehash: d41d97556aff7093660c0cdfb75a43f8b862c0d7
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27808226"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27964474"
 ---
 # <a name="participant-mute"></a>参加者: ミュート
 
@@ -40,7 +41,7 @@ POST /applications/{id}/calls/{id}/participants/{id}/mute
 ## <a name="request-body"></a>要求本文
 要求本文で、次のパラメーターを含む JSON オブジェクトを指定します。
 
-| パラメーター      | Type    |説明|
+| パラメーター      | 型    |説明|
 |:---------------|:--------|:----------|
 |clientContext|String|クライアントのコンテキスト。|
 

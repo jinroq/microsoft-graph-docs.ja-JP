@@ -2,12 +2,14 @@
 title: ボックスの一覧ユーザーの推移的な memberOf
 description: グループ、ディレクトリのロールおよびメンバーであるユーザーの管理の単位を取得します。 この API 要求は、推移的なもすべてのグループの入れ子にされたメンバーを返します。
 localization_priority: Normal
-ms.openlocfilehash: eadb9722bc323ea056d015ac15c8aed975306eee
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: dkershaw10
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: d4977d06b05b7b8d860023640f1e413afa3c3c64
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27887914"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27953710"
 ---
 # <a name="list-user-transitive-memberof"></a>ボックスの一覧ユーザーの推移的な memberOf
 

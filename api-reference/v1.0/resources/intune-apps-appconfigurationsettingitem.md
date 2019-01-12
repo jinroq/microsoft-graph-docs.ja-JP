@@ -3,12 +3,13 @@ title: appConfigurationSettingItem リソースの種類
 description: アプリの構成設定アイテムのプロパティが含まれています。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 900a16544b0166263b7d40c428c2c4cbaf5a0bb6
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: ddb7b503ff14e6499342fafc2d0cf5ab8e670138
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27830423"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27960337"
 ---
 # <a name="appconfigurationsettingitem-resource-type"></a>appConfigurationSettingItem リソースの種類
 
@@ -16,7 +17,7 @@ ms.locfileid: "27830423"
 
 アプリの構成設定アイテムのプロパティが含まれています。
 ## <a name="properties"></a>プロパティ
-|プロパティ|種類|説明|
+|プロパティ|型|説明|
 |:---|:---|:---|
 |appConfigKey|String|アプリの構成キー。|
 |appConfigKeyType|[mdmAppConfigKeyType](../resources/intune-apps-mdmappconfigkeytype.md)|アプリの構成キーの種類。 可能な値は、`stringType`、`integerType`、`realType`、`booleanType`、`tokenType` です。|

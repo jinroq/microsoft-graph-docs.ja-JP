@@ -3,12 +3,13 @@ title: rangeView リソースの種類
 description: RangeView は、親の範囲の表示されているセルのセットを表します。
 author: lumine2008
 localization_priority: Normal
-ms.openlocfilehash: 0fae95999de35b5bac42716a4c9ec8b16a5b1158
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: excel
+ms.openlocfilehash: 745ed45b4e5b79c8d1764a86fac04cf7fcfdcc26
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27810081"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27957803"
 ---
 # <a name="rangeview-resource-type"></a>rangeView リソースの種類
 RangeView は、親の範囲の表示されているセルのセットを表します。
@@ -22,7 +23,7 @@ RangeView は、親の範囲の表示されているセルのセットを表し�
 |[Range](../api/workbookrangeview-range.md)|[workbookRange](range.md)|範囲ビューに関連付けられた範囲オブジェクトを返します。|
 
 ## <a name="properties"></a>プロパティ
-| プロパティ     | 種類   |説明|
+| プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
 |cellAddresses|Json|セルのアドレスを表します。
 |columnCount|Int32|表示されている列の数を返します。読み取り専用。|

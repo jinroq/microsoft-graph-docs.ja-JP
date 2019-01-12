@@ -3,12 +3,13 @@ title: DeviceManagementScriptRunSummary を更新します。
 description: DeviceManagementScriptRunSummary オブジェクトのプロパティを更新します。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: c7a82b01ccae7e3f5ca1e8c3b3b784791fe08df3
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: d2a0ba2a7dfbd44cd5e756010239caee285fe090
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27858325"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27954702"
 ---
 # <a name="update-devicemanagementscriptrunsummary"></a>DeviceManagementScriptRunSummary を更新します。
 
@@ -46,7 +47,7 @@ PATCH /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/runSu
 
 [DeviceManagementScriptRunSummary](../resources/intune-devices-devicemanagementscriptrunsummary.md)を作成するときに必要なプロパティを次の表に示します。
 
-|プロパティ|種類|説明|
+|プロパティ|型|説明|
 |:---|:---|:---|
 |ID|String|デバイス管理スクリプトのキーは、エンティティの概要を実行します。|
 |successDeviceCount|Int32|成功した場合のデバイスの数。|

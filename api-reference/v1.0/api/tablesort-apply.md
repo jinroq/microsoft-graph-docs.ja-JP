@@ -3,12 +3,13 @@ title: 'TableSort: apply　'
 description: 並べ替え操作を実行します。
 author: lumine2008
 localization_priority: Normal
-ms.openlocfilehash: 682cacd558d42cc32b092bd7421aa14967f9c5b6
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: excel
+ms.openlocfilehash: 69fda9b0a49c59a86a17e9a41eb89159085d857e
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27877043"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27963760"
 ---
 # <a name="tablesort-apply"></a>TableSort: apply　
 
@@ -38,7 +39,7 @@ POST /workbook/worksheets/{id|name}/tables/{id|name}/sort/apply
 ## <a name="request-body"></a>要求本文
 要求本文で、次のパラメーターを含む JSON オブジェクトを指定します。
 
-| パラメーター    | Type   |説明|
+| パラメーター    | 型   |説明|
 |:---------------|:--------|:----------|
 |fields|WorkbookSortField コレクション|並べ替えに使用する条件の一覧。|
 |matchCase|ブール値|省略可能。大文字小文字の区別が文字列の順序に影響を与えるかどうか。|

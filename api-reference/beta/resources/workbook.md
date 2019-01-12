@@ -2,12 +2,14 @@
 title: Workbook リソースタイプ
 description: Workbook は、ワークシート、テーブル、範囲などの関連するブック オブジェクトを含む最上位オブジェクトです。
 localization_priority: Normal
-ms.openlocfilehash: 9479c6888dc27fd595db2313ab6a88617410530f
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: lumine2008
+ms.prod: excel
+ms.openlocfilehash: a63ee1d3ce2b7b43eea2993cb588b20897b31c32
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27806798"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27957978"
 ---
 # <a name="workbook-resource-type"></a>Workbook リソースタイプ
 

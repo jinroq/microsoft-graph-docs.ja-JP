@@ -3,12 +3,13 @@ title: EnterpriseCodeSigningCertificate を作成します。
 description: 新しい enterpriseCodeSigningCertificate オブジェクトを作成します。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: ec84f55fc94d1cdbf29e0cc65d6da029a3435315
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 302c10d1e0fbc5e182180a32ad96d614555d1d04
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27883364"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27956193"
 ---
 # <a name="create-enterprisecodesigningcertificate"></a>EnterpriseCodeSigningCertificate を作成します。
 
@@ -46,7 +47,7 @@ POST /deviceAppManagement/enterpriseCodeSigningCertificates
 
 次の表は、enterpriseCodeSigningCertificate を作成するときに必要なプロパティを示します。
 
-|プロパティ|種類|説明|
+|プロパティ|型|説明|
 |:---|:---|:---|
 |ID|String|エンティティのキー。|
 |content|Binary|生データの形式で Windows エンタープライズ コード署名証明書。|

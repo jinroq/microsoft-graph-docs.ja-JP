@@ -3,12 +3,13 @@ title: 範囲:EntireRow
 description: 範囲に含まれるすべての行を表すオブジェクトを取得します。
 author: lumine2008
 localization_priority: Normal
-ms.openlocfilehash: bb79370e8c2e8f220b45ace9491929a887678840
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: excel
+ms.openlocfilehash: 5ca37e19ab643c64fce0e9500399b7075de6a330
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27832215"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27953540"
 ---
 # <a name="range-entirerow"></a>範囲:EntireRow
 

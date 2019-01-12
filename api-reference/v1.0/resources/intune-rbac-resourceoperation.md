@@ -3,12 +3,13 @@ title: resourceOperation リソース タイプ
 description: " AAD のセキュリティ グループに、MobileApp のリソースを割り当てるオペレーションを使用します。  組み込みのロールについては、リソース操作を変更できません。"
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 47dccffe445024e9e6b086b17f87789316db6585
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 3e193060ca07fa79caea90dc2578364958551cd8
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27811852"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27956326"
 ---
 # <a name="resourceoperation-resource-type"></a>resourceOperation リソース タイプ
 
@@ -25,7 +26,7 @@ Intune リソース (またはエンティティ) で実行できる操作また
 |[Update resourceOperation](../api/intune-rbac-resourceoperation-update.md)|[resourceOperation](../resources/intune-rbac-resourceoperation.md)|[resourceOperation](../resources/intune-rbac-resourceoperation.md) オブジェクトのプロパティを更新します。|
 
 ## <a name="properties"></a>プロパティ
-|プロパティ|種類|説明|
+|プロパティ|型|説明|
 |:---|:---|:---|
 |ID|String|リソース操作のキー。 読み取り専用で、自動生成されます。|
 |resourceName|String|この操作が実行されるリソースの名前。|

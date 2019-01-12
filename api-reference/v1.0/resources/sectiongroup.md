@@ -2,12 +2,14 @@
 title: sectionGroup リソースの種類
 description: OneNote ノートブックのセクション グループ。セクション グループには、セクションとセクション グループを含めることができます。
 localization_priority: Normal
-ms.openlocfilehash: f204c5422eb5f0f2580bfbed82ed28306dd0618f
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: jewan-microsoft
+ms.prod: onenote
+ms.openlocfilehash: ec27343121ba20ef65703f3df1d53e6c62ccc8e4
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27806308"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27961877"
 ---
 # <a name="sectiongroup-resource-type"></a>sectionGroup リソースの種類
 
@@ -44,7 +46,7 @@ OneNote ノートブックのセクション グループ。セクション グ�
 
 ```
 ## <a name="properties"></a>プロパティ
-| プロパティ     | 種類   |説明|
+| プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
 |createdBy|[identitySet](identityset.md)|そのアイテムを作成したユーザーの ID、デバイス、アプリケーション。読み取り専用です。|
 |createdDateTime|DateTimeOffset|セクション グループが作成された日時。Timestamp は、ISO 8601 形式を使用した日付と時刻の情報を表し、必ず UTC 時間です。たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、次のようになります。`'2014-01-01T00:00:00Z'`読み取り専用です。|

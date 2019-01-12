@@ -3,12 +3,13 @@ title: リスト networkIPv4ConfigurationManagementConditions
 description: NetworkIPv4ConfigurationManagementCondition オブジェクトのプロパティと関係を一覧表示します。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 6f4fd7516320780850197a46f4abd83b18304d03
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 0315baf1d8034b5bbc458bfa4d0b98111f801941
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27828400"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27962941"
 ---
 # <a name="list-networkipv4configurationmanagementconditions"></a>リスト networkIPv4ConfigurationManagementConditions
 

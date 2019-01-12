@@ -3,12 +3,13 @@ title: '呼び出す: ミュート'
 description: 自体を消すには、アプリケーションを使用できます。
 author: VinodRavichandran
 localization_priority: Normal
-ms.openlocfilehash: 603c0d49f47291ec5050cd08dfbb0cc0faa2bc0e
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: microsoft-teams
+ms.openlocfilehash: fa4baed5af378c58f8e25dbdc5413c1bef743c32
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27813441"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27956662"
 ---
 # <a name="call-mute"></a>呼び出す: ミュート
 
@@ -40,7 +41,7 @@ POST /applications/{id}/calls/{id}/mute
 ## <a name="request-body"></a>要求本文
 要求本文で、次のパラメーターを含む JSON オブジェクトを指定します。
 
-| パラメーター      | Type    |説明|
+| パラメーター      | 型    |説明|
 |:---------------|:--------|:----------|
 |clientContext|String|クライアントのコンテキスト。|
 

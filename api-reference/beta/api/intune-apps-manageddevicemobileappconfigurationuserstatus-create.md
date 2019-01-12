@@ -3,12 +3,13 @@ title: managedDeviceMobileAppConfigurationUserStatus の作成
 description: 新しい managedDeviceMobileAppConfigurationUserStatus オブジェクトを作成します。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 31ba14dc9ceffebd0d30522e0dd9adba16990377
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: c92f8d59130b429fb37b08b5c092c6d4c4949b40
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27892450"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27955297"
 ---
 # <a name="create-manageddevicemobileappconfigurationuserstatus"></a>managedDeviceMobileAppConfigurationUserStatus の作成
 
@@ -47,7 +48,7 @@ POST /deviceAppManagement/iosLobAppProvisioningConfigurations/{iosLobAppProvisio
 
 次の表に、managedDeviceMobileAppConfigurationUserStatus の作成時に必要なプロパティを示します。
 
-|プロパティ|種類|説明|
+|プロパティ|型|説明|
 |:---|:---|:---|
 |ID|String|エンティティのキー。|
 |userDisplayName|String|DevicePolicyStatus のユーザー名。|

@@ -3,12 +3,13 @@ title: RangeBorder リソースの種類
 description: オブジェクトの輪郭を表します。
 author: lumine2008
 localization_priority: Normal
-ms.openlocfilehash: 33ed0410ab807cf9d9d6a0a49cb06b43d9966e46
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: excel
+ms.openlocfilehash: 8404a45ea7c56bbbb318994daa55229706d700a2
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27853530"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27960239"
 ---
 # <a name="rangeborder-resource-type"></a>RangeBorder リソースの種類
 
@@ -27,7 +28,7 @@ ms.locfileid: "27853530"
 |[Itemat](../api/rangebordercollection-itemat.md)|[RangeBorder](rangeborder.md)|オブジェクトのインデックスを使用して、境界線オブジェクトを取得します。|
 
 ## <a name="properties"></a>プロパティ
-| プロパティ     | 種類   |説明|
+| プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
 |color|文字列|枠線の色を表す HTML カラー コード。形式は #RRGGBB (例: "FFA500")、または名前付きの HTML 色 (例: "オレンジ") です。|
 |ID|文字列|罫線の識別子を表します。可能な値は、`EdgeTop`、`EdgeBottom`、`EdgeLeft`、`EdgeRight`、`InsideVertical`、`InsideHorizontal`、`DiagonalDown`、`DiagonalUp` です。読み取り専用です。|

@@ -2,12 +2,14 @@
 title: OrgContact を削除します。
 description: OrgContact を削除します。
 localization_priority: Normal
-ms.openlocfilehash: 3eecd42debf22f7bd2330ddae5a8321b25b7350c
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: lleonard-msft
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: 67e5365bf13c489aa0581978e49ad8ea8b60049d
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27892066"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27964992"
 ---
 # <a name="delete-orgcontact"></a>OrgContact を削除します。
 
@@ -30,7 +32,7 @@ DELETE /contacts/{id}
 
 ```
 ## <a name="request-headers"></a>要求ヘッダー
-| 名前       | 種類 | 説明|
+| 名前       | 型 | 説明|
 |:---------------|:--------|:----------|
 | Authorization  | string  | ベアラー {トークン}。必須。 |
 

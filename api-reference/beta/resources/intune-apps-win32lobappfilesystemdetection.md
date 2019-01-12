@@ -3,12 +3,13 @@ title: win32LobAppFileSystemDetection リソースの種類
 description: Win32 アプリケーションを検出するためにファイルまたはフォルダーのパスが含まれています
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 13a994d39ec42ddcb45bc71aac739864a6ef6dc4
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: c901949295b1ff411dec5e9827b7991c922c2315
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27849274"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27958209"
 ---
 # <a name="win32lobappfilesystemdetection-resource-type"></a>win32LobAppFileSystemDetection リソースの種類
 
@@ -21,11 +22,11 @@ Win32 アプリケーションを検出するためにファイルまたはフ�
 [Win32LobAppDetection](../resources/intune-apps-win32lobappdetection.md)から継承します。
 
 ## <a name="properties"></a>プロパティ
-|プロパティ|種類|説明|
+|プロパティ|型|説明|
 |:---|:---|:---|
 |path|String|Win32 基幹業務 (LoB) アプリケーションを検出するためにファイルまたはフォルダーのパス|
 |fileOrFolderName|String|Win32 基幹業務 (LoB) アプリケーションを検出するためにファイルまたはフォルダーの名前|
-|check32BitOn64System|ブール型|このファイルまたはフォルダーは、64 ビット システムで 32 ビット アプリケーションをチェックするかどうかを示す値|
+|check32BitOn64System|Boolean|このファイルまたはフォルダーは、64 ビット システムで 32 ビット アプリケーションをチェックするかどうかを示す値|
 |detectionType|[win32LobAppFileSystemDetectionType](../resources/intune-apps-win32lobappfilesystemdetectiontype.md)|ファイル システムの検出の種類。 使用可能な値: `notConfigured`、`exists`、`modifiedDate`、`createdDate`、`version`、`sizeInMB`。|
 |operator|[win32LobAppDetectionOperator](../resources/intune-apps-win32lobappdetectionoperator.md)|ファイルまたは fodler を検出するための演算子です。 可能な値は、`notConfigured`、`equal`、`notEqual`、`greaterThan`、`greaterThanOrEqual`、`lessThan`、`lessThanOrEqual` です。|
 |detectionValue|String|ファイルまたはフォルダーの検出値|

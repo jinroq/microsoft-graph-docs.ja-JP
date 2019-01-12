@@ -2,12 +2,14 @@
 title: Update plannertaskdetails
 description: '**plannertaskdetails** オブジェクトのプロパティを更新します。'
 localization_priority: Normal
-ms.openlocfilehash: 4c1ff4475f2479af22221a76ff693135e5daa7fa
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: TarkanSevilmis
+ms.prod: planner
+ms.openlocfilehash: 04adf9c53907962f0298541f5d8c28402bc2b613
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27870722"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27960554"
 ---
 # <a name="update-plannertaskdetails"></a>Update plannertaskdetails
 
@@ -37,7 +39,7 @@ PATCH /planner/tasks/<id>/details
 ## <a name="request-body"></a>要求本文
 要求本文で、更新する関連フィールドの値を指定します。要求本文に含まれない既存のプロパティは、以前の値のままになるか、他のプロパティ値の変化に基づいて再計算されます。最適なパフォーマンスを得るためには、変更されていない既存の値を含めないでください。
 
-| プロパティ     | 種類   |説明|
+| プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
 |checklist|[plannerChecklistItems](../resources/plannerchecklistitems.md)|タスク上のチェックリスト項目のコレクション。|
 |説明|String|タスクの説明|

@@ -3,12 +3,13 @@ title: リソースの種類を説明します。
 description: 相手の電子メール アドレスに基づいてユーザーに通知を表します。
 author: simonhult
 localization_priority: Normal
-ms.openlocfilehash: 4ab60fafe00f14f69d79e482d0616576c73d1092
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: insights
+ms.openlocfilehash: b24ce5488e93160c3424fb41f83b91c1b8ccea95
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27858430"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27955437"
 ---
 # <a name="mention-resource-type"></a>リソースの種類を説明します。
 
@@ -52,7 +53,7 @@ Outlook メール クライアントが表示され、ユーザーが入力す�
 
 ```
 ## <a name="properties"></a>プロパティ
-| プロパティ     | 種類   |説明|
+| プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
 |application | String | 参照投稿を作成するアプリケーションの名前。 省略可能。 使用され、**メッセージ**の場合は null ではありません。 |
 |clientReference | String | リソース インスタンスの親を表す一意の識別子です。 省略可能。 使用され、**メッセージ**の場合は null ではありません。 |

@@ -3,12 +3,13 @@ title: パッチ チャネル
 description: 指定されたチャネルのプロパティを更新します。
 author: nkramer
 localization_priority: Normal
-ms.openlocfilehash: 78f2d8eebf70d52b6067612c715939d7463b17f5
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: microsoft-teams
+ms.openlocfilehash: 850ce900af9efada43087d453b82eaee77f309ec
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27894083"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27961094"
 ---
 # <a name="patch-channel"></a>パッチ チャネル
 

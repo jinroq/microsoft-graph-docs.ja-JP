@@ -3,12 +3,13 @@ title: managedAppOperation の作成
 description: 新しい managedAppOperation オブジェクトを作成します。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: c4afd179a33202eb7780495228f94f23326c7268
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 297296dae82a172f68b04ca13eeb9200a33aaba0
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27855210"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27964208"
 ---
 # <a name="create-managedappoperation"></a>managedAppOperation の作成
 
@@ -44,7 +45,7 @@ POST /deviceAppManagement/managedAppRegistrations/{managedAppRegistrationId}/ope
 
 次の表に、managedAppOperation の作成時に必要なプロパティを示します。
 
-|プロパティ|種類|説明|
+|プロパティ|型|説明|
 |:---|:---|:---|
 |displayName|String|操作名。|
 |lastModifiedDateTime|DateTimeOffset|アプリ操作が変更された最終時刻。|

@@ -3,12 +3,13 @@ title: deviceCompliancePolicySettingState リソースの種類
 description: 特定のデバイスに関する、デバイス コンプライアンス ポリシーの設定状態です。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 8c508f7b936f4a04d929fe429b46ec679d7110eb
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 32df1f78169e50c510255a4131e6fa9e0b248aab
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27822786"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27965349"
 ---
 # <a name="devicecompliancepolicysettingstate-resource-type"></a>deviceCompliancePolicySettingState リソースの種類
 
@@ -18,7 +19,7 @@ ms.locfileid: "27822786"
 
 特定のデバイスに関する、デバイス コンプライアンス ポリシーの設定状態です。
 ## <a name="properties"></a>プロパティ
-|プロパティ|種類|説明|
+|プロパティ|型|説明|
 |:---|:---|:---|
 |setting|String|レポートされている設定値です。|
 |settingName|String|レポートされている、ローカライズされた設定名またはユーザー フレンドリな設定名です|

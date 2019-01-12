@@ -3,12 +3,13 @@ title: 組織リソースの種類
 description: organization リソースは、グローバル設定インスタンスと、テナント レベルで操作およびプロビジョニングされるリソースを表わします。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 3b87866520e62850f169861f4fac0a9a2454ea3d
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: cd38274fea11f4312b60719fe04464d9b283fe9c
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27814435"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27961377"
 ---
 # <a name="organization-resource-type"></a>organization リソースの種類
 
@@ -24,7 +25,7 @@ organization リソースは、グローバル設定インスタンスと、テ�
 |[setMobileDeviceManagementAuthority アクション](../api/intune-onboarding-organization-setmobiledevicemanagementauthority.md)|Int32|モバイル デバイス管理権限の設定|
 
 ## <a name="properties"></a>プロパティ
-|プロパティ|種類|説明|
+|プロパティ|型|説明|
 |:---|:---|:---|
 |ID|String|オブジェクトの GUID。|
 |mobileDeviceManagementAuthority|[mdmAuthority](../resources/intune-onboarding-mdmauthority.md)|モバイル デバイス管理権限。 可能な値は、`unknown`、`intune`、`sccm`、`office365` です。|

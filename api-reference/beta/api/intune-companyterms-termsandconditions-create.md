@@ -3,12 +3,13 @@ title: termsAndConditions の作成
 description: 新しい termsAndConditions オブジェクトを作成します。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: bea289d293edd7f7ac68c5a1da1388d89c5687e3
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: d27cf4e4cbedd924c1efbbd526257d5df1d293e6
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27824326"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27954184"
 ---
 # <a name="create-termsandconditions"></a>termsAndConditions の作成
 
@@ -46,7 +47,7 @@ POST /deviceManagement/termsAndConditions
 
 次の表に、termsAndConditions の作成時に必要なプロパティを示します。
 
-|プロパティ|種類|説明|
+|プロパティ|型|説明|
 |:---|:---|:---|
 |ID|String|T&C ポリシーの一意識別子。|
 |createdDateTime|DateTimeOffset|オブジェクトが作成された DateTime。|
