@@ -2,12 +2,14 @@
 title: domainDnsRecord リソースの種類
 description: テナント内の各ドメインのドメインは、Microsoft Online Services で使用できるようにするドメインの DNS ゾーン ファイルを DNS レコードを追加する必要があります。 **DomainDnsRecord**エンティティを使用して、このような DNS レコードを表示します。 DomainDnsCnameRecord、DomainDnsMxRecord、DomainDnsSrvRecord および DomainDnsSrvRecord のエンティティの基本エンティティです。
 localization_priority: Normal
-ms.openlocfilehash: 194e25ca78a1937415b15f455e98ac526c4fb4be
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: lleonard-msft
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: f5c760ba9a2100bbefd0353c2c02019e7a04354b
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27811411"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27912961"
 ---
 # <a name="domaindnsrecord-resource-type"></a>domainDnsRecord リソースの種類
 

@@ -3,12 +3,13 @@ title: mobileAppIdentifier リソースの種類
 description: モバイル アプリの識別子です。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 9552ae893d51f950856eeb9b5c99d9fa41bf9c99
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 3007634b54501aa8aab2e7e0dcc20c9723a107f4
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27808184"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27923720"
 ---
 # <a name="mobileappidentifier-resource-type"></a>mobileAppIdentifier リソースの種類
 

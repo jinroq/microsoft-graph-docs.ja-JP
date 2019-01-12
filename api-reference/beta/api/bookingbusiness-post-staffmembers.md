@@ -2,12 +2,14 @@
 title: BookingStaffMember を作成します。
 description: " > **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。"
 localization_priority: Normal
-ms.openlocfilehash: 43935dbeeda30fb5f69b799993f772ffffa3eeed
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: angelgolfer-ms
+ms.prod: bookings
+ms.openlocfilehash: d9f1abd453601087daa524d550a6041c7960e634
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27838774"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27926506"
 ---
 # <a name="create-bookingstaffmember"></a>BookingStaffMember を作成します。
 

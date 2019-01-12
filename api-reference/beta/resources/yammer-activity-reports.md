@@ -2,12 +2,13 @@
 title: Yammer アクティビティ レポート
 description: Yammer に組織の活動のレベルを理解するには、組織、Yammer にメッセージを読むの投稿などのおよび一意のユーザー数の間でどの程度の活動が生成されます。
 localization_priority: Normal
-ms.openlocfilehash: 9895e37812b037b33f13682c3c56dacba5928d5c
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: reports
+ms.openlocfilehash: 69c155df86cfe772e0c065bec0297a83fb7f3a8b
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27823710"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27912037"
 ---
 # <a name="yammer-activity-reports"></a>Yammer アクティビティ レポート
 

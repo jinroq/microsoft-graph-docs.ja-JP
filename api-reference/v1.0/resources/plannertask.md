@@ -2,12 +2,14 @@
 title: plannerTask のリソースの種類
 description: '**plannerTask** リソースは、Office 365 の Planner のタスクを表します。Planner のタスクは plan に格納され、また、タスクは計画の中の bucket に割り当てることができます。各タスクオブジェクトには、タスクについてのより詳細な情報を保持するための details オブジェクトがあります。グループ、プラン、タスクの関係についての詳細は「概要」を参照してください。'
 localization_priority: Priority
-ms.openlocfilehash: a4c9ffc9c3bcd3e4a7b9df3348cdfe355a648a8d
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: TarkanSevilmis
+ms.prod: planner
+ms.openlocfilehash: 3a90dcdc2cbad09355619c1afe1ff3200181fb39
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27832257"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27917588"
 ---
 # <a name="plannertask-resource-type"></a>plannerTask のリソースの種類
 

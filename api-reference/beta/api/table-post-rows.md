@@ -2,12 +2,14 @@
 title: TableRow を作成する
 description: 'テーブルの末尾に行を追加します。 API がこの API を使用して複数の行データを受け入れることができることに注意してください。 一度に 1 行を追加すると、パフォーマンスが低下する可能性があります。 推奨されるアプローチは、1 つの行の挿入を行うのではなく、1 回の呼び出しでまとめて行をバッチ処理することです。 最良の結果を得るには、収集アプリケーション側で挿入して、1 つの行を実行する行操作を追加します。 理想的な 1 つの API 呼び出しで使用する行の数を決定する行の番号を試してください。 '
 localization_priority: Normal
-ms.openlocfilehash: 0b20c44952ecdd54794d58fda7295be9b71fc4ce
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: lumine2008
+ms.prod: excel
+ms.openlocfilehash: 7e5b44d5ef46dbbd534594aec16f1e6ac180c754
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27813798"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27918281"
 ---
 # <a name="create-tablerow"></a>TableRow を作成する
 

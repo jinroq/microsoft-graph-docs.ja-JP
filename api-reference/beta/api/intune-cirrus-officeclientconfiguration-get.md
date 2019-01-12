@@ -3,12 +3,13 @@ title: OfficeClientConfiguration を取得します。
 description: 特定のポリシーを取得します。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: fcacbdda592ac0c9cbd1775acb3c568f7e29c396
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: d6cd4ec909219fb184ea67dbf9b249a53786ec72
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27854524"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27918932"
 ---
 # <a name="get-officeclientconfiguration"></a>OfficeClientConfiguration を取得します。
 

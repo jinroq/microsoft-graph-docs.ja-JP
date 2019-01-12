@@ -2,12 +2,14 @@
 title: registeredDevices を一覧表示する　
 description: ユーザーの登録済みデバイスの一覧を取得します。
 localization_priority: Normal
-ms.openlocfilehash: 2447a58e89fe6c94ab5b3cf6d23b2621f757709c
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: dkershaw10
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: 9a03027ae8ff2f5fe3c0b9d30c11ed1e860097c8
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27866368"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27915229"
 ---
 # <a name="list-registereddevices"></a>registeredDevices を一覧表示する　
 

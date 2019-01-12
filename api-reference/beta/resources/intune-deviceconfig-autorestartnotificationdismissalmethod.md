@@ -3,12 +3,13 @@ title: autoRestartNotificationDismissalMethod 列挙型
 description: 自動再起動が必要な通知の解雇方法
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 3f83ea8af67e879bea348179e7a4b784b4a8014f
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: dec301e5c864eb06b84265a8adbb0382219c5e48
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27876707"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27923321"
 ---
 # <a name="autorestartnotificationdismissalmethod-enum-type"></a>autoRestartNotificationDismissalMethod 列挙型
 

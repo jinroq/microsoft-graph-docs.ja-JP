@@ -3,12 +3,13 @@ title: TableCollection の一覧表示
 description: テーブル オブジェクトの一覧を取得します。
 author: lumine2008
 localization_priority: Normal
-ms.openlocfilehash: 2557aa50dc27fdff5818743530c9c5594276935a
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: excel
+ms.openlocfilehash: 6db7eed2791c7905b7feef473c19cae7bcb1881c
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27877426"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27923650"
 ---
 # <a name="list-tablecollection"></a>TableCollection の一覧表示
 

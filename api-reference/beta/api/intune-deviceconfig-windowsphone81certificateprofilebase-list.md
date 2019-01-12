@@ -3,12 +3,13 @@ title: リスト windowsPhone81CertificateProfileBases
 description: WindowsPhone81CertificateProfileBase オブジェクトのプロパティと関係を一覧表示します。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 9fe08d72fa64fd62c5fec3ca4e9efc2740231e3e
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 427f98a2edc0adc5df4024192b475ba994468378
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27877638"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27915712"
 ---
 # <a name="list-windowsphone81certificateprofilebases"></a>リスト windowsPhone81CertificateProfileBases
 

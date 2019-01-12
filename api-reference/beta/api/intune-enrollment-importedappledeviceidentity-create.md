@@ -3,12 +3,13 @@ title: ImportedAppleDeviceIdentity を作成します。
 description: 新しい importedAppleDeviceIdentity オブジェクトを作成します。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: d1c88a7d1621cc386ea5fd299d6fc1b014cb7b05
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: cf6f897d44774ceba92b2d2c965f7cc561001383
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27848420"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27925081"
 ---
 # <a name="create-importedappledeviceidentity"></a>ImportedAppleDeviceIdentity を作成します。
 

@@ -3,12 +3,13 @@ title: Microsoft Graph でのグループの操作
 description: グループとは、Microsoft サービス内またはアプリ内のリソースへのアクセスを共有しているユーザーその他のプリンシパルの集合です。 Microsoft Graph では、シナリオに従って、さまざまな種類のグループとグループ機能を作成および管理するために使用できる API を提供します。 Microsoft Graph でのすべてのグループ関連の操作には、管理者の同意が必要です。
 author: dkershaw10
 localization_priority: Priority
-ms.openlocfilehash: c244a372dffda1913cab71d63046caeb64186655
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: groups
+ms.openlocfilehash: 6905021b15b163bf18f6e08c36fba8e9a2a31229
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27873802"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27920423"
 ---
 # <a name="working-with-groups-in-microsoft-graph"></a>Microsoft Graph でのグループの操作
 

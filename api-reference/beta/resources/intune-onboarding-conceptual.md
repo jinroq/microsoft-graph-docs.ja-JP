@@ -2,12 +2,14 @@
 title: Intune における管理用にデバイスを登録する
 description: " (BYOD) の登録では、個人の電話、タブレット、または Pc を登録することができます。 会社所有のデバイス (COD) の登録により、リモートワイプ、共有デバイス、デバイスのユーザー アフィニティなどの管理シナリオが可能になります。"
 localization_priority: Normal
-ms.openlocfilehash: d82df0581273bb3b1b69f69802facb70816c8542
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: tfitzmac
+ms.prod: intune
+ms.openlocfilehash: 895977194822918fc2ac61ed13e0aae938a25166
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27819461"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27923748"
 ---
 # <a name="enroll-devices-for-management-in-intune"></a>Intune における管理用にデバイスを登録する
 

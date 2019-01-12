@@ -3,12 +3,13 @@ title: EducationSynchronizationProfile を作成します。
 description: 'テナントの新しい学校のデータの同期プロファイルの要求を作成します。 プロファイルの状態を取得する状態を照会します。 '
 author: mmast-msft
 localization_priority: Normal
-ms.openlocfilehash: c5ce12f43af4e32691c34038a9a0c0527d314c06
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: education
+ms.openlocfilehash: 9d471766a8492e03809d05d6d0366c8e44d59015
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27853852"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27915761"
 ---
 # <a name="create-an-educationsynchronizationprofile"></a>EducationSynchronizationProfile を作成します。
 

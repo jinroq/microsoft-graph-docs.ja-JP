@@ -3,12 +3,13 @@ title: '電話: subscribeToTone'
 description: (デュアル トーン多重周波数信号) DTMF を購読します。 これにより、ユーザーは、'プッシュホン' 電話のキーを押したときに通知することができます。
 author: VinodRavichandran
 localization_priority: Normal
-ms.openlocfilehash: 226edd59e7d826dd7304ae45ec58c360e8ef3191
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: microsoft-teams
+ms.openlocfilehash: 929fac43017df2bdee106dd9687c221c65a20fbd
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27833433"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27916881"
 ---
 # <a name="call-subscribetotone"></a>電話: subscribeToTone
 

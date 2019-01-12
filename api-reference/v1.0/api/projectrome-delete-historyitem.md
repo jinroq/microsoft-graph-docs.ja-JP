@@ -2,12 +2,13 @@
 title: HistoryItem を削除します。
 description: 既存のユーザー アクティビティの既存の履歴項目を削除します。
 localization_priority: Normal
-ms.openlocfilehash: 3476aba19a2de09f5b4c168ab2a4075b74fd2a93
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: project-rome
+ms.openlocfilehash: 4814987367b7b9a278c645dbdca8fb5e795ce784
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27861923"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27923937"
 ---
 # <a name="delete-a-historyitem"></a>HistoryItem を削除します。
 

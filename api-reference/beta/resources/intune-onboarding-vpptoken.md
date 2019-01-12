@@ -3,12 +3,13 @@ title: vppToken リソースの種類
 description: ビジネス向けまたは教育向けの Apple Volume Purchase Program で iOS アプリのライセンスを複数購入した場合、 Apple の Web サイトから Apple VPP アカウントを設定し、Intune にビジネス向けまたは教育向けの Apple VPP トークンをアップロードする必要があります。 これにより、ボリューム購入情報を Intune と同期して、ボリューム購入したアプリの使用状況を追跡できます。 ビジネス向けまたは教育向けの Apple VPP トークンは複数アップロードできます。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 3c3394ea1872ed91e8c2b8e95db498cd47da05a9
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: c69329cefc99d2a57907c8bc0fe34beb8371f1d9
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27885226"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27912359"
 ---
 # <a name="vpptoken-resource-type"></a>vppToken リソースの種類
 

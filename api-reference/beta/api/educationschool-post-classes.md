@@ -3,12 +3,13 @@ title: educationClass を educationSchool に追加する
 description: 学校にクラスを追加します。
 author: mmast-msft
 localization_priority: Normal
-ms.openlocfilehash: 3e09bd141c0b474d44ce9d691cff29b5164f8f34
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: education
+ms.openlocfilehash: 0ee3d1ba1a0b0da143ab3dbab5624d0ebb3de4ac
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27848581"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27926212"
 ---
 # <a name="add-educationclass-to-educationschool"></a>educationClass を educationSchool に追加する
 

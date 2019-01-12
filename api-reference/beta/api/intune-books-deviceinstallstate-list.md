@@ -3,12 +3,13 @@ title: deviceInstallStates のリスト
 description: deviceInstallState オブジェクトのプロパティとリレーションシップをリストします。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 0352a70246726437961435b75feebfbd6af24f71
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 7622c236a0b2be0703d56c678a07aff570f61cba
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27883126"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27919436"
 ---
 # <a name="list-deviceinstallstates"></a>deviceInstallStates のリスト
 

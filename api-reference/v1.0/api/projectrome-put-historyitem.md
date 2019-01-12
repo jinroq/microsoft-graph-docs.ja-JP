@@ -2,12 +2,13 @@
 title: 作成するか、historyItem を置き換える
 description: 新規作成または既存のユーザー アクティビティの既存の履歴項目を置換します。
 localization_priority: Normal
-ms.openlocfilehash: b3462edef2c210399e4dd653e9b3c7d91bb67875
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: project-rome
+ms.openlocfilehash: 21c4420ff64d105a5512df1f9a57a5e8309413f9
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27856295"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27913003"
 ---
 # <a name="create-or-replace-a-historyitem"></a>作成するか、historyItem を置き換える
 

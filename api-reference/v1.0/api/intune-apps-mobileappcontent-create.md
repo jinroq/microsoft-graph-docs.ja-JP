@@ -3,12 +3,13 @@ title: mobileAppContent の作成
 description: 新しい mobileAppContent オブジェクトを作成します。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: c59d06f506dd27a8aa7b4731df94e0bed2c5480f
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 096d99b382e1942095522191b6275e019e8823d4
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27831200"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27916426"
 ---
 # <a name="create-mobileappcontent"></a>mobileAppContent の作成
 

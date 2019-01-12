@@ -2,12 +2,14 @@
 title: androidForWorkNineWorkEasConfiguration リソースの種類
 description: このプロファイルの構成を提供することによって作業 9 電子メール クライアントを Exchange サーバーと通信し、電子メール、連絡先、カレンダー、タスク、およびメモを取得するデバイスの Android の作業を指示できます。 さらに、同期とデバイスを同期する必要がありますどのくらいの頻度にどのくらいのメールを指定することもできます。
 localization_priority: Normal
-ms.openlocfilehash: 951c033fd8ee1f65b48b99045d4b9da86443a50e
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: tfitzmac
+ms.prod: intune
+ms.openlocfilehash: b78a585852e004e5b4b4b6685abe521129b1b816
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27848896"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27913619"
 ---
 # <a name="androidforworknineworkeasconfiguration-resource-type"></a>androidForWorkNineWorkEasConfiguration リソースの種類
 

@@ -3,12 +3,13 @@ title: applePushNotificationCertificate の取得
 description: applePushNotificationCertificate オブジェクトのプロパティとリレーションシップを読み取ります。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: ee7842e444b40427424477863d90ebb70355159c
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 139b3500c3a1a1d0c79f97ec36005ec0a7fd28ea
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27877183"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27911666"
 ---
 # <a name="get-applepushnotificationcertificate"></a>applePushNotificationCertificate の取得
 

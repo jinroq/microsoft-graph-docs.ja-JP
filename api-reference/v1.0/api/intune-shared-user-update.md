@@ -3,12 +3,13 @@ title: ユーザーを更新する
 description: ユーザー オブジェクトのプロパティを更新します。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 8af523c26ddd799b6084b9596db072cf74e40687
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 455a3e0c68fadc9768c434f5893dbc950a371bab
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27879066"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27922523"
 ---
 # <a name="update-user"></a>user の更新
 

@@ -3,12 +3,13 @@ title: Get deviceComplianceSettingState
 description: deviceComplianceSettingState オブジェクトのプロパティとリレーションシップを読み取ります。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: edf296f4e3daab1a8d843647dfe1630ac1bb5745
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 7cf582975883ef3027443719ea00596305093eac
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27817277"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27916790"
 ---
 # <a name="get-devicecompliancesettingstate"></a>Get deviceComplianceSettingState
 

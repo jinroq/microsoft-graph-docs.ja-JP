@@ -2,12 +2,14 @@
 title: 範囲リソースの種類
 description: 範囲は、1 つ以上の隣接するセル (セル、行、列、セルのブロックなど) のセットを表します。
 localization_priority: Normal
-ms.openlocfilehash: 4b175cfc48ca4a0f55c430c6087ebbb907d6cb97
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: lumine2008
+ms.prod: excel
+ms.openlocfilehash: 537da7c6a7b54c7977056ca822c4b98c85f2c1a2
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27865696"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27918949"
 ---
 # <a name="range-resource-type"></a>範囲リソースの種類
 

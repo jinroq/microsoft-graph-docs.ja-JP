@@ -2,12 +2,14 @@
 title: OutlookTask を作成します。
 description: デフォルトのタスク グループに Outlook のタスクを作成する (`My Tasks`) と既定の作業フォルダー (`Tasks`) ユーザーのメールボックスにします。
 localization_priority: Normal
-ms.openlocfilehash: c158af6ac5125bb410bcbe57a1cb26b8cd955e28
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: angelgolfer-ms
+ms.prod: outlook
+ms.openlocfilehash: 04cc91f9c6eee09f71783d0548470d167911ec91
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27853740"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27925596"
 ---
 # <a name="create-outlooktask"></a>OutlookTask を作成します。
 

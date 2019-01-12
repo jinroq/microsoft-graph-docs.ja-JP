@@ -2,12 +2,14 @@
 title: 範囲:OffsetRange
 description: 指定した範囲からのオフセットで範囲を表すオブジェクトを取得します。返される範囲のディメンションは、この範囲と一致します。結果の範囲が、ワークシートのグリッドの境界線の外にはみ出る場合は、例外がスローされます。
 localization_priority: Normal
-ms.openlocfilehash: d1486c3ee4271d9e9acafeb2883ca4522f598d1a
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: lumine2008
+ms.prod: excel
+ms.openlocfilehash: 4f1a513a33185dba976398e31caf4996005feb67
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27834455"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27925799"
 ---
 # <a name="range-offsetrange"></a>範囲:OffsetRange
 

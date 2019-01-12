@@ -2,12 +2,14 @@
 title: メッセージを更新する
 description: メッセージ オブジェクトのプロパティを更新します。
 author: angelgolfer-ms
-ms.openlocfilehash: c15d4ac183b41b2ab927fc39e175df80626f348e
-ms.sourcegitcommit: 37591c2299c80e7675cd2b5f781e1eeeba628a60
+localization_priority: Priority
+ms.prod: outlook
+ms.openlocfilehash: c3564d5f48cb3b3e12e18a07d605fcd3eba01291
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "27748508"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27922544"
 ---
 # <a name="update-message"></a>メッセージを更新する
 
@@ -30,14 +32,14 @@ PATCH /me/mailFolders/{id}/messages/{id}
 PATCH /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}
 ```
 ## <a name="request-headers"></a>要求ヘッダー
-| 名前       | 型 | 説明|
+| 名前       | 種類 | 説明|
 |:-----------|:------|:----------|
 | Authorization  | string  | ベアラー {トークン}。必須。 |
 | Content-Type | string  | エンティティ本文内のデータの性質です。必須。 |
 ## <a name="request-body"></a>要求本文
 要求本文で、更新する関連フィールドの値を指定します。 要求本文に含まれない既存のプロパティは、以前の値のままになるか、他のプロパティ値の変更に基づいて再計算されます。 最適なパフォーマンスを得るためには、変更されていない既存の値を含めないでください。 次のプロパティを更新することができます。
 
-| プロパティ     | 型   |説明|
+| プロパティ     | 種類   |説明|
 |:---------------|:--------|:----------|
 |bccRecipients|Recipient|メッセージの BCC 受信者。 |
 |body|ItemBody|メッセージの本文。 更新可能な場合にのみ isDraft = true です。|
@@ -47,9 +49,9 @@ PATCH /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}
 |importance|String|メッセージの重要性。 可能な値: `Low`、 `Normal`、 `High`。|
 |inferenceClassification | String | 推論の妥当性や重要度、または明示的なオーバーライドに基づいて、ユーザーに対するメッセージの分類です。 可能な値:`focused`または`other`。 |
 |internetMessageId |String |[RFC2822](https://www.ietf.org/rfc/rfc2822.txt) によって指定された形式のメッセージ ID。 更新可能な場合にのみ isDraft = true です。|
-|isDeliveryReceiptRequested|Boolean|メッセージの開封応答が要求されているかどうかを示します。|
-|isRead|Boolean|メッセージが開封されたかどうかを示します。|
-|isReadReceiptRequested|Boolean|メッセージの開封確認メッセージが要求されているかどうかを示します。|
+|isDeliveryReceiptRequested|ブール値|メッセージの開封応答が要求されているかどうかを示します。|
+|isRead|ブール値|メッセージが開封されたかどうかを示します。|
+|isReadReceiptRequested|ブール値|メッセージの開封確認メッセージが要求されているかどうかを示します。|
 |multiValueExtendedProperties|[multiValueLegacyExtendedProperty](../resources/multivaluelegacyextendedproperty.md) collection| 複数値のコレクションでは、メッセージに対して定義されたプロパティを拡張します。 Null 許容型。|
 |replyTo|Recipient collection|返信時に使用される電子メール アドレス。 更新可能な場合にのみ isDraft = true です。|
 |sender|Recipient|メッセージを生成するために実際に使用されるアカウント。 [共有されているメールボックス](https://docs.microsoft.com/en-us/exchange/collaboration/shared-mailboxes/shared-mailboxes)、または[委任](https://support.office.com/en-us/article/allow-someone-else-to-manage-your-mail-and-calendar-41c40c04-3bd1-4d22-963a-28eafec25926)としてメッセージを送信するメッセージを送信するときに更新します。 いずれの場合も、値は、使用される実際のメールボックスに対応する必要があります。|

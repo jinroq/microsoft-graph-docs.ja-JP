@@ -3,12 +3,13 @@ title: windows81TrustedRootCertificate リソースの種類
 description: Windows 8.1 の信頼された証明書の構成プロファイル
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 52380091787470247545954e7561739a13ee8ef4
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 163466d6a19a6c1430a02ee2755e49f025edf4f4
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27810515"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27919870"
 ---
 # <a name="windows81trustedrootcertificate-resource-type"></a>windows81TrustedRootCertificate リソースの種類
 

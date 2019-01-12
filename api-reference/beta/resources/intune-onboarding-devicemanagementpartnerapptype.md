@@ -3,12 +3,13 @@ title: deviceManagementPartnerAppType 列挙型
 description: パートナー アプリケーションの種類です。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: f174e9ad0c8d125c6d0a06336043923d53d81ed4
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 6abfc248208cb3b9384eef3ed0772be61a77539c
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27820406"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27922124"
 ---
 # <a name="devicemanagementpartnerapptype-enum-type"></a>deviceManagementPartnerAppType 列挙型
 
