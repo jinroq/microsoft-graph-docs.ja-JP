@@ -3,12 +3,13 @@ title: mobileAppAssignment の更新
 description: mobileAppAssignment オブジェクトのプロパティを更新します。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: e46df43d27e35d4d9c88a6520761d737b8bf720c
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: c026138c1a4a8c75bf77251729efbf0aaa34d824
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27887270"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27979748"
 ---
 # <a name="update-mobileappassignment"></a>mobileAppAssignment の更新
 
@@ -44,7 +45,7 @@ PATCH /deviceAppManagement/mobileApps/{mobileAppId}/assignments/{mobileAppAssign
 
 次の表に、[mobileAppAssignment](../resources/intune-apps-mobileappassignment.md) の作成時に必要なプロパティを示します。
 
-|プロパティ|種類|説明|
+|プロパティ|型|説明|
 |:---|:---|:---|
 |ID|String|エンティティのキー。|
 |intent|[installIntent](../resources/intune-shared-installintent.md)|管理者によって定義されたインストールの目的。可能な値は、`available`、`required`、`uninstall`、`availableWithoutEnrollment` です。|

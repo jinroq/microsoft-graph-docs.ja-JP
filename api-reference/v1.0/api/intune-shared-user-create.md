@@ -3,12 +3,13 @@ title: user の作成
 description: 新しいユーザー オブジェクトを作成します。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 3d654f287478b140f64f14a4814850a4c9d19ff7
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 1b1789cbf0743384780147ce8c50f5472f9f2d64
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27866669"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27981505"
 ---
 # <a name="create-user"></a>user の作成
 
@@ -48,7 +49,7 @@ POST /users
 
 次の表に、user の作成時に必要なプロパティを示します。
 
-|プロパティ|種類|説明|
+|プロパティ|型|説明|
 |:---|:---|:---|
 |ID|String|ユーザーの一意識別子。|
 |**契約時**|

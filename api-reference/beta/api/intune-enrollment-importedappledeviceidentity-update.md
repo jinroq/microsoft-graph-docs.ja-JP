@@ -3,12 +3,13 @@ title: ImportedAppleDeviceIdentity を更新します。
 description: ImportedAppleDeviceIdentity オブジェクトのプロパティを更新します。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 4019621eb6f69b288575a592b59b0018582c0b06
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 53f80608d2236b1afe6d7f9f80c5e4816d76ec50
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27870505"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27990986"
 ---
 # <a name="update-importedappledeviceidentity"></a>ImportedAppleDeviceIdentity を更新します。
 
@@ -46,7 +47,7 @@ PATCH /deviceManagement/depOnboardingSettings/{depOnboardingSettingId}/importedA
 
 [ImportedAppleDeviceIdentity](../resources/intune-enrollment-importedappledeviceidentity.md)を作成するときに必要なプロパティを次の表に示します。
 
-|プロパティ|種類|説明|
+|プロパティ|型|説明|
 |:---|:---|:---|
 |ID|String|エンティティのキー。|
 |シリアル番号|String|デバイスのシリアル番号|

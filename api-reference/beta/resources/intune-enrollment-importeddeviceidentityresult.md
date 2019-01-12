@@ -3,12 +3,13 @@ title: importedDeviceIdentityResult リソースの種類
 description: ImportedDeviceIdentityResult リソースでは、デバイスの識別情報をインポートしようとした結果を表します。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 508a1a91fcbc580cb324285ee4eff4a93a664af0
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 7373ff0c0ec138b61552b61caea063a063a50ad1
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27879213"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27981736"
 ---
 # <a name="importeddeviceidentityresult-resource-type"></a>importedDeviceIdentityResult リソースの種類
 
@@ -30,7 +31,7 @@ ImportedDeviceIdentityResult リソースでは、デバイスの識別情報を
 |[ImportedDeviceIdentityResult を更新します。](../api/intune-enrollment-importeddeviceidentityresult-update.md)|[importedDeviceIdentityResult](../resources/intune-enrollment-importeddeviceidentityresult.md)|[ImportedDeviceIdentityResult](../resources/intune-enrollment-importeddeviceidentityresult.md)オブジェクトのプロパティを更新します。|
 
 ## <a name="properties"></a>プロパティ
-|プロパティ|種類|説明|
+|プロパティ|型|説明|
 |:---|:---|:---|
 |ID|String|[ImportedDeviceIdentity](../resources/intune-enrollment-importeddeviceidentity.md)から継承されるインポート済みのデバイス id の id|
 |importedDeviceIdentifier|String|インポートされたデバイスの識別子から継承された[importedDeviceIdentity](../resources/intune-enrollment-importeddeviceidentity.md)|
@@ -41,7 +42,7 @@ ImportedDeviceIdentityResult リソースでは、デバイスの識別情報を
 |説明|String|[ImportedDeviceIdentity](../resources/intune-enrollment-importeddeviceidentity.md)から継承される、デバイスの説明|
 |enrollmentState|[enrollmentState](../resources/intune-enrollment-enrollmentstate.md)|Intune 継承で[importedDeviceIdentity](../resources/intune-enrollment-importeddeviceidentity.md)からのデバイスの状態。 使用可能な値: `unknown`、`enrolled`、`pendingReset`、`failed`、`notContacted`、`blocked`。|
 |platform|[プラットフォーム](../resources/intune-enrollment-platform.md)|デバイスのプラットフォームです。 [ImportedDeviceIdentity](../resources/intune-enrollment-importeddeviceidentity.md)から継承されます。 使用可能な値: `unknown`、`ios`、`android`、`windows`、`windowsMobile`、`macOS`。|
-|status|ブール型|インポートされたデバイス id のステータス|
+|status|Boolean|インポートされたデバイス id のステータス|
 
 ## <a name="relationships"></a>リレーションシップ
 なし

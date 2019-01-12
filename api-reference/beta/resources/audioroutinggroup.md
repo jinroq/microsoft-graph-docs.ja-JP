@@ -3,12 +3,13 @@ title: audioRoutingGroup リソースの種類
 description: オーディオのルーティング グループでは、通話参加者の間にプライベート オーディオ ルートを格納します。 ソースは参加者自身で、受信者、通話の他の参加者のサブセットであります。
 author: VinodRavichandran
 localization_priority: Normal
-ms.openlocfilehash: cb1b8b67404ef6a3c8f397a6b5debe9acc252b5f
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: microsoft-teams
+ms.openlocfilehash: 0e18a9beb660b9bae0c1bbe1034ec64790d369fa
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27860649"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27980189"
 ---
 # <a name="audioroutinggroup-resource-type"></a>audioRoutingGroup リソースの種類
 
@@ -28,7 +29,7 @@ ms.locfileid: "27860649"
 
 ## <a name="properties"></a>プロパティ
 
-| プロパティ      | 種類              | 説明                                                          |
+| プロパティ      | 型              | 説明                                                          |
 | :----------   | :---------------- | :--------------------------------------------------------------------|
 | ID            | String            | 読み取り専用です。 サーバーを生成します。                                         |
 | 受信機     | 文字列コレクション | 参加者の id を受信する] ボックスの一覧です。                                   |

@@ -2,12 +2,14 @@
 title: ページを取得する
 description: ページ オブジェクトのプロパティとリレーションシップを取得します。
 localization_priority: Normal
-ms.openlocfilehash: 7fac5d442ade9f41201881e6b5082ce9ec5fed0c
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: jewan-microsoft
+ms.prod: onenote
+ms.openlocfilehash: 963aeeec95b9c57dbb0a024aeca2afdfba16a9d2
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27807946"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27979300"
 ---
 # <a name="get-page"></a>ページを取得する
 
@@ -55,7 +57,7 @@ GET /sites/{id}/onenote/pages/{id}
 既定の応答は、`parentSection` を展開し、セクションの `id`、`name`、`self` プロパティを選択します。ページの有効な `expand` 値は、`parentNotebook` と `parentSection` です。
 
 ## <a name="request-headers"></a>要求ヘッダー
-| 名前       | 種類 | 説明|
+| 名前       | 型 | 説明|
 |:-----------|:------|:----------|
 | Authorization  | string  | ベアラー {トークン}。必須。 |
 | 承諾 | string | `application/json` |

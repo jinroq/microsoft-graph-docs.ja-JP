@@ -3,12 +3,13 @@ title: deviceManagementPartner の更新
 description: deviceManagementPartner オブジェクトのプロパティを更新します。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: c8e9425968d00805eb8640ff3a7e19380a92c6dd
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 068a0ffb3c0411a238a803f3876874f8902e3b35
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27838781"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27981862"
 ---
 # <a name="update-devicemanagementpartner"></a>deviceManagementPartner の更新
 
@@ -44,7 +45,7 @@ PATCH /deviceManagement/deviceManagementPartners/{deviceManagementPartnerId}
 
 次の表に、[deviceManagementPartner](../resources/intune-onboarding-devicemanagementpartner.md) の作成時に必要なプロパティを示します。
 
-|プロパティ|種類|説明|
+|プロパティ|型|説明|
 |:---|:---|:---|
 |ID|String|まだ文書化されていません|
 |lastHeartbeatDateTime|DateTimeOffset|管理者が [デバイス管理パートナーに接続] オプションを有効にした後の最終ハートビートのタイムスタンプ|

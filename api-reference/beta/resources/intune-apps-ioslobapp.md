@@ -3,12 +3,13 @@ title: iosLobApp リソース タイプ
 description: iOS 基幹業務アプリケーションのプロパティと継承されたプロパティが含まれます。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: e56c9b2a9a107985ab7f863525f45bc3f43d4f41
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 21aa2e3b0e2b37b7ab4ce14ef293285f2c1e2e79
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27857450"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27982303"
 ---
 # <a name="ioslobapp-resource-type"></a>iosLobApp リソース タイプ
 
@@ -30,7 +31,7 @@ iOS 基幹業務アプリケーションのプロパティと継承されたプ�
 |[Update iosLobApp](../api/intune-apps-ioslobapp-update.md)|[iosLobApp](../resources/intune-apps-ioslobapp.md)|[iosLobApp](../resources/intune-apps-ioslobapp.md) オブジェクトのプロパティを更新します。|
 
 ## <a name="properties"></a>プロパティ
-|プロパティ|種類|説明|
+|プロパティ|型|説明|
 |:---|:---|:---|
 |ID|String|エンティティのキー。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|
 |displayName|String|管理者が提供またはインポートしたアプリのタイトル。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|

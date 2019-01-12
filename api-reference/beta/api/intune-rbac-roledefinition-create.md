@@ -3,12 +3,13 @@ title: roleDefinition の作成
 description: 新しい roleDefinition オブジェクトを作成します。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: cb1e4b80388ecb74a4bd521e4b910a24ffb22af6
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: e7ac933fb0fd6bb7256e312e3cf9117866152088
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27858983"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27979566"
 ---
 # <a name="create-roledefinition"></a>roleDefinition の作成
 
@@ -46,7 +47,7 @@ POST /deviceManagement/roleDefinitions
 
 次の表に、roleDefinition の作成時に必要なプロパティを示します。
 
-|プロパティ|種類|説明|
+|プロパティ|型|説明|
 |:---|:---|:---|
 |ID|String|エンティティのキー。 これは読み取り専用で、自動生成されます。|
 |displayName|String|ロールの定義の表示名。|

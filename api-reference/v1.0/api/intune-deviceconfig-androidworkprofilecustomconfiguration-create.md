@@ -3,12 +3,13 @@ title: AndroidWorkProfileCustomConfiguration を作成します。
 description: 新しい androidWorkProfileCustomConfiguration オブジェクトを作成します。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 0d05aee835dfe98d78b3afc31e0ec2af0e7775be
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 1dba06c297117fbf91a8848904c0723dcfee4b3a
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27850814"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27987175"
 ---
 # <a name="create-androidworkprofilecustomconfiguration"></a>AndroidWorkProfileCustomConfiguration を作成します。
 
@@ -44,7 +45,7 @@ POST /deviceManagement/deviceConfigurations
 
 次の表は、androidWorkProfileCustomConfiguration を作成するときに必要なプロパティを示します。
 
-|プロパティ|種類|説明|
+|プロパティ|型|説明|
 |:---|:---|:---|
 |ID|String|エンティティのキー。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |lastModifiedDateTime|DateTimeOffset|オブジェクトが最後に変更された DateTime。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|

@@ -3,12 +3,13 @@ title: windowsEnrollmentStatusScreenSettings リソースの種類
 description: 登録ステータス画面の設定
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 7263fdd8ab3d9a39d5081322c62cfcf76a4c7aa0
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: abc48a1d63cc514d2ec887a7758e69a0ea8112a7
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27877449"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27978572"
 ---
 # <a name="windowsenrollmentstatusscreensettings-resource-type"></a>windowsEnrollmentStatusScreenSettings リソースの種類
 
@@ -18,15 +19,15 @@ ms.locfileid: "27877449"
 
 登録ステータス画面の設定
 ## <a name="properties"></a>プロパティ
-|プロパティ|種類|説明|
+|プロパティ|型|説明|
 |:---|:---|:---|
-|hideInstallationProgress|ブール型|ユーザーにインストールの進行状況の表示と非表示を切り替える|
-|allowDeviceUseBeforeProfileAndAppInstallComplete|ブール型|許可またはブロックのユーザー プロファイル、およびアプリケーション インストールが完了する前にデバイスを使用するには|
-|blockDeviceSetupRetryByUser|ブール型|インストールの失敗時にセットアップを再実行するユーザーを許可します。|
-|allowLogCollectionOnInstallFailure|ブール型|許可またはブロックのインストールの失敗時にログの収集|
+|hideInstallationProgress|Boolean|ユーザーにインストールの進行状況の表示と非表示を切り替える|
+|allowDeviceUseBeforeProfileAndAppInstallComplete|Boolean|許可またはブロックのユーザー プロファイル、およびアプリケーション インストールが完了する前にデバイスを使用するには|
+|blockDeviceSetupRetryByUser|Boolean|インストールの失敗時にセットアップを再実行するユーザーを許可します。|
+|allowLogCollectionOnInstallFailure|Boolean|許可またはブロックのインストールの失敗時にログの収集|
 |customErrorMessage|String|インストールの失敗時に表示するカスタム エラー メッセージを設定します。|
 |installProgressTimeoutInMinutes|Int32|インストールの進行状況のタイムアウトを分単位で設定します。|
-|allowDeviceUseOnInstallFailure|ブール型|インストールの失敗時にデバイスを使用するユーザーを許可します。|
+|allowDeviceUseOnInstallFailure|Boolean|インストールの失敗時にデバイスを使用するユーザーを許可します。|
 
 ## <a name="relationships"></a>リレーションシップ
 なし

@@ -2,12 +2,14 @@
 title: ユーザー デバイスの一覧表示
 description: プロジェクト ローマの機能をサポートしているユーザーのデバイスの一覧を取得します。 または、アプリケーションを起動またはアプリケーションにデータを送信する機能が含まれます。 した後に GET 呼び出しを行うし、デバイスが、デバイスにコマンドを送信するデバイスの ID を渡します。
 localization_priority: Normal
-ms.openlocfilehash: 455a134b2edcf64255a2818887c6ff68959a1202
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: dkershaw10
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: 04b67b770eec38d9e70a2263cd54212077335c85
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27855924"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27983542"
 ---
 # <a name="list-user-devices"></a>ユーザー デバイスの一覧表示
 

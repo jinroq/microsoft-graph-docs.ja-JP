@@ -3,12 +3,13 @@ title: WindowsManagementApp を更新します。
 description: WindowsManagementApp オブジェクトのプロパティを更新します。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 182dd2ef39a322c38497dd8b714945724bf5b12e
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: fe6412c08ba05bb26985cc5fd6a8ab0b58bc8e59
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27886752"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27980245"
 ---
 # <a name="update-windowsmanagementapp"></a>WindowsManagementApp を更新します。
 
@@ -46,7 +47,7 @@ PATCH /deviceAppManagement/windowsManagementApp
 
 [WindowsManagementApp](../resources/intune-devices-windowsmanagementapp.md)を作成するときに必要なプロパティを次の表に示します。
 
-|プロパティ|種類|説明|
+|プロパティ|型|説明|
 |:---|:---|:---|
 |ID|String|Windows 管理アプリケーションの一意の識別子|
 |availableVersion|String|Windows 管理アプリケーションの使用可能なバージョンです。|

@@ -3,12 +3,13 @@ title: getTopMobileApps 関数
 description: まだ文書化されていません
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: d4f9299e2de7dca455d192637eba84ccc553d434
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: f5a380145c51ba61fe76638941c42352f254606e
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27879500"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27980210"
 ---
 # <a name="gettopmobileapps-function"></a>getTopMobileApps 関数
 
@@ -45,7 +46,7 @@ GET /deviceAppManagement/mobileApps/getTopMobileApps
 要求 URL で、次のクエリ パラメーターに値を指定します。
 次の表に、この関数で使用できるパラメーターを示します。
 
-|プロパティ|種類|説明|
+|プロパティ|型|説明|
 |:---|:---|:---|
 |status|String|まだ文書化されていません|
 |count|Int64|まだ文書化されていません|

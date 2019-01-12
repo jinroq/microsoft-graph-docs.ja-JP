@@ -2,12 +2,14 @@
 title: 'user: findMeetingTimes'
 description: 会議の時間と開催者と出席者の可用性、およびパラメーターとして指定された時間や場所の制約に基づいて場所をお勧めします。
 localization_priority: Normal
-ms.openlocfilehash: aae60b6148026725d325910c8c1ac0cd2ff376a2
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: dkershaw10
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: c0544ecdeffd4378002851c26465862a5244fe15
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27878912"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27990748"
 ---
 # <a name="user-findmeetingtimes"></a>user: findMeetingTimes
 
@@ -43,7 +45,7 @@ POST /users/{id|userPrincipalName}/findMeetingTimes
 サポートされているすべてのパラメーターは以下のとおりです。シナリオに応じて、要求本文で必要な各パラメーターの JSON オブジェクトを指定します。 
 
 
-| パラメーター    | Type   |説明|
+| パラメーター    | 型   |説明|
 |:---------------|:--------|:----------|
 |attendees|[attendeeBase](../resources/attendeebase.md) コレクション|会議の出席者またはリソースのコレクションです。findMeetingTimes では個人の出席者が常に必要であると仮定されているため、個人として `required`、対応する **type** プロパティのリソースとして `resource` を指定します。コレクションを空にすると、**findMeetingTimes** は開催者のみの空き時間帯を検索します。省略可能。|
 |isOrganizerOptional|Edm.Boolean|開催者が必ずしも出席する必要がない場合は、`True` を指定します。既定値は `false` です。省略可能。|

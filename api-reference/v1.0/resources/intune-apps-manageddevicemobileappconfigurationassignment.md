@@ -3,12 +3,13 @@ title: managedDeviceMobileAppConfigurationAssignment リソースの種類
 description: グループに MDM アプリ構成を割り当てるためのプロパティが含まれています。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: acea6cbfcfe8f4a6b58ac6a5b332150407c0265e
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: e03acd55f5538ea8a518510b5eba91849859dd1a
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27884596"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27982009"
 ---
 # <a name="manageddevicemobileappconfigurationassignment-resource-type"></a>managedDeviceMobileAppConfigurationAssignment リソースの種類
 
@@ -25,7 +26,7 @@ ms.locfileid: "27884596"
 |[managedDeviceMobileAppConfigurationAssignment の更新](../api/intune-apps-manageddevicemobileappconfigurationassignment-update.md)|[managedDeviceMobileAppConfigurationAssignment](../resources/intune-apps-manageddevicemobileappconfigurationassignment.md)|[managedDeviceMobileAppConfigurationAssignment](../resources/intune-apps-manageddevicemobileappconfigurationassignment.md) オブジェクトのプロパティを更新します。|
 
 ## <a name="properties"></a>プロパティ
-|プロパティ|種類|説明|
+|プロパティ|型|説明|
 |:---|:---|:---|
 |ID|String|エンティティの一意識別子。|
 |target|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|T & C ポリシーが割り当てられる、割り当て先です。|

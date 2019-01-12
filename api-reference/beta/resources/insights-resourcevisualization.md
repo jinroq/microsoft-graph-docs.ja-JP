@@ -3,12 +3,13 @@ title: resourceVisualization リソースの種類
 description: 複合型のプロパティ情報にはが含まれています。
 author: simonhult
 localization_priority: Normal
-ms.openlocfilehash: 7600c843e36e3bce6c8a4182e0bfda14ad21d7b7
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: insights
+ms.openlocfilehash: f8426d13968e5bea929c8e26f71346fa554a5242
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27844977"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27990657"
 ---
 # <a name="resourcevisualization-resource-type"></a>resourceVisualization リソースの種類
 
@@ -35,7 +36,7 @@ ms.locfileid: "27844977"
 
 ## <a name="properties"></a>プロパティ
 
-| プロパティ              | 種類          | 説明  |
+| プロパティ              | 型          | 説明  |
 | -------------         |---------------| -------------|
 | タイトル                 | String        | アイテムのタイトルのテキストです。               |
 | type              | String        | 項目のメディア ・ タイプ。 特定の種類に基づいて特定のファイルをフィルター処理するために使用できます。 サポートされている型の下を参照してください。 |

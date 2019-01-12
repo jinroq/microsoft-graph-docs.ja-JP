@@ -3,12 +3,13 @@ title: mobileAppAssignment の作成
 description: 新しい mobileAppAssignment オブジェクトを作成します。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: b882c12de0be358d1a08611037662f3cd9246a43
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 0d163d3d13b69cd536ad7ef99a2a9bab54baa366
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27876210"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27987840"
 ---
 # <a name="create-mobileappassignment"></a>mobileAppAssignment の作成
 
@@ -44,7 +45,7 @@ POST /deviceAppManagement/mobileApps/{mobileAppId}/assignments
 
 次の表に、mobileAppAssignment の作成時に必要なプロパティを示します。
 
-|プロパティ|種類|説明|
+|プロパティ|型|説明|
 |:---|:---|:---|
 |ID|String|エンティティのキー。|
 |intent|[installIntent](../resources/intune-shared-installintent.md)|管理者によって定義されたインストールの目的。可能な値は、`available`、`required`、`uninstall`、`availableWithoutEnrollment` です。|

@@ -3,12 +3,13 @@ title: VPPトークンの更新
 description: vppToken オブジェクトのプロパティを更新します。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 3ee03df791a1ac9c5f5a81a475be9556b70b5b70
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 5574a791de1d357d0e1b211530ac3121d96383cc
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27805531"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27983101"
 ---
 # <a name="update-vpptoken"></a>VPPトークンの更新
 
@@ -44,7 +45,7 @@ PATCH /deviceAppManagement/vppTokens/{vppTokenId}
 
 次の表に、[VPPトークン](../resources/intune-onboarding-vpptoken.md) の作成時に必要なプロパティを示します。
 
-|プロパティ|種類|説明|
+|プロパティ|型|説明|
 |:---|:---|:---|
 |ID|String|appleVolumePurchaseProgramToken 作成時に自動的に生成されます。 エンティティのキーになります。|
 |organizationName|String|Apple Volume Purchase Program のトークンに関連付けられている組織|

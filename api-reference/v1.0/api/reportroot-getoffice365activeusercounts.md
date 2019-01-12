@@ -2,12 +2,13 @@
 title: 'reportRoot: getOffice365ActiveUserCounts'
 description: レポート期間中の日ごとのアクティブ ユーザー数を製品別に取得します。
 localization_priority: Normal
-ms.openlocfilehash: 7b128ca1bad8cdf4c086edda2ada285e3910828d
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: reports
+ms.openlocfilehash: 3469cbcf2dee789ca848f88d43d8eb3ff640f9c7
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27809928"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27980035"
 ---
 # <a name="reportroot-getoffice365activeusercounts"></a>reportRoot: getOffice365ActiveUserCounts
 
@@ -37,7 +38,7 @@ GET /reports/getOffice365ActiveUserCounts(period='{period_value}')
 
 要求 URL に、次のパラメーターと有効な値を指定します。
 
-| パラメーター | Type   | 説明                              |
+| パラメーター | 型   | 説明                              |
 | :-------- | :----- | :--------------------------------------- |
 | period    | 文字列 | レポートを集計する期間の長さを指定します。 {period_value} でサポートされている値は D7、D30、D90、D180 です。 これらの値は、D*n* の形式 (*n* はレポートを集計する日数) に従います。 必須。 |
 

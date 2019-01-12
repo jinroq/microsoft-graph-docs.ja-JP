@@ -3,12 +3,13 @@ title: ManagedEBookCategory を更新します。
 description: ManagedEBookCategory オブジェクトのプロパティを更新します。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: ef8970fb32b94b17b9277c3d30fc72bbc582ea87
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 236159e64bccd0eb5ce03de0c04d8b5fdf99b47d
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27853194"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27990908"
 ---
 # <a name="update-managedebookcategory"></a>ManagedEBookCategory を更新します。
 
@@ -47,7 +48,7 @@ PATCH /deviceAppManagement/managedEBooks/{managedEBookId}/categories/{managedEBo
 
 [ManagedEBookCategory](../resources/intune-books-managedebookcategory.md)を作成するときに必要なプロパティを次の表に示します。
 
-|プロパティ|種類|説明|
+|プロパティ|型|説明|
 |:---|:---|:---|
 |ID|String|エンティティのキー。|
 |displayName|String|EBook カテゴリの名前です。|

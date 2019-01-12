@@ -3,12 +3,13 @@ title: アプリケーションを更新します。
 description: アプリケーション オブジェクトのプロパティを更新します。
 author: lleonard-msft
 localization_priority: Normal
-ms.openlocfilehash: fafc1a339b96bfffdfbce24566b69bbd776825db
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: ecdf1d7f4f291b415e83b3926f8f82ea81f73390
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27819006"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27990706"
 ---
 # <a name="update-application"></a>アプリケーションを更新します。
 
@@ -31,16 +32,16 @@ ms.locfileid: "27819006"
 PATCH /applications/{id}
 ```
 ## <a name="request-headers"></a>要求ヘッダー
-| 名前       | 種類 | 説明|
+| 名前       | 型 | 説明|
 |:-----------|:------|:----------|
 | Authorization  | string  | ベアラー {トークン}。必須。  |
 
 ## <a name="request-body"></a>要求本文
 要求本文で、更新する関連フィールドの値を指定します。要求本文に含まれない既存のプロパティは、以前の値のままになるか、他のプロパティ値の変化に基づいて再計算されます。最適なパフォーマンスを得るためには、変更されていない既存の値を含めないでください。
 
-| プロパティ     | 種類   |説明|
+| プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
-|allowPublicClient|ブール型| アプリケーションは、パブリック クライアントとして動作できるかどうかを指定します。 たとえば、モバイル デバイスで実行されているインストール済みのアプリケーションです。 既定値は *false* です。 |
+|allowPublicClient|Boolean| アプリケーションは、パブリック クライアントとして動作できるかどうかを指定します。 たとえば、モバイル デバイスで実行されているインストール済みのアプリケーションです。 既定値は *false* です。 |
 |api|[api](../resources/api.md)| API アプリケーションの設定を指定します。 |
 |appRoles|[エンティティ](../resources/approle.md)のコレクション|アプリケーションが宣言されているアプリケーション ロールのコレクションです。 これらのロールは、ユーザー、グループ、またはサービス ・ プリンシパルを指定できます。 null 許容ではありません。|
 |applicationAliases|String コレクション| アプリケーションを識別する Uri。 詳細情報は、「[アプリケーションのオブジェクトおよびオブジェクトのサービス プリンシパル](https://azure.microsoft.com/documentation/articles/active-directory-application-objects/)です。 *Any*演算子は、複数値を持つプロパティのフィルター式に必要です。 null 許容ではありません。 |

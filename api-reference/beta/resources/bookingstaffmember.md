@@ -2,12 +2,14 @@
 title: bookingStaffMember リソースの種類
 description: " > **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。"
 localization_priority: Normal
-ms.openlocfilehash: 382da1b0710b691a6563a40c03ed62397262911d
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: angelgolfer-ms
+ms.prod: bookings
+ms.openlocfilehash: b7369ad3662bf86aaca14bc78ea52a1ebddcb4df
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27884456"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27985950"
 ---
 # <a name="bookingstaffmember-resource-type"></a>bookingStaffMember リソースの種類
 
@@ -34,15 +36,15 @@ ms.locfileid: "27884456"
 |[Delete](../api/bookingstaffmember-delete.md) | なし |指定された[bookingbusiness](../resources/bookingbusiness.md)のスタッフ メンバーを削除します。 |
 
 ## <a name="properties"></a>プロパティ
-| プロパティ     | 種類   |説明|
+| プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
-|availabilityIsAffectedByPersonalCalendar|ブール型|True では、あるスタッフ メンバーが、Office 365 ユーザーの場合は、予約 API はスタッフ メンバーの可用性を確認、Office 365 で、個人用の予定表で予約を行う前にことを意味します。 |
+|availabilityIsAffectedByPersonalCalendar|Boolean|True では、あるスタッフ メンバーが、Office 365 ユーザーの場合は、予約 API はスタッフ メンバーの可用性を確認、Office 365 で、個人用の予定表で予約を行う前にことを意味します。 |
 |colorIndex|Int32|スタッフ メンバーを表す色を識別します。 予約アプリケーションでは、**スタッフの詳細**ページでカラー パレットに色が対応しています。|
 |displayName|String|顧客に表示されるよう、スタッフ メンバーの名前です。 必須。|
 |emailAddress|String|スタッフ メンバーの電子メール アドレスです。 ビジネスとして同じ Office 365 テナントにまたは別の電子メール ドメインを指定できます。 **SendConfirmationsToOwner**プロパティが設定されている場合、この e メール アドレスを使用することがビジネスのスケジュー リング ポリシーの場合は true です。 必須。|
 |id|String| GUID 形式で、スタッフ メンバーの ID。 読み取り専用です。|
-|role|文字列| ビジネスのスタッフの役割です。 可能な値は、`guest`、`administrator`、`viewer`、`externalGuest` です。 必須。|
-|useBusinessHours|ブール型|真のスタッフ メンバーの可用性とは、ビジネスの**businessHours**プロパティで指定されています。 False は、利用可能時間は、スタッフ メンバーの**workingHours**プロパティの設定によって決定されますを意味します。|
+|role|string| ビジネスのスタッフの役割です。 可能な値は、`guest`、`administrator`、`viewer`、`externalGuest` です。 必須。|
+|useBusinessHours|Boolean|真のスタッフ メンバーの可用性とは、ビジネスの**businessHours**プロパティで指定されています。 False は、利用可能時間は、スタッフ メンバーの**workingHours**プロパティの設定によって決定されますを意味します。|
 |workingHours|[bookingWorkHours](bookingworkhours.md)コレクション|スタッフ メンバーは、予約に使用される 1 週間の各日の時間の範囲です。 既定では、ビジネスの**businessHours**プロパティと同じにするのに初期化されます。|
 
 ## <a name="relationships"></a>リレーションシップ

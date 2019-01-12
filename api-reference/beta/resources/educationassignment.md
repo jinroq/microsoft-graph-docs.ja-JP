@@ -2,12 +2,14 @@
 title: educationAssignment リソースの種類
 description: '**EducationAssignment**リソースは、タスクや、研究の一部として、クラスの受講生受講者またはチームのメンバーに割り当てられた作業時間の単位を表します。 教師またはチームの所有者のみが、割り当てを作成できます。 配布資料と講師が、受講生受講者の作業をしようとしているタスクの割り当てが含まれています。 各受講生受講者の割り当てには、関連する送信の小学校は、オンする作業が含まれています。 教師では受講者に提出するスコアとフィードバックを追加できます。'
 localization_priority: Normal
-ms.openlocfilehash: d9d7b11dcd476f0fdd2bbb24364dd0e1e026f200
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: dipakboyed
+ms.prod: education
+ms.openlocfilehash: e96b2a27d24f0dc38595e5aea931045199eb6d10
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27812454"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27982261"
 ---
 # <a name="educationassignment-resource-type"></a>educationAssignment リソースの種類
 
@@ -30,14 +32,14 @@ ms.locfileid: "27812454"
 |[Update](../api/educationassignment-update.md) | [educationAssignment](educationassignment.md) |**EducationAssignment**オブジェクトを更新します。 |
 |[Delete](../api/educationassignment-delete.md) | なし |**EducationAssignment**オブジェクトを削除します。 |
 |[Publish](../api/educationassignment-publish.md)|[educationAssignment](educationassignment.md)|下書きを公開するからには、 **educationAssignment**オブジェクトの状態を変更します。|
-|[リソース フォルダーの URL を取得します。](../api/educationassignment-getresourcesfolderurl.md)| 文字列| OneDrive フォルダーには、割り当てリソースの一部とするファイル ベースのリソースを配置します。 リソースとして追加するには、このフォルダーにファイルを配置する必要があります。|
+|[リソース フォルダーの URL を取得します。](../api/educationassignment-getresourcesfolderurl.md)| string| OneDrive フォルダーには、割り当てリソースの一部とするファイル ベースのリソースを配置します。 リソースとして追加するには、このフォルダーにファイルを配置する必要があります。|
 
 ## <a name="properties"></a>プロパティ
-| プロパティ     | 種類   |説明|
+| プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
 |ID|String| 読み取り専用です。|
-|allowLateSubmissions|ブール型| 受講者が期限より後に送信できるかどうかを識別します。 作成中にこのプロパティを指定しない場合の既定値は true です。 |
-|allowStudentsToAddResourcesToSubmission|ブール型| 受講者が提出書類に独自のリソースを追加できるかどうか、またはかどうかのみ変更できる、先生によって追加のリソースを識別します。 |
+|allowLateSubmissions|Boolean| 受講者が期限より後に送信できるかどうかを識別します。 作成中にこのプロパティを指定しない場合の既定値は true です。 |
+|allowStudentsToAddResourcesToSubmission|Boolean| 受講者が提出書類に独自のリソースを追加できるかどうか、またはかどうかのみ変更できる、先生によって追加のリソースを識別します。 |
 |assignDateTime|DateTimeOffset|日付と割り当てをアクティブになります。  今後は場合、割り当ては表示されません、受講生受講者にこの日まで。  **Timestamp**型は、ISO 8601 形式を使用して日付と時刻の情報を表し、UTC 時間に常に。 たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、次のようになります。`'2014-01-01T00:00:00Z'`|
 |assignTo|[educationAssignmentRecipient](educationassignmentrecipient.md)| ユーザー、または全体のクラスは、割り当てが発行される送信オブジェクトを受信する必要があります。 |
 |assignedDateTime|DateTimeOffset|受講者を割り当て、割り当てが発行された時点を受講者のタイムライン上示しています。  Timestamp 型は、ISO 8601 形式を使用して日付と時刻の情報を表し、常に UTC 時間です。 たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、次のようになります。`'2014-01-01T00:00:00Z'`|
@@ -50,7 +52,7 @@ ms.locfileid: "27812454"
 |指示|[itemBody](itembody.md)| 割り当ての説明です。  この表示名と受講者を指示を行います。 |
 |lastModifiedBy|[identitySet](identityset.md)| 最後の割り当てを変更したユーザーです。 |
 |lastModifiedDateTime|DateTimeOffset|割り当てが最後に修正された瞬間。  Timestamp 型は、ISO 8601 形式を使用して日付と時刻の情報を表し、常に UTC 時間です。 たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、次のようになります。`'2014-01-01T00:00:00Z'`|
-|status|文字列| **割り当て**の状態です。  しないことができますこの値を修正します。  可能な値は、`draft`、`published`、`assigned` です。|
+|status|string| **割り当て**の状態です。  しないことができますこの値を修正します。  可能な値は、`draft`、`published`、`assigned` です。|
 
 ## <a name="relationships"></a>関係
 | リレーションシップ | 型   |説明|

@@ -3,12 +3,13 @@ title: macOSCompliancePolicy の作成
 description: 新しい macOSCompliancePolicy オブジェクトを作成します。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: b489aaabca59513e6f14baf52bbfb0e046ac223d
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 113642efee7673c0d211a2f9cc5fe7c05d37607b
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27811425"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27987882"
 ---
 # <a name="create-macoscompliancepolicy"></a>macOSCompliancePolicy の作成
 
@@ -44,7 +45,7 @@ POST /deviceManagement/deviceCompliancePolicies
 
 次の表に、macOSCompliancePolicy 作成時に必要なプロパティを示します。
 
-|プロパティ|種類|説明|
+|プロパティ|型|説明|
 |:---|:---|:---|
 |ID|String|エンティティのキー。 [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md) から継承します|
 |createdDateTime|DateTimeOffset|オブジェクトが作成された DateTime。 [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md) から継承します|
@@ -66,9 +67,9 @@ POST /deviceManagement/deviceCompliancePolicies
 |deviceThreatProtectionEnabled|Boolean|デバイスへの脅威に対する保護が有効になっている必要があります。|
 |deviceThreatProtectionRequiredSecurityLevel|[deviceThreatProtectionLevel](../resources/intune-deviceconfig-devicethreatprotectionlevel.md)|Mobile Threat Protection に、コンプライアンス違反をレポートするための最小のリスク レベルを要求します。 可能な値は、`unavailable`、`secured`、`low`、`medium`、`high`、`notSet` です。|
 |storageRequireEncryption|Boolean|Mac OS デバイスでの暗号化を要求します。|
-|firewallEnabled|ブール型|かどうか、か、これらのファイアウォールは有効にする必要があります。|
-|firewallBlockAllIncoming|ブール型|「すべての着信接続をブロックする] オプションに対応します。|
-|firewallEnableStealthMode|ブール型|「有効にするステルス モード」に対応|
+|firewallEnabled|Boolean|かどうか、か、これらのファイアウォールは有効にする必要があります。|
+|firewallBlockAllIncoming|Boolean|「すべての着信接続をブロックする] オプションに対応します。|
+|firewallEnableStealthMode|Boolean|「有効にするステルス モード」に対応|
 
 
 

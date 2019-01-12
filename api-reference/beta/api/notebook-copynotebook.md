@@ -2,12 +2,14 @@
 title: 'notebook: copyNotebook'
 description: コピー先ドキュメント ライブラリの [ノートブック] フォルダーにノートブックをコピーします。フォルダーが存在しない場合は、そのフォルダーが作成されます。
 localization_priority: Normal
-ms.openlocfilehash: ba9ed886ab0102a3ed66c31efbc420832e67d316
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: jewan-microsoft
+ms.prod: onenote
+ms.openlocfilehash: 4e74badfdd2386a976ad6ec5b1d639c164361ce4
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27833055"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27984774"
 ---
 # <a name="notebook-copynotebook"></a>notebook: copyNotebook
 
@@ -35,7 +37,7 @@ POST /groups/{id}/onenote/notebooks/{id}/copyNotebook
 POST /sites/{id}/onenote/notebooks/{id}/copyNotebook
 ```
 ## <a name="request-headers"></a>要求ヘッダー
-| 名前       | 種類 | 説明|
+| 名前       | 型 | 説明|
 |:---------------|:--------|:----------|
 | Authorization  | string  | ベアラー {トークン}。必須。 |
 | Content-Type | string | `application/json` |
@@ -43,7 +45,7 @@ POST /sites/{id}/onenote/notebooks/{id}/copyNotebook
 ## <a name="request-body"></a>要求本文
 要求本文では、操作に必要なパラメーターを格納する JSON オブジェクトを指定します。パラメーターが必要ない場合は、空の要求本文を送信してもかまいません。
 
-| パラメーター    | Type   |説明|
+| パラメーター    | 型   |説明|
 |:---------------|:--------|:----------|
 |siteCollectionId|String|コピーする SharePoint サイトの id です。 Office 365 チーム サイトにコピーするときにのみを使用します。|
 |siteId|String|コピーする SharePoint web の id です。 Office 365 チーム サイトにコピーするときにのみを使用します。|

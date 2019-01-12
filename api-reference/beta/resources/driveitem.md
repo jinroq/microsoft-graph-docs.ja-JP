@@ -4,12 +4,13 @@ ms.author: rgregg
 ms.date: 09/10/2017
 title: DriveItem
 localization_priority: Normal
-ms.openlocfilehash: 255b9de7ad565228da093a9a40d23c3360df28b2
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: sharepoint
+ms.openlocfilehash: 98930017f9ca3f70501cd10e4a3029f7a240ce41
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27882265"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27977776"
 ---
 # <a name="driveitem-resource-type"></a>driveItem リソースの種類
 
@@ -97,7 +98,7 @@ ms.locfileid: "27882265"
 
 ## <a name="properties"></a>プロパティ
 
-| プロパティ             | 種類               | 説明
+| プロパティ             | 型               | 説明
 |:---------------------|:-------------------|:---------------------------------
 | audio                | [audio][]          | オーディオのメタデータ (アイテムがオーディオ ファイルである場合)。読み取り専用です。
 | createdBy            | [identitySet][]    | そのアイテムを作成したユーザーの ID、デバイス、アプリケーション。読み取り専用です。
@@ -149,11 +150,11 @@ ms.locfileid: "27882265"
 
 インスタンスの属性は、動作が特殊なプロパティです。これらのプロパティは一時的なものであり、a) サービスの動作を定義するか、b) 短期的なプロパティの値 (有効期限を持つアイテムのダウンロード URL など) を提供します。
 
-| プロパティ名                     | Type   | 説明
+| プロパティ名                     | 型   | 説明
 |:----------------------------------|:-------|:--------------------------------
-| @microsoft.graph.conflictBehavior | 文字列 | 新しいアイテムを作成するアクションの競合を解決する動作。*fail*、*replace*、*rename* という値を使用できます。PUT の既定値は *replace* です。この注釈とともにアイテムが返されることはありません。書き込み専用です。
-| @microsoft.graph.downloadUrl      | 文字列 | このファイルのコンテンツをダウンロードするために使用できる URL。この URL では認証は必要ありません。読み取り専用です。
-| @microsoft.graph.sourceUrl        | 文字列 | PUT 要求を発行するときにこのインスタンスの注釈を使用すると、サービスに対し、URL のコンテンツをダウンロードし、それをファイルとして保存するように指示できます。書き込み専用です。
+| @microsoft.graph.conflictBehavior | string | 新しいアイテムを作成するアクションの競合を解決する動作。*fail*、*replace*、*rename* という値を使用できます。PUT の既定値は *replace* です。この注釈とともにアイテムが返されることはありません。書き込み専用です。
+| @microsoft.graph.downloadUrl      | string | このファイルのコンテンツをダウンロードするために使用できる URL。この URL では認証は必要ありません。読み取り専用です。
+| @microsoft.graph.sourceUrl        | string | PUT 要求を発行するときにこのインスタンスの注釈を使用すると、サービスに対し、URL のコンテンツをダウンロードし、それをファイルとして保存するように指示できます。書き込み専用です。
 
 **注:**@Microsoft.graph.downloadUrl 値は短時間の URL であるため、キャッシュすることはできません。
 URL は、短時間 (1 時間) が無効になる前にのみ使用できます。 ユーザーに対するファイル アクセス許可を削除する可能性がありますすぐに無効の URL。

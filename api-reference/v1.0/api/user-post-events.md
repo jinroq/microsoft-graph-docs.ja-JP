@@ -2,12 +2,14 @@
 title: イベントを作成する
 description: ユーザーの既定の予定表または指定した予定表でイベントを作成します。
 localization_priority: Priority
-ms.openlocfilehash: 178891392d32e97bb8f3db85f9f32acc43a177a6
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: dkershaw10
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: ef3ac07ba64115a10862cbdfb98dfbd63d2023ad
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27836471"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27978614"
 ---
 # <a name="create-event"></a>イベントを作成する
 

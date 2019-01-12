@@ -3,12 +3,13 @@ title: 'ユーザー: findRoomLists'
 description: テナントで定義された部屋の一覧を取得します。
 author: dkershaw10
 localization_priority: Priority
-ms.openlocfilehash: 55ff393e828d324035050e33cf194cb49d302080
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: f170b40689b09f54ea53632ca113018de1671b4e
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27855735"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27979293"
 ---
 # <a name="user-findroomlists"></a>ユーザー: findRoomLists
 
@@ -39,7 +40,7 @@ GET /users/<id>/findRoomLists
 ```
 
 ## <a name="request-headers"></a>要求ヘッダー
-| 名前       | 種類 | 説明 |
+| 名前       | 型 | 説明 |
 |:---------------|:----------|:----------|
 | Authorization  | string  | ベアラー {トークン}。必須。 |
 | Content-Type  | string  | application/json. Required. |

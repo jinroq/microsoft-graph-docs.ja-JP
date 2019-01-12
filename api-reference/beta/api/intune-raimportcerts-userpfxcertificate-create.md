@@ -3,12 +3,13 @@ title: UserPFXCertificate を作成します。
 description: 新しい userPFXCertificate オブジェクトを作成します。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: a20143e12098d246a65477400341409a79ad64ae
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: d98275975a0d9e46251521b76b55b0e8d67d226b
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27844570"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27984487"
 ---
 # <a name="create-userpfxcertificate"></a>UserPFXCertificate を作成します。
 
@@ -46,7 +47,7 @@ POST /deviceManagement/userPfxCertificates
 
 次の表は、userPFXCertificate を作成するときに必要なプロパティを示します。
 
-|プロパティ|種類|説明|
+|プロパティ|型|説明|
 |:---|:---|:---|
 |ID|String|PFX 証明書の一意の識別子です。|
 |拇印|String|PFX 証明書の拇印を sha-1 です。|

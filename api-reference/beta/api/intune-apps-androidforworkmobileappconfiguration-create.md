@@ -3,12 +3,13 @@ title: AndroidForWorkMobileAppConfiguration を作成します。
 description: 新しい androidForWorkMobileAppConfiguration オブジェクトを作成します。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 013c4856bc40614b49108715b0d66b4af8f93890
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: c512d35d8f37ed19b132641742942ca3c47aad2b
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27844414"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27990615"
 ---
 # <a name="create-androidforworkmobileappconfiguration"></a>AndroidForWorkMobileAppConfiguration を作成します。
 
@@ -46,7 +47,7 @@ POST /deviceAppManagement/mobileAppConfigurations
 
 次の表は、androidForWorkMobileAppConfiguration を作成するときに必要なプロパティを示します。
 
-|プロパティ|種類|説明|
+|プロパティ|型|説明|
 |:---|:---|:---|
 |ID|String|エンティティのキー。 [managedDeviceMobileAppConfiguration](../resources/intune-apps-manageddevicemobileappconfiguration.md) から継承されます|
 |targetedMobileApps|String コレクション|関連するアプリです。 [managedDeviceMobileAppConfiguration](../resources/intune-apps-manageddevicemobileappconfiguration.md) から継承されます|

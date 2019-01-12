@@ -3,12 +3,13 @@ title: auditEvent の更新
 description: auditEvent オブジェクトのプロパティを更新します。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 63da381029325977f7cdcf74b8de776c668e0656
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: f50bf7d2d67bf8d4fdfa78eed446c16dc82aa2b7
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27815716"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27991035"
 ---
 # <a name="update-auditevent"></a>auditEvent の更新
 
@@ -44,7 +45,7 @@ PATCH /deviceManagement/auditEvents/{auditEventId}
 
 次の表に、[auditEvent](../resources/intune-auditing-auditevent.md) の作成時に必要なプロパティを示します。
 
-|プロパティ|種類|説明|
+|プロパティ|型|説明|
 |:---|:---|:---|
 |ID|String|エンティティのキー。|
 |displayName|String|イベントの表示名。|

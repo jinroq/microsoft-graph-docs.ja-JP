@@ -4,12 +4,13 @@ ms.author: rgregg
 ms.date: 09/10/2017
 title: ドライブのコンテンツを同期する
 localization_priority: Normal
-ms.openlocfilehash: a7d64b4ef6878e12be93a471a4ace87f0357ae40
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: sharepoint
+ms.openlocfilehash: b879b99fb03ab17af4701c96c4be973f1f752be9
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27809129"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27991294"
 ---
 # <a name="track-changes-for-a-drive"></a>ドライブの変更履歴を記録する
 
@@ -49,7 +50,7 @@ GET /users/{userId}/drive/root/delta
 
 ## <a name="function-parameters"></a>関数パラメーター
 
-| Parameter   | Type  | 説明                                                                                                                          |
+| パラメーター   | 型  | 説明                                                                                                                          |
 |:-------|:-------|:-------------------------------------------------------------------------------------------------------------------------------------|
 | token  | 文字列 | 省略可能。 オプションを指定しない場合は、階層の現在の状態を列挙します。 場合`latest`、最新のデルタ ・ トークンを使用して応答を空にするを返します。 場合、以前のデルタ ・ トークンは、そのトークンから新しい状態を返します。
 

@@ -3,12 +3,13 @@ title: deviceComplianceActionItem の作成
 description: 新しい deviceComplianceActionItem オブジェクトを作成します。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 282babf1cf567752885858bbb397977b095a7a34
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 788677e6cdf8259cfea3850be3745904e5371220
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27873613"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27982674"
 ---
 # <a name="create-devicecomplianceactionitem"></a>deviceComplianceActionItem の作成
 
@@ -46,7 +47,7 @@ POST /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/sched
 
 次の表に、deviceComplianceActionItem の作成時に必要なプロパティを示します。
 
-|プロパティ|種類|説明|
+|プロパティ|型|説明|
 |:---|:---|:---|
 |ID|String|エンティティのキー。|
 |gracePeriodHours|Int32|アクションが実行されるまでの待機時間。 有効な値は 0 から 8760 までです|

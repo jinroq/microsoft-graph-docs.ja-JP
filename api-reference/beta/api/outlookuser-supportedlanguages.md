@@ -2,12 +2,14 @@
 title: 'outlookUser: supportedLanguages'
 description: ユーザーに対してサポートされている (ユーザーのメールボックス サーバーで構成されている) ロケールと言語のリストを取得します。
 localization_priority: Normal
-ms.openlocfilehash: 8d3a830a34d4b6d59bae1a601562ab6d70f7a39f
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: angelgolfer-ms
+ms.prod: outlook
+ms.openlocfilehash: 0e72178d1575e9fcae3462ea8eb674fa63d97c36
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27868580"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27979272"
 ---
 # <a name="outlookuser-supportedlanguages"></a>outlookUser: supportedLanguages
 
@@ -34,7 +36,7 @@ GET /me/outlook/supportedLanguages
 GET /users/{id|userPrincipalName}/outlook/supportedLanguages
 ```
 ## <a name="request-headers"></a>要求ヘッダー
-| 名前       | 種類 | 説明|
+| 名前       | 型 | 説明|
 |:---------------|:--------|:----------|
 | Authorization  | string  | ベアラー {トークン}。必須。 |
 

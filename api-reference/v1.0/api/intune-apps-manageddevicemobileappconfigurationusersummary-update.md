@@ -3,12 +3,13 @@ title: managedDeviceMobileAppConfigurationUserSummary の更新
 description: managedDeviceMobileAppConfigurationUserSummary オブジェクトのプロパティを更新します。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 58c4cb4644dbfdf4e6b52b7536990e1eb9563d14
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 3033d0dcaa3859c96236e4c89e2c83f26f96f135
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27821771"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27986930"
 ---
 # <a name="update-manageddevicemobileappconfigurationusersummary"></a>managedDeviceMobileAppConfigurationUserSummary の更新
 
@@ -44,7 +45,7 @@ PATCH /deviceAppManagement/mobileAppConfigurations/{managedDeviceMobileAppConfig
 
 次の表に、[managedDeviceMobileAppConfigurationUserSummary](../resources/intune-apps-manageddevicemobileappconfigurationusersummary.md) の作成時に必要なプロパティを示します。
 
-|プロパティ|種類|説明|
+|プロパティ|型|説明|
 |:---|:---|:---|
 |ID|String|エンティティのキー。|
 |pendingCount|Int32|保留中のユーザーの数|

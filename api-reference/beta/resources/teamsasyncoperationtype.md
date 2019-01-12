@@ -3,12 +3,13 @@ title: teamsAsyncOperationType 列挙型
 description: TeamsAsyncOperation のタイプです。 追加するメンバーがここでより多くの非同期操作はサポートされています。
 author: nkramer
 localization_priority: Normal
-ms.openlocfilehash: 18f167a2f365b724586b66afd00e9fa5c0508954
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: microsoft-teams
+ms.openlocfilehash: 1770f642970575647dd1216038202fca15f82117
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27847223"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27987308"
 ---
 # <a name="teamsasyncoperationtype-enum-type"></a>teamsAsyncOperationType 列挙型
 

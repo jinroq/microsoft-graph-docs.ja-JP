@@ -3,12 +3,13 @@ title: directoryRoleTemplates を一覧表示する
 description: Directoryroletemplate オブジェクトのリストを取得します。
 author: lleonard-msft
 localization_priority: Normal
-ms.openlocfilehash: a61127b7fdd31ce55f44a42ac847c5ac50932cf6
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: b9e0f6b4d40e2549043a9d469462bdc52fc1033d
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27848567"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27980735"
 ---
 # <a name="list-directoryroletemplates"></a>directoryRoleTemplates を一覧表示する
 
@@ -33,7 +34,7 @@ GET /directoryRoleTemplates
 このメソッドは、応答をカスタマイズするための [OData クエリ パラメーター](https://developer.microsoft.com/graph/docs/concepts/query_parameters)をサポート**していません** (例: $filter はここではサポートされていません)。
 
 ## <a name="request-headers"></a>要求ヘッダー
-| 名前       | 種類 | 説明|
+| 名前       | 型 | 説明|
 |:-----------|:------|:----------|
 | Authorization  | string  | ベアラー {トークン}。必須。 |
 

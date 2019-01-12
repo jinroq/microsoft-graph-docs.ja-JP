@@ -3,12 +3,13 @@ title: deviceConfigurationUserOverview の更新
 description: deviceConfigurationUserOverview オブジェクトのプロパティを更新します。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: dcb5734661093b4d6bdc8da226af1c77dd7e72f5
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: ae2741d235fff832b9d25679739201c885f74e15
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27812391"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27977858"
 ---
 # <a name="update-deviceconfigurationuseroverview"></a>deviceConfigurationUserOverview の更新
 
@@ -54,7 +55,7 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 
 次の表に、[deviceConfigurationUserOverview](../resources/intune-deviceconfig-deviceconfigurationuseroverview.md) の作成時に必要なプロパティを示します。
 
-|プロパティ|種類|説明|
+|プロパティ|型|説明|
 |:---|:---|:---|
 |ID|String|エンティティのキー。|
 |pendingCount|Int32|保留中のユーザーの数|

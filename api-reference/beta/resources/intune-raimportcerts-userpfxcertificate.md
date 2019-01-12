@@ -2,12 +2,14 @@
 title: userPFXCertificate リソースの種類
 description: PFX 証明書のユーザーのために必要なすべての情報をカプセル化するエンティティです。
 localization_priority: Normal
-ms.openlocfilehash: 87516c48e53c8117c9efa119fb6cab62844e6b68
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: tfitzmac
+ms.prod: intune
+ms.openlocfilehash: f63f95bb96e379cd2fcff0f0a50ac02162223ac2
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27809997"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27987728"
 ---
 # <a name="userpfxcertificate-resource-type"></a>userPFXCertificate リソースの種類
 
@@ -26,7 +28,7 @@ PFX 証明書のユーザーのために必要なすべての情報をカプセ�
 |[UserPFXCertificate を更新します。](../api/intune-raimportcerts-userpfxcertificate-update.md)|[userPFXCertificate](../resources/intune-raimportcerts-userpfxcertificate.md)|[UserPFXCertificate](../resources/intune-raimportcerts-userpfxcertificate.md)オブジェクトのプロパティを更新します。|
 
 ## <a name="properties"></a>プロパティ
-|プロパティ|種類|説明|
+|プロパティ|型|説明|
 |:---|:---|:---|
 |ID|String|PFX 証明書の一意の識別子です。|
 |拇印|String|PFX 証明書の拇印を sha-1 です。|

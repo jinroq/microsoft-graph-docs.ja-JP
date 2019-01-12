@@ -2,12 +2,14 @@
 title: 'message: delta'
 description: 指定したフォルダーで追加、削除、更新されたメッセージのセットを取得します。
 localization_priority: Normal
-ms.openlocfilehash: 149acc68081d8497567f07fe6d58f4b42a0c031d
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: angelgolfer-ms
+ms.prod: outlook
+ms.openlocfilehash: 7344b53e69916870e1c2705d6b251be2fff61721
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27852060"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27980525"
 ---
 # <a name="message-delta"></a>message: delta
 
@@ -39,8 +41,8 @@ GET /users/<id>/mailFolders/{id}/messages/delta
 
 | クエリ パラメーター      | 種類   |説明|
 |:---------------|:--------|:----------|
-| $deltatoken | 文字列 | 同じメッセージ コレクションの前の**デルタ**関数呼び出しの `deltaLink` URL で[状態トークン](/graph/delta-query-overview)が返され、その変更追跡のラウンドが完了したことを示します。このコレクションについて、このトークンを含む、`deltaLink` URL 全体を次の変更追跡のラウンドの最初の要求に保存し、適用します。|
-| $skiptoken | 文字列 | 前の**デルタ**関数呼び出しの `nextLink` URL で[状態トークン](/graph/delta-query-overview)が返され、同じメッセージ コレクションに追跡すべき変更が他にもあることを示します。 |
+| $deltatoken | string | 同じメッセージ コレクションの前の**デルタ**関数呼び出しの `deltaLink` URL で[状態トークン](/graph/delta-query-overview)が返され、その変更追跡のラウンドが完了したことを示します。このコレクションについて、このトークンを含む、`deltaLink` URL 全体を次の変更追跡のラウンドの最初の要求に保存し、適用します。|
+| $skiptoken | string | 前の**デルタ**関数呼び出しの `nextLink` URL で[状態トークン](/graph/delta-query-overview)が返され、同じメッセージ コレクションに追跡すべき変更が他にもあることを示します。 |
 
 ### <a name="odata-query-parameters"></a>OData クエリ パラメーター
 
@@ -52,7 +54,7 @@ GET /users/<id>/mailFolders/{id}/messages/delta
 - `$search` はサポートされていません。
 
 ## <a name="request-headers"></a>要求ヘッダー
-| 名前       | 種類 | 説明 |
+| 名前       | 型 | 説明 |
 |:---------------|:----------|:----------|
 | Authorization  | string  | ベアラー {トークン}。必須。 |
 | Content-Type  | string  | application/json. Required. |

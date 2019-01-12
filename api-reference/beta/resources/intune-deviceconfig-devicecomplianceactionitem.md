@@ -3,12 +3,13 @@ title: deviceComplianceActionItem リソース タイプ
 description: スケジュール済みのアクションの構成
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: d697275780b686edc9a3b1eed42b6afb712163b0
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 0676acc44946b327772083ccd6e46e3f47df648f
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27866431"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27980196"
 ---
 # <a name="devicecomplianceactionitem-resource-type"></a>deviceComplianceActionItem リソース タイプ
 
@@ -27,7 +28,7 @@ ms.locfileid: "27866431"
 |[Update deviceComplianceActionItem](../api/intune-deviceconfig-devicecomplianceactionitem-update.md)|[deviceComplianceActionItem](../resources/intune-deviceconfig-devicecomplianceactionitem.md)|[deviceComplianceActionItem](../resources/intune-deviceconfig-devicecomplianceactionitem.md) オブジェクトのプロパティを更新します。|
 
 ## <a name="properties"></a>プロパティ
-|プロパティ|種類|説明|
+|プロパティ|型|説明|
 |:---|:---|:---|
 |ID|String|エンティティのキー。|
 |gracePeriodHours|Int32|アクションが実行されるまでの待機時間。 有効な値は 0 から 8760 までです|

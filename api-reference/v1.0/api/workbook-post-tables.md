@@ -3,12 +3,13 @@ title: テーブルの作成
 description: この API を使用して、新しいテーブルを作成します。
 author: lumine2008
 localization_priority: Normal
-ms.openlocfilehash: 48837631f496d6ab05aafde6b63da769fcaf9531
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: excel
+ms.openlocfilehash: 220c0b1e9b21c609009616d75567c0469b276cd4
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27836191"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27986986"
 ---
 # <a name="create-table"></a>テーブルの作成
 
@@ -37,7 +38,7 @@ POST /workbook/tables/{table-id}/add
 ## <a name="request-body"></a>要求本文
 要求本文で、次のパラメーターを含む JSON オブジェクトを指定します。
 
-| パラメーター           | Type      |説明|
+| パラメーター           | 型      |説明|
 |:---------------|:----------|:----------|
 | Address  | 文字列| 範囲のアドレスです。この API を `worksheets/{id or name}/tables/add` パスから呼び出す場合、アドレスにシート名のプレフィックスを指定する必要はありません。ただし、これを `workbook/tables/add` パスから呼び出す場合は、テーブルを作成する必要のあるシート名を指定する必要があります (例: `sheet1!A1:D4`)。|
 | hasHeaders  | boolean|範囲に列ラベルがあるかどうかを示すブール値。ソースにヘッダーが含まれていない場合 (このプロパティが false に設定されている場合)、Excel はデータを下方向に 1 行シフトして、自動的にヘッダーを生成します。|

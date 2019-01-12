@@ -2,12 +2,14 @@
 title: mdmWindowsInformationProtectionPolicies のリスト
 description: mdmWindowsInformationProtectionPolicy オブジェクトのプロパティとリレーションシップをリストします。
 author: tfitzmac
-ms.openlocfilehash: 065280f3897bf1eb3981a48c67aed089866187f4
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.prod: intune
+ms.openlocfilehash: 9f35ee9d7663fc6cfcec92aafe33ce376952f0de
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27323864"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27981687"
 ---
 # <a name="list-mdmwindowsinformationprotectionpolicies"></a>mdmWindowsInformationProtectionPolicies のリスト
 

@@ -3,12 +3,13 @@ title: windows10EnterpriseModernAppManagementConfiguration リソースの種類
 description: Windows 10 Enterprise モダン アプリの管理構成です。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: a9a2456936e2c97966c4606c41151218e1c2c49d
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: d823844cf1c5980807ec67fe022ecffb6c6e729b
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27831228"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27990677"
 ---
 # <a name="windows10enterprisemodernappmanagementconfiguration-resource-type"></a>windows10EnterpriseModernAppManagementConfiguration リソースの種類
 
@@ -28,7 +29,7 @@ Windows 10 Enterprise モダン アプリの管理構成です。
 |[windows10EnterpriseModernAppManagementConfiguration の更新](../api/intune-deviceconfig-windows10enterprisemodernappmanagementconfiguration-update.md)|[windows10EnterpriseModernAppManagementConfiguration](../resources/intune-deviceconfig-windows10enterprisemodernappmanagementconfiguration.md)|[windows10EnterpriseModernAppManagementConfiguration](../resources/intune-deviceconfig-windows10enterprisemodernappmanagementconfiguration.md) オブジェクトのプロパティを更新します。|
 
 ## <a name="properties"></a>プロパティ
-|プロパティ|種類|説明|
+|プロパティ|型|説明|
 |:---|:---|:---|
 |ID|String|エンティティのキー。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |lastModifiedDateTime|DateTimeOffset|オブジェクトが最後に変更された DateTime。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|

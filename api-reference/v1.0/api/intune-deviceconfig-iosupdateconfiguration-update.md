@@ -3,12 +3,13 @@ title: iosUpdateConfiguration の更新
 description: iosUpdateConfiguration オブジェクトのプロパティを更新します。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: f9ecd2a3ac0cee1d7287308f20c88f495391ede7
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: dfc9be70f26b9d4ed58dfca1274a828237ebb473
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27849008"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27982226"
 ---
 # <a name="update-iosupdateconfiguration"></a>iosUpdateConfiguration の更新
 
@@ -44,7 +45,7 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}
 
 次の表に、[iosUpdateConfiguration](../resources/intune-deviceconfig-iosupdateconfiguration.md) の作成時に必要なプロパティを示します。
 
-|プロパティ|種類|説明|
+|プロパティ|型|説明|
 |:---|:---|:---|
 |ID|String|エンティティのキー。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |lastModifiedDateTime|DateTimeOffset|オブジェクトが最後に変更された DateTime。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|

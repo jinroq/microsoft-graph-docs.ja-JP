@@ -3,12 +3,13 @@ title: importedWindowsAutopilotDeviceIdentityUpload リソースの種類
 description: アップロードを使用して windows 自動操縦装置のデバイスをインポートします。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: c0b30b8fc76aa38f6e8a39c4dd3fb1b73bde8be8
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 4419b81e1d67dc5932f0d48f6c762c6b9c1c7bf1
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27878059"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27982037"
 ---
 # <a name="importedwindowsautopilotdeviceidentityupload-resource-type"></a>importedWindowsAutopilotDeviceIdentityUpload リソースの種類
 
@@ -28,7 +29,7 @@ ms.locfileid: "27878059"
 |[autopilotDeviceStream 関数](../api/intune-enrollment-importedwindowsautopilotdeviceidentityupload-autopilotdevicestream.md)|String|自動操縦デバイスのストリーム内でのアップロード要求を作成します。|
 
 ## <a name="properties"></a>プロパティ
-|プロパティ|種類|説明|
+|プロパティ|型|説明|
 |:---|:---|:---|
 |ID|String|オブジェクトの GUID|
 |createdDateTimeUtc|DateTimeOffset|日時を設定すると、エンティティを作成します。|

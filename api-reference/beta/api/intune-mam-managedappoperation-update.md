@@ -3,12 +3,13 @@ title: managedAppOperation の更新
 description: managedAppOperation オブジェクトのプロパティを更新します。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: d9af3259563c65e6f2cfc5ec12a242564c4f6a4c
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 8bb082cfb5d7ed7ba68ff79c53ae23d0f13675fa
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27835029"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27979342"
 ---
 # <a name="update-managedappoperation"></a>managedAppOperation の更新
 
@@ -46,7 +47,7 @@ PATCH /deviceAppManagement/managedAppRegistrations/{managedAppRegistrationId}/op
 
 次の表に、[managedAppOperation](../resources/intune-mam-managedappoperation.md) の作成時に必要なプロパティを示します。
 
-|プロパティ|種類|説明|
+|プロパティ|型|説明|
 |:---|:---|:---|
 |displayName|String|操作名。|
 |lastModifiedDateTime|DateTimeOffset|アプリ操作が変更された最終時刻。|

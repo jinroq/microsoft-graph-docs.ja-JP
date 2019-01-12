@@ -3,12 +3,13 @@ title: mobileAppInstallStatus リソースの種類
 description: デバイスのモバイル アプリケーションのインストール状態のプロパティが含まれています。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: a81113001a1ff06b530b2b9249ee705b9cd5ac40
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: cac5c94f0669f784bf4cdd020448e40799d53915
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27880501"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27982611"
 ---
 # <a name="mobileappinstallstatus-resource-type"></a>mobileAppInstallStatus リソースの種類
 
@@ -27,7 +28,7 @@ ms.locfileid: "27880501"
 |[MobileAppInstallStatus を更新します。](../api/intune-apps-mobileappinstallstatus-update.md)|[mobileAppInstallStatus](../resources/intune-apps-mobileappinstallstatus.md)|[MobileAppInstallStatus](../resources/intune-apps-mobileappinstallstatus.md)オブジェクトのプロパティを更新します。|
 
 ## <a name="properties"></a>プロパティ
-|プロパティ|種類|説明|
+|プロパティ|型|説明|
 |:---|:---|:---|
 |ID|String|エンティティのキー。|
 |deviceName|String|デバイス名|

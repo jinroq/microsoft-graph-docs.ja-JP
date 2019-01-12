@@ -2,12 +2,14 @@
 title: Bookingbusiness を更新します。
 description: " > **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。"
 localization_priority: Normal
-ms.openlocfilehash: 53115469821bc39c05c4e7a262e5f9fc15b376ce
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: angelgolfer-ms
+ms.prod: bookings
+ms.openlocfilehash: 3f20d466614e35cce701999fabfb631e081a02ca
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27824998"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27991337"
 ---
 # <a name="update-bookingbusiness"></a>Bookingbusiness を更新します。
 
@@ -36,7 +38,7 @@ PATCH /bookingBusinesses/<id>
 ## <a name="request-body"></a>要求本文
 要求本文で、更新する関連フィールドの値を指定します。要求本文に含まれない既存のプロパティは、以前の値のままになるか、他のプロパティ値の変化に基づいて再計算されます。最適なパフォーマンスを得るためには、変更されていない既存の値を含めないでください。
 
-| プロパティ     | 種類   |説明|
+| プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
 |address|[physicalAddress](../resources/physicaladdress.md)|ビジネスの住所。|
 |businessHours|[bookingWorkHours](../resources/bookingworkhours.md)コレクション|ビジネスの操作の時間です。|

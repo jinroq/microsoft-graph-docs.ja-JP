@@ -2,12 +2,14 @@
 title: ページを削除する
 description: OneNote のページを削除します。
 localization_priority: Normal
-ms.openlocfilehash: 5721f06f34be48f0c8a3126d82e858aa833d3e77
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: jewan-microsoft
+ms.prod: onenote
+ms.openlocfilehash: ec70039fe28f4a625043f678d40deff917577848
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27853551"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27979657"
 ---
 # <a name="delete-page"></a>ページを削除する
 
@@ -32,7 +34,7 @@ DELETE /groups/{id}/onenote/pages/{id}
 DELETE /sites/{id}/onenote/pages/{id}
 ```
 ## <a name="request-headers"></a>要求ヘッダー
-| 名前       | 種類 | 説明|
+| 名前       | 型 | 説明|
 |:---------------|:--------|:----------|
 | Authorization  | string  | ベアラー {トークン}。必須。 |
 

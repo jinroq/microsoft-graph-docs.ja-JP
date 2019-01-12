@@ -2,12 +2,14 @@
 title: educationResource リソースの種類
 description: システム内のすべてのリソース オブジェクトのスーパークラスです。 リソースは**割り当て**または**送信**される学習オブジェクトを表す、あるいはその両方に関連付けられています。
 localization_priority: Normal
-ms.openlocfilehash: 0608f3c0fb84f05404032bed611f0af887e7bb67
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: mmast-msft
+ms.prod: education
+ms.openlocfilehash: 9ac84fd9d661f31186ea65e95c680456cdabe221
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27827560"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27982121"
 ---
 # <a name="educationresource-resource-type"></a>educationResource リソースの種類
 
@@ -19,7 +21,7 @@ ms.locfileid: "27827560"
 
 
 ## <a name="properties"></a>プロパティ
-| プロパティ     | 種類   |説明|
+| プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
 |createdBy|[identitySet](identityset.md)|リソースを作成したとします。|
 |createdDateTime|リソースが作成された時点。  DateTimeOffset|Timestamp 型は、ISO 8601 形式を使用して日付と時刻の情報を表し、必ず UTC 時間です。たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、次のようになります。`'2014-01-01T00:00:00Z'`|

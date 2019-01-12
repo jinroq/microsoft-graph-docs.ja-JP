@@ -2,12 +2,14 @@
 title: 'user: delta'
 description: Get を新しく作成するには、更新、または全体のユーザーのコレクションのすべての読み取りを実行することがなくユーザーを削除します。 詳細については変更の履歴を参照してください。
 localization_priority: Normal
-ms.openlocfilehash: 2aaee8a5722c22ad8fc381f0a4b1d577461b3991
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: dkershaw10
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: f63a426c97aaf695447de9075b91fb2c534309db
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27856197"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27984634"
 ---
 # <a name="user-delta"></a>user: delta
 
@@ -45,8 +47,8 @@ GET /users/delta
 
 | クエリ パラメーター      | 種類   |説明|
 |:---------------|:--------|:----------|
-| $deltatoken | 文字列 | 同じユーザー コレクションの前の**デルタ**関数の `deltaLink` URL で[状態トークン](/graph/delta-query-overview)が返され、変更追跡のその回が完了したことを示します。このコレクションについて、このトークンを含む、`deltaLink` URL 全体を次の変更追跡のラウンドの最初の要求に保存し、適用します。|
-| $skiptoken | 文字列 | 前の**デルタ**関数の `nextLink` URL で[状態トークン](/graph/delta-query-overview)が返され、同じユーザー コレクションで追跡されるその他の変更があることを示します。 |
+| $deltatoken | string | 同じユーザー コレクションの前の**デルタ**関数の `deltaLink` URL で[状態トークン](/graph/delta-query-overview)が返され、変更追跡のその回が完了したことを示します。このコレクションについて、このトークンを含む、`deltaLink` URL 全体を次の変更追跡のラウンドの最初の要求に保存し、適用します。|
+| $skiptoken | string | 前の**デルタ**関数の `nextLink` URL で[状態トークン](/graph/delta-query-overview)が返され、同じユーザー コレクションで追跡されるその他の変更があることを示します。 |
 
 ### <a name="odata-query-parameters"></a>OData クエリ パラメーター
 

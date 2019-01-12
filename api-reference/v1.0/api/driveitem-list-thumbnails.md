@@ -4,12 +4,13 @@ ms.author: rgregg
 ms.date: 09/10/2017
 title: ファイルまたはフォルダーのサムネイルを取得する
 localization_priority: Normal
-ms.openlocfilehash: 40bc5e364202720b33fce9fe345bf1b752c8b796
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: sharepoint
+ms.openlocfilehash: 7543a8177c146779c645d848292b1600a80c3398
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27881908"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27990594"
 ---
 # <a name="list-thumbnails-for-a-driveitem"></a>DriveItem のサムネイルを一覧表示する
 
@@ -107,11 +108,11 @@ GET /me/drive/items/{item-id}/thumbnails/{thumb-id}/{size}
 
 ### <a name="path-parameters"></a>パス パラメーター
 
-| 名前         | 種類   | 説明                                                                              |
+| 名前         | 型   | 説明                                                                              |
 |:-------------|:-------|:-----------------------------------------------------------------------------------------|
-| **item-id**  | 文字列 | 参照されるアイテムの一意識別子。                                           |
+| **item-id**  | string | 参照されるアイテムの一意識別子。                                           |
 | **thumb-id** | number | サムネイルのインデックス (通常 0-4)。 カスタム サムネイルがある場合は、そのインデックスは 0 になります。 |
-| **size**     | 文字列 | 要求されたサムネイルのサイズ。 これは、後述する標準サイズか、カスタム サイズのいずれかになります。 |
+| **size**     | string | 要求されたサムネイルのサイズ。 これは、後述する標準サイズか、カスタム サイズのいずれかになります。 |
 
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.thumbnail" } -->
 

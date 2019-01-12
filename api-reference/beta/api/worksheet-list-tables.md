@@ -3,12 +3,13 @@ title: テーブルを一覧表示する
 description: テーブル オブジェクトの一覧を取得します。
 author: lumine2008
 localization_priority: Normal
-ms.openlocfilehash: e0b0d64d86ff723889c06dfdd06673f4198f45d3
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: excel
+ms.openlocfilehash: 23617c9e885f94afced4ae78bd3a677cc24ea175
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27855679"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27982639"
 ---
 # <a name="list-tables"></a>テーブルを一覧表示する
 

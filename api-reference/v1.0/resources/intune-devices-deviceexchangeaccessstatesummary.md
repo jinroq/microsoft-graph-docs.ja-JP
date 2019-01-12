@@ -3,12 +3,13 @@ title: deviceExchangeAccessStateSummary リソースの種類
 description: デバイスの Exchange アクセス状態の要約
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 10eb3738e14e8239f92f8578d01b9d4888b06b24
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 389bba96adc477e90244f6f9800da09ff3e87992
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27829821"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27990538"
 ---
 # <a name="deviceexchangeaccessstatesummary-resource-type"></a>deviceExchangeAccessStateSummary リソースの種類
 
@@ -16,7 +17,7 @@ ms.locfileid: "27829821"
 
 デバイスの Exchange アクセス状態の要約
 ## <a name="properties"></a>プロパティ
-|プロパティ|種類|説明|
+|プロパティ|型|説明|
 |:---|:---|:---|
 |allowedDeviceCount|Int32|Exchange アクセス状態が Allowed のデバイスの総数です。|
 |blockedDeviceCount|Int32|Exchange アクセス状態が Blocked のデバイスの総数です。|

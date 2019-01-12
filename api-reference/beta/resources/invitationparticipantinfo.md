@@ -3,12 +3,13 @@ title: invitationParticipantInfo リソースの種類
 description: '**InvitationParticipant**は、会話への招待に関連付けられている id のセットを表すために使用し、招待状の追加のパラメーターを提供します。'
 author: VinodRavichandran
 localization_priority: Normal
-ms.openlocfilehash: 7a6fb418b7076b0f0a42dc05b6afe71dcda6a71e
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: microsoft-teams
+ms.openlocfilehash: 8febd66915ee0b4fba26d9253cd56d67086e63bc
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27865003"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27982898"
 ---
 # <a name="invitationparticipantinfo-resource-type"></a>invitationParticipantInfo リソースの種類
 
@@ -18,7 +19,7 @@ ms.locfileid: "27865003"
 
 ## <a name="properties"></a>プロパティ
 
-| プロパティ                           | 種類                          | 説明                                                                          |
+| プロパティ                           | 型                          | 説明                                                                          |
 | :--------------------------------- | :---------------------------- | :----------------------------------------------------------------------------------- |
 | endpointType                       | String                        | 使用可能な値は、`default`、`voicemail` です。 |
 | identity                           | [identitySet](identityset.md) | この招待状に関連付けられている[identitySet](identityset.md) 。                   |

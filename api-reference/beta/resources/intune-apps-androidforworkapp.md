@@ -3,12 +3,13 @@ title: androidForWorkApp リソースの種類
 description: 含まれているプロパティと継承されたプロパティの Android 用の作業 (AFW) アプリケーション。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: d62dded43d1ea622bd27a122d6535d71fae0cd6e
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 4607c85f8de718ea402e2fe8dfd5e4d35dfa8d94
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27861440"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27978957"
 ---
 # <a name="androidforworkapp-resource-type"></a>androidForWorkApp リソースの種類
 
@@ -30,7 +31,7 @@ ms.locfileid: "27861440"
 |[AndroidForWorkApp を更新します。](../api/intune-apps-androidforworkapp-update.md)|[androidForWorkApp](../resources/intune-apps-androidforworkapp.md)|[AndroidForWorkApp](../resources/intune-apps-androidforworkapp.md)オブジェクトのプロパティを更新します。|
 
 ## <a name="properties"></a>プロパティ
-|プロパティ|種類|説明|
+|プロパティ|型|説明|
 |:---|:---|:---|
 |ID|String|エンティティのキー。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|
 |displayName|String|管理者が提供またはインポートしたアプリのタイトル。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|

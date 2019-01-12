@@ -3,12 +3,13 @@ title: deviceAndAppManagementRoleAssignment の作成
 description: 新しい deviceAndAppManagementRoleAssignment オブジェクトを作成します。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 9a6f5d0e90ee15d6036c97b451c3796c357a8a2a
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 10e6a0a18fd41a26f3c29f4e10af76bdd1ccd1b5
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27857443"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27984466"
 ---
 # <a name="create-deviceandappmanagementroleassignment"></a>deviceAndAppManagementRoleAssignment の作成
 
@@ -46,7 +47,7 @@ POST /deviceManagement/roleAssignments
 
 次の表に、deviceAndAppManagementRoleAssignment の作成時に必要なプロパティを示します。
 
-|プロパティ|種類|説明|
+|プロパティ|型|説明|
 |:---|:---|:---|
 |ID|String|エンティティのキー。 これは読み取り専用で、自動生成されます。 [roleAssignment](../resources/intune-rbac-roleassignment.md) から継承します|
 |displayName|String|ロール割り当ての表示名またはフレンドリ名。 [roleAssignment](../resources/intune-rbac-roleassignment.md) から継承します|

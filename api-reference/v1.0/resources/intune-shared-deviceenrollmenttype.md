@@ -2,12 +2,14 @@
 title: deviceEnrollmentType 列挙型
 description: 管理するモバイル デバイスを追加するための方法です。
 author: tfitzmac
-ms.openlocfilehash: 88135947f882433a35fa518b750274f38f48dcc1
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.prod: intune
+ms.openlocfilehash: 72acbdf412ebb91269fcdc3f851ffbc204e0274b
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27329604"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27987756"
 ---
 # <a name="deviceenrollmenttype-enum-type"></a>deviceEnrollmentType 列挙型
 

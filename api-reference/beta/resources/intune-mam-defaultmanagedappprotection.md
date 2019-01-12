@@ -3,12 +3,13 @@ title: defaultManagedAppProtection リソース タイプ
 description: TargetedManagedAppProtection ポリシーの対象とされていないすべてのユーザーに対して、アプリの指定したセットに関する管理設定の詳細を構成するために使用するポリシー
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 907a313e9a5dd399ece3deec2be171b0a87e4713
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 8fba5282155793e44a31e742daa3268aa3f56b36
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27849246"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27990797"
 ---
 # <a name="defaultmanagedappprotection-resource-type"></a>defaultManagedAppProtection リソース タイプ
 
@@ -30,7 +31,7 @@ TargetedManagedAppProtection ポリシーの対象とされていないすべて
 |[Update defaultManagedAppProtection](../api/intune-mam-defaultmanagedappprotection-update.md)|[defaultManagedAppProtection](../resources/intune-mam-defaultmanagedappprotection.md)|[defaultManagedAppProtection](../resources/intune-mam-defaultmanagedappprotection.md) オブジェクトのプロパティを更新します。|
 
 ## <a name="properties"></a>プロパティ
-|プロパティ|種類|説明|
+|プロパティ|型|説明|
 |:---|:---|:---|
 |displayName|String|ポリシーの表示名。 [managedAppPolicy](../resources/intune-mam-managedapppolicy.md) から継承します|
 |説明|String|ポリシーの説明。 [managedAppPolicy](../resources/intune-mam-managedapppolicy.md) から継承します|
@@ -87,10 +88,10 @@ TargetedManagedAppProtection ポリシーの対象とされていないすべて
 |appActionIfIosDeviceModelNotAllowed|[managedAppRemediationAction](../resources/intune-mam-managedappremediationaction.md)|、マネージ アプリケーションの動作を定義するブロック] または [指定したデバイスのモデルが許可されていない場合、クリーン インストールします。 (iOS のみ)。 使用可能な値は、`block`、`wipe` です。|
 |allowedAndroidDeviceManufacturers|String|デバイスの製造元のセミコロン区切りのリストは、動作するマネージ アプリケーションの文字列として使用できます。 (Android のみ)|
 |appActionIfAndroidDeviceManufacturerNotAllowed|[managedAppRemediationAction](../resources/intune-mam-managedappremediationaction.md)|、マネージ アプリケーションの動作を定義するブロックまたは指定されたデバイスの製造元が許可されていない場合、クリーン インストールのいずれかです。 (アプリのみ)。 使用可能な値は、`block`、`wipe` です。|
-|thirdPartyKeyboardsBlocked|ブール型|サードパーティ製キーボードが管理されているアプリケーションへのアクセス中に許可されている場合を定義します。 (iOS のみ)|
-|filterOpenInToOnlyManagedApps|ブール型|選択されているファイル共有の場所に、マネージ アプリケーションから開くの操作がサポートされている場合を定義します。 この設定は、AllowedOutboundDataTransferDestinations を ManagedApps に設定し、DisableProtectionOfManagedOutboundOpenInData が False に設定されて場合にのみ適用されます。 (iOS のみ)|
-|disableProtectionOfManagedOutboundOpenInData|ブール型|IOS OpenIn オプションを使用して他のアプリケーションに転送されるデータの保護を無効にします。 この設定はのみできる AllowedOutboundDataTransferDestinations が ManagedApps に設定されている場合に true を設定します。 (iOS のみ)|
-|protectInboundDataFromUnknownSources|ブール型|不明なソースから受信したデータを保護します。 この設定はのみできる AllowedInboundDataTransferSources が AllApps に設定されている場合に true を設定します。 (iOS のみ)|
+|thirdPartyKeyboardsBlocked|Boolean|サードパーティ製キーボードが管理されているアプリケーションへのアクセス中に許可されている場合を定義します。 (iOS のみ)|
+|filterOpenInToOnlyManagedApps|Boolean|選択されているファイル共有の場所に、マネージ アプリケーションから開くの操作がサポートされている場合を定義します。 この設定は、AllowedOutboundDataTransferDestinations を ManagedApps に設定し、DisableProtectionOfManagedOutboundOpenInData が False に設定されて場合にのみ適用されます。 (iOS のみ)|
+|disableProtectionOfManagedOutboundOpenInData|Boolean|IOS OpenIn オプションを使用して他のアプリケーションに転送されるデータの保護を無効にします。 この設定はのみできる AllowedOutboundDataTransferDestinations が ManagedApps に設定されている場合に true を設定します。 (iOS のみ)|
+|protectInboundDataFromUnknownSources|Boolean|不明なソースから受信したデータを保護します。 この設定はのみできる AllowedInboundDataTransferSources が AllApps に設定されている場合に true を設定します。 (iOS のみ)|
 
 ## <a name="relationships"></a>リレーションシップ
 |リレーションシップ|型|説明|

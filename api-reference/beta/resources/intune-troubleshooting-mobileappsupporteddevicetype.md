@@ -3,12 +3,13 @@ title: mobileAppSupportedDeviceType リソースの種類
 description: デバイスのプロパティ
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 1d261b35b5de64057ca2dcdbe516081909523548
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: b1b757e9c621f77d1a26251345ee6751eca2ca7c
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27858549"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27980224"
 ---
 # <a name="mobileappsupporteddevicetype-resource-type"></a>mobileAppSupportedDeviceType リソースの種類
 
@@ -18,7 +19,7 @@ ms.locfileid: "27858549"
 
 デバイスのプロパティ
 ## <a name="properties"></a>プロパティ
-|プロパティ|種類|説明|
+|プロパティ|型|説明|
 |:---|:---|:---|
 |type|[deviceType](../resources/intune-shared-devicetype.md)|デバイスの種類。 使用可能な値: `desktop`、 `windowsRT`、 `winMO6`、 `nokia`、 `windowsPhone`、 `mac`、 `winCE`、 `winEmbedded`、 `iPhone`、 `iPad`、 `iPod`、 `android`、 `iSocConsumer`、 `unix`、 `macMDM`、 `holoLens`、 `surfaceHub`、 `androidForWork`、 `androidEnterprise`, `blackberry`, `palm`, `unknown`.|
 |minimumOperatingSystemVersion|String|OS の最小バージョン|

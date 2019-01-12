@@ -3,12 +3,13 @@ title: Get contactFolder
 description: 連絡先フォルダー ID を使用して連絡先フォルダーを取得します。
 author: angelgolfer-ms
 localization_priority: Normal
-ms.openlocfilehash: aa2f988593a3e73db55a661bf4cc83d2cbb612cb
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: outlook
+ms.openlocfilehash: 86f2adf867737e31d96a75d40f50442b10a468b0
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27838193"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27985117"
 ---
 # <a name="get-contactfolder"></a>Get contactFolder
 
@@ -40,7 +41,7 @@ GET /users/{id | userPrincipalName}/contactFolders/{id}
 ## <a name="optional-query-parameters"></a>オプションのクエリ パラメーター
 このメソッドは、応答をカスタマイズするための [OData クエリ パラメーター](https://developer.microsoft.com/graph/docs/concepts/query_parameters)をサポートします。
 ## <a name="request-headers"></a>要求ヘッダー
-| 名前       | 種類 | 説明|
+| 名前       | 型 | 説明|
 |:-----------|:------|:----------|
 | Authorization  | string  | ベアラー {トークン}。必須。 |
 

@@ -2,12 +2,14 @@
 title: 警告の更新
 description: " > **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。"
 localization_priority: Normal
-ms.openlocfilehash: efb9911eaeb9d980084c26ef329c7c837c9d04f5
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: preetikr
+ms.prod: security
+ms.openlocfilehash: 8b8e21334d9a94d6a41c1e283959bd6473c11e1a
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27815079"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27990621"
 ---
 # <a name="update-alert"></a>警告の更新
 
@@ -45,7 +47,7 @@ PATCH /security/alerts/{alert_id}
 
 要求の本文には、更新される関連フィールドの値の JSON の形式を指定します。 含まれている**必要があります**本体、`vendorInformation`プロパティに有効な`provider`と`vendor`のフィールドです。 次の表では、アラートの更新可能なフィールドを示します。 要求の本文に含まれていない既存のプロパティの値は変更されません。 最適なパフォーマンスを得るために、変更されていない既存の値を含めないでください。
 
-| プロパティ   | 種類 |説明|
+| プロパティ   | 型 |説明|
 |:---------------|:--------|:----------|
 |担当者|String|アナリスト、警告の名前は、選別、調査、または修復用に割り当てられます。|
 |closedDateTime|DateTimeOffset|時間のアラートが閉じられました。 Timestamp 型は、ISO 8601 形式を使用して日付と時刻の情報を表し、常に UTC 時間です。 たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、次のようになります。`'2014-01-01T00:00:00Z'`|

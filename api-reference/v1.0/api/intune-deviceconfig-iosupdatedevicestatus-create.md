@@ -3,12 +3,13 @@ title: iosUpdateDeviceStatus の作成
 description: 新しい iosUpdateDeviceStatus オブジェクトを作成します。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 6f299c169c14cc48528e08c819e68411913b8db9
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 7338ddc7937ffb0e6cf1aae6cc20b9f75e720e02
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27833923"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27991252"
 ---
 # <a name="create-iosupdatedevicestatus"></a>iosUpdateDeviceStatus の作成
 
@@ -44,7 +45,7 @@ POST /deviceManagement/iosUpdateStatuses
 
 次の表に、iosUpdateDeviceStatus の作成時に必要なプロパティを示します。
 
-|プロパティ|種類|説明|
+|プロパティ|型|説明|
 |:---|:---|:---|
 |ID|String|エンティティのキー。|
 |installStatus|[iosUpdatesInstallStatus](../resources/intune-deviceconfig-iosupdatesinstallstatus.md)|ポリシー レポートのインストール状態。 使用可能な値: `success`、 `available`、 `idle`、 `unknown`、 `downloading`、 `downloadFailed`、 `downloadRequiresComputer`、 `downloadInsufficientSpace`、 `downloadInsufficientPower`、 `downloadInsufficientNetwork`、 `installing`、 `installInsufficientSpace`、 `installInsufficientPower`、 `installPhoneCallInProgress`、 `installFailed`、 `notSupportedOperation`、 `sharedDeviceUserLoggedInError`。|

@@ -3,12 +3,13 @@ title: チャネルの一覧] タブ
 description: 'チーム内で指定されたチャネル内のタブの一覧を取得します。 '
 author: nkramer
 localization_priority: Normal
-ms.openlocfilehash: 628dcf57656782f2d921876dccb70173ef7b4623
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: microsoft-teams
+ms.openlocfilehash: d481b34036cc68d59b044c29b21bcdc9461af5ad
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27842883"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27981092"
 ---
 # <a name="list-tabs-in-channel"></a>チャネルの一覧] タブ
 

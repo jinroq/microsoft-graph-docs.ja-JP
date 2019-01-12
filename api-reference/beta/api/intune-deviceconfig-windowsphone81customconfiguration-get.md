@@ -3,12 +3,13 @@ title: Get windowsPhone81CustomConfiguration
 description: windowsPhone81CustomConfiguration オブジェクトのプロパティとリレーションシップを読み取ります。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 8397e32307a64aa5a403fc3c4871aaa3afca5dea
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 884deca9a5eb84a92ac8b4343a45fbb57d9ba6ec
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27862784"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27979356"
 ---
 # <a name="get-windowsphone81customconfiguration"></a>Get windowsPhone81CustomConfiguration
 

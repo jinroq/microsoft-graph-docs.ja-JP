@@ -3,12 +3,13 @@ title: officeClientConfiguration リソースの種類
 description: Office クライアントの構成。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 297383f8b7450e6d0df268afc4c009b3110205ee
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 3ddc1846afe96c99b616f28d6c831adca3eae960
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27879633"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27984060"
 ---
 # <a name="officeclientconfiguration-resource-type"></a>officeClientConfiguration リソースの種類
 
@@ -26,7 +27,7 @@ Office クライアントの構成。
 |[updatePriorities アクション](../api/intune-cirrus-officeclientconfiguration-updatepriorities.md)|なし|ポリシーの優先順位を更新します。|
 
 ## <a name="properties"></a>プロパティ
-|プロパティ|種類|説明|
+|プロパティ|型|説明|
 |:---|:---|:---|
 |ID|String|Office クライアントの構成のポリシーの id。|
 |userPreferencePayload|Stream|JSON の環境設定は、バイナリ形式の文字列は、ユーザーがこれらの値をオーバーライドすることができます。|

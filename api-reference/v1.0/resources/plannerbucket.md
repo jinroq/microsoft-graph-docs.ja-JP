@@ -3,12 +3,13 @@ title: plannerBucket リソースの種類
 description: ) Office 365 のプランでの作業をします。 PlannerPlan に含まれ、plannerTasks のコレクションを持つことができます。
 author: TarkanSevilmis
 localization_priority: Normal
-ms.openlocfilehash: 592d0e24f527d7ae343bd29e71a3dfdf0247720f
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: planner
+ms.openlocfilehash: 8cfc25e5554b20d4f808c8929b53549f4c44d7a2
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27831459"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27982835"
 ---
 # <a name="plannerbucket-resource-type"></a>plannerBucket リソースの種類
 
@@ -27,7 +28,7 @@ ms.locfileid: "27831459"
 |[Delete](../api/plannerbucket-delete.md) | なし |**plannerBucket** オブジェクトを削除します。 |
 
 ## <a name="properties"></a>プロパティ
-| プロパティ     | 種類   |説明|
+| プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
 |ID|String| 読み取り専用です。 バケットの ID です。 28 の文字、大文字小文字を区別することをお勧めします。 サービスの[フォーマットの検証](planner-identifiers-disclaimer.md)が行われます。|
 |名前|String|バケットの名前。|

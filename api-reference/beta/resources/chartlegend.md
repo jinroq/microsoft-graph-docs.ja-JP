@@ -3,12 +3,13 @@ title: ChartLegend リソースの種類
 description: グラフに凡例を表します。
 author: lumine2008
 localization_priority: Normal
-ms.openlocfilehash: db5c4531143df52c86e310c1d3670ab72b6e938c
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: excel
+ms.openlocfilehash: c76fd21700616ec6c353644de93bddd0a47ac7dd
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27853775"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27980882"
 ---
 # <a name="chartlegend-resource-type"></a>ChartLegend リソースの種類
 
@@ -25,7 +26,7 @@ ms.locfileid: "27853775"
 |[Update](../api/chartlegend-update.md) | [ChartLegend](chartlegend.md) |ChartLegend オブジェクトを更新します。 |
 
 ## <a name="properties"></a>プロパティ
-| プロパティ     | 種類   |説明|
+| プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
 |overlay|ブール値|グラフの凡例をグラフの本体に重ねるかどうかを指定するブール型の値です。|
 |position|文字列|グラフの凡例の位置を表します。可能な値は、`Top`、`Bottom`、`Left`、`Right`、`Corner`、`Custom` です。|

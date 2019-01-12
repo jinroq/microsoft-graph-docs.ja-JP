@@ -3,12 +3,13 @@ title: getLicensesForApp 関数
 description: まだ文書化されていません
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: a568350cacac5ca640857aeaa8fb6f6d91e5b3fc
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: b5d12b905e698e511a6dc05bf35fcc898d0a51bb
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27831473"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27978404"
 ---
 # <a name="getlicensesforapp-function"></a>getLicensesForApp 関数
 
@@ -45,7 +46,7 @@ GET /deviceAppManagement/vppTokens/getLicensesForApp
 要求 URL で、次のクエリ パラメーターに値を指定します。
 次の表に、この関数で使用できるパラメーターを示します。
 
-|プロパティ|種類|説明|
+|プロパティ|型|説明|
 |:---|:---|:---|
 |bundleId|String|まだ文書化されていません|
 

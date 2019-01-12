@@ -3,12 +3,13 @@ title: mobileAppCategory リソースの種類
 description: Intune のアプリの単一カテゴリのプロパティが含まれています。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: b932d4828cd8cae4e411178f6558e0f3801c9a0d
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: b87ef1bbfff84a19c939fa1eb5d9371b2732ac46
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27851703"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27982023"
 ---
 # <a name="mobileappcategory-resource-type"></a>mobileAppCategory リソースの種類
 
@@ -25,7 +26,7 @@ Intune のアプリの単一カテゴリのプロパティが含まれていま�
 |[mobileAppCategory の更新](../api/intune-apps-mobileappcategory-update.md)|[mobileAppCategory](../resources/intune-apps-mobileappcategory.md)|[mobileAppCategory](../resources/intune-apps-mobileappcategory.md) オブジェクトのプロパティを更新します。|
 
 ## <a name="properties"></a>プロパティ
-|プロパティ|種類|説明|
+|プロパティ|型|説明|
 |:---|:---|:---|
 |ID|String|エンティティのキー。|
 |displayName|String|アプリのカテゴリの名前。|

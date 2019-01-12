@@ -3,12 +3,13 @@ title: assignUserToDevice アクション
 description: 自動操縦装置のデバイスをユーザーに割り当てます。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 33145d5852d80eef529cc58e34524c170bba62cb
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 3c91107ade1ce04a1aef9bac0876335ca2093555
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27859459"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27979531"
 ---
 # <a name="assignusertodevice-action"></a>assignUserToDevice アクション
 
@@ -47,7 +48,7 @@ POST /deviceManagement/windowsAutopilotDeviceIdentities/{windowsAutopilotDeviceI
 
 次の表に、このアクションで使用できるパラメーターを示します。
 
-|プロパティ|種類|説明|
+|プロパティ|型|説明|
 |:---|:---|:---|
 |userPrincipalName|String|まだ文書化されていません|
 |addressableUserName|String|まだ文書化されていません|

@@ -3,12 +3,13 @@ title: Windows10EnrollmentCompletionPageConfiguration を作成します。
 description: 新しい windows10EnrollmentCompletionPageConfiguration オブジェクトを作成します。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: aa459255e48323c5f4e614dc9d12f8ae89d2f4e4
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 4d64ca5e5df475368e9b4848f57141884df5dd86
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27862728"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27984494"
 ---
 # <a name="create-windows10enrollmentcompletionpageconfiguration"></a>Windows10EnrollmentCompletionPageConfiguration を作成します。
 
@@ -46,7 +47,7 @@ POST /deviceManagement/deviceEnrollmentConfigurations
 
 次の表は、windows10EnrollmentCompletionPageConfiguration を作成するときに必要なプロパティを示します。
 
-|プロパティ|種類|説明|
+|プロパティ|型|説明|
 |:---|:---|:---|
 |ID|String|まだ文書化されていません。[deviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md) から継承します|
 |displayName|String|まだ文書化されていません。[deviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md) から継承します|
@@ -55,13 +56,13 @@ POST /deviceManagement/deviceEnrollmentConfigurations
 |createdDateTime|DateTimeOffset|まだ文書化されていません。[deviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md) から継承します|
 |lastModifiedDateTime|DateTimeOffset|まだ文書化されていません。[deviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md) から継承します|
 |version|Int32|まだ文書化されていません。[deviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md) から継承します|
-|showInstallationProgress|ブール型|ユーザーにインストールの進行状況の表示と非表示を切り替える|
-|blockDeviceSetupRetryByUser|ブール型|インストールの失敗時にセットアップを再実行するユーザーを許可します。|
-|allowDeviceResetOnInstallFailure|ブール型|許可またはブロック デバイスのインストールの失敗時にリセット|
-|allowLogCollectionOnInstallFailure|ブール型|許可またはブロックのインストールの失敗時にログの収集|
+|showInstallationProgress|Boolean|ユーザーにインストールの進行状況の表示と非表示を切り替える|
+|blockDeviceSetupRetryByUser|Boolean|インストールの失敗時にセットアップを再実行するユーザーを許可します。|
+|allowDeviceResetOnInstallFailure|Boolean|許可またはブロック デバイスのインストールの失敗時にリセット|
+|allowLogCollectionOnInstallFailure|Boolean|許可またはブロックのインストールの失敗時にログの収集|
 |customErrorMessage|String|インストールの失敗時に表示するカスタム エラー メッセージを設定します。|
 |installProgressTimeoutInMinutes|Int32|インストールの進行状況のタイムアウトを分単位で設定します。|
-|allowDeviceUseOnInstallFailure|ブール型|インストールの失敗時にデバイスを使用するユーザーを許可します。|
+|allowDeviceUseOnInstallFailure|Boolean|インストールの失敗時にデバイスを使用するユーザーを許可します。|
 |selectedMobileAppIds|String コレクション|インストールのステータスを追跡するために選択したアプリケーション|
 
 

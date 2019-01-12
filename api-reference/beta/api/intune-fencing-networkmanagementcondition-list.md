@@ -3,12 +3,13 @@ title: リスト networkManagementConditions
 description: NetworkManagementCondition オブジェクトのプロパティと関係を一覧表示します。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 686c9160a2ac0ddb6efd69c83a53df567a2612c4
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: bb9c623d46b41221ad34267c5770c67e39feda00
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27868265"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27980098"
 ---
 # <a name="list-networkmanagementconditions"></a>リスト networkManagementConditions
 

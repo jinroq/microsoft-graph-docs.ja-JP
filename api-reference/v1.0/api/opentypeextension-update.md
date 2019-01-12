@@ -2,12 +2,13 @@
 title: オープン拡張機能を更新する
 description: 要求本文内のプロパティでオープン拡張機能 (openTypeExtension オブジェクト) を更新します。
 localization_priority: Normal
-ms.openlocfilehash: 5765dc8eb32950e3eb5cab951535cbc92bab0c58
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: dkershaw10
+ms.openlocfilehash: 80009db1f90393fbb706876264272b581575ce3d
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27891519"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27986377"
 ---
 # <a name="update-open-extension"></a>オープン拡張機能を更新する
 
@@ -56,7 +57,7 @@ PATCH /users/{id|userPrincipalName}/extensions/{extensionId}
 
 
 ## <a name="path-parameters"></a>パス パラメーター
-|Parameter|Type|説明|
+|パラメーター|型|説明|
 |:-----|:-----|:-----|
 |ID|文字列|対応するコレクションのインスタンスの一意識別子。必須。|
 |extensionId|文字列|これは、拡張情報の一意のテキスト識別子である拡張情報名、または拡張情報の種類と一意のテキスト識別子を連結した完全修飾名になります。完全修飾名は、拡張情報を作成したときに、`id` プロパティで返されます。必須。|

@@ -2,12 +2,14 @@
 title: 予定表を取得する
 description: '予定表オブジェクトのプロパティと関係を取得します。 カレンダーには、ユーザーのいずれかを指定できます。 '
 localization_priority: Normal
-ms.openlocfilehash: 6c6deaaeb0cef1ae33c70a1140f835024dc093fd
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: angelgolfer-ms
+ms.prod: outlook
+ms.openlocfilehash: d54d408966e359a99c16c91113ea5ba7eebb3d1d
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27829527"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27990630"
 ---
 # <a name="get-calendar"></a>予定表を取得する
 
@@ -53,7 +55,7 @@ GET /users/{id | userPrincipalName}/calendarGroups/{id}/calendars/{id}
 ## <a name="optional-query-parameters"></a>オプションのクエリ パラメーター
 このメソッドは、応答をカスタマイズするための [OData クエリ パラメーター](https://developer.microsoft.com/graph/docs/concepts/query_parameters)をサポートします。
 ## <a name="request-headers"></a>要求ヘッダー
-| 名前       | 種類 | 説明|
+| 名前       | 型 | 説明|
 |:-----------|:------|:----------|
 | Authorization  | string  | ベアラー {トークン}。必須。 |
 
