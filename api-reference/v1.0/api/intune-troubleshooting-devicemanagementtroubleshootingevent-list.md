@@ -3,12 +3,13 @@ title: deviceManagementTroubleshootingEvents のリスト
 description: deviceManagementTroubleshootingEvent オブジェクトのプロパティとリレーションシップをリストします。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 11f8b55dff577f1f8f33a62ec0d2d20db3fc666f
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: b6ab19d049268b0880789b73e9900e3e8ad784a0
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27828428"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27986839"
 ---
 # <a name="list-devicemanagementtroubleshootingevents"></a>deviceManagementTroubleshootingEvents のリスト
 

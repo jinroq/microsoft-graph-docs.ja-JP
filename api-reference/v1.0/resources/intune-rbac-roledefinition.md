@@ -2,12 +2,14 @@
 title: roleDefinition リソース タイプ
 description: ロールの定義リソースです。 ロールの定義は、Intune におけるロール ベース アクセスの基礎です。 ロールは、モバイル アプリなどの Intune リソースと、リソースに対する Create や Read などの関連するロールのアクセス許可を結びつけます。 ロールには、組み込みとカスタムの 2 種類があります。 組み込みのロールは変更できません。 組み込みのロールとカスタム ロールは両方とも、割り当てを実施する必要があります。 ロールを定義して、任意の使用可能なリソースとロールのアクセス許可を結合して単一のロールにしたい場合、カスタム ロールを作成します。
 localization_priority: Normal
-ms.openlocfilehash: d3f5ef8ddd67302b747b2f35b0e4f62f3f6c00d2
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: tfitzmac
+ms.prod: intune
+ms.openlocfilehash: f09b94649f30909c2efc2d9851503b5b8db14127
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27804817"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27971873"
 ---
 # <a name="roledefinition-resource-type"></a>roleDefinition リソース タイプ
 

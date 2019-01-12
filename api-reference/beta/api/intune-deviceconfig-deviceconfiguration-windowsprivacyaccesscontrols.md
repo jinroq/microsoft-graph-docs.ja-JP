@@ -3,12 +3,13 @@ title: windowsPrivacyAccessControls アクション
 description: まだ文書化されていません
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 8a9f91a84809b7b1f853360728704905cdde6457
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: b79fc6e7c35f4338b602172bc0702498c762ec79
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27817116"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27969864"
 ---
 # <a name="windowsprivacyaccesscontrols-action"></a>windowsPrivacyAccessControls アクション
 
