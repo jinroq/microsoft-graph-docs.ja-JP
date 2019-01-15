@@ -4,12 +4,12 @@ description: 繰り返しイベントは、Outlook カレンダーの重要な�
 author: angelgolfer-ms
 localization_priority: Priority
 ms.prod: outlook
-ms.openlocfilehash: 27c407ccd288323866fbd6599050f0036b9d363d
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 9cdd7e7170dc48c2739514674786893efeae1b4e
+ms.sourcegitcommit: 2c60e38bb1b71ba958659f66ad4736495e520851
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27961793"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "28016766"
 ---
 # <a name="schedule-repeating-appointments-as-recurring-events-in-outlook"></a>定期的に繰り返される予定を、Outlook で定期的なイベントとして設定する
 
@@ -203,7 +203,7 @@ Weekly (週単位) の定期的なパターンでは、次の予定セットま�
 | **index** | 省略可能 | 月の最初のインスタンスから数えて、**daysOfsWeek** で指定された許可日数のどのインスタンスでイベントが発生するか指定します。 使用可能な値: `first`、`second`、`third`、`fourth`、`last`。 既定値: `first`。 |
 | **month** | 必須 | イベントが発生する月を指定します。 |
 | **interval** | 必須 | 次の予定までの年数を指定します。 |
-| **type** | 必須 | `relativeMonthly` に設定する必要があります。 |
+| **type** | 必須 | `relativeYearly` に設定する必要があります。 |
 
 #### <a name="examples"></a>例
 

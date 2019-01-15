@@ -2,12 +2,14 @@
 title: Microsoft Graph を呼び出すためのトークンの取得
 description: 'Microsoft Graph を呼び出すために、アプリは Microsoft のクラウド ID サービス Azure Active Directory (Azure AD) からアクセス トークンを取得する必要があります。アクセス トークンには、アプリとアプリに付与されているアクセス許可に関する情報 (要求) が含まれています (このアクセス許可は、Microsoft Graph を通じて利用できるリソースと API に対応するものです)。アクセス トークンを取得するためには、アプリを Azure AD で認証できるようにすることと、そのアプリが必要とする Microsoft Graph リソースへのアクセスをユーザーまたは管理者が承認することが必要です。 '
 author: jackson-woods
-ms.openlocfilehash: 2352802393d3e36c611dfab1d767e6bd76d69d8b
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Priority
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: d08c481ab7a42eee4cfabb8c6869225cb6d547ed
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27334301"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27932071"
 ---
 # <a name="get-access-tokens-to-call-microsoft-graph"></a>Microsoft Graph を呼び出すためのアクセス トークンの取得
 
@@ -144,7 +146,6 @@ Azure AD v2.0 いくつかの追加的な利点があります。次に例を示
 Azure AD v2.0 は Azure AD よりも新しく、機能の追加が続けられているため、v2.0 エンドポイントにはいくつかの制限があります。エンドポイントを決定する際には、この制限を考慮に入れる必要があります。次に例を示します。
 
 * 一部の機能は、まだ v2.0 では完全に実装されていません。たとえば、エンタープライズのお客様がモバイル セキュリティ機能 ([デバイスへの条件付きアクセス](https://azure.microsoft.com/documentation/articles/active-directory-conditional-access-device-policies)など) をオンにすると、アプリが動作しなくなることがあります。
-* [スタンド アロンの Web API](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-limitations#restrictions-on-app-types) からは Microsoft Graph を呼び出せません。 
 * クラウド ソリューション プロバイダー アプリは呼び出せません。
 * [フェデレーション テナントの統合 Windows 認証](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-limitations#restrictions-for-work-and-school-accounts)はサポートされていません。このため、フェデレーション Azure AD テナントのユーザーは、オンプレミスの Active Directory インスタンスでの自動認証ができなくなります。ユーザーは、自分の資格情報を再入力する必要があります。
 
