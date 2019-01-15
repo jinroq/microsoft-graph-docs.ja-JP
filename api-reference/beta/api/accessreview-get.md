@@ -4,12 +4,12 @@ description: 'Azure AD のレビュー機能にアクセス、accessReview オ�
 localization_priority: Normal
 author: lleonard-msft
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: be946e07a7714dc744847d73ee49718237fac92e
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: a13776b9aa215d752797b6ba2de2f477660ed31d
+ms.sourcegitcommit: 2c60e38bb1b71ba958659f66ad4736495e520851
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27926660"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "28016661"
 ---
 # <a name="get-accessreview"></a>AccessReview を取得します。
 
@@ -19,7 +19,7 @@ Azure AD[アクセスの確認](../resources/accessreviews-root.md)機能では�
 
 アクセス レビューのレビュー担当者を取得するには、 [accessReview の校閲者の一覧](accessreview-listreviewers.md)API を使用します。 アクセス レビューの決定を取得するには、 [] ボックスの一覧 accessReview の意思決定](accessreview-listdecisions.md)の API、または[私の accessReview の決定事項を表示](accessreview-listmydecisions.md)API を使用します。
 
-定期的なアクセス確認の場合を使用して、 `instances` 、過去、現在および将来のインスタンスのアクセス確認の[accessReview](../resources/accessreview.md)のコレクションを取得するために関係します。
+定期的なアクセス確認の場合を使用して、`instances`までは、アクセス確認のインスタンスを現在および将来の[accessReview](../resources/accessreview.md)コレクションを取得するために関係します。
 
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
@@ -36,7 +36,7 @@ Azure AD[アクセスの確認](../resources/accessreviews-root.md)機能では�
 GET /accessReviews('{reviewId}')
 ```
 ## <a name="request-headers"></a>要求ヘッダー
-| 名前         | 種類        | 説明 |
+| 名前         | 型        | 説明 |
 |:-------------|:------------|:------------|
 | Authorization | string | ベアラー\{トークン\}。 必須。 |
 
@@ -77,16 +77,23 @@ Content-type: application/json
     "businessFlowTemplateId": "6e4f3d20-c5c3-407f-9695-8460952bcc68",
     "reviewerType": "self",
     "description": "",
+    "reviewedEntity":{"id":"3b4f7e74-eb82-4120-9ff5-ba429c1ea6df","displayName":"Salesforce"},
     "settings": {
-        "reviewId": "2b83cc42-09db-46f6-8c6e-16fec466a82d",
         "mailNotificationsEnabled": true,
         "remindersEnabled": true,
         "justificationRequiredOnApproval": true,
+        "autoReviewEnabled": false,
+        "activityDurationInDays": 30,
+        "autoApplyReviewResultsEnabled": false,
+        "accessRecommendationsEnabled": false,
         "recurrenceSettings": {
             "recurrenceType": "onetime",
             "recurrenceEndType": "endBy",
             "durationInDays": 0,
             "recurrenceCount": 0
+        },
+        "autoReviewSettings": {
+            "notReviewedResult": "Deny"
         }
     }
 }

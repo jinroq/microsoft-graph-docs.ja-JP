@@ -4,12 +4,12 @@ description: 要求の本体に指定されている、マイクロソフトの�
 localization_priority: Priority
 author: nkramer
 ms.prod: microsoft-teams
-ms.openlocfilehash: 09d058d9dc64fff053cd0ec507357f2990aeb353
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 9021ed45cb187b8db64ec2a3270b6a7f840134ba
+ms.sourcegitcommit: 2c60e38bb1b71ba958659f66ad4736495e520851
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27957341"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "28016689"
 ---
 # <a name="create-channel"></a>チャネルを作成します。
 
@@ -57,7 +57,7 @@ POST /teams/{id}/channels
   "name": "create_channel_from_group"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/teams/{id}/channels
+POST https://graph.microsoft.com/v1.0/teams/{id}/channels
 Content-type: application/json
 
 {

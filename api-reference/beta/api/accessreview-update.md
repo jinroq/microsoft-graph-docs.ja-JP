@@ -4,12 +4,12 @@ description: Azure AD アクセスのレビュー機能では、1 つまたは�
 localization_priority: Normal
 author: lleonard-msft
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: e09219c1979f974b62f17c52163fc93b5d2d3c2a
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: e4e74daa092c6f18c845c7f0c468af90385b899b
+ms.sourcegitcommit: 2c60e38bb1b71ba958659f66ad4736495e520851
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27941358"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "28016752"
 ---
 # <a name="update-accessreview"></a>AccessReview を更新します。
 
@@ -17,7 +17,7 @@ ms.locfileid: "27941358"
 
 機能では、Azure AD[アクセスの確認](../resources/accessreviews-root.md)、1 つまたは複数のプロパティを変更するのには既存の[accessReview](../resources/accessreview.md)オブジェクトを更新します。
 
-レビュー担当者やレビューの決定を変更するのには、この API は想定されていません。  レビュー担当者を変更するには、 [addReviewer](accessreview-addreviewer.md)または[removeReviewer](accessreview-removereviewer.md) Api を使用します。  すでに開始された 1 回限りのレビュー、または定期的なレビューの既に起動インスタンスを停止、[停止](accessreview-stop.md)API を使用して、初期の段階では、ターゲット ・ グループまたはアプリケーション アクセス権の決定に適用する、[適用](accessreview-apply.md)API を使用して、します。 
+レビュー担当者やレビューの決定を変更するのには、この API は想定されていません。  レビュー担当者を変更するには、 [addReviewer](accessreview-addreviewer.md)または[removeReviewer](accessreview-removereviewer.md) Api を使用します。  すでに開始された 1 回限りのレビュー、または定期的なレビューの既に起動インスタンスを停止するには、初期の段階では、[停止する](accessreview-stop.md)API を使用します。 ターゲット ・ グループ、またはアプリケーションのアクセス権の決定を適用するには、[適用](accessreview-apply.md)API を使用します。 
 
 
 ## <a name="permissions"></a>アクセス許可
@@ -35,16 +35,16 @@ ms.locfileid: "27941358"
 PATCH /accessReviews('{reviewId}')
 ```
 ## <a name="request-headers"></a>要求ヘッダー
-| 名前         | 種類        | 説明 |
+| 名前         | 型        | 説明 |
 |:-------------|:------------|:------------|
 | Authorization | string | ベアラー\{トークン\}。 必須。 |
 
 ## <a name="request-body"></a>要求本文
-要求の本体の[accessReview](../resources/accessreview.md)オブジェクトのパラメーターの JSON の形式を指定します。
+要求の本文に、JSON 形式の[accessReview](../resources/accessreview.md)オブジェクトのパラメーターを指定します。
 
 次の表は、accessReview を更新するときに指定できるプロパティを示しています。
 
-| プロパティ     | 種類        | 説明 |
+| プロパティ     | 型        | 説明 |
 |:-------------|:------------|:------------|
 | `displayName`             |`String`                                                        | アクセス確認の名前です。  |
 | `startDateTime`           |`DateTimeOffset`                                                | 日付と時刻と、レビューを開始する予定です。  将来の日付でなければなりません。   |
@@ -94,7 +94,7 @@ Content-type: application/json
     "endDateTime": "2017-03-12T00:35:53.214Z",
     "status": "Initializing",
     "businessFlowTemplateId": "6e4f3d20-c5c3-407f-9695-8460952bcc68",
-    "reviewerType": "delegate",
+    "reviewerType": "delegated",
     "description": "Sample description"
 }
 ```

@@ -4,12 +4,12 @@ description: 'チーム内で指定されたチャネル内のタブの一覧を
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: d481b34036cc68d59b044c29b21bcdc9461af5ad
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: d731ff9218efd5db240084a462b2acf08641c46b
+ms.sourcegitcommit: 2c60e38bb1b71ba958659f66ad4736495e520851
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27981092"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "28016633"
 ---
 # <a name="list-tabs-in-channel"></a>チャネルの一覧] タブ
 
@@ -53,7 +53,7 @@ GET /teams/{id}/channels/{id}/tabs
 #### <a name="request"></a>要求
 要求の例を次に示します。
 ```http
-GET https://graph.microsoft.com/beta/teams/{id}/channels/{id}/tabs
+GET https://graph.microsoft.com/v1.0/teams/{id}/channels/{id}/tabs
 ```
 
 #### <a name="response"></a>応答

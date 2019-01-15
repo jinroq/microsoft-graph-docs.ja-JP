@@ -4,12 +4,12 @@ description: 新しいユーザーを作成するのにには、この API を�
 author: dkershaw10
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: fd62d51d86491999ef74480530042921de33a79c
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: cb8d8f882905141e63bf9d1710cc7b8190d93a9c
+ms.sourcegitcommit: 2c60e38bb1b71ba958659f66ad4736495e520851
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27973070"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "28016759"
 ---
 # <a name="create-user"></a>user の作成
 
@@ -46,10 +46,10 @@ POST /users
 |:---------------|:--------|:----------|
 |accountEnabled |ブール値 |アカウントが有効な場合は true。それ以外の場合は false。|
 |displayName |string |ユーザーのアドレス帳に表示される名前。|
-|onPremisesImmutableId |文字列 |ユーザーの userPrincipalName (UPN) プロパティにフェデレーション ドメインを使用している場合は、新しいユーザー アカウントの作成時にのみ指定する必要があります|
-|mailNickname |文字列 |ユーザーのメール エイリアス。|
+|onPremisesImmutableId |string |ユーザーの userPrincipalName (UPN) プロパティにフェデレーション ドメインを使用している場合は、新しいユーザー アカウントの作成時にのみ指定する必要があります|
+|mailNickname |string |ユーザーのメール エイリアス。|
 |passwordProfile|[PasswordProfile](../resources/passwordprofile.md) |ユーザーのパスワード プロファイル。|
-|userPrincipalName |文字列 |ユーザー プリンシパル名 (someuser@contoso.com)。|
+|userPrincipalName |string |ユーザー プリンシパル名 (someuser@contoso.com)。|
 
 **ユーザー**のリソースは、[拡張機能](/graph/extensibility-overview)をサポートするため使用すること、`POST`操作し、作成時にユーザー インスタンスに独自のデータにカスタム プロパティを追加します。
 
@@ -73,7 +73,7 @@ Content-type: application/json
   "accountEnabled": true,
   "displayName": "displayName-value",
   "mailNickname": "mailNickname-value",
-  "userPrincipalName": "upn-value@tenant-value@onmicrosoft.com",
+  "userPrincipalName": "upn-value@tenant-value.onmicrosoft.com",
   "passwordProfile" : {
     "forceChangePasswordNextSignIn": true,
     "password": "password-value"

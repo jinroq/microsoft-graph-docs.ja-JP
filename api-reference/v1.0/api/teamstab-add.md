@@ -4,12 +4,12 @@ description: '(ピン) を追加、チーム内で指定したチャンネルを
 author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
-ms.openlocfilehash: ce91b841ab8eeaaec3811382c55f8debba99ce31
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 8c2aee1f67eebd2fda7515ede27158f3154dd2d1
+ms.sourcegitcommit: 2c60e38bb1b71ba958659f66ad4736495e520851
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27921165"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "28016717"
 ---
 # <a name="add-tab-to-channel"></a>チャネルにタブを追加します。
 
@@ -57,7 +57,7 @@ POST /teams/{id}/channels/{id}/tabs
   "name": "get_team"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/teams/{id}/channels/{id}/tabs
+POST https://graph.microsoft.com/v1.0/teams/{id}/channels/{id}/tabs
 {
   "name": "My Contoso Tab",
   "teamsApp@odata.bind" : "https://graph.microsoft.com/v1.0/appCatalogs/teamsApps/06805b9e-77e3-4b93-ac81-525eb87513b8",

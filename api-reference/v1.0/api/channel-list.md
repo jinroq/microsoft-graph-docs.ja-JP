@@ -4,12 +4,12 @@ description: このチーム内のチャンネルのリストを取得します�
 author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
-ms.openlocfilehash: 609b83032877b77923e8444926aec785e4ae84db
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 9d6d149a0e38fb5e02a2c32f9ad218fb95f32911
+ms.sourcegitcommit: 2c60e38bb1b71ba958659f66ad4736495e520851
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27932694"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "28016647"
 ---
 # <a name="list-channels"></a>チャネルのリスト
 
@@ -58,7 +58,7 @@ GET /teams/{id}/channels
   "name": "get_channels"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/teams/{id}/channels
+GET https://graph.microsoft.com/v1.0/teams/{id}/channels
 ```
 ##### <a name="response"></a>応答
 以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。

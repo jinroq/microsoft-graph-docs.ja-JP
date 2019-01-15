@@ -4,12 +4,12 @@ description: Azure AD のレビュー機能にアクセス、新しい accessRev
 localization_priority: Normal
 author: lleonard-msft
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 2bb8db52dd3e5086ba9559ef318a94b8ac3a3918
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: de8574566a8ca1eedb1f0f55230fb91053370ccc
+ms.sourcegitcommit: 2c60e38bb1b71ba958659f66ad4736495e520851
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27942270"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "28016724"
 ---
 # <a name="create-accessreview"></a>AccessReview を作成します。
 
@@ -36,7 +36,7 @@ ms.locfileid: "27942270"
 POST /accessReviews
 ```
 ## <a name="request-headers"></a>要求ヘッダー
-| 名前         | 種類        | 説明 |
+| 名前         | 型        | 説明 |
 |:-------------|:------------|:------------|
 | Authorization | string | ベアラー\{トークン\}。 必須。 |
 
@@ -45,18 +45,18 @@ POST /accessReviews
 
 次の表は、accessReview を作成するときに必要なプロパティを示します。
 
-| プロパティ     | 種類        | 説明 |
+| プロパティ     | 型        | 説明 |
 |:-------------|:------------|:------------|
 | `displayName`             |`String`                                                        | アクセス確認の名前です。  |
 | `startDateTime`           |`DateTimeOffset`                                                | 日付と時刻と、レビューを開始する予定です。  将来の日付でなければなりません。   |
 | `endDateTime`             |`DateTimeOffset`                                                | レビューの終了がスケジュールされているときの日時。 これは、少なくとも 1 つの日を開始日より後でなければなりません。   |
 | `description`             |`String`                                                        | 校閲者を表示する説明します。 |
 | `businessFlowTemplateId`  |`String`                                                        | ビジネス フロー テンプレート識別子の[businessFlowTemplate](../resources/businessflowtemplate.md)から取得します。  |
-| `reviewerType`            |`String`                                                        | リレーションシップの種類のいずれかの確認済みのオブジェクトのアクセス許可の校閲者の`self`、`delegate`または`entityOwners`。 | 
+| `reviewerType`            |`String`                                                        | リレーションシップの種類のいずれかの確認済みのオブジェクトのアクセス許可の校閲者の`self`、 `delegated`、または`entityOwners`。 | 
 | `reviewedEntity`          |`microsoft.graph.identity`                                      | アクセス確認を作成するため、グループのメンバーシップなどのユーザーがアプリケーションの割り当てオブジェクトです。 | 
 
 
-指定された reviewerType に値が設定されている場合`delegate`、呼び出し元は含める必要がありますし、`reviewers`プロパティは、一連の校閲者に[割り当てられていません](../resources/useridentity.md)。
+指定された reviewerType に値が設定されている場合`delegated`、呼び出し元は含める必要がありますし、`reviewers`プロパティは、一連の校閲者に[割り当てられていません](../resources/useridentity.md)。
 
 さらに、呼び出し元は、一連の定期的なレビューを作成するか、既定の確認動作を変更する設定を含めることができます。 具体的には、定期的なレビューを作成するには、呼び出し元する必要があります、 `accessReviewRecurrenceSettings` 、access 内で設定を確認します
 
@@ -86,7 +86,7 @@ Content-type: application/json
     "reviewedEntity": {
         "id": "99025615-a0b1-47ec-9117-35377b10998b",
     },
-    "reviewerType" : "delegate",
+    "reviewerType" : "delegated",
     "businessFlowTemplateId": "6e4f3d20-c5c3-407f-9695-8460952bcc68",
     "description":"Sample description",
     "reviewers":
@@ -100,10 +100,22 @@ Content-type: application/json
     ],
     "settings":
     {
-        "justificationRequiredOnApproval": true,
-        "activityHistoryInDays":30,
-        "mailNotificationsEnabled":true,
-        "remindersEnabled":true
+        "mailNotificationsEnabled": true,
+        "remindersEnabled": true,
+        "justificationRequiredOnApproval":true,
+        "autoReviewEnabled":false,
+        "activityDurationInDays":30,
+        "autoApplyReviewResultsEnabled":false,
+        "accessRecommendationsEnabled":false,
+        "recurrenceSettings":{
+            "recurrenceType":"onetime",
+            "recurrenceEndType":"endBy",
+            "durationInDays":0,
+            "recurrenceCount":0
+        },
+        "autoReviewSettings":{
+            "notReviewedResult":"Deny"
+        }
     }
 }
 ```
@@ -126,7 +138,7 @@ Content-type: application/json
     "endDateTime": "2017-03-12T00:35:53.214Z",
     "status": "Initializing",
     "businessFlowTemplateId": "6e4f3d20-c5c3-407f-9695-8460952bcc68",
-    "reviewerType": "delegate",
+    "reviewerType": "delegated",
     "description": "Sample description"
 }
 ```

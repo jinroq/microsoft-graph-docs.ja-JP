@@ -2,12 +2,14 @@
 title: accessReview リソースの種類
 description: 'Azure AD にアクセス確認機能を`accessReview`、アクセス確認を表します。  '
 localization_priority: Normal
-ms.openlocfilehash: 283fed0f9e96ca9d0f9cdf06fdfee824326c038d
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: lleonard-msft
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: e9099b1ec55a8ed017f77757d527abbd7e45bdf6
+ms.sourcegitcommit: 2c60e38bb1b71ba958659f66ad4736495e520851
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27826076"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "28016738"
 ---
 # <a name="accessreview-resource-type"></a>accessReview リソースの種類
 
@@ -34,7 +36,7 @@ Azure AD[アクセスの確認](accessreviews-root.md)機能で、 `accessReview
 |[リセット accessReview 決定](../api/accessreview-reset.md) |     なし。   |   進行中の accessReview の決定をリセットします。|
 |[AccessReview の決定を適用します。](../api/accessreview-apply.md) |     なし。   |   完了した accessReview からの決定を適用します。|
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>アクセス許可
 
 |アクセス許可の種類                        | アクセス許可 (特権の小さいものから大きいものへ)              |
 |:--------------------------------------|:---------------------------------------------------------|
@@ -44,18 +46,18 @@ Azure AD[アクセスの確認](accessreviews-root.md)機能で、 `accessReview
 
 
 ## <a name="properties"></a>プロパティ
-| プロパティ     | 種類   |説明|
+| プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
 | `id`                      |`String`                                                        | 機能に割り当てられた一意の識別子アクセス レビューします。 |
 | `displayName`             |`String`                                                        | アクセス確認の名前です。 必要なを作成します。 |
 | `startDateTime`           |`DateTimeOffset`                                                | 日付と時刻と、レビューを開始する予定です。  将来の日付可能性があります。  必要なを作成します。 |
 | `endDateTime`             |`DateTimeOffset`                                                | レビューの終了がスケジュールされているときの日時。 これは、少なくとも 1 つの日を開始日より後でなければなりません。  必要なを作成します。 |
-| `status`                  |`String`                                                        | この読み取り専用フィールドは、accessReview の現在の状態を指定します。 標準的な状態には、 `Initializing`、 `NotStarted`、 `Starting`、`InProgress`、 `Completing`、 `Completed`、`AutoReviewing`と`AutoReviewed`。 |
+| `status`                  |`String`                                                        | この読み取り専用フィールドは、accessReview のステータスを指定します。 標準的な状態には、 `Initializing`、 `NotStarted`、 `Starting`、`InProgress`、 `Completing`、 `Completed`、`AutoReviewing`と`AutoReviewed`。 |
 | `description`             |`String`                                                        | アクセス レビュー作成者は、校閲者を表示して説明します。 |
 | `businessFlowTemplateId`  |`String`                                                        | 業務フローのテンプレートの識別子です。 必要なを作成します。 |
-| `reviewerType`            |`String`                                                        | 関連付けの種類、対象のオブジェクトのいずれかの校閲者の`self`、`delegate`または`entityOwners`。 必要なを作成します。 | 
+| `reviewerType`            |`String`                                                        | 関連付けの種類、対象のオブジェクトのいずれかの校閲者の`self`、`delegated`または`entityOwners`。 必要なを作成します。 | 
 | `createdBy`               |[割り当てられていません](useridentity.md)                                 | このレビューを作成したユーザー。 |
-| `reviewedEntity`          |`microsoft.graph.identity`                                      | アクセス権を確認するオブジェクトは、アクセス権限の割り当て、グループへのユーザーのメンバーシップ、またはアプリケーションへのユーザーの割り当てなどのこと。 必要なを作成します。 | 
+| `reviewedEntity`          |`microsoft.graph.identity`                                      | アクセス権を確認するオブジェクトがアクセス権限の割り当てを確認します。 グループでは、ユーザーのグループ メンバーシップの確認のため、またはアプリケーションへのユーザーの割り当ての詳細についてはアプリケーションを使用できます。 必要なを作成します。 | 
 | `settings`                |`microsoft.graph.accessReviewSettings`             | AccessReview の設定は、以下の種類の定義を参照してください。 |
 
 
@@ -72,7 +74,7 @@ Azure AD[アクセスの確認](accessreviews-root.md)機能で、 `accessReview
 | `myDecisions`             |[accessReviewDecision](accessreviewdecision.md)コレクション | 呼び出し元、呼び出し元が、校閲者である場合の意思決定のコレクションです。 |
 | `instances`               |[accessReview](accessreview.md)コレクション         | アクセス レビューのコレクション インスタンスの過去、現在、将来、このオブジェクトが定期的なアクセスの確認である場合。 |
 
-オブジェクトに関係があるかどうかは、オブジェクトは、1 回限りのアクセスの確認、一連の定期的なアクセスの確認、または定期的なアクセス確認のインスタンスかどうかによって異なります。
+オブジェクトにこれらの関係が存在するかどうかは、オブジェクトは、1 回限りのアクセスの確認、一連の定期的なアクセスの確認、または定期的なアクセス確認のインスタンスかどうかによって異なります。
 
 | シナリオ | 校閲者はありますか。 | 意思決定と myDecisions を持つでしょうか。 | インスタンスが存在するか。 |
 |:---------|:---------------|:---------------|:---------------|
@@ -114,7 +116,7 @@ Azure AD[アクセスの確認](accessreviews-root.md)機能で、 `accessReview
 
 `accessReviewSettings` 、アクセス確認を開始するときに、機能の動作を制御するのには、アクセス確認を作成するときに追加の設定を提供します。  この型には、次のプロパティがあります。 
 
-| プロパティ                     | 種類                      | 説明 |
+| プロパティ                     | 型                      | 説明 |
 | :--------------------------- | :------------------------ | :---------- |
 | `mailNotificationsEnabled`|`Boolean`                | 校閲者とレビュー作成者にメールの送信が有効になっているかどうかを示すフラグです。                |
 | `remindersEnabled`|`Boolean`       | 校閲者に送信の通知メールが有効になっているかどうかを示すフラグです。       |
@@ -123,7 +125,7 @@ Azure AD[アクセスの確認](accessreviews-root.md)機能で、 `accessReview
 | `autoReviewEnabled`|`Boolean` | レビュー担当者が指定されていません 1 つで auto-apply を使用する場合にこの機能が、意思決定を設定するかどうかを示すフラグが有効になります。 |
 | `autoReviewSettings`|`microsoft.graph.autoReviewSettings` | 方法の詳細設定機能は、以下で説明されている auto-apply で使用するため、レビュー決定を設定する必要があります。 |
 | `recurrenceSettings`|`microsoft.graph.accessReviewRecurrenceSettings` | 定期的なアイテムを以下に示す詳細な設定です。 |
-| `autoApplyReviewResultsEnabled`|`Boolean` | 示すかどうかの自動適用機能により、ターゲット オブジェクトのアクセス リソースを自動的に変更が有効になっています。  有効でない場合は、アクセス確認が完了した後、ユーザーは後アクセス レビューの変更を適用する必要があります。 |
+| `autoApplyReviewResultsEnabled`|`Boolean` | 示すかどうかの自動適用機能により、ターゲット オブジェクトのアクセス リソースを自動的に変更が有効になっています。  有効でない場合ユーザーする必要があります、レビューが完了すると、適用のアクセス確認。 |
 | `accessRecommendationsEnabled`|`Boolean` | 校閲者への推奨事項を表示が有効になっているかどうかを示すフラグです。 |
 
 
@@ -132,7 +134,7 @@ Azure AD[アクセスの確認](accessreviews-root.md)機能で、 `accessReview
 
 `autoReviewSettings`が組み込まれて、アクセス設定の確認、および、アクセス確認が完了したときに、機能の動作を指定します。  型が 1 つのプロパティを持つ`notReviewedResult`。
 
-| プロパティ                     | 種類     | 説明                          |
+| プロパティ                     | 型     | 説明                          |
 | :--------------------------- | :------  | :----------                          |
 | `notReviewedResult`          |`String`  | `Approve`、`Deny`、`Recommendation` のいずれかでなければなりません。 |
 
@@ -141,12 +143,12 @@ Azure AD[アクセスの確認](accessreviews-root.md)機能で、 `accessReview
 
 `accessReviewRecurrenceSettings` 、アクセス設定の確認、内で埋め込まれ、アクセス確認が定期的に繰り返されることを指定します。  この型には、次のプロパティがあります。
 
-| プロパティ                     | 種類                                                                                                          | 説明 |
+| プロパティ                     | 型                                                                                                          | 説明 |
 | :--------------------------- | :------------------------------------------------------------------------------------------------------------ | :---------- |
-| `recurrenceType`|`String`    | 1 つである必要があります、定期的な間隔の`onetime`、 `weekly`、 `monthly`、`quarterly`または`annual`。                                                                   |
-| `recurrenceEndType`|`String` | どのように、定期的なアイテムは終了します。 いずれかのことができます`Never`、定期的な予定の系列の明示的な終了が行われない`Endby`、定期的なアイテムを特定の日付に終了して`occurrences`、レビューのインスタンスの特定の数を完了した後に、シリーズを終了します。 |
+| `recurrenceType`|`String`    | 1 つである必要があります、定期的な間隔の`onetime`、 `weekly`、 `monthly`、 `quarterly`、または`annual`。                                                                   |
+| `recurrenceEndType`|`String` | どのように、定期的なアイテムを終了します。 場合`Never`、定期的な一連の明示的な終了はありません。 場合`endBy`、定期的なアイテムが、特定の日付に終了します。 場合`occurrences`後、シリーズを終了し、`recurrentCount`レビューのインスタンスを完了します。 |
 | `durationInDays`|`Int32`     | 定期的な予定の日の期間です。                                                                              |
-| `recurrenceCount`|`Int32`    | 反復数場合の値`recurrenceEndType`、 `occurrences`。                                                        |
+| `recurrenceCount`|`Int32`    | 反復数場合の値`recurrenceEndType`、 `occurrences`、またはそれ以外は 0 です。                                                        |
 
 
 

@@ -4,12 +4,12 @@ description: 'マイクロソフト チーム アプリケーション カタロ
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 7faf5847b78d6221b5167c775def75ae9a2ce629
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 0c8093092a6a5dfc6d8c97df372832f15cc8eb20
+ms.sourcegitcommit: 2c60e38bb1b71ba958659f66ad4736495e520851
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27911876"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "28016745"
 ---
 # <a name="publish-apps-to-your-organizations-app-catalog"></a>アプリケーションを組織のアプリケーションのカタログに発行します。
 
@@ -55,7 +55,7 @@ POST /appCatalogs/teamsApps
 ### <a name="request"></a>要求
 
 ```http
-POST https://graph.microsoft.com/beta/appCatalogs/teamsApps
+POST https://graph.microsoft.com/v1.0/appCatalogs/teamsApps
 Content-type: application/zip
 Content-length: 244
 

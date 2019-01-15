@@ -4,12 +4,12 @@ description: アーカイブされたチームを復元します。 これは、
 localization_priority: Normal
 author: nkramer
 ms.prod: microsoft-teams
-ms.openlocfilehash: 36e4183f53afab6ba836bacd909b616910dc0c42
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: b015be832093b0e68f304600afbc52421f654857
+ms.sourcegitcommit: 2c60e38bb1b71ba958659f66ad4736495e520851
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27982079"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "28016710"
 ---
 # <a name="unarchive-team"></a>チームを unarchive します。
 
@@ -56,7 +56,7 @@ POST /teams/{id}/unarchive
   "name": "unarchive_team"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/teams/{id}/unarchive
+POST https://graph.microsoft.com/v1.0/teams/{id}/unarchive
 ```
 
 #### <a name="response"></a>応答
