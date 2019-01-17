@@ -3,12 +3,13 @@ title: windowsFirewallNetworkProfile リソース タイプ
 description: Windows ファイアウォールのプロファイルのポリシーです。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 8f6431d1a19c2e74dd2cf009ee433f10dc9ecb51
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 21feca83653e9c72b43fdd2fe0e510bb5a563e64
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27877064"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27984368"
 ---
 # <a name="windowsfirewallnetworkprofile-resource-type"></a>windowsFirewallNetworkProfile リソース タイプ
 
@@ -18,7 +19,7 @@ ms.locfileid: "27877064"
 
 Windows ファイアウォールのプロファイルのポリシーです。
 ## <a name="properties"></a>プロパティ
-|プロパティ|種類|説明|
+|プロパティ|型|説明|
 |:---|:---|:---|
 |firewallEnabled|[stateManagementSetting](../resources/intune-deviceconfig-statemanagementsetting.md)|ホスト ・ デバイスを許可またはブロックするファイアウォールとネットワークのプロファイルの高度なセキュリティの強制を構成します。 可能な値は、`notConfigured`、`blocked`、`allowed` です。|
 |stealthModeRequired|ブール型|ステルス ・ モードで動作するサーバーを許可します。 StealthModeRequired と StealthModeBlocked の両方が true の場合、StealthModeBlocked が優先します。|

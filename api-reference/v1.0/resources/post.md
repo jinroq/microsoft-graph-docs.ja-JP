@@ -3,12 +3,13 @@ title: post リソース タイプ
 description: conversationThread エンティティ内の個々の投稿アイテムを表します。
 author: dkershaw10
 localization_priority: Normal
-ms.openlocfilehash: 585d823a7a3e4b6814f06c1613cac66a82a93e65
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: groups
+ms.openlocfilehash: d594b7f44a39f17427ac395d4cd734d064d8b1ae
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27851192"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27982870"
 ---
 # <a name="post-resource-type"></a>post リソース タイプ
 [conversationThread](conversationthread.md) エンティティ内の個々の投稿アイテムを表します。
@@ -45,7 +46,7 @@ ms.locfileid: "27851192"
 |[Get post with multi-value extended property](../api/multivaluelegacyextendedproperty-get.md)  | [post](post.md) | `$expand` を使用して、複数値の拡張プロパティを含む投稿を取得します。 |
 
 ## <a name="properties"></a>プロパティ
-| プロパティ     | 種類   |説明|
+| プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
 |body|[itemBody](itembody.md)|投稿の内容です。これが既定のプロパティです。このプロパティを null にすることができます。|
 |categories|String コレクション|投稿に関連付けられたカテゴリ。|

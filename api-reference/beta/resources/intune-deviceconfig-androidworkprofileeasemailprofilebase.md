@@ -3,12 +3,13 @@ title: androidWorkProfileEasEmailProfileBase リソースの種類
 description: Android 作業プロファイルの EA は、電子メール プロファイルの基本
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: a2f496148c72b51441540d66034b81b27decdde7
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: d332890088eeb02a8e57b1445bd6fc571fd0d1cd
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27891246"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27954723"
 ---
 # <a name="androidworkprofileeasemailprofilebase-resource-type"></a>androidWorkProfileEasEmailProfileBase リソースの種類
 
@@ -26,10 +27,10 @@ Android 作業プロファイルの EA は、電子メール プロファイル�
 |[リスト androidWorkProfileEasEmailProfileBases](../api/intune-deviceconfig-androidworkprofileeasemailprofilebase-list.md)|[androidWorkProfileEasEmailProfileBase](../resources/intune-deviceconfig-androidworkprofileeasemailprofilebase.md)コレクション|[AndroidWorkProfileEasEmailProfileBase](../resources/intune-deviceconfig-androidworkprofileeasemailprofilebase.md)オブジェクトのプロパティと関係を一覧表示します。|
 |[AndroidWorkProfileEasEmailProfileBase を取得します。](../api/intune-deviceconfig-androidworkprofileeasemailprofilebase-get.md)|[androidWorkProfileEasEmailProfileBase](../resources/intune-deviceconfig-androidworkprofileeasemailprofilebase.md)|[AndroidWorkProfileEasEmailProfileBase](../resources/intune-deviceconfig-androidworkprofileeasemailprofilebase.md)オブジェクトのプロパティと関係を参照してください。|
 
-## <a name="properties"></a>プロパティ
-|プロパティ|種類|説明|
+## <a name="properties"></a>Properties
+|プロパティ|型|説明|
 |:---|:---|:---|
-|ID|String|エンティティのキー。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
+|id|String|エンティティのキー。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |lastModifiedDateTime|DateTimeOffset|オブジェクトが最後に変更された DateTime。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |roleScopeTagIds|String コレクション|このエンティティ インスタンスのスコープのタグのリストです。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |supportsScopeTags|ブール型|デバイスの構成を基になるスコープのタグの割り当てをサポートしているかどうかを示します。 この値が false であり、エンティティをスコープ指定されたユーザーには表示されませんがある場合、ScopeTags プロパティに割り当てることは許可されていません。 これは、Silverlight で作成されたレガシ ポリシーに対して発生し、削除して、Azure ポータル内のポリシーを再作成することで解決できます。 このプロパティは読み取りのみ可能です。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|

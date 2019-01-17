@@ -3,12 +3,13 @@ title: Update iosManagedAppProtection
 description: iosManagedAppProtection オブジェクトのプロパティを更新します。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: b2430bc06183697fa7a391ba997997a517a0d146
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 58713a6a089aa46713c961c70f9547273e756782
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27833272"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27931098"
 ---
 # <a name="update-iosmanagedappprotection"></a>Update iosManagedAppProtection
 
@@ -44,7 +45,7 @@ PATCH /deviceAppManagement/iosManagedAppProtections/{iosManagedAppProtectionId}
 
 次の表に、[iosManagedAppProtection](../resources/intune-mam-iosmanagedappprotection.md) の作成時に必要なプロパティを示します。
 
-|プロパティ|種類|説明|
+|プロパティ|型|説明|
 |:---|:---|:---|
 |displayName|String|ポリシーの表示名。 [managedAppPolicy](../resources/intune-mam-managedapppolicy.md) から継承します|
 |説明|String|ポリシーの説明。 [managedAppPolicy](../resources/intune-mam-managedapppolicy.md) から継承します|

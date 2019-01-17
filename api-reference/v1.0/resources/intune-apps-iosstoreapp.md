@@ -3,12 +3,13 @@ title: iosStoreApp リソース タイプ
 description: iOS ストア アプリのプロパティと継承されるプロパティを含みます。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: cfac525db5d74d7257d09c2ebca210bb81e974a1
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 5c270ff96b77200f9d0004784f62e668d2e59d7a
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27840454"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27972965"
 ---
 # <a name="iosstoreapp-resource-type"></a>iosStoreApp リソース タイプ
 
@@ -28,9 +29,9 @@ iOS ストア アプリのプロパティと継承されるプロパティを含
 |[Update iosStoreApp](../api/intune-apps-iosstoreapp-update.md)|[iosStoreApp](../resources/intune-apps-iosstoreapp.md)|[iosStoreApp](../resources/intune-apps-iosstoreapp.md) オブジェクトのプロパティを更新します。|
 
 ## <a name="properties"></a>プロパティ
-|プロパティ|種類|説明|
+|プロパティ|型|説明|
 |:---|:---|:---|
-|ID|String|エンティティのキー。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|
+|id|String|エンティティのキー。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|
 |displayName|String|管理者が提供またはインポートしたアプリのタイトル。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|
 |説明|String|アプリの説明。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|
 |publisher|String|アプリの発行元。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|

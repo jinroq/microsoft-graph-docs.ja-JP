@@ -3,12 +3,13 @@ title: depIOSEnrollmentProfile リソースの種類
 description: DepIOSEnrollmentProfile リソースでは、iOS の構成を特定の Apple デバイスの登録プログラム (DEP) 登録プロファイルを表します。 このタイプのプロファイルは、DEP. を使用して対応するデバイスを登録する前に、Apple の DEP のシリアル番号を割り当てる必要があります。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 49e681129c4961638d9443886a89ea05708385ba
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 92a5e277f0356445ae1dd36c3a643d73624e2207
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27869861"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27985614"
 ---
 # <a name="depiosenrollmentprofile-resource-type"></a>depIOSEnrollmentProfile リソースの種類
 
@@ -29,10 +30,10 @@ DepIOSEnrollmentProfile リソースでは、iOS の構成を特定の Apple デ
 |[DepIOSEnrollmentProfile を削除します。](../api/intune-enrollment-depiosenrollmentprofile-delete.md)|なし|の[depIOSEnrollmentProfile](../resources/intune-enrollment-depiosenrollmentprofile.md)を削除します。|
 |[DepIOSEnrollmentProfile を更新します。](../api/intune-enrollment-depiosenrollmentprofile-update.md)|[depIOSEnrollmentProfile](../resources/intune-enrollment-depiosenrollmentprofile.md)|[DepIOSEnrollmentProfile](../resources/intune-enrollment-depiosenrollmentprofile.md)オブジェクトのプロパティを更新します。|
 
-## <a name="properties"></a>プロパティ
-|プロパティ|種類|説明|
+## <a name="properties"></a>Properties
+|プロパティ|型|説明|
 |:---|:---|:---|
-|ID|String|[EnrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)から継承されるオブジェクトの GUID|
+|id|String|[EnrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)から継承されるオブジェクトの GUID|
 |displayName|String|[EnrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)から継承されるプロファイルの名前|
 |説明|String|[EnrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)から継承されるプロファイルの説明|
 |requiresUserAuthentication|ブール型|プロファイルに[enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)から継承されるのユーザー認証が必要なかどうかを示します|

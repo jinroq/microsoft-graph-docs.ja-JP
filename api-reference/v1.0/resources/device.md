@@ -2,12 +2,14 @@
 title: デバイス リソース型
 description: 組織に登録されているデバイスを表します。 デバイスは、Device Registration Service を使用するか、Intune によってクラウドで作成されます。 これは、多要素認証の条件付きアクセス ポリシーで使用されます。 該当するデバイスの範囲は、デスクトップやノート PC から携帯電話やタブレットに及びます。 directoryObject から継承します。
 localization_priority: Normal
-ms.openlocfilehash: 4b28b27439f911ff98f13e7d1ae88b873b1286f4
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: lleonard-msft
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: ab03eed26f5e34c2ac149815b3ba66b37fc2090c
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27811712"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27984998"
 ---
 # <a name="device-resource-type"></a>デバイス リソース型
 
@@ -34,12 +36,12 @@ ms.locfileid: "27811712"
 |[スキーマ拡張機能の値を追加する](/graph/extensibility-schema-groups) || スキーマ拡張機能の定義を作成し、それを使用してカスタマイズされた種類のデータをリソースに追加します。|
 
 ## <a name="properties"></a>プロパティ
-| プロパティ     | 種類   |説明|
+| プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
 |accountEnabled|ブール値| アカウントが有効な場合は **true**。それ以外の場合は **false**。必須。|
 |alternativeSecurityIds|alternativeSecurityId コレクション| 内部使用専用です。 null 許容ではありません。 |
 |approximateLastSignInDateTime|DateTimeOffset| Timestamp 型は、ISO 8601 形式を使用して日付と時刻の情報を表し、必ず UTC 時間です。 たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、次のようになります。`'2014-01-01T00:00:00Z'` 読み取り専用。 |
-|deviceId|文字列| 登録時に Azure の Device Registration Service により設定された一意の識別子。 |
+|deviceId|string| 登録時に Azure の Device Registration Service により設定された一意の識別子。 |
 |deviceMetadata|String| 内部使用専用です。 Null に設定します。 |
 |deviceVersion|Int32| 内部使用専用です。 |
 |displayName|String|デバイスの表示名。必須。 |

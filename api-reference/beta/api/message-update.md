@@ -3,12 +3,13 @@ title: メッセージを更新する
 description: メッセージ オブジェクトのプロパティを更新します。
 author: angelgolfer-ms
 localization_priority: Normal
-ms.openlocfilehash: fd0573ecb2e5410d8bbe0d0c557d4f3f78e0f131
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: outlook
+ms.openlocfilehash: 6553365ffd31c56348c930be5562ebd65abc734d
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27883048"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27977767"
 ---
 # <a name="update-message"></a>メッセージを更新する
 
@@ -33,14 +34,14 @@ PATCH /me/mailFolders/{id}/messages/{id}
 PATCH /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}
 ```
 ## <a name="request-headers"></a>要求ヘッダー
-| 名前       | 種類 | 説明|
+| 名前       | 型 | 説明|
 |:-----------|:------|:----------|
 | Authorization  | string  | ベアラー {トークン}。必須。 |
 | Content-Type | string  | エンティティ本文内のデータの性質です。必須。 |
 ## <a name="request-body"></a>要求本文
 要求本文で、更新する関連フィールドの値を指定します。 要求本文に含まれない既存のプロパティは、以前の値のままになるか、他のプロパティ値の変更に基づいて再計算されます。 最適なパフォーマンスを得るためには、変更されていない既存の値を含めないでください。 次のプロパティを更新することができます。
 
-| プロパティ     | 種類   |説明|
+| プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
 |bccRecipients|Recipient|メッセージの BCC 受信者。 |
 |body|ItemBody|メッセージの本文。 更新可能な場合にのみ isDraft = true です。|

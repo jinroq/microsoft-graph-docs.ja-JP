@@ -3,12 +3,13 @@ title: androidForWorkEnterpriseWiFiConfiguration リソースの種類
 description: このプロファイルの構成を提供することで、必要な Wi-fi のエンドポイントに接続する作業のデバイスの Android を指示できます。 指定する認証方法とセキュリティの種類必要 Wi-fi エンドポイントで行うことができます Wi-fi 接続シームレスなエンド ・ ユーザーのです。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 3ae773eae8e126b7146b1946676364094f2e8187
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 9b43e2dd024a22ea1157be7a357be85d5eab1453
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27894545"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27932813"
 ---
 # <a name="androidforworkenterprisewificonfiguration-resource-type"></a>androidForWorkEnterpriseWiFiConfiguration リソースの種類
 
@@ -29,10 +30,10 @@ ms.locfileid: "27894545"
 |[AndroidForWorkEnterpriseWiFiConfiguration を削除します。](../api/intune-deviceconfig-androidforworkenterprisewificonfiguration-delete.md)|なし|の[androidForWorkEnterpriseWiFiConfiguration](../resources/intune-deviceconfig-androidforworkenterprisewificonfiguration.md)を削除します。|
 |[AndroidForWorkEnterpriseWiFiConfiguration を更新します。](../api/intune-deviceconfig-androidforworkenterprisewificonfiguration-update.md)|[androidForWorkEnterpriseWiFiConfiguration](../resources/intune-deviceconfig-androidforworkenterprisewificonfiguration.md)|[AndroidForWorkEnterpriseWiFiConfiguration](../resources/intune-deviceconfig-androidforworkenterprisewificonfiguration.md)オブジェクトのプロパティを更新します。|
 
-## <a name="properties"></a>プロパティ
-|プロパティ|種類|説明|
+## <a name="properties"></a>Properties
+|プロパティ|型|説明|
 |:---|:---|:---|
-|ID|String|エンティティのキー。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
+|id|String|エンティティのキー。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |lastModifiedDateTime|DateTimeOffset|オブジェクトが最後に変更された DateTime。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |roleScopeTagIds|String コレクション|このエンティティ インスタンスのスコープのタグのリストです。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |supportsScopeTags|ブール型|デバイスの構成を基になるスコープのタグの割り当てをサポートしているかどうかを示します。 この値が false であり、エンティティをスコープ指定されたユーザーには表示されませんがある場合、ScopeTags プロパティに割り当てることは許可されていません。 これは、Silverlight で作成されたレガシ ポリシーに対して発生し、削除して、Azure ポータル内のポリシーを再作成することで解決できます。 このプロパティは読み取りのみ可能です。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|

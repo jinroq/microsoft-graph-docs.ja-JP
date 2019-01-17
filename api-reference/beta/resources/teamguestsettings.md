@@ -2,12 +2,14 @@
 title: teamGuestSettings リソースの種類
 description: 来園者が作成、更新、またはチーム内のチャンネルを削除するかどうかを構成するのに設定します。
 localization_priority: Normal
-ms.openlocfilehash: 15644f3761329589a4d770e777ae5fd63751e6be
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: nkramer
+ms.prod: microsoft-teams
+ms.openlocfilehash: d601ac704734f4c46e8b7bef9e8d3feb45905384
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27851542"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27987294"
 ---
 # <a name="teamguestsettings-resource-type"></a>teamGuestSettings リソースの種類
 
@@ -15,8 +17,8 @@ ms.locfileid: "27851542"
 
 来園者が作成、更新、または[チーム](team.md)内のチャンネルを削除するかどうかを構成するのに設定します。
 
-## <a name="properties"></a>プロパティ
-| プロパティ     | 種類   |説明|
+## <a name="properties"></a>Properties
+| プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
 |allowCreateUpdateChannels|ブール型|True の場合、来園者のセットを追加したりチャンネルを更新する場合。|
 |allowDeleteChannels|ブール型|場合は true を指定すると、来園者に設定するには、チャンネルを削除できます。|

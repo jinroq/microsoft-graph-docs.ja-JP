@@ -3,12 +3,13 @@ title: iosVppApp リソース タイプ
 description: iOS ボリューム購入プログラム (VPP) アプリのプロパティと継承されたプロパティが含まれます。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 8c85fe2220a9bbc9df6933951c779c5d898eadab
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 88e6df1df064e43d47b657a38b534ca6ebdd875c
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27888750"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27987385"
 ---
 # <a name="iosvppapp-resource-type"></a>iosVppApp リソース タイプ
 
@@ -32,10 +33,10 @@ iOS ボリューム購入プログラム (VPP) アプリのプロパティと継
 |[revokeUserLicense アクション](../api/intune-apps-iosvppapp-revokeuserlicense.md)|なし|Revoke が割り当てられている iOS VPP ユーザー ライセンスは、アプリケーションを指定します。|
 |[revokeDeviceLicense アクション](../api/intune-apps-iosvppapp-revokedevicelicense.md)|なし|取り消しが割り当てられている iOS の VPP デバイスのライセンスは、アプリケーションを指定します。|
 
-## <a name="properties"></a>プロパティ
-|プロパティ|種類|説明|
+## <a name="properties"></a>Properties
+|プロパティ|型|説明|
 |:---|:---|:---|
-|ID|String|エンティティのキー。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|
+|id|String|エンティティのキー。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|
 |displayName|String|管理者が提供またはインポートしたアプリのタイトル。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|
 |説明|String|アプリの説明。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|
 |publisher|String|アプリの発行元。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|

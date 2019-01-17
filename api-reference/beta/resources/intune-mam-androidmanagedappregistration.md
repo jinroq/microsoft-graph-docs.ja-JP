@@ -2,12 +2,14 @@
 title: androidManagedAppRegistration リソースの種類
 description: 特定のユーザーに対する、Android アプリの管理機能との同期の詳細を表します。
 localization_priority: Normal
-ms.openlocfilehash: d4e922e2eb9cd6c3dee0fe0f4de5bebd58f6366a
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: tfitzmac
+ms.prod: intune
+ms.openlocfilehash: 386ac37d2b3882e64f1289e4795ec846dd441ff3
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27809612"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27967162"
 ---
 # <a name="androidmanagedappregistration-resource-type"></a>androidManagedAppRegistration リソースの種類
 
@@ -27,8 +29,8 @@ ManagedAppRegistration リソースは、組織のメンバーに使用される
 |[androidManagedAppRegistration の取得](../api/intune-mam-androidmanagedappregistration-get.md)|[androidManagedAppRegistration](../resources/intune-mam-androidmanagedappregistration.md)|[androidManagedAppRegistration](../resources/intune-mam-androidmanagedappregistration.md) オブジェクトのプロパティとリレーションシップを読み取ります。|
 |[androidManagedAppRegistration の作成](../api/intune-mam-androidmanagedappregistration-create.md)|[androidManagedAppRegistration](../resources/intune-mam-androidmanagedappregistration.md)|新しい [androidManagedAppRegistration](../resources/intune-mam-androidmanagedappregistration.md) オブジェクトを作成します。|
 
-## <a name="properties"></a>プロパティ
-|プロパティ|種類|説明|
+## <a name="properties"></a>Properties
+|プロパティ|型|説明|
 |:---|:---|:---|
 |createdDateTime|DateTimeOffset|作成日時 ([managedAppRegistration](../resources/intune-mam-managedappregistration.md) から継承)。|
 |lastSyncDateTime|DateTimeOffset|アプリが管理サービスと最後に同期した日時。 [managedAppRegistration](../resources/intune-mam-managedappregistration.md) から継承します|

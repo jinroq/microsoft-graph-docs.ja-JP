@@ -3,12 +3,13 @@ title: managedDevice リソース タイプ
 description: Intune 経由で管理または事前登録されるデバイス
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: d08b0559065b3977978621004b290a87879cdc70
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 38c96bb3c2a4a5ccfe9ce7dc40b247af79c428a7
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27869217"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27957719"
 ---
 # <a name="manageddevice-resource-type"></a>managedDevice リソース タイプ
 
@@ -46,10 +47,10 @@ Intune 経由で管理または事前登録されるデバイス
 |[updateWindowsDeviceAccount action](../api/intune-devices-manageddevice-updatewindowsdeviceaccount.md)|なし|まだ文書化されていません|
 |[revokeAppleVppLicenses アクション](../api/intune-devices-manageddevice-revokeapplevpplicenses.md)|なし|デバイスのすべてのアップル Vpp ライセンスを失効させる|
 
-## <a name="properties"></a>プロパティ
-|プロパティ|種類|説明|
+## <a name="properties"></a>Properties
+|プロパティ|型|説明|
 |:---|:---|:---|
-|ID|String|デバイスの一意識別子|
+|id|String|デバイスの一意識別子|
 |userId|String|デバイスに関連付けられているユーザーの一意の識別子|
 |deviceName|String|デバイスの名前|
 |hardwareInformation|[hardwareInformation](../resources/intune-devices-hardwareinformation.md)|デバイスのハードウェアの詳細。  記憶域の製造元、シリアル番号などの情報が含まれています。|

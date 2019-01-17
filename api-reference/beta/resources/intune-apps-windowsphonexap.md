@@ -3,12 +3,13 @@ title: windowsPhoneXAP リソースの種類
 description: プロパティと Windows Phone XAP 基幹業務アプリケーションの継承されたプロパティが含まれています。
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 29d728198a7da0cba0733eb2ad48a6951ddf4ae6
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 8940b84dd5b82529aa86c870f3d5638d046a9939
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27890280"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27975408"
 ---
 # <a name="windowsphonexap-resource-type"></a>windowsPhoneXAP リソースの種類
 
@@ -29,10 +30,10 @@ ms.locfileid: "27890280"
 |[WindowsPhoneXAP を削除します。](../api/intune-apps-windowsphonexap-delete.md)|なし|の[windowsPhoneXAP](../resources/intune-apps-windowsphonexap.md)を削除します。|
 |[WindowsPhoneXAP を更新します。](../api/intune-apps-windowsphonexap-update.md)|[windowsPhoneXAP](../resources/intune-apps-windowsphonexap.md)|[WindowsPhoneXAP](../resources/intune-apps-windowsphonexap.md)オブジェクトのプロパティを更新します。|
 
-## <a name="properties"></a>プロパティ
-|プロパティ|種類|説明|
+## <a name="properties"></a>Properties
+|プロパティ|型|説明|
 |:---|:---|:---|
-|ID|String|エンティティのキー。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|
+|id|String|エンティティのキー。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|
 |displayName|String|管理者が提供またはインポートしたアプリのタイトル。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|
 |説明|String|アプリの説明。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|
 |publisher|String|アプリの発行元。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|
