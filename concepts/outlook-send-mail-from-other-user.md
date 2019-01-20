@@ -4,12 +4,13 @@ description: 別のユーザーまたは Microsoft Graph の共有メールボ�
 author: jasonjoh
 localization_priority: Priority
 ms.prod: outlook
-ms.openlocfilehash: d384e060060804ddbafb03ea054b7609bbccd71b
-ms.sourcegitcommit: d9d8b908061b3680e8a52790a6c9aaf8e51ceea0
+ms.date: 01/16/2019
+ms.openlocfilehash: d25399ca6b30390b49b69f6265f1da2f93e0a89e
+ms.sourcegitcommit: 02a3ae7f3070d38d949158808545003e85ae8fe7
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28685684"
+ms.lasthandoff: 01/18/2019
+ms.locfileid: "28726548"
 ---
 # <a name="send-outlook-messages-from-another-user"></a>別のユーザーを差出人として Outlook メッセージを送信する
 
