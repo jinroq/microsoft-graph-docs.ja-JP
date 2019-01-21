@@ -1,20 +1,21 @@
 ---
 title: Microsoft Graph でのファイルの作業
-description: OneDrive、ビジネス、および SharePoint の OneDrive の間でドキュメント ライブラリのファイルに接続しているアプリケーションを作成するのにには、Microsoft Graph を使用します。
+description: Microsoft Graph を使用して、OneDrive、OneDrive for Business、および SharePoint のドキュメント ライブラリに配置されるファイルに接続するアプリケーションを作成できます。
 localization_priority: Priority
-ms.openlocfilehash: 71b9310fb8af6fa8f4721f0bbbe52d727e7a0d65
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
-ms.translationtype: MT
+ms.prod: sharepoint
+ms.openlocfilehash: 89798778fff0297ffce607d1546a177dd90d357e
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27818054"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27918022"
 ---
 # <a name="working-with-files-in-microsoft-graph"></a>Microsoft Graph でのファイルの作業
 
-OneDrive、ビジネス、および SharePoint の OneDrive の間でドキュメント ライブラリのファイルに接続しているアプリケーションを作成するのにには、Microsoft Graph を使用します。
-Microsoft Graph からファイル共有の複雑なシナリオにユーザーのドキュメントを格納するだけで、Office 365 に格納されているファイルにさまざまなエクスペリエンスを構築できます。
+Microsoft Graph を使用して、OneDrive、OneDrive for Business、および SharePoint のドキュメント ライブラリに配置されるファイルに接続するアプリケーションを作成できます。
+Microsoft Graph を使用することで、ユーザーのドキュメントを単に格納することから、複雑なファイル共有の複雑なシナリオまで、Office 365 に格納されるファイルに関するさまざまなエクスペリエンスを構築できます。
 
-Microsoft Graph では、ファイルを操作するための 2 種類のリソースが公開されています。
+Microsoft Graph では、以下のファイルを操作するための 2 種類のリソースが公開されています。
 
 * [Drive](drive.md) - ドキュメント ライブラリやユーザーの OneDrive など、ファイルの論理コンテナーを表します。
 * [DriveItem](driveitem.md) -ドキュメント、写真、ビデオ、フォルダーなど、ドライブ内のアイテムを表します。
@@ -69,8 +70,8 @@ Microsoft Graph では、ファイルを操作するための 2 種類のリソ�
 | `/users/{user-id}/drive`           | 別のユーザーの一意の ID を使用してそのユーザーの OneDrive にアクセスします。
 | `/groups/{group-id}/drive`         | グループの一意の ID を使用してグループの既定のドキュメント ライブラリにアクセスします。
 | `/shares/{share-id}`               | **sharedId** や共有 URL を使用して **DriveItem** にアクセスします。
-| `/sites/{site-id}/drive`           | (ドキュメント ライブラリ) を**ドライブ**を指定した[SharePoint][] [サイト][]の既定をアクセスします。
-| `/sites/{site-id}/drives`          | **ドライブ**(ドキュメント ライブラリ) 指定した[SharePoint][] [サイト][]の下の列挙します。
+| `/sites/{site-id}/drive`           | 指定した [SharePoint][] [サイト][]の既定の**ドライブ** (ドキュメント ライブラリ) にアクセスします
+| `/sites/{site-id}/drives`          | [SharePoint][] [サイト][]の下にある**ドライブ** (ドキュメント ライブラリ) を列挙します
 
 一意の ID を使用して **Drive** 内の **DriveItem** にアドレス指定することに加え、既知のリソースからの相対パスを使用することによってアプリで **DriveItem** にアドレス指定することもできます。パスを使用してアドレス指定するには、コロン (`:`) を使用して相対パスをエスケープします。次の表に、コロンを使用してパスでアイテムをアドレス指定するいくつかの方法を示します。
 
@@ -83,7 +84,7 @@ Microsoft Graph では、ファイルを操作するための 2 種類のリソ�
 
 ## <a name="drive-resource"></a>ドライブ リソース
 
-[ドライブのリソース](drive.md)は、ユーザーの OneDrive または[SharePoint][]ドキュメント ライブラリ内で最上位オブジェクトです。
+[ドライブ リソース](drive.md)は、ユーザーの OneDrive または [SharePoint][] ドキュメント ライブラリ内の最上位のオブジェクトです。
 ほぼすべてのファイル操作は、特定のドライブ リソースをアドレス指定することによって開始されます。
 
 ドライブの一意の ID または [User](user.md)、[Group](group.md)、組織の既定のドライブを使用して、ドライブ リソースをアドレス指定できます。 
@@ -92,7 +93,7 @@ Microsoft Graph では、ファイルを操作するための 2 種類のリソ�
 
 [DriveItem](driveitem.md) は、ドライブのファイル システム内のオブジェクトです。`/items/{item-id}` 構文で **id** を使用して、または `/root:/path/to/item/` 構文でファイル システム パスを使用して、それらにアクセスできます。
 
-DriveItem には、アイテムの ID と機能に関するデータを提供する_ファセット_が存在します。
+DriveItem には、アイテムの id および機能に関するデータを提供する_ファセット_が存在します。
 
 **folder** ファセットを持つ DriveItem は、アイテムのコンテナーとして機能し、フォルダーの下のアイテムのコレクションを指す**子**参照を持ちます。
 
@@ -109,4 +110,4 @@ OneDrive と SharePoint のドキュメント ライブラリの最も一般的�
 Microsoft Graph では、アプリで共有リンクから[共有コンテンツに直接アクセス](../api/shares-get.md)することもできます。
 
 [SharePoint]: sharepoint.md
-[site]: site.md
+[サイト]: site.md
