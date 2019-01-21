@@ -102,7 +102,9 @@ items:
                 href: outlook-share-messages-folders.md
               - name: 不変 ID (プレビュー)
                 href: outlook-immutable-id.md
-          - name: メモ
+              - name: 別のユーザーからのメールを送信する
+                href: outlook-send-mail-from-other-user.md
+          - name: 備考
             href: integrate-with-onenote.md
             items:
               - name: OneNote のコンテンツを入手する
