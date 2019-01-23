@@ -1,0 +1,84 @@
+---
+title: リスト groupPolicyPresentationMultiTextBoxes
+description: GroupPolicyPresentationMultiTextBox オブジェクトのプロパティと関係を一覧表示します。
+localization_priority: Normal
+author: tfitzmac
+ms.prod: Intune
+ms.openlocfilehash: 53b6ae2a3fd78f7db815ea4c6d01a7b0119204d5
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.translationtype: MT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29430400"
+---
+# <a name="list-grouppolicypresentationmultitextboxes"></a>リスト groupPolicyPresentationMultiTextBoxes
+
+> **重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
+
+> **注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
+
+[GroupPolicyPresentationMultiTextBox](../resources/intune-grouppolicy-grouppolicypresentationmultitextbox.md)オブジェクトのプロパティと関係を一覧表示します。
+
+## <a name="prerequisites"></a>前提条件
+この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/concepts/permissions-reference.md)」を参照してください。
+
+|アクセス許可の種類|アクセス許可 (特権の大きいものから小さいものへ)|
+|:---|:---|
+|委任 (職場または学校のアカウント)|DeviceManagementServiceConfig.ReadWrite.All、DeviceManagementServiceConfig.Read.All|
+|委任 (個人用 Microsoft アカウント)|サポートされていません。|
+|アプリケーション|サポートされていません。|
+
+## <a name="http-request"></a>HTTP 要求
+<!-- {
+  "blockType": "ignored"
+}
+-->
+``` http
+GET /deviceManagement/groupPolicyConfigurations/{groupPolicyConfigurationId}/definitionValues/{groupPolicyDefinitionValueId}/presentationValues/{groupPolicyPresentationValueId}/presentation/definition/presentations
+```
+
+## <a name="request-headers"></a>要求ヘッダー
+|ヘッダー|値|
+|:---|:---|
+|Authorization|ベアラー &lt;トークン&gt; が必須。|
+|Accept|application/json|
+
+## <a name="request-body"></a>要求本文
+このメソッドには、要求本文を指定しません。
+
+## <a name="response"></a>応答
+かどうかは成功すると、このメソッドが返されます、`200 OK`応答コードおよび応答の本文に[groupPolicyPresentationMultiTextBox](../resources/intune-grouppolicy-grouppolicypresentationmultitextbox.md)オブジェクトのコレクションです。
+
+## <a name="example"></a>例
+
+### <a name="request"></a>要求
+以下は、要求の例です。
+``` http
+GET https://graph.microsoft.com/beta/deviceManagement/groupPolicyConfigurations/{groupPolicyConfigurationId}/definitionValues/{groupPolicyDefinitionValueId}/presentationValues/{groupPolicyPresentationValueId}/presentation/definition/presentations
+```
+
+### <a name="response"></a>応答
+以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。
+``` http
+HTTP/1.1 200 OK
+Content-Type: application/json
+Content-Length: 339
+
+{
+  "value": [
+    {
+      "@odata.type": "#microsoft.graph.groupPolicyPresentationMultiTextBox",
+      "label": "Label value",
+      "id": "381ac035-c035-381a-35c0-1a3835c01a38",
+      "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
+      "required": true,
+      "maxLength": 9,
+      "maxStrings": 10
+    }
+  ]
+}
+```
+
+
+
+
