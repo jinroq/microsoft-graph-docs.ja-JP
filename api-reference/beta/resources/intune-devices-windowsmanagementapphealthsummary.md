@@ -1,23 +1,24 @@
 ---
 title: windowsManagementAppHealthSummary リソースの種類
 description: Windows 管理アプリケーションの健康状態の概要のプロパティが含まれています。
-author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: d2e8dbc0af1d814ecd47210c4def5a7c7e02edd9
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: tfitzmac
+ms.prod: Intune
+ms.openlocfilehash: 3ca46f61259b8b956439c541bf8d5703a35aa93b
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27967459"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29393852"
 ---
 # <a name="windowsmanagementapphealthsummary-resource-type"></a>windowsManagementAppHealthSummary リソースの種類
 
-> **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。
+> **重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
 
-> **注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
+> **注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 Windows 管理アプリケーションの健康状態の概要のプロパティが含まれています。
+
 ## <a name="methods"></a>メソッド
 |メソッド|戻り値の型|説明|
 |:---|:---|:---|
@@ -25,15 +26,16 @@ Windows 管理アプリケーションの健康状態の概要のプロパティ
 |[WindowsManagementAppHealthSummary を更新します。](../api/intune-devices-windowsmanagementapphealthsummary-update.md)|[windowsManagementAppHealthSummary](../resources/intune-devices-windowsmanagementapphealthsummary.md)|[WindowsManagementAppHealthSummary](../resources/intune-devices-windowsmanagementapphealthsummary.md)オブジェクトのプロパティを更新します。|
 
 ## <a name="properties"></a>プロパティ
-|プロパティ|種類|説明|
+|プロパティ|型|説明|
 |:---|:---|:---|
-|ID|String|Windows 管理アプリケーションの稼働状態の概要エンティティのキーです。|
+|id|String|Windows 管理アプリケーションの稼働状態の概要エンティティのキーです。|
 |healthyDeviceCount|Int32|正常なデバイスの数。|
 |unhealthyDeviceCount|Int32|問題のあるデバイスの数。|
 |unknownDeviceCount|Int32|不明なデバイスの数。|
 
 ## <a name="relationships"></a>リレーションシップ
 なし
+
 ## <a name="json-representation"></a>JSON 表記
 以下は、リソースの JSON 表記です。
 <!-- {
@@ -51,7 +53,6 @@ Windows 管理アプリケーションの健康状態の概要のプロパティ
   "unknownDeviceCount": 1024
 }
 ```
-
 
 
 

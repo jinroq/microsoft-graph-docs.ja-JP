@@ -4,18 +4,18 @@ description: 新しい deviceCategory オブジェクトを作成します。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: fe2d928f784eaa370c964761e54c9ea4e2c4d006
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 71b36a94624140586f2275679df91c4ed7374335
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27942963"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29395273"
 ---
 # <a name="create-devicecategory"></a>deviceCategory の作成
 
-> **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。
+> **重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
 
-> **注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
+> **注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 新しい [deviceCategory](../resources/intune-shared-devicecategory.md) オブジェクトを作成します。
 
@@ -54,7 +54,7 @@ POST /deviceManagement/deviceCategories
 
 |プロパティ|型|説明|
 |:---|:---|:---|
-|ID|String|デバイス カテゴリの一意識別子。 読み取り専用です。|
+|id|String|デバイス カテゴリの一意識別子。 読み取り専用です。|
 |**Obboarding**|
 |説明|String|デバイス カテゴリに関するオプションの説明。|
 |displayName|String|デバイス カテゴリの表示名。|

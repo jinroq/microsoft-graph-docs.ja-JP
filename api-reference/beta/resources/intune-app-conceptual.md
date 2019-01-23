@@ -4,12 +4,12 @@ description: Microsoft Intune のアプリ保護ポリシーは、会社のデ�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: 2a701dfc36615facdf64e7588f8688eb495906a3
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 90764386d1241a0cec7552435ebd605d61dcae5b
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27991154"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29395007"
 ---
 # <a name="how-to-protect-your-company-app-data-with-microsoft-intune"></a>Microsoft Intune で会社のアプリ データを保護する方法
 
@@ -24,6 +24,7 @@ Intune のアプリ保護ポリシーを使用して、会社のデータを保�
 次の Graph リソースを使用して、Intune でのアプリ保護ポリシーを管理できます。
 
 - [Android デバイスの所有者の登録のプロファイル](intune-androidforwork-androiddeviceownerenrollmentprofile.md)
+- [Android 登録会社コード](intune-androidforwork-androidenrollmentcompanycode.md)
 - [作業アプリケーションのアプリ](intune-apps-androidforworkapp.md)
 - [Android for Work アプリの構成スキーマ](intune-androidforwork-androidforworkappconfigurationschema.md)
 - [Android for Work アプリの構成スキーマ アイテム](intune-androidforwork-androidforworkappconfigurationschemaitem.md)
@@ -73,6 +74,10 @@ Intune のアプリ保護ポリシーを使用して、会社のデータを保�
 - [iOS VPP アプリケーション アクションの結果のライセンスを失効させる](intune-apps-iosvppapprevokelicensesactionresult.md)
 - [iOS VPP の電子書籍](intune-books-iosvppebook.md)
 - [iOS VPP 電子書籍の割り当て](intune-books-iosvppebookassignment.md)
+- [Mac os VPP のアプリ](intune-apps-macosvppapp.md)
+- [Mac os VPP のアプリケーションが割り当てられているライセンス](intune-apps-macosvppappassignedlicense.md)
+- [Mac os VPP アプリケーションの割り当ての設定](intune-apps-macosvppappassignmentsettings.md)
+- [Mac os VPP アプリケーション アクションの結果のライセンスを失効させる](intune-apps-macosvppapprevokelicensesactionresult.md)
 - [macOS LOB アプリケーション](intune-apps-macoslobapp.md)
 - [macOS LOB の子アプリケーション](intune-apps-macoslobchildapp.md)
 - [macOS 最小オペレーティング システム](intune-apps-macosminimumoperatingsystem.md)
@@ -111,10 +116,17 @@ Intune のアプリ保護ポリシーを使用して、会社のデータを保�
 - [モバイル アプリケーションの公開状況](intune-apps-mobileapppublishingstate.md)
 - [モバイルには、アプリケーションが含まれています。](intune-apps-mobilecontainedapp.md)
 - [モバイル LOB アプリ](intune-apps-mobilelobapp.md)
+- [Office クライアントのチェックイン ステータス](intune-cirrus-officeclientcheckinstatus.md)
+- [Office クライアントの構成](intune-cirrus-officeclientconfiguration.md)
+- [Office クライアントの構成の割り当て](intune-cirrus-officeclientconfigurationassignment.md)
+- [Office の構成](intune-cirrus-officeconfiguration.md)
+- [Office 設定の割り当て対象](intune-cirrus-officeconfigurationassignmenttarget.md)
+- [Office 構成グループの割り当て先](intune-cirrus-officeconfigurationgroupassignmenttarget.md)
 - [Office プロダクト id](intune-apps-officeproductid.md)
 - [Office スイートのアプリケーション](intune-apps-officesuiteapp.md)
 - [Office スイートのインストールの進行状況の表示レベル](intune-apps-officesuiteinstallprogressdisplaylevel.md)
 - [Office 更新プログラムのチャネル](intune-apps-officeupdatechannel.md)
+- [Office ユーザーのチェックイン概要](intune-cirrus-officeusercheckinsummary.md)
 - [結果のアプリケーションの状態の詳細](intune-apps-resultantappstatedetail.md)
 - [コード署名証明書のシマンテック社](intune-apps-symanteccodesigningcertificate.md)
 - [ユーザー アプリケーションのインストールのステータス](intune-apps-userappinstallstatus.md)
@@ -122,6 +134,7 @@ Intune のアプリ保護ポリシーを使用して、会社のデータを保�
 - [VPP ライセンスの種類](intune-apps-vpplicensingtype.md)
 - [Web アプリ](intune-apps-webapp.md)
 - [LOB アプリケーションの Win32](intune-apps-win32lobapp.md)
+- [Win32 の LOB アプリケーションの割り当ての設定](intune-apps-win32lobappassignmentsettings.md)
 - [Win32 の LOB アプリケーションの検出](intune-apps-win32lobappdetection.md)
 - [Win32 の LOB アプリケーションの検出演算子](intune-apps-win32lobappdetectionoperator.md)
 - [Win32 の LOB アプリケーション ファイルのシステムの検出](intune-apps-win32lobappfilesystemdetection.md)
@@ -129,6 +142,7 @@ Intune のアプリ保護ポリシーを使用して、会社のデータを保�
 - [Win32 の LOB アプリケーション エクスペリエンスをインストールします。](intune-apps-win32lobappinstallexperience.md)
 - [Win32 の LOB アプリケーションの msi の情報](intune-apps-win32lobappmsiinformation.md)
 - [Win32 の LOB アプリケーションの msi パッケージの種類](intune-apps-win32lobappmsipackagetype.md)
+- [Win32 の LOB アプリケーションの通知](intune-apps-win32lobappnotification.md)
 - [アプリケーション電源シェル スクリプトの検出を Win32 の LOB](intune-apps-win32lobapppowershellscriptdetection.md)
 - [Win32 の LOB アプリケーションの製品コードの検出](intune-apps-win32lobappproductcodedetection.md)
 - [Win32 の LOB アプリケーションのレジストリの検出](intune-apps-win32lobappregistrydetection.md)
@@ -141,6 +155,8 @@ Intune のアプリ保護ポリシーを使用して、会社のデータを保�
 - [Windows デバイスの種類](intune-apps-windowsdevicetype.md)
 - [最小構成の Windows オペレーティング システム](intune-apps-windowsminimumoperatingsystem.md)
 - [Windows Mobile MSI](intune-apps-windowsmobilemsi.md)
+- [Windows office クライアントの構成](intune-cirrus-windowsofficeclientconfiguration.md)
+- [Windows office クライアントのセキュリティの構成](intune-cirrus-windowsofficeclientsecurityconfiguration.md)
 - [Windows パッケージ情報](intune-apps-windowspackageinformation.md)
 - [Windows Phone 8.1 AppX](intune-apps-windowsphone81appx.md)
 - [Windows Phone 8.1 AppX のバンドル](intune-apps-windowsphone81appxbundle.md)

@@ -1,23 +1,24 @@
 ---
 title: officeSuiteApp リソースの種類
 description: Office365 スイート アプリケーションのプロパティと継承されたプロパティが含まれています。
-author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: f4e59f9e9167d26a626b1de44c89ca8ce6328de1
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: tfitzmac
+ms.prod: Intune
+ms.openlocfilehash: 2be565af88961ebafe4ed978524763797a3fe475
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27916174"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29395532"
 ---
 # <a name="officesuiteapp-resource-type"></a>officeSuiteApp リソースの種類
 
-> **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。
+> **重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
 
-> **注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
+> **注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 Office365 スイート アプリケーションのプロパティと継承されたプロパティが含まれています。
+
 
 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します
 
@@ -31,9 +32,9 @@ Office365 スイート アプリケーションのプロパティと継承され
 |[OfficeSuiteApp を更新します。](../api/intune-apps-officesuiteapp-update.md)|[officeSuiteApp](../resources/intune-apps-officesuiteapp.md)|[OfficeSuiteApp](../resources/intune-apps-officesuiteapp.md)オブジェクトのプロパティを更新します。|
 
 ## <a name="properties"></a>プロパティ
-|プロパティ|種類|説明|
+|プロパティ|型|説明|
 |:---|:---|:---|
-|ID|String|エンティティのキー。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|
+|id|String|エンティティのキー。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|
 |displayName|String|管理者が提供またはインポートしたアプリのタイトル。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|
 |説明|String|アプリの説明。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|
 |publisher|String|アプリの発行元。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|
@@ -48,17 +49,20 @@ Office365 スイート アプリケーションのプロパティと継承され
 |notes|String|アプリ用のメモ。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|
 |uploadState|Int32|アップロードの状態です。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|
 |publishingState|[mobileAppPublishingState](../resources/intune-apps-mobileapppublishingstate.md)|アプリの発行の状態。 アプリが発行されていない限り、アプリを割り当てることができません。 [MobileApp](../resources/intune-apps-mobileapp.md)から継承されます。 可能な値は、`notPublished`、`processing`、`published` です。|
-|autoAcceptEula|ブール型|エンド ・ ユーザーのデバイスに自動的に使用許諾契約書をそのまま使用する値。|
+|isAssigned|Boolean|アプリケーションが少なくとも 1 つのグループに割り当てられているかどうかを示す値です。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|
+|roleScopeTagIds|String コレクション|このモバイル アプリケーションのスコープのタグ id の一覧です。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|
+|autoAcceptEula|Boolean|エンド ・ ユーザーのデバイスに自動的に使用許諾契約書をそのまま使用する値。|
 |productIds|[officeProductId](../resources/intune-apps-officeproductid.md)コレクション|Office365 スイート SKU を表すプロダクト Id です。|
 |excludedApps|[excludedApps](../resources/intune-apps-excludedapps.md)|選択した Office365 製品 id。 から除外されている場合、アプリケーションを表すためのプロパティ|
-|useSharedComputerActivation|ブール型|Office365 アプリケーション スイートではなく、共有のコンピューターのライセンス認証が使用されるかどうかを表すプロパティです。|
+|useSharedComputerActivation|Boolean|Office365 アプリケーション スイートではなく、共有のコンピューターのライセンス認証が使用されるかどうかを表すプロパティです。|
 |updateChannel|[officeUpdateChannel](../resources/intune-apps-officeupdatechannel.md)|Office365 更新チャネルを表すプロパティです。 可能な値は、`none`、`current`、`deferred`、`firstReleaseCurrent`、`firstReleaseDeferred` です。|
-|officePlatformArchitecture|[windowsArchitecture](../resources/intune-apps-windowsarchitecture.md)|Office365 アプリケーション スイートのバージョンを表すプロパティです。 可能な値は、`none`、`x86`、`x64`、`arm`、`neutral` です。|
+|officePlatformArchitecture|[windowsArchitecture](../resources/intune-apps-windowsarchitecture.md)|Office365 アプリケーション スイートのバージョンを表すプロパティです。 使用可能な値: `none`、`x86`、`x64`、`arm`、`neutral`、`arm64`。|
 |localesToInstall|String コレクション|インストールされているロケールを表すプロパティ Office365 からアプリケーションがインストールされています。 標準の RFC 6033 を使用します。 Ref。https://technet.microsoft.com/en-us/library/cc179219(v=office.16).aspx|
 |installProgressDisplayLevel|[officeSuiteInstallProgressDisplayLevel](../resources/intune-apps-officesuiteinstallprogressdisplaylevel.md)|デバイスのインストール中のセットアップの UI の表示のレベルを指定します。 使用可能な値は、`none`、`full` です。|
-|shouldUninstallOlderVersionsOfOffice|ブール型|Office365 のアプリケーション スイートをかデバイスに配置する場合は、既存の Office MSI をアンインストールするかどうかを決定するプロパティ。|
+|shouldUninstallOlderVersionsOfOffice|Boolean|Office365 のアプリケーション スイートをかデバイスに配置する場合は、既存の Office MSI をアンインストールするかどうかを決定するプロパティ。|
 |targetVersion|String|デバイス上に配置されたままする必要があります Office365 アプリケーション スイートの特定のターゲットのバージョンを表すプロパティです。|
 |updateVersion|String|ターゲットの特定のバージョンで Office365 アプリケーション スイートの利用可能な更新プログラムのバージョンを表すプロパティです。|
+|officeConfigurationXml|Binary|Office 用リソースのアプリケーションに指定できる XML 構成ファイルを表すプロパティです。 その他のすべてのプロパティに優先します。 存在する場合、XML 構成ファイルを使用してアプリケーションを作成します。|
 
 ## <a name="relationships"></a>リレーションシップ
 |リレーションシップ|型|説明|
@@ -99,6 +103,10 @@ Office365 スイート アプリケーションのプロパティと継承され
   "notes": "String",
   "uploadState": 1024,
   "publishingState": "String",
+  "isAssigned": true,
+  "roleScopeTagIds": [
+    "String"
+  ],
   "autoAcceptEula": true,
   "productIds": [
     "String"
@@ -128,10 +136,10 @@ Office365 スイート アプリケーションのプロパティと継承され
   "installProgressDisplayLevel": "String",
   "shouldUninstallOlderVersionsOfOffice": true,
   "targetVersion": "String",
-  "updateVersion": "String"
+  "updateVersion": "String",
+  "officeConfigurationXml": "binary"
 }
 ```
-
 
 
 

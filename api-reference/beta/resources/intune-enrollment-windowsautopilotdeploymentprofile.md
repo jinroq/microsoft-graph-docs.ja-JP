@@ -1,23 +1,24 @@
 ---
 title: windowsAutopilotDeploymentProfile リソースの種類
 description: Windows 自動操縦装置の配置のプロファイル
-author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 60d72a63cfd4e062c312aeda89a37937b7e03041
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: tfitzmac
+ms.prod: Intune
+ms.openlocfilehash: 7f97603980f4e76c4dd2f63287822a1e8e984ded
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27949396"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29394111"
 ---
 # <a name="windowsautopilotdeploymentprofile-resource-type"></a>windowsAutopilotDeploymentProfile リソースの種類
 
-> **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。
+> **重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
 
-> **注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
+> **注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 Windows 自動操縦装置の配置のプロファイル
+
 ## <a name="methods"></a>メソッド
 |メソッド|戻り値の型|説明|
 |:---|:---|:---|
@@ -25,9 +26,9 @@ Windows 自動操縦装置の配置のプロファイル
 |[assign action](../api/intune-enrollment-windowsautopilotdeploymentprofile-assign.md)|なし|まだ文書化されていません|
 
 ## <a name="properties"></a>プロパティ
-|プロパティ|種類|説明|
+|プロパティ|型|説明|
 |:---|:---|:---|
-|ID|String|プロファイル キー|
+|id|String|プロファイル キー|
 |displayName|String|プロファイルの名前|
 |説明|String|プロファイルの説明|
 |language|String|デバイスで構成されている言語|
@@ -84,7 +85,6 @@ Windows 自動操縦装置の配置のプロファイル
   "deviceNameTemplate": "String"
 }
 ```
-
 
 
 

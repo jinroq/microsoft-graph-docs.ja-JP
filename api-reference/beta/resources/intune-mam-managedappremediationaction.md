@@ -1,29 +1,29 @@
 ---
 title: managedAppRemediationAction 列挙型
 description: 管理者では、マネージ アプリケーションに適用するアクションを開始します。
-author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 1abfe8e05eaa93d7588ae38e2fd5944a106fca32
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: tfitzmac
+ms.prod: Intune
+ms.openlocfilehash: b46b0a9ca4afd3a086b04aa4db29c45383fcaaea
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27967155"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29394867"
 ---
 # <a name="managedappremediationaction-enum-type"></a>managedAppRemediationAction 列挙型
 
-> **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。
+> **重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
 
-> **注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
+> **注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 管理者では、マネージ アプリケーションに適用するアクションを開始します。
+
 ## <a name="members"></a>メンバー
 |メンバー|値|説明|
 |:---|:---|:---|
 |ブロック|0|アプリケーションと対応する会社のデータをブロックします。|
 |ワイプ|1|アプリケーションと、対応する会社のデータをワイプするのには|
-
 
 
 

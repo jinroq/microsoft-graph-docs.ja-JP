@@ -1,30 +1,30 @@
 ---
 title: vpnTrafficRuleAppType 列挙型
 description: VPN トラフィックの規則が関連付けられているアプリケーションの種類を示します。
-author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 6adf30f981bcb3ee4d57410a63419b29ac4184cd
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: tfitzmac
+ms.prod: Intune
+ms.openlocfilehash: 061cb5701830939576f5b9a649c73b4d44eada18
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27937743"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29396022"
 ---
 # <a name="vpntrafficruleapptype-enum-type"></a>vpnTrafficRuleAppType 列挙型
 
-> **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。
+> **重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
 
-> **注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
+> **注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 VPN トラフィックの規則が関連付けられているアプリケーションの種類を示します。
+
 ## <a name="members"></a>メンバー
 |メンバー|値|説明|
 |:---|:---|:---|
 |none|0|トラフィックの規則は、アプリケーションに関連付けられているではありません。|
 |デスクトップ|1|トラフィックの規則では、デスクトップ アプリケーションに関連付けられます。|
 |ユニバーサル|2|トラフィックの規則では、汎用のアプリケーションに関連付けられます。|
-
 
 
 

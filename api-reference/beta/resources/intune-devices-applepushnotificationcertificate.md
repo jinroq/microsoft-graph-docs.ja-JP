@@ -1,23 +1,24 @@
 ---
 title: applePushNotificationCertificate リソースの種類
 description: Apple プッシュ通知証明書。
-author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 9c8d968e48b1aa5e02c554dc8a5392165f0a3f9e
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: tfitzmac
+ms.prod: Intune
+ms.openlocfilehash: a8a5df851f1826cd3e1e124bf8c2cda89b24da8e
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27917735"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29395588"
 ---
 # <a name="applepushnotificationcertificate-resource-type"></a>applePushNotificationCertificate リソースの種類
 
-> **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。
+> **重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
 
-> **注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
+> **注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 Apple プッシュ通知証明書。
+
 ## <a name="methods"></a>メソッド
 |メソッド|戻り値の型|説明|
 |:---|:---|:---|
@@ -26,9 +27,9 @@ Apple プッシュ通知証明書。
 |[downloadApplePushNotificationCertificateSigningRequest 関数](../api/intune-devices-applepushnotificationcertificate-downloadapplepushnotificationcertificatesigningrequest.md)|文字列型 (String)|Apple プッシュ通知の証明書署名要求をダウンロードします|
 
 ## <a name="properties"></a>プロパティ
-|プロパティ|種類|説明|
+|プロパティ|型|説明|
 |:---|:---|:---|
-|ID|String|証明書の一意識別子|
+|id|String|証明書の一意識別子|
 |appleIdentifier|String|MDM プッシュ証明書の作成に使用するアカウントの Apple ID。|
 |topicIdentifier|String|トピック ID。|
 |lastModifiedDateTime|DateTimeOffset|Apple プッシュ通知証明書の最終変更日時。|
@@ -39,6 +40,7 @@ Apple プッシュ通知証明書。
 
 ## <a name="relationships"></a>リレーションシップ
 なし
+
 ## <a name="json-representation"></a>JSON 表記
 以下は、リソースの JSON 表記です。
 <!-- {
@@ -60,7 +62,6 @@ Apple プッシュ通知証明書。
   "certificate": "String"
 }
 ```
-
 
 
 

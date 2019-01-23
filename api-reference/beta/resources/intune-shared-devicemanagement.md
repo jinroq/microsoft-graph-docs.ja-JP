@@ -4,16 +4,18 @@ description: 'DeviceManagement リソースが、ワークフローに従って�
 localization_priority: Normal
 author: tfitzmac
 ms.prod: intune
-ms.openlocfilehash: a2f4348da007a3d69d1618151718789d1b72e3e1
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 05620a5b34125920399434824d9f42ccea989c72
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27961338"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29396421"
 ---
 # <a name="devicemanagement-resource-type"></a>deviceManagement リソースの種類
 
-> **注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
+> **重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
+
+> **注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 DeviceManagement リソースが、ワークフローに従って、内容を変更するコンテナーを表しますを含みます。  
 
@@ -52,16 +54,16 @@ DeviceManagement リソースが、ワークフローに従って、内容を変
 
 
 ## <a name="properties"></a>プロパティ
-|プロパティ|種類|説明|
+|プロパティ|型|説明|
 |:---|:---|:---|
-|ID|String|デバイスに関連付けられている一意の識別子です。|
+|id|String|デバイスに関連付けられている一意の識別子です。|
 |**デバイス構成**|
 |intuneAccountId|Guid|Intune アカウント ID にはテナントが指定されました。|
-|legacyPcManangementEnabled|ブール型|非 MDM を有効にするプロパティは、このアカウントの従来の PC の管理を管理します。 このプロパティは読み取りのみ可能です。|
+|legacyPcManangementEnabled|Boolean|非 MDM を有効にするプロパティは、このアカウントの従来の PC の管理を管理します。 このプロパティは読み取りのみ可能です。|
 |maximumDepTokens|Int32|DEP のトークンの最大数では、テナントごとに許可されます。|
 |settings|[deviceManagementSettings](../resources/intune-deviceconfig-devicemanagementsettings.md)|アカウント レベルの設定。|
 |**デバイスの管理**|
-|accountMoveCompletionDateTime|DateTimeOffset|日付と時刻 scaleunits のテナントのデータを移動するときです。|
+|accountMoveCompletionDateTime|DateTimeOffset|Scaleunits のテナントのデータを移動するときの日付の & の時刻です。|
 |adminConsent|[adminConsent](../resources/intune-devices-adminconsent.md)|同意の情報を管理します。|
 |deviceProtectionOverview|[deviceProtectionOverview](../resources/intune-devices-deviceprotectionoverview.md)|デバイス保護の概要です。|
 |managedDeviceCleanupSettings|[managedDeviceCleanupSettings](../resources/intune-devices-manageddevicecleanupsettings.md)|デバイスのクリーンアップ ・ ルール|

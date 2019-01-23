@@ -1,29 +1,29 @@
 ---
 title: vpnOnDemandRuleConnectionDomainAction 列挙型
 description: VPN オンデマンド ルール接続ドメインのアクションです。
-author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: bc1ac34d832ac1a2ab08beba531c00f3ebf7e71f
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: tfitzmac
+ms.prod: Intune
+ms.openlocfilehash: cb04d29c1fd9c48a5bbcdb02d1af662f3dbb862b
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27934731"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29395826"
 ---
 # <a name="vpnondemandruleconnectiondomainaction-enum-type"></a>vpnOnDemandRuleConnectionDomainAction 列挙型
 
-> **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。
+> **重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
 
-> **注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
+> **注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 VPN オンデマンド ルール接続ドメインのアクションです。
+
 ## <a name="members"></a>メンバー
 |メンバー|値|説明|
 |:---|:---|:---|
 |connectIfNeeded|0|必要な場合に接続します。|
 |neverConnect|1|接続しないでください。|
-
 
 
 

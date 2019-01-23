@@ -1,23 +1,24 @@
 ---
 title: vppTokenActionFailureReason 列挙型
 description: Apple ボリューム購入プログラム トークンの操作エラーが発生する理由の種類です。
-author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: baf33c29a822cc725c66ff6a3a7d796e57e63693
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: tfitzmac
+ms.prod: Intune
+ms.openlocfilehash: bba4c339b774fd32a852925729e2e158dc13e52d
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27961163"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29393145"
 ---
 # <a name="vpptokenactionfailurereason-enum-type"></a>vppTokenActionFailureReason 列挙型
 
-> **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。
+> **重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
 
-> **注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
+> **注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 Apple ボリューム購入プログラム トークンの操作エラーが発生する理由の種類です。
+
 ## <a name="members"></a>メンバー
 |メンバー|値|説明|
 |:---|:---|:---|
@@ -26,7 +27,6 @@ Apple ボリューム購入プログラム トークンの操作エラーが発�
 |internalError|2|内部エラーが発生しました。|
 |expiredVppToken|3|Apple ボリューム購入プログラムのトークンの有効期限が切れていたためにエラーが発生しました。|
 |expiredApplePushNotificationCertificate|4|Apple ボリューム購入プログラムをプッシュ通知証明書の有効期限が切れているためにエラーが発生しました。|
-
 
 
 

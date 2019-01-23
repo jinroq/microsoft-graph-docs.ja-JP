@@ -1,23 +1,24 @@
 ---
 title: androidWorkProfileCrossProfileDataSharingType 列挙型
 description: Android の作業プロファイルは、プロファイル データの種類の共有を横断します。
-author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 18f4e8df4ddf3d7e1bf8ce39f026cf8112093e1e
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: tfitzmac
+ms.prod: Intune
+ms.openlocfilehash: 97001dcab56ef23506bee3d29c53757e3705fe04
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27976248"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29395637"
 ---
 # <a name="androidworkprofilecrossprofiledatasharingtype-enum-type"></a>androidWorkProfileCrossProfileDataSharingType 列挙型
 
-> **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。
+> **重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
 
-> **注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
+> **注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 Android の作業プロファイルは、プロファイル データの種類の共有を横断します。
+
 ## <a name="members"></a>メンバー
 |メンバー|値|説明|
 |:---|:---|:---|
@@ -25,7 +26,6 @@ Android の作業プロファイルは、プロファイル データの種類�
 |preventAny|1|任意の共有を防止します。|
 |allowPersonalToWork|2|データ共有プロファイルを使用する個人のプロファイルからの要求を許可します。|
 |noRestrictions|3|共有の制限はありません。|
-
 
 
 

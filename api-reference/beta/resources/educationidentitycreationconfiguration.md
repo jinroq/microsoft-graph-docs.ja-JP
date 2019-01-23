@@ -4,16 +4,16 @@ description: 学校データ プロファイル id の作成時に設定を定�
 localization_priority: Normal
 author: mmast-msft
 ms.prod: education
-ms.openlocfilehash: cb7d3d101c547f1ced1b16bf857b7a7e953dc91b
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 7c05d810c017f57f738d188a8edef5d0560415fd
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27912751"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29395686"
 ---
 ## <a name="educationidentitycreationconfiguration-resource-type"></a>educationIdentityCreationConfiguration リソースの種類
 
-> **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。
+> **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
 
 学校データ プロファイル id の作成時に設定を定義します。 これらの id には、生徒と教師が含まれます。 これらの設定に基づいて、ユーザーがディレクトリに作成されます。
 
@@ -23,7 +23,7 @@ ms.locfileid: "27912751"
 
 ## <a name="properties"></a>プロパティ
 
-| プロパティ | 種類 | 説明 |
+| プロパティ | 型 | 説明 |
 |:-|:-|:-|
 | **userDomains** | [educationIdentityDomain](educationidentitydomain.md)コレクション |  ユーザーの種類ごとに使用するドメインの一覧を設定します。  |
 
@@ -39,10 +39,10 @@ ms.locfileid: "27912751"
 
 ```json
 {
-    "@odata.type": "#microsoft.graph.educationIdentityCreationConfiguration",
+    "@odata.type": "microsoft.graph.educationIdentityCreationConfiguration",
     "userDomains": [
         {
-            "@odata.type": "#microsoft.graph.educationIdentityDomain",
+            "@odata.type": "microsoft.graph.educationIdentityDomain",
         }
     ]
 }

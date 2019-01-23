@@ -1,23 +1,24 @@
 ---
 title: ratingAustraliaTelevisionType 列挙型
 description: オーストラリアのテレビのコンテンツの規制ラベル
-author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 5af818245d4b71a038cdfa0cd3a4f3c188e76e60
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: tfitzmac
+ms.prod: Intune
+ms.openlocfilehash: 148e8c1bb12f8563261402b98e4ff0552e83f3f6
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27911974"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29392893"
 ---
 # <a name="ratingaustraliatelevisiontype-enum-type"></a>ratingAustraliaTelevisionType 列挙型
 
-> **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。
+> **重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
 
-> **注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
+> **注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 オーストラリアのテレビのコンテンツの規制ラベル
+
 ## <a name="members"></a>メンバー
 |メンバー|値|説明|
 |:---|:---|:---|
@@ -30,7 +31,6 @@ ms.locfileid: "27911974"
 |成熟|6|ビューアー 15 以上の M クラス分けをお勧め|
 |agesAbove15|7|MA15 + 分類には適していません 15 未満の閲覧者です。|
 |agesAbove15AdultViolence|8|AV15 + 分類が 15、成人向け暴力に固有であるユーザーに適していません。|
-
 
 
 

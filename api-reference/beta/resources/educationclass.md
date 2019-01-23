@@ -4,16 +4,16 @@ description: '学校内のクラスを表します。 **educationClass** リソ�
 localization_priority: Normal
 author: mmast-msft
 ms.prod: education
-ms.openlocfilehash: f651e695ddf0b7139a31d077dcf021fced91293a
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 4ccec95dbe04c5482328223214f446fbb580279c
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27962920"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29393222"
 ---
 # <a name="educationclass-resource-type"></a>educationClass リソース タイプ
 
-> **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。
+> **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
 
 学校内のクラスを表します。 **educationClass** リソースは Office 365 グループに相当し、同じ ID を共有します。 学生はクラスの通常のメンバーであり、教師は所有者であり適切な権限を持ちます。 Office の操作性が適切に機能するために、教師は、teachers コレクションと members コレクションの両方のメンバーになっている必要があります。  
 
@@ -37,9 +37,9 @@ ms.locfileid: "27962920"
 |[Delete](../api/educationclass-delete.md) | なし |**educationClass** オブジェクトを削除します。 |
 
 ## <a name="properties"></a>プロパティ
-| プロパティ     | 種類   |説明|
+| プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
-|ID| String| クラスの一意の識別子。|
+|id| String| クラスの一意の識別子。|
 |説明|String| クラスの説明。|
 |displayName|String| クラスの名前。|
 |mailNickname|String| すべてのメンバーに電子メールを送信する際のメール名 (この機能が有効な場合)。 |
@@ -47,7 +47,7 @@ ms.locfileid: "27962920"
 |classCode|String| クラスを識別するために学校が使用するクラス コード。|
 |externalId|String| 同期システムからのクラスの ID。 |
 |externalName|String|同期システムからのクラスの名前。|
-|externalSource|文字列| このクラスの作成方法。 使用可能な値: `sis`、`manual`、`unknownFutureValue`。|
+|externalSource|string| このクラスの作成方法。 使用可能な値: `sis`、`manual`、`unknownFutureValue`。|
 |term|[educationTerm](educationterm.md)|このクラスの学期。|
 
 
@@ -82,7 +82,7 @@ ms.locfileid: "27962920"
   "externalName": "String",
   "externalSource": "string",
   "mailNickname": "String",
-  "term": {"@odata.type": "microsoft.graph.education.term"}
+  "term": {"@odata.type": "microsoft.graph.educationTerm"}
 }
 
 ```
