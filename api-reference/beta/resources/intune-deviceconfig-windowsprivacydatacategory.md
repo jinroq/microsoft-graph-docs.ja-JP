@@ -1,23 +1,24 @@
 ---
 title: windowsPrivacyDataCategory 列挙型
 description: Windows プライバシー データ カテゴリの指定子のプライバシー ・ データ ・ アクセス。
-author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 03a7e1d7f017d7c7df9c27257c8f2a3e01c861d4
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: tfitzmac
+ms.prod: Intune
+ms.openlocfilehash: 484042130a4a1d6a3732ddd1b3ac7fc4aec41da3
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27931189"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29401146"
 ---
 # <a name="windowsprivacydatacategory-enum-type"></a>windowsPrivacyDataCategory 列挙型
 
-> **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。
+> **重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
 
-> **注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
+> **注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 Windows プライバシー データ カテゴリの指定子のプライバシー ・ データ ・ アクセス。
+
 ## <a name="members"></a>メンバー
 |メンバー|値|説明|
 |:---|:---|:---|
@@ -40,7 +41,6 @@ Windows プライバシー データ カテゴリの指定子のプライバシ�
 |tasks|16|タスク スケジューラのアプリケーションを使用すると、アクセスできます。 Windows 10、1703 のバージョンで追加されます。|
 |syncWithDevices|17|アプリケーションを自動的に共有し、ワイヤレス デバイスは、明示的にユーザーのデバイスとペアになったと情報を同期させることができます。 Windows 10 バージョン 1607 で追加されました。|
 |trustedDevices|18|信頼されたデバイスにアクセスするアプリケーションを使用できます。 Windows 10 バージョン 1607 で追加されました。|
-
 
 
 

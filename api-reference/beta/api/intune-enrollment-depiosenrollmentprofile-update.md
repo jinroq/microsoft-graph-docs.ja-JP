@@ -1,25 +1,26 @@
 ---
 title: DepIOSEnrollmentProfile を更新します。
 description: DepIOSEnrollmentProfile オブジェクトのプロパティを更新します。
-author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: cfbae59533112d69d4616f77d2dbeb79a6361332
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: tfitzmac
+ms.prod: Intune
+ms.openlocfilehash: e36951d69f3047c69ccfc0d1e0a72247a0715db9
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27935963"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29400593"
 ---
 # <a name="update-depiosenrollmentprofile"></a>DepIOSEnrollmentProfile を更新します。
 
-> **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。
+> **重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
 
-> **注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
+> **注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 [DepIOSEnrollmentProfile](../resources/intune-enrollment-depiosenrollmentprofile.md)オブジェクトのプロパティを更新します。
+
 ## <a name="prerequisites"></a>前提条件
-この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
+この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/concepts/permissions-reference.md)」を参照してください。
 
 |アクセス許可の種類|アクセス許可 (特権の大きいものから小さいものへ)|
 |:---|:---|
@@ -49,12 +50,13 @@ PATCH /deviceManagement/depOnboardingSettings/{depOnboardingSettingId}/defaultIo
 
 |プロパティ|型|説明|
 |:---|:---|:---|
-|ID|String|[EnrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)から継承されるオブジェクトの GUID|
+|id|String|[EnrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)から継承されるオブジェクトの GUID|
 |displayName|String|[EnrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)から継承されるプロファイルの名前|
 |説明|String|[EnrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)から継承されるプロファイルの説明|
 |requiresUserAuthentication|Boolean|プロファイルに[enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)から継承されるのユーザー認証が必要なかどうかを示します|
 |configurationEndpointUrl|String|[EnrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)から登録の継承を使用するエンドポイントの url を構成|
 |enableAuthenticationViaCompanyPortal|Boolean|アップルらくらく企業ポータルではなくを使用して認証することを示します。 [EnrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)から継承されました。|
+|requireCompanyPortalOnSetupAssistantEnrolledDevices|Boolean|継承セットアップ アシスタントが登録されているデバイスは、 [enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)からの会社のポータルが必要であることを示します。|
 |isDefault|Boolean|これは、 [depEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)から継承される既定のプロファイルであるかどうかを示します|
 |supervisedModeEnabled|Boolean|コールを管理モードを有効にする、false それ以外の場合は True です。 参照してくださいhttps://docs.microsoft.com/en-us/intune/deploy-use/enroll-devices-in-microsoft-intuneの追加情報です。 [DepEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)から継承されました。|
 |supportDepartment|String|継承のサポート部門については、 [depEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)から|
@@ -71,6 +73,8 @@ PATCH /deviceManagement/depOnboardingSettings/{depOnboardingSettingId}/defaultIo
 |zoomDisabled|Boolean|ズームの設定] ウィンドウが無効になっているかどうかを示します[depEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)から継承されました。|
 |siriDisabled|Boolean|Siri の設定] ウィンドウが無効になっているかどうかを示します[depEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)から継承されました。|
 |diagnosticsDisabled|Boolean|設定] ウィンドウは、診断が[depEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)からの継承を無効になってかどうかを示します|
+|displayToneSetupDisabled|Boolean|Displaytone セットアップ画面が無効になっているかどうかを示します[depEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)から継承されました。|
+|privacyPaneDisabled|Boolean|プライバシー画面が無効になっているかどうかを示します[depEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)から継承されました。|
 |iTunesPairingMode|[iTunesPairingMode](../resources/intune-enrollment-itunespairingmode.md)|ITunes のペアリング モードを示します。 可能な値は、`disallow`、`allow`、`requiresCertificate` です。|
 |managementCertificates|[managementCertificateWithThumbprint](../resources/intune-enrollment-managementcertificatewiththumbprint.md)コレクション|Apple Configurator の証明書を管理|
 |restoreFromAndroidDisabled|Boolean|Android からの復元が無効になっているかどうかを示します|
@@ -79,6 +83,13 @@ PATCH /deviceManagement/depOnboardingSettings/{depOnboardingSettingId}/defaultIo
 |enableSharedIPad|Boolean|これは、デバイスが、マルチ ユーザー シナリオを有効にするモードに登録するかどうかを示します。 共有台もの Ipad でのみ適用できます。|
 |companyPortalVppTokenId|String|場合設定、デバイスのライセンスと企業ポータルを展開するどの Vpp トークンを使用する必要があることを示します。 'enableAuthenticationViaCompanyPortal' は、このプロパティを設定するために設定する必要があります。|
 |enableSingleAppEnrollmentMode|Boolean|1 つのアプリケーション モードを有効にして、登録時にアプリケーション ロックを適用するデバイスを指示します。 既定では false を指定します。 'enableAuthenticationViaCompanyPortal' と 'companyPortalVppTokenId' は、このプロパティを設定するのに設定してください。|
+|homeButtonScreenDisabled|Boolean|感度画面の [ホーム] ボタンが無効になっているかどうかを示します|
+|iMessageAndFaceTimeScreenDisabled|Boolean|場合 iMessage、FaceTime の画面が無効になります|
+|onBoardingScreenDisabled|Boolean|契約時のセットアップ画面が無効になっているかどうかを示します|
+|screenTimeScreenDisabled|Boolean|画面のタイムアウトの設定が無効になっているかどうかを示します|
+|simSetupScreenDisabled|Boolean|SIMSetup 画面が無効になっているかどうかを示します|
+|softwareUpdateScreenDisabled|Boolean|必須のソフトウェアの更新] 画面が無効になっているかどうかを示します|
+|watchMigrationScreenDisabled|Boolean|ウォッチ移行] 画面が無効になっているかどうかを示します|
 
 
 
@@ -86,19 +97,22 @@ PATCH /deviceManagement/depOnboardingSettings/{depOnboardingSettingId}/defaultIo
 かどうかは成功すると、このメソッドが返されます、`200 OK`応答コードおよび応答の本文に更新された[depIOSEnrollmentProfile](../resources/intune-enrollment-depiosenrollmentprofile.md)オブジェクトです。
 
 ## <a name="example"></a>例
+
 ### <a name="request"></a>要求
 以下は、要求の例です。
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/depOnboardingSettings/{depOnboardingSettingId}/defaultIosEnrollmentProfile
 Content-type: application/json
-Content-length: 1267
+Content-length: 1736
 
 {
+  "@odata.type": "#microsoft.graph.depIOSEnrollmentProfile",
   "displayName": "Display Name value",
   "description": "Description value",
   "requiresUserAuthentication": true,
   "configurationEndpointUrl": "https://example.com/configurationEndpointUrl/",
   "enableAuthenticationViaCompanyPortal": true,
+  "requireCompanyPortalOnSetupAssistantEnrolledDevices": true,
   "isDefault": true,
   "supervisedModeEnabled": true,
   "supportDepartment": "Support Department value",
@@ -115,6 +129,8 @@ Content-length: 1267
   "zoomDisabled": true,
   "siriDisabled": true,
   "diagnosticsDisabled": true,
+  "displayToneSetupDisabled": true,
+  "privacyPaneDisabled": true,
   "iTunesPairingMode": "allow",
   "managementCertificates": [
     {
@@ -128,7 +144,14 @@ Content-length: 1267
   "sharedIPadMaximumUserCount": 10,
   "enableSharedIPad": true,
   "companyPortalVppTokenId": "Company Portal Vpp Token Id value",
-  "enableSingleAppEnrollmentMode": true
+  "enableSingleAppEnrollmentMode": true,
+  "homeButtonScreenDisabled": true,
+  "iMessageAndFaceTimeScreenDisabled": true,
+  "onBoardingScreenDisabled": true,
+  "screenTimeScreenDisabled": true,
+  "simSetupScreenDisabled": true,
+  "softwareUpdateScreenDisabled": true,
+  "watchMigrationScreenDisabled": true
 }
 ```
 
@@ -137,7 +160,7 @@ Content-length: 1267
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1378
+Content-Length: 1785
 
 {
   "@odata.type": "#microsoft.graph.depIOSEnrollmentProfile",
@@ -147,6 +170,7 @@ Content-Length: 1378
   "requiresUserAuthentication": true,
   "configurationEndpointUrl": "https://example.com/configurationEndpointUrl/",
   "enableAuthenticationViaCompanyPortal": true,
+  "requireCompanyPortalOnSetupAssistantEnrolledDevices": true,
   "isDefault": true,
   "supervisedModeEnabled": true,
   "supportDepartment": "Support Department value",
@@ -163,6 +187,8 @@ Content-Length: 1378
   "zoomDisabled": true,
   "siriDisabled": true,
   "diagnosticsDisabled": true,
+  "displayToneSetupDisabled": true,
+  "privacyPaneDisabled": true,
   "iTunesPairingMode": "allow",
   "managementCertificates": [
     {
@@ -176,10 +202,16 @@ Content-Length: 1378
   "sharedIPadMaximumUserCount": 10,
   "enableSharedIPad": true,
   "companyPortalVppTokenId": "Company Portal Vpp Token Id value",
-  "enableSingleAppEnrollmentMode": true
+  "enableSingleAppEnrollmentMode": true,
+  "homeButtonScreenDisabled": true,
+  "iMessageAndFaceTimeScreenDisabled": true,
+  "onBoardingScreenDisabled": true,
+  "screenTimeScreenDisabled": true,
+  "simSetupScreenDisabled": true,
+  "softwareUpdateScreenDisabled": true,
+  "watchMigrationScreenDisabled": true
 }
 ```
-
 
 
 

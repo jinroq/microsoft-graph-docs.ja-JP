@@ -1,36 +1,38 @@
 ---
 title: bitLockerRecoveryOptions リソースの種類
 description: BitLocker の回復オプションです。
-author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 40ca273b46a1e104afbeac4cbafe967ba76faa22
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: tfitzmac
+ms.prod: Intune
+ms.openlocfilehash: df1a2d0a9be3f4ec52b5fa289d0315bda36e4a59
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27924840"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29398514"
 ---
 # <a name="bitlockerrecoveryoptions-resource-type"></a>bitLockerRecoveryOptions リソースの種類
 
-> **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。
+> **重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
 
-> **注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
+> **注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 BitLocker の回復オプションです。
+
 ## <a name="properties"></a>プロパティ
-|プロパティ|種類|説明|
+|プロパティ|型|説明|
 |:---|:---|:---|
-|blockDataRecoveryAgent|ブール型|回復エージェントの証明書ベースのデータをブロックするかどうかを示します。|
+|blockDataRecoveryAgent|Boolean|回復エージェントの証明書ベースのデータをブロックするかどうかを示します。|
 |recoveryPasswordUsage|[configurationUsage](../resources/intune-deviceconfig-configurationusage.md)|ユーザーの許可または固定の 48 桁の回復パスワードを生成するために必要なのかどうか、またはシステム ディスクを示します。 可能な値は、`blocked`、`required`、`allowed` です。|
 |recoveryKeyUsage|[configurationUsage](../resources/intune-deviceconfig-configurationusage.md)|ユーザーの許可または固定の 256 ビットの回復キーを生成するために必要なのかどうか、またはシステム ディスクを示します。 可能な値は、`blocked`、`required`、`allowed` です。|
-|hideRecoveryOptions|ブール型|固定の BitLocker セットアップ ウィザードの回復オプションを表示できるようにするかどうか、またはシステム ディスクを示します。|
-|enableRecoveryInformationSaveToStore|ブール型|AD DS に格納するのには BitLocker 回復情報を許可するかどうかを示します。|
+|hideRecoveryOptions|Boolean|固定の BitLocker セットアップ ウィザードの回復オプションを表示できるようにするかどうか、またはシステム ディスクを示します。|
+|enableRecoveryInformationSaveToStore|Boolean|AD DS に格納するのには BitLocker 回復情報を許可するかどうかを示します。|
 |recoveryInformationToStore|[bitLockerRecoveryInformationType](../resources/intune-deviceconfig-bitlockerrecoveryinformationtype.md)|どのようなさまざまな BitLocker 回復情報が AD DS に格納されている構成です。 使用可能な値は、`passwordAndKey`、`passwordOnly` です。|
-|enableBitLockerAfterRecoveryInformationToStore|ブール型|AD DS に回復情報が格納されるまで BitLocker を有効にするかどうかを示します。|
+|enableBitLockerAfterRecoveryInformationToStore|Boolean|AD DS に回復情報が格納されるまで BitLocker を有効にするかどうかを示します。|
 
 ## <a name="relationships"></a>リレーションシップ
 なし
+
 ## <a name="json-representation"></a>JSON 表記
 以下は、リソースの JSON 表記です。
 <!-- {
@@ -50,7 +52,6 @@ BitLocker の回復オプションです。
   "enableBitLockerAfterRecoveryInformationToStore": true
 }
 ```
-
 
 
 

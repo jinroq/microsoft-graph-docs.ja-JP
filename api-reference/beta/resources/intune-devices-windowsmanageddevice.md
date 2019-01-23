@@ -1,23 +1,24 @@
 ---
 title: windowsManagedDevice リソースの種類
 description: 管理または整いました Intune を使用されている Windows のデバイス
-author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 54b11d8ee0a5b2c7b325289c897fe2e511ec3b4b
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: tfitzmac
+ms.prod: Intune
+ms.openlocfilehash: 4428819f7e82d6db7db435dec453cb53d4eb5b29
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27933394"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29398458"
 ---
 # <a name="windowsmanageddevice-resource-type"></a>windowsManagedDevice リソースの種類
 
-> **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。
+> **重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
 
-> **注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
+> **注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 管理または整いました Intune を使用されている Windows のデバイス
+
 
 [ManagedDevice](../resources/intune-devices-manageddevice.md)から継承します。
 
@@ -31,9 +32,9 @@ ms.locfileid: "27933394"
 |[WindowsManagedDevice を更新します。](../api/intune-devices-windowsmanageddevice-update.md)|[windowsManagedDevice](../resources/intune-devices-windowsmanageddevice.md)|[WindowsManagedDevice](../resources/intune-devices-windowsmanageddevice.md)オブジェクトのプロパティを更新します。|
 
 ## <a name="properties"></a>プロパティ
-|プロパティ|種類|説明|
+|プロパティ|型|説明|
 |:---|:---|:---|
-|ID|String|[ManagedDevice](../resources/intune-devices-manageddevice.md)から継承されるデバイスの一意の識別子|
+|id|String|[ManagedDevice](../resources/intune-devices-manageddevice.md)から継承されるデバイスの一意の識別子|
 |userId|String|[ManagedDevice](../resources/intune-devices-manageddevice.md)から継承される、デバイスに関連付けられているユーザーの一意の識別子|
 |deviceName|String|[ManagedDevice](../resources/intune-devices-manageddevice.md)から継承されるデバイスの名前|
 |hardwareInformation|[hardwareInformation](../resources/intune-devices-hardwareinformation.md)|デバイスのハードウェアの詳細。  記憶域の製造元、シリアル番号などの情報が含まれています。[ManagedDevice](../resources/intune-devices-manageddevice.md)から継承されました。|
@@ -70,7 +71,7 @@ ms.locfileid: "27933394"
  [ManagedDevice](../resources/intune-devices-manageddevice.md)から継承されます。 可能な値は、`none`、`unknown`、`exchangeGlobalRule`、`exchangeIndividualRule`、`exchangeDeviceRule`、`exchangeUpgrade`、`exchangeMailboxPolicy`、`other`、`compliant`、`notCompliant`、`notEnrolled`、`unknownLocation`、`mfaRequired`、`azureADBlockDueToAccessPolicy`、`compromisedPassword`、`deviceNotKnownWithManagedApp` です。|
 |remoteAssistanceSessionUrl|String|デバイスとのリモート アシスタンス セッションを確立できるようにする URL。 [ManagedDevice](../resources/intune-devices-manageddevice.md)から継承されました。|
 |remoteAssistanceSessionErrorDetails|String|リモート アシスタンス セッション オブジェクトの作成時に問題を識別するエラー文字列。 [ManagedDevice](../resources/intune-devices-manageddevice.md)から継承されました。|
-|isEncrypted|ブール型|[ManagedDevice](../resources/intune-devices-manageddevice.md)から、デバイスの暗号化状態継承|
+|isEncrypted|Boolean|[ManagedDevice](../resources/intune-devices-manageddevice.md)から、デバイスの暗号化状態継承|
 |userPrincipalName|String|デバイス ユーザー プリンシパル名で継承される[managedDevice から](../resources/intune-devices-manageddevice.md)|
 |model|String|[ManagedDevice](../resources/intune-devices-manageddevice.md)から継承されるデバイスのモデル|
 |manufacturer|String|[ManagedDevice](../resources/intune-devices-manageddevice.md)から継承される、デバイスの製造元|
@@ -91,8 +92,8 @@ ms.locfileid: "27933394"
 |partnerReportedThreatState|[managedDevicePartnerReportedHealthState](../resources/intune-devices-manageddevicepartnerreportedhealthstate.md)|Mobile Threat Defense パートナーがアカウントおよびデバイスで使用されている場合の、デバイスの脅威の状態を示します。 読み取り専用です。 [ManagedDevice](../resources/intune-devices-manageddevice.md)から継承されます。 可能な値は、`unknown`、`activated`、`deactivated`、`secured`、`lowSeverity`、`mediumSeverity`、`highSeverity`、`unresponsive`、`compromised`、`misconfigured` です。|
 |usersLoggedOn|[loggedOnUser](../resources/intune-devices-loggedonuser.md)コレクション|最後に[managedDevice](../resources/intune-devices-manageddevice.md)から継承される、デバイスのユーザーのログオンを示します|
 |preferMdmOverGroupPolicyAppliedDateTime|DateTimeOffset|レポート preferMdmOverGroupPolicy 設定日付と時刻が設定されています。  設定すると、Intune MDM 設定が優先されますグループ ポリシー設定の競合がある場合。 読み取り専用です。 [ManagedDevice](../resources/intune-devices-manageddevice.md)から継承されました。|
-|autopilotEnrolled|ブール型|自動操縦を使用して管理対象のデバイスが登録されている場合にレポートします。 [ManagedDevice](../resources/intune-devices-manageddevice.md)から継承されました。|
-|requireUserEnrollmentApproval|ブール型|マネージ iOS デバイスがユーザーの承認登録の場合にレポートします。 [ManagedDevice](../resources/intune-devices-manageddevice.md)から継承されました。|
+|autopilotEnrolled|Boolean|自動操縦を使用して管理対象のデバイスが登録されている場合にレポートします。 [ManagedDevice](../resources/intune-devices-manageddevice.md)から継承されました。|
+|requireUserEnrollmentApproval|Boolean|マネージ iOS デバイスがユーザーの承認登録の場合にレポートします。 [ManagedDevice](../resources/intune-devices-manageddevice.md)から継承されました。|
 |managementCertificateExpirationDate|DateTimeOffset|デバイス管理証明書の有効期限の日付継承[managedDevice](../resources/intune-devices-manageddevice.md)からの報告します。|
 |iccid|String|A SIM カードの一意の識別番号は集積回路カードの識別子です。 [ManagedDevice](../resources/intune-devices-manageddevice.md)から継承されました。|
 |udid|String|IOS と macOS デバイスに一意のデバイス識別子です。 [ManagedDevice](../resources/intune-devices-manageddevice.md)から継承されました。|
@@ -284,7 +285,6 @@ ms.locfileid: "27933394"
   }
 }
 ```
-
 
 
 

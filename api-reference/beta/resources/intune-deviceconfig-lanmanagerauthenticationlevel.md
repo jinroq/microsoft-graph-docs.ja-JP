@@ -1,33 +1,33 @@
 ---
 title: lanManagerAuthenticationLevel 列挙型
 description: LanManagerAuthenticationLevel に指定できる値
-author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: fd88deb7684301023a75905d12a59ce25bad750f
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: tfitzmac
+ms.prod: Intune
+ms.openlocfilehash: 6e8c7b3df6f515d3dad0d7619b6c0b755ad799d7
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27911995"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29397457"
 ---
 # <a name="lanmanagerauthenticationlevel-enum-type"></a>lanManagerAuthenticationLevel 列挙型
 
-> **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。
+> **重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
 
-> **注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
+> **注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 LanManagerAuthenticationLevel に指定できる値
+
 ## <a name="members"></a>メンバー
 |メンバー|値|説明|
 |:---|:---|:---|
-|lmAndNltm|0|LM と NTLM 応答を送信します。|
-|lmNtlmAndNtlmV2|1|ネゴシエートされた場合は、LM と NTLM を使用して NTLMv2 セッション セキュリティを送信します。|
-|lmAndNtlmOnly|2|LM と NTLM 応答のみを送信します。|
-|lmAndNtlmV2|3|LM と NTLMv2 応答のみを送信します。|
-|lmNtlmV2AndNotLm|4|LM と NTLMv2 応答のみを送信します。 LM を拒否します。|
-|lmNtlmV2AndNotLmOrNtm|5|LM と NTLMv2 応答のみを送信します。 LM と NTLM を拒否します。|
-
+|lmAndNltm|0|NTLM 応答を送信するには、LM &|
+|lmNtlmAndNtlmV2|1|LM NTLM の使用を & の NTLMv2 セッション セキュリティをネゴシエートされた場合に送信します。|
+|lmAndNtlmOnly|2|NTLM 応答のみを送信するには、LM &|
+|lmAndNtlmV2|3|NTLMv2 応答のみを送信するには、LM &|
+|lmNtlmV2AndNotLm|4|LM & NTLMv2 応答のみを送信します。 LM を拒否します。|
+|lmNtlmV2AndNotLmOrNtm|5|LM & NTLMv2 応答のみを送信します。 LM & NTLM を拒否します。|
 
 
 

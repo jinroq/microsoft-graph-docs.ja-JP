@@ -1,23 +1,24 @@
 ---
 title: deleteUserFromSharedAppleDeviceActionResult リソースの種類
 description: 共有の Apple デバイスのアクションの結果からユーザーを削除する
-author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: c33a17bc2489797bfa8dc0101c128d1e29d58b47
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: tfitzmac
+ms.prod: Intune
+ms.openlocfilehash: c65a1c60a77ba196448dd626b345c69c71f16de6
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27987826"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29399277"
 ---
 # <a name="deleteuserfromsharedappledeviceactionresult-resource-type"></a>deleteUserFromSharedAppleDeviceActionResult リソースの種類
 
-> **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。
+> **重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
 
-> **注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
+> **注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 共有の Apple デバイスのアクションの結果からユーザーを削除する
+
 
 [deviceActionResult](../resources/intune-devices-deviceactionresult.md) から継承します
 
@@ -32,6 +33,7 @@ ms.locfileid: "27987826"
 
 ## <a name="relationships"></a>リレーションシップ
 なし
+
 ## <a name="json-representation"></a>JSON 表記
 以下は、リソースの JSON 表記です。
 <!-- {
@@ -49,7 +51,6 @@ ms.locfileid: "27987826"
   "userPrincipalName": "String"
 }
 ```
-
 
 
 

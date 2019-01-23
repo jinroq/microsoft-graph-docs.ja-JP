@@ -4,16 +4,16 @@ description: 'CSV ファイルは、入力ソースとは、学校のデータ�
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: 19ef77671f862a0b59b5697b76bb54dc20e42856
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: c9211d5f7ca25b78c6e76c3744f6941e3b172bb3
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27952756"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29399347"
 ---
 # <a name="educationcsvdataprovider-resource-type"></a>educationCsvDataProvider リソースの種類
 
-> **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。
+> **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
 
 CSV ファイルは、入力ソースとは、学校のデータの同期プロファイルを設定するために使用します。  
 
@@ -21,7 +21,7 @@ CSV ファイルは、入力ソースとは、学校のデータの同期プロ�
 
 ## <a name="properties"></a>プロパティ
 
-| プロパティ | 種類 | 説明 |
+| プロパティ | 型 | 説明 |
 |:-|:-|:-|
 | **カスタマイズ** | [educationSynchronizationCustomizations](educationsynchronizationcustomizations.md) | 同期プロファイルを適用するオプションのカスタマイズです。|
 
@@ -32,12 +32,12 @@ CSV ファイルは、入力ソースとは、学校のデータの同期プロ�
   "optionalProperties": [
 
   ],
-  "@odata.type": "#microsoft.graph.educationCsvDataProvider"
+  "@odata.type": "microsoft.graph.educationCsvDataProvider"
 }-->
 
 ```json
 {
-    "@odata.type": "#microsoft.graph.educationCsvDataProvider",
+    "@odata.type": "microsoft.graph.educationCsvDataProvider",
     "customizations": { "@odata.type": "microsoft.graph.educationSynchronizationCustomizations" }
 }
 ```

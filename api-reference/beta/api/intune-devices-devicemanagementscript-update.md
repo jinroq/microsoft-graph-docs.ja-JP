@@ -1,25 +1,26 @@
 ---
 title: DeviceManagementScript を更新します。
 description: DeviceManagementScript オブジェクトのプロパティを更新します。
-author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: fa19b1d34ebd3b00a4c2d03f32730647dec45bda
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: tfitzmac
+ms.prod: Intune
+ms.openlocfilehash: 7cdf0364745f97beec777b6971ab096e43e916ff
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27924224"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29399011"
 ---
 # <a name="update-devicemanagementscript"></a>DeviceManagementScript を更新します。
 
-> **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。
+> **重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
 
-> **注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
+> **注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 [DeviceManagementScript](../resources/intune-devices-devicemanagementscript.md)オブジェクトのプロパティを更新します。
+
 ## <a name="prerequisites"></a>前提条件
-この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
+この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/concepts/permissions-reference.md)」を参照してください。
 
 |アクセス許可の種類|アクセス許可 (特権の大きいものから小さいものへ)|
 |:---|:---|
@@ -47,9 +48,9 @@ PATCH /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}
 
 [DeviceManagementScript](../resources/intune-devices-devicemanagementscript.md)を作成するときに必要なプロパティを次の表に示します。
 
-|プロパティ|種類|説明|
+|プロパティ|型|説明|
 |:---|:---|:---|
-|ID|String|デバイス管理スクリプト用の一意の識別子。|
+|id|String|デバイス管理スクリプト用の一意の識別子。|
 |displayName|String|デバイスの管理スクリプトの名前です。|
 |説明|String|デバイスの管理スクリプトのオプションの説明です。|
 |runSchedule|[runSchedule](../resources/intune-devices-runschedule.md)|スクリプトを実行する間隔です。 定義されていないスクリプトは実行 1 回|
@@ -57,8 +58,10 @@ PATCH /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}
 |createdDateTime|DateTimeOffset|デバイス管理スクリプトが作成された日時です。|
 |lastModifiedDateTime|DateTimeOffset|日付と時刻、デバイス管理のスクリプトが最後に修正されました。|
 |runAsAccount|[runAsAccountType](../resources/intune-shared-runasaccounttype.md)|デバイス管理のスクリプトで実行される実行コンテキストの種類を示します。 使用可能な値は、`system`、`user` です。|
-|enforceSignatureCheck|ブール型|スクリプト署名をチェックする必要があるかどうかを指定します。|
+|enforceSignatureCheck|Boolean|スクリプト署名をチェックする必要があるかどうかを指定します。|
 |fileName|String|スクリプト ファイルの名前です。|
+|roleScopeTagIds|String コレクション|この PowerShellScript インスタンスのスコープのタグ Id のリストです。|
+|runAs32Bit|Boolean|PowerShell スクリプトが 32 ビットとして実行する必要があるかどうかを示す値|
 
 
 
@@ -66,24 +69,29 @@ PATCH /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}
 かどうかは成功すると、このメソッドが返されます、`200 OK`応答コードおよび応答の本文に更新された[deviceManagementScript](../resources/intune-devices-devicemanagementscript.md)オブジェクトです。
 
 ## <a name="example"></a>例
+
 ### <a name="request"></a>要求
 以下は、要求の例です。
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/deviceManagementScripts/{deviceManagementScriptId}
 Content-type: application/json
-Content-length: 361
+Content-length: 443
 
 {
+  "@odata.type": "#microsoft.graph.deviceManagementScript",
   "displayName": "Display Name value",
   "description": "Description value",
   "runSchedule": {
     "@odata.type": "microsoft.graph.runSchedule"
   },
   "scriptContent": "c2NyaXB0Q29udGVudA==",
-  "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
   "runAsAccount": "user",
   "enforceSignatureCheck": true,
-  "fileName": "File Name value"
+  "fileName": "File Name value",
+  "roleScopeTagIds": [
+    "Role Scope Tag Ids value"
+  ],
+  "runAs32Bit": true
 }
 ```
 
@@ -92,7 +100,7 @@ Content-length: 361
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 530
+Content-Length: 615
 
 {
   "@odata.type": "#microsoft.graph.deviceManagementScript",
@@ -107,10 +115,13 @@ Content-Length: 530
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
   "runAsAccount": "user",
   "enforceSignatureCheck": true,
-  "fileName": "File Name value"
+  "fileName": "File Name value",
+  "roleScopeTagIds": [
+    "Role Scope Tag Ids value"
+  ],
+  "runAs32Bit": true
 }
 ```
-
 
 
 

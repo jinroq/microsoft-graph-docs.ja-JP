@@ -1,34 +1,36 @@
 ---
 title: win32LobAppMsiInformation リソースの種類
 description: Win32 アプリケーションの MSI アプリケーションのプロパティが含まれています。
-author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 04972e9e7fa909c220fe55ca6337be3ac44138ad
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: tfitzmac
+ms.prod: Intune
+ms.openlocfilehash: 5ba91c572286020a3e349527f325d22bf0be5d67
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27967876"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29399249"
 ---
 # <a name="win32lobappmsiinformation-resource-type"></a>win32LobAppMsiInformation リソースの種類
 
-> **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。
+> **重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
 
-> **注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
+> **注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 Win32 アプリケーションの MSI アプリケーションのプロパティが含まれています。
+
 ## <a name="properties"></a>プロパティ
-|プロパティ|種類|説明|
+|プロパティ|型|説明|
 |:---|:---|:---|
 |productCode|String|MSI の製品コードです。|
 |productVersion|String|MSI 製品のバージョンです。|
 |upgradeCode|String|Msi ファイルは、コードをアップグレードします。|
-|requiresReboot|ブール型|かどうか、MSI アプリケーションには、インストールの完了に再起動するコンピューターが必要です。|
+|requiresReboot|Boolean|かどうか、MSI アプリケーションには、インストールの完了に再起動するコンピューターが必要です。|
 |packageType|[win32LobAppMsiPackageType](../resources/intune-apps-win32lobappmsipackagetype.md)|MSI パッケージの種類です。 可能な値は、`perMachine`、`perUser`、`dualPurpose` です。|
 
 ## <a name="relationships"></a>関係
 なし
+
 ## <a name="json-representation"></a>JSON 表記
 以下は、リソースの JSON 表記です。
 <!-- {
@@ -46,7 +48,6 @@ Win32 アプリケーションの MSI アプリケーションのプロパティ
   "packageType": "String"
 }
 ```
-
 
 
 
