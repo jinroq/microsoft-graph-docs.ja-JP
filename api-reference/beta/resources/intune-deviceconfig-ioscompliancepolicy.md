@@ -1,23 +1,24 @@
 ---
 title: iosCompliancePolicy リソースの種類
 description: このクラスには、iOS のコンプライアンス設定が含まれています。
-author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 0d675e7a418a65b2b87bd0f349f6b9398111d334
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: tfitzmac
+ms.prod: Intune
+ms.openlocfilehash: a43ecbac4ddb4ec7c59c3c24ba8b0b3995e6430a
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27957740"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29425940"
 ---
 # <a name="ioscompliancepolicy-resource-type"></a>iosCompliancePolicy リソースの種類
 
-> **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。
+> **重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
 
-> **注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
+> **注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 このクラスには、iOS のコンプライアンス設定が含まれています。
+
 
 [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md) から継承します
 
@@ -31,7 +32,7 @@ ms.locfileid: "27957740"
 |[iosCompliancePolicy の更新](../api/intune-deviceconfig-ioscompliancepolicy-update.md)|[iosCompliancePolicy](../resources/intune-deviceconfig-ioscompliancepolicy.md)|[iosCompliancePolicy](../resources/intune-deviceconfig-ioscompliancepolicy.md) オブジェクトのプロパティを更新します。|
 
 ## <a name="properties"></a>プロパティ
-|プロパティ|種類|説明|
+|プロパティ|型|説明|
 |:---|:---|:---|
 |roleScopeTagIds|String コレクション|このエンティティ インスタンスのスコープのタグのリストです。 [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md) から継承します|
 |id|String|エンティティのキー。 [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md) から継承します|
@@ -51,11 +52,13 @@ ms.locfileid: "27957740"
 |passcodeRequired|Boolean|パスコードを要求するかどうかを指定します。|
 |osMinimumVersion|String|最低限必要な iOS のバージョン。|
 |osMaximumVersion|String|iOS の最高バージョン。|
+|osMinimumBuildVersion|String|最低限の IOS のバージョンをビルドします。|
+|osMaximumBuildVersion|String|最大の IOS バージョンをビルドします。|
 |securityBlockJailbrokenDevices|Boolean|デバイスの脱獄またはルート化を認めません。|
 |deviceThreatProtectionEnabled|Boolean|デバイスへの脅威に対する保護が有効になっている必要があります。|
 |deviceThreatProtectionRequiredSecurityLevel|[deviceThreatProtectionLevel](../resources/intune-deviceconfig-devicethreatprotectionlevel.md)|Mobile Threat Protection に、コンプライアンス違反をレポートするための最小のリスク レベルを要求します。 可能な値は、`unavailable`、`secured`、`low`、`medium`、`high`、`notSet` です。|
 |managedEmailProfileRequired|Boolean|管理された電子メール プロファイルを必要とするかどうかを指定します。|
-|restrictedApps|[appListItem](../resources/intune-deviceconfig-applistitem.md) コレクション|デバイスには、特定のアプリケーションがインストールされていない必要があります。 このコレクションには、最大で 10000 個の要素を含めることができます。|
+|restrictedApps|[appListItem](../resources/intune-deviceconfig-applistitem.md) コレクション|デバイスには、特定のアプリケーションがインストールされていない必要があります。 このコレクションには、最大 100 個の要素を含めることができます。|
 
 ## <a name="relationships"></a>リレーションシップ
 |リレーションシップ|型|説明|
@@ -99,6 +102,8 @@ ms.locfileid: "27957740"
   "passcodeRequired": true,
   "osMinimumVersion": "String",
   "osMaximumVersion": "String",
+  "osMinimumBuildVersion": "String",
+  "osMaximumBuildVersion": "String",
   "securityBlockJailbrokenDevices": true,
   "deviceThreatProtectionEnabled": true,
   "deviceThreatProtectionRequiredSecurityLevel": "String",
@@ -114,7 +119,6 @@ ms.locfileid: "27957740"
   ]
 }
 ```
-
 
 
 

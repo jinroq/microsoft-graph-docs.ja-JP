@@ -4,12 +4,12 @@ description: '検証中に、テナントの特定の学校のデータの同期
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: 6a15070b68e9cf249a6b6a7841ea24b0e265a24e
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 48afa5ce7efc267eedc16449324980e527409dc9
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27926142"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29425128"
 ---
 # <a name="get-educationsynchronizationerrors"></a>EducationSynchronizationErrors を取得します。
 
@@ -33,7 +33,7 @@ GET /synchronizationProfiles/{id}/errors
 このメソッドは、応答をカスタマイズするために次の[OData クエリ パラメーター](https://developer.microsoft.com/graph/docs/concepts/query_parameters)をサポートしています: $filter、$orderby、$top、$skip、および $count。
 
 ## <a name="request-headers"></a>要求ヘッダー
-| 名前       | 種類 | 説明|
+| 名前       | 型 | 説明|
 |:-----------|:------|:----------|
 | Authorization  | string  | ベアラー {トークン}。必須。  |
 
@@ -60,7 +60,7 @@ GET https://graph.microsoft.com/beta/education/synchronizationProfiles/{id}/erro
 
 <!-- {
   "blockType": "response",
-  "@odata.type": "#microsoft.graph.educationSynchronizationError",
+  "@odata.type": "microsoft.graph.educationSynchronizationError",
   "isCollection": true
 } -->
 ```http

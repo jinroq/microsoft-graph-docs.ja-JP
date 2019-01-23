@@ -1,36 +1,38 @@
 ---
 title: macOSMinimumOperatingSystem リソースの種類
 description: MacOS アプリケーションに必要な最低限のオペレーティング システムです。
-author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 05ea05d85ac12db5be6fc5eb18eff3bca0c87556
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: tfitzmac
+ms.prod: Intune
+ms.openlocfilehash: d1b5bb3c31f876cb7444ff90cad5060c08d2f60b
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27938091"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29425926"
 ---
 # <a name="macosminimumoperatingsystem-resource-type"></a>macOSMinimumOperatingSystem リソースの種類
 
-> **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。
+> **重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
 
-> **注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
+> **注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 MacOS アプリケーションに必要な最低限のオペレーティング システムです。
+
 ## <a name="properties"></a>プロパティ
-|プロパティ|種類|説明|
+|プロパティ|型|説明|
 |:---|:---|:---|
-|v10_7|ブール型|Mac OS 10.7 以降です。|
-|v10_8|ブール型|Mac OS 10.8 以降です。|
-|v10_9|ブール型|Mac OS 10.9 以降です。|
-|v10_10|ブール型|Mac OS 10.10 以降です。|
-|v10_11|ブール型|Mac OS 10.11 またはそれ以降です。|
-|v10_12|ブール型|Mac OS 10.12 以降です。|
-|v10_13|ブール型|Mac OS 10.13 またはそれ以降です。|
+|v10_7|Boolean|Mac OS 10.7 以降です。|
+|v10_8|Boolean|Mac OS 10.8 以降です。|
+|v10_9|Boolean|Mac OS 10.9 以降です。|
+|v10_10|Boolean|Mac OS 10.10 以降です。|
+|v10_11|Boolean|Mac OS 10.11 またはそれ以降です。|
+|v10_12|Boolean|Mac OS 10.12 以降です。|
+|v10_13|Boolean|Mac OS 10.13 またはそれ以降です。|
 
 ## <a name="relationships"></a>リレーションシップ
 なし
+
 ## <a name="json-representation"></a>JSON 表記
 以下は、リソースの JSON 表記です。
 <!-- {
@@ -50,7 +52,6 @@ MacOS アプリケーションに必要な最低限のオペレーティング �
   "v10_13": true
 }
 ```
-
 
 
 

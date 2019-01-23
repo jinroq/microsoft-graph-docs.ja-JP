@@ -1,23 +1,24 @@
 ---
 title: configurationManagerClientState 列挙型
 description: 構成マネージャーのクライアントの状態
-author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: fc6f3f2db68273097d70ba9dccc6844b86afa3f6
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: tfitzmac
+ms.prod: Intune
+ms.openlocfilehash: 82f4b677001346f9bd32c1bc54bed6e7fbac253d
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27923888"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29425786"
 ---
 # <a name="configurationmanagerclientstate-enum-type"></a>configurationManagerClientState 列挙型
 
-> **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。
+> **重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
 
-> **注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
+> **注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 構成マネージャーのクライアントの状態
+
 ## <a name="members"></a>メンバー
 |メンバー|値|説明|
 |:---|:---|:---|
@@ -27,7 +28,6 @@ ms.locfileid: "27923888"
 |installFailed|8|構成マネージャー エージェントをインストールできませんでした。|
 |updateFailed|11|構成マネージャー エージェントのバージョンの y を x のバージョンから更新できませんでした。 |
 |communicationError|19|構成マネージャー エージェントが過去に、構成マネージャーのサービスにアクセスできないが、不要になったこと。 |
-
 
 
 
