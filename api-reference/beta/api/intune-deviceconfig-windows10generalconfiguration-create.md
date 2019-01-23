@@ -1,25 +1,26 @@
 ---
 title: Create windows10GeneralConfiguration
 description: 新しい windows10GeneralConfiguration オブジェクトを作成します。
-author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 7cd5c8d2a12ba3407a2c4b2086b0debda5b891fc
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: tfitzmac
+ms.prod: Intune
+ms.openlocfilehash: ee8922e8704f1e28be4ca6441de67b3a852a3174
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27919177"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29411583"
 ---
 # <a name="create-windows10generalconfiguration"></a>Create windows10GeneralConfiguration
 
-> **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。
+> **重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
 
-> **注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
+> **注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 新しい [windows10GeneralConfiguration](../resources/intune-deviceconfig-windows10generalconfiguration.md) オブジェクトを作成します。
+
 ## <a name="prerequisites"></a>前提条件
-この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
+この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/concepts/permissions-reference.md)」を参照してください。
 
 |アクセス許可の種類|アクセス許可 (特権の大きいものから小さいものへ)|
 |:---|:---|
@@ -48,24 +49,23 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 
 次の表に、windows10GeneralConfiguration の作成時に必要なプロパティを示します。
 
-|プロパティ|種類|説明|
+|プロパティ|型|説明|
 |:---|:---|:---|
-|ID|String|エンティティのキー。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
+|id|String|エンティティのキー。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |lastModifiedDateTime|DateTimeOffset|オブジェクトが最後に変更された DateTime。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |roleScopeTagIds|String コレクション|このエンティティ インスタンスのスコープのタグのリストです。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
-|supportsScopeTags|ブール型|デバイスの構成を基になるスコープのタグの割り当てをサポートしているかどうかを示します。 この値が false であり、エンティティをスコープ指定されたユーザーには表示されませんがある場合、ScopeTags プロパティに割り当てることは許可されていません。 これは、Silverlight で作成されたレガシ ポリシーに対して発生し、削除して、Azure ポータル内のポリシーを再作成することで解決できます。 このプロパティは読み取りのみ可能です。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
+|supportsScopeTags|Boolean|デバイスの構成を基になるスコープのタグの割り当てをサポートしているかどうかを示します。 この値が false であり、エンティティをスコープ指定されたユーザーには表示されませんがある場合、ScopeTags プロパティに割り当てることは許可されていません。 これは、Silverlight で作成されたレガシ ポリシーに対して発生し、削除して、Azure ポータル内のポリシーを再作成することで解決できます。 このプロパティは読み取りのみ可能です。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |createdDateTime|DateTimeOffset|オブジェクトが作成された DateTime。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |説明|String|デバイス構成について管理者が提供した説明。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |displayName|String|デバイス構成について管理者が指定した名前。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |version|Int32|デバイス構成のバージョン。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
+|taskManagerBlockEndTask|Boolean|管理者以外で、タスク マネージャーを使用してタスクを終了するかどうかを指定します。|
 |windows10AppsForceUpdateSchedule|[windows10AppsForceUpdateSchedule](../resources/intune-deviceconfig-windows10appsforceupdateschedule.md)|Windows 10 アプリの更新スケジュールを強制します。|
-|enableAutomaticRedeployment|ブール型|すべてのユーザー データとデバイスに自動的に再を構成および管理を取得するために、デバイスのロック画面で ctrl キー + 勝利 + R を使用する設定を削除するのには管理者権限を持つユーザーを許可します。|
-|assignedAccessSingleModeUserName|String|このポリシー設定は、アプリケーション キオスク モードの 1 つがロックアウトされているユーザー アカウントを定義することです。|
-|assignedAccessSingleModeAppUserModelId|String|このポリシー設定は、1 つのアプリケーション キオスク モードに、アプリケーション ユーザー モデル ID (AUMID) がロックされることを定義します。|
+|enableAutomaticRedeployment|Boolean|すべてのユーザー データとデバイスに自動的に再を構成および管理を取得するために、デバイスのロック画面で ctrl キー + 勝利 + R を使用する設定を削除するのには管理者権限を持つユーザーを許可します。|
 |microsoftAccountSignInAssistantSettings|[signInAssistantOptions](../resources/intune-deviceconfig-signinassistantoptions.md)|Microsoft アカウントでサインイン アシスタント (wlidsvc) の NT サービスを制御します。 使用可能な値は、`notConfigured`、`disabled` です。|
-|authenticationAllowSecondaryDevice|ブール型|Windows で動作する第 2 の認証デバイスを使用できます。|
-|authenticationAllowFIDODevice|ブール型|デバイス (FIDO を使用して認証を許可するかどうかを示しますhttps://fidoalliance.org/)|
-|cryptographyAllowFipsAlgorithmPolicy|ブール型|連邦情報処理規格 (FIPS) ポリシーを有効または無効にするかどうかを指定します。|
+|authenticationAllowSecondaryDevice|Boolean|Windows で動作する第 2 の認証デバイスを使用できます。|
+|authenticationPreferredAzureADTenantDomainName|String|Azure AD テナントで使用可能なドメインの間で推奨されるドメインを指定します。|
+|cryptographyAllowFipsAlgorithmPolicy|Boolean|連邦情報処理規格 (FIPS) ポリシーを有効または無効にするかどうかを指定します。|
 |displayAppListWithGdiDPIScalingTurnedOn|String コレクション|GDI DPI スケールをオンになっているレガシ アプリケーションの一覧です。|
 |displayAppListWithGdiDPIScalingTurnedOff|String コレクション|GDI の DPI スケーリングを無効になっているレガシ アプリケーションの一覧です。|
 |enterpriseCloudPrintDiscoveryEndPoint|String|クラウド プリンターを検出するエンドポイント。|
@@ -74,34 +74,37 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 |enterpriseCloudPrintResourceIdentifier|String|Azure Portal で構成されている印刷サービスの OAuth リソース URI。|
 |enterpriseCloudPrintDiscoveryMaxLimit|Int32|検出エンドポイントからクエリを実行する必要があるプリンターの最大数。 これはモバイルのみでの設定です。 有効な値は 1 から 65535 までです|
 |enterpriseCloudPrintMopriaDiscoveryResourceIdentifier|String|Azure Portal で構成されているプリンター検出サービスの OAuth リソース URI。|
-|messagingBlockSync|ブール型|テキスト メッセージをブロックをバックアップおよび復元するかどうか、すべてのメッセージを示します。|
-|messagingBlockMMS|ブール型|ブロックするかどうかを示します、MMS の送信/受信デバイスで機能します。|
-|messagingBlockRichCommunicationServices|ブール型|ブロックするかどうかを示します、RCS は、デバイスの機能を送信/受信します。|
+|experienceDoNotSyncBrowserSettings|[browserSyncSetting](../resources/intune-deviceconfig-browsersyncsetting.md)|許可またはマイクロソフトのエッジのブラウザーの設定の同期を禁止します。 IT 管理者を複数のデバイスの同期がユーザーの上書きを許可するオプションです。 可能な値は、`notConfigured`、`blockedWithUserOverride`、`blocked` です。|
+|messagingBlockSync|Boolean|テキスト メッセージをブロックをバックアップおよび復元するかどうか、すべてのメッセージを示します。|
+|messagingBlockMMS|Boolean|ブロックするかどうかを示します、MMS の送信/受信デバイスで機能します。|
+|messagingBlockRichCommunicationServices|Boolean|ブロックするかどうかを示します、RCS は、デバイスの機能を送信/受信します。|
 |printerNames|String コレクション|名前 (ホストのネットワーク名) に基づいてプリンターを自動的に準備します。|
 |printerDefaultName|String|インストール済みのプリンターの名前 (ネットワーク ・ ホスト名) が。|
-|printerBlockAddition|ブール型|プリンターの設定からの他のプリンターのインストールをユーザーを防止します。|
+|printerBlockAddition|Boolean|プリンターの設定からの他のプリンターのインストールをユーザーを防止します。|
 |searchBlockDiacritics|Boolean|検索で分音記号を使用できるかどうかを指定します。|
 |searchDisableAutoLanguageDetection|Boolean|コンテンツとプロパティのインデックスを作成するときに、自動言語検出を使用するかどうかを指定します。|
 |searchDisableIndexingEncryptedItems|Boolean|Cortana またはエクスプローラーの検索結果に表示されないようにするため、WIP で保護されているアイテムのインデックス作成を禁止するかどうかを示します。|
 |searchEnableRemoteQueries|Boolean|このコンピューターのインデックスに対するリモート クエリをブロックするかどうかを示します。|
-|searchDisableUseLocation|ブール型|場所情報検索を使用してかどうかを指定します。|
-|searchDisableLocation|ブール型|場所情報検索を使用してかどうかを指定します。|
+|searchDisableUseLocation|Boolean|場所情報検索を使用してかどうかを指定します。|
+|searchDisableLocation|Boolean|場所情報検索を使用してかどうかを指定します。|
 |searchDisableIndexerBackoff|Boolean|インデクサー バックオフの検索機能を無効にするかどうかを示します。|
 |searchDisableIndexingRemovableDrive|Boolean|リムーバブル ドライブ上の場所をライブラリに追加してインデックスを作成することをユーザーに許可するかどうかを示します。|
 |searchEnableAutomaticIndexSizeManangement|Boolean|インデックスの場所と同じドライブ上のハード ドライブ領域の最小値を指定して、その最小値を下回ったらインデックス作成を停止するかどうかを示します。|
-|searchBlockWebResults|ブール型|Web 検索をブロックするかどうかを示します。|
-|securityBlockAzureADJoinedDevicesAutoEncryption|ブール型|デバイスが Azure の AD が参加している (デスクトップのみ) の場合は、OOBE 中にデバイスの自動暗号化を許可するかどうかを指定します。|
+|searchBlockWebResults|Boolean|Web 検索をブロックするかどうかを示します。|
+|securityBlockAzureADJoinedDevicesAutoEncryption|Boolean|デバイスが Azure の AD が参加している (デスクトップのみ) の場合は、OOBE 中にデバイスの自動暗号化を許可するかどうかを指定します。|
 |diagnosticsDataSubmissionMode|[diagnosticDataSubmissionMode](../resources/intune-deviceconfig-diagnosticdatasubmissionmode.md)|診断データと利用統計情報データ (Watson など) の送信をデバイスに許可する値を取得または設定します。 可能な値は、`userDefined`、`none`、`basic`、`enhanced`、`full` です。|
 |oneDriveDisableFileSync|Boolean|アプリや機能から OneDrive 上のファイルを操作することを IT 管理者が禁止できるかどうかを示す値を取得または設定します。|
 |systemTelemetryProxyServer|String|取得または完全修飾ドメイン名 (FQDN) または接続されているユーザーの経験および遠隔測定の要求を転送するようにプロキシ サーバーの IP アドレスを設定します。|
+|edgeTelemetryForMicrosoft365Analytics|[edgeTelemetryMode](../resources/intune-deviceconfig-edgetelemetrymode.md)|遠隔測定データの種類を指定 ([なし]、イントラネット、インターネット、両方) 365 の分析機能を Microsoft に送信されます。 可能な値は、`notConfigured`、`intranet`、`internet`、`intranetAndInternet` です。|
 |inkWorkspaceAccess|[inkAccessSetting](../resources/intune-deviceconfig-inkaccesssetting.md)|デスクトップで、画面のロックの上から、インクのワークスペースにユーザー アクセスを制御します。 可能な値は、`notConfigured`、`enabled`、`disabled` です。|
 |inkWorkspaceAccessState|[stateManagementSetting](../resources/intune-deviceconfig-statemanagementsetting.md)|デスクトップで、画面のロックの上から、インクのワークスペースにユーザー アクセスを制御します。 可能な値は、`notConfigured`、`blocked`、`allowed` です。|
-|inkWorkspaceBlockSuggestedApps|ブール型|インクのワークスペースでアプリケーションの推奨される修正候補を表示するかどうかを指定します。|
+|inkWorkspaceBlockSuggestedApps|Boolean|インクのワークスペースでアプリケーションの推奨される修正候補を表示するかどうかを指定します。|
 |smartScreenEnableAppInstallControl|Boolean|ユーザーがストア以外の場所からアプリをインストールできるかどうかを IT 管理者が制御することを許可します。|
 |personalizationDesktopImageUrl|String|ダウンロードしてデスクトップ画像として使用する必要がある jpg、jpeg、png 画像の http または https URL、あるいはデスクトップ画像として使用する必要があるファイル システム上のローカル画像のファイル URL。|
 |personalizationLockScreenImageUrl|String|ダウンロードしてロック画面画像として使用する必要がある jpg、jpeg、png 画像の http または https URL、あるいはロック画面画像として使用する必要があるファイル システム上のローカル画像のファイル URL。|
 |bluetoothAllowedServices|String コレクション|許可されている Bluetooth サービスおよびプロファイルの一覧を 16 進形式の文字列として指定します。|
 |bluetoothBlockAdvertising|Boolean|ユーザーが Bluetooth 広告を使用することを禁止するかどうか。|
+|bluetoothBlockPromptedProximalConnections|Boolean|Swift のペア、およびその他の近接を使用してユーザーをブロックするかどうかはベースのシナリオです。|
 |bluetoothBlockDiscoverableMode|Boolean|ユーザーが Bluetooth の発見可能モードを使用することを禁止するかどうか。|
 |bluetoothBlockPrePairing|Boolean|バンドルされた特定のいくつかの Bluetooth 周辺機器を自動的にホスト デバイスとペアにすることを禁止するかどうか。|
 |edgeBlockAutofill|Boolean|自動入力を禁止するかどうかを示します。|
@@ -121,7 +124,22 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 |edgeBlockLiveTileDataCollection|Boolean|ユーザーが Microsoft Edge からスタートにサイトをピン留めしたときに、ライブ タイルを作成するために Microsoft が情報を収集することを禁止します。|
 |edgeSyncFavoritesWithInternetExplorer|Boolean|Internet Explorer と Microsoft Edge の間でお気に入りの同期を有効にします。 お気に入りの追加、削除、変更、順序変更が、ブラウザー間で共有されます。|
 |edgeFavoritesListLocation|String|お気に入りの一覧を提供する場所です。 ローカル ファイル、ローカル ネットワーク、http の場所が該当します。|
-|edgeBlockEditFavorites|ブール型|[お気に入り] に変更を加えてからユーザーをブロックするかどうかを示します。|
+|edgeBlockEditFavorites|Boolean|[お気に入り] に変更を加えてからユーザーをブロックするかどうかを示します。|
+|edgeNewTabPageURL|String|新しいタブが作成されるときにページが開かれたかを指定します。|
+|edgeHomeButtonConfiguration|[edgeHomeButtonConfiguration](../resources/intune-deviceconfig-edgehomebuttonconfiguration.md)|か、非表示にする、既定の開始ページを読み込む、新しいタブ ページで、またはユーザー設定の URL をロードするのには [ホーム] ボタンは、します。|
+|edgeHomeButtonConfigurationEnabled|Boolean|ホーム ボタンの設定を有効にします。|
+|edgeOpensWith|[edgeOpenOptions](../resources/intune-deviceconfig-edgeopenoptions.md)|起動時にどのようなページが開かれているかを指定します。 可能な値は、`notConfigured`、`startPage`、`newTabPage`、`previousPages`、`specificPages` です。|
+|edgeBlockSideloadingExtensions|Boolean|Sideload の拡張機能がユーザーにことができるかどうかを示します。|
+|edgeRequiredExtensionPackageFamilyNames|String コレクション|必要なをオフにできません、ユーザーがブラウザーの拡張機能のパッケージ ファミリ名の一覧を指定します。|
+|edgeBlockPrinting|Boolean|エッジを許可またはブロック印刷を構成します。|
+|edgeFavoritesBarVisibility|[visibilitySetting](../resources/intune-deviceconfig-visibilitysetting.md)|取得またはお気に入りバーを常に表示または任意のページ上で非表示に設定するかどうかを指定する値を設定します。 可能な値は、`notConfigured`、`hide`、`show` です。|
+|edgeBlockSavingHistory|Boolean|ブラウザーの履歴を保存するか、ブラウザーの履歴を保存しない] を許可するエッジを構成します。|
+|edgeBlockFullScreenMode|Boolean|許可またはエッジが全画面表示モードに入ることを防止します。|
+|edgeBlockWebContentOnNewTabPage|Boolean|マイクロソフトのエッジは、新しいタブを開いたときに表示される内容を構成します。|
+|edgeBlockTabPreloading|Boolean|エッジは、Windows の起動時に新しいタブ ページをプリロードするかどうかを構成します。|
+|edgeBlockPrelaunch|Boolean|マイクロソフトのエッジが Windows の起動時に prelaunched があるかどうかを決定します。|
+|edgeShowMessageWhenOpeningInternetExplorerSites|[internetExplorerMessageSetting](../resources/intune-deviceconfig-internetexplorermessagesetting.md)|Internet Explorer に切り替える前にエッジが表示されるメッセージを制御します。 可能な値は、`notConfigured`、`disabled`、`enabled`、`keepGoing` です。|
+|edgePreventCertificateErrorOverride|Boolean|許可またはユーザーが証明書のエラーを上書きできないようにします。|
 |cellularBlockDataWhenRoaming|Boolean|ローミング中に携帯電話上でユーザーがデータを使用することを禁止するかどうか。|
 |cellularBlockVpn|Boolean|携帯電話上でユーザーが VPN を使用することを禁止するかどうか。|
 |cellularBlockVpnWhenRoaming|Boolean|ローミング時に携帯電話上でユーザーが VPN を使用することを禁止するかどうか。|
@@ -156,7 +174,7 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 |defenderCloudBlockLevel|[defenderCloudBlockLevelType](../resources/intune-deviceconfig-defendercloudblockleveltype.md)|クラウド配信の保護レベルを指定します。 可能な値は、`notConfigured`、`high`、`highPlus`、`zeroTolerance` です。|
 |defenderCloudExtendedTimeout|Int32|クラウドでスキャンするファイルの拡張子をタイムアウトします。 有効な値は 0 から 50 までです|
 |defenderCloudExtendedTimeoutInSeconds|Int32|クラウドでスキャンするファイルの拡張子をタイムアウトします。 有効な値は 0 から 50 までです|
-|defenderBlockOnAccessProtection|ブール型|Windows Defender のアクセスの保護機能を許可または拒否します。|
+|defenderBlockOnAccessProtection|Boolean|Windows Defender のアクセスの保護機能を許可または拒否します。|
 |defenderScheduleScanDay|[defenderScheduleScanDay](../resources/intune-deviceconfig-defenderschedulescanday.md)|Windows Defender スキャンを実行する日を選択します。 可能な値は、`everyday`、`monday`、`tuesday`、`wednesday`、`thursday`、`friday`、`saturday`、`sunday`、`noScheduledScan` です。|
 |defenderSubmitSamplesConsentType|[defenderSubmitSamplesConsentType](../resources/intune-deviceconfig-defendersubmitsamplesconsenttype.md)|ユーザーに対するチェック データを送信する Windows Defender のレベルに同意するものです。 可能な値は、`sendSafeSamplesAutomatically`、`alwaysPrompt`、`neverSend`、`sendAllSamplesAutomatically` です。|
 |lockScreenAllowTimeoutConfiguration|Boolean|Windows 10 Mobile デバイスのロック画面で、画面のタイムアウトを制御するユーザー構成可能な設定を表示するかどうかを指定します。 このポリシーが [許可] に設定されている場合は、lockScreenTimeoutInSeconds によって設定された値は無視されます。|
@@ -178,8 +196,8 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 |privacyAdvertisingId|[stateManagementSetting](../resources/intune-deviceconfig-statemanagementsetting.md)|広告識別子の使用を有効または無効にします。 Windows 10 バージョン 1607 で追加されました。 可能な値は、`notConfigured`、`blocked`、`allowed` です。|
 |privacyAutoAcceptPairingAndConsentPrompts|Boolean|アプリの起動時に、ペアリングとプライバシーに関するユーザーの同意ダイアログの自動受け入れを許可するかどうかを示します。|
 |privacyBlockInputPersonalization|Boolean|Cortana、音声入力、ストア アプリケーションに対するクラウド ベースの音声サービスの使用を禁止するかどうかを示します。|
-|privacyBlockPublishUserActivities|ブール型|タスク切り替え等で最近使用したリソースの共有の経験と発見をブロックします。|
-|privacyBlockActivityFeed|ブール型|Cortana、ディクテーション、またはストアのアプリケーションをクラウド ベースの音声認識サービスの使用をブロックします。|
+|privacyBlockPublishUserActivities|Boolean|タスク切り替え等で最近使用したリソースの共有の経験と発見をブロックします。|
+|privacyBlockActivityFeed|Boolean|Cortana、ディクテーション、またはストアのアプリケーションをクラウド ベースの音声認識サービスの使用をブロックします。|
 |startBlockUnpinningAppsFromTaskbar|Boolean|ユーザーがタスク バーからアプリのピン留めを外すことを禁止するかどうかを示します。|
 |startMenuAppListVisibility|[windowsStartMenuAppListVisibilityType](../resources/intune-deviceconfig-windowsstartmenuapplistvisibilitytype.md)|この値を設定すると、アプリ リストを折りたたんだり、アプリ リスト全体を削除したり、設定アプリで対応する切り替えを無効にしたりできます。 可能な値は、`userDefined`、`collapse`、`remove`、`disableSettingsApp` です。|
 |startMenuHideChangeAccountSettings|Boolean|このポリシーを有効にすると、スタート メニューのユーザー タイルに [アカウント設定の変更] が表示されなくなります。|
@@ -245,7 +263,8 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 |safeSearchFilter|[safeSearchFilterType](../resources/intune-deviceconfig-safesearchfiltertype.md)|セーフ サーチに必要なフィルター レベルを指定します。 可能な値は、`userDefined`、`strict`、`moderate` です。|
 |edgeBlockPopups|Boolean|ポップアップをブロックするかどうかを示します。|
 |edgeBlockSearchSuggestions|Boolean|ユーザーがアドレス バーで検索候補を使用することを禁止するかどうかを示します。|
-|edgeBlockSendingIntranetTrafficToInternetExplorer|Boolean|ユーザーが Edge から Internet Explorer にイントラネット トラフィックを送信することを禁止するかどうかを示します。|
+|edgeBlockSendingIntranetTrafficToInternetExplorer|Boolean|エッジから Internet Explorer のイントラネットのトラフィックを切り替えるかどうかを示します。 メモ: このプロパティの名前は誤解を招きます。プロパティは使用されていません、EdgeSendIntranetTrafficToInternetExplorer を代わりに使用します。|
+|edgeSendIntranetTrafficToInternetExplorer|Boolean|エッジから Internet Explorer のイントラネットのトラフィックを切り替えるかどうかを示します。|
 |edgeRequireSmartScreen|Boolean|スマート スクリーン フィルターの使用をユーザーに要求するかどうかを示します。|
 |edgeEnterpriseModeSiteListLocation|String|エンタープライズ モードのサイト リストの場所を示します。 ローカル ファイル、ローカル ネットワーク、http の場所が該当します。|
 |edgeFirstRunUrl|String|Edge ブラウザーを初めて開いたときに最初に実行される URL です。|
@@ -294,10 +313,10 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 |experienceBlockErrorDialogWhenNoSIM|Boolean|SIM カードが検出されない場合にエラー ダイアログを表示することを許可するかどうかを示します。|
 |experienceBlockTaskSwitcher|Boolean|デバイスでのタスクの切り替えを有効にするかどうかを示します。|
 |logonBlockFastUserSwitching|Boolean|同時にログオンしているユーザー間での切り替えをログオフなしで迅速に行う機能を無効にします。|
-|tenantLockdownRequireNetworkDuringOutOfBoxExperience|ブール型|かどうか、デバイスがネットワークに接続する必要があります。|
-|appManagementMSIAllowUserControlOverInstall|ブール型|このポリシー設定は、通常は、システム管理者のみが利用可能なインストール オプションを変更するユーザーを許可します。|
-|appManagementMSIAlwaysInstallWithElevatedPrivileges|ブール型|このポリシー設定では、Windows インストーラーがシステム上で任意のプログラムをインストールするときに、昇格されたアクセス許可を使用するように指示します。|
-|dataProtectionBlockDirectMemoryAccess|ブール型|このポリシー設定によって、ユーザーが Windows にログインするまですべてホット プラグ可能なダウン ストリーム システムが不安定を使用すると、ダイレクト メモリ アクセス (DMA) をブロックするができます。|
+|tenantLockdownRequireNetworkDuringOutOfBoxExperience|Boolean|かどうか、デバイスがネットワークに接続する必要があります。|
+|appManagementMSIAllowUserControlOverInstall|Boolean|このポリシー設定は、通常は、システム管理者のみが利用可能なインストール オプションを変更するユーザーを許可します。|
+|appManagementMSIAlwaysInstallWithElevatedPrivileges|Boolean|このポリシー設定では、Windows インストーラーがシステム上で任意のプログラムをインストールするときに、昇格されたアクセス許可を使用するように指示します。|
+|dataProtectionBlockDirectMemoryAccess|Boolean|このポリシー設定によって、ユーザーが Windows にログインするまですべてホット プラグ可能なダウン ストリーム システムが不安定を使用すると、ダイレクト メモリ アクセス (DMA) をブロックするができます。|
 
 
 
@@ -305,16 +324,16 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 成功した場合、このメソッドは `201 Created` 応答コードと、応答本文で [windows10GeneralConfiguration](../resources/intune-deviceconfig-windows10generalconfiguration.md) オブジェクトを返します。
 
 ## <a name="example"></a>例
+
 ### <a name="request"></a>要求
 以下は、要求の例です。
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations
 Content-type: application/json
-Content-length: 12202
+Content-length: 13056
 
 {
   "@odata.type": "#microsoft.graph.windows10GeneralConfiguration",
-  "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
   "roleScopeTagIds": [
     "Role Scope Tag Ids value"
   ],
@@ -322,6 +341,7 @@ Content-length: 12202
   "description": "Description value",
   "displayName": "Display Name value",
   "version": 7,
+  "taskManagerBlockEndTask": true,
   "windows10AppsForceUpdateSchedule": {
     "@odata.type": "microsoft.graph.windows10AppsForceUpdateSchedule",
     "startDateTime": "2016-12-31T23:58:46.7156189-08:00",
@@ -329,11 +349,9 @@ Content-length: 12202
     "runImmediatelyIfAfterStartDateTime": true
   },
   "enableAutomaticRedeployment": true,
-  "assignedAccessSingleModeUserName": "Assigned Access Single Mode User Name value",
-  "assignedAccessSingleModeAppUserModelId": "Assigned Access Single Mode App User Model Id value",
   "microsoftAccountSignInAssistantSettings": "disabled",
   "authenticationAllowSecondaryDevice": true,
-  "authenticationAllowFIDODevice": true,
+  "authenticationPreferredAzureADTenantDomainName": "Authentication Preferred Azure ADTenant Domain Name value",
   "cryptographyAllowFipsAlgorithmPolicy": true,
   "displayAppListWithGdiDPIScalingTurnedOn": [
     "Display App List With Gdi DPIScaling Turned On value"
@@ -347,6 +365,7 @@ Content-length: 12202
   "enterpriseCloudPrintResourceIdentifier": "Enterprise Cloud Print Resource Identifier value",
   "enterpriseCloudPrintDiscoveryMaxLimit": 5,
   "enterpriseCloudPrintMopriaDiscoveryResourceIdentifier": "Enterprise Cloud Print Mopria Discovery Resource Identifier value",
+  "experienceDoNotSyncBrowserSettings": "blockedWithUserOverride",
   "messagingBlockSync": true,
   "messagingBlockMMS": true,
   "messagingBlockRichCommunicationServices": true,
@@ -369,6 +388,7 @@ Content-length: 12202
   "diagnosticsDataSubmissionMode": "none",
   "oneDriveDisableFileSync": true,
   "systemTelemetryProxyServer": "System Telemetry Proxy Server value",
+  "edgeTelemetryForMicrosoft365Analytics": "intranet",
   "inkWorkspaceAccess": "enabled",
   "inkWorkspaceAccessState": "blocked",
   "inkWorkspaceBlockSuggestedApps": true,
@@ -379,6 +399,7 @@ Content-length: 12202
     "Bluetooth Allowed Services value"
   ],
   "bluetoothBlockAdvertising": true,
+  "bluetoothBlockPromptedProximalConnections": true,
   "bluetoothBlockDiscoverableMode": true,
   "bluetoothBlockPrePairing": true,
   "edgeBlockAutofill": true,
@@ -399,6 +420,25 @@ Content-length: 12202
   "edgeSyncFavoritesWithInternetExplorer": true,
   "edgeFavoritesListLocation": "Edge Favorites List Location value",
   "edgeBlockEditFavorites": true,
+  "edgeNewTabPageURL": "Edge New Tab Page URL value",
+  "edgeHomeButtonConfiguration": {
+    "@odata.type": "microsoft.graph.edgeHomeButtonConfiguration"
+  },
+  "edgeHomeButtonConfigurationEnabled": true,
+  "edgeOpensWith": "startPage",
+  "edgeBlockSideloadingExtensions": true,
+  "edgeRequiredExtensionPackageFamilyNames": [
+    "Edge Required Extension Package Family Names value"
+  ],
+  "edgeBlockPrinting": true,
+  "edgeFavoritesBarVisibility": "hide",
+  "edgeBlockSavingHistory": true,
+  "edgeBlockFullScreenMode": true,
+  "edgeBlockWebContentOnNewTabPage": true,
+  "edgeBlockTabPreloading": true,
+  "edgeBlockPrelaunch": true,
+  "edgeShowMessageWhenOpeningInternetExplorerSites": "disabled",
+  "edgePreventCertificateErrorOverride": true,
   "cellularBlockDataWhenRoaming": true,
   "cellularBlockVpn": true,
   "cellularBlockVpnWhenRoaming": true,
@@ -542,6 +582,7 @@ Content-length: 12202
   "edgeBlockPopups": true,
   "edgeBlockSearchSuggestions": true,
   "edgeBlockSendingIntranetTrafficToInternetExplorer": true,
+  "edgeSendIntranetTrafficToInternetExplorer": true,
   "edgeRequireSmartScreen": true,
   "edgeEnterpriseModeSiteListLocation": "Edge Enterprise Mode Site List Location value",
   "edgeFirstRunUrl": "https://example.com/edgeFirstRunUrl/",
@@ -606,7 +647,7 @@ Content-length: 12202
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 12310
+Content-Length: 13228
 
 {
   "@odata.type": "#microsoft.graph.windows10GeneralConfiguration",
@@ -620,6 +661,7 @@ Content-Length: 12310
   "description": "Description value",
   "displayName": "Display Name value",
   "version": 7,
+  "taskManagerBlockEndTask": true,
   "windows10AppsForceUpdateSchedule": {
     "@odata.type": "microsoft.graph.windows10AppsForceUpdateSchedule",
     "startDateTime": "2016-12-31T23:58:46.7156189-08:00",
@@ -627,11 +669,9 @@ Content-Length: 12310
     "runImmediatelyIfAfterStartDateTime": true
   },
   "enableAutomaticRedeployment": true,
-  "assignedAccessSingleModeUserName": "Assigned Access Single Mode User Name value",
-  "assignedAccessSingleModeAppUserModelId": "Assigned Access Single Mode App User Model Id value",
   "microsoftAccountSignInAssistantSettings": "disabled",
   "authenticationAllowSecondaryDevice": true,
-  "authenticationAllowFIDODevice": true,
+  "authenticationPreferredAzureADTenantDomainName": "Authentication Preferred Azure ADTenant Domain Name value",
   "cryptographyAllowFipsAlgorithmPolicy": true,
   "displayAppListWithGdiDPIScalingTurnedOn": [
     "Display App List With Gdi DPIScaling Turned On value"
@@ -645,6 +685,7 @@ Content-Length: 12310
   "enterpriseCloudPrintResourceIdentifier": "Enterprise Cloud Print Resource Identifier value",
   "enterpriseCloudPrintDiscoveryMaxLimit": 5,
   "enterpriseCloudPrintMopriaDiscoveryResourceIdentifier": "Enterprise Cloud Print Mopria Discovery Resource Identifier value",
+  "experienceDoNotSyncBrowserSettings": "blockedWithUserOverride",
   "messagingBlockSync": true,
   "messagingBlockMMS": true,
   "messagingBlockRichCommunicationServices": true,
@@ -667,6 +708,7 @@ Content-Length: 12310
   "diagnosticsDataSubmissionMode": "none",
   "oneDriveDisableFileSync": true,
   "systemTelemetryProxyServer": "System Telemetry Proxy Server value",
+  "edgeTelemetryForMicrosoft365Analytics": "intranet",
   "inkWorkspaceAccess": "enabled",
   "inkWorkspaceAccessState": "blocked",
   "inkWorkspaceBlockSuggestedApps": true,
@@ -677,6 +719,7 @@ Content-Length: 12310
     "Bluetooth Allowed Services value"
   ],
   "bluetoothBlockAdvertising": true,
+  "bluetoothBlockPromptedProximalConnections": true,
   "bluetoothBlockDiscoverableMode": true,
   "bluetoothBlockPrePairing": true,
   "edgeBlockAutofill": true,
@@ -697,6 +740,25 @@ Content-Length: 12310
   "edgeSyncFavoritesWithInternetExplorer": true,
   "edgeFavoritesListLocation": "Edge Favorites List Location value",
   "edgeBlockEditFavorites": true,
+  "edgeNewTabPageURL": "Edge New Tab Page URL value",
+  "edgeHomeButtonConfiguration": {
+    "@odata.type": "microsoft.graph.edgeHomeButtonConfiguration"
+  },
+  "edgeHomeButtonConfigurationEnabled": true,
+  "edgeOpensWith": "startPage",
+  "edgeBlockSideloadingExtensions": true,
+  "edgeRequiredExtensionPackageFamilyNames": [
+    "Edge Required Extension Package Family Names value"
+  ],
+  "edgeBlockPrinting": true,
+  "edgeFavoritesBarVisibility": "hide",
+  "edgeBlockSavingHistory": true,
+  "edgeBlockFullScreenMode": true,
+  "edgeBlockWebContentOnNewTabPage": true,
+  "edgeBlockTabPreloading": true,
+  "edgeBlockPrelaunch": true,
+  "edgeShowMessageWhenOpeningInternetExplorerSites": "disabled",
+  "edgePreventCertificateErrorOverride": true,
   "cellularBlockDataWhenRoaming": true,
   "cellularBlockVpn": true,
   "cellularBlockVpnWhenRoaming": true,
@@ -840,6 +902,7 @@ Content-Length: 12310
   "edgeBlockPopups": true,
   "edgeBlockSearchSuggestions": true,
   "edgeBlockSendingIntranetTrafficToInternetExplorer": true,
+  "edgeSendIntranetTrafficToInternetExplorer": true,
   "edgeRequireSmartScreen": true,
   "edgeEnterpriseModeSiteListLocation": "Edge Enterprise Mode Site List Location value",
   "edgeFirstRunUrl": "https://example.com/edgeFirstRunUrl/",
@@ -898,7 +961,6 @@ Content-Length: 12310
   "dataProtectionBlockDirectMemoryAccess": true
 }
 ```
-
 
 
 

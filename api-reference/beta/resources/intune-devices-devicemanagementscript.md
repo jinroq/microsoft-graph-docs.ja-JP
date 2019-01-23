@@ -1,23 +1,24 @@
 ---
 title: deviceManagementScript リソースの種類
 description: Intune は、10 の登録されている windows Azure Active Directory が参加しているデバイスで、Powershell スクリプトを実行する機能を顧客に提供します。 スクリプトは、1 回だけまたは定期的に実行できます。
-author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 0f2747b966384e5e0abaf165ca463174b60ced8b
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: tfitzmac
+ms.prod: Intune
+ms.openlocfilehash: 4fda826ec8033cd51ad4dd13dbc5b523a21e9e3a
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27932309"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29412528"
 ---
 # <a name="devicemanagementscript-resource-type"></a>deviceManagementScript リソースの種類
 
-> **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。
+> **重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
 
-> **注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
+> **注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 Intune は、10 の登録されている windows Azure Active Directory が参加しているデバイスで、Powershell スクリプトを実行する機能を顧客に提供します。 スクリプトは、1 回だけまたは定期的に実行できます。
+
 ## <a name="methods"></a>メソッド
 |メソッド|戻り値の型|説明|
 |:---|:---|:---|
@@ -31,7 +32,7 @@ Intune は、10 の登録されている windows Azure Active Directory が参�
 ## <a name="properties"></a>プロパティ
 |プロパティ|型|説明|
 |:---|:---|:---|
-|ID|String|デバイス管理スクリプト用の一意の識別子。|
+|id|String|デバイス管理スクリプト用の一意の識別子。|
 |displayName|String|デバイスの管理スクリプトの名前です。|
 |説明|String|デバイスの管理スクリプトのオプションの説明です。|
 |runSchedule|[runSchedule](../resources/intune-devices-runschedule.md)|スクリプトを実行する間隔です。 定義されていないスクリプトは実行 1 回|
@@ -41,6 +42,8 @@ Intune は、10 の登録されている windows Azure Active Directory が参�
 |runAsAccount|[runAsAccountType](../resources/intune-shared-runasaccounttype.md)|デバイス管理のスクリプトで実行される実行コンテキストの種類を示します。 使用可能な値は、`system`、`user` です。|
 |enforceSignatureCheck|Boolean|スクリプト署名をチェックする必要があるかどうかを指定します。|
 |fileName|String|スクリプト ファイルの名前です。|
+|roleScopeTagIds|String コレクション|この PowerShellScript インスタンスのスコープのタグ Id のリストです。|
+|runAs32Bit|Boolean|PowerShell スクリプトが 32 ビットとして実行する必要があるかどうかを示す値|
 
 ## <a name="relationships"></a>リレーションシップ
 |リレーションシップ|型|説明|
@@ -73,10 +76,13 @@ Intune は、10 の登録されている windows Azure Active Directory が参�
   "lastModifiedDateTime": "String (timestamp)",
   "runAsAccount": "String",
   "enforceSignatureCheck": true,
-  "fileName": "String"
+  "fileName": "String",
+  "roleScopeTagIds": [
+    "String"
+  ],
+  "runAs32Bit": true
 }
 ```
-
 
 
 

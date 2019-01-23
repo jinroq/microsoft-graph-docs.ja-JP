@@ -1,25 +1,26 @@
 ---
 title: MobileAppInstallSummary を更新します。
 description: MobileAppInstallSummary オブジェクトのプロパティを更新します。
-author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 3886512ff2524ccf2ac424d198533ebaafae20ee
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: tfitzmac
+ms.prod: Intune
+ms.openlocfilehash: 1975e8dae02876f6d083279e814f5199530aa1ab
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27930062"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29413298"
 ---
 # <a name="update-mobileappinstallsummary"></a>MobileAppInstallSummary を更新します。
 
-> **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。
+> **重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
 
-> **注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
+> **注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 [MobileAppInstallSummary](../resources/intune-apps-mobileappinstallsummary.md)オブジェクトのプロパティを更新します。
+
 ## <a name="prerequisites"></a>前提条件
-この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
+この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/concepts/permissions-reference.md)」を参照してください。
 
 |アクセス許可の種類|アクセス許可 (特権の大きいものから小さいものへ)|
 |:---|:---|
@@ -49,7 +50,7 @@ PATCH /deviceAppManagement/mobileApps/{mobileAppId}/installSummary
 
 |プロパティ|型|説明|
 |:---|:---|:---|
-|ID|String|エンティティのキー。|
+|id|String|エンティティのキー。|
 |installedDeviceCount|Int32|このアプリケーションを正常にインストールするデバイスの数です。|
 |failedDeviceCount|Int32|このアプリケーションのインストールに失敗したデバイスの数。|
 |notApplicableDeviceCount|Int32|このアプリケーションには適用されていないデバイスの数です。|
@@ -67,14 +68,16 @@ PATCH /deviceAppManagement/mobileApps/{mobileAppId}/installSummary
 かどうかは成功すると、このメソッドが返されます、`200 OK`応答コードおよび応答の本文に更新された[mobileAppInstallSummary](../resources/intune-apps-mobileappinstallsummary.md)オブジェクトです。
 
 ## <a name="example"></a>例
+
 ### <a name="request"></a>要求
 以下は、要求の例です。
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/{mobileAppId}/installSummary
 Content-type: application/json
-Content-length: 312
+Content-length: 374
 
 {
+  "@odata.type": "#microsoft.graph.mobileAppInstallSummary",
   "installedDeviceCount": 4,
   "failedDeviceCount": 1,
   "notApplicableDeviceCount": 8,
@@ -110,7 +113,6 @@ Content-Length: 423
   "pendingInstallUserCount": 7
 }
 ```
-
 
 
 
