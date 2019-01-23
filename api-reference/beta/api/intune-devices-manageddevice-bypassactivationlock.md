@@ -1,33 +1,34 @@
 ---
 title: bypassActivationLock アクション
 description: アクティベーション ロックをバイパスする
-author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 07116f927ef0d1dd63451330f1c9fd56f94946f7
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: tfitzmac
+ms.prod: Intune
+ms.openlocfilehash: debe459ab95199407917483ef9d9da42df60c057
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27913493"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29404072"
 ---
-# <a name="bypassactivationlock-action"></a><span data-ttu-id="51539-103">bypassActivationLock アクション</span><span class="sxs-lookup"><span data-stu-id="51539-103">bypassActivationLock action</span></span>
+# <a name="bypassactivationlock-action"></a><span data-ttu-id="1d90a-103">bypassActivationLock アクション</span><span class="sxs-lookup"><span data-stu-id="1d90a-103">bypassActivationLock action</span></span>
 
-> <span data-ttu-id="51539-104">**重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。</span><span class="sxs-lookup"><span data-stu-id="51539-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="51539-105">実稼働アプリケーションでの、これらの API の使用はサポートされていません。</span><span class="sxs-lookup"><span data-stu-id="51539-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="1d90a-104">**重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。</span><span class="sxs-lookup"><span data-stu-id="1d90a-104">**Important:** APIs under the /beta version in Microsoft Graph are subject to change.</span></span> <span data-ttu-id="1d90a-105">実稼働アプリケーションでこれらの API を使用することは、サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="1d90a-105">Use of these APIs in production applications is not supported.</span></span>
 
-> <span data-ttu-id="51539-106">**注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。</span><span class="sxs-lookup"><span data-stu-id="51539-106">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
+> <span data-ttu-id="1d90a-106">**注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。</span><span class="sxs-lookup"><span data-stu-id="1d90a-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="51539-107">アクティベーション ロックをバイパスする</span><span class="sxs-lookup"><span data-stu-id="51539-107">Bypass activation lock</span></span>
-## <a name="prerequisites"></a><span data-ttu-id="51539-108">前提条件</span><span class="sxs-lookup"><span data-stu-id="51539-108">Prerequisites</span></span>
-<span data-ttu-id="51539-p102">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="51539-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="1d90a-107">アクティベーション ロックをバイパスする</span><span class="sxs-lookup"><span data-stu-id="1d90a-107">Bypass activation lock</span></span>
 
-|<span data-ttu-id="51539-111">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="51539-111">Permission type</span></span>|<span data-ttu-id="51539-112">アクセス許可 (特権の大きいものから小さいものへ)</span><span class="sxs-lookup"><span data-stu-id="51539-112">Permissions (from most to least privileged)</span></span>|
+## <a name="prerequisites"></a><span data-ttu-id="1d90a-108">前提条件</span><span class="sxs-lookup"><span data-stu-id="1d90a-108">Prerequisites</span></span>
+<span data-ttu-id="1d90a-p102">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/concepts/permissions-reference.md)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="1d90a-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/concepts/permissions-reference.md).</span></span>
+
+|<span data-ttu-id="1d90a-111">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="1d90a-111">Permission type</span></span>|<span data-ttu-id="1d90a-112">アクセス許可 (特権の大きいものから小さいものへ)</span><span class="sxs-lookup"><span data-stu-id="1d90a-112">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="51539-113">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="51539-113">Delegated (work or school account)</span></span>|<span data-ttu-id="51539-114">DeviceManagementManagedDevices.PriviligedOperation.All</span><span class="sxs-lookup"><span data-stu-id="51539-114">DeviceManagementManagedDevices.PriviligedOperation.All</span></span>|
-|<span data-ttu-id="51539-115">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="51539-115">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="51539-116">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="51539-116">Not supported.</span></span>|
-|<span data-ttu-id="51539-117">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="51539-117">Application</span></span>|<span data-ttu-id="51539-118">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="51539-118">Not supported.</span></span>|
+|<span data-ttu-id="1d90a-113">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="1d90a-113">Delegated (work or school account)</span></span>|<span data-ttu-id="1d90a-114">DeviceManagementManagedDevices.PriviligedOperation.All</span><span class="sxs-lookup"><span data-stu-id="1d90a-114">DeviceManagementManagedDevices.PriviligedOperation.All</span></span>|
+|<span data-ttu-id="1d90a-115">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="1d90a-115">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="1d90a-116">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="1d90a-116">Not supported.</span></span>|
+|<span data-ttu-id="1d90a-117">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="1d90a-117">Application</span></span>|<span data-ttu-id="1d90a-118">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="1d90a-118">Not supported.</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="51539-119">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="51539-119">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="1d90a-119">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="1d90a-119">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -39,31 +40,31 @@ POST /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/device
 POST /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/deviceRunStates/{deviceManagementScriptDeviceStateId}/managedDevice/detectedApps/{detectedAppId}/managedDevices/{managedDeviceId}/bypassActivationLock
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="51539-120">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="51539-120">Request headers</span></span>
-|<span data-ttu-id="51539-121">ヘッダー</span><span class="sxs-lookup"><span data-stu-id="51539-121">Header</span></span>|<span data-ttu-id="51539-122">値</span><span class="sxs-lookup"><span data-stu-id="51539-122">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="1d90a-120">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="1d90a-120">Request headers</span></span>
+|<span data-ttu-id="1d90a-121">ヘッダー</span><span class="sxs-lookup"><span data-stu-id="1d90a-121">Header</span></span>|<span data-ttu-id="1d90a-122">値</span><span class="sxs-lookup"><span data-stu-id="1d90a-122">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="51539-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="51539-123">Authorization</span></span>|<span data-ttu-id="51539-124">ベアラー &lt;トークン&gt; が必須。</span><span class="sxs-lookup"><span data-stu-id="51539-124">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="51539-125">Accept</span><span class="sxs-lookup"><span data-stu-id="51539-125">Accept</span></span>|<span data-ttu-id="51539-126">application/json</span><span class="sxs-lookup"><span data-stu-id="51539-126">application/json</span></span>|
+|<span data-ttu-id="1d90a-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="1d90a-123">Authorization</span></span>|<span data-ttu-id="1d90a-124">ベアラー &lt;トークン&gt; が必須。</span><span class="sxs-lookup"><span data-stu-id="1d90a-124">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="1d90a-125">Accept</span><span class="sxs-lookup"><span data-stu-id="1d90a-125">Accept</span></span>|<span data-ttu-id="1d90a-126">application/json</span><span class="sxs-lookup"><span data-stu-id="1d90a-126">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="51539-127">要求本文</span><span class="sxs-lookup"><span data-stu-id="51539-127">Request body</span></span>
-<span data-ttu-id="51539-128">このメソッドには、要求本文を指定しません。</span><span class="sxs-lookup"><span data-stu-id="51539-128">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="1d90a-127">要求本文</span><span class="sxs-lookup"><span data-stu-id="1d90a-127">Request body</span></span>
+<span data-ttu-id="1d90a-128">このメソッドには、要求本文を指定しません。</span><span class="sxs-lookup"><span data-stu-id="1d90a-128">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="51539-129">応答</span><span class="sxs-lookup"><span data-stu-id="51539-129">Response</span></span>
-<span data-ttu-id="51539-130">成功した場合、このアクションは `204 No Content` 応答コードを返します。</span><span class="sxs-lookup"><span data-stu-id="51539-130">If successful, this action returns a `204 No Content` response code.</span></span>
+## <a name="response"></a><span data-ttu-id="1d90a-129">応答</span><span class="sxs-lookup"><span data-stu-id="1d90a-129">Response</span></span>
+<span data-ttu-id="1d90a-130">成功した場合、このアクションは `204 No Content` 応答コードを返します。</span><span class="sxs-lookup"><span data-stu-id="1d90a-130">If successful, this action returns a `204 No Content` response code.</span></span>
 
-## <a name="example"></a><span data-ttu-id="51539-131">例</span><span class="sxs-lookup"><span data-stu-id="51539-131">Example</span></span>
-### <a name="request"></a><span data-ttu-id="51539-132">要求</span><span class="sxs-lookup"><span data-stu-id="51539-132">Request</span></span>
-<span data-ttu-id="51539-133">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="51539-133">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="1d90a-131">例</span><span class="sxs-lookup"><span data-stu-id="1d90a-131">Example</span></span>
+
+### <a name="request"></a><span data-ttu-id="1d90a-132">要求</span><span class="sxs-lookup"><span data-stu-id="1d90a-132">Request</span></span>
+<span data-ttu-id="1d90a-133">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="1d90a-133">Here is an example of the request.</span></span>
 ``` http
 POST https://graph.microsoft.com/beta/users/{usersId}/managedDevices/{managedDeviceId}/bypassActivationLock
 ```
 
-### <a name="response"></a><span data-ttu-id="51539-134">応答</span><span class="sxs-lookup"><span data-stu-id="51539-134">Response</span></span>
-<span data-ttu-id="51539-p103">以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。</span><span class="sxs-lookup"><span data-stu-id="51539-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="1d90a-134">応答</span><span class="sxs-lookup"><span data-stu-id="1d90a-134">Response</span></span>
+<span data-ttu-id="1d90a-p103">以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。</span><span class="sxs-lookup"><span data-stu-id="1d90a-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 
