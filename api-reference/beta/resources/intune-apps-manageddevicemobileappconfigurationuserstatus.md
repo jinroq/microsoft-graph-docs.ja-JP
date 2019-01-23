@@ -3,21 +3,22 @@ title: managedDeviceMobileAppConfigurationUserStatus リソースの種類
 description: ユーザー向け MDM モバイル アプリ構成状態の要約に関する、プロパティ、継承済みのプロパティ、アクションが含まれています。
 localization_priority: Normal
 author: tfitzmac
-ms.prod: intune
-ms.openlocfilehash: 89d2da940cd196cc87fc952acd413bac8ceed5cf
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: 68424e75859e938c1cedb8c14ba8f70141dc6899
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27991889"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29419458"
 ---
 # <a name="manageddevicemobileappconfigurationuserstatus-resource-type"></a>managedDeviceMobileAppConfigurationUserStatus リソースの種類
 
-> **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。
+> **重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
 
-> **注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
+> **注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 ユーザー向け MDM モバイル アプリ構成状態の要約に関する、プロパティ、継承済みのプロパティ、アクションが含まれています。
+
 ## <a name="methods"></a>メソッド
 |メソッド|戻り値の型|説明|
 |:---|:---|:---|
@@ -30,7 +31,7 @@ ms.locfileid: "27991889"
 ## <a name="properties"></a>プロパティ
 |プロパティ|型|説明|
 |:---|:---|:---|
-|ID|String|エンティティのキー。|
+|id|String|エンティティのキー。|
 |userDisplayName|String|DevicePolicyStatus のユーザー名。|
 |devicesCount|Int32|そのユーザーのデバイスの数。|
 |status|[complianceStatus](../resources/intune-shared-compliancestatus.md)|ポリシー レポートのコンプライアンスの状態。 可能な値は、`unknown`、`notApplicable`、`compliant`、`remediated`、`nonCompliant`、`error`、`conflict`、`notAssigned` です。|
@@ -39,6 +40,7 @@ ms.locfileid: "27991889"
 
 ## <a name="relationships"></a>リレーションシップ
 なし
+
 ## <a name="json-representation"></a>JSON 表記
 以下は、リソースの JSON 表記です。
 <!-- {
@@ -58,7 +60,6 @@ ms.locfileid: "27991889"
   "userPrincipalName": "String"
 }
 ```
-
 
 
 

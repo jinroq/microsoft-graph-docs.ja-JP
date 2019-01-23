@@ -1,25 +1,26 @@
 ---
 title: windowsNetworkIsolationPolicy リソースの種類
 description: Windows ネットワークの分離のポリシー
-author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 5bb427d519cf1f981997b70242095af22bf705df
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: tfitzmac
+ms.prod: Intune
+ms.openlocfilehash: c7ab7addffa4ff3f9b84ced60c30fe8707c695b0
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27940163"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29403757"
 ---
 # <a name="windowsnetworkisolationpolicy-resource-type"></a>windowsNetworkIsolationPolicy リソースの種類
 
-> **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。
+> **重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
 
-> **注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
+> **注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 Windows ネットワークの分離のポリシー
+
 ## <a name="properties"></a>プロパティ
-|プロパティ|種類|説明|
+|プロパティ|型|説明|
 |:---|:---|:---|
 |enterpriseNetworkDomainNames|String コレクション|これは、エンタープライズの境界を構成するドメインのリストです。 デバイスに送信されるこれらのドメインの 1 つのデータはエンタープライズ データと見なされ、保護します。 これらの場所は安全なエンタープライズ ・ データを共有する先と見なされます。|
 |enterpriseCloudResources|[proxiedDomain](../resources/intune-shared-proxieddomain.md) コレクション|保護する必要のあるクラウドでホストされているエンタープライズ リソースのドメインの一覧が含まれています。 これらのリソースへの接続は、エンタープライズ データと見なされます。 プロキシがクラウド リソースとペアリング済みの場合、クラウド リソースへのトラフィックは、指定されたプロキシ サーバー (ポート 80) を介してエンタープライズ ネットワーク経由でルーティングされます。 EnterpriseInternalProxyServers ポリシーを使用してこの目的に使用されるプロキシ サーバーを構成することもする必要があります。 このコレクションには、最大で 500 個の要素を含めることができます。|
@@ -32,6 +33,7 @@ Windows ネットワークの分離のポリシー
 
 ## <a name="relationships"></a>リレーションシップ
 なし
+
 ## <a name="json-representation"></a>JSON 表記
 以下は、リソースの JSON 表記です。
 <!-- {
@@ -72,7 +74,6 @@ Windows ネットワークの分離のポリシー
   ]
 }
 ```
-
 
 
 

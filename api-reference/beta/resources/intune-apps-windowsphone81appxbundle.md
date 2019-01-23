@@ -1,23 +1,24 @@
 ---
 title: windowsPhone81AppXBundle リソースの種類
 description: プロパティと Windows Phone 8.1 AppX バンドルの業務アプリケーションの継承されたプロパティが含まれています。
-author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 3d986ae104be823e4587476d3990164a1d1c17ae
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: tfitzmac
+ms.prod: Intune
+ms.openlocfilehash: 30ccde0184b7d7b83ea0c5c34a0aefb935ac69cb
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27959644"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29404310"
 ---
 # <a name="windowsphone81appxbundle-resource-type"></a>windowsPhone81AppXBundle リソースの種類
 
-> **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。
+> **重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
 
-> **注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
+> **注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 プロパティと Windows Phone 8.1 AppX バンドルの業務アプリケーションの継承されたプロパティが含まれています。
+
 
 [WindowsPhone81AppX](../resources/intune-apps-windowsphone81appx.md)から継承します。
 
@@ -31,9 +32,9 @@ ms.locfileid: "27959644"
 |[WindowsPhone81AppXBundle を更新します。](../api/intune-apps-windowsphone81appxbundle-update.md)|[windowsPhone81AppXBundle](../resources/intune-apps-windowsphone81appxbundle.md)|[WindowsPhone81AppXBundle](../resources/intune-apps-windowsphone81appxbundle.md)オブジェクトのプロパティを更新します。|
 
 ## <a name="properties"></a>プロパティ
-|プロパティ|種類|説明|
+|プロパティ|型|説明|
 |:---|:---|:---|
-|ID|String|エンティティのキー。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|
+|id|String|エンティティのキー。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|
 |displayName|String|管理者が提供またはインポートしたアプリのタイトル。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|
 |説明|String|アプリの説明。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|
 |publisher|String|アプリの発行元。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|
@@ -48,10 +49,12 @@ ms.locfileid: "27959644"
 |notes|String|アプリ用のメモ。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|
 |uploadState|Int32|アップロードの状態です。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|
 |publishingState|[mobileAppPublishingState](../resources/intune-apps-mobileapppublishingstate.md)|アプリの発行の状態。 アプリが発行されていない限り、アプリを割り当てることができません。 [MobileApp](../resources/intune-apps-mobileapp.md)から継承されます。 可能な値は、`notPublished`、`processing`、`published` です。|
+|isAssigned|Boolean|アプリケーションが少なくとも 1 つのグループに割り当てられているかどうかを示す値です。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|
+|roleScopeTagIds|String コレクション|このモバイル アプリケーションのスコープのタグ id の一覧です。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|
 |committedContentVersion|String|内部にコミットされたコンテンツのバージョン。 [mobileLobApp](../resources/intune-apps-mobilelobapp.md) から継承します|
 |fileName|String|メインの Lob アプリケーションのファイル名。 [mobileLobApp](../resources/intune-apps-mobilelobapp.md) から継承します|
 |size|Int64|アップロードされたすべてのファイルを含む合計サイズ。 [mobileLobApp](../resources/intune-apps-mobilelobapp.md) から継承します|
-|applicableArchitectures|[windowsArchitecture](../resources/intune-apps-windowsarchitecture.md)|このアプリを実行できる Windows アーキテクチャ。 [WindowsPhone81AppX](../resources/intune-apps-windowsphone81appx.md)から継承されます。 可能な値は、`none`、`x86`、`x64`、`arm`、`neutral` です。|
+|applicableArchitectures|[windowsArchitecture](../resources/intune-apps-windowsarchitecture.md)|このアプリを実行できる Windows アーキテクチャ。 [WindowsPhone81AppX](../resources/intune-apps-windowsphone81appx.md)から継承されます。 使用可能な値: `none`、`x86`、`x64`、`arm`、`neutral`、`arm64`。|
 |identityName|String|ID 名。 [WindowsPhone81AppX](../resources/intune-apps-windowsphone81appx.md)から継承されました。|
 |identityPublisherHash|String|ID の発行元のハッシュ。 [WindowsPhone81AppX](../resources/intune-apps-windowsphone81appx.md)から継承されました。|
 |identityResourceIdentifier|String|ID のリソースの識別子。 [WindowsPhone81AppX](../resources/intune-apps-windowsphone81appx.md)から継承されました。|
@@ -101,6 +104,10 @@ ms.locfileid: "27959644"
   "notes": "String",
   "uploadState": 1024,
   "publishingState": "String",
+  "isAssigned": true,
+  "roleScopeTagIds": [
+    "String"
+  ],
   "committedContentVersion": "String",
   "fileName": "String",
   "size": 1024,
@@ -144,7 +151,6 @@ ms.locfileid: "27959644"
   ]
 }
 ```
-
 
 
 

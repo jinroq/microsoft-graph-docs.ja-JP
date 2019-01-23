@@ -1,23 +1,24 @@
 ---
 title: windowsVpnConnectionType 列挙型
 description: Windows の VPN 接続の種類です。
-author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 46f1c0aab529329fc27b5828ea6b30859bc84fae
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: tfitzmac
+ms.prod: Intune
+ms.openlocfilehash: 3680582b11d5cfd6c9d64e5a19e12ccbe96bfe1f
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27949907"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29403645"
 ---
 # <a name="windowsvpnconnectiontype-enum-type"></a>windowsVpnConnectionType 列挙型
 
-> **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。
+> **重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
 
-> **注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
+> **注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 Windows の VPN 接続の種類です。
+
 ## <a name="members"></a>メンバー
 |メンバー|値|説明|
 |:---|:---|:---|
@@ -25,7 +26,6 @@ Windows の VPN 接続の種類です。
 |f5EdgeClient|1|F5 キーを押してエッジのクライアントです。|
 |dellSonicWallMobileConnect|2|Dell SonicWALL モバイル接続します。|
 |checkPointCapsuleVpn|3|ポイント カプセル VPN を確認してください。|
-
 
 
 

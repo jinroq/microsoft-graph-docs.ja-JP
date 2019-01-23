@@ -1,25 +1,26 @@
 ---
 title: iosManagedAppProtections のリスト
 description: iosManagedAppProtection オブジェクトのプロパティとリレーションシップをリストします。
-author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 9dee560632b3da520537ad9f59b05d02e966cc98
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: tfitzmac
+ms.prod: Intune
+ms.openlocfilehash: ae174ff736d5e8cbbf320abeaf651ae5f34f1e5b
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27930951"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29404156"
 ---
 # <a name="list-iosmanagedappprotections"></a>iosManagedAppProtections のリスト
 
-> **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。
+> **重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
 
-> **注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
+> **注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 [iosManagedAppProtection](../resources/intune-mam-iosmanagedappprotection.md) オブジェクトのプロパティとリレーションシップをリストします。
+
 ## <a name="prerequisites"></a>前提条件
-この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
+この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/concepts/permissions-reference.md)」を参照してください。
 
 |アクセス許可の種類|アクセス許可 (特権の大きいものから小さいものへ)|
 |:---|:---|
@@ -49,6 +50,7 @@ GET /deviceAppManagement/iosManagedAppProtections
 成功した場合、このメソッドは `200 OK` 応答コードと、応答本文で [iosManagedAppProtection](../resources/intune-mam-iosmanagedappprotection.md) オブジェクトのコレクションを返します。
 
 ## <a name="example"></a>例
+
 ### <a name="request"></a>要求
 以下は、要求の例です。
 ``` http
@@ -60,7 +62,7 @@ GET https://graph.microsoft.com/beta/deviceAppManagement/iosManagedAppProtection
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 2870
+Content-Length: 2944
 
 {
   "value": [
@@ -70,6 +72,9 @@ Content-Length: 2870
       "description": "Description value",
       "createdDateTime": "2017-01-01T00:02:43.5775965-08:00",
       "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
+      "roleScopeTagIds": [
+        "Role Scope Tag Ids value"
+      ],
       "id": "5bc789cb-89cb-5bc7-cb89-c75bcb89c75b",
       "version": "Version value",
       "periodOfflineBeforeAccessCheck": "-PT17.1357909S",
@@ -129,7 +134,6 @@ Content-Length: 2870
   ]
 }
 ```
-
 
 
 

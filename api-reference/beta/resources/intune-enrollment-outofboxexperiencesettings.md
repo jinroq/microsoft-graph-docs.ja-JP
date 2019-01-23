@@ -1,23 +1,24 @@
 ---
 title: outOfBoxExperienceSettings リソースの種類
 description: ボックスの設定が発生します。
-author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 70f1fb573409a55dd1e586b8e88133c5535de894
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: tfitzmac
+ms.prod: Intune
+ms.openlocfilehash: 5d2b48fef00c9c3a291a0a2fdfe680b9f4e21030
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27977291"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29404604"
 ---
 # <a name="outofboxexperiencesettings-resource-type"></a>outOfBoxExperienceSettings リソースの種類
 
-> **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。
+> **重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
 
-> **注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
+> **注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 ボックスの設定が発生します。
+
 ## <a name="properties"></a>プロパティ
 |プロパティ|型|説明|
 |:---|:---|:---|
@@ -30,6 +31,7 @@ ms.locfileid: "27977291"
 
 ## <a name="relationships"></a>リレーションシップ
 なし
+
 ## <a name="json-representation"></a>JSON 表記
 以下は、リソースの JSON 表記です。
 <!-- {
@@ -48,7 +50,6 @@ ms.locfileid: "27977291"
   "hideEscapeLink": true
 }
 ```
-
 
 
 

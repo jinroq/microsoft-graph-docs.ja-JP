@@ -2,26 +2,27 @@
 title: >
   managedDevice の更新
 description: managedDevice オブジェクトのプロパティを更新します。
-author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 255562cd7a5bbd5291a26b148b1e6c21a2869828
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: tfitzmac
+ms.prod: Intune
+ms.openlocfilehash: 525623c99d8f3238ee548e634bc7ffe2c3162111
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27977929"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29404387"
 ---
 # <a name="update-manageddevice"></a>managedDevice の更新
 
 
-> **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。
+> **重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
 
-> **注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
+> **注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 [managedDevice](../resources/intune-devices-manageddevice.md) オブジェクトのプロパティを更新します。
+
 ## <a name="prerequisites"></a>前提条件
-この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
+この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/concepts/permissions-reference.md)」を参照してください。
 
 |アクセス許可の種類|アクセス許可 (特権の大きいものから小さいものへ)|
 |:---|:---|
@@ -52,9 +53,9 @@ PATCH /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/devic
 
 次の表に、[managedDevice](../resources/intune-devices-manageddevice.md) の作成時に必要なプロパティを示します。
 
-|プロパティ|種類|説明|
+|プロパティ|型|説明|
 |:---|:---|:---|
-|ID|String|デバイスの一意識別子|
+|id|String|デバイスの一意識別子|
 |userId|String|デバイスに関連付けられているユーザーの一意の識別子|
 |deviceName|String|デバイスの名前|
 |hardwareInformation|[hardwareInformation](../resources/intune-devices-hardwareinformation.md)|デバイスのハードウェアの詳細。  記憶域の製造元、シリアル番号などの情報が含まれています。|
@@ -113,8 +114,8 @@ PATCH /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/devic
 |partnerReportedThreatState|[managedDevicePartnerReportedHealthState](../resources/intune-devices-manageddevicepartnerreportedhealthstate.md)|Mobile Threat Defense パートナーがアカウントおよびデバイスで使用されている場合の、デバイスの脅威の状態を示します。 読み取り専用です。 可能な値は、`unknown`、`activated`、`deactivated`、`secured`、`lowSeverity`、`mediumSeverity`、`highSeverity`、`unresponsive`、`compromised`、`misconfigured` です。|
 |usersLoggedOn|[loggedOnUser](../resources/intune-devices-loggedonuser.md)コレクション|最後のデバイスのユーザーにログオンしていることを示します|
 |preferMdmOverGroupPolicyAppliedDateTime|DateTimeOffset|レポート preferMdmOverGroupPolicy 設定日付と時刻が設定されています。  設定すると、Intune MDM 設定が優先されますグループ ポリシー設定の競合がある場合。 読み取り専用です。|
-|autopilotEnrolled|ブール型|自動操縦を使用して管理対象のデバイスが登録されている場合にレポートします。|
-|requireUserEnrollmentApproval|ブール型|マネージ iOS デバイスがユーザーの承認登録の場合にレポートします。|
+|autopilotEnrolled|Boolean|自動操縦を使用して管理対象のデバイスが登録されている場合にレポートします。|
+|requireUserEnrollmentApproval|Boolean|マネージ iOS デバイスがユーザーの承認登録の場合にレポートします。|
 |managementCertificateExpirationDate|DateTimeOffset|デバイスの管理の証明書の有効期限の日付をレポート|
 |iccid|String|A SIM カードの一意の識別番号は集積回路カードの識別子です。|
 |udid|String|IOS と macOS デバイスに一意のデバイス識別子です。|
@@ -130,14 +131,16 @@ PATCH /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/devic
 成功した場合、このメソッドは `200 OK` 応答コードと、更新された [managedDevice](../resources/intune-devices-manageddevice.md) オブジェクトを応答本文で返します。
 
 ## <a name="example"></a>例
+
 ### <a name="request"></a>要求
 以下は、要求の例です。
 ``` http
 PATCH https://graph.microsoft.com/beta/users/{usersId}/managedDevices/{managedDeviceId}
 Content-type: application/json
-Content-length: 7114
+Content-length: 7166
 
 {
+  "@odata.type": "#microsoft.graph.managedDevice",
   "userId": "User Id value",
   "deviceName": "Device Name value",
   "hardwareInformation": {
@@ -475,7 +478,6 @@ Content-Length: 7215
   }
 }
 ```
-
 
 
 

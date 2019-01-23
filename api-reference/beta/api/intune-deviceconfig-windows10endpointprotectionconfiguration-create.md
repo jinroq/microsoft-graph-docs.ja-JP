@@ -1,25 +1,26 @@
 ---
 title: windows10EndpointProtectionConfiguration の作成
 description: 新しい windows10EndpointProtectionConfiguration オブジェクトを作成します。
-author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: e0a9ccd6e6e675614e21ddcca947db87cf76b52b
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: tfitzmac
+ms.prod: Intune
+ms.openlocfilehash: 9bdc31fed7797a448239bc7ed19ac57750692646
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27940779"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29402588"
 ---
 # <a name="create-windows10endpointprotectionconfiguration"></a>windows10EndpointProtectionConfiguration の作成
 
-> **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。
+> **重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
 
-> **注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
+> **注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 新しい [windows10EndpointProtectionConfiguration](../resources/intune-deviceconfig-windows10endpointprotectionconfiguration.md) オブジェクトを作成します。
+
 ## <a name="prerequisites"></a>前提条件
-この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
+この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/concepts/permissions-reference.md)」を参照してください。
 
 |アクセス許可の種類|アクセス許可 (特権の大きいものから小さいものへ)|
 |:---|:---|
@@ -50,7 +51,7 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 
 |プロパティ|型|説明|
 |:---|:---|:---|
-|ID|String|エンティティのキー。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
+|id|String|エンティティのキー。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |lastModifiedDateTime|DateTimeOffset|オブジェクトが最後に変更された DateTime。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |roleScopeTagIds|String コレクション|このエンティティ インスタンスのスコープのタグのリストです。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |supportsScopeTags|Boolean|デバイスの構成を基になるスコープのタグの割り当てをサポートしているかどうかを示します。 この値が false であり、エンティティをスコープ指定されたユーザーには表示されませんがある場合、ScopeTags プロパティに割り当てることは許可されていません。 これは、Silverlight で作成されたレガシ ポリシーに対して発生し、削除して、Azure ポータル内のポリシーを再作成することで解決できます。 このプロパティは読み取りのみ可能です。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
@@ -58,6 +59,7 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 |説明|String|デバイス構成について管理者が提供した説明。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |displayName|String|デバイス構成について管理者が指定した名前。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |version|Int32|デバイス構成のバージョン。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
+|dmaGuardDeviceEnumerationPolicy|[dmaGuardDeviceEnumerationPolicyType](../resources/intune-deviceconfig-dmaguarddeviceenumerationpolicytype.md)|このポリシーは、外部の DMA 機能を持つデバイスに対して追加のセキュリティを提供します。 これにより外部の DMA 対応デバイスの列挙体をより細かく制御互換性のないデバイスと DMA Remapping メモリの分離レベルとサンド ボックス化できます。 このポリシーは、カーネルの DMA の保護がサポートされていて、システムのファームウェアで有効になっている場合にのみ有効です。 カーネル DMA の保護は、ポリシーを使用して、またはエンド ・ ユーザーが制御できないプラットフォーム機能です。 製造時にシステムでサポートする必要があります。 システムがカーネルの DMA の保護をサポートしているかを確認するには、MSINFO32.exe の概要] ページでカーネルの DMA 保護フィールドを確認してください。 可能な値は、`deviceDefault`、`blockAll`、`allowAll` です。|
 |userRightsAccessCredentialManagerAsTrustedCaller|[deviceManagementUserRightsSetting](../resources/intune-deviceconfig-devicemanagementuserrightssetting.md)|このユーザー権利のバックアップ/リストアの実行中に資格情報マネージャーで表示されます。 他のエンティティにこの特権が与えられた場合、ユーザーの保存された資格情報が危険にさらされる可能性があります。 NotConfigured と許可の状態のみがサポートされています。|
 |userRightsAllowAccessFromNetwork|[deviceManagementUserRightsSetting](../resources/intune-deviceconfig-devicemanagementuserrightssetting.md)|このユーザー権利は、どのユーザーを決定し、グループがネットワーク経由でコンピューターに接続できます。 許可の状態がサポートされています。|
 |userRightsBlockAccessFromNetwork|[deviceManagementUserRightsSetting](../resources/intune-deviceconfig-devicemanagementuserrightssetting.md)|このユーザー権利は、どのユーザーとグループは、ネットワーク経由でコンピューターへの接続からのブロックを決定します。 ステート ブロックがサポートされています。|
@@ -94,9 +96,9 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 |xboxServicesLiveNetworkingServiceStartupMode|[serviceStartType](../resources/intune-deviceconfig-servicestarttype.md)|この設定は、ネットワーク サービスの開始の種類は、Automatic(2)、Manual(3)、Disabled(4) かどうかを決定します。 既定: マニュアルです。 可能な値は、`manual`、`automatic`、`disabled` です。|
 |localSecurityOptionsBlockMicrosoftAccounts|Boolean|ユーザーがこのコンピューターに Microsoft の新しいアカウントを追加するを防ぐ。|
 |localSecurityOptionsBlockRemoteLogonWithBlankPassword|Boolean|物理デバイス以外の場所からのログオンにパスワードで保護していないローカルのアカウントを有効にします。既定値が有効になっています。|
-|localSecurityOptionsEnableAdministratorAccount|Boolean|ローカル管理者アカウントを有効または無効にするかどうかを決定します。|
+|localSecurityOptionsDisableAdministratorAccount|Boolean|ローカル管理者アカウントを有効または無効にするかどうかを決定します。|
 |localSecurityOptionsAdministratorAccountName|String|"Administrator"アカウントのセキュリティ識別子 (SID) に関連する別のアカウント名を定義します。|
-|localSecurityOptionsEnableGuestAccount|Boolean|Guest アカウントが有効か無効になっているかどうかを決定します。|
+|localSecurityOptionsDisableGuestAccount|Boolean|Guest アカウントが有効か無効になっているかどうかを決定します。|
 |localSecurityOptionsGuestAccountName|String|"Guest"アカウントのセキュリティ識別子 (SID) に関連する別のアカウント名を定義します。|
 |localSecurityOptionsAllowUndockWithoutHavingToLogon|Boolean|ポータブル コンピューターを防ぐため、ログインしなくても接続されているからです。|
 |localSecurityOptionsBlockUsersInstallingPrinterDrivers|Boolean|管理者だけが使用する共有プリンターへの接続の一部としてプリンター ドライバーをインストールを制限します。|
@@ -115,7 +117,7 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 |localSecurityOptionsMinimumSessionSecurityForNtlmSspBasedClients|[localSecurityOptionsMinimumSessionSecurity](../resources/intune-deviceconfig-localsecurityoptionsminimumsessionsecurity.md)|このセキュリティ設定では、クライアントが 128 ビット暗号化、または NTLMv2 セッション セキュリティのネゴシエーションを必要とすることができます。 可能な値は、`none`、`requireNtmlV2SessionSecurity`、`require128BitEncryption`、`ntlmV2And128BitEncryption` です。|
 |localSecurityOptionsMinimumSessionSecurityForNtlmSspBasedServers|[localSecurityOptionsMinimumSessionSecurity](../resources/intune-deviceconfig-localsecurityoptionsminimumsessionsecurity.md)|このセキュリティ設定は、128 ビット暗号化、または NTLMv2 セッション セキュリティのネゴシエーションを必要とするサーバーです。 可能な値は、`none`、`requireNtmlV2SessionSecurity`、`require128BitEncryption`、`ntlmV2And128BitEncryption` です。|
 |lanManagerAuthenticationLevel|[lanManagerAuthenticationLevel](../resources/intune-deviceconfig-lanmanagerauthenticationlevel.md)|このセキュリティ設定は、ネットワーク ログオン時に使用するチャレンジ/レスポンス認証プロトコルを決定します。 使用可能な値: `lmAndNltm`、`lmNtlmAndNtlmV2`、`lmAndNtlmOnly`、`lmAndNtlmV2`、`lmNtlmV2AndNotLm`、`lmNtlmV2AndNotLmOrNtm`。|
-|lanManagerWorkstationEnableInsecureGuestLogons|Boolean|有効な場合、SMB クライアントはセキュリティ保護されていないゲスト ログオンを使用できます。 構成されていない場合、SMB クライアントはセキュリティ保護されていないゲスト ログオンを拒否します。|
+|lanManagerWorkstationDisableInsecureGuestLogons|Boolean|有効な場合、SMB クライアントはセキュリティ保護されていないゲスト ログオンを使用できます。 構成されていない場合、SMB クライアントはセキュリティ保護されていないゲスト ログオンを拒否します。|
 |localSecurityOptionsClearVirtualMemoryPageFile|Boolean|このセキュリティ設定は、システムのシャット ダウン時に仮想メモリのページファイルがオフになっているかどうかを決定します。|
 |localSecurityOptionsAllowSystemToBeShutDownWithoutHavingToLogOn|Boolean|このセキュリティ設定は、Windows にログオンしなくてもコンピューターをシャット ダウンできるかどうかを決定します。|
 |localSecurityOptionsAllowUIAccessApplicationElevation|Boolean|UIAccess アプリケーションをセキュリティで保護されたデスクトップを使用せず、昇格のプロンプトを許可します。|
@@ -203,6 +205,8 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 |deviceGuardLocalSystemAuthorityCredentialGuardSettings|[deviceGuardLocalSystemAuthorityCredentialGuardType](../resources/intune-deviceconfig-deviceguardlocalsystemauthoritycredentialguardtype.md)|プラットフォームのセキュリティ レベルとセキュリティで保護されたブートし、仮想化ベースのセキュリティの両方が有効である場合は、資格情報の保護にします。 可能な値は、`notConfigured`、`enableWithUEFILock`、`enableWithoutUEFILock` です。|
 |deviceGuardEnableVirtualizationBasedSecurity|Boolean|Security(VBS) を仮想化をオンに基づいています。|
 |deviceGuardEnableSecureBootWithDMA|Boolean|プラットフォームのセキュリティ レベルが次の再起動時に有効になっているかどうかを指定します。|
+|deviceGuardLaunchSystemGuard|[有効化](../resources/intune-shared-enablement
+.md)|ガードのシステムの起動を構成するのには IT 管理者を使用できます。 可能な値は、`notConfigured`、`enabled`、`disabled` です。|
 |smartScreenEnableInShell|Boolean|IT 管理者が Windows 用の SmartScreen を構成することを許可します。|
 |smartScreenBlockOverrideForFiles|Boolean|ユーザーが SmartScreen 警告を無視し、悪意のあるファイルを実行できるかどうかを IT 管理者が制御することを許可します。|
 |applicationGuardEnabled|Boolean|Windows Defender Application Guard を有効にします|
@@ -218,6 +222,7 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 |applicationGuardAllowPrintToNetworkPrinters|Boolean|コンテナーからネットワーク プリンターへの出力を許可します|
 |applicationGuardAllowVirtualGPU|Boolean|仮想 GPU を使用するアプリケーションの保護を許可します。|
 |applicationGuardAllowFileSaveOnHost|Boolean|アプリケーション ガード コンテナーの端からファイルをダウンロードし、ホスト上でファイル システムを保存するユーザーを許可します。|
+|bitLockerAllowStandardUserEncryption|Boolean|Azure AD に参加中に encrpytion を有効にする標準のユーザーに許可するのには管理者を使用できます。|
 |bitLockerDisableWarningForOtherDiskEncryption|Boolean|管理者がユーザーのマシンで他のディスクの暗号化に関する警告プロンプトを無効にすることを許可します。|
 |bitLockerEnableStorageCardEncryptionOnMobile|Boolean|管理者が BitLocker を使用して暗号化をオンにすることを許可します。 このポリシーは、モバイルの SKU に対してのみ有効です。
 |
@@ -232,16 +237,16 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 成功した場合、このメソッドは `201 Created` 応答コードと、応答本文で [windows10EndpointProtectionConfiguration](../resources/intune-deviceconfig-windows10endpointprotectionconfiguration.md) オブジェクトを返します。
 
 ## <a name="example"></a>例
+
 ### <a name="request"></a>要求
 以下は、要求の例です。
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations
 Content-type: application/json
-Content-length: 26391
+Content-length: 26475
 
 {
   "@odata.type": "#microsoft.graph.windows10EndpointProtectionConfiguration",
-  "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
   "roleScopeTagIds": [
     "Role Scope Tag Ids value"
   ],
@@ -249,6 +254,7 @@ Content-length: 26391
   "description": "Description value",
   "displayName": "Display Name value",
   "version": 7,
+  "dmaGuardDeviceEnumerationPolicy": "blockAll",
   "userRightsAccessCredentialManagerAsTrustedCaller": {
     "@odata.type": "microsoft.graph.deviceManagementUserRightsSetting",
     "state": "blocked",
@@ -604,9 +610,9 @@ Content-length: 26391
   "xboxServicesLiveNetworkingServiceStartupMode": "automatic",
   "localSecurityOptionsBlockMicrosoftAccounts": true,
   "localSecurityOptionsBlockRemoteLogonWithBlankPassword": true,
-  "localSecurityOptionsEnableAdministratorAccount": true,
+  "localSecurityOptionsDisableAdministratorAccount": true,
   "localSecurityOptionsAdministratorAccountName": "Local Security Options Administrator Account Name value",
-  "localSecurityOptionsEnableGuestAccount": true,
+  "localSecurityOptionsDisableGuestAccount": true,
   "localSecurityOptionsGuestAccountName": "Local Security Options Guest Account Name value",
   "localSecurityOptionsAllowUndockWithoutHavingToLogon": true,
   "localSecurityOptionsBlockUsersInstallingPrinterDrivers": true,
@@ -625,7 +631,7 @@ Content-length: 26391
   "localSecurityOptionsMinimumSessionSecurityForNtlmSspBasedClients": "requireNtmlV2SessionSecurity",
   "localSecurityOptionsMinimumSessionSecurityForNtlmSspBasedServers": "requireNtmlV2SessionSecurity",
   "lanManagerAuthenticationLevel": "lmNtlmAndNtlmV2",
-  "lanManagerWorkstationEnableInsecureGuestLogons": true,
+  "lanManagerWorkstationDisableInsecureGuestLogons": true,
   "localSecurityOptionsClearVirtualMemoryPageFile": true,
   "localSecurityOptionsAllowSystemToBeShutDownWithoutHavingToLogOn": true,
   "localSecurityOptionsAllowUIAccessApplicationElevation": true,
@@ -794,6 +800,7 @@ Content-length: 26391
   "deviceGuardLocalSystemAuthorityCredentialGuardSettings": "enableWithUEFILock",
   "deviceGuardEnableVirtualizationBasedSecurity": true,
   "deviceGuardEnableSecureBootWithDMA": true,
+  "deviceGuardLaunchSystemGuard": "enabled",
   "smartScreenEnableInShell": true,
   "smartScreenBlockOverrideForFiles": true,
   "applicationGuardEnabled": true,
@@ -809,6 +816,7 @@ Content-length: 26391
   "applicationGuardAllowPrintToNetworkPrinters": true,
   "applicationGuardAllowVirtualGPU": true,
   "applicationGuardAllowFileSaveOnHost": true,
+  "bitLockerAllowStandardUserEncryption": true,
   "bitLockerDisableWarningForOtherDiskEncryption": true,
   "bitLockerEnableStorageCardEncryptionOnMobile": true,
   "bitLockerEncryptDevice": true,
@@ -865,7 +873,7 @@ Content-length: 26391
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 26499
+Content-Length: 26647
 
 {
   "@odata.type": "#microsoft.graph.windows10EndpointProtectionConfiguration",
@@ -879,6 +887,7 @@ Content-Length: 26499
   "description": "Description value",
   "displayName": "Display Name value",
   "version": 7,
+  "dmaGuardDeviceEnumerationPolicy": "blockAll",
   "userRightsAccessCredentialManagerAsTrustedCaller": {
     "@odata.type": "microsoft.graph.deviceManagementUserRightsSetting",
     "state": "blocked",
@@ -1234,9 +1243,9 @@ Content-Length: 26499
   "xboxServicesLiveNetworkingServiceStartupMode": "automatic",
   "localSecurityOptionsBlockMicrosoftAccounts": true,
   "localSecurityOptionsBlockRemoteLogonWithBlankPassword": true,
-  "localSecurityOptionsEnableAdministratorAccount": true,
+  "localSecurityOptionsDisableAdministratorAccount": true,
   "localSecurityOptionsAdministratorAccountName": "Local Security Options Administrator Account Name value",
-  "localSecurityOptionsEnableGuestAccount": true,
+  "localSecurityOptionsDisableGuestAccount": true,
   "localSecurityOptionsGuestAccountName": "Local Security Options Guest Account Name value",
   "localSecurityOptionsAllowUndockWithoutHavingToLogon": true,
   "localSecurityOptionsBlockUsersInstallingPrinterDrivers": true,
@@ -1255,7 +1264,7 @@ Content-Length: 26499
   "localSecurityOptionsMinimumSessionSecurityForNtlmSspBasedClients": "requireNtmlV2SessionSecurity",
   "localSecurityOptionsMinimumSessionSecurityForNtlmSspBasedServers": "requireNtmlV2SessionSecurity",
   "lanManagerAuthenticationLevel": "lmNtlmAndNtlmV2",
-  "lanManagerWorkstationEnableInsecureGuestLogons": true,
+  "lanManagerWorkstationDisableInsecureGuestLogons": true,
   "localSecurityOptionsClearVirtualMemoryPageFile": true,
   "localSecurityOptionsAllowSystemToBeShutDownWithoutHavingToLogOn": true,
   "localSecurityOptionsAllowUIAccessApplicationElevation": true,
@@ -1424,6 +1433,7 @@ Content-Length: 26499
   "deviceGuardLocalSystemAuthorityCredentialGuardSettings": "enableWithUEFILock",
   "deviceGuardEnableVirtualizationBasedSecurity": true,
   "deviceGuardEnableSecureBootWithDMA": true,
+  "deviceGuardLaunchSystemGuard": "enabled",
   "smartScreenEnableInShell": true,
   "smartScreenBlockOverrideForFiles": true,
   "applicationGuardEnabled": true,
@@ -1439,6 +1449,7 @@ Content-Length: 26499
   "applicationGuardAllowPrintToNetworkPrinters": true,
   "applicationGuardAllowVirtualGPU": true,
   "applicationGuardAllowFileSaveOnHost": true,
+  "bitLockerAllowStandardUserEncryption": true,
   "bitLockerDisableWarningForOtherDiskEncryption": true,
   "bitLockerEnableStorageCardEncryptionOnMobile": true,
   "bitLockerEncryptDevice": true,
@@ -1489,7 +1500,6 @@ Content-Length: 26499
   }
 }
 ```
-
 
 
 

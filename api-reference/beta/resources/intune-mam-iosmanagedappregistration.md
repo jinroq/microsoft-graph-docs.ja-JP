@@ -1,24 +1,25 @@
 ---
 title: iosManagedAppRegistration リソースの種類
-description: 特定のユーザーに対する、iOS アプリの管理機能との同期の詳細を示します。
+description: 特定のユーザーに対する、iOS アプリの管理機能との同期の詳細を示します。 ManagedAppRegistration リソースは、組織のメンバーに使用されるアプリの詳細を管理機能と共に示します。
 localization_priority: Normal
 author: tfitzmac
-ms.prod: intune
-ms.openlocfilehash: 6af920ed88c91ac22474e8d65b04850154b4d735
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: baf8d9b845781a17cf0188bdae6f31d3601265b9
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27960134"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29415748"
 ---
 # <a name="iosmanagedappregistration-resource-type"></a>iosManagedAppRegistration リソースの種類
 
-> **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。
+> **重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
 
-> **注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
+> **注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 特定のユーザーに対する、iOS アプリの管理機能との同期の詳細を示します。
 ManagedAppRegistration リソースは、組織のメンバーに使用されるアプリの詳細を管理機能と共に示します。
+
 
 [managedAppRegistration](../resources/intune-mam-managedappregistration.md) から継承します
 
@@ -29,7 +30,7 @@ ManagedAppRegistration リソースは、組織のメンバーに使用される
 |[iosManagedAppRegistration の取得](../api/intune-mam-iosmanagedappregistration-get.md)|[iosManagedAppRegistration](../resources/intune-mam-iosmanagedappregistration.md)|[iosManagedAppRegistration](../resources/intune-mam-iosmanagedappregistration.md) オブジェクトのプロパティとリレーションシップを読み取ります。|
 
 ## <a name="properties"></a>プロパティ
-|プロパティ|種類|説明|
+|プロパティ|型|説明|
 |:---|:---|:---|
 |createdDateTime|DateTimeOffset|作成日時 ([managedAppRegistration](../resources/intune-mam-managedappregistration.md) から継承)。|
 |lastSyncDateTime|DateTimeOffset|アプリが管理サービスと最後に同期した日時。 [managedAppRegistration](../resources/intune-mam-managedappregistration.md) から継承します|
@@ -91,7 +92,6 @@ ManagedAppRegistration リソースは、組織のメンバーに使用される
   "version": "String"
 }
 ```
-
 
 
 

@@ -4,18 +4,18 @@ description: deviceManagement オブジェクトのプロパティを更新し�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: 4d8465ee45a2a6c23dedc4fe049ef1f73bb25218
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: f4ef1c7eb4711afd2aa29071f160f440dceefba3
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27924693"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29415776"
 ---
 # <a name="update-devicemanagement"></a>deviceManagement の更新
 
-> **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。
+> **重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
 
-> **注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
+> **注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 [deviceManagement](../resources/intune-shared-devicemanagement.md) オブジェクトのプロパティを更新します。
 
@@ -69,16 +69,16 @@ PATCH /deviceManagement
 
 次の表に、[deviceManagement](../resources/intune-shared-devicemanagement.md) の作成時に必要なプロパティを示します。
 
-|プロパティ|種類|説明|
+|プロパティ|型|説明|
 |:---|:---|:---|
-|ID|String|デバイスの一意の識別子です。|
+|id|String|デバイスの一意の識別子です。|
 |**デバイス構成**|
 |intuneAccountId|GUID|Intune アカウント ID にはテナントが指定されました。|
-|legacyPcManangementEnabled|ブール型|非 MDM を有効にするプロパティは、このアカウントの従来の PC の管理を管理します。 このプロパティは読み取りのみ可能です。|
+|legacyPcManangementEnabled|Boolean|非 MDM を有効にするプロパティは、このアカウントの従来の PC の管理を管理します。 このプロパティは読み取りのみ可能です。|
 |maximumDepTokens|Int32|DEP のトークンの最大数では、テナントごとに許可されます。|
 |settings|[deviceManagementSettings](../resources/intune-deviceconfig-devicemanagementsettings.md)|アカウント レベルの設定。|
 |**デバイスの管理**|
-|accountMoveCompletionDateTime|DateTimeOffset|日付と時刻 scaleunits のテナントのデータを移動するときです。|
+|accountMoveCompletionDateTime|DateTimeOffset|Scaleunits のテナントのデータを移動するときの日付の & の時刻です。|
 |adminConsent|[adminConsent](../resources/intune-devices-adminconsent.md)|同意の情報を管理します。|
 |deviceProtectionOverview|[deviceProtectionOverview](../resources/intune-devices-deviceprotectionoverview.md)|デバイス保護の概要です。|
 |managedDeviceCleanupSettings|[managedDeviceCleanupSettings](../resources/intune-devices-manageddevicecleanupsettings.md)|デバイスのクリーンアップ ・ ルール|

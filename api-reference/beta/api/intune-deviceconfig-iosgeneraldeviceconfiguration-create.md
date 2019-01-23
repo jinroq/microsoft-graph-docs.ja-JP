@@ -1,25 +1,26 @@
 ---
 title: Create iosGeneralDeviceConfiguration
 description: 新しい iosGeneralDeviceConfiguration オブジェクトを作成します。
-author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: d80dd2be597965ae89065c1e2c92316c7672537e
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: tfitzmac
+ms.prod: Intune
+ms.openlocfilehash: 4f373a49a07ff4caa0f0a02839b73f5b936b9e96
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27917203"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29404163"
 ---
 # <a name="create-iosgeneraldeviceconfiguration"></a>Create iosGeneralDeviceConfiguration
 
-> **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。
+> **重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
 
-> **注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
+> **注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 新しい [iosGeneralDeviceConfiguration](../resources/intune-deviceconfig-iosgeneraldeviceconfiguration.md) オブジェクトを作成します。
+
 ## <a name="prerequisites"></a>前提条件
-この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
+この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/concepts/permissions-reference.md)」を参照してください。
 
 |アクセス許可の種類|アクセス許可 (特権の大きいものから小さいものへ)|
 |:---|:---|
@@ -50,7 +51,7 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 
 |プロパティ|型|説明|
 |:---|:---|:---|
-|ID|String|エンティティのキー。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
+|id|String|エンティティのキー。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |lastModifiedDateTime|DateTimeOffset|オブジェクトが最後に変更された DateTime。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |roleScopeTagIds|String コレクション|このエンティティ インスタンスのスコープのタグのリストです。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |supportsScopeTags|Boolean|デバイスの構成を基になるスコープのタグの割り当てをサポートしているかどうかを示します。 この値が false であり、エンティティをスコープ指定されたユーザーには表示されませんがある場合、ScopeTags プロパティに割り当てることは許可されていません。 これは、Silverlight で作成されたレガシ ポリシーに対して発生し、削除して、Azure ポータル内のポリシーを再作成することで解決できます。 このプロパティは読み取りのみ可能です。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
@@ -202,6 +203,14 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 |airPrintBlockiBeaconDiscovery|Boolean|AirPrint プリンターの検出を iBeacon がブロックされているかどうかを示します。 これには、ネットワーク トラフィック (iOS 11.0 とそれ以降) のフィッシング詐欺からの見かけ上の AirPrint Bluetooth ビーコンができなくなります。|
 |blockSystemAppRemoval|Boolean|コールを管理デバイス (iOS 11.0 とそれ以降) で、デバイスからシステムのアプリケーションの削除がブロックされているかどうかを示します。|
 |vpnBlockCreation|Boolean|VPN 構成の作成がブロックされている (iOS 11.0 とそれ以降) であるかどうかを示します。|
+|appRemovalBlocked|Boolean|アプリの削除を許可するかを示します。|
+|usbRestrictedModeBlocked|Boolean|デバイスがロックされている間、USB アクセサリへの接続が許可されるかどうかを示します (iOS 11.4.1 以降)。|
+|passwordBlockAutoFill|Boolean|かどうかは、オートフィルのパスワードが有効になって (iOS 12.0 とそれ以降) を示します。|
+|passwordBlockProximityRequests|Boolean|(IOS 12.0 とそれ以降) の近くにあるデバイスからパスワードを要求をブロックするかどうかを示します。|
+|passwordBlockAirDropSharing|Boolean|示します AirDrop のパスワード機能 iOS 12.0 とそれ以降では、共有パスワードをブロックするかどうか)。|
+|dateAndTimeForceSetAutomatically|Boolean|かどうかの日付と時刻] 設定に自動的に"機能が有効し、することはできません、無効になってユーザー (iOS 12.0 とそれ以降) を示します。|
+|contactsAllowManagedToUnmanagedWrite|Boolean|アプリケーションは、アンマネージの連絡先のアカウント (iOS 12.0 とそれ以降) に連絡先を書き込むことが管理するかどうかを示します。|
+|contactsAllowUnmanagedToManagedRead|Boolean|かどうかアンマネージ アプリケーションから読み取ることがマネージ メンバー アカウント (iOS 12.0 以降) を示します。|
 
 
 
@@ -209,16 +218,16 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 成功した場合、このメソッドは `201 Created` 応答コードと、応答本文で [iosGeneralDeviceConfiguration](../resources/intune-deviceconfig-iosgeneraldeviceconfiguration.md) オブジェクトを返します。
 
 ## <a name="example"></a>例
+
 ### <a name="request"></a>要求
 以下は、要求の例です。
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations
 Content-type: application/json
-Content-length: 8496
+Content-length: 8758
 
 {
   "@odata.type": "#microsoft.graph.iosGeneralDeviceConfiguration",
-  "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
   "roleScopeTagIds": [
     "Role Scope Tag Ids value"
   ],
@@ -450,7 +459,15 @@ Content-length: 8496
   "airPrintForceTrustedTLS": true,
   "airPrintBlockiBeaconDiscovery": true,
   "blockSystemAppRemoval": true,
-  "vpnBlockCreation": true
+  "vpnBlockCreation": true,
+  "appRemovalBlocked": true,
+  "usbRestrictedModeBlocked": true,
+  "passwordBlockAutoFill": true,
+  "passwordBlockProximityRequests": true,
+  "passwordBlockAirDropSharing": true,
+  "dateAndTimeForceSetAutomatically": true,
+  "contactsAllowManagedToUnmanagedWrite": true,
+  "contactsAllowUnmanagedToManagedRead": true
 }
 ```
 
@@ -459,7 +476,7 @@ Content-length: 8496
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 8604
+Content-Length: 8930
 
 {
   "@odata.type": "#microsoft.graph.iosGeneralDeviceConfiguration",
@@ -697,10 +714,17 @@ Content-Length: 8604
   "airPrintForceTrustedTLS": true,
   "airPrintBlockiBeaconDiscovery": true,
   "blockSystemAppRemoval": true,
-  "vpnBlockCreation": true
+  "vpnBlockCreation": true,
+  "appRemovalBlocked": true,
+  "usbRestrictedModeBlocked": true,
+  "passwordBlockAutoFill": true,
+  "passwordBlockProximityRequests": true,
+  "passwordBlockAirDropSharing": true,
+  "dateAndTimeForceSetAutomatically": true,
+  "contactsAllowManagedToUnmanagedWrite": true,
+  "contactsAllowUnmanagedToManagedRead": true
 }
 ```
-
 
 
 

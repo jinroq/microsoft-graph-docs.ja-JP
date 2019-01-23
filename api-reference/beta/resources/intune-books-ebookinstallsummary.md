@@ -1,23 +1,24 @@
 ---
 title: eBookInstallSummary リソース タイプ
 description: デバイスのブックのインストール要約のプロパティが含まれています。
-author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 3d3a5d1ce5c05d0a8c20a79aea2fd3562ab2170c
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: tfitzmac
+ms.prod: Intune
+ms.openlocfilehash: d4e8952012624a038f497fea3c6b81ad364448a8
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27915943"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29415342"
 ---
 # <a name="ebookinstallsummary-resource-type"></a>eBookInstallSummary リソース タイプ
 
-> **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。
+> **重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
 
-> **注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
+> **注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 デバイスのブックのインストール要約のプロパティが含まれています。
+
 ## <a name="methods"></a>メソッド
 |メソッド|戻り値の型|説明|
 |:---|:---|:---|
@@ -27,7 +28,7 @@ ms.locfileid: "27915943"
 ## <a name="properties"></a>プロパティ
 |プロパティ|型|説明|
 |:---|:---|:---|
-|ID|String|エンティティのキー。|
+|id|String|エンティティのキー。|
 |installedDeviceCount|Int32|このブックが正常にインストールされたデバイスの数。|
 |failedDeviceCount|Int32|このブックのインストールが失敗したデバイスの数。|
 |notInstalledDeviceCount|Int32|このブックがインストールされていないデバイスの数。|
@@ -37,6 +38,7 @@ ms.locfileid: "27915943"
 
 ## <a name="relationships"></a>リレーションシップ
 なし
+
 ## <a name="json-representation"></a>JSON 表記
 以下は、リソースの JSON 表記です。
 <!-- {
@@ -57,7 +59,6 @@ ms.locfileid: "27915943"
   "notInstalledUserCount": 1024
 }
 ```
-
 
 
 

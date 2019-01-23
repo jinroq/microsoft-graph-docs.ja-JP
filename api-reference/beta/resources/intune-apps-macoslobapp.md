@@ -1,23 +1,24 @@
 ---
 title: macOSLobApp リソースの種類
 description: MacOS の LOB アプリケーションのプロパティと継承されたプロパティが含まれています。
-author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: e204c840bb097c3b3baa3ea13f0a1cddd6dc296a
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: tfitzmac
+ms.prod: Intune
+ms.openlocfilehash: f6a9f76cfe32261cb01d286ef0bc0f898d04943a
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27950789"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29402847"
 ---
 # <a name="macoslobapp-resource-type"></a>macOSLobApp リソースの種類
 
-> **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。
+> **重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
 
-> **注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
+> **注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 MacOS の LOB アプリケーションのプロパティと継承されたプロパティが含まれています。
+
 
 [mobileLobApp](../resources/intune-apps-mobilelobapp.md) から継承します
 
@@ -30,7 +31,7 @@ MacOS の LOB アプリケーションのプロパティと継承されたプロ
 |[MacOSLobApp を削除します。](../api/intune-apps-macoslobapp-delete.md)|なし|の[macOSLobApp](../resources/intune-apps-macoslobapp.md)を削除します。|
 |[MacOSLobApp を更新します。](../api/intune-apps-macoslobapp-update.md)|[macOSLobApp](../resources/intune-apps-macoslobapp.md)|[MacOSLobApp](../resources/intune-apps-macoslobapp.md)オブジェクトのプロパティを更新します。|
 
-## <a name="properties"></a>Properties
+## <a name="properties"></a>プロパティ
 |プロパティ|型|説明|
 |:---|:---|:---|
 |id|String|エンティティのキー。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|
@@ -48,6 +49,8 @@ MacOS の LOB アプリケーションのプロパティと継承されたプロ
 |notes|String|アプリ用のメモ。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|
 |uploadState|Int32|アップロードの状態です。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|
 |publishingState|[mobileAppPublishingState](../resources/intune-apps-mobileapppublishingstate.md)|アプリの発行の状態。 アプリが発行されていない限り、アプリを割り当てることができません。 [MobileApp](../resources/intune-apps-mobileapp.md)から継承されます。 可能な値は、`notPublished`、`processing`、`published` です。|
+|isAssigned|Boolean|アプリケーションが少なくとも 1 つのグループに割り当てられているかどうかを示す値です。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|
+|roleScopeTagIds|String コレクション|このモバイル アプリケーションのスコープのタグ id の一覧です。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|
 |committedContentVersion|String|内部にコミットされたコンテンツのバージョン。 [mobileLobApp](../resources/intune-apps-mobilelobapp.md) から継承します|
 |fileName|String|メインの Lob アプリケーションのファイル名。 [mobileLobApp](../resources/intune-apps-mobilelobapp.md) から継承します|
 |size|Int64|アップロードされたすべてのファイルを含む合計サイズ。 [mobileLobApp](../resources/intune-apps-mobilelobapp.md) から継承します|
@@ -101,6 +104,10 @@ MacOS の LOB アプリケーションのプロパティと継承されたプロ
   "notes": "String",
   "uploadState": 1024,
   "publishingState": "String",
+  "isAssigned": true,
+  "roleScopeTagIds": [
+    "String"
+  ],
   "committedContentVersion": "String",
   "fileName": "String",
   "size": 1024,
@@ -133,7 +140,6 @@ MacOS の LOB アプリケーションのプロパティと継承されたプロ
   "ignoreVersionDetection": true
 }
 ```
-
 
 
 

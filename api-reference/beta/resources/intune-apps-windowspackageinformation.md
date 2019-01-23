@@ -1,27 +1,28 @@
 ---
 title: windowsPackageInformation リソースの種類
 description: パッケージについては、ビジネス アプリケーションのウィンドウの行のプロパティが含まれています。
-author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: ac0f9aad1cdba1eaaac12754fd4a4d0ad4a6db32
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: tfitzmac
+ms.prod: Intune
+ms.openlocfilehash: 112d84c5bae889e24b889b4598d61a6b3d63db50
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27926849"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29403281"
 ---
 # <a name="windowspackageinformation-resource-type"></a>windowsPackageInformation リソースの種類
 
-> **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。
+> **重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
 
-> **注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
+> **注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 パッケージについては、ビジネス アプリケーションのウィンドウの行のプロパティが含まれています。
+
 ## <a name="properties"></a>プロパティ
-|プロパティ|種類|説明|
+|プロパティ|型|説明|
 |:---|:---|:---|
-|applicableArchitecture|[windowsArchitecture](../resources/intune-apps-windowsarchitecture.md)|Windows のアーキテクチャでこのアプリケーションが実行できます。 可能な値は、`none`、`x86`、`x64`、`arm`、`neutral` です。|
+|applicableArchitecture|[windowsArchitecture](../resources/intune-apps-windowsarchitecture.md)|Windows のアーキテクチャでこのアプリケーションが実行できます。 使用可能な値: `none`、`x86`、`x64`、`arm`、`neutral`、`arm64`。|
 |displayName|String|表示名。|
 |identityName|String|ID 名。|
 |identityPublisher|String|識別情報の発行元です。|
@@ -31,6 +32,7 @@ ms.locfileid: "27926849"
 
 ## <a name="relationships"></a>リレーションシップ
 なし
+
 ## <a name="json-representation"></a>JSON 表記
 以下は、リソースの JSON 表記です。
 <!-- {
@@ -59,7 +61,6 @@ ms.locfileid: "27926849"
   }
 }
 ```
-
 
 
 

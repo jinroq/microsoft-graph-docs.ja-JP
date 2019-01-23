@@ -1,25 +1,26 @@
 ---
 title: Create defaultManagedAppProtection
 description: 新しい defaultManagedAppProtection オブジェクトを作成します。
-author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: e51dd120df2f16c28f920219363fbc076dcdf839
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: tfitzmac
+ms.prod: Intune
+ms.openlocfilehash: aebce79a25fa7ca166e563c51db706a62cc23a8f
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27936649"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29403323"
 ---
 # <a name="create-defaultmanagedappprotection"></a>Create defaultManagedAppProtection
 
-> **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。
+> **重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
 
-> **注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
+> **注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 新しい [defaultManagedAppProtection](../resources/intune-mam-defaultmanagedappprotection.md) オブジェクトを作成します。
+
 ## <a name="prerequisites"></a>前提条件
-この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
+この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/concepts/permissions-reference.md)」を参照してください。
 
 |アクセス許可の種類|アクセス許可 (特権の大きいものから小さいものへ)|
 |:---|:---|
@@ -47,12 +48,13 @@ POST /deviceAppManagement/defaultManagedAppProtections
 
 次の表に、defaultManagedAppProtection 作成時に必要となるプロパティを示します。
 
-|プロパティ|種類|説明|
+|プロパティ|型|説明|
 |:---|:---|:---|
 |displayName|String|ポリシーの表示名。 [managedAppPolicy](../resources/intune-mam-managedapppolicy.md) から継承します|
 |説明|String|ポリシーの説明。 [managedAppPolicy](../resources/intune-mam-managedapppolicy.md) から継承します|
 |createdDateTime|DateTimeOffset|ポリシーが作成された日時。 [managedAppPolicy](../resources/intune-mam-managedapppolicy.md) から継承します|
 |lastModifiedDateTime|DateTimeOffset|ポリシーが変更された最終日時。 [managedAppPolicy](../resources/intune-mam-managedapppolicy.md) から継承します|
+|roleScopeTagIds|String コレクション|このエンティティ インスタンスのスコープのタグのリストです。 [managedAppPolicy](../resources/intune-mam-managedapppolicy.md) から継承します|
 |id|String|エンティティのキー。 [managedAppPolicy](../resources/intune-mam-managedapppolicy.md) から継承します|
 |version|String|エンティティのバージョン。 [managedAppPolicy](../resources/intune-mam-managedapppolicy.md) から継承します|
 |periodOfflineBeforeAccessCheck|Duration|デバイスがインターネットに接続されていないでこの期間が過ぎると、アクセスがチェックされます。 [managedAppProtection](../resources/intune-mam-managedappprotection.md) から継承します|
@@ -104,10 +106,10 @@ POST /deviceAppManagement/defaultManagedAppProtections
 |appActionIfIosDeviceModelNotAllowed|[managedAppRemediationAction](../resources/intune-mam-managedappremediationaction.md)|、マネージ アプリケーションの動作を定義するブロック] または [指定したデバイスのモデルが許可されていない場合、クリーン インストールします。 (iOS のみ)。 使用可能な値は、`block`、`wipe` です。|
 |allowedAndroidDeviceManufacturers|String|デバイスの製造元のセミコロン区切りのリストは、動作するマネージ アプリケーションの文字列として使用できます。 (Android のみ)|
 |appActionIfAndroidDeviceManufacturerNotAllowed|[managedAppRemediationAction](../resources/intune-mam-managedappremediationaction.md)|、マネージ アプリケーションの動作を定義するブロックまたは指定されたデバイスの製造元が許可されていない場合、クリーン インストールのいずれかです。 (アプリのみ)。 使用可能な値は、`block`、`wipe` です。|
-|thirdPartyKeyboardsBlocked|ブール型|サードパーティ製キーボードが管理されているアプリケーションへのアクセス中に許可されている場合を定義します。 (iOS のみ)|
-|filterOpenInToOnlyManagedApps|ブール型|選択されているファイル共有の場所に、マネージ アプリケーションから開くの操作がサポートされている場合を定義します。 この設定は、AllowedOutboundDataTransferDestinations を ManagedApps に設定し、DisableProtectionOfManagedOutboundOpenInData が False に設定されて場合にのみ適用されます。 (iOS のみ)|
-|disableProtectionOfManagedOutboundOpenInData|ブール型|IOS OpenIn オプションを使用して他のアプリケーションに転送されるデータの保護を無効にします。 この設定はのみできる AllowedOutboundDataTransferDestinations が ManagedApps に設定されている場合に true を設定します。 (iOS のみ)|
-|protectInboundDataFromUnknownSources|ブール型|不明なソースから受信したデータを保護します。 この設定はのみできる AllowedInboundDataTransferSources が AllApps に設定されている場合に true を設定します。 (iOS のみ)|
+|thirdPartyKeyboardsBlocked|Boolean|サードパーティ製キーボードが管理されているアプリケーションへのアクセス中に許可されている場合を定義します。 (iOS のみ)|
+|filterOpenInToOnlyManagedApps|Boolean|選択されているファイル共有の場所に、マネージ アプリケーションから開くの操作がサポートされている場合を定義します。 この設定は、AllowedOutboundDataTransferDestinations を ManagedApps に設定し、DisableProtectionOfManagedOutboundOpenInData が False に設定されて場合にのみ適用されます。 (iOS のみ)|
+|disableProtectionOfManagedOutboundOpenInData|Boolean|IOS OpenIn オプションを使用して他のアプリケーションに転送されるデータの保護を無効にします。 この設定はのみできる AllowedOutboundDataTransferDestinations が ManagedApps に設定されている場合に true を設定します。 (iOS のみ)|
+|protectInboundDataFromUnknownSources|Boolean|不明なソースから受信したデータを保護します。 この設定はのみできる AllowedInboundDataTransferSources が AllApps に設定されている場合に true を設定します。 (iOS のみ)|
 
 
 
@@ -115,18 +117,21 @@ POST /deviceAppManagement/defaultManagedAppProtections
 成功した場合、このメソッドは `201 Created` 応答コードと、応答本文で [defaultManagedAppProtection](../resources/intune-mam-defaultmanagedappprotection.md) オブジェクトを返します。
 
 ## <a name="example"></a>例
+
 ### <a name="request"></a>要求
 以下は、要求の例です。
 ``` http
 POST https://graph.microsoft.com/beta/deviceAppManagement/defaultManagedAppProtections
 Content-type: application/json
-Content-length: 3219
+Content-length: 3217
 
 {
   "@odata.type": "#microsoft.graph.defaultManagedAppProtection",
   "displayName": "Display Name value",
   "description": "Description value",
-  "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
+  "roleScopeTagIds": [
+    "Role Scope Tag Ids value"
+  ],
   "version": "Version value",
   "periodOfflineBeforeAccessCheck": "-PT17.1357909S",
   "periodOnlineBeforeAccessCheck": "PT35.0018757S",
@@ -209,7 +214,7 @@ Content-length: 3219
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 3327
+Content-Length: 3389
 
 {
   "@odata.type": "#microsoft.graph.defaultManagedAppProtection",
@@ -217,6 +222,9 @@ Content-Length: 3327
   "description": "Description value",
   "createdDateTime": "2017-01-01T00:02:43.5775965-08:00",
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
+  "roleScopeTagIds": [
+    "Role Scope Tag Ids value"
+  ],
   "id": "77064c51-4c51-7706-514c-0677514c0677",
   "version": "Version value",
   "periodOfflineBeforeAccessCheck": "-PT17.1357909S",
@@ -294,7 +302,6 @@ Content-Length: 3327
   "protectInboundDataFromUnknownSources": true
 }
 ```
-
 
 
 

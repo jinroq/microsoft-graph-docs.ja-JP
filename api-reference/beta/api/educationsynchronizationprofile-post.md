@@ -4,23 +4,23 @@ description: 'テナントの新しい学校のデータの同期プロファイ
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: 9d471766a8492e03809d05d6d0366c8e44d59015
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 4a8864979254eaafdb71b3524831227399d7bff6
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27915761"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29417876"
 ---
 # <a name="create-an-educationsynchronizationprofile"></a>EducationSynchronizationProfile を作成します。
 
-> **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。
+> **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
 
 テナントの新しい学校のデータ[の同期プロファイル](../resources/educationsynchronizationprofile.md)の要求を作成します。 プロファイルの状態を取得する[クエリ状態](educationsynchronizationprofilestatus-get.md)にします。 
 
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
 
-| アクセス許可の種類 | Permissions |
+| アクセス許可の種類 | アクセス許可 |
 |:-----------|:----------|
 | 委任 (職場または学校のアカウント) | EduAdministration.ReadWrite |
 |(個人用の Microsoft アカウントを委任します。|サポートされていません。|
@@ -33,10 +33,10 @@ POST /synchronizationProfiles
 ```
 
 ## <a name="request-headers"></a>要求ヘッダー
-| 名前       | 種類 | 説明|
+| 名前       | 型 | 説明|
 |:-----------|:------|:----------|
 | Authorization  | string  | ベアラー {トークン}。必須。  |
-| Content-Type | string | アプリケーションまたは json。 必須。 |
+| Content-Type | string | アプリケーションまたは json。 必須です。 |
 
 ## <a name="request-body"></a>要求本文
 要求の本文には、 [educationSynchronizationProfile](../resources/educationsynchronizationprofile.md)オブジェクトの JSON 表現を指定します。
@@ -58,7 +58,7 @@ Content-type: application/json
 {
     "displayName": "Test Profile",
     "dataProvider": {
-        "@odata.type": "#microsoft.graph.educationcsvdataprovider",
+        "@odata.type": "microsoft.graph.educationCsvDataProvider",
         "customizations": {
             "student": {
                 "optionalPropertiesToSync": [
@@ -69,7 +69,7 @@ Content-type: application/json
         }
     },
     "identitySynchronizationConfiguration": {
-        "@odata.type": "#microsoft.graph.educationidentitycreationconfiguration",
+        "@odata.type": "microsoft.graph.educationIdentitySynchronizationConfiguration",
         "userDomains": [
             {
                 "appliesTo": "student",
@@ -106,7 +106,7 @@ Content-type: application/json
 <!-- {
   "blockType": "ignored",
   "truncated": true,
-  "@odata.type": "#microsoft.graph.educationSynchronizationProfile",
+  "@odata.type": "microsoft.graph.educationSynchronizationProfile",
 } -->
 ```http
 HTTP/1.1 201 Created
@@ -117,7 +117,7 @@ Content-type: application/json
     "state": "provisioning",
     "id": "86904b1e-c7d0-4ead-b13a-98f11fc400ee",
     "dataProvider": {
-        "@odata.type": "#microsoft.graph.educationCsvDataProvider",
+        "@odata.type": "microsoft.graph.educationCsvDataProvider",
         "customizations": {
             "student": {
                 "optionalPropertiesToSync": [
@@ -157,7 +157,7 @@ Content-type: application/json
         }
     },
     "identitySynchronizationConfiguration": {
-        "@odata.type": "#microsoft.graph.educationIdentityCreationConfiguration",
+        "@odata.type": "microsoft.graph.educationIdentityCreationConfiguration",
         "userDomains": [
             {
                 "appliesTo": "student",
@@ -171,14 +171,14 @@ Content-type: application/json
     },
     "licensesToAssign": [
         {
-            "@odata.type": "#microsoft.graph.educationSynchronizationLicenseAssignment",
+            "@odata.type": "microsoft.graph.educationSynchronizationLicenseAssignment",
             "appliesTo": "teacher",
             "skuIds": [
                 "6fd2c87f-b296-42f0-b197-1e91e994b900"
             ]
         },
         {
-            "@odata.type": "#microsoft.graph.educationSynchronizationLicenseAssignment",
+            "@odata.type": "microsoft.graph.educationSynchronizationLicenseAssignment",
             "appliesTo": "student",
             "skuIds": [
                 "6fd2c87f-b296-42f0-b197-1e91e994b900"

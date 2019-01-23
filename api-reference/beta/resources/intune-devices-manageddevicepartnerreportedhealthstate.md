@@ -1,23 +1,24 @@
 ---
 title: managedDevicePartnerReportedHealthState 列挙型
 description: デバイス状態の API の使用可能な状態
-author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 14fe3c6769e717abb3d899e6ce7da33215a04a78
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: tfitzmac
+ms.prod: Intune
+ms.openlocfilehash: cb5b13ceceab27e1e88a69310a3198159f5e24c1
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27991763"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29418828"
 ---
 # <a name="manageddevicepartnerreportedhealthstate-enum-type"></a>managedDevicePartnerReportedHealthState 列挙型
 
-> **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。
+> **重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
 
-> **注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
+> **注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 デバイス状態の API の使用可能な状態
+
 ## <a name="members"></a>メンバー
 |メンバー|値|説明|
 |:---|:---|:---|
@@ -31,7 +32,6 @@ ms.locfileid: "27991763"
 |応答しません。|7|デバイスは、モバイルの脅威の防御のパートナーが応答しなくなったと見なされます。 デバイスの状態が不明です。|
 |危険にさらされました。|8|デバイスでは、脅威に対する防御のパートナーが危険にさらされたと見なされます。 つまり、デバイスには、作業中の脅威やリスクをエンド ・ ユーザーによって容易に改善することはできませんし、ユーザーは、IT 管理者に連絡する必要があります。|
 |構成が正しくありません。|9|デバイスでは、脅威に対する防御のパートナーで正しく構成されていないと見なされます。 つまりデバイスが必要なプロファイルまたは正常に機能する脅威の防御のパートナーの構成が存在しませんし、脅威は、このようにリスク分析が完了することはありません。|
-
 
 
 

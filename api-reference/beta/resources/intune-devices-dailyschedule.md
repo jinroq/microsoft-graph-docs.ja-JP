@@ -1,33 +1,35 @@
 ---
 title: 社員のリソースの種類
 description: 定期的なデバイスの管理スクリプトの実行スケジュールを日単位です。
-author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: d0f4f258afe1de65bd8fecf32d9df387716a2c6d
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: tfitzmac
+ms.prod: Intune
+ms.openlocfilehash: c4cbe48aecf3fe561becad4734f7de0b5f68ffa0
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27987714"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29415251"
 ---
 # <a name="dailyschedule-resource-type"></a>社員のリソースの種類
 
-> **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。
+> **重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
 
-> **注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
+> **注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 定期的なデバイスの管理スクリプトの実行スケジュールを日単位です。
+
 
 [RunSchedule](../resources/intune-devices-runschedule.md)から継承します。
 
 ## <a name="properties"></a>プロパティ
-|プロパティ|種類|説明|
+|プロパティ|型|説明|
 |:---|:---|:---|
 |interval|Int32|間隔の日数|
 
 ## <a name="relationships"></a>リレーションシップ
 なし
+
 ## <a name="json-representation"></a>JSON 表記
 以下は、リソースの JSON 表記です。
 <!-- {
@@ -41,7 +43,6 @@ ms.locfileid: "27987714"
   "interval": 1024
 }
 ```
-
 
 
 

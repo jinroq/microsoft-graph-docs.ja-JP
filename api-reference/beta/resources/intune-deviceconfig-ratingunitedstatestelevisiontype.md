@@ -1,23 +1,24 @@
 ---
 title: ratingUnitedStatesTelevisionType 列挙型
 description: アメリカ合衆国内のテレビ コンテンツの規制ラベル
-author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 9f4492fac5bc003fdaba15a39b0f58892872ea87
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: tfitzmac
+ms.prod: Intune
+ms.openlocfilehash: 405aad7e63d1c323503dde0b0bd8829702a7dcaf
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27964803"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29403358"
 ---
 # <a name="ratingunitedstatestelevisiontype-enum-type"></a>ratingUnitedStatesTelevisionType 列挙型
 
-> **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。
+> **重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
 
-> **注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
+> **注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 アメリカ合衆国内のテレビ コンテンツの規制ラベル
+
 ## <a name="members"></a>メンバー
 |メンバー|値|説明|
 |:---|:---|:---|
@@ -29,7 +30,6 @@ ms.locfileid: "27964803"
 |parentalGuidance|5|テレビ PG、保護者による制限|
 |childrenAbove14|6|テレビ-14、子供時代の 14 以上の文字|
 |大人|7|テレビ MA、成人のみ|
-
 
 
 

@@ -1,25 +1,26 @@
 ---
 title: IosEasEmailProfileConfiguration を作成します。
 description: 新しい iosEasEmailProfileConfiguration オブジェクトを作成します。
-author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: b325d251d65df5b76562d12d331d12bf388b9a39
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: tfitzmac
+ms.prod: Intune
+ms.openlocfilehash: c7de248c21b0efebdcff07ebac804656dc8ebfde
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27955423"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29404450"
 ---
 # <a name="create-ioseasemailprofileconfiguration"></a>IosEasEmailProfileConfiguration を作成します。
 
-> **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。
+> **重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
 
-> **注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
+> **注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 新しい[iosEasEmailProfileConfiguration](../resources/intune-deviceconfig-ioseasemailprofileconfiguration.md)オブジェクトを作成します。
+
 ## <a name="prerequisites"></a>前提条件
-この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
+この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/concepts/permissions-reference.md)」を参照してください。
 
 |アクセス許可の種類|アクセス許可 (特権の大きいものから小さいものへ)|
 |:---|:---|
@@ -48,12 +49,12 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 
 次の表は、iosEasEmailProfileConfiguration を作成するときに必要なプロパティを示します。
 
-|プロパティ|種類|説明|
+|プロパティ|型|説明|
 |:---|:---|:---|
-|ID|String|エンティティのキー。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
+|id|String|エンティティのキー。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |lastModifiedDateTime|DateTimeOffset|オブジェクトが最後に変更された DateTime。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |roleScopeTagIds|String コレクション|このエンティティ インスタンスのスコープのタグのリストです。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
-|supportsScopeTags|ブール型|デバイスの構成を基になるスコープのタグの割り当てをサポートしているかどうかを示します。 この値が false であり、エンティティをスコープ指定されたユーザーには表示されませんがある場合、ScopeTags プロパティに割り当てることは許可されていません。 これは、Silverlight で作成されたレガシ ポリシーに対して発生し、削除して、Azure ポータル内のポリシーを再作成することで解決できます。 このプロパティは読み取りのみ可能です。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
+|supportsScopeTags|Boolean|デバイスの構成を基になるスコープのタグの割り当てをサポートしているかどうかを示します。 この値が false であり、エンティティをスコープ指定されたユーザーには表示されませんがある場合、ScopeTags プロパティに割り当てることは許可されていません。 これは、Silverlight で作成されたレガシ ポリシーに対して発生し、削除して、Azure ポータル内のポリシーを再作成することで解決できます。 このプロパティは読み取りのみ可能です。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |createdDateTime|DateTimeOffset|オブジェクトが作成された DateTime。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |説明|String|デバイス構成について管理者が提供した説明。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |displayName|String|デバイス構成について管理者が指定した名前。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
@@ -64,16 +65,22 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 |customDomainName|String|カスタム ドメイン名の値は、デバイスにインストールする前に、電子メール プロファイルを生成する際に使用します。 [EasEmailProfileConfigurationBase](../resources/intune-deviceconfig-easemailprofileconfigurationbase.md)から継承されました。|
 |accountName|String|アカウントの名前です。|
 |authenticationMethod|[easAuthenticationMethod](../resources/intune-deviceconfig-easauthenticationmethod.md)|このメール プロファイルの認証方法です。 使用可能な値は、`usernameAndPassword`、`certificate` です。|
-|blockMovingMessagesToOtherEmailAccounts|ブール型|他の電子メール アカウントにメッセージを移動をブロックするかどうかを示します。|
-|blockSendingEmailFromThirdPartyApps|ブール型|サード パーティ製アプリケーションから電子メールの送信をブロックするかどうかを示します。|
-|blockSyncingRecentlyUsedEmailAddresses|ブール型|新しい電子メールを作成するとき、同期中最近使用した電子メール アドレス、-をブロックするかどうかを示します。|
+|blockMovingMessagesToOtherEmailAccounts|Boolean|他の電子メール アカウントにメッセージを移動をブロックするかどうかを示します。|
+|blockSendingEmailFromThirdPartyApps|Boolean|サード パーティ製アプリケーションから電子メールの送信をブロックするかどうかを示します。|
+|blockSyncingRecentlyUsedEmailAddresses|Boolean|新しい電子メールを作成するとき、同期中最近使用した電子メール アドレス、-をブロックするかどうかを示します。|
 |durationOfEmailToSync|[emailSyncDuration](../resources/intune-deviceconfig-emailsyncduration.md)|戻る時の電子メールの継続時間を同期する必要があります。 . 可能な値は、`userDefined`、`oneDay`、`threeDays`、`oneWeek`、`twoWeeks`、`oneMonth`、`unlimited` です。|
 |emailAddressSource|[userEmailSource](../resources/intune-deviceconfig-useremailsource.md)|AAD から選択され、デバイスにインストールする前に、このプロファイルに挿入されたメール属性です。 使用可能な値は、`userPrincipalName`、`primarySmtpAddress` です。|
 |hostName|String|場所 (URL) の交換、ネイティブのメール アプリケーションに接続します。|
-|requireSmime|ブール型|S/MIME 証明書を使用するかどうかを示します。|
-|smimeEnablePerMessageSwitch|ブール型|暗号化されていない電子メールを許可するかどうかを示します。|
-|requireSsl|ブール型|SSL を使用するかどうかを示します。|
-|useOAuth|ブール型|接続が認証に OAuth を使用する必要があるかどうかを指定します。|
+|requireSmime|Boolean|S/MIME 証明書を使用するかどうかを示します。|
+|smimeEnablePerMessageSwitch|Boolean|暗号化されていない電子メールを許可するかどうかを示します。|
+|smimeEncryptByDefaultEnabled|Boolean|場合は、S/MIME 暗号化の場合は true に設定が既定で有効にします。|
+|smimeSigningEnabled|Boolean|このアカウントの S/MIME 署名を true に設定が有効になっている場合|
+|smimeSigningUserOverrideEnabled|Boolean|かどうか true の場合、ユーザーに設定が S/MIME 署名のオンとオフを切り替えることができます。|
+|smimeEncryptByDefaultUserOverrideEnabled|Boolean|場合は true の場合、ユーザー設定が既定の設定で暗号化を切り替えることができます。|
+|smimeSigningCertificateUserOverrideEnabled|Boolean|場合は true、ユーザーを設定するには、署名 id を選択できます。|
+|smimeEncryptionCertificateUserOverrideEnabled|Boolean|場合は、ユーザーを true に設定するには、S/MIME 暗号化 id を選択できます。 |
+|requireSsl|Boolean|SSL を使用するかどうかを示します。|
+|useOAuth|Boolean|接続が認証に OAuth を使用する必要があるかどうかを指定します。|
 
 
 
@@ -81,16 +88,16 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 かどうかは成功すると、このメソッドが返されます、`201 Created`応答コードおよび応答の本文に[iosEasEmailProfileConfiguration](../resources/intune-deviceconfig-ioseasemailprofileconfiguration.md)オブジェクトです。
 
 ## <a name="example"></a>例
+
 ### <a name="request"></a>要求
 以下は、要求の例です。
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations
 Content-type: application/json
-Content-length: 974
+Content-length: 1193
 
 {
   "@odata.type": "#microsoft.graph.iosEasEmailProfileConfiguration",
-  "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
   "roleScopeTagIds": [
     "Role Scope Tag Ids value"
   ],
@@ -112,6 +119,12 @@ Content-length: 974
   "hostName": "Host Name value",
   "requireSmime": true,
   "smimeEnablePerMessageSwitch": true,
+  "smimeEncryptByDefaultEnabled": true,
+  "smimeSigningEnabled": true,
+  "smimeSigningUserOverrideEnabled": true,
+  "smimeEncryptByDefaultUserOverrideEnabled": true,
+  "smimeSigningCertificateUserOverrideEnabled": true,
+  "smimeEncryptionCertificateUserOverrideEnabled": true,
   "requireSsl": true,
   "useOAuth": true
 }
@@ -122,7 +135,7 @@ Content-length: 974
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 1082
+Content-Length: 1365
 
 {
   "@odata.type": "#microsoft.graph.iosEasEmailProfileConfiguration",
@@ -150,11 +163,16 @@ Content-Length: 1082
   "hostName": "Host Name value",
   "requireSmime": true,
   "smimeEnablePerMessageSwitch": true,
+  "smimeEncryptByDefaultEnabled": true,
+  "smimeSigningEnabled": true,
+  "smimeSigningUserOverrideEnabled": true,
+  "smimeEncryptByDefaultUserOverrideEnabled": true,
+  "smimeSigningCertificateUserOverrideEnabled": true,
+  "smimeEncryptionCertificateUserOverrideEnabled": true,
   "requireSsl": true,
   "useOAuth": true
 }
 ```
-
 
 
 

@@ -1,25 +1,26 @@
 ---
 title: enrollmentTroubleshootingEvent の作成
 description: 新しい enrollmentTroubleshootingEvent オブジェクトを作成します。
-author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 8ae80e2084945b1dd5fb0259b16b178ab2d38ec5
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: tfitzmac
+ms.prod: Intune
+ms.openlocfilehash: a9eefb12628bf3d95c94b913ec8ae66a90108d08
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27924567"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29418975"
 ---
 # <a name="create-enrollmenttroubleshootingevent"></a>enrollmentTroubleshootingEvent の作成
 
-> **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中で、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。
+> **重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
 
-> **注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
+> **注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 新しい [enrollmentTroubleshootingEvent](../resources/intune-troubleshooting-enrollmenttroubleshootingevent.md) オブジェクトを作成します。
+
 ## <a name="prerequisites"></a>前提条件
-この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
+この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/concepts/permissions-reference.md)」を参照してください。
 
 |アクセス許可の種類|アクセス許可 (特権の大きいものから小さいものへ)|
 |:---|:---|
@@ -49,9 +50,12 @@ POST /deviceManagement/troubleshootingEvents
 
 |プロパティ|型|説明|
 |:---|:---|:---|
-|ID|String|オブジェクトの UUID。[deviceManagementTroubleshootingEvent](../resources/intune-troubleshooting-devicemanagementtroubleshootingevent.md) から継承|
+|id|String|オブジェクトの UUID。[deviceManagementTroubleshootingEvent](../resources/intune-troubleshooting-devicemanagementtroubleshootingevent.md) から継承|
 |eventDateTime|DateTimeOffset|インシデントが発生した時間。 [deviceManagementTroubleshootingEvent](../resources/intune-troubleshooting-devicemanagementtroubleshootingevent.md) から継承します|
 |correlationId|String|サービスのエラーをトレースするための ID。 [deviceManagementTroubleshootingEvent](../resources/intune-troubleshooting-devicemanagementtroubleshootingevent.md) から継承します|
+|troubleshootingErrorDetails|[deviceManagementTroubleshootingErrorDetails](../resources/intune-troubleshooting-devicemanagementtroubleshootingerrordetails.md)|エラーとその修復に関する詳細情報を含むオブジェクトです。 [deviceManagementTroubleshootingEvent](../resources/intune-troubleshooting-devicemanagementtroubleshootingevent.md) から継承します|
+|eventName|String|トラブルシューティング イベントに対応するイベントの名前です。 [DeviceManagementTroubleshootingEvent](../resources/intune-troubleshooting-devicemanagementtroubleshootingevent.md)から継承される省略可能なフィールドします。|
+|について|[keyValuePair](../resources/intune-shared-keyvaluepair.md) コレクション|[DeviceManagementTroubleshootingEvent](../resources/intune-troubleshooting-devicemanagementtroubleshootingevent.md)から継承されるトラブルシューティング イベントに関する追加情報を提供する文字列キーと文字列値のペアのセット|
 |managedDeviceIdentifier|String|Intune によって作成または収集されるデバイス識別子。|
 |operatingSystem|String|オペレーティング システム。|
 |osVersion|String|OS バージョン。|
@@ -67,17 +71,40 @@ POST /deviceManagement/troubleshootingEvents
 成功した場合、このメソッドは `201 Created` 応答コードと、応答本文で [enrollmentTroubleshootingEvent](../resources/intune-troubleshooting-enrollmenttroubleshootingevent.md) オブジェクトを返します。
 
 ## <a name="example"></a>例
+
 ### <a name="request"></a>要求
 以下は、要求の例です。
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/troubleshootingEvents
 Content-type: application/json
-Content-length: 509
+Content-length: 1182
 
 {
   "@odata.type": "#microsoft.graph.enrollmentTroubleshootingEvent",
   "eventDateTime": "2016-12-31T23:59:23.3984029-08:00",
   "correlationId": "Correlation Id value",
+  "troubleshootingErrorDetails": {
+    "@odata.type": "microsoft.graph.deviceManagementTroubleshootingErrorDetails",
+    "context": "Context value",
+    "failure": "Failure value",
+    "failureDetails": "Failure Details value",
+    "remediation": "Remediation value",
+    "resources": [
+      {
+        "@odata.type": "microsoft.graph.deviceManagementTroubleshootingErrorResource",
+        "text": "Text value",
+        "link": "Link value"
+      }
+    ]
+  },
+  "eventName": "Event Name value",
+  "additionalInformation": [
+    {
+      "@odata.type": "microsoft.graph.keyValuePair",
+      "name": "Name value",
+      "value": "Value value"
+    }
+  ],
   "managedDeviceIdentifier": "Managed Device Identifier value",
   "operatingSystem": "Operating System value",
   "osVersion": "Os Version value",
@@ -94,13 +121,35 @@ Content-length: 509
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 558
+Content-Length: 1231
 
 {
   "@odata.type": "#microsoft.graph.enrollmentTroubleshootingEvent",
   "id": "c4a623f5-23f5-c4a6-f523-a6c4f523a6c4",
   "eventDateTime": "2016-12-31T23:59:23.3984029-08:00",
   "correlationId": "Correlation Id value",
+  "troubleshootingErrorDetails": {
+    "@odata.type": "microsoft.graph.deviceManagementTroubleshootingErrorDetails",
+    "context": "Context value",
+    "failure": "Failure value",
+    "failureDetails": "Failure Details value",
+    "remediation": "Remediation value",
+    "resources": [
+      {
+        "@odata.type": "microsoft.graph.deviceManagementTroubleshootingErrorResource",
+        "text": "Text value",
+        "link": "Link value"
+      }
+    ]
+  },
+  "eventName": "Event Name value",
+  "additionalInformation": [
+    {
+      "@odata.type": "microsoft.graph.keyValuePair",
+      "name": "Name value",
+      "value": "Value value"
+    }
+  ],
   "managedDeviceIdentifier": "Managed Device Identifier value",
   "operatingSystem": "Operating System value",
   "osVersion": "Os Version value",
@@ -111,7 +160,6 @@ Content-Length: 558
   "failureReason": "Failure Reason value"
 }
 ```
-
 
 
 
