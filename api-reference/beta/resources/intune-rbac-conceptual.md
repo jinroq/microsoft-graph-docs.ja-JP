@@ -4,30 +4,30 @@ description: 'Intune の役割ベースのアクセス制御により、だれ�
 localization_priority: Normal
 author: tfitzmac
 ms.prod: intune
-ms.openlocfilehash: cbbd04aacd80c8ad3c3082505ab052e2bdd65cbe
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 4cdc5e875f698646288258fc225ad77f8c4c2ba8
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27924357"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29395749"
 ---
-# <a name="role-based-access-control-in-microsoft-intune"></a><span data-ttu-id="cf3dc-103">Microsoft Intune での役割ベースのアクセス制御</span><span class="sxs-lookup"><span data-stu-id="cf3dc-103">Role-based access control in Microsoft Intune</span></span>
+# <a name="role-based-access-control-in-microsoft-intune"></a><span data-ttu-id="3d587-103">Microsoft Intune での役割ベースのアクセス制御</span><span class="sxs-lookup"><span data-stu-id="3d587-103">Role-based access control in Microsoft Intune</span></span>
 
-> <span data-ttu-id="cf3dc-104">**重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。</span><span class="sxs-lookup"><span data-stu-id="cf3dc-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="cf3dc-105">実稼働アプリケーションでの、これらの API の使用はサポートされていません。</span><span class="sxs-lookup"><span data-stu-id="cf3dc-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="3d587-104">**重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。</span><span class="sxs-lookup"><span data-stu-id="3d587-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="3d587-105">実稼働アプリケーションでの、これらの API の使用はサポートされていません。</span><span class="sxs-lookup"><span data-stu-id="3d587-105">Use of these APIs in production applications is not supported.</span></span>
 
-> <span data-ttu-id="cf3dc-106">**注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-pricing)を持っている必要があります。</span><span class="sxs-lookup"><span data-stu-id="cf3dc-106">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-pricing) by the customer.</span></span>
+> <span data-ttu-id="3d587-106">**注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-pricing)を持っている必要があります。</span><span class="sxs-lookup"><span data-stu-id="3d587-106">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-pricing) by the customer.</span></span>
 
-<span data-ttu-id="cf3dc-107">Intune の役割ベースのアクセス制御により、だれが Intune オブジェクトに対してアクションを実行し、管理対象アプリケーション、ユーザー、デバイスを変更できるかが決まります。</span><span class="sxs-lookup"><span data-stu-id="cf3dc-107">Intune's role-based access control determines who can perform actions on Intune objects and make changes for managed applications, users and devices.</span></span>   
+<span data-ttu-id="3d587-107">Intune の役割ベースのアクセス制御により、だれが Intune オブジェクトに対してアクションを実行し、管理対象アプリケーション、ユーザー、デバイスを変更できるかが決まります。</span><span class="sxs-lookup"><span data-stu-id="3d587-107">Intune's role-based access control determines who can perform actions on Intune objects and make changes for managed applications, users and devices.</span></span>   
 
-<span data-ttu-id="cf3dc-108">次の Graph リソースを使用して、Intune での役割ベースのアクセス制御を管理できます。</span><span class="sxs-lookup"><span data-stu-id="cf3dc-108">The following Graph resources are available to manage role-based access control in Intune:</span></span>
+<span data-ttu-id="3d587-108">次の Graph リソースを使用して、Intune での役割ベースのアクセス制御を管理できます。</span><span class="sxs-lookup"><span data-stu-id="3d587-108">The following Graph resources are available to manage role-based access control in Intune:</span></span>
 
-- [<span data-ttu-id="cf3dc-109">ロール id を割り当てられているデバイスとアプリケーションの管理</span><span class="sxs-lookup"><span data-stu-id="cf3dc-109">Device and app management assigned role ids</span></span>](intune-rbac-deviceandappmanagementassignedroleids.md)
-- [<span data-ttu-id="cf3dc-110">デバイスおよびアプリ管理役割の割り当て</span><span class="sxs-lookup"><span data-stu-id="cf3dc-110">Device and app management role assignment</span></span>](intune-rbac-deviceandappmanagementroleassignment.md)
-- [<span data-ttu-id="cf3dc-111">デバイスおよびアプリ管理役割の定義</span><span class="sxs-lookup"><span data-stu-id="cf3dc-111">Device and app management role definition</span></span>](intune-rbac-deviceandappmanagementroledefinition.md)
-- [<span data-ttu-id="cf3dc-112">リソース アクション</span><span class="sxs-lookup"><span data-stu-id="cf3dc-112">Resource action</span></span>](intune-rbac-resourceaction.md)
-- [<span data-ttu-id="cf3dc-113">リソース操作</span><span class="sxs-lookup"><span data-stu-id="cf3dc-113">Resource operation</span></span>](intune-rbac-resourceoperation.md)
-- [<span data-ttu-id="cf3dc-114">役割の割り当て</span><span class="sxs-lookup"><span data-stu-id="cf3dc-114">Role assignment</span></span>](intune-rbac-roleassignment.md)
-- [<span data-ttu-id="cf3dc-115">ロール割り当てのスコープの種類</span><span class="sxs-lookup"><span data-stu-id="cf3dc-115">Role assignment scope type</span></span>](intune-rbac-roleassignmentscopetype.md)
-- [<span data-ttu-id="cf3dc-116">役割の定義</span><span class="sxs-lookup"><span data-stu-id="cf3dc-116">Role definition</span></span>](intune-rbac-roledefinition.md)
-- [<span data-ttu-id="cf3dc-117">役割のアクセス許可</span><span class="sxs-lookup"><span data-stu-id="cf3dc-117">Role permission</span></span>](intune-rbac-rolepermission.md)
-- [<span data-ttu-id="cf3dc-118">ロールのスコープのタグ</span><span class="sxs-lookup"><span data-stu-id="cf3dc-118">Role scope tag</span></span>](intune-rbac-rolescopetag.md)
+- [<span data-ttu-id="3d587-109">ロールの詳細を割り当てられているデバイスとアプリケーションの管理</span><span class="sxs-lookup"><span data-stu-id="3d587-109">Device and app management assigned role details</span></span>](intune-rbac-deviceandappmanagementassignedroledetails.md)
+- [<span data-ttu-id="3d587-110">デバイスおよびアプリ管理役割の割り当て</span><span class="sxs-lookup"><span data-stu-id="3d587-110">Device and app management role assignment</span></span>](intune-rbac-deviceandappmanagementroleassignment.md)
+- [<span data-ttu-id="3d587-111">デバイスおよびアプリ管理役割の定義</span><span class="sxs-lookup"><span data-stu-id="3d587-111">Device and app management role definition</span></span>](intune-rbac-deviceandappmanagementroledefinition.md)
+- [<span data-ttu-id="3d587-112">リソース アクション</span><span class="sxs-lookup"><span data-stu-id="3d587-112">Resource action</span></span>](intune-rbac-resourceaction.md)
+- [<span data-ttu-id="3d587-113">リソース操作</span><span class="sxs-lookup"><span data-stu-id="3d587-113">Resource operation</span></span>](intune-rbac-resourceoperation.md)
+- [<span data-ttu-id="3d587-114">役割の割り当て</span><span class="sxs-lookup"><span data-stu-id="3d587-114">Role assignment</span></span>](intune-rbac-roleassignment.md)
+- [<span data-ttu-id="3d587-115">ロール割り当てのスコープの種類</span><span class="sxs-lookup"><span data-stu-id="3d587-115">Role assignment scope type</span></span>](intune-rbac-roleassignmentscopetype.md)
+- [<span data-ttu-id="3d587-116">役割の定義</span><span class="sxs-lookup"><span data-stu-id="3d587-116">Role definition</span></span>](intune-rbac-roledefinition.md)
+- [<span data-ttu-id="3d587-117">役割のアクセス許可</span><span class="sxs-lookup"><span data-stu-id="3d587-117">Role permission</span></span>](intune-rbac-rolepermission.md)
+- [<span data-ttu-id="3d587-118">ロールのスコープのタグ</span><span class="sxs-lookup"><span data-stu-id="3d587-118">Role scope tag</span></span>](intune-rbac-rolescopetag.md)

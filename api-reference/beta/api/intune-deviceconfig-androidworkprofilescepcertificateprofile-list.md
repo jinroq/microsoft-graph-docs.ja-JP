@@ -1,33 +1,34 @@
 ---
 title: リスト androidWorkProfileScepCertificateProfiles
 description: AndroidWorkProfileScepCertificateProfile オブジェクトのプロパティと関係を一覧表示します。
-author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 4f5bf49e5eb2930a14c8d0974e2717d285612a91
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: tfitzmac
+ms.prod: Intune
+ms.openlocfilehash: 4ff18e6c14f4471f2a3eb0228484a7d2ea346b9b
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27958279"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29396939"
 ---
-# <a name="list-androidworkprofilescepcertificateprofiles"></a><span data-ttu-id="73090-103">リスト androidWorkProfileScepCertificateProfiles</span><span class="sxs-lookup"><span data-stu-id="73090-103">List androidWorkProfileScepCertificateProfiles</span></span>
+# <a name="list-androidworkprofilescepcertificateprofiles"></a><span data-ttu-id="372f0-103">リスト androidWorkProfileScepCertificateProfiles</span><span class="sxs-lookup"><span data-stu-id="372f0-103">List androidWorkProfileScepCertificateProfiles</span></span>
 
-> <span data-ttu-id="73090-104">**重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。</span><span class="sxs-lookup"><span data-stu-id="73090-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="73090-105">実稼働アプリケーションでの、これらの API の使用はサポートされていません。</span><span class="sxs-lookup"><span data-stu-id="73090-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="372f0-104">**重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。</span><span class="sxs-lookup"><span data-stu-id="372f0-104">**Important:** APIs under the /beta version in Microsoft Graph are subject to change.</span></span> <span data-ttu-id="372f0-105">実稼働アプリケーションでこれらの API を使用することは、サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="372f0-105">Use of these APIs in production applications is not supported.</span></span>
 
-> <span data-ttu-id="73090-106">**注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。</span><span class="sxs-lookup"><span data-stu-id="73090-106">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
+> <span data-ttu-id="372f0-106">**注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。</span><span class="sxs-lookup"><span data-stu-id="372f0-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="73090-107">[AndroidWorkProfileScepCertificateProfile](../resources/intune-deviceconfig-androidworkprofilescepcertificateprofile.md)オブジェクトのプロパティと関係を一覧表示します。</span><span class="sxs-lookup"><span data-stu-id="73090-107">List properties and relationships of the [androidWorkProfileScepCertificateProfile](../resources/intune-deviceconfig-androidworkprofilescepcertificateprofile.md) objects.</span></span>
-## <a name="prerequisites"></a><span data-ttu-id="73090-108">前提条件</span><span class="sxs-lookup"><span data-stu-id="73090-108">Prerequisites</span></span>
-<span data-ttu-id="73090-p102">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="73090-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="372f0-107">[AndroidWorkProfileScepCertificateProfile](../resources/intune-deviceconfig-androidworkprofilescepcertificateprofile.md)オブジェクトのプロパティと関係を一覧表示します。</span><span class="sxs-lookup"><span data-stu-id="372f0-107">List properties and relationships of the [androidWorkProfileScepCertificateProfile](../resources/intune-deviceconfig-androidworkprofilescepcertificateprofile.md) objects.</span></span>
 
-|<span data-ttu-id="73090-111">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="73090-111">Permission type</span></span>|<span data-ttu-id="73090-112">アクセス許可 (特権の大きいものから小さいものへ)</span><span class="sxs-lookup"><span data-stu-id="73090-112">Permissions (from most to least privileged)</span></span>|
+## <a name="prerequisites"></a><span data-ttu-id="372f0-108">前提条件</span><span class="sxs-lookup"><span data-stu-id="372f0-108">Prerequisites</span></span>
+<span data-ttu-id="372f0-p102">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/concepts/permissions-reference.md)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="372f0-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/concepts/permissions-reference.md).</span></span>
+
+|<span data-ttu-id="372f0-111">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="372f0-111">Permission type</span></span>|<span data-ttu-id="372f0-112">アクセス許可 (特権の大きいものから小さいものへ)</span><span class="sxs-lookup"><span data-stu-id="372f0-112">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="73090-113">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="73090-113">Delegated (work or school account)</span></span>|<span data-ttu-id="73090-114">DeviceManagementConfiguration.ReadWrite.All、DeviceManagementConfiguration.Read.All</span><span class="sxs-lookup"><span data-stu-id="73090-114">DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All</span></span>|
-|<span data-ttu-id="73090-115">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="73090-115">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="73090-116">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="73090-116">Not supported.</span></span>|
-|<span data-ttu-id="73090-117">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="73090-117">Application</span></span>|<span data-ttu-id="73090-118">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="73090-118">Not supported.</span></span>|
+|<span data-ttu-id="372f0-113">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="372f0-113">Delegated (work or school account)</span></span>|<span data-ttu-id="372f0-114">DeviceManagementConfiguration.ReadWrite.All、DeviceManagementConfiguration.Read.All</span><span class="sxs-lookup"><span data-stu-id="372f0-114">DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All</span></span>|
+|<span data-ttu-id="372f0-115">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="372f0-115">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="372f0-116">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="372f0-116">Not supported.</span></span>|
+|<span data-ttu-id="372f0-117">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="372f0-117">Application</span></span>|<span data-ttu-id="372f0-118">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="372f0-118">Not supported.</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="73090-119">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="73090-119">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="372f0-119">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="372f0-119">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -37,27 +38,28 @@ GET /deviceManagement/deviceConfigurations
 GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.windowsDomainJoinConfiguration/networkAccessConfigurations
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="73090-120">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="73090-120">Request headers</span></span>
-|<span data-ttu-id="73090-121">ヘッダー</span><span class="sxs-lookup"><span data-stu-id="73090-121">Header</span></span>|<span data-ttu-id="73090-122">値</span><span class="sxs-lookup"><span data-stu-id="73090-122">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="372f0-120">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="372f0-120">Request headers</span></span>
+|<span data-ttu-id="372f0-121">ヘッダー</span><span class="sxs-lookup"><span data-stu-id="372f0-121">Header</span></span>|<span data-ttu-id="372f0-122">値</span><span class="sxs-lookup"><span data-stu-id="372f0-122">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="73090-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="73090-123">Authorization</span></span>|<span data-ttu-id="73090-124">ベアラー &lt;トークン&gt; が必須。</span><span class="sxs-lookup"><span data-stu-id="73090-124">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="73090-125">Accept</span><span class="sxs-lookup"><span data-stu-id="73090-125">Accept</span></span>|<span data-ttu-id="73090-126">application/json</span><span class="sxs-lookup"><span data-stu-id="73090-126">application/json</span></span>|
+|<span data-ttu-id="372f0-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="372f0-123">Authorization</span></span>|<span data-ttu-id="372f0-124">ベアラー &lt;トークン&gt; が必須。</span><span class="sxs-lookup"><span data-stu-id="372f0-124">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="372f0-125">Accept</span><span class="sxs-lookup"><span data-stu-id="372f0-125">Accept</span></span>|<span data-ttu-id="372f0-126">application/json</span><span class="sxs-lookup"><span data-stu-id="372f0-126">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="73090-127">要求本文</span><span class="sxs-lookup"><span data-stu-id="73090-127">Request body</span></span>
-<span data-ttu-id="73090-128">このメソッドには、要求本文を指定しません。</span><span class="sxs-lookup"><span data-stu-id="73090-128">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="372f0-127">要求本文</span><span class="sxs-lookup"><span data-stu-id="372f0-127">Request body</span></span>
+<span data-ttu-id="372f0-128">このメソッドには、要求本文を指定しません。</span><span class="sxs-lookup"><span data-stu-id="372f0-128">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="73090-129">応答</span><span class="sxs-lookup"><span data-stu-id="73090-129">Response</span></span>
-<span data-ttu-id="73090-130">かどうかは成功すると、このメソッドが返されます、`200 OK`応答コードおよび応答の本文に[androidWorkProfileScepCertificateProfile](../resources/intune-deviceconfig-androidworkprofilescepcertificateprofile.md)オブジェクトのコレクションです。</span><span class="sxs-lookup"><span data-stu-id="73090-130">If successful, this method returns a `200 OK` response code and a collection of [androidWorkProfileScepCertificateProfile](../resources/intune-deviceconfig-androidworkprofilescepcertificateprofile.md) objects in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="372f0-129">応答</span><span class="sxs-lookup"><span data-stu-id="372f0-129">Response</span></span>
+<span data-ttu-id="372f0-130">かどうかは成功すると、このメソッドが返されます、`200 OK`応答コードおよび応答の本文に[androidWorkProfileScepCertificateProfile](../resources/intune-deviceconfig-androidworkprofilescepcertificateprofile.md)オブジェクトのコレクションです。</span><span class="sxs-lookup"><span data-stu-id="372f0-130">If successful, this method returns a `200 OK` response code and a collection of [androidWorkProfileScepCertificateProfile](../resources/intune-deviceconfig-androidworkprofilescepcertificateprofile.md) objects in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="73090-131">例</span><span class="sxs-lookup"><span data-stu-id="73090-131">Example</span></span>
-### <a name="request"></a><span data-ttu-id="73090-132">要求</span><span class="sxs-lookup"><span data-stu-id="73090-132">Request</span></span>
-<span data-ttu-id="73090-133">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="73090-133">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="372f0-131">例</span><span class="sxs-lookup"><span data-stu-id="372f0-131">Example</span></span>
+
+### <a name="request"></a><span data-ttu-id="372f0-132">要求</span><span class="sxs-lookup"><span data-stu-id="372f0-132">Request</span></span>
+<span data-ttu-id="372f0-133">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="372f0-133">Here is an example of the request.</span></span>
 ``` http
 GET https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations
 ```
 
-### <a name="response"></a><span data-ttu-id="73090-134">応答</span><span class="sxs-lookup"><span data-stu-id="73090-134">Response</span></span>
-<span data-ttu-id="73090-p103">以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。</span><span class="sxs-lookup"><span data-stu-id="73090-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="372f0-134">応答</span><span class="sxs-lookup"><span data-stu-id="372f0-134">Response</span></span>
+<span data-ttu-id="372f0-p103">以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。</span><span class="sxs-lookup"><span data-stu-id="372f0-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
@@ -109,7 +111,6 @@ Content-Length: 1570
   ]
 }
 ```
-
 
 
 

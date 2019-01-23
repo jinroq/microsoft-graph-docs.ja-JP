@@ -1,31 +1,31 @@
 ---
 title: windowsStartMenuAppListVisibilityType 列挙型
 description: '[スタート] メニューの [アプリケーション] ボックスの一覧の可視性のタイプです。'
-author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: f4b2e07126ab6f65af26a8145c04acbab526ab8a
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: tfitzmac
+ms.prod: Intune
+ms.openlocfilehash: 1ee1d42f74217a2c1f1629b9e2e779307fdb29c7
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27932589"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29395966"
 ---
-# <a name="windowsstartmenuapplistvisibilitytype-enum-type"></a><span data-ttu-id="c365d-103">windowsStartMenuAppListVisibilityType 列挙型</span><span class="sxs-lookup"><span data-stu-id="c365d-103">windowsStartMenuAppListVisibilityType enum type</span></span>
+# <a name="windowsstartmenuapplistvisibilitytype-enum-type"></a><span data-ttu-id="061ca-103">windowsStartMenuAppListVisibilityType 列挙型</span><span class="sxs-lookup"><span data-stu-id="061ca-103">windowsStartMenuAppListVisibilityType enum type</span></span>
 
-> <span data-ttu-id="c365d-104">**重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。</span><span class="sxs-lookup"><span data-stu-id="c365d-104">**Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="c365d-105">実稼働アプリケーションでの、これらの API の使用はサポートされていません。</span><span class="sxs-lookup"><span data-stu-id="c365d-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="061ca-104">**重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。</span><span class="sxs-lookup"><span data-stu-id="061ca-104">**Important:** APIs under the /beta version in Microsoft Graph are subject to change.</span></span> <span data-ttu-id="061ca-105">実稼働アプリケーションでこれらの API を使用することは、サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="061ca-105">Use of these APIs in production applications is not supported.</span></span>
 
-> <span data-ttu-id="c365d-106">**注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。</span><span class="sxs-lookup"><span data-stu-id="c365d-106">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
+> <span data-ttu-id="061ca-106">**注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。</span><span class="sxs-lookup"><span data-stu-id="061ca-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="c365d-107">[スタート] メニューの [アプリケーション] ボックスの一覧の可視性のタイプです。</span><span class="sxs-lookup"><span data-stu-id="c365d-107">Type of start menu app list visibility.</span></span>
-## <a name="members"></a><span data-ttu-id="c365d-108">メンバー</span><span class="sxs-lookup"><span data-stu-id="c365d-108">Members</span></span>
-|<span data-ttu-id="c365d-109">メンバー</span><span class="sxs-lookup"><span data-stu-id="c365d-109">Member</span></span>|<span data-ttu-id="c365d-110">値</span><span class="sxs-lookup"><span data-stu-id="c365d-110">Value</span></span>|<span data-ttu-id="c365d-111">説明</span><span class="sxs-lookup"><span data-stu-id="c365d-111">Description</span></span>|
+<span data-ttu-id="061ca-107">[スタート] メニューの [アプリケーション] ボックスの一覧の可視性のタイプです。</span><span class="sxs-lookup"><span data-stu-id="061ca-107">Type of start menu app list visibility.</span></span>
+
+## <a name="members"></a><span data-ttu-id="061ca-108">メンバー</span><span class="sxs-lookup"><span data-stu-id="061ca-108">Members</span></span>
+|<span data-ttu-id="061ca-109">メンバー</span><span class="sxs-lookup"><span data-stu-id="061ca-109">Member</span></span>|<span data-ttu-id="061ca-110">値</span><span class="sxs-lookup"><span data-stu-id="061ca-110">Value</span></span>|<span data-ttu-id="061ca-111">説明</span><span class="sxs-lookup"><span data-stu-id="061ca-111">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="c365d-112">ユーザー定義</span><span class="sxs-lookup"><span data-stu-id="c365d-112">userDefined</span></span>|<span data-ttu-id="c365d-113">0</span><span class="sxs-lookup"><span data-stu-id="c365d-113">0</span></span>|<span data-ttu-id="c365d-114">ユーザーが定義します。</span><span class="sxs-lookup"><span data-stu-id="c365d-114">User defined.</span></span> <span data-ttu-id="c365d-115">既定値です。</span><span class="sxs-lookup"><span data-stu-id="c365d-115">Default value.</span></span>|
-|<span data-ttu-id="c365d-116">折りたたみ</span><span class="sxs-lookup"><span data-stu-id="c365d-116">collapse</span></span>|<span data-ttu-id="c365d-117">1</span><span class="sxs-lookup"><span data-stu-id="c365d-117">1</span></span>|<span data-ttu-id="c365d-118">[スタート] メニューの [アプリケーション] ボックスの一覧を折りたたみます。</span><span class="sxs-lookup"><span data-stu-id="c365d-118">Collapse the app list on the start menu.</span></span>|
-|<span data-ttu-id="c365d-119">remove</span><span class="sxs-lookup"><span data-stu-id="c365d-119">remove</span></span>|<span data-ttu-id="c365d-120">2</span><span class="sxs-lookup"><span data-stu-id="c365d-120">2</span></span>|<span data-ttu-id="c365d-121">[スタート] メニューから、[アプリケーション] ボックスの一覧を削除します。</span><span class="sxs-lookup"><span data-stu-id="c365d-121">Removes the app list entirely from the start menu.</span></span>|
-|<span data-ttu-id="c365d-122">disableSettingsApp</span><span class="sxs-lookup"><span data-stu-id="c365d-122">disableSettingsApp</span></span>|<span data-ttu-id="c365d-123">4</span><span class="sxs-lookup"><span data-stu-id="c365d-123">4</span></span>|<span data-ttu-id="c365d-124">設定アプリで対応する切り替え (縮小または削除する) を無効にします。</span><span class="sxs-lookup"><span data-stu-id="c365d-124">Disables the corresponding toggle (Collapse or Remove) in the Settings app.</span></span>|
-
+|<span data-ttu-id="061ca-112">ユーザー定義</span><span class="sxs-lookup"><span data-stu-id="061ca-112">userDefined</span></span>|<span data-ttu-id="061ca-113">0</span><span class="sxs-lookup"><span data-stu-id="061ca-113">0</span></span>|<span data-ttu-id="061ca-114">ユーザーが定義します。</span><span class="sxs-lookup"><span data-stu-id="061ca-114">User defined.</span></span> <span data-ttu-id="061ca-115">既定値です。</span><span class="sxs-lookup"><span data-stu-id="061ca-115">Default value.</span></span>|
+|<span data-ttu-id="061ca-116">折りたたみ</span><span class="sxs-lookup"><span data-stu-id="061ca-116">collapse</span></span>|<span data-ttu-id="061ca-117">1</span><span class="sxs-lookup"><span data-stu-id="061ca-117">1</span></span>|<span data-ttu-id="061ca-118">[スタート] メニューの [アプリケーション] ボックスの一覧を折りたたみます。</span><span class="sxs-lookup"><span data-stu-id="061ca-118">Collapse the app list on the start menu.</span></span>|
+|<span data-ttu-id="061ca-119">remove</span><span class="sxs-lookup"><span data-stu-id="061ca-119">remove</span></span>|<span data-ttu-id="061ca-120">2</span><span class="sxs-lookup"><span data-stu-id="061ca-120">2</span></span>|<span data-ttu-id="061ca-121">[スタート] メニューから、[アプリケーション] ボックスの一覧を削除します。</span><span class="sxs-lookup"><span data-stu-id="061ca-121">Removes the app list entirely from the start menu.</span></span>|
+|<span data-ttu-id="061ca-122">disableSettingsApp</span><span class="sxs-lookup"><span data-stu-id="061ca-122">disableSettingsApp</span></span>|<span data-ttu-id="061ca-123">4</span><span class="sxs-lookup"><span data-stu-id="061ca-123">4</span></span>|<span data-ttu-id="061ca-124">設定アプリで対応する切り替え (縮小または削除する) を無効にします。</span><span class="sxs-lookup"><span data-stu-id="061ca-124">Disables the corresponding toggle (Collapse or Remove) in the Settings app.</span></span>|
 
 
 
