@@ -3,21 +3,22 @@ title: userPFXCertificate リソースの種類
 description: PFX 証明書のユーザーのために必要なすべての情報をカプセル化するエンティティです。
 localization_priority: Normal
 author: tfitzmac
-ms.prod: intune
-ms.openlocfilehash: f63f95bb96e379cd2fcff0f0a50ac02162223ac2
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: 95ae97b44a82d5ec87e3e2622a519debcfd8d7c5
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27987728"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29406039"
 ---
 # <a name="userpfxcertificate-resource-type"></a>userPFXCertificate リソースの種類
 
-> **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。
+> **重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
 
-> **注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
+> **注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 PFX 証明書のユーザーのために必要なすべての情報をカプセル化するエンティティです。
+
 ## <a name="methods"></a>メソッド
 |メソッド|戻り値の型|説明|
 |:---|:---|:---|
@@ -30,7 +31,7 @@ PFX 証明書のユーザーのために必要なすべての情報をカプセ�
 ## <a name="properties"></a>プロパティ
 |プロパティ|型|説明|
 |:---|:---|:---|
-|ID|String|PFX 証明書の一意の識別子です。|
+|id|String|PFX 証明書の一意の識別子です。|
 |拇印|String|PFX 証明書の拇印を sha-1 です。|
 |intendedPurpose|[userPfxIntendedPurpose](../resources/intune-raimportcerts-userpfxintendedpurpose.md)|証明書からのポイントからのビューの展開の目的のものです。 可能な値は、`unassigned`、`smimeEncryption`、`smimeSigning`、`vpn`、`wifi` です。|
 |userPrincipalName|String|PFX 証明書のユーザー プリンシパル名です。|
@@ -46,6 +47,7 @@ PFX 証明書のユーザーのために必要なすべての情報をカプセ�
 
 ## <a name="relationships"></a>リレーションシップ
 なし
+
 ## <a name="json-representation"></a>JSON 表記
 以下は、リソースの JSON 表記です。
 <!-- {
@@ -72,7 +74,6 @@ PFX 証明書のユーザーのために必要なすべての情報をカプセ�
   "lastModifiedDateTime": "String (timestamp)"
 }
 ```
-
 
 
 

@@ -1,23 +1,24 @@
 ---
 title: managementState 列挙型
 description: Microsoft Intune でのデバイスの状態を管理します。
-author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 7d9d083c56df366b9f896432328d51c295f62190
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: tfitzmac
+ms.prod: Intune
+ms.openlocfilehash: a8d0801949125f3b0cceb865ac1f8546195112e3
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27961947"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29420018"
 ---
 # <a name="managementstate-enum-type"></a>managementState 列挙型
 
-> **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。
+> **重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
 
-> **注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
+> **注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 Microsoft Intune でのデバイスの状態を管理します。
+
 ## <a name="members"></a>メンバー
 |メンバー|値|説明|
 |:---|:---|:---|
@@ -33,7 +34,6 @@ Microsoft Intune でのデバイスの状態を管理します。
 |wipeCanceled|9|このデバイスのワイプ コマンドがキャンセルされました|
 |retireCanceled|10|このデバイスの削除コマンドがキャンセルされました|
 |発見|11|デバイスが検出されたが、完全に登録されています。|
-
 
 
 

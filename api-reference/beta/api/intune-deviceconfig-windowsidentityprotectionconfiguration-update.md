@@ -1,25 +1,26 @@
 ---
 title: WindowsIdentityProtectionConfiguration を更新します。
 description: WindowsIdentityProtectionConfiguration オブジェクトのプロパティを更新します。
-author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 9cfdbcd9a0e7b2bcbd8ccf84002f73dbcf72e1eb
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: tfitzmac
+ms.prod: Intune
+ms.openlocfilehash: 130e4cda84be5b6e79245c2964acc5580fd5ad79
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27936308"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29418513"
 ---
 # <a name="update-windowsidentityprotectionconfiguration"></a>WindowsIdentityProtectionConfiguration を更新します。
 
-> **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。
+> **重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
 
-> **注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
+> **注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 [WindowsIdentityProtectionConfiguration](../resources/intune-deviceconfig-windowsidentityprotectionconfiguration.md)オブジェクトのプロパティを更新します。
+
 ## <a name="prerequisites"></a>前提条件
-この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
+この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/concepts/permissions-reference.md)」を参照してください。
 
 |アクセス許可の種類|アクセス許可 (特権の大きいものから小さいものへ)|
 |:---|:---|
@@ -51,7 +52,7 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 
 |プロパティ|型|説明|
 |:---|:---|:---|
-|ID|String|エンティティのキー。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
+|id|String|エンティティのキー。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |lastModifiedDateTime|DateTimeOffset|オブジェクトが最後に変更された DateTime。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |roleScopeTagIds|String コレクション|このエンティティ インスタンスのスコープのタグのリストです。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |supportsScopeTags|Boolean|デバイスの構成を基になるスコープのタグの割り当てをサポートしているかどうかを示します。 この値が false であり、エンティティをスコープ指定されたユーザーには表示されませんがある場合、ScopeTags プロパティに割り当てることは許可されていません。 これは、Silverlight で作成されたレガシ ポリシーに対して発生し、削除して、Azure ポータル内のポリシーを再作成することで解決できます。 このプロパティは読み取りのみ可能です。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
@@ -59,6 +60,7 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 |説明|String|デバイス構成について管理者が提供した説明。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |displayName|String|デバイス構成について管理者が指定した名前。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |version|Int32|デバイス構成のバージョン。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
+|useSecurityKeyForSignin|Boolean|ログオン資格情報として Windows こんにちはセキュリティ キーを有効にするために使用するブール値です。|
 |enhancedAntiSpoofingForFacialFeaturesEnabled|Boolean|拡張スプーフィング対策 Windows こんにちは顔認証の facial の機能の認識を有効にするために使用するブール値です。|
 |pinMinimumLength|Int32|ビジネスの暗証番号 (pin) は、Windows こんにちはに必要な文字の最小数を設定する整数値。 有効な値は 4 ~ 127 包括的で、最大の暗証番号 (pin) の設定値に等しいかそれより小さい。 有効な値 4 ~ 127|
 |pinMaximumLength|Int32|暗証番号 (pin) の作業に使用できる文字の最大数を設定する整数値。 有効な値は、4 ~ 127 包括的以上の最小の暗証番号 (pin) の設定値と同じです。 有効な値 4 ~ 127|
@@ -79,15 +81,16 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 かどうかは成功すると、このメソッドが返されます、`200 OK`応答コードおよび応答の本文に更新された[windowsIdentityProtectionConfiguration](../resources/intune-deviceconfig-windowsidentityprotectionconfiguration.md)オブジェクトです。
 
 ## <a name="example"></a>例
+
 ### <a name="request"></a>要求
 以下は、要求の例です。
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{deviceConfigurationId}
 Content-type: application/json
-Content-length: 761
+Content-length: 810
 
 {
-  "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
+  "@odata.type": "#microsoft.graph.windowsIdentityProtectionConfiguration",
   "roleScopeTagIds": [
     "Role Scope Tag Ids value"
   ],
@@ -95,6 +98,7 @@ Content-length: 761
   "description": "Description value",
   "displayName": "Display Name value",
   "version": 7,
+  "useSecurityKeyForSignin": true,
   "enhancedAntiSpoofingForFacialFeaturesEnabled": true,
   "pinMinimumLength": 0,
   "pinMaximumLength": 0,
@@ -116,7 +120,7 @@ Content-length: 761
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 946
+Content-Length: 982
 
 {
   "@odata.type": "#microsoft.graph.windowsIdentityProtectionConfiguration",
@@ -130,6 +134,7 @@ Content-Length: 946
   "description": "Description value",
   "displayName": "Display Name value",
   "version": 7,
+  "useSecurityKeyForSignin": true,
   "enhancedAntiSpoofingForFacialFeaturesEnabled": true,
   "pinMinimumLength": 0,
   "pinMaximumLength": 0,
@@ -145,7 +150,6 @@ Content-Length: 946
   "windowsHelloForBusinessBlocked": true
 }
 ```
-
 
 
 

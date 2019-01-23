@@ -1,30 +1,30 @@
 ---
 title: wiFiProxySetting 列挙型
 description: Wi-fi プロキシの設定です。
-author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 320e599a2e5350a8b2e2ecd57d501cf38de88ba8
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: tfitzmac
+ms.prod: Intune
+ms.openlocfilehash: 98ed8491b61b8223af04ac827c61fe31244f5495
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27911918"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29418954"
 ---
 # <a name="wifiproxysetting-enum-type"></a>wiFiProxySetting 列挙型
 
-> **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。
+> **重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
 
-> **注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
+> **注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 Wi-fi プロキシの設定です。
+
 ## <a name="members"></a>メンバー
 |メンバー|値|説明|
 |:---|:---|:---|
 |none|0|プロキシなし。|
 |手動|1|アドレスとポートを使用して手動でプロキシの設定です。|
 |自動|2|URL 経由でプロキシの自動設定します。|
-
 
 
 

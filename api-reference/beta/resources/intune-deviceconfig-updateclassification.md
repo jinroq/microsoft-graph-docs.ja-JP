@@ -1,23 +1,24 @@
 ---
 title: updateClassification 列挙型
 description: 自動更新プログラムのクラスの使用可能な値です。
-author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: e78f118d419ee129d5ca03c79ca57b5ac7ff6893
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: tfitzmac
+ms.prod: Intune
+ms.openlocfilehash: 67d532c08168fcba65d1253b53d5cfacab95b8e5
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27974890"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29407950"
 ---
 # <a name="updateclassification-enum-type"></a>updateClassification 列挙型
 
-> **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。
+> **重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
 
-> **注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
+> **注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 自動更新プログラムのクラスの使用可能な値です。
+
 ## <a name="members"></a>メンバー
 |メンバー|値|説明|
 |:---|:---|:---|
@@ -25,7 +26,6 @@ ms.locfileid: "27974890"
 |recommendedAndImportant|1|推奨および重要です。|
 |important|2|大事な。|
 |none|3|なし。|
-
 
 
 

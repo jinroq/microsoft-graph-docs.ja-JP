@@ -1,25 +1,26 @@
 ---
 title: iosCompliancePolicy の更新
 description: iosCompliancePolicy オブジェクトのプロパティを更新します。
-author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: a9ee2476d85ec1446fea4b45fac834eb62f82bc7
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: tfitzmac
+ms.prod: Intune
+ms.openlocfilehash: 2207f4f223f6a6b80e9ff563f83c30b048fa1aba
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27967883"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29407733"
 ---
 # <a name="update-ioscompliancepolicy"></a>iosCompliancePolicy の更新
 
-> **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。
+> **重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
 
-> **注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
+> **注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 [iosCompliancePolicy](../resources/intune-deviceconfig-ioscompliancepolicy.md) オブジェクトのプロパティを更新します。
+
 ## <a name="prerequisites"></a>前提条件
-この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
+この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/concepts/permissions-reference.md)」を参照してください。
 
 |アクセス許可の種類|アクセス許可 (特権の大きいものから小さいものへ)|
 |:---|:---|
@@ -67,11 +68,13 @@ PATCH /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}
 |passcodeRequired|Boolean|パスコードを要求するかどうかを指定します。|
 |osMinimumVersion|String|最低限必要な iOS のバージョン。|
 |osMaximumVersion|String|iOS の最高バージョン。|
+|osMinimumBuildVersion|String|最低限の IOS のバージョンをビルドします。|
+|osMaximumBuildVersion|String|最大の IOS バージョンをビルドします。|
 |securityBlockJailbrokenDevices|Boolean|デバイスの脱獄またはルート化を認めません。|
 |deviceThreatProtectionEnabled|Boolean|デバイスへの脅威に対する保護が有効になっている必要があります。|
 |deviceThreatProtectionRequiredSecurityLevel|[deviceThreatProtectionLevel](../resources/intune-deviceconfig-devicethreatprotectionlevel.md)|Mobile Threat Protection に、コンプライアンス違反をレポートするための最小のリスク レベルを要求します。 可能な値は、`unavailable`、`secured`、`low`、`medium`、`high`、`notSet` です。|
 |managedEmailProfileRequired|Boolean|管理された電子メール プロファイルを必要とするかどうかを指定します。|
-|restrictedApps|[appListItem](../resources/intune-deviceconfig-applistitem.md) コレクション|デバイスには、特定のアプリケーションがインストールされていない必要があります。 このコレクションには、最大で 10000 個の要素を含めることができます。|
+|restrictedApps|[appListItem](../resources/intune-deviceconfig-applistitem.md) コレクション|デバイスには、特定のアプリケーションがインストールされていない必要があります。 このコレクションには、最大 100 個の要素を含めることができます。|
 
 
 
@@ -79,19 +82,20 @@ PATCH /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}
 成功した場合、このメソッドは `200 OK` 応答コードと、更新された [iosCompliancePolicy](../resources/intune-deviceconfig-ioscompliancepolicy.md) オブジェクトを応答本文で返します。
 
 ## <a name="example"></a>例
+
 ### <a name="request"></a>要求
 以下は、要求の例です。
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}
 Content-type: application/json
-Content-length: 1123
+Content-length: 1241
 
 {
+  "@odata.type": "#microsoft.graph.iosCompliancePolicy",
   "roleScopeTagIds": [
     "Role Scope Tag Ids value"
   ],
   "description": "Description value",
-  "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
   "displayName": "Display Name value",
   "version": 7,
   "passcodeBlockSimple": true,
@@ -105,6 +109,8 @@ Content-length: 1123
   "passcodeRequired": true,
   "osMinimumVersion": "Os Minimum Version value",
   "osMaximumVersion": "Os Maximum Version value",
+  "osMinimumBuildVersion": "Os Minimum Build Version value",
+  "osMaximumBuildVersion": "Os Maximum Build Version value",
   "securityBlockJailbrokenDevices": true,
   "deviceThreatProtectionEnabled": true,
   "deviceThreatProtectionRequiredSecurityLevel": "secured",
@@ -126,7 +132,7 @@ Content-length: 1123
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1289
+Content-Length: 1413
 
 {
   "@odata.type": "#microsoft.graph.iosCompliancePolicy",
@@ -150,6 +156,8 @@ Content-Length: 1289
   "passcodeRequired": true,
   "osMinimumVersion": "Os Minimum Version value",
   "osMaximumVersion": "Os Maximum Version value",
+  "osMinimumBuildVersion": "Os Minimum Build Version value",
+  "osMaximumBuildVersion": "Os Maximum Build Version value",
   "securityBlockJailbrokenDevices": true,
   "deviceThreatProtectionEnabled": true,
   "deviceThreatProtectionRequiredSecurityLevel": "secured",
@@ -165,7 +173,6 @@ Content-Length: 1289
   ]
 }
 ```
-
 
 
 

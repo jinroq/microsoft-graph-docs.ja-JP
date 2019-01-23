@@ -1,32 +1,34 @@
 ---
 title: windows10AppsForceUpdateSchedule リソースの種類
 description: アプリケーションの Windows 10 強制更新のスケジュール
-author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 50793ee4ba26adc4b89cc8d36b3e8186debc402a
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: tfitzmac
+ms.prod: Intune
+ms.openlocfilehash: 3e0bd9b0963f8547b03243aa7ef791a351dc2b08
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27981988"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29418835"
 ---
 # <a name="windows10appsforceupdateschedule-resource-type"></a>windows10AppsForceUpdateSchedule リソースの種類
 
-> **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。
+> **重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
 
-> **注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
+> **注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 アプリケーションの Windows 10 強制更新のスケジュール
+
 ## <a name="properties"></a>プロパティ
-|プロパティ|種類|説明|
+|プロパティ|型|説明|
 |:---|:---|:---|
 |startDateTime|DateTimeOffset|力の開始時刻を再起動します。|
 |recurrence|[windows10AppsUpdateRecurrence](../resources/intune-deviceconfig-windows10appsupdaterecurrence.md)|定期的なスケジュールです。 可能な値は、`none`、`daily`、`weekly`、`monthly` です。|
-|runImmediatelyIfAfterStartDateTime|ブール型|True の場合、タスクはすぐに実行させるまでは、他の次の反復の実行の場合です。|
+|runImmediatelyIfAfterStartDateTime|Boolean|True の場合、タスクはすぐに実行させるまでは、他の次の反復の実行の場合です。|
 
 ## <a name="relationships"></a>リレーションシップ
 なし
+
 ## <a name="json-representation"></a>JSON 表記
 以下は、リソースの JSON 表記です。
 <!-- {
@@ -42,7 +44,6 @@ ms.locfileid: "27981988"
   "runImmediatelyIfAfterStartDateTime": true
 }
 ```
-
 
 
 

@@ -4,16 +4,16 @@ description: PowerSchool は、入力ソースとして使用すると、学校�
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: a22c3cf68a4a5b4c12dc4e7105f17eed4fc006f3
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 4028170c2780cee426ec961a44b51e0362b0187f
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27982758"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29406921"
 ---
 # <a name="educationpowerschooldataprovider-resource"></a>educationPowerSchoolDataProvider リソース
 
-> **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。
+> **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
 
 [PowerSchool](https://www.powerschool.com/solutions/student-information-system-sis/)は、入力ソースとして使用すると、学校のデータの同期プロファイルを設定するために使用します。
 
@@ -37,12 +37,12 @@ ms.locfileid: "27982758"
   "optionalProperties": [
 
   ],
-  "@odata.type": "#microsoft.graph.educationPowerSchoolDataProvider"
+  "@odata.type": "microsoft.graph.educationPowerSchoolDataProvider"
 }-->
 
 ```json
 {
-    "@odata.type": "#microsoft.graph.educationPowerSchoolDataProvider",
+    "@odata.type": "microsoft.graph.educationPowerSchoolDataProvider",
     "connectionUrl": "String",
     "clientId": "String",
     "clientSecret": "String",

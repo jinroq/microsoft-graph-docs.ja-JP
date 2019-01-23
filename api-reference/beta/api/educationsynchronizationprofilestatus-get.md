@@ -4,16 +4,16 @@ description: テナント内には、特定の学校のデータの同期プロ�
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: 3b235ca243e6ee0f2ebb442d53a7425fa979d778
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 394bb03760e33b4581f5d29e90a4c8fd875c26d0
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27965454"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29418135"
 ---
 # <a name="get-the-status-of-an-educationsynchronizationprofile"></a>EducationSynchronizationProfile のステータスを取得します。
 
-> **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。
+> **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
 
 テナント内には、特定の学校のデータ[の同期プロファイル](../resources/educationsynchronizationprofile.md)の状態を取得します。 応答は、同期のステータスを示します。
 
@@ -60,7 +60,7 @@ GET https://graph.microsoft.com/beta/education/synchronizationProfiles/{id}/prof
 
 <!-- {
   "blockType": "response",
-  "@odata.type": "#microsoft.graph.educationSynchronizationProfileStatus",
+  "@odata.type": "microsoft.graph.educationSynchronizationProfileStatus",
 } -->
 ```http
 HTTP/1.1 200 OK

@@ -4,12 +4,12 @@ description: Microsoft Intune のアプリ保護ポリシーは、会社のデ�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: ca628b81015527cb5ab7e508bebbb2808cdcde7e
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 563f787f2eb37b278a16c35639e0d607d3d9ee68
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27925456"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29419003"
 ---
 # <a name="how-to-protect-your-company-app-data-with-microsoft-intune"></a>Microsoft Intune で会社のアプリ データを保護する方法
 
@@ -30,6 +30,7 @@ Intune のアプリ保護ポリシーを使用して、会社のデータを保�
 - [アプリケーションの種類](intune-wip-applicationtype.md)
 - [既定の管理対象アプリ保護](intune-mam-defaultmanagedappprotection.md)
 - [Intune ブランドのプロファイル](intune-wip-intunebrandingprofile.md)
+- [Intune ブランドのプロファイルの割り当て](intune-wip-intunebrandingprofileassignment.md)
 - [iOS 管理対象アプリ保護](intune-mam-iosmanagedappprotection.md)
 - [iOS 管理対象アプリの登録](intune-mam-iosmanagedappregistration.md)
 - [iOS モバイル アプリ ID](intune-mam-iosmobileappidentifier.md)
@@ -63,6 +64,7 @@ Intune のアプリ保護ポリシーを使用して、会社のデータを保�
 - [Windows 情報保護アプリの Locker ファイル](intune-mam-windowsinformationprotectionapplockerfile.md)
 - [Windows 情報保護のデータ回復証明書](intune-mam-windowsinformationprotectiondatarecoverycertificate.md)
 - [Windows 情報保護のデスクトップ アプリ](intune-mam-windowsinformationprotectiondesktopapp.md)
+- [Windows 情報の保護デバイスの登録](intune-mam-windowsinformationprotectiondeviceregistration.md)
 - [Windows 情報保護の適用レベル](intune-mam-windowsinformationprotectionenforcementlevel.md)
 - [Windows 情報保護の IP 範囲のコレクション](intune-mam-windowsinformationprotectioniprangecollection.md)
 - [Windows 情報保護のネットワークの学習概要](intune-wip-windowsinformationprotectionnetworklearningsummary.md)
@@ -71,3 +73,4 @@ Intune のアプリ保護ポリシーを使用して、会社のデータを保�
 - [Windows 情報保護のプロキシ化されたドメイン コレクション](intune-mam-windowsinformationprotectionproxieddomaincollection.md)
 - [Windows 情報保護のリソース コレクション](intune-mam-windowsinformationprotectionresourcecollection.md)
 - [Windows 情報保護ストア アプリ](intune-mam-windowsinformationprotectionstoreapp.md)
+- [Windows 情報保護のクリーン インストールの動作](intune-mam-windowsinformationprotectionwipeaction.md)

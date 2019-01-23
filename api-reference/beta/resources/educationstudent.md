@@ -4,25 +4,25 @@ description: ユーザーの primaryRole が `student` の場合に存在する 
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: b6f6cf8e8a79c427403c2f2157228c8ce130b313
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 19ce3e28ccedc5f6165c8c333afb2ccd10343f14
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27913311"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29406907"
 ---
 # <a name="educationstudent-resource-type"></a>educationStudent リソースの種類
 
-> **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。
+> **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
 
 ユーザーの primaryRole が `student` の場合に存在する [educationUser](educationuser.md) に追加される、その他の情報。
 
 ## <a name="properties"></a>プロパティ
-| プロパティ     | 種類   |説明|
+| プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
 |birthDate|Date| 学生の生年月日。|
 |externalId|String| ソース システムの学生の ID。|
-|gender|`educationGender enumeration`| 使用可能な値: `female`、`male`、`other`、`unkownFutureValue`。|
+|gender|educationGender| 使用可能な値: `female`、`male`、`other`、`unkownFutureValue`。|
 |grade|String|学生の現在の学年。|
 |graduationYear|String| 学生が学校から卒業する年。|
 |studentNumber|String| 学生番号。|

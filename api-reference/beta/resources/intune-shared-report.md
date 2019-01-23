@@ -1,15 +1,15 @@
 ---
 title: レポート リソースの種類
-description: コンテキストに適切なコンテンツを返すなど。
+description: Intune は、複数のワークフローをサポートする Microsoft グラフ API のレポートのリソースについて説明します。
 localization_priority: Normal
 author: tfitzmac
 ms.prod: intune
-ms.openlocfilehash: dbad8a8808d40c2ae1f7769773b6b29ef65d680f
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 098c20b2460324c4975533902e1b71fde1af41c5
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27970648"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29407474"
 ---
 # <a name="report-resource-type"></a>レポート リソースの種類
 
@@ -23,7 +23,7 @@ ms.locfileid: "27970648"
 - 障害レポートを登録します。
 
 ## <a name="properties"></a>プロパティ
-|プロパティ|種類|説明|
+|プロパティ|型|説明|
 |:---|:---|:---|
 |content|Stream|レポート コンテンツです。詳細は、レポートの種類によって異なります。|
 

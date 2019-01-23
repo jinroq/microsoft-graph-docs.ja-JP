@@ -1,23 +1,24 @@
 ---
 title: win32LobApp リソースの種類
 description: プロパティと Win32 アプリケーションの継承されたプロパティが含まれています。
-author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 321ac11d4745b2f165e5170f82e7424488f2472e
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: tfitzmac
+ms.prod: Intune
+ms.openlocfilehash: 869c16e35148142106b7eb85ab57bf835c05bb67
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27966084"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29420053"
 ---
 # <a name="win32lobapp-resource-type"></a>win32LobApp リソースの種類
 
-> **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。
+> **重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
 
-> **注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
+> **注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 プロパティと Win32 アプリケーションの継承されたプロパティが含まれています。
+
 
 [mobileLobApp](../resources/intune-apps-mobilelobapp.md) から継承します
 
@@ -30,7 +31,7 @@ ms.locfileid: "27966084"
 |[Win32LobApp を削除します。](../api/intune-apps-win32lobapp-delete.md)|なし|の[win32LobApp](../resources/intune-apps-win32lobapp.md)を削除します。|
 |[Win32LobApp を更新します。](../api/intune-apps-win32lobapp-update.md)|[win32LobApp](../resources/intune-apps-win32lobapp.md)|[Win32LobApp](../resources/intune-apps-win32lobapp.md)オブジェクトのプロパティを更新します。|
 
-## <a name="properties"></a>Properties
+## <a name="properties"></a>プロパティ
 |プロパティ|型|説明|
 |:---|:---|:---|
 |id|String|エンティティのキー。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|
@@ -48,12 +49,14 @@ ms.locfileid: "27966084"
 |notes|String|アプリ用のメモ。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|
 |uploadState|Int32|アップロードの状態です。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|
 |publishingState|[mobileAppPublishingState](../resources/intune-apps-mobileapppublishingstate.md)|アプリの発行の状態。 アプリが発行されていない限り、アプリを割り当てることができません。 [MobileApp](../resources/intune-apps-mobileapp.md)から継承されます。 可能な値は、`notPublished`、`processing`、`published` です。|
+|isAssigned|Boolean|アプリケーションが少なくとも 1 つのグループに割り当てられているかどうかを示す値です。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|
+|roleScopeTagIds|String コレクション|このモバイル アプリケーションのスコープのタグ id の一覧です。 [mobileApp](../resources/intune-apps-mobileapp.md) から継承します|
 |committedContentVersion|String|内部にコミットされたコンテンツのバージョン。 [mobileLobApp](../resources/intune-apps-mobilelobapp.md) から継承します|
 |fileName|String|メインの Lob アプリケーションのファイル名。 [mobileLobApp](../resources/intune-apps-mobilelobapp.md) から継承します|
 |size|Int64|アップロードされたすべてのファイルを含む合計サイズ。 [mobileLobApp](../resources/intune-apps-mobilelobapp.md) から継承します|
 |installCommandLine|String|このアプリケーションをインストールするのにはコマンド ・ ライン|
 |uninstallCommandLine|String|このアプリケーションをアンインストールするのにはコマンド ・ ライン|
-|applicableArchitectures|[windowsArchitecture](../resources/intune-apps-windowsarchitecture.md)|このアプリを実行できる Windows アーキテクチャ。 可能な値は、`none`、`x86`、`x64`、`arm`、`neutral` です。|
+|applicableArchitectures|[windowsArchitecture](../resources/intune-apps-windowsarchitecture.md)|このアプリを実行できる Windows アーキテクチャ。 使用可能な値: `none`、`x86`、`x64`、`arm`、`neutral`、`arm64`。|
 |minimumSupportedOperatingSystem|[windowsMinimumOperatingSystem](../resources/intune-apps-windowsminimumoperatingsystem.md)|該当するオペレーティング システムの最小の値です。|
 |minimumFreeDiskSpaceInMB|Int32|このアプリケーションをインストールするために必要な最小空きディスク容量の値。|
 |minimumMemoryInMB|Int32|このアプリケーションをインストールするために必要な物理メモリの最小の値。|
@@ -105,6 +108,10 @@ ms.locfileid: "27966084"
   "notes": "String",
   "uploadState": 1024,
   "publishingState": "String",
+  "isAssigned": true,
+  "roleScopeTagIds": [
+    "String"
+  ],
   "committedContentVersion": "String",
   "fileName": "String",
   "size": 1024,
@@ -158,7 +165,6 @@ ms.locfileid: "27966084"
   "setupFilePath": "String"
 }
 ```
-
 
 
 

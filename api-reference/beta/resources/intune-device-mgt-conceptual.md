@@ -4,12 +4,12 @@ description: ''
 author: tfitzmac
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: 00859a4d9c230682a9ac66f5d46e9852ba141ce5
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: c6a984e0d6671416f84c51211019854a808f9728
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27990874"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29420074"
 ---
 # <a name="device-management-in-microsoft-intune"></a>Microsoft Intune でのデバイス管理
 
@@ -19,7 +19,12 @@ ms.locfileid: "27990874"
 
 - [管理者の同意](intune-devices-adminconsent.md)
 - [管理者の承認の状態](intune-devices-adminconsentstate.md)
+- [アプリケーション ログの収集は、詳細情報をダウンロードします。](intune-devices-applogcollectiondownloaddetails.md)
+- [アプリケーション ログのコレクションの要求](intune-devices-applogcollectionrequest.md)
+- [アプリケーション ログの復号化アルゴリズム](intune-devices-applogdecryptionalgorithm.md)
+- [アプリケーション ログのアップロードの状態](intune-devices-apploguploadstate.md)
 - [Apple プッシュ通知証明書](intune-devices-applepushnotificationcertificate.md)
+- [アップル VPP トークンのトラブルシューティング イベント](intune-troubleshooting-applevpptokentroubleshootingevent.md)
 - [監査アクター](intune-auditing-auditactor.md)
 - [監査イベント](intune-auditing-auditevent.md)
 - [監査のプロパティ](intune-auditing-auditproperty.md)
@@ -55,15 +60,17 @@ ms.locfileid: "27990874"
 - [デバイス管理スクリプトのユーザーの状態](intune-devices-devicemanagementscriptuserstate.md)
 - [デバイス管理のサブスクリプションの状態](intune-devices-devicemanagementsubscriptionstate.md)
 - [デバイス管理のサブスクリプション](intune-devices-devicemanagementsubscriptions.md)
+- [デバイス管理のトラブルシューティング エラーの詳細](intune-troubleshooting-devicemanagementtroubleshootingerrordetails.md)
+- [デバイス管理のトラブルシューティング エラーのリソース](intune-troubleshooting-devicemanagementtroubleshootingerrorresource.md)
 - [デバイス管理のトラブルシューティング イベント](intune-troubleshooting-devicemanagementtroubleshootingevent.md)
 - [デバイスのオペレーティング システムの概要](intune-devices-deviceoperatingsystemsummary.md)
 - [デバイスの保護の概要](intune-devices-deviceprotectionoverview.md)
 - [デバイス登録の状態](intune-devices-deviceregistrationstate.md)
-- [埋め込まれている i m のアクティブ化コード](intune-esim-embeddedsimactivationcode.md)
-- [埋め込まれている i m のアクティブ化コードのプール](intune-esim-embeddedsimactivationcodepool.md)
-- [埋め込まれている i m のアクティブ化コードのプール割り当て](intune-esim-embeddedsimactivationcodepoolassignment.md)
-- [埋め込まれている i m のデバイスの状態](intune-esim-embeddedsimdevicestate.md)
-- [埋め込まれている i m デバイスの状態の値](intune-esim-embeddedsimdevicestatevalue.md)
+- [埋め込み SIM のアクティベーション コード](intune-esim-embeddedsimactivationcode.md)
+- [SIM アクティベーション コードの埋め込みのプール](intune-esim-embeddedsimactivationcodepool.md)
+- [SIM アクティベーション コード プール割り当て](intune-esim-embeddedsimactivationcodepoolassignment.md)
+- [埋め込み SIM のデバイスの状態](intune-esim-embeddedsimdevicestate.md)
+- [埋め込み SIM デバイスの状態の値](intune-esim-embeddedsimdevicestatevalue.md)
 - [登録のトラブルシューティング イベント](intune-troubleshooting-enrollmenttroubleshootingevent.md)
 - [ハードウェア情報](intune-devices-hardwareinformation.md)
 - [正常性状態](intune-devices-healthstate.md)
@@ -97,7 +104,6 @@ ms.locfileid: "27990874"
 - [モバイル アプリケーションがターゲット アプリケーションの履歴のトラブルシューティング](intune-troubleshooting-mobileapptroubleshootingapptargethistory.md)
 - [モバイル アプリケーションがアプリケーションの更新履歴のトラブルシューティング](intune-troubleshooting-mobileapptroubleshootingappupdatehistory.md)
 - [モバイル アプリケーションがデバイスのチェックイン履歴のトラブルシューティング](intune-troubleshooting-mobileapptroubleshootingdevicecheckinhistory.md)
-- [モバイル アプリケーションのトラブルシューティング イベント](intune-troubleshooting-mobileapptroubleshootingevent.md)
 - [モバイル アプリケーションのトラブルシューティングの履歴項目](intune-troubleshooting-mobileapptroubleshootinghistoryitem.md)
 - [ネットワークの IPv4 構成の管理の条件](intune-fencing-networkipv4configurationmanagementcondition.md)
 - [ネットワークの IPv6 構成の管理の条件](intune-fencing-networkipv6configurationmanagementcondition.md)

@@ -1,25 +1,26 @@
 ---
 title: resourceOperation の更新
 description: resourceOperation オブジェクトのプロパティを更新します。
-author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: b5d65fb9394ba1bf33ce657941f2807d3dda44a4
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: tfitzmac
+ms.prod: Intune
+ms.openlocfilehash: 266d45150c5633a66c5996b5cb9285f97ecaf6bb
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27919065"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29411142"
 ---
 # <a name="update-resourceoperation"></a>resourceOperation の更新
 
-> **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。
+> **重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
 
-> **注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
+> **注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 [resourceOperation](../resources/intune-rbac-resourceoperation.md) オブジェクトのプロパティを更新します。
+
 ## <a name="prerequisites"></a>前提条件
-この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
+この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/concepts/permissions-reference.md)」を参照してください。
 
 |アクセス許可の種類|アクセス許可 (特権の大きいものから小さいものへ)|
 |:---|:---|
@@ -49,8 +50,8 @@ PATCH /deviceManagement/resourceOperations/{resourceOperationId}
 
 |プロパティ|型|説明|
 |:---|:---|:---|
-|ID|String|リソース操作のキー。 読み取り専用で、自動生成されます。|
-|resource|String|この操作が所属しているリソースのカテゴリです。|
+|id|String|リソース操作のキー。 読み取り専用で、自動生成されます。|
+|リソース|String|この操作が所属しているリソースのカテゴリです。|
 |resourceName|String|この操作が実行されるリソースの名前。|
 |actionName|String|この操作が実行するアクションの種類。 actionName は簡潔で、できるだけ少ない単語にする必要があります。|
 |説明|String|リソース操作の説明。 Azure Portal で操作にマウス ポインターを合わせると、その操作の説明がテキストで表示されます。|
@@ -62,14 +63,16 @@ PATCH /deviceManagement/resourceOperations/{resourceOperationId}
 成功した場合、このメソッドは `200 OK` 応答コードと、更新された [resourceOperation](../resources/intune-rbac-resourceoperation.md) オブジェクトを応答本文で返します。
 
 ## <a name="example"></a>例
+
 ### <a name="request"></a>要求
 以下は、要求の例です。
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/resourceOperations/{resourceOperationId}
 Content-type: application/json
-Content-length: 193
+Content-length: 249
 
 {
+  "@odata.type": "#microsoft.graph.resourceOperation",
   "resource": "Resource value",
   "resourceName": "Resource Name value",
   "actionName": "Action Name value",
@@ -95,7 +98,6 @@ Content-Length: 298
   "enabledForScopeValidation": true
 }
 ```
-
 
 
 

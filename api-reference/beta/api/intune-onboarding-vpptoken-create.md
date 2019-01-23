@@ -1,25 +1,26 @@
 ---
 title: Create vppToken
 description: 新規にvppToken オブジェクトを作成します。
-author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: fc4313f5e1d83a8ed202eac47ed070cf8dc1804c
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: tfitzmac
+ms.prod: Intune
+ms.openlocfilehash: 7536e9c78245aecec3acf1985593277007398740
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27914912"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29419836"
 ---
 # <a name="create-vpptoken"></a>Create vppToken
 
-> **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。
+> **重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
 
-> **注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
+> **注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 新規に[vppToken](../resources/intune-onboarding-vpptoken.md)オブジェクトを作成します。
+
 ## <a name="prerequisites"></a>前提条件
-この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
+この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/concepts/permissions-reference.md)」を参照してください。
 
 |アクセス許可の種類|アクセス許可 (特権の大きいものから小さいものへ)|
 |:---|:---|
@@ -47,9 +48,9 @@ POST /deviceAppManagement/vppTokens
 
 次の表に、vppToken 作成時に必要なプロパティを示します。
 
-|プロパティ|種類|説明|
+|プロパティ|型|説明|
 |:---|:---|:---|
-|ID|String|appleVolumePurchaseProgramToken 作成時に自動的に生成されます。 エンティティのキーになります。|
+|id|String|appleVolumePurchaseProgramToken 作成時に自動的に生成されます。 エンティティのキーになります。|
 |organizationName|String|Apple Volume Purchase Program のトークンに関連付けられている組織|
 |vppTokenAccountType|[vppTokenAccountType](../resources/intune-shared-vpptokenaccounttype.md)|特定の Apple Volume Purchase Program のトークンが関連付けられている、ボリューム購入プログラムの種類。 可能な値は、`business`、`education` です。 可能な値は、`business`、`education` です。|
 |appleId|String|特定の Apple Volume Purchase Program のトークンに関連付けられている Apple ID。|
@@ -60,12 +61,13 @@ POST /deviceAppManagement/vppTokens
 |state|[vppTokenState](../resources/intune-onboarding-vpptokenstate.md)|Apple Volume Purchase Program のトークンの現在の状態。 可能な値は、`unknown`、`valid`、`expired`、`invalid`、`assignedToExternalMDM` です。 可能な値は、`unknown`、`valid`、`expired`、`invalid`、`assignedToExternalMDM` です。|
 |tokenActionResults|[vppTokenActionResult](../resources/intune-onboarding-vpptokenactionresult.md)コレクション|アクションの状態のコレクションは、Apple ボリューム購入プログラム トークンで実行されます。|
 |lastSyncStatus|[vppTokenSyncStatus](../resources/intune-onboarding-vpptokensyncstatus.md)|Apple Volume Purchase Program のトークンを使用して行われた最後のアプリケーションの同期の現在の同期状態。 可能な値は、`none`、`inProgress`、`completed`、`failed` です。 可能な値は、`none`、`inProgress`、`completed`、`failed` です。|
-|automaticallyUpdateApps|ブール型|VPP トークンのアプリを自動で更新するかどうか。|
+|automaticallyUpdateApps|Boolean|VPP トークンのアプリを自動で更新するかどうか。|
 |countryOrRegion|String|VPP トークンのアプリを自動で更新するかどうか。|
-|dataSharingConsentGranted|ブール型|Apple ボリューム購入プログラムを使用して共有データに確かに同意するものです。|
+|dataSharingConsentGranted|Boolean|Apple ボリューム購入プログラムを使用して共有データに確かに同意するものです。|
 |displayName|String|管理者は、トークンのフレンドリ名を指定します。|
 |locationName|String|アップル VPP から返されるトークンの場所です。|
-|claimTokenManagementFromExternalMdm|ブール型|外部 MDM. からのトークンの管理であると主張できるようにするのには同意するものと管理|
+|claimTokenManagementFromExternalMdm|Boolean|外部 MDM. からのトークンの管理であると主張できるようにするのには同意するものと管理|
+|roleScopeTagIds|String コレクション|役割スコープのタグ Id がこのエンティティに割り当てられています。|
 
 
 
@@ -73,12 +75,13 @@ POST /deviceAppManagement/vppTokens
 成功した場合、このメソッドは `201 Created` 応答コードと、応答本文で [vppToken](../resources/intune-onboarding-vpptoken.md) オブジェクトを返します。
 
 ## <a name="example"></a>例
+
 ### <a name="request"></a>要求
 以下は、要求の例です。
 ``` http
 POST https://graph.microsoft.com/beta/deviceAppManagement/vppTokens
 Content-type: application/json
-Content-length: 1004
+Content-length: 1002
 
 {
   "@odata.type": "#microsoft.graph.vppToken",
@@ -88,7 +91,6 @@ Content-length: 1004
   "expirationDateTime": "2016-12-31T23:57:57.2481234-08:00",
   "lastSyncDateTime": "2017-01-01T00:02:49.3205976-08:00",
   "token": "Token value",
-  "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
   "state": "valid",
   "tokenActionResults": [
     {
@@ -105,7 +107,10 @@ Content-length: 1004
   "dataSharingConsentGranted": true,
   "displayName": "Display Name value",
   "locationName": "Location Name value",
-  "claimTokenManagementFromExternalMdm": true
+  "claimTokenManagementFromExternalMdm": true,
+  "roleScopeTagIds": [
+    "Role Scope Tag Ids value"
+  ]
 }
 ```
 
@@ -114,7 +119,7 @@ Content-length: 1004
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 1053
+Content-Length: 1115
 
 {
   "@odata.type": "#microsoft.graph.vppToken",
@@ -142,10 +147,12 @@ Content-Length: 1053
   "dataSharingConsentGranted": true,
   "displayName": "Display Name value",
   "locationName": "Location Name value",
-  "claimTokenManagementFromExternalMdm": true
+  "claimTokenManagementFromExternalMdm": true,
+  "roleScopeTagIds": [
+    "Role Scope Tag Ids value"
+  ]
 }
 ```
-
 
 
 

@@ -1,25 +1,26 @@
 ---
 title: NdesConnector を更新します。
 description: NdesConnector オブジェクトのプロパティを更新します。
-author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 6ab82a338a5f825da56637196fafcbcf966de031
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: tfitzmac
+ms.prod: Intune
+ms.openlocfilehash: 8c78502bb0670eca08b896bf1a0b732f94b669cd
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27930503"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29418422"
 ---
 # <a name="update-ndesconnector"></a>NdesConnector を更新します。
 
-> **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。
+> **重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
 
-> **注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
+> **注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 [NdesConnector](../resources/intune-deviceconfig-ndesconnector.md)オブジェクトのプロパティを更新します。
+
 ## <a name="prerequisites"></a>前提条件
-この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
+この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/concepts/permissions-reference.md)」を参照してください。
 
 |アクセス許可の種類|アクセス許可 (特権の大きいものから小さいものへ)|
 |:---|:---|
@@ -47,9 +48,9 @@ PATCH /deviceManagement/ndesConnectors/{ndesConnectorId}
 
 [NdesConnector](../resources/intune-deviceconfig-ndesconnector.md)を作成するときに必要なプロパティを次の表に示します。
 
-|プロパティ|種類|説明|
+|プロパティ|型|説明|
 |:---|:---|:---|
-|ID|String|NDES のコネクタのキー。|
+|id|String|NDES のコネクタのキー。|
 |lastConnectionDateTime|DateTimeOffset|Ndes コネクタの前回の接続|
 |state|[ndesConnectorState](../resources/intune-deviceconfig-ndesconnectorstate.md)|Ndes のコネクタの状態です。 可能な値は、`none`、`active`、`inactive` です。|
 |displayName|String|Ndes のコネクタの表示名。|
@@ -60,14 +61,16 @@ PATCH /deviceManagement/ndesConnectors/{ndesConnectorId}
 かどうかは成功すると、このメソッドが返されます、`200 OK`応答コードおよび応答の本文に更新された[ndesConnector](../resources/intune-deviceconfig-ndesconnector.md)オブジェクトです。
 
 ## <a name="example"></a>例
+
 ### <a name="request"></a>要求
 以下は、要求の例です。
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/ndesConnectors/{ndesConnectorId}
 Content-type: application/json
-Content-length: 131
+Content-length: 183
 
 {
+  "@odata.type": "#microsoft.graph.ndesConnector",
   "lastConnectionDateTime": "2016-12-31T23:58:36.6670033-08:00",
   "state": "active",
   "displayName": "Display Name value"
@@ -89,7 +92,6 @@ Content-Length: 232
   "displayName": "Display Name value"
 }
 ```
-
 
 
 

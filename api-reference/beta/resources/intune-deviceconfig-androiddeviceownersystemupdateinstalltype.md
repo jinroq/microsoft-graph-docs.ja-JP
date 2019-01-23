@@ -1,23 +1,24 @@
 ---
 title: androidDeviceOwnerSystemUpdateInstallType 列挙型
 description: Android デバイスの所有者のシステム更新プログラムの種類。
-author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 9a46d60972bab46fa0e2cda8d03a090bd8b810a9
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: tfitzmac
+ms.prod: Intune
+ms.openlocfilehash: 8d7caaa3c79062bba6b8aa06ea11389e1370fba5
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27980973"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29419178"
 ---
 # <a name="androiddeviceownersystemupdateinstalltype-enum-type"></a>androidDeviceOwnerSystemUpdateInstallType 列挙型
 
-> **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。
+> **重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
 
-> **注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
+> **注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 Android デバイスの所有者のシステム更新プログラムの種類。
+
 ## <a name="members"></a>メンバー
 |メンバー|値|説明|
 |:---|:---|:---|
@@ -25,7 +26,6 @@ Android デバイスの所有者のシステム更新プログラムの種類。
 |延期|1|30 日以内に更新プログラムの自動インストールを延期します。|
 |ウィンドウ表示|2|保守時間帯の毎日の中には、自動的にインストールします。|
 |自動|3|できるだけ早く更新を自動的にインストールします。|
-
 
 
 
