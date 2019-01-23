@@ -1,25 +1,26 @@
 ---
 title: AndroidDeviceOwnerGeneralDeviceConfiguration を取得します。
 description: AndroidDeviceOwnerGeneralDeviceConfiguration オブジェクトのプロパティと関係を参照してください。
-author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: c2ab8db8309087868bb892107bc81867d3817e0a
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: tfitzmac
+ms.prod: Intune
+ms.openlocfilehash: 77714d5d4874e6ed2a974ea30ad5b6045f122e82
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27961030"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29405304"
 ---
 # <a name="get-androiddeviceownergeneraldeviceconfiguration"></a>AndroidDeviceOwnerGeneralDeviceConfiguration を取得します。
 
-> **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。
+> **重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
 
-> **注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
+> **注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 [AndroidDeviceOwnerGeneralDeviceConfiguration](../resources/intune-deviceconfig-androiddeviceownergeneraldeviceconfiguration.md)オブジェクトのプロパティと関係を参照してください。
+
 ## <a name="prerequisites"></a>前提条件
-この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
+この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/concepts/permissions-reference.md)」を参照してください。
 
 |アクセス許可の種類|アクセス許可 (特権の大きいものから小さいものへ)|
 |:---|:---|
@@ -39,7 +40,8 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 ```
 
 ## <a name="optional-query-parameters"></a>オプションのクエリ パラメーター
-このメソッドは、応答をカスタマイズするための [OData クエリ パラメーター](https://developer.microsoft.com/graph/docs/concepts/query_parameters)をサポートします。
+このメソッドは、応答をカスタマイズするための [OData クエリ パラメーター](https://docs.microsoft.com/en-us/graph/query-parameters)をサポートします。
+
 ## <a name="request-headers"></a>要求ヘッダー
 |ヘッダー|値|
 |:---|:---|
@@ -53,6 +55,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 かどうかは成功すると、このメソッドが返されます、 `200 OK` 、応答の本体で応答コードと[androidDeviceOwnerGeneralDeviceConfiguration](../resources/intune-deviceconfig-androiddeviceownergeneraldeviceconfiguration.md)のオブジェクトです。
 
 ## <a name="example"></a>例
+
 ### <a name="request"></a>要求
 以下は、要求の例です。
 ``` http
@@ -64,7 +67,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{devi
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 2409
+Content-Length: 2854
 
 {
   "value": {
@@ -83,6 +86,7 @@ Content-Length: 2409
     "appsAllowInstallFromUnknownSources": true,
     "appsAutoUpdatePolicy": "userChoice",
     "appsDefaultPermissionPolicy": "prompt",
+    "appsRecommendSkippingFirstUseHints": true,
     "bluetoothBlockConfiguration": true,
     "bluetoothBlockContactSharing": true,
     "cameraBlocked": true,
@@ -102,10 +106,16 @@ Content-Length: 2409
         "appId": "App Id value"
       }
     ],
+    "kioskModeWallpaperUrl": "https://example.com/kioskModeWallpaperUrl/",
+    "kioskModeExitCode": "Kiosk Mode Exit Code value",
+    "kioskModeVirtualHomeButtonEnabled": true,
     "microphoneForceMute": true,
     "networkEscapeHatchAllowed": true,
     "nfcBlockOutgoingBeam": true,
     "passwordBlockKeyguard": true,
+    "passwordBlockKeyguardFeatures": [
+      "camera"
+    ],
     "passwordExpirationDays": 6,
     "passwordMinimumLength": 5,
     "passwordMinutesOfInactivityBeforeScreenTimeout": 14,
@@ -126,15 +136,17 @@ Content-Length: 2409
     "systemUpdateWindowStartMinutesAfterMidnight": 11,
     "systemUpdateWindowEndMinutesAfterMidnight": 9,
     "systemUpdateInstallType": "postpone",
+    "systemWindowsBlocked": true,
     "usersBlockAdd": true,
     "usersBlockRemove": true,
     "volumeBlockAdjustment": true,
+    "vpnAlwaysOnPackageIdentifier": "Vpn Always On Package Identifier value",
+    "vpnAlwaysOnLockdownMode": true,
     "wifiBlockEditConfigurations": true,
     "wifiBlockEditPolicyDefinedConfigurations": true
   }
 }
 ```
-
 
 
 

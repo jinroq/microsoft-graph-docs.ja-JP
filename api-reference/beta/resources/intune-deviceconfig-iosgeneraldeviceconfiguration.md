@@ -3,21 +3,22 @@ title: iosGeneralDeviceConfiguration リソース タイプ
 description: このトピックでは、iosGeneralDeviceConfiguration リソースによって公開された、宣言されたメソッド、プロパティ、リレーションシップについて説明します。
 localization_priority: Normal
 author: tfitzmac
-ms.prod: intune
-ms.openlocfilehash: 3125cb171aea7901989865c10fe9af6b78a75ccd
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: 055abce38989d5d49f1f009ac38b6a5aac548ac2
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27963207"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29410890"
 ---
 # <a name="iosgeneraldeviceconfiguration-resource-type"></a>iosGeneralDeviceConfiguration リソース タイプ
 
-> **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。
+> **重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
 
-> **注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
+> **注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 このトピックでは、iosGeneralDeviceConfiguration リソースによって公開された、宣言されたメソッド、プロパティ、リレーションシップについて説明します。
+
 
 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します
 
@@ -36,7 +37,7 @@ ms.locfileid: "27963207"
 |id|String|エンティティのキー。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |lastModifiedDateTime|DateTimeOffset|オブジェクトが最後に変更された DateTime。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |roleScopeTagIds|String コレクション|このエンティティ インスタンスのスコープのタグのリストです。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
-|supportsScopeTags|ブール型|デバイスの構成を基になるスコープのタグの割り当てをサポートしているかどうかを示します。 この値が false であり、エンティティをスコープ指定されたユーザーには表示されませんがある場合、ScopeTags プロパティに割り当てることは許可されていません。 これは、Silverlight で作成されたレガシ ポリシーに対して発生し、削除して、Azure ポータル内のポリシーを再作成することで解決できます。 このプロパティは読み取りのみ可能です。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
+|supportsScopeTags|Boolean|デバイスの構成を基になるスコープのタグの割り当てをサポートしているかどうかを示します。 この値が false であり、エンティティをスコープ指定されたユーザーには表示されませんがある場合、ScopeTags プロパティに割り当てることは許可されていません。 これは、Silverlight で作成されたレガシ ポリシーに対して発生し、削除して、Azure ポータル内のポリシーを再作成することで解決できます。 このプロパティは読み取りのみ可能です。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |createdDateTime|DateTimeOffset|オブジェクトが作成された DateTime。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |説明|String|デバイス構成について管理者が提供した説明。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |displayName|String|デバイス構成について管理者が指定した名前。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
@@ -173,18 +174,26 @@ ms.locfileid: "27963207"
 |voiceDialingBlocked|Boolean|音声ダイヤルをブロックするかどうかを示します。|
 |wallpaperBlockModification|Boolean|監視対象デバイスでの壁紙の変更を許可するかどうかを示します (iOS 9.0 以降)。|
 |wiFiConnectOnlyToConfiguredNetworks|Boolean|デバイスが監視モードのときに、構成プロファイルからの Wi-Fi ネットワークのみを使用するようデバイスに強制するかどうかを示します。|
-|classroomForceRequestPermissionToLeaveClasses|ブール型|かどうか、受講者用の教室を使用してアンマネージのコースに登録されているアクセス許可を要求、教師コース (iOS 11.3 とそれ以降) のままにしようとしていますを示します。|
-|keychainBlockCloudSync|ブール型|ICloud キーチェーンの同期をブロックするかどうかを示します。|
-|pkiBlockOTAUpdates|ブール型|地上の PKI の更新プログラムがブロックされているかどうかを示します。 False の場合、CRL および OCSP のチェック (iOS 7.0 およびそれ以降) は無効に、この制限を設定します。|
-|privacyForceLimitAdTracking|ブール型|広告の追跡が限られたかどうかを示します。(iOS から 7.0 およびそれ以降)。|
-|enterpriseBookBlockBackup|ブール型|企業がバックアップを予約するかどうかがブロックされていることを示します。|
-|enterpriseBookBlockMetadataSync|ブール型|エンタープライズ帳に関する注意事項を示し、同期がブロックされているかどうかを示します。|
-|airPrintBlocked|ブール型|AirPrint がブロックされている (iOS 11.0 とそれ以降) であるかどうかを示します。|
-|airPrintBlockCredentialsStorage|ブール型|ユーザー名とパスワードの Airprint のキーチェーンの記憶域がブロックされている (iOS 11.0 とそれ以降) かどうかを示します。|
-|airPrintForceTrustedTLS|ブール型|信頼された証明書が TLS 印刷通信 (iOS 11.0 とそれ以降) に必要なかどうかを示します。|
-|airPrintBlockiBeaconDiscovery|ブール型|AirPrint プリンターの検出を iBeacon がブロックされているかどうかを示します。 これには、ネットワーク トラフィック (iOS 11.0 とそれ以降) のフィッシング詐欺からの見かけ上の AirPrint Bluetooth ビーコンができなくなります。|
-|blockSystemAppRemoval|ブール型|コールを管理デバイス (iOS 11.0 とそれ以降) で、デバイスからシステムのアプリケーションの削除がブロックされているかどうかを示します。|
-|vpnBlockCreation|ブール型|VPN 構成の作成がブロックされている (iOS 11.0 とそれ以降) であるかどうかを示します。|
+|classroomForceRequestPermissionToLeaveClasses|Boolean|かどうか、受講者用の教室を使用してアンマネージのコースに登録されているアクセス許可を要求、教師コース (iOS 11.3 とそれ以降) のままにしようとしていますを示します。|
+|keychainBlockCloudSync|Boolean|ICloud キーチェーンの同期をブロックするかどうかを示します。|
+|pkiBlockOTAUpdates|Boolean|地上の PKI の更新プログラムがブロックされているかどうかを示します。 False の場合、CRL および OCSP のチェック (iOS 7.0 およびそれ以降) は無効に、この制限を設定します。|
+|privacyForceLimitAdTracking|Boolean|広告の追跡が限られたかどうかを示します。(iOS から 7.0 およびそれ以降)。|
+|enterpriseBookBlockBackup|Boolean|企業がバックアップを予約するかどうかがブロックされていることを示します。|
+|enterpriseBookBlockMetadataSync|Boolean|エンタープライズ帳に関する注意事項を示し、同期がブロックされているかどうかを示します。|
+|airPrintBlocked|Boolean|AirPrint がブロックされている (iOS 11.0 とそれ以降) であるかどうかを示します。|
+|airPrintBlockCredentialsStorage|Boolean|ユーザー名とパスワードの Airprint のキーチェーンの記憶域がブロックされている (iOS 11.0 とそれ以降) かどうかを示します。|
+|airPrintForceTrustedTLS|Boolean|信頼された証明書が TLS 印刷通信 (iOS 11.0 とそれ以降) に必要なかどうかを示します。|
+|airPrintBlockiBeaconDiscovery|Boolean|AirPrint プリンターの検出を iBeacon がブロックされているかどうかを示します。 これには、ネットワーク トラフィック (iOS 11.0 とそれ以降) のフィッシング詐欺からの見かけ上の AirPrint Bluetooth ビーコンができなくなります。|
+|blockSystemAppRemoval|Boolean|コールを管理デバイス (iOS 11.0 とそれ以降) で、デバイスからシステムのアプリケーションの削除がブロックされているかどうかを示します。|
+|vpnBlockCreation|Boolean|VPN 構成の作成がブロックされている (iOS 11.0 とそれ以降) であるかどうかを示します。|
+|appRemovalBlocked|Boolean|アプリの削除を許可するかを示します。|
+|usbRestrictedModeBlocked|Boolean|デバイスがロックされている間、USB アクセサリへの接続が許可されるかどうかを示します (iOS 11.4.1 以降)。|
+|passwordBlockAutoFill|Boolean|かどうかは、オートフィルのパスワードが有効になって (iOS 12.0 とそれ以降) を示します。|
+|passwordBlockProximityRequests|Boolean|(IOS 12.0 とそれ以降) の近くにあるデバイスからパスワードを要求をブロックするかどうかを示します。|
+|passwordBlockAirDropSharing|Boolean|示します AirDrop のパスワード機能 iOS 12.0 とそれ以降では、共有パスワードをブロックするかどうか)。|
+|dateAndTimeForceSetAutomatically|Boolean|かどうかの日付と時刻] 設定に自動的に"機能が有効し、することはできません、無効になってユーザー (iOS 12.0 とそれ以降) を示します。|
+|contactsAllowManagedToUnmanagedWrite|Boolean|アプリケーションは、アンマネージの連絡先のアカウント (iOS 12.0 とそれ以降) に連絡先を書き込むことが管理するかどうかを示します。|
+|contactsAllowUnmanagedToManagedRead|Boolean|かどうかアンマネージ アプリケーションから読み取ることがマネージ メンバー アカウント (iOS 12.0 以降) を示します。|
 
 ## <a name="relationships"></a>リレーションシップ
 |リレーションシップ|型|説明|
@@ -442,10 +451,17 @@ ms.locfileid: "27963207"
   "airPrintForceTrustedTLS": true,
   "airPrintBlockiBeaconDiscovery": true,
   "blockSystemAppRemoval": true,
-  "vpnBlockCreation": true
+  "vpnBlockCreation": true,
+  "appRemovalBlocked": true,
+  "usbRestrictedModeBlocked": true,
+  "passwordBlockAutoFill": true,
+  "passwordBlockProximityRequests": true,
+  "passwordBlockAirDropSharing": true,
+  "dateAndTimeForceSetAutomatically": true,
+  "contactsAllowManagedToUnmanagedWrite": true,
+  "contactsAllowUnmanagedToManagedRead": true
 }
 ```
-
 
 
 

@@ -1,25 +1,26 @@
 ---
 title: Create windowsUpdateForBusinessConfiguration
 description: 新しい windowsUpdateForBusinessConfiguration オブジェクトを作成します。
-author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: da5951d2ef74b0d6da132f19ca1514c46fe70f86
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: tfitzmac
+ms.prod: Intune
+ms.openlocfilehash: dade72412a64b5703fa253eda0a40829f2475549
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27935536"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29406193"
 ---
 # <a name="create-windowsupdateforbusinessconfiguration"></a>Create windowsUpdateForBusinessConfiguration
 
-> **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。
+> **重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
 
-> **注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
+> **注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 新しい [windowsUpdateForBusinessConfiguration](../resources/intune-deviceconfig-windowsupdateforbusinessconfiguration.md) オブジェクトを作成します。
+
 ## <a name="prerequisites"></a>前提条件
-この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
+この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/concepts/permissions-reference.md)」を参照してください。
 
 |アクセス許可の種類|アクセス許可 (特権の大きいものから小さいものへ)|
 |:---|:---|
@@ -48,19 +49,19 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 
 次の表に、windowsUpdateForBusinessConfiguration の作成時に必要なプロパティを示します。
 
-|プロパティ|種類|説明|
+|プロパティ|型|説明|
 |:---|:---|:---|
-|ID|String|エンティティのキー。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
+|id|String|エンティティのキー。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |lastModifiedDateTime|DateTimeOffset|オブジェクトが最後に変更された DateTime。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |roleScopeTagIds|String コレクション|このエンティティ インスタンスのスコープのタグのリストです。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
-|supportsScopeTags|ブール型|デバイスの構成を基になるスコープのタグの割り当てをサポートしているかどうかを示します。 この値が false であり、エンティティをスコープ指定されたユーザーには表示されませんがある場合、ScopeTags プロパティに割り当てることは許可されていません。 これは、Silverlight で作成されたレガシ ポリシーに対して発生し、削除して、Azure ポータル内のポリシーを再作成することで解決できます。 このプロパティは読み取りのみ可能です。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
+|supportsScopeTags|Boolean|デバイスの構成を基になるスコープのタグの割り当てをサポートしているかどうかを示します。 この値が false であり、エンティティをスコープ指定されたユーザーには表示されませんがある場合、ScopeTags プロパティに割り当てることは許可されていません。 これは、Silverlight で作成されたレガシ ポリシーに対して発生し、削除して、Azure ポータル内のポリシーを再作成することで解決できます。 このプロパティは読み取りのみ可能です。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |createdDateTime|DateTimeOffset|オブジェクトが作成された DateTime。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |説明|String|デバイス構成について管理者が提供した説明。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |displayName|String|デバイス構成について管理者が指定した名前。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |version|Int32|デバイス構成のバージョン。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |deliveryOptimizationMode|[windowsDeliveryOptimizationMode](../resources/intune-deviceconfig-windowsdeliveryoptimizationmode.md)|配信の最適化モードです。 可能な値は、`userDefined`、`httpOnly`、`httpWithPeeringNat`、`httpWithPeeringPrivateGroup`、`httpWithInternetPeering`、`simpleDownload`、`bypassMode` です。|
 |prereleaseFeatures|[prereleaseFeatures](../resources/intune-deviceconfig-prereleasefeatures.md)|プレリリース機能です。 可能な値は、`userDefined`、`settingsOnly`、`settingsAndExperimentations`、`notAllowed` です。|
-|automaticUpdateMode|[automaticUpdateMode](../resources/intune-deviceconfig-automaticupdatemode.md)|自動更新モードです。 可能な値は、`userDefined`、`notifyDownload`、`autoInstallAtMaintenanceTime`、`autoInstallAndRebootAtMaintenanceTime`、`autoInstallAndRebootAtScheduledTime`、`autoInstallAndRebootWithoutEndUserControl` です。|
+|automaticUpdateMode|[automaticUpdateMode](../resources/intune-deviceconfig-automaticupdatemode.md)|自動更新モードです。 可能な値は、`userDefined`、`notifyDownload`、`autoInstallAtMaintenanceTime`、`autoInstallAndRebootAtMaintenanceTime`、`autoInstallAndRebootAtScheduledTime`、`autoInstallAndRebootWithoutEndUserControl`、`windowsDefault` です。|
 |microsoftUpdateServiceAllowed|Boolean|Microsoft の更新サービスを許可します。|
 |driversExcluded|Boolean|Windows 更新ドライバーを除外します。|
 |installationSchedule|[windowsUpdateInstallScheduleType](../resources/intune-deviceconfig-windowsupdateinstallscheduletype.md)|インストールのスケジュールです|
@@ -71,13 +72,13 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 |qualityUpdatesPauseExpiryDateTime|DateTimeOffset|品質更新プログラム実行一時停止の有効期限が切れる日時です|
 |featureUpdatesPauseExpiryDateTime|DateTimeOffset|機能更新プログラム実行一時停止の有効期限が切れる日時です|
 |businessReadyUpdatesOnly|[windowsUpdateType](../resources/intune-deviceconfig-windowsupdatetype.md)|更新を受信できるの分岐デバイスを決定します。 使用可能な値: `userDefined`、`all`、`businessReadyOnly`、`windowsInsiderBuildFast`、`windowsInsiderBuildSlow`、`windowsInsiderBuildRelease`。|
-|skipChecksBeforeRestart|ブール型|再起動する前にすべてのチェックをスキップする設定: バッテリ レベル = 40%、ユーザーのプレゼンス、プレゼンテーション モード、全画面表示モード、電話の呼び出しの状態、ゲームのモードなど、表示が必要です。 |
+|skipChecksBeforeRestart|Boolean|再起動する前にすべてのチェックをスキップする設定: バッテリ レベル = 40%、ユーザーのプレゼンス、プレゼンテーション モード、全画面表示モード、電話の呼び出しの状態、ゲームのモードなど、表示が必要です。 |
 |updateWeeks|[windowsUpdateForBusinessUpdateWeeks](../resources/intune-deviceconfig-windowsupdateforbusinessupdateweeks.md)|月の週に更新プログラムのインストールをスケジュールします。 使用可能な値: `userDefined`、`firstWeek`、`secondWeek`、`thirdWeek`、`fourthWeek`、`everyWeek`。|
-|qualityUpdatesPauseStartDateTime|String|品質の更新プログラムの一時停止の開始日時|
-|featureUpdatesPauseStartDateTime|String|機能の更新の一時停止の開始日時|
+|qualityUpdatesPauseStartDate|日付|品質の更新プログラムの一時停止の開始日です。 このプロパティは読み取りのみ可能です。|
+|featureUpdatesPauseStartDate|日付|機能の更新の一時停止の開始日。 このプロパティは読み取りのみ可能です。|
 |featureUpdatesRollbackWindowInDays|Int32|機能の更新プログラムのロールバックの有効期限後の日数|
-|qualityUpdatesWillBeRolledBack|ブール型|に次のデバイス上の品質の更新プログラムをチェック ロールバックするかどうかを指定します。|
-|featureUpdatesWillBeRolledBack|ブール型|に次のデバイスの機能の更新をチェックをロールバックするかどうかを指定します。|
+|qualityUpdatesWillBeRolledBack|Boolean|に次のデバイス上の品質の更新プログラムをチェック ロールバックするかどうかを指定します。|
+|featureUpdatesWillBeRolledBack|Boolean|に次のデバイスの機能の更新をチェックをロールバックするかどうかを指定します。|
 |qualityUpdatesRollbackStartDateTime|DateTimeOffset|品質の更新プログラムのロールバックの開始日時|
 |featureUpdatesRollbackStartDateTime|DateTimeOffset|機能の更新プログラムのロールバックの開始日時|
 |engagedRestartDeadlineInDays|Int32|期限日に自動的にスケジュール設定とアクティブな時間で、2 から 30 日間の有効な範囲外で保留中の再起動を実行する前に|
@@ -86,6 +87,8 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 |autoRestartNotificationDismissal|[autoRestartNotificationDismissalMethod](../resources/intune-deviceconfig-autorestartnotificationdismissalmethod.md)|通知は消されますを自動的に再起動が必要するメソッドを指定します。 可能な値は、`notConfigured`、`automatic`、`user` です。|
 |scheduleRestartWarningInHours|Int32|自動再起動警告アラームの通知の期間を指定します。 サポートされる値: 2、4、8、12、または 24 (時間) です。|
 |scheduleImminentRestartWarningInMinutes|Int32|緊急の警告通知を自動的に再起動の期間を指定します。 サポートされる値: 15、30 または 60 (分) です。|
+|userPauseAccess|[有効化](../resources/intune-shared-enablement
+.md)|ソフトウェア更新を一時停止するのには、エンド ・ ユーザーのアクセスを有効にするかどうかを指定します。 可能な値は、`notConfigured`、`enabled`、`disabled` です。|
 
 
 
@@ -93,16 +96,16 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 このメソッドが成功した場合、このメソッドは `201 Created` 応答コードと、応答本文で [windowsUpdateForBusinessConfiguration](../resources/intune-deviceconfig-windowsupdateforbusinessconfiguration.md) オブジェクトを返します。
 
 ## <a name="example"></a>例
+
 ### <a name="request"></a>要求
 以下は、要求の例です。
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations
 Content-type: application/json
-Content-length: 1863
+Content-length: 1804
 
 {
   "@odata.type": "#microsoft.graph.windowsUpdateForBusinessConfiguration",
-  "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
   "roleScopeTagIds": [
     "Role Scope Tag Ids value"
   ],
@@ -129,8 +132,8 @@ Content-length: 1863
   "businessReadyUpdatesOnly": "all",
   "skipChecksBeforeRestart": true,
   "updateWeeks": "firstWeek",
-  "qualityUpdatesPauseStartDateTime": "Quality Updates Pause Start Date Time value",
-  "featureUpdatesPauseStartDateTime": "Feature Updates Pause Start Date Time value",
+  "qualityUpdatesPauseStartDate": "<Unknown Primitive Type Edm.Date>",
+  "featureUpdatesPauseStartDate": "<Unknown Primitive Type Edm.Date>",
   "featureUpdatesRollbackWindowInDays": 2,
   "qualityUpdatesWillBeRolledBack": true,
   "featureUpdatesWillBeRolledBack": true,
@@ -141,7 +144,8 @@ Content-length: 1863
   "engagedRestartTransitionScheduleInDays": 6,
   "autoRestartNotificationDismissal": "automatic",
   "scheduleRestartWarningInHours": 13,
-  "scheduleImminentRestartWarningInMinutes": 7
+  "scheduleImminentRestartWarningInMinutes": 7,
+  "userPauseAccess": "enabled"
 }
 ```
 
@@ -150,7 +154,7 @@ Content-length: 1863
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 1971
+Content-Length: 1976
 
 {
   "@odata.type": "#microsoft.graph.windowsUpdateForBusinessConfiguration",
@@ -183,8 +187,8 @@ Content-Length: 1971
   "businessReadyUpdatesOnly": "all",
   "skipChecksBeforeRestart": true,
   "updateWeeks": "firstWeek",
-  "qualityUpdatesPauseStartDateTime": "Quality Updates Pause Start Date Time value",
-  "featureUpdatesPauseStartDateTime": "Feature Updates Pause Start Date Time value",
+  "qualityUpdatesPauseStartDate": "<Unknown Primitive Type Edm.Date>",
+  "featureUpdatesPauseStartDate": "<Unknown Primitive Type Edm.Date>",
   "featureUpdatesRollbackWindowInDays": 2,
   "qualityUpdatesWillBeRolledBack": true,
   "featureUpdatesWillBeRolledBack": true,
@@ -195,10 +199,10 @@ Content-Length: 1971
   "engagedRestartTransitionScheduleInDays": 6,
   "autoRestartNotificationDismissal": "automatic",
   "scheduleRestartWarningInHours": 13,
-  "scheduleImminentRestartWarningInMinutes": 7
+  "scheduleImminentRestartWarningInMinutes": 7,
+  "userPauseAccess": "enabled"
 }
 ```
-
 
 
 

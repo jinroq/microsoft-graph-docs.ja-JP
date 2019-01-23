@@ -1,31 +1,34 @@
 ---
 title: windowsKioskAppBase リソースの種類
 description: アプリケーションの型の基本クラス
-author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 9b13807fdb0319b3c9a15248fa2d50ffc46ac164
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: tfitzmac
+ms.prod: Intune
+ms.openlocfilehash: 8ca86969eb32a1a1d129fb5ba4cd48bbb04ffd78
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27977025"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29407145"
 ---
 # <a name="windowskioskappbase-resource-type"></a>windowsKioskAppBase リソースの種類
 
-> **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。
+> **重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
 
-> **注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
+> **注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 アプリケーションの型の基本クラス
+
 ## <a name="properties"></a>プロパティ
 |プロパティ|型|説明|
 |:---|:---|:---|
 |startLayoutTileSize|[windowsAppStartLayoutTileSize](../resources/intune-deviceconfig-windowsappstartlayouttilesize.md)|開始レイアウトのアプリケーションのタイルのサイズです。 可能な値は、`hidden`、`small`、`medium`、`wide`、`large` です。|
-|名前|String|アプリケーションのフレンドリ名を表す|
+|name|String|アプリケーションのフレンドリ名を表す|
+|appType|[windowsKioskAppType](../resources/intune-deviceconfig-windowskioskapptype.md)|アプリケーションの種類です。 可能な値は、`unknown`、`store`、`desktop`、`aumId` です。|
 
-## <a name="relationships"></a>リレーションシップ
+## <a name="relationships"></a>関係
 なし
+
 ## <a name="json-representation"></a>JSON 表記
 以下は、リソースの JSON 表記です。
 <!-- {
@@ -37,10 +40,10 @@ ms.locfileid: "27977025"
 {
   "@odata.type": "#microsoft.graph.windowsKioskAppBase",
   "startLayoutTileSize": "String",
-  "name": "String"
+  "name": "String",
+  "appType": "String"
 }
 ```
-
 
 
 

@@ -1,25 +1,26 @@
 ---
 title: SideLoadingKey を更新します。
 description: SideLoadingKey オブジェクトのプロパティを更新します。
-author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 116034afff02ac41647d781bbd85ec6f8dcaeec4
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: tfitzmac
+ms.prod: Intune
+ms.openlocfilehash: 4fd498404543353c45714f739a68b0195ae3d3dd
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27969934"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29409861"
 ---
 # <a name="update-sideloadingkey"></a>SideLoadingKey を更新します。
 
-> **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。
+> **重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
 
-> **注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
+> **注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 [SideLoadingKey](../resources/intune-onboarding-sideloadingkey.md)オブジェクトのプロパティを更新します。
+
 ## <a name="prerequisites"></a>前提条件
-この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
+この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/concepts/permissions-reference.md)」を参照してください。
 
 |アクセス許可の種類|アクセス許可 (特権の大きいものから小さいものへ)|
 |:---|:---|
@@ -49,7 +50,7 @@ PATCH /deviceAppManagement/sideLoadingKeys/{sideLoadingKeyId}
 
 |プロパティ|型|説明|
 |:---|:---|:---|
-|ID|String|側のキーの一意の id の読み込み|
+|id|String|側のキーの一意の id の読み込み|
 |value|文字列|側の読み込みキー] の値は 5 列 5 行値、hiphens によって区切られています。|
 |displayName|String|側の読み込みキー名、it プロフェッショナルの管理者に表示されます。|
 |説明|String|側キーの読み込み中の説明は、it プロフェッショナルの管理者に表示されます.|
@@ -62,14 +63,16 @@ PATCH /deviceAppManagement/sideLoadingKeys/{sideLoadingKeyId}
 かどうかは成功すると、このメソッドが返されます、`200 OK`応答コードおよび応答の本文に更新された[sideLoadingKey](../resources/intune-onboarding-sideloadingkey.md)オブジェクトです。
 
 ## <a name="example"></a>例
+
 ### <a name="request"></a>要求
 以下は、要求の例です。
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceAppManagement/sideLoadingKeys/{sideLoadingKeyId}
 Content-type: application/json
-Content-length: 193
+Content-length: 246
 
 {
+  "@odata.type": "#microsoft.graph.sideLoadingKey",
   "value": "Value value",
   "displayName": "Display Name value",
   "description": "Description value",
@@ -95,7 +98,6 @@ Content-Length: 295
   "lastUpdatedDateTime": "Last Updated Date Time value"
 }
 ```
-
 
 
 

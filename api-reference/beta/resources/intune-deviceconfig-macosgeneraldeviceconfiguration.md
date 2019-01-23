@@ -3,21 +3,22 @@ title: macOSGeneralDeviceConfiguration リソースの種類
 description: このトピックでは、macOSGeneralDeviceConfiguration リソースによって公開された、宣言されたメソッド、プロパティ、リレーションシップについて説明します。
 localization_priority: Normal
 author: tfitzmac
-ms.prod: intune
-ms.openlocfilehash: 02bdcf72a9b01c9fd2ec0dcb45f7c743e51f941b
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: 38e99c1df2f570e06fec22e47e0286eeb4dc76ad
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27983927"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29404793"
 ---
 # <a name="macosgeneraldeviceconfiguration-resource-type"></a>macOSGeneralDeviceConfiguration リソースの種類
 
-> **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。
+> **重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
 
-> **注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
+> **注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 このトピックでは、macOSGeneralDeviceConfiguration リソースによって公開された、宣言されたメソッド、プロパティ、リレーションシップについて説明します。
+
 
 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します
 
@@ -31,12 +32,12 @@ ms.locfileid: "27983927"
 |[macOSGeneralDeviceConfiguration の更新](../api/intune-deviceconfig-macosgeneraldeviceconfiguration-update.md)|[macOSGeneralDeviceConfiguration](../resources/intune-deviceconfig-macosgeneraldeviceconfiguration.md)|[macOSGeneralDeviceConfiguration](../resources/intune-deviceconfig-macosgeneraldeviceconfiguration.md) オブジェクトのプロパティを更新します。|
 
 ## <a name="properties"></a>プロパティ
-|プロパティ|種類|説明|
+|プロパティ|型|説明|
 |:---|:---|:---|
-|ID|String|エンティティのキー。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
+|id|String|エンティティのキー。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |lastModifiedDateTime|DateTimeOffset|オブジェクトが最後に変更された DateTime。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |roleScopeTagIds|String コレクション|このエンティティ インスタンスのスコープのタグのリストです。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
-|supportsScopeTags|ブール型|デバイスの構成を基になるスコープのタグの割り当てをサポートしているかどうかを示します。 この値が false であり、エンティティをスコープ指定されたユーザーには表示されませんがある場合、ScopeTags プロパティに割り当てることは許可されていません。 これは、Silverlight で作成されたレガシ ポリシーに対して発生し、削除して、Azure ポータル内のポリシーを再作成することで解決できます。 このプロパティは読み取りのみ可能です。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
+|supportsScopeTags|Boolean|デバイスの構成を基になるスコープのタグの割り当てをサポートしているかどうかを示します。 この値が false であり、エンティティをスコープ指定されたユーザーには表示されませんがある場合、ScopeTags プロパティに割り当てることは許可されていません。 これは、Silverlight で作成されたレガシ ポリシーに対して発生し、削除して、Azure ポータル内のポリシーを再作成することで解決できます。 このプロパティは読み取りのみ可能です。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |createdDateTime|DateTimeOffset|オブジェクトが作成された DateTime。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |説明|String|デバイス構成について管理者が提供した説明。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |displayName|String|デバイス構成について管理者が指定した名前。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
@@ -53,28 +54,31 @@ ms.locfileid: "27983927"
 |passwordPreviousPasswordBlockCount|Int32|ブロックする、以前のパスワードの数。|
 |passwordRequiredType|[requiredPasswordType](../resources/intune-deviceconfig-requiredpasswordtype.md)|必要なパスワードの種類。 可能な値は、`deviceDefault`、`alphanumeric`、`numeric` です。|
 |passwordRequired|Boolean|パスワードを要求するかどうかを指定します。|
-|keychainBlockCloudSync|ブール型|ICloud キーチェーンの同期がブロックされている (macOS 10.12 とそれ以降) であるかどうかを示します。|
-|airPrintBlocked|ブール型|AirPrint がブロックされている (macOS 10.12 とそれ以降) であるかどうかを示します。|
-|airPrintForceTrustedTLS|ブール型|信頼された証明書が TLS 印刷通信 (macOS 10.13 とそれ以降) に必要なかどうかを示します。|
-|airPrintBlockiBeaconDiscovery|ブール型|AirPrint プリンターの検出を iBeacon がブロックされているかどうかを示します。 これには、ネットワーク トラフィック (macOS 10.3 とそれ以降) のフィッシング詐欺からの見かけ上の AirPrint Bluetooth ビーコンができなくなります。|
+|keychainBlockCloudSync|Boolean|ICloud キーチェーンの同期がブロックされている (macOS 10.12 とそれ以降) であるかどうかを示します。|
+|airPrintBlocked|Boolean|AirPrint がブロックされている (macOS 10.12 とそれ以降) であるかどうかを示します。|
+|airPrintForceTrustedTLS|Boolean|信頼された証明書が TLS 印刷通信 (macOS 10.13 とそれ以降) に必要なかどうかを示します。|
+|airPrintBlockiBeaconDiscovery|Boolean|AirPrint プリンターの検出を iBeacon がブロックされているかどうかを示します。 これには、ネットワーク トラフィック (macOS 10.3 とそれ以降) のフィッシング詐欺からの見かけ上の AirPrint Bluetooth ビーコンができなくなります。|
 |safariBlockAutofill|Boolean|ユーザーによる Safari での自動入力の使用を禁止するかどうかを示します。|
 |cameraBlocked|Boolean|ユーザーによるデバイスのカメラへのアクセスを禁止するかどうかを示します。|
 |iTunesBlockMusicService|Boolean|音楽サービスをブロックし、クラシック モードへの音楽アプリケーションを元に戻すかどうかを示します。|
 |spotlightBlockInternetResults|Boolean|スポット ライトのインターネット検索からの結果を返すことを禁止するかどうかを示します。|
 |keyboardBlockDictation|Boolean|ディクテーション モードの入力を使用してからユーザーをブロックするかどうかを示します。|
 |definitionLookupBlocked|Boolean|定義の参照をブロックするかどうかを示します。|
-|appleWatchBlockAutoUnlock|ブール型|Apple Watch で、Mac のロックを解除することをユーザーに禁止するかを示します。|
-|iTunesBlockFileSharing|ブール型|かどうかの中からファイルをブロックするのには転送 iTunes を使用することを示します。|
+|appleWatchBlockAutoUnlock|Boolean|Apple Watch で、Mac のロックを解除することをユーザーに禁止するかを示します。|
+|iTunesBlockFileSharing|Boolean|かどうかの中からファイルをブロックするのには転送 iTunes を使用することを示します。|
 |iCloudBlockDocumentSync|Boolean|iCloud のドキュメントの同期を禁止するかどうかを示します。|
-|iCloudBlockMail|ブール型|ICloud とのメールの同期をブロックするかどうかを示します。|
-|iCloudBlockAddressBook|ブール型|ICloud との連絡先の同期をブロックするかどうかを示します。|
-|iCloudBlockCalendar|ブール型|ICloud との予定表の同期をブロックするかどうかを示します。|
-|iCloudBlockReminders|ブール型|ICloud との同期の通知をブロックするかどうかを示します。|
-|iCloudBlockBookmarks|ブール型|ICloud からのブックマークの同期をブロックするかどうかを示します。|
-|iCloudBlockNotes|ブール型|ICloud からメモの同期をブロックするかどうかを示します。|
+|iCloudBlockMail|Boolean|ICloud とのメールの同期をブロックするかどうかを示します。|
+|iCloudBlockAddressBook|Boolean|ICloud との連絡先の同期をブロックするかどうかを示します。|
+|iCloudBlockCalendar|Boolean|ICloud との予定表の同期をブロックするかどうかを示します。|
+|iCloudBlockReminders|Boolean|ICloud との同期の通知をブロックするかどうかを示します。|
+|iCloudBlockBookmarks|Boolean|ICloud からのブックマークの同期をブロックするかどうかを示します。|
+|iCloudBlockNotes|Boolean|ICloud からメモの同期をブロックするかどうかを示します。|
 |airDropBlocked|Boolean|AirDrop を許可するかどうかを示します。|
-|passwordBlockModification|ブール型|パスコードの変更を許可するかどうかを示します。|
+|passwordBlockModification|Boolean|パスコードの変更を許可するかどうかを示します。|
 |passwordBlockFingerprintUnlock|Boolean|指紋によるロック解除を禁止するかどうかを示します。|
+|passwordBlockAutoFill|Boolean|オートフィルのパスワード機能をブロックするかどうかを示します。|
+|passwordBlockProximityRequests|Boolean|近くにあるデバイスからパスワードを要求をブロックするかどうかを示します。|
+|passwordBlockAirDropSharing|Boolean|AirDrop のパスワード機能を使用して共有のパスワードをブロックするかどうかを示します。|
 
 ## <a name="relationships"></a>リレーションシップ
 |リレーションシップ|型|説明|
@@ -151,10 +155,12 @@ ms.locfileid: "27983927"
   "iCloudBlockNotes": true,
   "airDropBlocked": true,
   "passwordBlockModification": true,
-  "passwordBlockFingerprintUnlock": true
+  "passwordBlockFingerprintUnlock": true,
+  "passwordBlockAutoFill": true,
+  "passwordBlockProximityRequests": true,
+  "passwordBlockAirDropSharing": true
 }
 ```
-
 
 
 
