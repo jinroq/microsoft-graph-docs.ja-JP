@@ -4,18 +4,18 @@ description: 指定されたデバイス タグが含まれるアプリ登録で
 author: tfitzmac
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: f597a33dff637a87a4071dadf1a4f16a6e7ef461
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 650ff602101cead593d39603beb0b361ac0421dc
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27974071"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29415391"
 ---
 # <a name="wipemanagedappregistrationbydevicetag-action"></a>wipeManagedAppRegistrationByDeviceTag アクション
 
-> **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。
+> **重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
 
-> **注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
+> **注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 指定されたデバイス タグが含まれるアプリ登録でワイプ操作を実行します。
 
@@ -52,7 +52,7 @@ POST /users/{usersId}/wipeManagedAppRegistrationByDeviceTag
 
 次の表に、このアクションで使用できるパラメーターを示します。
 
-|プロパティ|種類|説明|
+|プロパティ|型|説明|
 |:---|:---|:---|
 |deviceTag|String|デバイス タグ|
 

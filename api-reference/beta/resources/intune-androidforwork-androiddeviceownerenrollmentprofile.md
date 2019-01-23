@@ -3,21 +3,22 @@ title: androidDeviceOwnerEnrollmentProfile リソースの種類
 description: Google のクラウド管理を使用して COSU デバイスを登録するために使われる登録プロファイルです。
 localization_priority: Normal
 author: tfitzmac
-ms.prod: intune
-ms.openlocfilehash: 5e609f16978f3dd68eb680692149954f83e6cc6d
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: 931360e917eab8e8fbddadf70b70aafb39f7c50b
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27963557"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29416665"
 ---
 # <a name="androiddeviceownerenrollmentprofile-resource-type"></a>androidDeviceOwnerEnrollmentProfile リソースの種類
 
-> **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。
+> **重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
 
-> **注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
+> **注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 Google のクラウド管理を使用して COSU デバイスを登録するために使われる登録プロファイルです。
+
 ## <a name="methods"></a>メソッド
 |メソッド|戻り値の型|説明|
 |:---|:---|:---|
@@ -30,7 +31,7 @@ Google のクラウド管理を使用して COSU デバイスを登録するた�
 |[createToken action](../api/intune-androidforwork-androiddeviceownerenrollmentprofile-createtoken.md)|なし|まだ文書化されていません|
 
 ## <a name="properties"></a>プロパティ
-|プロパティ|種類|説明|
+|プロパティ|型|説明|
 |:---|:---|:---|
 |accountId|String|登録プロファイルが属するテナント GUID。|
 |id|String|登録プロファイル用の一意な GUID。|
@@ -47,6 +48,7 @@ Google のクラウド管理を使用して COSU デバイスを登録するた�
 
 ## <a name="relationships"></a>リレーションシップ
 なし
+
 ## <a name="json-representation"></a>JSON 表記
 以下は、リソースの JSON 表記です。
 <!-- {
@@ -76,7 +78,6 @@ Google のクラウド管理を使用して COSU デバイスを登録するた�
   }
 }
 ```
-
 
 
 

@@ -1,25 +1,26 @@
 ---
 title: EnrollmentProfile を作成します。
 description: 新しい enrollmentProfile オブジェクトを作成します。
-author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: bf4133e636cd9eedf7737e2003d1ba733a6e08ec
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: tfitzmac
+ms.prod: Intune
+ms.openlocfilehash: 2a7bb3fb49b57f38ad938f7d43f28f4ece3fda92
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27934143"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29414768"
 ---
 # <a name="create-enrollmentprofile"></a>EnrollmentProfile を作成します。
 
-> **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。
+> **重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
 
-> **注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
+> **注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 新しい[enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)オブジェクトを作成します。
+
 ## <a name="prerequisites"></a>前提条件
-この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
+この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/concepts/permissions-reference.md)」を参照してください。
 
 |アクセス許可の種類|アクセス許可 (特権の大きいものから小さいものへ)|
 |:---|:---|
@@ -49,12 +50,13 @@ POST /deviceManagement/depOnboardingSettings/{depOnboardingSettingId}/enrollment
 
 |プロパティ|型|説明|
 |:---|:---|:---|
-|ID|String|オブジェクトの GUID|
+|id|String|オブジェクトの GUID|
 |displayName|String|プロファイルの名前|
 |説明|String|プロファイルの説明|
 |requiresUserAuthentication|Boolean|プロファイルにユーザー認証が必要なかどうかを示します|
 |configurationEndpointUrl|String|登録に使用するエンドポイントの url を構成|
 |enableAuthenticationViaCompanyPortal|Boolean|アップルらくらく企業ポータルではなくを使用して認証することを示します。|
+|requireCompanyPortalOnSetupAssistantEnrolledDevices|Boolean|セットアップ アシスタントが登録されているデバイス上の会社のポータルが必要であることを示します。|
 
 
 
@@ -62,12 +64,13 @@ POST /deviceManagement/depOnboardingSettings/{depOnboardingSettingId}/enrollment
 かどうかは成功すると、このメソッドが返されます、`201 Created`応答コードおよび応答の本文に[enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)オブジェクトです。
 
 ## <a name="example"></a>例
+
 ### <a name="request"></a>要求
 以下は、要求の例です。
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/depOnboardingSettings/{depOnboardingSettingId}/enrollmentProfiles
 Content-type: application/json
-Content-length: 306
+Content-length: 370
 
 {
   "@odata.type": "#microsoft.graph.enrollmentProfile",
@@ -75,7 +78,8 @@ Content-length: 306
   "description": "Description value",
   "requiresUserAuthentication": true,
   "configurationEndpointUrl": "https://example.com/configurationEndpointUrl/",
-  "enableAuthenticationViaCompanyPortal": true
+  "enableAuthenticationViaCompanyPortal": true,
+  "requireCompanyPortalOnSetupAssistantEnrolledDevices": true
 }
 ```
 
@@ -84,7 +88,7 @@ Content-length: 306
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 355
+Content-Length: 419
 
 {
   "@odata.type": "#microsoft.graph.enrollmentProfile",
@@ -93,10 +97,10 @@ Content-Length: 355
   "description": "Description value",
   "requiresUserAuthentication": true,
   "configurationEndpointUrl": "https://example.com/configurationEndpointUrl/",
-  "enableAuthenticationViaCompanyPortal": true
+  "enableAuthenticationViaCompanyPortal": true,
+  "requireCompanyPortalOnSetupAssistantEnrolledDevices": true
 }
 ```
-
 
 
 

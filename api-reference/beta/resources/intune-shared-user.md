@@ -4,18 +4,18 @@ description: Azure Active Directory ユーザー オブジェクトを表しま�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: 67b347a34244b5789bcb38a281e33974473ba1bb
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 8f7c49f6016c0cd91d80278282c937ad9ad9a0ab
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27934941"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29422482"
 ---
 # <a name="user-resource-type"></a>user リソースの種類
 
-> **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。
+> **重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
 
-> **注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
+> **注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 Azure Active Directory ユーザー オブジェクトを表します。
 
@@ -45,7 +45,7 @@ Azure Active Directory ユーザー オブジェクトを表します。
 ## <a name="properties"></a>プロパティ
 |プロパティ|型|説明|
 |:---|:---|:---|
-|ID|String|ユーザーの一意識別子。|
+|id|String|ユーザーの一意識別子。|
 |**契約時**|
 |deviceEnrollmentLimit|Int32|ユーザーが登録を許可されているデバイスの最大数。 使用できる値は 5 または 1000 です。|
 
@@ -61,7 +61,7 @@ Azure Active Directory ユーザー オブジェクトを表します。
 |**トラブルシューティング**|
 |deviceManagementTroubleshootingEvents|[deviceManagementTroubleshootingEvent](../resources/intune-troubleshooting-devicemanagementtroubleshootingevent.md) コレクション|対象ユーザーのトラブルシューティング イベントの一覧です。|
 |mobileAppIntentAndStates|[mobileAppIntentAndState](../resources/intune-troubleshooting-mobileappintentandstate.md)コレクション|対象ユーザーのトラブルシューティング イベントの一覧です。|
-|mobileAppTroubleshootingEvents|[mobileAppTroubleshootingEvent](../resources/intune-troubleshooting-mobileapptroubleshootingevent.md)コレクション|モバイル アプリケーションがこのユーザーのイベントをトラブルシューティングの一覧です。|
+|mobileAppTroubleshootingEvents|[mobileAppTroubleshootingEvent](../resources/intune-shared-mobileapptroubleshootingevent.md)コレクション|モバイル アプリケーションがこのユーザーのイベントをトラブルシューティングの一覧です。|
 
 ## <a name="json-representation"></a>JSON 表記
 以下は、リソースの JSON 表記です。

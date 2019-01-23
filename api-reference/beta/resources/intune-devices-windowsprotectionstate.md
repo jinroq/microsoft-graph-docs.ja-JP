@@ -1,23 +1,24 @@
 ---
 title: windowsProtectionState リソースの種類
 description: デバイス保護の状態のエンティティです。
-author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 7f15044f597fb04e98571de7aec8796e9a9ddf74
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: tfitzmac
+ms.prod: Intune
+ms.openlocfilehash: 1ef6c86983475abc687055ac2322ba02fae27ecd
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27954527"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29423588"
 ---
 # <a name="windowsprotectionstate-resource-type"></a>windowsProtectionState リソースの種類
 
-> **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。
+> **重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
 
-> **注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
+> **注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 デバイス保護の状態のエンティティです。
+
 ## <a name="methods"></a>メソッド
 |メソッド|戻り値の型|説明|
 |:---|:---|:---|
@@ -27,7 +28,7 @@ ms.locfileid: "27954527"
 ## <a name="properties"></a>プロパティ
 |プロパティ|型|説明|
 |:---|:---|:---|
-|ID|String|デバイス保護の状態のオブジェクトの一意の識別子です。 これは、デバイスのデバイス id|
+|id|String|デバイス保護の状態のオブジェクトの一意の識別子です。 これは、デバイスのデバイス id|
 |malwareProtectionEnabled|Boolean|マルウェア対策が有効になっているか|
 |deviceState|[windowsDeviceHealthState](../resources/intune-devices-windowsdevicehealthstate.md)|コンピューターの状態 (などのクリーンな保留中の完全なスキャンまたは再起動の保留中など)。 使用可能な値: `clean`、`fullScanPending`、`rebootPending`、`manualStepsPending`、`offlineScanPending`、`critical`。|
 |realTimeProtectionEnabled|Boolean|リアルタイム保護を有効または無効ですか。|
@@ -82,7 +83,6 @@ ms.locfileid: "27954527"
   "lastReportedDateTime": "String (timestamp)"
 }
 ```
-
 
 
 

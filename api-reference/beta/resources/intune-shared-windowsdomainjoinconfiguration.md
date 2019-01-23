@@ -4,18 +4,18 @@ description: デバイス構成の Windows ドメインに参加します。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: b2184233549cdf52c3708de2a35c5c647e9beba3
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 28c29c4af58a1f3ed1f509c7ce18d64cf22836d8
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27990755"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29415216"
 ---
 # <a name="windowsdomainjoinconfiguration-resource-type"></a>windowsDomainJoinConfiguration リソースの種類
 
-> **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。
+> **重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
 
-> **注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
+> **注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 デバイス構成の Windows ドメインに参加します。
 
@@ -33,7 +33,7 @@ ms.locfileid: "27990755"
 ## <a name="properties"></a>プロパティ
 |プロパティ|型|説明|
 |:---|:---|:---|
-|ID|String|エンティティのキー。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
+|id|String|エンティティのキー。 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) から継承します|
 |**デバイス構成**|
 |activeDirectoryDomainName|String|参加するアクティブなディレクトリ ドメイン名です。|
 |computerNameStaticPrefix|String|コンピューター名に使用するプレフィックスを固定します。|

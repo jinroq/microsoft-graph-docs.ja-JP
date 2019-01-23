@@ -1,25 +1,26 @@
 ---
 title: リスト win32LobApps
 description: Win32LobApp オブジェクトのプロパティと関係を一覧表示します。
-author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 21c436ba76e590bffa9891b8a73537f0bf0da41a
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: tfitzmac
+ms.prod: Intune
+ms.openlocfilehash: c8e9678b0c4833fd3aaccec36e78bade1d03b7c3
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27949641"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29417610"
 ---
 # <a name="list-win32lobapps"></a>リスト win32LobApps
 
-> **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。
+> **重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
 
-> **注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
+> **注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 [Win32LobApp](../resources/intune-apps-win32lobapp.md)オブジェクトのプロパティと関係を一覧表示します。
+
 ## <a name="prerequisites"></a>前提条件
-この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
+この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/concepts/permissions-reference.md)」を参照してください。
 
 |アクセス許可の種類|アクセス許可 (特権の大きいものから小さいものへ)|
 |:---|:---|
@@ -49,6 +50,7 @@ GET /deviceAppManagement/mobileApps
 かどうかは成功すると、このメソッドが返されます、`200 OK`応答コードおよび応答の本文に[win32LobApp](../resources/intune-apps-win32lobapp.md)オブジェクトのコレクションです。
 
 ## <a name="example"></a>例
+
 ### <a name="request"></a>要求
 以下は、要求の例です。
 ``` http
@@ -60,7 +62,7 @@ GET https://graph.microsoft.com/beta/deviceAppManagement/mobileApps
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 2689
+Content-Length: 2790
 
 {
   "value": [
@@ -85,6 +87,10 @@ Content-Length: 2689
       "notes": "Notes value",
       "uploadState": 11,
       "publishingState": "processing",
+      "isAssigned": true,
+      "roleScopeTagIds": [
+        "Role Scope Tag Ids value"
+      ],
       "committedContentVersion": "Committed Content Version value",
       "fileName": "File Name value",
       "size": 4,
@@ -140,7 +146,6 @@ Content-Length: 2689
   ]
 }
 ```
-
 
 
 

@@ -1,15 +1,15 @@
 ---
 title: proxiedDomain リソースの種類
-description: プロキシ化されたドメイン
+description: Intune は、複数のワークフローをサポートする Microsoft グラフ API の proxiedDomain リソースについて説明します。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: bf4668a58e09b21c2689e10c27e773128f886b34
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: b13e880508c80a009eacb520452c66e7b733ad86
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27971551"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29421845"
 ---
 # <a name="proxieddomain-resource-type"></a>proxiedDomain リソースの種類
 
@@ -20,7 +20,7 @@ ms.locfileid: "27971551"
 プロキシ化されたドメイン
 
 ## <a name="properties"></a>プロパティ
-|プロパティ|種類|説明|
+|プロパティ|型|説明|
 |:---|:---|:---|
 |ipAddressOrFQDN|文字列|IP アドレスまたは完全修飾ドメイン名 (FQDN) です。|
 |プロキシ|文字列|プロキシの IP アドレスまたは FQDN です。|

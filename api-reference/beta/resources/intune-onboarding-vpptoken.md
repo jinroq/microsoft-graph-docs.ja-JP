@@ -1,23 +1,24 @@
 ---
 title: vppToken リソースの種類
 description: ビジネス向けまたは教育向けの Apple Volume Purchase Program で iOS アプリのライセンスを複数購入した場合、 Apple の Web サイトから Apple VPP アカウントを設定し、Intune にビジネス向けまたは教育向けの Apple VPP トークンをアップロードする必要があります。 これにより、ボリューム購入情報を Intune と同期して、ボリューム購入したアプリの使用状況を追跡できます。 ビジネス向けまたは教育向けの Apple VPP トークンは複数アップロードできます。
-author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: c69329cefc99d2a57907c8bc0fe34beb8371f1d9
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: tfitzmac
+ms.prod: Intune
+ms.openlocfilehash: a21ac5a85094692fe52c7817ee31636c872e131e
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27912359"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29419878"
 ---
 # <a name="vpptoken-resource-type"></a>vppToken リソースの種類
 
-> **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。
+> **重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
 
-> **注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
+> **注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 ビジネス向けまたは教育向けの Apple Volume Purchase Program で iOS アプリのライセンスを複数購入した場合、 Apple の Web サイトから Apple VPP アカウントを設定し、Intune にビジネス向けまたは教育向けの Apple VPP トークンをアップロードする必要があります。 これにより、ボリューム購入情報を Intune と同期して、ボリューム購入したアプリの使用状況を追跡できます。 ビジネス向けまたは教育向けの Apple VPP トークンは複数アップロードできます。
+
 ## <a name="methods"></a>メソッド
 |メソッド|戻り値の型|説明|
 |:---|:---|:---|
@@ -31,9 +32,9 @@ ms.locfileid: "27912359"
 |[getLicensesForApp 関数](../api/intune-onboarding-vpptoken-getlicensesforapp.md)|[vppTokenLicenseSummary](../resources/intune-onboarding-vpptokenlicensesummary.md)コレクション|まだ文書化されていません|
 
 ## <a name="properties"></a>プロパティ
-|プロパティ|種類|説明|
+|プロパティ|型|説明|
 |:---|:---|:---|
-|ID|String|appleVolumePurchaseProgramToken 作成時に自動的に生成されます。 エンティティのキーになります。|
+|id|String|appleVolumePurchaseProgramToken 作成時に自動的に生成されます。 エンティティのキーになります。|
 |organizationName|String|Apple Volume Purchase Program のトークンに関連付けられている組織|
 |vppTokenAccountType|[vppTokenAccountType](../resources/intune-shared-vpptokenaccounttype.md)|特定の Apple Volume Purchase Program のトークンが関連付けられている、ボリューム購入プログラムの種類。 可能な値は、`business`、`education` です。 可能な値は、`business`、`education` です。|
 |appleId|String|特定の Apple Volume Purchase Program のトークンに関連付けられている Apple ID。|
@@ -44,15 +45,17 @@ ms.locfileid: "27912359"
 |state|[vppTokenState](../resources/intune-onboarding-vpptokenstate.md)|Apple Volume Purchase Program のトークンの現在の状態。 可能な値は、`unknown`、`valid`、`expired`、`invalid`、`assignedToExternalMDM` です。 可能な値は、`unknown`、`valid`、`expired`、`invalid`、`assignedToExternalMDM` です。|
 |tokenActionResults|[vppTokenActionResult](../resources/intune-onboarding-vpptokenactionresult.md)コレクション|アクションの状態のコレクションは、Apple ボリューム購入プログラム トークンで実行されます。|
 |lastSyncStatus|[vppTokenSyncStatus](../resources/intune-onboarding-vpptokensyncstatus.md)|Apple Volume Purchase Program のトークンを使用して行われた最後のアプリケーションの同期の現在の同期状態。 可能な値は、`none`、`inProgress`、`completed`、`failed` です。 可能な値は、`none`、`inProgress`、`completed`、`failed` です。|
-|automaticallyUpdateApps|ブール型|VPP トークンのアプリを自動で更新するかどうか。|
+|automaticallyUpdateApps|Boolean|VPP トークンのアプリを自動で更新するかどうか。|
 |countryOrRegion|String|VPP トークンのアプリを自動で更新するかどうか。|
-|dataSharingConsentGranted|ブール型|Apple ボリューム購入プログラムを使用して共有データに確かに同意するものです。|
+|dataSharingConsentGranted|Boolean|Apple ボリューム購入プログラムを使用して共有データに確かに同意するものです。|
 |displayName|String|管理者は、トークンのフレンドリ名を指定します。|
 |locationName|String|アップル VPP から返されるトークンの場所です。|
-|claimTokenManagementFromExternalMdm|ブール型|外部 MDM. からのトークンの管理であると主張できるようにするのには同意するものと管理|
+|claimTokenManagementFromExternalMdm|Boolean|外部 MDM. からのトークンの管理であると主張できるようにするのには同意するものと管理|
+|roleScopeTagIds|String コレクション|役割スコープのタグ Id がこのエンティティに割り当てられています。|
 
 ## <a name="relationships"></a>リレーションシップ
 なし
+
 ## <a name="json-representation"></a>JSON 表記
 以下は、リソースの JSON 表記です。
 <!-- {
@@ -88,10 +91,12 @@ ms.locfileid: "27912359"
   "dataSharingConsentGranted": true,
   "displayName": "String",
   "locationName": "String",
-  "claimTokenManagementFromExternalMdm": true
+  "claimTokenManagementFromExternalMdm": true,
+  "roleScopeTagIds": [
+    "String"
+  ]
 }
 ```
-
 
 
 

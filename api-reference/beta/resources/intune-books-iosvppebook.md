@@ -1,23 +1,24 @@
 ---
 title: iosVppEBook リソースの種類
 description: iOS Vpp eBook のプロパティを含むクラスです。
-author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 74f2f71b9f6f31e2574afb16c276ba42fb87c9a8
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: tfitzmac
+ms.prod: Intune
+ms.openlocfilehash: 35a3f6cc1744b869b4dd2dc9e0baf703144ea73b
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27930238"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29416777"
 ---
 # <a name="iosvppebook-resource-type"></a>iosVppEBook リソースの種類
 
-> **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。
+> **重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
 
-> **注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
+> **注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 iOS Vpp eBook のプロパティを含むクラスです。
+
 
 [managedEBook](../resources/intune-books-managedebook.md) から継承します
 
@@ -31,9 +32,9 @@ iOS Vpp eBook のプロパティを含むクラスです。
 |[iosVppEBook の更新](../api/intune-books-iosvppebook-update.md)|[iosVppEBook](../resources/intune-books-iosvppebook.md)|[iosVppEBook](../resources/intune-books-iosvppebook.md) オブジェクトのプロパティを更新します。|
 
 ## <a name="properties"></a>プロパティ
-|プロパティ|種類|説明|
+|プロパティ|型|説明|
 |:---|:---|:---|
-|ID|String|エンティティのキー。 [managedEBook](../resources/intune-books-managedebook.md) から継承します|
+|id|String|エンティティのキー。 [managedEBook](../resources/intune-books-managedebook.md) から継承します|
 |displayName|String|電子ブックの名前。 [managedEBook](../resources/intune-books-managedebook.md) から継承します|
 |説明|String|説明。 [managedEBook](../resources/intune-books-managedebook.md) から継承します|
 |publisher|String|発行元です。 [managedEBook](../resources/intune-books-managedebook.md) から継承します|
@@ -51,6 +52,7 @@ iOS Vpp eBook のプロパティを含むクラスです。
 |seller|String|販売元。|
 |totalLicenseCount|Int32|ライセンスの合計数。|
 |usedLicenseCount|Int32|使用されているライセンスの数。|
+|roleScopeTagIds|String コレクション|このエンティティ インスタンスのスコープのタグのリストです。|
 
 ## <a name="relationships"></a>リレーションシップ
 |リレーションシップ|型|説明|
@@ -95,10 +97,12 @@ iOS Vpp eBook のプロパティを含むクラスです。
   "language": "String",
   "seller": "String",
   "totalLicenseCount": 1024,
-  "usedLicenseCount": 1024
+  "usedLicenseCount": 1024,
+  "roleScopeTagIds": [
+    "String"
+  ]
 }
 ```
-
 
 
 

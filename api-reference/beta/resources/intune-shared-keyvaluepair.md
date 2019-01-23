@@ -1,31 +1,33 @@
 ---
 title: keyValuePair リソースの種類
 description: カスタム設定の保存用のキーと値のペア
-author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 9d7b5551bf4ca3237c6a4fc08db51c8e08474c63
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: tfitzmac
+ms.prod: Intune
+ms.openlocfilehash: f31e83c5e53ea4c2873fd2b425cc0e0c02678ea7
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27957901"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29415783"
 ---
 # <a name="keyvaluepair-resource-type"></a>keyValuePair リソースの種類
 
-> **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。
+> **重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
 
-> **注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
+> **注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 カスタム設定の保存用のキーと値のペア
+
 ## <a name="properties"></a>プロパティ
 |プロパティ|型|説明|
 |:---|:---|:---|
-|名前|文字列|キーと値のペアの名前|
+|name|文字列|キーと値のペアの名前|
 |value|文字列|キーと値のペアの値|
 
 ## <a name="relationships"></a>リレーションシップ
 なし
+
 ## <a name="json-representation"></a>JSON 表記
 以下は、リソースの JSON 表記です。
 <!-- {
@@ -40,7 +42,6 @@ ms.locfileid: "27957901"
   "value": "String"
 }
 ```
-
 
 
 

@@ -1,25 +1,26 @@
 ---
 title: DataSharingConsent を更新します。
 description: DataSharingConsent オブジェクトのプロパティを更新します。
-author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: b3893a272e2fc369bf3528bb1bb5878775add521
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: tfitzmac
+ms.prod: Intune
+ms.openlocfilehash: 143e2c655adac2403f49bb92afff2aca30a3653f
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27938567"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29421117"
 ---
 # <a name="update-datasharingconsent"></a>DataSharingConsent を更新します。
 
-> **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。
+> **重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
 
-> **注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
+> **注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 [DataSharingConsent](../resources/intune-devices-datasharingconsent.md)オブジェクトのプロパティを更新します。
+
 ## <a name="prerequisites"></a>前提条件
-この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
+この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/concepts/permissions-reference.md)」を参照してください。
 
 |アクセス許可の種類|アクセス許可 (特権の大きいものから小さいものへ)|
 |:---|:---|
@@ -49,7 +50,7 @@ PATCH /deviceManagement/dataSharingConsents/{dataSharingConsentId}
 
 |プロパティ|型|説明|
 |:---|:---|:---|
-|ID|String|データ共有同意 Id|
+|id|String|データ共有同意 Id|
 |serviceDisplayName|String|サービス作業の流れの表示名|
 |termsUrl|String|同意の共有データの TermsUrl|
 |付与|Boolean|同意の共有データに付与されている状態|
@@ -63,14 +64,16 @@ PATCH /deviceManagement/dataSharingConsents/{dataSharingConsentId}
 かどうかは成功すると、このメソッドが返されます、`200 OK`応答コードおよび応答の本文に更新された[dataSharingConsent](../resources/intune-devices-datasharingconsent.md)オブジェクトです。
 
 ## <a name="example"></a>例
+
 ### <a name="request"></a>要求
 以下は、要求の例です。
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/dataSharingConsents/{dataSharingConsentId}
 Content-type: application/json
-Content-length: 276
+Content-length: 333
 
 {
+  "@odata.type": "#microsoft.graph.dataSharingConsent",
   "serviceDisplayName": "Service Display Name value",
   "termsUrl": "https://example.com/termsUrl/",
   "granted": true,
@@ -98,7 +101,6 @@ Content-Length: 382
   "grantedByUserId": "Granted By User Id value"
 }
 ```
-
 
 
 

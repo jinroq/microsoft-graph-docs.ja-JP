@@ -4,12 +4,12 @@ description: これらのエンドポイントは、Intune ワークフローの
 localization_priority: Normal
 author: tfitzmac
 ms.prod: intune
-ms.openlocfilehash: 6180868d4aec195afcc037146f475e56a91aa669
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 11ee529edd3d74b5d6fb0c2d9d4e63bada0b0b22
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27952560"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29415433"
 ---
 # <a name="shared-resources-in-microsoft-intune"></a>Microsoft Intune 内の共有リソース
 
@@ -41,6 +41,7 @@ Intune ワークフローとの間は、次のグラフのリソースを共有�
 - [IPv6 の範囲](intune-shared-ipv6range.md)
 - [キー/値のペア](intune-shared-keyvaluepair.md)
 - [MIME コンテンツ](intune-shared-mimecontent.md)
+- [モバイル アプリケーションのトラブルシューティング イベント](intune-shared-mobileapptroubleshootingevent.md)
 - [プロキシ化されたドメイン](intune-shared-proxieddomain.md)
 - [Report](intune-shared-report.md)
 - [レポートのルート](intune-shared-reportroot.md)

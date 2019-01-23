@@ -1,23 +1,24 @@
 ---
 title: depOnboardingSetting リソースの種類
 description: DepOnboardingSetting は、Intune に onboarded をされている Apple の DEP のサービスのインスタンスを表します。 Onboarded サービスのインスタンスを管理、Apple トークンりんごと Intune の間でデータを同期するために使用します。
-author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: e4b45c4a14258fbe53e8cdfd8c5e83b8c858966b
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: tfitzmac
+ms.prod: Intune
+ms.openlocfilehash: 3c0e5bcbdf0a687d4601aa92c8fe0eacdd675cd2
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27970683"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29423770"
 ---
 # <a name="deponboardingsetting-resource-type"></a>depOnboardingSetting リソースの種類
 
-> **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。
+> **重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
 
-> **注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
+> **注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 DepOnboardingSetting は、Intune に onboarded をされている Apple の DEP のサービスのインスタンスを表します。 Onboarded サービスのインスタンスを管理、Apple トークンりんごと Intune の間でデータを同期するために使用します。
+
 ## <a name="methods"></a>メソッド
 |メソッド|戻り値の型|説明|
 |:---|:---|:---|
@@ -35,7 +36,7 @@ DepOnboardingSetting は、Intune に onboarded をされている Apple の DEP
 ## <a name="properties"></a>プロパティ
 |プロパティ|型|説明|
 |:---|:---|:---|
-|ID|String|オブジェクトの UUID|
+|id|String|オブジェクトの UUID|
 |appleIdentifier|String|Apple ID は、現在のトークンを取得するために使用します。|
 |tokenExpirationDateTime|DateTimeOffset|トークンの期限が切れる。|
 |lastModifiedDateTime|DateTimeOffset|Onboarded でした。|
@@ -46,7 +47,6 @@ DepOnboardingSetting は、Intune に onboarded をされている Apple の DEP
 |tokenType|[depTokenType](../resources/intune-enrollment-deptokentype.md)|Dep のトークンの種類を設定を取得または取得します。 可能な値は、`none`、`dep`、`appleSchoolManager` です。|
 |tokenName|String|Dep のトークンの表示名|
 |syncedDeviceCount|Int32|同期されたデバイスの数を取得|
-|defaultProfileDisplayName|String|同期されたデバイスの数を取得|
 |dataSharingConsentGranted|Boolean|アップル Dep のサービスと共有データの許可に同意するもの|
 
 ## <a name="relationships"></a>リレーションシップ
@@ -79,11 +79,9 @@ DepOnboardingSetting は、Intune に onboarded をされている Apple の DEP
   "tokenType": "String",
   "tokenName": "String",
   "syncedDeviceCount": 1024,
-  "defaultProfileDisplayName": "String",
   "dataSharingConsentGranted": true
 }
 ```
-
 
 
 

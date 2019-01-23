@@ -1,25 +1,26 @@
 ---
 title: Windows10EnrollmentCompletionPageConfiguration を更新します。
 description: Windows10EnrollmentCompletionPageConfiguration オブジェクトのプロパティを更新します。
-author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: c2219a2f2e2b5a0717fe6cc7bb954c8af11ebfd6
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: tfitzmac
+ms.prod: Intune
+ms.openlocfilehash: 0c7d3937ac02ae0a16a48bfaeea170310bbc3833
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27959798"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29416245"
 ---
 # <a name="update-windows10enrollmentcompletionpageconfiguration"></a>Windows10EnrollmentCompletionPageConfiguration を更新します。
 
-> **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。
+> **重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
 
-> **注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
+> **注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 [Windows10EnrollmentCompletionPageConfiguration](../resources/intune-onboarding-windows10enrollmentcompletionpageconfiguration.md)オブジェクトのプロパティを更新します。
+
 ## <a name="prerequisites"></a>前提条件
-この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
+この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/concepts/permissions-reference.md)」を参照してください。
 
 |アクセス許可の種類|アクセス許可 (特権の大きいものから小さいものへ)|
 |:---|:---|
@@ -47,22 +48,22 @@ PATCH /deviceManagement/deviceEnrollmentConfigurations/{deviceEnrollmentConfigur
 
 [Windows10EnrollmentCompletionPageConfiguration](../resources/intune-onboarding-windows10enrollmentcompletionpageconfiguration.md)を作成するときに必要なプロパティを次の表に示します。
 
-|プロパティ|種類|説明|
+|プロパティ|型|説明|
 |:---|:---|:---|
-|ID|String|まだ文書化されていません。[deviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md) から継承します|
+|id|String|まだ文書化されていません。[deviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md) から継承します|
 |displayName|String|まだ文書化されていません。[deviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md) から継承します|
 |説明|String|まだ文書化されていません。[deviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md) から継承します|
 |priority|Int32|まだ文書化されていません。[deviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md) から継承します|
 |createdDateTime|DateTimeOffset|まだ文書化されていません。[deviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md) から継承します|
 |lastModifiedDateTime|DateTimeOffset|まだ文書化されていません。[deviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md) から継承します|
 |version|Int32|まだ文書化されていません。[deviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md) から継承します|
-|showInstallationProgress|ブール型|ユーザーにインストールの進行状況の表示と非表示を切り替える|
-|blockDeviceSetupRetryByUser|ブール型|インストールの失敗時にセットアップを再実行するユーザーを許可します。|
-|allowDeviceResetOnInstallFailure|ブール型|許可またはブロック デバイスのインストールの失敗時にリセット|
-|allowLogCollectionOnInstallFailure|ブール型|許可またはブロックのインストールの失敗時にログの収集|
+|showInstallationProgress|Boolean|ユーザーにインストールの進行状況の表示と非表示を切り替える|
+|blockDeviceSetupRetryByUser|Boolean|インストールの失敗時にセットアップを再実行するユーザーを許可します。|
+|allowDeviceResetOnInstallFailure|Boolean|許可またはブロック デバイスのインストールの失敗時にリセット|
+|allowLogCollectionOnInstallFailure|Boolean|許可またはブロックのインストールの失敗時にログの収集|
 |customErrorMessage|String|インストールの失敗時に表示するカスタム エラー メッセージを設定します。|
 |installProgressTimeoutInMinutes|Int32|インストールの進行状況のタイムアウトを分単位で設定します。|
-|allowDeviceUseOnInstallFailure|ブール型|インストールの失敗時にデバイスを使用するユーザーを許可します。|
+|allowDeviceUseOnInstallFailure|Boolean|インストールの失敗時にデバイスを使用するユーザーを許可します。|
 |selectedMobileAppIds|String コレクション|インストールのステータスを追跡するために選択したアプリケーション|
 
 
@@ -71,18 +72,19 @@ PATCH /deviceManagement/deviceEnrollmentConfigurations/{deviceEnrollmentConfigur
 かどうかは成功すると、このメソッドが返されます、`200 OK`応答コードおよび応答の本文に更新された[windows10EnrollmentCompletionPageConfiguration](../resources/intune-onboarding-windows10enrollmentcompletionpageconfiguration.md)オブジェクトです。
 
 ## <a name="example"></a>例
+
 ### <a name="request"></a>要求
 以下は、要求の例です。
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/deviceEnrollmentConfigurations/{deviceEnrollmentConfigurationId}
 Content-type: application/json
-Content-length: 562
+Content-length: 583
 
 {
+  "@odata.type": "#microsoft.graph.windows10EnrollmentCompletionPageConfiguration",
   "displayName": "Display Name value",
   "description": "Description value",
   "priority": 8,
-  "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
   "version": 7,
   "showInstallationProgress": true,
   "blockDeviceSetupRetryByUser": true,
@@ -125,7 +127,6 @@ Content-Length: 755
   ]
 }
 ```
-
 
 
 

@@ -1,25 +1,26 @@
 ---
 title: eBookInstallSummary の更新
 description: eBookInstallSummary オブジェクトのプロパティを更新します。
-author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 9a16e670fdb68283539b14085200b761aae2462b
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: tfitzmac
+ms.prod: Intune
+ms.openlocfilehash: 85e94a16799b9ee56c28041549b1d21692013599
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27934381"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29421166"
 ---
 # <a name="update-ebookinstallsummary"></a>eBookInstallSummary の更新
 
-> **重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。 実稼働アプリケーションでの、これらの API の使用はサポートされていません。
+> **重要な:**[Microsoft Graph で/beta のバージョンの Api は予告なしに変更されることがあります。 実稼働アプリケーションでこれらの API を使用することは、サポートされていません。
 
-> **注:** Intune のコントロールおよびポリシーの構成に Microsoft Graph API を使用するには、これまでどおりに顧客が Intune サービスの[適切なライセンス](https://go.microsoft.com/fwlink/?linkid=839381)を持っている必要があります。
+> **注:** Intune の Microsoft グラフ API では、テナントの[Intune のアクティブなライセンス](https://go.microsoft.com/fwlink/?linkid=839381)が必要です。
 
 [eBookInstallSummary](../resources/intune-books-ebookinstallsummary.md) オブジェクトのプロパティを更新します。
+
 ## <a name="prerequisites"></a>前提条件
-この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
+この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/concepts/permissions-reference.md)」を参照してください。
 
 |アクセス許可の種類|アクセス許可 (特権の大きいものから小さいものへ)|
 |:---|:---|
@@ -47,9 +48,9 @@ PATCH /deviceAppManagement/managedEBooks/{managedEBookId}/installSummary
 
 次の表に、[eBookInstallSummary](../resources/intune-books-ebookinstallsummary.md) の作成時に必要なプロパティを示します。
 
-|プロパティ|種類|説明|
+|プロパティ|型|説明|
 |:---|:---|:---|
-|ID|String|エンティティのキー。|
+|id|String|エンティティのキー。|
 |installedDeviceCount|Int32|このブックが正常にインストールされたデバイスの数。|
 |failedDeviceCount|Int32|このブックのインストールが失敗したデバイスの数。|
 |notInstalledDeviceCount|Int32|このブックがインストールされていないデバイスの数。|
@@ -63,14 +64,16 @@ PATCH /deviceAppManagement/managedEBooks/{managedEBookId}/installSummary
 成功した場合、このメソッドは `200 OK` 応答コードと、更新された [eBookInstallSummary](../resources/intune-books-ebookinstallsummary.md) オブジェクトを応答本文で返します。
 
 ## <a name="example"></a>例
+
 ### <a name="request"></a>要求
 以下は、要求の例です。
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceAppManagement/managedEBooks/{managedEBookId}/installSummary
 Content-type: application/json
-Content-length: 178
+Content-length: 236
 
 {
+  "@odata.type": "#microsoft.graph.eBookInstallSummary",
   "installedDeviceCount": 4,
   "failedDeviceCount": 1,
   "notInstalledDeviceCount": 7,
@@ -98,7 +101,6 @@ Content-Length: 285
   "notInstalledUserCount": 5
 }
 ```
-
 
 
 
