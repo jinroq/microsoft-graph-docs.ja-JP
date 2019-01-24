@@ -3,18 +3,28 @@ title: Microsoft Graph の変更ログ
 description: この変更ログでは、Microsoft Graph と、v1.0 およびベータ版のエンドポイント Microsoft Graph API の変更内容について説明します。
 author: jthake-msft
 localization_priority: Priority
-ms.openlocfilehash: ae38218b60e4ca0b69ac6a42b46a384ab6347c54
-ms.sourcegitcommit: d9d8b908061b3680e8a52790a6c9aaf8e51ceea0
+ms.openlocfilehash: 5d7783595fcd3f8c99bae046ccc9b78dcd7cf24d
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28328042"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29405290"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Microsoft Graph の変更ログ
 
 この変更ログでは、Microsoft Graph と、v1.0 およびベータ版のエンドポイント Microsoft Graph API の変更内容について説明します。
 
 Microsoft Graph API に関する既知の問題の詳細については、「[既知の問題](known-issues.md)」を参照してください。
+
+## <a name="january-2019"></a>2019 年 1 月
+
+### <a name="microsoft-intune-apis"></a>Microsoft Intune API
+
+|変更の種類|バージョン|説明|
+|:---|:---|:---|
+|追加|ベータ版|新しいエンティティを追加しました。<br/>[appleVppTokenTroubleshootingEvent](/graph/api/resources/
+intune-troubleshooting-applevpptokentroubleshootingevent?view=graph-rest-beta)<br/>[appLogCollectionRequest](/graph/api/resources/ intune-devices-applogcollectionrequest?view=graph-rest-beta)<br/>[windowsUpdateState](/graph/api/resources/ intune-deviceconfig-windowsupdatestate?view=graph-rest-beta)<br/>| |Addition|beta|追加された新しい複合型:<br/>[appLogCollectionDownloadDetails](/graph/api/resources/ intune-devices-applogcollectiondownloaddetails?view=graph-rest-beta)<br/>**deviceManagementTroubleshootingErrorDetails**<br/>[deviceManagementTroubleshootingErrorResource](/graph/api/resources/ intune-troubleshooting-devicemanagementtroubleshootingerrorresource?view=graph-rest-beta)<br/>[win32LobAppAssignmentSettings](/graph/api/resources/ intune-apps-win32lobappassignmentsettings?view=graph-rest-beta)<br/>| |Addition|beta|追加された新しい列挙型:<br/>[appLogDecryptionAlgorithm](/graph/api/resources/ intune-devices-applogdecryptionalgorithm?view=graph-rest-beta)<br/>[appLogUploadState](/graph/api/resources/ intune-devices-apploguploadstate?view=graph-rest-beta)<br/>[win32LobAppNotification](/graph/api/resources/ intune-apps-win32lobappnotification?view=graph-rest-beta)<br/>[windowsUpdateStatus](/graph/api/resources/ intune-deviceconfig-windowsupdatestatus?view=graph-rest-beta)<br/>| |Addition|beta|**createDownloadUrl** アクションを以下に追加: [appLogCollectionRequest](/graph/api/resources/ intune-devices-applogcollectionrequest?view=graph-rest-beta) | |Deletion|beta|以下のエンティティを削除:<br/>**deviceManagementApplicabilityRuleOsEdition**<br/>**deviceManagementApplicabilityRuleOsVersion**<br/>| |Addition|beta| **passwordSignInFailureCountBeforeFactoryReset** プロパティを以下に追加: [androidCompliancePolicy](/graph/api/resources/ intune-deviceconfig-androidcompliancepolicy?view=graph-rest-beta) エンティティ| |Addition|beta| **passwordSignInFailureCountBeforeFactoryReset** プロパティを以下に追加: [androidForWorkCompliancePolicy](/graph/api/resources/ intune-deviceconfig-androidforworkcompliancepolicy?view=graph-rest-beta) エンティティ| |Addition|beta| **passwordSignInFailureCountBeforeFactoryReset** プロパティを以下に追加: [androidWorkProfileCompliancePolicy](/graph/api/resources/ intune-deviceconfig-androidworkprofilecompliancepolicy?view=graph-rest-beta) エンティティ| |Deletion|beta| **defaultProfileDisplayName** プロパティを以下から削除: [depOnboardingSetting](/graph/api/resources/ intune-enrollment-deponboardingsetting?view=graph-rest-beta) エンティティ| |Addition|beta|**runAs32Bit** プロパティを以下に追加: [deviceManagementScript](/graph/api/resources/ intune-devices-devicemanagementscript?view=graph-rest-beta) エンティティ| |Addition|beta| **troubleshootingErrorDetails**、 **eventName** および **additionalInformation** プロパティを以下に追加: [deviceManagementTroubleshootingEvent](/graph/api/resources/ intune-troubleshooting-devicemanagementtroubleshootingevent?view=graph-rest-beta) エンティティ| |Change|beta| [macOSCertificateProfileBase] で以下のプロパティを変更: (/graph/api/resources/ intune-deviceconfig-macoscertificateprofilebase?view=graph-rest-beta) エンティティ:<br/>**subjectAlternativeNameType**を必須からオプションに変更しました<br/>| |Addition|beta|**certificateStore** と **customSubjectAlternativeNames** プロパティを以下に追加: [macOSScepCertificateProfile](/graph/api/resources/ intune-deviceconfig-macosscepcertificateprofile?view=graph-rest-beta) エンティティ| |Addition|beta|**officeConfigurationXml** プロパティを以下に追加: [officeSuiteApp](/graph/api/resources/ intune-apps-officesuiteapp?view=graph-rest-beta) エンティティ| |Addition|beta|**createdDateTime** プロパティを以下に追加: [organization](/graph/api/resources/ intune-onboarding-organization?view=graph-rest-beta) エンティティ| |Addition|beta|**bitLockerAllowStandardUserEncryption** プロパティを以下に追加: [windows10EndpointProtectionConfiguration](/graph/api/resources/ intune-deviceconfig-windows10endpointprotectionconfiguration?view=graph-rest-beta) エンティティ| |Deletion|beta|**localSecurityOptionsEnableAdministratorAccount**、**localSecurityOptionsEnableGuestAccount**、および**lanManagerWorkstationEnableInsecureGuestLogons** プロパティを以下から削除: properties from the [windows10EndpointProtectionConfiguration](/graph/api/resources/ intune-deviceconfig-windows10endpointprotectionconfiguration?view=graph-rest-beta) エンティティ| |Addition|beta|**useSecurityKeyForSignin** プロパティを以下に追加: [windowsIdentityProtectionConfiguration](/graph/api/resources/ intune-deviceconfig-windowsidentityprotectionconfiguration?view=graph-rest-beta) エンティティ| |Addition|beta|**mobileAppTroubleshootingEvents** ナビゲーション プロパティを以下に追加: [deviceManagement](/graph/api/resources/ intune-androidforwork-devicemanagement?view=graph-rest-beta) エンティティ| |Addition|beta|**appLogCollectionRequests** ナビゲーション プロパティを以下に追加: [mobileAppTroubleshootingEvent](/graph/api/resources/ intune-devices-mobileapptroubleshootingevent?view=graph-rest-beta) エンティティ|
+
 
 ## <a name="december-2018"></a>2018 年 12 月
 
