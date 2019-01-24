@@ -1,0 +1,248 @@
+name: Graph のドキュメント
+metadata: {}
+items:
+  - name: Microsoft Graph の概要
+    href: overview.md
+    expanded: true
+    items:
+      - name: 理解
+        expanded: true
+        items:
+          - name: Microsoft Graph のサービス
+            href: overview-major-services.md
+            expanded: true
+            items:
+              - name: 連絡可能なユーザー
+                href: users-you-can-reach.md
+                items:
+                  - name: 国内クラウドの展開
+                    href: deployments.md
+                  - name: ハイブリッド展開 (プレビュー)
+                    href: hybrid-rest-support.md
+              - name: バージョン管理とサポート
+                href: versioning-and-support.md
+              - name: 利用規約
+                href: 'https://developer.microsoft.com/graph/terms-of-use'
+          - name: Microsoft Graph データ接続 (プレビュー)
+            href: data-connect-overview.md
+          - name: チュートリアル
+            href: tutorials.md
+            items:
+              - name: Angular
+                href: /graph/tutorials/angular
+              - name: ASP.NET
+                href: /graph/tutorials/aspnet
+              - name: Microsoft Flow
+                href: /graph/tutorials/flow
+              - name: Node.js
+                href: /graph/tutorials/node
+              - name: PHP
+                href: /graph/tutorials/php
+              - name: Python
+                href: /graph/tutorials/python
+              - name: Ruby
+                href: /graph/tutorials/ruby
+              - name: React
+                href: /graph/tutorials/react
+              - name: UWP
+                href: /graph/tutorials/uwp
+      - name: 学習
+        expanded: true
+        items:
+          - name: ユーザー
+            href: azuread-users-concept-overview.md
+          - name: グループ
+            href: office365-groups-concept-overview.md
+          - name: 予定表
+            href: outlook-calendar-concept-overview.md
+            items:
+              - name: 会議の日時を検索する
+                href: findmeetingtimes-example.md
+              - name: 空き時間スケジュールを取得する
+                href: outlook-get-free-busy-schedule.md
+              - name: 定期的なイベントをスケジュールする
+                href: outlook-schedule-recurring-events.md
+              - name: 共有イベントを取得する
+                href: outlook-get-shared-events-calendars.md
+              - name: 不変 ID (プレビュー)
+                href: outlook-immutable-id.md
+          - name: クロスデバイス エクスペリエンス
+            href: cross-device-concept-overview.md
+            items:
+              - name: アクティビティ フィード
+                href: activity-feed-concept-overview.md
+              - name: デバイスのリレー (プレビュー)
+                href: device-relay-concept-overview.md
+              - name: 通知 (プレビュー)
+                href: notifications-concept-overview.md
+              - name: デバイス間のアプリを構築する
+                href: cross-device-app-configuration.md
+          - name: 顧客の予約 (プレビュー)
+            href: booking-concept-overview.md
+          - name: データ アクセス (プレビュー)
+            href: data-connect-concept-overview.md
+            items:
+              - name: 作業の開始
+                href: data-connect-get-started.md
+          - name: デバイスとアプリ
+            href: intune-concept-overview.md
+          - name: 教育
+            href: education-concept-overview.md
+          - name: ファイル
+            href: onedrive-concept-overview.md
+          - name: ID とアクセス
+            href: azuread-identity-access-management-concept-overview.md
+          - name: メール
+            href: outlook-mail-concept-overview.md
+            items:
+              - name: メッセージングを自動化する
+                href: outlook-create-send-messages.md
+              - name: メッセージを整理する
+                href: outlook-organize-messages.md
+              - name: 共有メッセージを取得する
+                href: outlook-share-messages-folders.md
+              - name: 不変 ID (プレビュー)
+                href: outlook-immutable-id.md
+              - name: 別のユーザーからのメールを送信する
+                href: outlook-send-mail-from-other-user.md
+          - name: 備考
+            href: integrate-with-onenote.md
+            items:
+              - name: OneNote のコンテンツを入手する
+                href: onenote-get-content.md
+              - name: OneNote クライアントを開く
+                href: open-onenote-client.md
+              - name: ページを作成する
+                href: onenote-create-page.md
+              - name: ページ コンテンツを更新する
+                href: onenote-update-page.md
+              - name: 画像、ビデオ、ファイルを追加する
+                href: onenote-images-files.md
+              - name: 絶対配置要素を作成する
+                href: onenote-abs-pos.md
+              - name: データを抽出する
+                href: onenote-extract-data.md
+              - name: ノート シールを使用する
+                href: onenote-note-tags.md
+              - name: リソース
+              - name: 入力 HTML と出力 HTML
+                href: onenote-input-output-html.md
+              - name: ベスト プラクティス
+                href: onenote-best-practices.md
+              - name: ブランドのガイドライン
+                href: onenote-branding.md
+              - name: エラー コード
+                href: onenote-error-codes.md
+          - name: 個人用連絡先
+            href: outlook-contacts-concept-overview.md
+            items:
+              - name: 共有の連絡先を取得する
+                href: outlook-get-shared-contacts-folders.md
+              - name: 不変 ID (プレビュー)
+                href: outlook-immutable-id.md
+          - name: レポート
+            href: reportroot-concept-overview.md
+          - name: セキュリティ
+            href: security-concept-overview.md
+            items:
+              - name: データ フロー
+                href: security-dataflow.md
+              - name: 認可
+                href: security-authorization.md
+              - name: SIEM との統合
+                href: security-siemintegration.md
+                items:
+                  - name: Splunk
+                    href: security-splunk-siemintegration.md
+                  - name: QRadar
+                    href: security-qradar-siemintegration.md
+          - name: サイトとリスト
+            href: sharepoint-concept-overview.md
+          - name: ソーシャル インテリジェンス
+            href: social-intel-concept-overview.md
+            items:
+              - name: 関係者の情報を取得する
+                href: people-example.md
+          - name: タスクとプラン
+            href: planner-concept-overview.md
+          - name: チームワーク
+            href: teams-concept-overview.md
+            items:
+              - name: グループとチームを作成します。
+                href: teams-create-group-and-team.md
+              - name: すべてのチームをリストします。
+                href: teams-list-all-teams.md
+              - name: 組み込みタブを設定します。
+                href: teams-configuring-builtin-tabs.md
+          - name: ブックとグラフ
+            href: excel-concept-overview.md
+            items:
+              - name: セッションを管理する
+                href: excel-manage-sessions.md
+              - name: グラフのイメージを表示する
+                href: excel-display-chart-image.md
+              - name: ブックの関数を使用する
+                href: excel-use-functions.md
+              - name: 範囲の書式を更新する
+                href: excel-update-range-format.md
+              - name: ブックにデータを書き込む
+                href: excel-write-to-workbook.md
+      - name: 開発
+        expanded: true
+        items:
+          - name: 認証トークンを取得する
+            href: auth-overview.md
+            items:
+              - name: アプリの登録
+                href: auth-register-app-v2.md
+              - name: ユーザーの代わりにアクセスを取得
+                href: auth-v2-user.md
+              - name: ユーザーなしでアクセスを取得
+                href: auth-v2-service.md
+              - name: アクセス許可
+                href: permissions-reference.md
+              - name: アプリケーション アクセス (CPS) の管理
+                href: auth-cloudsolutionprovider.md
+          - name: API の使用
+            href: use-the-api.md
+            items:
+              - name: ページング
+                href: paging.md
+              - name: クエリ パラメーターの使用
+                href: query-parameters.md
+              - name: バッチ要求
+                href: json-batching.md
+              - name: 調整
+                href: throttling.md
+              - name: 変更通知
+                href: webhooks.md
+              - name: 変更履歴の記録
+                href: delta-query-overview.md
+                items:
+                  - name: イベントへの変更の取得 (例)
+                    href: delta-query-events.md
+                  - name: グループへの変更の取得 (例)
+                    href: delta-query-groups.md
+                  - name: メッセージへの変更の取得 (例)
+                    href: delta-query-messages.md
+                  - name: ユーザーへの変更の取得 (例)
+                    href: delta-query-users.md
+              - name: カスタム データの追加
+                href: extensibility-overview.md
+                items:
+                  - name: オープン拡張機能の使用 (例)
+                    href: extensibility-open-users.md
+                  - name: スキーマ拡張機能の使用 (例)
+                    href: extensibility-schema-groups.md
+              - name: ベスト プラクティス
+                href: best-practices-concept.md
+              - name: 既知の問題
+                href: known-issues.md
+              - name: 変更ログ
+                href: changelog.md
+              - name: エラー
+                href: errors.md
+      - name: v1.0 参照
+        href: /graph/api/overview?toc=./ref/toc.json&view=graph-rest-1.0
+      - name: ベータ参照
+        href: /graph/api/overview?toc=./ref/toc.json&view=graph-rest-beta
