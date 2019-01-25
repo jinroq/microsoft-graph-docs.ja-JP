@@ -4,53 +4,53 @@ description: プロパティと、 **riskyUsers**オブジェクトの関係を�
 localization_priority: Normal
 author: cloudhandler
 ms.prod: security
-ms.openlocfilehash: f2763a963d27bbb0a2fc1515a36aec199bd29f19
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 5c0c0557a5cd84312ef9d6381d8cf3018ab8ce7d
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27953442"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29519319"
 ---
-# <a name="list-riskyusers"></a><span data-ttu-id="e7a33-103">リスト riskyUsers</span><span class="sxs-lookup"><span data-stu-id="e7a33-103">List riskyUsers</span></span>
+# <a name="list-riskyusers"></a><span data-ttu-id="5d491-103">リスト riskyUsers</span><span class="sxs-lookup"><span data-stu-id="5d491-103">List riskyUsers</span></span>
 
-> <span data-ttu-id="e7a33-104">**重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。</span><span class="sxs-lookup"><span data-stu-id="e7a33-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="e7a33-105">実稼働アプリケーションでの、これらの API の使用はサポートされていません。</span><span class="sxs-lookup"><span data-stu-id="e7a33-105">Use of these APIs in production applications is not supported.</span></span>
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="e7a33-106">プロパティと、 **riskyUsers**オブジェクトの関係を取得します。</span><span class="sxs-lookup"><span data-stu-id="e7a33-106">Retrieve the properties and relationships of a **riskyUsers** object.</span></span>
+<span data-ttu-id="5d491-104">プロパティと、 **riskyUsers**オブジェクトの関係を取得します。</span><span class="sxs-lookup"><span data-stu-id="5d491-104">Retrieve the properties and relationships of a **riskyUsers** object.</span></span>
 
-> <span data-ttu-id="e7a33-107">**注:** この API には、Azure AD プレミアム P2 ライセンスが必要です。</span><span class="sxs-lookup"><span data-stu-id="e7a33-107">**Note:** This API requires an Azure AD Premium P2 license.</span></span>
+> <span data-ttu-id="5d491-105">**注:** この API には、Azure AD プレミアム P2 ライセンスが必要です。</span><span class="sxs-lookup"><span data-stu-id="5d491-105">**Note:** This API requires an Azure AD Premium P2 license.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="e7a33-108">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="e7a33-108">Permissions</span></span>
-<span data-ttu-id="e7a33-p102">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="e7a33-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="5d491-106">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="5d491-106">Permissions</span></span>
+<span data-ttu-id="5d491-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="5d491-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="e7a33-111">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="e7a33-111">Permission type</span></span>      | <span data-ttu-id="e7a33-112">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="e7a33-112">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="5d491-109">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="5d491-109">Permission type</span></span>      | <span data-ttu-id="5d491-110">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="5d491-110">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="e7a33-113">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="e7a33-113">Delegated (work or school account)</span></span> | <span data-ttu-id="e7a33-114">IdentityriskyUser.Read.All</span><span class="sxs-lookup"><span data-stu-id="e7a33-114">IdentityriskyUser.Read.All</span></span>    |
-|<span data-ttu-id="e7a33-115">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="e7a33-115">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="e7a33-116">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="e7a33-116">Not supported.</span></span>    |
-|<span data-ttu-id="e7a33-117">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="e7a33-117">Application</span></span> | <span data-ttu-id="e7a33-118">IdentityriskyUser.Read.All</span><span class="sxs-lookup"><span data-stu-id="e7a33-118">IdentityriskyUser.Read.All</span></span> |
+|<span data-ttu-id="5d491-111">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="5d491-111">Delegated (work or school account)</span></span> | <span data-ttu-id="5d491-112">IdentityRiskyUser.Read.All</span><span class="sxs-lookup"><span data-stu-id="5d491-112">IdentityriskyUser.Read.All</span></span>    |
+|<span data-ttu-id="5d491-113">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="5d491-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="5d491-114">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="5d491-114">Not supported.</span></span>    |
+|<span data-ttu-id="5d491-115">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="5d491-115">Application</span></span> | <span data-ttu-id="5d491-116">IdentityRiskyUser.Read.All</span><span class="sxs-lookup"><span data-stu-id="5d491-116">IdentityriskyUser.Read.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="e7a33-119">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="e7a33-119">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="5d491-117">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="5d491-117">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /riskyUsers/{query}
 ```
-## <a name="optional-query-parameters"></a><span data-ttu-id="e7a33-120">オプションのクエリ パラメーター</span><span class="sxs-lookup"><span data-stu-id="e7a33-120">Optional query parameters</span></span>
-<span data-ttu-id="e7a33-121">このメソッドをサポートしています`$filter`クエリの応答をカスタマイズします。</span><span class="sxs-lookup"><span data-stu-id="e7a33-121">This method supports `$filter` to customize the query response.</span></span> <span data-ttu-id="e7a33-122">このトピックで後述する例を参照してください。</span><span class="sxs-lookup"><span data-stu-id="e7a33-122">See the example later in this topic.</span></span> 
+## <a name="optional-query-parameters"></a><span data-ttu-id="5d491-118">省略可能なクエリ パラメーター</span><span class="sxs-lookup"><span data-stu-id="5d491-118">Optional query parameters</span></span>
+<span data-ttu-id="5d491-119">このメソッドをサポートしています`$filter`クエリの応答をカスタマイズします。</span><span class="sxs-lookup"><span data-stu-id="5d491-119">This method supports `$filter` to customize the query response.</span></span> <span data-ttu-id="5d491-120">このトピックで後述する例を参照してください。</span><span class="sxs-lookup"><span data-stu-id="5d491-120">See the example later in this topic.</span></span> 
 
-## <a name="request-headers"></a><span data-ttu-id="e7a33-123">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="e7a33-123">Request headers</span></span>
-| <span data-ttu-id="e7a33-124">名前</span><span class="sxs-lookup"><span data-stu-id="e7a33-124">Name</span></span>      |<span data-ttu-id="e7a33-125">説明</span><span class="sxs-lookup"><span data-stu-id="e7a33-125">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="5d491-121">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="5d491-121">Request headers</span></span>
+| <span data-ttu-id="5d491-122">名前</span><span class="sxs-lookup"><span data-stu-id="5d491-122">Name</span></span>      |<span data-ttu-id="5d491-123">説明</span><span class="sxs-lookup"><span data-stu-id="5d491-123">Description</span></span>|
 |:----------|:----------|
-| <span data-ttu-id="e7a33-126">Authorization</span><span class="sxs-lookup"><span data-stu-id="e7a33-126">Authorization</span></span>  | <span data-ttu-id="e7a33-p104">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="e7a33-p104">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="e7a33-129">Workbook-Session-Id</span><span class="sxs-lookup"><span data-stu-id="e7a33-129">Workbook-Session-Id</span></span>  | <span data-ttu-id="e7a33-p105">変更を保持するかどうかを決定するブック セッション ID。省略可能。</span><span class="sxs-lookup"><span data-stu-id="e7a33-p105">Workbook session Id that determines if changes are persisted or not. Optional.</span></span>|
+| <span data-ttu-id="5d491-124">Authorization</span><span class="sxs-lookup"><span data-stu-id="5d491-124">Authorization</span></span>  | <span data-ttu-id="5d491-p103">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="5d491-p103">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="5d491-127">Workbook-Session-Id</span><span class="sxs-lookup"><span data-stu-id="5d491-127">Workbook-Session-Id</span></span>  | <span data-ttu-id="5d491-p104">変更を保持するかどうかを決定するブック セッション ID。省略可能。</span><span class="sxs-lookup"><span data-stu-id="5d491-p104">Workbook session Id that determines if changes are persisted or not. Optional.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="e7a33-132">要求本文</span><span class="sxs-lookup"><span data-stu-id="e7a33-132">Request body</span></span>
-<span data-ttu-id="e7a33-133">このメソッドには、要求本文を指定しません。</span><span class="sxs-lookup"><span data-stu-id="e7a33-133">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="5d491-130">要求本文</span><span class="sxs-lookup"><span data-stu-id="5d491-130">Request body</span></span>
+<span data-ttu-id="5d491-131">このメソッドには、要求本文を指定しません。</span><span class="sxs-lookup"><span data-stu-id="5d491-131">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="e7a33-134">応答</span><span class="sxs-lookup"><span data-stu-id="e7a33-134">Response</span></span>
+## <a name="response"></a><span data-ttu-id="5d491-132">応答</span><span class="sxs-lookup"><span data-stu-id="5d491-132">Response</span></span>
 
-<span data-ttu-id="e7a33-135">かどうかは成功すると、このメソッドが返されます、 `200 OK` 、応答の本体で応答コードと[identityRiskEvent](../resources/identityriskevent.md)のオブジェクトです。</span><span class="sxs-lookup"><span data-stu-id="e7a33-135">If successful, this method returns a `200 OK` response code and [identityRiskEvent](../resources/identityriskevent.md) object in the response body.</span></span>
-## <a name="example"></a><span data-ttu-id="e7a33-136">例</span><span class="sxs-lookup"><span data-stu-id="e7a33-136">Example</span></span>
-##### <a name="request-1"></a><span data-ttu-id="e7a33-137">要求 1</span><span class="sxs-lookup"><span data-stu-id="e7a33-137">Request 1</span></span>
-<span data-ttu-id="e7a33-138">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="e7a33-138">Here is an example of the request.</span></span>
+<span data-ttu-id="5d491-133">かどうかは成功すると、このメソッドが返されます、 `200 OK` 、応答の本体で応答コードと[identityRiskEvent](../resources/identityriskevent.md)のオブジェクトです。</span><span class="sxs-lookup"><span data-stu-id="5d491-133">If successful, this method returns a `200 OK` response code and [identityRiskEvent](../resources/identityriskevent.md) object in the response body.</span></span>
+## <a name="example"></a><span data-ttu-id="5d491-134">例</span><span class="sxs-lookup"><span data-stu-id="5d491-134">Example</span></span>
+##### <a name="request-1"></a><span data-ttu-id="5d491-135">要求 1</span><span class="sxs-lookup"><span data-stu-id="5d491-135">Request 1</span></span>
+<span data-ttu-id="5d491-136">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="5d491-136">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "get_identityriskevent"
@@ -58,8 +58,8 @@ GET /riskyUsers/{query}
 ```http
 GET https://graph.microsoft.com/beta/riskyUsers
 ```
-##### <a name="response-1"></a><span data-ttu-id="e7a33-139">応答 1</span><span class="sxs-lookup"><span data-stu-id="e7a33-139">Response 1</span></span>
-<span data-ttu-id="e7a33-140">以下は、応答の例です。</span><span class="sxs-lookup"><span data-stu-id="e7a33-140">Here is an example of the response.</span></span>
+##### <a name="response-1"></a><span data-ttu-id="5d491-137">応答 1</span><span class="sxs-lookup"><span data-stu-id="5d491-137">Response 1</span></span>
+<span data-ttu-id="5d491-138">以下は、応答の例です。</span><span class="sxs-lookup"><span data-stu-id="5d491-138">Here is an example of the response.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -89,8 +89,8 @@ HTTP/1.1 200 OK
   "section": "documentation",
   "tocPath": ""
 }-->
-##### <a name="request-2"></a><span data-ttu-id="e7a33-141">要求 2</span><span class="sxs-lookup"><span data-stu-id="e7a33-141">Request 2</span></span>
-<span data-ttu-id="e7a33-142">次の例を使用する方法を示しています`$filter`コレクションを取得する、riskyUser の集計が危険度は中です。</span><span class="sxs-lookup"><span data-stu-id="e7a33-142">The following example shows how to use `$filter` to get the collection of riskyUser whose aggregate risk level is Medium.</span></span>
+##### <a name="request-2"></a><span data-ttu-id="5d491-139">要求 2</span><span class="sxs-lookup"><span data-stu-id="5d491-139">Request 2</span></span>
+<span data-ttu-id="5d491-140">次の例を使用する方法を示しています`$filter`コレクションを取得する、riskyUser の集計が危険度は中です。</span><span class="sxs-lookup"><span data-stu-id="5d491-140">The following example shows how to use `$filter` to get the collection of riskyUser whose aggregate risk level is Medium.</span></span>
 <!-- {
   "blockType": "request",
   "name": "list_riskyusers"
@@ -98,7 +98,7 @@ HTTP/1.1 200 OK
 ```http
 GET https://graph.microsoft.com/beta/riskyUsers?$filter=riskLevel eq microsoft.graph.riskLevel'medium'
 ```
-##### <a name="response-2"></a><span data-ttu-id="e7a33-143">応答 2</span><span class="sxs-lookup"><span data-stu-id="e7a33-143">Response 2</span></span>
+##### <a name="response-2"></a><span data-ttu-id="5d491-141">応答 2</span><span class="sxs-lookup"><span data-stu-id="5d491-141">Response 2</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -122,10 +122,15 @@ HTTP/1.1 200 OK
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Get riskyUsers",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/riskyusers-list.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

@@ -2,22 +2,22 @@
 title: pageLinks リソースの種類
 description: OneNote のページを開くためのリンクです。
 localization_priority: Normal
-ms.openlocfilehash: 9bee1b4d3d327118dbf1deec83a37787bd4b18e2
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: 07c89d99b5731eccd57bec79c25d7d97509c54a0
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27832628"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29523828"
 ---
-# <a name="pagelinks-resource-type"></a><span data-ttu-id="78fda-103">pageLinks リソースの種類</span><span class="sxs-lookup"><span data-stu-id="78fda-103">pageLinks resource type</span></span>
+# <a name="pagelinks-resource-type"></a><span data-ttu-id="0751d-103">pageLinks リソースの種類</span><span class="sxs-lookup"><span data-stu-id="0751d-103">pageLinks resource type</span></span>
 
-> <span data-ttu-id="78fda-104">**重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。</span><span class="sxs-lookup"><span data-stu-id="78fda-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="78fda-105">実稼働アプリケーションでの、これらの API の使用はサポートされていません。</span><span class="sxs-lookup"><span data-stu-id="78fda-105">Use of these APIs in production applications is not supported.</span></span>
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="78fda-106">OneNote のページを開くためのリンクです。</span><span class="sxs-lookup"><span data-stu-id="78fda-106">Links for opening a OneNote page.</span></span>
+<span data-ttu-id="0751d-104">OneNote のページを開くためのリンクです。</span><span class="sxs-lookup"><span data-stu-id="0751d-104">Links for opening a OneNote page.</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="78fda-107">JSON 表記</span><span class="sxs-lookup"><span data-stu-id="78fda-107">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="0751d-105">JSON 表記</span><span class="sxs-lookup"><span data-stu-id="0751d-105">JSON representation</span></span>
 
-<span data-ttu-id="78fda-108">以下は、リソースの JSON 表記です。</span><span class="sxs-lookup"><span data-stu-id="78fda-108">Here is a JSON representation of the resource.</span></span>
+<span data-ttu-id="0751d-106">以下は、リソースの JSON 表記です。</span><span class="sxs-lookup"><span data-stu-id="0751d-106">Here is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -34,18 +34,23 @@ ms.locfileid: "27832628"
 }
 
 ```
-## <a name="properties"></a><span data-ttu-id="78fda-109">プロパティ</span><span class="sxs-lookup"><span data-stu-id="78fda-109">Properties</span></span>
-| <span data-ttu-id="78fda-110">プロパティ</span><span class="sxs-lookup"><span data-stu-id="78fda-110">Property</span></span>     | <span data-ttu-id="78fda-111">種類</span><span class="sxs-lookup"><span data-stu-id="78fda-111">Type</span></span>   |<span data-ttu-id="78fda-112">説明</span><span class="sxs-lookup"><span data-stu-id="78fda-112">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="0751d-107">プロパティ</span><span class="sxs-lookup"><span data-stu-id="0751d-107">Properties</span></span>
+| <span data-ttu-id="0751d-108">プロパティ</span><span class="sxs-lookup"><span data-stu-id="0751d-108">Property</span></span>     | <span data-ttu-id="0751d-109">型</span><span class="sxs-lookup"><span data-stu-id="0751d-109">Type</span></span>   |<span data-ttu-id="0751d-110">説明</span><span class="sxs-lookup"><span data-stu-id="0751d-110">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="78fda-113">oneNoteClientUrl</span><span class="sxs-lookup"><span data-stu-id="78fda-113">oneNoteClientUrl</span></span>|[<span data-ttu-id="78fda-114">externalLink</span><span class="sxs-lookup"><span data-stu-id="78fda-114">externalLink</span></span>](externallink.md)|<span data-ttu-id="78fda-115">OneNote のネイティブ クライアントでページを開きます (インストールされている場合)。</span><span class="sxs-lookup"><span data-stu-id="78fda-115">Opens the page in the OneNote native client if it's installed.</span></span>|
-|<span data-ttu-id="78fda-116">oneNoteWebUrl</span><span class="sxs-lookup"><span data-stu-id="78fda-116">oneNoteWebUrl</span></span>|[<span data-ttu-id="78fda-117">externalLink</span><span class="sxs-lookup"><span data-stu-id="78fda-117">externalLink</span></span>](externallink.md)|<span data-ttu-id="78fda-118">OneNote Online でページを開きます。</span><span class="sxs-lookup"><span data-stu-id="78fda-118">Opens the page in OneNote Online.</span></span>|
+|<span data-ttu-id="0751d-111">oneNoteClientUrl</span><span class="sxs-lookup"><span data-stu-id="0751d-111">oneNoteClientUrl</span></span>|[<span data-ttu-id="0751d-112">externalLink</span><span class="sxs-lookup"><span data-stu-id="0751d-112">externalLink</span></span>](externallink.md)|<span data-ttu-id="0751d-113">OneNote のネイティブ クライアントでページを開きます (インストールされている場合)。</span><span class="sxs-lookup"><span data-stu-id="0751d-113">Opens the page in the OneNote native client if it's installed.</span></span>|
+|<span data-ttu-id="0751d-114">oneNoteWebUrl</span><span class="sxs-lookup"><span data-stu-id="0751d-114">oneNoteWebUrl</span></span>|[<span data-ttu-id="0751d-115">externalLink</span><span class="sxs-lookup"><span data-stu-id="0751d-115">externalLink</span></span>](externallink.md)|<span data-ttu-id="0751d-116">OneNote Online でページを開きます。</span><span class="sxs-lookup"><span data-stu-id="0751d-116">Opens the page in OneNote Online.</span></span>|
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "pageLinks resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/pagelinks.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

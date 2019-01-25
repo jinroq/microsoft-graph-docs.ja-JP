@@ -4,28 +4,28 @@ description: 指定した範囲の長方形の交差を表す範囲オブジェ�
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 819cdf8508f042f76cc154832055a81d78d809eb
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 8d44374fa5340b8c488920ba27f2b2bf348124e0
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27933807"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29525907"
 ---
-# <a name="range-intersection"></a><span data-ttu-id="295ec-103">範囲:Intersection</span><span class="sxs-lookup"><span data-stu-id="295ec-103">Range: Intersection</span></span>
+# <a name="range-intersection"></a><span data-ttu-id="b8844-103">範囲:Intersection</span><span class="sxs-lookup"><span data-stu-id="b8844-103">Range: Intersection</span></span>
 
-> <span data-ttu-id="295ec-104">**重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。</span><span class="sxs-lookup"><span data-stu-id="295ec-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="295ec-105">実稼働アプリケーションでの、これらの API の使用はサポートされていません。</span><span class="sxs-lookup"><span data-stu-id="295ec-105">Use of these APIs in production applications is not supported.</span></span>
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="295ec-106">指定した範囲の長方形の交差を表す範囲オブジェクトを取得します。</span><span class="sxs-lookup"><span data-stu-id="295ec-106">Gets the range object that represents the rectangular intersection of the given ranges.</span></span>
-## <a name="permissions"></a><span data-ttu-id="295ec-107">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="295ec-107">Permissions</span></span>
-<span data-ttu-id="295ec-p102">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="295ec-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="b8844-104">指定した範囲の長方形の交差を表す範囲オブジェクトを取得します。</span><span class="sxs-lookup"><span data-stu-id="b8844-104">Gets the range object that represents the rectangular intersection of the given ranges.</span></span>
+## <a name="permissions"></a><span data-ttu-id="b8844-105">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="b8844-105">Permissions</span></span>
+<span data-ttu-id="b8844-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="b8844-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="295ec-110">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="295ec-110">Permission type</span></span>      | <span data-ttu-id="295ec-111">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="295ec-111">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="b8844-108">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="b8844-108">Permission type</span></span>      | <span data-ttu-id="b8844-109">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="b8844-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="295ec-112">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="295ec-112">Delegated (work or school account)</span></span> | <span data-ttu-id="295ec-113">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="295ec-113">Files.ReadWrite</span></span>    |
-|<span data-ttu-id="295ec-114">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="295ec-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="295ec-115">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="295ec-115">Files.ReadWrite</span></span>    |
-|<span data-ttu-id="295ec-116">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="295ec-116">Application</span></span> | <span data-ttu-id="295ec-117">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="295ec-117">Not supported.</span></span> |
+|<span data-ttu-id="b8844-110">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="b8844-110">Delegated (work or school account)</span></span> | <span data-ttu-id="b8844-111">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="b8844-111">Files.ReadWrite</span></span>    |
+|<span data-ttu-id="b8844-112">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="b8844-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="b8844-113">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="b8844-113">Files.ReadWrite</span></span>    |
+|<span data-ttu-id="b8844-114">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="b8844-114">Application</span></span> | <span data-ttu-id="b8844-115">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="b8844-115">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="295ec-118">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="295ec-118">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="b8844-116">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="b8844-116">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /workbook/names(<name>)/range/Intersection
@@ -33,27 +33,27 @@ GET /workbook/worksheets/{id|name}/range(address='<address>')/Intersection
 GET /workbook/tables/{id|name}/columns/{id|name}/range/Intersection
 
 ```
-## <a name="request-headers"></a><span data-ttu-id="295ec-119">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="295ec-119">Request headers</span></span>
-| <span data-ttu-id="295ec-120">名前</span><span class="sxs-lookup"><span data-stu-id="295ec-120">Name</span></span>       | <span data-ttu-id="295ec-121">説明</span><span class="sxs-lookup"><span data-stu-id="295ec-121">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="b8844-117">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="b8844-117">Request headers</span></span>
+| <span data-ttu-id="b8844-118">名前</span><span class="sxs-lookup"><span data-stu-id="b8844-118">Name</span></span>       | <span data-ttu-id="b8844-119">説明</span><span class="sxs-lookup"><span data-stu-id="b8844-119">Description</span></span>|
 |:---------------|:----------|
-| <span data-ttu-id="295ec-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="295ec-122">Authorization</span></span>  | <span data-ttu-id="295ec-p103">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="295ec-p103">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="295ec-125">Workbook-Session-Id</span><span class="sxs-lookup"><span data-stu-id="295ec-125">Workbook-Session-Id</span></span>  | <span data-ttu-id="295ec-p104">変更を保持するかどうかを決定するブック セッション ID。省略可能。</span><span class="sxs-lookup"><span data-stu-id="295ec-p104">Workbook session Id that determines if changes are persisted or not. Optional.</span></span>|
+| <span data-ttu-id="b8844-120">Authorization</span><span class="sxs-lookup"><span data-stu-id="b8844-120">Authorization</span></span>  | <span data-ttu-id="b8844-p102">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="b8844-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="b8844-123">Workbook-Session-Id</span><span class="sxs-lookup"><span data-stu-id="b8844-123">Workbook-Session-Id</span></span>  | <span data-ttu-id="b8844-p103">変更を保持するかどうかを決定するブック セッション ID。省略可能。</span><span class="sxs-lookup"><span data-stu-id="b8844-p103">Workbook session Id that determines if changes are persisted or not. Optional.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="295ec-128">要求本文</span><span class="sxs-lookup"><span data-stu-id="295ec-128">Request body</span></span>
-<span data-ttu-id="295ec-129">要求本文で、次のパラメーターを含む JSON オブジェクトを指定します。</span><span class="sxs-lookup"><span data-stu-id="295ec-129">In the request body, provide a JSON object with the following parameters.</span></span>
+## <a name="request-body"></a><span data-ttu-id="b8844-126">要求本文</span><span class="sxs-lookup"><span data-stu-id="b8844-126">Request body</span></span>
+<span data-ttu-id="b8844-127">要求本文で、次のパラメーターを含む JSON オブジェクトを指定します。</span><span class="sxs-lookup"><span data-stu-id="b8844-127">In the request body, provide a JSON object with the following parameters.</span></span>
 
-| <span data-ttu-id="295ec-130">パラメーター</span><span class="sxs-lookup"><span data-stu-id="295ec-130">Parameter</span></span>    | <span data-ttu-id="295ec-131">Type</span><span class="sxs-lookup"><span data-stu-id="295ec-131">Type</span></span>   |<span data-ttu-id="295ec-132">説明</span><span class="sxs-lookup"><span data-stu-id="295ec-132">Description</span></span>|
+| <span data-ttu-id="b8844-128">パラメーター</span><span class="sxs-lookup"><span data-stu-id="b8844-128">Parameter</span></span>    | <span data-ttu-id="b8844-129">型</span><span class="sxs-lookup"><span data-stu-id="b8844-129">Type</span></span>   |<span data-ttu-id="b8844-130">説明</span><span class="sxs-lookup"><span data-stu-id="b8844-130">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="295ec-133">anotherRange</span><span class="sxs-lookup"><span data-stu-id="295ec-133">anotherRange</span></span>|<span data-ttu-id="295ec-134">文字列</span><span class="sxs-lookup"><span data-stu-id="295ec-134">string</span></span>|<span data-ttu-id="295ec-135">範囲の交差を判断するために使用される、Range オブジェクトまたは Range アドレス。</span><span class="sxs-lookup"><span data-stu-id="295ec-135">The range object or range address that will be used to determine the intersection of ranges.</span></span>|
+|<span data-ttu-id="b8844-131">anotherRange</span><span class="sxs-lookup"><span data-stu-id="b8844-131">anotherRange</span></span>|<span data-ttu-id="b8844-132">string</span><span class="sxs-lookup"><span data-stu-id="b8844-132">string</span></span>|<span data-ttu-id="b8844-133">範囲の交差を判断するために使用される、Range オブジェクトまたは Range アドレス。</span><span class="sxs-lookup"><span data-stu-id="b8844-133">The range object or range address that will be used to determine the intersection of ranges.</span></span>|
 
-## <a name="response"></a><span data-ttu-id="295ec-136">応答</span><span class="sxs-lookup"><span data-stu-id="295ec-136">Response</span></span>
+## <a name="response"></a><span data-ttu-id="b8844-134">応答</span><span class="sxs-lookup"><span data-stu-id="b8844-134">Response</span></span>
 
-<span data-ttu-id="295ec-137">成功した場合、このメソッドは `200 OK` 応答コードと、応答本文で [Range](../resources/range.md) オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="295ec-137">If successful, this method returns `200 OK` response code and [Range](../resources/range.md) object in the response body.</span></span>
+<span data-ttu-id="b8844-135">成功した場合、このメソッドは `200 OK` 応答コードと、応答本文で [Range](../resources/range.md) オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="b8844-135">If successful, this method returns `200 OK` response code and [Range](../resources/range.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="295ec-138">例</span><span class="sxs-lookup"><span data-stu-id="295ec-138">Example</span></span>
-<span data-ttu-id="295ec-139">以下は、この API を呼び出す方法の例です。</span><span class="sxs-lookup"><span data-stu-id="295ec-139">Here is an example of how to call this API.</span></span>
-##### <a name="request"></a><span data-ttu-id="295ec-140">要求</span><span class="sxs-lookup"><span data-stu-id="295ec-140">Request</span></span>
-<span data-ttu-id="295ec-141">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="295ec-141">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="b8844-136">例</span><span class="sxs-lookup"><span data-stu-id="b8844-136">Example</span></span>
+<span data-ttu-id="b8844-137">以下は、この API を呼び出す方法の例です。</span><span class="sxs-lookup"><span data-stu-id="b8844-137">Here is an example of how to call this API.</span></span>
+##### <a name="request"></a><span data-ttu-id="b8844-138">要求</span><span class="sxs-lookup"><span data-stu-id="b8844-138">Request</span></span>
+<span data-ttu-id="b8844-139">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="b8844-139">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "range_intersection"
@@ -68,8 +68,8 @@ Content-length: 42
 }
 ```
 
-##### <a name="response"></a><span data-ttu-id="295ec-142">応答</span><span class="sxs-lookup"><span data-stu-id="295ec-142">Response</span></span>
-<span data-ttu-id="295ec-p105">以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。</span><span class="sxs-lookup"><span data-stu-id="295ec-p105">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="b8844-140">応答</span><span class="sxs-lookup"><span data-stu-id="b8844-140">Response</span></span>
+<span data-ttu-id="b8844-p104">以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。</span><span class="sxs-lookup"><span data-stu-id="b8844-p104">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -92,10 +92,15 @@ Content-length: 169
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Range: Intersection",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/range-intersection.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

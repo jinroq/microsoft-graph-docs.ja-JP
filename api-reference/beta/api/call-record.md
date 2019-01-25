@@ -4,63 +4,63 @@ description: 呼び出しを記録します。
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 9afd607ca15c2bac16d2aba4d0ab2c5b52f71864
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 4dc409a502b18da9c0e897054a7c1d6386fa096f
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27936369"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29518283"
 ---
-# <a name="call-record"></a><span data-ttu-id="45702-103">呼び出す: レコード</span><span class="sxs-lookup"><span data-stu-id="45702-103">call: record</span></span>
+# <a name="call-record"></a><span data-ttu-id="57dcb-103">呼び出す: レコード</span><span class="sxs-lookup"><span data-stu-id="57dcb-103">call: record</span></span>
 
-> <span data-ttu-id="45702-104">**重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。</span><span class="sxs-lookup"><span data-stu-id="45702-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="45702-105">実稼働アプリケーションでの、これらの API の使用はサポートされていません。</span><span class="sxs-lookup"><span data-stu-id="45702-105">Use of these APIs in production applications is not supported.</span></span>
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="45702-106">呼び出しを記録します。</span><span class="sxs-lookup"><span data-stu-id="45702-106">Record the call.</span></span>
+<span data-ttu-id="57dcb-104">呼び出しを記録します。</span><span class="sxs-lookup"><span data-stu-id="57dcb-104">Record the call.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="45702-107">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="45702-107">Permissions</span></span>
-<span data-ttu-id="45702-p102">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="45702-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="57dcb-105">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="57dcb-105">Permissions</span></span>
+<span data-ttu-id="57dcb-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="57dcb-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="45702-110">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="45702-110">Permission type</span></span> | <span data-ttu-id="45702-111">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="45702-111">Permissions (from least to most privileged)</span></span> |
+| <span data-ttu-id="57dcb-108">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="57dcb-108">Permission type</span></span> | <span data-ttu-id="57dcb-109">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="57dcb-109">Permissions (from least to most privileged)</span></span> |
 | :-------------- | :------------------------------------------ |
-| <span data-ttu-id="45702-112">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="45702-112">Delegated (work or school account)</span></span>     | <span data-ttu-id="45702-113">サポート対象外</span><span class="sxs-lookup"><span data-stu-id="45702-113">Not Supported</span></span>        |
-| <span data-ttu-id="45702-114">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="45702-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="45702-115">サポート対象外</span><span class="sxs-lookup"><span data-stu-id="45702-115">Not Supported</span></span>        |
-| <span data-ttu-id="45702-116">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="45702-116">Application</span></span>     | <span data-ttu-id="45702-117">Calls.AccessMedia.All</span><span class="sxs-lookup"><span data-stu-id="45702-117">Calls.AccessMedia.All</span></span>                       |
+| <span data-ttu-id="57dcb-110">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="57dcb-110">Delegated (work or school account)</span></span>     | <span data-ttu-id="57dcb-111">サポート対象外</span><span class="sxs-lookup"><span data-stu-id="57dcb-111">Not Supported</span></span>        |
+| <span data-ttu-id="57dcb-112">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="57dcb-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="57dcb-113">サポート対象外</span><span class="sxs-lookup"><span data-stu-id="57dcb-113">Not Supported</span></span>        |
+| <span data-ttu-id="57dcb-114">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="57dcb-114">Application</span></span>     | <span data-ttu-id="57dcb-115">Calls.AccessMedia.All</span><span class="sxs-lookup"><span data-stu-id="57dcb-115">Calls.AccessMedia.All</span></span>                       |
 
-## <a name="http-request"></a><span data-ttu-id="45702-118">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="45702-118">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="57dcb-116">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="57dcb-116">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /app/calls/{id}/record
 POST /applications/{id}/calls/{id}/record
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="45702-119">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="45702-119">Request headers</span></span>
-| <span data-ttu-id="45702-120">名前</span><span class="sxs-lookup"><span data-stu-id="45702-120">Name</span></span>          | <span data-ttu-id="45702-121">説明</span><span class="sxs-lookup"><span data-stu-id="45702-121">Description</span></span>               |
+## <a name="request-headers"></a><span data-ttu-id="57dcb-117">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="57dcb-117">Request headers</span></span>
+| <span data-ttu-id="57dcb-118">名前</span><span class="sxs-lookup"><span data-stu-id="57dcb-118">Name</span></span>          | <span data-ttu-id="57dcb-119">説明</span><span class="sxs-lookup"><span data-stu-id="57dcb-119">Description</span></span>               |
 |:--------------|:--------------------------|
-| <span data-ttu-id="45702-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="45702-122">Authorization</span></span> | <span data-ttu-id="45702-p103">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="45702-p103">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="57dcb-120">Authorization</span><span class="sxs-lookup"><span data-stu-id="57dcb-120">Authorization</span></span> | <span data-ttu-id="57dcb-p102">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="57dcb-p102">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="45702-125">要求本文</span><span class="sxs-lookup"><span data-stu-id="45702-125">Request body</span></span>
-<span data-ttu-id="45702-126">要求本文で、次のパラメーターを含む JSON オブジェクトを指定します。</span><span class="sxs-lookup"><span data-stu-id="45702-126">In the request body, provide a JSON object with the following parameters.</span></span>
+## <a name="request-body"></a><span data-ttu-id="57dcb-123">要求本文</span><span class="sxs-lookup"><span data-stu-id="57dcb-123">Request body</span></span>
+<span data-ttu-id="57dcb-124">要求本文で、次のパラメーターを含む JSON オブジェクトを指定します。</span><span class="sxs-lookup"><span data-stu-id="57dcb-124">In the request body, provide a JSON object with the following parameters.</span></span>
 
-| <span data-ttu-id="45702-127">パラメーター</span><span class="sxs-lookup"><span data-stu-id="45702-127">Parameter</span></span>      | <span data-ttu-id="45702-128">型</span><span class="sxs-lookup"><span data-stu-id="45702-128">Type</span></span>    |<span data-ttu-id="45702-129">説明</span><span class="sxs-lookup"><span data-stu-id="45702-129">Description</span></span>|
+| <span data-ttu-id="57dcb-125">パラメーター</span><span class="sxs-lookup"><span data-stu-id="57dcb-125">Parameter</span></span>      | <span data-ttu-id="57dcb-126">型</span><span class="sxs-lookup"><span data-stu-id="57dcb-126">Type</span></span>    |<span data-ttu-id="57dcb-127">説明</span><span class="sxs-lookup"><span data-stu-id="57dcb-127">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="45702-130">メッセージが表示されます。</span><span class="sxs-lookup"><span data-stu-id="45702-130">prompts</span></span>|<span data-ttu-id="45702-131">[mediaprompt](../resources/mediaprompt.md)コレクション</span><span class="sxs-lookup"><span data-stu-id="45702-131">[mediaprompt](../resources/mediaprompt.md) collection</span></span> | <span data-ttu-id="45702-132">レコーディングの前に (もしあれば) を再生するメッセージのコレクションを開始します。</span><span class="sxs-lookup"><span data-stu-id="45702-132">Collection of prompts to play (if any) before recording starts.</span></span> <span data-ttu-id="45702-133">ユーザー"playPrompt"のアクションを個別に指定、またはほとんどすべてのレコードは、前のプロンプトに「記録」の一部として指定することができます。</span><span class="sxs-lookup"><span data-stu-id="45702-133">Customers can choose to specify "playPrompt" action separately or specify as part of "record" - mostly all records are preceeded by a prompt</span></span> |
-|<span data-ttu-id="45702-134">bargeInAllowed</span><span class="sxs-lookup"><span data-stu-id="45702-134">bargeInAllowed</span></span>|<span data-ttu-id="45702-135">Boolean</span><span class="sxs-lookup"><span data-stu-id="45702-135">Boolean</span></span>| <span data-ttu-id="45702-136">プロンプトが終了する前に、選択肢を入力できるようにします。</span><span class="sxs-lookup"><span data-stu-id="45702-136">Allow users to enter choice before prompt finishes.</span></span>                                                                 |
-|<span data-ttu-id="45702-137">initialSilenceTimeoutInSeconds</span><span class="sxs-lookup"><span data-stu-id="45702-137">initialSilenceTimeoutInSeconds</span></span> | <span data-ttu-id="45702-138">Int32</span><span class="sxs-lookup"><span data-stu-id="45702-138">Int32</span></span>| <span data-ttu-id="45702-139">最大初期無音タイムアウトし、操作が失敗、私たちの前にレコードの操作を始める時から使用します。</span><span class="sxs-lookup"><span data-stu-id="45702-139">Maximum initial silence allowed from the time we start the record operation before we timeout and fail the operation.</span></span> <span data-ttu-id="45702-140">プロンプトを再生していることは、プロンプトが終了するとこのタイマーが開始されます。</span><span class="sxs-lookup"><span data-stu-id="45702-140">If we are playing a prompt, then this timer starts after prompt finishes.</span></span> |
-|<span data-ttu-id="45702-141">maxSilenceTimeoutInSeconds</span><span class="sxs-lookup"><span data-stu-id="45702-141">maxSilenceTimeoutInSeconds</span></span>|<span data-ttu-id="45702-142">Int32</span><span class="sxs-lookup"><span data-stu-id="45702-142">Int32</span></span>| <span data-ttu-id="45702-143">無音部分の最大のタイムアウト (秒) です。</span><span class="sxs-lookup"><span data-stu-id="45702-143">The maximum silence timeout in seconds.</span></span>|
-|<span data-ttu-id="45702-144">maxRecordDurationInSeconds</span><span class="sxs-lookup"><span data-stu-id="45702-144">maxRecordDurationInSeconds</span></span>|<span data-ttu-id="45702-145">Int32</span><span class="sxs-lookup"><span data-stu-id="45702-145">Int32</span></span>| <span data-ttu-id="45702-146">秒単位で最大のレコードの期間です。</span><span class="sxs-lookup"><span data-stu-id="45702-146">The maximum record duration in seconds.</span></span>|
-|<span data-ttu-id="45702-147">playBeep</span><span class="sxs-lookup"><span data-stu-id="45702-147">playBeep</span></span>|<span data-ttu-id="45702-148">Boolean</span><span class="sxs-lookup"><span data-stu-id="45702-148">Boolean</span></span>| <span data-ttu-id="45702-149">プロンプトを再生した後、ビープ音を再生します。</span><span class="sxs-lookup"><span data-stu-id="45702-149">Plays a beep after playing the prompt.</span></span>|
-|<span data-ttu-id="45702-150">streamWhileRecording</span><span class="sxs-lookup"><span data-stu-id="45702-150">streamWhileRecording</span></span>|<span data-ttu-id="45702-151">Boolean</span><span class="sxs-lookup"><span data-stu-id="45702-151">Boolean</span></span>|<span data-ttu-id="45702-152">True の場合、リソースの場所に設定する場合、録画の開始と同時に提供されます。</span><span class="sxs-lookup"><span data-stu-id="45702-152">If set to true, a resource location will be provided as soon as the recording starts.</span></span> |
-|<span data-ttu-id="45702-153">stopTones</span><span class="sxs-lookup"><span data-stu-id="45702-153">stopTones</span></span>|<span data-ttu-id="45702-154">String コレクション</span><span class="sxs-lookup"><span data-stu-id="45702-154">String collection</span></span>|<span data-ttu-id="45702-155">音の録音を終了するために指定を停止します。</span><span class="sxs-lookup"><span data-stu-id="45702-155">Stop tones specified to end recording.</span></span>|
-|<span data-ttu-id="45702-156">clientContext</span><span class="sxs-lookup"><span data-stu-id="45702-156">clientContext</span></span>|<span data-ttu-id="45702-157">String</span><span class="sxs-lookup"><span data-stu-id="45702-157">String</span></span>|<span data-ttu-id="45702-158">クライアントのコンテキスト。</span><span class="sxs-lookup"><span data-stu-id="45702-158">The client context.</span></span>|
+|<span data-ttu-id="57dcb-128">メッセージが表示されます。</span><span class="sxs-lookup"><span data-stu-id="57dcb-128">prompts</span></span>|<span data-ttu-id="57dcb-129">[mediaprompt](../resources/mediaprompt.md)コレクション</span><span class="sxs-lookup"><span data-stu-id="57dcb-129">[mediaprompt](../resources/mediaprompt.md) collection</span></span> | <span data-ttu-id="57dcb-130">レコーディングの前に (もしあれば) を再生するメッセージのコレクションを開始します。</span><span class="sxs-lookup"><span data-stu-id="57dcb-130">Collection of prompts to play (if any) before recording starts.</span></span> <span data-ttu-id="57dcb-131">ユーザー"playPrompt"のアクションを個別に指定、またはほとんどすべてのレコードは、前のプロンプトに「記録」の一部として指定することができます。</span><span class="sxs-lookup"><span data-stu-id="57dcb-131">Customers can choose to specify "playPrompt" action separately or specify as part of "record" - mostly all records are preceeded by a prompt</span></span> |
+|<span data-ttu-id="57dcb-132">bargeInAllowed</span><span class="sxs-lookup"><span data-stu-id="57dcb-132">bargeInAllowed</span></span>|<span data-ttu-id="57dcb-133">ブール値</span><span class="sxs-lookup"><span data-stu-id="57dcb-133">Boolean</span></span>| <span data-ttu-id="57dcb-134">プロンプトが終了する前に、選択肢を入力できるようにします。</span><span class="sxs-lookup"><span data-stu-id="57dcb-134">Allow users to enter choice before prompt finishes.</span></span>                                                                 |
+|<span data-ttu-id="57dcb-135">initialSilenceTimeoutInSeconds</span><span class="sxs-lookup"><span data-stu-id="57dcb-135">initialSilenceTimeoutInSeconds</span></span> | <span data-ttu-id="57dcb-136">Int32</span><span class="sxs-lookup"><span data-stu-id="57dcb-136">Int32</span></span>| <span data-ttu-id="57dcb-137">最大初期無音タイムアウトし、操作が失敗、私たちの前にレコードの操作を始める時から使用します。</span><span class="sxs-lookup"><span data-stu-id="57dcb-137">Maximum initial silence allowed from the time we start the record operation before we timeout and fail the operation.</span></span> <span data-ttu-id="57dcb-138">プロンプトを再生していることは、プロンプトが終了するとこのタイマーが開始されます。</span><span class="sxs-lookup"><span data-stu-id="57dcb-138">If we are playing a prompt, then this timer starts after prompt finishes.</span></span> |
+|<span data-ttu-id="57dcb-139">maxSilenceTimeoutInSeconds</span><span class="sxs-lookup"><span data-stu-id="57dcb-139">maxSilenceTimeoutInSeconds</span></span>|<span data-ttu-id="57dcb-140">Int32</span><span class="sxs-lookup"><span data-stu-id="57dcb-140">Int32</span></span>| <span data-ttu-id="57dcb-141">無音部分の最大のタイムアウト (秒) です。</span><span class="sxs-lookup"><span data-stu-id="57dcb-141">The maximum silence timeout in seconds.</span></span>|
+|<span data-ttu-id="57dcb-142">maxRecordDurationInSeconds</span><span class="sxs-lookup"><span data-stu-id="57dcb-142">maxRecordDurationInSeconds</span></span>|<span data-ttu-id="57dcb-143">Int32</span><span class="sxs-lookup"><span data-stu-id="57dcb-143">Int32</span></span>| <span data-ttu-id="57dcb-144">秒単位で最大のレコードの期間です。</span><span class="sxs-lookup"><span data-stu-id="57dcb-144">The maximum record duration in seconds.</span></span>|
+|<span data-ttu-id="57dcb-145">playBeep</span><span class="sxs-lookup"><span data-stu-id="57dcb-145">playBeep</span></span>|<span data-ttu-id="57dcb-146">ブール値</span><span class="sxs-lookup"><span data-stu-id="57dcb-146">Boolean</span></span>| <span data-ttu-id="57dcb-147">プロンプトを再生した後、ビープ音を再生します。</span><span class="sxs-lookup"><span data-stu-id="57dcb-147">Plays a beep after playing the prompt.</span></span>|
+|<span data-ttu-id="57dcb-148">streamWhileRecording</span><span class="sxs-lookup"><span data-stu-id="57dcb-148">streamWhileRecording</span></span>|<span data-ttu-id="57dcb-149">ブール値</span><span class="sxs-lookup"><span data-stu-id="57dcb-149">Boolean</span></span>|<span data-ttu-id="57dcb-150">True の場合、リソースの場所に設定する場合、録画の開始と同時に提供されます。</span><span class="sxs-lookup"><span data-stu-id="57dcb-150">If set to true, a resource location will be provided as soon as the recording starts.</span></span> |
+|<span data-ttu-id="57dcb-151">stopTones</span><span class="sxs-lookup"><span data-stu-id="57dcb-151">stopTones</span></span>|<span data-ttu-id="57dcb-152">String コレクション</span><span class="sxs-lookup"><span data-stu-id="57dcb-152">String collection</span></span>|<span data-ttu-id="57dcb-153">音の録音を終了するために指定を停止します。</span><span class="sxs-lookup"><span data-stu-id="57dcb-153">Stop tones specified to end recording.</span></span>|
+|<span data-ttu-id="57dcb-154">ClientContext</span><span class="sxs-lookup"><span data-stu-id="57dcb-154">clientContext</span></span>|<span data-ttu-id="57dcb-155">String</span><span class="sxs-lookup"><span data-stu-id="57dcb-155">String</span></span>|<span data-ttu-id="57dcb-156">クライアントのコンテキスト。</span><span class="sxs-lookup"><span data-stu-id="57dcb-156">The client context.</span></span>|
 
-## <a name="response"></a><span data-ttu-id="45702-159">応答</span><span class="sxs-lookup"><span data-stu-id="45702-159">Response</span></span>
-<span data-ttu-id="45702-160">返します。`202 Accepted`応答コードと、Location ヘッダーをこの要求用に作成された[commsOperation](../resources/commsoperation.md)の uri を持つ。</span><span class="sxs-lookup"><span data-stu-id="45702-160">Returns `202 Accepted` response code and a Location header with a uri to the [commsOperation](../resources/commsoperation.md) created for this request.</span></span>
+## <a name="response"></a><span data-ttu-id="57dcb-157">応答</span><span class="sxs-lookup"><span data-stu-id="57dcb-157">Response</span></span>
+<span data-ttu-id="57dcb-158">返します。`202 Accepted`応答コードと、Location ヘッダーをこの要求用に作成された[commsOperation](../resources/commsoperation.md)の uri を持つ。</span><span class="sxs-lookup"><span data-stu-id="57dcb-158">Returns `202 Accepted` response code and a Location header with a uri to the [commsOperation](../resources/commsoperation.md) created for this request.</span></span>
 
-## <a name="example"></a><span data-ttu-id="45702-161">例</span><span class="sxs-lookup"><span data-stu-id="45702-161">Example</span></span>
-<span data-ttu-id="45702-162">次の例は、この API を呼び出す方法を示しています。</span><span class="sxs-lookup"><span data-stu-id="45702-162">The following example shows how to call this API.</span></span>
+## <a name="example"></a><span data-ttu-id="57dcb-159">例</span><span class="sxs-lookup"><span data-stu-id="57dcb-159">Example</span></span>
+<span data-ttu-id="57dcb-160">次の例は、この API を呼び出す方法を示しています。</span><span class="sxs-lookup"><span data-stu-id="57dcb-160">The following example shows how to call this API.</span></span>
 
-##### <a name="request"></a><span data-ttu-id="45702-163">要求</span><span class="sxs-lookup"><span data-stu-id="45702-163">Request</span></span>
-<span data-ttu-id="45702-164">次の例は要求を示しています。</span><span class="sxs-lookup"><span data-stu-id="45702-164">The following example shows the request.</span></span>
+##### <a name="request"></a><span data-ttu-id="57dcb-161">要求</span><span class="sxs-lookup"><span data-stu-id="57dcb-161">Request</span></span>
+<span data-ttu-id="57dcb-162">次の例は要求を示しています。</span><span class="sxs-lookup"><span data-stu-id="57dcb-162">The following example shows the request.</span></span>
 
 <!-- {
   "blockType": "request",
@@ -94,9 +94,9 @@ Content-Length: 394
 }
 ```
 
-##### <a name="response"></a><span data-ttu-id="45702-165">応答</span><span class="sxs-lookup"><span data-stu-id="45702-165">Response</span></span>
+##### <a name="response"></a><span data-ttu-id="57dcb-163">応答</span><span class="sxs-lookup"><span data-stu-id="57dcb-163">Response</span></span>
 
-> <span data-ttu-id="45702-p106">**注:** 読みやすくするために、ここに示す応答オブジェクトは短くされている場合があります。実際の呼び出しからは、すべてのプロパティが返されます。</span><span class="sxs-lookup"><span data-stu-id="45702-p106">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+> <span data-ttu-id="57dcb-p105">**注:** 読みやすくするために、ここに示す応答オブジェクトは短くされている場合があります。実際の呼び出しからは、すべてのプロパティが返されます。</span><span class="sxs-lookup"><span data-stu-id="57dcb-p105">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -108,7 +108,7 @@ HTTP/1.1 202 Accepted
 Location: https://graph.microsoft.com/beta/app/calls/57dab8b1-894c-409a-b240-bd8beae78896/operations/0fe0623f-d628-42ed-b4bd-8ac290072cc5
 ```
 
-##### <a name="notification---operation-completed"></a><span data-ttu-id="45702-168">通知の操作が完了しました</span><span class="sxs-lookup"><span data-stu-id="45702-168">Notification - operation completed</span></span>
+##### <a name="notification---operation-completed"></a><span data-ttu-id="57dcb-166">通知の操作が完了しました</span><span class="sxs-lookup"><span data-stu-id="57dcb-166">Notification - operation completed</span></span>
 
 ```http
 POST https://bot.contoso.com/api/calls
@@ -143,10 +143,15 @@ Content-Type: application/json
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "call: record",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/call-record.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

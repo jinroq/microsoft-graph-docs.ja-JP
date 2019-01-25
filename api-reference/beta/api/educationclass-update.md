@@ -4,54 +4,54 @@ description: クラスのプロパティを更新します。
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: 7932dc3072689468ceff813a99466d287ce77a1a
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 1ca407ab560f70ae0d65252e397705cb878e0f52
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27950565"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29522939"
 ---
-# <a name="update-educationclass-properties"></a><span data-ttu-id="8816f-103">educationclass プロパティを更新する</span><span class="sxs-lookup"><span data-stu-id="8816f-103">Update educationclass properties</span></span>
+# <a name="update-educationclass-properties"></a><span data-ttu-id="e69bc-103">educationclass プロパティを更新する</span><span class="sxs-lookup"><span data-stu-id="e69bc-103">Update educationclass properties</span></span>
 
-> <span data-ttu-id="8816f-104">**重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。</span><span class="sxs-lookup"><span data-stu-id="8816f-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="8816f-105">実稼働アプリケーションでの、これらの API の使用はサポートされていません。</span><span class="sxs-lookup"><span data-stu-id="8816f-105">Use of these APIs in production applications is not supported.</span></span>
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="8816f-106">クラスのプロパティを更新します。</span><span class="sxs-lookup"><span data-stu-id="8816f-106">Update the properties of a class.</span></span>
+<span data-ttu-id="e69bc-104">クラスのプロパティを更新します。</span><span class="sxs-lookup"><span data-stu-id="e69bc-104">Update the properties of a class.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="8816f-107">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="8816f-107">Permissions</span></span>
-<span data-ttu-id="8816f-p102">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="8816f-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="e69bc-105">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="e69bc-105">Permissions</span></span>
+<span data-ttu-id="e69bc-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="e69bc-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="8816f-110">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="8816f-110">Permission type</span></span>      | <span data-ttu-id="8816f-111">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="8816f-111">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="e69bc-108">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="e69bc-108">Permission type</span></span>      | <span data-ttu-id="e69bc-109">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="e69bc-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="8816f-112">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="8816f-112">Delegated (work or school account)</span></span> |  <span data-ttu-id="8816f-113">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="8816f-113">Not supported.</span></span>  |
-|<span data-ttu-id="8816f-114">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="8816f-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="8816f-115">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="8816f-115">Not supported.</span></span>   |
-|<span data-ttu-id="8816f-116">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="8816f-116">Application</span></span> | <span data-ttu-id="8816f-117">EduRoster.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="8816f-117">EduRoster.ReadWrite.All</span></span> | 
+|<span data-ttu-id="e69bc-110">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="e69bc-110">Delegated (work or school account)</span></span> |  <span data-ttu-id="e69bc-111">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="e69bc-111">Not supported.</span></span>  |
+|<span data-ttu-id="e69bc-112">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="e69bc-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="e69bc-113">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="e69bc-113">Not supported.</span></span>   |
+|<span data-ttu-id="e69bc-114">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="e69bc-114">Application</span></span> | <span data-ttu-id="e69bc-115">EduRoster.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="e69bc-115">EduRoster.ReadWrite.All</span></span> | 
 
-## <a name="http-request"></a><span data-ttu-id="8816f-118">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="8816f-118">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="e69bc-116">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="e69bc-116">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 PATCH /education/classes/{id}
 ```
-## <a name="request-headers"></a><span data-ttu-id="8816f-119">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="8816f-119">Request headers</span></span>
-| <span data-ttu-id="8816f-120">ヘッダー</span><span class="sxs-lookup"><span data-stu-id="8816f-120">Header</span></span>       | <span data-ttu-id="8816f-121">値</span><span class="sxs-lookup"><span data-stu-id="8816f-121">Value</span></span> |
+## <a name="request-headers"></a><span data-ttu-id="e69bc-117">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="e69bc-117">Request headers</span></span>
+| <span data-ttu-id="e69bc-118">ヘッダー</span><span class="sxs-lookup"><span data-stu-id="e69bc-118">Header</span></span>       | <span data-ttu-id="e69bc-119">値</span><span class="sxs-lookup"><span data-stu-id="e69bc-119">Value</span></span> |
 |:---------------|:--------|
-| <span data-ttu-id="8816f-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="8816f-122">Authorization</span></span>  | <span data-ttu-id="8816f-p103">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="8816f-p103">Bearer {token}. Required.</span></span>  |
-| <span data-ttu-id="8816f-125">Content-Type</span><span class="sxs-lookup"><span data-stu-id="8816f-125">Content-Type</span></span>  | <span data-ttu-id="8816f-126">application/json</span><span class="sxs-lookup"><span data-stu-id="8816f-126">application/json</span></span>  |
+| <span data-ttu-id="e69bc-120">Authorization</span><span class="sxs-lookup"><span data-stu-id="e69bc-120">Authorization</span></span>  | <span data-ttu-id="e69bc-p102">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="e69bc-p102">Bearer {token}. Required.</span></span>  |
+| <span data-ttu-id="e69bc-123">Content-Type</span><span class="sxs-lookup"><span data-stu-id="e69bc-123">Content-Type</span></span>  | <span data-ttu-id="e69bc-124">application/json</span><span class="sxs-lookup"><span data-stu-id="e69bc-124">application/json</span></span>  |
 
-## <a name="request-body"></a><span data-ttu-id="8816f-127">要求本文</span><span class="sxs-lookup"><span data-stu-id="8816f-127">Request body</span></span>
-<span data-ttu-id="8816f-128">要求本文で、更新する関連フィールドの値を指定します。</span><span class="sxs-lookup"><span data-stu-id="8816f-128">In the request body, supply the values for relevant fields that should be updated.</span></span> <span data-ttu-id="8816f-129">要求本文に含まれない既存のプロパティは、以前の値のままになるか、他のプロパティ値の変更に基づいて再計算されます。</span><span class="sxs-lookup"><span data-stu-id="8816f-129">Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values.</span></span> <span data-ttu-id="8816f-130">最適なパフォーマンスを得るために、変更されていない既存の値を含めないでください。</span><span class="sxs-lookup"><span data-stu-id="8816f-130">For best performance, don't include existing values that haven't changed.</span></span>
+## <a name="request-body"></a><span data-ttu-id="e69bc-125">要求本文</span><span class="sxs-lookup"><span data-stu-id="e69bc-125">Request body</span></span>
+<span data-ttu-id="e69bc-126">要求本文で、更新する関連フィールドの値を指定します。</span><span class="sxs-lookup"><span data-stu-id="e69bc-126">In the request body, supply the values for relevant fields that should be updated.</span></span> <span data-ttu-id="e69bc-127">要求本文に含まれない既存のプロパティは、以前の値のままになるか、他のプロパティ値の変更に基づいて再計算されます。</span><span class="sxs-lookup"><span data-stu-id="e69bc-127">Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values.</span></span> <span data-ttu-id="e69bc-128">最適なパフォーマンスを得るために、変更されていない既存の値を含めないでください。</span><span class="sxs-lookup"><span data-stu-id="e69bc-128">For best performance, don't include existing values that haven't changed.</span></span>
 
-| <span data-ttu-id="8816f-131">プロパティ</span><span class="sxs-lookup"><span data-stu-id="8816f-131">Property</span></span>     | <span data-ttu-id="8816f-132">種類</span><span class="sxs-lookup"><span data-stu-id="8816f-132">Type</span></span>   |<span data-ttu-id="8816f-133">説明</span><span class="sxs-lookup"><span data-stu-id="8816f-133">Description</span></span>|
+| <span data-ttu-id="e69bc-129">プロパティ</span><span class="sxs-lookup"><span data-stu-id="e69bc-129">Property</span></span>     | <span data-ttu-id="e69bc-130">型</span><span class="sxs-lookup"><span data-stu-id="e69bc-130">Type</span></span>   |<span data-ttu-id="e69bc-131">説明</span><span class="sxs-lookup"><span data-stu-id="e69bc-131">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="8816f-134">説明</span><span class="sxs-lookup"><span data-stu-id="8816f-134">description</span></span>|<span data-ttu-id="8816f-135">String</span><span class="sxs-lookup"><span data-stu-id="8816f-135">String</span></span>| <span data-ttu-id="8816f-136">クラスの説明。</span><span class="sxs-lookup"><span data-stu-id="8816f-136">Description of the class.</span></span>|
-|<span data-ttu-id="8816f-137">displayName</span><span class="sxs-lookup"><span data-stu-id="8816f-137">displayName</span></span>|<span data-ttu-id="8816f-138">String</span><span class="sxs-lookup"><span data-stu-id="8816f-138">String</span></span>| <span data-ttu-id="8816f-139">クラスの名前。</span><span class="sxs-lookup"><span data-stu-id="8816f-139">Name of the class.</span></span>|
-|<span data-ttu-id="8816f-140">mailNickname</span><span class="sxs-lookup"><span data-stu-id="8816f-140">mailNickname</span></span>|<span data-ttu-id="8816f-141">String</span><span class="sxs-lookup"><span data-stu-id="8816f-141">String</span></span>| <span data-ttu-id="8816f-142">機能が有効になっている場合に、すべてのユーザーに電子メールを送信する電子メールのエイリアス。</span><span class="sxs-lookup"><span data-stu-id="8816f-142">Email alias for sending email to all users if that feature is enabled.</span></span> |
-<span data-ttu-id="8816f-143"><!-- Please verify the revised description here. -->| classCode |文字列 |クラスの学校で使用されるコードです |。| externalId |文字列 |同期中のシステムからのクラスの ID です。</span><span class="sxs-lookup"><span data-stu-id="8816f-143"><!-- Please verify the revised description here. --> |classCode|String| Class code used by the school.| |externalId|String| ID of the class from the syncing system.</span></span> <span data-ttu-id="8816f-144">| |externalName|String|同期システム内のクラスの名前。| |externalSource|string| このクラスを作成した方法。</span><span class="sxs-lookup"><span data-stu-id="8816f-144">| |externalName|String|Name of the class in the syncing system.| |externalSource|string| How this class was created.</span></span> <span data-ttu-id="8816f-145">使用可能な値: `sis`、`manual`、`enum_sentinel`.|</span><span class="sxs-lookup"><span data-stu-id="8816f-145">Possible values are: `sis`, `manual`, `enum_sentinel`.|</span></span>
+|<span data-ttu-id="e69bc-132">説明</span><span class="sxs-lookup"><span data-stu-id="e69bc-132">description</span></span>|<span data-ttu-id="e69bc-133">String</span><span class="sxs-lookup"><span data-stu-id="e69bc-133">String</span></span>| <span data-ttu-id="e69bc-134">クラスの説明。</span><span class="sxs-lookup"><span data-stu-id="e69bc-134">Description of the class.</span></span>|
+|<span data-ttu-id="e69bc-135">displayName</span><span class="sxs-lookup"><span data-stu-id="e69bc-135">displayName</span></span>|<span data-ttu-id="e69bc-136">String</span><span class="sxs-lookup"><span data-stu-id="e69bc-136">String</span></span>| <span data-ttu-id="e69bc-137">クラスの名前。</span><span class="sxs-lookup"><span data-stu-id="e69bc-137">Name of the class.</span></span>|
+|<span data-ttu-id="e69bc-138">mailNickname</span><span class="sxs-lookup"><span data-stu-id="e69bc-138">mailNickname</span></span>|<span data-ttu-id="e69bc-139">String</span><span class="sxs-lookup"><span data-stu-id="e69bc-139">String</span></span>| <span data-ttu-id="e69bc-140">機能が有効になっている場合に、すべてのユーザーに電子メールを送信する電子メールのエイリアス。</span><span class="sxs-lookup"><span data-stu-id="e69bc-140">Email alias for sending email to all users if that feature is enabled.</span></span> |
+<span data-ttu-id="e69bc-141"><!-- Please verify the revised description here. -->| classCode |文字列 |クラスの学校で使用されるコードです |。| externalId |文字列 |同期中のシステムからのクラスの ID です。</span><span class="sxs-lookup"><span data-stu-id="e69bc-141"><!-- Please verify the revised description here. --> |classCode|String| Class code used by the school.| |externalId|String| ID of the class from the syncing system.</span></span> <span data-ttu-id="e69bc-142">| |externalName|String|同期システム内のクラスの名前。| |externalSource|string| このクラスを作成した方法。</span><span class="sxs-lookup"><span data-stu-id="e69bc-142">| |externalName|String|Name of the class in the syncing system.| |externalSource|string| How this class was created.</span></span> <span data-ttu-id="e69bc-143">使用可能な値: `sis`、`manual`、`enum_sentinel`.|</span><span class="sxs-lookup"><span data-stu-id="e69bc-143">Possible values are: `sis`, `manual`, `enum_sentinel`.|</span></span>
 
-## <a name="response"></a><span data-ttu-id="8816f-146">応答</span><span class="sxs-lookup"><span data-stu-id="8816f-146">Response</span></span>
-<span data-ttu-id="8816f-147">成功した場合、このメソッドは `200 OK` 応答コードと、応答本文で更新された [educationClass](../resources/educationclass.md) オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="8816f-147">If successful, this method returns a `200 OK` response code and an updated [educationClass](../resources/educationclass.md) object in the response body.</span></span>
-## <a name="example"></a><span data-ttu-id="8816f-148">例</span><span class="sxs-lookup"><span data-stu-id="8816f-148">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="8816f-149">要求</span><span class="sxs-lookup"><span data-stu-id="8816f-149">Request</span></span>
-<span data-ttu-id="8816f-150">要求の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="8816f-150">The following is an example of the request.</span></span>
+## <a name="response"></a><span data-ttu-id="e69bc-144">応答</span><span class="sxs-lookup"><span data-stu-id="e69bc-144">Response</span></span>
+<span data-ttu-id="e69bc-145">成功した場合、このメソッドは `200 OK` 応答コードと、応答本文で更新された [educationClass](../resources/educationclass.md) オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="e69bc-145">If successful, this method returns a `200 OK` response code and an updated [educationClass](../resources/educationclass.md) object in the response body.</span></span>
+## <a name="example"></a><span data-ttu-id="e69bc-146">例</span><span class="sxs-lookup"><span data-stu-id="e69bc-146">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="e69bc-147">要求</span><span class="sxs-lookup"><span data-stu-id="e69bc-147">Request</span></span>
+<span data-ttu-id="e69bc-148">要求の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="e69bc-148">The following is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "update_educationclass"
@@ -66,10 +66,10 @@ Content-length: 224
   "displayName": "World History Level 1",
 }
 ```
-##### <a name="response"></a><span data-ttu-id="8816f-151">応答</span><span class="sxs-lookup"><span data-stu-id="8816f-151">Response</span></span>
-<span data-ttu-id="8816f-152">応答の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="8816f-152">The following is an example of the response.</span></span> 
+##### <a name="response"></a><span data-ttu-id="e69bc-149">応答</span><span class="sxs-lookup"><span data-stu-id="e69bc-149">Response</span></span>
+<span data-ttu-id="e69bc-150">応答の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="e69bc-150">The following is an example of the response.</span></span> 
 
-><span data-ttu-id="8816f-p106">**注:** 読みやすくするために、ここに示す応答オブジェクトは短くされている場合があります。実際の呼び出しからは、すべてのプロパティが返されます。</span><span class="sxs-lookup"><span data-stu-id="8816f-p106">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+><span data-ttu-id="e69bc-p105">**注:** 読みやすくするために、ここに示す応答オブジェクトは短くされている場合があります。実際の呼び出しからは、すべてのプロパティが返されます。</span><span class="sxs-lookup"><span data-stu-id="e69bc-p105">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -101,10 +101,15 @@ Content-length: 224
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Update educationclass",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/educationclass-update.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

@@ -4,38 +4,38 @@ description: 存在する場合は、同期と、カスタマイズするエン�
 localization_priority: Normal
 author: mmast-msft
 ms.prod: education
-ms.openlocfilehash: 18b37276730286650e3fd75ad57a6b16e7917a04
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 9e513e64afb1478ca7b5cc5d53f1964d16d9928b
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29425961"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29523254"
 ---
-# <a name="educationsynchronizationcustomizations-resource-type"></a><span data-ttu-id="0c120-103">educationSynchronizationCustomizations リソースの種類</span><span class="sxs-lookup"><span data-stu-id="0c120-103">educationSynchronizationCustomizations resource type</span></span>
+# <a name="educationsynchronizationcustomizations-resource-type"></a><span data-ttu-id="22a92-103">educationSynchronizationCustomizations リソースの種類</span><span class="sxs-lookup"><span data-stu-id="22a92-103">educationSynchronizationCustomizations resource type</span></span>
 
-> <span data-ttu-id="0c120-104">**重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。</span><span class="sxs-lookup"><span data-stu-id="0c120-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="0c120-105">実稼働アプリケーションでこれらの API を使用することは、サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="0c120-105">Use of these APIs in production applications is not supported.</span></span>
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="0c120-106">存在する場合は、同期を[カスタマイズ](educationsynchronizationcustomization.md)して、エンティティの一覧に含まれています。</span><span class="sxs-lookup"><span data-stu-id="0c120-106">Contains the list of entities to sync and their [customizations](educationsynchronizationcustomization.md), if any.</span></span>
+<span data-ttu-id="22a92-104">存在する場合は、同期を[カスタマイズ](educationsynchronizationcustomization.md)して、エンティティの一覧に含まれています。</span><span class="sxs-lookup"><span data-stu-id="22a92-104">Contains the list of entities to sync and their [customizations](educationsynchronizationcustomization.md), if any.</span></span>
 
-> <span data-ttu-id="0c120-107">**注:** 同期プロパティのカスタマイズは、 **studentEnrollment**と**teacherRoster**のエンティティには適用されません。</span><span class="sxs-lookup"><span data-stu-id="0c120-107">**Note:** Customization of properties to sync does not apply to the **studentEnrollment** and **teacherRoster** entities.</span></span>
+> <span data-ttu-id="22a92-105">**注:** 同期プロパティのカスタマイズは、 **studentEnrollment**と**teacherRoster**のエンティティには適用されません。</span><span class="sxs-lookup"><span data-stu-id="22a92-105">**Note:** Customization of properties to sync does not apply to the **studentEnrollment** and **teacherRoster** entities.</span></span>
 
-<span data-ttu-id="0c120-108">このリソースは、次のデータ プロバイダーのメンバーです。</span><span class="sxs-lookup"><span data-stu-id="0c120-108">This resource is member of the following data providers:</span></span>
+<span data-ttu-id="22a92-106">このリソースは、次のデータ プロバイダーのメンバーです。</span><span class="sxs-lookup"><span data-stu-id="22a92-106">This resource is member of the following data providers:</span></span>
 
-* [<span data-ttu-id="0c120-109">educationCsvDataProvider</span><span class="sxs-lookup"><span data-stu-id="0c120-109">educationCsvDataProvider</span></span>](educationcsvdataprovider.md)
-* [<span data-ttu-id="0c120-110">educationPowerSchoolDataProvider</span><span class="sxs-lookup"><span data-stu-id="0c120-110">educationPowerSchoolDataProvider</span></span>](educationpowerschooldataprovider.md)
+* [<span data-ttu-id="22a92-107">educationCsvDataProvider</span><span class="sxs-lookup"><span data-stu-id="22a92-107">educationCsvDataProvider</span></span>](educationcsvdataprovider.md)
+* [<span data-ttu-id="22a92-108">educationPowerSchoolDataProvider</span><span class="sxs-lookup"><span data-stu-id="22a92-108">educationPowerSchoolDataProvider</span></span>](educationpowerschooldataprovider.md)
 
-## <a name="properties"></a><span data-ttu-id="0c120-111">プロパティ</span><span class="sxs-lookup"><span data-stu-id="0c120-111">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="22a92-109">プロパティ</span><span class="sxs-lookup"><span data-stu-id="22a92-109">Properties</span></span>
 
-| <span data-ttu-id="0c120-112">プロパティ</span><span class="sxs-lookup"><span data-stu-id="0c120-112">Property</span></span> | <span data-ttu-id="0c120-113">型</span><span class="sxs-lookup"><span data-stu-id="0c120-113">Type</span></span> | <span data-ttu-id="0c120-114">説明</span><span class="sxs-lookup"><span data-stu-id="0c120-114">Description</span></span> |
+| <span data-ttu-id="22a92-110">プロパティ</span><span class="sxs-lookup"><span data-stu-id="22a92-110">Property</span></span> | <span data-ttu-id="22a92-111">型</span><span class="sxs-lookup"><span data-stu-id="22a92-111">Type</span></span> | <span data-ttu-id="22a92-112">説明</span><span class="sxs-lookup"><span data-stu-id="22a92-112">Description</span></span> |
 |:-|:-|:-|
-| <span data-ttu-id="0c120-115">**学校**</span><span class="sxs-lookup"><span data-stu-id="0c120-115">**school**</span></span> | [<span data-ttu-id="0c120-116">educationSynchronizationCustomization</span><span class="sxs-lookup"><span data-stu-id="0c120-116">educationSynchronizationCustomization</span></span>](educationsynchronizationcustomization.md) |  <span data-ttu-id="0c120-117">学校のエンティティのカスタマイズです。</span><span class="sxs-lookup"><span data-stu-id="0c120-117">Customization for a school entity.</span></span>        |
-| <span data-ttu-id="0c120-118">**section**</span><span class="sxs-lookup"><span data-stu-id="0c120-118">**section**</span></span> | [<span data-ttu-id="0c120-119">educationSynchronizationCustomization</span><span class="sxs-lookup"><span data-stu-id="0c120-119">educationSynchronizationCustomization</span></span>](educationsynchronizationcustomization.md) |  <span data-ttu-id="0c120-120">セクション エンティティをカスタマイズします。</span><span class="sxs-lookup"><span data-stu-id="0c120-120">Customization for a section entity.</span></span>         |
-| <span data-ttu-id="0c120-121">**受講者用**</span><span class="sxs-lookup"><span data-stu-id="0c120-121">**student**</span></span> | [<span data-ttu-id="0c120-122">educationSynchronizationCustomization</span><span class="sxs-lookup"><span data-stu-id="0c120-122">educationSynchronizationCustomization</span></span>](educationsynchronizationcustomization.md) |  <span data-ttu-id="0c120-123">受講者用のエンティティのカスタマイズです。</span><span class="sxs-lookup"><span data-stu-id="0c120-123">Customization for a student entity.</span></span>         |
-| <span data-ttu-id="0c120-124">**teacher**</span><span class="sxs-lookup"><span data-stu-id="0c120-124">**teacher**</span></span> | [<span data-ttu-id="0c120-125">educationSynchronizationCustomization</span><span class="sxs-lookup"><span data-stu-id="0c120-125">educationSynchronizationCustomization</span></span>](educationsynchronizationcustomization.md) |  <span data-ttu-id="0c120-126">先生のエンティティのカスタマイズです。</span><span class="sxs-lookup"><span data-stu-id="0c120-126">Customization for a teacher entity.</span></span>         |
-| <span data-ttu-id="0c120-127">**studentEnrollment**</span><span class="sxs-lookup"><span data-stu-id="0c120-127">**studentEnrollment**</span></span> | [<span data-ttu-id="0c120-128">educationSynchronizationCustomization</span><span class="sxs-lookup"><span data-stu-id="0c120-128">educationSynchronizationCustomization</span></span>](educationsynchronizationcustomization.md) |  <span data-ttu-id="0c120-129">受講者の登録用にカスタマイズします。</span><span class="sxs-lookup"><span data-stu-id="0c120-129">Customization for student enrollment.</span></span>           |
-| <span data-ttu-id="0c120-130">**teacherRoster**</span><span class="sxs-lookup"><span data-stu-id="0c120-130">**teacherRoster**</span></span> | [<span data-ttu-id="0c120-131">educationSynchronizationCustomization</span><span class="sxs-lookup"><span data-stu-id="0c120-131">educationSynchronizationCustomization</span></span>](educationsynchronizationcustomization.md) |       <span data-ttu-id="0c120-132">教師名簿をカスタマイズします。</span><span class="sxs-lookup"><span data-stu-id="0c120-132">Customization for a teacher roster.</span></span>    |
+| <span data-ttu-id="22a92-113">学校</span><span class="sxs-lookup"><span data-stu-id="22a92-113">**school**</span></span> | [<span data-ttu-id="22a92-114">educationSynchronizationCustomization</span><span class="sxs-lookup"><span data-stu-id="22a92-114">educationSynchronizationCustomization</span></span>](educationsynchronizationcustomization.md) |  <span data-ttu-id="22a92-115">学校のエンティティのカスタマイズです。</span><span class="sxs-lookup"><span data-stu-id="22a92-115">Customization for a school entity.</span></span>        |
+| <span data-ttu-id="22a92-116">**section**</span><span class="sxs-lookup"><span data-stu-id="22a92-116">**section**</span></span> | [<span data-ttu-id="22a92-117">educationSynchronizationCustomization</span><span class="sxs-lookup"><span data-stu-id="22a92-117">educationSynchronizationCustomization</span></span>](educationsynchronizationcustomization.md) |  <span data-ttu-id="22a92-118">セクション エンティティをカスタマイズします。</span><span class="sxs-lookup"><span data-stu-id="22a92-118">Customization for a section entity.</span></span>         |
+| <span data-ttu-id="22a92-119">**生徒**。</span><span class="sxs-lookup"><span data-stu-id="22a92-119">**student**</span></span> | [<span data-ttu-id="22a92-120">educationSynchronizationCustomization</span><span class="sxs-lookup"><span data-stu-id="22a92-120">educationSynchronizationCustomization</span></span>](educationsynchronizationcustomization.md) |  <span data-ttu-id="22a92-121">受講者用のエンティティのカスタマイズです。</span><span class="sxs-lookup"><span data-stu-id="22a92-121">Customization for a student entity.</span></span>         |
+| <span data-ttu-id="22a92-122">teacher</span><span class="sxs-lookup"><span data-stu-id="22a92-122">**teacher**</span></span> | [<span data-ttu-id="22a92-123">educationSynchronizationCustomization</span><span class="sxs-lookup"><span data-stu-id="22a92-123">educationSynchronizationCustomization</span></span>](educationsynchronizationcustomization.md) |  <span data-ttu-id="22a92-124">先生のエンティティのカスタマイズです。</span><span class="sxs-lookup"><span data-stu-id="22a92-124">Customization for a teacher entity.</span></span>         |
+| <span data-ttu-id="22a92-125">**studentEnrollment**</span><span class="sxs-lookup"><span data-stu-id="22a92-125">**studentEnrollment**</span></span> | [<span data-ttu-id="22a92-126">educationSynchronizationCustomization</span><span class="sxs-lookup"><span data-stu-id="22a92-126">educationSynchronizationCustomization</span></span>](educationsynchronizationcustomization.md) |  <span data-ttu-id="22a92-127">受講者の登録用にカスタマイズします。</span><span class="sxs-lookup"><span data-stu-id="22a92-127">Customization for student enrollment.</span></span>           |
+| <span data-ttu-id="22a92-128">**teacherRoster**</span><span class="sxs-lookup"><span data-stu-id="22a92-128">**teacherRoster**</span></span> | [<span data-ttu-id="22a92-129">educationSynchronizationCustomization</span><span class="sxs-lookup"><span data-stu-id="22a92-129">educationSynchronizationCustomization</span></span>](educationsynchronizationcustomization.md) |       <span data-ttu-id="22a92-130">教師名簿をカスタマイズします。</span><span class="sxs-lookup"><span data-stu-id="22a92-130">Customization for a teacher roster.</span></span>    |
 
-## <a name="json-representation"></a><span data-ttu-id="0c120-133">JSON 表記</span><span class="sxs-lookup"><span data-stu-id="0c120-133">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="22a92-131">JSON 表記</span><span class="sxs-lookup"><span data-stu-id="22a92-131">JSON representation</span></span>
 <!-- {
   "blockType": "resource",
   "optionalProperties": [
@@ -54,3 +54,11 @@ ms.locfileid: "29425961"
   "teacherRoster": {"@odata.type": "microsoft.graph.educationSynchronizationCustomization"}
 }
 ```
+<!--
+{
+  "type": "#page.annotation",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/educationsynchronizationcustomizations.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

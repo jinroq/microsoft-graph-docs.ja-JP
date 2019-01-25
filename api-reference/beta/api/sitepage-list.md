@@ -5,43 +5,44 @@ ms.date: 03/15/2018
 title: サイト内のページを一覧表示します。
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 3049ca860d889e069e941f5437f4f560fef9ef44
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 127f3e470e7a9f4570923858b6c18c45d7bc6a7c
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27942627"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29525067"
 ---
-# <a name="list-the-pages-in-the-site-pages-list-of-a-site"></a><span data-ttu-id="df7fb-102">サイトのサイトのページ一覧でページを一覧表示します。</span><span class="sxs-lookup"><span data-stu-id="df7fb-102">List the pages in the site pages list of a site</span></span>
+# <a name="list-the-pages-in-the-site-pages-list-of-a-site"></a><span data-ttu-id="87508-102">サイトのサイトのページ一覧でページを一覧表示します。</span><span class="sxs-lookup"><span data-stu-id="87508-102">List the pages in the site pages list of a site</span></span>
 
-> <span data-ttu-id="df7fb-103">**重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。</span><span class="sxs-lookup"><span data-stu-id="df7fb-103">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="df7fb-104">実稼働アプリケーションでの、これらの API の使用はサポートされていません。</span><span class="sxs-lookup"><span data-stu-id="df7fb-104">Use of these APIs in production applications is not supported.</span></span>
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="df7fb-105">サイトの[サイト][]内のサイトのページ[] ボックスの一覧][]から [サイト ページ] のコレクションを取得します。</span><span class="sxs-lookup"><span data-stu-id="df7fb-105">Get the collection of [sitePages][] from the site pages [list][] in a site [site][].</span></span> <span data-ttu-id="df7fb-106">(改ページ) では、サイト内のすべてのページが返されます。</span><span class="sxs-lookup"><span data-stu-id="df7fb-106">All pages in the site are returned (with pagination).</span></span>
+<span data-ttu-id="87508-103">サイトの[サイト][]内のサイトのページ[] ボックスの一覧][]から [サイト ページ] のコレクションを取得します。</span><span class="sxs-lookup"><span data-stu-id="87508-103">Get the collection of [sitePages][] from the site pages [list][] in a site [site][].</span></span> <span data-ttu-id="87508-104">(改ページ) では、サイト内のすべてのページが返されます。</span><span class="sxs-lookup"><span data-stu-id="87508-104">All pages in the site are returned (with pagination).</span></span>
 
 [sitePage]: ../resources/sitepage.md
 [list]: ../resources/list.md
+[サイト]: ../resources/site.md
 [site]: ../resources/site.md
 
-## <a name="permissions"></a><span data-ttu-id="df7fb-109">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="df7fb-109">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="87508-107">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="87508-107">Permissions</span></span>
 
-<span data-ttu-id="df7fb-p103">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="df7fb-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="87508-p102">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="87508-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="df7fb-112">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="df7fb-112">Permission type</span></span>      | <span data-ttu-id="df7fb-113">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="df7fb-113">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="87508-110">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="87508-110">Permission type</span></span>      | <span data-ttu-id="87508-111">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="87508-111">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="df7fb-114">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="df7fb-114">Delegated (work or school account)</span></span> | <span data-ttu-id="df7fb-115">Sites.Read.All、Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="df7fb-115">Sites.Read.All, Sites.ReadWrite.All</span></span>    |
-|<span data-ttu-id="df7fb-116">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="df7fb-116">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="df7fb-117">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="df7fb-117">Not supported.</span></span>    |
-|<span data-ttu-id="df7fb-118">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="df7fb-118">Application</span></span> | <span data-ttu-id="df7fb-119">Sites.Read.All、Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="df7fb-119">Sites.Read.All, Sites.ReadWrite.All</span></span> |
+|<span data-ttu-id="87508-112">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="87508-112">Delegated (work or school account)</span></span> | <span data-ttu-id="87508-113">Sites.Read.All、Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="87508-113">Sites.Read.All, Sites.ReadWrite.All</span></span>    |
+|<span data-ttu-id="87508-114">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="87508-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="87508-115">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="87508-115">Not supported.</span></span>    |
+|<span data-ttu-id="87508-116">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="87508-116">Application</span></span> | <span data-ttu-id="87508-117">Sites.Read.All、Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="87508-117">Sites.Read.All, Sites.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="df7fb-120">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="df7fb-120">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="87508-118">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="87508-118">HTTP request</span></span>
 
 ```http
 GET /sites/{site-id}/pages
 
 ```
 
-## <a name="example"></a><span data-ttu-id="df7fb-121">例</span><span class="sxs-lookup"><span data-stu-id="df7fb-121">Example</span></span>
+## <a name="example"></a><span data-ttu-id="87508-119">例</span><span class="sxs-lookup"><span data-stu-id="87508-119">Example</span></span>
 
-#### <a name="request"></a><span data-ttu-id="df7fb-122">要求</span><span class="sxs-lookup"><span data-stu-id="df7fb-122">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="87508-120">要求</span><span class="sxs-lookup"><span data-stu-id="87508-120">Request</span></span>
 
 <!-- { "blockType": "request", "name": "get-pages", "scopes": "sites.read.all", "tags": "service.sharepoint" } -->
 
@@ -49,7 +50,7 @@ GET /sites/{site-id}/pages
 GET /sites/{site-id}/pages
 ```
 
-#### <a name="response"></a><span data-ttu-id="df7fb-123">応答</span><span class="sxs-lookup"><span data-stu-id="df7fb-123">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="87508-121">応答</span><span class="sxs-lookup"><span data-stu-id="87508-121">Response</span></span>
 
 <!-- { "blockType": "response", "@odata.type": "Collection(microsoft.graph.sitePage)", "truncated": true } -->
 
@@ -217,10 +218,15 @@ Content-type: application/json
 }
 ```
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Enumerate the list of pages in a site",
   "keywords": "",
   "section": "documentation",
-  "tocPath": "Pages/Enumerate"
-} -->
+  "tocPath": "Pages/Enumerate",
+  "suppressions": [
+    "Error: /api-reference/beta/api/sitepage-list.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

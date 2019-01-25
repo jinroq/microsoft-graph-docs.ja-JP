@@ -4,64 +4,64 @@ description: 'マイクロソフト チーム アプリケーション カタロ
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 6f130d1842e8d860265adbdc82d8a5add9da025a
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: d43f9a8cca7c16bab3b0dec90b26d4c9c6d4d33c
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27963697"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29519270"
 ---
-# <a name="list-the-published-apps-from-the-microsoft-teams-app-catalog"></a><span data-ttu-id="e186b-103">マイクロソフト チーム アプリケーション カタログから公開されているアプリケーションを一覧表示します。</span><span class="sxs-lookup"><span data-stu-id="e186b-103">List the published apps from the Microsoft Teams app catalog</span></span>
+# <a name="list-the-published-apps-from-the-microsoft-teams-app-catalog"></a><span data-ttu-id="97c9d-103">マイクロソフト チーム アプリケーション カタログから公開されているアプリケーションを一覧表示します。</span><span class="sxs-lookup"><span data-stu-id="97c9d-103">List the published apps from the Microsoft Teams app catalog</span></span>
 
-> <span data-ttu-id="e186b-104">**重要:** Microsoft Graph のベータ版 (/beta) の API はプレビュー中であるため、変更されることがあります。</span><span class="sxs-lookup"><span data-stu-id="e186b-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="e186b-105">実稼働アプリケーションでの、これらの API の使用はサポートされていません。</span><span class="sxs-lookup"><span data-stu-id="e186b-105">Use of these APIs in production applications is not supported.</span></span>
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="e186b-106">マイクロソフト チーム アプリケーション カタログから[アプリケーション](../resources/teamsapp.md)を一覧表示します。</span><span class="sxs-lookup"><span data-stu-id="e186b-106">List [apps](../resources/teamsapp.md) from the Microsoft Teams app catalog.</span></span> <span data-ttu-id="e186b-107">これには、組織のアプリケーション カタログ (テナント アプリケーション カタログ) からアプリケーションと同様に、マイクロソフトのチーム ・ ストアからのアプリが含まれます。</span><span class="sxs-lookup"><span data-stu-id="e186b-107">This includes apps from the Microsoft Teams store, as well as apps from your organization's app catalog (the tenant app catalog).</span></span> <span data-ttu-id="e186b-108">組織のアプリケーションのカタログのみからアプリケーションを取得するのには次のように指定します。 `Organization` [teamsCatalogApp](../resources/teamsapp.md)リソースで**distributionMethod**とします。</span><span class="sxs-lookup"><span data-stu-id="e186b-108">To get apps from your organization's app catalog only, specify `Organization` as the **distributionMethod** in the [teamsCatalogApp](../resources/teamsapp.md) resource.</span></span>
+<span data-ttu-id="97c9d-104">マイクロソフト チーム アプリケーション カタログから[アプリケーション](../resources/teamsapp.md)を一覧表示します。</span><span class="sxs-lookup"><span data-stu-id="97c9d-104">List [apps](../resources/teamsapp.md) from the Microsoft Teams app catalog.</span></span> <span data-ttu-id="97c9d-105">これには、組織のアプリケーション カタログ (テナント アプリケーション カタログ) からアプリケーションと同様に、マイクロソフトのチーム ・ ストアからのアプリが含まれます。</span><span class="sxs-lookup"><span data-stu-id="97c9d-105">This includes apps from the Microsoft Teams store, as well as apps from your organization's app catalog (the tenant app catalog).</span></span> <span data-ttu-id="97c9d-106">組織のアプリケーションのカタログのみからアプリケーションを取得するのには次のように指定します。 `Organization` [teamsCatalogApp](../resources/teamsapp.md)リソースで**distributionMethod**とします。</span><span class="sxs-lookup"><span data-stu-id="97c9d-106">To get apps from your organization's app catalog only, specify `Organization` as the **distributionMethod** in the [teamsCatalogApp](../resources/teamsapp.md) resource.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="e186b-109">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="e186b-109">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="97c9d-107">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="97c9d-107">Permissions</span></span>
 
-<span data-ttu-id="e186b-p103">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](https://developer.microsoft.com/graph/docs/concepts/permissions_reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="e186b-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](https://developer.microsoft.com/graph/docs/concepts/permissions_reference).</span></span>
+<span data-ttu-id="97c9d-p102">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](https://developer.microsoft.com/graph/docs/concepts/permissions_reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="97c9d-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](https://developer.microsoft.com/graph/docs/concepts/permissions_reference).</span></span>
 
-><span data-ttu-id="e186b-112">**注:** グローバル管理者だけでは、この API を呼び出すことができます。</span><span class="sxs-lookup"><span data-stu-id="e186b-112">**Note:** Only global administrators can call this API.</span></span> 
+><span data-ttu-id="97c9d-110">**注:** グローバル管理者だけでは、この API を呼び出すことができます。</span><span class="sxs-lookup"><span data-stu-id="97c9d-110">**Note:** Only global administrators can call this API.</span></span> 
 
-| <span data-ttu-id="e186b-113">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="e186b-113">Permission Type</span></span>                        | <span data-ttu-id="e186b-114">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="e186b-114">Permissions (from least to most privileged)</span></span>|
+| <span data-ttu-id="97c9d-111">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="97c9d-111">Permission Type</span></span>                        | <span data-ttu-id="97c9d-112">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="97c9d-112">Permissions (from least to most privileged)</span></span>|
 |:----------------------------------     |:-------------|
-| <span data-ttu-id="e186b-115">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="e186b-115">Delegated (work or school account)</span></span>     | <span data-ttu-id="e186b-116">AppCatalog.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="e186b-116">AppCatalog.ReadWrite.All</span></span> |
-| <span data-ttu-id="e186b-117">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="e186b-117">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="e186b-118">サポートされていません</span><span class="sxs-lookup"><span data-stu-id="e186b-118">Not supported</span></span>|
-| <span data-ttu-id="e186b-119">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="e186b-119">Application</span></span>                            | <span data-ttu-id="e186b-120">非サポート</span><span class="sxs-lookup"><span data-stu-id="e186b-120">Not supported</span></span>|
+| <span data-ttu-id="97c9d-113">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="97c9d-113">Delegated (work or school account)</span></span>     | <span data-ttu-id="97c9d-114">AppCatalog.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="97c9d-114">AppCatalog.ReadWrite.All</span></span> |
+| <span data-ttu-id="97c9d-115">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="97c9d-115">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="97c9d-116">サポートされていません</span><span class="sxs-lookup"><span data-stu-id="97c9d-116">Not supported</span></span>|
+| <span data-ttu-id="97c9d-117">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="97c9d-117">Application</span></span>                            | <span data-ttu-id="97c9d-118">非サポート</span><span class="sxs-lookup"><span data-stu-id="97c9d-118">Not supported</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="e186b-121">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="e186b-121">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="97c9d-119">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="97c9d-119">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /appCatalogs/teamsApps
 ```
 
-## <a name="optional-query-parameters"></a><span data-ttu-id="e186b-122">オプションのクエリ パラメーター</span><span class="sxs-lookup"><span data-stu-id="e186b-122">Optional query parameters</span></span>
-<span data-ttu-id="e186b-123">このメソッドは、$filter、$select をサポートしていて、$ は、応答をカスタマイズするために[OData クエリ パラメーター](/graph/query-parameters)を展開します。</span><span class="sxs-lookup"><span data-stu-id="e186b-123">This method supports the $filter, $select, and $expand [OData query parameters](/graph/query-parameters) to help customize the response.</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="97c9d-120">省略可能なクエリ パラメーター</span><span class="sxs-lookup"><span data-stu-id="97c9d-120">Optional query parameters</span></span>
+<span data-ttu-id="97c9d-121">このメソッドは、$filter、$select をサポートしていて、$ は、応答をカスタマイズするために[OData クエリ パラメーター](/graph/query-parameters)を展開します。</span><span class="sxs-lookup"><span data-stu-id="97c9d-121">This method supports the $filter, $select, and $expand [OData query parameters](/graph/query-parameters) to help customize the response.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="e186b-124">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="e186b-124">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="97c9d-122">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="97c9d-122">Request headers</span></span>
 
-| <span data-ttu-id="e186b-125">ヘッダー</span><span class="sxs-lookup"><span data-stu-id="e186b-125">Header</span></span>        | <span data-ttu-id="e186b-126">値</span><span class="sxs-lookup"><span data-stu-id="e186b-126">Value</span></span>           |
+| <span data-ttu-id="97c9d-123">ヘッダー</span><span class="sxs-lookup"><span data-stu-id="97c9d-123">Header</span></span>        | <span data-ttu-id="97c9d-124">値</span><span class="sxs-lookup"><span data-stu-id="97c9d-124">Value</span></span>           |
 |:--------------|:--------------  |
-| <span data-ttu-id="e186b-127">Authorization</span><span class="sxs-lookup"><span data-stu-id="e186b-127">Authorization</span></span> | <span data-ttu-id="e186b-p104">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="e186b-p104">Bearer {token}. Required.</span></span>  |
+| <span data-ttu-id="97c9d-125">Authorization</span><span class="sxs-lookup"><span data-stu-id="97c9d-125">Authorization</span></span> | <span data-ttu-id="97c9d-p103">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="97c9d-p103">Bearer {token}. Required.</span></span>  |
 
-## <a name="request-body"></a><span data-ttu-id="e186b-130">要求本文</span><span class="sxs-lookup"><span data-stu-id="e186b-130">Request body</span></span>
-<span data-ttu-id="e186b-131">なし。</span><span class="sxs-lookup"><span data-stu-id="e186b-131">None.</span></span>
+## <a name="request-body"></a><span data-ttu-id="97c9d-128">要求本文</span><span class="sxs-lookup"><span data-stu-id="97c9d-128">Request body</span></span>
+<span data-ttu-id="97c9d-129">なし。</span><span class="sxs-lookup"><span data-stu-id="97c9d-129">None.</span></span>
 
-><span data-ttu-id="e186b-132">**注:** 任意の結果の一覧を短縮するための[teamsCatalogApp](../resources/teamsapp.md)オブジェクトのフィールドをフィルターできます。</span><span class="sxs-lookup"><span data-stu-id="e186b-132">**Note:** You can filter on any of the fields of the [teamsCatalogApp](../resources/teamsapp.md) object to shorten the list of results.</span></span> <span data-ttu-id="e186b-133">次のフィルター操作のいずれかを使用することができます: 等しい、等しくない、またはではなく。</span><span class="sxs-lookup"><span data-stu-id="e186b-133">You can use any of the following filter operations: Equal, not-equal, and, or, and not.</span></span>
+><span data-ttu-id="97c9d-130">**注:** 任意の結果の一覧を短縮するための[teamsCatalogApp](../resources/teamsapp.md)オブジェクトのフィールドをフィルターできます。</span><span class="sxs-lookup"><span data-stu-id="97c9d-130">**Note:** You can filter on any of the fields of the [teamsCatalogApp](../resources/teamsapp.md) object to shorten the list of results.</span></span> <span data-ttu-id="97c9d-131">次のフィルター操作のいずれかを使用することができます: 等しい、等しくない、またはではなく。</span><span class="sxs-lookup"><span data-stu-id="97c9d-131">You can use any of the following filter operations: Equal, not-equal, and, or, and not.</span></span>
 
-## <a name="response"></a><span data-ttu-id="e186b-134">応答</span><span class="sxs-lookup"><span data-stu-id="e186b-134">Response</span></span>
-<span data-ttu-id="e186b-135">かどうかは成功すると、このメソッドが返されます、`200 OK`応答コードおよび応答の本文内の[teamsCatalogApp](../resources/teamsapp.md)オブジェクトの一覧です。</span><span class="sxs-lookup"><span data-stu-id="e186b-135">If successful, this method returns a `200 OK` response code and a list of [teamsCatalogApp](../resources/teamsapp.md) objects in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="97c9d-132">応答</span><span class="sxs-lookup"><span data-stu-id="97c9d-132">Response</span></span>
+<span data-ttu-id="97c9d-133">かどうかは成功すると、このメソッドが返されます、`200 OK`応答コードおよび応答の本文内の[teamsCatalogApp](../resources/teamsapp.md)オブジェクトの一覧です。</span><span class="sxs-lookup"><span data-stu-id="97c9d-133">If successful, this method returns a `200 OK` response code and a list of [teamsCatalogApp](../resources/teamsapp.md) objects in the response body.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="e186b-136">例</span><span class="sxs-lookup"><span data-stu-id="e186b-136">Examples</span></span>
-### <a name="example-1"></a><span data-ttu-id="e186b-137">例 1</span><span class="sxs-lookup"><span data-stu-id="e186b-137">Example 1</span></span>
-<span data-ttu-id="e186b-138">次の例では、テナントに固有のすべてのアプリケーションが一覧表示されます。</span><span class="sxs-lookup"><span data-stu-id="e186b-138">The following example lists all applications that are specific to your tenant.</span></span>
+## <a name="examples"></a><span data-ttu-id="97c9d-134">例</span><span class="sxs-lookup"><span data-stu-id="97c9d-134">Examples</span></span>
+### <a name="example-1"></a><span data-ttu-id="97c9d-135">例 1</span><span class="sxs-lookup"><span data-stu-id="97c9d-135">Example 1</span></span>
+<span data-ttu-id="97c9d-136">次の例では、テナントに固有のすべてのアプリケーションが一覧表示されます。</span><span class="sxs-lookup"><span data-stu-id="97c9d-136">The following example lists all applications that are specific to your tenant.</span></span>
 
-#### <a name="request"></a><span data-ttu-id="e186b-139">要求</span><span class="sxs-lookup"><span data-stu-id="e186b-139">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="97c9d-137">要求</span><span class="sxs-lookup"><span data-stu-id="97c9d-137">Request</span></span>
 ```
 GET https://graph.microsoft.com/beta/appCatalogs/teamsApps?$filter=distributionMethod eq 'organization'
 ```
 
-#### <a name="response"></a><span data-ttu-id="e186b-140">応答</span><span class="sxs-lookup"><span data-stu-id="e186b-140">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="97c9d-138">応答</span><span class="sxs-lookup"><span data-stu-id="97c9d-138">Response</span></span>
 ```
 HTTP/1.1 200 OK
 Content-Type: application/json
@@ -79,16 +79,16 @@ Content-Type: application/json
 }
 ```
 
-### <a name="example-2"></a><span data-ttu-id="e186b-141">例 2</span><span class="sxs-lookup"><span data-stu-id="e186b-141">Example 2</span></span>
+### <a name="example-2"></a><span data-ttu-id="97c9d-139">例 2</span><span class="sxs-lookup"><span data-stu-id="97c9d-139">Example 2</span></span>
 
-<span data-ttu-id="e186b-142">次の使用例は指定された ID を使用してアプリケーションを一覧表示します。</span><span class="sxs-lookup"><span data-stu-id="e186b-142">The following example lists applications with a given ID.</span></span>
+<span data-ttu-id="97c9d-140">次の使用例は指定された ID を使用してアプリケーションを一覧表示します。</span><span class="sxs-lookup"><span data-stu-id="97c9d-140">The following example lists applications with a given ID.</span></span>
 
-#### <a name="request"></a><span data-ttu-id="e186b-143">要求</span><span class="sxs-lookup"><span data-stu-id="e186b-143">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="97c9d-141">要求</span><span class="sxs-lookup"><span data-stu-id="97c9d-141">Request</span></span>
 ```
 GET https://graph.microsoft.com/beta/appCatalogs/teamsApps?$filter=id%20eq%20'b1c5353a-7aca-41b3-830f-27d5218fe0e5'
 ```
 
-#### <a name="response"></a><span data-ttu-id="e186b-144">応答</span><span class="sxs-lookup"><span data-stu-id="e186b-144">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="97c9d-142">応答</span><span class="sxs-lookup"><span data-stu-id="97c9d-142">Response</span></span>
 ```
 HTTP/1.1 200 OK
 Content-Type: application/json
@@ -106,3 +106,11 @@ Content-Type: application/json
 }
 ```
 
+<!--
+{
+  "type": "#page.annotation",
+  "suppressions": [
+    "Error: /api-reference/beta/api/teamsapp-list.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->
